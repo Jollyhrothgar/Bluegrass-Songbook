@@ -1,0 +1,51 @@
+{
+  "slug": "silver-threads-and-golden-needles",
+  "title": "Silver Threads And Golden Needles",
+  "source_url": "https://www.bluegrasslyrics.com/song/silver-threads-and-golden-needles/",
+  "raw_lyrics": "I don\u2019t want your lonely mansion\nWith a tear in every rooom\nAll I want\u2019s the love you promised\nBeneath the halo\u2019d  moon\nBut you think I should be happy\nWith your money and your name\nAnd hide myself in sorrow\nWhile you play your cheating game\n\nSilver thread and golden needles\nCannot  mend this heart of mine\nAnd I dare not drown my sorrows\nIn the warm glow of your wine\nYou can\u2019t buy my love with money\nFor I never was that kind\nSilver thread and golden needles\nCannot mend this heart of mine.\n\nI grew up in faded gingham\nWhere love is a sacred thing\nYou grew up in silk and satin\nWhere love\u2019s a passing game\nI know now you never loved me\nAnd I know I was a fool\nTo think your pride would let you\nLive by the Golden Rule.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t want your lonely mansion",
+        "With a tear in every rooom",
+        "All I want\u2019s the love you promised",
+        "Beneath the halo\u2019d  moon",
+        "But you think I should be happy",
+        "With your money and your name",
+        "And hide myself in sorrow",
+        "While you play your cheating game"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Silver thread and golden needles",
+        "Cannot  mend this heart of mine",
+        "And I dare not drown my sorrows",
+        "In the warm glow of your wine",
+        "You can\u2019t buy my love with money",
+        "For I never was that kind",
+        "Silver thread and golden needles",
+        "Cannot mend this heart of mine."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I grew up in faded gingham",
+        "Where love is a sacred thing",
+        "You grew up in silk and satin",
+        "Where love\u2019s a passing game",
+        "I know now you never loved me",
+        "And I know I was a fool",
+        "To think your pride would let you",
+        "Live by the Golden Rule."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

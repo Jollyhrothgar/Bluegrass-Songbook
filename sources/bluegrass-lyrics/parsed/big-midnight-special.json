@@ -1,0 +1,65 @@
+{
+  "slug": "big-midnight-special",
+  "title": "Big Midnight Special",
+  "source_url": "https://www.bluegrasslyrics.com/song/big-midnight-special/",
+  "raw_lyrics": "Woke up this morning heard the whistle blow\nThe jailor said come boy it\u2019s time to go\n\nBig midnight special shine your light on me\nBig midnight special shine your ever loving light on me\n\nI\u2019ve never had the blues so in my life before\n\u2018Til my baby left me at the station door\n\nThey put him in a pullman guards around his door\nSaid you off to Atlanta to serve ten years more\n\nHe looked all around him in the pullman car\nSaw the men wearing clothe hats smoking big cigars\n\nTook him off in Atlanta at the end of the line\nSaid you start serving time boy for your awful crime\n\nThat whistle makes me lonesome on that midnight train\nBut he knows I\u2019m a-waiting \u2019til it brings him home again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Woke up this morning heard the whistle blow",
+        "The jailor said come boy it\u2019s time to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Big midnight special shine your light on me",
+        "Big midnight special shine your ever loving light on me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve never had the blues so in my life before",
+        "\u2018Til my baby left me at the station door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They put him in a pullman guards around his door",
+        "Said you off to Atlanta to serve ten years more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He looked all around him in the pullman car",
+        "Saw the men wearing clothe hats smoking big cigars"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Took him off in Atlanta at the end of the line",
+        "Said you start serving time boy for your awful crime"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That whistle makes me lonesome on that midnight train",
+        "But he knows I\u2019m a-waiting \u2019til it brings him home again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

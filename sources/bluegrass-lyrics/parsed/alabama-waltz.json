@@ -1,0 +1,29 @@
+{
+  "slug": "alabama-waltz",
+  "title": "Alabama Waltz",
+  "source_url": "https://www.bluegrasslyrics.com/song/alabama-waltz/",
+  "raw_lyrics": "I was sad and blue, down hearted too\nIt seemed like my whole world was lost\nWhen I took a chance, and happened to dance\nTo the tune of the Alabama waltz.\n\nWaltz, Waltz, the Alabama waltz\nWhere all my fears and troubles were lost\nThere in your arms, with all of your charms\nWe danced to the Alabama waltz.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was sad and blue, down hearted too",
+        "It seemed like my whole world was lost",
+        "When I took a chance, and happened to dance",
+        "To the tune of the Alabama waltz."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Waltz, Waltz, the Alabama waltz",
+        "Where all my fears and troubles were lost",
+        "There in your arms, with all of your charms",
+        "We danced to the Alabama waltz."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

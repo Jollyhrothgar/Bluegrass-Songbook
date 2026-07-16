@@ -1,0 +1,11 @@
+id: times-are-getting-hard
+title: Times Are Getting Hard
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/times-are-getting-hard/
+      imported_at: '2026-02-08'

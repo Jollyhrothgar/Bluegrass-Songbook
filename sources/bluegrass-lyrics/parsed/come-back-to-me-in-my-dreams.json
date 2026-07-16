@@ -1,0 +1,49 @@
+{
+  "slug": "come-back-to-me-in-my-dreams",
+  "title": "Come Back To Me In My Dreams",
+  "source_url": "https://www.bluegrasslyrics.com/song/come-back-to-me-in-my-dreams/",
+  "raw_lyrics": "Oh, I\u2019m sending a prayer up to Heaven\nOn a beautiful cloud you see\nSo you will know that I want you\nIn my beautiful memories and dreams\n\nCome back to me in my dreams love\nCome back to me in sweet dreams\nI\u2019m heartbroke I\u2019m sad and I\u2019m weary\nCome back to me in my dreams\n\nWhen the bright moon shines up in Heaven\nAnd the beautiful stars are a\u2019gleam\nIt seems that you are so near me\nBut yet it is only a dream\n\nIt seems I\u2019ll never more see you\nTill we meet in Heaven it seems\nBut I hold you close to my heart love\nIn my beautiful memories and dreams",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, I\u2019m sending a prayer up to Heaven",
+        "On a beautiful cloud you see",
+        "So you will know that I want you",
+        "In my beautiful memories and dreams"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Come back to me in my dreams love",
+        "Come back to me in sweet dreams",
+        "I\u2019m heartbroke I\u2019m sad and I\u2019m weary",
+        "Come back to me in my dreams"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the bright moon shines up in Heaven",
+        "And the beautiful stars are a\u2019gleam",
+        "It seems that you are so near me",
+        "But yet it is only a dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It seems I\u2019ll never more see you",
+        "Till we meet in Heaven it seems",
+        "But I hold you close to my heart love",
+        "In my beautiful memories and dreams"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

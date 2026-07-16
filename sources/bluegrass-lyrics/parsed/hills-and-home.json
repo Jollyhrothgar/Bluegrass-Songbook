@@ -1,0 +1,49 @@
+{
+  "slug": "hills-and-home",
+  "title": "Hills and Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/hills-and-home/",
+  "raw_lyrics": "Headin back to the hills and home\nThis old country never more to roam\nThis travellin\u2019 life is not for me\nI\u2019m heading back to the hills and home\n\nLike many other wanderin lads\nI went away my fortune to see\nIt\u2019s all the same but now I know\nMy fortune\u2019s here among the hills and home\n\nI can smell the mountain laurels bloomin\u2019\nAlong the road that leads up to my home\nThat stand of oak out behind the shed\nMakes me long for the hills and home\n\nThere\u2019s a light shining from the window\nThe smoke is curlin from the chimney top\nMom and dad about their evening chores\nI\u2019ll soon be back among the hills and home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Headin back to the hills and home",
+        "This old country never more to roam",
+        "This travellin\u2019 life is not for me",
+        "I\u2019m heading back to the hills and home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Like many other wanderin lads",
+        "I went away my fortune to see",
+        "It\u2019s all the same but now I know",
+        "My fortune\u2019s here among the hills and home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can smell the mountain laurels bloomin\u2019",
+        "Along the road that leads up to my home",
+        "That stand of oak out behind the shed",
+        "Makes me long for the hills and home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a light shining from the window",
+        "The smoke is curlin from the chimney top",
+        "Mom and dad about their evening chores",
+        "I\u2019ll soon be back among the hills and home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

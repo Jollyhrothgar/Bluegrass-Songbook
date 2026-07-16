@@ -1,0 +1,39 @@
+{
+  "slug": "the-girl-i-love-dont-pay-me-no-mind",
+  "title": "The Girl I Love Don\u2019t Pay Me No Mind",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-girl-i-love-dont-pay-me-no-mind/",
+  "raw_lyrics": "The girl I love don\u2019t pay me no mind\nThe girl I love don\u2019t pay me no mind\nOh sweetheart divine put your little hand in mine\nThe girl I love don\u2019t pay me no mind\n\nThe girl I love done left this town\nThe girl I love done left this town\nShe left this town says I\u2019m Alabama bound\nThe girl I love done left this town\n\nWhen I\u2019m gone don\u2019t wear no black\nWhen I\u2019m gone don\u2019t wear no black\nOh don\u2019t wear no black for you know I\u2019ll be back\nWhen I\u2019m gone don\u2019t wear no black",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "The girl I love don\u2019t pay me no mind",
+        "The girl I love don\u2019t pay me no mind",
+        "Oh sweetheart divine put your little hand in mine",
+        "The girl I love don\u2019t pay me no mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The girl I love done left this town",
+        "The girl I love done left this town",
+        "She left this town says I\u2019m Alabama bound",
+        "The girl I love done left this town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I\u2019m gone don\u2019t wear no black",
+        "When I\u2019m gone don\u2019t wear no black",
+        "Oh don\u2019t wear no black for you know I\u2019ll be back",
+        "When I\u2019m gone don\u2019t wear no black"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

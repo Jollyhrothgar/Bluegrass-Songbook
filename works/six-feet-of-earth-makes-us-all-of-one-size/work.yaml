@@ -1,0 +1,11 @@
+id: six-feet-of-earth-makes-us-all-of-one-size
+title: Six Feet of Earth Makes Us All of One Size
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/six-feet-of-earth-makes-us-all-of-one-size/
+      imported_at: '2026-02-08'

@@ -1,0 +1,49 @@
+{
+  "slug": "grandpas-mandolin",
+  "title": "Grandpa\u2019s Mandolin",
+  "source_url": "https://www.bluegrasslyrics.com/song/grandpas-mandolin/",
+  "raw_lyrics": "Looking through old memories in my cedar closet stashed away\nI found the old mandolin Grandpa used to play\nI picked it up and held it close thinking \u2019bout those years ago\nAnd all the great music Grandpa made\n\nWeathered worn but never frail with calloused hands he gently played\nTo bring an easy feeling to a hard working day\nWhen times were tough as they could be he never once complained to me\nHe\u2019d just let the music sooth the the pain\n\nWhen Grandpa played the mandolin the family gathered \u2019round\nTo sing the old time songs generations handed down\nI remember every single phrase from every song he played\nWish I could sing a song with Grandpa today\n\nI recall 1961 the year Grandpa passed away\nThe family gathered \u2019round once more to sing Amazing Grace\nNow this mandolin\u2019s reminding me of what my Grandpa taught to me\nThat music makes the world a better place",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Looking through old memories in my cedar closet stashed away",
+        "I found the old mandolin Grandpa used to play",
+        "I picked it up and held it close thinking \u2019bout those years ago",
+        "And all the great music Grandpa made"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Weathered worn but never frail with calloused hands he gently played",
+        "To bring an easy feeling to a hard working day",
+        "When times were tough as they could be he never once complained to me",
+        "He\u2019d just let the music sooth the the pain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When Grandpa played the mandolin the family gathered \u2019round",
+        "To sing the old time songs generations handed down",
+        "I remember every single phrase from every song he played",
+        "Wish I could sing a song with Grandpa today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I recall 1961 the year Grandpa passed away",
+        "The family gathered \u2019round once more to sing Amazing Grace",
+        "Now this mandolin\u2019s reminding me of what my Grandpa taught to me",
+        "That music makes the world a better place"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

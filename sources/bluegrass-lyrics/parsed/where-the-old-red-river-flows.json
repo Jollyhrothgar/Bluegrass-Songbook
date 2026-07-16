@@ -1,0 +1,39 @@
+{
+  "slug": "where-the-old-red-river-flows",
+  "title": "Where The Old Red River Flows",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-the-old-red-river-flows/",
+  "raw_lyrics": "I\u2019m dreamin\u2019 tonight of Dixie cotton fields and whippoorwills\nWhere I spent my happy childhood \u2018neath the rocks and among the rills\nI can see my dear old mother as around the place she goes\nOn the farm in Louisiana where the old Red River flows\n\nAh-lee-oh-de-lady-oo\nYou can hear the old folks singin\u2019 soft and low\nAt the twilight in the evening so low so low\nOn the farm in Louisiana where the old Red River flows\n\nThe lights so bright on Broadway the city\u2019s bright as day,\nAnd there on Coney Island where the ripplin\u2019 waters play\nI\u2019ll be headin\u2019 south for Dixie on that I. C. when she goes\nTo my farm in farm in Louisiana where the old Red River flows",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m dreamin\u2019 tonight of Dixie cotton fields and whippoorwills",
+        "Where I spent my happy childhood \u2018neath the rocks and among the rills",
+        "I can see my dear old mother as around the place she goes",
+        "On the farm in Louisiana where the old Red River flows"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Ah-lee-oh-de-lady-oo",
+        "You can hear the old folks singin\u2019 soft and low",
+        "At the twilight in the evening so low so low",
+        "On the farm in Louisiana where the old Red River flows"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The lights so bright on Broadway the city\u2019s bright as day,",
+        "And there on Coney Island where the ripplin\u2019 waters play",
+        "I\u2019ll be headin\u2019 south for Dixie on that I. C. when she goes",
+        "To my farm in farm in Louisiana where the old Red River flows"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

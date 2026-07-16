@@ -1,0 +1,49 @@
+{
+  "slug": "ice-cold-stone",
+  "title": "Ice Cold Stone",
+  "source_url": "https://www.bluegrasslyrics.com/song/ice-cold-stone/",
+  "raw_lyrics": "Love me now while I\u2019m livin\nPlease don\u2019t wait until I\u2019m gone\nAnd then chisel it in marble\nWarm love words on an ice cold stone\n\nIf you have these thoughts about me\nWhy not tell them to me now\nDon\u2019t you know they\u2019d make me happy\nWhisper them as you kiss my brow\n\nIf you wait until I\u2019m sleepin\nNever to wake here again\nThere\u2019ll be walls of earth between us\nAnd I could not hear you then\n\nSo my dear if you love me\nIf only just a little bit\nLet me know now while I\u2019m living\nSo I can hold and treasure it",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Love me now while I\u2019m livin",
+        "Please don\u2019t wait until I\u2019m gone",
+        "And then chisel it in marble",
+        "Warm love words on an ice cold stone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you have these thoughts about me",
+        "Why not tell them to me now",
+        "Don\u2019t you know they\u2019d make me happy",
+        "Whisper them as you kiss my brow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you wait until I\u2019m sleepin",
+        "Never to wake here again",
+        "There\u2019ll be walls of earth between us",
+        "And I could not hear you then"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So my dear if you love me",
+        "If only just a little bit",
+        "Let me know now while I\u2019m living",
+        "So I can hold and treasure it"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

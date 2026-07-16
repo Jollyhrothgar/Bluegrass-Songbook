@@ -1,0 +1,50 @@
+{
+  "slug": "carolina-sunshine-girl",
+  "title": "Carolina  Sunshine Girl",
+  "source_url": "https://www.bluegrasslyrics.com/song/carolina-sunshine-girl/",
+  "raw_lyrics": "Moon moon I can see you smilin\u2019 low\nYou made me think of a sweetheart\nA little girl that I loved so\nAfter I\u2019ve wondered the whole night through\nWonderin\u2019 if you think of me\nWhile I\u2019m on my lonesome thinkin\u2019 of someone\nI\u2019m thinkin\u2019 only of you\n\nMy Carolina sunshine girl\nYou have turned my heart to stone\nMy Carolina sunshine Girl\nYou have left me all alone\n\nI wonder why I sit and cry\nWhen I really should laugh\nAt your little old photograph\nFor you\u2019re the sweetest angel in this world\n\nAnd I love love love you\nMy Carolina sunshine girl",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Moon moon I can see you smilin\u2019 low",
+        "You made me think of a sweetheart",
+        "A little girl that I loved so",
+        "After I\u2019ve wondered the whole night through",
+        "Wonderin\u2019 if you think of me",
+        "While I\u2019m on my lonesome thinkin\u2019 of someone",
+        "I\u2019m thinkin\u2019 only of you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "My Carolina sunshine girl",
+        "You have turned my heart to stone",
+        "My Carolina sunshine Girl",
+        "You have left me all alone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wonder why I sit and cry",
+        "When I really should laugh",
+        "At your little old photograph",
+        "For you\u2019re the sweetest angel in this world"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And I love love love you",
+        "My Carolina sunshine girl"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

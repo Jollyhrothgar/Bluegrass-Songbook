@@ -1,0 +1,11 @@
+id: say-wont-you-be-mine
+title: Say Won’t You Be Mine
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/say-wont-you-be-mine/
+      imported_at: '2026-02-08'

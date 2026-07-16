@@ -1,0 +1,58 @@
+{
+  "slug": "in-the-pines",
+  "title": "In The Pines",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-the-pines/",
+  "raw_lyrics": "The longest train I ever saw\nWent down that Georgia line\nThe engine passed at six o\u2019clock\nAnd the cab passed by at nine\n\nIn the pines, in the pines\nWhere the sun never shines\nAnd we shiver when the cold wind blows\n\nI asked my captain for the time of day\nHe said he throwed his watch away\nA long steel rail and a short cross tie\nI\u2019m on my way back home\n\nLittle girl, little girl, what have I done\nThat makes you treat me so\nYou caused me to weep, you caused me to mourn\nYou caused me to leave my home\n\nMy father was an engineer\nDied a mile out of town\nHis head was found in the driving gear\nBut his body was never found",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The longest train I ever saw",
+        "Went down that Georgia line",
+        "The engine passed at six o\u2019clock",
+        "And the cab passed by at nine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "In the pines, in the pines",
+        "Where the sun never shines",
+        "And we shiver when the cold wind blows"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I asked my captain for the time of day",
+        "He said he throwed his watch away",
+        "A long steel rail and a short cross tie",
+        "I\u2019m on my way back home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Little girl, little girl, what have I done",
+        "That makes you treat me so",
+        "You caused me to weep, you caused me to mourn",
+        "You caused me to leave my home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My father was an engineer",
+        "Died a mile out of town",
+        "His head was found in the driving gear",
+        "But his body was never found"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

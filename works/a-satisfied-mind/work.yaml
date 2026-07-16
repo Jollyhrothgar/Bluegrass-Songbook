@@ -1,0 +1,11 @@
+id: a-satisfied-mind
+title: A Satisfied Mind
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/a-satisfied-mind/
+      imported_at: '2026-02-08'

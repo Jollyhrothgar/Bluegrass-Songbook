@@ -1,0 +1,49 @@
+{
+  "slug": "down-where-the-river-bends",
+  "title": "Down Where The River Bends",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-where-the-river-bends/",
+  "raw_lyrics": "Its hard to keep tears out of my eyes\nThis might be our last goodbye\nOur country calls you to defend a great land\nSo do your part just like a man\n\nDown where the river bends\nWith god\u2019s help we\u2019ll meet again\nUnder the same old sycamore tree\nProud of each other and the land of the free\n\nI go down to the ocean blue\nIts just as close as I came to you\nThis old ocean might keep us apart\nBut it won\u2019t keep you dear out of my heart\n\nIf the worst should happen and the poppies should wave\nOver your far distant, lonely grave\nAll the rest of my life I\u2019ll spend in prayer\nI\u2019ll meet you in heaven there\u2019ll be no war there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Its hard to keep tears out of my eyes",
+        "This might be our last goodbye",
+        "Our country calls you to defend a great land",
+        "So do your part just like a man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Down where the river bends",
+        "With god\u2019s help we\u2019ll meet again",
+        "Under the same old sycamore tree",
+        "Proud of each other and the land of the free"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I go down to the ocean blue",
+        "Its just as close as I came to you",
+        "This old ocean might keep us apart",
+        "But it won\u2019t keep you dear out of my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If the worst should happen and the poppies should wave",
+        "Over your far distant, lonely grave",
+        "All the rest of my life I\u2019ll spend in prayer",
+        "I\u2019ll meet you in heaven there\u2019ll be no war there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

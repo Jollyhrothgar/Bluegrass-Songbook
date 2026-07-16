@@ -1,0 +1,39 @@
+{
+  "slug": "i-dont-love-nobody",
+  "title": "I Don\u2019t Love Nobody",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-dont-love-nobody/",
+  "raw_lyrics": "Well I don\u2019t nobody nobody loves me\nAll they want\u2019s my money they don\u2019t care for me\nI want to live single happy and carefree\nI don\u2019t love nobody nobody loves me\n\nOne day I went out walking walking down Johnson street\nI met a little old lady she smiled at me so sweet\nSaid hello my honey how are you today\nJust as I started to kiss her these words I heard her say\n\nOne day I went out walking walking down Johnson street\nI met the same little lady she was dressed up so near\nShe smiled at me and said hello how are you today\nTipped my hat and said hello and journeyed on my way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I don\u2019t nobody nobody loves me",
+        "All they want\u2019s my money they don\u2019t care for me",
+        "I want to live single happy and carefree",
+        "I don\u2019t love nobody nobody loves me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One day I went out walking walking down Johnson street",
+        "I met a little old lady she smiled at me so sweet",
+        "Said hello my honey how are you today",
+        "Just as I started to kiss her these words I heard her say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One day I went out walking walking down Johnson street",
+        "I met the same little lady she was dressed up so near",
+        "She smiled at me and said hello how are you today",
+        "Tipped my hat and said hello and journeyed on my way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

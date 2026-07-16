@@ -1,0 +1,66 @@
+{
+  "slug": "we-shall-rise",
+  "title": "We Shall Rise",
+  "source_url": "https://www.bluegrasslyrics.com/song/we-shall-rise/",
+  "raw_lyrics": "On the resurrection morning\nWhen the trumpet of God shall sound\nWe shall rise hallelujah we shall rise\nThen the saints shall come rejoicing\nAnd no tears will e\u2019er be found\nWe shall rise hallelujah we shall rise\n\nWe shall rise (hallelujah) we shall rise (amen)\nWe shall rise (hallelujah) in that resurrection morning\nWhen these prison bars are broken\nWe shall rise hallelujah we shall rise\n\nOn the resurrection morning\nWhat a meeting it will be\nWe shall rise hallelujah we shall rise\nWhen our fathers and mothers and loved ones we\u2019ll see\nWe shall rise hallelujah we shall rise\n\nOn the resurrection morning\nBlessed thought it is to me\nWe shall rise hallelujah we shall rise\nI will see my blessed savior\nWho so freely died for me\nWe shall rise hallelujah we shall rise\n\nOn the resurrection morning\nWe shall meet Him in the air\nWe shall rise hallelujah we shall rise\nAnd be carried up to Glory\nAnd our home so bright and fair\nWe shall rise hallelujah we shall rise",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On the resurrection morning",
+        "When the trumpet of God shall sound",
+        "We shall rise hallelujah we shall rise",
+        "Then the saints shall come rejoicing",
+        "And no tears will e\u2019er be found",
+        "We shall rise hallelujah we shall rise"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "We shall rise (hallelujah) we shall rise (amen)",
+        "We shall rise (hallelujah) in that resurrection morning",
+        "When these prison bars are broken",
+        "We shall rise hallelujah we shall rise"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On the resurrection morning",
+        "What a meeting it will be",
+        "We shall rise hallelujah we shall rise",
+        "When our fathers and mothers and loved ones we\u2019ll see",
+        "We shall rise hallelujah we shall rise"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On the resurrection morning",
+        "Blessed thought it is to me",
+        "We shall rise hallelujah we shall rise",
+        "I will see my blessed savior",
+        "Who so freely died for me",
+        "We shall rise hallelujah we shall rise"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On the resurrection morning",
+        "We shall meet Him in the air",
+        "We shall rise hallelujah we shall rise",
+        "And be carried up to Glory",
+        "And our home so bright and fair",
+        "We shall rise hallelujah we shall rise"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

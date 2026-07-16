@@ -1,0 +1,39 @@
+{
+  "slug": "abilene",
+  "title": "Abilene",
+  "source_url": "https://www.bluegrasslyrics.com/song/abilene/",
+  "raw_lyrics": "Abilene Abilene\nPrettiest town I\u2019ve ever seen\nWomen there will treat you mean\nIn Abilene my Abilene\n\nI sit alone most every night\nWatch those trains pull out of sight\nDon\u2019t I wish they were carrying me\nBack to Abilene my Abilene\n\nCrowded city there ain\u2019t nothing free\nNothing in this town for me\nWish to the Lord that I could be\nIn Abilene sweet Abilene",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Abilene Abilene",
+        "Prettiest town I\u2019ve ever seen",
+        "Women there will treat you mean",
+        "In Abilene my Abilene"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I sit alone most every night",
+        "Watch those trains pull out of sight",
+        "Don\u2019t I wish they were carrying me",
+        "Back to Abilene my Abilene"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Crowded city there ain\u2019t nothing free",
+        "Nothing in this town for me",
+        "Wish to the Lord that I could be",
+        "In Abilene sweet Abilene"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

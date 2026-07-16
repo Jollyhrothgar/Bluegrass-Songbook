@@ -1,0 +1,11 @@
+id: bury-me-not-on-the-lone-prairie
+title: Bury Me Not on the Lone Prairie
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/bury-me-not-on-the-lone-prairie/
+      imported_at: '2026-02-08'

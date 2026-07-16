@@ -1,0 +1,39 @@
+{
+  "slug": "what-was-i-suppose-to-do",
+  "title": "What Was I Suppose To Do",
+  "source_url": "https://www.bluegrasslyrics.com/song/what-was-i-suppose-to-do/",
+  "raw_lyrics": "You were my hearts desire you set the flame of love on fire\nNo other love cold take the place of you\nThen you left me all alone so lonesome and so blue\nAnd I found someone to take your place what was I suppose to do\n\nWas I to walk the floor and worry over endless days to come\nOr cry and plead down on my knees for you\nI couldn\u2019t stand to be alone  you left me nothing else to choose\nSo I found someone to take your place what was I suppose to do\n\nI know I vowed there\u2019d never be no other love\nThe dream that I\u2019d been searching for was you\nBut then that dream came to an end there was no use to pretend\nSo I found someone to take your place what was I suppose to do",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You were my hearts desire you set the flame of love on fire",
+        "No other love cold take the place of you",
+        "Then you left me all alone so lonesome and so blue",
+        "And I found someone to take your place what was I suppose to do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Was I to walk the floor and worry over endless days to come",
+        "Or cry and plead down on my knees for you",
+        "I couldn\u2019t stand to be alone  you left me nothing else to choose",
+        "So I found someone to take your place what was I suppose to do"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know I vowed there\u2019d never be no other love",
+        "The dream that I\u2019d been searching for was you",
+        "But then that dream came to an end there was no use to pretend",
+        "So I found someone to take your place what was I suppose to do"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

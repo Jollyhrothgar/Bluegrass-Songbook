@@ -1,0 +1,11 @@
+id: i-might-take-you-back-again
+title: I Might Take You Back Again
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-might-take-you-back-again/
+      imported_at: '2026-02-08'

@@ -1,0 +1,69 @@
+{
+  "slug": "blue-ridge-mountain-blues",
+  "title": "Blue Ridge Mountain Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-ridge-mountain-blues/",
+  "raw_lyrics": "When I was young and in my prime\nI left my home in Caroline\nNow all I do is sit and pine\nFor all the folks I left behind\n\nI\u2019ve got them Blue Ridge Mountain blues\nAnd I stand right here and say\nMy grip is packed to travel and I\u2019m scratchin\u2019 gravel\nFor that Blue Ridge far away\n\nWell I\u2019m gonna stay right by my Pa\nAnd I\u2019m gonna do right by my Ma\nI\u2019ll hang around that cabin door\nNo work or worry anymore\n\nI\u2019ve got them Blue Ridge Mountain blues\nGonna see my old dog Trey\nGonna hunt the possum where the corn tops blossom\nOn that Blue Ridge far away\n\nNow I see a window with a light\nI see two heads of snowy white\nIt seems I hear them both recite\nWhere is my wandering boy tonight\n\nI\u2019ve got those Blue Ridge Mountain blues\nAnd I stand right here to say\nEvery day I\u2019m counting \u2019til I find that mountain\nOn that blue ridge far away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I was young and in my prime",
+        "I left my home in Caroline",
+        "Now all I do is sit and pine",
+        "For all the folks I left behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got them Blue Ridge Mountain blues",
+        "And I stand right here and say",
+        "My grip is packed to travel and I\u2019m scratchin\u2019 gravel",
+        "For that Blue Ridge far away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019m gonna stay right by my Pa",
+        "And I\u2019m gonna do right by my Ma",
+        "I\u2019ll hang around that cabin door",
+        "No work or worry anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got them Blue Ridge Mountain blues",
+        "Gonna see my old dog Trey",
+        "Gonna hunt the possum where the corn tops blossom",
+        "On that Blue Ridge far away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I see a window with a light",
+        "I see two heads of snowy white",
+        "It seems I hear them both recite",
+        "Where is my wandering boy tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got those Blue Ridge Mountain blues",
+        "And I stand right here to say",
+        "Every day I\u2019m counting \u2019til I find that mountain",
+        "On that blue ridge far away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

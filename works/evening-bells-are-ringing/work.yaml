@@ -1,0 +1,11 @@
+id: evening-bells-are-ringing
+title: Evening Bells Are Ringing
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/evening-bells-are-ringing/
+      imported_at: '2026-02-08'

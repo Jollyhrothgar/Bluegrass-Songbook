@@ -1,0 +1,11 @@
+id: id-rather-be-alone
+title: I’d Rather Be Alone
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/id-rather-be-alone/
+      imported_at: '2026-02-08'

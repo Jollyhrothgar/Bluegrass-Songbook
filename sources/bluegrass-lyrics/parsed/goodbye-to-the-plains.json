@@ -1,0 +1,69 @@
+{
+  "slug": "goodbye-to-the-plains",
+  "title": "Goodbye To The Plains",
+  "source_url": "https://www.bluegrasslyrics.com/song/goodbye-to-the-plains/",
+  "raw_lyrics": "Goodbye to the pals of the prairie\nGoodbye to the pals of the plains\nGoodbye to the dash and the danger\nGoodbye to the heartaches and pains\n\nGoodbye to my faithful old pony\nTake care of him, boys, when I go\nI\u2019m riding away on life\u2019s roundup\nAway to where the sun sinks low\n\nGoodbye to the whoop-rushing cattle\nGoodbye to the clanking of spurs\nGoodbye to the laugh and the chatter\nGoodbye to the wildlife and steers\n\nGoodbye to the dawning\u2019s first blushes\nThat fair in the east faintly glow\nI\u2019m riding away on life\u2019s roundup\nAway to where the sun sinks low\n\nGoodbye to the girls and the boys\nGoodbye to all of my friends\nGoodbye to the dear girl, my sweetheart\nFor I know this is my end\n\nFor the pale rider comes with his summons\nAnd I\u2019m willing and ready to go\nFor I\u2019m riding away on life\u2019s roundup\nAway to where the sun sinks low",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye to the pals of the prairie",
+        "Goodbye to the pals of the plains",
+        "Goodbye to the dash and the danger",
+        "Goodbye to the heartaches and pains"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye to my faithful old pony",
+        "Take care of him, boys, when I go",
+        "I\u2019m riding away on life\u2019s roundup",
+        "Away to where the sun sinks low"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye to the whoop-rushing cattle",
+        "Goodbye to the clanking of spurs",
+        "Goodbye to the laugh and the chatter",
+        "Goodbye to the wildlife and steers"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye to the dawning\u2019s first blushes",
+        "That fair in the east faintly glow",
+        "I\u2019m riding away on life\u2019s roundup",
+        "Away to where the sun sinks low"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye to the girls and the boys",
+        "Goodbye to all of my friends",
+        "Goodbye to the dear girl, my sweetheart",
+        "For I know this is my end"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For the pale rider comes with his summons",
+        "And I\u2019m willing and ready to go",
+        "For I\u2019m riding away on life\u2019s roundup",
+        "Away to where the sun sinks low"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

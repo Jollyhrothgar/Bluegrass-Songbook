@@ -1,0 +1,79 @@
+{
+  "slug": "winters-night",
+  "title": "Winter\u2019s Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/winters-night/",
+  "raw_lyrics": "While rovin\u2019 on one winter\u2019s night\nAnd a-drinkin\u2019 good old wine\nThinkin\u2019 about that dear little girl\nThat broke this heart of mine\n\nFor she is like some budded rose\nThat blooms in the month of June\nShe\u2019s like some music instrument\nThat\u2019s just been enably tuned\n\nPerhaps a trip to a foreign land\nA trip to France or Spain\nBut if I go ten thousand miles\nI\u2019m a-comin\u2019 back again\n\nAnd who\u2019s a-gonna shoe your poor little foot\nWho will glove your hands\nWho will kiss your red ruby lips\nAnd who will be your man\n\nPapas gonna shoe my poor little foot\nAnd mama will glove my hand\nYou can kiss my red ruby lips\nAnd you can be my man\n\nI love you till the sea runs dry\nAnd the rocks all melt in the sun\nI love you till the day I die\nThough you will never be my own\n\nWhile rovin\u2019 on one winter\u2019s night\nAnd drinkin\u2019 good old wine\nThinkin\u2019 about that dear little girl\nThat broke this heart of mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "While rovin\u2019 on one winter\u2019s night",
+        "And a-drinkin\u2019 good old wine",
+        "Thinkin\u2019 about that dear little girl",
+        "That broke this heart of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For she is like some budded rose",
+        "That blooms in the month of June",
+        "She\u2019s like some music instrument",
+        "That\u2019s just been enably tuned"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Perhaps a trip to a foreign land",
+        "A trip to France or Spain",
+        "But if I go ten thousand miles",
+        "I\u2019m a-comin\u2019 back again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And who\u2019s a-gonna shoe your poor little foot",
+        "Who will glove your hands",
+        "Who will kiss your red ruby lips",
+        "And who will be your man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Papas gonna shoe my poor little foot",
+        "And mama will glove my hand",
+        "You can kiss my red ruby lips",
+        "And you can be my man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I love you till the sea runs dry",
+        "And the rocks all melt in the sun",
+        "I love you till the day I die",
+        "Though you will never be my own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While rovin\u2019 on one winter\u2019s night",
+        "And drinkin\u2019 good old wine",
+        "Thinkin\u2019 about that dear little girl",
+        "That broke this heart of mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

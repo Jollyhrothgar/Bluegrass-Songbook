@@ -1,0 +1,55 @@
+{
+  "slug": "bootleg-john",
+  "title": "Bootleg John",
+  "source_url": "https://www.bluegrasslyrics.com/song/bootleg-john/",
+  "raw_lyrics": "In the land of Breathed County was raised a crooked man\nMade the county dry and the prices high\nFor the bootleg whiskey man\nHis age was barely twenty-one, his family was ashamed\nThey had a son who left his home\nFor a bootleg whiskey game\n\nBootleg John won\u2019t you come on home\nYour family\u2019s all alone\nYou\u2019re runnin\u2019 wild and your baby child\nWants his daddy home\n\nHis wife she loved hime dearly tho\u2019 he seldom came around\nShe\u2019d always cry when he said goodbye\nBut she never could hold him down\nTwelve pistols in his pocket his shotgun on the floor\nHe made his run to Lexington\nTo the bootleg whiskey store\n\nHis car was full of whiskey, his hand was on his gun\nHe was set to go but he didn\u2019t know\nHe was makin\u2019 his last run\nThe sheriff pulled him over and he shot the lawman down\nThey locked him well in the county jail\nAnd the jailer slapped him down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the land of Breathed County was raised a crooked man",
+        "Made the county dry and the prices high",
+        "For the bootleg whiskey man",
+        "His age was barely twenty-one, his family was ashamed",
+        "They had a son who left his home",
+        "For a bootleg whiskey game"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Bootleg John won\u2019t you come on home",
+        "Your family\u2019s all alone",
+        "You\u2019re runnin\u2019 wild and your baby child",
+        "Wants his daddy home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His wife she loved hime dearly tho\u2019 he seldom came around",
+        "She\u2019d always cry when he said goodbye",
+        "But she never could hold him down",
+        "Twelve pistols in his pocket his shotgun on the floor",
+        "He made his run to Lexington",
+        "To the bootleg whiskey store"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His car was full of whiskey, his hand was on his gun",
+        "He was set to go but he didn\u2019t know",
+        "He was makin\u2019 his last run",
+        "The sheriff pulled him over and he shot the lawman down",
+        "They locked him well in the county jail",
+        "And the jailer slapped him down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

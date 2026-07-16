@@ -1,0 +1,39 @@
+{
+  "slug": "pick-me-up-on-your-way-down",
+  "title": "Pick Me Up On Your Way Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/pick-me-up-on-your-way-down/",
+  "raw_lyrics": "You were mine for just a while now you\u2019re puttin\u2019 on the style\nYou never once looked back at your home across the track\nYou\u2019re the gossip of the town but my heart can still be found\nWhere you tossed it on the ground pick me up on your way down\n\nPick me up on your way down when you\u2019re blue and all alone\nWhen their glamor starts to bore you come on back where you belong\nYou may be their pride and joy But they\u2019ll find another toy\nAnd they\u2019ll take away your crown pick me up on your way down\n\nThey have changed your attitude made you haughty and so rude\nYour new friends can take the blame underneath you\u2019re still the same\nWhen you find these things are true I\u2019ll be waiting here for you\nAs you tumble to the ground pick me up on your way down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You were mine for just a while now you\u2019re puttin\u2019 on the style",
+        "You never once looked back at your home across the track",
+        "You\u2019re the gossip of the town but my heart can still be found",
+        "Where you tossed it on the ground pick me up on your way down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Pick me up on your way down when you\u2019re blue and all alone",
+        "When their glamor starts to bore you come on back where you belong",
+        "You may be their pride and joy But they\u2019ll find another toy",
+        "And they\u2019ll take away your crown pick me up on your way down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They have changed your attitude made you haughty and so rude",
+        "Your new friends can take the blame underneath you\u2019re still the same",
+        "When you find these things are true I\u2019ll be waiting here for you",
+        "As you tumble to the ground pick me up on your way down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

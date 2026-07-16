@@ -1,0 +1,39 @@
+{
+  "slug": "foolish-pride",
+  "title": "Foolish Pride",
+  "source_url": "https://www.bluegrasslyrics.com/song/foolish-pride/",
+  "raw_lyrics": "Once I had a true love sweeter than the stars above\nAnd I loved her with all my heart\nIt brought tears in her eyes when I told her goodbye\nAll because of my fool foolish pride\n\nOh foolish pride I can\u2019t live with you\nFor you have driven away my darling\nYou have broken her heart now you\u2019re keeping us apart\nFoolish pride I\u2019ll never forgive you\n\nWe would sit all alone she would talk of our home\nAnd of days when she\u2019d be my own wife\nSo softly she would say when is our wedding day\nI\u2019m so happy my darling I could cry",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once I had a true love sweeter than the stars above",
+        "And I loved her with all my heart",
+        "It brought tears in her eyes when I told her goodbye",
+        "All because of my fool foolish pride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh foolish pride I can\u2019t live with you",
+        "For you have driven away my darling",
+        "You have broken her heart now you\u2019re keeping us apart",
+        "Foolish pride I\u2019ll never forgive you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We would sit all alone she would talk of our home",
+        "And of days when she\u2019d be my own wife",
+        "So softly she would say when is our wedding day",
+        "I\u2019m so happy my darling I could cry"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

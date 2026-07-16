@@ -1,0 +1,59 @@
+{
+  "slug": "ramblin-boy",
+  "title": "Ramblin Boy",
+  "source_url": "https://www.bluegrasslyrics.com/song/ramblin-boy/",
+  "raw_lyrics": "He was a pal and a friend always\nWe rambled round in the hard ol\u2019 days\nHe never cared if I had no dough\nWe rambled round in the rain and snow\n\nSo here\u2019s to you  my ramblin\u2019 boy\nMay all your rambles bring you joy\nSo here\u2019s to you  my ramblin\u2019 boy\nMay all your rambles bring you joy\n\nIn Tulsa town we chanced to stray\nWe thought we\u2019d try to work one day\nThe boss says he had room for one\nSays my old pal We\u2019d rather bum\n\nLate one night in a jungle camp\nThe weather was cold and it was damp\nHe got the chills and he got them bad\nThey took the only friend I ever had\n\nHe left me here to ramble on\nMy ramblin\u2019 pal is dead and gone\nIf when we die we go somewhere\nI\u2019ll bet you a dollar he\u2019s ramblin\u2019 there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "He was a pal and a friend always",
+        "We rambled round in the hard ol\u2019 days",
+        "He never cared if I had no dough",
+        "We rambled round in the rain and snow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So here\u2019s to you  my ramblin\u2019 boy",
+        "May all your rambles bring you joy",
+        "So here\u2019s to you  my ramblin\u2019 boy",
+        "May all your rambles bring you joy"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In Tulsa town we chanced to stray",
+        "We thought we\u2019d try to work one day",
+        "The boss says he had room for one",
+        "Says my old pal We\u2019d rather bum"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Late one night in a jungle camp",
+        "The weather was cold and it was damp",
+        "He got the chills and he got them bad",
+        "They took the only friend I ever had"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He left me here to ramble on",
+        "My ramblin\u2019 pal is dead and gone",
+        "If when we die we go somewhere",
+        "I\u2019ll bet you a dollar he\u2019s ramblin\u2019 there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

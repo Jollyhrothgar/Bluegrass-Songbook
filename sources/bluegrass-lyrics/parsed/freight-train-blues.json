@@ -1,0 +1,59 @@
+{
+  "slug": "freight-train-blues",
+  "title": "Freight Train Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/freight-train-blues/",
+  "raw_lyrics": "I was born in Dixie in a boomer shack\nJust a little shanty by the railroad track\nThe humming of the driver was my lullaby\nAnd a freight train whistle taught me how to cry\n\nI got the freight train blues Lawdy Lawdy\nGot them in the bottom of my rambling shoes\nAnd when the whistle blows I gotta Oh Lawdy\nGuess I\u2019m never gonna lose the freight train blues\n\nMy daddy was a fireman and my mammy dear\nWas the only daughter of the engineer\nMy sweetie is a brakeman and that ain\u2019t no joke\nIt\u2019s a shame the way she keeps a good man broke\n\nAeroplanes and autos always leave me cold\nThe moaning of a steamboat never stirs my soul\nThe only thing that makes me want to navigate\nIs a wildcat whistle on a south bound freight\n\nI know I\u2019m old enough to quit this running round\nI\u2019ve tried a hundred times to stop and settle down\nBut every time I find a place I\u2019d like to stay\nI hear a freight train holler and I\u2019m on my way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was born in Dixie in a boomer shack",
+        "Just a little shanty by the railroad track",
+        "The humming of the driver was my lullaby",
+        "And a freight train whistle taught me how to cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I got the freight train blues Lawdy Lawdy",
+        "Got them in the bottom of my rambling shoes",
+        "And when the whistle blows I gotta Oh Lawdy",
+        "Guess I\u2019m never gonna lose the freight train blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My daddy was a fireman and my mammy dear",
+        "Was the only daughter of the engineer",
+        "My sweetie is a brakeman and that ain\u2019t no joke",
+        "It\u2019s a shame the way she keeps a good man broke"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Aeroplanes and autos always leave me cold",
+        "The moaning of a steamboat never stirs my soul",
+        "The only thing that makes me want to navigate",
+        "Is a wildcat whistle on a south bound freight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know I\u2019m old enough to quit this running round",
+        "I\u2019ve tried a hundred times to stop and settle down",
+        "But every time I find a place I\u2019d like to stay",
+        "I hear a freight train holler and I\u2019m on my way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

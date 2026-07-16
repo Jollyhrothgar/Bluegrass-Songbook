@@ -1,0 +1,40 @@
+{
+  "slug": "custom-made-woman-blues",
+  "title": "Custom Made Woman Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/custom-made-woman-blues/",
+  "raw_lyrics": "Well I tried to be the kind of woman you wanted me to be\nAnd it\u2019s not your fault that I tried to be what I thought you wanted to see\nSmilin\u2019 face shinnin\u2019 hair clothes that I thought you\u2019d like me to wear\nMade to please and not to tease it\u2019s the custom made woman blues.\n\nYes I tried to be the kind of woman you wanted me to be\nAnd I tried to see life your way and say all the things you\u2019d like me to say\nLovin\u2019 looks gentle hands an guaranteed to keep a\u2019 holdin\u2019 your man\nMade to please and not to tease it\u2019s the custom made woman blues.\n\nAnd now you say you\u2019re tired of me and all of those things I thought you wanted me to be\nIs it true you want some one who knows how to think and do on her own\nLord it\u2019s hard to realize the lessons I learned so was young were nothing but lies\nMade to please and not to tease it\u2019s the custom made woman blues\nMade to please and not to tease it\u2019s the custom made woman blues.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I tried to be the kind of woman you wanted me to be",
+        "And it\u2019s not your fault that I tried to be what I thought you wanted to see",
+        "Smilin\u2019 face shinnin\u2019 hair clothes that I thought you\u2019d like me to wear",
+        "Made to please and not to tease it\u2019s the custom made woman blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes I tried to be the kind of woman you wanted me to be",
+        "And I tried to see life your way and say all the things you\u2019d like me to say",
+        "Lovin\u2019 looks gentle hands an guaranteed to keep a\u2019 holdin\u2019 your man",
+        "Made to please and not to tease it\u2019s the custom made woman blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And now you say you\u2019re tired of me and all of those things I thought you wanted me to be",
+        "Is it true you want some one who knows how to think and do on her own",
+        "Lord it\u2019s hard to realize the lessons I learned so was young were nothing but lies",
+        "Made to please and not to tease it\u2019s the custom made woman blues",
+        "Made to please and not to tease it\u2019s the custom made woman blues."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

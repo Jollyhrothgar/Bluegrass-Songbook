@@ -1,0 +1,49 @@
+{
+  "slug": "big-train-from-memphis",
+  "title": "Big Train From Memphis",
+  "source_url": "https://www.bluegrasslyrics.com/song/big-train-from-memphis/",
+  "raw_lyrics": "When I was young I spent my summer days\nplaying on the track.\nThe sound of the wheels rolling on the steel\ntook me out took me back\n\nBig train from Memphis\nBig train from Memphis\nnow it\u2019s gone gone gone\ngone gone gone\n\nLike no one before he let out a roar\nand I just had to tag along\neach night I went to bed with the sounds in my head\nand the dream was the song\n\nWell I rode \u2019em in and back out again\nand you know what they say about trains\nBut I\u2019m tellin you when that Memphis train came through\nthis old world was not the same",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I was young I spent my summer days",
+        "playing on the track.",
+        "The sound of the wheels rolling on the steel",
+        "took me out took me back"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Big train from Memphis",
+        "Big train from Memphis",
+        "now it\u2019s gone gone gone",
+        "gone gone gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Like no one before he let out a roar",
+        "and I just had to tag along",
+        "each night I went to bed with the sounds in my head",
+        "and the dream was the song"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I rode \u2019em in and back out again",
+        "and you know what they say about trains",
+        "But I\u2019m tellin you when that Memphis train came through",
+        "this old world was not the same"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

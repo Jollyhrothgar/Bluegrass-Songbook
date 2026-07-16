@@ -1,0 +1,11 @@
+id: when-the-bright-lights-grow-dim
+title: When The Bright Lights Grow Dim
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/when-the-bright-lights-grow-dim/
+      imported_at: '2026-02-08'

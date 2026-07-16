@@ -1,0 +1,75 @@
+{
+  "slug": "frankie-and-johnnie",
+  "title": "Frankie And Johnnie",
+  "source_url": "https://www.bluegrasslyrics.com/song/frankie-and-johnnie/",
+  "raw_lyrics": "Frankie and Johnnie were lovers\nLordy how they did love\nThey swore to be true to each other\nJust as true as the stars above\nHe was her man but he\u2019s doing her wrong\n\nFrankie she was a good woman\nJust as every one knows\nShe gave her man a hundred dollars\nJust to buy him a new suit of clothes\nHe was her man but he done her wrong\n\nJohnnie went down to the corner\nHe asked for a glass of beer\nFrankie went down in an hour or so\nSaid has my loving Johnnie been here\nHe\u2019s my man but he\u2019s doing me wrong\n\nI ain\u2019t gonna tell you no stories\nI ain\u2019t gonna tell you no lies\nI saw your lovin\u2019 Johnnie\nMaking love to Nellie Bligh\nHe\u2019s your man but he\u2019s doing you wrong\n\nFrankie went home in a hurry\nShe didn\u2019t go for fun\nShe hurried home to get a hold of\nA big forty four gun\nHe\u2019s her man but he\u2019s doing her wrong\n\nRoll me over darling\nRoll me over slow\nRoll me on my right side\nCause my left one hurts me so\nHe\u2019s my man but he done me wrong",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Frankie and Johnnie were lovers",
+        "Lordy how they did love",
+        "They swore to be true to each other",
+        "Just as true as the stars above",
+        "He was her man but he\u2019s doing her wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Frankie she was a good woman",
+        "Just as every one knows",
+        "She gave her man a hundred dollars",
+        "Just to buy him a new suit of clothes",
+        "He was her man but he done her wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Johnnie went down to the corner",
+        "He asked for a glass of beer",
+        "Frankie went down in an hour or so",
+        "Said has my loving Johnnie been here",
+        "He\u2019s my man but he\u2019s doing me wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I ain\u2019t gonna tell you no stories",
+        "I ain\u2019t gonna tell you no lies",
+        "I saw your lovin\u2019 Johnnie",
+        "Making love to Nellie Bligh",
+        "He\u2019s your man but he\u2019s doing you wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Frankie went home in a hurry",
+        "She didn\u2019t go for fun",
+        "She hurried home to get a hold of",
+        "A big forty four gun",
+        "He\u2019s her man but he\u2019s doing her wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Roll me over darling",
+        "Roll me over slow",
+        "Roll me on my right side",
+        "Cause my left one hurts me so",
+        "He\u2019s my man but he done me wrong"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: little-girl-in-tennessee
+title: Little Girl In Tennessee
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/little-girl-in-tennessee/
+      imported_at: '2026-02-08'

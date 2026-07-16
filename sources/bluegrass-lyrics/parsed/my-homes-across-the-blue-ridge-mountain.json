@@ -1,0 +1,57 @@
+{
+  "slug": "my-homes-across-the-blue-ridge-mountain",
+  "title": "My Home\u2019s Across The Blue Ridge Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-homes-across-the-blue-ridge-mountain/",
+  "raw_lyrics": "My home\u2019s across the Blue Ridge Mountain (3X)\nFor I never expect to see you any more\n\nHow can I keep from crying (3X)\nFor I never expect to see you any more\n\nOh how I hate to leave you (3X)\nFor I never expect to see you any more\n\nI\u2019ll be leaving Monday morning (3X)\nFor I never expect to see you any more\n\nRock the baby and feed her candy (3X)\nFor I never expect to see you any more\n\nGoodbye my little darling (3X)\nFor I never expect to see you any more",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "My home\u2019s across the Blue Ridge Mountain (3X)",
+        "For I never expect to see you any more"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How can I keep from crying (3X)",
+        "For I never expect to see you any more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh how I hate to leave you (3X)",
+        "For I never expect to see you any more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll be leaving Monday morning (3X)",
+        "For I never expect to see you any more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rock the baby and feed her candy (3X)",
+        "For I never expect to see you any more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye my little darling (3X)",
+        "For I never expect to see you any more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

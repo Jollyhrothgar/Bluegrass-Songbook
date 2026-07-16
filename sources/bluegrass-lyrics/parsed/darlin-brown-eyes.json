@@ -1,0 +1,49 @@
+{
+  "slug": "darlin-brown-eyes",
+  "title": "Darlin\u2019 Brown Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/darlin-brown-eyes/",
+  "raw_lyrics": "The moon was shining last night\nYou\u2019re many miles from my side\nAs the train rolls on I\u2019m thinkin\u2019 of home\nAnd my little darlin\u2019 brown eyes\n\nMy little darlin\u2019 don\u2019t cry\nYou\u2019re little darlin\u2019 brown eyes\nYou\u2019re mine you\u2019re mine to love all the time\nYou\u2019re my little darlin\u2019 brown eyes\n\nThe train was on the fly\nI watched the stars in the sky\nThe break of dawn and the hills of home\nYou\u2019re my little darlin\u2019 brown eyes\n\nI\u2019ve come back darlin\u2019 brown eyes\nI\u2019ve come back darlin\u2019 don\u2019t cry\nBack to stay never to stray\nYou\u2019re my little darlin\u2019 brown eyes",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The moon was shining last night",
+        "You\u2019re many miles from my side",
+        "As the train rolls on I\u2019m thinkin\u2019 of home",
+        "And my little darlin\u2019 brown eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My little darlin\u2019 don\u2019t cry",
+        "You\u2019re little darlin\u2019 brown eyes",
+        "You\u2019re mine you\u2019re mine to love all the time",
+        "You\u2019re my little darlin\u2019 brown eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The train was on the fly",
+        "I watched the stars in the sky",
+        "The break of dawn and the hills of home",
+        "You\u2019re my little darlin\u2019 brown eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve come back darlin\u2019 brown eyes",
+        "I\u2019ve come back darlin\u2019 don\u2019t cry",
+        "Back to stay never to stray",
+        "You\u2019re my little darlin\u2019 brown eyes"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

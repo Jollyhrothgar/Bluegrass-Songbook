@@ -1,0 +1,69 @@
+{
+  "slug": "reckless-motorman",
+  "title": "Reckless Motorman",
+  "source_url": "https://www.bluegrasslyrics.com/song/reckless-motorman/",
+  "raw_lyrics": "Yonder stands the reckless motorman\nWho says his age is twenty one\nStanding by his mainline motor\nSaying folks what have I done\n\nIs it true I\u2019ve killed my brakemen\nIs it true that he is dying\nOh I tried to stop my motor\nBut I could not stop in time\n\nSee the cars stacked up on him\nSee him raise his weary head\nSee his sister standing by him\nCrying brother are you dead\n\nSister sister I am dying\nSoon I\u2019ll be on yonder shore\nSoon I\u2019ll have a home in heaven\nThere\u2019ll be no braking anymore\n\nGo and tell my youngest brother\nTake these words true and end ?\nTo never start the day a braking\nFor his life is sure to end\n\nGo tell my father who is weighman\nWhat he weighs to weigh it fair\nThere\u2019ll be no scales up in heaven\nFor that meeting in the air",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Yonder stands the reckless motorman",
+        "Who says his age is twenty one",
+        "Standing by his mainline motor",
+        "Saying folks what have I done"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Is it true I\u2019ve killed my brakemen",
+        "Is it true that he is dying",
+        "Oh I tried to stop my motor",
+        "But I could not stop in time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "See the cars stacked up on him",
+        "See him raise his weary head",
+        "See his sister standing by him",
+        "Crying brother are you dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sister sister I am dying",
+        "Soon I\u2019ll be on yonder shore",
+        "Soon I\u2019ll have a home in heaven",
+        "There\u2019ll be no braking anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go and tell my youngest brother",
+        "Take these words true and end ?",
+        "To never start the day a braking",
+        "For his life is sure to end"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go tell my father who is weighman",
+        "What he weighs to weigh it fair",
+        "There\u2019ll be no scales up in heaven",
+        "For that meeting in the air"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

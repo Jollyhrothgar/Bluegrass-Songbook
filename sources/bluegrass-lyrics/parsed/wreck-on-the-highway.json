@@ -1,0 +1,69 @@
+{
+  "slug": "wreck-on-the-highway",
+  "title": "Wreck on the Highway",
+  "source_url": "https://www.bluegrasslyrics.com/song/wreck-on-the-highway/",
+  "raw_lyrics": "Who did you say it was brother\nWho was it fell by the way\nWhen whiskey and blood run together\nDid you hear anyone pray\n\nI didn\u2019t hear nobody pray, dear brother\nI didn\u2019t hear nobody pray\nI heard the crash on the highway\nBut I didn\u2019t hear nobody pray\n\nWhen I heard the crash on the highway\nI knew what it was from the start\nI went to the scene of destruction\nAnd a picture was stamped on my heart\n\nThere was whiskey and blood all together\nMixed with glass where they lay\nDeath played her hand in destruction\nBut I didn\u2019t hear nobody pray\n\nI wish I could change this sad story\nThat I am now telling you\nBut there is no way I can change it\nFor somebody\u2019s life is now through\n\nTheir soul has been called by the Master\nThey died in a crash on the way\nAnd I heard the groans of the dying\nBut, I didn\u2019t hear nobody pray",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Who did you say it was brother",
+        "Who was it fell by the way",
+        "When whiskey and blood run together",
+        "Did you hear anyone pray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I didn\u2019t hear nobody pray, dear brother",
+        "I didn\u2019t hear nobody pray",
+        "I heard the crash on the highway",
+        "But I didn\u2019t hear nobody pray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I heard the crash on the highway",
+        "I knew what it was from the start",
+        "I went to the scene of destruction",
+        "And a picture was stamped on my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There was whiskey and blood all together",
+        "Mixed with glass where they lay",
+        "Death played her hand in destruction",
+        "But I didn\u2019t hear nobody pray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I could change this sad story",
+        "That I am now telling you",
+        "But there is no way I can change it",
+        "For somebody\u2019s life is now through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Their soul has been called by the Master",
+        "They died in a crash on the way",
+        "And I heard the groans of the dying",
+        "But, I didn\u2019t hear nobody pray"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

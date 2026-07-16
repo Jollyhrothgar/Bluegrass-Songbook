@@ -1,0 +1,49 @@
+{
+  "slug": "a-memory-of-you",
+  "title": "A Memory Of You",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-memory-of-you/",
+  "raw_lyrics": "I turned the key in the lock tonight\nAnd walked slowly into the room\nYour presence hung like a heavy mist\nAnd I knew death had come to soon\n\nThe stars maybe shining for somebody else\nThe moon maybe giving us light\nBut all that I have is a memory of you\nAnd I\u2019m lost in a world black as night\n\nDeath came too soon to the one that I love\nAnd now I must travel alone\nJust a wanderin\u2019 boy with a broken heart\nWhose sweetheart and pal is now gone\n\nI\u2019ll travel on through this world of dispair\nI\u2019ll just force myself to go on\nI find myself wishing ev-\u2018ryday\nI could be with her in the beyond",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I turned the key in the lock tonight",
+        "And walked slowly into the room",
+        "Your presence hung like a heavy mist",
+        "And I knew death had come to soon"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The stars maybe shining for somebody else",
+        "The moon maybe giving us light",
+        "But all that I have is a memory of you",
+        "And I\u2019m lost in a world black as night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Death came too soon to the one that I love",
+        "And now I must travel alone",
+        "Just a wanderin\u2019 boy with a broken heart",
+        "Whose sweetheart and pal is now gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll travel on through this world of dispair",
+        "I\u2019ll just force myself to go on",
+        "I find myself wishing ev-\u2018ryday",
+        "I could be with her in the beyond"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

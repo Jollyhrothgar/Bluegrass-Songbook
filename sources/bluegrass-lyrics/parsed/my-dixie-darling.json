@@ -1,0 +1,63 @@
+{
+  "slug": "my-dixie-darling",
+  "title": "My Dixie Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-dixie-darling/",
+  "raw_lyrics": "My Dixie darling\nListen to this song I sing\nBeneath the silver moon\nWith my banjo right in tune\nMy heart is ever true\nI love no one but you\nMy Dixie darling\nMy Dixie queen\n\nWay down below the Mason Dixie\u2019s line\nDown where the honey suckles are entwined\nThere\u2019s where the southern winds are blowing\nThere\u2019s where the daisies growing\n\nThe girls of the north in the gay finery\nWhirling around in the society\nSinging a song of Dixie darling\nWhere I long to be\n\nGoing down south to have a big time\nSee my girl in old Caroline\nI\u2019ll drink my booze and do as I please\nFor all those girls I long to squeeze\n\nSinging songs of Dixie darlings\nThere\u2019s where I long to be going\nDown where the jelly roll growing\nWith my Dixie queen",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "My Dixie darling",
+        "Listen to this song I sing",
+        "Beneath the silver moon",
+        "With my banjo right in tune",
+        "My heart is ever true",
+        "I love no one but you",
+        "My Dixie darling",
+        "My Dixie queen"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Way down below the Mason Dixie\u2019s line",
+        "Down where the honey suckles are entwined",
+        "There\u2019s where the southern winds are blowing",
+        "There\u2019s where the daisies growing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The girls of the north in the gay finery",
+        "Whirling around in the society",
+        "Singing a song of Dixie darling",
+        "Where I long to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Going down south to have a big time",
+        "See my girl in old Caroline",
+        "I\u2019ll drink my booze and do as I please",
+        "For all those girls I long to squeeze"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Singing songs of Dixie darlings",
+        "There\u2019s where I long to be going",
+        "Down where the jelly roll growing",
+        "With my Dixie queen"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

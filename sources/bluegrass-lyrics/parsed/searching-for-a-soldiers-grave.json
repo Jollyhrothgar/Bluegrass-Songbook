@@ -1,0 +1,49 @@
+{
+  "slug": "searching-for-a-soldiers-grave",
+  "title": "Searching for a Soldiers Grave",
+  "source_url": "https://www.bluegrasslyrics.com/song/searching-for-a-soldiers-grave/",
+  "raw_lyrics": "You ask me stranger why I made this journey\nWhy I crossed three thousand miles of rolling waves\nLike many others my love was killed in action\nSo I\u2019m here I\u2019m searching for his grave\n\nSomewhere among these many thousands\nOf our Americans who died true and brave\nThat\u2019s where I know I\u2019ll find him resting\nSo I\u2019m here I\u2019m searching for his grave\n\nBeside each cross mark here all around me\nI\u2019ll kneel down and gladly pray a prayer\nFor all other loved ones back home across the ocean\nWhose heart like mine is buried over here\n\nSomewhere among these many thousands\nOf our Americans who died true and brave\nThat\u2019s where I know I\u2019ll find him resting\nSo I\u2019m here I\u2019m searching for his grave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You ask me stranger why I made this journey",
+        "Why I crossed three thousand miles of rolling waves",
+        "Like many others my love was killed in action",
+        "So I\u2019m here I\u2019m searching for his grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Somewhere among these many thousands",
+        "Of our Americans who died true and brave",
+        "That\u2019s where I know I\u2019ll find him resting",
+        "So I\u2019m here I\u2019m searching for his grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Beside each cross mark here all around me",
+        "I\u2019ll kneel down and gladly pray a prayer",
+        "For all other loved ones back home across the ocean",
+        "Whose heart like mine is buried over here"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Somewhere among these many thousands",
+        "Of our Americans who died true and brave",
+        "That\u2019s where I know I\u2019ll find him resting",
+        "So I\u2019m here I\u2019m searching for his grave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

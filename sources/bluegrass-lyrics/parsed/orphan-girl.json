@@ -1,0 +1,53 @@
+{
+  "slug": "orphan-girl",
+  "title": "Orphan Girl",
+  "source_url": "https://www.bluegrasslyrics.com/song/orphan-girl/",
+  "raw_lyrics": "I am an orphan on God\u2019s highway\nBut I\u2019ll share my troubles if you go my way\nI have no mother no father\nNo sister no brother\nI am an orphan girl\n\nI have had friendships pure and golden\nBut the ties of kinship I have not known them\nI know no mother no father\nNo sister no brother\nI am an orphan girl\n\nBut when He calls me I will be able\nTo meet my family at God\u2019s table\nI\u2019ll meet my mother my father\nMy sister my brother\nNo more orphan girl\n\nBlessed Savior make me willing\nAnd walk beside me until I\u2019m with them\nBe my mother my father\nMy sister my brother\nI am an orphan girl",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am an orphan on God\u2019s highway",
+        "But I\u2019ll share my troubles if you go my way",
+        "I have no mother no father",
+        "No sister no brother",
+        "I am an orphan girl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have had friendships pure and golden",
+        "But the ties of kinship I have not known them",
+        "I know no mother no father",
+        "No sister no brother",
+        "I am an orphan girl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But when He calls me I will be able",
+        "To meet my family at God\u2019s table",
+        "I\u2019ll meet my mother my father",
+        "My sister my brother",
+        "No more orphan girl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Blessed Savior make me willing",
+        "And walk beside me until I\u2019m with them",
+        "Be my mother my father",
+        "My sister my brother",
+        "I am an orphan girl"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "drifting-away",
+  "title": "Drifting Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/drifting-away/",
+  "raw_lyrics": "So long ago I was anchored\nWas faith that held me down\nNow I\u2019m lost in an ocean of sorrow\nNo light to guide me to ground\n\nI\u2019m drifting away to loneliness\nDrifting away drifting away\nDrifting seep into emptiness\nDrifting away without you\n\nI\u2019ve strayed to far from land\nFor the Lord to hear my last plea\nI\u2019m on a ship with no captain\nIn waters rough as could be\n\nIf I were to throw myself over\nOh to see you there in the light\nWould I sink to the depths of the ocean\nTo a place that\u2019s dark as the night",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "So long ago I was anchored",
+        "Was faith that held me down",
+        "Now I\u2019m lost in an ocean of sorrow",
+        "No light to guide me to ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m drifting away to loneliness",
+        "Drifting away drifting away",
+        "Drifting seep into emptiness",
+        "Drifting away without you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve strayed to far from land",
+        "For the Lord to hear my last plea",
+        "I\u2019m on a ship with no captain",
+        "In waters rough as could be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I were to throw myself over",
+        "Oh to see you there in the light",
+        "Would I sink to the depths of the ocean",
+        "To a place that\u2019s dark as the night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "when-its-lamplighting-time-in-the-valley",
+  "title": "When its Lamplighting Time in the Valley",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-its-lamplighting-time-in-the-valley/",
+  "raw_lyrics": "There\u2019s a lamp shining bright in a cabin\nIn the window it\u2019s shining for me\nAnd I know that my mother is praying\nFor the boy she is longing to see\n\nWhen it\u2019s lamp lighting time in the valley\nStill in dreams I go back to my home\nI can see that old lamp in the window\nIt will guide me wherever I roam.\n\nIn the lamplight tonight I can see her\nAs she rocks in her chair to and fro\nThough she prays that I\u2019ll come back to see her\nStill I know that I never can go.\n\nWhen it\u2019s lamp lighting time in the valley\nStill in dreams I go back to my home\nBut I\u2019ve sinned \u2018gainst my home and my loved ones\nAnd now i must ever more roam\n\nSo she lights up the lamp and sits waiting\nFor she knows not the crime i have done\nSo I\u2019ve  changed all my ways  and I\u2019ll meet her\nUp in heaven when life\u2019s race is run.\n\nWhen it\u2019s lamp lighting time in the valley\nStill in dreams I go back to my home\nOh I can see that old lamp in the window\nIt will guide me wherever I roam",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a lamp shining bright in a cabin",
+        "In the window it\u2019s shining for me",
+        "And I know that my mother is praying",
+        "For the boy she is longing to see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When it\u2019s lamp lighting time in the valley",
+        "Still in dreams I go back to my home",
+        "I can see that old lamp in the window",
+        "It will guide me wherever I roam."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the lamplight tonight I can see her",
+        "As she rocks in her chair to and fro",
+        "Though she prays that I\u2019ll come back to see her",
+        "Still I know that I never can go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When it\u2019s lamp lighting time in the valley",
+        "Still in dreams I go back to my home",
+        "But I\u2019ve sinned \u2018gainst my home and my loved ones",
+        "And now i must ever more roam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So she lights up the lamp and sits waiting",
+        "For she knows not the crime i have done",
+        "So I\u2019ve  changed all my ways  and I\u2019ll meet her",
+        "Up in heaven when life\u2019s race is run."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When it\u2019s lamp lighting time in the valley",
+        "Still in dreams I go back to my home",
+        "Oh I can see that old lamp in the window",
+        "It will guide me wherever I roam"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

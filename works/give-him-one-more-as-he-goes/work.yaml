@@ -1,0 +1,11 @@
+id: give-him-one-more-as-he-goes
+title: Give Him One More As He Goes
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/give-him-one-more-as-he-goes/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: dont-worry-bout-the-mule-just-load-the-wagon
+title: Don’t Worry ’bout the Mule, Just Load the Wagon
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/dont-worry-bout-the-mule-just-load-the-wagon/
+      imported_at: '2026-02-08'

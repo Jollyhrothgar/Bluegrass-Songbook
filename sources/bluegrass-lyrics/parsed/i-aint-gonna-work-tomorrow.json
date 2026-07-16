@@ -1,0 +1,69 @@
+{
+  "slug": "i-aint-gonna-work-tomorrow",
+  "title": "I Ain\u2019t Gonna Work Tomorrow",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-aint-gonna-work-tomorrow/",
+  "raw_lyrics": "I\u2019m a\u2019going to leave this country\nI a\u2019going around this world\nI\u2019m going to leave this country\nFor the sake of one little girl\n\nWell she told me that she loved me\nAnd it caused my poor heart grief\nNow she\u2019s got her back turned on me\nAnd she\u2019s courting whoever she please\n\nWell I lost my money at gambling\nAnd I lost my name you see\nI am nobody\u2019s darling\nAnd nobody cares for me\n\nDon\u2019t you hear my banjo a\u2019ringing\nDon\u2019t you hear it\u2019s mournful sound\nDon\u2019t you hear those pretty girls laughing\nStanding on the cold frosty ground\n\nWell I\u2019ll hang my head in sorrow\nI will hang my head and cry\nI\u2019ll hang my head in sorrow\nAs my darling passes by\n\nI ain\u2019t gonna work tomorrow\nAnd I may not work next day\nI ain\u2019t gonna work tomorrow\nFor it be a wet rainy day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a\u2019going to leave this country",
+        "I a\u2019going around this world",
+        "I\u2019m going to leave this country",
+        "For the sake of one little girl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well she told me that she loved me",
+        "And it caused my poor heart grief",
+        "Now she\u2019s got her back turned on me",
+        "And she\u2019s courting whoever she please"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I lost my money at gambling",
+        "And I lost my name you see",
+        "I am nobody\u2019s darling",
+        "And nobody cares for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t you hear my banjo a\u2019ringing",
+        "Don\u2019t you hear it\u2019s mournful sound",
+        "Don\u2019t you hear those pretty girls laughing",
+        "Standing on the cold frosty ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ll hang my head in sorrow",
+        "I will hang my head and cry",
+        "I\u2019ll hang my head in sorrow",
+        "As my darling passes by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I ain\u2019t gonna work tomorrow",
+        "And I may not work next day",
+        "I ain\u2019t gonna work tomorrow",
+        "For it be a wet rainy day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

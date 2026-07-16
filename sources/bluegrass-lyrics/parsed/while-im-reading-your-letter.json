@@ -1,0 +1,39 @@
+{
+  "slug": "while-im-reading-your-letter",
+  "title": "While I\u2019m Reading Your Letter",
+  "source_url": "https://www.bluegrasslyrics.com/song/while-im-reading-your-letter/",
+  "raw_lyrics": "Tonight while I\u2019m reading your letter\nYou tell me you\u2019re going far away\nI love you my darling yes I love you\nI love you where ever you stray\n\nI can see your blue eyes smiling for me\nAnd they sparkle like no others do\nYou told me once you\u2019d always love me\nYou said that you\u2019d always be true\n\nIf ever you are lonely little darling\nAnd no one has taken my place\nRemember my darling I still love you\nAnd long for your sweet smiling face",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight while I\u2019m reading your letter",
+        "You tell me you\u2019re going far away",
+        "I love you my darling yes I love you",
+        "I love you where ever you stray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can see your blue eyes smiling for me",
+        "And they sparkle like no others do",
+        "You told me once you\u2019d always love me",
+        "You said that you\u2019d always be true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If ever you are lonely little darling",
+        "And no one has taken my place",
+        "Remember my darling I still love you",
+        "And long for your sweet smiling face"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

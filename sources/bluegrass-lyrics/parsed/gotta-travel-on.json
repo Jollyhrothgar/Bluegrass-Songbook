@@ -1,0 +1,49 @@
+{
+  "slug": "gotta-travel-on",
+  "title": "Gotta Travel On",
+  "source_url": "https://www.bluegrasslyrics.com/song/gotta-travel-on/",
+  "raw_lyrics": "I\u2019ve laid around and played around this old town too long\nSummers almost gone, winters coming on\nI\u2019ve laid around and played around this old town too long\nAnd I feel like I\u2019ve gotta travel on\n\nPoppa writes to Johnny but Johnny can\u2019t come home\nJohnny can\u2019t come home, no, Johnny can\u2019t come home\nPoppa writes to Johnny but Johnny can\u2019t come home\nCause he\u2019s been on the chain gang too long\n\nHigh sheriff and police riding after me\nRiding after me, yes, coming after me\nHigh sheriff and police riding after me\nAnd I feel like I\u2019ve gotta travel on\n\nWant to see my honey, want to see her bad\nWant to see her bad, oh, want to see her bad\nWant to see my honey, want to see her bad\nShe\u2019s the best gal this poor boy ever had",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve laid around and played around this old town too long",
+        "Summers almost gone, winters coming on",
+        "I\u2019ve laid around and played around this old town too long",
+        "And I feel like I\u2019ve gotta travel on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Poppa writes to Johnny but Johnny can\u2019t come home",
+        "Johnny can\u2019t come home, no, Johnny can\u2019t come home",
+        "Poppa writes to Johnny but Johnny can\u2019t come home",
+        "Cause he\u2019s been on the chain gang too long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "High sheriff and police riding after me",
+        "Riding after me, yes, coming after me",
+        "High sheriff and police riding after me",
+        "And I feel like I\u2019ve gotta travel on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Want to see my honey, want to see her bad",
+        "Want to see her bad, oh, want to see her bad",
+        "Want to see my honey, want to see her bad",
+        "She\u2019s the best gal this poor boy ever had"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

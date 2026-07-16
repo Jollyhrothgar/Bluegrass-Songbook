@@ -1,0 +1,54 @@
+{
+  "slug": "white-house-blues",
+  "title": "White House Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/white-house-blues/",
+  "raw_lyrics": "McKinley hollered , McKinley squalled\nDoc said \u201cMcKinley I can\u2019t find the cause\nYou\u2019re bound to die, you\u2019re bound to die\n\nDoc told the horse, he\u2019d throw down his rein\nHe said to the horse you gotta outrun this train\nFrom Buffalo to Washington\n\nThe doc came a-running, he took off his specs\nSaid \u201cMr Mckinley better cash in your checks\nYou\u2019ve bound to die, you\u2019re bound to die\n\nLook here, you rascal, you see what you\u2019ve done\nShot down my husband and I\u2019ve got your gun\nI\u2019m carrying you back, to Washington\n\nWell, Roosevelt\u2019s in the White House, doing his best\nMcKinley\u2019s in the graveyard taking his rest\nHe\u2019s gone, for a long time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "McKinley hollered , McKinley squalled",
+        "Doc said \u201cMcKinley I can\u2019t find the cause",
+        "You\u2019re bound to die, you\u2019re bound to die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Doc told the horse, he\u2019d throw down his rein",
+        "He said to the horse you gotta outrun this train",
+        "From Buffalo to Washington"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The doc came a-running, he took off his specs",
+        "Said \u201cMr Mckinley better cash in your checks",
+        "You\u2019ve bound to die, you\u2019re bound to die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Look here, you rascal, you see what you\u2019ve done",
+        "Shot down my husband and I\u2019ve got your gun",
+        "I\u2019m carrying you back, to Washington"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, Roosevelt\u2019s in the White House, doing his best",
+        "McKinley\u2019s in the graveyard taking his rest",
+        "He\u2019s gone, for a long time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

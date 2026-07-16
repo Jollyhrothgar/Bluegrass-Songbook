@@ -1,0 +1,39 @@
+{
+  "slug": "wild-mountain-honey",
+  "title": "Wild Mountain Honey",
+  "source_url": "https://www.bluegrasslyrics.com/song/wild-mountain-honey/",
+  "raw_lyrics": "There\u2019s a girl in the mountain that I call my mountain honey\nAnd I love her like the flowers love the dew\nAll the fellars try to claim her but someday I\u2019m gonna claim her\n\u2018Cause my wild mountain honey loves me to\n\nShe\u2019s my wild mountain honey and I love her yes I do\nShe\u2019s as sweet as any honey in the comb\nShe\u2019s as pretty as the flowers that are blooming in the mountains\nAnd I\u2019m going to marry her and bring her home\n\nOh I met her in the Smokey Mountains down in Tennessee\nWhen the mountain laurel was blooming in the spring\nEverything is bright and sunny and I\u2019m saving up my money\nFor my wild mountain honey\u2019s wedding ring",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a girl in the mountain that I call my mountain honey",
+        "And I love her like the flowers love the dew",
+        "All the fellars try to claim her but someday I\u2019m gonna claim her",
+        "\u2018Cause my wild mountain honey loves me to"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s my wild mountain honey and I love her yes I do",
+        "She\u2019s as sweet as any honey in the comb",
+        "She\u2019s as pretty as the flowers that are blooming in the mountains",
+        "And I\u2019m going to marry her and bring her home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I met her in the Smokey Mountains down in Tennessee",
+        "When the mountain laurel was blooming in the spring",
+        "Everything is bright and sunny and I\u2019m saving up my money",
+        "For my wild mountain honey\u2019s wedding ring"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

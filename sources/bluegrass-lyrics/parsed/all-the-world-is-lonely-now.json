@@ -1,0 +1,49 @@
+{
+  "slug": "all-the-world-is-lonely-now",
+  "title": "All The World Is Lonely Now",
+  "source_url": "https://www.bluegrasslyrics.com/song/all-the-world-is-lonely-now/",
+  "raw_lyrics": "Yesterday you said you loved me\nToday you say it\u2019s over now\nWhy did you go away and leave me\nAll the world is lonely now\n\nDon\u2019t tell me that you love another\nAnd that you\u2019ve broken every vow\nFor I don\u2019t want to live without you\nAll the world is lonely now\n\nI\u2019ve tried so hard to make you happy\nWith love your heart would not allow\nIt\u2019s hard to know you\u2019ll never want me\nAll the world is lonely now\n\nGoodbye, good luck and may God bless you\nI\u2019ll try to get along somehow\nI know I\u2019ll never love another\nAll the world is lonely now",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Yesterday you said you loved me",
+        "Today you say it\u2019s over now",
+        "Why did you go away and leave me",
+        "All the world is lonely now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t tell me that you love another",
+        "And that you\u2019ve broken every vow",
+        "For I don\u2019t want to live without you",
+        "All the world is lonely now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve tried so hard to make you happy",
+        "With love your heart would not allow",
+        "It\u2019s hard to know you\u2019ll never want me",
+        "All the world is lonely now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye, good luck and may God bless you",
+        "I\u2019ll try to get along somehow",
+        "I know I\u2019ll never love another",
+        "All the world is lonely now"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

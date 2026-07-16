@@ -1,0 +1,39 @@
+{
+  "slug": "does-it-have-to-end-this-way",
+  "title": "Does It Have To End This Way",
+  "source_url": "https://www.bluegrasslyrics.com/song/does-it-have-to-end-this-way/",
+  "raw_lyrics": "Oh the cold wind blows outside my window\nThe dark clouds linger up above\nThe bright side of my life has faded\nFor I may lose the one I love\n\nAfter all our years together\nAnd I cherished every day\nOh darling won\u2019t you please consider\nDoes it have to end this way\n\nOh come up closer to me darling\nLet me gaze into that face\nWhere once a vision sweet contentment\nA bitterness has took it\u2019s place",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the cold wind blows outside my window",
+        "The dark clouds linger up above",
+        "The bright side of my life has faded",
+        "For I may lose the one I love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "After all our years together",
+        "And I cherished every day",
+        "Oh darling won\u2019t you please consider",
+        "Does it have to end this way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh come up closer to me darling",
+        "Let me gaze into that face",
+        "Where once a vision sweet contentment",
+        "A bitterness has took it\u2019s place"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

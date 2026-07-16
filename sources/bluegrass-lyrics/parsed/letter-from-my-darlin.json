@@ -1,0 +1,49 @@
+{
+  "slug": "letter-from-my-darlin",
+  "title": "Letter From My Darlin",
+  "source_url": "https://www.bluegrasslyrics.com/song/letter-from-my-darlin/",
+  "raw_lyrics": "I can\u2019t answer her letter\nFor she left me no address\nYou should know my little darling\nYou left my poor heart in distress\n\nI got a letter from my darling\nShe said she hated to go\nIt broke my heart the words she wrote me\nShe closed by saying I love you so\n\nShe wrote the words she knew would hurt me\nShe said I never could be true\nI\u2019ve tried I\u2019ve tried my little darling\nTo prove my love was just for you\n\nThis letter meant goodbye forever\nThough we\u2019ll have each other\u2019s hearts\nOur love will fade away in sadness\nPrecious one why did we have to part",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t answer her letter",
+        "For she left me no address",
+        "You should know my little darling",
+        "You left my poor heart in distress"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I got a letter from my darling",
+        "She said she hated to go",
+        "It broke my heart the words she wrote me",
+        "She closed by saying I love you so"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She wrote the words she knew would hurt me",
+        "She said I never could be true",
+        "I\u2019ve tried I\u2019ve tried my little darling",
+        "To prove my love was just for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This letter meant goodbye forever",
+        "Though we\u2019ll have each other\u2019s hearts",
+        "Our love will fade away in sadness",
+        "Precious one why did we have to part"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

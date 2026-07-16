@@ -1,0 +1,39 @@
+{
+  "slug": "ocean-of-diamonds",
+  "title": "Ocean Of Diamonds",
+  "source_url": "https://www.bluegrasslyrics.com/song/ocean-of-diamonds/",
+  "raw_lyrics": "Some people drink champagne out under the stars\nWhile others drink wine leaning over a bar\nBut all that I need dear to make me feel fine\nIs to know that your love will forever be mine\n\nI\u2019d give an ocean of diamonds or a world filled with flowers\nTo hold you closely for just a few hours\nHear you whisper softly that you love me too\nWould change all the dark clouds to bluest of blue\n\nI don\u2019t drink their champagne and I don\u2019t drink their wine\nSo if you refuse me my poor heart will pine\nI\u2019ll be so lonely till the day that I die\nAnd as long as I live dear you\u2019ll still hear me cry",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Some people drink champagne out under the stars",
+        "While others drink wine leaning over a bar",
+        "But all that I need dear to make me feel fine",
+        "Is to know that your love will forever be mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019d give an ocean of diamonds or a world filled with flowers",
+        "To hold you closely for just a few hours",
+        "Hear you whisper softly that you love me too",
+        "Would change all the dark clouds to bluest of blue"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t drink their champagne and I don\u2019t drink their wine",
+        "So if you refuse me my poor heart will pine",
+        "I\u2019ll be so lonely till the day that I die",
+        "And as long as I live dear you\u2019ll still hear me cry"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "whos-calling-you-sweetheart-tonight",
+  "title": "Who\u2019s Calling You Sweetheart Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/whos-calling-you-sweetheart-tonight/",
+  "raw_lyrics": "I wonder tonight who\u2019s loving you\nEnjoying the kisses I once knew\nAnd getting those letters of comfort and cheer\nWho\u2019s calling you sweetheart tonight my dear\n\nWho\u2019s calling you sweetheart who is the man\nSo tenderly kissing and holding your hand\nWho\u2019s cherishing beauty of eyes so bright\nWho\u2019s tenderly calling you sweetheart tonight\n\nNow I\u2019m regretting my life here at last\nCherishing memory of love of the past\nSeeking a refuge lasting at my side\nTell me who\u2019s calling you sweetheart tonight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wonder tonight who\u2019s loving you",
+        "Enjoying the kisses I once knew",
+        "And getting those letters of comfort and cheer",
+        "Who\u2019s calling you sweetheart tonight my dear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Who\u2019s calling you sweetheart who is the man",
+        "So tenderly kissing and holding your hand",
+        "Who\u2019s cherishing beauty of eyes so bright",
+        "Who\u2019s tenderly calling you sweetheart tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m regretting my life here at last",
+        "Cherishing memory of love of the past",
+        "Seeking a refuge lasting at my side",
+        "Tell me who\u2019s calling you sweetheart tonight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

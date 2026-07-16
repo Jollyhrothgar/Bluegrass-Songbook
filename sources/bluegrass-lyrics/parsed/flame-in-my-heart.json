@@ -1,0 +1,39 @@
+{
+  "slug": "flame-in-my-heart",
+  "title": "Flame in my Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/flame-in-my-heart/",
+  "raw_lyrics": "You cheated on me I tried to be fair\nBut you don\u2019t believe in doing your share\nBut I\u2019ve learned my lesson and now I can say\nThe flame in my heart is dying away is dying away\n\nYour kisses don\u2019t thrill me like they used to do\nYour arms only chill me I\u2019m glad that we\u2019re through\nMy heart was once yearning but now I can say\nThe flame in my heart is dying away is dying away\n\nYou fooled me a while you thought you were wise\nYou even believed I fell for your lies\nBut the trick turned on you now I can say\nThe flame in my heart is dying away is dying away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You cheated on me I tried to be fair",
+        "But you don\u2019t believe in doing your share",
+        "But I\u2019ve learned my lesson and now I can say",
+        "The flame in my heart is dying away is dying away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Your kisses don\u2019t thrill me like they used to do",
+        "Your arms only chill me I\u2019m glad that we\u2019re through",
+        "My heart was once yearning but now I can say",
+        "The flame in my heart is dying away is dying away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You fooled me a while you thought you were wise",
+        "You even believed I fell for your lies",
+        "But the trick turned on you now I can say",
+        "The flame in my heart is dying away is dying away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

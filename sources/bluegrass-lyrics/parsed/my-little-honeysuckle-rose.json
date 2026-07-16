@@ -1,0 +1,49 @@
+{
+  "slug": "my-little-honeysuckle-rose",
+  "title": "My Little Honeysuckle Rose",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-little-honeysuckle-rose/",
+  "raw_lyrics": "My little honeysuckle rose you know I love you\nEven though you\u2019re many miles away\nYou\u2019re a sweetheart so divine and I\u2019ll always call you mine\nAnd I\u2019m hopin\u2019 that we meet again someday\n\nLittle honeysuckle rose how I miss you\nDarlin\u2019 could you ever forget\nOh the day seemed like years and I\u2019ve shed so many tears\nAnd as I loved you then I love you yet\n\nAmong the honeysuckle vines we use to wander\nWhen I was with the girl I loved the best\nWhen you promised to be true I\u2019ll remember dear to you\nWhen I pinned a lovely rose upon your breast\n\nNow I\u2019ll say my last goodbye my little darlin\u2019\nThe roses for me dear I know you\u2019ll save\nAfter I am dead and gone if that love still linger\u2019s on\nThere\u2019s honeysuckle vines upon my grave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My little honeysuckle rose you know I love you",
+        "Even though you\u2019re many miles away",
+        "You\u2019re a sweetheart so divine and I\u2019ll always call you mine",
+        "And I\u2019m hopin\u2019 that we meet again someday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Little honeysuckle rose how I miss you",
+        "Darlin\u2019 could you ever forget",
+        "Oh the day seemed like years and I\u2019ve shed so many tears",
+        "And as I loved you then I love you yet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Among the honeysuckle vines we use to wander",
+        "When I was with the girl I loved the best",
+        "When you promised to be true I\u2019ll remember dear to you",
+        "When I pinned a lovely rose upon your breast"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019ll say my last goodbye my little darlin\u2019",
+        "The roses for me dear I know you\u2019ll save",
+        "After I am dead and gone if that love still linger\u2019s on",
+        "There\u2019s honeysuckle vines upon my grave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

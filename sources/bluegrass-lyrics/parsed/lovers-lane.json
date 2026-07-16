@@ -1,0 +1,71 @@
+{
+  "slug": "lovers-lane",
+  "title": "Lover\u2019s Lane",
+  "source_url": "https://www.bluegrasslyrics.com/song/lovers-lane/",
+  "raw_lyrics": "I first met you down in lover\u2019s lane\nYou were just like an angel with angels golden wings\nWe walked along we\u2019d sing a song the birds are sing too\nSeems like heaven\u2019s here on earth just to be with you\n\nYou\u2019re just the girl of my dreams\nthough it seems that my dreams never come true\n\nAt night we\u2019d sit out in the old porch swing\nThe stars were shining brightly and softly you would sing\nYou\u2019d sing of happy days gone by it makes me happy too\nIt would be like heaven here on earth if I could be with you\n\nYou\u2019re just the girl of my dreams\nthough it seems that my dreams never come true\n\nI first met you down in lover\u2019s lane\nYou were just like an angel my little brown eyed Jane\nWe walked along we\u2019d hum a song the birds are sing too\nIt seems like heaven\u2019s here on earth just to be with you\n\nYou\u2019re just the girl of my dreams\nthough it seems my dreams never come true\n\nYou\u2019re just the girl of my dreams\nthough it seems my dreams never come true",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I first met you down in lover\u2019s lane",
+        "You were just like an angel with angels golden wings",
+        "We walked along we\u2019d sing a song the birds are sing too",
+        "Seems like heaven\u2019s here on earth just to be with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re just the girl of my dreams",
+        "though it seems that my dreams never come true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "At night we\u2019d sit out in the old porch swing",
+        "The stars were shining brightly and softly you would sing",
+        "You\u2019d sing of happy days gone by it makes me happy too",
+        "It would be like heaven here on earth if I could be with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re just the girl of my dreams",
+        "though it seems that my dreams never come true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I first met you down in lover\u2019s lane",
+        "You were just like an angel my little brown eyed Jane",
+        "We walked along we\u2019d hum a song the birds are sing too",
+        "It seems like heaven\u2019s here on earth just to be with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re just the girl of my dreams",
+        "though it seems my dreams never come true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re just the girl of my dreams",
+        "though it seems my dreams never come true"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

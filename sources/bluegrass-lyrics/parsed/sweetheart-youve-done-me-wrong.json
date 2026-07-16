@@ -1,0 +1,49 @@
+{
+  "slug": "sweetheart-youve-done-me-wrong",
+  "title": "Sweetheart, You\u2019ve Done Me Wrong",
+  "source_url": "https://www.bluegrasslyrics.com/song/sweetheart-youve-done-me-wrong/",
+  "raw_lyrics": "You told me that your love was true\nSweetheart, I thought the world of you\nBut now you left me all alone\nI have no one to call my own\n\nNow sweetheart, you\u2019ve done me wrong\nYou have left me all alone\nMaybe there will come a time\nSweetheart, when you will change your mind\n\nI never shall forget the day\nWhen you said you were going away\nI couldn\u2019t believe that it was true\nAfter all the love I had for you\n\nThis road is rough and rocky too\nAs I travel on, dear, without you\nBut I\u2019m still praying for the time\nSweetheart when you will change your mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You told me that your love was true",
+        "Sweetheart, I thought the world of you",
+        "But now you left me all alone",
+        "I have no one to call my own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now sweetheart, you\u2019ve done me wrong",
+        "You have left me all alone",
+        "Maybe there will come a time",
+        "Sweetheart, when you will change your mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never shall forget the day",
+        "When you said you were going away",
+        "I couldn\u2019t believe that it was true",
+        "After all the love I had for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This road is rough and rocky too",
+        "As I travel on, dear, without you",
+        "But I\u2019m still praying for the time",
+        "Sweetheart when you will change your mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

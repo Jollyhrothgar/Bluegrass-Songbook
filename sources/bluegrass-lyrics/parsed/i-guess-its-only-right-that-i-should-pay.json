@@ -1,0 +1,29 @@
+{
+  "slug": "i-guess-its-only-right-that-i-should-pay",
+  "title": "I Guess It\u2019s Only Right That I Should Pay",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-guess-its-only-right-that-i-should-pay/",
+  "raw_lyrics": "You\u2019ll own a part of me my dear forever\nSome things you give can never be returned\nThe flame of love that once burned oh so brightly\nIs growing dim and how my poor heart yearns\n\nMaybe it will break into tomorrow\nBut I\u2019ll remember only yesterday\nAnd if my life is filled with pain and sorrow\nI guess it\u2019s only right that I should pay",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll own a part of me my dear forever",
+        "Some things you give can never be returned",
+        "The flame of love that once burned oh so brightly",
+        "Is growing dim and how my poor heart yearns"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Maybe it will break into tomorrow",
+        "But I\u2019ll remember only yesterday",
+        "And if my life is filled with pain and sorrow",
+        "I guess it\u2019s only right that I should pay"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

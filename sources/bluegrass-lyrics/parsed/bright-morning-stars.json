@@ -1,0 +1,49 @@
+{
+  "slug": "bright-morning-stars",
+  "title": "Bright Morning Stars",
+  "source_url": "https://www.bluegrasslyrics.com/song/bright-morning-stars/",
+  "raw_lyrics": "Bright morning stars are rising\nBright morning stars are rising\nBright morning stars are rising\nDay is a\u2019breaking in my soul\n\nOh where are our dear fathers\nOh where are our dear fathers\nThey\u2019re down in the valley a praying\nDay is a\u2019breaking in my soul\n\nOh where are our dear mothers\nOh where are our dear mothers\nThey\u2019ve gone to heaven a shoutin\nDay is a\u2019breaking in my soul\n\nBright morning stars are rising\nBright morning stars are rising\nBright morning stars are rising\nDay is a\u2019breaking in my soul",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Bright morning stars are rising",
+        "Bright morning stars are rising",
+        "Bright morning stars are rising",
+        "Day is a\u2019breaking in my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh where are our dear fathers",
+        "Oh where are our dear fathers",
+        "They\u2019re down in the valley a praying",
+        "Day is a\u2019breaking in my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh where are our dear mothers",
+        "Oh where are our dear mothers",
+        "They\u2019ve gone to heaven a shoutin",
+        "Day is a\u2019breaking in my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Bright morning stars are rising",
+        "Bright morning stars are rising",
+        "Bright morning stars are rising",
+        "Day is a\u2019breaking in my soul"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

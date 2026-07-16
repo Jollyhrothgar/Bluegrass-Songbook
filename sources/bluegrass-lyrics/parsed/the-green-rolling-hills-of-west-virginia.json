@@ -1,0 +1,49 @@
+{
+  "slug": "the-green-rolling-hills-of-west-virginia",
+  "title": "The Green Rolling Hills Of West Virginia",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-green-rolling-hills-of-west-virginia/",
+  "raw_lyrics": "Oh the green rolling hills of West Virginia\nAre the nearest thing to heaven that I know\nThough the times are sad and drear and I cannot linger here\nThey\u2019ll keep me and never let me go.\n\nMy daddy said don\u2019t ever be a miner\nor a miner\u2019s grave is all you\u2019ll ever own\nThere\u2019s hard times everywhereI can\u2019t find a dime to spare\nThese are the worst times I\u2019ve ever known\n\nSo I\u2019ll move away into some crowded city\nIn some northern factory town you\u2019ll find me there\nThough I\u2019ll leave the past behind \u2018ll never change my mind\nThese troubled times are more than I can bear.\n\nSomeday I\u2019ll go back to West Virginia\nTo those green rolling hills I love so well\nOh omeday I\u2019ll go home and I know I\u2019ll right the wrong\nAnd these hard times will follow me no more.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the green rolling hills of West Virginia",
+        "Are the nearest thing to heaven that I know",
+        "Though the times are sad and drear and I cannot linger here",
+        "They\u2019ll keep me and never let me go."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My daddy said don\u2019t ever be a miner",
+        "or a miner\u2019s grave is all you\u2019ll ever own",
+        "There\u2019s hard times everywhereI can\u2019t find a dime to spare",
+        "These are the worst times I\u2019ve ever known"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So I\u2019ll move away into some crowded city",
+        "In some northern factory town you\u2019ll find me there",
+        "Though I\u2019ll leave the past behind \u2018ll never change my mind",
+        "These troubled times are more than I can bear."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday I\u2019ll go back to West Virginia",
+        "To those green rolling hills I love so well",
+        "Oh omeday I\u2019ll go home and I know I\u2019ll right the wrong",
+        "And these hard times will follow me no more."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

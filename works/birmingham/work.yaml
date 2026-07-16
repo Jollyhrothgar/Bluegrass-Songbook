@@ -6,6 +6,8 @@ composers:
 default_key: G
 tags:
 - Modal
+- Instrumental
+- OldTime
 parts:
 - type: lead-sheet
   format: chordpro

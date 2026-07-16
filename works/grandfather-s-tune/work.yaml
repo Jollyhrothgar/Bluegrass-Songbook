@@ -7,6 +7,7 @@ default_key: A
 tags:
 - Instrumental
 - OldTime
+- JamFriendly
 parts:
 - type: lead-sheet
   format: chordpro

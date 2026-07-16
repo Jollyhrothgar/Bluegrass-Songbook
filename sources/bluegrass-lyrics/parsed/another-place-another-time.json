@@ -1,0 +1,44 @@
+{
+  "slug": "another-place-another-time",
+  "title": "Another Place Another Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/another-place-another-time/",
+  "raw_lyrics": "One by one they\u2019re turnin\u2019  out the lights\nI keep feedin\u2019 that ol\u2019 jukebox just to hold you tight\nI guess it\u2019s for the best I just put in my last dime\nI heard you whisper we\u2019d meet again\nAnother place another time\n\nWon\u2019t that room of mine be a lonely place to be\nAfter I\u2019ve been holdin\u2019 you so close to me\nWon\u2019t that ol\u2019  stairway be a little hard to climb\nTo a lonely room to wait for\nAnother place another time\n\nChairs are stacked on the tables and it\u2019s closing time\nThey say I could wait right here forever\nIf they\u2019d only let me stay\nAny place would be much better\nThan that ol\u2019  lonely room of mine\nAnd a sleepless night awaitin\u2019  for\nAnother place another time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One by one they\u2019re turnin\u2019  out the lights",
+        "I keep feedin\u2019 that ol\u2019 jukebox just to hold you tight",
+        "I guess it\u2019s for the best I just put in my last dime",
+        "I heard you whisper we\u2019d meet again",
+        "Another place another time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Won\u2019t that room of mine be a lonely place to be",
+        "After I\u2019ve been holdin\u2019 you so close to me",
+        "Won\u2019t that ol\u2019  stairway be a little hard to climb",
+        "To a lonely room to wait for",
+        "Another place another time"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Chairs are stacked on the tables and it\u2019s closing time",
+        "They say I could wait right here forever",
+        "If they\u2019d only let me stay",
+        "Any place would be much better",
+        "Than that ol\u2019  lonely room of mine",
+        "And a sleepless night awaitin\u2019  for",
+        "Another place another time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

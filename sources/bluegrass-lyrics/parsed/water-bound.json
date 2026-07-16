@@ -1,0 +1,89 @@
+{
+  "slug": "water-bound",
+  "title": "Water Bound",
+  "source_url": "https://www.bluegrasslyrics.com/song/water-bound/",
+  "raw_lyrics": "The Chickens are crowing in the old pine tree\nThe Chickens are crowing in the old pine tree\nThe Chickens are crowing in the old pine tree\nWay down in North Carolina\n\nWater bound and I can\u2019t get home\nWater bound and I can\u2019t get home\nWater bound and I can\u2019t get home\nDown in North Carolina.\n\nSay old man I want your daughter\nSay old man I want your daughter\nSay old man I want your daughter\nWay down in North Carolina.\n\nTell me boy what you want her for\nTell me boy what you want her for\nTell me boy what you want her for\nDown in North Carolina.\n\nTo break my bread and share my water\nTo break my bread and share my water\nTo break my bread and share my water\nWay down in North Carolina.\n\nIf you don\u2019t let her go we\u2019re gonna run away\nIf you don\u2019t let her go we\u2019re gonna run away\nIf you don\u2019t let her go we\u2019re gonna run away\nOn back to North Carolina.\n\nThe old man\u2019s mad and I don\u2019t care\nThe old man\u2019s mad and I don\u2019t care\nThe old man\u2019s mad and I don\u2019t care\nAs long as I gets his daughter\n\nGet up Jennie and let\u2019s go home\nGet up Jennie and let\u2019s go home\nGet up Jennie and let\u2019s go home\nBefore the water rises.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The Chickens are crowing in the old pine tree",
+        "The Chickens are crowing in the old pine tree",
+        "The Chickens are crowing in the old pine tree",
+        "Way down in North Carolina"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Water bound and I can\u2019t get home",
+        "Water bound and I can\u2019t get home",
+        "Water bound and I can\u2019t get home",
+        "Down in North Carolina."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Say old man I want your daughter",
+        "Say old man I want your daughter",
+        "Say old man I want your daughter",
+        "Way down in North Carolina."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell me boy what you want her for",
+        "Tell me boy what you want her for",
+        "Tell me boy what you want her for",
+        "Down in North Carolina."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "To break my bread and share my water",
+        "To break my bread and share my water",
+        "To break my bread and share my water",
+        "Way down in North Carolina."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you don\u2019t let her go we\u2019re gonna run away",
+        "If you don\u2019t let her go we\u2019re gonna run away",
+        "If you don\u2019t let her go we\u2019re gonna run away",
+        "On back to North Carolina."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The old man\u2019s mad and I don\u2019t care",
+        "The old man\u2019s mad and I don\u2019t care",
+        "The old man\u2019s mad and I don\u2019t care",
+        "As long as I gets his daughter"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Get up Jennie and let\u2019s go home",
+        "Get up Jennie and let\u2019s go home",
+        "Get up Jennie and let\u2019s go home",
+        "Before the water rises."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

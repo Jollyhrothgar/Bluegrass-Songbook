@@ -1,0 +1,59 @@
+{
+  "slug": "darcy-farrow",
+  "title": "Darcy Farrow",
+  "source_url": "https://www.bluegrasslyrics.com/song/darcy-farrow/",
+  "raw_lyrics": "Where the Walker runs down to the Carson Valley plain,\nThere lived a maiden, Darcy Farrow was her name\nThe daughter of old Dundee and fair was she\nAnd the sweetest flower that bloomed o\u2019er the range.\n\nHer voice was sweet as the sugar candy\nHer touch was as soft as a bed of goose down.\nHer eyes shone bright like the pretty lights\nThat shine in the night out of Yerrington town.\n\nShe was courted by young Vandermeer\nAnd quite handsome was he I am to hear\nHe brought her silver rings and lacy things\nAnd she promised to wed before the snows fell that year.\n\nBut her pony did stumble and she did fall.\nHer dyin\u2019 touched on the heart of us all.\nYoung Vandy in his pain put a bullet to his brain\nAnd we buried them together as the snows began to fall.\n\nThey sing of Darcy Farrow where the Truckee runs through\nThey sing of her beauty in Virginia City too.\nAt dusty Sundown to her name they drink a round\nAnd to young Vandy whose love was true.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Where the Walker runs down to the Carson Valley plain,",
+        "There lived a maiden, Darcy Farrow was her name",
+        "The daughter of old Dundee and fair was she",
+        "And the sweetest flower that bloomed o\u2019er the range."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her voice was sweet as the sugar candy",
+        "Her touch was as soft as a bed of goose down.",
+        "Her eyes shone bright like the pretty lights",
+        "That shine in the night out of Yerrington town."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was courted by young Vandermeer",
+        "And quite handsome was he I am to hear",
+        "He brought her silver rings and lacy things",
+        "And she promised to wed before the snows fell that year."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But her pony did stumble and she did fall.",
+        "Her dyin\u2019 touched on the heart of us all.",
+        "Young Vandy in his pain put a bullet to his brain",
+        "And we buried them together as the snows began to fall."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They sing of Darcy Farrow where the Truckee runs through",
+        "They sing of her beauty in Virginia City too.",
+        "At dusty Sundown to her name they drink a round",
+        "And to young Vandy whose love was true."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

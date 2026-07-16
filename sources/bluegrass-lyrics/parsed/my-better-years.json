@@ -1,0 +1,59 @@
+{
+  "slug": "my-better-years",
+  "title": "My Better Years",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-better-years/",
+  "raw_lyrics": "Now you\u2019re back on my doorstep a\u2019 crying\nLike I cried through all those lonely years\nBut I can\u2019t dry your tears it\u2019s been too long since love was here\nAnd I\u2019ve already gave you my better years\n\nAnd so the pages of time kept right on turning\nThey never stopped for us to harvest the years\nAnd old embers of love kept right on dying\nFor there was no one to drown my tears.\n\nBut I\u2019ve tried not to blame you\nand I try not to shame you\nAll I can do now is wish you well\nBut if you should need a friend\nI\u2019ll be there until the end\nJust don\u2019t ask me to love you again.\n\nAnd don\u2019t come back to my doorstep a\u2019 crying\nHoping for what\u2019s been dead so long\nFor the embers have all turned to ashes\nThere\u2019s nothing here but old memories and this song.\n\nNo don\u2019t come back to my doorstep a\u2019 crying\nThere\u2019s nothing here but old memories and this song.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Now you\u2019re back on my doorstep a\u2019 crying",
+        "Like I cried through all those lonely years",
+        "But I can\u2019t dry your tears it\u2019s been too long since love was here",
+        "And I\u2019ve already gave you my better years"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And so the pages of time kept right on turning",
+        "They never stopped for us to harvest the years",
+        "And old embers of love kept right on dying",
+        "For there was no one to drown my tears."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I\u2019ve tried not to blame you",
+        "and I try not to shame you",
+        "All I can do now is wish you well",
+        "But if you should need a friend",
+        "I\u2019ll be there until the end",
+        "Just don\u2019t ask me to love you again."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And don\u2019t come back to my doorstep a\u2019 crying",
+        "Hoping for what\u2019s been dead so long",
+        "For the embers have all turned to ashes",
+        "There\u2019s nothing here but old memories and this song."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "No don\u2019t come back to my doorstep a\u2019 crying",
+        "There\u2019s nothing here but old memories and this song."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

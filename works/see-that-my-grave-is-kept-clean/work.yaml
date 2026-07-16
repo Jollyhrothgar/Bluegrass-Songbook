@@ -1,0 +1,11 @@
+id: see-that-my-grave-is-kept-clean
+title: See That My Grave Is Kept Clean
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/see-that-my-grave-is-kept-clean/
+      imported_at: '2026-02-08'

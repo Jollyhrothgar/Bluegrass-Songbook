@@ -1,0 +1,39 @@
+{
+  "slug": "just-when-i-needed-you",
+  "title": "Just When I Needed You",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-when-i-needed-you/",
+  "raw_lyrics": "Just when I needed you you left and went away\nYou made my life so blue both night and day\nYou left me here behind with a troubled worried mind\nSo broken hearted too just when I needed you\n\nI cried I cried I prayed I tried\nTo forget you and never call your name\nWhat a shame what a shame you\u2019re the one that was to blame\nYou\u2019re the one that proved untrue just when I needed you\n\nYou said it\u2019s best to part and never love again\nAnd though it broke my heart I won\u2019t complain\nYou know I love you still and dear I always will\nAlthough you proved untrue just when I needed you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just when I needed you you left and went away",
+        "You made my life so blue both night and day",
+        "You left me here behind with a troubled worried mind",
+        "So broken hearted too just when I needed you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I cried I cried I prayed I tried",
+        "To forget you and never call your name",
+        "What a shame what a shame you\u2019re the one that was to blame",
+        "You\u2019re the one that proved untrue just when I needed you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You said it\u2019s best to part and never love again",
+        "And though it broke my heart I won\u2019t complain",
+        "You know I love you still and dear I always will",
+        "Although you proved untrue just when I needed you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

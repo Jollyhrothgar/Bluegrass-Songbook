@@ -1,21 +1,15 @@
 id: blue-night
 title: Blue Night
-artist: Ricky Skaggs
-composers:
-- Kirk McGee
-default_key: G
-tags:
-- ClassicCountry
-- Bluegrass
-- Gospel
-- Folk
-- JamFriendly
 parts:
 - type: lead-sheet
   format: chordpro
   file: lead-sheet.pro
   default: true
   provenance:
-    source: classic-country
-    source_file: bluenightlyricschords.pro
-    imported_at: '2026-01-02'
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/blue-night/
+    imported_at: '2026-02-08'
+tags:
+- JamFriendly
+default_key: G
+artist: Kirk McGee

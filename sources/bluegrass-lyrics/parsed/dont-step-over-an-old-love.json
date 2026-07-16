@@ -1,0 +1,49 @@
+{
+  "slug": "dont-step-over-an-old-love",
+  "title": "Don\u2019t Step Over An Old Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-step-over-an-old-love/",
+  "raw_lyrics": "All the things that we have done together\nAll the joys and sorrows that we\u2019ve shared\nMade me feel our love would last forever\nNow I know you never really cared\n\nDon\u2019t step over an old love\nTo get somebody new\nDon\u2019t step over an old love\nWho always has been true to you\n\nWhen my back was turned he caught your fancy\nAnd he turned an innocent affair\nInto something more than just a friendship\nWhile my dreams all crumbled in despair\n\nNow you think you\u2019re happy with your new love\nYou don\u2019t think he\u2019s been untrue to you\nWait until you hear the whole town talking\nThan you\u2019ll feel these heartaches like I do",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All the things that we have done together",
+        "All the joys and sorrows that we\u2019ve shared",
+        "Made me feel our love would last forever",
+        "Now I know you never really cared"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t step over an old love",
+        "To get somebody new",
+        "Don\u2019t step over an old love",
+        "Who always has been true to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When my back was turned he caught your fancy",
+        "And he turned an innocent affair",
+        "Into something more than just a friendship",
+        "While my dreams all crumbled in despair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you think you\u2019re happy with your new love",
+        "You don\u2019t think he\u2019s been untrue to you",
+        "Wait until you hear the whole town talking",
+        "Than you\u2019ll feel these heartaches like I do"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

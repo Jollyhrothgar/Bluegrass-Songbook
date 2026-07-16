@@ -1,0 +1,50 @@
+{
+  "slug": "before-the-sun-goes-down",
+  "title": "Before The Sun Goes Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/before-the-sun-goes-down/",
+  "raw_lyrics": "Well pack up your car go on and leave\nand tell your folks that we are through\nHoney that ain\u2019t going to make me grieve\ncause I know just what you\u2019ll do\n\nYou\u2019ll pout and cry and swear that I\nam the meanest man in town\nBut I\u2019ll bet money that you\u2019ll be back\nbefore the sun goes down\n\nBefore the sun goes down you\u2019ll be all ready for some lovin\u2019\nYou\u2019ll run to your daddy for some kissin\u2019 and huggin\u2019\nAnd I\u2019ll be waitin\u2019 around\nFor I know you\u2019ll be home before the sun goes down\n\nHoney there ain\u2019t nothing else in the book that you ain\u2019t said\nAll kinds of names and low down things\nI\u2019ve heard them all from A to Z\nAnd when you\u2019ve had your say you\u2019ll up and run away and swear you\u2019re leavin\u2019 town\nBut you\u2019ll cool off come a draggin\u2019 it back before the sun goes down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well pack up your car go on and leave",
+        "and tell your folks that we are through",
+        "Honey that ain\u2019t going to make me grieve",
+        "cause I know just what you\u2019ll do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll pout and cry and swear that I",
+        "am the meanest man in town",
+        "But I\u2019ll bet money that you\u2019ll be back",
+        "before the sun goes down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Before the sun goes down you\u2019ll be all ready for some lovin\u2019",
+        "You\u2019ll run to your daddy for some kissin\u2019 and huggin\u2019",
+        "And I\u2019ll be waitin\u2019 around",
+        "For I know you\u2019ll be home before the sun goes down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Honey there ain\u2019t nothing else in the book that you ain\u2019t said",
+        "All kinds of names and low down things",
+        "I\u2019ve heard them all from A to Z",
+        "And when you\u2019ve had your say you\u2019ll up and run away and swear you\u2019re leavin\u2019 town",
+        "But you\u2019ll cool off come a draggin\u2019 it back before the sun goes down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -87,12 +87,13 @@
                 <div class="header-spacer"></div>
                 <!-- Auth section -->
                 <div id="auth-section" class="auth-section">
-                    <button id="sign-in-btn" class="auth-btn" title="Sign in with Google">
+                    <button id="sign-in-btn" class="auth-btn" title="Sign in">
                         <span class="auth-icon">&#128100;</span>
                         <span class="auth-text">Sign in</span>
                     </button>
                     <div id="user-info" class="user-info hidden">
                         <img id="user-avatar" class="user-avatar" alt="User" referrerpolicy="no-referrer">
+                        <div id="user-avatar-initials" class="user-avatar-initials hidden"></div>
                         <span id="user-name" class="user-name"></span>
                     </div>
                 </div>
@@ -126,7 +127,7 @@
                 <div class="loading">Loading collections...</div>
             </div>
             <div class="landing-footer">
-                <a href="bounty.html" class="bounty-link">
+                <a href="#bounty" class="bounty-link">
                     <span class="bounty-icon">🎯</span>
                     <span class="bounty-text">Help us grow! See songs we're looking for</span>
                 </a>
@@ -170,6 +171,7 @@
                 </div>
                 <span class="search-hint">chord:VII,II</span>
                 <span class="search-hint">prog:ii-V-I</span>
+                <span class="search-hint">status:placeholder</span>
                 <button class="search-tips-btn" id="search-tips-btn" title="Search tips">?</button>
                 <div class="search-tips-dropdown hidden" id="search-tips-dropdown">
                     <div class="search-tips-content">
@@ -217,6 +219,7 @@
                     <button id="list-share-btn" class="list-header-btn hidden" title="Copy share link">🔗 Share</button>
                     <button id="list-duplicate-btn" class="list-header-btn" title="Duplicate this list">📋 Duplicate</button>
                     <button id="list-follow-btn" class="list-header-btn hidden" title="Follow this list">👁️ Follow</button>
+                    <button id="list-request-btn" class="list-header-btn hidden" title="Request a missing song">+ Request Song</button>
                     <button id="list-claim-btn" class="list-header-btn primary hidden" title="Claim this orphaned list">⚔️ Claim</button>
                     <button id="list-delete-btn" class="list-header-btn danger hidden" title="Delete this list">🗑️ Delete</button>
                 </div>
@@ -224,6 +227,45 @@
         </div>
 
         <div id="results" class="results"></div>
+
+        <!-- Notes Bottom Sheet (for setlist metadata) -->
+        <div id="notes-sheet-backdrop" class="notes-sheet-backdrop hidden"></div>
+        <div id="notes-sheet" class="notes-sheet hidden">
+            <div class="notes-sheet-header">
+                <span class="notes-sheet-title" id="notes-sheet-title">Song Notes</span>
+                <button class="notes-sheet-close" id="notes-sheet-close" title="Close">&times;</button>
+            </div>
+            <div class="notes-sheet-content">
+                <div class="notes-sheet-row">
+                    <div class="notes-field">
+                        <label for="notes-key">Key</label>
+                        <select id="notes-key" class="notes-input">
+                            <option value="">--</option>
+                            <option value="C">C</option>
+                            <option value="C#">C#/Db</option>
+                            <option value="D">D</option>
+                            <option value="D#">D#/Eb</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="F#">F#/Gb</option>
+                            <option value="G">G</option>
+                            <option value="G#">G#/Ab</option>
+                            <option value="A">A</option>
+                            <option value="A#">A#/Bb</option>
+                            <option value="B">B</option>
+                        </select>
+                    </div>
+                    <div class="notes-field">
+                        <label for="notes-tempo">Tempo</label>
+                        <input type="number" id="notes-tempo" class="notes-input" placeholder="BPM" min="40" max="300">
+                    </div>
+                </div>
+                <div class="notes-field notes-field-full">
+                    <label for="notes-text">Notes</label>
+                    <textarea id="notes-text" class="notes-textarea" rows="6" placeholder="Arrangement details, kick order, ending notes..."></textarea>
+                </div>
+            </div>
+        </div>
 
         <!-- Editor Panel -->
         <div id="editor-panel" class="editor-panel hidden">
@@ -297,6 +339,13 @@ Blank lines separate verses."></textarea>
                 <div class="editor-preview">
                     <div class="preview-header">
                         <h3>Preview</h3>
+                        <div class="editor-transpose-controls">
+                            <button id="editor-transpose-down" class="transpose-btn" title="Transpose down one semitone">−</button>
+                            <select id="editor-key-select" class="editor-key-select" title="Detected key (change to override)">
+                                <option value="">Key: ?</option>
+                            </select>
+                            <button id="editor-transpose-up" class="transpose-btn" title="Transpose up one semitone">+</button>
+                        </div>
                         <label class="preview-option">
                             <input type="checkbox" id="editor-nashville">
                             Nashville
@@ -304,6 +353,80 @@ Blank lines separate verses."></textarea>
                     </div>
                     <div id="editor-preview-content" class="preview-content">
                         <p class="preview-placeholder">Enter a song to see preview...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload Panel (document/image upload) -->
+        <div id="upload-panel" class="editor-panel hidden">
+            <div class="editor-header">
+                <button id="upload-back-btn" class="back-btn">&larr; Back</button>
+                <div class="editor-notice">Upload a photo of sheet music, handwritten chords, or a PDF.</div>
+            </div>
+            <div class="editor-main">
+                <div class="editor-input">
+                    <div class="metadata-fields">
+                        <div class="field-row">
+                            <label for="upload-title">Title: <span class="required">*</span></label>
+                            <input type="text" id="upload-title" placeholder="Song title">
+                        </div>
+                        <div class="field-row">
+                            <label for="upload-artist">Artist:</label>
+                            <input type="text" id="upload-artist" placeholder="Artist name (optional)">
+                        </div>
+                        <div class="field-row">
+                            <label for="upload-key">Key:</label>
+                            <select id="upload-key">
+                                <option value="">Unknown</option>
+                                <option value="A">A</option>
+                                <option value="Bb">Bb</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="C#">C#</option>
+                                <option value="D">D</option>
+                                <option value="Eb">Eb</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="F#">F#</option>
+                                <option value="G">G</option>
+                                <option value="Ab">Ab</option>
+                            </select>
+                        </div>
+                        <div class="field-row">
+                            <label for="upload-instrument">Instrument:</label>
+                            <select id="upload-instrument">
+                                <option value="">Not specified</option>
+                                <option value="banjo">Banjo</option>
+                                <option value="fiddle">Fiddle</option>
+                                <option value="guitar">Guitar</option>
+                                <option value="mandolin">Mandolin</option>
+                                <option value="dobro">Dobro</option>
+                                <option value="bass">Bass</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="field-row">
+                            <label for="upload-description">Description:</label>
+                            <input type="text" id="upload-description" placeholder="e.g., Scruggs-style banjo break, handwritten tab">
+                        </div>
+                    </div>
+                    <div class="upload-dropzone" id="upload-dropzone">
+                        <span class="dropzone-icon">&#128247;</span>
+                        <span class="dropzone-text">Drop a file here or click to browse</span>
+                        <span class="dropzone-hint">JPG, PNG, HEIC, WebP, or PDF (max 10MB)</span>
+                        <input type="file" id="upload-file-input" accept=".jpg,.jpeg,.png,.heic,.webp,.pdf" class="hidden">
+                    </div>
+                    <div id="upload-file-info" class="upload-file-info hidden"></div>
+                    <div class="editor-actions">
+                        <button id="upload-submit" class="action-btn primary" disabled>Submit</button>
+                        <span id="upload-status" class="save-status"></span>
+                    </div>
+                </div>
+                <div class="editor-preview">
+                    <div class="preview-header"><h3>Preview</h3></div>
+                    <div id="upload-preview-content" class="preview-content">
+                        <p class="preview-placeholder">Select a file to see preview...</p>
                     </div>
                 </div>
             </div>
@@ -396,7 +519,9 @@ This is the [G]chorus [D]part
                             </button>
                         </div>
                     </div>
+                    <button id="work-view-btn" class="action-btn" title="View work details, parts, and bounties">📋 Work</button>
                     <button id="edit-song-btn" class="action-btn">✏️ Edit</button>
+                    <button id="delete-song-btn" class="action-btn delete-btn hidden" title="Delete this song permanently">🗑️ Delete</button>
                 </div>
             </div>
 
@@ -559,6 +684,7 @@ This is the [G]chorus [D]part
                 <div class="modal-body">
                     <div id="account-user-info" class="account-user-info">
                         <img id="account-avatar" class="account-avatar" alt="" referrerpolicy="no-referrer">
+                        <div id="account-avatar-initials" class="account-avatar-initials hidden"></div>
                         <div class="account-details">
                             <div id="account-name" class="account-name"></div>
                             <div id="account-email" class="account-email"></div>
@@ -572,6 +698,85 @@ This is the [G]chorus [D]part
                 <div class="modal-footer">
                     <button id="force-sync-btn" class="action-btn">Sync Now</button>
                     <button id="account-sign-out-btn" class="action-btn danger">Sign Out</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Auth Modal (Sign In / Sign Up) -->
+        <div id="auth-modal" class="modal hidden">
+            <div class="modal-content auth-modal-content">
+                <div class="modal-header">
+                    <h2 id="auth-modal-title">Sign In</h2>
+                    <button id="auth-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <button id="auth-google-btn" class="auth-google-btn">
+                        <img src="images/google-icon.svg" alt="" class="auth-google-icon">
+                        Sign in with Google
+                    </button>
+                    <div class="auth-divider">
+                        <span>or</span>
+                    </div>
+                    <button id="auth-email-toggle" class="auth-email-toggle">Sign in with email</button>
+                    <div id="auth-email-form" class="auth-email-form hidden">
+                        <div class="auth-field">
+                            <label for="auth-email">Email</label>
+                            <input type="email" id="auth-email" autocomplete="email" placeholder="you@example.com">
+                        </div>
+                        <div class="auth-field">
+                            <label for="auth-password">Password</label>
+                            <input type="password" id="auth-password" autocomplete="current-password" placeholder="Min 8 characters">
+                        </div>
+                        <div id="auth-error" class="auth-error hidden"></div>
+                        <div id="auth-success" class="auth-success hidden"></div>
+                        <button id="auth-submit-btn" class="auth-submit-btn">Sign In</button>
+                        <button id="auth-forgot-btn" class="auth-link-btn">Forgot password?</button>
+                    </div>
+                    <div class="auth-toggle-row">
+                        <span id="auth-toggle-text">Don't have an account?</span>
+                        <button id="auth-toggle-btn" class="auth-link-btn">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Password Reset Modal -->
+        <div id="reset-modal" class="modal hidden">
+            <div class="modal-content auth-modal-content">
+                <div class="modal-header">
+                    <h2 id="reset-modal-title">Reset Password</h2>
+                    <button id="reset-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- Step 1: Enter email -->
+                    <div id="reset-step-email" class="reset-step">
+                        <p>Enter your email and we'll send you a link to reset your password.</p>
+                        <div class="auth-field">
+                            <label for="reset-email">Email</label>
+                            <input type="email" id="reset-email" autocomplete="email" placeholder="you@example.com">
+                        </div>
+                        <div id="reset-error" class="auth-error hidden"></div>
+                        <button id="reset-send-btn" class="auth-submit-btn">Send Reset Link</button>
+                    </div>
+                    <!-- Step 2: Check email confirmation -->
+                    <div id="reset-step-sent" class="reset-step hidden">
+                        <p>Check your email for a password reset link. It may take a minute to arrive.</p>
+                        <button id="reset-back-btn" class="auth-link-btn">Back to sign in</button>
+                    </div>
+                    <!-- Step 3: Enter new password (shown after clicking reset link) -->
+                    <div id="reset-step-new" class="reset-step hidden">
+                        <p>Enter your new password below.</p>
+                        <div class="auth-field">
+                            <label for="reset-new-password">New password</label>
+                            <input type="password" id="reset-new-password" autocomplete="new-password" placeholder="Min 8 characters">
+                        </div>
+                        <div class="auth-field">
+                            <label for="reset-confirm-password">Confirm password</label>
+                            <input type="password" id="reset-confirm-password" autocomplete="new-password" placeholder="Re-enter password">
+                        </div>
+                        <div id="reset-new-error" class="auth-error hidden"></div>
+                        <button id="reset-update-btn" class="auth-submit-btn">Update Password</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -611,29 +816,6 @@ This is the [G]chorus [D]part
         </div>
 
         <!-- Song Request Modal -->
-        <div id="song-request-modal" class="modal hidden">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Request a Song</h2>
-                    <button id="song-request-close" class="modal-close">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p class="request-intro">What song would you like us to add?</p>
-                    <label for="request-title">Song Title <span class="required">*</span></label>
-                    <input type="text" id="request-title" placeholder="e.g., Blue Moon of Kentucky" required>
-                    <label for="request-artist">Artist (optional)</label>
-                    <input type="text" id="request-artist" placeholder="e.g., Bill Monroe">
-                    <label for="request-details">Additional Details (optional)</label>
-                    <textarea id="request-details" placeholder="e.g., Looking for the version in G, or a link to where you've seen it..."></textarea>
-                </div>
-                <div class="modal-footer">
-                    <button id="song-request-cancel" class="action-btn">Cancel</button>
-                    <button id="song-request-submit" class="action-btn primary">Submit Request</button>
-                </div>
-                <div id="song-request-status" class="modal-status"></div>
-            </div>
-        </div>
-
         <!-- Flag Issue Modal -->
         <div id="flag-modal" class="modal hidden">
             <div class="modal-content">
@@ -658,6 +840,96 @@ This is the [G]chorus [D]part
 
         <!-- Toast notification -->
         <div id="flag-toast" class="toast hidden"></div>
+
+        <!-- Super-User Request Modal -->
+        <div id="superuser-modal" class="modal hidden">
+            <div class="modal-content superuser-modal-content">
+                <div class="modal-header">
+                    <h2>Request Super-User Access</h2>
+                    <button id="superuser-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="superuser-intro">
+                        <p><strong>With great power comes great responsibility.</strong></p>
+                        <p>Super-users can make instant edits to songs. Changes appear immediately and are auto-committed to the songbook.</p>
+                    </div>
+
+                    <div class="superuser-responsibilities">
+                        <p><strong>As a super-user, you agree to:</strong></p>
+                        <ul>
+                            <li>Make accurate, helpful corrections</li>
+                            <li>Respect the original artists and songs</li>
+                            <li>Not vandalize or submit inappropriate content</li>
+                            <li>Help maintain the quality of the songbook</li>
+                        </ul>
+                    </div>
+
+                    <label for="superuser-reason" class="superuser-reason-label">Why do you want super-user access? (optional)</label>
+                    <textarea id="superuser-reason" placeholder="E.g., 'I'm a musician who regularly contributes corrections...'"></textarea>
+
+                    <label class="superuser-confirm-label">
+                        <input type="checkbox" id="superuser-confirm">
+                        <span>I understand and accept these responsibilities</span>
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <button id="superuser-cancel" class="action-btn">Cancel</button>
+                    <button id="superuser-submit" class="action-btn primary" disabled>Submit Request</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Super-user toast notification -->
+        <div id="superuser-toast" class="toast hidden"></div>
+
+        <!-- Add Song Type Picker Modal -->
+        <div id="add-song-picker" class="modal hidden">
+            <div class="modal-content add-song-picker-content">
+                <div class="modal-header">
+                    <h2 id="picker-header-title">Add a Song</h2>
+                    <button id="add-song-picker-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="picker-cards">
+                        <button class="picker-card" data-type="upload">
+                            <span class="picker-card-icon">&#128247;</span>
+                            <span class="picker-card-title">Upload Image</span>
+                            <span class="picker-card-desc">Photo of sheet music, scanned tab, or PDF</span>
+                        </button>
+                        <button class="picker-card" data-type="chordpro">
+                            <span class="picker-card-icon">&#9836;</span>
+                            <span class="picker-card-title">Lyrics &amp; Chords</span>
+                            <span class="picker-card-desc">Type or paste a chord sheet</span>
+                        </button>
+                        <button class="picker-card picker-card-request" data-type="request">
+                            <span class="picker-card-icon">&#128269;</span>
+                            <span class="picker-card-title">Request a Song</span>
+                            <span class="picker-card-desc">Can't find it? Add it to the wanted list.</span>
+                        </button>
+                    </div>
+                    <div class="picker-request-form hidden">
+                        <button class="picker-back-btn">&larr; Back</button>
+                        <div class="picker-form-fields">
+                            <input id="picker-req-title" type="text" placeholder="Song title (required)">
+                            <input id="picker-req-artist" type="text" placeholder="Artist (optional)">
+                            <select id="picker-req-key">
+                                <option value="">Key (optional)</option>
+                                <option>A</option><option>Bb</option><option>B</option>
+                                <option>C</option><option>Db</option><option>D</option>
+                                <option>Eb</option><option>E</option><option>F</option>
+                                <option>F#</option><option>G</option><option>Ab</option>
+                            </select>
+                            <textarea id="picker-req-notes" placeholder="Notes — what do you know about this song?"></textarea>
+                        </div>
+                        <div id="picker-dedup-warning" class="picker-dedup-warning hidden"></div>
+                        <div class="picker-form-actions">
+                            <button id="picker-req-submit" class="action-btn primary" disabled>Submit Request</button>
+                            <span id="picker-req-status" class="picker-req-status"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/supabase-auth.js"></script>

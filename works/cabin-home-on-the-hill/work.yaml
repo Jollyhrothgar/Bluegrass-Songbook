@@ -1,0 +1,11 @@
+id: cabin-home-on-the-hill
+title: Cabin Home On The Hill
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/cabin-home-on-the-hill/
+      imported_at: '2026-02-08'

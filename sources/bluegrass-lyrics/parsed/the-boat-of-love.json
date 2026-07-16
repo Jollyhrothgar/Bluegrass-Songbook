@@ -1,0 +1,49 @@
+{
+  "slug": "the-boat-of-love",
+  "title": "The Boat Of Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-boat-of-love/",
+  "raw_lyrics": "I can hear the voice of the boatman comin\u2019\nAnd I\u2019ll be ready when he calls my name\nSo happy I\u2019ll be on my way to Heaven\nI hear the Angels freely say\n\nOh the boat of love down at the harbor\nIt\u2019s waiting there for you and me\nI have no fear Christ is the captain\nHe\u2019ll guide us o\u2019r life\u2019s rollin\u2019 sea\n\nLet\u2019s get on board that great excursion\nAnd sail the sea to the home above\nDon\u2019t wait too late to make your reservation\nIt\u2019s the boat of God\u2019s eternal love\n\nOh the boat of love will soon be sailing\nIt\u2019s headin\u2019 for that golden shore\nDon\u2019t wait too late to make your reservation\nHeaven is my home for evermore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can hear the voice of the boatman comin\u2019",
+        "And I\u2019ll be ready when he calls my name",
+        "So happy I\u2019ll be on my way to Heaven",
+        "I hear the Angels freely say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the boat of love down at the harbor",
+        "It\u2019s waiting there for you and me",
+        "I have no fear Christ is the captain",
+        "He\u2019ll guide us o\u2019r life\u2019s rollin\u2019 sea"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let\u2019s get on board that great excursion",
+        "And sail the sea to the home above",
+        "Don\u2019t wait too late to make your reservation",
+        "It\u2019s the boat of God\u2019s eternal love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the boat of love will soon be sailing",
+        "It\u2019s headin\u2019 for that golden shore",
+        "Don\u2019t wait too late to make your reservation",
+        "Heaven is my home for evermore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

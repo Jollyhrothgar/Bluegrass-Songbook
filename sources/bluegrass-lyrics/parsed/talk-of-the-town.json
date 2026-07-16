@@ -1,0 +1,39 @@
+{
+  "slug": "talk-of-the-town",
+  "title": "Talk Of The Town",
+  "source_url": "https://www.bluegrasslyrics.com/song/talk-of-the-town/",
+  "raw_lyrics": "Now people seem to watch my footsteps as I go by\nThey shake their heads and say I\u2019m riding high\nBut this thing has done drove me wild and now it\u2019s got me down\nAnd made me the talk of the town\n\nI\u2019ll go down to the river and slowly walk around\nAnd if my thoughts don\u2019t change a lot I\u2019ll jump right in and drown\nFor after what you\u2019ve done to me I know I\u2019ve grown to be\nThe laughing stock the talk of the town\n\nI used to think this couldn\u2019t happen to a guy like me\nAs nightfall finds me headed to your door\nNow you don\u2019t seem to want me since a new love you have found\nAnd now I am the talk of the town",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now people seem to watch my footsteps as I go by",
+        "They shake their heads and say I\u2019m riding high",
+        "But this thing has done drove me wild and now it\u2019s got me down",
+        "And made me the talk of the town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll go down to the river and slowly walk around",
+        "And if my thoughts don\u2019t change a lot I\u2019ll jump right in and drown",
+        "For after what you\u2019ve done to me I know I\u2019ve grown to be",
+        "The laughing stock the talk of the town"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I used to think this couldn\u2019t happen to a guy like me",
+        "As nightfall finds me headed to your door",
+        "Now you don\u2019t seem to want me since a new love you have found",
+        "And now I am the talk of the town"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

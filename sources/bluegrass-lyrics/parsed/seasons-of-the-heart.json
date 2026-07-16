@@ -1,0 +1,49 @@
+{
+  "slug": "seasons-of-the-heart",
+  "title": "Seasons Of The Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/seasons-of-the-heart/",
+  "raw_lyrics": "The seasons of the heart can\u2019t last forever\nAnd an autumn chill lies in the summer breeze\nMy love for you is like a raging river\nThat even the dead of winter cannot freeze\n\nPerhaps our pathways will branch around the next bend\nAnd never more I\u2019ll feel your warm embrace\nBut I\u2019ll hold you close forever in my heart, dear\nAnd in every lover\u2019s eyes I\u2019ll see your face.\n\nI\u2019ve heard for everything there is a season\nAnd I\u2019ve come to see that winter heralds spring\nSo if we have to part I\u2019ll try not to regret it\nFor the love we shared will brighten every thing\n\nWhen my last breath on earth is taken\nAnd all my rivers flow down to the sea\nI only hope for me it can be written\nThat I tried to be the best that I could be",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The seasons of the heart can\u2019t last forever",
+        "And an autumn chill lies in the summer breeze",
+        "My love for you is like a raging river",
+        "That even the dead of winter cannot freeze"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Perhaps our pathways will branch around the next bend",
+        "And never more I\u2019ll feel your warm embrace",
+        "But I\u2019ll hold you close forever in my heart, dear",
+        "And in every lover\u2019s eyes I\u2019ll see your face."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve heard for everything there is a season",
+        "And I\u2019ve come to see that winter heralds spring",
+        "So if we have to part I\u2019ll try not to regret it",
+        "For the love we shared will brighten every thing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When my last breath on earth is taken",
+        "And all my rivers flow down to the sea",
+        "I only hope for me it can be written",
+        "That I tried to be the best that I could be"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

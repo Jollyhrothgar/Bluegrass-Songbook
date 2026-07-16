@@ -1,0 +1,11 @@
+id: lets-part-the-best-of-friends
+title: Let’s Part The Best Of Friends
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/lets-part-the-best-of-friends/
+      imported_at: '2026-02-08'

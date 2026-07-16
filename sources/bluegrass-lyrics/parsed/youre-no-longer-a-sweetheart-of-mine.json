@@ -1,0 +1,59 @@
+{
+  "slug": "youre-no-longer-a-sweetheart-of-mine",
+  "title": "You\u2019re No Longer A Sweetheart Of Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-no-longer-a-sweetheart-of-mine/",
+  "raw_lyrics": "We are saying goodbye dear forever\nI am leaving your false love behind\nEvery promise you made has been broken\nYou\u2019re no longer a sweetheart of mine\n\nI wanted someone true and faithful\nAnd that is the way it had to be\nYou wanted your honky-tonk life dear\nYou\u2019re no longer a sweetheart to me\n\nGo back to the bar down the street dear\nAnd stay with your honky-tonk kind\nGo back to the life you\u2019ve been living\nYou\u2019re no longer a sweetheart of mine\n\nFrom a bottle to a ride in the moonlight\nIn the arms of the first man you see\nAnother victim added to your list dear\nYou\u2019re no longer a sweetheart to me\n\nI could never pretend to be happy\nUntil a true love I have found\nBut you lived a lie from the start dear\nYou\u2019re no longer a sweetheart of mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We are saying goodbye dear forever",
+        "I am leaving your false love behind",
+        "Every promise you made has been broken",
+        "You\u2019re no longer a sweetheart of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wanted someone true and faithful",
+        "And that is the way it had to be",
+        "You wanted your honky-tonk life dear",
+        "You\u2019re no longer a sweetheart to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Go back to the bar down the street dear",
+        "And stay with your honky-tonk kind",
+        "Go back to the life you\u2019ve been living",
+        "You\u2019re no longer a sweetheart of mine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "From a bottle to a ride in the moonlight",
+        "In the arms of the first man you see",
+        "Another victim added to your list dear",
+        "You\u2019re no longer a sweetheart to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I could never pretend to be happy",
+        "Until a true love I have found",
+        "But you lived a lie from the start dear",
+        "You\u2019re no longer a sweetheart of mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

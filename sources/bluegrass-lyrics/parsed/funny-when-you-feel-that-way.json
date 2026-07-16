@@ -1,0 +1,99 @@
+{
+  "slug": "funny-when-you-feel-that-way",
+  "title": "Funny When You Feel That Way",
+  "source_url": "https://www.bluegrasslyrics.com/song/funny-when-you-feel-that-way/",
+  "raw_lyrics": "I cant forget how queer I felt\nWhen first I fell in love\nI had a most sincere tactor\nSqueezing a lady\u2019s glove\n\nHer lovely hand was in it\nAs I waltzed around so gay\nI thought myself in paradise\nIt\u2019s funny when you feel that way\n\nIt\u2019s funny when you feel that way\nIt\u2019s funny when you feel that way\nI thought myself in paradise\nIt\u2019s funny when you feel that way\n\nAgain we met one afternoon\nAs we were all alone\nI pumped up nerve to ask if she\nWould one day be my own\n\nShe blushed and said go ask poppa\nAnd ask him if I may\nI danced a cantor around the room\nIt\u2019s funny when you feel that way\n\nIt\u2019s funny when you feel that way\nIt\u2019s funny when you feel that way\nI danced a cantor around the room\nIt\u2019s funny when you feel that way\n\nThe old boy said that we might we\nAnd so he crowned my bliss\nI shall be a double man\nIn about a month from this\n\nThough it seemed to me somehow the time\nWill never pass away\nFor I long to hear the wedding bells\nIt\u2019s funny when you feel that way\n\nIt\u2019s funny when you feel that way\nIt\u2019s funny when you feel that way\nI long to hear the wedding bells\nIt\u2019s funny when you feel that way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I cant forget how queer I felt",
+        "When first I fell in love",
+        "I had a most sincere tactor",
+        "Squeezing a lady\u2019s glove"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her lovely hand was in it",
+        "As I waltzed around so gay",
+        "I thought myself in paradise",
+        "It\u2019s funny when you feel that way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s funny when you feel that way",
+        "It\u2019s funny when you feel that way",
+        "I thought myself in paradise",
+        "It\u2019s funny when you feel that way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Again we met one afternoon",
+        "As we were all alone",
+        "I pumped up nerve to ask if she",
+        "Would one day be my own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She blushed and said go ask poppa",
+        "And ask him if I may",
+        "I danced a cantor around the room",
+        "It\u2019s funny when you feel that way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s funny when you feel that way",
+        "It\u2019s funny when you feel that way",
+        "I danced a cantor around the room",
+        "It\u2019s funny when you feel that way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The old boy said that we might we",
+        "And so he crowned my bliss",
+        "I shall be a double man",
+        "In about a month from this"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though it seemed to me somehow the time",
+        "Will never pass away",
+        "For I long to hear the wedding bells",
+        "It\u2019s funny when you feel that way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s funny when you feel that way",
+        "It\u2019s funny when you feel that way",
+        "I long to hear the wedding bells",
+        "It\u2019s funny when you feel that way"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

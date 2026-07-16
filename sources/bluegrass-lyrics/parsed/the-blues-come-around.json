@@ -1,0 +1,59 @@
+{
+  "slug": "the-blues-come-around",
+  "title": "The Blues Come Around",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-blues-come-around/",
+  "raw_lyrics": "Once I was happy as I could be\nBut I let a gal make a fool of me\nAnd ever since she let me down\nThe blues come around when the sun goes down.\n\nOh the blues come around\nOh the blues come around\nLord the blues come around\nEvery evening when the sun goes down.\n\nAs long as the sun is in the sky\nThese dog-gone blues never make me cry\nBut ever since she left this town\nThe blues come around when the sun goes down.\n\nI built my castles very high\nAnd then she went and said good-bye\nAnd ever since she tore \u2019em down\nThe blues come around when the sun goes down.\n\nOnce she called me all her own\nBut now she\u2019s gone and I\u2019m alone\nAnd every evening I\u2019m sorrow bound\n\u2018Cuz the blues come around when the sun goes down.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once I was happy as I could be",
+        "But I let a gal make a fool of me",
+        "And ever since she let me down",
+        "The blues come around when the sun goes down."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the blues come around",
+        "Oh the blues come around",
+        "Lord the blues come around",
+        "Every evening when the sun goes down."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As long as the sun is in the sky",
+        "These dog-gone blues never make me cry",
+        "But ever since she left this town",
+        "The blues come around when the sun goes down."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I built my castles very high",
+        "And then she went and said good-bye",
+        "And ever since she tore \u2019em down",
+        "The blues come around when the sun goes down."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once she called me all her own",
+        "But now she\u2019s gone and I\u2019m alone",
+        "And every evening I\u2019m sorrow bound",
+        "\u2018Cuz the blues come around when the sun goes down."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

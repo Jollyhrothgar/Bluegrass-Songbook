@@ -1,0 +1,11 @@
+id: lazy-john
+title: Lazy John
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/lazy-john/
+      imported_at: '2026-02-08'

@@ -1,0 +1,57 @@
+{
+  "slug": "times-are-getting-hard",
+  "title": "Times Are Getting Hard",
+  "source_url": "https://www.bluegrasslyrics.com/song/times-are-getting-hard/",
+  "raw_lyrics": "Times are getting hard boys\nIf times don\u2019t get much better boy\u2019s going to leave this earth\n\nTake my true love by the hand lead her through the town\nSay goodby to everyone goodby Sally Brown\n\nHad a crop about a year ago it withered to the ground\nI tried to get some money but the banker turned me down\n\nTake my Bible from the shelf my shotgun from the wall\nTake old Sal and hitch her up the wagon for to haul\n\nPut everything on the wagon boys so nothing can tumble down\nSal can pull and we can push we\u2019re bound to leave this town\n\nI\u2019m going to California where everything is green\nI\u2019m going to have the nicest farm that you have ever seen",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Times are getting hard boys",
+        "If times don\u2019t get much better boy\u2019s going to leave this earth"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take my true love by the hand lead her through the town",
+        "Say goodby to everyone goodby Sally Brown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Had a crop about a year ago it withered to the ground",
+        "I tried to get some money but the banker turned me down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take my Bible from the shelf my shotgun from the wall",
+        "Take old Sal and hitch her up the wagon for to haul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Put everything on the wagon boys so nothing can tumble down",
+        "Sal can pull and we can push we\u2019re bound to leave this town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going to California where everything is green",
+        "I\u2019m going to have the nicest farm that you have ever seen"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

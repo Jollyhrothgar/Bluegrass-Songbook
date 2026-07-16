@@ -1,0 +1,58 @@
+{
+  "slug": "deep-water",
+  "title": "Deep Water",
+  "source_url": "https://www.bluegrasslyrics.com/song/deep-water/",
+  "raw_lyrics": "I\u2019m drifting into deep water\nI\u2019m starting to care for you\nAnd you\u2019re getting me in deep water\nBe careful what you do.\n\nYou want a romance\nand I\u2019m sick in love\nI know I\u2019ll regret it when it ends\nI\u2019m drifting into deep water\nWhy can\u2019t we still be friends.\n\nIt\u2019s so restless in this deep water\nAnd I\u2019m caught between right and wrong\nMy love\u2019s as true as deep water\nYour love won\u2019t last that long.\n\nWhere will it lead me and when will it end\nI can\u2019t help but wish I only knew\nAnd I\u2019m drifting into deep water\nSo deep in love with you.\n\nI\u2019m winding up in deep water\nSo deep in love with you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m drifting into deep water",
+        "I\u2019m starting to care for you",
+        "And you\u2019re getting me in deep water",
+        "Be careful what you do."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You want a romance",
+        "and I\u2019m sick in love",
+        "I know I\u2019ll regret it when it ends",
+        "I\u2019m drifting into deep water",
+        "Why can\u2019t we still be friends."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s so restless in this deep water",
+        "And I\u2019m caught between right and wrong",
+        "My love\u2019s as true as deep water",
+        "Your love won\u2019t last that long."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where will it lead me and when will it end",
+        "I can\u2019t help but wish I only knew",
+        "And I\u2019m drifting into deep water",
+        "So deep in love with you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m winding up in deep water",
+        "So deep in love with you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "one-track-mind",
+  "title": "One Track Mind",
+  "source_url": "https://www.bluegrasslyrics.com/song/one-track-mind/",
+  "raw_lyrics": "They say I got a one track mind and I\u2019ll admit it\u2019s true\nSo many women on my mind I got no time for you\nThere\u2019s a different sweetie every night I\u2019m a workin\u2019 overtime\nCan\u2019t concentrate on nothin\u2019 else I got a one track mind\n\nOne track mind all the time\nDon\u2019t like you chasin\u2019 after me I\u2019m a leavin\u2019 you behind\nYonder lies a greener grass so don\u2019t expect me back\nThey say I\u2019ve got a one track mind and I\u2019m on the right track\n\nWell I\u2019m not hard to satisfy but you gotta treat me right\nI just want a different girl each day and three or four each night\nDon\u2019t make me lose my temper I don\u2019t want to be unkind\nDon\u2019t think that you can tie me down I got a one track mind\n\nI think it\u2019s time to call an end to our little episode\nI been tied down a bit too long it\u2019s time to hit the road\nA rollin\u2019 stone won\u2019t rest alone that\u2019s what I always find\nDon\u2019t blame me don\u2019t blame yourself blame that one track mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "They say I got a one track mind and I\u2019ll admit it\u2019s true",
+        "So many women on my mind I got no time for you",
+        "There\u2019s a different sweetie every night I\u2019m a workin\u2019 overtime",
+        "Can\u2019t concentrate on nothin\u2019 else I got a one track mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "One track mind all the time",
+        "Don\u2019t like you chasin\u2019 after me I\u2019m a leavin\u2019 you behind",
+        "Yonder lies a greener grass so don\u2019t expect me back",
+        "They say I\u2019ve got a one track mind and I\u2019m on the right track"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019m not hard to satisfy but you gotta treat me right",
+        "I just want a different girl each day and three or four each night",
+        "Don\u2019t make me lose my temper I don\u2019t want to be unkind",
+        "Don\u2019t think that you can tie me down I got a one track mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I think it\u2019s time to call an end to our little episode",
+        "I been tied down a bit too long it\u2019s time to hit the road",
+        "A rollin\u2019 stone won\u2019t rest alone that\u2019s what I always find",
+        "Don\u2019t blame me don\u2019t blame yourself blame that one track mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

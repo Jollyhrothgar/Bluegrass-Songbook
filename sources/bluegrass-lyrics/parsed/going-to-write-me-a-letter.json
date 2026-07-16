@@ -1,0 +1,70 @@
+{
+  "slug": "going-to-write-me-a-letter",
+  "title": "Going to Write Me a Letter",
+  "source_url": "https://www.bluegrasslyrics.com/song/going-to-write-me-a-letter/",
+  "raw_lyrics": "Gonna write me a letter\nGonna send it on the foam\nGonna send it to my baby\nGonna beg him to come home\n\nHe wanted me for to marry\nMy papa he said no\nSaid that he didn\u2019t like him\nTold him that he would have to go\n\nHe\u2019s gone he\u2019s gone\n\nI led him down to the water\nWatched him sail away on a boat\nLeft me there broken-hearted\nBroken-hearted and all alone\n\nHe\u2019s gone he\u2019s gone\n\nGonna write me a letter\nGonna send it on the foam\nGonna send it to my baby\nGonna beg him to come home\n\nHe\u2019s gone he\u2019s gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Gonna write me a letter",
+        "Gonna send it on the foam",
+        "Gonna send it to my baby",
+        "Gonna beg him to come home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He wanted me for to marry",
+        "My papa he said no",
+        "Said that he didn\u2019t like him",
+        "Told him that he would have to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He\u2019s gone he\u2019s gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I led him down to the water",
+        "Watched him sail away on a boat",
+        "Left me there broken-hearted",
+        "Broken-hearted and all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He\u2019s gone he\u2019s gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Gonna write me a letter",
+        "Gonna send it on the foam",
+        "Gonna send it to my baby",
+        "Gonna beg him to come home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He\u2019s gone he\u2019s gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "trails-troubles-tribulations",
+  "title": "Trials Troubles Tribulations",
+  "source_url": "https://www.bluegrasslyrics.com/song/trails-troubles-tribulations/",
+  "raw_lyrics": "Trials troubles tribulations\nSuch as never been before\nWhen the angels pour upon us\nTheir vows of dread for ever more\n\nWhen the fire comes down from Heaven\nAnd the blood shall fill the sea\nI\u2019ll be carried home by Jesus\nThere forever with him be\n\nThe beasts with horns will come upon you\nOne with seven one with ten\nThey will cry unto the mountain\nThey\u2019ll pray to die but cannot win\n\nThe mark must be upon your forehead\nThese earthly goods you then can buy\nDepart from me I never knew you\nYou\u2019ll hear my blessed Savior cry",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Trials troubles tribulations",
+        "Such as never been before",
+        "When the angels pour upon us",
+        "Their vows of dread for ever more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the fire comes down from Heaven",
+        "And the blood shall fill the sea",
+        "I\u2019ll be carried home by Jesus",
+        "There forever with him be"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The beasts with horns will come upon you",
+        "One with seven one with ten",
+        "They will cry unto the mountain",
+        "They\u2019ll pray to die but cannot win"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The mark must be upon your forehead",
+        "These earthly goods you then can buy",
+        "Depart from me I never knew you",
+        "You\u2019ll hear my blessed Savior cry"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "if-i-had-my-life-to-live-over",
+  "title": "If I Had My Life To Live Over",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-i-had-my-life-to-live-over/",
+  "raw_lyrics": "There a little log hut down in old Caroline\nAll the doors are shut and its covered with vine\nThat\u2019s where I lived when just a lad\nI was happy there with Mother and Dad\n\nNow I\u2019m alone and oh so lonely\nI know my heart would be so sad\nBut if I had my to live over\nI\u2019d stay at home with Mother and Dad\n\nI left my home down in old Caroline\nI rambled round from time to time\nI waited too long to start back home\nFor the ones I loved had done passed on\n\nNow I\u2019ve got no parents no place to call home\nI\u2019m out in this world and I\u2019m on my own\nMy heart is broke my heart is sad\nFor I\u2019ve got no home no Mother or Dad",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There a little log hut down in old Caroline",
+        "All the doors are shut and its covered with vine",
+        "That\u2019s where I lived when just a lad",
+        "I was happy there with Mother and Dad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m alone and oh so lonely",
+        "I know my heart would be so sad",
+        "But if I had my to live over",
+        "I\u2019d stay at home with Mother and Dad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I left my home down in old Caroline",
+        "I rambled round from time to time",
+        "I waited too long to start back home",
+        "For the ones I loved had done passed on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019ve got no parents no place to call home",
+        "I\u2019m out in this world and I\u2019m on my own",
+        "My heart is broke my heart is sad",
+        "For I\u2019ve got no home no Mother or Dad"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

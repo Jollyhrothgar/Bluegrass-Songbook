@@ -1,0 +1,39 @@
+{
+  "slug": "waiting-at-the-gate",
+  "title": "Waiting At The Gate",
+  "source_url": "https://www.bluegrasslyrics.com/song/waiting-at-the-gate/",
+  "raw_lyrics": "I\u2019m waiting at the gate looking for my ride\nSoon to take me to my home on high\nAngel bands a coming From the other side\nI don\u2019t want to be late I\u2019m waiting at the gate\n\nI can hear the thunder the time\u2019s at hand\nJoybells are ringing in the promised land\nJesus is a coming my soul to take\nYes my Lord sees me waiting at the gate\n\nI\u2019m a\u2019 leaving the world no more to do\nAll of my work on earth is through\nI\u2019ve fought the fight I\u2019ve kept the faith\nWell I\u2019m ready to go I\u2019m waiting at the gate",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m waiting at the gate looking for my ride",
+        "Soon to take me to my home on high",
+        "Angel bands a coming From the other side",
+        "I don\u2019t want to be late I\u2019m waiting at the gate"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can hear the thunder the time\u2019s at hand",
+        "Joybells are ringing in the promised land",
+        "Jesus is a coming my soul to take",
+        "Yes my Lord sees me waiting at the gate"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a\u2019 leaving the world no more to do",
+        "All of my work on earth is through",
+        "I\u2019ve fought the fight I\u2019ve kept the faith",
+        "Well I\u2019m ready to go I\u2019m waiting at the gate"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

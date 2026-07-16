@@ -1,0 +1,49 @@
+{
+  "slug": "gonna-settle-down",
+  "title": "Gonna Settle Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/gonna-settle-down/",
+  "raw_lyrics": "Tonight I\u2019m all alone no place to call my own\nDon\u2019t have no one to love me anymore\nI\u2019m gonna pack up my grip and take a long long trip\nBack to the one that I love so\n\nOh I long to go back to my darling\nBack to the one I love so well\nI know she\u2019ll be my wife and we\u2019ll settle down for life\nCause she\u2019s the one that means the world to me\n\nI can\u2019t forget the day I left and went away\nYou told you me I\u2019d be sorry some old day\nI found it to be true so I\u2019m heading back to you\nSweetheart I\u2019m tired and I want to settle down\n\nWhen I get back to her my rambling days are over\nWe\u2019ll build a little cottage on the hill\nWe\u2019ll think of days gone by sweetheart just you and I\nAnd there we\u2019ll live so happy ever more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight I\u2019m all alone no place to call my own",
+        "Don\u2019t have no one to love me anymore",
+        "I\u2019m gonna pack up my grip and take a long long trip",
+        "Back to the one that I love so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I long to go back to my darling",
+        "Back to the one I love so well",
+        "I know she\u2019ll be my wife and we\u2019ll settle down for life",
+        "Cause she\u2019s the one that means the world to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t forget the day I left and went away",
+        "You told you me I\u2019d be sorry some old day",
+        "I found it to be true so I\u2019m heading back to you",
+        "Sweetheart I\u2019m tired and I want to settle down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I get back to her my rambling days are over",
+        "We\u2019ll build a little cottage on the hill",
+        "We\u2019ll think of days gone by sweetheart just you and I",
+        "And there we\u2019ll live so happy ever more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

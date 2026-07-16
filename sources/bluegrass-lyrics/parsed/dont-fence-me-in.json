@@ -1,0 +1,53 @@
+{
+  "slug": "dont-fence-me-in",
+  "title": "Don\u2019t Fence Me In",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-fence-me-in/",
+  "raw_lyrics": "Wildcat Kelly was lookin\u2019 mighty pale\nStandin by the sheriff\u2019s side\nWhen that sheriff said I\u2019m taking you to jail\nWildcat raised his head and cried\n\nOh give me land lots of land under starry skies above\ndon\u2019t fence me in\nLet me ride through the wide open spaces that I love\ndon\u2019t fence me in\nI want to be by myself in the evening breeze\nListen to the murmur of the cottonwood trees\nSend me off forever but I ask you please\ndon\u2019t fence me in.\n\nJust turn me loose and let me wander over yonder\nwhere the purple mountains rise\nOn my kayoose let me straddle my old saddle\nunderneath the western skies\n\nI want to ride to the range when the west commences\nHowl at the moon \u2019til I lose my senses\nI won\u2019t look at hobbles and I can\u2019t stand fences\ndon\u2019t fence me in",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Wildcat Kelly was lookin\u2019 mighty pale",
+        "Standin by the sheriff\u2019s side",
+        "When that sheriff said I\u2019m taking you to jail",
+        "Wildcat raised his head and cried"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh give me land lots of land under starry skies above",
+        "don\u2019t fence me in",
+        "Let me ride through the wide open spaces that I love",
+        "don\u2019t fence me in",
+        "I want to be by myself in the evening breeze",
+        "Listen to the murmur of the cottonwood trees",
+        "Send me off forever but I ask you please",
+        "don\u2019t fence me in."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just turn me loose and let me wander over yonder",
+        "where the purple mountains rise",
+        "On my kayoose let me straddle my old saddle",
+        "underneath the western skies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I want to ride to the range when the west commences",
+        "Howl at the moon \u2019til I lose my senses",
+        "I won\u2019t look at hobbles and I can\u2019t stand fences",
+        "don\u2019t fence me in"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

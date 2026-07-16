@@ -1,0 +1,53 @@
+{
+  "slug": "why-you-been-gone-so-long",
+  "title": "Why You Been Gone So Long",
+  "source_url": "https://www.bluegrasslyrics.com/song/why-you-been-gone-so-long/",
+  "raw_lyrics": "Well every time it rains Lord I run to my window\nAll I do is ring my hands and mourn\nWell listen to that thunder roar\nCan\u2019t you hear that lonesome wind moan\nTell me baby now why you been gone so long\n\nTell me baby now why you been gone so long\nYou been gone so long now\nTell me baby now why you been gone so long\nWolfs scratchin at my door lord Lord\nI can hear that lonesome wind blow\nTell me baby now why you been gone so long\n\nWell someone said they thought they saw you rollin down in Reno\nWith a big ol man  from San Antone\nThey tell me I\u2019m a fool to pine for you oh what do they know\nTell me baby now why you been gone so long\n\nAin\u2019t nothin I want to do lord\nSo I guess I could get stoned\nAnd let the past paint pictures in my head\nDrink a fifth of thunderbird and try to write a sad sad song\nTell my baby now why you been gone so long",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well every time it rains Lord I run to my window",
+        "All I do is ring my hands and mourn",
+        "Well listen to that thunder roar",
+        "Can\u2019t you hear that lonesome wind moan",
+        "Tell me baby now why you been gone so long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tell me baby now why you been gone so long",
+        "You been gone so long now",
+        "Tell me baby now why you been gone so long",
+        "Wolfs scratchin at my door lord Lord",
+        "I can hear that lonesome wind blow",
+        "Tell me baby now why you been gone so long"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well someone said they thought they saw you rollin down in Reno",
+        "With a big ol man  from San Antone",
+        "They tell me I\u2019m a fool to pine for you oh what do they know",
+        "Tell me baby now why you been gone so long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ain\u2019t nothin I want to do lord",
+        "So I guess I could get stoned",
+        "And let the past paint pictures in my head",
+        "Drink a fifth of thunderbird and try to write a sad sad song",
+        "Tell my baby now why you been gone so long"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

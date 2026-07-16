@@ -1,0 +1,39 @@
+{
+  "slug": "i-like-the-christian-life",
+  "title": "I Like The Christian Life",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-like-the-christian-life/",
+  "raw_lyrics": "My buddies tell me that I should have waited\nThey say I\u2019m missing a whole world of fun\nBut I am happy and I sing with pride\nI like the christian life\n\nI won\u2019t lose a friends by heeding God\u2019s call\nFor what is a friend who\u2019d want me to fall\nOtheres find pleasure in things I despise\nI like the christian life\n\nMy buddies shun me since I turned to Jesus\nBut I am happy though it burdens my soul\nAnd I\u2019ll try to lead them to walk in the night\nI like the christian life",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My buddies tell me that I should have waited",
+        "They say I\u2019m missing a whole world of fun",
+        "But I am happy and I sing with pride",
+        "I like the christian life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I won\u2019t lose a friends by heeding God\u2019s call",
+        "For what is a friend who\u2019d want me to fall",
+        "Otheres find pleasure in things I despise",
+        "I like the christian life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My buddies shun me since I turned to Jesus",
+        "But I am happy though it burdens my soul",
+        "And I\u2019ll try to lead them to walk in the night",
+        "I like the christian life"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

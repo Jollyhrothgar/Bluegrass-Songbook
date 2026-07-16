@@ -1,0 +1,11 @@
+id: look-for-me-ill-be-there
+title: Look For Me (I’ll Be There)
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/look-for-me-ill-be-there/
+      imported_at: '2026-02-08'

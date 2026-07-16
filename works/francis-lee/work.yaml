@@ -1,0 +1,11 @@
+id: francis-lee
+title: Francis Lee
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/francis-lee/
+      imported_at: '2026-02-08'

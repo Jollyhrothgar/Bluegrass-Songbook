@@ -1,0 +1,41 @@
+{
+  "slug": "kissing-is-crime",
+  "title": "Kissing Is Crime",
+  "source_url": "https://www.bluegrasslyrics.com/song/kissing-is-crime/",
+  "raw_lyrics": "I know a little girl and I want her for my wife\nShe\u2019s pretty and sweet neat little feet and never been kissed in her life\nYou can ask her for a kiss she said oh what a bore\nEvery time she bows and declares she\u2019ll never do so anymore\nBorn to be a better girl and never kiss again\nAfraid my ma might find it out and cause her great pain\nYou may walk and talk and hold my hand but kissing is a crime\nI\u2019ll not kiss you anymore until next time\n\nI called at her house one night but I didn\u2019t intend to stay\nShe laid her head on my shoulder and said the old folks are away\nI kissed her a dozen times and someone came to the door\nEvery time she bowed and declared she\u2019d never do so anymore\n\nShe\u2019ll see you too the door kiss and then goodnight\nEvery time she bows and declares she\u2019ll never do so any more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I know a little girl and I want her for my wife",
+        "She\u2019s pretty and sweet neat little feet and never been kissed in her life",
+        "You can ask her for a kiss she said oh what a bore",
+        "Every time she bows and declares she\u2019ll never do so anymore",
+        "Born to be a better girl and never kiss again",
+        "Afraid my ma might find it out and cause her great pain",
+        "You may walk and talk and hold my hand but kissing is a crime",
+        "I\u2019ll not kiss you anymore until next time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I called at her house one night but I didn\u2019t intend to stay",
+        "She laid her head on my shoulder and said the old folks are away",
+        "I kissed her a dozen times and someone came to the door",
+        "Every time she bowed and declared she\u2019d never do so anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019ll see you too the door kiss and then goodnight",
+        "Every time she bows and declares she\u2019ll never do so any more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

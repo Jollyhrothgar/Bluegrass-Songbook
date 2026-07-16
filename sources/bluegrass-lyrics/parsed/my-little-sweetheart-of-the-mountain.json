@@ -1,0 +1,39 @@
+{
+  "slug": "my-little-sweetheart-of-the-mountain",
+  "title": "My Little Sweetheart Of The Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-little-sweetheart-of-the-mountain/",
+  "raw_lyrics": "My little sweetheart of the mountains\nWith hair as red as anybody\u2019s\nAnd her lips as sweet as honey\nShe shines like the morning stars\n\nMeet me out in the Blue Ridge Mountains\nUnderneath the lonesome pine\nWe\u2019ll settle down up there forever\nMary Jane won\u2019t you be mine\n\nI\u2019m going back to North Carolina\nWhere the mountain tops are blue\nMary Jane you know I love you\nAnd I\u2019m coming back to you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My little sweetheart of the mountains",
+        "With hair as red as anybody\u2019s",
+        "And her lips as sweet as honey",
+        "She shines like the morning stars"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Meet me out in the Blue Ridge Mountains",
+        "Underneath the lonesome pine",
+        "We\u2019ll settle down up there forever",
+        "Mary Jane won\u2019t you be mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going back to North Carolina",
+        "Where the mountain tops are blue",
+        "Mary Jane you know I love you",
+        "And I\u2019m coming back to you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

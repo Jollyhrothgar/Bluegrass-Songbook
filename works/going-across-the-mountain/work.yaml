@@ -1,0 +1,11 @@
+id: going-across-the-mountain
+title: Going Across the Mountain
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/going-across-the-mountain/
+      imported_at: '2026-02-08'

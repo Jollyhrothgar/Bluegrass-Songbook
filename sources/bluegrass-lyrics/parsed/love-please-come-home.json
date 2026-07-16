@@ -1,0 +1,39 @@
+{
+  "slug": "love-please-come-home",
+  "title": "Love Please Come Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/love-please-come-home/",
+  "raw_lyrics": "As you read this letter that I write to you\nSweetheart I hope you understand\nThat you\u2019re the only love I knew\nPlease forgive me if you can\n\nSweetheart I beg you to come home tonight\nI\u2019m so blue and all alone\nI promise that I\u2019ll treat you right\nLove, oh love oh please come home\n\nThat old wind is cold and slowly creeping \u2019round\nAnd the fire is burning low\nThe snow has covered up the ground\nYour baby\u2019s hungry sick and cold",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As you read this letter that I write to you",
+        "Sweetheart I hope you understand",
+        "That you\u2019re the only love I knew",
+        "Please forgive me if you can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Sweetheart I beg you to come home tonight",
+        "I\u2019m so blue and all alone",
+        "I promise that I\u2019ll treat you right",
+        "Love, oh love oh please come home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That old wind is cold and slowly creeping \u2019round",
+        "And the fire is burning low",
+        "The snow has covered up the ground",
+        "Your baby\u2019s hungry sick and cold"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

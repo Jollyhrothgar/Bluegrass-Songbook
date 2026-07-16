@@ -1,0 +1,49 @@
+{
+  "slug": "trouble-in-mind",
+  "title": "Trouble In Mind",
+  "source_url": "https://www.bluegrasslyrics.com/song/trouble-in-mind/",
+  "raw_lyrics": "Trouble in mind I\u2019m blue\nBut I won\u2019t be blue always\n\u2018Cause the sun\u2019s gonna shine\nOn my back door someday\n\nI\u2019m gonna lay down my head\nOn some lonesome railroad line\nAnd let the two-nineteen\nEase my troubled mind\n\nI\u2019m goin\u2019 down the river\nGonna take my rockin\u2019 chair\nAnd if them blues don\u2019t leave me\nI\u2019ll rock right out of here\n\nI\u2019m all alone at midnight\nAnd the lamp is burnin\u2019 low\nI\u2019ve never had so much\nTrouble in my life",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Trouble in mind I\u2019m blue",
+        "But I won\u2019t be blue always",
+        "\u2018Cause the sun\u2019s gonna shine",
+        "On my back door someday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m gonna lay down my head",
+        "On some lonesome railroad line",
+        "And let the two-nineteen",
+        "Ease my troubled mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m goin\u2019 down the river",
+        "Gonna take my rockin\u2019 chair",
+        "And if them blues don\u2019t leave me",
+        "I\u2019ll rock right out of here"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m all alone at midnight",
+        "And the lamp is burnin\u2019 low",
+        "I\u2019ve never had so much",
+        "Trouble in my life"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

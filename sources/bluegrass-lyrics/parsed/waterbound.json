@@ -1,0 +1,69 @@
+{
+  "slug": "waterbound",
+  "title": "Waterbound",
+  "source_url": "https://www.bluegrasslyrics.com/song/waterbound/",
+  "raw_lyrics": "I went late one night\nThe moon and stars were shining bright\nStorm come up and the trees come down\nTell you boys I was waterbound\n\nWaterbound on a stranger\u2019s shore\nRiver rising to my door\nCarried my home to the field below\nWaterbound nowhere to go\n\nCarved my name on an old barn wall\nNo one\u2019d know I was there at all\nStables dry on a winter night\nYou turn your head you could see the light\n\nBlack cat crawling on an old box car\nRusty door and a falling star\nAin\u2019t Got a dime in my rations sack\nWaterbound and I can\u2019t get back\n\nIt\u2019s I\u2019m gone and I won\u2019t be back\nDon\u2019t believe me count my tracks\nRiver\u2019s long and the river\u2019s wide\nI\u2019ll meet you boys on the other side\n\nSo say my name and don\u2019t forget\nWater still ain\u2019t got me yet\nNothing but I\u2019m bound to roam\nWaterbound and I can\u2019t get home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I went late one night",
+        "The moon and stars were shining bright",
+        "Storm come up and the trees come down",
+        "Tell you boys I was waterbound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Waterbound on a stranger\u2019s shore",
+        "River rising to my door",
+        "Carried my home to the field below",
+        "Waterbound nowhere to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Carved my name on an old barn wall",
+        "No one\u2019d know I was there at all",
+        "Stables dry on a winter night",
+        "You turn your head you could see the light"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Black cat crawling on an old box car",
+        "Rusty door and a falling star",
+        "Ain\u2019t Got a dime in my rations sack",
+        "Waterbound and I can\u2019t get back"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s I\u2019m gone and I won\u2019t be back",
+        "Don\u2019t believe me count my tracks",
+        "River\u2019s long and the river\u2019s wide",
+        "I\u2019ll meet you boys on the other side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So say my name and don\u2019t forget",
+        "Water still ain\u2019t got me yet",
+        "Nothing but I\u2019m bound to roam",
+        "Waterbound and I can\u2019t get home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

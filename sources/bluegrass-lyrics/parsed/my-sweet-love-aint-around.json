@@ -1,0 +1,59 @@
+{
+  "slug": "my-sweet-love-aint-around",
+  "title": "My Sweet Love Ain\u2019t  Around",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-sweet-love-aint-around/",
+  "raw_lyrics": "Listen to the rain a fallin\u2019\nCan\u2019t you hear that lonesome sound\nOh my poor old heart is breakin\u2019\nCause my sweet love ain\u2019t around\n\nI spent the night out lookin\u2019 for her\nHer friends gave me the run around\nI\u2019ll go crazy here without her\nCause my sweet love ain\u2019t around\n\nLord I think i\u2019ll start to ramble\nGot to leave this weary town\nThis old place is way to lonely\nCause my sweet love ain\u2019t around\n\nBabies gone what\u2019s there to live for\nMy whole world has tumbled down\nMy hopes and dreams have all been shattered\nCause my sweet love ain\u2019t around\n\nHold that train tonight i\u2019m leaving\nAnd don\u2019t ask me where i\u2019m bound\nI can\u2019t stay here any longer\nCause my sweet love ain\u2019t around",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Listen to the rain a fallin\u2019",
+        "Can\u2019t you hear that lonesome sound",
+        "Oh my poor old heart is breakin\u2019",
+        "Cause my sweet love ain\u2019t around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I spent the night out lookin\u2019 for her",
+        "Her friends gave me the run around",
+        "I\u2019ll go crazy here without her",
+        "Cause my sweet love ain\u2019t around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lord I think i\u2019ll start to ramble",
+        "Got to leave this weary town",
+        "This old place is way to lonely",
+        "Cause my sweet love ain\u2019t around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Babies gone what\u2019s there to live for",
+        "My whole world has tumbled down",
+        "My hopes and dreams have all been shattered",
+        "Cause my sweet love ain\u2019t around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hold that train tonight i\u2019m leaving",
+        "And don\u2019t ask me where i\u2019m bound",
+        "I can\u2019t stay here any longer",
+        "Cause my sweet love ain\u2019t around"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

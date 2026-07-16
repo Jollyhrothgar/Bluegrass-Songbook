@@ -1,0 +1,59 @@
+{
+  "slug": "wishing-waltz",
+  "title": "Wishing Waltz",
+  "source_url": "https://www.bluegrasslyrics.com/song/wishing-waltz/",
+  "raw_lyrics": "The wedding bells chimed  for somebody else\nI wish they were ringing for me\nAnd though I was hopin\u2019 someday you\u2019d be mine\nI guess that it never can be\n\nWishing wishing never again to be lonely\nWaiting praying you know that I love you only so\n\nWhen you are laughing with somebody else\nYou know I\u2019ll be cryin\u2019 for you\nI may be smilin\u2019 to cover my tears\nWhile waltzing with somebody new\nAnd wishing that someone was you\n\nI\u2019m waltzing with somebody else in my arms\nBut you\u2019re still the one in my heart\nI\u2019m always dreamin\u2019 of our used to be\nWishing we had a new start\n\nI keep on wishing and hoping you\u2019ll find\nThat I am the right one for you\nI may be waltzing with somebody else\nBut darlin\u2019 I\u2019ll always be true\n\u2018Til I\u2019m wishing and waltzing with you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The wedding bells chimed  for somebody else",
+        "I wish they were ringing for me",
+        "And though I was hopin\u2019 someday you\u2019d be mine",
+        "I guess that it never can be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wishing wishing never again to be lonely",
+        "Waiting praying you know that I love you only so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you are laughing with somebody else",
+        "You know I\u2019ll be cryin\u2019 for you",
+        "I may be smilin\u2019 to cover my tears",
+        "While waltzing with somebody new",
+        "And wishing that someone was you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m waltzing with somebody else in my arms",
+        "But you\u2019re still the one in my heart",
+        "I\u2019m always dreamin\u2019 of our used to be",
+        "Wishing we had a new start"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I keep on wishing and hoping you\u2019ll find",
+        "That I am the right one for you",
+        "I may be waltzing with somebody else",
+        "But darlin\u2019 I\u2019ll always be true",
+        "\u2018Til I\u2019m wishing and waltzing with you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

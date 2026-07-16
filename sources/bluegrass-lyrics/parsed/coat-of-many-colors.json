@@ -1,0 +1,79 @@
+{
+  "slug": "coat-of-many-colors",
+  "title": "Coat Of Many Colors",
+  "source_url": "https://www.bluegrasslyrics.com/song/coat-of-many-colors/",
+  "raw_lyrics": "Back through the years I go wandering once again\nBack to the seasons of my youth\nI recall a box of rags that someone gave us\nAnd how my mama put those rags to use\n\nThere were rags of many colors and every piece was small\nAnd I didn\u2019t have a coat and it was way down in the fall\nMama sewed the rags together sewin\u2019 every piece with love\nShe made my coat of many colors that I was so proud of\n\nWhen she sewed she told a story from the Bible she had read\n\u2018Bout a coat of many colors Joseph wore again\nshe said Perhaps this coat will bring you good luck and happiness\nAnd I just couldn\u2019t wait to wear it Mama blessed it with a kiss\n\nA coat of many colors that my mama made for me\nMade only from rags but I wore it so proudly\nI know we had no money but I was rich as I could be\nWith my coat of many colors that my mama made for me\n\nNow with patches in my britches and holes in both my shoes\nIn my coat of many colors I hurried off to school\nJust to find the others laughin\u2019 and makin\u2019 fun of me\nIn my coat of many colors my mama made for me\n\nNow I did not understand it for I felt almost rich\nAnd I told them of the love my mama sewed in every stitch\nThen I told them all the stories mama told me while she sewed\nHow my coat of many colors was worth more than all their clothes\n\nThey did not understand it though I tried to make them see\nThat one is only poor if they choose to be\nI know we had no money but I was rich as I could be\nIn my coat of many colors my mama made for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Back through the years I go wandering once again",
+        "Back to the seasons of my youth",
+        "I recall a box of rags that someone gave us",
+        "And how my mama put those rags to use"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There were rags of many colors and every piece was small",
+        "And I didn\u2019t have a coat and it was way down in the fall",
+        "Mama sewed the rags together sewin\u2019 every piece with love",
+        "She made my coat of many colors that I was so proud of"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When she sewed she told a story from the Bible she had read",
+        "\u2018Bout a coat of many colors Joseph wore again",
+        "she said Perhaps this coat will bring you good luck and happiness",
+        "And I just couldn\u2019t wait to wear it Mama blessed it with a kiss"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "A coat of many colors that my mama made for me",
+        "Made only from rags but I wore it so proudly",
+        "I know we had no money but I was rich as I could be",
+        "With my coat of many colors that my mama made for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now with patches in my britches and holes in both my shoes",
+        "In my coat of many colors I hurried off to school",
+        "Just to find the others laughin\u2019 and makin\u2019 fun of me",
+        "In my coat of many colors my mama made for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I did not understand it for I felt almost rich",
+        "And I told them of the love my mama sewed in every stitch",
+        "Then I told them all the stories mama told me while she sewed",
+        "How my coat of many colors was worth more than all their clothes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They did not understand it though I tried to make them see",
+        "That one is only poor if they choose to be",
+        "I know we had no money but I was rich as I could be",
+        "In my coat of many colors my mama made for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

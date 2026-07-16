@@ -1,0 +1,59 @@
+{
+  "slug": "when-the-bees-are-in-the-hive",
+  "title": "When The Bees Are In The Hive",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-bees-are-in-the-hive/",
+  "raw_lyrics": "By the mill stream sits the Miller\u2019s pretty daughter\nHer cheeks are like the first red rose of June\nHer sweet voice sounds just like the rippling water\nAs so tenderly she hums an old love tune\n\nBut soon her song of joy has turned to sorrow\nHer sweetheart now has come to say goodbye\nShe thinks of a sad and lonely morrow\nAnd he hugs her as she murmers with a sigh\n\nWhen the bees are in the hive and the honey in the comb\nAnd the golden sunlight bends to kiss the dew\nWhile the old mill wheel turns \u2019round I love you Mary\nAnd when the bees are in the hive I\u2019ll come to you\n\nBy the old mill sits the lonely maid repining\nAnd her face was like the spring rose far away\nWhile she looked down in the silver waters shining\nAnd she sees her golden locks are dimmed with grey\n\nLong years she\u2019s waited there for his returning\nAll in vain she\u2019s thinking he\u2019ll come back someday\nFor the lamp of hope still in her heart is burning\nAs the old mill wheel turns \u2019round it seems to say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "By the mill stream sits the Miller\u2019s pretty daughter",
+        "Her cheeks are like the first red rose of June",
+        "Her sweet voice sounds just like the rippling water",
+        "As so tenderly she hums an old love tune"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But soon her song of joy has turned to sorrow",
+        "Her sweetheart now has come to say goodbye",
+        "She thinks of a sad and lonely morrow",
+        "And he hugs her as she murmers with a sigh"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the bees are in the hive and the honey in the comb",
+        "And the golden sunlight bends to kiss the dew",
+        "While the old mill wheel turns \u2019round I love you Mary",
+        "And when the bees are in the hive I\u2019ll come to you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "By the old mill sits the lonely maid repining",
+        "And her face was like the spring rose far away",
+        "While she looked down in the silver waters shining",
+        "And she sees her golden locks are dimmed with grey"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Long years she\u2019s waited there for his returning",
+        "All in vain she\u2019s thinking he\u2019ll come back someday",
+        "For the lamp of hope still in her heart is burning",
+        "As the old mill wheel turns \u2019round it seems to say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

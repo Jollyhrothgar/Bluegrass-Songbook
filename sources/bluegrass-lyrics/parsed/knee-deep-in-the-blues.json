@@ -1,0 +1,39 @@
+{
+  "slug": "knee-deep-in-the-blues",
+  "title": "Knee Deep In The Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/knee-deep-in-the-blues/",
+  "raw_lyrics": "I\u2019ve just been thinkin\u2019 things over\nMy heart is swollen with tears\nMy life just don\u2019t seem worth livin\u2019\nAnd it\u2019s been that way for years\n\nMy skys above turned to gray now\nAnd I just walked the soles off my shoes\nI don\u2019t have too much to say now\nI\u2019m just knee deep in the blues\n\nDon\u2019t ask me why I\u2019m cryin\u2019\nCause I have lost about all I can lose\nWell there\u2019s just no use in tryin\u2019\nI\u2019m just knee deep in the blues",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve just been thinkin\u2019 things over",
+        "My heart is swollen with tears",
+        "My life just don\u2019t seem worth livin\u2019",
+        "And it\u2019s been that way for years"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My skys above turned to gray now",
+        "And I just walked the soles off my shoes",
+        "I don\u2019t have too much to say now",
+        "I\u2019m just knee deep in the blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t ask me why I\u2019m cryin\u2019",
+        "Cause I have lost about all I can lose",
+        "Well there\u2019s just no use in tryin\u2019",
+        "I\u2019m just knee deep in the blues"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

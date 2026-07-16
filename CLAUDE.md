@@ -1,6 +1,6 @@
 # Bluegrass Songbook
 
-A searchable collection of 17,000+ bluegrass and country songs with chords, built for the bluegrass community.
+A searchable collection of 18,300+ bluegrass and country songs with chords, built for the bluegrass community.
 
 ## Quick Start
 
@@ -11,6 +11,19 @@ A searchable collection of 17,000+ bluegrass and country songs with chords, buil
 ./scripts/utility refresh-tags       # Refresh tags from MusicBrainz (local only)
 ./scripts/utility build-posts        # Build blog posts manifest
 ```
+
+## CRITICAL: Cost Controls
+
+**NEVER submit paid API calls without explicit user confirmation.** This includes:
+- Anthropic batch API (LLM tagging)
+- Strum Machine API (if it ever becomes paid)
+- Any other external paid service
+
+Always:
+1. Show the cost estimate with breakdown (token counts, rates, total)
+2. Give the user a chance to validate the calculation - cost estimates can have bugs
+3. Ask for explicit permission to proceed
+4. Wait for clear "yes" before submitting - don't auto-submit
 
 ## Development Practices
 
@@ -85,7 +98,7 @@ git worktree remove ../feature-xyz
 
 ```
 Bluegrass-Songbook/
-├── works/                   # PRIMARY: Song collection (17,650+ works)
+├── works/                   # PRIMARY: Song collection (18,300+ works)
 │   └── {work-slug}/         # e.g., "blue-moon-of-kentucky"
 │       ├── work.yaml        # Metadata: title, artist, tags, parts
 │       └── lead-sheet.pro   # ChordPro lead sheet
@@ -99,6 +112,9 @@ Bluegrass-Songbook/
 │   │   ├── search-core.js   # Search logic
 │   │   ├── song-view.js     # Song rendering
 │   │   ├── work-view.js     # Work display with parts/tabs
+│   │   ├── chord-explorer/  # Interactive chord progression builder
+│   │   ├── bounty-view.js   # Bounty/voting system
+│   │   ├── add-song-picker.js # Song selection interface
 │   │   └── renderers/       # Tablature renderers
 │   │       ├── tablature.js # Tab display
 │   │       └── tab-player.js # Interactive tab player
@@ -114,7 +130,10 @@ Bluegrass-Songbook/
 │   ├── manual/              # Hand-created songs
 │   ├── tunearch/            # ABC fiddle tunes
 │   ├── banjo-hangout/       # Banjo tabs from Banjo Hangout (TEF→OTF)
-│   ├── bluegrass-lyrics/    # Additional lyrics source
+│   ├── bluegrass-lyrics/    # 764 songs from BluegrassLyrics.com (Feb 2026)
+│   ├── ultimate-guitar/     # Chord enrichment via UG Mobile API
+│   ├── web-chords/          # 325 songs from chord websites (raw, not yet parsed)
+│   ├── traditional-music-uk/ # Chord data from traditionalmusic.co.uk
 │   └── tef-uploads/         # User-uploaded TEF files for conversion
 │
 ├── scripts/                 # CLI tools
@@ -187,7 +206,15 @@ The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 | **Parser** | `sources/classic-country/src/` | `sources/classic-country/src/CLAUDE.md` |
 | **Banjo Hangout tabs** | `sources/banjo-hangout/` | `sources/banjo-hangout/CLAUDE.md` |
 | **Build pipeline** | `scripts/lib/` | `scripts/lib/CLAUDE.md` |
+| **ChordPro syntax** | `.claude/skills/chordpro/` | `SKILL.md` (auto-invoked) |
+| **GitHub project** | `.claude/skills/github-project/` | `SKILL.md` (milestones, issues, labels) |
+| **TEF/Tab debugging** | `.claude/skills/tab-debug/` | `SKILL.md` (TEF parsing issues) |
+| **Issue creation** | `.claude/skills/add-issue/` | `SKILL.md` (duplicate detection, labels) |
+| **Chord Explorer** | `docs/js/chord-explorer/` | `docs/js/chord-explorer/CLAUDE.md` |
 | **Backend (Supabase)** | `supabase/`, `docs/js/supabase-auth.js` | `supabase/CLAUDE.md` |
+| **Analytics** | `analytics/` | `analytics/CLAUDE.md` |
+| **E2E Tests** | `e2e/` | `e2e/CLAUDE.md` |
+| **Python Tests** | `tests/` | `tests/CLAUDE.md` |
 
 ### Project Skills (`.claude/skills/`)
 
@@ -305,9 +332,12 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 | Workflow | Trigger | Action |
 |----------|---------|--------|
-| `build.yml` | Push to main, PRs | Runs tests; deploys to GitHub Pages only if tests pass |
+| `build.yml` | Push to main, PRs | Runs tests, rebuilds search index, deploys to GitHub Pages only if tests pass |
 | `process-song-submission.yml` | Issue labeled `song-submission` + `approved` | Adds new song |
 | `process-song-correction.yml` | Issue labeled `song-correction` + `approved` | Updates existing song |
+| `process-tune-request.yml` | Issue labeled `tune-request` | Processes tune requests |
+| `auto-label-issues.yml` | New issues | Automatically labels issues |
+| `cleanup-pending.yml` | Scheduled | Cleans up stale pending songs |
 
 ## Chrome DevTools MCP
 
@@ -322,25 +352,35 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 
 ## Current State
 
-- **17,650+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
+- **18,300+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
 - **Works system**: Each song is a "work" with multiple parts (lead sheet, tablature, ABC notation)
 - **Tablature**: Banjo Hangout tabs with TEF→OTF parsing, playback, track mixer for multi-instrument arrangements
-- **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - 93% coverage via MusicBrainz + grassiness scoring
+- **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - primary source is LLM tagging, with MusicBrainz and grassiness scoring as fallbacks
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
 - **Song versions**: Multiple arrangements with voting (infrastructure ready)
 - **URL stability**: Work URLs (`#work/{slug}`) are permanent; legacy `#song/{id}` URLs redirect
 
-**Recent additions (Jan 2026):**
+**Recent additions (Jan-Feb 2026):**
+- **Trusted user editing**: Trusted users can make instant edits without approval
+- **Super-user requests**: Regular users can request trusted status via GitHub issue
+- **LLM tagging**: Primary tag source using Claude batch API
+- **Tag voting**: Trusted users can override incorrect tags
+- **Legacy ID migration**: Song IDs migrated from filename-based to work slugs
 - **Strum Machine integration**: 605+ songs with practice backing tracks
 - **Quick controls bar**: One-click access to key/size/layout during practice
 - **Focus mode**: Distraction-free full-screen song view
 - **Covering artists**: Shows which bluegrass legends recorded each song
 - **Multi-owner lists**: Collaborative list curation with follow/unfollow
-- **Thunderdome**: Claim abandoned lists from inactive users
+- **Thunderdome**: Claim abandoned lists (now 1 year inactivity threshold)
 - **Frictionless feedback**: Report issues and request songs without GitHub account
 - **Submitter attribution**: Tracks who submitted content ("Rando Calrissian" for anonymous)
 
 **What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
+
+**Recent (Feb 2026):**
+- **BluegrassLyrics.com import**: 764 songs imported (494 with chords from UG enrichment, 270 lyrics-only). See `sources/bluegrass-lyrics/CLAUDE.md` and `sources/ultimate-guitar/CLAUDE.md`.
+- **Strum Machine matching**: 764 total songs now matched (+147 from BL import)
+- **LLM tagging**: All new songs tagged with genre tags via Anthropic batch API
 
 ## File Navigation
 
@@ -350,11 +390,14 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | Work with tablature/renderers | `docs/js/renderers/` + `docs/js/work-view.js` |
 | Build the OTF editor | `docs/js/otf-editor/DESIGN.md` |
 | Modify homepage collections | `docs/js/collections.js` |
+| Build chord progressions | `docs/js/chord-explorer/` + `docs/js/chord-explorer/CLAUDE.md` |
 | Understand works structure | `works/` + `scripts/lib/work_schema.py` |
 | Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |
 | Debug TEF/tablature parsing | `.claude/skills/tab-debug/SKILL.md` |
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
 | Understand grassiness scoring | `scripts/lib/tagging/CLAUDE.md` |
+| BluegrassLyrics.com import | `sources/bluegrass-lyrics/CLAUDE.md` |
+| Ultimate Guitar chord scraper | `sources/ultimate-guitar/CLAUDE.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
@@ -364,5 +407,5 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | See product vision | `ROADMAP.md` |
 | Run parser tests | `uv run pytest` |
 | Run frontend tests | `npm test` |
-| Run E2E tests | `npm run test:e2e` |
-| Debug in browser | Chrome DevTools MCP (see below) |
+| Run E2E tests | `npm run test:e2e` (see `e2e/CLAUDE.md`) |
+| Debug in browser | Chrome DevTools MCP (`./scripts/chrome` launches a debug browser with saved login) |

@@ -1,0 +1,39 @@
+{
+  "slug": "memories-of-the-past",
+  "title": "Memories Of The Past",
+  "source_url": "https://www.bluegrasslyrics.com/song/memories-of-the-past/",
+  "raw_lyrics": "I can\u2019t forget you little darlin\u2019\nEach night you\u2019re always in my dreams\nYour face is always here before me\nOn thru the years with you I\u2019ll dream\n\nHow we used to love each other\nIt\u2019s just memories of the past\nI should have known you were false hearted\nThat our love would never last\n\nEach night I go down to the bar room\nThere I\u2019ll drink the warm red wine\nAnd I\u2019ll play the lonesome jukebox\nFor your love is on my mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t forget you little darlin\u2019",
+        "Each night you\u2019re always in my dreams",
+        "Your face is always here before me",
+        "On thru the years with you I\u2019ll dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How we used to love each other",
+        "It\u2019s just memories of the past",
+        "I should have known you were false hearted",
+        "That our love would never last"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each night I go down to the bar room",
+        "There I\u2019ll drink the warm red wine",
+        "And I\u2019ll play the lonesome jukebox",
+        "For your love is on my mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

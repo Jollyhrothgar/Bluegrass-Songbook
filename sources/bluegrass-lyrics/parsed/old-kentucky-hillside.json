@@ -1,0 +1,49 @@
+{
+  "slug": "old-kentucky-hillside",
+  "title": "Old Kentucky Hillside",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-kentucky-hillside/",
+  "raw_lyrics": "There\u2019s an old oak tree near the top of the hill\nAnd an old stone chimney close beside\nAll that\u2019s left to mark the years Of the toil sweat and tears\nThat we shed on this old kentucky hillside\n\nGoin back in memory to the top of the hill\nI hear the wind a blowin through the oak tree with a sigh\nI see the children as the play i hear mom and dad pray\nGiving thanks to that old Kentucky hillside\n\nThat old kentucky hillside farm\nWhere mommy and daddy now lie\nThe only crop we ever raised daddy said before he died\nWas the children raised on this old kentucky hillside\n\nAt last I return to the top of the hill\nAnd tears of happiness filled my eyes\nHere my children will be raised and God forever praised\nI\u2019d give everything for this old Kentucky hillside",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s an old oak tree near the top of the hill",
+        "And an old stone chimney close beside",
+        "All that\u2019s left to mark the years Of the toil sweat and tears",
+        "That we shed on this old kentucky hillside"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goin back in memory to the top of the hill",
+        "I hear the wind a blowin through the oak tree with a sigh",
+        "I see the children as the play i hear mom and dad pray",
+        "Giving thanks to that old Kentucky hillside"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "That old kentucky hillside farm",
+        "Where mommy and daddy now lie",
+        "The only crop we ever raised daddy said before he died",
+        "Was the children raised on this old kentucky hillside"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "At last I return to the top of the hill",
+        "And tears of happiness filled my eyes",
+        "Here my children will be raised and God forever praised",
+        "I\u2019d give everything for this old Kentucky hillside"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

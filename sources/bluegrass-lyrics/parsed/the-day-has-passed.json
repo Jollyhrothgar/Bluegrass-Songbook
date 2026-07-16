@@ -1,0 +1,39 @@
+{
+  "slug": "the-day-has-passed",
+  "title": "The Day Has Passed",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-day-has-passed/",
+  "raw_lyrics": "Don\u2019t you know the day has passed and now it\u2019s time for sleep\nOr won\u2019t your weary heart let you rest\nDon\u2019t you know the day has passed into a darkness deep\nWhy do you clutch that picture to your breast?\n\nOh this picture holds a memory of a better time\nOne that seemed so very long ago\nAs I kneel down by my besdide and begin to pray\nI sometimes wonder why\n\nBut you\u2019re right and it\u2019s getting late and time for me to part\nAs I felt the teardrop well into my eye\nTo see the old man leaving with a broken heart\nWith a picture of my mother by her side.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t you know the day has passed and now it\u2019s time for sleep",
+        "Or won\u2019t your weary heart let you rest",
+        "Don\u2019t you know the day has passed into a darkness deep",
+        "Why do you clutch that picture to your breast?"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh this picture holds a memory of a better time",
+        "One that seemed so very long ago",
+        "As I kneel down by my besdide and begin to pray",
+        "I sometimes wonder why"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But you\u2019re right and it\u2019s getting late and time for me to part",
+        "As I felt the teardrop well into my eye",
+        "To see the old man leaving with a broken heart",
+        "With a picture of my mother by her side."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

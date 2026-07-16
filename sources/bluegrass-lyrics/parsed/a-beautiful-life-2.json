@@ -1,0 +1,59 @@
+{
+  "slug": "a-beautiful-life-2",
+  "title": "A Beautiful Life",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-beautiful-life-2/",
+  "raw_lyrics": "Each day I\u2019ll do a golden deed\nBy helping those who are in need\nMy life on earth is but a span\nAnd so I\u2019ll do the best I can\n\nLife\u2019s evening sun is sinking low\nA few more days and I must go\nTo meet the deeds that I have done\nWhere there will be no setting sun\n\nTo be a child of God each day\nMy life must shine along the way\nI\u2019ll sing His praise while the ages roll\nAnd strive to help some troubled soul\n\nWhile going down life\u2019s weary road\nI\u2019ll try to lift some traveler\u2019s load\nI\u2019ll try to turn the night to day\nMake flowers bloom along the way\n\nThe only life that will endure\nIs one that\u2019s kind and good and pure\nAnd so for God, I\u2019ll take my stand\nEach day I\u2019ll lend a helping hand",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Each day I\u2019ll do a golden deed",
+        "By helping those who are in need",
+        "My life on earth is but a span",
+        "And so I\u2019ll do the best I can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Life\u2019s evening sun is sinking low",
+        "A few more days and I must go",
+        "To meet the deeds that I have done",
+        "Where there will be no setting sun"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "To be a child of God each day",
+        "My life must shine along the way",
+        "I\u2019ll sing His praise while the ages roll",
+        "And strive to help some troubled soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While going down life\u2019s weary road",
+        "I\u2019ll try to lift some traveler\u2019s load",
+        "I\u2019ll try to turn the night to day",
+        "Make flowers bloom along the way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The only life that will endure",
+        "Is one that\u2019s kind and good and pure",
+        "And so for God, I\u2019ll take my stand",
+        "Each day I\u2019ll lend a helping hand"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

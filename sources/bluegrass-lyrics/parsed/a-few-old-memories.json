@@ -1,0 +1,39 @@
+{
+  "slug": "a-few-old-memories",
+  "title": "A Few Old Memories",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-few-old-memories/",
+  "raw_lyrics": "Just a few old memories slipped in through my door\nThough I thought I had closed it so tightly before\nI can\u2019t understand it why it should bother my mind\nFor it all belongs to another place in time\n\nJust a few old keepsakes way back on the shelf\nNo they don\u2019t mean nothing I\u2019m surprised that they\u2019re left\nJust a few old love letters with their edges all brown\nAnd an old faded picture I keep turned upside down\n\nJust a few old memories going way back in time\nWell I can hardly remember I don\u2019t know why I\u2019m crying\nI can\u2019t understand it well I\u2019m surprised at my self\nFirst thing tomorrow morning I\u2019ll clean off that shelf",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just a few old memories slipped in through my door",
+        "Though I thought I had closed it so tightly before",
+        "I can\u2019t understand it why it should bother my mind",
+        "For it all belongs to another place in time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Just a few old keepsakes way back on the shelf",
+        "No they don\u2019t mean nothing I\u2019m surprised that they\u2019re left",
+        "Just a few old love letters with their edges all brown",
+        "And an old faded picture I keep turned upside down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a few old memories going way back in time",
+        "Well I can hardly remember I don\u2019t know why I\u2019m crying",
+        "I can\u2019t understand it well I\u2019m surprised at my self",
+        "First thing tomorrow morning I\u2019ll clean off that shelf"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

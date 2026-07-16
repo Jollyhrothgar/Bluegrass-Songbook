@@ -1,19 +1,14 @@
 id: waltz-of-the-wind
-title: Waltz Of The Wind
-artist: Hank Williams
-composers:
-- Fred Rose
+title: "Waltz Of The Wind"
+artist: "Hank Williams"
+composers: [Fred Rose]
 default_key: C
-tags:
-- HonkyTonk
-- ClassicCountry
-- JamFriendly
+tags: []
 parts:
-- type: lead-sheet
-  format: chordpro
-  file: lead-sheet.pro
-  default: true
-  provenance:
-    source: classic-country
-    source_file: waltzofthewindlyricschords.pro
-    imported_at: '2026-01-02'
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: trusted-user
+      imported_at: '2026-02-01'

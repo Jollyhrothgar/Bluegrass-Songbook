@@ -1,0 +1,39 @@
+{
+  "slug": "dont-give-your-heart-to-a-rambler",
+  "title": "Don\u2019t Give Your Heart To A Rambler",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-give-your-heart-to-a-rambler/",
+  "raw_lyrics": "Don\u2019t fall in love with me darling I\u2019m a rambler\nAlthough you\u2019re the sweetest sweetheart in this world\nIt\u2019s all for your sake dear that I\u2019m leaving\nDon\u2019t give your heart to a rambler, little girl\n\nI handed you a line dear and I\u2019m sorry\nYou\u2019re just a little sweeter that the rest\nBelieve me when I say I don\u2019t want to hurt you\nOr do anything to mar our happiness\n\nIf I\u2019d never had the blues, little darling\nOr the lure of the road, dear on my mind\nBut I\u2019m bound to hear the whistle of a freight train\nAnd the boxcars as they rattle down the line",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t fall in love with me darling I\u2019m a rambler",
+        "Although you\u2019re the sweetest sweetheart in this world",
+        "It\u2019s all for your sake dear that I\u2019m leaving",
+        "Don\u2019t give your heart to a rambler, little girl"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I handed you a line dear and I\u2019m sorry",
+        "You\u2019re just a little sweeter that the rest",
+        "Believe me when I say I don\u2019t want to hurt you",
+        "Or do anything to mar our happiness"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I\u2019d never had the blues, little darling",
+        "Or the lure of the road, dear on my mind",
+        "But I\u2019m bound to hear the whistle of a freight train",
+        "And the boxcars as they rattle down the line"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

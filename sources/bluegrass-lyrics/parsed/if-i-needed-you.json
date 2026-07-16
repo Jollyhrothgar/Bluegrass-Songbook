@@ -1,0 +1,39 @@
+{
+  "slug": "if-i-needed-you",
+  "title": "If I Needed You",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-i-needed-you/",
+  "raw_lyrics": "If I needed you would you come to me\nWould you come to me for to ease my pain\nIf you needed me I could come to you\nI would swim the seas for to ease your pain\n\nWell the night\u2019s forlorn and the morning\u2019s born\nAnd the morning shines with the lights of love\nYou will miss sunrise if you close your eyes\nAnd that would break my heart in two\n\nThe lady\u2019s with me now since I showed her how\nTo lay her lily hand in mine\nLoop and Lil agree she\u2019s a sight to see\nAnd a treasure for the poor to find",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If I needed you would you come to me",
+        "Would you come to me for to ease my pain",
+        "If you needed me I could come to you",
+        "I would swim the seas for to ease your pain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the night\u2019s forlorn and the morning\u2019s born",
+        "And the morning shines with the lights of love",
+        "You will miss sunrise if you close your eyes",
+        "And that would break my heart in two"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The lady\u2019s with me now since I showed her how",
+        "To lay her lily hand in mine",
+        "Loop and Lil agree she\u2019s a sight to see",
+        "And a treasure for the poor to find"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

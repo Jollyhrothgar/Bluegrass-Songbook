@@ -1,14 +1,14 @@
 id: she-3
-title: She
-artist: Green Day
+title: "She"
+artist: "Green Day"
+composers: []
 default_key: G
-tags:
-- JamFriendly
+tags: []
 parts:
-- type: lead-sheet
-  format: chordpro
-  file: lead-sheet.pro
-  default: true
-  provenance:
-    source: manual
-    imported_at: '2026-01-02'
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: trusted-user
+      imported_at: '2026-02-01'

@@ -1,0 +1,39 @@
+{
+  "slug": "ashes-of-love",
+  "title": "Ashes Of Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/ashes-of-love/",
+  "raw_lyrics": "Ashes of love cold as ice\nYou made the debt and I\u2019ll pay the price\nOur love is gone there\u2019s no doubt\nAshes of love the flame burned out\n\nThe love light that gleamed in your eyes\nHas gone out to my surprise\nWe said goodbye my heart bled\nI can\u2019t revive our love, it\u2019s dead\n\nI trusted dear our love would stand\nYour every wish was my command\nMy heart tells me I must forget\nI loved you then I love yet",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Ashes of love cold as ice",
+        "You made the debt and I\u2019ll pay the price",
+        "Our love is gone there\u2019s no doubt",
+        "Ashes of love the flame burned out"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The love light that gleamed in your eyes",
+        "Has gone out to my surprise",
+        "We said goodbye my heart bled",
+        "I can\u2019t revive our love, it\u2019s dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I trusted dear our love would stand",
+        "Your every wish was my command",
+        "My heart tells me I must forget",
+        "I loved you then I love yet"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

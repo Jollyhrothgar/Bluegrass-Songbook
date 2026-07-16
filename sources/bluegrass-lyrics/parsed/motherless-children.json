@@ -1,0 +1,79 @@
+{
+  "slug": "motherless-children",
+  "title": "Motherless Children",
+  "source_url": "https://www.bluegrasslyrics.com/song/motherless-children/",
+  "raw_lyrics": "Motherless children have a hard time when their mother is dead\nMotherless children have a hard time when their mother is dead\nSee them wander from door to door\nLord, they\u2019ve got no place to go\nNobody loves you like your mother can, when your mother\u2019s dead\n\nFather will do the best he can when your mother\u2019s dead\nFather will do the best he can when your mother\u2019s dead\nFather will do the best he can\nSome things your father can\u2019t understand\nNobody loves you like your mother can, when your mother\u2019s dead\n\nWhen your mother\u2019s dead\nWhen your mother\u2019s dead, Lord\nNobody loves you like your mother can, when your mother\u2019s dead\n\nWhen your mother\u2019s dead\nWhen your mother\u2019s dead, Lord\nNobody loves you like your mother can, when your mother\u2019s dead\n\nSister will do the best she can when your mother\u2019s dead\nSister will do the best she can\nNo way she\u2019ll leave you for another man\nNobody loves you like your mother can, when your mother\u2019s dead\n\nWhen your mother\u2019s dead\nWhen your mother\u2019s dead, Lord\nNobody loves you like your mother can, when your mother\u2019s dead\n\nWhen your mother\u2019s dead\nWhen your mother\u2019s dead\nNobody wants you\nNobody needs you\nNobody loves you like your mother can, when your mother\u2019s dead",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Motherless children have a hard time when their mother is dead",
+        "Motherless children have a hard time when their mother is dead",
+        "See them wander from door to door",
+        "Lord, they\u2019ve got no place to go",
+        "Nobody loves you like your mother can, when your mother\u2019s dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Father will do the best he can when your mother\u2019s dead",
+        "Father will do the best he can when your mother\u2019s dead",
+        "Father will do the best he can",
+        "Some things your father can\u2019t understand",
+        "Nobody loves you like your mother can, when your mother\u2019s dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When your mother\u2019s dead",
+        "When your mother\u2019s dead, Lord",
+        "Nobody loves you like your mother can, when your mother\u2019s dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When your mother\u2019s dead",
+        "When your mother\u2019s dead, Lord",
+        "Nobody loves you like your mother can, when your mother\u2019s dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sister will do the best she can when your mother\u2019s dead",
+        "Sister will do the best she can",
+        "No way she\u2019ll leave you for another man",
+        "Nobody loves you like your mother can, when your mother\u2019s dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When your mother\u2019s dead",
+        "When your mother\u2019s dead, Lord",
+        "Nobody loves you like your mother can, when your mother\u2019s dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When your mother\u2019s dead",
+        "When your mother\u2019s dead",
+        "Nobody wants you",
+        "Nobody needs you",
+        "Nobody loves you like your mother can, when your mother\u2019s dead"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

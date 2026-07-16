@@ -1,0 +1,39 @@
+{
+  "slug": "darkest-hour-is-just-before-dawn-the",
+  "title": "Darkest Hour Is Just Before Dawn, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/darkest-hour-is-just-before-dawn-the/",
+  "raw_lyrics": "The darkest hour is just before dawn\nThe narrow way leads home\nLay down your soul at Jesus\u2019 feet\nThe darkest hour is just before dawn\n\nThe sun is slowly sinking\nThe day is almost gone\nStill darkness falls around us\nAnd we must journey on\n\nLike a shepherd out on the mountain\nA watching the sheep down below\nHe\u2019s coming back to claim us\nWill you be ready to go",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "The darkest hour is just before dawn",
+        "The narrow way leads home",
+        "Lay down your soul at Jesus\u2019 feet",
+        "The darkest hour is just before dawn"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sun is slowly sinking",
+        "The day is almost gone",
+        "Still darkness falls around us",
+        "And we must journey on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Like a shepherd out on the mountain",
+        "A watching the sheep down below",
+        "He\u2019s coming back to claim us",
+        "Will you be ready to go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

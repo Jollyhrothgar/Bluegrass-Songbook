@@ -1,0 +1,51 @@
+{
+  "slug": "sunshine-in-the-shadows",
+  "title": "Sunshine In The Shadows",
+  "source_url": "https://www.bluegrasslyrics.com/song/sunshine-in-the-shadows/",
+  "raw_lyrics": "When our hearts are bound in sorrow\nAnd it seems all help is gone\nJesus whispers do not falter\nI will lead you not alone\nThen somehow amidst my trials\nHow it is I cannot see\nThen I hear a voice from heaven\nGently saying follow me\n\nThere is sunshine in the shadows\nThere is sunshine in the rain\nThere is sunshine in our sorrows\nAnd our hearts are filled with pain\nThere is sunshine when we\u2019re burdened\nThere is sunshine when we pray\nThere is sunshine heavenly sunshine\nBlessed sunshine all the way\n\nSometimes my friends forsake me\nAnd I\u2019m tempted to despair\nThen I think of my dear savior\nTo lay his head he had no where\nOh it pays to follow Jesus\nJust to learn of him each day\nAnd I\u2019ll guarantee you my brothers\nYou\u2019ll have sunshine all the way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When our hearts are bound in sorrow",
+        "And it seems all help is gone",
+        "Jesus whispers do not falter",
+        "I will lead you not alone",
+        "Then somehow amidst my trials",
+        "How it is I cannot see",
+        "Then I hear a voice from heaven",
+        "Gently saying follow me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There is sunshine in the shadows",
+        "There is sunshine in the rain",
+        "There is sunshine in our sorrows",
+        "And our hearts are filled with pain",
+        "There is sunshine when we\u2019re burdened",
+        "There is sunshine when we pray",
+        "There is sunshine heavenly sunshine",
+        "Blessed sunshine all the way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes my friends forsake me",
+        "And I\u2019m tempted to despair",
+        "Then I think of my dear savior",
+        "To lay his head he had no where",
+        "Oh it pays to follow Jesus",
+        "Just to learn of him each day",
+        "And I\u2019ll guarantee you my brothers",
+        "You\u2019ll have sunshine all the way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

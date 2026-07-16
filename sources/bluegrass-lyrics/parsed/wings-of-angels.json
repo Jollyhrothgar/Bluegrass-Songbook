@@ -1,0 +1,39 @@
+{
+  "slug": "wings-of-angels",
+  "title": "Wings Of Angels",
+  "source_url": "https://www.bluegrasslyrics.com/song/wings-of-angels/",
+  "raw_lyrics": "A child was born to be our Savior\nWise men came from near and far\nTo see the Jesus in the manger\nThe pathway lighted by the stars\n\nSomeday he\u2019ll wake me from the dead\nNo more I\u2019ll sleep there all alone\nBut carried up to Him on high\nOn the wings of angels headed home\n\nThey crucified our Lord and Savior\nHe humbly died there on the cross\nThat we might someday rise and join Him\nOur souls be saved and not be lost",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A child was born to be our Savior",
+        "Wise men came from near and far",
+        "To see the Jesus in the manger",
+        "The pathway lighted by the stars"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Someday he\u2019ll wake me from the dead",
+        "No more I\u2019ll sleep there all alone",
+        "But carried up to Him on high",
+        "On the wings of angels headed home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They crucified our Lord and Savior",
+        "He humbly died there on the cross",
+        "That we might someday rise and join Him",
+        "Our souls be saved and not be lost"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

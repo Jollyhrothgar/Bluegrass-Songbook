@@ -1,0 +1,59 @@
+{
+  "slug": "poor-little-orphaned-boy",
+  "title": "Poor Little Orphaned Boy",
+  "source_url": "https://www.bluegrasslyrics.com/song/poor-little-orphaned-boy/",
+  "raw_lyrics": "My mother died when I was young\nMy sisters they were sad\nThey lay there hands upon my head\nAnd ought me how to pray\n\nSo now my mother she\u2019s gone to rest\nIn the land of purist joy\nAnd I wonder if she thinks of me\nHer poor little orphan boy\n\nWhen I was only two years old\nI never shall forget\nA parting kiss she gave to me\nI sometimes feel it yet\n\nWhen I was sick and every hour\nShe watched me as I lay\nAnd with her kind and gentle hand\nShe soothed me tenderly\n\nSo now I press this world alone\nHer love with me shall stay\nAnd from the throne above the skies\nHer smiles shall rest on me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My mother died when I was young",
+        "My sisters they were sad",
+        "They lay there hands upon my head",
+        "And ought me how to pray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So now my mother she\u2019s gone to rest",
+        "In the land of purist joy",
+        "And I wonder if she thinks of me",
+        "Her poor little orphan boy"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I was only two years old",
+        "I never shall forget",
+        "A parting kiss she gave to me",
+        "I sometimes feel it yet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I was sick and every hour",
+        "She watched me as I lay",
+        "And with her kind and gentle hand",
+        "She soothed me tenderly"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So now I press this world alone",
+        "Her love with me shall stay",
+        "And from the throne above the skies",
+        "Her smiles shall rest on me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

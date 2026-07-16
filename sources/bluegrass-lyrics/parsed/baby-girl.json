@@ -1,0 +1,39 @@
+{
+  "slug": "baby-girl",
+  "title": "Baby Girl",
+  "source_url": "https://www.bluegrasslyrics.com/song/baby-girl/",
+  "raw_lyrics": "Little girl ( little girl ) baby girl\nShe\u2019s my darling little precious baby girl\nLike an angel to me and I know that he\nSent from Heaven my little baby girl\n\nShe\u2019s as sweet as the flowers of springtime\nHer blue eyes they sparkle so bright\nJust a touch of her little baby hand\nSeems to guide my weary footsteps day and night\n\nHow those two little arms try to hold me\nHer little heart\u2019s a blessing to our home\nAnd at night when I\u2019m far far away\nAs dream of her I\u2019m never all alone",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Little girl ( little girl ) baby girl",
+        "She\u2019s my darling little precious baby girl",
+        "Like an angel to me and I know that he",
+        "Sent from Heaven my little baby girl"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s as sweet as the flowers of springtime",
+        "Her blue eyes they sparkle so bright",
+        "Just a touch of her little baby hand",
+        "Seems to guide my weary footsteps day and night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How those two little arms try to hold me",
+        "Her little heart\u2019s a blessing to our home",
+        "And at night when I\u2019m far far away",
+        "As dream of her I\u2019m never all alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

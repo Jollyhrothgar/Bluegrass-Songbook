@@ -1,0 +1,39 @@
+{
+  "slug": "think-of-what-youve-done",
+  "title": "Think Of What You\u2019ve Done",
+  "source_url": "https://www.bluegrasslyrics.com/song/think-of-what-youve-done/",
+  "raw_lyrics": "Is it true that I\u2019ve lost you\nAm I not the only one\nAfter all this pain and sorrow\nDarling think of what you\u2019ve done\n\nHeart to heart dear how I need you\nLike the flowers need the dew\nLoving you has been my life, dear\nI can\u2019t believe we\u2019re really through\n\nI\u2019ll go back to old Virginia\nWhere the mountains meet the sky\nIn those hills I learned to love you\nLet me stay there till I die",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Is it true that I\u2019ve lost you",
+        "Am I not the only one",
+        "After all this pain and sorrow",
+        "Darling think of what you\u2019ve done"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Heart to heart dear how I need you",
+        "Like the flowers need the dew",
+        "Loving you has been my life, dear",
+        "I can\u2019t believe we\u2019re really through"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll go back to old Virginia",
+        "Where the mountains meet the sky",
+        "In those hills I learned to love you",
+        "Let me stay there till I die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

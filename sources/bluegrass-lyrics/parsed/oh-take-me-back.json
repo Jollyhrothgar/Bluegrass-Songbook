@@ -1,0 +1,45 @@
+{
+  "slug": "oh-take-me-back",
+  "title": "Oh Take Me Back",
+  "source_url": "https://www.bluegrasslyrics.com/song/oh-take-me-back/",
+  "raw_lyrics": "Woke up this morning and I could not keep from crying\nWoke up this morning and I could not keep from crying\nMy good gal left me with a troubling mind\n\nOh just look where that evening sun has gone\nOh just look where that evening sun has gone\nGone down behind the mountain and it wont be back till dawn\n\nOh hand me that long distance phone\nOh hand me that long distance phone\nGonna talk to my honey all night long\n\nOh take me back and try me one more time\nOh take me back and try me one more time\nAnd if I don\u2019t do then send me down the line",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Woke up this morning and I could not keep from crying",
+        "Woke up this morning and I could not keep from crying",
+        "My good gal left me with a troubling mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh just look where that evening sun has gone",
+        "Oh just look where that evening sun has gone",
+        "Gone down behind the mountain and it wont be back till dawn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh hand me that long distance phone",
+        "Oh hand me that long distance phone",
+        "Gonna talk to my honey all night long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh take me back and try me one more time",
+        "Oh take me back and try me one more time",
+        "And if I don\u2019t do then send me down the line"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

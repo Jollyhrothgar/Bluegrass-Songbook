@@ -1,0 +1,49 @@
+{
+  "slug": "let-me-walk-lord-by-your-side",
+  "title": "Let Me Walk Lord By Your Side",
+  "source_url": "https://www.bluegrasslyrics.com/song/let-me-walk-lord-by-your-side/",
+  "raw_lyrics": "In a church on Sunday morning\nSat a man unwelcome there\nJudged by men and not by Jesus\nHe lifted up his voice in prayer\n\nSteer me on the righteous pathway\nHelp me humbly to abide\nHold me to your precious bosom\nLet me walk lord by your side\n\nSeveral silent moments followed\nIt seemed that no one was in that room\nThen a voice it roared like thunder\nLook for me I\u2019m coming soon\n\nSuch a change I\u2019ve never witnessed\nTear filled eyes were plainly shown\nGathered there around that stranger\nSaying God bless you welcome home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a church on Sunday morning",
+        "Sat a man unwelcome there",
+        "Judged by men and not by Jesus",
+        "He lifted up his voice in prayer"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Steer me on the righteous pathway",
+        "Help me humbly to abide",
+        "Hold me to your precious bosom",
+        "Let me walk lord by your side"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Several silent moments followed",
+        "It seemed that no one was in that room",
+        "Then a voice it roared like thunder",
+        "Look for me I\u2019m coming soon"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Such a change I\u2019ve never witnessed",
+        "Tear filled eyes were plainly shown",
+        "Gathered there around that stranger",
+        "Saying God bless you welcome home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

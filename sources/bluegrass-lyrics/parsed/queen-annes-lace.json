@@ -1,0 +1,56 @@
+{
+  "slug": "queen-annes-lace",
+  "title": "Queen Anne\u2019s Lace",
+  "source_url": "https://www.bluegrasslyrics.com/song/queen-annes-lace/",
+  "raw_lyrics": "With every golden curl in place she\u2019s as fine as Queen Anne\u2019s lace\nAnd know one could ever fault the way she looks tonight\nThe man standing by her side shows her off with such eager pride\nSeems since I saw her last she\u2019s done all right\n\nShe could never place me in her mind for me the years have not been kind\nShe\u2019d never see the boy she knew in the man I\u2019ve grown to be\nFrom her station and her place she\u2019d never recognize my face\nI have fallen like a wind blown leaf from her memory\n\nFor she\u2019s traded all her pain for bright lights and chilled champayne\nAnd I\u2019m sure her new found friends all think they know just where she\u2019s been\nYes they think they know here well all the stories I could tell\nShe\u2019s as fine as Queen Anne\u2019s lace but I knew her when\n\nNow it\u2019s hard to believe I know but she once loved me long ago\nAnd I \u2018spose I should be hurtin\u2019 just to see her once again\nOh but now she\u2019s grown so proud I wouldn\u2019t want her anyhow\nShe\u2019s as fine as Queen Anne\u2019s lace but I knew her when\n\nDel McCoury; Blue Side OF Town",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "With every golden curl in place she\u2019s as fine as Queen Anne\u2019s lace",
+        "And know one could ever fault the way she looks tonight",
+        "The man standing by her side shows her off with such eager pride",
+        "Seems since I saw her last she\u2019s done all right"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She could never place me in her mind for me the years have not been kind",
+        "She\u2019d never see the boy she knew in the man I\u2019ve grown to be",
+        "From her station and her place she\u2019d never recognize my face",
+        "I have fallen like a wind blown leaf from her memory"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "For she\u2019s traded all her pain for bright lights and chilled champayne",
+        "And I\u2019m sure her new found friends all think they know just where she\u2019s been",
+        "Yes they think they know here well all the stories I could tell",
+        "She\u2019s as fine as Queen Anne\u2019s lace but I knew her when"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now it\u2019s hard to believe I know but she once loved me long ago",
+        "And I \u2018spose I should be hurtin\u2019 just to see her once again",
+        "Oh but now she\u2019s grown so proud I wouldn\u2019t want her anyhow",
+        "She\u2019s as fine as Queen Anne\u2019s lace but I knew her when"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Del McCoury; Blue Side OF Town"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

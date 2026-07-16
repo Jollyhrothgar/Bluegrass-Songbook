@@ -1,0 +1,60 @@
+{
+  "slug": "muddy-water",
+  "title": "Muddy Water",
+  "source_url": "https://www.bluegrasslyrics.com/song/muddy-water/",
+  "raw_lyrics": "Mary grab the baby river\u2019s rising\nMuddy water\u2019s taking back the land\nWell this old house it won\u2019t take one more beating\nAin\u2019t no use to stay and make a stand.\n\nThe morning light showed water in the valley\nDaddy\u2019s grave just went below the line\nThings to save you just can\u2019t take them with you\nThe flood will swallow all we leave behind.\n\nI won\u2019t be back to start all over\n\u2018Cause what I felt before is gone\nMary grab the baby river\u2019s rising\nMuddy water\u2019s taking back our home.\n\nNow the road is gone there\u2019s just one way to leave here.\nI\u2019ll turn my back on what I\u2019ve left below\nShifting land and broken farms around me\nMuddy water\u2019s changing all I know.\n\nIt\u2019s hard to say just what I\u2019m losing\nAin\u2019t never been so all alone\nMary grab the baby river\u2019s rising\nMuddy water\u2019s taking back my home.\nWell muddy water\u2019s taking back my home.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Mary grab the baby river\u2019s rising",
+        "Muddy water\u2019s taking back the land",
+        "Well this old house it won\u2019t take one more beating",
+        "Ain\u2019t no use to stay and make a stand."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The morning light showed water in the valley",
+        "Daddy\u2019s grave just went below the line",
+        "Things to save you just can\u2019t take them with you",
+        "The flood will swallow all we leave behind."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I won\u2019t be back to start all over",
+        "\u2018Cause what I felt before is gone",
+        "Mary grab the baby river\u2019s rising",
+        "Muddy water\u2019s taking back our home."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the road is gone there\u2019s just one way to leave here.",
+        "I\u2019ll turn my back on what I\u2019ve left below",
+        "Shifting land and broken farms around me",
+        "Muddy water\u2019s changing all I know."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s hard to say just what I\u2019m losing",
+        "Ain\u2019t never been so all alone",
+        "Mary grab the baby river\u2019s rising",
+        "Muddy water\u2019s taking back my home.",
+        "Well muddy water\u2019s taking back my home."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

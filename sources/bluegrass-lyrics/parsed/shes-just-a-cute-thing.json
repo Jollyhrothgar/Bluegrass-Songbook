@@ -1,0 +1,49 @@
+{
+  "slug": "shes-just-a-cute-thing",
+  "title": "She\u2019s Just A Cute Thing",
+  "source_url": "https://www.bluegrasslyrics.com/song/shes-just-a-cute-thing/",
+  "raw_lyrics": "She\u2019s just a cute thing\nWith eyes that sparkle with love\nThinking of her beauties\nOh how I wish I could hug\n\nShe\u2019s not the kind you picture\nIn any walk of life\nAnd I can see her only\nAs my beloved wife\n\nI courted her in high school and there I won her love\nI swore her in high school and there I won her love\nAnd then I joined the service I lived to serve my time\nAnd then a guy met her with eyes that seemed like mine\n\nI scorned for this action\nAnd now might say that we\u2019re through\nBut trying to forget her\nIs more than I can do",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s just a cute thing",
+        "With eyes that sparkle with love",
+        "Thinking of her beauties",
+        "Oh how I wish I could hug"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s not the kind you picture",
+        "In any walk of life",
+        "And I can see her only",
+        "As my beloved wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I courted her in high school and there I won her love",
+        "I swore her in high school and there I won her love",
+        "And then I joined the service I lived to serve my time",
+        "And then a guy met her with eyes that seemed like mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I scorned for this action",
+        "And now might say that we\u2019re through",
+        "But trying to forget her",
+        "Is more than I can do"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,45 +1,26 @@
 {meta: title Wrong Road Again}
-{meta: artist Cal Smith}
-{meta: composer Allen Reynolds}
-{meta: x_source classic-country}
-{meta: x_source_file wrongroadagainlyricsandchords.pro}
-{meta: x_enriched 2025-12-26}
+{meta: x_lyrics_source bluegrass-lyrics}
+{meta: x_lyrics_url https://www.bluegrasslyrics.com/song/wrong-road-again/}
+{meta: x_chords_source ultimate-guitar}
+{meta: x_chords_url https://tabs.ultimate-guitar.com/tab/1797087}
 
 {start_of_verse: Verse 1}
-[C]I can't seem to [F]learn not to [C]love you
-You get to [G7]me every [C]time
-You're someone I [F]just can't say [C]no to
-And you're so good at [G7]changing my [C]mind
+I [G]can’t seem [C]to learn not [G]to love you
+You get to [D7]me [G]every time
+You’re someone I [C]just can’t [G]say no to
+And you’re so good at [D7]changin’ [G]my mind
 {end_of_verse}
+
+{start_of_chorus}
+Here I go down that [C]wrong road [G]again
+Goin’ back where I’ve [D7]already [G]been
+Even though I [C]know where it [G]will end
+Here I go down that [C]wrong road [G]again
+{end_of_chorus}
 
 {start_of_verse: Verse 2}
-Here I go down that [F]wrong road [C]again
-Going back where I've [G7]already [C]been
-Even knowing [F]where it will [C]end
-Here I go down that [G7]wrong road [C]again
+Though I [G]see [C]the web that [G]you’re weavin’
+You and [D7]your soft [G]easy lies
+Before I stop to [C]think, I’m [G]believin’
+And I’m fallin’ for [D7]you one [G]more time
 {end_of_verse}
-
-{start_of_verse: Verse 3}
-Though I see the [F]web that you're [C]weaving
-You and your [G7]soft easy [C]lines
-Before I stop to [F]think I'm be[C]lieving
-And I'm falling for [G7]you one more [C]time
-{end_of_verse}
-
-{start_of_verse: Verse 4}
-Here I go down that [F]wrong road [C]again
-Going back where I've [G7]already [C]been
-Even knowing [F]where it will [C]end
-Here I go down that [G7]wrong road [C]again
-{end_of_verse}
-
-{start_of_verse: Verse 5}
-Here I go down that [F]wrong road [C]again
-Going back where I've [G7]already [C]been
-Even knowing [F]where it will [C]end
-Here I go down that [G7]wrong road [C]again
-{end_of_verse}
-
-
-
-

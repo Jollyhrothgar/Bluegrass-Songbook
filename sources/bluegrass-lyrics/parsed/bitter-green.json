@@ -1,0 +1,49 @@
+{
+  "slug": "bitter-green",
+  "title": "Bitter Green",
+  "source_url": "https://www.bluegrasslyrics.com/song/bitter-green/",
+  "raw_lyrics": "On the bitter green she walked the hills above the town\nEcho to her footsteps as soft as ider down\nWaiting for her master to kiss away the tears\nWaitin\u2019 through the years\n\nBitter Green they called her walkin\u2019 in the sun\nLovin\u2019 everyone that she me\nBitter Green they called her waitin\u2019 in the sun\nWaitin\u2019 for someone to take her home\n\nSome say he was a sailor who died away at sea\nSome say he was a prison\u2019r who never was set free\nLost upon the ocean he died there in the mist\nDreamin\u2019 of a kiss\n\nBut now that bitter green is gone the hills have turned to rust\nThere comes a weary stranger his tears fall in the dust\nKnealin\u2019 by the churchyard in the autumn mist\nDeamin\u2019 of a kiss",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On the bitter green she walked the hills above the town",
+        "Echo to her footsteps as soft as ider down",
+        "Waiting for her master to kiss away the tears",
+        "Waitin\u2019 through the years"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Bitter Green they called her walkin\u2019 in the sun",
+        "Lovin\u2019 everyone that she me",
+        "Bitter Green they called her waitin\u2019 in the sun",
+        "Waitin\u2019 for someone to take her home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some say he was a sailor who died away at sea",
+        "Some say he was a prison\u2019r who never was set free",
+        "Lost upon the ocean he died there in the mist",
+        "Dreamin\u2019 of a kiss"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But now that bitter green is gone the hills have turned to rust",
+        "There comes a weary stranger his tears fall in the dust",
+        "Knealin\u2019 by the churchyard in the autumn mist",
+        "Deamin\u2019 of a kiss"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

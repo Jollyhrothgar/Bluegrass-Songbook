@@ -1,0 +1,63 @@
+{
+  "slug": "two-sweethearts",
+  "title": "Two Sweethearts",
+  "source_url": "https://www.bluegrasslyrics.com/song/two-sweethearts/",
+  "raw_lyrics": "A crowd of young fellas one night at a ball\nWere telling of sweethearts they\u2019d had\nAll seemed hardy except one lad\nWho seemed downhearted and sad\n\nCome join us Ned his comrades then said\nSurely some girl has loved you\nThen raising his head proudly he said\nI\u2019m in love with two\n\nOne has hair of silver gray\nThe other one is just like gold\nOne is young and youthful too\nThe other is aged and old\nBut dearer than life are they both to me\nFrom neither would I part\nOne is my mother God bless her I love her\nThe other one is my sweetheart\n\nMy sweetheart is a poor working girl\nWhom I\u2019m determined to wed\nFather says no it will never be so\nYou must marry an heiress instead\n\nMother was young she knows how it is\nWhen father met her she was poor\nNed don\u2019t fret she\u2019ll be your wife yet\nFor he will consent I am sure",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A crowd of young fellas one night at a ball",
+        "Were telling of sweethearts they\u2019d had",
+        "All seemed hardy except one lad",
+        "Who seemed downhearted and sad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come join us Ned his comrades then said",
+        "Surely some girl has loved you",
+        "Then raising his head proudly he said",
+        "I\u2019m in love with two"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "One has hair of silver gray",
+        "The other one is just like gold",
+        "One is young and youthful too",
+        "The other is aged and old",
+        "But dearer than life are they both to me",
+        "From neither would I part",
+        "One is my mother God bless her I love her",
+        "The other one is my sweetheart"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My sweetheart is a poor working girl",
+        "Whom I\u2019m determined to wed",
+        "Father says no it will never be so",
+        "You must marry an heiress instead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mother was young she knows how it is",
+        "When father met her she was poor",
+        "Ned don\u2019t fret she\u2019ll be your wife yet",
+        "For he will consent I am sure"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "reunion-in-heaven",
+  "title": "Reunion In Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/reunion-in-heaven/",
+  "raw_lyrics": "So often down here we\u2019ll have a reunion\nOur loved ones and friends will be gathered around\nSome faces are missed. They have gone home to heaven\nThey will be there with Jesus \u2019til the trumpet shall sound\n\nWhat a wonderful time we\u2019ll have up in Glory\nWith our blessed Redeemer forever we\u2019ll see\nAnd a crown he will give on that great judgment morning\nWhat a happy reunion in Heaven will be\n\nNo crepes on the doors in that beautiful city\nNo sorrow or pain never more ever there\nBut a body we\u2019ll have in the Saviour\u2019s own likeness\nAnd a mansion Jesus said he\u2019d go to prepare\n\nI am longing to sit by the banks of the river\nThere\u2019s rest for the ones by the evergreen trees\nI am longing to look in the face of my Saviour\nAnd my loved ones who have gone they are waiting for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "So often down here we\u2019ll have a reunion",
+        "Our loved ones and friends will be gathered around",
+        "Some faces are missed. They have gone home to heaven",
+        "They will be there with Jesus \u2019til the trumpet shall sound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What a wonderful time we\u2019ll have up in Glory",
+        "With our blessed Redeemer forever we\u2019ll see",
+        "And a crown he will give on that great judgment morning",
+        "What a happy reunion in Heaven will be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No crepes on the doors in that beautiful city",
+        "No sorrow or pain never more ever there",
+        "But a body we\u2019ll have in the Saviour\u2019s own likeness",
+        "And a mansion Jesus said he\u2019d go to prepare"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I am longing to sit by the banks of the river",
+        "There\u2019s rest for the ones by the evergreen trees",
+        "I am longing to look in the face of my Saviour",
+        "And my loved ones who have gone they are waiting for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

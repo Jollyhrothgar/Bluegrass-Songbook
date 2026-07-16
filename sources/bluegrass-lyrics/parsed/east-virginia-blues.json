@@ -1,0 +1,89 @@
+{
+  "slug": "east-virginia-blues",
+  "title": "East Virginia Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/east-virginia-blues/",
+  "raw_lyrics": "I was born in East Virginia\nNorth Carolina I did go\nThere I courted a fair young maiden\nBut her age I did not know\n\nOh her hair was dark and curly\nAnd her cheeks were rosy red\nOn her breast she wore white lilies\nWhere I longed to lay my head\n\nMolly dear\u00a0 go ask your mother\nIf you my bride might ever be\nIf she says no come back and tell me\nAnd I\u2019ll run away with thee\n\nNo I\u2019ll not go ask my mother\nWhere she lies on her bed of rest\nIn her hand she holds a dagger\nTo kill the man that I love best\n\nThe ocean\u2019s deep and I can\u2019t wade it\nAnd I have no wings to fly\nI\u2019ll just get some blue-eyed boatman\nFor to row me o\u2019er the tide\n\nI don\u2019t want your green back dollar\nI don\u2019t want your watch and chain\nAll I want is you my darling\nSay you\u2019ll take me back again\n\nI\u2019ll go back to East Virginia\nNorth Carolina ain\u2019t my home\nI\u2019ll go back to East Virginia\nLeave old North Carolina alone\n\nOh you know I\u2019d like to see you\nAt my door you\u2019re welcome in\nAt my gate I\u2019ll always greet you\nFor you\u2019re the girl I tried to win",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was born in East Virginia",
+        "North Carolina I did go",
+        "There I courted a fair young maiden",
+        "But her age I did not know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh her hair was dark and curly",
+        "And her cheeks were rosy red",
+        "On her breast she wore white lilies",
+        "Where I longed to lay my head"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Molly dear\u00a0 go ask your mother",
+        "If you my bride might ever be",
+        "If she says no come back and tell me",
+        "And I\u2019ll run away with thee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No I\u2019ll not go ask my mother",
+        "Where she lies on her bed of rest",
+        "In her hand she holds a dagger",
+        "To kill the man that I love best"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The ocean\u2019s deep and I can\u2019t wade it",
+        "And I have no wings to fly",
+        "I\u2019ll just get some blue-eyed boatman",
+        "For to row me o\u2019er the tide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t want your green back dollar",
+        "I don\u2019t want your watch and chain",
+        "All I want is you my darling",
+        "Say you\u2019ll take me back again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll go back to East Virginia",
+        "North Carolina ain\u2019t my home",
+        "I\u2019ll go back to East Virginia",
+        "Leave old North Carolina alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh you know I\u2019d like to see you",
+        "At my door you\u2019re welcome in",
+        "At my gate I\u2019ll always greet you",
+        "For you\u2019re the girl I tried to win"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "in-my-dear-old-southern-home",
+  "title": "In My Dear Old Southern Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-my-dear-old-southern-home/",
+  "raw_lyrics": "In my dear old home\nI was happy as I could be\nWhere the mocking birds sang every night while I rest\nIn that little old log cabin by the sea\n\nThere is Mother and dear old Dad\nWhere I left I know it made them sad\nSo I\u2019m going back to that dear old shack\nWhere I spent my happy days as a lad\n\nGoodbye friends I\u2019m leaving today\nGoodbye friends I\u2019m going far away\nI\u2019ll be happy as can be on my dear old Mother\u2019s knee\nIn that little old log cabin by the sea",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In my dear old home",
+        "I was happy as I could be",
+        "Where the mocking birds sang every night while I rest",
+        "In that little old log cabin by the sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is Mother and dear old Dad",
+        "Where I left I know it made them sad",
+        "So I\u2019m going back to that dear old shack",
+        "Where I spent my happy days as a lad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye friends I\u2019m leaving today",
+        "Goodbye friends I\u2019m going far away",
+        "I\u2019ll be happy as can be on my dear old Mother\u2019s knee",
+        "In that little old log cabin by the sea"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

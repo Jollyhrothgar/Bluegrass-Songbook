@@ -1,0 +1,49 @@
+{
+  "slug": "do-you-wonder-why",
+  "title": "Do You Wonder Why",
+  "source_url": "https://www.bluegrasslyrics.com/song/do-you-wonder-why/",
+  "raw_lyrics": "Last night I heard those nightbirds calling\nBrings back memories of days gone by\nIt makes me think of you my darling\nAnd do you wonder why\n\nDo you wonder why I love you\nAfter what you did to me\nWhy oh why do I think of you\nBut I do It\u2019s plain to see\n\nIn all my dreams of our life together\nI think of you and then I sigh\nI just don\u2019t know what makes me love you\nAnd do you wonder why\n\nAnd now that we have parted strangers\nWe have said our last goodbye\nI can\u2019t forget I love you truly\nAnd do you wonder why",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Last night I heard those nightbirds calling",
+        "Brings back memories of days gone by",
+        "It makes me think of you my darling",
+        "And do you wonder why"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Do you wonder why I love you",
+        "After what you did to me",
+        "Why oh why do I think of you",
+        "But I do It\u2019s plain to see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In all my dreams of our life together",
+        "I think of you and then I sigh",
+        "I just don\u2019t know what makes me love you",
+        "And do you wonder why"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And now that we have parted strangers",
+        "We have said our last goodbye",
+        "I can\u2019t forget I love you truly",
+        "And do you wonder why"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "just-wondering-why",
+  "title": "Just Wondering Why",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-wondering-why/",
+  "raw_lyrics": "Tonight I\u2019m alone, I\u2019m thinking of you dear\nFor yesterday you told me goodbye\nOh why did you leave and where are you going\nI\u2019m hear all alone, just wondering why\n\nI can\u2019t understand, sweetheart, why you left me\nYou told me your love would never die\nThen you went away and left me so lonely\nNow I\u2019m all alone, just wondering why\n\nWherever you go in this world my darling\nI\u2019ll never think of no one but you\nWhen you went away, you left me so lonely\nAnd that\u2019s why today I\u2019m feeling so blue",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight I\u2019m alone, I\u2019m thinking of you dear",
+        "For yesterday you told me goodbye",
+        "Oh why did you leave and where are you going",
+        "I\u2019m hear all alone, just wondering why"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can\u2019t understand, sweetheart, why you left me",
+        "You told me your love would never die",
+        "Then you went away and left me so lonely",
+        "Now I\u2019m all alone, just wondering why"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wherever you go in this world my darling",
+        "I\u2019ll never think of no one but you",
+        "When you went away, you left me so lonely",
+        "And that\u2019s why today I\u2019m feeling so blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "washed-my-hands-in-the-muddy-water",
+  "title": "Washed My Hands in the Muddy Water",
+  "source_url": "https://www.bluegrasslyrics.com/song/washed-my-hands-in-the-muddy-water/",
+  "raw_lyrics": "I was born in Macon Georgia\nThey kept my daddy over in Macon jail\nHe told me if you keep your hands clean\nYou won\u2019t hear them bloodhounds on your trail\n\nWell I fell in with bad companions\nRobbed a man up in Tennessee\nThey caught me way up in Nashville\nThey locked me up and threw away the key\n\nI washed my hands in muddy water\nWashed my hands but they didn\u2019t come clean\nTried to do what my daddy told me\nBut I must have washed my hands in a muddy stream\n\nI asked the judge now when\u2019s my time up\nHe said son you know we won\u2019t forget\nIf you try just to keep your hands clean\nWe might just make a good man of you yet\n\nOh I couldn\u2019t wait to get my time up\nI broke out broke out of Nashville jail\nI just crossed the state-line of Georgia\nWell I can hear those bloodhounds on my trail",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was born in Macon Georgia",
+        "They kept my daddy over in Macon jail",
+        "He told me if you keep your hands clean",
+        "You won\u2019t hear them bloodhounds on your trail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I fell in with bad companions",
+        "Robbed a man up in Tennessee",
+        "They caught me way up in Nashville",
+        "They locked me up and threw away the key"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I washed my hands in muddy water",
+        "Washed my hands but they didn\u2019t come clean",
+        "Tried to do what my daddy told me",
+        "But I must have washed my hands in a muddy stream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I asked the judge now when\u2019s my time up",
+        "He said son you know we won\u2019t forget",
+        "If you try just to keep your hands clean",
+        "We might just make a good man of you yet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I couldn\u2019t wait to get my time up",
+        "I broke out broke out of Nashville jail",
+        "I just crossed the state-line of Georgia",
+        "Well I can hear those bloodhounds on my trail"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

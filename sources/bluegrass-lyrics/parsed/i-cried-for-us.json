@@ -1,0 +1,59 @@
+{
+  "slug": "i-cried-for-us",
+  "title": "I Cried For Us",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-cried-for-us/",
+  "raw_lyrics": "Love it\u2019s not I who didn\u2019t try\nHard enough, hard enough\nAnd this is why I\u2019m saying goodbye\nI\u2019ve had enough, I\u2019ve had enough\n\nLove you don\u2019t see\nThe pain in me\nIt\u2019s plain enough, plain enough\nYou\u2019re never here to catch the tears\nI cried for us, I cried for us.\n\nI\u2019ll take my share,\nBut I\u2019ll be fair\nThere\u2019s not much stuff, easy enough\nAnd if you choose, I\u2019ll break the news\nThis part is tough, so very tough\n\nI\u2019ve tried and tried to put aside\nA time to talk, but without luck\nSo I\u2019ll just pin this within your coat\nAnd leave the garden gate unlocked\n\nAnd this is why I\u2019m saying goodbye\nI\u2019ve had enough, I\u2019ve had enough.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Love it\u2019s not I who didn\u2019t try",
+        "Hard enough, hard enough",
+        "And this is why I\u2019m saying goodbye",
+        "I\u2019ve had enough, I\u2019ve had enough"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Love you don\u2019t see",
+        "The pain in me",
+        "It\u2019s plain enough, plain enough",
+        "You\u2019re never here to catch the tears",
+        "I cried for us, I cried for us."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll take my share,",
+        "But I\u2019ll be fair",
+        "There\u2019s not much stuff, easy enough",
+        "And if you choose, I\u2019ll break the news",
+        "This part is tough, so very tough"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve tried and tried to put aside",
+        "A time to talk, but without luck",
+        "So I\u2019ll just pin this within your coat",
+        "And leave the garden gate unlocked"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And this is why I\u2019m saying goodbye",
+        "I\u2019ve had enough, I\u2019ve had enough."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

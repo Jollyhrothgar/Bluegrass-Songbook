@@ -1,0 +1,39 @@
+{
+  "slug": "only-way-home",
+  "title": "Only Way Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/only-way-home/",
+  "raw_lyrics": "I\u2019ve been driftin\u2019 I\u2019ve been stealin\u2019\nI\u2019ve been lonesome I\u2019ve been talkin\u2019\nTo myself and I ain\u2019t got much to say\nI\u2019m tired of stories and I\u2019ve heard them anyway\n\nAll those people slippin\u2019 by me\nGot a place that they call home\nI\u2019ve got nothing but my longin\u2019\nAnd these hands to call my own\n\nHow far am I from where I began yesterday ?\nHow much father do I have to roam ?\nI guess I\u2019m weary of travelin\u2019\nAnd drinking my pay but I\u2019m scared of the only way home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been driftin\u2019 I\u2019ve been stealin\u2019",
+        "I\u2019ve been lonesome I\u2019ve been talkin\u2019",
+        "To myself and I ain\u2019t got much to say",
+        "I\u2019m tired of stories and I\u2019ve heard them anyway"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All those people slippin\u2019 by me",
+        "Got a place that they call home",
+        "I\u2019ve got nothing but my longin\u2019",
+        "And these hands to call my own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How far am I from where I began yesterday ?",
+        "How much father do I have to roam ?",
+        "I guess I\u2019m weary of travelin\u2019",
+        "And drinking my pay but I\u2019m scared of the only way home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

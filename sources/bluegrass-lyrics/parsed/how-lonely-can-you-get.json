@@ -1,0 +1,39 @@
+{
+  "slug": "how-lonely-can-you-get",
+  "title": "How Lonely Can You Get",
+  "source_url": "https://www.bluegrasslyrics.com/song/how-lonely-can-you-get/",
+  "raw_lyrics": "Have you ever been so lonely so blue you could die\nWhen the one you love no longer cares for you\nWhen your trouble mind keeps bothering you won\u2019t leave you alone\nWhen you know its all over love\u2019s grown cold\n\nHow lonely oh how lonely how lonely can you get\nI\u2019d give this wide world over If we had never met\nI woudn\u2019t have these lonely night days of sad regret\nDon\u2019t mind being lonely but how lonely can you get\n\nI\u2019ve tried to tell me my troubled mind to live and just forget\nBut I don\u2019t find that so easy and never will I guess\nI\u2019m locked up in a dream world with dreams and loneliness\nAnd every day I ask myself how lonely can you get",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Have you ever been so lonely so blue you could die",
+        "When the one you love no longer cares for you",
+        "When your trouble mind keeps bothering you won\u2019t leave you alone",
+        "When you know its all over love\u2019s grown cold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How lonely oh how lonely how lonely can you get",
+        "I\u2019d give this wide world over If we had never met",
+        "I woudn\u2019t have these lonely night days of sad regret",
+        "Don\u2019t mind being lonely but how lonely can you get"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve tried to tell me my troubled mind to live and just forget",
+        "But I don\u2019t find that so easy and never will I guess",
+        "I\u2019m locked up in a dream world with dreams and loneliness",
+        "And every day I ask myself how lonely can you get"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

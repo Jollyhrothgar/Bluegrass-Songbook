@@ -1,0 +1,39 @@
+{
+  "slug": "its-never-too-late",
+  "title": "It\u2019s Never Too Late",
+  "source_url": "https://www.bluegrasslyrics.com/song/its-never-too-late/",
+  "raw_lyrics": "Now darling I\u2019ve loved I\u2019ve never done wrong\nI\u2019ve been fair to you you know all along\nWhy treat me this way you\u2019re breaking my heart\nI\u2019m lonesome for you we\u2019re so far apart\n\nIts never too late to start over new\nI\u2019ve loved you so long you know I\u2019ve been true\nPlease come back to me my heart is so blue\nIt\u2019s never to late to start over new\n\nNow when you are tired your new love\u2019s gone down\nI hope you\u2019ll return I\u2019ll still be around\nI love you so well you know I will wait\nBut remember these words it\u2019s never too late",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now darling I\u2019ve loved I\u2019ve never done wrong",
+        "I\u2019ve been fair to you you know all along",
+        "Why treat me this way you\u2019re breaking my heart",
+        "I\u2019m lonesome for you we\u2019re so far apart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Its never too late to start over new",
+        "I\u2019ve loved you so long you know I\u2019ve been true",
+        "Please come back to me my heart is so blue",
+        "It\u2019s never to late to start over new"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when you are tired your new love\u2019s gone down",
+        "I hope you\u2019ll return I\u2019ll still be around",
+        "I love you so well you know I will wait",
+        "But remember these words it\u2019s never too late"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

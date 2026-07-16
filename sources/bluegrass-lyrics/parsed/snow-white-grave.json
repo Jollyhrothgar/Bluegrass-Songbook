@@ -1,0 +1,39 @@
+{
+  "slug": "snow-white-grave",
+  "title": "Snow White Grave",
+  "source_url": "https://www.bluegrasslyrics.com/song/snow-white-grave/",
+  "raw_lyrics": "All around the cabin door falls little flakes of snow\nI\u2019m searching for the foot prints of the one that I loved so\nThe last time I saw my darling the earth was covered white\nAnd little flakes of snow have faded my sweetheart\u2019s path tonight\n\nFrom this cabin she did go I watched her foot prints fade\nI don\u2019t know why she left me I never dreamed she\u2019d go away\nLittle snow flakes fell from Heaven from the Heaven way up above\nAnd paved a way made a snow white grave of the only one I loved\n\nShe left a memory of tender love and a picture on the wall\nMy teardrops now are bigger than the snow white flakes that fall\nAnd each moment I grow weaker sadly gazing at the snow\nAnd I feel that I will fade away with that slow melting snow",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All around the cabin door falls little flakes of snow",
+        "I\u2019m searching for the foot prints of the one that I loved so",
+        "The last time I saw my darling the earth was covered white",
+        "And little flakes of snow have faded my sweetheart\u2019s path tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "From this cabin she did go I watched her foot prints fade",
+        "I don\u2019t know why she left me I never dreamed she\u2019d go away",
+        "Little snow flakes fell from Heaven from the Heaven way up above",
+        "And paved a way made a snow white grave of the only one I loved"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She left a memory of tender love and a picture on the wall",
+        "My teardrops now are bigger than the snow white flakes that fall",
+        "And each moment I grow weaker sadly gazing at the snow",
+        "And I feel that I will fade away with that slow melting snow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

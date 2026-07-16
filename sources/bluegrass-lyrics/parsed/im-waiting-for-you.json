@@ -1,0 +1,49 @@
+{
+  "slug": "im-waiting-for-you",
+  "title": "I\u2019m Waiting For You",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-waiting-for-you/",
+  "raw_lyrics": "I\u2019m beggin\u2019 to you and I want to go with you\nYou\u2019re breakin\u2019 my heart as you say goodbye\nI hope and I pray we\u2019ll soon be together\nMy heart is so full it\u2019s hard not to cry\n\nWhat will I do when the leaves start fallin\u2019\nThe far distant hill will make me feel blue\nSoon the flowers will die don\u2019t let love die with them\nAnd with you gone dear what will I do\n\nYour sweet ruby lips and hair like an angel\nAnd your mournful eyes they keep haunting me\nBut to know that you\u2019re mine it makes life worth livin\u2019\nOh the times gone by are sweet memories\n\nI\u2019m trusting in you but each hour seems longer\nI\u2019m counting the days when I\u2019ll be with you\nOur hearts are entwined they\u2019re blessed with the future\nA safe journey home I\u2019m waiting for you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m beggin\u2019 to you and I want to go with you",
+        "You\u2019re breakin\u2019 my heart as you say goodbye",
+        "I hope and I pray we\u2019ll soon be together",
+        "My heart is so full it\u2019s hard not to cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What will I do when the leaves start fallin\u2019",
+        "The far distant hill will make me feel blue",
+        "Soon the flowers will die don\u2019t let love die with them",
+        "And with you gone dear what will I do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your sweet ruby lips and hair like an angel",
+        "And your mournful eyes they keep haunting me",
+        "But to know that you\u2019re mine it makes life worth livin\u2019",
+        "Oh the times gone by are sweet memories"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m trusting in you but each hour seems longer",
+        "I\u2019m counting the days when I\u2019ll be with you",
+        "Our hearts are entwined they\u2019re blessed with the future",
+        "A safe journey home I\u2019m waiting for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,6 +1,7 @@
 id: man-of-constant-sorrow
 title: Man of Constant Sorrow
 artist: Soggy Bottom Boys
+composers: []
 default_key: G
 tags:
 - JamFriendly
@@ -10,6 +11,5 @@ parts:
   file: lead-sheet.pro
   default: true
   provenance:
-    source: classic-country
-    source_file: manofconstantsorrowlyricsandchords.pro
-    imported_at: '2026-01-02'
+    source: trusted-user
+    imported_at: '2026-02-01'

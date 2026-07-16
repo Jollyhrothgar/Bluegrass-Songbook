@@ -1,0 +1,49 @@
+{
+  "slug": "tears-of-regret",
+  "title": "Tears Of Regret",
+  "source_url": "https://www.bluegrasslyrics.com/song/tears-of-regret/",
+  "raw_lyrics": "Tonight I\u2019m so lonesome heartbroken and blue\nI\u2019d give all this world one more to see you\nEach night my pillow from tears is all wet\nI\u2019m cryin\u2019 my heart out these tears of regret\n\nTears of Regret I\u2019m shedding for you\nTo wallow in my heart no good would it do\nTears that are fallin\u2019 won\u2019t make you return\nTears of regret while alone I must yearn\n\nIf you\u2019re ever lonely and think about me\nRemember my darlin\u2019 no pleasure I\u2019ll see\nI look to the future through tears of regret\nI\u2019ve lost you forever but I\u2019ll not forget\n\nCome back to me darlin\u2019 I\u2019m waitin\u2019 for you\nI promise forever this time to be true\nI lost a treasure more precious than gold\nNow tears of regret is my payment I know",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight I\u2019m so lonesome heartbroken and blue",
+        "I\u2019d give all this world one more to see you",
+        "Each night my pillow from tears is all wet",
+        "I\u2019m cryin\u2019 my heart out these tears of regret"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tears of Regret I\u2019m shedding for you",
+        "To wallow in my heart no good would it do",
+        "Tears that are fallin\u2019 won\u2019t make you return",
+        "Tears of regret while alone I must yearn"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you\u2019re ever lonely and think about me",
+        "Remember my darlin\u2019 no pleasure I\u2019ll see",
+        "I look to the future through tears of regret",
+        "I\u2019ve lost you forever but I\u2019ll not forget"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come back to me darlin\u2019 I\u2019m waitin\u2019 for you",
+        "I promise forever this time to be true",
+        "I lost a treasure more precious than gold",
+        "Now tears of regret is my payment I know"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

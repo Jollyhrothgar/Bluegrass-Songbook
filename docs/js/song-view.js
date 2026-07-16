@@ -37,14 +37,16 @@ import {
     listContext, setListContext,
     // Reactive state
     subscribe,
-    setCurrentView
+    setCurrentView,
+    resolveWorkId
 } from './state.js';
-import { escapeHtml, isTabOnlyWork } from './utils.js';
+import { escapeHtml, isTabOnlyWork, isPlaceholder, hasMultipleParts } from './utils.js';
 import {
     parseLineWithChords, extractChords, detectKey,
-    getSemitonesBetweenKeys, transposeChord, toNashville
+    getSemitonesBetweenKeys, transposeChord, toNashville,
+    CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
 } from './chords.js';
-import { updateListPickerButton, updateFavoriteButton } from './lists.js';
+import { updateListPickerButton, updateFavoriteButton, clearListView, openNotesSheet, getSongMetadata, updateSongMetadata } from './lists.js';
 import { renderTagBadges, getTagCategory, formatTagName } from './tags.js';
 import {
     trackSongView, trackTranspose, trackVersionPicker, trackTagVote,
@@ -149,7 +151,8 @@ export function parseChordPro(chordpro) {
 }
 
 /**
- * Render a single line with chords above lyrics
+ * Render a single line with chords above lyrics using inline segments.
+ * Each chord+lyrics chunk is an inline-block so chords wrap with their lyrics.
  */
 function renderLine(line, hideChords = false) {
     const { chords, lyrics } = parseLineWithChords(line);
@@ -162,29 +165,57 @@ function renderLine(line, hideChords = false) {
     // Calculate transposition if key was changed
     const semitones = getSemitonesBetweenKeys(originalDetectedKey, currentDetectedKey);
 
-    let chordLine = '';
-    let lastPos = 0;
+    // Build inline segments: each chord paired with its following lyrics
+    const segments = [];
+    let lastLyricsPos = 0;
 
-    for (const { chord, position } of chords) {
-        // First transpose if needed
+    for (let i = 0; i < chords.length; i++) {
+        const { chord, position } = chords[i];
+        const nextPos = i + 1 < chords.length ? chords[i + 1].position : lyrics.length;
+
+        // Lyrics before the first chord (no chord above)
+        if (i === 0 && position > 0) {
+            const prefixLyrics = lyrics.slice(0, position);
+            segments.push({ chord: '', lyrics: prefixLyrics });
+        }
+
         const transposedChord = semitones !== 0 ? transposeChord(chord, semitones) : chord;
-
-        // Then convert to Nashville if enabled
         const displayChord = nashvilleMode && currentDetectedKey
             ? toNashville(transposedChord, currentDetectedKey)
             : transposedChord;
 
-        const spaces = Math.max(0, position - lastPos);
-        chordLine += ' '.repeat(spaces) + displayChord;
-        lastPos = position + displayChord.length;
+        const segmentLyrics = lyrics.slice(position, nextPos);
+        segments.push({ chord: displayChord, lyrics: segmentLyrics });
+        lastLyricsPos = nextPos;
     }
 
-    return `
-        <div class="song-line">
-            <div class="chord-line">${escapeHtml(chordLine)}</div>
-            <div class="lyrics-line">${escapeHtml(lyrics)}</div>
-        </div>
-    `;
+    // Build HTML from segments
+    let html = '';
+    for (const seg of segments) {
+        const chordHtml = seg.chord
+            ? `<span class="cl-chord">${escapeHtml(seg.chord)}</span>`
+            : `<span class="cl-chord">&nbsp;</span>`;
+        const lyricsHtml = escapeHtml(seg.lyrics) || '&nbsp;';
+        html += `<span class="cl-segment">${chordHtml}${lyricsHtml}</span>`;
+    }
+
+    return `<div class="song-line cl-line">${html}</div>`;
+}
+
+/**
+ * Detect wrapped chord-lyrics lines and add a visual indicator.
+ * A line is "wrapped" if its rendered height exceeds a single chord+lyrics pair.
+ */
+function markWrappedLines() {
+    const lines = document.querySelectorAll('.cl-line');
+    for (const line of lines) {
+        // A single unwrapped line has one chord row + one lyrics row.
+        // If the element is taller, it wrapped.
+        const firstSeg = line.querySelector('.cl-segment');
+        if (!firstSeg) continue;
+        const singleLineHeight = firstSeg.offsetHeight;
+        line.classList.toggle('wrapped', line.scrollHeight > singleLineHeight + 2);
+    }
 }
 
 /**
@@ -460,12 +491,26 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         setOriginalDetectedKey(detectedKey);
         setOriginalDetectedMode(detectedMode);
         setCurrentDetectedKey(detectedKey);
+
+        // Apply key override from list metadata (e.g., capo'd key for setlists)
+        if (listContext && listContext.listId && song?.id) {
+            const songMetadata = getSongMetadata(listContext.listId, song.id);
+            if (songMetadata?.key) {
+                // Map metadata key format to CHROMATIC_MAJOR_KEYS format
+                // Metadata uses: "C#/Db", "D#/Eb", etc.
+                // CHROMATIC_MAJOR_KEYS uses: C, C#, D, Eb, E, F, F#, G, Ab, A, Bb, B
+                const keyMap = {
+                    'C#/Db': 'C#', 'D#/Eb': 'Eb', 'F#/Gb': 'F#',
+                    'G#/Ab': 'Ab', 'A#/Bb': 'Bb'
+                };
+                const metadataKey = keyMap[songMetadata.key] || songMetadata.key;
+                setCurrentDetectedKey(metadataKey);
+            }
+        }
     }
 
-    // Ensure currentDetectedKey is valid for the available keys
-    const majorKeys = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'F', 'Bb', 'Eb', 'Ab', 'Db'];
-    const minorKeys = ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm'];
-    const availableKeys = originalDetectedMode === 'minor' ? minorKeys : majorKeys;
+    // Ensure currentDetectedKey is valid for the available chromatic keys
+    const availableKeys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
 
     if (!availableKeys.includes(currentDetectedKey)) {
         setCurrentDetectedKey(originalDetectedKey || detectedKey || availableKeys[0]);
@@ -491,7 +536,8 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         totalCounts[section.label] = (totalCounts[section.label] || 0) + 1;
     }
 
-    const seenSections = new Set();
+    // Track section content to distinguish true repeats from sections with same label but different lyrics
+    const seenSections = new Map(); // label → content fingerprint
     let sectionsHtml = '';
     let i = 0;
 
@@ -500,6 +546,7 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         const sectionKey = section.label;
         const isRepeatedSection = totalCounts[sectionKey] > 1;
         const shouldIndent = section.type === 'chorus' || isRepeatedSection;
+        const sectionContent = section.lines.map(l => l.trimEnd()).join('\n');
 
         // In 'first' mode, check if we've seen this chord pattern before
         let hideChords = false;
@@ -515,12 +562,14 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         }
 
         if (!seenSections.has(sectionKey)) {
-            seenSections.add(sectionKey);
+            seenSections.set(sectionKey, sectionContent);
             sectionsHtml += renderSection(section, isRepeatedSection, hideChords);
             i++;
-        } else if (compactMode) {
+        } else if (compactMode && sectionContent === seenSections.get(sectionKey)) {
+            // Only collapse if lyrics+chords are identical to the first instance
             let consecutiveCount = 0;
-            while (i < chordSections.length && chordSections[i].label === sectionKey) {
+            while (i < chordSections.length && chordSections[i].label === sectionKey
+                   && chordSections[i].lines.map(l => l.trimEnd()).join('\n') === seenSections.get(sectionKey)) {
                 consecutiveCount++;
                 i++;
             }
@@ -534,10 +583,15 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     const title = metadata.title || song?.title || 'Unknown Title';
     const artist = metadata.artist || song?.artist || '';
     const composer = metadata.writer || metadata.composer || song?.composer || '';
-    const sourceUrl = song?.source === 'classic-country' && song?.id
-        ? `https://www.classic-country-song-lyrics.com/${song.id}.html`
-        : null;
-    const bookDisplay = song?.book || null;
+    // Link to classic-country home page (individual pages are often broken)
+    // For bluegrass-lyrics, use the x_lyrics_url from ChordPro metadata
+    const sourceUrl = song?.source === 'classic-country'
+        ? 'https://www.classic-country-song-lyrics.com/'
+        : (song?.source === 'bluegrass-lyrics' && metadata.x_lyrics_url)
+            ? metadata.x_lyrics_url
+            : null;
+    const bookDisplay = metadata.x_book || song?.book || null;
+    const bookUrl = metadata.x_book_url || song?.book_url || null;
 
     // Build key dropdown options
     const keyOptions = availableKeys.map(k => {
@@ -547,12 +601,11 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         return `<option value="${k}" ${selected}>${label}</option>`;
     }).join('');
 
-    // Check for multiple versions
+    // Check for multiple versions — show "Back to all versions" button
     const groupId = song?.group_id;
     const versions = groupId ? (songGroups[groupId] || []) : [];
-    const otherVersionCount = versions.length - 1;
-    const versionHtml = otherVersionCount > 0
-        ? `<button class="see-versions-btn" data-group-id="${groupId}">See ${otherVersionCount} other version${otherVersionCount > 1 ? 's' : ''}</button>`
+    const versionHtml = versions.length > 1
+        ? `<button class="back-to-versions-btn" data-group-id="${groupId}" data-song-id="${song.id}">&#x2190; ${versions.length} versions</button>`
         : '';
 
     // Build artists list: primary artist + covering artists (from grassiness data, sorted by tier)
@@ -587,19 +640,35 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         infoItems.push(`<div class="info-item"><span class="info-label">Artists:</span> <span class="artists-list">${artistsHtml}</span></div>`);
     }
     if (bookDisplay) {
-        const bookUrl = song?.book_url || null;
         const bookHtml = bookUrl
             ? `<a href="${bookUrl}" target="_blank" rel="noopener">${escapeHtml(bookDisplay)}</a>`
             : escapeHtml(bookDisplay);
         infoItems.push(`<div class="info-item"><span class="info-label">From:</span> ${bookHtml}</div>`);
     }
 
-    // Source link for bottom of page
+    // Source attribution for bottom of page
     let sourceHtml = '';
+    const sourceDisplayNames = {
+        'classic-country': 'Classic Country Song Lyrics',
+        'golden-standard': 'Golden Standards Collection',
+        'tunearch': 'TuneArch.org',
+        'manual': 'Community Contribution',
+        'trusted-user': 'Community Contribution',
+        'pending': 'Community Contribution',
+        'banjo-hangout': 'Banjo Hangout',
+        'ultimate-guitar': 'Community Contribution',
+        'bluegrass-lyrics': 'BluegrassLyrics.com'
+    };
     if (sourceUrl) {
-        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${escapeHtml(song.id)}</a></div>`;
+        const sourceName = sourceDisplayNames[song?.source] || 'Source';
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${sourceName}</a></div>`;
+    } else if (song?.source === 'golden-standard' && bookUrl) {
+        const bookName = bookDisplay || 'Golden Standards Collection';
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${bookUrl}" target="_blank" rel="noopener">${escapeHtml(bookName)}</a></div>`;
     } else if (song?.tunearch_url) {
         sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${song.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a></div>`;
+    } else if (song?.source && sourceDisplayNames[song.source]) {
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> ${sourceDisplayNames[song.source]}</div>`;
     }
 
     // Tags with voting and "add your own" option
@@ -679,7 +748,7 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         partTabsHtml = `
             <div class="part-tabs">
                 <button class="part-tab ${activePartTab === 'lead-sheet' ? 'active' : ''}" data-part="lead-sheet">
-                    Lead Sheet
+                    Lyrics & Chords
                 </button>
                 <button class="part-tab ${activePartTab === 'tablature' ? 'active' : ''}" data-part="tablature">
                     ${escapeHtml(tabLabel)}
@@ -718,9 +787,17 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     const chordViewClass = showAbcView || !hasChords ? 'hidden' : '';
 
     // Header controls - disclosure toggles
+    // Show Notes button only when viewing from a list context
+    const hasListContext = listContext && listContext.listId;
+    const songMetadata = hasListContext ? getSongMetadata(listContext.listId, song?.id) : null;
+    const hasNotes = songMetadata?.notes && songMetadata.notes.trim();
+    const notesButtonHtml = hasListContext
+        ? `<button id="song-notes-btn" class="disclosure-btn ${hasNotes ? 'has-notes' : ''}" title="Song notes for this list" data-list-id="${listContext.listId}">📝 Notes</button>`
+        : '';
     const headerControlsHtml = `
         <div class="header-controls">
             <button id="flag-btn" class="flag-btn" title="Report an issue">🚩 Report</button>
+            ${notesButtonHtml}
             <button id="qc-toggle" class="disclosure-btn" title="Toggle controls">⚙️ Controls <span class="disclosure-arrow">${quickBarCollapsed ? '▼' : '▲'}</span></button>
             <button id="info-toggle" class="disclosure-btn" title="Toggle info">🎵 Info <span class="disclosure-arrow">${infoBarCollapsed ? '▼' : '▲'}</span></button>
         </div>
@@ -808,32 +885,70 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     `;
 
     // Focus header - shown only in fullscreen mode (via CSS)
+    // Check if we have list context and notes metadata for the bottom notes panel
+    const focusSongMetadata = hasListContext ? getSongMetadata(listContext.listId, song?.id) : null;
+    const focusHasNotes = focusSongMetadata?.notes && focusSongMetadata.notes.trim();
+
     const focusHeaderHtml = `
         <div class="focus-header">
-            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
-                <span>✕</span>
-                <span class="focus-btn-label">Exit</span>
-            </button>
+            <button id="focus-prev-btn" class="focus-list-nav" title="Previous song (←)">←</button>
             <div class="focus-title-area">
                 <span class="focus-title">${escapeHtml(title)}</span>
                 <span id="focus-position" class="focus-position"></span>
             </div>
+            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
+                <span>✕</span>
+                <span class="focus-btn-label">Exit</span>
+            </button>
+            <button id="focus-goto-song-btn" class="focus-nav-btn" title="View full song page">
+                <span>🎵</span>
+                <span class="focus-btn-label">Go to Song</span>
+            </button>
             <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
                 <span>⚙️</span>
                 <span class="focus-btn-label">Controls</span>
             </button>
+            <button id="focus-next-btn" class="focus-list-nav" title="Next song (→)">→</button>
         </div>
     `;
 
-    // Fixed position corner nav buttons for list navigation (shown in fullscreen with list context)
-    const cornerNavHtml = `
-        <button id="focus-prev-btn" class="focus-corner-nav focus-corner-prev" title="Previous song (←)">
-            <span class="corner-nav-arrow">←</span>
-        </button>
-        <button id="focus-next-btn" class="focus-corner-nav focus-corner-next" title="Next song (→)">
-            <span class="corner-nav-arrow">→</span>
-        </button>
-    `;
+    // Collapsible notes panel for focus mode (only when viewing from a list)
+    const notesCollapsed = localStorage.getItem('focusNotesCollapsed') !== 'false'; // collapsed by default
+    const savedPanelHeight = localStorage.getItem('focusNotesPanelHeight');
+    const panelHeightStyle = savedPanelHeight ? `style="--panel-height: ${savedPanelHeight}px"` : '';
+    const focusNotesMetadata = focusSongMetadata || {};
+    const focusNotesPanelHtml = hasListContext ? `
+        <div id="focus-notes-panel" class="focus-notes-panel ${notesCollapsed ? 'collapsed' : ''}" data-list-id="${listContext.listId}" data-song-id="${song?.id}" ${panelHeightStyle}>
+            <div id="focus-notes-drag-handle" class="focus-notes-drag-handle" title="Drag to resize">
+                <span class="drag-handle-bar"></span>
+            </div>
+            <button id="focus-notes-toggle" class="focus-notes-toggle" title="Toggle notes panel">
+                <span class="focus-notes-toggle-icon">${notesCollapsed ? '▲' : '▼'}</span>
+                <span class="focus-notes-toggle-label">Notes</span>
+                ${focusHasNotes ? '<span class="focus-notes-indicator">•</span>' : ''}
+            </button>
+            <div class="focus-notes-content">
+                <div class="focus-notes-fields">
+                    <div class="focus-notes-field">
+                        <label>Key</label>
+                        <select id="focus-notes-key">
+                            <option value="">--</option>
+                            ${['C', 'C#/Db', 'D', 'D#/Eb', 'E', 'F', 'F#/Gb', 'G', 'G#/Ab', 'A', 'A#/Bb', 'B'].map(k =>
+                                `<option value="${k}" ${focusNotesMetadata.key === k ? 'selected' : ''}>${k}</option>`
+                            ).join('')}
+                        </select>
+                    </div>
+                    <div class="focus-notes-field">
+                        <label>Tempo</label>
+                        <input type="number" id="focus-notes-tempo" min="40" max="300" value="${focusNotesMetadata.tempo || ''}" placeholder="BPM">
+                    </div>
+                </div>
+                <div class="focus-notes-textarea-wrapper">
+                    <textarea id="focus-notes-text" placeholder="Add notes for this song in this list...">${escapeHtml(focusNotesMetadata.notes || '')}</textarea>
+                </div>
+            </div>
+        </div>
+    ` : '';
 
     songContentEl.innerHTML = `
         ${focusHeaderHtml}
@@ -871,7 +986,7 @@ export function renderSong(song, chordpro, isInitialRender = false) {
             ${!hasChords && hasAbc ? '<div class="instrumental-notice"><em>Instrumental tune - see notation above</em></div>' : ''}
         </div>
         ${sourceHtml}
-        ${cornerNavHtml}
+        ${focusNotesPanelHtml}
     `;
 
     // Render ABC notation if showing
@@ -891,6 +1006,9 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     if (typeof window.updateQuickControls === 'function') {
         window.updateQuickControls();
     }
+
+    // Mark wrapped chord-lyrics lines for visual indicator
+    markWrappedLines();
 }
 
 /**
@@ -974,11 +1092,13 @@ function setupRenderOptionsListeners(song, chordpro) {
         });
     }
 
-    const seeVersionsBtn = songContentEl.querySelector('.see-versions-btn');
-    if (seeVersionsBtn) {
-        seeVersionsBtn.addEventListener('click', (e) => {
+    const backToVersionsBtn = songContentEl.querySelector('.back-to-versions-btn');
+    if (backToVersionsBtn) {
+        backToVersionsBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            showVersionPicker(seeVersionsBtn.dataset.groupId);
+            const gid = backToVersionsBtn.dataset.groupId;
+            const sid = backToVersionsBtn.dataset.songId;
+            openWork(sid, { groupId: gid });
         });
     }
 
@@ -1205,11 +1325,40 @@ function setupRenderOptionsListeners(song, chordpro) {
         });
     }
 
+    // Notes button opens notes sheet (when in list context)
+    const songNotesBtn = document.getElementById('song-notes-btn');
+    if (songNotesBtn && listContext && listContext.listId) {
+        songNotesBtn.addEventListener('click', () => {
+            openNotesSheet(listContext.listId, song?.id, song?.title);
+        });
+    }
+
     // Focus header buttons
     const focusExitBtn = document.getElementById('focus-exit-btn');
     if (focusExitBtn) {
         focusExitBtn.addEventListener('click', () => {
             exitFullscreen();
+        });
+    }
+
+    const focusGotoSongBtn = document.getElementById('focus-goto-song-btn');
+    if (focusGotoSongBtn) {
+        focusGotoSongBtn.addEventListener('click', () => {
+            // Exit focus mode and navigate to work view
+            setFullscreenMode(false);
+            document.body.classList.remove('fullscreen-mode');
+            document.body.classList.remove('has-list-context');
+
+            // Save the return URL so the back button can return to the list
+            if (listContext && listContext.listId) {
+                const returnUrl = `#list/${listContext.listId}/${song?.id || ''}`;
+                sessionStorage.setItem('songbook-return-url', returnUrl);
+            }
+
+            // Clear list view state and hide list header
+            clearListView();
+            // Navigate to song view
+            window.location.hash = `#song/${song?.id || ''}`;
         });
     }
 
@@ -1239,8 +1388,136 @@ function setupRenderOptionsListeners(song, chordpro) {
         });
     }
 
+    // Setup focus notes panel event listeners
+    setupFocusNotesPanelListeners(song);
+
     // Update focus header based on list context
     updateFocusHeader();
+}
+
+/**
+ * Toggle the focus notes panel collapsed/expanded state
+ */
+function toggleFocusNotesPanel() {
+    const panel = document.getElementById('focus-notes-panel');
+    const toggleIcon = panel?.querySelector('.focus-notes-toggle-icon');
+    if (!panel) return;
+
+    const isCollapsed = panel.classList.toggle('collapsed');
+    localStorage.setItem('focusNotesCollapsed', isCollapsed);
+
+    if (toggleIcon) {
+        toggleIcon.textContent = isCollapsed ? '▲' : '▼';
+    }
+}
+
+/**
+ * Setup event listeners for the focus notes panel
+ */
+function setupFocusNotesPanelListeners(song) {
+    const panel = document.getElementById('focus-notes-panel');
+    if (!panel) return;
+
+    const listId = panel.dataset.listId;
+    const songId = panel.dataset.songId;
+
+    // Toggle button
+    const toggleBtn = document.getElementById('focus-notes-toggle');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', toggleFocusNotesPanel);
+    }
+
+    // Debounce helper for saving
+    let saveTimeout = null;
+    const debouncedSave = () => {
+        if (saveTimeout) clearTimeout(saveTimeout);
+        saveTimeout = setTimeout(() => {
+            const key = document.getElementById('focus-notes-key')?.value || '';
+            const tempo = document.getElementById('focus-notes-tempo')?.value || '';
+            const notes = document.getElementById('focus-notes-text')?.value || '';
+
+            updateSongMetadata(listId, songId, {
+                key: key || undefined,
+                tempo: tempo ? parseInt(tempo, 10) : undefined,
+                notes: notes || undefined
+            });
+
+            // Update the indicator
+            const indicator = panel.querySelector('.focus-notes-indicator');
+            if (notes.trim()) {
+                if (!indicator) {
+                    const toggleBtn = document.getElementById('focus-notes-toggle');
+                    if (toggleBtn) {
+                        const indicatorEl = document.createElement('span');
+                        indicatorEl.className = 'focus-notes-indicator';
+                        indicatorEl.textContent = '•';
+                        toggleBtn.appendChild(indicatorEl);
+                    }
+                }
+            } else if (indicator) {
+                indicator.remove();
+            }
+        }, 500);
+    };
+
+    // Field change listeners
+    const keySelect = document.getElementById('focus-notes-key');
+    const tempoInput = document.getElementById('focus-notes-tempo');
+    const notesTextarea = document.getElementById('focus-notes-text');
+
+    if (keySelect) keySelect.addEventListener('change', debouncedSave);
+    if (tempoInput) tempoInput.addEventListener('input', debouncedSave);
+    if (notesTextarea) notesTextarea.addEventListener('input', debouncedSave);
+
+    // Drag handle for resizing
+    const dragHandle = document.getElementById('focus-notes-drag-handle');
+    if (dragHandle) {
+        let isDragging = false;
+        let startY = 0;
+        let startHeight = 0;
+
+        const onMouseDown = (e) => {
+            // Don't start drag if panel is collapsed
+            if (panel.classList.contains('collapsed')) return;
+
+            isDragging = true;
+            startY = e.clientY || e.touches?.[0]?.clientY;
+            startHeight = panel.offsetHeight;
+            document.body.classList.add('resizing-notes-panel');
+            e.preventDefault();
+        };
+
+        const onMouseMove = (e) => {
+            if (!isDragging) return;
+
+            const clientY = e.clientY || e.touches?.[0]?.clientY;
+            const deltaY = startY - clientY; // Negative because dragging up increases height
+            const newHeight = Math.max(100, Math.min(window.innerHeight * 0.8, startHeight + deltaY));
+
+            panel.style.setProperty('--panel-height', `${newHeight}px`);
+        };
+
+        const onMouseUp = () => {
+            if (!isDragging) return;
+
+            isDragging = false;
+            document.body.classList.remove('resizing-notes-panel');
+
+            // Save the height to localStorage
+            const currentHeight = panel.offsetHeight;
+            localStorage.setItem('focusNotesPanelHeight', currentHeight);
+        };
+
+        // Mouse events
+        dragHandle.addEventListener('mousedown', onMouseDown);
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+
+        // Touch events for mobile
+        dragHandle.addEventListener('touchstart', onMouseDown, { passive: false });
+        document.addEventListener('touchmove', onMouseMove, { passive: false });
+        document.addEventListener('touchend', onMouseUp);
+    }
 }
 
 /**
@@ -1358,6 +1635,13 @@ function setupAbcControlListeners(song, chordpro, abcContent) {
 export async function openSong(songId, options = {}) {
     if (!songViewEl || !resultsDivEl) return;
 
+    // Show Work button when in song-view (hidden on work dashboard)
+    const workViewBtn = document.getElementById('work-view-btn');
+    if (workViewBtn) workViewBtn.classList.remove('hidden');
+
+    // Resolve redirected work IDs (merged duplicates)
+    songId = resolveWorkId(songId);
+
     const { fromList = false, fromHistory = false, listId = null, fromDeepLink = false } = options;
 
     // Clear chordpro content FIRST to prevent stale render from subscribers
@@ -1433,6 +1717,14 @@ export async function openSong(songId, options = {}) {
             page_path: `/song/${songId}`
         });
     }
+
+    // Restore header buttons and clear interceptor that work-view may have set for placeholders
+    window.__editInterceptor = null;
+    const editBtnEl = document.getElementById('edit-song-btn');
+    const exportWrapperEl = document.getElementById('export-btn')?.closest('.export-wrapper');
+    if (editBtnEl) editBtnEl.classList.remove('hidden');
+    if (exportWrapperEl) exportWrapperEl.classList.remove('hidden');
+
     updateFavoriteButton();
     updateListPickerButton();
 
@@ -1623,9 +1915,10 @@ export async function showVersionPicker(groupId, options = {}) {
             const songId = item.dataset.songId;
             trackVersionPicker(groupId, 'select', songId);
             closeVersionPicker();
-            // Use openWork for tablature-only works to get track mixer
+            // Dashboard for: placeholders, tab-only, and multi-part works.
+            // Single-part songs with content go to song-view.
             const song = allSongs.find(s => s.id === songId);
-            if (isTabOnlyWork(song)) {
+            if (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song)) {
                 openWork(songId);
             } else {
                 openSong(songId, openOptions);
@@ -1826,20 +2119,31 @@ export function updateFocusHeader() {
 }
 
 /**
+ * Pluggable navigation router for list item navigation.
+ * Set by main.js to smart-route between openSong/openWork based on item type.
+ */
+let listItemRouter = null;
+export function setListItemRouter(fn) { listItemRouter = fn; }
+
+/**
  * Navigate to previous song in list
  */
 export function navigatePrev() {
     if (!listContext || listContext.currentIndex <= 0) return;
 
     const newIndex = listContext.currentIndex - 1;
-    const songId = listContext.songIds[newIndex];
+    const itemRef = listContext.songIds[newIndex];
 
     setListContext({
         ...listContext,
         currentIndex: newIndex
     });
 
-    openSong(songId);
+    if (listItemRouter) {
+        listItemRouter(itemRef);
+    } else {
+        openSong(itemRef);
+    }
 }
 
 /**
@@ -1849,14 +2153,18 @@ export function navigateNext() {
     if (!listContext || listContext.currentIndex >= listContext.songIds.length - 1) return;
 
     const newIndex = listContext.currentIndex + 1;
-    const songId = listContext.songIds[newIndex];
+    const itemRef = listContext.songIds[newIndex];
 
     setListContext({
         ...listContext,
         currentIndex: newIndex
     });
 
-    openSong(songId);
+    if (listItemRouter) {
+        listItemRouter(itemRef);
+    } else {
+        openSong(itemRef);
+    }
 }
 
 /**
@@ -1871,6 +2179,14 @@ export function goBack() {
 
     // Close list picker dropdown when navigating away
     if (listPickerDropdownEl) listPickerDropdownEl.classList.add('hidden');
+
+    // Check for a saved return URL (e.g., when coming from a list via "Go to Song")
+    const returnUrl = sessionStorage.getItem('songbook-return-url');
+    if (returnUrl) {
+        sessionStorage.removeItem('songbook-return-url');
+        window.location.hash = returnUrl;
+        return;
+    }
 
     if (historyInitialized && history.state) {
         history.back();

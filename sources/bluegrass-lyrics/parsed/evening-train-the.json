@@ -1,0 +1,59 @@
+{
+  "slug": "evening-train-the",
+  "title": "Evening Train, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/evening-train-the/",
+  "raw_lyrics": "I heard the laughter at the depot\nBut my tears fell like the rain\nWhen I saw them place the casket\nIn the baggage coach of the evening train\n\nThe baby\u2019s eyes were red from weepin\nHis little heart is filled with pain\nOh dad he cried they\u2019re takin mama\nAway from us on the evening train\n\nI turned to walk away from the depot\nIt seems I heard here call my name\nTake care of baby and tell him daring\nThat I\u2019m goin home on the evening train\n\nI pray that god will give me courage\nTo carry on til we meet again\nIt\u2019s hard to know she\u2019s gone forever\nThey\u2019re carryin her home on the evening train\n\nI heard the laughter at the depot\nBut my tears fell like the rain\nWhen I saw them place the casket\nIn the baggage coach of the evening train",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I heard the laughter at the depot",
+        "But my tears fell like the rain",
+        "When I saw them place the casket",
+        "In the baggage coach of the evening train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The baby\u2019s eyes were red from weepin",
+        "His little heart is filled with pain",
+        "Oh dad he cried they\u2019re takin mama",
+        "Away from us on the evening train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I turned to walk away from the depot",
+        "It seems I heard here call my name",
+        "Take care of baby and tell him daring",
+        "That I\u2019m goin home on the evening train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I pray that god will give me courage",
+        "To carry on til we meet again",
+        "It\u2019s hard to know she\u2019s gone forever",
+        "They\u2019re carryin her home on the evening train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I heard the laughter at the depot",
+        "But my tears fell like the rain",
+        "When I saw them place the casket",
+        "In the baggage coach of the evening train"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

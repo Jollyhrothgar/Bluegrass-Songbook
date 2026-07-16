@@ -1,0 +1,49 @@
+{
+  "slug": "this-weary-heart-you-stole-away",
+  "title": "This Weary Heart You Stole Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/this-weary-heart-you-stole-away/",
+  "raw_lyrics": "I wait for you dear all night long\nIt seems you never do get home\nI fall asleep at the break of day\nJust to drive these awful blues away\n\nWake up sweetheart the night has passed\nYou slept your troubles all away\nGet ready now to love again\nThis weary heart you stole away\n\nI heard you crying in your sleep\nYou said you found somebody new\nSo I\u2019ll live on and just pretend\nI could never love no one but you\n\nHow can you treat me like you do\nYou know I\u2019ve never done you wrong\nMy heart will always worship you\nBut still each night I\u2019m left alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wait for you dear all night long",
+        "It seems you never do get home",
+        "I fall asleep at the break of day",
+        "Just to drive these awful blues away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Wake up sweetheart the night has passed",
+        "You slept your troubles all away",
+        "Get ready now to love again",
+        "This weary heart you stole away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I heard you crying in your sleep",
+        "You said you found somebody new",
+        "So I\u2019ll live on and just pretend",
+        "I could never love no one but you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How can you treat me like you do",
+        "You know I\u2019ve never done you wrong",
+        "My heart will always worship you",
+        "But still each night I\u2019m left alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

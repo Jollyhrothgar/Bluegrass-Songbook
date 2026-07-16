@@ -1,0 +1,38 @@
+{
+  "slug": "midnight-moonlight",
+  "title": "Midnight Moonlight",
+  "source_url": "https://www.bluegrasslyrics.com/song/midnight-moonlight/",
+  "raw_lyrics": "Do you ever feel lonesome when you\u2019re down in San Antone\nBeg steal or borrow two nickels or a dime to call you on the phone\nI\u2019ll meet you at Alamo mission we can say our prayers\nThe Holy Ghost and the Virgin Mother will hear us as we kneel there\n\nIn the Midnight\nIn the Moonlight\nIn the Midnight Moonlight Moonlight\n\nDid you ever feel sorrow for the deeds that you have done\nWith no hope for tomorrow in the setting of the sun\nAnd the ocean is howling with things that might have been\nAnd that last good-morning sunrise would be the brightest you\u2019ve ever seen",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Do you ever feel lonesome when you\u2019re down in San Antone",
+        "Beg steal or borrow two nickels or a dime to call you on the phone",
+        "I\u2019ll meet you at Alamo mission we can say our prayers",
+        "The Holy Ghost and the Virgin Mother will hear us as we kneel there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "In the Midnight",
+        "In the Moonlight",
+        "In the Midnight Moonlight Moonlight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Did you ever feel sorrow for the deeds that you have done",
+        "With no hope for tomorrow in the setting of the sun",
+        "And the ocean is howling with things that might have been",
+        "And that last good-morning sunrise would be the brightest you\u2019ve ever seen"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

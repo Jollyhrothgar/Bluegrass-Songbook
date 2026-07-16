@@ -1,0 +1,49 @@
+{
+  "slug": "christmas-time-back-home",
+  "title": "Christmas Time Back Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/christmas-time-back-home/",
+  "raw_lyrics": "Back up in the mountains in that old home town of mine\nThere\u2019s not a brighter time of year than that of Christmas time\nThe bells in the little churchthey all begin to chime\nTelling all for miles around Rejoice! It\u2019s Christmas time!\n\nChristmas bells are ringing I hear the times so sweet\nThe carolers are singing; I hear them in the street\nOutside the white snow falling inside my heart I find\nA world of joy and peace on earth back home at Christmas time\n\nA candle in each window; they give a golden glow\nWhile out among the shimmering pines lights sparkle in the snow\nAnd through the lonely mountaintops the wind\u2019s shrill echoes cry\nFor peace on earth good will toward men and faith that will not die\n\nHigh above our little town so bright to be so far\nThere shines upon the whole wide world His gift our guiding star\nEveryone in each home can feel a peace sublime\nAnd know the joy the Yuletide brings to all at Christmastime",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Back up in the mountains in that old home town of mine",
+        "There\u2019s not a brighter time of year than that of Christmas time",
+        "The bells in the little churchthey all begin to chime",
+        "Telling all for miles around Rejoice! It\u2019s Christmas time!"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Christmas bells are ringing I hear the times so sweet",
+        "The carolers are singing; I hear them in the street",
+        "Outside the white snow falling inside my heart I find",
+        "A world of joy and peace on earth back home at Christmas time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A candle in each window; they give a golden glow",
+        "While out among the shimmering pines lights sparkle in the snow",
+        "And through the lonely mountaintops the wind\u2019s shrill echoes cry",
+        "For peace on earth good will toward men and faith that will not die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "High above our little town so bright to be so far",
+        "There shines upon the whole wide world His gift our guiding star",
+        "Everyone in each home can feel a peace sublime",
+        "And know the joy the Yuletide brings to all at Christmastime"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

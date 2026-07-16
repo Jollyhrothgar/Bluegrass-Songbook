@@ -1,0 +1,63 @@
+{
+  "slug": "on-a-hill-lone-and-gray",
+  "title": "On A Hill Lone And Gray",
+  "source_url": "https://www.bluegrasslyrics.com/song/on-a-hill-lone-and-gray/",
+  "raw_lyrics": "On a hill lone and gray\nIn a land far away\nIn a country beyond the blue sea\nWhere beneath that far sky\nWent a man for to die\nFor the world and for you and for me\n\nOh it bows down my heart\nAnd the tear drops do start\nWhen in memory that gray hill I see\nIt was there on its side\nJesus suffered yes he died\nTo redeem a poor sinner like me\n\nOft I hear the dull blow\nOf the hammer swung low\nThey are nailing my lord to the tree\nWith the cross he upraised\nWhile the multitude gazed\nHe ascended that hill lone and gray\n\nOh it bows down my heart\nAnd the tear drops do start\nWhen in memory that gray hill I see\nIt was there on its side\nJesus suffered yes he died\nTo redeem a poor sinner like me\nShout aloud to them I\u2019m told\nLet the glad tidings roll\nFrom the land to the end of the sea\nWhere beneath that far sky\nWent a man for to die\nFor the world and for you and for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On a hill lone and gray",
+        "In a land far away",
+        "In a country beyond the blue sea",
+        "Where beneath that far sky",
+        "Went a man for to die",
+        "For the world and for you and for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh it bows down my heart",
+        "And the tear drops do start",
+        "When in memory that gray hill I see",
+        "It was there on its side",
+        "Jesus suffered yes he died",
+        "To redeem a poor sinner like me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oft I hear the dull blow",
+        "Of the hammer swung low",
+        "They are nailing my lord to the tree",
+        "With the cross he upraised",
+        "While the multitude gazed",
+        "He ascended that hill lone and gray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh it bows down my heart",
+        "And the tear drops do start",
+        "When in memory that gray hill I see",
+        "It was there on its side",
+        "Jesus suffered yes he died",
+        "To redeem a poor sinner like me",
+        "Shout aloud to them I\u2019m told",
+        "Let the glad tidings roll",
+        "From the land to the end of the sea",
+        "Where beneath that far sky",
+        "Went a man for to die",
+        "For the world and for you and for me"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

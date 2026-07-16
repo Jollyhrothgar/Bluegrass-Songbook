@@ -1,0 +1,49 @@
+{
+  "slug": "hard-times-come-again-no-more",
+  "title": "Hard Times Come Again No More",
+  "source_url": "https://www.bluegrasslyrics.com/song/hard-times-come-again-no-more/",
+  "raw_lyrics": "Let us pause in life\u2019s pleasures and count the many tears\nWhile we all sup sorrow with the poor\nThere\u2019s a song that will linger forever in our ears\nOh, hard times come again no more\n\nIt\u2019s a song a sigh of the weary\nHard times hard times come again no more\nMany days you have lingered around my cabin door\nOh hard times come again no more\n\nThough we seek mirth and beauty and music bright and gay\nThey are frail forms a-waiting by our door\nThough their voices are silent, their pleading seems to say\nOh, hard times come again no more\n\nIt\u2019s a sigh that is wafted across the lowly plains\nIt\u2019s a wail that is heard upon the shore\nIt\u2019s a dirge that is murmured across the lonely grave\nOh hard times come again no more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Let us pause in life\u2019s pleasures and count the many tears",
+        "While we all sup sorrow with the poor",
+        "There\u2019s a song that will linger forever in our ears",
+        "Oh, hard times come again no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s a song a sigh of the weary",
+        "Hard times hard times come again no more",
+        "Many days you have lingered around my cabin door",
+        "Oh hard times come again no more"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though we seek mirth and beauty and music bright and gay",
+        "They are frail forms a-waiting by our door",
+        "Though their voices are silent, their pleading seems to say",
+        "Oh, hard times come again no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a sigh that is wafted across the lowly plains",
+        "It\u2019s a wail that is heard upon the shore",
+        "It\u2019s a dirge that is murmured across the lonely grave",
+        "Oh hard times come again no more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

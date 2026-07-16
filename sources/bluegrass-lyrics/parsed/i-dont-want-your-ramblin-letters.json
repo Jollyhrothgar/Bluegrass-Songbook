@@ -1,0 +1,39 @@
+{
+  "slug": "i-dont-want-your-ramblin-letters",
+  "title": "I Don\u2019t Want Your Ramblin Letters",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-dont-want-your-ramblin-letters/",
+  "raw_lyrics": "I don\u2019t want your rambling letters\nDon\u2019t want your picture in a frame\nAll I want is you in person\nWon\u2019t you let me change your name\n\nMama said you\u2019d come home soon\nPapa warned me not to wait\nSister thinks that you still love me\nHurry home right away\n\nI\u2019m so tired of long distance kisses\nLove by mail is all so cold\nI just want you in my arms dear\nThen our love just can\u2019t grow ol",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I don\u2019t want your rambling letters",
+        "Don\u2019t want your picture in a frame",
+        "All I want is you in person",
+        "Won\u2019t you let me change your name"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mama said you\u2019d come home soon",
+        "Papa warned me not to wait",
+        "Sister thinks that you still love me",
+        "Hurry home right away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m so tired of long distance kisses",
+        "Love by mail is all so cold",
+        "I just want you in my arms dear",
+        "Then our love just can\u2019t grow ol"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

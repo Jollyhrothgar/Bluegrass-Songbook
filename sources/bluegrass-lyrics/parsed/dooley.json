@@ -1,0 +1,49 @@
+{
+  "slug": "dooley",
+  "title": "Dooley",
+  "source_url": "https://www.bluegrasslyrics.com/song/dooley/",
+  "raw_lyrics": "Dooley was a good old man\nHe lived below the mill\nDooley had two daughters and a forty gallon still\nOne gal watched the boiler the other watched the spout\nMama corked the bottles when old Dooley fetched them out\n\nDooley, slipping up the holler\nDooley, trying to make a dollar\nDooley, give me a swaller and I\u2019ll pay you back some day\n\nThe revenuers came for him a slipping through the woods\nDooley kept behind them all and never lost his goods\nDooley was a trader when into town he\u2019d come\nSugar by the bushel and molasses by the ton\n\nI remember very well the day old Dooley died\nThe women folk looked sorry and the men stood \u2018round and cried\nNow Dooley\u2019s on the mountain he lies there all alone\nThey put a jug beside him and a barrel for a stone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dooley was a good old man",
+        "He lived below the mill",
+        "Dooley had two daughters and a forty gallon still",
+        "One gal watched the boiler the other watched the spout",
+        "Mama corked the bottles when old Dooley fetched them out"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Dooley, slipping up the holler",
+        "Dooley, trying to make a dollar",
+        "Dooley, give me a swaller and I\u2019ll pay you back some day"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The revenuers came for him a slipping through the woods",
+        "Dooley kept behind them all and never lost his goods",
+        "Dooley was a trader when into town he\u2019d come",
+        "Sugar by the bushel and molasses by the ton"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember very well the day old Dooley died",
+        "The women folk looked sorry and the men stood \u2018round and cried",
+        "Now Dooley\u2019s on the mountain he lies there all alone",
+        "They put a jug beside him and a barrel for a stone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

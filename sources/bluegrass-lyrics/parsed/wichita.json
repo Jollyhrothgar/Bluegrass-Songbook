@@ -1,0 +1,81 @@
+{
+  "slug": "wichita",
+  "title": "Wichita",
+  "source_url": "https://www.bluegrasslyrics.com/song/wichita/",
+  "raw_lyrics": "She went back to Wichita\nShe went back to her ma and pa\nReckon I saw her next to my truck\nPumping gas with the car packed up.\n\nWe talked as neighbors will\nThere waiting for the tanks to fill\nWe talked about nothing\nhow it might snow\nHow far she had to go.\n\nGoing back where the grass grows tall\nAnd the fields burn in the fall\nYou can still hear the night birds call\nBack in Wichita.\n\nShe came in \u201985\nShe came here as a July bride\nBut it never got easy\nnever got rich\nAin\u2019t got much but what she came here with.\n\nGood times have all been spent\nShe ain\u2019t broken but she\u2019s badly bent\nThere\u2019s nothing she wants here\nnothing that shines\nShe\u2019s made up her mind.\n\nShe says for all my time\nwell I ain\u2019t got much to show\nYou can tell that man of mine and anyone who wants to know\n\nGoing back where the grass grows tall\nAnd the fields burn in the fall\nYou can still hear the night birds call\nBack in Wichita.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She went back to Wichita",
+        "She went back to her ma and pa",
+        "Reckon I saw her next to my truck",
+        "Pumping gas with the car packed up."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We talked as neighbors will",
+        "There waiting for the tanks to fill",
+        "We talked about nothing",
+        "how it might snow",
+        "How far she had to go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Going back where the grass grows tall",
+        "And the fields burn in the fall",
+        "You can still hear the night birds call",
+        "Back in Wichita."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She came in \u201985",
+        "She came here as a July bride",
+        "But it never got easy",
+        "never got rich",
+        "Ain\u2019t got much but what she came here with."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Good times have all been spent",
+        "She ain\u2019t broken but she\u2019s badly bent",
+        "There\u2019s nothing she wants here",
+        "nothing that shines",
+        "She\u2019s made up her mind."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She says for all my time",
+        "well I ain\u2019t got much to show",
+        "You can tell that man of mine and anyone who wants to know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Going back where the grass grows tall",
+        "And the fields burn in the fall",
+        "You can still hear the night birds call",
+        "Back in Wichita."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

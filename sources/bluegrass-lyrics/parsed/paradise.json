@@ -1,0 +1,59 @@
+{
+  "slug": "paradise",
+  "title": "Paradise",
+  "source_url": "https://www.bluegrasslyrics.com/song/paradise/",
+  "raw_lyrics": "When I was a child my family would travel\nDown to Western Kentucky where my parents were born\nAnd there\u2019s a backwards old town that\u2019s often remembered\nSo many times that my memories are worn.\n\nAnd daddy won\u2019t you take me back to Muhlenberg County\nDown by the Green River where Paradise lay\nWell I\u2019m sorry my son but you\u2019re too late in asking\nMister Peabody\u2019s coal train has hauled it away\n\nWell sometimes we\u2019d travel right down the Green River\nTo the abandoned old prison down by Adrie Hill\nWhere the air smelled like snakes and we\u2019d shoot with our pistols\nBut empty pop bottles was all we would kill.\n\nThen the coal company came with the world\u2019s largest shovel\nAnd they tortured the timber and stripped all the land\nWell they dug for their coal till the land was forsaken\nThen they wrote it all down as the progress of man.\n\nWhen I die let my ashes float down the Green River\nLet my soul roll on up to the Rochester dam\nI\u2019ll be halfway to Heaven with Paradise waiting\nJust five miles away from wherever I am.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I was a child my family would travel",
+        "Down to Western Kentucky where my parents were born",
+        "And there\u2019s a backwards old town that\u2019s often remembered",
+        "So many times that my memories are worn."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And daddy won\u2019t you take me back to Muhlenberg County",
+        "Down by the Green River where Paradise lay",
+        "Well I\u2019m sorry my son but you\u2019re too late in asking",
+        "Mister Peabody\u2019s coal train has hauled it away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well sometimes we\u2019d travel right down the Green River",
+        "To the abandoned old prison down by Adrie Hill",
+        "Where the air smelled like snakes and we\u2019d shoot with our pistols",
+        "But empty pop bottles was all we would kill."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then the coal company came with the world\u2019s largest shovel",
+        "And they tortured the timber and stripped all the land",
+        "Well they dug for their coal till the land was forsaken",
+        "Then they wrote it all down as the progress of man."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I die let my ashes float down the Green River",
+        "Let my soul roll on up to the Rochester dam",
+        "I\u2019ll be halfway to Heaven with Paradise waiting",
+        "Just five miles away from wherever I am."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "pallet-on-your-floor",
+  "title": "Pallet on Your Floor",
+  "source_url": "https://www.bluegrasslyrics.com/song/pallet-on-your-floor/",
+  "raw_lyrics": "Make me a pallet on your floor\nMake me a pallet on your floor\nWhen I reach Atlanta and got no place to go\nMake me a pallet on your floor\n\nThese blues are every where I see\nweary blues are every where I see\nBlues are all around me every where I see\nNobody\u2019s had these blues as bad as me\n\nCome on all you good time friends of mine\nOoh Come on all you good time friends of mine\nWhen I had a dollar you treated me so fine\nWhere\u2019d you go when I only have a dime\n\nI\u2019d be more than satisfied\nTo hop on a old freight train and ride\nBut when I reach Atlanta and got no place to go\nWon\u2019t you make me a pallet on your floor",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Make me a pallet on your floor",
+        "Make me a pallet on your floor",
+        "When I reach Atlanta and got no place to go",
+        "Make me a pallet on your floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "These blues are every where I see",
+        "weary blues are every where I see",
+        "Blues are all around me every where I see",
+        "Nobody\u2019s had these blues as bad as me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come on all you good time friends of mine",
+        "Ooh Come on all you good time friends of mine",
+        "When I had a dollar you treated me so fine",
+        "Where\u2019d you go when I only have a dime"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d be more than satisfied",
+        "To hop on a old freight train and ride",
+        "But when I reach Atlanta and got no place to go",
+        "Won\u2019t you make me a pallet on your floor"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

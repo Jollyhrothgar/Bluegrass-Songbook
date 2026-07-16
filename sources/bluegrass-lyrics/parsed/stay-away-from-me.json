@@ -1,0 +1,39 @@
+{
+  "slug": "stay-away-from-me",
+  "title": "Stay Away From Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/stay-away-from-me/",
+  "raw_lyrics": "Stay away from me, you\u2019re causing me trouble\nIt\u2019s been that way, since from the start\nGo on your way, you have another waiting\nStay away from me, you\u2019re breaking my heart\n\nOh the sky is blue, and the sun is shinning\nAnd Autumn leaves have turned to brown\nI loved you so, but I can\u2019t have you\nStay away from me, stay out of town\n\nStay away from me, I know what you\u2019re after\nIts best if we, stay far apart\nYou brought me pain, no joy no laughter\nStay away from me, you\u2019re breaking my heart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Stay away from me, you\u2019re causing me trouble",
+        "It\u2019s been that way, since from the start",
+        "Go on your way, you have another waiting",
+        "Stay away from me, you\u2019re breaking my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the sky is blue, and the sun is shinning",
+        "And Autumn leaves have turned to brown",
+        "I loved you so, but I can\u2019t have you",
+        "Stay away from me, stay out of town"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Stay away from me, I know what you\u2019re after",
+        "Its best if we, stay far apart",
+        "You brought me pain, no joy no laughter",
+        "Stay away from me, you\u2019re breaking my heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "going-to-the-west",
+  "title": "Going To The West",
+  "source_url": "https://www.bluegrasslyrics.com/song/going-to-the-west/",
+  "raw_lyrics": "In this fair land you\u2019ll stay no more\nHere labor is in vain\nYou\u2019ll leave the mountains of our birth\nAnd seek the fertile plains\nYou\u2019re going to the west\n\nYou say you will not go with me\nYou turn your eyes away\nYou say you will not follow me\nNo matter what I say\nI\u2019m going to the west\n\nThe years have passed since we first met\nWhen you became my bride\nNow I must journey far away\nWithout you by my side\nI\u2019m going to the west\n\nYou\u2019ll leave me here, in this land I love\nMid scenes so bright and fair\nWhere fragrant flowers are blooming\nAnd music fills the air\nYou\u2019re going to the west",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In this fair land you\u2019ll stay no more",
+        "Here labor is in vain",
+        "You\u2019ll leave the mountains of our birth",
+        "And seek the fertile plains",
+        "You\u2019re going to the west"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You say you will not go with me",
+        "You turn your eyes away",
+        "You say you will not follow me",
+        "No matter what I say",
+        "I\u2019m going to the west"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The years have passed since we first met",
+        "When you became my bride",
+        "Now I must journey far away",
+        "Without you by my side",
+        "I\u2019m going to the west"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll leave me here, in this land I love",
+        "Mid scenes so bright and fair",
+        "Where fragrant flowers are blooming",
+        "And music fills the air",
+        "You\u2019re going to the west"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

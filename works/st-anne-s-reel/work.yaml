@@ -4,6 +4,7 @@ artist: Traditional
 default_key: G
 tags:
 - Instrumental
+- Fiddle
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,3 +13,4 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+notes: Traditional reel. Very popular at jam sessions.

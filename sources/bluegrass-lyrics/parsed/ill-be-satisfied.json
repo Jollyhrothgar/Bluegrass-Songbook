@@ -1,0 +1,49 @@
+{
+  "slug": "ill-be-satisfied",
+  "title": "I\u2019ll Be Satisfied",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-be-satisfied/",
+  "raw_lyrics": "When my soul is singing in that promised land above\nI\u2019ll be satisfied\nPraising Christ the Savior for redeeming grace and love\nI\u2019ll be satisfied\n\nI\u2019ll be satisfied ( satisfied )\nI\u2019ll be satisfied ( satisfied )\nWhen my soul is resting in the presence of the Lord\nI\u2019ll be satisfied\n\nLiving in a city where the soul shall never die\nI\u2019ll be satisfied\nThere to meet with loved ones never more to say good-bye\nI\u2019ll be satisfied\n\nWhen I meet the ransomed over on the golden shore\nI\u2019ll be satisfied\nThere I\u2019ll join the angels singing praises ever more\nI\u2019ll be satisfied",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When my soul is singing in that promised land above",
+        "I\u2019ll be satisfied",
+        "Praising Christ the Savior for redeeming grace and love",
+        "I\u2019ll be satisfied"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll be satisfied ( satisfied )",
+        "I\u2019ll be satisfied ( satisfied )",
+        "When my soul is resting in the presence of the Lord",
+        "I\u2019ll be satisfied"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Living in a city where the soul shall never die",
+        "I\u2019ll be satisfied",
+        "There to meet with loved ones never more to say good-bye",
+        "I\u2019ll be satisfied"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I meet the ransomed over on the golden shore",
+        "I\u2019ll be satisfied",
+        "There I\u2019ll join the angels singing praises ever more",
+        "I\u2019ll be satisfied"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

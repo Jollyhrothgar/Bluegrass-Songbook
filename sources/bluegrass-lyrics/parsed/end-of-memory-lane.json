@@ -1,0 +1,49 @@
+{
+  "slug": "end-of-memory-lane",
+  "title": "End Of Memory Lane",
+  "source_url": "https://www.bluegrasslyrics.com/song/end-of-memory-lane/",
+  "raw_lyrics": "Down at the end of memory lane\nThere\u2019s many who have walked it in gladness\nI was the one who walked it last\nI walked it alone in sadness\n\nI received a letter from my love\nI opened it and this is what it said\nI\u2019m sorry if hurt you but now it is too late\nFor another man my darliung I have wed\n\nI remember her sweet little face\nAnd her little freckled nose\nWith her golden hair hanging down her back\nTied with a big blue ribbon bow\n\nWe were pals and chums together there\nI loved her with all my heart and soul\nBut she married another without a thought or care\nAnd she left me in this world alone and cold",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Down at the end of memory lane",
+        "There\u2019s many who have walked it in gladness",
+        "I was the one who walked it last",
+        "I walked it alone in sadness"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I received a letter from my love",
+        "I opened it and this is what it said",
+        "I\u2019m sorry if hurt you but now it is too late",
+        "For another man my darliung I have wed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember her sweet little face",
+        "And her little freckled nose",
+        "With her golden hair hanging down her back",
+        "Tied with a big blue ribbon bow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We were pals and chums together there",
+        "I loved her with all my heart and soul",
+        "But she married another without a thought or care",
+        "And she left me in this world alone and cold"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "worried-man-blues",
+  "title": "Worried Man Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/worried-man-blues/",
+  "raw_lyrics": "It takes a worried man to sing a worried song\nIt takes a worried man to sing a worried song\nIt takes a worried man to sing a worried song\nI\u2019m worried now but I won\u2019t be worried long\n\nI went across the river and I laid down to sleep\nI went across the river and I laid down to sleep\nI went across the river and I laid down to sleep\nWhen I woke up, there were shackles on my feet\n\nTwenty one links of chain around my leg\nTwenty one links of chain around my leg\nTwenty one links of chain around my leg\nAnd on each link, the initials of my name\n\nI asked the judge what\u2019s gonna be my fine\nI asked the judge what\u2019s gonna be my fine\nI asked the judge what\u2019s gonna be my fine\nTwenty one years on the Rocky Mountain Line\n\nIf anyone should ask you who composed this song\nIf anyone should ask you who composed this song\nIf anyone should ask you who composed this song\nSay it was me and I sing it all day long",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "It takes a worried man to sing a worried song",
+        "It takes a worried man to sing a worried song",
+        "It takes a worried man to sing a worried song",
+        "I\u2019m worried now but I won\u2019t be worried long"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went across the river and I laid down to sleep",
+        "I went across the river and I laid down to sleep",
+        "I went across the river and I laid down to sleep",
+        "When I woke up, there were shackles on my feet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Twenty one links of chain around my leg",
+        "Twenty one links of chain around my leg",
+        "Twenty one links of chain around my leg",
+        "And on each link, the initials of my name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I asked the judge what\u2019s gonna be my fine",
+        "I asked the judge what\u2019s gonna be my fine",
+        "I asked the judge what\u2019s gonna be my fine",
+        "Twenty one years on the Rocky Mountain Line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If anyone should ask you who composed this song",
+        "If anyone should ask you who composed this song",
+        "If anyone should ask you who composed this song",
+        "Say it was me and I sing it all day long"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

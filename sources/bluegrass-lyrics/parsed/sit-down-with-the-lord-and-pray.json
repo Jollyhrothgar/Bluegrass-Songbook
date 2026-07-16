@@ -1,0 +1,39 @@
+{
+  "slug": "sit-down-with-the-lord-and-pray",
+  "title": "Sit Down With The Lord And Pray",
+  "source_url": "https://www.bluegrasslyrics.com/song/sit-down-with-the-lord-and-pray/",
+  "raw_lyrics": "Sit down, sit down, sit down, sit down\nSit down won\u2019t you sit down with the Lord and talk today\nSit down, sit down, sit down, sit down\nSit down won\u2019t you sit down with the Lord  today and pray\n\nMy family and my friends I know mean a lot\nAnd I know who\u2019s the one who provides it all\nIt\u2019s Jesus from on high I can praise him til I die\nI\u2019m so glad I\u2019ll be with him when I die\n\nYou won\u2019t always have this chance so gather while you can\nSome of you I know will let it pass\nThere\u2019s sadness in my heart knowing we will have to part\nI\u2019m so glad I\u2019ll be with him when I die",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Sit down, sit down, sit down, sit down",
+        "Sit down won\u2019t you sit down with the Lord and talk today",
+        "Sit down, sit down, sit down, sit down",
+        "Sit down won\u2019t you sit down with the Lord  today and pray"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My family and my friends I know mean a lot",
+        "And I know who\u2019s the one who provides it all",
+        "It\u2019s Jesus from on high I can praise him til I die",
+        "I\u2019m so glad I\u2019ll be with him when I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You won\u2019t always have this chance so gather while you can",
+        "Some of you I know will let it pass",
+        "There\u2019s sadness in my heart knowing we will have to part",
+        "I\u2019m so glad I\u2019ll be with him when I die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

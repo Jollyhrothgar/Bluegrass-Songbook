@@ -1,0 +1,11 @@
+id: aint-i-been-good-to-you
+title: Ain’t I Been Good to You
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/aint-i-been-good-to-you/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: those-brown-eyes
+title: Those Brown Eyes
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/those-brown-eyes/
+      imported_at: '2026-02-08'

@@ -1,0 +1,66 @@
+{
+  "slug": "carry-me-back-to-the-bluegrass",
+  "title": "Carry Me Back To The Bluegrass",
+  "source_url": "https://www.bluegrasslyrics.com/song/carry-me-back-to-the-bluegrass/",
+  "raw_lyrics": "Well the week is gone good people\nAnd Friday\u2019s here at last\nI\u2019m going to take my old banjo\nPlay me a little bluegrass\n\nI\u2019m going were the mountains are higher\nAnd the bluegrass is all around\nPlay me a song for my true true love\nListen to that mournful sound\n\nCarry me back to the bluegrass\nThat\u2019s where I long to be\nI\u2019m going to take my weary soul\nAnd head down to Torny creek\n\nI long long to see the old folks\nI long to see my home\nI long to hear from my true true love\nAnd have her all alone\n\nI\u2019ve got a girl she lives down yonder\nIn a little place called Buffalo\nAs soon as I get back to her\nThat\u2019s where I want to go\n\n* Refrain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well the week is gone good people",
+        "And Friday\u2019s here at last",
+        "I\u2019m going to take my old banjo",
+        "Play me a little bluegrass"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going were the mountains are higher",
+        "And the bluegrass is all around",
+        "Play me a song for my true true love",
+        "Listen to that mournful sound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Carry me back to the bluegrass",
+        "That\u2019s where I long to be",
+        "I\u2019m going to take my weary soul",
+        "And head down to Torny creek"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I long long to see the old folks",
+        "I long to see my home",
+        "I long to hear from my true true love",
+        "And have her all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got a girl she lives down yonder",
+        "In a little place called Buffalo",
+        "As soon as I get back to her",
+        "That\u2019s where I want to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "* Refrain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

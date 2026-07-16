@@ -1,0 +1,49 @@
+{
+  "slug": "church-street-blues",
+  "title": "Church Street Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/church-street-blues/",
+  "raw_lyrics": "Lord I been hangin\u2019 out of town in that low down rain\nWatchin\u2019 good time Charlie friend is drivin\u2019 me insane\nDown on shady Charlotte Street the green lights look red\nWish I was back home on the farm in my feather bed.\n\nGet myself a rockin\u2019 chair\nTo see if I can lose\nThem thin dime hard times\nHell on Church Street blues.\n\nFound myself a picker friend who\u2019s read yesterday\u2019s news\nFolded up page twenty-one and stuck it in my shoe\nGave a nickle to the poor my good turn for the day\nFolded up my own little folder threw it far away.\n\nLord I wish I had some guitar strings Old Black Diamond brand\nI\u2019d string up this old Martin box and go and join some band\nBut I guess I\u2019ll just stay right here just pick and sing a while\nTry to make me a little change and give them folks a smile.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lord I been hangin\u2019 out of town in that low down rain",
+        "Watchin\u2019 good time Charlie friend is drivin\u2019 me insane",
+        "Down on shady Charlotte Street the green lights look red",
+        "Wish I was back home on the farm in my feather bed."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Get myself a rockin\u2019 chair",
+        "To see if I can lose",
+        "Them thin dime hard times",
+        "Hell on Church Street blues."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Found myself a picker friend who\u2019s read yesterday\u2019s news",
+        "Folded up page twenty-one and stuck it in my shoe",
+        "Gave a nickle to the poor my good turn for the day",
+        "Folded up my own little folder threw it far away."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lord I wish I had some guitar strings Old Black Diamond brand",
+        "I\u2019d string up this old Martin box and go and join some band",
+        "But I guess I\u2019ll just stay right here just pick and sing a while",
+        "Try to make me a little change and give them folks a smile."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

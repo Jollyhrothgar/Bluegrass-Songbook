@@ -1,0 +1,43 @@
+{
+  "slug": "little-rosewood-casket",
+  "title": "Little Rosewood Casket",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-rosewood-casket/",
+  "raw_lyrics": "There\u2019s a little rosewood casket\nResting on a marble stand\nWith a packet of old love letters\nWritten by my true love\u2019s hand\n\nGo and bring them to me sister\nRead them o\u2019er for me tonight\nI have often tried but could not\nFor the tears that filled my eyes\n\nWhen I\u2019m dead and in my casket\nWhen I gently fall asleep\nFall asleep to wake in heaven\nDearest sister do not weep\nTake his letters and his locket\nPlace them gently on my heart\nBut this golden ring that he gave me\nFrom my finger never part",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a little rosewood casket",
+        "Resting on a marble stand",
+        "With a packet of old love letters",
+        "Written by my true love\u2019s hand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go and bring them to me sister",
+        "Read them o\u2019er for me tonight",
+        "I have often tried but could not",
+        "For the tears that filled my eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I\u2019m dead and in my casket",
+        "When I gently fall asleep",
+        "Fall asleep to wake in heaven",
+        "Dearest sister do not weep",
+        "Take his letters and his locket",
+        "Place them gently on my heart",
+        "But this golden ring that he gave me",
+        "From my finger never part"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

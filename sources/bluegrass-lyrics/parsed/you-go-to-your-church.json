@@ -1,0 +1,49 @@
+{
+  "slug": "you-go-to-your-church",
+  "title": "You Go To Your Church",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-go-to-your-church/",
+  "raw_lyrics": "You go to your church and I\u2019ll go to mine\nBut let\u2019s walk along together\nOur fathers built them side by side\nSo let\u2019s walk along together\n\nThe road is rough and the way is long\nBut we\u2019ll help each other over\nYou go to your church and I\u2019ll go to mine\nBut let\u2019s walk along together\n\nYou go to your church and I\u2019ll go to mine\nBut let\u2019s walk along together\nOur Heavenly Father is the same\nSo let\u2019s walk along together\n\nThe Lord will be at your church today\nBut he\u2019ll be at my church also\nYou go to your church and I\u2019ll go to mine\nBut let\u2019s walk along together",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You go to your church and I\u2019ll go to mine",
+        "But let\u2019s walk along together",
+        "Our fathers built them side by side",
+        "So let\u2019s walk along together"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The road is rough and the way is long",
+        "But we\u2019ll help each other over",
+        "You go to your church and I\u2019ll go to mine",
+        "But let\u2019s walk along together"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You go to your church and I\u2019ll go to mine",
+        "But let\u2019s walk along together",
+        "Our Heavenly Father is the same",
+        "So let\u2019s walk along together"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The Lord will be at your church today",
+        "But he\u2019ll be at my church also",
+        "You go to your church and I\u2019ll go to mine",
+        "But let\u2019s walk along together"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

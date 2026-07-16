@@ -1,0 +1,49 @@
+{
+  "slug": "pretty-saro",
+  "title": "Pretty Saro",
+  "source_url": "https://www.bluegrasslyrics.com/song/pretty-saro/",
+  "raw_lyrics": "When I first came to this country in 1849\nI saw many fair lovers but I did not see mine\nI viewed the world \u2019round me saw I was quite alone\nAnd me a poor stranger and a long way from home\n\nOh my true love she don\u2019t want me and it\u2019s this I understand\nShe wants a freeholder and I have no land\nBut I could maintain her on silver and gold\nAnd all of the other things that my love\u2019s house could hold\n\nOh I wish I was a little dove, had wings and could fly\nStraight to my love\u2019s bosom this night I\u2019d draw nigh\nAnd in her little small arms all night I would lay\nAnd think of pretty Saro till the dawning of day\n\nIt\u2019s fair thee well to old mother and fare thee well to father too\nI\u2019m going for to ramble this wide world all through\nAnd when I get weary I\u2019ll sit down and cry\nAnd think of my Saro pretty Saro my bride",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I first came to this country in 1849",
+        "I saw many fair lovers but I did not see mine",
+        "I viewed the world \u2019round me saw I was quite alone",
+        "And me a poor stranger and a long way from home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my true love she don\u2019t want me and it\u2019s this I understand",
+        "She wants a freeholder and I have no land",
+        "But I could maintain her on silver and gold",
+        "And all of the other things that my love\u2019s house could hold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I wish I was a little dove, had wings and could fly",
+        "Straight to my love\u2019s bosom this night I\u2019d draw nigh",
+        "And in her little small arms all night I would lay",
+        "And think of pretty Saro till the dawning of day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s fair thee well to old mother and fare thee well to father too",
+        "I\u2019m going for to ramble this wide world all through",
+        "And when I get weary I\u2019ll sit down and cry",
+        "And think of my Saro pretty Saro my bride"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

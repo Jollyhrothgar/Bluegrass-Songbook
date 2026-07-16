@@ -1,0 +1,49 @@
+{
+  "slug": "dust-on-the-bible",
+  "title": "Dust On The Bible",
+  "source_url": "https://www.bluegrasslyrics.com/song/dust-on-the-bible/",
+  "raw_lyrics": "I went to a home one day to see some friends of mine\nOf all their books and magazines not a Bible could I find\nI asked them for the Bible when they brought it what a shame\nFor the dust was covered o\u2019er it not a finger print was plain\n\nDust on the Bible dust on the Holy Word\nThe words of all our prophets and the sayings of our Lord\nOf all the other books you\u2019ll find there\u2019s none salvation holds\nGet that dust off the Bible and redeem your poor your soul\n\nYou can read your magazines read of love and tragfic things\nBut not one word of Bible verse not a scripture do you know\nWhen it is the very truth and its contents good for you\nBut if dust is covered o\u2019er it it is sure to doom your soul\n\nIf you have a friend you\u2019d like to help along life\u2019s way\nJust tell him that the Good Book shows a mortal how to pray\nThe best advice to give him that will make his burden light\nIs to dust the family Bible crade the wrong way for the right",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I went to a home one day to see some friends of mine",
+        "Of all their books and magazines not a Bible could I find",
+        "I asked them for the Bible when they brought it what a shame",
+        "For the dust was covered o\u2019er it not a finger print was plain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Dust on the Bible dust on the Holy Word",
+        "The words of all our prophets and the sayings of our Lord",
+        "Of all the other books you\u2019ll find there\u2019s none salvation holds",
+        "Get that dust off the Bible and redeem your poor your soul"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can read your magazines read of love and tragfic things",
+        "But not one word of Bible verse not a scripture do you know",
+        "When it is the very truth and its contents good for you",
+        "But if dust is covered o\u2019er it it is sure to doom your soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you have a friend you\u2019d like to help along life\u2019s way",
+        "Just tell him that the Good Book shows a mortal how to pray",
+        "The best advice to give him that will make his burden light",
+        "Is to dust the family Bible crade the wrong way for the right"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

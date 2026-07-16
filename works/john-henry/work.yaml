@@ -5,6 +5,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+- Instrumental
+- Bluegrass
+- OldTime
 parts:
 - type: lead-sheet
   format: chordpro

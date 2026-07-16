@@ -1,0 +1,39 @@
+{
+  "slug": "kentucky-girl",
+  "title": "Kentucky Girl",
+  "source_url": "https://www.bluegrasslyrics.com/song/kentucky-girl/",
+  "raw_lyrics": "Kentucky girl are you lonesome tonight\nKentucky girl do you miss me\nDoes that old moon shine on the bluegrass as bright\nAs it did on the night you first kissed me\n\nIn a valley \u2018neath the mountains so high\nThe sweetest place in all the world\nIn a cabin with the vines o\u2019er the door\nThat\u2019s where I left my Kentucky girl\n\nI\u2019m far away from old Kentucky tonight\nAnd the blue eyed girl that I love so\nBut I\u2019m heading home in the silvery moonlight\nWith open arms she waits I know",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Kentucky girl are you lonesome tonight",
+        "Kentucky girl do you miss me",
+        "Does that old moon shine on the bluegrass as bright",
+        "As it did on the night you first kissed me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In a valley \u2018neath the mountains so high",
+        "The sweetest place in all the world",
+        "In a cabin with the vines o\u2019er the door",
+        "That\u2019s where I left my Kentucky girl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m far away from old Kentucky tonight",
+        "And the blue eyed girl that I love so",
+        "But I\u2019m heading home in the silvery moonlight",
+        "With open arms she waits I know"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

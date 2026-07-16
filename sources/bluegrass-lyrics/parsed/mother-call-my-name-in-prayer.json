@@ -1,0 +1,49 @@
+{
+  "slug": "mother-call-my-name-in-prayer",
+  "title": "Mother Call My Name In Prayer",
+  "source_url": "https://www.bluegrasslyrics.com/song/mother-call-my-name-in-prayer/",
+  "raw_lyrics": "While kneeling by her beside in a cottage on the hill\nMy mother prayed her blessing for me there\nShe was talking then with Jesus while everything was still\nAnd I heard my mother call my name in prayer\n\nYes I heard my mother call my name in prayer\nShe was pouring out her heart to Jesus there\nThen I gave my heart to Him and He saved my soul from sin\nFor I heard my mother call my name in prayer\n\nShe was anxious for her boy to be just what he ought to be\nAnd she asked the lord to take Him in His care\nJust the worlds I can\u2019t remember but I know she prayed for me\nFor I heard my mother call my name in played\n\nThen I gave my heart to Jesus and I\u2019m living now for him\nAnd someday I\u2019ll go and meet him in the air\nFor he heard my mother praying and he saved my soul from sin\nYes he heard my mother call my name in prayer",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "While kneeling by her beside in a cottage on the hill",
+        "My mother prayed her blessing for me there",
+        "She was talking then with Jesus while everything was still",
+        "And I heard my mother call my name in prayer"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Yes I heard my mother call my name in prayer",
+        "She was pouring out her heart to Jesus there",
+        "Then I gave my heart to Him and He saved my soul from sin",
+        "For I heard my mother call my name in prayer"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was anxious for her boy to be just what he ought to be",
+        "And she asked the lord to take Him in His care",
+        "Just the worlds I can\u2019t remember but I know she prayed for me",
+        "For I heard my mother call my name in played"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then I gave my heart to Jesus and I\u2019m living now for him",
+        "And someday I\u2019ll go and meet him in the air",
+        "For he heard my mother praying and he saved my soul from sin",
+        "Yes he heard my mother call my name in prayer"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

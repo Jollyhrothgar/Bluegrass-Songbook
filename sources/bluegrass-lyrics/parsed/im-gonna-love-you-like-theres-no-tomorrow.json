@@ -1,0 +1,49 @@
+{
+  "slug": "im-gonna-love-you-like-theres-no-tomorrow",
+  "title": "I\u2019m Gonna Love You Like There\u2019s No Tomorrow",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-gonna-love-you-like-theres-no-tomorrow/",
+  "raw_lyrics": "For six long years I\u2019ve been here in this prison\nlivin my life behind bars in this dirty cell\ntomorrow they\u2019re goin to take me down to nashville\nand send my soul to heaven or to hell\n\nBut I\u2019m goin to love you like there\u2019s no tomorrow\nI\u2019m gonna love you like there\u2019s no yesterday\nI\u2019m gonna hug and kiss away your sorrow\nI\u2019m gonna love you like there\u2019s no tomorrow\n\nthe warden said my last request was granted\nyou could come and stay with me tonight\nyou\u2019re the only one who ever really loved me\nso hold me in your arms hold me tight\n\ni know that my life will soon be over\nand the life of our baby child is just begun\nthere\u2019s only one thought thats left to haunt me\njust to think that what i\u2019ve lost i might have won",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "For six long years I\u2019ve been here in this prison",
+        "livin my life behind bars in this dirty cell",
+        "tomorrow they\u2019re goin to take me down to nashville",
+        "and send my soul to heaven or to hell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "But I\u2019m goin to love you like there\u2019s no tomorrow",
+        "I\u2019m gonna love you like there\u2019s no yesterday",
+        "I\u2019m gonna hug and kiss away your sorrow",
+        "I\u2019m gonna love you like there\u2019s no tomorrow"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "the warden said my last request was granted",
+        "you could come and stay with me tonight",
+        "you\u2019re the only one who ever really loved me",
+        "so hold me in your arms hold me tight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "i know that my life will soon be over",
+        "and the life of our baby child is just begun",
+        "there\u2019s only one thought thats left to haunt me",
+        "just to think that what i\u2019ve lost i might have won"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: will-the-roses-bloom-again
+title: Will The Roses Bloom Again
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/will-the-roses-bloom-again/
+      imported_at: '2026-02-08'

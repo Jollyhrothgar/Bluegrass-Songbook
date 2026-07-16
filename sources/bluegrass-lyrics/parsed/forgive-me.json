@@ -1,0 +1,39 @@
+{
+  "slug": "forgive-me",
+  "title": "Forgive Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/forgive-me/",
+  "raw_lyrics": "Forgive me for all the pain I\u2019ve caused you\nForgive me for unkind words I\u2019ve said\nI thought once that I could live without you\nPlease forgive me and I\u2019ll make it up somehow\n\nI left you and left you broken hearted\nI left you but now I can\u2019t forget\nI thought once that I could live without you\nBut I\u2019m paying with a broken heart instead\n\nI wish I had never made you blue sweet heart\nI wish I could live it over now\nI thought once that I could live without you\nPlease forgive me and I\u2019ll make it up somehow",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Forgive me for all the pain I\u2019ve caused you",
+        "Forgive me for unkind words I\u2019ve said",
+        "I thought once that I could live without you",
+        "Please forgive me and I\u2019ll make it up somehow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I left you and left you broken hearted",
+        "I left you but now I can\u2019t forget",
+        "I thought once that I could live without you",
+        "But I\u2019m paying with a broken heart instead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I had never made you blue sweet heart",
+        "I wish I could live it over now",
+        "I thought once that I could live without you",
+        "Please forgive me and I\u2019ll make it up somehow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

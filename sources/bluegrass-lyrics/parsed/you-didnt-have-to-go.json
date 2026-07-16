@@ -1,0 +1,29 @@
+{
+  "slug": "you-didnt-have-to-go",
+  "title": "You Didn\u2019t Have to Go",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-didnt-have-to-go/",
+  "raw_lyrics": "You didn\u2019t have to go you knew that I\u2019d be blue\nAnd now you\u2019re far away I don\u2019t\u2005know\u2005what I\u2019ll do\nIt\u2005won\u2019t be very long there\u2019ll come a\u2005day I know\nYou\u2019ll see that you were wrong you didn\u2019t\u205fhave\u205fto\u205fgo\n\nWhat made you\u205fchange your mind why\u205fdid you say goodbye\nYou left our love behind you left me here to cry\nI guess you didn\u2019t know where this would lead me to\nThere\u2019ll never be a day of sunshine without you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You didn\u2019t have to go you knew that I\u2019d be blue",
+        "And now you\u2019re far away I don\u2019t\u2005know\u2005what I\u2019ll do",
+        "It\u2005won\u2019t be very long there\u2019ll come a\u2005day I know",
+        "You\u2019ll see that you were wrong you didn\u2019t\u205fhave\u205fto\u205fgo"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What made you\u205fchange your mind why\u205fdid you say goodbye",
+        "You left our love behind you left me here to cry",
+        "I guess you didn\u2019t know where this would lead me to",
+        "There\u2019ll never be a day of sunshine without you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

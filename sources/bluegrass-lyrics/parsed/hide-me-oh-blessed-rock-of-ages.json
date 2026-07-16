@@ -1,0 +1,28 @@
+{
+  "slug": "hide-me-oh-blessed-rock-of-ages",
+  "title": "Hide Me Oh Blessed Rock of Ages",
+  "source_url": "https://www.bluegrasslyrics.com/song/hide-me-oh-blessed-rock-of-ages/",
+  "raw_lyrics": "Oh thy blessed rock of ages\nTrusting now dear Lord in thee\nKeep me til my journey\u2019s ended\nTil they blessed face I\u2019ll see\n\nHide me oh blessed rock of ages\nTil they face I\u2019ll see\nWhen the storms around me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh thy blessed rock of ages",
+        "Trusting now dear Lord in thee",
+        "Keep me til my journey\u2019s ended",
+        "Til they blessed face I\u2019ll see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hide me oh blessed rock of ages",
+        "Til they face I\u2019ll see",
+        "When the storms around me"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

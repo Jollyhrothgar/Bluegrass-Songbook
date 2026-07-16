@@ -1,0 +1,60 @@
+{
+  "slug": "bellville-georgia",
+  "title": "Bellville Georgia",
+  "source_url": "https://www.bluegrasslyrics.com/song/bellville-georgia/",
+  "raw_lyrics": "I\u2019ll tell you all a story that I think you\u2019ll understand\nTravelin\u2019 thru Georgia ramblin\u2019 across the land\nI passed the Bellville depot and something said to me\nStop here son there\u2019s something you should see\n\nI stopped a while and rested on the depot steps\nThe tall pines wavin\u2019 in the breeze the air was clear and fresh\nThat Georgia winter sunshine was warmin\u2019up my back\nAnd I saw the train comin\u2019 down the track\n\nGod came thru Bellville Georgia\nHe was ridin\u2019 on the noon-day train\nIt\u2019s all power to Him and praise His holy name\nHe never got off of the train\nHe never got off of the train.\n\nI\u2019ve never had a day like that since I have been alive\nMy body full of feelin\u2019 there was vision in my eyes\nI\u2019ve traveled this world over just to meet that certain train\nAnd I knew my life will never be the same\n\nWell I don\u2019t know where He\u2019s goin\u2019 but I know He likes to ride\nAcross the hills and valleys through the prairies thru the skies\nAnd I know the time is comin\u2019 if the world don\u2019t ever change\nEverybody\u2019s got to meet that train.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll tell you all a story that I think you\u2019ll understand",
+        "Travelin\u2019 thru Georgia ramblin\u2019 across the land",
+        "I passed the Bellville depot and something said to me",
+        "Stop here son there\u2019s something you should see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I stopped a while and rested on the depot steps",
+        "The tall pines wavin\u2019 in the breeze the air was clear and fresh",
+        "That Georgia winter sunshine was warmin\u2019up my back",
+        "And I saw the train comin\u2019 down the track"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "God came thru Bellville Georgia",
+        "He was ridin\u2019 on the noon-day train",
+        "It\u2019s all power to Him and praise His holy name",
+        "He never got off of the train",
+        "He never got off of the train."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve never had a day like that since I have been alive",
+        "My body full of feelin\u2019 there was vision in my eyes",
+        "I\u2019ve traveled this world over just to meet that certain train",
+        "And I knew my life will never be the same"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I don\u2019t know where He\u2019s goin\u2019 but I know He likes to ride",
+        "Across the hills and valleys through the prairies thru the skies",
+        "And I know the time is comin\u2019 if the world don\u2019t ever change",
+        "Everybody\u2019s got to meet that train."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

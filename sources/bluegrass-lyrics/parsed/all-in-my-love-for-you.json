@@ -1,0 +1,49 @@
+{
+  "slug": "all-in-my-love-for-you",
+  "title": "All In My Love For You",
+  "source_url": "https://www.bluegrasslyrics.com/song/all-in-my-love-for-you/",
+  "raw_lyrics": "I\u2019m continually amazed with wonder\nAt all the things you do\nThere\u2019s no escaping this spell I\u2019m under\nThat\u2019s all in my love for you.\n\nNow I hold you close and hear you whisper\nYour love for me is true\nThese are the words I try to say\nThat\u2019s all in my love for you.\n\nSo as I am as we believe\nin love songs when they\u2019re new\nAnd I believe in what I feel\nThat\u2019s all in my love for you.\n\nThose things I said the other night\nWhen you had seen me blue\nYour common sense for what is right\nThat\u2019s all in my love for you.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m continually amazed with wonder",
+        "At all the things you do",
+        "There\u2019s no escaping this spell I\u2019m under",
+        "That\u2019s all in my love for you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I hold you close and hear you whisper",
+        "Your love for me is true",
+        "These are the words I try to say",
+        "That\u2019s all in my love for you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So as I am as we believe",
+        "in love songs when they\u2019re new",
+        "And I believe in what I feel",
+        "That\u2019s all in my love for you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Those things I said the other night",
+        "When you had seen me blue",
+        "Your common sense for what is right",
+        "That\u2019s all in my love for you."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "half-as-much",
+  "title": "Half As Much",
+  "source_url": "https://www.bluegrasslyrics.com/song/half-as-much/",
+  "raw_lyrics": "If you love me half as much as I love you\nYou wouldn\u2019t worry me half as much as you do\nYou\u2019re nice to me when there\u2019s no one else around\nYou only build me up to let me down\n\nIf you missed me half as much as I miss you\nYou wouldn\u2019t stay away half as much as you do\nI know that I would never feel so blue\nIf you only loved me half as much as I love you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If you love me half as much as I love you",
+        "You wouldn\u2019t worry me half as much as you do",
+        "You\u2019re nice to me when there\u2019s no one else around",
+        "You only build me up to let me down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you missed me half as much as I miss you",
+        "You wouldn\u2019t stay away half as much as you do",
+        "I know that I would never feel so blue",
+        "If you only loved me half as much as I love you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

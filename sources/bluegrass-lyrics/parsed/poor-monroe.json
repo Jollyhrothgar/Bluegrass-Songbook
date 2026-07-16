@@ -1,0 +1,42 @@
+{
+  "slug": "poor-monroe",
+  "title": "Poor Monroe",
+  "source_url": "https://www.bluegrasslyrics.com/song/poor-monroe/",
+  "raw_lyrics": "Just because he\u2019s lazy sits around with the blues\nThey run Monroe off without his shoes\nHe always was lazy and he never liked to work\nBut now his feet they are bare as he runs through the dirt\n\nIf my family should ever do me that way\nId put my shoes on and go far away\nBut if they didn\u2019t give me time they say I had to go\nThen my feet would be bare I\u2019d be just like Monroe\n\nWell i guess they told him\nThey didn\u2019t need him there\nAnd if he was out of the way\nThey would draw welfare\nThat\u2019s whats messing up the country and making it so tough\nWhile monroe\u2019s living it down\nHis family\u2019s living it up",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just because he\u2019s lazy sits around with the blues",
+        "They run Monroe off without his shoes",
+        "He always was lazy and he never liked to work",
+        "But now his feet they are bare as he runs through the dirt"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If my family should ever do me that way",
+        "Id put my shoes on and go far away",
+        "But if they didn\u2019t give me time they say I had to go",
+        "Then my feet would be bare I\u2019d be just like Monroe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Well i guess they told him",
+        "They didn\u2019t need him there",
+        "And if he was out of the way",
+        "They would draw welfare",
+        "That\u2019s whats messing up the country and making it so tough",
+        "While monroe\u2019s living it down",
+        "His family\u2019s living it up"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

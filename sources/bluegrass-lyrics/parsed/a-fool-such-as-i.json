@@ -1,0 +1,29 @@
+{
+  "slug": "a-fool-such-as-i",
+  "title": "A Fool Such As I",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-fool-such-as-i/",
+  "raw_lyrics": "Pardon me if I\u2019m sentimental when we say goodbye\nDon\u2019t be angry with me darling should I cry\nWhen you\u2019re gone I\u2019ll dream a little dream as years go by\nNow and then there\u2019s a fool such as I\n\nNow and then there\u2019s a fool such as I am over you\nYou thaught me how to love and now you say that we are thru\nI\u2019m a fool but I love you dear until the end of time\nNow and then there\u2019s a fool such as I",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Pardon me if I\u2019m sentimental when we say goodbye",
+        "Don\u2019t be angry with me darling should I cry",
+        "When you\u2019re gone I\u2019ll dream a little dream as years go by",
+        "Now and then there\u2019s a fool such as I"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now and then there\u2019s a fool such as I am over you",
+        "You thaught me how to love and now you say that we are thru",
+        "I\u2019m a fool but I love you dear until the end of time",
+        "Now and then there\u2019s a fool such as I"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

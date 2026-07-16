@@ -1,0 +1,11 @@
+id: please-dont-wake-me
+title: Please Don’t Wake Me
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/please-dont-wake-me/
+      imported_at: '2026-02-08'

@@ -1,0 +1,39 @@
+{
+  "slug": "walk-softly-on-this-heart-of-mine",
+  "title": "Walk Softly On This Heart Of Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/walk-softly-on-this-heart-of-mine/",
+  "raw_lyrics": "You say you\u2019re sorry once again dear\nYou want me to take you back once more\nYou say you need a helping hand dear\nBut that\u2019s what you told me once before\n\nWalk softly on this heart of mine love\nDon\u2019t treat it mean and so unkind\nLet it rest in peace and quiet love\nWalk softly on this heart of mine\n\nI know you soon will find a new love\nI feel your heart is turned to stone\nBut please let me down real easy\nFor loneliness moves in as you move on",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You say you\u2019re sorry once again dear",
+        "You want me to take you back once more",
+        "You say you need a helping hand dear",
+        "But that\u2019s what you told me once before"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Walk softly on this heart of mine love",
+        "Don\u2019t treat it mean and so unkind",
+        "Let it rest in peace and quiet love",
+        "Walk softly on this heart of mine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know you soon will find a new love",
+        "I feel your heart is turned to stone",
+        "But please let me down real easy",
+        "For loneliness moves in as you move on"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

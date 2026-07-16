@@ -1,0 +1,65 @@
+{
+  "slug": "lights-on-the-hill",
+  "title": "Lights On The Hill",
+  "source_url": "https://www.bluegrasslyrics.com/song/lights-on-the-hill/",
+  "raw_lyrics": "It\u2019s a long straight road and my engines a wheeling\nI can\u2019t help but think about a good night\u2019s sleep\nAnd the long long road and my life are a callin\u2019 me\n\nThese rough old hands are glued to the wheel\nFive foot of fence from the way that they feel\nAnd the lights coming over the hill are a blinding me\n\nThere\u2019s rain on the road and I can see the load start to shiftin\u2019\nToo late to see the post and I haven\u2019 got a ghost of a chance\nThe windshield wipers are  beatin\u2019 in time\nThe song they sing is a part of my mind\nAnd I can\u2019t believe this is really happening to me\n\nGod I\u2019m over the edge and down the mountain side\nI know they\u2019ll tell about the night I died\nBetween the rain and the lights on the hill  are a blindin\u2019 me\n\nIt\u2019s a long tough road from a way down south\nA mans gotta find a little food for his mouth\nAnd a home for a girl as sweet as honey can be\n\nSo it\u2019s down through the gears shes a startin to pull\nThe gage on the tank is a showin\u2019 full\nThe lights comin\u2019 over the hill are a blindin\u2019 me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a long straight road and my engines a wheeling",
+        "I can\u2019t help but think about a good night\u2019s sleep",
+        "And the long long road and my life are a callin\u2019 me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "These rough old hands are glued to the wheel",
+        "Five foot of fence from the way that they feel",
+        "And the lights coming over the hill are a blinding me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s rain on the road and I can see the load start to shiftin\u2019",
+        "Too late to see the post and I haven\u2019 got a ghost of a chance",
+        "The windshield wipers are  beatin\u2019 in time",
+        "The song they sing is a part of my mind",
+        "And I can\u2019t believe this is really happening to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God I\u2019m over the edge and down the mountain side",
+        "I know they\u2019ll tell about the night I died",
+        "Between the rain and the lights on the hill  are a blindin\u2019 me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a long tough road from a way down south",
+        "A mans gotta find a little food for his mouth",
+        "And a home for a girl as sweet as honey can be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So it\u2019s down through the gears shes a startin to pull",
+        "The gage on the tank is a showin\u2019 full",
+        "The lights comin\u2019 over the hill are a blindin\u2019 me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "too-sweet-to-last",
+  "title": "Too Sweet To Last",
+  "source_url": "https://www.bluegrasslyrics.com/song/too-sweet-to-last/",
+  "raw_lyrics": "Here\u2019s the story of two childhood sweethearts\nAnd the love that you shared still untold\nHow our simple little vows they were broken\nAnd the love that I treasured more than gold\n\nAre you tired of the life that you\u2019re living\nDoes your mind wander back to the past\nDo your think of the love you\u2019ve forsaken\nDarling true love is too sweet to last\n\nI remember that night in the moonlight\nwhen you said that you\u2019d found someone new\ndo you realize the heartaches you caused me\nyou should know that my love was so true\n\nAlone in sadness I\u2019m traveling\nI\u2019m lost on the sea of regret\nWandering back to the place of my childhood\nAnd the one I\u2019ve always loved the best",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Here\u2019s the story of two childhood sweethearts",
+        "And the love that you shared still untold",
+        "How our simple little vows they were broken",
+        "And the love that I treasured more than gold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Are you tired of the life that you\u2019re living",
+        "Does your mind wander back to the past",
+        "Do your think of the love you\u2019ve forsaken",
+        "Darling true love is too sweet to last"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember that night in the moonlight",
+        "when you said that you\u2019d found someone new",
+        "do you realize the heartaches you caused me",
+        "you should know that my love was so true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Alone in sadness I\u2019m traveling",
+        "I\u2019m lost on the sea of regret",
+        "Wandering back to the place of my childhood",
+        "And the one I\u2019ve always loved the best"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

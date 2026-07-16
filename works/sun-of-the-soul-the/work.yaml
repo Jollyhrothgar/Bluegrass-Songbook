@@ -1,0 +1,11 @@
+id: sun-of-the-soul-the
+title: Sun Of The Soul, The
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/sun-of-the-soul-the/
+      imported_at: '2026-02-08'

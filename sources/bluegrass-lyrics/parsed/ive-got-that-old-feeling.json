@@ -1,0 +1,43 @@
+{
+  "slug": "ive-got-that-old-feeling",
+  "title": "I\u2019ve Got That Old Feeling",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-got-that-old-feeling/",
+  "raw_lyrics": "No matter what I say or do\nI just can\u2019t seem to get inside your heart\nWhat have I done wrong\nLately you\u2019re so far away\nYou just don\u2019t seem to hold me like you use to\nSomethin\u2019s goin\u2019 on\n\nI\u2019ve got that ol\u2019 feelin\u2019 you\u2019re leavin\u2019\nI\u2019m so tired of good-bye\nI can\u2019t wait on your love forever\nWhile you change your mind\n\nMornin\u2019 finds us face to face\nI feel you starin\u2019 through me while I\u2019m talkin\u2019\nWhat\u2019s come over you\nFamiliar looks I recognize\nThe same ol\u2019 looks that said good-bye the last time\nSomethin\u2019 I\u2019m use to",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "No matter what I say or do",
+        "I just can\u2019t seem to get inside your heart",
+        "What have I done wrong",
+        "Lately you\u2019re so far away",
+        "You just don\u2019t seem to hold me like you use to",
+        "Somethin\u2019s goin\u2019 on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve got that ol\u2019 feelin\u2019 you\u2019re leavin\u2019",
+        "I\u2019m so tired of good-bye",
+        "I can\u2019t wait on your love forever",
+        "While you change your mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mornin\u2019 finds us face to face",
+        "I feel you starin\u2019 through me while I\u2019m talkin\u2019",
+        "What\u2019s come over you",
+        "Familiar looks I recognize",
+        "The same ol\u2019 looks that said good-bye the last time",
+        "Somethin\u2019 I\u2019m use to"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

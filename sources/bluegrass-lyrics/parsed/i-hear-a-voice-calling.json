@@ -1,0 +1,51 @@
+{
+  "slug": "i-hear-a-voice-calling",
+  "title": "I Hear A Voice Calling",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-hear-a-voice-calling/",
+  "raw_lyrics": "I hear a voice calling\nIt must be our Lord (it must be our Lord)\nIts coming from heaven on high\nI hear a voice calling\nI\u2019ve gained a reward (I\u2019ve gained a reward)\nFor the land where we never shall die\n\nThe savior who died, on cruel Calvary\nHe shed His life blood that the world might be free\nSo follow His footsteps, up the narrow way\nAnd be ready to meet Him when He calls on that day\n\nThe savior has paid a great price for me\nHe gave His life on Calvary\nSo I\u2019ll follow His footsteps up the narrow way\nI\u2019ll pay my debt on the great judgment day\n\nThen she closed her eyes forever\nNever to see us no more\nUntil we meet our darling\nOn that bright and peaceful shore",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I hear a voice calling",
+        "It must be our Lord (it must be our Lord)",
+        "Its coming from heaven on high",
+        "I hear a voice calling",
+        "I\u2019ve gained a reward (I\u2019ve gained a reward)",
+        "For the land where we never shall die"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The savior who died, on cruel Calvary",
+        "He shed His life blood that the world might be free",
+        "So follow His footsteps, up the narrow way",
+        "And be ready to meet Him when He calls on that day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The savior has paid a great price for me",
+        "He gave His life on Calvary",
+        "So I\u2019ll follow His footsteps up the narrow way",
+        "I\u2019ll pay my debt on the great judgment day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then she closed her eyes forever",
+        "Never to see us no more",
+        "Until we meet our darling",
+        "On that bright and peaceful shore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

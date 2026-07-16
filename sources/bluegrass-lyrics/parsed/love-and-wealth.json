@@ -1,0 +1,39 @@
+{
+  "slug": "love-and-wealth",
+  "title": "Love And Wealth",
+  "source_url": "https://www.bluegrasslyrics.com/song/love-and-wealth/",
+  "raw_lyrics": "Darling I am all alone in our little mountain home\nIt\u2019s lonely cold and loveless now inside\nFor your childish vows of love lasted only one short year\nThen you went away to be another\u2019s bride\n\nYou will never know the pain\nThat I felt the day you left\nShould you ever wed again\nLet me wish you love and wealth\n\nFor that same old whippoorwill\u00a0\u00a0\u00a0breaks the silence on the hill\nAs  I stand and gaze upon it\u2019s faded wall\nWhere your picture used to hang\u00a0\u00a0\u00a0in a little golden frame\nAnd the vision of your smile I still recall",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Darling I am all alone in our little mountain home",
+        "It\u2019s lonely cold and loveless now inside",
+        "For your childish vows of love lasted only one short year",
+        "Then you went away to be another\u2019s bride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You will never know the pain",
+        "That I felt the day you left",
+        "Should you ever wed again",
+        "Let me wish you love and wealth"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For that same old whippoorwill\u00a0\u00a0\u00a0breaks the silence on the hill",
+        "As  I stand and gaze upon it\u2019s faded wall",
+        "Where your picture used to hang\u00a0\u00a0\u00a0in a little golden frame",
+        "And the vision of your smile I still recall"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

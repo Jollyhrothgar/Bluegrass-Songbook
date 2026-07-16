@@ -1,0 +1,65 @@
+{
+  "slug": "dreaming-of-a-little-cabin",
+  "title": "Dreaming Of A Little Cabin",
+  "source_url": "https://www.bluegrasslyrics.com/song/dreaming-of-a-little-cabin/",
+  "raw_lyrics": "In dreams of yesterday I wandered\nBack to my little cabin door.\nI strolled beside an old rock garden\nAnd saw familiar scenes once more.\nI heard the organ softly playing\nIts music came so sweet and low.\nAnd I heard my mother sweetly singing\nAs oft I did so long ago.\n\nI was dreaming of a little cabin\nAnd I heard somebody call my name.\nI Looked and saw a sweet old lady\nAnd it seemed I was a child again.\nShe gently put her arms around me\nAnd kissed her little boy once more.\nI knew it was the same sweet mother\nThat had kissed me many times before\n\nI heard her sing the \u201cRock of Ages\u201d\nAnd \u201cSilver Threads Among the Gold\u201d.\nShe told me once again of Jesus\nWithin that little cabin fold.\nShe opened up her faded Bible\nWhere the family records used to be\nAnd I knew it was the same sweet mother\nThat years ago had cradled me.\n\nAn orphan through this world I wander\nSince mother left the old homestead.\nNo one to pray for me at twilight\nNo place to lay my weary head.\nI miss her voice so gently calling\nI miss her precious guiding hand.\nBut I know that when I reach God\u2019s city\nI\u2019ll hear her call my name again.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In dreams of yesterday I wandered",
+        "Back to my little cabin door.",
+        "I strolled beside an old rock garden",
+        "And saw familiar scenes once more.",
+        "I heard the organ softly playing",
+        "Its music came so sweet and low.",
+        "And I heard my mother sweetly singing",
+        "As oft I did so long ago."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I was dreaming of a little cabin",
+        "And I heard somebody call my name.",
+        "I Looked and saw a sweet old lady",
+        "And it seemed I was a child again.",
+        "She gently put her arms around me",
+        "And kissed her little boy once more.",
+        "I knew it was the same sweet mother",
+        "That had kissed me many times before"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I heard her sing the \u201cRock of Ages\u201d",
+        "And \u201cSilver Threads Among the Gold\u201d.",
+        "She told me once again of Jesus",
+        "Within that little cabin fold.",
+        "She opened up her faded Bible",
+        "Where the family records used to be",
+        "And I knew it was the same sweet mother",
+        "That years ago had cradled me."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "An orphan through this world I wander",
+        "Since mother left the old homestead.",
+        "No one to pray for me at twilight",
+        "No place to lay my weary head.",
+        "I miss her voice so gently calling",
+        "I miss her precious guiding hand.",
+        "But I know that when I reach God\u2019s city",
+        "I\u2019ll hear her call my name again."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

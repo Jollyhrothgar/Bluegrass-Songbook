@@ -1,0 +1,14 @@
+id: the-gloaming-robert-wheeler-iv
+title: "The Gloaming"
+artist: "Robert Wheeler IV"
+composers: [Robert Wheeler IV]
+default_key: C
+tags: []
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: trusted-user
+      imported_at: '2026-03-10'

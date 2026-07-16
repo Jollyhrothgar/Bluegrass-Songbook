@@ -1,0 +1,49 @@
+{
+  "slug": "let-me-be-your-friend",
+  "title": "Let Me Be Your Friend",
+  "source_url": "https://www.bluegrasslyrics.com/song/let-me-be-your-friend/",
+  "raw_lyrics": "Many times I\u2019ve thought about you\nMany times I\u2019ve wondered why\nThat you\u2019d ever go and leave me\nAnd this heart you taught to cry\n\nDarling wait until I see you\nSince you say it is the end\nThough I know that you don\u2019t love me\nWon\u2019t you let me be your friend\n\nAs I lay upon my pillow\nThinking of you in my dreams\nAre you happy with another\nI\u2019m so lonesome here it seems\n\nDo you ever think about me\nWill you love again someday\nWill you ever think my darling\nOf this heart you stole away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Many times I\u2019ve thought about you",
+        "Many times I\u2019ve wondered why",
+        "That you\u2019d ever go and leave me",
+        "And this heart you taught to cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Darling wait until I see you",
+        "Since you say it is the end",
+        "Though I know that you don\u2019t love me",
+        "Won\u2019t you let me be your friend"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I lay upon my pillow",
+        "Thinking of you in my dreams",
+        "Are you happy with another",
+        "I\u2019m so lonesome here it seems"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Do you ever think about me",
+        "Will you love again someday",
+        "Will you ever think my darling",
+        "Of this heart you stole away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "my-old-kentucky-home",
+  "title": "My Old Kentucky Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-old-kentucky-home/",
+  "raw_lyrics": "The sun shines bright on my old Kentucky home\n\u2018Tis summer, the folks there are gay\nThe corn top\u2019s ripe and the meadow\u2019s in bloom\nWhile the birds make music all the day\n\nSo weep no more, my lady\nOh, weep no more, today\nWe\u2019ll sing one song for the my old Kentucky home\nFor my old Kentucky home far away\n\nThe young folks roll on the little cabin floor\nAll merry, all happy and bright\nBy \u2018n by hard times come a-knocking at the door\nThen my old Kentucky home good night\n\nThey hunt no more for the \u2018possum and the coon\nOn meadow, the hill and the shore\nThey sing no more by the glimmer of the moon\nOn the bench by that old cabin door\n\nThe head must bow and the back will have to bend\nWherever the poor folks may go\nA few more days and the trouble will end\nIn the field where sugar-canes may grow\n\nA few more days for to tote the weary load\nNo matter, \u2019twill never be light\nA few more days till we totter on the road\nThen my old Kentucky home, good night",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The sun shines bright on my old Kentucky home",
+        "\u2018Tis summer, the folks there are gay",
+        "The corn top\u2019s ripe and the meadow\u2019s in bloom",
+        "While the birds make music all the day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So weep no more, my lady",
+        "Oh, weep no more, today",
+        "We\u2019ll sing one song for the my old Kentucky home",
+        "For my old Kentucky home far away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The young folks roll on the little cabin floor",
+        "All merry, all happy and bright",
+        "By \u2018n by hard times come a-knocking at the door",
+        "Then my old Kentucky home good night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They hunt no more for the \u2018possum and the coon",
+        "On meadow, the hill and the shore",
+        "They sing no more by the glimmer of the moon",
+        "On the bench by that old cabin door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The head must bow and the back will have to bend",
+        "Wherever the poor folks may go",
+        "A few more days and the trouble will end",
+        "In the field where sugar-canes may grow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A few more days for to tote the weary load",
+        "No matter, \u2019twill never be light",
+        "A few more days till we totter on the road",
+        "Then my old Kentucky home, good night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

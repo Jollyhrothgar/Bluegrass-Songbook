@@ -1,0 +1,39 @@
+{
+  "slug": "your-selfish-heart",
+  "title": "Your Selfish Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/your-selfish-heart/",
+  "raw_lyrics": "I\u2019m going away to stay awhile\nJust to ease my worried mind\nYou never cared for me my love\nSo I\u2019m leaving you behind\n\nIt\u2019s been this way so long my dear\nWhy can\u2019t you understand\nYour selfish heart broke up our home\nJust for another man\n\nI tried to live my life alone\nAll through these lonely years\nI keep your picture here with  me\nJust to dry these bitter tears",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going away to stay awhile",
+        "Just to ease my worried mind",
+        "You never cared for me my love",
+        "So I\u2019m leaving you behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s been this way so long my dear",
+        "Why can\u2019t you understand",
+        "Your selfish heart broke up our home",
+        "Just for another man"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I tried to live my life alone",
+        "All through these lonely years",
+        "I keep your picture here with  me",
+        "Just to dry these bitter tears"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

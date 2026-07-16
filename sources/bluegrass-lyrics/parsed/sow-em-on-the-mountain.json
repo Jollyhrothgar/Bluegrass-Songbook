@@ -1,0 +1,43 @@
+{
+  "slug": "sow-em-on-the-mountain",
+  "title": "Sow \u2018Em On The Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/sow-em-on-the-mountain/",
+  "raw_lyrics": "Sow \u2019em on the mountain reap \u2019em in the valley\nSow \u2019em on the mountain reap \u2019em in the valley\nSow \u2019em on the mountain reap \u2019em in the valley\n\u2018Cause you\u2019re gonna  reap just what you sow\n\nIf you been a gambler you better quit your gambling\nIf you been a gambler you better quit your gambling\nIf you been a gambler you better quit your gambling\n\u2018Cause you\u2019re gonna  reap just what you sow\n\nIf you been a tattler you better quit your tattling\n\nIf you been a liar you better quit your lying",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sow \u2019em on the mountain reap \u2019em in the valley",
+        "Sow \u2019em on the mountain reap \u2019em in the valley",
+        "Sow \u2019em on the mountain reap \u2019em in the valley",
+        "\u2018Cause you\u2019re gonna  reap just what you sow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you been a gambler you better quit your gambling",
+        "If you been a gambler you better quit your gambling",
+        "If you been a gambler you better quit your gambling",
+        "\u2018Cause you\u2019re gonna  reap just what you sow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you been a tattler you better quit your tattling"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you been a liar you better quit your lying"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

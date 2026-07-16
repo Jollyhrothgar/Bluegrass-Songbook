@@ -1,0 +1,59 @@
+{
+  "slug": "peg-and-awl",
+  "title": "Peg and Awl",
+  "source_url": "https://www.bluegrasslyrics.com/song/peg-and-awl/",
+  "raw_lyrics": "In eighteen hundred one peg and awl\nIn eighteen hundred one\nPeggin\u2019 shoes was all I done\nI\u2019m gonna lay me down my awl my peg and awl\n\nIn eighteen hundred two peg and awl\nIn eighteen hundred two\nPeggin\u2019 shoes is all I\u2019d do\nI\u2019m gonna lay me down my awl my peg and awl\n\nIn eighteen hundred three peg and awl\nIn eighteen hundred three\nPeggin shows was all you\u2019d see\nI\u2019m gonna lay me down my awl my peg and awl\n\nThey\u2019ve invented a new machine peg and awl\nThey\u2019ve invented a new machine\nI peg one shoe it pegs fifteen\nI\u2019m gonna lay me down my awl my peg and awl\n\nIn eighteen hundred four peg and awl\nIn eighteen hundred four\nPeggin\u2019 shoes I\u2019ll do no more\nI\u2019m gonna lay me down my awl my peg and awl",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In eighteen hundred one peg and awl",
+        "In eighteen hundred one",
+        "Peggin\u2019 shoes was all I done",
+        "I\u2019m gonna lay me down my awl my peg and awl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In eighteen hundred two peg and awl",
+        "In eighteen hundred two",
+        "Peggin\u2019 shoes is all I\u2019d do",
+        "I\u2019m gonna lay me down my awl my peg and awl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In eighteen hundred three peg and awl",
+        "In eighteen hundred three",
+        "Peggin shows was all you\u2019d see",
+        "I\u2019m gonna lay me down my awl my peg and awl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They\u2019ve invented a new machine peg and awl",
+        "They\u2019ve invented a new machine",
+        "I peg one shoe it pegs fifteen",
+        "I\u2019m gonna lay me down my awl my peg and awl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In eighteen hundred four peg and awl",
+        "In eighteen hundred four",
+        "Peggin\u2019 shoes I\u2019ll do no more",
+        "I\u2019m gonna lay me down my awl my peg and awl"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

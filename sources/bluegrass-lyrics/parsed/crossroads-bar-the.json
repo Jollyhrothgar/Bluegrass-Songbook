@@ -1,0 +1,59 @@
+{
+  "slug": "crossroads-bar-the",
+  "title": "Crossroads Bar, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/crossroads-bar-the/",
+  "raw_lyrics": "I walked out tonight for a ramble round\nI didn\u2019t mean to stay  just to view the town\nWhen I saw her smiling from afar\nAs she walked into that crossroads bar\n\nWell I walked inside and sat me down\nOrdered sweet red wine and I drank it down\nShe came and set beside me there\nWith a dark brown eyes and the red, red hair\n\nI told her that I loved her true\nAnything you want I\u2019ll surely do\nSaid a man like you don\u2019t get too far\nWith a girl like me at the crossroads bar\n\nI like smoky light and a lonesome song\nAnd I won\u2019t do right if I can do wrong\nYou want the moon to burn behind the darkest star\nAnd you won\u2019t find love at the crossroads bar\n\nCome all my friends and take my advice\nKeep your love at home with your lovely wife\nYou\u2019re better off than you think you are\nAnd you won\u2019t find love at the crossroads bar",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I walked out tonight for a ramble round",
+        "I didn\u2019t mean to stay  just to view the town",
+        "When I saw her smiling from afar",
+        "As she walked into that crossroads bar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I walked inside and sat me down",
+        "Ordered sweet red wine and I drank it down",
+        "She came and set beside me there",
+        "With a dark brown eyes and the red, red hair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I told her that I loved her true",
+        "Anything you want I\u2019ll surely do",
+        "Said a man like you don\u2019t get too far",
+        "With a girl like me at the crossroads bar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I like smoky light and a lonesome song",
+        "And I won\u2019t do right if I can do wrong",
+        "You want the moon to burn behind the darkest star",
+        "And you won\u2019t find love at the crossroads bar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come all my friends and take my advice",
+        "Keep your love at home with your lovely wife",
+        "You\u2019re better off than you think you are",
+        "And you won\u2019t find love at the crossroads bar"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

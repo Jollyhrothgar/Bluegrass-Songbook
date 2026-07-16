@@ -1,0 +1,69 @@
+{
+  "slug": "thinking-tonight-of-my-blue-eyes",
+  "title": "Thinking Tonight Of My Blue Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/thinking-tonight-of-my-blue-eyes/",
+  "raw_lyrics": "Oh you told me once dear that you loved me\nThat we never no never could part\nBut the link in the chain has been broken\nAnd I\u2019m left with a sad and aching heart\n\nOh I\u2019m thinking tonight of my blue eyes\nWho is sailing far over the sea\nOh I\u2019m thinking tonight of her only\nAnd I wonder if she ever thinks of me\n\nIt wouldn\u2019ve been better for us both had we never\nIn this wide wicked world ever met\nFor the pleasure we\u2019ve both seen together\nI am sure we will never forget\n\nNow you may have friends on the ocean\nAnd you may have some over the sea\nBut you\u2019ll travel this whole wide world over\nAnd you\u2019ll never find a faithful friend like me\n\nLike the birds that go out in the spring time\nJust to wander for pleasure alone\nWhile the sun shine is smiling upon them\nBut someday they return to their home\n\nWhen the pleasures of life cease to call you\nAnd you\u2019re done with your wine and your song\nThen come back to your home in the mountains\nTo the girl who\u2019s been waiting so long",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh you told me once dear that you loved me",
+        "That we never no never could part",
+        "But the link in the chain has been broken",
+        "And I\u2019m left with a sad and aching heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I\u2019m thinking tonight of my blue eyes",
+        "Who is sailing far over the sea",
+        "Oh I\u2019m thinking tonight of her only",
+        "And I wonder if she ever thinks of me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It wouldn\u2019ve been better for us both had we never",
+        "In this wide wicked world ever met",
+        "For the pleasure we\u2019ve both seen together",
+        "I am sure we will never forget"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you may have friends on the ocean",
+        "And you may have some over the sea",
+        "But you\u2019ll travel this whole wide world over",
+        "And you\u2019ll never find a faithful friend like me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Like the birds that go out in the spring time",
+        "Just to wander for pleasure alone",
+        "While the sun shine is smiling upon them",
+        "But someday they return to their home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the pleasures of life cease to call you",
+        "And you\u2019re done with your wine and your song",
+        "Then come back to your home in the mountains",
+        "To the girl who\u2019s been waiting so long"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

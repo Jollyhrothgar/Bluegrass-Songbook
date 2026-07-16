@@ -1,0 +1,39 @@
+{
+  "slug": "lonesome-here-without-you",
+  "title": "Lonesome Here Without You",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-here-without-you/",
+  "raw_lyrics": "It\u2019s cold outside the wind is blowing\nAnd the snow is falling down\nNow I\u2019m so lonesome here without you\nWhile you\u2019re somewhere running around\n\nYou done me wrong my little darling\nLeaving me here this way\nSome day I know I\u2019ll find you\nWhen I do I\u2019ll make you pay\n\nSome times at night I dream about you\nWondering why you went away\nYou\u2019re out there some where with another\nAnd I\u2019m gonna find you some day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s cold outside the wind is blowing",
+        "And the snow is falling down",
+        "Now I\u2019m so lonesome here without you",
+        "While you\u2019re somewhere running around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You done me wrong my little darling",
+        "Leaving me here this way",
+        "Some day I know I\u2019ll find you",
+        "When I do I\u2019ll make you pay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some times at night I dream about you",
+        "Wondering why you went away",
+        "You\u2019re out there some where with another",
+        "And I\u2019m gonna find you some day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

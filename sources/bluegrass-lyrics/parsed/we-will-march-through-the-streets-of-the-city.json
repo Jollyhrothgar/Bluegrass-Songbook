@@ -1,0 +1,49 @@
+{
+  "slug": "we-will-march-through-the-streets-of-the-city",
+  "title": "We Will March Through The Streets Of The City",
+  "source_url": "https://www.bluegrasslyrics.com/song/we-will-march-through-the-streets-of-the-city/",
+  "raw_lyrics": "We will march through the streets of the city\nWith our loved ones gone before\nWe will sit on the banks of the river\nWhere we\u2019ll meet to part no more\n\nJesus caused me when a stranger\nWandering from the fold of God\nHe to rescue me from danger\nAnd transported by His blood\n\nFrom that fount of everlasting\nTo thy heart to sing God\u2019s praise\nDreams of mercy never ceasing\nAll through songs of loudest praise\n\nHark the voice of Jesus calling\nWho will go and work today\nFields are white and harvest is waiting\nWho will bear the sheaves away",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "We will march through the streets of the city",
+        "With our loved ones gone before",
+        "We will sit on the banks of the river",
+        "Where we\u2019ll meet to part no more"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jesus caused me when a stranger",
+        "Wandering from the fold of God",
+        "He to rescue me from danger",
+        "And transported by His blood"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "From that fount of everlasting",
+        "To thy heart to sing God\u2019s praise",
+        "Dreams of mercy never ceasing",
+        "All through songs of loudest praise"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hark the voice of Jesus calling",
+        "Who will go and work today",
+        "Fields are white and harvest is waiting",
+        "Who will bear the sheaves away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

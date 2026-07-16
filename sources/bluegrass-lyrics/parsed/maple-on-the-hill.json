@@ -1,0 +1,49 @@
+{
+  "slug": "maple-on-the-hill",
+  "title": "Maple On The Hill",
+  "source_url": "https://www.bluegrasslyrics.com/song/maple-on-the-hill/",
+  "raw_lyrics": "In a quiet country village stood a maple on the hill\nWhere I sat with my Geneva long ago\nAs the stars were shining brightly we could hear the whippoorwill\nAs we sat beneath the maple on the hill\n\nWe would sing love songs together when the birds had gone to rest\nWe would listen to the murmur o\u2019er the hill\nWill you love me, little darling as you did those starry nights\nAs we sat beneath the maple on the hill\n\nDon\u2019t forget me, little darling when they lay me down to die\nJust one little wish, my darling, that I pray\nAs you linger there in sadness thinking darling of the past\nLet your teardrops kiss the flowers on my grave\n\nI will soon be with the angels on that bright and peaceful shore\nEven now I hear them coming o\u2019er the hill\nSo goodbye, my little darling It is time for us to part\nI must leave you \u2018neath the maple on the hill",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a quiet country village stood a maple on the hill",
+        "Where I sat with my Geneva long ago",
+        "As the stars were shining brightly we could hear the whippoorwill",
+        "As we sat beneath the maple on the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We would sing love songs together when the birds had gone to rest",
+        "We would listen to the murmur o\u2019er the hill",
+        "Will you love me, little darling as you did those starry nights",
+        "As we sat beneath the maple on the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t forget me, little darling when they lay me down to die",
+        "Just one little wish, my darling, that I pray",
+        "As you linger there in sadness thinking darling of the past",
+        "Let your teardrops kiss the flowers on my grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will soon be with the angels on that bright and peaceful shore",
+        "Even now I hear them coming o\u2019er the hill",
+        "So goodbye, my little darling It is time for us to part",
+        "I must leave you \u2018neath the maple on the hill"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

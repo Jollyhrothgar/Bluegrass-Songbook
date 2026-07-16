@@ -1,0 +1,49 @@
+{
+  "slug": "somebody-loves-you",
+  "title": "Somebody Loves You",
+  "source_url": "https://www.bluegrasslyrics.com/song/somebody-loves-you/",
+  "raw_lyrics": "Somebody loves you, darling\nSomebody loves you, I know\nSomebody loves you dearly\nWhy did you let them go\n\nNow somebody came to see me\nSomebody came last night\nSomebody asked me to marry\nAnd, of course, I said all right\n\nNow, somebody\u2019s tall and handsome\nSomebody\u2019s eyes are blue\nSomebody\u2019s hair is curly\nSomebody\u2019s love is true\n\nThere\u2019s going to be a wedding\nIt\u2019s going to be this fall\nSo, boys and girls get ready\nI\u2019m going to invite you all",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Somebody loves you, darling",
+        "Somebody loves you, I know",
+        "Somebody loves you dearly",
+        "Why did you let them go"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now somebody came to see me",
+        "Somebody came last night",
+        "Somebody asked me to marry",
+        "And, of course, I said all right"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now, somebody\u2019s tall and handsome",
+        "Somebody\u2019s eyes are blue",
+        "Somebody\u2019s hair is curly",
+        "Somebody\u2019s love is true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s going to be a wedding",
+        "It\u2019s going to be this fall",
+        "So, boys and girls get ready",
+        "I\u2019m going to invite you all"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

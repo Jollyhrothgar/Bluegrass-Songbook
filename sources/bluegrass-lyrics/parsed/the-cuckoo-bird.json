@@ -1,0 +1,56 @@
+{
+  "slug": "the-cuckoo-bird",
+  "title": "The Cuckoo Bird",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-cuckoo-bird/",
+  "raw_lyrics": "The cuckoo is a funny bird she sings as she flies\nShe\u2019ll bring you glad tidings she\u2019ll tell you no lies\nShe sips from the pretty flowers to make her voice clear\nAnd she\u2019ll never sing cuckoo till the spring of the year\n\nA-walking and a-talking and a-wondering go I\nA-walking for my true love he\u2019ll come by and by\nI\u2019ll meet him in the morning for he\u2019s all my delight\nI could walk with my true love from morning to night\n\nCome all you fair maidens take warning from me\nDon\u2019t place your affection on a young man too free\nFor leaves they do wither and roots they do die\nAnd your love he will leave you and he\u2019ll never say why\n\nBut if he will leave me I\u2019ll not be forlorn\nAnd if he\u2019ll forswear me I\u2019ll not be forsworn\nI\u2019ll get myself up in my best finery\nAnd I\u2019ll walk as proud by him as he walks by me\n\nThe Osborne Brothers;",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The cuckoo is a funny bird she sings as she flies",
+        "She\u2019ll bring you glad tidings she\u2019ll tell you no lies",
+        "She sips from the pretty flowers to make her voice clear",
+        "And she\u2019ll never sing cuckoo till the spring of the year"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A-walking and a-talking and a-wondering go I",
+        "A-walking for my true love he\u2019ll come by and by",
+        "I\u2019ll meet him in the morning for he\u2019s all my delight",
+        "I could walk with my true love from morning to night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come all you fair maidens take warning from me",
+        "Don\u2019t place your affection on a young man too free",
+        "For leaves they do wither and roots they do die",
+        "And your love he will leave you and he\u2019ll never say why"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But if he will leave me I\u2019ll not be forlorn",
+        "And if he\u2019ll forswear me I\u2019ll not be forsworn",
+        "I\u2019ll get myself up in my best finery",
+        "And I\u2019ll walk as proud by him as he walks by me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The Osborne Brothers;"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

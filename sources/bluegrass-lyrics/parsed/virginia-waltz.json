@@ -1,0 +1,30 @@
+{
+  "slug": "virginia-waltz",
+  "title": "Virginia Waltz",
+  "source_url": "https://www.bluegrasslyrics.com/song/virginia-waltz/",
+  "raw_lyrics": "We were waltzing in the light of the old Virginia moon\nAs the fiddles played their music so low\nI was happy as a king with the girl of my dream\nUntil she whispered sweetheart I must go\n\nOh I\u2019ll never forget the night when we met\nYou found me when my heart was low\nNow my heart will always yearn\n\u2018Til the day when you return\nAnd we\u2019ll dance to the Old Virginia Waltz",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We were waltzing in the light of the old Virginia moon",
+        "As the fiddles played their music so low",
+        "I was happy as a king with the girl of my dream",
+        "Until she whispered sweetheart I must go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I\u2019ll never forget the night when we met",
+        "You found me when my heart was low",
+        "Now my heart will always yearn",
+        "\u2018Til the day when you return",
+        "And we\u2019ll dance to the Old Virginia Waltz"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

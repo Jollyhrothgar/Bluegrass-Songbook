@@ -1,0 +1,66 @@
+{
+  "slug": "the-last-thing-on-my-mind",
+  "title": "The Last Thing On My Mind",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-last-thing-on-my-mind/",
+  "raw_lyrics": "It\u2019s a lesson too late for the learnin\u2019\nMade of sand,    made of sand\nIn the wnk of an eye my soul is turning\nIn your hand,    in your hand.\n\nAre you going away with no word of farewell\nWill there be not a trace left behind?\nI could have loved you better, didn\u2019t mean to be unkind\nYou know that was the last thing on my mind.\n\nAs we walk along my thoughts are tumbling\nRound and round,  round and round.\nUnderneath our feet a subway\u2019s rumbling\nUnderground,    underground.\n\nYou\u2019ve got reasons aplenty for going\nThis I know,   this I know\nFor the weeds have been steadily growing\nPlease don\u2019t go,   please don\u2019t go\n\nAs I lie in my bed in the morning\nWithout you, without you\nEvery song in my head dies a-borning\nWithout you, without you\n\n(CH)",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a lesson too late for the learnin\u2019",
+        "Made of sand,    made of sand",
+        "In the wnk of an eye my soul is turning",
+        "In your hand,    in your hand."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Are you going away with no word of farewell",
+        "Will there be not a trace left behind?",
+        "I could have loved you better, didn\u2019t mean to be unkind",
+        "You know that was the last thing on my mind."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "As we walk along my thoughts are tumbling",
+        "Round and round,  round and round.",
+        "Underneath our feet a subway\u2019s rumbling",
+        "Underground,    underground."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019ve got reasons aplenty for going",
+        "This I know,   this I know",
+        "For the weeds have been steadily growing",
+        "Please don\u2019t go,   please don\u2019t go"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "As I lie in my bed in the morning",
+        "Without you, without you",
+        "Every song in my head dies a-borning",
+        "Without you, without you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "(CH)"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

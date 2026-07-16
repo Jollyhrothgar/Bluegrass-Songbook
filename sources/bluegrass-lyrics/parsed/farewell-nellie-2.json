@@ -1,0 +1,59 @@
+{
+  "slug": "farewell-nellie-2",
+  "title": "Farewell Nellie",
+  "source_url": "https://www.bluegrasslyrics.com/song/farewell-nellie-2/",
+  "raw_lyrics": "Farewell Nellie farewell darling\nSoon with strangers I must roam\nDon\u2019t forget the one that loves you\nFar away from friends and home\n\nFly across the ocean birdie\nFly across the deep blue sea\nTake this message to my darling\nShe\u2019ll be glad to hear from me\n\nYou have told me that you love me\nBut you haven\u2019t proved it true\nSo I\u2019ll go and court some other\nThat will love me more than you\n\nWhen the whippoorwills are singing\nAcross the dark and lonely sea\nWhen you\u2019re thinking of ten thousand\nWill you sometimes think of me\n\nHow my heart is filled with sorrow\nAnd my eyes are filled with tears\nNo I\u2019ll not forget you darling\nIf I live ten thousand years",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Farewell Nellie farewell darling",
+        "Soon with strangers I must roam",
+        "Don\u2019t forget the one that loves you",
+        "Far away from friends and home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Fly across the ocean birdie",
+        "Fly across the deep blue sea",
+        "Take this message to my darling",
+        "She\u2019ll be glad to hear from me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You have told me that you love me",
+        "But you haven\u2019t proved it true",
+        "So I\u2019ll go and court some other",
+        "That will love me more than you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the whippoorwills are singing",
+        "Across the dark and lonely sea",
+        "When you\u2019re thinking of ten thousand",
+        "Will you sometimes think of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How my heart is filled with sorrow",
+        "And my eyes are filled with tears",
+        "No I\u2019ll not forget you darling",
+        "If I live ten thousand years"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

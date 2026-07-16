@@ -1,0 +1,49 @@
+{
+  "slug": "ive-lost-you",
+  "title": "I\u2019ve Lost You",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-lost-you/",
+  "raw_lyrics": "Friends tell me that told you wed another\nThey say you look so happy all the time\nI just can\u2019t realize that I have lost you\nSomehow I thought you always would be mine\n\nI\u2019ve love you since the day that I first met you\nI thought no one could ever come between\nThose promises you made have all been broken\nAnd all I have to live for now is grief\n\nSomehow I can\u2019t believe that you\u2019ll be happy\nWith memories to haunt you night and day\nBut only time can make you learn your lesson\nI\u2019m sure you think you\u2019ve reached your goal today\n\nI never thought someday that I would lose you\nYou\u2019re just the kind that never could be true\nYou only wanted me just for a while dear\nJust long enough to break my heart in two",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Friends tell me that told you wed another",
+        "They say you look so happy all the time",
+        "I just can\u2019t realize that I have lost you",
+        "Somehow I thought you always would be mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve love you since the day that I first met you",
+        "I thought no one could ever come between",
+        "Those promises you made have all been broken",
+        "And all I have to live for now is grief"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Somehow I can\u2019t believe that you\u2019ll be happy",
+        "With memories to haunt you night and day",
+        "But only time can make you learn your lesson",
+        "I\u2019m sure you think you\u2019ve reached your goal today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never thought someday that I would lose you",
+        "You\u2019re just the kind that never could be true",
+        "You only wanted me just for a while dear",
+        "Just long enough to break my heart in two"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

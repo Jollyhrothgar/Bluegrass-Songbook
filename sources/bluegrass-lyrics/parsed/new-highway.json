@@ -1,0 +1,41 @@
+{
+  "slug": "new-highway",
+  "title": "New Highway",
+  "source_url": "https://www.bluegrasslyrics.com/song/new-highway/",
+  "raw_lyrics": "I have been down a lot of roads in my time\nI have taken some bad turns in my life\nI wanted to stop all my stumbles and falls\nBut I kept on rolling and kept on going\n\nNow I\u2019m riding on a new highway\nI got off Heartbreak Boulevard\nEvery mile that I\u2019ve been through\nEach and every avenue\nHas taken me through some rough and rocky days\nNow I\u2019m riding on a new highway\n\nEvery crossroad that I\u2019ve taken goes wrong\nIt\u2019s a good thing that you came along\nI knew I was headed down a lonely street\nBut I kept on trying and kept on driving",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have been down a lot of roads in my time",
+        "I have taken some bad turns in my life",
+        "I wanted to stop all my stumbles and falls",
+        "But I kept on rolling and kept on going"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now I\u2019m riding on a new highway",
+        "I got off Heartbreak Boulevard",
+        "Every mile that I\u2019ve been through",
+        "Each and every avenue",
+        "Has taken me through some rough and rocky days",
+        "Now I\u2019m riding on a new highway"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every crossroad that I\u2019ve taken goes wrong",
+        "It\u2019s a good thing that you came along",
+        "I knew I was headed down a lonely street",
+        "But I kept on trying and kept on driving"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "blue-eyed-darling",
+  "title": "Blue Eyed Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-eyed-darling/",
+  "raw_lyrics": "The days have passed by so slowly\nSince you\u2019ve gone and left me blue\nIf ever you decide to roam dear\nRemember I\u2019m waiting just for you\n\nWon\u2019t you be my blue eyed darlin\nWon\u2019t you come back home to me\nDon\u2019t tell me that you\u2019ve found another\nDarling please don\u2019t set me free\n\nAt night as I lay down to sleep dear\nThe tears are flowing down my cheeks\nBecause you left me such a memory\nAnd now I\u2019m all alone you see\n\nSomeday you\u2019ll come and I\u2019ll be gone dear\nSomewhere to start my life anew\nBut if you never do return dear\nRemember I\u2019ve waited just for you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The days have passed by so slowly",
+        "Since you\u2019ve gone and left me blue",
+        "If ever you decide to roam dear",
+        "Remember I\u2019m waiting just for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Won\u2019t you be my blue eyed darlin",
+        "Won\u2019t you come back home to me",
+        "Don\u2019t tell me that you\u2019ve found another",
+        "Darling please don\u2019t set me free"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "At night as I lay down to sleep dear",
+        "The tears are flowing down my cheeks",
+        "Because you left me such a memory",
+        "And now I\u2019m all alone you see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday you\u2019ll come and I\u2019ll be gone dear",
+        "Somewhere to start my life anew",
+        "But if you never do return dear",
+        "Remember I\u2019ve waited just for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

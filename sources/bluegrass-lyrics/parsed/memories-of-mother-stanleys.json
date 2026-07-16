@@ -1,0 +1,39 @@
+{
+  "slug": "memories-of-mother-stanleys",
+  "title": "Memories Of Mother \u2013 Stanleys",
+  "source_url": "https://www.bluegrasslyrics.com/song/memories-of-mother-stanleys/",
+  "raw_lyrics": "On a dark stormy night the angels called mother\nThe love that we shred for such a short while\nShe called us around and told us she\u2019s leaving\nThen closing her eyes she went with a smile\n\nMother\u2019s at rest in a lonesome old graveyard\nOn a hill far away there stands her white tomb\nWith the grass covered o\u2019er it seems so neglected\nWhen the spring season comes sweet flowers will bloom\n\nI\u2019ll never forget the love mother gave us\nAs children we played around our old home\nI know her reward is a mansion in heaven\nWhile children on earth are scattered and gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On a dark stormy night the angels called mother",
+        "The love that we shred for such a short while",
+        "She called us around and told us she\u2019s leaving",
+        "Then closing her eyes she went with a smile"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Mother\u2019s at rest in a lonesome old graveyard",
+        "On a hill far away there stands her white tomb",
+        "With the grass covered o\u2019er it seems so neglected",
+        "When the spring season comes sweet flowers will bloom"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll never forget the love mother gave us",
+        "As children we played around our old home",
+        "I know her reward is a mansion in heaven",
+        "While children on earth are scattered and gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

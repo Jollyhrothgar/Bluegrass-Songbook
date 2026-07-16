@@ -1,0 +1,49 @@
+{
+  "slug": "look-how-this-world-has-made-a-change",
+  "title": "Look How This World Has Made A Change",
+  "source_url": "https://www.bluegrasslyrics.com/song/look-how-this-world-has-made-a-change/",
+  "raw_lyrics": "We see our friends are weeping with the badges on their door\nWe see their homes in mourning for the loved ones come no more\nYou can say just what you please, death rides on every breeze\nLook how this world has made a change\n\nJust look how this world has made a change (made a change)\nJust look how this world has made a change (made a change)\nYou can see every day how the people pass away\nLook how this world has made a change\n\nOur friends are passing over to some far distant shore\nWe seek them and we call them but they answer us no more\nTheir throbbing hearts today tomorrow pass away\nLook how this world has made a change\n\nDear sinner, o get ready, you must meet your god on high\nFor death is all around you and it will not pass you by\nDeath knocks at every door no matter where you go\nLook how this world has made a change",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We see our friends are weeping with the badges on their door",
+        "We see their homes in mourning for the loved ones come no more",
+        "You can say just what you please, death rides on every breeze",
+        "Look how this world has made a change"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Just look how this world has made a change (made a change)",
+        "Just look how this world has made a change (made a change)",
+        "You can see every day how the people pass away",
+        "Look how this world has made a change"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Our friends are passing over to some far distant shore",
+        "We seek them and we call them but they answer us no more",
+        "Their throbbing hearts today tomorrow pass away",
+        "Look how this world has made a change"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Dear sinner, o get ready, you must meet your god on high",
+        "For death is all around you and it will not pass you by",
+        "Death knocks at every door no matter where you go",
+        "Look how this world has made a change"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

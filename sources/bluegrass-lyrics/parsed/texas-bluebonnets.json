@@ -1,0 +1,67 @@
+{
+  "slug": "texas-bluebonnets",
+  "title": "Texas Bluebonnets",
+  "source_url": "https://www.bluegrasslyrics.com/song/texas-bluebonnets/",
+  "raw_lyrics": "Those Texas bluebonnets how sweetly they grow\nFor all the wide prairies they\u2019re scattered like snow\nThey make all the meadows as blue as the skies\nReminding me of my little darlings blue eyes\n\nWell I wanted to ramble so I started to roam\nAnd I didn\u2019t think twice about leaving my home\nBut when I got to Texas not far from Burnet\nThose Texas bluebonnets wouldn\u2019t let me forget\n\nI ran out of money went to work on a farm\nPicking their melons and hoeing their corn\nAnd all winter long Lord I herded their cows\nAnd I tried to forget my little darling somehow\n\nBut then springtime had blossomed\nAnd it just made my head feel bluer than blue\nThose Texas bluebonnets they smiled in the sun\nBut they just made me think of my only one\n\nI\u2019m leaving the southland I\u2019m leaving today\nI don\u2019t know where I\u2019m going but I know that I can\u2019t stay\nI guess I\u2019ll go north to the ice and the snow\nWhere those Texas bluebonnets never will grow\n\nIn the cold frozen Iceland I\u2019ll live \u2019til I die\nWhere I\u2019ll finally forget my little darlings blue eyes",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Those Texas bluebonnets how sweetly they grow",
+        "For all the wide prairies they\u2019re scattered like snow",
+        "They make all the meadows as blue as the skies",
+        "Reminding me of my little darlings blue eyes"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I wanted to ramble so I started to roam",
+        "And I didn\u2019t think twice about leaving my home",
+        "But when I got to Texas not far from Burnet",
+        "Those Texas bluebonnets wouldn\u2019t let me forget"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I ran out of money went to work on a farm",
+        "Picking their melons and hoeing their corn",
+        "And all winter long Lord I herded their cows",
+        "And I tried to forget my little darling somehow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But then springtime had blossomed",
+        "And it just made my head feel bluer than blue",
+        "Those Texas bluebonnets they smiled in the sun",
+        "But they just made me think of my only one"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m leaving the southland I\u2019m leaving today",
+        "I don\u2019t know where I\u2019m going but I know that I can\u2019t stay",
+        "I guess I\u2019ll go north to the ice and the snow",
+        "Where those Texas bluebonnets never will grow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the cold frozen Iceland I\u2019ll live \u2019til I die",
+        "Where I\u2019ll finally forget my little darlings blue eyes"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

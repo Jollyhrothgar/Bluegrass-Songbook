@@ -2,90 +2,143 @@
 
 Lyrics for traditional bluegrass and early country songs from [BluegrassLyrics.com](https://www.bluegrasslyrics.com/).
 
-## Status: PENDING PERMISSION
+## Status: COMPLETE (Feb 2026)
 
-Awaiting response from site owner before scraping.
+**Permission**: Granted by site owner (Feb 2026)
 
-## Site Analysis
+764 songs imported to works/ - 494 with chords (from Ultimate Guitar), 270 lyrics-only.
 
-- **Content**: Lyrics only (no chords)
-- **Focus**: Traditional bluegrass, early country, old-time
-- **Size**: 1000s of songs (211 Bill Monroe songs alone)
-- **Format**: Clean HTML, WordPress-based
-- **URL pattern**: `https://www.bluegrasslyrics.com/song/{title-with-hyphens}/`
-- **Organization**: Alphabetical index, artist folios, thematic collections
+## Quick Reference
 
-### Artist Folios Available
-- Bill Monroe (211 songs)
-- Flatt and Scruggs
-- Stanley Brothers
-- Jimmy Martin
-- Larry Sparks
+```bash
+# Check a generated work
+cat works/<slug>/work.yaml
+cat works/<slug>/lead-sheet.pro
 
-### Collections
-- Bluegrass Gospel Songs
-- Brother Duets
-- Early Country
-- Old Time Songs
-
-## Gap Analysis
-
-Using MusicBrainz bluegrass repertoire data (`mb_bluegrass_repertoire.jsonl`):
-
-| Metric | Count |
-|--------|-------|
-| MB bluegrass repertoire | 2,455 songs |
-| Already in songbook | 794 (32%) |
-| Missing | 1,661 (68%) |
-| Likely traditional/folk | 137 |
-
-### Top Missing Traditional Songs
-
-```
-15 artists | Cumberland Gap
-12 artists | Wild Bill Jones
-11 artists | Lee Highway Blues
-11 artists | Fire on the Mountain
-11 artists | Cluck Old Hen
-10 artists | Foggy Mountain Breakdown
-10 artists | Sweet Georgia Brown
- 9 artists | Cannonball Blues
- 8 artists | Handsome Molly
- 7 artists | Soldier's Joy
+# View original parsed data
+cat sources/bluegrass-lyrics/parsed/<slug>.json
 ```
 
-## Implementation Plan (if approved)
+## Import Summary (Feb 8, 2026)
 
-1. **Scraper**: Fetch lyrics from individual song pages
-2. **Parser**: Extract lyrics, title, any metadata
-3. **Chord inference**: Use existing harmonic analysis to add basic chords
-4. **Output**: ChordPro .pro files with `x_source: bluegrass-lyrics`
+| Category | Count |
+|----------|-------|
+| Total songs scraped | 1,818 |
+| Already in collection | 823 |
+| New songs available | 995 |
+| Imported with chords | 494 |
+| Imported lyrics-only | 270 |
+| Skipped (duplicates/low quality) | 231 |
 
-### Proposed Structure
+## Pipeline
+
+```
+BluegrassLyrics.com
+        │
+        ▼ src/scraper.py
+   raw/*.html (gitignored)
+        │
+        ▼ src/parser.py
+   parsed/*.json (structured lyrics)
+        │
+        ├─────────────────────────────────┐
+        ▼                                 ▼
+Ultimate Guitar enrichment          Direct import
+(see sources/ultimate-guitar/)      (lyrics-only)
+        │                                 │
+        ▼                                 ▼
+   works/*/                          works/*/
+   (with chords)                     (without chords)
+```
+
+## Chord Enrichment Strategy
+
+### What Worked (Feb 2026)
+
+1. **Ultimate Guitar Mobile API** - Scraped ~765 matching songs
+   - Fuzzy matched lyrics to place chords correctly
+   - 70%+ coverage threshold for "good" matches
+   - See `sources/ultimate-guitar/CLAUDE.md` for details
+
+### What Was Tried But Not Scaled
+
+1. **TMUK Carter Family** - 65 songs with text chords
+   - Good quality but limited coverage
+   - Still in `chordpro/` directory
+
+2. **Embedding-based matching** - Tested but fuzzy matching sufficient
+   - Code in `sources/ultimate-guitar/embedding_match.py`
+
+### Future Options (Not Implemented)
+
+- **OCR for image chords** - TMUK has 172 more in image/PDF format
+- **LLM chord inference** - Generate chords from lyrics + genre
+- **Community contributions** - Users can add chords via edit interface
+
+## File Structure
 
 ```
 bluegrass-lyrics/
+├── raw/                    # Cached HTML (gitignored)
+├── parsed/                 # Structured JSON per song
+│   └── *.json              # 1,818 files
+├── chordpro/               # TMUK-generated ChordPro (65 files, legacy)
+├── manifest.json           # Status tracking per song
 ├── src/
-│   ├── scraper.py          # HTTP client with rate limiting
-│   ├── parser.py           # HTML to lyrics extraction
-│   └── song_list.py        # Songs to fetch (from MB gap analysis)
-├── parsed/                  # Output .pro files
-├── raw/                     # Cached HTML (gitignored)
-└── mb_bluegrass_repertoire.jsonl  # Gap analysis data
+│   ├── scraper.py          # Fetch index + pages
+│   ├── parser.py           # HTML to structured JSON
+│   └── matcher.py          # Deduplication against works/
+├── generate_chordpro.py    # Generate .pro from TMUK matches
+├── song_index.json         # All 1,818 URLs
+├── classification_report.json  # New vs existing breakdown
+└── CLAUDE.md               # This file
 ```
 
-## Other Sources Evaluated
+## Parsed JSON Format
 
-| Source | Verdict | Notes |
-|--------|---------|-------|
-| Ultimate Guitar | ❌ Skip | ToS prohibits scraping, aggressive anti-bot |
-| Flatpicker Hangout | ❌ Skip | Only 332 tabs, binary formats (TablEdit, PowerTab) |
-| Mudcat/Digital Tradition | ⚠️ Maybe | Folk lyrics, needs more research |
-| Jack Tuttle | ❌ N/A | Site structure unclear, couldn't assess |
+```json
+{
+  "slug": "cabin-home-on-the-hill",
+  "title": "Cabin Home On The Hill",
+  "url": "https://www.bluegrasslyrics.com/song/cabin-home-on-the-hill/",
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        "Tonight I'm alone without you my dear",
+        "It seems there's a longing for you still"
+      ]
+    }
+  ]
+}
+```
 
-## Copyright Considerations
+## Attribution
 
-- Chord progressions are not copyrightable
-- Lyrics ARE copyrighted (even for traditional songs if verses are original)
-- Safest: Pre-1928 songs, truly traditional verses, instrumentals
-- Site describes itself as "traditional" bluegrass - likely more permissive
+All imported songs include source attribution:
+
+```chordpro
+{meta: x_lyrics_source bluegrass-lyrics}
+{meta: x_lyrics_url https://www.bluegrasslyrics.com/song/...}
+```
+
+If enriched with UG chords, also includes:
+```chordpro
+{meta: x_chords_source ultimate-guitar}
+{meta: x_chords_url https://tabs.ultimate-guitar.com/tab/...}
+```
+
+**Frontend display:** Shows "BluegrassLyrics.com" with link to original page.
+
+## Known Limitations
+
+1. **No artist metadata** - BluegrassLyrics doesn't provide artist info
+2. **Section detection imperfect** - Some songs have unusual formatting
+3. **Lyrics-only songs** - 270 songs imported without chords (users can add via edit)
+
+## Related Documentation
+
+- `sources/ultimate-guitar/CLAUDE.md` - Chord enrichment pipeline
+- `docs/js/CLAUDE.md` - Frontend rendering and source attribution
+- `scripts/lib/CLAUDE.md` - Index building and tagging

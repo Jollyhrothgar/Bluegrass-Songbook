@@ -1,0 +1,49 @@
+{
+  "slug": "long-gone",
+  "title": "Long Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/long-gone/",
+  "raw_lyrics": "Long gone is how I\u2019m leaving\nLong gone why do you cry\nThis is what you wanted baby\nSo I\u2019m gone long gone\n\nI have tried to make you happy\nstill you say I\u2019ve done you wrong\nso I\u2019m giving up my darlin\nI\u2019ll be gone long gone\n\nJust a few short words of parting\ndon\u2019t shed no tears they won\u2019t atone\nfor my things are packed to travel\nI\u2019ll be gone long gone\n\nPlease don\u2019t try to overtake me\nwhat I reid will be too fast\nthis is it I\u2019m free forever\nI\u2019m long gone & free at last",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Long gone is how I\u2019m leaving",
+        "Long gone why do you cry",
+        "This is what you wanted baby",
+        "So I\u2019m gone long gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have tried to make you happy",
+        "still you say I\u2019ve done you wrong",
+        "so I\u2019m giving up my darlin",
+        "I\u2019ll be gone long gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a few short words of parting",
+        "don\u2019t shed no tears they won\u2019t atone",
+        "for my things are packed to travel",
+        "I\u2019ll be gone long gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please don\u2019t try to overtake me",
+        "what I reid will be too fast",
+        "this is it I\u2019m free forever",
+        "I\u2019m long gone & free at last"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "he-took-your-place",
+  "title": "He Took Your Place",
+  "source_url": "https://www.bluegrasslyrics.com/song/he-took-your-place/",
+  "raw_lyrics": "Upon the rugged cross of Calvary\nWas there my blessed Savior cried\nForgive them for they know not what they do\nOh, sinner friend, for thee he died\n\nHis hands are gently knocking on your door\nOutside he\u2019s pleading to come in\nHis heart is breaking as he waits for you\nTo wash you free from every sin\n\nSomeday he\u2019s coming back to claim his own\nWe\u2019ll fly to Heaven\u2019s golden shore\nA crown of life he gives on that glad day\nWith him we\u2019ll live forever more\n\nThose cruel thorns they pierced my Savior\u2019s head\nThe blood was flowing down his face\nIn shame, forsaken there he hung and died\nOh, sinner friend, he took you place",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Upon the rugged cross of Calvary",
+        "Was there my blessed Savior cried",
+        "Forgive them for they know not what they do",
+        "Oh, sinner friend, for thee he died"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "His hands are gently knocking on your door",
+        "Outside he\u2019s pleading to come in",
+        "His heart is breaking as he waits for you",
+        "To wash you free from every sin"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday he\u2019s coming back to claim his own",
+        "We\u2019ll fly to Heaven\u2019s golden shore",
+        "A crown of life he gives on that glad day",
+        "With him we\u2019ll live forever more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Those cruel thorns they pierced my Savior\u2019s head",
+        "The blood was flowing down his face",
+        "In shame, forsaken there he hung and died",
+        "Oh, sinner friend, he took you place"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

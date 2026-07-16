@@ -1,0 +1,39 @@
+{
+  "slug": "gathering-flowers-for-the-masters-bouquet",
+  "title": "Gathering Flowers For The Master\u2019s Bouquet",
+  "source_url": "https://www.bluegrasslyrics.com/song/gathering-flowers-for-the-masters-bouquet/",
+  "raw_lyrics": "Death is an angel sent down from above\nSent for the buds and the flowers we love\nTruly \u2019tis so, for in heaven\u2019s own way\nEach soul is a flower in the Master\u2019s bouquet\n\nGathering flowers for the Master\u2019s bouquet\nBeautiful flowers that will never decay\nGathered by angels and carried away\nForever to bloom in the Master\u2019s bouquet\n\nLet us be faithful till life\u2019s work is done\nBlooming with love \u2019til the reaper has come\nThen we\u2019ll be gathered together someday\nTransplanted to bloom in the Master\u2019s bouquet",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Death is an angel sent down from above",
+        "Sent for the buds and the flowers we love",
+        "Truly \u2019tis so, for in heaven\u2019s own way",
+        "Each soul is a flower in the Master\u2019s bouquet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Gathering flowers for the Master\u2019s bouquet",
+        "Beautiful flowers that will never decay",
+        "Gathered by angels and carried away",
+        "Forever to bloom in the Master\u2019s bouquet"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let us be faithful till life\u2019s work is done",
+        "Blooming with love \u2019til the reaper has come",
+        "Then we\u2019ll be gathered together someday",
+        "Transplanted to bloom in the Master\u2019s bouquet"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

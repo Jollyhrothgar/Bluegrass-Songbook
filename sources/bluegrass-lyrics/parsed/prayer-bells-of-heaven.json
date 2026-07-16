@@ -1,0 +1,59 @@
+{
+  "slug": "prayer-bells-of-heaven",
+  "title": "Prayer Bells Of Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/prayer-bells-of-heaven/",
+  "raw_lyrics": "While we are living in this world of care\nMany the burdens that we have to bear\nBut there\u2019s a prayer bell at the Lord\u2019s right hand\nGive it a ring and He will understand\n\nPrayer bells of heaven oh how sweetly they ring\nBearing a message unto Jesus our king\nWhen you are burdened down with sorrows and care\nRing on and on for God will answer your prayer\n\nThree Hebrew children to the fire were thrown\nBecause a worldly king they would not own\nJesus delivered and the king then saw\nPrayer bells of heaven beat a man made law\n\nWhen Paul and Silas were thrown into jail\nThey didn\u2019t worry who would go their bail\nBut on the prayer bells they began to ring\nOff fell the stocks and they begin to sing\n\nInto the garden Jesus went to pray\nUntil His sweat became as blood they say\nRinging the prayer bells there in agony\nBringing salvation that we might be free",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "While we are living in this world of care",
+        "Many the burdens that we have to bear",
+        "But there\u2019s a prayer bell at the Lord\u2019s right hand",
+        "Give it a ring and He will understand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Prayer bells of heaven oh how sweetly they ring",
+        "Bearing a message unto Jesus our king",
+        "When you are burdened down with sorrows and care",
+        "Ring on and on for God will answer your prayer"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Three Hebrew children to the fire were thrown",
+        "Because a worldly king they would not own",
+        "Jesus delivered and the king then saw",
+        "Prayer bells of heaven beat a man made law"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When Paul and Silas were thrown into jail",
+        "They didn\u2019t worry who would go their bail",
+        "But on the prayer bells they began to ring",
+        "Off fell the stocks and they begin to sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Into the garden Jesus went to pray",
+        "Until His sweat became as blood they say",
+        "Ringing the prayer bells there in agony",
+        "Bringing salvation that we might be free"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

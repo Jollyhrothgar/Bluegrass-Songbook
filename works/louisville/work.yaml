@@ -3,10 +3,14 @@ title: Louisville
 artist: Dwight Yoakam
 composers:
 - Pat Gallagher and Jann Browne
+- Biography:Bill Monroe
+- Chuck Rogers
 default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+- Instrumental
+- Bluegrass
 parts:
 - type: lead-sheet
   format: chordpro

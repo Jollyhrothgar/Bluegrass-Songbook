@@ -1,0 +1,49 @@
+{
+  "slug": "hey-hey-hey",
+  "title": "Hey Hey Hey",
+  "source_url": "https://www.bluegrasslyrics.com/song/hey-hey-hey/",
+  "raw_lyrics": "I saw you last night in my dreams love\nI awoke as the clock was strikin\u2019 four\nBut I didn\u2019t think that I\u2019d meet you\nAnd now as you walk through the door\n\nCome sit here with me, little darlin\u2019\nAnd allow me to say\nI love you sweetheart I love you\nHey hey hey hey\n\nAs you stood there before me I wondered\nIf I\u2019d ever get you off of my mind\nAnd the tears filled my eyes when you vanished\nWith your golden curls that hung down behind\n\nWon\u2019t you come back to me in my dreams love\nSome dark night when I\u2019m here all alone\nWould you tell me sweetheart that you love me\nSome dark night when I\u2019m here all alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I saw you last night in my dreams love",
+        "I awoke as the clock was strikin\u2019 four",
+        "But I didn\u2019t think that I\u2019d meet you",
+        "And now as you walk through the door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come sit here with me, little darlin\u2019",
+        "And allow me to say",
+        "I love you sweetheart I love you",
+        "Hey hey hey hey"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As you stood there before me I wondered",
+        "If I\u2019d ever get you off of my mind",
+        "And the tears filled my eyes when you vanished",
+        "With your golden curls that hung down behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Won\u2019t you come back to me in my dreams love",
+        "Some dark night when I\u2019m here all alone",
+        "Would you tell me sweetheart that you love me",
+        "Some dark night when I\u2019m here all alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

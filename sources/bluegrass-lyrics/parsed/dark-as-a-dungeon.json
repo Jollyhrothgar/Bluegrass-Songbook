@@ -1,0 +1,49 @@
+{
+  "slug": "dark-as-a-dungeon",
+  "title": "Dark As A Dungeon",
+  "source_url": "https://www.bluegrasslyrics.com/song/dark-as-a-dungeon/",
+  "raw_lyrics": "Come and listen, young fellers, so young and so fine\nAnd seek not your fortune in the dark dreary mines\nIt will form as a habit and seep in your soul\n\u2018Til the stream of your blood runs as black as the coal\n\nWhere it\u2019s dark as a dungeon and damp as the dew\nWhere the dangers are double and the pleasures are few\nWhere the rain never falls and the sun never shines\nIt\u2019s dark as a dungeon way down in the mines\n\nThere\u2019s many a man who I\u2019ve known in my day\nWho lived just to labor his whole life away\nLike a fiend with his dope or a drunkard his wine\nA man will have lust for the lure of the mines\n\nWell I hope when I\u2019m gone and the ages shall roll\nMy body will blacken and turn into coal\nThen I\u2019ll look from the door of my heavenly home\nAnd  pity the miner that\u2019s digging my bones",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come and listen, young fellers, so young and so fine",
+        "And seek not your fortune in the dark dreary mines",
+        "It will form as a habit and seep in your soul",
+        "\u2018Til the stream of your blood runs as black as the coal"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Where it\u2019s dark as a dungeon and damp as the dew",
+        "Where the dangers are double and the pleasures are few",
+        "Where the rain never falls and the sun never shines",
+        "It\u2019s dark as a dungeon way down in the mines"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s many a man who I\u2019ve known in my day",
+        "Who lived just to labor his whole life away",
+        "Like a fiend with his dope or a drunkard his wine",
+        "A man will have lust for the lure of the mines"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I hope when I\u2019m gone and the ages shall roll",
+        "My body will blacken and turn into coal",
+        "Then I\u2019ll look from the door of my heavenly home",
+        "And  pity the miner that\u2019s digging my bones"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

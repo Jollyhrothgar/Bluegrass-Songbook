@@ -1,0 +1,11 @@
+id: that-home-above
+title: That Home Above
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/that-home-above/
+      imported_at: '2026-02-08'

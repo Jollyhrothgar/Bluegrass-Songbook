@@ -1,0 +1,39 @@
+{
+  "slug": "unfaithful-one",
+  "title": "Unfaithful One",
+  "source_url": "https://www.bluegrasslyrics.com/song/unfaithful-one/",
+  "raw_lyrics": "Unfaithful one you\u2019ll have to suffer\nYou\u2019re doomed to go through life alone\nFor no one else will ever trust you\nThey\u2019ll know your heart is made of stone\n\nI still recall our happy years dear\nOur love was fresh as flowers of spring\nBut now you\u2019ve left me for a stranger\nYou\u2019ve lost the right to wear my ring\n\nSo blue was I the day you left me\nMy heart was sad and lonely too\nMy place was taken by this stranger\nYou traded an old love for a new",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Unfaithful one you\u2019ll have to suffer",
+        "You\u2019re doomed to go through life alone",
+        "For no one else will ever trust you",
+        "They\u2019ll know your heart is made of stone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I still recall our happy years dear",
+        "Our love was fresh as flowers of spring",
+        "But now you\u2019ve left me for a stranger",
+        "You\u2019ve lost the right to wear my ring"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So blue was I the day you left me",
+        "My heart was sad and lonely too",
+        "My place was taken by this stranger",
+        "You traded an old love for a new"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

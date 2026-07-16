@@ -1,0 +1,49 @@
+{
+  "slug": "dear-companion",
+  "title": "Dear Companion",
+  "source_url": "https://www.bluegrasslyrics.com/song/dear-companion/",
+  "raw_lyrics": "I once did have a dear companion\nIndeed I thought his love my own\nUntil a dark eyed girl betrayed me\nAnd then he cares no more for me\n\nJust go and leave me if you wish to\nIt will never trouble me\nFor in your heart you love another\nAnd in my grave I\u2019d rather be\n\nLast night you were sweetly sleeping\nDreaming in some sweet repose\nWhile I, a poor girl, broken hearted\nListened to the wind that blows\n\nWhen I see your babe a laughing\nIt makes me think of your sweet face\nBut when I see your babe a crying\nIt makes me think of my disgrace",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I once did have a dear companion",
+        "Indeed I thought his love my own",
+        "Until a dark eyed girl betrayed me",
+        "And then he cares no more for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just go and leave me if you wish to",
+        "It will never trouble me",
+        "For in your heart you love another",
+        "And in my grave I\u2019d rather be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night you were sweetly sleeping",
+        "Dreaming in some sweet repose",
+        "While I, a poor girl, broken hearted",
+        "Listened to the wind that blows"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I see your babe a laughing",
+        "It makes me think of your sweet face",
+        "But when I see your babe a crying",
+        "It makes me think of my disgrace"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

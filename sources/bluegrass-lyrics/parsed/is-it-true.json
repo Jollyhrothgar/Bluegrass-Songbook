@@ -1,0 +1,49 @@
+{
+  "slug": "is-it-true",
+  "title": "Is It True",
+  "source_url": "https://www.bluegrasslyrics.com/song/is-it-true/",
+  "raw_lyrics": "Is it true that you are leavin\u2019\nThat you\u2019re go-in\u2019 far away\nIs it true that you don\u2019t love me\nIs there nothin\u2019 you can say\n\nIs it true that you love another\nThat you just want to be free\nYou know I\u2019d never try to hold you\nIf you no longer love me\n\nIs it true the words you told me\nNow are told to someone new\nWhile my heart is slowly breakin\u2019\nTell me dar-lin\u2019 is it true\n\nIs it true you\u2019ll soon forget me\nAfter we have said goodbye\nIs it true that you\u2019ll be happy\nWhile I sit alone and cry",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Is it true that you are leavin\u2019",
+        "That you\u2019re go-in\u2019 far away",
+        "Is it true that you don\u2019t love me",
+        "Is there nothin\u2019 you can say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Is it true that you love another",
+        "That you just want to be free",
+        "You know I\u2019d never try to hold you",
+        "If you no longer love me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Is it true the words you told me",
+        "Now are told to someone new",
+        "While my heart is slowly breakin\u2019",
+        "Tell me dar-lin\u2019 is it true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Is it true you\u2019ll soon forget me",
+        "After we have said goodbye",
+        "Is it true that you\u2019ll be happy",
+        "While I sit alone and cry"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

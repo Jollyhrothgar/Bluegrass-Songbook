@@ -1,0 +1,60 @@
+{
+  "slug": "mountain-rosa-lee",
+  "title": "Mountain Rosa Lee",
+  "source_url": "https://www.bluegrasslyrics.com/song/mountain-rosa-lee/",
+  "raw_lyrics": "I met the girl named Jole Blon and I know her sister too\nI met Ann from Old Cheyenne and I know Sue City Sue\nThere\u2019s sweet Marie from Tennessee and Louisiana Lou\nI know them all from A to Z and I met Miss Molly too\n\nBut of all the pretty girls I met there\u2019s just one girl for me\nShe lives away back in the hills my Mountain Rosa Lee\nHer hair is dark and curly and her eyes are big and blue\nRaised on corn and taters and she loves her mountain dew\n\nMountain sweet heart\nMountain Rosa Lee\nHillbilly baby waiting there for me\nCheeks are red as roses and lips are meant for me\nHillbilly baby my Mountain Rosa Lee\n\nThere\u2019s Texas Red in Texas they say she\u2019s out of sight\nPistol Packing Mama full of dynamite\nSadie from Missouri as fine as she can be\nBut none can satisfy me like my Mountain Rosa Lee\n\nNow you can have your Texas gals and Louisiana Lou\nI\u2019ll give you Miss Molly and sweet Sue City Sue\nI\u2019ll give you Ann from Old Cheyenne and Marie from Tennessee\nI\u2019m going back to the mountains and Marry Rosa Lee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I met the girl named Jole Blon and I know her sister too",
+        "I met Ann from Old Cheyenne and I know Sue City Sue",
+        "There\u2019s sweet Marie from Tennessee and Louisiana Lou",
+        "I know them all from A to Z and I met Miss Molly too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But of all the pretty girls I met there\u2019s just one girl for me",
+        "She lives away back in the hills my Mountain Rosa Lee",
+        "Her hair is dark and curly and her eyes are big and blue",
+        "Raised on corn and taters and she loves her mountain dew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Mountain sweet heart",
+        "Mountain Rosa Lee",
+        "Hillbilly baby waiting there for me",
+        "Cheeks are red as roses and lips are meant for me",
+        "Hillbilly baby my Mountain Rosa Lee"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s Texas Red in Texas they say she\u2019s out of sight",
+        "Pistol Packing Mama full of dynamite",
+        "Sadie from Missouri as fine as she can be",
+        "But none can satisfy me like my Mountain Rosa Lee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you can have your Texas gals and Louisiana Lou",
+        "I\u2019ll give you Miss Molly and sweet Sue City Sue",
+        "I\u2019ll give you Ann from Old Cheyenne and Marie from Tennessee",
+        "I\u2019m going back to the mountains and Marry Rosa Lee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

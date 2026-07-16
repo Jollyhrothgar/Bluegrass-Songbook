@@ -1,0 +1,39 @@
+{
+  "slug": "leaf-of-love",
+  "title": "Leaf Of Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/leaf-of-love/",
+  "raw_lyrics": "The leaf of love is slowly falling\nLike winter storms with rain and snow\nYou broke a heart in one short moment\nThe leaf of love is falling low\n\nHow could you go and leave me lonely\nI have no one to call my own\nThe tree that bore my love for you dear\nHas shed its leaves my love is gone\n\nStormy roads I\u2019m traveling on now\nWhere I\u2019ll end God only knows\nA beaten rock along the river\nIt\u2019s quiet and peaceful where it flows",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The leaf of love is slowly falling",
+        "Like winter storms with rain and snow",
+        "You broke a heart in one short moment",
+        "The leaf of love is falling low"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How could you go and leave me lonely",
+        "I have no one to call my own",
+        "The tree that bore my love for you dear",
+        "Has shed its leaves my love is gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Stormy roads I\u2019m traveling on now",
+        "Where I\u2019ll end God only knows",
+        "A beaten rock along the river",
+        "It\u2019s quiet and peaceful where it flows"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

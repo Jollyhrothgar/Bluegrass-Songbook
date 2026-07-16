@@ -1,0 +1,69 @@
+{
+  "slug": "grand-ole-opry-song",
+  "title": "Grand Ole Opry Song",
+  "source_url": "https://www.bluegrasslyrics.com/song/grand-ole-opry-song/",
+  "raw_lyrics": "Come and listen to my story if you will I\u2019m gonna tell\nAbout a gang of fellars down at Nashville\nFirst I\u2019ll start with old Red Foley doing his Chatanooga Shoe\nWe can\u2019t forget Hank Williams with his Good Lord Lovesick Blues\n\nIt\u2019s time for Roy Acuff go to Memphis on his train\nMinnie Pearl and Rob Brassfield with Lazy Jim Day\nTurn on your radio I know that you will wait\nHear Little Jimmy Dickens sing \u2018Take An Old Cold Water and Wait\u2019\n\nThere\u2019ll be guitars and fiddles and banjo pickin\u2019 too\nBill Monroe singing out them Old Kentucky Blues\nErnest Tubb\u2019s number Two Wrongs Won\u2019t Make a Right\nAt the Grand Ole Opry every Saturday night\n\nThere is Uncle Dave Macon his gold tooth and plug hat\nCowboy Copas singing Tragic Romance\nSigned Sealed and Delivered with Sam and Curt McGee\nAnd the master of ceremony is the Mr.George D. Hay\n\nThere is Lonzo and Oscar a-poppin\u2019 bubble gum\nGeorge Morgan singing Candy Kisses yum yum\nGot a hole in my bucket bringing in that Georgia mail\nWe\u2019ll play the Bluegrass Breakdown and  dance to the Chicken Reel\n\nYou can talk about your singers in all kinds of way\nBut none could sing the old songs like Bradley Kincaid\nWith his old hound dog Buitar and the famous \u2018Blue tail fly\u2019\nStringbean and Hank Snow and fiddlin\u2019 Chubby Wise",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come and listen to my story if you will I\u2019m gonna tell",
+        "About a gang of fellars down at Nashville",
+        "First I\u2019ll start with old Red Foley doing his Chatanooga Shoe",
+        "We can\u2019t forget Hank Williams with his Good Lord Lovesick Blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s time for Roy Acuff go to Memphis on his train",
+        "Minnie Pearl and Rob Brassfield with Lazy Jim Day",
+        "Turn on your radio I know that you will wait",
+        "Hear Little Jimmy Dickens sing \u2018Take An Old Cold Water and Wait\u2019"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019ll be guitars and fiddles and banjo pickin\u2019 too",
+        "Bill Monroe singing out them Old Kentucky Blues",
+        "Ernest Tubb\u2019s number Two Wrongs Won\u2019t Make a Right",
+        "At the Grand Ole Opry every Saturday night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is Uncle Dave Macon his gold tooth and plug hat",
+        "Cowboy Copas singing Tragic Romance",
+        "Signed Sealed and Delivered with Sam and Curt McGee",
+        "And the master of ceremony is the Mr.George D. Hay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is Lonzo and Oscar a-poppin\u2019 bubble gum",
+        "George Morgan singing Candy Kisses yum yum",
+        "Got a hole in my bucket bringing in that Georgia mail",
+        "We\u2019ll play the Bluegrass Breakdown and  dance to the Chicken Reel"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can talk about your singers in all kinds of way",
+        "But none could sing the old songs like Bradley Kincaid",
+        "With his old hound dog Buitar and the famous \u2018Blue tail fly\u2019",
+        "Stringbean and Hank Snow and fiddlin\u2019 Chubby Wise"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

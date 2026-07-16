@@ -1,0 +1,11 @@
+id: victim-to-the-tomb
+title: Victim To The Tomb
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/victim-to-the-tomb/
+      imported_at: '2026-02-08'

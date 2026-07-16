@@ -1,0 +1,79 @@
+{
+  "slug": "billy-grey",
+  "title": "Billy Grey",
+  "source_url": "https://www.bluegrasslyrics.com/song/billy-grey/",
+  "raw_lyrics": "Billy Grey rode into Gantry back in \u201983\nThere he did meet young Sarah McRae\nThe wild rose of morning that pale flower of dawning\nHerald of springtime in his young life that day\n\nSarah she could not see the daylight of reality\nIn her young eyes Billy bore not a flaw\nKnowing not her chosen one was a hired gun\nWanted in Kansas City by the law\n\nThen one day a tall man came riding \u2018cross the badlands\nLying to the North of New Mexico\nHe was overheard to say he was lookin\u2019 for Bill Grey\nA ruthless man and a dangerous outlaw.\n\nWell the deadly news came creepin\u2019 to Bill Grey fast sleeping\nThere in the Clarendon bar and hotel\nHe fled toward the old church, there on the outskirts\nThinkin\u2019 he\u2019d climb to that old steeple bell\n\nBut a rifle ball came flying face down he lay there dying\nThere in the dust of the road where he fell\nSara she ran to him just cursing the law man\nAccepting no reason knowin\u2019 he was killed\n\nSarah lives in that same old white frame house\nWhere she first met Billy some fifty years ago\nAnd wild rose of morning she\u2019s faded with the dawning\nFor each day of sorrow the long years have sown\n\nAnd written on the stone where the dusty winds have long blown\nEighteen words to a passing world say\nTrue love knows no season, no rhyme nor no reason\nJustice is cold as the Grainger County clay",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Billy Grey rode into Gantry back in \u201983",
+        "There he did meet young Sarah McRae",
+        "The wild rose of morning that pale flower of dawning",
+        "Herald of springtime in his young life that day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sarah she could not see the daylight of reality",
+        "In her young eyes Billy bore not a flaw",
+        "Knowing not her chosen one was a hired gun",
+        "Wanted in Kansas City by the law"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then one day a tall man came riding \u2018cross the badlands",
+        "Lying to the North of New Mexico",
+        "He was overheard to say he was lookin\u2019 for Bill Grey",
+        "A ruthless man and a dangerous outlaw."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the deadly news came creepin\u2019 to Bill Grey fast sleeping",
+        "There in the Clarendon bar and hotel",
+        "He fled toward the old church, there on the outskirts",
+        "Thinkin\u2019 he\u2019d climb to that old steeple bell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But a rifle ball came flying face down he lay there dying",
+        "There in the dust of the road where he fell",
+        "Sara she ran to him just cursing the law man",
+        "Accepting no reason knowin\u2019 he was killed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sarah lives in that same old white frame house",
+        "Where she first met Billy some fifty years ago",
+        "And wild rose of morning she\u2019s faded with the dawning",
+        "For each day of sorrow the long years have sown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And written on the stone where the dusty winds have long blown",
+        "Eighteen words to a passing world say",
+        "True love knows no season, no rhyme nor no reason",
+        "Justice is cold as the Grainger County clay"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

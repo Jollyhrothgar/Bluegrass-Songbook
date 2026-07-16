@@ -1,0 +1,39 @@
+{
+  "slug": "the-shuffle-of-my-feet",
+  "title": "The Shuffle Of My Feet",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-shuffle-of-my-feet/",
+  "raw_lyrics": "The city now is sleeping its coast has slowed down\nThe streets are all deserted they\u2019ve almost lost their sound\nI\u2019ve walked the lonely sidewalk my heart way down deep\nBut the only sound that I hear is the shuffle of my feet\n\nI stare into a window my mind is miles away\nYour face is everywhere I go I can\u2019t live on this way\nA red light slows my progress then I cress the street\nBut the only sound that I hear is the shuffle of my feet\n\nI came up to a small caf\u00e9 and entered into the gloom\nI remember how many times we sat together in this room\nI couldn\u2019t stand it any longer I stumbled blindly into the street\nTears came down but the only sound was the shuffle of my feet",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The city now is sleeping its coast has slowed down",
+        "The streets are all deserted they\u2019ve almost lost their sound",
+        "I\u2019ve walked the lonely sidewalk my heart way down deep",
+        "But the only sound that I hear is the shuffle of my feet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I stare into a window my mind is miles away",
+        "Your face is everywhere I go I can\u2019t live on this way",
+        "A red light slows my progress then I cress the street",
+        "But the only sound that I hear is the shuffle of my feet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I came up to a small caf\u00e9 and entered into the gloom",
+        "I remember how many times we sat together in this room",
+        "I couldn\u2019t stand it any longer I stumbled blindly into the street",
+        "Tears came down but the only sound was the shuffle of my feet"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

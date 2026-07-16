@@ -1,0 +1,11 @@
+id: i-dont-love-nobody
+title: I Don’t Love Nobody
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-dont-love-nobody/
+      imported_at: '2026-02-08'

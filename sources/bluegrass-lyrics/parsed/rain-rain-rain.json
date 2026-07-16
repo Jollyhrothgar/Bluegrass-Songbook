@@ -1,0 +1,39 @@
+{
+  "slug": "rain-rain-rain",
+  "title": "Rain Rain Rain",
+  "source_url": "https://www.bluegrasslyrics.com/song/rain-rain-rain/",
+  "raw_lyrics": "Rain rain rain\nI can feel the clouds of heartache moving in\nRain rain rain\nYou\u2019ve got leaving on your mind again.\n\nYour love for me is like the changing weather\nWith just enough sun to keep me hanging on\nAnd foolish me keeps hoping it\u2019ll get better\nBut clouds roll in and once more you are gone.\n\nRainbows that appear are just illusions\nThat man has looked for since the days of old\nAnd like the rainbow your love\u2019s always moving\nBut I keep looking for that pot of gold.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Rain rain rain",
+        "I can feel the clouds of heartache moving in",
+        "Rain rain rain",
+        "You\u2019ve got leaving on your mind again."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your love for me is like the changing weather",
+        "With just enough sun to keep me hanging on",
+        "And foolish me keeps hoping it\u2019ll get better",
+        "But clouds roll in and once more you are gone."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rainbows that appear are just illusions",
+        "That man has looked for since the days of old",
+        "And like the rainbow your love\u2019s always moving",
+        "But I keep looking for that pot of gold."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

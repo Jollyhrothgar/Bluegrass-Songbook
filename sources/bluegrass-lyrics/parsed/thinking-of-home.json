@@ -1,0 +1,59 @@
+{
+  "slug": "thinking-of-home",
+  "title": "Thinking of Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/thinking-of-home/",
+  "raw_lyrics": "I can see the sun as it\u2019s sinking\nThrough the pines on the old mountainside\nI can hear my mother a callin\nAs I sit here alone tonight\n\nI can see the smoke from the chimney\nI can see the old trail toward home\nAs I sit here alone in the city\nI think of the folks there back home\n\nWhat makes us all want to wonder\nWhy do we all want to roam\nNobody knows how my heart aches\nFor my mom and dad back at home\n\nI\u2019m leaving at sunrise tomorrow\nI can\u2019t wait to see the old home\nFor I know they\u2019re waiting by the fireside\nFor one of the kids to return\n\nI can see the smoke from the chimney\nI can see the old trail toward home\nAs I sit here alone in the city\nI think of the folks there back home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can see the sun as it\u2019s sinking",
+        "Through the pines on the old mountainside",
+        "I can hear my mother a callin",
+        "As I sit here alone tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can see the smoke from the chimney",
+        "I can see the old trail toward home",
+        "As I sit here alone in the city",
+        "I think of the folks there back home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What makes us all want to wonder",
+        "Why do we all want to roam",
+        "Nobody knows how my heart aches",
+        "For my mom and dad back at home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m leaving at sunrise tomorrow",
+        "I can\u2019t wait to see the old home",
+        "For I know they\u2019re waiting by the fireside",
+        "For one of the kids to return"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can see the smoke from the chimney",
+        "I can see the old trail toward home",
+        "As I sit here alone in the city",
+        "I think of the folks there back home"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

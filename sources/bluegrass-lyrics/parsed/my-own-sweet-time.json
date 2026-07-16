@@ -1,0 +1,39 @@
+{
+  "slug": "my-own-sweet-time",
+  "title": "My Own Sweet Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-own-sweet-time/",
+  "raw_lyrics": "You\u2019ll be hearing stories rumors around town\nOf a heart that\u2019s broken and slow to come around\nLet them tell their stories well even if they\u2019re true\nNo one\u2019s going to tell me how to forget about you.\n\nI\u2019m gonna take my own sweet time\nThat\u2019s what I\u2019ll do\nI\u2019m gonna take my own sweet time\nGetting over you.\n\nDaisies love the sunshine and roses love the dew\nPeople try to tell me Go find someone new\nSomeday I\u2019ll remember to forget we ever met\nBut until it\u2019s over well I\u2019m not through with you yet.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll be hearing stories rumors around town",
+        "Of a heart that\u2019s broken and slow to come around",
+        "Let them tell their stories well even if they\u2019re true",
+        "No one\u2019s going to tell me how to forget about you."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m gonna take my own sweet time",
+        "That\u2019s what I\u2019ll do",
+        "I\u2019m gonna take my own sweet time",
+        "Getting over you."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Daisies love the sunshine and roses love the dew",
+        "People try to tell me Go find someone new",
+        "Someday I\u2019ll remember to forget we ever met",
+        "But until it\u2019s over well I\u2019m not through with you yet."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

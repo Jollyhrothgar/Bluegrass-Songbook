@@ -1,0 +1,11 @@
+id: when-i-get-home
+title: When I Get Home
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/when-i-get-home/
+      imported_at: '2026-02-08'

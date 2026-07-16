@@ -1,0 +1,49 @@
+{
+  "slug": "someday-youll-pay",
+  "title": "Someday You\u2019ll Pay",
+  "source_url": "https://www.bluegrasslyrics.com/song/someday-youll-pay/",
+  "raw_lyrics": "Someday you\u2019ll pay for breakin my heart\nAnd then you\u2019ll pay alone\nYou\u2019ll miss the sweet kiss you\u2019ll need a sweetheart\nYou\u2019ll think of the one that\u2019s gone\n\nIf you could just feel so lonely and blue\nI know you\u2019d change your mind\nYou\u2019ve broken my heart but some sad day\nYou\u2019ll pay for love divine\n\nThe days may come the days may go\nThat find you happy still\nBut when your sins have found you out\nYou\u2019ll have to pay the bill\n\nSo long my dear good luck to you\nYou\u2019ll never see me again\nThe happy days that once we knew\nHave come to this bitter end",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Someday you\u2019ll pay for breakin my heart",
+        "And then you\u2019ll pay alone",
+        "You\u2019ll miss the sweet kiss you\u2019ll need a sweetheart",
+        "You\u2019ll think of the one that\u2019s gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "If you could just feel so lonely and blue",
+        "I know you\u2019d change your mind",
+        "You\u2019ve broken my heart but some sad day",
+        "You\u2019ll pay for love divine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The days may come the days may go",
+        "That find you happy still",
+        "But when your sins have found you out",
+        "You\u2019ll have to pay the bill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So long my dear good luck to you",
+        "You\u2019ll never see me again",
+        "The happy days that once we knew",
+        "Have come to this bitter end"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

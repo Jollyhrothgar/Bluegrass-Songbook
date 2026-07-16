@@ -1,0 +1,49 @@
+{
+  "slug": "if-i-could-only-win-your-love",
+  "title": "If I Could Only Win Your Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-i-could-only-win-your-love/",
+  "raw_lyrics": "If I could only win your love\nI\u2019d make he most of everything\nI\u2019d proudly wear your wedding ring\nMy heart would never stray one dream away\n\nOh how can I ever say\nHow I crave your love  when you\u2019re gone away\nOh how can I ever show\nHow I burn inside  when you hold me tight\n\nIf I could only win your love\nI\u2019d give my all to make it live\nYou\u2019ll never know how much I\u2019d give\nIf I could only win your love\n\nIf I could only win your love\nI\u2019d give my all tomake it live\nYou\u2019ll never know how much I\u2019d give\nIf I could only win your love.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If I could only win your love",
+        "I\u2019d make he most of everything",
+        "I\u2019d proudly wear your wedding ring",
+        "My heart would never stray one dream away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh how can I ever say",
+        "How I crave your love  when you\u2019re gone away",
+        "Oh how can I ever show",
+        "How I burn inside  when you hold me tight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "If I could only win your love",
+        "I\u2019d give my all to make it live",
+        "You\u2019ll never know how much I\u2019d give",
+        "If I could only win your love"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "If I could only win your love",
+        "I\u2019d give my all tomake it live",
+        "You\u2019ll never know how much I\u2019d give",
+        "If I could only win your love."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

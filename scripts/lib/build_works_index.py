@@ -117,6 +117,17 @@ def parse_chordpro_content(content: str) -> dict:
     }
 
 
+def simplify_chord(chord: str) -> str:
+    """Simplify chord to root + quality only.
+
+    D7->D, Am7->Am, Cmaj7->C, Gsus4->G, G/B->G, Amin->Am
+    """
+    m = re.match(r'^([A-G][#b]?)(m(?!aj)(?:in)?|dim|aug)?', chord)
+    if not m:
+        return chord
+    return m.group(1) + (m.group(2) or '').replace('min', 'm')
+
+
 def extract_first_line(lyrics: str) -> str:
     """Get first non-empty line of lyrics."""
     for line in lyrics.split('\n'):
@@ -127,47 +138,54 @@ def extract_first_line(lyrics: str) -> str:
 
 
 def compute_group_id(title: str, artist: str, lyrics: str) -> str:
-    """Compute group ID for version grouping."""
-    import unicodedata
+    """Compute group ID for version grouping.
 
-    def normalize(text: str) -> str:
-        if not text:
-            return ''
-        # Normalize unicode
-        text = unicodedata.normalize('NFKD', text)
-        text = text.encode('ascii', 'ignore').decode('ascii')
-        text = text.lower()
-        # Remove common suffixes
-        text = re.sub(r'\s*\([^)]*\)\s*$', '', text)  # (Live), etc.
-        text = re.sub(r'[^a-z0-9]', '', text)
-        return text
+    Title-only base hash (artist excluded — same song, different attributions
+    should group together). Lyrics hash distinguishes genuinely different songs
+    that share a title.
+    """
+    import unicodedata
 
     def normalize_title(text: str) -> str:
         """Normalize title, removing articles for better grouping."""
         if not text:
             return ''
-        import unicodedata
-        # Normalize unicode first
         text = unicodedata.normalize('NFKD', text)
         text = text.encode('ascii', 'ignore').decode('ascii')
         text = text.lower()
         # Remove parenthetical suffixes like (Live), (C), (D)
         text = re.sub(r'\s*\([^)]*\)\s*$', '', text)
-        # Remove common articles that vary in tune titles (before stripping spaces)
-        # "Angeline the Baker" vs "Angeline Baker"
-        # "The Girl I Left Behind Me" vs "Girl I Left Behind Me"
+        # Remove common articles
         text = re.sub(r'\bthe\b', '', text)
         text = re.sub(r'\ba\b', '', text)
         text = re.sub(r'\ban\b', '', text)
-        # Now strip non-alphanumeric
         text = re.sub(r'[^a-z0-9]', '', text)
         return text
 
-    base = normalize_title(title) + '_' + normalize(artist or '')
+    def normalize_lyrics(text: str) -> str:
+        """Aggressively normalize lyrics for grouping comparison."""
+        if not text:
+            return ''
+        text = unicodedata.normalize('NFKD', text)
+        text = text.encode('ascii', 'ignore').decode('ascii')
+        text = text.lower()
+        # Normalize contractions
+        text = text.replace("'", '').replace('\u2019', '')
+        # Strip filler words common in folk/country variations
+        for filler in ['well ', 'oh ', 'now ', 'hey ', 'say ']:
+            text = text.replace(filler, '')
+        # Normalize "gonna" -> "going to", "ain't" -> "not"
+        text = text.replace('gonna', 'going to')
+        text = text.replace('aint', 'not')
+        text = re.sub(r'[^a-z0-9]', '', text)
+        return text
+
+    # Title-only base hash (no artist)
+    base = normalize_title(title)
     base_hash = hashlib.md5(base.encode()).hexdigest()[:12]
 
     # Lyrics hash to distinguish different songs with same title
-    lyrics_norm = normalize(lyrics[:200] if lyrics else '')
+    lyrics_norm = normalize_lyrics(lyrics[:200] if lyrics else '')
     lyrics_hash = hashlib.md5(lyrics_norm.encode()).hexdigest()[:8]
 
     return f"{base_hash}_{lyrics_hash}"
@@ -188,13 +206,19 @@ def build_song_from_work(work_dir: Path) -> dict:
     # Check what parts we have
     has_lead_sheet = lead_sheet_path.exists()
     tablature_parts = []
+    document_parts = []
     if work.get('parts'):
         for part in work['parts']:
             if part.get('type') == 'tablature':
                 tablature_parts.append(part)
+            elif part.get('type') == 'document':
+                document_parts.append(part)
 
-    # Must have at least a lead sheet or tablature
-    if not has_lead_sheet and not tablature_parts:
+    # Check if this is a placeholder work
+    is_placeholder = work.get('status') == 'placeholder'
+
+    # Must have at least a lead sheet, tablature, document, or be a placeholder
+    if not has_lead_sheet and not tablature_parts and not document_parts and not is_placeholder:
         return None
 
     # Initialize defaults
@@ -234,6 +258,10 @@ def build_song_from_work(work_dir: Path) -> dict:
                 prov = part.get('provenance', {})
                 source = prov.get('source', 'unknown')
 
+    # For placeholder works with no other source, use 'placeholder'
+    if is_placeholder and source == 'unknown':
+        source = 'placeholder'
+
     # Convert to Nashville
     nashville_set = set()
     progression = []
@@ -264,8 +292,14 @@ def build_song_from_work(work_dir: Path) -> dict:
         song['composer'] = ', '.join(work['composers'])
     if work.get('tags'):
         song['tags'] = {tag: {'score': 50, 'source': 'work'} for tag in work['tags']}
+    if work.get('exclude_tags'):
+        song['exclude_tags'] = work['exclude_tags']
     if work.get('external', {}).get('strum_machine'):
         song['strum_machine_url'] = work['external']['strum_machine']
+    if is_placeholder:
+        song['status'] = 'placeholder'
+    if work.get('notes'):
+        song['notes'] = work['notes']
 
     # Compute group_id
     song['group_id'] = compute_group_id(
@@ -307,6 +341,25 @@ def build_song_from_work(work_dir: Path) -> dict:
                     tab_info['author_url'] = f"https://www.banjohangout.org/my/{quote(prov.get('author'))}"
             song['tablature_parts'].append(tab_info)
 
+    # Add document parts info for frontend
+    if document_parts:
+        song['document_parts'] = []
+        for part in document_parts:
+            prov = part.get('provenance', {})
+            # Use the original filename from work.yaml for the source path
+            source_file = part.get('file', 'document.pdf')
+            # Build destination filename from work id and label
+            label_slug = re.sub(r'[^a-z0-9]+', '-', (part.get('label', 'doc')).lower()).strip('-')
+            doc_info = {
+                'format': part.get('format', 'pdf'),
+                'label': part.get('label', 'Document'),
+                'file': f"data/docs/{work['id']}-{label_slug}.pdf",
+                'source_file': source_file,
+            }
+            if prov.get('submitted_by'):
+                doc_info['submitted_by'] = prov['submitted_by']
+            song['document_parts'].append(doc_info)
+
     return song
 
 
@@ -318,20 +371,36 @@ def fuzzy_group_songs(songs: list) -> list:
     - "Angelene Baker" vs "Angeline Baker" (spelling variations)
     - Minor typos and OCR errors
 
+    IMPORTANT: To avoid false positives (merging different songs with similar titles),
+    we require BOTH title similarity AND lyrics similarity before merging.
+    Examples of songs that should NOT merge despite similar titles:
+    - "I Walk Alone" vs "I Walk The Line" (different lyrics)
+    - "Good Hearted Woman" vs "Good Hearted Man" (different songs)
+    - "Still Loving You" vs "Still Losing You" (different songs)
+
     Optimized to avoid O(n²) comparisons by grouping titles by prefix first.
     Uses rapidfuzz for faster matching if available, falls back to difflib.
     """
     import unicodedata
     from difflib import SequenceMatcher
 
-    # Try to use rapidfuzz for 10x faster string matching
-    try:
-        from rapidfuzz.fuzz import ratio as rapidfuzz_ratio
-        def similarity(a: str, b: str) -> float:
-            return rapidfuzz_ratio(a, b) / 100.0  # rapidfuzz returns 0-100
-    except ImportError:
-        def similarity(a: str, b: str) -> float:
-            return SequenceMatcher(None, a, b).ratio()
+    def similarity(a: str, b: str) -> float:
+        """Calculate similarity ratio between two strings."""
+        return SequenceMatcher(None, a, b).ratio()
+
+    def word_overlap(a: str, b: str) -> float:
+        """Calculate word-level Jaccard similarity (order-independent).
+
+        Catches cases where lyrics are the same words in different order
+        (e.g., verse-first vs chorus-first arrangements).
+        """
+        words_a = set(a.split())
+        words_b = set(b.split())
+        if not words_a or not words_b:
+            return 0.0
+        intersection = words_a & words_b
+        union = words_a | words_b
+        return len(intersection) / len(union)
 
     def normalize_for_fuzzy(text: str) -> str:
         """Normalize title for fuzzy comparison."""
@@ -351,9 +420,17 @@ def fuzzy_group_songs(songs: list) -> list:
         text = ' '.join(text.split())  # Normalize whitespace
         return text
 
-    def similarity(a: str, b: str) -> float:
-        """Calculate similarity ratio between two strings."""
-        return SequenceMatcher(None, a, b).ratio()
+    def normalize_lyrics(text: str) -> str:
+        """Normalize lyrics for comparison."""
+        if not text:
+            return ''
+        text = unicodedata.normalize('NFKD', text)
+        text = text.encode('ascii', 'ignore').decode('ascii')
+        text = text.lower()
+        # Remove punctuation and extra whitespace
+        text = re.sub(r'[^a-z0-9\s]', '', text)
+        text = ' '.join(text.split())
+        return text[:200]  # First 200 chars is enough to distinguish
 
     # Group songs by their current group_id
     by_group = {}
@@ -374,17 +451,86 @@ def fuzzy_group_songs(songs: list) -> list:
             title_to_groups[norm_title] = set()
         title_to_groups[norm_title].add(gid)
 
+    # Build group_id -> representative lyrics mapping (use first song's lyrics)
+    group_lyrics = {}
+    for song in songs:
+        gid = song.get('group_id', '')
+        if gid not in group_lyrics:
+            lyrics = song.get('lyrics', '') or song.get('first_line', '')
+            group_lyrics[gid] = normalize_lyrics(lyrics)
+
+    # Build group_id -> simplified chord set (for supplementary matching)
+    group_chords = {}
+    for song in songs:
+        gid = song.get('group_id', '')
+        if gid not in group_chords:
+            chords = song.get('nashville', [])
+            group_chords[gid] = set(chords) if chords else set()
+
+    merge_map = {}  # old_group_id -> new_group_id
+    TITLE_SIMILARITY_THRESHOLD = 0.85  # 85% title similarity required
+    LYRICS_SIMILARITY_THRESHOLD = 0.70  # 70% lyrics similarity also required
+    CHORD_OVERLAP_THRESHOLD = 0.80     # 80% chord overlap
+    LYRICS_WITH_CHORDS_THRESHOLD = 0.50  # Lower lyrics threshold when chords match
+
+    def should_merge_groups(g1, g2, title_sim):
+        """Check if two groups should be merged based on lyrics and chords."""
+        lyrics1 = group_lyrics.get(g1, '')
+        lyrics2 = group_lyrics.get(g2, '')
+
+        # If both have lyrics, compare them
+        if lyrics1 and lyrics2:
+            # Use max of sequential and word-overlap similarity.
+            # Word overlap catches rearranged sections (verse-first vs chorus-first).
+            lyrics_sim = max(similarity(lyrics1, lyrics2), word_overlap(lyrics1, lyrics2))
+            lyrics_threshold = LYRICS_SIMILARITY_THRESHOLD
+
+            # If title similarity is high, use chord overlap to lower threshold
+            if title_sim >= TITLE_SIMILARITY_THRESHOLD:
+                chords1 = group_chords.get(g1, set())
+                chords2 = group_chords.get(g2, set())
+                if chords1 and chords2:
+                    union = chords1 | chords2
+                    intersection = chords1 & chords2
+                    chord_overlap = len(intersection) / len(union) if union else 0
+                    if chord_overlap >= CHORD_OVERLAP_THRESHOLD:
+                        lyrics_threshold = LYRICS_WITH_CHORDS_THRESHOLD
+
+            return lyrics_sim >= lyrics_threshold
+        # If one or both lack lyrics, allow merge for high title similarity
+        elif title_sim >= 0.95:
+            return True
+        return False
+
+    # ── Pre-pass: same normalized title, different group_ids ──
+    # This catches cases like "Roll In My Sweet Baby's Arms" where both
+    # versions have the exact same normalized title but different group_ids
+    # (due to lyrics hash differences from filler words, contractions, etc.)
+    same_title_merges = 0
+    for norm_title, group_ids in title_to_groups.items():
+        if len(group_ids) < 2:
+            continue
+        gid_list = list(group_ids)
+        # Pick canonical (most songs)
+        canonical = max(gid_list, key=lambda g: len(by_group.get(g, [])))
+        for gid in gid_list:
+            if gid == canonical or gid in merge_map:
+                continue
+            if should_merge_groups(gid, canonical, 1.0):
+                merge_map[gid] = canonical
+                same_title_merges += 1
+
+    if same_title_merges:
+        print(f"Same-title pre-pass: merged {same_title_merges} groups")
+
+    # ── Fuzzy pass: similar (but not identical) titles ──
     # Group titles by their first 3 characters (prefix buckets)
-    # This avoids O(n²) by only comparing within buckets
     prefix_buckets = {}
     for title in title_to_groups.keys():
         prefix = title[:3] if len(title) >= 3 else title
         if prefix not in prefix_buckets:
             prefix_buckets[prefix] = []
         prefix_buckets[prefix].append(title)
-
-    merge_map = {}  # old_group_id -> new_group_id
-    SIMILARITY_THRESHOLD = 0.85  # 85% similarity required
 
     # Only compare titles within the same prefix bucket
     for prefix, bucket_titles in prefix_buckets.items():
@@ -398,12 +544,24 @@ def fuzzy_group_songs(songs: list) -> list:
                 if abs(len1 - len2) > max(len1, len2) * 0.2:
                     continue
 
-                sim = similarity(title1, title2)
-                if sim >= SIMILARITY_THRESHOLD:
-                    # These titles should be grouped together
-                    groups1 = title_to_groups[title1]
-                    groups2 = title_to_groups[title2]
+                title_sim = similarity(title1, title2)
+                if title_sim < TITLE_SIMILARITY_THRESHOLD:
+                    continue
 
+                # Title is similar enough - now check lyrics/chords
+                groups1 = title_to_groups[title1]
+                groups2 = title_to_groups[title2]
+
+                should_merge_pair = False
+                for g1 in groups1:
+                    for g2 in groups2:
+                        if should_merge_groups(g1, g2, title_sim):
+                            should_merge_pair = True
+                            break
+                    if should_merge_pair:
+                        break
+
+                if should_merge_pair:
                     # Pick the canonical group_id (prefer the one with more songs)
                     all_groups = groups1 | groups2
                     canonical = max(all_groups, key=lambda g: len(by_group.get(g, [])))
@@ -503,6 +661,18 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
         for work_id, error in errors:
             print(f"  {work_id}: {error}")
 
+    # Filter out soft-deleted songs
+    deleted_songs_file = Path('docs/data/deleted_songs.json')
+    if deleted_songs_file.exists():
+        with open(deleted_songs_file) as f:
+            deleted_songs = json.load(f)
+        if deleted_songs:
+            original_count = len(songs)
+            songs = [s for s in songs if s['id'] not in deleted_songs]
+            deleted_count = original_count - len(songs)
+            if deleted_count > 0:
+                print(f"Excluded {deleted_count} soft-deleted songs")
+
     # Copy tablature files to docs/data/tabs/
     tabs_dir = Path('docs/data/tabs')
     tabs_dir.mkdir(parents=True, exist_ok=True)
@@ -522,6 +692,24 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
                 tabs_copied += 1
     if tabs_copied:
         print(f"Copied {tabs_copied} tablature files to docs/data/tabs/")
+
+    # Copy document files to docs/data/docs/
+    docs_dir = Path('docs/data/docs')
+    docs_dir.mkdir(parents=True, exist_ok=True)
+    docs_copied = 0
+    for song in songs:
+        for doc_part in song.get('document_parts', []):
+            dest_path = Path('docs') / doc_part['file']
+            work_id = song['id']
+            source_filename = doc_part.get('source_file', 'document.pdf')
+            source_path = works_dir / work_id / source_filename
+            if source_path.exists() and (not dest_path.exists() or
+                    source_path.stat().st_mtime > dest_path.stat().st_mtime):
+                dest_path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(source_path, dest_path)
+                docs_copied += 1
+    if docs_copied:
+        print(f"Copied {docs_copied} document files to docs/data/docs/")
 
     # Tag enrichment
     if enrich_tags:
@@ -641,6 +829,42 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
 
     print(f"Written to {output_file}")
     print(f"Size: {output_file.stat().st_size / 1024 / 1024:.1f} MB")
+
+    # Lightweight dedup check: warn about potential duplicates
+    _check_duplicates(songs)
+
+
+def _check_duplicates(songs: list):
+    """Quick dedup check on built index. Warns but doesn't fail."""
+    import unicodedata
+    import re
+
+    def _norm(text):
+        if not text:
+            return ''
+        text = unicodedata.normalize('NFKD', text)
+        text = ''.join(c for c in text if not unicodedata.combining(c))
+        text = text.lower()
+        text = re.sub(r"[''`]", '', text)
+        text = re.sub(r'\bthe\b|\ba\b|\ban\b', '', text)
+        text = re.sub(r'\bst\b', 'saint', text)
+        text = re.sub(r'[^a-z0-9\s]', '', text)
+        return re.sub(r'\s+', ' ', text).strip()
+
+    by_title = {}
+    for song in songs:
+        key = _norm(song.get('title', ''))
+        if key:
+            by_title.setdefault(key, []).append(song['id'])
+
+    dupes = [(title, ids) for title, ids in by_title.items() if len(ids) > 1]
+    if dupes:
+        print(f"\nWARNING: {len(dupes)} potential duplicate title groups detected.")
+        print("Run 'uv run python scripts/lib/dedup_works.py' to review.")
+        for title, ids in dupes[:5]:
+            print(f"  {title}: {', '.join(str(i) for i in ids[:3])}")
+        if len(dupes) > 5:
+            print(f"  ... and {len(dupes) - 5} more")
 
 
 def main():

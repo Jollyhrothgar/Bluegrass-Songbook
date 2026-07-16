@@ -1,0 +1,39 @@
+{
+  "slug": "count-me-out",
+  "title": "Count Me Out",
+  "source_url": "https://www.bluegrasslyrics.com/song/count-me-out/",
+  "raw_lyrics": "Taking me for granted was your first mistake\nAnd that was the beginning of my last heartache\nAnd then you added insult to my injury\nWhen you started treating me just as you please\n\nCount me out of future plans you might be making\nNo more foolish chances am I taking\nYou played love\u2019s game too rough, as for me I\u2019ve had enough\n\u2018Cause the going\u2019s got too rough so count me out\n\nThings I thought important never bothered you\nAnd you kept on \u2019till you killed all my love for you\nDoing as you pleased became a part of you\nAnd you can\u2019t blame me now for walking out on you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Taking me for granted was your first mistake",
+        "And that was the beginning of my last heartache",
+        "And then you added insult to my injury",
+        "When you started treating me just as you please"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Count me out of future plans you might be making",
+        "No more foolish chances am I taking",
+        "You played love\u2019s game too rough, as for me I\u2019ve had enough",
+        "\u2018Cause the going\u2019s got too rough so count me out"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Things I thought important never bothered you",
+        "And you kept on \u2019till you killed all my love for you",
+        "Doing as you pleased became a part of you",
+        "And you can\u2019t blame me now for walking out on you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

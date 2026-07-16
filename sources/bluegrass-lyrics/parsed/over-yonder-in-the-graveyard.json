@@ -1,0 +1,59 @@
+{
+  "slug": "over-yonder-in-the-graveyard",
+  "title": "Over Yonder in the Graveyard",
+  "source_url": "https://www.bluegrasslyrics.com/song/over-yonder-in-the-graveyard/",
+  "raw_lyrics": "Over yonder in the graveyard\nWhere the wild wild flowers grow\nOh there they laid my own true lover\nShe\u2019s gone from me forever more\n\nFairer than the sweetest flowers\nRestless as a wildest wind\nBorn with love deep as the ocean\nThis is the girl that I did win\n\nI left her there back in the mountains\nTo see the world riches to gain\nWhen I returned no earthly treasure\nCould ease this heart so full of pain\n\nThere so high upon that mountain\nBeneath that little mound of clay\nOh the girl that I\u2019d returned to marry\nSo still among the flowers did lay\n\nI\u2019ll go away and I will wander\nLay aside my earthly gains\nAnd I\u2019ll not end as a man with riches\nUndone in sorry I\u2019ll remain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Over yonder in the graveyard",
+        "Where the wild wild flowers grow",
+        "Oh there they laid my own true lover",
+        "She\u2019s gone from me forever more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Fairer than the sweetest flowers",
+        "Restless as a wildest wind",
+        "Born with love deep as the ocean",
+        "This is the girl that I did win"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I left her there back in the mountains",
+        "To see the world riches to gain",
+        "When I returned no earthly treasure",
+        "Could ease this heart so full of pain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There so high upon that mountain",
+        "Beneath that little mound of clay",
+        "Oh the girl that I\u2019d returned to marry",
+        "So still among the flowers did lay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll go away and I will wander",
+        "Lay aside my earthly gains",
+        "And I\u2019ll not end as a man with riches",
+        "Undone in sorry I\u2019ll remain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

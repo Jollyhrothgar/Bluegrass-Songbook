@@ -1,0 +1,48 @@
+{
+  "slug": "coal-miners-blues",
+  "title": "Coal Miner\u2019s Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/coal-miners-blues/",
+  "raw_lyrics": "Some blues are just blues, mine are the miner\u2019s blues\nSome blues are just blues, mine are the miner\u2019s blues\nMy troubles are coming by threes and by twos\nBlues and more blues, it\u2019s that coal black blues\nBlues and more blues, it\u2019s that coal black blues\nGot coal in my hair, got coal in my shoes\n\nThese blues are so blue, they are the coal black blues\nThese blues are so blue, they are the coal black blues\nFor my place will cave in, and my life I will lose\n\nYou say they are blues, these old miner\u2019s blues\nYou say they are blues, these old miner\u2019s blues\nNow I must have sharpened these picks that I use\n\nI\u2019m out with these blues, dirty coal black blues\nI\u2019m out with these blues, dirty coal black blues\nWe\u2019ll lay off tomorrow with the coal miner\u2019s blues",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Some blues are just blues, mine are the miner\u2019s blues",
+        "Some blues are just blues, mine are the miner\u2019s blues",
+        "My troubles are coming by threes and by twos",
+        "Blues and more blues, it\u2019s that coal black blues",
+        "Blues and more blues, it\u2019s that coal black blues",
+        "Got coal in my hair, got coal in my shoes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "These blues are so blue, they are the coal black blues",
+        "These blues are so blue, they are the coal black blues",
+        "For my place will cave in, and my life I will lose"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You say they are blues, these old miner\u2019s blues",
+        "You say they are blues, these old miner\u2019s blues",
+        "Now I must have sharpened these picks that I use"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m out with these blues, dirty coal black blues",
+        "I\u2019m out with these blues, dirty coal black blues",
+        "We\u2019ll lay off tomorrow with the coal miner\u2019s blues"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

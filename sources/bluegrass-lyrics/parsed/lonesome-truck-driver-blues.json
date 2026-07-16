@@ -1,0 +1,60 @@
+{
+  "slug": "lonesome-truck-driver-blues",
+  "title": "Lonesome Truck Driver Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-truck-driver-blues/",
+  "raw_lyrics": "I leave Pittsburgh with a load of steel\nNobody knows just how I feel\nWith the road up ahead and my baby behind\nKeep me drivin\u2019 with a worried mind\n\nLonesome Truck Driver Blues\nLonesome Truck Driver Blues\nWith the road up ahead and my baby behind\nKeep me drivin\u2019 with a worried mind\nLonesome truck driver blues\n\nIf you load too light you can\u2019t make a dime\nIf you load to heavy then you get a fine\nLook at \u2019em lined up down the road\nGuess I\u2019d better dump my load\n\nWell it\u2019s coffee cakes and pork and beans\nBlack eyed peas and turnip greens\nTurn on my radio one time more\nHear Ernest Tubb a walkin\u2019 the floor\n\nOh the motor\u2019s purrin\u2019 I\u2019m makin\u2019 time\nTakin\u2019 me back to that baby of mine\nShe\u2019ll be purrin\u2019 like a kitten when I walk in the door\nThe truck driver blues I won\u2019t sing anymore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I leave Pittsburgh with a load of steel",
+        "Nobody knows just how I feel",
+        "With the road up ahead and my baby behind",
+        "Keep me drivin\u2019 with a worried mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Lonesome Truck Driver Blues",
+        "Lonesome Truck Driver Blues",
+        "With the road up ahead and my baby behind",
+        "Keep me drivin\u2019 with a worried mind",
+        "Lonesome truck driver blues"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you load too light you can\u2019t make a dime",
+        "If you load to heavy then you get a fine",
+        "Look at \u2019em lined up down the road",
+        "Guess I\u2019d better dump my load"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well it\u2019s coffee cakes and pork and beans",
+        "Black eyed peas and turnip greens",
+        "Turn on my radio one time more",
+        "Hear Ernest Tubb a walkin\u2019 the floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the motor\u2019s purrin\u2019 I\u2019m makin\u2019 time",
+        "Takin\u2019 me back to that baby of mine",
+        "She\u2019ll be purrin\u2019 like a kitten when I walk in the door",
+        "The truck driver blues I won\u2019t sing anymore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

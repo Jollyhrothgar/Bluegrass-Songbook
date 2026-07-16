@@ -1,0 +1,79 @@
+{
+  "slug": "tragic-romance",
+  "title": "Tragic Romance",
+  "source_url": "https://www.bluegrasslyrics.com/song/tragic-romance/",
+  "raw_lyrics": "Nestled in the heart of the Tennessee hills\nMidst peaceful pines \u2018neath the rocks and the rills\nThere stands my old homestead of long years ago\nBrings back sweet memories of the one I loved so\n\nI courted a maiden so sweet and so fair\nWith pearly blue eyes and with chestnut brown hair\nShe promised to love and said she\u2019s be mine\nBut I went away leaving her there behind\n\nI\u2019ll tell you the reason why I left her there\nTo roam this old world with its sorrow and cares\nI saw her one night in the arms of a man\nHugging and kissing as true lovers can\n\nI went to my home with a heart full of woe\nPacked my belongings determined to go\nFor many long years this old world I did roam\nWith thoughts of my sweetheart my darling my own\n\nWhile dining one day in a little country town\nA stranger came in and he chanced to sit down\nWhile talking of loved ones I happened to find\nThat his sister was that old sweetheart of mine\n\nNow I am the man who you saw that fateful night\nWrapped in the arms of my sister so tight\nShe waited so long for the day you\u2019d return\nAnd why you had left her she never did learn\n\nWhen he heard my story to me then he said\nThe one that you loved has a long time been dead\nShe loved you so dearly but you broke her heart\nPoor stranger, from her ever more you must part",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Nestled in the heart of the Tennessee hills",
+        "Midst peaceful pines \u2018neath the rocks and the rills",
+        "There stands my old homestead of long years ago",
+        "Brings back sweet memories of the one I loved so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I courted a maiden so sweet and so fair",
+        "With pearly blue eyes and with chestnut brown hair",
+        "She promised to love and said she\u2019s be mine",
+        "But I went away leaving her there behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll tell you the reason why I left her there",
+        "To roam this old world with its sorrow and cares",
+        "I saw her one night in the arms of a man",
+        "Hugging and kissing as true lovers can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went to my home with a heart full of woe",
+        "Packed my belongings determined to go",
+        "For many long years this old world I did roam",
+        "With thoughts of my sweetheart my darling my own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While dining one day in a little country town",
+        "A stranger came in and he chanced to sit down",
+        "While talking of loved ones I happened to find",
+        "That his sister was that old sweetheart of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I am the man who you saw that fateful night",
+        "Wrapped in the arms of my sister so tight",
+        "She waited so long for the day you\u2019d return",
+        "And why you had left her she never did learn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When he heard my story to me then he said",
+        "The one that you loved has a long time been dead",
+        "She loved you so dearly but you broke her heart",
+        "Poor stranger, from her ever more you must part"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

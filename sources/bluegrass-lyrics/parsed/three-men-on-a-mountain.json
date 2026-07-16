@@ -1,0 +1,38 @@
+{
+  "slug": "three-men-on-a-mountain",
+  "title": "Three Men on a Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/three-men-on-a-mountain/",
+  "raw_lyrics": "Three men on a mountain up on Calvary\nAnd the man in the middle was Jesus\nHe died for you and me\n\nWell the man on the left was a sinner tied to a cross he bled\nHe could have been forgiven but he mocked the Lord instead\nYou say you are the Son of God they\u2019ve nailed you to a tree\nCome down come down and save us if God your Father be\n\nWell the man on the right was a sinner but he was sorry for his sins\nHe begged the Lord\u2019s forgiveness and Jesus said to him\nFear not fear not this earthly death before this day is o\u2019er\nYou\u2019ll be with me in paradise on Heaven\u2019s golden shore",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Three men on a mountain up on Calvary",
+        "And the man in the middle was Jesus",
+        "He died for you and me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the man on the left was a sinner tied to a cross he bled",
+        "He could have been forgiven but he mocked the Lord instead",
+        "You say you are the Son of God they\u2019ve nailed you to a tree",
+        "Come down come down and save us if God your Father be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the man on the right was a sinner but he was sorry for his sins",
+        "He begged the Lord\u2019s forgiveness and Jesus said to him",
+        "Fear not fear not this earthly death before this day is o\u2019er",
+        "You\u2019ll be with me in paradise on Heaven\u2019s golden shore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

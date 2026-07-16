@@ -1,0 +1,49 @@
+{
+  "slug": "dont-say-goodbye-if-you-love-me",
+  "title": "Don\u2019t Say Goodbye If You Love Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-say-goodbye-if-you-love-me/",
+  "raw_lyrics": "They tell me today you are going\nFar away just to make you a name\nThey tell me that you\u2019re discontented\nAnd that you are search-ing for fame\n\nDon\u2019t say goodbye if you love me\nFor \u2018twould make my heart overflow\nKiss my lips once ere you leave me\nJust don\u2019t say goodbye when you go\n\nSomehow I can\u2019t realize we\u2019re parting\nI have grown used to having you near\nThe strings in my heart love are breakin\u2019\nI just can\u2019t say good-bye to you dear\n\nEach night as I kneel by my bedside\nI will pray one sweet prayer for just for you\nI will ask of the kind one in heaven\nJust to make all your dreams dear come true",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "They tell me today you are going",
+        "Far away just to make you a name",
+        "They tell me that you\u2019re discontented",
+        "And that you are search-ing for fame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t say goodbye if you love me",
+        "For \u2018twould make my heart overflow",
+        "Kiss my lips once ere you leave me",
+        "Just don\u2019t say goodbye when you go"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Somehow I can\u2019t realize we\u2019re parting",
+        "I have grown used to having you near",
+        "The strings in my heart love are breakin\u2019",
+        "I just can\u2019t say good-bye to you dear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each night as I kneel by my bedside",
+        "I will pray one sweet prayer for just for you",
+        "I will ask of the kind one in heaven",
+        "Just to make all your dreams dear come true"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

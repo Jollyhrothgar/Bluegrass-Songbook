@@ -1,0 +1,54 @@
+{
+  "slug": "heading-back-to-arkansas",
+  "title": "Heading Back to Arkansas",
+  "source_url": "https://www.bluegrasslyrics.com/song/heading-back-to-arkansas/",
+  "raw_lyrics": "Pretty girls that treat you nice\nHeadin\u2019 back to Arkansas\nKiss \u2019em once they\u2019ll kiss you twice\nHeadin\u2019 back to Arkansas\nHad a place to sleep at night\nHeadin\u2019 back to Arkansas\nI had shoes that fit me right\nHeadin\u2019 back to Arkansas\n\nCross the mountains like a crow\nWhere I\u2019ll fly she\u2019d never know\nWhere my frozen heart will thaw\nHeadin\u2019 back to Arkansas\nHeadin\u2019 back to Arkansas\n\nGoin down the railroad track\nGot a biscuit in my pack\nYou can hear a mountain song\nYou\u2019ll go dancin\u2019 all night long\n\nPeaches growin on the trees\nMelons taller than your knees\nSingin\u2019 while you do your chores\nNeach the oak and sycamore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Pretty girls that treat you nice",
+        "Headin\u2019 back to Arkansas",
+        "Kiss \u2019em once they\u2019ll kiss you twice",
+        "Headin\u2019 back to Arkansas",
+        "Had a place to sleep at night",
+        "Headin\u2019 back to Arkansas",
+        "I had shoes that fit me right",
+        "Headin\u2019 back to Arkansas"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Cross the mountains like a crow",
+        "Where I\u2019ll fly she\u2019d never know",
+        "Where my frozen heart will thaw",
+        "Headin\u2019 back to Arkansas",
+        "Headin\u2019 back to Arkansas"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goin down the railroad track",
+        "Got a biscuit in my pack",
+        "You can hear a mountain song",
+        "You\u2019ll go dancin\u2019 all night long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Peaches growin on the trees",
+        "Melons taller than your knees",
+        "Singin\u2019 while you do your chores",
+        "Neach the oak and sycamore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

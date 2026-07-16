@@ -1,0 +1,39 @@
+{
+  "slug": "petals-in-my-pocket",
+  "title": "Petals in my Pocket",
+  "source_url": "https://www.bluegrasslyrics.com/song/petals-in-my-pocket/",
+  "raw_lyrics": "These petals that I got here in my pocket\nOr the words I said while waiting here alone\nEach brought me different pictures of our future\nBack and forth in love two lives here alone\n\nPlease tell me flower that she loves me\nDon\u2019t say she never will be mine\nThese games we play won\u2019t last forever\nAnd neither will the love I thought was Mine\n\nThe flower that I picked was full dear\nThen one by one it\u2019s beauty disappeared\nWhat\u2019s left now is a bud that\u2019s soon forgotten\nStanding all alone in the meadow there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "These petals that I got here in my pocket",
+        "Or the words I said while waiting here alone",
+        "Each brought me different pictures of our future",
+        "Back and forth in love two lives here alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Please tell me flower that she loves me",
+        "Don\u2019t say she never will be mine",
+        "These games we play won\u2019t last forever",
+        "And neither will the love I thought was Mine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The flower that I picked was full dear",
+        "Then one by one it\u2019s beauty disappeared",
+        "What\u2019s left now is a bud that\u2019s soon forgotten",
+        "Standing all alone in the meadow there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

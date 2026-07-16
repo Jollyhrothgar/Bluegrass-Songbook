@@ -1,0 +1,49 @@
+{
+  "slug": "no-depression-in-heaven",
+  "title": "No Depression In Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-depression-in-heaven/",
+  "raw_lyrics": "For fear the hearts of men are failing,\nFor these are latter days we know\nThe Great Depression now is spreading,\nGod\u2019s word declared it would be so\n\nI\u2019m going where there\u2019s no depression,\nTo the lovely land that\u2019s free from care\nI\u2019ll leave this world of toil and trouble,\nMy home\u2019s in Heaven, I\u2019m going there\n\nIn that bright land, there\u2019ll be no hunger,\nNo orphan children crying for bread,\nNo weeping widows, toil or struggle,\nNo shrouds, no coffins, and no death\n\nThis dark hour of midnight nearing\nAnd tribulation time will come\nThe storms will hurl in midnight fear\nAnd sweep lost millions to their doom",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "For fear the hearts of men are failing,",
+        "For these are latter days we know",
+        "The Great Depression now is spreading,",
+        "God\u2019s word declared it would be so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m going where there\u2019s no depression,",
+        "To the lovely land that\u2019s free from care",
+        "I\u2019ll leave this world of toil and trouble,",
+        "My home\u2019s in Heaven, I\u2019m going there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In that bright land, there\u2019ll be no hunger,",
+        "No orphan children crying for bread,",
+        "No weeping widows, toil or struggle,",
+        "No shrouds, no coffins, and no death"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This dark hour of midnight nearing",
+        "And tribulation time will come",
+        "The storms will hurl in midnight fear",
+        "And sweep lost millions to their doom"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

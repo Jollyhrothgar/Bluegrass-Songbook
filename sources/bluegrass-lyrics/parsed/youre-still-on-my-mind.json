@@ -1,0 +1,49 @@
+{
+  "slug": "youre-still-on-my-mind",
+  "title": "You\u2019re Still On My Mind",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-still-on-my-mind/",
+  "raw_lyrics": "Oh a long time ago when I left my old home\nI thought my darlin\u2019 I\u2019d leave you behind\nBut as time lingers on I can\u2019t go it alone\nBut darlin\u2019 somehow you\u2019re still on my mind\n\nEach night I\u2019m so lonely thinkin of you\nI wonder sweetheart if you feel the same\nI\u2019m on my way back to start lovin\u2019 you\nFor often in dreams love I call your name\n\nI\u2019ve heard lots of things since I\u2019ve been gone\nBut I never thought that you was unkind\nWell you\u2019d take me back just as before\nBut darlin\u2019 somehow you\u2019re still on my mind\n\nSomeday when we\u2019re old and weary of life\nOur time is no longer we\u2019ll have to part\nWe\u2019ll meet up in heaven just as before\nUp there with God I\u2019ll call you sweetheart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh a long time ago when I left my old home",
+        "I thought my darlin\u2019 I\u2019d leave you behind",
+        "But as time lingers on I can\u2019t go it alone",
+        "But darlin\u2019 somehow you\u2019re still on my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each night I\u2019m so lonely thinkin of you",
+        "I wonder sweetheart if you feel the same",
+        "I\u2019m on my way back to start lovin\u2019 you",
+        "For often in dreams love I call your name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve heard lots of things since I\u2019ve been gone",
+        "But I never thought that you was unkind",
+        "Well you\u2019d take me back just as before",
+        "But darlin\u2019 somehow you\u2019re still on my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday when we\u2019re old and weary of life",
+        "Our time is no longer we\u2019ll have to part",
+        "We\u2019ll meet up in heaven just as before",
+        "Up there with God I\u2019ll call you sweetheart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: what-would-you-give
+title: What Would You Give
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/what-would-you-give/
+      imported_at: '2026-02-08'

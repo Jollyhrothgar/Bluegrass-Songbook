@@ -1,0 +1,11 @@
+id: tear-my-stillhouse-down
+title: Tear My Stillhouse Down
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/tear-my-stillhouse-down/
+      imported_at: '2026-02-08'

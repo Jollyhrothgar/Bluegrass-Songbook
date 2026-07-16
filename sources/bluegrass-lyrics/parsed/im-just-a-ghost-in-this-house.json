@@ -1,0 +1,39 @@
+{
+  "slug": "im-just-a-ghost-in-this-house",
+  "title": "I\u2019m Just A Ghost In  This House",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-just-a-ghost-in-this-house/",
+  "raw_lyrics": "I don\u2019t pick up the mail I don\u2019t pick up the phone\nI don\u2019t answer the door I just \u2018 soon be alone\nI don\u2019t keep this place up I just keep the lights out\nI don\u2019t live in this room I just rattle around\n\nI\u2019m just a ghost in this house I\u2019m just a shadow upon these walls\nAs quietly as a mouse I hold this home I\u2019m just a whisper of smoke\nI\u2019m all that\u2019s left of two hearts on fire That once burned out of control\nYou took my body and soul I\u2019m just a ghost in this house\n\nI don\u2019t care if it rains I don\u2019t care if it\u2019s clear\nI don\u2019t mind staying in there\u2019s another ghost here\nHe sits down in your chair and he shines with your light\nAnd he lays down his head on your pillow at night",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t pick up the mail I don\u2019t pick up the phone",
+        "I don\u2019t answer the door I just \u2018 soon be alone",
+        "I don\u2019t keep this place up I just keep the lights out",
+        "I don\u2019t live in this room I just rattle around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m just a ghost in this house I\u2019m just a shadow upon these walls",
+        "As quietly as a mouse I hold this home I\u2019m just a whisper of smoke",
+        "I\u2019m all that\u2019s left of two hearts on fire That once burned out of control",
+        "You took my body and soul I\u2019m just a ghost in this house"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t care if it rains I don\u2019t care if it\u2019s clear",
+        "I don\u2019t mind staying in there\u2019s another ghost here",
+        "He sits down in your chair and he shines with your light",
+        "And he lays down his head on your pillow at night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

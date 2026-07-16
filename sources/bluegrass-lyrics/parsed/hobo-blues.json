@@ -1,0 +1,51 @@
+{
+  "slug": "hobo-blues",
+  "title": "Hobo Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/hobo-blues/",
+  "raw_lyrics": "I got a hole in my pocket\nI done packed my old knapsack\nI got a train to catch a mile on down the track\nWell I been hanging around this old town way too many days\nI got to ramble on and I must be on my way\n\nI got the hobo blues\nI gotta go gotta go God I got the hobo blues\nWhen I hear that whistle blow some\nI gotta move gotta move God\nI got the hobo blues\n\nSome women try to hold me but I keep on movin\u2019 on\nMy hat don\u2019t hang in nowhere for too long\n\u2018Cause I\u2019m caught up in the feeling of the singin\u2019 brakemans song\nI got the hobo blues deep down in my bones\n\nWhen I die oh won\u2019t you bury me in an old box car\nWith a coffee can and my old guitar\nBut make sure that I\u2019m close enough to hear that passin\u2019 train\nI got the freight train fever chuggin\u2019 through my veins",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I got a hole in my pocket",
+        "I done packed my old knapsack",
+        "I got a train to catch a mile on down the track",
+        "Well I been hanging around this old town way too many days",
+        "I got to ramble on and I must be on my way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I got the hobo blues",
+        "I gotta go gotta go God I got the hobo blues",
+        "When I hear that whistle blow some",
+        "I gotta move gotta move God",
+        "I got the hobo blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some women try to hold me but I keep on movin\u2019 on",
+        "My hat don\u2019t hang in nowhere for too long",
+        "\u2018Cause I\u2019m caught up in the feeling of the singin\u2019 brakemans song",
+        "I got the hobo blues deep down in my bones"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I die oh won\u2019t you bury me in an old box car",
+        "With a coffee can and my old guitar",
+        "But make sure that I\u2019m close enough to hear that passin\u2019 train",
+        "I got the freight train fever chuggin\u2019 through my veins"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

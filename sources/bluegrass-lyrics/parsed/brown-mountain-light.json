@@ -1,0 +1,76 @@
+{
+  "slug": "brown-mountain-light",
+  "title": "Brown Mountain Light",
+  "source_url": "https://www.bluegrasslyrics.com/song/brown-mountain-light/",
+  "raw_lyrics": "Way up on old Linville Mountain\nWhere the bear and the catamount reign\nA strange ghostly light appears every night\nWhich no scientist or hunter can explain.\n\nIn the days of the old covered wagon\nWhen they camped on the flats for the night\nWith the moon shinin\u2019 dim o\u2019er the old canyon rim\nThey watched for that brown mountain light.\n\nHigh on the mountain\nAnd down in the valley below\nIt shines like the crown of an angel\nAnd fades as the mists come and go\n\nWay over yonder\nNight after night until dawn\nA faithful old slave comes back from the grave\nIs searching for his master who\u2019s long gone.\n\nMany years ago a southern planter\nCame huntin\u2019 in this wide world alone\nThen so they say the hunter lost his way\nAnd never returned to his home.\n\nHis trusting ol\u2019 slave brought a lantern\nAnd searched but in vain day and night\nNow the ol\u2019 slave is gone\nbut his spirit lingers on\n\nAnd the lantern it still casts it\u2019s light.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way up on old Linville Mountain",
+        "Where the bear and the catamount reign",
+        "A strange ghostly light appears every night",
+        "Which no scientist or hunter can explain."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the days of the old covered wagon",
+        "When they camped on the flats for the night",
+        "With the moon shinin\u2019 dim o\u2019er the old canyon rim",
+        "They watched for that brown mountain light."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "High on the mountain",
+        "And down in the valley below",
+        "It shines like the crown of an angel",
+        "And fades as the mists come and go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Way over yonder",
+        "Night after night until dawn",
+        "A faithful old slave comes back from the grave",
+        "Is searching for his master who\u2019s long gone."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many years ago a southern planter",
+        "Came huntin\u2019 in this wide world alone",
+        "Then so they say the hunter lost his way",
+        "And never returned to his home."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His trusting ol\u2019 slave brought a lantern",
+        "And searched but in vain day and night",
+        "Now the ol\u2019 slave is gone",
+        "but his spirit lingers on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And the lantern it still casts it\u2019s light."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

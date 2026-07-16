@@ -1,0 +1,39 @@
+{
+  "slug": "loving-sweethearts",
+  "title": "Loving Sweethearts",
+  "source_url": "https://www.bluegrasslyrics.com/song/loving-sweethearts/",
+  "raw_lyrics": "Once I had my loving sweetheart\nHer hair was long and black as coal\nThe tears they fell the night she left me\nIt broke my heart to see her go\n\nWe used to go strollin\u2019 in the moonlight\nBut that has been some time ago\nAnd now the golden leaves are falling\nAs I travel down this lonesome road\n\nNow it\u2019s cold and the snow is falling\nIt has covered up the ground\nJust a year ago we were together\nNow your love can\u2019t be found",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once I had my loving sweetheart",
+        "Her hair was long and black as coal",
+        "The tears they fell the night she left me",
+        "It broke my heart to see her go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "We used to go strollin\u2019 in the moonlight",
+        "But that has been some time ago",
+        "And now the golden leaves are falling",
+        "As I travel down this lonesome road"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now it\u2019s cold and the snow is falling",
+        "It has covered up the ground",
+        "Just a year ago we were together",
+        "Now your love can\u2019t be found"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

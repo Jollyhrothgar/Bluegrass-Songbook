@@ -1,0 +1,49 @@
+{
+  "slug": "alabama-bound",
+  "title": "Alabama Bound",
+  "source_url": "https://www.bluegrasslyrics.com/song/alabama-bound/",
+  "raw_lyrics": "Well the preacher got drunk\nHe throwed his bible down\nHe told the congregation\nI\u2019m Alabama bound\n\nI\u2019m Alabama bound\nI\u2019m Alabama bound\nIf the train don\u2019t run\nI\u2019ve got a mule to ride\n\nWell I\u2019ve been in New York City\nAnd I\u2019ve been in New York town\nGood lord but I\u2019ve been in the mountains\nWith the blues all around\n\nI jumped in the river\nAnd I started to drown\nI spotted a red-headed woman\nGood lord I couldn\u2019t go down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well the preacher got drunk",
+        "He throwed his bible down",
+        "He told the congregation",
+        "I\u2019m Alabama bound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m Alabama bound",
+        "I\u2019m Alabama bound",
+        "If the train don\u2019t run",
+        "I\u2019ve got a mule to ride"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ve been in New York City",
+        "And I\u2019ve been in New York town",
+        "Good lord but I\u2019ve been in the mountains",
+        "With the blues all around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I jumped in the river",
+        "And I started to drown",
+        "I spotted a red-headed woman",
+        "Good lord I couldn\u2019t go down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

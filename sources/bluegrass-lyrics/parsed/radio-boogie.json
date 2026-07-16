@@ -1,0 +1,59 @@
+{
+  "slug": "radio-boogie",
+  "title": "Radio Boogie",
+  "source_url": "https://www.bluegrasslyrics.com/song/radio-boogie/",
+  "raw_lyrics": "Well I got me a hat and old guitar\nAnd I made a down payment on a second hand car\nI got me a job on the radio\nNow I\u2019m saving up money for a fiddle and a bow\n\nDo the radio boogie\nAll over the dial\nWith a solid kick and a red hot lick\nAnd some Tennessee style\n\nWell early in the mountain when the sun comes up\nI pull the cork from the jug and I take a little sup\nIf the sun keeps a-shining I\u2019ll plow the corn\nIf it stars to rain I\u2019ll just grind it in the barn\n\nWell I call my gal on the telephone\nWhat you doing honey are you all alone\nCome on over about an hour or so\nAnd we\u2019ll both do the boogie by the radio\n\nYes I got a job in a hillbilly band\nI got brand new clothes I got money to spend\nAnd everbody asks me where we play\nThe radio boogie\u2019s all they can say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I got me a hat and old guitar",
+        "And I made a down payment on a second hand car",
+        "I got me a job on the radio",
+        "Now I\u2019m saving up money for a fiddle and a bow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Do the radio boogie",
+        "All over the dial",
+        "With a solid kick and a red hot lick",
+        "And some Tennessee style"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well early in the mountain when the sun comes up",
+        "I pull the cork from the jug and I take a little sup",
+        "If the sun keeps a-shining I\u2019ll plow the corn",
+        "If it stars to rain I\u2019ll just grind it in the barn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I call my gal on the telephone",
+        "What you doing honey are you all alone",
+        "Come on over about an hour or so",
+        "And we\u2019ll both do the boogie by the radio"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes I got a job in a hillbilly band",
+        "I got brand new clothes I got money to spend",
+        "And everbody asks me where we play",
+        "The radio boogie\u2019s all they can say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

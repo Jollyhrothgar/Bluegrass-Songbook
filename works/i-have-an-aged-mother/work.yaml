@@ -1,0 +1,11 @@
+id: i-have-an-aged-mother
+title: I Have An Aged Mother
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-have-an-aged-mother/
+      imported_at: '2026-02-08'

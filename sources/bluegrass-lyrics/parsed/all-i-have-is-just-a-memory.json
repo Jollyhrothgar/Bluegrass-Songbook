@@ -1,0 +1,39 @@
+{
+  "slug": "all-i-have-is-just-a-memory",
+  "title": "All I Have Is Just A Memory",
+  "source_url": "https://www.bluegrasslyrics.com/song/all-i-have-is-just-a-memory/",
+  "raw_lyrics": "My friends tell me you\u2019ve been untrue\nI\u2019ve known so long that I\u2019d loose you\nBut won\u2019t you sometimes think of me\nDarling all I have is just a memory\n\nI prayed to god so many times\nThat somehow you would change your mind\nBut now I\u2019m losing you I see\nDarling all I have is just a memory\n\nThe stars that used to shine so bright\nHave gone behind the cloud tonight\nSomeone has taken you from me\nDarling all I have is just a memory",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My friends tell me you\u2019ve been untrue",
+        "I\u2019ve known so long that I\u2019d loose you",
+        "But won\u2019t you sometimes think of me",
+        "Darling all I have is just a memory"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I prayed to god so many times",
+        "That somehow you would change your mind",
+        "But now I\u2019m losing you I see",
+        "Darling all I have is just a memory"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The stars that used to shine so bright",
+        "Have gone behind the cloud tonight",
+        "Someone has taken you from me",
+        "Darling all I have is just a memory"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

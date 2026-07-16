@@ -1,0 +1,59 @@
+{
+  "slug": "my-native-home-2",
+  "title": "My Native Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-native-home-2/",
+  "raw_lyrics": "I\u2019d like to see my native home\nThe lofty trees the golden sand\nThe rugged mountains crowded \u2019round\nMy mother\u2019s voice how sweet the sound\n\nSometimes I dream of home and friends\nMy dreams are false my heart it bends\nAnd when I \u2018wake I\u2019m all alone\nMy dreams are false, my friends are gone\n\nIt fills my heart with fondest love\nTo listen to that lonesome dove\nShe mourns as if her mate was gone\nAs if like me left all alone\n\nI\u2019d like to see my hearts desire\nHer beautiful face and eyes so bright\nAnd how she\u2019d smile when I drew near\nI\u2019d kiss her with a fallen tear\n\nA hard 10 years have past and gone\nAnd still I\u2019m left here all alone\nSearching on my native home\nAmong the hills I love to roam",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d like to see my native home",
+        "The lofty trees the golden sand",
+        "The rugged mountains crowded \u2019round",
+        "My mother\u2019s voice how sweet the sound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes I dream of home and friends",
+        "My dreams are false my heart it bends",
+        "And when I \u2018wake I\u2019m all alone",
+        "My dreams are false, my friends are gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It fills my heart with fondest love",
+        "To listen to that lonesome dove",
+        "She mourns as if her mate was gone",
+        "As if like me left all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d like to see my hearts desire",
+        "Her beautiful face and eyes so bright",
+        "And how she\u2019d smile when I drew near",
+        "I\u2019d kiss her with a fallen tear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A hard 10 years have past and gone",
+        "And still I\u2019m left here all alone",
+        "Searching on my native home",
+        "Among the hills I love to roam"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

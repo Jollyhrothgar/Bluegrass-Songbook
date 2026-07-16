@@ -1,0 +1,47 @@
+{
+  "slug": "california-blues",
+  "title": "California Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/california-blues/",
+  "raw_lyrics": "Well I\u2019m goin\u2019 to California where they sleep out every night\nYes I\u2019m goin\u2019 to California where they sleep out every night\nI\u2019m leavin\u2019 you mama \u2019cause you know you don\u2019t treat me right.\n\nLet me tell you something that mama you don\u2019t know\nLet me tell you something good gal you don\u2019t know\nWell I\u2019m a do-right papa\nI got a home everywhere I go\n\nI got the California blues and I\u2019m sure gonna leave you here\nI got the California blues and I\u2019m sure gonna leave you here\nI may ride the blinds\nI ain\u2019t got no railroad fare.\n\nLet me tell you mama while I sing this song\nListen to your daddy sing you this lonesome song\nYou got me worried now but I won\u2019t be worried long.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019m goin\u2019 to California where they sleep out every night",
+        "Yes I\u2019m goin\u2019 to California where they sleep out every night",
+        "I\u2019m leavin\u2019 you mama \u2019cause you know you don\u2019t treat me right."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let me tell you something that mama you don\u2019t know",
+        "Let me tell you something good gal you don\u2019t know",
+        "Well I\u2019m a do-right papa",
+        "I got a home everywhere I go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I got the California blues and I\u2019m sure gonna leave you here",
+        "I got the California blues and I\u2019m sure gonna leave you here",
+        "I may ride the blinds",
+        "I ain\u2019t got no railroad fare."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let me tell you mama while I sing this song",
+        "Listen to your daddy sing you this lonesome song",
+        "You got me worried now but I won\u2019t be worried long."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

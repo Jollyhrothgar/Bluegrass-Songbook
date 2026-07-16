@@ -1,0 +1,39 @@
+{
+  "slug": "youll-always-be-my-blue-eyed-darling",
+  "title": "You\u2019ll Always Be My Blue Eyed Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/youll-always-be-my-blue-eyed-darling/",
+  "raw_lyrics": "Eight weeks ago the night we parted\nMy blue skies now have turned to grey\nAlone I hang my head in sorrow\nNo other love can take your place\n\nYou\u2019ll always be my blue eyed darlin\u2019\nI\u2019ll always love you as today\nBut when you left me for another\nYou broke my heart a million ways\n\nIt makes no difference where you wander\nIt makes no difference where you stray\nYou\u2019ll always be my blue eyed darlin\u2019\nNo other love could take your place",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Eight weeks ago the night we parted",
+        "My blue skies now have turned to grey",
+        "Alone I hang my head in sorrow",
+        "No other love can take your place"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll always be my blue eyed darlin\u2019",
+        "I\u2019ll always love you as today",
+        "But when you left me for another",
+        "You broke my heart a million ways"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It makes no difference where you wander",
+        "It makes no difference where you stray",
+        "You\u2019ll always be my blue eyed darlin\u2019",
+        "No other love could take your place"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

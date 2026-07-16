@@ -1,0 +1,81 @@
+{
+  "slug": "just-lovin-you",
+  "title": "Just Lovin\u2019 You",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-lovin-you/",
+  "raw_lyrics": "Well I\u2019ve traveled around this world\nI\u2019ve seen lots of pretty girls\nNo one like you no one like you\n\nFor your love is warm and kind\nAnd it eases a noisy mind\nLovin\u2019 you just lovin\u2019 you\n\nThe sweetest love I ever knew\nIs the love I get from you\nI always keep on lovin\u2019 you\n\nYou hold the key to my heart\nAnd I know we\u2019ll never part\nForever I\u2019ll be lovin\u2019 you\n\nOh I know there is no doubt\nYou\u2019re the one I can\u2019t live without\nI\u2019m lovin\u2019 you only you\n\nMy every dream now is real\nAnd I know I always will\nBe lovin\u2019 you just lovin you\n\nAfter travelin\u2019 around this world\nThere is no other girl\nTo take the place of lovin\u2019 you\n\nWe\u2019ve known each other for so long\nand our love is holding strong\nI\u2019ll always keep on lovin\u2019 you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ve traveled around this world",
+        "I\u2019ve seen lots of pretty girls",
+        "No one like you no one like you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For your love is warm and kind",
+        "And it eases a noisy mind",
+        "Lovin\u2019 you just lovin\u2019 you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sweetest love I ever knew",
+        "Is the love I get from you",
+        "I always keep on lovin\u2019 you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You hold the key to my heart",
+        "And I know we\u2019ll never part",
+        "Forever I\u2019ll be lovin\u2019 you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I know there is no doubt",
+        "You\u2019re the one I can\u2019t live without",
+        "I\u2019m lovin\u2019 you only you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My every dream now is real",
+        "And I know I always will",
+        "Be lovin\u2019 you just lovin you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "After travelin\u2019 around this world",
+        "There is no other girl",
+        "To take the place of lovin\u2019 you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019ve known each other for so long",
+        "and our love is holding strong",
+        "I\u2019ll always keep on lovin\u2019 you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

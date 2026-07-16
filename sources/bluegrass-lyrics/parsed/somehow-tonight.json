@@ -1,0 +1,39 @@
+{
+  "slug": "somehow-tonight",
+  "title": "Somehow Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/somehow-tonight/",
+  "raw_lyrics": "Somehow tonight I feel lonely my darling\nSomehow tonight I feel blue\nSomehow tonight these tears of mine keep falling\nCome back sweetheart and be true\n\nI thought you\u2019re love was something I could treasure\nTo brighten my pathway through the years\nNow all I can see is darkness in the future\nThat\u2019s why I long to have you near\n\nI never new what loneliness meant darling\nUntil I watched you walk away\nI long to hear you whisper that you love me\nI can\u2019t forget our happy days",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Somehow tonight I feel lonely my darling",
+        "Somehow tonight I feel blue",
+        "Somehow tonight these tears of mine keep falling",
+        "Come back sweetheart and be true"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I thought you\u2019re love was something I could treasure",
+        "To brighten my pathway through the years",
+        "Now all I can see is darkness in the future",
+        "That\u2019s why I long to have you near"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never new what loneliness meant darling",
+        "Until I watched you walk away",
+        "I long to hear you whisper that you love me",
+        "I can\u2019t forget our happy days"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

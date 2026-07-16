@@ -1,12 +1,12 @@
 # Bluegrass Songbook
 
-A searchable collection of 17,000+ bluegrass and country songs with chords.
+A searchable collection of 17,500+ bluegrass and country songs with chords.
 
-**Live site**: Coming soon (GitHub Pages)
+**Live site**: [bluegrassbook.com](https://bluegrassbook.com)
 
 ## Features
 
-- **17,053 songs** in ChordPro format
+- **17,500+ songs** in ChordPro format
 - **Keyword search** - title, artist, lyrics
 - **Chord search** - find songs by Nashville numbers (`chord:VII`)
 - **Progression search** - find songs by chord patterns (`prog:I-IV-V`)
@@ -33,7 +33,7 @@ cd Bluegrass-Songbook
 
 ## Using the Songs
 
-Songs are in `sources/classic-country/parsed/` as `.pro` files (ChordPro format):
+Songs are in `works/{work-slug}/lead-sheet.pro` as ChordPro files:
 
 ```chordpro
 {meta: title Your Cheatin Heart}
@@ -73,14 +73,23 @@ uv run pytest                       # Run tests
 ## Project Structure
 
 ```
+├── works/                          # PRIMARY: Song collection (17,500+ works)
+│   └── {work-slug}/
+│       ├── work.yaml               # Metadata: title, artist, tags, parts
+│       └── lead-sheet.pro          # ChordPro content
 ├── docs/                           # Frontend (GitHub Pages)
-│   ├── js/search.js               # All frontend logic
-│   ├── js/supabase-auth.js        # Auth & cloud sync
+│   ├── js/                         # ES modules
+│   │   ├── main.js                 # Entry point, initialization
+│   │   ├── search-core.js          # Search logic
+│   │   ├── song-view.js            # Song rendering
+│   │   └── supabase-auth.js        # Auth & cloud sync
 │   └── data/index.jsonl            # Search index
-├── sources/
-│   ├── classic-country/parsed/    # ~17,000 parsed songs
-│   └── manual/parsed/             # User-contributed songs
-├── supabase/migrations/            # Database migrations
+├── sources/                        # Original song sources (used for migration)
+│   ├── classic-country/            # ~17,000 parsed songs
+│   └── manual/                     # User-contributed songs
+├── supabase/                       # Backend (Supabase)
+│   ├── migrations/                 # Database migrations
+│   └── functions/                  # Edge functions
 ├── scripts/                        # CLI tools
 └── ROADMAP.md                      # Product vision
 ```

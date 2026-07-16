@@ -1,0 +1,49 @@
+{
+  "slug": "cold-cold-heart",
+  "title": "Cold Cold Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/cold-cold-heart/",
+  "raw_lyrics": "I tried so hard my dear to show that you\u2019re my every dream\nYet you\u2019re afraid each thing I do is just some evil scheme\nA mem\u2019ry from your lonesome past keeps us so far apart\nWhy can\u2019t I free your doubtful mind and melt your cold cold heart\n\nAnother love before my time made your heart sad and blue\nAnd so my heart is paying now for things I didn\u2019t do\nIn angerunkind words are said that make the teardrops start\nWhy can\u2019t I free your doubtful mind and melt your cold cold heart\n\nYou\u2019ll never know how much it hurts to see you sit and cry\nYou know you need and want my love yet you\u2019re afraid to try\nWhy do you run and hide from life to try it just ain\u2019t smart\nWhy can\u2019t I free your doubtful mind and melt your cold cold heart\n\nThere was a time when I believed that you belonged to me\nBut now I know your heart is shackled to a memory\nThe more I learn to care for you the more we drift apart\nWhy can\u2019t I free your doubtful mind and melt your cold cold heart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I tried so hard my dear to show that you\u2019re my every dream",
+        "Yet you\u2019re afraid each thing I do is just some evil scheme",
+        "A mem\u2019ry from your lonesome past keeps us so far apart",
+        "Why can\u2019t I free your doubtful mind and melt your cold cold heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Another love before my time made your heart sad and blue",
+        "And so my heart is paying now for things I didn\u2019t do",
+        "In angerunkind words are said that make the teardrops start",
+        "Why can\u2019t I free your doubtful mind and melt your cold cold heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll never know how much it hurts to see you sit and cry",
+        "You know you need and want my love yet you\u2019re afraid to try",
+        "Why do you run and hide from life to try it just ain\u2019t smart",
+        "Why can\u2019t I free your doubtful mind and melt your cold cold heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There was a time when I believed that you belonged to me",
+        "But now I know your heart is shackled to a memory",
+        "The more I learn to care for you the more we drift apart",
+        "Why can\u2019t I free your doubtful mind and melt your cold cold heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

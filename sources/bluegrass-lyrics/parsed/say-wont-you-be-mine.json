@@ -1,0 +1,49 @@
+{
+  "slug": "say-wont-you-be-mine",
+  "title": "Say Won\u2019t You Be Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/say-wont-you-be-mine/",
+  "raw_lyrics": "Can\u2019t you hear the nightbirds crying\nCan\u2019t you hear that lonesome dove\nSayin\u2019 won\u2019t you come back darling\nTo the only one you love\n\nMeet me out on the mountain\nUnderneath the lonesome pine\nWhere we vowed we\u2019d love each other\nDarlin\u2019 say won\u2019t you be mine\n\nWhere the mountain laurels blooming\nAnd the wildwood blossom grow\nThere we vowed to love each other\nIn our childhood long ago\n\nThen I left my little darling\nLord I\u2019ve rambled for too long\nMany times I\u00a0prayed to see her\nNow I\u2019m on my way back home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Can\u2019t you hear the nightbirds crying",
+        "Can\u2019t you hear that lonesome dove",
+        "Sayin\u2019 won\u2019t you come back darling",
+        "To the only one you love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Meet me out on the mountain",
+        "Underneath the lonesome pine",
+        "Where we vowed we\u2019d love each other",
+        "Darlin\u2019 say won\u2019t you be mine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where the mountain laurels blooming",
+        "And the wildwood blossom grow",
+        "There we vowed to love each other",
+        "In our childhood long ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then I left my little darling",
+        "Lord I\u2019ve rambled for too long",
+        "Many times I\u00a0prayed to see her",
+        "Now I\u2019m on my way back home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

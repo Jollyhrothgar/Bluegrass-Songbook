@@ -1,0 +1,49 @@
+{
+  "slug": "my-homes-across-the-blue-ridge-mountains",
+  "title": "My Home\u2019s Across The Blue Ridge Mountains",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-homes-across-the-blue-ridge-mountains/",
+  "raw_lyrics": "How can I keep from crying ?\nHow can I keep from crying ?\nHow can I keep from crying ?\nFor I never expect to see you anymore\n\nMy home\u2019s across the blue ridge mountains\nMy home\u2019s across the blue ridge mountains\nMy home\u2019s across the blue ridge mountains\nAnd I never expect to see you anymore\n\nOh how I hate to leave you\nOh how I hate to leave you\nOh how I hate to leave you\nFor I never expect to see you anymore\n\nSo goodbye my little darling\nSo goodbye my little darling\nSo goodbye my little darling\nI never expect to see you anymore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "How can I keep from crying ?",
+        "How can I keep from crying ?",
+        "How can I keep from crying ?",
+        "For I never expect to see you anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "My home\u2019s across the blue ridge mountains",
+        "My home\u2019s across the blue ridge mountains",
+        "My home\u2019s across the blue ridge mountains",
+        "And I never expect to see you anymore"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh how I hate to leave you",
+        "Oh how I hate to leave you",
+        "Oh how I hate to leave you",
+        "For I never expect to see you anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So goodbye my little darling",
+        "So goodbye my little darling",
+        "So goodbye my little darling",
+        "I never expect to see you anymore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

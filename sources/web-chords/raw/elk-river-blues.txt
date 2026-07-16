@@ -1,0 +1,66 @@
+# title: Elk River Blues
+# source_url: https://tabs.ultimate-guitar.com/tab/sierra-ferrell/elk-river-blues-chords-3177338
+# fetched_at: 2026-02-01 22:09:50
+
+[Intro]
+C G C D D G D G
+e|--------------------------------------------------------------------2--|
+B|-----------0----------------------------------0---------------------3--|
+G|-----------0-------0------------0-------------0-------0-------------2--|
+D|---------0-2-----2---2--0-------0-----------0-2-----2---2-0---------0--|
+A|-------2---3--------------2-0-2-2---------2---3-------------2-0---2-0--|
+E|---3-3--------------------------3-----3-3-----------------------3------|
+ 
+e|-----------2----------------------------------2------------------------|
+B|-----------3--------0-----------0-------------3-------0-----------0----|
+G|---------0-2------2---2-0-------0-----------0-2-----2---2-0-------0----|
+D|---0-0-2---0--------------2-0-2-0-----0-0-2---0-------------2-0-2-0----|
+A|-----------0--------------------2-------------0-------------------2----|
+E|--------------------------------3---------------------------------3----|
+ 
+[Verse]
+G           C
+I'm down by green river
+                 G
+Where we used to go
+            C
+I'm down by green river
+          D
+There she goes
+ 
+[Chorus]
+          D
+Until one day
+                       G
+Another lover comes my way
+               D
+Till then i'll go
+                   G
+To green river all alone
+ 
+C G C D D G D G
+ 
+[Verse]
+G           C
+I'm down by green river
+                  G
+Just to watch her flow
+        C
+Down by green river
+         D
+Well now there she goes
+ 
+[Chorus]
+          D
+Until one day
+                       G
+Another lover comes my way
+               D
+Till then i'll go
+                   G
+To green river all alone
+ 
+[Outro]
+C G C D D G D G
+
+X

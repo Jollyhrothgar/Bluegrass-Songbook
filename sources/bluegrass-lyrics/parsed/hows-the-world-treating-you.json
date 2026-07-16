@@ -1,0 +1,69 @@
+{
+  "slug": "hows-the-world-treating-you",
+  "title": "How\u2019s The World Treating You",
+  "source_url": "https://www.bluegrasslyrics.com/song/hows-the-world-treating-you/",
+  "raw_lyrics": "I\u2019ve had nothing but sorrow\nSince you said we were through\nThere\u2019s no hope for tomorrow\nHow\u2019s the world treating you\n\nEvery sweet thing that matters\nHas been broken in two\nAll my dreams have been shattered\nHow\u2019s the world treating you\n\nGot no plans for next Sunday\nGot no plans for today\nEvery day is blue Monday\nEvery day you\u2019re away\n\nTho\u2019 our pathways have parted\nTo your  memory I\u2019m true\nGuess I\u2019ll stay broken hearted\nHow\u2019s the world treating you\n\nDo you wonder about me\nLike I\u2019m hoping you do\nAre you lonesome without me\nHave you found someone new\n\nAre you burning and yearning\nDo you ever get blue\nDo you think of returning\nHow\u2019s the world treating you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve had nothing but sorrow",
+        "Since you said we were through",
+        "There\u2019s no hope for tomorrow",
+        "How\u2019s the world treating you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every sweet thing that matters",
+        "Has been broken in two",
+        "All my dreams have been shattered",
+        "How\u2019s the world treating you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Got no plans for next Sunday",
+        "Got no plans for today",
+        "Every day is blue Monday",
+        "Every day you\u2019re away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tho\u2019 our pathways have parted",
+        "To your  memory I\u2019m true",
+        "Guess I\u2019ll stay broken hearted",
+        "How\u2019s the world treating you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Do you wonder about me",
+        "Like I\u2019m hoping you do",
+        "Are you lonesome without me",
+        "Have you found someone new"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Are you burning and yearning",
+        "Do you ever get blue",
+        "Do you think of returning",
+        "How\u2019s the world treating you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

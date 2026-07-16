@@ -6,9 +6,9 @@ import {
     createList, addSongToList, removeSongFromList,
     isFavorite, toggleFavorite, isSongInAnyList,
     getFoldersAtLevel, getListFolder, getListsAtRoot,
-    renameList, deleteList
+    renameList, deleteList, getSongMetadata, getViewingListId
 } from './lists.js';
-import { escapeHtml } from './utils.js';
+import { escapeHtml, parseItemRef } from './utils.js';
 
 let activePicker = null;
 
@@ -118,10 +118,11 @@ function getListPreview(list, maxChars = 45) {
     const count = list.songs.length;
     if (count === 0) return '(empty)';
 
-    // Build preview from song titles
+    // Build preview from song titles (handle part-qualified refs)
     const titles = [];
-    for (const songId of list.songs.slice(0, 4)) {
-        const song = allSongs.find(s => s.id === songId);
+    for (const ref of list.songs.slice(0, 4)) {
+        const { workId } = parseItemRef(ref);
+        const song = allSongs.find(s => s.id === workId);
         if (song) {
             titles.push(song.title);
         }
@@ -224,7 +225,10 @@ function setupPickerEvents(picker, songId, options) {
         } else if (e.target.dataset.type === 'list') {
             const listId = e.target.dataset.listId;
             if (e.target.checked) {
-                addSongToList(listId, songId);
+                // Copy metadata from the current list context if available
+                const sourceListId = getViewingListId();
+                const metadata = sourceListId ? getSongMetadata(sourceListId, songId) : null;
+                addSongToList(listId, songId, false, metadata);
             } else {
                 removeSongFromList(listId, songId);
             }
@@ -268,7 +272,10 @@ function setupPickerEvents(picker, songId, options) {
         if (name) {
             const newList = createList(name);
             if (newList) {
-                addSongToList(newList.id, songId);
+                // Copy metadata from the current list context if available
+                const sourceListId = getViewingListId();
+                const metadata = sourceListId ? getSongMetadata(sourceListId, songId) : null;
+                addSongToList(newList.id, songId, false, metadata);
 
                 // Update trigger button
                 if (activePicker?.triggerEl) {

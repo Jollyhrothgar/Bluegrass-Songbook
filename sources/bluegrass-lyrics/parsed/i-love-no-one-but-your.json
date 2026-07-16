@@ -1,0 +1,49 @@
+{
+  "slug": "i-love-no-one-but-your",
+  "title": "I Love No One But Your",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-love-no-one-but-your/",
+  "raw_lyrics": "Now tonight as I write this note to you\nThere\u2019s sorrow in my heart\nI hate to say goodbye my dear\nBut it\u2019s better that we part\n\nDon\u2019t think that I\u2019ve grown tired of you\nOr found somebody new\nFor you were all I\u2019ve ever had\nAnd I love no one but you\n\nNow when you read this note my dear\nI hope you\u2019ll understand\nAnd think of the one that loves you best\nThis broken hearted man\n\nNow that I have loved and lost\nI hope you\u2019re satisfied\nIt\u2019ll be so hard to go through this world\nWith a broken heart inside",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now tonight as I write this note to you",
+        "There\u2019s sorrow in my heart",
+        "I hate to say goodbye my dear",
+        "But it\u2019s better that we part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t think that I\u2019ve grown tired of you",
+        "Or found somebody new",
+        "For you were all I\u2019ve ever had",
+        "And I love no one but you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when you read this note my dear",
+        "I hope you\u2019ll understand",
+        "And think of the one that loves you best",
+        "This broken hearted man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now that I have loved and lost",
+        "I hope you\u2019re satisfied",
+        "It\u2019ll be so hard to go through this world",
+        "With a broken heart inside"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "traveling-this-lonesome-road",
+  "title": "Traveling This Lonesome Road",
+  "source_url": "https://www.bluegrasslyrics.com/song/traveling-this-lonesome-road/",
+  "raw_lyrics": "I\u2019m traveling down this lonesome road oh how I hate to go\nThe wind and storms are raging high and it\u2019s awful cold\nMy mind drifts back to you sweetheart and I love you so\nNow you\u2019ve gone and left me here to travel this lonesome road\n\nI remember dear not long ago you said you\u2019d be my own\nI never thought you\u2019d go away and leave me all alone\nThe kind of love you had for me I find sweetheart grows cold\nFor now you\u2019ve gone and left me here to travel this lonesome road\n\nAll I do is roam around and look for you my dear\nI know I\u2019ll search ten thousand miles oh how I need you here\nYou broke my heart you left me here now I\u2019m growing old\nWhy did you go and leave me here to travel this lonesome road",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m traveling down this lonesome road oh how I hate to go",
+        "The wind and storms are raging high and it\u2019s awful cold",
+        "My mind drifts back to you sweetheart and I love you so",
+        "Now you\u2019ve gone and left me here to travel this lonesome road"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember dear not long ago you said you\u2019d be my own",
+        "I never thought you\u2019d go away and leave me all alone",
+        "The kind of love you had for me I find sweetheart grows cold",
+        "For now you\u2019ve gone and left me here to travel this lonesome road"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All I do is roam around and look for you my dear",
+        "I know I\u2019ll search ten thousand miles oh how I need you here",
+        "You broke my heart you left me here now I\u2019m growing old",
+        "Why did you go and leave me here to travel this lonesome road"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

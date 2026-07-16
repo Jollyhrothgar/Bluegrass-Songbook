@@ -1,0 +1,39 @@
+{
+  "slug": "a-hundred-years-from-now",
+  "title": "A Hundred Years From Now",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-hundred-years-from-now/",
+  "raw_lyrics": "Well a hundred years from now I won\u2019t be crying\nA hundred years from now I won\u2019t be blue\nAnd my heart will have forgotten that she broke every vow\nI won\u2019t care a hundred years from now\n\nOh, it seems like only yesterday you told me\nYou couldn\u2019t live without my love somehow\nNow that you\u2019re with another it breaks my heart somehow\nI won\u2019t care a hundred years from now\n\nNow do you recall the night sweetheart you promised\nAnother\u2019s kiss you never would allow\nThat\u2019s all in the past dear it didn\u2019t seem to last\nI won\u2019t care a hundred years from now",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Well a hundred years from now I won\u2019t be crying",
+        "A hundred years from now I won\u2019t be blue",
+        "And my heart will have forgotten that she broke every vow",
+        "I won\u2019t care a hundred years from now"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, it seems like only yesterday you told me",
+        "You couldn\u2019t live without my love somehow",
+        "Now that you\u2019re with another it breaks my heart somehow",
+        "I won\u2019t care a hundred years from now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now do you recall the night sweetheart you promised",
+        "Another\u2019s kiss you never would allow",
+        "That\u2019s all in the past dear it didn\u2019t seem to last",
+        "I won\u2019t care a hundred years from now"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

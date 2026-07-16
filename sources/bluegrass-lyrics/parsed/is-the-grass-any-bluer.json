@@ -1,0 +1,47 @@
+{
+  "slug": "is-the-grass-any-bluer",
+  "title": "Is The Grass Any Bluer",
+  "source_url": "https://www.bluegrasslyrics.com/song/is-the-grass-any-bluer/",
+  "raw_lyrics": "You rolled out of Rosine a dedicated man\nYou drove those country back roads to a thousand one-night stands\nThe music from your mandolin, spread like wildfire in the wind\nAnd echoed through the hollows and the hills, so tell me, Bill\n\nIs the grass any bluer on the other side\nDid it look like gold Kentucky when the gates swung open wide\nBet the good Lord\u2019s got you playin\u2019 somewhere up there every night\nIs the grass any bluer on the other side\n\nI heard you on the Opry when I was just a kid\nI tried my best to learn to sing and play the way you did\nJust like me the day you died, the guitars and the fiddles cried\nThe music ain\u2019t the same without you Bill, we miss you still\n\nJust like me the day you died, the guitars and the fiddles cried\nThe music ain\u2019t the same without you Bill, we miss you still-ill-ill",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You rolled out of Rosine a dedicated man",
+        "You drove those country back roads to a thousand one-night stands",
+        "The music from your mandolin, spread like wildfire in the wind",
+        "And echoed through the hollows and the hills, so tell me, Bill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Is the grass any bluer on the other side",
+        "Did it look like gold Kentucky when the gates swung open wide",
+        "Bet the good Lord\u2019s got you playin\u2019 somewhere up there every night",
+        "Is the grass any bluer on the other side"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I heard you on the Opry when I was just a kid",
+        "I tried my best to learn to sing and play the way you did",
+        "Just like me the day you died, the guitars and the fiddles cried",
+        "The music ain\u2019t the same without you Bill, we miss you still"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just like me the day you died, the guitars and the fiddles cried",
+        "The music ain\u2019t the same without you Bill, we miss you still-ill-ill"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

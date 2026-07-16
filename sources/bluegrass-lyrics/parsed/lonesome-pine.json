@@ -1,0 +1,49 @@
+{
+  "slug": "lonesome-pine",
+  "title": "Lonesome Pine",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-pine/",
+  "raw_lyrics": "I\u2019m lonesome pine on the mountain\nAll alone I find no one by my side\nOh I wish I had me a dogwood tree\nThat would bloom beside me for company\n\nI\u2019m lonesome so lonesome I\u2019ll never know why\nI must stand all alone till the day that die\nI\u2019ll never get over this sorrow of mine\nThis evergreen sorrow from the lonesome pine\n\nIn the summertime when the wind blows free\nThere\u2019s a mournful song in the heart of me\nIt\u2019s the saddest song that you\u2019ll ever hear\nFor the lonesome pine will you shed a tear\n\nIn the wintertime when the snow falls down\nAnd my branches drop till they touch the ground\nYou can hear me groan with the load I bear\nFor its mine all alone no one seems to care",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m lonesome pine on the mountain",
+        "All alone I find no one by my side",
+        "Oh I wish I had me a dogwood tree",
+        "That would bloom beside me for company"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m lonesome so lonesome I\u2019ll never know why",
+        "I must stand all alone till the day that die",
+        "I\u2019ll never get over this sorrow of mine",
+        "This evergreen sorrow from the lonesome pine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the summertime when the wind blows free",
+        "There\u2019s a mournful song in the heart of me",
+        "It\u2019s the saddest song that you\u2019ll ever hear",
+        "For the lonesome pine will you shed a tear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the wintertime when the snow falls down",
+        "And my branches drop till they touch the ground",
+        "You can hear me groan with the load I bear",
+        "For its mine all alone no one seems to care"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

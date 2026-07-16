@@ -1,0 +1,11 @@
+id: the-letter-that-never-came
+title: The Letter That Never Came
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/the-letter-that-never-came/
+      imported_at: '2026-02-08'

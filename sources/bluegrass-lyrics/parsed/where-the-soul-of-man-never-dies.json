@@ -1,0 +1,81 @@
+{
+  "slug": "where-the-soul-of-man-never-dies",
+  "title": "Where The Soul Of Man Never Dies",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-the-soul-of-man-never-dies/",
+  "raw_lyrics": "To Canaan\u2019s land I\u2019m on my way\nWhere the soul (of man) never dies\nMy darkest night will turn to day\nWhere the soul (of man) never dies\n\n(lead)\nNo sad farewells\nNo tear dimmed eyes\nWhere all is love\nAnd the soul never dies\n\n(tenor)\nDear friends there\u2019ll be no sad farewells\nThere\u2019ll be no tear-dimmed eyes\nWhere all is peace and joy and love\nAnd the soul of man never dies\n\nThe rose is blooming there for me\nWhere the soul (of man) never dies\nAnd I will spend eternity\nWhere the soul (of man) never dies\n\nThe love light beams across the foam\nWhere the soul (of man) never dies\nIt shines and lights the way to home\nWhere the soul (of man) never dies\n\nMy life will end in deathless sleep\nWhere the soul (of man) never dies\nAnd everlasting joys I\u2019ll reap\nWhere the soul (of man) never dies\n\nI\u2019m on my way to that fair land\nWhere the soul (of man) never dies\nWhere there will be no parting hand\nWhere the soul (of man) never dies",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "To Canaan\u2019s land I\u2019m on my way",
+        "Where the soul (of man) never dies",
+        "My darkest night will turn to day",
+        "Where the soul (of man) never dies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "(lead)",
+        "No sad farewells",
+        "No tear dimmed eyes",
+        "Where all is love",
+        "And the soul never dies"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "(tenor)",
+        "Dear friends there\u2019ll be no sad farewells",
+        "There\u2019ll be no tear-dimmed eyes",
+        "Where all is peace and joy and love",
+        "And the soul of man never dies"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The rose is blooming there for me",
+        "Where the soul (of man) never dies",
+        "And I will spend eternity",
+        "Where the soul (of man) never dies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The love light beams across the foam",
+        "Where the soul (of man) never dies",
+        "It shines and lights the way to home",
+        "Where the soul (of man) never dies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My life will end in deathless sleep",
+        "Where the soul (of man) never dies",
+        "And everlasting joys I\u2019ll reap",
+        "Where the soul (of man) never dies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m on my way to that fair land",
+        "Where the soul (of man) never dies",
+        "Where there will be no parting hand",
+        "Where the soul (of man) never dies"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

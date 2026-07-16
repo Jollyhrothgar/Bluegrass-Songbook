@@ -1,0 +1,61 @@
+{
+  "slug": "your-mother-still-prays-for-you-jack",
+  "title": "Your Mother Still Prays For You Jack",
+  "source_url": "https://www.bluegrasslyrics.com/song/your-mother-still-prays-for-you-jack/",
+  "raw_lyrics": "The night was dark and stormy\nThe wind was howling wild\nAs an aged mother gazed upon\nThe portrait of her child\nAs she gazed on the baby\u2019s features\nThat once filled her heart with joy\nHe\u2019s now in this wild world roaming\nThat mother\u2019s long lost boy\n\nYour mother still prays for you, Jack\nYour mother still prays for you\nIn a home far over the ocean\nYour mother still prays for you\n\nAt last there came a letter\nIt was deeply edged in black\nFrom a comrade long forgotten\nWho still remembered Jack\nThey have lain your dear old mother\nIn a grave so dark and cold\nAnd she wants her boy who is roaming\nTo meet her on the streets of gold\n\nHis stony heart was broken\nAs he thought of his mother dear\nAnd in spite of his comrades laughing\nHe could not keep back his tears\nIn spite of the great temptations\nThat once filled his heart with tears\nSo he started for Heaven that evening\nAs sweetly the people did sing",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The night was dark and stormy",
+        "The wind was howling wild",
+        "As an aged mother gazed upon",
+        "The portrait of her child",
+        "As she gazed on the baby\u2019s features",
+        "That once filled her heart with joy",
+        "He\u2019s now in this wild world roaming",
+        "That mother\u2019s long lost boy"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Your mother still prays for you, Jack",
+        "Your mother still prays for you",
+        "In a home far over the ocean",
+        "Your mother still prays for you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "At last there came a letter",
+        "It was deeply edged in black",
+        "From a comrade long forgotten",
+        "Who still remembered Jack",
+        "They have lain your dear old mother",
+        "In a grave so dark and cold",
+        "And she wants her boy who is roaming",
+        "To meet her on the streets of gold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His stony heart was broken",
+        "As he thought of his mother dear",
+        "And in spite of his comrades laughing",
+        "He could not keep back his tears",
+        "In spite of the great temptations",
+        "That once filled his heart with tears",
+        "So he started for Heaven that evening",
+        "As sweetly the people did sing"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

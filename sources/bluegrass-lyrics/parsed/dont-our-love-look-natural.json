@@ -1,0 +1,46 @@
+{
+  "slug": "dont-our-love-look-natural",
+  "title": "Don\u2019t Our Love Look Natural",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-our-love-look-natural/",
+  "raw_lyrics": "We\u2019re gathered in this room today\nTo say our last goodbye\nFriends and kin folk stay away\nIt\u2019s down to you and I\nIt\u2019s just a simple service\nAnd much too late to say\nThose tender words unspoken yesterday\n\nNow don\u2019t our love look natural lying there\nYou could almost expect it to get right up and care\nIt faded in it\u2019s prime and died before it\u2019s time\nNow don\u2019t our love look natural lying there\n\nI know the day our love was born\nBut i don\u2019t know when it died\nI think we could have saved it\nBut it seems nobody tried\nA love like time can slip away\nAnd vanish with the dawn\nAnd you can\u2019t bring it back\nNo When it\u2019s gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019re gathered in this room today",
+        "To say our last goodbye",
+        "Friends and kin folk stay away",
+        "It\u2019s down to you and I",
+        "It\u2019s just a simple service",
+        "And much too late to say",
+        "Those tender words unspoken yesterday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now don\u2019t our love look natural lying there",
+        "You could almost expect it to get right up and care",
+        "It faded in it\u2019s prime and died before it\u2019s time",
+        "Now don\u2019t our love look natural lying there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know the day our love was born",
+        "But i don\u2019t know when it died",
+        "I think we could have saved it",
+        "But it seems nobody tried",
+        "A love like time can slip away",
+        "And vanish with the dawn",
+        "And you can\u2019t bring it back",
+        "No When it\u2019s gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: poor-orphan-child-the
+title: Poor Orphan Child, The
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/poor-orphan-child-the/
+      imported_at: '2026-02-08'

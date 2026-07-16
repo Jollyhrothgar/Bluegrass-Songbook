@@ -1,0 +1,63 @@
+{
+  "slug": "i-cannot-be-your-sweetheart",
+  "title": "I Cannot Be Your Sweetheart",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-cannot-be-your-sweetheart/",
+  "raw_lyrics": "Last night I told my heart\u2019s love\nAll under the pale blue sky\nEagerly waiting an answer\nI plainly could read in her eyes\n\nI love you sweetheart I love\nAnd ask you to be my bride\nHer face turned pale and she trembled\nAnd sadly to me she replied\n\nI cannot be your sweetheart\nI cannot stay by your side\nOne is waiting up yonder\nOne that\u2019s claiming his bride\nMy heart is almost broken\nYour vows only add to my pain\nI love you sweetheart I love you\nThough we may never meet again\n\nWe said goodbye in the moonlight\nMy heart was turned to stone\nOne blissful hour was made happy\nBut now I\u2019m sad and alone\n\nIn this my sorrows forever\nThough you may go far away\nWhere ever you go I\u2019ll love you\nBut still I can hear you say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Last night I told my heart\u2019s love",
+        "All under the pale blue sky",
+        "Eagerly waiting an answer",
+        "I plainly could read in her eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I love you sweetheart I love",
+        "And ask you to be my bride",
+        "Her face turned pale and she trembled",
+        "And sadly to me she replied"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I cannot be your sweetheart",
+        "I cannot stay by your side",
+        "One is waiting up yonder",
+        "One that\u2019s claiming his bride",
+        "My heart is almost broken",
+        "Your vows only add to my pain",
+        "I love you sweetheart I love you",
+        "Though we may never meet again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We said goodbye in the moonlight",
+        "My heart was turned to stone",
+        "One blissful hour was made happy",
+        "But now I\u2019m sad and alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In this my sorrows forever",
+        "Though you may go far away",
+        "Where ever you go I\u2019ll love you",
+        "But still I can hear you say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

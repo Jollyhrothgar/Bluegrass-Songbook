@@ -1,0 +1,79 @@
+{
+  "slug": "fly-around-my-blue-eyed-gal",
+  "title": "Fly Around My Blue-Eyed Gal",
+  "source_url": "https://www.bluegrasslyrics.com/song/fly-around-my-blue-eyed-gal/",
+  "raw_lyrics": "Fly around my blue-eyed gal\nFly around my daisy\nFly around my blue-eyed gal\nYou almost drove me crazy.\n\nOnce I had a fortune\nI laid it in a trunk\nLost it all all gambling\nOne night when I got drunk.\n\nWished I was in the West country\nSittin\u2019 in a big armchair\nOne arm \u2019round my whiskey barrel\nThe other \u2019round my dear.\n\nIf I had a scolding wife\nTell you what I\u2019d do\nTrade her off for a Barlow knife\nPaddle my own canoe.\n\nIt\u2019s every day and Sunday too\nIt seems so dark and hazy\nI\u2019m thinking about my blue-eyed gal\nShe\u2019s done run me crazy.\n\nIf I had no horse at all\nI\u2019d be found a\u2019 crawlin\u2019\nUp and down this rocky road\nA\u2019 looking for my dariing.\n\nWent up on the mountain\nTo give my horn a blow\nThought I heard somebody say\nYonder comes my beau",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Fly around my blue-eyed gal",
+        "Fly around my daisy",
+        "Fly around my blue-eyed gal",
+        "You almost drove me crazy."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Once I had a fortune",
+        "I laid it in a trunk",
+        "Lost it all all gambling",
+        "One night when I got drunk."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wished I was in the West country",
+        "Sittin\u2019 in a big armchair",
+        "One arm \u2019round my whiskey barrel",
+        "The other \u2019round my dear."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I had a scolding wife",
+        "Tell you what I\u2019d do",
+        "Trade her off for a Barlow knife",
+        "Paddle my own canoe."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s every day and Sunday too",
+        "It seems so dark and hazy",
+        "I\u2019m thinking about my blue-eyed gal",
+        "She\u2019s done run me crazy."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I had no horse at all",
+        "I\u2019d be found a\u2019 crawlin\u2019",
+        "Up and down this rocky road",
+        "A\u2019 looking for my dariing."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Went up on the mountain",
+        "To give my horn a blow",
+        "Thought I heard somebody say",
+        "Yonder comes my beau"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

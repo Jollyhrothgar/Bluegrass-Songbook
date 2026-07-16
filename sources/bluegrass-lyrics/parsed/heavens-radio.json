@@ -1,0 +1,49 @@
+{
+  "slug": "heavens-radio",
+  "title": "Heaven\u2019s Radio",
+  "source_url": "https://www.bluegrasslyrics.com/song/heavens-radio/",
+  "raw_lyrics": "There\u2019s a wonderful invention called the radio\nYou can hear it every where you chance to go\nBut the static in the air sometimes makes it hard to hear\nBut it is not so with heaven\u2019s radio\n\nHeaven\u2019s radio on the other shore\nFor my precious savior always listens in\nIt\u2019s the same old radio that was used long time ago\nFor my precious savior always listens in\n\nDaniel in the lions den with this power should surely win\nFor my precious savior always listens in\nAnd I know without a doubt honest prayers will bring you out\nFor my precious savior always listens in\n\nWell He set the Hebrews three from the fiery furnace free\nFor my precious savior always listens in\nHe will rescue you today in that same old fashioned way\nFor my precious savior always listens in",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a wonderful invention called the radio",
+        "You can hear it every where you chance to go",
+        "But the static in the air sometimes makes it hard to hear",
+        "But it is not so with heaven\u2019s radio"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Heaven\u2019s radio on the other shore",
+        "For my precious savior always listens in",
+        "It\u2019s the same old radio that was used long time ago",
+        "For my precious savior always listens in"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Daniel in the lions den with this power should surely win",
+        "For my precious savior always listens in",
+        "And I know without a doubt honest prayers will bring you out",
+        "For my precious savior always listens in"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well He set the Hebrews three from the fiery furnace free",
+        "For my precious savior always listens in",
+        "He will rescue you today in that same old fashioned way",
+        "For my precious savior always listens in"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

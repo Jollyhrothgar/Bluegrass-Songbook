@@ -1,0 +1,39 @@
+{
+  "slug": "i-never-will-marry",
+  "title": "I Never Will Marry",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-never-will-marry/",
+  "raw_lyrics": "One morning as I rambled all down the seashore\nThe wind it did whistle, and the waters did roar\nI heard a fair damsel make a pitiful sound\nIt sounded so lonesome in the waters around\n\nI never will marry, or be no man\u2019s wife\nI expect to live single all the days of my life\nThe shells in the ocean shall be my death bed\nThe fish in deep water swim over my head\n\nShe plunged her fair body in the waters so deep\nShe closed her blue eyes in the waters to sleep\nMy love\u2019s gone and left me, the one I adore\nShe\u2019s gone where I never will see her anymore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One morning as I rambled all down the seashore",
+        "The wind it did whistle, and the waters did roar",
+        "I heard a fair damsel make a pitiful sound",
+        "It sounded so lonesome in the waters around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I never will marry, or be no man\u2019s wife",
+        "I expect to live single all the days of my life",
+        "The shells in the ocean shall be my death bed",
+        "The fish in deep water swim over my head"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She plunged her fair body in the waters so deep",
+        "She closed her blue eyes in the waters to sleep",
+        "My love\u2019s gone and left me, the one I adore",
+        "She\u2019s gone where I never will see her anymore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

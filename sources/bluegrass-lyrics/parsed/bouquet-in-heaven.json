@@ -1,0 +1,39 @@
+{
+  "slug": "bouquet-in-heaven",
+  "title": "Bouquet In Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/bouquet-in-heaven/",
+  "raw_lyrics": "When it\u2019s decoration day in Heaven\nThere\u2019s a bouquet I\u2019m longing to see\nThere\u2019s a flower somewhere in the bouquet\nThat means all the world to me\n\nNow she left the old homeplace is lonely\nSince mother has been called away\nAnd I know I can never more see her\n\u2018TiI we meet on that decoration day.\n\nI remember the night the angles called her\nTo live on that beautiful shore\nIt left us so lonely here without her\nIt can never be like home anymore.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When it\u2019s decoration day in Heaven",
+        "There\u2019s a bouquet I\u2019m longing to see",
+        "There\u2019s a flower somewhere in the bouquet",
+        "That means all the world to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now she left the old homeplace is lonely",
+        "Since mother has been called away",
+        "And I know I can never more see her",
+        "\u2018TiI we meet on that decoration day."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember the night the angles called her",
+        "To live on that beautiful shore",
+        "It left us so lonely here without her",
+        "It can never be like home anymore."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

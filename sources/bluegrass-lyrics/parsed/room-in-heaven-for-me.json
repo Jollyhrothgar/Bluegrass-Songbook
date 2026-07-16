@@ -1,0 +1,49 @@
+{
+  "slug": "room-in-heaven-for-me",
+  "title": "Room In Heaven For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/room-in-heaven-for-me/",
+  "raw_lyrics": "Beyond the sea where faiths of glorious beam\nWhere things abide that I have never seen\nThe soul\u2019s sweet home desperate never more\nWill there be room for me on that bright shore\n\nThere\u2019s room (room for you and me) yes room (room for you and me)\nThere\u2019s room (room for me) for all (room enough for all)\nThere\u2019s room (yes there\u2019s room for me) for all (room enough for all)\nThere\u2019s room (room enough in heaven) for me\n\nThat wondrous city far beyond confine\nWhere all is joy and peace so pure divine\nIn visions I in varying streaks can see\nAnd wonder if there\u2019s room in heaven for me\n\nI long to soar away and be at rest\nAnd there to lean upon my savior\u2019s breast\nOh wont that be a glorious victory\nTo find that there is room in heaven for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Beyond the sea where faiths of glorious beam",
+        "Where things abide that I have never seen",
+        "The soul\u2019s sweet home desperate never more",
+        "Will there be room for me on that bright shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s room (room for you and me) yes room (room for you and me)",
+        "There\u2019s room (room for me) for all (room enough for all)",
+        "There\u2019s room (yes there\u2019s room for me) for all (room enough for all)",
+        "There\u2019s room (room enough in heaven) for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That wondrous city far beyond confine",
+        "Where all is joy and peace so pure divine",
+        "In visions I in varying streaks can see",
+        "And wonder if there\u2019s room in heaven for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I long to soar away and be at rest",
+        "And there to lean upon my savior\u2019s breast",
+        "Oh wont that be a glorious victory",
+        "To find that there is room in heaven for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "when-jesus-beckons-me-home",
+  "title": "When Jesus Beckons Me Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-jesus-beckons-me-home/",
+  "raw_lyrics": "I know that Jesus will never forsake\nHis love will find a way\nHe\u2019ll bridge the stream if his hand I will take\nWhen he calls what can I say\n\nDay follows night night follows day\nFarther and farther I roam\nWhat will my answer be what can I say\nWhen Jesus beckons my home\n\nSometimes the clouds seem to cover his face\nSometimes the skies are so gray\nStill by the stars and his wonderful grace\nHe\u2019ll roll the storm clouds away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I know that Jesus will never forsake",
+        "His love will find a way",
+        "He\u2019ll bridge the stream if his hand I will take",
+        "When he calls what can I say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Day follows night night follows day",
+        "Farther and farther I roam",
+        "What will my answer be what can I say",
+        "When Jesus beckons my home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes the clouds seem to cover his face",
+        "Sometimes the skies are so gray",
+        "Still by the stars and his wonderful grace",
+        "He\u2019ll roll the storm clouds away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

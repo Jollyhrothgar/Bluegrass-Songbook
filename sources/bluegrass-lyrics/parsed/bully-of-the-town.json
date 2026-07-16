@@ -1,0 +1,28 @@
+{
+  "slug": "bully-of-the-town",
+  "title": "Bully Of The Town",
+  "source_url": "https://www.bluegrasslyrics.com/song/bully-of-the-town/",
+  "raw_lyrics": "Looking for that bully Bully of that town\nLooking for that bully that bully can\u2019t be found\nI\u2019m looking for that bully of the town\n\nWhen I walk this levee round and round\nEveryday I may be found\nWhen I walk this levee round\nI\u2019m looking for that bully of the town",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Looking for that bully Bully of that town",
+        "Looking for that bully that bully can\u2019t be found",
+        "I\u2019m looking for that bully of the town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I walk this levee round and round",
+        "Everyday I may be found",
+        "When I walk this levee round",
+        "I\u2019m looking for that bully of the town"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

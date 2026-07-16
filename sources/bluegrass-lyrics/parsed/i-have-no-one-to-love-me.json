@@ -1,0 +1,59 @@
+{
+  "slug": "i-have-no-one-to-love-me",
+  "title": "I Have No One To Love Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-have-no-one-to-love-me/",
+  "raw_lyrics": "It was on last Sunday evening\nJust about the hour of three\nWhen my darling started to leave me\nAnd sail on the deep blue sea\n\nHe promised to write me a letter,\nHe promised to write to me;\nAnd I haven\u2019t heard from my darling,\nWho is sailing on the deep blue sea\n\nMy mother is dead and buried\nMy father\u2019s forsaken me\nAnd I have no one to love me\nBut the sailor on the deep blue sea\n\n\u201cOh, captain, can you tell me,\nCan you tell me where he may be?\u201d\n\u201cOh yes, my little maiden,\nHe\u2019s drownded in the deep blue sea\u201d\n\nFarewell to friends and relations\nThis is the last you\u2019ll see of me,\nI\u2019m going to end my troubles\nBy drowning in the deep blue sea",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It was on last Sunday evening",
+        "Just about the hour of three",
+        "When my darling started to leave me",
+        "And sail on the deep blue sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He promised to write me a letter,",
+        "He promised to write to me;",
+        "And I haven\u2019t heard from my darling,",
+        "Who is sailing on the deep blue sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother is dead and buried",
+        "My father\u2019s forsaken me",
+        "And I have no one to love me",
+        "But the sailor on the deep blue sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "\u201cOh, captain, can you tell me,",
+        "Can you tell me where he may be?\u201d",
+        "\u201cOh yes, my little maiden,",
+        "He\u2019s drownded in the deep blue sea\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Farewell to friends and relations",
+        "This is the last you\u2019ll see of me,",
+        "I\u2019m going to end my troubles",
+        "By drowning in the deep blue sea"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

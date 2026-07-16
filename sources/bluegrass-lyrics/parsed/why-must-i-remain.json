@@ -1,0 +1,74 @@
+{
+  "slug": "why-must-i-remain",
+  "title": "Why Must I Remain",
+  "source_url": "https://www.bluegrasslyrics.com/song/why-must-i-remain/",
+  "raw_lyrics": "In my life I\u2019ve known sorrow\nI\u2019ve seen love fade away\nI\u2019ve had tears from sadness\nLike those shed today\n\nMy heart was within me\nMy sadness my own\nMy thoughts there were anchored\nAt rest with my soul\n\nThen when I met you\nI gave you my soul\nMy heart was between us\nNo longer my own\n\nAll that I know of\nAnd all that I am\nIs shared now with you\nHow can I remain\nOh lord if you\u2019re with me\nHelp me find the strength\nMy soul lay a-dying\nWhy must I remain\n\nAnd now you are dying\nNow you are alone\nAnd I must remain here\nThough my world\u00a0 is gone\n\nAnd I am no longer\nMy heart has no home\nThere could be no other, God\nDon\u2019t leave me alone\nch., repeat last two lines",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In my life I\u2019ve known sorrow",
+        "I\u2019ve seen love fade away",
+        "I\u2019ve had tears from sadness",
+        "Like those shed today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My heart was within me",
+        "My sadness my own",
+        "My thoughts there were anchored",
+        "At rest with my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then when I met you",
+        "I gave you my soul",
+        "My heart was between us",
+        "No longer my own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All that I know of",
+        "And all that I am",
+        "Is shared now with you",
+        "How can I remain",
+        "Oh lord if you\u2019re with me",
+        "Help me find the strength",
+        "My soul lay a-dying",
+        "Why must I remain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And now you are dying",
+        "Now you are alone",
+        "And I must remain here",
+        "Though my world\u00a0 is gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And I am no longer",
+        "My heart has no home",
+        "There could be no other, God",
+        "Don\u2019t leave me alone",
+        "ch., repeat last two lines"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

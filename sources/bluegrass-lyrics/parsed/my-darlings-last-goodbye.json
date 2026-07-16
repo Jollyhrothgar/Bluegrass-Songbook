@@ -1,0 +1,39 @@
+{
+  "slug": "my-darlings-last-goodbye",
+  "title": "My Darling\u2019s Last Goodbye",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-darlings-last-goodbye/",
+  "raw_lyrics": "Now I just heard my darlilng\u2019s last goodbye\nHer precious lips can speak to me no more\nThe teardrops stain my cheeks although I tried\nTo remember that we\u2019ll meet on heaven\u2019s shore\n\nThe vows we said as planned today\nSo she would know no one could take her place\nMy love so young and fair was called away\nAnd I\u2019m left an empty life to face\n\nI know someday I\u2019ll leave this empty life\nTo join my precious sweetheart up on high\n\u2018Til then I\u2019ll bear the sorrow and the strife\nFor I just heard my darling\u2019s last goodbye",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now I just heard my darlilng\u2019s last goodbye",
+        "Her precious lips can speak to me no more",
+        "The teardrops stain my cheeks although I tried",
+        "To remember that we\u2019ll meet on heaven\u2019s shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The vows we said as planned today",
+        "So she would know no one could take her place",
+        "My love so young and fair was called away",
+        "And I\u2019m left an empty life to face"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know someday I\u2019ll leave this empty life",
+        "To join my precious sweetheart up on high",
+        "\u2018Til then I\u2019ll bear the sorrow and the strife",
+        "For I just heard my darling\u2019s last goodbye"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

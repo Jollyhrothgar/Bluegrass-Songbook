@@ -1,0 +1,59 @@
+{
+  "slug": "go-home",
+  "title": "Go Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/go-home/",
+  "raw_lyrics": "While drinking alone in a tavern one day\nMy eyes they hardly could see\nI heard a kind voice ringing so loud and clear\nAnd here is what the voice said to me\n\nGo home ( go home ) go home ( go home )\nAnd kneel by your bedside and pray\nGo home ( go home ) go home ( go home )\nGod will answer your prayer today\n\nI staggered across the room to the door\nI almost fell on the floor\nI\u2019m sure there was laughter but I could not hear\nFor the words that still ring in my ears\n\nGod sobered my mind and He saved my soul\nAnd he erased my thoughts from all fear\nThen back to the tavern I preached of these words\nThe words that still ring in my ear\n\nThe crowd started leaving with heads bowed so low\nAs the bartender picked up the key\nAs he locked the door he murmured these words\nWas the same words that God spoke to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "While drinking alone in a tavern one day",
+        "My eyes they hardly could see",
+        "I heard a kind voice ringing so loud and clear",
+        "And here is what the voice said to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go home ( go home ) go home ( go home )",
+        "And kneel by your bedside and pray",
+        "Go home ( go home ) go home ( go home )",
+        "God will answer your prayer today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I staggered across the room to the door",
+        "I almost fell on the floor",
+        "I\u2019m sure there was laughter but I could not hear",
+        "For the words that still ring in my ears"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God sobered my mind and He saved my soul",
+        "And he erased my thoughts from all fear",
+        "Then back to the tavern I preached of these words",
+        "The words that still ring in my ear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The crowd started leaving with heads bowed so low",
+        "As the bartender picked up the key",
+        "As he locked the door he murmured these words",
+        "Was the same words that God spoke to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

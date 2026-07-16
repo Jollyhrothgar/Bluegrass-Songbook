@@ -1,0 +1,39 @@
+{
+  "slug": "where-the-wild-river-rolls",
+  "title": "Where The Wild River Rolls",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-the-wild-river-rolls/",
+  "raw_lyrics": "Where can I find some peace for my mind\nI feel that my heart has grown cold\nYou left me alone this wide world to roam\nSo I\u2019m bound where the wild river rolls\n\nI\u2019m bound where the wild river rolls\nI\u2019m bound where the tall pine trees grow\nThe cost of your love has taken its toll\nSo I\u2019m bound where the wild river rolls\n\nFive long years I have waited in vain\nHoping for you to come home\nI told you that I couldn\u2019t live without your love\nSo I\u2019m bound where the wild river rolls",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Where can I find some peace for my mind",
+        "I feel that my heart has grown cold",
+        "You left me alone this wide world to roam",
+        "So I\u2019m bound where the wild river rolls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m bound where the wild river rolls",
+        "I\u2019m bound where the tall pine trees grow",
+        "The cost of your love has taken its toll",
+        "So I\u2019m bound where the wild river rolls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Five long years I have waited in vain",
+        "Hoping for you to come home",
+        "I told you that I couldn\u2019t live without your love",
+        "So I\u2019m bound where the wild river rolls"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

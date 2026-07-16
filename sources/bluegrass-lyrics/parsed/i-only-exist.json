@@ -1,0 +1,39 @@
+{
+  "slug": "i-only-exist",
+  "title": "I Only Exist",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-only-exist/",
+  "raw_lyrics": "No I\u2019m not living I only exist\nHow much longer can I go on like this\nYou broke my heart and tortured my mind\nI\u2019ve lost you darling you\u2019re long gone this time\n\nMy home is broken you wrecked my young life\nYou left me here alone to cry\nThese tears that are flowing will soon dry away\nAnd some day darling I know you will pay\n\nI knew you were no good right from the start\nMy friends all told me you\u2019d break my heart\nWhen your roaming and rambling days are through\nYou\u2019ll pray for a love like I had for you",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "No I\u2019m not living I only exist",
+        "How much longer can I go on like this",
+        "You broke my heart and tortured my mind",
+        "I\u2019ve lost you darling you\u2019re long gone this time"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My home is broken you wrecked my young life",
+        "You left me here alone to cry",
+        "These tears that are flowing will soon dry away",
+        "And some day darling I know you will pay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I knew you were no good right from the start",
+        "My friends all told me you\u2019d break my heart",
+        "When your roaming and rambling days are through",
+        "You\u2019ll pray for a love like I had for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

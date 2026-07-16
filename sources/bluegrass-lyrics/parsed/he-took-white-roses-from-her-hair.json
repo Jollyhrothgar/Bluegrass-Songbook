@@ -1,0 +1,59 @@
+{
+  "slug": "he-took-white-roses-from-her-hair",
+  "title": "He Took White Roses From Her Hair",
+  "source_url": "https://www.bluegrasslyrics.com/song/he-took-white-roses-from-her-hair/",
+  "raw_lyrics": "Oh Willie my darling come back\nI will ever be faithful and true\nOh Willie my darling come back\nI\u2019ll forever be faithful to you\n\nI remember once that he said\nHe loved me better than his life\nHe called me his darling his wife\nThen asked me to be his own bride\n\nOh darling he said I am sure\nYour heart is made of a stone\nHe took a white rose from my hair\nThen left me a standing alone\n\nThe next fateful day Willie was dead\nHe was found in the pond near the mill\nOh the clear precious waters so fair\nThat flows from the branch of the hills\n\nHis blue eyes were forever closed\nAnd damp was his golden hair\nAnd close to his pale lips was found\nThe white rose he took from my hair",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh Willie my darling come back",
+        "I will ever be faithful and true",
+        "Oh Willie my darling come back",
+        "I\u2019ll forever be faithful to you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember once that he said",
+        "He loved me better than his life",
+        "He called me his darling his wife",
+        "Then asked me to be his own bride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh darling he said I am sure",
+        "Your heart is made of a stone",
+        "He took a white rose from my hair",
+        "Then left me a standing alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The next fateful day Willie was dead",
+        "He was found in the pond near the mill",
+        "Oh the clear precious waters so fair",
+        "That flows from the branch of the hills"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His blue eyes were forever closed",
+        "And damp was his golden hair",
+        "And close to his pale lips was found",
+        "The white rose he took from my hair"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "from-your-heart-to-mine",
+  "title": "From Your Heart To Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/from-your-heart-to-mine/",
+  "raw_lyrics": "It was only yesterday that I heard you say\nYou wanted me more than silver or gold\nNow another\u2019s love you have and our love has grown cold\nIt\u2019s a long way from your heart to mine\n\nIt\u2019s a long long way from your heart to mine\nI didn\u2019t really mean to be unkind\nBut I cheated and I lied and I ever made you cry\nIt\u2019s a long way from your heart to mine\n\nIt was such a short time from the day we met\nI held you closely in my arms\nThen you went away and I went astray\nIt\u2019s a long way from your heart to mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It was only yesterday that I heard you say",
+        "You wanted me more than silver or gold",
+        "Now another\u2019s love you have and our love has grown cold",
+        "It\u2019s a long way from your heart to mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a long long way from your heart to mine",
+        "I didn\u2019t really mean to be unkind",
+        "But I cheated and I lied and I ever made you cry",
+        "It\u2019s a long way from your heart to mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was such a short time from the day we met",
+        "I held you closely in my arms",
+        "Then you went away and I went astray",
+        "It\u2019s a long way from your heart to mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

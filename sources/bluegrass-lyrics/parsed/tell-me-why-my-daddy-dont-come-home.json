@@ -1,0 +1,39 @@
+{
+  "slug": "tell-me-why-my-daddy-dont-come-home",
+  "title": "Tell Me Why My Daddy Don\u2019t Come Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/tell-me-why-my-daddy-dont-come-home/",
+  "raw_lyrics": "A little tot was playing one night upon the floor\nHer mother sat and id\u2019ly watched the little girl of four\nAll at once she dropped her toys and tears begining to shed\nShe climbed upon her mother\u2019s knee and this is what she said\n\nTell my why my daddy don\u2019t come home\nI know that I am much to big to cry\nWhy don\u2019t he come and play with me again\nMommy why did daddy say goodbye\n\nThat night she wrote a letter to one whose name she bore\nShe asked him to forget the past and come back once more\nYour little girl is pleading and calling Daddy\u2019s name\nWon\u2019t you please come back again so she won\u2019t have to say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A little tot was playing one night upon the floor",
+        "Her mother sat and id\u2019ly watched the little girl of four",
+        "All at once she dropped her toys and tears begining to shed",
+        "She climbed upon her mother\u2019s knee and this is what she said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tell my why my daddy don\u2019t come home",
+        "I know that I am much to big to cry",
+        "Why don\u2019t he come and play with me again",
+        "Mommy why did daddy say goodbye"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That night she wrote a letter to one whose name she bore",
+        "She asked him to forget the past and come back once more",
+        "Your little girl is pleading and calling Daddy\u2019s name",
+        "Won\u2019t you please come back again so she won\u2019t have to say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

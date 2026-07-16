@@ -1,0 +1,49 @@
+{
+  "slug": "whos-that-knocking-at-my-door",
+  "title": "Who\u2019s That Knocking At My Door",
+  "source_url": "https://www.bluegrasslyrics.com/song/whos-that-knocking-at-my-door/",
+  "raw_lyrics": "Whose that knocking at my door, have I heard that knock before\nIs it evil trying to get into my room\nWho\u2019s that tapping at my window, who\u2019s calling me to go\nTo a place that\u2019s filled with dark and gloom\n\nOh this life that I\u2019m living, it seems so unforgiving\nI find trouble everywhere that I go\nI always seek it first, just to quench my burning thirst\nIn waters that are cool as fallen snow\n\nBut the waters are oh so deep, what you sew you must reap\nNow I hear a knocking at my door\nIt\u2019s evil standing outside, there\u2019s no place to run and hide\nIt plucks my soul and presses me to the floor\n\nOh I\u2019ve been down that pathway, it always leads the wrong way\nBut this time I don\u2019t think I\u2019ll be back\nFeels like a freight train pulling me, there\u2019s a dark tunnel ahead I see\nThis train\u2019s going down a one-way track",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Whose that knocking at my door, have I heard that knock before",
+        "Is it evil trying to get into my room",
+        "Who\u2019s that tapping at my window, who\u2019s calling me to go",
+        "To a place that\u2019s filled with dark and gloom"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh this life that I\u2019m living, it seems so unforgiving",
+        "I find trouble everywhere that I go",
+        "I always seek it first, just to quench my burning thirst",
+        "In waters that are cool as fallen snow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But the waters are oh so deep, what you sew you must reap",
+        "Now I hear a knocking at my door",
+        "It\u2019s evil standing outside, there\u2019s no place to run and hide",
+        "It plucks my soul and presses me to the floor"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I\u2019ve been down that pathway, it always leads the wrong way",
+        "But this time I don\u2019t think I\u2019ll be back",
+        "Feels like a freight train pulling me, there\u2019s a dark tunnel ahead I see",
+        "This train\u2019s going down a one-way track"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

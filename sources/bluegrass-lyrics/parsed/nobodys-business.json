@@ -1,0 +1,53 @@
+{
+  "slug": "nobodys-business",
+  "title": "Nobody\u2019s Business",
+  "source_url": "https://www.bluegrasslyrics.com/song/nobodys-business/",
+  "raw_lyrics": "That\u2019s where my money goes\nTo buy my baby clothes\nNobody\u2019s business what I do\nNobody\u2019s business, nobody\u2019s business\nNobody\u2019s business what I do\n\nSliced ham and pickled feet\nHam and eggs and sausage meat\nNobody\u2019s business what I eat\nNobody\u2019s business, nobody\u2019s business\nNobody\u2019s business what I do\n\nSome day I\u2019ll wake up crazy\nKill my wife and save my baby\nNobody\u2019s business what I do\nNobody\u2019s business, nobody\u2019s business\nNobody\u2019s business what I do\n\nShe rides the limousine\nI crank the old machine\nNobody\u2019s business what I do\nNobody\u2019s business, nobody\u2019s business\nNobody\u2019s business what I do",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "That\u2019s where my money goes",
+        "To buy my baby clothes",
+        "Nobody\u2019s business what I do",
+        "Nobody\u2019s business, nobody\u2019s business",
+        "Nobody\u2019s business what I do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sliced ham and pickled feet",
+        "Ham and eggs and sausage meat",
+        "Nobody\u2019s business what I eat",
+        "Nobody\u2019s business, nobody\u2019s business",
+        "Nobody\u2019s business what I do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some day I\u2019ll wake up crazy",
+        "Kill my wife and save my baby",
+        "Nobody\u2019s business what I do",
+        "Nobody\u2019s business, nobody\u2019s business",
+        "Nobody\u2019s business what I do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She rides the limousine",
+        "I crank the old machine",
+        "Nobody\u2019s business what I do",
+        "Nobody\u2019s business, nobody\u2019s business",
+        "Nobody\u2019s business what I do"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

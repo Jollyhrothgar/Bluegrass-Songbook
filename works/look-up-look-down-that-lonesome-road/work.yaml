@@ -1,0 +1,11 @@
+id: look-up-look-down-that-lonesome-road
+title: Look Up Look Down That Lonesome Road
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/look-up-look-down-that-lonesome-road/
+      imported_at: '2026-02-08'

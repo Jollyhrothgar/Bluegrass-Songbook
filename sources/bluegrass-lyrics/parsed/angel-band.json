@@ -1,0 +1,41 @@
+{
+  "slug": "angel-band",
+  "title": "Angel Band",
+  "source_url": "https://www.bluegrasslyrics.com/song/angel-band/",
+  "raw_lyrics": "My latest sun is sinking fast\nMy race is nearly run\nMy strongest trials now are past\nMy triumph has begun\n\nOh come angel band\nCome and around me stand\nOh bear me away on your snow white wings\nTo my immortal home\nOh bear me away on your snow white wings\nTo my immortal home\n\nOh bear my longing heart to him\nWho bled and died for me\nWho\u2019s blood now cleanses from all sin\nAnd gives me victory",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My latest sun is sinking fast",
+        "My race is nearly run",
+        "My strongest trials now are past",
+        "My triumph has begun"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh come angel band",
+        "Come and around me stand",
+        "Oh bear me away on your snow white wings",
+        "To my immortal home",
+        "Oh bear me away on your snow white wings",
+        "To my immortal home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh bear my longing heart to him",
+        "Who bled and died for me",
+        "Who\u2019s blood now cleanses from all sin",
+        "And gives me victory"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

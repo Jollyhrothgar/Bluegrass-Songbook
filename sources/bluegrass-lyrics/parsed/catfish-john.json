@@ -1,0 +1,49 @@
+{
+  "slug": "catfish-john",
+  "title": "Catfish John",
+  "source_url": "https://www.bluegrasslyrics.com/song/catfish-john/",
+  "raw_lyrics": "Mama said don\u2019t go near that river\nDon\u2019t be hangin\u2019 around old catfish John\nCome the morning I\u2019d always be there\nWalking in his footsteps in the sweet delta dawn.\n\nLet me dream of another morning\nAnd the time so long ago\nWhere the sweet magnolias blossom\nCotton fields as white as snow.\n\nCatfish John was a river hobo\nLived and died on the river bend\nLookin\u2019 back I still remember\nI was glad to be his friend.\n\nBorn a slave in the town of Vicksburg\nTraded for a chestnut mare\nStill he never spoke in anger\nThough his load was hard to bear.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Mama said don\u2019t go near that river",
+        "Don\u2019t be hangin\u2019 around old catfish John",
+        "Come the morning I\u2019d always be there",
+        "Walking in his footsteps in the sweet delta dawn."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let me dream of another morning",
+        "And the time so long ago",
+        "Where the sweet magnolias blossom",
+        "Cotton fields as white as snow."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Catfish John was a river hobo",
+        "Lived and died on the river bend",
+        "Lookin\u2019 back I still remember",
+        "I was glad to be his friend."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Born a slave in the town of Vicksburg",
+        "Traded for a chestnut mare",
+        "Still he never spoke in anger",
+        "Though his load was hard to bear."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

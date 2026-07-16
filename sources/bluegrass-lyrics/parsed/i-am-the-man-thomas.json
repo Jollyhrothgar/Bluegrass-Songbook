@@ -1,0 +1,41 @@
+{
+  "slug": "i-am-the-man-thomas",
+  "title": "I Am The Man, Thomas",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-am-the-man-thomas/",
+  "raw_lyrics": "Oh, I am the Man, Thomas, I am the Man\nLook at these nail scars here in my hands\n\nThey pierced me in the side, Thomas, I am the Man\nThey made me bear the cross, Thomas, I am the Man\n\nThey laid me in the tomb, Thomas, I am the Man\nIn three days I arose, Thomas, I am the Man\n\nThey pierced me in the Side, Thomas, I am the Man\nThey made me bear the cross, Thomas, I am the Man",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, I am the Man, Thomas, I am the Man",
+        "Look at these nail scars here in my hands"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They pierced me in the side, Thomas, I am the Man",
+        "They made me bear the cross, Thomas, I am the Man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They laid me in the tomb, Thomas, I am the Man",
+        "In three days I arose, Thomas, I am the Man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They pierced me in the Side, Thomas, I am the Man",
+        "They made me bear the cross, Thomas, I am the Man"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

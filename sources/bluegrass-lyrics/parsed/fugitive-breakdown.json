@@ -1,0 +1,39 @@
+{
+  "slug": "fugitive-breakdown",
+  "title": "Fugitive Breakdown",
+  "source_url": "https://www.bluegrasslyrics.com/song/fugitive-breakdown/",
+  "raw_lyrics": "I hurried through the darkness\nThe last time my darling to see\nI heard those bloodhounds crying\nThe sheriff was coming after me\n\nShe had the sun in her hair\nLips like cherry wine\nShe loved nobody else\nNow I sit and pine\n\nThey said I killed a stranger\nThey tried to hang me high\nI ran as fast as I could go\nI wished that I could fly",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I hurried through the darkness",
+        "The last time my darling to see",
+        "I heard those bloodhounds crying",
+        "The sheriff was coming after me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She had the sun in her hair",
+        "Lips like cherry wine",
+        "She loved nobody else",
+        "Now I sit and pine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They said I killed a stranger",
+        "They tried to hang me high",
+        "I ran as fast as I could go",
+        "I wished that I could fly"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

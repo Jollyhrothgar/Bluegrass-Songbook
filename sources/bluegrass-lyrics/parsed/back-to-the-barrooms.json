@@ -1,0 +1,42 @@
+{
+  "slug": "back-to-the-barrooms",
+  "title": "Back To The Barrooms",
+  "source_url": "https://www.bluegrasslyrics.com/song/back-to-the-barrooms/",
+  "raw_lyrics": "Now it\u2019s back to the barrooms\nRight back to drinkin\u2019 again\nMaybe someday you\u2019ll love me enough to stay with me\nAnd whisky won\u2019t be my best friend\nNow it\u2019s back to the barrooms again\n\nNow the bartender knows me, he knows how you do me\nAnd he knows why I\u2019m back here again\nHe must be given a prize for his patience\nFor bartenders do understand\nNow it\u2019s back to the barrooms again\n\nWith the loud music roarin\u2019, the bartender pourin\u2019\nMy shaky legs tryin\u2019 to stand\nIt\u2019s over and over I\u2019ve tried to stay sober\nBut, look what a failure I\u2019ve been\nNow it\u2019s back to the barrooms again",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Now it\u2019s back to the barrooms",
+        "Right back to drinkin\u2019 again",
+        "Maybe someday you\u2019ll love me enough to stay with me",
+        "And whisky won\u2019t be my best friend",
+        "Now it\u2019s back to the barrooms again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the bartender knows me, he knows how you do me",
+        "And he knows why I\u2019m back here again",
+        "He must be given a prize for his patience",
+        "For bartenders do understand",
+        "Now it\u2019s back to the barrooms again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With the loud music roarin\u2019, the bartender pourin\u2019",
+        "My shaky legs tryin\u2019 to stand",
+        "It\u2019s over and over I\u2019ve tried to stay sober",
+        "But, look what a failure I\u2019ve been",
+        "Now it\u2019s back to the barrooms again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

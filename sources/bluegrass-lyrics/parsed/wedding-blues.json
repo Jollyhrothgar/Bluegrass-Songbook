@@ -1,0 +1,69 @@
+{
+  "slug": "wedding-blues",
+  "title": "Wedding Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/wedding-blues/",
+  "raw_lyrics": "I have the invitation that you sent me\nYou wanted me to see you change your name\nI couldn\u2019t stand to see you wed another\nBut dear I hope you\u2019re happy just the same\n\nWedding bells are ringing in the chapel\nThat should be ringing now for you and me\nDown the aisle with someone else you\u2019re walking\nThose wedding bells will never ring for me\n\nI planned a little cottage in the valley\nI even bought a little band of gold\nI thought someday I\u2019d place it on your finger\nBut now the future looks so dark and cold\n\nWedding bells are ringing in the chapel\nI hear the children laughing now with glee\nAt home alone I hang my head in sorrow\nThose wedding bells will never ring for me\n\nHow fancy that I see a bunch of roses\nA blossom from an orange tree in your fair\nWhile the organ plays I Love You Truly\nJust let me pretend that I am there\n\nWedding bells are ringing in the chapel\nEver since the day you set me free\nI knew someday that you would wed another\nBut wedding bells will never ring for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have the invitation that you sent me",
+        "You wanted me to see you change your name",
+        "I couldn\u2019t stand to see you wed another",
+        "But dear I hope you\u2019re happy just the same"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wedding bells are ringing in the chapel",
+        "That should be ringing now for you and me",
+        "Down the aisle with someone else you\u2019re walking",
+        "Those wedding bells will never ring for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I planned a little cottage in the valley",
+        "I even bought a little band of gold",
+        "I thought someday I\u2019d place it on your finger",
+        "But now the future looks so dark and cold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wedding bells are ringing in the chapel",
+        "I hear the children laughing now with glee",
+        "At home alone I hang my head in sorrow",
+        "Those wedding bells will never ring for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How fancy that I see a bunch of roses",
+        "A blossom from an orange tree in your fair",
+        "While the organ plays I Love You Truly",
+        "Just let me pretend that I am there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wedding bells are ringing in the chapel",
+        "Ever since the day you set me free",
+        "I knew someday that you would wed another",
+        "But wedding bells will never ring for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "when-you-are-lonely",
+  "title": "When You Are Lonely",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-you-are-lonely/",
+  "raw_lyrics": "Oh I\u2019m thinking of you, little darling\nOn the day that we first met\nAnd those words sweetheart that you told me\nI\u2019m sure I\u2019ll never forget\n\nOh, someday, sweetheart, when you\u2019re lonely\nAnd have no one to care for you\nRemember the heart you have broken\nAnd the one that has loved you so true\n\nYou told me that you always would love me\nThat no one could ever come between\nBut it seems to me you\u2019ve forgotten\nAll those things you told to me\n\nI\u2019ll forget all those things that you told me\nAnd try to start our life anew\nBut remember the heart you have broken\nAnd the one that has loved you so true",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I\u2019m thinking of you, little darling",
+        "On the day that we first met",
+        "And those words sweetheart that you told me",
+        "I\u2019m sure I\u2019ll never forget"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, someday, sweetheart, when you\u2019re lonely",
+        "And have no one to care for you",
+        "Remember the heart you have broken",
+        "And the one that has loved you so true"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You told me that you always would love me",
+        "That no one could ever come between",
+        "But it seems to me you\u2019ve forgotten",
+        "All those things you told to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll forget all those things that you told me",
+        "And try to start our life anew",
+        "But remember the heart you have broken",
+        "And the one that has loved you so true"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

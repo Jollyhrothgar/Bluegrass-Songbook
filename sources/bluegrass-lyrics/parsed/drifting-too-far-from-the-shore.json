@@ -1,0 +1,39 @@
+{
+  "slug": "drifting-too-far-from-the-shore",
+  "title": "Drifting Too Far From The Shore",
+  "source_url": "https://www.bluegrasslyrics.com/song/drifting-too-far-from-the-shore/",
+  "raw_lyrics": "Out on the perilous deep\nWhere dangers silently creep\nAnd storms so violently sweep\nYou\u2019re drifting too far from the shore\n\nDrifting too far from the shore\nDrifting too far from the shore\nCome to Jesus today, let him show you the way\nDrifting too far from the shore\n\nToday the tempest rolls high\nAnd clouds overshadow the sky\nSure death is hovering nigh\nDrifting too far from the shore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Out on the perilous deep",
+        "Where dangers silently creep",
+        "And storms so violently sweep",
+        "You\u2019re drifting too far from the shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Drifting too far from the shore",
+        "Drifting too far from the shore",
+        "Come to Jesus today, let him show you the way",
+        "Drifting too far from the shore"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Today the tempest rolls high",
+        "And clouds overshadow the sky",
+        "Sure death is hovering nigh",
+        "Drifting too far from the shore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

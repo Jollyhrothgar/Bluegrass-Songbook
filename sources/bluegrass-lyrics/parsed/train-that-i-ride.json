@@ -1,0 +1,36 @@
+{
+  "slug": "train-that-i-ride",
+  "title": "Train That I Ride",
+  "source_url": "https://www.bluegrasslyrics.com/song/train-that-i-ride/",
+  "raw_lyrics": "The train that I ride is going to Harlan\nThe train that I ride is going to Harlan\nI\u2019m here today but I\u2019ll be home tomorrow\n\nNo more will I roam no more will I wander\nNo more will I roam no more will I wander\nThe early morning train will take me down yonder\n\nI\u2019ve been in this town through 10 years of sorrow\nI\u2019ve been in this town through 10 years of sorrow\nThe train that I ride will leave here tomorrow",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "The train that I ride is going to Harlan",
+        "The train that I ride is going to Harlan",
+        "I\u2019m here today but I\u2019ll be home tomorrow"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No more will I roam no more will I wander",
+        "No more will I roam no more will I wander",
+        "The early morning train will take me down yonder"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been in this town through 10 years of sorrow",
+        "I\u2019ve been in this town through 10 years of sorrow",
+        "The train that I ride will leave here tomorrow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

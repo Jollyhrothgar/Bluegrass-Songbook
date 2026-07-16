@@ -1,0 +1,49 @@
+{
+  "slug": "lost-highway",
+  "title": "Lost Highway",
+  "source_url": "https://www.bluegrasslyrics.com/song/lost-highway/",
+  "raw_lyrics": "I\u2019m a rolling stone, all alone and lost\nFor a life of sin I have paid the cost\nWhen I pass by, all the people say\nJust another guy on the lost highway\n\nJust a deck of cards and a jug of wine\nAnd a woman\u2019s lies make a life like mine\nOh, the day we met I went astray\nI started rolling down that lost highway\n\nI was just a lad, nearly twenty two\nNeither good nor bad, just a kid like you\nAnd now I\u2019m lost too late to pray\nLord, I\u2019ve paid the cost on the lost highway\n\nNow boys, don\u2019t start your rambling round\nOn this road of sin or you\u2019re sorrow bound\nTake my advice or you\u2019ll curse the day\nYou started rolling down that lost highway",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a rolling stone, all alone and lost",
+        "For a life of sin I have paid the cost",
+        "When I pass by, all the people say",
+        "Just another guy on the lost highway"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a deck of cards and a jug of wine",
+        "And a woman\u2019s lies make a life like mine",
+        "Oh, the day we met I went astray",
+        "I started rolling down that lost highway"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was just a lad, nearly twenty two",
+        "Neither good nor bad, just a kid like you",
+        "And now I\u2019m lost too late to pray",
+        "Lord, I\u2019ve paid the cost on the lost highway"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now boys, don\u2019t start your rambling round",
+        "On this road of sin or you\u2019re sorrow bound",
+        "Take my advice or you\u2019ll curse the day",
+        "You started rolling down that lost highway"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

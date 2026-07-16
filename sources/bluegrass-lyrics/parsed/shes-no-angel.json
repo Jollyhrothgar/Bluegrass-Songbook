@@ -1,0 +1,39 @@
+{
+  "slug": "shes-no-angel",
+  "title": "She\u2019s No Angel",
+  "source_url": "https://www.bluegrasslyrics.com/song/shes-no-angel/",
+  "raw_lyrics": "You see her there at the bar cross the room\nShe looks like an angel with her paint and perfume\nYou\u2019d like to meet her your conscience says no\nObey your conscience turn around and go\n\nShe\u2019s no angel, no angel, her wings are not real\nShe\u2019ll ruin your life if your heart she can steal\nShe\u2019ll tell you tales to bring tears to your eyes\nBut don\u2019t you believe them for they\u2019re only lies\n\nYou think if only she could be your own\nYou\u2019d be more contented than a king on his throne\nYou\u2019d better not trust her it\u2019s wrong if you do\nShe\u2019s broken many hearts and she\u2019ll break yours too",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You see her there at the bar cross the room",
+        "She looks like an angel with her paint and perfume",
+        "You\u2019d like to meet her your conscience says no",
+        "Obey your conscience turn around and go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She\u2019s no angel, no angel, her wings are not real",
+        "She\u2019ll ruin your life if your heart she can steal",
+        "She\u2019ll tell you tales to bring tears to your eyes",
+        "But don\u2019t you believe them for they\u2019re only lies"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You think if only she could be your own",
+        "You\u2019d be more contented than a king on his throne",
+        "You\u2019d better not trust her it\u2019s wrong if you do",
+        "She\u2019s broken many hearts and she\u2019ll break yours too"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

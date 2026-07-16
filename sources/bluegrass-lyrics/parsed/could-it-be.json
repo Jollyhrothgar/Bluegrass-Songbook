@@ -1,0 +1,42 @@
+{
+  "slug": "could-it-be",
+  "title": "Could It Be",
+  "source_url": "https://www.bluegrasslyrics.com/song/could-it-be/",
+  "raw_lyrics": "I can tell by that far away look in your eye\nThat you\u2019re waiting for a chance to be leaving\nWhere did I go wrong did I stay away too long\nDid something come between us I don\u2019t understand.\n\nI will run to where you are going\nAny place you\u2019re yearning to roam\nBut there\u2019s something there you\u2019re not showing\nCould it be you don\u2019t love me anymore\nCould it be you don\u2019t love me anymore.\n\nWith this sweetest song\nI would borrow the sun\nAnd light up the world for you and me\nSeems we\u2019ve only just begun\nyou\u2019re already on the run\nAnd I didn\u2019t even know the race was on.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can tell by that far away look in your eye",
+        "That you\u2019re waiting for a chance to be leaving",
+        "Where did I go wrong did I stay away too long",
+        "Did something come between us I don\u2019t understand."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I will run to where you are going",
+        "Any place you\u2019re yearning to roam",
+        "But there\u2019s something there you\u2019re not showing",
+        "Could it be you don\u2019t love me anymore",
+        "Could it be you don\u2019t love me anymore."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With this sweetest song",
+        "I would borrow the sun",
+        "And light up the world for you and me",
+        "Seems we\u2019ve only just begun",
+        "you\u2019re already on the run",
+        "And I didn\u2019t even know the race was on."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

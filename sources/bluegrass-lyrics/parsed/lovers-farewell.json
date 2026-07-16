@@ -1,0 +1,69 @@
+{
+  "slug": "lovers-farewell",
+  "title": "Lover\u2019s Farewell",
+  "source_url": "https://www.bluegrasslyrics.com/song/lovers-farewell/",
+  "raw_lyrics": "We have met and we have parted\nWe have spoke our last goodbye\nYou have proved to me false hearted\nYou may now forever go\n\nYou have wrecked the heart I\u2019ve cherished\nYou have done me day by day\nYou are false but I\u2019ll forgive you\nTo forget you I cannot say\n\nFor I love you dear I love you\nMore than all this world I know\nYou have proved to me false hearted\nYou may now forever go\n\nOn the river bank I\u2019ll loiter\nTill I see your face once more\nThen I\u2019ll plunge beneath the water\nAnd I\u2019ll land on some far shore\n\nAmong the trees and bushes\nWhere the dark green willow sway\nIn the cold and silent rushes\nThere you\u2019ll find my lonely grave\n\nO I wish I was white marble\nCold and white on some far shore\nThis poor heart would cease from troubling\nAnd I\u2019d feel the pain no more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We have met and we have parted",
+        "We have spoke our last goodbye",
+        "You have proved to me false hearted",
+        "You may now forever go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You have wrecked the heart I\u2019ve cherished",
+        "You have done me day by day",
+        "You are false but I\u2019ll forgive you",
+        "To forget you I cannot say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For I love you dear I love you",
+        "More than all this world I know",
+        "You have proved to me false hearted",
+        "You may now forever go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On the river bank I\u2019ll loiter",
+        "Till I see your face once more",
+        "Then I\u2019ll plunge beneath the water",
+        "And I\u2019ll land on some far shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Among the trees and bushes",
+        "Where the dark green willow sway",
+        "In the cold and silent rushes",
+        "There you\u2019ll find my lonely grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "O I wish I was white marble",
+        "Cold and white on some far shore",
+        "This poor heart would cease from troubling",
+        "And I\u2019d feel the pain no more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "ive-found-a-hiding-place",
+  "title": "I\u2019ve Found A Hiding Place",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-found-a-hiding-place/",
+  "raw_lyrics": "High on that lonesome road to heaven\u2019s blessed abode\nFor many years I was burdened with care\nSo often lightening flashed and raging billows dashed\nMy sorrow then was so heavy to bear\n\nBut since my Jesus came I praise his holy name\nHe sheds the light of his wonderful grace\nAnd every night and day to him I steal away\nI found a blessed hiding place\n\nI found a hiding place a blessed hiding place\nI said a hiding a blessed hiding place\nThere\u2019s glory in my soul my hallelujah rolls\nBut since my Jesus came I\u2019m under his control\n\nHe keeps me night and day He answers when I pray\nAnd from the raging storm to Him I steal away\nI hear those temptors knock I feel no temply shock\nOh in the solid rock I found a hinding place\n\nJust like a wandering Jew that had no place to choose\nEach day I had to keep travelin\u2019 on\nBut now I\u2019ve found the way that leads to endless days\nNo more in darkness I wander alone\nWhen Satan would alarm I climb in God\u2019s strong arm\nAnd hide away in his loving embrace\nFor in the solid rock the blessed solid rock\nI found a blessed hidin\u2019 place",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "High on that lonesome road to heaven\u2019s blessed abode",
+        "For many years I was burdened with care",
+        "So often lightening flashed and raging billows dashed",
+        "My sorrow then was so heavy to bear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But since my Jesus came I praise his holy name",
+        "He sheds the light of his wonderful grace",
+        "And every night and day to him I steal away",
+        "I found a blessed hiding place"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I found a hiding place a blessed hiding place",
+        "I said a hiding a blessed hiding place",
+        "There\u2019s glory in my soul my hallelujah rolls",
+        "But since my Jesus came I\u2019m under his control"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "He keeps me night and day He answers when I pray",
+        "And from the raging storm to Him I steal away",
+        "I hear those temptors knock I feel no temply shock",
+        "Oh in the solid rock I found a hinding place"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just like a wandering Jew that had no place to choose",
+        "Each day I had to keep travelin\u2019 on",
+        "But now I\u2019ve found the way that leads to endless days",
+        "No more in darkness I wander alone",
+        "When Satan would alarm I climb in God\u2019s strong arm",
+        "And hide away in his loving embrace",
+        "For in the solid rock the blessed solid rock",
+        "I found a blessed hidin\u2019 place"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "by-the-touch-of-her-hand",
+  "title": "By The Touch Of Her Hand",
+  "source_url": "https://www.bluegrasslyrics.com/song/by-the-touch-of-her-hand/",
+  "raw_lyrics": "There are days so dark\nThat I seek in vain\nFor the face of my own true love\n\nBut the darkness hides\nHe is there to guide\nBy the light of the moon above\n\nOh the lonesome pines\nOh the lonesome pines\nWhere I met that sweetheart of mine\nWith her hand in mine\nAnd our hearts entwined\nAs we strolled through the lonesome pines\n\nBright stars above\nTwo sweethearts in love\nAs we sang to the cooing doves\n\nHe has brought me back\nTo that mountain shack\nBy the touch of her hand in love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There are days so dark",
+        "That I seek in vain",
+        "For the face of my own true love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But the darkness hides",
+        "He is there to guide",
+        "By the light of the moon above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the lonesome pines",
+        "Oh the lonesome pines",
+        "Where I met that sweetheart of mine",
+        "With her hand in mine",
+        "And our hearts entwined",
+        "As we strolled through the lonesome pines"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Bright stars above",
+        "Two sweethearts in love",
+        "As we sang to the cooing doves"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He has brought me back",
+        "To that mountain shack",
+        "By the touch of her hand in love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

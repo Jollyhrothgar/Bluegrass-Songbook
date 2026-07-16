@@ -1,0 +1,69 @@
+{
+  "slug": "pretty-little-miss",
+  "title": "Pretty Little Miss",
+  "source_url": "https://www.bluegrasslyrics.com/song/pretty-little-miss/",
+  "raw_lyrics": "Pretty little miss out in the garden\nStrange young man came riding by\nDown at the gate he did address her\nSaying pretty little miss won\u2019t you marry me\n\nOh no my love is on the ocean\nSeven years out on the sea\nAnd if he sails seven years longer\nNo man on earth can marry me\n\nPerhaps your loved one he is drowned\nPerhaps he\u2019s in some battle land\nPerhaps he stole some girl and married\nYou\u2019ll never see your love again\n\nIf he is drowned I hope he\u2019s happy\nOr if he\u2019s in some battle land\nOr if he stole some girl and married\nI\u2019ll love the girl that married him\n\nHe pulled his hand out of his pockets\nHis fingers being keen and small\nThis is the ring you placed upon here\nDown by his feet she did fall\n\nHe picked her up in arms so tender\nKisses he gave her one two three\nThis is your little single soldier\nReturning home to marry thee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Pretty little miss out in the garden",
+        "Strange young man came riding by",
+        "Down at the gate he did address her",
+        "Saying pretty little miss won\u2019t you marry me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh no my love is on the ocean",
+        "Seven years out on the sea",
+        "And if he sails seven years longer",
+        "No man on earth can marry me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Perhaps your loved one he is drowned",
+        "Perhaps he\u2019s in some battle land",
+        "Perhaps he stole some girl and married",
+        "You\u2019ll never see your love again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If he is drowned I hope he\u2019s happy",
+        "Or if he\u2019s in some battle land",
+        "Or if he stole some girl and married",
+        "I\u2019ll love the girl that married him"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He pulled his hand out of his pockets",
+        "His fingers being keen and small",
+        "This is the ring you placed upon here",
+        "Down by his feet she did fall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He picked her up in arms so tender",
+        "Kisses he gave her one two three",
+        "This is your little single soldier",
+        "Returning home to marry thee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

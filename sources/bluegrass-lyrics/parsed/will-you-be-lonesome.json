@@ -1,0 +1,64 @@
+{
+  "slug": "will-you-be-lonesome",
+  "title": "Will You Be Lonesome",
+  "source_url": "https://www.bluegrasslyrics.com/song/will-you-be-lonesome/",
+  "raw_lyrics": "How would you like feeling lonesome\nWhen someone is through with you\nMy heart is sad and I\u2019m lonesome\nI wonder if you\u2019re lonesome too\nI wonder if you\u2019re lonesome too\n\nDon\u2019t want you to cry cause I\u2019m leaving\nDon\u2019t want you to cry cause I\u2019m blue\nOnly my thoughts make me lonesome\nI wonder if you\u2019re lonesome too\nI wonder if you\u2019re lonesome too\n\nWhy should two lovers quarrel\nWhy should they be so untrue\nI know what it means to be lonesome\nI wonder if you\u2019re lonesome too\nI wonder if you\u2019re lonesome too\n\nNo one to love me little darling\nNothing but memories of you\nWhen I\u2019m far away I\u2019ll be lonesome\nI wonder if you\u2019re lonesome too\nI wonder if you\u2019re lonesome too\n\nGive me your right hand honey\nI\u2019ll say this farewell to you\nI\u2019ll be so lonesome without you\nI wonder if you\u2019re lonesome too\nI wonder if you\u2019re lonesome too",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "How would you like feeling lonesome",
+        "When someone is through with you",
+        "My heart is sad and I\u2019m lonesome",
+        "I wonder if you\u2019re lonesome too",
+        "I wonder if you\u2019re lonesome too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t want you to cry cause I\u2019m leaving",
+        "Don\u2019t want you to cry cause I\u2019m blue",
+        "Only my thoughts make me lonesome",
+        "I wonder if you\u2019re lonesome too",
+        "I wonder if you\u2019re lonesome too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Why should two lovers quarrel",
+        "Why should they be so untrue",
+        "I know what it means to be lonesome",
+        "I wonder if you\u2019re lonesome too",
+        "I wonder if you\u2019re lonesome too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No one to love me little darling",
+        "Nothing but memories of you",
+        "When I\u2019m far away I\u2019ll be lonesome",
+        "I wonder if you\u2019re lonesome too",
+        "I wonder if you\u2019re lonesome too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Give me your right hand honey",
+        "I\u2019ll say this farewell to you",
+        "I\u2019ll be so lonesome without you",
+        "I wonder if you\u2019re lonesome too",
+        "I wonder if you\u2019re lonesome too"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

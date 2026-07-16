@@ -1,0 +1,39 @@
+{
+  "slug": "where-did-our-young-years-go",
+  "title": "Where Did Our Young Years Go",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-did-our-young-years-go/",
+  "raw_lyrics": "My eyes are getting weaker my steps are getting slow\nAnd the gray in my hair is beginning to show\nMy life has been rich though I\u2019ve always been poor\nOur youth passed so quickly where did our young years go\n\nThere\u2019s something between us so few understand\nYou made me your king though I\u2019m a plain working man\nOur home and our babies have left our love aglow\nBut where oh where did our young years go\n\nYour face may be wrinkled your dress may be worn\nBut your lips are still tender thrilling and warm\nEach day of life our love seems to grow\nBut where oh where did our young years go",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My eyes are getting weaker my steps are getting slow",
+        "And the gray in my hair is beginning to show",
+        "My life has been rich though I\u2019ve always been poor",
+        "Our youth passed so quickly where did our young years go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s something between us so few understand",
+        "You made me your king though I\u2019m a plain working man",
+        "Our home and our babies have left our love aglow",
+        "But where oh where did our young years go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your face may be wrinkled your dress may be worn",
+        "But your lips are still tender thrilling and warm",
+        "Each day of life our love seems to grow",
+        "But where oh where did our young years go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

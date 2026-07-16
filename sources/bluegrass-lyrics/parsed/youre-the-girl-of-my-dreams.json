@@ -1,0 +1,37 @@
+{
+  "slug": "youre-the-girl-of-my-dreams",
+  "title": "You\u2019re The Girl Of My Dreams",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-the-girl-of-my-dreams/",
+  "raw_lyrics": "Oh I first met you down in lover\u2019s lane\nYou were just like an angel my little blue-eyed Jane\nWe walked along we sang a song, the birds were singing too\nWould be like Heaven here on earth to be again with you\n\nFor you\u2019re the girl of my dreams\nBut it seems that my dreams will never come true\n\nAt night we\u2019d sit out in the old porch swing\nThe stars were shining brightly while softly you would sing\nYou sang of happy days gone by, you made me happy too\nWould be like Heaven here on earth to be again with you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I first met you down in lover\u2019s lane",
+        "You were just like an angel my little blue-eyed Jane",
+        "We walked along we sang a song, the birds were singing too",
+        "Would be like Heaven here on earth to be again with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "For you\u2019re the girl of my dreams",
+        "But it seems that my dreams will never come true"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "At night we\u2019d sit out in the old porch swing",
+        "The stars were shining brightly while softly you would sing",
+        "You sang of happy days gone by, you made me happy too",
+        "Would be like Heaven here on earth to be again with you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "down-at-the-end-of-memory-lane",
+  "title": "Down At The End Of Memory Lane",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-at-the-end-of-memory-lane/",
+  "raw_lyrics": "Down at the end of Memory lane\nMany have walked it in gladness\nI was the one to walk it last\nI walked it alone in sadness\n\nI received a letter from my love\nOpened it and this is what it said\nI am sorry if I hurt you but now it is too late\nFor another man my darling I have wed\n\nI remember her sweet smiling face\nAnd her little freckled nose\nAnd her golden hair hanging down her back\nTied with a big blue ribbon bow\n\nWe were childhood chums together there\nI loved her with all my heart and soul\nBut she married another without a thought or care\nAnd she left me in this world alone and cold\n\nYou have heard of the weeping willow\nOf that weeping willow tree\nAnd when I die I want you to bury me\nBeneath that weeping willow tree\n\nWhen I\u2019m dead and buried love\nNever no more in this world to see\nThere is one request grant me darling\nWon\u2019t you see that my grave is kept clean",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Down at the end of Memory lane",
+        "Many have walked it in gladness",
+        "I was the one to walk it last",
+        "I walked it alone in sadness"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I received a letter from my love",
+        "Opened it and this is what it said",
+        "I am sorry if I hurt you but now it is too late",
+        "For another man my darling I have wed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember her sweet smiling face",
+        "And her little freckled nose",
+        "And her golden hair hanging down her back",
+        "Tied with a big blue ribbon bow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We were childhood chums together there",
+        "I loved her with all my heart and soul",
+        "But she married another without a thought or care",
+        "And she left me in this world alone and cold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You have heard of the weeping willow",
+        "Of that weeping willow tree",
+        "And when I die I want you to bury me",
+        "Beneath that weeping willow tree"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I\u2019m dead and buried love",
+        "Never no more in this world to see",
+        "There is one request grant me darling",
+        "Won\u2019t you see that my grave is kept clean"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

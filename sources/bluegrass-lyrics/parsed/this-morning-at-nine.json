@@ -1,0 +1,39 @@
+{
+  "slug": "this-morning-at-nine",
+  "title": "This Morning At Nine",
+  "source_url": "https://www.bluegrasslyrics.com/song/this-morning-at-nine/",
+  "raw_lyrics": "I awoke this morning from a lovely dream\nAnd looked about this lonely room of mine\nSomewhere in the distance to me it seemed\nChurch bells were ringing this morning at nine\n\nBitter tears I\u2019m shedding all because of you\nI\u2019m like a lonely prisoner serving his time\nThinking of the day the days when love was true\nBut you\u2019ll wed another this morning at nine\n\nMy poor broken heart it started to cry\nAs I realized you never could be mine\nJust then I remembered what day it really was\nThat you wed another this morning at nine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I awoke this morning from a lovely dream",
+        "And looked about this lonely room of mine",
+        "Somewhere in the distance to me it seemed",
+        "Church bells were ringing this morning at nine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Bitter tears I\u2019m shedding all because of you",
+        "I\u2019m like a lonely prisoner serving his time",
+        "Thinking of the day the days when love was true",
+        "But you\u2019ll wed another this morning at nine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My poor broken heart it started to cry",
+        "As I realized you never could be mine",
+        "Just then I remembered what day it really was",
+        "That you wed another this morning at nine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "carolina-star",
+  "title": "Carolina Star",
+  "source_url": "https://www.bluegrasslyrics.com/song/carolina-star/",
+  "raw_lyrics": "Back in the hills oh slow rollin\u2019 hills\nWhere North Carolina comes close to the stars\nThere\u2019s livin\u2019 a lady who\u2019s shinin\u2019 so high\nThey call her the \u201cCarolina Star\u2019\n\nShe works at the factory from Monday through Friday\nShe\u2019s raisin\u2019 three daughters alone\nTheir daddy\u2019s away, he\u2019s chasing a dream\nThey\u2019re waitin\u2019 for the day that he comes home\n\nOh, Carolina\nEven stars get lonesome now and then\nOh,  Carolina\nDon\u2019t you worry, he\u2019ll be comin\u2019 home again\n\nHe\u2019s playin\u2019 his songs in Nashville\nHe\u2019s pickin\u2019 for tips in a bar\nHe\u2019s broke and all alone, but he ain\u2019t ready to come home\nHe\u2019s gonna be a country singin\u2019 star\n\nSometimes she wakes up just thinking of him\nShe remembers him beside her in the night\nWhile out across those hills that old moon is settled in\nAnd those Carolina stars are shining bright\n\nYes he loves you and he\u2019s comin\u2019 home again.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Back in the hills oh slow rollin\u2019 hills",
+        "Where North Carolina comes close to the stars",
+        "There\u2019s livin\u2019 a lady who\u2019s shinin\u2019 so high",
+        "They call her the \u201cCarolina Star\u2019"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She works at the factory from Monday through Friday",
+        "She\u2019s raisin\u2019 three daughters alone",
+        "Their daddy\u2019s away, he\u2019s chasing a dream",
+        "They\u2019re waitin\u2019 for the day that he comes home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, Carolina",
+        "Even stars get lonesome now and then",
+        "Oh,  Carolina",
+        "Don\u2019t you worry, he\u2019ll be comin\u2019 home again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He\u2019s playin\u2019 his songs in Nashville",
+        "He\u2019s pickin\u2019 for tips in a bar",
+        "He\u2019s broke and all alone, but he ain\u2019t ready to come home",
+        "He\u2019s gonna be a country singin\u2019 star"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes she wakes up just thinking of him",
+        "She remembers him beside her in the night",
+        "While out across those hills that old moon is settled in",
+        "And those Carolina stars are shining bright"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes he loves you and he\u2019s comin\u2019 home again."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

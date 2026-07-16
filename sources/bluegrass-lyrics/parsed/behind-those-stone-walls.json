@@ -1,0 +1,79 @@
+{
+  "slug": "behind-those-stone-walls",
+  "title": "Behind Those Stone Walls",
+  "source_url": "https://www.bluegrasslyrics.com/song/behind-those-stone-walls/",
+  "raw_lyrics": "Twas in St Louis city where I first saw the light\nBrought up by honest parents on a pathway of right\nI was left on orphan at the age of ten years\nOn mother\u2019s grave I shed many tears\n\nI\u2019d scarcely reached manhood when I left my old home\nWith some other fellows to the west we did roam\nSeeking employment though scarcely could find\nWe seemed so poor and the people unkind\n\nWas in New York City where we first met our fate\nWe were arrested while roaming the streets\nThe charges were burglars the theft it was called\nBut they said it would place us behind the stone walls\n\nWe were marched next morning to the courthouse for trial\nMy pal was downhearted so I gave him a smile\nWe pleaded for mercy but was shown none at all\nThey gave us twenty years behind the stone walls\n\nWe were handcuffed next morning and marched to the pen\nWe arrived there at midnight with a few other men\nThe doors were thrown open we marched in the halls\nJust learn to be a convict behind the stone walls\n\nWhile lying that night on a pallet of straw\nI swore I would never again break the law\nThere\u2019s none but your mother to bear your downfall\nWhen you are a convict behind the stone walls\n\nCome all you young fellows and listen to me\nWhen you lose life\u2019s pleasures you\u2019ve lost liberty\nI\u2019ve tasted life\u2019s pleasures it\u2019s bitter than gall\nIt\u2019ll lead to a cell behind the stone wall",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Twas in St Louis city where I first saw the light",
+        "Brought up by honest parents on a pathway of right",
+        "I was left on orphan at the age of ten years",
+        "On mother\u2019s grave I shed many tears"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d scarcely reached manhood when I left my old home",
+        "With some other fellows to the west we did roam",
+        "Seeking employment though scarcely could find",
+        "We seemed so poor and the people unkind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Was in New York City where we first met our fate",
+        "We were arrested while roaming the streets",
+        "The charges were burglars the theft it was called",
+        "But they said it would place us behind the stone walls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We were marched next morning to the courthouse for trial",
+        "My pal was downhearted so I gave him a smile",
+        "We pleaded for mercy but was shown none at all",
+        "They gave us twenty years behind the stone walls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We were handcuffed next morning and marched to the pen",
+        "We arrived there at midnight with a few other men",
+        "The doors were thrown open we marched in the halls",
+        "Just learn to be a convict behind the stone walls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While lying that night on a pallet of straw",
+        "I swore I would never again break the law",
+        "There\u2019s none but your mother to bear your downfall",
+        "When you are a convict behind the stone walls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come all you young fellows and listen to me",
+        "When you lose life\u2019s pleasures you\u2019ve lost liberty",
+        "I\u2019ve tasted life\u2019s pleasures it\u2019s bitter than gall",
+        "It\u2019ll lead to a cell behind the stone wall"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

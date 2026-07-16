@@ -1,0 +1,49 @@
+{
+  "slug": "cry-from-the-cross",
+  "title": "Cry From The Cross",
+  "source_url": "https://www.bluegrasslyrics.com/song/cry-from-the-cross/",
+  "raw_lyrics": "One morning in Jerusalem about the break of dawn\nA great trial was in session, they tried our blessed lord\nThey scorned him and they mocked him, they made him carry the cross\nOn top of Calvary mountain, they crucified my Lord\n\nOh the cry (Jesus cried) from the cross\nForgive him blessed father, he died upon the cross\nOh the cry (Jesus cried) from the cross\nThe son of God was dying, to save the world from loss\n\nSaint Peter he denied him at that awful trial at night\nHe said he never new him, it was an awful sight\nHe looked upon Saint Peter with eyes of perfect love\nSaint Peter\u2019s heart was broken, he prayed to God above\n\nCrying father it is finished then he bowed his head and died\nThe world was left in darkness, the graves were open wide\nAn earthquake shook Jerusalem the dead walked into town\nThe multitudes were frightened, God\u2019s wrath came pouring down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One morning in Jerusalem about the break of dawn",
+        "A great trial was in session, they tried our blessed lord",
+        "They scorned him and they mocked him, they made him carry the cross",
+        "On top of Calvary mountain, they crucified my Lord"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the cry (Jesus cried) from the cross",
+        "Forgive him blessed father, he died upon the cross",
+        "Oh the cry (Jesus cried) from the cross",
+        "The son of God was dying, to save the world from loss"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Saint Peter he denied him at that awful trial at night",
+        "He said he never new him, it was an awful sight",
+        "He looked upon Saint Peter with eyes of perfect love",
+        "Saint Peter\u2019s heart was broken, he prayed to God above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Crying father it is finished then he bowed his head and died",
+        "The world was left in darkness, the graves were open wide",
+        "An earthquake shook Jerusalem the dead walked into town",
+        "The multitudes were frightened, God\u2019s wrath came pouring down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

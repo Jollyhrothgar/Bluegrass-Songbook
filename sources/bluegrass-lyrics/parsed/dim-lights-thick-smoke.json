@@ -1,0 +1,39 @@
+{
+  "slug": "dim-lights-thick-smoke",
+  "title": "Dim Lights Thick Smoke",
+  "source_url": "https://www.bluegrasslyrics.com/song/dim-lights-thick-smoke/",
+  "raw_lyrics": "Dim lights, thick smoke, and loud, loud music\nIs the only kind of life you\u2019ll ever understand\nDim lights, thick smoke and loud, loud music\nYou\u2019ll never make a wife to a home-loving man\n\nA home and little children mean nothing to you\nA house filled with love and a husband so true\nYou\u2019d rather have a drink with the first guy you meet\nAnd the only home you\u2019ll know is the club down the street\n\nA drinking and dancing  to a honky tonk band\nIs the only kind of life you\u2019ll ever understand\nGo out and have your fun, you think you\u2019ve played it smart\nI\u2019m sorry for you and your honky tonk heart",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Dim lights, thick smoke, and loud, loud music",
+        "Is the only kind of life you\u2019ll ever understand",
+        "Dim lights, thick smoke and loud, loud music",
+        "You\u2019ll never make a wife to a home-loving man"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A home and little children mean nothing to you",
+        "A house filled with love and a husband so true",
+        "You\u2019d rather have a drink with the first guy you meet",
+        "And the only home you\u2019ll know is the club down the street"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A drinking and dancing  to a honky tonk band",
+        "Is the only kind of life you\u2019ll ever understand",
+        "Go out and have your fun, you think you\u2019ve played it smart",
+        "I\u2019m sorry for you and your honky tonk heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

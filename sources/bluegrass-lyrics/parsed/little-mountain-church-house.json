@@ -1,0 +1,49 @@
+{
+  "slug": "little-mountain-church-house",
+  "title": "Little Mountain Church House",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-mountain-church-house/",
+  "raw_lyrics": "There\u2019s a little mountain church in my thoughts of yesterday\nWhere friends and family gathered for the Lord\nThere and old fashioned preacher taught the straight and narrow way\nFor what few coins the congregation could afford\n\nDressed in all out Sunday best we sat on pews of solid oak\nAnd I remember how our voices filled the air\nHow mama sounded like an angel on those high soprano notes\nAnd when the roll is called up yonder I\u2019ll be there.\n\nLooking back now that little mountain church house\nHas become my life\u2019s corner stone\nIt was there in that little mountain church house\nI first heard the word I\u2019ve based my life upon.\n\nAt the all day Sunday singing and dinner on the ground\nMany were the souls that were revived\nWhile my brothers and my sisters who\u2019ve gone on to glory land\nSlept in piece in the maple grove nearby",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a little mountain church in my thoughts of yesterday",
+        "Where friends and family gathered for the Lord",
+        "There and old fashioned preacher taught the straight and narrow way",
+        "For what few coins the congregation could afford"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Dressed in all out Sunday best we sat on pews of solid oak",
+        "And I remember how our voices filled the air",
+        "How mama sounded like an angel on those high soprano notes",
+        "And when the roll is called up yonder I\u2019ll be there."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Looking back now that little mountain church house",
+        "Has become my life\u2019s corner stone",
+        "It was there in that little mountain church house",
+        "I first heard the word I\u2019ve based my life upon."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "At the all day Sunday singing and dinner on the ground",
+        "Many were the souls that were revived",
+        "While my brothers and my sisters who\u2019ve gone on to glory land",
+        "Slept in piece in the maple grove nearby"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

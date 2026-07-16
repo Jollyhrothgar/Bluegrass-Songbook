@@ -1,0 +1,47 @@
+{
+  "slug": "not-a-word-from-home",
+  "title": "Not A Word From Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/not-a-word-from-home/",
+  "raw_lyrics": "No not a word no not a word\nNo not a word from home anyhome\n\nIf only I could hear just one little word\nFrom Mother and Daddy my heart would fill with cheer\nEach day I take a walk I travel down the trail\nEach day the postman tells me no letter in the mail\n\nIf only I could hear one little word from home\nMy heart would be so flattered I never more would roam\nThe days have turned to weeks the weeks have turned to years\nWithout one little word from ones I love so dear\n\nThe last time Mother wrote they were all okay\nBut I\u2019m getting worried they\u2019re getting old and gray\nEach night I say a player and I always say\nI\u2019ll start home tomorrow I can\u2019t live on this way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "No not a word no not a word",
+        "No not a word from home anyhome"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If only I could hear just one little word",
+        "From Mother and Daddy my heart would fill with cheer",
+        "Each day I take a walk I travel down the trail",
+        "Each day the postman tells me no letter in the mail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If only I could hear one little word from home",
+        "My heart would be so flattered I never more would roam",
+        "The days have turned to weeks the weeks have turned to years",
+        "Without one little word from ones I love so dear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The last time Mother wrote they were all okay",
+        "But I\u2019m getting worried they\u2019re getting old and gray",
+        "Each night I say a player and I always say",
+        "I\u2019ll start home tomorrow I can\u2019t live on this way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

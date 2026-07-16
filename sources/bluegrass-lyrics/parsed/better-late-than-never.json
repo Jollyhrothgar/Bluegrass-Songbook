@@ -1,0 +1,49 @@
+{
+  "slug": "better-late-than-never",
+  "title": "Better Late Than Never",
+  "source_url": "https://www.bluegrasslyrics.com/song/better-late-than-never/",
+  "raw_lyrics": "Better late than never\nBetter let you see\nBetter late than never\nDarlin\u2019 wait for me\n\nThe other night I seen my girl\nWe had a date\nSupposed to been there at seven\nShowed up at eight\n\nYonder comes a man into my house\nFor his revenue\nHe said I\u2019ll pay it up my friend\nGive me a day or two\n\nNow if you love your women\nLike I do mine\nGive \u2019em a little lovin\u2019\nJust any time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Better late than never",
+        "Better let you see",
+        "Better late than never",
+        "Darlin\u2019 wait for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The other night I seen my girl",
+        "We had a date",
+        "Supposed to been there at seven",
+        "Showed up at eight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yonder comes a man into my house",
+        "For his revenue",
+        "He said I\u2019ll pay it up my friend",
+        "Give me a day or two"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now if you love your women",
+        "Like I do mine",
+        "Give \u2019em a little lovin\u2019",
+        "Just any time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

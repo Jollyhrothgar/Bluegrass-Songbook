@@ -1,0 +1,39 @@
+{
+  "slug": "youd-better-get-right-little-darling",
+  "title": "You\u2019d Better Get Right Little Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/youd-better-get-right-little-darling/",
+  "raw_lyrics": "You\u2019d better get right little darling\nAnd quit all this running round\nYou\u2019d better get right little darling\nI\u2019m gonna tear your playhouse down\n\nYou told me once there was no other\nBut now you\u2019ve gone far away\nI\u2019ll always think of you my darling\nAnd pray we\u2019ll meet again some day\n\nMany nights I wait for you love\nWhile your painting up the town\nNow if your gonna keep on cheating\nI\u2019m gonna tear your playhouse down",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019d better get right little darling",
+        "And quit all this running round",
+        "You\u2019d better get right little darling",
+        "I\u2019m gonna tear your playhouse down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You told me once there was no other",
+        "But now you\u2019ve gone far away",
+        "I\u2019ll always think of you my darling",
+        "And pray we\u2019ll meet again some day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many nights I wait for you love",
+        "While your painting up the town",
+        "Now if your gonna keep on cheating",
+        "I\u2019m gonna tear your playhouse down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "across-the-sea-blues",
+  "title": "Across the Sea Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/across-the-sea-blues/",
+  "raw_lyrics": "I\u2019m going across the deep blue sea\nIn this country here are we\nI\u2019m all alone so sad and blue\nMy every thought is just of you\n\nIn these long years that I spent here\nI only wish that you were here\nThrough the dizzy fog and a misty rain\nI can see you strolling right down the lane\n\nSomeday darling I will return\nThen our hearts will no longer yearn\nThings will be just like before\nJust you and I forever more\n\nMost every night I see your face\nWith thoughts of you I can\u2019t erase\nIn this land so far apart\nYou\u2019ll always be here in my heart",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m going across the deep blue sea",
+        "In this country here are we",
+        "I\u2019m all alone so sad and blue",
+        "My every thought is just of you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In these long years that I spent here",
+        "I only wish that you were here",
+        "Through the dizzy fog and a misty rain",
+        "I can see you strolling right down the lane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday darling I will return",
+        "Then our hearts will no longer yearn",
+        "Things will be just like before",
+        "Just you and I forever more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Most every night I see your face",
+        "With thoughts of you I can\u2019t erase",
+        "In this land so far apart",
+        "You\u2019ll always be here in my heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

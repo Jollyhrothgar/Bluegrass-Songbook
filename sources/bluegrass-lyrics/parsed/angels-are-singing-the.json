@@ -1,0 +1,49 @@
+{
+  "slug": "angels-are-singing-the",
+  "title": "Angels Are Singing, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/angels-are-singing-the/",
+  "raw_lyrics": "Sweetheart I recall the day I first met you\nI wonder if you remember the same\nWe talked of the love we shared for each other\nAnd longed for the day we\u2019d change your sweet name\n\nOh, I can still hear your voice in the evening\nI see your sweet face your blue eyes so bright\nGod took you away and left me so lonely\nThe angels are singing in heaven tonight\n\nAs the years passed away we cherished each other\nNo worries or cares to darken our day\nFrom our little home up in the Clinch Mountains\nThe savior came down and called you one day\n\nI\u2019ll always be true and love you, my darling\nBut I know you are happy and healthy up there\nWhen God calls me home I\u2019ll meet you in heaven\nPlease wait for me, darling, I\u2019ll meet you up there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sweetheart I recall the day I first met you",
+        "I wonder if you remember the same",
+        "We talked of the love we shared for each other",
+        "And longed for the day we\u2019d change your sweet name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, I can still hear your voice in the evening",
+        "I see your sweet face your blue eyes so bright",
+        "God took you away and left me so lonely",
+        "The angels are singing in heaven tonight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As the years passed away we cherished each other",
+        "No worries or cares to darken our day",
+        "From our little home up in the Clinch Mountains",
+        "The savior came down and called you one day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll always be true and love you, my darling",
+        "But I know you are happy and healthy up there",
+        "When God calls me home I\u2019ll meet you in heaven",
+        "Please wait for me, darling, I\u2019ll meet you up there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

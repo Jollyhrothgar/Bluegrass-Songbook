@@ -1,0 +1,75 @@
+{
+  "slug": "this-train",
+  "title": "This Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/this-train/",
+  "raw_lyrics": "This train is for glory this train\nThis train is bound for glory this train\nThis train is bound for glory\nDon\u2019t ride nothing but the righteous and the holy\nThis train is bound for glory this train\n\nThis train don\u2019t carry no gamblers this train\nThis train don\u2019t carry no gamblers this train\nThis train don\u2019t carry no gamblers\nNo hypocrites no midnight ramblers\nThis train is bound for glory this train\n\nThis train is built for speed now this train\nThis train is built for speed now this train\nThis train is built for speed now\nFastest train you ever did see\nThis train is bound for glory this train\n\nThis train don\u2019t carry no liars this train\nThis train don\u2019t carry no liars this train\nThis train don\u2019t carry no liars\nNo hypocrites and no high flyers\nThis train is bound for glory this train\n\nThis train don\u2019t pay no transportaition this train\nThis train don\u2019t pay no transportaition this train\nThis train don\u2019t pay no transportaition\nNo Jim Crow and no discrimination\nThis train is bound for glory this train\n\nThis train don\u2019t carry no rustlers this train\nThis train don\u2019t carry no rustlers this train\nThis train don\u2019t carry no rustlers\nSidestreet walkers two-bit hustlers\nThis train is bound for glory this train",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "This train is for glory this train",
+        "This train is bound for glory this train",
+        "This train is bound for glory",
+        "Don\u2019t ride nothing but the righteous and the holy",
+        "This train is bound for glory this train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This train don\u2019t carry no gamblers this train",
+        "This train don\u2019t carry no gamblers this train",
+        "This train don\u2019t carry no gamblers",
+        "No hypocrites no midnight ramblers",
+        "This train is bound for glory this train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This train is built for speed now this train",
+        "This train is built for speed now this train",
+        "This train is built for speed now",
+        "Fastest train you ever did see",
+        "This train is bound for glory this train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This train don\u2019t carry no liars this train",
+        "This train don\u2019t carry no liars this train",
+        "This train don\u2019t carry no liars",
+        "No hypocrites and no high flyers",
+        "This train is bound for glory this train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This train don\u2019t pay no transportaition this train",
+        "This train don\u2019t pay no transportaition this train",
+        "This train don\u2019t pay no transportaition",
+        "No Jim Crow and no discrimination",
+        "This train is bound for glory this train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This train don\u2019t carry no rustlers this train",
+        "This train don\u2019t carry no rustlers this train",
+        "This train don\u2019t carry no rustlers",
+        "Sidestreet walkers two-bit hustlers",
+        "This train is bound for glory this train"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

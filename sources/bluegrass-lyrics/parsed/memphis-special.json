@@ -1,0 +1,39 @@
+{
+  "slug": "memphis-special",
+  "title": "Memphis Special",
+  "source_url": "https://www.bluegrasslyrics.com/song/memphis-special/",
+  "raw_lyrics": "I\u2019m riding on that Memphis Special\nI\u2019m riding on that Memphis Train\nI\u2019m on my way to see my darlin\nAnd I won\u2019t ever leave again\n\nThat whistle used to make me lonesome\nBut now it seems to sing a song\nIt\u2019s singin\u2019 \u2019bout my blue eyed darlin\nAnd how she\u2019s waiting for so long\n\nPlease engineer open the throttle\nFireman shovel on the coal\nAnd when that porter hollers Memphis\nHer smiling face I\u2019ll see once more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m riding on that Memphis Special",
+        "I\u2019m riding on that Memphis Train",
+        "I\u2019m on my way to see my darlin",
+        "And I won\u2019t ever leave again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That whistle used to make me lonesome",
+        "But now it seems to sing a song",
+        "It\u2019s singin\u2019 \u2019bout my blue eyed darlin",
+        "And how she\u2019s waiting for so long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please engineer open the throttle",
+        "Fireman shovel on the coal",
+        "And when that porter hollers Memphis",
+        "Her smiling face I\u2019ll see once more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "i-am-going-in-the-morning",
+  "title": "I Am Going in the Morning",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-am-going-in-the-morning/",
+  "raw_lyrics": "I am going in the morning\nAnd in glory I shall dwell\nIn that home that\u2019s free from sadness\nWhere we\u2019ll never say farewell\n\nFriends this day I hope to meet you\nIn that home bye and bye\nThen we\u2019ll live up there forever\nIn that home beyond the sky\n\nIf you live for the Savior\nHe will walk by your side\nAnd you\u2019ll be with him forever\nIn that happy home on high",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I am going in the morning",
+        "And in glory I shall dwell",
+        "In that home that\u2019s free from sadness",
+        "Where we\u2019ll never say farewell"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Friends this day I hope to meet you",
+        "In that home bye and bye",
+        "Then we\u2019ll live up there forever",
+        "In that home beyond the sky"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you live for the Savior",
+        "He will walk by your side",
+        "And you\u2019ll be with him forever",
+        "In that happy home on high"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

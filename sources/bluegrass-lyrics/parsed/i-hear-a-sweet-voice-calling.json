@@ -1,0 +1,59 @@
+{
+  "slug": "i-hear-a-sweet-voice-calling",
+  "title": "I Hear A Sweet Voice Calling",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-hear-a-sweet-voice-calling/",
+  "raw_lyrics": "Our little girl taken sick one evening\nAs she walked home from school\nAnd in her death bed soon lingered\nIt made us so sad and so blue\n\nThen she called me close to her bedside\nAnd whispered these words soft and low\nTell mommy to come to me quickly\nI want to kiss you both then go\n\nI hear a sweet voice calling\nWay up in heaven on high\nGod has made room for you daughter\nOh mommy and daddy don\u2019t cry\n\nTake care of my little brother\nTell him I\u2019ve gone to rest\nI know his little heart is broken\nHe\u2019s all that you have left\n\nThen she closed her eyes forever\nNever to see us no more\nUntil we meet our darling\nOn that bright and peaceful shore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Our little girl taken sick one evening",
+        "As she walked home from school",
+        "And in her death bed soon lingered",
+        "It made us so sad and so blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then she called me close to her bedside",
+        "And whispered these words soft and low",
+        "Tell mommy to come to me quickly",
+        "I want to kiss you both then go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hear a sweet voice calling",
+        "Way up in heaven on high",
+        "God has made room for you daughter",
+        "Oh mommy and daddy don\u2019t cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take care of my little brother",
+        "Tell him I\u2019ve gone to rest",
+        "I know his little heart is broken",
+        "He\u2019s all that you have left"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then she closed her eyes forever",
+        "Never to see us no more",
+        "Until we meet our darling",
+        "On that bright and peaceful shore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

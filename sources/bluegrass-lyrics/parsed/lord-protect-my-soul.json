@@ -1,0 +1,49 @@
+{
+  "slug": "lord-protect-my-soul",
+  "title": "Lord Protect My Soul",
+  "source_url": "https://www.bluegrasslyrics.com/song/lord-protect-my-soul/",
+  "raw_lyrics": "Down life\u2019s highway alone I trod\nI\u2019ve always put my trust in God\nBut you\u2019ll find out that your silver and gold\nWon\u2019t pay the price to protect your soul\n\nOh I want the Lord  to protect my soul\nTo lead me on to heaven\u2019s door\nMy life down here will soon be o\u2019er\nAnd I want the Lord to protect my soul\n\nThere\u2019s many a church down life\u2019s highway\nWhere people sing rejoice and pray\nWhy don\u2019t you stop at one and join the fold\nAnd ask the Lord to protect your soul\n\nWhen this ol\u2019 world is doomed in sin\nYou\u2019ll cry oh Lord please let me\nIt\u2019ll be to late to make your call\nTo ask the lord to protect my soul",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Down life\u2019s highway alone I trod",
+        "I\u2019ve always put my trust in God",
+        "But you\u2019ll find out that your silver and gold",
+        "Won\u2019t pay the price to protect your soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I want the Lord  to protect my soul",
+        "To lead me on to heaven\u2019s door",
+        "My life down here will soon be o\u2019er",
+        "And I want the Lord to protect my soul"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s many a church down life\u2019s highway",
+        "Where people sing rejoice and pray",
+        "Why don\u2019t you stop at one and join the fold",
+        "And ask the Lord to protect your soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When this ol\u2019 world is doomed in sin",
+        "You\u2019ll cry oh Lord please let me",
+        "It\u2019ll be to late to make your call",
+        "To ask the lord to protect my soul"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

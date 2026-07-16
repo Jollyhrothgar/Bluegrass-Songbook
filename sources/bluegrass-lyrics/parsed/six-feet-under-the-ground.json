@@ -1,0 +1,39 @@
+{
+  "slug": "six-feet-under-the-ground",
+  "title": "Six Feet Under The Ground",
+  "source_url": "https://www.bluegrasslyrics.com/song/six-feet-under-the-ground/",
+  "raw_lyrics": "Well they tell me my sweetheart now is leaving\nA new love I know she has found\nTo love you and know I\u2019m gonna lose you\nI\u2019d rather be six feet under the ground\n\nWho will take care of my graveside\nWho\u2019s footsteps will come walking around\nRead my name upon the tombstone\nYou can bet your life my soul is homeward bound\n\nWhen the time has come and you are gone dear\nYou can bet your life I won\u2019t be hangin\u2019 around\nI\u2019d rather be in my dark grave dear\nI\u2019d rather be six feet under the ground",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well they tell me my sweetheart now is leaving",
+        "A new love I know she has found",
+        "To love you and know I\u2019m gonna lose you",
+        "I\u2019d rather be six feet under the ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Who will take care of my graveside",
+        "Who\u2019s footsteps will come walking around",
+        "Read my name upon the tombstone",
+        "You can bet your life my soul is homeward bound"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the time has come and you are gone dear",
+        "You can bet your life I won\u2019t be hangin\u2019 around",
+        "I\u2019d rather be in my dark grave dear",
+        "I\u2019d rather be six feet under the ground"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

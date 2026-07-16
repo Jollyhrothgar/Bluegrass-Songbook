@@ -1,0 +1,49 @@
+{
+  "slug": "wicked-path-of-sin",
+  "title": "Wicked Path Of Sin",
+  "source_url": "https://www.bluegrasslyrics.com/song/wicked-path-of-sin/",
+  "raw_lyrics": "In this awful world of sorrow\nOn this wicked path of sin\nNever thinking of tomorrow\nOr what I\u2019d lose in the end\n\nOh I can hear (oh I can hear) the joy bells ringing\nWhere my friends (where my friends) and loved ones wait\nOh I can hear the angels singing (sweet singing)\nJust inside (just inside) those pearly gates\n\nI can hear my savior calling\nSaying come unto me\nWash away your sins forever\nAnd you shall rest eternally\n\nNow I\u2019m safe with my Jesus\nHe will guide me on my way\nI will sing His praise forever\nWe\u2019ll meet in heaven some sweet day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In this awful world of sorrow",
+        "On this wicked path of sin",
+        "Never thinking of tomorrow",
+        "Or what I\u2019d lose in the end"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I can hear (oh I can hear) the joy bells ringing",
+        "Where my friends (where my friends) and loved ones wait",
+        "Oh I can hear the angels singing (sweet singing)",
+        "Just inside (just inside) those pearly gates"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can hear my savior calling",
+        "Saying come unto me",
+        "Wash away your sins forever",
+        "And you shall rest eternally"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m safe with my Jesus",
+        "He will guide me on my way",
+        "I will sing His praise forever",
+        "We\u2019ll meet in heaven some sweet day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

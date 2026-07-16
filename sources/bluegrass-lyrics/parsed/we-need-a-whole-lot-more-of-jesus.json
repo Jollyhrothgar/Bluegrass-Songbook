@@ -1,0 +1,49 @@
+{
+  "slug": "we-need-a-whole-lot-more-of-jesus",
+  "title": "We Need A Whole Lot More Of Jesus",
+  "source_url": "https://www.bluegrasslyrics.com/song/we-need-a-whole-lot-more-of-jesus/",
+  "raw_lyrics": "You can read it in the morning paper\nHear it on the radio\nHow crime is sweeping the nation\nThis world is about to go\n\nWe need a good old case of salvation\nTo put the love of God in our soul\nWe need a shole lot more of Jesus\nAnd a lot less rock and roll\n\nWe need more old time camp meetings\nAnd a lot more prayers of faith\nPrayers that will move a mountain\nSave our souls from the burning wave\n\nWe need more old fashioned preachers\nPouring out their hearts in prayer\nWhen you\u2019re in their presence\nYou know that the Lord is there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You can read it in the morning paper",
+        "Hear it on the radio",
+        "How crime is sweeping the nation",
+        "This world is about to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We need a good old case of salvation",
+        "To put the love of God in our soul",
+        "We need a shole lot more of Jesus",
+        "And a lot less rock and roll"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We need more old time camp meetings",
+        "And a lot more prayers of faith",
+        "Prayers that will move a mountain",
+        "Save our souls from the burning wave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We need more old fashioned preachers",
+        "Pouring out their hearts in prayer",
+        "When you\u2019re in their presence",
+        "You know that the Lord is there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

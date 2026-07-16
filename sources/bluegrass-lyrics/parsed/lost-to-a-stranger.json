@@ -1,0 +1,39 @@
+{
+  "slug": "lost-to-a-stranger",
+  "title": "Lost To A Stranger",
+  "source_url": "https://www.bluegrasslyrics.com/song/lost-to-a-stranger/",
+  "raw_lyrics": "We went out one evening my darling and I\nShe seemed so different and I wondered why\nWe stopped at a tavern and there I could see\nThat she loved another one better than me\n\nWhile they dancing and I sat alone\nI knew I had lost her the one I loved\nLost to a stranger I never had seen\nThe waltz they were playing had ended my dream\n\nThe band was playing an old fashioned waltz\nThe dance floor was crowded and it wasn\u2019t long\nWhen up stepped a stranger I never had seen\nHe asked my darling will you dance with me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We went out one evening my darling and I",
+        "She seemed so different and I wondered why",
+        "We stopped at a tavern and there I could see",
+        "That she loved another one better than me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "While they dancing and I sat alone",
+        "I knew I had lost her the one I loved",
+        "Lost to a stranger I never had seen",
+        "The waltz they were playing had ended my dream"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The band was playing an old fashioned waltz",
+        "The dance floor was crowded and it wasn\u2019t long",
+        "When up stepped a stranger I never had seen",
+        "He asked my darling will you dance with me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

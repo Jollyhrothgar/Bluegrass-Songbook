@@ -1,0 +1,49 @@
+{
+  "slug": "i-loved-this-better-than-you-knew",
+  "title": "I Loved This Better Than You Knew",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-loved-this-better-than-you-knew/",
+  "raw_lyrics": "Our hands are clasped while as forever\nPerhaps we\u2019ll never meet again\nI loved you as I loved no other\nThis parting fills my heart with pain\n\nAs through this weary world I wander\nMy thoughts alone will be of you\nIn memory I will see you ever\nI loved you better than you knew\n\nYou asked and freely I\u2019ll forgive you\nThe happy past I must forget\nAnd while I wander lone in silence\nI hope that you\u2019ll be happy yet\n\nPerhaps when I am gone forever\nYou\u2019ll sometimes sit and think of me\nAnd wonder if I\u2019m dead or living\nPerhaps I\u2019ll think the same of you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Our hands are clasped while as forever",
+        "Perhaps we\u2019ll never meet again",
+        "I loved you as I loved no other",
+        "This parting fills my heart with pain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "As through this weary world I wander",
+        "My thoughts alone will be of you",
+        "In memory I will see you ever",
+        "I loved you better than you knew"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You asked and freely I\u2019ll forgive you",
+        "The happy past I must forget",
+        "And while I wander lone in silence",
+        "I hope that you\u2019ll be happy yet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Perhaps when I am gone forever",
+        "You\u2019ll sometimes sit and think of me",
+        "And wonder if I\u2019m dead or living",
+        "Perhaps I\u2019ll think the same of you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

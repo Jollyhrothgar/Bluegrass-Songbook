@@ -1,0 +1,59 @@
+{
+  "slug": "shes-my-curly-headed-baby",
+  "title": "She\u2019s My Curly Headed Baby",
+  "source_url": "https://www.bluegrasslyrics.com/song/shes-my-curly-headed-baby/",
+  "raw_lyrics": "She\u2019s my curly headed baby\nUsed to sit on Momma\u2019s knee\nShe\u2019s my curly headed baby\nShe\u2019s from sunny Tennessee\n\nI have loved her since I met her\nMore than any tongue can tell\nIf she ever proves false hearted\nI can never say farewell\n\nI am funny about the women\nFor I\u2019ll tell you what they\u2019ll do\nThey\u2019ll be crying over your shoulder\nAnd flirtin\u2019 with another too\n\nShe\u2019s my curly headed baby\nI don\u2019t care what people say\nIf she leaves me for another\nThat will be her burying day\n\nI\u2019d rather be in some dark hollow\nWhere the sun don\u2019t never shine\nThan for her to be some others darlin\u2019\nWhen she promised to be mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s my curly headed baby",
+        "Used to sit on Momma\u2019s knee",
+        "She\u2019s my curly headed baby",
+        "She\u2019s from sunny Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have loved her since I met her",
+        "More than any tongue can tell",
+        "If she ever proves false hearted",
+        "I can never say farewell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I am funny about the women",
+        "For I\u2019ll tell you what they\u2019ll do",
+        "They\u2019ll be crying over your shoulder",
+        "And flirtin\u2019 with another too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s my curly headed baby",
+        "I don\u2019t care what people say",
+        "If she leaves me for another",
+        "That will be her burying day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d rather be in some dark hollow",
+        "Where the sun don\u2019t never shine",
+        "Than for her to be some others darlin\u2019",
+        "When she promised to be mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

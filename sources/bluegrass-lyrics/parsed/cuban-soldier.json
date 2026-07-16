@@ -1,0 +1,51 @@
+{
+  "slug": "cuban-soldier",
+  "title": "Cuban Soldier",
+  "source_url": "https://www.bluegrasslyrics.com/song/cuban-soldier/",
+  "raw_lyrics": "Far away in a Spanish dungeon\nA Cuban soldier lay\nSlowly dying from the torture\nInflicted day by day\nHe begged to send a message\nBut this kindness was denied\nSo he called his comrades to him\nAnd told his story ere he died\n\nWhen Cubie gains her freedom\nAnd the Spaniards cease to reign\nThere\u2019s a loved one on that island\nI will never see again\nOh  find her for me comrades\nAnd tell her you were by my side\nAnd I bid you take this message\nTo a soldiers promised bride\n\nTis the same old story comrades\nLove weeps when beauty is done\nWhen Cubie was struggling for her freedom\nI was ordered to my gun\nThough I\u2019m a captain dying\nThe struggle will soon be o\u2019er\nTell her I said to meet me\nWhere the soldiers fight no more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Far away in a Spanish dungeon",
+        "A Cuban soldier lay",
+        "Slowly dying from the torture",
+        "Inflicted day by day",
+        "He begged to send a message",
+        "But this kindness was denied",
+        "So he called his comrades to him",
+        "And told his story ere he died"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When Cubie gains her freedom",
+        "And the Spaniards cease to reign",
+        "There\u2019s a loved one on that island",
+        "I will never see again",
+        "Oh  find her for me comrades",
+        "And tell her you were by my side",
+        "And I bid you take this message",
+        "To a soldiers promised bride"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tis the same old story comrades",
+        "Love weeps when beauty is done",
+        "When Cubie was struggling for her freedom",
+        "I was ordered to my gun",
+        "Though I\u2019m a captain dying",
+        "The struggle will soon be o\u2019er",
+        "Tell her I said to meet me",
+        "Where the soldiers fight no more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

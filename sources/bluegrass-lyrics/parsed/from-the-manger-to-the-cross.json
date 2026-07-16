@@ -1,0 +1,59 @@
+{
+  "slug": "from-the-manger-to-the-cross",
+  "title": "From The Manger To The Cross",
+  "source_url": "https://www.bluegrasslyrics.com/song/from-the-manger-to-the-cross/",
+  "raw_lyrics": "The story\u2019s in the Bible it\u2019s a message sad but true\nThe life our Saviour lived on earth is told\nFound upon the pages of the Master\u2019s book of truth\nEvery word so precious to my soul\n\nFrom the manger to the cross rugged cross of Calvary\nThe road that Jesus walked for you and me all alone\nBy the world forsaken still He shed His blood for me\nFrom the manger to the cross the rugged cross of Calvary\n\nAmidst the stranger\u2019ss cattle where the birth of Jesus came\nThe lonely manger kept Him from the cold\nAnd there was the beginning of the journey Jesus made\nToday it is the greatest story told\n\nMany wonders were revealed while here on earth He dwelled\nHe healed the sick and made the blind to see\nFive thousand were the numbers of the hungry who did feast\nHe blessed and multiplied the bread and meat\n\nNo earthly treasures did He own He sought no wealth or fame\nWeary was the path He had to trod\nHere He suffered many things for this world knew Him not\nHe died upon the cross the Son of God",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The story\u2019s in the Bible it\u2019s a message sad but true",
+        "The life our Saviour lived on earth is told",
+        "Found upon the pages of the Master\u2019s book of truth",
+        "Every word so precious to my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "From the manger to the cross rugged cross of Calvary",
+        "The road that Jesus walked for you and me all alone",
+        "By the world forsaken still He shed His blood for me",
+        "From the manger to the cross the rugged cross of Calvary"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Amidst the stranger\u2019ss cattle where the birth of Jesus came",
+        "The lonely manger kept Him from the cold",
+        "And there was the beginning of the journey Jesus made",
+        "Today it is the greatest story told"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many wonders were revealed while here on earth He dwelled",
+        "He healed the sick and made the blind to see",
+        "Five thousand were the numbers of the hungry who did feast",
+        "He blessed and multiplied the bread and meat"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No earthly treasures did He own He sought no wealth or fame",
+        "Weary was the path He had to trod",
+        "Here He suffered many things for this world knew Him not",
+        "He died upon the cross the Son of God"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

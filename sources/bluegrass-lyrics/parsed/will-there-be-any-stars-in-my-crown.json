@@ -1,0 +1,49 @@
+{
+  "slug": "will-there-be-any-stars-in-my-crown",
+  "title": "Will There Be Any Stars In My Crown",
+  "source_url": "https://www.bluegrasslyrics.com/song/will-there-be-any-stars-in-my-crown/",
+  "raw_lyrics": "I am thinking today of that beautiful land\nI shall reach when the sun goeth down\nWhen through wonderful grace by my Savior I stand\nWill there be any stars in my crown\n\nWill there be any stars, any stars in my crown\nWhen at evening the sun goeth down\nWhen I wake with the blest in those mansions of rest\nWill there be any stars in my crown\n\nIn the strength of the Lord let me labor and pray\nLet me watch as a winner of souls\nThat bright stars may be mine in the glorious day\nWhen His praise like the sea billow rolls\n\nO what joy it will be when His face I behold\nLiving gems at His feet to lay down\nIt would sweeten my bliss in the city of gold\nShould there be any stars in my crown",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am thinking today of that beautiful land",
+        "I shall reach when the sun goeth down",
+        "When through wonderful grace by my Savior I stand",
+        "Will there be any stars in my crown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Will there be any stars, any stars in my crown",
+        "When at evening the sun goeth down",
+        "When I wake with the blest in those mansions of rest",
+        "Will there be any stars in my crown"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the strength of the Lord let me labor and pray",
+        "Let me watch as a winner of souls",
+        "That bright stars may be mine in the glorious day",
+        "When His praise like the sea billow rolls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "O what joy it will be when His face I behold",
+        "Living gems at His feet to lay down",
+        "It would sweeten my bliss in the city of gold",
+        "Should there be any stars in my crown"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

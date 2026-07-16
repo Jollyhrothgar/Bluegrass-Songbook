@@ -1,0 +1,79 @@
+{
+  "slug": "tom-dooley",
+  "title": "Tom Dooley",
+  "source_url": "https://www.bluegrasslyrics.com/song/tom-dooley/",
+  "raw_lyrics": "Hang down your head Tom Dooley\nHang down your head and cry\nKilled poor Laura Foster\nYou know you\u2019re bound to die\n\nYou took her on the hillside\nAs God almighty knows\nYou took her on the hillside\nAnd there you hid her clothes\n\nYou took her by the roadside\nWhere you begged to be excused\nYou took her by the roadside\nWhere there you hid her shoes\n\nYou took her on the hillside\nTo make her your wife\nYou took her on the hillside\nWhere there you took her life\n\nTake down my old violin\nAnd play it all you please\nAt this time tomorrow\nIt\u2019ll be no use to me\n\nI dug a grave four feet long\nI dug it three feet deep\nAnd throwed the cold clay o\u2019er her\nAnd tramped it with my feet\n\nThis world and one more than\nWhere do you reckon I\u2019d be\nIf it hadn\u2019t been for Grayson\nI\u2019d a been in Tennessee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Hang down your head Tom Dooley",
+        "Hang down your head and cry",
+        "Killed poor Laura Foster",
+        "You know you\u2019re bound to die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You took her on the hillside",
+        "As God almighty knows",
+        "You took her on the hillside",
+        "And there you hid her clothes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You took her by the roadside",
+        "Where you begged to be excused",
+        "You took her by the roadside",
+        "Where there you hid her shoes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You took her on the hillside",
+        "To make her your wife",
+        "You took her on the hillside",
+        "Where there you took her life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take down my old violin",
+        "And play it all you please",
+        "At this time tomorrow",
+        "It\u2019ll be no use to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I dug a grave four feet long",
+        "I dug it three feet deep",
+        "And throwed the cold clay o\u2019er her",
+        "And tramped it with my feet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This world and one more than",
+        "Where do you reckon I\u2019d be",
+        "If it hadn\u2019t been for Grayson",
+        "I\u2019d a been in Tennessee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "hard-aint-it-hard",
+  "title": "Hard Ain\u2019t It Hard",
+  "source_url": "https://www.bluegrasslyrics.com/song/hard-aint-it-hard/",
+  "raw_lyrics": "First time I seen my true love\nHe was walkin\u2019 by my door\nThe last time I saw his false hearted smile\nDead on his coolin\u2019 board\n\nIt\u2019s hard and it\u2019s hard ain\u2019t it hard\nTo love one that never did love you\nHard and it\u2019s hard ain\u2019t it hard great God\nTo love one that never will be true\n\nThere is a house in this old town\nThat\u2019s where my true love lays around\nTakes other women right down on his knee\nTells them a tale that he won\u2019t tell me\n\nDon\u2019t go to drinkin\u2019 and to gambling\nDon\u2019t go there your sorrows to down\nThis hard-liquor place is a low-down disgrace\nThe meanest damn place in this town",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "First time I seen my true love",
+        "He was walkin\u2019 by my door",
+        "The last time I saw his false hearted smile",
+        "Dead on his coolin\u2019 board"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s hard and it\u2019s hard ain\u2019t it hard",
+        "To love one that never did love you",
+        "Hard and it\u2019s hard ain\u2019t it hard great God",
+        "To love one that never will be true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is a house in this old town",
+        "That\u2019s where my true love lays around",
+        "Takes other women right down on his knee",
+        "Tells them a tale that he won\u2019t tell me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t go to drinkin\u2019 and to gambling",
+        "Don\u2019t go there your sorrows to down",
+        "This hard-liquor place is a low-down disgrace",
+        "The meanest damn place in this town"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: mid-the-green-fields-of-virginia
+title: Mid The Green Fields Of Virginia
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/mid-the-green-fields-of-virginia/
+      imported_at: '2026-02-08'

@@ -1,0 +1,29 @@
+{
+  "slug": "bluegrass-express",
+  "title": "Bluegrass Express",
+  "source_url": "https://www.bluegrasslyrics.com/song/bluegrass-express/",
+  "raw_lyrics": "Riding  the bluegrass express\nRiding the bluegrass express\nThis train will soon be gone\nAnd I\u2019m going home on the bluegrass express\n\nShe\u2019ll cross the river at Newport town\nLouisville Lexington she\u2019s southbound\nRichmond Winchester Bowling Green\nPrettiest place I\u2019ve ever seen",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Riding  the bluegrass express",
+        "Riding the bluegrass express",
+        "This train will soon be gone",
+        "And I\u2019m going home on the bluegrass express"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019ll cross the river at Newport town",
+        "Louisville Lexington she\u2019s southbound",
+        "Richmond Winchester Bowling Green",
+        "Prettiest place I\u2019ve ever seen"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: take-my-ring-from-your-finger
+title: Take My Ring From Your Finger
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/take-my-ring-from-your-finger/
+      imported_at: '2026-02-08'

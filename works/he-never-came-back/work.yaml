@@ -1,0 +1,11 @@
+id: he-never-came-back
+title: He Never Came Back
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/he-never-came-back/
+      imported_at: '2026-02-08'

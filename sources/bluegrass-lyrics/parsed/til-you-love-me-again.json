@@ -1,0 +1,50 @@
+{
+  "slug": "til-you-love-me-again",
+  "title": "Til You Love Me Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/til-you-love-me-again/",
+  "raw_lyrics": "Til you love me again til you learn what you\u2019re missing\nI\u2019m not waiting in line but I\u2019m saving my kissin\u2019\nI\u2019m just letting you know I don\u2019t want to let go\nMy hearts set on one thing til you love me again\n\nDays don\u2019t go by I don\u2019t think of\nWords of love you used to say\nYou lit a fire that won\u2019t but out\nThere in your promise I\u2019ll stay\n\nTil you love again I won\u2019t say that it\u2019s over\nYou can know other girls\nbut it won\u2019t bring you closer\nTo the place that you\u2019ve been & you won\u2019t find another\nMy hearts set on one thing til you love me again\n\nI was a fool & I fell in\nNow I must wait patiently\nYou\u2019ll find each road that you\u2019re taking\nIs going to lead back to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Til you love me again til you learn what you\u2019re missing",
+        "I\u2019m not waiting in line but I\u2019m saving my kissin\u2019",
+        "I\u2019m just letting you know I don\u2019t want to let go",
+        "My hearts set on one thing til you love me again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Days don\u2019t go by I don\u2019t think of",
+        "Words of love you used to say",
+        "You lit a fire that won\u2019t but out",
+        "There in your promise I\u2019ll stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Til you love again I won\u2019t say that it\u2019s over",
+        "You can know other girls",
+        "but it won\u2019t bring you closer",
+        "To the place that you\u2019ve been & you won\u2019t find another",
+        "My hearts set on one thing til you love me again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was a fool & I fell in",
+        "Now I must wait patiently",
+        "You\u2019ll find each road that you\u2019re taking",
+        "Is going to lead back to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

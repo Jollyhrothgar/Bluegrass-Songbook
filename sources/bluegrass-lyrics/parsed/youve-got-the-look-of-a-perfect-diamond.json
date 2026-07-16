@@ -1,0 +1,49 @@
+{
+  "slug": "youve-got-the-look-of-a-perfect-diamond",
+  "title": "You\u2019ve Got The Look Of A Perfect Diamond",
+  "source_url": "https://www.bluegrasslyrics.com/song/youve-got-the-look-of-a-perfect-diamond/",
+  "raw_lyrics": "Lord why did I have to see you\nI should have looked the other way\nI thought that I could love and leave you\nI should\u2019ve known I\u2019d have to pay\n\nYou\u2019ve Got the Look of a Perfect Diamond\nAnd your heart is hard as stone\nYou think of love as just a playhouse\nA place to play then move on\n\nBefore I met you life was easy\nNothin\u2019 was standin\u2019 in my way\nWhy can\u2019t I block you from my memory\nErase your image now today\n\nEach day is misery and confusion\nLooks like troubles here to stay\nOh I bet it\u2019s not the first time\nThat you\u2019ve tortured hearts this way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lord why did I have to see you",
+        "I should have looked the other way",
+        "I thought that I could love and leave you",
+        "I should\u2019ve known I\u2019d have to pay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019ve Got the Look of a Perfect Diamond",
+        "And your heart is hard as stone",
+        "You think of love as just a playhouse",
+        "A place to play then move on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Before I met you life was easy",
+        "Nothin\u2019 was standin\u2019 in my way",
+        "Why can\u2019t I block you from my memory",
+        "Erase your image now today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each day is misery and confusion",
+        "Looks like troubles here to stay",
+        "Oh I bet it\u2019s not the first time",
+        "That you\u2019ve tortured hearts this way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

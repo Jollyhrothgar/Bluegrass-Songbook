@@ -1,0 +1,72 @@
+{
+  "slug": "eighteen-wheels",
+  "title": "Eighteen Wheels",
+  "source_url": "https://www.bluegrasslyrics.com/song/eighteen-wheels/",
+  "raw_lyrics": "I can\u2019t believe you told me you don\u2019t love me anymore\n\u2018Cause I stayed out on the road too much to care\nBut ain\u2019t I gotta make a living and it\u2019s the only thing I know\nTo feed the kids and buy the clothes you wear\n\nBut if you think you\u2019d be better off with someone else beside you\nPack your things and get on out the door\nWhen I service up my rig and I\u2019ll find out where I\u2019m going\nI don\u2019t think I want to see you anymore\n\nWhen I put eighteen wheels on the highway\nAnd the freight yard fades out of sight\nI put you farther from my mind with each grindin\u2019 of the gears\nI\u2019ll be holdin\u2019 someone else tomorrow night\n\nThere\u2019s a pretty girl waitin\u2019 down in Monroe\nWho\u2019ll meet me at the docks when I get in\nWhen I\u2019ll put eighteen wheels on the highway this time\nI ain\u2019t never coming back to you again.\n\nAll I ever wanted when I come in off the road\nWas a few kind words to make me feel at home\nAnd a hug from all the children wife beside the door\nTo let me know they missed me while I\u2019s gone.\n\nBut you never once was with me\nand I\u2019ve known for oh so long\nIt\u2019s a different road we\u2019re travelin\u2019\nyou and I\nDon\u2019t you try to fool me with your tears\ncryin\u2019 don\u2019t become you\nThere ain\u2019t nothin\u2019 you can do but say good-bye",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t believe you told me you don\u2019t love me anymore",
+        "\u2018Cause I stayed out on the road too much to care",
+        "But ain\u2019t I gotta make a living and it\u2019s the only thing I know",
+        "To feed the kids and buy the clothes you wear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But if you think you\u2019d be better off with someone else beside you",
+        "Pack your things and get on out the door",
+        "When I service up my rig and I\u2019ll find out where I\u2019m going",
+        "I don\u2019t think I want to see you anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I put eighteen wheels on the highway",
+        "And the freight yard fades out of sight",
+        "I put you farther from my mind with each grindin\u2019 of the gears",
+        "I\u2019ll be holdin\u2019 someone else tomorrow night"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a pretty girl waitin\u2019 down in Monroe",
+        "Who\u2019ll meet me at the docks when I get in",
+        "When I\u2019ll put eighteen wheels on the highway this time",
+        "I ain\u2019t never coming back to you again."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All I ever wanted when I come in off the road",
+        "Was a few kind words to make me feel at home",
+        "And a hug from all the children wife beside the door",
+        "To let me know they missed me while I\u2019s gone."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But you never once was with me",
+        "and I\u2019ve known for oh so long",
+        "It\u2019s a different road we\u2019re travelin\u2019",
+        "you and I",
+        "Don\u2019t you try to fool me with your tears",
+        "cryin\u2019 don\u2019t become you",
+        "There ain\u2019t nothin\u2019 you can do but say good-bye"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

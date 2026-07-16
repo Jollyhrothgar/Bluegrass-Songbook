@@ -1,0 +1,43 @@
+{
+  "slug": "distant-land-to-roam",
+  "title": "Distant Land To Roam",
+  "source_url": "https://www.bluegrasslyrics.com/song/distant-land-to-roam/",
+  "raw_lyrics": "I remember very well on one dark and dreary day\nJust as I was leaving home for a distant land to roam\n\nMother said (mother said) my dear boy (my dear boy)\nI hope to see you next year again\nFare you well (fare you well) fare you well (fare you well)\nSo I left my dear old home for a distant land to roam\n\nNow I wandered far away from my home I\u2019ve gone astray\nNow I\u2019m coming coming home never more from thee to roam\n\nAnd these words she said to me as she took me by the hand\nIf on earth we meet no more may we meet at God\u2019s right hand",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I remember very well on one dark and dreary day",
+        "Just as I was leaving home for a distant land to roam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Mother said (mother said) my dear boy (my dear boy)",
+        "I hope to see you next year again",
+        "Fare you well (fare you well) fare you well (fare you well)",
+        "So I left my dear old home for a distant land to roam"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I wandered far away from my home I\u2019ve gone astray",
+        "Now I\u2019m coming coming home never more from thee to roam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And these words she said to me as she took me by the hand",
+        "If on earth we meet no more may we meet at God\u2019s right hand"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

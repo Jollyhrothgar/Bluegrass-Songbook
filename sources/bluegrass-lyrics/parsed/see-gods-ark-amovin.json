@@ -1,0 +1,47 @@
+{
+  "slug": "see-gods-ark-amovin",
+  "title": "See God\u2019s Ark A\u2019movin\u2019",
+  "source_url": "https://www.bluegrasslyrics.com/song/see-gods-ark-amovin/",
+  "raw_lyrics": "See God\u2019s ark a-movin\u2019 see God\u2019s ark a-movin\u2019\nPicks me up on my lonely days and carries me through tomorrow\n\nThe rain came up hard you know\nAnd the wind began to blow\nAnd I lifted my voice up into the sky\nCrying mercy to my soul.\n\nGod must have felt my faith\nHe held me until it was safe\nAnd I never again drew a doubting breath\nAs he delivered me from my death.\n\nIf you can\u2019t resist temptation\nIf you just can\u2019t put it down\nWhen the ark sets sail on the rolling sea\nYou\u2019re gonna follow the boat and drown.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "See God\u2019s ark a-movin\u2019 see God\u2019s ark a-movin\u2019",
+        "Picks me up on my lonely days and carries me through tomorrow"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The rain came up hard you know",
+        "And the wind began to blow",
+        "And I lifted my voice up into the sky",
+        "Crying mercy to my soul."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God must have felt my faith",
+        "He held me until it was safe",
+        "And I never again drew a doubting breath",
+        "As he delivered me from my death."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you can\u2019t resist temptation",
+        "If you just can\u2019t put it down",
+        "When the ark sets sail on the rolling sea",
+        "You\u2019re gonna follow the boat and drown."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

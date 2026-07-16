@@ -1,0 +1,29 @@
+{
+  "slug": "someones-last-day",
+  "title": "Someone\u2019s Last Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/someones-last-day/",
+  "raw_lyrics": "Someone yes someone\u2019s last day\nSome soul is drifting away\nTheir life is over on earth no more\nFor today is someone yes someone\u2019s last day\n\nThis morning I gazed through the window so clear\nI couldn\u2019t help but shed, just one little tear\nI knew that someone was drifting away\nAnd I knew that today was someone\u2019s last day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Someone yes someone\u2019s last day",
+        "Some soul is drifting away",
+        "Their life is over on earth no more",
+        "For today is someone yes someone\u2019s last day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This morning I gazed through the window so clear",
+        "I couldn\u2019t help but shed, just one little tear",
+        "I knew that someone was drifting away",
+        "And I knew that today was someone\u2019s last day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "litttle-community-church-house",
+  "title": "Litttle Community Church House",
+  "source_url": "https://www.bluegrasslyrics.com/song/litttle-community-church-house/",
+  "raw_lyrics": "I was lost in sin so long with no one to guide my way\nMy soul was in darkness had been for many a day\nIn that little community church house I heard that gospel song\nI went inside  to kneel and pray\n\nOh I kneeled down and prayed to my Savior\nThat He might hear and would accept me\nAnd then I felt the holy spirit\nI knew my soul was saved in me\n\nIn that little community church house that\u2019s where we sang and prayed\nWe prayed to our Father to guide us on our way\nAll through life\u2019s long journey we\u2019ll need His helping hand\nUntil we reach that promised land\n\nIn that little community church house among my many friends\nI can hear them praying for me and the preacher said amen\nAnd the vision there  before me it was my Savior\u2019s face\nI knew that I was saved by grace",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was lost in sin so long with no one to guide my way",
+        "My soul was in darkness had been for many a day",
+        "In that little community church house I heard that gospel song",
+        "I went inside  to kneel and pray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I kneeled down and prayed to my Savior",
+        "That He might hear and would accept me",
+        "And then I felt the holy spirit",
+        "I knew my soul was saved in me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In that little community church house that\u2019s where we sang and prayed",
+        "We prayed to our Father to guide us on our way",
+        "All through life\u2019s long journey we\u2019ll need His helping hand",
+        "Until we reach that promised land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In that little community church house among my many friends",
+        "I can hear them praying for me and the preacher said amen",
+        "And the vision there  before me it was my Savior\u2019s face",
+        "I knew that I was saved by grace"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

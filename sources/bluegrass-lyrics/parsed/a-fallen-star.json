@@ -1,0 +1,39 @@
+{
+  "slug": "a-fallen-star",
+  "title": "A Fallen Star",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-fallen-star/",
+  "raw_lyrics": "A star fell from heaven right into my arms\nA brighter star I know I\u2019ve never seen\nThen I found out that it was only you with all your charms\nWho came into my life to fill a dream\n\nA fallen star is what you are\nThe twinkle in your eyes came from the sky\nyou must have strayed from the milky way\nA fallen star that\u2019s what you are\n\nThe heavens must be lonely now that you are mine\nI\u2019m sure they\u2019ll miss a star as bright as you\nBut the stars will send there blessing and brighter they will shine\nWhen they see the dream that\u2019s comin\u2019 true",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A star fell from heaven right into my arms",
+        "A brighter star I know I\u2019ve never seen",
+        "Then I found out that it was only you with all your charms",
+        "Who came into my life to fill a dream"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "A fallen star is what you are",
+        "The twinkle in your eyes came from the sky",
+        "you must have strayed from the milky way",
+        "A fallen star that\u2019s what you are"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The heavens must be lonely now that you are mine",
+        "I\u2019m sure they\u2019ll miss a star as bright as you",
+        "But the stars will send there blessing and brighter they will shine",
+        "When they see the dream that\u2019s comin\u2019 true"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

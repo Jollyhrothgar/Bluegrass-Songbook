@@ -1,0 +1,42 @@
+{
+  "slug": "as-long-as-i-live",
+  "title": "As Long As I Live",
+  "source_url": "https://www.bluegrasslyrics.com/song/as-long-as-i-live/",
+  "raw_lyrics": "As long as I live ( As long as I live )\nIf it be one hour ( If it be one hour )\nOr if it be ( or if it be ) one hundred years\nI\u2019ll keep remembering ( I\u2019ll keep remembering )\nFor ever and ever ( For ever and ever )\nI love you dear ( I love you dear )\nAs long as I live\n\nIt\u2019s over you said that night you left me\nThat we\u2019d forget that we\u2019d ever met\nI haven\u2019t forgotten I wonder if you have\nOr is your heart to full of regret\n\nI never thought that night you left me\nThat life alone could be so sad\nIt may sound funny but I\u2019ll never forget you\nYou\u2019re the only joy that I ever had",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "As long as I live ( As long as I live )",
+        "If it be one hour ( If it be one hour )",
+        "Or if it be ( or if it be ) one hundred years",
+        "I\u2019ll keep remembering ( I\u2019ll keep remembering )",
+        "For ever and ever ( For ever and ever )",
+        "I love you dear ( I love you dear )",
+        "As long as I live"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s over you said that night you left me",
+        "That we\u2019d forget that we\u2019d ever met",
+        "I haven\u2019t forgotten I wonder if you have",
+        "Or is your heart to full of regret"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never thought that night you left me",
+        "That life alone could be so sad",
+        "It may sound funny but I\u2019ll never forget you",
+        "You\u2019re the only joy that I ever had"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

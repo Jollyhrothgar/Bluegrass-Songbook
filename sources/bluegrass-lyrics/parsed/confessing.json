@@ -1,0 +1,39 @@
+{
+  "slug": "confessing",
+  "title": "Confessing",
+  "source_url": "https://www.bluegrasslyrics.com/song/confessing/",
+  "raw_lyrics": "I know that I hurt you and I\u2019m confessing\nSince you\u2019ve been gone I\u2019m feeling mighty low\nPlease let me hear from you don\u2019t keep me guessing\nI need you more than you could ever know\n\nNow I\u2019m to blame I treated you unkind\nI broke your heart and now you\u2019re breaking mine\nI know I done you wrong and I\u2019m confessing\nPlease take me back and try me one more time\n\nHow could I ever think I\u2019ll love another\nThe way I treated you it was a crime\nYou are the only one I love no other\nPlease take me back and try me one more time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I know that I hurt you and I\u2019m confessing",
+        "Since you\u2019ve been gone I\u2019m feeling mighty low",
+        "Please let me hear from you don\u2019t keep me guessing",
+        "I need you more than you could ever know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m to blame I treated you unkind",
+        "I broke your heart and now you\u2019re breaking mine",
+        "I know I done you wrong and I\u2019m confessing",
+        "Please take me back and try me one more time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How could I ever think I\u2019ll love another",
+        "The way I treated you it was a crime",
+        "You are the only one I love no other",
+        "Please take me back and try me one more time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "just-one-teardrop",
+  "title": "Just One Teardrop",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-one-teardrop/",
+  "raw_lyrics": "I saw you last night through the tears in my eyes\nThe dance floor was crowded and I realized\nThe thoughts you were having as you danced by my way\nWhile I was one teardrop and one step away\n\nJust one teardrop and one step away\nMy heart will be broken til my dyin day\nYour eyes told the story of the price I must pay\nWhile I was one teardrop and one step away\n\nI know I will miss you and my heart will never mend\nIf we can\u2019t live together at least lets part as friends\nI know I will miss you every single day\nWhile I was one teardrop and one step away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I saw you last night through the tears in my eyes",
+        "The dance floor was crowded and I realized",
+        "The thoughts you were having as you danced by my way",
+        "While I was one teardrop and one step away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Just one teardrop and one step away",
+        "My heart will be broken til my dyin day",
+        "Your eyes told the story of the price I must pay",
+        "While I was one teardrop and one step away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know I will miss you and my heart will never mend",
+        "If we can\u2019t live together at least lets part as friends",
+        "I know I will miss you every single day",
+        "While I was one teardrop and one step away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

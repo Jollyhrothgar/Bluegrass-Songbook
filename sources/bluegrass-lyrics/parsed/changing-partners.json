@@ -1,0 +1,29 @@
+{
+  "slug": "changing-partners",
+  "title": "Changing Partners",
+  "source_url": "https://www.bluegrasslyrics.com/song/changing-partners/",
+  "raw_lyrics": "We were waltzing together to a dreamy melody\nWhen they called out change partners and you waltzed away from me\nNow my arms feel so empty as I gaze upon the floor\nAnd I\u2019ll keep on changing partners \u2019til I hold you once more\n\nThough we danced for one moment and too soon we had to part\nIn that wonderful moment something happened to my heart\nSo I\u2019ll keep changing partners \u2019til you\u2019re in my arms and then\nOh my darlin\u2019 I will never change partners again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We were waltzing together to a dreamy melody",
+        "When they called out change partners and you waltzed away from me",
+        "Now my arms feel so empty as I gaze upon the floor",
+        "And I\u2019ll keep on changing partners \u2019til I hold you once more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though we danced for one moment and too soon we had to part",
+        "In that wonderful moment something happened to my heart",
+        "So I\u2019ll keep changing partners \u2019til you\u2019re in my arms and then",
+        "Oh my darlin\u2019 I will never change partners again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "twenty-twenty-vision-2",
+  "title": "Twenty Twenty Vision",
+  "source_url": "https://www.bluegrasslyrics.com/song/twenty-twenty-vision-2/",
+  "raw_lyrics": "I\u2019ve been to the doctor, he says I\u2019m alright\nI know he is lying, I\u2019m losing my sight\nHe should have examined the eyes of my mind\nTwenty-twenty vision and walking round blind\n\nEver since she\u2019s gone and left me I feel so alone\nI carry a heart that is heavy as stone\nI knew that she cheated, I knew all the time\nTwenty twenty vision and walking round blind\n\nYou just couldn\u2019t know her the way that I do\nYou tell me she\u2019s wicked and maybe it\u2019s true\nBut one thing I do know she\u2019s no longer mine\nTwenty-twenty vision and walking round blind\n\nI\u2019ve lost her I\u2019ve lost her oh what shall I do\nI\u2019ll bet you\u2019re not happy as she\u2019s there with you\nThe eyes of your heart will have trouble like mine\nTwenty twenty vision and walking round blind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been to the doctor, he says I\u2019m alright",
+        "I know he is lying, I\u2019m losing my sight",
+        "He should have examined the eyes of my mind",
+        "Twenty-twenty vision and walking round blind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ever since she\u2019s gone and left me I feel so alone",
+        "I carry a heart that is heavy as stone",
+        "I knew that she cheated, I knew all the time",
+        "Twenty twenty vision and walking round blind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You just couldn\u2019t know her the way that I do",
+        "You tell me she\u2019s wicked and maybe it\u2019s true",
+        "But one thing I do know she\u2019s no longer mine",
+        "Twenty-twenty vision and walking round blind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve lost her I\u2019ve lost her oh what shall I do",
+        "I\u2019ll bet you\u2019re not happy as she\u2019s there with you",
+        "The eyes of your heart will have trouble like mine",
+        "Twenty twenty vision and walking round blind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

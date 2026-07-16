@@ -1,0 +1,49 @@
+{
+  "slug": "beautiful-beautiful-brown-eyes",
+  "title": "Beautiful Beautiful Brown Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/beautiful-beautiful-brown-eyes/",
+  "raw_lyrics": "Beautiful beautiful brown eyes\nBeautiful beautiful brown eyes\nBeautiful beautiful brown eyes\nI\u2019ll never love blue eyes again.\n\nLast night I staggered in the bar room\nFell right down on the floor\nThese were the words that I uttered\nI\u2019ll never get drunk anymore.\n\nOh Willie oh Willie I love you\nLove you with all of my heart\nTomorrow we were to be married\nBut liquor has kept us apart.\n\nFor seven long years I\u2019ve been married\nWish I was single again\nA girl doesn\u2019t know half her troubles\nUntil she has married a man.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Beautiful beautiful brown eyes",
+        "Beautiful beautiful brown eyes",
+        "Beautiful beautiful brown eyes",
+        "I\u2019ll never love blue eyes again."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night I staggered in the bar room",
+        "Fell right down on the floor",
+        "These were the words that I uttered",
+        "I\u2019ll never get drunk anymore."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Willie oh Willie I love you",
+        "Love you with all of my heart",
+        "Tomorrow we were to be married",
+        "But liquor has kept us apart."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For seven long years I\u2019ve been married",
+        "Wish I was single again",
+        "A girl doesn\u2019t know half her troubles",
+        "Until she has married a man."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

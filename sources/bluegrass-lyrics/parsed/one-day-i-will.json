@@ -1,0 +1,49 @@
+{
+  "slug": "one-day-i-will",
+  "title": "One Day I Will",
+  "source_url": "https://www.bluegrasslyrics.com/song/one-day-i-will/",
+  "raw_lyrics": "I have never have seen the face of my savior\nBut serving him has been such a thrill\nI never have seen the gates to the city\nBut one day one day I will\n\nSince the day I first met him he has been all to me\nAnd my life with joy he has filled\nAnd i\u2019m longing for the day when my eyes shall behold him\nBut one day one day I will\n\nOne day I\u2019m gonna walk on the streets of pure gold\nAnd they\u2019ll tell me the half that\u2019s never yet been told\nI\u2019ll be united with my loved ones on Zion\u2019s holy hill\nBut one day one day I will\n\nI have never have seen the face of my savior\nBut serving him has been such a thrill\nI never have seen the gates to the city\nBut one day one day I will",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have never have seen the face of my savior",
+        "But serving him has been such a thrill",
+        "I never have seen the gates to the city",
+        "But one day one day I will"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Since the day I first met him he has been all to me",
+        "And my life with joy he has filled",
+        "And i\u2019m longing for the day when my eyes shall behold him",
+        "But one day one day I will"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "One day I\u2019m gonna walk on the streets of pure gold",
+        "And they\u2019ll tell me the half that\u2019s never yet been told",
+        "I\u2019ll be united with my loved ones on Zion\u2019s holy hill",
+        "But one day one day I will"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have never have seen the face of my savior",
+        "But serving him has been such a thrill",
+        "I never have seen the gates to the city",
+        "But one day one day I will"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

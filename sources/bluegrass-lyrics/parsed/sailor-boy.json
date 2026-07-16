@@ -1,0 +1,79 @@
+{
+  "slug": "sailor-boy",
+  "title": "Sailor Boy",
+  "source_url": "https://www.bluegrasslyrics.com/song/sailor-boy/",
+  "raw_lyrics": "A Sailor\u2019s life is a merry life\nHe robs young girls of their heart\u2019s delight\nLeaving them alone to weep and mourn\nThey never know when he\u2019ll return\n\nOf four and twenty all in a row\nMy true love makes the finest show\nHe\u2019s proper tall, genteel with all\nIf I can\u2019t have him I\u2019ll have none at all\n\nMy father built me a bonny boat\nThat on the ocean I might float\nAnd every queen ship that we passed by\nI\u2019d there inquire for my sailor boy\n\nShe had not sailed long upon the deep\nWhen a queen ship she chanced to meet\nYou sailors all please tell me true\nDoes my sweet William sail among your crew?\n\nOh no fair maiden he\u2019s not here\nFor he\u2019s been drowned we greatly fear\nOn yon green island as we passed by\nThere we lost sight upon your sailor boy\n\nShe wrung her hands, she tore her hair\nShe was a maid in great despair\nHer little boat on the rock she did run\nSaying how shall I live now that my William is gone?\n\nA sailor\u2019s life is a merry life\nHe robs young girls of their heart\u2019s delight\nLeaving them behind to weep and mourn\nThey never know when he\u2019ll return",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A Sailor\u2019s life is a merry life",
+        "He robs young girls of their heart\u2019s delight",
+        "Leaving them alone to weep and mourn",
+        "They never know when he\u2019ll return"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Of four and twenty all in a row",
+        "My true love makes the finest show",
+        "He\u2019s proper tall, genteel with all",
+        "If I can\u2019t have him I\u2019ll have none at all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My father built me a bonny boat",
+        "That on the ocean I might float",
+        "And every queen ship that we passed by",
+        "I\u2019d there inquire for my sailor boy"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She had not sailed long upon the deep",
+        "When a queen ship she chanced to meet",
+        "You sailors all please tell me true",
+        "Does my sweet William sail among your crew?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh no fair maiden he\u2019s not here",
+        "For he\u2019s been drowned we greatly fear",
+        "On yon green island as we passed by",
+        "There we lost sight upon your sailor boy"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She wrung her hands, she tore her hair",
+        "She was a maid in great despair",
+        "Her little boat on the rock she did run",
+        "Saying how shall I live now that my William is gone?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A sailor\u2019s life is a merry life",
+        "He robs young girls of their heart\u2019s delight",
+        "Leaving them behind to weep and mourn",
+        "They never know when he\u2019ll return"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

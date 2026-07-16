@@ -1,0 +1,11 @@
+id: log-cabin-in-the-lane
+title: Log Cabin In The Lane
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/log-cabin-in-the-lane/
+      imported_at: '2026-02-08'

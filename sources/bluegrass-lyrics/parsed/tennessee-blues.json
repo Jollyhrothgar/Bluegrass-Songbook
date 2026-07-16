@@ -1,0 +1,47 @@
+{
+  "slug": "tennessee-blues",
+  "title": "Tennessee Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/tennessee-blues/",
+  "raw_lyrics": "If I had my way  I\u2019d leave here today\nI\u2019d leave in a hurry\nI\u2019d find me a place  where I could stay\nAnd not have to worry\n\nA place I could use\nA place I could lose the Tennessee Blues\n\nI\u2019d find me a spot on some mountain top\nWith no one around me\nValleys and streams, birds in the trees\nAnd hills that surround me.\n\nI\u2019d try to forget all my regrets\nI\u2019d keep just the good times\nI\u2019d wake and I\u2019d sleep, nothing but peace\nFeel free all the time.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If I had my way  I\u2019d leave here today",
+        "I\u2019d leave in a hurry",
+        "I\u2019d find me a place  where I could stay",
+        "And not have to worry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "A place I could use",
+        "A place I could lose the Tennessee Blues"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019d find me a spot on some mountain top",
+        "With no one around me",
+        "Valleys and streams, birds in the trees",
+        "And hills that surround me."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019d try to forget all my regrets",
+        "I\u2019d keep just the good times",
+        "I\u2019d wake and I\u2019d sleep, nothing but peace",
+        "Feel free all the time."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

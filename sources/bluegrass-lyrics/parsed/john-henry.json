@@ -1,0 +1,64 @@
+{
+  "slug": "john-henry",
+  "title": "John Henry",
+  "source_url": "https://www.bluegrasslyrics.com/song/john-henry/",
+  "raw_lyrics": "John Henry was a little baby boy\nYou could hold him on the palm of your hand\nAnd his Papa cried out this lonesome farewell\nSon you\u2019re gonna be a steel driving man lord, lord\nSon you\u2019re gonna be a steel driving man\n\nJohn Henry went up on the mountain\nLooked down on the other side\nLord the mountain was so tall John Henry was so small\nHe laid down his hammer and he cried poor boy\nLaid down his hammer and he cried\n\nJohn Henry walked through the tunnel\nHad his captain by his side\nThe last words that John Henry said was bring me\nCool drink of what \u2018for I die lord, lord\nCool drink of what \u2018for I die\n\nTalk about John Henry as much as you please\nSay and do all that you can\nThere never was born in these United States\nNo such a steel driving man lord, lord\nNo such a steel driving man\n\nJohn Henry told his captain\nI want to go to bed\nLord fix me a pallet, I want to lay down\nGot a mighty roaring in my head lord, lord\nMighty roaring in my head",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry was a little baby boy",
+        "You could hold him on the palm of your hand",
+        "And his Papa cried out this lonesome farewell",
+        "Son you\u2019re gonna be a steel driving man lord, lord",
+        "Son you\u2019re gonna be a steel driving man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry went up on the mountain",
+        "Looked down on the other side",
+        "Lord the mountain was so tall John Henry was so small",
+        "He laid down his hammer and he cried poor boy",
+        "Laid down his hammer and he cried"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry walked through the tunnel",
+        "Had his captain by his side",
+        "The last words that John Henry said was bring me",
+        "Cool drink of what \u2018for I die lord, lord",
+        "Cool drink of what \u2018for I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Talk about John Henry as much as you please",
+        "Say and do all that you can",
+        "There never was born in these United States",
+        "No such a steel driving man lord, lord",
+        "No such a steel driving man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry told his captain",
+        "I want to go to bed",
+        "Lord fix me a pallet, I want to lay down",
+        "Got a mighty roaring in my head lord, lord",
+        "Mighty roaring in my head"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

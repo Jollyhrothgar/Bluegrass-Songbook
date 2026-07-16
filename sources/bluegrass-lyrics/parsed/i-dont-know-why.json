@@ -1,0 +1,39 @@
+{
+  "slug": "i-dont-know-why",
+  "title": "I Don\u2019t Know Why",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-dont-know-why/",
+  "raw_lyrics": "I don\u2019t know why it is that I love you\nI don\u2019t know why it is that I cry\nYou have gone and now you love another\nThat\u2019s why I cry I don\u2019t know why.\n\nThere was a day  a sunny day\nWhen you declared your love for me\nBut now you\u2019ve turned  from me away\nYour childish vows no more I\u2019ll see.\n\nWhen summertime has come and gone\nYou\u2019ll need a friend who\u2019s heart is true\nYou\u2019ll find yourself so all alone\nAnd then you\u2019ll know what I\u2019ve gone through.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I don\u2019t know why it is that I love you",
+        "I don\u2019t know why it is that I cry",
+        "You have gone and now you love another",
+        "That\u2019s why I cry I don\u2019t know why."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There was a day  a sunny day",
+        "When you declared your love for me",
+        "But now you\u2019ve turned  from me away",
+        "Your childish vows no more I\u2019ll see."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When summertime has come and gone",
+        "You\u2019ll need a friend who\u2019s heart is true",
+        "You\u2019ll find yourself so all alone",
+        "And then you\u2019ll know what I\u2019ve gone through."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

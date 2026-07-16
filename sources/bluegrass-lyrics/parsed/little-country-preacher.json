@@ -1,0 +1,39 @@
+{
+  "slug": "little-country-preacher",
+  "title": "Little Country Preacher",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-country-preacher/",
+  "raw_lyrics": "Little country preacher with his head bowed down in prayer\nI know that he\u2019s in conference with our Load away up there\nHe\u2019s not hightened with his speech just plain like you and me\nHe reminds me of the prophets and the man of Galilee\n\nHe started out when just a lad to preach the gospel way\nAnd when the path got hard to trod with mother he would stay\nThe money did not bother him for Christ he took his stand\nHis pay day will be paid to him  at the gates of Glory Land\n\nThe little church he preaches at each Sunday for our aske\nIf you pass it by and don\u2019t go in you\u2019ve made a big mistake\nHis good old fashioned voice pleads stranger enter in\nGod\u2019s pleading through good men to save us from our sins",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Little country preacher with his head bowed down in prayer",
+        "I know that he\u2019s in conference with our Load away up there",
+        "He\u2019s not hightened with his speech just plain like you and me",
+        "He reminds me of the prophets and the man of Galilee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He started out when just a lad to preach the gospel way",
+        "And when the path got hard to trod with mother he would stay",
+        "The money did not bother him for Christ he took his stand",
+        "His pay day will be paid to him  at the gates of Glory Land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The little church he preaches at each Sunday for our aske",
+        "If you pass it by and don\u2019t go in you\u2019ve made a big mistake",
+        "His good old fashioned voice pleads stranger enter in",
+        "God\u2019s pleading through good men to save us from our sins"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

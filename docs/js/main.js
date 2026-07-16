@@ -28,6 +28,8 @@ import {
     setListContext,
     tablaturePlayer,
     setFullscreenMode,
+    setWorkRedirects, resolveWorkId,
+    setBountyIndex,
     // Reactive state system
     subscribe, setCurrentView, currentView
 } from './state.js';
@@ -38,19 +40,23 @@ import {
     showListView, fetchListData, renderManageListsView, showSongListsView, startCreateListInView,
     // Favorites functions (favorites is now just a list)
     showFavorites, updateFavoritesCount, getFavoritesList, isFavorite, toggleFavorite,
-    updateSyncUI, reorderFavoriteItem
+    updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
-import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext } from './song-view.js';
-import { openWork, renderWorkView, teardownTablatureView } from './work-view.js';
+import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
+import { openWork, renderWorkView, teardownTablatureView, getCurrentWork, getActiveItemRef } from './work-view.js';
+import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
-import { initEditor, updateEditorPreview, enterEditMode, editorGenerateChordPro, closeHints } from './editor.js';
-import { escapeHtml } from './utils.js';
+import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints } from './editor.js';
+import { escapeHtml, requireLogin, isPlaceholder, isTabOnlyWork, hasMultipleParts, parseItemRef } from './utils.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
 import { initFlags, openFlagModal } from './flags.js';
-import { initSongRequest, openSongRequestModal } from './song-request.js';
+import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
+import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
+import { initDocUpload, resetDocUpload, prefillDocUpload } from './doc-upload.js';
+import { buildStemSet } from './stem.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -138,10 +144,13 @@ const userName = document.getElementById('user-name');
 // Song actions
 const exportBtn = document.getElementById('export-btn');
 const exportDropdown = document.getElementById('export-dropdown');
+const workViewBtn = document.getElementById('work-view-btn');
 const editSongBtn = document.getElementById('edit-song-btn');
+const deleteSongBtn = document.getElementById('delete-song-btn');
 
 // Editor elements
 const editorPanel = document.getElementById('editor-panel');
+const uploadPanel = document.getElementById('upload-panel');
 const editorBackBtn = document.getElementById('editor-back-btn');
 const editorTitle = document.getElementById('editor-title');
 const editorArtist = document.getElementById('editor-artist');
@@ -160,6 +169,9 @@ const hintsPanel = document.getElementById('chordpro-hints-panel');
 const hintsBackdrop = document.getElementById('chordpro-hints-backdrop');
 const hintsClose = document.getElementById('chordpro-hints-close');
 const autoDetectCheckbox = document.getElementById('editor-auto-detect');
+const editorTransposeUp = document.getElementById('editor-transpose-up');
+const editorTransposeDown = document.getElementById('editor-transpose-down');
+const editorKeySelect = document.getElementById('editor-key-select');
 
 // Tag dropdown
 const tagDropdownBtn = document.getElementById('tag-dropdown-btn');
@@ -230,11 +242,20 @@ function pushHistoryState(view, data = {}, replace = false) {
             if (data.listId) {
                 hash = `#list/${data.listId}/${data.songId}`;
             } else {
-                hash = `#work/${data.songId}`;
+                hash = `#song/${data.songId}`;
             }
+            break;
+        case 'edit':
+            hash = `#edit/${data.songId}`;
             break;
         case 'add-song':
             hash = '#add';
+            break;
+        case 'doc-upload':
+            hash = '#upload';
+            break;
+        case 'bounty':
+            hash = '#bounty';
             break;
         case 'favorites':
             // Favorites is just a list with ID 'favorites'
@@ -286,8 +307,25 @@ function handleHistoryNavigation(state) {
                 openSongFromHistory(state.songId);
             }
             break;
+        case 'edit':
+            if (state.songId) {
+                // Re-enter edit mode for the song
+                const song = allSongs.find(s => s.id === state.songId);
+                if (song) {
+                    enterEditMode(song, { fromHistory: true });
+                } else {
+                    showView('search');
+                }
+            }
+            break;
         case 'add-song':
             showView('add-song');
+            break;
+        case 'doc-upload':
+            showView('doc-upload');
+            break;
+        case 'bounty':
+            showView('bounty');
             break;
         case 'favorites':
             showView('favorites');
@@ -339,6 +377,16 @@ function initViewSubscription() {
         // Close any open editor hints panel
         closeHints();
 
+        // Exit edit mode when navigating away from the editor
+        if (view !== 'add-song') {
+            exitEditMode();
+        }
+
+        // Reset upload form when navigating away
+        if (view !== 'doc-upload') {
+            resetDocUpload();
+        }
+
         // Close bottom sheet if open (it has position: fixed so stays visible)
         bottomSheet?.classList.add('hidden');
         bottomSheetBackdrop?.classList.add('hidden');
@@ -363,6 +411,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 navHome?.classList.add('active');
                 break;
@@ -371,6 +420,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 navSearch?.classList.add('active');
                 // Show empty state if no search query (don't show random songs)
@@ -384,6 +434,16 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.remove('hidden');
+                uploadPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                navAddSong?.classList.add('active');
+                break;
+            case 'doc-upload':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.add('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.remove('hidden');
                 songListsView?.classList.add('hidden');
                 navAddSong?.classList.add('active');
                 break;
@@ -392,6 +452,7 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 navFavorites?.classList.add('active');
                 showFavorites();
@@ -401,20 +462,34 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.remove('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
+                // Show delete button for admins
+                updateDeleteButtonVisibility();
                 break;
             case 'list':
                 searchContainer?.classList.remove('hidden');
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
+                break;
+            case 'bounty':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                renderBountyView(resultsDiv);
                 break;
             case 'song-lists':
                 searchContainer?.classList.add('hidden');
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.remove('hidden');
                 // renderManageListsView is called by showSongListsView
                 break;
@@ -449,14 +524,22 @@ const COLLECTION_ICONS = {
 };
 
 /**
+ * Get distinct song count (counts unique titles, case-insensitive)
+ * This matches the count shown in search results via showPopularSongs()
+ */
+function getDistinctSongCount() {
+    return new Set(allSongs.map(s => s.title?.toLowerCase())).size;
+}
+
+/**
  * Render collection cards on the landing page
  */
 function renderCollectionCards() {
     if (!collectionsGrid) return;
 
     const cards = COLLECTIONS.map(collection => {
-        // Count songs matching the query (or total for "all songs", or skip for tools)
-        const count = collection.isToolLink ? 0 : collection.isSearchLink ? allSongs.length : getCollectionSongCount(collection.query);
+        // Count songs matching the query (or distinct titles for "all songs", or skip for tools)
+        const count = collection.isToolLink ? 0 : collection.isSearchLink ? getDistinctSongCount() : getCollectionSongCount(collection.query);
         const icon = COLLECTION_ICONS[collection.id] || '🎵';
         const imageSrc = COLLECTION_IMAGES[collection.id];
 
@@ -543,7 +626,7 @@ function searchWithPins(query, collectionId) {
 
     if (pins.length === 0) {
         // No pinned songs, just render normally (already sorted by canonical_rank)
-        renderResults(results.slice(0, 50), '');
+        renderResults(results, '');
         return results;
     }
 
@@ -564,7 +647,7 @@ function searchWithPins(query, collectionId) {
 
     // Render with pinned songs first, then others sorted by canonical_rank
     const reordered = [...pinnedSongs, ...otherSongs];
-    renderResults(reordered.slice(0, 50), '');
+    renderResults(reordered, '');
 
     return reordered;
 }
@@ -605,28 +688,71 @@ function handleDeepLink() {
     // (the URL is already set from the initial page load)
 
     if (hash.startsWith('#work/')) {
-        // Work view: #work/{id} or #work/{id}/parts/{partId}
+        // Work view: #work/{id} or #work/{id}/{partId}
+        // Also handles legacy #work/{id}/parts/{partId}
         const pathParts = hash.slice(6).split('/');
-        const workId = pathParts[0];
-        const partId = pathParts[2]; // undefined if just #work/{id}
+        const workId = resolveWorkId(pathParts[0]);
+        let partId;
+
+        if (pathParts[1] === 'parts' && pathParts[2]) {
+            // Legacy URL: #work/{id}/parts/{partId} → redirect to #work/{id}/{partId}
+            partId = pathParts[2];
+            history.replaceState(null, '', `#work/${workId}/${partId}`);
+        } else {
+            partId = pathParts[1]; // undefined if just #work/{id}
+        }
+
+        // Update URL if redirected to canonical slug
+        if (workId !== pathParts[0] && !partId) {
+            history.replaceState(null, '', `#work/${workId}`);
+        } else if (workId !== pathParts[0] && partId) {
+            history.replaceState(null, '', `#work/${workId}/${partId}`);
+        }
         trackDeepLink('work', hash);
+        // #work/ URLs always show the work dashboard — it's an explicit request
         openWork(workId, { partId, fromDeepLink: true });
         return true;
     } else if (hash.startsWith('#song/')) {
-        // Legacy route - redirect to #work/
-        const songId = hash.slice(6);
-        window.location.hash = `#work/${songId}`;
+        // Song view: #song/{id} - shows the specific song/version
+        const songId = resolveWorkId(hash.slice(6));
+        // Update URL if redirected to canonical slug
+        if (songId !== hash.slice(6)) {
+            history.replaceState(null, '', `#song/${songId}`);
+        }
+        trackDeepLink('song', hash);
+        openSong(songId, { fromDeepLink: true });
         return true;
     } else if (hash === '#add') {
         trackDeepLink('add', hash);
         showView('add-song');
         pushHistoryState('add-song', {}, true);
         return true;
+    } else if (hash.startsWith('#edit/')) {
+        const songId = hash.slice(6);
+        trackDeepLink('edit', hash);
+        const song = allSongs.find(s => s.id === songId);
+        if (song) {
+            enterEditMode(song, { fromDeepLink: true });
+            pushHistoryState('edit', { songId }, true);
+        } else {
+            // Song not found, go to search
+            showView('search');
+        }
+        return true;
+    } else if (hash === '#upload') {
+        trackDeepLink('upload', hash);
+        showView('doc-upload');
+        pushHistoryState('doc-upload', {}, true);
+        return true;
+    } else if (hash === '#bounty') {
+        trackDeepLink('bounty', hash);
+        showView('bounty');
+        pushHistoryState('bounty', {}, true);
+        return true;
     } else if (hash === '#request-song') {
         trackDeepLink('request-song', hash);
-        // Clear the hash and open the modal
         window.location.hash = '';
-        openSongRequestModal();
+        openAddSongPicker({ mode: 'request' });
         return true;
     } else if (hash === '#favorites') {
         // Backward compatibility: redirect #favorites to #list/favorites
@@ -637,14 +763,15 @@ function handleDeepLink() {
     } else if (hash.startsWith('#list/')) {
         const parts = hash.slice(6).split('/');
         const listId = parts[0];
-        const songId = parts[1]; // undefined if just #list/{id}
+        // Item ref can contain a slash (e.g., "soldier-s-joy-1/tenor-banjo")
+        const itemRef = parts.length > 1 ? parts.slice(1).join('/') : undefined;
 
         // Handle favorites as a special list
         if (listId === 'favorites') {
-            if (songId) {
-                // Deep link to song within favorites: #list/favorites/{songId}
+            if (itemRef) {
+                // Deep link to song within favorites: #list/favorites/{itemRef}
                 trackDeepLink('favorites-song', hash);
-                openSongInFavorites(songId, true);
+                openSongInFavorites(itemRef, true);
             } else {
                 // Deep link to favorites: #list/favorites
                 trackDeepLink('favorites', hash);
@@ -654,11 +781,11 @@ function handleDeepLink() {
             return true;
         }
 
-        if (songId) {
-            // Deep link to song within list: #list/{uuid}/{songId}
+        if (itemRef) {
+            // Deep link to song within list: #list/{uuid}/{itemRef}
             trackDeepLink('list-song', hash);
             // First load the list to set up context, then open the song
-            openSongInList(listId, songId, true);
+            openSongInList(listId, itemRef, true);
         } else {
             // Deep link to list: #list/{uuid}
             trackDeepLink('list', hash);
@@ -701,12 +828,18 @@ function handleDeepLink() {
 
 /**
  * Open a song within the favorites context (for deep linking)
+ * @param {string} itemRef - Work ID or part-qualified ref (e.g., "work-id/part-slug")
  */
-function openSongInFavorites(songId, fromDeepLink = false) {
+function openSongInFavorites(itemRef, fromDeepLink = false) {
+    const { workId, partId } = parseItemRef(itemRef);
+
     // Get favorites song IDs that exist in allSongs
     const favList = getFavoritesList();
-    const favSongIds = favList ? favList.songs.filter(id => allSongs.find(s => s.id === id)) : [];
-    const songIndex = favSongIds.indexOf(songId);
+    const favSongIds = favList ? favList.songs.filter(ref => {
+        const { workId: wid } = parseItemRef(ref);
+        return allSongs.find(s => s.id === wid);
+    }) : [];
+    const songIndex = favSongIds.indexOf(itemRef);
 
     // Set up favorites context for prev/next navigation
     setListContext({
@@ -716,24 +849,39 @@ function openSongInFavorites(songId, fromDeepLink = false) {
         currentIndex: songIndex >= 0 ? songIndex : 0
     });
 
-    // Open the song with favorites context
-    openSong(songId, { fromList: true, listId: 'favorites', fromDeepLink });
+    // Dashboard for: placeholders, tab-only, and multi-part works.
+    // Single-part songs with content go to song-view.
+    const song = allSongs.find(s => s.id === workId);
+    if (partId) {
+        // Part-qualified ref always opens the work dashboard with that part expanded
+        openWork(workId, { partId, fromDeepLink, fromList: true });
+    } else if (song && (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song))) {
+        openWork(workId, { fromDeepLink, fromList: true });
+    } else {
+        openSong(workId, { fromList: true, listId: 'favorites', fromDeepLink });
+    }
 }
 
 /**
  * Open a song within a list context (for deep linking)
+ * @param {string} itemRef - Work ID or part-qualified ref (e.g., "work-id/part-slug")
  */
-async function openSongInList(listId, songId, fromDeepLink = false) {
+async function openSongInList(listId, itemRef, fromDeepLink = false) {
+    const { workId, partId } = parseItemRef(itemRef);
     const listData = await fetchListData(listId);
 
     if (!listData) {
         // List not found - fall back to opening song without context
-        openSong(songId, { fromDeepLink });
+        if (partId) {
+            openWork(workId, { partId, fromDeepLink });
+        } else {
+            openSong(workId, { fromDeepLink });
+        }
         return;
     }
 
     // Set up list context for prev/next navigation
-    const songIndex = listData.songs.indexOf(songId);
+    const songIndex = listData.songs.indexOf(itemRef);
     setListContext({
         listId,
         listName: listData.name,
@@ -741,8 +889,17 @@ async function openSongInList(listId, songId, fromDeepLink = false) {
         currentIndex: songIndex >= 0 ? songIndex : 0
     });
 
-    // Open the song with list context
-    openSong(songId, { fromList: true, listId, fromDeepLink });
+    // Dashboard for: placeholders, tab-only, and multi-part works.
+    // Single-part songs with content go to song-view.
+    const song = allSongs.find(s => s.id === workId);
+    if (partId) {
+        // Part-qualified ref always opens the work dashboard with that part expanded
+        openWork(workId, { partId, fromDeepLink, fromList: true });
+    } else if (song && (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song))) {
+        openWork(workId, { fromDeepLink, fromList: true });
+    } else {
+        openSong(workId, { fromList: true, listId, fromDeepLink });
+    }
 }
 
 /**
@@ -836,6 +993,53 @@ function navigateTo(mode) {
 // LOAD INDEX
 // ============================================
 
+/**
+ * Transform a pending_songs entry to match the index.jsonl format
+ */
+function transformPendingToIndexFormat(pending) {
+    // Extract first line of lyrics (skip chord brackets)
+    const extractFirstLine = (content) => {
+        if (!content) return '';
+        const lines = content.split('\n');
+        for (const line of lines) {
+            // Skip directives and empty lines
+            if (line.startsWith('{') || !line.trim()) continue;
+            // Remove chord brackets and return first lyric line
+            const lyricsOnly = line.replace(/\[[^\]]+\]/g, '').trim();
+            if (lyricsOnly) return lyricsOnly;
+        }
+        return '';
+    };
+
+    // Extract all lyrics (for search)
+    const extractLyrics = (content) => {
+        if (!content) return '';
+        return content
+            .split('\n')
+            .filter(line => !line.startsWith('{') && line.trim())
+            .map(line => line.replace(/\[[^\]]+\]/g, ''))
+            .join(' ')
+            .trim();
+    };
+
+    return {
+        id: pending.id,
+        title: pending.title,
+        artist: pending.artist || '',
+        composer: pending.composer || '',
+        content: pending.content,
+        key: pending.key || '',
+        mode: pending.mode || '',
+        tags: pending.tags || {},
+        notes: pending.notes || '',
+        status: pending.status || (pending.content ? undefined : 'placeholder'),
+        source: 'pending',
+        replaces_id: pending.replaces_id,
+        first_line: extractFirstLine(pending.content),
+        lyrics: extractLyrics(pending.content),
+    };
+}
+
 async function loadIndex() {
     if (resultsDiv) {
         resultsDiv.innerHTML = '<div class="loading">Loading songbook...</div>';
@@ -844,10 +1048,70 @@ async function loadIndex() {
     try {
         // no-cache = revalidate (304 if unchanged); heuristic caching
         // otherwise serves a stale index for weeks after a re-publish.
-        const response = await fetch('data/index.jsonl', { cache: 'no-cache' });
+        const [response, redirectsResponse] = await Promise.all([
+            fetch('data/index.jsonl', { cache: 'no-cache' }),
+            fetch('data/redirects.json').catch(() => null),
+        ]);
         const text = await response.text();
-        const songs = text.trim().split('\n').map(line => JSON.parse(line));
+        const staticSongs = text.trim().split('\n').map(line => JSON.parse(line));
+
+        // Load work redirects (merged/renamed works)
+        if (redirectsResponse?.ok) {
+            try {
+                const redirects = await redirectsResponse.json();
+                setWorkRedirects(redirects);
+                console.log(`Loaded ${Object.keys(redirects).length} work redirects`);
+            } catch (e) {
+                // Not critical — redirects just won't work
+            }
+        }
+
+        // Fetch pending songs from Supabase (graceful failure if offline/error)
+        let pendingSongs = [];
+        try {
+            const supabase = window.SupabaseAuth?.supabase;
+            if (supabase) {
+                const { data, error } = await supabase
+                    .from('pending_songs')
+                    .select('*');
+                if (data && !error) {
+                    pendingSongs = data.map(transformPendingToIndexFormat);
+                    if (pendingSongs.length > 0) {
+                        console.log(`Merged ${pendingSongs.length} pending song(s)`);
+                    }
+                }
+            }
+        } catch (e) {
+            console.warn('Could not fetch pending songs:', e);
+            // Static index still works - graceful degradation
+        }
+
+        // Merge: pending corrections overlay on static songs, preserving fields like tablature_parts
+        const staticMap = {};
+        staticSongs.forEach(s => { staticMap[s.id] = s; });
+
+        const mergedPending = pendingSongs.map(p => {
+            const base = p.replaces_id ? staticMap[p.replaces_id] : null;
+            return base ? { ...base, ...p, source: 'pending' } : p;
+        });
+
+        const replacedIds = new Set(
+            pendingSongs.filter(s => s.replaces_id).map(s => s.replaces_id)
+        );
+        const filteredStatic = staticSongs.filter(s => !replacedIds.has(s.id));
+        const songs = [...filteredStatic, ...mergedPending];
+
         setAllSongs(songs);
+
+        // Pre-compute stemmed word sets for fuzzy search
+        for (const song of songs) {
+            song._stems = buildStemSet([
+                song.title || '',
+                song.artist || '',
+                song.composer || '',
+                song.first_line || ''
+            ].join(' '));
+        }
 
         // Build song groups for version detection
         const groups = {};
@@ -883,6 +1147,9 @@ async function loadIndex() {
             showView('home');
             history.replaceState({ view: 'home' }, '', window.location.pathname);
         }
+
+        // Fetch bounties in background (non-blocking, not needed for initial render)
+        refreshBounties();
     } catch (error) {
         console.error('Failed to load index:', error);
         if (resultsDiv) {
@@ -891,31 +1158,242 @@ async function loadIndex() {
     }
 }
 
+/**
+ * Refresh pending songs from Supabase and merge into allSongs.
+ * Call this after a trusted user saves edits to ensure the song
+ * is available immediately for navigation.
+ * Note: Exposed on window for editor.js to avoid circular import.
+ */
+async function refreshPendingSongs() {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) return;
+
+    try {
+        const { data, error } = await supabase
+            .from('pending_songs')
+            .select('*');
+
+        if (error || !data) {
+            console.warn('Could not refresh pending songs:', error);
+            return;
+        }
+
+        const pendingSongs = data.map(transformPendingToIndexFormat);
+
+        // Get current static songs (those not from pending source)
+        const currentSongs = allSongs.filter(s => s.source !== 'pending');
+
+        // Merge: pending corrections overlay on static songs, preserving fields like tablature_parts
+        const staticMap = {};
+        currentSongs.forEach(s => { staticMap[s.id] = s; });
+
+        const mergedPending = pendingSongs.map(p => {
+            const base = p.replaces_id ? staticMap[p.replaces_id] : null;
+            return base ? { ...base, ...p, source: 'pending' } : p;
+        });
+
+        const replacedIds = new Set(
+            pendingSongs.filter(s => s.replaces_id).map(s => s.replaces_id)
+        );
+        const filteredStatic = currentSongs.filter(s => !replacedIds.has(s.id));
+        const songs = [...filteredStatic, ...mergedPending];
+
+        setAllSongs(songs);
+
+        // Pre-compute stems for any new pending songs
+        for (const song of pendingSongs) {
+            if (!song._stems) {
+                song._stems = buildStemSet([
+                    song.title || '',
+                    song.artist || '',
+                    song.composer || '',
+                    song.first_line || ''
+                ].join(' '));
+            }
+        }
+
+        // Rebuild song groups for version detection
+        const groups = {};
+        songs.forEach(song => {
+            if (song.group_id) {
+                if (!groups[song.group_id]) groups[song.group_id] = [];
+                groups[song.group_id].push(song);
+            }
+        });
+        setSongGroups(groups);
+
+        if (pendingSongs.length > 0) {
+            console.log(`Refreshed: ${pendingSongs.length} pending song(s) merged`);
+        }
+    } catch (e) {
+        console.warn('Error refreshing pending songs:', e);
+    }
+}
+
+// Expose refreshPendingSongs on window for editor.js (avoids circular import)
+window.refreshPendingSongs = refreshPendingSongs;
+
+/**
+ * Fetch open bounties from Supabase and populate bountyIndex.
+ * Groups bounties by work_id for O(1) lookup.
+ */
+async function refreshBounties() {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) return;
+
+    try {
+        const { data, error } = await supabase
+            .from('bounties')
+            .select('*')
+            .eq('status', 'open');
+
+        if (error || !data) {
+            console.warn('Could not fetch bounties:', error);
+            return;
+        }
+
+        // Group by work_id
+        const index = {};
+        for (const bounty of data) {
+            if (!index[bounty.work_id]) index[bounty.work_id] = [];
+            index[bounty.work_id].push(bounty);
+        }
+        setBountyIndex(index);
+
+        if (data.length > 0) {
+            console.log(`Loaded ${data.length} open bounties across ${Object.keys(index).length} works`);
+        }
+    } catch (e) {
+        console.warn('Error fetching bounties:', e);
+    }
+}
+
+// Expose refreshBounties on window for bounty UI components
+window.refreshBounties = refreshBounties;
+
 // ============================================
 // AUTH UI
 // ============================================
 
-function updateAuthUI(user) {
+// Admin state (cached to avoid repeated RPC calls)
+let isAdminUser = false;
+
+function getInitials(user) {
+    const name = user.user_metadata?.full_name;
+    if (name) {
+        const parts = name.trim().split(/\s+/);
+        if (parts.length >= 2) return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+        return parts[0].substring(0, 2).toUpperCase();
+    }
+    const email = user.email || '';
+    return email.substring(0, 2).toUpperCase();
+}
+
+function updateAuthUI(user, event) {
+    const userAvatarInitials = document.getElementById('user-avatar-initials');
+    const accountAvatarEl = document.getElementById('account-avatar');
+    const accountAvatarInitials = document.getElementById('account-avatar-initials');
+    const accountNameEl = document.getElementById('account-name');
+    const accountEmailEl = document.getElementById('account-email');
+
     if (user) {
         // Hide sign-in button, show user info
         signInBtn?.classList.add('hidden');
         userInfo?.classList.remove('hidden');
 
-        // Populate user info
-        if (userAvatar) {
-            userAvatar.src = user.user_metadata?.avatar_url || user.user_metadata?.picture || '';
+        const avatarUrl = user.user_metadata?.avatar_url || user.user_metadata?.picture || '';
+        const displayName = user.user_metadata?.full_name || user.email?.split('@')[0] || 'User';
+
+        if (userName) userName.textContent = displayName;
+
+        // Show photo avatar or initials fallback
+        if (avatarUrl) {
+            if (userAvatar) { userAvatar.src = avatarUrl; userAvatar.classList.remove('hidden'); }
+            userAvatarInitials?.classList.add('hidden');
+            if (accountAvatarEl) { accountAvatarEl.src = avatarUrl; accountAvatarEl.classList.remove('hidden'); }
+            accountAvatarInitials?.classList.add('hidden');
+        } else {
+            const initials = getInitials(user);
+            userAvatar?.classList.add('hidden');
+            if (userAvatarInitials) { userAvatarInitials.textContent = initials; userAvatarInitials.classList.remove('hidden'); }
+            accountAvatarEl?.classList.add('hidden');
+            if (accountAvatarInitials) { accountAvatarInitials.textContent = initials; accountAvatarInitials.classList.remove('hidden'); }
         }
-        if (userName) {
-            userName.textContent = user.user_metadata?.full_name || user.email?.split('@')[0] || 'User';
-        }
+
+        // Populate account modal details
+        if (accountNameEl) accountNameEl.textContent = displayName;
+        if (accountEmailEl) accountEmailEl.textContent = user.email || '';
 
         updateSyncUI('syncing');
         performFullListsSync();
+
+        // Check admin status (async, updates UI when ready)
+        checkAdminStatus();
     } else {
         // Show sign-in button, hide user info
         signInBtn?.classList.remove('hidden');
         userInfo?.classList.add('hidden');
         updateSyncUI('offline');
+
+        // Only wipe list data on actual sign-out, not on pre-session events
+        // (REGISTERED/INITIAL fire with null user before session is determined)
+        if (event === 'SIGNED_OUT') {
+            handleListsSignOut();
+        }
+
+        // Clear admin status
+        isAdminUser = false;
+        deleteSongBtn?.classList.add('hidden');
+    }
+}
+
+// Check if current user is an admin and update UI
+async function checkAdminStatus() {
+    if (typeof SupabaseAuth !== 'undefined') {
+        isAdminUser = await SupabaseAuth.isAdmin();
+        // Update delete button visibility if currently viewing a song
+        updateDeleteButtonVisibility();
+    }
+}
+
+// Show/hide delete button based on admin status
+function updateDeleteButtonVisibility() {
+    if (deleteSongBtn) {
+        if (isAdminUser && currentView === 'song') {
+            deleteSongBtn.classList.remove('hidden');
+        } else {
+            deleteSongBtn.classList.add('hidden');
+        }
+    }
+}
+
+// Handle song deletion with confirmation
+async function handleDeleteSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    const confirmed = confirm(
+        `Are you sure you want to delete "${song.title}"?\n\n` +
+        `This will remove the song from the songbook permanently.\n` +
+        `(The change will take effect after the next index rebuild.)`
+    );
+
+    if (!confirmed) return;
+
+    try {
+        const { data, error } = await SupabaseAuth.deleteSong(song.id);
+        if (error) {
+            alert(`Failed to delete song: ${error.message}`);
+            return;
+        }
+
+        alert(`Song "${song.title}" has been marked for deletion.\n\nIt will be removed after the next index rebuild.`);
+
+        // Navigate back to search
+        goBack();
+    } catch (err) {
+        console.error('Error deleting song:', err);
+        alert(`Failed to delete song: ${err.message}`);
     }
 }
 
@@ -935,6 +1413,308 @@ function closeAccountModal() {
 
 function openAccountModal() {
     accountModal?.classList.remove('hidden');
+}
+
+// ============================================
+// AUTH MODAL
+// ============================================
+
+const authModal = document.getElementById('auth-modal');
+const authModalClose = document.getElementById('auth-modal-close');
+const authModalTitle = document.getElementById('auth-modal-title');
+const authGoogleBtn = document.getElementById('auth-google-btn');
+const authEmailToggle = document.getElementById('auth-email-toggle');
+const authEmailForm = document.getElementById('auth-email-form');
+const authEmailInput = document.getElementById('auth-email');
+const authPasswordInput = document.getElementById('auth-password');
+const authError = document.getElementById('auth-error');
+const authSuccess = document.getElementById('auth-success');
+const authSubmitBtn = document.getElementById('auth-submit-btn');
+const authForgotBtn = document.getElementById('auth-forgot-btn');
+const authToggleText = document.getElementById('auth-toggle-text');
+const authToggleBtn = document.getElementById('auth-toggle-btn');
+
+// Reset modal elements
+const resetModal = document.getElementById('reset-modal');
+const resetModalClose = document.getElementById('reset-modal-close');
+const resetStepEmail = document.getElementById('reset-step-email');
+const resetStepSent = document.getElementById('reset-step-sent');
+const resetStepNew = document.getElementById('reset-step-new');
+const resetEmailInput = document.getElementById('reset-email');
+const resetError = document.getElementById('reset-error');
+const resetSendBtn = document.getElementById('reset-send-btn');
+const resetBackBtn = document.getElementById('reset-back-btn');
+const resetNewPassword = document.getElementById('reset-new-password');
+const resetConfirmPassword = document.getElementById('reset-confirm-password');
+const resetNewError = document.getElementById('reset-new-error');
+const resetUpdateBtn = document.getElementById('reset-update-btn');
+
+let authMode = 'signin'; // 'signin' or 'signup'
+
+function openAuthModal() {
+    authMode = 'signin';
+    updateAuthModalMode();
+    clearAuthForm();
+    authModal?.classList.remove('hidden');
+}
+
+function closeAuthModal() {
+    authModal?.classList.add('hidden');
+    clearAuthForm();
+}
+
+function clearAuthForm() {
+    if (authEmailInput) authEmailInput.value = '';
+    if (authPasswordInput) authPasswordInput.value = '';
+    authError?.classList.add('hidden');
+    authSuccess?.classList.add('hidden');
+    // Collapse email form
+    authEmailForm?.classList.add('hidden');
+    authEmailToggle?.classList.remove('hidden');
+}
+
+function updateAuthModalMode() {
+    if (authMode === 'signup') {
+        if (authModalTitle) authModalTitle.textContent = 'Create Account';
+        if (authSubmitBtn) authSubmitBtn.textContent = 'Sign Up';
+        if (authToggleText) authToggleText.textContent = 'Already have an account?';
+        if (authToggleBtn) authToggleBtn.textContent = 'Sign in';
+        if (authForgotBtn) authForgotBtn.classList.add('hidden');
+        if (authGoogleBtn) authGoogleBtn.textContent = '';
+        if (authGoogleBtn) authGoogleBtn.innerHTML = '<img src="images/google-icon.svg" alt="" class="auth-google-icon"> Sign up with Google';
+        if (authEmailToggle) authEmailToggle.textContent = 'Sign up with email';
+        if (authPasswordInput) authPasswordInput.setAttribute('autocomplete', 'new-password');
+    } else {
+        if (authModalTitle) authModalTitle.textContent = 'Sign In';
+        if (authSubmitBtn) authSubmitBtn.textContent = 'Sign In';
+        if (authToggleText) authToggleText.textContent = "Don't have an account?";
+        if (authToggleBtn) authToggleBtn.textContent = 'Sign up';
+        if (authForgotBtn) authForgotBtn.classList.remove('hidden');
+        if (authGoogleBtn) authGoogleBtn.innerHTML = '<img src="images/google-icon.svg" alt="" class="auth-google-icon"> Sign in with Google';
+        if (authEmailToggle) authEmailToggle.textContent = 'Sign in with email';
+        if (authPasswordInput) authPasswordInput.setAttribute('autocomplete', 'current-password');
+    }
+}
+
+function getAuthErrorMessage(error) {
+    const msg = error?.message || '';
+    if (msg.includes('Invalid login credentials')) return 'Incorrect email or password.';
+    if (msg.includes('Email not confirmed')) return 'Please confirm your email before signing in. Check your inbox.';
+    if (msg.includes('User already registered')) return 'An account with this email already exists. Try signing in instead.';
+    if (msg.includes('Password should be at least')) return 'Password must be at least 8 characters.';
+    if (msg.includes('rate limit') || msg.includes('too many requests')) return 'Too many attempts. Please wait a moment and try again.';
+    if (msg.includes('Email rate limit exceeded')) return 'Too many emails sent. Please wait before trying again.';
+    return msg || 'Something went wrong. Please try again.';
+}
+
+async function handleEmailAuth() {
+    const email = authEmailInput?.value?.trim();
+    const password = authPasswordInput?.value;
+
+    if (!email || !password) {
+        showAuthError('Please enter both email and password.');
+        return;
+    }
+
+    authSubmitBtn.disabled = true;
+    authError?.classList.add('hidden');
+    authSuccess?.classList.add('hidden');
+
+    try {
+        if (authMode === 'signup') {
+            const { data, error } = await SupabaseAuth.signUpWithEmail(email, password);
+            if (error) {
+                showAuthError(getAuthErrorMessage(error));
+                return;
+            }
+            // Check if email already exists (identities will be empty)
+            if (data?.user?.identities?.length === 0) {
+                showAuthError('An account with this email already exists. Try signing in instead.');
+                return;
+            }
+            // Success - show confirmation message
+            showAuthSuccess('Check your email for a confirmation link to complete sign-up.');
+        } else {
+            const { data, error } = await SupabaseAuth.signInWithEmail(email, password);
+            if (error) {
+                showAuthError(getAuthErrorMessage(error));
+                return;
+            }
+            // Success - modal will close via onAuthChange SIGNED_IN event
+        }
+    } finally {
+        authSubmitBtn.disabled = false;
+    }
+}
+
+function showAuthError(message) {
+    if (authError) {
+        authError.textContent = message;
+        authError.classList.remove('hidden');
+    }
+    authSuccess?.classList.add('hidden');
+}
+
+function showAuthSuccess(message) {
+    if (authSuccess) {
+        authSuccess.textContent = message;
+        authSuccess.classList.remove('hidden');
+    }
+    authError?.classList.add('hidden');
+}
+
+function openResetModal(step = 'email') {
+    closeAuthModal();
+    resetModal?.classList.remove('hidden');
+    resetError?.classList.add('hidden');
+    resetNewError?.classList.add('hidden');
+
+    // Show appropriate step
+    resetStepEmail?.classList.toggle('hidden', step !== 'email');
+    resetStepSent?.classList.toggle('hidden', step !== 'sent');
+    resetStepNew?.classList.toggle('hidden', step !== 'new');
+}
+
+function closeResetModal() {
+    resetModal?.classList.add('hidden');
+    if (resetEmailInput) resetEmailInput.value = '';
+    if (resetNewPassword) resetNewPassword.value = '';
+    if (resetConfirmPassword) resetConfirmPassword.value = '';
+}
+
+async function handleResetRequest() {
+    const email = resetEmailInput?.value?.trim();
+    if (!email) {
+        if (resetError) { resetError.textContent = 'Please enter your email.'; resetError.classList.remove('hidden'); }
+        return;
+    }
+
+    resetSendBtn.disabled = true;
+    resetError?.classList.add('hidden');
+
+    try {
+        const { error } = await SupabaseAuth.resetPassword(email);
+        if (error) {
+            if (resetError) { resetError.textContent = getAuthErrorMessage(error); resetError.classList.remove('hidden'); }
+            return;
+        }
+        // Show confirmation step
+        openResetModal('sent');
+    } finally {
+        resetSendBtn.disabled = false;
+    }
+}
+
+async function handlePasswordUpdate() {
+    const newPass = resetNewPassword?.value;
+    const confirmPass = resetConfirmPassword?.value;
+
+    if (!newPass || !confirmPass) {
+        if (resetNewError) { resetNewError.textContent = 'Please fill in both fields.'; resetNewError.classList.remove('hidden'); }
+        return;
+    }
+    if (newPass !== confirmPass) {
+        if (resetNewError) { resetNewError.textContent = 'Passwords do not match.'; resetNewError.classList.remove('hidden'); }
+        return;
+    }
+    if (newPass.length < 8) {
+        if (resetNewError) { resetNewError.textContent = 'Password must be at least 8 characters.'; resetNewError.classList.remove('hidden'); }
+        return;
+    }
+
+    resetUpdateBtn.disabled = true;
+    resetNewError?.classList.add('hidden');
+
+    try {
+        const { error } = await SupabaseAuth.updatePassword(newPass);
+        if (error) {
+            if (resetNewError) { resetNewError.textContent = getAuthErrorMessage(error); resetNewError.classList.remove('hidden'); }
+            return;
+        }
+        closeResetModal();
+        // Show a brief toast/notification
+        showToast('Password updated successfully!');
+    } finally {
+        resetUpdateBtn.disabled = false;
+    }
+}
+
+function showToast(message) {
+    const toast = document.createElement('div');
+    toast.className = 'auth-toast';
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    requestAnimationFrame(() => toast.classList.add('visible'));
+    setTimeout(() => {
+        toast.classList.remove('visible');
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
+function initAuthModal() {
+    // Auth modal open/close
+    authModalClose?.addEventListener('click', closeAuthModal);
+    authModal?.addEventListener('click', (e) => {
+        if (e.target === authModal) closeAuthModal();
+    });
+
+    // Google sign-in button within auth modal
+    authGoogleBtn?.addEventListener('click', async () => {
+        closeAuthModal();
+        await SupabaseAuth.signInWithGoogle();
+    });
+
+    // Toggle email form visibility
+    authEmailToggle?.addEventListener('click', () => {
+        authEmailForm?.classList.remove('hidden');
+        authEmailToggle?.classList.add('hidden');
+        authEmailInput?.focus();
+    });
+
+    // Toggle between sign-in and sign-up
+    authToggleBtn?.addEventListener('click', () => {
+        authMode = authMode === 'signin' ? 'signup' : 'signin';
+        updateAuthModalMode();
+        authError?.classList.add('hidden');
+        authSuccess?.classList.add('hidden');
+    });
+
+    // Submit email auth
+    authSubmitBtn?.addEventListener('click', handleEmailAuth);
+
+    // Enter key on password field submits
+    authPasswordInput?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') handleEmailAuth();
+    });
+
+    // Forgot password
+    authForgotBtn?.addEventListener('click', () => {
+        openResetModal('email');
+        // Pre-fill email if user already typed one
+        if (authEmailInput?.value && resetEmailInput) {
+            resetEmailInput.value = authEmailInput.value;
+        }
+    });
+
+    // Reset modal close
+    resetModalClose?.addEventListener('click', closeResetModal);
+    resetModal?.addEventListener('click', (e) => {
+        if (e.target === resetModal) closeResetModal();
+    });
+
+    // Reset modal actions
+    resetSendBtn?.addEventListener('click', handleResetRequest);
+    resetEmailInput?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') handleResetRequest();
+    });
+    resetBackBtn?.addEventListener('click', () => {
+        closeResetModal();
+        openAuthModal();
+    });
+    resetUpdateBtn?.addEventListener('click', handlePasswordUpdate);
+    resetConfirmPassword?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') handlePasswordUpdate();
+    });
 }
 
 function closeListsModal() {
@@ -1627,8 +2407,31 @@ function init() {
     // Initialize flags module
     initFlags();
 
-    // Initialize song request module
-    initSongRequest();
+    // Initialize super-user request module
+    initSuperUserRequest();
+
+    // Initialize add-song picker and doc upload
+    initAddSongPicker({
+        onUpload: (ctx) => {
+            if (ctx?.targetSlug) prefillDocUpload(ctx);
+            showView('doc-upload');
+            pushHistoryState('doc-upload');
+        },
+        onChordPro: (ctx) => {
+            if (ctx?.targetSlug) {
+                enterEditMode({ id: ctx.targetSlug, title: ctx.title, artist: ctx.artist, key: ctx.key, content: '' });
+            } else {
+                navigateTo('add-song');
+            }
+        },
+    });
+    initDocUpload();
+
+    // Upload panel back button
+    document.getElementById('upload-back-btn')?.addEventListener('click', () => {
+        resetDocUpload();
+        navigateTo('search');
+    });
 
     // Initialize lists module (handles favorites as a special list)
     initLists({
@@ -1670,6 +2473,19 @@ function init() {
         navPosition,
         navListName,
         fullscreenBtn
+    });
+
+    // Set up smart list navigation router (routes to openWork for tab-only/multi-part works)
+    setListItemRouter((itemRef) => {
+        const { workId, partId } = parseItemRef(itemRef);
+        const song = allSongs.find(s => s.id === workId);
+        if (partId) {
+            openWork(workId, { partId, fromList: true });
+        } else if (song && (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song))) {
+            openWork(workId, { fromList: true });
+        } else {
+            openSong(workId, { fromList: true });
+        }
     });
 
     initSearch({
@@ -1719,6 +2535,9 @@ function init() {
         hintsBackdrop,
         hintsClose,
         autoDetectCheckbox,
+        editorTransposeUp,
+        editorTransposeDown,
+        editorKeySelect,
         navSearch,
         navAddSong,
         navFavorites,
@@ -1759,7 +2578,7 @@ function init() {
     // Navigation
     navHome?.addEventListener('click', () => navigateTo('home'));
     navSearch?.addEventListener('click', () => navigateTo('search'));
-    navAddSong?.addEventListener('click', () => navigateTo('add-song'));
+    navAddSong?.addEventListener('click', () => { closeSidebar(); if (!requireLogin('add songs')) return; openAddSongPicker(); });
     navFavorites?.addEventListener('click', () => navigateTo('favorites'));
     editorBackBtn?.addEventListener('click', () => navigateTo('search'));
 
@@ -1793,6 +2612,9 @@ function init() {
         }
     });
 
+    // Delete song button (admin only)
+    deleteSongBtn?.addEventListener('click', handleDeleteSong);
+
     // Manual sync button in account modal
     const forceSyncBtn = document.getElementById('force-sync-btn');
     forceSyncBtn?.addEventListener('click', async () => {
@@ -1825,6 +2647,7 @@ function init() {
     navFeedback?.addEventListener('click', (e) => {
         e.stopPropagation();
         closeSidebar();
+        if (!requireLogin('send feedback')) return;
         // Open contact modal directly for general feedback
         setTimeout(() => {
             openContactModal('Send Feedback', '');
@@ -1883,8 +2706,9 @@ function init() {
         e.stopPropagation();
         const song = getCurrentSong();
         if (song) {
-            showListPicker(song.id, listPickerBtn, {
-                onUpdate: () => updateTriggerButton(listPickerBtn, song.id)
+            const itemRef = getActiveItemRef() || song.id;
+            showListPicker(itemRef, listPickerBtn, {
+                onUpdate: () => updateTriggerButton(listPickerBtn, itemRef)
             });
         }
     });
@@ -2048,13 +2872,44 @@ function init() {
         layoutDropdown.style.left = `${Math.max(8, rect.left)}px`;
     }
 
+    // Map enharmonic key names to their chromatic array equivalents
+    const ENHARMONIC_TO_CHROMATIC = {
+        // Major keys - map flats to sharps where chromatic array uses sharps
+        'Db': 'C#', 'D#': 'Eb', 'Gb': 'F#', 'G#': 'Ab', 'A#': 'Bb',
+        // Minor keys - map alternatives to chromatic array spellings
+        'A#m': 'Bbm', 'D#m': 'Ebm', 'G#m': 'G#m' // G#m is in the array
+    };
+
+    function normalizeKeyForChromatic(key) {
+        return ENHARMONIC_TO_CHROMATIC[key] || key;
+    }
+
     function transposeBySemitone(direction) {
-        if (!currentDetectedKey || !originalDetectedKey) return;
+        if (!currentDetectedKey || !originalDetectedKey) {
+            return;
+        }
         const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-        const currentIndex = keys.indexOf(currentDetectedKey);
-        if (currentIndex === -1) return;
+        const normalizedKey = normalizeKeyForChromatic(currentDetectedKey);
+        const currentIndex = keys.indexOf(normalizedKey);
+        if (currentIndex === -1) {
+            return;
+        }
         const newIndex = (currentIndex + direction + keys.length) % keys.length;
-        setCurrentDetectedKey(keys[newIndex]);
+        const newKey = keys[newIndex];
+        setCurrentDetectedKey(newKey);
+
+        // Re-render based on whether we're viewing a work or song
+        const work = getCurrentWork();
+        if (work) {
+            renderWorkView();
+        } else {
+            const song = getCurrentSong();
+            const chordpro = getCurrentChordpro();
+            if (song && chordpro) {
+                renderSong(song, chordpro);
+            }
+        }
+        updateQuickControls();
     }
 
     function populateKeyDropdown() {
@@ -2232,8 +3087,10 @@ function init() {
             const song = getCurrentSong ? getCurrentSong() : currentSong;
             const btn = document.getElementById('add-to-list-btn');
             if (song && typeof showListPicker === 'function') {
-                showListPicker(song.id, btn, {
-                    onUpdate: () => updateTriggerButton(btn, song.id)
+                // Use part-qualified ref when viewing a specific part
+                const itemRef = getActiveItemRef() || song.id;
+                showListPicker(itemRef, btn, {
+                    onUpdate: () => updateTriggerButton(btn, itemRef)
                 });
             }
             return;
@@ -2318,29 +3175,57 @@ function init() {
 
     // Handle hash changes that don't trigger popstate (e.g. manual URL edits)
     window.addEventListener('hashchange', () => {
+        // For hash changes, always try to handle the hash first since the hash
+        // represents the current navigation target, not history.state which may be stale
+        if (handleDeepLink()) {
+            return;
+        }
+        // Fall back to state-based navigation if no hash match
         handleHistoryNavigation(history.state);
+    });
+
+    // Handle editor history push (from editor.js to avoid circular imports)
+    window.addEventListener('editor-push-history', (e) => {
+        const { view, songId } = e.detail;
+        pushHistoryState(view, { songId });
     });
 
     // Initialize Supabase auth
     if (typeof SupabaseAuth !== 'undefined') {
         SupabaseAuth.init();
         SupabaseAuth.onAuthChange((event, user) => {
-            updateAuthUI(user);
+            // Skip sign-out side effects for pre-session events (REGISTERED/INITIAL with null user)
+            // to avoid wiping localStorage lists before the session is determined.
+            // Only call handleListsSignOut on actual SIGNED_OUT events.
+            updateAuthUI(user, event);
             // Check for pending invite after sign-in
             if (event === 'SIGNED_IN' && user) {
                 checkPendingInvite();
+                closeAuthModal();
+            }
+            // Handle password recovery flow (user clicked reset link in email)
+            if (event === 'PASSWORD_RECOVERY') {
+                openResetModal('new');
             }
         });
 
-        signInBtn?.addEventListener('click', async () => {
-            closeAccountModal();
-            await SupabaseAuth.signInWithGoogle();
+        // Sign-in button opens auth modal (instead of directly calling Google)
+        signInBtn?.addEventListener('click', () => {
+            openAuthModal();
+        });
+
+        // Listen for cross-module auth modal open events
+        window.addEventListener('open-auth-modal', () => {
+            openAuthModal();
         });
 
         // Click on user info opens account modal
         userInfo?.addEventListener('click', () => {
             openAccountModal();
         });
+
+        // Wire up auth modal
+        initAuthModal();
 
         // Log visit and update visitor stats
         SupabaseAuth.logVisit().then(({ data }) => {
@@ -2365,6 +3250,16 @@ if (exitFullscreenBtn) {
 // Song view button (open bottom sheet with controls)
 if (songViewBtn) {
     songViewBtn.addEventListener('click', openSongControls);
+}
+
+// Work view button (navigate from song view to work dashboard)
+if (workViewBtn) {
+    workViewBtn.addEventListener('click', () => {
+        const song = getCurrentSong();
+        if (song) {
+            openWork(song.id);
+        }
+    });
 }
 
 // ============================================

@@ -1,0 +1,29 @@
+{
+  "slug": "dark-as-the-night",
+  "title": "Dark As The Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/dark-as-the-night/",
+  "raw_lyrics": "Dark as the night and blue as the day\nI\u2019m lonesome my darling since you went away\nSometimes I wonder what made you stray\nDark as the night and blue as the day.\n\nBlue as the sky there\u2019s blues in my heart\nYes it\u2019s dark outside since we\u2019ve been apart\nOh tell me please tell me why did you stray\nDark as the night I\u2019m blue as the day.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dark as the night and blue as the day",
+        "I\u2019m lonesome my darling since you went away",
+        "Sometimes I wonder what made you stray",
+        "Dark as the night and blue as the day."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Blue as the sky there\u2019s blues in my heart",
+        "Yes it\u2019s dark outside since we\u2019ve been apart",
+        "Oh tell me please tell me why did you stray",
+        "Dark as the night I\u2019m blue as the day."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

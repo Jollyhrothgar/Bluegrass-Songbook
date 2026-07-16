@@ -1,0 +1,39 @@
+{
+  "slug": "in-the-gravelyard",
+  "title": "In The Gravelyard",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-the-gravelyard/",
+  "raw_lyrics": "In the gravel yard, with a number for my name\nMaking little rocks out of big rocks all  day\nOh, the work is mighty hard in the gravel yard\nI\u2019ll never be a free man, so they say\n\nWarden hear my plea, listen now to me\nI killed a man that I caught with my wife\nYou\u2019d probably done the same, so I am not to blame\nSentenced to the rest of my life\n\nIn the driven rain with a ball and chain\nMy hammer rings a low mournful sound\nIt sings a little song for the ones who done me wrong\nWho lie beneath the cold, cold ground",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "In the gravel yard, with a number for my name",
+        "Making little rocks out of big rocks all  day",
+        "Oh, the work is mighty hard in the gravel yard",
+        "I\u2019ll never be a free man, so they say"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Warden hear my plea, listen now to me",
+        "I killed a man that I caught with my wife",
+        "You\u2019d probably done the same, so I am not to blame",
+        "Sentenced to the rest of my life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the driven rain with a ball and chain",
+        "My hammer rings a low mournful sound",
+        "It sings a little song for the ones who done me wrong",
+        "Who lie beneath the cold, cold ground"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

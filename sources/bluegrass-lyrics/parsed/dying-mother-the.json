@@ -1,0 +1,49 @@
+{
+  "slug": "dying-mother-the",
+  "title": "Dying Mother, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/dying-mother-the/",
+  "raw_lyrics": "On a cold winter\u2019s eve as the snowflakes were falling\nIn a low humble cottage a poor mother lay\nAlthough wracked with pain as she lay there contented\nWith her Savior, her Friend and peace with Him made\n\nWe will all meet again on that great Judgment morning\nThe books will be open, the roll will be called\nOh how sad it will be if forever we\u2019re parted\nWhile some rise to Glory while others stand the Fall\n\nOh that mother of yours has gone o\u2019er the river\nAnd you promised you\u2019d meet her while knelt by her bed\nAs the death sweat rolled off and fell down on her pillow\nOh, her mem\u2019ry still lives although she is dead\n\nYou remember the kiss and the last words she uttered\nOh the arms that embraced you are with you no more\nAs you stand by her grave teardrops fall on her casket\nAnd you vowed there to meet her on that happy shore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On a cold winter\u2019s eve as the snowflakes were falling",
+        "In a low humble cottage a poor mother lay",
+        "Although wracked with pain as she lay there contented",
+        "With her Savior, her Friend and peace with Him made"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "We will all meet again on that great Judgment morning",
+        "The books will be open, the roll will be called",
+        "Oh how sad it will be if forever we\u2019re parted",
+        "While some rise to Glory while others stand the Fall"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh that mother of yours has gone o\u2019er the river",
+        "And you promised you\u2019d meet her while knelt by her bed",
+        "As the death sweat rolled off and fell down on her pillow",
+        "Oh, her mem\u2019ry still lives although she is dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You remember the kiss and the last words she uttered",
+        "Oh the arms that embraced you are with you no more",
+        "As you stand by her grave teardrops fall on her casket",
+        "And you vowed there to meet her on that happy shore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

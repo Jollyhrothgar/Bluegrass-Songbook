@@ -1,0 +1,49 @@
+{
+  "slug": "toy-heart",
+  "title": "Toy Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/toy-heart/",
+  "raw_lyrics": "Darling, you toyed with toy heart\nI think you played the game right from the start\nThis toy heart was broken when parting words were spoken\nDarling, you toyed with a toy heart\n\nYou played with my poor heart like a toy\nThat toy broke and then we had to part\nIt never can be mended I hope this romance\u2019s ended\nDarling, you toyed with a toy heart\n\nNow darling my time will come some day\nTime alone will heal my broken heart\nThe clouds will roll away, the sun will shine someday\nDarling, you toyed with a toy hear\n\nNow darling you know you\u2019ve done me wrong\nYour love for me has passed and gone\nI\u2019ll find somebody new, I hope that they\u2019ll be true\nDarling you toyed with a toy heart",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Darling, you toyed with toy heart",
+        "I think you played the game right from the start",
+        "This toy heart was broken when parting words were spoken",
+        "Darling, you toyed with a toy heart"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You played with my poor heart like a toy",
+        "That toy broke and then we had to part",
+        "It never can be mended I hope this romance\u2019s ended",
+        "Darling, you toyed with a toy heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now darling my time will come some day",
+        "Time alone will heal my broken heart",
+        "The clouds will roll away, the sun will shine someday",
+        "Darling, you toyed with a toy hear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now darling you know you\u2019ve done me wrong",
+        "Your love for me has passed and gone",
+        "I\u2019ll find somebody new, I hope that they\u2019ll be true",
+        "Darling you toyed with a toy heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

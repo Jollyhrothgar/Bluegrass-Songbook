@@ -1,0 +1,52 @@
+{
+  "slug": "walkin-down-the-line",
+  "title": "Walkin Down The Line",
+  "source_url": "https://www.bluegrasslyrics.com/song/walkin-down-the-line/",
+  "raw_lyrics": "Well I\u2019m walking down the line\nI\u2019m walking down the line\nI\u2019m walking down the line\nMy feet\u2019ll be a flyin\u2019\nTo tell  about my troubled mind\n\nI\u2019ve got a heavy headed gal\nI\u2019ve got a heavy headed gal\nI\u2019ve got a heavy headed gal\nShe ain\u2019t a feeling well\nWhen she\u2019s better only time will tell\n\nMy money comes and goes\nMy money comes and goes\nMy money comes and goes\nAnd rolls and flows\nThrough the holes in the pockets of my clothes\n\nI see the morning light\nI see the morning light\nWell it\u2019s not because I\u2019m an early riser\nI didn\u2019t go to sleep last night",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Well I\u2019m walking down the line",
+        "I\u2019m walking down the line",
+        "I\u2019m walking down the line",
+        "My feet\u2019ll be a flyin\u2019",
+        "To tell  about my troubled mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got a heavy headed gal",
+        "I\u2019ve got a heavy headed gal",
+        "I\u2019ve got a heavy headed gal",
+        "She ain\u2019t a feeling well",
+        "When she\u2019s better only time will tell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My money comes and goes",
+        "My money comes and goes",
+        "My money comes and goes",
+        "And rolls and flows",
+        "Through the holes in the pockets of my clothes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I see the morning light",
+        "I see the morning light",
+        "Well it\u2019s not because I\u2019m an early riser",
+        "I didn\u2019t go to sleep last night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

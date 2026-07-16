@@ -1,0 +1,40 @@
+{
+  "slug": "now-my-flowers-gone-away",
+  "title": "Now My Flower\u2019s Gone Away",
+  "source_url": "https://www.bluegrasslyrics.com/song/now-my-flowers-gone-away/",
+  "raw_lyrics": "I\nThe only love I ever wanted\nI lost so many years ago\nThe Saviour\u2019s called her up to heaven\nBut I\u2019ll see her some sweet day I know\n\nI\u2019ve waited so long for you my darling\nYou know out love could be so grand\nI\u2019ve lost the one whose love I cherished\nAnd now she\u2019s with an angel band.\n\nWe grew from childhood days together\nI knew she\u2019d be mine some sweet day\nA lovely flower that was bloomin\u2019\nAnd now my flower\u2019s gone away.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I",
+        "The only love I ever wanted",
+        "I lost so many years ago",
+        "The Saviour\u2019s called her up to heaven",
+        "But I\u2019ll see her some sweet day I know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve waited so long for you my darling",
+        "You know out love could be so grand",
+        "I\u2019ve lost the one whose love I cherished",
+        "And now she\u2019s with an angel band."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "We grew from childhood days together",
+        "I knew she\u2019d be mine some sweet day",
+        "A lovely flower that was bloomin\u2019",
+        "And now my flower\u2019s gone away."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "something-in-my-heart",
+  "title": "Something In My Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/something-in-my-heart/",
+  "raw_lyrics": "Well I thought I was over you and that my heart was free\nI felt like those old memories had finally let me be\nSo I picked up the phone to call a girl that I once knew\nBut when she said \u201cHi\u201d well girl you know I wished that it was you\n\nSomething in my heart sure makes it hard to love again\nSomething \u2019bout the way you broke it just won\u2019t seem to mend\nSomething in my mind tells me your memory has to end\nSomething in my heart sure makes it hard to love again\n\nIt seem like only yesterday you promised you\u2019d be mine\nAnd I sure thought I heard you say until the end of time\nWell I guess I was wrong to think your love for me was true\nSo here I am all broken hearted all because of you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I thought I was over you and that my heart was free",
+        "I felt like those old memories had finally let me be",
+        "So I picked up the phone to call a girl that I once knew",
+        "But when she said \u201cHi\u201d well girl you know I wished that it was you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Something in my heart sure makes it hard to love again",
+        "Something \u2019bout the way you broke it just won\u2019t seem to mend",
+        "Something in my mind tells me your memory has to end",
+        "Something in my heart sure makes it hard to love again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It seem like only yesterday you promised you\u2019d be mine",
+        "And I sure thought I heard you say until the end of time",
+        "Well I guess I was wrong to think your love for me was true",
+        "So here I am all broken hearted all because of you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "stormy-waters",
+  "title": "Stormy Waters",
+  "source_url": "https://www.bluegrasslyrics.com/song/stormy-waters/",
+  "raw_lyrics": "Though a pilgrim on earth I may journey alone\nKnowing not what the future may hold may hold\nI\u2019d rather have Jesus and sing a sweet song\nThan to covet their silver and gold\n\nStormy water around me and the tempest and fury may roll\nBut I have my dear Saviour how he helps me nobody can know\nWhen it seems I\u2019m forsaken and my earthly friends misunderstand\nStormy waters surround me but I\u2019ll hold to God\u2019s unchanging hand\n\nAngry billows may toss me and cause me to fear\nStormy waters around me may roll\nI will hold to the hand of my Saviour so dear\nHe\u2019s the Shepherd that\u2019s keeping my soul\n\nThough I have disappointments so often I sigh\nAnd my cabin is humble and bare\nBut someday I\u2019ll inhearit a mansion on high\nWhere the beauties of heaven I\u2019ll share",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Though a pilgrim on earth I may journey alone",
+        "Knowing not what the future may hold may hold",
+        "I\u2019d rather have Jesus and sing a sweet song",
+        "Than to covet their silver and gold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Stormy water around me and the tempest and fury may roll",
+        "But I have my dear Saviour how he helps me nobody can know",
+        "When it seems I\u2019m forsaken and my earthly friends misunderstand",
+        "Stormy waters surround me but I\u2019ll hold to God\u2019s unchanging hand"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Angry billows may toss me and cause me to fear",
+        "Stormy waters around me may roll",
+        "I will hold to the hand of my Saviour so dear",
+        "He\u2019s the Shepherd that\u2019s keeping my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though I have disappointments so often I sigh",
+        "And my cabin is humble and bare",
+        "But someday I\u2019ll inhearit a mansion on high",
+        "Where the beauties of heaven I\u2019ll share"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

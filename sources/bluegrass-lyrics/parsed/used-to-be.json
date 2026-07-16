@@ -1,0 +1,39 @@
+{
+  "slug": "used-to-be",
+  "title": "Used To Be",
+  "source_url": "https://www.bluegrasslyrics.com/song/used-to-be/",
+  "raw_lyrics": "Well you don\u2019t love me anymore my darling\nI\u2019m just a used to be to you\nThose cold cold kisses that you gave me little darling\nProved to me you found somebody new\n\nTomorrow\u2019s just another lonesome day\nAnd I know you\u2019ll want me far away\nWell you don\u2019t love me anymore my darling\nI\u2019m just a used to be to you\n\nGone are the good old days that we spent together\nAnd I don\u2019t know if I can stand the pain\nOf knowing that you\u2019ll soon be gone forever\nAnd I\u2019ll never know your love again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well you don\u2019t love me anymore my darling",
+        "I\u2019m just a used to be to you",
+        "Those cold cold kisses that you gave me little darling",
+        "Proved to me you found somebody new"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tomorrow\u2019s just another lonesome day",
+        "And I know you\u2019ll want me far away",
+        "Well you don\u2019t love me anymore my darling",
+        "I\u2019m just a used to be to you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Gone are the good old days that we spent together",
+        "And I don\u2019t know if I can stand the pain",
+        "Of knowing that you\u2019ll soon be gone forever",
+        "And I\u2019ll never know your love again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

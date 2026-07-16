@@ -1,0 +1,47 @@
+{
+  "slug": "oh-suzanna",
+  "title": "Oh Suzanna",
+  "source_url": "https://www.bluegrasslyrics.com/song/oh-suzanna/",
+  "raw_lyrics": "I come from Alabama with a banjo on my knee\nI\u2019m going to Louisiana my true love for to see\nIt rained all night the day I left the weather it was dry\nSun so hot I froze to death Suzanna don\u2019t you cry\n\nOh, Suzanna  don\u2019t you cry for me\nI come from Alabama with a banjo on my knee\n\nI had a dream the other night when everything was still\nI dreamt I saw Suzanna way up on the hill\nBuckwheat cakes was in her mouth, the tears was in her eyes\nSaid I\u2019m a comin from the south Suzanna don\u2019t you cry\n\nI\u2019m headed down to New Orleans and there I\u2019ll look around\nAnd if I do not find Suzanna I\u2019ll fall upon the ground\nAnd if I do not find her then I\u2019ll surely die\nAnd when I\u2019m dead and buried, Suzanna don\u2019t you cry",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I come from Alabama with a banjo on my knee",
+        "I\u2019m going to Louisiana my true love for to see",
+        "It rained all night the day I left the weather it was dry",
+        "Sun so hot I froze to death Suzanna don\u2019t you cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, Suzanna  don\u2019t you cry for me",
+        "I come from Alabama with a banjo on my knee"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had a dream the other night when everything was still",
+        "I dreamt I saw Suzanna way up on the hill",
+        "Buckwheat cakes was in her mouth, the tears was in her eyes",
+        "Said I\u2019m a comin from the south Suzanna don\u2019t you cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m headed down to New Orleans and there I\u2019ll look around",
+        "And if I do not find Suzanna I\u2019ll fall upon the ground",
+        "And if I do not find her then I\u2019ll surely die",
+        "And when I\u2019m dead and buried, Suzanna don\u2019t you cry"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

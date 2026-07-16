@@ -1,0 +1,99 @@
+{
+  "slug": "oh-death",
+  "title": "Oh Death",
+  "source_url": "https://www.bluegrasslyrics.com/song/oh-death/",
+  "raw_lyrics": "Oh death, oh death\nWon\u2019t you spare me over til another year\n\nWell what is this that I can\u2019t see With ice cold hands taking hold of me\nWell I am death none can excel I\u2019ll open the door to heaven or hell\n\nWhoa death someone would pray Could you wait to call me til another day\nThe children pray the preacher preached Time and mercy is out of your reach\n\nI\u2019ll fix your feet til you can\u2019t walk I\u2019ll lock your jaw til you can\u2019t talk\nI\u2019ll close your eyes so you can\u2019t see This very hour come and go with me\n\nIn death I come to take the soul Leave the body and leave it cold\nTo drop the flesh off of the frame  The earth and worms both have a claim\n\nOh death, oh death\nWon\u2019t you spare me over til another year\n\nMy mother came to my bed Place a cold towel upon my head\nMy head is warm my feet are cold Death is a movin upon my soul\n\nOh death how you\u2019re treatin me You close my eyes so I can\u2019t see\nWell you\u2019re hurtin my body you make me cold You run my life right out of my soul\n\nOh death please consider my age Please don\u2019t take me at this stage\nMy wealth is all at your command If you\u2019ll remove your icy hands\n\nOh the young the rich or poor All alike to me you know\nNo wealth no land no silver or gold Nothin satisfies my but your soul\n\nOh death,  oh death\nWon\u2019t you spare me over til another year\nWon\u2019t you spare me over til another year\nWon\u2019t you spare me over til another year",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh death, oh death",
+        "Won\u2019t you spare me over til another year"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well what is this that I can\u2019t see With ice cold hands taking hold of me",
+        "Well I am death none can excel I\u2019ll open the door to heaven or hell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Whoa death someone would pray Could you wait to call me til another day",
+        "The children pray the preacher preached Time and mercy is out of your reach"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll fix your feet til you can\u2019t walk I\u2019ll lock your jaw til you can\u2019t talk",
+        "I\u2019ll close your eyes so you can\u2019t see This very hour come and go with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In death I come to take the soul Leave the body and leave it cold",
+        "To drop the flesh off of the frame  The earth and worms both have a claim"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh death, oh death",
+        "Won\u2019t you spare me over til another year"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother came to my bed Place a cold towel upon my head",
+        "My head is warm my feet are cold Death is a movin upon my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh death how you\u2019re treatin me You close my eyes so I can\u2019t see",
+        "Well you\u2019re hurtin my body you make me cold You run my life right out of my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh death please consider my age Please don\u2019t take me at this stage",
+        "My wealth is all at your command If you\u2019ll remove your icy hands"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the young the rich or poor All alike to me you know",
+        "No wealth no land no silver or gold Nothin satisfies my but your soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh death,  oh death",
+        "Won\u2019t you spare me over til another year",
+        "Won\u2019t you spare me over til another year",
+        "Won\u2019t you spare me over til another year"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

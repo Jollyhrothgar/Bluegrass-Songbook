@@ -1,0 +1,49 @@
+{
+  "slug": "we-cant-be-darlings-anymore",
+  "title": "We Can\u2019t Be Darlings Anymore",
+  "source_url": "https://www.bluegrasslyrics.com/song/we-cant-be-darlings-anymore/",
+  "raw_lyrics": "Darling you often said you loved me\nBut you\u2019ve gone on before\nYou don\u2019t know dear how I miss you\nBut we can\u2019t be darlings anymore\n\nDarling I am sad and lonely\nSince you\u2019ve gone on before\nSo down here on this lonely earth dear\nWe can\u2019t be darlings anymore\n\nUntil we meet up there in heaven\nAnd we can walk the golden shore\nFor down here on this lonely earth dear\nWe can\u2019t be darlings anymore\n\nI have lost a million tears dear\nSince you\u2019ve left this world and gone\nBut we can never again be darlings\nTill we meet around the throne",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Darling you often said you loved me",
+        "But you\u2019ve gone on before",
+        "You don\u2019t know dear how I miss you",
+        "But we can\u2019t be darlings anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Darling I am sad and lonely",
+        "Since you\u2019ve gone on before",
+        "So down here on this lonely earth dear",
+        "We can\u2019t be darlings anymore"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Until we meet up there in heaven",
+        "And we can walk the golden shore",
+        "For down here on this lonely earth dear",
+        "We can\u2019t be darlings anymore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have lost a million tears dear",
+        "Since you\u2019ve left this world and gone",
+        "But we can never again be darlings",
+        "Till we meet around the throne"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

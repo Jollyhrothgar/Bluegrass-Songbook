@@ -1,0 +1,40 @@
+{
+  "slug": "wouldnt-change-you-if-i-could",
+  "title": "Wouldn\u2019t Change You If I Could",
+  "source_url": "https://www.bluegrasslyrics.com/song/wouldnt-change-you-if-i-could/",
+  "raw_lyrics": "I wouldn\u2019t change a single thing about you if I could\nThe way you are just suits me to a tee\nA princess in a story book a King upon his throne\nThat\u2019s what we are and you belong to me\n\nI wouldn\u2019t change you if I could I love you as you are\nYou\u2019re all that I would wish for if I wished upon a star\nAn angel sent from heaven you\u2019re everything that\u2019s good\nYou\u2019re perfect just the way you are\nI wouldn\u2019t change you if I could\n\nYour eyes your lips your tehder smile I\u2019d leave them as they are\nAnd come what may I\u2019d never change a thing\nAnd if I were a potter and you a piece of clay\nThe only thing I\u2019d change would be your name",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wouldn\u2019t change a single thing about you if I could",
+        "The way you are just suits me to a tee",
+        "A princess in a story book a King upon his throne",
+        "That\u2019s what we are and you belong to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wouldn\u2019t change you if I could I love you as you are",
+        "You\u2019re all that I would wish for if I wished upon a star",
+        "An angel sent from heaven you\u2019re everything that\u2019s good",
+        "You\u2019re perfect just the way you are",
+        "I wouldn\u2019t change you if I could"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your eyes your lips your tehder smile I\u2019d leave them as they are",
+        "And come what may I\u2019d never change a thing",
+        "And if I were a potter and you a piece of clay",
+        "The only thing I\u2019d change would be your name"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

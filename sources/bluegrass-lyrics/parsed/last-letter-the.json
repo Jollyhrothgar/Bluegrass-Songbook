@@ -1,0 +1,49 @@
+{
+  "slug": "last-letter-the",
+  "title": "Last Letter, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/last-letter-the/",
+  "raw_lyrics": "Why do you treat me as if I was only a friend\nWhat have I done that has made you so different and cold\nSometimes I wonder if you\u2019ll be contented again\nWill you be happy when you are withered and old\n\nI cannot offer you diamonds or mansions so fine\nI cannot offer you clothes that your young body craves\nBut if you\u2019ll say that you forever long to be mine\nThink of the heartaches, the sorrows and tears you will save\n\nWhen you are lonely and tired of another man\u2019s gold\nWhen you are weary, remember this letter, my own\nDon\u2019t try to answer though I\u2019ll suffer anguish unknown\nIf you don\u2019t love me I wish you would leave me alone\n\nWhile I am writing this letter I think of our past\nAnd of the promises that you are breaking so free\nBut to this old world, I\u2019ll soon say my farewell at last\nI will be gone when you read this last letter from me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Why do you treat me as if I was only a friend",
+        "What have I done that has made you so different and cold",
+        "Sometimes I wonder if you\u2019ll be contented again",
+        "Will you be happy when you are withered and old"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I cannot offer you diamonds or mansions so fine",
+        "I cannot offer you clothes that your young body craves",
+        "But if you\u2019ll say that you forever long to be mine",
+        "Think of the heartaches, the sorrows and tears you will save"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you are lonely and tired of another man\u2019s gold",
+        "When you are weary, remember this letter, my own",
+        "Don\u2019t try to answer though I\u2019ll suffer anguish unknown",
+        "If you don\u2019t love me I wish you would leave me alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While I am writing this letter I think of our past",
+        "And of the promises that you are breaking so free",
+        "But to this old world, I\u2019ll soon say my farewell at last",
+        "I will be gone when you read this last letter from me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

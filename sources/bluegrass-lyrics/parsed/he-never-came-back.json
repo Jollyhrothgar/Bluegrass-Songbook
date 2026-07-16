@@ -1,0 +1,47 @@
+{
+  "slug": "he-never-came-back",
+  "title": "He Never Came Back",
+  "source_url": "https://www.bluegrasslyrics.com/song/he-never-came-back/",
+  "raw_lyrics": "An old Jane about 49 came in to view the town\nShe registered up at Smith\u2019s Hotel as Miss Ada Brown\nShe said she was just 25 and that she was in love\nWith a young lad about 16, she called him her turtledove\n\nThe wedding day at last arrived, the birds did merrily sing\nHe touched her up for a hundred to go out and buy the ring\n\nHe never came back, no, he never came back\nHe\u2019s been gone for a year or more\nThat sassy young thing better have that ring\nWhen we meet on that beautiful shore\n\nI went down to a restaurant as hungry as a bear\nAnd a raving thief I did, I grabbed the bill of fare\nThe waiter said, now what for you, a piece of steak, I said\nHe taken my order and bowed his head and slowly walked away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "An old Jane about 49 came in to view the town",
+        "She registered up at Smith\u2019s Hotel as Miss Ada Brown",
+        "She said she was just 25 and that she was in love",
+        "With a young lad about 16, she called him her turtledove"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The wedding day at last arrived, the birds did merrily sing",
+        "He touched her up for a hundred to go out and buy the ring"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "He never came back, no, he never came back",
+        "He\u2019s been gone for a year or more",
+        "That sassy young thing better have that ring",
+        "When we meet on that beautiful shore"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went down to a restaurant as hungry as a bear",
+        "And a raving thief I did, I grabbed the bill of fare",
+        "The waiter said, now what for you, a piece of steak, I said",
+        "He taken my order and bowed his head and slowly walked away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

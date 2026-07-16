@@ -1,0 +1,41 @@
+{
+  "slug": "too-late-to-walk-the-floor",
+  "title": "Too Late To Walk The Floor",
+  "source_url": "https://www.bluegrasslyrics.com/song/too-late-to-walk-the-floor/",
+  "raw_lyrics": "All last night I sat and cried I cried the night before\nIf that gal don\u2019t come back tonight I\u2019ll cry somemore\n\nIt\u2019s too late to walk the floor It\u2019s too late to cry\nIt\u2019s too late to worry About tear drops in my eyes\n\nI done her wrong I know I did I cheated on the sly\nShe found out and now she\u2019s gone I walk the floor and cry\n\nNow I can\u2019t stand this loneliness four walls and the floor\nPlease come back darlin\u2019 I can\u2019t stand this any more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All last night I sat and cried I cried the night before",
+        "If that gal don\u2019t come back tonight I\u2019ll cry somemore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s too late to walk the floor It\u2019s too late to cry",
+        "It\u2019s too late to worry About tear drops in my eyes"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I done her wrong I know I did I cheated on the sly",
+        "She found out and now she\u2019s gone I walk the floor and cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I can\u2019t stand this loneliness four walls and the floor",
+        "Please come back darlin\u2019 I can\u2019t stand this any more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

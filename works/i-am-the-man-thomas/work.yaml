@@ -1,0 +1,11 @@
+id: i-am-the-man-thomas
+title: I Am The Man, Thomas
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-am-the-man-thomas/
+      imported_at: '2026-02-08'

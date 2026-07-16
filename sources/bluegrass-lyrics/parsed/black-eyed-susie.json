@@ -1,0 +1,114 @@
+{
+  "slug": "black-eyed-susie",
+  "title": "Black Eyed Susie",
+  "source_url": "https://www.bluegrasslyrics.com/song/black-eyed-susie/",
+  "raw_lyrics": "Black eyed Susie went to town\nAll she wore was a gingham gown\n\nHey Black eyed Susie\nHo Black eyed Susie\nHey Black eyed Susie Jane.\n\nI may get drunk I may get woozy\nBut I\u2019m comin\u2019 home to Black eyed Susie\n\nBlack eyed Susie\u2019s long and tall\nSleeps in the kitchen with her feet in the hall\n\nHey old man I want your daughter\nTo chop my wood and carry my water\n\nBlack eyed Susie lives in a holler\nShe won\u2019t come and I won\u2019t call her\n\nAll I want in this creation\nPretty little wife on a big plantation.\n\nAll I need to make me happy\nTwo little boys to call me Pappy.\n\nOne name Sop and the other name Gravy\nOne sop it up and the other gonna save it.\n\nUp Red Oak and down salt water\nSome old man gonna lose his daughter.\n\nBlack eyed Susie went huckleberry pickin\u2019\nCame home late and took a lickin\u2019.\n\nLove my wife and love my baby\nLove my biscuits sopped in gravy.\n\nGoin\u2019 back home with a pocket full of money\nSomebody there to call me honey.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Black eyed Susie went to town",
+        "All she wore was a gingham gown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hey Black eyed Susie",
+        "Ho Black eyed Susie",
+        "Hey Black eyed Susie Jane."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I may get drunk I may get woozy",
+        "But I\u2019m comin\u2019 home to Black eyed Susie"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Black eyed Susie\u2019s long and tall",
+        "Sleeps in the kitchen with her feet in the hall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hey old man I want your daughter",
+        "To chop my wood and carry my water"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Black eyed Susie lives in a holler",
+        "She won\u2019t come and I won\u2019t call her"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All I want in this creation",
+        "Pretty little wife on a big plantation."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All I need to make me happy",
+        "Two little boys to call me Pappy."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One name Sop and the other name Gravy",
+        "One sop it up and the other gonna save it."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Up Red Oak and down salt water",
+        "Some old man gonna lose his daughter."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Black eyed Susie went huckleberry pickin\u2019",
+        "Came home late and took a lickin\u2019."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Love my wife and love my baby",
+        "Love my biscuits sopped in gravy."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goin\u2019 back home with a pocket full of money",
+        "Somebody there to call me honey."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "lonely-moon",
+  "title": "Lonely Moon",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonely-moon/",
+  "raw_lyrics": "Lonely moon lonely moon won\u2019t you shine in this cell\nAnd tell me that she\u2019s doing well\nLonely moon won\u2019t you tell her I want her for mine\nBut don\u2019t push her she has her own mind.\n\nAs we gaze and admire the same shining stars\nThough our distances are far\nWe can both watch the moon go down o\u2019er the land\nAs if we were hand in hand.\n\nSouls can be together while bodies are alone\nLove can melt bars and climb walls of stone\nWe can both watch the moon go down o\u2019er the land\nAs if we were hand in hand.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Lonely moon lonely moon won\u2019t you shine in this cell",
+        "And tell me that she\u2019s doing well",
+        "Lonely moon won\u2019t you tell her I want her for mine",
+        "But don\u2019t push her she has her own mind."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As we gaze and admire the same shining stars",
+        "Though our distances are far",
+        "We can both watch the moon go down o\u2019er the land",
+        "As if we were hand in hand."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Souls can be together while bodies are alone",
+        "Love can melt bars and climb walls of stone",
+        "We can both watch the moon go down o\u2019er the land",
+        "As if we were hand in hand."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

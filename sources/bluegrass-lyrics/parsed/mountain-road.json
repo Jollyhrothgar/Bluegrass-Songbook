@@ -1,0 +1,39 @@
+{
+  "slug": "mountain-road",
+  "title": "Mountain Road",
+  "source_url": "https://www.bluegrasslyrics.com/song/mountain-road/",
+  "raw_lyrics": "There\u2019s a little road back in the mountains\nThat I traveled on when just a kid\nMany years ago I was bound to travel\nNow I\u2019m sorry for the things I did\n\nI remember how my Mom was weeping\nAs she held me close whispered son don\u2019t go\nAnd Daddy\u2019s out stretched hand was trembling\nHis heart was breaking now I know\n\nAfter many years I came to see them\nMy joy to grief turned like a stone\nTwo graves with words please hurry home son\nWe\u2019re waiting for you by your mountain road",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a little road back in the mountains",
+        "That I traveled on when just a kid",
+        "Many years ago I was bound to travel",
+        "Now I\u2019m sorry for the things I did"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember how my Mom was weeping",
+        "As she held me close whispered son don\u2019t go",
+        "And Daddy\u2019s out stretched hand was trembling",
+        "His heart was breaking now I know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "After many years I came to see them",
+        "My joy to grief turned like a stone",
+        "Two graves with words please hurry home son",
+        "We\u2019re waiting for you by your mountain road"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

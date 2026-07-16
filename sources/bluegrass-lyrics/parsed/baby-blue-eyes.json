@@ -1,0 +1,49 @@
+{
+  "slug": "baby-blue-eyes",
+  "title": "Baby Blue Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/baby-blue-eyes/",
+  "raw_lyrics": "I wonder if I\u2019ll ever forget you\nAnd if our love that\u2019s true ever dies\nI can\u2019t forget the kisses you gave me\nOr memories of your two baby blue eyes\n\nI\u2019ll always keep a memory of you\nVisions of eyes as blue as the sky\nAnd that\u2019s why each night there\u2019s tears on my pillow\nI\u2019m dreaming of your two baby blue eyes\n\nNow when day is done and shadows are fallen\u2019\nMy love will sleep \u2019til morning sunrise\nI lay awake just tossing and turning\nI\u2019m longing for dreams of baby blue eyes\n\nNow day after day try to keep smiling\nAnd a broken heart I try to disguise\nNow night after night my lonely heart\u2019s calling\nIt\u2019s calling for you my baby blue eyes",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wonder if I\u2019ll ever forget you",
+        "And if our love that\u2019s true ever dies",
+        "I can\u2019t forget the kisses you gave me",
+        "Or memories of your two baby blue eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll always keep a memory of you",
+        "Visions of eyes as blue as the sky",
+        "And that\u2019s why each night there\u2019s tears on my pillow",
+        "I\u2019m dreaming of your two baby blue eyes"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when day is done and shadows are fallen\u2019",
+        "My love will sleep \u2019til morning sunrise",
+        "I lay awake just tossing and turning",
+        "I\u2019m longing for dreams of baby blue eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now day after day try to keep smiling",
+        "And a broken heart I try to disguise",
+        "Now night after night my lonely heart\u2019s calling",
+        "It\u2019s calling for you my baby blue eyes"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

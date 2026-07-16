@@ -1,0 +1,49 @@
+{
+  "slug": "the-greenville-trestle",
+  "title": "The Greenville Trestle",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-greenville-trestle/",
+  "raw_lyrics": "I remember as a boy how in wonderment and joy\nI\u2019d watch the trains as they\u2019d go by\nAnd the whistle\u2019s lonesome sound you could here from miles around\nAs they rolled across that Greenville Trestle high.\n\nBut the whistles don\u2019t sound like they used to\nLately not many trains go by\nHard times across the land mean no work for a railroad man\nAnd the Greenville Trestle now don\u2019t seem so high.\n\nOn the riverbank I\u2019d stand with a cane pole in my hand\nAnd watch the freight trains up against the sky\nWith the black smoke trailing back as they moved along the track\nThat runs across that Greenville Trestle high.\n\nWhen the lonesome whistles whined I\u2019d get rambling on my mind\nLord I wish they still sounded that way\nAs I turned to head for home Lord she\u2019d rumble low and long\nToward the sunset at the close of day.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I remember as a boy how in wonderment and joy",
+        "I\u2019d watch the trains as they\u2019d go by",
+        "And the whistle\u2019s lonesome sound you could here from miles around",
+        "As they rolled across that Greenville Trestle high."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "But the whistles don\u2019t sound like they used to",
+        "Lately not many trains go by",
+        "Hard times across the land mean no work for a railroad man",
+        "And the Greenville Trestle now don\u2019t seem so high."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On the riverbank I\u2019d stand with a cane pole in my hand",
+        "And watch the freight trains up against the sky",
+        "With the black smoke trailing back as they moved along the track",
+        "That runs across that Greenville Trestle high."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the lonesome whistles whined I\u2019d get rambling on my mind",
+        "Lord I wish they still sounded that way",
+        "As I turned to head for home Lord she\u2019d rumble low and long",
+        "Toward the sunset at the close of day."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

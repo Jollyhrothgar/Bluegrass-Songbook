@@ -1,0 +1,49 @@
+{
+  "slug": "a-broken-tie",
+  "title": "A Broken Tie",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-broken-tie/",
+  "raw_lyrics": "I was born in the heart of the country\nIn a town in the middle of the land\nI grew up in a second city\nSince I left my home I\u2019ve been travellin\u2019 back.\n\nTo a time when a family tried to stay together\nBack to the time when a love survived\nWhen a woman and a man built a home forever\nAnd they tied a knot for the rest of their lives.\n\nMy brother\u2019s gone to New York City\nAnd I find myself in a corner of the west\nMy mom and daddy left their home and each other\nTen miles apart, more apart than the rest.\n\nI\u2019m singing songs of the poor and the homeless\nI\u2019m singing songs of a love that died\nBut my saddest song is the song of a family\nA million miles apart with a broken tie.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was born in the heart of the country",
+        "In a town in the middle of the land",
+        "I grew up in a second city",
+        "Since I left my home I\u2019ve been travellin\u2019 back."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "To a time when a family tried to stay together",
+        "Back to the time when a love survived",
+        "When a woman and a man built a home forever",
+        "And they tied a knot for the rest of their lives."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My brother\u2019s gone to New York City",
+        "And I find myself in a corner of the west",
+        "My mom and daddy left their home and each other",
+        "Ten miles apart, more apart than the rest."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m singing songs of the poor and the homeless",
+        "I\u2019m singing songs of a love that died",
+        "But my saddest song is the song of a family",
+        "A million miles apart with a broken tie."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

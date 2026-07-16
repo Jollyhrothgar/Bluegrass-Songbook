@@ -1,0 +1,69 @@
+{
+  "slug": "little-moses",
+  "title": "Little Moses",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-moses/",
+  "raw_lyrics": "Away by the waters so blue\nThe ladies were winding their way\nWhile Pharaoh\u2019s little daughter went down to the water\nTo bathe in the cool of the day\nBefore it was dark she opened the ark\nAnd found the sweet babe that was there\n\nAnd away by the waters so blue\nThe infant was lonely and sad\nShe took him in pity and thought him so pretty\nAnd it made little Moses so glad\nShe called him her own, her beautiful son\nAnd she sent for a nurse who was near\n\nAnd away by the waters so blue\nThey carried that beautiful child\nTo his tender mother, to his sister and brothers\nLittle Moses looked happy and smiled\nHis mother so good did all that she could\nTo raise him and teach him with care\n\nAnd away by the sea that was red\nLittle Moses the servant of God\nWhile in him confided, the sea was divided\nAs upwards he lifted his rod\nAnd the Jews safely crossed while Pharaoh\u2019s host\nWas drownded in the waters and lost\n\nAnd away on a mountain so high\nThe last that he ever did see\nWith Israel victorious, his hopes were most glorious\nThat soon all the Jordan be free\nWhen his spirit did cease, he departed in peace\nAnd rested in the Heavens above",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Away by the waters so blue",
+        "The ladies were winding their way",
+        "While Pharaoh\u2019s little daughter went down to the water",
+        "To bathe in the cool of the day",
+        "Before it was dark she opened the ark",
+        "And found the sweet babe that was there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And away by the waters so blue",
+        "The infant was lonely and sad",
+        "She took him in pity and thought him so pretty",
+        "And it made little Moses so glad",
+        "She called him her own, her beautiful son",
+        "And she sent for a nurse who was near"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And away by the waters so blue",
+        "They carried that beautiful child",
+        "To his tender mother, to his sister and brothers",
+        "Little Moses looked happy and smiled",
+        "His mother so good did all that she could",
+        "To raise him and teach him with care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And away by the sea that was red",
+        "Little Moses the servant of God",
+        "While in him confided, the sea was divided",
+        "As upwards he lifted his rod",
+        "And the Jews safely crossed while Pharaoh\u2019s host",
+        "Was drownded in the waters and lost"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And away on a mountain so high",
+        "The last that he ever did see",
+        "With Israel victorious, his hopes were most glorious",
+        "That soon all the Jordan be free",
+        "When his spirit did cease, he departed in peace",
+        "And rested in the Heavens above"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

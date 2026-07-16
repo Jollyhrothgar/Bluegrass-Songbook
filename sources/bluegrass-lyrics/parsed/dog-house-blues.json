@@ -1,0 +1,49 @@
+{
+  "slug": "dog-house-blues",
+  "title": "Dog House Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/dog-house-blues/",
+  "raw_lyrics": "I went downtown thought I had a dime\nGot home this morning didn\u2019t have a dime\nLordy Lordy Lordy got the dog house blues\nNo use talkin\u2019 I got the dog house blues.\n\nCome home this morning about half past eight\nShe said honey you\u2019re out too late\nLordy Lordy Lordy got the dog house blues\nNo use talkin\u2019 I got the dog house blues.\n\nI went in the house to start the fire\nShe kicked me out in the middle of the night\nLordy Lordy Lordy got the dog house blues\nNo use talkin\u2019 I got the dog house blues.\n\nI fell in the yard mad as I can be\nSaid to my dog make room for me\nLordy Lordy Lordy got the dog house blues\nNo use talkin\u2019 I got the dog house blues.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I went downtown thought I had a dime",
+        "Got home this morning didn\u2019t have a dime",
+        "Lordy Lordy Lordy got the dog house blues",
+        "No use talkin\u2019 I got the dog house blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come home this morning about half past eight",
+        "She said honey you\u2019re out too late",
+        "Lordy Lordy Lordy got the dog house blues",
+        "No use talkin\u2019 I got the dog house blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went in the house to start the fire",
+        "She kicked me out in the middle of the night",
+        "Lordy Lordy Lordy got the dog house blues",
+        "No use talkin\u2019 I got the dog house blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I fell in the yard mad as I can be",
+        "Said to my dog make room for me",
+        "Lordy Lordy Lordy got the dog house blues",
+        "No use talkin\u2019 I got the dog house blues."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

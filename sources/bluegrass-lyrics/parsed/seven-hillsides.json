@@ -1,0 +1,45 @@
+{
+  "slug": "seven-hillsides",
+  "title": "Seven Hillsides",
+  "source_url": "https://www.bluegrasslyrics.com/song/seven-hillsides/",
+  "raw_lyrics": "All night I\u2019ve wrestled Jacob\u2019s angels and prayed with Matthew Luke and John\nStruggling to find the words to face the task that comes upon the blood red dawn\nI\u2019ve buried men before their time of alcohol and blackened lung\nbut how to bury seven of these Appalachian miners sons\nwho stormed the beaches wave on wave and sailed home to these rocky graves\nand family plots that bear their names\n\nTomorrow Ill walk up, seven hillsides\ntremble before my flock on seven hillsides\nseven sorrows seven sons, seven mothers and every one\nwill turn to me for the word of God what does this mean\nand there I\u2019ll stand good book in hand a shepherd to these precious lambs\nwhat will I say what will I say what can I say\n\nTo tell the truth Id never thought much about the will of God before\ncalled to preach at seventeen I was in love with fiery words and not much more\nThe time has come to keep the faith for others shattered by their loss\nremind them of a loving God whose son like theirs paid the cost to save a\nsad and wicked world through sacrifice our love is heard and pray that I believe\nthose words",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All night I\u2019ve wrestled Jacob\u2019s angels and prayed with Matthew Luke and John",
+        "Struggling to find the words to face the task that comes upon the blood red dawn",
+        "I\u2019ve buried men before their time of alcohol and blackened lung",
+        "but how to bury seven of these Appalachian miners sons",
+        "who stormed the beaches wave on wave and sailed home to these rocky graves",
+        "and family plots that bear their names"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tomorrow Ill walk up, seven hillsides",
+        "tremble before my flock on seven hillsides",
+        "seven sorrows seven sons, seven mothers and every one",
+        "will turn to me for the word of God what does this mean",
+        "and there I\u2019ll stand good book in hand a shepherd to these precious lambs",
+        "what will I say what will I say what can I say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "To tell the truth Id never thought much about the will of God before",
+        "called to preach at seventeen I was in love with fiery words and not much more",
+        "The time has come to keep the faith for others shattered by their loss",
+        "remind them of a loving God whose son like theirs paid the cost to save a",
+        "sad and wicked world through sacrifice our love is heard and pray that I believe",
+        "those words"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

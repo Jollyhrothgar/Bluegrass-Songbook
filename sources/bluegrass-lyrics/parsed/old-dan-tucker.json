@@ -1,0 +1,73 @@
+{
+  "slug": "old-dan-tucker",
+  "title": "Old Dan Tucker",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-dan-tucker/",
+  "raw_lyrics": "Now old Dan Tucker\u2019s fine old man\nWashed his face in a fryin\u2019 pan\nCombed his head with a wagon wheel\nAnd died with a toothache in his heel\n\nGet out of the way old Dan Tucker\nGet out of the way old Dan Tucker\nGet out of the way old Dan Tucker\nYou\u2019re too late to get your supper\n\nNow old Dan Tucker is come to town\nRiding a billy goat  leading a hound\nHound dog bark and the billy goat jump\nLanded Dan Tucker on top of the stump\n\nNow old Dan Tucker he got drunk\nFell in the fire and kicked up a chunk\nRed hot coal got in his shoe\nAnd oh my lawd how the ashes flew\n\nNow old Dan Tucker is come to town\nSwinging the ladies round and round\nFirst to the right and then to the left\nThen to the girl that he loves best\n\n* Refrain\n\nThe Deserick Sisters; The National Barn Dance",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now old Dan Tucker\u2019s fine old man",
+        "Washed his face in a fryin\u2019 pan",
+        "Combed his head with a wagon wheel",
+        "And died with a toothache in his heel"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Get out of the way old Dan Tucker",
+        "Get out of the way old Dan Tucker",
+        "Get out of the way old Dan Tucker",
+        "You\u2019re too late to get your supper"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now old Dan Tucker is come to town",
+        "Riding a billy goat  leading a hound",
+        "Hound dog bark and the billy goat jump",
+        "Landed Dan Tucker on top of the stump"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now old Dan Tucker he got drunk",
+        "Fell in the fire and kicked up a chunk",
+        "Red hot coal got in his shoe",
+        "And oh my lawd how the ashes flew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now old Dan Tucker is come to town",
+        "Swinging the ladies round and round",
+        "First to the right and then to the left",
+        "Then to the girl that he loves best"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "* Refrain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The Deserick Sisters; The National Barn Dance"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

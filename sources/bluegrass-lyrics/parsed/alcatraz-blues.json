@@ -1,0 +1,59 @@
+{
+  "slug": "alcatraz-blues",
+  "title": "Alcatraz Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/alcatraz-blues/",
+  "raw_lyrics": "I\u2019m on my way to California\nI\u2019d rather go to Tennessee\nGot in trouble down in Dixie\nAnd it\u2019s Alcatraz for me\n\nGee but I\u2019m blue and I\u2019m lonesome\nNo one seems to understand\nEverybody thinks that I\u2019m guilty\nThey say I shot a man\n\nWell the evidence was circumstantial\nThey didn\u2019t want the world to know\nAll about the kind of justice\nThat\u2019s blind and it is so\n\nWoman in Atlanta Georgia\nWon\u2019t you listen to my lonesome song\nIf they really knew that you shot him\nYou\u2019d be where you belong\n\nI\u2019m on my way to California\nI\u2019d rather go to Tennessee\nGot in trouble down in Dixie\nAnd it\u2019s Alcatraz for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m on my way to California",
+        "I\u2019d rather go to Tennessee",
+        "Got in trouble down in Dixie",
+        "And it\u2019s Alcatraz for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Gee but I\u2019m blue and I\u2019m lonesome",
+        "No one seems to understand",
+        "Everybody thinks that I\u2019m guilty",
+        "They say I shot a man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the evidence was circumstantial",
+        "They didn\u2019t want the world to know",
+        "All about the kind of justice",
+        "That\u2019s blind and it is so"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Woman in Atlanta Georgia",
+        "Won\u2019t you listen to my lonesome song",
+        "If they really knew that you shot him",
+        "You\u2019d be where you belong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m on my way to California",
+        "I\u2019d rather go to Tennessee",
+        "Got in trouble down in Dixie",
+        "And it\u2019s Alcatraz for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

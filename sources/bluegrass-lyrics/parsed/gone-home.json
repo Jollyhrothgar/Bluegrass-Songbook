@@ -1,0 +1,49 @@
+{
+  "slug": "gone-home",
+  "title": "Gone Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/gone-home/",
+  "raw_lyrics": "All of my friends that I loved yesterday\nGone home (they have gone home) gone home (they have )\nThe songbirds that sing in the dell seem to say\nGone home (they have gone home) gone home (they have )\n\nThey\u2019ve joined the heavenly fold\nThey\u2019re walking the streets of pure gold\nThey left one by one as their work here was done\nGone home (they have gone home) gone home (they have)\n\nLife here is lonely since they\u2019ve gone before\nGone home (they have gone home) gone home (they have )\nThe old weeping willow that stands by the door\nSadly says (they have gone home) gone home (they have )\n\nThe trumpet will sound on that Great Judgment day\nGone home (they have gone home) gone home (they have )\nWe\u2019ll see all our friends that have gone on that way\nGone home (they have gone home) gone home (they have )",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All of my friends that I loved yesterday",
+        "Gone home (they have gone home) gone home (they have )",
+        "The songbirds that sing in the dell seem to say",
+        "Gone home (they have gone home) gone home (they have )"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "They\u2019ve joined the heavenly fold",
+        "They\u2019re walking the streets of pure gold",
+        "They left one by one as their work here was done",
+        "Gone home (they have gone home) gone home (they have)"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Life here is lonely since they\u2019ve gone before",
+        "Gone home (they have gone home) gone home (they have )",
+        "The old weeping willow that stands by the door",
+        "Sadly says (they have gone home) gone home (they have )"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The trumpet will sound on that Great Judgment day",
+        "Gone home (they have gone home) gone home (they have )",
+        "We\u2019ll see all our friends that have gone on that way",
+        "Gone home (they have gone home) gone home (they have )"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

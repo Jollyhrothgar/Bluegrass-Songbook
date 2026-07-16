@@ -1,0 +1,49 @@
+{
+  "slug": "death-came-creeping-in-my-room",
+  "title": "Death Came Creeping In My Room",
+  "source_url": "https://www.bluegrasslyrics.com/song/death-came-creeping-in-my-room/",
+  "raw_lyrics": "Soon one morning death came creeping in my room\nSoon one morning death came creeping in my room\nSoon one morning death came creeping in my room\nOh my Lord what shall I do (I do)\n\nDeath\u2019s done come and took my Mother away\nDeath\u2019s done come and took my Mother away\nDeath\u2019s done come and took my Mother away\nOh my Lord what shall I do (I do)\n\nDeath\u2019s done come and took my Father away\nDeath\u2019s done come and took my Father away\nDeath\u2019s done come and took my Father away\nOh my Lord what shall I do (I do)\n\nRide on, Death \u2019cause you can\u2019t do me no harm\nRide on, Death \u2019cause you can\u2019t do me no harm\nRide on, Death \u2019cause you can\u2019t do me no harm\nOh my Lord what shall I do (I do)",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Soon one morning death came creeping in my room",
+        "Soon one morning death came creeping in my room",
+        "Soon one morning death came creeping in my room",
+        "Oh my Lord what shall I do (I do)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Death\u2019s done come and took my Mother away",
+        "Death\u2019s done come and took my Mother away",
+        "Death\u2019s done come and took my Mother away",
+        "Oh my Lord what shall I do (I do)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Death\u2019s done come and took my Father away",
+        "Death\u2019s done come and took my Father away",
+        "Death\u2019s done come and took my Father away",
+        "Oh my Lord what shall I do (I do)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ride on, Death \u2019cause you can\u2019t do me no harm",
+        "Ride on, Death \u2019cause you can\u2019t do me no harm",
+        "Ride on, Death \u2019cause you can\u2019t do me no harm",
+        "Oh my Lord what shall I do (I do)"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

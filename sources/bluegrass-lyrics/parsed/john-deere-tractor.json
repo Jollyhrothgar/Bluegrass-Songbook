@@ -1,0 +1,68 @@
+{
+  "slug": "john-deere-tractor",
+  "title": "John Deere Tractor",
+  "source_url": "https://www.bluegrasslyrics.com/song/john-deere-tractor/",
+  "raw_lyrics": "Hey momma here\u2019s a letter from your son\nwell I think my city days are done Ma\nand it ain\u2019t been three weeks since I came\n\nHey momma\nI do remember what you said\nsay your prayers before you go to bed son\nand remember city women ain\u2019t the same\n\nI\u2019m like a John Deere tractor in a half acre field\ntrying to plow a furrow where the soil is made of steel\nOh I wish I was home Ma where the bluegrass is growin\u2019\nand the sweet country girls don\u2019t complain\n\nHey momma\nso much perfume I thought I\u2019d drown\nand the Lord didn\u2019t seem to be nowhere around\nhey I fell like a flower from the vine\n\nAh she was pretty lord knows\nI thought she would bring me joy\nshe laughed she called me country boy ma\nand after she had been so kind\n\nI\u2019m like a John Deere tractor in a half acre field\ntrying to plow a furrow where the soil is made of steel\noh I wish I was home ma where the bluegrass is growin\u2019\nand the fire light shimmers and shines.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Hey momma here\u2019s a letter from your son",
+        "well I think my city days are done Ma",
+        "and it ain\u2019t been three weeks since I came"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hey momma",
+        "I do remember what you said",
+        "say your prayers before you go to bed son",
+        "and remember city women ain\u2019t the same"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m like a John Deere tractor in a half acre field",
+        "trying to plow a furrow where the soil is made of steel",
+        "Oh I wish I was home Ma where the bluegrass is growin\u2019",
+        "and the sweet country girls don\u2019t complain"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hey momma",
+        "so much perfume I thought I\u2019d drown",
+        "and the Lord didn\u2019t seem to be nowhere around",
+        "hey I fell like a flower from the vine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ah she was pretty lord knows",
+        "I thought she would bring me joy",
+        "she laughed she called me country boy ma",
+        "and after she had been so kind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m like a John Deere tractor in a half acre field",
+        "trying to plow a furrow where the soil is made of steel",
+        "oh I wish I was home ma where the bluegrass is growin\u2019",
+        "and the fire light shimmers and shines."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "that-happy-night",
+  "title": "That Happy Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/that-happy-night/",
+  "raw_lyrics": "Many years now have passed since I saw my darling last\nBut she waits alone there just for me\nI\u2019ll be going back some day and I never more will stray\nFrom that girl who stood by me\n\nI\u2019ve about forgot the tune and the West Virginia moon\nBut the North Carolina moon is just as bright\nI\u2019ll n\u2019er forget the time you promised to be mine\nThe moon was shining down that happy night\n\nWhen I left her all alone in our little mountain home\nI never thought of the day I\u2019d return\nNow I\u2019m coming back to you love I know you\u2019ve been true\nWhat a price I\u2019ve paid to live and learn",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Many years now have passed since I saw my darling last",
+        "But she waits alone there just for me",
+        "I\u2019ll be going back some day and I never more will stray",
+        "From that girl who stood by me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve about forgot the tune and the West Virginia moon",
+        "But the North Carolina moon is just as bright",
+        "I\u2019ll n\u2019er forget the time you promised to be mine",
+        "The moon was shining down that happy night"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I left her all alone in our little mountain home",
+        "I never thought of the day I\u2019d return",
+        "Now I\u2019m coming back to you love I know you\u2019ve been true",
+        "What a price I\u2019ve paid to live and learn"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

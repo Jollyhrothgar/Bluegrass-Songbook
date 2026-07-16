@@ -1,0 +1,49 @@
+{
+  "slug": "gone-but-not-forgotten",
+  "title": "Gone But Not Forgotten",
+  "source_url": "https://www.bluegrasslyrics.com/song/gone-but-not-forgotten/",
+  "raw_lyrics": "Since first we met somehow I knew\nIt wouldn\u2019t last our whole life through\nNow sure enough years later on\nI look for you and you are gone\n\nGone but not forgotten\nYou\u2019re still in my memory\nGone but not forgotten\nI\u2019ll stay right here till you come home to me.\n\nOne rainy night and a no good fight\nWhen I woke you were outta sight\nNow after all that we\u2019ve been through\nI thought I\u2019d hear just once from you.\n\nI search for you most every day\nMore sorry now than words can say\nMaybe you don\u2019t live in this world\nBut you\u2019ll still be my only girl.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Since first we met somehow I knew",
+        "It wouldn\u2019t last our whole life through",
+        "Now sure enough years later on",
+        "I look for you and you are gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Gone but not forgotten",
+        "You\u2019re still in my memory",
+        "Gone but not forgotten",
+        "I\u2019ll stay right here till you come home to me."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "One rainy night and a no good fight",
+        "When I woke you were outta sight",
+        "Now after all that we\u2019ve been through",
+        "I thought I\u2019d hear just once from you."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I search for you most every day",
+        "More sorry now than words can say",
+        "Maybe you don\u2019t live in this world",
+        "But you\u2019ll still be my only girl."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

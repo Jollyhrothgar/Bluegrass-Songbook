@@ -1,0 +1,89 @@
+{
+  "slug": "mommy-please-stay-home-with-me",
+  "title": "Mommy Please Stay Home With Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/mommy-please-stay-home-with-me/",
+  "raw_lyrics": "A mother went out to a party\nShe left at home her baby son\nHe cried and begged her not to leave him\nBut she would not give up her fun\n\nShe kissed his cheek and tried to soothe him\nBut would not heed his childish plea\nShe heard him call as she was leaving\nPlease mommy please stay home with me\n\nThe mother joined the merrymakers\nAnd soon was lost in trifling joy\nThe mellow tunes and flitting shadows\nMade her forget her baby boy\n\nShe danced and laughed and did some drinking\nThe world for her was full of glee\nBut now and then these words would haunt her\nPlease mommy please stay home with me\n\nShe left the party feeling dizzy\nThe smell of drink was on her breath\nShe hurried home to find her baby\nIn raging pain and nearing death\n\nThe doctor came and looked on sadly\nThe case was hopeless, he could see\nThe baby died, these words repeating\nPlease mommy please stay home with me\n\nThe mother now, her life would forfeit\nTo hear her baby\u2019s voice again\nShe grieved to think she rudely left him\nTo satisfy her wicked vein\n\nNow mothers don\u2019t neglect your duty\nThis story should a lesson be\nDo not ignore your baby\u2019s pleading\nPlease mommy please stay home with me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A mother went out to a party",
+        "She left at home her baby son",
+        "He cried and begged her not to leave him",
+        "But she would not give up her fun"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She kissed his cheek and tried to soothe him",
+        "But would not heed his childish plea",
+        "She heard him call as she was leaving",
+        "Please mommy please stay home with me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The mother joined the merrymakers",
+        "And soon was lost in trifling joy",
+        "The mellow tunes and flitting shadows",
+        "Made her forget her baby boy"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She danced and laughed and did some drinking",
+        "The world for her was full of glee",
+        "But now and then these words would haunt her",
+        "Please mommy please stay home with me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She left the party feeling dizzy",
+        "The smell of drink was on her breath",
+        "She hurried home to find her baby",
+        "In raging pain and nearing death"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The doctor came and looked on sadly",
+        "The case was hopeless, he could see",
+        "The baby died, these words repeating",
+        "Please mommy please stay home with me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The mother now, her life would forfeit",
+        "To hear her baby\u2019s voice again",
+        "She grieved to think she rudely left him",
+        "To satisfy her wicked vein"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now mothers don\u2019t neglect your duty",
+        "This story should a lesson be",
+        "Do not ignore your baby\u2019s pleading",
+        "Please mommy please stay home with me"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

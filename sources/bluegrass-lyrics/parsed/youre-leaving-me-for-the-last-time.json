@@ -1,0 +1,39 @@
+{
+  "slug": "youre-leaving-me-for-the-last-time",
+  "title": "You\u2019re leaving me for the last time",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-leaving-me-for-the-last-time/",
+  "raw_lyrics": "You\u2019re leaving me for the last time\nLove to you was just a past time\nI\u2019ll always love you even though it\u2019s wrong\nI\u2019ll be better off without when I know you\u2019re gone\n\nYou say you must see him once again\nTo make sure that you\u2019ve made up your mind\nYou\u2019re expecting me to understand\nEven though it will break my heart\n\nYou\u2019re leaving me for the last time\nLove to you was just a past time\nI\u2019ll always love you even though it\u2019s wrong\nI\u2019ll be better off without when I know you\u2019re gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re leaving me for the last time",
+        "Love to you was just a past time",
+        "I\u2019ll always love you even though it\u2019s wrong",
+        "I\u2019ll be better off without when I know you\u2019re gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You say you must see him once again",
+        "To make sure that you\u2019ve made up your mind",
+        "You\u2019re expecting me to understand",
+        "Even though it will break my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019re leaving me for the last time",
+        "Love to you was just a past time",
+        "I\u2019ll always love you even though it\u2019s wrong",
+        "I\u2019ll be better off without when I know you\u2019re gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

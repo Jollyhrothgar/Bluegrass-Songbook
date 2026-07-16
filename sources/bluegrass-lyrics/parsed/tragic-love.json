@@ -1,0 +1,59 @@
+{
+  "slug": "tragic-love",
+  "title": "Tragic Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/tragic-love/",
+  "raw_lyrics": "Come pretty young girls give me your attention\nTo these few lines I\u2019ve tried to write\nAbout a man who I won\u2019t mention\nWho courted of his charming bride\n\nAnd when her parents came to know him\nThey tried so hard both day and night\nTo separate here and her own true lover\nHer and her own true hearts delight\n\nShe turned her back upon the city\nShe viewed the fields and meadows round\nShe came upon a broad river\nAnd in the shade of a tree sat down\n\nHer true love being not far behind\nHe heard her make a mournful sound\nAnd looking on her lifeless body\nAs she lay cold upon the ground\n\nHe then took out his silver weapon\nHe pierced it through his tender heart\nSayin let this be a dreadful warning\nFor all true lovers that have to part",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come pretty young girls give me your attention",
+        "To these few lines I\u2019ve tried to write",
+        "About a man who I won\u2019t mention",
+        "Who courted of his charming bride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And when her parents came to know him",
+        "They tried so hard both day and night",
+        "To separate here and her own true lover",
+        "Her and her own true hearts delight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She turned her back upon the city",
+        "She viewed the fields and meadows round",
+        "She came upon a broad river",
+        "And in the shade of a tree sat down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her true love being not far behind",
+        "He heard her make a mournful sound",
+        "And looking on her lifeless body",
+        "As she lay cold upon the ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He then took out his silver weapon",
+        "He pierced it through his tender heart",
+        "Sayin let this be a dreadful warning",
+        "For all true lovers that have to part"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "mothers-prayer",
+  "title": "Mother\u2019s Prayer",
+  "source_url": "https://www.bluegrasslyrics.com/song/mothers-prayer/",
+  "raw_lyrics": "The postman came and brought a letter\nIt was from her boy who went away\nShe gave him up to join the colors\nEach time he writes I hear her pray\n\nDear God watch o\u2019er my boy in service\nHelp him win his victory\nAnd when this cruel war is over\nBring him safely back to me\n\nThen came the day they walked together\nTo the train that took him away\nShe knew her boy would be a hero\nHer smilin eyes just seemed to say\n\nNow soldier boy don\u2019t e\u2019er forger her\nShe prays to God for you each day\nThat harm may never overtake you\nWhile you are fighting far away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The postman came and brought a letter",
+        "It was from her boy who went away",
+        "She gave him up to join the colors",
+        "Each time he writes I hear her pray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Dear God watch o\u2019er my boy in service",
+        "Help him win his victory",
+        "And when this cruel war is over",
+        "Bring him safely back to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then came the day they walked together",
+        "To the train that took him away",
+        "She knew her boy would be a hero",
+        "Her smilin eyes just seemed to say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now soldier boy don\u2019t e\u2019er forger her",
+        "She prays to God for you each day",
+        "That harm may never overtake you",
+        "While you are fighting far away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

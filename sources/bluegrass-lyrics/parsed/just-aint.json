@@ -1,0 +1,60 @@
+{
+  "slug": "just-aint",
+  "title": "Just Ain\u2019t",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-aint/",
+  "raw_lyrics": "I ain\u2019t gonna worry who\u2019s kissin\u2019 you\nWhen you\u2019re far away\nBecause I know when the tomcat\u2019s gone\nAll the mice will play\nI ain\u2019t gonna worry what\u2019s goin\u2019 on when you\u2019re\nOut to paint the town\nI ain\u2019t gonna worry where you stay\nWhen you\u2019re out runnin\u2019 \u2019round.\n\nI just ain\u2019t (just ain\u2019t)\nI just ain\u2019t (just ain\u2019t)\nJust ain\u2019t.\n\nI ain\u2019t gonna worry what\u2019s goin\u2019 on\nWhen I\u2019m home sleepin\u2019 in bed.\nI ain\u2019t gonna watch for you to come in\nAnd go to sleep instead.\nI ain\u2019t gonna follow you where you go\nA walkin\u2019 down the street\nI ain\u2019t gonna care about (who\u2019s) the other guy\nThat you go to meet.\n\nI ain\u2019t gonna care if you don\u2019t come back\nI\u2019ll get along all right.\nI ain\u2019t gonna mind this livin\u2019 alone\nI\u2019ll still sleep at night.\nI ain\u2019t gonna worry where you go\nAnd when you say goodbye\nI\u2019ll find someone else to love\nI ain\u2019t gonna sit and cry.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I ain\u2019t gonna worry who\u2019s kissin\u2019 you",
+        "When you\u2019re far away",
+        "Because I know when the tomcat\u2019s gone",
+        "All the mice will play",
+        "I ain\u2019t gonna worry what\u2019s goin\u2019 on when you\u2019re",
+        "Out to paint the town",
+        "I ain\u2019t gonna worry where you stay",
+        "When you\u2019re out runnin\u2019 \u2019round."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I just ain\u2019t (just ain\u2019t)",
+        "I just ain\u2019t (just ain\u2019t)",
+        "Just ain\u2019t."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I ain\u2019t gonna worry what\u2019s goin\u2019 on",
+        "When I\u2019m home sleepin\u2019 in bed.",
+        "I ain\u2019t gonna watch for you to come in",
+        "And go to sleep instead.",
+        "I ain\u2019t gonna follow you where you go",
+        "A walkin\u2019 down the street",
+        "I ain\u2019t gonna care about (who\u2019s) the other guy",
+        "That you go to meet."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I ain\u2019t gonna care if you don\u2019t come back",
+        "I\u2019ll get along all right.",
+        "I ain\u2019t gonna mind this livin\u2019 alone",
+        "I\u2019ll still sleep at night.",
+        "I ain\u2019t gonna worry where you go",
+        "And when you say goodbye",
+        "I\u2019ll find someone else to love",
+        "I ain\u2019t gonna sit and cry."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "who-will-watch-the-home-place",
+  "title": "Who Will Watch The Home Place",
+  "source_url": "https://www.bluegrasslyrics.com/song/who-will-watch-the-home-place/",
+  "raw_lyrics": "Leaves are falling and turning to showers of gold\nAs the postman climbs up our long hill\nAnd there\u2019s sympathy written all over his face\nAs he hands me a couple more bills\n\nWho will watch the home place\nWho will tend my hearts dear space\nWho will fill my empty place\nWhen I am gone from here\n\nThere\u2019s a lovely green nook by a clear-running stream\nIt was my place when I was quite small\nAnd it\u2019s creatures and sounds could soothe my worst pains\nBut today they don\u2019t ease me at all\n\nIn my grandfather\u2019s shed there are hundreds of tools\nI know them by feel and by name\nAnd like parts of my body they\u2019ve patched this old place\nWhen I move them they won\u2019t be the same\n\nNow I wander around touching each blessed thing\nThe chimney the tables the trees\nAnd my memories swirl \u2019round me like birds on the wing\nWhen I leave here oh who will I be",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Leaves are falling and turning to showers of gold",
+        "As the postman climbs up our long hill",
+        "And there\u2019s sympathy written all over his face",
+        "As he hands me a couple more bills"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Who will watch the home place",
+        "Who will tend my hearts dear space",
+        "Who will fill my empty place",
+        "When I am gone from here"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a lovely green nook by a clear-running stream",
+        "It was my place when I was quite small",
+        "And it\u2019s creatures and sounds could soothe my worst pains",
+        "But today they don\u2019t ease me at all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In my grandfather\u2019s shed there are hundreds of tools",
+        "I know them by feel and by name",
+        "And like parts of my body they\u2019ve patched this old place",
+        "When I move them they won\u2019t be the same"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I wander around touching each blessed thing",
+        "The chimney the tables the trees",
+        "And my memories swirl \u2019round me like birds on the wing",
+        "When I leave here oh who will I be"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

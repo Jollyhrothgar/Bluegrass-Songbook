@@ -1,0 +1,11 @@
+id: we-will-march-through-the-streets-of-the-city
+title: We Will March Through The Streets Of The City
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/we-will-march-through-the-streets-of-the-city/
+      imported_at: '2026-02-08'

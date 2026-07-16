@@ -1,0 +1,49 @@
+{
+  "slug": "ill-never-forsake-you",
+  "title": "I\u2019ll Never Forsake You",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-never-forsake-you/",
+  "raw_lyrics": "I am so happy that you love no other but me\nAll of my life I\u2019ve tried to win your love you see\nAnd I still wonder if you will be happy with me\nWhen we are married and I\u2019ve taken you my wife to be\n\nI have waited so long for the words you just said\nI always thought that you loved another instead\nBut you have told me with your own sweet lips so red\nAnd I am waiting for the day when we shall wed\n\nIf you should ever forsake me my love I would pray\nTake me my maker up in heaven where white angels stay\nCause I could never go on living without you this way\nIf we are to part I\u2019d rather you take me today\n\nNo no I\u2019ll never forsake you I\u2019ll always be true\nAnd we\u2019ll be happy together because I love you\nAnd when I think of us parting sweetheart it runs through my head\nIf we cant be happy together my love I would rather be dead",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am so happy that you love no other but me",
+        "All of my life I\u2019ve tried to win your love you see",
+        "And I still wonder if you will be happy with me",
+        "When we are married and I\u2019ve taken you my wife to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have waited so long for the words you just said",
+        "I always thought that you loved another instead",
+        "But you have told me with your own sweet lips so red",
+        "And I am waiting for the day when we shall wed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you should ever forsake me my love I would pray",
+        "Take me my maker up in heaven where white angels stay",
+        "Cause I could never go on living without you this way",
+        "If we are to part I\u2019d rather you take me today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No no I\u2019ll never forsake you I\u2019ll always be true",
+        "And we\u2019ll be happy together because I love you",
+        "And when I think of us parting sweetheart it runs through my head",
+        "If we cant be happy together my love I would rather be dead"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

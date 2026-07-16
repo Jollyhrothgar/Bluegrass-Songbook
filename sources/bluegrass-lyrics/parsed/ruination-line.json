@@ -1,0 +1,60 @@
+{
+  "slug": "ruination-line",
+  "title": "Ruination Line",
+  "source_url": "https://www.bluegrasslyrics.com/song/ruination-line/",
+  "raw_lyrics": "Dust in the meadow, smoke on the mountainside\nTheres an air of desparation comin cross the great divide\nThunder rollin, shakin the valley down\nBut it ain\u2019t the second comin thats drummin up that soud\nIts the train of broken dreams run on misery and woe\nCome to take the down-trodden when there\u2019s noplace else to go\nAnd there\u2019ll be no mistakin when you hear that whistle whine\nYou\u2019re standin at the station of the ruination line\n\nTell you brother I can\u2019t get no sleep\nThere\u2019s heretics in the capitol and heroes on the street\nIn this corp\u2019rate prison what for is my bail\nIts 80 bucks a barrell son your freedom is for sale\nWell they give me excuses, they give me their word\nBut its hard to give a damn when your unemployed, uninsured\nCan\u2019t afford to pay no doctor, no ambulance ride\nThey just left me with my chances on the ruination line\n\nDrive your mule boy, up that field and back\nYou gotta earn your keep here make no doubt about that fact\nNo time for stallin, no time for to wait\nNo time for your lost soul just tryin to find its place\nAll I ever wanted was a little peace and quiet\nA stash of my own,and a girl to hold tight\nBut now I\u2019m broke,dry and dirty and my good love passed me by\nFeel I\u2019m primed and ready for that ruination line\n\nSo lay my head down on that rail\nAnd maybe she can ease my mind\nAnd I pray she moves me swiftly down that ruination line",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dust in the meadow, smoke on the mountainside",
+        "Theres an air of desparation comin cross the great divide",
+        "Thunder rollin, shakin the valley down",
+        "But it ain\u2019t the second comin thats drummin up that soud",
+        "Its the train of broken dreams run on misery and woe",
+        "Come to take the down-trodden when there\u2019s noplace else to go",
+        "And there\u2019ll be no mistakin when you hear that whistle whine",
+        "You\u2019re standin at the station of the ruination line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell you brother I can\u2019t get no sleep",
+        "There\u2019s heretics in the capitol and heroes on the street",
+        "In this corp\u2019rate prison what for is my bail",
+        "Its 80 bucks a barrell son your freedom is for sale",
+        "Well they give me excuses, they give me their word",
+        "But its hard to give a damn when your unemployed, uninsured",
+        "Can\u2019t afford to pay no doctor, no ambulance ride",
+        "They just left me with my chances on the ruination line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Drive your mule boy, up that field and back",
+        "You gotta earn your keep here make no doubt about that fact",
+        "No time for stallin, no time for to wait",
+        "No time for your lost soul just tryin to find its place",
+        "All I ever wanted was a little peace and quiet",
+        "A stash of my own,and a girl to hold tight",
+        "But now I\u2019m broke,dry and dirty and my good love passed me by",
+        "Feel I\u2019m primed and ready for that ruination line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So lay my head down on that rail",
+        "And maybe she can ease my mind",
+        "And I pray she moves me swiftly down that ruination line"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

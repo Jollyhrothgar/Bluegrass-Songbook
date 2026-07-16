@@ -1,0 +1,59 @@
+{
+  "slug": "been-all-round-this-world",
+  "title": "Been All Round This World",
+  "source_url": "https://www.bluegrasslyrics.com/song/been-all-round-this-world/",
+  "raw_lyrics": "Workin\u2019 on the new railroad mud up to my knees\nWorkin\u2019 on the new railroad mud up to my knees\nWorkin\u2019 for ol\u2019 John Henry he\u2019s mighty hard to please\nI been all \u2019round this world.\n\nHang me oh hang me till I\u2019m dead and gone\nHang me oh hang me till I\u2019m dead and gone\nDon\u2019t care much \u2019bout dyin\u2019 it\u2019s bein\u2019 in jail so long\nI been all \u2019round this worId.\n\nMama and papa and baby sister makes three\nMama and papa and baby sister makes three\nMarchin\u2019 me to the gallows that\u2019ll be the end of me\nI been all \u2019round this world.\n\nUp on Blueridge Mountain there I\u2019ll make a stand\nUp on Blueridge Mountain there I\u2019ll make a stand\nRifle on my shoulder six shooter in my hand\nI been all \u2019round this world.\n\nIf you see a rich girl send her on down the line\nIf you see a rich girl send her on down the line\nIf you see a poor girl I\u2019ll bet she\u2019s a friend of mine\nI been all \u2019round this world.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Workin\u2019 on the new railroad mud up to my knees",
+        "Workin\u2019 on the new railroad mud up to my knees",
+        "Workin\u2019 for ol\u2019 John Henry he\u2019s mighty hard to please",
+        "I been all \u2019round this world."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hang me oh hang me till I\u2019m dead and gone",
+        "Hang me oh hang me till I\u2019m dead and gone",
+        "Don\u2019t care much \u2019bout dyin\u2019 it\u2019s bein\u2019 in jail so long",
+        "I been all \u2019round this worId."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mama and papa and baby sister makes three",
+        "Mama and papa and baby sister makes three",
+        "Marchin\u2019 me to the gallows that\u2019ll be the end of me",
+        "I been all \u2019round this world."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Up on Blueridge Mountain there I\u2019ll make a stand",
+        "Up on Blueridge Mountain there I\u2019ll make a stand",
+        "Rifle on my shoulder six shooter in my hand",
+        "I been all \u2019round this world."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you see a rich girl send her on down the line",
+        "If you see a rich girl send her on down the line",
+        "If you see a poor girl I\u2019ll bet she\u2019s a friend of mine",
+        "I been all \u2019round this world."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

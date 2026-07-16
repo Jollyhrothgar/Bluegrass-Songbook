@@ -1,0 +1,65 @@
+{
+  "slug": "pig-in-a-pen",
+  "title": "Pig In A Pen",
+  "source_url": "https://www.bluegrasslyrics.com/song/pig-in-a-pen/",
+  "raw_lyrics": "I got a pig at home in a pen corn to feed \u2018im on\nAll I need is a pretty little girl to feed \u2018im when I\u2019m gone.\n\nGoin\u2019 on the mountain to sow a little cane\nRaise a barrel of Sorghum sweet lil\u2019  Liza Jane.\n\nBlack cloud\u2019s a-risin\u2019 surest sign of rain\nGet the old grey bonnet on Little Liza Jane.\n\nYonder comes that gal of mine how you think I know\nCan tell by that Gingham gown hangin\u2019 down so low.\n\nBake them biscuits baby bake \u2019em good n\u2019 brown\nWhen you get them biscuits baked we\u2019re Alabamy bound.\n\nWhen she sees me comin\u2019 she wrings her hands and cries\nYonder comes the sweetest boy  that ever lived or died.\n\nNow when she sees me leavin\u2019she wrings her hands and cries\nYonder goes the meanest boy that ever lived or died.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I got a pig at home in a pen corn to feed \u2018im on",
+        "All I need is a pretty little girl to feed \u2018im when I\u2019m gone."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goin\u2019 on the mountain to sow a little cane",
+        "Raise a barrel of Sorghum sweet lil\u2019  Liza Jane."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Black cloud\u2019s a-risin\u2019 surest sign of rain",
+        "Get the old grey bonnet on Little Liza Jane."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yonder comes that gal of mine how you think I know",
+        "Can tell by that Gingham gown hangin\u2019 down so low."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Bake them biscuits baby bake \u2019em good n\u2019 brown",
+        "When you get them biscuits baked we\u2019re Alabamy bound."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When she sees me comin\u2019 she wrings her hands and cries",
+        "Yonder comes the sweetest boy  that ever lived or died."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when she sees me leavin\u2019she wrings her hands and cries",
+        "Yonder goes the meanest boy that ever lived or died."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

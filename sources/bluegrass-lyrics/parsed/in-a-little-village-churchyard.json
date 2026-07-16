@@ -1,0 +1,67 @@
+{
+  "slug": "in-a-little-village-churchyard",
+  "title": "In A Little Village Churchyard",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-a-little-village-churchyard/",
+  "raw_lyrics": "In a little village churchyard\nThere I see a grassy mound\nThere my sweetheart lies a-sleeping\nIn the cold and silent ground\nGently waves the weeping willow\nBirds they warble sweet and low\nAnd there\u2019s no one left to love me\nSince my sweetheart had to go\n\nIn that little village churchyard\nThere I stray with a broken heart\nThere is no one left to love me\nSince the day we had to part\n\nThat sad day will I remember\nWhen she called me to her side\nHow I watched her spirit fading\nAnd the tears did blind my sight\nThen she said, \u2018Goodbye my darling\nDry those teardrops from your eyes\nPromise me, my little darling\nThat you\u2019ll meet me up on high\u2019\n\nIn that little village churchyard\nThere I stray with a broken heart\nThere is no one left to love me\nSince the day we had to part\n\nOft I\u2019ve wandered to the graveyard\nFlowers to plant with tender care\nO\u2019er the grave of my dear darling\nDarkness finds me weeping there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a little village churchyard",
+        "There I see a grassy mound",
+        "There my sweetheart lies a-sleeping",
+        "In the cold and silent ground",
+        "Gently waves the weeping willow",
+        "Birds they warble sweet and low",
+        "And there\u2019s no one left to love me",
+        "Since my sweetheart had to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In that little village churchyard",
+        "There I stray with a broken heart",
+        "There is no one left to love me",
+        "Since the day we had to part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That sad day will I remember",
+        "When she called me to her side",
+        "How I watched her spirit fading",
+        "And the tears did blind my sight",
+        "Then she said, \u2018Goodbye my darling",
+        "Dry those teardrops from your eyes",
+        "Promise me, my little darling",
+        "That you\u2019ll meet me up on high\u2019"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In that little village churchyard",
+        "There I stray with a broken heart",
+        "There is no one left to love me",
+        "Since the day we had to part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oft I\u2019ve wandered to the graveyard",
+        "Flowers to plant with tender care",
+        "O\u2019er the grave of my dear darling",
+        "Darkness finds me weeping there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

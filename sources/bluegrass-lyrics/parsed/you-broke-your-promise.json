@@ -1,0 +1,49 @@
+{
+  "slug": "you-broke-your-promise",
+  "title": "You Broke Your Promise",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-broke-your-promise/",
+  "raw_lyrics": "Today I\u2019m alone and thinking of you\nFor you said we\u2019d never part\nBut you done gone away and left me\nLeft me with a broken heart\n\nYou promised to love me forever\nAnd to me you would always be the same\nBut darling you broke your promise\nAnd now I know your little game\n\nMy heart\u2019s still crying for you darling\nFor it knows I love you true\nAnd some day in the future darling\nYour heart may be crying too\n\nI hope my dear you\u2019ll be happy\nAnd never be alone and blue\nFor I still love you darling\nThough you left me here so blue",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Today I\u2019m alone and thinking of you",
+        "For you said we\u2019d never part",
+        "But you done gone away and left me",
+        "Left me with a broken heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You promised to love me forever",
+        "And to me you would always be the same",
+        "But darling you broke your promise",
+        "And now I know your little game"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My heart\u2019s still crying for you darling",
+        "For it knows I love you true",
+        "And some day in the future darling",
+        "Your heart may be crying too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hope my dear you\u2019ll be happy",
+        "And never be alone and blue",
+        "For I still love you darling",
+        "Though you left me here so blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

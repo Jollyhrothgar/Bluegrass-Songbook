@@ -1,0 +1,39 @@
+{
+  "slug": "its-a-long-long-road",
+  "title": "It\u2019s A Long Long Road",
+  "source_url": "https://www.bluegrasslyrics.com/song/its-a-long-long-road/",
+  "raw_lyrics": "It\u2019s a long long road to wander all alone.\nIt\u2019s a cold cold wind hear it moan.\nCrying like a lost child out in the night.\nSearching for the way and looking for the light.\n\nBack in the days when we were happy\nOur love was the warmth and the light.\nBut now the dark shadows are falling\nAnd day is quickly fading into night.\n\nWhen the sun goes down behind the mountain\nAnd the chilly wind is blowing through the pines.\nHow often do I think about my darling\nAnd the sunny garden where the roses twine.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s a long long road to wander all alone.",
+        "It\u2019s a cold cold wind hear it moan.",
+        "Crying like a lost child out in the night.",
+        "Searching for the way and looking for the light."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Back in the days when we were happy",
+        "Our love was the warmth and the light.",
+        "But now the dark shadows are falling",
+        "And day is quickly fading into night."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the sun goes down behind the mountain",
+        "And the chilly wind is blowing through the pines.",
+        "How often do I think about my darling",
+        "And the sunny garden where the roses twine."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

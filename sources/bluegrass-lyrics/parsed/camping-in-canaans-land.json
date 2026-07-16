@@ -1,0 +1,49 @@
+{
+  "slug": "camping-in-canaans-land",
+  "title": "Camping In Canaan\u2019s Land",
+  "source_url": "https://www.bluegrasslyrics.com/song/camping-in-canaans-land/",
+  "raw_lyrics": "I have left the land of bondage with its earthly treasures\nI\u2019ve journeyed to the place where there is love on every hand\nI\u2019ve exchanged the land of heartaches for the land of pleasure\nI\u2019m camping, I\u2019m camping, in Canaan\u2019s happy land\n\nEvery day I\u2019m camping (camping) in the land of Canaan (Canaan)\nAnd in rapture I survey its wondrous beauty grand (Oh, Glory)\nGlory, hallelujah (I have) found the land of promise\n(And I\u2019m) camping, I\u2019m camping, in Canaan\u2019s happy land\n\nOut of Egypt I have traveled through the darkness dreary\nFar over hills and valleys and across the desert sands\nThoughts of land that\u2019s safe and homeward I shall not go weary\nI\u2019m camping, I\u2019m camping, in Canaan\u2019s happy land\n\nYes I\u2019ve reached the land of promise with the saints of glory\nMy journey ended in a place so lovely and so grand\nI\u2019ve been led by Jesus to this blessed land of story\nI\u2019m camping, I\u2019m camping, in Canaan\u2019s happy land",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have left the land of bondage with its earthly treasures",
+        "I\u2019ve journeyed to the place where there is love on every hand",
+        "I\u2019ve exchanged the land of heartaches for the land of pleasure",
+        "I\u2019m camping, I\u2019m camping, in Canaan\u2019s happy land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Every day I\u2019m camping (camping) in the land of Canaan (Canaan)",
+        "And in rapture I survey its wondrous beauty grand (Oh, Glory)",
+        "Glory, hallelujah (I have) found the land of promise",
+        "(And I\u2019m) camping, I\u2019m camping, in Canaan\u2019s happy land"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Out of Egypt I have traveled through the darkness dreary",
+        "Far over hills and valleys and across the desert sands",
+        "Thoughts of land that\u2019s safe and homeward I shall not go weary",
+        "I\u2019m camping, I\u2019m camping, in Canaan\u2019s happy land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes I\u2019ve reached the land of promise with the saints of glory",
+        "My journey ended in a place so lovely and so grand",
+        "I\u2019ve been led by Jesus to this blessed land of story",
+        "I\u2019m camping, I\u2019m camping, in Canaan\u2019s happy land"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

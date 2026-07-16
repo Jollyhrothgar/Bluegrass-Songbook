@@ -1,0 +1,49 @@
+{
+  "slug": "every-time-you-say-good-bye",
+  "title": "Every Time You Say Good-Bye",
+  "source_url": "https://www.bluegrasslyrics.com/song/every-time-you-say-good-bye/",
+  "raw_lyrics": "Look at the sky baby what do you see?\nLooks like the tears that I\u2019ve cried\nFalling down like rain on the ground\nEvery time you say good-bye.\n\nTake a look around now why don\u2019t you feel\nThe way the cold wind stings and blinds\nAnd each time we part like arrows through your heart\nEvery time you say good-bye.\n\nThere\u2019s a restless feeling knocking at my door today\nThere\u2019s a shadow hanging \u2019round my garden gate\nI read between the lines of words you can\u2019t disguise\nLove has gone away and put these tears in my eyes.\n\nLook at the sky baby see how it cries\nAin\u2019t it just like my tears\nFalling down like rain on the ground\nEvery time you say good-bye.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Look at the sky baby what do you see?",
+        "Looks like the tears that I\u2019ve cried",
+        "Falling down like rain on the ground",
+        "Every time you say good-bye."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take a look around now why don\u2019t you feel",
+        "The way the cold wind stings and blinds",
+        "And each time we part like arrows through your heart",
+        "Every time you say good-bye."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a restless feeling knocking at my door today",
+        "There\u2019s a shadow hanging \u2019round my garden gate",
+        "I read between the lines of words you can\u2019t disguise",
+        "Love has gone away and put these tears in my eyes."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Look at the sky baby see how it cries",
+        "Ain\u2019t it just like my tears",
+        "Falling down like rain on the ground",
+        "Every time you say good-bye."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

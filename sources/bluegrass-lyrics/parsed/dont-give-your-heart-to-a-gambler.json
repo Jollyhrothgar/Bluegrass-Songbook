@@ -1,0 +1,39 @@
+{
+  "slug": "dont-give-your-heart-to-a-gambler",
+  "title": "Don\u2019t Give Your Heart To A Gambler",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-give-your-heart-to-a-gambler/",
+  "raw_lyrics": "Don\u2019t fall in love with me darling I\u2019m a rambler\nAlthough you\u2019re the sweetest sweetheart in this world\nIt\u2019s all for your sake dear that I\u2019m leaving\nDon\u2019t give your heart to a rambler little girl\n\nI\u2019d never had the blues my little darling\nOr the lure of the road on my mind\nI\u2019m bound to hear the whistle of a freight train\nAnd the boxcars as they rattle down the line\n\nYes I handed you a line and I\u2019m sorry\nYou\u2019re just a little sweeter than the rest\nBelieve me when I say don\u2019t want to hurt you\nOr do anything to mar your happiness",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t fall in love with me darling I\u2019m a rambler",
+        "Although you\u2019re the sweetest sweetheart in this world",
+        "It\u2019s all for your sake dear that I\u2019m leaving",
+        "Don\u2019t give your heart to a rambler little girl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d never had the blues my little darling",
+        "Or the lure of the road on my mind",
+        "I\u2019m bound to hear the whistle of a freight train",
+        "And the boxcars as they rattle down the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes I handed you a line and I\u2019m sorry",
+        "You\u2019re just a little sweeter than the rest",
+        "Believe me when I say don\u2019t want to hurt you",
+        "Or do anything to mar your happiness"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

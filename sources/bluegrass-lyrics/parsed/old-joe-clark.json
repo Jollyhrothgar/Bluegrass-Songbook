@@ -1,0 +1,68 @@
+{
+  "slug": "old-joe-clark",
+  "title": "Old Joe Clark",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-joe-clark/",
+  "raw_lyrics": "Wished I had a dime\nWished I had a pretty girl\nTo kiss and call her mine\n\nFare thee well old joe clark\nFare thee well I say\nFare the well old joe clark\nI\u2019m a goin\u2019 away\n\nI will not marry an old maid\nI\u2019ll tell you the reason why\nHer neck is so long and stringy\nI\u2019m afraid she\u2019ll never die\n\nI asked my girl to marry me\nAnd what do you think she said\nTime enough to marry you\nWhen all the rest are dead\n\nOld joe clark did take sick\nAnd what do you think ailed him\nHe drank a churn of buttermilk\nAnd then his stomach failed him\n\nOld joe clark did get drunk\nAnd not a word could he utter\nHe fell down on the supper table\nAnd stove his nose in the butter",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Wished I had a dime",
+        "Wished I had a pretty girl",
+        "To kiss and call her mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Fare thee well old joe clark",
+        "Fare thee well I say",
+        "Fare the well old joe clark",
+        "I\u2019m a goin\u2019 away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will not marry an old maid",
+        "I\u2019ll tell you the reason why",
+        "Her neck is so long and stringy",
+        "I\u2019m afraid she\u2019ll never die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I asked my girl to marry me",
+        "And what do you think she said",
+        "Time enough to marry you",
+        "When all the rest are dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Old joe clark did take sick",
+        "And what do you think ailed him",
+        "He drank a churn of buttermilk",
+        "And then his stomach failed him"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Old joe clark did get drunk",
+        "And not a word could he utter",
+        "He fell down on the supper table",
+        "And stove his nose in the butter"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

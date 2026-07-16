@@ -1,0 +1,49 @@
+{
+  "slug": "whos-that-knocking-at-my-window",
+  "title": "Who\u2019s That Knocking At My Window",
+  "source_url": "https://www.bluegrasslyrics.com/song/whos-that-knocking-at-my-window/",
+  "raw_lyrics": "Who\u2019s that knocking at my window\nKnocks so loud and won\u2019t come in\nIt is your own true-hearted lover\nRise you up and let him in\n\nAwake, awake, don\u2019t wake my mother\nOur love\u2019s a thing she can\u2019t endure\nShe\u2019s been the ruin of many a lover\nShe\u2019ll be the ruin of many more\n\nAwake, awake, don\u2019t wake my father\nFor he is on his bed of rest\nAnd on his breast he carries a weapon\nTo kill the one that I love best\n\nI wish I was a little sparrow\nI\u2019d circle like a turtledove\nI\u2019d fly away to a lonely valley\nAnd settle down in the land of love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Who\u2019s that knocking at my window",
+        "Knocks so loud and won\u2019t come in",
+        "It is your own true-hearted lover",
+        "Rise you up and let him in"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Awake, awake, don\u2019t wake my mother",
+        "Our love\u2019s a thing she can\u2019t endure",
+        "She\u2019s been the ruin of many a lover",
+        "She\u2019ll be the ruin of many more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Awake, awake, don\u2019t wake my father",
+        "For he is on his bed of rest",
+        "And on his breast he carries a weapon",
+        "To kill the one that I love best"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I was a little sparrow",
+        "I\u2019d circle like a turtledove",
+        "I\u2019d fly away to a lonely valley",
+        "And settle down in the land of love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

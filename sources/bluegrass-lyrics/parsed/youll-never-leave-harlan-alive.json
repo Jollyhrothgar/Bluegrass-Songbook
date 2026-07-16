@@ -1,0 +1,69 @@
+{
+  "slug": "youll-never-leave-harlan-alive",
+  "title": "You\u2019ll Never Leave Harlan Alive",
+  "source_url": "https://www.bluegrasslyrics.com/song/youll-never-leave-harlan-alive/",
+  "raw_lyrics": "In the deep dark hills of eastern Kentucky\nThat\u2019s the place where I trace my bloodline\nAnd it\u2019s there I read on a hillside gravestone\nYou will never leave Harlan alive\n\nOh my granddad\u2019s dad walked down Katahrins Mountain\nAnd he asked Tillie Helton to be his bride\nSaid won\u2019t you walk with me out of the mouth of this holler\nOr we\u2019ll never leave Harlan alive\n\nWhere the sun comes up about ten in the morning\nAnd the sun goes down about three in the day\nAnd you fill your cup with whatever bitter brew you\u2019re drinking\nAnd you spend your life just thinkin\u2019 of how to get away\n\nNo one ever knew there was coal in them mountains\n\u2018Til a man from the Northeast arrived\nWaving hundred dollar bills he said I\u2019ll pay ya for your minerals\nBut he never left Harlan alive\n\nGranny sold out cheap and they moved out west of Pineville\nTo a farm where big Richland River winds\nI bet they danced them a jig laughed and sang a new song\nWho said we\u2019d never leave Harlan alive\n\nBut the times got hard and tobacco wasn\u2019t selling\nAnd ole granddad knew what he\u2019d do to survive\nHe went and dug for Harlan coal and sent the money back to granny\nBut he never left Harlan alive",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the deep dark hills of eastern Kentucky",
+        "That\u2019s the place where I trace my bloodline",
+        "And it\u2019s there I read on a hillside gravestone",
+        "You will never leave Harlan alive"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my granddad\u2019s dad walked down Katahrins Mountain",
+        "And he asked Tillie Helton to be his bride",
+        "Said won\u2019t you walk with me out of the mouth of this holler",
+        "Or we\u2019ll never leave Harlan alive"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Where the sun comes up about ten in the morning",
+        "And the sun goes down about three in the day",
+        "And you fill your cup with whatever bitter brew you\u2019re drinking",
+        "And you spend your life just thinkin\u2019 of how to get away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No one ever knew there was coal in them mountains",
+        "\u2018Til a man from the Northeast arrived",
+        "Waving hundred dollar bills he said I\u2019ll pay ya for your minerals",
+        "But he never left Harlan alive"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Granny sold out cheap and they moved out west of Pineville",
+        "To a farm where big Richland River winds",
+        "I bet they danced them a jig laughed and sang a new song",
+        "Who said we\u2019d never leave Harlan alive"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But the times got hard and tobacco wasn\u2019t selling",
+        "And ole granddad knew what he\u2019d do to survive",
+        "He went and dug for Harlan coal and sent the money back to granny",
+        "But he never left Harlan alive"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "listening-to-the-rain",
+  "title": "Listening To The Rain",
+  "source_url": "https://www.bluegrasslyrics.com/song/listening-to-the-rain/",
+  "raw_lyrics": "I\u2019m looking out the window at the rain\nThe night is driving me crazy\nIt\u2019s just as cold inside\nAll the warms is gone without my baby\nAnd in my mind something stirs\nAnd my lips start crying out your name\nWhile I\u2019m a-sitting here and wondering where you are\nAnd listening to the rain\n\nThe beating on the window can\u2019t compare with the beating\nThat I\u2019m taking\nThe window\u2019s gone cold but look at me\nI\u2019m already breaking\nMemories tugging at my heart\nAnd it\u2019s gonna crack beneath the strain\nWhile I\u2019m sitting here wondering where you are\nAnd listening the rain\n\nMy mind has got you pictured\nIn the arms and in the heart of some new love\nI\u2019ve tried to black it out\nBut all my mind can see is him and you love\nKnowing that it might be true\nThat\u2019s the thing that\u2019s causing all the pain\nWhile I\u2019m sitting here wondering where you are\nAnd listening to the rain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m looking out the window at the rain",
+        "The night is driving me crazy",
+        "It\u2019s just as cold inside",
+        "All the warms is gone without my baby",
+        "And in my mind something stirs",
+        "And my lips start crying out your name",
+        "While I\u2019m a-sitting here and wondering where you are",
+        "And listening to the rain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The beating on the window can\u2019t compare with the beating",
+        "That I\u2019m taking",
+        "The window\u2019s gone cold but look at me",
+        "I\u2019m already breaking",
+        "Memories tugging at my heart",
+        "And it\u2019s gonna crack beneath the strain",
+        "While I\u2019m sitting here wondering where you are",
+        "And listening the rain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mind has got you pictured",
+        "In the arms and in the heart of some new love",
+        "I\u2019ve tried to black it out",
+        "But all my mind can see is him and you love",
+        "Knowing that it might be true",
+        "That\u2019s the thing that\u2019s causing all the pain",
+        "While I\u2019m sitting here wondering where you are",
+        "And listening to the rain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

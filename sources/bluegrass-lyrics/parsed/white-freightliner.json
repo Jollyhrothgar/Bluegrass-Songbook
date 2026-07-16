@@ -1,0 +1,45 @@
+{
+  "slug": "white-freightliner",
+  "title": "White Freightliner",
+  "source_url": "https://www.bluegrasslyrics.com/song/white-freightliner/",
+  "raw_lyrics": "I\u2019m goin\u2019 out on that highway listen to them big trucks whine\nI\u2019m goin\u2019 out on that highway listen to them big trucks whine\nOh white Freightliner won\u2019t you steal away my mind\n\nThere\u2019s bad new from Huston half my friends have died\nThere\u2019s bad new from Huston half my friends have died\nOh white Freightliner won\u2019t you steal away my mind\n\nNew Mexico ain\u2019t bad lord people there treat you kind\nNew Mexico ain\u2019t bad lord people there they treat you kind\nOh white Freightliner won\u2019t you steal away my mind\n\nOh lord I\u2019m gonna ramble \u2019til I get back to where I came\nOh lord I\u2019m gonna ramble \u2019til I get back to where I came\nOh white Freightliner won\u2019t you steal away my brain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m goin\u2019 out on that highway listen to them big trucks whine",
+        "I\u2019m goin\u2019 out on that highway listen to them big trucks whine",
+        "Oh white Freightliner won\u2019t you steal away my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s bad new from Huston half my friends have died",
+        "There\u2019s bad new from Huston half my friends have died",
+        "Oh white Freightliner won\u2019t you steal away my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "New Mexico ain\u2019t bad lord people there treat you kind",
+        "New Mexico ain\u2019t bad lord people there they treat you kind",
+        "Oh white Freightliner won\u2019t you steal away my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh lord I\u2019m gonna ramble \u2019til I get back to where I came",
+        "Oh lord I\u2019m gonna ramble \u2019til I get back to where I came",
+        "Oh white Freightliner won\u2019t you steal away my brain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

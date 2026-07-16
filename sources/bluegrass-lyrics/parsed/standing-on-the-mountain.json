@@ -1,0 +1,49 @@
+{
+  "slug": "standing-on-the-mountain",
+  "title": "Standing On The Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/standing-on-the-mountain/",
+  "raw_lyrics": "Darling will you marry me I asked a maiden fair\nI turned my back upon her when I looked she wasn\u2019t there\n\nShe left me standing (standing) on the mountain\nShe left me standing way up there\n\nWhere the honeybees are buzzing round the flowers there\nThat is where she vanished somewhere in that mountain air\n\nI just saw the whippoorwill a-talking to a bear\nThey were both a-laughing \u2019bout her giving me the air\n\nI would give most anything if once more she\u2019d appear\nAnd tell me that she cared a little for this mountaineer",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Darling will you marry me I asked a maiden fair",
+        "I turned my back upon her when I looked she wasn\u2019t there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She left me standing (standing) on the mountain",
+        "She left me standing way up there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where the honeybees are buzzing round the flowers there",
+        "That is where she vanished somewhere in that mountain air"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I just saw the whippoorwill a-talking to a bear",
+        "They were both a-laughing \u2019bout her giving me the air"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I would give most anything if once more she\u2019d appear",
+        "And tell me that she cared a little for this mountaineer"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

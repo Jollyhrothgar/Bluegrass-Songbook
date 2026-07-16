@@ -1,0 +1,49 @@
+{
+  "slug": "bringing-in-the-georgia-mail",
+  "title": "Bringing In The Georgia Mail",
+  "source_url": "https://www.bluegrasslyrics.com/song/bringing-in-the-georgia-mail/",
+  "raw_lyrics": "See the engine puffing, boy she\u2019s making time\nThat old trains wearing out the rail, rail, rail\nHeading for the mountain that she\u2019s got to climb\nBringing in the Georgia mail\n\nNinety miles an hour and she\u2019s gaining speed\nListen to the whistle moan and wail, wail, wail\nHas she got the power I\u2019ll say yes indeed\nBringing in the Georgia mail\n\nSee the driver\u2019s travel watch her spin the track\nOught to put that engineer in jail, jail, jail\nHas he got her rolling watch her ball the jack\nBringing in the Georgia mail\n\nRocking and a reeling spouting off the steam\nStoke the fire and hope the brakes don\u2019t fail, fail, fail\nServing all the people listen to her scream\nBringing in the Georgia mail",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "See the engine puffing, boy she\u2019s making time",
+        "That old trains wearing out the rail, rail, rail",
+        "Heading for the mountain that she\u2019s got to climb",
+        "Bringing in the Georgia mail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ninety miles an hour and she\u2019s gaining speed",
+        "Listen to the whistle moan and wail, wail, wail",
+        "Has she got the power I\u2019ll say yes indeed",
+        "Bringing in the Georgia mail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "See the driver\u2019s travel watch her spin the track",
+        "Ought to put that engineer in jail, jail, jail",
+        "Has he got her rolling watch her ball the jack",
+        "Bringing in the Georgia mail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rocking and a reeling spouting off the steam",
+        "Stoke the fire and hope the brakes don\u2019t fail, fail, fail",
+        "Serving all the people listen to her scream",
+        "Bringing in the Georgia mail"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

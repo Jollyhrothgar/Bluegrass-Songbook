@@ -1,0 +1,49 @@
+{
+  "slug": "the-garden-wall",
+  "title": "The Garden Wall",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-garden-wall/",
+  "raw_lyrics": "I was standing by a garden wall\nWhere the roses bloom in southern skies\nYou pressed one rose up to your lips\nThe night we spoke our last goodbye\n\nOh the rose you kissed is faded now dear\nAnd our love is gone since we\u2019re apart\nYou went away and left behind\nA faded rose a broken heart\n\nSometimes I wish we\u2019d never met\nThen this true saying I recall\nOh it\u2019s better to have loved and lost\nThan never to have loved at all\n\nOh in dreams it seems that you are near me\nAnd I hear you say we\u2019ll never part\nThen sweet dreams disappear and leave\nA faded rose a broken heart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was standing by a garden wall",
+        "Where the roses bloom in southern skies",
+        "You pressed one rose up to your lips",
+        "The night we spoke our last goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the rose you kissed is faded now dear",
+        "And our love is gone since we\u2019re apart",
+        "You went away and left behind",
+        "A faded rose a broken heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes I wish we\u2019d never met",
+        "Then this true saying I recall",
+        "Oh it\u2019s better to have loved and lost",
+        "Than never to have loved at all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh in dreams it seems that you are near me",
+        "And I hear you say we\u2019ll never part",
+        "Then sweet dreams disappear and leave",
+        "A faded rose a broken heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

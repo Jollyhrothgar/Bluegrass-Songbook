@@ -1,0 +1,49 @@
+{
+  "slug": "all-the-good-times-are-past-and-gone-2",
+  "title": "All The Good Times Are Past And Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/all-the-good-times-are-past-and-gone-2/",
+  "raw_lyrics": "I wish to the lord I\u2019d never been born\nOr died when I was young\nI never would have seen your sparkling blue eyes\nOr heard your lying tongue\n\nAll the good times are past and gone\nAll the good times are o\u2019er\nAll the good times are past and gone\nLittle darling don\u2019t weep no more\n\nDon\u2019t you see that turtle dove\nThat flies from pine to pine\nHe\u2019s mourning for his own true love\nJust like I mourn for mine\n\nCome back come back my own true love\nAnd stay awhile with me\nFor if ever I\u2019ve had a friend in this world\nYou\u2019ve been that friend to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wish to the lord I\u2019d never been born",
+        "Or died when I was young",
+        "I never would have seen your sparkling blue eyes",
+        "Or heard your lying tongue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All the good times are past and gone",
+        "All the good times are o\u2019er",
+        "All the good times are past and gone",
+        "Little darling don\u2019t weep no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t you see that turtle dove",
+        "That flies from pine to pine",
+        "He\u2019s mourning for his own true love",
+        "Just like I mourn for mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come back come back my own true love",
+        "And stay awhile with me",
+        "For if ever I\u2019ve had a friend in this world",
+        "You\u2019ve been that friend to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

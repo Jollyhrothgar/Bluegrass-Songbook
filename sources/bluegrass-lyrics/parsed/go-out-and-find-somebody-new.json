@@ -1,0 +1,49 @@
+{
+  "slug": "go-out-and-find-somebody-new",
+  "title": "Go Out And Find Somebody New",
+  "source_url": "https://www.bluegrasslyrics.com/song/go-out-and-find-somebody-new/",
+  "raw_lyrics": "I\u2019ve tried so hard to make you happy\nThere\u2019s just one thing left to do\nBut if I can\u2019t ever make you happy\nGo out and find somebody new\n\nI love you like the trees love sunshine\nGod knows how much I love you\nBut if I can\u2019t ever make you all mine\nGo out and find somebody new\n\nI\u2019ve tried so hard to make you love me\nJust like other sweethearts do\nBut if I can\u2019t ever make you love me\nGo out and find somebody new\n\nI know I\u2019ll miss you so much darling\nI know my heart will break in two\nI know I want you to be happy\nGo out and find somebody new",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve tried so hard to make you happy",
+        "There\u2019s just one thing left to do",
+        "But if I can\u2019t ever make you happy",
+        "Go out and find somebody new"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I love you like the trees love sunshine",
+        "God knows how much I love you",
+        "But if I can\u2019t ever make you all mine",
+        "Go out and find somebody new"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve tried so hard to make you love me",
+        "Just like other sweethearts do",
+        "But if I can\u2019t ever make you love me",
+        "Go out and find somebody new"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know I\u2019ll miss you so much darling",
+        "I know my heart will break in two",
+        "I know I want you to be happy",
+        "Go out and find somebody new"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

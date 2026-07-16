@@ -1,0 +1,11 @@
+id: crossroads-bar-the
+title: Crossroads Bar, The
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/crossroads-bar-the/
+      imported_at: '2026-02-08'

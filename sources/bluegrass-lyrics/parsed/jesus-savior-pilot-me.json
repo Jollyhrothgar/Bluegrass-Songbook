@@ -1,0 +1,49 @@
+{
+  "slug": "jesus-savior-pilot-me",
+  "title": "Jesus Savior Pilot Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/jesus-savior-pilot-me/",
+  "raw_lyrics": "Jesus Savior pilot me\nOver life\u2019s tempestuous sea\nChart and compass come from thee\nJesus Savior pilot me\n\nUnknown waves before me roll\nHiding rock and treacherous shoal\nChart and compass come from thee\nJesus Savior pilot me\n\nWhen at last I near the shore\nAnd the fearful breakers roar\nMay I hear thee say to me\nFear not I will pilot thee\n\n\u2018twixt me and the peaceful rest\nThen while leaning on thy breast\nMay I hear thee say to me\nFear not I will pilot thee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Jesus Savior pilot me",
+        "Over life\u2019s tempestuous sea",
+        "Chart and compass come from thee",
+        "Jesus Savior pilot me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Unknown waves before me roll",
+        "Hiding rock and treacherous shoal",
+        "Chart and compass come from thee",
+        "Jesus Savior pilot me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When at last I near the shore",
+        "And the fearful breakers roar",
+        "May I hear thee say to me",
+        "Fear not I will pilot thee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "\u2018twixt me and the peaceful rest",
+        "Then while leaning on thy breast",
+        "May I hear thee say to me",
+        "Fear not I will pilot thee"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

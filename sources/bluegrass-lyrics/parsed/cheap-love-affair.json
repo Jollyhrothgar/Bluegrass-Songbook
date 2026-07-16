@@ -1,0 +1,39 @@
+{
+  "slug": "cheap-love-affair",
+  "title": "Cheap Love Affair",
+  "source_url": "https://www.bluegrasslyrics.com/song/cheap-love-affair/",
+  "raw_lyrics": "Don\u2019t go so far away love, try to stay around\nFor losing you would be more than I could bear\nThough I\u2019m tied to another, I hope someday she\u2019ll set me free\nFor I don\u2019t want a cheap love affair\n\nI knew we loved each other the night that we first met\nIt just happened there was nothing we could do\nLet me stay with my children \u2019til they can understand\nThat I love them and they\u2019ll know I love you too\n\nSo darling please forgive me don\u2019t give me all the blame\nThough\u2019 I know that it doesn\u2019t seem so fair\nWhen I\u2019m free I\u2019ll make you happy if you\u2019ll only wait for me\nBut I don\u2019t want a cheap love affair",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t go so far away love, try to stay around",
+        "For losing you would be more than I could bear",
+        "Though I\u2019m tied to another, I hope someday she\u2019ll set me free",
+        "For I don\u2019t want a cheap love affair"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I knew we loved each other the night that we first met",
+        "It just happened there was nothing we could do",
+        "Let me stay with my children \u2019til they can understand",
+        "That I love them and they\u2019ll know I love you too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So darling please forgive me don\u2019t give me all the blame",
+        "Though\u2019 I know that it doesn\u2019t seem so fair",
+        "When I\u2019m free I\u2019ll make you happy if you\u2019ll only wait for me",
+        "But I don\u2019t want a cheap love affair"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "house-of-gold",
+  "title": "House Of Gold",
+  "source_url": "https://www.bluegrasslyrics.com/song/house-of-gold/",
+  "raw_lyrics": "People steal they cheat and lie\nFor wealth and what it will buy\nBut don\u2019t they know on judgement day\nThat gold and silver will melt away\n\nI\u2019d rather be in a dark grave\nAnd to know that my poor soul was saved\nThan to live in this world in a house of gold\nAnd deny my God and doom my soul\n\nWhat good is gold and silver too\nIf your hearts not pure and true\nSinner hear me when I say\nFall down on your knees and pray",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "People steal they cheat and lie",
+        "For wealth and what it will buy",
+        "But don\u2019t they know on judgement day",
+        "That gold and silver will melt away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d rather be in a dark grave",
+        "And to know that my poor soul was saved",
+        "Than to live in this world in a house of gold",
+        "And deny my God and doom my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What good is gold and silver too",
+        "If your hearts not pure and true",
+        "Sinner hear me when I say",
+        "Fall down on your knees and pray"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

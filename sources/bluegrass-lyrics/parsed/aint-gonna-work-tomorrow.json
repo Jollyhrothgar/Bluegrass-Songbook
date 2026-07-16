@@ -1,0 +1,49 @@
+{
+  "slug": "aint-gonna-work-tomorrow",
+  "title": "Ain\u2019t Gonna Work Tomorrow",
+  "source_url": "https://www.bluegrasslyrics.com/song/aint-gonna-work-tomorrow/",
+  "raw_lyrics": "I ain\u2019t gonna work tomorrow\nAin\u2019t gonna work today\nAin\u2019t gonna work tomorrow, lord\nFor that is my wedding day\n\nI love my mama and papa too\nI love my mama and papa too\nI love my mama and papa too\nBut I\u2019d leave them both to go with you\n\nI\u2019ve been all around this country\nI\u2019ve been all around this world\nI\u2019ve been all around this country, lord\nFor the sake of one little girl\n\nI\u2019m leaving you this lonesome song\nI\u2019m leaving you this lonesome song\nI\u2019m leaving you this lonesome song\nCause I\u2019m gonna be gone before long",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I ain\u2019t gonna work tomorrow",
+        "Ain\u2019t gonna work today",
+        "Ain\u2019t gonna work tomorrow, lord",
+        "For that is my wedding day"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I love my mama and papa too",
+        "I love my mama and papa too",
+        "I love my mama and papa too",
+        "But I\u2019d leave them both to go with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been all around this country",
+        "I\u2019ve been all around this world",
+        "I\u2019ve been all around this country, lord",
+        "For the sake of one little girl"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m leaving you this lonesome song",
+        "I\u2019m leaving you this lonesome song",
+        "I\u2019m leaving you this lonesome song",
+        "Cause I\u2019m gonna be gone before long"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

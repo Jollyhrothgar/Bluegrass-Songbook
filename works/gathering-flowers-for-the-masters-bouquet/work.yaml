@@ -1,0 +1,11 @@
+id: gathering-flowers-for-the-masters-bouquet
+title: Gathering Flowers For The Master’s Bouquet
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/gathering-flowers-for-the-masters-bouquet/
+      imported_at: '2026-02-08'

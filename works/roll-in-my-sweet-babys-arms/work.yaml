@@ -1,0 +1,11 @@
+id: roll-in-my-sweet-babys-arms
+title: Roll In My Sweet Baby’s Arms
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/roll-in-my-sweet-babys-arms/
+      imported_at: '2026-02-08'

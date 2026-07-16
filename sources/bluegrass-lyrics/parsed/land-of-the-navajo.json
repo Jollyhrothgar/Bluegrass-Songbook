@@ -1,0 +1,95 @@
+{
+  "slug": "land-of-the-navajo",
+  "title": "Land Of The Navajo",
+  "source_url": "https://www.bluegrasslyrics.com/song/land-of-the-navajo/",
+  "raw_lyrics": "Oh the wind blows cold\nOn the trail of the buffalo\nOh the wind blows cold\nIn the land of the Navajo\nIn the land of the Navajo\n\nA hundred miles from nowhere out on the desert sand\nOne Eyed Jack the trader hold some turquoise in his hand\nBy his side sat Running Elk his longtime Indian friend\nHe vowed that he would stay by Jack until the bitter end\n\nJack had gambled everything he owned to leave this wondering life\nHe might have had a happy home and a tender loving wife\nBut his hunger was for trading trapper\u2019s furs for turquoise stones\nAnything that the Indians had Jack wanted for his own\n\nSaid Jack to Running Elk I\u2019ll gamble all my precious stones\nBefore I leave my body here among these bleaching bones\nThough now my time is drawing near and I\u2019m filled with dark regrets\nMy spirit longs to journey as the sun begins to set\n\nWe raped and killed we stole your land\nWe rule with guns and knives add whiskey to your waters\nWhile we stole away your wives\nsaid Running Elk what\u2019s done is done you white men rule this land\nso lay the cards face up and play your last broken hearted hand\n\n* Refrain\n\nWhen your dealing cards with death the joker\u2019s wild the ace is high\nJack bet the Mississippi River running Elk raised him the sky\nJack saw him with the sun and room and upped him with the stars\nRunning Elk bet the Rocky Mountains Jupiter and Mars\n\nThe sun was sinking in the west when Jack draw the ace of spades\nRunning Elk just rolled his eyes and smiled and passed away\nJack picked up his turquoise stones and cast them to the sky\nHe stared into the setting sun and made the mournful cry\n\n* Refrain",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the wind blows cold",
+        "On the trail of the buffalo",
+        "Oh the wind blows cold",
+        "In the land of the Navajo",
+        "In the land of the Navajo"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A hundred miles from nowhere out on the desert sand",
+        "One Eyed Jack the trader hold some turquoise in his hand",
+        "By his side sat Running Elk his longtime Indian friend",
+        "He vowed that he would stay by Jack until the bitter end"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jack had gambled everything he owned to leave this wondering life",
+        "He might have had a happy home and a tender loving wife",
+        "But his hunger was for trading trapper\u2019s furs for turquoise stones",
+        "Anything that the Indians had Jack wanted for his own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Said Jack to Running Elk I\u2019ll gamble all my precious stones",
+        "Before I leave my body here among these bleaching bones",
+        "Though now my time is drawing near and I\u2019m filled with dark regrets",
+        "My spirit longs to journey as the sun begins to set"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We raped and killed we stole your land",
+        "We rule with guns and knives add whiskey to your waters",
+        "While we stole away your wives",
+        "said Running Elk what\u2019s done is done you white men rule this land",
+        "so lay the cards face up and play your last broken hearted hand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "* Refrain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When your dealing cards with death the joker\u2019s wild the ace is high",
+        "Jack bet the Mississippi River running Elk raised him the sky",
+        "Jack saw him with the sun and room and upped him with the stars",
+        "Running Elk bet the Rocky Mountains Jupiter and Mars"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sun was sinking in the west when Jack draw the ace of spades",
+        "Running Elk just rolled his eyes and smiled and passed away",
+        "Jack picked up his turquoise stones and cast them to the sky",
+        "He stared into the setting sun and made the mournful cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "* Refrain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

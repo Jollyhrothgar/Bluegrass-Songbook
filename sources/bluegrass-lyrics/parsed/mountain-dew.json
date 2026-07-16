@@ -1,0 +1,59 @@
+{
+  "slug": "mountain-dew",
+  "title": "Mountain Dew",
+  "source_url": "https://www.bluegrasslyrics.com/song/mountain-dew/",
+  "raw_lyrics": "There\u2019s a big hollow tree down the road here from me\nWhere you lay down a dollar or two\nYou stroll \u2019round the bend and you come back again\nThere\u2019s a jug full of good old mountain dew\n\nThey call it that mountain dew\nAnd them that refuse it are few\nI\u2019ll hush up my mug if you fill up my jug\nWith that good old mountain dew\n\nMy uncle Mort, he\u2019s sawed off and short\nHe measures about four foot two\nBut he thinks he\u2019s a giant when you give him a pint\nOf that good old mountain dew\n\nWell, my old aunt June bought some brand new perfume\nIf had such a sweet smelling pew\nBut to her surprise when she had it analyzed\nIt was nothing but good old mountain dew\n\nWell, my brother Bill\u2019s got a still on the hill\nWhere he runs off a gallon or two\nThe buzzards in the sky get so drunk they can\u2019t fly\nFrom smelling that good old mountain dew",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a big hollow tree down the road here from me",
+        "Where you lay down a dollar or two",
+        "You stroll \u2019round the bend and you come back again",
+        "There\u2019s a jug full of good old mountain dew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "They call it that mountain dew",
+        "And them that refuse it are few",
+        "I\u2019ll hush up my mug if you fill up my jug",
+        "With that good old mountain dew"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My uncle Mort, he\u2019s sawed off and short",
+        "He measures about four foot two",
+        "But he thinks he\u2019s a giant when you give him a pint",
+        "Of that good old mountain dew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, my old aunt June bought some brand new perfume",
+        "If had such a sweet smelling pew",
+        "But to her surprise when she had it analyzed",
+        "It was nothing but good old mountain dew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, my brother Bill\u2019s got a still on the hill",
+        "Where he runs off a gallon or two",
+        "The buzzards in the sky get so drunk they can\u2019t fly",
+        "From smelling that good old mountain dew"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

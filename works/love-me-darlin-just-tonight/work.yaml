@@ -1,0 +1,11 @@
+id: love-me-darlin-just-tonight
+title: Love Me Darlin’ Just Tonight
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/love-me-darlin-just-tonight/
+      imported_at: '2026-02-08'

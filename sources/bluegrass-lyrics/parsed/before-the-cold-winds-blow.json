@@ -1,0 +1,60 @@
+{
+  "slug": "before-the-cold-winds-blow",
+  "title": "Before The Cold Winds Blow",
+  "source_url": "https://www.bluegrasslyrics.com/song/before-the-cold-winds-blow/",
+  "raw_lyrics": "The weather finally broke in the middle of april\nJacob loaded up his wagon with last years furs.\nHe\u2019d have to make the trip alone \u2019cause it would be too risky\nFor his pretty wife sarah and the unborn child she carried with her.\n\nIt took three weeks to reach the mississippi ribbon\nAnd he turned south toward new orleans\nFor a boy from the mountains it was easy to get caught up\nIn the sights and sounds of the city\nAnd the things he\u2019d never seen.\n\nAnd the river rolls on Like an endless river\nThe sun light glistens on the rocks below\nHe can hear her voice in the rippling water\nSaying please be home before the cold winds blow.\n\nHe fell in With a bad companion\nSaid give me your money or I\u2019ll take your life\nJacob drew his pistol and in less than a heart beat\nThe stranger lay dead on the floor and someone had to pay the price.\n\nAnd after three long years in a Louisiana prison\nHe stands on the hill that overlooks his farm\nWith his woman by his side thanks god for his blessings\nAnd most of all for the blonde hair child resting in his arms.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The weather finally broke in the middle of april",
+        "Jacob loaded up his wagon with last years furs.",
+        "He\u2019d have to make the trip alone \u2019cause it would be too risky",
+        "For his pretty wife sarah and the unborn child she carried with her."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It took three weeks to reach the mississippi ribbon",
+        "And he turned south toward new orleans",
+        "For a boy from the mountains it was easy to get caught up",
+        "In the sights and sounds of the city",
+        "And the things he\u2019d never seen."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And the river rolls on Like an endless river",
+        "The sun light glistens on the rocks below",
+        "He can hear her voice in the rippling water",
+        "Saying please be home before the cold winds blow."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He fell in With a bad companion",
+        "Said give me your money or I\u2019ll take your life",
+        "Jacob drew his pistol and in less than a heart beat",
+        "The stranger lay dead on the floor and someone had to pay the price."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And after three long years in a Louisiana prison",
+        "He stands on the hill that overlooks his farm",
+        "With his woman by his side thanks god for his blessings",
+        "And most of all for the blonde hair child resting in his arms."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

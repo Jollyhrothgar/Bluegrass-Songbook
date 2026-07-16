@@ -1,0 +1,59 @@
+{
+  "slug": "clinch-mountain-blues",
+  "title": "Clinch Mountain Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/clinch-mountain-blues/",
+  "raw_lyrics": "Livin\u2019 up on top of the mountain\nLivin\u2019 up where the hills are steep\nGot no home ain\u2019t got no place to sleep\nGot no place to sleep\n\nRoll on roll on Clinch Mountains\nRoll on you old Clinch Mountain blues\nI can\u2019t lose these Clinch Mountain blues\nThese Clinch Mountain blues\n\nGoin\u2019 back to mother and daddy\nGoin\u2019 back to see them both someday\nWhen I\u2019m there it\u2019s there that I\u2019ll stay\nThere that I will stay\n\nTravelin\u2019 down this old rocky road\nTravelin\u2019 down this road to find my way\nBack to the old folks and my home so gay\nMy home so gay\n\nLeavin\u2019 right now yes I\u2019m leavin\u2019\nPackin\u2019 up clothes but I\u2019ve none to pack\nLeave these Clinch Mountains and I ain\u2019t a-comin\u2019 back\nI ain\u2019t a-coming back",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Livin\u2019 up on top of the mountain",
+        "Livin\u2019 up where the hills are steep",
+        "Got no home ain\u2019t got no place to sleep",
+        "Got no place to sleep"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Roll on roll on Clinch Mountains",
+        "Roll on you old Clinch Mountain blues",
+        "I can\u2019t lose these Clinch Mountain blues",
+        "These Clinch Mountain blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goin\u2019 back to mother and daddy",
+        "Goin\u2019 back to see them both someday",
+        "When I\u2019m there it\u2019s there that I\u2019ll stay",
+        "There that I will stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Travelin\u2019 down this old rocky road",
+        "Travelin\u2019 down this road to find my way",
+        "Back to the old folks and my home so gay",
+        "My home so gay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Leavin\u2019 right now yes I\u2019m leavin\u2019",
+        "Packin\u2019 up clothes but I\u2019ve none to pack",
+        "Leave these Clinch Mountains and I ain\u2019t a-comin\u2019 back",
+        "I ain\u2019t a-coming back"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

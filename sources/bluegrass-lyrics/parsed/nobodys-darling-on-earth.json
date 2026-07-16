@@ -1,0 +1,59 @@
+{
+  "slug": "nobodys-darling-on-earth",
+  "title": "Nobody\u2019s Darling On Earth",
+  "source_url": "https://www.bluegrasslyrics.com/song/nobodys-darling-on-earth/",
+  "raw_lyrics": "Out in this cold world alone\nWandering about on the street\nAsking a penny for bread\nBegging for something to eat\n\nI\u2019m nobody\u2019s darling on earth\nHeaven have mercy on me\nFor I\u2019m nobody\u2019s darling\nNobody cares for me\n\nWhen I was but a young lad\nMother was taken from home\nNow I have no one to love me\nNo one to call me their own\n\nWhile others are sleeping so sound\nOr dreaming of silver and gold\nI\u2019m out in this cold world alone\nWandering about in the cold\n\nIf  I\u2019m fortunate enough\nTo get to the Heavenly home\nI will have some one to love me\nSome one to call me their own",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Out in this cold world alone",
+        "Wandering about on the street",
+        "Asking a penny for bread",
+        "Begging for something to eat"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m nobody\u2019s darling on earth",
+        "Heaven have mercy on me",
+        "For I\u2019m nobody\u2019s darling",
+        "Nobody cares for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I was but a young lad",
+        "Mother was taken from home",
+        "Now I have no one to love me",
+        "No one to call me their own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While others are sleeping so sound",
+        "Or dreaming of silver and gold",
+        "I\u2019m out in this cold world alone",
+        "Wandering about in the cold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If  I\u2019m fortunate enough",
+        "To get to the Heavenly home",
+        "I will have some one to love me",
+        "Some one to call me their own"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "happiest-days-of-all-the",
+  "title": "Happiest Days Of All, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/happiest-days-of-all-the/",
+  "raw_lyrics": "I wondered today on the sea shore\nThe waves and the winds are low\nI thought of the days gone by Maud\nMany long years ago\n\nWe lingered by the gently flowing billows\nAnd watch the golden sunset fade away\nAnd there among the sweet ocean breezes\nWe talked about our future wedding day\n\nGathering up the shells from the sea shore\nGathering up the shells from the sea\nThose were the happiest days of all Maud\nGathering up the shells from the shore\n\nWhen the waves are rolling on the ocean\nAnd the golden moonbeams on the pebbles shine\nAt your cottage by the sea I\u2019ll come again Maud\nWhen the waves are rolling gently sweetheart mine\n\nNow I am growing up in years Maud\nMy locks are all silver and gray\nBut the vows that we made on the shore Maud\nAre fresh in my memory today\n\nNo more bright shells we will gather\nAs the waves come dashing as of yore\nShe lies neath the white pebbled sand\nJust covered up with shells on the shore",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wondered today on the sea shore",
+        "The waves and the winds are low",
+        "I thought of the days gone by Maud",
+        "Many long years ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We lingered by the gently flowing billows",
+        "And watch the golden sunset fade away",
+        "And there among the sweet ocean breezes",
+        "We talked about our future wedding day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Gathering up the shells from the sea shore",
+        "Gathering up the shells from the sea",
+        "Those were the happiest days of all Maud",
+        "Gathering up the shells from the shore"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the waves are rolling on the ocean",
+        "And the golden moonbeams on the pebbles shine",
+        "At your cottage by the sea I\u2019ll come again Maud",
+        "When the waves are rolling gently sweetheart mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I am growing up in years Maud",
+        "My locks are all silver and gray",
+        "But the vows that we made on the shore Maud",
+        "Are fresh in my memory today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No more bright shells we will gather",
+        "As the waves come dashing as of yore",
+        "She lies neath the white pebbled sand",
+        "Just covered up with shells on the shore"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "at-the-end-of-a-long-lonely-day",
+  "title": "At The End Of A Long Lonely Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/at-the-end-of-a-long-lonely-day/",
+  "raw_lyrics": "At the end of a long lonely day without you\nMy world seems to fall on it\u2019s face\nWell, I\u2019m alright through the day but the day fades away\nAt the end of a long lonely day\n\nAnother day wishing you were here\nI dread each lonely night Lord their filled with tears\nOh how I\u2019ve cried yes I\u2019ve cried and these tears I can\u2019t hide\nAt the end of a long lonely day\n\nAt the end of the day I go back to my room\nAnd watch as the sun fades away\nAnd the loneliness there with its grief and despair\nAt the end of a long lonely day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "At the end of a long lonely day without you",
+        "My world seems to fall on it\u2019s face",
+        "Well, I\u2019m alright through the day but the day fades away",
+        "At the end of a long lonely day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Another day wishing you were here",
+        "I dread each lonely night Lord their filled with tears",
+        "Oh how I\u2019ve cried yes I\u2019ve cried and these tears I can\u2019t hide",
+        "At the end of a long lonely day"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "At the end of the day I go back to my room",
+        "And watch as the sun fades away",
+        "And the loneliness there with its grief and despair",
+        "At the end of a long lonely day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

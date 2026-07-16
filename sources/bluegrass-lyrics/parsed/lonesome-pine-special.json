@@ -1,0 +1,45 @@
+{
+  "slug": "lonesome-pine-special",
+  "title": "Lonesome Pine Special",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-pine-special/",
+  "raw_lyrics": "I was walking out this morning with rambling on my mind\nI am going to catch that special train for lonesome pine\nYou can hear the whistle blowing as she\u2019s coming down the line\nThat\u2019s the train I catch this morning just to ease my troubling mind\n\nYodel\nTake me back to Texas back to my old home\n\nOh I\u2019m weeping like a willow and I\u2019m mourning like a dove\nThere\u2019s a girl out in Texas that I know I really love\nOh I\u2019m going back to Texas where the lonesome coyotes whine\nWhere the longhorn cattle are lowing round that cabin home of mine\n\nOh give me back my rifle oh give me back my gun\nGive me back my home in Texas and my rambling days are done",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was walking out this morning with rambling on my mind",
+        "I am going to catch that special train for lonesome pine",
+        "You can hear the whistle blowing as she\u2019s coming down the line",
+        "That\u2019s the train I catch this morning just to ease my troubling mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Yodel",
+        "Take me back to Texas back to my old home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I\u2019m weeping like a willow and I\u2019m mourning like a dove",
+        "There\u2019s a girl out in Texas that I know I really love",
+        "Oh I\u2019m going back to Texas where the lonesome coyotes whine",
+        "Where the longhorn cattle are lowing round that cabin home of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh give me back my rifle oh give me back my gun",
+        "Give me back my home in Texas and my rambling days are done"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

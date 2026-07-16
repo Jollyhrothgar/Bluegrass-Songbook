@@ -1,0 +1,39 @@
+{
+  "slug": "a-rose-among-the-thorns",
+  "title": "A Rose Among the Thorns",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-rose-among-the-thorns/",
+  "raw_lyrics": "While strolling through the fields of time there\u2019s many things to see\nBut nature is the greatest sight that could ever be\nBut the greatest of them all is how the world was formed\nAnd why the roses had to live each day among the thorns\n\nOne day among the world of thorns a rose began to grow\nIt was the greatest gift of God this world will ever know\nIt was the will of God to show that since the world was formed\nThere had to be a rose to live and die among the thorns\n\nTwo thousand years will soon be gone since God looked down with love\nHe filled this earth with beauty with roses from above\nHe hung upon a rugged cross to save the world from sin\nBetween two thorns this rose He died three days He bloomed again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "While strolling through the fields of time there\u2019s many things to see",
+        "But nature is the greatest sight that could ever be",
+        "But the greatest of them all is how the world was formed",
+        "And why the roses had to live each day among the thorns"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One day among the world of thorns a rose began to grow",
+        "It was the greatest gift of God this world will ever know",
+        "It was the will of God to show that since the world was formed",
+        "There had to be a rose to live and die among the thorns"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Two thousand years will soon be gone since God looked down with love",
+        "He filled this earth with beauty with roses from above",
+        "He hung upon a rugged cross to save the world from sin",
+        "Between two thorns this rose He died three days He bloomed again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

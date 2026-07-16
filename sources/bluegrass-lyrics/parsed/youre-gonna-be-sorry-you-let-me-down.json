@@ -1,0 +1,59 @@
+{
+  "slug": "youre-gonna-be-sorry-you-let-me-down",
+  "title": "You\u2019re Gonna Be Sorry You Let Me Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-gonna-be-sorry-you-let-me-down/",
+  "raw_lyrics": "You told me once dear I was true and kind\nYou told me then love that you were mine\nBut now you tell me that you were blind\nYou like your parties and good times\n\nI\u2019m sorry darlin cause you feel this way\nBut you told me truthful to my face\nYou found another to take my place\nAll dressed in diamonds pearls and lace\n\nI\u2019m sorry darlin cause you let me down\nA truer love now you think you\u2019ve found\nBut when I\u2019m laid deep down in the ground\nYou\u2019re gonna be sorry you let me down\n\nSo now I\u2019ve lost you but I still have faith\nThat you will see the mistake you made\nAnd when you find dear that you are wrong\nYou\u2019ll ask forgiveness and come back home\n\nI believed you darlin when you said to me\nThat we\u2019d be happy that we\u2019d be free\nBut now I\u2019ve found dear a fault in thee\nWhen we were wed love I could not see",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You told me once dear I was true and kind",
+        "You told me then love that you were mine",
+        "But now you tell me that you were blind",
+        "You like your parties and good times"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m sorry darlin cause you feel this way",
+        "But you told me truthful to my face",
+        "You found another to take my place",
+        "All dressed in diamonds pearls and lace"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m sorry darlin cause you let me down",
+        "A truer love now you think you\u2019ve found",
+        "But when I\u2019m laid deep down in the ground",
+        "You\u2019re gonna be sorry you let me down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So now I\u2019ve lost you but I still have faith",
+        "That you will see the mistake you made",
+        "And when you find dear that you are wrong",
+        "You\u2019ll ask forgiveness and come back home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I believed you darlin when you said to me",
+        "That we\u2019d be happy that we\u2019d be free",
+        "But now I\u2019ve found dear a fault in thee",
+        "When we were wed love I could not see"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

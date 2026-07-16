@@ -1,0 +1,49 @@
+{
+  "slug": "ive-waited-as-long-as-i-can",
+  "title": "I\u2019ve Waited As Long As I Can",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-waited-as-long-as-i-can/",
+  "raw_lyrics": "I\u2019ve waited for you and I\u2019ve always been true\nBut this waiting no longer I can stand\nI know you\u2019ve had time dear to make up your mind\nI\u2019ve waited as long as I can\n\nI\u2019m waiting to hear you say you love me\nAnd long for the day you take my hand\nI asked again last night for your love so divine\nI\u2019ve waited as long as I can\n\nDone all I can do said all I can say\nOh why can\u2019t I make you understand\nI wanted you for mine but I\u2019m wasting my time\nI\u2019ve waited as long as I can\n\nNow I\u2019ll just say goodbye the tears fall from my eyes\nFor you have made it plain that I can\u2019t win\nNo one will ever know the pain that I\u2019ve been through\nI\u2019ve waited as long as I can",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve waited for you and I\u2019ve always been true",
+        "But this waiting no longer I can stand",
+        "I know you\u2019ve had time dear to make up your mind",
+        "I\u2019ve waited as long as I can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m waiting to hear you say you love me",
+        "And long for the day you take my hand",
+        "I asked again last night for your love so divine",
+        "I\u2019ve waited as long as I can"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Done all I can do said all I can say",
+        "Oh why can\u2019t I make you understand",
+        "I wanted you for mine but I\u2019m wasting my time",
+        "I\u2019ve waited as long as I can"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019ll just say goodbye the tears fall from my eyes",
+        "For you have made it plain that I can\u2019t win",
+        "No one will ever know the pain that I\u2019ve been through",
+        "I\u2019ve waited as long as I can"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

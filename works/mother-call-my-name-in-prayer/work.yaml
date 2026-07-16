@@ -1,0 +1,11 @@
+id: mother-call-my-name-in-prayer
+title: Mother Call My Name In Prayer
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/mother-call-my-name-in-prayer/
+      imported_at: '2026-02-08'

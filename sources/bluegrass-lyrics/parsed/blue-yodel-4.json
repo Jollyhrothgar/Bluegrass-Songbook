@@ -1,0 +1,49 @@
+{
+  "slug": "blue-yodel-4",
+  "title": "Blue Yodel #4",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-yodel-4/",
+  "raw_lyrics": "She\u2019s long she\u2019s tall, she six feet from the ground\nShe\u2019s long she\u2019s tall, she six feet from the ground\nShe tailor made, lord she ain\u2019t no hand me down\nOh-di-lay-ee-ay, di-lay-dee-oh, de-lay-ee\n\nShe got eyes like diamonds, lord her teeth shine just the same\nShe got eyes like diamonds and her teeth shine just the same\nShe got sweet ruby lips, and a hair like a horse\u2019s mane\nOh-di-lay-ee-ay, di-lay-dee-oh, de-lay-ee\n\nEvery time I see you mama, you\u2019re always on the street\nEvery time I see you mama, you\u2019re always on the street\nYou hang out on the corner, like a police on his beat\nOh-di-lay-ee-ay, di-lay-dee-oh, de-lay-ee\n\nEvery time I need you mama, lord I always find you\u2019re gone\nEvery time I need you mama, lord I always find you\u2019re gone\nListen hear sweet mama, I\u2019m gonna put your air brakes on\nOh-di-lay-ee-ay, di-lay-dee-oh, de-lay-ee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s long she\u2019s tall, she six feet from the ground",
+        "She\u2019s long she\u2019s tall, she six feet from the ground",
+        "She tailor made, lord she ain\u2019t no hand me down",
+        "Oh-di-lay-ee-ay, di-lay-dee-oh, de-lay-ee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She got eyes like diamonds, lord her teeth shine just the same",
+        "She got eyes like diamonds and her teeth shine just the same",
+        "She got sweet ruby lips, and a hair like a horse\u2019s mane",
+        "Oh-di-lay-ee-ay, di-lay-dee-oh, de-lay-ee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every time I see you mama, you\u2019re always on the street",
+        "Every time I see you mama, you\u2019re always on the street",
+        "You hang out on the corner, like a police on his beat",
+        "Oh-di-lay-ee-ay, di-lay-dee-oh, de-lay-ee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every time I need you mama, lord I always find you\u2019re gone",
+        "Every time I need you mama, lord I always find you\u2019re gone",
+        "Listen hear sweet mama, I\u2019m gonna put your air brakes on",
+        "Oh-di-lay-ee-ay, di-lay-dee-oh, de-lay-ee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

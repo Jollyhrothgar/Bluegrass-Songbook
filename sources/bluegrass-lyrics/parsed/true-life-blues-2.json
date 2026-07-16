@@ -1,0 +1,49 @@
+{
+  "slug": "true-life-blues-2",
+  "title": "True Life Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/true-life-blues-2/",
+  "raw_lyrics": "I hate to see the sun sink low\nJust for a cause you ought to know\nFor it\u2019s true love I can\u2019t forget\nAll of my sorrow you\u2019ll soon regret\n\nYou promised me love that was true\nAnd I\u2019m sorry to say that I believed in you\nIt\u2019s all turned out just like a dream\nLeft me so sad in the world it seems\n\nThere\u2019s dishes to wash and a house to clean\nThere\u2019s washing to do, oh it seems so mean\nThere\u2019s a million words I can\u2019t explain\nThink of this girl, before you change your name\n\nThey\u2019ll go away and leave you at home\nThey never care if you\u2019re alone\nThey seem to forget they\u2019ve got a wife\nThis story is sad, but it\u2019s a true life",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I hate to see the sun sink low",
+        "Just for a cause you ought to know",
+        "For it\u2019s true love I can\u2019t forget",
+        "All of my sorrow you\u2019ll soon regret"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You promised me love that was true",
+        "And I\u2019m sorry to say that I believed in you",
+        "It\u2019s all turned out just like a dream",
+        "Left me so sad in the world it seems"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s dishes to wash and a house to clean",
+        "There\u2019s washing to do, oh it seems so mean",
+        "There\u2019s a million words I can\u2019t explain",
+        "Think of this girl, before you change your name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They\u2019ll go away and leave you at home",
+        "They never care if you\u2019re alone",
+        "They seem to forget they\u2019ve got a wife",
+        "This story is sad, but it\u2019s a true life"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

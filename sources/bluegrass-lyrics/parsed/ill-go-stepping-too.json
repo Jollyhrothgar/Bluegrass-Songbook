@@ -1,0 +1,49 @@
+{
+  "slug": "ill-go-stepping-too",
+  "title": "I\u2019ll Go Stepping Too",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-go-stepping-too/",
+  "raw_lyrics": "Don\u2019t think I\u2019ll be hanging around while you\u2019re having fun\nI won\u2019t sit here crying over you\nFrom now on when you step out I\u2019ll tell you what I\u2019ll do\nI\u2019ll lock the door, put out the cat and I\u2019ll go stepping too\n\nYes, I\u2019ll go stepping too, my honey\nI\u2019ll go stepping too\nI\u2019ll lock the door, put out the cat\nAnd I\u2019ll go stepping too\n\nNow every time you come in late we begin to fight\nYou tell me there are more fish in the sea\nBut the bait ain\u2019t what it used to be and I\u2019ve got news for you\nNow after this when you step out then I\u2019ll go stepping too\n\nFrom now on when you come in and you won\u2019t tell where you been\nWith your hair mussed up and your clothes don\u2019t fit you right\nDon\u2019t start to yell if you find lipstick on me too\nThen you will know that I have been stepping just like you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t think I\u2019ll be hanging around while you\u2019re having fun",
+        "I won\u2019t sit here crying over you",
+        "From now on when you step out I\u2019ll tell you what I\u2019ll do",
+        "I\u2019ll lock the door, put out the cat and I\u2019ll go stepping too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes, I\u2019ll go stepping too, my honey",
+        "I\u2019ll go stepping too",
+        "I\u2019ll lock the door, put out the cat",
+        "And I\u2019ll go stepping too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now every time you come in late we begin to fight",
+        "You tell me there are more fish in the sea",
+        "But the bait ain\u2019t what it used to be and I\u2019ve got news for you",
+        "Now after this when you step out then I\u2019ll go stepping too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "From now on when you come in and you won\u2019t tell where you been",
+        "With your hair mussed up and your clothes don\u2019t fit you right",
+        "Don\u2019t start to yell if you find lipstick on me too",
+        "Then you will know that I have been stepping just like you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

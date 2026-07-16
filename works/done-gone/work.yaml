@@ -1,11 +1,12 @@
 id: done-gone
 title: Done Gone
-artist: null
-composers: []
-default_key: null
+artist: Traditional
+default_key: A
 tags:
 - Instrumental
+- Fiddle
 - Clawhammer
+notes: Bill Monroe fiddle tune. Classic bluegrass instrumental.
 parts:
 - type: tablature
   instrument: banjo

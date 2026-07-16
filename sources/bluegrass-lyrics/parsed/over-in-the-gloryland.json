@@ -1,0 +1,51 @@
+{
+  "slug": "over-in-the-gloryland",
+  "title": "Over In The Gloryland",
+  "source_url": "https://www.bluegrasslyrics.com/song/over-in-the-gloryland/",
+  "raw_lyrics": "I\u2019ve a home prepared where the saints abide\nOver in the glory land\nI long to be by my Saviors side\nOver in the glory land\n\nJust over in the glory land\nI\u2019ll join (yes join) the happy angels band\nOver in the glory land\nJust over in the glory land\nThere with (yes with) the mighty host I\u2019ll stand\nOver in the glory land\n\nI\u2019m on my way to those mansions fair\nOver in the glory land\nThere to sing Gods praise and his glory share\nOver in the glory land\n\nWhat a joyful thought that my Lord Ill see\nOver in the glory land\nAnd the kindred say there forever I\u2019ll be\nOver in the glory land",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve a home prepared where the saints abide",
+        "Over in the glory land",
+        "I long to be by my Saviors side",
+        "Over in the glory land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Just over in the glory land",
+        "I\u2019ll join (yes join) the happy angels band",
+        "Over in the glory land",
+        "Just over in the glory land",
+        "There with (yes with) the mighty host I\u2019ll stand",
+        "Over in the glory land"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m on my way to those mansions fair",
+        "Over in the glory land",
+        "There to sing Gods praise and his glory share",
+        "Over in the glory land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What a joyful thought that my Lord Ill see",
+        "Over in the glory land",
+        "And the kindred say there forever I\u2019ll be",
+        "Over in the glory land"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

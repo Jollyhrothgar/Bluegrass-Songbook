@@ -1,0 +1,49 @@
+{
+  "slug": "a-sweeter-love-than-yours-ill-never-know",
+  "title": "A Sweeter Love Than Yours I\u2019ll Never Know",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-sweeter-love-than-yours-ill-never-know/",
+  "raw_lyrics": "You\u2019ll never find a sweeter love\nThan the love you gave to me\nBut I would not be satisfied\nNow you no longer care for me.\n\nNow you\u2019ve gone and left me alone\nOh why did I ever let you go?\nIn this world I can never find\nA sweeter love than yours I\u2019ll never know.\n\nNow my future looks so cold\nSo cold without you my dear\nI realize that I\u2019m to blame\nBut for my wrong I\u2019m paying dear.\n\nNow I think of you both night and day\nI\u2019m sorry dear I ever let you go\nI know now that it\u2019s too late\nA sweeter love than yours I\u2019ll never know.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll never find a sweeter love",
+        "Than the love you gave to me",
+        "But I would not be satisfied",
+        "Now you no longer care for me."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now you\u2019ve gone and left me alone",
+        "Oh why did I ever let you go?",
+        "In this world I can never find",
+        "A sweeter love than yours I\u2019ll never know."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now my future looks so cold",
+        "So cold without you my dear",
+        "I realize that I\u2019m to blame",
+        "But for my wrong I\u2019m paying dear."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I think of you both night and day",
+        "I\u2019m sorry dear I ever let you go",
+        "I know now that it\u2019s too late",
+        "A sweeter love than yours I\u2019ll never know."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

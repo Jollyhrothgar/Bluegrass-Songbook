@@ -1,0 +1,11 @@
+id: the-green-rolling-hills-of-west-virginia
+title: The Green Rolling Hills Of West Virginia
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/the-green-rolling-hills-of-west-virginia/
+      imported_at: '2026-02-08'

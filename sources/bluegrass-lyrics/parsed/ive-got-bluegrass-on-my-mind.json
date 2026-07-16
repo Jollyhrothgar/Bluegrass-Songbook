@@ -1,0 +1,39 @@
+{
+  "slug": "ive-got-bluegrass-on-my-mind",
+  "title": "I\u2019ve Got Bluegrass On My Mind",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-got-bluegrass-on-my-mind/",
+  "raw_lyrics": "I\u2019ve got bluegrass on my mind heading back to old Kentucky\nWhere the mountains look so pretty in the spring\nWhen the dew is on the bluegrass sparkling with the sun\u2019s good morning\nI\u2019ve got good old bluegrass on my mind again\n\nLet me hear the fox hounds running High at night among the mountains\nAnd then later when the fox horn blows them in\nLet me hear the roosters crowing Smell the ham and bacon frying\nI\u2019ve got good old bluegrass on my mind again\n\nIn a little cabin home where your neighbor was your neighbor\nAnd the bluegrass started growing every spring\nThere we danced on Saturday night to fiddle and a banjo\nI\u2019ve got old bluegrass on my mind again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got bluegrass on my mind heading back to old Kentucky",
+        "Where the mountains look so pretty in the spring",
+        "When the dew is on the bluegrass sparkling with the sun\u2019s good morning",
+        "I\u2019ve got good old bluegrass on my mind again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let me hear the fox hounds running High at night among the mountains",
+        "And then later when the fox horn blows them in",
+        "Let me hear the roosters crowing Smell the ham and bacon frying",
+        "I\u2019ve got good old bluegrass on my mind again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In a little cabin home where your neighbor was your neighbor",
+        "And the bluegrass started growing every spring",
+        "There we danced on Saturday night to fiddle and a banjo",
+        "I\u2019ve got old bluegrass on my mind again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

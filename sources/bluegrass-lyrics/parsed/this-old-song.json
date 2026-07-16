@@ -1,0 +1,65 @@
+{
+  "slug": "this-old-song",
+  "title": "This Old Song",
+  "source_url": "https://www.bluegrasslyrics.com/song/this-old-song/",
+  "raw_lyrics": "This old song won\u2019t take long\nJust to tell what went wrong\nI had to leave my old home\nAnd now I\u2019m walking all alone\n\nYou can see me through your eyes\nI\u2019m the one that\u2019s tellin\u2019 lies\nYou can play your little games\nBut you cannot change my name\n\nSo I\u2019ll go where I know\nMy seeds will sow\n\nIf I walk this lonesome road\nTo that valley of despair\nThen I know when I get out\nDarkness cannot find me there\n\nAnd the time that it takes\nAnd the mark that it makes\nWill change me just the same\nBut they cannot change my name\n\nSo I\u2019ll go where I know\nMy seeds will sow",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "This old song won\u2019t take long",
+        "Just to tell what went wrong",
+        "I had to leave my old home",
+        "And now I\u2019m walking all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can see me through your eyes",
+        "I\u2019m the one that\u2019s tellin\u2019 lies",
+        "You can play your little games",
+        "But you cannot change my name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So I\u2019ll go where I know",
+        "My seeds will sow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I walk this lonesome road",
+        "To that valley of despair",
+        "Then I know when I get out",
+        "Darkness cannot find me there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And the time that it takes",
+        "And the mark that it makes",
+        "Will change me just the same",
+        "But they cannot change my name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So I\u2019ll go where I know",
+        "My seeds will sow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

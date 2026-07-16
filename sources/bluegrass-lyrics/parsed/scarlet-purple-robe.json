@@ -1,0 +1,49 @@
+{
+  "slug": "scarlet-purple-robe",
+  "title": "Scarlet Purple Robe",
+  "source_url": "https://www.bluegrasslyrics.com/song/scarlet-purple-robe/",
+  "raw_lyrics": "There\u2019s a story so unkind in the Holy book we find\nAnd it tells how Jesus stood alone one day\nFalse accused and there condemned yet they found no fault with Him\nThe man who wore the scarlet purple robe\n\nPurple robe my Savior wore oh the shame for me he bore\nAs He stood alone, forsaken on that day\nAnd they placed upon His head piercing thorns and blood stained red\nHis raiment was a scarlet purple robe\n\nIn the common judgment hall he was mocked and scorned by all\nAnd a tear of sorrow fell upon His cheek\nSoldiers of the wicked man smote Him with their evil hand\nThe Man who wore the scarlet purple robe\n\nWords of truth that day were plain from the lips of Pilot came\nIn this man I find no reason He should die\nBut the multitudes replied let Him now be crucified\nThe man who wore the scarlet purple robe",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a story so unkind in the Holy book we find",
+        "And it tells how Jesus stood alone one day",
+        "False accused and there condemned yet they found no fault with Him",
+        "The man who wore the scarlet purple robe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Purple robe my Savior wore oh the shame for me he bore",
+        "As He stood alone, forsaken on that day",
+        "And they placed upon His head piercing thorns and blood stained red",
+        "His raiment was a scarlet purple robe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the common judgment hall he was mocked and scorned by all",
+        "And a tear of sorrow fell upon His cheek",
+        "Soldiers of the wicked man smote Him with their evil hand",
+        "The Man who wore the scarlet purple robe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Words of truth that day were plain from the lips of Pilot came",
+        "In this man I find no reason He should die",
+        "But the multitudes replied let Him now be crucified",
+        "The man who wore the scarlet purple robe"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

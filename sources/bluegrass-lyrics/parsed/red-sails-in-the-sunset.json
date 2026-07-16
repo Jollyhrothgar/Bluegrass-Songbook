@@ -1,0 +1,29 @@
+{
+  "slug": "red-sails-in-the-sunset",
+  "title": "Red Sails In The Sunset",
+  "source_url": "https://www.bluegrasslyrics.com/song/red-sails-in-the-sunset/",
+  "raw_lyrics": "Red sails in the sunset way out on the sea\nOh carry my loved one home safely to me\nHe sailed at the dawning all day I\u2019ve been blue\nRed sails in the sunset I\u2019m trusting in you\n\nSwift wings you must borrow make straight for the shore\nWe marry tomorrow and he goes sailing no more\nRed sails in the sunset way out on the sea\nOh carry my loved one home safely to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Red sails in the sunset way out on the sea",
+        "Oh carry my loved one home safely to me",
+        "He sailed at the dawning all day I\u2019ve been blue",
+        "Red sails in the sunset I\u2019m trusting in you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Swift wings you must borrow make straight for the shore",
+        "We marry tomorrow and he goes sailing no more",
+        "Red sails in the sunset way out on the sea",
+        "Oh carry my loved one home safely to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

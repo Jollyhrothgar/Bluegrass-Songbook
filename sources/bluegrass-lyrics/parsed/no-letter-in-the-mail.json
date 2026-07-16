@@ -1,0 +1,49 @@
+{
+  "slug": "no-letter-in-the-mail",
+  "title": "No Letter In The Mail",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-letter-in-the-mail/",
+  "raw_lyrics": "No answer to my love letter\nTo sooth my achin heart\nWhy did God ever permit\nTrue love like ours to part\n\nNo letter in the mail today\nNo answer from my love\nNobody knows what I\u2019ve been through\nNo one but God above\n\nThis is what I wrote to her\nI know I\u2019m to blame\nLet me prove my love for you\nThen I\u2019ll sign my name\n\nI\u2019m walking down this lonesome road\nTravellin while I pine\nIf there\u2019s no letter in the box\nI\u2019ll leave this world behind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "No answer to my love letter",
+        "To sooth my achin heart",
+        "Why did God ever permit",
+        "True love like ours to part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "No letter in the mail today",
+        "No answer from my love",
+        "Nobody knows what I\u2019ve been through",
+        "No one but God above"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This is what I wrote to her",
+        "I know I\u2019m to blame",
+        "Let me prove my love for you",
+        "Then I\u2019ll sign my name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m walking down this lonesome road",
+        "Travellin while I pine",
+        "If there\u2019s no letter in the box",
+        "I\u2019ll leave this world behind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "misery-loves-company",
+  "title": "Misery Loves Company",
+  "source_url": "https://www.bluegrasslyrics.com/song/misery-loves-company/",
+  "raw_lyrics": "I just left my home place where I couldn\u2019t sleep\nFor missing a woman that I couldn\u2019t keep\nShe just walked out and left me for somebody else\nNow her memory keeps haunting me when I\u2019m by myself.\n\nSo break out the bottle bring on the crowd\nTell funny stories turn the juke box up loud\nCome on sit at my table where the drinks are on me\nJust gather round me \u2019cause misery loves company.\n\nNow I\u2019m not the first one that\u2019s lost everything\nTo a false hearted woman with a false hearted scheme\nBut this is the first time I suffered myself\nHelp me get over this love I\u2019ll handle the next love all by myself.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I just left my home place where I couldn\u2019t sleep",
+        "For missing a woman that I couldn\u2019t keep",
+        "She just walked out and left me for somebody else",
+        "Now her memory keeps haunting me when I\u2019m by myself."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So break out the bottle bring on the crowd",
+        "Tell funny stories turn the juke box up loud",
+        "Come on sit at my table where the drinks are on me",
+        "Just gather round me \u2019cause misery loves company."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m not the first one that\u2019s lost everything",
+        "To a false hearted woman with a false hearted scheme",
+        "But this is the first time I suffered myself",
+        "Help me get over this love I\u2019ll handle the next love all by myself."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

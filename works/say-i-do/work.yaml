@@ -1,15 +1,14 @@
 id: say-i-do
-title: Say I Do
-artist: Ray Price
-composers:
-- Ray Hildebrand
-default_key: C
+title: "Say I Do"
+artist: "Lonesome River Band"
+composers: []
+default_key: G
+tags: []
 parts:
-- type: lead-sheet
-  format: chordpro
-  file: lead-sheet.pro
-  default: true
-  provenance:
-    source: classic-country
-    source_file: sayidolyricschords.pro
-    imported_at: '2026-01-02'
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: trusted-user
+      imported_at: '2026-02-01'

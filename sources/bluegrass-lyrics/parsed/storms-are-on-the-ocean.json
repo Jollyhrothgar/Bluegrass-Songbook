@@ -1,0 +1,49 @@
+{
+  "slug": "storms-are-on-the-ocean",
+  "title": "Storms Are On The Ocean",
+  "source_url": "https://www.bluegrasslyrics.com/song/storms-are-on-the-ocean/",
+  "raw_lyrics": "I\u2019m going away for to leave you love\nI\u2019m going away for a while\nBut I\u2019ll return to you sometime\nIf I go ten thousand miles\n\nThe storms are on the ocean\nAnd the heavens may cease to be\nThis world may lose it\u2019s motion love\nIf I prove false to thee\n\nOh who\u2019s gonna shoe your pretty little feet\nWho\u2019s gonna glove your little hand\nWho\u2019s gonna kiss your ruby red lips\nWhen I\u2019m in a foreign land\n\nOh see that lonesome turtledove\nAs he flies from pine to pine\nHe\u2019s a mourning for his own true love\nJust the way I mourn for mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going away for to leave you love",
+        "I\u2019m going away for a while",
+        "But I\u2019ll return to you sometime",
+        "If I go ten thousand miles"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The storms are on the ocean",
+        "And the heavens may cease to be",
+        "This world may lose it\u2019s motion love",
+        "If I prove false to thee"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh who\u2019s gonna shoe your pretty little feet",
+        "Who\u2019s gonna glove your little hand",
+        "Who\u2019s gonna kiss your ruby red lips",
+        "When I\u2019m in a foreign land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh see that lonesome turtledove",
+        "As he flies from pine to pine",
+        "He\u2019s a mourning for his own true love",
+        "Just the way I mourn for mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

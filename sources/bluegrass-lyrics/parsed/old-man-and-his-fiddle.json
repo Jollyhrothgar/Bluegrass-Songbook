@@ -1,0 +1,49 @@
+{
+  "slug": "old-man-and-his-fiddle",
+  "title": "Old Man and his Fiddle",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-man-and-his-fiddle/",
+  "raw_lyrics": "High on the mountain above the timberline\nThere lies an old man With a look of death in his eyes\n\nIn his one room cabin beside a rocking chair\nLies a hand made fiddle he made with loving care\n\nHis hands are weak and trembling his bow is worn and frayed\nHe thinks of lonesome ballads he\u2019s not strong enough to play\n\nThe old man is now in heaven but his fiddle stayed behind\nTo play a strange and lonesome melody hear it crying through the pines\n\nIn his one room cabin beside a rocking chair\nLies a hand made fiddle he made with loving care",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "High on the mountain above the timberline",
+        "There lies an old man With a look of death in his eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In his one room cabin beside a rocking chair",
+        "Lies a hand made fiddle he made with loving care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His hands are weak and trembling his bow is worn and frayed",
+        "He thinks of lonesome ballads he\u2019s not strong enough to play"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The old man is now in heaven but his fiddle stayed behind",
+        "To play a strange and lonesome melody hear it crying through the pines"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In his one room cabin beside a rocking chair",
+        "Lies a hand made fiddle he made with loving care"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "this-is-heaven-to-me",
+  "title": "This Is Heaven To Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/this-is-heaven-to-me/",
+  "raw_lyrics": "I find many people who can\u2019t understand\nWhy I am so happy and free\nI\u2019ve crossed over Jordan to Canaan\u2019s fair land\nAnd this is like heaven to me\n\nOh this is like heaven to me\nYes this is like heaven to me\nI\u2019ve crossed over Jordan to Canaan\u2019s fair land\nAnd this is like heaven to me\n\nI\u2019ve heard the sweet music the heavenly chorus\nFrom glory land over the sea\nThe soul thrilling message from Jesus my lord\nAnd this is like heaven to me\n\nI\u2019m looking for Jesus in glory to come\nFrom glory land over the sea\nA cloud of bright angels to carry me home\nAnd that will be heaven to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I find many people who can\u2019t understand",
+        "Why I am so happy and free",
+        "I\u2019ve crossed over Jordan to Canaan\u2019s fair land",
+        "And this is like heaven to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh this is like heaven to me",
+        "Yes this is like heaven to me",
+        "I\u2019ve crossed over Jordan to Canaan\u2019s fair land",
+        "And this is like heaven to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve heard the sweet music the heavenly chorus",
+        "From glory land over the sea",
+        "The soul thrilling message from Jesus my lord",
+        "And this is like heaven to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m looking for Jesus in glory to come",
+        "From glory land over the sea",
+        "A cloud of bright angels to carry me home",
+        "And that will be heaven to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

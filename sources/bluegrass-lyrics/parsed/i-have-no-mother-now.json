@@ -1,0 +1,79 @@
+{
+  "slug": "i-have-no-mother-now",
+  "title": "I Have No Mother Now",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-have-no-mother-now/",
+  "raw_lyrics": "I hear the low winds sweeping\nThrough every bush and tree\nWhere my dear mother\u2019s sleeping\nAway from home and me\n\nCold in the grave she\u2019s lying\nAnd sorrow shapes my brow\nShe\u2019s gone from me to Heaven\nI have no mother now\n\nI see the pale moon shining\nOn mother\u2019s white tombstone\nWith roses o\u2019er entwining\nThey\u2019re just like me and her\n\nThey\u2019re just me a weeping\nAs sorrow shapes my brow\nShe\u2019s gone from me to heaven\nI have no mother now\n\nSad was the hour of parting\nIn a voice so low and sweet\nShe said loved ones I\u2019m dying\nWe must in Heaven meet\n\nOh yes we\u2019ll meet dear mother\nOn that eternal shore\nAnd dwell as one in Heaven\nWhere parting comes no more\n\nOh yes we\u2019ll meet dear mother\nOn that eternal shore\nAnd dwell as one in Heaven\nWhere parting comes no more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I hear the low winds sweeping",
+        "Through every bush and tree",
+        "Where my dear mother\u2019s sleeping",
+        "Away from home and me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Cold in the grave she\u2019s lying",
+        "And sorrow shapes my brow",
+        "She\u2019s gone from me to Heaven",
+        "I have no mother now"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I see the pale moon shining",
+        "On mother\u2019s white tombstone",
+        "With roses o\u2019er entwining",
+        "They\u2019re just like me and her"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "They\u2019re just me a weeping",
+        "As sorrow shapes my brow",
+        "She\u2019s gone from me to heaven",
+        "I have no mother now"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sad was the hour of parting",
+        "In a voice so low and sweet",
+        "She said loved ones I\u2019m dying",
+        "We must in Heaven meet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh yes we\u2019ll meet dear mother",
+        "On that eternal shore",
+        "And dwell as one in Heaven",
+        "Where parting comes no more"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh yes we\u2019ll meet dear mother",
+        "On that eternal shore",
+        "And dwell as one in Heaven",
+        "Where parting comes no more"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

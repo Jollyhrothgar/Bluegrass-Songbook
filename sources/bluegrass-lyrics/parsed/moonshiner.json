@@ -1,0 +1,47 @@
+{
+  "slug": "moonshiner",
+  "title": "Moonshiner",
+  "source_url": "https://www.bluegrasslyrics.com/song/moonshiner/",
+  "raw_lyrics": "I\u2019ve been a moonshiner for many long years\nI spend all of my money on whiskey and beer\nI\u2019ll go down to some holler and set up my still\nI\u2019ll sell you a gallon for a two dollar bill.\n\nI\u2019ll eat when I\u2019m hungry and I\u2019ll drink when I\u2019m dry\nIf whiskey don\u2019t kill me Lord I\u2019ll live \u2019til I die.\nGod bless them moonshiners they\u2019re all friends of mine\nTheir breath is a sweet as the dew on the vine.\n\nI\u2019ll go down in some grocery and I\u2019ll drink with my friends\nNo women to bother me or see what I spend\nGod bless them pretty women I wish one was mine\nFor their breath is more sweeter than even moonshine.\n\nGod bless that pretty woman I wish she was mine\nFor her breath is more sweeter than even moonshine.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been a moonshiner for many long years",
+        "I spend all of my money on whiskey and beer",
+        "I\u2019ll go down to some holler and set up my still",
+        "I\u2019ll sell you a gallon for a two dollar bill."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll eat when I\u2019m hungry and I\u2019ll drink when I\u2019m dry",
+        "If whiskey don\u2019t kill me Lord I\u2019ll live \u2019til I die.",
+        "God bless them moonshiners they\u2019re all friends of mine",
+        "Their breath is a sweet as the dew on the vine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll go down in some grocery and I\u2019ll drink with my friends",
+        "No women to bother me or see what I spend",
+        "God bless them pretty women I wish one was mine",
+        "For their breath is more sweeter than even moonshine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God bless that pretty woman I wish she was mine",
+        "For her breath is more sweeter than even moonshine."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "far-cry",
+  "title": "Far Cry",
+  "source_url": "https://www.bluegrasslyrics.com/song/far-cry/",
+  "raw_lyrics": "I remember the face of an angel\nThe love that was faithful and true\nI left that dear girl in the mountains\nFor a ramblin\u2019 life empty and blue\n\nSweet roses bloom where they\u2019re layin\u2019\nWild flowers seed on the wind\nThat valley was closer to heaven\nThan any place this poor fool has been\n\nIt\u2019s a far cry from here to Virginia\nBut I\u2019d crawl every inch of that ground\nMy teardrops fall like rain on the roof\nFor that Blue Ridge home where I\u2019m bound\n\nThis highway\u2019s a ribbon of lonesome\nDon\u2019t care where I lay my head down\nFor ten years it\u2019s died broken hearted\nMy sweet mountain darlin\u2019 is gone\n\nI remember the face of an angel",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I remember the face of an angel",
+        "The love that was faithful and true",
+        "I left that dear girl in the mountains",
+        "For a ramblin\u2019 life empty and blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sweet roses bloom where they\u2019re layin\u2019",
+        "Wild flowers seed on the wind",
+        "That valley was closer to heaven",
+        "Than any place this poor fool has been"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s a far cry from here to Virginia",
+        "But I\u2019d crawl every inch of that ground",
+        "My teardrops fall like rain on the roof",
+        "For that Blue Ridge home where I\u2019m bound"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This highway\u2019s a ribbon of lonesome",
+        "Don\u2019t care where I lay my head down",
+        "For ten years it\u2019s died broken hearted",
+        "My sweet mountain darlin\u2019 is gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I remember the face of an angel"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

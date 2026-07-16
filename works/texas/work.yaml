@@ -7,6 +7,8 @@ default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+- Instrumental
+- OldTime
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,0 +1,11 @@
+id: midnight-train-2
+title: Midnight Train
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/midnight-train-2/
+      imported_at: '2026-02-08'

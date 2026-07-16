@@ -1,0 +1,69 @@
+{
+  "slug": "troublesome-waters",
+  "title": "Troublesome Waters",
+  "source_url": "https://www.bluegrasslyrics.com/song/troublesome-waters/",
+  "raw_lyrics": "Troublesome waters around me do roll\nThey\u2019re rockin\u2019 my boat and wreckin\u2019 my soul\nLoved ones are driftin\u2019 and livin\u2019 in sin\nThe treacherous whirlpools are pullin\u2019 them in\n\nWhen troublesome waters are rollin\u2019 so high\nI lift up my voice and to heaven I cry\nLord I am trustin\u2019 give guidance to me\nAnd steady my boat on life\u2019s troubled sea.\n\nTroublesome waters are blacker than night\nHiding from view the harbor light bright\nOut on the ocean I seem as a speck\nAwful sea monsters are waiting my wreck\n\nGently I feel the touch of his hand\nGuiding my boat to that better land\nLeading way to heaven\u2019s bright shore\nTroublesome waters I\u2019m fearing no more\n\nTroublesome waters around me now roll\nRocking my boat and tempting my soul\nLoved ones are drifting and living in sin\nTreacherous whirlpools are pulling them in\n\nSin waves are tossing and dashing so high\nOver this noise you hear my sad cry\nLord I am trusting show mercy to me\nSteady my lifeboat while I am at sea",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Troublesome waters around me do roll",
+        "They\u2019re rockin\u2019 my boat and wreckin\u2019 my soul",
+        "Loved ones are driftin\u2019 and livin\u2019 in sin",
+        "The treacherous whirlpools are pullin\u2019 them in"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When troublesome waters are rollin\u2019 so high",
+        "I lift up my voice and to heaven I cry",
+        "Lord I am trustin\u2019 give guidance to me",
+        "And steady my boat on life\u2019s troubled sea."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Troublesome waters are blacker than night",
+        "Hiding from view the harbor light bright",
+        "Out on the ocean I seem as a speck",
+        "Awful sea monsters are waiting my wreck"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Gently I feel the touch of his hand",
+        "Guiding my boat to that better land",
+        "Leading way to heaven\u2019s bright shore",
+        "Troublesome waters I\u2019m fearing no more"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Troublesome waters around me now roll",
+        "Rocking my boat and tempting my soul",
+        "Loved ones are drifting and living in sin",
+        "Treacherous whirlpools are pulling them in"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sin waves are tossing and dashing so high",
+        "Over this noise you hear my sad cry",
+        "Lord I am trusting show mercy to me",
+        "Steady my lifeboat while I am at sea"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

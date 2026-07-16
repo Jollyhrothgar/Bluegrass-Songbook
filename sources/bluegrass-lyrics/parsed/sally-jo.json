@@ -1,0 +1,71 @@
+{
+  "slug": "sally-jo",
+  "title": "Sally Jo",
+  "source_url": "https://www.bluegrasslyrics.com/song/sally-jo/",
+  "raw_lyrics": "I got me in bed and covered my head\nWish I was dead with Sally Jo\nSally Jo where did you go Sally Jo\n\nSince you have gone my days are turned to night\nNothin\u2019 goes right Sally Jo\nSally Jo where did you go Sally Jo\n\nThe hurt you left has just begun to show\nSally Jo I\u2019ve been so low\nSally Jo where did you go Sally Jo\n\nI\u2019m like a little dog left out to stray\nNo one wants me no place to stay\nSally Jo where did you go Sally Jo\n\nDid I do bad or was I good to you\nYes or no Sally Jo\nSally Jo where did you goSally Jo\n\nThe torch I carried had a light so bright\nFor me to see Sally Jo\nSally Jo where did you go Sally Jo\n\nSally Jo Sally Jo\nhear my plea come back to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I got me in bed and covered my head",
+        "Wish I was dead with Sally Jo",
+        "Sally Jo where did you go Sally Jo"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Since you have gone my days are turned to night",
+        "Nothin\u2019 goes right Sally Jo",
+        "Sally Jo where did you go Sally Jo"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The hurt you left has just begun to show",
+        "Sally Jo I\u2019ve been so low",
+        "Sally Jo where did you go Sally Jo"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m like a little dog left out to stray",
+        "No one wants me no place to stay",
+        "Sally Jo where did you go Sally Jo"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Did I do bad or was I good to you",
+        "Yes or no Sally Jo",
+        "Sally Jo where did you goSally Jo"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The torch I carried had a light so bright",
+        "For me to see Sally Jo",
+        "Sally Jo where did you go Sally Jo"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sally Jo Sally Jo",
+        "hear my plea come back to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

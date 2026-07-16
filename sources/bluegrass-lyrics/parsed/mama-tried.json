@@ -1,0 +1,49 @@
+{
+  "slug": "mama-tried",
+  "title": "Mama Tried",
+  "source_url": "https://www.bluegrasslyrics.com/song/mama-tried/",
+  "raw_lyrics": "First thing I remember knowing was a lonesome whistle blowing\nAnd a young ones dream of growing up to ride\nOn a freight train leaving town not knowing where I\u2019m bound\nNo one could steer me right but mama tried.\n\nOne and only rebel child from a family meek and mild\nMy mama seemed to know what lay in store\nIn spite of all my Sunday learning towards the bad I kept on turning\n\u2018Til mama couldn\u2019t hold me anymore.\n\nAnd I turned twenty-one in prison doing life without parole\nNo one could steer me right but mama tried mama tried\nMama tried to raise me better    but her pleading I denied\nThat leaves only me to blame cause mama tried.\n\nMy dear old daddy rest his soul left my mom a heavy load\nShe tried so very hard to fill his shoes\nWorking hours without rest wanted me to have the best\nShe tried to raise me right but I refused.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "First thing I remember knowing was a lonesome whistle blowing",
+        "And a young ones dream of growing up to ride",
+        "On a freight train leaving town not knowing where I\u2019m bound",
+        "No one could steer me right but mama tried."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One and only rebel child from a family meek and mild",
+        "My mama seemed to know what lay in store",
+        "In spite of all my Sunday learning towards the bad I kept on turning",
+        "\u2018Til mama couldn\u2019t hold me anymore."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And I turned twenty-one in prison doing life without parole",
+        "No one could steer me right but mama tried mama tried",
+        "Mama tried to raise me better    but her pleading I denied",
+        "That leaves only me to blame cause mama tried."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My dear old daddy rest his soul left my mom a heavy load",
+        "She tried so very hard to fill his shoes",
+        "Working hours without rest wanted me to have the best",
+        "She tried to raise me right but I refused."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

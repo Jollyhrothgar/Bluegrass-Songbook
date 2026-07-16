@@ -1,0 +1,39 @@
+{
+  "slug": "where-we-never-shall-die",
+  "title": "Where We Never Shall Die",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-we-never-shall-die/",
+  "raw_lyrics": "Sinner why not heed the day won\u2019t you come and go this way\nWhere Jesus lives and we\u2019ll never say goodbye\nTo a home that\u2019s far and bright and there never is a night\nIn a land where we never shall die\n\nI\u2019ve a home way up on high where we shall live and never die\nWon\u2019t you come and cross this river so wide\nThere with Jesus we will dwell never more to say farewell\nIn a land where we never shall die\n\nWalk the straight the narrow way fall down on your knees and pray\nGod will help you cross the mountaintop so high\nHe will take you by the hand lead you to that promised land\nIn a land where we never shall die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sinner why not heed the day won\u2019t you come and go this way",
+        "Where Jesus lives and we\u2019ll never say goodbye",
+        "To a home that\u2019s far and bright and there never is a night",
+        "In a land where we never shall die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve a home way up on high where we shall live and never die",
+        "Won\u2019t you come and cross this river so wide",
+        "There with Jesus we will dwell never more to say farewell",
+        "In a land where we never shall die"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Walk the straight the narrow way fall down on your knees and pray",
+        "God will help you cross the mountaintop so high",
+        "He will take you by the hand lead you to that promised land",
+        "In a land where we never shall die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

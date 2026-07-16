@@ -1,0 +1,75 @@
+{
+  "slug": "john-henry-blues",
+  "title": "John Henry Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/john-henry-blues/",
+  "raw_lyrics": "John Henry was a little bitty boy\nNo bigger than the palm of your hand\nHe picked up a hammer and little piece of stell\nJohnny gonna make a steel drivin man, Lord Lord\nJohnny gonna make a steel drivin man\n\nJohn Henry told his captain\nThe next time you go to town\nCan you bring John back a nine pound hammer\nI\u2019m gonna beat that steam drill down, Lord Lord\nI\u2019m gonna beat that steam drill down\n\nJohn Henry he told his shaker\nShaker you better pray\nFor if I miss that old little piece of steel\nTomorrow\u2019ll be your buryin\u2019 day, Lord Lord\nTomorrow\u2019ll be your buryin\u2019 day\n\nWhen they invented that old steam drill\nThey thought that they had \u2019em somethin\u2019 fine\nJohn Henry sank her fourteen feet\nSteam drill only made her nine, Lord Lord\nSteam drill only made her nine\n\nJohn Henry was on the right hand side\nThe steam drill was on the left\nSaid before I will let that drill beat me down\nI\u2019ll hammer my old fool self to death, Lord Lord\nI\u2019ll hammer my old fool self to death\n\nYou can talk about John Henry as much as you want\nSing and do all that you can\nBut there was never born in the United States\nNo such a steel drivin\u2019 man, Lord Lord\nNo such a steel drivin\u2019 man",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry was a little bitty boy",
+        "No bigger than the palm of your hand",
+        "He picked up a hammer and little piece of stell",
+        "Johnny gonna make a steel drivin man, Lord Lord",
+        "Johnny gonna make a steel drivin man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry told his captain",
+        "The next time you go to town",
+        "Can you bring John back a nine pound hammer",
+        "I\u2019m gonna beat that steam drill down, Lord Lord",
+        "I\u2019m gonna beat that steam drill down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry he told his shaker",
+        "Shaker you better pray",
+        "For if I miss that old little piece of steel",
+        "Tomorrow\u2019ll be your buryin\u2019 day, Lord Lord",
+        "Tomorrow\u2019ll be your buryin\u2019 day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When they invented that old steam drill",
+        "They thought that they had \u2019em somethin\u2019 fine",
+        "John Henry sank her fourteen feet",
+        "Steam drill only made her nine, Lord Lord",
+        "Steam drill only made her nine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "John Henry was on the right hand side",
+        "The steam drill was on the left",
+        "Said before I will let that drill beat me down",
+        "I\u2019ll hammer my old fool self to death, Lord Lord",
+        "I\u2019ll hammer my old fool self to death"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can talk about John Henry as much as you want",
+        "Sing and do all that you can",
+        "But there was never born in the United States",
+        "No such a steel drivin\u2019 man, Lord Lord",
+        "No such a steel drivin\u2019 man"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

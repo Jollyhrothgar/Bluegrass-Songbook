@@ -1,0 +1,46 @@
+{
+  "slug": "dont-cry-to-me",
+  "title": "Don\u2019t Cry to Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-cry-to-me/",
+  "raw_lyrics": "Just cry now lonesome heart but don\u2019t cry to me\n\nYou let her go I told you no\nAnd my words you didn\u2019t need\nYes cry now lonesome heart\nBut don\u2019t cry to me\n\nYou should have known you\u2019d be alone\nSo don\u2019t beg for sympathy\nJust cry now lonesome heart\nBut don\u2019t cry to me\n\nHer love you won\u2019t forgot\nThe pain you caused her you\u2019ll regret\nEach day you\u2019re gonna miss\nHer smile her touch her kiss",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just cry now lonesome heart but don\u2019t cry to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You let her go I told you no",
+        "And my words you didn\u2019t need",
+        "Yes cry now lonesome heart",
+        "But don\u2019t cry to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You should have known you\u2019d be alone",
+        "So don\u2019t beg for sympathy",
+        "Just cry now lonesome heart",
+        "But don\u2019t cry to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Her love you won\u2019t forgot",
+        "The pain you caused her you\u2019ll regret",
+        "Each day you\u2019re gonna miss",
+        "Her smile her touch her kiss"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

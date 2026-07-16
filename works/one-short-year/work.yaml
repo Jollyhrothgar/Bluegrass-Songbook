@@ -1,0 +1,11 @@
+id: one-short-year
+title: One Short Year
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/one-short-year/
+      imported_at: '2026-02-08'

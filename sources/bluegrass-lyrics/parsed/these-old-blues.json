@@ -1,0 +1,39 @@
+{
+  "slug": "these-old-blues",
+  "title": "These Old Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/these-old-blues/",
+  "raw_lyrics": "These old blues they got me down\nSince my sweet thing she ain\u2019t around\nI\u2019m so blue blue as I can be\nJust as blue as the deep blue sea\n\nGot up this morning I was feeling blue\nCouldn\u2019t sleep last night, just thinking of you\nTossed and turned tears in my eyes\nWondering why you said goodbye\n\nNow she\u2019s gone what can I do\nIt\u2019s too late to start anew\nFor true love is hard to find\nIt\u2019s too late to turn back the time",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "These old blues they got me down",
+        "Since my sweet thing she ain\u2019t around",
+        "I\u2019m so blue blue as I can be",
+        "Just as blue as the deep blue sea"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Got up this morning I was feeling blue",
+        "Couldn\u2019t sleep last night, just thinking of you",
+        "Tossed and turned tears in my eyes",
+        "Wondering why you said goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now she\u2019s gone what can I do",
+        "It\u2019s too late to start anew",
+        "For true love is hard to find",
+        "It\u2019s too late to turn back the time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

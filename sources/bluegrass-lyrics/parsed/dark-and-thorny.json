@@ -1,0 +1,59 @@
+{
+  "slug": "dark-and-thorny",
+  "title": "Dark and Thorny",
+  "source_url": "https://www.bluegrasslyrics.com/song/dark-and-thorny/",
+  "raw_lyrics": "Dark and stormy is the desert\nThrough which pilgrims make their way\nYet beyond this vale of sorrow\nLie the fields of endless day\n\nOh young soldiers are you weary\nOf the roughness of the way\nDoes your strength begin to fail you\nAnd your vigor to decay\n\nJesus Jesus will go with you\nHe will lead you to his throne\nHe whose thunder shapes creation\nHe who bids the planets roll\n\nAround him are ten thousand angels\nReady to obey his command\nThey\u2019ll all be there to hover round you\nTil you\u2019ve reached the heavenly land\n\nThere on flowery hills of pleasure\nLie the fields of endless rest\nLove and joy and peace forever\nReign and triumph in your breast",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dark and stormy is the desert",
+        "Through which pilgrims make their way",
+        "Yet beyond this vale of sorrow",
+        "Lie the fields of endless day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh young soldiers are you weary",
+        "Of the roughness of the way",
+        "Does your strength begin to fail you",
+        "And your vigor to decay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jesus Jesus will go with you",
+        "He will lead you to his throne",
+        "He whose thunder shapes creation",
+        "He who bids the planets roll"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Around him are ten thousand angels",
+        "Ready to obey his command",
+        "They\u2019ll all be there to hover round you",
+        "Til you\u2019ve reached the heavenly land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There on flowery hills of pleasure",
+        "Lie the fields of endless rest",
+        "Love and joy and peace forever",
+        "Reign and triumph in your breast"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

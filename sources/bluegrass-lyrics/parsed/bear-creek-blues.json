@@ -1,0 +1,46 @@
+{
+  "slug": "bear-creek-blues",
+  "title": "Bear Creek Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/bear-creek-blues/",
+  "raw_lyrics": "Way up on Bear Creek, watching the sun go down\nWay up on Bear Creek, watching the sun go down\nIt makes me feel like I\u2019m on my last go-\u2019round,\n\nThe water on Bear Creek, it tastes like cherry wine\nThe water on Bear Creek, it tastes like cherry wine\nYou take one drink of it, you\u2019re drinking it all the time\n\nIf you stay on Bear Creek, you\u2019ll get like Jesse James\nIf you stay on Bear Creek, you\u2019ll get like Jesse James\nYou\u2019ll take two old pistols\nand hold up that Bear Creek train\n\nI\u2019m going high, high up on some lonesome hill\nI\u2019m going high, high up on some lonesome hill\nLook down on Bear Creek where my good gal used to live",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way up on Bear Creek, watching the sun go down",
+        "Way up on Bear Creek, watching the sun go down",
+        "It makes me feel like I\u2019m on my last go-\u2019round,"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The water on Bear Creek, it tastes like cherry wine",
+        "The water on Bear Creek, it tastes like cherry wine",
+        "You take one drink of it, you\u2019re drinking it all the time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you stay on Bear Creek, you\u2019ll get like Jesse James",
+        "If you stay on Bear Creek, you\u2019ll get like Jesse James",
+        "You\u2019ll take two old pistols",
+        "and hold up that Bear Creek train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going high, high up on some lonesome hill",
+        "I\u2019m going high, high up on some lonesome hill",
+        "Look down on Bear Creek where my good gal used to live"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

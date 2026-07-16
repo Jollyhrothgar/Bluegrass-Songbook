@@ -1,0 +1,39 @@
+{
+  "slug": "an-old-love-affair",
+  "title": "An Old Love Affair",
+  "source_url": "https://www.bluegrasslyrics.com/song/an-old-love-affair/",
+  "raw_lyrics": "Just like old times you were her last night\nand gone were my sorrows and cares\nJust like old times you were gone and I\nHad dreamed of an old love affair\n\nI was alone in the darkness my dear\nMany dreams ago you left me there\nSunlight told me you were gone and I\nHad dreamed of an old love affair\n\nNights are so empty since you\u2019ve been gone\nI loved you with all of my heart\nHeaven was mine when you smiled last night\nAnd said we could make a new start",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just like old times you were her last night",
+        "and gone were my sorrows and cares",
+        "Just like old times you were gone and I",
+        "Had dreamed of an old love affair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I was alone in the darkness my dear",
+        "Many dreams ago you left me there",
+        "Sunlight told me you were gone and I",
+        "Had dreamed of an old love affair"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Nights are so empty since you\u2019ve been gone",
+        "I loved you with all of my heart",
+        "Heaven was mine when you smiled last night",
+        "And said we could make a new start"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

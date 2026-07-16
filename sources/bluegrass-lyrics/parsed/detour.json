@@ -1,0 +1,62 @@
+{
+  "slug": "detour",
+  "title": "Detour",
+  "source_url": "https://www.bluegrasslyrics.com/song/detour/",
+  "raw_lyrics": "Headed down life\u2019s crooked road\nLot of things I never knowd\nCause I didn\u2019t know I now pine\nTrouble got in the trail\nSpent the next five years in jail\nShould have read that Detour sign\n\nDetour there\u2019s a muddy road ahead\nDetour paid no mind to what is said Detour\nOh these bitter things I find\nShould have read that Detour sign\n\nWhen I\u2019ve got to the place\nWhere it said \u201ca-bout face\u201d\nI thought that all my worries were behind\nBut the farther I go\nMore sorrow I know\nShould have read that Detour sign\n\nWhen I\u2019ve got stuck in the mud\nAll my hopes dropped with a thud\nMy life seemed to pass before my eyes\nGot no will power to get\nFrom the hole that I\u2019m in yet\nShould have read that Detour sign\n\nShould have read that Detour sign",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Headed down life\u2019s crooked road",
+        "Lot of things I never knowd",
+        "Cause I didn\u2019t know I now pine",
+        "Trouble got in the trail",
+        "Spent the next five years in jail",
+        "Should have read that Detour sign"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Detour there\u2019s a muddy road ahead",
+        "Detour paid no mind to what is said Detour",
+        "Oh these bitter things I find",
+        "Should have read that Detour sign"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I\u2019ve got to the place",
+        "Where it said \u201ca-bout face\u201d",
+        "I thought that all my worries were behind",
+        "But the farther I go",
+        "More sorrow I know",
+        "Should have read that Detour sign"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I\u2019ve got stuck in the mud",
+        "All my hopes dropped with a thud",
+        "My life seemed to pass before my eyes",
+        "Got no will power to get",
+        "From the hole that I\u2019m in yet",
+        "Should have read that Detour sign"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Should have read that Detour sign"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

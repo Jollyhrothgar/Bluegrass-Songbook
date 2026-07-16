@@ -1,0 +1,37 @@
+{
+  "slug": "please-search-your-heart",
+  "title": "Please Search Your Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/please-search-your-heart/",
+  "raw_lyrics": "Please search your heart and maybe you\u2019ll find\nA reason to stay  I\u2019m begging this time\nI know I was wrong but darlin\u2019 I\u2019ve paid\nPlease search your heart before it\u2019s too late.\n\nWhen you left me I said that I\u2019d never be blue\nThat I wouldn\u2019t cry if you found someone new\nBut this is my plea, give me one more try\nPlease search your heart, don\u2019t tell me goodbye.\n\nPlease search your heart, don\u2019t tell me goodbye\nPlease search your heart, don\u2019t tell me goodbye",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Please search your heart and maybe you\u2019ll find",
+        "A reason to stay  I\u2019m begging this time",
+        "I know I was wrong but darlin\u2019 I\u2019ve paid",
+        "Please search your heart before it\u2019s too late."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When you left me I said that I\u2019d never be blue",
+        "That I wouldn\u2019t cry if you found someone new",
+        "But this is my plea, give me one more try",
+        "Please search your heart, don\u2019t tell me goodbye."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please search your heart, don\u2019t tell me goodbye",
+        "Please search your heart, don\u2019t tell me goodbye"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

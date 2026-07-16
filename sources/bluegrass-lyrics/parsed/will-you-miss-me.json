@@ -1,0 +1,49 @@
+{
+  "slug": "will-you-miss-me",
+  "title": "Will You Miss Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/will-you-miss-me/",
+  "raw_lyrics": "When these lips shall never more\nPlace a kiss upon thy brow\nWhen life hold\u2019s still in death\nWill you love me then as now\n\nWill you miss me (miss me when I\u2019m gone)\nWill you miss me (miss me when I\u2019m gone)\nWill you miss me (miss me when I\u2019m gone)\nWill you miss me when I\u2019m gone\n\nPerhaps you\u2019ll plant some flowers\nRound my cold unworthy grave\nCome and sit along here beside me\nWhere the roses nod and wave\n\nOn a cold dark Sunday morning\nIn a land not far away\nA little girl from old Kentucky\nLifted up her voice to say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When these lips shall never more",
+        "Place a kiss upon thy brow",
+        "When life hold\u2019s still in death",
+        "Will you love me then as now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Will you miss me (miss me when I\u2019m gone)",
+        "Will you miss me (miss me when I\u2019m gone)",
+        "Will you miss me (miss me when I\u2019m gone)",
+        "Will you miss me when I\u2019m gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Perhaps you\u2019ll plant some flowers",
+        "Round my cold unworthy grave",
+        "Come and sit along here beside me",
+        "Where the roses nod and wave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On a cold dark Sunday morning",
+        "In a land not far away",
+        "A little girl from old Kentucky",
+        "Lifted up her voice to say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

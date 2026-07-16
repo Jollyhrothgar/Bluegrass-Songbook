@@ -1,0 +1,39 @@
+{
+  "slug": "fields-have-turned-brown-the",
+  "title": "Fields Have Turned Brown, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/fields-have-turned-brown-the/",
+  "raw_lyrics": "I left my old home to ramble this country\nMy mother and dad said son don\u2019t go wrong\nRemember that God will always watch o\u2019er you\nAnd we will be waiting for you here at home\n\nSon don\u2019t go astray was what they both told me\nRemember that love for God can be found\nBut now they\u2019re both gone this letter just told me\nFor years they\u2019ve been dead, the fields have turned brown\n\nFor many long years this world I have rambled\nNo thoughts of the day when I would return\nNow as I go home and find no one waiting\nThe price I have paid to live and to learn",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I left my old home to ramble this country",
+        "My mother and dad said son don\u2019t go wrong",
+        "Remember that God will always watch o\u2019er you",
+        "And we will be waiting for you here at home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Son don\u2019t go astray was what they both told me",
+        "Remember that love for God can be found",
+        "But now they\u2019re both gone this letter just told me",
+        "For years they\u2019ve been dead, the fields have turned brown"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For many long years this world I have rambled",
+        "No thoughts of the day when I would return",
+        "Now as I go home and find no one waiting",
+        "The price I have paid to live and to learn"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

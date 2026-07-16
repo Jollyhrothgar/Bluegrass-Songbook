@@ -1,0 +1,69 @@
+{
+  "slug": "one-morning-in-may",
+  "title": "One Morning in May",
+  "source_url": "https://www.bluegrasslyrics.com/song/one-morning-in-may/",
+  "raw_lyrics": "One morning one morning in May\nI spied a young couple a making their way\nOne was a maiden so bright and so fair\nThe other was a soldier and a brave volunteer\n\nGood morning good morning good morning to thee\nOh where are you going my pretty lady\nI am a going to the banks of the sea\nTo see the waters gliding herar the nightingales sing\n\nOh they hadn\u2019t been a standing but a minute or two\nWhen out of his knapsack a fiddle he drew\nAnd the tune he was playing made the valleys all ring\nOh see the waters gliding hear the nightingales sing\n\nPretty lady pretty lady it\u2019s time to give oar\nOh no pretty soldier please play one tune more\nFor I\u2019d rather hear your fiddle and the touch of one string\nThan to see that waters gliding hear the nightingales sing\n\nPretty soldier pretty soldier will you marry me\nOh no pretty lady that never can be\nI have a wife in old London and children twa three\nTwo wives in the army too many for me\n\nWell I\u2019ll go back to London and I\u2019ll stay there one year\nAnd often I\u2019ll think of you my little dear\nAnd when I return it will be in the spring\nTo see the waters gliding hear the nightingales sing",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One morning one morning in May",
+        "I spied a young couple a making their way",
+        "One was a maiden so bright and so fair",
+        "The other was a soldier and a brave volunteer"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Good morning good morning good morning to thee",
+        "Oh where are you going my pretty lady",
+        "I am a going to the banks of the sea",
+        "To see the waters gliding herar the nightingales sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh they hadn\u2019t been a standing but a minute or two",
+        "When out of his knapsack a fiddle he drew",
+        "And the tune he was playing made the valleys all ring",
+        "Oh see the waters gliding hear the nightingales sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Pretty lady pretty lady it\u2019s time to give oar",
+        "Oh no pretty soldier please play one tune more",
+        "For I\u2019d rather hear your fiddle and the touch of one string",
+        "Than to see that waters gliding hear the nightingales sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Pretty soldier pretty soldier will you marry me",
+        "Oh no pretty lady that never can be",
+        "I have a wife in old London and children twa three",
+        "Two wives in the army too many for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ll go back to London and I\u2019ll stay there one year",
+        "And often I\u2019ll think of you my little dear",
+        "And when I return it will be in the spring",
+        "To see the waters gliding hear the nightingales sing"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

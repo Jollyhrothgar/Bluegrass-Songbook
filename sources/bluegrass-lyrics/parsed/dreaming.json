@@ -1,0 +1,47 @@
+{
+  "slug": "dreaming",
+  "title": "Dreaming",
+  "source_url": "https://www.bluegrasslyrics.com/song/dreaming/",
+  "raw_lyrics": "Dreaming of the arms that held me oh so tight\nDreaming of the smile I cherished day and night\nDreaming of the heart that never will be true\nBut I guess that\u2019s what I always will do\n\nDreaming (dreaming) dreaming (dreaming)\nDreaming of the love that never will be true\nDreaming (dreaming) dreaming (dreaming)\nThat is what I always will do\n\nDreaming of the lips that I love to kiss\nDreaming of the charm I never can resist\nDreaming of the word you spoke that wasn\u2019t true\nBut I guess that\u2019s what I always will do\n\nEast Ohio Grass; Remembers Hal James\nDoyle Lawson; I\u2019ll Wander Back Someday",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dreaming of the arms that held me oh so tight",
+        "Dreaming of the smile I cherished day and night",
+        "Dreaming of the heart that never will be true",
+        "But I guess that\u2019s what I always will do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Dreaming (dreaming) dreaming (dreaming)",
+        "Dreaming of the love that never will be true",
+        "Dreaming (dreaming) dreaming (dreaming)",
+        "That is what I always will do"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Dreaming of the lips that I love to kiss",
+        "Dreaming of the charm I never can resist",
+        "Dreaming of the word you spoke that wasn\u2019t true",
+        "But I guess that\u2019s what I always will do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "East Ohio Grass; Remembers Hal James",
+        "Doyle Lawson; I\u2019ll Wander Back Someday"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

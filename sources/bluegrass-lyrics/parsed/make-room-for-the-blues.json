@@ -1,0 +1,41 @@
+{
+  "slug": "make-room-for-the-blues",
+  "title": "Make Room For The Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/make-room-for-the-blues/",
+  "raw_lyrics": "It\u2019s all over now but the crying\nShe\u2019s gone and there\u2019s nothing more to do\nAnd today our new guest is arriving\nI\u2019ve got to straighten up and make room for the blues\n\nTake her picture from the wall\nLet it fall let it fall\nThen turn around and face the empty room\nWhile she\u2019s waving goodbye\nWipe the tears from your eyes\nThen staighten up and make room for the blues\n\nI never new a house could be so lonely\nIn every room there\u2019s memories left with you\nIn this big old chair you said you loved me only\nGuess i\u2019ll move on out and make room for the blues",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s all over now but the crying",
+        "She\u2019s gone and there\u2019s nothing more to do",
+        "And today our new guest is arriving",
+        "I\u2019ve got to straighten up and make room for the blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Take her picture from the wall",
+        "Let it fall let it fall",
+        "Then turn around and face the empty room",
+        "While she\u2019s waving goodbye",
+        "Wipe the tears from your eyes",
+        "Then staighten up and make room for the blues"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never new a house could be so lonely",
+        "In every room there\u2019s memories left with you",
+        "In this big old chair you said you loved me only",
+        "Guess i\u2019ll move on out and make room for the blues"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

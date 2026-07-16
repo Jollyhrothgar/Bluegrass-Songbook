@@ -1,0 +1,49 @@
+{
+  "slug": "vision-of-mother",
+  "title": "Vision Of Mother",
+  "source_url": "https://www.bluegrasslyrics.com/song/vision-of-mother/",
+  "raw_lyrics": "Oft my thoughts drift back to childhood\nTo the times when I was free\nAs I played before the fireside\nRound my darling mother\u2019s knee\n\nThere\u2019s a blessed home up yonder\nWhere my loved ones wait for me\nI saw mother in a vision\nKneeling there to pray for me\n\nThen one day our mother left us\nDaddy said she\u2019d gone to rest\nI remember how she loved me\nAs she clutched me to her breast\n\nSome sweet day I\u2019ll meet you mother\nYour little boy is coming home\nTo see you as in days of childhood\nThe one you loved and left alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oft my thoughts drift back to childhood",
+        "To the times when I was free",
+        "As I played before the fireside",
+        "Round my darling mother\u2019s knee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a blessed home up yonder",
+        "Where my loved ones wait for me",
+        "I saw mother in a vision",
+        "Kneeling there to pray for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then one day our mother left us",
+        "Daddy said she\u2019d gone to rest",
+        "I remember how she loved me",
+        "As she clutched me to her breast"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some sweet day I\u2019ll meet you mother",
+        "Your little boy is coming home",
+        "To see you as in days of childhood",
+        "The one you loved and left alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

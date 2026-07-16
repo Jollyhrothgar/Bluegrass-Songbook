@@ -1,0 +1,49 @@
+{
+  "slug": "my-rose-of-old-kentucky",
+  "title": "My Rose Of Old Kentucky",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-rose-of-old-kentucky/",
+  "raw_lyrics": "She bloomed for me near a little village\nIn a cabin on the hill\nWe made our vows we\u2019d love each other\nAnd I know we always will\n\nShe\u2019s my rose of old Kentucky\nI watched her bloom as the years roll by\nAnd to me there\u2019ll never be another\nI\u2019ll love her \u2019til the day I die\n\nOh in dreams I see my darling\nIn a gingham dress she looks so sweet\nOh I long for old Kentucky\nAnd my darling was more to me\n\nOh I know you often wonder\nSo I\u2019ll tell you the reason why\nShe\u2019s my rose of old Kentucky\nAnd I know she\u2019ll never lie",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She bloomed for me near a little village",
+        "In a cabin on the hill",
+        "We made our vows we\u2019d love each other",
+        "And I know we always will"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She\u2019s my rose of old Kentucky",
+        "I watched her bloom as the years roll by",
+        "And to me there\u2019ll never be another",
+        "I\u2019ll love her \u2019til the day I die"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh in dreams I see my darling",
+        "In a gingham dress she looks so sweet",
+        "Oh I long for old Kentucky",
+        "And my darling was more to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I know you often wonder",
+        "So I\u2019ll tell you the reason why",
+        "She\u2019s my rose of old Kentucky",
+        "And I know she\u2019ll never lie"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

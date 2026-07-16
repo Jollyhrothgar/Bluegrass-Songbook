@@ -1,0 +1,49 @@
+{
+  "slug": "take-your-shoes-off-moses",
+  "title": "Take Your Shoes Off Moses",
+  "source_url": "https://www.bluegrasslyrics.com/song/take-your-shoes-off-moses/",
+  "raw_lyrics": "Well, God spoke to Moses at the burning bush\nBurning bush, Lord the burning bush\nGod spoke to Moses at the burning bush\nSaying I am the Lord, thy God\n\nTake your shoes off Moses you\u2019re on holy ground\nHoly ground, you\u2019re on holy ground\nTake your shoes off Moses you\u2019re on Holy ground\nFor I am the Lord, thy God\n\nGo yonder Moses and smite that rock\nSmite that rock, Lord smite that rock\nGo yonder Moses and smite that rock\nFor I am the Lord, thy God\n\nStand still Moses see salvation work\nSalvation work, see salvation work\nStand still Moses and see salvation work\nFor I am the Lord, thy God",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well, God spoke to Moses at the burning bush",
+        "Burning bush, Lord the burning bush",
+        "God spoke to Moses at the burning bush",
+        "Saying I am the Lord, thy God"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Take your shoes off Moses you\u2019re on holy ground",
+        "Holy ground, you\u2019re on holy ground",
+        "Take your shoes off Moses you\u2019re on Holy ground",
+        "For I am the Lord, thy God"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go yonder Moses and smite that rock",
+        "Smite that rock, Lord smite that rock",
+        "Go yonder Moses and smite that rock",
+        "For I am the Lord, thy God"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Stand still Moses see salvation work",
+        "Salvation work, see salvation work",
+        "Stand still Moses and see salvation work",
+        "For I am the Lord, thy God"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

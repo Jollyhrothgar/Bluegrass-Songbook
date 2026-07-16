@@ -1,0 +1,49 @@
+{
+  "slug": "steal-away-and-die",
+  "title": "Steal Away and Die",
+  "source_url": "https://www.bluegrasslyrics.com/song/steal-away-and-die/",
+  "raw_lyrics": "Tomorrow\u2019s just another day to worry\nTo wake up my dear and I\u2019ll wonder why\nMust a sea of heartache slowly drown me\nWhy can\u2019t I steal away somewhere and die\n\nToo many days I spent in deepest sorrow\nToo many nights I\u2019ve laid awake and cried\nOh how I wish there\u2019d be no more tomorrows\nWhy can\u2019t I steal away somewhere and die\n\nNow I find my dear that it\u2019s all over\nAnd I guess I\u2019ll live because I can not die\nMaybe the tide of time will cure all heartaches\nI guess I\u2019ll just look back and wonder why\n\nI loved you even though you didn\u2019t want me\nSometimes I think you didn\u2019t even try\nAnd now there\u2019s nothing left but burning memories\nWhy can\u2019t I steal away somewhere and die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tomorrow\u2019s just another day to worry",
+        "To wake up my dear and I\u2019ll wonder why",
+        "Must a sea of heartache slowly drown me",
+        "Why can\u2019t I steal away somewhere and die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Too many days I spent in deepest sorrow",
+        "Too many nights I\u2019ve laid awake and cried",
+        "Oh how I wish there\u2019d be no more tomorrows",
+        "Why can\u2019t I steal away somewhere and die"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I find my dear that it\u2019s all over",
+        "And I guess I\u2019ll live because I can not die",
+        "Maybe the tide of time will cure all heartaches",
+        "I guess I\u2019ll just look back and wonder why"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I loved you even though you didn\u2019t want me",
+        "Sometimes I think you didn\u2019t even try",
+        "And now there\u2019s nothing left but burning memories",
+        "Why can\u2019t I steal away somewhere and die"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "im-better-off-now-that-youre-gone",
+  "title": "I\u2019m Better Off Now That You\u2019re Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-better-off-now-that-youre-gone/",
+  "raw_lyrics": "I once had a sweetheart to love me\nBut now she has proven untrue\nShe\u2019s found a new love to treasure\nThat\u2019s why I\u2019m walking round blue\n\nThe lies you told me are over\nThe heart you broke is gone\nAnd friends they tell me I\u2019m lucky\nI\u2019m better off now that you\u2019re gone\n\nYou broke my heart when you loved me\nI\u2019ve always counted on you\nBut now you\u2019ve strayed with another\nLIttle girl what more could I do\n\nSome day I know you\u2019ll be sorry\nYou led my poor heart astray\nYou seemed to think it was funny\nBut some say darling you\u2019ll pay\n\nI\u2019m better off now that you\u2019re gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I once had a sweetheart to love me",
+        "But now she has proven untrue",
+        "She\u2019s found a new love to treasure",
+        "That\u2019s why I\u2019m walking round blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The lies you told me are over",
+        "The heart you broke is gone",
+        "And friends they tell me I\u2019m lucky",
+        "I\u2019m better off now that you\u2019re gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You broke my heart when you loved me",
+        "I\u2019ve always counted on you",
+        "But now you\u2019ve strayed with another",
+        "LIttle girl what more could I do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some day I know you\u2019ll be sorry",
+        "You led my poor heart astray",
+        "You seemed to think it was funny",
+        "But some say darling you\u2019ll pay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m better off now that you\u2019re gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

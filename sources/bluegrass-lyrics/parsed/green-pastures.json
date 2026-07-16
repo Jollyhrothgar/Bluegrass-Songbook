@@ -1,0 +1,49 @@
+{
+  "slug": "green-pastures",
+  "title": "Green Pastures",
+  "source_url": "https://www.bluegrasslyrics.com/song/green-pastures/",
+  "raw_lyrics": "Troubles and trials often betray those\nCausing the weary body to stray\nBut we shall walk beside the still water\nWith the good shepherd leading the way\n\nGoing up home to live in green pastures\nWhere we shall live and die never more\nEven the Lord will be in that number\nWhen we have reached that heavenly shore\n\nThose who have strayed were sought by the master\nHe who once gave his life for the sheep\nOut on the mountain still He is searching\nBringing them in forever to keep\n\nWe will not heed the voice of the stranger\nFor he would lead us on to despair\nFollowing home with Jesus our savior\nWe shall all reach that country so fair",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Troubles and trials often betray those",
+        "Causing the weary body to stray",
+        "But we shall walk beside the still water",
+        "With the good shepherd leading the way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Going up home to live in green pastures",
+        "Where we shall live and die never more",
+        "Even the Lord will be in that number",
+        "When we have reached that heavenly shore"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Those who have strayed were sought by the master",
+        "He who once gave his life for the sheep",
+        "Out on the mountain still He is searching",
+        "Bringing them in forever to keep"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We will not heed the voice of the stranger",
+        "For he would lead us on to despair",
+        "Following home with Jesus our savior",
+        "We shall all reach that country so fair"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

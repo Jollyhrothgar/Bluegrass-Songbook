@@ -1,0 +1,39 @@
+{
+  "slug": "the-beech-nut-tree",
+  "title": "The Beech Nut Tree",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-beech-nut-tree/",
+  "raw_lyrics": "In the hills of old Virginia there\u2019s a mountain\nWhere the trees still bud so pretty in the spring\nWhere I met and fell in love with one so sweetly\nJoy and gladness to my heart she then did bring\n\nUnderneath a beech nut tree there in the mountains\nWhere we met and told each other of our love\nThere we promised to each other we would marry\nAs the little birds sang sweetly up above\n\nThis is one song that had a happy ending\nFor we\u2019re married now and in her eyes I see\nAll the love and Oh how sweetly she remembers\nWhere we made our vows beneath the beech nut tree",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the hills of old Virginia there\u2019s a mountain",
+        "Where the trees still bud so pretty in the spring",
+        "Where I met and fell in love with one so sweetly",
+        "Joy and gladness to my heart she then did bring"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Underneath a beech nut tree there in the mountains",
+        "Where we met and told each other of our love",
+        "There we promised to each other we would marry",
+        "As the little birds sang sweetly up above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This is one song that had a happy ending",
+        "For we\u2019re married now and in her eyes I see",
+        "All the love and Oh how sweetly she remembers",
+        "Where we made our vows beneath the beech nut tree"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

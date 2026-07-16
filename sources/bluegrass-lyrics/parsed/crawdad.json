@@ -1,0 +1,75 @@
+{
+  "slug": "crawdad",
+  "title": "Crawdad",
+  "source_url": "https://www.bluegrasslyrics.com/song/crawdad/",
+  "raw_lyrics": "You get a line and I\u2019ll get a pole honey\nYou get a line and I\u2019ll get a pole babe\nYou get a line and I\u2019ll get a pole\nAnd we\u2019ll go down to the Crawdad hole\nHoney sugar baby mine.\n\nGet up old man you slept too late honey\nGet up old man you slept too late babe\nGet up old man you slept too late\nLast piece of crawdad\u2019s on your plate\nHoney sugar baby mine.\n\nGet up old woman you slept too late honey\nGet up old woman you slept too late babe\nGet up old woman you slept too late\nCrawdad man done passed your gate\nHoney sugar baby mine.\n\nAlong come a man with a sack on his back honey\nAlong come a man with a sack on his back babe\nAlong come a man with a sack on his back\nPackin\u2019 all the crawdads he can pack\nHoney sugar baby mine.\n\nWhat you gonna do when the crawdads die honey\nWhat you gonna do when the crawdads die baby\nWhat you gonna do when the crawdads die\nSit on the bank until I cry\nHoney sugar baby mine.\n\nI heard the duck say to the drake honey\nI heard the duck say to the drake baby\nI heard the duck say to the drake\nThere ain\u2019t no crawdads in this lake\nHoney sugar baby mine.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "You get a line and I\u2019ll get a pole honey",
+        "You get a line and I\u2019ll get a pole babe",
+        "You get a line and I\u2019ll get a pole",
+        "And we\u2019ll go down to the Crawdad hole",
+        "Honey sugar baby mine."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Get up old man you slept too late honey",
+        "Get up old man you slept too late babe",
+        "Get up old man you slept too late",
+        "Last piece of crawdad\u2019s on your plate",
+        "Honey sugar baby mine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Get up old woman you slept too late honey",
+        "Get up old woman you slept too late babe",
+        "Get up old woman you slept too late",
+        "Crawdad man done passed your gate",
+        "Honey sugar baby mine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Along come a man with a sack on his back honey",
+        "Along come a man with a sack on his back babe",
+        "Along come a man with a sack on his back",
+        "Packin\u2019 all the crawdads he can pack",
+        "Honey sugar baby mine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What you gonna do when the crawdads die honey",
+        "What you gonna do when the crawdads die baby",
+        "What you gonna do when the crawdads die",
+        "Sit on the bank until I cry",
+        "Honey sugar baby mine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I heard the duck say to the drake honey",
+        "I heard the duck say to the drake baby",
+        "I heard the duck say to the drake",
+        "There ain\u2019t no crawdads in this lake",
+        "Honey sugar baby mine."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

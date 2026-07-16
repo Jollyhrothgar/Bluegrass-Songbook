@@ -14,7 +14,9 @@
     "prog:": "prog",
     "p:": "prog",
     "tag:": "tag",
-    "t:": "tag"
+    "t:": "tag",
+    "status:": "status",
+    "s:": "status"
   },
   "description": "Search query prefix mappings. Used by both JS frontend and Python CLI."
 }

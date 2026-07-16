@@ -116,3 +116,67 @@ export function isTabOnlyWork(song) {
 export function partUsesSongActions(part) {
     return part?.type !== 'tablature';
 }
+
+/**
+ * Check if a song is a placeholder (no content yet)
+ */
+export function isPlaceholder(song) {
+    return song?.status === 'placeholder';
+}
+
+/**
+ * Check if a work has multiple viewable parts (lead sheet + tab, etc.)
+ * Used to decide whether to show the dashboard or go straight to content.
+ */
+export function hasMultipleParts(song) {
+    let count = 0;
+    if (song?.content) count++;
+    count += song?.tablature_parts?.length || 0;
+    count += song?.document_parts?.length || 0;
+    return count > 1;
+}
+
+/**
+ * Gate contribution actions behind login.
+ * If not logged in, triggers Google sign-in and returns false.
+ * Usage: if (!requireLogin('add songs')) return;
+ */
+export function requireLogin(actionDescription) {
+    if (window.SupabaseAuth?.isLoggedIn?.()) return true;
+    window.SupabaseAuth?.signInWithGoogle?.();
+    return false;
+}
+
+/**
+ * Generate a URL-friendly slug from title and artist
+ */
+export function generateSlug(title, artist) {
+    const base = artist
+        ? `${title}-${artist}`
+        : title;
+    return base
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '')
+        .slice(0, 80);
+}
+
+/**
+ * Parse a list item reference into workId and optional partId.
+ * References are either "work-slug" (whole work) or "work-slug/part-slug" (specific part).
+ */
+export function parseItemRef(ref) {
+    const slash = ref.indexOf('/');
+    if (slash === -1) return { workId: ref, partId: null };
+    return { workId: ref.slice(0, slash), partId: ref.slice(slash + 1) };
+}
+
+/**
+ * Slugify a string for use as a part ID in URLs.
+ */
+export function slugify(text) {
+    return text
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
+}

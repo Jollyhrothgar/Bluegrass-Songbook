@@ -1,0 +1,49 @@
+{
+  "slug": "when-the-evening-sun-goes-down",
+  "title": "When The Evening Sun Goes Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-evening-sun-goes-down/",
+  "raw_lyrics": "When this evening sun goes down\nThen in heaven I will be found\nI will end life\u2019s other side\nWhen I cross the great divide\n\nWhen this evening sun goes down\nWhen I wear my starry crown\nWhen I\u2019ll see a smiling face\nAnd rest in amazing grace\n\nHe will wipe away my tears\nHe will blind me to all my fears\nThen in joy I\u2019ll ever be bound\nWhen this evening sun goes down\n\nWhen this evening sun goes down\nWhen they lay me \u2018neath the ground\nWhen we\u2019ll meet, weep, and mourn\nThen I\u2019ll be in my heavenly home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When this evening sun goes down",
+        "Then in heaven I will be found",
+        "I will end life\u2019s other side",
+        "When I cross the great divide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When this evening sun goes down",
+        "When I wear my starry crown",
+        "When I\u2019ll see a smiling face",
+        "And rest in amazing grace"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He will wipe away my tears",
+        "He will blind me to all my fears",
+        "Then in joy I\u2019ll ever be bound",
+        "When this evening sun goes down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When this evening sun goes down",
+        "When they lay me \u2018neath the ground",
+        "When we\u2019ll meet, weep, and mourn",
+        "Then I\u2019ll be in my heavenly home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

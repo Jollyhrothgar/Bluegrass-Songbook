@@ -1,0 +1,79 @@
+{
+  "slug": "bonnie-blue-eyes",
+  "title": "Bonnie Blue Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/bonnie-blue-eyes/",
+  "raw_lyrics": "Goodbye my little bonnie blue eyes\nGoodbye my little bonnie blue eyes\nYou\u2019ve told me more lies than the stars in the skies\nGoodbye my little bonnie blue eyes\n\nI saw my little bonnie last night\nShe looked so dear to me\nShe\u2019s the only girl I ever loved\nShe\u2019s now gone back on me\n\nOh stand at the gate and weep\nOh stand at the gate and weep\nOh stand at the gate and weep and morn\nOh bonnie wont you love me once more\n\nCome and lay your hand in mine\nCome and lay your hand in mine\nCome and lay your arms around my neck\nAnd say that you will be mine\n\nOh you know what you promised me\nOh you know what you promised me\nYou promised that you\u2019d marry me\nOh you know what you promised me\n\nI\u2019ve stayed in the country too long\nI\u2019ve stayed in the country too long\nThe only wrong that I have done\nI\u2019ve stayed in the country too long\n\nCome and go with me too the train\nCome and go with me too the train\nCome and go with me and see me get on\nGoodbye my little bonnie I\u2019m gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Goodbye my little bonnie blue eyes",
+        "Goodbye my little bonnie blue eyes",
+        "You\u2019ve told me more lies than the stars in the skies",
+        "Goodbye my little bonnie blue eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I saw my little bonnie last night",
+        "She looked so dear to me",
+        "She\u2019s the only girl I ever loved",
+        "She\u2019s now gone back on me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh stand at the gate and weep",
+        "Oh stand at the gate and weep",
+        "Oh stand at the gate and weep and morn",
+        "Oh bonnie wont you love me once more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come and lay your hand in mine",
+        "Come and lay your hand in mine",
+        "Come and lay your arms around my neck",
+        "And say that you will be mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh you know what you promised me",
+        "Oh you know what you promised me",
+        "You promised that you\u2019d marry me",
+        "Oh you know what you promised me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve stayed in the country too long",
+        "I\u2019ve stayed in the country too long",
+        "The only wrong that I have done",
+        "I\u2019ve stayed in the country too long"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come and go with me too the train",
+        "Come and go with me too the train",
+        "Come and go with me and see me get on",
+        "Goodbye my little bonnie I\u2019m gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

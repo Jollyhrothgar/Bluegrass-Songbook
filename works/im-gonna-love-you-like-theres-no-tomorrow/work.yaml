@@ -1,0 +1,11 @@
+id: im-gonna-love-you-like-theres-no-tomorrow
+title: I’m Gonna Love You Like There’s No Tomorrow
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/im-gonna-love-you-like-theres-no-tomorrow/
+      imported_at: '2026-02-08'

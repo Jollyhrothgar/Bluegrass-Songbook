@@ -1,0 +1,56 @@
+{
+  "slug": "night",
+  "title": "Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/night/",
+  "raw_lyrics": "Night\nWhile everyone is sleeping\nNight\nThese memories have got me weeping\nPretty soon\nDaylight will come creeping\n\nDaylight\nWhen I\u2019ll be just as lonely\nDaylight\nAnd I\u2019ll be thinking of you only\nNight will come\nOnce again my past will haunt me\n\nCry\nEvery night the same old story\nTalkin\nTo my heart but it ignores me\nNight\nJust darkness before me\n\nNight\nUh-huh\nNight\nHuh-huh\nNight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Night",
+        "While everyone is sleeping",
+        "Night",
+        "These memories have got me weeping",
+        "Pretty soon",
+        "Daylight will come creeping"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Daylight",
+        "When I\u2019ll be just as lonely",
+        "Daylight",
+        "And I\u2019ll be thinking of you only",
+        "Night will come",
+        "Once again my past will haunt me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Cry",
+        "Every night the same old story",
+        "Talkin",
+        "To my heart but it ignores me",
+        "Night",
+        "Just darkness before me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Night",
+        "Uh-huh",
+        "Night",
+        "Huh-huh",
+        "Night"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

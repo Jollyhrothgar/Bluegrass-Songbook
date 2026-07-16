@@ -1,0 +1,49 @@
+{
+  "slug": "lonesome-old-home",
+  "title": "Lonesome Old Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-old-home/",
+  "raw_lyrics": "Last night I laid down everything was so fine\nHad mother and dad so much on my mind\nThinking of home and the ones I love so\nEverything was so great around the old home\n\nThen I woke up I was a dreaming\nNo mother no dad no children a playing\nEverything was so quiet everybody was gone\nThere was nothing left but a lonesome old home\n\nThen I got up the sun was so bright\nI looked all around but something\u2019s not right\nI walked out the door and there on a hill\nStood two lonesome graves Lord it gave me a chill\n\nAs I stood there everything was so still\nAs I started to leave those lonesome old hills\nLeaving behind where I used to roam\nMomma and dad and a lonesome old home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Last night I laid down everything was so fine",
+        "Had mother and dad so much on my mind",
+        "Thinking of home and the ones I love so",
+        "Everything was so great around the old home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Then I woke up I was a dreaming",
+        "No mother no dad no children a playing",
+        "Everything was so quiet everybody was gone",
+        "There was nothing left but a lonesome old home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then I got up the sun was so bright",
+        "I looked all around but something\u2019s not right",
+        "I walked out the door and there on a hill",
+        "Stood two lonesome graves Lord it gave me a chill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I stood there everything was so still",
+        "As I started to leave those lonesome old hills",
+        "Leaving behind where I used to roam",
+        "Momma and dad and a lonesome old home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

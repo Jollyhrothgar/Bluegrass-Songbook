@@ -1,0 +1,76 @@
+{
+  "slug": "long-time-travelin",
+  "title": "Long Time Travelin\u2019",
+  "source_url": "https://www.bluegrasslyrics.com/song/long-time-travelin/",
+  "raw_lyrics": "Been a long time travelin\u2019 here below\nBeen a long time travelin\u2019 away from my home\nBeen a long time travelin\u2019 here below\nGonna lay this ol\u2019 body down\n\nWhen I can read my titles clear\nTo mansions in the sky\nI\u2019ll bid farewell to every fear\nAnd wipe my weepin\u2019 eye\n\nMay tears like a wild deluge come\nAnd storms of sorrow fall\nMay I but safely reach my home\nMy God my heaven my all\n\nThere I shall bathe my weary soul\nIn seas of heavenly rest\nAnd not a wave of trouble roll\nAcross my peaceful breast\n\nalternate version:\n\nYe fleeting charms of earth farewell\nYour springs of joy are dry\nMy soul now seeks another home\nA brighter world on high\n\nFarewell my friends whose tender care\nHas long engaged my love\nYour fond embrace I now exchange\nFor better friends above",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Been a long time travelin\u2019 here below",
+        "Been a long time travelin\u2019 away from my home",
+        "Been a long time travelin\u2019 here below",
+        "Gonna lay this ol\u2019 body down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I can read my titles clear",
+        "To mansions in the sky",
+        "I\u2019ll bid farewell to every fear",
+        "And wipe my weepin\u2019 eye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "May tears like a wild deluge come",
+        "And storms of sorrow fall",
+        "May I but safely reach my home",
+        "My God my heaven my all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There I shall bathe my weary soul",
+        "In seas of heavenly rest",
+        "And not a wave of trouble roll",
+        "Across my peaceful breast"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "alternate version:"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ye fleeting charms of earth farewell",
+        "Your springs of joy are dry",
+        "My soul now seeks another home",
+        "A brighter world on high"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Farewell my friends whose tender care",
+        "Has long engaged my love",
+        "Your fond embrace I now exchange",
+        "For better friends above"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

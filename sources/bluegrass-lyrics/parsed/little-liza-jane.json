@@ -1,0 +1,70 @@
+{
+  "slug": "little-liza-jane",
+  "title": "Little Liza Jane",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-liza-jane/",
+  "raw_lyrics": "There\u2019s a house in Baltimore\nSixteen stories high\nAnd every story in that house\nWas full of chicken pie\n\nOh Liza poor girl\nOh Liza Jane\nOh Liza poor girl\nShe died on the train\n\nI went up on the mountain\nTo give my horn a blow\nAnd every girl in the countryside\nSaid yonder comes my beau\n\nWhen I was a little boy\nI liked to go in swimming\nNow I am a bigger boy\nI like to go with women\n\nI wish I had a candy box\nTo put my sweetheart in\nI\u2019d take her out and kiss her twice\nAnd put her back again\n\nOne day I set a-courting\nA girl as dear as life\nWhen a woman she said to me\nMr.Jones\nhow is your wife",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a house in Baltimore",
+        "Sixteen stories high",
+        "And every story in that house",
+        "Was full of chicken pie"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Liza poor girl",
+        "Oh Liza Jane",
+        "Oh Liza poor girl",
+        "She died on the train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went up on the mountain",
+        "To give my horn a blow",
+        "And every girl in the countryside",
+        "Said yonder comes my beau"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I was a little boy",
+        "I liked to go in swimming",
+        "Now I am a bigger boy",
+        "I like to go with women"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I had a candy box",
+        "To put my sweetheart in",
+        "I\u2019d take her out and kiss her twice",
+        "And put her back again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One day I set a-courting",
+        "A girl as dear as life",
+        "When a woman she said to me",
+        "Mr.Jones",
+        "how is your wife"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

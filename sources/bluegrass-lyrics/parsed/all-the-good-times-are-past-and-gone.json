@@ -1,0 +1,49 @@
+{
+  "slug": "all-the-good-times-are-past-and-gone",
+  "title": "All The Good Times are Past and Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/all-the-good-times-are-past-and-gone/",
+  "raw_lyrics": "I wish to the Lord I\u2019d never been born\nOr died when I was young\nI never would a\u2019 seen your sparklin\u2019 blue eyes\nOr heard your lying tongue\n\nAll the good times are past and gone\nAll the good times are o\u2019er\nAll the good times are past and gone\nLittle darlin\u2019 don\u2019t you weep no more.\n\nNow don\u2019t you see that turtle dove\nFlyin from pine to pine\nIt\u2019s mournin\u2019 for It\u2019s own true love\nJust like I mourn for mine.\n\nCome back, come back my own true love\nAnd stay a while with me\nFor if ever I\u2019ve had a friend in this world\nYou\u2019ve been a friend to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wish to the Lord I\u2019d never been born",
+        "Or died when I was young",
+        "I never would a\u2019 seen your sparklin\u2019 blue eyes",
+        "Or heard your lying tongue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "All the good times are past and gone",
+        "All the good times are o\u2019er",
+        "All the good times are past and gone",
+        "Little darlin\u2019 don\u2019t you weep no more."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now don\u2019t you see that turtle dove",
+        "Flyin from pine to pine",
+        "It\u2019s mournin\u2019 for It\u2019s own true love",
+        "Just like I mourn for mine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come back, come back my own true love",
+        "And stay a while with me",
+        "For if ever I\u2019ve had a friend in this world",
+        "You\u2019ve been a friend to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

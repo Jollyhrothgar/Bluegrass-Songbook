@@ -1,0 +1,11 @@
+id: the-last-thing-on-my-mind
+title: The Last Thing On My Mind
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/the-last-thing-on-my-mind/
+      imported_at: '2026-02-08'

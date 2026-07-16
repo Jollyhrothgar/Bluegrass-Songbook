@@ -1,0 +1,49 @@
+{
+  "slug": "im-going-back-to-old-kentucky",
+  "title": "I\u2019m Going Back To Old Kentucky",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-going-back-to-old-kentucky/",
+  "raw_lyrics": "I\u2019m going back to old Kentucky\nThere to see my Linda Lou\nI\u2019m going back to old Kentucky\nWhere the skies are always blue\n\nWhen my left old Kentucky\nLinda kissed me and she cried\nI told her that I would not linger\nI\u2019d be back by and by\n\nLinda Lou is she is a beauty\nThose pretty brown eyes I loved so well\nI\u2019m going back to old Kentucky\nNever more to say farewell\n\nLinda Lou you know I love you\nI long for you each night and day\nWhen the roses bloom in old Kentucky\nI\u2019ll be coming back to stay",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m going back to old Kentucky",
+        "There to see my Linda Lou",
+        "I\u2019m going back to old Kentucky",
+        "Where the skies are always blue"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When my left old Kentucky",
+        "Linda kissed me and she cried",
+        "I told her that I would not linger",
+        "I\u2019d be back by and by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Linda Lou is she is a beauty",
+        "Those pretty brown eyes I loved so well",
+        "I\u2019m going back to old Kentucky",
+        "Never more to say farewell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Linda Lou you know I love you",
+        "I long for you each night and day",
+        "When the roses bloom in old Kentucky",
+        "I\u2019ll be coming back to stay"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

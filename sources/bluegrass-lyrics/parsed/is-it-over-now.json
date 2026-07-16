@@ -1,0 +1,39 @@
+{
+  "slug": "is-it-over-now",
+  "title": "Is It Over Now",
+  "source_url": "https://www.bluegrasslyrics.com/song/is-it-over-now/",
+  "raw_lyrics": "You lie in our bed and dream of another\nYou don\u2019t even know you whisper his name\nAnd now if your heart belongs to another\nOh what will I do, you\u2019re driftin away\n\nOur once happy home is lonely and dark now\nHave you went astray and broken your vows\nI just can\u2019t believe these things that I\u2019m hearing\nYou\u2019re breakin my heart is it over now\n\nI wish that I knew what happened to you dear\nAnd I only hope we\u2019ll make it somehow\nBut that doesn\u2019t change the way that I\u2019m feeling\nIt hurts me to say that it\u2019s over now",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You lie in our bed and dream of another",
+        "You don\u2019t even know you whisper his name",
+        "And now if your heart belongs to another",
+        "Oh what will I do, you\u2019re driftin away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Our once happy home is lonely and dark now",
+        "Have you went astray and broken your vows",
+        "I just can\u2019t believe these things that I\u2019m hearing",
+        "You\u2019re breakin my heart is it over now"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish that I knew what happened to you dear",
+        "And I only hope we\u2019ll make it somehow",
+        "But that doesn\u2019t change the way that I\u2019m feeling",
+        "It hurts me to say that it\u2019s over now"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

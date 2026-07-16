@@ -1,0 +1,39 @@
+{
+  "slug": "remember-i-feel-lonesome-too",
+  "title": "Remember I Feel Lonesome Too",
+  "source_url": "https://www.bluegrasslyrics.com/song/remember-i-feel-lonesome-too/",
+  "raw_lyrics": "Wherever I go in this world little darlin\nYou\u2019ll be in my mind only you\nI\u2019ll never forget you as long as I\u2019m livin\nRemember I feel lonesome too\n\nI know I\u2019m to blame for the way that we\u2019re parting\nBut honey I love only you\nSo give me a chance just to prove I\u2019ll do better\nRemember I feel lonesome too\n\nI hope you will read the remarks in this letter\nPlease take time to read what I say\nI\u2019ve tried and I\u2019ve tried just to see you my darlin\nI can\u2019t so I\u2019m goin away",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Wherever I go in this world little darlin",
+        "You\u2019ll be in my mind only you",
+        "I\u2019ll never forget you as long as I\u2019m livin",
+        "Remember I feel lonesome too"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I know I\u2019m to blame for the way that we\u2019re parting",
+        "But honey I love only you",
+        "So give me a chance just to prove I\u2019ll do better",
+        "Remember I feel lonesome too"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hope you will read the remarks in this letter",
+        "Please take time to read what I say",
+        "I\u2019ve tried and I\u2019ve tried just to see you my darlin",
+        "I can\u2019t so I\u2019m goin away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

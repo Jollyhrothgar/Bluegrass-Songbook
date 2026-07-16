@@ -1,0 +1,39 @@
+{
+  "slug": "a-gift-of-love",
+  "title": "A Gift Of Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-gift-of-love/",
+  "raw_lyrics": "Whipoor wills and daffodils are pretty things\nAll the works of nature that we see each spring\nAll the pretty colors  at a  rainbows end\nCould never match the beauty on your face I\u2019ve seen\n\nYou brought me laughter you gave me joy\nYou brought me pleasure like a kid with a Christmas toy\nYou brought me sunshine from up above\nAnd that\u2019s not all you brought you gave me love\n\nHoneysuckles morning glories \u2019round my door\nHoney bees that gather nectar and much more\nSmiling faces childrens laughter skies above\nAll that I could ask form them you gave me love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Whipoor wills and daffodils are pretty things",
+        "All the works of nature that we see each spring",
+        "All the pretty colors  at a  rainbows end",
+        "Could never match the beauty on your face I\u2019ve seen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You brought me laughter you gave me joy",
+        "You brought me pleasure like a kid with a Christmas toy",
+        "You brought me sunshine from up above",
+        "And that\u2019s not all you brought you gave me love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Honeysuckles morning glories \u2019round my door",
+        "Honey bees that gather nectar and much more",
+        "Smiling faces childrens laughter skies above",
+        "All that I could ask form them you gave me love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

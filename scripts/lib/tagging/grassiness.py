@@ -320,12 +320,13 @@ def get_db_connection():
     )
 
 
-def fetch_artist_recordings(artist_names: List[str]) -> Dict[str, List[Tuple[str, int]]]:
+def fetch_artist_recordings(artist_names: List[str]) -> Dict[str, List[Tuple[str, int, int]]]:
     """
     Fetch all recordings by the given artists from MusicBrainz.
 
     Returns:
-        Dict mapping normalized_title -> [(artist_name, count), ...]
+        Dict mapping normalized_title -> [(artist_name, count, earliest_year), ...]
+        earliest_year is the minimum release year for that artist's recording, or 9999 if unknown
     """
     if not artist_names:
         return {}
@@ -339,11 +340,16 @@ def fetch_artist_recordings(artist_names: List[str]) -> Dict[str, List[Tuple[str
     SELECT
         r.name as recording_name,
         ai.name as artist_name,
-        COUNT(*) as recording_count
+        COUNT(DISTINCT r.id) as recording_count,
+        MIN(rc.date_year) as earliest_year
     FROM artist_ids ai
     JOIN musicbrainz.artist_credit_name acn ON acn.artist = ai.id
     JOIN musicbrainz.artist_credit ac ON acn.artist_credit = ac.id
     JOIN musicbrainz.recording r ON r.artist_credit = ac.id
+    LEFT JOIN musicbrainz.track t ON t.recording = r.id
+    LEFT JOIN musicbrainz.medium m ON t.medium = m.id
+    LEFT JOIN musicbrainz.release rel ON m.release = rel.id
+    LEFT JOIN musicbrainz.release_country rc ON rc.release = rel.id
     GROUP BY r.name, ai.name
     ORDER BY r.name
     """
@@ -355,14 +361,17 @@ def fetch_artist_recordings(artist_names: List[str]) -> Dict[str, List[Tuple[str
             cur.execute(query, (artist_names,))
 
             for row in cur.fetchall():
-                recording_name, artist_name, count = row
+                recording_name, artist_name, count, earliest_year = row
                 normalized = normalize_title(recording_name)
                 if not normalized:
                     continue
 
+                # Use 9999 for unknown years so they sort last
+                year = earliest_year if earliest_year else 9999
+
                 if normalized not in results:
                     results[normalized] = []
-                results[normalized].append((artist_name, int(count)))
+                results[normalized].append((artist_name, int(count), int(year)))
 
     return results
 
@@ -402,7 +411,7 @@ def build_recordings_cache(output_file: Path = RECORDINGS_CACHE) -> Dict:
     cache = {
         'recordings': all_recordings,
         'artists': bluegrass_artists,
-        'version': 2,
+        'version': 3,  # v3: includes earliest_year per artist
     }
 
     output_file.parent.mkdir(parents=True, exist_ok=True)
@@ -413,8 +422,13 @@ def build_recordings_cache(output_file: Path = RECORDINGS_CACHE) -> Dict:
     return cache
 
 
-def load_recordings_cache(cache_file: Path = RECORDINGS_CACHE) -> Dict[str, List[Tuple[str, int]]]:
-    """Load the bluegrass recordings cache."""
+def load_recordings_cache(cache_file: Path = RECORDINGS_CACHE) -> Dict[str, List[Tuple[str, int, int]]]:
+    """Load the bluegrass recordings cache.
+
+    Returns:
+        Dict mapping normalized_title -> [(artist_name, count, earliest_year), ...]
+        For v2 caches without year data, earliest_year defaults to 9999.
+    """
     if not cache_file.exists():
         raise FileNotFoundError(
             f"Recordings cache not found at {cache_file}. "
@@ -424,7 +438,17 @@ def load_recordings_cache(cache_file: Path = RECORDINGS_CACHE) -> Dict[str, List
     with open(cache_file) as f:
         cache = json.load(f)
 
-    return cache.get('recordings', {})
+    recordings = cache.get('recordings', {})
+    version = cache.get('version', 1)
+
+    # Handle v2 format (no year data) - add default year
+    if version < 3:
+        converted = {}
+        for title, artists in recordings.items():
+            converted[title] = [(a[0], a[1], 9999) for a in artists]
+        return converted
+
+    return recordings
 
 
 def fetch_tagged_recordings(tags: List[str] = BLUEGRASS_TAGS) -> Dict[str, int]:
@@ -571,9 +595,9 @@ def load_tagged_cache(cache_file: Path = TAGGED_CACHE) -> Dict[str, int]:
 
 def compute_grassiness(
     title: str,
-    recordings_cache: Dict[str, List[Tuple[str, int]]],
+    recordings_cache: Dict[str, List[Tuple[str, int, int]]],
     tagged_cache: Dict[str, int] = None
-) -> Tuple[int, List[str], int]:
+) -> Tuple[int, List[Tuple[str, int]], int]:
     """
     Compute grassiness score for a song title.
 
@@ -582,7 +606,7 @@ def compute_grassiness(
     2. MusicBrainz bluegrass tags (broader coverage)
 
     Returns:
-        Tuple of (artist_score, list of bluegrass artists, tag_score)
+        Tuple of (artist_score, list of (artist_name, earliest_year), tag_score)
     """
     normalized = normalize_title(title)
     if not normalized:
@@ -591,14 +615,14 @@ def compute_grassiness(
     # Signal 1: Artist covers
     artists = recordings_cache.get(normalized, [])
     artist_score = 0
-    bluegrass_artists_found = []
+    bluegrass_artists_found = []  # List of (artist_name, earliest_year)
 
     artist_weights = get_bluegrass_artists()
-    for artist_name, count in artists:
+    for artist_name, count, year in artists:
         weight = artist_weights.get(artist_name, 0)
         if weight > 0:
             artist_score += weight * min(count, 3)
-            bluegrass_artists_found.append(artist_name)
+            bluegrass_artists_found.append((artist_name, year))
 
     # Signal 2: MusicBrainz tags
     tag_score = 0
@@ -668,11 +692,15 @@ def score_index(
                 if tag_score > 0:
                     with_tag_score += 1
 
+                # Convert artist tuples to list with year data for sorting
+                # artists is [(name, year), ...]
+                artist_data = [{'name': name, 'year': year} for name, year in artists]
+
                 scores[song_id] = {
                     'score': total_score,
                     'artist_score': artist_score,
                     'tag_score': tag_score,
-                    'artists': artists,
+                    'artists': artist_data,
                     'title': title,
                 }
 
@@ -731,7 +759,13 @@ if __name__ == '__main__':
         print("\nTop 30 bluegrass standards:")
         sorted_scores = sorted(scores.items(), key=lambda x: -x[1]['score'])
         for song_id, data in sorted_scores[:30]:
-            artists = ', '.join(data['artists'][:3])
+            # Handle both old format (list of strings) and new format (list of dicts)
+            artist_list = data['artists'][:3]
+            artist_names = [
+                a['name'] if isinstance(a, dict) else a
+                for a in artist_list
+            ]
+            artists = ', '.join(artist_names)
             if len(data['artists']) > 3:
                 artists += f" +{len(data['artists']) - 3}"
             a_score = data.get('artist_score', data['score'])

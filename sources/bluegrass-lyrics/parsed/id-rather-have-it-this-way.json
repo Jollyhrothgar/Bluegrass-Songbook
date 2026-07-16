@@ -1,0 +1,29 @@
+{
+  "slug": "id-rather-have-it-this-way",
+  "title": "I\u2019d Rather Have It This Way",
+  "source_url": "https://www.bluegrasslyrics.com/song/id-rather-have-it-this-way/",
+  "raw_lyrics": "I\u2019d rather be lonely than be unhappy\nI can\u2019t take the life that you lead\nYour wild kind of life is not my way of livin\u2019\nAnd I\u2019d rather have it this way\n\nYou promised to love me and that\u2019s all that matters\nBut now you\u2019ve broken those vows\nYour night life and bright lights were your kind of choosin\u2019\nSo I\u2019ll say goodbye to you now",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d rather be lonely than be unhappy",
+        "I can\u2019t take the life that you lead",
+        "Your wild kind of life is not my way of livin\u2019",
+        "And I\u2019d rather have it this way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You promised to love me and that\u2019s all that matters",
+        "But now you\u2019ve broken those vows",
+        "Your night life and bright lights were your kind of choosin\u2019",
+        "So I\u2019ll say goodbye to you now"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

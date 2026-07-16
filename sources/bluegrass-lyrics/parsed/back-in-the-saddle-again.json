@@ -1,0 +1,43 @@
+{
+  "slug": "back-in-the-saddle-again",
+  "title": "Back In The Saddle Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/back-in-the-saddle-again/",
+  "raw_lyrics": "I\u2019m back in the saddle again\nOut where a friend is a friend\nWhere the long-horn cattle feed\nOn the lowly jimson weed\nI\u2019m back in the saddle again.\n\nRidin\u2019 the range once more\nTotin\u2019 my old forty-four\nWhere you sleep out every night\nWhere the only law is right\nI\u2019m back in the saddle again.\n\nWhoop-pi-ti-yi-yo\nRockin\u2019 to and fro\nBack in the saddle again\nWhoop-pi-ti-yi-yay\nI go my own way\nBack in the saddle again.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m back in the saddle again",
+        "Out where a friend is a friend",
+        "Where the long-horn cattle feed",
+        "On the lowly jimson weed",
+        "I\u2019m back in the saddle again."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ridin\u2019 the range once more",
+        "Totin\u2019 my old forty-four",
+        "Where you sleep out every night",
+        "Where the only law is right",
+        "I\u2019m back in the saddle again."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Whoop-pi-ti-yi-yo",
+        "Rockin\u2019 to and fro",
+        "Back in the saddle again",
+        "Whoop-pi-ti-yi-yay",
+        "I go my own way",
+        "Back in the saddle again."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

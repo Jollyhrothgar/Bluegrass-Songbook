@@ -1,0 +1,49 @@
+{
+  "slug": "sophronie",
+  "title": "Sophronie",
+  "source_url": "https://www.bluegrasslyrics.com/song/sophronie/",
+  "raw_lyrics": "My Sophronie\u2019s from Kentucky she\u2019s found another man\nCan\u2019t even kiss her can\u2019t even hold her hand\nThe moon we used to love beneath is still up in the sky\nSo now I\u2019m just a hotshot with a teardrop in my eye\n\nLove em and leave em, kiss em and grieve em\nThat used to be my motto so high\nTil my Sophronie left me so lonely\nNow there\u2019s a teardrop in my eye\n\nTil Gabriel blows his bugle I\u2019ll be loving that sweet girl\nShe means more to me than the whole wide world\nI used to be a killer with the women me oh my\nBut now I\u2019m just a hot shot with a teardrop in my eye\n\nI used to slay the pretty girls from Maine to Alabam\nI loved them very much at first and then I let them down\nI seen so many pretty eyes and filled with bitter tears\nFind \u2019em and forget them but now I have my fears",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My Sophronie\u2019s from Kentucky she\u2019s found another man",
+        "Can\u2019t even kiss her can\u2019t even hold her hand",
+        "The moon we used to love beneath is still up in the sky",
+        "So now I\u2019m just a hotshot with a teardrop in my eye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Love em and leave em, kiss em and grieve em",
+        "That used to be my motto so high",
+        "Til my Sophronie left me so lonely",
+        "Now there\u2019s a teardrop in my eye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Til Gabriel blows his bugle I\u2019ll be loving that sweet girl",
+        "She means more to me than the whole wide world",
+        "I used to be a killer with the women me oh my",
+        "But now I\u2019m just a hot shot with a teardrop in my eye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I used to slay the pretty girls from Maine to Alabam",
+        "I loved them very much at first and then I let them down",
+        "I seen so many pretty eyes and filled with bitter tears",
+        "Find \u2019em and forget them but now I have my fears"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

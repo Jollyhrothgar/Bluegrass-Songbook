@@ -1,0 +1,49 @@
+{
+  "slug": "somebodys-waiting-for-me",
+  "title": "Somebody\u2019s Waiting For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/somebodys-waiting-for-me/",
+  "raw_lyrics": "In a noisy eastern city sat a lonely lad one night\nIn a bar room where the wine began to flow\nFrom a table in the corner the young man slowly rised\nAnd he said it\u2019s getting late boys I must go\n\nFor somebody\u2019s waiting for me\nSomeone who loves me I know\nThere\u2019s a light shining bright in the window\nFor somebody\u2019s waiting for me\n\nI suppose you have a sweetheart his companions jovially said\nIf she\u2019s pretty we would like to see her too\nIf you\u2019ll only stop your teasing I will show her to you boys\nShe\u2019s the only sweetheart that I ever knew\n\nFrom an old brown leather pocketbook a picture he did take\nOf a gray-haired lady with a bowed-down head\nShe\u2019s my mother and my sweetheart and she waits for me tonight\nSo you see I told the truth boys when I said",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a noisy eastern city sat a lonely lad one night",
+        "In a bar room where the wine began to flow",
+        "From a table in the corner the young man slowly rised",
+        "And he said it\u2019s getting late boys I must go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "For somebody\u2019s waiting for me",
+        "Someone who loves me I know",
+        "There\u2019s a light shining bright in the window",
+        "For somebody\u2019s waiting for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I suppose you have a sweetheart his companions jovially said",
+        "If she\u2019s pretty we would like to see her too",
+        "If you\u2019ll only stop your teasing I will show her to you boys",
+        "She\u2019s the only sweetheart that I ever knew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "From an old brown leather pocketbook a picture he did take",
+        "Of a gray-haired lady with a bowed-down head",
+        "She\u2019s my mother and my sweetheart and she waits for me tonight",
+        "So you see I told the truth boys when I said"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

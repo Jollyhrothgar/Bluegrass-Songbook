@@ -1,0 +1,50 @@
+{
+  "slug": "roll-on-buddy",
+  "title": "Roll On Buddy",
+  "source_url": "https://www.bluegrasslyrics.com/song/roll-on-buddy/",
+  "raw_lyrics": "Roll on, buddy, roll on\nRoll on, buddy, roll on\nWouldn\u2019t roll so slow\nIf you knew what I know\nSo roll on, buddy, roll on\n\nI\u2019m going to that east pay road\nI\u2019m going to that east pay road\nI\u2019m going to that east, I\u2019m going to the west\nI\u2019m going to the one that I love best\n\nMy home in down in Tennessee\nMy home in down in Tennessee\nIn sunny Tennessee, that\u2019s where I want to be\nWay down in sunny Tennessee\n\nI\u2019ve got a good woman just the same\nI\u2019ve got a good woman just the same\nGot a woman just the same, and I\u2019m gonna change her name\nI\u2019ve got a good woman just the same",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Roll on, buddy, roll on",
+        "Roll on, buddy, roll on",
+        "Wouldn\u2019t roll so slow",
+        "If you knew what I know",
+        "So roll on, buddy, roll on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going to that east pay road",
+        "I\u2019m going to that east pay road",
+        "I\u2019m going to that east, I\u2019m going to the west",
+        "I\u2019m going to the one that I love best"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My home in down in Tennessee",
+        "My home in down in Tennessee",
+        "In sunny Tennessee, that\u2019s where I want to be",
+        "Way down in sunny Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got a good woman just the same",
+        "I\u2019ve got a good woman just the same",
+        "Got a woman just the same, and I\u2019m gonna change her name",
+        "I\u2019ve got a good woman just the same"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

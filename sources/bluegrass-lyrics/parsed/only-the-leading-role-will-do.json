@@ -1,0 +1,49 @@
+{
+  "slug": "only-the-leading-role-will-do",
+  "title": "Only the Leading Role Will Do",
+  "source_url": "https://www.bluegrasslyrics.com/song/only-the-leading-role-will-do/",
+  "raw_lyrics": "I have always held a second place\nIn a heart that I loved so dear\nWaiting oh so long just to see a trace\nOr a tiny sign that you care\n\nThey say that time will heal a broken heart\nAnd I prayed that you\u2019d love me too\nBut I just can\u2019t play that second part\nOnly the leading role will do\n\nYou had another love before I came along\nHow she hurt you I just don\u2019t know\nI can\u2019t fill the shoes of your other love\nSo for God\u2019s sake let me go\n\nNo I just can\u2019t let play that second part\nLord knows I\u2019ve tried not to let it show\nEither love me now take me in your heart\nOr for God\u2019s sake let me go",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have always held a second place",
+        "In a heart that I loved so dear",
+        "Waiting oh so long just to see a trace",
+        "Or a tiny sign that you care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "They say that time will heal a broken heart",
+        "And I prayed that you\u2019d love me too",
+        "But I just can\u2019t play that second part",
+        "Only the leading role will do"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You had another love before I came along",
+        "How she hurt you I just don\u2019t know",
+        "I can\u2019t fill the shoes of your other love",
+        "So for God\u2019s sake let me go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No I just can\u2019t let play that second part",
+        "Lord knows I\u2019ve tried not to let it show",
+        "Either love me now take me in your heart",
+        "Or for God\u2019s sake let me go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "a-lonesome-road-to-travel",
+  "title": "A Lonesome Road to Travel",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-lonesome-road-to-travel/",
+  "raw_lyrics": "I bid farewell to my home so dear\nAnd started down life\u2019s road\nI was a fortune seeking miner dear\nMany things had been my goal\n\nThere\u2019s many things I\u2019ve seen in life\nI thought I\u2019d like to own\nBut I\u2019d give them all and more if I\nCould get off this lonesome road\n\nIt\u2019s a lonesome road to travel on\nMany miles of sorrow is all I\u2019ve known\nBut I\u2019ve gone too far to turn back now\nFrom this lonesome lonesome road\n\nI left behind a love that\u2019s true\nShe cried and begged me not to go\nBut my foolish pride told me what to do\nAnd put me on this lonesome road\n\nOh such lonely nights I\u2019ve never found\nNo time in life before\nIf she takes me back I\u2019ll settle down\nAnd travel this road no more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I bid farewell to my home so dear",
+        "And started down life\u2019s road",
+        "I was a fortune seeking miner dear",
+        "Many things had been my goal"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s many things I\u2019ve seen in life",
+        "I thought I\u2019d like to own",
+        "But I\u2019d give them all and more if I",
+        "Could get off this lonesome road"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a lonesome road to travel on",
+        "Many miles of sorrow is all I\u2019ve known",
+        "But I\u2019ve gone too far to turn back now",
+        "From this lonesome lonesome road"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I left behind a love that\u2019s true",
+        "She cried and begged me not to go",
+        "But my foolish pride told me what to do",
+        "And put me on this lonesome road"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh such lonely nights I\u2019ve never found",
+        "No time in life before",
+        "If she takes me back I\u2019ll settle down",
+        "And travel this road no more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

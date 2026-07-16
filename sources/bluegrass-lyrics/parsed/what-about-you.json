@@ -1,0 +1,39 @@
+{
+  "slug": "what-about-you",
+  "title": "What About You",
+  "source_url": "https://www.bluegrasslyrics.com/song/what-about-you/",
+  "raw_lyrics": "The days have seemed long and I\u2019ve been so lonesome\nRecalling those dreams that never came true\nThe nights have been lonely but now that\u2019s all over\nAnd I\u2019ve paid my debt for trusting in you\n\nEvery day your memory grows dimmer\nThe clouds drift away the sunshine peeks through\nEvery night no longer you haunt me\nMy conscience is clear dear what about you\n\nIt\u2019s hard to believe that you are the same one\nThat once meant so much to our love so true\nIt\u2019s hard to know I\u2019ve worshipped a false one\nBut I\u2019ve paid my debt dear what about you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The days have seemed long and I\u2019ve been so lonesome",
+        "Recalling those dreams that never came true",
+        "The nights have been lonely but now that\u2019s all over",
+        "And I\u2019ve paid my debt for trusting in you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Every day your memory grows dimmer",
+        "The clouds drift away the sunshine peeks through",
+        "Every night no longer you haunt me",
+        "My conscience is clear dear what about you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s hard to believe that you are the same one",
+        "That once meant so much to our love so true",
+        "It\u2019s hard to know I\u2019ve worshipped a false one",
+        "But I\u2019ve paid my debt dear what about you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

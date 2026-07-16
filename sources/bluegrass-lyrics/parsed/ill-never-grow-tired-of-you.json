@@ -1,0 +1,49 @@
+{
+  "slug": "ill-never-grow-tired-of-you",
+  "title": "I\u2019ll Never Grow Tired Of You",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-never-grow-tired-of-you/",
+  "raw_lyrics": "It\u2019s been a long time since you drifted away\nNow there\u2019s nothin\u2019 to live for it seems\nBut darlin\u2019 no matter where you are tonight\nYou\u2019ll be here with me inmy dreams\n\nI \u2018ll nevergrow tired of you sweetheart\nNo mat-ter what you may do\nThey tell me lately you\u2019re livin\u2019 so wrong\nBut I\u2019ll never grow tired of you\n\nI see your two blue eyes each night in my dreams\nBut when I awake you\u2019re not thee\nCome back to me and let\u2019s start life anew\nLosin\u2019 you\u2019s so hard to bare\n\nI still wonder why you\u2019ve drifted away\nFrom the happiness that may have been\nI can vision the time you\u2019d someday be mine\nCherish the love I can\u2019t win",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s been a long time since you drifted away",
+        "Now there\u2019s nothin\u2019 to live for it seems",
+        "But darlin\u2019 no matter where you are tonight",
+        "You\u2019ll be here with me inmy dreams"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I \u2018ll nevergrow tired of you sweetheart",
+        "No mat-ter what you may do",
+        "They tell me lately you\u2019re livin\u2019 so wrong",
+        "But I\u2019ll never grow tired of you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I see your two blue eyes each night in my dreams",
+        "But when I awake you\u2019re not thee",
+        "Come back to me and let\u2019s start life anew",
+        "Losin\u2019 you\u2019s so hard to bare"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I still wonder why you\u2019ve drifted away",
+        "From the happiness that may have been",
+        "I can vision the time you\u2019d someday be mine",
+        "Cherish the love I can\u2019t win"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

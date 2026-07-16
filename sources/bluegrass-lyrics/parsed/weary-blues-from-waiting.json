@@ -1,0 +1,39 @@
+{
+  "slug": "weary-blues-from-waiting",
+  "title": "Weary Blues From Waiting",
+  "source_url": "https://www.bluegrasslyrics.com/song/weary-blues-from-waiting/",
+  "raw_lyrics": "Weary blues from waitin\u2019\nLord I\u2019ve been waitin\u2019 so long\nThese blues have got me cryin\u2019\nOh, sweet ma-a-ma, please come home\n\nThe snow falls \u2019round my window\nBut it can\u2019t chill my heart\nGod knows it died the day you left\nMy dream world fell a-part\n\nThru tears I watch young lovers\nAs they go strollin\u2019 by\nOh, all the things that might have been\nGod forgive me if I cry",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Weary blues from waitin\u2019",
+        "Lord I\u2019ve been waitin\u2019 so long",
+        "These blues have got me cryin\u2019",
+        "Oh, sweet ma-a-ma, please come home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The snow falls \u2019round my window",
+        "But it can\u2019t chill my heart",
+        "God knows it died the day you left",
+        "My dream world fell a-part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Thru tears I watch young lovers",
+        "As they go strollin\u2019 by",
+        "Oh, all the things that might have been",
+        "God forgive me if I cry"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

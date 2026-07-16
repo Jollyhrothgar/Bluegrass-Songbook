@@ -1,0 +1,39 @@
+{
+  "slug": "a-few-more-seasons",
+  "title": "A Few More Seasons",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-few-more-seasons/",
+  "raw_lyrics": "Mother first was called to heaven\nLeft our home all alone\nDad took sick soon and joined her\nThey\u2019re reunited on god\u2019s throne\n\nA few more tiring days still face us\nA few more weary nights shall come\nWe\u2019ll all be on our way to heaven\nWhen a few more seasons come\n\nIn springtime when the flowers blossom\nSpreading their fragrance through the air\nWalking through the little churchyard\nSoon we\u2019ll all be resting there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Mother first was called to heaven",
+        "Left our home all alone",
+        "Dad took sick soon and joined her",
+        "They\u2019re reunited on god\u2019s throne"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "A few more tiring days still face us",
+        "A few more weary nights shall come",
+        "We\u2019ll all be on our way to heaven",
+        "When a few more seasons come"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In springtime when the flowers blossom",
+        "Spreading their fragrance through the air",
+        "Walking through the little churchyard",
+        "Soon we\u2019ll all be resting there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

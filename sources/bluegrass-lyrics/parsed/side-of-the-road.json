@@ -1,0 +1,63 @@
+{
+  "slug": "side-of-the-road",
+  "title": "Side Of The Road",
+  "source_url": "https://www.bluegrasslyrics.com/song/side-of-the-road/",
+  "raw_lyrics": "There are people who would rather live in mansions\nPeople who would rather live abroad\nPeople who would trade God\u2019s promise\nFor the glories to hold.\n\nThere are people who would rather live in splendor\nAnd brag about their silver and their gold\nBut I\u2019d rather have a little log cabin\nBy the side of the road.\n\nI\u2019d rather live by the side of the road\nAnd try to point souls to the best abode\nThan to be a king or a millionaire\nAnd live in mansions in bright array.\n\nI\u2019d rather do a neighborly deed\nFor a traveler here or a friend in need\nI\u2019d rather live by the side of the road\nAnd help some pilgrim along life\u2019s way.\nWell I\u2019d rather have a cabin by the roadside\n\nWith a pilgrimage of men just passing by\nHelp to point some soul to Jesus\nIn that city On High.\nEvery day I want to help to scatter roses\nEvery night I want the lamp to shine abroad\nWith a welcome from the little bay window\nBy the side of the road.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There are people who would rather live in mansions",
+        "People who would rather live abroad",
+        "People who would trade God\u2019s promise",
+        "For the glories to hold."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There are people who would rather live in splendor",
+        "And brag about their silver and their gold",
+        "But I\u2019d rather have a little log cabin",
+        "By the side of the road."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019d rather live by the side of the road",
+        "And try to point souls to the best abode",
+        "Than to be a king or a millionaire",
+        "And live in mansions in bright array."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d rather do a neighborly deed",
+        "For a traveler here or a friend in need",
+        "I\u2019d rather live by the side of the road",
+        "And help some pilgrim along life\u2019s way.",
+        "Well I\u2019d rather have a cabin by the roadside"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With a pilgrimage of men just passing by",
+        "Help to point some soul to Jesus",
+        "In that city On High.",
+        "Every day I want to help to scatter roses",
+        "Every night I want the lamp to shine abroad",
+        "With a welcome from the little bay window",
+        "By the side of the road."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

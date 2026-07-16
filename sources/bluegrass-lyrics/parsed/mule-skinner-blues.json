@@ -1,0 +1,81 @@
+{
+  "slug": "mule-skinner-blues",
+  "title": "Mule Skinner Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/mule-skinner-blues/",
+  "raw_lyrics": "Good morning captain good morning son\nDo you need another mule skinner\nOut on your new road line\n\nWell I like to work I\u2019m rolling all the time\nLord I like to work boy I\u2019m rolling all the time\nI can pop my initials Right on a mule\u2019s behind\n\nWell it\u2019s hey little water boy bring your water \u2019round\nLord it\u2019s hey little water boy bring your water \u2019round\nAnd if you don\u2019t like your job just set that water bucket down\n\nI work out on the new road from a dollar and a dime a day\nLord I work out on the new road I make a dollar and a dime a day\nI\u2019ve got three women on Saturday night Waiting to draw my pay\n\nWell I\u2019m going to town honey what can I bring you back\nWell I\u2019m going to town baby what can I bring you back\nJust bring a pint of good rye And a John B.Stetson hat\n\nLord it\u2019s raining here and it\u2019s storming on the deep blue sea\nLord it\u2019s raining here and it\u2019s storming on the deep blue sea\nCan\u2019t no blonde headed woman make a monkey out for me\n\nIf your house catches fire and there ain\u2019t no water \u2019round\nIf your house catches fire and there ain\u2019t no water \u2019round\nJust throw your good gal out the window let your house just burn on down\n\nWell I\u2019m leaving here and I ain\u2019t gonna take no clothes\nI\u2019m leaving here and I ain\u2019t gonna take no clothes\nThere may be good times in this old town but it\u2019s better on down the road",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Good morning captain good morning son",
+        "Do you need another mule skinner",
+        "Out on your new road line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I like to work I\u2019m rolling all the time",
+        "Lord I like to work boy I\u2019m rolling all the time",
+        "I can pop my initials Right on a mule\u2019s behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well it\u2019s hey little water boy bring your water \u2019round",
+        "Lord it\u2019s hey little water boy bring your water \u2019round",
+        "And if you don\u2019t like your job just set that water bucket down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I work out on the new road from a dollar and a dime a day",
+        "Lord I work out on the new road I make a dollar and a dime a day",
+        "I\u2019ve got three women on Saturday night Waiting to draw my pay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019m going to town honey what can I bring you back",
+        "Well I\u2019m going to town baby what can I bring you back",
+        "Just bring a pint of good rye And a John B.Stetson hat"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lord it\u2019s raining here and it\u2019s storming on the deep blue sea",
+        "Lord it\u2019s raining here and it\u2019s storming on the deep blue sea",
+        "Can\u2019t no blonde headed woman make a monkey out for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If your house catches fire and there ain\u2019t no water \u2019round",
+        "If your house catches fire and there ain\u2019t no water \u2019round",
+        "Just throw your good gal out the window let your house just burn on down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019m leaving here and I ain\u2019t gonna take no clothes",
+        "I\u2019m leaving here and I ain\u2019t gonna take no clothes",
+        "There may be good times in this old town but it\u2019s better on down the road"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

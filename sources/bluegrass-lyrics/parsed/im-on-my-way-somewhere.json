@@ -1,0 +1,49 @@
+{
+  "slug": "im-on-my-way-somewhere",
+  "title": "I\u2019m On My Way Somewhere",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-on-my-way-somewhere/",
+  "raw_lyrics": "When Louisville was eight more miles away my old heart sung a song\nWell I thought I\u2019d hug kiss my gal before so very long\nBut when I got to Louisville I found she wasn\u2019t true\nSo I\u2019ll tell you all about it now that\u2019s why I feel so blue\n\nWhen I got to Louisville my gal she wasn\u2019t there\nThey sais she\u2019d gone with someone else it was more than I could bear\nSo I\u2019m heading out of this old town where to I don\u2019t much care\nLouisville is eight miles back and I\u2019m on my way somewhere\n\nI always dreamed of some sweet day when she could be my wife\nAnd we would settle down somewhere and lead a happy life\nBut now I know just how things are and how they\u2019d always be\nSo I know now Louisville just ain\u2019t the place for me\n\nRight now I\u2019m traveling down this road to get her off my mind\nThe thing I want to do is leave old Louisville behind\nWho knows I may find happiness and one who fills the bill\nA girl that\u2019s true and not like her that lives in Louisville",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When Louisville was eight more miles away my old heart sung a song",
+        "Well I thought I\u2019d hug kiss my gal before so very long",
+        "But when I got to Louisville I found she wasn\u2019t true",
+        "So I\u2019ll tell you all about it now that\u2019s why I feel so blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I got to Louisville my gal she wasn\u2019t there",
+        "They sais she\u2019d gone with someone else it was more than I could bear",
+        "So I\u2019m heading out of this old town where to I don\u2019t much care",
+        "Louisville is eight miles back and I\u2019m on my way somewhere"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I always dreamed of some sweet day when she could be my wife",
+        "And we would settle down somewhere and lead a happy life",
+        "But now I know just how things are and how they\u2019d always be",
+        "So I know now Louisville just ain\u2019t the place for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Right now I\u2019m traveling down this road to get her off my mind",
+        "The thing I want to do is leave old Louisville behind",
+        "Who knows I may find happiness and one who fills the bill",
+        "A girl that\u2019s true and not like her that lives in Louisville"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

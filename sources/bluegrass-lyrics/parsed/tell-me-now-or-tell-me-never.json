@@ -1,0 +1,59 @@
+{
+  "slug": "tell-me-now-or-tell-me-never",
+  "title": "Tell Me Now Or Tell Me Never",
+  "source_url": "https://www.bluegrasslyrics.com/song/tell-me-now-or-tell-me-never/",
+  "raw_lyrics": "I\u2019m alone tonight my darling\nWith another you have gone\nYet you tell me that you love me\nThat you\u2019ll always be my own\n\nYet no promise do you give me\nWhen I beg you to be true\nYou just leave me sadly weepin\u2019\nBroken hearted over you\n\nTell me now or tell me never\nYou must answer me somehow\nFor I\u2019ve grown so tired of waiting\nWaiting for your solemn vow\n\nI have always loved you darling\nAnd I tried to make you care\nBut you\u2019ve run around with others\nLeaving my life cold and bare\n\nWith no promise for the future\nYou have left me here to cry\nYou must tell me little darling\nLet your conscience be your guide",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m alone tonight my darling",
+        "With another you have gone",
+        "Yet you tell me that you love me",
+        "That you\u2019ll always be my own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yet no promise do you give me",
+        "When I beg you to be true",
+        "You just leave me sadly weepin\u2019",
+        "Broken hearted over you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tell me now or tell me never",
+        "You must answer me somehow",
+        "For I\u2019ve grown so tired of waiting",
+        "Waiting for your solemn vow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have always loved you darling",
+        "And I tried to make you care",
+        "But you\u2019ve run around with others",
+        "Leaving my life cold and bare"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With no promise for the future",
+        "You have left me here to cry",
+        "You must tell me little darling",
+        "Let your conscience be your guide"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

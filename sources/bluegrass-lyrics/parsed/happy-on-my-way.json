@@ -1,0 +1,49 @@
+{
+  "slug": "happy-on-my-way",
+  "title": "Happy On My Way",
+  "source_url": "https://www.bluegrasslyrics.com/song/happy-on-my-way/",
+  "raw_lyrics": "I want to thank Jesus for the way that I feel\nI\u2019m so full of religion I just can\u2019t be still\nI want to sing it and shout it and let the people know\nThat I\u2019m saved by his mercy and I\u2019m ready to go\n\n(That\u2019s why I\u2019m Happy) Yes I\u2019m happy happy on my way\n(Rejoicing and singing) His praises everyday\nFor Jesus is near me and there he will stay\n(That\u2019s why I\u2019m happy) Yes I\u2019m happy happy on my way\n\nI just can\u2019t see why you sinners go on\nLivin\u2019 in sorrow doin\u2019 so wrong\nHidin\u2019 your face from the savior above\nDenying yourself his wonderful love\n\nWhat a wonderful feeling just to know I am saved\nAnd the Savior will guide me \u2019til I enter the grave\nAnd then he will greet me at heaven\u2019s open door\nAnd I\u2019ll live in glory with Him forever more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I want to thank Jesus for the way that I feel",
+        "I\u2019m so full of religion I just can\u2019t be still",
+        "I want to sing it and shout it and let the people know",
+        "That I\u2019m saved by his mercy and I\u2019m ready to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "(That\u2019s why I\u2019m Happy) Yes I\u2019m happy happy on my way",
+        "(Rejoicing and singing) His praises everyday",
+        "For Jesus is near me and there he will stay",
+        "(That\u2019s why I\u2019m happy) Yes I\u2019m happy happy on my way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I just can\u2019t see why you sinners go on",
+        "Livin\u2019 in sorrow doin\u2019 so wrong",
+        "Hidin\u2019 your face from the savior above",
+        "Denying yourself his wonderful love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What a wonderful feeling just to know I am saved",
+        "And the Savior will guide me \u2019til I enter the grave",
+        "And then he will greet me at heaven\u2019s open door",
+        "And I\u2019ll live in glory with Him forever more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

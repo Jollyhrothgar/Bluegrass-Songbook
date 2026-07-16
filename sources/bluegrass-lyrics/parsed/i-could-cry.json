@@ -1,0 +1,39 @@
+{
+  "slug": "i-could-cry",
+  "title": "I Could Cry",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-could-cry/",
+  "raw_lyrics": "Dear when I think about you I could cry\nKnowing I have let love go by\nI\u2019ll just stay at home and always wonder why\nEvery time I see your picture I could cry\n\nI could cry an ocean of tears\nBut what good would it do\nI\u2019ll just keep your memory as years go gy\nBut when your name\u2019s mentioned darling I could cry\n\nI don\u2019t know what this cruel world holds for me\nBut it really doesn\u2019t matter now you see\nFor when day is done and twilight hovers night\nThen I miss your arms around me I could cry",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dear when I think about you I could cry",
+        "Knowing I have let love go by",
+        "I\u2019ll just stay at home and always wonder why",
+        "Every time I see your picture I could cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I could cry an ocean of tears",
+        "But what good would it do",
+        "I\u2019ll just keep your memory as years go gy",
+        "But when your name\u2019s mentioned darling I could cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t know what this cruel world holds for me",
+        "But it really doesn\u2019t matter now you see",
+        "For when day is done and twilight hovers night",
+        "Then I miss your arms around me I could cry"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

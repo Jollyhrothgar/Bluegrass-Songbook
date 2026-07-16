@@ -1,0 +1,47 @@
+{
+  "slug": "in-my-tennessee-mountain-home",
+  "title": "In My Tennessee Mountain Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-my-tennessee-mountain-home/",
+  "raw_lyrics": "Sittin\u2019 on the front porch on a summer afternoon\nIn a straight back chair on two legs, leaned against the wall\nWatch the kids a-playin\u2019 with June bugs on a string\nAnd chase the glowin\u2019 fireflies when evening shadows fall.\n\nIn my Tennessee mountain home, life is peaceful as a baby\u2019s sigh\nIn my Tennessee mountain home, crickets sing in the fields nearby.\n\nHoneysuckle vine clings to the fence upon the lane\nTheir fragrance makes the summer wind so sweet\nAnd on a distant hilltop an eagle spreads its wings\nAnd a songbird on a fencepost sings a melody\n\nWalking home from church on sunday with the one you love\nJust laughin\u2019, talkin\u2019, making future plans\nAnd when the folks aren\u2019t looking you might steal a kiss or two\nSittin\u2019 in the porch swing holdin\u2019 hands.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sittin\u2019 on the front porch on a summer afternoon",
+        "In a straight back chair on two legs, leaned against the wall",
+        "Watch the kids a-playin\u2019 with June bugs on a string",
+        "And chase the glowin\u2019 fireflies when evening shadows fall."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "In my Tennessee mountain home, life is peaceful as a baby\u2019s sigh",
+        "In my Tennessee mountain home, crickets sing in the fields nearby."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Honeysuckle vine clings to the fence upon the lane",
+        "Their fragrance makes the summer wind so sweet",
+        "And on a distant hilltop an eagle spreads its wings",
+        "And a songbird on a fencepost sings a melody"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Walking home from church on sunday with the one you love",
+        "Just laughin\u2019, talkin\u2019, making future plans",
+        "And when the folks aren\u2019t looking you might steal a kiss or two",
+        "Sittin\u2019 in the porch swing holdin\u2019 hands."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

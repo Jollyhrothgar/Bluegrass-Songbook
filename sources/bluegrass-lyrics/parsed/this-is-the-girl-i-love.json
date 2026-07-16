@@ -1,0 +1,40 @@
+{
+  "slug": "this-is-the-girl-i-love",
+  "title": "This Is The Girl I Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/this-is-the-girl-i-love/",
+  "raw_lyrics": "In a church on a mountain far far away\nWe vowed we\u2019d never part\nYou kept your promise to honor and obey\nBut then I broke your heart\n\nIf you could see this misery\nI know that you\u2019d come home to me\nThere\u2019s no one else I\u2019d rather have\nTo have your love I\u2019d be so proud to say\nThis is the girl I love\n\nWhat can I do dear, what can I say\nTo make you change your mind\nIf I could only have another chance\nI\u2019d never leave you behind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a church on a mountain far far away",
+        "We vowed we\u2019d never part",
+        "You kept your promise to honor and obey",
+        "But then I broke your heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "If you could see this misery",
+        "I know that you\u2019d come home to me",
+        "There\u2019s no one else I\u2019d rather have",
+        "To have your love I\u2019d be so proud to say",
+        "This is the girl I love"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "What can I do dear, what can I say",
+        "To make you change your mind",
+        "If I could only have another chance",
+        "I\u2019d never leave you behind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

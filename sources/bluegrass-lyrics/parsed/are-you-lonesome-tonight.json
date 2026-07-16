@@ -1,0 +1,49 @@
+{
+  "slug": "are-you-lonesome-tonight",
+  "title": "Are You Lonesome Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/are-you-lonesome-tonight/",
+  "raw_lyrics": "Are you lonesome tonight? Do you miss me I say?\nAre you sorry we drifted apart?\nDoes your memories cling to that bright summer day\nWhen I kissed you and called you sweetheart?\n\nLike the rose on the vine I am clinging to you\nAs I did when we drifted apart\nI am wishing you back to that little shack\nWhere I kissed you and called you sweetheart\n\nDoes the chair in your parlor seem empty and bare?\nDo you miss me and wish I was there?\nIs your heart filled with pain? Shall I come back again?\nTell me, darling, are you lonesome tonight?\n\nI have counted the days, I\u2019ve counted the nights\nI\u2019ve counted the months and the years\nI have counted on you since we drifted apart\nTell me, darling, are you lonesome tonight?",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Are you lonesome tonight? Do you miss me I say?",
+        "Are you sorry we drifted apart?",
+        "Does your memories cling to that bright summer day",
+        "When I kissed you and called you sweetheart?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Like the rose on the vine I am clinging to you",
+        "As I did when we drifted apart",
+        "I am wishing you back to that little shack",
+        "Where I kissed you and called you sweetheart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Does the chair in your parlor seem empty and bare?",
+        "Do you miss me and wish I was there?",
+        "Is your heart filled with pain? Shall I come back again?",
+        "Tell me, darling, are you lonesome tonight?"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have counted the days, I\u2019ve counted the nights",
+        "I\u2019ve counted the months and the years",
+        "I have counted on you since we drifted apart",
+        "Tell me, darling, are you lonesome tonight?"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

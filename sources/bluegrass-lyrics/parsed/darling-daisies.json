@@ -1,0 +1,49 @@
+{
+  "slug": "darling-daisies",
+  "title": "Darling Daisies",
+  "source_url": "https://www.bluegrasslyrics.com/song/darling-daisies/",
+  "raw_lyrics": "When first I met my darling daisies\nDown by the garden wall\nI was walking along the street so shady\nI was going for a twilight call\n\nI love to sing and dance among the roses\nDown by the garden wall\nTis there I\u2019d like to meet my daisies\nWhen I make a twilight call\n\nShe was sleeping in a bed of roses\nDreaming of the by and by\nWhile the little birds around were singing\nUp above the branches so high\n\nIf you want to see a bright eyed beauty\nBright as the stars that shine\nJust come and go with me some evening\nTo see this pretty girl of mine",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When first I met my darling daisies",
+        "Down by the garden wall",
+        "I was walking along the street so shady",
+        "I was going for a twilight call"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I love to sing and dance among the roses",
+        "Down by the garden wall",
+        "Tis there I\u2019d like to meet my daisies",
+        "When I make a twilight call"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was sleeping in a bed of roses",
+        "Dreaming of the by and by",
+        "While the little birds around were singing",
+        "Up above the branches so high"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you want to see a bright eyed beauty",
+        "Bright as the stars that shine",
+        "Just come and go with me some evening",
+        "To see this pretty girl of mine"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

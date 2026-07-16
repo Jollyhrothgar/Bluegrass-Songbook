@@ -1,0 +1,49 @@
+{
+  "slug": "blue-skies-and-teardrops",
+  "title": "Blue Skies And Teardrops",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-skies-and-teardrops/",
+  "raw_lyrics": "Blue skies and teardrops got me down\nAnd the wheat straw in the wind keeps blowing round and round.\nMiles full of emptiness is all I\u2019ve found\nAnd the road says you\u2019ve got to move along.\n\nDoes anybody passing by know how I feel?\nAs another morning settles like the dust behind my heels\nIn the shadow of a restless soul born on wheels\nI\u2019m bound to sing the highway\u2019s in the song.\n\nNow the wandering song within me is a song I\u2019ve learned\nWhen I heard the freight trains whistle and my head was turned\nThe carefree chorus of that liner as she burned\nNow the lineman says you\u2019ve got to move along.\n\nNow I left the years and miles lying where they fell\nAmong the book my soul was written and the tales my shoes could tell\nI left them lying there for someone else to tell\nAnd the road says you\u2019ve got to move along.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Blue skies and teardrops got me down",
+        "And the wheat straw in the wind keeps blowing round and round.",
+        "Miles full of emptiness is all I\u2019ve found",
+        "And the road says you\u2019ve got to move along."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Does anybody passing by know how I feel?",
+        "As another morning settles like the dust behind my heels",
+        "In the shadow of a restless soul born on wheels",
+        "I\u2019m bound to sing the highway\u2019s in the song."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the wandering song within me is a song I\u2019ve learned",
+        "When I heard the freight trains whistle and my head was turned",
+        "The carefree chorus of that liner as she burned",
+        "Now the lineman says you\u2019ve got to move along."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I left the years and miles lying where they fell",
+        "Among the book my soul was written and the tales my shoes could tell",
+        "I left them lying there for someone else to tell",
+        "And the road says you\u2019ve got to move along."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -21,6 +21,7 @@ docs/
 │   ├── editor.js       # Song editor, ChordPro conversion
 │   ├── flags.js        # Report Issue feature (creates GitHub issues)
 │   ├── song-request.js # Song request feature (frictionless)
+│   ├── superuser-request.js # Super-user request modal and submission
 │   ├── collections.js  # Landing page collection definitions
 │   ├── analytics.js    # Behavioral analytics tracking
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
@@ -101,6 +102,7 @@ let userLists = [];             // Custom user lists (via supabase-auth.js)
 | Function | Purpose |
 |----------|---------|
 | `loadIndex()` | Fetch and parse `data/index.jsonl`, build songGroups |
+| `refreshPendingSongs()` | Re-fetch pending songs from Supabase, merge into allSongs |
 | `search(query)` | Filter songs by query, chords, progression |
 | `renderResults(songs)` | Display search results list (with version badges) |
 | `openSong(songId)` | Load and display a song |
@@ -451,8 +453,20 @@ Handles authentication and cloud sync. Key exports:
 | `fetchGroupVotes(groupId)` | Get vote counts for versions |
 | `castVote(songId, groupId)` | Vote for a song version |
 | `removeVote(songId)` | Remove user's vote |
+| `isTrustedUser()` | Check if current user has trusted status |
+| `savePendingSong(song)` | Save song to pending_songs table |
 
-## Recent Features (Jan 2026)
+## Recent Features (Jan-Feb 2026)
+
+### Trusted User Editing
+
+Trusted users can make instant edits without waiting for approval:
+
+- `isTrustedUser()` checks the `trusted_users` table
+- Trusted users see "Save Changes" instead of "Submit for Review"
+- Edits saved to `pending_songs` table, visible immediately
+- `refreshPendingSongs()` merges pending songs into `allSongs`
+- Regular users can request trusted status via super-user request modal
 
 ### Focus Mode
 

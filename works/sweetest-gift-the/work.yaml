@@ -1,0 +1,11 @@
+id: sweetest-gift-the
+title: Sweetest Gift, The
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/sweetest-gift-the/
+      imported_at: '2026-02-08'

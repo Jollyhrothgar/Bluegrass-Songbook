@@ -1,0 +1,56 @@
+{
+  "slug": "loafers-glory",
+  "title": "Loafer\u2019s Glory",
+  "source_url": "https://www.bluegrasslyrics.com/song/loafers-glory/",
+  "raw_lyrics": "There came a man from Tennessee\nI must tell the story\nHe built a house beside the road And called it Loafer\u2019s Glory\n\nGet away, get away, get away I say\nDon\u2019t trade at Loafer\u2019s Glory\n\nHe cheated me of house and land\nAt trading he was able\nHe kept a dog to lick the pots\nAnd a goat to clear the table\n\nHis wife Jan had one left hand\nShe was mighty savvy\nShe hoed her taters every day\nAnd wormed her rows of cabbage\n\nHis brooding hen had ceased to lay\nHe thought he would help her\nHe ran her backwards up the hill\nAnd fed her corn and pepper",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There came a man from Tennessee",
+        "I must tell the story",
+        "He built a house beside the road And called it Loafer\u2019s Glory"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Get away, get away, get away I say",
+        "Don\u2019t trade at Loafer\u2019s Glory"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He cheated me of house and land",
+        "At trading he was able",
+        "He kept a dog to lick the pots",
+        "And a goat to clear the table"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His wife Jan had one left hand",
+        "She was mighty savvy",
+        "She hoed her taters every day",
+        "And wormed her rows of cabbage"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His brooding hen had ceased to lay",
+        "He thought he would help her",
+        "He ran her backwards up the hill",
+        "And fed her corn and pepper"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

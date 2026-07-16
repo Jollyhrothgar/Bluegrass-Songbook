@@ -1,0 +1,11 @@
+id: big-train-from-memphis
+title: Big Train From Memphis
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/big-train-from-memphis/
+      imported_at: '2026-02-08'

@@ -1,0 +1,54 @@
+{
+  "slug": "blue-night",
+  "title": "Blue Night",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-night/",
+  "raw_lyrics": "Blue night I got you on my mind\nBlue night I can\u2019t keep from crying\nYou met someone that was new\nYou quit someone that you knew was true\nBlue night I got you on my mind\n\nBlue night blue as I can be\nI don\u2019t know what\u2019ll become of me\nWhere we used to walk I walk alone\nWith an aching heart because my love is gone\nBlue night blue as I can be\n\nBlue night \u2019cause I\u2019m all alone\nI used to call you on the telephone\nI used to call and it made you glad\nNow I call and it makes you mad\nBlue night \u2019cause I\u2019m all alone\n\nBlue night all by myself\nSince you put me on that shelf\nThere\u2019s just one thing that you must know\nYou\u2019re gonna reap just what you sow\nBlue night, all by myself\nBlue night, all by myself",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Blue night I got you on my mind",
+        "Blue night I can\u2019t keep from crying",
+        "You met someone that was new",
+        "You quit someone that you knew was true",
+        "Blue night I got you on my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Blue night blue as I can be",
+        "I don\u2019t know what\u2019ll become of me",
+        "Where we used to walk I walk alone",
+        "With an aching heart because my love is gone",
+        "Blue night blue as I can be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Blue night \u2019cause I\u2019m all alone",
+        "I used to call you on the telephone",
+        "I used to call and it made you glad",
+        "Now I call and it makes you mad",
+        "Blue night \u2019cause I\u2019m all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Blue night all by myself",
+        "Since you put me on that shelf",
+        "There\u2019s just one thing that you must know",
+        "You\u2019re gonna reap just what you sow",
+        "Blue night, all by myself",
+        "Blue night, all by myself"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

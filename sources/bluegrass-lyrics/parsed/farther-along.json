@@ -1,0 +1,39 @@
+{
+  "slug": "farther-along",
+  "title": "Farther Along",
+  "source_url": "https://www.bluegrasslyrics.com/song/farther-along/",
+  "raw_lyrics": "Farther along we\u2019ll know more about it\nFarther along we\u2019ll understand why\nCheer up my brother live in the sunshine\nWe\u2019ll understand it all by and by\n\nTempted and tried will oft make you wonder\nWhy it should be thus all the day long\nWhile there are others living about us\nNever molested though in the wrong\n\nWhen death has found and taken our loved ones\nLeaving our home so lonely and dreary\nThen do we wonder why others prosper\nLiving so wicked year after year",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Farther along we\u2019ll know more about it",
+        "Farther along we\u2019ll understand why",
+        "Cheer up my brother live in the sunshine",
+        "We\u2019ll understand it all by and by"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tempted and tried will oft make you wonder",
+        "Why it should be thus all the day long",
+        "While there are others living about us",
+        "Never molested though in the wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When death has found and taken our loved ones",
+        "Leaving our home so lonely and dreary",
+        "Then do we wonder why others prosper",
+        "Living so wicked year after year"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

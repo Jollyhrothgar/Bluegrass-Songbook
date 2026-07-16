@@ -1,0 +1,39 @@
+{
+  "slug": "those-memories",
+  "title": "Those Memories",
+  "source_url": "https://www.bluegrasslyrics.com/song/those-memories/",
+  "raw_lyrics": "In dreams of you my body trembles\nI wake up and call your name\nBut you\u2019re not there and I\u2019m so lonely\nWithout your love I\u2019ll go insane\n\nThose memories of you still haunt me\nEvery night when I lay down\nI\u2019ll always love you little darling\nUntil the day they lay me down\n\nI close my eyes and you\u2019re there with me\nYour kiss I feel your face I see\nIt\u2019s not your lips now that drive me crazy\nIt\u2019s just your haunting memory",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In dreams of you my body trembles",
+        "I wake up and call your name",
+        "But you\u2019re not there and I\u2019m so lonely",
+        "Without your love I\u2019ll go insane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Those memories of you still haunt me",
+        "Every night when I lay down",
+        "I\u2019ll always love you little darling",
+        "Until the day they lay me down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I close my eyes and you\u2019re there with me",
+        "Your kiss I feel your face I see",
+        "It\u2019s not your lips now that drive me crazy",
+        "It\u2019s just your haunting memory"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

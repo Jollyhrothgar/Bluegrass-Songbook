@@ -1,0 +1,11 @@
+id: its-a-long-long-road
+title: It’s A Long Long Road
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/its-a-long-long-road/
+      imported_at: '2026-02-08'

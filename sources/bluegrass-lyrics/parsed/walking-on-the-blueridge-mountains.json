@@ -1,0 +1,49 @@
+{
+  "slug": "walking-on-the-blueridge-mountains",
+  "title": "Walking On The Blueridge Mountains",
+  "source_url": "https://www.bluegrasslyrics.com/song/walking-on-the-blueridge-mountains/",
+  "raw_lyrics": "Soon I\u2019ll reach the old log cabin\nIn the distance up ahead\nI\u2019ll be home in the blue ridge mountains\nWhere I\u2019ll rest my weary head\n\nWalkin on the blue ridge mountains\nWalkin on walkin on\nWalkin on the blue ridge mountains\nWalkin to my blue ridge home\n\nI\u2019ve been lonely for my darlin\nLonely like those lonesome pines\nGrowin tall on the blue ridge mountains\nRound the old home place of mine\n\nSoon I\u2019ll see my friends and loved ones\nSome remain some are gone\nTo the land that\u2019s clear and bluer\nThen it is round my blue ridge home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Soon I\u2019ll reach the old log cabin",
+        "In the distance up ahead",
+        "I\u2019ll be home in the blue ridge mountains",
+        "Where I\u2019ll rest my weary head"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Walkin on the blue ridge mountains",
+        "Walkin on walkin on",
+        "Walkin on the blue ridge mountains",
+        "Walkin to my blue ridge home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been lonely for my darlin",
+        "Lonely like those lonesome pines",
+        "Growin tall on the blue ridge mountains",
+        "Round the old home place of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Soon I\u2019ll see my friends and loved ones",
+        "Some remain some are gone",
+        "To the land that\u2019s clear and bluer",
+        "Then it is round my blue ridge home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

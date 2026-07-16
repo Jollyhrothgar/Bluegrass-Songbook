@@ -1,0 +1,49 @@
+{
+  "slug": "you-can-have-her",
+  "title": "You Can Have Her",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-can-have-her/",
+  "raw_lyrics": "You can have her I don\u2019t want her\nShe didn\u2019t love me anyway\nShe only wanted someone to play with\nBut all I wanted was love to stay\n\nThe girl I loved she up and left me\nShe run away with my best friend\nShe comes in around midnight\nAnd then I come she\u2019s gone again\n\nWell if you\u2019re in love with the wrong woman\nThere\u2019s only one thing that you can do\nJust dig a hole and jump right in it\nThen pull the ground in over you\n\nNow life is mighty empty\nWithout love to call you own\nI\u2019d rather have love that I can cling to\nThat to has the world and all it\u2019s gold",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You can have her I don\u2019t want her",
+        "She didn\u2019t love me anyway",
+        "She only wanted someone to play with",
+        "But all I wanted was love to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The girl I loved she up and left me",
+        "She run away with my best friend",
+        "She comes in around midnight",
+        "And then I come she\u2019s gone again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well if you\u2019re in love with the wrong woman",
+        "There\u2019s only one thing that you can do",
+        "Just dig a hole and jump right in it",
+        "Then pull the ground in over you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now life is mighty empty",
+        "Without love to call you own",
+        "I\u2019d rather have love that I can cling to",
+        "That to has the world and all it\u2019s gold"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

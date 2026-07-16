@@ -1,0 +1,39 @@
+{
+  "slug": "crying-holy-to-the-lord",
+  "title": "Crying Holy To The Lord",
+  "source_url": "https://www.bluegrasslyrics.com/song/crying-holy-to-the-lord/",
+  "raw_lyrics": "Crying holy unto the Lord\nCrying holy unto the Lord\nIf I could I surely would\nStand on the rock where Moses stood\n\nLord I ain\u2019t no stranger now\nLord I ain\u2019t no stranger now\nI\u2019ve been introduced to the Father and the Son\nLord I ain\u2019t no stranger now\n\nSinners run hide your face\nSinners run hide your face\nSinners run to the Lord and hide your face\nLord cried out \u201cNo hiding place\u201d",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Crying holy unto the Lord",
+        "Crying holy unto the Lord",
+        "If I could I surely would",
+        "Stand on the rock where Moses stood"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lord I ain\u2019t no stranger now",
+        "Lord I ain\u2019t no stranger now",
+        "I\u2019ve been introduced to the Father and the Son",
+        "Lord I ain\u2019t no stranger now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sinners run hide your face",
+        "Sinners run hide your face",
+        "Sinners run to the Lord and hide your face",
+        "Lord cried out \u201cNo hiding place\u201d"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "dont-cheat-in-our-hometown",
+  "title": "Don\u2019t Cheat In Our Hometown",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-cheat-in-our-hometown/",
+  "raw_lyrics": "Tonight my heart is beatin\u2019 low and my head is bowed\nYou\u2019ve been seen with my best friend on the other side of town\nI don\u2019t mind the waitin\u2019 don\u2019t mind the runnin\u2019 around\nBut if you\u2019re gonna cheat on me don\u2019t cheat in our home town.\n\nHow can I stand up to my friends and look em\u2019 in the eye\nAdmit the questions that I know would be nothin\u2019 but lies\nYou spend all your pastime makin\u2019 me a clown\nBut if you\u2019re gonna cheat on me don\u2019t cheat in our home town.\n\nNow there are no secrets in this little country town\nEvery one knows every one for miles and miles around\nYour bright eyes and your sweet smile are drivin\u2019 me insane\nYou think it\u2019s smart to break my heart and run down my name.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight my heart is beatin\u2019 low and my head is bowed",
+        "You\u2019ve been seen with my best friend on the other side of town",
+        "I don\u2019t mind the waitin\u2019 don\u2019t mind the runnin\u2019 around",
+        "But if you\u2019re gonna cheat on me don\u2019t cheat in our home town."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "How can I stand up to my friends and look em\u2019 in the eye",
+        "Admit the questions that I know would be nothin\u2019 but lies",
+        "You spend all your pastime makin\u2019 me a clown",
+        "But if you\u2019re gonna cheat on me don\u2019t cheat in our home town."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now there are no secrets in this little country town",
+        "Every one knows every one for miles and miles around",
+        "Your bright eyes and your sweet smile are drivin\u2019 me insane",
+        "You think it\u2019s smart to break my heart and run down my name."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

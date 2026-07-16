@@ -8,6 +8,8 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 let supabaseClient = null;
 let currentUser = null;
 let isInitialized = false;
+let trustedUserCache = null;
+let adminUserCache = null;
 
 // Callbacks for state changes
 const onAuthChangeCallbacks = [];
@@ -27,6 +29,9 @@ function initSupabase() {
     // Listen for auth state changes
     supabaseClient.auth.onAuthStateChange((event, session) => {
         currentUser = session?.user || null;
+
+        // Clear trusted user cache on auth change
+        clearTrustedUserCache();
 
         // Notify all registered callbacks
         onAuthChangeCallbacks.forEach(callback => {
@@ -77,6 +82,83 @@ async function signInWithGoogle() {
     return { data, error };
 }
 
+// Sign up with email/password
+async function signUpWithEmail(email, password) {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Auth not available' } };
+    }
+
+    const redirectUrl = window.location.origin + window.location.pathname;
+
+    const { data, error } = await supabaseClient.auth.signUp({
+        email,
+        password,
+        options: {
+            emailRedirectTo: redirectUrl
+        }
+    });
+
+    if (error) {
+        console.error('[Auth] Sign up error:', error);
+    }
+
+    return { data, error };
+}
+
+// Sign in with email/password
+async function signInWithEmail(email, password) {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Auth not available' } };
+    }
+
+    const { data, error } = await supabaseClient.auth.signInWithPassword({
+        email,
+        password
+    });
+
+    if (error) {
+        console.error('[Auth] Sign in error:', error);
+    }
+
+    return { data, error };
+}
+
+// Send password reset email
+async function resetPassword(email) {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Auth not available' } };
+    }
+
+    const redirectUrl = window.location.origin + window.location.pathname;
+
+    const { data, error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+        redirectTo: redirectUrl
+    });
+
+    if (error) {
+        console.error('[Auth] Reset password error:', error);
+    }
+
+    return { data, error };
+}
+
+// Update password (for logged-in user, e.g. after reset link)
+async function updatePassword(newPassword) {
+    if (!supabaseClient) {
+        return { data: null, error: { message: 'Auth not available' } };
+    }
+
+    const { data, error } = await supabaseClient.auth.updateUser({
+        password: newPassword
+    });
+
+    if (error) {
+        console.error('[Auth] Update password error:', error);
+    }
+
+    return { data, error };
+}
+
 // Sign out
 async function signOut() {
     if (!supabaseClient) return { error: null };
@@ -93,6 +175,82 @@ function getUser() {
 // Check if user is logged in
 function isLoggedIn() {
     return currentUser !== null;
+}
+
+// Check if current user is a trusted user (can make instant edits)
+async function isTrustedUser() {
+    if (!supabaseClient || !currentUser) return false;
+
+    // Return cached value if available
+    if (trustedUserCache !== null) return trustedUserCache;
+
+    try {
+        const { data, error } = await supabaseClient.rpc('is_trusted_user');
+        if (error) {
+            console.error('Error checking trusted user status:', error);
+            return false;
+        }
+        trustedUserCache = data === true;
+        return trustedUserCache;
+    } catch (err) {
+        console.error('Error checking trusted user status:', err);
+        return false;
+    }
+}
+
+// Check if current user is an admin (can delete songs)
+async function isAdmin() {
+    if (!supabaseClient || !currentUser) return false;
+
+    // Return cached value if available
+    if (adminUserCache !== null) return adminUserCache;
+
+    try {
+        const { data, error } = await supabaseClient.rpc('is_admin');
+        if (error) {
+            console.error('Error checking admin status:', error);
+            return false;
+        }
+        adminUserCache = data === true;
+        return adminUserCache;
+    } catch (err) {
+        console.error('Error checking admin status:', err);
+        return false;
+    }
+}
+
+// Delete a song (admin only, soft delete)
+async function deleteSong(songId, reason = null) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('delete_song', {
+            p_song_id: songId,
+            p_reason: reason
+        });
+
+        if (error) {
+            console.error('Error deleting song:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error deleting song:', err);
+        return { data: null, error: err };
+    }
+}
+
+// Clear trusted user cache (called on auth state change)
+function clearTrustedUserCache() {
+    trustedUserCache = null;
+    adminUserCache = null;
 }
 
 // ============================================
@@ -310,30 +468,37 @@ async function fetchCloudLists() {
 
     const { data: items, error: itemsError } = await supabaseClient
         .from('user_list_items')
-        .select('list_id, song_id, position')
+        .select('list_id, song_id, position, metadata')
         .in('list_id', listIds)
         .order('position', { ascending: true });
 
     if (itemsError) {
         console.error('Error fetching list items:', itemsError);
-        return { data: lists.map(l => ({ ...l, songs: [] })), error: itemsError };
+        return { data: lists.map(l => ({ ...l, songs: [], songMetadata: {} })), error: itemsError };
     }
 
-    // Group items by list
+    // Group items by list (songs array and metadata map)
     const itemsByList = {};
+    const metadataByList = {};
     items.forEach(item => {
         if (!itemsByList[item.list_id]) {
             itemsByList[item.list_id] = [];
+            metadataByList[item.list_id] = {};
         }
         itemsByList[item.list_id].push(item.song_id);
+        // Only store metadata if it has content
+        if (item.metadata && Object.keys(item.metadata).length > 0) {
+            metadataByList[item.list_id][item.song_id] = item.metadata;
+        }
     });
 
-    // Combine lists with their songs
+    // Combine lists with their songs and metadata
     const result = lists.map(list => ({
         id: list.id,
         name: list.name,
         position: list.position,
-        songs: itemsByList[list.id] || []
+        songs: itemsByList[list.id] || [],
+        songMetadata: metadataByList[list.id] || {}
     }));
 
     return { data: result, error: null };
@@ -409,6 +574,25 @@ async function renameCloudList(listId, newName) {
     return { error };
 }
 
+// Update positions for all songs in a list (for reorder sync)
+async function updateCloudListPositions(listId, songIds) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    const upsertData = songIds.map((songId, i) => ({
+        list_id: listId,
+        song_id: songId,
+        position: i
+    }));
+
+    const { error } = await supabaseClient
+        .from('user_list_items')
+        .upsert(upsertData, { onConflict: 'list_id,song_id' });
+
+    return { error };
+}
+
 // Delete a list (tries by ID first, then by name as fallback)
 async function deleteCloudList(listId, listName = null) {
     if (!supabaseClient || !currentUser) {
@@ -442,8 +626,8 @@ async function deleteCloudList(listId, listName = null) {
     return { error };
 }
 
-// Add song to a list
-async function addToCloudList(listId, songId) {
+// Add song to a list (with optional metadata)
+async function addToCloudList(listId, songId, metadata = null) {
     if (!supabaseClient || !currentUser) {
         return { error: { message: 'Not logged in' } };
     }
@@ -458,17 +642,45 @@ async function addToCloudList(listId, songId) {
 
     const nextPosition = existing && existing.length > 0 ? existing[0].position + 1 : 0;
 
+    const insertData = {
+        list_id: listId,
+        song_id: songId,
+        position: nextPosition
+    };
+
+    // Include metadata if provided
+    if (metadata && Object.keys(metadata).length > 0) {
+        insertData.metadata = metadata;
+    }
+
     const { error } = await supabaseClient
         .from('user_list_items')
-        .upsert({
-            list_id: listId,
-            song_id: songId,
-            position: nextPosition
-        }, {
+        .upsert(insertData, {
             onConflict: 'list_id,song_id'
         });
 
     return { error };
+}
+
+// Update metadata for a list item
+async function updateListItemMetadata(listId, songId, metadata) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    // Use the RPC function for proper ownership check
+    const { data, error } = await supabaseClient.rpc('update_list_item_metadata', {
+        p_list_id: listId,
+        p_song_id: songId,
+        p_metadata: metadata
+    });
+
+    if (error) {
+        console.error('Error updating list item metadata:', error);
+        return { error };
+    }
+
+    return { data, error: null };
 }
 
 // Remove song from a list
@@ -584,28 +796,34 @@ async function fetchFollowedLists() {
         return { data: [], error: listsError };
     }
 
-    // Fetch all list items
+    // Fetch all list items (including metadata)
     const { data: items, error: itemsError } = await supabaseClient
         .from('user_list_items')
-        .select('list_id, song_id, position')
+        .select('list_id, song_id, position, metadata')
         .in('list_id', listIds)
         .order('position', { ascending: true });
 
     if (itemsError) {
         console.error('Error fetching followed list items:', itemsError);
-        return { data: lists.map(l => ({ ...l, songs: [], isFollowed: true })), error: itemsError };
+        return { data: lists.map(l => ({ ...l, songs: [], songMetadata: {}, isFollowed: true })), error: itemsError };
     }
 
-    // Group items by list
+    // Group items by list (songs array and metadata map)
     const itemsByList = {};
+    const metadataByList = {};
     items.forEach(item => {
         if (!itemsByList[item.list_id]) {
             itemsByList[item.list_id] = [];
+            metadataByList[item.list_id] = {};
         }
         itemsByList[item.list_id].push(item.song_id);
+        // Only store metadata if it has content
+        if (item.metadata && Object.keys(item.metadata).length > 0) {
+            metadataByList[item.list_id][item.song_id] = item.metadata;
+        }
     });
 
-    // Combine lists with their songs and mark as followed
+    // Combine lists with their songs, metadata, and mark as followed
     const result = lists.map(list => ({
         id: list.id,
         name: list.name,
@@ -613,6 +831,7 @@ async function fetchFollowedLists() {
         owners: list.owners || [],
         orphaned_at: list.orphaned_at,
         songs: itemsByList[list.id] || [],
+        songMetadata: metadataByList[list.id] || {},
         isFollowed: true,
         isOrphaned: !!list.orphaned_at
     }));
@@ -781,7 +1000,8 @@ async function syncListsToCloud(localLists) {
     // Old favorites list names to clean up
     const oldFavoritesNames = ['❤️ Favorites', '❤️ favorites', '♥ Favorites'];
 
-    // Create a map of cloud lists by name for matching
+    // Create maps of cloud lists by ID and name for matching
+    const cloudById = {};
     const cloudByName = {};
     const listsToDelete = [];
     cloudLists.forEach(list => {
@@ -789,6 +1009,7 @@ async function syncListsToCloud(localLists) {
         if (oldFavoritesNames.includes(list.name)) {
             listsToDelete.push(list);
         }
+        cloudById[list.id] = list;
         cloudByName[list.name] = list;
     });
 
@@ -817,25 +1038,40 @@ async function syncListsToCloud(localLists) {
             continue;
         }
 
-        const cloudMatch = cloudByName[localList.name];
+        // Match by cloudId first (stable across renames), then by name
+        const cloudMatch = (localList.cloudId && cloudById[localList.cloudId])
+            || cloudByName[localList.name];
 
         if (cloudMatch) {
-            // Merge songs (union)
-            const mergedSongs = [...new Set([...localList.songs, ...cloudMatch.songs])];
+            // Local order is source of truth; append cloud-only songs at end
+            const cloudOnlySongs = cloudMatch.songs.filter(s => !localList.songs.includes(s));
+            const mergedSongs = [...localList.songs, ...cloudOnlySongs];
+
+            // Merge metadata (local takes precedence for conflicts, cloud fills gaps)
+            const mergedMetadata = {
+                ...(cloudMatch.songMetadata || {}),
+                ...(localList.songMetadata || {})
+            };
 
             // Add any local-only songs to cloud
             const localOnlySongs = localList.songs.filter(s => !cloudMatch.songs.includes(s));
             for (const songId of localOnlySongs) {
-                await addToCloudList(cloudMatch.id, songId);
+                const metadata = localList.songMetadata?.[songId] || null;
+                await addToCloudList(cloudMatch.id, songId, metadata);
             }
+
+            // Sync positions to cloud to preserve local ordering
+            await updateCloudListPositions(cloudMatch.id, mergedSongs);
 
             mergedLists.push({
                 id: cloudMatch.id,
                 name: cloudMatch.name,
                 position: cloudMatch.position,
-                songs: mergedSongs
+                songs: mergedSongs,
+                songMetadata: mergedMetadata
             });
-            delete cloudByName[localList.name];
+            delete cloudByName[cloudMatch.name];
+            delete cloudById[cloudMatch.id];
         } else if (localList.cloudId) {
             // List has a cloudId but doesn't exist in cloud anymore - it was deleted
             continue;
@@ -847,16 +1083,18 @@ async function syncListsToCloud(localLists) {
                 continue;
             }
 
-            // Add songs to the new list
+            // Add songs to the new list with their metadata
             for (const songId of localList.songs) {
-                await addToCloudList(newList.id, songId);
+                const metadata = localList.songMetadata?.[songId] || null;
+                await addToCloudList(newList.id, songId, metadata);
             }
 
             mergedLists.push({
                 id: newList.id,
                 name: localList.name,
                 position: newList.position,
-                songs: localList.songs
+                songs: localList.songs,
+                songMetadata: localList.songMetadata || {}
             });
         }
     }
@@ -1189,9 +1427,18 @@ window.SupabaseAuth = {
     init: initSupabase,
     onAuthChange,
     signInWithGoogle,
+    signUpWithEmail,
+    signInWithEmail,
+    resetPassword,
+    updatePassword,
     signOut,
     getUser,
     isLoggedIn,
+    isTrustedUser,
+    isAdmin,
+    deleteSong,
+    // Expose supabase client for direct access (e.g., pending_songs)
+    get supabase() { return supabaseClient; },
     // Favorites
     fetchCloudFavorites,
     addCloudFavorite,
@@ -1207,6 +1454,8 @@ window.SupabaseAuth = {
     deleteCloudList,
     addToCloudList,
     removeFromCloudList,
+    updateCloudListPositions,
+    updateListItemMetadata,
     syncListsToCloud,
     // Lists (following)
     fetchFollowedLists,

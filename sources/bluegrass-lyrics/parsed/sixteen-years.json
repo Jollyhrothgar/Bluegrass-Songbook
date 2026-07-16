@@ -1,0 +1,39 @@
+{
+  "slug": "sixteen-years",
+  "title": "Sixteen Years",
+  "source_url": "https://www.bluegrasslyrics.com/song/sixteen-years/",
+  "raw_lyrics": "When we were young we played together\nThat\u2019s the way our love began\nNow you\u2019re gone dear with another\nNow you\u2019re no more than just a friend\n\nSixteen years we were married\nI remember the day that we were wed\nSixteen years is a mighty long time\nNow you\u2019re gone I\u2019m losin my mind\n\nNow the days are long and the nights are lonesome\nIt seems like years have past and gone\nI didn\u2019t know  you were unhappy\nI didn\u2019t know anything was wrong",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When we were young we played together",
+        "That\u2019s the way our love began",
+        "Now you\u2019re gone dear with another",
+        "Now you\u2019re no more than just a friend"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Sixteen years we were married",
+        "I remember the day that we were wed",
+        "Sixteen years is a mighty long time",
+        "Now you\u2019re gone I\u2019m losin my mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the days are long and the nights are lonesome",
+        "It seems like years have past and gone",
+        "I didn\u2019t know  you were unhappy",
+        "I didn\u2019t know anything was wrong"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

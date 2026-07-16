@@ -1,0 +1,36 @@
+{
+  "slug": "goin-where-ive-never-been-before",
+  "title": "Goin Where I\u2019ve Never Been Before",
+  "source_url": "https://www.bluegrasslyrics.com/song/goin-where-ive-never-been-before/",
+  "raw_lyrics": "Goin where I\u2019m goin where I ain\u2019t never been before\nGoin where I ain\u2019t never been before\nGoin where I ain\u2019t never been before\n\nLittle gal good gal you ain\u2019t no part of me\nLittle gal you ain\u2019t no part of me\nLittle gal you ain\u2019t no part of me\n\nGoin where goin where the climate suits my clothes\nGoin where the climate suits my clothes\nGoin where I ain\u2019t never been before",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Goin where I\u2019m goin where I ain\u2019t never been before",
+        "Goin where I ain\u2019t never been before",
+        "Goin where I ain\u2019t never been before"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Little gal good gal you ain\u2019t no part of me",
+        "Little gal you ain\u2019t no part of me",
+        "Little gal you ain\u2019t no part of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Goin where goin where the climate suits my clothes",
+        "Goin where the climate suits my clothes",
+        "Goin where I ain\u2019t never been before"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

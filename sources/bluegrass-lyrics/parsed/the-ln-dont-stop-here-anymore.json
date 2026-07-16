@@ -1,0 +1,59 @@
+{
+  "slug": "the-ln-dont-stop-here-anymore",
+  "title": "The L&N Don\u2019t Stop Here Anymore",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-ln-dont-stop-here-anymore/",
+  "raw_lyrics": "When I was a curly headed baby\nMy daddy set me down on his knee\nSaying boy you go to school and you learn your letters\nDon\u2019t become no dusty miner boy like me.\n\nAnd I was born and raised in the mouth of a Hazzard holler\nWhere the coal cars rolled and rumbled past my door\nBut now they stand in a rusty row of empties\n\u2018Cause the L&N don\u2019t stop here anymore.\n\nNow I used to think my daddy was a black man\nWith script enough to buy the company store\nOh but now he goes to town with empty pockets\nAnd Lord his face is as white as a February snow.\n\nNever thought I\u2019d ever live to love that coal dust\nNever thought I\u2019d pray to hear those tipples roar\nOh but God I wish the grass would turn to money\nAnd feel my greenbacks in my pockets once more.\n\nLastnight I dreamed I went down to the office\nTo get my payday like I\u2019ve done before\nBut those kudzu vines they were covering over the doorway\nAnd there were weeds and grass growing right up through the floor.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I was a curly headed baby",
+        "My daddy set me down on his knee",
+        "Saying boy you go to school and you learn your letters",
+        "Don\u2019t become no dusty miner boy like me."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "And I was born and raised in the mouth of a Hazzard holler",
+        "Where the coal cars rolled and rumbled past my door",
+        "But now they stand in a rusty row of empties",
+        "\u2018Cause the L&N don\u2019t stop here anymore."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I used to think my daddy was a black man",
+        "With script enough to buy the company store",
+        "Oh but now he goes to town with empty pockets",
+        "And Lord his face is as white as a February snow."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Never thought I\u2019d ever live to love that coal dust",
+        "Never thought I\u2019d pray to hear those tipples roar",
+        "Oh but God I wish the grass would turn to money",
+        "And feel my greenbacks in my pockets once more."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lastnight I dreamed I went down to the office",
+        "To get my payday like I\u2019ve done before",
+        "But those kudzu vines they were covering over the doorway",
+        "And there were weeds and grass growing right up through the floor."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

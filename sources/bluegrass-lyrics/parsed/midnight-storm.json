@@ -1,0 +1,39 @@
+{
+  "slug": "midnight-storm",
+  "title": "Midnight Storm",
+  "source_url": "https://www.bluegrasslyrics.com/song/midnight-storm/",
+  "raw_lyrics": "We were wed in the hills of ol\u2019 Virginia\nWe were happy there together all alone\nBut I strayed away from my darlin\nThrough this dark and stormy night I\u2019m goin home\n\nWhen the high wind blows from heaven\nI whisper your name alone\nI\u2019m on my way back darlin\u2019\nAs the midnight storm rolls on\n\nWhen the cold  dreary rain starts fallin\nAnd the clouds hide the bright golden moon\nAs I see your face right before me\nI can cry as I sing this lonesome tune",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We were wed in the hills of ol\u2019 Virginia",
+        "We were happy there together all alone",
+        "But I strayed away from my darlin",
+        "Through this dark and stormy night I\u2019m goin home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the high wind blows from heaven",
+        "I whisper your name alone",
+        "I\u2019m on my way back darlin\u2019",
+        "As the midnight storm rolls on"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the cold  dreary rain starts fallin",
+        "And the clouds hide the bright golden moon",
+        "As I see your face right before me",
+        "I can cry as I sing this lonesome tune"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

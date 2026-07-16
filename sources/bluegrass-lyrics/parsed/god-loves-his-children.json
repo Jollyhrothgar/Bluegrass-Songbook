@@ -1,0 +1,49 @@
+{
+  "slug": "god-loves-his-children",
+  "title": "God Loves His Children",
+  "source_url": "https://www.bluegrasslyrics.com/song/god-loves-his-children/",
+  "raw_lyrics": "I was a stranger brother right in sin\nDidn\u2019t even have the love of God within\nBut now I\u2019ve found Him and I\u2019m glad to say\nI love my saviour more everyday\n\nGod loves His children brother yes I know\nHe will protect you anywhere you go\nJust call the point He will get you there\nGod will protect you brother anywhere\n\nBrother take warning while yet you have time\nDon\u2019t let old Satan lead you on down the line\nJust tell old Satan to stay out of your way\nGod loves His children brother everyday\n\nI\u2019m glad I\u2019ve found and I\u2019m on my way\nI\u2019m going to follow Jesus everyday\nNothing can change me and I\u2019m glad to say\nGod loves His children brother everyday",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was a stranger brother right in sin",
+        "Didn\u2019t even have the love of God within",
+        "But now I\u2019ve found Him and I\u2019m glad to say",
+        "I love my saviour more everyday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "God loves His children brother yes I know",
+        "He will protect you anywhere you go",
+        "Just call the point He will get you there",
+        "God will protect you brother anywhere"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Brother take warning while yet you have time",
+        "Don\u2019t let old Satan lead you on down the line",
+        "Just tell old Satan to stay out of your way",
+        "God loves His children brother everyday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m glad I\u2019ve found and I\u2019m on my way",
+        "I\u2019m going to follow Jesus everyday",
+        "Nothing can change me and I\u2019m glad to say",
+        "God loves His children brother everyday"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

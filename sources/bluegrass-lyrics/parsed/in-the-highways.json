@@ -1,0 +1,49 @@
+{
+  "slug": "in-the-highways",
+  "title": "In The Highways",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-the-highways/",
+  "raw_lyrics": "In the highways in the hedges\nIn the highways in the hedges\nIn the highways in the hedges\nI\u2019ll be somewhere a workin for my Lord\n\nI\u2019ll be somewhere a workin\nI\u2019ll be somewhere a workin\nI\u2019ll be somewhere a workin\nI\u2019ll be somewhere a workin for my Lord\n\nWhen he calls me I will answer\nWhen he calls me I will answer\nWhen he calls me I will answer\nI\u2019ll be somewhere a workin for my Lord\n\nIn the highways in the hedges\nIn the highways in the hedges\nIn the highways in the hedges\nI\u2019ll be somewhere a workin for my Lord",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the highways in the hedges",
+        "In the highways in the hedges",
+        "In the highways in the hedges",
+        "I\u2019ll be somewhere a workin for my Lord"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll be somewhere a workin",
+        "I\u2019ll be somewhere a workin",
+        "I\u2019ll be somewhere a workin",
+        "I\u2019ll be somewhere a workin for my Lord"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When he calls me I will answer",
+        "When he calls me I will answer",
+        "When he calls me I will answer",
+        "I\u2019ll be somewhere a workin for my Lord"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the highways in the hedges",
+        "In the highways in the hedges",
+        "In the highways in the hedges",
+        "I\u2019ll be somewhere a workin for my Lord"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

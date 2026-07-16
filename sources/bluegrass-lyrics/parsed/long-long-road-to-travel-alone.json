@@ -1,0 +1,59 @@
+{
+  "slug": "long-long-road-to-travel-alone",
+  "title": "Long Long Road to Travel Alone",
+  "source_url": "https://www.bluegrasslyrics.com/song/long-long-road-to-travel-alone/",
+  "raw_lyrics": "I always thought I\u2019d like to roam\nOne day I started alone\nOut in this old wide wicked world\nAway from friends and home\n\nIt\u2019s a long long road to travel alone\nAnd when the day is gone\nNo place to pillow my head at night\nOnly on the cold cold stone\n\nI\u2019ve travelled around from town to town\nNow it\u2019s time that I settled down\nI\u2019ve had my fill of rambling around\nAnd now I am homeward bound\n\nOne day a letter came to me\nAnd this is what it read\nCome home my boy to the old homestead\nYour father and mother are dead\n\nIt\u2019s been a long road to travel alone\nI wish I had never roamed\nI thought I\u2019d soon see my mother and dad\nBut now I am left alone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I always thought I\u2019d like to roam",
+        "One day I started alone",
+        "Out in this old wide wicked world",
+        "Away from friends and home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s a long long road to travel alone",
+        "And when the day is gone",
+        "No place to pillow my head at night",
+        "Only on the cold cold stone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve travelled around from town to town",
+        "Now it\u2019s time that I settled down",
+        "I\u2019ve had my fill of rambling around",
+        "And now I am homeward bound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One day a letter came to me",
+        "And this is what it read",
+        "Come home my boy to the old homestead",
+        "Your father and mother are dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s been a long road to travel alone",
+        "I wish I had never roamed",
+        "I thought I\u2019d soon see my mother and dad",
+        "But now I am left alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

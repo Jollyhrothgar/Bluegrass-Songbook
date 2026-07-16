@@ -1,0 +1,69 @@
+{
+  "slug": "darling-nellie-across-the-sea",
+  "title": "Darling Nellie Across The Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/darling-nellie-across-the-sea/",
+  "raw_lyrics": "Oh the night was dark and stormy\nWhen this message came to me\nIt was from my darling Nellie\nWho is far across the sea\n\nOh dear Jack I know I\u2019m dying\nI\u2019ve no friends or parents nigh\nBut remember dearest Jackie\nThere\u2019s a home for us on high\n\nOh dear mother I must leave you\nI must go across the sea\nI must find my darling Nellie\nWho so dearly cared for me\n\nI was wondering through the grave yard\nWhen found where Nellie lay\nIt was there my heart was broken\nIt was there I knelt and prayed\n\nNow I\u2019m left alone in sadness\nOn the fields the flowers wave\nAnd the girl I love is sleeping\nIn the cold and silent grave\n\nLay me where my Nellie\u2019s sleeping\nClose beside her let me lie\nWhere the blooming flowers are creeping\nThere oh lay me when I die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the night was dark and stormy",
+        "When this message came to me",
+        "It was from my darling Nellie",
+        "Who is far across the sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh dear Jack I know I\u2019m dying",
+        "I\u2019ve no friends or parents nigh",
+        "But remember dearest Jackie",
+        "There\u2019s a home for us on high"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh dear mother I must leave you",
+        "I must go across the sea",
+        "I must find my darling Nellie",
+        "Who so dearly cared for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I was wondering through the grave yard",
+        "When found where Nellie lay",
+        "It was there my heart was broken",
+        "It was there I knelt and prayed"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m left alone in sadness",
+        "On the fields the flowers wave",
+        "And the girl I love is sleeping",
+        "In the cold and silent grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Lay me where my Nellie\u2019s sleeping",
+        "Close beside her let me lie",
+        "Where the blooming flowers are creeping",
+        "There oh lay me when I die"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

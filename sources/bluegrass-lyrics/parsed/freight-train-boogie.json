@@ -1,0 +1,39 @@
+{
+  "slug": "freight-train-boogie",
+  "title": "Freight Train Boogie",
+  "source_url": "https://www.bluegrasslyrics.com/song/freight-train-boogie/",
+  "raw_lyrics": "Casey Jones he was a mighty man\nBut now he\u2019s resting in the promised land\nThe kind of music he could understand\nWas an eight wheel driver under his command\n\nHe made the freight train boogie\nAll the time\nHe made the freight train boogie\nAs he rolled down the line\n\nWhen the fireman started ringing the bell\nEverybody on the line could tell\nCasey Jones was a coming to town,\nOn an 8-wheel driver that was burning \u2019em down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Casey Jones he was a mighty man",
+        "But now he\u2019s resting in the promised land",
+        "The kind of music he could understand",
+        "Was an eight wheel driver under his command"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "He made the freight train boogie",
+        "All the time",
+        "He made the freight train boogie",
+        "As he rolled down the line"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the fireman started ringing the bell",
+        "Everybody on the line could tell",
+        "Casey Jones was a coming to town,",
+        "On an 8-wheel driver that was burning \u2019em down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

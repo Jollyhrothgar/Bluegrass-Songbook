@@ -1,0 +1,49 @@
+{
+  "slug": "little-darling-pal-of-mine",
+  "title": "Little Darling Pal Of Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-darling-pal-of-mine/",
+  "raw_lyrics": "In the night while you lay sleeping\nDreaming of your amber skies\nWas a poor boy broken-hearted\nListening to the winds that sigh\n\nMy little darlin\u2019 oh how I love you\nHow I love you none can tell\nIn your heart you love another\nLittle darlin\u2019 pal of mine\n\nMany a day with you I\u2019ve rambled\nHappiest hours with you I\u2019ve spent\nThought I had your heart forever\nNow I find it\u2019s only lent\n\nThere is just three things I wish for\nThat\u2019s my casket shroud and grave\nWhen I\u2019m dead don\u2019t weep for me\nJust kiss those lips that you betrayed",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the night while you lay sleeping",
+        "Dreaming of your amber skies",
+        "Was a poor boy broken-hearted",
+        "Listening to the winds that sigh"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My little darlin\u2019 oh how I love you",
+        "How I love you none can tell",
+        "In your heart you love another",
+        "Little darlin\u2019 pal of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many a day with you I\u2019ve rambled",
+        "Happiest hours with you I\u2019ve spent",
+        "Thought I had your heart forever",
+        "Now I find it\u2019s only lent"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is just three things I wish for",
+        "That\u2019s my casket shroud and grave",
+        "When I\u2019m dead don\u2019t weep for me",
+        "Just kiss those lips that you betrayed"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "rain-and-snow",
+  "title": "Rain And Snow",
+  "source_url": "https://www.bluegrasslyrics.com/song/rain-and-snow/",
+  "raw_lyrics": "Well I married me a wife, she gave me trouble all my life\nLeft me out in the cold rain and snow\nRain and snow\u2026\u2026\u2026\u2026\nShe left me out in the cold rain and snow\n\nShe came down the stairs holding back her long yellow hair\nAnd her cheeks were as red as a rose\nAs a rose\u2026\u2026\u2026\u2026\u2026\u2026..\nAnd her cheeks were as red as a rose\n\nWell I\u2019ve done all that I can do to try to get along with you\nAnd I ain\u2019t gonna be treated this old way\nThis old way\u2026\u2026\u2026\u2026\u2026\nNow I ain\u2019t gonna be treated this old way\n\nWe\u2019ll she came in to the room where she met her final doom\nAnd I ain\u2019t gonna be treated this old way\nThis old way\u2026\u2026\u2026\u2026\u2026\u2026\nNow I ain\u2019t gonna be treated this old way\nShe left me out in the cold rain and snow",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I married me a wife, she gave me trouble all my life",
+        "Left me out in the cold rain and snow",
+        "Rain and snow\u2026\u2026\u2026\u2026",
+        "She left me out in the cold rain and snow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She came down the stairs holding back her long yellow hair",
+        "And her cheeks were as red as a rose",
+        "As a rose\u2026\u2026\u2026\u2026\u2026\u2026..",
+        "And her cheeks were as red as a rose"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ve done all that I can do to try to get along with you",
+        "And I ain\u2019t gonna be treated this old way",
+        "This old way\u2026\u2026\u2026\u2026\u2026",
+        "Now I ain\u2019t gonna be treated this old way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We\u2019ll she came in to the room where she met her final doom",
+        "And I ain\u2019t gonna be treated this old way",
+        "This old way\u2026\u2026\u2026\u2026\u2026\u2026",
+        "Now I ain\u2019t gonna be treated this old way",
+        "She left me out in the cold rain and snow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

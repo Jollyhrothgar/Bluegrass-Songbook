@@ -1,0 +1,49 @@
+{
+  "slug": "jealous-hearted-me",
+  "title": "Jealous Hearted Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/jealous-hearted-me/",
+  "raw_lyrics": "Takes a rocking chair to rock takes a rubber tire to roll\nTakes the man I love to satisfy my soul\nBecause I\u2019m jealous jealous hearted me\nI said I\u2019m jealous jealous as I can be\n\nGot a stove in the kitchen and it bakes nice and brown\nBut I need a poppa to turn the damper down\nBecause I\u2019m jealous jealous hearted me\nI said I\u2019m jealous jealous as I can be\n\nYou can have my money you can have my home\nBut for goodness sake women leave my man alone\nBecause I\u2019m jealous jealous hearted me\nI said I\u2019m jealous jealous as I can be\n\nGonna buy me a bulldog to watch him while I sleep\nTo watch that man of mine on his midnight creep\nBecause I\u2019m jealous jealous hearted me\nI said I\u2019m jealous jealous as I can be",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Takes a rocking chair to rock takes a rubber tire to roll",
+        "Takes the man I love to satisfy my soul",
+        "Because I\u2019m jealous jealous hearted me",
+        "I said I\u2019m jealous jealous as I can be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Got a stove in the kitchen and it bakes nice and brown",
+        "But I need a poppa to turn the damper down",
+        "Because I\u2019m jealous jealous hearted me",
+        "I said I\u2019m jealous jealous as I can be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can have my money you can have my home",
+        "But for goodness sake women leave my man alone",
+        "Because I\u2019m jealous jealous hearted me",
+        "I said I\u2019m jealous jealous as I can be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Gonna buy me a bulldog to watch him while I sleep",
+        "To watch that man of mine on his midnight creep",
+        "Because I\u2019m jealous jealous hearted me",
+        "I said I\u2019m jealous jealous as I can be"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

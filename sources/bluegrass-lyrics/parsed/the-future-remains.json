@@ -1,0 +1,49 @@
+{
+  "slug": "the-future-remains",
+  "title": "The Future Remains",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-future-remains/",
+  "raw_lyrics": "As the clouds of the morning they roll up the mountain\nI feel that my heart is at rest\nI know that some day I will drink from the fountain\nAnd live in the home of the blessed\n\nWhen everything\u2019s lost the future remains\nOh listen poor wandering soul\nI read in the bible and there it explains\nThe pathway and the streets made of gold\n\nYou may have to struggle and overcome hardships\nThat hang over you like a cloud\nYour burdens are lighter your soul will shine brighter\nIf salvation you have found\n\nDon\u2019t ever give up on the right road to glory\nCause maybe you\u2019ve stumbled and strayed\nJust remember our Savior and His humbling story\nAnd you will reach Heaven someday",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As the clouds of the morning they roll up the mountain",
+        "I feel that my heart is at rest",
+        "I know that some day I will drink from the fountain",
+        "And live in the home of the blessed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When everything\u2019s lost the future remains",
+        "Oh listen poor wandering soul",
+        "I read in the bible and there it explains",
+        "The pathway and the streets made of gold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You may have to struggle and overcome hardships",
+        "That hang over you like a cloud",
+        "Your burdens are lighter your soul will shine brighter",
+        "If salvation you have found"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t ever give up on the right road to glory",
+        "Cause maybe you\u2019ve stumbled and strayed",
+        "Just remember our Savior and His humbling story",
+        "And you will reach Heaven someday"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

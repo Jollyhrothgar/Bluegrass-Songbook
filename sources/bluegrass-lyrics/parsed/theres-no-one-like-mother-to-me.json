@@ -1,0 +1,47 @@
+{
+  "slug": "theres-no-one-like-mother-to-me",
+  "title": "There\u2019s No One Like Mother To Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/theres-no-one-like-mother-to-me/",
+  "raw_lyrics": "Sadly I\u2019m thinking tonight\nThinking of the sweet bye and bye\nMemories of childhood so bright\nCome back like a dream with a sigh\nI\u2019ve been thinking of friends and of home\nIn that cottage far over the sea\nNo matter wherever I roam\nThere\u2019s no one like mother to me\n\nThere\u2019s no one like mother to me\nNo matter how poor she may be\nI\u2019ll go back to that home o\u2019er the sea\nThere\u2019s no one like mother to me\n\nWhen I left that old home o\u2019er the sea\nI kissed them goodbye at the gate\nSomebody whispered to me\nA loving voice asked me to wait\nHer blessing she gave with a smile\nAnd tears on her cheeks I could see\nHow often that sweet face I\u2019ve missed\nThere\u2019s no one like mother to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sadly I\u2019m thinking tonight",
+        "Thinking of the sweet bye and bye",
+        "Memories of childhood so bright",
+        "Come back like a dream with a sigh",
+        "I\u2019ve been thinking of friends and of home",
+        "In that cottage far over the sea",
+        "No matter wherever I roam",
+        "There\u2019s no one like mother to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s no one like mother to me",
+        "No matter how poor she may be",
+        "I\u2019ll go back to that home o\u2019er the sea",
+        "There\u2019s no one like mother to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I left that old home o\u2019er the sea",
+        "I kissed them goodbye at the gate",
+        "Somebody whispered to me",
+        "A loving voice asked me to wait",
+        "Her blessing she gave with a smile",
+        "And tears on her cheeks I could see",
+        "How often that sweet face I\u2019ve missed",
+        "There\u2019s no one like mother to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

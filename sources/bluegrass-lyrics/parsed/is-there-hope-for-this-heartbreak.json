@@ -1,0 +1,49 @@
+{
+  "slug": "is-there-hope-for-this-heartbreak",
+  "title": "Is There Hope For This Heartbreak",
+  "source_url": "https://www.bluegrasslyrics.com/song/is-there-hope-for-this-heartbreak/",
+  "raw_lyrics": "In this world of broken hearted\nYou can sing about my one and only pain\nNow I cry my eyes and wonder\nWill I walk this dark and lonely road again\n\nIs there one more hope for this heartbreak\nIs there one last chance or goodbye\nIf I had one wish I would end all this heartache\nOh I wonder how long I could cry\n\nYou could count the stars in heaven\nYou could count a million waves on the sea\nYou\u2019ll never know how many teardrops\nThat I shed for somethin\u2019 never meant to be\n\nWithout love in this lifetime\nYou can count on little boys bein\u2019 blue\nSo don\u2019t wait until tomorrow\nYou may never find yourself a love so true",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In this world of broken hearted",
+        "You can sing about my one and only pain",
+        "Now I cry my eyes and wonder",
+        "Will I walk this dark and lonely road again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Is there one more hope for this heartbreak",
+        "Is there one last chance or goodbye",
+        "If I had one wish I would end all this heartache",
+        "Oh I wonder how long I could cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You could count the stars in heaven",
+        "You could count a million waves on the sea",
+        "You\u2019ll never know how many teardrops",
+        "That I shed for somethin\u2019 never meant to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Without love in this lifetime",
+        "You can count on little boys bein\u2019 blue",
+        "So don\u2019t wait until tomorrow",
+        "You may never find yourself a love so true"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

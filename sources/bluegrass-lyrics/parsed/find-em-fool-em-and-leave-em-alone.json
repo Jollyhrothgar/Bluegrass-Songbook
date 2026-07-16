@@ -1,0 +1,49 @@
+{
+  "slug": "find-em-fool-em-and-leave-em-alone",
+  "title": "Find \u2018Em Fool \u2018Em And Leave \u2018Em Alone",
+  "source_url": "https://www.bluegrasslyrics.com/song/find-em-fool-em-and-leave-em-alone/",
+  "raw_lyrics": "Now boys gather \u2019round take a tip from me\nI\u2019m sure that you will all agree\nIf you let a gal fool you with fate\nYou\u2019ll soon be swinging on the golden gate\n\nYou\u2019ll miss out on all the fun\nIf you make love to only one\nYou\u2019d better take heed to my little song\nFind \u2019em fool \u2019em and leave \u2019em alone\n\nThat little love bug is the cutest thing\nAt first its sweet but it makes its sting\nYou\u2019ll find the wound is hard to treat\nBe sure you play this little game neat\n\nNow if you find a gal you like\nJust date her once but no more than twice\nIf you don\u2019t watch her little ways\nShe\u2019ll spoil your happy ramblin\u2019 day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now boys gather \u2019round take a tip from me",
+        "I\u2019m sure that you will all agree",
+        "If you let a gal fool you with fate",
+        "You\u2019ll soon be swinging on the golden gate"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll miss out on all the fun",
+        "If you make love to only one",
+        "You\u2019d better take heed to my little song",
+        "Find \u2019em fool \u2019em and leave \u2019em alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That little love bug is the cutest thing",
+        "At first its sweet but it makes its sting",
+        "You\u2019ll find the wound is hard to treat",
+        "Be sure you play this little game neat"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now if you find a gal you like",
+        "Just date her once but no more than twice",
+        "If you don\u2019t watch her little ways",
+        "She\u2019ll spoil your happy ramblin\u2019 day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "blue-eyed-boston-boy",
+  "title": "Blue Eyed Boston Boy",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-eyed-boston-boy/",
+  "raw_lyrics": "He was just a blue eyed Boston boy his voice was low with pain\nI\u2019ll do your bidding, comrade mine if you will do the same\nBut if you should ride and I should fall you\u2019ll do as much for me\nWhile mother at home is awaiting the news so write to her tenderly\n\nShe\u2019s waiting at home like a patient saint her pale face filled with woe\nHer heart will be broken when I am dead I\u2019ll see her face no more\nJust then the order came to charge for a moment hand touched hand\nThey answered aye and on they rode that brave and devoted band\n\nStraight way was the course to the top of the hill and the Rebels with shot and shell\nPlowed furrows of death midst the toiling ranks and guarded them as they fell\nThere soon came a horrible dying sound from the heights they could not gain\nAnd those whom doom and death had spared rode slowly back again\n\nBut among the dead at the top of the hill lay the boy with the golden hair\nAnd the tall dark man who rode by his side lay still beside him there\nThere was none to write to the blue-eyed girl the words her lover had said\nWhile mother at home is awaiting her boy she\u2019ll only find he\u2019s dead\n\nWhile mother at home is awaiting her boy she\u2019ll only find he\u2019s dead",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "He was just a blue eyed Boston boy his voice was low with pain",
+        "I\u2019ll do your bidding, comrade mine if you will do the same",
+        "But if you should ride and I should fall you\u2019ll do as much for me",
+        "While mother at home is awaiting the news so write to her tenderly"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s waiting at home like a patient saint her pale face filled with woe",
+        "Her heart will be broken when I am dead I\u2019ll see her face no more",
+        "Just then the order came to charge for a moment hand touched hand",
+        "They answered aye and on they rode that brave and devoted band"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Straight way was the course to the top of the hill and the Rebels with shot and shell",
+        "Plowed furrows of death midst the toiling ranks and guarded them as they fell",
+        "There soon came a horrible dying sound from the heights they could not gain",
+        "And those whom doom and death had spared rode slowly back again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But among the dead at the top of the hill lay the boy with the golden hair",
+        "And the tall dark man who rode by his side lay still beside him there",
+        "There was none to write to the blue-eyed girl the words her lover had said",
+        "While mother at home is awaiting her boy she\u2019ll only find he\u2019s dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While mother at home is awaiting her boy she\u2019ll only find he\u2019s dead"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

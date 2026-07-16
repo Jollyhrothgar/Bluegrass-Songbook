@@ -1,0 +1,62 @@
+{
+  "slug": "green-rollin-hills",
+  "title": "Green Rollin Hills",
+  "source_url": "https://www.bluegrasslyrics.com/song/green-rollin-hills/",
+  "raw_lyrics": "Oh the green rolling hills of West Virginia\nAre the nearest thing to Heaven that I know\nThough the times are sad and drear\nAnd I cannot linger here\nThey\u2019ll keep me and never let me go.\n\nMy Daddy said don\u2019t ever be a miner\nFor a miner\u2019s grave is all you\u2019ll ever own\nCause of hard times everywhere\nI can\u2019t find a dime to spare\nThese are the worst times I\u2019ve ever known.\n\nSo I\u2019ll move away into some crowded city\nIn some northern fact\u2019ry town you\u2019ll find me there\nthough I\u2019ll leave the past behind\nI\u2019ll never change my mind\nThese troubled times are more than I can bear\n\nBut someday I\u2019ll go back to West Virginia\nTo the green rolling hills I love so well\nYes, someday I\u2019ll go home\nAnd I know I\u2019ll right the wrong\nThese troubled times will follow me no more\n\nYes, someday I\u2019ll go home\nAnd I know I\u2019ll right the wrong\nThese troubled times will follow me no more.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the green rolling hills of West Virginia",
+        "Are the nearest thing to Heaven that I know",
+        "Though the times are sad and drear",
+        "And I cannot linger here",
+        "They\u2019ll keep me and never let me go."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My Daddy said don\u2019t ever be a miner",
+        "For a miner\u2019s grave is all you\u2019ll ever own",
+        "Cause of hard times everywhere",
+        "I can\u2019t find a dime to spare",
+        "These are the worst times I\u2019ve ever known."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So I\u2019ll move away into some crowded city",
+        "In some northern fact\u2019ry town you\u2019ll find me there",
+        "though I\u2019ll leave the past behind",
+        "I\u2019ll never change my mind",
+        "These troubled times are more than I can bear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But someday I\u2019ll go back to West Virginia",
+        "To the green rolling hills I love so well",
+        "Yes, someday I\u2019ll go home",
+        "And I know I\u2019ll right the wrong",
+        "These troubled times will follow me no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes, someday I\u2019ll go home",
+        "And I know I\u2019ll right the wrong",
+        "These troubled times will follow me no more."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

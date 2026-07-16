@@ -1,0 +1,56 @@
+{
+  "slug": "youre-a-flower-in-the-wildwood",
+  "title": "You\u2019re A Flower In The Wildwood",
+  "source_url": "https://www.bluegrasslyrics.com/song/youre-a-flower-in-the-wildwood/",
+  "raw_lyrics": "On one evening long ago when the sun was sinkin\u2019 low\nMy true lover went to sail upon the sea\nIt was in the month of June when the roses were in bloom\nThat he took me in his arms and said to me\n\nYou\u2019re a flower bloomin\u2019 in the wildwood\nA flower bloomin\u2019 there for me\nFreer than the morning dew but I\u2019ll soon return to you\nYou\u2019re a flower that is bloomin\u2019 there for me\n\nThen this message came to me from the captain on the sea\nAnd it told me that my darling was dead\nOh this shocking words surprise brought the teardrops to my eyes\nWhen I thought about the last words that I said\n\nNow he can\u2019t return to me he got drowned in the sea\nAnd he\u2019s past o\u2019r life\u2019s weary waves\nWhen it\u2019s in the month of June and the roses are in bloom\nOh it seems that I can hear my darling say\n\nDel McCoury; I Wonder Where You Are Tonight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On one evening long ago when the sun was sinkin\u2019 low",
+        "My true lover went to sail upon the sea",
+        "It was in the month of June when the roses were in bloom",
+        "That he took me in his arms and said to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019re a flower bloomin\u2019 in the wildwood",
+        "A flower bloomin\u2019 there for me",
+        "Freer than the morning dew but I\u2019ll soon return to you",
+        "You\u2019re a flower that is bloomin\u2019 there for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then this message came to me from the captain on the sea",
+        "And it told me that my darling was dead",
+        "Oh this shocking words surprise brought the teardrops to my eyes",
+        "When I thought about the last words that I said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now he can\u2019t return to me he got drowned in the sea",
+        "And he\u2019s past o\u2019r life\u2019s weary waves",
+        "When it\u2019s in the month of June and the roses are in bloom",
+        "Oh it seems that I can hear my darling say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Del McCoury; I Wonder Where You Are Tonight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

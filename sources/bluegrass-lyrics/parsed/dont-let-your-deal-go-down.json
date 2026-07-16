@@ -1,0 +1,49 @@
+{
+  "slug": "dont-let-your-deal-go-down",
+  "title": "Don\u2019t Let Your Deal Go Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-let-your-deal-go-down/",
+  "raw_lyrics": "Well, I\u2019ve been all around this whole wide world\nBeen down to sunny Alabam\nMy mama always told me, Son\nNever let your deal go down\n\nDon\u2019t let your deal go down\nDon\u2019t let your deal go down\nDon\u2019t let your deal go down\nTill your last gold dollar is gone\n\nWell, the last time I seen that gal of mine\nShe was standing in the door\nShe said honey I\u2019ll be a long time gone\nYou\u2019ll never see your gal no more\n\nWell, I\u2019m going sown the railroad track\nGonna take my rocking chair\nIf there doggone blues don\u2019t leave my mind\nI\u2019m gonna run away from here",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well, I\u2019ve been all around this whole wide world",
+        "Been down to sunny Alabam",
+        "My mama always told me, Son",
+        "Never let your deal go down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t let your deal go down",
+        "Don\u2019t let your deal go down",
+        "Don\u2019t let your deal go down",
+        "Till your last gold dollar is gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, the last time I seen that gal of mine",
+        "She was standing in the door",
+        "She said honey I\u2019ll be a long time gone",
+        "You\u2019ll never see your gal no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, I\u2019m going sown the railroad track",
+        "Gonna take my rocking chair",
+        "If there doggone blues don\u2019t leave my mind",
+        "I\u2019m gonna run away from here"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

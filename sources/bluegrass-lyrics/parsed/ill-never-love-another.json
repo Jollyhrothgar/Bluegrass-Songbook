@@ -1,0 +1,49 @@
+{
+  "slug": "ill-never-love-another",
+  "title": "I\u2019ll Never Love Another",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-never-love-another/",
+  "raw_lyrics": "I\u2019ll never love another now that you\u2019ve gone away\nAnd left me here to grieve dear all alone\nIt seems I always lose my dear no matter how I try\nI\u2019ll never love another, \u2018til the day I die\n\nI\u2019ll never love another now that you\u2019ve proved untrue\nWithout your loving darling, what am I to do\nI\u2019ve spent my life for you dear now you\u2019ve left me blue\nI\u2019ll never love another if I can\u2019t have you\n\nOur castle now has tumbled down that I had built for you\nAnd all my dreams have vanished dear with you\nI\u2019ll find no one to take you place so I\u2019ll not even try\nI\u2019ll never love another, \u2018til the day I die\n\nNow you don\u2019t even know the heartache that you caused me to bear\nOr you would never stole my love from me\nI\u2019ll have to live my life alone and think of days gone by\nI\u2019ll never love another, \u2018til the day I die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll never love another now that you\u2019ve gone away",
+        "And left me here to grieve dear all alone",
+        "It seems I always lose my dear no matter how I try",
+        "I\u2019ll never love another, \u2018til the day I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll never love another now that you\u2019ve proved untrue",
+        "Without your loving darling, what am I to do",
+        "I\u2019ve spent my life for you dear now you\u2019ve left me blue",
+        "I\u2019ll never love another if I can\u2019t have you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Our castle now has tumbled down that I had built for you",
+        "And all my dreams have vanished dear with you",
+        "I\u2019ll find no one to take you place so I\u2019ll not even try",
+        "I\u2019ll never love another, \u2018til the day I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you don\u2019t even know the heartache that you caused me to bear",
+        "Or you would never stole my love from me",
+        "I\u2019ll have to live my life alone and think of days gone by",
+        "I\u2019ll never love another, \u2018til the day I die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

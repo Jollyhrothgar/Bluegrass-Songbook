@@ -1,0 +1,39 @@
+{
+  "slug": "dont-laugh",
+  "title": "Don\u2019t Laugh",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-laugh/",
+  "raw_lyrics": "If I cry when I kiss you or when we say goodbye\nDon\u2019t laugh don\u2019t laugh\nIf I say I\u2019ll always love you and I will \u2019til I die\nDon\u2019t laugh don\u2019t laugh.\n\nI could never find another there\u2019s no need for me to try\nSo I beg of you my darlin\u2019 please don\u2019t laugh if I cry\nIf I say I\u2019ll always love you and I will until I die\nDon\u2019t laugh don\u2019t laugh.\n\nHonest darlin\u2019 I\u2019m not teasing when I say you are the best\nDon\u2019t laugh don\u2019t laugh\nAnd if you will take the chance I\u2019m sure my love will stand the test\nDon\u2019t laugh don\u2019t laugh.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If I cry when I kiss you or when we say goodbye",
+        "Don\u2019t laugh don\u2019t laugh",
+        "If I say I\u2019ll always love you and I will \u2019til I die",
+        "Don\u2019t laugh don\u2019t laugh."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I could never find another there\u2019s no need for me to try",
+        "So I beg of you my darlin\u2019 please don\u2019t laugh if I cry",
+        "If I say I\u2019ll always love you and I will until I die",
+        "Don\u2019t laugh don\u2019t laugh."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Honest darlin\u2019 I\u2019m not teasing when I say you are the best",
+        "Don\u2019t laugh don\u2019t laugh",
+        "And if you will take the chance I\u2019m sure my love will stand the test",
+        "Don\u2019t laugh don\u2019t laugh."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "roll-in-my-sweet-babys-arms",
+  "title": "Roll In My Sweet Baby\u2019s Arms",
+  "source_url": "https://www.bluegrasslyrics.com/song/roll-in-my-sweet-babys-arms/",
+  "raw_lyrics": "Roll in my sweet baby\u2019s arms\nRoll in my sweet baby\u2019s arms\nLay around the shack \u2019til the mail comes back\nAnd I\u2019ll roll in my sweet baby\u2019s arms\n\nI ain\u2019t gonna work on the railroad\nI ain\u2019t gonna work on the farm\nLay down the shack \u2019til the mail train comes back\nAnd I\u2019ll roll in my sweet baby\u2019s arms\n\nNow where were you last Friday night\nWhile I was lying in jail\nWalking the streets with another man\nWouldn\u2019t even go my bail\n\nI know you parents don\u2019t like me\nThey drove me away from your door\nIf I had my life to live over\nI\u2019d never go there any more",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Roll in my sweet baby\u2019s arms",
+        "Roll in my sweet baby\u2019s arms",
+        "Lay around the shack \u2019til the mail comes back",
+        "And I\u2019ll roll in my sweet baby\u2019s arms"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I ain\u2019t gonna work on the railroad",
+        "I ain\u2019t gonna work on the farm",
+        "Lay down the shack \u2019til the mail train comes back",
+        "And I\u2019ll roll in my sweet baby\u2019s arms"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now where were you last Friday night",
+        "While I was lying in jail",
+        "Walking the streets with another man",
+        "Wouldn\u2019t even go my bail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know you parents don\u2019t like me",
+        "They drove me away from your door",
+        "If I had my life to live over",
+        "I\u2019d never go there any more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

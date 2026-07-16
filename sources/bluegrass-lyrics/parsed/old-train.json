@@ -1,0 +1,39 @@
+{
+  "slug": "old-train",
+  "title": "Old Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-train/",
+  "raw_lyrics": "Old train I can hear your whistle blow\nBut I won\u2019t be jumping on again\nOld train I\u2019ve been everywhere you go\nAnd I know what lies beyond each bend.\n\nOld train each time you pass you\u2019re older than the last\nAnd it seems I\u2019m too old for running\nI hear your rusty wheels grate against the rails\nThey cry with every mile and I think I\u2019ll stay awhile.\n\nOld train I grow weary from the miles\nAnd I\u2019ll miss the freedom that was mine\nOld train just to think about those times\nI\u2019ll smile when you\u2019re high-balling by.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Old train I can hear your whistle blow",
+        "But I won\u2019t be jumping on again",
+        "Old train I\u2019ve been everywhere you go",
+        "And I know what lies beyond each bend."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Old train each time you pass you\u2019re older than the last",
+        "And it seems I\u2019m too old for running",
+        "I hear your rusty wheels grate against the rails",
+        "They cry with every mile and I think I\u2019ll stay awhile."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Old train I grow weary from the miles",
+        "And I\u2019ll miss the freedom that was mine",
+        "Old train just to think about those times",
+        "I\u2019ll smile when you\u2019re high-balling by."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

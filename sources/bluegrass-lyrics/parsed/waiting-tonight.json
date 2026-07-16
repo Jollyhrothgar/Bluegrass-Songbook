@@ -1,0 +1,33 @@
+{
+  "slug": "waiting-tonight",
+  "title": "Waiting Tonight?",
+  "source_url": "https://www.bluegrasslyrics.com/song/waiting-tonight/",
+  "raw_lyrics": "I\u2019m waiting tonite for you to tell me that you still love me and you will remain\nMy heart is breaking with each passing hour please don\u2019t let me love you in vain\n\nI used to think your love would always save me and that you\u2019d always stay right by my side\nBut I can see a change coming o\u2019er you and the tears I cry just can\u2019t hide\n\nI can\u2019t pretend that love is just a pastime and that you never meant a thing to me\nSo darlin please don\u2019t leave me all alone sorrounded by your memory",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m waiting tonite for you to tell me that you still love me and you will remain",
+        "My heart is breaking with each passing hour please don\u2019t let me love you in vain"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I used to think your love would always save me and that you\u2019d always stay right by my side",
+        "But I can see a change coming o\u2019er you and the tears I cry just can\u2019t hide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can\u2019t pretend that love is just a pastime and that you never meant a thing to me",
+        "So darlin please don\u2019t leave me all alone sorrounded by your memory"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

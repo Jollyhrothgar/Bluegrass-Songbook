@@ -1,0 +1,49 @@
+{
+  "slug": "the-cold-hard-facts",
+  "title": "The Cold Hard Facts",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-cold-hard-facts/",
+  "raw_lyrics": "Don\u2019t run to me when he\u2019s not around\nDon\u2019t come slippin\u2019 \u2019round my door\nI tried not to see how you\u2019re using me\nWe played that little game before\n\nYou call me up when he\u2019s out of town\nThe next day you treat me like I\u2019m just some hand me down\nIs that any way for a good girl to act\nI guess I\u2019ll have to face the cold hard facts\n\nDay after day of livin\u2019 this a-way\nWill take a toll on a man\nAnd night after night lie after lie\nStringin\u2019 me along must be your plan\n\nWell fools like me they never see\nThat empty feelin\u2019 that\u2019s in store\nWhen the bitter truth sneaks up on you\nShe\u2019s headin\u2019 home cut out your door",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t run to me when he\u2019s not around",
+        "Don\u2019t come slippin\u2019 \u2019round my door",
+        "I tried not to see how you\u2019re using me",
+        "We played that little game before"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You call me up when he\u2019s out of town",
+        "The next day you treat me like I\u2019m just some hand me down",
+        "Is that any way for a good girl to act",
+        "I guess I\u2019ll have to face the cold hard facts"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Day after day of livin\u2019 this a-way",
+        "Will take a toll on a man",
+        "And night after night lie after lie",
+        "Stringin\u2019 me along must be your plan"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well fools like me they never see",
+        "That empty feelin\u2019 that\u2019s in store",
+        "When the bitter truth sneaks up on you",
+        "She\u2019s headin\u2019 home cut out your door"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

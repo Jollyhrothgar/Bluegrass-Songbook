@@ -1,0 +1,43 @@
+{
+  "slug": "froggy-went-a-courtin",
+  "title": "Froggy Went A\u2019 Courtin\u2019",
+  "source_url": "https://www.bluegrasslyrics.com/song/froggy-went-a-courtin/",
+  "raw_lyrics": "Froggy went a\u2019 courtin\u2019 and he did ride uh huh\nFroggy went a\u2019 courtin\u2019 and he did ride uh huh\nFroggy went a\u2019 courtin\u2019 and he did ride\nSword and a pistol by his side Uh huh uh huh oh yeah.\n\nWell he rode up to Miss Mouse\u2019s door\nHe knocked so hard that he made it roar\n\nWell he said to Miss Mousie Will you marry me?\nOh Miss Mousie how I love thee\u201d\n\nWhere will the wedding supper be\nWe\u2019ll get married in a Sycamore tree",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Froggy went a\u2019 courtin\u2019 and he did ride uh huh",
+        "Froggy went a\u2019 courtin\u2019 and he did ride uh huh",
+        "Froggy went a\u2019 courtin\u2019 and he did ride",
+        "Sword and a pistol by his side Uh huh uh huh oh yeah."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well he rode up to Miss Mouse\u2019s door",
+        "He knocked so hard that he made it roar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well he said to Miss Mousie Will you marry me?",
+        "Oh Miss Mousie how I love thee\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where will the wedding supper be",
+        "We\u2019ll get married in a Sycamore tree"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

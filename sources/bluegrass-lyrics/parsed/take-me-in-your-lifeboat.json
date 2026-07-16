@@ -1,0 +1,41 @@
+{
+  "slug": "take-me-in-your-lifeboat",
+  "title": "Take Me In Your Lifeboat",
+  "source_url": "https://www.bluegrasslyrics.com/song/take-me-in-your-lifeboat/",
+  "raw_lyrics": "Take me in your lifeboat, oh\nTake me in your lifeboat\nIt will stand the raging storm\nTake me in your lifeboat, oh\nTake me in your lifeboat\nIt will bear my spirit home.\n\nNow come brothers and sisters and don\u2019t fall asleep\nWe\u2019ll pray night and day or we\u2019ll sink in the deep\nFathers and mothers are prayin\u2019 so well\nThe Lord won\u2019t you take me in your lifeboat.\n\nThe clouds are so heavy the winds are so loud\nThe thunder are rollin\u2019 and burstin\u2019 the clouds\nThey pray to their sinner mates for what they have done\nThey took the dyin\u2019 sinner in their lifeboat.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Take me in your lifeboat, oh",
+        "Take me in your lifeboat",
+        "It will stand the raging storm",
+        "Take me in your lifeboat, oh",
+        "Take me in your lifeboat",
+        "It will bear my spirit home."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now come brothers and sisters and don\u2019t fall asleep",
+        "We\u2019ll pray night and day or we\u2019ll sink in the deep",
+        "Fathers and mothers are prayin\u2019 so well",
+        "The Lord won\u2019t you take me in your lifeboat."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The clouds are so heavy the winds are so loud",
+        "The thunder are rollin\u2019 and burstin\u2019 the clouds",
+        "They pray to their sinner mates for what they have done",
+        "They took the dyin\u2019 sinner in their lifeboat."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

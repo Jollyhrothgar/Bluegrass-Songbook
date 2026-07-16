@@ -1,0 +1,11 @@
+id: who-needs-you
+title: Who Needs You?
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/who-needs-you/
+      imported_at: '2026-02-08'

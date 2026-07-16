@@ -1,0 +1,39 @@
+{
+  "slug": "too-late-to-cry",
+  "title": "Too Late To Cry",
+  "source_url": "https://www.bluegrasslyrics.com/song/too-late-to-cry/",
+  "raw_lyrics": "Come take me by my trembling hand\nAnd hold me close to you\nAnd think of all the days gone by\nThe day when love was true\n\nCome go with me to the old depot\nAnd wave your hand good-bye\nI know I\u2019ve done you wrong sweetheart\nBut now it\u2019s too late to cry\n\nSweetheart of mine, I hate to go\nAnd leave you here all alone\nMay God protect and keep you\nWherever you may roam",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come take me by my trembling hand",
+        "And hold me close to you",
+        "And think of all the days gone by",
+        "The day when love was true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Come go with me to the old depot",
+        "And wave your hand good-bye",
+        "I know I\u2019ve done you wrong sweetheart",
+        "But now it\u2019s too late to cry"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sweetheart of mine, I hate to go",
+        "And leave you here all alone",
+        "May God protect and keep you",
+        "Wherever you may roam"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

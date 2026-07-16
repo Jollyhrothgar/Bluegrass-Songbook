@@ -1,0 +1,39 @@
+{
+  "slug": "ill-love-you-til-the-day-i-die",
+  "title": "I\u2019ll Love You Til the Day I Die",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-love-you-til-the-day-i-die/",
+  "raw_lyrics": "Though a roamer in life I\u2019ve rambled\nFor riches my life\u2019s been denied\nBut in love I found wealth full and freely\nWith its help I\u2019ll keep troubles in stride\n\nLove knows no boundaries or pathways\nIt has no clinging or ties\nToo precious to live here without it\nI\u2019ll love you til the day I die\n\nThough the trials and troubles are many\nAt times I stand woefully bent\nStill I long for each moment of livin\nMy heart poureth o\u2019er til the end",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Though a roamer in life I\u2019ve rambled",
+        "For riches my life\u2019s been denied",
+        "But in love I found wealth full and freely",
+        "With its help I\u2019ll keep troubles in stride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Love knows no boundaries or pathways",
+        "It has no clinging or ties",
+        "Too precious to live here without it",
+        "I\u2019ll love you til the day I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though the trials and troubles are many",
+        "At times I stand woefully bent",
+        "Still I long for each moment of livin",
+        "My heart poureth o\u2019er til the end"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "little-home-in-tennessee",
+  "title": "Little Home In Tennessee",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-home-in-tennessee/",
+  "raw_lyrics": "I am always dreaming of my little home\nBack among the hills of Tennessee\nI am always yearning, longing to return\nTo the place that means the world to me\n\nJust a little shack roof all turning black\nStill it\u2019s a place there to me\nSong birds always singing round the kitchen door\nOf my little home in Tennessee\n\nI can see my mother standing by the gate\nAs I drove the old horse up the lane\nShe would never scold me when I came home late\nHow I wish that I had never cause her pain\n\nJust a tender smile beaming all the while\nNo one could be half so kind to me\nNow she\u2019s gone to Heaven and she\u2019ll never return\nTo my little home in Tennessee\n\nI can still remember many years ago\nWhen my sweetheart wandered by my side\nDown among the mountains where wild flowers grow\nThere she promised she would be my bride\n\nThen another man won her heart and hand\nShe always meant the world to me\nI was broken hearted and I went away\nFrom my little home in Tennessee",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am always dreaming of my little home",
+        "Back among the hills of Tennessee",
+        "I am always yearning, longing to return",
+        "To the place that means the world to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a little shack roof all turning black",
+        "Still it\u2019s a place there to me",
+        "Song birds always singing round the kitchen door",
+        "Of my little home in Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can see my mother standing by the gate",
+        "As I drove the old horse up the lane",
+        "She would never scold me when I came home late",
+        "How I wish that I had never cause her pain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a tender smile beaming all the while",
+        "No one could be half so kind to me",
+        "Now she\u2019s gone to Heaven and she\u2019ll never return",
+        "To my little home in Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can still remember many years ago",
+        "When my sweetheart wandered by my side",
+        "Down among the mountains where wild flowers grow",
+        "There she promised she would be my bride"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then another man won her heart and hand",
+        "She always meant the world to me",
+        "I was broken hearted and I went away",
+        "From my little home in Tennessee"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

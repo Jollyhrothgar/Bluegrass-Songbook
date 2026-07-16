@@ -1,0 +1,39 @@
+{
+  "slug": "when-you-go-walking-after-midnight",
+  "title": "When You Go Walking After Midnight",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-you-go-walking-after-midnight/",
+  "raw_lyrics": "When you go walking after midnight\nOver on the wrong side of town\nWalk down any street many lost souls you\u2019ll meet\nWhose lives are broken like mine\n\nYou\u2019ll find souls wandering out in darkness\nWhose place in life they\u2019ll never find\nWandering so aimless and hopelessly\nWhose lives are broken like mine\n\nThank God you\u2019ve got a home to go to\nAnd a woman\u2019s love to keep you warm\nYou won\u2019t find the stars in the honky-tonk and bars\nGo home to your woman\u2019s loving arms",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "When you go walking after midnight",
+        "Over on the wrong side of town",
+        "Walk down any street many lost souls you\u2019ll meet",
+        "Whose lives are broken like mine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ll find souls wandering out in darkness",
+        "Whose place in life they\u2019ll never find",
+        "Wandering so aimless and hopelessly",
+        "Whose lives are broken like mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Thank God you\u2019ve got a home to go to",
+        "And a woman\u2019s love to keep you warm",
+        "You won\u2019t find the stars in the honky-tonk and bars",
+        "Go home to your woman\u2019s loving arms"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

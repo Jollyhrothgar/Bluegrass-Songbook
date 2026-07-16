@@ -1,0 +1,39 @@
+{
+  "slug": "im-too-old-to-stand-a-broken-heart",
+  "title": "I\u2019m too Old to Stand a Broken Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-too-old-to-stand-a-broken-heart/",
+  "raw_lyrics": "When were young we fell in love and married\nThat\u2019s been so many moons ago\nAnd through these years we\u2019ve raised a family\nI\u2019ve cherished each moment with you Rose\n\nBut to my surprise last night you told me\nYou said that we would have to part\nSo you must know tonight my Rosie\nThat I\u2019m too old to stand a broken heart\n\nNow the children they have gone and left us\nThey all have families of their own\nAnd we\u2019re alone just like we started\nIn our peaceful little country home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When were young we fell in love and married",
+        "That\u2019s been so many moons ago",
+        "And through these years we\u2019ve raised a family",
+        "I\u2019ve cherished each moment with you Rose"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But to my surprise last night you told me",
+        "You said that we would have to part",
+        "So you must know tonight my Rosie",
+        "That I\u2019m too old to stand a broken heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the children they have gone and left us",
+        "They all have families of their own",
+        "And we\u2019re alone just like we started",
+        "In our peaceful little country home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

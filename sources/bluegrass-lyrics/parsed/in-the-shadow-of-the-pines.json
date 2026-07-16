@@ -1,0 +1,44 @@
+{
+  "slug": "in-the-shadow-of-the-pines",
+  "title": "In The Shadow Of The Pines",
+  "source_url": "https://www.bluegrasslyrics.com/song/in-the-shadow-of-the-pines/",
+  "raw_lyrics": "We had wandered in the shadow of the pines\nThe moon looked down on you and me\nAnd a darkness stole across the summer sky\nAnd a shadow came between my love and me\n\nOh, darling, come love me as before\nCome back to leave me nevermore\nAt that spot I\u2019m sad and lonely\nAnd the sun no longer shines\nCome and meet me in the shadow of the pines\n\nOh, you went away and left me and my tears I could not hide\nYou went away and not a word was said\nWhile my throbbing heart was breaking underneath its load of pride\nAnd the pine trees sobbed in pity o\u2019er my head\nAll our future is o\u2019er shadowed by the darkness of despair\nAnd across life\u2019s path the sun no longer shines\nOh, I\u2019d give this whole world gladly once again to meet her there\nAnd reunite in the shadow of the pines",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We had wandered in the shadow of the pines",
+        "The moon looked down on you and me",
+        "And a darkness stole across the summer sky",
+        "And a shadow came between my love and me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, darling, come love me as before",
+        "Come back to leave me nevermore",
+        "At that spot I\u2019m sad and lonely",
+        "And the sun no longer shines",
+        "Come and meet me in the shadow of the pines"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, you went away and left me and my tears I could not hide",
+        "You went away and not a word was said",
+        "While my throbbing heart was breaking underneath its load of pride",
+        "And the pine trees sobbed in pity o\u2019er my head",
+        "All our future is o\u2019er shadowed by the darkness of despair",
+        "And across life\u2019s path the sun no longer shines",
+        "Oh, I\u2019d give this whole world gladly once again to meet her there",
+        "And reunite in the shadow of the pines"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "lonesome-blues",
+  "title": "Lonesome Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-blues/",
+  "raw_lyrics": "I got the lonesome blues tonight\nWon\u2019t you stay here dear friend that\u2019s what I need\nSomeone to hold me tight well it\u2019s all right\nI got the lonesome blues tonight\n\nI got the homely blues tonight\nMay be got some time to lend I\u2019ll try to be\nThe one you miss tonight make you feel all right\nI got the homely blues tonight\n\nI got the cold cold blues tonight\nWon\u2019t you try to understand if I can be\nWith someone else tonight when you dim the light\nI got the cold cold blues tonight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I got the lonesome blues tonight",
+        "Won\u2019t you stay here dear friend that\u2019s what I need",
+        "Someone to hold me tight well it\u2019s all right",
+        "I got the lonesome blues tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I got the homely blues tonight",
+        "May be got some time to lend I\u2019ll try to be",
+        "The one you miss tonight make you feel all right",
+        "I got the homely blues tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I got the cold cold blues tonight",
+        "Won\u2019t you try to understand if I can be",
+        "With someone else tonight when you dim the light",
+        "I got the cold cold blues tonight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

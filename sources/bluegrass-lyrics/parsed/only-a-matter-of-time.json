@@ -1,0 +1,39 @@
+{
+  "slug": "only-a-matter-of-time",
+  "title": "Only A Matter Of Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/only-a-matter-of-time/",
+  "raw_lyrics": "There\u2019s no use in denying the tears you\u2019ve been crying\nTell me have you made up your mind?\nIt seems all I can do is bring trouble to you\nIt was only a matter of time.\n\nNow that you\u2019re leaving me darling\nHow slowly the hours pass me by\nThought I could love you forever\nBut it was only a matter of time.\n\nHad I known from the start I\u2019d only break your heart\nWell darling I would have set you free\nBut a love that is wrong can only last so long\nBefore it fades to memory.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s no use in denying the tears you\u2019ve been crying",
+        "Tell me have you made up your mind?",
+        "It seems all I can do is bring trouble to you",
+        "It was only a matter of time."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now that you\u2019re leaving me darling",
+        "How slowly the hours pass me by",
+        "Thought I could love you forever",
+        "But it was only a matter of time."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Had I known from the start I\u2019d only break your heart",
+        "Well darling I would have set you free",
+        "But a love that is wrong can only last so long",
+        "Before it fades to memory."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

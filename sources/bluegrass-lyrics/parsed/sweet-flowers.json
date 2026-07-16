@@ -1,0 +1,39 @@
+{
+  "slug": "sweet-flowers",
+  "title": "Sweet Flowers",
+  "source_url": "https://www.bluegrasslyrics.com/song/sweet-flowers/",
+  "raw_lyrics": "Darling soon I will be sleeping in the churchyard over there\nWhere grass and flowers are growing and birds sing everywhere\nWhere the grass grows above me and spring flowers gentry wave\nWill you do this darling plant sweet flowers on my grave\n\nFrom you sweetheart I\u2019m leaving your smile I\u2019ll never more see\nDarling don\u2019t grieve when we\u2019re parted pretty flowers will speak to me\nI will dream that you will be near me as the blossoms gently wave\nWill you do this darling plant sweet flowers on my grave\n\nWhen the golden bond is broken and they lay me down to sleep\nThis will be the only token of our love I will want to keep\nThat when I leave you darling this one little wish I crave\nIn memory of our love dear plant sweet flowers on my grave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Darling soon I will be sleeping in the churchyard over there",
+        "Where grass and flowers are growing and birds sing everywhere",
+        "Where the grass grows above me and spring flowers gentry wave",
+        "Will you do this darling plant sweet flowers on my grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "From you sweetheart I\u2019m leaving your smile I\u2019ll never more see",
+        "Darling don\u2019t grieve when we\u2019re parted pretty flowers will speak to me",
+        "I will dream that you will be near me as the blossoms gently wave",
+        "Will you do this darling plant sweet flowers on my grave"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the golden bond is broken and they lay me down to sleep",
+        "This will be the only token of our love I will want to keep",
+        "That when I leave you darling this one little wish I crave",
+        "In memory of our love dear plant sweet flowers on my grave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

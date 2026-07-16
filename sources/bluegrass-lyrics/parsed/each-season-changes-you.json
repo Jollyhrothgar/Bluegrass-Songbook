@@ -1,0 +1,39 @@
+{
+  "slug": "each-season-changes-you",
+  "title": "Each Season Changes You",
+  "source_url": "https://www.bluegrasslyrics.com/song/each-season-changes-you/",
+  "raw_lyrics": "It was springtime when I found you like a flower\nAnd our love grew warmer with the summer sun\nIn the fall I soon could see your love was changing\nBroke my heart to see what wintertime had done\n\nLike the weather your heart changes with each season\nSpringtime, summer, fall, and winter too\nThough I know I\u2019ll never understand the reason\nI still wonder why each season changes you\n\nCome spring, you said that you were sorry\nAnd the summer brought a golden memory\nIn the fall again, I saw your love was changing\nAnd the winter brought the same old misery",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It was springtime when I found you like a flower",
+        "And our love grew warmer with the summer sun",
+        "In the fall I soon could see your love was changing",
+        "Broke my heart to see what wintertime had done"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Like the weather your heart changes with each season",
+        "Springtime, summer, fall, and winter too",
+        "Though I know I\u2019ll never understand the reason",
+        "I still wonder why each season changes you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come spring, you said that you were sorry",
+        "And the summer brought a golden memory",
+        "In the fall again, I saw your love was changing",
+        "And the winter brought the same old misery"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

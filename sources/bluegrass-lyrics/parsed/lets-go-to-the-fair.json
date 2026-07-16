@@ -1,0 +1,49 @@
+{
+  "slug": "lets-go-to-the-fair",
+  "title": "Let\u2019s Go To The Fair",
+  "source_url": "https://www.bluegrasslyrics.com/song/lets-go-to-the-fair/",
+  "raw_lyrics": "Come on boys let\u2019s go to the fair\nSee the funny sights and the cool night air\nGrasshopper kissing the old black crow\nRoad hog red do the dose-ee-doe\n\nMore funny things than you ever did see\nRingtail coons monkeys in the trees\nPussy cat combing the tomcat\u2019s hair\nCome on boys let\u2019s go to the fair\n\nHad a banjo picking rooster the cockiest of \u2019em all\nStrutted on the stage in his bib overalls\nClose behind was old fiddling bear\nBluegrass music by a rooster and a bear\n\nOld mother goose wore fancy clothes\nHigh heeled slippers and fancy clothes\nAn old bare possum in his underwear\nKilled himself a laughing at the county fair",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come on boys let\u2019s go to the fair",
+        "See the funny sights and the cool night air",
+        "Grasshopper kissing the old black crow",
+        "Road hog red do the dose-ee-doe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "More funny things than you ever did see",
+        "Ringtail coons monkeys in the trees",
+        "Pussy cat combing the tomcat\u2019s hair",
+        "Come on boys let\u2019s go to the fair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Had a banjo picking rooster the cockiest of \u2019em all",
+        "Strutted on the stage in his bib overalls",
+        "Close behind was old fiddling bear",
+        "Bluegrass music by a rooster and a bear"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Old mother goose wore fancy clothes",
+        "High heeled slippers and fancy clothes",
+        "An old bare possum in his underwear",
+        "Killed himself a laughing at the county fair"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

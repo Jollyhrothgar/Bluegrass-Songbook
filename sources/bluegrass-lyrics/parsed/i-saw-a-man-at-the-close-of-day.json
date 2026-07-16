@@ -1,0 +1,69 @@
+{
+  "slug": "i-saw-a-man-at-the-close-of-day",
+  "title": "I Saw a Man at the Close of Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-saw-a-man-at-the-close-of-day/",
+  "raw_lyrics": "I saw a man at the close of day\nstanding by a grocery door\nHis eyes were sunken his lips were parched\nAnd I viewed him o\u2019er and o\u2019er\n\nHis little son stood by his side\nAnd unto him he said\nOh father mother is sick at home\nAnd sister cries for bread\n\nHe turned around went in at the door\nHe staggered up to the bar\nAnd faltering on to the landlord sayin\u2019\nJust give me one dram more\n\nA year or so I passed thereby\nAnd a crowd stood round the door\nWhen I asked the reason one replied\nThe drunkard is no more\n\nJust then a hearse moved slowly by\nNo wife nor children near\nThey had gone before this foul murder\nAnd left this world of care\n\nCome all you jolly dram drinkers\nBy this a warning take\nAnd quit the overflowing bowl\nBefore it is too late",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I saw a man at the close of day",
+        "standing by a grocery door",
+        "His eyes were sunken his lips were parched",
+        "And I viewed him o\u2019er and o\u2019er"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His little son stood by his side",
+        "And unto him he said",
+        "Oh father mother is sick at home",
+        "And sister cries for bread"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He turned around went in at the door",
+        "He staggered up to the bar",
+        "And faltering on to the landlord sayin\u2019",
+        "Just give me one dram more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A year or so I passed thereby",
+        "And a crowd stood round the door",
+        "When I asked the reason one replied",
+        "The drunkard is no more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just then a hearse moved slowly by",
+        "No wife nor children near",
+        "They had gone before this foul murder",
+        "And left this world of care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come all you jolly dram drinkers",
+        "By this a warning take",
+        "And quit the overflowing bowl",
+        "Before it is too late"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

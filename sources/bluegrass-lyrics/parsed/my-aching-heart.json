@@ -1,0 +1,39 @@
+{
+  "slug": "my-aching-heart",
+  "title": "My Aching Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-aching-heart/",
+  "raw_lyrics": "In time my aching heart will mend\nThrough all the sorrow that I\u2019m in\nAnd then I\u2019ll see the light sweetheart\nFor someone new will take your place\n\nSo I\u2019ll stand up and be brave\nI\u2019ll grieve each minute of the way\nAnd on the day my tears will dry\nI\u2019ll forget I\u2019ve ever lived this life\n\nI\u2019ve paid the price for loving you\nAnd lived in dreams that could not be\nI never thought it\u2019d end this way\nBut I will smile again someday",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In time my aching heart will mend",
+        "Through all the sorrow that I\u2019m in",
+        "And then I\u2019ll see the light sweetheart",
+        "For someone new will take your place"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So I\u2019ll stand up and be brave",
+        "I\u2019ll grieve each minute of the way",
+        "And on the day my tears will dry",
+        "I\u2019ll forget I\u2019ve ever lived this life"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve paid the price for loving you",
+        "And lived in dreams that could not be",
+        "I never thought it\u2019d end this way",
+        "But I will smile again someday"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

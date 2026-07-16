@@ -1,0 +1,45 @@
+{
+  "slug": "cannonball-the",
+  "title": "Cannonball, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/cannonball-the/",
+  "raw_lyrics": "You can wash my jumper starch my overalls\nCatch that train they call the Cannonball\nFrom Buffalo to Washington\n\nYonder comes the train coming down the track\nCarrying me away but it aint gonna carry me back\nMy honey babe my blue eyed babe\n\nMy baby left me she even took my shoes\nEnough to give me the doggone worried blues\nShe\u2019s gone she\u2019s solid gone\n\nI\u2019m going up north I\u2019m going up north this fall\nIf my luck don\u2019t change I wont be back at all\nMy honey babe I\u2019m leaving you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You can wash my jumper starch my overalls",
+        "Catch that train they call the Cannonball",
+        "From Buffalo to Washington"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yonder comes the train coming down the track",
+        "Carrying me away but it aint gonna carry me back",
+        "My honey babe my blue eyed babe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My baby left me she even took my shoes",
+        "Enough to give me the doggone worried blues",
+        "She\u2019s gone she\u2019s solid gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going up north I\u2019m going up north this fall",
+        "If my luck don\u2019t change I wont be back at all",
+        "My honey babe I\u2019m leaving you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

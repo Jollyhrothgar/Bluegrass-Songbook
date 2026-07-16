@@ -1,0 +1,59 @@
+{
+  "slug": "after-the-fire-is-gone",
+  "title": "After The Fire Is Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/after-the-fire-is-gone/",
+  "raw_lyrics": "Love is where you find it\nWhen you find no love at home\nAnd there\u2019s nothin\u2019 cold as ashes\nAfter the fire is gone\n\nThe bottle is almost empty\nThe clock just now struck ten\nDarlin\u2019 i had to call you\nTo our favorite place again\n\nI know it\u2019s wrong for us to meet\nBut the fires gone out at home\nAnd there\u2019 nothin\u2019 cold as ashes\nAfter the fire is gone\n\nYour lips are warm and tender\nYour arms hold me just right\nSweet words of love you remember\nThat the one at home forgot\n\nEach time we say it\u2019s the last time\nBut we keep hangin\u2019 on\nAnd there\u2019s nothin\u2019 cold as ashes\nAfter the fire is gone",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Love is where you find it",
+        "When you find no love at home",
+        "And there\u2019s nothin\u2019 cold as ashes",
+        "After the fire is gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The bottle is almost empty",
+        "The clock just now struck ten",
+        "Darlin\u2019 i had to call you",
+        "To our favorite place again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know it\u2019s wrong for us to meet",
+        "But the fires gone out at home",
+        "And there\u2019 nothin\u2019 cold as ashes",
+        "After the fire is gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Your lips are warm and tender",
+        "Your arms hold me just right",
+        "Sweet words of love you remember",
+        "That the one at home forgot"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each time we say it\u2019s the last time",
+        "But we keep hangin\u2019 on",
+        "And there\u2019s nothin\u2019 cold as ashes",
+        "After the fire is gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

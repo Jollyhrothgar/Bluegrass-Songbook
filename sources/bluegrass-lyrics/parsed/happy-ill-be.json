@@ -1,0 +1,49 @@
+{
+  "slug": "happy-ill-be",
+  "title": "Happy I\u2019ll Be",
+  "source_url": "https://www.bluegrasslyrics.com/song/happy-ill-be/",
+  "raw_lyrics": "Jesus come and hold my hand\nWhile I walk this rocky road\nTravellin\u2019 to a better land\nWhere my friends will meet me I know\n\nOh I\u2019ll soon (yes I\u2019ll soon) be on my way (be on my way)\nSeems every time (seems every time) I kneel to pray\nI hear my friends a\u2019callin me\nIn the home above (in the home above) happy I\u2019ll be\n\nI\u2019m so tired and all alone\nBut I must keep travellin\u2019 on\nI\u2018ll keep goin\u2019 until I die\nI\u2019ll meet my friends (I\u2019ll meet my friends) up there on high\n\nWhen I reach that home on high\nAnd bid my troubles on earth goodbye\nI\u2019ll be glad this life is o\u2019er\nThis rocky road (this rocky road) I\u2019ll walk no more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Jesus come and hold my hand",
+        "While I walk this rocky road",
+        "Travellin\u2019 to a better land",
+        "Where my friends will meet me I know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I\u2019ll soon (yes I\u2019ll soon) be on my way (be on my way)",
+        "Seems every time (seems every time) I kneel to pray",
+        "I hear my friends a\u2019callin me",
+        "In the home above (in the home above) happy I\u2019ll be"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m so tired and all alone",
+        "But I must keep travellin\u2019 on",
+        "I\u2018ll keep goin\u2019 until I die",
+        "I\u2019ll meet my friends (I\u2019ll meet my friends) up there on high"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I reach that home on high",
+        "And bid my troubles on earth goodbye",
+        "I\u2019ll be glad this life is o\u2019er",
+        "This rocky road (this rocky road) I\u2019ll walk no more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

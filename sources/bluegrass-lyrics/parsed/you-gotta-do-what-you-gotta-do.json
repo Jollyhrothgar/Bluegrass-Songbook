@@ -1,0 +1,51 @@
+{
+  "slug": "you-gotta-do-what-you-gotta-do",
+  "title": "You Gotta Do What You Gotta Do",
+  "source_url": "https://www.bluegrasslyrics.com/song/you-gotta-do-what-you-gotta-do/",
+  "raw_lyrics": "I just got a call from my good girl today\nSaid she must be going on her way\nThere\u2019s better things on down the line\nAnd I\u2019ll not try to change her mind\nShe seems to think we\u2019re better off this way\n\nBut my heart it breaks in two\nI can\u2019t believe that it\u2019s true\nThough I want you to stay you\u2019re leaving anyway\nYou gotta do what you gotta do\n\nThere\u2019s times that I know I\u2019ve not been there for you\nMaybe that\u2019s the reason for your leaving\nI\u2019ll try to keep you off my mind\n\u2019cause a girl like you is hard to find\nSomehow I\u2019ll just have to stop my grieving\n\nI guess it would be better if I\u2019d never known your love\nThen I wouldn\u2019t know just what I\u2019m missing\nBut I\u2019ve seen that look in your eye and now it comes as no surprise\nThat another\u2019s lips soon you will be kissing",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I just got a call from my good girl today",
+        "Said she must be going on her way",
+        "There\u2019s better things on down the line",
+        "And I\u2019ll not try to change her mind",
+        "She seems to think we\u2019re better off this way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "But my heart it breaks in two",
+        "I can\u2019t believe that it\u2019s true",
+        "Though I want you to stay you\u2019re leaving anyway",
+        "You gotta do what you gotta do"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s times that I know I\u2019ve not been there for you",
+        "Maybe that\u2019s the reason for your leaving",
+        "I\u2019ll try to keep you off my mind",
+        "\u2019cause a girl like you is hard to find",
+        "Somehow I\u2019ll just have to stop my grieving"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I guess it would be better if I\u2019d never known your love",
+        "Then I wouldn\u2019t know just what I\u2019m missing",
+        "But I\u2019ve seen that look in your eye and now it comes as no surprise",
+        "That another\u2019s lips soon you will be kissing"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

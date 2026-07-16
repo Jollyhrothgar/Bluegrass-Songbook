@@ -1,0 +1,39 @@
+{
+  "slug": "the-old-home-town",
+  "title": "The Old Home Town",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-old-home-town/",
+  "raw_lyrics": "To night my heart is lonely for the folks back home\nWhere I left my mother and daddy all alone\nThere\u2019s been a lot of changes since I been around\nI\u2019d like to wander back to the old home town\n\nYou\u2019ll never miss the home folks until you\u2019ve gone away\nThen you\u2019ll need a friend to help you every day\nThen you\u2019ll call on mother but she won\u2019t be around\nI\u2019d like to wander back to the old home town\n\nI\u2019ve searched this whole world over since I\u2019ve been around\nI\u2019ve never found a place just like the old home town\nIf I could live life over I\u2019d never roam around\nI\u2019d like to wander back to the old home day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "To night my heart is lonely for the folks back home",
+        "Where I left my mother and daddy all alone",
+        "There\u2019s been a lot of changes since I been around",
+        "I\u2019d like to wander back to the old home town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019ll never miss the home folks until you\u2019ve gone away",
+        "Then you\u2019ll need a friend to help you every day",
+        "Then you\u2019ll call on mother but she won\u2019t be around",
+        "I\u2019d like to wander back to the old home town"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve searched this whole world over since I\u2019ve been around",
+        "I\u2019ve never found a place just like the old home town",
+        "If I could live life over I\u2019d never roam around",
+        "I\u2019d like to wander back to the old home day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

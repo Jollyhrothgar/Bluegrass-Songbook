@@ -1,0 +1,69 @@
+{
+  "slug": "hello-stranger",
+  "title": "Hello Stranger",
+  "source_url": "https://www.bluegrasslyrics.com/song/hello-stranger/",
+  "raw_lyrics": "Now hello stranger put your loving hand in mine\nHello stranger put your loving hand in mine\nYou are a stranger\nBut you\u2019re a pal of mine\n\nNow get up rounder let a working may lay down\nGet up rounder let a working man lay down\nYou are a rounder\nBut you\u2019re all out and down\n\nEvery time I ride that six and fourth street car\nEvery time I ride that six and fourth street car\nI can see my baby\nFrom here behind these bars\n\nShe bowed her head she waved both hands at me\nShe bowed her head she waved both hands at me\nI\u2019m prison bound\nI\u2019m longing to be free\n\nOh I\u2019ll see you when your troubles are like mine\nOh I\u2019ll see you when your troubles are like mine\nOh I\u2019ll see you\nWhen you haven\u2019t got a dime\n\nWeeping like a willow and mourning like a dove\nWeeping like a willow and mourning like a dove\nThere\u2019s a girl in the country\nThat I really love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now hello stranger put your loving hand in mine",
+        "Hello stranger put your loving hand in mine",
+        "You are a stranger",
+        "But you\u2019re a pal of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now get up rounder let a working may lay down",
+        "Get up rounder let a working man lay down",
+        "You are a rounder",
+        "But you\u2019re all out and down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every time I ride that six and fourth street car",
+        "Every time I ride that six and fourth street car",
+        "I can see my baby",
+        "From here behind these bars"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She bowed her head she waved both hands at me",
+        "She bowed her head she waved both hands at me",
+        "I\u2019m prison bound",
+        "I\u2019m longing to be free"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I\u2019ll see you when your troubles are like mine",
+        "Oh I\u2019ll see you when your troubles are like mine",
+        "Oh I\u2019ll see you",
+        "When you haven\u2019t got a dime"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Weeping like a willow and mourning like a dove",
+        "Weeping like a willow and mourning like a dove",
+        "There\u2019s a girl in the country",
+        "That I really love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

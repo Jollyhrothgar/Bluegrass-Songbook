@@ -1,0 +1,51 @@
+{
+  "slug": "ive-never-been-so-lonesome-in-my-life",
+  "title": "I\u2019ve Never Been So Lonesome In My Life",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-never-been-so-lonesome-in-my-life/",
+  "raw_lyrics": "Everything I ever loved is gone I lost my wife I lost my home\nI\u2019ve never been so lonesome in my life\nThe moon has even lost it\u2019s glow the sun don\u2019t shine anymore\nI\u2019ve never been so lonesome in my life\n\nSince you\u2019ve gone I\u2019ve cried to myself\nTold my heart there\u2019s nothing left\nI\u2019ve never been so lonesome in my life\nI\u2019ve walked the floor the streets of town\nGuess I\u2019ll never live it down\nI\u2019ve never been so lonesome in my life\n\nI heard that lonesome whistle blow seen lonesome midnights come and go\nI\u2019ve never been so lonesome in my life\nSeen days I thought would never end when only blues come creeping in\nI\u2019ve never been so lonesome in my life\n\nMy love for her will linger on even though she\u2019s done me wrong\nI\u2019ve never been so lonesome in my life\nSo I\u2019ll just live my life alone maybe some day she\u2019ll come home\nI\u2019ve never been so lonesome in my life",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Everything I ever loved is gone I lost my wife I lost my home",
+        "I\u2019ve never been so lonesome in my life",
+        "The moon has even lost it\u2019s glow the sun don\u2019t shine anymore",
+        "I\u2019ve never been so lonesome in my life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Since you\u2019ve gone I\u2019ve cried to myself",
+        "Told my heart there\u2019s nothing left",
+        "I\u2019ve never been so lonesome in my life",
+        "I\u2019ve walked the floor the streets of town",
+        "Guess I\u2019ll never live it down",
+        "I\u2019ve never been so lonesome in my life"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I heard that lonesome whistle blow seen lonesome midnights come and go",
+        "I\u2019ve never been so lonesome in my life",
+        "Seen days I thought would never end when only blues come creeping in",
+        "I\u2019ve never been so lonesome in my life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My love for her will linger on even though she\u2019s done me wrong",
+        "I\u2019ve never been so lonesome in my life",
+        "So I\u2019ll just live my life alone maybe some day she\u2019ll come home",
+        "I\u2019ve never been so lonesome in my life"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

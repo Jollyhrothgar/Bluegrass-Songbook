@@ -1,0 +1,49 @@
+{
+  "slug": "leavin",
+  "title": "Leavin\u2019",
+  "source_url": "https://www.bluegrasslyrics.com/song/leavin/",
+  "raw_lyrics": "Now I was a stranger in love and in town\nYou set me up then you put me down\nYou had your way with me every time\nBut leaving would take that load off my mind\n\nYou wanted love and you wanted more\nPeople and places like never before\nYou ran around like you thought I was blind\nBut leaving would take that load off my mind\n\nNow you had me fooled from the day that we met\nSweet lies you told me I\u2019ll never forget\nBut you can\u2019t keep lying and love and you\u2019ll find\nCause leaving will take that load off my mind\n\nNow don\u2019t you be waiting for my knock on your door\nThat kind of loving I don\u2019t need no more\nYou had your day until it came time\nFor leaving will take that load off my mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now I was a stranger in love and in town",
+        "You set me up then you put me down",
+        "You had your way with me every time",
+        "But leaving would take that load off my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You wanted love and you wanted more",
+        "People and places like never before",
+        "You ran around like you thought I was blind",
+        "But leaving would take that load off my mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you had me fooled from the day that we met",
+        "Sweet lies you told me I\u2019ll never forget",
+        "But you can\u2019t keep lying and love and you\u2019ll find",
+        "Cause leaving will take that load off my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now don\u2019t you be waiting for my knock on your door",
+        "That kind of loving I don\u2019t need no more",
+        "You had your day until it came time",
+        "For leaving will take that load off my mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

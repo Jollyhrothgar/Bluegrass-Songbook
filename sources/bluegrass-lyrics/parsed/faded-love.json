@@ -1,0 +1,48 @@
+{
+  "slug": "faded-love",
+  "title": "Faded Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/faded-love/",
+  "raw_lyrics": "As I look at the Ietters that you wrote to me\nIt\u2019s you that I\u2019m thinking of\nAs I read the lines that to me were so sweet\nI remember our faded love\n\nI miss you darling more and more every day\nAs heaven would miss the stars above\nWith every heartbeat I still think of you\nAnd remember our faded love.\n\nAs I think of the past and all the pleasures we had\nAs I watch the mating of the dove\nIt was in the springtime that you said good-bye\nI remember our faded love.\n\nPatsy Cline;  Live At The Opry\nBob Wills; For The Last Time\nThe Osborne Brothers; Up This Hill And Down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As I look at the Ietters that you wrote to me",
+        "It\u2019s you that I\u2019m thinking of",
+        "As I read the lines that to me were so sweet",
+        "I remember our faded love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I miss you darling more and more every day",
+        "As heaven would miss the stars above",
+        "With every heartbeat I still think of you",
+        "And remember our faded love."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I think of the past and all the pleasures we had",
+        "As I watch the mating of the dove",
+        "It was in the springtime that you said good-bye",
+        "I remember our faded love."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Patsy Cline;  Live At The Opry",
+        "Bob Wills; For The Last Time",
+        "The Osborne Brothers; Up This Hill And Down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

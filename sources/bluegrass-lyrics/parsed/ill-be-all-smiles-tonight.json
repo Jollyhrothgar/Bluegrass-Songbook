@@ -1,0 +1,57 @@
+{
+  "slug": "ill-be-all-smiles-tonight",
+  "title": "I\u2019ll Be All Smiles Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-be-all-smiles-tonight/",
+  "raw_lyrics": "I\u2019ll deck my brow with roses the loved ones may be there\nAnd gems that others gave me will shine within my hair\nAnd even those who know me will think my heart in light\nThough my heart may break tomorrow, I\u2019ll be all smiles tonight\n\nI\u2019ll be all smiles tonight, Love, I\u2019ll be all smiles tonight\nThough my heart may break tomorrow, I\u2019ll be all smiles tonight\n\nOh when the dance commences, Oh how I will rejoice\nI\u2019ll sing the songs he taught me without a faulting voice\nWhen the flattering ones come around me they\u2019ll think my heart is light\nThough my heart may break tomorrow, I\u2019ll be all smile tonight\n\nAnd when the room he entered with a bride upon his arm\nI stood and gazed upon him as though he was a charm\nAnd once he smiled upon her as once he\u2019d smiled at me\nThey knew not what I suffered, they found no change in me\n\nAnd when the dance is over and all have gone to rest\nI\u2019ll think of him, dear Mother, the one that I love best\nHe once did love me dearly and ne\u2019er from me would part\nHe sought not to deceive me, false friends have changed his heart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll deck my brow with roses the loved ones may be there",
+        "And gems that others gave me will shine within my hair",
+        "And even those who know me will think my heart in light",
+        "Though my heart may break tomorrow, I\u2019ll be all smiles tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll be all smiles tonight, Love, I\u2019ll be all smiles tonight",
+        "Though my heart may break tomorrow, I\u2019ll be all smiles tonight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh when the dance commences, Oh how I will rejoice",
+        "I\u2019ll sing the songs he taught me without a faulting voice",
+        "When the flattering ones come around me they\u2019ll think my heart is light",
+        "Though my heart may break tomorrow, I\u2019ll be all smile tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And when the room he entered with a bride upon his arm",
+        "I stood and gazed upon him as though he was a charm",
+        "And once he smiled upon her as once he\u2019d smiled at me",
+        "They knew not what I suffered, they found no change in me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And when the dance is over and all have gone to rest",
+        "I\u2019ll think of him, dear Mother, the one that I love best",
+        "He once did love me dearly and ne\u2019er from me would part",
+        "He sought not to deceive me, false friends have changed his heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

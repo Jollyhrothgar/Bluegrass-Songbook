@@ -1,0 +1,39 @@
+{
+  "slug": "love-me-darlin-just-tonight",
+  "title": "Love Me Darlin\u2019 Just Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/love-me-darlin-just-tonight/",
+  "raw_lyrics": "Love me darlin just tonight\nTake your arms and hold me tight\nTomorrow you may hold another\nLove me darlin\u2019 just tonight\n\nYou say tomorrow you\u2019re leaving\nWEll I hope you know the way that\u2019s right\nWell I pray to God you don\u2019t leave me\nLove me darlin just tonight\n\nTry to find true love in your hard\nTomorrow we may not have to part\nBut if you feel you must leave me\nLove me darlin just tonight",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Love me darlin just tonight",
+        "Take your arms and hold me tight",
+        "Tomorrow you may hold another",
+        "Love me darlin\u2019 just tonight"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You say tomorrow you\u2019re leaving",
+        "WEll I hope you know the way that\u2019s right",
+        "Well I pray to God you don\u2019t leave me",
+        "Love me darlin just tonight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Try to find true love in your hard",
+        "Tomorrow we may not have to part",
+        "But if you feel you must leave me",
+        "Love me darlin just tonight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

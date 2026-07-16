@@ -1,0 +1,49 @@
+{
+  "slug": "cabin-of-love",
+  "title": "Cabin Of Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/cabin-of-love/",
+  "raw_lyrics": "I\u2019m only a dreamer of romance\nMy love dreams can never come true\nI\u2019ll just pretend that I\u2019m happy\nAnd smile thru these tears dear at you\n\nI dreamed of a cabin of love dear\nWhere all of our dreams would come true\nBut another has taken my cabin\nAnd left me so lonely and blue\n\nNestled around my cabin\nThat means all the world to me\nOur love sweet heart will always linger\nFor you are a part dear of me\n\nWhere is the love we once cherished\nWhy didn\u2019t our love dreams come true\nAll I can do now is dream dear\nOf a cabin sweetheart dear and you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m only a dreamer of romance",
+        "My love dreams can never come true",
+        "I\u2019ll just pretend that I\u2019m happy",
+        "And smile thru these tears dear at you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I dreamed of a cabin of love dear",
+        "Where all of our dreams would come true",
+        "But another has taken my cabin",
+        "And left me so lonely and blue"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Nestled around my cabin",
+        "That means all the world to me",
+        "Our love sweet heart will always linger",
+        "For you are a part dear of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Where is the love we once cherished",
+        "Why didn\u2019t our love dreams come true",
+        "All I can do now is dream dear",
+        "Of a cabin sweetheart dear and you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

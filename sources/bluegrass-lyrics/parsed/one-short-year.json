@@ -1,0 +1,47 @@
+{
+  "slug": "one-short-year",
+  "title": "One Short Year",
+  "source_url": "https://www.bluegrasslyrics.com/song/one-short-year/",
+  "raw_lyrics": "Well it\u2019s all over town how you been runnin\u2019 round\nYou stay out every night till two or three\nIf you leave me here to cry good lord I don\u2019t know why\nYou ever made those sacred vows with me\n\nCan\u2019t you understand my dear I thought I made it clear\nI never thought it would end in one short year\n\nWell I try to understand why you love another man\nI try to understand but I don\u2019t\nWe had a life all planned you took another stand\nNow I beg you to come back but you won\u2019t\n\nJust a year ago today you vowed you would stay\nYou\u2019re empty words still torture my mind\nOur love was meant to last you put it in the past\nDo you think about the love you left behind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well it\u2019s all over town how you been runnin\u2019 round",
+        "You stay out every night till two or three",
+        "If you leave me here to cry good lord I don\u2019t know why",
+        "You ever made those sacred vows with me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Can\u2019t you understand my dear I thought I made it clear",
+        "I never thought it would end in one short year"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I try to understand why you love another man",
+        "I try to understand but I don\u2019t",
+        "We had a life all planned you took another stand",
+        "Now I beg you to come back but you won\u2019t"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a year ago today you vowed you would stay",
+        "You\u2019re empty words still torture my mind",
+        "Our love was meant to last you put it in the past",
+        "Do you think about the love you left behind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "love-someone-like-me",
+  "title": "Love Someone Like Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/love-someone-like-me/",
+  "raw_lyrics": "That dancin\u2019 moon is on the water you feel inclined romantic\u2019ly\nIf you do I think you oughta love someone like me\nThere ain\u2019t no place you should be goin\u2019 ain\u2019t no need for you to leave\nIt\u2019s a lover\u2019s night the stars are showin\u2019 you could love someone like me\n\nSomeone else might try and bind you\nBut my love will set you free\nIf your heart has got a mind to\nYou could love someone like me\nYou could love someone like me\n\nThat dancin\u2019 moon is on the water you feel inclined romantic\u2019ly\nIf you do I think you oughta love someone like me\nYou\u2019ve been thinkin\u2019 love won\u2019t find you honey wait right here and see\nIf your heart has got a mind to you could love someone like me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "That dancin\u2019 moon is on the water you feel inclined romantic\u2019ly",
+        "If you do I think you oughta love someone like me",
+        "There ain\u2019t no place you should be goin\u2019 ain\u2019t no need for you to leave",
+        "It\u2019s a lover\u2019s night the stars are showin\u2019 you could love someone like me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Someone else might try and bind you",
+        "But my love will set you free",
+        "If your heart has got a mind to",
+        "You could love someone like me",
+        "You could love someone like me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That dancin\u2019 moon is on the water you feel inclined romantic\u2019ly",
+        "If you do I think you oughta love someone like me",
+        "You\u2019ve been thinkin\u2019 love won\u2019t find you honey wait right here and see",
+        "If your heart has got a mind to you could love someone like me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

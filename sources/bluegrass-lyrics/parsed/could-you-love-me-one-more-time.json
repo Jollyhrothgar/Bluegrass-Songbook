@@ -1,0 +1,49 @@
+{
+  "slug": "could-you-love-me-one-more-time",
+  "title": "Could You Love Me One More Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/could-you-love-me-one-more-time/",
+  "raw_lyrics": "Could you love me one more time\nWith a love that really is mine\nI\u2019ve  waited so long they say you\u2019ve gone wrong\nHave I lost you forever this time\n\nWe\u2019ll go down by the river\nI\u2019ll ask you one last time\nAs the night breezes blow I\u2019ll whisper so low\nCould you love me one more time\n\nDo you think that I\u2019d believe\nThis talk that\u2019s going around\nI\u2019ve heard lots of things that somehow seem strange\nBut darling I wouldn\u2019t throw you down\n\nI know that you\u2019re my weakness\nI know you\u2019ll be my downfall\nI\u2019m not sorry we met and I\u2019ll never forget\nThat I gave you my heart soul and all",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Could you love me one more time",
+        "With a love that really is mine",
+        "I\u2019ve  waited so long they say you\u2019ve gone wrong",
+        "Have I lost you forever this time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "We\u2019ll go down by the river",
+        "I\u2019ll ask you one last time",
+        "As the night breezes blow I\u2019ll whisper so low",
+        "Could you love me one more time"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Do you think that I\u2019d believe",
+        "This talk that\u2019s going around",
+        "I\u2019ve heard lots of things that somehow seem strange",
+        "But darling I wouldn\u2019t throw you down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know that you\u2019re my weakness",
+        "I know you\u2019ll be my downfall",
+        "I\u2019m not sorry we met and I\u2019ll never forget",
+        "That I gave you my heart soul and all"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

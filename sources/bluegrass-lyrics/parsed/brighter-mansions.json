@@ -1,0 +1,59 @@
+{
+  "slug": "brighter-mansions",
+  "title": "Brighter Mansions",
+  "source_url": "https://www.bluegrasslyrics.com/song/brighter-mansions/",
+  "raw_lyrics": "There\u2019s a little church on Sunday morning\nWhere I go to kneel and pray\nIt\u2019s a place that God reserves for all\nWhile here on earth we stay\n\nIt\u2019s a place to lose your cares and worries\nAnd to leave the load you bear\nIt\u2019s a stepping stone on the road to glory\nThere\u2019s a brighter mansion over there\n\nThere\u2019s a brighter brighter mansion a brighter brighter mansion\nIn a world that\u2019s free from care\nIt\u2019s a home eternal in the Heavens\nThere\u2019s a brighter mansion over there\n\nThere the Savior standing at God\u2019s right hand\nWho will harken to our call\nBy His sweat and blood on the cross at Calvary\nGave His life for one and all\n\nNow by grace thru faith we attain His mercy\nAnd with beauties we will share\nThere\u2019s a sacred promise that He made to all\nThere\u2019s a brighter mansion over there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a little church on Sunday morning",
+        "Where I go to kneel and pray",
+        "It\u2019s a place that God reserves for all",
+        "While here on earth we stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a place to lose your cares and worries",
+        "And to leave the load you bear",
+        "It\u2019s a stepping stone on the road to glory",
+        "There\u2019s a brighter mansion over there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a brighter brighter mansion a brighter brighter mansion",
+        "In a world that\u2019s free from care",
+        "It\u2019s a home eternal in the Heavens",
+        "There\u2019s a brighter mansion over there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There the Savior standing at God\u2019s right hand",
+        "Who will harken to our call",
+        "By His sweat and blood on the cross at Calvary",
+        "Gave His life for one and all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now by grace thru faith we attain His mercy",
+        "And with beauties we will share",
+        "There\u2019s a sacred promise that He made to all",
+        "There\u2019s a brighter mansion over there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

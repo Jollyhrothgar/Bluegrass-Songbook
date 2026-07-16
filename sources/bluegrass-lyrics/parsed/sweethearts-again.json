@@ -1,0 +1,39 @@
+{
+  "slug": "sweethearts-again",
+  "title": "Sweethearts Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/sweethearts-again/",
+  "raw_lyrics": "I\u2019ll  never love another it\u2019s true\nOther lips don\u2019t kiss me like you do\nOther arms don\u2019t thrill me like you do\nJust one more kiss to be with you\n\nLets be sweethearts again\nJust the way we use to be\nLets be sweethearts again\nDarling just you and me\n\nJust one more chance with you again\nMy tortured heart knows how it sinned\nOne more chance and I\u2019ll be true\nJust one more chance with you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll  never love another it\u2019s true",
+        "Other lips don\u2019t kiss me like you do",
+        "Other arms don\u2019t thrill me like you do",
+        "Just one more kiss to be with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lets be sweethearts again",
+        "Just the way we use to be",
+        "Lets be sweethearts again",
+        "Darling just you and me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just one more chance with you again",
+        "My tortured heart knows how it sinned",
+        "One more chance and I\u2019ll be true",
+        "Just one more chance with you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

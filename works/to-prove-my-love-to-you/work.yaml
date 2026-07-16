@@ -1,0 +1,11 @@
+id: to-prove-my-love-to-you
+title: To Prove My Love To You
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/to-prove-my-love-to-you/
+      imported_at: '2026-02-08'

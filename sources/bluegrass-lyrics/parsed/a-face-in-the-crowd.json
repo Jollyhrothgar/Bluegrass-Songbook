@@ -1,0 +1,39 @@
+{
+  "slug": "a-face-in-the-crowd",
+  "title": "A Face In The Crowd",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-face-in-the-crowd/",
+  "raw_lyrics": "A face in the crowd on your wedding day\nYou tossed me a rosebud from your bridal bouquet\nNo one seemed to notice no one wondered why\nWhen you pledged your love to him there were tears in my eyes.\n\nA face in the crowd with a pale yellow rose\nYour gown of white satin my half-worn-out clothes\nI knew your love one time but your love now he holds\nI\u2019m a face in the crowd with a pale yellow rose.\n\nAs your friends they all kissed you I heard someone say\nThe man with the rosebud from your bridal bouquet\nWas he kind of special or was he just a friend\nI heard you speak softly he was only a friend.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "A face in the crowd on your wedding day",
+        "You tossed me a rosebud from your bridal bouquet",
+        "No one seemed to notice no one wondered why",
+        "When you pledged your love to him there were tears in my eyes."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "A face in the crowd with a pale yellow rose",
+        "Your gown of white satin my half-worn-out clothes",
+        "I knew your love one time but your love now he holds",
+        "I\u2019m a face in the crowd with a pale yellow rose."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As your friends they all kissed you I heard someone say",
+        "The man with the rosebud from your bridal bouquet",
+        "Was he kind of special or was he just a friend",
+        "I heard you speak softly he was only a friend."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

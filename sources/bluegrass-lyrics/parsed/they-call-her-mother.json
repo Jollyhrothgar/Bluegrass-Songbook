@@ -1,0 +1,79 @@
+{
+  "slug": "they-call-her-mother",
+  "title": "They Call Her Mother",
+  "source_url": "https://www.bluegrasslyrics.com/song/they-call-her-mother/",
+  "raw_lyrics": "There\u2019s a store by the road in the country\nAmong the hills where the evergreens grow\nIn that store by the road there\u2019s a woman\nWho is different from others I know\n\nNow her irony-gray hair\u2019s turned to silver\nAnd her kind eyes are ever soft and blue\nAlways she has a kind word for others\nAnd a smile ever waiting for you\n\nShe\u2019s adored for her sunny disposition\nBy the women, the children and men\nIn all the neighboring hills they call her Mother\nFor she\u2019s really a mother dear to them\n\nShe is cheerful like the birds in the cedars\nShe is modest like the songs that they sing\nIn the hills nearby they call her Mother\nFor she\u2019s really a mother true to them\n\nWhen the clouds hang low on the mountain\nAnd the pines are bent low by the snow\nNeighbors go to that store by the roadside\nIt\u2019s a place that they all love to go\n\nSome go there to play cards at the table\nSome just sit by the warm, cheering fire\nAnd dear Mother with kind disposition\nFinds a way to make all happy there\n\nShe\u2019s adored for her sunny disposition\nBy the women, the children and the men\nIn all the neighboring hills they call her Mother\nFor she\u2019s really a mother dear to them",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a store by the road in the country",
+        "Among the hills where the evergreens grow",
+        "In that store by the road there\u2019s a woman",
+        "Who is different from others I know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now her irony-gray hair\u2019s turned to silver",
+        "And her kind eyes are ever soft and blue",
+        "Always she has a kind word for others",
+        "And a smile ever waiting for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s adored for her sunny disposition",
+        "By the women, the children and men",
+        "In all the neighboring hills they call her Mother",
+        "For she\u2019s really a mother dear to them"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She is cheerful like the birds in the cedars",
+        "She is modest like the songs that they sing",
+        "In the hills nearby they call her Mother",
+        "For she\u2019s really a mother true to them"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the clouds hang low on the mountain",
+        "And the pines are bent low by the snow",
+        "Neighbors go to that store by the roadside",
+        "It\u2019s a place that they all love to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some go there to play cards at the table",
+        "Some just sit by the warm, cheering fire",
+        "And dear Mother with kind disposition",
+        "Finds a way to make all happy there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s adored for her sunny disposition",
+        "By the women, the children and the men",
+        "In all the neighboring hills they call her Mother",
+        "For she\u2019s really a mother dear to them"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

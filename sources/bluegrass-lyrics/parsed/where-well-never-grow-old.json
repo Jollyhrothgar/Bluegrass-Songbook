@@ -1,0 +1,49 @@
+{
+  "slug": "where-well-never-grow-old",
+  "title": "Where We\u2019ll Never Grow Old",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-well-never-grow-old/",
+  "raw_lyrics": "I have heard of a land on the far away strand\n\u2018Tis a beautiful home of the soul\nBuilt by Jesus on high, there we never shall die\n\u2018Tis a land where we never grow old\n\nNever grow old, never grow old\nIn a land where we\u2019ll never grow old\nNever grow old, never grow old\nIn a land where we\u2019ll never grow old\n\nIn that beautiful home where we\u2019ll never more roam\nWe shall be in the sweet by and by\nHappy praise to the king thru eternity sing\n\u2018Tis a land where we never shall die\n\nWhen our work here is done and the life crown is won\nAnd out troubles and trials are o\u2019er\nAll our sorrows will end and our voices will blend\nWith the loved ones who\u2019ve gone on before",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have heard of a land on the far away strand",
+        "\u2018Tis a beautiful home of the soul",
+        "Built by Jesus on high, there we never shall die",
+        "\u2018Tis a land where we never grow old"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Never grow old, never grow old",
+        "In a land where we\u2019ll never grow old",
+        "Never grow old, never grow old",
+        "In a land where we\u2019ll never grow old"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In that beautiful home where we\u2019ll never more roam",
+        "We shall be in the sweet by and by",
+        "Happy praise to the king thru eternity sing",
+        "\u2018Tis a land where we never shall die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When our work here is done and the life crown is won",
+        "And out troubles and trials are o\u2019er",
+        "All our sorrows will end and our voices will blend",
+        "With the loved ones who\u2019ve gone on before"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

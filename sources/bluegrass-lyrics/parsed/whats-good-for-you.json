@@ -1,0 +1,39 @@
+{
+  "slug": "whats-good-for-you",
+  "title": "What\u2019s Good For You",
+  "source_url": "https://www.bluegrasslyrics.com/song/whats-good-for-you/",
+  "raw_lyrics": "If you think it\u2019s nice to be untrue\nThen don\u2019t complain if I start cheating too\nShould I be bound while you go fancy free\nWhat\u2019s Good for you should be all right for me\n\nIf it\u2019s right for you to cheat and lie\nIt can\u2019t be wrong for me to break a tie\nShould I be bound while you go fancy free\nWhat\u2019s Good for you should be all right for me\n\nIf it\u2019s fair for you to run around\nHow can you feel that I should be tied down\nI\u2019m human too so why can\u2019t you agree\nWhat\u2019s Good for you should be all right for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If you think it\u2019s nice to be untrue",
+        "Then don\u2019t complain if I start cheating too",
+        "Should I be bound while you go fancy free",
+        "What\u2019s Good for you should be all right for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "If it\u2019s right for you to cheat and lie",
+        "It can\u2019t be wrong for me to break a tie",
+        "Should I be bound while you go fancy free",
+        "What\u2019s Good for you should be all right for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If it\u2019s fair for you to run around",
+        "How can you feel that I should be tied down",
+        "I\u2019m human too so why can\u2019t you agree",
+        "What\u2019s Good for you should be all right for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

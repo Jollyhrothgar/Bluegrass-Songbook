@@ -1,0 +1,49 @@
+{
+  "slug": "lonesome-and-blue",
+  "title": "Lonesome And Blue",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-and-blue/",
+  "raw_lyrics": "Lonesome blue heartbroken\nAs here I sit alone\nMy sweetheart\u2019s gone and left me\nNow everything\u2019s gone wrong\n\nHer hair was dark and curly\nAnd hung way down behind\nBut now she loves another\nI\u2019m run-ning on the vine\n\nI ne-ver rode a boxcar\nUntil she turned me down\nI\u2019ll never love no other\nI\u2019ll never settle down\n\nOn down this lonesome railroad\nMy back to the old hometown\nMy past will always haunt me\nAnd the girl who turned me down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lonesome blue heartbroken",
+        "As here I sit alone",
+        "My sweetheart\u2019s gone and left me",
+        "Now everything\u2019s gone wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her hair was dark and curly",
+        "And hung way down behind",
+        "But now she loves another",
+        "I\u2019m run-ning on the vine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I ne-ver rode a boxcar",
+        "Until she turned me down",
+        "I\u2019ll never love no other",
+        "I\u2019ll never settle down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On down this lonesome railroad",
+        "My back to the old hometown",
+        "My past will always haunt me",
+        "And the girl who turned me down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

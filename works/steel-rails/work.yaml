@@ -1,0 +1,11 @@
+id: steel-rails
+title: Steel Rails
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/steel-rails/
+      imported_at: '2026-02-08'

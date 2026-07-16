@@ -1,0 +1,55 @@
+{
+  "slug": "anchored-in-love",
+  "title": "Anchored In Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/anchored-in-love/",
+  "raw_lyrics": "I\u2019ve found a sweet haven of sunshine at last,\nand Jesus abiding above,\nHis dear arms around me are lovingly cast\nand sweetly He tells His love\n\nThe tempest is o\u2019er\n(The danger, the tempest forever is o\u2019er)\nI\u2019m safe evermore\n(My anchor is holding I\u2019m safe ever more)\nWhat gladness what rapture is mine\nThe danger is past\n(The water\u2019s receding, the danger is past)\nI\u2019m anchored at last\n(I\u2019m feeling so happy I\u2019m anchored at last)\nI\u2019m anchored in love divine\n\nHe saw me endangered and lovingly came\nTo pilot my storm-beaten soul\nSweet peace He has spoken and bless His dear name\nThe billows no longer roll\n\nHis love shall control me through life and in death\nCompletely I\u2019ll trust to the end\nI\u2019ll praise Him each hour and my last fleeting breath\nShall sing of my soul\u2019s Best Friend",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve found a sweet haven of sunshine at last,",
+        "and Jesus abiding above,",
+        "His dear arms around me are lovingly cast",
+        "and sweetly He tells His love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The tempest is o\u2019er",
+        "(The danger, the tempest forever is o\u2019er)",
+        "I\u2019m safe evermore",
+        "(My anchor is holding I\u2019m safe ever more)",
+        "What gladness what rapture is mine",
+        "The danger is past",
+        "(The water\u2019s receding, the danger is past)",
+        "I\u2019m anchored at last",
+        "(I\u2019m feeling so happy I\u2019m anchored at last)",
+        "I\u2019m anchored in love divine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He saw me endangered and lovingly came",
+        "To pilot my storm-beaten soul",
+        "Sweet peace He has spoken and bless His dear name",
+        "The billows no longer roll"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His love shall control me through life and in death",
+        "Completely I\u2019ll trust to the end",
+        "I\u2019ll praise Him each hour and my last fleeting breath",
+        "Shall sing of my soul\u2019s Best Friend"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

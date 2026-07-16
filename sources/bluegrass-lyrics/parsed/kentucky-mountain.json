@@ -1,0 +1,49 @@
+{
+  "slug": "kentucky-mountain",
+  "title": "Kentucky Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/kentucky-mountain/",
+  "raw_lyrics": "How the sad wind moans on Kentucky Mountain\nAnd the rain is falling in her face\nAnd by her side in the lonely graveyard\nI want to lie down and take my place\n\nShe sleeping on Kentucky Mountain\nAnd the rain is falling in her face\nAnd by her side when this life is over\nI\u2019ll lay me down and take my place\n\nWe fell in love there in the mountains\nOur love was beautiful and free\nShe was so young when the maker called her\nI guess she was not meant for me\n\nI\u2019m like a lonesome dove at twilight\nAs she flies around from tree to tree\nMy aching heart is full of sorrow\nSince never more my love I\u2019ll see",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "How the sad wind moans on Kentucky Mountain",
+        "And the rain is falling in her face",
+        "And by her side in the lonely graveyard",
+        "I want to lie down and take my place"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She sleeping on Kentucky Mountain",
+        "And the rain is falling in her face",
+        "And by her side when this life is over",
+        "I\u2019ll lay me down and take my place"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We fell in love there in the mountains",
+        "Our love was beautiful and free",
+        "She was so young when the maker called her",
+        "I guess she was not meant for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m like a lonesome dove at twilight",
+        "As she flies around from tree to tree",
+        "My aching heart is full of sorrow",
+        "Since never more my love I\u2019ll see"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

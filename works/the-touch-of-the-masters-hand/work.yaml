@@ -1,0 +1,11 @@
+id: the-touch-of-the-masters-hand
+title: The Touch Of The Master’s Hand
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/the-touch-of-the-masters-hand/
+      imported_at: '2026-02-08'

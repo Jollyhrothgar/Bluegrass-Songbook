@@ -1,0 +1,49 @@
+{
+  "slug": "dont-this-road-look-rough-and-rocky",
+  "title": "Don\u2019t This Road Look Rough And Rocky",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-this-road-look-rough-and-rocky/",
+  "raw_lyrics": "Darling, I have come to tell you\nThough it almost breaks my heart\nBut before the morning darling\nWe\u2019ll be many miles apart\n\nDon\u2019t this road look rough and rocky\nDon\u2019t that sea look wide and deep\nDon\u2019t my baby look the sweetest\nWhen she\u2019s in my arms asleep\n\nCan\u2019t you hear the night birds crying\nFar across the deep blue sea\nWhile of others you are thinking\nWon\u2019t you sometimes think of me\n\nOne more kiss before I leave you\nOne more kiss before we part\nYou have caused me lots of trouble\nDarling you have broke my heart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Darling, I have come to tell you",
+        "Though it almost breaks my heart",
+        "But before the morning darling",
+        "We\u2019ll be many miles apart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t this road look rough and rocky",
+        "Don\u2019t that sea look wide and deep",
+        "Don\u2019t my baby look the sweetest",
+        "When she\u2019s in my arms asleep"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Can\u2019t you hear the night birds crying",
+        "Far across the deep blue sea",
+        "While of others you are thinking",
+        "Won\u2019t you sometimes think of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One more kiss before I leave you",
+        "One more kiss before we part",
+        "You have caused me lots of trouble",
+        "Darling you have broke my heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

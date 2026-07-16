@@ -1,0 +1,42 @@
+{
+  "slug": "2393",
+  "title": "The Key to Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/2393/",
+  "raw_lyrics": "He saw my sin and knew they would keep me\nOut of his heaven but he believed I was worth saving\nSo he came down to earth as a man\nTook the sin that condemned me\nPaid the price for me so that I could come in\n\nThe key to heaven was hung on a nail\nOn the cross where he suffered\nHis love prevailed He opened the flood gates\nParted the veil\nThe key to heaven was hung on a nail\n\nBethlehem\u2019s manger was a quiet beginning\nYou knew he was coming but he died on a hill\nWith so many watching and even history\nSays that he lived but it doesn\u2019t explain\nWhy he endured the shame and died like he did",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "He saw my sin and knew they would keep me",
+        "Out of his heaven but he believed I was worth saving",
+        "So he came down to earth as a man",
+        "Took the sin that condemned me",
+        "Paid the price for me so that I could come in"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The key to heaven was hung on a nail",
+        "On the cross where he suffered",
+        "His love prevailed He opened the flood gates",
+        "Parted the veil",
+        "The key to heaven was hung on a nail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Bethlehem\u2019s manger was a quiet beginning",
+        "You knew he was coming but he died on a hill",
+        "With so many watching and even history",
+        "Says that he lived but it doesn\u2019t explain",
+        "Why he endured the shame and died like he did"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

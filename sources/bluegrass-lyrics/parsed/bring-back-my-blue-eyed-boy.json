@@ -1,0 +1,53 @@
+{
+  "slug": "bring-back-my-blue-eyed-boy",
+  "title": "Bring Back My Blue Eyed Boy",
+  "source_url": "https://www.bluegrasslyrics.com/song/bring-back-my-blue-eyed-boy/",
+  "raw_lyrics": "Tis true the rain that has no end\nIt\u2019s hard to find a faithful friend\nAnd when you find one just and true\nHe\u2019s dropped the old one for the new\nBring back my blue eyed boy to me\nBring back my blue eyed boy to me\nBring back my blue eyed boy to me\nThat I may ever happy be\n\nMust I go bound and have no free\nMust I love a boy that don\u2019t love me\nOr must I act the childish part\nAnd love that boy that broke my heart\n\nLast night my lover promised me\nTo take me across the deep blue sea\nAnd now he\u2019s gone and left me alone\nAn orphan girl without a home\n\nO dig my grave both wide and deep\nPlace marble at my head and feet\nAnd on my breast a snow white dove\nTo show to the world I died for love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tis true the rain that has no end",
+        "It\u2019s hard to find a faithful friend",
+        "And when you find one just and true",
+        "He\u2019s dropped the old one for the new",
+        "Bring back my blue eyed boy to me",
+        "Bring back my blue eyed boy to me",
+        "Bring back my blue eyed boy to me",
+        "That I may ever happy be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Must I go bound and have no free",
+        "Must I love a boy that don\u2019t love me",
+        "Or must I act the childish part",
+        "And love that boy that broke my heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night my lover promised me",
+        "To take me across the deep blue sea",
+        "And now he\u2019s gone and left me alone",
+        "An orphan girl without a home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "O dig my grave both wide and deep",
+        "Place marble at my head and feet",
+        "And on my breast a snow white dove",
+        "To show to the world I died for love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

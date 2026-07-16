@@ -305,6 +305,45 @@ export function setFullscreenMode(value) { fullscreenMode = value; }
 export function setListContext(context) { listContext = context; }
 
 // ============================================
+// WORK REDIRECTS (merged/renamed works)
+// ============================================
+
+export let workRedirects = {};  // Map of old slug -> canonical slug
+
+export function setWorkRedirects(redirects) { workRedirects = redirects; }
+
+/**
+ * Resolve a work ID through redirects. Returns canonical ID.
+ */
+export function resolveWorkId(workId) {
+    return workRedirects[workId] || workId;
+}
+
+// ============================================
+// BOUNTY STATE
+// ============================================
+
+export let bountyIndex = {};  // Map of work_id -> [bounty objects]
+
+export function setBountyIndex(index) { bountyIndex = index; }
+
+/**
+ * Get open bounties for a specific work.
+ * @param {string} workId - The work slug
+ * @returns {Array} Array of bounty objects for this work
+ */
+export function getBountiesForWork(workId) {
+    return bountyIndex[workId] || [];
+}
+
+/**
+ * Get total count of works with open bounties.
+ */
+export function getBountyWorkCount() {
+    return Object.keys(bountyIndex).length;
+}
+
+// ============================================
 // EDITOR STATE
 // ============================================
 

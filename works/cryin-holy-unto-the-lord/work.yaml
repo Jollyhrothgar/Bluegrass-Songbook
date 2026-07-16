@@ -1,0 +1,11 @@
+id: cryin-holy-unto-the-lord
+title: Cryin’ Holy Unto The Lord
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/cryin-holy-unto-the-lord/
+      imported_at: '2026-02-08'

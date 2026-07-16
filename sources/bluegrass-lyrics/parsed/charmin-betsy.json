@@ -1,0 +1,59 @@
+{
+  "slug": "charmin-betsy",
+  "title": "Charmin\u2019 Betsy",
+  "source_url": "https://www.bluegrasslyrics.com/song/charmin-betsy/",
+  "raw_lyrics": "Rich girl lives in a big brick house\nPoor girl she does the same\nMy gal lives in the Nashville jail\nIt\u2019s a brick house just the same\n\nShe\u2019ll be coming round the mountain Charmin\u2019 Betsy\nShe\u2019ll be coming round the mountain Cora Lee poor thing\nAnd if I never see you again\nGood gal remember me\n\nRich girl rides in a Cadilac Eight\nPoor girl she does the same\nMy gal rides in a T-Model Ford\nBut she gets there just the same\n\nRich girl wears the best perfume\nPoor girl she does the same\nMy gal don\u2019t wear no perfume at all\nBut she gets there just the same\n\nRich girl wears a satin dress\nPoor girl she does the same\nMy gal wears a burlap bag\nBut she gets there just the same",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Rich girl lives in a big brick house",
+        "Poor girl she does the same",
+        "My gal lives in the Nashville jail",
+        "It\u2019s a brick house just the same"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019ll be coming round the mountain Charmin\u2019 Betsy",
+        "She\u2019ll be coming round the mountain Cora Lee poor thing",
+        "And if I never see you again",
+        "Good gal remember me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rich girl rides in a Cadilac Eight",
+        "Poor girl she does the same",
+        "My gal rides in a T-Model Ford",
+        "But she gets there just the same"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rich girl wears the best perfume",
+        "Poor girl she does the same",
+        "My gal don\u2019t wear no perfume at all",
+        "But she gets there just the same"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rich girl wears a satin dress",
+        "Poor girl she does the same",
+        "My gal wears a burlap bag",
+        "But she gets there just the same"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

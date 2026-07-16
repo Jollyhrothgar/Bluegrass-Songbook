@@ -1,0 +1,49 @@
+{
+  "slug": "i-still-miss-someone",
+  "title": "I Still Miss Someone",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-still-miss-someone/",
+  "raw_lyrics": "At my door the leaves are falling\na cold wild wind will come\nsweethearts walk by together\nand I still miss someone\n\nTho I never got over those blue eyes\nI see them everywhere\nI miss those arms that held me\nWhen all the love was there\n\nI go out on a party\nand look for a little fun\nbut I find a darkened corner\ncause I still miss someone\n\nI wonder if she\u2019s sorry\nfor leaving what we\u2019d begun\nthere\u2019s someone for me somewhere\nand I still miss someone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "At my door the leaves are falling",
+        "a cold wild wind will come",
+        "sweethearts walk by together",
+        "and I still miss someone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Tho I never got over those blue eyes",
+        "I see them everywhere",
+        "I miss those arms that held me",
+        "When all the love was there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I go out on a party",
+        "and look for a little fun",
+        "but I find a darkened corner",
+        "cause I still miss someone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wonder if she\u2019s sorry",
+        "for leaving what we\u2019d begun",
+        "there\u2019s someone for me somewhere",
+        "and I still miss someone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

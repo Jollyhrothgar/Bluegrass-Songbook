@@ -1,0 +1,39 @@
+{
+  "slug": "bummin-an-old-freight-train",
+  "title": "Bummin\u2019 An Old Freight Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/bummin-an-old-freight-train/",
+  "raw_lyrics": "I was wild and reckless this hobo\nAnd I left my happy home\nAnd I started out on a westward trip\nAll by myself alone.\n\nOh my pocket book was empty and my heart it was filled with pain\nI\u2019m a thousand miles away from home just bummin\u2019 an old freight train.\nJust a\u2019 bummin\u2019 an old freight train oh Lord just bummin\u2019 an old freight train\nI\u2019m a thousand miles away from home just bummin\u2019 an old frieight train.\n\nI was standing on that platform And smokin\u2019 a cheap cigar\nI was waiting for that old freight train to find me an empty car\nWell I pulled my cap down over my eyes as I walked along the track\nI caught the stirrup of a sleepin\u2019 car And I never did look back.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was wild and reckless this hobo",
+        "And I left my happy home",
+        "And I started out on a westward trip",
+        "All by myself alone."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh my pocket book was empty and my heart it was filled with pain",
+        "I\u2019m a thousand miles away from home just bummin\u2019 an old freight train.",
+        "Just a\u2019 bummin\u2019 an old freight train oh Lord just bummin\u2019 an old freight train",
+        "I\u2019m a thousand miles away from home just bummin\u2019 an old frieight train."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was standing on that platform And smokin\u2019 a cheap cigar",
+        "I was waiting for that old freight train to find me an empty car",
+        "Well I pulled my cap down over my eyes as I walked along the track",
+        "I caught the stirrup of a sleepin\u2019 car And I never did look back."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

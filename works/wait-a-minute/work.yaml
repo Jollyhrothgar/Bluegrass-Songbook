@@ -1,0 +1,11 @@
+id: wait-a-minute
+title: Wait a Minute
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/wait-a-minute/
+      imported_at: '2026-02-08'

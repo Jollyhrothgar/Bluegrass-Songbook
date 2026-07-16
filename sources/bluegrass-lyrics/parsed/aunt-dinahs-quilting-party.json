@@ -1,0 +1,59 @@
+{
+  "slug": "aunt-dinahs-quilting-party",
+  "title": "Aunt Dinah\u2019s Quilting Party",
+  "source_url": "https://www.bluegrasslyrics.com/song/aunt-dinahs-quilting-party/",
+  "raw_lyrics": "In the sky the bright stars glittered\nOn the bank the pale moon shone\nAnd \u2019twas from aunt Dinah\u2019s quilting party\nI was seeing Nellie home\n\nI was seeing Nellie home\nI was seeing Nellie home\nAnd \u2019twas from aunt Dinah\u2019s quilting party\nI was seeing Nellie home\n\nOn my arm a soft hand rested\nRested like as ocean foam\nAnd \u2019twas from aunt Dinah\u2019s quilting party\nI was seeing Nellie home\n\nOn my lips a whisper trembled\nTrembled till it dared to come\nAnd \u2019twas from aunt Dinah\u2019s quilting party\nI was seeing Nellie home\n\nOn my life new hopes were dawning\nAnd those hopes have lived and grown\nAnd \u2019twas from aunt Dinah\u2019s quilting party\nI was seeing Nellie home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the sky the bright stars glittered",
+        "On the bank the pale moon shone",
+        "And \u2019twas from aunt Dinah\u2019s quilting party",
+        "I was seeing Nellie home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I was seeing Nellie home",
+        "I was seeing Nellie home",
+        "And \u2019twas from aunt Dinah\u2019s quilting party",
+        "I was seeing Nellie home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On my arm a soft hand rested",
+        "Rested like as ocean foam",
+        "And \u2019twas from aunt Dinah\u2019s quilting party",
+        "I was seeing Nellie home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On my lips a whisper trembled",
+        "Trembled till it dared to come",
+        "And \u2019twas from aunt Dinah\u2019s quilting party",
+        "I was seeing Nellie home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On my life new hopes were dawning",
+        "And those hopes have lived and grown",
+        "And \u2019twas from aunt Dinah\u2019s quilting party",
+        "I was seeing Nellie home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

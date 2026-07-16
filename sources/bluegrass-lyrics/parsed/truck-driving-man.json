@@ -1,0 +1,49 @@
+{
+  "slug": "truck-driving-man",
+  "title": "Truck Driving Man",
+  "source_url": "https://www.bluegrasslyrics.com/song/truck-driving-man/",
+  "raw_lyrics": "I stopped at a roadhouse in Texas,\nA little place called Hamburger Dan\u2019s\nI heard that old jukebox a-playing,\nA song \u2019bout a truck driving man\n\nPour me another cup of coffee,\nFor it is the best in the land\nI\u2019ll put a nickel in the jukebox,\nAnd play The Truck Driving Man\n\nThe waitress then brought me some coffee\nI thanked her and called her back again\nI said, \u201cThat ol\u2019 song sure does fit me\n\u2018Cause I am a truck driving man\n\nI stepped back on board my old semi\nAnd then like a flash I was gone\nI got them ol\u2019 truck wheel a-rollin\nI\u2019m on my way to San Antone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I stopped at a roadhouse in Texas,",
+        "A little place called Hamburger Dan\u2019s",
+        "I heard that old jukebox a-playing,",
+        "A song \u2019bout a truck driving man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Pour me another cup of coffee,",
+        "For it is the best in the land",
+        "I\u2019ll put a nickel in the jukebox,",
+        "And play The Truck Driving Man"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The waitress then brought me some coffee",
+        "I thanked her and called her back again",
+        "I said, \u201cThat ol\u2019 song sure does fit me",
+        "\u2018Cause I am a truck driving man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I stepped back on board my old semi",
+        "And then like a flash I was gone",
+        "I got them ol\u2019 truck wheel a-rollin",
+        "I\u2019m on my way to San Antone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

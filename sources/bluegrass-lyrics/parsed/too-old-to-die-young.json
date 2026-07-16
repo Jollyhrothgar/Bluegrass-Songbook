@@ -1,0 +1,59 @@
+{
+  "slug": "too-old-to-die-young",
+  "title": "Too Old To Die Young",
+  "source_url": "https://www.bluegrasslyrics.com/song/too-old-to-die-young/",
+  "raw_lyrics": "If life is like a candle bright\nThen death must be the wind\nYou can close your window tight\nBut it still comes blowing in\n\nSo I will climb the highest hill\nAnd watch the risin\u2019 sun\nAnd pray that I won\u2019t feel the chill\n\u2018Til I\u2019m too old to die young\n\nLet me watch my children grow\nTo see what they become\nLord don\u2019t let the cold winds blow\nTil I\u2019m too old to die young\n\nWell I have had some dear sweet friends\nI thought would never die\nThe only thing that\u2019s left of them\nAre these teardrops in my eyes\n\nIf I could have one wish today\nAnd know it would be done\nThen I would pray everyone could stay\n\u2018Til they\u2019re too old to die young",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If life is like a candle bright",
+        "Then death must be the wind",
+        "You can close your window tight",
+        "But it still comes blowing in"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So I will climb the highest hill",
+        "And watch the risin\u2019 sun",
+        "And pray that I won\u2019t feel the chill",
+        "\u2018Til I\u2019m too old to die young"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Let me watch my children grow",
+        "To see what they become",
+        "Lord don\u2019t let the cold winds blow",
+        "Til I\u2019m too old to die young"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I have had some dear sweet friends",
+        "I thought would never die",
+        "The only thing that\u2019s left of them",
+        "Are these teardrops in my eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I could have one wish today",
+        "And know it would be done",
+        "Then I would pray everyone could stay",
+        "\u2018Til they\u2019re too old to die young"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: oh-susanna
+title: Oh Susanna
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/oh-susanna/
+      imported_at: '2026-02-08'

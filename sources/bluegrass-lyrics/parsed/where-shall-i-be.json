@@ -1,0 +1,65 @@
+{
+  "slug": "where-shall-i-be",
+  "title": "Where Shall I Be",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-shall-i-be/",
+  "raw_lyrics": "Judgment day is drawing nigh\nWhere shall I be\nWhen God the work of men shall cry\nWhere shall I be\nWhen east and west the fire will roll\nWhere shall I be\nHow will it be with my poor soul\nWhere shall I be\n\nOh where shall I be when the first trumpet sounds\nOh where shall I be when it sounds so loud\nWhen it sounds so loud as to wake up the dead\nOh where shall I be when it sounds\n\nWhen wicked men its wrath shall see\nWhere shall I be\nAnd to the rocks and mountains flee\nWhere shall I be\nAnd hills and mountains wear away\nWhere shall I be\nAnd all the work of men decay\nWhere shall I be\n\nWhen the savior reigns from shore to shore\nWhen God\u2019s angry presence roars\n\nOh I\u2019ll be sleeping in my grave when the first trumpet sounds\nOh I\u2019ll be sleeping in my grave when it sounds so loud\nWhen it sounds so loud as to wake up the dead\nOh I\u2019ll be sleeping in my grave when it sounds",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Judgment day is drawing nigh",
+        "Where shall I be",
+        "When God the work of men shall cry",
+        "Where shall I be",
+        "When east and west the fire will roll",
+        "Where shall I be",
+        "How will it be with my poor soul",
+        "Where shall I be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh where shall I be when the first trumpet sounds",
+        "Oh where shall I be when it sounds so loud",
+        "When it sounds so loud as to wake up the dead",
+        "Oh where shall I be when it sounds"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When wicked men its wrath shall see",
+        "Where shall I be",
+        "And to the rocks and mountains flee",
+        "Where shall I be",
+        "And hills and mountains wear away",
+        "Where shall I be",
+        "And all the work of men decay",
+        "Where shall I be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the savior reigns from shore to shore",
+        "When God\u2019s angry presence roars"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I\u2019ll be sleeping in my grave when the first trumpet sounds",
+        "Oh I\u2019ll be sleeping in my grave when it sounds so loud",
+        "When it sounds so loud as to wake up the dead",
+        "Oh I\u2019ll be sleeping in my grave when it sounds"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

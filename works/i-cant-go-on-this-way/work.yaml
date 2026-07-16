@@ -1,0 +1,11 @@
+id: i-cant-go-on-this-way
+title: I Can’t Go On This Way
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-cant-go-on-this-way/
+      imported_at: '2026-02-08'

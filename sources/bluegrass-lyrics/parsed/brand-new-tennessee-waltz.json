@@ -1,0 +1,59 @@
+{
+  "slug": "brand-new-tennessee-waltz",
+  "title": "Brand New Tennessee Waltz",
+  "source_url": "https://www.bluegrasslyrics.com/song/brand-new-tennessee-waltz/",
+  "raw_lyrics": "Oh you have such a pretty face\nYou favor a girl I once knew\nI imagine that she\u2019s in Tennessee\nOh Lord I should be there too.\n\nBut I left Tennessee in a hurry dear\nThe same way that I\u2019m leaving you\nFor love is mainly just memories\nAnd everyone\u2019s got them but few.\n\nIt\u2019s a brand  new Tennessee waltz\nYou\u2019re literally just waltzing on air\nIt\u2019s a brand new Tennessee waltz\nWith no telling who will be there\n\nWhen I leave it\u2019ll be like I found you love\nDescending victorian stairs\nI\u2019m feeling like one of your photographs\nWith not even you left to care.\n\nHave all your passionate violins play\nA tune for a Tennessee kid\nWho\u2019s feeling like leaving another town\nWith no place to go if he did.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh you have such a pretty face",
+        "You favor a girl I once knew",
+        "I imagine that she\u2019s in Tennessee",
+        "Oh Lord I should be there too."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I left Tennessee in a hurry dear",
+        "The same way that I\u2019m leaving you",
+        "For love is mainly just memories",
+        "And everyone\u2019s got them but few."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s a brand  new Tennessee waltz",
+        "You\u2019re literally just waltzing on air",
+        "It\u2019s a brand new Tennessee waltz",
+        "With no telling who will be there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I leave it\u2019ll be like I found you love",
+        "Descending victorian stairs",
+        "I\u2019m feeling like one of your photographs",
+        "With not even you left to care."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Have all your passionate violins play",
+        "A tune for a Tennessee kid",
+        "Who\u2019s feeling like leaving another town",
+        "With no place to go if he did."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

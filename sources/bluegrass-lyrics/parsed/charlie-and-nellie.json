@@ -1,0 +1,99 @@
+{
+  "slug": "charlie-and-nellie",
+  "title": "Charlie And Nellie",
+  "source_url": "https://www.bluegrasslyrics.com/song/charlie-and-nellie/",
+  "raw_lyrics": "Dear Nellie since I left the city\nI\u2019ve found I\u2019ve changed my mind\nI hope you wont think me untruthful\nOr do me the least unkind\n\nI think we\u2019re both mistaken\nI know you\u2019ll never suit me\nI owe my heart to another\nOf course kind friends will agree\n\nPlease send me my ring and pictures\nAlso my letters and books\nMy clothes with many kind wishes\nRespectfully yours Charlie Brooks\n\nI heard all about it dear Charlie\nI knew it would end this way\nI hope you will always live happy\nWith your loving little wife Miss Gray\n\nNow here\u2019s your ring dear Charlie\nDon\u2019t give it to her I pray\nUnless you tell her twas once mine\nI wore it one year today\n\nOne year today dear Charlie\nSo happy were we both\nYou vowed you\u2019d never forsake me\nBut I find you untrue to your oath\n\nHere\u2019s your picture dear Charlie\nIt\u2019s almost faded away\nBecause I kissed it so often\nAnd this you can tell Miss Gray\n\nAs far as your letters dear Charlie\nI burned them as they came\nI feared by reading them over\nWould cause our love to inflame\n\nI must say goodbye dear Charlie\nMy letter is near an end\nRemember I\u2019m always and always\nForever and ever your friend",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dear Nellie since I left the city",
+        "I\u2019ve found I\u2019ve changed my mind",
+        "I hope you wont think me untruthful",
+        "Or do me the least unkind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I think we\u2019re both mistaken",
+        "I know you\u2019ll never suit me",
+        "I owe my heart to another",
+        "Of course kind friends will agree"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please send me my ring and pictures",
+        "Also my letters and books",
+        "My clothes with many kind wishes",
+        "Respectfully yours Charlie Brooks"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I heard all about it dear Charlie",
+        "I knew it would end this way",
+        "I hope you will always live happy",
+        "With your loving little wife Miss Gray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now here\u2019s your ring dear Charlie",
+        "Don\u2019t give it to her I pray",
+        "Unless you tell her twas once mine",
+        "I wore it one year today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One year today dear Charlie",
+        "So happy were we both",
+        "You vowed you\u2019d never forsake me",
+        "But I find you untrue to your oath"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Here\u2019s your picture dear Charlie",
+        "It\u2019s almost faded away",
+        "Because I kissed it so often",
+        "And this you can tell Miss Gray"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As far as your letters dear Charlie",
+        "I burned them as they came",
+        "I feared by reading them over",
+        "Would cause our love to inflame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I must say goodbye dear Charlie",
+        "My letter is near an end",
+        "Remember I\u2019m always and always",
+        "Forever and ever your friend"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "lost-and-ill-never-find-the-way",
+  "title": "Lost and I\u2019ll Never Find the Way",
+  "source_url": "https://www.bluegrasslyrics.com/song/lost-and-ill-never-find-the-way/",
+  "raw_lyrics": "Lonesome, lonesome, pining away\nNow you say its best to part\nEven though it breaks my heart\nI`m lost and I`ll never find the way\n\nSince you said we must part darling you have broke my heart\nI am drifting like a ship lost at sea\nIn a world of despair its so lonesome there\nWhy don`t you come back to me\n\nYou said you`d be true no one else would ever do\nI believed you with all my heart and soul\nBut you broke every vow and its all over now\nI`m left in this world lone and cold",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Lonesome, lonesome, pining away",
+        "Now you say its best to part",
+        "Even though it breaks my heart",
+        "I`m lost and I`ll never find the way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Since you said we must part darling you have broke my heart",
+        "I am drifting like a ship lost at sea",
+        "In a world of despair its so lonesome there",
+        "Why don`t you come back to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You said you`d be true no one else would ever do",
+        "I believed you with all my heart and soul",
+        "But you broke every vow and its all over now",
+        "I`m left in this world lone and cold"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

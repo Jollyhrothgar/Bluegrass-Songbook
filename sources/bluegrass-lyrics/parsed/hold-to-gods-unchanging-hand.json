@@ -1,0 +1,49 @@
+{
+  "slug": "hold-to-gods-unchanging-hand",
+  "title": "Hold To God\u2019s Unchanging Hand",
+  "source_url": "https://www.bluegrasslyrics.com/song/hold-to-gods-unchanging-hand/",
+  "raw_lyrics": "Time is filled with swift transition\nNaught of earth unmoved can stand\nBuild you hopes on things eternal\nHold to God\u2019s unchanging hand\n\nHold to God\u2019s unchanging hand\nHold to God\u2019s unchanging hand\nBuild you hopes on things eternal\nHold to God\u2019s unchanging hand\n\nTrust in Him who will not leave you\nWhat so ever years may bring\nIf by earthly friends forsaken\nStill, more closely to Him cling\n\nWhen your journey is completed\nWhen the valley you pass through\nFair and bright the home in glory\nYour enraptured soul will view",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Time is filled with swift transition",
+        "Naught of earth unmoved can stand",
+        "Build you hopes on things eternal",
+        "Hold to God\u2019s unchanging hand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hold to God\u2019s unchanging hand",
+        "Hold to God\u2019s unchanging hand",
+        "Build you hopes on things eternal",
+        "Hold to God\u2019s unchanging hand"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Trust in Him who will not leave you",
+        "What so ever years may bring",
+        "If by earthly friends forsaken",
+        "Still, more closely to Him cling"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When your journey is completed",
+        "When the valley you pass through",
+        "Fair and bright the home in glory",
+        "Your enraptured soul will view"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

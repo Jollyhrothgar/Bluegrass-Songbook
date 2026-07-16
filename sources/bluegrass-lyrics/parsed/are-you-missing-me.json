@@ -1,0 +1,49 @@
+{
+  "slug": "are-you-missing-me",
+  "title": "Are You Missing Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/are-you-missing-me/",
+  "raw_lyrics": "The day that I kissed you and told you goodbye\nYour lips told me that you would wait\nBut your lips deceived me and told me a lie\nWhile your heart was sealing my fate\n\nAre you all alone\nWith a memory?\nNow that I am gone\nDarling, are you missing me?\n\nOut of the clear sky a letter then came\nAnd just like a bolt from the blue\nMy castles came tumbling a I read it o\u2019er\nI still can\u2019t believe that it\u2019s true\n\nIt said that in spite of the vows you had made\nThe glitter of gold turns your head.\nAnd while I was trying employment to find\nYou married another instead",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The day that I kissed you and told you goodbye",
+        "Your lips told me that you would wait",
+        "But your lips deceived me and told me a lie",
+        "While your heart was sealing my fate"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Are you all alone",
+        "With a memory?",
+        "Now that I am gone",
+        "Darling, are you missing me?"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Out of the clear sky a letter then came",
+        "And just like a bolt from the blue",
+        "My castles came tumbling a I read it o\u2019er",
+        "I still can\u2019t believe that it\u2019s true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It said that in spite of the vows you had made",
+        "The glitter of gold turns your head.",
+        "And while I was trying employment to find",
+        "You married another instead"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

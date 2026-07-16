@@ -1,0 +1,39 @@
+{
+  "slug": "drink-up-and-go-home",
+  "title": "Drink Up And Go Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/drink-up-and-go-home/",
+  "raw_lyrics": "You sit there a-crying, crying in your beer\nYou say you\u2019ve got troubles, my friend listen here\nDon\u2019t tell me your troubles got enough of my own\nBe thankful you\u2019re living, drink up and go home\n\nI\u2019m fresh out of prison, six years in the pen\nLost my wife and family, no one to call friend\nDon\u2019t tell me your troubles, got enough of my own\nBe thankful you\u2019re living, drink up and go home\n\nBack there sets a blind man, so blind he can\u2019t see\nYet he\u2019s not complaining, why should you or me?\nDon\u2019t tell me your troubles, got enough of my own\nBe thankful you\u2019re living, drink up and go home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You sit there a-crying, crying in your beer",
+        "You say you\u2019ve got troubles, my friend listen here",
+        "Don\u2019t tell me your troubles got enough of my own",
+        "Be thankful you\u2019re living, drink up and go home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m fresh out of prison, six years in the pen",
+        "Lost my wife and family, no one to call friend",
+        "Don\u2019t tell me your troubles, got enough of my own",
+        "Be thankful you\u2019re living, drink up and go home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Back there sets a blind man, so blind he can\u2019t see",
+        "Yet he\u2019s not complaining, why should you or me?",
+        "Don\u2019t tell me your troubles, got enough of my own",
+        "Be thankful you\u2019re living, drink up and go home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

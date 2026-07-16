@@ -1,0 +1,39 @@
+{
+  "slug": "pretending-i-dont-care",
+  "title": "Pretending I Don\u2019t Care",
+  "source_url": "https://www.bluegrasslyrics.com/song/pretending-i-dont-care/",
+  "raw_lyrics": "My days are so lonely my nights are so blue\nThough my heart is broken it belongs to you\nOf misery and sorrow well I\u2019ve had my share\nLike you I\u2019m pretending that I don\u2019t care\n\nYou pretend to be happy gay and care-free\nBut I know that sometimes you still think of me\nJust being without you I can\u2019t hardly bear\nAnd like you I\u2019m pretending that I don\u2019t care\n\nI prayed for the power to forget and forgive\nThat you ever hurt me the way that you did\nOh I shouldn\u2019t want you but the feeling\u2019s still there\nAnd like you I\u2019m pretending that I don\u2019t care",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "My days are so lonely my nights are so blue",
+        "Though my heart is broken it belongs to you",
+        "Of misery and sorrow well I\u2019ve had my share",
+        "Like you I\u2019m pretending that I don\u2019t care"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You pretend to be happy gay and care-free",
+        "But I know that sometimes you still think of me",
+        "Just being without you I can\u2019t hardly bear",
+        "And like you I\u2019m pretending that I don\u2019t care"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I prayed for the power to forget and forgive",
+        "That you ever hurt me the way that you did",
+        "Oh I shouldn\u2019t want you but the feeling\u2019s still there",
+        "And like you I\u2019m pretending that I don\u2019t care"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

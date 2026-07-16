@@ -1,0 +1,69 @@
+{
+  "slug": "old-churchyard",
+  "title": "Old Churchyard",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-churchyard/",
+  "raw_lyrics": "Come come with me to the old churchyard\nI so well know those paths neath the soft green sward\nFriends slumber there that we want to regard\nWe will trace out their names in the old churchyard\n\nMourn not for them for their trials are o\u2019er\nWhy weep for those who will weep no more\nFor sweet is their sleep though cold and hard\nTheir pillows lay deep in the old churchyard\n\nI know that it\u2019s vain when our friends depart\nTo breathe kind words to a broken heart\nAnd I know that the joy of life is marred\nWhen we follow lost friends to the old churchyard\n\nBut were I at rest beneath yonder tree\nWhy would you weep my friends for me\nSo weary and worn why would you retard\nThe peace that I seek in the old churchyard\n\nWhy weep for me for I\u2019m anxious to go\nTo the haven of rest where no tears will flow\nAnd I fear not to enter that dark lonely tomb\nWhere our savior has lain and conquered the gloom\n\nI rest in the hope that on one bright day\nSunshine will burst through these prisons of clay\nAnd Gabriel\u2019s trumpet and the voice of the Lord\nWill wake up the dead in the old churchyard",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come come with me to the old churchyard",
+        "I so well know those paths neath the soft green sward",
+        "Friends slumber there that we want to regard",
+        "We will trace out their names in the old churchyard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mourn not for them for their trials are o\u2019er",
+        "Why weep for those who will weep no more",
+        "For sweet is their sleep though cold and hard",
+        "Their pillows lay deep in the old churchyard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know that it\u2019s vain when our friends depart",
+        "To breathe kind words to a broken heart",
+        "And I know that the joy of life is marred",
+        "When we follow lost friends to the old churchyard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But were I at rest beneath yonder tree",
+        "Why would you weep my friends for me",
+        "So weary and worn why would you retard",
+        "The peace that I seek in the old churchyard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Why weep for me for I\u2019m anxious to go",
+        "To the haven of rest where no tears will flow",
+        "And I fear not to enter that dark lonely tomb",
+        "Where our savior has lain and conquered the gloom"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I rest in the hope that on one bright day",
+        "Sunshine will burst through these prisons of clay",
+        "And Gabriel\u2019s trumpet and the voice of the Lord",
+        "Will wake up the dead in the old churchyard"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

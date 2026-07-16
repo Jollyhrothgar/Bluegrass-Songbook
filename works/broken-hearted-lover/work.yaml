@@ -1,0 +1,11 @@
+id: broken-hearted-lover
+title: Broken Hearted Lover
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/broken-hearted-lover/
+      imported_at: '2026-02-08'

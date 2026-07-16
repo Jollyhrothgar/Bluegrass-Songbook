@@ -1,0 +1,49 @@
+{
+  "slug": "whos-gonna-shoe-your-pretty-little-foot",
+  "title": "Who\u2019s Gonna Shoe Your Pretty Little Foot",
+  "source_url": "https://www.bluegrasslyrics.com/song/whos-gonna-shoe-your-pretty-little-foot/",
+  "raw_lyrics": "Who\u2019s gonna shoe your pretty little foot\nWho\u2019s gonna glove your hand\nWho\u2019s gonna kiss your red ruby lips\nWho\u2019s gonna be your man\n\nPapa will shoe my pretty little foot\nMama will glove my hand\nSister\u2019s gonna kiss my red ruby lips\nI don\u2019t need no man\n\nI don\u2019t need no man poor boy\nI don\u2019t need no man\nSister\u2019s gonna kiss my red ruby lips\nI don\u2019t need no man\n\nLongest train I ever did see\nWas sixteen coaches long\nThe only girl ever did love\nWas on that train and gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Who\u2019s gonna shoe your pretty little foot",
+        "Who\u2019s gonna glove your hand",
+        "Who\u2019s gonna kiss your red ruby lips",
+        "Who\u2019s gonna be your man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Papa will shoe my pretty little foot",
+        "Mama will glove my hand",
+        "Sister\u2019s gonna kiss my red ruby lips",
+        "I don\u2019t need no man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t need no man poor boy",
+        "I don\u2019t need no man",
+        "Sister\u2019s gonna kiss my red ruby lips",
+        "I don\u2019t need no man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Longest train I ever did see",
+        "Was sixteen coaches long",
+        "The only girl ever did love",
+        "Was on that train and gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

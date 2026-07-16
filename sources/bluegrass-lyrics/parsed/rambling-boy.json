@@ -1,0 +1,59 @@
+{
+  "slug": "rambling-boy",
+  "title": "Rambling Boy",
+  "source_url": "https://www.bluegrasslyrics.com/song/rambling-boy/",
+  "raw_lyrics": "I was raised but a rambling boy\nToo many a city I did enjoy\nAnd there I married me a pretty little wife\nAnd I loved her dearer than I love my life\n\nShe was pretty both neat and gay\nShe caused me rob the road highway\nI robbed it yes I do declare\nI made myself ten thousand there\n\nPlenty dry goods for to carry me through\nMy pistol swore like money too\nMy forty four she never failed\nMy true love come for to go my bale\n\nMy mother said she has no home\nMy sister said she\u2019s all alone\nMy wife she\u2019s left with sad despair\nWith a broken heart and a baby there\n\nNow when I die don\u2019t bury me at all\nJust place me away in alcohol\nMy forty four lay by my feet\nPlease tell them I am just asleep",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was raised but a rambling boy",
+        "Too many a city I did enjoy",
+        "And there I married me a pretty little wife",
+        "And I loved her dearer than I love my life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was pretty both neat and gay",
+        "She caused me rob the road highway",
+        "I robbed it yes I do declare",
+        "I made myself ten thousand there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Plenty dry goods for to carry me through",
+        "My pistol swore like money too",
+        "My forty four she never failed",
+        "My true love come for to go my bale"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother said she has no home",
+        "My sister said she\u2019s all alone",
+        "My wife she\u2019s left with sad despair",
+        "With a broken heart and a baby there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when I die don\u2019t bury me at all",
+        "Just place me away in alcohol",
+        "My forty four lay by my feet",
+        "Please tell them I am just asleep"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "children-go-where-i-send-thee",
+  "title": "Children Go Where I Send Thee",
+  "source_url": "https://www.bluegrasslyrics.com/song/children-go-where-i-send-thee/",
+  "raw_lyrics": "Children go where I send Thee (Oh lordy)\nHow will I send thee\nOh I\u2019m gonna send thee one by one\n\nFor one was a little bitty baby born,\nChildren born in Bethlehem\n\nTwo was Paul and Silas\nThree was the Hebrew children\nFour was the four that stood at the door\nFive was the five that came back alive\nSix was the six that didn\u2019t get picked\nSeven was the seven that never got to heaven\nEight was the eight that waited at the gate\nNine was the nine that stood in the line\nTen for the ten commandments",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Children go where I send Thee (Oh lordy)",
+        "How will I send thee",
+        "Oh I\u2019m gonna send thee one by one"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For one was a little bitty baby born,",
+        "Children born in Bethlehem"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Two was Paul and Silas",
+        "Three was the Hebrew children",
+        "Four was the four that stood at the door",
+        "Five was the five that came back alive",
+        "Six was the six that didn\u2019t get picked",
+        "Seven was the seven that never got to heaven",
+        "Eight was the eight that waited at the gate",
+        "Nine was the nine that stood in the line",
+        "Ten for the ten commandments"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

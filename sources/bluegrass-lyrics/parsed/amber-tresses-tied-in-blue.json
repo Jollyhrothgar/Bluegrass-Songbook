@@ -1,0 +1,49 @@
+{
+  "slug": "amber-tresses-tied-in-blue",
+  "title": "Amber Tresses Tied In Blue",
+  "source_url": "https://www.bluegrasslyrics.com/song/amber-tresses-tied-in-blue/",
+  "raw_lyrics": "Far away in some deep mountain\nWhere the merry sunbeams play\nThere I wandered thru the clover\nSinging to a village maid\n\nShe was dearer than the dearest\nEver loving kind and true\nAnd she wore beneath her bonnet\nAmber tresses tied in blue\n\nFact decreed that we parted\nWhen the leaves of autumn fell\nThen two hearts were separated\nThat had loved each other well\n\nShe was all I had to cherish\nEvery loving king and true\nNow I see in every vision\nAmber tresses tied in blue",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Far away in some deep mountain",
+        "Where the merry sunbeams play",
+        "There I wandered thru the clover",
+        "Singing to a village maid"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "She was dearer than the dearest",
+        "Ever loving kind and true",
+        "And she wore beneath her bonnet",
+        "Amber tresses tied in blue"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Fact decreed that we parted",
+        "When the leaves of autumn fell",
+        "Then two hearts were separated",
+        "That had loved each other well"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was all I had to cherish",
+        "Every loving king and true",
+        "Now I see in every vision",
+        "Amber tresses tied in blue"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

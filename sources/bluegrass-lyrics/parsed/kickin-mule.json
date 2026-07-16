@@ -1,0 +1,59 @@
+{
+  "slug": "kickin-mule",
+  "title": "Kickin\u2019 Mule",
+  "source_url": "https://www.bluegrasslyrics.com/song/kickin-mule/",
+  "raw_lyrics": "As I went down to the huckleberry picnic\nDinner all over the ground\nSkeppers in the meat was nine foot deep\nAnd the green flies walking all around\n\nThe biscuits in the oven was a-baking\nBeefsteak frying in the pan\nPretty gal sitting in the parlour\nLord God A\u2019mighty what a hand I stand\n\nWhoa there mule I tell you\nMiss Liza you keep cool\nI ain\u2019t got time to kiss you now\nI\u2019m busy with this mule\n\nMy uncle had an old mule\nHis name was Simon Slick\nLove anything I ever did see\nBut how that mule could kick\n\nWent to feed that mule one morning\nAnd he met me at the door with a smile\nHe backed one ear and he winked one eye\nAnd he kicked me half a mile",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As I went down to the huckleberry picnic",
+        "Dinner all over the ground",
+        "Skeppers in the meat was nine foot deep",
+        "And the green flies walking all around"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The biscuits in the oven was a-baking",
+        "Beefsteak frying in the pan",
+        "Pretty gal sitting in the parlour",
+        "Lord God A\u2019mighty what a hand I stand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Whoa there mule I tell you",
+        "Miss Liza you keep cool",
+        "I ain\u2019t got time to kiss you now",
+        "I\u2019m busy with this mule"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My uncle had an old mule",
+        "His name was Simon Slick",
+        "Love anything I ever did see",
+        "But how that mule could kick"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Went to feed that mule one morning",
+        "And he met me at the door with a smile",
+        "He backed one ear and he winked one eye",
+        "And he kicked me half a mile"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

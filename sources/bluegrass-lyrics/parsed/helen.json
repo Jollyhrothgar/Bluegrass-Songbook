@@ -1,0 +1,49 @@
+{
+  "slug": "helen",
+  "title": "Helen",
+  "source_url": "https://www.bluegrasslyrics.com/song/helen/",
+  "raw_lyrics": "Helen the night that I met you\nIt seemed that my heart went your way\nLove was the word that told the story\nI wish you were here with me today\n\nYou told me that I need not worry\nThat you would always be mine\nHelen my darling please tell me\nA place in your heart I\u2019ll always find\n\nHelen my darling I love you\nI love you with all of my heart\nDarling don\u2019t ever forsake me\nSay that we never will part\n\nThe time we are wastin\u2019 my darling\nIs making my heart ache with pain\nBut our lives are so far apart dear\nI guess I\u2019m just hoping in vain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Helen the night that I met you",
+        "It seemed that my heart went your way",
+        "Love was the word that told the story",
+        "I wish you were here with me today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You told me that I need not worry",
+        "That you would always be mine",
+        "Helen my darling please tell me",
+        "A place in your heart I\u2019ll always find"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Helen my darling I love you",
+        "I love you with all of my heart",
+        "Darling don\u2019t ever forsake me",
+        "Say that we never will part"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The time we are wastin\u2019 my darling",
+        "Is making my heart ache with pain",
+        "But our lives are so far apart dear",
+        "I guess I\u2019m just hoping in vain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

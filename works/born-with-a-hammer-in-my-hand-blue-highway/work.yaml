@@ -1,0 +1,14 @@
+id: born-with-a-hammer-in-my-hand-blue-highway
+title: "Born With a Hammer in My Hand"
+artist: "Blue Highway"
+composers: []
+default_key: G
+tags: []
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: trusted-user
+      imported_at: '2026-02-22'

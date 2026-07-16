@@ -1,0 +1,11 @@
+id: will-you-miss-me
+title: Will You Miss Me
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/will-you-miss-me/
+      imported_at: '2026-02-08'

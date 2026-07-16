@@ -1,0 +1,49 @@
+{
+  "slug": "weathered-gray-stone",
+  "title": "Weathered Gray Stone",
+  "source_url": "https://www.bluegrasslyrics.com/song/weathered-gray-stone/",
+  "raw_lyrics": "The road that winds back so deep in the mountains\nIs a lonesome old place now that you\u2019re gone\nThe mistakes that I\u2019ve made I still think about \u2019em\nAs I come to the place I used to call home\n\nThere\u2019s a small rocky path leads back from the home place\nAs I walk the last hill the wind seems to moan\nOnce again the moon shines and a tear rolls from my face\nAs I place a small rose on a weathered gray stone\n\nThe moon cuts a path so deep in the mountains\nIt lights up the hills where we used to roam\nOnce again the moon shines and a tear rolls from my face\nOnce again the moon hides I\u2019m in darkness alone\n\nIf I had but one chance dear God I would never\nLeave my little darlin so cold and alone\nMy mind\u2019ll be tormented I know now forever\nSince they buried my heart \u2018neath a weathered gray stone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The road that winds back so deep in the mountains",
+        "Is a lonesome old place now that you\u2019re gone",
+        "The mistakes that I\u2019ve made I still think about \u2019em",
+        "As I come to the place I used to call home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a small rocky path leads back from the home place",
+        "As I walk the last hill the wind seems to moan",
+        "Once again the moon shines and a tear rolls from my face",
+        "As I place a small rose on a weathered gray stone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The moon cuts a path so deep in the mountains",
+        "It lights up the hills where we used to roam",
+        "Once again the moon shines and a tear rolls from my face",
+        "Once again the moon hides I\u2019m in darkness alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I had but one chance dear God I would never",
+        "Leave my little darlin so cold and alone",
+        "My mind\u2019ll be tormented I know now forever",
+        "Since they buried my heart \u2018neath a weathered gray stone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

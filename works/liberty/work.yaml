@@ -1,19 +1,22 @@
 id: liberty
-title: "Liberty"
-tags: [Instrumental, Scruggs]
+title: Liberty
+tags:
+- Instrumental
+- Scruggs
+- Bluegrass
 parts:
-  - type: tablature
-    instrument: banjo
-    format: otf
-    file: banjo.otf.json
-    default: true
-    provenance:
-      source: banjo-hangout
-      source_id: '23192'
-      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/tab-liberty-23192-4312772018.tef
-      author: "howsy-bee"
-      imported_at: '2026-01-04'
-      tef_format: v2
-      tef_time_sig: 4/4
-      tef_tracks: 4
-      tef_events: 461
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '23192'
+    source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/tab-liberty-23192-4312772018.tef
+    author: howsy-bee
+    imported_at: '2026-01-04'
+    tef_format: v2
+    tef_time_sig: 4/4
+    tef_tracks: 4
+    tef_events: 461

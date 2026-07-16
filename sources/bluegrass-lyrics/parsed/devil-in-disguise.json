@@ -1,0 +1,49 @@
+{
+  "slug": "devil-in-disguise",
+  "title": "Devil In Disguise",
+  "source_url": "https://www.bluegrasslyrics.com/song/devil-in-disguise/",
+  "raw_lyrics": "She\u2019s the devil in disguise\nYou can see it in her eyes\nShe\u2019s telling dirty lies\nShe\u2019s the devil in disguise in disguise.\n\nNow a woman like that all she does is hate you\nShe doesn\u2019t know what makes a man a man\nShe\u2019ll talk about the times that she\u2019s been with you\nShe\u2019ll speak your name with everyone she can.\n\nUnhappiness has been her close companion\nHer soul is full of jealousy and doubt\nIt gets her up to see a person crying\nShe\u2019s just the kind that you can live without\n\nHer number always turns up in your pocket\nWhenever you are looking for a dime\nWell it\u2019s all right to call her but I\u2019ll bet you\nThe moon is full and you\u2019re just wasting time.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s the devil in disguise",
+        "You can see it in her eyes",
+        "She\u2019s telling dirty lies",
+        "She\u2019s the devil in disguise in disguise."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now a woman like that all she does is hate you",
+        "She doesn\u2019t know what makes a man a man",
+        "She\u2019ll talk about the times that she\u2019s been with you",
+        "She\u2019ll speak your name with everyone she can."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Unhappiness has been her close companion",
+        "Her soul is full of jealousy and doubt",
+        "It gets her up to see a person crying",
+        "She\u2019s just the kind that you can live without"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her number always turns up in your pocket",
+        "Whenever you are looking for a dime",
+        "Well it\u2019s all right to call her but I\u2019ll bet you",
+        "The moon is full and you\u2019re just wasting time."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

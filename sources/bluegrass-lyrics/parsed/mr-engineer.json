@@ -1,0 +1,39 @@
+{
+  "slug": "mr-engineer",
+  "title": "Mr Engineer",
+  "source_url": "https://www.bluegrasslyrics.com/song/mr-engineer/",
+  "raw_lyrics": "I\u2019m gonna catch me a freight train\nLord I\u2019m leaving this lonesome town\nThe one I loved and gave my heart to\nFor someone else she turned me down\n\nEngineer reach up and pull the whistle\nLet me hear that lonesome sound\nFor it blends with the feeling that\u2019s in me\nThe one I loved has turned me down\n\nThere\u2019s sixteen cars behind each engine\nI\u2019ll ride the last one till the end of the line\nI don\u2019t know where I\u2019ll go or where I\u2019ll wind up\nJust anything to ease my worried mind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m gonna catch me a freight train",
+        "Lord I\u2019m leaving this lonesome town",
+        "The one I loved and gave my heart to",
+        "For someone else she turned me down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Engineer reach up and pull the whistle",
+        "Let me hear that lonesome sound",
+        "For it blends with the feeling that\u2019s in me",
+        "The one I loved has turned me down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s sixteen cars behind each engine",
+        "I\u2019ll ride the last one till the end of the line",
+        "I don\u2019t know where I\u2019ll go or where I\u2019ll wind up",
+        "Just anything to ease my worried mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "darling-corey",
+  "title": "Darling Corey",
+  "source_url": "https://www.bluegrasslyrics.com/song/darling-corey/",
+  "raw_lyrics": "Wake up  wake up  darling Corey\nWhat makes you sleep so sound\nThe revenue officers are coming\nThey\u2019re gonna tear your still house down\n\nWell the first time I seen darling Corey\nShe was sitting on the banks of the sea\nHad a forty-four around her body\nAnd a banjo on her knee\n\nGo away go away darling Corey\nQuit hanging around my bed\nYour liquor has ruined my body\nPretty women gone to my head\n\nDig a hole dig a hole in the meadow\nDig a hole in the cold  cold ground\nDig a hole dig a hole in the meadow\nGonna lay darling Corey down\n\nCan\u2019t you hear those bluebirds a singing\nDon\u2019t you hear that mournful sound\nThey\u2019re preaching darling Corey\u2019s funeral\nIn some lonesome graveyard ground\n\nWake up wake up Darlin Corey\nAnd go get me my gun\nI ain\u2019t no man for fightin\u2019\nBut I\u2019ll die before I run",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Wake up  wake up  darling Corey",
+        "What makes you sleep so sound",
+        "The revenue officers are coming",
+        "They\u2019re gonna tear your still house down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well the first time I seen darling Corey",
+        "She was sitting on the banks of the sea",
+        "Had a forty-four around her body",
+        "And a banjo on her knee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go away go away darling Corey",
+        "Quit hanging around my bed",
+        "Your liquor has ruined my body",
+        "Pretty women gone to my head"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Dig a hole dig a hole in the meadow",
+        "Dig a hole in the cold  cold ground",
+        "Dig a hole dig a hole in the meadow",
+        "Gonna lay darling Corey down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Can\u2019t you hear those bluebirds a singing",
+        "Don\u2019t you hear that mournful sound",
+        "They\u2019re preaching darling Corey\u2019s funeral",
+        "In some lonesome graveyard ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wake up wake up Darlin Corey",
+        "And go get me my gun",
+        "I ain\u2019t no man for fightin\u2019",
+        "But I\u2019ll die before I run"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

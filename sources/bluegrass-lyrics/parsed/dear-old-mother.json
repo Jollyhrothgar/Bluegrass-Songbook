@@ -1,0 +1,49 @@
+{
+  "slug": "dear-old-mother",
+  "title": "Dear Old Mother",
+  "source_url": "https://www.bluegrasslyrics.com/song/dear-old-mother/",
+  "raw_lyrics": "Oh, the fields were turning brown all around that southern town\nThe boy came down the highway all alone\nAnd his face was looking sad, he was thinking of his dad\nAnd his mother that he left at home sweet home\n\nDear old mother how I miss you\nHow I long for your sweet face and sunny smile\nI would give up all I own just to be with you at home\nAnd to linger there for just a little while\n\nOh, the morning glory vine around the cabin door would twine\nAnd the mockingbird would sing along the tree\nThen we\u2019d take our dear old book and go down beside the brook\nAnd there for hours she\u2019d sit and read to me\n\nNow I\u2019m in this world alone, the old folks are not at home\nThey\u2019ve gone up to a happier home above\nThe mockingbirds are singing yet and I never will forget\nMy mother and dad were all I had to love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, the fields were turning brown all around that southern town",
+        "The boy came down the highway all alone",
+        "And his face was looking sad, he was thinking of his dad",
+        "And his mother that he left at home sweet home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Dear old mother how I miss you",
+        "How I long for your sweet face and sunny smile",
+        "I would give up all I own just to be with you at home",
+        "And to linger there for just a little while"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, the morning glory vine around the cabin door would twine",
+        "And the mockingbird would sing along the tree",
+        "Then we\u2019d take our dear old book and go down beside the brook",
+        "And there for hours she\u2019d sit and read to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I\u2019m in this world alone, the old folks are not at home",
+        "They\u2019ve gone up to a happier home above",
+        "The mockingbirds are singing yet and I never will forget",
+        "My mother and dad were all I had to love"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

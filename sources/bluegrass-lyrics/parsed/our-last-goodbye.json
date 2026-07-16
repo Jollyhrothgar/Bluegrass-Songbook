@@ -1,0 +1,49 @@
+{
+  "slug": "our-last-goodbye",
+  "title": "Our Last Goodbye",
+  "source_url": "https://www.bluegrasslyrics.com/song/our-last-goodbye/",
+  "raw_lyrics": "Oh the nights are lonely here without you\nAll I see is grief and pain\nFor another\u2019s love you treasure\nAll my hopes are now in vain\n\nFor I love you as no other\nThough you\u2019ve gone far away\nWill you ever think my darling\nOf our last goodbye today\n\nI often dream of you my darling\nYou looked so sweet and smiled at me\nAnd though another\u2019s arms may hold you\nThose two blue eyes I long to see\n\nNow if you ever need me darling\nDon\u2019t forget to drop a line\nMy heart will be with you my darling\nWon\u2019t you think of me sometime",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the nights are lonely here without you",
+        "All I see is grief and pain",
+        "For another\u2019s love you treasure",
+        "All my hopes are now in vain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "For I love you as no other",
+        "Though you\u2019ve gone far away",
+        "Will you ever think my darling",
+        "Of our last goodbye today"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I often dream of you my darling",
+        "You looked so sweet and smiled at me",
+        "And though another\u2019s arms may hold you",
+        "Those two blue eyes I long to see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now if you ever need me darling",
+        "Don\u2019t forget to drop a line",
+        "My heart will be with you my darling",
+        "Won\u2019t you think of me sometime"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

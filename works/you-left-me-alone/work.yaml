@@ -1,0 +1,11 @@
+id: you-left-me-alone
+title: You Left Me Alone
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/you-left-me-alone/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: bringing-in-the-georgia-mail
+title: Bringing In The Georgia Mail
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/bringing-in-the-georgia-mail/
+      imported_at: '2026-02-08'

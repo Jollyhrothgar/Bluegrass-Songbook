@@ -1,0 +1,50 @@
+{
+  "slug": "home-by-the-sea",
+  "title": "Home By The Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/home-by-the-sea/",
+  "raw_lyrics": "There\u2019s a lonely cottage by the sea side\nWhere the water lillies through the shore\nIt was there I passed my happy childhood\nWith a loved one that\u2019s gone before\n\nThen give me back my dear old home\nThat old home by the sea\nAnd I never will wander far away\nFrom my home my dear old cottage home\nYodel\n\nMany years have passed since there I wandered\nBut the old cottage has been forgot\nAnd my heart in fancy oft returned\nTo that dear old familiar spot\n\nYes my heart is like the humming sea shell\nThat tells of its birth where ere it roams\nI will sing of my cottage by the sea shore\nOf my home my dear old cottage home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a lonely cottage by the sea side",
+        "Where the water lillies through the shore",
+        "It was there I passed my happy childhood",
+        "With a loved one that\u2019s gone before"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Then give me back my dear old home",
+        "That old home by the sea",
+        "And I never will wander far away",
+        "From my home my dear old cottage home",
+        "Yodel"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many years have passed since there I wandered",
+        "But the old cottage has been forgot",
+        "And my heart in fancy oft returned",
+        "To that dear old familiar spot"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yes my heart is like the humming sea shell",
+        "That tells of its birth where ere it roams",
+        "I will sing of my cottage by the sea shore",
+        "Of my home my dear old cottage home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

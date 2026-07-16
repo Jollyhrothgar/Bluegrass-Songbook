@@ -1,0 +1,49 @@
+{
+  "slug": "beautiful-isle-oer-the-sea",
+  "title": "Beautiful Isle O\u2019Er The Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/beautiful-isle-oer-the-sea/",
+  "raw_lyrics": "I will not be your sweetheart\nI\u2019ll tell you the reason why\nMy mother always told me\nTo pass a drunkard by\n\nBeautiful isle o\u2019er the sea\nBeautiful isle o\u2019er the sea\nBeautiful isle o\u2019er the sea\nThere\u2019s someone waiting for me\n\nNow young man I will tell you\nIf you want my heart my hand\nYou better quit your drinking\nAnd be a sober man\n\nGo prove yourself be faithful\nGo prove yourself be true\nAnd sometime in the future\nPerhaps I\u2019ll marry you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I will not be your sweetheart",
+        "I\u2019ll tell you the reason why",
+        "My mother always told me",
+        "To pass a drunkard by"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Beautiful isle o\u2019er the sea",
+        "Beautiful isle o\u2019er the sea",
+        "Beautiful isle o\u2019er the sea",
+        "There\u2019s someone waiting for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now young man I will tell you",
+        "If you want my heart my hand",
+        "You better quit your drinking",
+        "And be a sober man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go prove yourself be faithful",
+        "Go prove yourself be true",
+        "And sometime in the future",
+        "Perhaps I\u2019ll marry you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: one-morning-in-may
+title: One Morning in May
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/one-morning-in-may/
+      imported_at: '2026-02-08'

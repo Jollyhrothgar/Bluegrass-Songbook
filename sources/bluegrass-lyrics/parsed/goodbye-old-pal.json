@@ -1,0 +1,46 @@
+{
+  "slug": "goodbye-old-pal",
+  "title": "Goodbye Old Pal",
+  "source_url": "https://www.bluegrasslyrics.com/song/goodbye-old-pal/",
+  "raw_lyrics": "Along about round-up time In Texas way out West\nI lost a friend and a pal, boys I laid him down to rest\nI weeped and moaned over his grave and to me boys it was sad\n\u2018Cause I knew down beneath that mound lay the best pal I ever had\n\nOh de lady a, de oh lady oh, de ladie\n\nMy best pal was my old paint horse and now he\u2019s gone to rest\nI laid him down beneath that mound in Texas away out West\nWhere the cactus blooms over his grave and the coyotes cry\nI know he sleeps in perfect peace beneath the Texas sky\n\nDear old pal it breaks my heart to leave you here alone\nNow I\u2019ll go and ride the range on the Texas roan\nBut my love for you old pal it shall linger on\nI will always think of you although you\u2019re dead and gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Along about round-up time In Texas way out West",
+        "I lost a friend and a pal, boys I laid him down to rest",
+        "I weeped and moaned over his grave and to me boys it was sad",
+        "\u2018Cause I knew down beneath that mound lay the best pal I ever had"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh de lady a, de oh lady oh, de ladie"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My best pal was my old paint horse and now he\u2019s gone to rest",
+        "I laid him down beneath that mound in Texas away out West",
+        "Where the cactus blooms over his grave and the coyotes cry",
+        "I know he sleeps in perfect peace beneath the Texas sky"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Dear old pal it breaks my heart to leave you here alone",
+        "Now I\u2019ll go and ride the range on the Texas roan",
+        "But my love for you old pal it shall linger on",
+        "I will always think of you although you\u2019re dead and gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

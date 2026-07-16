@@ -1,0 +1,39 @@
+{
+  "slug": "i-always-get-lonesome-when-it-rains",
+  "title": "I Always Get Lonesome When It Rains",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-always-get-lonesome-when-it-rains/",
+  "raw_lyrics": "Tonight I\u2019m all alone with all my memories\nAnd this old heart of mine miust bear the pain\nNow I can hear the raindrops softly falling\nAnd I always get lonesome when it rains.\n\nThere\u2019s something about the rain that makes me blue\n\u2018Cuz when the raindrops fall I think of you\nNow I can hear the patter on the pane\nAnd I always get lonesome when it rains.\n\nI\u2019m glad there\u2019s no one \u2019round to hear me cry\nNor to see me walk the floor like I\u2019m insane\nNow I can\u2019t hide my sorrow no need trying\n\u2018Cuz I always get lonesome when it rains.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight I\u2019m all alone with all my memories",
+        "And this old heart of mine miust bear the pain",
+        "Now I can hear the raindrops softly falling",
+        "And I always get lonesome when it rains."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s something about the rain that makes me blue",
+        "\u2018Cuz when the raindrops fall I think of you",
+        "Now I can hear the patter on the pane",
+        "And I always get lonesome when it rains."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m glad there\u2019s no one \u2019round to hear me cry",
+        "Nor to see me walk the floor like I\u2019m insane",
+        "Now I can\u2019t hide my sorrow no need trying",
+        "\u2018Cuz I always get lonesome when it rains."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "the-valley-of-peace",
+  "title": "The Valley Of Peace",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-valley-of-peace/",
+  "raw_lyrics": "There\u2019s an old broken lock on the old cabin door\nThe cracks and the holes in your cabin floor\nIt\u2019s a tumbled down shack how I long to go back\nAnd dwell in that shack evermore\n\nPeace peace the valley of peace\nWhere no sorrows are known\nLike a heaven yes heaven to me it seems\nPeace the valley my home\n\nThough an old broken window\nthe light brightly shines\nIt twinkles and shines through the honeysuckle vines\nBy the old rustic well is my sweet little Nell\nAnd for me I know how she pines\n\nIn the parlor a fire is burning so bright\nThe old rocking chair is empty tonight\nThat tumbled down shack is a palace to me\nAnd that\u2019s where I\u2019m longing to be\n\n* Refrain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s an old broken lock on the old cabin door",
+        "The cracks and the holes in your cabin floor",
+        "It\u2019s a tumbled down shack how I long to go back",
+        "And dwell in that shack evermore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Peace peace the valley of peace",
+        "Where no sorrows are known",
+        "Like a heaven yes heaven to me it seems",
+        "Peace the valley my home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though an old broken window",
+        "the light brightly shines",
+        "It twinkles and shines through the honeysuckle vines",
+        "By the old rustic well is my sweet little Nell",
+        "And for me I know how she pines"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the parlor a fire is burning so bright",
+        "The old rocking chair is empty tonight",
+        "That tumbled down shack is a palace to me",
+        "And that\u2019s where I\u2019m longing to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "* Refrain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

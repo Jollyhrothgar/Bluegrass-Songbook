@@ -1,0 +1,49 @@
+{
+  "slug": "francis-lee",
+  "title": "Francis Lee",
+  "source_url": "https://www.bluegrasslyrics.com/song/francis-lee/",
+  "raw_lyrics": "In the evening by the moonlight\nDown beside the silver sea\nWe strolled hand in hand together\nYou and I my Francis Lee\n\nPlease forgive me little darlin\nIf you set my conscience free\nMy lonely heart is broken\nOver you my Francis Lee\n\nFrancis Lee I dearly love you\nThough I said that we must part\nMany times I have regretted\nThat I broke your lovin\u2019 heart\n\nI\u2019m alone now sad and lonely\nOh how grave my sorrow be\nYour sweet memory still haunts me\nAnd my conscience bothers me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the evening by the moonlight",
+        "Down beside the silver sea",
+        "We strolled hand in hand together",
+        "You and I my Francis Lee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Please forgive me little darlin",
+        "If you set my conscience free",
+        "My lonely heart is broken",
+        "Over you my Francis Lee"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Francis Lee I dearly love you",
+        "Though I said that we must part",
+        "Many times I have regretted",
+        "That I broke your lovin\u2019 heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m alone now sad and lonely",
+        "Oh how grave my sorrow be",
+        "Your sweet memory still haunts me",
+        "And my conscience bothers me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

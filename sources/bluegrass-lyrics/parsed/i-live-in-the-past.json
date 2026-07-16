@@ -1,0 +1,49 @@
+{
+  "slug": "i-live-in-the-past",
+  "title": "I Live In The Past",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-live-in-the-past/",
+  "raw_lyrics": "The day\u2019s are so lonely the night are so long\nOur home is a prison since you are gone\nAnd I\u2019ll always wonder why our love didn\u2019t last\nWith no hope for tomorrow I\u2019ll live in the past\n\nA door that won\u2019t knock a phone that don\u2019t ring\nThe postman goes by and he don\u2019t leave a thing\nA pain in my heart and tears in my eyes\nMy sweetheart has gone I\u2019m left here to cry\n\nI\u2019m the biggest pretender you ever could see\nI pretend you still love me false love couldn\u2019t be\nAnd then I remember and I know that its true\nFor your with another and I know I\u2019ve lost you\n\nI\u2019ll just go on dreaming sweet dreams of the past\nOf when you still love me and I thought it would last\nBut life is so short and time moves so fast\nI\u2019ll never forget you as I live in the past",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The day\u2019s are so lonely the night are so long",
+        "Our home is a prison since you are gone",
+        "And I\u2019ll always wonder why our love didn\u2019t last",
+        "With no hope for tomorrow I\u2019ll live in the past"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A door that won\u2019t knock a phone that don\u2019t ring",
+        "The postman goes by and he don\u2019t leave a thing",
+        "A pain in my heart and tears in my eyes",
+        "My sweetheart has gone I\u2019m left here to cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m the biggest pretender you ever could see",
+        "I pretend you still love me false love couldn\u2019t be",
+        "And then I remember and I know that its true",
+        "For your with another and I know I\u2019ve lost you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll just go on dreaming sweet dreams of the past",
+        "Of when you still love me and I thought it would last",
+        "But life is so short and time moves so fast",
+        "I\u2019ll never forget you as I live in the past"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

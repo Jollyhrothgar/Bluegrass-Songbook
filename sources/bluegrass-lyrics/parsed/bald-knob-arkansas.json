@@ -1,0 +1,48 @@
+{
+  "slug": "bald-knob-arkansas",
+  "title": "Bald Knob Arkansas",
+  "source_url": "https://www.bluegrasslyrics.com/song/bald-knob-arkansas/",
+  "raw_lyrics": "I hear that train a comin\u2019\nComin\u2019 down the line\nGonna meet you at the station\nGonna see that gal of mine\n\nBald Knob Arkansas see my Linda Lou\nI will be her lovin\u2019 man and always lover her true\nTil I\u2019m bald headed too\n\nI\u2019m awful tired and hungry now\nGot nothin\u2019 in my craw\nI\u2019m on my way back to see my girl\nBack in Bald Knob Arkansas\n\nGot a blue eyed girl a waiting there\nSweetest I\u2019d ever saw\nWell I\u2019m on my way to make her mine\nBack in Bald Knob Arkansas",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I hear that train a comin\u2019",
+        "Comin\u2019 down the line",
+        "Gonna meet you at the station",
+        "Gonna see that gal of mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Bald Knob Arkansas see my Linda Lou",
+        "I will be her lovin\u2019 man and always lover her true",
+        "Til I\u2019m bald headed too"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m awful tired and hungry now",
+        "Got nothin\u2019 in my craw",
+        "I\u2019m on my way back to see my girl",
+        "Back in Bald Knob Arkansas"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Got a blue eyed girl a waiting there",
+        "Sweetest I\u2019d ever saw",
+        "Well I\u2019m on my way to make her mine",
+        "Back in Bald Knob Arkansas"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

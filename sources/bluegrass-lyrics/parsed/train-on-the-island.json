@@ -1,0 +1,63 @@
+{
+  "slug": "train-on-the-island",
+  "title": "Train on the Island",
+  "source_url": "https://www.bluegrasslyrics.com/song/train-on-the-island/",
+  "raw_lyrics": "Train on the island listen to her squeal\nGo and tell my true love how happy I do feel\nGo and tell my true love how happy I do feel\n\nTrain on the island headed for the west\nGo and tell my true love the girl I love the best\nGo and tell my true love the girl I love the best\n\nThe steam from the whistle smoke from the stack\nGoin to catch that 5:18 I\u2019m never comin\u2019 back\nGoin to catch that 5:18 I\u2019m never comin\u2019 back\n\nTrain on the island thought I heard her squeal\nGo and tell my true love that I can\u2019t hold the wheel\nGo and tell my true love that I can\u2019t hold the wheel\n\nTrain on the island moan mighty low\nGo and tell my true love as far as I can go\nGo and tell my true love as far as I can go\n\nTrain on the island headed for the north\nGo and tell my true love she don\u2019t know what she\u2019s worth\nGo and tell my true love she don\u2019t know what she\u2019s worth",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Train on the island listen to her squeal",
+        "Go and tell my true love how happy I do feel",
+        "Go and tell my true love how happy I do feel"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Train on the island headed for the west",
+        "Go and tell my true love the girl I love the best",
+        "Go and tell my true love the girl I love the best"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The steam from the whistle smoke from the stack",
+        "Goin to catch that 5:18 I\u2019m never comin\u2019 back",
+        "Goin to catch that 5:18 I\u2019m never comin\u2019 back"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Train on the island thought I heard her squeal",
+        "Go and tell my true love that I can\u2019t hold the wheel",
+        "Go and tell my true love that I can\u2019t hold the wheel"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Train on the island moan mighty low",
+        "Go and tell my true love as far as I can go",
+        "Go and tell my true love as far as I can go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Train on the island headed for the north",
+        "Go and tell my true love she don\u2019t know what she\u2019s worth",
+        "Go and tell my true love she don\u2019t know what she\u2019s worth"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

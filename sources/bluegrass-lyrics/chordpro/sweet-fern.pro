@@ -1,0 +1,56 @@
+{meta: title Sweet Fern}
+{meta: artist Carter Family}
+{meta: x_lyrics_source bluegrass-lyrics}
+{meta: x_lyrics_url https://www.bluegrasslyrics.com/song/sweet-fern/}
+{meta: x_chords_source traditional-music-uk}
+{meta: x_chords_url http://www.traditionalmusic.co.uk/carter-family-songs/Sweet Fern.htm}
+{meta: x_generated 2026-02-04}
+
+{start_of_verse: Verse 1}
+[D]Springtime is [A]coming sweet lonesome bird
+Your [A]echo in the [A7]woodland I [D]hear
+Down in [A]the meadow [A7]so lonesome [D]your singing
+While the [A]moonlight is [A7]shining so [D]clear
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[G]But I know he’s away in a [D]far distant [A]land
+A [A]land that is over the [D]sea
+Go fly [A]to him singing [A7]your sweet [D]little song
+And [A]tell him to [A7]come back to [D]me
+{end_of_verse}
+
+{start_of_chorus}
+[D]Sweet fern, sweet [D]fern
+Oh [A]tell [D]me, is my [A7]darling still [D]true
+Sweet [D]fern, sweet [D]fern
+I’ll [A]be just as [A7]happy as [D]you
+{end_of_chorus}
+
+{start_of_verse: Verse 3}
+[A]Oh tell [D]me sweet [D]fern, is he thinking of [D]me
+And [A]the promise [A7]he made long [D]ago
+He said he’d return from over the [D]sea
+Oh [A]why do the [A7]years go so [D]slow
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+[G]But I know he’s away in a [D]far distant [A]land
+A [A]land that is over the [D]sea
+Go fly [A]to him singing [A7]your sweet [D]little song
+And [A]tell him to [A7]come back to [D]me
+{end_of_verse}
+
+{start_of_verse: Verse 5}
+[A]Upon my finger [A7]he placed a [D]small ring
+On [A]the day he [A7]was leaving [D]his home
+I promised I’d [A]be his own little girl
+And [A]love him [A7]wherever he’d [D]roam
+{end_of_verse}
+
+{start_of_verse: Verse 6}
+[G]But I know he’s away in a [D]far distant [A]land
+A [A]land that is over the [D]sea
+Go fly [A]to him singing [A7]your sweet [D]little song
+And [A]tell him to [A7]come back to [D]me
+{end_of_verse}

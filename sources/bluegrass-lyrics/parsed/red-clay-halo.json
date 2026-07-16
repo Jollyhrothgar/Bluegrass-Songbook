@@ -1,0 +1,67 @@
+{
+  "slug": "red-clay-halo",
+  "title": "Red Clay Halo",
+  "source_url": "https://www.bluegrasslyrics.com/song/red-clay-halo/",
+  "raw_lyrics": "The girls all dance with the boys from the city\nBut they don\u2019t care to dance with me\nWell it ain\u2019t my fault that the fields are muddy\nAnd the red clay stains my feet\n\nWell its under my nails and its under my collar\nAnd it shows on my Sunday clothes\nThough I do my best with soap and water\nThat damned old dirt won\u2019t go\n\nBut when I pass through the pearly gates\nWill my gown be gold instead\nOr just a red clay robe with red clay wings\nAnd a red clay halo for my head\n\nIt\u2019s mud in the spring and it\u2019s dust in the summer\nWhen it rolls in crimson tide\n\u2018Til the trees and leaves and the cows are the color\nOf the dirt on the mountainside\n\nNow Jordan\u2019s banks are red and muddy\nAnd the rolling water is wide\nBut I got no boat, so I\u2019ll be good and muddy\nWhen I get to the other side\n\nI\u2019ll take the red clay robe and the red clay wings\nAnd the red clay halo for my head",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The girls all dance with the boys from the city",
+        "But they don\u2019t care to dance with me",
+        "Well it ain\u2019t my fault that the fields are muddy",
+        "And the red clay stains my feet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well its under my nails and its under my collar",
+        "And it shows on my Sunday clothes",
+        "Though I do my best with soap and water",
+        "That damned old dirt won\u2019t go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "But when I pass through the pearly gates",
+        "Will my gown be gold instead",
+        "Or just a red clay robe with red clay wings",
+        "And a red clay halo for my head"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s mud in the spring and it\u2019s dust in the summer",
+        "When it rolls in crimson tide",
+        "\u2018Til the trees and leaves and the cows are the color",
+        "Of the dirt on the mountainside"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now Jordan\u2019s banks are red and muddy",
+        "And the rolling water is wide",
+        "But I got no boat, so I\u2019ll be good and muddy",
+        "When I get to the other side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll take the red clay robe and the red clay wings",
+        "And the red clay halo for my head"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

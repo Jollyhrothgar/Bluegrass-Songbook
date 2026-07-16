@@ -1,0 +1,69 @@
+{
+  "slug": "keys-to-the-kingdom",
+  "title": "Keys to the Kingdom",
+  "source_url": "https://www.bluegrasslyrics.com/song/keys-to-the-kingdom/",
+  "raw_lyrics": "They called old John from the island\nAnd they put him in the kettle to boil\nAnd the Lord came down from heaven above\nAnd they tell me that the oil wouldn\u2019t boil\n\nOh he had the keys to the kingdom\nAnd the faith unlocked the door\nOh he had the keys to the kingdom Lord\nAnd the world couldn\u2019t do him no harm\n\nThe king said to the Hebrew\nWhen they were about to sound\nBefore you worship that idol God\nGet ready to bow down\n\nWell they put old Paul and Silas\nDown in the jail below\nWhile one did sing and the other did shout\nAnd the angel unlocked the door\n\nGo get your trumpet Gabriel\nAnd move down by the sea\nBut don\u2019t you blow that trumpet\nUntil you hear from me\n\nWhen you think that you\u2019ve been living right\nAnd serving God every day\nJust fall down on our bended knees\nHe\u2019ll hear every word you say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "They called old John from the island",
+        "And they put him in the kettle to boil",
+        "And the Lord came down from heaven above",
+        "And they tell me that the oil wouldn\u2019t boil"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh he had the keys to the kingdom",
+        "And the faith unlocked the door",
+        "Oh he had the keys to the kingdom Lord",
+        "And the world couldn\u2019t do him no harm"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The king said to the Hebrew",
+        "When they were about to sound",
+        "Before you worship that idol God",
+        "Get ready to bow down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well they put old Paul and Silas",
+        "Down in the jail below",
+        "While one did sing and the other did shout",
+        "And the angel unlocked the door"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go get your trumpet Gabriel",
+        "And move down by the sea",
+        "But don\u2019t you blow that trumpet",
+        "Until you hear from me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you think that you\u2019ve been living right",
+        "And serving God every day",
+        "Just fall down on our bended knees",
+        "He\u2019ll hear every word you say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

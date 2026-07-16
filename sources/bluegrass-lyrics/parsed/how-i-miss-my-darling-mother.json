@@ -1,0 +1,39 @@
+{
+  "slug": "how-i-miss-my-darling-mother",
+  "title": "How I Miss My Darling Mother",
+  "source_url": "https://www.bluegrasslyrics.com/song/how-i-miss-my-darling-mother/",
+  "raw_lyrics": "In my memory there\u2019s a little mountain homestead\nAnd the flowers are still growing on the lawn\nNow each time I go back home the tears start falling\nHow I miss my darling since she\u2019s gone\n\nShe\u2019s gone to join a happy band of angels\nTo sing for endless ages at God\u2019s throne\nThe best friend I ever had is now with Jesus\nHow I miss my darling Mother since she\u2019s gone\n\nThere\u2019ll never be another friend like Mother\nNo one can do the things for me she done\nNor can fill the vacant place she left here\nHow I miss my darling mother since she\u2019s gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In my memory there\u2019s a little mountain homestead",
+        "And the flowers are still growing on the lawn",
+        "Now each time I go back home the tears start falling",
+        "How I miss my darling since she\u2019s gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She\u2019s gone to join a happy band of angels",
+        "To sing for endless ages at God\u2019s throne",
+        "The best friend I ever had is now with Jesus",
+        "How I miss my darling Mother since she\u2019s gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019ll never be another friend like Mother",
+        "No one can do the things for me she done",
+        "Nor can fill the vacant place she left here",
+        "How I miss my darling mother since she\u2019s gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

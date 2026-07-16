@@ -1,0 +1,39 @@
+{
+  "slug": "goin-up",
+  "title": "Goin\u2019 Up",
+  "source_url": "https://www.bluegrasslyrics.com/song/goin-up/",
+  "raw_lyrics": "Goin up I\u2019m goin\u2019 way up\nJust to see my Savior there\nGoin up I\u2019m goin\u2019 way up\nLet Him free my soul from sin\n\nThere\u2019s a man who is standing at the pearly gates\nAnd I know He\u2019ll let me in\nFor I\u2019m goin\u2019 there to see my Savior\nLet\u00a0 Him free my soul from sin\n\nOh I want to be ready when He calls for me\nI want to wear a long white robe\nI want to wear those golden slippers on my feet\nWhen He calls me I must go",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Goin up I\u2019m goin\u2019 way up",
+        "Just to see my Savior there",
+        "Goin up I\u2019m goin\u2019 way up",
+        "Let Him free my soul from sin"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a man who is standing at the pearly gates",
+        "And I know He\u2019ll let me in",
+        "For I\u2019m goin\u2019 there to see my Savior",
+        "Let\u00a0 Him free my soul from sin"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I want to be ready when He calls for me",
+        "I want to wear a long white robe",
+        "I want to wear those golden slippers on my feet",
+        "When He calls me I must go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

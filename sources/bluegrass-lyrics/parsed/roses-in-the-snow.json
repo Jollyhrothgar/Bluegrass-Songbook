@@ -1,0 +1,49 @@
+{
+  "slug": "roses-in-the-snow",
+  "title": "Roses In The Snow",
+  "source_url": "https://www.bluegrasslyrics.com/song/roses-in-the-snow/",
+  "raw_lyrics": "I met my darling in the springtime\nWhen all the flowers were in bloom\nAnd like the flowers our love blossomed\nWe married in the month of June\n\nOur love was like a burning ember\nIt warmed us as a golden glow (3rd time \u201ccold winds blow\u201d)\nWe had sunshine in December\nAnd grew our roses in the snow\n\nNow God has taken my darlin\u2019\nAnd left me with a memory\nA memory I will always cherish\nAre these last words he said to me\n\nMy darlin\u2019s buried on the hillside\nWhere all the wild spring flowers grow\nAnd when the winter snow starts falling\nOn his grave I\u2019ll place a rose.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I met my darling in the springtime",
+        "When all the flowers were in bloom",
+        "And like the flowers our love blossomed",
+        "We married in the month of June"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Our love was like a burning ember",
+        "It warmed us as a golden glow (3rd time \u201ccold winds blow\u201d)",
+        "We had sunshine in December",
+        "And grew our roses in the snow"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now God has taken my darlin\u2019",
+        "And left me with a memory",
+        "A memory I will always cherish",
+        "Are these last words he said to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My darlin\u2019s buried on the hillside",
+        "Where all the wild spring flowers grow",
+        "And when the winter snow starts falling",
+        "On his grave I\u2019ll place a rose."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

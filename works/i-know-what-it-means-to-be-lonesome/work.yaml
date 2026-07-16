@@ -1,0 +1,11 @@
+id: i-know-what-it-means-to-be-lonesome
+title: I Know What It Means To Be Lonesome
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/i-know-what-it-means-to-be-lonesome/
+      imported_at: '2026-02-08'

@@ -1,0 +1,48 @@
+{
+  "slug": "lost-john",
+  "title": "Lost John",
+  "source_url": "https://www.bluegrasslyrics.com/song/lost-john/",
+  "raw_lyrics": "Long John walkin\u2019 around in the rain\n\nHe\u2019s long gone Lost John\nLong gone Lost John\n\nNo hat on his head no shoes on his feet\nHe\u2019s a beggin the women for his meat\n\nI had an ol\u2019 dog and his name was\nlike a rabbit through Bowlin\u2019 Green\n\nLost John walked around in rain\nAround the corner left him sittin\u2019 by the ol\u2019 railroad",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Long John walkin\u2019 around in the rain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He\u2019s long gone Lost John",
+        "Long gone Lost John"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "No hat on his head no shoes on his feet",
+        "He\u2019s a beggin the women for his meat"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had an ol\u2019 dog and his name was",
+        "like a rabbit through Bowlin\u2019 Green"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lost John walked around in rain",
+        "Around the corner left him sittin\u2019 by the ol\u2019 railroad"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

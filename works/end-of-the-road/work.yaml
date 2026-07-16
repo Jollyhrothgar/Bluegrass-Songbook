@@ -1,0 +1,11 @@
+id: end-of-the-road
+title: End of the Road
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/end-of-the-road/
+      imported_at: '2026-02-08'

@@ -1,0 +1,11 @@
+id: little-gypsy-girl-the
+title: Little Gypsy Girl, The
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/little-gypsy-girl-the/
+      imported_at: '2026-02-08'

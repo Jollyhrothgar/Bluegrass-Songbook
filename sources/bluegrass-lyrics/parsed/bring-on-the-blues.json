@@ -1,0 +1,41 @@
+{
+  "slug": "bring-on-the-blues",
+  "title": "Bring On The Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/bring-on-the-blues/",
+  "raw_lyrics": "It\u2019s a steep and windy road\nand it\u2019s a mighty heavy load\nFor this one man to live life this way\nI\u2019m spending most of my time\nthinkin\u2019 with a worried mind\nI got a feeling this feelings\u2019 here to stay\n\nSo bring on the blues\nbring on the blues\nIt\u2019s the one thing I just can\u2019t lose\n\nI maybe right I maybe wrong\nI\u2019ll leave this world this one ol\u2019 song\nAbout the way that I\u2019m feelin\u2019 tonight\nBeen \u2019round the world sailed the sea\nI got the feelin\u2019 I\u2019m losin\u2019 this fight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a steep and windy road",
+        "and it\u2019s a mighty heavy load",
+        "For this one man to live life this way",
+        "I\u2019m spending most of my time",
+        "thinkin\u2019 with a worried mind",
+        "I got a feeling this feelings\u2019 here to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So bring on the blues",
+        "bring on the blues",
+        "It\u2019s the one thing I just can\u2019t lose"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I maybe right I maybe wrong",
+        "I\u2019ll leave this world this one ol\u2019 song",
+        "About the way that I\u2019m feelin\u2019 tonight",
+        "Been \u2019round the world sailed the sea",
+        "I got the feelin\u2019 I\u2019m losin\u2019 this fight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

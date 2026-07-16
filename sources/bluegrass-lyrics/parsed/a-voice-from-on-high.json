@@ -1,0 +1,42 @@
+{
+  "slug": "a-voice-from-on-high",
+  "title": "A Voice From On High",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-voice-from-on-high/",
+  "raw_lyrics": "I hear a voice callin\u2019\nit must be our Lord\nIt\u2019s comin\u2019 from heaven on high\nI hear a voice callin\u2019\nI\u2019ll gain the reward\nIn the land where we shall never shall die\n\nThe Savior has paid a great price for me\nHe gave His life on Calvary\nSo I\u2019ll follow his footsteps up the narrow way\nAnd be ready to meet Him when He calls on that day\n\nHe died on the cross\nthe old rugged cross\nThat we would be saved from sin and not lost\nSo I\u2019ll follow His footsteps up the narrow way\nAnd we\u2019ll pay that debt on the great judgement day",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I hear a voice callin\u2019",
+        "it must be our Lord",
+        "It\u2019s comin\u2019 from heaven on high",
+        "I hear a voice callin\u2019",
+        "I\u2019ll gain the reward",
+        "In the land where we shall never shall die"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The Savior has paid a great price for me",
+        "He gave His life on Calvary",
+        "So I\u2019ll follow his footsteps up the narrow way",
+        "And be ready to meet Him when He calls on that day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He died on the cross",
+        "the old rugged cross",
+        "That we would be saved from sin and not lost",
+        "So I\u2019ll follow His footsteps up the narrow way",
+        "And we\u2019ll pay that debt on the great judgement day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

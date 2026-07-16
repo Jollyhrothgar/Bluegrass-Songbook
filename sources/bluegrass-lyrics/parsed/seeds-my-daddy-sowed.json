@@ -1,0 +1,49 @@
+{
+  "slug": "seeds-my-daddy-sowed",
+  "title": "Seeds My Daddy Sowed",
+  "source_url": "https://www.bluegrasslyrics.com/song/seeds-my-daddy-sowed/",
+  "raw_lyrics": "These are the seeds that my daddy sowed\nThis is the field that my daddy hoed\nThese are the crops that blossomed in the fields\nThat grew from the seeds that my daddy sowed\n\nThis is the bank where the money goes\nTo pay the man that my daddy owes\nThat sold us the field that blossomed into crops\nThat grew that from the seeds that my daddy sowed\n\nThis is the truth that the farmer knows\nAt the end of the day you got nothin\u2019 to show\nCause the man who owns the bank is the man who owns the fields\nIs the man who owns the seeds that my daddy sowed\n\nThese are the seeds that my daddy sowed\nThis is the field that my daddy hoed\nThese are the crops that blossomed in the fields\nThat grew from the seeds that my daddy sowed",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "These are the seeds that my daddy sowed",
+        "This is the field that my daddy hoed",
+        "These are the crops that blossomed in the fields",
+        "That grew from the seeds that my daddy sowed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This is the bank where the money goes",
+        "To pay the man that my daddy owes",
+        "That sold us the field that blossomed into crops",
+        "That grew that from the seeds that my daddy sowed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This is the truth that the farmer knows",
+        "At the end of the day you got nothin\u2019 to show",
+        "Cause the man who owns the bank is the man who owns the fields",
+        "Is the man who owns the seeds that my daddy sowed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "These are the seeds that my daddy sowed",
+        "This is the field that my daddy hoed",
+        "These are the crops that blossomed in the fields",
+        "That grew from the seeds that my daddy sowed"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

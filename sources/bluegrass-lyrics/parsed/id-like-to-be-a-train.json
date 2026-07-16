@@ -1,0 +1,49 @@
+{
+  "slug": "id-like-to-be-a-train",
+  "title": "I\u2019d Like to be a Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/id-like-to-be-a-train/",
+  "raw_lyrics": "If I could be what I\u2019d like to be\nI\u2019d like to be a train\nCause trains don\u2019t have no heart to break\nAnd they don\u2019t feel no pain\n\nIf love was wine a sweet red wine\nI drink away my pain\nI\u2019d drink until my heart was filled\nWith love instead of shame\n\nWhy can\u2019t love be like a hickory tree\nThat stands so strong and tall\nWhy can\u2019t I find a heart that\u2019s true\nWho\u2019ll never say goodbye\n\nOh what a shame you\u2019ll never change\nI guess I always knew\nBut there\u2019s no girl in the whole wide world\nI\u2019d love as much as you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If I could be what I\u2019d like to be",
+        "I\u2019d like to be a train",
+        "Cause trains don\u2019t have no heart to break",
+        "And they don\u2019t feel no pain"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If love was wine a sweet red wine",
+        "I drink away my pain",
+        "I\u2019d drink until my heart was filled",
+        "With love instead of shame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Why can\u2019t love be like a hickory tree",
+        "That stands so strong and tall",
+        "Why can\u2019t I find a heart that\u2019s true",
+        "Who\u2019ll never say goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh what a shame you\u2019ll never change",
+        "I guess I always knew",
+        "But there\u2019s no girl in the whole wide world",
+        "I\u2019d love as much as you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

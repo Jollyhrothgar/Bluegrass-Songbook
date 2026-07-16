@@ -1,0 +1,39 @@
+{
+  "slug": "where-the-dim-lights-are-the-dimmest",
+  "title": "Where The Dim Lights Are The Dimmest",
+  "source_url": "https://www.bluegrasslyrics.com/song/where-the-dim-lights-are-the-dimmest/",
+  "raw_lyrics": "Tonight the music echoes from a bar just down the street\nThat\u2019s where my sweetheart\u2019s waiting, a new love there to meet\nShe\u2019ll laugh, dance, and mix it with the wild and wicked crowd\nWhere the dim lights are the dimmest and the music\u2019s always loud\n\nWhat a shame to know I\u2019ve lost her, it\u2019s something I can\u2019t bear\nMy mind is slowly breaking, knowing she don\u2019t care\nThe honky tonk now claims her, she\u2019s now one of the crowd\nWhere the dim lights are the dimmest and the music\u2019s always loud\n\nI know she\u2019s out there dancing to a song that we love so\nThe liquor keeps her swinging, the wine keeps her afloat\nI\u2019ve lost her to another, it makes no difference now\nWhere the dim lights are the dimmest and the music\u2019s much too loud",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight the music echoes from a bar just down the street",
+        "That\u2019s where my sweetheart\u2019s waiting, a new love there to meet",
+        "She\u2019ll laugh, dance, and mix it with the wild and wicked crowd",
+        "Where the dim lights are the dimmest and the music\u2019s always loud"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "What a shame to know I\u2019ve lost her, it\u2019s something I can\u2019t bear",
+        "My mind is slowly breaking, knowing she don\u2019t care",
+        "The honky tonk now claims her, she\u2019s now one of the crowd",
+        "Where the dim lights are the dimmest and the music\u2019s always loud"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know she\u2019s out there dancing to a song that we love so",
+        "The liquor keeps her swinging, the wine keeps her afloat",
+        "I\u2019ve lost her to another, it makes no difference now",
+        "Where the dim lights are the dimmest and the music\u2019s much too loud"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

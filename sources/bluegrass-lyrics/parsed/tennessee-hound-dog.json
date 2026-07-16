@@ -1,0 +1,52 @@
+{
+  "slug": "tennessee-hound-dog",
+  "title": "Tennessee Hound Dog",
+  "source_url": "https://www.bluegrasslyrics.com/song/tennessee-hound-dog/",
+  "raw_lyrics": "He looks like skin on a bone pile\nA cat wouldn\u2019t give him a chance\nBut When he stretches his long legs out\nA fox ain\u2019t got a cahnce\nTennessee hound dog Tennessee hound dog\n\nSad faced mooneyed creature\nHis ears hang down to his knees\nThe she hounds call him a has been\nAn old aged home for fleas\nTennessee hound dog Tennessee hound dog\n\nBut when he gets a certain kind of look on his face\nThe she hounds run for a hiding place\nCuz when he takes a notion all the girl dogs know\nHe\u2019s a dynamite up tite outa sight backyard romeo\n\nHe looks like ugly warmed over\nSome dog lovers have said that\nBut he\u2019s got more sense in the end of his nose\nThat they\u2019ve got in their head\nTennessee hound dog Tennessee hound dog",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "He looks like skin on a bone pile",
+        "A cat wouldn\u2019t give him a chance",
+        "But When he stretches his long legs out",
+        "A fox ain\u2019t got a cahnce",
+        "Tennessee hound dog Tennessee hound dog"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sad faced mooneyed creature",
+        "His ears hang down to his knees",
+        "The she hounds call him a has been",
+        "An old aged home for fleas",
+        "Tennessee hound dog Tennessee hound dog"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But when he gets a certain kind of look on his face",
+        "The she hounds run for a hiding place",
+        "Cuz when he takes a notion all the girl dogs know",
+        "He\u2019s a dynamite up tite outa sight backyard romeo"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He looks like ugly warmed over",
+        "Some dog lovers have said that",
+        "But he\u2019s got more sense in the end of his nose",
+        "That they\u2019ve got in their head",
+        "Tennessee hound dog Tennessee hound dog"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

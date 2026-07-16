@@ -1,0 +1,39 @@
+{
+  "slug": "darling-im-living-in-the-past",
+  "title": "Darling, I\u2019m Living In The Past",
+  "source_url": "https://www.bluegrasslyrics.com/song/darling-im-living-in-the-past/",
+  "raw_lyrics": "You told me that you loved me and always would be mine\nBut now you\u2019ve gone and left me with troubles on my mind\nEverybody told me that our love wouldn\u2019t last\nThere\u2019s nothin\u2019 in my future so I\u2019m living in the past\n\nTear drops heart ache\nI knew that our love wouldn\u2019t last\nLonely worried\nDarling I\u2019m living in the past\n\nSome day I know your new love is gonna let you down\nBut I\u2019ll be waiting for you I\u2019ll still be around\nNow you\u2019re free and happy living much too fast\nWhile I\u2019m blue and lonely and living in the past",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You told me that you loved me and always would be mine",
+        "But now you\u2019ve gone and left me with troubles on my mind",
+        "Everybody told me that our love wouldn\u2019t last",
+        "There\u2019s nothin\u2019 in my future so I\u2019m living in the past"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Tear drops heart ache",
+        "I knew that our love wouldn\u2019t last",
+        "Lonely worried",
+        "Darling I\u2019m living in the past"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Some day I know your new love is gonna let you down",
+        "But I\u2019ll be waiting for you I\u2019ll still be around",
+        "Now you\u2019re free and happy living much too fast",
+        "While I\u2019m blue and lonely and living in the past"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

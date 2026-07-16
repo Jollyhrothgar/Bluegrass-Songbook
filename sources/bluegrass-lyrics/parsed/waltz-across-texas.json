@@ -1,0 +1,33 @@
+{
+  "slug": "waltz-across-texas",
+  "title": "Waltz Across Texas",
+  "source_url": "https://www.bluegrasslyrics.com/song/waltz-across-texas/",
+  "raw_lyrics": "When we dance together, my world\u2019s in disguise\nIt\u2019s a fairyland tale that\u2019s come true\nAnd when you look at me with those stars in your eyes\nI could waltz across Texas with you\n\nWaltz across Texas with you in my arms\nWaltz across Texas with you\nLike a storybook ending I\u2019m lost in your charms\nAnd I could waltz across Texas with you\nMy heartaches and troubles are just up and gone\nThe moment that you come in view\nAnd with your hand in mine dear I could dance on and on\nI could waltz across Texas with you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When we dance together, my world\u2019s in disguise",
+        "It\u2019s a fairyland tale that\u2019s come true",
+        "And when you look at me with those stars in your eyes",
+        "I could waltz across Texas with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Waltz across Texas with you in my arms",
+        "Waltz across Texas with you",
+        "Like a storybook ending I\u2019m lost in your charms",
+        "And I could waltz across Texas with you",
+        "My heartaches and troubles are just up and gone",
+        "The moment that you come in view",
+        "And with your hand in mine dear I could dance on and on",
+        "I could waltz across Texas with you"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

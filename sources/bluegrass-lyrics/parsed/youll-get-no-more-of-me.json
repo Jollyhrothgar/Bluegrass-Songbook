@@ -1,0 +1,49 @@
+{
+  "slug": "youll-get-no-more-of-me",
+  "title": "You\u2019ll Get No More Of Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/youll-get-no-more-of-me/",
+  "raw_lyrics": "As you go from me you want all that\u2019s left\nThe last thread of pride in my heart\n\u2018Til you\u2019ve wrung the last teardrop from my eye\nYou won\u2019t be satisfied.\n\nSo take your cold unloving heart\nYour eyes too blinded to see\nYou\u2019ve never found the door to this heart of mine\nYou\u2019ll get no more of me.\n\nYou wrecked my heart like a cruel winter storm\nBending my branches so low\nOh your wayward heart and your tortured soul\nLeave no memory worthy to hold.\n\nSo I\u2019ll take back my heart from the willow bough\nI\u2019ll hang my tears out to dry\nI\u2019ll hang my head in sorrow no more\nAnd no more tears will I cry.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As you go from me you want all that\u2019s left",
+        "The last thread of pride in my heart",
+        "\u2018Til you\u2019ve wrung the last teardrop from my eye",
+        "You won\u2019t be satisfied."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So take your cold unloving heart",
+        "Your eyes too blinded to see",
+        "You\u2019ve never found the door to this heart of mine",
+        "You\u2019ll get no more of me."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You wrecked my heart like a cruel winter storm",
+        "Bending my branches so low",
+        "Oh your wayward heart and your tortured soul",
+        "Leave no memory worthy to hold."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So I\u2019ll take back my heart from the willow bough",
+        "I\u2019ll hang my tears out to dry",
+        "I\u2019ll hang my head in sorrow no more",
+        "And no more tears will I cry."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

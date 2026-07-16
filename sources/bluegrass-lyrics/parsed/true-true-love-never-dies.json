@@ -1,0 +1,49 @@
+{
+  "slug": "true-true-love-never-dies",
+  "title": "True True Love Never Dies",
+  "source_url": "https://www.bluegrasslyrics.com/song/true-true-love-never-dies/",
+  "raw_lyrics": "The last time I thought about leaving\nWas the last time I made her cry\nI\u2019ve talked myself out of believing\nThat true true love never dies\n\nThe first time I though of returning\nWas just ten lonesome miles out of town\nBut my foolish pride kept these wheels a-turning\nThere\u2019s nothing on this earth gonna shut me down.\n\nIf I had one drop of water\nFor each and every tear I have cried\nI\u2019d sail back to her on an ocean of sorrow\nTrue true love never dies.\n\nThe fires in vain turn to ashes\nYour pride will forsake you by and by\nThe lonesomest night surely passes\nThat old true true love never dies.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The last time I thought about leaving",
+        "Was the last time I made her cry",
+        "I\u2019ve talked myself out of believing",
+        "That true true love never dies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The first time I though of returning",
+        "Was just ten lonesome miles out of town",
+        "But my foolish pride kept these wheels a-turning",
+        "There\u2019s nothing on this earth gonna shut me down."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "If I had one drop of water",
+        "For each and every tear I have cried",
+        "I\u2019d sail back to her on an ocean of sorrow",
+        "True true love never dies."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The fires in vain turn to ashes",
+        "Your pride will forsake you by and by",
+        "The lonesomest night surely passes",
+        "That old true true love never dies."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

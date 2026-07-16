@@ -1,0 +1,50 @@
+{
+  "slug": "your-love-died-like-the-rose",
+  "title": "Your Love Died Like The Rose",
+  "source_url": "https://www.bluegrasslyrics.com/song/your-love-died-like-the-rose/",
+  "raw_lyrics": "The rose that I planted with such tender care\nIs wilted and fading today\nI\u2019ll cherish the blossom that once was so fair\nLike your love that\u2019s gone far away.\n\nIt seems so unfair and hard to believe\nThat you took my dreams and were gone\nYour reason for leavin\u2019 my heart can\u2019t conceive\nBut the tears have convinced me you\u2019re gone\n\nI stand all alone with a rose in my hand\nAlthough it is withered and old\nIt\u2019s all I have left with this faded gold band\nAnd a memory I could never let go.\n\nSo dear if you\u2019re mine give a thought to the past\nDon\u2019t worry for love comes and goes\nMy love for you was made, dear, to last\nYour love bloomed and died like the rose\nYour love bloomed and died like the rose.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The rose that I planted with such tender care",
+        "Is wilted and fading today",
+        "I\u2019ll cherish the blossom that once was so fair",
+        "Like your love that\u2019s gone far away."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It seems so unfair and hard to believe",
+        "That you took my dreams and were gone",
+        "Your reason for leavin\u2019 my heart can\u2019t conceive",
+        "But the tears have convinced me you\u2019re gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I stand all alone with a rose in my hand",
+        "Although it is withered and old",
+        "It\u2019s all I have left with this faded gold band",
+        "And a memory I could never let go."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So dear if you\u2019re mine give a thought to the past",
+        "Don\u2019t worry for love comes and goes",
+        "My love for you was made, dear, to last",
+        "Your love bloomed and died like the rose",
+        "Your love bloomed and died like the rose."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

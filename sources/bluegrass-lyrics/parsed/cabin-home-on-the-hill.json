@@ -1,0 +1,49 @@
+{
+  "slug": "cabin-home-on-the-hill",
+  "title": "Cabin Home On The Hill",
+  "source_url": "https://www.bluegrasslyrics.com/song/cabin-home-on-the-hill/",
+  "raw_lyrics": "Tonight I\u2019m alone without you my dear\nIt seems there\u2019s a longing for you still\nAll I have to do now is sit alone and cry\nIn our little cabin home on the hill\n\nNow someone has taken you from me\nAnd left me here all alone\nJust listen to the rain beat on my window pane\nIn our little cabin home on the hill.\n\nI hope you are happy tonight as you are\nBut in my heart there\u2019s a longing for you still\nI\u2019ll just keep it there so I won\u2019t be alone\nIn our little cabin home on the hill\n\nNow when you have come to the end of the way\nAnd there\u2019s no more happiness for you\nJust let your heart drift (turn) back once more, if you will\nTo our little cabin home on the hill.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight I\u2019m alone without you my dear",
+        "It seems there\u2019s a longing for you still",
+        "All I have to do now is sit alone and cry",
+        "In our little cabin home on the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now someone has taken you from me",
+        "And left me here all alone",
+        "Just listen to the rain beat on my window pane",
+        "In our little cabin home on the hill."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hope you are happy tonight as you are",
+        "But in my heart there\u2019s a longing for you still",
+        "I\u2019ll just keep it there so I won\u2019t be alone",
+        "In our little cabin home on the hill"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when you have come to the end of the way",
+        "And there\u2019s no more happiness for you",
+        "Just let your heart drift (turn) back once more, if you will",
+        "To our little cabin home on the hill."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: first-whippoorwill-the
+title: First Whippoorwill, The
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/first-whippoorwill-the/
+      imported_at: '2026-02-08'

@@ -1,0 +1,39 @@
+{
+  "slug": "have-you-someone-in-heaven-awaiting",
+  "title": "Have You Someone In Heaven Awaiting",
+  "source_url": "https://www.bluegrasslyrics.com/song/have-you-someone-in-heaven-awaiting/",
+  "raw_lyrics": "Have you someone in heaven a\u2019waiting\nExpecting you on that beautiful shore\nBe ready to join that great band of angels\nWhen they welcome you into that heavenly door\n\nCome sinners take heed while Jesus is waiting\nPlease never be caught in the pathway of sin\nFor Jesus may call your name in the morning\nWhen heaven\u2019s gates open will you enter in\n\nThe vision will hear the prayer of the sinner\nNo matter how dark no matter how late\nHe\u2019ll welcome you home to the heavenly mansion\nTake a straight narrow way to that beautiful gate",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Have you someone in heaven a\u2019waiting",
+        "Expecting you on that beautiful shore",
+        "Be ready to join that great band of angels",
+        "When they welcome you into that heavenly door"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come sinners take heed while Jesus is waiting",
+        "Please never be caught in the pathway of sin",
+        "For Jesus may call your name in the morning",
+        "When heaven\u2019s gates open will you enter in"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The vision will hear the prayer of the sinner",
+        "No matter how dark no matter how late",
+        "He\u2019ll welcome you home to the heavenly mansion",
+        "Take a straight narrow way to that beautiful gate"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

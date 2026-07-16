@@ -1,0 +1,11 @@
+id: im-coming-back-but-i-dont-know-when
+title: I’m Coming Back But I Don’t Know When
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/im-coming-back-but-i-dont-know-when/
+      imported_at: '2026-02-08'

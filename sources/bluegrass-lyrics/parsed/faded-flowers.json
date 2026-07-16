@@ -1,0 +1,59 @@
+{
+  "slug": "faded-flowers",
+  "title": "Faded Flowers",
+  "source_url": "https://www.bluegrasslyrics.com/song/faded-flowers/",
+  "raw_lyrics": "The flowers I saw in the wildwood\nHave since dropped their beautiful leaves\nAnd the many dear friends of my childhood\nHave slumbered many years in their graves\n\nBut the bloom of the flowers I remember\nThough their smiles I may never more see\nFor the cold chilly winds of December\nStole my flowers\u2019 companions from me\n\nIt\u2019s no wonder that I\u2019m broken hearted\nAnd stricken with sorrow should be\nFor we have met we have loved we have parted\nMy flowers companions and me\n\nHow dark looks this world and how dreary\nWhen we part from the ones that we love\nThere is rest for the faint and the weary\nAnd friends to meet with loved ones above\n\nFor in heaven I can but remember\nWhen from earth my soul shall be free\nThere no cold chilly winds of December\nShall steal my companions from me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The flowers I saw in the wildwood",
+        "Have since dropped their beautiful leaves",
+        "And the many dear friends of my childhood",
+        "Have slumbered many years in their graves"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But the bloom of the flowers I remember",
+        "Though their smiles I may never more see",
+        "For the cold chilly winds of December",
+        "Stole my flowers\u2019 companions from me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It\u2019s no wonder that I\u2019m broken hearted",
+        "And stricken with sorrow should be",
+        "For we have met we have loved we have parted",
+        "My flowers companions and me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How dark looks this world and how dreary",
+        "When we part from the ones that we love",
+        "There is rest for the faint and the weary",
+        "And friends to meet with loved ones above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For in heaven I can but remember",
+        "When from earth my soul shall be free",
+        "There no cold chilly winds of December",
+        "Shall steal my companions from me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

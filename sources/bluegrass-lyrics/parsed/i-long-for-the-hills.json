@@ -1,0 +1,91 @@
+{
+  "slug": "i-long-for-the-hills",
+  "title": "I Long For The Hills",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-long-for-the-hills/",
+  "raw_lyrics": "I saw a man a \u2013 walkin\u2019\nHis hands were in his pocket\nHis head was hangin\u2019, lookin\u2019 at his feet\n\nWell he looked up and saw me\nAnd asked me for a quarter\nOr if I knew a good cheap place to eat\n\nWell I just shrugged my shoulders\nSaid, \u201cIf I could help you brother\nI wouldn\u2019t be out walkin\u2019 on the street\n\nWith nothin\u2019 more to say\nJust turned and walked away\nHopin\u2019 for a richer man to meet.\n\nI long for the old home\nI long for the hills\nSwingin\u2019 on the front porch\nLord knows I ain\u2019t had my fill.\n\nWell I left home at fifteen\nWith a guitar and a dream\nAnd a heart that needs learnin\u2019 more of life\n\nI never had a job long\nI never was the kind\nTo settle down forever with a wife\n\nI may have met some men\nThat you read about in books\nAnd there were times that I was livin\u2019 right\n\nBut I ain\u2019t got much to show\nHere livin\u2019 on skid row\nNo one to help this old man through the night.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I saw a man a \u2013 walkin\u2019",
+        "His hands were in his pocket",
+        "His head was hangin\u2019, lookin\u2019 at his feet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well he looked up and saw me",
+        "And asked me for a quarter",
+        "Or if I knew a good cheap place to eat"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I just shrugged my shoulders",
+        "Said, \u201cIf I could help you brother",
+        "I wouldn\u2019t be out walkin\u2019 on the street"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "With nothin\u2019 more to say",
+        "Just turned and walked away",
+        "Hopin\u2019 for a richer man to meet."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I long for the old home",
+        "I long for the hills",
+        "Swingin\u2019 on the front porch",
+        "Lord knows I ain\u2019t had my fill."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I left home at fifteen",
+        "With a guitar and a dream",
+        "And a heart that needs learnin\u2019 more of life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never had a job long",
+        "I never was the kind",
+        "To settle down forever with a wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I may have met some men",
+        "That you read about in books",
+        "And there were times that I was livin\u2019 right"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But I ain\u2019t got much to show",
+        "Here livin\u2019 on skid row",
+        "No one to help this old man through the night."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

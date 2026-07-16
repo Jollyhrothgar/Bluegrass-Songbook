@@ -1,0 +1,49 @@
+{
+  "slug": "im-thinking-tonight-of-my-blue-eyes",
+  "title": "I\u2019m Thinking Tonight Of My Blue Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-thinking-tonight-of-my-blue-eyes/",
+  "raw_lyrics": "\u2018Twould been better for us both had we never\nIn this wide and wicked world had never met,\nBut the pleasure we both seemed to gather\nI\u2019m sure, love, I\u2019ll never forget\n\nOh, I\u2019m thinking tonight of my blue eyes\nWho is sailing far over the sea\nI\u2019m thinking tonight of my blue eyes\nAnd I wonder if he ever thinks of me\n\nOh, you told me once, dear, that you loved me;\nYou vowed that we never would part\nBut a link in the chain has been broken\nLeaving me with a sad and aching heart\n\nWhen the cold, cold grave shall enclose me\nWill you come near and shed just one tear?\nWill you say to the strangers around you\nA poor heart you have broken lies here?",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "\u2018Twould been better for us both had we never",
+        "In this wide and wicked world had never met,",
+        "But the pleasure we both seemed to gather",
+        "I\u2019m sure, love, I\u2019ll never forget"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, I\u2019m thinking tonight of my blue eyes",
+        "Who is sailing far over the sea",
+        "I\u2019m thinking tonight of my blue eyes",
+        "And I wonder if he ever thinks of me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, you told me once, dear, that you loved me;",
+        "You vowed that we never would part",
+        "But a link in the chain has been broken",
+        "Leaving me with a sad and aching heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the cold, cold grave shall enclose me",
+        "Will you come near and shed just one tear?",
+        "Will you say to the strangers around you",
+        "A poor heart you have broken lies here?"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

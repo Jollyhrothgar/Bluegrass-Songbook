@@ -1,0 +1,39 @@
+{
+  "slug": "a-little-boy-called-joe",
+  "title": "A Little Boy Called Joe",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-little-boy-called-joe/",
+  "raw_lyrics": "In a war torn land of poverty somewhere across the sea\nA little boy is waitin\u2019 he looks a lot like me\nHis hair is like the sunlight on the wings of a crow\nI don\u2019t know what they named him but I\u2019m sure they called him Joe\n\nJust a little boy called Joe like so many more I know\nLeft all alone somewhere across the sea\nI want him to have my name little Joe mine to claim\nA little boy called Joe belongs to me\n\nHis mother died to give him life the night my orders came\nI wanted to be with him but war\u2019s an evil thing\nNow he won\u2019t recongnize me but I\u2019ve got to let him know\nHe means much more to some one than just a little boy called Joe",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a war torn land of poverty somewhere across the sea",
+        "A little boy is waitin\u2019 he looks a lot like me",
+        "His hair is like the sunlight on the wings of a crow",
+        "I don\u2019t know what they named him but I\u2019m sure they called him Joe"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Just a little boy called Joe like so many more I know",
+        "Left all alone somewhere across the sea",
+        "I want him to have my name little Joe mine to claim",
+        "A little boy called Joe belongs to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "His mother died to give him life the night my orders came",
+        "I wanted to be with him but war\u2019s an evil thing",
+        "Now he won\u2019t recongnize me but I\u2019ve got to let him know",
+        "He means much more to some one than just a little boy called Joe"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

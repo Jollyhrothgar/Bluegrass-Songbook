@@ -1,0 +1,50 @@
+{
+  "slug": "tear-my-stillhouse-down",
+  "title": "Tear My Stillhouse Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/tear-my-stillhouse-down/",
+  "raw_lyrics": "Put no stone at my head, no flowers on my tomb\nNo gold plated sign In a marble pillared room\nThe one thing that I want when they lay me in the ground\nWhen I die tear my still house down\n\nOh tear my still house down let it go to rust\nDon\u2019t leave no trace of the hiding place\nWhere I made that evil stuff\nFor all my time and money no profit did I see\nThat old copper kettle was the death of me\n\nWhen I was a child way back in the hills\nI laughed at the men who tended those stills\nBut that old mountain shine it caught me somehow\nWhen I die tear my still house down\n\nOh tell all your children that hell ain\u2019t no dream\n\u2018Cause Satan he lives In my whiskey machine\nAnd in my time of dying I know where I\u2019m bound\nWhen I die tear my still house down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Put no stone at my head, no flowers on my tomb",
+        "No gold plated sign In a marble pillared room",
+        "The one thing that I want when they lay me in the ground",
+        "When I die tear my still house down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh tear my still house down let it go to rust",
+        "Don\u2019t leave no trace of the hiding place",
+        "Where I made that evil stuff",
+        "For all my time and money no profit did I see",
+        "That old copper kettle was the death of me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I was a child way back in the hills",
+        "I laughed at the men who tended those stills",
+        "But that old mountain shine it caught me somehow",
+        "When I die tear my still house down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh tell all your children that hell ain\u2019t no dream",
+        "\u2018Cause Satan he lives In my whiskey machine",
+        "And in my time of dying I know where I\u2019m bound",
+        "When I die tear my still house down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

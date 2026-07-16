@@ -1,0 +1,39 @@
+{
+  "slug": "turned-you-to-stone",
+  "title": "Turned You To Stone",
+  "source_url": "https://www.bluegrasslyrics.com/song/turned-you-to-stone/",
+  "raw_lyrics": "I wish there were some way to  tell you I\u2019m  sorry\nThat I didn\u2019t leave you a long time ago\nYea, but many mistakes are a part of the story\nAnd heartache by heartache, I\u2019ve turned you  to stone.\n\nSo call me a traveller, catch me a train\nWant to see Frisco, see the sun shine again\nAnd if you want true love, but can\u2019t stand to know\nLife here together has turned you to stone.\n\nI\u2019ve held youcaptive in a life without sunshine\nYea and I\u2019ve watched the blue in your eyes fade away\nAll good is gone now, no need to continue\nDestroying each other, day after day.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wish there were some way to  tell you I\u2019m  sorry",
+        "That I didn\u2019t leave you a long time ago",
+        "Yea, but many mistakes are a part of the story",
+        "And heartache by heartache, I\u2019ve turned you  to stone."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So call me a traveller, catch me a train",
+        "Want to see Frisco, see the sun shine again",
+        "And if you want true love, but can\u2019t stand to know",
+        "Life here together has turned you to stone."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve held youcaptive in a life without sunshine",
+        "Yea and I\u2019ve watched the blue in your eyes fade away",
+        "All good is gone now, no need to continue",
+        "Destroying each other, day after day."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

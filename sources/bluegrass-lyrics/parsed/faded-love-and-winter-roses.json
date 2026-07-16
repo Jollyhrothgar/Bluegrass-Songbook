@@ -1,0 +1,49 @@
+{
+  "slug": "faded-love-and-winter-roses",
+  "title": "Faded Love and Winter Roses",
+  "source_url": "https://www.bluegrasslyrics.com/song/faded-love-and-winter-roses/",
+  "raw_lyrics": "Faded love and winter roses\nAlways bloom in memory\nFaded love and winter roses\nYearning hearts that used to be\n\nWill they meet again tomorrow\nWhere they parted yesterday\nGive me back the winter roses\nAnd the love you took away\n\nFaded love and winter roses\nSpring forth with a lonely tear\nFaded love and winter roses\nStill recall these yesteryears\n\nWill I always be a dreamer\nDreamin of a used to be\nFaded love and winter roses\nBloom and die in memory",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Faded love and winter roses",
+        "Always bloom in memory",
+        "Faded love and winter roses",
+        "Yearning hearts that used to be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Will they meet again tomorrow",
+        "Where they parted yesterday",
+        "Give me back the winter roses",
+        "And the love you took away"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Faded love and winter roses",
+        "Spring forth with a lonely tear",
+        "Faded love and winter roses",
+        "Still recall these yesteryears"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Will I always be a dreamer",
+        "Dreamin of a used to be",
+        "Faded love and winter roses",
+        "Bloom and die in memory"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

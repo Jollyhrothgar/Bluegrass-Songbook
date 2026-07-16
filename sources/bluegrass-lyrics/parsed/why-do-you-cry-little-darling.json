@@ -1,0 +1,69 @@
+{
+  "slug": "why-do-you-cry-little-darling",
+  "title": "Why Do You Cry Little Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/why-do-you-cry-little-darling/",
+  "raw_lyrics": "Why do you cry little darlin\nWhy are those tears in your eyes\nWhy do you weep little darlin\nJust when I say goodbye\n\nIt makes me sad and lonely\nTo see you feel so blue\nWhat have I done little darlin\nI have I been untrue to you\n\nCause you are called little darlin\nTo fight for your country true\nThere\u2019s many a poor girl just like me\nWeeping for their sweetheart too\n\nI\u2019ve tried so hard to be cheerful\nBut thought of all the long years\nYou might be gone little darlin\nI could not keep back my tears\n\nThat\u2019s why I cry little darlin\nBecause you\u2019re going away\nLeaving me all broken hearted\nTo weep for you day after day\n\nEvery night I\u2019ll kneel by my bedside\nAnd ask God to guide you each day\nBack to your sweetheart that\u2019s waiting\nAnd loves you more than I can say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Why do you cry little darlin",
+        "Why are those tears in your eyes",
+        "Why do you weep little darlin",
+        "Just when I say goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It makes me sad and lonely",
+        "To see you feel so blue",
+        "What have I done little darlin",
+        "I have I been untrue to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Cause you are called little darlin",
+        "To fight for your country true",
+        "There\u2019s many a poor girl just like me",
+        "Weeping for their sweetheart too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve tried so hard to be cheerful",
+        "But thought of all the long years",
+        "You might be gone little darlin",
+        "I could not keep back my tears"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That\u2019s why I cry little darlin",
+        "Because you\u2019re going away",
+        "Leaving me all broken hearted",
+        "To weep for you day after day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Every night I\u2019ll kneel by my bedside",
+        "And ask God to guide you each day",
+        "Back to your sweetheart that\u2019s waiting",
+        "And loves you more than I can say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

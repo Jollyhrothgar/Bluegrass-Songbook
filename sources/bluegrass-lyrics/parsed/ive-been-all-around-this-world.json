@@ -1,0 +1,69 @@
+{
+  "slug": "ive-been-all-around-this-world",
+  "title": "I\u2019ve Been All Around This World",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-been-all-around-this-world/",
+  "raw_lyrics": "Hang me, oh, hang me and I\u2019ll be dead and gone\nHang me, oh, hang me and I\u2019ll be dead and gone\nI wouldn\u2019t mind the hanging Lord it\u2019s laying in jail so long boys\nI\u2019ve been all around this world\n\nWorking on the new railroad, mud up to my knees\nWorking on the new railroad, mud up to my knees\nWorking for John Henry, and he\u2019s mighty hard to please\nBeen all around this world\n\nWent up on the mountain, there I took my stand\nWent up on the mountain, there I took my stand\nRifle on my shoulder, six shooter in my hand\nBeen all around this world\n\nLulu, oh Lulu, come and open that door\nLulu, oh Lulu, come and open that door\nBefore I have to open it with my old forty-four\nBeen all around this world\n\nMama and papa and baby sister makes three\nMama and papa and baby sister makes three\nTake me down to the gallows boys that\u2019s the last they\u2019ll see of me\nBeen all around this world\n\nNow if you meet a rich girl, boys, send her down the line\nNow if you meet a rich girl, boys, send her down the line\nIf you meet a poor girl, bet she\u2019s a friend of mine\nBeen all around this world",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Hang me, oh, hang me and I\u2019ll be dead and gone",
+        "Hang me, oh, hang me and I\u2019ll be dead and gone",
+        "I wouldn\u2019t mind the hanging Lord it\u2019s laying in jail so long boys",
+        "I\u2019ve been all around this world"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Working on the new railroad, mud up to my knees",
+        "Working on the new railroad, mud up to my knees",
+        "Working for John Henry, and he\u2019s mighty hard to please",
+        "Been all around this world"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Went up on the mountain, there I took my stand",
+        "Went up on the mountain, there I took my stand",
+        "Rifle on my shoulder, six shooter in my hand",
+        "Been all around this world"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Lulu, oh Lulu, come and open that door",
+        "Lulu, oh Lulu, come and open that door",
+        "Before I have to open it with my old forty-four",
+        "Been all around this world"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mama and papa and baby sister makes three",
+        "Mama and papa and baby sister makes three",
+        "Take me down to the gallows boys that\u2019s the last they\u2019ll see of me",
+        "Been all around this world"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now if you meet a rich girl, boys, send her down the line",
+        "Now if you meet a rich girl, boys, send her down the line",
+        "If you meet a poor girl, bet she\u2019s a friend of mine",
+        "Been all around this world"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

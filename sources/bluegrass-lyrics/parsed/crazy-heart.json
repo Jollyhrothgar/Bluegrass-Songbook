@@ -1,0 +1,39 @@
+{
+  "slug": "crazy-heart",
+  "title": "Crazy Heart",
+  "source_url": "https://www.bluegrasslyrics.com/song/crazy-heart/",
+  "raw_lyrics": "Crazy heart I wish I didn\u2019t love you\nAnd I could turn around and walk away\nI\u2019ve only got a half a mind to leave you\nYour crazy heart is driven\u2019 me insane\n\nLike a wild east wind so uncertain\nYou\u2019re changing like the weather everyday\nOne night we\u2019re in love the next I\u2019m hurting\nYour crazy heart is driven\u2019 my insane\n\nNow I only want a love that I can count on\nAnd hold to the promises you made\nHow can it feel so right and then go so wrong\nYour crazy heart is driving me insane",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Crazy heart I wish I didn\u2019t love you",
+        "And I could turn around and walk away",
+        "I\u2019ve only got a half a mind to leave you",
+        "Your crazy heart is driven\u2019 me insane"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Like a wild east wind so uncertain",
+        "You\u2019re changing like the weather everyday",
+        "One night we\u2019re in love the next I\u2019m hurting",
+        "Your crazy heart is driven\u2019 my insane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I only want a love that I can count on",
+        "And hold to the promises you made",
+        "How can it feel so right and then go so wrong",
+        "Your crazy heart is driving me insane"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "lonesome-for-you-darling",
+  "title": "Lonesome For You Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/lonesome-for-you-darling/",
+  "raw_lyrics": "I am lonesome for you darling\nThough from me you\u2019re far away\nIn a lonely little cottage\nI am waiting day by day\n\nThough you went away and left me\nLeft me alone in this old world\nHow it hurt me little darling\nTo hear you say those parting words\n\nI can see you in the moonlight\nStrolling down lover\u2019s lane\nI know it\u2019s you I love my darling\nWont you take me back again\n\nDo you think we could be happy\nDo you think we could be true\nTo the one that\u2019s always loved you\nNo one loves you like I do\n\nWont you take me back my darling\nSo I can prove my love to you\nIf you\u2019ll accept me little darling\nWe will start our lives anew\n\nI will take you back my darling\nIf you promise to be true\nLet me look my little darling\nIn your loving eyes of blue\n\nWe are happy now together\nIn the moonlight all alone\nAnd we\u2019ll settle down forever\nIn our little cottage home",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am lonesome for you darling",
+        "Though from me you\u2019re far away",
+        "In a lonely little cottage",
+        "I am waiting day by day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though you went away and left me",
+        "Left me alone in this old world",
+        "How it hurt me little darling",
+        "To hear you say those parting words"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can see you in the moonlight",
+        "Strolling down lover\u2019s lane",
+        "I know it\u2019s you I love my darling",
+        "Wont you take me back again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Do you think we could be happy",
+        "Do you think we could be true",
+        "To the one that\u2019s always loved you",
+        "No one loves you like I do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Wont you take me back my darling",
+        "So I can prove my love to you",
+        "If you\u2019ll accept me little darling",
+        "We will start our lives anew"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will take you back my darling",
+        "If you promise to be true",
+        "Let me look my little darling",
+        "In your loving eyes of blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We are happy now together",
+        "In the moonlight all alone",
+        "And we\u2019ll settle down forever",
+        "In our little cottage home"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

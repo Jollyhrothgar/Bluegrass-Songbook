@@ -1,0 +1,39 @@
+{
+  "slug": "just-a-few-more-days",
+  "title": "Just A Few More Days",
+  "source_url": "https://www.bluegrasslyrics.com/song/just-a-few-more-days/",
+  "raw_lyrics": "Just a few more days of sorrow just a few more days of pain\nJust a few more days of cloudiness Just a few more days of rain\nThen I\u2019m gonna live Jesus he has got a home prepared\nThen I\u2019ll join the Holy Angels mother will be waiting there\n\nNot so long ago one morning mother called me to her bed\nThen she put her arms around me listen to what she said\nDarlin I am going to leave you but you\u2019ll not be left alone\nJesus will protect and shield you after he has called me home\n\nSometimes I am sorely tempted sometimes I am sorely tried\nBut to overcome I\u2019m trying taking Jesus for my guide\nThough sometimes the path seems rugged but it only makes me pray\nAnd I know if I keep trying I\u2019ll see my mother some sweet day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just a few more days of sorrow just a few more days of pain",
+        "Just a few more days of cloudiness Just a few more days of rain",
+        "Then I\u2019m gonna live Jesus he has got a home prepared",
+        "Then I\u2019ll join the Holy Angels mother will be waiting there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Not so long ago one morning mother called me to her bed",
+        "Then she put her arms around me listen to what she said",
+        "Darlin I am going to leave you but you\u2019ll not be left alone",
+        "Jesus will protect and shield you after he has called me home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sometimes I am sorely tempted sometimes I am sorely tried",
+        "But to overcome I\u2019m trying taking Jesus for my guide",
+        "Though sometimes the path seems rugged but it only makes me pray",
+        "And I know if I keep trying I\u2019ll see my mother some sweet day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

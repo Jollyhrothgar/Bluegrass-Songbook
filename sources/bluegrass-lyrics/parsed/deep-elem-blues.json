@@ -1,0 +1,69 @@
+{
+  "slug": "deep-elem-blues",
+  "title": "Deep Elem Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/deep-elem-blues/",
+  "raw_lyrics": "When you go down in Deep Elem\nJust to have a little fun\nBetter have fifteen dollars\nWhen that policeman come\n\nOh sweet mama\nDaddy\u2019s got them Deep Elem blues\nOh sweet mama\nDaddy\u2019s got them Deep Elem blues\n\nWhen you go down in Deep Elem\nPut you money in your pants\nThose Deep Elem women\nThey don\u2019t give a man a chance\n\nWhen you go down to Deep Elem\nPut your money in your socks\nThem Deep Elem women\nThey will throw you on the rocks\n\nI used to know a preacher\nPreached the bible through and through\nHe went down to Deep Elem\nGot them Deep Elem blues\n\nNow once I had a sweetheart\nMeant the world to me\nWent down to Deep Elem\nShe ain\u2019t what she used to be",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When you go down in Deep Elem",
+        "Just to have a little fun",
+        "Better have fifteen dollars",
+        "When that policeman come"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh sweet mama",
+        "Daddy\u2019s got them Deep Elem blues",
+        "Oh sweet mama",
+        "Daddy\u2019s got them Deep Elem blues"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you go down in Deep Elem",
+        "Put you money in your pants",
+        "Those Deep Elem women",
+        "They don\u2019t give a man a chance"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you go down to Deep Elem",
+        "Put your money in your socks",
+        "Them Deep Elem women",
+        "They will throw you on the rocks"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I used to know a preacher",
+        "Preached the bible through and through",
+        "He went down to Deep Elem",
+        "Got them Deep Elem blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now once I had a sweetheart",
+        "Meant the world to me",
+        "Went down to Deep Elem",
+        "She ain\u2019t what she used to be"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

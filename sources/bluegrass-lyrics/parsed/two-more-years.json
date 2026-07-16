@@ -1,0 +1,39 @@
+{
+  "slug": "two-more-years",
+  "title": "Two More Years",
+  "source_url": "https://www.bluegrasslyrics.com/song/two-more-years/",
+  "raw_lyrics": "While you are out beneath the moonlit sky\nI sit here and stare at the wall\nI think of you sweetheart and days gone by\nAnd I know two more years is all\n\nTwo more years is all and I\u2019ll be free\nAnd then we can start our lives anew\nI\u2019ve held your memory so close to me\nTwo more years and I\u2019ll be free\n\nI\u2019ve been in this old prison for nineteen years\nIt seems like ninety to me\nOnly twenty-four months of tears sweetheart\nTwo more years and I\u2019ll be free",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "While you are out beneath the moonlit sky",
+        "I sit here and stare at the wall",
+        "I think of you sweetheart and days gone by",
+        "And I know two more years is all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Two more years is all and I\u2019ll be free",
+        "And then we can start our lives anew",
+        "I\u2019ve held your memory so close to me",
+        "Two more years and I\u2019ll be free"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been in this old prison for nineteen years",
+        "It seems like ninety to me",
+        "Only twenty-four months of tears sweetheart",
+        "Two more years and I\u2019ll be free"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

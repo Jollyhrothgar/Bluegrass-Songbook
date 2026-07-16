@@ -1,0 +1,49 @@
+{
+  "slug": "lets-live-for-tonight",
+  "title": "Let\u2019s Live For Tonight",
+  "source_url": "https://www.bluegrasslyrics.com/song/lets-live-for-tonight/",
+  "raw_lyrics": "Let\u2019s live for tonight dear and try to be gay\nTomorrow we might be apart\nLet\u2019s live for tonight dear let love have it\u2019s way\nFor tomorrow we could have two broken hearts\n\nLet\u2019s cast all our worries and heartaches a side\nForget what the future might hold\nLet\u2019s live for tonight dear in a world all our own\nFor tomorrow we may have to be alone\n\nLet\u2019s live for tonight dear and try to pretend\nThat we will never be alone\nNo matter what happens this night will be ours\nWhat tomorrow holds nobody ever knows\n\nLet\u2019s live for tonight dear and try to be gay\nTomorrow we might be apart\nLet\u2019s live for tonight dear let love have it\u2019s way\nFor tomorrow we could have two broken hearts",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Let\u2019s live for tonight dear and try to be gay",
+        "Tomorrow we might be apart",
+        "Let\u2019s live for tonight dear let love have it\u2019s way",
+        "For tomorrow we could have two broken hearts"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let\u2019s cast all our worries and heartaches a side",
+        "Forget what the future might hold",
+        "Let\u2019s live for tonight dear in a world all our own",
+        "For tomorrow we may have to be alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let\u2019s live for tonight dear and try to pretend",
+        "That we will never be alone",
+        "No matter what happens this night will be ours",
+        "What tomorrow holds nobody ever knows"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let\u2019s live for tonight dear and try to be gay",
+        "Tomorrow we might be apart",
+        "Let\u2019s live for tonight dear let love have it\u2019s way",
+        "For tomorrow we could have two broken hearts"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

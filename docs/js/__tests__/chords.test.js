@@ -197,6 +197,38 @@ describe('detectKey', () => {
         expect(result.confidence).toBeGreaterThan(0);
         expect(result.confidence).toBeLessThanOrEqual(100);
     });
+
+    it('detects E major for songs with non-diatonic bVII and bIII (issue #170)', () => {
+        // "Runnin' Down a Dream" - E is the tonic (most frequent chord),
+        // D is bVII (mixolydian borrowing), G is bIII - common in rock/country.
+        // Previously detected as A because A appeared before E in preferred key order.
+        const chords = [
+            // Verse 1
+            'E', 'D', 'E', 'D', 'E',
+            // Chorus
+            'A', 'G', 'E', 'G', 'A', 'G', 'E', 'E', 'G', 'A', 'G', 'E',
+            // Verse 2
+            'E', 'D', 'E', 'D', 'E',
+            // Chorus
+            'A', 'G', 'E', 'G', 'A', 'G', 'E', 'E', 'G', 'A', 'G', 'E',
+            // Verse 3
+            'E', 'D', 'E', 'D', 'E',
+            // Chorus x2
+            'A', 'G', 'E', 'G', 'A', 'G', 'E', 'E', 'G', 'A', 'G', 'E',
+            'A', 'G', 'E', 'G', 'A', 'G', 'E', 'E', 'G', 'A', 'G', 'E',
+        ];
+        const result = detectKey(chords);
+        expect(result.key).toBe('E');
+        expect(result.mode).toBe('major');
+    });
+
+    it('still prefers common keys when tonic frequency is equal', () => {
+        // When two keys score similarly and tonic frequency is equal,
+        // the preferred order should still apply
+        const chords = ['G', 'C', 'D', 'Am'];
+        const result = detectKey(chords);
+        expect(result.key).toBe('G');
+    });
 });
 
 describe('toNashville', () => {

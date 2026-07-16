@@ -1,0 +1,39 @@
+{
+  "slug": "i-saw-the-light",
+  "title": "I Saw The Light",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-saw-the-light/",
+  "raw_lyrics": "I wandered so aimless my heart filled with sin\nI wouldn\u2019t let my dear Savior in\nThen Jesus came like a stranger in the night\nPraise the Lord I saw the light\n\nI saw the light I saw the light\nNo more darkness no more night\nNow I\u2019m so happy no sorrow in sight\nPraise the Lord I saw the light\n\nJust like a blind man I wandered alone\nWorries and fears I claimed for my own\nThen like the blind man that God gave back his sight\nPraise the Lord I saw the light",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I wandered so aimless my heart filled with sin",
+        "I wouldn\u2019t let my dear Savior in",
+        "Then Jesus came like a stranger in the night",
+        "Praise the Lord I saw the light"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I saw the light I saw the light",
+        "No more darkness no more night",
+        "Now I\u2019m so happy no sorrow in sight",
+        "Praise the Lord I saw the light"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just like a blind man I wandered alone",
+        "Worries and fears I claimed for my own",
+        "Then like the blind man that God gave back his sight",
+        "Praise the Lord I saw the light"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "sad-prisoners-song",
+  "title": "Sad Prisoner\u2019s Song",
+  "source_url": "https://www.bluegrasslyrics.com/song/sad-prisoners-song/",
+  "raw_lyrics": "I\u2019m a prisoner alone and forgotten\nI\u2019ll be here until the day I die\nAll because when a boy I was foolish\nAll because I was fast with a knife\n\nI\u2019m a man that\u2019s doomed to be lonely\nI\u2019m a man that\u2019s doomed to be sad\nI\u2019ve got no name just a number\nAnd I\u2019ve lost all the friends that I\u2019ve had\n\nIf I had my life to live over\nI\u2019d travel the narrow and straight\nBut I\u2019d still be at home with my loved ones\nAnd not behind these iron gates\n\nYoung men when you have heard my story\nLet it teach you the right from the wrong\nAnd I know my life wasn\u2019t wasted\nWriting this sad prisoner\u2019s song",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a prisoner alone and forgotten",
+        "I\u2019ll be here until the day I die",
+        "All because when a boy I was foolish",
+        "All because I was fast with a knife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m a man that\u2019s doomed to be lonely",
+        "I\u2019m a man that\u2019s doomed to be sad",
+        "I\u2019ve got no name just a number",
+        "And I\u2019ve lost all the friends that I\u2019ve had"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I had my life to live over",
+        "I\u2019d travel the narrow and straight",
+        "But I\u2019d still be at home with my loved ones",
+        "And not behind these iron gates"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Young men when you have heard my story",
+        "Let it teach you the right from the wrong",
+        "And I know my life wasn\u2019t wasted",
+        "Writing this sad prisoner\u2019s song"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

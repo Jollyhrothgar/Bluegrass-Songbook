@@ -1,0 +1,49 @@
+{
+  "slug": "when-my-blue-moon-turns-to-gold-again",
+  "title": "When My Blue Moon Turns To Gold Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-my-blue-moon-turns-to-gold-again/",
+  "raw_lyrics": "Memories that linger in my heart\nMemories that make my heart grow cold\nBut some day they\u2019ll live again sweetheart\nAnd my blue moon again will turn to gold\n\nWhen my blue moon turns to gold again\nWhen the rainbow turns the clouds away\nWhen my blue moon turns to gold again\nYou\u2019ll be back within my arms to stay\n\nThe lips that used to thrill me so\nYour kisses were meant for only me\nIn my dreams they live again, sweetheart\nBut my golden moon is just a memory\n\nThe castles we built of dreams together\nWere the sweetest stories ever told\nMaybe we will live them all again\nAnd my blue moon again will turn to gold",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Memories that linger in my heart",
+        "Memories that make my heart grow cold",
+        "But some day they\u2019ll live again sweetheart",
+        "And my blue moon again will turn to gold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When my blue moon turns to gold again",
+        "When the rainbow turns the clouds away",
+        "When my blue moon turns to gold again",
+        "You\u2019ll be back within my arms to stay"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The lips that used to thrill me so",
+        "Your kisses were meant for only me",
+        "In my dreams they live again, sweetheart",
+        "But my golden moon is just a memory"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The castles we built of dreams together",
+        "Were the sweetest stories ever told",
+        "Maybe we will live them all again",
+        "And my blue moon again will turn to gold"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "wild-bill-jones",
+  "title": "Wild Bill Jones",
+  "source_url": "https://www.bluegrasslyrics.com/song/wild-bill-jones/",
+  "raw_lyrics": "As I went down for to take a little walk\nI came upon that Wild Bill Jones\nHe was a walking and a talking by my true lover\u2019s side\nAnd I bid him to leave her alone\n\nHe said my age is twenty-one\nToo old to be controlled\nI pulled my revolver from my side\nAnd I destroyed that poor boy\u2019s soul\n\nHe reeled and he staggered, and he fell to the ground\nAnd then he gave one dying moan\nHe wrapped his arms around my little girl\u2019s neck\nSaying honey won\u2019t you take me home\n\nSo put them handcuffs on me boys\nAnd lead me to that freight car gate\nI have no friends or relations there\nNo-one for to go my bail\n\nSo pass around that old long necked bottle\nAnd we\u2019ll all go on a spree\nFor today was the last of that Wild Bill Jones\nAnd tomorrow will be the last of me\n\nThey sent me to prison for twenty long years\nThis poor boy longs to be free\nBut Wild Bill Jones and that long-necked bottle\nHave been the ruin of me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As I went down for to take a little walk",
+        "I came upon that Wild Bill Jones",
+        "He was a walking and a talking by my true lover\u2019s side",
+        "And I bid him to leave her alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He said my age is twenty-one",
+        "Too old to be controlled",
+        "I pulled my revolver from my side",
+        "And I destroyed that poor boy\u2019s soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He reeled and he staggered, and he fell to the ground",
+        "And then he gave one dying moan",
+        "He wrapped his arms around my little girl\u2019s neck",
+        "Saying honey won\u2019t you take me home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So put them handcuffs on me boys",
+        "And lead me to that freight car gate",
+        "I have no friends or relations there",
+        "No-one for to go my bail"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So pass around that old long necked bottle",
+        "And we\u2019ll all go on a spree",
+        "For today was the last of that Wild Bill Jones",
+        "And tomorrow will be the last of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They sent me to prison for twenty long years",
+        "This poor boy longs to be free",
+        "But Wild Bill Jones and that long-necked bottle",
+        "Have been the ruin of me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

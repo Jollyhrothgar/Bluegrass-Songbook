@@ -1,0 +1,49 @@
+{
+  "slug": "each-night-i-dream-of-you-darling",
+  "title": "Each Night I Dream of You Darling",
+  "source_url": "https://www.bluegrasslyrics.com/song/each-night-i-dream-of-you-darling/",
+  "raw_lyrics": "Would you never call me darlin\nDo you believe all those lies\nWill you break my heart darlin\nWhen you say your last goodbye\n\nEach night I dream of you darlin\nThose sparkling eyes of heavenly blue\nPlease tell me that you still love me\nI could never love no one but you\n\nMany nights we strolled together\nDown lover\u2019s land you and me\nThere you whispered that you loved me\nNo other\u2019s darlin you would be\n\nI will give you back your letters\nAnd your picture stained with tears\nIt would be so hard my darlin\u2019\nTo go on without you through the years",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Would you never call me darlin",
+        "Do you believe all those lies",
+        "Will you break my heart darlin",
+        "When you say your last goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Each night I dream of you darlin",
+        "Those sparkling eyes of heavenly blue",
+        "Please tell me that you still love me",
+        "I could never love no one but you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many nights we strolled together",
+        "Down lover\u2019s land you and me",
+        "There you whispered that you loved me",
+        "No other\u2019s darlin you would be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I will give you back your letters",
+        "And your picture stained with tears",
+        "It would be so hard my darlin\u2019",
+        "To go on without you through the years"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

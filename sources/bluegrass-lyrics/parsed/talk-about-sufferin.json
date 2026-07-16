@@ -1,0 +1,53 @@
+{
+  "slug": "talk-about-sufferin",
+  "title": "Talk About Sufferin\u2019",
+  "source_url": "https://www.bluegrasslyrics.com/song/talk-about-sufferin/",
+  "raw_lyrics": "Talk about sufferin\u2019 here below\nAnd lets keep a-lovin\u2019 Jesus\nTalk about sufferin\u2019 here below\nAnd let\u2019s keep followin\u2019 Jesus\n\nThe gospel train is coin\u2019\nNow don\u2019t you want to go\nAnd leave this world of sorrow\nAnd trouble here below\n\nO can\u2019t you hear it father\nAnd don\u2019t you want to go\nAnd leave this world of sorrow\nAnd trouble here below\n\nOh can\u2019t you hear it mother\u2026.\n\nOh can\u2019t you hear it brother\u2026..",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Talk about sufferin\u2019 here below",
+        "And lets keep a-lovin\u2019 Jesus",
+        "Talk about sufferin\u2019 here below",
+        "And let\u2019s keep followin\u2019 Jesus"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The gospel train is coin\u2019",
+        "Now don\u2019t you want to go",
+        "And leave this world of sorrow",
+        "And trouble here below"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "O can\u2019t you hear it father",
+        "And don\u2019t you want to go",
+        "And leave this world of sorrow",
+        "And trouble here below"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh can\u2019t you hear it mother\u2026."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh can\u2019t you hear it brother\u2026.."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

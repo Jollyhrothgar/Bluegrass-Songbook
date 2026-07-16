@@ -1,0 +1,60 @@
+{
+  "slug": "freeborn-man",
+  "title": "Freeborn Man",
+  "source_url": "https://www.bluegrasslyrics.com/song/freeborn-man/",
+  "raw_lyrics": "Well, I was born in the Southland\nTwenty-some odd years ago\nI ran away for the first time\nWhen I was four years old\n\nI\u2019m a free born man\nMy home is on my back\nI know every inch of highway\nAnd every foot of back road\nEvery mile of railroad track\n\nI got a gal in Cincinnati\nGot a woman in San Antone\nI always loved the girl next door\nBut anyplace is home\n\nI got me a worn-out guitar\nI carry an old tote sack\nI hocked it about two hundred times\nBut I always get it back\n\nYou may not like my appearance\nMay not like my song\nMay not tike the way I talk\nBut you like the way I\u2019m gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well, I was born in the Southland",
+        "Twenty-some odd years ago",
+        "I ran away for the first time",
+        "When I was four years old"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m a free born man",
+        "My home is on my back",
+        "I know every inch of highway",
+        "And every foot of back road",
+        "Every mile of railroad track"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I got a gal in Cincinnati",
+        "Got a woman in San Antone",
+        "I always loved the girl next door",
+        "But anyplace is home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I got me a worn-out guitar",
+        "I carry an old tote sack",
+        "I hocked it about two hundred times",
+        "But I always get it back"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You may not like my appearance",
+        "May not like my song",
+        "May not tike the way I talk",
+        "But you like the way I\u2019m gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

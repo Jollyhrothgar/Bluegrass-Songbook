@@ -1,0 +1,39 @@
+{
+  "slug": "dont-do-it",
+  "title": "Don\u2019t Do It",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-do-it/",
+  "raw_lyrics": "Don\u2019t do it and it won\u2019t be on your mind\nJust because you are the reckless kind\nIt\u2019ll leave you with the blues the kind that you can\u2019t lose\nDon\u2019t do it and it won\u2019t be on your mind\n\nIf you\u2019re thinkin\u2019 about steppin\u2019 out tonight\nEven tho\u2019 your baby treats you right\nIt\u2019s not the thing to do cause cheatin\u2019 leaves you blue\nDon\u2019t do it and it won\u2019t be on your mind\n\nThat little girl who lives across the way\nShe\u2019s bound to make you want to cheat some day\nYou\u2019ll want to hold her tight kiss her ruby lips goodnight\nDon\u2019t do it and it won\u2019t be on your mind",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t do it and it won\u2019t be on your mind",
+        "Just because you are the reckless kind",
+        "It\u2019ll leave you with the blues the kind that you can\u2019t lose",
+        "Don\u2019t do it and it won\u2019t be on your mind"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you\u2019re thinkin\u2019 about steppin\u2019 out tonight",
+        "Even tho\u2019 your baby treats you right",
+        "It\u2019s not the thing to do cause cheatin\u2019 leaves you blue",
+        "Don\u2019t do it and it won\u2019t be on your mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "That little girl who lives across the way",
+        "She\u2019s bound to make you want to cheat some day",
+        "You\u2019ll want to hold her tight kiss her ruby lips goodnight",
+        "Don\u2019t do it and it won\u2019t be on your mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

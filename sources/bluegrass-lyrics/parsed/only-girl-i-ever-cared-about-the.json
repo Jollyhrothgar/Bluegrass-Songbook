@@ -1,0 +1,68 @@
+{
+  "slug": "only-girl-i-ever-cared-about-the",
+  "title": "Only Girl I Ever Cared About, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/only-girl-i-ever-cared-about-the/",
+  "raw_lyrics": "There\u2019s a town not far from here\nLived a maiden sweet and fair\nAnd a lad that loved her better than his life\nHe was pleading every way\nJust to have her name the day\nThat he might claim her for his little wife\n\nWhen on the streets they meet\nA question he\u2019d repeat\nShe would laugh and turn her little face away\nTill he saw with grief and pain\nThat his pleadings were in vain\nIn a jealous rage she softly heard him say\n\nYou are the only girl I ever cared about\nYou are the one I love and cannot live without\nWon\u2019t you brighten up my life\nCome and be my little wife\nYou are the only girl I ever cared about\n\nShe never seen his face no more\nTill one day he passed her door\nAnother girl was walking by his side\nThey seemed so bright and gay\nAs they strolled along the way\nIn a jealous rage she turned away and cried,\n\nHe has gone beyond recall\nAnd I love him after all!\nWhen she met the couple on the street next day\nHe called on her to wait\nIntroduced his cousin, Kate\nNow she\u2019s happy \u2018cause she softly heard him say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a town not far from here",
+        "Lived a maiden sweet and fair",
+        "And a lad that loved her better than his life",
+        "He was pleading every way",
+        "Just to have her name the day",
+        "That he might claim her for his little wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When on the streets they meet",
+        "A question he\u2019d repeat",
+        "She would laugh and turn her little face away",
+        "Till he saw with grief and pain",
+        "That his pleadings were in vain",
+        "In a jealous rage she softly heard him say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "You are the only girl I ever cared about",
+        "You are the one I love and cannot live without",
+        "Won\u2019t you brighten up my life",
+        "Come and be my little wife",
+        "You are the only girl I ever cared about"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She never seen his face no more",
+        "Till one day he passed her door",
+        "Another girl was walking by his side",
+        "They seemed so bright and gay",
+        "As they strolled along the way",
+        "In a jealous rage she turned away and cried,"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He has gone beyond recall",
+        "And I love him after all!",
+        "When she met the couple on the street next day",
+        "He called on her to wait",
+        "Introduced his cousin, Kate",
+        "Now she\u2019s happy \u2018cause she softly heard him say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

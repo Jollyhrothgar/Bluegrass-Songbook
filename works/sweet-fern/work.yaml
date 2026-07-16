@@ -1,0 +1,11 @@
+id: sweet-fern
+title: Sweet Fern
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/sweet-fern/
+      imported_at: '2026-02-08'

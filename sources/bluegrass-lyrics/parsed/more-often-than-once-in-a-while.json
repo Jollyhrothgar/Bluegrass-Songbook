@@ -1,0 +1,43 @@
+{
+  "slug": "more-often-than-once-in-a-while",
+  "title": "More Often Than Once In A While",
+  "source_url": "https://www.bluegrasslyrics.com/song/more-often-than-once-in-a-while/",
+  "raw_lyrics": "When every time I hear your name\nI remember who\u2019s to blame\nHow that I was the first to be untrue\nYou start to pray to god above\nWhen you lose the one you love\nAnd I know I was to blame for losin\u2019 you\n\nI still remember the sound of your voice dear\nAnd the thrill of your sweet angel smile\nTho you\u2019re gone yet you\u2019re still in my heart\nI miss you darling more often than once in a while\n\nIt starts with just a careless flirt\nYou\u2019ll never know how much you\u201dll hurt\nThe only one who\u2019s really in you heart\nThe way i cheated was a shame\nNow you no longer wear my name\nAnd it\u2019s oh so many years we\u2019ve been apart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When every time I hear your name",
+        "I remember who\u2019s to blame",
+        "How that I was the first to be untrue",
+        "You start to pray to god above",
+        "When you lose the one you love",
+        "And I know I was to blame for losin\u2019 you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I still remember the sound of your voice dear",
+        "And the thrill of your sweet angel smile",
+        "Tho you\u2019re gone yet you\u2019re still in my heart",
+        "I miss you darling more often than once in a while"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It starts with just a careless flirt",
+        "You\u2019ll never know how much you\u201dll hurt",
+        "The only one who\u2019s really in you heart",
+        "The way i cheated was a shame",
+        "Now you no longer wear my name",
+        "And it\u2019s oh so many years we\u2019ve been apart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

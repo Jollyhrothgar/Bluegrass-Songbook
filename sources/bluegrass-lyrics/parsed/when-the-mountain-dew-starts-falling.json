@@ -1,0 +1,39 @@
+{
+  "slug": "when-the-mountain-dew-starts-falling",
+  "title": "When The Mountain Dew Starts Falling",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-mountain-dew-starts-falling/",
+  "raw_lyrics": "When the mountain dew starts falling\nAnd the green green grass begins to grow\nThat\u2019s when I realize I love you\nThat\u2019s why I\u2019m on my way back home\n\nBack to the one I love so dearly\nBack to the one that I love so\nback to that girl I spent some time with\nBack to my little mountain home\n\nI\u2019ve been away from my home for so long dear\nAnd I feel like a stranger in my home\nNo one will ever realize dear\nThat I\u2019m just a drifter all alone",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "When the mountain dew starts falling",
+        "And the green green grass begins to grow",
+        "That\u2019s when I realize I love you",
+        "That\u2019s why I\u2019m on my way back home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Back to the one I love so dearly",
+        "Back to the one that I love so",
+        "back to that girl I spent some time with",
+        "Back to my little mountain home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been away from my home for so long dear",
+        "And I feel like a stranger in my home",
+        "No one will ever realize dear",
+        "That I\u2019m just a drifter all alone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

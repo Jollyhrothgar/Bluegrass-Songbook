@@ -1,0 +1,49 @@
+{
+  "slug": "drifting-with-the-tide",
+  "title": "Drifting With The Tide",
+  "source_url": "https://www.bluegrasslyrics.com/song/drifting-with-the-tide/",
+  "raw_lyrics": "As my boat draws near the harbor\nKnowing soon that you\u2019ll be mine\nBut if another has you darling\nI\u2019ll go drifting with the tide\n\nI have crossed the great wide ocean\nI have waited for the time\nBut if another has you darling\nI\u2019ll go drifting with tide\n\nA long, long time has passed my darling\nSince that night you made those vows\nI know my heart would break with sorrow\nIf you should say it\u2019s over now\n\nI\u2019m in love with you my darling\nAnd I\u2019m praying you\u2019ll be mine\nBut if you change your mind my darlin\nI\u2019ll go driftin with the tide",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "As my boat draws near the harbor",
+        "Knowing soon that you\u2019ll be mine",
+        "But if another has you darling",
+        "I\u2019ll go drifting with the tide"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I have crossed the great wide ocean",
+        "I have waited for the time",
+        "But if another has you darling",
+        "I\u2019ll go drifting with tide"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A long, long time has passed my darling",
+        "Since that night you made those vows",
+        "I know my heart would break with sorrow",
+        "If you should say it\u2019s over now"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m in love with you my darling",
+        "And I\u2019m praying you\u2019ll be mine",
+        "But if you change your mind my darlin",
+        "I\u2019ll go driftin with the tide"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "roane-county-prison",
+  "title": "Roane County Prison",
+  "source_url": "https://www.bluegrasslyrics.com/song/roane-county-prison/",
+  "raw_lyrics": "In the beautiful hills in the mists of Roane County\nThere\u2019s where I have roamed for many long years\nThere\u2019s where my heart\u2019s been tendin most ever\nThere\u2019s where the first step of misfortune I made\n\nIt\u2019s about thirty years when I courted and married\nArmanda Gilbraith I\u2019d soon call my wife\nMy brother he stabbed me for some unknown reason\nJust three month\u2019s later I\u2019d taken Tom\u2019s life\n\nI was  captured and tried in the village of Kingston\nNot a man in that county would speak one kind word\nWhen the jury came in with the verdict next mornin\u2019\nA lifetime in prison was the words that I heard\n\nWhen the train pulled out poor Mother stood weepin\u2019\nAnd sister she sat all alone with a sigh\nAnd the last words I heard was \u201cWilly God bless you\u201d\nWas \u201cWilly God bless you God bless you goodbye\u201d\n\nIn the scorching hot sand of the foundry I\u2019m workin\u2019\nToiling and working my poor life away\nThey\u2019ll measure my grave on the banks of old Cumberland\nJust as soon as I finish the rest of my days\n\nPoort Martha was grave, but Corey was better\nThere\u2019s better and worse, although you may see\nBoys when you write home from this prison in Nashville\nPlace one of my songs in your letter for me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the beautiful hills in the mists of Roane County",
+        "There\u2019s where I have roamed for many long years",
+        "There\u2019s where my heart\u2019s been tendin most ever",
+        "There\u2019s where the first step of misfortune I made"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s about thirty years when I courted and married",
+        "Armanda Gilbraith I\u2019d soon call my wife",
+        "My brother he stabbed me for some unknown reason",
+        "Just three month\u2019s later I\u2019d taken Tom\u2019s life"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was  captured and tried in the village of Kingston",
+        "Not a man in that county would speak one kind word",
+        "When the jury came in with the verdict next mornin\u2019",
+        "A lifetime in prison was the words that I heard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the train pulled out poor Mother stood weepin\u2019",
+        "And sister she sat all alone with a sigh",
+        "And the last words I heard was \u201cWilly God bless you\u201d",
+        "Was \u201cWilly God bless you God bless you goodbye\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In the scorching hot sand of the foundry I\u2019m workin\u2019",
+        "Toiling and working my poor life away",
+        "They\u2019ll measure my grave on the banks of old Cumberland",
+        "Just as soon as I finish the rest of my days"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Poort Martha was grave, but Corey was better",
+        "There\u2019s better and worse, although you may see",
+        "Boys when you write home from this prison in Nashville",
+        "Place one of my songs in your letter for me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

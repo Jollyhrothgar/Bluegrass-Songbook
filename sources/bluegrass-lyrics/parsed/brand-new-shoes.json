@@ -1,0 +1,38 @@
+{
+  "slug": "brand-new-shoes",
+  "title": "Brand New Shoes",
+  "source_url": "https://www.bluegrasslyrics.com/song/brand-new-shoes/",
+  "raw_lyrics": "I\u2019m breaking in a brand new pair of shoes\nDon\u2019t look at me like you think I\u2019ve got the blues\n\u2018Cause I\u2019m walking \u2019round and around and I\u2019m seeing most of the town\nI\u2019m just breaking in a brand new pair of shoes\n\nAh ha so I\u2019m talking to myself\nOh no she\u2019s not putting me on the shelf\nI\u2019m just breaking in a brand new pair of shoes\n\nI\u2019m doggone if I\u2019m gonna cry the blues\nMy feet are sore but I\u2019ve got no time to lose\n\u2018Cause I\u2019m wanting her here with me and I\u2019m needing her company\nI\u2019m just breaking in a brand new pair of shoes",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m breaking in a brand new pair of shoes",
+        "Don\u2019t look at me like you think I\u2019ve got the blues",
+        "\u2018Cause I\u2019m walking \u2019round and around and I\u2019m seeing most of the town",
+        "I\u2019m just breaking in a brand new pair of shoes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Ah ha so I\u2019m talking to myself",
+        "Oh no she\u2019s not putting me on the shelf",
+        "I\u2019m just breaking in a brand new pair of shoes"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m doggone if I\u2019m gonna cry the blues",
+        "My feet are sore but I\u2019ve got no time to lose",
+        "\u2018Cause I\u2019m wanting her here with me and I\u2019m needing her company",
+        "I\u2019m just breaking in a brand new pair of shoes"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

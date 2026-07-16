@@ -1,0 +1,49 @@
+{
+  "slug": "sweethearts-in-heaven",
+  "title": "Sweethearts In Heaven",
+  "source_url": "https://www.bluegrasslyrics.com/song/sweethearts-in-heaven/",
+  "raw_lyrics": "Darlin do you really love me\nAre you the girl I used to know\nSomething\u2019s happened to you darlin\nBut it pleases me to know\n\nLife is sweet when love is blooming\nLike a wild rose on the hill\nBut when lovers part forever\nWhere it ends no one can tell\n\nMany lonely nights I\u2019ve travelled\nFar across this barren land\nThinking of that peaceful village\nWhere we once strolled hand in hand\n\nWhen our journey here has ended\nAnd this life on earth is done\nWe\u2019ll be sweethearts up in heaven\nFor me I know you are the one",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Darlin do you really love me",
+        "Are you the girl I used to know",
+        "Something\u2019s happened to you darlin",
+        "But it pleases me to know"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Life is sweet when love is blooming",
+        "Like a wild rose on the hill",
+        "But when lovers part forever",
+        "Where it ends no one can tell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many lonely nights I\u2019ve travelled",
+        "Far across this barren land",
+        "Thinking of that peaceful village",
+        "Where we once strolled hand in hand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When our journey here has ended",
+        "And this life on earth is done",
+        "We\u2019ll be sweethearts up in heaven",
+        "For me I know you are the one"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

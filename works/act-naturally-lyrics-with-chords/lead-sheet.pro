@@ -1,9 +1,6 @@
-{meta: title Act Naturally Lyrics with Chords}
+{meta: title Act Naturally}
 {meta: artist Buck Owens}
 {meta: composer Johnny Russell and Voni Morrison}
-{meta: x_source classic-country}
-{meta: x_source_file actnaturallylyricsandchords.pro}
-{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They're gonna put me in the [F]movies
@@ -39,7 +36,3 @@
 [G7]The movie's gonna make me a big [C]star
 [D7]'Cause I can play the part so [G7]well
 {end_of_verse}
-
-
-
-

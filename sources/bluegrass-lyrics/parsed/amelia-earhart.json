@@ -1,0 +1,49 @@
+{
+  "slug": "amelia-earhart",
+  "title": "Amelia Earhart",
+  "source_url": "https://www.bluegrasslyrics.com/song/amelia-earhart/",
+  "raw_lyrics": "Oh a ship out on the ocean just a speck against the sky\nAmelia Earhart\u2019s flight was set that day\nWith her partner Captain Noonan on the second of July\nHer plane fell in the ocean far away\n\nThere\u2019s a beautiful beautiful field\nFar away in a land that is fair\nHappy landings to you Amelia Earhart\nFarewell first lady of the air\n\nA half an hour later an s.o.s. was heard\nThe signal weak but still her voice was brave\nIn shark-infested waters her plane went down that night\nIn the blue Pacific to a watery grave.\n\nNow you have heard my story of that awful tragedy\nAnd prayed that she might fly on safe again\nIn years to come when others blaze a trail across the sky\nWe\u2019ll never forget Amelia and her plane.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh a ship out on the ocean just a speck against the sky",
+        "Amelia Earhart\u2019s flight was set that day",
+        "With her partner Captain Noonan on the second of July",
+        "Her plane fell in the ocean far away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a beautiful beautiful field",
+        "Far away in a land that is fair",
+        "Happy landings to you Amelia Earhart",
+        "Farewell first lady of the air"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A half an hour later an s.o.s. was heard",
+        "The signal weak but still her voice was brave",
+        "In shark-infested waters her plane went down that night",
+        "In the blue Pacific to a watery grave."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you have heard my story of that awful tragedy",
+        "And prayed that she might fly on safe again",
+        "In years to come when others blaze a trail across the sky",
+        "We\u2019ll never forget Amelia and her plane."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

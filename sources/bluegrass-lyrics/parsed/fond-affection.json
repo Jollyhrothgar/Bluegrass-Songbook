@@ -1,0 +1,49 @@
+{
+  "slug": "fond-affection",
+  "title": "Fond Affection",
+  "source_url": "https://www.bluegrasslyrics.com/song/fond-affection/",
+  "raw_lyrics": "Once I loved your fond affection\nAll my hopes on you was spent\nTill a dark eyed girl persuaded\nAnd you care no more for me\n\nGo on and leave me if you wish to\nNever let me cross your mind\nIn your heart to love another\nNever on earth will I call you mine\n\nWhen I\u2019m dead and in my coffin\nAnd my pale face towards the sun\nWill you come and sit beside me\nAnd think of what you\u2019ve done\n\nWhen I\u2019m dead and in my coffin\nAnd the shroud about me bows\nWill you come and scatter roses\nUpon your lover\u2019s mound",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once I loved your fond affection",
+        "All my hopes on you was spent",
+        "Till a dark eyed girl persuaded",
+        "And you care no more for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go on and leave me if you wish to",
+        "Never let me cross your mind",
+        "In your heart to love another",
+        "Never on earth will I call you mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I\u2019m dead and in my coffin",
+        "And my pale face towards the sun",
+        "Will you come and sit beside me",
+        "And think of what you\u2019ve done"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I\u2019m dead and in my coffin",
+        "And the shroud about me bows",
+        "Will you come and scatter roses",
+        "Upon your lover\u2019s mound"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

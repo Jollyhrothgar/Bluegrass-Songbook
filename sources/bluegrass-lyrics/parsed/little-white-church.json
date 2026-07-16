@@ -1,0 +1,59 @@
+{
+  "slug": "little-white-church",
+  "title": "Little White Church",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-white-church/",
+  "raw_lyrics": "There\u2019s a little white church in the valley\nThat stands in my memory each day\nAnd it seems I can hear the bells now ringing\nThough I am many miles away\n\nAnd many times in church on Sunday morning\nThat whole countryside would gather there\nThey would all kneel down by the altar\nAs they lifted up their voice in prayer\n\nOh the church in the valley  that little white church\nIs the place I love so well\nNow I\u2019m sad and lonely    yes I\u2019m sad and lonely\nFor that little white church in the dell\n\nThey would sing the old song Rock of Ages\nOh Christ let me hide myself in thee\nAnd I know some of them are now waiting\nJust o\u2019er the dark and stormy sea\n\nI know that troubles all are ended\nAnd happy forever they will be\nThey are waiting and watching up yonder\nFor the coming home of you and me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a little white church in the valley",
+        "That stands in my memory each day",
+        "And it seems I can hear the bells now ringing",
+        "Though I am many miles away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And many times in church on Sunday morning",
+        "That whole countryside would gather there",
+        "They would all kneel down by the altar",
+        "As they lifted up their voice in prayer"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the church in the valley  that little white church",
+        "Is the place I love so well",
+        "Now I\u2019m sad and lonely    yes I\u2019m sad and lonely",
+        "For that little white church in the dell"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They would sing the old song Rock of Ages",
+        "Oh Christ let me hide myself in thee",
+        "And I know some of them are now waiting",
+        "Just o\u2019er the dark and stormy sea"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know that troubles all are ended",
+        "And happy forever they will be",
+        "They are waiting and watching up yonder",
+        "For the coming home of you and me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

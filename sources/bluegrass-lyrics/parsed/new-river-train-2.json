@@ -1,0 +1,119 @@
+{
+  "slug": "new-river-train-2",
+  "title": "New River Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/new-river-train-2/",
+  "raw_lyrics": "I\u2019m ridin\u2019 that New River train\nI\u2019m ridin\u2019 that New River train\nThe same old train that brought me here\nIs gonna carry me home again\n\nDarlin\u2019 you can\u2019t love one\nDarlin\u2019 you can\u2019t love one\nYou can\u2019t love one and have any fun\nOh darlin\u2019 you can\u2019t love one\n\nOh darlin\u2019 you can\u2019t love two\noh darlin\u2019 you can\u2019t love two\nYou can\u2019t love two and your little heart be true\nOh darlin\u2019 you can\u2019t love two\n\nDarlin\u2019 you cant love three\nDarlin\u2019 you cant love three\nYou can\u2019t love three and still be true to me\nOh darlin\u2019 you cant love three\n\nOh darlin\u2019 you cant love four\ndarlin\u2019 you cant love four\nYou can\u2019t love four amd love any more\nOh darlin\u2019 you cant love four\n\nDarlin\u2019 you cant love five\nOh darlin\u2019 you cant love five\nYou can\u2019t love five you\u2019ll be sorry you\u2019re alive\nOh darlin\u2019 you cant love five\n\nOh darlin\u2019 you cant love six\nOh darlin\u2019 you cant love six\nYou can\u2019t love six six will never mix\nOh darlin\u2019 you cant love six\n\nOh darlin\u2019 you cant love seven\nOh darlin\u2019 you cant love seven\nYou can\u2019t love seven it might as well be \u2018leven\nOh darlin\u2019 you cant love seven\n\nOh darlin\u2019 you cant love eight\nOh darlin\u2019 you cant love eight\nYou can\u2019t love eight for a date they\u2019ll show up late\nOh darlin\u2019 you cant love eight\n\nOh darlin\u2019 you cant love nine\nOh darlin\u2019 you cant love nine\nYou can\u2019t love nine keep them danglin\u2019 on a line\nOh darlin\u2019 you cant love nine\n\nOh darlin\u2019 you cant love ten\nOh darlin\u2019 you cant love ten\nYou can\u2019t love ten when can I see you again\nOh darlin\u2019 you cant love ten",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m ridin\u2019 that New River train",
+        "I\u2019m ridin\u2019 that New River train",
+        "The same old train that brought me here",
+        "Is gonna carry me home again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darlin\u2019 you can\u2019t love one",
+        "Darlin\u2019 you can\u2019t love one",
+        "You can\u2019t love one and have any fun",
+        "Oh darlin\u2019 you can\u2019t love one"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh darlin\u2019 you can\u2019t love two",
+        "oh darlin\u2019 you can\u2019t love two",
+        "You can\u2019t love two and your little heart be true",
+        "Oh darlin\u2019 you can\u2019t love two"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darlin\u2019 you cant love three",
+        "Darlin\u2019 you cant love three",
+        "You can\u2019t love three and still be true to me",
+        "Oh darlin\u2019 you cant love three"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh darlin\u2019 you cant love four",
+        "darlin\u2019 you cant love four",
+        "You can\u2019t love four amd love any more",
+        "Oh darlin\u2019 you cant love four"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Darlin\u2019 you cant love five",
+        "Oh darlin\u2019 you cant love five",
+        "You can\u2019t love five you\u2019ll be sorry you\u2019re alive",
+        "Oh darlin\u2019 you cant love five"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh darlin\u2019 you cant love six",
+        "Oh darlin\u2019 you cant love six",
+        "You can\u2019t love six six will never mix",
+        "Oh darlin\u2019 you cant love six"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh darlin\u2019 you cant love seven",
+        "Oh darlin\u2019 you cant love seven",
+        "You can\u2019t love seven it might as well be \u2018leven",
+        "Oh darlin\u2019 you cant love seven"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh darlin\u2019 you cant love eight",
+        "Oh darlin\u2019 you cant love eight",
+        "You can\u2019t love eight for a date they\u2019ll show up late",
+        "Oh darlin\u2019 you cant love eight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh darlin\u2019 you cant love nine",
+        "Oh darlin\u2019 you cant love nine",
+        "You can\u2019t love nine keep them danglin\u2019 on a line",
+        "Oh darlin\u2019 you cant love nine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh darlin\u2019 you cant love ten",
+        "Oh darlin\u2019 you cant love ten",
+        "You can\u2019t love ten when can I see you again",
+        "Oh darlin\u2019 you cant love ten"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

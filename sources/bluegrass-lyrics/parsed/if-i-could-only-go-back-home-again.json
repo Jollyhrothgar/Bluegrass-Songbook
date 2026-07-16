@@ -1,0 +1,39 @@
+{
+  "slug": "if-i-could-only-go-back-home-again",
+  "title": "If I Could Only Go Back Home Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/if-i-could-only-go-back-home-again/",
+  "raw_lyrics": "If  I could only go back home again\nTo see the hills and feel the wind\nI\u2019d walk the road to where it all began\nAnd find the man I lost back home again.\n\nIt\u2019s been awhile since I\u2019ve been home\nI miss the place I come from and the smell of the old wood smoke\nI close my eyes I can see all of my favorite memories\nHow I wish I could go back home again.\n\nThe lamp is dim time moves slow\nThe night owl sings a song I know the darkness seems an old familiar friend\nThe falling rain and gentle winds rock my soul to sleep again\nA quiet place this peaceful dream of home.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "If  I could only go back home again",
+        "To see the hills and feel the wind",
+        "I\u2019d walk the road to where it all began",
+        "And find the man I lost back home again."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s been awhile since I\u2019ve been home",
+        "I miss the place I come from and the smell of the old wood smoke",
+        "I close my eyes I can see all of my favorite memories",
+        "How I wish I could go back home again."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The lamp is dim time moves slow",
+        "The night owl sings a song I know the darkness seems an old familiar friend",
+        "The falling rain and gentle winds rock my soul to sleep again",
+        "A quiet place this peaceful dream of home."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "who-will-call-you-sweetheart",
+  "title": "Who Will Call You Sweetheart",
+  "source_url": "https://www.bluegrasslyrics.com/song/who-will-call-you-sweetheart/",
+  "raw_lyrics": "Now who will kiss your lips darlin\u2019\nWho will call you sweetheart\nOh who will tell you they love you\nOh you once was my little sweetheart\n\nNow who\u2019s been talkin\u2019 to you\nSomebody\u2019s been tellin\u2019 you wrong\nThings a-bout me that you shouldn\u2019t believe\nI miss you sweetheart when you\u2019re gone\n\nThis talk that\u2019s goin\u2019 \u2019round town\nSome of it I know is not true\n\u2018Bout the things that I\u2019ve done and the places I\u2019ve been\nFor darlin\u2019 I\u2019ve always loved you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now who will kiss your lips darlin\u2019",
+        "Who will call you sweetheart",
+        "Oh who will tell you they love you",
+        "Oh you once was my little sweetheart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now who\u2019s been talkin\u2019 to you",
+        "Somebody\u2019s been tellin\u2019 you wrong",
+        "Things a-bout me that you shouldn\u2019t believe",
+        "I miss you sweetheart when you\u2019re gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "This talk that\u2019s goin\u2019 \u2019round town",
+        "Some of it I know is not true",
+        "\u2018Bout the things that I\u2019ve done and the places I\u2019ve been",
+        "For darlin\u2019 I\u2019ve always loved you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

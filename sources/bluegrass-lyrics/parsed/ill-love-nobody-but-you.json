@@ -1,0 +1,39 @@
+{
+  "slug": "ill-love-nobody-but-you",
+  "title": "I\u2019ll Love Nobody But You",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-love-nobody-but-you/",
+  "raw_lyrics": "I\u2019ll never love anybody but you, baby, baby\nI\u2019ll never love anybody but you if you\u2019ll be my girl\nOh yes believe me it\u2019s true\nOh yes, I\u2019ll love nobody but you\n\nI\u2019ll always be true to you, baby, baby\nI\u2019ll always be true to you if you\u2019ll be my girl\nOh yes believe me it\u2019s true\nOh yes, I\u2019ll love nobody but you\n\nI\u2019ll take you out every night, baby, baby\nI\u2019ll take you out if you\u2019ll be my girl\nOh yes believe me it\u2019s true\nOh yes, I\u2019ll love nobody but you",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll never love anybody but you, baby, baby",
+        "I\u2019ll never love anybody but you if you\u2019ll be my girl",
+        "Oh yes believe me it\u2019s true",
+        "Oh yes, I\u2019ll love nobody but you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll always be true to you, baby, baby",
+        "I\u2019ll always be true to you if you\u2019ll be my girl",
+        "Oh yes believe me it\u2019s true",
+        "Oh yes, I\u2019ll love nobody but you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll take you out every night, baby, baby",
+        "I\u2019ll take you out if you\u2019ll be my girl",
+        "Oh yes believe me it\u2019s true",
+        "Oh yes, I\u2019ll love nobody but you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

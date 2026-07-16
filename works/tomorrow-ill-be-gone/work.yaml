@@ -1,0 +1,11 @@
+id: tomorrow-ill-be-gone
+title: Tomorrow I’ll Be Gone
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/tomorrow-ill-be-gone/
+      imported_at: '2026-02-08'

@@ -1,0 +1,57 @@
+{
+  "slug": "rock-about-my-saro-jane",
+  "title": "Rock About My Saro Jane",
+  "source_url": "https://www.bluegrasslyrics.com/song/rock-about-my-saro-jane/",
+  "raw_lyrics": "I\u2019ve got a wife and five little children\nBelieve I\u2019ll make a trip on the big Macmillan\nOh  Saro Jane\n\nOh there\u2019s nothing to do but to set down and sing\nAnd rock about my Saro Jane\nOh rock about my Saro Jane\nOh rock about my Saro Jane\nOh there\u2019s nothing to do but to set down and sing\nAnd rock about my Saro Jane\n\nBoiler busted and the whistle done blowed\nThe head captain done fell overboard\nOh Saro Jane\n\nEngine gave a crack and the whistle gave a squall\nThe engineer gone ti the hole in the wall\nOh Saro Jane\n\nYankees built boats for to shoot them rebels\nMy musket\u2019s loaded and I\u2019m gonna hold her level\nOh Saro Jane",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got a wife and five little children",
+        "Believe I\u2019ll make a trip on the big Macmillan",
+        "Oh  Saro Jane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh there\u2019s nothing to do but to set down and sing",
+        "And rock about my Saro Jane",
+        "Oh rock about my Saro Jane",
+        "Oh rock about my Saro Jane",
+        "Oh there\u2019s nothing to do but to set down and sing",
+        "And rock about my Saro Jane"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Boiler busted and the whistle done blowed",
+        "The head captain done fell overboard",
+        "Oh Saro Jane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Engine gave a crack and the whistle gave a squall",
+        "The engineer gone ti the hole in the wall",
+        "Oh Saro Jane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Yankees built boats for to shoot them rebels",
+        "My musket\u2019s loaded and I\u2019m gonna hold her level",
+        "Oh Saro Jane"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "your-worries-and-troubles-are-mine",
+  "title": "Your Worries And Troubles Are Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/your-worries-and-troubles-are-mine/",
+  "raw_lyrics": "People keep asking and wondering why\nThere\u2019s always a tear in your eye\nYou\u2019ve lived a hard life one I\u2019d rather not lead\nI ought to be glad it\u2019s not me\n\nBut when tears fill your eyes and clouds hide the sky\nYour heart is so sad and you have a worried mind\nYou\u2019ll know my heart is with you and my love for you ain\u2019t blind\nYour worries and troubles are mine\n\nNow the nights are hard to get through as I wait restlessly\nMy letters are written in vain\nUnsure of your feelings my tears fall endlessly\nAnd my heart\u2019s beating rhythm with the rain",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "People keep asking and wondering why",
+        "There\u2019s always a tear in your eye",
+        "You\u2019ve lived a hard life one I\u2019d rather not lead",
+        "I ought to be glad it\u2019s not me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "But when tears fill your eyes and clouds hide the sky",
+        "Your heart is so sad and you have a worried mind",
+        "You\u2019ll know my heart is with you and my love for you ain\u2019t blind",
+        "Your worries and troubles are mine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the nights are hard to get through as I wait restlessly",
+        "My letters are written in vain",
+        "Unsure of your feelings my tears fall endlessly",
+        "And my heart\u2019s beating rhythm with the rain"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

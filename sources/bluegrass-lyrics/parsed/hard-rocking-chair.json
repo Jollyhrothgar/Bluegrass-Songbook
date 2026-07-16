@@ -1,0 +1,63 @@
+{
+  "slug": "hard-rocking-chair",
+  "title": "Hard Rocking Chair",
+  "source_url": "https://www.bluegrasslyrics.com/song/hard-rocking-chair/",
+  "raw_lyrics": "Oh darling I can\u2019t stay here\nOh darling I can\u2019t stay here\nFor there\u2019s nothing here but a hard rocking chair\nOh darling I can\u2019t stay here\n\nI wish I had her tied to my side\nI wish I had her tied to my side\nIf I had her by my side\nwe\u2019d run away and hide\nI wish I had her tied to my side\n\nI wish I was a birdie in the spring\nI wish I was a birdie in the spring\nLike a birdie in the spring\nI could hear my darling sing\nI wish I was a birdie in the spring\n\nSo darling you know you done me wrong\nSo darling you know you done me wrong\nYou done me wrong\nI\u2019m leaving you this song\nSo darling you know you done me wrong\n\nI wish I was a little turtle dove\nI wish I was a little turtle dove\nLike a little turtle dove\nI\u2019d fly to the one I love\nI wish I was a little turtle dove",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh darling I can\u2019t stay here",
+        "Oh darling I can\u2019t stay here",
+        "For there\u2019s nothing here but a hard rocking chair",
+        "Oh darling I can\u2019t stay here"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I had her tied to my side",
+        "I wish I had her tied to my side",
+        "If I had her by my side",
+        "we\u2019d run away and hide",
+        "I wish I had her tied to my side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I was a birdie in the spring",
+        "I wish I was a birdie in the spring",
+        "Like a birdie in the spring",
+        "I could hear my darling sing",
+        "I wish I was a birdie in the spring"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So darling you know you done me wrong",
+        "So darling you know you done me wrong",
+        "You done me wrong",
+        "I\u2019m leaving you this song",
+        "So darling you know you done me wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I wish I was a little turtle dove",
+        "I wish I was a little turtle dove",
+        "Like a little turtle dove",
+        "I\u2019d fly to the one I love",
+        "I wish I was a little turtle dove"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

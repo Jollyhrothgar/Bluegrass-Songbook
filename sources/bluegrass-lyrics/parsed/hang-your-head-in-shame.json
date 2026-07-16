@@ -1,0 +1,49 @@
+{
+  "slug": "hang-your-head-in-shame",
+  "title": "Hang Your Head In Shame",
+  "source_url": "https://www.bluegrasslyrics.com/song/hang-your-head-in-shame/",
+  "raw_lyrics": "Oh does your concience ever bother you\nEvery time you hear my name\nOh try to think of all that I\u2019ve gone through\nAnd hang your head in shame\n\nSomeone came along and took my place\nThen you gave me all the blame\nOh you should go somewhere and hide your face\nand hang your head in shame\n\nNow when you said I was the only one\nWas it just your little game\nOh try to think of all the harm you\u2019ve done\nAnd hang you head in shame\n\nI should hate you but I love you still\nIn my heart I\u2019ve kept a flame\nDear you\u2019ll be sorry darling yes you will\nAnd hang your head in shame",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh does your concience ever bother you",
+        "Every time you hear my name",
+        "Oh try to think of all that I\u2019ve gone through",
+        "And hang your head in shame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someone came along and took my place",
+        "Then you gave me all the blame",
+        "Oh you should go somewhere and hide your face",
+        "and hang your head in shame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when you said I was the only one",
+        "Was it just your little game",
+        "Oh try to think of all the harm you\u2019ve done",
+        "And hang you head in shame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I should hate you but I love you still",
+        "In my heart I\u2019ve kept a flame",
+        "Dear you\u2019ll be sorry darling yes you will",
+        "And hang your head in shame"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

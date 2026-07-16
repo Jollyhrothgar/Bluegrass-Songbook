@@ -1,0 +1,43 @@
+{
+  "slug": "dust-bowl-children",
+  "title": "Dust Bowl Children",
+  "source_url": "https://www.bluegrasslyrics.com/song/dust-bowl-children/",
+  "raw_lyrics": "Papa\u2019s name Hannibal Mama was a Hanamurai\nEverything we owned got all burned up in the great depression fire\nStrip mines and one crop farming drained the green earth dry\nWe lost it all but only love was left cause that\u2019s the one thing money can\u2019t buy\n\nYeah we\u2019re all dustbowl children\nSinging a dust bowl children\nWhen the crops won\u2019t grow\nAnd the dust just blows\nWhen the green fields are gone\nWhen the green grass growing fields are gone\nWhen the green fields are gone\nWhen the green grass growing fields are gone\n\nWell they say in California there\u2019s work of every kind\nWell the only job I got out there was waiting in a welfare line\nWell once I had a dollar once I had a dream\nNow every kind of work is done by great machines",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Papa\u2019s name Hannibal Mama was a Hanamurai",
+        "Everything we owned got all burned up in the great depression fire",
+        "Strip mines and one crop farming drained the green earth dry",
+        "We lost it all but only love was left cause that\u2019s the one thing money can\u2019t buy"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Yeah we\u2019re all dustbowl children",
+        "Singing a dust bowl children",
+        "When the crops won\u2019t grow",
+        "And the dust just blows",
+        "When the green fields are gone",
+        "When the green grass growing fields are gone",
+        "When the green fields are gone",
+        "When the green grass growing fields are gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well they say in California there\u2019s work of every kind",
+        "Well the only job I got out there was waiting in a welfare line",
+        "Well once I had a dollar once I had a dream",
+        "Now every kind of work is done by great machines"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

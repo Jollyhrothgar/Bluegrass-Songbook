@@ -1,0 +1,49 @@
+{
+  "slug": "dying-soldier-the",
+  "title": "Dying Soldier, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/dying-soldier-the/",
+  "raw_lyrics": "The sun was slowly sinking or the hilltops far away\nThe land was endless beauty where the dying soldier lay\nTears were streaming down his face as he slowly raised his head\nAnd these were the dying words he said\n\nOh carry me back to old Tennessee\nLet this be my last repose\nLay my feet beneath while I lie\nLay my head beneath the rose\n\nTake this message to my mother for I know she\u2019s old and gray\nAt home I know she\u2019s waiting for her boy\u2019s return some day\nOh my mother I\u2019ve come through for my country and for you\nAnd I\u2019m dying for the red white and blue\n\nO\u2019er the hills of Tennessee where the wild wind wonders free\nThere\u2019s a little girl waiting there for me\nTell her that the rose she gave me will be placed upon my grave\nIn memory of her soldier brave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The sun was slowly sinking or the hilltops far away",
+        "The land was endless beauty where the dying soldier lay",
+        "Tears were streaming down his face as he slowly raised his head",
+        "And these were the dying words he said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh carry me back to old Tennessee",
+        "Let this be my last repose",
+        "Lay my feet beneath while I lie",
+        "Lay my head beneath the rose"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take this message to my mother for I know she\u2019s old and gray",
+        "At home I know she\u2019s waiting for her boy\u2019s return some day",
+        "Oh my mother I\u2019ve come through for my country and for you",
+        "And I\u2019m dying for the red white and blue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "O\u2019er the hills of Tennessee where the wild wind wonders free",
+        "There\u2019s a little girl waiting there for me",
+        "Tell her that the rose she gave me will be placed upon my grave",
+        "In memory of her soldier brave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

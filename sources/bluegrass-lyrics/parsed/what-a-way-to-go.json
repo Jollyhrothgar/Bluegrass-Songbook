@@ -1,0 +1,49 @@
+{
+  "slug": "what-a-way-to-go",
+  "title": "What a Way to Go",
+  "source_url": "https://www.bluegrasslyrics.com/song/what-a-way-to-go/",
+  "raw_lyrics": "Romeo and Juliet Jackie and Jill\nRomeo took poison and Jack fell down the hill\nWell I\u2019ve\u00a0 got you and how its gonna turn out I don\u2019t know\nBut if loving you is killing me Lord what a way to go\n\nIf loving you is killing me Lord what a way to go\nIf there\u2019s a better way to die I don\u2019t want to know\nJust wipe that smile off my face and let \u2019em lay me low\nIf loving you is killing me Lord what a way to go\n\nIf loving you is killing me then I don\u2019t wanna live\nYour love may be poison I\u2019ll take all that I can get\nJust pour a little in my cup and let me die slow\nIf loving you is killing me Lord what a way to go\n\nI believe you\u2019re killing me a little more each night\nBut it feels like I\u2019m in Heaven when you hold me tight\nSo wrap your arms around me and let your sweet love flow\nCause if loving you is killing me Lord what a way to go",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Romeo and Juliet Jackie and Jill",
+        "Romeo took poison and Jack fell down the hill",
+        "Well I\u2019ve\u00a0 got you and how its gonna turn out I don\u2019t know",
+        "But if loving you is killing me Lord what a way to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If loving you is killing me Lord what a way to go",
+        "If there\u2019s a better way to die I don\u2019t want to know",
+        "Just wipe that smile off my face and let \u2019em lay me low",
+        "If loving you is killing me Lord what a way to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If loving you is killing me then I don\u2019t wanna live",
+        "Your love may be poison I\u2019ll take all that I can get",
+        "Just pour a little in my cup and let me die slow",
+        "If loving you is killing me Lord what a way to go"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I believe you\u2019re killing me a little more each night",
+        "But it feels like I\u2019m in Heaven when you hold me tight",
+        "So wrap your arms around me and let your sweet love flow",
+        "Cause if loving you is killing me Lord what a way to go"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

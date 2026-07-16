@@ -1,0 +1,69 @@
+{
+  "slug": "the-storms-are-on-the-ocean",
+  "title": "The Storms Are On The Ocean",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-storms-are-on-the-ocean/",
+  "raw_lyrics": "I\u2019m going away to leave you love\nI\u2019m going away for a while\nBut I\u2019ll return to see you sometime\nIf I go ten thousand miles\n\nThe storms are on the ocean\nThe heavens may cease to be\nThis world may lose it\u2019s motion love\nIf I prove false to thee\n\nOh who will dress your pretty little feet\nAnd who will glove your hand\nOh who will kiss your rosy red cheeks\nWhen I\u2019m in a foreign land\n\nPapa will dress my pretty little feet\nAnd Mama will glove my hand\nYou may kiss my rosy red cheeks\nWhen you return again\n\nHave you seen those mournful doves\nFlying from pine to pine\nA-mournin\u2019 for their own true love\nJust like I mourn for mine\n\nI\u2019ll never go back on the ocean love\nI\u2019ll never go back on the sea\nI\u2019ll never go back on my blue-eyed girl\n\u2018Til she goes back on me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m going away to leave you love",
+        "I\u2019m going away for a while",
+        "But I\u2019ll return to see you sometime",
+        "If I go ten thousand miles"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "The storms are on the ocean",
+        "The heavens may cease to be",
+        "This world may lose it\u2019s motion love",
+        "If I prove false to thee"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh who will dress your pretty little feet",
+        "And who will glove your hand",
+        "Oh who will kiss your rosy red cheeks",
+        "When I\u2019m in a foreign land"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Papa will dress my pretty little feet",
+        "And Mama will glove my hand",
+        "You may kiss my rosy red cheeks",
+        "When you return again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Have you seen those mournful doves",
+        "Flying from pine to pine",
+        "A-mournin\u2019 for their own true love",
+        "Just like I mourn for mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll never go back on the ocean love",
+        "I\u2019ll never go back on the sea",
+        "I\u2019ll never go back on my blue-eyed girl",
+        "\u2018Til she goes back on me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

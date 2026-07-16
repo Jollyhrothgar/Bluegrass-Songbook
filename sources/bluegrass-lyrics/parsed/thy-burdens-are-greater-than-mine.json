@@ -1,0 +1,86 @@
+{
+  "slug": "thy-burdens-are-greater-than-mine",
+  "title": "Thy Burdens Are Greater Than Mine",
+  "source_url": "https://www.bluegrasslyrics.com/song/thy-burdens-are-greater-than-mine/",
+  "raw_lyrics": "In a little country village\nI met a man and he was blind\nAs I helped him cross the highway\nI  cried thy burdens are greater than mine\n\nI can see the light of day\nAnd I need not feel my way\nYes thy burdens\n\nSaw  a lad well on his travels\nTrying hard to play the game\nThough his leg was very crippled\nAnd he could not speak his name\n\nStill he smiled in understanding\nThough life to him had been unkind\nAs I watched I thought in sorrow\nSon thy burdens\n\nI can speak my name aloud\nMake my way among the crowd\nYes thy burdens\n\nJust by chance I passed a graveyard\nSaw a young man kneeling there\nIn his hand there were some roses\nOn his lips there was a prayer\n\nOn a stone these words were written\nMy soul is God\u2019s my memory thine\nAs I watched I thought in sorrow\nFriends thy burdens\n\nI\u2019m just a drifter all alone\nI got no friends I got no home\nYes thy burdens \u2026",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In a little country village",
+        "I met a man and he was blind",
+        "As I helped him cross the highway",
+        "I  cried thy burdens are greater than mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can see the light of day",
+        "And I need not feel my way",
+        "Yes thy burdens"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Saw  a lad well on his travels",
+        "Trying hard to play the game",
+        "Though his leg was very crippled",
+        "And he could not speak his name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Still he smiled in understanding",
+        "Though life to him had been unkind",
+        "As I watched I thought in sorrow",
+        "Son thy burdens"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I can speak my name aloud",
+        "Make my way among the crowd",
+        "Yes thy burdens"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just by chance I passed a graveyard",
+        "Saw a young man kneeling there",
+        "In his hand there were some roses",
+        "On his lips there was a prayer"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On a stone these words were written",
+        "My soul is God\u2019s my memory thine",
+        "As I watched I thought in sorrow",
+        "Friends thy burdens"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m just a drifter all alone",
+        "I got no friends I got no home",
+        "Yes thy burdens \u2026"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

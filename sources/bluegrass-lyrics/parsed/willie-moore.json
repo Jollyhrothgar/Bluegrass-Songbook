@@ -1,0 +1,89 @@
+{
+  "slug": "willie-moore",
+  "title": "Willie Moore",
+  "source_url": "https://www.bluegrasslyrics.com/song/willie-moore/",
+  "raw_lyrics": "Willie Moore was a king his age twenty-one\nAnd he courted a damsel fair\nOh her eyes were as bright as the diamonds after night\nAnd wavy black was her hair\n\nHe courted her both night and day\nTill on marry they did agree\nBut when he came to get her parents\u2019 consent\nThey said that could never be\n\nShe threw herself in Willie Moore\u2019s arms\nAs oft time had done before\nBut little did he think when they parted that night\nSweet Anna he would see no more.\n\nOh it was about the tenth of May\nThe time I remember well\nThat very same night her body disappeared\nIn a way no tongue could tell\n\nSweet Anna was loved both far and near\nHad friends most all around\nAnd in a little brook before the cottage door\nThe body of sweet Anna was found\n\nShe was taken by her weeping friends\nAnd carried to her parent\u2019s room\nAnd there she was dressed in a shroud of snowy white\nAnd laid in a lonely tomb\n\nHer parents now are left alone\nOne mourns while the other weeps\nBeneath a grassy mound before the cottage door\nThe body of sweet Anna sleeps\n\nWillie Moore scarcely spoke to his friends they say\nAnd at last from them all he did part\nAnd the last heard from him he was in Montreal\nWhere he died of a broken heart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Willie Moore was a king his age twenty-one",
+        "And he courted a damsel fair",
+        "Oh her eyes were as bright as the diamonds after night",
+        "And wavy black was her hair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He courted her both night and day",
+        "Till on marry they did agree",
+        "But when he came to get her parents\u2019 consent",
+        "They said that could never be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She threw herself in Willie Moore\u2019s arms",
+        "As oft time had done before",
+        "But little did he think when they parted that night",
+        "Sweet Anna he would see no more."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh it was about the tenth of May",
+        "The time I remember well",
+        "That very same night her body disappeared",
+        "In a way no tongue could tell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Sweet Anna was loved both far and near",
+        "Had friends most all around",
+        "And in a little brook before the cottage door",
+        "The body of sweet Anna was found"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She was taken by her weeping friends",
+        "And carried to her parent\u2019s room",
+        "And there she was dressed in a shroud of snowy white",
+        "And laid in a lonely tomb"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her parents now are left alone",
+        "One mourns while the other weeps",
+        "Beneath a grassy mound before the cottage door",
+        "The body of sweet Anna sleeps"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Willie Moore scarcely spoke to his friends they say",
+        "And at last from them all he did part",
+        "And the last heard from him he was in Montreal",
+        "Where he died of a broken heart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

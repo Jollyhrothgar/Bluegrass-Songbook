@@ -1,0 +1,50 @@
+{
+  "slug": "mansions-for-me-2",
+  "title": "Mansions For Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/mansions-for-me-2/",
+  "raw_lyrics": "There\u2019s folks building homes as sweet as can be\nThey\u2019re leveling their yards they\u2019re planting their trees\nBut my little hut I\u2019ll just let it be\nFor Jesus is building a mansion for me\n\nMansion for me (mansion for me)\nA mansion for me (a mansion for me)\nBuilt by my Lord beyond Calvary\nBut my little hut I\u2019ll just let it be\nFor Jesus is building a mansion for me\n\nEach day I am getting more ready to go\nI\u2019m cleansing my sins more whiter than snow\nI\u2019m packing my troubles bound with his love\nGetting ready to move to heaven above\n\nTo you who have homes in this world below\nDriving fine cars wherever you roam\nThere\u2019s coming a time when we\u2019ll all pass away\nGet ready to move with me on that day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s folks building homes as sweet as can be",
+        "They\u2019re leveling their yards they\u2019re planting their trees",
+        "But my little hut I\u2019ll just let it be",
+        "For Jesus is building a mansion for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Mansion for me (mansion for me)",
+        "A mansion for me (a mansion for me)",
+        "Built by my Lord beyond Calvary",
+        "But my little hut I\u2019ll just let it be",
+        "For Jesus is building a mansion for me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Each day I am getting more ready to go",
+        "I\u2019m cleansing my sins more whiter than snow",
+        "I\u2019m packing my troubles bound with his love",
+        "Getting ready to move to heaven above"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "To you who have homes in this world below",
+        "Driving fine cars wherever you roam",
+        "There\u2019s coming a time when we\u2019ll all pass away",
+        "Get ready to move with me on that day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

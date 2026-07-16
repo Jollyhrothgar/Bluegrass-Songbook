@@ -1,0 +1,73 @@
+{
+  "slug": "old-rattler",
+  "title": "Old Rattler",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-rattler/",
+  "raw_lyrics": "Rattler was a good old dog as blind as he could be\nBut every night at suppertime I believe that dog could see\n\nHere Rattler here  here Rattler here\nCall old Rattler from the barn here Rattler here\n\nRattler breaked the other night I thought he treed a coon\nWhen I come to find him he\u2019s barkin\u2019 at the moon\n\nRattler was a friendly dog even though he was blind\nHe wouldn\u2019t hurt a living thing he was so very kind\n\nOne night I saw a big fat coon climb into a tree\nI called Ol\u2019 Rattler right away to fetch him down for me\n\nBut Rattler wouldn\u2019t fetch for me because he liked that coon\nI saw them walking paw in paw later by the light of the moon\n\nGrandpa had a muley cow muley since she was born\nIt took a jaybird forty years to fly from horn to horn\n\nNow old Rattler\u2019s dead and gone like all the good dogs do\nDon\u2019t put on the dog yourself or you\u2019ll be going there too",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Rattler was a good old dog as blind as he could be",
+        "But every night at suppertime I believe that dog could see"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Here Rattler here  here Rattler here",
+        "Call old Rattler from the barn here Rattler here"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rattler breaked the other night I thought he treed a coon",
+        "When I come to find him he\u2019s barkin\u2019 at the moon"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Rattler was a friendly dog even though he was blind",
+        "He wouldn\u2019t hurt a living thing he was so very kind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One night I saw a big fat coon climb into a tree",
+        "I called Ol\u2019 Rattler right away to fetch him down for me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But Rattler wouldn\u2019t fetch for me because he liked that coon",
+        "I saw them walking paw in paw later by the light of the moon"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Grandpa had a muley cow muley since she was born",
+        "It took a jaybird forty years to fly from horn to horn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now old Rattler\u2019s dead and gone like all the good dogs do",
+        "Don\u2019t put on the dog yourself or you\u2019ll be going there too"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

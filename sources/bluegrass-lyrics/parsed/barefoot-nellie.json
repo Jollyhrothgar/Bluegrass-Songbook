@@ -1,0 +1,49 @@
+{
+  "slug": "barefoot-nellie",
+  "title": "Barefoot Nellie",
+  "source_url": "https://www.bluegrasslyrics.com/song/barefoot-nellie/",
+  "raw_lyrics": "Redheaded pecker sittin\u2019 on a limb\nMa Chicken Nellie got a hen\nWrung his neck and plucked him clean\nFunniest chicken you ever seen\n\nHey Barefoot Nellie\nHo Barefoot Nellie\nHey Barefoot Nellie\nYou\u2019re the one for me.\n\nNellie went to town one day\nRidin\u2019 on a load of hay\nSold a man a trip to Mars\nAnd now she sits behind the bars.\n\nNell put on her Sunday dress\nMost of it was lookin\u2019 best\nMade out of an old feed sack\nPoppy wrote right on the back.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Redheaded pecker sittin\u2019 on a limb",
+        "Ma Chicken Nellie got a hen",
+        "Wrung his neck and plucked him clean",
+        "Funniest chicken you ever seen"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hey Barefoot Nellie",
+        "Ho Barefoot Nellie",
+        "Hey Barefoot Nellie",
+        "You\u2019re the one for me."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Nellie went to town one day",
+        "Ridin\u2019 on a load of hay",
+        "Sold a man a trip to Mars",
+        "And now she sits behind the bars."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Nell put on her Sunday dress",
+        "Most of it was lookin\u2019 best",
+        "Made out of an old feed sack",
+        "Poppy wrote right on the back."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

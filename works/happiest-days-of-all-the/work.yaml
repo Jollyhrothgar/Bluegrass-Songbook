@@ -1,0 +1,11 @@
+id: happiest-days-of-all-the
+title: Happiest Days Of All, The
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/happiest-days-of-all-the/
+      imported_at: '2026-02-08'

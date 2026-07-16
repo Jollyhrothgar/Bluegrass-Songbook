@@ -1,0 +1,11 @@
+id: at-the-end-of-a-long-lonely-day
+title: At The End Of A Long Lonely Day
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/at-the-end-of-a-long-lonely-day/
+      imported_at: '2026-02-08'

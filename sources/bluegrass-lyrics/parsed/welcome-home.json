@@ -1,0 +1,39 @@
+{
+  "slug": "welcome-home",
+  "title": "Welcome Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/welcome-home/",
+  "raw_lyrics": "Today I got the letter that you wrote me\nYou told me soon that you\u2019d be coming home\nYou ask me to forgive and said you loved me\nAnd said you missed me so since you\u2019ve been gone\n\nI guess I\u2019m just a fool but I\u2019m so lonely\nIf only for a while you would be true\nYes welcome home my darling I\u2019ll be waiting\nThe welcome mat is on the step for you\n\nMy friends all say I\u2019m crazy to forgive you\nBut they\u2019re not faced with sorrow such as mine\nNow just the thoughts of having you back home dear\nIs making me feel better all the time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Today I got the letter that you wrote me",
+        "You told me soon that you\u2019d be coming home",
+        "You ask me to forgive and said you loved me",
+        "And said you missed me so since you\u2019ve been gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I guess I\u2019m just a fool but I\u2019m so lonely",
+        "If only for a while you would be true",
+        "Yes welcome home my darling I\u2019ll be waiting",
+        "The welcome mat is on the step for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My friends all say I\u2019m crazy to forgive you",
+        "But they\u2019re not faced with sorrow such as mine",
+        "Now just the thoughts of having you back home dear",
+        "Is making me feel better all the time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

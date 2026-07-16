@@ -1,0 +1,11 @@
+id: jim-blakes-message
+title: Jim Blake’s Message
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/jim-blakes-message/
+      imported_at: '2026-02-08'

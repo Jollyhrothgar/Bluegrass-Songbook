@@ -1,0 +1,39 @@
+{
+  "slug": "i-wonder-how-the-old-folks-are-at-home",
+  "title": "I Wonder How The Old Folks Are At Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-wonder-how-the-old-folks-are-at-home/",
+  "raw_lyrics": "Well I wonder how the old folks are at home\nI wonder if they miss me while I roam\nI wonder if they pray for the boy who went away\nAnd left his dear old parents all alone\n\nYou could hear the cattle lowing in the lane\nYou could see the fields of blue grass where I\u2019ve grown\nYou could almost hear them cry as they kissed their boy goodbye\nWell I wonder how the old folks are at home\n\nJust a village and a homestead on the farm\nAnd a mother\u2019s love to shield you from all harm\nA mother\u2019s love so true a sweetheart that loves you\nA village and a homestead on the farm",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well I wonder how the old folks are at home",
+        "I wonder if they miss me while I roam",
+        "I wonder if they pray for the boy who went away",
+        "And left his dear old parents all alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You could hear the cattle lowing in the lane",
+        "You could see the fields of blue grass where I\u2019ve grown",
+        "You could almost hear them cry as they kissed their boy goodbye",
+        "Well I wonder how the old folks are at home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Just a village and a homestead on the farm",
+        "And a mother\u2019s love to shield you from all harm",
+        "A mother\u2019s love so true a sweetheart that loves you",
+        "A village and a homestead on the farm"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "linda-lou",
+  "title": "Linda Lou",
+  "source_url": "https://www.bluegrasslyrics.com/song/linda-lou/",
+  "raw_lyrics": "In the state of West Virginia among the peaceful rolling hills\nThere I met a mountain maid with eyes of blue\nGolden hair so soft and curly and her lips were like the dew\nShe was the queen of West Virginia and her name was Linda Lou\n\nLinda Lou my Linda Lou can\u2019t you hear me calling you\nCalling like a lonesome dove my Linda Lou\nWhen the moon is in the blue and the stars are shining too\nCan\u2019t you hear my lonely heart calling for you Linda Lou\n\nI recall the night I met her how I held her hand in mine\nI recall the night we kissed and bid adieu\nMany miles may separate us if I should cross the ocean blue\nMy heart is still in West Virginia with my darling Linda Lou",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In the state of West Virginia among the peaceful rolling hills",
+        "There I met a mountain maid with eyes of blue",
+        "Golden hair so soft and curly and her lips were like the dew",
+        "She was the queen of West Virginia and her name was Linda Lou"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Linda Lou my Linda Lou can\u2019t you hear me calling you",
+        "Calling like a lonesome dove my Linda Lou",
+        "When the moon is in the blue and the stars are shining too",
+        "Can\u2019t you hear my lonely heart calling for you Linda Lou"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I recall the night I met her how I held her hand in mine",
+        "I recall the night we kissed and bid adieu",
+        "Many miles may separate us if I should cross the ocean blue",
+        "My heart is still in West Virginia with my darling Linda Lou"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

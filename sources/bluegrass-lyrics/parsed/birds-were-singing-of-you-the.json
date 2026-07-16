@@ -1,0 +1,69 @@
+{
+  "slug": "birds-were-singing-of-you-the",
+  "title": "Birds Were Singing Of You, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/birds-were-singing-of-you-the/",
+  "raw_lyrics": "Last night the pale moon was shining\nLast night when all was still\nI wandered alone in sadness\nOut among the woodland hills\n\nI heard the birds a-singing\nOut among the trees and views\nAnd every bird, my darling\nWas singing, was singing of you\n\nWas singing, singing of you, my love\nWas singing, was singing of you\nAnd every bird, my darling\nWas singing, was singing of you\n\nI think of you in the daytime\nI dream of you at night\nI wake and wish you were here, love,\nAnd tears are blinding my sight\n\nThe flowers that slumber so sweetly\nThe stars above the blue\nOh heaven itself, my darling\nIs thinking, is thinking of you\n\nI open my window so gently\nAnd look on the dreamy view\nThe world itself, my darling\nIs sighing, is sighing for you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Last night the pale moon was shining",
+        "Last night when all was still",
+        "I wandered alone in sadness",
+        "Out among the woodland hills"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I heard the birds a-singing",
+        "Out among the trees and views",
+        "And every bird, my darling",
+        "Was singing, was singing of you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Was singing, singing of you, my love",
+        "Was singing, was singing of you",
+        "And every bird, my darling",
+        "Was singing, was singing of you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I think of you in the daytime",
+        "I dream of you at night",
+        "I wake and wish you were here, love,",
+        "And tears are blinding my sight"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The flowers that slumber so sweetly",
+        "The stars above the blue",
+        "Oh heaven itself, my darling",
+        "Is thinking, is thinking of you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I open my window so gently",
+        "And look on the dreamy view",
+        "The world itself, my darling",
+        "Is sighing, is sighing for you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

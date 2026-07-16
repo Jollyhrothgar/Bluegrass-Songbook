@@ -1,0 +1,59 @@
+{
+  "slug": "black-jack-davey",
+  "title": "Black Jack Davey",
+  "source_url": "https://www.bluegrasslyrics.com/song/black-jack-davey/",
+  "raw_lyrics": "Black Jack Davey come a running through the woods\nSinging so loud and gaily\nMade the hills a round him ring\nThen charmed the heart of a lady, charmed the heart of a lady\n\nHow old are you my pretty little miss\nHow old are you my honey\nAnswered him with a philly and a smile\nI\u2019ll be sixteen next Sunday, be sixteen next Sunday\n\nCome go with me my pretty little miss\nCome go with me my honey\nI\u2019ll take you across the deep blue sea\nWhere you never shall want for money, never shall want for money\n\nShe pulled off her high heeled shoes\nMade of Spanish leather\nShe put on her low heeled shoes\nAnd they both went off together, both went off together\n\nLast night I lay on a warm feather bed\nSide my husband and baby\nToday I lay on the cold, cold ground\nSide of Black Jack Davey, side of Black Jack Davey",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Black Jack Davey come a running through the woods",
+        "Singing so loud and gaily",
+        "Made the hills a round him ring",
+        "Then charmed the heart of a lady, charmed the heart of a lady"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "How old are you my pretty little miss",
+        "How old are you my honey",
+        "Answered him with a philly and a smile",
+        "I\u2019ll be sixteen next Sunday, be sixteen next Sunday"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come go with me my pretty little miss",
+        "Come go with me my honey",
+        "I\u2019ll take you across the deep blue sea",
+        "Where you never shall want for money, never shall want for money"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She pulled off her high heeled shoes",
+        "Made of Spanish leather",
+        "She put on her low heeled shoes",
+        "And they both went off together, both went off together"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Last night I lay on a warm feather bed",
+        "Side my husband and baby",
+        "Today I lay on the cold, cold ground",
+        "Side of Black Jack Davey, side of Black Jack Davey"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

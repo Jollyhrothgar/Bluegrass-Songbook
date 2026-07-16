@@ -1,0 +1,39 @@
+{
+  "slug": "take-my-hand-and-tell-me-2",
+  "title": "Take My Hand and Tell Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/take-my-hand-and-tell-me-2/",
+  "raw_lyrics": "Take my hand and tell me what I want to know\nWon\u2019t you ease my worried mind you know I love you so\nTomorrow they will come and take me far away\nWill you keep me in your heart as you\u2019re in mine today\n\nThose prison bars are gonna hold me for a time\nThe only way to stand the pain is knowing that you\u2019re mine\nThough you may hold another please keep your heart for me\nSomeday I\u2019ll come back to you your love will set me free\n\nThe days ahead won\u2019t seem so bad with loving thoughts of you\nThe lonely nights won\u2019t seem so long with tender dreams so true\nI need your love to treasure as I slowly do my time\nSo take me in your lovin\u2019 arms and tell me one more time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Take my hand and tell me what I want to know",
+        "Won\u2019t you ease my worried mind you know I love you so",
+        "Tomorrow they will come and take me far away",
+        "Will you keep me in your heart as you\u2019re in mine today"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Those prison bars are gonna hold me for a time",
+        "The only way to stand the pain is knowing that you\u2019re mine",
+        "Though you may hold another please keep your heart for me",
+        "Someday I\u2019ll come back to you your love will set me free"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The days ahead won\u2019t seem so bad with loving thoughts of you",
+        "The lonely nights won\u2019t seem so long with tender dreams so true",
+        "I need your love to treasure as I slowly do my time",
+        "So take me in your lovin\u2019 arms and tell me one more time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

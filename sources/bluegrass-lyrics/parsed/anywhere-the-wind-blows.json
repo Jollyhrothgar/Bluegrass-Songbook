@@ -1,0 +1,65 @@
+{
+  "slug": "anywhere-the-wind-blows",
+  "title": "Anywhere The Wind Blows",
+  "source_url": "https://www.bluegrasslyrics.com/song/anywhere-the-wind-blows/",
+  "raw_lyrics": "Anywhere the wind blows\nthats the way your heart goes\nThere is no warmth or fireside glow\nto keep your love at home\nSeems like anybody knows\nenough to keep your loved ones home\nyet you\u2019re still a rolling stone\nspending too much time alone\n\nThose lovers living far away\nonly hear the words you want to say\nThey don\u2019t make you get inside that place\nyou kept locked up for so long\nwhat if someone thanks you everyday\ntook the best and worst and still she stayed\nwould you tend that garden come what may\nor would you still find something wrong\n\nAnyway\u2026..\n\nIf absence makes your heart grow fonder\nmaybe even more you\u2019ll want to wander\n\u2019cause time stands still when you\u2019re around her\nand the real world rushes in\nbut if absence makes your heart grow colder\nthen you\u2019re gonna cry on my shoulder\nand think of things you might have told her\nand sweet things that might have been\n\nAnyway..\u2026",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Anywhere the wind blows",
+        "thats the way your heart goes",
+        "There is no warmth or fireside glow",
+        "to keep your love at home",
+        "Seems like anybody knows",
+        "enough to keep your loved ones home",
+        "yet you\u2019re still a rolling stone",
+        "spending too much time alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Those lovers living far away",
+        "only hear the words you want to say",
+        "They don\u2019t make you get inside that place",
+        "you kept locked up for so long",
+        "what if someone thanks you everyday",
+        "took the best and worst and still she stayed",
+        "would you tend that garden come what may",
+        "or would you still find something wrong"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Anyway\u2026.."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If absence makes your heart grow fonder",
+        "maybe even more you\u2019ll want to wander",
+        "\u2019cause time stands still when you\u2019re around her",
+        "and the real world rushes in",
+        "but if absence makes your heart grow colder",
+        "then you\u2019re gonna cry on my shoulder",
+        "and think of things you might have told her",
+        "and sweet things that might have been"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Anyway..\u2026"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

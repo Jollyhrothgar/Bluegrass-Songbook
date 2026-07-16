@@ -1,0 +1,56 @@
+{
+  "slug": "beautiful-star-of-bethlehem",
+  "title": "Beautiful Star Of Bethlehem",
+  "source_url": "https://www.bluegrasslyrics.com/song/beautiful-star-of-bethlehem/",
+  "raw_lyrics": "Oh Beautiful Star of Bethlehem\nShining afar through shadows dim\nGiving the light for those who long have gone\nGuiding the wise men on their way\nUnto the place where Jesus lay\nOh Beautiful Star of Bethlehem shine on.\n\nOh Beautiful Star  of Bethlehem\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0(Star of Bethlehem)\nShine upon us until the glory dawns.\nGive us a light to guide the way\nUnto the land of perfect day\nOh Beautiful Star of Bethlehem, shine on (shine on)\n\nOh Beautiful Star the hope of light\nGuiding the pilgrims through the night\nOver the mountains till the break of dawn\nInto the light of perfect day\nIt will give out a lovely ray\nOh Beautiful Star of Bethlehem shine on (shine on)\n\nOh Beautiful Star the hope of rest\nFor the redeemed  the good and blessed\nYonder in glory when the crown is won\nJesus is now the star divine\nBrighter and brighter he will shine\nOh Beautiful Star of Bethlehem shine on (shine on)",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Beautiful Star of Bethlehem",
+        "Shining afar through shadows dim",
+        "Giving the light for those who long have gone",
+        "Guiding the wise men on their way",
+        "Unto the place where Jesus lay",
+        "Oh Beautiful Star of Bethlehem shine on."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh Beautiful Star  of Bethlehem\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0(Star of Bethlehem)",
+        "Shine upon us until the glory dawns.",
+        "Give us a light to guide the way",
+        "Unto the land of perfect day",
+        "Oh Beautiful Star of Bethlehem, shine on (shine on)"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Beautiful Star the hope of light",
+        "Guiding the pilgrims through the night",
+        "Over the mountains till the break of dawn",
+        "Into the light of perfect day",
+        "It will give out a lovely ray",
+        "Oh Beautiful Star of Bethlehem shine on (shine on)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh Beautiful Star the hope of rest",
+        "For the redeemed  the good and blessed",
+        "Yonder in glory when the crown is won",
+        "Jesus is now the star divine",
+        "Brighter and brighter he will shine",
+        "Oh Beautiful Star of Bethlehem shine on (shine on)"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "i-hear-a-choo-choo",
+  "title": "I Hear A Choo Choo",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-hear-a-choo-choo/",
+  "raw_lyrics": "I hear a choo choo coming\nIt\u2019s coming down the track\nIt\u2019s taking away my darling\nNever to bring her back\n\nMy darling left me this morning\nShe left me feeling so blue\nI\u2019m a going to roll, rock, and ramble\nTry to forget all about you\n\nI know I can\u2019t forget her\nSo I won\u2019t ever try\nI\u2019ll go through life a wondering\nUntil the day I die",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I hear a choo choo coming",
+        "It\u2019s coming down the track",
+        "It\u2019s taking away my darling",
+        "Never to bring her back"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My darling left me this morning",
+        "She left me feeling so blue",
+        "I\u2019m a going to roll, rock, and ramble",
+        "Try to forget all about you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know I can\u2019t forget her",
+        "So I won\u2019t ever try",
+        "I\u2019ll go through life a wondering",
+        "Until the day I die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "highway-of-sorrow",
+  "title": "Highway Of Sorrow",
+  "source_url": "https://www.bluegrasslyrics.com/song/highway-of-sorrow/",
+  "raw_lyrics": "I once had a darling wife kind,  true and sweet\nLife was so bright and gay everything complete\nBut I fell for another who led my life astray\nSo I\u2019ll live in sorrow till my dying day\n\nDown the highway of sorrow I\u2019m traveling alone\nI\u2019ve lost all my true friends I\u2019ve lost a happy home\nI\u2019m heading for destruction I\u2019m on the wrong track\nDown the highway of sorrow there\u2019s no turning back\n\nI went back to my darling  I got down on my knees\nI begged her with tear rimmed eyes to give my poor heart ease\nBut she was hurt so deeply she could not forgive\nSo I\u2019ll live in sorrow as I long as I live",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I once had a darling wife kind,  true and sweet",
+        "Life was so bright and gay everything complete",
+        "But I fell for another who led my life astray",
+        "So I\u2019ll live in sorrow till my dying day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Down the highway of sorrow I\u2019m traveling alone",
+        "I\u2019ve lost all my true friends I\u2019ve lost a happy home",
+        "I\u2019m heading for destruction I\u2019m on the wrong track",
+        "Down the highway of sorrow there\u2019s no turning back"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went back to my darling  I got down on my knees",
+        "I begged her with tear rimmed eyes to give my poor heart ease",
+        "But she was hurt so deeply she could not forgive",
+        "So I\u2019ll live in sorrow as I long as I live"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

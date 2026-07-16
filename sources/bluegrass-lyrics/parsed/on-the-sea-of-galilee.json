@@ -1,0 +1,51 @@
+{
+  "slug": "on-the-sea-of-galilee",
+  "title": "On The Sea Of Galilee",
+  "source_url": "https://www.bluegrasslyrics.com/song/on-the-sea-of-galilee/",
+  "raw_lyrics": "Am I a soldier of the cross\nA follower of the lamb\nAnd shall I fear to own His cause\nOr blush to speak His name\n\nOn the sea (the sea the sea)\nOf Galilee (of Galilee)\nMy Jesus is walking on the sea\nOn the sea (the sea the sea)\nOf Galilee (of Galilee)\nMy Jesus is walking on the sea\n\nMust I be carried to the sky\nOn flowery beds of ease\nWhile others false do win the prize\nAnd sail through bloody seas\n\nThere shall I take my weary soul\nIn seas of heavenly rest\nAnd not a wave of trouble roll\nAcross my peaceful breast",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Am I a soldier of the cross",
+        "A follower of the lamb",
+        "And shall I fear to own His cause",
+        "Or blush to speak His name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "On the sea (the sea the sea)",
+        "Of Galilee (of Galilee)",
+        "My Jesus is walking on the sea",
+        "On the sea (the sea the sea)",
+        "Of Galilee (of Galilee)",
+        "My Jesus is walking on the sea"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Must I be carried to the sky",
+        "On flowery beds of ease",
+        "While others false do win the prize",
+        "And sail through bloody seas"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There shall I take my weary soul",
+        "In seas of heavenly rest",
+        "And not a wave of trouble roll",
+        "Across my peaceful breast"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

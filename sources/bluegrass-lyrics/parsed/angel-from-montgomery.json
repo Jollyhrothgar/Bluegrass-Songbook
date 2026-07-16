@@ -1,0 +1,49 @@
+{
+  "slug": "angel-from-montgomery",
+  "title": "Angel From Montgomery",
+  "source_url": "https://www.bluegrasslyrics.com/song/angel-from-montgomery/",
+  "raw_lyrics": "Make me an angel that flies from Montgomery\nMake me a poster of an old rodeo\nJust give me one thing one thing I can hold on to\nTo believe in this livin\u2019 just a hard way to go\n\nI am an old man named after my father\nNow lady is another child who\u2019s grown old\nIf dreams were thunder and lightening was desire\nThis old house would have burned down a long time ago\n\nWhen I was a young man now I was a cowboy\nI weren\u2019t much to look at but a free ramblin\u2019 man\nBut that was a long time and no matter how much I try\nThose years just flow by like a broken down dam.\n\nThere\u2019s flies in the kitchen Lord I can hear\u2019em buzzin\u2019\nAin\u2019t done nothin\u2019 since I woke up today\nHow the hell can a person go to work in the mornin\u2019\nCome home in the evenin\u2019 and have nothin\u2019 to say?",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Make me an angel that flies from Montgomery",
+        "Make me a poster of an old rodeo",
+        "Just give me one thing one thing I can hold on to",
+        "To believe in this livin\u2019 just a hard way to go"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I am an old man named after my father",
+        "Now lady is another child who\u2019s grown old",
+        "If dreams were thunder and lightening was desire",
+        "This old house would have burned down a long time ago"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I was a young man now I was a cowboy",
+        "I weren\u2019t much to look at but a free ramblin\u2019 man",
+        "But that was a long time and no matter how much I try",
+        "Those years just flow by like a broken down dam."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s flies in the kitchen Lord I can hear\u2019em buzzin\u2019",
+        "Ain\u2019t done nothin\u2019 since I woke up today",
+        "How the hell can a person go to work in the mornin\u2019",
+        "Come home in the evenin\u2019 and have nothin\u2019 to say?"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

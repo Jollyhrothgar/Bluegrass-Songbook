@@ -1,0 +1,69 @@
+{
+  "slug": "danville-girl",
+  "title": "Danville Girl",
+  "source_url": "https://www.bluegrasslyrics.com/song/danville-girl/",
+  "raw_lyrics": "My pocket book was empty\nMy heart was full of pain\nTen thousand miles away from home\nBumming the railroad train\n\nIt was standing on the platform\nSmoking a cheep cigar\nlistening for that next freight train\nTo carry an empty car\n\nWell I got off at Danville\nGot stuck on the Danville girl\nYou bet your life she\u2019s out of sight\nShe wore those Danville curls\n\nShe took me in her Kitchen\nShe treated me nice and kind\nShe got me in the notion\nOf bumming all the time\n\nShe wore her hair on the back of her head\nLike high-tone people do\nBut the very next train come down the line\nI bid that girl adieu\n\nI pulled my cap down over my eyes\nWalked down to the track\nThen I caught a westbound freight\nNever did look back",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My pocket book was empty",
+        "My heart was full of pain",
+        "Ten thousand miles away from home",
+        "Bumming the railroad train"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It was standing on the platform",
+        "Smoking a cheep cigar",
+        "listening for that next freight train",
+        "To carry an empty car"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I got off at Danville",
+        "Got stuck on the Danville girl",
+        "You bet your life she\u2019s out of sight",
+        "She wore those Danville curls"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She took me in her Kitchen",
+        "She treated me nice and kind",
+        "She got me in the notion",
+        "Of bumming all the time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She wore her hair on the back of her head",
+        "Like high-tone people do",
+        "But the very next train come down the line",
+        "I bid that girl adieu"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I pulled my cap down over my eyes",
+        "Walked down to the track",
+        "Then I caught a westbound freight",
+        "Never did look back"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

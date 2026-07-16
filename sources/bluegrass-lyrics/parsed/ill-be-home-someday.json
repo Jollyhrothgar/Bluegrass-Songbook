@@ -1,0 +1,49 @@
+{
+  "slug": "ill-be-home-someday",
+  "title": "I\u2019ll Be Home Someday",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-be-home-someday/",
+  "raw_lyrics": "I was standing by the bedside of a neighbor\nWho was just about to cross the swelling tide\nI asked if she would do me a favor\nJust take a message to the other side\n\nIf you see my savior tell Him that you saw me\nWhen you saw me I was on my way\nYou may meet some old friends who may ask about me\nJust tell them I\u2019ll be home some day\n\nNow you\u2019ll have to take this journey on without me\nIt\u2019s a debt that soon or later must be paid\nIf you see my savior don\u2019t forget to tell Him\nDon\u2019t forget to tell him what I say\n\nYou may chance to see my father or my mother\nOr some friends who have gone before\nYou may chance to see my sister or my brother\nBut try to see my savior first of all",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was standing by the bedside of a neighbor",
+        "Who was just about to cross the swelling tide",
+        "I asked if she would do me a favor",
+        "Just take a message to the other side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you see my savior tell Him that you saw me",
+        "When you saw me I was on my way",
+        "You may meet some old friends who may ask about me",
+        "Just tell them I\u2019ll be home some day"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now you\u2019ll have to take this journey on without me",
+        "It\u2019s a debt that soon or later must be paid",
+        "If you see my savior don\u2019t forget to tell Him",
+        "Don\u2019t forget to tell him what I say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You may chance to see my father or my mother",
+        "Or some friends who have gone before",
+        "You may chance to see my sister or my brother",
+        "But try to see my savior first of all"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

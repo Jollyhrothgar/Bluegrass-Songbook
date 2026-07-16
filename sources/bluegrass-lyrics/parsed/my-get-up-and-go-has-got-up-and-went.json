@@ -1,0 +1,69 @@
+{
+  "slug": "my-get-up-and-go-has-got-up-and-went",
+  "title": "My Get Up And Go Has Got Up And Went",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-get-up-and-go-has-got-up-and-went/",
+  "raw_lyrics": "How do I know my youth is all spent?\nMy get up and go has got up and went\nIn spite of it all, I\u2019m able to grin\nWhen I think of the places my get up has been\n\nOld age is golden, I think I\u2019ve heard said\nBut sometimes I wonder as I crawl into bed\nMy ears in a drawer, my teeth in a cup\nMy eyes on the table until I wake up\n\nAs sleep dims my vision, I say to myself\nIs there anything else I should lay on the shelf?\nBut nations are warring and business is vexed\nSo I\u2019ll stick around to see what happens next\n\nWhen I was younger, my slippers were red\nI could kick up my heels right over my head\nWhen I was older my slippers were blue\nBut still I could dance the whole night thru\n\nNow I am old, my slippers are black\nI huff to the store and I puff my way back\nBut never you laugh, I don\u2019t mind at all\nI\u2019d rather be huffing than not puff at all\n\nI get up each morning and dust off my wits\nOpen the paper and read the obits\nIf I\u2019m not there, I know I\u2019m not dead\nSo I eat a good breakfast and go back to bed",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "How do I know my youth is all spent?",
+        "My get up and go has got up and went",
+        "In spite of it all, I\u2019m able to grin",
+        "When I think of the places my get up has been"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Old age is golden, I think I\u2019ve heard said",
+        "But sometimes I wonder as I crawl into bed",
+        "My ears in a drawer, my teeth in a cup",
+        "My eyes on the table until I wake up"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As sleep dims my vision, I say to myself",
+        "Is there anything else I should lay on the shelf?",
+        "But nations are warring and business is vexed",
+        "So I\u2019ll stick around to see what happens next"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I was younger, my slippers were red",
+        "I could kick up my heels right over my head",
+        "When I was older my slippers were blue",
+        "But still I could dance the whole night thru"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now I am old, my slippers are black",
+        "I huff to the store and I puff my way back",
+        "But never you laugh, I don\u2019t mind at all",
+        "I\u2019d rather be huffing than not puff at all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I get up each morning and dust off my wits",
+        "Open the paper and read the obits",
+        "If I\u2019m not there, I know I\u2019m not dead",
+        "So I eat a good breakfast and go back to bed"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

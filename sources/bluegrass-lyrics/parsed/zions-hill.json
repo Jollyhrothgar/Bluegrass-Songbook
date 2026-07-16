@@ -1,0 +1,39 @@
+{
+  "slug": "zions-hill",
+  "title": "Zion\u2019s Hill",
+  "source_url": "https://www.bluegrasslyrics.com/song/zions-hill/",
+  "raw_lyrics": "There awaits for me a glad tomorrow\nWhere the gates of pearl swing open wide\nAnd when I have passed this spell of sorrow\nI will camp upon the other side\n\nSomeday beyond the reach of mortal kin\nSomeday God only knows just where or when\nThe wills of mortal life will all stand still\nAnd I shall go dwell on Zion\u2019s Hill\n\nSomeday the storm clouds will be lifted\nBeyond the shadow of the tomb\nAnd with all the bells of Heaven ringing\nAnd the angels singing \u201cHome Sweet Home\u201d",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There awaits for me a glad tomorrow",
+        "Where the gates of pearl swing open wide",
+        "And when I have passed this spell of sorrow",
+        "I will camp upon the other side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Someday beyond the reach of mortal kin",
+        "Someday God only knows just where or when",
+        "The wills of mortal life will all stand still",
+        "And I shall go dwell on Zion\u2019s Hill"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Someday the storm clouds will be lifted",
+        "Beyond the shadow of the tomb",
+        "And with all the bells of Heaven ringing",
+        "And the angels singing \u201cHome Sweet Home\u201d"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

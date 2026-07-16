@@ -1,0 +1,59 @@
+{
+  "slug": "seven-years-blues",
+  "title": "Seven Years Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/seven-years-blues/",
+  "raw_lyrics": "Just seven years ago today\nWas when you said good-bye\nIt broke my heart to see you go\nAnd yet I could not cry\n\nYou kissed me sweet and said good-bye\nBut I could not believe\nThat you would ever make me cry\nUnwanted and to grieve\n\nThe sun is slowly sinking down\nTo make the close of day\nTo make the end of seven years\nThe ending of my way\n\nI had no one to stand by me\nTo count these bitter tears\nI could never live these awful blues\nAnother seven years\n\nI had waited seven years today\nTo see your face once more\nAnd if my life could be as long\nI\u2019d wait ten thousand more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Just seven years ago today",
+        "Was when you said good-bye",
+        "It broke my heart to see you go",
+        "And yet I could not cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You kissed me sweet and said good-bye",
+        "But I could not believe",
+        "That you would ever make me cry",
+        "Unwanted and to grieve"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sun is slowly sinking down",
+        "To make the close of day",
+        "To make the end of seven years",
+        "The ending of my way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had no one to stand by me",
+        "To count these bitter tears",
+        "I could never live these awful blues",
+        "Another seven years"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I had waited seven years today",
+        "To see your face once more",
+        "And if my life could be as long",
+        "I\u2019d wait ten thousand more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

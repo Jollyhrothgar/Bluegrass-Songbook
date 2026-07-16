@@ -1,0 +1,59 @@
+{
+  "slug": "save-it-save-it",
+  "title": "Save It ! Save It !",
+  "source_url": "https://www.bluegrasslyrics.com/song/save-it-save-it/",
+  "raw_lyrics": "Got anything good you better save it save it\nGot anything good you better save it save it\nGot anything good you better save it save it\nBaby I might need it some day\n\nThey say your cooking is the best in town\nEverybody\u2019s been talking around\nIf it\u2019s so I\u2019m a\u2019coming to town\nI\u2019ll let you turn my damper down\n\nYou roll your stockings to your knees\nStrut around dear as you please\nCuddle up like a turtle dove\nIf you don\u2019t stop you\u2019ll flub your dub\n\nThere\u2019ll come a day when you\u2019re old and gray\nWhen all your friends have strayed away\nThen I\u2019ll look at you and say\nYou had it but it got away\n\nNow stop your honky tonking around\nStop your painting up the town\nChange your way from what you did\nIf you don\u2019t stop I\u2019ll blow my lid",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Got anything good you better save it save it",
+        "Got anything good you better save it save it",
+        "Got anything good you better save it save it",
+        "Baby I might need it some day"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "They say your cooking is the best in town",
+        "Everybody\u2019s been talking around",
+        "If it\u2019s so I\u2019m a\u2019coming to town",
+        "I\u2019ll let you turn my damper down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You roll your stockings to your knees",
+        "Strut around dear as you please",
+        "Cuddle up like a turtle dove",
+        "If you don\u2019t stop you\u2019ll flub your dub"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019ll come a day when you\u2019re old and gray",
+        "When all your friends have strayed away",
+        "Then I\u2019ll look at you and say",
+        "You had it but it got away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now stop your honky tonking around",
+        "Stop your painting up the town",
+        "Change your way from what you did",
+        "If you don\u2019t stop I\u2019ll blow my lid"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

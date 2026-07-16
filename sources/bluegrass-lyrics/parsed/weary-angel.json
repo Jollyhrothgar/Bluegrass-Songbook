@@ -1,0 +1,49 @@
+{
+  "slug": "weary-angel",
+  "title": "Weary Angel",
+  "source_url": "https://www.bluegrasslyrics.com/song/weary-angel/",
+  "raw_lyrics": "Weary angel of death you\u2019ve claimed another\nOne so young and so very full of life\nYour cold cold hands have reached down to take my darlin\nweary angel of death you took my wife\n\nNow each day I wait for you to come and take me\nTo the place where my darlin is gone\nWon\u2019t your reach your icy fingers out to touch me\nWeary angel please don\u2019t make me wait too long\n\nDid you take her cause you needed her like I do\nWere you jealous of the love she showed for me\nI could never understand no other reason\nWhy I must live my life in misery\n\nUntil then I know in dreams I\u2019ll still see her\nFor death has only made me love her more\nAnd I know I\u2019ll be ready to go with her\nWeary angel when you knock upon my door",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Weary angel of death you\u2019ve claimed another",
+        "One so young and so very full of life",
+        "Your cold cold hands have reached down to take my darlin",
+        "weary angel of death you took my wife"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Now each day I wait for you to come and take me",
+        "To the place where my darlin is gone",
+        "Won\u2019t your reach your icy fingers out to touch me",
+        "Weary angel please don\u2019t make me wait too long"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Did you take her cause you needed her like I do",
+        "Were you jealous of the love she showed for me",
+        "I could never understand no other reason",
+        "Why I must live my life in misery"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Until then I know in dreams I\u2019ll still see her",
+        "For death has only made me love her more",
+        "And I know I\u2019ll be ready to go with her",
+        "Weary angel when you knock upon my door"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

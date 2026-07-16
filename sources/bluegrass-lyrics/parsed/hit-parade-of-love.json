@@ -1,0 +1,49 @@
+{
+  "slug": "hit-parade-of-love",
+  "title": "Hit Parade Of Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/hit-parade-of-love/",
+  "raw_lyrics": "From what I\u2019ve been a hearing dear you\u2019ve really got it made\nYou\u2019ve got a lot of fellers on your lover\u2019s hit parade\nIf I can\u2019t be your number one I don\u2019t know what I\u2019ll do\nGonna be plumb up to the top I\u2019m so in love with you\n\nOn the hit parade of love I know I\u2019ll never stop\nI\u2019ve got a long long way to climb before I reach top\nBut if I do get there soon I\u2019d really have it made\nThen I\u2019ll know I\u2019m number one your lover\u2019s hit parade\n\nNow it\u2019s your heart I\u2019m after \u2019cause it\u2019s so nice and kind\nAnother one to take your place would sure be hard to find\nSo put your arms around me dear and be my turtle dove\nThen I\u2019ll feel like I\u2019m number one on your hit parade of love\n\nNow if we work together like all good lovers should\nWe can make a go of it everything will turn out good\nWe will can so much fun we\u2019ll really have it made\nThen I\u2019ll know I\u2019m number one on your lover\u2019s hit parade",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "From what I\u2019ve been a hearing dear you\u2019ve really got it made",
+        "You\u2019ve got a lot of fellers on your lover\u2019s hit parade",
+        "If I can\u2019t be your number one I don\u2019t know what I\u2019ll do",
+        "Gonna be plumb up to the top I\u2019m so in love with you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "On the hit parade of love I know I\u2019ll never stop",
+        "I\u2019ve got a long long way to climb before I reach top",
+        "But if I do get there soon I\u2019d really have it made",
+        "Then I\u2019ll know I\u2019m number one your lover\u2019s hit parade"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now it\u2019s your heart I\u2019m after \u2019cause it\u2019s so nice and kind",
+        "Another one to take your place would sure be hard to find",
+        "So put your arms around me dear and be my turtle dove",
+        "Then I\u2019ll feel like I\u2019m number one on your hit parade of love"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now if we work together like all good lovers should",
+        "We can make a go of it everything will turn out good",
+        "We will can so much fun we\u2019ll really have it made",
+        "Then I\u2019ll know I\u2019m number one on your lover\u2019s hit parade"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

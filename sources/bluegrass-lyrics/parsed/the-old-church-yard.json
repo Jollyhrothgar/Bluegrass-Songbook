@@ -1,0 +1,59 @@
+{
+  "slug": "the-old-church-yard",
+  "title": "The Old Church Yard",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-old-church-yard/",
+  "raw_lyrics": "Come with me to the old church yard\nI know its path so well\nLet\u2019s all sit down under the pines\nThere\u2019s where my loved ones dwell\n\nDon\u2019t weep for them they\u2019re troubles are over\nAlthough sometimes it\u2019s hard\nThey\u2019re asleep in the Savior\u2019s care\nAt rest in the old church yard\n\nWhen I\u2019m laid to rest beneath the trees\nFrom sorrow then retire\nI\u2019ll rest in hope of that bright morn\nI\u2019ll awake in the old church yard\n\nDon\u2019t weep for me I\u2019m longing to go\nThe rest is my reward\nI\u2019ll arise with the ones I love\nArise in the old church yard\n\nCome with me to the old church yard\nI know its path so well\nLet\u2019s all kneel down and have a prayer\nFor there soon I will dwell",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Come with me to the old church yard",
+        "I know its path so well",
+        "Let\u2019s all sit down under the pines",
+        "There\u2019s where my loved ones dwell"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t weep for them they\u2019re troubles are over",
+        "Although sometimes it\u2019s hard",
+        "They\u2019re asleep in the Savior\u2019s care",
+        "At rest in the old church yard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I\u2019m laid to rest beneath the trees",
+        "From sorrow then retire",
+        "I\u2019ll rest in hope of that bright morn",
+        "I\u2019ll awake in the old church yard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t weep for me I\u2019m longing to go",
+        "The rest is my reward",
+        "I\u2019ll arise with the ones I love",
+        "Arise in the old church yard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come with me to the old church yard",
+        "I know its path so well",
+        "Let\u2019s all kneel down and have a prayer",
+        "For there soon I will dwell"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

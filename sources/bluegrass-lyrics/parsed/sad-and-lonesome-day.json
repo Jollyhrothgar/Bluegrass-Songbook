@@ -1,0 +1,59 @@
+{
+  "slug": "sad-and-lonesome-day",
+  "title": "Sad And Lonesome Day",
+  "source_url": "https://www.bluegrasslyrics.com/song/sad-and-lonesome-day/",
+  "raw_lyrics": "Today has been a lonesome day\nToday has been a lonesome day\nToday has been a lonesome day\nAnd tomorrow \u2018s gonna be the same old way\n\nOh, they carried my mother to the burying ground\nOh, they carried my mother to the burying ground\nOh, they carried my mother to the burying ground\nI watched as the bearers let her down\n\nDid you ever hear a church bell tone\nDid you ever hear a church bell tone\nDid you ever hear a church bell tone\nYou may know by that she\u2019s dead and gone\n\nOh, dig my grave with a silver spade\nOh, dig my grave with a silver spade\nOh, dig my grave with a silver spade\nAnd mark the place where I must lay\n\nThere\u2019s one kind favor I ask of you\nThere\u2019s one kind favor I ask of you\nThere\u2019s one kind favor I ask of you\nSee that my grave is kept green",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Today has been a lonesome day",
+        "Today has been a lonesome day",
+        "Today has been a lonesome day",
+        "And tomorrow \u2018s gonna be the same old way"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, they carried my mother to the burying ground",
+        "Oh, they carried my mother to the burying ground",
+        "Oh, they carried my mother to the burying ground",
+        "I watched as the bearers let her down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Did you ever hear a church bell tone",
+        "Did you ever hear a church bell tone",
+        "Did you ever hear a church bell tone",
+        "You may know by that she\u2019s dead and gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh, dig my grave with a silver spade",
+        "Oh, dig my grave with a silver spade",
+        "Oh, dig my grave with a silver spade",
+        "And mark the place where I must lay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s one kind favor I ask of you",
+        "There\u2019s one kind favor I ask of you",
+        "There\u2019s one kind favor I ask of you",
+        "See that my grave is kept green"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "give-me-the-roses-while-i-live",
+  "title": "Give Me The Roses While I Live",
+  "source_url": "https://www.bluegrasslyrics.com/song/give-me-the-roses-while-i-live/",
+  "raw_lyrics": "Wonderful things of folks are said\nWhen they have passed away\nRoses adorn the narrow bed\nOver the sleeping clay\n\nGive me the roses while I live\nTrying to cheer me on\nUseless are flowers that you give\nAfter the soul is gone\n\nKind words are useless when folks lie\nCold in a narrow bed\nDon\u2019t wait till death to speak kind words\nNow should the words be said\n\nLet us not wait to do good deeds\nTill they have passed away\nNow is the time to sow good seeds\nWhile here on earth we stay",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Wonderful things of folks are said",
+        "When they have passed away",
+        "Roses adorn the narrow bed",
+        "Over the sleeping clay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Give me the roses while I live",
+        "Trying to cheer me on",
+        "Useless are flowers that you give",
+        "After the soul is gone"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Kind words are useless when folks lie",
+        "Cold in a narrow bed",
+        "Don\u2019t wait till death to speak kind words",
+        "Now should the words be said"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Let us not wait to do good deeds",
+        "Till they have passed away",
+        "Now is the time to sow good seeds",
+        "While here on earth we stay"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

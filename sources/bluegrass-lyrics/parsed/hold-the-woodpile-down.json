@@ -1,0 +1,75 @@
+{
+  "slug": "hold-the-woodpile-down",
+  "title": "Hold the Woodpile Down",
+  "source_url": "https://www.bluegrasslyrics.com/song/hold-the-woodpile-down/",
+  "raw_lyrics": "Went to see my love the other night\nHold the woodpile down\nEverything was wrong and nothing was right\nHold the woodpile down\nShe hit me a little bit, it made me glad\nHold the woodpile down\nI kissed her once she said \u201chere comes my dad\u201d\nHold the woodpile down\n\nLord, I was travelin\u2019, travelin\u2019\nAs long as the world goes round\nPretty gal shine on the Georgia line\nHold the woodpile down\n\nWhen I went to town the other night\nHold the woodpile down\nI heard a little noise and seen a big fight\nHold the woodpile down\nThere\u2019s a lot of policemen running around\nHold the woodpile down\nBig load of moonshine came to town\nHold the woodpile down\n\nI went down to the packing house and stole a ham\nHold the woodpile down\nNobody don\u2019t know how mean I am\nHold the woodpile down\nI took it right home and laid it on the shelf\nHold the woodpile down\nI\u2019m so mean I\u2019m afraid of myself\nHold the woodpile down\n\nA bookkeeper swallowed a nickel one day\nHold the woodpile down\nWell I drove him crazy, so they say\nHold the woodpile down\nJust listen and I\u2019ll tell you what it\u2019s all about\nHold the woodpile down\nIt\u2019s a nickel in and a nickel out\nHold the woodpile down",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Went to see my love the other night",
+        "Hold the woodpile down",
+        "Everything was wrong and nothing was right",
+        "Hold the woodpile down",
+        "She hit me a little bit, it made me glad",
+        "Hold the woodpile down",
+        "I kissed her once she said \u201chere comes my dad\u201d",
+        "Hold the woodpile down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Lord, I was travelin\u2019, travelin\u2019",
+        "As long as the world goes round",
+        "Pretty gal shine on the Georgia line",
+        "Hold the woodpile down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I went to town the other night",
+        "Hold the woodpile down",
+        "I heard a little noise and seen a big fight",
+        "Hold the woodpile down",
+        "There\u2019s a lot of policemen running around",
+        "Hold the woodpile down",
+        "Big load of moonshine came to town",
+        "Hold the woodpile down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I went down to the packing house and stole a ham",
+        "Hold the woodpile down",
+        "Nobody don\u2019t know how mean I am",
+        "Hold the woodpile down",
+        "I took it right home and laid it on the shelf",
+        "Hold the woodpile down",
+        "I\u2019m so mean I\u2019m afraid of myself",
+        "Hold the woodpile down"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A bookkeeper swallowed a nickel one day",
+        "Hold the woodpile down",
+        "Well I drove him crazy, so they say",
+        "Hold the woodpile down",
+        "Just listen and I\u2019ll tell you what it\u2019s all about",
+        "Hold the woodpile down",
+        "It\u2019s a nickel in and a nickel out",
+        "Hold the woodpile down"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

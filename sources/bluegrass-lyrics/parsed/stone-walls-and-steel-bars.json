@@ -1,0 +1,37 @@
+{
+  "slug": "stone-walls-and-steel-bars",
+  "title": "Stone Walls And Steel Bars",
+  "source_url": "https://www.bluegrasslyrics.com/song/stone-walls-and-steel-bars/",
+  "raw_lyrics": "Stone walls and steel bars a love on my mind\nI\u2019m a three time loser I\u2019m long gone this time\n\nJealousy has took my young life\nAll for the love of another man\u2019s wife\nBut I\u2019ve had it coming I\u2019ve known all the time\nNo more stone walls and steel bars and you on my mind\n\nGray-haired warden deep Frisco Bay\nGuards all around me leading my way\nBut I\u2019ve had it coming at the end of the line\nNo more stone walls and steel bars and you on my mind",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Stone walls and steel bars a love on my mind",
+        "I\u2019m a three time loser I\u2019m long gone this time"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Jealousy has took my young life",
+        "All for the love of another man\u2019s wife",
+        "But I\u2019ve had it coming I\u2019ve known all the time",
+        "No more stone walls and steel bars and you on my mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Gray-haired warden deep Frisco Bay",
+        "Guards all around me leading my way",
+        "But I\u2019ve had it coming at the end of the line",
+        "No more stone walls and steel bars and you on my mind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

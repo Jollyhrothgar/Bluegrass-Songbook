@@ -1,0 +1,39 @@
+{
+  "slug": "waves-on-the-sea",
+  "title": "Waves On The Sea",
+  "source_url": "https://www.bluegrasslyrics.com/song/waves-on-the-sea/",
+  "raw_lyrics": "Oh, the waves on the sea, how they roll\nAnd the chilly winds, how they do blow;\nMy own true love got drownded in the deep\nAnd the ship never got to the shore\n\nOh the first on the deck was the porter of the ship\nAnd a rough-looking fellow was he;\nSays, \u201d I care no more for my wife and my child\nThan I do for the fish in the sea\u201d\n\nWell, I left my dear darling a-grieving\nWell, I left my dear darling a-grieving\nWell, I left my dear darling a-grieving after me\nFor I never expect to see her any more",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, the waves on the sea, how they roll",
+        "And the chilly winds, how they do blow;",
+        "My own true love got drownded in the deep",
+        "And the ship never got to the shore"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the first on the deck was the porter of the ship",
+        "And a rough-looking fellow was he;",
+        "Says, \u201d I care no more for my wife and my child",
+        "Than I do for the fish in the sea\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well, I left my dear darling a-grieving",
+        "Well, I left my dear darling a-grieving",
+        "Well, I left my dear darling a-grieving after me",
+        "For I never expect to see her any more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

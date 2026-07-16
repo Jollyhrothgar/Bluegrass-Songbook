@@ -1,0 +1,49 @@
+{
+  "slug": "my-old-cottage-home",
+  "title": "My Old Cottage Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-old-cottage-home/",
+  "raw_lyrics": "I am thinking tonight of an old cottage home\nThat stands on the brow of the hill\nWhere in life\u2019s early morning I once loved to roam\nBut now all is quiet and still\n\nOh my old cottage home my old cottage home\nThat stands on the brow of the hill\nWhere in life\u2019s early morning I once loved to roam\nBut now all is quiet and still\n\nMany years have gone by since in prayer there I knelt\nWith dear ones around the old hearth\nBut my mother\u2019s sweet prayers in my heart still are felt\nI\u2019ll treasure them awhile on earth\n\nOne by one they have gone from the old cottage home\nOn earth we shall see them no more\nBut we\u2019ll meet them again on that beautiful shore\nWhere partings will come never more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am thinking tonight of an old cottage home",
+        "That stands on the brow of the hill",
+        "Where in life\u2019s early morning I once loved to roam",
+        "But now all is quiet and still"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh my old cottage home my old cottage home",
+        "That stands on the brow of the hill",
+        "Where in life\u2019s early morning I once loved to roam",
+        "But now all is quiet and still"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Many years have gone by since in prayer there I knelt",
+        "With dear ones around the old hearth",
+        "But my mother\u2019s sweet prayers in my heart still are felt",
+        "I\u2019ll treasure them awhile on earth"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "One by one they have gone from the old cottage home",
+        "On earth we shall see them no more",
+        "But we\u2019ll meet them again on that beautiful shore",
+        "Where partings will come never more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

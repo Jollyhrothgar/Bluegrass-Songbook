@@ -1,5 +1,8 @@
-// WorkView - Display works with multiple parts (lead sheets, tablature, etc.)
+// WorkView - Dashboard for works showing available parts, bounties, and metadata
 // Part of the works architecture refactor
+//
+// Principle: Song-view renders songs. Tab renderers render tabs.
+// Work-view is a dashboard that links to them.
 
 import {
     allSongs,
@@ -8,18 +11,26 @@ import {
     currentChordpro, setCurrentChordpro,
     loadedTablature, setLoadedTablature,
     tablaturePlayer, setTablaturePlayer,
-    compactMode, nashvilleMode, chordDisplayMode, showSectionLabels,
-    fontSizeLevel, FONT_SIZES,
     currentDetectedKey, setCurrentDetectedKey,
     originalDetectedKey, setOriginalDetectedKey,
     originalDetectedMode, setOriginalDetectedMode,
-    fullscreenMode,
-    setCurrentView
+    fullscreenMode, setFullscreenMode,
+    listContext, setListContext,
+    setCurrentView,
+    resolveWorkId,
+    getBountiesForWork
 } from './state.js';
 
-import { parseChordPro, showVersionPicker } from './song-view.js';
+import {
+    parseChordPro, showVersionPicker,
+    openSong,
+    toggleFullscreen, exitFullscreen,
+    navigatePrev, navigateNext,
+    updateFocusHeader, updateNavBar
+} from './song-view.js';
 import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
-import { escapeHtml, partUsesSongActions } from './utils.js';
+import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify, parseItemRef } from './utils.js';
+import { openAddSongPicker } from './add-song-picker.js';
 import {
     TabRenderer, TabPlayer, INSTRUMENT_ICONS,
     TimelineTiming, identityTimeline, readingListTimeline,
@@ -27,6 +38,7 @@ import {
     maxMeasureIn, measureTimingFromOtf,
     analyzeReadingList, prepareCompactNotation,
 } from './renderers/index.js';
+import { clearListView } from './lists.js';
 import { getTagCategory, formatTagName } from './tags.js';
 import {
     attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
@@ -74,6 +86,30 @@ function destroyTrackRenderers() {
     trackRenderers = {};
 }
 
+let inlineExpanded = false;      // true = showing a part inline (tab/doc), false = showing dashboard
+let currentGroupVersions = [];   // All versions in the current group (for version cards)
+
+/**
+ * Pick the best representative version from a group for display.
+ * Prefers: version with content > most chords > highest canonical_rank.
+ */
+function pickRepresentative(versions) {
+    if (versions.length === 0) return null;
+    if (versions.length === 1) return versions[0];
+    return [...versions].sort((a, b) => {
+        const aHasContent = a.content ? 1 : 0;
+        const bHasContent = b.content ? 1 : 0;
+        if (aHasContent !== bHasContent) return bHasContent - aHasContent;
+        const aChords = a.chord_count || 0;
+        const bChords = b.chord_count || 0;
+        if (aChords !== bChords) return bChords - aChords;
+        return (b.canonical_rank || 0) - (a.canonical_rank || 0);
+    })[0];
+}
+
+// Getter for checking if we're in work view
+export function getCurrentWork() { return currentWork; }
+
 // ============================================
 // NOTATION HELPERS
 // ============================================
@@ -100,16 +136,15 @@ function buildOtfTimings(otf, compact) {
 // ============================================
 
 /**
- * Build the parts list from index data
- * The index has: content (ChordPro), tablature_parts (array)
+ * Build the parts list from index data.
+ * Each part gets a unique `partId` slug derived from its label,
+ * used in URLs (#work/{id}/{partId}) and list references.
  */
 function buildPartsFromIndex(song) {
     const parts = [];
 
-    // Lead sheet from content
     if (song.content) {
-        // Use "Fiddle" label for tunes with ABC notation
-        const label = song.abc_content ? 'Fiddle' : 'Lead Sheet';
+        const label = song.abc_content ? 'Fiddle' : 'Lyrics & Chords';
         parts.push({
             type: 'lead-sheet',
             format: 'chordpro',
@@ -119,7 +154,6 @@ function buildPartsFromIndex(song) {
         });
     }
 
-    // Tablature parts
     if (song.tablature_parts) {
         for (const tab of song.tablature_parts) {
             parts.push({
@@ -128,8 +162,7 @@ function buildPartsFromIndex(song) {
                 instrument: tab.instrument,
                 label: tab.label || `${tab.instrument} Tab`,
                 file: tab.file,
-                default: !song.content,  // Default if no lead sheet
-                // Provenance info for attribution
+                default: !song.content,
                 source: tab.source,
                 source_id: tab.source_id,
                 author: tab.author,
@@ -139,6 +172,38 @@ function buildPartsFromIndex(song) {
         }
     }
 
+    if (song.document_parts) {
+        for (const doc of song.document_parts) {
+            parts.push({
+                type: 'document',
+                format: doc.format || 'pdf',
+                label: doc.label || 'PDF',
+                file: doc.file,
+                default: !song.content && !song.tablature_parts?.length,
+            });
+        }
+    }
+
+    const pending = window.__pendingDocuments?.[song.id];
+    if (pending && !song.document_parts?.length) {
+        parts.push({
+            type: 'document',
+            format: 'pdf',
+            label: pending.label || 'PDF',
+            file: pending.url,
+            default: parts.length === 0,
+            pending: true,
+        });
+    }
+
+    // Assign unique partId slugs (deduplicate by appending -2, -3, etc.)
+    const slugCounts = {};
+    for (const part of parts) {
+        const base = slugify(part.label || part.instrument || part.type);
+        slugCounts[base] = (slugCounts[base] || 0) + 1;
+        part.partId = slugCounts[base] === 1 ? base : `${base}-${slugCounts[base]}`;
+    }
+
     return parts;
 }
 
@@ -146,20 +211,61 @@ function buildPartsFromIndex(song) {
  * Open a work by ID
  */
 export async function openWork(workId, options = {}) {
-    const song = allSongs.find(s => s.id === workId);
+    workId = resolveWorkId(workId);
+
+    let song = allSongs.find(s => s.id === workId);
+    if (!song) {
+        if (window.refreshPendingSongs) {
+            await window.refreshPendingSongs();
+            song = allSongs.find(s => s.id === workId);
+        }
+    }
     if (!song) {
         console.error(`Work not found: ${workId}`);
         return;
     }
 
-    // Clear chordpro content FIRST to prevent stale render from subscribers
-    // This must happen before any state changes that trigger reactive re-renders
-    setCurrentChordpro(null);
+    const { fromList = false, groupId = null } = options;
 
-    // Show the song view panel
+    // Store group context for version cards
+    if (groupId && songGroups[groupId]) {
+        currentGroupVersions = songGroups[groupId];
+    } else if (song.group_id && songGroups[song.group_id]) {
+        currentGroupVersions = songGroups[song.group_id];
+    } else {
+        currentGroupVersions = [];
+    }
+
+    // For multi-version groups, always use the canonical representative
+    // so the URL is stable regardless of which version you came from
+    if (currentGroupVersions.length > 1) {
+        const representative = pickRepresentative(currentGroupVersions);
+        if (representative && representative.id !== workId) {
+            workId = representative.id;
+            song = representative;
+        }
+    }
+
+    // Only clear list context when NOT navigating from a list
+    if (!fromList) {
+        const listHeader = document.getElementById('list-header');
+        if (listHeader) {
+            listHeader.classList.add('hidden');
+        }
+        clearListView();
+
+        // Exit fullscreen when opening dashboard directly (not from list nav)
+        if (fullscreenMode) {
+            document.body.classList.remove('fullscreen-mode');
+            setFullscreenMode(false);
+        }
+        const navBar = document.getElementById('song-nav-bar');
+        if (navBar) navBar.classList.add('hidden');
+    }
+
+    setCurrentChordpro(null);
     setCurrentView('song');
 
-    // Reset key tracking
     setOriginalDetectedKey(null);
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
@@ -172,26 +278,79 @@ export async function openWork(workId, options = {}) {
     currentWork = song;
     availableParts = buildPartsFromIndex(song);
     setCurrentSong(song);
+    inlineExpanded = false;
 
-    // Find default part or first available
-    const defaultPart = availableParts.find(p => p.default) || availableParts[0];
-    activePart = options.partId
-        ? availableParts.find(p => p.instrument === options.partId || p.type === options.partId)
-        : defaultPart;
+    // Hide Work button on the dashboard — it only makes sense as
+    // "go back to all parts" when viewing a specific part in song-view
+    const workViewBtn = document.getElementById('work-view-btn');
+    if (workViewBtn) workViewBtn.classList.add('hidden');
 
-    if (!activePart && availableParts.length > 0) {
-        activePart = availableParts[0];
+    // Hide song-view header actions that don't apply to the work dashboard
+    const editBtn = document.getElementById('edit-song-btn');
+    const exportBtn = document.getElementById('export-btn');
+    const exportWrapper = exportBtn?.closest('.export-wrapper');
+    if (isPlaceholder(song)) {
+        // Placeholders: show Edit (intercepted to show placeholder editor), hide Export
+        if (editBtn) editBtn.classList.remove('hidden');
+        if (exportWrapper) exportWrapper.classList.add('hidden');
+        window.__editInterceptor = () => {
+            showPlaceholderEditor();
+            return true;
+        };
+    } else {
+        if (editBtn) editBtn.classList.remove('hidden');
+        if (exportWrapper) exportWrapper.classList.remove('hidden');
+        window.__editInterceptor = null;
+    }
+
+    // If a specific part was requested via deep link, expand it inline
+    if (options.partId) {
+        activePart = availableParts.find(p =>
+            p.partId === options.partId ||
+            p.instrument === options.partId ||
+            p.type === options.partId
+        );
+        if (activePart && (activePart.type === 'tablature' || activePart.type === 'lead-sheet' || activePart.type === 'document')) {
+            inlineExpanded = true;
+        }
+    } else if (fromList && availableParts.length > 0) {
+        // From list navigation: auto-expand the default part for focus mode
+        activePart = availableParts.find(p => p.default) || availableParts[0];
+        inlineExpanded = true;
+    } else {
+        activePart = null;
+    }
+
+    // Update list context index when navigating within a list
+    if (fromList && listContext && listContext.songIds) {
+        const idx = listContext.songIds.indexOf(workId);
+        if (idx !== -1) {
+            setListContext({ ...listContext, currentIndex: idx });
+        }
+    }
+
+    // Auto-enter fullscreen when opening from a list
+    if (fromList && listContext) {
+        setFullscreenMode(true);
+        document.body.classList.add('fullscreen-mode');
+        document.body.classList.add('has-list-context');
     }
 
     renderWorkView();
 
-    // Update URL
-    const hash = options.partId
-        ? `#work/${workId}/parts/${options.partId}`
+    // Update focus header and nav bar for list context
+    if (fromList) {
+        updateFocusHeader();
+        updateNavBar();
+    }
+
+    const resolvedPartId = activePart?.partId || options.partId;
+    const hash = resolvedPartId
+        ? `#work/${workId}/${resolvedPartId}`
         : `#work/${workId}`;
 
     if (window.location.hash !== hash && !options.fromDeepLink) {
-        history.pushState({ workId, partId: options.partId }, '', hash);
+        history.pushState({ workId, partId: resolvedPartId }, '', hash);
     }
 }
 
@@ -200,7 +359,7 @@ export async function openWork(workId, options = {}) {
 // ============================================
 
 /**
- * Main render function for work view
+ * Main render function for work view - dashboard layout
  */
 export function renderWorkView() {
     const container = document.getElementById('song-content');
@@ -216,30 +375,73 @@ export function renderWorkView() {
         editSongBtn.style.display = partUsesSongActions(activePart) ? '' : 'none';
     }
 
+    // Focus header (shown only in fullscreen mode via CSS)
+    if (inlineExpanded) {
+        const focusHeader = renderWorkFocusHeader();
+        container.appendChild(focusHeader);
+    }
+
     // Work header
     const header = renderWorkHeader();
     container.appendChild(header);
 
-    // Part selector (if multiple parts)
-    if (availableParts.length > 1) {
-        const selector = renderPartSelector();
-        container.appendChild(selector);
-    }
-
-    // Part content
+    // Content area
     const content = document.createElement('div');
     content.className = 'work-part-content';
     container.appendChild(content);
 
-    if (activePart) {
-        renderPart(activePart, content);
+    if (inlineExpanded && activePart) {
+        // Inline expansion mode: show back button + content
+        renderInlineExpansion(activePart, content);
     } else {
-        content.innerHTML = '<p class="no-parts">No parts available for this work.</p>';
+        // Version cards (multi-version works) — replaces part cards when present
+        const versionCards = renderVersionCards();
+        if (versionCards) {
+            content.appendChild(versionCards);
+        } else {
+            // Single-version: show part cards as before
+            const cards = renderPartCards();
+            if (cards) {
+                content.appendChild(cards);
+            }
+        }
+
+        // Placeholder CTA
+        if (isPlaceholder(currentWork)) {
+            const cta = document.createElement('div');
+            cta.className = 'placeholder-cta';
+            const hasContent = availableParts.length > 0;
+            cta.innerHTML = `
+                <div class="placeholder-cta-text">${hasContent
+                    ? 'This song has reference material but no lyrics & chords or tablature yet.'
+                    : 'This song doesn\'t have lyrics & chords or tablature yet.'}</div>
+                <button class="placeholder-contribute-btn">Help complete this song</button>
+            `;
+            cta.querySelector('.placeholder-contribute-btn').addEventListener('click', () => {
+                if (!requireLogin('contribute')) return;
+                openAddSongPicker({
+                    mode: 'contribute',
+                    targetSlug: currentWork.id,
+                    title: currentWork.title,
+                    artist: currentWork.artist,
+                    key: currentWork.key,
+                });
+            });
+            content.appendChild(cta);
+        }
+    }
+
+    // Bounty section - only on dashboard, not in part views
+    if (!inlineExpanded) {
+        const bountySection = renderBountySection();
+        if (bountySection) {
+            container.appendChild(bountySection);
+        }
     }
 }
 
 /**
- * Render work header with metadata - matches song-view pattern
+ * Render simplified work header - metadata only, no content controls
  */
 function renderWorkHeader() {
     const header = document.createElement('div');
@@ -248,28 +450,30 @@ function renderWorkHeader() {
     const title = currentWork.title || 'Untitled';
     const artist = currentWork.artist || '';
     const composer = currentWork.composer || '';
-    const key = currentWork.key || '';
 
-    // Check for multiple versions
-    const groupId = currentWork?.group_id;
-    const versions = groupId ? (songGroups[groupId] || []) : [];
-    const otherVersionCount = versions.length - 1;
-    const versionHtml = otherVersionCount > 0
-        ? `<button class="see-versions-btn" data-group-id="${groupId}">See ${otherVersionCount} other version${otherVersionCount > 1 ? 's' : ''}</button>`
+    // Version count display (informational — version cards shown below)
+    const versionCount = currentGroupVersions.length;
+    const versionHtml = versionCount > 1
+        ? `<span class="version-count-display">${versionCount} versions</span>`
         : '';
 
-    // Build artists list: primary artist + covering artists
+    // Build artists list
     const allArtists = new Set();
     if (artist) allArtists.add(artist);
     const coveringArtists = currentWork?.covering_artists || [];
     coveringArtists.forEach(a => allArtists.add(a));
-    versions.forEach(v => { if (v.artist) allArtists.add(v.artist); });
+    currentGroupVersions.forEach(v => { if (v.artist) allArtists.add(v.artist); });
     const artistsList = Array.from(allArtists);
 
     // Build info items
     let infoItems = [];
     if (composer) {
         infoItems.push(`<div class="info-item"><span class="info-label">Written by:</span> ${escapeHtml(composer)}</div>`);
+    }
+
+    const source = currentWork.source;
+    if (source && SOURCE_DISPLAY_NAMES[source]) {
+        infoItems.push(`<div class="info-item"><span class="info-label">Source:</span> ${SOURCE_DISPLAY_NAMES[source]}</div>`);
     }
     if (artistsList.length > 0) {
         const maxVisible = 3;
@@ -282,6 +486,10 @@ function renderWorkHeader() {
             : visibleArtists.map(a => escapeHtml(a)).join(', ');
 
         infoItems.push(`<div class="info-item"><span class="info-label">Artists:</span> <span class="artists-list">${artistsHtml}</span></div>`);
+    }
+
+    if (currentWork.notes) {
+        infoItems.push(`<div class="info-item"><span class="info-label">Notes:</span> ${escapeHtml(currentWork.notes)}</div>`);
     }
 
     // Tags with voting controls
@@ -312,40 +520,11 @@ function renderWorkHeader() {
         }).join('')
         : '<em class="no-tags">None</em>';
 
-    // Disclosure states from localStorage. Tablature parts default the
-    // controls OPEN — Play/tempo/Edit hidden behind a collapsed ⚙️ was
-    // the #1 "where's the play button?" complaint. An explicit user
-    // toggle (stored value) is respected either way.
-    const storedControls = localStorage.getItem('workControlsCollapsed');
-    const isTabPart = activePart?.type === 'tablature';
-    const controlsCollapsed = storedControls === null
-        ? !isTabPart                       // default: open for tabs, closed for lyrics
-        : storedControls !== 'false';
     const infoBarCollapsed = localStorage.getItem('infoBarCollapsed') !== 'false'; // Default collapsed
 
-    // Focus header - shown in fullscreen mode
-    const focusHeaderHtml = `
-        <div class="focus-header">
-            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
-                <span>✕</span>
-                <span class="focus-btn-label">Exit</span>
-            </button>
-            <div class="focus-title-area">
-                <span class="focus-title">${escapeHtml(title)}</span>
-                <span id="focus-position" class="focus-position"></span>
-            </div>
-            <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
-                <span>⚙️</span>
-                <span class="focus-btn-label">Controls</span>
-            </button>
-        </div>
-    `;
-
-    // Header controls row
     const headerControlsHtml = `
         <div class="header-controls">
             <button id="flag-btn" class="flag-btn" title="Report an issue">🚩 Report</button>
-            <button id="work-controls-toggle" class="disclosure-btn" title="Toggle controls">⚙️ Controls <span class="disclosure-arrow">${controlsCollapsed ? '▼' : '▲'}</span></button>
             <button id="info-toggle" class="disclosure-btn" title="Toggle info">🎵 Info <span class="disclosure-arrow">${infoBarCollapsed ? '▼' : '▲'}</span></button>
         </div>
     `;
@@ -366,57 +545,24 @@ function renderWorkHeader() {
         </div>
     `;
 
-    // Corner nav buttons for focus mode list navigation
-    const cornerNavHtml = `
-        <button id="focus-prev-btn" class="focus-corner-nav focus-corner-prev" title="Previous song (←)">
-            <span class="corner-nav-arrow">←</span>
-        </button>
-        <button id="focus-next-btn" class="focus-corner-nav focus-corner-next" title="Next song (→)">
-            <span class="corner-nav-arrow">→</span>
-        </button>
-    `;
-
     header.innerHTML = `
-        ${focusHeaderHtml}
         <div class="song-header">
             <div class="song-header-left">
                 <div class="song-title-row">
                     <span class="song-title">${escapeHtml(title)}</span>
+                    ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
                     ${versionHtml}
-                    <button id="add-to-list-btn" class="add-to-list-btn" title="Add to list">+ Lists</button>
-                    <button id="focus-btn" class="focus-btn" title="Focus mode (F)">⛶ Focus</button>
+                    ${inlineExpanded ? '<button id="add-to-list-btn" class="add-to-list-btn" title="Add to list">+ Lists</button>' : ''}
+                    ${inlineExpanded ? '<button id="focus-btn" class="focus-btn" title="Focus mode (F)">&#x26F6; Focus</button>' : ''}
+                    ${inlineExpanded && activePart?.type === 'tablature' ? '<button id="work-controls-toggle" class="focus-btn" title="Toggle controls">&#x2699;&#xFE0F; Controls</button>' : ''}
                 </div>
             </div>
             ${headerControlsHtml}
         </div>
-        <div id="work-controls-content" class="work-controls-content ${controlsCollapsed ? 'hidden' : ''}">
-            <!-- Controls are injected here by renderTablaturePart or renderChordProPart -->
-        </div>
         ${infoContentHtml}
-        ${cornerNavHtml}
     `;
 
-    // Wire up version button click handler
-    const versionBtn = header.querySelector('.see-versions-btn');
-    if (versionBtn) {
-        versionBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            showVersionPicker(versionBtn.dataset.groupId);
-        });
-    }
-
-    // Wire up disclosure toggles
-    const controlsToggle = header.querySelector('#work-controls-toggle');
-    const controlsContent = header.querySelector('#work-controls-content');
-    if (controlsToggle && controlsContent) {
-        controlsToggle.addEventListener('click', () => {
-            const isCollapsed = controlsContent.classList.toggle('hidden');
-            localStorage.setItem('workControlsCollapsed', isCollapsed);
-            const arrow = controlsToggle.querySelector('.disclosure-arrow');
-            if (arrow) arrow.textContent = isCollapsed ? '▼' : '▲';
-        });
-    }
-
+    // Wire up info toggle
     const infoToggle = header.querySelector('#info-toggle');
     const infoContent = header.querySelector('#info-content');
     if (infoToggle && infoContent) {
@@ -428,240 +574,1044 @@ function renderWorkHeader() {
         });
     }
 
+    // Wire up artists expand/collapse
+    const artistsExpand = header.querySelector('#artists-expand');
+    const artistsCollapse = header.querySelector('#artists-collapse');
+    if (artistsExpand) {
+        artistsExpand.addEventListener('click', () => {
+            header.querySelector('#artists-full')?.classList.remove('hidden');
+            header.querySelector('#artists-collapse')?.classList.remove('hidden');
+            artistsExpand.classList.add('hidden');
+        });
+    }
+    if (artistsCollapse) {
+        artistsCollapse.addEventListener('click', () => {
+            header.querySelector('#artists-full')?.classList.add('hidden');
+            artistsCollapse.classList.add('hidden');
+            header.querySelector('#artists-expand')?.classList.remove('hidden');
+        });
+    }
+
+    // Wire up controls toggle (non-fullscreen)
+    const controlsToggle = header.querySelector('#work-controls-toggle');
+    if (controlsToggle) {
+        controlsToggle.addEventListener('click', () => {
+            const controls = document.getElementById('work-controls-content');
+            if (controls) {
+                controls.classList.toggle('hidden');
+            }
+        });
+    }
+
     return header;
 }
 
+// ============================================
+// FOCUS HEADER (for fullscreen mode in work-view)
+// ============================================
+
 /**
- * Render part selector tabs
+ * Render focus header for work-view inline expansion.
+ * Same structure as song-view focus header for consistent UX.
  */
-function renderPartSelector() {
-    const selector = document.createElement('div');
-    selector.className = 'part-selector';
+function renderWorkFocusHeader() {
+    const title = currentWork?.title || 'Untitled';
+    const partLabel = activePart?.label ? ` - ${activePart.label}` : '';
 
-    const tabs = availableParts.map(part => {
-        const isActive = part === activePart;
-        const icon = part.type === 'tablature'
-            ? (INSTRUMENT_ICONS[part.instrument] || '🎵')
-            : '📄';
+    const header = document.createElement('div');
+    header.className = 'focus-header';
+    header.innerHTML = `
+        <button id="focus-prev-btn" class="focus-list-nav" title="Previous song (\u2190)">\u2190</button>
+        <div class="focus-title-area">
+            <span class="focus-title">${escapeHtml(title)}${escapeHtml(partLabel)}</span>
+            <span id="focus-position" class="focus-position"></span>
+        </div>
+        <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
+            <span>\u2715</span>
+            <span class="focus-btn-label">Exit</span>
+        </button>
+        <button id="focus-goto-song-btn" class="focus-nav-btn" title="View work dashboard">
+            <span>\uD83C\uDFB5</span>
+            <span class="focus-btn-label">Go to Song</span>
+        </button>
+        <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
+            <span>\u2699\uFE0F</span>
+            <span class="focus-btn-label">Controls</span>
+        </button>
+        <button id="focus-next-btn" class="focus-list-nav" title="Next song (\u2192)">\u2192</button>
+    `;
 
+    // Wire up event handlers
+    header.querySelector('#focus-exit-btn')?.addEventListener('click', () => {
+        exitFullscreen();
+    });
+
+    header.querySelector('#focus-goto-song-btn')?.addEventListener('click', () => {
+        // Exit focus mode and navigate to work dashboard
+        setFullscreenMode(false);
+        document.body.classList.remove('fullscreen-mode');
+        document.body.classList.remove('has-list-context');
+        clearListView();
+        // Re-open as dashboard (not inline)
+        inlineExpanded = false;
+        activePart = null;
+        renderWorkView();
+        const hash = `#work/${currentWork.id}`;
+        history.pushState({ workId: currentWork.id }, '', hash);
+    });
+
+    header.querySelector('#focus-prev-btn')?.addEventListener('click', () => {
+        navigatePrev();
+    });
+
+    header.querySelector('#focus-next-btn')?.addEventListener('click', () => {
+        navigateNext();
+    });
+
+    header.querySelector('#focus-controls-toggle')?.addEventListener('click', () => {
+        const controls = document.getElementById('work-controls-content');
+        if (controls) {
+            controls.classList.toggle('hidden');
+        }
+    });
+
+    return header;
+}
+
+// ============================================
+// VERSION CARDS (Dashboard - multi-version works)
+// ============================================
+
+/**
+ * Source display names for version attribution
+ */
+const SOURCE_DISPLAY_NAMES = {
+    'classic-country': 'Classic Country Song Lyrics',
+    'golden-standard': 'Golden Standards Collection',
+    'tunearch': 'TuneArch.org',
+    'manual': 'Community Contribution',
+    'trusted-user': 'Community Contribution',
+    'pending': 'Community Contribution',
+    'banjo-hangout': 'Banjo Hangout',
+    'ultimate-guitar': 'Community Contribution',
+    'bluegrass-lyrics': 'BluegrassLyrics.com',
+};
+
+/**
+ * Render version cards section for multi-version works.
+ * Shows all versions in the group as cards with metadata.
+ */
+function renderVersionCards() {
+    if (currentGroupVersions.length <= 1) return null;
+
+    const section = document.createElement('div');
+    section.className = 'work-versions-section';
+
+    const heading = document.createElement('div');
+    heading.className = 'work-versions-heading';
+    heading.textContent = `${currentGroupVersions.length} Versions`;
+    section.appendChild(heading);
+
+    const grid = document.createElement('div');
+    grid.className = 'work-versions-grid';
+
+    for (const version of currentGroupVersions) {
+        const card = createVersionCard(version);
+        grid.appendChild(card);
+    }
+
+    section.appendChild(grid);
+    return section;
+}
+
+/**
+ * Create a single version card
+ */
+function createVersionCard(version) {
+    const card = document.createElement('div');
+    card.className = 'version-card';
+
+    const isCurrent = version.id === currentWork?.id;
+    if (isCurrent) card.classList.add('version-card-current');
+
+    // Determine label: "Lyrics & Chords" or "Lyrics"
+    const hasChords = (version.chord_count || 0) > 0;
+    const hasContent = !!version.content;
+    let typeLabel;
+    if (hasContent) {
+        typeLabel = hasChords ? 'Lyrics & Chords' : 'Lyrics';
+    } else if (version.tablature_parts?.length > 0) {
+        typeLabel = 'Tablature';
+    } else {
+        typeLabel = 'Song';
+    }
+
+    // Source attribution
+    const sourceName = SOURCE_DISPLAY_NAMES[version.source] || '';
+    const sourceHtml = sourceName
+        ? `<div class="version-card-source">From ${escapeHtml(sourceName)}</div>`
+        : '';
+
+    // Key + chord count
+    const metaParts = [];
+    if (version.key) metaParts.push(`Key: ${version.key}`);
+    if (hasChords) metaParts.push(`${version.chord_count} chords`);
+    const metaHtml = metaParts.length
+        ? `<div class="version-card-meta">${escapeHtml(metaParts.join(' · '))}</div>`
+        : '';
+
+    // First line preview
+    const firstLine = version.first_line || '';
+    const previewHtml = firstLine
+        ? `<div class="version-card-preview">"${escapeHtml(firstLine.substring(0, 80))}"</div>`
+        : '';
+
+    // Artist (if different from current work)
+    const artistHtml = version.artist && version.artist !== currentWork?.artist
+        ? `<div class="version-card-artist">${escapeHtml(version.artist)}</div>`
+        : '';
+
+    card.innerHTML = `
+        <div class="version-card-body">
+            <div class="version-card-label">${escapeHtml(typeLabel)}</div>
+            ${artistHtml}
+            ${sourceHtml}
+            ${metaHtml}
+            ${previewHtml}
+        </div>
+    `;
+
+    // Click to open this version directly in song view
+    card.addEventListener('click', () => {
+        const isTabOnly = version.tablature_parts?.length > 0 && !version.content;
+        if (isTabOnly || version.status === 'placeholder') {
+            openWork(version.id, { groupId: version.group_id });
+        } else {
+            openSong(version.id);
+        }
+    });
+
+    return card;
+}
+
+// ============================================
+// PART CARDS (Dashboard)
+// ============================================
+
+/**
+ * Render part cards grid showing available content
+ */
+function renderPartCards() {
+    if (availableParts.length === 0) return null;
+
+    const grid = document.createElement('div');
+    grid.className = 'work-dashboard-cards';
+
+    for (const part of availableParts) {
+        const card = createPartCard(part);
+        grid.appendChild(card);
+    }
+
+    return grid;
+}
+
+/**
+ * Create a single part card
+ */
+function createPartCard(part) {
+    const card = document.createElement('div');
+    card.className = 'work-part-card';
+
+    if (part.type === 'lead-sheet') {
+        const icon = '📄';
+        const key = currentWork.key ? `Key: ${currentWork.key}` : '';
+        const chordCount = currentWork.chord_count ? `${currentWork.chord_count} chords` : '';
+        const meta = [key, chordCount].filter(Boolean).join(' · ');
+        const firstLine = currentWork.first_line ? escapeHtml(currentWork.first_line) : '';
+
+        card.innerHTML = `
+            <div class="work-card-icon">${icon}</div>
+            <div class="work-card-body">
+                <div class="work-card-label">${escapeHtml(part.label)}</div>
+                ${meta ? `<div class="work-card-meta">${meta}</div>` : ''}
+                ${firstLine ? `<div class="work-card-preview">${firstLine}</div>` : ''}
+            </div>
+            <button class="work-card-action">View</button>
+        `;
+
+        const viewAction = () => {
+            activePart = part;
+            inlineExpanded = true;
+            renderWorkView();
+            const hash = `#work/${currentWork.id}/${part.partId}`;
+            history.pushState({ workId: currentWork.id, partId: part.partId }, '', hash);
+        };
+
+        card.querySelector('.work-card-action').addEventListener('click', viewAction);
+        card.addEventListener('click', (e) => {
+            if (!e.target.closest('.work-card-action')) viewAction();
+        });
+
+    } else if (part.type === 'tablature') {
+        const icon = INSTRUMENT_ICONS[part.instrument] || '🎵';
+        const meta = [];
+        if (part.author) meta.push(`by ${part.author}`);
+        if (part.source === 'banjo-hangout') meta.push('Banjo Hangout');
+
+        card.innerHTML = `
+            <div class="work-card-icon">${icon}</div>
+            <div class="work-card-body">
+                <div class="work-card-label">${escapeHtml(part.label)}</div>
+                ${meta.length ? `<div class="work-card-meta">${escapeHtml(meta.join(' · '))}</div>` : ''}
+            </div>
+            <button class="work-card-action">View</button>
+        `;
+
+        const viewAction = () => {
+            activePart = part;
+            inlineExpanded = true;
+            renderWorkView();
+            const hash = `#work/${currentWork.id}/${part.partId}`;
+            history.pushState({ workId: currentWork.id, partId: part.partId }, '', hash);
+        };
+
+        card.querySelector('.work-card-action').addEventListener('click', viewAction);
+        card.addEventListener('click', (e) => {
+            if (!e.target.closest('.work-card-action')) viewAction();
+        });
+
+    } else if (part.type === 'document') {
+        const icon = '📎';
+
+        card.innerHTML = `
+            <div class="work-card-icon">${icon}</div>
+            <div class="work-card-body">
+                <div class="work-card-label">${escapeHtml(part.label)}</div>
+                <div class="work-card-meta">${part.format?.toUpperCase() || 'PDF'}</div>
+            </div>
+            <button class="work-card-action">View</button>
+        `;
+
+        const viewAction = () => {
+            activePart = part;
+            inlineExpanded = true;
+            renderWorkView();
+            const hash = `#work/${currentWork.id}/${part.partId}`;
+            history.pushState({ workId: currentWork.id, partId: part.partId }, '', hash);
+        };
+
+        card.querySelector('.work-card-action').addEventListener('click', viewAction);
+        card.addEventListener('click', (e) => {
+            if (!e.target.closest('.work-card-action')) viewAction();
+        });
+    }
+
+    return card;
+}
+
+// ============================================
+// INLINE EXPANSION (Tab/Doc within dashboard)
+// ============================================
+
+/**
+ * Render a part inline with a back button to return to dashboard
+ */
+function renderInlineExpansion(part, container) {
+    // Back button
+    const backBtn = document.createElement('button');
+    backBtn.className = 'work-inline-back';
+    backBtn.textContent = '\uD83D\uDCCB Work';
+    backBtn.addEventListener('click', () => {
+        inlineExpanded = false;
+        activePart = null;
+        // Stop any playing tablature
+        if (tablaturePlayer) {
+            tablaturePlayer.stop();
+            setTablaturePlayer(null);
+        }
+        renderWorkView();
+        // Update URL back to work
+        const hash = `#work/${currentWork.id}`;
+        history.pushState({ workId: currentWork.id }, '', hash);
+    });
+    container.appendChild(backBtn);
+
+    // Controls container (tab controls go here, toggled via Controls button).
+    // Tablature parts default the controls OPEN — Play/tempo/Edit hidden
+    // behind a collapsed ⚙️ was the #1 "where's the play button?" complaint.
+    // An explicit user toggle (stored value) is respected either way.
+    const storedControls = localStorage.getItem('workControlsCollapsed');
+    const isTabPart = part?.type === 'tablature';
+    const controlsCollapsed = storedControls === null
+        ? !isTabPart                       // default: open for tabs, closed for lyrics
+        : storedControls !== 'false';
+    const controlsArea = document.createElement('div');
+    controlsArea.className = `work-inline-controls${controlsCollapsed ? ' hidden' : ''}`;
+    controlsArea.id = 'work-controls-content';
+    container.appendChild(controlsArea);
+
+    // Content
+    const contentArea = document.createElement('div');
+    contentArea.className = 'work-inline-content';
+    container.appendChild(contentArea);
+
+    if (part.type === 'tablature') {
+        renderTablaturePart(part, contentArea);
+    } else if (part.type === 'lead-sheet') {
+        renderLeadSheetPart(part, contentArea);
+    } else if (part.type === 'document') {
+        renderDocumentPart(part, contentArea);
+    }
+}
+
+// ============================================
+// BOUNTY SECTION
+// ============================================
+
+const BOUNTY_PART_LABELS = {
+    'lead-sheet': 'Lyrics & Chords',
+    'tablature': 'Tab',
+    'abc-notation': 'ABC Notation',
+    'document': 'PDF/Document',
+};
+const BOUNTY_INSTRUMENT_LABELS = {
+    'banjo': 'Banjo', 'guitar': 'Guitar', 'fiddle': 'Fiddle',
+    'mandolin': 'Mandolin', 'dobro': 'Dobro', 'bass': 'Bass',
+};
+
+/**
+ * Render bounty section for the current work.
+ * Always expanded on the dashboard - bounties are a first-class element.
+ */
+function renderBountySection() {
+    if (!currentWork) return null;
+
+    const bounties = getBountiesForWork(currentWork.id);
+
+    const section = document.createElement('div');
+    section.className = 'work-bounty-section';
+
+    const bountyCards = bounties.map(b => {
+        const label = b.part_type === 'tablature' && b.instrument
+            ? `${BOUNTY_INSTRUMENT_LABELS[b.instrument] || b.instrument} Tab`
+            : BOUNTY_PART_LABELS[b.part_type] || b.part_type;
         return `
-            <button class="part-tab ${isActive ? 'active' : ''}"
-                    data-part-type="${part.type}"
-                    data-part-instrument="${part.instrument || ''}"
-                    data-part-file="${part.file || ''}">
-                <span class="part-icon">${icon}</span>
-                <span class="part-label">${escapeHtml(part.label)}</span>
-            </button>
+            <div class="work-bounty-card" data-bounty-type="${b.part_type}" data-bounty-instrument="${b.instrument || ''}">
+                <div class="work-bounty-label">${escapeHtml(label)}</div>
+                ${b.description ? `<div class="work-bounty-desc">${escapeHtml(b.description)}</div>` : ''}
+                <button class="work-bounty-contribute">Contribute</button>
+            </div>
         `;
     }).join('');
 
-    selector.innerHTML = tabs;
+    const bountyCount = bounties.length;
 
-    // Add click handlers
-    selector.querySelectorAll('.part-tab').forEach(tab => {
-        tab.addEventListener('click', () => {
-            const partType = tab.dataset.partType;
-            const partInstrument = tab.dataset.partInstrument;
-            const partFile = tab.dataset.partFile;
+    section.innerHTML = `
+        <div class="work-bounty-header">
+            <div class="work-bounty-title">
+                <span class="work-bounty-flag">&#x1F3F4;</span>
+                Wanted ${bountyCount > 0 ? `(${bountyCount})` : ''}
+            </div>
+        </div>
+        <div class="work-bounty-body" id="work-bounty-body">
+            ${bountyCards || '<div class="work-bounty-empty">No specific requests yet.</div>'}
+            <button class="work-bounty-request-btn" id="work-bounty-request-btn">+ Request a part</button>
+        </div>
+    `;
 
-            // Find matching part
-            activePart = availableParts.find(p =>
-                p.type === partType &&
-                (p.instrument || '') === partInstrument &&
-                (p.file || '') === partFile
-            );
-
-            renderWorkView();
-
-            // Update URL
-            const partId = activePart?.instrument || activePart?.type;
-            const hash = `#work/${currentWork.id}/parts/${partId}`;
-            history.pushState({ workId: currentWork.id, partId }, '', hash);
+    // Wire contribute buttons
+    section.querySelectorAll('.work-bounty-contribute').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (!requireLogin('contribute')) return;
+            openAddSongPicker({
+                mode: 'contribute',
+                targetSlug: currentWork.id,
+                title: currentWork.title,
+                artist: currentWork.artist,
+                key: currentWork.key,
+            });
         });
     });
 
-    return selector;
+    // Wire request button
+    section.querySelector('#work-bounty-request-btn')?.addEventListener('click', () => {
+        if (!requireLogin('request parts')) return;
+        openBountyRequestInline(section, currentWork);
+    });
+
+    return section;
 }
 
 /**
- * Render a specific part
+ * Open inline bounty request form within the work view.
  */
-async function renderPart(part, container) {
-    if (part.format === 'chordpro' || part.type === 'lead-sheet') {
-        renderChordProPart(part, container);
-    } else if (part.format === 'otf' || part.type === 'tablature') {
-        await renderTablaturePart(part, container);
-    } else {
-        container.innerHTML = `<p class="error">Unknown part format: ${part.format}</p>`;
-    }
-}
+function openBountyRequestInline(section, work) {
+    const body = section.querySelector('#work-bounty-body');
+    if (!body) return;
 
-/**
- * Render ChordPro lead sheet
- */
-function renderChordProPart(part, container) {
-    const content = part.content || currentWork.content;
-    if (!content) {
-        container.innerHTML = '<p class="error">No content available</p>';
-        return;
-    }
+    if (body.querySelector('.work-bounty-inline-form')) return;
 
-    setCurrentChordpro(content);
+    const form = document.createElement('div');
+    form.className = 'work-bounty-inline-form';
+    form.innerHTML = `
+        <select class="work-bounty-inline-select" id="work-bounty-inline-type">
+            <option value="lead-sheet">Lyrics & Chords</option>
+            <option value="tablature:banjo">Banjo Tab</option>
+            <option value="tablature:guitar">Guitar Tab</option>
+            <option value="tablature:fiddle">Fiddle Tab</option>
+            <option value="tablature:mandolin">Mandolin Tab</option>
+            <option value="abc-notation">ABC Notation</option>
+            <option value="document">PDF / Document</option>
+        </select>
+        <input type="text" class="work-bounty-inline-desc" placeholder="Details (optional)" id="work-bounty-inline-desc" />
+        <div class="work-bounty-inline-actions">
+            <button class="work-bounty-inline-submit" id="work-bounty-inline-submit">Submit</button>
+            <button class="work-bounty-inline-cancel" id="work-bounty-inline-cancel">Cancel</button>
+        </div>
+        <div class="work-bounty-inline-status" id="work-bounty-inline-status"></div>
+    `;
 
-    // Detect key
-    const { sections } = parseChordPro(content);
-    const allChords = [];
-    sections.forEach(section => {
-        section.lines.forEach(line => {
-            if (line.chords) {
-                line.chords.forEach(c => allChords.push(c.chord));
+    body.insertBefore(form, body.querySelector('#work-bounty-request-btn'));
+
+    form.querySelector('#work-bounty-inline-cancel').addEventListener('click', () => form.remove());
+
+    form.querySelector('#work-bounty-inline-submit').addEventListener('click', async () => {
+        const supabase = window.SupabaseAuth?.supabase;
+        const user = window.SupabaseAuth?.getUser?.();
+        if (!supabase || !user) return;
+
+        const typeValue = form.querySelector('#work-bounty-inline-type').value;
+        const [partType, instrument] = typeValue.includes(':') ? typeValue.split(':') : [typeValue, null];
+        const description = form.querySelector('#work-bounty-inline-desc').value.trim() || null;
+        const statusDiv = form.querySelector('#work-bounty-inline-status');
+        const submitBtn = form.querySelector('#work-bounty-inline-submit');
+
+        submitBtn.disabled = true;
+        statusDiv.textContent = 'Submitting...';
+
+        try {
+            const { error } = await supabase.from('bounties').insert({
+                work_id: work.id,
+                part_type: partType,
+                instrument,
+                description,
+                created_by: user.id,
+            });
+
+            if (error) {
+                statusDiv.textContent = error.code === '23505'
+                    ? 'Already requested!'
+                    : `Error: ${error.message}`;
+                submitBtn.disabled = false;
+                return;
             }
+
+            statusDiv.innerHTML = '<span style="color: var(--success)">Request submitted!</span>';
+            if (window.refreshBounties) await window.refreshBounties();
+            setTimeout(() => renderWorkView(), 800);
+        } catch (e) {
+            statusDiv.textContent = `Error: ${e.message}`;
+            submitBtn.disabled = false;
+        }
+    });
+}
+
+// ============================================
+// PLACEHOLDER METADATA EDITOR
+// ============================================
+
+/**
+ * Show inline editor for placeholder metadata (title, artist, key, notes).
+ * Replaces the dashboard content area with an edit form.
+ */
+function showPlaceholderEditor() {
+    if (!requireLogin('edit placeholder metadata')) return;
+    if (!currentWork) return;
+
+    const container = document.getElementById('song-content');
+    if (!container) return;
+
+    // Replace content with edit form
+    container.innerHTML = '';
+
+    const form = document.createElement('div');
+    form.className = 'placeholder-editor';
+
+    const keyOptions = CHROMATIC_MAJOR_KEYS.map(k =>
+        `<option value="${k}" ${k === (currentWork.key || '') ? 'selected' : ''}>${k}</option>`
+    ).join('');
+
+    // Current document info
+    const existingDoc = currentWork.document_parts?.[0];
+    const pendingDoc = window.__pendingDocuments?.[currentWork.id];
+    const hasDoc = !!(existingDoc || pendingDoc);
+    const docLabel = existingDoc?.label || pendingDoc?.label || '';
+
+    form.innerHTML = `
+        <div class="placeholder-editor-header">
+            <h3>Edit Placeholder</h3>
+        </div>
+        <div class="placeholder-editor-form">
+            <div class="placeholder-editor-field">
+                <label for="ph-edit-title">Title</label>
+                <input type="text" id="ph-edit-title" value="${escapeHtml(currentWork.title || '')}" />
+            </div>
+            <div class="placeholder-editor-field">
+                <label for="ph-edit-artist">Artist</label>
+                <input type="text" id="ph-edit-artist" value="${escapeHtml(currentWork.artist || '')}" />
+            </div>
+            <div class="placeholder-editor-field">
+                <label for="ph-edit-key">Key</label>
+                <select id="ph-edit-key">
+                    <option value="">None</option>
+                    ${keyOptions}
+                </select>
+            </div>
+            <div class="placeholder-editor-field">
+                <label for="ph-edit-notes">Notes</label>
+                <textarea id="ph-edit-notes" rows="3">${escapeHtml(currentWork.notes || '')}</textarea>
+            </div>
+            <div class="placeholder-editor-field">
+                <label>Document</label>
+                <div class="ph-edit-doc-section">
+                    ${hasDoc
+                        ? `<div class="ph-edit-doc-current">
+                               <span class="ph-edit-doc-icon">📎</span>
+                               <span class="ph-edit-doc-label">${escapeHtml(docLabel)}</span>
+                               <span class="ph-edit-doc-badge">PDF</span>
+                           </div>`
+                        : '<div class="ph-edit-doc-empty">No document attached</div>'
+                    }
+                    <div class="ph-edit-doc-picker">
+                        <input type="file" id="ph-edit-doc-file" accept=".jpg,.jpeg,.png,.heic,.webp,.pdf" class="hidden" />
+                        <button type="button" id="ph-edit-doc-btn" class="ph-edit-doc-upload-btn">
+                            ${hasDoc ? 'Replace document' : 'Add document'}
+                        </button>
+                        <div id="ph-edit-doc-info" class="ph-edit-doc-info hidden"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder-editor-actions">
+                <button class="placeholder-editor-save" id="ph-edit-save">Save</button>
+                <button class="placeholder-editor-cancel" id="ph-edit-cancel">Cancel</button>
+            </div>
+            <div class="placeholder-editor-status" id="ph-edit-status"></div>
+        </div>
+    `;
+
+    container.appendChild(form);
+
+    // Document file picker state
+    let newDocFile = null;
+
+    const docFileInput = form.querySelector('#ph-edit-doc-file');
+    const docBtn = form.querySelector('#ph-edit-doc-btn');
+    const docInfo = form.querySelector('#ph-edit-doc-info');
+
+    docBtn.addEventListener('click', () => docFileInput.click());
+
+    docFileInput.addEventListener('change', (e) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        const MAX_SIZE = 10 * 1024 * 1024;
+        if (file.size > MAX_SIZE) {
+            docInfo.textContent = `File too large (${(file.size / 1024 / 1024).toFixed(1)}MB). Max 10MB.`;
+            docInfo.className = 'ph-edit-doc-info error';
+            docInfo.classList.remove('hidden');
+            return;
+        }
+
+        newDocFile = file;
+        docInfo.innerHTML = `
+            <span class="ph-edit-doc-filename">${escapeHtml(file.name)}</span>
+            <span class="ph-edit-doc-size">(${(file.size / 1024).toFixed(0)} KB)</span>
+            <button type="button" class="ph-edit-doc-remove" title="Remove">&times;</button>
+        `;
+        docInfo.className = 'ph-edit-doc-info';
+        docInfo.classList.remove('hidden');
+        docBtn.textContent = 'Change file';
+
+        docInfo.querySelector('.ph-edit-doc-remove')?.addEventListener('click', () => {
+            newDocFile = null;
+            docFileInput.value = '';
+            docInfo.classList.add('hidden');
+            docBtn.textContent = hasDoc ? 'Replace document' : 'Add document';
         });
     });
 
-    const detected = detectKey(allChords);
-    if (detected) {
-        setOriginalDetectedKey(detected.key);
-        setOriginalDetectedMode(detected.mode);
-        if (!currentDetectedKey) {
-            setCurrentDetectedKey(detected.key);
-        }
-    }
-
-    // Inject controls into the header's controls content area
-    const controls = createLeadSheetControls();
-    const controlsContent = document.getElementById('work-controls-content');
-    if (controlsContent) {
-        controlsContent.innerHTML = '';
-        controlsContent.appendChild(controls);
-    } else {
-        // Fallback: add controls to container if header not found
-        container.appendChild(controls);
-    }
-
-    // Create content area
-    const contentArea = document.createElement('div');
-    contentArea.className = 'chordpro-content';
-    container.appendChild(contentArea);
-
-    renderChordProContent(sections, contentArea);
-}
-
-/**
- * Create controls for lead sheet
- */
-function createLeadSheetControls() {
-    const controls = document.createElement('div');
-    controls.className = 'leadsheet-controls';
-
-    // Key selector (chromatic order for vocal range adjustment)
-    const keySelector = document.createElement('select');
-    keySelector.className = 'key-selector';
-    const keyList = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-    keyList.forEach(k => {
-        const opt = document.createElement('option');
-        opt.value = k;
-        opt.textContent = k;
-        if (k === currentDetectedKey) opt.selected = true;
-        keySelector.appendChild(opt);
-    });
-
-    keySelector.addEventListener('change', () => {
-        setCurrentDetectedKey(keySelector.value);
+    // Cancel: re-render dashboard
+    form.querySelector('#ph-edit-cancel').addEventListener('click', () => {
         renderWorkView();
     });
 
-    controls.innerHTML = `<label>Key:</label>`;
-    controls.appendChild(keySelector);
+    // Save
+    form.querySelector('#ph-edit-save').addEventListener('click', async () => {
+        const title = form.querySelector('#ph-edit-title').value.trim();
+        const artist = form.querySelector('#ph-edit-artist').value.trim();
+        const key = form.querySelector('#ph-edit-key').value;
+        const notes = form.querySelector('#ph-edit-notes').value.trim();
+        const statusDiv = form.querySelector('#ph-edit-status');
+        const saveBtn = form.querySelector('#ph-edit-save');
 
-    return controls;
+        if (!title) {
+            statusDiv.textContent = 'Title is required';
+            statusDiv.className = 'placeholder-editor-status error';
+            return;
+        }
+
+        saveBtn.disabled = true;
+        statusDiv.textContent = newDocFile ? 'Uploading document...' : 'Saving...';
+        statusDiv.className = 'placeholder-editor-status';
+
+        try {
+            const isTrusted = await window.SupabaseAuth?.isTrustedUser?.();
+
+            if (isTrusted) {
+                await savePlaceholderMetadataTrusted({ title, artist, key, notes });
+                if (newDocFile) {
+                    statusDiv.textContent = 'Uploading document...';
+                    await uploadPlaceholderDocument(newDocFile, title);
+                }
+            } else {
+                await savePlaceholderMetadataIssue({ title, artist, key, notes });
+                if (newDocFile) {
+                    statusDiv.textContent = 'Uploading document...';
+                    await uploadPlaceholderDocumentRegular(newDocFile, title);
+                }
+            }
+
+            statusDiv.innerHTML = '<span style="color: var(--success)">Saved!</span>';
+
+            // Update in-memory work data and re-render after brief delay
+            currentWork.title = title;
+            currentWork.artist = artist;
+            currentWork.key = key;
+            currentWork.notes = notes;
+            setTimeout(() => renderWorkView(), 600);
+        } catch (e) {
+            statusDiv.textContent = `Error: ${e.message}`;
+            statusDiv.className = 'placeholder-editor-status error';
+            saveBtn.disabled = false;
+        }
+    });
 }
 
 /**
- * Render ChordPro sections to HTML
+ * Save placeholder metadata as trusted user via Supabase pending_songs.
  */
-function renderChordProContent(sections, container) {
-    const fontMultiplier = FONT_SIZES[fontSizeLevel] || 1;
-    const transpose = currentDetectedKey && originalDetectedKey
-        ? getSemitonesBetweenKeys(originalDetectedKey, currentDetectedKey)
-        : 0;
+async function savePlaceholderMetadataTrusted({ title, artist, key, notes }) {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) throw new Error('Not connected to database');
 
-    let html = '';
-    const seenPatterns = new Set();
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) throw new Error('Not logged in');
 
-    sections.forEach((section, idx) => {
-        // Section label
-        if (showSectionLabels && section.label) {
-            html += `<div class="section-label">${escapeHtml(section.label)}</div>`;
-        }
+    const user = window.SupabaseAuth?.getUser?.();
 
-        // Section content
-        html += `<div class="section${compactMode ? ' compact' : ''}">`;
+    const entry = {
+        id: currentWork.id,
+        replaces_id: currentWork.id,
+        title,
+        artist: artist || null,
+        content: currentWork.content || null,
+        key: key || null,
+        notes: notes || null,
+        status: 'placeholder',
+        tags: currentWork.tags || {},
+        created_by: user?.id || null,
+    };
 
-        section.lines.forEach(line => {
-            if (line.type === 'empty') {
-                html += '<div class="empty-line"></div>';
-                return;
-            }
+    const { error } = await supabase
+        .from('pending_songs')
+        .upsert(entry, { onConflict: 'id' });
 
-            if (line.type === 'comment') {
-                html += `<div class="comment">${escapeHtml(line.text)}</div>`;
-                return;
-            }
+    if (error) throw new Error(error.message);
 
-            // Chord line
-            html += '<div class="line">';
+    // Refresh to merge into allSongs
+    if (window.refreshPendingSongs) {
+        await window.refreshPendingSongs();
+    }
+}
 
-            if (line.chords && line.chords.length > 0 && chordDisplayMode !== 'none') {
-                html += '<div class="chord-line">';
+/**
+ * Save placeholder metadata as regular user via GitHub issue.
+ */
+async function savePlaceholderMetadataIssue({ title, artist, key, notes }) {
+    const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
 
-                // Build pattern for "first" mode
-                const pattern = line.chords.map(c => c.chord).join('|');
-                const shouldHide = chordDisplayMode === 'first' && seenPatterns.has(pattern);
-                if (chordDisplayMode === 'first') seenPatterns.add(pattern);
+    const user = window.SupabaseAuth?.getUser?.();
+    const submitter = user?.user_metadata?.full_name || user?.email || 'Anonymous User';
 
-                let lastPos = 0;
-                line.chords.forEach(c => {
-                    // Spacing
-                    const spaces = c.position - lastPos;
-                    if (spaces > 0) {
-                        html += `<span class="chord-space">${'&nbsp;'.repeat(spaces)}</span>`;
-                    }
+    const body = [
+        `**Work ID:** ${currentWork.id}`,
+        `**Current Title:** ${currentWork.title}`,
+        `**Proposed Title:** ${title}`,
+        artist !== currentWork.artist ? `**Proposed Artist:** ${artist}` : '',
+        key !== currentWork.key ? `**Proposed Key:** ${key}` : '',
+        notes !== currentWork.notes ? `**Proposed Notes:** ${notes}` : '',
+        '',
+        `Submitted by: ${submitter}`,
+    ].filter(Boolean).join('\n');
 
-                    // Chord
-                    let chord = c.chord;
-                    if (transpose !== 0) {
-                        chord = transposeChord(chord, transpose);
-                    }
-                    if (nashvilleMode && currentDetectedKey) {
-                        chord = toNashville(chord, currentDetectedKey);
-                    }
-
-                    if (shouldHide) {
-                        html += `<span class="chord hidden">${escapeHtml(chord)}</span>`;
-                    } else {
-                        html += `<span class="chord">${escapeHtml(chord)}</span>`;
-                    }
-
-                    lastPos = c.position + c.chord.length;
-                });
-
-                html += '</div>';
-            }
-
-            // Lyrics line
-            if (line.lyrics) {
-                html += `<div class="lyrics">${escapeHtml(line.lyrics)}</div>`;
-            }
-
-            html += '</div>';
-        });
-
-        html += '</div>';
+    const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+            'apikey': SUPABASE_ANON_KEY,
+        },
+        body: JSON.stringify({
+            type: 'correction',
+            title: `Update placeholder metadata: ${title}`,
+            songId: currentWork.id,
+            chordpro: `{meta: title ${title}}\n{meta: artist ${artist}}\n{key: ${key}}\n`,
+            comment: `Placeholder metadata update:\n${body}`,
+            submittedBy: submitter,
+        }),
     });
 
-    container.innerHTML = html;
-    container.style.fontSize = `${fontMultiplier}em`;
+    const result = await response.json();
+    if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Failed to submit');
+    }
+}
+
+/**
+ * Convert an image file to PDF bytes using pdf-lib (lazy-loaded).
+ */
+async function imageToPdfBlob(imageFile) {
+    // Lazy-load pdf-lib
+    if (!window.PDFLib) {
+        await new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js';
+            script.onload = resolve;
+            script.onerror = () => reject(new Error('Failed to load pdf-lib'));
+            document.head.appendChild(script);
+        });
+    }
+    const PDFLib = window.PDFLib;
+    const pdfDoc = await PDFLib.PDFDocument.create();
+
+    const arrayBuffer = await imageFile.arrayBuffer();
+    const bytes = new Uint8Array(arrayBuffer);
+
+    let image;
+    if (imageFile.type === 'image/png') {
+        image = await pdfDoc.embedPng(bytes);
+    } else {
+        // Convert to JPEG via canvas
+        const jpegBytes = await new Promise((resolve, reject) => {
+            const img = new Image();
+            const url = URL.createObjectURL(imageFile);
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                canvas.width = img.naturalWidth;
+                canvas.height = img.naturalHeight;
+                canvas.getContext('2d').drawImage(img, 0, 0);
+                canvas.toBlob(
+                    (blob) => { URL.revokeObjectURL(url); blob ? blob.arrayBuffer().then(buf => resolve(new Uint8Array(buf))) : reject(new Error('Canvas to blob failed')); },
+                    'image/jpeg', 0.92
+                );
+            };
+            img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Failed to load image')); };
+            img.src = url;
+        });
+        image = await pdfDoc.embedJpg(jpegBytes);
+    }
+
+    const maxW = 612, maxH = 792;
+    let { width, height } = image.scale(1);
+    if (width > maxW || height > maxH) {
+        const scale = Math.min(maxW / width, maxH / height);
+        width *= scale;
+        height *= scale;
+    }
+    const page = pdfDoc.addPage([width, height]);
+    page.drawImage(image, { x: 0, y: 0, width, height });
+
+    const pdfBytes = await pdfDoc.save();
+    return new Blob([pdfBytes], { type: 'application/pdf' });
+}
+
+/**
+ * Upload a document for a placeholder (trusted user flow).
+ */
+async function uploadPlaceholderDocument(file, label) {
+    const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) throw new Error('Not connected to database');
+
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) throw new Error('Not logged in');
+
+    // Convert images to PDF
+    let pdfBlob = file;
+    if (file.type !== 'application/pdf') {
+        pdfBlob = await imageToPdfBlob(file);
+    }
+
+    const arrayBuffer = await pdfBlob.arrayBuffer();
+    const base64 = btoa(new Uint8Array(arrayBuffer).reduce((s, b) => s + String.fromCharCode(b), ''));
+
+    const filename = file.type === 'application/pdf'
+        ? file.name.replace(/[^a-zA-Z0-9._-]/g, '-')
+        : currentWork.id + '.pdf';
+
+    const resp = await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${session.access_token}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            id: currentWork.id,
+            title: currentWork.title,
+            artist: currentWork.artist,
+            content: null,
+            create_placeholder: true,
+            key: currentWork.key || null,
+            attachment: { filename, base64, label: label || currentWork.title },
+        }),
+    });
+
+    if (!resp.ok) {
+        const body = await resp.text();
+        console.warn('Auto-commit response:', body);
+    }
+
+    // Stash blob URL for immediate display
+    if (!window.__pendingDocuments) window.__pendingDocuments = {};
+    window.__pendingDocuments[currentWork.id] = {
+        url: URL.createObjectURL(pdfBlob),
+        label: label || currentWork.title,
+    };
+}
+
+/**
+ * Upload a document for a placeholder (regular user flow — stages for review).
+ */
+async function uploadPlaceholderDocumentRegular(file, label) {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) throw new Error('Not connected to database');
+
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) throw new Error('Not logged in');
+
+    // Convert images to PDF
+    let pdfBlob = file;
+    if (file.type !== 'application/pdf') {
+        pdfBlob = await imageToPdfBlob(file);
+    }
+
+    const filename = file.type === 'application/pdf'
+        ? file.name.replace(/[^a-zA-Z0-9._-]/g, '-')
+        : currentWork.id + '.pdf';
+
+    // Upload to staging bucket
+    const storagePath = `${session.user.id}/${currentWork.id}/${filename}`;
+    const { error: uploadError } = await supabase.storage
+        .from('doc-staging')
+        .upload(storagePath, pdfBlob, { contentType: 'application/pdf' });
+
+    if (uploadError) throw new Error(uploadError.message);
+
+    // Insert staging metadata
+    const { error: dbError } = await supabase
+        .from('doc_staging')
+        .insert({
+            user_id: session.user.id,
+            work_id: currentWork.id,
+            storage_path: storagePath,
+            label: label || currentWork.title,
+            file_size: pdfBlob.size,
+        });
+
+    if (dbError) throw new Error(dbError.message);
+}
+
+// ============================================
+// PART RENDERERS (Tab + Doc for inline expansion)
+// ============================================
+
+/**
+ * Render lead-sheet part inline.
+ * ABC notation is rendered via ABCJS. ChordPro falls back to openSong().
+ */
+function renderLeadSheetPart(part, container) {
+    const abcContent = currentWork.abc_content;
+
+    if (abcContent) {
+        // Render ABC notation inline
+        const abcId = 'work-abc-notation';
+        container.innerHTML = `<div id="${abcId}" class="abc-notation-container"></div>`;
+
+        // Use ABCJS if available
+        if (typeof ABCJS !== 'undefined') {
+            try {
+                const containerWidth = container.clientWidth || window.innerWidth - 32;
+                const isMobile = window.innerWidth <= 600;
+                const minWidth = isMobile ? 280 : 400;
+                const staffwidth = Math.max(minWidth, containerWidth - 32);
+
+                ABCJS.renderAbc(abcId, abcContent, {
+                    staffwidth,
+                    scale: 1.0,
+                    add_classes: true,
+                    wrap: {
+                        minSpacing: 1.5,
+                        maxSpacing: 2.5,
+                        preferredMeasuresPerLine: 4
+                    },
+                    paddingleft: 0,
+                    paddingright: 0,
+                    paddingbottom: 30
+                });
+            } catch (e) {
+                console.error('ABC rendering error:', e);
+                container.innerHTML = `<pre class="abc-fallback">${escapeHtml(abcContent)}</pre>`;
+            }
+        } else {
+            container.innerHTML = `<pre class="abc-fallback">${escapeHtml(abcContent)}</pre>`;
+        }
+
+        // Source attribution
+        if (currentWork.source) {
+            const sourceEl = document.createElement('div');
+            sourceEl.className = 'work-inline-source';
+            sourceEl.textContent = `Source: ${currentWork.source}`;
+            container.appendChild(sourceEl);
+        }
+    } else {
+        // ChordPro lead sheet - open in song view (full rendering pipeline)
+        openSong(currentWork.id);
+    }
+}
+
+function renderDocumentPart(part, container) {
+    const downloadUrl = part.file;
+    const label = escapeHtml(part.label || 'Document');
+
+    const pendingBanner = part.pending
+        ? `<div class="upload-processing-banner">
+            Your upload is saved! It may take a few minutes to appear for other users.
+           </div>`
+        : '';
+
+    container.innerHTML = `
+        ${pendingBanner}
+        <div class="document-viewer">
+            <div class="document-toolbar">
+                <span class="document-label">${label}</span>
+                <a href="${downloadUrl}" download class="document-download-btn">Download PDF</a>
+            </div>
+            <object data="${downloadUrl}" type="application/pdf" class="pdf-embed">
+                <p>PDF cannot be displayed inline. <a href="${downloadUrl}">Download instead</a>.</p>
+            </object>
+        </div>
+    `;
 }
 
 /**
@@ -689,14 +1639,13 @@ async function renderTablaturePart(part, container) {
         container.innerHTML = '';
         destroyTrackRenderers(); // disconnect old theme/resize observers
 
-        // Inject controls into the header's controls content area
+        // Inject controls into the inline controls area
         const controls = createTablatureControls(otf, part);
         const controlsContent = document.getElementById('work-controls-content');
         if (controlsContent) {
             controlsContent.innerHTML = '';
             controlsContent.appendChild(controls);
         } else {
-            // Fallback: add controls to container if header not found
             container.appendChild(controls);
         }
 
@@ -733,7 +1682,6 @@ async function renderTablaturePart(part, container) {
             }
         }
 
-        // Render each track in its own section
         for (const track of otf.tracks) {
             let notation = otf.notation[track.id];
             if (!notation || notation.length === 0) continue;
@@ -741,13 +1689,8 @@ async function renderTablaturePart(part, container) {
             const isLead = track.id === leadTrackId || track.role === 'lead';
             const isMandolin = track.instrument?.includes('mandolin') || track.id?.includes('mandolin');
 
-            // Skip mandolin backup tracks - chop notation is often buggy in TEF files
-            // Only show mandolin if it's the lead/melody track
-            if (isMandolin && !isLead) {
-                continue;
-            }
+            if (isMandolin && !isLead) continue;
 
-            // Apply reading list: either compact (with repeat signs) or expanded (unrolled)
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
                 notation = prepareCompactNotation(notation, otf.reading_list);
             } else if (otf.reading_list && otf.reading_list.length > 0) {
@@ -759,7 +1702,6 @@ async function renderTablaturePart(part, container) {
                          track.id.includes('guitar') ? '🎸' :
                          track.id.includes('fiddle') ? '🎻' : '🎵');
 
-            // Create track section with header
             const trackSection = document.createElement('div');
             trackSection.className = `tablature-track-section${isLead ? '' : ' backup-track'}`;
             trackSection.dataset.trackId = track.id;
@@ -777,7 +1719,6 @@ async function renderTablaturePart(part, container) {
 
             allTracksContainer.appendChild(trackSection);
 
-            // Create renderer for this track
             const renderer = new TabRenderer(tabContainer);
             renderer.render(track, notation, ticksPerBeat, timeSignature, timings.visual);
             trackRenderers[track.id] = renderer;
@@ -841,7 +1782,6 @@ async function renderTablaturePart(part, container) {
             });
         }
 
-        // Set up player with lead track renderer for visualization
         const leadRenderer = trackRenderers[leadTrackId] || Object.values(trackRenderers)[0];
         setupTablaturePlayer(otf, controls, leadRenderer);
 
@@ -857,8 +1797,6 @@ async function renderTablaturePart(part, container) {
             attribution.className = 'tab-attribution';
 
             let attrHtml = '<div class="attribution-content">';
-
-            // Author credit with link
             if (part.author) {
                 attrHtml += '<span class="attribution-item">Tabbed by ';
                 if (part.author_url) {
@@ -868,15 +1806,10 @@ async function renderTablaturePart(part, container) {
                 }
                 attrHtml += '</span>';
             }
-
-            // Source link
             if (part.source_page_url) {
                 attrHtml += `<span class="attribution-item"><a href="${part.source_page_url}" target="_blank" rel="noopener">View on Banjo Hangout</a></span>`;
             }
-
             attrHtml += '</div>';
-
-            // Disclaimer
             attrHtml += '<div class="attribution-disclaimer">';
             attrHtml += 'This tab was converted from TablEdit format and may contain minor errors. ';
             attrHtml += 'Please report issues if you notice problems.';
@@ -962,7 +1895,6 @@ function createTablatureControls(otf, part) {
     const defaultTempo = Math.round(quarterBpm / (twoFeelMode ? 2 : 1));
     const originalKey = currentWork.key || 'G';
 
-    // Filter out mandolin backup tracks (chop notation is often buggy)
     const filteredTracks = otf.tracks.filter(track => {
         const isMandolin = track.instrument?.includes('mandolin') || track.id?.includes('mandolin');
         const isLead = track.role === 'lead' || track.instrument?.includes('banjo') ||
@@ -970,7 +1902,6 @@ function createTablatureControls(otf, part) {
         return !isMandolin || isLead;
     });
 
-    // Build track mixer if multiple tracks
     const trackMixerHtml = filteredTracks.length > 1 ? `
         <div class="tab-track-mixer">
             <span class="mixer-label">Sound:</span>
@@ -991,7 +1922,6 @@ function createTablatureControls(otf, part) {
         </div>
     ` : '';
 
-    // Only show repeat toggle if there's a reading list
     const hasReadingList = otf.reading_list && otf.reading_list.length > 0;
     const repeatToggleHtml = hasReadingList ? `
         <div class="qc-group">
@@ -1013,7 +1943,6 @@ function createTablatureControls(otf, part) {
         </div>
     ` : '';
 
-    // Build key options with capo indicators (chromatic order for vocal range adjustment)
     const keyOptions = CHROMATIC_MAJOR_KEYS.map(k => {
         const capo = (CHROMATIC_MAJOR_KEYS.indexOf(k) - CHROMATIC_MAJOR_KEYS.indexOf(originalKey) + 12) % 12;
         const capoLabel = capo === 0 ? '' : ` (Capo ${capo})`;
@@ -1022,7 +1951,6 @@ function createTablatureControls(otf, part) {
 
     const controls = document.createElement('div');
     controls.className = 'tab-controls';
-    // Control order matches lyrics/ABC: Size → Key → Tempo → Play
     controls.innerHTML = `
         <div class="qc-group">
             <button class="tab-size-down qc-btn" title="Decrease size">−</button>
@@ -1087,7 +2015,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
 
     let currentTempo = parseInt(tempoDisplay.textContent, 10);
     let currentCapo = 0;
-    let currentScale = 1.0; // Scale factor for tablature size
+    let currentScale = 1.0;
 
     // Map playback ticks to visual ticks for compact mode: playback follows
     // the unrolled reading list while the display shows written measures.
@@ -1109,18 +2037,15 @@ function setupTablaturePlayer(otf, controls, renderer) {
     player.onNoteStart = (absTick) => eachRenderer(r => r.highlightNote(tickMapper(absTick)));
     player.onNoteEnd = (absTick) => eachRenderer(r => r.clearNoteHighlight(tickMapper(absTick)));
 
-    // Size controls - scale the tablature
     const updateSize = (delta) => {
         currentScale = Math.max(0.6, Math.min(1.6, currentScale + delta));
         const container = document.querySelector('.tablature-container');
         if (container) {
             container.style.setProperty('--tab-scale', currentScale);
-            // Trigger reflow if renderer supports it
             if (typeof renderer.reflow === 'function') {
                 renderer.reflow();
             }
         }
-        // Update button states
         sizeDown.disabled = currentScale <= 0.6;
         sizeUp.disabled = currentScale >= 1.6;
     };
@@ -1128,7 +2053,6 @@ function setupTablaturePlayer(otf, controls, renderer) {
     sizeDown?.addEventListener('click', () => updateSize(-0.1));
     sizeUp?.addEventListener('click', () => updateSize(0.1));
 
-    // Metronome
     metronomeCheckbox?.addEventListener('change', () => {
         player.metronomeEnabled = metronomeCheckbox.checked;
     });
@@ -1155,7 +2079,6 @@ function setupTablaturePlayer(otf, controls, renderer) {
     tempoDown?.addEventListener('click', () => setTempo(currentTempo - 5));
     tempoUp?.addEventListener('click', () => setTempo(currentTempo + 5));
 
-    // Key/capo controls
     const updateCapoIndicator = () => {
         capoIndicator.textContent = currentCapo > 0 ? `Capo ${currentCapo}` : '';
     };
@@ -1173,13 +2096,8 @@ function setupTablaturePlayer(otf, controls, renderer) {
         updateCapoIndicator();
     });
 
-    keyDown?.addEventListener('click', () => {
-        selectKeyByIndex(keySelect.selectedIndex - 1);
-    });
-
-    keyUp?.addEventListener('click', () => {
-        selectKeyByIndex(keySelect.selectedIndex + 1);
-    });
+    keyDown?.addEventListener('click', () => selectKeyByIndex(keySelect.selectedIndex - 1));
+    keyUp?.addEventListener('click', () => selectKeyByIndex(keySelect.selectedIndex + 1));
 
     // Position updates — also SELF-HEAL the play button from player
     // truth: optimistic UI plus loop restarts and view switches can
@@ -1203,12 +2121,9 @@ function setupTablaturePlayer(otf, controls, renderer) {
         eachRenderer(r => r.resetPlaybackVisualization());
     };
 
-    // Get enabled tracks from checkboxes (excluding mandolin backup tracks)
     const getEnabledTrackIds = () => {
         const checkboxes = controls.querySelectorAll('.track-checkbox:checked');
         if (checkboxes.length === 0) {
-            // If no checkboxes (single track) or none checked, play filtered tracks
-            // Filter out mandolin backup tracks
             return otf.tracks
                 .filter(t => {
                     const isMandolin = t.instrument?.includes('mandolin') || t.id?.includes('mandolin');
@@ -1374,6 +2289,18 @@ function setupTablaturePlayer(otf, controls, renderer) {
         posEl.textContent = '';
         eachRenderer(r => r.resetPlaybackVisualization());
     });
+}
+
+/**
+ * Get the current item reference for list operations.
+ * Returns "workId/partId" if viewing a specific part, or just "workId" for the dashboard.
+ */
+export function getActiveItemRef() {
+    if (!currentWork) return null;
+    if (inlineExpanded && activePart?.partId) {
+        return `${currentWork.id}/${activePart.partId}`;
+    }
+    return currentWork.id;
 }
 
 // ============================================

@@ -22,12 +22,23 @@ show_help() {
     echo "  add-song <file.pro> [--skip-index-rebuild]"
     echo "      Add a song to the manual collection and rebuild the index"
     echo ""
+    echo "  add-placeholder <title> [--artist NAME] [--key KEY] [--tags TAG,TAG] [--notes TEXT]"
+    echo "      Create a placeholder work with metadata but no content"
+    echo ""
     echo "  count-chords [path]"
     echo "      Count chord usage in .pro files"
     echo ""
     echo "  refresh-tags"
     echo "      Refresh artist tags from MusicBrainz (requires local MB database)"
     echo "      and rebuild the index"
+    echo ""
+    echo "  sync-tag-votes"
+    echo "      Sync tag overrides from trusted user votes in Supabase"
+    echo "      (requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars)"
+    echo ""
+    echo "  sync-deleted-songs"
+    echo "      Sync deleted songs list from Supabase"
+    echo "      (requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars)"
     echo ""
     echo "  fetch-tune <name>"
     echo "      Fetch a single tune from TuneArch by name and rebuild the index"
@@ -91,6 +102,14 @@ case "$COMMAND" in
     add-song)
         uv run python3 scripts/lib/add_song.py "$@"
         ;;
+    add-placeholder)
+        if [ -z "$1" ]; then
+            echo "Error: song title required"
+            echo "Usage: ./scripts/utility add-placeholder \"Song Title\" [--artist NAME] [--key KEY]"
+            exit 1
+        fi
+        uv run python3 scripts/lib/add_placeholder.py "$@"
+        ;;
     count-chords)
         uv run python3 scripts/lib/chord_counter.py "$@"
         ;;
@@ -102,6 +121,24 @@ case "$COMMAND" in
         uv run python3 scripts/lib/build_index.py
         echo ""
         echo "Done! Tags refreshed and index rebuilt."
+        ;;
+    sync-tag-votes)
+        echo "Fetching tag overrides from trusted user votes..."
+        uv run python3 scripts/lib/fetch_tag_overrides.py
+        echo ""
+        echo "Rebuilding index..."
+        ./scripts/bootstrap --quick
+        echo ""
+        echo "Done! Tag overrides synced and index rebuilt."
+        ;;
+    sync-deleted-songs)
+        echo "Fetching deleted songs list from Supabase..."
+        uv run python3 scripts/lib/fetch_deleted_songs.py
+        echo ""
+        echo "Rebuilding index..."
+        ./scripts/bootstrap --quick
+        echo ""
+        echo "Done! Deleted songs synced and index rebuilt."
         ;;
     fetch-tune)
         if [ -z "$1" ]; then

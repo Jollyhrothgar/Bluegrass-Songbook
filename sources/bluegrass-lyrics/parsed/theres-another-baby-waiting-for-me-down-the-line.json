@@ -1,0 +1,39 @@
+{
+  "slug": "theres-another-baby-waiting-for-me-down-the-line",
+  "title": "There\u2019s Another Baby Waiting For Me Down The Line",
+  "source_url": "https://www.bluegrasslyrics.com/song/theres-another-baby-waiting-for-me-down-the-line/",
+  "raw_lyrics": "There\u2019s another baby waiting for me down the line\nShe has got just what it takes and I have got the time\nAnd you have been untrue my darling to the tie that binds\nSo there\u2019s another baby waiting for me down the line\n\nI have stayed awake and wondered what I\u2019m gonna do\nWhile you went out honky tonkin\u2019 coming home at two\nBut tonight I\u2019m all dressed up and feeling Oh so fine\nFor there\u2019s another baby waiting for me down the line\n\nI may not be at home my darling for a day or more\nI\u2019ll give you just a little taste of walking the floor\nYou won\u2019t need me no longer since I\u2019ve found out you\u2019re that kind\nFor there\u2019s another baby waiting for me down the line",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s another baby waiting for me down the line",
+        "She has got just what it takes and I have got the time",
+        "And you have been untrue my darling to the tie that binds",
+        "So there\u2019s another baby waiting for me down the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have stayed awake and wondered what I\u2019m gonna do",
+        "While you went out honky tonkin\u2019 coming home at two",
+        "But tonight I\u2019m all dressed up and feeling Oh so fine",
+        "For there\u2019s another baby waiting for me down the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I may not be at home my darling for a day or more",
+        "I\u2019ll give you just a little taste of walking the floor",
+        "You won\u2019t need me no longer since I\u2019ve found out you\u2019re that kind",
+        "For there\u2019s another baby waiting for me down the line"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

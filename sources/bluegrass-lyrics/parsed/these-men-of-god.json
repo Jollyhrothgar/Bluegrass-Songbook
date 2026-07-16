@@ -1,0 +1,49 @@
+{
+  "slug": "these-men-of-god",
+  "title": "These Men Of God",
+  "source_url": "https://www.bluegrasslyrics.com/song/these-men-of-god/",
+  "raw_lyrics": "Go down yonder Moses down in the land of Egypt\nTell that old Pharoah to set my children free\nMoses did obey\nHe set his children free\n\nGo down to the river God told Lazarus\nDip in yourself in Jordan wash your spots away\nLazarus did obey\nHis spots were washed away\n\nTake your son and burn him God told Abraham\nBuild yourself an altar God told Abraham\nAbraham did obey an\nAnd God gave him a lamb\n\nTake your horn and blow it God told Joshua\nThe walls of Jericho then fell God then had his way\nJoshua did obey\nAnd God then had his way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Go down yonder Moses down in the land of Egypt",
+        "Tell that old Pharoah to set my children free",
+        "Moses did obey",
+        "He set his children free"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go down to the river God told Lazarus",
+        "Dip in yourself in Jordan wash your spots away",
+        "Lazarus did obey",
+        "His spots were washed away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take your son and burn him God told Abraham",
+        "Build yourself an altar God told Abraham",
+        "Abraham did obey an",
+        "And God gave him a lamb"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take your horn and blow it God told Joshua",
+        "The walls of Jericho then fell God then had his way",
+        "Joshua did obey",
+        "And God then had his way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

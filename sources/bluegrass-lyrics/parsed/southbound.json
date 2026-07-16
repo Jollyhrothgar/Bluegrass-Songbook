@@ -1,0 +1,48 @@
+{
+  "slug": "southbound",
+  "title": "Southbound",
+  "source_url": "https://www.bluegrasslyrics.com/song/southbound/",
+  "raw_lyrics": "I\u2019ve been here a month or more stuck in this old city\nThe people that have to call it home they\u2019re the ones I pity\nLord I\u2019m homesick\nAnd the blues are the only songs I ever seem to pick\nI get out and walk the street\n\u2019til I get blisters on my feet\nI\u2019m southbound\n\nI\u2019m all right \u2019til late at night I\u2019m sitting by my window\nCounting sheep but I couldn\u2019t sleep for listening to that train blow\nI begin to pine\nWhen I hear that big old engine rolling down the line\nI\u2019m going back to spend some time\nwhere I can have fun if I ain\u2019t got a dime\nI\u2019m southbound\n\nSouthbound she\u2019s burning the ground and I don\u2019t mean maybe\nSure am glad I caught this train cause I\u2019d like to see my baby\nI\u2019ve been lonesome\nI long to see them hills I come from\nListen to the engine rattle and roar\nShe\u2019s taking me back home once more\nI\u2019m southbound",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve been here a month or more stuck in this old city",
+        "The people that have to call it home they\u2019re the ones I pity",
+        "Lord I\u2019m homesick",
+        "And the blues are the only songs I ever seem to pick",
+        "I get out and walk the street",
+        "\u2019til I get blisters on my feet",
+        "I\u2019m southbound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m all right \u2019til late at night I\u2019m sitting by my window",
+        "Counting sheep but I couldn\u2019t sleep for listening to that train blow",
+        "I begin to pine",
+        "When I hear that big old engine rolling down the line",
+        "I\u2019m going back to spend some time",
+        "where I can have fun if I ain\u2019t got a dime",
+        "I\u2019m southbound"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Southbound she\u2019s burning the ground and I don\u2019t mean maybe",
+        "Sure am glad I caught this train cause I\u2019d like to see my baby",
+        "I\u2019ve been lonesome",
+        "I long to see them hills I come from",
+        "Listen to the engine rattle and roar",
+        "She\u2019s taking me back home once more",
+        "I\u2019m southbound"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

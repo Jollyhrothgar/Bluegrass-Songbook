@@ -49,7 +49,7 @@ export const RENDERERS = {
      * (Existing rendering is in song-view.js - this is a placeholder for future extraction)
      */
     chordpro: {
-        name: 'Lead Sheet',
+        name: 'Lyrics & Chords',
         extensions: ['.pro', '.cho', '.chopro'],
         canPlayback: false,
 

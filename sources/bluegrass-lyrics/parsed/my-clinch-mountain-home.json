@@ -1,0 +1,60 @@
+{
+  "slug": "my-clinch-mountain-home",
+  "title": "My Clinch Mountain Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-clinch-mountain-home/",
+  "raw_lyrics": "Far away upon a hill on a sunny mountain side\nMany years ago we parted, my own true love and I From the sunny mountain side\n\nOh she clung to me and trembled, when I told her we must part\nAnd she said don\u2019t go my darling I know twill break my heart\nWhen we two are far apart\n\nCarry me back to old Virginia back to my clinch mountain home\nCarry me back to old Virginia back to my old mountain home\n\nMy mother\u2019s old and feeble and my father\u2019s getting gray\nCarry me back to old Virginia for its there I want to stay\n\nOh I held her in my arms leaned her head upon my breast\nAnd I told her that I\u2019d wed her when I come back from the west\nTo my old clinch mountain home\n\nIn my hand I hold a picture of the old home far away And the picture of my sweetheart\nI\u2019m thinking of today\nOn the sunny mountain side",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Far away upon a hill on a sunny mountain side",
+        "Many years ago we parted, my own true love and I From the sunny mountain side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh she clung to me and trembled, when I told her we must part",
+        "And she said don\u2019t go my darling I know twill break my heart",
+        "When we two are far apart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Carry me back to old Virginia back to my clinch mountain home",
+        "Carry me back to old Virginia back to my old mountain home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother\u2019s old and feeble and my father\u2019s getting gray",
+        "Carry me back to old Virginia for its there I want to stay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I held her in my arms leaned her head upon my breast",
+        "And I told her that I\u2019d wed her when I come back from the west",
+        "To my old clinch mountain home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In my hand I hold a picture of the old home far away And the picture of my sweetheart",
+        "I\u2019m thinking of today",
+        "On the sunny mountain side"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

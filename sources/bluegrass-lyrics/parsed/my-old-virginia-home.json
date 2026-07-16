@@ -1,0 +1,39 @@
+{
+  "slug": "my-old-virginia-home",
+  "title": "My Old Virginia Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-old-virginia-home/",
+  "raw_lyrics": "It was on one winter day from my home I went away\nFar away from friends and home I longed to roam\nBut tonight I\u2019m lone and sad just a little homesick lad\nAnd I\u2019m longing for my old Virginia home\n\nI\u2019m a lad from old Virginia bravely knocking my way back home\nTo that cabin home in the mountains never more let me roam\nI\u2019m a lad from old Virginia and I\u2019m coming coming home\nThere I\u2019ll settle down forever in my old Virginia home\n\nSince I left that little shack how my mind has wandered back\nHow mother often prayed for her lad\nBut from her I went astray and I know I\u2019ve dearly paid\nSo I\u2019m coming back to mother and my dad",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "It was on one winter day from my home I went away",
+        "Far away from friends and home I longed to roam",
+        "But tonight I\u2019m lone and sad just a little homesick lad",
+        "And I\u2019m longing for my old Virginia home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m a lad from old Virginia bravely knocking my way back home",
+        "To that cabin home in the mountains never more let me roam",
+        "I\u2019m a lad from old Virginia and I\u2019m coming coming home",
+        "There I\u2019ll settle down forever in my old Virginia home"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Since I left that little shack how my mind has wandered back",
+        "How mother often prayed for her lad",
+        "But from her I went astray and I know I\u2019ve dearly paid",
+        "So I\u2019m coming back to mother and my dad"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

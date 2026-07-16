@@ -1,0 +1,39 @@
+{
+  "slug": "dont-let-smokey-mountain-smoke-get-in-your-eyes",
+  "title": "Don\u2019t Let Smokey Mountain Smoke Get In Your Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-let-smokey-mountain-smoke-get-in-your-eyes/",
+  "raw_lyrics": "Don\u2019t let Smokey mountain smoke get in your eyes\nIf you do I\u2019m tellin\u2019 you\nYou\u2019ll wan\u2019t to live there the rest of your life\nIf Smokey mountain smoke gets in your eyes\n\nIf you\u2019re looking for a place you will love\nSmokey mountain Cherokee\nThe closest place to Heaven that I know of\nSmokey mountain Tennessee\n\nGattlinburg precious jewel the mountain treasure\nSmokey mountain paradise\nYou\u2019ll want to live in the smokies forever\nIf Smokey mountain smoke gets in your eyes",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t let Smokey mountain smoke get in your eyes",
+        "If you do I\u2019m tellin\u2019 you",
+        "You\u2019ll wan\u2019t to live there the rest of your life",
+        "If Smokey mountain smoke gets in your eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you\u2019re looking for a place you will love",
+        "Smokey mountain Cherokee",
+        "The closest place to Heaven that I know of",
+        "Smokey mountain Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Gattlinburg precious jewel the mountain treasure",
+        "Smokey mountain paradise",
+        "You\u2019ll want to live in the smokies forever",
+        "If Smokey mountain smoke gets in your eyes"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

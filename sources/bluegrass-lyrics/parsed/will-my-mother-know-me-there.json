@@ -1,0 +1,49 @@
+{
+  "slug": "will-my-mother-know-me-there",
+  "title": "Will My Mother Know Me There",
+  "source_url": "https://www.bluegrasslyrics.com/song/will-my-mother-know-me-there/",
+  "raw_lyrics": "I have changed with changing seasons\nI am dimmed with toil and care\nWhen I stand among the angels\nWill my mother know me there\n\nYes I know that she will know me\nIn those mansions bright and fair\nMother\u2019s love can n\u2019er forget me\nAnd I\u2019m sure she\u2019ll know me there\n\nAll for me my mother wrestled\nWhen she used to kneel in prayer\nDo you think we have forgotten\nWill my mother know me there\n\nMothers face has been a beckoned\nO\u2019er the sea of deep despair\nI shall look for her up yonder\nWill my mother know me there",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I have changed with changing seasons",
+        "I am dimmed with toil and care",
+        "When I stand among the angels",
+        "Will my mother know me there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Yes I know that she will know me",
+        "In those mansions bright and fair",
+        "Mother\u2019s love can n\u2019er forget me",
+        "And I\u2019m sure she\u2019ll know me there"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All for me my mother wrestled",
+        "When she used to kneel in prayer",
+        "Do you think we have forgotten",
+        "Will my mother know me there"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Mothers face has been a beckoned",
+        "O\u2019er the sea of deep despair",
+        "I shall look for her up yonder",
+        "Will my mother know me there"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

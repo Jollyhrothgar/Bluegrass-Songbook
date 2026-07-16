@@ -1,0 +1,59 @@
+{
+  "slug": "to-prove-my-love-to-you",
+  "title": "To Prove My Love To You",
+  "source_url": "https://www.bluegrasslyrics.com/song/to-prove-my-love-to-you/",
+  "raw_lyrics": "Through thick and thin gonna sink or swim\nTo prove my love to you\nAnd if I have to climb a mountain\nWell that\u2019s what I\u2019ll do\n\nI\u2019d fight a bull like a matador\nLaugh in the face of a dinosaur\nI\u2019d do anything you want me to\nTo prove my love to you\n\nYes to prove my love to you\nI\u2019d swim the ocean blue\nWell I\u2019d wrestle a gator box a kangaroo\nJust to prove my love to you\n\nAnd to say that I don\u2019t have to do these things\nTo prove my love to you\nJust hold you close whisper low\nThat my love to you\n\nIf that\u2019s all there is for your love to win\nWell I\u2019ll take you now that I know I\u2019m in\nCause I\u2019d do anything that you want me to\nTo prove my love to you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Through thick and thin gonna sink or swim",
+        "To prove my love to you",
+        "And if I have to climb a mountain",
+        "Well that\u2019s what I\u2019ll do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d fight a bull like a matador",
+        "Laugh in the face of a dinosaur",
+        "I\u2019d do anything you want me to",
+        "To prove my love to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Yes to prove my love to you",
+        "I\u2019d swim the ocean blue",
+        "Well I\u2019d wrestle a gator box a kangaroo",
+        "Just to prove my love to you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And to say that I don\u2019t have to do these things",
+        "To prove my love to you",
+        "Just hold you close whisper low",
+        "That my love to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If that\u2019s all there is for your love to win",
+        "Well I\u2019ll take you now that I know I\u2019m in",
+        "Cause I\u2019d do anything that you want me to",
+        "To prove my love to you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

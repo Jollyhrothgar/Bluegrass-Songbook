@@ -1,0 +1,49 @@
+{
+  "slug": "let-the-harvest-go-to-seed",
+  "title": "Let The Harvest Go To Seed",
+  "source_url": "https://www.bluegrasslyrics.com/song/let-the-harvest-go-to-seed/",
+  "raw_lyrics": "We plowed this field with a red mule we would rake and we would hoe\nClear away the rocks and weeds plant the seeds and watch \u2019em grow\nTend the crops until they\u2019d blossom see the corn yellow and tall\nIf the summer rains were kindly we\u2019d have a harvest in the fall\n\nYou have been my true companion since the day our love was young\nDarling stand beside me and watch the setting sun\nIf I die before you do one request I ask you please\nPray Jesus take my soul let the harvest go to seed\n\nOh I feel like that old mountain standin\u2019 lonesome in the sky\nWhere the cries of the wolf hungy winds mournful sigh\nHigh above our little cabin lay my bones there to rest\nWhere the wild birds and critters still make their little nests\n\nOh who will reap the harvest when it ripens on the vine\nWho will tend the vineyard who will drink the new wine\nDarlin\u2019 please remember let the harvest go to seed\nSo the wild birds and critters will have enough to eat",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We plowed this field with a red mule we would rake and we would hoe",
+        "Clear away the rocks and weeds plant the seeds and watch \u2019em grow",
+        "Tend the crops until they\u2019d blossom see the corn yellow and tall",
+        "If the summer rains were kindly we\u2019d have a harvest in the fall"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You have been my true companion since the day our love was young",
+        "Darling stand beside me and watch the setting sun",
+        "If I die before you do one request I ask you please",
+        "Pray Jesus take my soul let the harvest go to seed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I feel like that old mountain standin\u2019 lonesome in the sky",
+        "Where the cries of the wolf hungy winds mournful sigh",
+        "High above our little cabin lay my bones there to rest",
+        "Where the wild birds and critters still make their little nests"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh who will reap the harvest when it ripens on the vine",
+        "Who will tend the vineyard who will drink the new wine",
+        "Darlin\u2019 please remember let the harvest go to seed",
+        "So the wild birds and critters will have enough to eat"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "down-in-the-willow-garden",
+  "title": "Down In The Willow Garden",
+  "source_url": "https://www.bluegrasslyrics.com/song/down-in-the-willow-garden/",
+  "raw_lyrics": "Down in the willow garden where me and my love did meet\nThere we sat a-courting my love fell off to sleep\nI had a bottle of burgundy wine which my true love did not know\nAnd there I poisoned that dear little girl down by the banks below\n\nI drew my saber through her which was a bloody knife\nI threw her in the river which was an awful sight\nMy father often told me that money would set me free\nIf I would murder that dear little miss whose name was Rose Connelly\n\nNow he sits by his old cabin door a wiping his tear-brimmed eyes\nMourning for his only son out on the scaffold high\nMy race is run beneath the sun the devil is waiting for me\nFor I did murder that dear little girl whose name was Rose Connelly",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Down in the willow garden where me and my love did meet",
+        "There we sat a-courting my love fell off to sleep",
+        "I had a bottle of burgundy wine which my true love did not know",
+        "And there I poisoned that dear little girl down by the banks below"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I drew my saber through her which was a bloody knife",
+        "I threw her in the river which was an awful sight",
+        "My father often told me that money would set me free",
+        "If I would murder that dear little miss whose name was Rose Connelly"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now he sits by his old cabin door a wiping his tear-brimmed eyes",
+        "Mourning for his only son out on the scaffold high",
+        "My race is run beneath the sun the devil is waiting for me",
+        "For I did murder that dear little girl whose name was Rose Connelly"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

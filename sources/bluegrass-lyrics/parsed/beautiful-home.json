@@ -1,0 +1,43 @@
+{
+  "slug": "beautiful-home",
+  "title": "Beautiful Home",
+  "source_url": "https://www.bluegrasslyrics.com/song/beautiful-home/",
+  "raw_lyrics": "There\u2019s a beautiful home far over the sea\nWith mansions of bliss for you and for me\nA beautiful home so wondrously fair\nThat the savior for me has gone to prepare\n\nThere\u2019s a beautiful home (a beautiful home)\nfar over the sea (far over the sea)\nThere\u2019s a beautiful home (a beautiful home)\nfor you and for me (for you and for me)\nIts glittering powers (its glittering powers)\nof sun out shine (of sun out shine)\nThat beautiful home (that beautiful home)\nsomeday shall be mine  (someday shall be mine)\n\nIn that beautiful home a crown I shall wear\nWith the glorified throng their stories to share\nBut the doors of that home can never be known\nTil the savior we see upon His white throne",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a beautiful home far over the sea",
+        "With mansions of bliss for you and for me",
+        "A beautiful home so wondrously fair",
+        "That the savior for me has gone to prepare"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "There\u2019s a beautiful home (a beautiful home)",
+        "far over the sea (far over the sea)",
+        "There\u2019s a beautiful home (a beautiful home)",
+        "for you and for me (for you and for me)",
+        "Its glittering powers (its glittering powers)",
+        "of sun out shine (of sun out shine)",
+        "That beautiful home (that beautiful home)",
+        "someday shall be mine  (someday shall be mine)"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In that beautiful home a crown I shall wear",
+        "With the glorified throng their stories to share",
+        "But the doors of that home can never be known",
+        "Til the savior we see upon His white throne"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: no-ash-will-burn
+title: No Ash Will Burn
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/no-ash-will-burn/
+      imported_at: '2026-02-08'

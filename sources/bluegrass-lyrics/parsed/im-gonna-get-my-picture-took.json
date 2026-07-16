@@ -1,0 +1,39 @@
+{
+  "slug": "im-gonna-get-my-picture-took",
+  "title": "I\u2019m Gonna Get My Picture Took",
+  "source_url": "https://www.bluegrasslyrics.com/song/im-gonna-get-my-picture-took/",
+  "raw_lyrics": "I\u2019m gonna get my picture took\nAnd then I\u2019ll have it painted blue\nTo show you how I\u2019m looking now\nBecause I loved and trusted you\n\nI\u2019m gonna get my picture took\nJust a wee forget me not\nA small reminder of the one\nWho loved you true but you forgot\n\nI\u2019m gonna get my picture took\nI\u2019ll even put it in a frame\nSo you can see the harm you\u2019ve done\nEvery time you hear my name",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m gonna get my picture took",
+        "And then I\u2019ll have it painted blue",
+        "To show you how I\u2019m looking now",
+        "Because I loved and trusted you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m gonna get my picture took",
+        "Just a wee forget me not",
+        "A small reminder of the one",
+        "Who loved you true but you forgot"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m gonna get my picture took",
+        "I\u2019ll even put it in a frame",
+        "So you can see the harm you\u2019ve done",
+        "Every time you hear my name"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "ten-years",
+  "title": "Ten Years",
+  "source_url": "https://www.bluegrasslyrics.com/song/ten-years/",
+  "raw_lyrics": "Ten Years or more I\u2019ve waited\nFor you to change your ways\nBut starting today it\u2019s all over\nThe price is more than I can pay\n\nTen Years seems like ten million\nI\u2019ve knelt at your command\nBut now it\u2019s too late things are different\nThe price is more than I can stand\n\nTen lonesome years filled with heart aches\nFor me is what you planned\nBut I\u2019ve had enough so I\u2019m leaving\nThe price is more than I can stand\n\nThe past will soon be forgotten\nI\u2019ll find a new love so grand\nNow it\u2019s too late it\u2019s all over\nTen Years is more than I can stand",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Ten Years or more I\u2019ve waited",
+        "For you to change your ways",
+        "But starting today it\u2019s all over",
+        "The price is more than I can pay"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ten Years seems like ten million",
+        "I\u2019ve knelt at your command",
+        "But now it\u2019s too late things are different",
+        "The price is more than I can stand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Ten lonesome years filled with heart aches",
+        "For me is what you planned",
+        "But I\u2019ve had enough so I\u2019m leaving",
+        "The price is more than I can stand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The past will soon be forgotten",
+        "I\u2019ll find a new love so grand",
+        "Now it\u2019s too late it\u2019s all over",
+        "Ten Years is more than I can stand"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

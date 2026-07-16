@@ -1,0 +1,51 @@
+{
+  "slug": "dont-you-see-that-train",
+  "title": "Don\u2019t You See That Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/dont-you-see-that-train/",
+  "raw_lyrics": "Farewell sweetie mine I hate to see you go\nOut into the cruel world alone\nHear the bell on that train hear the whistle blow\nIt\u2019s taking you and leaving me to mourn\n\nDon\u2019t you see that train dee-dee-dee\nSee that train hey hey\nShe\u2019s leaving she\u2019s leaving on that train\nDon\u2019t you see that train dee-dee-dee\nSee that train hey hey\nAnd I\u2019ll never see my sweetheart again\n\nI know well I know I did not treat her right\nThat is why I\u2019m feeling sad and blue\nWo wo wo is me I\u2019m left alone tonight\nShe\u2019s gone away but I still love her too\n\nHey hey what a day it\u2019s left me like a rag\nDon\u2019t know what to do I feel so bad\nThink I\u2019ll take a drink or two to drive my blues away\nFor if I don\u2019t I\u2019ll die because I\u2019m sad",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Farewell sweetie mine I hate to see you go",
+        "Out into the cruel world alone",
+        "Hear the bell on that train hear the whistle blow",
+        "It\u2019s taking you and leaving me to mourn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Don\u2019t you see that train dee-dee-dee",
+        "See that train hey hey",
+        "She\u2019s leaving she\u2019s leaving on that train",
+        "Don\u2019t you see that train dee-dee-dee",
+        "See that train hey hey",
+        "And I\u2019ll never see my sweetheart again"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know well I know I did not treat her right",
+        "That is why I\u2019m feeling sad and blue",
+        "Wo wo wo is me I\u2019m left alone tonight",
+        "She\u2019s gone away but I still love her too"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hey hey what a day it\u2019s left me like a rag",
+        "Don\u2019t know what to do I feel so bad",
+        "Think I\u2019ll take a drink or two to drive my blues away",
+        "For if I don\u2019t I\u2019ll die because I\u2019m sad"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,11 @@
+id: why-theres-a-tear-in-my-eye
+title: Why There’s A Tear In My Eye
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/why-theres-a-tear-in-my-eye/
+      imported_at: '2026-02-08'

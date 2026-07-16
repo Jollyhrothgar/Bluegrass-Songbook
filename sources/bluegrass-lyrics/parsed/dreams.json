@@ -1,0 +1,49 @@
+{
+  "slug": "dreams",
+  "title": "Dreams",
+  "source_url": "https://www.bluegrasslyrics.com/song/dreams/",
+  "raw_lyrics": "I had a dream of you the other night dear\nA dream I could not live in true life I fear\nYou talked with a friend of mine so lovingly\nOh God, oh God a crazy dream please let it be\n\nDreams, dreams of you dear\nTears, tears are so sincere\nLove, love that I can\u2019t hide\nThese dreams are breakin\u2019 down all my pride\n\nWhile music played he danced and held you oh so tight\nThe same way we did when our love was young and bright\nThen he kissed you under lights that were so dim\nI couldn\u2019t stand to see you there alone with him\n\nI realize a dream is only fantasy\nBut tell me why these dreams seem so real to me\nEvery night I have this same old misery\nI guess it\u2019s just because of all my jealousy",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I had a dream of you the other night dear",
+        "A dream I could not live in true life I fear",
+        "You talked with a friend of mine so lovingly",
+        "Oh God, oh God a crazy dream please let it be"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Dreams, dreams of you dear",
+        "Tears, tears are so sincere",
+        "Love, love that I can\u2019t hide",
+        "These dreams are breakin\u2019 down all my pride"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "While music played he danced and held you oh so tight",
+        "The same way we did when our love was young and bright",
+        "Then he kissed you under lights that were so dim",
+        "I couldn\u2019t stand to see you there alone with him"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I realize a dream is only fantasy",
+        "But tell me why these dreams seem so real to me",
+        "Every night I have this same old misery",
+        "I guess it\u2019s just because of all my jealousy"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "an-old-rocking-chair",
+  "title": "An Old Rocking Chair",
+  "source_url": "https://www.bluegrasslyrics.com/song/an-old-rocking-chair/",
+  "raw_lyrics": "Setting alone in an old rocking chair\nI saw an old mother with silvery hair\nShe seemed so neglected by those who still care\nRocking alone in an old rocking chair\n\nHer hands were all callused wrinkled and old\nA life of hard work was the story they told\nAnd I thought of angels as I saw here there\nRocking alone in an old rocking chair\n\nBless her old heart do you think she\u2019d complain\nLife has been bitter tho\u2019 she\u2019d live it again\nAnd carry the cress that is more than her share\nRocking alone in an old rocking chair\n\nIt wouldn\u2019t take much to gladden her heart\nJust some small remembrance on somebody\u2019s part\nA letter would brighten her empty life there\nRocking alone in an old rocking chair\n\nI know some youngster\u2019s in an old orphan\u2019s home\nWho\u2019d think they owned Heaven if she was their own\nThey\u2019d never be willing to let her sit there\nRocking alone in an old rocking chair",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Setting alone in an old rocking chair",
+        "I saw an old mother with silvery hair",
+        "She seemed so neglected by those who still care",
+        "Rocking alone in an old rocking chair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her hands were all callused wrinkled and old",
+        "A life of hard work was the story they told",
+        "And I thought of angels as I saw here there",
+        "Rocking alone in an old rocking chair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Bless her old heart do you think she\u2019d complain",
+        "Life has been bitter tho\u2019 she\u2019d live it again",
+        "And carry the cress that is more than her share",
+        "Rocking alone in an old rocking chair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It wouldn\u2019t take much to gladden her heart",
+        "Just some small remembrance on somebody\u2019s part",
+        "A letter would brighten her empty life there",
+        "Rocking alone in an old rocking chair"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know some youngster\u2019s in an old orphan\u2019s home",
+        "Who\u2019d think they owned Heaven if she was their own",
+        "They\u2019d never be willing to let her sit there",
+        "Rocking alone in an old rocking chair"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

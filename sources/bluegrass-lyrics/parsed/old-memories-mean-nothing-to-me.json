@@ -1,0 +1,56 @@
+{
+  "slug": "old-memories-mean-nothing-to-me",
+  "title": "Old Memories Mean Nothing To Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-memories-mean-nothing-to-me/",
+  "raw_lyrics": "Old memories mean nothing to me\nThey\u2019ve all gone away from me now\nI\u2019m alone in the night it\u2019s plain to see\nAnd old memories mean nothing to me\n\nIt\u2019s the day that I\u2019m thinkin\u2019 of\nI\u2019ve forgotten yesterday\u2019s love\nSo if you don\u2019t love me now set me free\nFor old memories mean nothing to me\n\nTime has a way of passing by\nOver the ruts of our lives it will fly\nAnd if you don\u2019t love me now I can see\nAnd old memories mean nothing to me\n\nI know we once had a fine love\nOver others you towered above\nBut I\u2019m not the playful kind you can see\nAnd old memories mean nothing to me\n\nDel McCoury; Blue Side Of Town",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Old memories mean nothing to me",
+        "They\u2019ve all gone away from me now",
+        "I\u2019m alone in the night it\u2019s plain to see",
+        "And old memories mean nothing to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s the day that I\u2019m thinkin\u2019 of",
+        "I\u2019ve forgotten yesterday\u2019s love",
+        "So if you don\u2019t love me now set me free",
+        "For old memories mean nothing to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Time has a way of passing by",
+        "Over the ruts of our lives it will fly",
+        "And if you don\u2019t love me now I can see",
+        "And old memories mean nothing to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I know we once had a fine love",
+        "Over others you towered above",
+        "But I\u2019m not the playful kind you can see",
+        "And old memories mean nothing to me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Del McCoury; Blue Side Of Town"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

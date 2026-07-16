@@ -1,0 +1,49 @@
+{
+  "slug": "doing-my-time",
+  "title": "Doing My Time",
+  "source_url": "https://www.bluegrasslyrics.com/song/doing-my-time/",
+  "raw_lyrics": "On this old rock pile with a ball and chain\nThey call be by a number not a name, Lord, Lord\nGotta do my time, gotta do my time\nWith an aching heart and worried mind\n\nWhen that old judge looked down and smiled\nHe said I\u2019ll put you on that good road for a while, Lord Lord\nGotta do my time, gotta do my time\nWith an aching heart and a worried mind\n\nYou can hear my hammer you can hear my song\nI\u2019ll swing it like John Henry all day long, Lord Lord\nGotta do my time, gotta do my time\nWith an aching heart and a worried mind\n\nIt won\u2019t be long, just a few more days\nI\u2019ll settle down and quit my rowdy ways Lord Lord\nwith that gal of mine, with that gal of mine\nShe\u2019ll be waiting for me when I\u2019ve done my time",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "On this old rock pile with a ball and chain",
+        "They call be by a number not a name, Lord, Lord",
+        "Gotta do my time, gotta do my time",
+        "With an aching heart and worried mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When that old judge looked down and smiled",
+        "He said I\u2019ll put you on that good road for a while, Lord Lord",
+        "Gotta do my time, gotta do my time",
+        "With an aching heart and a worried mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can hear my hammer you can hear my song",
+        "I\u2019ll swing it like John Henry all day long, Lord Lord",
+        "Gotta do my time, gotta do my time",
+        "With an aching heart and a worried mind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It won\u2019t be long, just a few more days",
+        "I\u2019ll settle down and quit my rowdy ways Lord Lord",
+        "with that gal of mine, with that gal of mine",
+        "She\u2019ll be waiting for me when I\u2019ve done my time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

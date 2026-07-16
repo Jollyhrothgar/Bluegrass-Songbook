@@ -1,0 +1,11 @@
+id: on-my-way-to-canaans-land
+title: On My Way To Canaan’s Land
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/on-my-way-to-canaans-land/
+      imported_at: '2026-02-08'

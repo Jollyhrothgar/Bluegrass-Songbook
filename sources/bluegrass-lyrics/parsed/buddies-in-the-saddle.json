@@ -1,0 +1,69 @@
+{
+  "slug": "buddies-in-the-saddle",
+  "title": "Buddies In The Saddle",
+  "source_url": "https://www.bluegrasslyrics.com/song/buddies-in-the-saddle/",
+  "raw_lyrics": "One stormy day, me and my buddy\nStarted on our roundup ride\nThe wind and dust blew hard around us,\nMy buddy strayed far from my side\n\nWe were buddies in the saddle,\nWe were buddies in our home,\nWe were buddies herding cattle,\nWe were buddies everywhere we roamed\n\nI\u2019ll ne\u2019er forget the day I found him,\nHe was so weak he could not speak\nI\u2019ll ne\u2019er forget the smile he gave me,\nThen the poor boy fell asleep\n\nI took him up in my saddle\nAnd carried him across the plain\nMy mother nursed him every moment\nTo try to make him well again\n\nI\u2019ve never had a pal so near me,\nHe took the blame for everything\nI\u2019d die for him just any moment,\nAnd for me he\u2019d do the same\n\nBut now by buddy\u2019s gone and left me,\nAnd it\u2019s so hard to struggle \u2018long\nSo hard to believe that he has left me,\nI can\u2019t realize that he has gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "One stormy day, me and my buddy",
+        "Started on our roundup ride",
+        "The wind and dust blew hard around us,",
+        "My buddy strayed far from my side"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "We were buddies in the saddle,",
+        "We were buddies in our home,",
+        "We were buddies herding cattle,",
+        "We were buddies everywhere we roamed"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll ne\u2019er forget the day I found him,",
+        "He was so weak he could not speak",
+        "I\u2019ll ne\u2019er forget the smile he gave me,",
+        "Then the poor boy fell asleep"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I took him up in my saddle",
+        "And carried him across the plain",
+        "My mother nursed him every moment",
+        "To try to make him well again"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve never had a pal so near me,",
+        "He took the blame for everything",
+        "I\u2019d die for him just any moment,",
+        "And for me he\u2019d do the same"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "But now by buddy\u2019s gone and left me,",
+        "And it\u2019s so hard to struggle \u2018long",
+        "So hard to believe that he has left me,",
+        "I can\u2019t realize that he has gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

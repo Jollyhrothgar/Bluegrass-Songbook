@@ -1,0 +1,60 @@
+{
+  "slug": "the-lonely-years-belong-to-me",
+  "title": "The Lonely Years Belong To Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-lonely-years-belong-to-me/",
+  "raw_lyrics": "I walked one evening in the moonlight\nI walked one evening in the moonlight\nUnderneath that Summer sky\nI heard a voice so soft and tender\nA neighbor girl sat by my side\n\nI\u2019ve loved you darlin\u2019 for so long now\nI\u2019ve watched and waited all these years\nThey say tomorrow you\u2019ll be married\nHow can I face these lonely years\n\nSo long ago I still remember\nThe words she said I can\u2019t forget\nI told her that I loved another\nShe bowed her head and slowly left\n\nThey buried her down in the churchyard\nAt last her lonely heart is free\nThe one I loved soon met another\nThe lonely years belong to me\n\nI walked again out in the moonlight\nUnderneath that Summer sky\nI heard no voice so soft and tender\nThere was no one by my side",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "I walked one evening in the moonlight",
+        "I walked one evening in the moonlight",
+        "Underneath that Summer sky",
+        "I heard a voice so soft and tender",
+        "A neighbor girl sat by my side"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ve loved you darlin\u2019 for so long now",
+        "I\u2019ve watched and waited all these years",
+        "They say tomorrow you\u2019ll be married",
+        "How can I face these lonely years"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So long ago I still remember",
+        "The words she said I can\u2019t forget",
+        "I told her that I loved another",
+        "She bowed her head and slowly left"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "They buried her down in the churchyard",
+        "At last her lonely heart is free",
+        "The one I loved soon met another",
+        "The lonely years belong to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I walked again out in the moonlight",
+        "Underneath that Summer sky",
+        "I heard no voice so soft and tender",
+        "There was no one by my side"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

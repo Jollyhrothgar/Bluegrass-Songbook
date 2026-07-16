@@ -1,0 +1,49 @@
+{
+  "slug": "angels-rock-me-to-sleep",
+  "title": "Angels Rock Me To Sleep",
+  "source_url": "https://www.bluegrasslyrics.com/song/angels-rock-me-to-sleep/",
+  "raw_lyrics": "My heart is sad my soul is weary\nWhile sailing oe\u2019r life\u2019s rugged plain\nThe clouds are dark the day is dreary\nIt seems\n\nAngels rock me to sleep in the cradle of love\nBear me over the deep to heaven above\nWhen the shadows shall fall and the savior shall call\nAngels rock me to sleep in the cradle of love\n\nThere is no earthly friend to guide me\nNo one to call to heaven\u2019s goal\nBut Christ the savior stands beside me\nTo cheer and comfort my poor soul\n\nAt last the harbor I am nearing\nI see the lights along the shore\nI hear my friends and loved ones cheering\nI\u2019ll soon be safe for ever more",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My heart is sad my soul is weary",
+        "While sailing oe\u2019r life\u2019s rugged plain",
+        "The clouds are dark the day is dreary",
+        "It seems"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Angels rock me to sleep in the cradle of love",
+        "Bear me over the deep to heaven above",
+        "When the shadows shall fall and the savior shall call",
+        "Angels rock me to sleep in the cradle of love"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There is no earthly friend to guide me",
+        "No one to call to heaven\u2019s goal",
+        "But Christ the savior stands beside me",
+        "To cheer and comfort my poor soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "At last the harbor I am nearing",
+        "I see the lights along the shore",
+        "I hear my friends and loved ones cheering",
+        "I\u2019ll soon be safe for ever more"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

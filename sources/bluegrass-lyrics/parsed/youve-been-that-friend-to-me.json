@@ -1,0 +1,41 @@
+{
+  "slug": "youve-been-that-friend-to-me",
+  "title": "You\u2019ve Been That Friend To Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/youve-been-that-friend-to-me/",
+  "raw_lyrics": "My spark of life was spinning down the troubled seas of time\nWhen first I saw your smiling face and youth was in its prime\n\nOh I\u2019ll never forget you wherever I roam wherever you may be\nIf ever I have had a friend you\u2019ve been that friend to me\n\nMisfortune nursed me as her child and loved me fondly too\nI would have had a broken heart had it not have been for you\n\nI now look back upon the past across life\u2019s troubled sea\nAnd smile to think thru all I\u2019ve seen you\u2019ve been a friend to me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My spark of life was spinning down the troubled seas of time",
+        "When first I saw your smiling face and youth was in its prime"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh I\u2019ll never forget you wherever I roam wherever you may be",
+        "If ever I have had a friend you\u2019ve been that friend to me"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Misfortune nursed me as her child and loved me fondly too",
+        "I would have had a broken heart had it not have been for you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I now look back upon the past across life\u2019s troubled sea",
+        "And smile to think thru all I\u2019ve seen you\u2019ve been a friend to me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

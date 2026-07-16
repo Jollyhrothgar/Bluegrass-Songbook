@@ -1,0 +1,49 @@
+{
+  "slug": "rain",
+  "title": "Rain",
+  "source_url": "https://www.bluegrasslyrics.com/song/rain/",
+  "raw_lyrics": "I was born one rainy morn\nJust before my mama died\nFive years daddy left me\nThe rain was falling down outside\n\nRain oh rain leave me alone\nYou\u2019re icy fingers chill my bones\nSeems trouble always comes around\nEach time the rain starts falling down\n\nIt seems the years pass by so quickly\nI grew up fast I grew apart\nNext thing I knew the rain was falling\nOut across the prison yard\n\nNow when I die make me this promise\nTo bury me in the darkest cave\nSo I may know while I am resting\nNo rain will fall upon my grave",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was born one rainy morn",
+        "Just before my mama died",
+        "Five years daddy left me",
+        "The rain was falling down outside"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Rain oh rain leave me alone",
+        "You\u2019re icy fingers chill my bones",
+        "Seems trouble always comes around",
+        "Each time the rain starts falling down"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It seems the years pass by so quickly",
+        "I grew up fast I grew apart",
+        "Next thing I knew the rain was falling",
+        "Out across the prison yard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now when I die make me this promise",
+        "To bury me in the darkest cave",
+        "So I may know while I am resting",
+        "No rain will fall upon my grave"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

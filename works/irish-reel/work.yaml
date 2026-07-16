@@ -4,6 +4,7 @@ artist: Traditional
 default_key: G
 tags:
 - Instrumental
+- OldTime
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,3 +13,6 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+composers:
+- Tom Doucet
+- Bob Walters

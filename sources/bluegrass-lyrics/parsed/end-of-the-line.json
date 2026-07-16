@@ -1,0 +1,59 @@
+{
+  "slug": "end-of-the-line",
+  "title": "End Of The Line",
+  "source_url": "https://www.bluegrasslyrics.com/song/end-of-the-line/",
+  "raw_lyrics": "True love it has been untill now dear\nThey tell me that true love is blind\nBut right now I see It\u2019s as plain as can be\nYou\u2019ve come to the end of the line\n\nYou thought you would leave me broken hearted\nYou thought you would leave me way behind\nWell I\u2019ve paid my fare you\u2019ve had more than your share\nYou\u2019ve come to the end of the line\n\nYou\u2019ve rode for half fare until now dear\nBut you boarded the wrong bus this time\nSo I have a transfer for you\nwell you made me blue\nYou\u2019ve come to the end of the line\n\nYou thought you would leave me broken hearted\nYou thought you that would break this heart of mine\nWell I\u2019ve had enough you can pack up your stuff\nYou\u2019ve come to the end of the line\n\nWell I\u2019ve had enough\nyou can pack up your stuff\nYou\u2019ve come to the end of the line",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "True love it has been untill now dear",
+        "They tell me that true love is blind",
+        "But right now I see It\u2019s as plain as can be",
+        "You\u2019ve come to the end of the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You thought you would leave me broken hearted",
+        "You thought you would leave me way behind",
+        "Well I\u2019ve paid my fare you\u2019ve had more than your share",
+        "You\u2019ve come to the end of the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You\u2019ve rode for half fare until now dear",
+        "But you boarded the wrong bus this time",
+        "So I have a transfer for you",
+        "well you made me blue",
+        "You\u2019ve come to the end of the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You thought you would leave me broken hearted",
+        "You thought you that would break this heart of mine",
+        "Well I\u2019ve had enough you can pack up your stuff",
+        "You\u2019ve come to the end of the line"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ve had enough",
+        "you can pack up your stuff",
+        "You\u2019ve come to the end of the line"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

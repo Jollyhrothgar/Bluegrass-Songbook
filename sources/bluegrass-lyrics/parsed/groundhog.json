@@ -1,0 +1,59 @@
+{
+  "slug": "groundhog",
+  "title": "Groundhog",
+  "source_url": "https://www.bluegrasslyrics.com/song/groundhog/",
+  "raw_lyrics": "Way down yonder in the forks of the branch\nWay down yonder in the forks of the branch\nThe old sow whistles and the little pigs dance\nGroundhog, groundhog\n\nWell come on Grandpa get your dog\nCome on Grandpa get your dog\nWe\u2019re going up the holler to catch a groundhog\nGroundhog, groundhog\n\nWell yonder comes Jimmy with a ten foot pole\nYonder comes Jimmy with a ten foot pole\nTwist that groundhog out of his hole\nGroundhog, groundhog\n\nWell come on Pappy bring your gun\nCome on Pappy bring your gun\nWe got that groundhog on the run\nGroundhog, groundhog\n\nWell yonder comes Sally with a snicker and a grin\nYonder comes Sally with a snicker and a grin\nGroundhog grease all over her chin\nGroundhog, groundhog",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Way down yonder in the forks of the branch",
+        "Way down yonder in the forks of the branch",
+        "The old sow whistles and the little pigs dance",
+        "Groundhog, groundhog"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well come on Grandpa get your dog",
+        "Come on Grandpa get your dog",
+        "We\u2019re going up the holler to catch a groundhog",
+        "Groundhog, groundhog"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well yonder comes Jimmy with a ten foot pole",
+        "Yonder comes Jimmy with a ten foot pole",
+        "Twist that groundhog out of his hole",
+        "Groundhog, groundhog"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well come on Pappy bring your gun",
+        "Come on Pappy bring your gun",
+        "We got that groundhog on the run",
+        "Groundhog, groundhog"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well yonder comes Sally with a snicker and a grin",
+        "Yonder comes Sally with a snicker and a grin",
+        "Groundhog grease all over her chin",
+        "Groundhog, groundhog"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

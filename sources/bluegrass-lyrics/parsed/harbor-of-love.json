@@ -1,0 +1,39 @@
+{
+  "slug": "harbor-of-love",
+  "title": "Harbor Of Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/harbor-of-love/",
+  "raw_lyrics": "There\u2019s coming a time on the great judgement morning\nWhen the Savior will welcome you home\nWill you be prepared for the journey to heaven\nOn the great ship that carries God\u2019s chosen ones home\n\nOh the waters\u2019 so deep on the river of Jordan\nAnd the lite shines so bright  from heaven above\nAnd the midnite is past  a new day is dawning (from heaven on high)\nOh the great ship will anchor  in the harbor of love.\n\nIf you\u2019re wandering in sin away from God\u2019s teaching\nWon\u2019t you ask him to show you the way\nFall down on your knees in the chapel next Sunday\nAnd meet all your friends in heaven some day",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s coming a time on the great judgement morning",
+        "When the Savior will welcome you home",
+        "Will you be prepared for the journey to heaven",
+        "On the great ship that carries God\u2019s chosen ones home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh the waters\u2019 so deep on the river of Jordan",
+        "And the lite shines so bright  from heaven above",
+        "And the midnite is past  a new day is dawning (from heaven on high)",
+        "Oh the great ship will anchor  in the harbor of love."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If you\u2019re wandering in sin away from God\u2019s teaching",
+        "Won\u2019t you ask him to show you the way",
+        "Fall down on your knees in the chapel next Sunday",
+        "And meet all your friends in heaven some day"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

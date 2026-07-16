@@ -1,0 +1,49 @@
+{
+  "slug": "girl-from-the-north-country",
+  "title": "Girl From The North Country",
+  "source_url": "https://www.bluegrasslyrics.com/song/girl-from-the-north-country/",
+  "raw_lyrics": "If you\u2019re traveling in the north country fair\nWhere the wind blows cold on the borderline\nRemember me to the one who lives there\nFor she once was a true love of mine.\n\nWell if you\u2019re going in a snowflake storm\nWhere the rivers freeze and summers end\nWill you see that she has a coat so warm\nTo protect her from the howling wind.\n\nPlease see for me if her hair hangs low\nAnd flows in ringlets \u2019round her breasts\nPlease see for me if her hair hangs low\nFor that\u2019s the way I remember her best.\n\nWell I wonder if she\u2019ll remember me you know\nMany times I\u2019ve often prayed\nIn the stillness of my night\nIn the brightness of my day.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If you\u2019re traveling in the north country fair",
+        "Where the wind blows cold on the borderline",
+        "Remember me to the one who lives there",
+        "For she once was a true love of mine."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well if you\u2019re going in a snowflake storm",
+        "Where the rivers freeze and summers end",
+        "Will you see that she has a coat so warm",
+        "To protect her from the howling wind."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please see for me if her hair hangs low",
+        "And flows in ringlets \u2019round her breasts",
+        "Please see for me if her hair hangs low",
+        "For that\u2019s the way I remember her best."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I wonder if she\u2019ll remember me you know",
+        "Many times I\u2019ve often prayed",
+        "In the stillness of my night",
+        "In the brightness of my day."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

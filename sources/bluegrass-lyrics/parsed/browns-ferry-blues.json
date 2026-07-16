@@ -1,0 +1,56 @@
+{
+  "slug": "browns-ferry-blues",
+  "title": "Brown\u2019s Ferry Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/browns-ferry-blues/",
+  "raw_lyrics": "Hard luck poppa counting his toes\nYou can smell his feet wherever he goes\nLord Lord. got those Brown\u2019s Ferry Blues\nHard luck poppa can\u2019t do his stuff\nTrouble with him he\u2019s been too rough\nLord Lord got those Brown\u2019s Ferry Blues.\n\nTwo old maids a-sitting in the sand\nEach one wishing that the other was a man\nLord Lord got those Brown\u2019s Ferry Blues\nTwo old maids done lost their style\nIf you want to be lucky you got to smile\nLord Lord got those Brown\u2019s Ferry Blues.\n\nEarly to bed and early to rise\nAnd your girl goes out with other guys\nLord Lord got those Brown\u2019s Ferry Blues\nIf you don\u2019t believe me try it yourself\nWell I tried it and I got left\nLord Lord got those Brown\u2019s Ferry Blues.\n\nHard luck poppa standing in the rain\nIf the world was corn he couldn\u2019t buy grain\nLord Lord got those Brown\u2019s Ferry Blues\nHis knees knock together but he\u2019s raring to go\nLord Lord got those Brown\u2019s Ferry Blues.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Hard luck poppa counting his toes",
+        "You can smell his feet wherever he goes",
+        "Lord Lord. got those Brown\u2019s Ferry Blues",
+        "Hard luck poppa can\u2019t do his stuff",
+        "Trouble with him he\u2019s been too rough",
+        "Lord Lord got those Brown\u2019s Ferry Blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Two old maids a-sitting in the sand",
+        "Each one wishing that the other was a man",
+        "Lord Lord got those Brown\u2019s Ferry Blues",
+        "Two old maids done lost their style",
+        "If you want to be lucky you got to smile",
+        "Lord Lord got those Brown\u2019s Ferry Blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Early to bed and early to rise",
+        "And your girl goes out with other guys",
+        "Lord Lord got those Brown\u2019s Ferry Blues",
+        "If you don\u2019t believe me try it yourself",
+        "Well I tried it and I got left",
+        "Lord Lord got those Brown\u2019s Ferry Blues."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Hard luck poppa standing in the rain",
+        "If the world was corn he couldn\u2019t buy grain",
+        "Lord Lord got those Brown\u2019s Ferry Blues",
+        "His knees knock together but he\u2019s raring to go",
+        "Lord Lord got those Brown\u2019s Ferry Blues."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

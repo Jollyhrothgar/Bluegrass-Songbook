@@ -1,0 +1,29 @@
+{
+  "slug": "once-more",
+  "title": "Once More",
+  "source_url": "https://www.bluegrasslyrics.com/song/once-more/",
+  "raw_lyrics": "Once more to be with you,dear\nJust for tonight to hold you tight\nOnce more I\u2019d give a fortune\nIf I could see you once more\n\nForget the past, this hurt can\u2019t last\nOh I don\u2019t want it to keep us apart\nYour love I\u2019ll crave  I\u2019ll be your slave\nIf you\u2019ll just give me all of your heart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Once more to be with you,dear",
+        "Just for tonight to hold you tight",
+        "Once more I\u2019d give a fortune",
+        "If I could see you once more"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Forget the past, this hurt can\u2019t last",
+        "Oh I don\u2019t want it to keep us apart",
+        "Your love I\u2019ll crave  I\u2019ll be your slave",
+        "If you\u2019ll just give me all of your heart"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

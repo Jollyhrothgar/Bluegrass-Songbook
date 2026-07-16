@@ -1,0 +1,39 @@
+{
+  "slug": "old-railroad-track",
+  "title": "Old Railroad Track",
+  "source_url": "https://www.bluegrasslyrics.com/song/old-railroad-track/",
+  "raw_lyrics": "when I walked out one morning\nHad the wind blowin at my back\nAs I couldn\u2019t find\u00a0 no lonesome old road\nso I found me an old railroad track\n\nAs I walked down to that old railroad track\nTo carry my blues away\nIt was say no goodbyes start walkin those ties\nA rambler til my dyin\u2019 day\n\nWhen I woke up that mornin\u2019\nIt was I was slippin through the cracks\nAnd the only thing to keep me from goin\u2019 insane\nWas my feet on that old railroad track",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "when I walked out one morning",
+        "Had the wind blowin at my back",
+        "As I couldn\u2019t find\u00a0 no lonesome old road",
+        "so I found me an old railroad track"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "As I walked down to that old railroad track",
+        "To carry my blues away",
+        "It was say no goodbyes start walkin those ties",
+        "A rambler til my dyin\u2019 day"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I woke up that mornin\u2019",
+        "It was I was slippin through the cracks",
+        "And the only thing to keep me from goin\u2019 insane",
+        "Was my feet on that old railroad track"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

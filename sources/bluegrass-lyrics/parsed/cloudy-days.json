@@ -1,0 +1,48 @@
+{
+  "slug": "cloudy-days",
+  "title": "Cloudy Days",
+  "source_url": "https://www.bluegrasslyrics.com/song/cloudy-days/",
+  "raw_lyrics": "Dark clouds hangin\u2019 over me\nWhen will they go away\nRain is in my eyes and I can\u2019t see\nLife\u2019s become just cloudy days\n\nWhy she done me like she done\nI guess I\u2019ll never know\nShe knows I need her more than anyone\nI made a point to let it show\n\nCloudy days don\u2019t the sun ever shine anymore\nStormy weather will you always be around\nWhen I\u2019m down I can\u2019t stand cloudy days\n\nI recall a time when times where good\nLord it seems so long ago\nBut you know they say if the rain won\u2019t come\nThe grass\u2019ll have no chance to grow",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Dark clouds hangin\u2019 over me",
+        "When will they go away",
+        "Rain is in my eyes and I can\u2019t see",
+        "Life\u2019s become just cloudy days"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Why she done me like she done",
+        "I guess I\u2019ll never know",
+        "She knows I need her more than anyone",
+        "I made a point to let it show"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Cloudy days don\u2019t the sun ever shine anymore",
+        "Stormy weather will you always be around",
+        "When I\u2019m down I can\u2019t stand cloudy days"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I recall a time when times where good",
+        "Lord it seems so long ago",
+        "But you know they say if the rain won\u2019t come",
+        "The grass\u2019ll have no chance to grow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

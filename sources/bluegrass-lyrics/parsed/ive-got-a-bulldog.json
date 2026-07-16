@@ -1,0 +1,59 @@
+{
+  "slug": "ive-got-a-bulldog",
+  "title": "I\u2019ve Got a Bulldog",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-got-a-bulldog/",
+  "raw_lyrics": "I\u2019ve got a bulldog he cost five hundred\nI\u2019ve got a bulldog he cost five hundred\nI\u2019ve got a bulldog he cost five hundred\nIn my back yard babe in my back yard\n\nWhen he barks he roars like thunder\nWhen he barks he roars like thunder\nWhen he barks he roars like thunder\nBite you baby gonna bite you bad\n\nTake this hammer and give it to the captain\nTake this hammer and give it to the captain\nTake this hammer and give it to the captain\nTell him I\u2019m gone babe tell him I\u2019m gone\n\nWhen you pass by oh say good morning\nWhen you pass by oh say good morning\nWhen you pass by oh say good morning\nBut I\u2019ll be gone like a turkey through the corn\n\nWhen you see my long haired buddy\nWhen you see my long haired buddy\nWhen you see my long haired buddy\nTell him I\u2019m gone babe tell him I\u2019m gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve got a bulldog he cost five hundred",
+        "I\u2019ve got a bulldog he cost five hundred",
+        "I\u2019ve got a bulldog he cost five hundred",
+        "In my back yard babe in my back yard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When he barks he roars like thunder",
+        "When he barks he roars like thunder",
+        "When he barks he roars like thunder",
+        "Bite you baby gonna bite you bad"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Take this hammer and give it to the captain",
+        "Take this hammer and give it to the captain",
+        "Take this hammer and give it to the captain",
+        "Tell him I\u2019m gone babe tell him I\u2019m gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you pass by oh say good morning",
+        "When you pass by oh say good morning",
+        "When you pass by oh say good morning",
+        "But I\u2019ll be gone like a turkey through the corn"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When you see my long haired buddy",
+        "When you see my long haired buddy",
+        "When you see my long haired buddy",
+        "Tell him I\u2019m gone babe tell him I\u2019m gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

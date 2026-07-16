@@ -1,0 +1,29 @@
+{
+  "slug": "a-good-womans-love",
+  "title": "A Good Woman\u2019s Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/a-good-womans-love/",
+  "raw_lyrics": "I was a rover, on land and on sea\n\u2019til a good woman\u2019s love made a new man of me\nLife had no meaning, it was so incomplete\n\u2019til a good woman\u2019s love put me back on my feet\n\nStill a-roamin\u2019 I go home in the evening and she\u2019s waiting there\nand I know that no matter what happens she\u2019ll always care\nand when night falls and the moon shines above\nI\u2019m a man with a dream and a good woman\u2019s love",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I was a rover, on land and on sea",
+        "\u2019til a good woman\u2019s love made a new man of me",
+        "Life had no meaning, it was so incomplete",
+        "\u2019til a good woman\u2019s love put me back on my feet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Still a-roamin\u2019 I go home in the evening and she\u2019s waiting there",
+        "and I know that no matter what happens she\u2019ll always care",
+        "and when night falls and the moon shines above",
+        "I\u2019m a man with a dream and a good woman\u2019s love"
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

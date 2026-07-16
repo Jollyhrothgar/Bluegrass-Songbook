@@ -1,0 +1,11 @@
+id: hallelujah-im-ready
+title: Hallelujah I’m Ready
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/hallelujah-im-ready/
+      imported_at: '2026-02-08'

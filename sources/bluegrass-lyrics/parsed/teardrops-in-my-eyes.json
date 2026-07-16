@@ -1,0 +1,49 @@
+{
+  "slug": "teardrops-in-my-eyes",
+  "title": "Teardrops In My Eyes",
+  "source_url": "https://www.bluegrasslyrics.com/song/teardrops-in-my-eyes/",
+  "raw_lyrics": "Those heartaches now are on my way\nWhat makes you want to be that way\nYou cheated on me and you lied\nYou put teardrops in my eyes\n\nI found out what they say is true\nI hope someday that you\u2019ll be blue\nAnd then you\u2019ll know dear why I cry\nWith these teardrops in my eyes\n\nI heard the rumors all around\nThat someday you\u2019d let me down\nI turn my head when gossip flies\nCause it puts teardrops in my eyes\n\nI never thought you\u2019d let me down\nBut now at last I understand\nYou wrecked our life and broke our vows\nYou\u2019ll have to pay for it somehow",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Those heartaches now are on my way",
+        "What makes you want to be that way",
+        "You cheated on me and you lied",
+        "You put teardrops in my eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I found out what they say is true",
+        "I hope someday that you\u2019ll be blue",
+        "And then you\u2019ll know dear why I cry",
+        "With these teardrops in my eyes"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I heard the rumors all around",
+        "That someday you\u2019d let me down",
+        "I turn my head when gossip flies",
+        "Cause it puts teardrops in my eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I never thought you\u2019d let me down",
+        "But now at last I understand",
+        "You wrecked our life and broke our vows",
+        "You\u2019ll have to pay for it somehow"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

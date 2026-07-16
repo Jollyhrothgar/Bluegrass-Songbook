@@ -1,0 +1,49 @@
+{
+  "slug": "chalk-up-another-one",
+  "title": "Chalk Up Another One",
+  "source_url": "https://www.bluegrasslyrics.com/song/chalk-up-another-one/",
+  "raw_lyrics": "You should get a medal dear for every broken heart\nFor every life you\u2019ve ruined cause you think you\u2019re so smart\nI never even had a chance and now my life is lost\nOnce more you\u2019ve had your fun and you don\u2019t care how much it cost\n\nOh Chalk up another one, another broken heart\nChalk up another one, a heart you tore apart\nYou picked me for a fool my dear how well I played the part\nChalk up another one, another broken heart\n\nBroken vows and shattered dreams mean little dear to you\nCause once you said you love me and now you say were through\nWell all is fair in love and war I guess you taught me so\nCause in this crazy game of love you hit an all time low\n\nI have only pity in this evil life you choose\nThis unfair game you\u2019re playing where everyone must lose\nBut let me tell you something some day you won\u2019t forget\nAdd me to your collection and you\u2019ll wish we never met",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You should get a medal dear for every broken heart",
+        "For every life you\u2019ve ruined cause you think you\u2019re so smart",
+        "I never even had a chance and now my life is lost",
+        "Once more you\u2019ve had your fun and you don\u2019t care how much it cost"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh Chalk up another one, another broken heart",
+        "Chalk up another one, a heart you tore apart",
+        "You picked me for a fool my dear how well I played the part",
+        "Chalk up another one, another broken heart"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Broken vows and shattered dreams mean little dear to you",
+        "Cause once you said you love me and now you say were through",
+        "Well all is fair in love and war I guess you taught me so",
+        "Cause in this crazy game of love you hit an all time low"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have only pity in this evil life you choose",
+        "This unfair game you\u2019re playing where everyone must lose",
+        "But let me tell you something some day you won\u2019t forget",
+        "Add me to your collection and you\u2019ll wish we never met"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

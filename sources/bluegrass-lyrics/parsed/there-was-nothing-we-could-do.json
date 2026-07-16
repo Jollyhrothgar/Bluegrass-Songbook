@@ -1,0 +1,59 @@
+{
+  "slug": "there-was-nothing-we-could-do",
+  "title": "There Was Nothing We Could Do",
+  "source_url": "https://www.bluegrasslyrics.com/song/there-was-nothing-we-could-do/",
+  "raw_lyrics": "We all loved our fair tender maiden\nFrom her eyes the light of Heaven shone thru\nShe fell sick one cold winter morning\nAnd there was nothing we could do\n\nShe lay on her death bed so bravely\nHer face all tired and worn\nWe knew in our hearts she was leaving\nGod had called her to His heavenly home\n\nAs she lay on the bed she was smiling\nAt the people all gathered a-round\nIt was her only way of saying goodbye\nAnd tomorrow she\u2019d lay neath the ground\n\nThe fragrance of flowers from her grave\nGoes to heaven where she has gone too\nMortal pain shown on all our faces\nBut there was nothing we could do\n\nWhen the preacher began to console us\nHis words rang out clear and true\nHe said God called her that\u2019s the reason\nThat there was nothing we could do",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We all loved our fair tender maiden",
+        "From her eyes the light of Heaven shone thru",
+        "She fell sick one cold winter morning",
+        "And there was nothing we could do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "She lay on her death bed so bravely",
+        "Her face all tired and worn",
+        "We knew in our hearts she was leaving",
+        "God had called her to His heavenly home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As she lay on the bed she was smiling",
+        "At the people all gathered a-round",
+        "It was her only way of saying goodbye",
+        "And tomorrow she\u2019d lay neath the ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The fragrance of flowers from her grave",
+        "Goes to heaven where she has gone too",
+        "Mortal pain shown on all our faces",
+        "But there was nothing we could do"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the preacher began to console us",
+        "His words rang out clear and true",
+        "He said God called her that\u2019s the reason",
+        "That there was nothing we could do"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "how-mountain-girls-can-love",
+  "title": "How Mountain Girls Can Love",
+  "source_url": "https://www.bluegrasslyrics.com/song/how-mountain-girls-can-love/",
+  "raw_lyrics": "Get down boys, go back home\nBack to the girl you love\nTreat her right, never wrong\nHow mountain girls can love\n\nRiding the night in the high cold winds\nOn the trail of the old lonesome pine\nThinking of you, feeling so blue\nWondering why you left me behind\n\nRemember the night we strolled down the lane\nOur hearts were gay and happy then\nYou whispered to me as I held your close\nYou hoped this night would never end",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Get down boys, go back home",
+        "Back to the girl you love",
+        "Treat her right, never wrong",
+        "How mountain girls can love"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Riding the night in the high cold winds",
+        "On the trail of the old lonesome pine",
+        "Thinking of you, feeling so blue",
+        "Wondering why you left me behind"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Remember the night we strolled down the lane",
+        "Our hearts were gay and happy then",
+        "You whispered to me as I held your close",
+        "You hoped this night would never end"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

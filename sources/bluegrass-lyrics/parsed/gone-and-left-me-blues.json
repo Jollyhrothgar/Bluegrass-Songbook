@@ -1,0 +1,49 @@
+{
+  "slug": "gone-and-left-me-blues",
+  "title": "Gone And Left Me Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/gone-and-left-me-blues/",
+  "raw_lyrics": "My weary heart for you is crying\nGetting old and paying for its dues\nFor you have left me oh so lonely\nI\u2019ve got those gone and left me blues\n\nYou know that we should be together\nThough I\u2019m the one that\u2019s been untrue\nPlease take me back and say you love me\nI got those gone and left me blues\n\nI might have known that you\u2019d be leaving\nI knew you\u2019d borne your walking shoes\nWhy did you break those vows of promise\nAnd bring about those awful blues\n\nDon\u2019t say that you have gone forever\nThe nights are much to lonely now\nAlone I hope that you\u2019ll return dear\nI\u2019ve got to get you back some how",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My weary heart for you is crying",
+        "Getting old and paying for its dues",
+        "For you have left me oh so lonely",
+        "I\u2019ve got those gone and left me blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You know that we should be together",
+        "Though I\u2019m the one that\u2019s been untrue",
+        "Please take me back and say you love me",
+        "I got those gone and left me blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I might have known that you\u2019d be leaving",
+        "I knew you\u2019d borne your walking shoes",
+        "Why did you break those vows of promise",
+        "And bring about those awful blues"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Don\u2019t say that you have gone forever",
+        "The nights are much to lonely now",
+        "Alone I hope that you\u2019ll return dear",
+        "I\u2019ve got to get you back some how"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

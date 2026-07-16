@@ -1,9 +1,5 @@
 {meta: title She}
 {meta: artist Green Day}
-{meta: x_source manual}
-{meta: x_submitted_by github:Jollyhrothgar}
-{meta: x_submitted 2026-01-02}
-{meta: x_submission_issue 91}
 
 {start_of_verse: Verse 1}
 [G]She, she screams in [D]silence, a sullen [C]riot penetrating through her [G]mind
@@ -17,7 +13,7 @@
 {end_of_chorus}
 
 {start_of_verse: Verse 2}
-[G]She, she's figured [D]out, all her[C] doubts were someone else's point of [G]view[[C]G]
+[G]She, she's figured [D]out, all her[C] doubts were someone else's point of [G]view
 [G]Waking up this [D]time, to smash the s[C]ilence with a brick of self con[G]trol
 {end_of_verse}
 

@@ -1,0 +1,11 @@
+id: short-life-of-trouble
+title: Short Life Of Trouble
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/short-life-of-trouble/
+      imported_at: '2026-02-08'

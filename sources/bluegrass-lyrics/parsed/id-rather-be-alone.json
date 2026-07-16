@@ -1,0 +1,46 @@
+{
+  "slug": "id-rather-be-alone",
+  "title": "I\u2019d Rather Be Alone",
+  "source_url": "https://www.bluegrasslyrics.com/song/id-rather-be-alone/",
+  "raw_lyrics": "I\u2019d rather be alone and have you dream of me only\nThan have you say you\u2019re sorry that we are apart\nI\u2019d rather be alone and have you dream of me only\nThan to be in your arms but never in your heart\n\nWell I\u2019ve just received your letter you asked me to come home\nYou say you\u2019re sorry that you went away\nThis is an old old story and I\u2019ve heard it all before\nSo darlin\u2019 this is all that I can say\n\nI tried so hard my darlin\u2019 to make you love me then\n\u2018Cause you would always leave me here alone\nAnd although I could forgive you things would be the same\nNothing could ever change your heart of stone\n\nThe Bluegrass Album; California Connection",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d rather be alone and have you dream of me only",
+        "Than have you say you\u2019re sorry that we are apart",
+        "I\u2019d rather be alone and have you dream of me only",
+        "Than to be in your arms but never in your heart"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well I\u2019ve just received your letter you asked me to come home",
+        "You say you\u2019re sorry that you went away",
+        "This is an old old story and I\u2019ve heard it all before",
+        "So darlin\u2019 this is all that I can say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I tried so hard my darlin\u2019 to make you love me then",
+        "\u2018Cause you would always leave me here alone",
+        "And although I could forgive you things would be the same",
+        "Nothing could ever change your heart of stone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The Bluegrass Album; California Connection"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

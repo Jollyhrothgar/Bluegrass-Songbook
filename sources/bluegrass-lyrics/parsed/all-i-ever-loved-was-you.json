@@ -1,0 +1,39 @@
+{
+  "slug": "all-i-ever-loved-was-you",
+  "title": "All I Ever Loved Was You",
+  "source_url": "https://www.bluegrasslyrics.com/song/all-i-ever-loved-was-you/",
+  "raw_lyrics": "All I ever loved was you\nYou broke a heart that cried for you\nI\u2019ve wasted all my tears on you\nFor all I\u2019ve ever loved was you\n\nGo out and find somebody new\nBut you\u2019ll be sorry if you do\nYou\u2019ll never find a love so true\nFor all I ever loved was you\n\nBuy her rings and diamonds too\nBut you\u2019ll be sorry if you do\nYou\u2019ll never find a love so true\nFor all I ever loved was you",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "All I ever loved was you",
+        "You broke a heart that cried for you",
+        "I\u2019ve wasted all my tears on you",
+        "For all I\u2019ve ever loved was you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Go out and find somebody new",
+        "But you\u2019ll be sorry if you do",
+        "You\u2019ll never find a love so true",
+        "For all I ever loved was you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Buy her rings and diamonds too",
+        "But you\u2019ll be sorry if you do",
+        "You\u2019ll never find a love so true",
+        "For all I ever loved was you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

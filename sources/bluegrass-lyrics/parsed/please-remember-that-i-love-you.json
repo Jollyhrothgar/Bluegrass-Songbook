@@ -1,0 +1,49 @@
+{
+  "slug": "please-remember-that-i-love-you",
+  "title": "Please Remember That I Love You",
+  "source_url": "https://www.bluegrasslyrics.com/song/please-remember-that-i-love-you/",
+  "raw_lyrics": "Please remember that I love you\nAnd I hope you\u2019ll not forget\nEach hour each day our love grows stronger\nSince the day that we first met\n\nNothing now can separate us\nNothing but the end of time\nPlease remember that I love you\nDon\u2019t forget that you\u2019re all mine\n\nWhen I\u2019m holding you so close dear\nLips so sweet brush close to mine\nTime stands still my world is brighter\nBy a love that\u2019s so sublime\n\nPlease remember that I love you\nThat no one can take away\nAll the vows we made together\nAre locked in my heart to stay",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Please remember that I love you",
+        "And I hope you\u2019ll not forget",
+        "Each hour each day our love grows stronger",
+        "Since the day that we first met"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Nothing now can separate us",
+        "Nothing but the end of time",
+        "Please remember that I love you",
+        "Don\u2019t forget that you\u2019re all mine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When I\u2019m holding you so close dear",
+        "Lips so sweet brush close to mine",
+        "Time stands still my world is brighter",
+        "By a love that\u2019s so sublime"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Please remember that I love you",
+        "That no one can take away",
+        "All the vows we made together",
+        "Are locked in my heart to stay"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

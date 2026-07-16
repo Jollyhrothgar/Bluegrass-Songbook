@@ -1,0 +1,39 @@
+{
+  "slug": "glory-to-the-lamb",
+  "title": "Glory To The Lamb",
+  "source_url": "https://www.bluegrasslyrics.com/song/glory-to-the-lamb/",
+  "raw_lyrics": "Oh glory oh glory oh glory to the lamb\nHallelujah I am saved and I\u2019m so glad I am\nOh glory oh glory oh glory to the lamb\nHallelujah I am saved and I\u2019m so glad I am\n\nOn Monday I am happy on Tuesday full of joy\nWednesday I\u2019ve got the faith the devil cant destroy\nOn Thursday and Friday walking in the light\nSaturday I\u2019ve got the victory and Sunday\u2019s always bright\n\nI fell in love with Jesus and he fell in love with me\nThat\u2019s the very reason I\u2019ve got the victory\nI\u2019m happy when it\u2019s raining I\u2019m happy when it shines\nI\u2019m happy now with Jesus I\u2019m happy all the time",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh glory oh glory oh glory to the lamb",
+        "Hallelujah I am saved and I\u2019m so glad I am",
+        "Oh glory oh glory oh glory to the lamb",
+        "Hallelujah I am saved and I\u2019m so glad I am"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "On Monday I am happy on Tuesday full of joy",
+        "Wednesday I\u2019ve got the faith the devil cant destroy",
+        "On Thursday and Friday walking in the light",
+        "Saturday I\u2019ve got the victory and Sunday\u2019s always bright"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I fell in love with Jesus and he fell in love with me",
+        "That\u2019s the very reason I\u2019ve got the victory",
+        "I\u2019m happy when it\u2019s raining I\u2019m happy when it shines",
+        "I\u2019m happy now with Jesus I\u2019m happy all the time"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

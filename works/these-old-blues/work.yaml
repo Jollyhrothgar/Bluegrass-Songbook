@@ -1,0 +1,11 @@
+id: these-old-blues
+title: These Old Blues
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/these-old-blues/
+      imported_at: '2026-02-08'

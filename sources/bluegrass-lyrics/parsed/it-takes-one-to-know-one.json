@@ -1,0 +1,39 @@
+{
+  "slug": "it-takes-one-to-know-one",
+  "title": "It Takes One To Know One",
+  "source_url": "https://www.bluegrasslyrics.com/song/it-takes-one-to-know-one/",
+  "raw_lyrics": "Little girl you stand out in the crowd\nYou\u2019re laughing and talking much too loud\nBut I see a little tear peaking through\nIt takes one to know one and I know you\n\nIt takes one to know one and I know you\nThe little tear through your smiles I see through\nYou\u2019ve been hurt and your frightened you\u2019re so blue\nIt takes one to know one and I know you\n\nLittle girl please take hold of my hand\nJust go right on and cry I\u2019ll understand\nPay no mind if start crying too\nIt takes one to know one and I know you",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Little girl you stand out in the crowd",
+        "You\u2019re laughing and talking much too loud",
+        "But I see a little tear peaking through",
+        "It takes one to know one and I know you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "It takes one to know one and I know you",
+        "The little tear through your smiles I see through",
+        "You\u2019ve been hurt and your frightened you\u2019re so blue",
+        "It takes one to know one and I know you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Little girl please take hold of my hand",
+        "Just go right on and cry I\u2019ll understand",
+        "Pay no mind if start crying too",
+        "It takes one to know one and I know you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

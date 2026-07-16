@@ -1,0 +1,39 @@
+{
+  "slug": "weary-prodigal-son",
+  "title": "Weary Prodigal Son",
+  "source_url": "https://www.bluegrasslyrics.com/song/weary-prodigal-son/",
+  "raw_lyrics": "God is calling us now so come without delay\nHear oh hear Him calling calling now for thee\nPatient, loving and tender but still fatherly\nHear His loving voice calling still (calling still)\n\nCalling out for thee\nOh weary (weary prodigal son) prodigal son (weary prodigal son)\nCalling out for thee\nOh weary (weary prodigal son) prodigal son (weary prodigal son)\n\nCome there\u2019s bread in the house of the father and His fair\nHear oh hear Him calling calling out for thee\nLow the table spread and a feast is waiting there\nHear His loving voice calling still (calling still)",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "God is calling us now so come without delay",
+        "Hear oh hear Him calling calling now for thee",
+        "Patient, loving and tender but still fatherly",
+        "Hear His loving voice calling still (calling still)"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Calling out for thee",
+        "Oh weary (weary prodigal son) prodigal son (weary prodigal son)",
+        "Calling out for thee",
+        "Oh weary (weary prodigal son) prodigal son (weary prodigal son)"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Come there\u2019s bread in the house of the father and His fair",
+        "Hear oh hear Him calling calling out for thee",
+        "Low the table spread and a feast is waiting there",
+        "Hear His loving voice calling still (calling still)"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

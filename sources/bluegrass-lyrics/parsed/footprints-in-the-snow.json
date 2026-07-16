@@ -1,0 +1,49 @@
+{
+  "slug": "footprints-in-the-snow",
+  "title": "Footprints In The Snow",
+  "source_url": "https://www.bluegrasslyrics.com/song/footprints-in-the-snow/",
+  "raw_lyrics": "Now some folks like the summertime when the they can walk about\nStrolling through the meadow green it\u2019s pleasant there no doubt\nBut give me the wintertime when the snow is on the ground\nFor I found her when the snow on the ground\n\nI traced her little footprints in the snow\nI found her little footprints in the snow\nI bless that happy day when Nellie lost her way\nFor I found her when the snow was on the ground\n\nI dropped in to see her there was a big round moon\nHer mother said she just stepped out but would be returning soon\nI found her little footprints and I traced them in the snow\nI found her when the snow was on the ground\n\nNow she\u2019s up in heaven she\u2019s with the angel band\nI know I\u2019m going to meet her in that promised land\nBut every time the snow falls it brings back memories\nFor I found her when the snow was on the ground",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now some folks like the summertime when the they can walk about",
+        "Strolling through the meadow green it\u2019s pleasant there no doubt",
+        "But give me the wintertime when the snow is on the ground",
+        "For I found her when the snow on the ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I traced her little footprints in the snow",
+        "I found her little footprints in the snow",
+        "I bless that happy day when Nellie lost her way",
+        "For I found her when the snow was on the ground"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I dropped in to see her there was a big round moon",
+        "Her mother said she just stepped out but would be returning soon",
+        "I found her little footprints and I traced them in the snow",
+        "I found her when the snow was on the ground"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now she\u2019s up in heaven she\u2019s with the angel band",
+        "I know I\u2019m going to meet her in that promised land",
+        "But every time the snow falls it brings back memories",
+        "For I found her when the snow was on the ground"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

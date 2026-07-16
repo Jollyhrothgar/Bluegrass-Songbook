@@ -1,0 +1,59 @@
+{
+  "slug": "wreck-of-the-old-ninety-seven",
+  "title": "Wreck Of The Old Ninety -Seven",
+  "source_url": "https://www.bluegrasslyrics.com/song/wreck-of-the-old-ninety-seven/",
+  "raw_lyrics": "Well, they gave him his orders in Monroe, Virginia\nSaying Steve you are way behind time\nThis is not thirty eight, but it\u2019s old ninety seven\nYou must put her into Spencer on time\n\nHe turned and said to his tired greasy fireman\nShovel on a little more coal\nAnd when we cross the White Oak Mountain\nYou can watch old Ninety-Seven roll\n\nIt\u2019s a mighty rough road from Lynchburg to Danville\nOn a line on a three mile grade\nIt was on this grade that he lost his leverage\nYou can see what a jump he made\n\nHe was going down the grade making ninety miles an hour\nWhen his whistle broke into a scream\nThey found him in the wreck with his hand on the throttle\nHe was scalded to death by the steam\n\nNow all you ladies you must take warning\nFrom this time now on learn\nNever speak harsh words to your true loving husband\nHe may leave you and never return",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Well, they gave him his orders in Monroe, Virginia",
+        "Saying Steve you are way behind time",
+        "This is not thirty eight, but it\u2019s old ninety seven",
+        "You must put her into Spencer on time"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He turned and said to his tired greasy fireman",
+        "Shovel on a little more coal",
+        "And when we cross the White Oak Mountain",
+        "You can watch old Ninety-Seven roll"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s a mighty rough road from Lynchburg to Danville",
+        "On a line on a three mile grade",
+        "It was on this grade that he lost his leverage",
+        "You can see what a jump he made"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He was going down the grade making ninety miles an hour",
+        "When his whistle broke into a scream",
+        "They found him in the wreck with his hand on the throttle",
+        "He was scalded to death by the steam"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now all you ladies you must take warning",
+        "From this time now on learn",
+        "Never speak harsh words to your true loving husband",
+        "He may leave you and never return"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

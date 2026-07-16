@@ -1,0 +1,59 @@
+{
+  "slug": "river-of-jordan",
+  "title": "River Of Jordan",
+  "source_url": "https://www.bluegrasslyrics.com/song/river-of-jordan/",
+  "raw_lyrics": "To the River Of Jordan our Savior went one day\nAnd we read that John The Baptist met Him there\nAnd when John baptized Jesus in Jordan\u2019s rushing waters\nThe mighty power of God filled the air\n\nI\u2019m on my way to the River Of Jordan\nGonna wade right in to the rushing waters\nI\u2019m going down to the River Of Jordan\nAnd let the cool waters cleanse my soul\n\nKing Naaman was stricken with dreaded leprosy\nAnd he sent for the man of God to pray\nBut Elisha said to Naaman \u201cgo dip yourself in Jordan\u201d\nAnd let the cool waters wash your spots away\n\nSo he went right down to the River Of Jordan\nHe waded right in the rushing waters\nHe dipped himself in the River Of Jordan\nAnd the cool waters made him whole\n\nOh the River Of Jordan is many miles away\nAnd this mighty river I may never see\nBut I\u2019ll find myself an altar in an old fashioned church\nAnd my River Of Jordan that will be",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "To the River Of Jordan our Savior went one day",
+        "And we read that John The Baptist met Him there",
+        "And when John baptized Jesus in Jordan\u2019s rushing waters",
+        "The mighty power of God filled the air"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m on my way to the River Of Jordan",
+        "Gonna wade right in to the rushing waters",
+        "I\u2019m going down to the River Of Jordan",
+        "And let the cool waters cleanse my soul"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "King Naaman was stricken with dreaded leprosy",
+        "And he sent for the man of God to pray",
+        "But Elisha said to Naaman \u201cgo dip yourself in Jordan\u201d",
+        "And let the cool waters wash your spots away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So he went right down to the River Of Jordan",
+        "He waded right in the rushing waters",
+        "He dipped himself in the River Of Jordan",
+        "And the cool waters made him whole"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the River Of Jordan is many miles away",
+        "And this mighty river I may never see",
+        "But I\u2019ll find myself an altar in an old fashioned church",
+        "And my River Of Jordan that will be"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "when-the-bright-lights-grow-dim",
+  "title": "When The Bright Lights Grow Dim",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-bright-lights-grow-dim/",
+  "raw_lyrics": "I\u2019m the laugh of the party out every night\nAin\u2019t got a worry but then\nThe people who say I\u2019m carefree and gay\nDon\u2019t know how I\u2019m lonely when the bright lights grow dim\n\nPeople think cause I\u2019m laughing the past is behind\nBut they don\u2019t know the sorrow within\u2019\nA heart that is hurtin\u2019 in a man bound by pride\nWho cries for an old love when the bright lights grow dim\n\nWhen the party has ended the laughter has died\nAnd I think of our parting again\nThe smile leaves my face and tears take its place\nI cry for you darling when the bright lights grow dim\n\nSo until you return I\u2019ll keep wearing a mask\nThat will hide how I\u2019m feeling within\nSo if your lonely too I\u2019ll be right there with you\nI\u2019ll be thinking of you dear when the bright lights grow dim",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m the laugh of the party out every night",
+        "Ain\u2019t got a worry but then",
+        "The people who say I\u2019m carefree and gay",
+        "Don\u2019t know how I\u2019m lonely when the bright lights grow dim"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "People think cause I\u2019m laughing the past is behind",
+        "But they don\u2019t know the sorrow within\u2019",
+        "A heart that is hurtin\u2019 in a man bound by pride",
+        "Who cries for an old love when the bright lights grow dim"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the party has ended the laughter has died",
+        "And I think of our parting again",
+        "The smile leaves my face and tears take its place",
+        "I cry for you darling when the bright lights grow dim"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So until you return I\u2019ll keep wearing a mask",
+        "That will hide how I\u2019m feeling within",
+        "So if your lonely too I\u2019ll be right there with you",
+        "I\u2019ll be thinking of you dear when the bright lights grow dim"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "green-pastures-in-the-sky",
+  "title": "Green Pastures in the Sky",
+  "source_url": "https://www.bluegrasslyrics.com/song/green-pastures-in-the-sky/",
+  "raw_lyrics": "The shepherd leads me out to green pastures\nWhere the clear sweet water flows\nThough evil shadows are all around me\nI\u2019m not afraid he\u2019s there I know\n\nThe storms will come and rage around me\nI\u2019m not alone He is my shield\nWhen I\u2019m weary alone and forsaken\nHe lifts me up He is so real\n\nThough I may stray into fields that are barren\nWhere danger awaits me I may go\nThe master will search until he finds me\nHe\u2019ll guide me back into the fold\n\nI\u2019m one of his sheep He\u2019ll love and protect me\nWhen I call He\u2019s there close by\nThe day draws near for that final journey\nTo that green pasture in the sky",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The shepherd leads me out to green pastures",
+        "Where the clear sweet water flows",
+        "Though evil shadows are all around me",
+        "I\u2019m not afraid he\u2019s there I know"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The storms will come and rage around me",
+        "I\u2019m not alone He is my shield",
+        "When I\u2019m weary alone and forsaken",
+        "He lifts me up He is so real"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Though I may stray into fields that are barren",
+        "Where danger awaits me I may go",
+        "The master will search until he finds me",
+        "He\u2019ll guide me back into the fold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m one of his sheep He\u2019ll love and protect me",
+        "When I call He\u2019s there close by",
+        "The day draws near for that final journey",
+        "To that green pasture in the sky"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

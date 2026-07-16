@@ -1,0 +1,39 @@
+{
+  "slug": "blue-bonnet-lane",
+  "title": "Blue Bonnet Lane",
+  "source_url": "https://www.bluegrasslyrics.com/song/blue-bonnet-lane/",
+  "raw_lyrics": "In my lonely heart there lingers\nA dream that haunts me again\nOf a girl with eyes like the flowers\nThat grew down in Blue Bonnet Lane\n\nOn the sweet and happy hours\nIn my heart they will always remain\nLike the sweet fragrance of the flowers\nThat grew down in Blue Bonnet Lane\n\nI can see a pale moon rising\nAbove a blue misty plane\nAs I walk with my blue eyed darling\nIn my memory once again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "In my lonely heart there lingers",
+        "A dream that haunts me again",
+        "Of a girl with eyes like the flowers",
+        "That grew down in Blue Bonnet Lane"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "On the sweet and happy hours",
+        "In my heart they will always remain",
+        "Like the sweet fragrance of the flowers",
+        "That grew down in Blue Bonnet Lane"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can see a pale moon rising",
+        "Above a blue misty plane",
+        "As I walk with my blue eyed darling",
+        "In my memory once again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

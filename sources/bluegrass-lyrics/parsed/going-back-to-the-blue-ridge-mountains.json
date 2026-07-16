@@ -1,0 +1,49 @@
+{
+  "slug": "going-back-to-the-blue-ridge-mountains",
+  "title": "Going Back To The Blue Ridge Mountains",
+  "source_url": "https://www.bluegrasslyrics.com/song/going-back-to-the-blue-ridge-mountains/",
+  "raw_lyrics": "Going back to the Blue Ridge mountains\nGoing back gonna leave today\nGoing back to the Blue Ridge mountains\nHoney baby I\u2019m going away\n\nYou can\u2019t be my little darling\nYou can\u2019t be my sweetheart now\nYou\u2019ve been causing all my troubles\nYou don\u2019t love me anyway\n\nAll our happy days together\nNow are gone and you\u2019re to blame\nJust forget you ever knew me\nNever even call my name\n\nYou have caused me lost of trouble\nYou have had your little way\nNow I\u2019m fed up with your flirting\nHoney baby I\u2019m going away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Going back to the Blue Ridge mountains",
+        "Going back gonna leave today",
+        "Going back to the Blue Ridge mountains",
+        "Honey baby I\u2019m going away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can\u2019t be my little darling",
+        "You can\u2019t be my sweetheart now",
+        "You\u2019ve been causing all my troubles",
+        "You don\u2019t love me anyway"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "All our happy days together",
+        "Now are gone and you\u2019re to blame",
+        "Just forget you ever knew me",
+        "Never even call my name"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You have caused me lost of trouble",
+        "You have had your little way",
+        "Now I\u2019m fed up with your flirting",
+        "Honey baby I\u2019m going away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

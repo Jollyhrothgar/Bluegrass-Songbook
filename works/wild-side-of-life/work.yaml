@@ -1,0 +1,11 @@
+id: wild-side-of-life
+title: Wild Side Of Life
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/wild-side-of-life/
+      imported_at: '2026-02-08'

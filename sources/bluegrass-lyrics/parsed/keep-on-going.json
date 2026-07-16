@@ -1,0 +1,39 @@
+{
+  "slug": "keep-on-going",
+  "title": "Keep On Going",
+  "source_url": "https://www.bluegrasslyrics.com/song/keep-on-going/",
+  "raw_lyrics": "If you should wonder back this way when you are lonely too\nDon\u2019t look for me for I will be long gone\nI told you once before you left that I was through with you\nYou can\u2019t expect a man to linger on\n\nYou are old enough to know that a man\u2019s love will not go\nWhen you take up with some one who you think\u2019s a little more fun\nIf you don\u2019t find a welcome mat a-lying in your way\nJust keep on going is all that I can say\n\nI got your letter yesterday you wanted to come home\nBut I\u2019ve been happy since you\u2019ve been away\nI told you once before you left that I was through with you\nSo keep on going is all that I can say",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "If you should wonder back this way when you are lonely too",
+        "Don\u2019t look for me for I will be long gone",
+        "I told you once before you left that I was through with you",
+        "You can\u2019t expect a man to linger on"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You are old enough to know that a man\u2019s love will not go",
+        "When you take up with some one who you think\u2019s a little more fun",
+        "If you don\u2019t find a welcome mat a-lying in your way",
+        "Just keep on going is all that I can say"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I got your letter yesterday you wanted to come home",
+        "But I\u2019ve been happy since you\u2019ve been away",
+        "I told you once before you left that I was through with you",
+        "So keep on going is all that I can say"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

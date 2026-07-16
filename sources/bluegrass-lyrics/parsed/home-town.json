@@ -1,0 +1,39 @@
+{
+  "slug": "home-town",
+  "title": "Home Town",
+  "source_url": "https://www.bluegrasslyrics.com/song/home-town/",
+  "raw_lyrics": "When I was young I couldn\u2019t see\nHow much the old town had meant to me\nBut it\u2019s too late to mourn and cry\nAs long as I live this old town will never die\n\nIt ain\u2019t fair in our home town\nWhen people tear our buildings down\nThis old town won\u2019t be the same\nSeems as tho it\u2019s an awful shame\n\nThe family church house is torn down too\nAnd we\u2019ve all been wondering what will we do\nTo find another would be kind of hard\nBut we will all cherish pleasant memories serving God",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When I was young I couldn\u2019t see",
+        "How much the old town had meant to me",
+        "But it\u2019s too late to mourn and cry",
+        "As long as I live this old town will never die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It ain\u2019t fair in our home town",
+        "When people tear our buildings down",
+        "This old town won\u2019t be the same",
+        "Seems as tho it\u2019s an awful shame"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The family church house is torn down too",
+        "And we\u2019ve all been wondering what will we do",
+        "To find another would be kind of hard",
+        "But we will all cherish pleasant memories serving God"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

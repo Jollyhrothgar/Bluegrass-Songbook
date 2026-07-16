@@ -1,0 +1,11 @@
+id: back-to-the-barrooms
+title: Back To The Barrooms
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/back-to-the-barrooms/
+      imported_at: '2026-02-08'

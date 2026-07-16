@@ -95,13 +95,13 @@ Banjo Hangout has 9,270+ tabs. Instead of downloading everything, we prioritize:
 
 ### Priority Tiers
 
-| Tier | Source | Count | Notes |
-|------|--------|-------|-------|
-| 1-5 | Curated tune list | ~50 | Essential jam tunes (Old Joe Clark, Salt Creek, etc.) |
-| 6-10 | Curated tune list | ~47 | Common session tunes |
-| 11-20 | Curated tune list | ~106 | Extended standards |
-| 25 | Existing instrumental works | ~545 | Works we already have that are tagged Instrumental |
-| 30 | Works needing banjo tab | ~16,700 | Any work without a banjo tab part |
+| Tier | Source | ~Count | Notes |
+|------|--------|--------|-------|
+| 1-5 | Curated tune list | 50 | Essential jam tunes - **done** (100 converted, 24 skipped V3) |
+| 6-10 | Curated tune list | 47 | Common session tunes - not yet fetched |
+| 11-20 | Curated tune list | 106 | Extended standards - not yet fetched |
+| 25 | Existing instrumental works | 545 | Works already tagged Instrumental - not yet fetched |
+| 30 | All works needing banjo tab | 16,700 | Any work without a banjo tab part - not yet fetched |
 
 ### Curated Tune List
 

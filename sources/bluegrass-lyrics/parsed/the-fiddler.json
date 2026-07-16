@@ -1,0 +1,49 @@
+{
+  "slug": "the-fiddler",
+  "title": "The Fiddler",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-fiddler/",
+  "raw_lyrics": "When the fiddler has played his last tune for the night\nAnd the singer has sung his last song\nAnd the mandolins and guitars and banjo\u2019s are quiet\nAnd the loud noisy crowd has gone home\n\nTheres nothing as quiet as a night with no music\nOr as dark as night with no stars\nAnd nothing as lonesome as a cold lonely river\nJust wondering all night where you are\n\nAs we walked together the music was playing\nThe wind whispered soft through the trees\nWith your arms around me whispered I love you\nAnd the words seemed to float on the breeze\n\nNow the fiddler has played his last tune for the night\nAnd the singer has sung his last song\nAll the mandolins and guitars and banjo\u2019s are quiet\nLike the music sweetheart you are gone",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When the fiddler has played his last tune for the night",
+        "And the singer has sung his last song",
+        "And the mandolins and guitars and banjo\u2019s are quiet",
+        "And the loud noisy crowd has gone home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Theres nothing as quiet as a night with no music",
+        "Or as dark as night with no stars",
+        "And nothing as lonesome as a cold lonely river",
+        "Just wondering all night where you are"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As we walked together the music was playing",
+        "The wind whispered soft through the trees",
+        "With your arms around me whispered I love you",
+        "And the words seemed to float on the breeze"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now the fiddler has played his last tune for the night",
+        "And the singer has sung his last song",
+        "All the mandolins and guitars and banjo\u2019s are quiet",
+        "Like the music sweetheart you are gone"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

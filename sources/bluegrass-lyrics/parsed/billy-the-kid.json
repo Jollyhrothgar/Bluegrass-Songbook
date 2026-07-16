@@ -1,0 +1,79 @@
+{
+  "slug": "billy-the-kid",
+  "title": "Billy The Kid",
+  "source_url": "https://www.bluegrasslyrics.com/song/billy-the-kid/",
+  "raw_lyrics": "I\u2019ll sing you a true song of Billy the Kid\nI\u2019ll sing of the reckless deeds that he did\nWay out in New Mexico a long time ago\nWhen a man\u2019s only friend was his own forty-four\n\nWhen Billy the Kid was a very young lad\nIn old Silver City he went to the bad\nWay out in the west with a knife in his hand\nAt the age of twelve years he killed his first man\n\nFair Mexico maidens play guitars and sing\nSongs about Billy their boy bandit king\nNow here is young manhood that reached its sad end\nHe\u2019d notch on his pistol for twenty-one men\n\nNow \u2019twas on the same night that poor Billy died\nHe said to his friends:\u201dI\u2019m not satisfied\nIt\u2019s twenty-one men that I\u2019ve put bullets through\nAnd sherriff Pat Garrett\u2019s gonna make twenty-two\u201d\n\nNow this is how Billy the Kid met his fate\nThe bright moon was shining and the hour was late\nShot down by Pat Garrett who once was his friend\nThe poor outlaw\u2019s life had reached its sad end\n\nNow this is the true song of Billy the Kid\nThese were the reckless deeds that he did\nWay out in New Mexico a long time ago\nWhen a man\u2019s only friend was his own forty-four\n\nThere\u2019s many a fine boy with a face fine and fair\nWho starts out in life with a chance to be square\nBut just like poor Billy he wanders astray\nThen he loses his life in the very same way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll sing you a true song of Billy the Kid",
+        "I\u2019ll sing of the reckless deeds that he did",
+        "Way out in New Mexico a long time ago",
+        "When a man\u2019s only friend was his own forty-four"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When Billy the Kid was a very young lad",
+        "In old Silver City he went to the bad",
+        "Way out in the west with a knife in his hand",
+        "At the age of twelve years he killed his first man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Fair Mexico maidens play guitars and sing",
+        "Songs about Billy their boy bandit king",
+        "Now here is young manhood that reached its sad end",
+        "He\u2019d notch on his pistol for twenty-one men"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now \u2019twas on the same night that poor Billy died",
+        "He said to his friends:\u201dI\u2019m not satisfied",
+        "It\u2019s twenty-one men that I\u2019ve put bullets through",
+        "And sherriff Pat Garrett\u2019s gonna make twenty-two\u201d"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now this is how Billy the Kid met his fate",
+        "The bright moon was shining and the hour was late",
+        "Shot down by Pat Garrett who once was his friend",
+        "The poor outlaw\u2019s life had reached its sad end"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now this is the true song of Billy the Kid",
+        "These were the reckless deeds that he did",
+        "Way out in New Mexico a long time ago",
+        "When a man\u2019s only friend was his own forty-four"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s many a fine boy with a face fine and fair",
+        "Who starts out in life with a chance to be square",
+        "But just like poor Billy he wanders astray",
+        "Then he loses his life in the very same way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

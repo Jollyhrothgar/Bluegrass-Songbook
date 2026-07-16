@@ -1,0 +1,36 @@
+{
+  "slug": "when-the-nightbirds-cry",
+  "title": "When The Nightbirds Cry",
+  "source_url": "https://www.bluegrasslyrics.com/song/when-the-nightbirds-cry/",
+  "raw_lyrics": "All day long the thoughts of you\nStay far away since we are through\nBut in the middle of the night when the nightbirds call\nThat\u2019s when I\u2019ll miss you most of all\n\nWhen the nightbirds cry and the wind is still\nI hear the call of the whipporwill\nIt says you\u2019re gone but I don\u2019t know why\nThat\u2019s why I\u2019m blue when the nightbirds cry\n\nI sit all night on the edge of my bed",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All day long the thoughts of you",
+        "Stay far away since we are through",
+        "But in the middle of the night when the nightbirds call",
+        "That\u2019s when I\u2019ll miss you most of all"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "When the nightbirds cry and the wind is still",
+        "I hear the call of the whipporwill",
+        "It says you\u2019re gone but I don\u2019t know why",
+        "That\u2019s why I\u2019m blue when the nightbirds cry"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I sit all night on the edge of my bed"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

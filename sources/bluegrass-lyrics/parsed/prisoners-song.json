@@ -1,0 +1,59 @@
+{
+  "slug": "prisoners-song",
+  "title": "Prisoner\u2019s Song",
+  "source_url": "https://www.bluegrasslyrics.com/song/prisoners-song/",
+  "raw_lyrics": "Oh I wish I had someone to love me\nSomeone to call me their own\nI wish I had someone to live with\nI\u2019m tired of living alone.\n\nSo meet me tonite love oh meet me\nMeet me out in the moonlight alone\nFor I have a sad story to tell you\nMust be told in the moonlight alone.\n\nI have a great ship on the ocean\nAll mounted in silver and gold\nAnd before my little darling would suffer\nThat ship would be anchored and sold\n\nI\u2019ll be carried to the new jail tomorrow\nLeaving my poor sweetheart alone\nWith these cold prison bars all around me\nAnd my head on a pillow of stone\n\nIf I had the wings of an angel\nOver these prison walls I would fly\nI would fly to the arms of my darlin\nAnd there I\u2019d be willing to die",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I wish I had someone to love me",
+        "Someone to call me their own",
+        "I wish I had someone to live with",
+        "I\u2019m tired of living alone."
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "So meet me tonite love oh meet me",
+        "Meet me out in the moonlight alone",
+        "For I have a sad story to tell you",
+        "Must be told in the moonlight alone."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I have a great ship on the ocean",
+        "All mounted in silver and gold",
+        "And before my little darling would suffer",
+        "That ship would be anchored and sold"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll be carried to the new jail tomorrow",
+        "Leaving my poor sweetheart alone",
+        "With these cold prison bars all around me",
+        "And my head on a pillow of stone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "If I had the wings of an angel",
+        "Over these prison walls I would fly",
+        "I would fly to the arms of my darlin",
+        "And there I\u2019d be willing to die"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "ive-endured",
+  "title": "I\u2019ve Endured",
+  "source_url": "https://www.bluegrasslyrics.com/song/ive-endured/",
+  "raw_lyrics": "Born in the mountains fifty years ago\nI\u2019ve trod the hills and valleys through the rain and snow\nI\u2019ve seen the lightning flashing I\u2019ve heard the thunder roll\nI\u2019ve Endured I\u2019ve Endured how long can one endure\n\nBarefoot in the summer on into the fail\nToo many mouths to feed they couldn\u2019t clothe us all\nSent to church on Sunday to learn the golden rule\nI\u2019ve Endured I\u2019ve Endured how long can one endured\n\nI\u2019ve worked for the rich I\u2019ve lived with the poor\nI\u2019ve see many a heartache there\u2019ll be many a more\nLived loved and sorrowed been to success\u2019s door\nI\u2019ve Endured I\u2019ve Endured how long can one endured\n\nDel McCoury; And The Dixie Pals Live In Japan",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Born in the mountains fifty years ago",
+        "I\u2019ve trod the hills and valleys through the rain and snow",
+        "I\u2019ve seen the lightning flashing I\u2019ve heard the thunder roll",
+        "I\u2019ve Endured I\u2019ve Endured how long can one endure"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Barefoot in the summer on into the fail",
+        "Too many mouths to feed they couldn\u2019t clothe us all",
+        "Sent to church on Sunday to learn the golden rule",
+        "I\u2019ve Endured I\u2019ve Endured how long can one endured"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ve worked for the rich I\u2019ve lived with the poor",
+        "I\u2019ve see many a heartache there\u2019ll be many a more",
+        "Lived loved and sorrowed been to success\u2019s door",
+        "I\u2019ve Endured I\u2019ve Endured how long can one endured"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Del McCoury; And The Dixie Pals Live In Japan"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

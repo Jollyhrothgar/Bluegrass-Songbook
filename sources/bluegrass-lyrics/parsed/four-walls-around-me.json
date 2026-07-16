@@ -1,0 +1,39 @@
+{
+  "slug": "four-walls-around-me",
+  "title": "Four Walls Around Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/four-walls-around-me/",
+  "raw_lyrics": "Oh why did you leave me in this lonesome place\nWith four walls around me and a memory of your face\nWhy can\u2019t I be happy why can\u2019t I forget\nWith four walls around me I wish we\u2019d never met\n\nWith four walls around me  it gets so lonesome dear\nDreaming of you darling and wishing you were here\nFour walls around me my heart is full of pain\nTrying to forget you but it\u2019s all in vain.\n\nOh someday you\u2019ll be sorry you left me al1alone\nWith four walls around you you\u2019ll remember how you done me wrong\nYour time is coming and I know it won\u2019t be long\nYou\u2019ll have nothing there but four walls and a memory of this song",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Oh why did you leave me in this lonesome place",
+        "With four walls around me and a memory of your face",
+        "Why can\u2019t I be happy why can\u2019t I forget",
+        "With four walls around me I wish we\u2019d never met"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "With four walls around me  it gets so lonesome dear",
+        "Dreaming of you darling and wishing you were here",
+        "Four walls around me my heart is full of pain",
+        "Trying to forget you but it\u2019s all in vain."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh someday you\u2019ll be sorry you left me al1alone",
+        "With four walls around you you\u2019ll remember how you done me wrong",
+        "Your time is coming and I know it won\u2019t be long",
+        "You\u2019ll have nothing there but four walls and a memory of this song"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

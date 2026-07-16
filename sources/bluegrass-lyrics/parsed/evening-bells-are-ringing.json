@@ -1,0 +1,49 @@
+{
+  "slug": "evening-bells-are-ringing",
+  "title": "Evening Bells Are Ringing",
+  "source_url": "https://www.bluegrasslyrics.com/song/evening-bells-are-ringing/",
+  "raw_lyrics": "Moonlight shinning over Dixie\nTo my heart will ever bring\nDreams of snowy fields of cotton\nEverywhere the darkies sing\n\nIn the evening in the moonlight\nIn dear old Tennessee\nAnd the evening bells are ringing\nAcross the hills so tenderly\n\nMoonlight makes me sigh for you dear\nMakes me long to hold your hand\nI know I\u2019m missing hugs and kisses\nFar away from Dixieland\n\nMy darling come come I am waiting\nCome let me hold you very near\nWe\u2019ll build a bower among the flowers\nGrowing down in Dixieland",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Moonlight shinning over Dixie",
+        "To my heart will ever bring",
+        "Dreams of snowy fields of cotton",
+        "Everywhere the darkies sing"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "In the evening in the moonlight",
+        "In dear old Tennessee",
+        "And the evening bells are ringing",
+        "Across the hills so tenderly"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Moonlight makes me sigh for you dear",
+        "Makes me long to hold your hand",
+        "I know I\u2019m missing hugs and kisses",
+        "Far away from Dixieland"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My darling come come I am waiting",
+        "Come let me hold you very near",
+        "We\u2019ll build a bower among the flowers",
+        "Growing down in Dixieland"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

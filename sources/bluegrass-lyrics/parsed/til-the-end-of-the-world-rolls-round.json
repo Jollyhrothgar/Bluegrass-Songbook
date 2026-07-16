@@ -1,0 +1,49 @@
+{
+  "slug": "til-the-end-of-the-world-rolls-round",
+  "title": "Til The End Of The World Rolls Round",
+  "source_url": "https://www.bluegrasslyrics.com/song/til-the-end-of-the-world-rolls-round/",
+  "raw_lyrics": "Til the end of the world rolls \u2019round I\u2019ll keep on loving you\nAs long as the sun goes up and comes down\nAnd the big blue sky goes down to the ground\nAs long as the world goes round and round I\u2019ll keep on loving you\n\nI tried to sail the sea of life I rowed my boat alone\nYour love meant nothing to me dear my heart was made of stone\nTo a harbor filled with loneliness my little boat was moored\nAnd on the day I first met you I fell right overboard\n\nWhenever you\u2019re around me dear my heart just won\u2019t stand still\nAnd when it comes to kissing you I\u2019ll never get my fill\nThey said I\u2019d never settle down that I would always roam\nThat I could never be the type for a loving wife and home\n\nSo now I know the way I felt was only selfish pride\nI thought my heart was fireproof but you burned your way inside\nSo tell me what I\u2019ve got to do and tell me how it stands\nThe cards are on the table dear my life is in your hands",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Til the end of the world rolls \u2019round I\u2019ll keep on loving you",
+        "As long as the sun goes up and comes down",
+        "And the big blue sky goes down to the ground",
+        "As long as the world goes round and round I\u2019ll keep on loving you"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I tried to sail the sea of life I rowed my boat alone",
+        "Your love meant nothing to me dear my heart was made of stone",
+        "To a harbor filled with loneliness my little boat was moored",
+        "And on the day I first met you I fell right overboard"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Whenever you\u2019re around me dear my heart just won\u2019t stand still",
+        "And when it comes to kissing you I\u2019ll never get my fill",
+        "They said I\u2019d never settle down that I would always roam",
+        "That I could never be the type for a loving wife and home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "So now I know the way I felt was only selfish pride",
+        "I thought my heart was fireproof but you burned your way inside",
+        "So tell me what I\u2019ve got to do and tell me how it stands",
+        "The cards are on the table dear my life is in your hands"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

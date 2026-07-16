@@ -1,0 +1,39 @@
+{
+  "slug": "tomorrow-ill-be-gone",
+  "title": "Tomorrow I\u2019ll Be Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/tomorrow-ill-be-gone/",
+  "raw_lyrics": "Lost like a grain of sand upon the sands of time\nTrusting and believing in a love I thought was mine\nTossed just like a ship by the waves of a storm\nTo find the way home, but to-morrow I\u2019ll be gone\n\nI\u2019ll be  gone when your blinded eyes open wide to see\nYou\u2019re a loser in this game of love you played so carelessly\nYou thought your new love faithful, like a bird it has flown\nAnd now you\u2019re left alone, and tomorrow I\u2019ll be gone.\n\nGone like the leaves in the fall, to return no more\nThat is how she left you, like the others before\nHopeless love have I, now it has torn\nMy heart in little pieces, and tomorrow I\u2019ll be gone.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Lost like a grain of sand upon the sands of time",
+        "Trusting and believing in a love I thought was mine",
+        "Tossed just like a ship by the waves of a storm",
+        "To find the way home, but to-morrow I\u2019ll be gone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019ll be  gone when your blinded eyes open wide to see",
+        "You\u2019re a loser in this game of love you played so carelessly",
+        "You thought your new love faithful, like a bird it has flown",
+        "And now you\u2019re left alone, and tomorrow I\u2019ll be gone."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Gone like the leaves in the fall, to return no more",
+        "That is how she left you, like the others before",
+        "Hopeless love have I, now it has torn",
+        "My heart in little pieces, and tomorrow I\u2019ll be gone."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

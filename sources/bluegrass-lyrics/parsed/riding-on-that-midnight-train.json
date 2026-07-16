@@ -1,0 +1,39 @@
+{
+  "slug": "riding-on-that-midnight-train",
+  "title": "Riding On That Midnight Train",
+  "source_url": "https://www.bluegrasslyrics.com/song/riding-on-that-midnight-train/",
+  "raw_lyrics": "No matter what I say or do\nYou\u2019re never satisfied\nI\u2019ve tried I\u2019ve tried so many times\nSo I\u2019m leaving you now goodbye\n\nI\u2019m riding on that midnight train\nMy head is hanging low\nThem awful blues will follow me\nWherever I may go\n\nWhy on earth was I ever born\nI\u2019ll never understand\nTo fall in love with a woman like you\nIn love with another man",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "No matter what I say or do",
+        "You\u2019re never satisfied",
+        "I\u2019ve tried I\u2019ve tried so many times",
+        "So I\u2019m leaving you now goodbye"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m riding on that midnight train",
+        "My head is hanging low",
+        "Them awful blues will follow me",
+        "Wherever I may go"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Why on earth was I ever born",
+        "I\u2019ll never understand",
+        "To fall in love with a woman like you",
+        "In love with another man"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "jimmie-brown-the-newsboy",
+  "title": "Jimmie Brown The Newsboy",
+  "source_url": "https://www.bluegrasslyrics.com/song/jimmie-brown-the-newsboy/",
+  "raw_lyrics": "I sell the morning paper sir\nMy name is Jimmie Brown\nEverybody knows me\nI\u2019m the newsboy of the town\n\nYou can hear me yelling \u201cMorning Star\u201d\nWalking on the street\nGot no hat upon my head\nNo shoes upon my feet\n\nNever mind sir how I look\nDon\u2019t swear at me and frown\nI sell the morning paper sir\nMy name is Jimmie Brown\n\nI\u2019m awful cold and hungry sir\nMy clothes are mighty thin\nWander about from place to place\nMy daily bread to win\n\nMy father was a drunkard sir\nI\u2019ve heard my mother say\nI am helping mother sir\nAs I journey on my way\n\nMy mother always tells me sir\nI\u2019ve nothing in the world to lose\nI\u2019ll get a place in heaven sir\nTo sell the gospel news",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I sell the morning paper sir",
+        "My name is Jimmie Brown",
+        "Everybody knows me",
+        "I\u2019m the newsboy of the town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can hear me yelling \u201cMorning Star\u201d",
+        "Walking on the street",
+        "Got no hat upon my head",
+        "No shoes upon my feet"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Never mind sir how I look",
+        "Don\u2019t swear at me and frown",
+        "I sell the morning paper sir",
+        "My name is Jimmie Brown"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m awful cold and hungry sir",
+        "My clothes are mighty thin",
+        "Wander about from place to place",
+        "My daily bread to win"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My father was a drunkard sir",
+        "I\u2019ve heard my mother say",
+        "I am helping mother sir",
+        "As I journey on my way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "My mother always tells me sir",
+        "I\u2019ve nothing in the world to lose",
+        "I\u2019ll get a place in heaven sir",
+        "To sell the gospel news"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

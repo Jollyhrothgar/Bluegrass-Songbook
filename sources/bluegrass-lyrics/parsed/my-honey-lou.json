@@ -1,0 +1,42 @@
+{
+  "slug": "my-honey-lou",
+  "title": "My Honey Lou",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-honey-lou/",
+  "raw_lyrics": "When the sun sets in the west my Honey Lou\nThen\u2019s the time I love you best my Honey Lou\nCome and look into my eyes\nWhen the moon shines in the skies\nI\u2019ll be in paradise my Honey Lou\n\nLast night I waited long my Honey Lou\nAnd told the birds my song my Honey Lou\nWhen the bright and silver moon\nSheds its soft and mellow light\nI\u2019ll love you more each night my Honey Lou\n\nWhen the birds have hushed their song my honey Lou\nAll the twilight shadows on my Honey Lou\nMy heart forever beats\nFor my honey gal so sweet\nI\u2019ll lay it at your feet my Honey Lou",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "When the sun sets in the west my Honey Lou",
+        "Then\u2019s the time I love you best my Honey Lou",
+        "Come and look into my eyes",
+        "When the moon shines in the skies",
+        "I\u2019ll be in paradise my Honey Lou"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Last night I waited long my Honey Lou",
+        "And told the birds my song my Honey Lou",
+        "When the bright and silver moon",
+        "Sheds its soft and mellow light",
+        "I\u2019ll love you more each night my Honey Lou"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "When the birds have hushed their song my honey Lou",
+        "All the twilight shadows on my Honey Lou",
+        "My heart forever beats",
+        "For my honey gal so sweet",
+        "I\u2019ll lay it at your feet my Honey Lou"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

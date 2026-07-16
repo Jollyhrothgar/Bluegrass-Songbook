@@ -1,0 +1,79 @@
+{
+  "slug": "grapes-on-the-vine",
+  "title": "Grapes On The Vine",
+  "source_url": "https://www.bluegrasslyrics.com/song/grapes-on-the-vine/",
+  "raw_lyrics": "There are songs that birds don\u2019t sing to people\nThere are secrets you keep right through to the end\nThere are heros they hide until forever\nAnd I\u2019m singin\u2019 this song for one of them\n\nHe\u2019s the man that you passed on the road there\nThe one with his life on the loose\nGoin\u2019 either somewhere or nowhere\nGoin\u2019 without me without you\n\nFor he is this world\u2019s constant orphan\nTravelin\u2019 out his long time\nLivin\u2019 on apples from orchards\nAnd dyin\u2019 from grapes on the vine\n\nYou can find him in big city winters\nOut where the mission bell crys\nAnd sorrow echos through the suburbs\nAnd tries to close all his eyes\n\nAnd dream of his railroad existance\nAs if it were some kind of dream\nAs if the extent of the distance\nWere what his heart would go him\n\nYou can find him in Pittsburg at Christmas\nYou can find him in Buffalo in June\nAnd he knows all the back roads between them\nLike a Gypsy he pulls a broom\n\nAnd it\u2019s route twenty-two all over again\nStake it well down and try to look like sombody\u2019s friend\nLook strong at the men smile for the girls\nPuzzle at the rest of the world",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "There are songs that birds don\u2019t sing to people",
+        "There are secrets you keep right through to the end",
+        "There are heros they hide until forever",
+        "And I\u2019m singin\u2019 this song for one of them"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "He\u2019s the man that you passed on the road there",
+        "The one with his life on the loose",
+        "Goin\u2019 either somewhere or nowhere",
+        "Goin\u2019 without me without you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "For he is this world\u2019s constant orphan",
+        "Travelin\u2019 out his long time",
+        "Livin\u2019 on apples from orchards",
+        "And dyin\u2019 from grapes on the vine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can find him in big city winters",
+        "Out where the mission bell crys",
+        "And sorrow echos through the suburbs",
+        "And tries to close all his eyes"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And dream of his railroad existance",
+        "As if it were some kind of dream",
+        "As if the extent of the distance",
+        "Were what his heart would go him"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can find him in Pittsburg at Christmas",
+        "You can find him in Buffalo in June",
+        "And he knows all the back roads between them",
+        "Like a Gypsy he pulls a broom"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "And it\u2019s route twenty-two all over again",
+        "Stake it well down and try to look like sombody\u2019s friend",
+        "Look strong at the men smile for the girls",
+        "Puzzle at the rest of the world"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

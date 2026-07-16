@@ -1,0 +1,11 @@
+id: wouldnt-change-you-if-i-could
+title: Wouldn’t Change You If I Could
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/wouldnt-change-you-if-i-could/
+      imported_at: '2026-02-08'

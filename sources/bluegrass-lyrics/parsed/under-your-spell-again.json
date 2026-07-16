@@ -1,0 +1,41 @@
+{
+  "slug": "under-your-spell-again",
+  "title": "Under Your Spell Again",
+  "source_url": "https://www.bluegrasslyrics.com/song/under-your-spell-again/",
+  "raw_lyrics": "You\u2019ve got me under your spell again\nSayin\u2019 those things again\nMakin\u2019 me believe that you\u2019re just mine\nYou\u2019ve got me dreamin\u2019 those dreams again\nThinkin\u2019 those things again\nI\u2019ve got to take you back just one more time.\n\nI swore the last time that you let me down\nThat I wouldn\u2019t see you if you came around\nBut I can\u2019t tell my heart what\u2019s right or wrong\nAnd I\u2019ve been so lonely since you\u2019ve been gone.\n\nWell everybody tells me that I\u2019m a fool\nThat I never should have put my faith in you\nAnd way down deep inside I guess I know it\u2019s true\nBut no one else can make me feel the way you do.",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "You\u2019ve got me under your spell again",
+        "Sayin\u2019 those things again",
+        "Makin\u2019 me believe that you\u2019re just mine",
+        "You\u2019ve got me dreamin\u2019 those dreams again",
+        "Thinkin\u2019 those things again",
+        "I\u2019ve got to take you back just one more time."
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I swore the last time that you let me down",
+        "That I wouldn\u2019t see you if you came around",
+        "But I can\u2019t tell my heart what\u2019s right or wrong",
+        "And I\u2019ve been so lonely since you\u2019ve been gone."
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Well everybody tells me that I\u2019m a fool",
+        "That I never should have put my faith in you",
+        "And way down deep inside I guess I know it\u2019s true",
+        "But no one else can make me feel the way you do."
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

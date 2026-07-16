@@ -1,0 +1,49 @@
+{
+  "slug": "no-mother-or-dad",
+  "title": "No Mother Or Dad",
+  "source_url": "https://www.bluegrasslyrics.com/song/no-mother-or-dad/",
+  "raw_lyrics": "Now Brother and I are all alone\nWe have no place to call our home\nIt will  never be like home no more\nTill we meet them on that other shore\n\nOh Mother dear and Daddy too\nWe wish that we were there with you\nIt\u2019s not the same since you\u2019re away\nWe\u2019ll see you Mother and Dad some day\n\nNow Mother and Dad was old you know\nIt hurt us so to see them go\nIt\u2019s not the same since they are gone\nOh Mother and Dad we\u2019re so alone\n\nOur little home will tumble down\nSince Mother and Dad are not around\nWhat is a home without a friend\nI\u2019ll can never go back home again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now Brother and I are all alone",
+        "We have no place to call our home",
+        "It will  never be like home no more",
+        "Till we meet them on that other shore"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh Mother dear and Daddy too",
+        "We wish that we were there with you",
+        "It\u2019s not the same since you\u2019re away",
+        "We\u2019ll see you Mother and Dad some day"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Now Mother and Dad was old you know",
+        "It hurt us so to see them go",
+        "It\u2019s not the same since they are gone",
+        "Oh Mother and Dad we\u2019re so alone"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Our little home will tumble down",
+        "Since Mother and Dad are not around",
+        "What is a home without a friend",
+        "I\u2019ll can never go back home again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "my-texas-girl",
+  "title": "My Texas Girl",
+  "source_url": "https://www.bluegrasslyrics.com/song/my-texas-girl/",
+  "raw_lyrics": "All my life I\u2019ve wondered if what I done was wrong\nAll I ever cared to do was ride my pony on\nI never had no heartache was always happy and gay\nUntil I met a Texas girl who stole my heart away\n\nWhere the sleepy Rio Grande goes slowly to the sea\nIt was there she promised to be mine throughout eternity\nBut the angels they grew jealous of her beauty and her smile\nAnd came along one stormy night and stole away my bride\nThe birds have hushed their singing sadness is over the land\nThe birds miss my darling by the sleepy Rio Grande\n\nHer lips were like the Russian wine her hair it hung in curls\nHer cheeks were like the dawn of day that breaks upon the world\nShe\u2019s gone and left me lonely I miss the touch of her hand\nTonight while I am walking by the sleepy Rio Grande",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "All my life I\u2019ve wondered if what I done was wrong",
+        "All I ever cared to do was ride my pony on",
+        "I never had no heartache was always happy and gay",
+        "Until I met a Texas girl who stole my heart away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Where the sleepy Rio Grande goes slowly to the sea",
+        "It was there she promised to be mine throughout eternity",
+        "But the angels they grew jealous of her beauty and her smile",
+        "And came along one stormy night and stole away my bride",
+        "The birds have hushed their singing sadness is over the land",
+        "The birds miss my darling by the sleepy Rio Grande"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her lips were like the Russian wine her hair it hung in curls",
+        "Her cheeks were like the dawn of day that breaks upon the world",
+        "She\u2019s gone and left me lonely I miss the touch of her hand",
+        "Tonight while I am walking by the sleepy Rio Grande"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

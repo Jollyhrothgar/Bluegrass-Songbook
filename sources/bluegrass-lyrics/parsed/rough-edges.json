@@ -1,0 +1,39 @@
+{
+  "slug": "rough-edges",
+  "title": "Rough Edges",
+  "source_url": "https://www.bluegrasslyrics.com/song/rough-edges/",
+  "raw_lyrics": "I know your friends don\u2019t approve of me\nAnd I can understand why\nI\u2019ll never fit into your way of life\nThere\u2019s no need for me to even try\n\nI got rough edges all over me\nI can\u2019t change, not even for you\nYou can chisel and mold but I\u2019m brittle as coal\nThose edges will never be smooth\n\nI don\u2019t regret that we fell in love\nI\u2019m proud I once called you mine\nBut sweetheart we must say goodbye\nWe\u2019ve come to the end of the line",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I know your friends don\u2019t approve of me",
+        "And I can understand why",
+        "I\u2019ll never fit into your way of life",
+        "There\u2019s no need for me to even try"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I got rough edges all over me",
+        "I can\u2019t change, not even for you",
+        "You can chisel and mold but I\u2019m brittle as coal",
+        "Those edges will never be smooth"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I don\u2019t regret that we fell in love",
+        "I\u2019m proud I once called you mine",
+        "But sweetheart we must say goodbye",
+        "We\u2019ve come to the end of the line"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

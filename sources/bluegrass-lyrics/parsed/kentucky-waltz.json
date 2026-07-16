@@ -1,0 +1,29 @@
+{
+  "slug": "kentucky-waltz",
+  "title": "Kentucky Waltz",
+  "source_url": "https://www.bluegrasslyrics.com/song/kentucky-waltz/",
+  "raw_lyrics": "We were waltzing that night in Kentucky\n\u2018Neath the beautiful harvest moon\nAnd I was the boy who was lucky\nBut it all ended too soon\n\nAs I sit here alone in the moonlight\nI can see your smiling face\nAnd I long once more for your embrace\nIn that beautiful Kentucky waltz",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "We were waltzing that night in Kentucky",
+        "\u2018Neath the beautiful harvest moon",
+        "And I was the boy who was lucky",
+        "But it all ended too soon"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "As I sit here alone in the moonlight",
+        "I can see your smiling face",
+        "And I long once more for your embrace",
+        "In that beautiful Kentucky waltz"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

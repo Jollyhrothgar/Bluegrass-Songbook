@@ -1,0 +1,11 @@
+id: hard-times-come-again-no-more
+title: Hard Times Come Again No More
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/hard-times-come-again-no-more/
+      imported_at: '2026-02-08'

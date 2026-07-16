@@ -1,0 +1,49 @@
+{
+  "slug": "i-hear-my-savior-calling",
+  "title": "I Hear My Savior Calling",
+  "source_url": "https://www.bluegrasslyrics.com/song/i-hear-my-savior-calling/",
+  "raw_lyrics": "My friends have gathered here around me\nThey know I\u2019ll soon be on my way\nTo live up there with Christ forever\nThat love-ly land far away\n\nI hear my savior now a callin\u2019\nHe bids me now to come home\nI\u2019ll stead-ly follow in his footsteps\nI know he\u2019ll guide me safely home\n\nIn this world we\u2019re only strangers\nWe have sinned and all done wrong\nBut if you\u2019ll kneel in prayer my brother\nAt jour-ney\u2019s end he\u2019ll call you home\n\nI\u2019m rea-dy now for the journey\nI know I\u2019ll soon be on my way\nSweet an-gels voices now will guide me\nOh hea-ven can\u2019t be far away",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "My friends have gathered here around me",
+        "They know I\u2019ll soon be on my way",
+        "To live up there with Christ forever",
+        "That love-ly land far away"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I hear my savior now a callin\u2019",
+        "He bids me now to come home",
+        "I\u2019ll stead-ly follow in his footsteps",
+        "I know he\u2019ll guide me safely home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "In this world we\u2019re only strangers",
+        "We have sinned and all done wrong",
+        "But if you\u2019ll kneel in prayer my brother",
+        "At jour-ney\u2019s end he\u2019ll call you home"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m rea-dy now for the journey",
+        "I know I\u2019ll soon be on my way",
+        "Sweet an-gels voices now will guide me",
+        "Oh hea-ven can\u2019t be far away"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

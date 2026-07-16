@@ -1,0 +1,49 @@
+{
+  "slug": "little-georgia-rose",
+  "title": "Little Georgia Rose",
+  "source_url": "https://www.bluegrasslyrics.com/song/little-georgia-rose/",
+  "raw_lyrics": "Now come and listen to my story\nA story that I know is true\nA little rose that bloomed in Georgia\nWith  hair of gold and a heart so true\n\nWay down in the blue ridge mountains\nWay down where the tall pines grow\nLives my sweetheart of the mountains\nShe\u2019s my little Georgia rose\n\nHer mother left her with another\nA carefree life she had planned\nThe baby now she  is a lady\nThe one her mother couldn\u2019t stand\n\nWe often sing those songs together\nI watched her do her little part\nShe smiled at me when I would tell her\nThat she was my sweetheart",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Now come and listen to my story",
+        "A story that I know is true",
+        "A little rose that bloomed in Georgia",
+        "With  hair of gold and a heart so true"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Way down in the blue ridge mountains",
+        "Way down where the tall pines grow",
+        "Lives my sweetheart of the mountains",
+        "She\u2019s my little Georgia rose"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Her mother left her with another",
+        "A carefree life she had planned",
+        "The baby now she  is a lady",
+        "The one her mother couldn\u2019t stand"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "We often sing those songs together",
+        "I watched her do her little part",
+        "She smiled at me when I would tell her",
+        "That she was my sweetheart"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

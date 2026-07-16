@@ -1,0 +1,11 @@
+id: old-country-church
+title: Old Country Church
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/old-country-church/
+      imported_at: '2026-02-08'

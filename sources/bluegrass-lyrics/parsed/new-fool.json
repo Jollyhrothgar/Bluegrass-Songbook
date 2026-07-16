@@ -1,0 +1,43 @@
+{
+  "slug": "new-fool",
+  "title": "New Fool",
+  "source_url": "https://www.bluegrasslyrics.com/song/new-fool/",
+  "raw_lyrics": "Sad songs and teardrops will surely mend this broken heart\nTime forgets these bitter things I feel\nBut your days are numbered\nyou learned your lesson well\nWhen you finally play a heart that plays for real\n\nThere\u2019s a new fool somewhere waiting\nFor you old fashioned heart-break love affair\nHe\u2019ll see through your intentions\nwith each lie that you tell\nAnd the old ways will go out with the new somewhere\n\nLeavin\u2019 was so easy\nbut old hands do make fancy moves\nEnough for one fell victim to your game\nBut someday you\u2019ll see\nthat cold hearts can be broken too\nAnd what goes \u2019round must come around your way",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Sad songs and teardrops will surely mend this broken heart",
+        "Time forgets these bitter things I feel",
+        "But your days are numbered",
+        "you learned your lesson well",
+        "When you finally play a heart that plays for real"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "There\u2019s a new fool somewhere waiting",
+        "For you old fashioned heart-break love affair",
+        "He\u2019ll see through your intentions",
+        "with each lie that you tell",
+        "And the old ways will go out with the new somewhere"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Leavin\u2019 was so easy",
+        "but old hands do make fancy moves",
+        "Enough for one fell victim to your game",
+        "But someday you\u2019ll see",
+        "that cold hearts can be broken too",
+        "And what goes \u2019round must come around your way"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

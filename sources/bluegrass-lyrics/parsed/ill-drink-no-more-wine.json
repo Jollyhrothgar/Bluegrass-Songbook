@@ -1,0 +1,49 @@
+{
+  "slug": "ill-drink-no-more-wine",
+  "title": "I\u2019ll Drink No More Wine",
+  "source_url": "https://www.bluegrasslyrics.com/song/ill-drink-no-more-wine/",
+  "raw_lyrics": "Tonight as I write you I pray you will find\nYou\u2019re driving me crazy plum out of my mind\nIf you\u2019ll come back darling I\u2019ll treat you so kind\nI\u2019ll buy you fine clothes and I\u2019ll drink no more wine\n\nI\u2019m waiting I\u2019m waiting for you to return\nThe longer I wait the more my heart burns\nIf you\u2019ll come home darling I\u2019ll treat you so kind\nI\u2019ll never mistreat you I\u2019ll drink no more wine\n\nIt\u2019s been one year darling since you told me goodbye\nAnd the pillow stays wet with tears from my eyes\nIf you\u2019ll come back darling I\u2019ll treat you so kind\nI love you I love you I\u2019ll drink no more wine\n\nThe day that you left me I thought it was grand\nI was a happy-go-lucky man\nBut tonight dear it\u2019s different as I write these lines\nMy happiness has folded, luck\u2019s left me behind",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Tonight as I write you I pray you will find",
+        "You\u2019re driving me crazy plum out of my mind",
+        "If you\u2019ll come back darling I\u2019ll treat you so kind",
+        "I\u2019ll buy you fine clothes and I\u2019ll drink no more wine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I\u2019m waiting I\u2019m waiting for you to return",
+        "The longer I wait the more my heart burns",
+        "If you\u2019ll come home darling I\u2019ll treat you so kind",
+        "I\u2019ll never mistreat you I\u2019ll drink no more wine"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It\u2019s been one year darling since you told me goodbye",
+        "And the pillow stays wet with tears from my eyes",
+        "If you\u2019ll come back darling I\u2019ll treat you so kind",
+        "I love you I love you I\u2019ll drink no more wine"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The day that you left me I thought it was grand",
+        "I was a happy-go-lucky man",
+        "But tonight dear it\u2019s different as I write these lines",
+        "My happiness has folded, luck\u2019s left me behind"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "going-across-the-mountain",
+  "title": "Going Across the Mountain",
+  "source_url": "https://www.bluegrasslyrics.com/song/going-across-the-mountain/",
+  "raw_lyrics": "Going across the mountain\nOh fair ye well\nGoing across the mountain\nHear my banjo tell\n\nGoing across the mountain\nJoin the boys in blue\nWhen this war is over\nI\u2019ll come back to you\n\nGot my rations on my back\nMy powder it is dry\nGoing across the mountain\nCrissie don\u2019t you cry\n\nWaitin\u2019 \u2018fore it\u2019s good daylight\nIf nothin happens to me\nI\u2019ll be way down yonder\nIn old Tennessee\n\n\u2018Spect you\u2019ll miss me when I\u2019m gone\nBut I\u2019m going through\nWhen this fightin\u2019s over\nI\u2019ll come back to you",
+  "sections": [
+    {
+      "type": "chorus",
+      "lines": [
+        "Going across the mountain",
+        "Oh fair ye well",
+        "Going across the mountain",
+        "Hear my banjo tell"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Going across the mountain",
+        "Join the boys in blue",
+        "When this war is over",
+        "I\u2019ll come back to you"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Got my rations on my back",
+        "My powder it is dry",
+        "Going across the mountain",
+        "Crissie don\u2019t you cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Waitin\u2019 \u2018fore it\u2019s good daylight",
+        "If nothin happens to me",
+        "I\u2019ll be way down yonder",
+        "In old Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "\u2018Spect you\u2019ll miss me when I\u2019m gone",
+        "But I\u2019m going through",
+        "When this fightin\u2019s over",
+        "I\u2019ll come back to you"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

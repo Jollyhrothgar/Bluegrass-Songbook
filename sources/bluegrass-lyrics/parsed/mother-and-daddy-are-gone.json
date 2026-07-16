@@ -1,0 +1,39 @@
+{
+  "slug": "mother-and-daddy-are-gone",
+  "title": "Mother And Daddy Are Gone",
+  "source_url": "https://www.bluegrasslyrics.com/song/mother-and-daddy-are-gone/",
+  "raw_lyrics": "The night Mother died it broke my Daddy\u2019s heart\nIn anguish he bowed his gray head\nAnd the pitiful way he kept calling her name\nI can\u2019t believe my angel is dead\n\nThe sparkle that once shined in my Daddy\u2019s eyes\nAnd the spring he once had in his walk\nWas replaced with a far away look on his face\nAs often of my sweet Mother we\u2019d talk\n\nThen the night finally came I was called to his side\nOn his face was a heavenly smile\nThen he reached for my hand and said Son with a smile\nIn heaven I\u2019ll see our sweet angel tonight",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "The night Mother died it broke my Daddy\u2019s heart",
+        "In anguish he bowed his gray head",
+        "And the pitiful way he kept calling her name",
+        "I can\u2019t believe my angel is dead"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The sparkle that once shined in my Daddy\u2019s eyes",
+        "And the spring he once had in his walk",
+        "Was replaced with a far away look on his face",
+        "As often of my sweet Mother we\u2019d talk"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Then the night finally came I was called to his side",
+        "On his face was a heavenly smile",
+        "Then he reached for my hand and said Son with a smile",
+        "In heaven I\u2019ll see our sweet angel tonight"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

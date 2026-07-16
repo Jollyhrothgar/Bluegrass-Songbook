@@ -1,0 +1,60 @@
+{
+  "slug": "the-girl-at-the-crossroad-bar",
+  "title": "The Girl At The Crossroad Bar",
+  "source_url": "https://www.bluegrasslyrics.com/song/the-girl-at-the-crossroad-bar/",
+  "raw_lyrics": "I walked out one night for to ramble round\nI didn\u2019t mean to stay, just to view the town\nWhen I saw her smiling from afar\nAs she walked into that crossroad bar\n\nWell I walked inside and I sat me down\nOrdered sweet red wine and I drank it down\nShe came and sat beside me there\nWith the dark brown eyes and the red, red hair.\n\nI told her that I loved her true\nAnything you want, I\u2019ll surely do\nShe said, \u201cA man like you won\u2019t get too far\nWith a girl like me from the crossroad bar.\n\n\u201cI like the smokey lights and a lonesome song\nAnd I won\u2019t do right if I can do you wrong\nYou want the moon above and I\u2019m the darkest star\nAnd you won\u2019t find love at the crossroad bar.\u201d\n\nCome all my friends, take my advice\nGet your love at home, with your lovin\u2019 wife\nYou\u2019re much better off than you think you are\nAnd you won\u2019t find love at the crossroad bar\nAnd you won\u2019t find love at the crossroad bar.",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I walked out one night for to ramble round",
+        "I didn\u2019t mean to stay, just to view the town",
+        "When I saw her smiling from afar",
+        "As she walked into that crossroad bar"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Well I walked inside and I sat me down",
+        "Ordered sweet red wine and I drank it down",
+        "She came and sat beside me there",
+        "With the dark brown eyes and the red, red hair."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I told her that I loved her true",
+        "Anything you want, I\u2019ll surely do",
+        "She said, \u201cA man like you won\u2019t get too far",
+        "With a girl like me from the crossroad bar."
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "\u201cI like the smokey lights and a lonesome song",
+        "And I won\u2019t do right if I can do you wrong",
+        "You want the moon above and I\u2019m the darkest star",
+        "And you won\u2019t find love at the crossroad bar.\u201d"
+      ],
+      "indented": true
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Come all my friends, take my advice",
+        "Get your love at home, with your lovin\u2019 wife",
+        "You\u2019re much better off than you think you are",
+        "And you won\u2019t find love at the crossroad bar",
+        "And you won\u2019t find love at the crossroad bar."
+      ],
+      "indented": true
+    }
+  ],
+  "has_structure": true
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "cryin-heart-blues",
+  "title": "Cryin\u2019 Heart Blues",
+  "source_url": "https://www.bluegrasslyrics.com/song/cryin-heart-blues/",
+  "raw_lyrics": "Crying the blues\nI\u2019m crying because I have lost you\nBlues I can\u2019t lose\nI guess it\u2019s too late now to try\nI\u2019ve tried to chose another to love but it\u2019s no use\nCrying heart blues there\u2019s nothing that\u2019s left but to cry\n\nI\u2019ll always remember I love you\nMy teardrops won\u2019t let me forget\nEach tear is a wish to be near you\nThey started the day that we met\nA trail of tears will lead you to me if you want me\nAnd from my hopeless my crying heart flees",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Crying the blues",
+        "I\u2019m crying because I have lost you",
+        "Blues I can\u2019t lose",
+        "I guess it\u2019s too late now to try",
+        "I\u2019ve tried to chose another to love but it\u2019s no use",
+        "Crying heart blues there\u2019s nothing that\u2019s left but to cry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019ll always remember I love you",
+        "My teardrops won\u2019t let me forget",
+        "Each tear is a wish to be near you",
+        "They started the day that we met",
+        "A trail of tears will lead you to me if you want me",
+        "And from my hopeless my crying heart flees"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

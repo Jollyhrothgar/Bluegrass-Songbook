@@ -1,0 +1,49 @@
+{
+  "slug": "first-whippoorwill-the",
+  "title": "First Whippoorwill, The",
+  "source_url": "https://www.bluegrasslyrics.com/song/first-whippoorwill-the/",
+  "raw_lyrics": "Springtime is near my darling\nYou say that you are going away\nMy heart will be with you my darling\nAnd I\u2019m counting now the days\n\nI know that soon I\u2019ll have to travel\nI know I\u2019m over the hill\nI feel so all alone my darling said she\u2019d be gone\nWhen I heard that first whippoorwill\n\nThe flowers are blooming little darling\nWith the budding of the trees\nI hear the night birds a crying\nI know that they are warning me\n\nOur love was planted little darling\nJust like the farmer plants his grain\nBut there will never be a harvest\nOn the hills the whippoorwills now sing",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Springtime is near my darling",
+        "You say that you are going away",
+        "My heart will be with you my darling",
+        "And I\u2019m counting now the days"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "I know that soon I\u2019ll have to travel",
+        "I know I\u2019m over the hill",
+        "I feel so all alone my darling said she\u2019d be gone",
+        "When I heard that first whippoorwill"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "The flowers are blooming little darling",
+        "With the budding of the trees",
+        "I hear the night birds a crying",
+        "I know that they are warning me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Our love was planted little darling",
+        "Just like the farmer plants his grain",
+        "But there will never be a harvest",
+        "On the hills the whippoorwills now sing"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

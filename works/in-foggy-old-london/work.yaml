@@ -1,0 +1,11 @@
+id: in-foggy-old-london
+title: In Foggy Old London
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: bluegrass-lyrics
+      source_url: https://www.bluegrasslyrics.com/song/in-foggy-old-london/
+      imported_at: '2026-02-08'

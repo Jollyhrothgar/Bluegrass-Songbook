@@ -1,0 +1,39 @@
+{
+  "slug": "hideaway",
+  "title": "Hideaway",
+  "source_url": "https://www.bluegrasslyrics.com/song/hideaway/",
+  "raw_lyrics": "I can see the sad expression you were trying to disguise\nYou gave away your secrets with that look that\u2019s in your eyes\nYou don\u2019t have to tell me what you did it comes as no surprise\nYou don\u2019t have to give your heart to hideaway\n\nHideaway, hideaway\nIn my arms you\u2019ll find a safer place to stay\nIf you\u2019re looking for a refuge where you can hold the world at bay\nCome to me if you just need a hideaway\n\nIt seems each time you\u2019d meet somebody you were sure your dreams came true\nYou never stopped to think she might not be so good for you\nYou make the same mistakes but I\u2019ll be here to tell your troubles to\nWhen it\u2019s over come to me and hideaway",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I can see the sad expression you were trying to disguise",
+        "You gave away your secrets with that look that\u2019s in your eyes",
+        "You don\u2019t have to tell me what you did it comes as no surprise",
+        "You don\u2019t have to give your heart to hideaway"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Hideaway, hideaway",
+        "In my arms you\u2019ll find a safer place to stay",
+        "If you\u2019re looking for a refuge where you can hold the world at bay",
+        "Come to me if you just need a hideaway"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "It seems each time you\u2019d meet somebody you were sure your dreams came true",
+        "You never stopped to think she might not be so good for you",
+        "You make the same mistakes but I\u2019ll be here to tell your troubles to",
+        "When it\u2019s over come to me and hideaway"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

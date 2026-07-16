@@ -1,0 +1,49 @@
+{
+  "slug": "log-cabin-in-the-lane",
+  "title": "Log Cabin In The Lane",
+  "source_url": "https://www.bluegrasslyrics.com/song/log-cabin-in-the-lane/",
+  "raw_lyrics": "I\u2019m growing old and feeble and I can\u2019t work on more\nMy rusty bladed hoe I\u2019ve laid to rest\nMy mama and my papa they are sleeping side by side\nAnd their spirits now are roaming with the blessed\n\nOh, the chimney\u2019s falling down and the roof is all caved in\nLetting in the sunshine and the rain\nAnd the only friend I\u2019ve got now is that good old dog of mine\nAnd that little old log cabin in the lane\n\nOh the paths have all grown up that led around the hill\nThe fences have all gone to decay\nAnd the creeks have all dried up where we used to go to mill\nAnd things have changed their course another way\n\nOh I ain\u2019t got long to stay here, what little time I\u2019ve got\nI want to rest content while I remain\n\u2018Til death shall call this dog and me to find a better home\nThan that little old log cabin in the lane",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019m growing old and feeble and I can\u2019t work on more",
+        "My rusty bladed hoe I\u2019ve laid to rest",
+        "My mama and my papa they are sleeping side by side",
+        "And their spirits now are roaming with the blessed"
+      ],
+      "indented": false
+    },
+    {
+      "type": "chorus",
+      "lines": [
+        "Oh, the chimney\u2019s falling down and the roof is all caved in",
+        "Letting in the sunshine and the rain",
+        "And the only friend I\u2019ve got now is that good old dog of mine",
+        "And that little old log cabin in the lane"
+      ],
+      "indented": true
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh the paths have all grown up that led around the hill",
+        "The fences have all gone to decay",
+        "And the creeks have all dried up where we used to go to mill",
+        "And things have changed their course another way"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Oh I ain\u2019t got long to stay here, what little time I\u2019ve got",
+        "I want to rest content while I remain",
+        "\u2018Til death shall call this dog and me to find a better home",
+        "Than that little old log cabin in the lane"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

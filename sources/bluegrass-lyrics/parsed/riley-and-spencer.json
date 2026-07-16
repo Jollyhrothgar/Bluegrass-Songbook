@@ -1,0 +1,81 @@
+{
+  "slug": "riley-and-spencer",
+  "title": "Riley And Spencer",
+  "source_url": "https://www.bluegrasslyrics.com/song/riley-and-spencer/",
+  "raw_lyrics": "Raleigh and Spencer are burning down\nNo there ain\u2019t no liquor in town\nNo there ain\u2019t no liquor in town\n\nWhatcha gonna do to wet them lips\nWhen the whole darn town runs dry\nWhen the whole darn town runs dry\n\nI been all around this whole wide world\nI been down to Memphis Tennessee\nYes I been down to Memphis Tennessee\n\nI played cards with the kings and queens\nI shot dice with old Jesse James\nI shot dice with old Jesse James\n\nI can eat more chicken than any one gal can fry\nI can tell more low-down lies\nI can tell more low-down lies\n\nI can tell more lies than there\u2019re stars in the sky\nAnd I ain\u2019t going to heaven when I die\nNo I ain\u2019t going to heaven when I die\n\nI\u2019d trade my shoes for one bottle of booze\nI\u2019d drink it I\u2019d lay down and die\nYes I\u2019d drink it I\u2019d lay down and die\n\nYou can stomp down all the flowers that\u2019ll grow round my grave\nBut they\u2019ll rise and bloom again\nYes they\u2019ll rise and bloom again",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "Raleigh and Spencer are burning down",
+        "No there ain\u2019t no liquor in town",
+        "No there ain\u2019t no liquor in town"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Whatcha gonna do to wet them lips",
+        "When the whole darn town runs dry",
+        "When the whole darn town runs dry"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I been all around this whole wide world",
+        "I been down to Memphis Tennessee",
+        "Yes I been down to Memphis Tennessee"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I played cards with the kings and queens",
+        "I shot dice with old Jesse James",
+        "I shot dice with old Jesse James"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can eat more chicken than any one gal can fry",
+        "I can tell more low-down lies",
+        "I can tell more low-down lies"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can tell more lies than there\u2019re stars in the sky",
+        "And I ain\u2019t going to heaven when I die",
+        "No I ain\u2019t going to heaven when I die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I\u2019d trade my shoes for one bottle of booze",
+        "I\u2019d drink it I\u2019d lay down and die",
+        "Yes I\u2019d drink it I\u2019d lay down and die"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "You can stomp down all the flowers that\u2019ll grow round my grave",
+        "But they\u2019ll rise and bloom again",
+        "Yes they\u2019ll rise and bloom again"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

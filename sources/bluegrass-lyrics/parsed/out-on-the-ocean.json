@@ -1,0 +1,69 @@
+{
+  "slug": "out-on-the-ocean",
+  "title": "Out on the Ocean",
+  "source_url": "https://www.bluegrasslyrics.com/song/out-on-the-ocean/",
+  "raw_lyrics": "I am sailing out on the ocean\nMany miles from home on sea\nAnd I wonder little darlin\nIf you ever think of me\n\nI am just on old true lover\nRoaming through this world alone\nAnd I have no one to love me\nThrough this life I\u2019ll always own\n\nI was once carefree and happy\nWhen I won my sweetheart\u2019s hand\nAnd now my life is empty\nSince she\u2019s wed another man\n\nDo you remember little darlin\nJust how much I cared for you\nAnd you told me that you loved me\nBut you proved to be untrue\n\nI am travelling far away dear\nMany miles from this old place\nAnd I know I\u2019ll never forget you\nYour sweet smiles and happy face\n\nI can hear my mother calling\nI can see my father pray\nIf I\u2019d listened to my father\nI would be at home today",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "I am sailing out on the ocean",
+        "Many miles from home on sea",
+        "And I wonder little darlin",
+        "If you ever think of me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I am just on old true lover",
+        "Roaming through this world alone",
+        "And I have no one to love me",
+        "Through this life I\u2019ll always own"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I was once carefree and happy",
+        "When I won my sweetheart\u2019s hand",
+        "And now my life is empty",
+        "Since she\u2019s wed another man"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Do you remember little darlin",
+        "Just how much I cared for you",
+        "And you told me that you loved me",
+        "But you proved to be untrue"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I am travelling far away dear",
+        "Many miles from this old place",
+        "And I know I\u2019ll never forget you",
+        "Your sweet smiles and happy face"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "I can hear my mother calling",
+        "I can see my father pray",
+        "If I\u2019d listened to my father",
+        "I would be at home today"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}

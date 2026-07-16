@@ -1,0 +1,39 @@
+{
+  "slug": "remember-me-2",
+  "title": "Remember Me",
+  "source_url": "https://www.bluegrasslyrics.com/song/remember-me-2/",
+  "raw_lyrics": "You told me once that you were mine alone forever\nAnd I was yours \u2019till the end of eternity\nBut all those vows are broken now\nAnd I will never be the same except in memory\n\nRemember me when the candle lights are gleaming\nRemember me at the close of a long long day\nAnd it would be so sweet when all alone I\u2019m dreamin\u2019\nJust to know you still remember me\n\nA brighter face may take my place when we\u2019re apart dear\nAnother love with a heart more bold and free\nBut in the end fair weather friends may break your heart dear\nIf they do sweetheart remember me",
+  "sections": [
+    {
+      "type": "verse",
+      "lines": [
+        "You told me once that you were mine alone forever",
+        "And I was yours \u2019till the end of eternity",
+        "But all those vows are broken now",
+        "And I will never be the same except in memory"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "Remember me when the candle lights are gleaming",
+        "Remember me at the close of a long long day",
+        "And it would be so sweet when all alone I\u2019m dreamin\u2019",
+        "Just to know you still remember me"
+      ],
+      "indented": false
+    },
+    {
+      "type": "verse",
+      "lines": [
+        "A brighter face may take my place when we\u2019re apart dear",
+        "Another love with a heart more bold and free",
+        "But in the end fair weather friends may break your heart dear",
+        "If they do sweetheart remember me"
+      ],
+      "indented": false
+    }
+  ],
+  "has_structure": true
+}
