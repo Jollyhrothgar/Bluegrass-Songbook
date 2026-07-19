@@ -321,8 +321,14 @@ export function analyzeReadingList(readingList) {
             }
         }
 
-        // Case 3: same start, next extends past current (AABB first-section repeat)
-        if (nextStart === currStart && nextEnd > currEnd) {
+        // Case 3: same start, next extends past OR exactly repeats current.
+        // [1-8] then [1-16] -> |: 1..8 :| B (AABB first-section repeat).
+        // [1-8] then [1-8]  -> |: 1..8 :|   (literal duplicate span — the
+        // parser emits pure-AABB repeats this way; a strict '>' dropped the
+        // repeat signs entirely, e.g. salt-creek [1-8][1-8][9-16][9-16]).
+        // '>=' is safe: Case 2 owns nextEnd < currEnd, so the branches stay
+        // mutually exclusive.
+        if (nextStart === currStart && nextEnd >= currEnd) {
             repeatStartMarkers.add(currStart);
             repeatEndMarkers.add(currEnd);
         }

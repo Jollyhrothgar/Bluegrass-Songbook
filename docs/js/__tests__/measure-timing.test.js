@@ -333,4 +333,17 @@ describe('analyzeReadingList — overlapping D.S.-style lists (27493)', () => {
         expect([...a.repeatEndMarkers]).toContain(51);
         expect(Object.keys(a.endings)).toHaveLength(0);
     });
+
+    it('literal duplicate spans: [1-8][1-8][9-16][9-16] marks |: 1..8 :| |: 9..16 :| (salt-creek AABB)', () => {
+        const a = _arl([
+            { from_measure: 1, to_measure: 8 },
+            { from_measure: 1, to_measure: 8 },
+            { from_measure: 9, to_measure: 16 },
+            { from_measure: 9, to_measure: 16 },
+        ]);
+        expect([...a.repeatStartMarkers].sort((x, y) => x - y)).toEqual([1, 9]);
+        expect([...a.repeatEndMarkers].sort((x, y) => x - y)).toEqual([8, 16]);
+        // plain repeats — no first/second endings
+        expect(Object.keys(a.endings)).toHaveLength(0);
+    });
 });
