@@ -121,7 +121,11 @@ export function applyTieExtensions(trackNotes, ties) {
  * @param {number} noteDurSec - the source note's total (extended) duration
  */
 export function slideWaypoints(deltaSemitones, holdSec, noteDurSec) {
-    const glideSec = Math.min(0.09, noteDurSec * 0.3, holdSec > 0 ? holdSec : 0.09);
+    // A slide is a QUICK finger-travel (unlike a slow, expressive bend): keep
+    // the pitch move short and snappy — the source dwells at pitch, then darts
+    // up into the target. ~45ms reads as a slide; longer drifts toward a bend.
+    const GLIDE_SEC = 0.045;
+    const glideSec = Math.min(GLIDE_SEC, noteDurSec * 0.3, holdSec > 0 ? holdSec : GLIDE_SEC);
     return [
         { delta: 0, when: Math.max(0, holdSec - glideSec) },
         { delta: deltaSemitones, when: holdSec },

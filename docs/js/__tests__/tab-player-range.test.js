@@ -152,8 +152,8 @@ describe('slideWaypoints (pitch glide, WebAudioFont `slides` format)', () => {
         expect(wp[0].delta).toBe(0);            // no pitch change while ringing
         expect(wp[1].delta).toBe(3);            // reach the target pitch
         expect(wp[1].when).toBeCloseTo(0.24);   // exactly at the target onset
-        // the glide itself is short (<= 90ms), not a slow drift from note start
-        expect(wp[1].when - wp[0].when).toBeLessThanOrEqual(0.09 + 1e-9);
+        // the glide is a quick, snappy slide (~45ms), not a slow bend
+        expect(wp[1].when - wp[0].when).toBeCloseTo(0.045);
         expect(wp[0].when).toBeGreaterThanOrEqual(0);
     });
 
