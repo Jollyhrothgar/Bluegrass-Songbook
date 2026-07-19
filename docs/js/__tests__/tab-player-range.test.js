@@ -6,6 +6,7 @@ import {
     clipScheduleToRange,
     applyTieExtensions,
     effectiveDurationSeconds,
+    slideWaypoints,
 } from '../renderers/tab-player.js';
 
 // 120 BPM, 480 tpq → 1 tick ≈ 1.0417ms; use a round number instead
@@ -138,5 +139,33 @@ describe('clipScheduleToRange', () => {
         expect(clipScheduleToRange(notes, {
             startTick: 5000, secondsPerTick: SPT,
         })).toEqual([]);
+    });
+});
+
+describe('slideWaypoints (pitch glide, WebAudioFont `slides` format)', () => {
+    // salt-creek m1: source f5 slides to f8 (+3 semitones). At SPT=0.001 the
+    // source's written eighth (240 ticks) => holdSec 0.24; the extended note
+    // (through the target) => 0.48s.
+    it('holds source pitch, then bends up into the target at its onset', () => {
+        const wp = slideWaypoints(3, 0.24, 0.48);
+        expect(wp).toHaveLength(2);
+        expect(wp[0].delta).toBe(0);            // no pitch change while ringing
+        expect(wp[1].delta).toBe(3);            // reach the target pitch
+        expect(wp[1].when).toBeCloseTo(0.24);   // exactly at the target onset
+        // the glide itself is short (<= 90ms), not a slow drift from note start
+        expect(wp[1].when - wp[0].when).toBeLessThanOrEqual(0.09 + 1e-9);
+        expect(wp[0].when).toBeGreaterThanOrEqual(0);
+    });
+
+    it('never emits negative times when the target sits at the note start', () => {
+        const wp = slideWaypoints(2, 0, 0.3);
+        expect(wp.every(p => p.when >= 0)).toBe(true);
+        expect(wp[1].delta).toBe(2);
+    });
+
+    it('caps the glide to a fraction of a very short note', () => {
+        const wp = slideWaypoints(4, 0.05, 0.05);  // 50ms note
+        const glide = wp[1].when - wp[0].when;
+        expect(glide).toBeLessThanOrEqual(0.05 * 0.3 + 1e-9);
     });
 });

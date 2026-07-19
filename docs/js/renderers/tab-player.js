@@ -108,6 +108,26 @@ export function applyTieExtensions(trackNotes, ties) {
  * @param {number} stringGap - seconds to the next attack on this string
  * @param {number} rhythmicGap - seconds to the next event on any track
  */
+/**
+ * Pitch-glide waypoints for a slide, in WebAudioFont's `slides` format
+ * (array of {delta: semitones from the note's start pitch, when: seconds from
+ * the note's start}). One pick: the source note holds its start pitch, then
+ * bends by `deltaSemitones` into the target, reaching it at `holdSec` (the
+ * target's onset). The note then rings at target pitch for the rest of its
+ * (already-extended) duration. Pure.
+ *
+ * @param {number} deltaSemitones - target midi - source midi (e.g. 5->8 = +3)
+ * @param {number} holdSec - seconds from note start to the target onset
+ * @param {number} noteDurSec - the source note's total (extended) duration
+ */
+export function slideWaypoints(deltaSemitones, holdSec, noteDurSec) {
+    const glideSec = Math.min(0.09, noteDurSec * 0.3, holdSec > 0 ? holdSec : 0.09);
+    return [
+        { delta: 0, when: Math.max(0, holdSec - glideSec) },
+        { delta: deltaSemitones, when: holdSec },
+    ];
+}
+
 export function effectiveDurationSeconds(note, stringGap, rhythmicGap) {
     let duration;
     if (note.explicitDurSec != null) {
@@ -422,6 +442,7 @@ export class TabPlayer {
 
             const trackNotes = [];
             const ties = [];
+            const lastByString = {};  // string -> last attacked note (for slide pairing)
             notation.forEach(measure => {
                 const measureTick = timing.startTick(measure.measure);
                 measure.events?.forEach(event => {
@@ -435,26 +456,44 @@ export class TabPlayer {
                         }
 
                         const stringIdx = note.s - 1;
-                        if (stringIdx >= 0 && stringIdx < tuning.length) {
-                            trackNotes.push({
-                                time: absTick * secondsPerTick,
-                                tick: event.tick,
-                                absTick,
-                                string: note.s,
-                                fret: note.f,
-                                midi: tuning[stringIdx] + note.f + transpose,
-                                measure: measure.measure,
-                                // Editor-entered notes carry explicit durations
-                                explicitEndTick: note.dur ? absTick + note.dur : undefined,
-                                instrumentData,
-                                volume: mix.volume,
-                                sustain: mix.sustain,
-                                decay: mix.decay,
-                                trackId: track.id,
-                                instrument: track.instrument,
-                                muted: note.tech === 'x'  // dead note (chop)
-                            });
+                        if (stringIdx < 0 || stringIdx >= tuning.length) return;
+                        const midi = tuning[stringIdx] + note.f + transpose;
+
+                        // Slide: a "/" (or "\") note is the slide DESTINATION.
+                        // A banjo slide is one pick — the source note rings and
+                        // its pitch glides up into the target, which then hangs.
+                        // So we DON'T re-attack the target: we extend the source
+                        // through it and ramp the source's pitch at schedule
+                        // time (see below). Falls back to a normal attack if
+                        // there is no preceding note on the string.
+                        const source = (note.tech === '/' || note.tech === '\\')
+                            ? lastByString[note.s] : null;
+                        if (source) {
+                            source.explicitEndTick = absTick + (note.dur || 0);
+                            source.slide = { toMidi: midi, atTick: absTick };
+                            return;  // suppress the target's independent attack
                         }
+
+                        const tn = {
+                            time: absTick * secondsPerTick,
+                            tick: event.tick,
+                            absTick,
+                            string: note.s,
+                            fret: note.f,
+                            midi,
+                            measure: measure.measure,
+                            // Editor-entered notes carry explicit durations
+                            explicitEndTick: note.dur ? absTick + note.dur : undefined,
+                            instrumentData,
+                            volume: mix.volume,
+                            sustain: mix.sustain,
+                            decay: mix.decay,
+                            trackId: track.id,
+                            instrument: track.instrument,
+                            muted: note.tech === 'x'  // dead note (chop)
+                        };
+                        trackNotes.push(tn);
+                        lastByString[note.s] = tn;
                     });
                 });
             });
@@ -610,6 +649,18 @@ export class TabPlayer {
         playNotes.forEach(note => {
             const startTime = this.playbackStartTime + note.time;
             try {
+                // Slide articulation (one pick): the source note rings for its
+                // written length, then its pitch bends up into the target,
+                // which hangs for the rest of the (extended) note. Uses
+                // WebAudioFont's native `slides` param — an array of
+                // {delta (semitones), when (s from note start)} pitch waypoints.
+                let slides;
+                if (note.slide) {
+                    const holdSec = Math.max(0,
+                        (note.slide.atTick - note.absTick) * secondsPerTick);
+                    slides = slideWaypoints(
+                        note.slide.toMidi - note.midi, holdSec, note.duration);
+                }
                 const envelope = this.player.queueWaveTable(
                     this.audioContext,
                     this.trackGains[note.trackId] ?? this.audioContext.destination,
@@ -617,7 +668,8 @@ export class TabPlayer {
                     startTime,
                     note.midi,
                     note.duration,
-                    note.volume
+                    note.volume,
+                    slides   // 8th arg; undefined for non-slide notes (no-op)
                 );
                 this.scheduledNodes.push(envelope);
 

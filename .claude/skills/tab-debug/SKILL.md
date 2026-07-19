@@ -282,6 +282,45 @@ renderer.render(track, notation, ticksPerBeat, timeSignature);
 **Cause**: 'K' marker notes need 2/3 duration, beamed together
 **Fix**: Check triplet detection and grouping in otf.py
 
+### Slide target renders off-grid with a rest before it (TablEdit's slide-timing hack)
+
+**Symptom**: A slide target (e.g. `5 →/ 8`) renders as an eighth note pushed
+OFF the beat grid with a little rest behind it, instead of a normal note on the
+ruler. (Reported on salt-creek m1/m5.)
+
+**Root cause — NOT a bug, it's TablEdit's design**: TablEdit fakes the *sound*
+of a slide by storing rendering-hostile microtiming, so its MIDI playback bends
+audibly. For `5 →/ 8` it emits, on one beat: a straight source eighth, a short
+`<forward>` rest gap, then the slide TARGET compressed to a **triplet** value and
+shifted off the grid. This is confirmed in BOTH the raw TEF duration code AND
+TablEdit's own MusicXML export:
+
+```
+# TablEdit MusicXML (20627 m1, divisions=240):
+note f5  dur120 (eighth)          slide-start
+FORWARD  dur40                    ← the "16th rest"
+note f8  dur80  time-mod 3:2      slide-stop   ← triplet, off-grid
+# → in OTF ticks: source @0/dur240, target @320/dur160
+```
+
+It is a **playback-timing hack, not a musical triplet**.
+
+**Fix (already in place)**: `normalize_slide_timing` in `otf.py` re-times the
+target on-grid as a normal note carrying only the `/` articulation
+(salt-creek m1: `320/160 → 240/240`). It gates on `tech in {"/","\\"}` so genuine
+musical triplets (e.g. ground-speed/15313 — never slides) are untouched, and
+only re-times the "triplet-compress" shape (off-16th-grid AND triplet duration).
+Playback re-creates the slide feel in `tab-player.js` via WebAudioFont's native
+`slides` param (the source rings, bends up, target hangs). The oracle stays
+green because `spike/oracle_verify.py` applies the SAME transform
+(`retimed_slide_target`) to the MusicXML side before comparing — so a change here
+means "same notes as TablEdit, modulo the documented slide policy." See
+`retimed_slide_target` / `normalize_slide_timing` in `otf.py`.
+
+Note the distinct **32nd grace-slide** shape (source is a 32nd, target lands a
+32nd late) is intentionally left as-is for now — 21 notes across 8 works; revisit
+if those need cleaning too.
+
 ## Key Files
 
 | File | Purpose |

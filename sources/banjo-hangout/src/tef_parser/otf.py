@@ -502,6 +502,101 @@ def parse_tuning_string(tuning_str: str) -> list[int] | None:
     return None
 
 
+# ── TablEdit slide-timing quirk ─────────────────────────────────────────────
+# TablEdit fakes the SOUND of a slide by storing rendering-hostile microtiming
+# rather than a plain "note + slide articulation". For a slide 5→8 it emits, on
+# one beat: a straight source note, a short rest gap, then the slide TARGET
+# compressed to a triplet value and shifted OFF the beat grid. (Confirmed in the
+# raw TEF duration code AND in TablEdit's own MusicXML export, e.g. salt-creek
+# 20627 m1: source dur120 slide-start, <forward 40>, target dur80 time-mod 3:2
+# slide-stop — i.e. in OTF ticks: source@0/dur240, target@320/dur160.) This is
+# TablEdit's way of making its MIDI playback audibly slide; it is NOT a musical
+# triplet. See .claude/skills/tab-debug/SKILL.md.
+#
+# OTF stores the musical truth instead: the slide target as a normal on-grid
+# note of its real length, carrying only the "/" articulation. Playback renders
+# the slide feel (see docs/js/renderers/tab-player.js). The oracle stays green
+# because spike/oracle_verify.py applies THIS SAME transform to the MusicXML
+# side before comparing (so the check now means "same notes as TablEdit, modulo
+# the documented slide policy").
+#
+# Scope guard: we only re-time the "triplet-compress" shape (a slide target that
+# is BOTH off the 16th grid AND carries a triplet duration). We gate on the
+# slide technique so genuine musical triplets — which are never slides — are
+# untouched. (The distinct "32nd grace-slide" shape is intentionally left as-is
+# for now.)
+
+def retimed_slide_target(target_tick, target_dur, target_tech,
+                         source_tick, source_dur, ticks_per_beat):
+    """Return (tick, dur) for a slide target, re-timed on-grid if it is the
+    TablEdit triplet-compress hack, else the inputs unchanged.
+
+    Shared by the parser (otf.py) and the oracle (oracle_verify.py) so both
+    sides normalize identically. Pure and idempotent: a target already on-grid
+    with a straight duration is returned unchanged.
+
+    The target is contiguous with its source (gap removed) and absorbs the
+    freed time: new_tick = source_end, new_dur extends to the original target
+    end. salt-creek m1: (320,160) with source (0,240) -> (240,240).
+    """
+    if target_tech not in ("/", "\\") or not target_dur:
+        return target_tick, target_dur
+    whole = ticks_per_beat * 4          # a whole note (1920 at tpb=480)
+    sixteenth = ticks_per_beat // 4     # 120 at tpb=480
+    # triplet duration: whole/dur is a whole multiple of 3 (160->12, 320->6,
+    # 80->24); straight values (240->8, 120->16) are not.
+    is_triplet_dur = whole % target_dur == 0 and (whole // target_dur) % 3 == 0
+    off_grid = target_tick % sixteenth != 0
+    if not (is_triplet_dur and off_grid):
+        return target_tick, target_dur
+    if source_tick is None or source_dur is None:
+        return target_tick, target_dur
+    new_tick = source_tick + source_dur
+    # only pattern A: the de-gapped onset must land cleanly on the grid, at or
+    # before the current (delayed) onset.
+    if new_tick % sixteenth != 0 or new_tick > target_tick:
+        return target_tick, target_dur
+    new_dur = (target_tick + target_dur) - new_tick
+    return new_tick, new_dur
+
+
+def normalize_slide_timing(doc: OTFDocument) -> None:
+    """Re-time TablEdit triplet-compress slide targets onto the grid, in place.
+
+    See the module comment above `retimed_slide_target` for the TablEdit quirk
+    this undoes. Only slide targets that are alone in their event are moved (the
+    hack is a single melodic note, never a chord), so genuine chords and the
+    already-clean on-grid slides (e.g. salt-creek m7) are left byte-identical.
+    """
+    tpb = doc.timing.ticks_per_beat
+    for measures in doc.notation.values():
+        for measure in measures:
+            events = sorted(measure.events, key=lambda e: e.tick)
+            last_on_string: dict[int, tuple[int, OTFNote]] = {}
+            moves = []  # (event, note, new_tick, new_dur)
+            for event in events:
+                for note in event.notes:
+                    if note.tech in ("/", "\\") and len(event.notes) == 1:
+                        src = last_on_string.get(note.s)
+                        if src is not None:
+                            s_tick, s_note = src
+                            new_tick, new_dur = retimed_slide_target(
+                                event.tick, note.dur, note.tech,
+                                s_tick, s_note.dur, tpb)
+                            if new_tick != event.tick:
+                                moves.append((event, note, new_tick, new_dur))
+                    last_on_string[note.s] = (event.tick, note)
+            for old_event, note, new_tick, new_dur in moves:
+                note.dur = new_dur
+                measure.events.remove(old_event)
+                existing = next((e for e in measure.events if e.tick == new_tick), None)
+                if existing is not None:
+                    existing.notes.append(note)
+                else:
+                    measure.events.append(OTFEvent(tick=new_tick, notes=[note]))
+            measure.events.sort(key=lambda e: e.tick)
+
+
 def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     """Convert a parsed TEF file to OTF format.
 
@@ -820,6 +915,10 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
 
             if otf_measure.events:
                 doc.notation[track_id].append(otf_measure)
+
+    # Store slides as a note + articulation, not TablEdit's triplet-compress
+    # timing hack (see normalize_slide_timing / tab-debug SKILL).
+    normalize_slide_timing(doc)
 
     # Reading list
     for entry in tef.reading_list:

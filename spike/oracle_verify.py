@@ -30,7 +30,39 @@ import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent
+                       / "sources" / "banjo-hangout" / "src"))
+from tef_parser.otf import retimed_slide_target  # noqa: E402
+
 TICKS_PER_QUARTER = 480
+
+
+def normalize_slides(notes):
+    """Apply the parser's slide-timing normalization to a (measure, tick,
+    string, fret, dur, tech) tuple list, so the oracle compares OTF and
+    TablEdit's MusicXML under the SAME documented slide policy.
+
+    OTF now stores TablEdit's triplet-compress slide targets on-grid (see
+    tef_parser.otf.retimed_slide_target); applying the identical transform to
+    the raw MusicXML side keeps exact-match verification meaningful — it still
+    catches missing/extra/wrong notes and any non-slide timing drift.
+    Idempotent, so running it on the already-normalized OTF side is a no-op.
+    """
+    by_measure = {}
+    for t in notes:
+        by_measure.setdefault(t[0], []).append(t)
+    out = []
+    for group in by_measure.values():
+        last = {}  # string -> (tick, dur)
+        for (mnum, tick, s, f, dur, tech) in sorted(group, key=lambda x: (x[1], x[2])):
+            ntick, ndur = tick, dur
+            src = last.get(s)
+            if src is not None:
+                ntick, ndur = retimed_slide_target(
+                    tick, dur, tech, src[0], src[1], TICKS_PER_QUARTER)
+            out.append((mnum, ntick, s, f, ndur, tech))
+            last[s] = (tick, dur)
+    return sorted(out)
 
 
 def xml_parts(xml_path):
@@ -104,8 +136,8 @@ def otf_tracks(otf_path):
 
 def compare(otf_path, xml_path):
     """-> verdict dict."""
-    parts = xml_parts(xml_path)
-    tracks = otf_tracks(otf_path)
+    parts = [normalize_slides(p) for p in xml_parts(xml_path)]
+    tracks = {tid: normalize_slides(notes) for tid, notes in otf_tracks(otf_path).items()}
     track_ids = list(tracks.keys())
 
     partial = False
