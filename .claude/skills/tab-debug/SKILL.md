@@ -241,6 +241,30 @@ instrument_patterns = [
 **Cause**: effect1=0x04 was incorrectly interpreted as "explicit pull-off"
 **Symptom**: Notes with 1/4 step bends show pull-off slurs
 **Fix**: Removed 0x04 from legato detection - it's actually a bend indicator
+
+### Bends: not decoded, and none in the corpus (intended: +1 semitone)
+
+**Status**: We do NOT articulate bends. `V2_TECH = {1:"h", 2:"p", 3:"/"}` has no
+bend entry, so no OTF carries a bend tech (only `/ h p x` exist) — bends render
+and play as plain notes.
+
+**Why we don't just flip the bit on**: the raw `effect1 & 0x04` bit is NOISE, not
+a reliable bend flag. It fires on ~2,221 V2 notes (504 in shenandoah-breakdown
+alone), but TablEdit's own MusicXML export has **0 `<bend>` elements across the
+entire corpus** — i.e. there are genuinely no real bends in what we've imported,
+and decoding `0x04 → bend` would fabricate hundreds of phantom bends and break the
+oracle.
+
+**When real bends DO appear** (future tabs; MusicXML carries `<bend>` with the
+amount), the intended behavior — **bend UP a half-tone (+1 semitone)** — is:
+1. Detect real bends by oracle-fitting against `<bend>` (same rigor as
+   slides/hammers/pulls), NOT the noisy raw bit.
+2. Render a bend symbol.
+3. Play a +1 semitone pitch glide — reuse the slide infra: `slideWaypoints`
+   (tab-player.js) with `delta = +1` and NO target-note suppression (a bend is
+   one note whose pitch rises a half-step; there is no destination note).
+
+Tracked in GitHub issue #184.
 - `has_legato_effect()` now uses `effect1 & 0x03` (not 0x07)
 - `technique_from_event()` no longer checks for 0x04
 **Files**: `sources/banjo-hangout/src/tef_parser/otf.py`
