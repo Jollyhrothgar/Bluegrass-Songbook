@@ -538,9 +538,10 @@ def fuzzy_group_songs(songs: list) -> list:
     for norm_title, group_ids in title_to_groups.items():
         if len(group_ids) < 2:
             continue
-        gid_list = list(group_ids)
-        # Pick canonical (most songs)
-        canonical = max(gid_list, key=lambda g: len(by_group.get(g, [])))
+        gid_list = sorted(group_ids)
+        # Pick canonical (most songs; group_id as a stable tiebreaker so the
+        # choice doesn't depend on set iteration order / PYTHONHASHSEED).
+        canonical = max(gid_list, key=lambda g: (len(by_group.get(g, [])), g))
         for gid in gid_list:
             if gid == canonical or gid in merge_map:
                 continue
@@ -590,11 +591,12 @@ def fuzzy_group_songs(songs: list) -> list:
                         break
 
                 if should_merge_pair:
-                    # Pick the canonical group_id (prefer the one with more songs)
+                    # Pick the canonical group_id (most songs; group_id as a
+                    # stable tiebreaker — see pre-pass note above).
                     all_groups = groups1 | groups2
-                    canonical = max(all_groups, key=lambda g: len(by_group.get(g, [])))
+                    canonical = max(all_groups, key=lambda g: (len(by_group.get(g, [])), g))
 
-                    for gid in all_groups:
+                    for gid in sorted(all_groups):
                         if gid != canonical:
                             merge_map[gid] = canonical
 
@@ -871,6 +873,12 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
 
     songs = unique_songs
     print(f"Indexed {len(songs)} songs ({duplicates} duplicates removed)")
+
+    # Deterministic output order. Several upstream passes reorder `songs`
+    # (imap_unordered worker completion, tag enrichment rebuilding the list),
+    # so sort by id right before writing to keep index.jsonl byte-stable
+    # across builds — avoids whole-file churn in git diffs.
+    songs.sort(key=lambda s: str(s.get('id', '')))
 
     # Write index
     output_file.parent.mkdir(parents=True, exist_ok=True)
