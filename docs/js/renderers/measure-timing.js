@@ -294,10 +294,15 @@ export function analyzeReadingList(readingList) {
         // [6-51] then [39-51] -> plain repeat 39..51 (equal ends = no
         // ending measures; 27493's second repeat was missed by a
         // strict '<').
+        // The end-repeat sign sits at the end of the FIRST ENDING (currEnd),
+        // not the end of the common section (nextEnd): notation is
+        // |: common |1. ending :| |2. ...  — the :| closes the first ending.
+        // When there is no ending (plain repeat) currEnd === nextEnd, so this
+        // is a no-op there.
         if (nextStart > currStart && nextStart <= currEnd &&
             nextEnd <= currEnd && nextEnd >= nextStart) {
             repeatStartMarkers.add(nextStart);
-            repeatEndMarkers.add(nextEnd);
+            repeatEndMarkers.add(currEnd);
             for (let m = nextEnd + 1; m <= currEnd; m++) endings[m] = 1;
             const afterRepeat = readingList[i + 2];
             if (afterRepeat &&
@@ -308,10 +313,12 @@ export function analyzeReadingList(readingList) {
         }
 
         // Case 2: same start, next ends before current (subset repeat)
-        // e.g. [11-18] then [11-17] -> repeat 11..17, 18 is 1st ending
+        // e.g. [11-18] then [11-17] -> repeat 11..17, 18 is 1st ending.
+        // As in Case 1, the :| closes the FIRST ENDING (currEnd), not the
+        // common section (nextEnd).
         if (nextStart === currStart && nextEnd < currEnd) {
             repeatStartMarkers.add(currStart);
-            repeatEndMarkers.add(nextEnd);
+            repeatEndMarkers.add(currEnd);
             for (let m = nextEnd + 1; m <= currEnd; m++) endings[m] = 1;
             const afterRepeat = readingList[i + 2];
             if (afterRepeat &&

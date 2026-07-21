@@ -261,7 +261,7 @@ describe('two-feel presentation (cut time)', () => {
 });
 
 describe('repeat-sign analysis (moved from work-view)', () => {
-    it('18926 Leather Britches: [1-25, 18-24, 26] -> repeat 18..24, endings 25/26', () => {
+    it('18926 Leather Britches: [1-25, 18-24, 26] -> |: 18..24 |1.25 :| |2.26', () => {
         const rl = [
             { from_measure: 1, to_measure: 25 },
             { from_measure: 18, to_measure: 24 },
@@ -269,16 +269,36 @@ describe('repeat-sign analysis (moved from work-view)', () => {
         ];
         const a = analyzeReadingList(rl);
         expect([...a.repeatStartMarkers]).toEqual([18]);
-        expect([...a.repeatEndMarkers]).toEqual([24]);
+        // :| closes the FIRST ENDING (bar 25), not the common section (bar 24)
+        expect([...a.repeatEndMarkers]).toEqual([25]);
         expect(a.endings).toEqual({ 25: 1, 26: 2 });
 
         const notation = Array.from({ length: 26 }, (_, i) => ({ measure: i + 1, events: [] }));
         const compact = prepareCompactNotation(notation, rl);
         expect(compact[17].repeatStart).toBe(true);
-        expect(compact[23].repeatEnd).toBe(true);
+        // bar 25 (index 24) carries BOTH the 1st-ending bracket and the :|
+        expect(compact[24].repeatEnd).toBe(true);
         expect(compact[24].ending).toBe(1);
+        expect(compact[23].repeatEnd).toBeUndefined();  // NOT the common end
         expect(compact[25].ending).toBe(2);
         expect(compact[0].repeatStart).toBeUndefined();
+    });
+
+    it('25010 Gold Rush: sectioned {X,X+8}{X+1,X+7} -> :| closes each 1st ending', () => {
+        // Each section: pickup bar X, common X+1..X+7, 1st ending X+8, repeated.
+        const rl = [
+            { from_measure: 1, to_measure: 9 }, { from_measure: 2, to_measure: 8 },
+            { from_measure: 10, to_measure: 18 }, { from_measure: 11, to_measure: 17 },
+            { from_measure: 19, to_measure: 27 }, { from_measure: 20, to_measure: 26 },
+            { from_measure: 28, to_measure: 36 }, { from_measure: 29, to_measure: 35 },
+            { from_measure: 37, to_measure: 37 },
+        ];
+        const a = analyzeReadingList(rl);
+        expect([...a.repeatStartMarkers].sort((x, y) => x - y)).toEqual([2, 11, 20, 29]);
+        // end-repeats at the first-ending bars (9/18/27/36), NOT the common
+        // ends (8/17/26/35) — the off-by-one Mike caught on gold-rush.
+        expect([...a.repeatEndMarkers].sort((x, y) => x - y)).toEqual([9, 18, 27, 36]);
+        expect(a.endings).toEqual({ 9: 1, 18: 1, 27: 1, 36: 1, 37: 2 });
     });
 });
 
