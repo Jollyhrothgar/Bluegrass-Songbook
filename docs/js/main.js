@@ -46,7 +46,7 @@ import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCur
 import { openWork, renderWorkView, teardownTablatureView, getCurrentWork, getActiveItemRef } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
-import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints } from './editor.js';
+import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, isPlaceholder, isTabOnlyWork, hasMultipleParts, parseItemRef } from './utils.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
@@ -156,7 +156,6 @@ const editorTitle = document.getElementById('editor-title');
 const editorArtist = document.getElementById('editor-artist');
 const editorWriter = document.getElementById('editor-writer');
 const editorContent = document.getElementById('editor-content');
-const editorPreviewContent = document.getElementById('editor-preview-content');
 const editorCopyBtn = document.getElementById('editor-copy');
 const editorSaveBtn = document.getElementById('editor-save');
 const editorSubmitBtn = document.getElementById('editor-submit');
@@ -172,6 +171,12 @@ const autoDetectCheckbox = document.getElementById('editor-auto-detect');
 const editorTransposeUp = document.getElementById('editor-transpose-up');
 const editorTransposeDown = document.getElementById('editor-transpose-down');
 const editorKeySelect = document.getElementById('editor-key-select');
+const metadataSummary = document.getElementById('metadata-summary');
+const metadataFields = document.getElementById('metadata-fields');
+const editorPreviewContainer = document.getElementById('editor-preview-container');
+const editorUndoBtn = document.getElementById('editor-undo');
+const editorRedoBtn = document.getElementById('editor-redo');
+const editorTransposeGroup = document.getElementById('editor-transpose-group');
 
 // Tag dropdown
 const tagDropdownBtn = document.getElementById('tag-dropdown-btn');
@@ -312,6 +317,9 @@ function handleHistoryNavigation(state) {
                 // Re-enter edit mode for the song
                 const song = allSongs.find(s => s.id === state.songId);
                 if (song) {
+                    // Route through the view state machine so home/search
+                    // content is hidden before the editor panel is shown
+                    showView('add-song');
                     enterEditMode(song, { fromHistory: true });
                 } else {
                     showView('search');
@@ -319,6 +327,7 @@ function handleHistoryNavigation(state) {
             }
             break;
         case 'add-song':
+            prepareAddSongView();
             showView('add-song');
             break;
         case 'doc-upload':
@@ -724,6 +733,7 @@ function handleDeepLink() {
         return true;
     } else if (hash === '#add') {
         trackDeepLink('add', hash);
+        prepareAddSongView();
         showView('add-song');
         pushHistoryState('add-song', {}, true);
         return true;
@@ -732,6 +742,10 @@ function handleDeepLink() {
         trackDeepLink('edit', hash);
         const song = allSongs.find(s => s.id === songId);
         if (song) {
+            // Route through the view state machine so the landing page is
+            // hidden before the editor panel is shown (enterEditMode only
+            // toggles editor-adjacent panels, not the home view)
+            showView('add-song');
             enterEditMode(song, { fromDeepLink: true });
             pushHistoryState('edit', { songId }, true);
         } else {
@@ -985,6 +999,9 @@ function closeSidebar() {
 function navigateTo(mode) {
     closeSidebar();
     trackNavigation(mode);
+    // Entering Add Song after an edit session must start from a fresh
+    // new-song editor (an unsaved new-song draft is preserved)
+    if (mode === 'add-song') prepareAddSongView();
     showView(mode);
     pushHistoryState(mode);
 }
@@ -2410,13 +2427,20 @@ function init() {
     // Initialize super-user request module
     initSuperUserRequest();
 
-    // Initialize add-song picker and doc upload
+    // Route to the photo/document upload view (login required).
+    // Shared by the picker's Upload card and the editor's empty-state link.
+    const goToDocUpload = (ctx) => {
+        if (!requireLogin('upload songs')) return;
+        if (ctx?.targetSlug) prefillDocUpload(ctx);
+        showView('doc-upload');
+        pushHistoryState('doc-upload');
+    };
+
+    // Initialize add-song picker and doc upload.
+    // The sidebar Add Song button now goes straight to the editor; the picker
+    // remains for contribute/request flows (work-view placeholders, bounties).
     initAddSongPicker({
-        onUpload: (ctx) => {
-            if (ctx?.targetSlug) prefillDocUpload(ctx);
-            showView('doc-upload');
-            pushHistoryState('doc-upload');
-        },
+        onUpload: goToDocUpload,
         onChordPro: (ctx) => {
             if (ctx?.targetSlug) {
                 enterEditMode({ id: ctx.targetSlug, title: ctx.title, artist: ctx.artist, key: ctx.key, content: '' });
@@ -2521,7 +2545,6 @@ function init() {
         editorArtist,
         editorWriter,
         editorContent,
-        editorPreviewContent,
         editorCopyBtn,
         editorSaveBtn,
         editorSubmitBtn,
@@ -2538,6 +2561,14 @@ function init() {
         editorTransposeUp,
         editorTransposeDown,
         editorKeySelect,
+        metadataSummary,
+        metadataFields,
+        onUploadRequest: () => goToDocUpload(),
+        onSongRequest: () => openAddSongPicker({ mode: 'request' }),
+        editorPreviewContainer,
+        editorUndoBtn,
+        editorRedoBtn,
+        editorTransposeGroup,
         navSearch,
         navAddSong,
         navFavorites,
@@ -2578,7 +2609,9 @@ function init() {
     // Navigation
     navHome?.addEventListener('click', () => navigateTo('home'));
     navSearch?.addEventListener('click', () => navigateTo('search'));
-    navAddSong?.addEventListener('click', () => { closeSidebar(); if (!requireLogin('add songs')) return; openAddSongPicker(); });
+    // Add Song opens the picker for everyone; contribution paths enforce login
+    // at the point of action (upload gate below, submit flows in editor/doc-upload).
+    navAddSong?.addEventListener('click', () => navigateTo('add-song'));
     navFavorites?.addEventListener('click', () => navigateTo('favorites'));
     editorBackBtn?.addEventListener('click', () => navigateTo('search'));
 

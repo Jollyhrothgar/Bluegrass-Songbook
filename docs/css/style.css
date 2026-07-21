@@ -3360,11 +3360,49 @@ mark {
     margin-bottom: 0.5rem;
 }
 
-.editor-content-header > label:first-child {
-    font-size: 0.9rem;
+/* Compact pane titles: "Raw" over the textarea (inside the existing
+   header row with the make-verse mini-bar) and "Visual editor" over the
+   preview. Muted small caps so they read as labels, not content. */
+.editor-pane-title {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--text-secondary);
     margin-bottom: 0;
 }
+
+/* One shared note for both panes: the two views are the same document */
+.editor-sync-note {
+    margin: 0 0 0.4rem;
+    font-size: 0.78rem;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* make-verse/chorus mini-bar: lives in the ChordPro pane header (a fixed
+   spot, no layout shift under a drag-selection) and appears only while the
+   textarea has a selection */
+.editor-selection-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: 0.75rem;
+}
+.editor-selection-toolbar.hidden { display: none; }
+.est-btn {
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    padding: 0.2rem 0.55rem;
+    font-size: 0.8rem;
+    min-height: 28px;
+    cursor: pointer;
+}
+.est-btn:hover { border-color: var(--accent); color: var(--accent); }
 
 .auto-detect-label {
     display: flex;
@@ -9668,4 +9706,792 @@ body.fullscreen-mode::after {
     .manage-lists-header .action-btn {
         width: 100%;
     }
+}
+
+/* ===== Editor topbar: compact metadata line + quiet view toggle ===== */
+.editor-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin: 0.5rem 0;
+}
+.metadata-summary {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0.4rem 0.25rem;
+    color: var(--text);
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: var(--radius-md, 6px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.metadata-summary:hover { background: var(--bg-secondary); }
+.metadata-summary.metadata-summary-unnamed {
+    color: var(--text-secondary);
+    font-weight: 400;
+    font-style: italic;
+}
+.metadata-summary::after {
+    content: ' \25BE';
+    color: var(--text-secondary);
+    font-style: normal;
+    font-size: 0.85em;
+}
+.metadata-summary.expanded::after { content: ' \25B4'; }
+
+/* ===== Two-pane editor: raw ChordPro (left) + interactive preview (right) ===== */
+.editor-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0 0.6rem;
+    flex-wrap: wrap;
+}
+.editor-toolbar-btn {
+    min-height: 40px;
+    min-width: 44px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    cursor: pointer;
+    font-size: var(--font-base, 0.9rem);
+}
+.editor-toolbar-btn:hover:not(:disabled) { border-color: var(--accent); }
+.editor-toolbar-btn:disabled { opacity: 0.45; cursor: default; }
+.editor-toolbar-spacer { flex: 1; }
+
+.editor-workspace {
+    display: grid;
+    grid-template-columns: 45fr 55fr;
+    gap: 1rem;
+    align-items: stretch;
+    margin-bottom: 0.75rem;
+}
+.editor-pane-raw {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+}
+.editor-pane-raw #editor-content { flex: 1; min-height: 0; }
+.editor-pane-raw .editor-help-row { margin-top: 0.5rem; }
+.editor-pane-preview {
+    position: relative;
+    min-width: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    background: var(--bg);
+}
+.editor-preview-header {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    border-radius: var(--radius-md, 6px) var(--radius-md, 6px) 0 0;
+}
+@media (min-width: 800px) {
+    /* side-by-side: panes share a fixed height; the preview scrolls
+       internally so the docked palette stays in view */
+    .editor-workspace { height: clamp(420px, calc(100vh - 300px), 900px); }
+    .editor-pane-preview { overflow-y: auto; }
+    /* keep the pane title visible while the pane scrolls */
+    .editor-preview-header { position: sticky; top: 0; z-index: 20; }
+    /* popover mode: no bottom dock to scroll clear of, so no need for the
+       huge dock-clearance padding below the last line */
+    .ve-preview-body,
+    .ve-preview:has(.ve-picker:not(.hidden)) .ve-preview-body { padding-bottom: 3rem; }
+}
+@media (max-width: 799.98px) {
+    /* stacked: textarea on top, preview flows with the page */
+    .editor-workspace { grid-template-columns: 1fr; }
+    .editor-pane-raw #editor-content { min-height: 35vh; }
+    /* the palette docks to the viewport when the pane doesn't scroll */
+    .ve-preview .ve-palette { position: fixed; left: 0; right: 0; bottom: 0; }
+}
+
+/* Interactive preview: section headers + chord chips over syllables */
+.ve-preview-body { position: relative; padding: 0.6rem 0.75rem 30vh; }
+/* the open root+quality picker is much taller than the bare palette: give
+   enough scroll room that the line being edited can sit above it */
+.ve-preview:has(.ve-picker:not(.hidden)) .ve-preview-body {
+    padding-bottom: max(75vh, 600px);
+}
+.ve-psec { margin-bottom: 1.1rem; }
+.ve-section-label {
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
+}
+
+/* section header row: ⠿ drag handle + label + ⋯ menu */
+.ve-psec-header { display: flex; align-items: center; gap: 0.15rem; margin-bottom: 0.25rem; }
+.ve-psec-header .ve-drag-handle { min-height: 30px; min-width: 30px; font-size: 0.95rem; opacity: 0.55; }
+.ve-psec-header .ve-drag-handle:hover,
+.ve-psec-header .ve-drag-handle:focus-visible { opacity: 1; }
+.ve-psec-menu-wrap { position: relative; }
+.ve-psec-menu-btn {
+    min-height: 30px;
+    min-width: 34px;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1.05rem;
+    border-radius: var(--radius-md, 6px);
+    opacity: 0.55;
+}
+.ve-psec-header:hover .ve-psec-menu-btn,
+.ve-psec-menu-btn:hover, .ve-psec-menu-btn:focus-visible { opacity: 1; }
+.ve-psec-menu-btn:hover { color: var(--text); background: var(--bg-secondary); }
+.ve-psec-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 15;
+    min-width: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    padding: 0.25rem;
+}
+.ve-psec-menu.hidden { display: none; }
+.ve-psec-menu .ve-menu-item {
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--text);
+    padding: 0.45rem 0.7rem;
+    min-height: 36px;
+    cursor: pointer;
+    border-radius: var(--radius-sm, 4px);
+    font-size: 0.9rem;
+}
+.ve-psec-menu .ve-menu-item:hover { background: var(--bg); }
+.ve-psec-menu .ve-menu-item[data-action="delete"] { color: var(--danger); }
+.ve-rename-input {
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-sm, 4px);
+    padding: 0.15rem 0.4rem;
+    max-width: 14rem;
+}
+
+/* lifted section + drop indicator during a drag (indicator style is shared
+   with the parked card surface, .ve-drop-indicator below) */
+.ve-psec-dragging {
+    position: relative;
+    z-index: 5;
+    opacity: 0.9;
+    background: var(--bg);
+    border-radius: var(--radius-md, 6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    pointer-events: none;   /* captured pointer events still reach the handle */
+}
+.ve-preview-body.ve-drag-active { cursor: grabbing; }
+
+/* blank lines inside a section: keep the "+" end slot functional (chord-only
+   lines are placed there) but whisper-quiet until hovered or selected */
+.ve-line-blank { min-height: 1rem; }
+.ve-line-blank .ve-end-slot { opacity: 0.15; }
+.ve-line-blank:hover .ve-end-slot,
+.ve-line-blank .ve-end-slot:focus-visible,
+.ve-line-blank .ve-end-slot.ve-syl-selected { opacity: 1; }
+.ve-psec-chorus .ve-psec-body { padding-left: 1rem; }
+.ve-psec-passthrough .ve-passthrough-raw {
+    border-left: 3px solid var(--border);
+    padding-left: 0.6rem;
+}
+.ve-preview-empty {
+    padding: 2rem 1rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+.ve-preview-empty-hint { margin: 0 0 1rem; font-style: italic; }
+.ve-preview-empty .ve-empty-links { justify-content: center; }
+@media (max-width: 800px) {
+    .ve-psec-body { font-size: 1.05rem; }
+}
+
+/* ===== Visual editor (card modules parked; shared ve-* line styles below) ===== */
+.visual-editor-container.hidden { display: none; }
+.ve-root { padding-bottom: 30vh; } /* room above the docked palette */
+/* the open root+quality picker is much taller than the bare palette: give
+   enough scroll room that the line being edited can sit above it. The px
+   floor covers short viewports where the picker's fixed-height rows exceed
+   75vh (measured ~530px at 390x700), so even the last line can auto-scroll
+   clear of the palette. */
+.ve-root:has(.ve-picker:not(.hidden)) { padding-bottom: max(75vh, 600px); }
+.ve-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 5;
+}
+.ve-toolbar button {
+    min-height: 40px;
+    min-width: 44px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    cursor: pointer;
+    font-size: var(--font-base, 0.9rem);
+}
+.ve-toolbar button:hover { border-color: var(--accent); }
+.ve-toolbar-spacer { flex: 1; }
+.ve-key-label { font-weight: 600; color: var(--chord); }
+/* transpose/key fade in once the song has a chord; space stays reserved
+   so the cards below never jump */
+.ve-transpose-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 1;
+    transition: opacity 220ms ease, visibility 220ms;
+}
+.ve-transpose-group.ve-gone {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* drag-and-drop section reorder */
+.ve-cards { position: relative; }
+.ve-cards.ve-drag-active { user-select: none; -webkit-user-select: none; }
+.ve-drag-handle {
+    min-height: 36px;
+    min-width: 36px;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: grab;
+    touch-action: none;   /* the handle is the lift zone; card content still scrolls */
+    font-size: 1.05rem;
+    padding: 0 0.2rem;
+}
+.ve-drag-handle:active { cursor: grabbing; color: var(--accent); }
+.ve-card-dragging {
+    position: relative;
+    z-index: 5;
+    opacity: 0.9;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    border-color: var(--accent);
+    pointer-events: none;   /* captured pointer events still reach the handle */
+}
+.ve-drop-indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    z-index: 4;
+    pointer-events: none;
+}
+
+.ve-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg, 8px);
+    margin: 0.75rem 0;
+    background: var(--bg-secondary);
+}
+.ve-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px solid var(--border);
+}
+.ve-card-label { font-weight: 700; flex: 1; }
+.ve-mode-btn {
+    min-height: 36px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    color: var(--text);
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+.ve-mode-btn:hover { border-color: var(--accent); }
+.ve-mode-btn.active { background: var(--chord); color: var(--bg); border-color: var(--chord); }
+.ve-card-menu-btn { min-height: 36px; min-width: 40px; background: none; border: none; color: var(--text); cursor: pointer; font-size: 1.2rem; }
+.ve-card-menu { display: flex; flex-wrap: wrap; gap: 0.25rem; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); }
+.ve-menu-item {
+    min-height: 40px;
+    padding: 0 0.6rem;
+    cursor: pointer;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+}
+.ve-menu-item:hover { border-color: var(--accent); }
+.ve-card-body { padding: 0.5rem 0.6rem; overflow-x: auto; }
+
+.ve-line { margin: 0.35rem 0; white-space: pre-wrap; line-height: 1.2; }
+.ve-line-opaque { color: var(--text-secondary); font-family: monospace; }
+.ve-seg { display: inline-block; vertical-align: bottom; white-space: pre-wrap; }
+.ve-chips { display: block; min-height: 1.4em; }
+.ve-chip {
+    display: inline-block;
+    background: var(--chord);
+    color: var(--bg);
+    font-weight: 700;
+    border: none;
+    border-radius: var(--radius-sm, 4px);
+    padding: 0.05em 0.35em;
+    margin-right: 2px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+/* Hovering the strip over an occupied seam: the chip IS the indicator —
+   dashed preview of the same ring that .ve-chip-selected makes solid */
+.ve-chip-hover {
+    outline: 2px dashed var(--accent);
+    outline-offset: 2px;
+}
+.ve-chip-selected {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px; /* ring with a bg gap so it reads on the chord color */
+}
+/* Ghost-chip typed entry: in-progress chord shown where the chip will sit */
+.ve-ghost-chip {
+    display: inline-block;
+    background: transparent;
+    color: var(--chord);
+    font-weight: 700;
+    border: 1px dashed var(--chord);
+    border-radius: var(--radius-sm, 4px);
+    padding: 0.05em 0.35em;
+    margin-right: 2px;
+    font-size: 0.9em;
+    opacity: 0.75;
+    min-width: 0.8em;
+    min-height: 1.1em;
+}
+.ve-chip-editing {
+    opacity: 0.75;
+    outline-style: dashed;
+    min-width: 0.8em; /* keeps a visible stub when backspaced to empty */
+    min-height: 1.4em;
+}
+.ve-ghost-invalid {
+    border-color: var(--error, #e05252);
+    color: var(--error, #e05252);
+    text-decoration: line-through;
+}
+.ve-chip.ve-ghost-invalid { outline-color: var(--error, #e05252); }
+/* Hover ×: desktop-only quick delete on a chord chip */
+.ve-chip-wrap { position: relative; display: inline-block; }
+.ve-chip-x {
+    display: none;
+    position: absolute;
+    top: -0.55em;
+    right: -0.35em;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 1;
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+.ve-chip-x:hover { border-color: var(--error, #e05252); color: var(--error, #e05252); }
+@media (hover: hover) and (pointer: fine) {
+    .ve-chip-wrap:hover .ve-chip-x { display: flex; }
+}
+.ve-syl {
+    cursor: text;
+    border-radius: 3px;
+    padding: 0.1em 0;
+}
+.ve-line:hover .ve-syl {
+    background: rgba(96, 165, 250, 0.06); /* fallback */
+    background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+/* Selected seam's syllable: a subtle secondary cue (tint + underline) —
+   the primary indicator is the slot/chip in the chord strip above. */
+.ve-syl-selected {
+    background: rgba(96, 165, 250, 0.12); /* fallback */
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    box-shadow: inset 0 -2px 0 var(--accent);
+}
+.ve-end-slot {
+    background: none;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm, 4px);
+    color: var(--text-secondary);
+    cursor: pointer;
+    min-width: 28px;
+    min-height: 28px;
+    margin-left: 0.4rem;
+}
+.ve-end-slot:hover,
+.ve-end-slot-hover { border-color: var(--accent); color: var(--accent); }
+/* selected end slot: solid, filled version of the same shape */
+.ve-end-slot.ve-syl-selected {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    background: rgba(96, 165, 250, 0.18); /* fallback */
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    box-shadow: none; /* the syl underline cue is for lyric syllables */
+}
+
+/* ===== Chord row as the chord surface ===== */
+/* Each token's chip container doubles as the explicit chord strip above
+   the lyrics: hover shows a faint ghost slot snapped to the nearest
+   syllable seam, click selects that offset for the palette / typed entry.
+   Kept >= 1.4em tall (comfortable hit target) but visually light. */
+.ve-seg { position: relative; }
+.ve-strip {
+    cursor: copy;
+    border-radius: 3px;
+    min-height: 1.4em;
+}
+.ve-strip:hover {
+    background: rgba(96, 165, 250, 0.08); /* fallback */
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+/* Seam caret: ONE shape for hover and selection — a thin insertion bar
+   with a small triangle head, centered on the seam (the target syllable's
+   left edge), absolutely positioned in the seg that owns the target token
+   (no layout shift, correct across wrapped lines). A caret marks a POINT,
+   so indicators at adjacent seams stay distinct even over one-letter
+   syllables — the old fixed-width slot boxes overhung short tokens and
+   collided with each other. Hover = translucent ghost; selected = solid.
+   Same shape, weight distinguishes them. */
+.ve-slot {
+    position: absolute;
+    top: 0.05em;
+    left: -1.5px; /* 3px bar centered on the seam */
+    box-sizing: border-box;
+    width: 3px;
+    height: 1.3em;
+    border-radius: 2px;
+    background: var(--accent);
+    pointer-events: none;
+    z-index: 1;
+}
+.ve-slot::before { /* triangle head: reads as "insert here" */
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid var(--accent);
+}
+.ve-slot-ghost { opacity: 0.55; }
+.ve-slot-selected { opacity: 1; }
+
+/* ===== In-preview lyric editing ===== */
+/* the edited line swaps to a bare single-line input; padding-top keeps the
+   vertical rhythm where the chord strip was */
+.ve-line-editing { padding-top: 1.4em; }
+.ve-lyric-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+    line-height: 1.2;
+    padding: 0.1em 0.2em;
+    margin-left: -0.2em;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+}
+/* quiet trailing ghost row: starts a new line at the end of the section */
+.ve-add-line {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0.15em 0;
+    min-height: 28px;
+    color: var(--text-secondary);
+    font: inherit;
+    font-size: 0.85em;
+    cursor: text;
+    opacity: 0.25;
+    text-align: left;
+}
+.ve-psec-body:hover .ve-add-line, .ve-add-line:focus-visible { opacity: 0.7; }
+.ve-lyrics-input {
+    width: 100%;
+    min-height: 6em;
+    font-size: 1rem;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    padding: 0.5rem;
+}
+.ve-passthrough-raw {
+    margin: 0;
+    padding: 0.5rem 0.6rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    overflow-x: auto;
+}
+.ve-footer { padding: 0.5rem 0; }
+.ve-add-section,
+.ve-add-types button {
+    min-height: 44px;
+    cursor: pointer;
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+}
+.ve-add-section { padding: 0 1rem; }
+.ve-add-types button { padding: 0 0.8rem; }
+.ve-add-section:hover,
+.ve-add-types button:hover { border-color: var(--accent); }
+.ve-add-types { display: flex; gap: 0.4rem; margin-top: 0.4rem; flex-wrap: wrap; }
+
+.ve-palette {
+    position: sticky;
+    bottom: 0;
+    background: var(--bg);
+    border-top: 2px solid var(--border);
+    padding: 0.5rem;
+    z-index: 10;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+}
+[data-theme="dark"] .ve-palette { box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.6); }
+.ve-palette.hidden { display: none; }
+/* Wide layout: the palette floats as a popover anchored to the selected
+   syllable/chip (positioned by preview.js). Width capped so the
+   root+quality picker still fits; taller-than-viewport content scrolls
+   inside the popover. */
+.ve-palette.ve-palette-popover {
+    position: fixed;
+    bottom: auto;
+    width: min(400px, calc(100vw - 2rem));
+    border: 1px solid var(--border);
+    border-top-width: 1px;
+    border-radius: var(--radius-md, 6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    z-index: 60;
+}
+[data-theme="dark"] .ve-palette.ve-palette-popover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+.ve-palette-row { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.4rem; }
+.ve-chip-btn {
+    min-height: 44px;
+    min-width: 44px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: var(--bg-secondary);
+    color: var(--chord);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg, 8px);
+    cursor: pointer;
+}
+.ve-chip-btn:hover {
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 10%, var(--bg-secondary));
+}
+
+/* Root + quality chord picker (Strum Machine style) */
+.ve-picker { margin-top: 0.4rem; }
+.ve-picker.hidden { display: none; }
+.ve-picker-panels {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    max-height: 45vh;
+    overflow-y: auto;
+}
+.ve-picker-roots { display: flex; gap: 0.3rem; flex-shrink: 0; }
+.ve-picker-naturals,
+.ve-picker-accidentals { display: flex; flex-direction: column; gap: 0.25rem; }
+.ve-picker-root {
+    min-height: 40px;
+    min-width: 52px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    cursor: pointer;
+}
+.ve-picker-accidentals .ve-picker-root {
+    min-width: 44px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+.ve-picker-root:hover { border-color: var(--accent); }
+.ve-picker-root.selected,
+.ve-picker-accidentals .ve-picker-root.selected {
+    background: var(--chord);
+    color: var(--bg);
+    border-color: var(--chord);
+}
+.ve-picker-qualities {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.3rem;
+    align-content: start;
+}
+.ve-picker-quality {
+    min-height: 44px;
+    padding: 0 0.2rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    background: var(--bg-secondary);
+    color: var(--chord);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ve-picker-quality:hover {
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 10%, var(--bg-secondary));
+}
+.ve-palette-custom {
+    min-height: 44px;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    width: 100%;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+}
+.ve-palette-custom:focus { outline: none; border-color: var(--accent); }
+
+.ve-palette-more,
+.ve-palette-close {
+    min-height: 44px;
+    padding: 0 0.8rem;
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    cursor: pointer;
+}
+.ve-palette-more:hover,
+.ve-palette-close:hover { border-color: var(--accent); }
+.ve-palette-delete {
+    min-height: 44px;
+    padding: 0 0.8rem;
+    color: var(--danger);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 6px);
+    cursor: pointer;
+}
+.ve-palette-delete:hover { border-color: var(--danger); }
+.ve-palette-close { margin-left: auto; }
+.ve-palette-actions { align-items: center; }
+
+.ve-toast {
+    position: fixed;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg, 8px);
+    padding: 0.6rem 1rem;
+    z-index: 20;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.ve-toast.hidden { display: none; }
+.ve-toast-undo { margin-left: 0.5rem; font-weight: 700; cursor: pointer; color: var(--accent); }
+
+/* per-card "no lyrics yet" hint (section-card.js) */
+.ve-empty-hint { color: var(--text-secondary); padding: 0.75rem; }
+.ve-empty-paste {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.25rem;
+    padding: 1rem;
+    font: inherit;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--text-primary);
+    background: var(--bg-secondary);
+    border: 1px dashed var(--border-color);
+    border-radius: 12px;
+    resize: vertical;
+}
+.ve-empty-paste:focus { outline: none; border-color: var(--accent); }
+.ve-empty-paste::placeholder { color: var(--text-secondary); opacity: 0.8; }
+.ve-empty-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 0.75rem 0;
+}
+.ve-empty-link {
+    background: none;
+    border: none;
+    padding: 0.25rem 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.ve-empty-link:hover { color: var(--accent); }
+
+/* gentle entrance when typed/pasted lyrics split into cards */
+@keyframes ve-card-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+}
+.ve-card-enter { animation: ve-card-in 260ms ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+    .ve-card-enter { animation: none; }
+    .ve-transpose-group { transition: none; }
+}
+
+@media (max-width: 700px) {
+    .ve-palette { position: fixed; left: 0; right: 0; bottom: 0; }
+    .ve-card-body { font-size: 1.05rem; }
+    .ve-picker-root { min-width: 44px; }
 }

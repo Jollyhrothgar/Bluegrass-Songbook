@@ -275,46 +275,74 @@
                     Submissions are reviewed before being added to the songbook.
                 </div>
             </div>
-            <div class="editor-main">
-                <div class="editor-input">
-                    <div class="metadata-fields">
-                        <div class="field-row">
-                            <label for="editor-title">Title:</label>
-                            <input type="text" id="editor-title" placeholder="Song title">
-                        </div>
-                        <div class="field-row">
-                            <label for="editor-artist">Artist:</label>
-                            <input type="text" id="editor-artist" placeholder="Artist name">
-                        </div>
-                        <div class="field-row">
-                            <label for="editor-writer">Writer:</label>
-                            <input type="text" id="editor-writer" placeholder="Songwriter(s)">
-                        </div>
-                        <div id="edit-comment-row" class="field-row hidden">
-                            <label for="editor-comment">Edit Comment:</label>
-                            <input type="text" id="editor-comment" placeholder="Describe your changes (e.g., fixed chord alignment, added missing verse)">
-                        </div>
-                    </div>
 
-                    <div class="song-input-container">
-                        <div class="editor-content-header">
-                            <label for="editor-content">Song Content (paste chord sheets here):</label>
-                            <label class="auto-detect-label" title="Automatically clean up pasted content from chord sites like Ultimate Guitar or ChordU">
-                                <input type="checkbox" id="editor-auto-detect" checked>
-                                Auto-detect format
-                            </label>
-                        </div>
-                        <textarea id="editor-content" placeholder="Paste a song with chords above lyrics, or type in ChordPro format:
+            <div class="editor-topbar">
+                <button id="metadata-summary" class="metadata-summary" type="button" aria-expanded="false" title="Song title, artist and writer">Untitled song &mdash; tap to name</button>
+            </div>
+
+            <div id="metadata-fields" class="metadata-fields hidden">
+                <div class="field-row">
+                    <label for="editor-title">Title:</label>
+                    <input type="text" id="editor-title" placeholder="Song title">
+                </div>
+                <div class="field-row">
+                    <label for="editor-artist">Artist:</label>
+                    <input type="text" id="editor-artist" placeholder="Artist name">
+                </div>
+                <div class="field-row">
+                    <label for="editor-writer">Writer:</label>
+                    <input type="text" id="editor-writer" placeholder="Songwriter(s)">
+                </div>
+                <div id="edit-comment-row" class="field-row hidden">
+                    <label for="editor-comment">Edit Comment:</label>
+                    <input type="text" id="editor-comment" placeholder="Describe your changes (e.g., fixed chord alignment, added missing verse)">
+                </div>
+            </div>
+
+            <div id="editor-toolbar" class="editor-toolbar">
+                <button id="editor-undo" class="editor-toolbar-btn" type="button" title="Undo" disabled>&#8617; Undo</button>
+                <button id="editor-redo" class="editor-toolbar-btn" type="button" title="Redo" disabled>&#8618; Redo</button>
+                <span class="editor-toolbar-spacer"></span>
+                <span id="editor-transpose-group" class="ve-transpose-group ve-gone">
+                    <button id="editor-transpose-down" class="transpose-btn" type="button" title="Transpose down one semitone">&minus;</button>
+                    <select id="editor-key-select" class="editor-key-select" title="Detected key (change to override)">
+                        <option value="">Key: ?</option>
+                    </select>
+                    <button id="editor-transpose-up" class="transpose-btn" type="button" title="Transpose up one semitone">+</button>
+                    <label class="preview-option" title="Show chords as Nashville numbers in the preview">
+                        <input type="checkbox" id="editor-nashville">
+                        Nashville
+                    </label>
+                </span>
+            </div>
+
+            <p class="editor-sync-note">Edit from either side &mdash; changes sync.</p>
+
+            <div id="editor-workspace" class="editor-workspace">
+                <div class="editor-pane editor-pane-raw">
+                    <div class="editor-content-header">
+                        <label for="editor-content" class="editor-pane-title">Raw</label>
+                        <span id="editor-selection-toolbar" class="editor-selection-toolbar hidden">
+                            <button type="button" class="est-btn" data-wrap="verse">Make verse</button>
+                            <button type="button" class="est-btn" data-wrap="chorus">Make chorus</button>
+                            <button type="button" class="est-btn" data-wrap="bridge">Make bridge</button>
+                        </span>
+                        <label class="auto-detect-label" title="Automatically clean up pasted content from chord sites like Ultimate Guitar or ChordU">
+                            <input type="checkbox" id="editor-auto-detect" checked>
+                            Auto-detect format
+                        </label>
+                    </div>
+                    <textarea id="editor-content" placeholder="Paste or type your song &mdash; lyrics, chord sheets, anything.
+
+Chord sheets from the web convert automatically:
 
 G                    C              G
 Amazing grace how sweet the sound
 
-Or use inline chords:
+Inline ChordPro works too:
 [G]Amazing [C]grace how [G]sweet the sound
 
-Blank lines separate verses."></textarea>
-                    </div>
-
+A blank line starts a new verse."></textarea>
                     <div class="editor-help-row">
                         <details class="format-help">
                             <summary>Format Help</summary>
@@ -327,34 +355,21 @@ Blank lines separate verses."></textarea>
                         </details>
                         <button id="chordpro-hints-btn" class="hints-btn" type="button">? ChordPro</button>
                     </div>
-
-                    <div class="editor-actions">
-                        <button id="editor-copy" class="action-btn">Copy ChordPro</button>
-                        <button id="editor-save" class="action-btn">Download .pro</button>
-                        <button id="editor-submit" class="action-btn primary">Submit to Songbook</button>
-                        <span id="editor-status" class="save-status"></span>
-                    </div>
                 </div>
 
-                <div class="editor-preview">
-                    <div class="preview-header">
-                        <h3>Preview</h3>
-                        <div class="editor-transpose-controls">
-                            <button id="editor-transpose-down" class="transpose-btn" title="Transpose down one semitone">−</button>
-                            <select id="editor-key-select" class="editor-key-select" title="Detected key (change to override)">
-                                <option value="">Key: ?</option>
-                            </select>
-                            <button id="editor-transpose-up" class="transpose-btn" title="Transpose up one semitone">+</button>
-                        </div>
-                        <label class="preview-option">
-                            <input type="checkbox" id="editor-nashville">
-                            Nashville
-                        </label>
+                <div class="editor-pane editor-pane-preview">
+                    <div class="editor-preview-header">
+                        <span class="editor-pane-title">Visual editor</span>
                     </div>
-                    <div id="editor-preview-content" class="preview-content">
-                        <p class="preview-placeholder">Enter a song to see preview...</p>
-                    </div>
+                    <div id="editor-preview-container" class="editor-preview-container"></div>
                 </div>
+            </div>
+
+            <div class="editor-actions">
+                <button id="editor-copy" class="action-btn">Copy ChordPro</button>
+                <button id="editor-save" class="action-btn">Download .pro</button>
+                <button id="editor-submit" class="action-btn primary">Submit to Songbook</button>
+                <span id="editor-status" class="save-status"></span>
             </div>
         </div>
 

@@ -10,6 +10,7 @@ import {
     normalizeChord,
     getChordRoot,
     getChordQuality,
+    isValidChord,
     extractChords,
     detectKey,
     toNashville,
@@ -414,5 +415,27 @@ describe('KEYS constant', () => {
         expect(KEYS['Em'].relative).toBe('G');
         expect(KEYS['C'].relative).toBe('Am');
         expect(KEYS['Am'].relative).toBe('C');
+    });
+});
+
+describe('isValidChord', () => {
+    it('accepts common chord shapes', () => {
+        for (const c of ['E', 'Eb7', 'Bbmaj7', 'D/F#', 'Cm7b5', 'Gsus4',
+            'Cadd9', 'Am', 'F#dim', 'G/B', 'Aaug', 'Bm7', 'C6', 'D9',
+            'Emadd9', 'F13', 'Gsus2', 'A7sus4']) {
+            expect(isValidChord(c), c).toBe(true);
+        }
+    });
+
+    it('rejects garbage and partial input', () => {
+        for (const c of ['', 'H', 'Ax', 'Gq', 'B/', '7', 'bm', 'G hello',
+            '[G]', 'hello', 'E$', 'C//G']) {
+            expect(isValidChord(c), c).toBe(false);
+        }
+    });
+
+    it('handles null/undefined', () => {
+        expect(isValidChord(null)).toBe(false);
+        expect(isValidChord(undefined)).toBe(false);
     });
 });

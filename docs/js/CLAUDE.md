@@ -18,7 +18,8 @@ docs/
 │   ├── tags.js         # Tag dropdown, filtering, instrument tags
 │   ├── lists.js        # User lists, favorites, multi-owner, Thunderdome
 │   ├── list-picker.js  # List picker dropdown component
-│   ├── editor.js       # Song editor, ChordPro conversion
+│   ├── editor.js       # Song editor (Raw tab), re-exports smart-paste pipeline
+│   ├── smart-paste.js  # Shared chord-sheet→ChordPro conversion (Raw + Visual paste)
 │   ├── flags.js        # Report Issue feature (creates GitHub issues)
 │   ├── song-request.js # Song request feature (frictionless)
 │   ├── superuser-request.js # Super-user request modal and submission
@@ -32,6 +33,7 @@ docs/
 │   │   ├── tab-player.js # Interactive tab player with playback
 │   │   └── tab-ascii.js # ASCII tab format
 │   ├── chord-explorer/ # Chord exploration tool (standalone)
+│   ├── visual-editor/  # Two-pane editor: interactive preview + ChordPro model
 │   ├── otf-editor/     # Tablature editor (design phase)
 │   └── __tests__/      # Vitest unit tests
 ├── css/style.css       # Dark/light themes, responsive layout
@@ -253,10 +255,28 @@ Multi-track tabs (e.g., ensemble arrangements with guitar, banjo, mandolin, bass
 
 ### Editor (Add Song / Edit Song)
 
+Two-pane editor: the raw ChordPro textarea (`#editor-content`, left) beside
+a live INTERACTIVE preview (`#editor-preview-container`, right; stacked
+below ~800px). The textarea is THE document — the preview renders
+`parseSong(textarea.value)` and every preview-side edit writes serialized
+ChordPro back into the textarea. In the preview, VERTICAL POSITION IS THE
+MODE: the chord strip above each line places/edits chords (hover ghost
+slot → click a seam → palette or typed entry; tap a chip → change/delete),
+while clicking the lyric text swaps that line for an inline input (blur
+commits with word-LCS chord re-anchoring, Enter splits, Backspace at 0
+merges, Escape reverts), plus section drag/menu ops. See
+`visual-editor/CLAUDE.md` for the preview orchestrator. Submit/copy/
+download flows read the textarea unchanged; smart paste converts chord
+sheets on paste into the textarea; selecting textarea lines reveals a
+Make verse/chorus/bridge mini-bar in the pane header (pure transform in
+`visual-editor/wrap-section.js`). Above the panes: compact metadata line,
+undo/redo, and a progressive transpose/key/Nashville group that appears
+once the song has a chord.
+
 Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
 - `editorConvertToChordPro()` - Smart paste: chord-above-lyrics → ChordPro
-- `updateEditorPreview()` - Live preview while editing
+- `updateEditorPreview()` - Refresh chrome (key/toolbar) + re-render preview
 - `submitSongToGitHub()` - Create GitHub issue for submission
 
 ### Sidebar Navigation
