@@ -9020,6 +9020,26 @@ body.fullscreen-mode::after {
     border-color: var(--accent);
 }
 
+/* Loop-whole-song toggle (mirrors the metronome toggle) */
+.tab-loop-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    transition: all 0.2s;
+}
+.tab-loop-toggle:hover { border-color: var(--accent); }
+.tab-loop-checkbox { display: none; }
+.tab-loop-label { font-size: 1.1rem; opacity: 0.5; transition: opacity 0.2s; }
+.tab-loop-checkbox:checked + .tab-loop-label { opacity: 1; }
+.tab-loop-toggle:has(.tab-loop-checkbox:checked) {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
 /* Beat cursor */
 .beat-cursor {
     pointer-events: none;

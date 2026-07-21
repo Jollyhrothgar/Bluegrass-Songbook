@@ -1995,6 +1995,10 @@ function createTablatureControls(otf, part) {
             <input type="checkbox" class="tab-countin-checkbox" checked>
             <span class="tab-countin-label">1·2·3·4</span>
         </label>
+        <label class="tab-loop-toggle" title="Loop the whole song">
+            <input type="checkbox" class="tab-loop-checkbox">
+            <span class="tab-loop-label">🔁</span>
+        </label>
         ${repeatToggleHtml}
         ${feelToggleHtml}
         <span class="tab-position"></span>
@@ -2016,6 +2020,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
     const player = tablaturePlayer;
     const playBtn = controls.querySelector('.tab-play-btn');
     const stopBtn = controls.querySelector('.tab-stop-btn');
+    const loopCheckbox = controls.querySelector('.tab-loop-checkbox');
     const posEl = controls.querySelector('.tab-position');
     const tempoDisplay = controls.querySelector('.tab-tempo-display');
     const tempoDown = controls.querySelector('.tab-tempo-down');
@@ -2164,6 +2169,9 @@ function setupTablaturePlayer(otf, controls, renderer) {
             transpose: currentCapo,
             trackIds: getEnabledTrackIds(),
             feel: twoFeelMode ? 'two' : null,
+            // Whole-song loop checkbox. A phrase-loop (drag) passes its own
+            // loop:true + range via `extra`, which overrides this.
+            loop: !!loopCheckbox?.checked,
             ...extra,
         });
         // play() can bail (superseded by a newer call, audio context
