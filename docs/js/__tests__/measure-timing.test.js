@@ -298,7 +298,11 @@ describe('repeat-sign analysis (moved from work-view)', () => {
         // end-repeats at the first-ending bars (9/18/27/36), NOT the common
         // ends (8/17/26/35) — the off-by-one Mike caught on gold-rush.
         expect([...a.repeatEndMarkers].sort((x, y) => x - y)).toEqual([9, 18, 27, 36]);
-        expect(a.endings).toEqual({ 9: 1, 18: 1, 27: 1, 36: 1, 37: 2 });
+        // Each section gets BOTH endings: 1st ending is the turnaround bar, 2nd
+        // ending is the next section's pickup bar (10/19/28), coda 37 last.
+        expect(a.endings).toEqual({
+            9: 1, 10: 2, 18: 1, 19: 2, 27: 1, 28: 2, 36: 1, 37: 2,
+        });
     });
 });
 

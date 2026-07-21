@@ -304,11 +304,13 @@ export function analyzeReadingList(readingList) {
             repeatStartMarkers.add(nextStart);
             repeatEndMarkers.add(currEnd);
             for (let m = nextEnd + 1; m <= currEnd; m++) endings[m] = 1;
+            // 2nd ending: the bar right after the 1st ending — the lead-out of
+            // the repeat. Either a single-measure coda ([37,37]) OR the pickup
+            // bar of the next section (gold-rush [19,27]: bar 19 is section B's
+            // 2nd ending, then section C's |: opens at 20). Mark just that bar.
             const afterRepeat = readingList[i + 2];
-            if (afterRepeat &&
-                afterRepeat.from_measure === currEnd + 1 &&
-                afterRepeat.to_measure === afterRepeat.from_measure) {
-                endings[afterRepeat.from_measure] = 2;
+            if (afterRepeat && afterRepeat.from_measure === currEnd + 1) {
+                endings[currEnd + 1] = 2;
             }
         }
 
@@ -320,11 +322,13 @@ export function analyzeReadingList(readingList) {
             repeatStartMarkers.add(currStart);
             repeatEndMarkers.add(currEnd);
             for (let m = nextEnd + 1; m <= currEnd; m++) endings[m] = 1;
+            // 2nd ending: the bar right after the 1st ending — the lead-out of
+            // the repeat. Either a single-measure coda ([37,37]) OR the pickup
+            // bar of the next section (gold-rush [19,27]: bar 19 is section B's
+            // 2nd ending, then section C's |: opens at 20). Mark just that bar.
             const afterRepeat = readingList[i + 2];
-            if (afterRepeat &&
-                afterRepeat.from_measure === currEnd + 1 &&
-                afterRepeat.to_measure === afterRepeat.from_measure) {
-                endings[afterRepeat.from_measure] = 2;
+            if (afterRepeat && afterRepeat.from_measure === currEnd + 1) {
+                endings[currEnd + 1] = 2;
             }
         }
 
