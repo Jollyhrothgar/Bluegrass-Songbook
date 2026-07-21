@@ -18,7 +18,8 @@ import {
     listContext, setListContext,
     setCurrentView,
     resolveWorkId,
-    getBountiesForWork
+    getBountiesForWork,
+    setAbcjsRendered, setCurrentAbcContent
 } from './state.js';
 
 import {
@@ -26,7 +27,8 @@ import {
     openSong,
     toggleFullscreen, exitFullscreen,
     navigatePrev, navigateNext,
-    updateFocusHeader, updateNavBar
+    updateFocusHeader, updateNavBar,
+    setupAbcPlayback, stopAbcPlayback
 } from './song-view.js';
 import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify, parseItemRef } from './utils.js';
@@ -79,6 +81,8 @@ export function teardownTablatureView() {
         tablaturePlayer.stop();
         setTablaturePlayer(null);
     }
+    // Stop any ABC synth playback started for a fiddle/ABC part
+    stopAbcPlayback();
 }
 
 function destroyTrackRenderers() {
@@ -1544,9 +1548,15 @@ function renderLeadSheetPart(part, container) {
     const abcContent = currentWork.abc_content;
 
     if (abcContent) {
-        // Render ABC notation inline
+        // Render ABC notation inline, with a play button wired to the same
+        // ABCJS synth the song view uses (setupAbcPlayback reads the shared
+        // abcjsRendered / currentAbcContent state and the #abc-play-btn).
         const abcId = 'work-abc-notation';
-        container.innerHTML = `<div id="${abcId}" class="abc-notation-container"></div>`;
+        container.innerHTML = `
+            <div class="abc-play-controls">
+                <button id="abc-play-btn" class="qc-toggle-btn" title="Play/Pause">▶ Play</button>
+            </div>
+            <div id="${abcId}" class="abc-notation-container"></div>`;
 
         // Use ABCJS if available
         if (typeof ABCJS !== 'undefined') {
@@ -1556,7 +1566,7 @@ function renderLeadSheetPart(part, container) {
                 const minWidth = isMobile ? 280 : 400;
                 const staffwidth = Math.max(minWidth, containerWidth - 32);
 
-                ABCJS.renderAbc(abcId, abcContent, {
+                const rendered = ABCJS.renderAbc(abcId, abcContent, {
                     staffwidth,
                     scale: 1.0,
                     add_classes: true,
@@ -1569,6 +1579,11 @@ function renderLeadSheetPart(part, container) {
                     paddingright: 0,
                     paddingbottom: 30
                 });
+
+                // Wire playback (reuses the song view's ABC synth engine)
+                setAbcjsRendered(rendered);
+                setCurrentAbcContent(abcContent);
+                setupAbcPlayback();
             } catch (e) {
                 console.error('ABC rendering error:', e);
                 container.innerHTML = `<pre class="abc-fallback">${escapeHtml(abcContent)}</pre>`;

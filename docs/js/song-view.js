@@ -316,7 +316,7 @@ function renderAbcNotation(abcContent, containerId) {
 /**
  * Stop and clean up any existing ABC playback
  */
-function stopAbcPlayback() {
+export function stopAbcPlayback() {
     // Increment session to cancel any pending async playback initialization
     incrementAbcPlaybackSession();
 
@@ -344,7 +344,7 @@ function stopAbcPlayback() {
 /**
  * Setup ABC playback controls
  */
-function setupAbcPlayback() {
+export function setupAbcPlayback() {
     const playBtn = document.getElementById('abc-play-btn');
 
     if (!playBtn || typeof ABCJS === 'undefined' || !abcjsRendered) {
