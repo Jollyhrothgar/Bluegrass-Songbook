@@ -1,6 +1,6 @@
 // Unit tests for utils.js
 import { describe, it, expect } from 'vitest';
-import { escapeHtml, escapeRegex, highlightMatch } from '../utils.js';
+import { escapeHtml, escapeRegex, highlightMatch, partUsesSongActions } from '../utils.js';
 
 describe('escapeHtml', () => {
     it('escapes HTML special characters', () => {
@@ -12,6 +12,19 @@ describe('escapeHtml', () => {
 
     it('returns plain text unchanged', () => {
         expect(escapeHtml('Hello World')).toBe('Hello World');
+    });
+});
+
+describe('partUsesSongActions', () => {
+    it('hides the header Edit for tablature parts', () => {
+        expect(partUsesSongActions({ type: 'tablature', instrument: 'banjo' })).toBe(false);
+    });
+
+    it('shows it for chordpro parts and unknown/missing parts', () => {
+        expect(partUsesSongActions({ type: 'chordpro' })).toBe(true);
+        expect(partUsesSongActions({ type: 'abc' })).toBe(true);
+        expect(partUsesSongActions(null)).toBe(true);
+        expect(partUsesSongActions(undefined)).toBe(true);
     });
 });
 

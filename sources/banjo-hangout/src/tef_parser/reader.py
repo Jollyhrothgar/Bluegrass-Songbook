@@ -3,9 +3,39 @@
 Copied from TablEdit_Reverse project.
 """
 
+import bisect
 from dataclasses import dataclass, field
 from pathlib import Path
 import struct
+
+
+def decode_duration_code(code: int) -> int:
+    """Written duration in ticks (480/quarter) from a TEF duration code.
+
+    The code lives in bits 0-4 of the duration byte — V2 byte3, V3
+    byte5 (upper bits are dynamics; V3 bit7 is the tie flag). Formula:
+    base = whole >> (code // 3); code % 3: 0 = straight (base),
+    1 = DOTTED OF THE NEXT-SHORTER VALUE (base * 3/4 — a naive
+    base * 3/2 verified 2x long on every dotted note in 23408/27165/
+    11245/11514/17713), 2 = triplet (base * 2/3). Oracle-validated
+    against TablEdit MusicXML durations corpus-wide (all duration
+    kinds incl. dotted and triplets).
+
+    Bit 4 (0x10) of the code is a DOUBLE-DOT flag over the low-nibble
+    code: 12574's 0x19 = eighth (code 9) x 7/4 = 420 ticks, matching
+    its oracle export exactly (the naive 5-bit read decoded 5 ticks).
+    """
+    double_dot = code & 0x10
+    code &= 0x0f
+    base = 1920 >> (code // 3)
+    mod = code % 3
+    if mod == 1:
+        base = base * 3 // 4
+    elif mod == 2:
+        base = base * 2 // 3
+    if double_dot:
+        base = base * 7 // 4
+    return base
 
 
 class TEFVersionError(Exception):
@@ -39,6 +69,9 @@ class TEFHeader:
     v2_component_offset: int = 0  # Offset to component data
     v2_component_count: int = 0   # Number of components
     v2_repeats_count: int = 0    # Number of reading list entries
+    v2_anacrusis: bool = False   # Measure 1 is a pickup (anacrusis)
+    v3_tempo: int = 0            # V3 only: u16 @ 0x06, quarter-note BPM
+                                 # (0 = absent/implausible)
 
     @property
     def version(self) -> str:
@@ -70,9 +103,33 @@ class TEFInstrument:
     name: str
     tuning_name: str
     num_strings: int
-    tuning_pitches: list[int]  # MIDI note numbers
+    tuning_pitches: list[int]  # MIDI note numbers (sounding pitch, capo included)
     offset: int
-    capo: int = 0  # Capo position (0 = no capo)
+    capo: int = 0  # Capo position (0 = no capo); metadata only — tuning is already sounding
+    midi_program: int = -1  # GM program from the track record (-1 = unknown)
+
+
+# GM programs seen in the corpus -> display name used when a track record has
+# no name (TablEdit itself falls back to the GM program name in its UI).
+_GM_PROGRAM_NAMES = {
+    105: "Banjo",
+    106: "Banjo",
+    24: "Guitar", 25: "Guitar", 26: "Guitar", 27: "Guitar",
+    28: "Guitar", 29: "Guitar", 30: "Guitar", 31: "Guitar",
+    32: "Bass", 33: "Bass", 34: "Bass", 35: "Bass",
+    36: "Bass", 37: "Bass", 38: "Bass", 39: "Bass",
+    40: "Fiddle", 41: "Fiddle",
+    42: "Cello",
+    0: "Piano", 1: "Piano", 2: "Piano", 3: "Piano",
+}
+
+
+def _program_to_name(program: int, num_strings: int) -> str:
+    """Fallback instrument name for unnamed track records."""
+    name = _GM_PROGRAM_NAMES.get(program)
+    if name:
+        return name
+    return f"{num_strings}-string"
 
 
 @dataclass
@@ -87,6 +144,19 @@ class TEFSection:
     """Section marker (e.g., "A Part", "B Part")."""
     name: str
     offset: int
+
+
+@dataclass
+class TEFTimeSignatureChange:
+    """A per-measure time-signature override (V2 component type 27).
+
+    Applies ONLY to its own measure — TEF stores no revert marker; the
+    following measure is back on the header signature unless it carries
+    its own override component.
+    """
+    measure: int      # 1-indexed measure the override applies to
+    numerator: int
+    denominator: int
 
 
 @dataclass
@@ -128,6 +198,9 @@ class TEFNoteEvent:
     extra: int             # Articulation: 0=normal, 1=hammer-on, 2=pull-off, 3=slide
     pitch_byte: int        # Byte 9 - module/voice (0, 6, 12, or 18)
     raw_data: bytes        # Full 12-byte record for analysis
+    duration_ticks: int | None = None  # Written duration (480 = quarter),
+                                       # decoded from the duration byte
+                                       # (V2 byte3 / V3 byte5, bits 0-4)
 
     @property
     def articulation(self) -> str:
@@ -218,6 +291,10 @@ class TEFFile:
     sections: list[TEFSection] = field(default_factory=list)
     note_events: list[TEFNoteEvent] = field(default_factory=list)
     reading_list: list[TEFReadingListEntry] = field(default_factory=list)
+    time_signature_changes: list[TEFTimeSignatureChange] = field(default_factory=list)
+    # V3 only: (num, den) derived from the measure table — the table is
+    # the authoritative meter (no known header signature field in V3).
+    v3_global_ts: tuple | None = None
 
     def dump(self) -> str:
         """Return a human-readable dump of the file contents."""
@@ -377,6 +454,15 @@ class TEFReader:
         num_strings = self.data[240]
         num_tracks = self.data[241] + 1
 
+        # Anacrusis (pickup measure) flag. Empirical, oracle-derived: the
+        # u16 at offset 244 is exactly 1 in every corpus file whose
+        # TablEdit MusicXML export renders measure 1 as a shortened pickup
+        # (22456, 18926, 21307, 17492, 11557, 11558, 11722, 14613), and
+        # takes other values (0, 2, 9, 16..48) in files whose measure 1 is
+        # full-length. Meaning of values > 1 unknown — treat only ==1 as
+        # the anacrusis flag.
+        anacrusis = struct.unpack('<H', self.data[244:246])[0] == 1
+
         # Component count at offset 256
         component_count = struct.unpack('<H', self.data[256:258])[0]
         component_offset = 258  # Components start right after count
@@ -399,6 +485,7 @@ class TEFReader:
             v2_component_offset=component_offset,
             v2_component_count=component_count,
             v2_repeats_count=repeats_count,
+            v2_anacrusis=anacrusis,
         )
 
     def find_strings(self) -> list[TEFString]:
@@ -478,7 +565,7 @@ class TEFReader:
         # Return in OTF order: [1st, 2nd, 3rd, 4th, 5th] (reverse of how they appear)
         return midi_pitches[::-1] if len(midi_pitches) == num_strings else []
 
-    def parse_instruments(self) -> list[TEFInstrument]:
+    def parse_instruments(self, min_offset: int = 0) -> list[TEFInstrument]:
         """Parse instrument definitions from the file.
 
         Instrument records in TEF v3 follow a structured format:
@@ -489,6 +576,11 @@ class TEFReader:
         To distinguish real instruments from text mentions, we require:
         1. Instrument name followed by null byte
         2. Then a valid tuning name (short, no spaces)
+
+        min_offset: ignore pattern matches before this byte offset. V2 callers
+        pass the header text region end (v2_header_end) so instrument names
+        mentioned in title/composer/comments (e.g. 18998: "arranged for banjo
+        by Michael Corcoran") are not mistaken for instrument records.
         """
         instruments = []
 
@@ -538,7 +630,7 @@ class TEFReader:
 
         for name_pattern, default_strings in instrument_patterns:
             # Search for all occurrences
-            idx = 0
+            idx = min_offset
             while True:
                 idx = self.data.find(name_pattern, idx)
                 if idx < 0:
@@ -619,6 +711,20 @@ class TEFReader:
                 else:
                     # No separator - tuning ends at current position
                     tuning_end = pos + 1
+
+                # Count the record's actual tuning bytes by scanning backward
+                # while bytes are in valid range (one byte per string). The
+                # name pattern's default string count can be wrong — e.g.
+                # 18998 has a record named "Banjo" with SIX tuning bytes (the
+                # header's total string count only adds up with 6). Trust the
+                # record over the name.
+                scan = tuning_end - 1
+                counted = 0
+                while scan >= 0 and counted < 8 and 0x10 <= self.data[scan] <= 0x60:
+                    counted += 1
+                    scan -= 1
+                if 3 <= counted <= 8:
+                    num_strings = counted
 
                 tuning_start = tuning_end - num_strings
 
@@ -848,18 +954,76 @@ class TEFReader:
                 return events
 
         # Calculate total strings across all instruments for location decoding
-        total_strings = sum(inst.num_strings for inst in self.parse_instruments())
+        # (structural track records first, name-pattern fallback — must match
+        # the instrument list used for track assembly in _parse_v3)
+        instruments = self.parse_track_records_v3() or self.parse_instruments()
+        total_strings = sum(inst.num_strings for inst in instruments)
         if total_strings == 0:
             total_strings = 5  # Default to single 5-string instrument
 
         VALUE_PER_STRING = 8
         VALUE_PER_POSITION = 32 * total_strings
-
-        # Get track string counts for track identification
-        instruments = self.parse_instruments()
         track_string_counts = [inst.num_strings for inst in instruments]
         if not track_string_counts:
             track_string_counts = [5]  # Default banjo
+
+        # V3 positions are CONTINUOUS 16th slots; a measure shorter than
+        # the header signature occupies proportionally fewer slots (2/4
+        # in a 4/4 tune = 8 slots — oracle-confirmed on 27493 m30/m49).
+        # Build cumulative slot boundaries from the measure table so
+        # continuous slots map to (measure, slot-in-measure). Only
+        # engaged when the table contains non-default measures.
+        measure_ts = self.parse_measure_table_v3()
+
+        # The measure table is the authoritative METER for V3 (there is
+        # no known header signature field — otf.py used to hardcode a
+        # "2/2" guess). Global = the table's dominant explicit signature
+        # (27493: 4/4 ×69 + 2/4 ×2 → 4/4; TablEdit's export agrees);
+        # per-measure changes are emitted only where a measure differs
+        # from that global — including same-length re-labels, which the
+        # old `slots != 16` condition dropped.
+        explicit = [(n, d) for n, d in (measure_ts or []) if n and d]
+        self._v3_global_ts = None
+        if explicit:
+            counts: dict = {}
+            for sig in explicit:
+                counts[sig] = counts.get(sig, 0) + 1
+            self._v3_global_ts = max(counts, key=counts.get)
+
+        ts_changes: list[TEFTimeSignatureChange] = []
+        if measure_ts and self._v3_global_ts:
+            for k, (num, den) in enumerate(measure_ts):
+                if num and den and (num, den) != self._v3_global_ts:
+                    ts_changes.append(TEFTimeSignatureChange(
+                        measure=k + 1, numerator=num, denominator=den))
+        self._v3_ts_changes = ts_changes
+
+        # Slot boundaries handle measures of DIFFERENT length (2/4 in a
+        # 4/4 tune = 8 continuous slots); same-length re-labels don't
+        # affect the slot math.
+        slot_starts: list[int] = []
+        slot_counts: list[int] = []
+        if measure_ts and any(
+                num and den and 16 * num // den != 16
+                for num, den in measure_ts):
+            start = 0
+            for k, (num, den) in enumerate(measure_ts):
+                slots = 16 * num // den if (num and den) else 16
+                slot_starts.append(start)
+                slot_counts.append(slots)
+                start += slots
+
+        def map_slot(position: int) -> int:
+            """Continuous slot -> measure*16 + slot_in_measure."""
+            if not slot_starts:
+                return position
+            idx = bisect.bisect_right(slot_starts, position) - 1
+            rel = position - slot_starts[idx]
+            if rel >= slot_counts[idx] and idx == len(slot_starts) - 1:
+                # beyond the table: assume header-default measures
+                extra = rel - slot_counts[idx]
+                return (idx + 1 + extra // 16) * 16 + extra % 16
+            return idx * 16 + rel
 
         # Non-note component types (from TuxGuitar TEInputStream.java)
         NON_NOTE_TYPES = {0x33, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3D,
@@ -908,8 +1072,8 @@ class TEFReader:
                     break
                 local_string -= num_strings
 
-            # Calculate position (in 16th note grid)
-            position = location // VALUE_PER_POSITION
+            # Calculate position (in 16th note grid, measure-table aware)
+            position = map_slot(location // VALUE_PER_POSITION)
 
             # Read actual marker from record[5] (I=Initial, F=Fret, L=Legato, etc.)
             marker_byte = record[5]
@@ -940,6 +1104,11 @@ class TEFReader:
                 extra=local_string + 1,  # Store 1-indexed local string
                 pitch_byte=fret,          # Store fret directly
                 raw_data=record,
+                # byte5 bits 0-4 = duration code (bit7 = tie, bits 5-6
+                # dynamics). The 'marker' read above is a historical
+                # misinterpretation of this same byte (0x49 'I' = an
+                # eighth with dynamics, not a marker char).
+                duration_ticks=decode_duration_code(record[5] & 0x1f),
             ))
 
             offset += 12
@@ -983,6 +1152,13 @@ class TEFReader:
         m_data = 0
         m_index = 0
 
+        # Mid-tune time-signature overrides (component type 27, TuxGuitar's
+        # tsMove). A changed measure's notes are stored RIGHT-ALIGNED in the
+        # fixed header-ts grid slot, offset by ts_move = 4 * byte3; the
+        # override (and the offset) applies only to its own measure.
+        ts_move = 0
+        ts_changes: list[TEFTimeSignatureChange] = []
+
         offset = component_offset
         for _ in range(component_count):
             if offset + 6 > len(self.data):
@@ -1003,24 +1179,57 @@ class TEFReader:
             cumulative_string = (location // ts_size) % num_strings
             measure = location // (ts_size * num_strings)
 
+            if measure != m_index:
+                ts_move = 0  # a ts override never outlives its measure
             m_index = measure  # Track current measure for overflow detection
 
             fret_byte = rec[2]
             fret_raw = fret_byte & 0x1f
+
+            if fret_raw == 27:
+                # TIME SIGNATURE CHANGE for this measure (TuxGuitar type 27).
+                # denominator = 2**(byte2>>5) / 2; TablEdit sometimes leaves
+                # the top bits unset -> fall back to the header denominator
+                # (TuxGuitar's literal formula would yield 0/0 there).
+                # New measure grid length = ts_size - 4*byte3.
+                d3 = rec[3]
+                top = fret_byte >> 5
+                den = (2 ** top) // 2 if top > 0 else header.v2_time_denom
+                grid_len = ts_size - 4 * d3
+                num = (grid_len * den) // 256 if den > 0 else 0
+                ts_move = 4 * d3
+                # d3 == 0 means the measure keeps the header DURATION, but
+                # the marker can still RE-LABEL the meter: 21874 has a 2/2
+                # header with an explicit 4/4 marker on every measure —
+                # same 1920 ticks, different displayed signature/beaming.
+                # TablEdit's per-measure model displays the marker's meter
+                # (its MusicXML export says 4/4), so emit re-labels too;
+                # only (num, den) == header is a true no-op. Tick math is
+                # untouched either way (ts_move stays 0 when d3 == 0).
+                if num > 0 and (d3 > 0 or (num, den) != (
+                        header.v2_time_num, header.v2_time_denom)):
+                    ts_changes.append(TEFTimeSignatureChange(
+                        measure=measure + 1, numerator=num, denominator=den))
+                offset += 6
+                continue
+
+            if ts_move and position_in_measure >= ts_move:
+                position_in_measure -= ts_move
 
             # Check for note vs special component
             if fret_raw >= 0x01 and fret_raw <= 0x19:
                 # This is a note
                 fret = fret_raw - 1
 
-                # Handle high frets (bit 5 set means add effect2 to fret)
-                # But NOT when effect2 is a special marker:
-                # 0x06=text annotation, 0x07=chord overlay, 0x0c/0x12=fingering annotations
-                # These annotation codes appear to be multiples of 6 (6, 12, 18)
-                effect2_val = rec[5] if len(rec) > 5 else 0
-                annotation_codes = {0x06, 0x07, 0x0c, 0x12}
-                if (fret_byte >> 5) & 0x01 and effect2_val not in annotation_codes and effect2_val > 0:
-                    fret += effect2_val
+                # Bit 5 of the fret byte means "effect2 carries an
+                # annotation", NEVER a fret extension (fret_raw already
+                # spans 0..24, the full banjo range). Oracle-confirmed:
+                # in 22446 e2 holds left-hand fingering digits (2/3/5) —
+                # the old `fret += effect2` shifted those notes to wrong
+                # frets; in 21802 e2 is 0xa2/0xa4 — the add pushed frets
+                # past 24 and the notes were silently dropped. The
+                # annotation itself (fingering, text=0x06, chord=0x07) is
+                # consumed downstream from raw_data.
 
                 # Extract marker from byte 3 (duration byte contains marker in upper bits)
                 # Common markers: 'I'=0x49 (Initial), 'F'=0x46 (Fret), 'C'=0x43 (Chord)
@@ -1040,10 +1249,14 @@ class TEFReader:
                         break
                     local_string -= num_track_strings
 
-                # Convert to 16th-note position for consistency with v3 format
-                # (MIDI exporter expects positions in 16th note units)
-                POSITIONS_PER_MEASURE = 16  # 16th notes in 4/4
-                abs_position = measure * POSITIONS_PER_MEASURE + (position_in_measure * POSITIONS_PER_MEASURE // ts_size)
+                # Carry positions in the NATIVE V2 grid: 256 units per whole
+                # note, i.e. ts_size units per measure (1 unit = 7.5 MIDI
+                # ticks at 480/quarter). The old `* 16 // ts_size` forced 16
+                # slots per measure — exact only when the measure divides
+                # into 16 even slots the notes actually sit on; it crushed
+                # 3/4 and 6/8 grids (slot = 90 ticks vs real 16th = 120) and
+                # any 32nds in 4/4. Downstream (otf.py) converts exactly.
+                abs_position = measure * ts_size + position_in_measure
 
                 # Create note event
                 events.append(TEFNoteEvent(
@@ -1053,20 +1266,240 @@ class TEFReader:
                     extra=local_string + 1,  # 1-indexed local string within track
                     pitch_byte=fret,
                     raw_data=rec,
+                    # byte3 bits 0-4 = duration code (bits 5-7 dynamics,
+                    # 7 = tie sentinel); marker_char above is the same
+                    # historical misread of this byte.
+                    duration_ticks=decode_duration_code(rec[3] & 0x1f),
                 ))
 
             offset += 6
 
+        # Stash for _parse_v2 (collected during the same single pass that
+        # applies ts_move — TuxGuitar semantics are inherently sequential).
+        self._v2_ts_changes = ts_changes
+
         return events
+
+    # ------------------------------------------------------------------
+    # Structural track/instrument records
+    #
+    # Name-pattern scanning is a dead end: tracks can be unnamed (TablEdit
+    # then displays the GM program name), prose in comments matches patterns,
+    # and the pattern's default string count can be wrong. The binary track
+    # records are authoritative. Layouts verified against TuxGuitar's
+    # TEInputStream.readTracks() and byte-level inspection of the corpus
+    # (see tests/parser/test_tef_track_records.py).
+    # ------------------------------------------------------------------
+
+    _V2_TRACK_RECORD_SIZE = 50
+
+    def _v2_record_to_instruments(self, offset: int) -> list[TEFInstrument]:
+        """Decode one 50-byte V2 track record (possibly packed).
+
+        Layout (little-endian):
+          +0  u16 numStrings      +2  u16 firstStringIndex (cumulative)
+          +8  u8  MIDI program    +12 u8  capo
+          +20 tuning[12] — one byte per string, string 1 first,
+              MIDI pitch = 96 - byte; bytes past numStrings are stale garbage
+          +32 name[16] NUL-terminated (may be empty)
+
+        Packed variant (rare; e.g. wheel_hoss-2430, dueling_banjos-871):
+        one record holds TWO sub-tracks — +0 total strings, +4 u16 =
+        sub-track-1 string count, +8/+10 the two GM programs, +12/+14 the
+        two capos, tunings concatenated. Normal records have +4 = volume
+        (0x63) or 0xFFFF, never a plausible split. TablEdit displays packed
+        sub-tracks as separate unnamed tracks.
+        """
+        data = self.data
+        o = offset
+        num_strings = struct.unpack("<H", data[o:o + 2])[0]
+        split = struct.unpack("<H", data[o + 4:o + 6])[0]
+        program = data[o + 8]
+        program2 = data[o + 10]
+        capo = data[o + 12]
+        capo2 = data[o + 14]
+        tuning_bytes = list(data[o + 20:o + 20 + num_strings])
+        name = data[o + 32:o + 48].split(b"\x00")[0].decode(
+            "latin-1", errors="replace").strip()
+
+        is_packed = (
+            num_strings >= 9
+            and 3 <= split <= 8
+            and 3 <= num_strings - split <= 8
+            and program2 <= 127
+        )
+        if is_packed:
+            first = TEFInstrument(
+                name=name or _program_to_name(program, split),
+                tuning_name="",
+                num_strings=split,
+                tuning_pitches=[96 - b for b in tuning_bytes[:split]],
+                offset=o,
+                capo=capo if capo <= 12 else 0,
+                midi_program=program,
+            )
+            rest = num_strings - split
+            second = TEFInstrument(
+                name=_program_to_name(program2, rest),
+                tuning_name="",
+                num_strings=rest,
+                tuning_pitches=[96 - b for b in tuning_bytes[split:]],
+                offset=o,
+                capo=capo2 if capo2 <= 12 else 0,
+                midi_program=program2,
+            )
+            return [first, second]
+
+        return [TEFInstrument(
+            name=name or _program_to_name(program, num_strings),
+            tuning_name="",
+            num_strings=num_strings,
+            tuning_pitches=[96 - b for b in tuning_bytes],
+            offset=o,
+            capo=capo if capo <= 12 else 0,
+            midi_program=program,
+        )]
+
+    def parse_track_records_v2(self, header: TEFHeader) -> list[TEFInstrument]:
+        """Locate and parse the V2 50-byte track record chain.
+
+        Records usually sit exactly at EOF, but some files have trailing
+        sections (notes text, chord names) after them, so scan backward for
+        a chain validated by: numStrings 1..24, firstStringIndex equal to
+        the cumulative sum, program <= 127, tuning bytes in plausible range,
+        and chain total equal to header byte 240 (total strings).
+
+        Returns [] when no valid chain exists (oldest V2 sub-variant with
+        zeroed bytes 240/241 stores no track records at all).
+        """
+        data = self.data
+        n_tracks = header.v2_tracks
+        n_strings = header.v2_strings
+        rec = self._V2_TRACK_RECORD_SIZE
+        chain = rec * n_tracks
+        if n_strings <= 0 or n_tracks < 1 or len(data) < chain + 258:
+            return []
+
+        for start in range(len(data) - chain, 257, -1):
+            cum = 0
+            offsets = []
+            for i in range(n_tracks):
+                o = start + i * rec
+                ns, fs = struct.unpack("<HH", data[o:o + 4])
+                if not (1 <= ns <= 24) or fs != cum:
+                    break
+                if data[o + 8] > 127:
+                    break
+                tuning = data[o + 20:o + 20 + ns]
+                if not all(0x06 <= b <= 0x5A for b in tuning):
+                    break
+                name_first = data[o + 32]
+                if name_first != 0 and name_first < 0x20:
+                    break
+                cum += ns
+                offsets.append(o)
+            else:
+                if cum == n_strings:
+                    instruments = []
+                    for o in offsets:
+                        instruments.extend(self._v2_record_to_instruments(o))
+                    return instruments
+        return []
+
+    def parse_measure_table_v3(self) -> list[tuple[int, int]]:
+        """Parse the V3 per-measure table via header pointer dword 0x5c.
+
+        Layout (oracle-derived from 27493, XML-confirmed 2/4 measures at
+        m30/m49): [u16 ?][u16 count] then count 8-byte records. Record k
+        (0-based) describes measure k (1-based measures; record 0 is a
+        stub): byte0 = denominator, byte1 = numerator. Zero bytes mean
+        "header default".
+
+        Returns [] if the magic/table is absent or implausible. Otherwise
+        a list indexed by measure-1 of (numerator, denominator), with 0s
+        for default entries.
+        """
+        data = self.data
+        if len(data) < 0x64 or data[0x38:0x3C] not in (b"debt", b"tbed"):
+            return []
+        ptr = struct.unpack("<I", data[0x5c:0x60])[0]
+        if not (0 < ptr < len(data) - 4):
+            return []
+        _, count = struct.unpack("<HH", data[ptr:ptr + 4])
+        if not (1 <= count <= 2048) or ptr + 4 + count * 8 > len(data):
+            return []
+        out = []
+        for k in range(1, count):
+            rec = data[ptr + 4 + k * 8:ptr + 4 + (k + 1) * 8]
+            den, num = rec[0], rec[1]
+            if den not in (0, 1, 2, 4, 8, 16) or num > 32:
+                return []
+            out.append((num, den))
+        return out
+
+    def parse_track_records_v3(self) -> list[TEFInstrument]:
+        """Parse V3 (binary container) track records via the header pointer.
+
+        Files with magic 'debt'/'tbed' at 0x38 store a pointer table of u32
+        file offsets in the header; dword 0x60 points to the track table:
+        [u16 record_size == 68][u16 count] then 68-byte records. The record
+        is a superset of the V2 layout — same fields at +0/+2/+8/+12/+20,
+        but the name field is 36 bytes (+32..+67) and program/capo are u16.
+
+        Returns [] if the magic or table is absent/implausible (caller falls
+        back to name-pattern scanning).
+        """
+        data = self.data
+        if len(data) < 0x64 or data[0x38:0x3C] not in (b"debt", b"tbed"):
+            return []
+        ptr = struct.unpack("<I", data[0x60:0x64])[0]
+        if not (0 < ptr < len(data) - 4):
+            return []
+        rec_size, count = struct.unpack("<HH", data[ptr:ptr + 4])
+        if rec_size != 68 or not (1 <= count <= 15):
+            return []
+        if ptr + 4 + rec_size * count > len(data):
+            return []
+
+        instruments = []
+        cum = 0
+        for i in range(count):
+            o = ptr + 4 + i * rec_size
+            ns, fs = struct.unpack("<HH", data[o:o + 4])
+            program = struct.unpack("<H", data[o + 8:o + 10])[0]
+            capo = struct.unpack("<H", data[o + 12:o + 14])[0]
+            if not (1 <= ns <= 12) or fs != cum or program > 127:
+                return []
+            tuning_bytes = list(data[o + 20:o + 20 + ns])
+            if not all(0x06 <= b <= 0x5A for b in tuning_bytes):
+                return []
+            name = data[o + 32:o + 68].split(b"\x00")[0].decode(
+                "latin-1", errors="replace").strip()
+            cum += ns
+            instruments.append(TEFInstrument(
+                name=name or _program_to_name(program, ns),
+                tuning_name="",
+                num_strings=ns,
+                tuning_pitches=[96 - b for b in tuning_bytes],
+                offset=o,
+                capo=capo if capo <= 12 else 0,
+                midi_program=program,
+            ))
+        return instruments
 
     def parse_instruments_v2(self, header: TEFHeader) -> list[TEFInstrument]:
         """Parse instruments from V2 format.
 
-        V2 stores instrument info at the end of the file, similar to v3.
+        Structural track records are authoritative; fall back to name-pattern
+        scanning only when no record chain exists (oldest sub-variant).
+        The V2 header text region (title/composer/comments, ending at
+        v2_header_end) may mention instrument names in prose — exclude it
+        from the fallback scan.
         """
-        # Use same logic as v3 - instrument names appear in the file
-        # Just call the existing parser
-        return self.parse_instruments()
+        instruments = self.parse_track_records_v2(header)
+        if instruments:
+            return instruments
+        return self.parse_instruments(min_offset=header.v2_header_end)
 
     def parse_reading_list_v2(self, header: TEFHeader) -> list[TEFReadingListEntry]:
         """Parse reading list (repeat structure) from V2 format.
@@ -1187,11 +1620,51 @@ class TEFReader:
         # Parse instruments (same format as v3, at end of file)
         instruments = self.parse_instruments_v2(header)
 
-        # Parse notes using v2 format
+        # Parse notes using v2 format (also collects ts-change components)
         note_events = self.parse_note_events_v2(header)
+        time_signature_changes = getattr(self, "_v2_ts_changes", [])
 
-        # Filter chord diagram notes that accompany melody notes
-        note_events = self._filter_chord_diagrams(note_events)
+        # V2 byte3 is duration+dynamic (plus the dynamic-7 tie sentinel),
+        # NOT a marker — every fret component in the stream is a real
+        # note. The V3-style marker filter (_filter_chord_diagrams) read
+        # byte3 as a char and silently dropped every note whose
+        # duration+dynamic combination didn't happen to spell I/F/L/K/O/C
+        # — e.g. 0x47 'G' (23408), 0x41 'A' (21678), 0x40 '@' (12124),
+        # and whole strummed chords in 10770. Only the chord-overlay skip
+        # (effect2 == 0x07) applies — and NOT when the fret byte has bit
+        # 7 set: those are real accompaniment-pattern notes (oracle-
+        # confirmed on 11514/11245 bass modules, b2=0x81/0x83 e2=0x07).
+        note_events = [
+            e for e in note_events
+            if not (len(e.raw_data) > 5 and e.raw_data[5] == 0x07
+                    and not (e.raw_data[2] & 0x80))]
+
+        # Anacrusis (pickup) measure: TEF stores measure 1's notes
+        # RIGHT-ALIGNED in a full header-ts grid slot (same storage trick
+        # as type-27 shortened measures), while TablEdit renders/exports
+        # measure 1 left-aligned with length = from the first note to the
+        # measure end. Shift measure-1 notes left and record the
+        # shortened signature (oracle-verified on 22456/18926: parser
+        # notes sat exactly first_note_position too late).
+        if header.v2_anacrusis and not any(
+                c.measure == 1 for c in time_signature_changes):
+            ts_size = header.v2_ts_size
+            m0 = [e for e in note_events if e.position < ts_size]
+            shift = min((e.position for e in m0), default=0)
+            if shift > 0:
+                for e in m0:
+                    e.position -= shift
+                den = header.v2_time_denom or 4
+                grid = ts_size - shift
+                num = grid * den // 256
+                while num * 256 != grid * den and den < 64:
+                    den *= 2
+                    num = grid * den // 256
+                if num > 0 and num * 256 == grid * den:
+                    time_signature_changes = (
+                        [TEFTimeSignatureChange(
+                            measure=1, numerator=num, denominator=den)]
+                        + list(time_signature_changes))
 
         # Parse reading list (repeat structure)
         reading_list = self.parse_reading_list_v2(header)
@@ -1211,10 +1684,19 @@ class TEFReader:
             sections=sections,
             note_events=note_events,
             reading_list=reading_list,
+            time_signature_changes=time_signature_changes,
         )
 
     def _parse_v3(self, header: TEFHeader) -> TEFFile:
         """Parse V3 format TEF file."""
+        # V3 header tempo: u16 at 0x06, in quarter-note BPM. Verified
+        # against TablEdit's own exports (25635: 260 == its Rich-MIDI
+        # tempo meta exactly; corpus: 40/40 header-vs-oracle matches
+        # across V2+V3). The v2_tempo field is a meaningless V2-offset
+        # read on V3 files (25635 'read' 120).
+        v3_tempo = struct.unpack('<H', self.data[6:8])[0]
+        header.v3_tempo = v3_tempo if 30 <= v3_tempo <= 500 else 0
+
         strings = self.find_strings()
 
         # Find title (usually the longest string early in the file)
@@ -1225,7 +1707,7 @@ class TEFReader:
                 if 'Part' not in s.value and not s.value.startswith('('):
                     title = s.value
 
-        instruments = self.parse_instruments()
+        instruments = self.parse_track_records_v3() or self.parse_instruments()
         chords = self.parse_chords()
         sections = self.parse_sections()
         note_events = self.parse_note_events()
@@ -1241,4 +1723,6 @@ class TEFReader:
             sections=sections,
             note_events=note_events,
             reading_list=reading_list,
+            time_signature_changes=getattr(self, "_v3_ts_changes", []),
+            v3_global_ts=getattr(self, "_v3_global_ts", None),
         )

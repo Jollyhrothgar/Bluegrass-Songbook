@@ -1,0 +1,20 @@
+id: ducks-on-millpond
+title: Ducks on Millpond
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+- Clawhammer
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '13654'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=13654
+    author: Jollyhrothgar
+    imported_at: '2026-07-08'

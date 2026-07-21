@@ -1,0 +1,19 @@
+id: daley-s-reel
+title: Daley's Reel
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '12135'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12135
+    author: Jollyhrothgar
+    imported_at: '2026-07-08'

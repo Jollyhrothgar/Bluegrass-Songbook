@@ -191,6 +191,34 @@ def compute_group_id(title: str, artist: str, lyrics: str) -> str:
     return f"{base_hash}_{lyrics_hash}"
 
 
+def _tab_provenance_mismatch(otf_path: Path, prov_source_id):
+    """Detect an OTF built from the wrong TEF.
+
+    Returns ``(prov_id, {embedded_ids})`` when the OTF's ``x_source`` names a
+    different source tab than ``prov_source_id`` (from work.yaml), else None.
+
+    Conservative by design: only flags when BOTH a provenance source_id and an
+    embedded TEF id are present and disjoint. Tabs without ``x_source`` (older
+    imports) or without provenance never trip the gate, so enabling it can't
+    break the existing corpus — it only catches genuine mis-mappings.
+    """
+    if not prov_source_id:
+        return None
+    try:
+        data = json.loads(otf_path.read_text())
+    except Exception:
+        return None
+    xsrc = data.get('x_source') or {}
+    # x_source records the origin TEF as a bare "{id}.tef"/download filename in
+    # source_file, or a banjo-hangout url; the numeric tab id is embedded in
+    # either form.
+    hay = ' '.join(str(xsrc.get(k, '')) for k in ('source_file', 'url', 'source_url'))
+    ids = set(re.findall(r'\d{4,6}', hay))
+    if not ids or str(prov_source_id) in ids:
+        return None
+    return (str(prov_source_id), ids)
+
+
 def build_song_from_work(work_dir: Path) -> dict:
     """Build a song record from a work directory."""
     work_yaml_path = work_dir / 'work.yaml'
@@ -510,9 +538,10 @@ def fuzzy_group_songs(songs: list) -> list:
     for norm_title, group_ids in title_to_groups.items():
         if len(group_ids) < 2:
             continue
-        gid_list = list(group_ids)
-        # Pick canonical (most songs)
-        canonical = max(gid_list, key=lambda g: len(by_group.get(g, [])))
+        gid_list = sorted(group_ids)
+        # Pick canonical (most songs; group_id as a stable tiebreaker so the
+        # choice doesn't depend on set iteration order / PYTHONHASHSEED).
+        canonical = max(gid_list, key=lambda g: (len(by_group.get(g, [])), g))
         for gid in gid_list:
             if gid == canonical or gid in merge_map:
                 continue
@@ -562,11 +591,12 @@ def fuzzy_group_songs(songs: list) -> list:
                         break
 
                 if should_merge_pair:
-                    # Pick the canonical group_id (prefer the one with more songs)
+                    # Pick the canonical group_id (most songs; group_id as a
+                    # stable tiebreaker — see pre-pass note above).
                     all_groups = groups1 | groups2
-                    canonical = max(all_groups, key=lambda g: len(by_group.get(g, [])))
+                    canonical = max(all_groups, key=lambda g: (len(by_group.get(g, [])), g))
 
-                    for gid in all_groups:
+                    for gid in sorted(all_groups):
                         if gid != canonical:
                             merge_map[gid] = canonical
 
@@ -677,6 +707,7 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     tabs_dir = Path('docs/data/tabs')
     tabs_dir.mkdir(parents=True, exist_ok=True)
     tabs_copied = 0
+    tab_provenance_mismatches = []
     for song in songs:
         for tab_part in song.get('tablature_parts', []):
             # tab_part['file'] is like "data/tabs/arkansas-traveler-banjo.otf.json"
@@ -685,13 +716,35 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
             work_id = song['id']
             instrument = tab_part.get('instrument', 'banjo')
             source_path = works_dir / work_id / f"{instrument}.otf.json"
-            if source_path.exists() and (not dest_path.exists() or
+            if not source_path.exists():
+                continue
+
+            # Integrity gate: the OTF must actually come from the TEF named in
+            # this part's provenance. A conversion/import that pairs the wrong
+            # TEF with a work dir (e.g. a mismatched convert_single call) would
+            # otherwise ship a work labelled one tune but carrying another's
+            # notes — and pass CI silently. Fail the build instead.
+            mismatch = _tab_provenance_mismatch(source_path, tab_part.get('source_id'))
+            if mismatch:
+                tab_provenance_mismatches.append((work_id, instrument, mismatch))
+                continue  # never publish an OTF that fails the provenance gate
+
+            if (not dest_path.exists() or
                     source_path.stat().st_mtime > dest_path.stat().st_mtime):
                 dest_path.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source_path, dest_path)
                 tabs_copied += 1
     if tabs_copied:
         print(f"Copied {tabs_copied} tablature files to docs/data/tabs/")
+
+    if tab_provenance_mismatches:
+        print("\nERROR: tablature provenance mismatch — an OTF was built from "
+              "the wrong TEF (its x_source id disagrees with work.yaml "
+              "provenance.source_id). Regenerate from the correct TEF:")
+        for work_id, instrument, (prov_id, otf_ids) in tab_provenance_mismatches:
+            print(f"  {work_id}/{instrument}.otf.json: "
+                  f"provenance source_id={prov_id!r} but OTF x_source has {sorted(otf_ids)}")
+        raise SystemExit(1)
 
     # Copy document files to docs/data/docs/
     docs_dir = Path('docs/data/docs')
@@ -820,6 +873,12 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
 
     songs = unique_songs
     print(f"Indexed {len(songs)} songs ({duplicates} duplicates removed)")
+
+    # Deterministic output order. Several upstream passes reorder `songs`
+    # (imap_unordered worker completion, tag enrichment rebuilding the list),
+    # so sort by id right before writing to keep index.jsonl byte-stable
+    # across builds — avoids whole-file churn in git diffs.
+    songs.sort(key=lambda s: str(s.get('id', '')))
 
     # Write index
     output_file.parent.mkdir(parents=True, exist_ok=True)

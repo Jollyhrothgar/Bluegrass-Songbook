@@ -1,0 +1,398 @@
+[
+ {
+  "pid": "10770_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/leather_britches-1044.tef",
+  "old": 782,
+  "new": 769
+ },
+ {
+  "pid": "11047_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/ragtime_annie-1664.tef",
+  "old": 216,
+  "new": 216
+ },
+ {
+  "pid": "11449_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/wheel_hoss-2430.tef",
+  "old": 746,
+  "new": 746
+ },
+ {
+  "pid": "11722_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-sally-ann-11722-54143082009.tef",
+  "old": 259,
+  "new": 259
+ },
+ {
+  "pid": "11723_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-salt-creek-11723-713143082009.tef",
+  "old": 247,
+  "new": 247
+ },
+ {
+  "pid": "11736_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-angeline-the-ba-11736-44510492009.tef",
+  "old": 162,
+  "new": 162
+ },
+ {
+  "pid": "11831_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-angeline-the-ba-11831-52283892009.tef",
+  "old": 271,
+  "new": 261
+ },
+ {
+  "pid": "12121_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-banjo-in-the-ho-12121-4516112422011.tef",
+  "old": 92,
+  "new": 92
+ },
+ {
+  "pid": "12123_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-shuckin-the-cor-12123-2223135112009.tef",
+  "old": 101,
+  "new": 101
+ },
+ {
+  "pid": "12127_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-lonesome-road-b-12127-449122422011.tef",
+  "old": 105,
+  "new": 105
+ },
+ {
+  "pid": "12135_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-daleys-reel-12135-345886112009.tef",
+  "old": 562,
+  "new": 562
+ },
+ {
+  "pid": "12574_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-sledd-ridin-12574-23271623122009.tef",
+  "old": 1880,
+  "new": 1817
+ },
+ {
+  "pid": "13648_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-ashokan-farewel-13648-312342372010.tef",
+  "old": 422,
+  "new": 422
+ },
+ {
+  "pid": "13654_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-ducks-on-millpo-13654-445142772010.tef",
+  "old": 104,
+  "new": 104
+ },
+ {
+  "pid": "13788_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-marching-throug-13788-495622392010.tef",
+  "old": 487,
+  "new": 479
+ },
+ {
+  "pid": "14406_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-seneca-square-d-14406-5235521122010.tef",
+  "old": 107,
+  "new": 107
+ },
+ {
+  "pid": "14613_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-down-yonder-14613-3353422011.tef",
+  "old": 551,
+  "new": 551
+ },
+ {
+  "pid": "14683_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-hot-corn-cold-c-14683-516122422011.tef",
+  "old": 79,
+  "new": 79
+ },
+ {
+  "pid": "14690_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-red-haired-boy-14690-744122422011.tef",
+  "old": 149,
+  "new": 149
+ },
+ {
+  "pid": "14809_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-red-haired-boy-14809-25441912102011.tef",
+  "old": 470,
+  "new": 470
+ },
+ {
+  "pid": "15032_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-done-gone-15032-1782342011.tef",
+  "old": 235,
+  "new": 235
+ },
+ {
+  "pid": "15318_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-harvest-home-15318-105722462011.tef",
+  "old": 141,
+  "new": 141
+ },
+ {
+  "pid": "16825_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-liberty-16825-4752172122012.tef",
+  "old": 132,
+  "new": 132
+ },
+ {
+  "pid": "17003_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-shooting-creek-17003-56231732012.tef",
+  "old": 71,
+  "new": 71
+ },
+ {
+  "pid": "17492_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-down-yonder-17492-3557123062012.tef",
+  "old": 418,
+  "new": 418
+ },
+ {
+  "pid": "17674_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-ragtime-annie-17674-44661682012.tef",
+  "old": 297,
+  "new": 297
+ },
+ {
+  "pid": "18030_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-whiskey-before--18030-24531817112012.tef",
+  "old": 325,
+  "new": 325
+ },
+ {
+  "pid": "18136_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-the-irish-washe-18136-12141224122012.tef",
+  "old": 90,
+  "new": 92
+ },
+ {
+  "pid": "18998_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-monroes-hornpip-18998-4011132772013.tef",
+  "old": 584,
+  "new": 584
+ },
+ {
+  "pid": "19600_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-paddy-on-the-tu-19600-45331523102013.tef",
+  "old": 132,
+  "new": 132
+ },
+ {
+  "pid": "19852_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-little-rabbit-19852-294671122013.tef",
+  "old": 125,
+  "new": 125
+ },
+ {
+  "pid": "20201_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-salt-creek-20201-57182722014.tef",
+  "old": 403,
+  "new": 403
+ },
+ {
+  "pid": "20545_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-dear-old-dixie-20545-112514692016.tef",
+  "old": 220,
+  "new": 220
+ },
+ {
+  "pid": "20556_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-arkansas-travel-20556-233610972014.tef",
+  "old": 382,
+  "new": 382
+ },
+ {
+  "pid": "20822_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-new-camptown-ra-20822-39131015122014.tef",
+  "old": 620,
+  "new": 617
+ },
+ {
+  "pid": "20853_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-shenandoah-walt-20853-18501115112014.tef",
+  "old": 444,
+  "new": 433
+ },
+ {
+  "pid": "20911_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-marching-jaybir-20911-3841512122014.tef",
+  "old": 103,
+  "new": 103
+ },
+ {
+  "pid": "20923_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-salt-creek-20923-42181315122014.tef",
+  "old": 772,
+  "new": 772
+ },
+ {
+  "pid": "20924_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-give-the-fiddle-20924-33351315122014.tef",
+  "old": 299,
+  "new": 303
+ },
+ {
+  "pid": "20936_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-salt-creek-20936-3449718122014.tef",
+  "old": 779,
+  "new": 779
+ },
+ {
+  "pid": "20981_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-sally-ann-20981-574521512015.tef",
+  "old": 296,
+  "new": 296
+ },
+ {
+  "pid": "21057_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-lonesome-fiddle-21057-361621222015.tef",
+  "old": 291,
+  "new": 291
+ },
+ {
+  "pid": "21678_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-waterbound-21678-201131012016.tef",
+  "old": 201,
+  "new": 200
+ },
+ {
+  "pid": "21690_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-paddy-on-the-tu-21690-1750131112016.tef",
+  "old": 98,
+  "new": 97
+ },
+ {
+  "pid": "21802_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-tennessee-mount-21802-2319132016.tef",
+  "old": 210,
+  "new": 208
+ },
+ {
+  "pid": "21823_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-maidens-prayer-21823-4941131832016.tef",
+  "old": 513,
+  "new": 534
+ },
+ {
+  "pid": "21999_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-arkansas-hoosie-21999-940122272016.tef",
+  "old": 138,
+  "new": 135
+ },
+ {
+  "pid": "22191_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-lonesome-road-b-22191-59101214112019.tef",
+  "old": 1274,
+  "new": 1274
+ },
+ {
+  "pid": "22228_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-waterbound-22228-46511117112016.tef",
+  "old": 88,
+  "new": 88
+ },
+ {
+  "pid": "22240_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-cherokee-shuffl-22240-3043527112016.tef",
+  "old": 835,
+  "new": 838
+ },
+ {
+  "pid": "22290_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-scotland-22290-5541129122016.tef",
+  "old": 127,
+  "new": 127
+ },
+ {
+  "pid": "22446_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-chinese-breakdo-22446-5828232842017.tef",
+  "old": 1017,
+  "new": 998
+ },
+ {
+  "pid": "22456_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-down-yonder-22456-66131632017.tef",
+  "old": 315,
+  "new": 315
+ },
+ {
+  "pid": "23345_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-lonesome-fiddle-23345-147202692018.tef",
+  "old": 175,
+  "new": 175
+ },
+ {
+  "pid": "23374_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-jerusalem-ridge-23374-20231218102018.tef",
+  "old": 255,
+  "new": 255
+ },
+ {
+  "pid": "23404_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-cherokee-shuffl-23404-3332310112018.tef",
+  "old": 142,
+  "new": 142
+ },
+ {
+  "pid": "23409_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-dixie-hoedown-23409-3149310112018.tef",
+  "old": 139,
+  "new": 139
+ },
+ {
+  "pid": "23778_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-cherokee-shuffl-23778-414171862019.tef",
+  "old": 284,
+  "new": 284
+ },
+ {
+  "pid": "23819_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-cherokee-shuffl-23819-332212472019.tef",
+  "old": 788,
+  "new": 788
+ },
+ {
+  "pid": "23848_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-whiskey-before--23848-3747101382019.tef",
+  "old": 242,
+  "new": 242
+ },
+ {
+  "pid": "24087_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-cherokee-shuffl-24087-5618122812020.tef",
+  "old": 554,
+  "new": 554
+ },
+ {
+  "pid": "24091_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-salt-creek-24091-273152612020.tef",
+  "old": 301,
+  "new": 301
+ },
+ {
+  "pid": "24093_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-red-haired-boy-24093-1443142912020.tef",
+  "old": 442,
+  "new": 442
+ },
+ {
+  "pid": "24231_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-i-dont-love-nob-24231-3106642020.tef",
+  "old": 875,
+  "new": 875
+ },
+ {
+  "pid": "24337_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-cheyenne-24337-377151052020.tef",
+  "old": 1349,
+  "new": 1291
+ },
+ {
+  "pid": "25010_tef",
+  "src": "/sessions/wonderful-admiring-sagan/mnt/raw_tabs/tab-gold-rush-25010-550201782021.tef",
+  "old": 298,
+  "new": 298
+ }
+]

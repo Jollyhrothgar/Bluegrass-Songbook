@@ -43,7 +43,7 @@ import {
     updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
 import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
-import { openWork, renderWorkView, getCurrentWork, getActiveItemRef } from './work-view.js';
+import { openWork, renderWorkView, teardownTablatureView, getCurrentWork, getActiveItemRef } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
@@ -371,10 +371,11 @@ function initViewSubscription() {
     const searchContainer = document.querySelector('.search-container');
 
     subscribe('currentView', (view) => {
-        // Stop any playing tablature audio when leaving song view
-        if (tablaturePlayer?.isPlaying) {
-            tablaturePlayer.stop();
-        }
+        // Tear down live tablature state on any view change: stops
+        // audio (including an in-flight soundfont load), destroys the
+        // edit session and renderer observers. Idempotent; the work
+        // view rebuilds everything it needs on render.
+        teardownTablatureView();
 
         // Exit fullscreen mode when navigating away from song/work views
         if (view !== 'song' && view !== 'work') {
@@ -1062,8 +1063,10 @@ async function loadIndex() {
     }
 
     try {
+        // no-cache = revalidate (304 if unchanged); heuristic caching
+        // otherwise serves a stale index for weeks after a re-publish.
         const [response, redirectsResponse] = await Promise.all([
-            fetch('data/index.jsonl'),
+            fetch('data/index.jsonl', { cache: 'no-cache' }),
             fetch('data/redirects.json').catch(() => null),
         ]);
         const text = await response.text();
@@ -3129,6 +3132,31 @@ function init() {
         // Focus button (in title row)
         if (target.closest('#focus-btn')) {
             toggleFullscreen();
+            return;
+        }
+
+        // Focus-mode header/nav buttons — delegated here so they work on
+        // EVERY view that renders the focus header (song-view wired its
+        // own copies; work-view rendered the same buttons unwired, so
+        // Exit was dead on tab pages)
+        if (target.closest('#focus-exit-btn')) {
+            exitFullscreen();
+            return;
+        }
+        if (target.closest('#focus-prev-btn')) {
+            navigatePrev();
+            return;
+        }
+        if (target.closest('#focus-next-btn')) {
+            navigateNext();
+            return;
+        }
+        if (target.closest('#focus-controls-toggle')) {
+            // song pages use quick-controls-content; work pages use
+            // work-controls-content — toggle whichever is present
+            const qc = document.getElementById('quick-controls-content')
+                || document.getElementById('work-controls-content');
+            qc?.classList.toggle('hidden');
             return;
         }
     });

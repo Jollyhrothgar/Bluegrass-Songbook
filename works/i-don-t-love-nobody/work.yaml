@@ -1,0 +1,20 @@
+id: i-don-t-love-nobody
+title: I Don't Love Nobody
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '24231'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24231
+    author: Jollyhrothgar
+    imported_at: '2026-07-08'
