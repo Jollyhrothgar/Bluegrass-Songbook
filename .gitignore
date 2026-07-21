@@ -61,3 +61,6 @@ docs/data/embeddings.bin
 
 # TuneArch cached HTML
 sources/tunearch/raw/
+
+# Local Claude Code permission grants (per-machine, never shared)
+.claude/settings.local.json

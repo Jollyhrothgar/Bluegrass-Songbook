@@ -41,6 +41,27 @@ Always:
   short mode that uses github actions. Have you ensured that github actions reflect the intent of
   the user and the state that needs to serve users?
 
+## Bug Triage — No Invisible Bandaids
+
+**IMPORTANT**: When the user complains about something being wrong — rendering looks off, data seems incorrect, behavior is unexpected — **dispatch the `triage` subagent BEFORE writing any code fix.**
+
+The triage agent investigates root cause and comes back with a structured verdict that classifies every suggested fix as:
+- **ROOT FIX**: Addresses the actual cause
+- **BANDAID**: Makes the symptom go away without fixing the cause (acceptable if tracked as tech debt)
+- **WORKAROUND**: Avoids the buggy path entirely
+
+**Why this matters**: This project has layered pipelines (TEF → OTF → renderer, ChordPro → works → index → UI). A symptom at the display layer often hides a bug in the parser or data. Fixing at the surface creates invisible bandaids that cascade into worse problems later.
+
+**When to dispatch triage**:
+- User says something "looks wrong" or "should be X not Y"
+- You notice unexpected data while implementing a feature
+- A test fails in a way that seems like bad data rather than bad test logic
+- You're tempted to add a special case or override to make something "just work"
+
+**How**: `Task(subagent_type="triage", prompt="<describe the complaint and what you've observed so far>")`
+
+A known bandaid tracked as an issue is fine. An invisible bandaid is not.
+
 ## Repository Structure (Git Worktrees)
 
 This repo uses a bare git repository with worktrees for parallel feature development:
@@ -178,7 +199,7 @@ The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 
 ## Key Components
 
-| Component | Location | CLAUDE.md |
+| Component | Location | Reference |
 |-----------|----------|-----------|
 | **Frontend** | `docs/` | `docs/js/CLAUDE.md` |
 | **Works/Tablature** | `docs/js/work-view.js`, `docs/js/renderers/` | `docs/js/CLAUDE.md` |
@@ -194,6 +215,27 @@ The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 | **Analytics** | `analytics/` | `analytics/CLAUDE.md` |
 | **E2E Tests** | `e2e/` | `e2e/CLAUDE.md` |
 | **Python Tests** | `tests/` | `tests/CLAUDE.md` |
+
+### Project Skills (`.claude/skills/`)
+
+| Skill | Purpose |
+|-------|---------|
+| **chordpro** | ChordPro syntax reference (auto-invoked) |
+| **github-project** | Milestones, issues, labels, PR workflows |
+| **tab-debug** | TEF/tablature debugging workflow |
+| **add-issue** | GitHub issue creation with duplicate detection |
+
+### Project Commands (`.claude/commands/`)
+
+| Command | Purpose |
+|---------|---------|
+| **roast_image** | Process a complaint screenshot into a Bluegrass Standards Board case with bureaucratic roast |
+
+### Project Agents (`.claude/agents/`)
+
+| Agent | Purpose |
+|-------|---------|
+| **triage** | Bug triage investigator. Dispatch when user complains about wrong behavior. Traces root cause, labels fixes as ROOT FIX vs BANDAID. See "Bug Triage" section above. |
 
 ## Development Workflows
 

@@ -241,6 +241,30 @@ instrument_patterns = [
 **Cause**: effect1=0x04 was incorrectly interpreted as "explicit pull-off"
 **Symptom**: Notes with 1/4 step bends show pull-off slurs
 **Fix**: Removed 0x04 from legato detection - it's actually a bend indicator
+
+### Bends: not decoded, and none in the corpus (intended: +1 semitone)
+
+**Status**: We do NOT articulate bends. `V2_TECH = {1:"h", 2:"p", 3:"/"}` has no
+bend entry, so no OTF carries a bend tech (only `/ h p x` exist) — bends render
+and play as plain notes.
+
+**Why we don't just flip the bit on**: the raw `effect1 & 0x04` bit is NOISE, not
+a reliable bend flag. It fires on ~2,221 V2 notes (504 in shenandoah-breakdown
+alone), but TablEdit's own MusicXML export has **0 `<bend>` elements across the
+entire corpus** — i.e. there are genuinely no real bends in what we've imported,
+and decoding `0x04 → bend` would fabricate hundreds of phantom bends and break the
+oracle.
+
+**When real bends DO appear** (future tabs; MusicXML carries `<bend>` with the
+amount), the intended behavior — **bend UP a half-tone (+1 semitone)** — is:
+1. Detect real bends by oracle-fitting against `<bend>` (same rigor as
+   slides/hammers/pulls), NOT the noisy raw bit.
+2. Render a bend symbol.
+3. Play a +1 semitone pitch glide — reuse the slide infra: `slideWaypoints`
+   (tab-player.js) with `delta = +1` and NO target-note suppression (a bend is
+   one note whose pitch rises a half-step; there is no destination note).
+
+Tracked in GitHub issue #184.
 - `has_legato_effect()` now uses `effect1 & 0x03` (not 0x07)
 - `technique_from_event()` no longer checks for 0x04
 **Files**: `sources/banjo-hangout/src/tef_parser/otf.py`
@@ -281,6 +305,45 @@ renderer.render(track, notation, ticksPerBeat, timeSignature);
 
 **Cause**: 'K' marker notes need 2/3 duration, beamed together
 **Fix**: Check triplet detection and grouping in otf.py
+
+### Slide target renders off-grid with a rest before it (TablEdit's slide-timing hack)
+
+**Symptom**: A slide target (e.g. `5 →/ 8`) renders as an eighth note pushed
+OFF the beat grid with a little rest behind it, instead of a normal note on the
+ruler. (Reported on salt-creek m1/m5.)
+
+**Root cause — NOT a bug, it's TablEdit's design**: TablEdit fakes the *sound*
+of a slide by storing rendering-hostile microtiming, so its MIDI playback bends
+audibly. For `5 →/ 8` it emits, on one beat: a straight source eighth, a short
+`<forward>` rest gap, then the slide TARGET compressed to a **triplet** value and
+shifted off the grid. This is confirmed in BOTH the raw TEF duration code AND
+TablEdit's own MusicXML export:
+
+```
+# TablEdit MusicXML (20627 m1, divisions=240):
+note f5  dur120 (eighth)          slide-start
+FORWARD  dur40                    ← the "16th rest"
+note f8  dur80  time-mod 3:2      slide-stop   ← triplet, off-grid
+# → in OTF ticks: source @0/dur240, target @320/dur160
+```
+
+It is a **playback-timing hack, not a musical triplet**.
+
+**Fix (already in place)**: `normalize_slide_timing` in `otf.py` re-times the
+target on-grid as a normal note carrying only the `/` articulation
+(salt-creek m1: `320/160 → 240/240`). It gates on `tech in {"/","\\"}` so genuine
+musical triplets (e.g. ground-speed/15313 — never slides) are untouched, and
+only re-times the "triplet-compress" shape (off-16th-grid AND triplet duration).
+Playback re-creates the slide feel in `tab-player.js` via WebAudioFont's native
+`slides` param (the source rings, bends up, target hangs). The oracle stays
+green because `spike/oracle_verify.py` applies the SAME transform
+(`retimed_slide_target`) to the MusicXML side before comparing — so a change here
+means "same notes as TablEdit, modulo the documented slide policy." See
+`retimed_slide_target` / `normalize_slide_timing` in `otf.py`.
+
+Note the distinct **32nd grace-slide** shape (source is a 32nd, target lands a
+32nd late) is intentionally left as-is for now — 21 notes across 8 works; revisit
+if those need cleaning too.
 
 ## Key Files
 

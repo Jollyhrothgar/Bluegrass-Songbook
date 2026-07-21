@@ -53,7 +53,7 @@ import {
     trackTagSuggest, endSongView, trackTagsExpand
 } from './analytics.js';
 import { openFlagModal } from './flags.js';
-import { openWork } from './work-view.js';
+import { openWork, teardownTablatureView } from './work-view.js';
 
 // DOM element references (set by init)
 let songViewEl = null;
@@ -459,6 +459,10 @@ function setupAbcPlayback() {
  */
 export function renderSong(song, chordpro, isInitialRender = false) {
     if (!songContentEl) return;
+
+    // Restore the header ✏️ Edit (work-view hides it on tablature parts).
+    const editSongBtn = document.getElementById('edit-song-btn');
+    if (editSongBtn) editSongBtn.style.display = '';
 
     // Reset seen chord patterns for 'first' mode
     clearSeenChordPatterns();
@@ -1659,9 +1663,13 @@ export async function openSong(songId, options = {}) {
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
 
-    // Reset tablature state for new song (defensive cleanup)
+    // Reset tablature state for new song (defensive cleanup). The
+    // teardown matters on song→song hops within the 'song' view, where
+    // main.js's currentView subscriber never fires: it stops tab audio,
+    // destroys a live edit session, and drops renderer observers.
     setActivePartTab('lead-sheet');
     setLoadedTablature(null);
+    teardownTablatureView();
 
     const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);
@@ -1729,9 +1737,11 @@ export async function openSong(songId, options = {}) {
     songContentEl.innerHTML = '<div class="loading">Loading song...</div>';
 
     try {
-        let response = await fetch(`data/sources/${songId}.pro`);
+        // no-cache = revalidate (304 if unchanged) so re-published
+        // song data isn't shadowed by heuristic caching for weeks.
+        let response = await fetch(`data/sources/${songId}.pro`, { cache: 'no-cache' });
         if (!response.ok) {
-            response = await fetch(`../sources/classic-country/parsed/${songId}.pro`);
+            response = await fetch(`../sources/classic-country/parsed/${songId}.pro`, { cache: 'no-cache' });
         }
         const chordpro = await response.text();
         setCurrentChordpro(chordpro);
@@ -1757,9 +1767,13 @@ export async function openSongFromHistory(songId) {
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
 
-    // Reset tablature state for new song (defensive cleanup)
+    // Reset tablature state for new song (defensive cleanup). The
+    // teardown matters on song→song hops within the 'song' view, where
+    // main.js's currentView subscriber never fires: it stops tab audio,
+    // destroys a live edit session, and drops renderer observers.
     setActivePartTab('lead-sheet');
     setLoadedTablature(null);
+    teardownTablatureView();
 
     const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);

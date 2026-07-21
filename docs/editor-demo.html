@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTF Editor Demo - Bluegrass Songbook</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: var(--bg, #fff);
+            color: var(--text, #333);
+        }
+
+        .demo-header {
+            max-width: 1200px;
+            margin: 0 auto 20px;
+        }
+
+        .demo-header h1 {
+            margin: 0 0 8px;
+            font-size: 24px;
+        }
+
+        .demo-header p {
+            margin: 0;
+            color: var(--text-muted, #666);
+        }
+
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #editor-container {
+            min-height: 500px;
+            margin-bottom: 20px;
+        }
+
+        .demo-controls {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 16px;
+            background: var(--bg-secondary, #f5f5f5);
+            border-radius: 8px;
+        }
+
+        .demo-controls button {
+            padding: 8px 16px;
+            border: 1px solid var(--border, #ddd);
+            border-radius: 6px;
+            background: var(--bg, #fff);
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .demo-controls button:hover {
+            background: var(--bg-hover, #e9e9e9);
+        }
+
+        .demo-controls button.primary {
+            background: var(--accent, #007bff);
+            border-color: var(--accent, #007bff);
+            color: #fff;
+        }
+
+        .demo-controls select {
+            padding: 8px 12px;
+            border: 1px solid var(--border, #ddd);
+            border-radius: 6px;
+            background: var(--bg, #fff);
+            font-size: 14px;
+        }
+
+        .demo-info {
+            padding: 16px;
+            background: var(--bg-secondary, #f5f5f5);
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .demo-info h3 {
+            margin: 0 0 12px;
+            font-size: 16px;
+        }
+
+        .demo-info ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .demo-info li {
+            margin-bottom: 4px;
+        }
+
+        .demo-info code {
+            background: var(--bg, #fff);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .key-hint {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--bg, #fff);
+            border: 1px solid var(--border, #ddd);
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .recorder-controls {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding: 12px 16px;
+            background: var(--bg-secondary, #f5f5f5);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .recorder-controls button {
+            padding: 8px 16px;
+            border: 1px solid var(--border, #ddd);
+            border-radius: 6px;
+            background: var(--bg, #fff);
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .recorder-controls button:hover {
+            background: var(--bg-hover, #e9e9e9);
+        }
+
+        .recorder-controls button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .recorder-controls button.recording {
+            background: #dc3545;
+            border-color: #dc3545;
+            color: #fff;
+            animation: pulse-red 1.5s infinite;
+        }
+
+        @keyframes pulse-red {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .recorder-status {
+            font-size: 13px;
+            color: var(--text-muted, #666);
+            margin-left: 8px;
+        }
+
+        .recorder-status.active {
+            color: #dc3545;
+            font-weight: 600;
+        }
+
+        .replay-speed {
+            padding: 6px 8px;
+            border: 1px solid var(--border, #ddd);
+            border-radius: 6px;
+            background: var(--bg, #fff);
+            font-size: 13px;
+            width: 80px;
+        }
+
+        .hidden-file-input {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-header">
+        <h1>OTF Tablature Editor</h1>
+        <p>A modal, keyboard-accelerated editor for bluegrass tablature</p>
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-controls">
+            <button onclick="newDocument()">New Document</button>
+            <select id="sample-select" onchange="loadSample()">
+                <option value="">Load Sample Tab...</option>
+                <option value="data/tabs/red-haired-boy-banjo.otf.json">Red Haired Boy (Banjo)</option>
+                <option value="data/tabs/salt-creek-banjo.otf.json">Salt Creek (Banjo)</option>
+                <option value="data/tabs/soldiers-joy-banjo.otf.json">Soldiers Joy (Banjo)</option>
+                <option value="data/tabs/foggy-mountain-breakdown-mandolin.otf.json">Foggy Mountain Breakdown (Mandolin)</option>
+            </select>
+            <button onclick="downloadTab()" class="primary">Download OTF</button>
+        </div>
+
+        <div class="recorder-controls">
+            <button id="record-btn" onclick="toggleRecording()">Record</button>
+            <button id="export-btn" onclick="exportRecording()" disabled>Export</button>
+            <button id="import-btn" onclick="document.getElementById('import-file').click()">Import</button>
+            <button id="replay-btn" onclick="replayRecording()" disabled>Replay</button>
+            <label>
+                Speed:
+                <select id="replay-speed" class="replay-speed">
+                    <option value="0">Instant</option>
+                    <option value="50">Fast</option>
+                    <option value="200" selected>Normal</option>
+                    <option value="500">Slow</option>
+                </select>
+            </label>
+            <span id="recorder-status" class="recorder-status"></span>
+            <input type="file" id="import-file" class="hidden-file-input" accept=".json" onchange="importRecording(event)">
+        </div>
+
+        <div id="editor-container"></div>
+
+        <div class="demo-info">
+            <h3>Keyboard Shortcuts</h3>
+            <ul>
+                <li><span class="key-hint">h j k l</span> or arrow keys - Navigate</li>
+                <li><span class="key-hint">i</span> - Enter INSERT mode</li>
+                <li><span class="key-hint">Escape</span> - Return to NORMAL mode</li>
+                <li><span class="key-hint">1-5</span> - Select string (in INSERT mode)</li>
+                <li><span class="key-hint">0-9</span> - Enter fret number (in INSERT mode)</li>
+                <li><span class="key-hint">Space</span> - Advance cursor (in INSERT mode)</li>
+                <li><span class="key-hint">r</span> - Enter ROLL mode for quick pattern entry</li>
+                <li><span class="key-hint">T I M R</span> - Thumb/Index/Middle/Ring (in ROLL mode)</li>
+                <li><span class="key-hint">x</span> - Delete note</li>
+                <li><span class="key-hint">u</span> - Undo</li>
+                <li><span class="key-hint">q e s</span> - Set duration (quarter/eighth/sixteenth)</li>
+                <li><span class="key-hint">?</span> - Show help</li>
+            </ul>
+            <p style="margin-top: 12px;"><strong>Double-click</strong> anywhere on the tablature to open the note entry popover.</p>
+        </div>
+    </div>
+
+    <script type="module">
+        import { OTFEditor, createEmptyOTF, EditEventRecorder } from './js/otf-editor/index.js';
+
+        let editor = null;
+        let lastRecording = null;
+        let replayAbort = null;
+
+        // Initialize editor
+        async function initEditor(otf = null) {
+            const container = document.getElementById('editor-container');
+
+            // Destroy existing editor
+            if (editor) {
+                editor.destroy();
+            }
+
+            // Create new editor
+            editor = new OTFEditor({
+                container,
+                otf: otf || createEmptyOTF('5-string-banjo', {
+                    title: 'New Tab',
+                    tempo: 120,
+                }),
+                onChange: (otf) => {
+                    // Update event count while recording
+                    if (editor?.isRecording) {
+                        updateRecorderStatus();
+                    }
+                },
+                onSave: (otf) => {
+                    console.log('Saving document:', otf.metadata?.title);
+                    downloadTab();
+                },
+            });
+
+            // Make editor accessible globally for demo
+            window.editor = editor;
+        }
+
+        // New document
+        window.newDocument = function() {
+            const instrument = '5-string-banjo';
+            const otf = createEmptyOTF(instrument, {
+                title: 'New Tab',
+                tempo: 120,
+            });
+            initEditor(otf);
+            document.getElementById('sample-select').value = '';
+        };
+
+        // Load sample
+        window.loadSample = async function() {
+            const select = document.getElementById('sample-select');
+            const url = select.value;
+
+            if (!url) return;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`Failed to load: ${response.status}`);
+                const otf = await response.json();
+                initEditor(otf);
+            } catch (error) {
+                console.error('Error loading sample:', error);
+                alert('Failed to load sample tab: ' + error.message);
+            }
+        };
+
+        // Download
+        window.downloadTab = function() {
+            if (editor) {
+                editor.download();
+            }
+        };
+
+        // === Recording controls ===
+
+        function updateRecorderStatus() {
+            const status = document.getElementById('recorder-status');
+            if (editor?.isRecording) {
+                const count = editor.recorder.length;
+                status.textContent = `Recording... (${count} events)`;
+                status.className = 'recorder-status active';
+            } else if (lastRecording) {
+                const parsed = typeof lastRecording === 'string'
+                    ? JSON.parse(lastRecording) : lastRecording;
+                status.textContent = `${parsed.events.length} events loaded`;
+                status.className = 'recorder-status';
+            } else {
+                status.textContent = '';
+                status.className = 'recorder-status';
+            }
+        }
+
+        window.toggleRecording = function() {
+            if (!editor) return;
+
+            const btn = document.getElementById('record-btn');
+            const exportBtn = document.getElementById('export-btn');
+            const replayBtn = document.getElementById('replay-btn');
+
+            if (editor.isRecording) {
+                // Stop recording
+                editor.stopRecording();
+                lastRecording = editor.exportRecording();
+                btn.textContent = 'Record';
+                btn.classList.remove('recording');
+                exportBtn.disabled = false;
+                replayBtn.disabled = false;
+                updateRecorderStatus();
+            } else {
+                // Start recording
+                editor.startRecording();
+                lastRecording = null;
+                btn.textContent = 'Stop';
+                btn.classList.add('recording');
+                exportBtn.disabled = true;
+                replayBtn.disabled = true;
+                updateRecorderStatus();
+            }
+
+            editor.focus();
+        };
+
+        window.exportRecording = function() {
+            if (!lastRecording) return;
+
+            const json = typeof lastRecording === 'string'
+                ? lastRecording : JSON.stringify(lastRecording, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `recording-${Date.now()}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        };
+
+        window.importRecording = function(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    lastRecording = e.target.result;
+                    // Validate
+                    const parsed = JSON.parse(lastRecording);
+                    if (!parsed.events || !Array.isArray(parsed.events)) {
+                        throw new Error('Invalid recording format');
+                    }
+                    document.getElementById('replay-btn').disabled = false;
+                    document.getElementById('export-btn').disabled = false;
+                    updateRecorderStatus();
+                } catch (err) {
+                    alert('Failed to import recording: ' + err.message);
+                    lastRecording = null;
+                }
+            };
+            reader.readAsText(file);
+
+            // Reset file input so same file can be re-imported
+            event.target.value = '';
+        };
+
+        window.replayRecording = async function() {
+            if (!editor || !lastRecording) return;
+
+            const speed = parseInt(document.getElementById('replay-speed').value, 10);
+            const replayBtn = document.getElementById('replay-btn');
+            const status = document.getElementById('recorder-status');
+
+            // If already replaying, abort
+            if (replayAbort) {
+                replayAbort.abort();
+                replayAbort = null;
+                replayBtn.textContent = 'Replay';
+                updateRecorderStatus();
+                return;
+            }
+
+            // Reset editor to empty state for clean replay
+            newDocument();
+
+            replayAbort = new AbortController();
+            replayBtn.textContent = 'Stop Replay';
+
+            try {
+                const result = await editor.importAndReplay(lastRecording, {
+                    stepDelay: speed,
+                    signal: replayAbort.signal,
+                    onEvent: (event, index) => {
+                        const total = JSON.parse(typeof lastRecording === 'string'
+                            ? lastRecording : JSON.stringify(lastRecording)).events.length;
+                        status.textContent = `Replaying... ${index + 1}/${total}`;
+                        status.className = 'recorder-status active';
+                    },
+                });
+
+                status.textContent = `Replay complete (${result.completed}/${result.total} events)`;
+                status.className = 'recorder-status';
+            } catch (err) {
+                status.textContent = `Replay error: ${err.message}`;
+                status.className = 'recorder-status';
+            }
+
+            replayAbort = null;
+            replayBtn.textContent = 'Replay';
+        };
+
+        // Initialize on load
+        initEditor();
+    </script>
+</body>
+</html>

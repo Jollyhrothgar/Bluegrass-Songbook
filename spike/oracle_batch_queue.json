@@ -1,0 +1,858 @@
+[
+ {
+  "pid": "10277_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/10277.tef",
+  "xml_name": "10277.xml",
+  "otf": "sources/banjo-hangout/parsed/10277_tef.otf.json",
+  "xml": "spike/oracle/batch/10277.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "10658_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/10658.tef",
+  "xml_name": "10658.xml",
+  "otf": "sources/banjo-hangout/parsed/10658_tef.otf.json",
+  "xml": "spike/oracle/batch/10658.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "10659_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/10659.tef",
+  "xml_name": "10659.xml",
+  "otf": "sources/banjo-hangout/parsed/10659_tef.otf.json",
+  "xml": "spike/oracle/batch/10659.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "10776_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/10776.tef",
+  "xml_name": "10776.xml",
+  "otf": "sources/banjo-hangout/parsed/10776_tef.otf.json",
+  "xml": "spike/oracle/batch/10776.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "11047_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/ragtime_annie-1664.tef",
+  "xml_name": "ragtime_annie-1664.xml",
+  "otf": "sources/banjo-hangout/parsed/11047_tef.otf.json",
+  "xml": "spike/oracle/batch/ragtime_annie-1664.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "11736_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-angeline-the-ba-11736-44510492009.tef",
+  "xml_name": "tab-angeline-the-ba-11736-44510492009.xml",
+  "otf": "sources/banjo-hangout/parsed/11736_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-angeline-the-ba-11736-44510492009.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "12121_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-banjo-in-the-ho-12121-4516112422011.tef",
+  "xml_name": "tab-banjo-in-the-ho-12121-4516112422011.xml",
+  "otf": "sources/banjo-hangout/parsed/12121_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-banjo-in-the-ho-12121-4516112422011.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "12123_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-shuckin-the-cor-12123-2223135112009.tef",
+  "xml_name": "tab-shuckin-the-cor-12123-2223135112009.xml",
+  "otf": "sources/banjo-hangout/parsed/12123_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-shuckin-the-cor-12123-2223135112009.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "12124_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/12124.tef",
+  "xml_name": "12124.xml",
+  "otf": "sources/banjo-hangout/parsed/12124_tef.otf.json",
+  "xml": "spike/oracle/batch/12124.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "12127_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-lonesome-road-b-12127-449122422011.tef",
+  "xml_name": "tab-lonesome-road-b-12127-449122422011.xml",
+  "otf": "sources/banjo-hangout/parsed/12127_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-lonesome-road-b-12127-449122422011.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "13654_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-ducks-on-millpo-13654-445142772010.tef",
+  "xml_name": "tab-ducks-on-millpo-13654-445142772010.xml",
+  "otf": "sources/banjo-hangout/parsed/13654_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-ducks-on-millpo-13654-445142772010.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "14406_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-seneca-square-d-14406-5235521122010.tef",
+  "xml_name": "tab-seneca-square-d-14406-5235521122010.xml",
+  "otf": "sources/banjo-hangout/parsed/14406_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-seneca-square-d-14406-5235521122010.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "14683_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-hot-corn-cold-c-14683-516122422011.tef",
+  "xml_name": "tab-hot-corn-cold-c-14683-516122422011.xml",
+  "otf": "sources/banjo-hangout/parsed/14683_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-hot-corn-cold-c-14683-516122422011.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "14690_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-red-haired-boy-14690-744122422011.tef",
+  "xml_name": "tab-red-haired-boy-14690-744122422011.xml",
+  "otf": "sources/banjo-hangout/parsed/14690_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-red-haired-boy-14690-744122422011.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "15032_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-done-gone-15032-1782342011.tef",
+  "xml_name": "tab-done-gone-15032-1782342011.xml",
+  "otf": "sources/banjo-hangout/parsed/15032_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-done-gone-15032-1782342011.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "15313_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/15313.tef",
+  "xml_name": "15313.xml",
+  "otf": "sources/banjo-hangout/parsed/15313_tef.otf.json",
+  "xml": "spike/oracle/batch/15313.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "15317_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/15317.tef",
+  "xml_name": "15317.xml",
+  "otf": "sources/banjo-hangout/parsed/15317_tef.otf.json",
+  "xml": "spike/oracle/batch/15317.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "15318_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-harvest-home-15318-105722462011.tef",
+  "xml_name": "tab-harvest-home-15318-105722462011.xml",
+  "otf": "sources/banjo-hangout/parsed/15318_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-harvest-home-15318-105722462011.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "16117_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/16117.tef",
+  "xml_name": "16117.xml",
+  "otf": "sources/banjo-hangout/parsed/16117_tef.otf.json",
+  "xml": "spike/oracle/batch/16117.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "16825_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-liberty-16825-4752172122012.tef",
+  "xml_name": "tab-liberty-16825-4752172122012.xml",
+  "otf": "sources/banjo-hangout/parsed/16825_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-liberty-16825-4752172122012.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "17003_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-shooting-creek-17003-56231732012.tef",
+  "xml_name": "tab-shooting-creek-17003-56231732012.xml",
+  "otf": "sources/banjo-hangout/parsed/17003_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-shooting-creek-17003-56231732012.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "17674_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-ragtime-annie-17674-44661682012.tef",
+  "xml_name": "tab-ragtime-annie-17674-44661682012.xml",
+  "otf": "sources/banjo-hangout/parsed/17674_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-ragtime-annie-17674-44661682012.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "17879_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/17879.tef",
+  "xml_name": "17879.xml",
+  "otf": "sources/banjo-hangout/parsed/17879_tef.otf.json",
+  "xml": "spike/oracle/batch/17879.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "18136_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-the-irish-washe-18136-12141224122012.tef",
+  "xml_name": "tab-the-irish-washe-18136-12141224122012.xml",
+  "otf": "sources/banjo-hangout/parsed/18136_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-the-irish-washe-18136-12141224122012.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "18926_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/18926.tef",
+  "xml_name": "18926.xml",
+  "otf": "sources/banjo-hangout/parsed/18926_tef.otf.json",
+  "xml": "spike/oracle/batch/18926.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "19600_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-paddy-on-the-tu-19600-45331523102013.tef",
+  "xml_name": "tab-paddy-on-the-tu-19600-45331523102013.xml",
+  "otf": "sources/banjo-hangout/parsed/19600_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-paddy-on-the-tu-19600-45331523102013.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "19852_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-little-rabbit-19852-294671122013.tef",
+  "xml_name": "tab-little-rabbit-19852-294671122013.xml",
+  "otf": "sources/banjo-hangout/parsed/19852_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-little-rabbit-19852-294671122013.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "20545_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-dear-old-dixie-20545-112514692016.tef",
+  "xml_name": "tab-dear-old-dixie-20545-112514692016.xml",
+  "otf": "sources/banjo-hangout/parsed/20545_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-dear-old-dixie-20545-112514692016.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "20556_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-arkansas-travel-20556-233610972014.tef",
+  "xml_name": "tab-arkansas-travel-20556-233610972014.xml",
+  "otf": "sources/banjo-hangout/parsed/20556_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-arkansas-travel-20556-233610972014.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "20627_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/20627.tef",
+  "xml_name": "20627.xml",
+  "otf": "sources/banjo-hangout/parsed/20627_tef.otf.json",
+  "xml": "spike/oracle/batch/20627.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "20911_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-marching-jaybir-20911-3841512122014.tef",
+  "xml_name": "tab-marching-jaybir-20911-3841512122014.xml",
+  "otf": "sources/banjo-hangout/parsed/20911_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-marching-jaybir-20911-3841512122014.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "20923_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-salt-creek-20923-42181315122014.tef",
+  "xml_name": "tab-salt-creek-20923-42181315122014.xml",
+  "otf": "sources/banjo-hangout/parsed/20923_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-salt-creek-20923-42181315122014.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "20936_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-salt-creek-20936-3449718122014.tef",
+  "xml_name": "tab-salt-creek-20936-3449718122014.xml",
+  "otf": "sources/banjo-hangout/parsed/20936_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-salt-creek-20936-3449718122014.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "20981_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-sally-ann-20981-574521512015.tef",
+  "xml_name": "tab-sally-ann-20981-574521512015.xml",
+  "otf": "sources/banjo-hangout/parsed/20981_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-sally-ann-20981-574521512015.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "21307_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/21307.tef",
+  "xml_name": "21307.xml",
+  "otf": "sources/banjo-hangout/parsed/21307_tef.otf.json",
+  "xml": "spike/oracle/batch/21307.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "21678_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-waterbound-21678-201131012016.tef",
+  "xml_name": "tab-waterbound-21678-201131012016.xml",
+  "otf": "sources/banjo-hangout/parsed/21678_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-waterbound-21678-201131012016.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "21690_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-paddy-on-the-tu-21690-1750131112016.tef",
+  "xml_name": "tab-paddy-on-the-tu-21690-1750131112016.xml",
+  "otf": "sources/banjo-hangout/parsed/21690_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-paddy-on-the-tu-21690-1750131112016.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "21802_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-tennessee-mount-21802-2319132016.tef",
+  "xml_name": "tab-tennessee-mount-21802-2319132016.xml",
+  "otf": "sources/banjo-hangout/parsed/21802_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-tennessee-mount-21802-2319132016.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "21874_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/21874.tef",
+  "xml_name": "21874.xml",
+  "otf": "sources/banjo-hangout/parsed/21874_tef.otf.json",
+  "xml": "spike/oracle/batch/21874.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "21999_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-arkansas-hoosie-21999-940122272016.tef",
+  "xml_name": "tab-arkansas-hoosie-21999-940122272016.xml",
+  "otf": "sources/banjo-hangout/parsed/21999_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-arkansas-hoosie-21999-940122272016.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "22228_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-waterbound-22228-46511117112016.tef",
+  "xml_name": "tab-waterbound-22228-46511117112016.xml",
+  "otf": "sources/banjo-hangout/parsed/22228_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-waterbound-22228-46511117112016.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "22290_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-scotland-22290-5541129122016.tef",
+  "xml_name": "tab-scotland-22290-5541129122016.xml",
+  "otf": "sources/banjo-hangout/parsed/22290_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-scotland-22290-5541129122016.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "22446_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-chinese-breakdo-22446-5828232842017.tef",
+  "xml_name": "tab-chinese-breakdo-22446-5828232842017.xml",
+  "otf": "sources/banjo-hangout/parsed/22446_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-chinese-breakdo-22446-5828232842017.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "22456_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-down-yonder-22456-66131632017.tef",
+  "xml_name": "tab-down-yonder-22456-66131632017.xml",
+  "otf": "sources/banjo-hangout/parsed/22456_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-down-yonder-22456-66131632017.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "23345_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-lonesome-fiddle-23345-147202692018.tef",
+  "xml_name": "tab-lonesome-fiddle-23345-147202692018.xml",
+  "otf": "sources/banjo-hangout/parsed/23345_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-lonesome-fiddle-23345-147202692018.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "23374_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-jerusalem-ridge-23374-20231218102018.tef",
+  "xml_name": "tab-jerusalem-ridge-23374-20231218102018.xml",
+  "otf": "sources/banjo-hangout/parsed/23374_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-jerusalem-ridge-23374-20231218102018.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "23398_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/23398.tef",
+  "xml_name": "23398.xml",
+  "otf": "sources/banjo-hangout/parsed/23398_tef.otf.json",
+  "xml": "spike/oracle/batch/23398.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "23404_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-cherokee-shuffl-23404-3332310112018.tef",
+  "xml_name": "tab-cherokee-shuffl-23404-3332310112018.xml",
+  "otf": "sources/banjo-hangout/parsed/23404_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cherokee-shuffl-23404-3332310112018.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "23408_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/23408.tef",
+  "xml_name": "23408.xml",
+  "otf": "sources/banjo-hangout/parsed/23408_tef.otf.json",
+  "xml": "spike/oracle/batch/23408.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "23409_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-dixie-hoedown-23409-3149310112018.tef",
+  "xml_name": "tab-dixie-hoedown-23409-3149310112018.xml",
+  "otf": "sources/banjo-hangout/parsed/23409_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-dixie-hoedown-23409-3149310112018.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "23439_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/23439.tef",
+  "xml_name": "23439.xml",
+  "otf": "sources/banjo-hangout/parsed/23439_tef.otf.json",
+  "xml": "spike/oracle/batch/23439.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "23602_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/23602.tef",
+  "xml_name": "23602.xml",
+  "otf": "sources/banjo-hangout/parsed/23602_tef.otf.json",
+  "xml": "spike/oracle/batch/23602.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "23778_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-cherokee-shuffl-23778-414171862019.tef",
+  "xml_name": "tab-cherokee-shuffl-23778-414171862019.xml",
+  "otf": "sources/banjo-hangout/parsed/23778_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cherokee-shuffl-23778-414171862019.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "23848_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-whiskey-before--23848-3747101382019.tef",
+  "xml_name": "tab-whiskey-before--23848-3747101382019.xml",
+  "otf": "sources/banjo-hangout/parsed/23848_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-whiskey-before--23848-3747101382019.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "25010_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-gold-rush-25010-550201782021.tef",
+  "xml_name": "tab-gold-rush-25010-550201782021.xml",
+  "otf": "sources/banjo-hangout/parsed/25010_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-gold-rush-25010-550201782021.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "27154_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/27154.tef",
+  "xml_name": "27154.xml",
+  "otf": "sources/banjo-hangout/parsed/27154_tef.otf.json",
+  "xml": "spike/oracle/batch/27154.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "27165_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/27165.tef",
+  "xml_name": "27165.xml",
+  "otf": "sources/banjo-hangout/parsed/27165_tef.otf.json",
+  "xml": "spike/oracle/batch/27165.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "27168_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/27168.tef",
+  "xml_name": "27168.xml",
+  "otf": "sources/banjo-hangout/parsed/27168_tef.otf.json",
+  "xml": "spike/oracle/batch/27168.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "27408_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/27408.tef",
+  "xml_name": "27408.xml",
+  "otf": "sources/banjo-hangout/parsed/27408_tef.otf.json",
+  "xml": "spike/oracle/batch/27408.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "27418_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/27418.tef",
+  "xml_name": "27418.xml",
+  "otf": "sources/banjo-hangout/parsed/27418_tef.otf.json",
+  "xml": "spike/oracle/batch/27418.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "10770_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/leather_britches-1044.tef",
+  "xml_name": "leather_britches-1044.xml",
+  "otf": "sources/banjo-hangout/parsed/10770_tef.otf.json",
+  "xml": "spike/oracle/batch/leather_britches-1044.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "10777_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/10777.tef",
+  "xml_name": "10777.xml",
+  "otf": "sources/banjo-hangout/parsed/10777_tef.otf.json",
+  "xml": "spike/oracle/batch/10777.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "11245_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/11245.tef",
+  "xml_name": "11245.xml",
+  "otf": "sources/banjo-hangout/parsed/11245_tef.otf.json",
+  "xml": "spike/oracle/batch/11245.xml",
+  "tracks": 4
+ },
+ {
+  "pid": "11449_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/wheel_hoss-2430.tef",
+  "xml_name": "wheel_hoss-2430.xml",
+  "otf": "sources/banjo-hangout/parsed/11449_tef.otf.json",
+  "xml": "spike/oracle/batch/wheel_hoss-2430.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "11514_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/11514.tef",
+  "xml_name": "11514.xml",
+  "otf": "sources/banjo-hangout/parsed/11514_tef.otf.json",
+  "xml": "spike/oracle/batch/11514.xml",
+  "tracks": 4
+ },
+ {
+  "pid": "11557_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/11557.tef",
+  "xml_name": "11557.xml",
+  "otf": "sources/banjo-hangout/parsed/11557_tef.otf.json",
+  "xml": "spike/oracle/batch/11557.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "11558_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/11558.tef",
+  "xml_name": "11558.xml",
+  "otf": "sources/banjo-hangout/parsed/11558_tef.otf.json",
+  "xml": "spike/oracle/batch/11558.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "11722_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-sally-ann-11722-54143082009.tef",
+  "xml_name": "tab-sally-ann-11722-54143082009.xml",
+  "otf": "sources/banjo-hangout/parsed/11722_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-sally-ann-11722-54143082009.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "11723_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-salt-creek-11723-713143082009.tef",
+  "xml_name": "tab-salt-creek-11723-713143082009.xml",
+  "otf": "sources/banjo-hangout/parsed/11723_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-salt-creek-11723-713143082009.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "11829_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/11829.tef",
+  "xml_name": "11829.xml",
+  "otf": "sources/banjo-hangout/parsed/11829_tef.otf.json",
+  "xml": "spike/oracle/batch/11829.xml",
+  "tracks": 4
+ },
+ {
+  "pid": "11830_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/11830.tef",
+  "xml_name": "11830.xml",
+  "otf": "sources/banjo-hangout/parsed/11830_tef.otf.json",
+  "xml": "spike/oracle/batch/11830.xml",
+  "tracks": 4
+ },
+ {
+  "pid": "11831_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-angeline-the-ba-11831-52283892009.tef",
+  "xml_name": "tab-angeline-the-ba-11831-52283892009.xml",
+  "otf": "sources/banjo-hangout/parsed/11831_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-angeline-the-ba-11831-52283892009.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "12135_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-daleys-reel-12135-345886112009.tef",
+  "xml_name": "tab-daleys-reel-12135-345886112009.xml",
+  "otf": "sources/banjo-hangout/parsed/12135_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-daleys-reel-12135-345886112009.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "12574_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-sledd-ridin-12574-23271623122009.tef",
+  "xml_name": "tab-sledd-ridin-12574-23271623122009.xml",
+  "otf": "sources/banjo-hangout/parsed/12574_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-sledd-ridin-12574-23271623122009.xml",
+  "tracks": 4
+ },
+ {
+  "pid": "13248_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/13248.tef",
+  "xml_name": "13248.xml",
+  "otf": "sources/banjo-hangout/parsed/13248_tef.otf.json",
+  "xml": "spike/oracle/batch/13248.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "13648_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-ashokan-farewel-13648-312342372010.tef",
+  "xml_name": "tab-ashokan-farewel-13648-312342372010.xml",
+  "otf": "sources/banjo-hangout/parsed/13648_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-ashokan-farewel-13648-312342372010.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "13788_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-marching-throug-13788-495622392010.tef",
+  "xml_name": "tab-marching-throug-13788-495622392010.xml",
+  "otf": "sources/banjo-hangout/parsed/13788_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-marching-throug-13788-495622392010.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "14613_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-down-yonder-14613-3353422011.tef",
+  "xml_name": "tab-down-yonder-14613-3353422011.xml",
+  "otf": "sources/banjo-hangout/parsed/14613_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-down-yonder-14613-3353422011.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "14699_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/14699.tef",
+  "xml_name": "14699.xml",
+  "otf": "sources/banjo-hangout/parsed/14699_tef.otf.json",
+  "xml": "spike/oracle/batch/14699.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "14809_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-red-haired-boy-14809-25441912102011.tef",
+  "xml_name": "tab-red-haired-boy-14809-25441912102011.xml",
+  "otf": "sources/banjo-hangout/parsed/14809_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-red-haired-boy-14809-25441912102011.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "17492_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-down-yonder-17492-3557123062012.tef",
+  "xml_name": "tab-down-yonder-17492-3557123062012.xml",
+  "otf": "sources/banjo-hangout/parsed/17492_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-down-yonder-17492-3557123062012.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "17713_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/17713.tef",
+  "xml_name": "17713.xml",
+  "otf": "sources/banjo-hangout/parsed/17713_tef.otf.json",
+  "xml": "spike/oracle/batch/17713.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "18030_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-whiskey-before--18030-24531817112012.tef",
+  "xml_name": "tab-whiskey-before--18030-24531817112012.xml",
+  "otf": "sources/banjo-hangout/parsed/18030_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-whiskey-before--18030-24531817112012.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "18779_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/18779.tef",
+  "xml_name": "18779.xml",
+  "otf": "sources/banjo-hangout/parsed/18779_tef.otf.json",
+  "xml": "spike/oracle/batch/18779.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "18998_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-monroes-hornpip-18998-4011132772013.tef",
+  "xml_name": "tab-monroes-hornpip-18998-4011132772013.xml",
+  "otf": "sources/banjo-hangout/parsed/18998_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-monroes-hornpip-18998-4011132772013.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "19500_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/19500.tef",
+  "xml_name": "19500.xml",
+  "otf": "sources/banjo-hangout/parsed/19500_tef.otf.json",
+  "xml": "spike/oracle/batch/19500.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "19520_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/19520.tef",
+  "xml_name": "19520.xml",
+  "otf": "sources/banjo-hangout/parsed/19520_tef.otf.json",
+  "xml": "spike/oracle/batch/19520.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "20201_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-salt-creek-20201-57182722014.tef",
+  "xml_name": "tab-salt-creek-20201-57182722014.xml",
+  "otf": "sources/banjo-hangout/parsed/20201_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-salt-creek-20201-57182722014.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "20822_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-new-camptown-ra-20822-39131015122014.tef",
+  "xml_name": "tab-new-camptown-ra-20822-39131015122014.xml",
+  "otf": "sources/banjo-hangout/parsed/20822_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-new-camptown-ra-20822-39131015122014.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "20853_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-shenandoah-walt-20853-18501115112014.tef",
+  "xml_name": "tab-shenandoah-walt-20853-18501115112014.xml",
+  "otf": "sources/banjo-hangout/parsed/20853_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-shenandoah-walt-20853-18501115112014.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "20924_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-give-the-fiddle-20924-33351315122014.tef",
+  "xml_name": "tab-give-the-fiddle-20924-33351315122014.xml",
+  "otf": "sources/banjo-hangout/parsed/20924_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-give-the-fiddle-20924-33351315122014.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "21057_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-lonesome-fiddle-21057-361621222015.tef",
+  "xml_name": "tab-lonesome-fiddle-21057-361621222015.xml",
+  "otf": "sources/banjo-hangout/parsed/21057_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-lonesome-fiddle-21057-361621222015.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "21420_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/21420.tef",
+  "xml_name": "21420.xml",
+  "otf": "sources/banjo-hangout/parsed/21420_tef.otf.json",
+  "xml": "spike/oracle/batch/21420.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "21467_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/21467.tef",
+  "xml_name": "21467.xml",
+  "otf": "sources/banjo-hangout/parsed/21467_tef.otf.json",
+  "xml": "spike/oracle/batch/21467.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "21823_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-maidens-prayer-21823-4941131832016.tef",
+  "xml_name": "tab-maidens-prayer-21823-4941131832016.xml",
+  "otf": "sources/banjo-hangout/parsed/21823_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-maidens-prayer-21823-4941131832016.xml",
+  "tracks": 4
+ },
+ {
+  "pid": "22191_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-lonesome-road-b-22191-59101214112019.tef",
+  "xml_name": "tab-lonesome-road-b-22191-59101214112019.xml",
+  "otf": "sources/banjo-hangout/parsed/22191_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-lonesome-road-b-22191-59101214112019.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "22240_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-cherokee-shuffl-22240-3043527112016.tef",
+  "xml_name": "tab-cherokee-shuffl-22240-3043527112016.xml",
+  "otf": "sources/banjo-hangout/parsed/22240_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cherokee-shuffl-22240-3043527112016.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "23192_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/23192.tef",
+  "xml_name": "23192.xml",
+  "otf": "sources/banjo-hangout/parsed/23192_tef.otf.json",
+  "xml": "spike/oracle/batch/23192.xml",
+  "tracks": 5
+ },
+ {
+  "pid": "23819_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-cherokee-shuffl-23819-332212472019.tef",
+  "xml_name": "tab-cherokee-shuffl-23819-332212472019.xml",
+  "otf": "sources/banjo-hangout/parsed/23819_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cherokee-shuffl-23819-332212472019.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "24087_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-cherokee-shuffl-24087-5618122812020.tef",
+  "xml_name": "tab-cherokee-shuffl-24087-5618122812020.xml",
+  "otf": "sources/banjo-hangout/parsed/24087_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cherokee-shuffl-24087-5618122812020.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "24091_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-salt-creek-24091-273152612020.tef",
+  "xml_name": "tab-salt-creek-24091-273152612020.xml",
+  "otf": "sources/banjo-hangout/parsed/24091_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-salt-creek-24091-273152612020.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "24093_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-red-haired-boy-24093-1443142912020.tef",
+  "xml_name": "tab-red-haired-boy-24093-1443142912020.xml",
+  "otf": "sources/banjo-hangout/parsed/24093_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-red-haired-boy-24093-1443142912020.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "24112_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/24112.tef",
+  "xml_name": "24112.xml",
+  "otf": "sources/banjo-hangout/parsed/24112_tef.otf.json",
+  "xml": "spike/oracle/batch/24112.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "24231_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-i-dont-love-nob-24231-3106642020.tef",
+  "xml_name": "tab-i-dont-love-nob-24231-3106642020.xml",
+  "otf": "sources/banjo-hangout/parsed/24231_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-i-dont-love-nob-24231-3106642020.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "24337_tef",
+  "tef_host": "/Users/mike/Library/CloudStorage/GoogleDrive-michael.beaumier@gmail.com/My Drive/Music/Banjo/Tabs/banjo_hangout_download/data/raw_tabs/tab-cheyenne-24337-377151052020.tef",
+  "xml_name": "tab-cheyenne-24337-377151052020.xml",
+  "otf": "sources/banjo-hangout/parsed/24337_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cheyenne-24337-377151052020.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "25635_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/25635.tef",
+  "xml_name": "25635.xml",
+  "otf": "sources/banjo-hangout/parsed/25635_tef.otf.json",
+  "xml": "spike/oracle/batch/25635.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "27493_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/feature-otf-editor/sources/banjo-hangout/downloads/27493.tef",
+  "xml_name": "27493.xml",
+  "otf": "sources/banjo-hangout/parsed/27493_tef.otf.json",
+  "xml": "spike/oracle/batch/27493.xml",
+  "tracks": 4
+ }
+]

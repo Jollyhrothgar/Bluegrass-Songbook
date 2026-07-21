@@ -52,6 +52,31 @@ def normalize_title(title: str) -> str:
     return title
 
 
+_TITLE_INDEX: Optional[dict] = None
+
+
+def _title_index() -> dict:
+    """Normalized-title -> work dir, built ONCE (scanning ~18k work
+    dirs with a yaml parse per unmatched title made batch imports
+    quadratic)."""
+    global _TITLE_INDEX
+    if _TITLE_INDEX is None:
+        _TITLE_INDEX = {}
+        for work_dir in WORKS_DIR.iterdir():
+            if not work_dir.is_dir():
+                continue
+            work_yaml = work_dir / 'work.yaml'
+            if not work_yaml.exists():
+                continue
+            try:
+                data = yaml.safe_load(work_yaml.read_text())
+                key = normalize_title(data.get('title', ''))
+                _TITLE_INDEX.setdefault(key, work_dir)
+            except Exception:
+                continue
+    return _TITLE_INDEX
+
+
 def find_matching_work(title: str) -> Optional[Path]:
     """Find an existing work that matches this title.
 
@@ -65,24 +90,8 @@ def find_matching_work(title: str) -> Optional[Path]:
     if exact_path.exists() and (exact_path / 'work.yaml').exists():
         return exact_path
 
-    # Try scanning all works for a normalized title match
-    # This catches cases where the slug doesn't exactly match
-    for work_dir in WORKS_DIR.iterdir():
-        if not work_dir.is_dir():
-            continue
-        work_yaml = work_dir / 'work.yaml'
-        if not work_yaml.exists():
-            continue
-
-        try:
-            data = yaml.safe_load(work_yaml.read_text())
-            work_title = normalize_title(data.get('title', ''))
-            if work_title == normalized:
-                return work_dir
-        except Exception:
-            continue
-
-    return None
+    # Normalized title match via the cached index
+    return _title_index().get(normalized)
 
 
 def load_work(work_dir: Path) -> dict:
@@ -123,12 +132,13 @@ def create_new_work(tab: TabEntry, otf_path: Path) -> Path:
     otf_filename = 'banjo.otf.json'
     shutil.copy2(otf_path, work_dir / otf_filename)
 
-    # Create work.yaml
+    # Create work.yaml. NB: the tabber is the ARRANGER, not the composer
+    # — attribution lives in provenance (work-view renders "Tabbed by").
     work_data = {
         'id': work_dir.name,
         'title': tab.title,
         'artist': None,  # Traditional/unknown for tabs
-        'composers': [tab.author] if tab.author and tab.author != 'unknown' else [],
+        'composers': [],
         'default_key': tab.key,
         'tags': build_tags(tab),
         'parts': [
@@ -138,12 +148,7 @@ def create_new_work(tab: TabEntry, otf_path: Path) -> Path:
                 'format': 'otf',
                 'file': otf_filename,
                 'default': True,
-                'provenance': {
-                    'source': 'banjo-hangout',
-                    'source_url': tab.source_url,
-                    'author': tab.author,
-                    'imported_at': str(date.today()),
-                },
+                'provenance': _provenance(tab),
             }
         ],
     }
@@ -175,12 +180,7 @@ def add_part_to_work(work_dir: Path, tab: TabEntry, otf_path: Path) -> bool:
         'instrument': 'banjo',
         'format': 'otf',
         'file': otf_filename,
-        'provenance': {
-            'source': 'banjo-hangout',
-            'source_url': tab.source_url,
-            'author': tab.author,
-            'imported_at': str(date.today()),
-        },
+        'provenance': _provenance(tab),
     }
 
     # Add tags if work doesn't have them
@@ -197,6 +197,23 @@ def add_part_to_work(work_dir: Path, tab: TabEntry, otf_path: Path) -> bool:
 
     save_work(work_dir, work_data)
     return True
+
+
+def _provenance(tab: TabEntry) -> dict:
+    """Provenance block for a tablature part.
+
+    source_id is the Banjo Hangout tab detail id (numeric prefix of the
+    catalog id) — build_works_index needs it to construct the tab page
+    and author attribution links.
+    """
+    source_id = tab.id.split('_')[0]
+    return {
+        'source': 'banjo-hangout',
+        'source_id': source_id,
+        'source_url': f"https://www.banjohangout.org/tab/browse.asp?m=detail&v={source_id}",
+        'author': tab.author,
+        'imported_at': str(date.today()),
+    }
 
 
 def build_tags(tab: TabEntry) -> list[str]:

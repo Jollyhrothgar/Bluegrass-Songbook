@@ -1,0 +1,88 @@
+name: Process Tab PR
+
+# The create-tab-pr edge function opens a PR containing the OTF file and
+# labels it. This workflow completes the branch: validate the OTF, add
+# work.yaml provenance, rebuild the index — so the reviewer sees the
+# WHOLE change. Merging the PR is the approval; deploy chains from main.
+
+on:
+  pull_request:
+    types: [labeled]
+
+concurrency:
+  group: tab-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    if: github.event.label.name == 'tab-correction' || github.event.label.name == 'tab-submission'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Collect changed tab files
+        id: changed
+        run: |
+          git fetch origin main
+          {
+            echo "files<<EOF"
+            git diff --name-only origin/main...HEAD -- 'works/**/*.otf.json'
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Finalize tab (validate + provenance)
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          CHANGED_FILES: ${{ steps.changed.outputs.files }}
+        run: uv run python scripts/lib/process_tab.py
+
+      - name: Rebuild search index
+        run: uv run python scripts/lib/build_works_index.py --skip-fuzzy
+
+      - name: Commit finalization to the PR branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add works/
+          git add docs/data/index.jsonl
+          git add docs/data/tabs/
+          git diff --staged --quiet || git commit -m "Finalize tab PR: provenance + index"
+          git push
+
+      - name: Comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let workId = 'unknown';
+            try {
+              workId = fs.readFileSync('/tmp/processed_work_id.txt', 'utf8').trim();
+            } catch (e) { /* ignore */ }
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ Validated and finalized (\`works/${workId}/\`): provenance + rebuilt index are on this branch.\n\n**Review the diff and merge to publish.**`
+            });

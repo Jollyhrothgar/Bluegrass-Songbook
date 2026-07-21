@@ -1,11 +1,13 @@
 // ASCII Tab Renderer
 // Extracted from TablEdit_Reverse viewer for Bluegrass Songbook
 
+import { MeasureTiming } from './measure-timing.js';
+
 /**
  * Render tablature as ASCII text
  * @param {Object} track - Track object with tuning and instrument info
  * @param {Array} notation - Array of measures with events
- * @param {Object} metadata - OTF metadata (title, etc.)
+ * @param {Object} metadata - OTF metadata (title, time_signature, etc.)
  * @returns {string} ASCII tablature
  */
 export function renderAsciiTab(track, notation, metadata = {}) {
@@ -14,6 +16,13 @@ export function renderAsciiTab(track, notation, metadata = {}) {
     const numStrings = track.tuning?.length || 5;
     const charsPerMeasure = 16;
     const measuresPerLine = 4;
+
+    // Per-measure tick lengths (was a hard-coded 60 ticks/char = one
+    // 2/4 measure; 4/4 measures overflowed onto the last column)
+    const timing = new MeasureTiming({
+        timeSignature: metadata.time_signature || '4/4',
+        timeSignatureChanges: metadata.time_signature_changes || [],
+    });
 
     let ascii = '';
     ascii += `${metadata.title || 'Untitled'}\n`;
@@ -33,9 +42,10 @@ export function renderAsciiTab(track, notation, metadata = {}) {
             );
 
             if (measure.events) {
+                const ticksPerChar =
+                    timing.ticksFor(measure.originalMeasure ?? measure.measure) / charsPerMeasure;
                 measure.events.forEach(event => {
-                    // Map tick to character position (960 ticks/measure / 16 chars = 60 ticks/char)
-                    const pos = Math.min(Math.floor(event.tick / 60), charsPerMeasure - 1);
+                    const pos = Math.min(Math.floor(event.tick / ticksPerChar), charsPerMeasure - 1);
 
                     event.notes.forEach(note => {
                         const stringIdx = note.s - 1;

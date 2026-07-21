@@ -22,17 +22,27 @@ import {
 } from './state.js';
 
 import {
+    parseChordPro, showVersionPicker,
     openSong,
     toggleFullscreen, exitFullscreen,
     navigatePrev, navigateNext,
     updateFocusHeader, updateNavBar
 } from './song-view.js';
-import { CHROMATIC_MAJOR_KEYS } from './chords.js';
-import { escapeHtml, isPlaceholder, requireLogin, slugify, parseItemRef } from './utils.js';
+import { detectKey, transposeChord, toNashville, getSemitonesBetweenKeys, KEYS, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
+import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify, parseItemRef } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
-import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
+import {
+    TabRenderer, TabPlayer, INSTRUMENT_ICONS,
+    TimelineTiming, identityTimeline, readingListTimeline,
+    expandNotation, makePlaybackToVisualMapper,
+    maxMeasureIn, measureTimingFromOtf,
+    analyzeReadingList, prepareCompactNotation,
+} from './renderers/index.js';
 import { clearListView } from './lists.js';
 import { getTagCategory, formatTagName } from './tags.js';
+import {
+    attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
+} from './tab-playback-interactions.js';
 
 // ============================================
 // WORK STATE
@@ -43,6 +53,39 @@ let activePart = null;           // Currently displayed part { type, format, fil
 let availableParts = [];         // All parts for current work
 let trackRenderers = {};         // Map of trackId -> TabRenderer instance
 let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
+let twoFeelMode = false;         // true = present 4/4 as cut time (2/2)
+let tempoOverride = null;        // { workId, quarterBpm } — user-set tempo;
+                                 // stored in QUARTER-note bpm so the display
+                                 // can convert when the feel changes
+let activeTrackView = null;      // track id, 'all', or null (= lead track)
+let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
+let activeEditSession = null;    // live tab edit session (torn down on nav)
+
+/**
+ * Tear down everything the tablature view holds live handles to: the
+ * edit session (document-level listeners, undo history, its player),
+ * the per-track renderers (each owns a documentElement MutationObserver
+ * that would otherwise keep re-rendering into detached DOM on every
+ * theme toggle), and the tab player (stop() also kills an in-flight
+ * soundfont load). Idempotent — safe to call on any navigation.
+ */
+export function teardownTablatureView() {
+    if (activeEditSession) {
+        activeEditSession.destroy();
+        activeEditSession = null;
+    }
+    destroyTrackRenderers();
+    if (tablaturePlayer) {
+        tablaturePlayer.stop();
+        setTablaturePlayer(null);
+    }
+}
+
+function destroyTrackRenderers() {
+    for (const r of Object.values(trackRenderers)) r.destroy?.();
+    trackRenderers = {};
+}
+
 let inlineExpanded = false;      // true = showing a part inline (tab/doc), false = showing dashboard
 let currentGroupVersions = [];   // All versions in the current group (for version cards)
 
@@ -72,142 +115,20 @@ export function getCurrentWork() { return currentWork; }
 // ============================================
 
 /**
- * Analyze reading list to detect repeat structures
+ * Timing maps for a loaded OTF, ts-change aware (measure-timing.js):
+ * - visual: what the current display mode shows (original measures in
+ *   compact mode, unrolled reading list otherwise)
+ * - playback: always the unrolled reading list (what TabPlayer follows)
  */
-function analyzeReadingList(readingList) {
-    if (!readingList || readingList.length === 0) {
-        return { repeatSections: [], endings: {}, repeatStartMarkers: new Set(), repeatEndMarkers: new Set() };
-    }
-
-    const repeatStartMarkers = new Set();
-    const repeatEndMarkers = new Set();
-    const endings = {};
-
-    for (let i = 0; i < readingList.length - 1; i++) {
-        const curr = readingList[i];
-        const next = readingList[i + 1];
-
-        const currStart = curr.from_measure;
-        const currEnd = curr.to_measure;
-        const nextStart = next.from_measure;
-        const nextEnd = next.to_measure;
-
-        if (nextStart > currStart && nextStart <= currEnd &&
-            nextEnd < currEnd && nextEnd >= nextStart) {
-            repeatStartMarkers.add(nextStart);
-            repeatEndMarkers.add(nextEnd);
-            for (let m = nextEnd + 1; m <= currEnd; m++) {
-                endings[m] = 1;
-            }
-            const afterRepeat = readingList[i + 2];
-            if (afterRepeat &&
-                afterRepeat.from_measure === currEnd + 1 &&
-                afterRepeat.to_measure === afterRepeat.from_measure) {
-                endings[afterRepeat.from_measure] = 2;
-            }
-        }
-
-        if (nextStart === currStart && nextEnd < currEnd) {
-            repeatStartMarkers.add(currStart);
-            repeatEndMarkers.add(nextEnd);
-            for (let m = nextEnd + 1; m <= currEnd; m++) {
-                endings[m] = 1;
-            }
-            const afterRepeat = readingList[i + 2];
-            if (afterRepeat &&
-                afterRepeat.from_measure === currEnd + 1 &&
-                afterRepeat.to_measure === afterRepeat.from_measure) {
-                endings[afterRepeat.from_measure] = 2;
-            }
-        }
-
-        if (nextStart === currStart && nextEnd > currEnd) {
-            repeatStartMarkers.add(currStart);
-            repeatEndMarkers.add(currEnd);
-        }
-    }
-
-    return { repeatStartMarkers, repeatEndMarkers, endings };
-}
-
-/**
- * Build a tick mapping for compact mode visualization
- */
-function buildTickMapping(readingList, ticksPerMeasure) {
-    if (!readingList || readingList.length === 0) {
-        return (tick) => tick;
-    }
-
-    const measureMapping = [];
-    let expandedMeasure = 1;
-
-    for (const range of readingList) {
-        for (let m = range.from_measure; m <= range.to_measure; m++) {
-            measureMapping.push({ expanded: expandedMeasure, original: m });
-            expandedMeasure++;
-        }
-    }
-
-    return (playbackTick) => {
-        const expandedMeasureNum = Math.floor(playbackTick / ticksPerMeasure) + 1;
-        const tickInMeasure = playbackTick % ticksPerMeasure;
-        const mapping = measureMapping.find(m => m.expanded === expandedMeasureNum);
-        if (!mapping) return playbackTick;
-        return (mapping.original - 1) * ticksPerMeasure + tickInMeasure;
-    };
-}
-
-/**
- * Expand notation according to reading list (repeat structure)
- */
-function expandNotationWithReadingList(notation, readingList) {
-    if (!readingList || readingList.length === 0) {
-        return notation;
-    }
-
-    const measureMap = {};
-    for (const entry of notation) {
-        measureMap[entry.measure] = entry;
-    }
-
-    const expanded = [];
-    let newMeasureNum = 1;
-
-    for (const range of readingList) {
-        for (let m = range.from_measure; m <= range.to_measure; m++) {
-            const original = measureMap[m];
-            if (original) {
-                expanded.push({
-                    ...original,
-                    measure: newMeasureNum,
-                    originalMeasure: m
-                });
-                newMeasureNum++;
-            }
-        }
-    }
-
-    return expanded;
-}
-
-/**
- * Prepare compact notation with repeat markers
- */
-function prepareCompactNotation(notation, readingList) {
-    if (!readingList || readingList.length === 0) {
-        return notation;
-    }
-
-    const analysis = analyzeReadingList(readingList);
-
-    return notation.map(measure => {
-        const m = measure.measure;
-        const enhanced = { ...measure };
-        if (analysis.repeatStartMarkers.has(m)) enhanced.repeatStart = true;
-        if (analysis.repeatEndMarkers.has(m)) enhanced.repeatEnd = true;
-        if (analysis.endings[m]) enhanced.ending = analysis.endings[m];
-        return enhanced;
-    });
+function buildOtfTimings(otf, compact) {
+    const measureTiming = measureTimingFromOtf(otf, { feel: twoFeelMode ? 'two' : null });
+    const maxMeasure = maxMeasureIn(otf.notation);
+    const playbackTimeline = readingListTimeline(otf.reading_list, maxMeasure);
+    const playback = new TimelineTiming(measureTiming, playbackTimeline);
+    const visual = compact
+        ? new TimelineTiming(measureTiming, identityTimeline(maxMeasure))
+        : playback;
+    return { measureTiming, playbackTimeline, playback, visual };
 }
 
 // ============================================
@@ -349,11 +270,10 @@ export async function openWork(workId, options = {}) {
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
 
+    // Reset tablature state for new work
+    activeTrackView = null;
     setLoadedTablature(null);
-    if (tablaturePlayer) {
-        tablaturePlayer.stop();
-        setTablaturePlayer(null);
-    }
+    teardownTablatureView();
 
     currentWork = song;
     availableParts = buildPartsFromIndex(song);
@@ -446,6 +366,14 @@ export function renderWorkView() {
     if (!container || !currentWork) return;
 
     container.innerHTML = '';
+
+    // The header ✏️ Edit edits chordpro lead sheets; on a tablature part
+    // it would open an empty song editor. Hide it — the tab controls row
+    // has its own Edit. (song-view restores it when a song renders.)
+    const editSongBtn = document.getElementById('edit-song-btn');
+    if (editSongBtn) {
+        editSongBtn.style.display = partUsesSongActions(activePart) ? '' : 'none';
+    }
 
     // Focus header (shown only in fullscreen mode via CSS)
     if (inlineExpanded) {
@@ -1008,9 +936,17 @@ function renderInlineExpansion(part, container) {
     });
     container.appendChild(backBtn);
 
-    // Controls container (tab controls go here, hidden by default — toggled via Controls button)
+    // Controls container (tab controls go here, toggled via Controls button).
+    // Tablature parts default the controls OPEN — Play/tempo/Edit hidden
+    // behind a collapsed ⚙️ was the #1 "where's the play button?" complaint.
+    // An explicit user toggle (stored value) is respected either way.
+    const storedControls = localStorage.getItem('workControlsCollapsed');
+    const isTabPart = part?.type === 'tablature';
+    const controlsCollapsed = storedControls === null
+        ? !isTabPart                       // default: open for tabs, closed for lyrics
+        : storedControls !== 'false';
     const controlsArea = document.createElement('div');
-    controlsArea.className = 'work-inline-controls hidden';
+    controlsArea.className = `work-inline-controls${controlsCollapsed ? ' hidden' : ''}`;
     controlsArea.id = 'work-controls-content';
     container.appendChild(controlsArea);
 
@@ -1685,9 +1621,15 @@ async function renderTablaturePart(part, container) {
     container.innerHTML = '<div class="loading">Loading tablature...</div>';
 
     try {
+        // Load OTF data. cache: 'no-cache' = revalidate with the server
+        // (304 if unchanged) — Chrome's heuristic freshness otherwise
+        // serves long-unchanged tab files for WEEKS after they are
+        // re-published (a January parse of cherokee-shuffle-a survived
+        // multiple hard reloads and rendered 2/2 left-packed measures
+        // over the corrected data).
         let otf = loadedTablature;
         if (!otf || otf._partFile !== part.file) {
-            const response = await fetch(part.file);
+            const response = await fetch(part.file, { cache: 'no-cache' });
             if (!response.ok) throw new Error(`Failed to load ${part.file}`);
             otf = await response.json();
             otf._partFile = part.file;
@@ -1695,7 +1637,7 @@ async function renderTablaturePart(part, container) {
         }
 
         container.innerHTML = '';
-        trackRenderers = {};
+        destroyTrackRenderers(); // disconnect old theme/resize observers
 
         // Inject controls into the inline controls area
         const controls = createTablatureControls(otf, part);
@@ -1707,6 +1649,17 @@ async function renderTablaturePart(part, container) {
             container.appendChild(controls);
         }
 
+        // Track VIEW tabs (which staff you see; audio = mixer/Solo).
+        // One visible track at a time kills the nested-scroll fights and
+        // the 'cursors in different places' confusion — plus [All] for
+        // the stacked view. (True score view — every instrument's same
+        // measures aligned in one system — needs cross-track measure
+        // widths and is queued in the handoff.)
+        const trackTabsBar = document.createElement('div');
+        trackTabsBar.className = 'track-view-tabs';
+        container.appendChild(trackTabsBar);
+
+        // Create container for all tracks
         const allTracksContainer = document.createElement('div');
         allTracksContainer.className = 'tablature-all-tracks';
         container.appendChild(allTracksContainer);
@@ -1714,6 +1667,10 @@ async function renderTablaturePart(part, container) {
         const timeSignature = otf.metadata?.time_signature || '4/4';
         const ticksPerBeat = otf.timing?.ticks_per_beat || 480;
 
+        // Ts-change-aware timing for the current display mode
+        const timings = buildOtfTimings(otf, showRepeatsCompact && otf.reading_list?.length > 0);
+
+        // Determine which track is the "lead" (matches part instrument, or first track)
         let leadTrackId = otf.tracks[0]?.id;
         if (part.instrument && otf.tracks.length > 1) {
             const matchingTrack = otf.tracks.find(t =>
@@ -1736,8 +1693,8 @@ async function renderTablaturePart(part, container) {
 
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
                 notation = prepareCompactNotation(notation, otf.reading_list);
-            } else {
-                notation = expandNotationWithReadingList(notation, otf.reading_list);
+            } else if (otf.reading_list && otf.reading_list.length > 0) {
+                notation = expandNotation(notation, timings.playbackTimeline);
             }
             const icon = INSTRUMENT_ICONS[track.instrument] ||
                         (track.id.includes('banjo') ? '🪕' :
@@ -1748,10 +1705,13 @@ async function renderTablaturePart(part, container) {
             const trackSection = document.createElement('div');
             trackSection.className = `tablature-track-section${isLead ? '' : ' backup-track'}`;
             trackSection.dataset.trackId = track.id;
-            trackSection.style.display = isLead ? 'block' : 'none';
+            trackSection.style.display =
+                (activeTrackView === 'all' || (activeTrackView ?? leadTrackId) === track.id)
+                    ? 'block' : 'none';
 
-            // TabRenderer renders its own instrument/tuning header (track-info),
-            // so we skip adding a separate track header here to avoid duplication.
+            // (No separate section header — the renderer's own track-info
+            // row carries icon/name/tuning, and Solo is injected onto it
+            // by setupTablaturePlayer. One label layer per track.)
 
             const tabContainer = document.createElement('div');
             tabContainer.className = 'tablature-container';
@@ -1760,36 +1720,64 @@ async function renderTablaturePart(part, container) {
             allTracksContainer.appendChild(trackSection);
 
             const renderer = new TabRenderer(tabContainer);
-            renderer.render(track, notation, ticksPerBeat, timeSignature);
+            renderer.render(track, notation, ticksPerBeat, timeSignature, timings.visual);
             trackRenderers[track.id] = renderer;
         }
 
-        // Wire up track visibility toggles
+        // Populate the view tabs from the tracks that actually rendered
+        const renderedIds = Object.keys(trackRenderers);
+        if (renderedIds.length > 1) {
+            const current = activeTrackView ?? leadTrackId;
+            trackTabsBar.innerHTML = [
+                ...renderedIds.map(id => `
+                    <button class="track-view-tab${id === current ? ' active' : ''}"
+                            data-view="${id}">${escapeHtml(id)}</button>`),
+                `<button class="track-view-tab${current === 'all' ? ' active' : ''}"
+                         data-view="all">All</button>`,
+            ].join('');
+            trackTabsBar.addEventListener('click', (e) => {
+                const btn = e.target.closest('.track-view-tab');
+                if (!btn) return;
+                activeTrackView = btn.dataset.view;
+                trackTabsBar.querySelectorAll('.track-view-tab').forEach(b =>
+                    b.classList.toggle('active', b === btn));
+                for (const section of allTracksContainer.querySelectorAll('.tablature-track-section')) {
+                    section.style.display =
+                        (activeTrackView === 'all' || section.dataset.trackId === activeTrackView)
+                            ? 'block' : 'none';
+                }
+            });
+        } else {
+            trackTabsBar.remove();
+        }
+
+        // Track checkboxes control AUDIO only — the view tabs decide
+        // what you SEE. Default: the lead track sounds. Toggles apply
+        // LIVE during playback (per-track gain buses in TabPlayer).
         const trackCheckboxes = controls.querySelectorAll('.track-checkbox');
         trackCheckboxes.forEach(checkbox => {
-            const trackId = checkbox.dataset.trackId;
-            const trackSection = allTracksContainer.querySelector(`[data-track-id="${trackId}"]`);
-            if (trackSection) {
-                checkbox.checked = trackSection.style.display !== 'none';
-            }
-
+            checkbox.checked = checkbox.dataset.trackId === leadTrackId;
             checkbox.addEventListener('change', () => {
-                const section = allTracksContainer.querySelector(`[data-track-id="${trackId}"]`);
-                if (section) {
-                    section.style.display = checkbox.checked ? 'block' : 'none';
-                }
+                tablaturePlayer?.setTrackEnabled?.(
+                    checkbox.dataset.trackId, checkbox.checked);
             });
         });
 
-        // Wire up repeat toggle
-        const repeatCheckbox = controls.querySelector('.tab-repeat-checkbox');
-        const repeatLabel = controls.querySelector('.tab-repeat-label');
-        if (repeatCheckbox) {
-            repeatCheckbox.addEventListener('change', () => {
-                showRepeatsCompact = repeatCheckbox.checked;
-                if (repeatLabel) {
-                    repeatLabel.textContent = showRepeatsCompact ? 'Repeats' : 'Unrolled';
-                }
+        // Wire up repeat notation select (re-renders with repeat signs
+        // or unrolled)
+        const repeatSelect = controls.querySelector('.tab-repeat-select');
+        if (repeatSelect) {
+            repeatSelect.addEventListener('change', () => {
+                showRepeatsCompact = repeatSelect.value === 'repeats';
+                renderTablaturePart(part, container);
+            });
+        }
+
+        // Wire up two-feel toggle (cut-time presentation, re-render)
+        const feelSelect = controls.querySelector('.tab-feel-select');
+        if (feelSelect) {
+            feelSelect.addEventListener('change', () => {
+                twoFeelMode = feelSelect.value === 'two';
                 renderTablaturePart(part, container);
             });
         }
@@ -1797,7 +1785,13 @@ async function renderTablaturePart(part, container) {
         const leadRenderer = trackRenderers[leadTrackId] || Object.values(trackRenderers)[0];
         setupTablaturePlayer(otf, controls, leadRenderer);
 
-        // Attribution for Banjo Hangout tabs
+        // Wire up the Edit button — swap the rendered tab for an edit session
+        const editBtn = controls.querySelector('.tab-edit-btn');
+        if (editBtn) {
+            editBtn.addEventListener('click', () => enterTabEditMode(otf, part, container));
+        }
+
+        // Add attribution section for Banjo Hangout tabs
         if (part.source === 'banjo-hangout') {
             const attribution = document.createElement('div');
             attribution.className = 'tab-attribution';
@@ -1827,15 +1821,78 @@ async function renderTablaturePart(part, container) {
 
     } catch (e) {
         console.error('Error loading tablature:', e);
-        container.innerHTML = `<div class="error">Failed to load tablature: ${e.message}</div>`;
+        container.innerHTML = `<div class="error">Failed to load tablature: ${escapeHtml(e.message)}</div>`;
     }
+}
+
+/**
+ * Enter edit mode for a tablature part: mount the OTF editor over the
+ * rendered tab. Done/Ctrl+S applies the edited document back to the
+ * view (in memory) and re-renders; Cancel restores the original.
+ * Editor + session code are lazy-imported so readers never pay for it.
+ */
+async function enterTabEditMode(otf, part, container) {
+    // Stop playback before handing the document to the editor
+    if (tablaturePlayer?.isPlaying) {
+        tablaturePlayer.stop();
+    }
+
+    const [{ OTFEditor }, { createTabEditSession, resolveEditTrackId }, { submitTab }] = await Promise.all([
+        import('./otf-editor/editor.js'),
+        import('./otf-editor/work-edit.js'),
+        import('./otf-editor/submit-tab.js'),
+    ]);
+
+    // Park the header controls while editing (they drive dead renderers)
+    const controlsContent = document.getElementById('work-controls-content');
+    if (controlsContent) {
+        controlsContent.innerHTML = '<div class="tab-controls"><em>Editing — use the editor bar below. ✓ Done applies your changes, Cancel discards them.</em></div>';
+    }
+
+    // The rendered-view renderers are about to be detached — drop their
+    // observers now; renderTablaturePart rebuilds them on exit.
+    destroyTrackRenderers();
+    container.innerHTML = '';
+    const baseName = (part.file || 'tab').split('/').pop().replace(/\.otf\.json$/, '');
+
+    activeEditSession = createTabEditSession({
+        mount: container,
+        otf,
+        trackId: resolveEditTrackId(otf, part.instrument),
+        filename: `${baseName}-edited`,
+        editorFactory: (opts) => new OTFEditor(opts),
+        onApply: (doc) => {
+            doc._partFile = part.file; // keep the view cache keyed to this part
+            setLoadedTablature(doc);
+        },
+        onExit: () => {
+            activeEditSession = null;
+            renderTablaturePart(part, container);
+        },
+        // Save-back: same human-approved GitHub-issue pipeline as song
+        // corrections — the editor's payoff beyond Download
+        onSubmit: (doc, comment) => submitTab({
+            type: 'tab-correction',
+            otf: doc,
+            title: currentWork?.title || doc.metadata?.title || 'Untitled',
+            instrument: part.instrument || 'banjo',
+            workId: currentWork?.id,
+            comment,
+        }),
+    });
 }
 
 /**
  * Create tablature controls
  */
 function createTablatureControls(otf, part) {
-    const defaultTempo = otf.metadata?.tempo || 100;
+    const quarterBpm = (tempoOverride && tempoOverride.workId === currentWork?.id)
+        ? tempoOverride.quarterBpm
+        : (otf.metadata?.tempo || 100);
+    // Displayed BPM is per BEAT of the current feel: in two feel (cut
+    // time) the beat is a half note, so the same absolute speed shows
+    // as half the number (240 quarters == 120 in cut time).
+    const defaultTempo = Math.round(quarterBpm / (twoFeelMode ? 2 : 1));
     const originalKey = currentWork.key || 'G';
 
     const filteredTracks = otf.tracks.filter(track => {
@@ -1847,7 +1904,7 @@ function createTablatureControls(otf, part) {
 
     const trackMixerHtml = filteredTracks.length > 1 ? `
         <div class="tab-track-mixer">
-            <span class="mixer-label">Tracks:</span>
+            <span class="mixer-label">Sound:</span>
             ${filteredTracks.map(track => {
                 const icon = track.instrument?.includes('banjo') ? '🪕' :
                             track.instrument?.includes('guitar') ? '🎸' :
@@ -1855,10 +1912,11 @@ function createTablatureControls(otf, part) {
                             track.instrument?.includes('bass') ? '🎸' :
                             track.instrument?.includes('fiddle') ? '🎻' : '🎵';
                 const isLead = track.role === 'lead' || track.instrument?.includes('banjo');
-                return `<label class="track-toggle" title="${track.id}">
-                    <input type="checkbox" class="track-checkbox" data-track-id="${track.id}" ${isLead ? 'checked' : ''}>
+                const safeId = escapeHtml(track.id);
+                return `<label class="track-toggle" title="${safeId}">
+                    <input type="checkbox" class="track-checkbox" data-track-id="${safeId}" ${isLead ? 'checked' : ''}>
                     <span class="track-icon">${icon}</span>
-                    <span class="track-name">${track.id}</span>
+                    <span class="track-name">${safeId}</span>
                 </label>`;
             }).join('')}
         </div>
@@ -1866,10 +1924,23 @@ function createTablatureControls(otf, part) {
 
     const hasReadingList = otf.reading_list && otf.reading_list.length > 0;
     const repeatToggleHtml = hasReadingList ? `
-        <label class="tab-repeat-toggle" title="Toggle repeat notation style">
-            <input type="checkbox" class="tab-repeat-checkbox" ${showRepeatsCompact ? 'checked' : ''}>
-            <span class="tab-repeat-label">${showRepeatsCompact ? 'Repeats' : 'Unrolled'}</span>
-        </label>
+        <div class="qc-group">
+            <select class="tab-repeat-select qc-key-btn" title="Repeat notation: unrolled or repeat signs">
+                <option value="unrolled" ${showRepeatsCompact ? '' : 'selected'}>Unrolled</option>
+                <option value="repeats" ${showRepeatsCompact ? 'selected' : ''}>Repeats</option>
+            </select>
+        </div>
+    ` : '';
+
+    // Feel selector (4/4 tunes only): explicit dropdown, no ambiguous
+    // toggle state
+    const feelToggleHtml = (otf.metadata?.time_signature || '4/4') === '4/4' ? `
+        <div class="qc-group">
+            <select class="tab-feel-select qc-key-btn" title="Rhythmic feel: quarter-note pulse or cut time (BPM counts the feel's beat)">
+                <option value="four" ${twoFeelMode ? '' : 'selected'}>Four feel</option>
+                <option value="two" ${twoFeelMode ? 'selected' : ''}>Two feel</option>
+            </select>
+        </div>
     ` : '';
 
     const keyOptions = CHROMATIC_MAJOR_KEYS.map(k => {
@@ -1900,11 +1971,17 @@ function createTablatureControls(otf, part) {
         </div>
         <button class="tab-play-btn qc-toggle-btn">▶ Play</button>
         <button class="tab-stop-btn qc-toggle-btn" disabled>⏹ Stop</button>
+        <button class="tab-edit-btn qc-toggle-btn" title="Edit this tab">✏️ Edit</button>
         <label class="tab-metronome-toggle">
             <input type="checkbox" class="tab-metronome-checkbox">
             <span class="tab-metronome-icon">🥁</span>
         </label>
+        <label class="tab-countin-toggle" title="Count-in before looped phrases">
+            <input type="checkbox" class="tab-countin-checkbox" checked>
+            <span class="tab-countin-label">1·2·3·4</span>
+        </label>
         ${repeatToggleHtml}
+        ${feelToggleHtml}
         <span class="tab-position"></span>
         <span class="tab-capo-indicator"></span>
         ${trackMixerHtml}
@@ -1940,17 +2017,25 @@ function setupTablaturePlayer(otf, controls, renderer) {
     let currentCapo = 0;
     let currentScale = 1.0;
 
-    const timeSignature = otf.metadata?.time_signature || '4/4';
-    const ticksPerBeat = otf.timing?.ticks_per_beat || 480;
-    const beatsPerMeasure = parseInt(timeSignature.split('/')[0], 10) || 4;
-    const ticksPerMeasure = ticksPerBeat * beatsPerMeasure;
-    const tickMapper = showRepeatsCompact
-        ? buildTickMapping(otf.reading_list, ticksPerMeasure)
+    // Map playback ticks to visual ticks for compact mode: playback follows
+    // the unrolled reading list while the display shows written measures.
+    // Ts-change aware on both sides (measure-timing.js).
+    const compact = showRepeatsCompact && otf.reading_list?.length > 0;
+    const timings = buildOtfTimings(otf, compact);
+    const tickMapper = compact
+        ? makePlaybackToVisualMapper(timings.playback, timings.visual)
         : (tick) => tick;
 
-    player.onTick = (absTick) => renderer.updateBeatCursor(tickMapper(absTick));
-    player.onNoteStart = (absTick) => renderer.highlightNote(tickMapper(absTick));
-    player.onNoteEnd = (absTick) => renderer.clearNoteHighlight(tickMapper(absTick));
+    // Playback visualization callbacks (with tick mapping for compact mode).
+    // Fan out to EVERY track's renderer so the cursor runs on all visible
+    // parts; only the lead renderer drives auto-scroll.
+    const eachRenderer = (fn) => {
+        for (const r of Object.values(trackRenderers)) fn(r, r === renderer);
+    };
+    player.onTick = (absTick) => eachRenderer((r, isLead) =>
+        r.updateBeatCursor(tickMapper(absTick), { autoScroll: isLead }));
+    player.onNoteStart = (absTick) => eachRenderer(r => r.highlightNote(tickMapper(absTick)));
+    player.onNoteEnd = (absTick) => eachRenderer(r => r.clearNoteHighlight(tickMapper(absTick)));
 
     const updateSize = (delta) => {
         currentScale = Math.max(0.6, Math.min(1.6, currentScale + delta));
@@ -1972,14 +2057,22 @@ function setupTablaturePlayer(otf, controls, renderer) {
         player.metronomeEnabled = metronomeCheckbox.checked;
     });
 
+    // Tempo controls
+    // No ceiling — bluegrass runs past 240 in cut time. Floor keeps the
+    // scheduler sane.
     const updateTempoButtons = () => {
-        tempoDown.disabled = currentTempo <= 40;
-        tempoUp.disabled = currentTempo >= 280;
+        tempoDown.disabled = currentTempo <= 20;
     };
 
     const setTempo = (val) => {
-        currentTempo = Math.max(40, Math.min(280, val));
+        currentTempo = Math.max(20, Math.round(val));
         tempoDisplay.textContent = currentTempo;
+        // Persist as quarter-note bpm so the feel toggle's re-render can
+        // convert the display while keeping the actual speed.
+        tempoOverride = {
+            workId: currentWork?.id,
+            quarterBpm: currentTempo * (twoFeelMode ? 2 : 1),
+        };
         updateTempoButtons();
     };
 
@@ -2006,17 +2099,26 @@ function setupTablaturePlayer(otf, controls, renderer) {
     keyDown?.addEventListener('click', () => selectKeyByIndex(keySelect.selectedIndex - 1));
     keyUp?.addEventListener('click', () => selectKeyByIndex(keySelect.selectedIndex + 1));
 
+    // Position updates — also SELF-HEAL the play button from player
+    // truth: optimistic UI plus loop restarts and view switches can
+    // desync the label from reality (Mike: 'the play button state is
+    // lost'). While ticks arrive, the player IS playing.
     player.onPositionUpdate = (elapsed, total) => {
         const fmt = (s) => `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
         posEl.textContent = `${fmt(elapsed)} / ${fmt(total)}`;
+        if (!playBtn.classList.contains('playing')) {
+            playBtn.textContent = '⏸ Pause';
+            playBtn.classList.add('playing');
+            stopBtn.disabled = false;
+        }
     };
 
     player.onPlaybackEnd = () => {
-        playBtn.textContent = '▶ Play';
+        playBtn.textContent = armed?.kind === 'loop' ? '▶ Loop' : '▶ Play';
         playBtn.classList.remove('playing');
         stopBtn.disabled = true;
         posEl.textContent = '';
-        renderer.resetPlaybackVisualization();
+        eachRenderer(r => r.resetPlaybackVisualization());
     };
 
     const getEnabledTrackIds = () => {
@@ -2033,19 +2135,149 @@ function setupTablaturePlayer(otf, controls, renderer) {
         return Array.from(checkboxes).map(cb => cb.dataset.trackId);
     };
 
+    // Shared playback entry: the Play button executes whatever is
+    // ARMED (cursor / phrase); nothing plays on click alone.
+    const startPlayback = async (extra = {}) => {
+        if (player.isPlaying) player.stop();
+        playBtn.textContent = '⏸ Pause';
+        playBtn.classList.add('playing');
+        stopBtn.disabled = false;
+        await player.play(otf, {
+            // Player tempo is quarter-note bpm; the displayed number is
+            // per-beat of the feel, so two feel plays twice as fast.
+            tempo: currentTempo * (twoFeelMode ? 2 : 1),
+            transpose: currentCapo,
+            trackIds: getEnabledTrackIds(),
+            feel: twoFeelMode ? 'two' : null,
+            ...extra,
+        });
+        // play() can bail (superseded by a newer call, audio context
+        // blocked) — reconcile the optimistic button with reality
+        if (!player.isPlaying) {
+            playBtn.classList.remove('playing');
+            stopBtn.disabled = true;
+            updatePlayLabel();
+        }
+    };
+
+    // ARM-THEN-PLAY (Mike: clicking/highlighting must not auto-start):
+    // click arms a play cursor at that BEAT; drag arms a whole-measure
+    // phrase for looping (one-measure count-in optional). The Play
+    // button label reflects what's armed; Esc disarms.
+    let armed = null; // {kind:'cursor', tick} | {kind:'loop', ...range}
+    let armedVisual = null; // {trackId, measure, tick} | {trackId, m0, m1}
+    const updatePlayLabel = () => {
+        if (player.isPlaying) return;
+        playBtn.textContent = armed?.kind === 'loop' ? '▶ Loop' : '▶ Play';
+    };
+    const disarm = () => {
+        armed = null;
+        armedVisual = null;
+        eachRenderer(r => r._playbackInteractions?.clearArmed());
+        updatePlayLabel();
+    };
+
+    const countInCheckbox = controls.querySelector('.tab-countin-checkbox');
+    const beatTicks = timings.measureTiming.beatTicksFor
+        ? timings.measureTiming.beatTicksFor(1) : 480;
+    const countInBeatsFor = () => {
+        if (!countInCheckbox?.checked) return 0;
+        return Math.max(1, Math.round(timings.measureTiming.ticksFor(1) / beatTicks));
+    };
+
+    // Solo button rides the renderer's track-info row (the only label
+    // row per track now); re-injected after every renderer re-render.
+    const injectSolo = (r, trackId) => {
+        if (otf.tracks.length < 2) return;
+        const info = r.container?.querySelector('.track-info');
+        if (!info || info.querySelector('.track-solo')) return;
+        const solo = document.createElement('button');
+        solo.className = 'track-solo';
+        solo.textContent = 'Solo';
+        solo.title = 'Hear only this track (click again for all)';
+        solo.addEventListener('click', () => {
+            const boxes = [...controls.querySelectorAll('.track-checkbox')];
+            const soloed = boxes.every(cb =>
+                cb.checked === (cb.dataset.trackId === trackId));
+            for (const cb of boxes) {
+                const want = soloed ? true : cb.dataset.trackId === trackId;
+                if (cb.checked !== want) {
+                    cb.checked = want;
+                    cb.dispatchEvent(new Event('change', { bubbles: true }));
+                }
+            }
+        });
+        info.appendChild(solo);
+    };
+
+    const attachInteractions = (r, trackId) => {
+        injectSolo(r, trackId);
+        r._playbackInteractions?.destroy();
+        r._playbackInteractions = attachTabPlaybackInteractions(r, {
+            beatTicks,
+            onPlayFrom: ({ measure, tick }) => {
+                const t = playbackTickForPoint(
+                    timings.playback, compact, measure, tick);
+                if (t == null) return;
+                armed = { kind: 'cursor', tick: t };
+                armedVisual = { trackId, measure, tick };
+                eachRenderer((other) => {
+                    if (other !== r) other._playbackInteractions?.clearArmed();
+                });
+                updatePlayLabel();
+            },
+            onLoopMeasures: (m0, m1) => {
+                const range = playbackRangeForMeasures(
+                    timings.playback, compact, m0, m1);
+                if (!range) return;
+                armed = { kind: 'loop', ...range };
+                armedVisual = { trackId, m0, m1 };
+                eachRenderer((other) => {
+                    if (other !== r) other._playbackInteractions?.clearArmed();
+                });
+                updatePlayLabel();
+            },
+        });
+        // restore armed visuals after a renderer re-render
+        if (armedVisual?.trackId === trackId) {
+            if (armedVisual.m0 != null) {
+                r._playbackInteractions.highlightMeasures(armedVisual.m0, armedVisual.m1);
+            } else {
+                r._playbackInteractions.armCaretAt(armedVisual.measure, armedVisual.tick);
+            }
+        }
+    };
+    for (const [trackId, r] of Object.entries(trackRenderers)) {
+        attachInteractions(r, trackId);
+        // renderer re-renders (resize, Bravura) rebuild the row SVGs —
+        // reattach so the handlers survive
+        r.onAfterRender = () => attachInteractions(r, trackId);
+    }
+
+    // Esc disarms (one live listener; replaced on re-render)
+    if (workViewEscHandler) document.removeEventListener('keydown', workViewEscHandler);
+    workViewEscHandler = (e) => {
+        if (e.key === 'Escape' && document.contains(controls)) disarm();
+    };
+    document.addEventListener('keydown', workViewEscHandler);
+
+    // Play/stop
     playBtn.addEventListener('click', async () => {
         if (player.isPlaying) {
             player.stop();
-            playBtn.textContent = '▶ Play';
+            updatePlayLabel();
             playBtn.classList.remove('playing');
             stopBtn.disabled = true;
-            renderer.resetPlaybackVisualization();
+            eachRenderer(r => r.resetPlaybackVisualization());
+        } else if (armed?.kind === 'loop') {
+            await startPlayback({
+                startTick: armed.startTick, endTick: armed.endTick,
+                loop: true, countInBeats: countInBeatsFor(),
+            });
+        } else if (armed?.kind === 'cursor') {
+            await startPlayback({ startTick: armed.tick });
         } else {
-            playBtn.textContent = '⏸ Pause';
-            playBtn.classList.add('playing');
-            stopBtn.disabled = false;
-            const trackIds = getEnabledTrackIds();
-            await player.play(otf, { tempo: currentTempo, transpose: currentCapo, trackIds });
+            await startPlayback();
         }
     });
 
@@ -2055,7 +2287,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
         playBtn.classList.remove('playing');
         stopBtn.disabled = true;
         posEl.textContent = '';
-        renderer.resetPlaybackVisualization();
+        eachRenderer(r => r.resetPlaybackVisualization());
     });
 }
 

@@ -107,3 +107,20 @@ export {
     renderAsciiTab,
     copyAsciiTab
 };
+
+// Ts-aware measure math (shared by renderer, player, work-view, editor)
+export {
+    parseTimeSignature,
+    measureTicksFor,
+    MeasureTiming,
+    TimelineTiming,
+    identityTimeline,
+    readingListTimeline,
+    expandNotation,
+    makePlaybackToVisualMapper,
+    buildMetronomeSchedule,
+    maxMeasureIn,
+    measureTimingFromOtf,
+    analyzeReadingList,
+    prepareCompactNotation,
+} from './measure-timing.js';

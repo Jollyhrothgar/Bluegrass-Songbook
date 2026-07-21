@@ -1,0 +1,20 @@
+id: little-rabbit
+title: Little Rabbit
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+- Clawhammer
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '19852'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=19852
+    author: Jollyhrothgar
+    imported_at: '2026-07-08'

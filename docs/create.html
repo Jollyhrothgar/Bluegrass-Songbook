@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Tab — Bluegrass Book</title>
+    <style>
+        :root { --bg: #fff; --text: #111; --accent: #007bff; --border: #ddd; }
+        body { font-family: system-ui, sans-serif; margin: 0; color: var(--text); }
+        header { padding: 12px 20px; border-bottom: 1px solid var(--border);
+                 display: flex; align-items: center; gap: 16px; }
+        header a { color: var(--accent); text-decoration: none; }
+        h1 { font-size: 18px; margin: 0; }
+        main { padding: 20px; }
+        .create-form { max-width: 560px; display: grid; gap: 14px; }
+        .create-form label { display: grid; gap: 4px; font-size: 14px; }
+        .create-form input, .create-form select { padding: 6px 8px; font-size: 14px; }
+        .instruments { display: grid; gap: 6px; border: 1px solid var(--border);
+                       border-radius: 6px; padding: 10px; }
+        .instruments label { display: flex; gap: 8px; align-items: center; font-size: 14px; }
+        .row { display: flex; gap: 12px; }
+        .row label { flex: 1; }
+        button.primary { padding: 10px 18px; font-size: 15px; background: var(--accent);
+                         color: #fff; border: 0; border-radius: 6px; cursor: pointer; }
+        .draft-banner { background: #fff8e1; border: 1px solid #e6d9a8; padding: 10px 14px;
+                        border-radius: 6px; margin-bottom: 16px; display: flex;
+                        gap: 12px; align-items: center; max-width: 560px; }
+        .editor-bar { display: flex; justify-content: space-between; align-items: center;
+                      margin-bottom: 10px; gap: 12px; flex-wrap: wrap; }
+        #editor-host { min-height: 400px; }
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Create a Tab</h1>
+        <a href="index.html">← Bluegrass Book</a>
+    </header>
+    <main>
+        <div id="draft-banner" class="draft-banner hidden">
+            <span>You have an unsaved draft (<span id="draft-when"></span>).</span>
+            <button id="draft-resume">Resume</button>
+            <button id="draft-discard">Discard</button>
+        </div>
+
+        <form id="create-form" class="create-form">
+            <label>Title
+                <input id="f-title" type="text" placeholder="Untitled" autofocus>
+            </label>
+            <div class="instruments" id="f-instruments"></div>
+            <div class="row">
+                <label>Time signature
+                    <select id="f-ts">
+                        <option>4/4</option><option>3/4</option><option>2/4</option>
+                        <option>2/2</option><option>6/8</option>
+                    </select>
+                </label>
+                <label>Tempo (BPM)
+                    <input id="f-tempo" type="number" value="120" min="40" max="280">
+                </label>
+                <label>Measures
+                    <input id="f-measures" type="number" value="16" min="1" max="128">
+                </label>
+            </div>
+            <button type="submit" class="primary">Create tab</button>
+        </form>
+
+        <div id="editor-wrap" class="hidden">
+            <div class="editor-bar">
+                <strong id="editor-title"></strong>
+                <span>
+                    <button id="btn-submit">🚀 Submit for review</button>
+                    <button id="btn-download">⬇ Download OTF</button>
+                    <button id="btn-new">Start over</button>
+                    <span id="submit-status"></span>
+                </span>
+            </div>
+            <div id="editor-host"></div>
+        </div>
+    </main>
+
+    <script type="module">
+        import { OTFEditor } from './js/otf-editor/editor.js';
+        import {
+            INSTRUMENT_CHOICES, buildNewTab,
+            saveDraft, loadDraft, clearDraft,
+        } from './js/otf-editor/create-tab.js';
+        import { submitTab } from './js/otf-editor/submit-tab.js';
+
+        const $ = (id) => document.getElementById(id);
+
+        // Instrument checkboxes
+        for (const [i, inst] of INSTRUMENT_CHOICES.entries()) {
+            const label = document.createElement('label');
+            label.innerHTML = `<input type="checkbox" value="${inst.value}"
+                ${i === 0 ? 'checked' : ''}> ${inst.label}`;
+            $('f-instruments').appendChild(label);
+        }
+
+        let editor = null;
+
+        function openEditor(otf) {
+            $('create-form').classList.add('hidden');
+            $('draft-banner').classList.add('hidden');
+            $('editor-wrap').classList.remove('hidden');
+            $('editor-title').textContent = otf.metadata?.title || 'Untitled';
+            editor = new OTFEditor({
+                container: $('editor-host'),
+                otf,
+                trackId: otf.tracks[0]?.id,
+                onChange: (doc) => saveDraft(doc),
+            });
+        }
+
+        $('create-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const instruments = [...document.querySelectorAll('#f-instruments input:checked')]
+                .map(cb => cb.value);
+            const otf = buildNewTab({
+                title: $('f-title').value,
+                instruments,
+                timeSignature: $('f-ts').value,
+                tempo: $('f-tempo').value,
+                measures: $('f-measures').value,
+            });
+            saveDraft(otf);
+            openEditor(otf);
+        });
+
+        $('btn-download').addEventListener('click', () => editor?.download());
+        $('btn-submit').addEventListener('click', async () => {
+            if (!editor) return;
+            const status = $('submit-status');
+            status.textContent = 'Submitting…';
+            try {
+                const doc = editor.save();
+                const result = await submitTab({
+                    type: 'tab-submission',
+                    otf: doc,
+                    title: doc.metadata?.title || 'Untitled',
+                    // instrument, not track id: duplicate instruments get
+                    // deduped ids like 5-string-banjo-2, which would leak
+                    // into the published filename
+                    instrument: doc.tracks[0]?.instrument || doc.tracks[0]?.id || 'banjo',
+                });
+                // DOM construction, not innerHTML: the URL comes back
+                // from a network response
+                status.textContent = '';
+                if (result?.prUrl && /^https:\/\/github\.com\//.test(result.prUrl)) {
+                    status.append('Submitted! ');
+                    const a = document.createElement('a');
+                    a.href = result.prUrl;
+                    a.target = '_blank';
+                    a.rel = 'noopener';
+                    a.textContent = `PR #${Number(result.prNumber) || ''}`;
+                    status.append(a, ' — it goes live once merged.');
+                } else {
+                    status.textContent = 'Submitted for review!';
+                }
+                clearDraft();
+            } catch (e) {
+                status.textContent = `Failed: ${e.message}`;
+            }
+        });
+        $('btn-new').addEventListener('click', () => {
+            if (!confirm('Discard this tab and start over?')) return;
+            clearDraft();
+            editor?.destroy();
+            editor = null;
+            $('editor-wrap').classList.add('hidden');
+            $('create-form').classList.remove('hidden');
+        });
+
+        // Draft restore
+        const draft = loadDraft();
+        if (draft) {
+            $('draft-when').textContent = new Date(draft.savedAt).toLocaleString();
+            $('draft-banner').classList.remove('hidden');
+            $('draft-resume').addEventListener('click', () => openEditor(draft.otf));
+            $('draft-discard').addEventListener('click', () => {
+                clearDraft();
+                $('draft-banner').classList.add('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
