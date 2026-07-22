@@ -55,32 +55,23 @@ test.describe('Print Button', () => {
 
 test.describe('Copy Functionality', () => {
     test('copy dropdown shows options', async ({ page }) => {
-        // Navigate directly to a known song
-        await page.goto('/#work/blue-moon-of-kentucky');
+        // Navigate directly to a known song (the old blue-moon-of-kentucky
+        // slug no longer resolves; the id is blue-moon-of-kentucky-1)
+        await page.goto('/#song/blue-moon-of-kentucky-1');
         await page.waitForTimeout(1000);
 
         const songView = page.locator('#song-view:not(.hidden)');
-        const versionPicker = page.locator('#version-modal:not(.hidden)');
+        await expect(songView).toBeVisible({ timeout: 5000 });
 
-        await expect(songView.or(versionPicker)).toBeVisible({ timeout: 5000 });
+        // Copy options live in the export dropdown now
+        const exportBtn = page.locator('#export-btn');
+        await expect(exportBtn).toBeVisible();
+        await exportBtn.click();
 
-        // If version picker appeared, select first version
-        if (await versionPicker.isVisible()) {
-            await page.locator('.version-item .version-info').first().click();
-            await expect(songView).toBeVisible({ timeout: 3000 });
-        }
-
-        // Click copy button to show dropdown
-        const copyBtn = page.locator('#copy-btn');
-        if (await copyBtn.isVisible()) {
-            await copyBtn.click();
-
-            const copyDropdown = page.locator('#copy-dropdown');
-            await expect(copyDropdown).toBeVisible();
-
-            // Should have copy options
-            await expect(copyDropdown).toContainText(/ChordPro|Text/i);
-        }
+        const exportDropdown = page.locator('#export-dropdown');
+        await expect(exportDropdown).toBeVisible();
+        await expect(exportDropdown.locator('[data-action="copy-chordpro"]')).toBeVisible();
+        await expect(exportDropdown).toContainText(/ChordPro|Text/i);
     });
 
     test('copy as ChordPro option available', async ({ page, context }) => {
@@ -263,8 +254,8 @@ test.describe('List Print', () => {
 
         await page.waitForTimeout(500);
 
-        // Print list button should be visible
-        const printListBtn = page.locator('#print-list-btn');
+        // Print button now lives in the list header bar
+        const printListBtn = page.locator('#list-print-btn');
         await expect(printListBtn).toBeVisible();
     });
 

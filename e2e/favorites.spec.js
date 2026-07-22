@@ -17,6 +17,9 @@ test.describe('Favorites', () => {
         // Go directly to search view (homepage is now landing page)
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
     });
 
     test('favorites view shows empty state initially', async ({ page }) => {
@@ -49,7 +52,7 @@ test.describe('Favorites', () => {
         await page.locator('#nav-favorites').click();
 
         // Should have 1 favorite (text format: "Favorites: 1 song")
-        await expect(page.locator('#search-stats')).toContainText('1 song');
+        await expect(page.locator('#list-header-count')).toContainText('1 song');
     });
 
     test('favorites persist across page reload', async ({ page }) => {
@@ -69,13 +72,16 @@ test.describe('Favorites', () => {
         // Reload page (go back to search view since reload may reset to landing)
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
 
         // Navigate to favorites via sidebar
         await openSidebar(page);
         await page.locator('#nav-favorites').click();
 
         // Favorite should still be there
-        await expect(page.locator('#search-stats')).toContainText('1 song');
+        await expect(page.locator('#list-header-count')).toContainText('1 song');
     });
 
     test('removing from favorites works', async ({ page }) => {
@@ -92,7 +98,7 @@ test.describe('Favorites', () => {
         // Go to favorites via sidebar
         await openSidebar(page);
         await page.locator('#nav-favorites').click();
-        await expect(page.locator('#search-stats')).toContainText('1 song');
+        await expect(page.locator('#list-header-count')).toContainText('1 song');
 
         // Open list picker on the favorite
         await page.locator('.result-list-btn').first().click();
@@ -152,6 +158,9 @@ test.describe('Lists', () => {
         // Go directly to search view (homepage is now landing page)
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
     });
 
     test('list picker shows favorites option', async ({ page }) => {
@@ -191,6 +200,9 @@ test.describe('Song in Favorites', () => {
         // Go directly to search view (homepage is now landing page)
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
 
         // Add a favorite
         await page.fill('#search-input', 'salty dog');

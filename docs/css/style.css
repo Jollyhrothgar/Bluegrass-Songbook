@@ -2772,6 +2772,20 @@ h1 {
     padding: 2rem;
 }
 
+/* Dead-link landing (unknown #song/#work slug) */
+.not-found {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 2rem;
+}
+
+.not-found-home-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
 /* Modal */
 .modal {
     position: fixed;

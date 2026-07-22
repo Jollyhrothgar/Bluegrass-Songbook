@@ -74,6 +74,9 @@ test.describe('Empty States', () => {
         });
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
 
         // Open sidebar and go to favorites
         await page.locator('#hamburger-btn').click();
@@ -91,6 +94,9 @@ test.describe('Empty States', () => {
         });
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
 
         // Search for a song
         const input = page.locator('#search-input');
@@ -111,7 +117,7 @@ test.describe('Empty States', () => {
         await page.waitForTimeout(500);
 
         // Should show 1 song
-        await expect(page.locator('#search-stats')).toContainText('1');
+        await expect(page.locator('#list-header-count')).toContainText('1');
     });
 });
 

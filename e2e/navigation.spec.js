@@ -104,6 +104,9 @@ test.describe('History Navigation', () => {
         // Start at search view directly
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index so history entries are pushed against a
+        // settled app (back/forward races the post-load render otherwise)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
 
         await page.fill('#search-input', 'mountain dew');
         await page.waitForTimeout(300);
@@ -165,8 +168,11 @@ test.describe('Sidebar Navigation', () => {
     });
 
     test('add song nav works', async ({ page }) => {
-        await page.goto('/');
-        await page.waitForSelector('#hamburger-btn');
+        await page.goto('/#search');
+        await page.waitForSelector('#search-input');
+        // Wait for the index to load so the post-load render can't stomp
+        // the add-song view we navigate to
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
 
         // Open sidebar first
         await openSidebar(page);

@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Version Picker', () => {
-    test('clicking song with multiple versions opens version picker', async ({ page }) => {
+    test('clicking song with multiple versions opens content with a versions back-link', async ({ page }) => {
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
 
@@ -13,13 +13,21 @@ test.describe('Version Picker', () => {
         await page.waitForTimeout(500);
         await page.waitForSelector('.result-item');
 
-        // Click on a result that shows "X versions" badge
+        // Click on a result that shows "X versions" badge. The redesigned
+        // flow opens the best version DIRECTLY (no modal); the version
+        // chooser is reachable via the "← N versions" back button, which
+        // lands on the work view's version cards.
         const resultWithVersions = page.locator('.result-item:has(.version-badge)').first();
         if (await resultWithVersions.isVisible()) {
             await resultWithVersions.click();
 
-            // Version picker modal should appear (use .first() for strict mode)
-            await expect(page.locator('#version-modal:not(.hidden)').first()).toBeVisible();
+            await expect(page.locator('#song-view:not(.hidden)')).toBeVisible();
+            const backBtn = page.locator('.back-to-versions-btn');
+            await expect(backBtn).toBeVisible();
+            await expect(backBtn).toContainText(/\d+ versions/);
+
+            await backBtn.click();
+            await expect(page.locator('.version-card').first()).toBeVisible();
         }
     });
 

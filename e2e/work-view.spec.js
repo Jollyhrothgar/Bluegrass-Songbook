@@ -23,7 +23,8 @@ async function expandControls(page) {
 
 test.describe('WorkView - Tablature', () => {
     test('opens work with tablature via URL', async ({ page }) => {
-        // Navigate directly to a work with tablature
+        // Navigate directly to a work with tablature; #song/ shows the
+        // lead sheet view (the work also has a mandolin tab part)
         await page.goto('/#song/foggy-mountain-breakdown');
         await page.waitForTimeout(1000);
 
@@ -35,16 +36,19 @@ test.describe('WorkView - Tablature', () => {
     });
 
     test('displays tablature container for tab-only works', async ({ page }) => {
-        await page.goto('/#work/angeline-the-baker');
-        await page.locator('.tablature-container').waitFor();
+        // Legacy slug on purpose: angeline-the-baker redirects to
+        // angeline-baker (URL-stability promise) and /banjo expands the part.
+        // A bare #work/ URL shows the dashboard; the part deep link shows tab.
+        await page.goto('/#work/angeline-the-baker/banjo');
+        await page.locator('.tablature-container').first().waitFor();
 
         // Should have tablature container
-        await expect(page.locator('.tablature-container')).toBeVisible();
+        await expect(page.locator('.tablature-container').first()).toBeVisible();
     });
 
     test('tablature renders stave rows with notes', async ({ page }) => {
-        await page.goto('/#song/foggy-mountain-breakdown');
-        await page.locator('.tablature-container').waitFor();
+        await page.goto('/#work/foggy-mountain-breakdown/mandolin');
+        await page.locator('.tablature-container').first().waitFor();
 
         // Should have at least one row of tab
         const staveRows = page.locator('.stave-row');
@@ -58,12 +62,12 @@ test.describe('WorkView - Tablature', () => {
     });
 
     test('work URL loads tablature directly', async ({ page }) => {
-        // angeline-the-baker is a tab-only work
-        await page.goto('/#work/angeline-the-baker');
-        await page.locator('.tablature-container').waitFor();
+        // angeline-baker is a tab-only work; part deep link expands the banjo tab
+        await page.goto('/#work/angeline-baker/banjo');
+        await page.locator('.tablature-container').first().waitFor();
 
         // Tablature should be visible
-        await expect(page.locator('.tablature-container')).toBeVisible();
+        await expect(page.locator('.tablature-container').first()).toBeVisible();
 
         // Expand controls to access playback controls
         await expandControls(page);
@@ -71,8 +75,8 @@ test.describe('WorkView - Tablature', () => {
     });
 
     test('tablature controls are present', async ({ page }) => {
-        await page.goto('/#song/foggy-mountain-breakdown');
-        await page.waitForTimeout(1000);
+        await page.goto('/#work/foggy-mountain-breakdown/mandolin');
+        await page.locator('.tablature-container').first().waitFor();
 
         // Expand controls disclosure
         await expandControls(page);
@@ -88,8 +92,8 @@ test.describe('WorkView - Tablature', () => {
     });
 
     test('tempo controls adjust tempo value', async ({ page }) => {
-        await page.goto('/#song/foggy-mountain-breakdown');
-        await page.waitForTimeout(1000);
+        await page.goto('/#work/foggy-mountain-breakdown/mandolin');
+        await page.locator('.tablature-container').first().waitFor();
 
         // Expand controls disclosure
         await expandControls(page);
@@ -113,8 +117,8 @@ test.describe('WorkView - Tablature', () => {
     });
 
     test('metronome toggle exists and is clickable', async ({ page }) => {
-        await page.goto('/#song/foggy-mountain-breakdown');
-        await page.waitForTimeout(1000);
+        await page.goto('/#work/foggy-mountain-breakdown/mandolin');
+        await page.locator('.tablature-container').first().waitFor();
 
         // Expand controls disclosure
         await expandControls(page);
@@ -136,8 +140,8 @@ test.describe('WorkView - Tablature', () => {
     });
 
     test('key selector shows capo indicator', async ({ page }) => {
-        await page.goto('/#song/foggy-mountain-breakdown');
-        await page.waitForTimeout(1000);
+        await page.goto('/#work/foggy-mountain-breakdown/mandolin');
+        await page.locator('.tablature-container').first().waitFor();
 
         const keySelect = page.locator('.tab-key-select');
         if (await keySelect.isVisible()) {
@@ -190,8 +194,8 @@ test.describe('WorkView - Part Selector', () => {
 
 test.describe('WorkView - Tablature Playback', () => {
     test('play button toggles to pause state', async ({ page }) => {
-        await page.goto('/#song/foggy-mountain-breakdown');
-        await page.waitForTimeout(1000);
+        await page.goto('/#work/foggy-mountain-breakdown/mandolin');
+        await page.locator('.tablature-container').first().waitFor();
 
         // Expand controls disclosure
         await expandControls(page);
@@ -211,8 +215,8 @@ test.describe('WorkView - Tablature Playback', () => {
     });
 
     test('stop button resets to initial state', async ({ page }) => {
-        await page.goto('/#song/foggy-mountain-breakdown');
-        await page.waitForTimeout(1000);
+        await page.goto('/#work/foggy-mountain-breakdown/mandolin');
+        await page.locator('.tablature-container').first().waitFor();
 
         // Expand controls disclosure
         await expandControls(page);

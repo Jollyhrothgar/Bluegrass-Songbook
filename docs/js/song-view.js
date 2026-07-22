@@ -1581,36 +1581,22 @@ function setupAbcControlListeners(song, chordpro, abcContent) {
         });
     }
 
-    // ABC tempo controls
+    // ABC tempo controls. The display is a read-only label in the quick
+    // controls bar (#abc-tempo-label); the legacy #abc-speed-display input
+    // is long gone, so binding must not depend on it.
     const abcSpeedDecrease = document.getElementById('abc-speed-decrease');
     const abcSpeedIncrease = document.getElementById('abc-speed-increase');
-    const abcSpeedDisplay = document.getElementById('abc-speed-display');
-    if (abcSpeedDecrease && abcSpeedIncrease && abcSpeedDisplay) {
-        abcSpeedDecrease.addEventListener('click', () => {
-            if (abcTempoBpm > 60) {
-                setAbcTempoBpm(abcTempoBpm - 10);
-                abcSpeedDisplay.value = abcTempoBpm;
-                abcSpeedDecrease.disabled = abcTempoBpm <= 60;
-                abcSpeedIncrease.disabled = abcTempoBpm >= 240;
-            }
-        });
-        abcSpeedIncrease.addEventListener('click', () => {
-            if (abcTempoBpm < 240) {
-                setAbcTempoBpm(abcTempoBpm + 10);
-                abcSpeedDisplay.value = abcTempoBpm;
-                abcSpeedDecrease.disabled = abcTempoBpm <= 60;
-                abcSpeedIncrease.disabled = abcTempoBpm >= 240;
-            }
-        });
-        abcSpeedDisplay.addEventListener('change', () => {
-            let val = parseInt(abcSpeedDisplay.value, 10);
-            if (isNaN(val)) val = 120;
-            val = Math.max(60, Math.min(240, val));
-            setAbcTempoBpm(val);
-            abcSpeedDisplay.value = val;
+    const abcTempoLabel = document.getElementById('abc-tempo-label');
+    if (abcSpeedDecrease && abcSpeedIncrease) {
+        const applyTempo = (bpm) => {
+            setAbcTempoBpm(Math.max(60, Math.min(240, bpm)));
+            if (abcTempoLabel) abcTempoLabel.textContent = abcTempoBpm;
             abcSpeedDecrease.disabled = abcTempoBpm <= 60;
             abcSpeedIncrease.disabled = abcTempoBpm >= 240;
-        });
+        };
+        abcSpeedDecrease.addEventListener('click', () => applyTempo(abcTempoBpm - 10));
+        abcSpeedIncrease.addEventListener('click', () => applyTempo(abcTempoBpm + 10));
+        applyTempo(abcTempoBpm);
     }
 
     // Mobile: make ABC controls fieldset collapsible
@@ -1674,9 +1660,15 @@ export async function openSong(songId, options = {}) {
     const song = allSongs.find(s => s.id === songId);
     setCurrentSong(song);
 
-    // Handle song not found
+    // Handle song not found: a real error state with a way out, not a
+    // dead-end styled like a perpetual spinner (the old .loading markup).
     if (!song) {
-        songContentEl.innerHTML = `<div class="loading">Song not found: "${escapeHtml(songId)}"</div>`;
+        songContentEl.innerHTML = `
+            <div class="not-found">
+                <p>Song not found: "${escapeHtml(songId)}"</p>
+                <p>It may have been renamed or removed.</p>
+                <a href="#search" class="not-found-home-link">Browse all songs</a>
+            </div>`;
         return;
     }
 

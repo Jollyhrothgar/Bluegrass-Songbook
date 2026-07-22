@@ -22,6 +22,9 @@ test.describe('List Creation', () => {
         });
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
     });
 
     test('can create a new list from list picker', async ({ page }) => {
@@ -58,26 +61,22 @@ test.describe('List Creation', () => {
         await expect(page.locator('.list-picker-popup')).toContainText('Test Playlist');
     });
 
-    test('can create list from manage lists modal', async ({ page }) => {
-        // Open sidebar
+    test('can create list from the Song Lists view', async ({ page }) => {
+        // Open sidebar and go to the Song Lists view (the old manage-lists
+        // modal was replaced by a dedicated view)
         await openSidebar(page);
+        await page.locator('#nav-song-lists').click();
+        await expect(page.locator('#song-lists-view')).toBeVisible();
 
-        // Click Manage Lists
-        await page.locator('#nav-manage-lists').click();
-
-        // Lists modal should appear
-        await expect(page.locator('#lists-modal')).toBeVisible();
-
-        // Enter new list name
-        const nameInput = page.locator('#new-list-name');
+        // "+ New List" reveals an inline name input; Enter commits
+        await page.locator('#create-list-btn').click();
+        const nameInput = page.locator('.new-list-input');
+        await expect(nameInput).toBeVisible();
         await nameInput.fill('My New List');
+        await nameInput.press('Enter');
 
-        // Click create
-        await page.locator('#create-list-submit').click();
-
-        // List should appear in container
-        await page.waitForTimeout(300);
-        await expect(page.locator('#lists-container')).toContainText('My New List');
+        // List should appear as a card in the view
+        await expect(page.locator('#manage-lists-container')).toContainText('My New List');
     });
 
     test('cannot create duplicate list names', async ({ page }) => {
@@ -131,6 +130,9 @@ test.describe('Adding Songs to Lists', () => {
         });
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
     });
 
     test('can add song to a custom list', async ({ page }) => {
@@ -153,16 +155,17 @@ test.describe('Adding Songs to Lists', () => {
         await page.locator('.list-picker-add-btn').click();
         await page.waitForTimeout(500);
 
-        // Navigate to the list via sidebar
+        // Navigate to the list via the Song Lists view (lists no longer
+        // render in the sidebar)
         await openSidebar(page);
+        await page.locator('#nav-song-lists').click();
+        const listCard = page.locator('#manage-lists-container .list-card').filter({ hasText: 'Jam Songs' });
+        await expect(listCard).toBeVisible({ timeout: 3000 });
+        await listCard.click();
 
-        // List should appear in sidebar (dynamically added)
-        const listNavItem = page.locator('#nav-lists-container').locator('text=Jam Songs');
-        await expect(listNavItem).toBeVisible({ timeout: 3000 });
-        await listNavItem.click();
-
-        // Should show 1 song (automatically added when list was created)
-        await expect(page.locator('#search-stats')).toContainText('1');
+        // Should show 1 song (automatically added when list was created);
+        // the count renders in the list header bar
+        await expect(page.locator('#list-header-count')).toContainText('1');
     });
 
     test('can add song to favorites', async ({ page }) => {
@@ -228,6 +231,9 @@ test.describe('Removing Songs from Lists', () => {
         });
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
     });
 
     test('can remove song from favorites', async ({ page }) => {
@@ -297,9 +303,12 @@ test.describe('List Deletion', () => {
         });
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
     });
 
-    test('can delete custom list from manage lists modal', async ({ page }) => {
+    test('can delete custom list from the Song Lists view', async ({ page }) => {
         // Create a list first using the popup
         const input = page.locator('#search-input');
         await input.click();
@@ -328,24 +337,19 @@ test.describe('List Deletion', () => {
         await page.locator('#search-input').click();
         await page.waitForTimeout(300);
 
-        // Open manage lists modal
+        // Open the Song Lists view
         await openSidebar(page);
-        await page.locator('#nav-manage-lists').click();
-        await expect(page.locator('#lists-modal')).toBeVisible({ timeout: 5000 });
+        await page.locator('#nav-song-lists').click();
+        await expect(page.locator('#song-lists-view')).toBeVisible({ timeout: 5000 });
 
-        // Find and click delete button for the list
-        const listRow = page.locator('#lists-container').locator('text=To Delete').locator('..');
-        const deleteBtn = listRow.locator('.delete-list-btn, button[title*="Delete"]');
+        // Each non-favorites card has a delete button; deletion asks confirm()
+        page.on('dialog', dialog => dialog.accept());
+        const listCard = page.locator('#manage-lists-container .list-card').filter({ hasText: 'To Delete' });
+        await expect(listCard).toBeVisible({ timeout: 3000 });
+        await listCard.locator('.delete-list-btn').click();
 
-        if (await deleteBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
-            // Handle confirm dialog
-            page.on('dialog', dialog => dialog.accept());
-            await deleteBtn.click();
-
-            // List should be removed
-            await page.waitForTimeout(500);
-            await expect(page.locator('#lists-container')).not.toContainText('To Delete');
-        }
+        // List card should be removed
+        await expect(page.locator('#manage-lists-container')).not.toContainText('To Delete');
     });
 
     test('cannot delete favorites list', async ({ page }) => {
@@ -389,18 +393,15 @@ test.describe('List Deletion', () => {
         await page.locator('#search-input').click();
         await page.waitForTimeout(300);
 
-        // Navigate to the list
+        // Navigate to the list via the Song Lists view
         await openSidebar(page);
-        const listNavItem = page.locator('#nav-lists-container').locator('text=My Custom List');
+        await page.locator('#nav-song-lists').click();
+        const listCard = page.locator('#manage-lists-container .list-card').filter({ hasText: 'My Custom List' });
+        await expect(listCard).toBeVisible({ timeout: 3000 });
+        await listCard.click();
 
-        if (await listNavItem.isVisible({ timeout: 3000 }).catch(() => false)) {
-            await listNavItem.click();
-            await page.waitForTimeout(500);
-
-            // Delete button should be visible for custom list
-            const deleteBtn = page.locator('#delete-list-btn');
-            await expect(deleteBtn).toBeVisible();
-        }
+        // Delete button lives in the list header bar for own custom lists
+        await expect(page.locator('#list-delete-btn')).toBeVisible();
     });
 });
 
@@ -412,9 +413,12 @@ test.describe('List Navigation', () => {
         });
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
     });
 
-    test('custom lists appear in sidebar', async ({ page }) => {
+    test('custom lists appear in the Song Lists view', async ({ page }) => {
         // Create a list
         const input = page.locator('#search-input');
         await input.click();
@@ -443,9 +447,11 @@ test.describe('List Navigation', () => {
         await page.locator('#search-input').click();
         await page.waitForTimeout(300);
 
-        // Check sidebar for list
+        // Lists no longer render in the sidebar; they live in the
+        // Song Lists view
         await openSidebar(page);
-        await expect(page.locator('#nav-lists-container')).toContainText('Sidebar Test');
+        await page.locator('#nav-song-lists').click();
+        await expect(page.locator('#manage-lists-container')).toContainText('Sidebar Test');
     });
 
     test('clicking list in sidebar shows list contents', async ({ page }) => {
@@ -463,9 +469,9 @@ test.describe('List Navigation', () => {
         await openSidebar(page);
         await page.locator('#nav-favorites').click();
 
-        // Should show search view with list contents
-        await expect(page.locator('.search-container')).toBeVisible();
-        await expect(page.locator('#search-stats')).toContainText(/1.*song|Favorites/);
+        // Should show the list view with its header count
+        await expect(page.locator('#list-header')).toBeVisible();
+        await expect(page.locator('#list-header-count')).toContainText('1 song');
     });
 });
 
@@ -477,6 +483,9 @@ test.describe('List Sharing', () => {
         });
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
 
         // Add to favorites
         const input = page.locator('#search-input');
@@ -493,8 +502,8 @@ test.describe('List Sharing', () => {
         await page.locator('#nav-favorites').click();
         await page.waitForTimeout(500);
 
-        // Share button should be visible
-        const shareBtn = page.locator('#share-list-btn');
+        // Share button now lives in the list header bar
+        const shareBtn = page.locator('#list-share-btn');
         await expect(shareBtn).toBeVisible();
     });
 
@@ -505,6 +514,9 @@ test.describe('List Sharing', () => {
         });
         await page.goto('/#search');
         await page.waitForSelector('#search-input');
+        // Wait for the index to load: the post-load render would stomp any
+        // navigation done before it (sub-second for users, a race for tests)
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
 
         // Add to favorites
         const input = page.locator('#search-input');
@@ -521,8 +533,8 @@ test.describe('List Sharing', () => {
         await page.locator('#nav-favorites').click();
         await page.waitForTimeout(500);
 
-        // Print button should be visible
-        const printBtn = page.locator('#print-list-btn');
+        // Print button now lives in the list header bar
+        const printBtn = page.locator('#list-print-btn');
         await expect(printBtn).toBeVisible();
     });
 });
