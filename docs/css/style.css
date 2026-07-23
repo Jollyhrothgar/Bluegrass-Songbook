@@ -145,12 +145,18 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
-/* The BB plaque logo is self-contained (cream on dark) — no theme filters */
 .site-logo img {
     max-width: 150px;
     width: 100%;
     height: auto;
     border-radius: 12px;
+}
+
+/* The BB plaque is cream-on-dark; flip it in light mode so it reads as
+   dark-on-cream and matches the theme */
+:root:not([data-theme="dark"]) .site-logo img,
+:root:not([data-theme="dark"]) .topbar-brand img {
+    filter: invert(1);
 }
 
 /* Dark theme: invert the logo */
