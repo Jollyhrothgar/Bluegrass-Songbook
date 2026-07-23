@@ -9476,6 +9476,13 @@ body.has-list-context.has-bottomband .container {
         padding: 0.5rem;
     }
 
+    /* The desktop "comfortable margins" rule (100% - 4rem) costs 64px on a
+       phone — song and editor pages get the full width instead */
+    .container:has(.song-view:not(.hidden)),
+    .container:has(.editor-panel:not(.hidden)) {
+        max-width: 100%;
+    }
+
     /* The song sheet goes full-bleed: no card chrome inside a container
        inside a viewport — every horizontal pixel goes to the music */
     .song-content {
