@@ -138,6 +138,36 @@ function articulationMaxGap(header) {
     return header.isV2 ? fdiv(header.v2_ts_size || 256, 2) : 8;
 }
 
+/** Keys "track:position:string" of BEND/CHOKE notes. Port of
+ *  bend_destination_keys. The tie bit means "connected to previous"; that's a
+ *  tie only when the fret is unchanged. A fret change with no h/p/slide is a
+ *  bend/choke → 'b', not a phantom tie. (Corpus-safe: 0 such notes exist in the
+ *  corpus; only real bends like "Welcome to New York" m4 are affected. #184.) */
+export function bendDestinationKeys(noteEvents, articulations) {
+    const byTrackString = new Map();
+    for (const e of noteEvents) {
+        if (!isMelody(e)) continue;
+        const sf = decodeStringFret(e);
+        if (!sf) continue;
+        const key = e.track + ':' + sf[0];
+        if (!byTrackString.has(key)) byTrackString.set(key, []);
+        byTrackString.get(key).push({ position: e.position, fret: sf[1], e });
+    }
+    const keys = new Set();
+    for (const notes of byTrackString.values()) {
+        notes.sort((a, b) => a.position - b.position);
+        for (let i = 0; i < notes.length; i++) {
+            const { position, fret, e } = notes[i];
+            if (i === 0 || !isTiedNote(e)) continue;
+            if (notes[i - 1].fret === fret) continue;              // same fret = tie
+            const string = decodeStringFret(e)[0];
+            if (articulations.get(e.track + ':' + position + ':' + string) != null) continue;
+            keys.add(e.track + ':' + position + ':' + string);
+        }
+    }
+    return keys;
+}
+
 // --- slide-timing normalization ---------------------------------------------
 export function retimedSlideTarget(targetTick, targetDur, targetTech,
     sourceTick, sourceDur, ticksPerBeat) {
@@ -270,6 +300,8 @@ export function tefToOtf(tef) {
     const articulations = isV2
         ? computeArticulations(tef.note_events, articulationMaxGap(header))
         : computeArticulationsV3(tef.note_events);
+    // Bend/choke notes (connect-bit + fret change + no h/p/slide) → 'b', not a tie.
+    const bendKeys = bendDestinationKeys(tef.note_events, articulations);
 
     // ---- group events by track + measure ----
     // V3 position grid: 16 slots/measure. ticks_per_measure uses the header
@@ -356,7 +388,13 @@ export function tefToOtf(tef) {
                     let tech = articulations.get(evt.track + ':' + evt.position + ':' + string) ?? null;
                     // technique_from_event is a retired no-op (returns null).
                     if (evt.raw && evt.raw.length >= 12 && evt.raw[6] === 0x0f) tech = 'x';
-                    const tie = isTiedNote(evt);
+                    let tie = isTiedNote(evt);
+                    // ...unless it's a bend/choke (connect bit but a fret change,
+                    // no h/p/slide): render 'b', not a tie.
+                    if (bendKeys.has(evt.track + ':' + evt.position + ':' + string)) {
+                        tie = false;
+                        tech = 'b';
+                    }
                     let finger = null;
                     if (evt.raw && evt.raw.length > 5) {
                         const fretByte = evt.raw[2];

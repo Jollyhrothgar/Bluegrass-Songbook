@@ -470,6 +470,46 @@ def compute_articulations_v3(
     return articulations
 
 
+def bend_destination_keys(note_events, articulations):
+    """Keys (track, position, string) of BEND/CHOKE notes.
+
+    The tie sentinel (V2 dynamic-7 / V3 byte-5 bit-7) actually means "connected
+    to the previous note on this string." That renders as a TIE only when the
+    fret is unchanged (same pitch). When the fret DIFFERS and the note carries no
+    hammer/pull/slide (those already own the connection — e.g. 25635 m74's slide
+    destination, left untouched here), it's a bend/choke: TablEdit's own display
+    shows a bend, though its MusicXML exports it lossily as a tie-stop. We surface
+    it as a 'b' technique instead of a phantom tie.
+
+    Corpus-safe: zero notes in the 40+ file corpus meet all three conditions
+    (connect-bit AND fret change AND no h/p/slide), so this changes no existing
+    output; it only fixes real bends (e.g. Bill Emerson's "Welcome to New York"
+    m4, str3 fret 3->4). Full +1-semitone playback glide is tracked in #184.
+    """
+    by_track_string: dict = {}
+    for event in note_events:
+        if not event.is_melody:
+            continue
+        sf = event.decode_string_fret()
+        if not sf:
+            continue
+        by_track_string.setdefault((event.track, sf[0]), []).append(
+            (event.position, sf[1], event))
+
+    keys = set()
+    for (track, string), notes in by_track_string.items():
+        notes.sort(key=lambda x: x[0])
+        for i, (position, fret, event) in enumerate(notes):
+            if i == 0 or not is_tied_note(event):
+                continue
+            if notes[i - 1][1] == fret:
+                continue  # same fret = genuine tie
+            if articulations.get((track, position, string)) is not None:
+                continue  # h/p/slide already carries the connection
+            keys.add((track, position, string))
+    return keys
+
+
 # Common banjo tunings (MIDI note numbers)
 # Format: [string1, string2, string3, string4, string5] where string1 is highest
 BANJO_TUNINGS = {
@@ -732,6 +772,10 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     else:
         articulations = compute_articulations_v3(tef.note_events)
 
+    # Bend/choke notes: connect-bit + fret change + no h/p/slide (see
+    # bend_destination_keys). Surfaced as a 'b' technique instead of a tie.
+    bend_keys = bend_destination_keys(tef.note_events, articulations)
+
     # Group note events by track and measure.
     #
     # V2: event.position is in the NATIVE TEF grid — 256 units per whole
@@ -899,6 +943,11 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                             tech = 'x'
                         # Check if this note is tied to the previous note
                         tie = is_tied_note(evt)
+                        # ...unless it's really a bend/choke (connect bit but a
+                        # fret change, no h/p/slide): render 'b', not a tie.
+                        if (evt.track, evt.position, string) in bend_keys:
+                            tie = False
+                            tech = 'b'
                         # Extract fingering annotation from effect2 when bit5 is set
                         finger = None
                         if evt.raw_data and len(evt.raw_data) > 5:
