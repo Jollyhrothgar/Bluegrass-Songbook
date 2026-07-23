@@ -1699,13 +1699,26 @@ class TEFReader:
 
         strings = self.find_strings()
 
-        # Find title (usually the longest string early in the file)
+        # Title = the FIRST substantial string in the info region (offset
+        # ~0x100), NOT the longest. The longest is usually a verbose tabber
+        # credit ("TablEdited by Greg Crisp"), and decorative section
+        # separators ("____INTRO____") are longer still — the old "longest"
+        # rule picked those over the real title ("Cherokee Shuffle",
+        # "Jerusalem Ridge", "Welcome To New York"). find_strings returns
+        # strings in ascending-offset order, so the first qualifying one wins.
         title = ""
         for s in strings:
-            if s.offset < 0x200 and len(s.value) > len(title):
-                # Skip common non-title strings
-                if 'Part' not in s.value and not s.value.startswith('('):
-                    title = s.value
+            if s.offset >= 0x200:
+                continue
+            v = s.value.strip()
+            if len(v) < 3 or 'Part' in v or v[:1] in ('(', '-'):
+                continue
+            nonspace = sum(not c.isspace() for c in v)
+            alnum = sum(c.isalnum() for c in v)
+            if nonspace and alnum / nonspace < 0.5:  # skip decorative separators
+                continue
+            title = v
+            break
 
         instruments = self.parse_track_records_v3() or self.parse_instruments()
         chords = self.parse_chords()

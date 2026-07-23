@@ -584,12 +584,18 @@ export function parseV3(data, name) {
     }
     const header = readV3Header(data);
     const strings = findStrings(data);
+    // Title = the FIRST substantial string (offset ~0x100), not the longest —
+    // see reader.py. Skips verbose credits and decorative "____INTRO____" separators.
     let title = '';
     for (const s of strings) {
-        if (s.offset < 0x200 && s.value.length > title.length
-            && !s.value.includes('Part') && !s.value.startsWith('(')) {
-            title = s.value;
-        }
+        if (s.offset >= 0x200) continue;
+        const v = s.value.trim();
+        if (v.length < 3 || v.includes('Part') || v[0] === '(' || v[0] === '-') continue;
+        const nonspace = [...v].filter(c => !/\s/.test(c)).length;
+        const alnum = [...v].filter(c => /[a-zA-Z0-9]/.test(c)).length;
+        if (nonspace && alnum / nonspace < 0.5) continue;   // skip decorative separators
+        title = v;
+        break;
     }
     const instruments = parseTrackRecordsV3(data);   // name-pattern fallback not ported
     const { events, tsChanges, globalTs } = parseNoteEventsV3(data, instruments);
