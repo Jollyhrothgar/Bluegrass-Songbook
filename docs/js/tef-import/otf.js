@@ -101,9 +101,41 @@ export function computeArticulations(noteEvents, maxGap) {
     return out;
 }
 
+/** V3 articulations: byte 6 of the 12-byte record on the SOURCE note names the
+ *  transition (1 h / 2 p / 3 slide), attributed to the destination note (next,
+ *  same track+string, within maxGap slots). Port of compute_articulations_v3. */
+export function computeArticulationsV3(noteEvents, maxGap = 8) {
+    const V3_TECH = { 1: 'h', 2: 'p', 3: '/' };
+    const out = new Map();
+    const byString = new Map();
+    for (const e of noteEvents) {
+        if (!isMelody(e)) continue;
+        if (!e.raw || e.raw.length < 12) continue;
+        const r = decodeStringFret(e);
+        if (!r) continue;
+        const key = e.track + ':' + r[0];
+        if (!byString.has(key)) byString.set(key, []);
+        byString.get(key).push(e);
+    }
+    for (const notes of byString.values()) {
+        notes.sort((a, b) => a.position - b.position);
+        for (let i = 0; i < notes.length; i++) {
+            const e = notes[i];
+            const tech = V3_TECH[e.raw[6] & 0x1f];
+            if (!tech || i + 1 >= notes.length) continue;
+            const next = notes[i + 1];
+            if (next.position - e.position <= maxGap) {
+                const string = decodeStringFret(e)[0];
+                out.set(e.track + ':' + next.position + ':' + string, tech);
+            }
+        }
+    }
+    return out;
+}
+
 function articulationMaxGap(header) {
-    // V2 only in this build: half a measure in native grid units.
-    return fdiv(header.v2_ts_size || 256, 2);
+    // V2: half a measure in native grid units. V3: 8 slots (compute_articulations_v3).
+    return header.isV2 ? fdiv(header.v2_ts_size || 256, 2) : 8;
 }
 
 // --- slide-timing normalization ---------------------------------------------
@@ -237,10 +269,17 @@ export function tefToOtf(tef) {
     // ---- articulations ----
     const articulations = isV2
         ? computeArticulations(tef.note_events, articulationMaxGap(header))
-        : new Map();   // V3 path not ported in this build
+        : computeArticulationsV3(tef.note_events);
 
     // ---- group events by track + measure ----
-    const unitsPerMeasure = isV2 ? (header.v2_ts_size || 256) : 16;
+    // V3 position grid: 16 slots/measure. ticks_per_measure uses the header
+    // meter (4/4 defaults for V3), matching tef_to_otf.
+    const POSITIONS_PER_MEASURE = 16;
+    const beatsPerMeasure = header.v2_time_num;
+    const denom = header.v2_time_denom || 4;
+    const ticksPerMeasure = fdiv(beatsPerMeasure * 480 * 4, denom);
+    const TICKS_PER_POSITION = fdiv(ticksPerMeasure, POSITIONS_PER_MEASURE);
+    const unitsPerMeasure = isV2 ? (header.v2_ts_size || 256) : POSITIONS_PER_MEASURE;
     const trackEvents = new Map();   // trackId -> Map(measure -> [{tick, evt}])
 
     for (const event of tef.note_events) {
@@ -250,7 +289,7 @@ export function tefToOtf(tef) {
 
         const measure = fdiv(event.position, unitsPerMeasure) + 1;
         const positionInMeasure = event.position % unitsPerMeasure;
-        let tick = isV2 ? fdiv(positionInMeasure * 15, 2) : positionInMeasure * 0; // V2 only here
+        let tick = isV2 ? fdiv(positionInMeasure * 15, 2) : positionInMeasure * TICKS_PER_POSITION;
 
         // V2 triplet timing: duration code % 3 == 2 (3:2).
         if (isV2 && event.raw && event.raw.length >= 4 && (event.raw[3] & 0x1f) % 3 === 2) {
@@ -263,6 +302,37 @@ export function tefToOtf(tef) {
         const measures = trackEvents.get(trackId);
         if (!measures.has(measure)) measures.set(measure, []);
         measures.get(measure).push({ tick, evt: event });
+    }
+
+    // V3-only: K-marker triplet group heuristic (groups of 3 consecutive 'K'
+    // notes within 2 positions retimed to 160-tick spacing). Skipped for V2,
+    // which handles triplets per-note above. Port of the tef_to_otf block.
+    if (!isV2) {
+        const TRIPLET_SPACING = fdiv(480, 3);   // 160
+        for (const measures of trackEvents.values()) {
+            for (const events of measures.values()) {
+                const triplets = events
+                    .filter(x => x.evt.marker === 'K')
+                    .sort((a, b) => a.tick - b.tick);
+                if (triplets.length >= 3) {
+                    let i = 0;
+                    while (i <= triplets.length - 3) {
+                        const [a, b, c] = [triplets[i], triplets[i + 1], triplets[i + 2]];
+                        if (b.evt.position - a.evt.position <= 2 && c.evt.position - b.evt.position <= 2) {
+                            const base = a.tick;
+                            const newTicks = [base, base + TRIPLET_SPACING, base + 2 * TRIPLET_SPACING];
+                            [a, b, c].forEach((grp, j) => {
+                                const k = events.findIndex(x => x.evt === grp.evt);
+                                if (k >= 0) events[k].tick = newTicks[j];
+                            });
+                            i += 3;
+                        } else {
+                            i += 1;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // ---- build notation ----

@@ -6,7 +6,10 @@
 // (sources/banjo-hangout/src/tef_parser/), verified byte-exact against it by the
 // golden-diff gate (docs/js/__tests__/tef-import-golden.test.js).
 //
-// Currently supports TEF V2 (the bulk of the corpus). V3 throws TefVersionError.
+// Handles both TablEdit format generations transparently — callers pass bytes,
+// not a version. A rare old sub-variant that can't be read throws
+// TefVersionError; callers should present that as a generic "can't read this
+// file yet" without surfacing format internals to the user.
 //
 // Usage:
 //   const otf = parseTef(new Uint8Array(await file.arrayBuffer()), file.name);

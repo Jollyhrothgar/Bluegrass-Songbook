@@ -151,16 +151,26 @@
             }
             try {
                 const bytes = new Uint8Array(await file.arrayBuffer());
-                const otf = parseTef(bytes, file.name);   // the JS TEF→OTF port
+                const otf = parseTef(bytes, file.name);   // the JS TEF→OTF pipeline
+                const hasNotes = Object.values(otf.notation || {})
+                    .some(measures => measures.length > 0);
+                if (!hasNotes) {
+                    showImportError(
+                        "We couldn't read any notes from this tab file. If it opens "
+                        + 'in TablEdit, please report it and we\'ll add support.');
+                    return;
+                }
                 saveDraft(otf);
                 openEditor(otf);
             } catch (err) {
+                // Keep this format-agnostic — users shouldn't need to care which
+                // TablEdit file variant they have.
                 if (err instanceof TefVersionError) {
                     showImportError(
-                        'This looks like a newer TablEdit (V3) file, which the '
-                        + 'in-browser importer does not support yet. V2 .tef files work today.');
+                        "This tab file uses a variant we can't read yet. Most .tef "
+                        + "files work — please report this one and we'll add support.");
                 } else {
-                    showImportError(`Could not read that .tef file: ${err.message}`);
+                    showImportError(`Could not read that tab file: ${err.message}`);
                 }
             }
         }
