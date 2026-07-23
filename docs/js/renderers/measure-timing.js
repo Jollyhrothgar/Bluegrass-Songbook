@@ -351,6 +351,23 @@ export function analyzeReadingList(readingList) {
             repeatStartMarkers.add(nextStart);
             repeatEndMarkers.add(currEnd);
         }
+
+        // Case 5: next is a subset repeat that starts BEFORE current — a
+        // BACKWARD repeat whose first-ending pass was emitted ahead of (and
+        // possibly split across) the common-section replay. The other cases
+        // all assume next.from >= curr.from and miss this. Welcome to New York
+        // part B: [..,13-31],[32-48],[14-27],[49-50] — at [32-48]→[14-27] the
+        // replay jumps back to 14, so: |: 14 ..common 27 |1. 28..48 :| |2. 49.
+        // The :| closes the first ending (currEnd), matching Cases 1/2.
+        if (nextStart < currStart && nextEnd < currEnd && nextEnd >= nextStart) {
+            repeatStartMarkers.add(nextStart);
+            repeatEndMarkers.add(currEnd);
+            for (let m = nextEnd + 1; m <= currEnd; m++) endings[m] = 1;
+            const afterRepeat = readingList[i + 2];
+            if (afterRepeat && afterRepeat.from_measure === currEnd + 1) {
+                endings[currEnd + 1] = 2;
+            }
+        }
     }
 
     return { repeatStartMarkers, repeatEndMarkers, endings };

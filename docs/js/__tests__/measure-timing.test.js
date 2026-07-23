@@ -370,4 +370,25 @@ describe('analyzeReadingList — overlapping D.S.-style lists (27493)', () => {
         // plain repeats — no first/second endings
         expect(Object.keys(a.endings)).toHaveLength(0);
     });
+
+    it('two parts, backward-repeat 2nd part: Welcome to New York (Bill Emerson)', () => {
+        // Part A: |: 5 ..11 |1.12 :| |2.13   Part B: |: 14 ..27 |1.28..48 :| |2.49
+        // Part B's first-ending pass is emitted ahead of (and split across) the
+        // common replay [14-27], so its replay entry starts BEFORE the prior
+        // entry — the Case-5 backward-repeat the other cases miss.
+        const a = _arl([
+            { from_measure: 1, to_measure: 3 }, { from_measure: 4, to_measure: 12 },
+            { from_measure: 5, to_measure: 11 }, { from_measure: 13, to_measure: 31 },
+            { from_measure: 32, to_measure: 48 }, { from_measure: 14, to_measure: 27 },
+            { from_measure: 49, to_measure: 50 },
+        ]);
+        expect([...a.repeatStartMarkers].sort((x, y) => x - y)).toEqual([5, 14]);
+        expect([...a.repeatEndMarkers].sort((x, y) => x - y)).toEqual([12, 48]);
+        // Part A: 12 is 1st ending, 13 is 2nd. Part B: 28..48 is 1st ending, 49 is 2nd.
+        expect(a.endings[12]).toBe(1);
+        expect(a.endings[13]).toBe(2);
+        expect(a.endings[28]).toBe(1);
+        expect(a.endings[48]).toBe(1);
+        expect(a.endings[49]).toBe(2);
+    });
 });
