@@ -1,0 +1,22 @@
+# Editorial curation registry — source of truth for canonical version pins
+# and suppressed work ids. Works are ephemeral (regenerated from sources/),
+# so editorial decisions live here, NOT in works/*/work.yaml.
+#
+# Managed via: ./scripts/utility curate report | pin | suppress
+#
+# groups:
+#   <canonical-work-id>:            # the version the group displays by default
+#     variants:
+#       <variant-work-id>:          # explicitly grouped even if fuzzy matching misses it
+#         label: "Display label"    # optional, shown in the version picker
+#
+# suppressed:
+#   <work-id>:
+#     reason: "why"
+#     suppressed_at: "YYYY-MM-DD"
+groups:
+  roll-in-my-sweet-baby-s-arms:
+    variants:
+      roll-in-my-sweet-babys-arms:
+        label: Bluegrass Lyrics version
+suppressed: {}

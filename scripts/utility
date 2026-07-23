@@ -56,6 +56,15 @@ show_help() {
     echo "  build-posts"
     echo "      Build posts.json manifest from markdown files in docs/posts/"
     echo ""
+    echo "  curate report [--limit N]"
+    echo "      List multi-version groups without a canonical pin"
+    echo ""
+    echo "  curate pin <canonical-id> [variant-id ...] [--label LABEL]"
+    echo "      Pin the canonical version of a song group in curation/registry.yaml"
+    echo ""
+    echo "  curate suppress <work-id> --reason \"...\""
+    echo "      Suppress a work (dropped from the index, refused by importers)"
+    echo ""
     echo "  loc [path]"
     echo "      Count lines of code by language"
     echo ""
@@ -187,6 +196,9 @@ case "$COMMAND" in
     build-posts)
         echo "Building posts manifest..."
         uv run python3 scripts/lib/build_posts.py
+        ;;
+    curate)
+        uv run python3 scripts/lib/curate.py "$@"
         ;;
     loc)
         uv run python3 scripts/lib/loc_counter.py "$@"

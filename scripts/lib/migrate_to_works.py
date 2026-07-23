@@ -20,6 +20,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
+from curation import is_suppressed, load_deleted_songs, load_registry
 from work_schema import Work, Part, Provenance, ExternalLinks, slugify
 
 
@@ -132,6 +133,11 @@ def migrate_songs(
         songs = songs[:limit]
         print(f"  Limited to {limit} songs")
 
+    # Curation guard: never re-create suppressed works from sources
+    repo_root = works_dir.parent
+    registry = load_registry(repo_root)
+    deleted_songs = load_deleted_songs(repo_root)
+
     # Track ID mappings for redirects
     id_mapping = {}  # old_song_id -> work_id
 
@@ -150,11 +156,22 @@ def migrate_songs(
             # Convert to work
             work = song_to_work(song, sm_cache)
 
+            # Skip suppressed slugs (covers collision-suffixed slugs of a
+            # suppressed base too, via is_suppressed base matching)
+            if is_suppressed(work.id, registry, deleted_songs):
+                print(f"  Skipping '{work.id}': suppressed (curation registry / deleted songs)")
+                skipped += 1
+                continue
+
             # Handle work ID collisions by appending number
             base_id = work.id
             if base_id in work_id_counts:
                 work_id_counts[base_id] += 1
                 work.id = f"{base_id}-{work_id_counts[base_id]}"
+                if is_suppressed(work.id, registry, deleted_songs):
+                    print(f"  Skipping '{work.id}': suppressed (curation registry / deleted songs)")
+                    skipped += 1
+                    continue
             else:
                 work_id_counts[base_id] = 0
 

@@ -64,6 +64,8 @@ from build_index import (
     KEYS,
 )
 
+from curation import apply_curation, filter_suppressed, load_registry
+
 
 def parse_chordpro_content(content: str) -> dict:
     """Extract lyrics, chords, and ABC content from ChordPro content."""
@@ -691,17 +693,18 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
         for work_id, error in errors:
             print(f"  {work_id}: {error}")
 
-    # Filter out soft-deleted songs
+    # Filter out suppressed songs (curation registry ∪ soft-deleted list)
+    registry = load_registry(Path('.'))
+    deleted_songs = {}
     deleted_songs_file = Path('docs/data/deleted_songs.json')
     if deleted_songs_file.exists():
         with open(deleted_songs_file) as f:
             deleted_songs = json.load(f)
-        if deleted_songs:
-            original_count = len(songs)
-            songs = [s for s in songs if s['id'] not in deleted_songs]
-            deleted_count = original_count - len(songs)
-            if deleted_count > 0:
-                print(f"Excluded {deleted_count} soft-deleted songs")
+    original_count = len(songs)
+    songs = filter_suppressed(songs, deleted_songs, registry)
+    excluded_count = original_count - len(songs)
+    if excluded_count > 0:
+        print(f"Excluded {excluded_count} suppressed/soft-deleted songs")
 
     # Copy tablature files to docs/data/tabs/
     tabs_dir = Path('docs/data/tabs')
@@ -853,6 +856,11 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     # Skip for CI/lightweight builds (--skip-fuzzy)
     if fuzzy_grouping:
         songs = fuzzy_group_songs(songs)
+
+    # Editorial curation (curation/registry.yaml): remap pinned groups to
+    # stable grp:<canonical-id> ids and mark canonical/variant rows.
+    # Runs unconditionally — even with --skip-fuzzy — so pins always apply.
+    songs = apply_curation(songs, registry)
 
     # Deduplicate (by content for lead sheets, by id for tablature-only)
     seen_content = {}
