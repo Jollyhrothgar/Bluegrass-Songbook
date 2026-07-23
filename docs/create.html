@@ -28,6 +28,16 @@
         .editor-bar { display: flex; justify-content: space-between; align-items: center;
                       margin-bottom: 10px; gap: 12px; flex-wrap: wrap; }
         #editor-host { min-height: 400px; }
+        .import-zone { max-width: 560px; border: 2px dashed var(--border);
+                       border-radius: 8px; padding: 22px 18px; margin-bottom: 18px;
+                       text-align: center; cursor: pointer; transition: border-color .15s, background .15s; }
+        .import-zone:hover, .import-zone.dragover { border-color: var(--accent);
+                       background: rgba(0,123,255,0.05); }
+        .import-zone strong { display: block; font-size: 15px; margin-bottom: 4px; }
+        .import-zone .hint { font-size: 13px; color: #666; }
+        .import-error { color: #b00020; font-size: 13px; margin-top: 8px; }
+        .or-sep { max-width: 560px; text-align: center; color: #999; font-size: 13px;
+                  margin: 4px 0 14px; }
         .hidden { display: none !important; }
     </style>
 </head>
@@ -42,6 +52,16 @@
             <button id="draft-resume">Resume</button>
             <button id="draft-discard">Discard</button>
         </div>
+
+        <div id="import-zone" class="import-zone" tabindex="0" role="button"
+             aria-label="Import a TablEdit .tef file">
+            <strong>📂 Import a TablEdit tab (.tef)</strong>
+            <span class="hint">Drop a <code>.tef</code> file here, or click to choose one —
+                it opens in the editor, ready to review and submit.</span>
+            <input id="import-file" type="file" accept=".tef" class="hidden">
+            <div id="import-error" class="import-error hidden"></div>
+        </div>
+        <div class="or-sep">— or start a new tab from scratch —</div>
 
         <form id="create-form" class="create-form">
             <label>Title
@@ -86,6 +106,7 @@
             saveDraft, loadDraft, clearDraft,
         } from './js/otf-editor/create-tab.js';
         import { submitTab } from './js/otf-editor/submit-tab.js';
+        import { parseTef, TefVersionError } from './js/tef-import/index.js';
 
         const $ = (id) => document.getElementById(id);
 
@@ -102,6 +123,8 @@
         function openEditor(otf) {
             $('create-form').classList.add('hidden');
             $('draft-banner').classList.add('hidden');
+            $('import-zone').classList.add('hidden');
+            document.querySelector('.or-sep')?.classList.add('hidden');
             $('editor-wrap').classList.remove('hidden');
             $('editor-title').textContent = otf.metadata?.title || 'Untitled';
             editor = new OTFEditor({
@@ -111,6 +134,61 @@
                 onChange: (doc) => saveDraft(doc),
             });
         }
+
+        // ── Import a .tef file: parse client-side → open in the editor ──
+        function showImportError(msg) {
+            const el = $('import-error');
+            el.textContent = msg;
+            el.classList.remove('hidden');
+        }
+
+        async function importTefFile(file) {
+            $('import-error').classList.add('hidden');
+            if (!file) return;
+            if (!/\.tef$/i.test(file.name)) {
+                showImportError(`"${file.name}" is not a .tef file.`);
+                return;
+            }
+            try {
+                const bytes = new Uint8Array(await file.arrayBuffer());
+                const otf = parseTef(bytes, file.name);   // the JS TEF→OTF port
+                saveDraft(otf);
+                openEditor(otf);
+            } catch (err) {
+                if (err instanceof TefVersionError) {
+                    showImportError(
+                        'This looks like a newer TablEdit (V3) file, which the '
+                        + 'in-browser importer does not support yet. V2 .tef files work today.');
+                } else {
+                    showImportError(`Could not read that .tef file: ${err.message}`);
+                }
+            }
+        }
+
+        const importZone = $('import-zone');
+        const importInput = $('import-file');
+        importZone.addEventListener('click', () => importInput.click());
+        importZone.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); importInput.click(); }
+        });
+        importInput.addEventListener('change', () => {
+            importTefFile(importInput.files[0]);
+            importInput.value = '';   // allow re-picking the same file
+        });
+        ['dragenter', 'dragover'].forEach(evt =>
+            importZone.addEventListener(evt, (e) => {
+                e.preventDefault();
+                importZone.classList.add('dragover');
+            }));
+        ['dragleave', 'drop'].forEach(evt =>
+            importZone.addEventListener(evt, (e) => {
+                e.preventDefault();
+                importZone.classList.remove('dragover');
+            }));
+        importZone.addEventListener('drop', (e) => {
+            const file = e.dataTransfer?.files?.[0];
+            if (file) importTefFile(file);
+        });
 
         $('create-form').addEventListener('submit', (e) => {
             e.preventDefault();
@@ -169,6 +247,9 @@
             editor = null;
             $('editor-wrap').classList.add('hidden');
             $('create-form').classList.remove('hidden');
+            $('import-zone').classList.remove('hidden');
+            document.querySelector('.or-sep')?.classList.remove('hidden');
+            $('import-error').classList.add('hidden');
         });
 
         // Draft restore
