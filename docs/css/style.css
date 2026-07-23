@@ -10922,3 +10922,27 @@ body.fullscreen-mode .song-pill-row {
     border-left: 1px solid var(--border);
     width: auto;
 }
+
+/* Immersive (focus) refinements: the top band leaves the layout entirely,
+   with a 4px peek strip so mouse-to-top reveals it. */
+body.immersive .app-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(calc(-100% + 4px));
+}
+
+body.immersive .app-topbar:hover,
+body.immersive .app-topbar:focus-within {
+    transform: none;
+}
+
+/* When the list nav bar and the bottom band are both present, stack them */
+body.has-list-context .app-bottomband {
+    bottom: 60px;
+}
+
+body.has-list-context.has-bottomband .container {
+    padding-bottom: 132px;
+}

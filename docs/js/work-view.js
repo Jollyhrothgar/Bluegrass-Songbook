@@ -28,7 +28,7 @@ import {
     goBack,
     updateFocusHeader, updateNavBar,
     stopAbcPlayback,
-    renderLeadSheetContent, buildFocusNotesPanel
+    renderLeadSheetContent
 } from './song-view.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify } from './utils.js';
@@ -406,9 +406,6 @@ export function renderWorkView() {
 
     container.innerHTML = '';
 
-    // Focus header (shown only in fullscreen mode via CSS)
-    container.appendChild(renderFocusHeader());
-
     // Title row: song title + small artist line
     container.appendChild(renderTitleHeader());
 
@@ -441,10 +438,6 @@ export function renderWorkView() {
         const bountySection = renderBountySection();
         if (bountySection) container.appendChild(bountySection);
     }
-
-    // Focus-mode notes panel (list context only)
-    const notesPanel = buildFocusNotesPanel(currentWork);
-    if (notesPanel) container.appendChild(notesPanel);
 
     updateWorkTopBar();
 }
@@ -775,54 +768,6 @@ export function updateWorkTopBar() {
 // ============================================
 // FOCUS HEADER (fullscreen / list-practice mode)
 // ============================================
-
-/**
- * Focus header, shown only in fullscreen mode via CSS.
- * prev/next/exit/controls buttons are wired through main.js's songContent
- * delegation; only "Go to Song" needs local wiring.
- */
-function renderFocusHeader() {
-    const title = currentWork?.title || 'Untitled';
-    const partLabel = (availableParts.length > 1 && activePart?.label) ? ` - ${activePart.label}` : '';
-
-    const header = document.createElement('div');
-    header.className = 'focus-header';
-    header.innerHTML = `
-        <button id="focus-prev-btn" class="focus-list-nav" title="Previous song (←)">←</button>
-        <div class="focus-title-area">
-            <span class="focus-title">${escapeHtml(title)}${escapeHtml(partLabel)}</span>
-            <span id="focus-position" class="focus-position"></span>
-        </div>
-        <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
-            <span>✕</span>
-            <span class="focus-btn-label">Exit</span>
-        </button>
-        <button id="focus-goto-song-btn" class="focus-nav-btn" title="View full song page">
-            <span>🎵</span>
-            <span class="focus-btn-label">Go to Song</span>
-        </button>
-        <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
-            <span>⚙️</span>
-            <span class="focus-btn-label">Controls</span>
-        </button>
-        <button id="focus-next-btn" class="focus-list-nav" title="Next song (→)">→</button>
-    `;
-
-    // "Go to Song": leave the list/focus context for the plain song page
-    header.querySelector('#focus-goto-song-btn')?.addEventListener('click', () => {
-        setFullscreenMode(false);
-        document.body.classList.remove('fullscreen-mode');
-        document.body.classList.remove('has-list-context');
-        if (listContext && listContext.listId) {
-            sessionStorage.setItem('songbook-return-url',
-                `#list/${listContext.listId}/${currentWork?.id || ''}`);
-        }
-        clearListView();
-        openWork(currentWork.id, { exact: true });
-    });
-
-    return header;
-}
 
 // ============================================
 // BOUNTY SECTION

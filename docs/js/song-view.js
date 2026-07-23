@@ -39,7 +39,7 @@ import {
 import { parseChordPro, renderSectionsHtml } from './renderers/chordpro.js';
 import { getSongMetadata, updateSongMetadata } from './lists.js';
 import { trackVersionPicker, endSongView } from './analytics.js';
-import { setBottomBand } from './shell.js';
+import { setBottomBand, setImmersive } from './shell.js';
 import { openWork } from './work-view.js';
 
 // DOM element references (set by init)
@@ -534,151 +534,6 @@ function buildAbcBandControls() {
 }
 
 /**
- * Build the collapsible focus-mode notes panel for list context.
- * Returns a wired element, or null when there's no list context.
- * The unified song page (work-view.js) appends it below the content.
- */
-export function buildFocusNotesPanel(song) {
-    if (!listContext || !listContext.listId) return null;
-
-    const songMetadata = getSongMetadata(listContext.listId, song?.id) || {};
-    const hasNotes = songMetadata.notes && songMetadata.notes.trim();
-    const notesCollapsed = localStorage.getItem('focusNotesCollapsed') !== 'false'; // collapsed by default
-    const savedPanelHeight = localStorage.getItem('focusNotesPanelHeight');
-
-    const panel = document.createElement('div');
-    panel.id = 'focus-notes-panel';
-    panel.className = `focus-notes-panel ${notesCollapsed ? 'collapsed' : ''}`;
-    panel.dataset.listId = listContext.listId;
-    panel.dataset.songId = song?.id || '';
-    if (savedPanelHeight) panel.style.setProperty('--panel-height', `${savedPanelHeight}px`);
-
-    panel.innerHTML = `
-        <div id="focus-notes-drag-handle" class="focus-notes-drag-handle" title="Drag to resize">
-            <span class="drag-handle-bar"></span>
-        </div>
-        <button id="focus-notes-toggle" class="focus-notes-toggle" title="Toggle notes panel">
-            <span class="focus-notes-toggle-icon">${notesCollapsed ? '▲' : '▼'}</span>
-            <span class="focus-notes-toggle-label">Notes</span>
-            ${hasNotes ? '<span class="focus-notes-indicator">•</span>' : ''}
-        </button>
-        <div class="focus-notes-content">
-            <div class="focus-notes-fields">
-                <div class="focus-notes-field">
-                    <label>Key</label>
-                    <select id="focus-notes-key">
-                        <option value="">--</option>
-                        ${['C', 'C#/Db', 'D', 'D#/Eb', 'E', 'F', 'F#/Gb', 'G', 'G#/Ab', 'A', 'A#/Bb', 'B'].map(k =>
-                            `<option value="${k}" ${songMetadata.key === k ? 'selected' : ''}>${k}</option>`
-                        ).join('')}
-                    </select>
-                </div>
-                <div class="focus-notes-field">
-                    <label>Tempo</label>
-                    <input type="number" id="focus-notes-tempo" min="40" max="300" value="${songMetadata.tempo || ''}" placeholder="BPM">
-                </div>
-            </div>
-            <div class="focus-notes-textarea-wrapper">
-                <textarea id="focus-notes-text" placeholder="Add notes for this song in this list...">${escapeHtml(songMetadata.notes || '')}</textarea>
-            </div>
-        </div>
-    `;
-
-    wireFocusNotesPanel(panel);
-    return panel;
-}
-
-/**
- * Wire the focus notes panel (element-scoped, works before insertion).
- */
-function wireFocusNotesPanel(panel) {
-    const listId = panel.dataset.listId;
-    const songId = panel.dataset.songId;
-
-    // Toggle button
-    const toggleBtn = panel.querySelector('#focus-notes-toggle');
-    const toggleIcon = panel.querySelector('.focus-notes-toggle-icon');
-    toggleBtn?.addEventListener('click', () => {
-        const isCollapsed = panel.classList.toggle('collapsed');
-        localStorage.setItem('focusNotesCollapsed', isCollapsed);
-        if (toggleIcon) toggleIcon.textContent = isCollapsed ? '▲' : '▼';
-    });
-
-    // Debounce helper for saving
-    let saveTimeout = null;
-    const debouncedSave = () => {
-        if (saveTimeout) clearTimeout(saveTimeout);
-        saveTimeout = setTimeout(() => {
-            const key = panel.querySelector('#focus-notes-key')?.value || '';
-            const tempo = panel.querySelector('#focus-notes-tempo')?.value || '';
-            const notes = panel.querySelector('#focus-notes-text')?.value || '';
-
-            updateSongMetadata(listId, songId, {
-                key: key || undefined,
-                tempo: tempo ? parseInt(tempo, 10) : undefined,
-                notes: notes || undefined
-            });
-
-            // Update the indicator
-            const indicator = panel.querySelector('.focus-notes-indicator');
-            if (notes.trim()) {
-                if (!indicator && toggleBtn) {
-                    const indicatorEl = document.createElement('span');
-                    indicatorEl.className = 'focus-notes-indicator';
-                    indicatorEl.textContent = '•';
-                    toggleBtn.appendChild(indicatorEl);
-                }
-            } else if (indicator) {
-                indicator.remove();
-            }
-        }, 500);
-    };
-
-    panel.querySelector('#focus-notes-key')?.addEventListener('change', debouncedSave);
-    panel.querySelector('#focus-notes-tempo')?.addEventListener('input', debouncedSave);
-    panel.querySelector('#focus-notes-text')?.addEventListener('input', debouncedSave);
-
-    // Drag handle for resizing
-    const dragHandle = panel.querySelector('#focus-notes-drag-handle');
-    if (dragHandle) {
-        let isDragging = false;
-        let startY = 0;
-        let startHeight = 0;
-
-        const onMouseDown = (e) => {
-            if (panel.classList.contains('collapsed')) return;
-            isDragging = true;
-            startY = e.clientY || e.touches?.[0]?.clientY;
-            startHeight = panel.offsetHeight;
-            document.body.classList.add('resizing-notes-panel');
-            e.preventDefault();
-        };
-
-        const onMouseMove = (e) => {
-            if (!isDragging) return;
-            const clientY = e.clientY || e.touches?.[0]?.clientY;
-            const deltaY = startY - clientY; // Negative because dragging up increases height
-            const newHeight = Math.max(100, Math.min(window.innerHeight * 0.8, startHeight + deltaY));
-            panel.style.setProperty('--panel-height', `${newHeight}px`);
-        };
-
-        const onMouseUp = () => {
-            if (!isDragging) return;
-            isDragging = false;
-            document.body.classList.remove('resizing-notes-panel');
-            localStorage.setItem('focusNotesPanelHeight', panel.offsetHeight);
-        };
-
-        dragHandle.addEventListener('mousedown', onMouseDown);
-        document.addEventListener('mousemove', onMouseMove);
-        document.addEventListener('mouseup', onMouseUp);
-        dragHandle.addEventListener('touchstart', onMouseDown, { passive: false });
-        document.addEventListener('touchmove', onMouseMove, { passive: false });
-        document.addEventListener('touchend', onMouseUp);
-    }
-}
-
-/**
  * Open a song — thin alias for the unified song page.
  * exact:true preserves openSong's historical contract of showing THIS
  * version rather than snapping to the group's canonical representative
@@ -873,24 +728,24 @@ export function closeVersionPicker() {
 }
 
 /**
- * Toggle fullscreen mode
+ * Toggle focus mode. Focus is now just the immersive shell: the top band
+ * slides away (hover/focus reveals it) while the content, pill row, and
+ * bottom band stay — no separate focus header or view fork.
  */
 export function toggleFullscreen() {
     const newMode = !fullscreenMode;
     setFullscreenMode(newMode);
-    document.body.classList.toggle('fullscreen-mode', newMode);
-
-    // Update nav bar visibility and content
+    setImmersive(newMode);
     updateNavBar();
 }
 
 /**
- * Exit fullscreen mode
+ * Exit focus (immersive) mode
  */
 export function exitFullscreen() {
     if (fullscreenMode) {
         setFullscreenMode(false);
-        document.body.classList.remove('fullscreen-mode');
+        setImmersive(false);
 
         // If we came from a list, go back to list view
         if (listContext && listContext.listId) {

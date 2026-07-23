@@ -2654,29 +2654,11 @@ function init() {
     songContent?.addEventListener('click', (e) => {
         const target = e.target;
 
-        // Focus button (in title row)
+        // Focus button (in title row) — focus is the immersive shell now;
+        // the old focus header/exit/prev/next buttons died with it (Esc and
+        // arrow keys still work via the global keydown handler).
         if (target.closest('#focus-btn')) {
             toggleFullscreen();
-            return;
-        }
-
-        // Focus-mode header/nav buttons — delegated here so they work on
-        // every render of the focus header without per-render wiring
-        if (target.closest('#focus-exit-btn')) {
-            exitFullscreen();
-            return;
-        }
-        if (target.closest('#focus-prev-btn')) {
-            navigatePrev();
-            return;
-        }
-        if (target.closest('#focus-next-btn')) {
-            navigateNext();
-            return;
-        }
-        if (target.closest('#focus-controls-toggle')) {
-            // Toggle the pill row (Key/Display/Info) in focus mode
-            document.getElementById('song-pill-row')?.classList.toggle('hidden');
             return;
         }
     });
