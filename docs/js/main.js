@@ -2023,6 +2023,9 @@ function init() {
             { id: 'lists', label: 'Lists', icon: '&#9776;', href: '#lists', onClick: () => { showSongListsView(); pushHistoryState('song-lists', {}); } },
         ],
         onToggleTheme: toggleTheme,
+        // Bug reports get a first-class top-band button (the old homepage
+        // "Report Bugs" sign is gone with the banner hero)
+        onReportBug: () => openFeedbackModal({ type: 'bug-report' }),
     });
     setOverflowBase([
         { label: 'About', onClick: () => { location.href = 'about.html'; } },
@@ -2195,13 +2198,6 @@ function init() {
     logoLink?.addEventListener('click', (e) => {
         e.preventDefault();
         goHome();
-    });
-
-    // Report bug link (homepage sign) -> unified feedback modal
-    const reportBugLink = document.getElementById('report-bug-link');
-    reportBugLink?.addEventListener('click', (e) => {
-        e.preventDefault();
-        openFeedbackModal({ type: 'bug-report' });
     });
 
     editorBackBtn?.addEventListener('click', () => navigateTo('search'));

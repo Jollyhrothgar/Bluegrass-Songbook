@@ -95,58 +95,13 @@ h1 {
     margin-bottom: 0.25rem;
 }
 
-.logo-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-    gap: 2rem;
-    margin: 0 auto;
-}
-
-.header-badge {
-    width: 150px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-.header-badge-left {
-    margin-right: auto;
-}
-
-.header-badge-right {
-    margin-left: auto;
-}
-
-.header-badge-link {
-    display: block;
-    transition: transform 0.2s, opacity 0.2s;
-}
-
-.header-badge-link:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-
-/* Dark theme: invert the header badges */
-[data-theme="dark"] .header-badge {
-    filter: invert(1);
-}
-
-/* Hide badges on small screens */
-@media (max-width: 600px) {
-    .header-badge {
-        display: none;
-    }
-}
-
 .site-logo {
     margin-bottom: 0.5rem;
 }
 
+/* The banner is wide filigree art; the plaque bg dissolves into the page */
 .site-logo img {
-    max-width: 150px;
+    max-width: 560px;
     width: 100%;
     height: auto;
     border-radius: 12px;

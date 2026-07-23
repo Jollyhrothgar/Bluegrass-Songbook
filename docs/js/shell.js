@@ -22,7 +22,7 @@ let openPopover = null; // only one pill/overflow popover open at a time
  * The existing #auth-section node is moved (not rebuilt) so supabase-auth
  * wiring keeps working untouched.
  */
-export function initShell({ nav = [], onToggleTheme } = {}) {
+export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
     if (topbarEl) return;
 
     topbarEl = document.createElement('header');
@@ -39,6 +39,7 @@ export function initShell({ nav = [], onToggleTheme } = {}) {
         <div class="topbar-title" id="topbar-title"></div>
         <div class="topbar-actions" id="topbar-actions"></div>
         <div class="topbar-right">
+            <button id="topbar-bug" class="topbar-icon-btn" title="Report a bug">🐛</button>
             <button id="topbar-theme" class="topbar-icon-btn" title="Toggle theme">◐</button>
             <div class="topbar-overflow">
                 <button id="topbar-overflow-btn" class="topbar-icon-btn" title="More">⋯</button>
@@ -79,6 +80,7 @@ export function initShell({ nav = [], onToggleTheme } = {}) {
     }
 
     topbarEl.querySelector('#topbar-theme').addEventListener('click', () => onToggleTheme?.());
+    topbarEl.querySelector('#topbar-bug').addEventListener('click', () => onReportBug?.());
 
     const overflowBtn = topbarEl.querySelector('#topbar-overflow-btn');
     overflowBtn.addEventListener('click', (e) => {
