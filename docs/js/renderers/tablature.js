@@ -734,9 +734,18 @@ export class TabRenderer {
                 this.drawRepeatEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
             }
 
-            // Draw ending bracket if this measure is part of an ending
-            if (measure.ending) {
-                this.drawEndingBracket(svg, x, measureWidth, opt.topMargin, measure.ending, opt);
+            // Draw ONE ending bracket per contiguous run of same-numbered
+            // ending measures (spanning the whole run), not one per measure —
+            // a long 1st ending (e.g. a 21-bar volta) otherwise stamps "1." on
+            // every bar. Single-measure endings render identically to before.
+            if (measure.ending && (mi === 0 || measures[mi - 1].ending !== measure.ending)) {
+                let runEnd = mi;
+                while (runEnd + 1 < measures.length
+                       && measures[runEnd + 1].ending === measure.ending) {
+                    runEnd++;
+                }
+                const runWidth = (measureGeoms[runEnd].x + measureGeoms[runEnd].width) - x;
+                this.drawEndingBracket(svg, x, runWidth, opt.topMargin, measure.ending, opt);
             }
 
             // Time-signature glyph at signature changes (and measure 1)
