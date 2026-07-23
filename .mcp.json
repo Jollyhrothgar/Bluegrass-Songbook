@@ -7,6 +7,14 @@
       "env": {
         "PATH": "/Users/mike/.nvm/versions/node/v22.17.1/bin:/usr/bin:/bin"
       }
+    },
+    "chrome-devtools-qa": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest", "--headless", "--isolated"],
+      "env": {
+        "PATH": "/Users/mike/.nvm/versions/node/v22.17.1/bin:/usr/bin:/bin"
+      }
     }
   }
 }
