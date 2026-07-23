@@ -830,6 +830,28 @@ This is the [G]chorus [D]part
             </div>
         </div>
 
+        <!-- Admin Delete Modal: lists every version in the group so the admin
+             deletes the copy they mean, not just the search representative -->
+        <div id="delete-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="delete-modal-title">Delete Song</h2>
+                    <button id="delete-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="delete-modal-hint">Select which version(s) to mark for deletion.
+                        Deletion takes effect after the next deleted-songs sync and rebuild.</p>
+                    <div id="delete-candidate-list" class="delete-candidate-list">
+                        <!-- Dynamic candidate rows -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="delete-modal-confirm" class="action-btn danger" disabled>Delete selected</button>
+                    <span id="delete-status" class="copy-status"></span>
+                </div>
+            </div>
+        </div>
+
         <!-- Song Request Modal -->
         <!-- Flag Issue Modal -->
         <div id="flag-modal" class="modal hidden">

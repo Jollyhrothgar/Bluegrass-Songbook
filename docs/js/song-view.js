@@ -8,7 +8,6 @@ import {
     nashvilleMode, setNashvilleMode,
     twoColumnMode, setTwoColumnMode,
     chordDisplayMode, setChordDisplayMode,
-    seenChordPatterns, clearSeenChordPatterns, addSeenChordPattern,
     showSectionLabels, setShowSectionLabels,
     showChordProSource, setShowChordProSource,
     fontSizeLevel, setFontSizeLevel,
@@ -42,10 +41,10 @@ import {
 } from './state.js';
 import { escapeHtml, isTabOnlyWork, isPlaceholder, hasMultipleParts } from './utils.js';
 import {
-    parseLineWithChords, extractChords, detectKey,
-    getSemitonesBetweenKeys, transposeChord, toNashville,
+    extractChords, detectKey,
     CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
 } from './chords.js';
+import { parseChordPro, renderSectionsHtml } from './renderers/chordpro.js';
 import { updateListPickerButton, updateFavoriteButton, clearListView, openNotesSheet, getSongMetadata, updateSongMetadata } from './lists.js';
 import { renderTagBadges, getTagCategory, formatTagName } from './tags.js';
 import {
@@ -77,130 +76,9 @@ let fullscreenBtnEl = null;
 let pushHistoryStateFn = null;
 let showViewFn = null;
 
-/**
- * Parse ChordPro content into structured sections
- */
-export function parseChordPro(chordpro) {
-    const lines = chordpro.split('\n');
-    const metadata = {};
-    const sections = [];
-    let currentSection = null;
-    let inAbcBlock = false;
-    let abcLines = [];
-
-    for (const line of lines) {
-        // Handle ABC notation blocks
-        if (line.match(/\{start_of_abc\}/i)) {
-            inAbcBlock = true;
-            abcLines = [];
-            continue;
-        }
-
-        if (line.match(/\{end_of_abc\}/i)) {
-            inAbcBlock = false;
-            // Store ABC as a special section
-            if (abcLines.length > 0) {
-                sections.push({
-                    type: 'abc',
-                    label: 'Notation',
-                    abc: abcLines.join('\n')
-                });
-            }
-            continue;
-        }
-
-        if (inAbcBlock) {
-            abcLines.push(line);
-            continue;
-        }
-
-        const metaMatch = line.match(/\{meta:\s*(\w+)\s+([^}]+)\}/);
-        if (metaMatch) {
-            const [, key, value] = metaMatch;
-            metadata[key.toLowerCase()] = value;
-            continue;
-        }
-
-        const sectionMatch = line.match(/\{start_of_(verse|chorus|bridge)(?::\s*([^}]+))?\}/);
-        if (sectionMatch) {
-            const [, type, label] = sectionMatch;
-            currentSection = {
-                type: type,
-                label: label || type.charAt(0).toUpperCase() + type.slice(1),
-                lines: []
-            };
-            sections.push(currentSection);
-            continue;
-        }
-
-        if (line.match(/\{end_of_(verse|chorus|bridge)\}/)) {
-            currentSection = null;
-            continue;
-        }
-
-        if (line.match(/^\{.*\}$/)) {
-            continue;
-        }
-
-        if (currentSection && line.trim()) {
-            currentSection.lines.push(line);
-        }
-    }
-
-    return { metadata, sections };
-}
-
-/**
- * Render a single line with chords above lyrics using inline segments.
- * Each chord+lyrics chunk is an inline-block so chords wrap with their lyrics.
- */
-function renderLine(line, hideChords = false) {
-    const { chords, lyrics } = parseLineWithChords(line);
-
-    // No chords mode or hideChords flag - just show lyrics
-    if (chords.length === 0 || chordDisplayMode === 'none' || hideChords) {
-        return `<div class="song-line"><div class="lyrics-line">${escapeHtml(lyrics)}</div></div>`;
-    }
-
-    // Calculate transposition if key was changed
-    const semitones = getSemitonesBetweenKeys(originalDetectedKey, currentDetectedKey);
-
-    // Build inline segments: each chord paired with its following lyrics
-    const segments = [];
-    let lastLyricsPos = 0;
-
-    for (let i = 0; i < chords.length; i++) {
-        const { chord, position } = chords[i];
-        const nextPos = i + 1 < chords.length ? chords[i + 1].position : lyrics.length;
-
-        // Lyrics before the first chord (no chord above)
-        if (i === 0 && position > 0) {
-            const prefixLyrics = lyrics.slice(0, position);
-            segments.push({ chord: '', lyrics: prefixLyrics });
-        }
-
-        const transposedChord = semitones !== 0 ? transposeChord(chord, semitones) : chord;
-        const displayChord = nashvilleMode && currentDetectedKey
-            ? toNashville(transposedChord, currentDetectedKey)
-            : transposedChord;
-
-        const segmentLyrics = lyrics.slice(position, nextPos);
-        segments.push({ chord: displayChord, lyrics: segmentLyrics });
-        lastLyricsPos = nextPos;
-    }
-
-    // Build HTML from segments
-    let html = '';
-    for (const seg of segments) {
-        const chordHtml = seg.chord
-            ? `<span class="cl-chord">${escapeHtml(seg.chord)}</span>`
-            : `<span class="cl-chord">&nbsp;</span>`;
-        const lyricsHtml = escapeHtml(seg.lyrics) || '&nbsp;';
-        html += `<span class="cl-segment">${chordHtml}${lyricsHtml}</span>`;
-    }
-
-    return `<div class="song-line cl-line">${html}</div>`;
-}
+// ChordPro parsing/section rendering lives in the shared renderer module.
+// Re-exported so existing importers (tests, work-view) keep working.
+export { parseChordPro };
 
 /**
  * Detect wrapped chord-lyrics lines and add a visual indicator.
@@ -216,46 +94,6 @@ function markWrappedLines() {
         const singleLineHeight = firstSeg.offsetHeight;
         line.classList.toggle('wrapped', line.scrollHeight > singleLineHeight + 2);
     }
-}
-
-/**
- * Extract chord pattern from a section
- */
-function getSectionChordPattern(section) {
-    const chords = [];
-    for (const line of section.lines) {
-        const { chords: lineChords } = parseLineWithChords(line);
-        for (const { chord } of lineChords) {
-            chords.push(chord);
-        }
-    }
-    return chords.join('-');
-}
-
-/**
- * Render a section (verse, chorus, etc.)
- */
-function renderSection(section, isRepeatedSection = false, hideChords = false) {
-    const lines = section.lines.map(line => renderLine(line, hideChords)).join('');
-    const shouldIndent = section.type === 'chorus' || isRepeatedSection;
-    const indentClass = shouldIndent ? 'section-indent' : '';
-    const labelHtml = showSectionLabels ? `<div class="section-label">${escapeHtml(section.label)}</div>` : '';
-
-    return `
-        <div class="song-section ${indentClass}">
-            ${labelHtml}
-            <div class="section-content">${lines}</div>
-        </div>
-    `;
-}
-
-/**
- * Render a repeat indicator (for compact mode)
- */
-function renderRepeatIndicator(label, count, shouldIndent) {
-    const indentClass = shouldIndent ? 'section-indent' : '';
-    const repeatText = count > 1 ? `(Repeat ${label} ×${count})` : `(Repeat ${label})`;
-    return `<div class="section-repeat ${indentClass}">${repeatText}</div>`;
 }
 
 /**
@@ -464,9 +302,6 @@ export function renderSong(song, chordpro, isInitialRender = false) {
     const editSongBtn = document.getElementById('edit-song-btn');
     if (editSongBtn) editSongBtn.style.display = '';
 
-    // Reset seen chord patterns for 'first' mode
-    clearSeenChordPatterns();
-
     const { metadata, sections } = parseChordPro(chordpro);
 
     // Use precomputed key from index if available, otherwise detect
@@ -531,54 +366,15 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         setAbcTempoBpm(tempoMatch ? parseInt(tempoMatch[1], 10) : 120);
     }
 
-    const totalCounts = {};
-    for (const section of chordSections) {
-        totalCounts[section.label] = (totalCounts[section.label] || 0) + 1;
-    }
-
-    // Track section content to distinguish true repeats from sections with same label but different lyrics
-    const seenSections = new Map(); // label → content fingerprint
-    let sectionsHtml = '';
-    let i = 0;
-
-    while (i < chordSections.length) {
-        const section = chordSections[i];
-        const sectionKey = section.label;
-        const isRepeatedSection = totalCounts[sectionKey] > 1;
-        const shouldIndent = section.type === 'chorus' || isRepeatedSection;
-        const sectionContent = section.lines.map(l => l.trimEnd()).join('\n');
-
-        // In 'first' mode, check if we've seen this chord pattern before
-        let hideChords = false;
-        if (chordDisplayMode === 'first') {
-            const chordPattern = getSectionChordPattern(section);
-            if (chordPattern) {
-                if (seenChordPatterns.has(chordPattern)) {
-                    hideChords = true;
-                } else {
-                    addSeenChordPattern(chordPattern);
-                }
-            }
-        }
-
-        if (!seenSections.has(sectionKey)) {
-            seenSections.set(sectionKey, sectionContent);
-            sectionsHtml += renderSection(section, isRepeatedSection, hideChords);
-            i++;
-        } else if (compactMode && sectionContent === seenSections.get(sectionKey)) {
-            // Only collapse if lyrics+chords are identical to the first instance
-            let consecutiveCount = 0;
-            while (i < chordSections.length && chordSections[i].label === sectionKey
-                   && chordSections[i].lines.map(l => l.trimEnd()).join('\n') === seenSections.get(sectionKey)) {
-                consecutiveCount++;
-                i++;
-            }
-            sectionsHtml += renderRepeatIndicator(sectionKey, consecutiveCount, shouldIndent);
-        } else {
-            sectionsHtml += renderSection(section, isRepeatedSection, hideChords);
-            i++;
-        }
-    }
+    const sectionsHtml = renderSectionsHtml(chordSections, {
+        key: originalDetectedKey,
+        transposeTo: currentDetectedKey,
+        nashville: nashvilleMode,
+        chordMode: chordDisplayMode,
+        compact: compactMode,
+        sectionLabels: showSectionLabels,
+        twoColumn: twoColumnMode
+    });
 
     const title = metadata.title || song?.title || 'Unknown Title';
     const artist = metadata.artist || song?.artist || '';
@@ -1815,8 +1611,11 @@ export async function showVersionPicker(groupId, options = {}) {
         }
     }
 
-    // Sort versions by vote count (highest first)
+    // Sort versions: canonical (editorially pinned) first, then by vote count
     const sortedVersions = [...versions].sort((a, b) => {
+        const aCanonical = a.canonical === true ? 1 : 0;
+        const bCanonical = b.canonical === true ? 1 : 0;
+        if (aCanonical !== bCanonical) return bCanonical - aCanonical;
         return (voteCounts[b.id] || 0) - (voteCounts[a.id] || 0);
     });
 
@@ -1832,10 +1631,11 @@ export async function showVersionPicker(groupId, options = {}) {
         const hasVoted = userVotes[song.id] ? 'voted' : '';
         const isCurrent = song.id === currentSongId;
 
-        // Build version label - prefer tab author for tab-only songs
+        // Build version label - prefer curation registry label, then
+        // ChordPro version_label, then tab author for tab-only songs
         const tabPart = song.tablature_parts?.[0];
         const hasTabOnly = isTabOnlyWork(song);
-        let versionLabel = song.version_label;
+        let versionLabel = song.variant_label || song.version_label;
 
         // Check for title variations (e.g., "Angeline Baker (C)" vs "Angeline Baker (D)")
         // Extract any parenthetical suffix that differs from the base title
@@ -1881,11 +1681,12 @@ export async function showVersionPicker(groupId, options = {}) {
         const versionMeta = metaParts.join(' • ');
 
         const firstLine = song.first_line ? song.first_line.substring(0, 60) + (song.first_line.length > 60 ? '...' : '') : '';
+        const canonicalBadge = song.canonical === true ? '<span class="canonical-badge">Canonical</span>' : '';
 
         return `
             <div class="version-item ${isCurrent ? 'current' : ''}" data-song-id="${song.id}" data-group-id="${groupId}">
                 <div class="version-info">
-                    <div class="version-label">${escapeHtml(versionLabel)}${isCurrent ? '<span class="current-badge">viewing</span>' : ''}</div>
+                    <div class="version-label">${escapeHtml(versionLabel)}${canonicalBadge}${isCurrent ? '<span class="current-badge">viewing</span>' : ''}</div>
                     <div class="version-meta">${escapeHtml(versionMeta)}</div>
                     ${firstLine ? `<div class="version-first-line">"${escapeHtml(firstLine)}"</div>` : ''}
                     ${song.version_notes ? `<div class="version-notes">${escapeHtml(song.version_notes)}</div>` : ''}

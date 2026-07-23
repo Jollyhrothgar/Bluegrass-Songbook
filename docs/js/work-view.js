@@ -22,8 +22,9 @@ import {
     setAbcjsRendered, setCurrentAbcContent
 } from './state.js';
 
+import { parseChordPro } from './renderers/chordpro.js';
 import {
-    parseChordPro, showVersionPicker,
+    showVersionPicker,
     openSong,
     toggleFullscreen, exitFullscreen,
     navigatePrev, navigateNext,
@@ -95,11 +96,14 @@ let currentGroupVersions = [];   // All versions in the current group (for versi
 
 /**
  * Pick the best representative version from a group for display.
- * Prefers: version with content > most chords > highest canonical_rank.
+ * A canonical row (editorially pinned via curation/registry.yaml) wins
+ * outright; otherwise prefers: content > most chords > highest canonical_rank.
  */
 function pickRepresentative(versions) {
     if (versions.length === 0) return null;
     if (versions.length === 1) return versions[0];
+    const pinned = versions.find(v => v.canonical === true);
+    if (pinned) return pinned;
     return [...versions].sort((a, b) => {
         const aHasContent = a.content ? 1 : 0;
         const bHasContent = b.content ? 1 : 0;

@@ -12,6 +12,7 @@ on:
       - "Process Song Submission"
       - "Process Song Correction"
       - "Process Tune Request"
+      - "Sync Deleted Songs"
     types: [completed]
     branches: [main]
 

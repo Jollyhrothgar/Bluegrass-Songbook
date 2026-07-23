@@ -1,0 +1,53 @@
+name: Sync Deleted Songs
+
+# Bridges the Supabase deleted_songs table (written by admin deletes in the UI)
+# into the committed cache the build actually reads. Without this, UI deletes
+# never reach the deployed index and "deleted" songs resurrect on every deploy.
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: sync-deleted-songs
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Fetch deleted songs from Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          # fetch_deleted_songs.py silently falls back to the cached file when
+          # creds are missing — fail loudly here instead so a misconfigured
+          # secret can't masquerade as "nothing to sync".
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "::error::SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY secrets are not set"
+            exit 1
+          fi
+          uv run --with supabase python scripts/lib/fetch_deleted_songs.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/deleted_songs.json
+          git diff --staged --quiet || git commit -m "Sync deleted songs from Supabase"
+
+          # Retry push with rebase in case of concurrent pushes
+          for i in 1 2 3; do
+            git push && break
+            git pull --rebase && sleep 2
+          done

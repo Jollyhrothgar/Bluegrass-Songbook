@@ -47,9 +47,10 @@ import { openWork, renderWorkView, teardownTablatureView, getCurrentWork, getAct
 import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
-import { escapeHtml, requireLogin, isPlaceholder, isTabOnlyWork, hasMultipleParts, parseItemRef } from './utils.js';
+import { escapeHtml, requireLogin, isPlaceholder, isTabOnlyWork, hasMultipleParts, parseItemRef, buildDeleteCandidates } from './utils.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
+import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
 import { initFlags, openFlagModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
@@ -136,6 +137,8 @@ const createListBtn = document.getElementById('create-list-btn');
 // Account modal
 const accountModal = document.getElementById('account-modal');
 const accountModalClose = document.getElementById('account-modal-close');
+const deleteModal = document.getElementById('delete-modal');
+const deleteModalClose = document.getElementById('delete-modal-close');
 const signInBtn = document.getElementById('sign-in-btn');
 const userInfo = document.getElementById('user-info');
 const userAvatar = document.getElementById('user-avatar');
@@ -1384,33 +1387,60 @@ function updateDeleteButtonVisibility() {
     }
 }
 
-// Handle song deletion with confirmation
-async function handleDeleteSong() {
+// Handle song deletion. Opens a modal listing every version in the group:
+// the viewed song is the group's *representative*, so a blind delete of
+// currentSong.id can remove the wrong copy while the duplicate lives on.
+function handleDeleteSong() {
     const song = getCurrentSong();
     if (!song) return;
 
-    const confirmed = confirm(
-        `Are you sure you want to delete "${song.title}"?\n\n` +
-        `This will remove the song from the songbook permanently.\n` +
-        `(The change will take effect after the next index rebuild.)`
-    );
+    const candidates = buildDeleteCandidates(song, songGroups);
+    const listEl = document.getElementById('delete-candidate-list');
+    const confirmBtn = document.getElementById('delete-modal-confirm');
+    const statusEl = document.getElementById('delete-status');
+    if (!listEl || !confirmBtn) return;
 
-    if (!confirmed) return;
+    statusEl.textContent = '';
+    listEl.innerHTML = candidates.map(c => `
+        <label class="delete-candidate${c.isCurrent ? ' current' : ''}">
+            <input type="checkbox" value="${escapeHtml(c.id)}" ${c.isCurrent ? 'checked' : ''}>
+            <div>
+                <div><strong>${escapeHtml(c.title)}</strong>${c.isCurrent ? ' (viewing)' : ''}</div>
+                <div class="candidate-meta">${escapeHtml(c.id)} · ${escapeHtml(c.source)}${c.key ? ` · Key: ${escapeHtml(c.key)}` : ''} · ${c.chordCount} chords</div>
+                ${c.firstLine ? `<div class="candidate-first-line">"${escapeHtml(c.firstLine)}"</div>` : ''}
+            </div>
+        </label>
+    `).join('');
 
+    const updateConfirm = () => {
+        confirmBtn.disabled = listEl.querySelectorAll('input:checked').length === 0;
+    };
+    listEl.querySelectorAll('input').forEach(cb => cb.addEventListener('change', updateConfirm));
+    updateConfirm();
+
+    confirmBtn.onclick = () => confirmDeleteSelected(listEl, confirmBtn, statusEl);
+    deleteModal?.classList.remove('hidden');
+}
+
+async function confirmDeleteSelected(listEl, confirmBtn, statusEl) {
+    const ids = [...listEl.querySelectorAll('input:checked')].map(cb => cb.value);
+    if (!ids.length) return;
+
+    confirmBtn.disabled = true;
+    statusEl.textContent = 'Deleting…';
     try {
-        const { data, error } = await SupabaseAuth.deleteSong(song.id);
-        if (error) {
-            alert(`Failed to delete song: ${error.message}`);
-            return;
+        for (const id of ids) {
+            const { error } = await SupabaseAuth.deleteSong(id);
+            if (error) throw new Error(`${id}: ${error.message}`);
         }
-
-        alert(`Song "${song.title}" has been marked for deletion.\n\nIt will be removed after the next index rebuild.`);
-
-        // Navigate back to search
+        statusEl.textContent = '';
+        deleteModal?.classList.add('hidden');
+        alert(`Marked for deletion: ${ids.join(', ')}\n\nTakes effect after the next deleted-songs sync and rebuild.`);
         goBack();
     } catch (err) {
         console.error('Error deleting song:', err);
-        alert(`Failed to delete song: ${err.message}`);
+        statusEl.textContent = `Failed: ${err.message}`;
+        confirmBtn.disabled = false;
     }
 }
 
@@ -1903,14 +1933,30 @@ function openPrintListView() {
 }
 
 function generatePrintListPage(listName, songs, prefs) {
-    // Build songs data for the print page
-    const songsData = songs.map(song => ({
-        id: song.id,
-        title: song.title || 'Unknown',
-        artist: song.artist || '',
-        key: song.key || 'C',
-        content: song.content || ''
-    }));
+    // Pre-render every song HERE in the main window via the shared ChordPro
+    // renderer (renderers/chordpro.js). The print window receives static
+    // HTML only — its controls just toggle CSS body classes, so zero
+    // parsing/rendering/transposition logic ships inside the page.
+    const songsHtml = songs.map((song, idx) => {
+        const { sections } = parseChordPro(song.content || '');
+        const body = renderSectionsPrintHtml(sections, { key: song.key || 'C' });
+        return `<div class="song-container">
+            <div class="song-header">
+                <div class="title">${idx + 1}. ${escapeHtml(song.title || 'Unknown')}</div>
+                ${song.artist ? `<div class="artist">${escapeHtml(song.artist)}</div>` : ''}
+                <div class="key-info">Key: ${escapeHtml(song.key || 'C')}</div>
+            </div>
+            <div class="song-content">${body}</div>
+        </div>`;
+    }).join('');
+
+    const bodyClasses = ['page-per-song'];
+    if (prefs.twoColumnMode) bodyClasses.push('two-columns');
+    if (!prefs.showSectionLabels) bodyClasses.push('hide-labels');
+    if (prefs.nashvilleMode) bodyClasses.push('nashville');
+    if (prefs.compactMode) bodyClasses.push('compact');
+    if (prefs.chordDisplayMode === 'first') bodyClasses.push('chords-first');
+    if (prefs.chordDisplayMode === 'none') bodyClasses.push('chords-none');
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -2071,22 +2117,30 @@ function generatePrintListPage(listName, songs, prefs) {
             white-space: pre;
             line-height: 1.2;
         }
-        .chord-line.nashville { color: #444; }
         .lyric-line {
             white-space: pre;
             line-height: 1.3;
         }
-        .hide-chords .chord-line { display: none; }
+        /* Display-mode toggles: every variant is pre-rendered; body classes
+           (set by the tiny control script) choose what shows. */
+        .chord-line.nashville { color: #444; display: none; }
+        body.nashville .chord-line.nashville { display: block; }
+        body.nashville .chord-line.standard { display: none; }
+        body.chords-none .chord-line { display: none; }
+        body.chords-first .section.is-repeat .chord-line { display: none; }
         .repeat-instruction {
+            display: none;
             font-style: italic;
             color: #666;
             margin: 0.5rem 0;
             font-family: system-ui, sans-serif;
         }
+        body.compact .repeat-instruction { display: block; }
+        body.compact .section.is-repeat { display: none; }
         .song-content { font-size: var(--font-size, 14px); }
     </style>
 </head>
-<body class="page-per-song${prefs.twoColumnMode ? ' two-columns' : ''}${!prefs.showSectionLabels ? ' hide-labels' : ''}">
+<body class="${bodyClasses.join(' ')}">
     <div class="controls">
         <div class="font-size-control">
             <span class="control-label">Size:</span>
@@ -2112,251 +2166,28 @@ function generatePrintListPage(listName, songs, prefs) {
         <button class="print-btn" onclick="window.print()">Print</button>
     </div>
 
-    <div id="songs-container"></div>
+    <div id="songs-container">${songsHtml}</div>
 
     <script>
-        const KEYS = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
-        const songsData = ${JSON.stringify(songsData)};
-        let nashvilleMode = ${prefs.nashvilleMode};
-        let compactMode = ${prefs.compactMode};
-        let chordMode = '${prefs.chordDisplayMode}';
-
-        function normalizeKey(key) {
-            const map = { 'Db': 'C#', 'D#': 'Eb', 'Gb': 'F#', 'G#': 'Ab', 'A#': 'Bb' };
-            return map[key] || key;
-        }
-
-        function toNashville(chord, key) {
-            const degrees = { 0: 'I', 1: '#I', 2: 'II', 3: 'bIII', 4: 'III', 5: 'IV',
-                            6: '#IV', 7: 'V', 8: 'bVI', 9: 'VI', 10: 'bVII', 11: 'VII' };
-            const match = chord.match(/^([A-G][#b]?)(.*)$/);
-            if (!match) return chord;
-            const [, root, suffix] = match;
-            const keyIdx = KEYS.indexOf(normalizeKey(key));
-            const chordIdx = KEYS.indexOf(normalizeKey(root));
-            if (keyIdx === -1 || chordIdx === -1) return chord;
-            const interval = (chordIdx - keyIdx + 12) % 12;
-            let degree = degrees[interval] || interval.toString();
-            if (suffix.startsWith('m') && !suffix.startsWith('maj')) {
-                degree = degree.toLowerCase();
-            }
-            return degree + suffix.replace(/^m(?!aj)/, '');
-        }
-
-        function lineToAscii(line, songKey) {
-            const chordRegex = /\\[([^\\]]+)\\]/g;
-            const chords = [];
-            let match;
-            let lastIndex = 0;
-            let lyricsOnly = '';
-
-            while ((match = chordRegex.exec(line)) !== null) {
-                lyricsOnly += line.substring(lastIndex, match.index);
-                let chord = match[1];
-                if (nashvilleMode) {
-                    chord = toNashville(chord, songKey);
-                }
-                chords.push({ chord, position: lyricsOnly.length });
-                lastIndex = match.index + match[0].length;
-            }
-            lyricsOnly += line.substring(lastIndex);
-
-            let chordLine = '';
-            for (const { chord, position } of chords) {
-                const minPos = chordLine.length > 0 ? chordLine.length + 1 : 0;
-                const targetPos = Math.max(position, minPos);
-                while (chordLine.length < targetPos) {
-                    chordLine += ' ';
-                }
-                chordLine += chord;
-            }
-
-            return { chordLine: chordLine.trimEnd(), lyricLine: lyricsOnly };
-        }
-
-        function escapeHtmlInline(text) {
-            return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        }
-
-        function renderSong(song) {
-            const NL = String.fromCharCode(10);
-            const lines = song.content.split(NL);
-            let html = '';
-            let inSection = false;
-            let currentSectionType = '';
-            let currentSectionLabel = '';
-            let currentSectionLines = [];
-            const seenSections = {};
-
-            function renderSection(sectionLines, hideChords) {
-                let sectionHtml = '';
-                for (const line of sectionLines) {
-                    if (!line.trim()) {
-                        sectionHtml += '<div class="line-group"><div class="lyric-line">&nbsp;</div></div>';
-                        continue;
-                    }
-                    const { chordLine, lyricLine } = lineToAscii(line, song.key);
-                    sectionHtml += '<div class="line-group">';
-                    if (chordLine && !hideChords) {
-                        sectionHtml += '<div class="chord-line' + (nashvilleMode ? ' nashville' : '') + '">' +
-                                escapeHtmlInline(chordLine) + '</div>';
-                    }
-                    sectionHtml += '<div class="lyric-line">' + escapeHtmlInline(lyricLine || ' ') + '</div>';
-                    sectionHtml += '</div>';
-                }
-                return sectionHtml;
-            }
-
-            function flushSection() {
-                if (!currentSectionType) return;
-                const contentKey = currentSectionLines.join(NL).trim();
-                const label = currentSectionLabel || currentSectionType.charAt(0).toUpperCase() + currentSectionType.slice(1);
-
-                let foundMatch = null;
-                if (compactMode || chordMode === 'first') {
-                    for (const key in seenSections) {
-                        if (seenSections[key].content === contentKey) {
-                            foundMatch = seenSections[key];
-                            break;
-                        }
-                    }
-                }
-
-                const hideChords = chordMode === 'none' || (chordMode === 'first' && foundMatch);
-
-                if (compactMode && foundMatch) {
-                    html += '<div class="repeat-instruction">[Repeat ' + foundMatch.label + ']</div>';
-                } else {
-                    html += '<div class="section"><div class="section-label">' + label + '</div>';
-                    html += renderSection(currentSectionLines, hideChords);
-                    html += '</div>';
-
-                    if (!foundMatch) {
-                        const uniqueKey = currentSectionType + '_' + Object.keys(seenSections).length;
-                        seenSections[uniqueKey] = { content: contentKey, label: label };
-                    }
-                }
-
-                currentSectionType = '';
-                currentSectionLabel = '';
-                currentSectionLines = [];
-            }
-
-            for (const line of lines) {
-                if (line.indexOf('{meta:') === 0) continue;
-
-                if (line.indexOf('{start_of_') === 0) {
-                    flushSection();
-                    const typeMatch = line.match(/start_of_(verse|chorus|bridge)/);
-                    if (typeMatch) {
-                        currentSectionType = typeMatch[1];
-                        const colonIdx = line.indexOf(':');
-                        if (colonIdx > 0) {
-                            currentSectionLabel = line.substring(colonIdx + 1, line.length - 1).trim();
-                        } else {
-                            currentSectionLabel = '';
-                        }
-                        inSection = true;
-                        continue;
-                    }
-                }
-
-                if (line.indexOf('{end_of_') === 0) {
-                    flushSection();
-                    inSection = false;
-                    continue;
-                }
-
-                if (line.charAt(0) === '{' && line.charAt(line.length - 1) === '}') continue;
-
-                if (inSection) {
-                    currentSectionLines.push(line);
-                } else {
-                    if (!line.trim()) {
-                        html += '<div class="line-group"><div class="lyric-line">&nbsp;</div></div>';
-                        continue;
-                    }
-                    const { chordLine, lyricLine } = lineToAscii(line, song.key);
-                    html += '<div class="line-group">';
-                    if (chordLine) {
-                        html += '<div class="chord-line' + (nashvilleMode ? ' nashville' : '') + '">' +
-                                escapeHtmlInline(chordLine) + '</div>';
-                    }
-                    html += '<div class="lyric-line">' + escapeHtmlInline(lyricLine || ' ') + '</div>';
-                    html += '</div>';
-                }
-            }
-
-            flushSection();
-            return html;
-        }
-
-        function renderAllSongs() {
-            const container = document.getElementById('songs-container');
-            container.innerHTML = songsData.map((song, idx) => {
-                return '<div class="song-container">' +
-                    '<div class="song-header">' +
-                        '<div class="title">' + (idx + 1) + '. ' + escapeHtmlInline(song.title) + '</div>' +
-                        (song.artist ? '<div class="artist">' + escapeHtmlInline(song.artist) + '</div>' : '') +
-                        '<div class="key-info">Key: ' + escapeHtmlInline(song.key) + '</div>' +
-                    '</div>' +
-                    '<div class="song-content">' + renderSong(song) + '</div>' +
-                '</div>';
-            }).join('');
-        }
-
-        let currentFontSize = 14;
-        const fontSizeInput = document.getElementById('font-size-input');
-
-        function updateFontSize() {
-            currentFontSize = Math.max(8, Math.min(32, currentFontSize));
-            document.documentElement.style.setProperty('--font-size', currentFontSize + 'px');
-            fontSizeInput.value = currentFontSize;
-        }
-
-        document.getElementById('font-decrease').addEventListener('click', () => {
-            currentFontSize -= 2;
-            updateFontSize();
+        const B = document.body.classList;
+        const bind = (id, fn) => document.getElementById(id).addEventListener('change', fn);
+        bind('chord-mode-select', e => {
+            B.toggle('chords-none', e.target.value === 'none');
+            B.toggle('chords-first', e.target.value === 'first');
         });
-
-        document.getElementById('font-increase').addEventListener('click', () => {
-            currentFontSize += 2;
-            updateFontSize();
-        });
-
-        fontSizeInput.addEventListener('change', (e) => {
-            currentFontSize = parseInt(e.target.value, 10) || 14;
-            updateFontSize();
-        });
-
-        document.getElementById('nashville-toggle').addEventListener('change', (e) => {
-            nashvilleMode = e.target.checked;
-            renderAllSongs();
-        });
-
-        document.getElementById('chord-mode-select').addEventListener('change', (e) => {
-            chordMode = e.target.value;
-            renderAllSongs();
-        });
-
-        document.getElementById('labels-toggle').addEventListener('change', (e) => {
-            document.body.classList.toggle('hide-labels', !e.target.checked);
-        });
-
-        document.getElementById('columns-toggle').addEventListener('change', (e) => {
-            document.body.classList.toggle('two-columns', e.target.checked);
-        });
-
-        document.getElementById('compact-toggle').addEventListener('change', (e) => {
-            compactMode = e.target.checked;
-            renderAllSongs();
-        });
-
-        document.getElementById('page-per-song-toggle').addEventListener('change', (e) => {
-            document.body.classList.toggle('page-per-song', e.target.checked);
-        });
-
-        renderAllSongs();
+        bind('compact-toggle', e => B.toggle('compact', e.target.checked));
+        bind('nashville-toggle', e => B.toggle('nashville', e.target.checked));
+        bind('columns-toggle', e => B.toggle('two-columns', e.target.checked));
+        bind('labels-toggle', e => B.toggle('hide-labels', !e.target.checked));
+        bind('page-per-song-toggle', e => B.toggle('page-per-song', e.target.checked));
+        const input = document.getElementById('font-size-input');
+        const setSize = v => {
+            input.value = Math.max(8, Math.min(32, v || 14));
+            document.documentElement.style.setProperty('--font-size', input.value + 'px');
+        };
+        document.getElementById('font-decrease').addEventListener('click', () => setSize(+input.value - 2));
+        document.getElementById('font-increase').addEventListener('click', () => setSize(+input.value + 2));
+        input.addEventListener('change', () => setSize(+input.value));
     <\/script>
 </body>
 </html>`;
@@ -2631,6 +2462,7 @@ function init() {
 
     // Account modal
     accountModalClose?.addEventListener('click', closeAccountModal);
+    deleteModalClose?.addEventListener('click', () => deleteModal?.classList.add('hidden'));
     accountModal?.addEventListener('click', (e) => {
         if (e.target === accountModal) closeAccountModal();
     });

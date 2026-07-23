@@ -6845,6 +6845,48 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     gap: 0.5rem;
 }
 
+/* Admin delete modal: one selectable row per group member */
+.delete-candidate-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.delete-candidate {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.75rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete-candidate input[type="checkbox"] {
+    margin-top: 0.2rem;
+}
+
+.delete-candidate .candidate-meta {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.delete-candidate .candidate-first-line {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.delete-candidate.current {
+    border-color: var(--accent);
+}
+
+.delete-modal-hint {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
 .version-item {
     display: flex;
     justify-content: space-between;
@@ -6963,6 +7005,20 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     text-transform: uppercase;
     color: var(--accent);
     background: rgba(79, 70, 229, 0.15);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Canonical (editorially pinned) version badge */
+.canonical-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--success);
+    background: rgba(22, 163, 74, 0.15);
     padding: 0.1rem 0.35rem;
     border-radius: 3px;
     margin-left: 0.5rem;
@@ -10508,4 +10564,225 @@ body.fullscreen-mode::after {
     .ve-palette { position: fixed; left: 0; right: 0; bottom: 0; }
     .ve-card-body { font-size: 1.05rem; }
     .ve-picker-root { min-width: 44px; }
+}
+
+/* ============================================
+   APP SHELL: top band, bottom band, pill primitive
+   (the one home for chrome — see docs/js/shell.js)
+   ============================================ */
+
+.app-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    height: 48px;
+    padding: 0 var(--space-md);
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    transition: transform 0.25s ease;
+}
+
+body.immersive .app-topbar {
+    transform: translateY(-100%);
+}
+
+body.immersive .app-topbar:hover,
+body.immersive .app-topbar:focus-within {
+    transform: none;
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    min-width: 0;
+}
+
+.topbar-back {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text);
+    font-size: var(--font-md);
+    padding: 0.2rem 0.55rem;
+    cursor: pointer;
+}
+
+.topbar-back:hover { border-color: var(--accent); }
+
+.topbar-brand img {
+    height: 30px;
+    display: block;
+}
+
+/* The logo asset is white-on-transparent; keep it visible in light mode */
+:root:not([data-theme="dark"]) .topbar-brand img {
+    filter: invert(1);
+}
+
+.topbar-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.topbar-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--font-sm);
+}
+
+.topbar-nav-link:hover { color: var(--text); background: var(--bg-secondary); }
+.topbar-nav-link.active { color: var(--accent); }
+
+.topbar-title {
+    flex: 0 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: var(--font-md);
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-left: auto;
+}
+
+.topbar-action-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text);
+    font-size: var(--font-sm);
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+}
+
+.topbar-action-btn:hover { border-color: var(--accent); }
+.topbar-action-btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.topbar-icon-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: var(--font-lg);
+    line-height: 1;
+    padding: 0.25rem 0.45rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+}
+
+.topbar-icon-btn:hover { color: var(--text); background: var(--bg-secondary); }
+
+.topbar-overflow { position: relative; }
+
+.app-bottomband {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    min-height: 52px;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+}
+
+body.has-bottomband .container {
+    padding-bottom: 72px;
+}
+
+/* Pill: inline disclosure control (replaces bespoke collapsible bars) */
+.pill { position: relative; display: inline-flex; }
+
+.pill-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text);
+    font-size: var(--font-sm);
+    padding: 0.3rem 0.75rem;
+    cursor: pointer;
+}
+
+.pill-btn:hover, .pill-btn.open { border-color: var(--accent); }
+.pill-caret { font-size: 0.7em; color: var(--text-secondary); }
+
+.pill-popover {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    z-index: 950;
+    min-width: 180px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    padding: var(--space-sm);
+}
+
+.pill-popover.align-right { left: auto; right: 0; }
+
+.topbar-overflow .pill-popover {
+    left: auto;
+    right: 0;
+}
+
+.pill-popover-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--text);
+    font-size: var(--font-sm);
+    padding: 0.45rem 0.6rem;
+    cursor: pointer;
+}
+
+.pill-popover-item:hover { background: var(--bg-secondary); }
+
+.pill-popover-divider {
+    border-top: 1px solid var(--border);
+    margin: var(--space-xs) 0;
+}
+
+@media (max-width: 640px) {
+    .topbar-nav-label { display: none; }
+    .topbar-nav-link { padding: 0.3rem 0.45rem; }
+    .topbar-action-label { display: none; }
+    .topbar-title { display: none; }
 }

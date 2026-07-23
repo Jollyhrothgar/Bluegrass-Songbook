@@ -1,6 +1,43 @@
 // Unit tests for utils.js
 import { describe, it, expect } from 'vitest';
-import { escapeHtml, escapeRegex, highlightMatch, partUsesSongActions } from '../utils.js';
+import { escapeHtml, escapeRegex, highlightMatch, partUsesSongActions, buildDeleteCandidates } from '../utils.js';
+
+describe('buildDeleteCandidates', () => {
+    const flatt = {
+        id: 'roll-in-my-sweet-baby-s-arms', title: "Roll In My Sweet Baby's Arms",
+        source: 'trusted-user', key: 'G', chord_count: 3,
+        first_line: "I ain't gonna work on the railroad", group_id: 'grp1',
+    };
+    const bgLyrics = {
+        id: 'roll-in-my-sweet-babys-arms', title: 'Roll In My Sweet Baby’s Arms',
+        source: 'bluegrass-lyrics', key: 'G', chord_count: 3,
+        first_line: 'Roll in my sweet baby’s arms', group_id: 'grp1',
+    };
+
+    it('lists every group member, marking the viewed one', () => {
+        const rows = buildDeleteCandidates(bgLyrics, { grp1: [flatt, bgLyrics] });
+        expect(rows).toHaveLength(2);
+        expect(rows.find(r => r.id === bgLyrics.id).isCurrent).toBe(true);
+        expect(rows.find(r => r.id === flatt.id).isCurrent).toBe(false);
+        expect(rows.find(r => r.id === flatt.id).source).toBe('trusted-user');
+    });
+
+    it('falls back to the song itself without a group', () => {
+        const solo = { ...flatt, group_id: undefined };
+        const rows = buildDeleteCandidates(solo, {});
+        expect(rows).toHaveLength(1);
+        expect(rows[0]).toMatchObject({ id: flatt.id, isCurrent: true });
+    });
+
+    it('handles missing metadata gracefully', () => {
+        const rows = buildDeleteCandidates({ id: 'x', group_id: 'g' }, { g: [{ id: 'x' }] });
+        expect(rows[0]).toMatchObject({ title: 'x', source: 'unknown', chordCount: 0, firstLine: '' });
+    });
+
+    it('returns empty for no song', () => {
+        expect(buildDeleteCandidates(null, {})).toEqual([]);
+    });
+});
 
 describe('escapeHtml', () => {
     it('escapes HTML special characters', () => {
