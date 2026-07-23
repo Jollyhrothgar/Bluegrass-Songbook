@@ -32,7 +32,7 @@ export function initShell({ nav = [], onToggleTheme } = {}) {
         <div class="topbar-left">
             <button id="topbar-back" class="topbar-back hidden" title="Back">&larr;</button>
             <a href="#" id="topbar-brand" class="topbar-brand" title="Home">
-                <img src="images/new_bb_logo.png" alt="Bluegrass Book">
+                <img src="images/new_bb_logo.svg" alt="Bluegrass Book">
             </a>
             <nav class="topbar-nav"></nav>
         </div>
