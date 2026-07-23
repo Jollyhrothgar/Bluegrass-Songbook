@@ -554,7 +554,15 @@ export function toggleFullscreen() {
     const newMode = !fullscreenMode;
     setFullscreenMode(newMode);
     setImmersive(newMode);
+    updateFocusButton();
     updateNavBar();
+}
+
+// The Focus button is a true toggle — same spot to enter and exit
+// (Esc and F still work). Label follows the mode.
+function updateFocusButton() {
+    const btn = document.getElementById('focus-btn');
+    if (btn) btn.innerHTML = fullscreenMode ? '✕ Exit' : '⛶ Focus';
 }
 
 /**
@@ -564,6 +572,7 @@ export function exitFullscreen() {
     if (fullscreenMode) {
         setFullscreenMode(false);
         setImmersive(false);
+        updateFocusButton();
 
         // If we came from a list, go back to list view
         if (listContext && listContext.listId) {

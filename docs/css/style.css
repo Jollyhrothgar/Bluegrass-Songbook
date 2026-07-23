@@ -9266,6 +9266,10 @@ body.has-bottomband .container {
     left: 0;
     z-index: 950;
     min-width: 180px;
+    /* Grow to fit content, but never past the viewport (fixes clipped
+       full-width rows like the Strum Machine button at narrow widths) */
+    width: max-content;
+    max-width: min(92vw, 480px);
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
@@ -9300,7 +9304,8 @@ body.has-bottomband .container {
     margin: var(--space-xs) 0;
 }
 
-@media (max-width: 640px) {
+/* Collapse top-band labels to icons well before they can crowd the band */
+@media (max-width: 800px) {
     .topbar-nav-label { display: none; }
     .topbar-nav-link { padding: 0.3rem 0.45rem; }
     .topbar-action-label { display: none; }

@@ -500,7 +500,7 @@ function renderTitleHeader() {
             <div class="song-title-row">
                 <span class="song-title">${escapeHtml(title)}</span>
                 ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
-                <button id="focus-btn" class="focus-btn" title="Focus mode (F)">&#x26F6; Focus</button>
+                <button id="focus-btn" class="focus-btn" title="Focus mode (F)">${fullscreenMode ? '&#x2715; Exit' : '&#x26F6; Focus'}</button>
             </div>
             ${artist ? `<div class="song-artist-line">${escapeHtml(artist)}</div>` : ''}
         </div>
@@ -798,7 +798,9 @@ export function updateWorkTopBar() {
 
     setTopBar({
         back: { onClick: goBack },
-        title: currentWork.title || '',
+        // No title here: the page h1 is directly below the band and a
+        // duplicate reads as clutter (owner feedback).
+        title: null,
         actions,
         overflow,
         navActive: null,
