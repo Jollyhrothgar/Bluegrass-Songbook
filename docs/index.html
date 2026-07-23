@@ -78,43 +78,41 @@
     </div>
     <div id="sidebar-backdrop" class="sidebar-backdrop hidden"></div>
 
-    <div class="container">
-        <header>
-            <div class="header-top">
-                <button id="hamburger-btn" class="hamburger-btn" title="Menu">
-                    <span class="hamburger-icon">&#9776;</span>
-                </button>
-                <div class="header-spacer"></div>
-                <!-- Auth section -->
-                <div id="auth-section" class="auth-section">
-                    <button id="sign-in-btn" class="auth-btn" title="Sign in">
-                        <span class="auth-icon">&#128100;</span>
-                        <span class="auth-text">Sign in</span>
-                    </button>
-                    <div id="user-info" class="user-info hidden">
-                        <img id="user-avatar" class="user-avatar" alt="User" referrerpolicy="no-referrer">
-                        <div id="user-avatar-initials" class="user-avatar-initials hidden"></div>
-                        <span id="user-name" class="user-name"></span>
-                    </div>
-                </div>
+    <!-- Auth UI: relocated into the app top band by shell.js at init -->
+    <div id="auth-holder" class="hidden">
+        <div id="auth-section" class="auth-section">
+            <button id="sign-in-btn" class="auth-btn" title="Sign in">
+                <span class="auth-icon">&#128100;</span>
+                <span class="auth-text">Sign in</span>
+            </button>
+            <div id="user-info" class="user-info hidden">
+                <img id="user-avatar" class="user-avatar" alt="User" referrerpolicy="no-referrer">
+                <div id="user-avatar-initials" class="user-avatar-initials hidden"></div>
+                <span id="user-name" class="user-name"></span>
             </div>
-            <div class="logo-row">
-                <a href="https://github.com/Jollyhrothgar/Bluegrass-Songbook/milestones" target="_blank" rel="noopener" class="header-badge-link" title="View Roadmap & Planned Features">
-                    <img src="images/under_construction_dark.png" alt="Under Construction" class="header-badge header-badge-left">
-                </a>
-                <h1 class="site-logo">
-                    <a href="#" id="logo-link"><img src="images/bluegrass_book_dark_logo.png" alt="Bluegrass Book"></a>
-                </h1>
-                <a href="#" id="report-bug-link" class="header-badge-link" title="Report a Bug">
-                    <img src="images/report_bugs.png" alt="Report Bugs" class="header-badge header-badge-right">
-                </a>
-            </div>
-            <p id="subtitle" class="subtitle hidden"></p>
-            <p id="visitor-stats" class="visitor-stats"></p>
-        </header>
+        </div>
+    </div>
 
+    <div class="container">
         <!-- Landing Page Collections -->
         <div id="landing-page" class="landing-page">
+            <!-- The big logo lives only on the homepage now; every other view
+                 gets the slim app top band (shell.js) instead. -->
+            <div class="landing-hero">
+                <div class="logo-row">
+                    <a href="https://github.com/Jollyhrothgar/Bluegrass-Songbook/milestones" target="_blank" rel="noopener" class="header-badge-link" title="View Roadmap & Planned Features">
+                        <img src="images/under_construction_dark.png" alt="Under Construction" class="header-badge header-badge-left">
+                    </a>
+                    <h1 class="site-logo">
+                        <a href="#" id="logo-link"><img src="images/bluegrass_book_dark_logo.png" alt="Bluegrass Book"></a>
+                    </h1>
+                    <a href="#" id="report-bug-link" class="header-badge-link" title="Report a Bug">
+                        <img src="images/report_bugs.png" alt="Report Bugs" class="header-badge header-badge-right">
+                    </a>
+                </div>
+                <p id="subtitle" class="subtitle hidden"></p>
+                <p id="visitor-stats" class="visitor-stats"></p>
+            </div>
             <div class="landing-search">
                 <input
                     type="text"

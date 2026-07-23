@@ -51,6 +51,7 @@ import { escapeHtml, requireLogin, isPlaceholder, isTabOnlyWork, hasMultiplePart
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
+import { initShell, setTopBar, setOverflowBase } from './shell.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
 import { initFlags, openFlagModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
@@ -407,6 +408,14 @@ function initViewSubscription() {
         [navHome, navSearch, navAddSong, navFavorites].forEach(btn => {
             if (btn) btn.classList.remove('active');
         });
+
+        // Top band: highlight the active destination. Per-view actions and
+        // the bottom band arrive with the unified song page (M2).
+        const shellNavByView = {
+            'search': 'search', 'add-song': 'add', 'doc-upload': 'add',
+            'favorites': 'favorites', 'list': 'lists', 'song-lists': 'lists',
+        };
+        setTopBar({ navActive: shellNavByView[view] || null });
 
         // Clear list view state - but NOT when opening a song or viewing a list (preserve list context for navigation)
         if (view !== 'song' && view !== 'work' && view !== 'list') {
@@ -2242,6 +2251,34 @@ function downloadFile(filename, content, mimeType) {
 function init() {
     // Initialize theme
     initTheme();
+
+    // App shell: the slim top band replaces the old logo header + hamburger
+    // drawer on every view (the big logo survives as the homepage hero).
+    // Must run before auth init so #auth-section is in the band when
+    // supabase-auth updates it.
+    initShell({
+        nav: [
+            { id: 'search', label: 'Search', icon: '&#128269;', href: '#search', onClick: () => navigateTo('search') },
+            { id: 'add', label: 'Add Song', icon: '&#43;', href: '#add', onClick: () => navigateTo('add-song') },
+            { id: 'favorites', label: 'Favorites', icon: '&#9825;', href: '#favorites', onClick: () => navigateTo('favorites') },
+            { id: 'lists', label: 'Lists', icon: '&#9776;', href: '#lists', onClick: () => { showSongListsView(); pushHistoryState('song-lists', {}); } },
+        ],
+        onToggleTheme: toggleTheme,
+    });
+    setOverflowBase([
+        { label: 'About', onClick: () => { location.href = 'about.html'; } },
+        { label: 'Dev Blog', onClick: () => { location.href = 'blog.html'; } },
+        { label: 'Standards Board', onClick: () => { location.href = 'bluegrass-standards-board.html'; } },
+        { label: 'Support on Patreon', onClick: () => window.open('https://www.patreon.com/c/bluegrassbook', '_blank', 'noopener') },
+        { label: 'Buy me a coffee', onClick: () => window.open('https://buymeacoffee.com/michaelbeav', '_blank', 'noopener') },
+        { label: 'Send Feedback', onClick: () => { if (requireLogin('send feedback')) openContactModal('Send Feedback', ''); } },
+    ]);
+    document.getElementById('topbar-brand')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        searchInput.value = '';
+        showView('home');
+        pushHistoryState('home');
+    });
 
     // Load saved view preferences (before rendering any songs)
     loadViewPrefs();
