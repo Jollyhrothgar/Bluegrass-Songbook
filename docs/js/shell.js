@@ -32,7 +32,7 @@ export function initShell({ nav = [], onToggleTheme } = {}) {
         <div class="topbar-left">
             <button id="topbar-back" class="topbar-back hidden" title="Back">&larr;</button>
             <a href="#" id="topbar-brand" class="topbar-brand" title="Home">
-                <img src="images/bluegrass_book_dark_logo.png" alt="Bluegrass Book">
+                <img src="images/new_bb_logo.png" alt="Bluegrass Book">
             </a>
             <nav class="topbar-nav"></nav>
         </div>
@@ -109,6 +109,9 @@ export function setTopBar({ back = null, title = null, actions = [], overflow = 
 
     backBtn.classList.toggle('hidden', !back);
     backBtn.onclick = back ? back.onClick : null;
+    // Lets CSS slim the band on pages that have a back button (song pages):
+    // on phones, back + brand ARE the navigation there.
+    topbarEl.classList.toggle('has-back', !!back);
 
     titleEl.textContent = title || '';
     titleEl.classList.toggle('hidden', !title);
