@@ -1,31 +1,27 @@
 // Song view and rendering for Bluegrass Songbook
 
 import {
-    currentSong, setCurrentSong,
-    currentChordpro, setCurrentChordpro,
-    allSongs, songGroups,
-    compactMode, setCompactMode,
-    nashvilleMode, setNashvilleMode,
-    twoColumnMode, setTwoColumnMode,
-    chordDisplayMode, setChordDisplayMode,
-    showSectionLabels, setShowSectionLabels,
-    showChordProSource, setShowChordProSource,
-    fontSizeLevel, setFontSizeLevel,
+    currentSong,
+    currentChordpro,
+    songGroups,
+    compactMode,
+    nashvilleMode,
+    twoColumnMode,
+    chordDisplayMode,
+    showSectionLabels,
+    showChordProSource,
+    fontSizeLevel,
     FONT_SIZES,
     currentDetectedKey, setCurrentDetectedKey,
     originalDetectedKey, setOriginalDetectedKey,
     originalDetectedMode, setOriginalDetectedMode,
     historyInitialized,
-    currentView,
-    // Tablature state (for defensive cleanup only)
-    activePartTab, setActivePartTab,
-    loadedTablature, setLoadedTablature,
     // ABC notation state
     showAbcNotation, setShowAbcNotation,
     abcjsRendered, setAbcjsRendered,
     currentAbcContent, setCurrentAbcContent,
     abcTempoBpm, setAbcTempoBpm,
-    abcTranspose, setAbcTranspose,
+    abcTranspose,
     abcScale, setAbcScale,
     abcSynth, setAbcSynth,
     abcTimingCallbacks, setAbcTimingCallbacks,
@@ -33,26 +29,18 @@ import {
     abcPlaybackSession, incrementAbcPlaybackSession,
     // Fullscreen/navigation state
     fullscreenMode, setFullscreenMode,
-    listContext, setListContext,
-    // Reactive state
-    subscribe,
-    setCurrentView,
-    resolveWorkId
+    listContext, setListContext
 } from './state.js';
-import { escapeHtml, isTabOnlyWork, isPlaceholder, hasMultipleParts } from './utils.js';
+import { escapeHtml, isTabOnlyWork } from './utils.js';
 import {
     extractChords, detectKey,
     CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
 } from './chords.js';
 import { parseChordPro, renderSectionsHtml } from './renderers/chordpro.js';
-import { updateListPickerButton, updateFavoriteButton, clearListView, openNotesSheet, getSongMetadata, updateSongMetadata } from './lists.js';
-import { renderTagBadges, getTagCategory, formatTagName } from './tags.js';
-import {
-    trackSongView, trackTranspose, trackVersionPicker, trackTagVote,
-    trackTagSuggest, endSongView, trackTagsExpand
-} from './analytics.js';
-import { openFlagModal } from './flags.js';
-import { openWork, teardownTablatureView } from './work-view.js';
+import { getSongMetadata, updateSongMetadata } from './lists.js';
+import { trackVersionPicker, endSongView } from './analytics.js';
+import { setBottomBand } from './shell.js';
+import { openWork } from './work-view.js';
 
 // DOM element references (set by init)
 let songViewEl = null;
@@ -288,22 +276,17 @@ export function setupAbcPlayback() {
     });
 }
 
-// Note: Tablature rendering for song-view has been removed.
-// All tablature-only works now route through openWork() in work-view.js.
-// Songs with lead sheet content do not have tablature parts in the current dataset.
+// Note: The full-page renderSong() is gone — the unified song page in
+// work-view.js owns page chrome (title, pills, part tabs, top/bottom bands).
+// This module renders the lead-sheet BODY (chords / ABC notation) into the
+// page's content area and owns key-state initialization.
 
 /**
- * Render song with chords above lyrics
+ * Initialize key/transposition state for a song's chordpro content.
+ * Sets original/current detected key (respecting list-metadata key
+ * overrides) and validates the current key against the chromatic set.
  */
-export function renderSong(song, chordpro, isInitialRender = false) {
-    if (!songContentEl) return;
-
-    // Restore the header ✏️ Edit (work-view hides it on tablature parts).
-    const editSongBtn = document.getElementById('edit-song-btn');
-    if (editSongBtn) editSongBtn.style.display = '';
-
-    const { metadata, sections } = parseChordPro(chordpro);
-
+export function initKeyState(song, chordpro, isInitialRender = false) {
     // Use precomputed key from index if available, otherwise detect
     let detectedKey, detectedMode;
     if (song && song.key) {
@@ -331,33 +314,39 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         if (listContext && listContext.listId && song?.id) {
             const songMetadata = getSongMetadata(listContext.listId, song.id);
             if (songMetadata?.key) {
-                // Map metadata key format to CHROMATIC_MAJOR_KEYS format
-                // Metadata uses: "C#/Db", "D#/Eb", etc.
-                // CHROMATIC_MAJOR_KEYS uses: C, C#, D, Eb, E, F, F#, G, Ab, A, Bb, B
+                // Map metadata key format ("C#/Db") to CHROMATIC_MAJOR_KEYS format
                 const keyMap = {
                     'C#/Db': 'C#', 'D#/Eb': 'Eb', 'F#/Gb': 'F#',
                     'G#/Ab': 'Ab', 'A#/Bb': 'Bb'
                 };
-                const metadataKey = keyMap[songMetadata.key] || songMetadata.key;
-                setCurrentDetectedKey(metadataKey);
+                setCurrentDetectedKey(keyMap[songMetadata.key] || songMetadata.key);
             }
         }
     }
 
     // Ensure currentDetectedKey is valid for the available chromatic keys
     const availableKeys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-
     if (!availableKeys.includes(currentDetectedKey)) {
         setCurrentDetectedKey(originalDetectedKey || detectedKey || availableKeys[0]);
     }
+}
+
+/**
+ * Render a chordpro lead sheet (chord view and/or ABC notation) into a
+ * container. Also manages the bottom band: ABC playback controls when
+ * notation is showing, nothing otherwise.
+ */
+export function renderLeadSheetContent(container, song, chordpro, isInitialRender = false) {
+    if (!container) return;
+
+    const { metadata, sections } = parseChordPro(chordpro);
+    initKeyState(song, chordpro, isInitialRender);
 
     // Separate ABC sections from chord sections
     const abcSections = sections.filter(s => s.type === 'abc');
     const chordSections = sections.filter(s => s.type !== 'abc');
     const hasAbc = abcSections.length > 0;
     const hasChords = chordSections.length > 0;
-
-    // Collect ABC content for rendering
     const abcContent = abcSections.map(s => s.abc).join('\n\n');
 
     // Detect tempo from ABC content (Q: directive) and set initial BPM
@@ -376,9 +365,25 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         twoColumn: twoColumnMode
     });
 
-    const title = metadata.title || song?.title || 'Unknown Title';
-    const artist = metadata.artist || song?.artist || '';
-    const composer = metadata.writer || metadata.composer || song?.composer || '';
+    const showAbcView = hasAbc && (!hasChords || showAbcNotation);
+
+    // View toggle only for hybrid songs (both ABC and chords)
+    const viewToggleHtml = (hasAbc && hasChords) ? `
+        <div class="view-toggle">
+            <button id="view-chords-btn" class="toggle-btn ${!showAbcNotation ? 'active' : ''}">Chords</button>
+            <button id="view-abc-btn" class="toggle-btn ${showAbcNotation ? 'active' : ''}">Notation</button>
+        </div>
+    ` : '';
+
+    const abcViewHtml = hasAbc ? `
+        <div id="abc-view" class="abc-view ${showAbcView ? '' : 'hidden'}">
+            <div id="abc-notation" class="abc-notation"></div>
+        </div>
+    ` : '';
+
+    const chordViewClass = showAbcView || !hasChords ? 'hidden' : '';
+
+    // Source attribution for bottom of page
     // Link to classic-country home page (individual pages are often broken)
     // For bluegrass-lyrics, use the x_lyrics_url from ChordPro metadata
     const sourceUrl = song?.source === 'classic-country'
@@ -388,62 +393,6 @@ export function renderSong(song, chordpro, isInitialRender = false) {
             : null;
     const bookDisplay = metadata.x_book || song?.book || null;
     const bookUrl = metadata.x_book_url || song?.book_url || null;
-
-    // Build key dropdown options
-    const keyOptions = availableKeys.map(k => {
-        const isDetected = k === originalDetectedKey;
-        const label = isDetected ? `${k} (detected)` : k;
-        const selected = k === currentDetectedKey ? 'selected' : '';
-        return `<option value="${k}" ${selected}>${label}</option>`;
-    }).join('');
-
-    // Check for multiple versions — show "Back to all versions" button
-    const groupId = song?.group_id;
-    const versions = groupId ? (songGroups[groupId] || []) : [];
-    const versionHtml = versions.length > 1
-        ? `<button class="back-to-versions-btn" data-group-id="${groupId}" data-song-id="${song.id}">&#x2190; ${versions.length} versions</button>`
-        : '';
-
-    // Build artists list: primary artist + covering artists (from grassiness data, sorted by tier)
-    const allArtists = new Set();
-    if (artist) allArtists.add(artist);
-    // Add covering artists from index (already deduped and sorted by tier weight in build)
-    const coveringArtists = song?.covering_artists || [];
-    coveringArtists.forEach(a => allArtists.add(a));
-    // Also include other version artists as fallback
-    versions.forEach(v => { if (v.artist) allArtists.add(v.artist); });
-    const artistsList = Array.from(allArtists);
-
-    // Build info items for the Info disclosure - "Written by" first, then "Artists"
-    let infoItems = [];
-
-    // Written by (composer) - shown first
-    if (composer) {
-        infoItems.push(`<div class="info-item"><span class="info-label">Written by:</span> ${escapeHtml(composer)}</div>`);
-    }
-
-    // Artists list with expand/collapse for long lists
-    if (artistsList.length > 0) {
-        const maxVisible = 3;
-        const hasMore = artistsList.length > maxVisible;
-        const visibleArtists = hasMore ? artistsList.slice(0, maxVisible) : artistsList;
-        const hiddenArtists = hasMore ? artistsList.slice(maxVisible) : [];
-
-        const artistsHtml = hasMore
-            ? `<span class="artists-visible">${visibleArtists.map(a => escapeHtml(a)).join(', ')}</span><button class="artists-toggle" id="artists-expand" type="button">… <span class="artists-more">(+${hiddenArtists.length})</span></button><span class="artists-hidden hidden" id="artists-full">, ${hiddenArtists.map(a => escapeHtml(a)).join(', ')}</span><button class="artists-toggle hidden" id="artists-collapse" type="button">(collapse)</button>`
-            : visibleArtists.map(a => escapeHtml(a)).join(', ');
-
-        infoItems.push(`<div class="info-item"><span class="info-label">Artists:</span> <span class="artists-list">${artistsHtml}</span></div>`);
-    }
-    if (bookDisplay) {
-        const bookHtml = bookUrl
-            ? `<a href="${bookUrl}" target="_blank" rel="noopener">${escapeHtml(bookDisplay)}</a>`
-            : escapeHtml(bookDisplay);
-        infoItems.push(`<div class="info-item"><span class="info-label">From:</span> ${bookHtml}</div>`);
-    }
-
-    // Source attribution for bottom of page
-    let sourceHtml = '';
     const sourceDisplayNames = {
         'classic-country': 'Classic Country Song Lyrics',
         'golden-standard': 'Golden Standards Collection',
@@ -455,6 +404,7 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         'ultimate-guitar': 'Community Contribution',
         'bluegrass-lyrics': 'BluegrassLyrics.com'
     };
+    let sourceHtml = '';
     if (sourceUrl) {
         const sourceName = sourceDisplayNames[song?.source] || 'Source';
         sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${sourceName}</a></div>`;
@@ -467,301 +417,7 @@ export function renderSong(song, chordpro, isInitialRender = false) {
         sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> ${sourceDisplayNames[song.source]}</div>`;
     }
 
-    // Tags with voting and "add your own" option
-    const songTags = song?.tags || {};
-    const tagNames = Object.keys(songTags);
-    const isLoggedIn = window.SupabaseAuth?.isLoggedIn?.() || false;
-
-    // Render tags with voting controls (scores populated async)
-    const tagsHtml = tagNames.length > 0
-        ? tagNames.map(tag => {
-            const category = getTagCategory(tag);
-            const displayName = formatTagName(tag);
-            return `
-                <span class="votable-tag tag-${category}" data-tag="${escapeHtml(tag)}">
-                    <span class="tag-name">${escapeHtml(displayName)}</span>
-                    ${isLoggedIn ? `
-                        <span class="vote-chip">
-                            <button class="vote-btn vote-up" data-vote="1" title="Agree">
-                                <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 0L10 6H7V9H3V6H0L5 0Z" fill="currentColor"/></svg>
-                            </button>
-                            <span class="vote-divider"></span>
-                            <button class="vote-btn vote-down" data-vote="-1" title="Disagree">
-                                <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 12L0 6H3V3H7V6H10L5 12Z" fill="currentColor"/></svg>
-                            </button>
-                        </span>
-                    ` : ''}
-                </span>
-            `;
-        }).join('')
-        : '<em class="no-tags">None</em>';
-
-    // Info disclosure state
-    const infoBarCollapsed = localStorage.getItem('infoBarCollapsed') !== 'false'; // Default collapsed
-
-    // Info disclosure content (artist, composer, book + tags)
-    const infoContentHtml = `
-        <div id="info-content" class="info-content ${infoBarCollapsed ? 'hidden' : ''}">
-            <div class="info-details">
-                ${infoItems.join('')}
-            </div>
-            <div class="info-tags">
-                <div class="info-tags-label">Tags:</div>
-                <div class="song-tags-row">
-                    <span id="song-tags-container" class="song-tags" data-song-id="${song?.id || ''}">${tagsHtml}</span>
-                    ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song?.id || ''}">+ Add your own</button>` : ''}
-                </div>
-            </div>
-            <div id="add-tags-form" class="add-tags-form hidden">
-                <div class="add-tags-header">Add your own tags (comma-separated)</div>
-                <div class="add-tags-input-row">
-                    <input type="text" id="genre-suggestion-input"
-                           placeholder="e.g., driving, lonesome, parking lot jam"
-                           maxlength="200">
-                    <button id="submit-tags-btn">Submit</button>
-                </div>
-                <div id="tag-preview" class="tag-preview hidden"></div>
-                <div id="tag-error" class="tag-error hidden"></div>
-                <div class="add-tags-note">
-                    We're learning how bluegrass players describe their music.
-                    Your suggestions help shape future categories.
-                </div>
-            </div>
-        </div>
-    `;
-
-    // Check for tablature parts
-    const tabParts = song?.tablature_parts || [];
-    const hasTablature = tabParts.length > 0;
-    const hasLeadSheet = hasChords || hasAbc;
-
-    // Build part tabs for songs with multiple content types
-    let partTabsHtml = '';
-    if (hasTablature && hasLeadSheet) {
-        const tabLabel = tabParts.length === 1
-            ? tabParts[0].label || 'Tab'
-            : `Tab (${tabParts.length})`;
-        partTabsHtml = `
-            <div class="part-tabs">
-                <button class="part-tab ${activePartTab === 'lead-sheet' ? 'active' : ''}" data-part="lead-sheet">
-                    Lyrics & Chords
-                </button>
-                <button class="part-tab ${activePartTab === 'tablature' ? 'active' : ''}" data-part="tablature">
-                    ${escapeHtml(tabLabel)}
-                </button>
-            </div>
-        `;
-    } else if (hasTablature && !hasLeadSheet) {
-        // Tablature-only song - no tabs needed, will just show tablature
-        setActivePartTab('tablature');
-    }
-
-    // Build view toggle only for hybrid songs (both ABC and chords) when in lead-sheet mode
-    const showLeadSheet = !hasTablature || activePartTab === 'lead-sheet';
-    const viewToggleHtml = (hasAbc && hasChords && showLeadSheet) ? `
-        <div class="view-toggle">
-            <button id="view-chords-btn" class="toggle-btn ${!showAbcNotation ? 'active' : ''}">Chords</button>
-            <button id="view-abc-btn" class="toggle-btn ${showAbcNotation ? 'active' : ''}">Notation</button>
-        </div>
-    ` : '';
-
-    // ABC notation view HTML
-    const showAbcView = hasAbc && (!hasChords || showAbcNotation) && showLeadSheet;
-
-    // Quick controls collapsed state
-    const quickBarCollapsed = localStorage.getItem('quickBarCollapsed') === 'true';
-
-    // ABC view - controls are now in the quick controls bar above
-    const abcViewHtml = hasAbc ? `
-        <div id="abc-view" class="abc-view ${showAbcView ? '' : 'hidden'}">
-            <div id="abc-notation" class="abc-notation"></div>
-        </div>
-    ` : '';
-
-    // Chord view HTML (hide if showing ABC view or no chords)
-    // Note: Tablature view removed - all tab works route through work-view.js
-    const chordViewClass = showAbcView || !hasChords ? 'hidden' : '';
-
-    // Header controls - disclosure toggles
-    // Show Notes button only when viewing from a list context
-    const hasListContext = listContext && listContext.listId;
-    const songMetadata = hasListContext ? getSongMetadata(listContext.listId, song?.id) : null;
-    const hasNotes = songMetadata?.notes && songMetadata.notes.trim();
-    const notesButtonHtml = hasListContext
-        ? `<button id="song-notes-btn" class="disclosure-btn ${hasNotes ? 'has-notes' : ''}" title="Song notes for this list" data-list-id="${listContext.listId}">📝 Notes</button>`
-        : '';
-    const headerControlsHtml = `
-        <div class="header-controls">
-            <button id="flag-btn" class="flag-btn" title="Report an issue">🚩 Report</button>
-            ${notesButtonHtml}
-            <button id="qc-toggle" class="disclosure-btn" title="Toggle controls">⚙️ Controls <span class="disclosure-arrow">${quickBarCollapsed ? '▼' : '▲'}</span></button>
-            <button id="info-toggle" class="disclosure-btn" title="Toggle info">🎵 Info <span class="disclosure-arrow">${infoBarCollapsed ? '▼' : '▲'}</span></button>
-        </div>
-    `;
-
-    // Quick controls bar HTML - shown below song header, above tags
-    // Controls differ based on content type: ABC notation vs chords/lyrics
-    const hasStrumMachine = !!song?.strum_machine_url;
-    const strumMachineUrl = hasStrumMachine
-        ? (currentDetectedKey
-            ? `${song.strum_machine_url}?key=${encodeURIComponent(currentDetectedKey)}`
-            : song.strum_machine_url)
-        : '';
-
-    // ABC-specific controls: Aa (size), Key, Tempo, Play
-    const abcControlsHtml = showAbcView ? `
-        <div class="qc-group">
-            <button id="abc-size-decrease" class="qc-btn" title="Decrease size">−</button>
-            <span class="qc-label">Aa</span>
-            <button id="abc-size-increase" class="qc-btn" title="Increase size">+</button>
-        </div>
-        <div class="qc-group qc-key-group">
-            <button id="qc-key-down" class="qc-btn" title="Transpose down">−</button>
-            <button id="qc-key-select" class="qc-key-btn" title="Select key">
-                <span id="qc-key-value">${currentDetectedKey || '—'}</span>
-                <span class="qc-dropdown-arrow">▼</span>
-            </button>
-            <button id="qc-key-up" class="qc-btn" title="Transpose up">+</button>
-        </div>
-        <div class="qc-group">
-            <button id="abc-speed-decrease" class="qc-btn" title="Decrease tempo">−</button>
-            <span class="qc-label" id="abc-tempo-label">${abcTempoBpm}</span>
-            <button id="abc-speed-increase" class="qc-btn" title="Increase tempo">+</button>
-        </div>
-        <button id="abc-play-btn" class="qc-toggle-btn" title="Play/Pause">▶ Play</button>
-    ` : '';
-
-    // Chord/lyrics controls: Aa, Key, Layout, Nashville
-    const chordControlsHtml = !showAbcView ? `
-        <div class="qc-group">
-            <button id="qc-size-down" class="qc-btn" title="Decrease font size">−</button>
-            <span class="qc-label">Aa</span>
-            <button id="qc-size-up" class="qc-btn" title="Increase font size">+</button>
-        </div>
-        <div class="qc-group qc-key-group">
-            <button id="qc-key-down" class="qc-btn" title="Transpose down">−</button>
-            <button id="qc-key-select" class="qc-key-btn" title="Select key">
-                <span id="qc-key-value">${currentDetectedKey || '—'}</span>
-                <span class="qc-dropdown-arrow">▼</span>
-            </button>
-            <button id="qc-key-up" class="qc-btn" title="Transpose up">+</button>
-        </div>
-        <div class="qc-group qc-dropdown-group">
-            <button id="qc-layout-btn" class="qc-dropdown-btn">
-                Layout <span class="qc-dropdown-arrow">▼</span>
-            </button>
-            <div id="qc-layout-dropdown" class="qc-dropdown hidden">
-                <label class="qc-checkbox"><input type="checkbox" id="qc-compact" ${compactMode ? 'checked' : ''}> Compact</label>
-                <label class="qc-checkbox"><input type="checkbox" id="qc-twocol" ${twoColumnMode ? 'checked' : ''}> Two Columns</label>
-                <label class="qc-checkbox"><input type="checkbox" id="qc-sections" ${showSectionLabels ? 'checked' : ''}> Section Labels</label>
-                <div class="qc-dropdown-divider"></div>
-                <div class="qc-dropdown-row">
-                    <label>Chords</label>
-                    <select id="qc-chord-mode" class="qc-select">
-                        <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All</option>
-                        <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First Only</option>
-                        <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>None</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <button id="qc-nashville" class="qc-toggle-btn ${nashvilleMode ? 'active' : ''}" title="Nashville numbers">Nashville</button>
-        <button id="qc-strum" class="qc-icon-btn ${hasStrumMachine ? '' : 'hidden'}" title="Practice on Strum Machine" data-url="${strumMachineUrl}">
-            <img src="images/strum_machine.png" alt="Strum Machine" class="qc-strum-icon">
-        </button>
-    ` : '';
-
-    const quickControlsBarHtml = `
-        <div id="quick-controls-content" class="quick-controls-content ${quickBarCollapsed ? 'hidden' : ''}">
-            <div class="qc-controls-row">
-                ${showAbcView ? abcControlsHtml : chordControlsHtml}
-            </div>
-            <div id="qc-key-dropdown" class="qc-dropdown qc-key-dropdown hidden"></div>
-        </div>
-    `;
-
-    // Focus header - shown only in fullscreen mode (via CSS)
-    // Check if we have list context and notes metadata for the bottom notes panel
-    const focusSongMetadata = hasListContext ? getSongMetadata(listContext.listId, song?.id) : null;
-    const focusHasNotes = focusSongMetadata?.notes && focusSongMetadata.notes.trim();
-
-    const focusHeaderHtml = `
-        <div class="focus-header">
-            <button id="focus-prev-btn" class="focus-list-nav" title="Previous song (←)">←</button>
-            <div class="focus-title-area">
-                <span class="focus-title">${escapeHtml(title)}</span>
-                <span id="focus-position" class="focus-position"></span>
-            </div>
-            <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
-                <span>✕</span>
-                <span class="focus-btn-label">Exit</span>
-            </button>
-            <button id="focus-goto-song-btn" class="focus-nav-btn" title="View full song page">
-                <span>🎵</span>
-                <span class="focus-btn-label">Go to Song</span>
-            </button>
-            <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
-                <span>⚙️</span>
-                <span class="focus-btn-label">Controls</span>
-            </button>
-            <button id="focus-next-btn" class="focus-list-nav" title="Next song (→)">→</button>
-        </div>
-    `;
-
-    // Collapsible notes panel for focus mode (only when viewing from a list)
-    const notesCollapsed = localStorage.getItem('focusNotesCollapsed') !== 'false'; // collapsed by default
-    const savedPanelHeight = localStorage.getItem('focusNotesPanelHeight');
-    const panelHeightStyle = savedPanelHeight ? `style="--panel-height: ${savedPanelHeight}px"` : '';
-    const focusNotesMetadata = focusSongMetadata || {};
-    const focusNotesPanelHtml = hasListContext ? `
-        <div id="focus-notes-panel" class="focus-notes-panel ${notesCollapsed ? 'collapsed' : ''}" data-list-id="${listContext.listId}" data-song-id="${song?.id}" ${panelHeightStyle}>
-            <div id="focus-notes-drag-handle" class="focus-notes-drag-handle" title="Drag to resize">
-                <span class="drag-handle-bar"></span>
-            </div>
-            <button id="focus-notes-toggle" class="focus-notes-toggle" title="Toggle notes panel">
-                <span class="focus-notes-toggle-icon">${notesCollapsed ? '▲' : '▼'}</span>
-                <span class="focus-notes-toggle-label">Notes</span>
-                ${focusHasNotes ? '<span class="focus-notes-indicator">•</span>' : ''}
-            </button>
-            <div class="focus-notes-content">
-                <div class="focus-notes-fields">
-                    <div class="focus-notes-field">
-                        <label>Key</label>
-                        <select id="focus-notes-key">
-                            <option value="">--</option>
-                            ${['C', 'C#/Db', 'D', 'D#/Eb', 'E', 'F', 'F#/Gb', 'G', 'G#/Ab', 'A', 'A#/Bb', 'B'].map(k =>
-                                `<option value="${k}" ${focusNotesMetadata.key === k ? 'selected' : ''}>${k}</option>`
-                            ).join('')}
-                        </select>
-                    </div>
-                    <div class="focus-notes-field">
-                        <label>Tempo</label>
-                        <input type="number" id="focus-notes-tempo" min="40" max="300" value="${focusNotesMetadata.tempo || ''}" placeholder="BPM">
-                    </div>
-                </div>
-                <div class="focus-notes-textarea-wrapper">
-                    <textarea id="focus-notes-text" placeholder="Add notes for this song in this list...">${escapeHtml(focusNotesMetadata.notes || '')}</textarea>
-                </div>
-            </div>
-        </div>
-    ` : '';
-
-    songContentEl.innerHTML = `
-        ${focusHeaderHtml}
-        <div class="song-header">
-            <div class="song-header-left">
-                <div class="song-title-row">
-                    <span class="song-title">${escapeHtml(title)}</span>
-                    ${versionHtml}
-                    <button id="add-to-list-btn" class="add-to-list-btn" title="Add to list">+ Lists</button>
-                    <button id="focus-btn" class="focus-btn" title="Focus mode (F)">⛶ Focus</button>
-                </div>
-            </div>
-            ${headerControlsHtml}
-        </div>
-        ${quickControlsBarHtml}
-        ${infoContentHtml}
-        ${partTabsHtml}
+    container.innerHTML = `
         ${viewToggleHtml}
         ${abcViewHtml}
         <div id="chord-view" class="${chordViewClass}">
@@ -782,455 +438,180 @@ export function renderSong(song, chordpro, isInitialRender = false) {
             ${!hasChords && hasAbc ? '<div class="instrumental-notice"><em>Instrumental tune - see notation above</em></div>' : ''}
         </div>
         ${sourceHtml}
-        ${focusNotesPanelHtml}
     `;
 
-    // Render ABC notation if showing
+    // Bottom band: ABC playback controls when the notation view is up
     if (showAbcView) {
+        setBottomBand(buildAbcBandControls());
         setTimeout(() => {
             renderAbcNotation(abcContent, 'abc-notation');
             setupAbcPlayback();
         }, 0);
+    } else {
+        stopAbcPlayback();
+        setBottomBand(null);
     }
 
-    // Add event listeners
-    setupRenderOptionsListeners(song, chordpro);
-    setupAbcControlListeners(song, chordpro, abcContent);
-    setupPartTabListeners(song, chordpro);
-
-    // Update quick controls bar
-    if (typeof window.updateQuickControls === 'function') {
-        window.updateQuickControls();
-    }
+    // View toggle handlers (hybrid songs)
+    container.querySelector('#view-chords-btn')?.addEventListener('click', () => {
+        setShowAbcNotation(false);
+        renderLeadSheetContent(container, song, chordpro);
+    });
+    container.querySelector('#view-abc-btn')?.addEventListener('click', () => {
+        setShowAbcNotation(true);
+        renderLeadSheetContent(container, song, chordpro);
+    });
 
     // Mark wrapped chord-lyrics lines for visual indicator
     markWrappedLines();
 }
 
 /**
- * Setup event listeners for part tab switching
+ * Bottom-band controls for ABC notation parts: size, tempo, play.
+ * setupAbcPlayback() finds #abc-play-btn by id once the band is mounted.
  */
-function setupPartTabListeners(song, chordpro) {
-    const partTabs = songContentEl?.querySelectorAll('.part-tab');
-    if (!partTabs || partTabs.length === 0) return;
+function buildAbcBandControls() {
+    const el = document.createElement('div');
+    el.className = 'abc-band-controls tab-controls';
+    el.innerHTML = `
+        <div class="qc-group">
+            <button id="abc-size-decrease" class="qc-btn" title="Decrease size">−</button>
+            <span class="qc-label">Aa</span>
+            <button id="abc-size-increase" class="qc-btn" title="Increase size">+</button>
+        </div>
+        <div class="qc-group">
+            <button id="abc-speed-decrease" class="qc-btn" title="Decrease tempo">−</button>
+            <span class="qc-label" id="abc-tempo-label">${abcTempoBpm}</span>
+            <button id="abc-speed-increase" class="qc-btn" title="Increase tempo">+</button>
+        </div>
+        <button id="abc-play-btn" class="qc-toggle-btn" title="Play/Pause">▶ Play</button>
+    `;
 
-    partTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const part = tab.dataset.part;
-            if (part === activePartTab) return;
-
-            // Stop any playback when switching
-            stopAbcPlayback();
-
-            // Update state and re-render
-            setActivePartTab(part);
-            renderSong(song, chordpro);
-        });
+    // Size controls re-render the notation at the new scale
+    const sizeDecrease = el.querySelector('#abc-size-decrease');
+    const sizeIncrease = el.querySelector('#abc-size-increase');
+    const rerenderAbc = () => {
+        if (currentAbcContent) {
+            renderAbcNotation(currentAbcContent, 'abc-notation');
+            setupAbcPlayback();
+        }
+    };
+    const updateSizeButtons = () => {
+        sizeDecrease.disabled = abcScale <= 0.7;
+        sizeIncrease.disabled = abcScale >= 1.5;
+    };
+    sizeDecrease.addEventListener('click', () => {
+        if (abcScale > 0.7) {
+            setAbcScale(Math.round((abcScale - 0.1) * 10) / 10);
+            updateSizeButtons();
+            rerenderAbc();
+        }
     });
-}
-
-/**
- * Load and display tag vote counts
- */
-async function loadTagVotes(songId) {
-    const container = document.getElementById('song-tags-container');
-    if (!container) return;
-
-    // Fetch vote counts and user votes in parallel
-    const [votesResult, userVotesResult] = await Promise.all([
-        window.SupabaseAuth.fetchTagVotes(songId),
-        window.SupabaseAuth.fetchUserTagVotes(songId)
-    ]);
-
-    const votes = votesResult.data || {};
-    const userVotes = userVotesResult.data || {};
-
-    // Update each tag with vote counts and user vote state
-    container.querySelectorAll('.votable-tag').forEach(tagEl => {
-        const tagName = tagEl.dataset.tag?.toLowerCase();
-        if (!tagName) return;
-
-        const voteData = votes[tagName] || { net: 0, up: 0, down: 0 };
-        const userVote = userVotes[tagName] || 0;
-
-        // Update score display
-        const scoreEl = tagEl.querySelector('.vote-score');
-        if (scoreEl) {
-            const net = voteData.net || 0;
-            scoreEl.textContent = net === 0 ? '·' : (net > 0 ? `+${net}` : String(net));
-            scoreEl.title = `${voteData.up || 0} up, ${voteData.down || 0} down`;
+    sizeIncrease.addEventListener('click', () => {
+        if (abcScale < 1.5) {
+            setAbcScale(Math.round((abcScale + 0.1) * 10) / 10);
+            updateSizeButtons();
+            rerenderAbc();
         }
-
-        // Store user's current vote
-        tagEl.dataset.userVote = String(userVote);
-
-        // Highlight user's vote
-        const upBtn = tagEl.querySelector('.vote-up');
-        const downBtn = tagEl.querySelector('.vote-down');
-        if (upBtn) upBtn.classList.toggle('voted', userVote === 1);
-        if (downBtn) downBtn.classList.toggle('voted', userVote === -1);
     });
+    updateSizeButtons();
+
+    // Tempo controls only affect the next playback start
+    const speedDecrease = el.querySelector('#abc-speed-decrease');
+    const speedIncrease = el.querySelector('#abc-speed-increase');
+    const tempoLabel = el.querySelector('#abc-tempo-label');
+    const applyTempo = (bpm) => {
+        setAbcTempoBpm(Math.max(60, Math.min(240, bpm)));
+        tempoLabel.textContent = abcTempoBpm;
+        speedDecrease.disabled = abcTempoBpm <= 60;
+        speedIncrease.disabled = abcTempoBpm >= 240;
+    };
+    speedDecrease.addEventListener('click', () => applyTempo(abcTempoBpm - 10));
+    speedIncrease.addEventListener('click', () => applyTempo(abcTempoBpm + 10));
+    applyTempo(abcTempoBpm);
+
+    return el;
 }
 
 /**
- * Setup event listeners for render options
+ * Build the collapsible focus-mode notes panel for list context.
+ * Returns a wired element, or null when there's no list context.
+ * The unified song page (work-view.js) appends it below the content.
  */
-function setupRenderOptionsListeners(song, chordpro) {
-    const keySelect = document.getElementById('key-select');
-    if (keySelect) {
-        keySelect.addEventListener('change', (e) => {
-            const newKey = e.target.value;
-            if (song && currentDetectedKey !== newKey) {
-                trackTranspose(song.id, currentDetectedKey, newKey);
-            }
-            setCurrentDetectedKey(newKey);
-            renderSong(song, chordpro);
-        });
-    }
+export function buildFocusNotesPanel(song) {
+    if (!listContext || !listContext.listId) return null;
 
-    const backToVersionsBtn = songContentEl.querySelector('.back-to-versions-btn');
-    if (backToVersionsBtn) {
-        backToVersionsBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const gid = backToVersionsBtn.dataset.groupId;
-            const sid = backToVersionsBtn.dataset.songId;
-            openWork(sid, { groupId: gid });
-        });
-    }
+    const songMetadata = getSongMetadata(listContext.listId, song?.id) || {};
+    const hasNotes = songMetadata.notes && songMetadata.notes.trim();
+    const notesCollapsed = localStorage.getItem('focusNotesCollapsed') !== 'false'; // collapsed by default
+    const savedPanelHeight = localStorage.getItem('focusNotesPanelHeight');
 
-    // Tags collapse/expand handler
-    const tagsCollapsed = document.getElementById('tags-collapsed');
-    const tagsExpanded = document.getElementById('tags-expanded');
-    if (tagsCollapsed && tagsExpanded) {
-        // Expand when collapsed is clicked
-        tagsCollapsed.addEventListener('click', () => {
-            tagsCollapsed.classList.add('hidden');
-            tagsExpanded.classList.add('expanded');
-            trackTagsExpand(true);
-        });
+    const panel = document.createElement('div');
+    panel.id = 'focus-notes-panel';
+    panel.className = `focus-notes-panel ${notesCollapsed ? 'collapsed' : ''}`;
+    panel.dataset.listId = listContext.listId;
+    panel.dataset.songId = song?.id || '';
+    if (savedPanelHeight) panel.style.setProperty('--panel-height', `${savedPanelHeight}px`);
 
-        // Collapse when header is clicked
-        const tagsHeader = tagsExpanded.querySelector('.tags-header');
-        if (tagsHeader) {
-            tagsHeader.addEventListener('click', () => {
-                tagsExpanded.classList.remove('expanded');
-                tagsCollapsed.classList.remove('hidden');
-                trackTagsExpand(false);
-            });
-        }
-    }
+    panel.innerHTML = `
+        <div id="focus-notes-drag-handle" class="focus-notes-drag-handle" title="Drag to resize">
+            <span class="drag-handle-bar"></span>
+        </div>
+        <button id="focus-notes-toggle" class="focus-notes-toggle" title="Toggle notes panel">
+            <span class="focus-notes-toggle-icon">${notesCollapsed ? '▲' : '▼'}</span>
+            <span class="focus-notes-toggle-label">Notes</span>
+            ${hasNotes ? '<span class="focus-notes-indicator">•</span>' : ''}
+        </button>
+        <div class="focus-notes-content">
+            <div class="focus-notes-fields">
+                <div class="focus-notes-field">
+                    <label>Key</label>
+                    <select id="focus-notes-key">
+                        <option value="">--</option>
+                        ${['C', 'C#/Db', 'D', 'D#/Eb', 'E', 'F', 'F#/Gb', 'G', 'G#/Ab', 'A', 'A#/Bb', 'B'].map(k =>
+                            `<option value="${k}" ${songMetadata.key === k ? 'selected' : ''}>${k}</option>`
+                        ).join('')}
+                    </select>
+                </div>
+                <div class="focus-notes-field">
+                    <label>Tempo</label>
+                    <input type="number" id="focus-notes-tempo" min="40" max="300" value="${songMetadata.tempo || ''}" placeholder="BPM">
+                </div>
+            </div>
+            <div class="focus-notes-textarea-wrapper">
+                <textarea id="focus-notes-text" placeholder="Add notes for this song in this list...">${escapeHtml(songMetadata.notes || '')}</textarea>
+            </div>
+        </div>
+    `;
 
-    // Genre suggestion handlers
-    const addTagsBtn = songContentEl.querySelector('.add-tags-btn');
-    if (addTagsBtn) {
-        addTagsBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const form = document.getElementById('add-tags-form');
-            const input = document.getElementById('genre-suggestion-input');
-            if (form) {
-                form.classList.remove('hidden');
-                if (input) input.focus();
-            }
-        });
-    }
-
-    // Helper to parse and clean tags - be forgiving, show what we understood
-    function parseTagInput(raw) {
-        // Split on commas, semicolons, or multiple spaces
-        const parts = raw.split(/[,;]+|\s{2,}/)
-            .map(t => t.trim().toLowerCase())
-            .filter(t => t.length > 0);
-
-        const cleanedTags = [];
-        const warnings = [];
-
-        for (const part of parts) {
-            // Strip anything that's not letters, numbers, spaces, or hyphens
-            // (no apostrophes, quotes, semicolons, or other SQL-risky chars)
-            let cleaned = part.replace(/[^a-z0-9\s\-]/g, '').trim();
-            // Collapse multiple spaces
-            cleaned = cleaned.replace(/\s+/g, ' ');
-
-            if (cleaned.length === 0) continue;
-
-            // Truncate long tags
-            if (cleaned.length > 30) {
-                cleaned = cleaned.slice(0, 30).trim();
-            }
-
-            // Avoid duplicates
-            if (!cleanedTags.includes(cleaned)) {
-                cleanedTags.push(cleaned);
-            }
-        }
-
-        // Limit to 5 tags
-        if (cleanedTags.length > 5) {
-            warnings.push(`Showing first 5 of ${cleanedTags.length} tags`);
-        }
-
-        return { tags: cleanedTags.slice(0, 5), warnings };
-    }
-
-    // Live preview as user types
-    const suggestionInput = document.getElementById('genre-suggestion-input');
-    if (suggestionInput) {
-        suggestionInput.addEventListener('input', () => {
-            const preview = document.getElementById('tag-preview');
-            const errorDiv = document.getElementById('tag-error');
-            const raw = suggestionInput.value.trim();
-
-            if (!raw) {
-                preview?.classList.add('hidden');
-                errorDiv?.classList.add('hidden');
-                return;
-            }
-
-            const { tags, warnings } = parseTagInput(raw);
-
-            // Show preview - this is the key feedback
-            if (tags.length > 0 && preview) {
-                preview.innerHTML = '<span class="preview-label">We\'ll add:</span> ' +
-                    tags.map(t => `<span class="tag-badge tag-other">${escapeHtml(t)}</span>`).join(' ');
-                preview.classList.remove('hidden');
-            } else {
-                preview?.classList.add('hidden');
-            }
-
-            // Show warnings (not errors - just info)
-            if (warnings.length > 0 && errorDiv) {
-                errorDiv.textContent = warnings[0];
-                errorDiv.classList.remove('hidden');
-            } else {
-                errorDiv?.classList.add('hidden');
-            }
-        });
-    }
-
-    const submitTagsBtn = document.getElementById('submit-tags-btn');
-    if (submitTagsBtn) {
-        submitTagsBtn.addEventListener('click', async () => {
-            const input = document.getElementById('genre-suggestion-input');
-            const addBtn = songContentEl.querySelector('.add-tags-btn');
-            const errorDiv = document.getElementById('tag-error');
-            const raw = input?.value?.trim() || '';
-
-            if (!raw) {
-                if (errorDiv) {
-                    errorDiv.textContent = 'Type something first!';
-                    errorDiv.classList.remove('hidden');
-                }
-                return;
-            }
-
-            const { tags } = parseTagInput(raw);
-
-            if (tags.length === 0) {
-                if (errorDiv) {
-                    errorDiv.textContent = 'No valid tags found - try words like "driving" or "lonesome"';
-                    errorDiv.classList.remove('hidden');
-                }
-                return;
-            }
-
-            const songId = addBtn?.dataset?.songId;
-            if (!songId) return;
-
-            // Disable button during submission
-            submitTagsBtn.disabled = true;
-            submitTagsBtn.textContent = 'Sending...';
-
-            const { error } = await window.SupabaseAuth.submitGenreSuggestions(songId, tags);
-
-            submitTagsBtn.disabled = false;
-            submitTagsBtn.textContent = 'Submit';
-
-            if (error) {
-                if (errorDiv) {
-                    errorDiv.textContent = 'Error: ' + error.message;
-                    errorDiv.classList.remove('hidden');
-                }
-                return;
-            }
-
-            // Success feedback
-            input.value = '';
-            document.getElementById('add-tags-form').classList.add('hidden');
-            document.getElementById('tag-preview')?.classList.add('hidden');
-            errorDiv?.classList.add('hidden');
-
-            // Brief confirmation
-            if (addBtn) {
-                const originalText = addBtn.textContent;
-                addBtn.textContent = 'Thanks!';
-                addBtn.disabled = true;
-                setTimeout(() => {
-                    addBtn.textContent = originalText;
-                    addBtn.disabled = false;
-                }, 2000);
-            }
-        });
-    }
-
-    // Tag voting handlers
-    const tagsContainer = document.getElementById('song-tags-container');
-    if (tagsContainer && window.SupabaseAuth?.isLoggedIn?.()) {
-        const songId = tagsContainer.dataset.songId;
-
-        // Fetch and display vote counts
-        loadTagVotes(songId);
-
-        // Handle vote button clicks
-        tagsContainer.addEventListener('click', async (e) => {
-            const voteBtn = e.target.closest('.vote-btn');
-            if (!voteBtn) return;
-
-            e.preventDefault();
-            const tagEl = voteBtn.closest('.votable-tag');
-            const tagName = tagEl?.dataset.tag;
-            const voteValue = parseInt(voteBtn.dataset.vote, 10);
-
-            if (!tagName || !songId) return;
-
-            // Get current user vote for this tag
-            const currentVote = parseInt(tagEl.dataset.userVote || '0', 10);
-
-            if (currentVote === voteValue) {
-                // Clicking same vote removes it
-                const { error } = await window.SupabaseAuth.removeTagVote(songId, tagName);
-                if (!error) {
-                    tagEl.dataset.userVote = '0';
-                    loadTagVotes(songId);  // Refresh counts
-                }
-            } else {
-                // Cast new vote
-                const { error } = await window.SupabaseAuth.castTagVote(songId, tagName, voteValue);
-                if (!error) {
-                    tagEl.dataset.userVote = String(voteValue);
-                    loadTagVotes(songId);  // Refresh counts
-                }
-            }
-        });
-    }
-
-    // Flag button opens flag modal
-    const flagBtn = document.getElementById('flag-btn');
-    if (flagBtn) {
-        flagBtn.addEventListener('click', () => {
-            openFlagModal(song);
-        });
-    }
-
-    // Notes button opens notes sheet (when in list context)
-    const songNotesBtn = document.getElementById('song-notes-btn');
-    if (songNotesBtn && listContext && listContext.listId) {
-        songNotesBtn.addEventListener('click', () => {
-            openNotesSheet(listContext.listId, song?.id, song?.title);
-        });
-    }
-
-    // Focus header buttons
-    const focusExitBtn = document.getElementById('focus-exit-btn');
-    if (focusExitBtn) {
-        focusExitBtn.addEventListener('click', () => {
-            exitFullscreen();
-        });
-    }
-
-    const focusGotoSongBtn = document.getElementById('focus-goto-song-btn');
-    if (focusGotoSongBtn) {
-        focusGotoSongBtn.addEventListener('click', () => {
-            // Exit focus mode and navigate to work view
-            setFullscreenMode(false);
-            document.body.classList.remove('fullscreen-mode');
-            document.body.classList.remove('has-list-context');
-
-            // Save the return URL so the back button can return to the list
-            if (listContext && listContext.listId) {
-                const returnUrl = `#list/${listContext.listId}/${song?.id || ''}`;
-                sessionStorage.setItem('songbook-return-url', returnUrl);
-            }
-
-            // Clear list view state and hide list header
-            clearListView();
-            // Navigate to song view
-            window.location.hash = `#song/${song?.id || ''}`;
-        });
-    }
-
-    const focusPrevBtn = document.getElementById('focus-prev-btn');
-    if (focusPrevBtn) {
-        focusPrevBtn.addEventListener('click', () => {
-            navigatePrev();
-        });
-    }
-
-    const focusNextBtn = document.getElementById('focus-next-btn');
-    if (focusNextBtn) {
-        focusNextBtn.addEventListener('click', () => {
-            navigateNext();
-        });
-    }
-
-    const focusControlsToggle = document.getElementById('focus-controls-toggle');
-    if (focusControlsToggle) {
-        focusControlsToggle.addEventListener('click', () => {
-            const qcContent = document.getElementById('quick-controls-content');
-            if (qcContent) {
-                const isHidden = qcContent.classList.toggle('hidden');
-                // Update localStorage so re-renders preserve the state
-                localStorage.setItem('quickBarCollapsed', isHidden);
-            }
-        });
-    }
-
-    // Setup focus notes panel event listeners
-    setupFocusNotesPanelListeners(song);
-
-    // Update focus header based on list context
-    updateFocusHeader();
+    wireFocusNotesPanel(panel);
+    return panel;
 }
 
 /**
- * Toggle the focus notes panel collapsed/expanded state
+ * Wire the focus notes panel (element-scoped, works before insertion).
  */
-function toggleFocusNotesPanel() {
-    const panel = document.getElementById('focus-notes-panel');
-    const toggleIcon = panel?.querySelector('.focus-notes-toggle-icon');
-    if (!panel) return;
-
-    const isCollapsed = panel.classList.toggle('collapsed');
-    localStorage.setItem('focusNotesCollapsed', isCollapsed);
-
-    if (toggleIcon) {
-        toggleIcon.textContent = isCollapsed ? '▲' : '▼';
-    }
-}
-
-/**
- * Setup event listeners for the focus notes panel
- */
-function setupFocusNotesPanelListeners(song) {
-    const panel = document.getElementById('focus-notes-panel');
-    if (!panel) return;
-
+function wireFocusNotesPanel(panel) {
     const listId = panel.dataset.listId;
     const songId = panel.dataset.songId;
 
     // Toggle button
-    const toggleBtn = document.getElementById('focus-notes-toggle');
-    if (toggleBtn) {
-        toggleBtn.addEventListener('click', toggleFocusNotesPanel);
-    }
+    const toggleBtn = panel.querySelector('#focus-notes-toggle');
+    const toggleIcon = panel.querySelector('.focus-notes-toggle-icon');
+    toggleBtn?.addEventListener('click', () => {
+        const isCollapsed = panel.classList.toggle('collapsed');
+        localStorage.setItem('focusNotesCollapsed', isCollapsed);
+        if (toggleIcon) toggleIcon.textContent = isCollapsed ? '▲' : '▼';
+    });
 
     // Debounce helper for saving
     let saveTimeout = null;
     const debouncedSave = () => {
         if (saveTimeout) clearTimeout(saveTimeout);
         saveTimeout = setTimeout(() => {
-            const key = document.getElementById('focus-notes-key')?.value || '';
-            const tempo = document.getElementById('focus-notes-tempo')?.value || '';
-            const notes = document.getElementById('focus-notes-text')?.value || '';
+            const key = panel.querySelector('#focus-notes-key')?.value || '';
+            const tempo = panel.querySelector('#focus-notes-tempo')?.value || '';
+            const notes = panel.querySelector('#focus-notes-text')?.value || '';
 
             updateSongMetadata(listId, songId, {
                 key: key || undefined,
@@ -1241,14 +622,11 @@ function setupFocusNotesPanelListeners(song) {
             // Update the indicator
             const indicator = panel.querySelector('.focus-notes-indicator');
             if (notes.trim()) {
-                if (!indicator) {
-                    const toggleBtn = document.getElementById('focus-notes-toggle');
-                    if (toggleBtn) {
-                        const indicatorEl = document.createElement('span');
-                        indicatorEl.className = 'focus-notes-indicator';
-                        indicatorEl.textContent = '•';
-                        toggleBtn.appendChild(indicatorEl);
-                    }
+                if (!indicator && toggleBtn) {
+                    const indicatorEl = document.createElement('span');
+                    indicatorEl.className = 'focus-notes-indicator';
+                    indicatorEl.textContent = '•';
+                    toggleBtn.appendChild(indicatorEl);
                 }
             } else if (indicator) {
                 indicator.remove();
@@ -1256,26 +634,19 @@ function setupFocusNotesPanelListeners(song) {
         }, 500);
     };
 
-    // Field change listeners
-    const keySelect = document.getElementById('focus-notes-key');
-    const tempoInput = document.getElementById('focus-notes-tempo');
-    const notesTextarea = document.getElementById('focus-notes-text');
-
-    if (keySelect) keySelect.addEventListener('change', debouncedSave);
-    if (tempoInput) tempoInput.addEventListener('input', debouncedSave);
-    if (notesTextarea) notesTextarea.addEventListener('input', debouncedSave);
+    panel.querySelector('#focus-notes-key')?.addEventListener('change', debouncedSave);
+    panel.querySelector('#focus-notes-tempo')?.addEventListener('input', debouncedSave);
+    panel.querySelector('#focus-notes-text')?.addEventListener('input', debouncedSave);
 
     // Drag handle for resizing
-    const dragHandle = document.getElementById('focus-notes-drag-handle');
+    const dragHandle = panel.querySelector('#focus-notes-drag-handle');
     if (dragHandle) {
         let isDragging = false;
         let startY = 0;
         let startHeight = 0;
 
         const onMouseDown = (e) => {
-            // Don't start drag if panel is collapsed
             if (panel.classList.contains('collapsed')) return;
-
             isDragging = true;
             startY = e.clientY || e.touches?.[0]?.clientY;
             startHeight = panel.offsetHeight;
@@ -1285,31 +656,22 @@ function setupFocusNotesPanelListeners(song) {
 
         const onMouseMove = (e) => {
             if (!isDragging) return;
-
             const clientY = e.clientY || e.touches?.[0]?.clientY;
             const deltaY = startY - clientY; // Negative because dragging up increases height
             const newHeight = Math.max(100, Math.min(window.innerHeight * 0.8, startHeight + deltaY));
-
             panel.style.setProperty('--panel-height', `${newHeight}px`);
         };
 
         const onMouseUp = () => {
             if (!isDragging) return;
-
             isDragging = false;
             document.body.classList.remove('resizing-notes-panel');
-
-            // Save the height to localStorage
-            const currentHeight = panel.offsetHeight;
-            localStorage.setItem('focusNotesPanelHeight', currentHeight);
+            localStorage.setItem('focusNotesPanelHeight', panel.offsetHeight);
         };
 
-        // Mouse events
         dragHandle.addEventListener('mousedown', onMouseDown);
         document.addEventListener('mousemove', onMouseMove);
         document.addEventListener('mouseup', onMouseUp);
-
-        // Touch events for mobile
         dragHandle.addEventListener('touchstart', onMouseDown, { passive: false });
         document.addEventListener('touchmove', onMouseMove, { passive: false });
         document.addEventListener('touchend', onMouseUp);
@@ -1317,267 +679,22 @@ function setupFocusNotesPanelListeners(song) {
 }
 
 /**
- * Setup event listeners for ABC controls
- */
-function setupAbcControlListeners(song, chordpro, abcContent) {
-    // View toggle handlers
-    const viewChordsBtn = document.getElementById('view-chords-btn');
-    const viewAbcBtn = document.getElementById('view-abc-btn');
-    if (viewChordsBtn && viewAbcBtn) {
-        viewChordsBtn.addEventListener('click', () => {
-            setShowAbcNotation(false);
-            renderSong(song, chordpro);
-        });
-        viewAbcBtn.addEventListener('click', () => {
-            setShowAbcNotation(true);
-            renderSong(song, chordpro);
-        });
-    }
-
-    // ABC transpose
-    const abcTransposeSelect = document.getElementById('abc-transpose-select');
-    if (abcTransposeSelect) {
-        abcTransposeSelect.addEventListener('change', (e) => {
-            setAbcTranspose(parseInt(e.target.value, 10));
-            if (currentAbcContent) {
-                renderAbcNotation(currentAbcContent, 'abc-notation');
-                setupAbcPlayback();
-            }
-        });
-    }
-
-    // ABC size controls
-    const abcSizeDecrease = document.getElementById('abc-size-decrease');
-    const abcSizeIncrease = document.getElementById('abc-size-increase');
-    const abcSizeDisplay = document.getElementById('abc-size-display');
-    if (abcSizeDecrease && abcSizeIncrease) {
-        abcSizeDecrease.addEventListener('click', () => {
-            if (abcScale > 0.7) {
-                setAbcScale(Math.round((abcScale - 0.1) * 10) / 10);
-                if (abcSizeDisplay) abcSizeDisplay.textContent = `${Math.round(abcScale * 100)}%`;
-                abcSizeDecrease.disabled = abcScale <= 0.7;
-                abcSizeIncrease.disabled = abcScale >= 1.5;
-                if (currentAbcContent) {
-                    renderAbcNotation(currentAbcContent, 'abc-notation');
-                    setupAbcPlayback();
-                }
-            }
-        });
-        abcSizeIncrease.addEventListener('click', () => {
-            if (abcScale < 1.5) {
-                setAbcScale(Math.round((abcScale + 0.1) * 10) / 10);
-                if (abcSizeDisplay) abcSizeDisplay.textContent = `${Math.round(abcScale * 100)}%`;
-                abcSizeDecrease.disabled = abcScale <= 0.7;
-                abcSizeIncrease.disabled = abcScale >= 1.5;
-                if (currentAbcContent) {
-                    renderAbcNotation(currentAbcContent, 'abc-notation');
-                    setupAbcPlayback();
-                }
-            }
-        });
-    }
-
-    // ABC tempo controls. The display is a read-only label in the quick
-    // controls bar (#abc-tempo-label); the legacy #abc-speed-display input
-    // is long gone, so binding must not depend on it.
-    const abcSpeedDecrease = document.getElementById('abc-speed-decrease');
-    const abcSpeedIncrease = document.getElementById('abc-speed-increase');
-    const abcTempoLabel = document.getElementById('abc-tempo-label');
-    if (abcSpeedDecrease && abcSpeedIncrease) {
-        const applyTempo = (bpm) => {
-            setAbcTempoBpm(Math.max(60, Math.min(240, bpm)));
-            if (abcTempoLabel) abcTempoLabel.textContent = abcTempoBpm;
-            abcSpeedDecrease.disabled = abcTempoBpm <= 60;
-            abcSpeedIncrease.disabled = abcTempoBpm >= 240;
-        };
-        abcSpeedDecrease.addEventListener('click', () => applyTempo(abcTempoBpm - 10));
-        abcSpeedIncrease.addEventListener('click', () => applyTempo(abcTempoBpm + 10));
-        applyTempo(abcTempoBpm);
-    }
-
-    // Mobile: make ABC controls fieldset collapsible
-    const abcFieldset = document.querySelector('.render-options-fieldset');
-    if (abcFieldset) {
-        const legend = abcFieldset.querySelector('legend');
-        if (legend) {
-            legend.addEventListener('click', () => {
-                abcFieldset.classList.toggle('collapsed');
-            });
-        }
-    }
-}
-
-/**
- * Open a song
+ * Open a song — thin alias for the unified song page.
+ * exact:true preserves openSong's historical contract of showing THIS
+ * version rather than snapping to the group's canonical representative
+ * (version pickers and list refs point at specific versions).
  * @param {string} songId - The song ID to open
- * @param {Object} options - Options for opening the song
- * @param {boolean} options.fromList - Whether opening from a list view (auto-enters fullscreen)
- * @param {boolean} options.fromHistory - Whether opening from browser history navigation
+ * @param {Object} options - {fromList, fromHistory, listId, fromDeepLink}
  */
 export async function openSong(songId, options = {}) {
-    if (!songViewEl || !resultsDivEl) return;
-
-    // Show Work button when in song-view (hidden on work dashboard)
-    const workViewBtn = document.getElementById('work-view-btn');
-    if (workViewBtn) workViewBtn.classList.remove('hidden');
-
-    // Resolve redirected work IDs (merged duplicates)
-    songId = resolveWorkId(songId);
-
-    const { fromList = false, fromHistory = false, listId = null, fromDeepLink = false } = options;
-
-    // Clear chordpro content FIRST to prevent stale render from subscribers
-    // This must happen before any state changes that trigger reactive re-renders
-    setCurrentChordpro(null);
-
-    if (pushHistoryStateFn && !fromHistory) {
-        // Include listId in URL if we're in a list context
-        const effectiveListId = listId || (listContext ? listContext.listId : null);
-        // Use replace for deep links to avoid duplicate history entries
-        pushHistoryStateFn('song', { songId, listId: effectiveListId }, fromDeepLink);
-    }
-
-    // Update view state - triggers DOM update via subscriber
-    setCurrentView('song');
-
-    // Reset key tracking for new song
-    setOriginalDetectedKey(null);
-    setOriginalDetectedMode(null);
-    setCurrentDetectedKey(null);
-
-    // Reset tablature state for new song (defensive cleanup). The
-    // teardown matters on song→song hops within the 'song' view, where
-    // main.js's currentView subscriber never fires: it stops tab audio,
-    // destroys a live edit session, and drops renderer observers.
-    setActivePartTab('lead-sheet');
-    setLoadedTablature(null);
-    teardownTablatureView();
-
-    const song = allSongs.find(s => s.id === songId);
-    setCurrentSong(song);
-
-    // Handle song not found: a real error state with a way out, not a
-    // dead-end styled like a perpetual spinner (the old .loading markup).
-    if (!song) {
-        songContentEl.innerHTML = `
-            <div class="not-found">
-                <p>Song not found: "${escapeHtml(songId)}"</p>
-                <p>It may have been renamed or removed.</p>
-                <a href="#search" class="not-found-home-link">Browse all songs</a>
-            </div>`;
-        return;
-    }
-
-    // Update list context index if we're navigating within a list
-    if (listContext && listContext.songIds) {
-        const idx = listContext.songIds.indexOf(songId);
-        if (idx !== -1) {
-            setListContext({
-                ...listContext,
-                currentIndex: idx
-            });
-        } else if (!fromList) {
-            // Song is not in the current list and we're not explicitly navigating from a list
-            // Clear the stale list context
-            setListContext(null);
-        }
-    }
-    updateNavBar();
-
-    // Auto-enter fullscreen when opening from a list
-    if (fromList && listContext) {
-        setFullscreenMode(true);
-        document.body.classList.add('fullscreen-mode');
-        // Also add list context class for corner nav buttons
-        document.body.classList.add('has-list-context');
-    }
-
-    // Track song view in analytics
-    if (song) {
-        trackSongView(songId, 'search', song.group_id);
-    }
-
-    // Track song view in Google Analytics
-    if (typeof gtag === 'function' && song) {
-        gtag('event', 'page_view', {
-            page_title: `${song.title} - ${song.artist || 'Unknown'}`,
-            page_location: `${window.location.origin}/song/${songId}`,
-            page_path: `/song/${songId}`
-        });
-    }
-
-    // Restore header buttons and clear interceptor that work-view may have set for placeholders
-    window.__editInterceptor = null;
-    const editBtnEl = document.getElementById('edit-song-btn');
-    const exportWrapperEl = document.getElementById('export-btn')?.closest('.export-wrapper');
-    if (editBtnEl) editBtnEl.classList.remove('hidden');
-    if (exportWrapperEl) exportWrapperEl.classList.remove('hidden');
-
-    updateFavoriteButton();
-    updateListPickerButton();
-
-    if (song && song.content) {
-        setCurrentChordpro(song.content);
-        renderSong(song, song.content, true);
-        return;
-    }
-
-    songContentEl.innerHTML = '<div class="loading">Loading song...</div>';
-
-    try {
-        // no-cache = revalidate (304 if unchanged) so re-published
-        // song data isn't shadowed by heuristic caching for weeks.
-        let response = await fetch(`data/sources/${songId}.pro`, { cache: 'no-cache' });
-        if (!response.ok) {
-            response = await fetch(`../sources/classic-country/parsed/${songId}.pro`, { cache: 'no-cache' });
-        }
-        const chordpro = await response.text();
-        setCurrentChordpro(chordpro);
-        renderSong(song, chordpro, true);
-    } catch (error) {
-        songContentEl.innerHTML = `<div class="loading">Error loading song: ${error.message}</div>`;
-    }
+    return openWork(songId, { ...options, exact: true });
 }
 
 /**
  * Open song from history navigation (without pushing new state)
  */
 export async function openSongFromHistory(songId) {
-    if (!songViewEl || !resultsDivEl) return;
-
-    // Clear chordpro content FIRST to prevent stale render from subscribers
-    setCurrentChordpro(null);
-
-    // Update view state - triggers DOM update via subscriber
-    setCurrentView('song');
-
-    setOriginalDetectedKey(null);
-    setOriginalDetectedMode(null);
-    setCurrentDetectedKey(null);
-
-    // Reset tablature state for new song (defensive cleanup). The
-    // teardown matters on song→song hops within the 'song' view, where
-    // main.js's currentView subscriber never fires: it stops tab audio,
-    // destroys a live edit session, and drops renderer observers.
-    setActivePartTab('lead-sheet');
-    setLoadedTablature(null);
-    teardownTablatureView();
-
-    const song = allSongs.find(s => s.id === songId);
-    setCurrentSong(song);
-
-    // Track song view from history/deep link
-    if (song) {
-        trackSongView(songId, 'deep_link', song.group_id);
-    }
-
-    updateFavoriteButton();
-    updateListPickerButton();
-
-    if (song && song.content) {
-        setCurrentChordpro(song.content);
-        renderSong(song, song.content, true);
-    }
+    return openWork(songId, { fromHistory: true, exact: true });
 }
 
 /**
@@ -1708,14 +825,9 @@ export async function showVersionPicker(groupId, options = {}) {
             const songId = item.dataset.songId;
             trackVersionPicker(groupId, 'select', songId);
             closeVersionPicker();
-            // Dashboard for: placeholders, tab-only, and multi-part works.
-            // Single-part songs with content go to song-view.
-            const song = allSongs.find(s => s.id === songId);
-            if (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song)) {
-                openWork(songId);
-            } else {
-                openSong(songId, openOptions);
-            }
+            // Unified song page renders every work shape; exact keeps the
+            // chosen version instead of snapping to the representative.
+            openWork(songId, { ...openOptions, exact: true });
         });
     });
 
@@ -2062,25 +1174,8 @@ export function initSongView(options) {
         navNextBtnEl.addEventListener('click', navigateNext);
     }
 
-    // Subscribe to display preference changes for reactive re-rendering
-    const displayPrefKeys = [
-        'compactMode',
-        'nashvilleMode',
-        'twoColumnMode',
-        'chordDisplayMode',
-        'showSectionLabels',
-        'fontSizeLevel',
-        'currentDetectedKey'
-    ];
-
-    displayPrefKeys.forEach(key => {
-        subscribe(key, () => {
-            // Only re-render if we're viewing a song
-            if (currentView === 'song' && currentSong && currentChordpro) {
-                renderSong(currentSong, currentChordpro);
-            }
-        });
-    });
+    // NOTE: display-preference re-rendering is subscribed in work-view.js
+    // (configureWorkPage) — the unified song page owns the render loop.
 }
 
 /**

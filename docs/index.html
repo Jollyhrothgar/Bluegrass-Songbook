@@ -498,46 +498,9 @@ This is the [G]chorus [D]part
                 </div>
             </div>
 
-            <!-- Song header with back button and actions -->
-            <div class="song-view-header">
-                <button id="back-btn" class="back-btn">&larr; Back</button>
-                <div class="song-actions">
-                    <div class="export-wrapper">
-                        <button id="export-btn" class="icon-btn" title="Export">
-                            <span>📤</span>
-                            <span class="btn-label">Export</span>
-                        </button>
-                        <div id="export-dropdown" class="export-dropdown hidden">
-                            <button class="export-option" data-action="print">
-                                <span class="export-option-icon">🖨️</span>
-                                <span>Print</span>
-                            </button>
-                            <div class="export-section-label">Copy</div>
-                            <button class="export-option" data-action="copy-chordpro">
-                                <span class="export-option-icon">📋</span>
-                                <span>ChordPro</span>
-                            </button>
-                            <button class="export-option" data-action="copy-text">
-                                <span class="export-option-icon">📄</span>
-                                <span>Plain Text</span>
-                            </button>
-                            <div class="export-section-label">Save</div>
-                            <button class="export-option" data-action="download-chordpro">
-                                <span class="export-option-icon">⬇️</span>
-                                <span>Download .pro</span>
-                            </button>
-                            <button class="export-option" data-action="download-text">
-                                <span class="export-option-icon">⬇️</span>
-                                <span>Download .txt</span>
-                            </button>
-                        </div>
-                    </div>
-                    <button id="work-view-btn" class="action-btn" title="View work details, parts, and bounties">📋 Work</button>
-                    <button id="edit-song-btn" class="action-btn">✏️ Edit</button>
-                    <button id="delete-song-btn" class="action-btn delete-btn hidden" title="Delete this song permanently">🗑️ Delete</button>
-                </div>
-            </div>
-
+            <!-- Song page chrome (back / title / Edit / Lists / Export /
+                 overflow) lives in the app shell's top band, declared by
+                 work-view.js updateWorkTopBar(). -->
             <div id="song-content" class="song-content"></div>
             <!-- Bottom navigation bar for fullscreen/list mode -->
             <div id="song-nav-bar" class="song-nav-bar hidden">

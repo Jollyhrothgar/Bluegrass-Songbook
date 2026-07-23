@@ -15,18 +15,15 @@ import {
     songGroups, setSongGroups,
     setHistoryInitialized,
     historyInitialized,
-    currentDetectedKey, setCurrentDetectedKey,
-    originalDetectedKey, originalDetectedMode,
     loadViewPrefs,
     userLists,
-    compactMode, setCompactMode,
-    nashvilleMode, setNashvilleMode,
-    chordDisplayMode, setChordDisplayMode,
-    showSectionLabels, setShowSectionLabels,
-    twoColumnMode, setTwoColumnMode,
-    fontSizeLevel, setFontSizeLevel, FONT_SIZES,
+    compactMode,
+    nashvilleMode,
+    chordDisplayMode,
+    showSectionLabels,
+    twoColumnMode,
+    fontSizeLevel,
     setListContext,
-    tablaturePlayer,
     setFullscreenMode,
     setWorkRedirects, resolveWorkId,
     setBountyIndex,
@@ -42,17 +39,17 @@ import {
     showFavorites, updateFavoritesCount, getFavoritesList, isFavorite, toggleFavorite,
     updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
-import { initSongView, openSong, openSongFromHistory, goBack, renderSong, getCurrentSong, getCurrentChordpro, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
-import { openWork, renderWorkView, teardownTablatureView, getCurrentWork, getActiveItemRef } from './work-view.js';
+import { initSongView, goBack, getCurrentSong, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
+import { openWork, teardownTablatureView, getActiveItemRef, configureWorkPage, updateWorkTopBar } from './work-view.js';
+import { handleExport } from './song-controls.js';
 import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
-import { escapeHtml, requireLogin, isPlaceholder, isTabOnlyWork, hasMultipleParts, parseItemRef, buildDeleteCandidates } from './utils.js';
+import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates } from './utils.js';
 import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
-import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, generateKeyOptions, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
-import { initShell, setTopBar, setOverflowBase } from './shell.js';
-import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackExport, trackEditor, trackBottomSheet } from './analytics.js';
+import { initShell, setTopBar, setBottomBand, setOverflowBase } from './shell.js';
+import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackBottomSheet } from './analytics.js';
 import { initFlags, openFlagModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
@@ -145,12 +142,8 @@ const userInfo = document.getElementById('user-info');
 const userAvatar = document.getElementById('user-avatar');
 const userName = document.getElementById('user-name');
 
-// Song actions
-const exportBtn = document.getElementById('export-btn');
-const exportDropdown = document.getElementById('export-dropdown');
-const workViewBtn = document.getElementById('work-view-btn');
-const editSongBtn = document.getElementById('edit-song-btn');
-const deleteSongBtn = document.getElementById('delete-song-btn');
+// Song actions now live in the app shell's top band (see work-view.js
+// updateWorkTopBar): Edit / Lists / Export pills + Report/Delete overflow.
 
 // Editor elements
 const editorPanel = document.getElementById('editor-panel');
@@ -247,11 +240,12 @@ function pushHistoryState(view, data = {}, replace = false) {
 
     switch (view) {
         case 'song':
-            // If viewing song within a list context, include list ID in URL
+            // If viewing song within a list context, include list ID in URL.
+            // Song pages are unified on the work URL form (#work/{slug}).
             if (data.listId) {
                 hash = `#list/${data.listId}/${data.songId}`;
             } else {
-                hash = `#song/${data.songId}`;
+                hash = `#work/${data.songId}`;
             }
             break;
         case 'edit':
@@ -313,7 +307,19 @@ function handleHistoryNavigation(state) {
             break;
         case 'song':
             if (state.songId) {
-                openSongFromHistory(state.songId);
+                const itemRef = state.partId ? `${state.songId}/${state.partId}` : state.songId;
+                if (state.listId === 'favorites') {
+                    // Restore favorites context (fromDeepLink: no history push)
+                    openSongInFavorites(itemRef, true);
+                } else if (state.listId) {
+                    openSongInList(state.listId, itemRef, true);
+                } else {
+                    openWork(state.songId, {
+                        fromHistory: true,
+                        exact: true,
+                        partId: state.partId || null,
+                    });
+                }
             }
             break;
         case 'edit':
@@ -409,13 +415,19 @@ function initViewSubscription() {
             if (btn) btn.classList.remove('active');
         });
 
-        // Top band: highlight the active destination. Per-view actions and
-        // the bottom band arrive with the unified song page (M2).
-        const shellNavByView = {
-            'search': 'search', 'add-song': 'add', 'doc-upload': 'add',
-            'favorites': 'favorites', 'list': 'lists', 'song-lists': 'lists',
-        };
-        setTopBar({ navActive: shellNavByView[view] || null });
+        // Top band: the song page declares its own chrome (back/title/
+        // actions); every other view gets the plain nav band. The bottom
+        // band belongs to the song page only.
+        if (view === 'song') {
+            updateWorkTopBar();
+        } else {
+            const shellNavByView = {
+                'search': 'search', 'add-song': 'add', 'doc-upload': 'add',
+                'favorites': 'favorites', 'list': 'lists', 'song-lists': 'lists',
+            };
+            setTopBar({ navActive: shellNavByView[view] || null });
+            setBottomBand(null);
+        }
 
         // Clear list view state - but NOT when opening a song or viewing a list (preserve list context for navigation)
         if (view !== 'song' && view !== 'work' && view !== 'list') {
@@ -734,14 +746,12 @@ function handleDeepLink() {
         openWork(workId, { partId, fromDeepLink: true });
         return true;
     } else if (hash.startsWith('#song/')) {
-        // Song view: #song/{id} - shows the specific song/version
+        // Legacy song URLs: #song/{id} → resolve to the work and rewrite
+        // the URL to the canonical #work/{slug} form (page is unified).
         const songId = resolveWorkId(hash.slice(6));
-        // Update URL if redirected to canonical slug
-        if (songId !== hash.slice(6)) {
-            history.replaceState(null, '', `#song/${songId}`);
-        }
+        history.replaceState({ view: 'song', songId }, '', `#work/${songId}`);
         trackDeepLink('song', hash);
-        openSong(songId, { fromDeepLink: true });
+        openWork(songId, { fromDeepLink: true, exact: true });
         return true;
     } else if (hash === '#add') {
         trackDeepLink('add', hash);
@@ -875,17 +885,14 @@ function openSongInFavorites(itemRef, fromDeepLink = false) {
         currentIndex: songIndex >= 0 ? songIndex : 0
     });
 
-    // Dashboard for: placeholders, tab-only, and multi-part works.
-    // Single-part songs with content go to song-view.
-    const song = allSongs.find(s => s.id === workId);
-    if (partId) {
-        // Part-qualified ref always opens the work dashboard with that part expanded
-        openWork(workId, { partId, fromDeepLink, fromList: true });
-    } else if (song && (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song))) {
-        openWork(workId, { fromDeepLink, fromList: true });
-    } else {
-        openSong(workId, { fromList: true, listId: 'favorites', fromDeepLink });
-    }
+    // Unified song page handles every work shape; exact keeps the stored ref
+    openWork(workId, {
+        partId: partId || null,
+        fromDeepLink,
+        fromList: true,
+        listId: 'favorites',
+        exact: true,
+    });
 }
 
 /**
@@ -898,11 +905,7 @@ async function openSongInList(listId, itemRef, fromDeepLink = false) {
 
     if (!listData) {
         // List not found - fall back to opening song without context
-        if (partId) {
-            openWork(workId, { partId, fromDeepLink });
-        } else {
-            openSong(workId, { fromDeepLink });
-        }
+        openWork(workId, { partId: partId || null, fromDeepLink, exact: true });
         return;
     }
 
@@ -915,17 +918,14 @@ async function openSongInList(listId, itemRef, fromDeepLink = false) {
         currentIndex: songIndex >= 0 ? songIndex : 0
     });
 
-    // Dashboard for: placeholders, tab-only, and multi-part works.
-    // Single-part songs with content go to song-view.
-    const song = allSongs.find(s => s.id === workId);
-    if (partId) {
-        // Part-qualified ref always opens the work dashboard with that part expanded
-        openWork(workId, { partId, fromDeepLink, fromList: true });
-    } else if (song && (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song))) {
-        openWork(workId, { fromDeepLink, fromList: true });
-    } else {
-        openSong(workId, { fromList: true, listId, fromDeepLink });
-    }
+    // Unified song page handles every work shape; exact keeps the stored ref
+    openWork(workId, {
+        partId: partId || null,
+        fromDeepLink,
+        fromList: true,
+        listId,
+        exact: true,
+    });
 }
 
 /**
@@ -1370,9 +1370,9 @@ function updateAuthUI(user, event) {
             handleListsSignOut();
         }
 
-        // Clear admin status
+        // Clear admin status (drops the Delete item from the song overflow)
         isAdminUser = false;
-        deleteSongBtn?.classList.add('hidden');
+        updateDeleteButtonVisibility();
     }
 }
 
@@ -1385,14 +1385,11 @@ async function checkAdminStatus() {
     }
 }
 
-// Show/hide delete button based on admin status
+// Admin status changed: rebuild the song page's top band so the Delete
+// overflow item appears/disappears (work-view reads isAdmin via hook).
 function updateDeleteButtonVisibility() {
-    if (deleteSongBtn) {
-        if (isAdminUser && currentView === 'song') {
-            deleteSongBtn.classList.remove('hidden');
-        } else {
-            deleteSongBtn.classList.add('hidden');
-        }
+    if (currentView === 'song') {
+        updateWorkTopBar();
     }
 }
 
@@ -2203,46 +2200,9 @@ function generatePrintListPage(listName, songs, prefs) {
 }
 
 // ============================================
-// EXPORT FUNCTIONS
+// EXPORT FUNCTIONS: moved to song-controls.js (handleExport) — shared by
+// the top-band Export pill and the mobile bottom sheet.
 // ============================================
-
-function handleExport(action) {
-    const song = getCurrentSong();
-    const chordpro = getCurrentChordpro();
-    if (!song || !chordpro) return;
-
-    const title = song.title || 'song';
-    trackExport(song.id, action);
-
-    switch (action) {
-        case 'copy-chordpro':
-            navigator.clipboard.writeText(chordpro);
-            break;
-        case 'copy-text':
-            const text = chordpro.replace(/\[[^\]]+\]/g, '').replace(/\{[^}]+\}/g, '');
-            navigator.clipboard.writeText(text);
-            break;
-        case 'download-chordpro':
-            downloadFile(`${title}.pro`, chordpro, 'text/plain');
-            break;
-        case 'download-text':
-            const plainText = chordpro.replace(/\[[^\]]+\]/g, '').replace(/\{[^}]+\}/g, '');
-            downloadFile(`${title}.txt`, plainText, 'text/plain');
-            break;
-    }
-}
-
-function downloadFile(filename, content, mimeType) {
-    const blob = new Blob([content], { type: mimeType });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-}
 
 // ============================================
 // INITIALIZATION
@@ -2367,17 +2327,18 @@ function init() {
         fullscreenBtn
     });
 
-    // Set up smart list navigation router (routes to openWork for tab-only/multi-part works)
+    // List navigation router: everything goes through the unified song page
     setListItemRouter((itemRef) => {
         const { workId, partId } = parseItemRef(itemRef);
-        const song = allSongs.find(s => s.id === workId);
-        if (partId) {
-            openWork(workId, { partId, fromList: true });
-        } else if (song && (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song))) {
-            openWork(workId, { fromList: true });
-        } else {
-            openSong(workId, { fromList: true });
-        }
+        openWork(workId, { partId: partId || null, fromList: true, exact: true });
+    });
+
+    // Wire main.js-owned behaviors into the unified song page's top band
+    // (Edit → editor, Delete → admin flow) and register its render loop.
+    configureWorkPage({
+        onEdit: (song) => enterEditMode(song),
+        onDelete: handleDeleteSong,
+        isAdmin: () => isAdminUser,
     });
 
     initSearch({
@@ -2420,7 +2381,6 @@ function init() {
         editorNashville,
         editorComment,
         editCommentRow,
-        editSongBtn,
         hintsBtn,
         hintsPanel,
         hintsBackdrop,
@@ -2513,9 +2473,6 @@ function init() {
             location.reload();
         }
     });
-
-    // Delete song button (admin only)
-    deleteSongBtn?.addEventListener('click', handleDeleteSong);
 
     // Manual sync button in account modal
     const forceSyncBtn = document.getElementById('force-sync-btn');
@@ -2625,38 +2582,7 @@ function init() {
         }
     });
 
-    // Export dropdown - toggle on button click
-    function positionDropdown(btn, dropdown) {
-        if (!btn || !dropdown) return;
-        const rect = btn.getBoundingClientRect();
-        dropdown.style.top = `${rect.bottom + 4}px`;
-        dropdown.style.left = `${rect.left}px`;
-    }
-
-    exportBtn?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        exportDropdown?.classList.toggle('hidden');
-        if (!exportDropdown?.classList.contains('hidden')) {
-            positionDropdown(exportBtn, exportDropdown);
-        }
-    });
-
-    // Export option clicks
-    exportDropdown?.querySelectorAll('.export-option[data-action]').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const action = btn.dataset.action;
-            if (action === 'print') {
-                const song = getCurrentSong();
-                if (song) trackExport(song.id, 'print');
-                openPrintView();
-            } else {
-                handleExport(action);
-            }
-            exportDropdown.classList.add('hidden');
-        });
-    });
-
-    // Bottom sheet handlers (controls moved to quick controls bar, sheet now only has actions)
+    // Bottom sheet handlers (mobile action sheet)
     function openBottomSheet() {
         bottomSheet?.classList.remove('hidden');
         bottomSheetBackdrop?.classList.remove('hidden');
@@ -2720,283 +2646,13 @@ function init() {
     window.openBottomSheet = openBottomSheet;
 
     // ==========================================================================
-    // Quick Controls Bar (dynamically rendered in song-view.js)
+    // Song-page delegation: focus-mode buttons rendered by work-view.js.
+    // (The quick-controls bar, Info bar and their dropdowns are gone —
+    // replaced by the Key/Display/Info pills in song-controls.js.)
     // ==========================================================================
 
-    // Quick controls bar state
-    let quickBarCollapsed = localStorage.getItem('quickBarCollapsed') === 'true';
-
-    function setQuickBarCollapsed(collapsed) {
-        quickBarCollapsed = collapsed;
-        localStorage.setItem('quickBarCollapsed', collapsed);
-        const content = document.getElementById('quick-controls-content');
-        const arrow = document.querySelector('#qc-toggle .disclosure-arrow');
-        content?.classList.toggle('hidden', collapsed);
-        if (arrow) arrow.textContent = collapsed ? '▼' : '▲';
-
-        // Also toggle ABC fieldset visibility (for ABC notation songs)
-        const abcFieldset = document.querySelector('.render-options-fieldset');
-        abcFieldset?.classList.toggle('hidden', collapsed);
-    }
-
-    // Info bar collapse state
-    let infoBarCollapsed = localStorage.getItem('infoBarCollapsed') !== 'false'; // Default collapsed
-
-    function setInfoBarCollapsed(collapsed) {
-        infoBarCollapsed = collapsed;
-        localStorage.setItem('infoBarCollapsed', collapsed);
-        const content = document.getElementById('info-content');
-        const arrow = document.querySelector('#info-toggle .disclosure-arrow');
-        content?.classList.toggle('hidden', collapsed);
-        if (arrow) arrow.textContent = collapsed ? '▼' : '▲';
-    }
-
-    function closeAllQcDropdowns() {
-        document.getElementById('qc-key-dropdown')?.classList.add('hidden');
-        document.getElementById('qc-layout-dropdown')?.classList.add('hidden');
-    }
-
-    function positionKeyDropdown() {
-        const keySelect = document.getElementById('qc-key-select');
-        const keyDropdown = document.getElementById('qc-key-dropdown');
-        if (!keySelect || !keyDropdown) return;
-        const rect = keySelect.getBoundingClientRect();
-        keyDropdown.style.top = `${rect.bottom + 4}px`;
-        keyDropdown.style.left = `${Math.max(8, rect.left)}px`;
-    }
-
-    function positionLayoutDropdown() {
-        const layoutBtn = document.getElementById('qc-layout-btn');
-        const layoutDropdown = document.getElementById('qc-layout-dropdown');
-        if (!layoutBtn || !layoutDropdown) return;
-        const rect = layoutBtn.getBoundingClientRect();
-        layoutDropdown.style.top = `${rect.bottom + 4}px`;
-        layoutDropdown.style.left = `${Math.max(8, rect.left)}px`;
-    }
-
-    // Map enharmonic key names to their chromatic array equivalents
-    const ENHARMONIC_TO_CHROMATIC = {
-        // Major keys - map flats to sharps where chromatic array uses sharps
-        'Db': 'C#', 'D#': 'Eb', 'Gb': 'F#', 'G#': 'Ab', 'A#': 'Bb',
-        // Minor keys - map alternatives to chromatic array spellings
-        'A#m': 'Bbm', 'D#m': 'Ebm', 'G#m': 'G#m' // G#m is in the array
-    };
-
-    function normalizeKeyForChromatic(key) {
-        return ENHARMONIC_TO_CHROMATIC[key] || key;
-    }
-
-    function transposeBySemitone(direction) {
-        if (!currentDetectedKey || !originalDetectedKey) {
-            return;
-        }
-        const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-        const normalizedKey = normalizeKeyForChromatic(currentDetectedKey);
-        const currentIndex = keys.indexOf(normalizedKey);
-        if (currentIndex === -1) {
-            return;
-        }
-        const newIndex = (currentIndex + direction + keys.length) % keys.length;
-        const newKey = keys[newIndex];
-        setCurrentDetectedKey(newKey);
-
-        // Re-render based on whether we're viewing a work or song
-        const work = getCurrentWork();
-        if (work) {
-            renderWorkView();
-        } else {
-            const song = getCurrentSong();
-            const chordpro = getCurrentChordpro();
-            if (song && chordpro) {
-                renderSong(song, chordpro);
-            }
-        }
-        updateQuickControls();
-    }
-
-    function populateKeyDropdown() {
-        const keyDropdown = document.getElementById('qc-key-dropdown');
-        if (!keyDropdown || !originalDetectedKey) {
-            if (keyDropdown) keyDropdown.innerHTML = '';
-            return;
-        }
-        const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-        keyDropdown.innerHTML = keys.map(key => {
-            const isActive = key === currentDetectedKey;
-            const isOriginal = key === originalDetectedKey;
-            return `<button class="${isActive ? 'active' : ''} ${isOriginal ? 'original' : ''}" data-key="${key}">${key}</button>`;
-        }).join('');
-    }
-
-    function updateQuickControls() {
-        // Re-query elements (they're dynamically created)
-        const content = document.getElementById('quick-controls-content');
-        const arrow = document.querySelector('#qc-toggle .disclosure-arrow');
-        const keyValue = document.getElementById('qc-key-value');
-        const nashville = document.getElementById('qc-nashville');
-        const compact = document.getElementById('qc-compact');
-        const twocol = document.getElementById('qc-twocol');
-        const sections = document.getElementById('qc-sections');
-        const chordMode = document.getElementById('qc-chord-mode');
-        const strum = document.getElementById('qc-strum');
-
-        // Update key display
-        if (keyValue) keyValue.textContent = currentDetectedKey || '—';
-
-        // Update Nashville toggle
-        nashville?.classList.toggle('active', nashvilleMode);
-
-        // Update layout checkboxes
-        if (compact) compact.checked = compactMode;
-        if (twocol) twocol.checked = twoColumnMode;
-        if (sections) sections.checked = showSectionLabels;
-        if (chordMode) chordMode.value = chordDisplayMode;
-
-        // Update Strum Machine visibility
-        const song = getCurrentSong ? getCurrentSong() : currentSong;
-        strum?.classList.toggle('hidden', !song?.strum_machine_url);
-
-        // Update controls collapse state - read from localStorage to stay in sync
-        const currentQuickBarCollapsed = localStorage.getItem('quickBarCollapsed') === 'true';
-        content?.classList.toggle('hidden', currentQuickBarCollapsed);
-        if (arrow) arrow.textContent = currentQuickBarCollapsed ? '▼' : '▲';
-
-        // Update info collapse state
-        const infoContent = document.getElementById('info-content');
-        const infoArrow = document.querySelector('#info-toggle .disclosure-arrow');
-        infoContent?.classList.toggle('hidden', infoBarCollapsed);
-        if (infoArrow) infoArrow.textContent = infoBarCollapsed ? '▼' : '▲';
-
-        // Repopulate key dropdown
-        populateKeyDropdown();
-    }
-
-    // Make updateQuickControls available globally
-    window.updateQuickControls = updateQuickControls;
-
-    // Event delegation for quick controls (elements are dynamically created)
     songContent?.addEventListener('click', (e) => {
         const target = e.target;
-
-        // Size controls
-        if (target.closest('#qc-size-down')) {
-            if (fontSizeLevel > -5) setFontSizeLevel(fontSizeLevel - 1);
-            return;
-        }
-        if (target.closest('#qc-size-up')) {
-            if (fontSizeLevel < 6) setFontSizeLevel(fontSizeLevel + 1);
-            return;
-        }
-
-        // Key transpose +/- (chromatic half-steps for vocal range adjustment)
-        if (target.closest('#qc-key-down')) {
-            transposeBySemitone(-1);
-            return;
-        }
-        if (target.closest('#qc-key-up')) {
-            transposeBySemitone(1);
-            return;
-        }
-
-        // Key dropdown toggle
-        if (target.closest('#qc-key-select')) {
-            e.stopPropagation();
-            const keyDropdown = document.getElementById('qc-key-dropdown');
-            const wasHidden = keyDropdown?.classList.contains('hidden');
-            closeAllQcDropdowns();
-            if (wasHidden) {
-                keyDropdown?.classList.remove('hidden');
-                positionKeyDropdown();
-            }
-            return;
-        }
-
-        // Key dropdown selection
-        if (target.closest('#qc-key-dropdown button')) {
-            e.stopPropagation();
-            const key = target.closest('button').dataset.key;
-            if (key) {
-                setCurrentDetectedKey(key);
-                document.getElementById('qc-key-dropdown')?.classList.add('hidden');
-            }
-            return;
-        }
-
-        // Layout dropdown toggle
-        if (target.closest('#qc-layout-btn')) {
-            e.stopPropagation();
-            const layoutDropdown = document.getElementById('qc-layout-dropdown');
-            const wasHidden = layoutDropdown?.classList.contains('hidden');
-            closeAllQcDropdowns();
-            if (wasHidden) {
-                layoutDropdown?.classList.remove('hidden');
-                positionLayoutDropdown();
-            }
-            return;
-        }
-
-        // Nashville toggle
-        if (target.closest('#qc-nashville')) {
-            setNashvilleMode(!nashvilleMode);
-            return;
-        }
-
-        // Strum Machine
-        if (target.closest('#qc-strum')) {
-            const strumBtn = document.getElementById('qc-strum');
-            const url = strumBtn?.dataset.url;
-            if (url) window.open(url, '_blank');
-            return;
-        }
-
-        // Toggle controls collapse
-        if (target.closest('#qc-toggle')) {
-            setQuickBarCollapsed(!quickBarCollapsed);
-            return;
-        }
-
-        // Toggle info collapse
-        if (target.closest('#info-toggle')) {
-            setInfoBarCollapsed(!infoBarCollapsed);
-            return;
-        }
-
-        // Expand/collapse artists list
-        if (target.closest('#artists-expand')) {
-            const expandBtn = document.getElementById('artists-expand');
-            const collapseBtn = document.getElementById('artists-collapse');
-            const full = document.getElementById('artists-full');
-            expandBtn?.classList.add('hidden');
-            full?.classList.remove('hidden');
-            full?.classList.add('visible');
-            collapseBtn?.classList.remove('hidden');
-            return;
-        }
-        if (target.closest('#artists-collapse')) {
-            const expandBtn = document.getElementById('artists-expand');
-            const collapseBtn = document.getElementById('artists-collapse');
-            const full = document.getElementById('artists-full');
-            collapseBtn?.classList.add('hidden');
-            full?.classList.add('hidden');
-            full?.classList.remove('visible');
-            expandBtn?.classList.remove('hidden');
-            return;
-        }
-
-        // Add to list button (in title row)
-        if (target.closest('#add-to-list-btn')) {
-            e.stopPropagation();
-            const song = getCurrentSong ? getCurrentSong() : currentSong;
-            const btn = document.getElementById('add-to-list-btn');
-            if (song && typeof showListPicker === 'function') {
-                // Use part-qualified ref when viewing a specific part
-                const itemRef = getActiveItemRef() || song.id;
-                showListPicker(itemRef, btn, {
-                    onUpdate: () => updateTriggerButton(btn, itemRef)
-                });
-            }
-            return;
-        }
 
         // Focus button (in title row)
         if (target.closest('#focus-btn')) {
@@ -3005,9 +2661,7 @@ function init() {
         }
 
         // Focus-mode header/nav buttons — delegated here so they work on
-        // EVERY view that renders the focus header (song-view wired its
-        // own copies; work-view rendered the same buttons unwired, so
-        // Exit was dead on tab pages)
+        // every render of the focus header without per-render wiring
         if (target.closest('#focus-exit-btn')) {
             exitFullscreen();
             return;
@@ -3021,52 +2675,9 @@ function init() {
             return;
         }
         if (target.closest('#focus-controls-toggle')) {
-            // song pages use quick-controls-content; work pages use
-            // work-controls-content — toggle whichever is present
-            const qc = document.getElementById('quick-controls-content')
-                || document.getElementById('work-controls-content');
-            qc?.classList.toggle('hidden');
+            // Toggle the pill row (Key/Display/Info) in focus mode
+            document.getElementById('song-pill-row')?.classList.toggle('hidden');
             return;
-        }
-    });
-
-    // Change event delegation for checkboxes and selects
-    songContent?.addEventListener('change', (e) => {
-        const target = e.target;
-
-        if (target.id === 'qc-compact') {
-            setCompactMode(target.checked);
-            return;
-        }
-        if (target.id === 'qc-twocol') {
-            setTwoColumnMode(target.checked);
-            return;
-        }
-        if (target.id === 'qc-sections') {
-            setShowSectionLabels(target.checked);
-            return;
-        }
-        if (target.id === 'qc-chord-mode') {
-            setChordDisplayMode(target.value);
-            return;
-        }
-    });
-
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!exportBtn?.contains(e.target) && !exportDropdown?.contains(e.target)) {
-            exportDropdown?.classList.add('hidden');
-        }
-        // Close quick controls dropdowns (elements are dynamically created)
-        const qcKeySelect = document.getElementById('qc-key-select');
-        const qcKeyDropdown = document.getElementById('qc-key-dropdown');
-        const qcLayoutBtn = document.getElementById('qc-layout-btn');
-        const qcLayoutDropdown = document.getElementById('qc-layout-dropdown');
-        if (!qcKeySelect?.contains(e.target) && !qcKeyDropdown?.contains(e.target)) {
-            qcKeyDropdown?.classList.add('hidden');
-        }
-        if (!qcLayoutBtn?.contains(e.target) && !qcLayoutDropdown?.contains(e.target)) {
-            qcLayoutDropdown?.classList.add('hidden');
         }
     });
 
@@ -3152,16 +2763,6 @@ if (exitFullscreenBtn) {
 // Song view button (open bottom sheet with controls)
 if (songViewBtn) {
     songViewBtn.addEventListener('click', openSongControls);
-}
-
-// Work view button (navigate from song view to work dashboard)
-if (workViewBtn) {
-    workViewBtn.addEventListener('click', () => {
-        const song = getCurrentSong();
-        if (song) {
-            openWork(song.id);
-        }
-    });
 }
 
 // ============================================

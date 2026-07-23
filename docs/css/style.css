@@ -8751,33 +8751,32 @@ body.fullscreen-mode::after {
 }
 
 
-/* Part toggle tabs in song view */
+/* Part switcher on the unified song page: a segmented control, one look
+   everywhere (overrides the legacy .part-selector card styles above). */
 .part-tabs {
     display: flex;
-    gap: 0.25rem;
+    gap: 0.35rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.5rem;
 }
 
 .part-tab {
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 0.9rem;
     border: 1px solid var(--border);
     background: var(--bg-secondary);
-    border-radius: 6px 6px 0 0;
+    color: var(--text);
+    border-radius: 999px;
     cursor: pointer;
     font-size: 0.875rem;
-    border-bottom: none;
-    margin-bottom: -1px;
 }
 
 .part-tab:hover {
-    background: var(--bg-hover);
+    border-color: var(--accent);
 }
 
 .part-tab.active {
-    background: var(--bg);
-    border-bottom-color: var(--bg);
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
     font-weight: 500;
 }
 
@@ -10779,4 +10778,147 @@ body.has-bottomband .container {
     .topbar-nav-link { padding: 0.3rem 0.45rem; }
     .topbar-action-label { display: none; }
     .topbar-title { display: none; }
+}
+
+/* ============================================
+   UNIFIED SONG PAGE (M2): title/artist row, pill row, part tabs,
+   bottom-band playback controls. See work-view.js + song-controls.js.
+   ============================================ */
+
+.song-artist-line {
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    margin-top: 2px;
+}
+
+.song-pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-xs);
+    margin: var(--space-sm) 0;
+}
+
+/* Pill popover content building blocks */
+.pill-section {
+    padding: 4px 2px;
+}
+
+.pill-section + .pill-section {
+    border-top: 1px solid var(--border);
+    margin-top: 6px;
+    padding-top: 10px;
+}
+
+.pill-transpose-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pill-current-key {
+    font-weight: 600;
+    min-width: 2.5em;
+    text-align: center;
+}
+
+.pill-key-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.pill-key-btn {
+    padding: 4px 6px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-size: var(--font-sm);
+}
+
+.pill-key-btn:hover { border-color: var(--accent); }
+
+.pill-key-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.pill-key-btn.original { font-weight: 700; }
+
+.pill-checks {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pill-nashville-btn, .pill-strum-btn { width: 100%; }
+
+/* Wider popovers for Info / Arrangement content */
+.pill.pill-wide .pill-popover {
+    min-width: 300px;
+    max-width: min(440px, calc(100vw - 24px));
+}
+
+.pill-info-content { font-size: var(--font-sm); }
+
+.arrangement-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.arrangement-item.current { background: var(--bg-secondary); }
+
+.arrangement-meta {
+    color: var(--text-secondary);
+    font-size: 0.85em;
+}
+
+.arrangement-loading {
+    color: var(--text-secondary);
+    padding: var(--space-sm);
+}
+
+/* Playback controls mounted in the bottom band */
+.app-bottomband .tab-controls,
+.app-bottomband .abc-band-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Keep the pill row reachable in focus mode (toggled via ⚙️ Controls) */
+body.fullscreen-mode .song-pill-row {
+    padding: 0 var(--space-md);
+}
+
+/* Tab controls hosted in the bottom band: flatten the old boxed styling so
+   the band itself is the container, and the mixer flows inline. */
+.app-bottomband .tab-controls {
+    background: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 0;
+    justify-content: center;
+    flex: 1;
+}
+
+.app-bottomband .tab-track-mixer {
+    border-top: none;
+    margin-top: 0;
+    padding: 0 0 0 0.75rem;
+    border-left: 1px solid var(--border);
+    width: auto;
 }

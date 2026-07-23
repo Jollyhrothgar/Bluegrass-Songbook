@@ -1,7 +1,7 @@
 // Core search functionality for Bluegrass Songbook
 
 import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork } from './state.js';
-import { highlightMatch, escapeHtml, isTabOnlyWork, isPlaceholder, hasMultipleParts, requireLogin } from './utils.js';
+import { highlightMatch, escapeHtml, requireLogin } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
@@ -10,7 +10,6 @@ import {
     removeSongFromList, showListView, FAVORITES_LIST_ID, toggleFavorite,
     addSongToList, clearListView, getSongMetadata, openNotesSheet
 } from './lists.js';
-import { openSong } from './song-view.js';
 import { openWork } from './work-view.js';
 import { trackSearch as analyticsTrackSearch, trackSearchResultClick } from './analytics.js';
 import { stemWord } from './stem.js';
@@ -1389,27 +1388,14 @@ function setupResultEventListeners(resultsDiv) {
             // Check for part-qualified item ref (from list view)
             const partId = resultItem.dataset.partId;
             if (partId) {
-                // Part-qualified: always open work with that part expanded
+                // Part-qualified: open the unified page on that part
                 openWork(resultItem.dataset.id, { partId });
             } else if (versions.length > 1) {
-                // Multi-version: go directly to the best version's song view
+                // Multi-version: open the group's canonical representative
                 const representative = pickRepresentative(versions);
-                const song = representative;
-                if (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song)) {
-                    openWork(representative.id, { groupId, fromList });
-                } else {
-                    openSong(representative.id, { fromList });
-                }
+                openWork(representative.id, { groupId, fromList });
             } else {
-                const songId = resultItem.dataset.id;
-                const song = allSongs.find(s => s.id === songId);
-                // Dashboard for: placeholders, tab-only, and multi-part works.
-                // Single-part songs with content go to song-view.
-                if (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song)) {
-                    openWork(songId);
-                } else {
-                    openSong(songId, { fromList });
-                }
+                openWork(resultItem.dataset.id, { fromList });
             }
         }
     });
