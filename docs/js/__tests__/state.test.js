@@ -8,7 +8,6 @@ import {
     getState,
     // Test with a few concrete state values
     currentView, setCurrentView,
-    sidebarOpen, setSidebarOpen,
     currentSearchQuery, setCurrentSearchQuery
 } from '../state.js';
 
@@ -23,7 +22,6 @@ describe('Reactive State System', () => {
     afterEach(async () => {
         // Reset state to defaults and flush any pending notifications
         setCurrentView('home');
-        setSidebarOpen(false);
         setCurrentSearchQuery('');
         await flushRAF();
     });
@@ -31,13 +29,12 @@ describe('Reactive State System', () => {
     describe('getState', () => {
         it('returns specific state value when key provided', () => {
             expect(getState('currentView')).toBe('home');
-            expect(getState('sidebarOpen')).toBe(false);
+            expect(getState('currentSearchQuery')).toBe('');
         });
 
         it('returns state snapshot when no key provided', () => {
             const snapshot = getState();
             expect(snapshot).toHaveProperty('currentView');
-            expect(snapshot).toHaveProperty('sidebarOpen');
             expect(snapshot).toHaveProperty('currentSearchQuery');
         });
     });
@@ -57,7 +54,7 @@ describe('Reactive State System', () => {
             const callback = vi.fn();
             subscribe('currentView', callback);
 
-            setSidebarOpen(true);
+            setCurrentSearchQuery('banjo');
             await flushRAF();
 
             expect(callback).not.toHaveBeenCalled();
@@ -92,19 +89,19 @@ describe('Reactive State System', () => {
     describe('setState', () => {
         it('updates multiple state values at once', async () => {
             const viewCallback = vi.fn();
-            const sidebarCallback = vi.fn();
+            const queryCallback = vi.fn();
 
             subscribe('currentView', viewCallback);
-            subscribe('sidebarOpen', sidebarCallback);
+            subscribe('currentSearchQuery', queryCallback);
 
             setState({
                 currentView: 'song',
-                sidebarOpen: true
+                currentSearchQuery: 'banjo'
             });
             await flushRAF();
 
             expect(viewCallback).toHaveBeenCalledWith('song', 'currentView');
-            expect(sidebarCallback).toHaveBeenCalledWith(true, 'sidebarOpen');
+            expect(queryCallback).toHaveBeenCalledWith('banjo', 'currentSearchQuery');
         });
 
         it('does not notify if value unchanged', async () => {
@@ -146,14 +143,14 @@ describe('Reactive State System', () => {
             expect(callback).toHaveBeenCalledWith('song', 'currentView');
         });
 
-        it('setSidebarOpen triggers subscribers', async () => {
+        it('setCurrentSearchQuery triggers subscribers', async () => {
             const callback = vi.fn();
-            subscribe('sidebarOpen', callback);
+            subscribe('currentSearchQuery', callback);
 
-            setSidebarOpen(true);
+            setCurrentSearchQuery('fiddle');
             await flushRAF();
 
-            expect(callback).toHaveBeenCalledWith(true, 'sidebarOpen');
+            expect(callback).toHaveBeenCalledWith('fiddle', 'currentSearchQuery');
         });
     });
 });
@@ -161,10 +158,6 @@ describe('Reactive State System', () => {
 describe('State Values', () => {
     it('currentView defaults to home', () => {
         expect(getState('currentView')).toBe('home');
-    });
-
-    it('sidebarOpen defaults to false', () => {
-        expect(getState('sidebarOpen')).toBe(false);
     });
 
     it('currentSearchQuery defaults to empty string', () => {

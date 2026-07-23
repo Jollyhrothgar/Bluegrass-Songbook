@@ -107,15 +107,18 @@ Bluegrass-Songbook/
 │   ├── index.html           # Search UI + song editor
 │   ├── blog.html            # Dev blog
 │   ├── js/                  # ES modules
-│   │   ├── main.js          # Entry point, initialization
+│   │   ├── main.js          # Entry point, initialization, routing
+│   │   ├── shell.js         # App shell: top band, bottom band, pill primitive
 │   │   ├── state.js         # Shared state
 │   │   ├── search-core.js   # Search logic
-│   │   ├── song-view.js     # Song rendering
-│   │   ├── work-view.js     # Work display with parts/tabs
+│   │   ├── work-view.js     # THE unified song page (openWork) — all routes land here
+│   │   ├── song-view.js     # Lead-sheet helpers, ABC notation, list nav
+│   │   ├── song-controls.js # Pill builders (Key / Display / Info / Export)
 │   │   ├── chord-explorer/  # Interactive chord progression builder
 │   │   ├── bounty-view.js   # Bounty/voting system
 │   │   ├── add-song-picker.js # Song selection interface
-│   │   └── renderers/       # Tablature renderers
+│   │   └── renderers/       # Part renderers
+│   │       ├── chordpro.js  # ChordPro parse + render (shared everywhere)
 │   │       ├── tablature.js # Tab display
 │   │       └── tab-player.js # Interactive tab player
 │   ├── css/style.css        # Dark/light themes
@@ -202,7 +205,8 @@ The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 | Component | Location | Reference |
 |-----------|----------|-----------|
 | **Frontend** | `docs/` | `docs/js/CLAUDE.md` |
-| **Works/Tablature** | `docs/js/work-view.js`, `docs/js/renderers/` | `docs/js/CLAUDE.md` |
+| **App shell (top/bottom bands, pills)** | `docs/js/shell.js`, `docs/js/song-controls.js` | `docs/js/CLAUDE.md` |
+| **Unified song page / Tablature** | `docs/js/work-view.js`, `docs/js/renderers/` | `docs/js/CLAUDE.md` |
 | **Parser** | `sources/classic-country/src/` | `sources/classic-country/src/CLAUDE.md` |
 | **Banjo Hangout tabs** | `sources/banjo-hangout/` | `sources/banjo-hangout/CLAUDE.md` |
 | **Build pipeline** | `scripts/lib/` | `scripts/lib/CLAUDE.md` |
@@ -357,8 +361,9 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Tablature**: Banjo Hangout tabs with TEF→OTF parsing, playback, track mixer for multi-instrument arrangements
 - **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - primary source is LLM tagging, with MusicBrainz and grassiness scoring as fallbacks
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
-- **Song versions**: Multiple arrangements with voting (infrastructure ready)
+- **Song versions**: Multiple arrangements with voting via the Arrangement pill; editorial curation (canonical/variant pins) in `curation/registry.yaml`
 - **URL stability**: Work URLs (`#work/{slug}`) are permanent; legacy `#song/{id}` URLs redirect
+- **App shell UI**: slim top band + bottom band + pill controls (`docs/js/shell.js`); one unified song page (`work-view.js` / `openWork`); focus mode = `body.immersive`
 
 **Recent additions (Jan-Feb 2026):**
 - **Trusted user editing**: Trusted users can make instant edits without approval
@@ -367,8 +372,8 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Tag voting**: Trusted users can override incorrect tags
 - **Legacy ID migration**: Song IDs migrated from filename-based to work slugs
 - **Strum Machine integration**: 605+ songs with practice backing tracks
-- **Quick controls bar**: One-click access to key/size/layout during practice
-- **Focus mode**: Distraction-free full-screen song view
+- **UI redesign (Jul 2026)**: app shell with top/bottom bands, pill controls (Key/Display/Info/Export/Arrangement) replacing the old quick-controls bar, sidebar, and version-picker modal
+- **Focus mode**: Distraction-free immersive view (top band slides away)
 - **Covering artists**: Shows which bluegrass legends recorded each song
 - **Multi-owner lists**: Collaborative list curation with follow/unfollow
 - **Thunderdome**: Claim abandoned lists (now 1 year inactivity threshold)
@@ -392,6 +397,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | Modify homepage collections | `docs/js/collections.js` |
 | Build chord progressions | `docs/js/chord-explorer/` + `docs/js/chord-explorer/CLAUDE.md` |
 | Understand works structure | `works/` + `scripts/lib/work_schema.py` |
+| Pin canonical versions / suppress works | `curation/registry.yaml` + `scripts/lib/curate.py` (see `scripts/lib/CLAUDE.md`) |
 | Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |
 | Debug TEF/tablature parsing | `.claude/skills/tab-debug/SKILL.md` |
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |

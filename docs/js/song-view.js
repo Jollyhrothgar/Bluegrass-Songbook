@@ -52,7 +52,6 @@ let navPrevBtnEl = null;
 let navNextBtnEl = null;
 let navPositionEl = null;
 let navListNameEl = null;
-let fullscreenBtnEl = null;
 
 // Callback references (set by init)
 let pushHistoryStateFn = null;
@@ -648,43 +647,17 @@ export function updateNavBar() {
         if (navListNameEl) navListNameEl.textContent = '';
     }
 
-    // Also update focus header
-    updateFocusHeader();
+    // Keep the body-level list-context flag in sync
+    updateListContextClass();
 }
 
 /**
- * Update focus header based on list context
+ * Keep body.has-list-context in sync with the list context, so CSS can
+ * stack the list nav bar and the bottom band.
  */
-export function updateFocusHeader() {
-    const focusPrevBtn = document.getElementById('focus-prev-btn');
-    const focusNextBtn = document.getElementById('focus-next-btn');
-    const focusPositionEl = document.getElementById('focus-position');
-
-    if (listContext && listContext.songIds && listContext.songIds.length > 0) {
-        const idx = listContext.currentIndex;
-        const total = listContext.songIds.length;
-
-        // Update position text
-        if (focusPositionEl) {
-            const listName = listContext.listName ? ` · ${listContext.listName}` : '';
-            focusPositionEl.textContent = `${idx + 1} of ${total}${listName}`;
-        }
-
-        // Update button states
-        if (focusPrevBtn) {
-            focusPrevBtn.disabled = idx <= 0;
-        }
-        if (focusNextBtn) {
-            focusNextBtn.disabled = idx >= total - 1;
-        }
-
-        // Add class to body for CSS
-        document.body.classList.add('has-list-context');
-    } else {
-        // No list context
-        if (focusPositionEl) focusPositionEl.textContent = '';
-        document.body.classList.remove('has-list-context');
-    }
+export function updateListContextClass() {
+    const inList = !!(listContext && listContext.songIds && listContext.songIds.length > 0);
+    document.body.classList.toggle('has-list-context', inList);
 }
 
 /**
@@ -773,14 +746,12 @@ export function initSongView(options) {
         resultsDiv,
         pushHistoryState,
         showView,
-        backBtn,
         // Navigation elements
         navBar,
         navPrevBtn,
         navNextBtn,
         navPosition,
-        navListName,
-        fullscreenBtn
+        navListName
     } = options;
 
     songViewEl = songView;
@@ -795,17 +766,6 @@ export function initSongView(options) {
     navNextBtnEl = navNextBtn;
     navPositionEl = navPosition;
     navListNameEl = navListName;
-    fullscreenBtnEl = fullscreenBtn;
-
-    // Setup back button
-    if (backBtn) {
-        backBtn.addEventListener('click', goBack);
-    }
-
-    // Setup fullscreen button
-    if (fullscreenBtnEl) {
-        fullscreenBtnEl.addEventListener('click', toggleFullscreen);
-    }
 
     // Setup navigation buttons
     if (navPrevBtnEl) {

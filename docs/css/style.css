@@ -1068,77 +1068,6 @@ h1 {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.song-view-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-    gap: 0.5rem;
-}
-
-.song-actions {
-    display: flex;
-    gap: 0.5rem;
-    align-items: stretch;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 0.25rem; /* Space for scrollbar */
-}
-
-.song-actions .action-btn,
-.song-actions .bug-btn {
-    display: flex;
-    align-items: center;
-    font-size: var(--btn-label-size);
-    flex-shrink: 0;
-}
-
-/* Desktop actions container */
-.desktop-actions {
-    display: flex;
-    gap: 0.5rem;
-    align-items: stretch;
-}
-
-/* Mobile actions menu - hidden on desktop */
-.mobile-actions-wrapper {
-    display: none;
-    position: relative;
-}
-
-.mobile-actions-btn {
-    font-size: 1.25rem;
-}
-
-.mobile-actions-dropdown {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 100;
-    min-width: 180px;
-    padding: 0.5rem 0;
-}
-
-.mobile-action-option {
-    display: block;
-    width: 100%;
-    padding: 0.75rem 1rem;
-    background: none;
-    border: none;
-    color: var(--text);
-    font-size: 0.95rem;
-    text-align: left;
-    cursor: pointer;
-    transition: background 0.15s;
-}
-
-.mobile-action-option:hover {
-    background: var(--bg-secondary);
-}
 
 /* ==========================================================================
    Quick Controls Section (matches Tags section pattern)
@@ -1175,7 +1104,6 @@ h1 {
     flex-wrap: wrap;
 }
 
-.add-to-list-btn,
 .focus-btn {
     padding: 0.25rem 0.5rem;
     border: 1px solid var(--border);
@@ -1186,7 +1114,6 @@ h1 {
     cursor: pointer;
 }
 
-.add-to-list-btn:hover,
 .focus-btn:hover {
     color: var(--accent);
     border-color: var(--accent);
@@ -1274,24 +1201,6 @@ h1 {
     color: var(--text-muted);
 }
 
-/* Collapsible controls content area */
-.quick-controls-content {
-    border-bottom: 1px solid var(--border);
-    position: relative;
-}
-
-.quick-controls-content.hidden {
-    display: none;
-}
-
-/* Controls row */
-.qc-controls-row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-}
 
 /* Control groups - segmented button style */
 .qc-group {
@@ -1370,85 +1279,6 @@ h1 {
     background: var(--bg-tertiary);
 }
 
-.qc-dropdown-arrow {
-    font-size: 0.6rem;
-    opacity: 0.6;
-    margin-left: 0.15rem;
-}
-
-/* Dropdown button (Layout) */
-.qc-dropdown-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.4rem 0.75rem;
-    height: 32px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--bg);
-    color: var(--text);
-    font-size: 0.85rem;
-    cursor: pointer;
-    transition: background 0.15s;
-}
-
-.qc-dropdown-btn:hover {
-    background: var(--bg-tertiary);
-}
-
-/* Dropdown container */
-.qc-dropdown-group {
-    position: relative;
-}
-
-/* Dropdown panels */
-.qc-dropdown {
-    position: fixed;
-    padding: 0.5rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 2200;  /* Above fullscreen overlays (2100) */
-    min-width: 180px;
-}
-
-/* Key dropdown - grid layout for all keys */
-.qc-key-dropdown {
-    position: fixed;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.25rem;
-    min-width: 220px;
-    padding: 0.5rem;
-}
-
-.qc-key-dropdown button {
-    padding: 0.5rem 0.25rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--bg);
-    color: var(--text);
-    cursor: pointer;
-    font-size: 0.85rem;
-    transition: background 0.15s, transform 0.1s;
-}
-
-.qc-key-dropdown button:hover {
-    background: var(--bg-tertiary);
-}
-
-.qc-key-dropdown button.active {
-    background: var(--accent);
-    color: white;
-    border-color: var(--accent);
-}
-
-.qc-key-dropdown button.original::after {
-    content: '*';
-    margin-left: 2px;
-    font-size: 0.7rem;
-}
 
 /* Checkbox items in dropdown */
 .qc-checkbox {
@@ -1470,12 +1300,6 @@ h1 {
     width: 16px;
     height: 16px;
     accent-color: var(--accent);
-}
-
-.qc-dropdown-divider {
-    height: 1px;
-    background: var(--border);
-    margin: 0.5rem 0;
 }
 
 .qc-dropdown-row {
@@ -1520,24 +1344,6 @@ h1 {
     border-color: var(--accent);
 }
 
-/* Icon button (Strum Machine) */
-.qc-icon-btn {
-    padding: 0.25rem;
-    height: 32px;
-    width: 32px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--bg);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.15s;
-}
-
-.qc-icon-btn:hover {
-    background: var(--bg-tertiary);
-}
 
 .qc-strum-icon {
     width: 22px;
@@ -1546,10 +1352,6 @@ h1 {
 
 /* Quick controls responsive */
 @media (max-width: 600px) {
-    .qc-content {
-        gap: 0.4rem;
-    }
-
     .qc-btn {
         width: 28px;
         height: 28px;
@@ -1557,16 +1359,10 @@ h1 {
     }
 
     .qc-key-btn,
-    .qc-dropdown-btn,
     .qc-toggle-btn {
         height: 28px;
         font-size: 0.8rem;
         padding: 0.3rem 0.5rem;
-    }
-
-    .qc-icon-btn {
-        width: 28px;
-        height: 28px;
     }
 
     .qc-strum-icon {
@@ -1575,153 +1371,6 @@ h1 {
     }
 }
 
-/* Bottom sheet - works on all screen sizes when explicitly opened */
-.bottom-sheet-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.bottom-sheet-backdrop.hidden {
-    display: none;
-}
-
-.bottom-sheet {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--bg);
-    border-radius: 16px 16px 0 0;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-    max-height: 70vh;
-    overflow-y: auto;
-}
-
-.bottom-sheet.hidden {
-    display: none;
-}
-
-.bottom-sheet-handle {
-    width: 40px;
-    height: 4px;
-    background: var(--border);
-    border-radius: 2px;
-    margin: 12px auto;
-    cursor: pointer;
-}
-
-.bottom-sheet-content {
-    padding: 0 1rem 1.5rem;
-}
-
-.sheet-section {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.sheet-section:last-child {
-    border-bottom: none;
-}
-
-.sheet-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 0;
-}
-
-.sheet-label {
-    font-size: 0.95rem;
-    color: var(--text);
-    font-weight: 500;
-}
-
-.sheet-select {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.95rem;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--bg);
-    color: var(--text);
-    min-width: 100px;
-}
-
-.sheet-size-buttons {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.sheet-btn {
-    width: 44px;
-    height: 44px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 1.25rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.sheet-btn:hover {
-    background: var(--bg-secondary);
-}
-
-.sheet-btn:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-}
-
-.sheet-checkboxes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    padding-top: 0.5rem;
-}
-
-.sheet-checkbox {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--text);
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-.sheet-checkbox input {
-    width: 18px;
-    height: 18px;
-}
-
-.sheet-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.sheet-action {
-    display: block;
-    width: 100%;
-    padding: 0.875rem 0.5rem;
-    background: none;
-    border: none;
-    color: var(--text);
-    font-size: 1rem;
-    text-align: left;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.sheet-action:hover {
-    background: var(--bg-secondary);
-}
 
 /* Share Modal */
 .share-modal-backdrop {
@@ -1913,21 +1562,6 @@ h1 {
 .back-btn:hover {
     background: var(--bg-secondary);
     border-color: var(--text-secondary);
-}
-
-.bug-btn {
-    background: var(--danger);
-    border: none;
-    color: #fff;
-    font-size: 0.8rem;
-    padding: 0.5rem 0.75rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.bug-btn:hover {
-    background: var(--danger-hover);
 }
 
 /* Song content */
@@ -3008,30 +2642,6 @@ h1 {
         max-height: 90vh;
     }
 
-    .bug-btn {
-        font-size: 0.75rem;
-        padding: 0.4rem 0.6rem;
-    }
-
-    /* Mobile adjustments for song header */
-    .song-view-header {
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-
-    .song-actions {
-        flex-wrap: wrap;
-    }
-
-    /* Bottom sheet - mobile enhancements (slide-up animation) */
-    .bottom-sheet {
-        transform: translateY(100%);
-        transition: transform 0.3s ease-out;
-    }
-
-    .bottom-sheet:not(.hidden) {
-        transform: translateY(0);
-    }
 
     /* Mobile song header layout */
     .song-header {
@@ -3116,178 +2726,7 @@ mark {
     background: rgba(96, 165, 250, 0.3);
 }
 
-/* Hamburger button */
-.hamburger-btn {
-    background: none;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 0.5rem 0.75rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    transition: background 0.2s, border-color 0.2s;
-}
 
-.hamburger-btn:hover {
-    background: var(--bg-secondary);
-    border-color: var(--text-secondary);
-}
-
-.header-spacer {
-    flex: 1;
-}
-
-/* Sidebar */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -280px;
-    width: 280px;
-    height: 100%;
-    background: var(--bg);
-    border-right: 1px solid var(--border);
-    z-index: 1001;
-    display: flex;
-    flex-direction: column;
-    transition: left 0.3s ease;
-}
-
-.sidebar.open {
-    left: 0;
-}
-
-.sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.25rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.sidebar-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.sidebar-close {
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0;
-    line-height: 1;
-}
-
-.sidebar-close:hover {
-    color: var(--text);
-}
-
-.sidebar-nav {
-    flex: 1;
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.875rem 1.25rem;
-    background: none;
-    border: none;
-    color: var(--text);
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: left;
-    transition: background 0.2s;
-    position: relative;
-}
-
-.nav-item:hover {
-    background: var(--bg-secondary);
-}
-
-.nav-item.active {
-    background: var(--bg-secondary);
-    color: var(--accent);
-    font-weight: 500;
-}
-
-.nav-item.active::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: var(--accent);
-}
-
-.nav-icon {
-    font-size: 1.25rem;
-    width: 1.5rem;
-    text-align: center;
-}
-
-.nav-badge {
-    margin-left: auto;
-    font-size: 0.75rem;
-    background: var(--accent);
-    color: var(--bg);
-    border-radius: 10px;
-    padding: 0.1rem 0.5rem;
-    min-width: 1.2rem;
-    text-align: center;
-}
-
-.sidebar-footer {
-    border-top: 1px solid var(--border);
-    padding: 1rem 0;
-}
-
-.sidebar-link {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1.25rem;
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    cursor: pointer;
-    text-align: left;
-    text-decoration: none;
-    width: 100%;
-    transition: color 0.2s, background 0.2s;
-}
-
-.sidebar-link:hover {
-    color: var(--text);
-    background: var(--bg-secondary);
-}
-
-/* Sidebar backdrop */
-.sidebar-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.sidebar-backdrop.visible {
-    opacity: 1;
-    pointer-events: auto;
-}
 
 /* Editor panel */
 .editor-panel {
@@ -4591,29 +4030,6 @@ mark {
    LIST PICKER STYLES
    ============================================ */
 
-.list-picker-wrapper {
-    position: relative;
-}
-
-.list-picker-btn {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.list-picker-btn.has-lists {
-    color: var(--accent);
-}
-
-.list-picker-dropdown {
-    position: fixed;  /* Fixed positioning to escape parent overflow clipping */
-    min-width: 200px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 2001;  /* Above song content and other overlays */
-    overflow: hidden;
-}
 
 .list-option {
     display: flex;
@@ -5587,20 +5003,6 @@ mark {
     }
 }
 
-.result-list-picker {
-    min-width: 200px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 2001;  /* Above modals (2000) and sidebar (1001) */
-    overflow: hidden;
-}
-
-.result-picker-lists {
-    max-height: 200px;
-    overflow-y: auto;
-}
 
 /* ============================================
    LIST ITEM METADATA (Setlist Notes)
@@ -5689,197 +5091,7 @@ mark {
     opacity: 1;
 }
 
-/* Song view notes button when has notes */
-#song-notes-btn.has-notes {
-    background: rgba(79, 70, 229, 0.15);
-    color: var(--accent);
-}
 
-/* Focus mode notes button when has notes */
-#focus-notes-btn.has-notes {
-    background: rgba(79, 70, 229, 0.2);
-    color: var(--accent);
-}
-
-/* ============================================
-   FOCUS MODE COLLAPSIBLE NOTES PANEL
-   ============================================ */
-
-/* Only show in fullscreen mode */
-.focus-notes-panel {
-    display: none;
-}
-
-body.fullscreen-mode .focus-notes-panel {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--bg);
-    border-top: 1px solid var(--border);
-    z-index: 1000;
-    transition: transform 0.2s ease;
-}
-
-/* When panel has custom height set */
-body.fullscreen-mode .focus-notes-panel:not(.collapsed) {
-    height: var(--panel-height, auto);
-}
-
-/* Disable transitions while dragging */
-body.resizing-notes-panel .focus-notes-panel {
-    transition: none;
-}
-
-/* Drag handle */
-.focus-notes-drag-handle {
-    display: none;
-}
-
-body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 12px;
-    cursor: ns-resize;
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border);
-    touch-action: none;
-}
-
-.focus-notes-drag-handle:hover {
-    background: var(--bg-tertiary);
-}
-
-.drag-handle-bar {
-    width: 40px;
-    height: 4px;
-    background: var(--border);
-    border-radius: 2px;
-}
-
-.focus-notes-drag-handle:hover .drag-handle-bar {
-    background: var(--text-secondary);
-}
-
-/* Toggle button - always visible */
-.focus-notes-toggle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: var(--bg-secondary);
-    border: none;
-    color: var(--text-secondary);
-    cursor: pointer;
-    font-size: 0.85rem;
-}
-
-.focus-notes-toggle:hover {
-    background: var(--bg-tertiary);
-}
-
-.focus-notes-toggle-icon {
-    font-size: 0.7rem;
-}
-
-.focus-notes-toggle-label {
-    font-weight: 500;
-}
-
-.focus-notes-indicator {
-    color: var(--accent);
-    font-size: 1.2rem;
-    line-height: 1;
-}
-
-/* Collapsed state - hide content */
-.focus-notes-panel.collapsed .focus-notes-content {
-    display: none;
-}
-
-/* Expanded content */
-.focus-notes-content {
-    padding: 0.75rem 1rem 1rem;
-    flex: 1;
-    min-height: 0;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Default max-height when no custom height is set */
-.focus-notes-panel:not([style*="--panel-height"]) .focus-notes-content {
-    max-height: 40vh;
-}
-
-.focus-notes-fields {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.75rem;
-}
-
-.focus-notes-field {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.focus-notes-field label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-    font-weight: 600;
-}
-
-.focus-notes-field select,
-.focus-notes-field input {
-    padding: 0.4rem 0.5rem;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 0.9rem;
-}
-
-.focus-notes-field select {
-    min-width: 80px;
-}
-
-.focus-notes-field input[type="number"] {
-    width: 70px;
-}
-
-.focus-notes-textarea-wrapper {
-    width: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    min-height: 0;
-}
-
-#focus-notes-text {
-    width: 100%;
-    min-height: 80px;
-    flex: 1;
-    padding: 0.5rem;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 0.9rem;
-    font-family: inherit;
-    resize: none; /* Disable resize since we have drag handle */
-}
-
-#focus-notes-text::placeholder {
-    color: var(--text-secondary);
-    opacity: 0.7;
-}
 
 /* On touch devices, always show notes button */
 @media (hover: none) {
@@ -6840,16 +6052,6 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     }
 }
 
-/* Version picker modal */
-.version-picker {
-    max-width: 450px;
-}
-
-.version-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
 
 /* Admin delete modal: one selectable row per group member */
 .delete-candidate-list {
@@ -6893,54 +6095,6 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     margin-bottom: 0.75rem;
 }
 
-.version-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75rem;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.version-item:hover {
-    border-color: var(--accent);
-    background: var(--bg);
-}
-
-.version-info {
-    flex: 1;
-    min-width: 0;
-}
-
-.version-label {
-    font-weight: 500;
-    font-size: 0.95rem;
-    color: var(--text);
-    margin-bottom: 0.25rem;
-}
-
-.version-meta {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-}
-
-.version-notes {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    font-style: italic;
-    margin-top: 0.25rem;
-}
-
-.version-votes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-    padding-left: 1rem;
-}
 
 .vote-btn {
     width: 2rem;
@@ -6977,32 +6131,7 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     color: var(--text-secondary);
 }
 
-/* See versions button in song view */
-.see-versions-btn {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--accent);
-    background: rgba(79, 70, 229, 0.1);
-    border: 1px solid var(--accent);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    margin-left: 0.75rem;
-    cursor: pointer;
-    vertical-align: middle;
-    transition: all 0.2s;
-}
 
-.see-versions-btn:hover {
-    background: var(--accent);
-    color: white;
-}
-
-/* Current version indicator */
-.version-item.current {
-    border-color: var(--accent);
-    background: rgba(79, 70, 229, 0.08);
-}
 
 .current-badge {
     display: inline-block;
@@ -7031,14 +6160,6 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     vertical-align: middle;
 }
 
-/* First line preview in version picker */
-.version-first-line {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    font-style: italic;
-    margin-top: 0.35rem;
-    opacity: 0.85;
-}
 
 /* ============================================
    ABOUT VIEW STYLES
@@ -7403,205 +6524,6 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     font-style: italic;
 }
 
-/* ============================================
-   FULLSCREEN / FOCUS MODE
-   ============================================ */
-
-/* Focus header - hidden by default, shown in fullscreen */
-.focus-header {
-    display: none;
-}
-
-body.fullscreen-mode .focus-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1rem;
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.focus-nav-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.5rem 0.75rem;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.focus-nav-btn:hover {
-    background: var(--bg-secondary);
-}
-
-/* Edit link in focus header */
-a.focus-nav-btn {
-    text-decoration: none;
-}
-
-.focus-nav-btn:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-}
-
-.focus-btn-label {
-    font-size: 0.85rem;
-}
-
-.focus-title-area {
-    flex: 1;
-    text-align: center;
-    min-width: 0;
-}
-
-.focus-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.focus-position {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-}
-
-/* Inline list nav buttons in focus header */
-.focus-list-nav {
-    display: none;  /* Hidden by default, shown when in list context */
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 6px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    color: var(--text);
-    font-size: 1.1rem;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: background 0.15s ease;
-}
-
-.focus-list-nav:hover {
-    background: var(--bg-secondary);
-}
-
-.focus-list-nav:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-}
-
-.focus-list-nav:disabled:hover {
-    background: var(--bg);
-}
-
-/* Show list nav buttons in fullscreen with list context */
-body.fullscreen-mode.has-list-context .focus-list-nav {
-    display: flex;
-}
-
-/* Fullscreen mode - hide everything except song */
-body.fullscreen-mode .sidebar,
-body.fullscreen-mode .header,
-body.fullscreen-mode .search-container,
-body.fullscreen-mode #results,
-body.fullscreen-mode .song-view-header,
-body.fullscreen-mode .song-tags-section,
-body.fullscreen-mode .song-meta,
-body.fullscreen-mode .song-header,
-body.fullscreen-mode .info-content {
-    display: none !important;
-}
-
-body.fullscreen-mode .main-content {
-    margin-left: 0;
-    padding: 0;
-}
-
-body.fullscreen-mode .song-view {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
-    background: var(--bg);
-    overflow-y: auto;
-    padding-bottom: 0;
-}
-
-body.fullscreen-mode .song-content {
-    max-width: min(100% - 4rem, 1800px);
-    margin: 0 auto;
-    border: none;
-    border-radius: 0;
-    min-height: 100vh;
-    padding-top: 0;
-}
-
-/* Tablature wants the width in focus mode (lead sheets keep 900px) */
-body.fullscreen-mode .song-content:has(.tablature-all-tracks) {
-    max-width: 96vw;
-}
-
-/* Work controls exist INSIDE the (hidden-in-focus) work header — give
-   them the same focus-mode treatment as the song quick controls, so
-   the ⚙ Controls button actually reveals something. */
-body.fullscreen-mode .work-controls-content {
-    display: flex !important;
-    padding: 0.5rem 1rem;
-    border-bottom: 1px solid var(--border);
-}
-
-body.fullscreen-mode .work-controls-content.hidden {
-    display: none !important;
-}
-
-/* Show quick controls in fullscreen mode */
-body.fullscreen-mode .quick-controls-content {
-    display: flex !important;
-    padding: 0.5rem 1rem;
-    border-bottom: 1px solid var(--border);
-}
-
-/* Allow hiding quick controls in fullscreen mode via toggle */
-body.fullscreen-mode .quick-controls-content.hidden {
-    display: none !important;
-}
-
-/* Hide bottom nav bar in fullscreen - we use top header now */
-body.fullscreen-mode .song-nav-bar {
-    display: none !important;
-}
-
-/* Hide work-view elements in fullscreen focus mode */
-body.fullscreen-mode .work-inline-back {
-    display: none !important;
-}
-
-body.fullscreen-mode .work-bounty-section {
-    display: none !important;
-}
-
-body.fullscreen-mode .work-header-container {
-    display: none !important;
-}
-
-body.fullscreen-mode .work-inline-controls.hidden {
-    display: none !important;
-}
-
 /* Bottom navigation bar */
 .song-nav-bar {
     position: fixed;
@@ -7680,30 +6602,6 @@ body.fullscreen-mode .work-inline-controls.hidden {
     font-weight: bold;
 }
 
-/* Fullscreen exit hint */
-body.fullscreen-mode::after {
-    content: 'Press F or Esc to exit';
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    padding: 0.5rem 1rem;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    z-index: 1002;
-    opacity: 0;
-    animation: hintFade 3s forwards;
-    pointer-events: none;
-}
-
-@keyframes hintFade {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 0; }
-}
 
 /* Mobile adjustments for nav bar */
 @media (max-width: 600px) {
@@ -7711,10 +6609,6 @@ body.fullscreen-mode::after {
         padding: 0.5rem 0.75rem;
     }
 
-    /* Hide nav labels in song navigation bar, but not in sidebar */
-    .song-nav .nav-label {
-        display: none;
-    }
 
     .nav-arrow {
         font-size: 1.25rem;
@@ -7724,16 +6618,6 @@ body.fullscreen-mode::after {
         display: none;
     }
 
-    body.fullscreen-mode .song-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    body.fullscreen-mode .header-controls {
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 0.5rem;
-    }
 }
 
 /* ============================================
@@ -7930,24 +6814,15 @@ body.fullscreen-mode::after {
 
 @media print {
     /* Hide non-essential elements */
-    .sidebar,
-    .sidebar-backdrop,
     header,
     .search-container,
     #results,
-    .song-view-header,
     .song-tags-section,
     .song-meta,
     .song-nav-bar,
-    .header-controls,
-    .bottom-sheet,
-    .bottom-sheet-backdrop,
-    .song-actions,
     .part-tabs,
     .tab-controls,
-    .leadsheet-controls,
     #exit-fullscreen-btn,
-    .fullscreen-hint,
     .header-badge {
         display: none !important;
     }
@@ -8059,27 +6934,6 @@ body.fullscreen-mode::after {
    WorkView Styles
    ============================================ */
 
-/* Work header container - matches song-view header pattern */
-.work-header-container {
-    position: relative;
-}
-
-/* Work controls disclosure content */
-.work-controls-content {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.work-controls-content.hidden {
-    display: none;
-}
-
-/* Legacy work-header (kept for compatibility) */
-.work-header {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
-}
 
 .work-title {
     font-size: 1.75rem;
@@ -8102,27 +6956,7 @@ body.fullscreen-mode::after {
     gap: 0.25rem;
 }
 
-.work-artist {
-    font-weight: 500;
-}
 
-.work-key,
-.work-tempo {
-    background: var(--bg-secondary);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-}
-
-/* Part selector */
-.part-selector {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    padding: 0.5rem;
-    background: var(--bg-secondary);
-    border-radius: 8px;
-}
 
 .part-tab {
     display: flex;
@@ -8149,333 +6983,23 @@ body.fullscreen-mode::after {
     color: white;
 }
 
-.part-icon {
-    font-size: 1.1rem;
-}
 
 .part-label {
     font-weight: 500;
 }
 
-/* Lead sheet controls */
-.leadsheet-controls {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-    padding: 0.75rem 1rem;
-    background: var(--bg-secondary);
-    border-radius: 8px;
-}
 
-.leadsheet-controls label {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-}
-
-.leadsheet-controls .key-selector {
-    padding: 0.25rem 0.5rem;
-    border: 1px solid var(--border);
-    background: var(--bg);
-    color: var(--text);
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-
-/* ChordPro content in work view */
-.chordpro-content {
-    font-family: 'Menlo', 'Consolas', monospace;
-    line-height: 1.6;
-}
-
-.chordpro-content .section {
-    margin-bottom: 1.5rem;
-}
-
-.chordpro-content .section.compact {
-    margin-bottom: 0.75rem;
-}
-
-.chordpro-content .section-label {
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.chordpro-content .line {
-    margin-bottom: 0.25rem;
-}
-
-.chordpro-content .chord-line {
-    color: var(--accent);
-    font-weight: 600;
-    white-space: pre;
-}
-
-.chordpro-content .chord {
-    display: inline;
-}
-
-.chordpro-content .chord.hidden {
-    visibility: hidden;
-}
-
-.chordpro-content .lyrics {
-    white-space: pre-wrap;
-}
-
-.chordpro-content .empty-line {
-    height: 1em;
-}
-
-.chordpro-content .comment {
-    color: var(--text-secondary);
-    font-style: italic;
-}
 
 .work-part-content {
     min-height: 200px;
 }
 
-.no-parts {
-    text-align: center;
-    color: var(--text-secondary);
-    padding: 2rem;
-}
 
-/* Dashboard part cards */
-.work-dashboard-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-}
 
-.work-part-card {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    transition: border-color 0.15s, box-shadow 0.15s;
-}
 
-.work-part-card:hover {
-    border-color: var(--accent);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
 
-.work-card-icon {
-    font-size: 1.5rem;
-    flex-shrink: 0;
-}
 
-.work-card-body {
-    flex: 1;
-    min-width: 0;
-}
 
-.work-card-label {
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: var(--text);
-}
-
-.work-card-meta {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.15rem;
-}
-
-.work-card-preview {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.25rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-style: italic;
-}
-
-.work-card-action {
-    background: var(--accent);
-    color: white;
-    border: none;
-    padding: 0.35rem 0.75rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.8rem;
-    font-weight: 500;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-
-.work-card-action:hover {
-    background: var(--accent-hover);
-}
-
-/* Version cards section */
-.work-versions-section {
-    margin-top: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.work-versions-heading {
-    font-size: var(--font-sm);
-    font-weight: 600;
-    color: var(--text-secondary);
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-}
-
-.work-versions-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 0.5rem;
-}
-
-.version-card {
-    display: flex;
-    align-items: flex-start;
-    padding: 0.65rem 0.85rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--border);
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.version-card:hover {
-    border-left-color: var(--accent);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.version-card-current {
-    border-left-color: var(--accent);
-    background: rgba(79, 70, 229, 0.04);
-    cursor: default;
-}
-
-[data-theme="dark"] .version-card-current {
-    background: rgba(96, 165, 250, 0.06);
-}
-
-.version-card-body {
-    flex: 1;
-    min-width: 0;
-}
-
-.version-card-label {
-    font-size: var(--font-base);
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-.version-card-badge {
-    font-size: 0.65rem;
-    font-weight: 500;
-    color: var(--accent);
-    background: rgba(79, 70, 229, 0.12);
-    padding: 0.1rem 0.4rem;
-    border-radius: 3px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-}
-
-.version-card-artist {
-    font-size: var(--font-sm);
-    color: var(--text);
-    margin-top: 0.15rem;
-}
-
-.version-card-source {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.15rem;
-}
-
-.version-card-meta {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.15rem;
-}
-
-.version-card-preview {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.25rem;
-    font-style: italic;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-/* Version count display (in work header, replaces old button) */
-.version-count-display {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-    background: rgba(79, 70, 229, 0.08);
-    padding: 0.15rem 0.5rem;
-    border-radius: 10px;
-    vertical-align: middle;
-    margin-left: 0.3rem;
-}
-
-/* Back to versions button (in song view) */
-.back-to-versions-btn {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--accent);
-    background: rgba(79, 70, 229, 0.1);
-    border: none;
-    padding: 0.2rem 0.6rem;
-    border-radius: 10px;
-    cursor: pointer;
-    vertical-align: middle;
-    transition: all 0.2s;
-}
-
-.back-to-versions-btn:hover {
-    background: var(--accent);
-    color: white;
-}
-
-/* Inline expansion back button */
-.work-inline-back {
-    background: none;
-    border: none;
-    color: var(--accent);
-    cursor: pointer;
-    font-size: 0.9rem;
-    padding: 0.5rem 0;
-    margin-bottom: 0.5rem;
-}
-
-.work-inline-back:hover {
-    text-decoration: underline;
-}
-
-.work-inline-controls {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.work-inline-controls:empty,
-.work-inline-controls.hidden {
-    display: none;
-}
 
 /* Bounty section title (non-collapsible on dashboard) */
 .work-bounty-title {
@@ -9007,15 +7531,6 @@ body.fullscreen-mode::after {
     gap: 1.5rem;
 }
 
-/* Controls stay visible while the (page-scrolled) tab flows by —
-   sticky beats a nested scroll pane, which fought the page scroll
-   and made bottom tracks unreachable. */
-.work-controls-content {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    background: var(--bg);
-}
 
 /* Track VIEW tabs: which staff you see (audio = mixer checkboxes/Solo) */
 .track-view-tabs {
@@ -10929,8 +9444,8 @@ body.has-bottomband .container {
     width: 100%;
 }
 
-/* Keep the pill row reachable in focus mode (toggled via ⚙️ Controls) */
-body.fullscreen-mode .song-pill-row {
+/* Keep the pill row reachable in focus (immersive) mode */
+body.immersive .song-pill-row {
     padding: 0 var(--space-md);
 }
 

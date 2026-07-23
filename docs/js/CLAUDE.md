@@ -6,35 +6,39 @@ Single-page search application for the Bluegrass Songbook. Modularized into ES m
 
 ```
 docs/
-├── index.html          # Page structure, sidebar, modals
+├── index.html          # Page structure, modals (chrome is built by js/shell.js)
 ├── blog.html           # Dev blog
 ├── js/
-│   ├── main.js         # Entry point, initialization, event wiring
+│   ├── main.js         # Entry point, initialization, event wiring, routing
+│   ├── shell.js        # App shell: top band, bottom band, pill primitive
 │   ├── state.js        # Shared state (allSongs, currentSong, etc.)
 │   ├── search-core.js  # Search logic, query parsing, filtering
-│   ├── song-view.js    # Song rendering, controls, ABC notation
-│   ├── work-view.js    # Work display with parts, tablature integration
+│   ├── work-view.js    # THE unified song page (openWork) — all routes land here
+│   ├── song-view.js    # Lead-sheet rendering helpers, ABC notation, list nav
+│   ├── song-controls.js # Pill builders: Key / Display / Info / Export
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
 │   ├── tags.js         # Tag dropdown, filtering, instrument tags
 │   ├── lists.js        # User lists, favorites, multi-owner, Thunderdome
-│   ├── list-picker.js  # List picker dropdown component
+│   ├── list-picker.js  # List picker popup component
 │   ├── editor.js       # Song editor (Raw tab), re-exports smart-paste pipeline
 │   ├── smart-paste.js  # Shared chord-sheet→ChordPro conversion (Raw + Visual paste)
-│   ├── flags.js        # Report Issue feature (creates GitHub issues)
-│   ├── song-request.js # Song request feature (frictionless)
+│   ├── flags.js        # Unified feedback modal (song issues, bugs, general feedback)
+│   ├── add-song-picker.js # Add/request-a-song picker (also serves #request-song)
 │   ├── superuser-request.js # Super-user request modal and submission
 │   ├── collections.js  # Landing page collection definitions
 │   ├── analytics.js    # Behavioral analytics tracking
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
 │   ├── supabase-auth.js # Auth, cloud sync, voting
-│   ├── renderers/      # Part renderers (tablature, etc.)
+│   ├── renderers/      # Part renderers
 │   │   ├── index.js    # Renderer registry
+│   │   ├── chordpro.js # THE ChordPro renderer (parse + render, shared everywhere)
 │   │   ├── tablature.js # Tablature display
 │   │   ├── tab-player.js # Interactive tab player with playback
-│   │   └── tab-ascii.js # ASCII tab format
+│   │   ├── tab-ascii.js # ASCII tab format
+│   │   └── measure-timing.js # Measure timing helpers for playback
 │   ├── chord-explorer/ # Chord exploration tool (standalone)
 │   ├── visual-editor/  # Two-pane editor: interactive preview + ChordPro model
-│   ├── otf-editor/     # Tablature editor (design phase)
+│   ├── otf-editor/     # Tablature editor
 │   └── __tests__/      # Vitest unit tests
 ├── css/style.css       # Dark/light themes, responsive layout
 ├── posts/              # Blog posts (markdown)
@@ -50,6 +54,45 @@ docs/
 ```
 
 ## Architecture
+
+### App Shell (`shell.js`)
+
+All persistent chrome lives in the app shell — there is no sidebar, hamburger,
+quick-controls bar, or bottom sheet anymore:
+
+- **Top band** (`.app-topbar`): back button, brand, nav links, page title,
+  per-page action buttons, theme toggle, and an overflow (⋯) menu.
+  Pages declare their chrome with `setTopBar({ back, title, actions, overflow, navActive })`.
+- **Bottom band** (`.app-bottomband`): the one home for practice/playback
+  controls (tab player transport, track mixer, ABC controls). Mount content
+  with `setBottomBand(el)`; pass `null` to hide it.
+- **Pill primitive**: `pill(label, buildContent, opts)` returns a small
+  labeled button that opens a popover. All song-page controls are pills.
+- **Focus mode = `body.immersive`**: `setImmersive(on)` toggles it. The top
+  band slides off-screen (a 4px peek strip remains; hover/focus reveals it)
+  while content, the pill row, and the bottom band stay. No separate focus
+  header or view fork exists. `F` toggles, `Esc` exits.
+
+### Unified Song Page (`work-view.js`)
+
+ONE page per song: title + artist, a pill row (Key / Display / Info /
+Arrangement), part tabs when a work has multiple parts, the active part's
+content, and the shell's top/bottom bands for actions and playback.
+
+- **Every route lands in `openWork()`** — search results, lists, deep links,
+  history. `openSong()` still exists as a thin wrapper that calls
+  `openWork(id, { exact: true })`.
+- **Pills** are built by `song-controls.js` (`buildKeyPill`, `buildDisplayPill`,
+  `buildInfoPill`, `buildExportPill`) plus the Arrangement pill in
+  work-view.js (version switching + voting, replacing the old version-picker
+  modal and dashboard cards).
+- **One renderer**: ChordPro parsing/rendering is shared from
+  `renderers/chordpro.js` (`parseChordPro` is re-exported by song-view.js for
+  compatibility).
+- **Routing**: `#work/{slug}` (optionally `#work/{slug}/{partId}`) is the
+  canonical URL. Legacy `#song/{id}` URLs resolve to the work and are
+  rewritten with `history.replaceState`. List-context pages keep
+  `#list/{listId}/{workId}` URLs.
 
 ### State Variables
 
@@ -107,15 +150,13 @@ let userLists = [];             // Custom user lists (via supabase-auth.js)
 | `refreshPendingSongs()` | Re-fetch pending songs from Supabase, merge into allSongs |
 | `search(query)` | Filter songs by query, chords, progression |
 | `renderResults(songs)` | Display search results list (with version badges) |
-| `openSong(songId)` | Load and display a song |
-| `openWork(workSlug)` | Load and display a work with parts |
-| `parseChordPro(content)` | Parse ChordPro → structured sections |
-| `renderSong(song, chordpro)` | Render song with chord highlighting |
-| `loadTablature(tabPath)` | Load tablature JSON for a work part |
+| `openWork(workSlug, opts)` | THE song page entry point (parts, pills, tablature) |
+| `openSong(songId)` | Thin wrapper: `openWork(id, { exact: true })` |
+| `parseChordPro(content)` | Parse ChordPro → structured sections (renderers/chordpro.js) |
 | `transposeChord(chord, semitones)` | Transpose individual chord |
 | `toNashville(chord, key)` | Convert chord to Nashville number |
 | `detectKey(chords)` | Auto-detect key from chord list |
-| `showVersionPicker(groupId)` | Display version picker modal with voting |
+| `setTopBar(config)` / `setBottomBand(el)` | Declare page chrome in the app shell |
 | `openPrintView()` | Open print-optimized view in new window |
 
 ### Search Features
@@ -194,25 +235,21 @@ renderers/
 - Measure navigation
 - Loop sections
 
-### openSong vs openWork Routing
+### Routing: everything is openWork
 
-There are two rendering paths for displaying content:
+There is ONE rendering path. `openWork(id, opts)` handles lead sheets,
+tablature-only works, and multi-part works alike (part tabs select the
+active part; the track mixer mounts in the bottom band for multi-track
+tabs). `openSong(id)` survives only as a compatibility wrapper that calls
+`openWork(id, { exact: true })` — it shows exactly the requested version
+instead of the group representative.
 
-| Function | Use Case | Features |
-|----------|----------|----------|
-| `openSong(id)` | Lead sheets, songs with lyrics | ChordPro rendering, transposition |
-| `openWork(id)` | Tablature-only works, multi-part works | Part tabs, track mixer, full tablature controls |
+URL forms:
 
-**Important**: For tablature-only works (no `content` field), always use `openWork` to get the track mixer. The search-core.js and version picker both check for this:
-
-```javascript
-const hasTabOnly = song.tablature_parts?.length > 0 && !song.content;
-if (hasTabOnly) {
-    openWork(songId);  // Shows track mixer for multi-track tabs
-} else {
-    openSong(songId);  // Standard song view
-}
-```
+- `#work/{slug}` — canonical song URL (`#work/{slug}/{partId}` for a part)
+- `#song/{id}` — legacy; resolved via `resolveWorkId()` and rewritten to
+  `#work/{slug}` with `history.replaceState`
+- `#list/{listId}/{workId}` — list-context pages keep list URLs
 
 ### Track Mixer (Multi-Track Tablature)
 
@@ -234,19 +271,20 @@ Multi-track tabs (e.g., ensemble arrangements with guitar, banjo, mandolin, bass
 - `transposeChord()` handles sharps/flats correctly
 - `getSemitonesBetweenKeys()` calculates interval
 
-### Song View Controls
+### Song Page Controls (pills)
 
-**Export actions** (in song-actions bar):
-- Print button → `openPrintView()` (new window)
-- Copy dropdown → Copy ChordPro / Copy as Text
-- Download dropdown → Download .pro / Download .txt
+The song page's controls are pills in a single pill row, built by
+`song-controls.js`:
 
-**Render options** (in song view):
-- Key selector → transpose and re-render
-- Font size +/- → adjust `currentFontSize`
-- Chord mode dropdown → 'all' | 'first' | 'none'
-- Compact checkbox → reduce whitespace
-- Nashville checkbox → show Nashville numbers
+- **Key pill** (`buildKeyPill`): −/+ transpose, key grid, Nashville toggle,
+  Strum Machine link when matched
+- **Display pill** (`buildDisplayPill`): font size, two columns, section
+  labels, compact, chord display mode ('all' | 'first' | 'none')
+- **Info pill** (`buildInfoPill`): metadata, covering artists, tags, source
+- **Export pill** (`buildExportPill`, in the top band): Print
+  (`openPrintView()`), Copy ChordPro/Text, Download .pro/.txt
+- **Arrangement pill** (work-view.js): switch between versions of a group,
+  with vote counts and voting (replaces the old version-picker modal)
 
 **Print view** has its own controls:
 - Same options as song view
@@ -279,15 +317,12 @@ Functions prefixed with `editor*`:
 - `updateEditorPreview()` - Refresh chrome (key/toolbar) + re-render preview
 - `submitSongToGitHub()` - Create GitHub issue for submission
 
-### Sidebar Navigation
+### View Navigation
 
-```javascript
-function navigateTo(mode) {
-    // mode: 'search' | 'add-song' | 'favorites'
-    closeSidebar();
-    // Show/hide appropriate panels
-}
-```
+Views are switched through the reactive `currentView` state (`showView(mode)`
+in main.js sets it; a subscriber shows/hides panels and updates the top
+band's nav links). There is no sidebar — top-band nav links cover Search,
+Lists, Add Song, etc., with the rest in the overflow (⋯) menu.
 
 ## Testing
 
@@ -345,20 +380,22 @@ mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
 
 **E2E tests** (`../../e2e/`):
 - `abc-notation.spec.js` - ABC notation rendering for fiddle tunes
+- `arrangement-pill.spec.js` - Arrangement pill (version switching/voting)
 - `editor.spec.js` - Song editor flows
 - `error-states.spec.js` - Error handling and edge cases
 - `favorites.spec.js` - Favorites and lists
 - `landing-page.spec.js` - Homepage collections and navigation
 - `list-management.spec.js` - List CRUD, sharing, multi-owner
 - `navigation.spec.js` - URL routing, deep links
+- `otf-editor.spec.js` / `otf-editor-visual.spec.js` - Tablature editor
 - `print-options.spec.js` - Print view and export options
 - `search.spec.js` - Search and filtering flows
 - `search-edge-cases.spec.js` - Complex search scenarios
 - `song-view.spec.js` - Song display and controls
 - `transposition.spec.js` - Key transposition features
 - `ui.spec.js` - UI interactions, modals, navigation
-- `version-picker.spec.js` - Song version selection
-- `work-view.spec.js` - Work display with parts/tablature
+- `visual-editor.spec.js` - Visual editor preview
+- `work-view.spec.js` - Unified song page with parts/tablature
 
 ## Adding a Feature
 
@@ -417,10 +454,16 @@ Songs in `index.jsonl`:
 ```
 
 **Version fields** (for alternate arrangements):
-- `group_id`: Links songs that are versions of each other
+- `group_id`: Links songs that are versions of each other (stable `grp:` ids
+  for curated groups)
 - `version_label`: Display name ("Simplified", "Original", etc.)
 - `version_type`: Category (alternate, cover, simplified, live)
 - `arrangement_by`: Who created this arrangement
+
+**Curation fields** (from `curation/registry.yaml`, applied at index build):
+- `canonical`: `true` on the editorially pinned version of a group
+- `variant_of`: canonical work id this row is a variant of
+- `variant_label`: optional display label for the variant
 
 **Tablature fields** (for works with tabs):
 ```json
@@ -437,17 +480,21 @@ Songs in `index.jsonl`:
 }
 ```
 
-### Version Picker Labels
+### Arrangement Pill & Curation Fields
 
-The version picker (`showVersionPicker()`) generates labels based on content type:
+Version selection lives in the Arrangement pill on the song page (the old
+version-picker modal is gone). Index rows carry editorial curation fields
+from `curation/registry.yaml` (applied by `scripts/lib/curation.py` at
+build time):
 
-| Content Type | Label | Metadata |
-|-------------|-------|----------|
-| Tab-only work | "Tab by {author}" or title suffix | "Banjo Hangout • banjo" |
-| ABC notation | "Fiddle notation" | "Notation • TuneArch • Key: G" |
-| Lead sheet | "Key of {key}" | "{N} chords" |
+- `canonical: true` — this row is the editorially pinned version of its group
+- `variant_of: "<canonical-id>"` — this row is a variant of a canonical work
+- `variant_label: "..."` — optional display label for the variant
 
-This prevents confusing labels like showing "Banjo Hangout" for a work that primarily displays ABC notation.
+The pill lists the group's versions (canonical first), shows vote counts,
+and lets signed-in users vote. When picking a group's representative
+(search results, non-exact navigation), a `canonical` row wins outright;
+otherwise: content > most chords > highest `canonical_rank`.
 
 ## Dependencies
 
@@ -488,29 +535,13 @@ Trusted users can make instant edits without waiting for approval:
 - `refreshPendingSongs()` merges pending songs into `allSongs`
 - Regular users can request trusted status via super-user request modal
 
-### Focus Mode
+### Focus Mode (immersive)
 
-Full-screen distraction-free view for practicing. Toggle via button in song view or keyboard shortcut.
-
-- Hides header, sidebar, and search
-- Shows minimal navigation (Song button to exit)
-- Quick controls bar remains visible
-- ESC key exits focus mode (closes bottom sheet first if open)
-
-### Quick Controls Bar
-
-Always-visible controls below song title for one-click access during practice:
-
-```
-[(−) Aa (+)]  [(−) G ▼ (+)]  [Layout ▼]  [Nashville]  [🎵]  [▲]
-```
-
-- **Size**: Decrease/increase font size
-- **Key**: Transpose down/up, dropdown for key selection
-- **Layout**: Two columns, section labels, chord display mode
-- **Nashville**: Toggle Nashville numbers
-- **Strum Machine**: Opens backing track (if available)
-- **Collapse**: Hide/show the bar (preference saved)
+Distraction-free practice view: `body.immersive` (toggled via
+`setImmersive()` in shell.js). The top band slides off-screen (hover the
+top edge to reveal it); the content, pill row, and bottom band stay. `F`
+toggles, `Esc` exits. Opening a song from a list auto-enters focus and
+shows the list nav bar for prev/next.
 
 ### Strum Machine Integration
 
@@ -530,29 +561,32 @@ Songs display which bluegrass artists have recorded them (from grassiness scorin
 - Searchable via `covering:artist name` filter
 - Data from `grassiness_scores.json`
 
-### Report Issue / Flags (`flags.js`)
+### Unified Feedback Modal (`flags.js`)
 
-Users can report song issues (wrong chord, lyric error, etc.) without GitHub account.
+ONE modal for all feedback — song issues (wrong chord, lyric error, etc.),
+bug reports, and general feedback — no GitHub account needed.
 
-- Modal with radio options for issue type
-- Optional description field
-- Creates GitHub issue via Supabase edge function
+- `openFeedbackModal({ type, song })` with a type selector
+  (`song-issue`, `song-correction`, `bug-report`, `general-feedback`)
+- Entry points: "🚩 Report issue" in the song page's overflow menu,
+  "Send Feedback" in the shell's overflow menu, homepage report-bug link
+- Creates GitHub issues via the `create-flag-issue` Supabase edge function
 - Attribution tracks who submitted (logged-in user or "Rando Calrissian")
 
-### Song Request (`song-request.js`)
+### Song Requests (`add-song-picker.js`)
 
-Frictionless song requests without GitHub account.
+Frictionless song requests without a GitHub account.
 
-- Modal with title, artist, details fields
-- Creates GitHub issue via Supabase edge function
-- Available from bounty page and `#request-song` hash
+- `openAddSongPicker({ mode: 'request' })` — reachable via the
+  `#request-song` hash and the bounty page's "Request a Song" button
+- Creates GitHub issues via the `create-song-request` Supabase edge function
 
 ### Multi-Owner Lists & Thunderdome
 
 Lists can have multiple owners for collaborative curation.
 
-- **Follow/Unfollow**: Follow someone else's list to see it in your sidebar
-- **Thunderdome**: Claim abandoned lists (owner inactive 30+ days)
+- **Follow/Unfollow**: Follow someone else's list to see it with your lists
+- **Thunderdome**: Claim abandoned lists (owner inactive 1+ year)
 - **Shareable URLs**: `#list/{id}` URLs work for any public list
 - Lists stored in Supabase `song_lists` table with `owner_ids` array
 

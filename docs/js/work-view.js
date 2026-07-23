@@ -26,7 +26,7 @@ import {
 
 import {
     goBack,
-    updateFocusHeader, updateNavBar,
+    updateListContextClass, updateNavBar,
     stopAbcPlayback,
     renderLeadSheetContent
 } from './song-view.js';
@@ -44,7 +44,7 @@ import { clearListView, openNotesSheet } from './lists.js';
 import { showListPicker, updateTriggerButton } from './list-picker.js';
 import { openFlagModal } from './flags.js';
 import { trackSongView } from './analytics.js';
-import { setTopBar, setBottomBand, pill } from './shell.js';
+import { setTopBar, setBottomBand, pill, setImmersive } from './shell.js';
 import { buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill } from './song-controls.js';
 import {
     attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
@@ -294,9 +294,9 @@ export async function openWork(workId, options = {}) {
         }
         clearListView();
 
-        // Exit fullscreen when opening the page directly (not from list nav)
+        // Exit focus (immersive) when opening the page directly (not from list nav)
         if (fullscreenMode) {
-            document.body.classList.remove('fullscreen-mode');
+            setImmersive(false);
             setFullscreenMode(false);
         }
         const navBar = document.getElementById('song-nav-bar');
@@ -346,10 +346,10 @@ export async function openWork(workId, options = {}) {
         setListContext(null);
     }
 
-    // Auto-enter fullscreen when opening from a list
+    // Auto-enter focus (immersive) when opening from a list
     if (fromList && listContext) {
         setFullscreenMode(true);
-        document.body.classList.add('fullscreen-mode');
+        setImmersive(true);
         document.body.classList.add('has-list-context');
     }
 
@@ -368,7 +368,7 @@ export async function openWork(workId, options = {}) {
 
     updateNavBar();
     if (fromList) {
-        updateFocusHeader();
+        updateListContextClass();
     }
 
     // History: list-context pages keep #list/... URLs; everything else gets

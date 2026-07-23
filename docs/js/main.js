@@ -46,7 +46,7 @@ import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } 
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
-import { initShell, setTopBar, setBottomBand, setOverflowBase } from './shell.js';
+import { initShell, setTopBar, setBottomBand, setOverflowBase, setImmersive } from './shell.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
 import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
@@ -64,7 +64,6 @@ const searchStats = document.getElementById('search-stats');
 const resultsDiv = document.getElementById('results');
 const songView = document.getElementById('song-view');
 const songContent = document.getElementById('song-content');
-const backBtn = document.getElementById('back-btn');
 const visitorStatsEl = document.getElementById('visitor-stats');
 
 // Landing page elements
@@ -73,8 +72,7 @@ const collectionsGrid = document.getElementById('collections-grid');
 const landingSearchInput = document.getElementById('landing-search-input');
 const logoLink = document.getElementById('logo-link');
 
-// Fullscreen / navigation elements
-const fullscreenBtn = document.getElementById('fullscreen-btn');
+// List navigation bar elements
 const exitFullscreenBtn = document.getElementById('exit-fullscreen-btn');
 const navBar = document.getElementById('song-nav-bar');
 const navPrevBtn = document.getElementById('nav-prev-btn');
@@ -331,9 +329,9 @@ function initViewSubscription() {
         // view rebuilds everything it needs on render.
         teardownTablatureView();
 
-        // Exit fullscreen mode when navigating away from song/work views
+        // Exit focus (immersive) mode when navigating away from song/work views
         if (view !== 'song' && view !== 'work') {
-            document.body.classList.remove('fullscreen-mode');
+            setImmersive(false);
             setFullscreenMode(false);
         }
 
@@ -2105,14 +2103,12 @@ function init() {
         resultsDiv,
         pushHistoryState,
         showView,
-        backBtn,
         // Navigation elements
         navBar,
         navPrevBtn,
         navNextBtn,
         navPosition,
-        navListName,
-        fullscreenBtn
+        navListName
     });
 
     // List navigation router: everything goes through the unified song page
