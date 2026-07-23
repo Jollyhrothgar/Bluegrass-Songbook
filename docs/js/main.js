@@ -32,25 +32,23 @@ import {
 } from './state.js';
 import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import {
-    initLists, renderSidebarLists, renderListPickerDropdown, performFullListsSync,
+    initLists, performFullListsSync,
     clearListView, renderListsModal, createList, addSongToList, getViewingListId,
     showListView, fetchListData, renderManageListsView, showSongListsView, startCreateListInView,
     // Favorites functions (favorites is now just a list)
     showFavorites, updateFavoritesCount, getFavoritesList, isFavorite, toggleFavorite,
     updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
-import { initSongView, goBack, getCurrentSong, toggleFullscreen, exitFullscreen, openSongControls, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
-import { openWork, teardownTablatureView, getActiveItemRef, configureWorkPage, updateWorkTopBar } from './work-view.js';
-import { handleExport } from './song-controls.js';
+import { initSongView, goBack, getCurrentSong, toggleFullscreen, exitFullscreen, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
+import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates } from './utils.js';
-import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase } from './shell.js';
-import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink, trackBottomSheet } from './analytics.js';
-import { initFlags, openFlagModal } from './flags.js';
+import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
+import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
 import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
@@ -67,44 +65,17 @@ const resultsDiv = document.getElementById('results');
 const songView = document.getElementById('song-view');
 const songContent = document.getElementById('song-content');
 const backBtn = document.getElementById('back-btn');
-const themeToggle = document.getElementById('theme-toggle');
 const visitorStatsEl = document.getElementById('visitor-stats');
 
 // Landing page elements
 const landingPage = document.getElementById('landing-page');
 const collectionsGrid = document.getElementById('collections-grid');
 const landingSearchInput = document.getElementById('landing-search-input');
-
-// Sidebar elements
-const sidebar = document.getElementById('sidebar');
-const sidebarBackdrop = document.getElementById('sidebar-backdrop');
-const sidebarClose = document.getElementById('sidebar-close');
-const menuBtn = document.getElementById('hamburger-btn');
 const logoLink = document.getElementById('logo-link');
-const navHome = document.getElementById('nav-home');
-const navSearch = document.getElementById('nav-search');
-const navAddSong = document.getElementById('nav-add-song');
-const navFavorites = document.getElementById('nav-favorites');
-const navFavoritesCount = document.getElementById('nav-favorites-count');
-const navListsContainer = document.getElementById('nav-lists-container');
-const songListsBtn = document.getElementById('nav-song-lists');
-
-// List picker elements
-const listPickerBtn = document.getElementById('list-picker-btn');
-const listPickerDropdown = document.getElementById('list-picker-dropdown');
-const customListsContainer = document.getElementById('custom-lists-container');
-const favoritesCheckbox = document.getElementById('favorites-checkbox');
-
-// Version modal
-const versionModal = document.getElementById('version-modal');
-const versionModalClose = document.getElementById('version-modal-close');
-const versionModalTitle = document.getElementById('version-modal-title');
-const versionList = document.getElementById('version-list');
 
 // Fullscreen / navigation elements
 const fullscreenBtn = document.getElementById('fullscreen-btn');
 const exitFullscreenBtn = document.getElementById('exit-fullscreen-btn');
-const songViewBtn = document.getElementById('song-view-btn');
 const navBar = document.getElementById('song-nav-bar');
 const navPrevBtn = document.getElementById('nav-prev-btn');
 const navNextBtn = document.getElementById('nav-next-btn');
@@ -114,17 +85,12 @@ const navListName = document.getElementById('nav-list-name');
 // Print list button
 const printListBtn = document.getElementById('print-list-btn');
 
-// Bottom sheet
-const bottomSheet = document.getElementById('bottom-sheet');
-const bottomSheetBackdrop = document.getElementById('bottom-sheet-backdrop');
-
 // Lists modal
 const listsModal = document.getElementById('lists-modal');
 const listsModalClose = document.getElementById('lists-modal-close');
 const listsContainer = document.getElementById('lists-container');
 const modalCreateListBtn = document.getElementById('create-list-submit');
 const modalNewListInput = document.getElementById('new-list-name');
-// Old list picker elements no longer needed - using unified ListPicker component
 
 // Song Lists page (formerly Manage Lists)
 const songListsView = document.getElementById('song-lists-view');
@@ -182,28 +148,6 @@ const tagDropdownContent = document.getElementById('tag-dropdown-content');
 // Search tips dropdown
 const searchTipsBtn = document.getElementById('search-tips-btn');
 const searchTipsDropdown = document.getElementById('search-tips-dropdown');
-
-// Feedback elements
-const navFeedback = document.getElementById('nav-feedback');
-
-// Bug report modal
-const bugModal = document.getElementById('bug-modal');
-const bugModalClose = document.getElementById('bug-modal-close');
-const bugFeedback = document.getElementById('bug-feedback');
-const bugSubmitBtn = document.getElementById('submit-bug-btn');
-
-// Song correction modal
-const correctionModal = document.getElementById('correction-modal');
-const correctionModalClose = document.getElementById('correction-modal-close');
-const correctionEditBtn = document.getElementById('correction-edit-btn');
-const correctionFeedbackBtn = document.getElementById('correction-feedback-btn');
-
-// Contact modal
-const contactModal = document.getElementById('contact-modal');
-const contactModalClose = document.getElementById('contact-modal-close');
-const contactModalTitle = document.getElementById('contact-modal-title');
-const contactFeedback = document.getElementById('contact-feedback');
-const contactSubmitBtn = document.getElementById('submit-contact-btn');
 
 // ============================================
 // THEME HANDLING
@@ -406,15 +350,6 @@ function initViewSubscription() {
             resetDocUpload();
         }
 
-        // Close bottom sheet if open (it has position: fixed so stays visible)
-        bottomSheet?.classList.add('hidden');
-        bottomSheetBackdrop?.classList.add('hidden');
-
-        // Reset all nav states
-        [navHome, navSearch, navAddSong, navFavorites].forEach(btn => {
-            if (btn) btn.classList.remove('active');
-        });
-
         // Top band: the song page declares its own chrome (back/title/
         // actions); every other view gets the plain nav band. The bottom
         // band belongs to the song page only.
@@ -446,7 +381,6 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
-                navHome?.classList.add('active');
                 break;
             case 'search':
                 searchContainer?.classList.remove('hidden');
@@ -455,7 +389,6 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
-                navSearch?.classList.add('active');
                 // Show empty state if no search query (don't show random songs)
                 if (!searchInput?.value?.trim() && resultsDiv) {
                     resultsDiv.innerHTML = '<div class="search-prompt">Search for songs by title, artist, lyrics, or use filters like <code>tag:bluegrass</code></div>';
@@ -469,7 +402,6 @@ function initViewSubscription() {
                 editorPanel?.classList.remove('hidden');
                 uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
-                navAddSong?.classList.add('active');
                 break;
             case 'doc-upload':
                 searchContainer?.classList.add('hidden');
@@ -478,7 +410,6 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 uploadPanel?.classList.remove('hidden');
                 songListsView?.classList.add('hidden');
-                navAddSong?.classList.add('active');
                 break;
             case 'favorites':
                 searchContainer?.classList.remove('hidden');
@@ -487,7 +418,6 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
-                navFavorites?.classList.add('active');
                 showFavorites();
                 break;
             case 'song':
@@ -991,25 +921,10 @@ function checkPendingInvite() {
 }
 
 // ============================================
-// SIDEBAR NAVIGATION
+// NAVIGATION
 // ============================================
 
-function openSidebar() {
-    sidebar?.classList.add('open');
-    sidebarBackdrop?.classList.remove('hidden');
-    sidebarBackdrop?.classList.add('visible');
-}
-
-function closeSidebar() {
-    sidebar?.classList.remove('open');
-    sidebarBackdrop?.classList.remove('visible');
-    setTimeout(() => {
-        sidebarBackdrop?.classList.add('hidden');
-    }, 300);
-}
-
 function navigateTo(mode) {
-    closeSidebar();
     trackNavigation(mode);
     // Entering Add Song after an edit session must start from a fresh
     // new-song editor (an unsaved new-song draft is preserved)
@@ -1779,115 +1694,6 @@ function openListsModal() {
     renderListsModal();
 }
 
-
-// ============================================
-// FEEDBACK
-// ============================================
-
-function handleFeedbackOption(type) {
-    closeSidebar();
-
-    const song = getCurrentSong();
-
-    switch (type) {
-        case 'song-issue':
-            // Open bug report modal for song display issues
-            if (bugModal) {
-                bugModal.classList.remove('hidden');
-                if (bugFeedback) {
-                    bugFeedback.value = song ? `Song: ${song.title} by ${song.artist}\n\n` : '';
-                    bugFeedback.focus();
-                }
-            }
-            break;
-        case 'song-correction':
-            // Show correction modal with edit option
-            if (song) {
-                correctionModal?.classList.remove('hidden');
-            } else {
-                // No song open, just show feedback form
-                openContactModal('Song Correction', '');
-            }
-            break;
-        case 'search-problem':
-        case 'app-issue':
-        case 'request-song':
-        case 'feature-idea':
-        case 'general':
-        case 'copyright':
-            // Open contact modal for general feedback
-            const titles = {
-                'search-problem': 'Report Search Problem',
-                'app-issue': 'Report App Issue',
-                'request-song': 'Request a Song',
-                'feature-idea': 'Feature Idea',
-                'general': 'General Feedback',
-                'copyright': 'Copyright Concern'
-            };
-            openContactModal(titles[type] || 'Send Feedback', '');
-            break;
-    }
-}
-
-function openContactModal(title, prefill) {
-    if (contactModal) {
-        if (contactModalTitle) {
-            contactModalTitle.textContent = title;
-        }
-        contactModal.classList.remove('hidden');
-        if (contactFeedback) {
-            contactFeedback.value = prefill;
-            contactFeedback.focus();
-        }
-    }
-}
-
-function closeBugModal() {
-    bugModal?.classList.add('hidden');
-    if (bugFeedback) bugFeedback.value = '';
-}
-
-function closeCorrectionModal() {
-    correctionModal?.classList.add('hidden');
-}
-
-function closeContactModal() {
-    contactModal?.classList.add('hidden');
-    if (contactFeedback) contactFeedback.value = '';
-}
-
-function submitBugReport() {
-    const feedback = bugFeedback?.value.trim();
-    if (!feedback) return;
-
-    const subject = encodeURIComponent('Song Issue Report');
-    const body = encodeURIComponent(feedback);
-    window.location.href = `mailto:bluegrassbook.feedback@gmail.com?subject=${subject}&body=${body}`;
-    closeBugModal();
-}
-
-function submitContactForm() {
-    const feedback = contactFeedback?.value.trim();
-    if (!feedback) return;
-
-    const title = contactModalTitle?.textContent || 'Feedback';
-    track('feedback_submit', { type: title });
-    const subject = encodeURIComponent(title);
-    const body = encodeURIComponent(feedback);
-    window.location.href = `mailto:bluegrassbook.feedback@gmail.com?subject=${subject}&body=${body}`;
-    closeContactModal();
-}
-
-// ============================================
-// PRINT VIEW
-// ============================================
-
-function openPrintView() {
-    // Simply trigger the browser's print dialog
-    // CSS @media print handles the formatting
-    window.print();
-}
-
 // ============================================
 // PRINT LIST VIEW
 // ============================================
@@ -2200,11 +2006,6 @@ function generatePrintListPage(listName, songs, prefs) {
 }
 
 // ============================================
-// EXPORT FUNCTIONS: moved to song-controls.js (handleExport) — shared by
-// the top-band Export pill and the mobile bottom sheet.
-// ============================================
-
-// ============================================
 // INITIALIZATION
 // ============================================
 
@@ -2219,7 +2020,7 @@ function init() {
     initShell({
         nav: [
             { id: 'search', label: 'Search', icon: '&#128269;', href: '#search', onClick: () => navigateTo('search') },
-            { id: 'add', label: 'Add Song', icon: '&#43;', href: '#add', onClick: () => navigateTo('add-song') },
+            { id: 'add', label: 'Add Song', icon: '&#43;', href: '#add', onClick: () => openAddSongPicker() },
             { id: 'favorites', label: 'Favorites', icon: '&#9825;', href: '#favorites', onClick: () => navigateTo('favorites') },
             { id: 'lists', label: 'Lists', icon: '&#9776;', href: '#lists', onClick: () => { showSongListsView(); pushHistoryState('song-lists', {}); } },
         ],
@@ -2231,7 +2032,7 @@ function init() {
         { label: 'Standards Board', onClick: () => { location.href = 'bluegrass-standards-board.html'; } },
         { label: 'Support on Patreon', onClick: () => window.open('https://www.patreon.com/c/bluegrassbook', '_blank', 'noopener') },
         { label: 'Buy me a coffee', onClick: () => window.open('https://buymeacoffee.com/michaelbeav', '_blank', 'noopener') },
-        { label: 'Send Feedback', onClick: () => { if (requireLogin('send feedback')) openContactModal('Send Feedback', ''); } },
+        { label: 'Send Feedback', onClick: () => openFeedbackModal({ type: 'general-feedback' }) },
     ]);
     document.getElementById('topbar-brand')?.addEventListener('click', (e) => {
         e.preventDefault();
@@ -2249,8 +2050,9 @@ function init() {
     // Initialize analytics (early, before other modules)
     initAnalytics();
 
-    // Initialize flags module
-    initFlags();
+    // Initialize the unified feedback modal (song flags, corrections,
+    // bug reports, general feedback)
+    initFlags({ onEditSong: (song) => enterEditMode(song) });
 
     // Initialize super-user request module
     initSuperUserRequest();
@@ -2265,8 +2067,8 @@ function init() {
     };
 
     // Initialize add-song picker and doc upload.
-    // The sidebar Add Song button now goes straight to the editor; the picker
-    // remains for contribute/request flows (work-view placeholders, bounties).
+    // The picker is the single Add Song entry (top-band nav item, contribute/
+    // request flows); the #add deep link still goes straight to the editor.
     initAddSongPicker({
         onUpload: goToDocUpload,
         onChordPro: (ctx) => {
@@ -2287,22 +2089,13 @@ function init() {
 
     // Initialize lists module (handles favorites as a special list)
     initLists({
-        navListsContainer,
-        navSearch,
-        navFavorites,
-        navAddSong,
         searchStats,
         searchInput,
         resultsDiv,
         songView,
         listsContainer,
-        customListsContainer,
-        favoritesCheckbox,
-        listPickerBtn,
-        listPickerDropdown,
         printListBtn,
         renderResults,
-        closeSidebar,
         pushHistoryState
     });
 
@@ -2310,11 +2103,6 @@ function init() {
         songView,
         songContent,
         resultsDiv,
-        listPickerDropdown,
-        versionModal,
-        versionModalClose,
-        versionModalTitle,
-        versionList,
         pushHistoryState,
         showView,
         backBtn,
@@ -2344,9 +2132,7 @@ function init() {
     initSearch({
         searchInput,
         searchStats,
-        resultsDiv,
-        navFavorites,
-        navSearch
+        resultsDiv
     });
 
     // Update URL when user types in search (debounced, uses replaceState to avoid history spam)
@@ -2397,26 +2183,14 @@ function init() {
         editorUndoBtn,
         editorRedoBtn,
         editorTransposeGroup,
-        navSearch,
-        navAddSong,
-        navFavorites,
         resultsDiv,
         songView
     });
 
     // Setup event listeners
 
-    // Theme toggle
-    themeToggle?.addEventListener('click', toggleTheme);
-
-    // Sidebar
-    menuBtn?.addEventListener('click', openSidebar);
-    sidebarBackdrop?.addEventListener('click', closeSidebar);
-    sidebarClose?.addEventListener('click', closeSidebar);
-
     // Home buttons - go home
     const goHome = () => {
-        closeSidebar();
         searchInput.value = '';
         showView('home');
         pushHistoryState('home');
@@ -2427,20 +2201,13 @@ function init() {
         goHome();
     });
 
-    // Report bug link
+    // Report bug link (homepage sign) -> unified feedback modal
     const reportBugLink = document.getElementById('report-bug-link');
     reportBugLink?.addEventListener('click', (e) => {
         e.preventDefault();
-        openContactModal('Report a Bug', '');
+        openFeedbackModal({ type: 'bug-report' });
     });
 
-    // Navigation
-    navHome?.addEventListener('click', () => navigateTo('home'));
-    navSearch?.addEventListener('click', () => navigateTo('search'));
-    // Add Song opens the picker for everyone; contribution paths enforce login
-    // at the point of action (upload gate below, submit flows in editor/doc-upload).
-    navAddSong?.addEventListener('click', () => navigateTo('add-song'));
-    navFavorites?.addEventListener('click', () => navigateTo('favorites'));
     editorBackBtn?.addEventListener('click', () => navigateTo('search'));
 
     // Landing page search - switches to search view on input
@@ -2482,11 +2249,6 @@ function init() {
     });
 
     // Song Lists page
-    songListsBtn?.addEventListener('click', () => {
-        closeSidebar();
-        showSongListsView();
-        pushHistoryState('song-lists', {});
-    });
     songListsBackBtn?.addEventListener('click', () => {
         // Use browser back to return to previous view
         history.back();
@@ -2502,25 +2264,10 @@ function init() {
     // Print list button
     printListBtn?.addEventListener('click', openPrintListView);
 
-    // Sidebar feedback button
-    navFeedback?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        closeSidebar();
-        if (!requireLogin('send feedback')) return;
-        // Open contact modal directly for general feedback
-        setTimeout(() => {
-            openContactModal('Send Feedback', '');
-        }, 150);
-    });
-
     // Close dropdowns when clicking outside
     document.addEventListener('click', (e) => {
         if (!searchTipsBtn?.contains(e.target) && !searchTipsDropdown?.contains(e.target)) {
             searchTipsDropdown?.classList.add('hidden');
-        }
-        // Close list picker dropdown
-        if (!listPickerBtn?.contains(e.target) && !listPickerDropdown?.contains(e.target)) {
-            listPickerDropdown?.classList.add('hidden');
         }
     });
 
@@ -2528,48 +2275,6 @@ function init() {
     searchTipsBtn?.addEventListener('click', (e) => {
         e.stopPropagation();
         searchTipsDropdown?.classList.toggle('hidden');
-    });
-
-    // Bug report modal
-    bugModalClose?.addEventListener('click', closeBugModal);
-    bugModal?.addEventListener('click', (e) => {
-        if (e.target === bugModal) closeBugModal();
-    });
-    bugSubmitBtn?.addEventListener('click', submitBugReport);
-
-    // Song correction modal
-    correctionModalClose?.addEventListener('click', closeCorrectionModal);
-    correctionModal?.addEventListener('click', (e) => {
-        if (e.target === correctionModal) closeCorrectionModal();
-    });
-    correctionEditBtn?.addEventListener('click', () => {
-        closeCorrectionModal();
-        // Trigger edit mode for current song
-        enterEditMode(getCurrentSong());
-    });
-    correctionFeedbackBtn?.addEventListener('click', () => {
-        closeCorrectionModal();
-        const song = getCurrentSong();
-        openContactModal('Song Correction', song ? `Song: ${song.title} by ${song.artist}\n\n` : '');
-    });
-
-    // Contact modal
-    contactModalClose?.addEventListener('click', closeContactModal);
-    contactModal?.addEventListener('click', (e) => {
-        if (e.target === contactModal) closeContactModal();
-    });
-    contactSubmitBtn?.addEventListener('click', submitContactForm);
-
-    // List picker (song view) - uses unified ListPicker component
-    listPickerBtn?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const song = getCurrentSong();
-        if (song) {
-            const itemRef = getActiveItemRef() || song.id;
-            showListPicker(itemRef, listPickerBtn, {
-                onUpdate: () => updateTriggerButton(listPickerBtn, itemRef)
-            });
-        }
     });
 
     // Create list from modal
@@ -2581,69 +2286,6 @@ function init() {
             renderListsModal();
         }
     });
-
-    // Bottom sheet handlers (mobile action sheet)
-    function openBottomSheet() {
-        bottomSheet?.classList.remove('hidden');
-        bottomSheetBackdrop?.classList.remove('hidden');
-        trackBottomSheet('open');
-    }
-
-    function closeBottomSheet() {
-        bottomSheet?.classList.add('hidden');
-        bottomSheetBackdrop?.classList.add('hidden');
-    }
-
-    // Close when clicking backdrop
-    bottomSheetBackdrop?.addEventListener('click', closeBottomSheet);
-
-    // Close when swiping down on handle (simple touch support)
-    const handle = bottomSheet?.querySelector('.bottom-sheet-handle');
-    handle?.addEventListener('click', closeBottomSheet);
-
-    // Bottom sheet action handlers
-    bottomSheet?.querySelectorAll('.sheet-action').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const action = btn.dataset.action;
-            closeBottomSheet();
-
-            switch (action) {
-                case 'lists':
-                    listPickerDropdown?.classList.toggle('hidden');
-                    if (!listPickerDropdown?.classList.contains('hidden')) {
-                        // Position in center of screen for mobile (from bottom sheet)
-                        listPickerDropdown.style.top = '50%';
-                        listPickerDropdown.style.left = '50%';
-                        listPickerDropdown.style.transform = 'translate(-50%, -50%)';
-                        renderListPickerDropdown();
-                    } else {
-                        listPickerDropdown.style.transform = '';
-                    }
-                    break;
-                case 'print':
-                    openPrintView();
-                    break;
-                case 'copy':
-                    handleExport('copy-chordpro');
-                    break;
-                case 'download':
-                    handleExport('download-chordpro');
-                    break;
-                case 'edit':
-                    enterEditMode(getCurrentSong());
-                    break;
-                case 'flag':
-                    const song = getCurrentSong();
-                    if (song) {
-                        openFlagModal(song);
-                    }
-                    break;
-            }
-        });
-    });
-
-    // Make openBottomSheet available globally for song-view.js
-    window.openBottomSheet = openBottomSheet;
 
     // ==========================================================================
     // Song-page delegation: focus-mode buttons rendered by work-view.js.
@@ -2742,11 +2384,6 @@ if (exitFullscreenBtn) {
     exitFullscreenBtn.addEventListener('click', exitFullscreen);
 }
 
-// Song view button (open bottom sheet with controls)
-if (songViewBtn) {
-    songViewBtn.addEventListener('click', openSongControls);
-}
-
 // ============================================
 // KEYBOARD SHORTCUTS
 // ============================================
@@ -2765,15 +2402,8 @@ document.addEventListener('keydown', (e) => {
         }
     }
 
-    // Escape - close bottom sheet first, then exit fullscreen
+    // Escape - exit fullscreen
     if (e.key === 'Escape') {
-        // If bottom sheet is open, close it first
-        if (bottomSheet && !bottomSheet.classList.contains('hidden')) {
-            bottomSheet.classList.add('hidden');
-            bottomSheetBackdrop?.classList.add('hidden');
-            return;
-        }
-        // Otherwise exit fullscreen
         exitFullscreen();
     }
 

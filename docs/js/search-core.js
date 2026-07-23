@@ -6,10 +6,11 @@ import { openAddSongPicker } from './add-song-picker.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
     isFavorite, reorderFavoriteItem, reorderFavoriteItemByRef, showFavorites,
-    isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, reorderSongInListByRef, isViewingOwnList,
+    isSongInAnyList, updateResultListButton, getViewingListId, reorderSongInList, reorderSongInListByRef, isViewingOwnList,
     removeSongFromList, showListView, FAVORITES_LIST_ID, toggleFavorite,
     addSongToList, clearListView, getSongMetadata, openNotesSheet
 } from './lists.js';
+import { showListPicker } from './list-picker.js';
 import { openWork } from './work-view.js';
 import { trackSearch as analyticsTrackSearch, trackSearchResultClick } from './analytics.js';
 import { stemWord } from './stem.js';
@@ -1336,11 +1337,14 @@ function setupResultEventListeners(resultsDiv) {
             return;
         }
 
-        // Handle list button click
+        // Handle list button click — unified ListPicker component
         const listBtn = e.target.closest('.result-list-btn');
         if (listBtn) {
             e.stopPropagation();
-            showResultListPicker(listBtn, listBtn.dataset.songId);
+            const songId = listBtn.dataset.songId;
+            showListPicker(songId, listBtn, {
+                onUpdate: () => updateResultListButton(listBtn, songId)
+            });
             return;
         }
 

@@ -40,7 +40,7 @@ import {
     maxMeasureIn, measureTimingFromOtf,
     prepareCompactNotation,
 } from './renderers/index.js';
-import { clearListView, openNotesSheet, updateFavoriteButton, updateListPickerButton } from './lists.js';
+import { clearListView, openNotesSheet } from './lists.js';
 import { showListPicker, updateTriggerButton } from './list-picker.js';
 import { openFlagModal } from './flags.js';
 import { trackSongView } from './analytics.js';
@@ -363,9 +363,6 @@ export async function openWork(workId, options = {}) {
         });
     }
 
-    updateFavoriteButton();
-    updateListPickerButton();
-
     pendingInitialRender = true;
     renderWorkView();
 
@@ -595,18 +592,25 @@ function buildArrangementPill() {
 }
 
 async function renderArrangementList(container, versions) {
-    // Vote counts via the same supabase fetch the version-picker modal uses
+    const groupId = versions[0]?.group_id;
+
+    // Vote counts via the same supabase fetch the version-picker modal used
     let voteCounts = {};
-    if (typeof SupabaseAuth !== 'undefined' && versions[0]?.group_id) {
+    let userVotes = {};
+    if (typeof SupabaseAuth !== 'undefined' && groupId) {
         try {
-            const { data } = await SupabaseAuth.fetchGroupVotes(versions[0].group_id);
+            const { data } = await SupabaseAuth.fetchGroupVotes(groupId);
             voteCounts = data || {};
+            if (SupabaseAuth.isLoggedIn()) {
+                const { data: uv } = await SupabaseAuth.fetchUserVotes(versions.map(v => v.id));
+                userVotes = uv || {};
+            }
         } catch (e) {
             // votes are optional decoration
         }
     }
 
-    // Canonical first, then by votes (same ordering as the modal)
+    // Canonical first, then by votes (same ordering as the old modal)
     const sorted = [...versions].sort((a, b) => {
         const aCanonical = a.canonical === true ? 1 : 0;
         const bCanonical = b.canonical === true ? 1 : 0;
@@ -634,19 +638,55 @@ async function renderArrangementList(container, versions) {
         if (v.key) meta.push(`Key: ${v.key}`);
         if (v.chord_count) meta.push(`${v.chord_count} chords`);
         const votes = voteCounts[v.id] || 0;
+        const hasVoted = userVotes[v.id] ? ' voted' : '';
         return `
-            <button class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-song-id="${escapeHtml(v.id)}">
-                <span class="arrangement-label">${escapeHtml(label)}${v.canonical === true ? ' <span class="canonical-badge">Canonical</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}</span>
-                <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}${votes ? ` · ▲ ${votes}` : ''}</span>
-            </button>
+            <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-song-id="${escapeHtml(v.id)}" role="button" tabindex="0">
+                <span class="arrangement-info">
+                    <span class="arrangement-label">${escapeHtml(label)}${v.canonical === true ? ' <span class="canonical-badge">Canonical</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}</span>
+                    <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
+                </span>
+                <span class="arrangement-votes">
+                    <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(v.id)}" title="Vote for this arrangement">
+                        <span class="vote-arrow">▲</span>
+                    </button>
+                    <span class="vote-count">${votes}</span>
+                </span>
+            </div>
         `;
     }).join('');
 
     container.querySelectorAll('.arrangement-item').forEach(item => {
-        item.addEventListener('click', () => {
+        item.addEventListener('click', (e) => {
+            if (e.target.closest('.arrangement-vote-btn')) return;
             const songId = item.dataset.songId;
             if (songId && songId !== currentWork?.id) {
-                openWork(songId, { groupId: versions[0]?.group_id, exact: true });
+                openWork(songId, { groupId, exact: true });
+            }
+        });
+    });
+
+    // Vote casting — same affordance the version-picker modal had
+    container.querySelectorAll('.arrangement-vote-btn').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            e.stopPropagation();
+
+            if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+                alert('Please sign in to vote');
+                return;
+            }
+
+            const songId = btn.dataset.songId;
+            const hasVoted = btn.classList.contains('voted');
+            const countEl = btn.parentElement.querySelector('.vote-count');
+
+            if (hasVoted) {
+                await SupabaseAuth.removeVote(songId);
+                btn.classList.remove('voted');
+                if (countEl) countEl.textContent = Math.max(0, parseInt(countEl.textContent, 10) - 1);
+            } else {
+                await SupabaseAuth.castVote(songId, groupId);
+                btn.classList.add('voted');
+                if (countEl) countEl.textContent = parseInt(countEl.textContent, 10) + 1;
             }
         });
     });

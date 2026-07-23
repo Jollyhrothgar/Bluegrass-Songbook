@@ -2,7 +2,7 @@
 
 import {
     userLists, setUserLists,
-    allSongs, currentSong,
+    allSongs,
     isCloudSyncEnabled, setCloudSyncEnabled,
     setListContext,
     // Centralized list viewing state
@@ -14,12 +14,10 @@ import {
     subscribe, currentView,
     focusedListId, setFocusedListId
 } from './state.js';
-import { openSong } from './song-view.js';
 import { escapeHtml, generateLocalId, requireLogin, parseItemRef } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
-import { showListPicker, closeListPicker, updateTriggerButton } from './list-picker.js';
 
 // Re-export FAVORITES_LIST_ID for backwards compatibility
 export { FAVORITES_LIST_ID };
@@ -124,7 +122,6 @@ export function undo() {
         redoStack.push(action);
         showUndoToast(`Undid: ${action.description}`, true);
         renderManageListsView();
-        renderSidebarLists();
         updateFavoritesCount();
         // Refresh current list view if viewing the affected list
         if (viewingListId && action.data?.listId === viewingListId) {
@@ -150,7 +147,6 @@ export function redo() {
         undoStack.push(action);
         showUndoToast(`Redid: ${action.description}`, true);
         renderManageListsView();
-        renderSidebarLists();
         updateFavoritesCount();
         // Refresh current list view if viewing the affected list
         if (viewingListId && action.data?.listId === viewingListId) {
@@ -663,19 +659,11 @@ export function reorderFolders(parentId, orderedIds) {
 loadFolders();
 
 // DOM element references (set by init)
-let navListsContainerEl = null;
-let navSearchEl = null;
-let navFavoritesEl = null;
-let navAddSongEl = null;
 let searchStatsEl = null;
 let searchInputEl = null;
 let resultsDivEl = null;
 let songViewEl = null;
 let listsContainerEl = null;
-let customListsContainerEl = null;
-let favoritesCheckboxEl = null;
-let listPickerBtnEl = null;
-let listPickerDropdownEl = null;
 let printListBtnEl = null;
 let shareListBtnEl = null;
 
@@ -694,7 +682,6 @@ let listRequestBtnEl = null;
 
 // Callbacks (set by init)
 let renderResultsFn = null;
-let closeSidebarFn = null;
 let pushHistoryStateFn = null;
 
 // Followed lists (from cloud) - separate from owned lists
@@ -855,11 +842,6 @@ export function updateSyncUI(status) {
 export function showFavorites() {
     const favList = getFavoritesList();
 
-    // Update nav states
-    if (navSearchEl) navSearchEl.classList.remove('active');
-    if (navFavoritesEl) navFavoritesEl.classList.add('active');
-    if (navAddSongEl) navAddSongEl.classList.remove('active');
-
     if (!favList || favList.songs.length === 0) {
         // Empty favorites view
         setViewingListId(FAVORITES_LIST_ID);
@@ -900,9 +882,6 @@ export function showFavorites() {
     setViewingPublicList(null);
     renderListViewUI(FAVORITES_LIST_NAME, favList.songs, true);
 
-    // Update nav (renderListViewUI clears favorites active state)
-    if (navFavoritesEl) navFavoritesEl.classList.add('active');
-
     // Note: List header buttons are now managed by renderListViewUI
     // The new list header handles all action buttons
 }
@@ -912,7 +891,6 @@ export function showFavorites() {
  */
 export function saveLists() {
     localStorage.setItem('songbook-lists', JSON.stringify(userLists));
-    renderSidebarLists();
 }
 
 /**
@@ -1970,7 +1948,6 @@ export function handleListsSignOut() {
     setUserLists([]);
     localStorage.removeItem('songbook-lists');
     updateFavoritesCount();
-    renderSidebarLists();
 }
 
 /**
@@ -2105,7 +2082,6 @@ export async function loadFollowedLists() {
         } else {
             followedLists = data || [];
         }
-        renderSidebarLists();
     } catch (err) {
         console.error('Error loading followed lists:', err);
         followedLists = [];
@@ -2117,544 +2093,6 @@ export async function loadFollowedLists() {
  */
 export function getFollowedLists() {
     return followedLists;
-}
-
-/**
- * Render lists in sidebar
- */
-// Track expanded folders state
-let expandedFolders = new Set(JSON.parse(localStorage.getItem('songbook-expanded-folders') || '[]'));
-
-// Track inline editing state
-let editingNewFolder = null;  // { parentId: string|null } if creating new folder
-let editingFolderId = null;   // folder id being renamed
-
-function saveExpandedFolders() {
-    localStorage.setItem('songbook-expanded-folders', JSON.stringify([...expandedFolders]));
-}
-
-function toggleFolderExpanded(folderId) {
-    if (expandedFolders.has(folderId)) {
-        expandedFolders.delete(folderId);
-    } else {
-        expandedFolders.add(folderId);
-    }
-    saveExpandedFolders();
-    renderSidebarLists();
-}
-
-export function renderSidebarLists() {
-    if (!navListsContainerEl) return;
-    navListsContainerEl.innerHTML = '';
-
-    // Exclude Favorites list - it has its own nav button
-    const customLists = userLists.filter(l => l.id !== FAVORITES_LIST_ID);
-    const rootFolders = getFoldersAtLevel(null);
-    const hasContent = customLists.length > 0 || rootFolders.length > 0;
-
-    // Always show "My Lists" section if user is signed in or has content
-    // This ensures the folder creation UI is always accessible
-    const isSignedIn = typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn?.();
-    const showMyListsSection = hasContent || isSignedIn;
-
-    // Create "My Lists" section
-    if (showMyListsSection) {
-        const header = document.createElement('div');
-        header.className = 'nav-section-header';
-        header.textContent = 'My Lists';
-        navListsContainerEl.appendChild(header);
-
-        // Render folders and their contents recursively
-        renderFoldersAndLists(navListsContainerEl, null, 0);
-    }
-
-    // Create "Following" section if there are followed lists
-    if (followedLists.length > 0) {
-        const header = document.createElement('div');
-        header.className = 'nav-section-header';
-        header.textContent = 'Following';
-        navListsContainerEl.appendChild(header);
-
-        followedLists.forEach(list => {
-            const btn = document.createElement('button');
-            const isOrphaned = list.isOrphaned || !!list.orphaned_at;
-            btn.className = 'nav-item nav-item-followed' +
-                (viewingListId === list.id ? ' active' : '') +
-                (isOrphaned ? ' nav-item-orphaned' : '');
-            btn.dataset.listId = list.id;
-            btn.dataset.isFollowed = 'true';
-            btn.innerHTML = `
-                <span class="nav-icon">${isOrphaned ? '&#9888;' : '&#128279;'}</span>
-                <span class="nav-label">${escapeHtml(list.name)}</span>
-                ${list.songs?.length > 0 ? `<span class="nav-badge">${list.songs.length}</span>` : ''}
-            `;
-            btn.addEventListener('click', () => {
-                showListView(list.id);
-                if (pushHistoryStateFn) {
-                    pushHistoryStateFn('list', { listId: list.id });
-                }
-            });
-            navListsContainerEl.appendChild(btn);
-        });
-    }
-
-}
-
-/**
- * Render folders and lists recursively
- */
-function renderFoldersAndLists(container, parentId, depth) {
-    const folders = getFoldersAtLevel(parentId);
-    const listsInThisFolder = parentId === null
-        ? getListsAtRoot()
-        : userLists.filter(l => {
-            const listId = l.cloudId || l.id;
-            return getListFolder(listId) === parentId;
-        });
-
-    // Render "new folder" input if we're creating at this level
-    if (editingNewFolder && editingNewFolder.parentId === parentId) {
-        const newFolderEl = document.createElement('div');
-        newFolderEl.className = 'nav-folder nav-folder-editing';
-        newFolderEl.style.paddingLeft = `${depth * 0.75}rem`;
-
-        const headerEl = document.createElement('div');
-        headerEl.className = 'nav-item nav-folder-header';
-        headerEl.innerHTML = `
-            <span class="nav-folder-arrow">▶</span>
-            <span class="nav-icon">&#128193;</span>
-        `;
-
-        const input = createInlineInput('', commitNewFolder, cancelNewFolder);
-        headerEl.appendChild(input);
-        newFolderEl.appendChild(headerEl);
-        container.appendChild(newFolderEl);
-    }
-
-    // Render folders
-    folders.forEach(folder => {
-        const isExpanded = expandedFolders.has(folder.id);
-        const isEditing = editingFolderId === folder.id;
-        const folderEl = document.createElement('div');
-        folderEl.className = 'nav-folder';
-        folderEl.dataset.folderId = folder.id;
-        folderEl.style.paddingLeft = `${depth * 0.75}rem`;
-
-        const headerBtn = document.createElement('button');
-        headerBtn.className = 'nav-item nav-folder-header';
-
-        if (isEditing) {
-            // Render with inline input for renaming
-            headerBtn.innerHTML = `
-                <span class="nav-folder-arrow">${isExpanded ? '▼' : '▶'}</span>
-                <span class="nav-icon">&#128193;</span>
-            `;
-            const input = createInlineInput(
-                folder.name,
-                (newName) => commitRenameFolder(folder.id, newName),
-                cancelRenameFolder
-            );
-            headerBtn.appendChild(input);
-            // Don't toggle on click when editing
-        } else {
-            // Normal folder rendering
-            headerBtn.innerHTML = `
-                <span class="nav-folder-arrow">${isExpanded ? '▼' : '▶'}</span>
-                <span class="nav-icon">&#128193;</span>
-                <span class="nav-label">${escapeHtml(folder.name)}</span>
-            `;
-            headerBtn.addEventListener('click', () => toggleFolderExpanded(folder.id));
-
-            // Add context menu on right-click
-            headerBtn.addEventListener('contextmenu', (e) => {
-                e.preventDefault();
-                showFolderContextMenu(folder, e.clientX, e.clientY);
-            });
-        }
-
-        folderEl.appendChild(headerBtn);
-
-        // Render contents if expanded
-        if (isExpanded) {
-            const contentEl = document.createElement('div');
-            contentEl.className = 'nav-folder-content';
-            renderFoldersAndLists(contentEl, folder.id, depth + 1);
-            folderEl.appendChild(contentEl);
-        }
-
-        container.appendChild(folderEl);
-    });
-
-    // Render lists at this level
-    listsInThisFolder.forEach(list => {
-        if (list.id === FAVORITES_LIST_ID) return;
-
-        const isEditing = editingListId === list.id;
-        const btn = document.createElement('button');
-        btn.className = 'nav-item' + (viewingListId === list.id ? ' active' : '') + (isEditing ? ' nav-item-editing' : '');
-        btn.dataset.listId = list.id;
-        btn.style.paddingLeft = `${(depth * 0.75) + 1.5}rem`;
-
-        if (isEditing) {
-            // Render with inline input for renaming
-            btn.innerHTML = `<span class="nav-icon">&#9776;</span>`;
-            const input = createInlineInput(
-                list.name,
-                (newName) => commitRenameList(list.id, newName),
-                cancelRenameList,
-                'List name'
-            );
-            btn.appendChild(input);
-        } else {
-            // Normal rendering
-            btn.innerHTML = `
-                <span class="nav-icon">&#9776;</span>
-                <span class="nav-label">${escapeHtml(list.name)}</span>
-                ${list.songs.length > 0 ? `<span class="nav-badge">${list.songs.length}</span>` : ''}
-            `;
-            btn.addEventListener('click', () => {
-                showListView(list.id);
-                if (pushHistoryStateFn) {
-                    pushHistoryStateFn('list', { listId: list.id });
-                }
-            });
-
-            // Add context menu on right-click
-            btn.addEventListener('contextmenu', (e) => {
-                e.preventDefault();
-                showListContextMenu(list, e.clientX, e.clientY);
-            });
-
-        }
-
-        container.appendChild(btn);
-    });
-
-    // Render "new list" input if we're creating at this level
-    if (creatingNewList && creatingNewList.folderId === parentId) {
-        const newListEl = document.createElement('button');
-        newListEl.className = 'nav-item nav-item-editing';
-        newListEl.style.paddingLeft = `${(depth * 0.75) + 1.5}rem`;
-        newListEl.innerHTML = `<span class="nav-icon">&#9776;</span>`;
-
-        const input = createInlineInput('', commitNewList, cancelNewList, 'List name');
-        newListEl.appendChild(input);
-        container.appendChild(newListEl);
-    }
-}
-
-/**
- * Clear all drop target highlights
- */
-function clearDropTargets() {
-    document.querySelectorAll('.drop-target').forEach(el => {
-        el.classList.remove('drop-target');
-    });
-}
-
-/**
- * Set up folder as a drop target
- */
-function setupFolderDropTarget(element, folderId) {
-    element.addEventListener('dragover', (e) => {
-        e.preventDefault();
-        element.classList.add('drop-target');
-    });
-
-    element.addEventListener('dragleave', (e) => {
-        // Only remove if leaving the element entirely
-        if (!element.contains(e.relatedTarget)) {
-            element.classList.remove('drop-target');
-        }
-    });
-
-    element.addEventListener('drop', (e) => {
-        e.preventDefault();
-        element.classList.remove('drop-target');
-
-        try {
-            const data = JSON.parse(e.dataTransfer.getData('text/plain'));
-            if (data.type === 'list') {
-                setListFolder(data.listId, folderId);
-                renderSidebarLists();
-            }
-        } catch (err) {
-            console.error('Drop error:', err);
-        }
-    });
-}
-
-/**
- * Start inline folder creation
- */
-function startCreateFolder(parentId = null) {
-    editingNewFolder = { parentId };
-    // If creating in a folder, expand it
-    if (parentId) {
-        expandedFolders.add(parentId);
-        saveExpandedFolders();
-    }
-    renderSidebarLists();
-}
-
-/**
- * Commit the new folder (called from input handlers)
- */
-function commitNewFolder(name) {
-    if (name && name.trim() && editingNewFolder) {
-        createFolder(name.trim(), editingNewFolder.parentId);
-    }
-    editingNewFolder = null;
-    renderSidebarLists();
-}
-
-/**
- * Cancel new folder creation
- */
-function cancelNewFolder() {
-    editingNewFolder = null;
-    renderSidebarLists();
-}
-
-/**
- * Start inline folder rename
- */
-function startRenameFolder(folderId) {
-    editingFolderId = folderId;
-    renderSidebarLists();
-}
-
-/**
- * Commit folder rename
- */
-function commitRenameFolder(folderId, newName) {
-    if (newName && newName.trim()) {
-        renameFolder(folderId, newName.trim());
-    }
-    editingFolderId = null;
-    renderSidebarLists();
-}
-
-/**
- * Cancel folder rename
- */
-function cancelRenameFolder() {
-    editingFolderId = null;
-    renderSidebarLists();
-}
-
-// ============================================
-// LIST INLINE EDITING
-// ============================================
-
-let editingListId = null;  // list id being renamed
-
-/**
- * Start inline list rename
- */
-function startRenameList(listId) {
-    editingListId = listId;
-    renderSidebarLists();
-}
-
-/**
- * Commit list rename
- */
-function commitRenameList(listId, newName) {
-    if (newName && newName.trim()) {
-        renameList(listId, newName.trim());
-    }
-    editingListId = null;
-    renderSidebarLists();
-}
-
-/**
- * Cancel list rename
- */
-function cancelRenameList() {
-    editingListId = null;
-    renderSidebarLists();
-}
-
-// Track new list creation state
-let creatingNewList = null;  // { folderId: string|null } if creating new list
-
-/**
- * Start inline list creation
- */
-function startCreateList(folderId = null) {
-    creatingNewList = { folderId };
-    // If creating in a folder, expand it
-    if (folderId) {
-        expandedFolders.add(folderId);
-        saveExpandedFolders();
-    }
-    renderSidebarLists();
-}
-
-/**
- * Commit the new list (called from input handlers)
- */
-function commitNewList(name) {
-    if (name && name.trim() && creatingNewList) {
-        const list = createList(name.trim());
-        if (list && creatingNewList.folderId) {
-            setListFolder(list.id, creatingNewList.folderId);
-        }
-    }
-    creatingNewList = null;
-    renderSidebarLists();
-}
-
-/**
- * Cancel new list creation
- */
-function cancelNewList() {
-    creatingNewList = null;
-    renderSidebarLists();
-}
-
-/**
- * Show context menu for a list
- */
-function showListContextMenu(list, x, y) {
-    // Remove any existing context menu
-    const existing = document.querySelector('.list-context-menu');
-    if (existing) existing.remove();
-
-    // Also close folder context menu if open
-    const folderMenu = document.querySelector('.folder-context-menu');
-    if (folderMenu) folderMenu.remove();
-
-    const menu = document.createElement('div');
-    menu.className = 'list-context-menu';
-    menu.style.position = 'fixed';
-    menu.style.left = `${x}px`;
-    menu.style.top = `${y}px`;
-
-    // Don't allow deleting favorites
-    const isFavorites = list.id === FAVORITES_LIST_ID;
-
-    menu.innerHTML = `
-        <button data-action="rename">Rename</button>
-        ${!isFavorites ? '<button data-action="delete" class="danger">Delete</button>' : ''}
-    `;
-
-    menu.addEventListener('click', (e) => {
-        const action = e.target.dataset.action;
-        if (action === 'rename') {
-            startRenameList(list.id);
-        } else if (action === 'delete') {
-            if (confirm(`Delete "${list.name}"? Songs won't be deleted from the songbook.`)) {
-                deleteList(list.id);
-                renderSidebarLists();
-            }
-        }
-        menu.remove();
-    });
-
-    document.body.appendChild(menu);
-
-    // Close on outside click
-    const closeHandler = (e) => {
-        if (!menu.contains(e.target)) {
-            menu.remove();
-            document.removeEventListener('click', closeHandler);
-        }
-    };
-    setTimeout(() => document.addEventListener('click', closeHandler), 0);
-}
-
-/**
- * Create an inline input element for name editing (folders, lists, etc.)
- * Reusable component - just pass different callbacks for different contexts.
- */
-function createInlineInput(initialValue, onCommit, onCancel, placeholder = 'Name') {
-    const input = document.createElement('input');
-    input.type = 'text';
-    input.className = 'nav-inline-input';
-    input.value = initialValue;
-    input.placeholder = placeholder;
-
-    // Handle Enter/Escape
-    input.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            onCommit(input.value);
-        } else if (e.key === 'Escape') {
-            e.preventDefault();
-            onCancel();
-        }
-    });
-
-    // Handle blur (commit if has value, cancel if empty)
-    input.addEventListener('blur', () => {
-        // Use setTimeout to allow click events on other elements to fire first
-        setTimeout(() => {
-            if (input.value.trim()) {
-                onCommit(input.value);
-            } else {
-                onCancel();
-            }
-        }, 100);
-    });
-
-    // Auto-focus after adding to DOM
-    setTimeout(() => {
-        input.focus();
-        input.select();
-    }, 0);
-
-    return input;
-}
-
-/**
- * Show context menu for a folder
- */
-function showFolderContextMenu(folder, x, y) {
-    // Remove any existing context menu
-    const existing = document.querySelector('.folder-context-menu');
-    if (existing) existing.remove();
-
-    const menu = document.createElement('div');
-    menu.className = 'folder-context-menu';
-    menu.style.position = 'fixed';
-    menu.style.left = `${x}px`;
-    menu.style.top = `${y}px`;
-    menu.innerHTML = `
-        <button data-action="rename">Rename</button>
-        <button data-action="new-list">New List Here</button>
-        <button data-action="new-subfolder">New Subfolder</button>
-        <button data-action="delete" class="danger">Delete</button>
-    `;
-
-    menu.addEventListener('click', (e) => {
-        const action = e.target.dataset.action;
-        if (action === 'rename') {
-            startRenameFolder(folder.id);
-        } else if (action === 'new-list') {
-            startCreateList(folder.id);
-        } else if (action === 'new-subfolder') {
-            startCreateFolder(folder.id);
-        } else if (action === 'delete') {
-            if (confirm(`Delete folder "${folder.name}"? Lists will be moved out.`)) {
-                deleteFolder(folder.id);
-                renderSidebarLists();
-            }
-        }
-        menu.remove();
-    });
-
-    document.body.appendChild(menu);
-
-    // Close on outside click
-    const closeHandler = (e) => {
-        if (!menu.contains(e.target)) {
-            menu.remove();
-            document.removeEventListener('click', closeHandler);
-        }
-    };
-    setTimeout(() => document.addEventListener('click', closeHandler), 0);
 }
 
 /**
@@ -2758,20 +2196,6 @@ function renderListViewUI(listName, songIds, status) {
     const ownership = typeof status === 'boolean'
         ? { isOwner: status, isFollower: false, isOrphaned: false, canClaim: false }
         : status;
-
-    if (closeSidebarFn) closeSidebarFn();
-
-    // Update nav active states
-    if (navSearchEl) navSearchEl.classList.remove('active');
-    if (navFavoritesEl) navFavoritesEl.classList.remove('active');
-    if (navAddSongEl) navAddSongEl.classList.remove('active');
-
-    // Update sidebar list buttons
-    if (navListsContainerEl) {
-        navListsContainerEl.querySelectorAll('.nav-item').forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.listId === viewingListId);
-        });
-    }
 
     // Show the list songs (preserve order from the list)
     // Handle part-qualified refs by extracting workId for lookup
@@ -2933,11 +2357,6 @@ export function clearListView() {
     setViewingListId(null);
     setViewingPublicList(null);
     setListContext(null);
-    if (navListsContainerEl) {
-        navListsContainerEl.querySelectorAll('.nav-item').forEach(btn => {
-            btn.classList.remove('active');
-        });
-    }
 
     // Hide the new list header (use fallback getElementById if module var not set)
     const header = listHeaderEl || document.getElementById('list-header');
@@ -3013,79 +2432,6 @@ export async function fetchListData(listId) {
         songs: data.songs,
         isOwner
     };
-}
-
-/**
- * Render list picker dropdown (in song view)
- */
-export function renderListPickerDropdown() {
-    if (!customListsContainerEl || !currentSong) return;
-
-    customListsContainerEl.innerHTML = '';
-
-    // Exclude Favorites - it has its own checkbox
-    userLists.filter(l => l.id !== FAVORITES_LIST_ID).forEach(list => {
-        const label = document.createElement('label');
-        label.className = 'list-option';
-        const isInList = list.songs.includes(currentSong.id);
-        label.innerHTML = `
-            <input type="checkbox" data-list-id="${list.id}" ${isInList ? 'checked' : ''}>
-            <span>&#9776;</span>
-            <span>${escapeHtml(list.name)}</span>
-        `;
-        customListsContainerEl.appendChild(label);
-    });
-
-    // Update favorites checkbox
-    if (favoritesCheckboxEl) {
-        favoritesCheckboxEl.checked = isFavorite(currentSong.id);
-    }
-
-    // Update picker button state
-    updateListPickerButton();
-}
-
-/**
- * Update list picker button appearance
- */
-export function updateListPickerButton() {
-    if (!listPickerBtnEl || !currentSong) return;
-
-    const inFavorites = isFavorite(currentSong.id);
-    const inAnyList = isSongInAnyList(currentSong.id);
-
-    listPickerBtnEl.classList.toggle('has-lists', inFavorites || inAnyList);
-}
-
-/**
- * Update favorite button state (called from song-view.js)
- * With unified favorites/lists, this just updates the list picker
- */
-export function updateFavoriteButton() {
-    // The favorites checkbox is updated by renderListPickerDropdown()
-    // This function exists for API compatibility with song-view.js
-}
-
-/**
- * Show floating list picker for search results
- * Delegates to unified ListPicker component
- */
-export function showResultListPicker(btn, songId) {
-    const { workId } = parseItemRef(songId);
-    const song = allSongs.find(s => s.id === workId);
-    if (!song) return;
-
-    showListPicker(songId, btn, {
-        onUpdate: () => updateResultListButton(btn, songId)
-    });
-}
-
-/**
- * Close floating result list picker
- * Delegates to unified ListPicker component
- */
-export function closeResultListPicker() {
-    closeListPicker();
 }
 
 /**
@@ -3510,7 +2856,6 @@ function wireManageListsEvents() {
                 const newName = prompt('Enter new name:', list.name);
                 if (newName && renameList(listId, newName)) {
                     renderManageListsView();
-                    renderSidebarLists();
                 }
             }
         });
@@ -3525,7 +2870,6 @@ function wireManageListsEvents() {
             if (list && confirm(`Delete "${list.name}"? Songs won't be deleted from the songbook.`)) {
                 await deleteList(listId);
                 renderManageListsView();
-                renderSidebarLists();
             }
         });
     });
@@ -3541,7 +2885,6 @@ function wireManageListsEvents() {
                 if (newName) {
                     renameFolder(folderId, newName);
                     renderManageListsView();
-                    renderSidebarLists();
                 }
             }
         });
@@ -3556,7 +2899,6 @@ function wireManageListsEvents() {
             if (folder && confirm(`Delete folder "${folder.name}"? Lists inside will be moved to the root level.`)) {
                 deleteFolder(folderId);
                 renderManageListsView();
-                renderSidebarLists();
             }
         });
     });
@@ -3612,42 +2954,24 @@ function wireManageListsEvents() {
  */
 export function initLists(options) {
     const {
-        navListsContainer,
-        navSearch,
-        navFavorites,
-        navAddSong,
         searchStats,
         searchInput,
         resultsDiv,
         songView,
         listsContainer,
-        customListsContainer,
-        favoritesCheckbox,
-        listPickerBtn,
-        listPickerDropdown,
         printListBtn,
         renderResults,
-        closeSidebar,
         pushHistoryState
     } = options;
 
-    navListsContainerEl = navListsContainer;
-    navSearchEl = navSearch;
-    navFavoritesEl = navFavorites;
-    navAddSongEl = navAddSong;
     searchStatsEl = searchStats;
     searchInputEl = searchInput;
     resultsDivEl = resultsDiv;
     songViewEl = songView;
     listsContainerEl = listsContainer;
-    customListsContainerEl = customListsContainer;
-    favoritesCheckboxEl = favoritesCheckbox;
-    listPickerBtnEl = listPickerBtn;
-    listPickerDropdownEl = listPickerDropdown;
     printListBtnEl = printListBtn;
     shareListBtnEl = document.getElementById('share-list-btn');
     renderResultsFn = renderResults;
-    closeSidebarFn = closeSidebar;
     pushHistoryStateFn = pushHistoryState;
 
     // Initialize new list header elements
@@ -3715,7 +3039,6 @@ export function initLists(options) {
 
         // Navigate back to home
         clearListView();
-        if (navSearchEl) navSearchEl.classList.add('active');
         showRandomSongs();
         if (pushHistoryStateFn) {
             pushHistoryStateFn('search', {});
@@ -3741,7 +3064,6 @@ export function initLists(options) {
             }
             // Remove from local followedLists
             followedLists = followedLists.filter(l => l.id !== viewingListId);
-            renderSidebarLists();
             // Update button text
             followListBtn.textContent = 'Follow';
             if (viewingPublicList) {
@@ -3844,7 +3166,6 @@ export function initLists(options) {
                 return;
             }
             followedLists = followedLists.filter(l => l.id !== viewingListId);
-            renderSidebarLists();
             if (listFollowBtnEl) listFollowBtnEl.innerHTML = '👁️ Follow';
             if (viewingPublicList) {
                 viewingPublicList.isFollower = false;
@@ -3900,7 +3221,6 @@ export function initLists(options) {
         await deleteList(viewingListId);
 
         clearListView();
-        if (navSearchEl) navSearchEl.classList.add('active');
         showRandomSongs();
         if (pushHistoryStateFn) {
             pushHistoryStateFn('search', {});
@@ -3915,34 +3235,10 @@ export function initLists(options) {
 
     // Clean up legacy song IDs (async, runs in background)
     cleanupLegacySongIds().then(() => {
-        renderSidebarLists();
         updateFavoritesCount();
     });
 
-    renderSidebarLists();
     updateFavoritesCount();
-
-    // Handle checkbox changes in the song view list picker (event delegation)
-    if (listPickerDropdownEl) {
-        listPickerDropdownEl.addEventListener('change', (e) => {
-            const checkbox = e.target;
-            if (checkbox.type !== 'checkbox' || !currentSong) return;
-
-            if (checkbox.id === 'favorites-checkbox') {
-                toggleFavorite(currentSong.id);
-            } else if (checkbox.dataset.listId) {
-                const listId = checkbox.dataset.listId;
-                if (checkbox.checked) {
-                    addSongToList(listId, currentSong.id);
-                } else {
-                    removeSongFromList(listId, currentSong.id);
-                }
-            }
-            updateListPickerButton();
-        });
-    }
-
-    // Note: Result picker click-outside handling is now managed by unified ListPicker
 
     // Initialize undo/redo keyboard shortcuts
     initUndoKeyboardShortcuts();
@@ -3950,6 +3246,9 @@ export function initLists(options) {
 
 // ============================================
 // SHARE MODAL
+// One modal (#share-modal) with two content states: cloud lists get the
+// link + invite sections, local (non-synced) lists get the sign-in prompt
+// and copy-as-text fallback.
 // ============================================
 
 let currentShareListId = null;
@@ -3959,6 +3258,8 @@ function openShareModal(shareId) {
 
     const modal = document.getElementById('share-modal');
     const backdrop = document.getElementById('share-modal-backdrop');
+    const cloudContent = document.getElementById('share-cloud-content');
+    const localContent = document.getElementById('share-local-content');
     const viewLinkInput = document.getElementById('share-view-link');
     const inviteSection = document.getElementById('share-invite-section');
     const inviteActions = document.getElementById('share-invite-actions');
@@ -3966,6 +3267,10 @@ function openShareModal(shareId) {
     const inviteExpiry = document.getElementById('share-invite-expiry');
 
     if (!modal || !backdrop) return;
+
+    // Cloud variant
+    cloudContent?.classList.remove('hidden');
+    localContent?.classList.add('hidden');
 
     // Set the view link
     const shareUrl = `${window.location.origin}${window.location.pathname}#list/${shareId}`;
@@ -3998,6 +3303,7 @@ function closeShareModal() {
     if (modal) modal.classList.add('hidden');
     if (backdrop) backdrop.classList.add('hidden');
     currentShareListId = null;
+    localShareListId = null;
 }
 
 function initShareModal() {
@@ -4107,30 +3413,22 @@ function isLocalListId(listId) {
 }
 
 /**
- * Open the local share modal for non-synced lists
+ * Open the share modal in its local-list state (non-synced lists):
+ * sign-in prompt plus copy-as-text instead of share links.
  */
 function openLocalShareModal(listId) {
     localShareListId = listId;
 
-    const modal = document.getElementById('local-share-modal');
-    const backdrop = document.getElementById('local-share-modal-backdrop');
+    const modal = document.getElementById('share-modal');
+    const backdrop = document.getElementById('share-modal-backdrop');
 
     if (!modal || !backdrop) return;
 
+    document.getElementById('share-cloud-content')?.classList.add('hidden');
+    document.getElementById('share-local-content')?.classList.remove('hidden');
+
     backdrop.classList.remove('hidden');
     modal.classList.remove('hidden');
-}
-
-/**
- * Close the local share modal
- */
-function closeLocalShareModal() {
-    const modal = document.getElementById('local-share-modal');
-    const backdrop = document.getElementById('local-share-modal-backdrop');
-
-    if (modal) modal.classList.add('hidden');
-    if (backdrop) backdrop.classList.add('hidden');
-    localShareListId = null;
 }
 
 /**
@@ -4172,21 +3470,16 @@ function getListAsText(listId) {
 }
 
 /**
- * Initialize the local share modal event handlers
+ * Initialize the local-list state's event handlers (close/backdrop wiring
+ * is shared with the cloud state via initShareModal).
  */
 function initLocalShareModal() {
-    const backdrop = document.getElementById('local-share-modal-backdrop');
-    const closeBtn = document.getElementById('local-share-modal-close');
-    const signInBtn = document.getElementById('local-share-sign-in');
-    const copyTextBtn = document.getElementById('local-share-copy-text');
-
-    // Close on backdrop click or close button
-    backdrop?.addEventListener('click', closeLocalShareModal);
-    closeBtn?.addEventListener('click', closeLocalShareModal);
+    const signInBtn = document.getElementById('share-local-sign-in');
+    const copyTextBtn = document.getElementById('share-local-copy-text');
 
     // Sign in button - dispatch event to open auth modal (supports email + Google)
     signInBtn?.addEventListener('click', () => {
-        closeLocalShareModal();
+        closeShareModal();
         window.dispatchEvent(new CustomEvent('open-auth-modal'));
     });
 

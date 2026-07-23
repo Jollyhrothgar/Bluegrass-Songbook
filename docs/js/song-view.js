@@ -3,7 +3,6 @@
 import {
     currentSong,
     currentChordpro,
-    songGroups,
     compactMode,
     nashvilleMode,
     twoColumnMode,
@@ -31,14 +30,14 @@ import {
     fullscreenMode, setFullscreenMode,
     listContext, setListContext
 } from './state.js';
-import { escapeHtml, isTabOnlyWork } from './utils.js';
+import { escapeHtml } from './utils.js';
 import {
     extractChords, detectKey,
     CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
 } from './chords.js';
 import { parseChordPro, renderSectionsHtml } from './renderers/chordpro.js';
 import { getSongMetadata, updateSongMetadata } from './lists.js';
-import { trackVersionPicker, endSongView } from './analytics.js';
+import { endSongView } from './analytics.js';
 import { setBottomBand, setImmersive } from './shell.js';
 import { openWork } from './work-view.js';
 
@@ -46,11 +45,6 @@ import { openWork } from './work-view.js';
 let songViewEl = null;
 let songContentEl = null;
 let resultsDivEl = null;
-let listPickerDropdownEl = null;
-let versionModalEl = null;
-let versionModalCloseEl = null;
-let versionModalTitleEl = null;
-let versionListEl = null;
 
 // Navigation bar elements
 let navBarEl = null;
@@ -553,181 +547,6 @@ export async function openSongFromHistory(songId) {
 }
 
 /**
- * Show version picker modal
- * @param {string} groupId - The group ID for versions
- * @param {Object} options - Options to pass through to openSong
- */
-export async function showVersionPicker(groupId, options = {}) {
-    if (!versionModalEl || !versionListEl) return;
-
-    // Store options to pass through when a version is selected
-    const openOptions = options;
-
-    const versions = songGroups[groupId] || [];
-    if (versions.length === 0) return;
-
-    trackVersionPicker(groupId, 'open');
-
-    // Get vote counts for this group
-    let voteCounts = {};
-    let userVotes = {};
-
-    if (typeof SupabaseAuth !== 'undefined') {
-        const { data } = await SupabaseAuth.fetchGroupVotes(groupId);
-        voteCounts = data || {};
-
-        if (SupabaseAuth.isLoggedIn()) {
-            const songIds = versions.map(v => v.id);
-            const { data: uv } = await SupabaseAuth.fetchUserVotes(songIds);
-            userVotes = uv || {};
-        }
-    }
-
-    // Sort versions: canonical (editorially pinned) first, then by vote count
-    const sortedVersions = [...versions].sort((a, b) => {
-        const aCanonical = a.canonical === true ? 1 : 0;
-        const bCanonical = b.canonical === true ? 1 : 0;
-        if (aCanonical !== bCanonical) return bCanonical - aCanonical;
-        return (voteCounts[b.id] || 0) - (voteCounts[a.id] || 0);
-    });
-
-    // Update modal title
-    if (versionModalTitleEl) {
-        versionModalTitleEl.textContent = versions[0].title || 'Select Version';
-    }
-
-    // Render version list
-    const currentSongId = currentSong?.id;
-    versionListEl.innerHTML = sortedVersions.map(song => {
-        const voteCount = voteCounts[song.id] || 0;
-        const hasVoted = userVotes[song.id] ? 'voted' : '';
-        const isCurrent = song.id === currentSongId;
-
-        // Build version label - prefer curation registry label, then
-        // ChordPro version_label, then tab author for tab-only songs
-        const tabPart = song.tablature_parts?.[0];
-        const hasTabOnly = isTabOnlyWork(song);
-        let versionLabel = song.variant_label || song.version_label;
-
-        // Check for title variations (e.g., "Angeline Baker (C)" vs "Angeline Baker (D)")
-        // Extract any parenthetical suffix that differs from the base title
-        const baseTitle = versions[0].title;
-        const titleSuffix = song.title !== baseTitle ? song.title.replace(baseTitle, '').trim() : '';
-
-        if (!versionLabel) {
-            if (titleSuffix) {
-                // Use title variation as the label (e.g., "(C)", "(D)")
-                versionLabel = titleSuffix;
-                if (hasTabOnly && tabPart?.author) {
-                    versionLabel += ` • Tab by ${tabPart.author}`;
-                }
-            } else if (hasTabOnly && tabPart?.author) {
-                versionLabel = `Tab by ${tabPart.author}`;
-            } else if (song.abc_content) {
-                // ABC notation works - show as notation
-                versionLabel = 'Fiddle notation';
-            } else if (song.key) {
-                versionLabel = `Key of ${song.key}`;
-            } else {
-                versionLabel = 'Original';
-            }
-        }
-
-        // Build version meta - show content type indicators
-        const metaParts = [];
-        if (song.arrangement_by) metaParts.push(`by ${song.arrangement_by}`);
-
-        // Only show tablature metadata for tab-only works
-        if (hasTabOnly) {
-            if (tabPart?.source === 'banjo-hangout') metaParts.push('Banjo Hangout');
-            if (tabPart?.instrument) metaParts.push(tabPart.instrument);
-        } else if (song.abc_content) {
-            // Show ABC/notation indicator for works with ABC content
-            metaParts.push('Notation');
-            if (song.source === 'tunearch') metaParts.push('TuneArch');
-        }
-
-        if (song.key) metaParts.push(`Key: ${song.key}`);
-        if (song.version_type) metaParts.push(song.version_type);
-        if (song.nashville?.length > 0) metaParts.push(`${song.nashville.length} chords`);
-        const versionMeta = metaParts.join(' • ');
-
-        const firstLine = song.first_line ? song.first_line.substring(0, 60) + (song.first_line.length > 60 ? '...' : '') : '';
-        const canonicalBadge = song.canonical === true ? '<span class="canonical-badge">Canonical</span>' : '';
-
-        return `
-            <div class="version-item ${isCurrent ? 'current' : ''}" data-song-id="${song.id}" data-group-id="${groupId}">
-                <div class="version-info">
-                    <div class="version-label">${escapeHtml(versionLabel)}${canonicalBadge}${isCurrent ? '<span class="current-badge">viewing</span>' : ''}</div>
-                    <div class="version-meta">${escapeHtml(versionMeta)}</div>
-                    ${firstLine ? `<div class="version-first-line">"${escapeHtml(firstLine)}"</div>` : ''}
-                    ${song.version_notes ? `<div class="version-notes">${escapeHtml(song.version_notes)}</div>` : ''}
-                </div>
-                <div class="version-votes">
-                    <button class="vote-btn ${hasVoted}" data-song-id="${song.id}" data-group-id="${groupId}" title="Vote for this version">
-                        <span class="vote-arrow">▲</span>
-                    </button>
-                    <span class="vote-count">${voteCount}</span>
-                </div>
-            </div>
-        `;
-    }).join('');
-
-    // Add click handlers for version items
-    versionListEl.querySelectorAll('.version-item').forEach(item => {
-        item.addEventListener('click', (e) => {
-            if (e.target.closest('.vote-btn')) return;
-            const songId = item.dataset.songId;
-            trackVersionPicker(groupId, 'select', songId);
-            closeVersionPicker();
-            // Unified song page renders every work shape; exact keeps the
-            // chosen version instead of snapping to the representative.
-            openWork(songId, { ...openOptions, exact: true });
-        });
-    });
-
-    // Add click handlers for vote buttons
-    versionListEl.querySelectorAll('.vote-btn').forEach(btn => {
-        btn.addEventListener('click', async (e) => {
-            e.stopPropagation();
-
-            if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
-                alert('Please sign in to vote');
-                return;
-            }
-
-            const songId = btn.dataset.songId;
-            const gId = btn.dataset.groupId;
-            const hasVoted = btn.classList.contains('voted');
-
-            if (hasVoted) {
-                await SupabaseAuth.removeVote(songId);
-                btn.classList.remove('voted');
-                const countEl = btn.nextElementSibling;
-                countEl.textContent = Math.max(0, parseInt(countEl.textContent) - 1);
-            } else {
-                await SupabaseAuth.castVote(songId, gId);
-                btn.classList.add('voted');
-                const countEl = btn.nextElementSibling;
-                countEl.textContent = parseInt(countEl.textContent) + 1;
-            }
-        });
-    });
-
-    // Show modal
-    versionModalEl.classList.remove('hidden');
-}
-
-/**
- * Close version picker modal
- */
-export function closeVersionPicker() {
-    if (versionModalEl) {
-        versionModalEl.classList.add('hidden');
-    }
-}
-
-/**
  * Toggle focus mode. Focus is now just the immersive shell: the top band
  * slides away (hover/focus reveals it) while the content, pill row, and
  * bottom band stay — no separate focus header or view fork.
@@ -756,16 +575,6 @@ export function exitFullscreen() {
         }
 
         updateNavBar();
-    }
-}
-
-/**
- * Open bottom sheet with song controls (mobile)
- */
-export function openSongControls() {
-    // Call the global openBottomSheet function set up by main.js
-    if (typeof window.openBottomSheet === 'function') {
-        window.openBottomSheet();
     }
 }
 
@@ -937,9 +746,6 @@ export function goBack() {
     // Exit fullscreen mode
     exitFullscreen();
 
-    // Close list picker dropdown when navigating away
-    if (listPickerDropdownEl) listPickerDropdownEl.classList.add('hidden');
-
     // Check for a saved return URL (e.g., when coming from a list via "Go to Song")
     const returnUrl = sessionStorage.getItem('songbook-return-url');
     if (returnUrl) {
@@ -965,11 +771,6 @@ export function initSongView(options) {
         songView,
         songContent,
         resultsDiv,
-        listPickerDropdown,
-        versionModal,
-        versionModalClose,
-        versionModalTitle,
-        versionList,
         pushHistoryState,
         showView,
         backBtn,
@@ -985,11 +786,6 @@ export function initSongView(options) {
     songViewEl = songView;
     songContentEl = songContent;
     resultsDivEl = resultsDiv;
-    listPickerDropdownEl = listPickerDropdown;
-    versionModalEl = versionModal;
-    versionModalCloseEl = versionModalClose;
-    versionModalTitleEl = versionModalTitle;
-    versionListEl = versionList;
     pushHistoryStateFn = pushHistoryState;
     showViewFn = showView;
 
@@ -1000,16 +796,6 @@ export function initSongView(options) {
     navPositionEl = navPosition;
     navListNameEl = navListName;
     fullscreenBtnEl = fullscreenBtn;
-
-    // Setup version modal close handlers
-    if (versionModalCloseEl) {
-        versionModalCloseEl.addEventListener('click', closeVersionPicker);
-    }
-    if (versionModalEl) {
-        versionModalEl.addEventListener('click', (e) => {
-            if (e.target === versionModalEl) closeVersionPicker();
-        });
-    }
 
     // Setup back button
     if (backBtn) {

@@ -1973,7 +1973,19 @@ h1 {
     border-color: var(--accent);
 }
 
-/* Flag modal */
+/* Unified feedback modal */
+.flag-song-context {
+    margin: 0 0 1rem 0;
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+.flag-mailto-link {
+    margin-left: auto;
+    color: var(--text-secondary);
+    font-size: 0.85em;
+}
+
 .flag-intro {
     margin: 0 0 1rem 0;
     color: var(--text-secondary);
@@ -10867,12 +10879,30 @@ body.has-bottomband .container {
 
 .arrangement-item {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    cursor: pointer;
 }
 
 .arrangement-item.current { background: var(--bg-secondary); }
+
+.arrangement-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    min-width: 0;
+}
+
+/* Vote affordance carried over from the retired version-picker modal */
+.arrangement-votes {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
 
 .arrangement-meta {
     color: var(--text-secondary);

@@ -21,63 +21,6 @@
     <script src="https://cdn.jsdelivr.net/npm/abcjs@6/dist/abcjs-basic-min.js"></script>
 </head>
 <body>
-    <!-- Sidebar Navigation -->
-    <div id="sidebar" class="sidebar">
-        <div class="sidebar-header">
-            <span class="sidebar-title">Menu</span>
-            <button id="sidebar-close" class="sidebar-close">&times;</button>
-        </div>
-        <nav class="sidebar-nav">
-            <button id="nav-home" class="nav-item">
-                <span class="nav-icon">&#127968;</span>
-                <span class="nav-label">Home</span>
-            </button>
-            <button id="nav-search" class="nav-item active">
-                <span class="nav-icon">&#128269;</span>
-                <span class="nav-label">Search</span>
-            </button>
-            <button id="nav-add-song" class="nav-item">
-                <span class="nav-icon">&#43;</span>
-                <span class="nav-label">Add Song</span>
-            </button>
-            <button id="nav-favorites" class="nav-item">
-                <span class="nav-icon">&#9825;</span>
-                <span class="nav-label">Favorites</span>
-                <span id="nav-favorites-count" class="nav-badge hidden">0</span>
-            </button>
-            <button id="nav-song-lists" class="nav-item">
-                <span class="nav-icon">&#9776;</span>
-                <span class="nav-label">Song Lists</span>
-            </button>
-        </nav>
-        <div class="sidebar-footer">
-            <button id="theme-toggle" class="sidebar-link">
-                <span class="icon-sun">&#9728;</span>
-                <span class="icon-moon">&#9790;</span>
-                <span>Toggle Theme</span>
-            </button>
-            <a href="about.html" class="sidebar-link">
-                <span>&#9432;</span> About
-            </a>
-            <a href="https://www.patreon.com/c/bluegrassbook" target="_blank" rel="noopener" class="sidebar-link">
-                <span>&#10084;</span> Support on Patreon
-            </a>
-            <a href="https://buymeacoffee.com/michaelbeav" target="_blank" rel="noopener" class="sidebar-link">
-                <span>&#9749;</span> Buy me a coffee
-            </a>
-            <button id="nav-feedback" class="sidebar-link">
-                <span>&#9993;</span> Send Feedback
-            </button>
-            <a href="blog.html" class="sidebar-link">
-                <span>&#128221;</span> Dev Blog
-            </a>
-            <a href="bluegrass-standards-board.html" class="sidebar-link">
-                <span>&#128659;</span> Standards Board
-            </a>
-        </div>
-    </div>
-    <div id="sidebar-backdrop" class="sidebar-backdrop hidden"></div>
-
     <!-- Auth UI: relocated into the app top band by shell.js at init -->
     <div id="auth-holder" class="hidden">
         <div id="auth-section" class="auth-section">
@@ -481,23 +424,6 @@ This is the [G]chorus [D]part
         </div>
 
         <div id="song-view" class="song-view hidden">
-            <!-- Bottom sheet for mobile controls -->
-            <div id="bottom-sheet-backdrop" class="bottom-sheet-backdrop hidden"></div>
-            <div id="bottom-sheet" class="bottom-sheet hidden">
-                <div class="bottom-sheet-handle"></div>
-                <div class="bottom-sheet-content">
-                    <!-- Actions only - controls moved to quick controls bar -->
-                    <div class="sheet-section sheet-actions">
-                        <button class="sheet-action" data-action="lists">♡ Add to List</button>
-                        <button class="sheet-action" data-action="print">🖨 Print</button>
-                        <button class="sheet-action" data-action="copy">📋 Copy</button>
-                        <button class="sheet-action" data-action="download">⬇ Download</button>
-                        <button class="sheet-action" data-action="edit">✏ Edit</button>
-                        <button class="sheet-action" data-action="flag">🚩 Report Issue</button>
-                    </div>
-                </div>
-            </div>
-
             <!-- Song page chrome (back / title / Edit / Lists / Export /
                  overflow) lives in the app shell's top band, declared by
                  work-view.js updateWorkTopBar(). -->
@@ -507,10 +433,6 @@ This is the [G]chorus [D]part
                 <button id="exit-fullscreen-btn" class="nav-btn exit-btn" title="Back to list">
                     <span class="nav-arrow">☰</span>
                     <span class="nav-label">List</span>
-                </button>
-                <button id="song-view-btn" class="nav-btn" title="View song controls">
-                    <span class="nav-arrow">♫</span>
-                    <span class="nav-label">Song</span>
                 </button>
                 <div class="nav-info">
                     <span id="nav-position">1 of 10</span>
@@ -535,82 +457,41 @@ This is the [G]chorus [D]part
                 <button id="share-modal-close" class="share-modal-close">&times;</button>
             </div>
             <div class="share-modal-content">
-                <div class="share-section">
-                    <h4>View Link</h4>
-                    <p class="share-description">Anyone with this link can view and copy this list.</p>
-                    <div class="share-link-row">
-                        <input type="text" id="share-view-link" class="share-link-input" readonly>
-                        <button id="share-copy-link" class="share-copy-btn">Copy</button>
+                <!-- Cloud-synced lists: shareable link + co-owner invites -->
+                <div id="share-cloud-content">
+                    <div class="share-section">
+                        <h4>View Link</h4>
+                        <p class="share-description">Anyone with this link can view and copy this list.</p>
+                        <div class="share-link-row">
+                            <input type="text" id="share-view-link" class="share-link-input" readonly>
+                            <button id="share-copy-link" class="share-copy-btn">Copy</button>
+                        </div>
+                    </div>
+                    <div id="share-invite-section" class="share-section share-invite-section">
+                        <h4>Invite Co-Owner</h4>
+                        <p class="share-description">Generate a link that allows someone to become a co-owner of this list. They'll be able to add, remove, and reorder songs.</p>
+                        <div id="share-invite-actions">
+                            <button id="share-generate-invite" class="share-generate-btn">Generate Invite Link</button>
+                        </div>
+                        <div id="share-invite-link-row" class="share-link-row hidden">
+                            <input type="text" id="share-invite-link" class="share-link-input" readonly>
+                            <button id="share-copy-invite" class="share-copy-btn">Copy</button>
+                        </div>
+                        <p id="share-invite-expiry" class="share-expiry hidden">Expires in 7 days</p>
                     </div>
                 </div>
-                <div id="share-invite-section" class="share-section share-invite-section">
-                    <h4>Invite Co-Owner</h4>
-                    <p class="share-description">Generate a link that allows someone to become a co-owner of this list. They'll be able to add, remove, and reorder songs.</p>
-                    <div id="share-invite-actions">
-                        <button id="share-generate-invite" class="share-generate-btn">Generate Invite Link</button>
+                <!-- Local (non-synced) lists: sign-in prompt + copy-as-text -->
+                <div id="share-local-content" class="hidden">
+                    <div class="share-section local-share-explanation">
+                        <p>This list is saved locally on your device. To share it with others, you'll need to sign in and sync it to the cloud.</p>
                     </div>
-                    <div id="share-invite-link-row" class="share-link-row hidden">
-                        <input type="text" id="share-invite-link" class="share-link-input" readonly>
-                        <button id="share-copy-invite" class="share-copy-btn">Copy</button>
+                    <div class="share-section local-share-actions">
+                        <button id="share-local-sign-in" class="share-generate-btn">Sign In to Share</button>
                     </div>
-                    <p id="share-invite-expiry" class="share-expiry hidden">Expires in 7 days</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Local List Share Modal (for non-synced lists) -->
-        <div id="local-share-modal-backdrop" class="share-modal-backdrop hidden"></div>
-        <div id="local-share-modal" class="share-modal hidden">
-            <div class="share-modal-header">
-                <h3>Share List</h3>
-                <button id="local-share-modal-close" class="share-modal-close">&times;</button>
-            </div>
-            <div class="share-modal-content">
-                <div class="share-section local-share-explanation">
-                    <p>This list is saved locally on your device. To share it with others, you'll need to sign in and sync it to the cloud.</p>
-                </div>
-                <div class="share-section local-share-actions">
-                    <button id="local-share-sign-in" class="share-generate-btn">Sign In to Share</button>
-                </div>
-                <div class="share-section local-share-alternative">
-                    <h4>Or copy as text</h4>
-                    <p class="share-description">Copy the song list as plain text to share via message or email.</p>
-                    <button id="local-share-copy-text" class="share-copy-btn">Copy Song List</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bug Report Modal -->
-        <div id="bug-modal" class="modal hidden">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Report Parsing Bug</h2>
-                    <button id="bug-modal-close" class="modal-close">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <label for="bug-feedback">Describe the issue:</label>
-                    <textarea id="bug-feedback" placeholder="e.g., Chord alignment is off in verse 2, missing repeat section, wrong artist name..."></textarea>
-                </div>
-                <div class="modal-footer">
-                    <button id="submit-bug-btn" class="action-btn primary">Submit Bug Report</button>
-                    <span id="bug-status" class="copy-status"></span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Song Correction Modal -->
-        <div id="correction-modal" class="modal hidden">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Song Correction</h2>
-                    <button id="correction-modal-close" class="modal-close">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p style="margin-bottom: 1rem;">You can edit songs directly! Click the edit button to fix chords, lyrics, or formatting yourself.</p>
-                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Your changes can be submitted for review and added to the songbook.</p>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <button id="correction-edit-btn" class="action-btn primary">Edit This Song</button>
-                        <button id="correction-feedback-btn" class="action-btn">Just Send Feedback</button>
+                    <div class="share-section local-share-alternative">
+                        <h4>Or copy as text</h4>
+                        <p class="share-description">Copy the song list as plain text to share via message or email.</p>
+                        <button id="share-local-copy-text" class="share-copy-btn">Copy Song List</button>
                     </div>
                 </div>
             </div>
@@ -628,24 +509,6 @@ This is the [G]chorus [D]part
             <div class="manage-lists-content">
                 <div id="manage-lists-container" class="manage-lists-container">
                     <!-- Dynamic: folders and lists rendered here -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact Modal -->
-        <div id="contact-modal" class="modal hidden">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 id="contact-modal-title">Send Feedback</h2>
-                    <button id="contact-modal-close" class="modal-close">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <label for="contact-feedback">Describe your feedback:</label>
-                    <textarea id="contact-feedback" placeholder="Enter your message here..."></textarea>
-                </div>
-                <div class="modal-footer">
-                    <button id="submit-contact-btn" class="action-btn primary">Submit</button>
-                    <span id="contact-status" class="copy-status"></span>
                 </div>
             </div>
         </div>
@@ -776,21 +639,6 @@ This is the [G]chorus [D]part
             </div>
         </div>
 
-        <!-- Version Picker Modal -->
-        <div id="version-modal" class="modal hidden">
-            <div class="modal-content version-picker">
-                <div class="modal-header">
-                    <h2 id="version-modal-title">Select Version</h2>
-                    <button id="version-modal-close" class="modal-close">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div id="version-list" class="version-list">
-                        <!-- Dynamic version items -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Admin Delete Modal: lists every version in the group so the admin
              deletes the copy they mean, not just the search representative -->
         <div id="delete-modal" class="modal hidden">
@@ -813,25 +661,38 @@ This is the [G]chorus [D]part
             </div>
         </div>
 
-        <!-- Song Request Modal -->
-        <!-- Flag Issue Modal -->
+        <!-- Unified Feedback Modal (song flags, corrections, bug reports, general feedback) -->
         <div id="flag-modal" class="modal hidden">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>Report an Issue</h2>
+                    <h2 id="flag-modal-title">Send Feedback</h2>
                     <button id="flag-modal-close" class="modal-close">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p class="flag-intro">What's wrong with this song?</p>
-                    <div id="flag-options" class="flag-options">
-                        <!-- Radio buttons populated by flags.js -->
+                    <div class="field-row">
+                        <label for="flag-type-select">What's this about?</label>
+                        <select id="flag-type-select">
+                            <!-- Options populated by flags.js -->
+                        </select>
                     </div>
-                    <label for="flag-description" class="flag-description-label">Details (optional):</label>
+                    <p id="flag-song-context" class="flag-song-context hidden"></p>
+                    <div id="flag-song-section">
+                        <p class="flag-intro">What's wrong with this song?</p>
+                        <div id="flag-options" class="flag-options">
+                            <!-- Radio buttons populated by flags.js -->
+                        </div>
+                    </div>
+                    <div id="flag-correction-section" class="hidden">
+                        <p style="margin-bottom: 1rem;">You can edit songs directly! Use the editor to fix chords, lyrics, or formatting yourself &mdash; your changes can be submitted for review and added to the songbook.</p>
+                        <button id="flag-correction-edit-btn" class="action-btn primary" style="margin-bottom: 1rem;">Edit This Song</button>
+                    </div>
+                    <label for="flag-description" class="flag-description-label" id="flag-description-label">Details (optional):</label>
                     <textarea id="flag-description" placeholder="E.g., 'The G chord in verse 2 should be C'"></textarea>
                 </div>
                 <div class="modal-footer">
                     <button id="flag-cancel" class="action-btn">Cancel</button>
                     <button id="flag-submit" class="action-btn primary">Submit Report</button>
+                    <a id="flag-mailto" class="flag-mailto-link" href="mailto:bluegrassbook.feedback@gmail.com">email us instead</a>
                 </div>
             </div>
         </div>
