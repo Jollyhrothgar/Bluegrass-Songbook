@@ -1,201 +1,159 @@
-// E2E tests for song view functionality
+// E2E tests for the unified song page (work-view.js). Transpose/display/
+// info controls live in pill popovers on the #song-pill-row; export actions
+// live in the top band's Export pill.
 import { test, expect } from '@playwright/test';
+import { gotoSearch, searchAndOpen, openPill, chords } from './helpers.js';
 
 test.describe('Song View', () => {
     test.beforeEach(async ({ page }) => {
-        // Go directly to search view (homepage is now landing page)
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-
-        // Search for a known song and open it
-        await page.fill('#search-input', 'blue moon kentucky');
-        await page.waitForTimeout(300);
-        await page.locator('.result-item').first().click();
-
-        // Wait for song view
-        await expect(page.locator('#song-view')).toBeVisible();
+        await gotoSearch(page);
+        await searchAndOpen(page, 'your cheating heart', /your cheat/i);
     });
 
-    test('displays song title and artist', async ({ page }) => {
-        // Song header should be visible
+    test('displays song title and artist line', async ({ page }) => {
         await expect(page.locator('.song-title')).toBeVisible();
-        // Artist is in Info disclosure - expand it first
-        await page.locator('#info-toggle').click();
-        await expect(page.locator('.info-content')).toBeVisible();
-        await expect(page.locator('.info-item').first()).toBeVisible();
+        await expect(page.locator('.song-title')).toContainText(/cheat/i);
+        await expect(page.locator('.song-artist-line')).toBeVisible();
+    });
+
+    test('Info pill discloses song details and tags', async ({ page }) => {
+        const popover = await openPill(page, 'info-pill');
+        await expect(popover.locator('.info-item').first()).toBeVisible();
+        await expect(popover.locator('.info-tags')).toBeVisible();
     });
 
     test('displays chord and lyrics content', async ({ page }) => {
-        // Should show song content with chords
         await expect(page.locator('.song-content')).toBeVisible();
-
-        // Should have song body with content
         await expect(page.locator('.song-body')).toBeVisible();
-
-        // At least some song lines should be present
         await expect(page.locator('.song-line').first()).toBeVisible();
+        await expect(chords(page).first()).toBeVisible();
     });
 
-    test('key selector changes key', async ({ page }) => {
-        // Find the key selector
-        const keySelect = page.locator('#key-select');
-        if (await keySelect.isVisible()) {
-            // Get original value
-            const originalKey = await keySelect.inputValue();
+    test('Key pill shows the detected key and transposes chords', async ({ page }) => {
+        const label = page.locator('#key-pill .pill-label');
+        await expect(label).toContainText(/Key of [A-G]/);
 
-            // Change to a different key
-            const newKey = originalKey === 'G' ? 'A' : 'G';
-            await keySelect.selectOption(newKey);
+        const originalChord = await chords(page).first().textContent();
 
-            // Key should be updated
-            await expect(keySelect).toHaveValue(newKey);
-        }
+        const popover = await openPill(page, 'key-pill');
+        // Pick a key different from the current one
+        const currentKey = (await popover.locator('.pill-current-key').textContent())?.trim();
+        const newKey = currentKey === 'A' ? 'G' : 'A';
+        await popover.locator(`.pill-key-btn[data-key="${newKey}"]`).click();
+
+        await expect(label).toContainText(`Key of ${newKey}`);
+        // Re-render is reactive — toHaveText retries until it settles
+        await expect(chords(page).first()).not.toHaveText(originalChord);
+
+        // Transpose back to the original key restores the chord
+        await popover.locator(`.pill-key-btn[data-key="${currentKey}"]`).click();
+        await expect(label).toContainText(`Key of ${currentKey}`);
+        await expect(chords(page).first()).toHaveText(originalChord);
     });
 
-    test('compact mode toggle works', async ({ page }) => {
-        const compactCheckbox = page.locator('#compact-checkbox');
-        if (await compactCheckbox.isVisible()) {
-            await compactCheckbox.click();
+    test('semitone +/- buttons in the Key pill step the key', async ({ page }) => {
+        const popover = await openPill(page, 'key-pill');
+        const currentKeyEl = popover.locator('.pill-current-key');
+        const before = (await currentKeyEl.textContent())?.trim();
 
-            // Song content should have compact class
-            await expect(page.locator('.song-content')).toHaveClass(/compact/);
+        await popover.locator('[data-transpose="1"]').click();
+        const up = (await currentKeyEl.textContent())?.trim();
+        expect(up).not.toBe(before);
 
-            // Toggle back
-            await compactCheckbox.click();
-            await expect(page.locator('.song-content')).not.toHaveClass(/compact/);
-        }
+        await popover.locator('[data-transpose="-1"]').click();
+        const back = (await currentKeyEl.textContent())?.trim();
+        expect(back).toBe(before);
     });
 
-    test('Nashville mode toggle works', async ({ page }) => {
-        const nashvilleCheckbox = page.locator('#nashville-checkbox');
-        if (await nashvilleCheckbox.isVisible()) {
-            // Get a chord before Nashville mode
-            const chordEl = page.locator('.chord').first();
-            const originalChord = await chordEl.textContent();
+    test('Nashville toggle in the Key pill converts chords to numerals', async ({ page }) => {
+        const chordEl = chords(page).first();
+        const originalChord = await chordEl.textContent();
 
-            await nashvilleCheckbox.click();
-            await page.waitForTimeout(200);
+        const popover = await openPill(page, 'key-pill');
+        const nashBtn = popover.locator('.pill-nashville-btn');
+        await nashBtn.click();
+        await page.waitForTimeout(200);
 
-            // Chord should now be a Nashville number (I, II, IV, V, etc.)
-            const nashvilleChord = await chordEl.textContent();
-            // Nashville numbers use Roman numerals
-            expect(nashvilleChord).toMatch(/^[IiVv]+[0-9]?$/);
+        const nashvilleChord = await chordEl.textContent();
+        expect(nashvilleChord).toMatch(/^[IiVv]+[0-9]?$/);
 
-            // Toggle back
-            await nashvilleCheckbox.click();
-            await page.waitForTimeout(200);
-
-            // Should be back to letter chord
-            const restoredChord = await chordEl.textContent();
-            expect(restoredChord).toBe(originalChord);
-        }
+        await nashBtn.click();
+        await page.waitForTimeout(200);
+        expect(await chordEl.textContent()).toBe(originalChord);
     });
 
-    test('transposition changes chords correctly', async ({ page }) => {
-        const keySelect = page.locator('#key-select');
-        if (await keySelect.isVisible()) {
-            // Get a chord before transposition
-            const chordEl = page.locator('.chord').first();
-            const originalChord = await chordEl.textContent();
+    test('chord display mode "none" hides chords (Display pill)', async ({ page }) => {
+        const popover = await openPill(page, 'display-pill');
+        const select = popover.locator('#pill-chord-mode');
 
-            // Get original key
-            const originalKey = await keySelect.inputValue();
+        await select.selectOption('none');
+        await page.waitForTimeout(200);
+        await expect(chords(page)).toHaveCount(0);
 
-            // Transpose up (e.g., G to A is +2 semitones)
-            const newKey = originalKey === 'G' ? 'A' : 'G';
-            await keySelect.selectOption(newKey);
-            await page.waitForTimeout(200);
-
-            // Chord should have changed
-            const transposedChord = await chordEl.textContent();
-            expect(transposedChord).not.toBe(originalChord);
-
-            // Transpose back
-            await keySelect.selectOption(originalKey);
-            await page.waitForTimeout(200);
-
-            // Should be back to original
-            const restoredChord = await chordEl.textContent();
-            expect(restoredChord).toBe(originalChord);
-        }
+        await select.selectOption('all');
+        await page.waitForTimeout(200);
+        expect(await chords(page).count()).toBeGreaterThan(0);
     });
 
-    test('font size controls work', async ({ page }) => {
-        const fontUpBtn = page.locator('#font-up-btn');
-        const fontDownBtn = page.locator('#font-down-btn');
+    test('two-column toggle adds the layout class (Display pill)', async ({ page }) => {
+        const popover = await openPill(page, 'display-pill');
 
-        if (await fontUpBtn.isVisible()) {
-            // Click font up
-            await fontUpBtn.click();
+        await popover.locator('#pill-twocol').click();
+        await page.waitForTimeout(200);
+        await expect(page.locator('.song-body')).toHaveClass(/two-column/);
 
-            // Click font down twice
-            await fontDownBtn.click();
-            await fontDownBtn.click();
-        }
+        await popover.locator('#pill-twocol').click();
+        await page.waitForTimeout(200);
+        await expect(page.locator('.song-body')).not.toHaveClass(/two-column/);
     });
 
-    test('chord display mode selector works', async ({ page }) => {
-        const chordModeSelect = page.locator('#chord-mode-select');
-        if (await chordModeSelect.isVisible()) {
-            // Change to 'first' mode
-            await chordModeSelect.selectOption('first');
-            await page.waitForTimeout(200);
+    test('font size controls change the rendered size (Display pill)', async ({ page }) => {
+        const initialSize = await page.locator('.song-body')
+            .evaluate(el => parseFloat(getComputedStyle(el).fontSize));
 
-            // Change to 'none' mode
-            await chordModeSelect.selectOption('none');
-            await page.waitForTimeout(200);
+        const popover = await openPill(page, 'display-pill');
+        await popover.locator('[data-size="1"]').click();
+        await page.waitForTimeout(200);
 
-            // Change back to 'all'
-            await chordModeSelect.selectOption('all');
-        }
+        const newSize = await page.locator('.song-body')
+            .evaluate(el => parseFloat(getComputedStyle(el).fontSize));
+        expect(newSize).toBeGreaterThan(initialSize);
+
+        await popover.locator('[data-size="-1"]').click();
+    });
+
+    test('only one pill popover is open at a time', async ({ page }) => {
+        await openPill(page, 'key-pill');
+        await openPill(page, 'display-pill');
+
+        await expect(page.locator('#display-pill .pill-popover')).toBeVisible();
+        await expect(page.locator('#key-pill .pill-popover')).toBeHidden();
     });
 });
 
 test.describe('Song Navigation', () => {
-    test('deep link to song works', async ({ page }) => {
-        // Navigate directly to a song URL
-        await page.goto('/#song/bluemoonofkentuckylyricschords');
+    test('deep link to song redirects to the work URL and renders', async ({ page }) => {
+        await page.goto('/#song/blue-moon-of-kentucky-1');
 
-        // Wait for redirect/load
-        await page.waitForTimeout(500);
-
-        // Song view should be visible (or search if song not found)
-        // This tests the deep link handling
+        await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
+        await expect(page).toHaveURL(/#work\//);
     });
 
     test('back button returns to search', async ({ page }) => {
-        // Go directly to search view (homepage is now landing page)
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
+        await gotoSearch(page);
+        await searchAndOpen(page, 'foggy mountain');
 
-        // Search and open a song
-        await page.fill('#search-input', 'foggy mountain');
-        await page.waitForTimeout(300);
-        await page.locator('.result-item').first().click();
-
-        await expect(page.locator('#song-view')).toBeVisible();
-
-        // Go back
         await page.goBack();
 
-        // Should be back at search
         await expect(page.locator('#search-input')).toBeVisible();
     });
 });
 
-test.describe('Print View', () => {
-    test.beforeEach(async ({ page }) => {
-        // Go directly to search view (homepage is now landing page)
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-        // Use specific song to avoid version picker
-        await page.fill('#search-input', 'your cheating heart hank williams');
-        await page.waitForTimeout(300);
-        await page.locator('.result-item').first().click();
-        await expect(page.locator('#song-view')).toBeVisible();
-    });
+test.describe('Print', () => {
+    test('Export pill print action triggers print', async ({ page }) => {
+        await gotoSearch(page);
+        await searchAndOpen(page, 'your cheating heart', /your cheat/i);
 
-    test('print button triggers print', async ({ page }) => {
         // Track if window.print was called
         let printCalled = false;
         await page.exposeFunction('trackPrint', () => { printCalled = true; });
@@ -203,12 +161,9 @@ test.describe('Print View', () => {
             window.print = () => { window.trackPrint(); };
         });
 
-        // Open export dropdown and click print (print is now in export dropdown)
-        await page.locator('#export-btn').click();
-        await page.waitForSelector('#export-dropdown:not(.hidden)');
-        await page.locator('.export-option[data-action="print"]').click();
+        const popover = await openPill(page, 'export-pill');
+        await popover.locator('[data-action="print"]').click();
 
-        // Verify print was triggered
         expect(printCalled).toBe(true);
     });
 });

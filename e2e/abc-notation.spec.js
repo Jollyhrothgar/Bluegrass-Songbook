@@ -1,9 +1,9 @@
 // E2E tests for ABC Notation rendering and playback.
 //
-// The full ABC controls (tempo, size, play) live in the SONG view — a work
-// with abc_content renders notation there by default. A bare #work/{id} URL
-// intentionally shows the work dashboard (part cards); its Fiddle card
-// expands ABC inline with a play button only (covered by the last test).
+// Works with abc_content render notation on the unified song page
+// (#work/{slug}); the playback controls (tempo, play) live in the fixed
+// bottom band (#app-bottomband). The old work dashboard with part cards
+// is gone — bare #work/ URLs render the same unified page.
 import { test, expect } from '@playwright/test';
 
 const ABC_SONG_URL = '/#song/abbey-reel-the';
@@ -135,16 +135,17 @@ test.describe('ABC Playback', () => {
     });
 });
 
-test.describe('ABC on Work Dashboard', () => {
-    test('work dashboard expands Fiddle part with inline ABC and play button', async ({ page }) => {
-        // Bare #work/ URL shows the dashboard with part cards
+test.describe('ABC on the unified work page', () => {
+    test('bare #work URL renders notation with bottom-band play controls', async ({ page }) => {
+        // The work dashboard (part cards) is gone: a bare #work/ URL renders
+        // the unified song page with the notation and its playback band.
         await page.goto('/#work/abbey-reel-the');
-        const fiddleCard = page.locator('.work-part-card').filter({ hasText: /fiddle/i }).first();
-        await fiddleCard.waitFor({ timeout: 15000 });
-        await fiddleCard.click();
 
-        // Inline expansion renders ABC with a play button
-        await expect(page.locator('#work-abc-notation svg').first()).toBeVisible({ timeout: 15000 });
-        await expect(page.locator('#abc-play-btn')).toBeVisible();
+        await expect(page.locator('#abc-notation svg').first()).toBeVisible({ timeout: 30000 });
+        // Controls are mounted in the fixed bottom band
+        const band = page.locator('#app-bottomband');
+        await expect(band).toBeVisible();
+        await expect(band.locator('#abc-play-btn')).toBeVisible();
+        await expect(band.locator('#abc-tempo-label')).toBeVisible();
     });
 });

@@ -203,8 +203,9 @@ test.describe('Navigation Between Views', () => {
         await page.locator('.collection-card').filter({ hasText: 'Gospel Standards' }).click();
         await expect(page.locator('.search-container')).toBeVisible();
 
-        // Click logo to go back (uses #logo-link or .site-logo)
-        await page.locator('#logo-link').click();
+        // The landing logo hero is homepage-only now — from other views the
+        // top-band brand link is the way home
+        await page.locator('#topbar-brand').click();
 
         // Should be back on landing page
         await expect(page.locator('#landing-page')).toBeVisible();

@@ -18,13 +18,10 @@ const SONG_WITH_CHORD = `{start_of_verse: Verse 1}
 `;
 
 async function openNewSongEditor(page) {
-    await page.goto('/#search');
-    await page.waitForSelector('#search-input');
-    await page.locator('#hamburger-btn').click();
-    await expect(page.locator('.sidebar.open')).toBeVisible();
-    await page.locator('#nav-add-song').click();
-    // Add Song goes straight to the new-song editor (no picker modal)
-    await expect(page.locator('#editor-panel')).toBeVisible();
+    // #add deep link goes straight to the new-song editor (the top-band
+    // Add Song nav item opens the picker modal first — covered elsewhere)
+    await page.goto('/#add');
+    await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 }
 
 // fill() fires an input event; the preview re-renders ~200ms later
@@ -706,11 +703,8 @@ test.describe('Two-pane editor on mobile viewport', () => {
     test.use({ viewport: { width: 390, height: 844 } });
 
     test('stacked layout: core placement flow works at phone size', async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-        await page.locator('#hamburger-btn').click();
-        await page.locator('#nav-add-song').click();
-        await expect(page.locator('#editor-panel')).toBeVisible();
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
         await setSong(page, '{start_of_verse: Verse 1}\nmountain morning light\n{end_of_verse}\n');
         const strip = page.locator('.ve-strip').first();
@@ -723,11 +717,8 @@ test.describe('Two-pane editor on mobile viewport', () => {
     });
 
     test('stacked layout: tapping lyrics opens the line input at phone size', async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-        await page.locator('#hamburger-btn').click();
-        await page.locator('#nav-add-song').click();
-        await expect(page.locator('#editor-panel')).toBeVisible();
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
         await setSong(page, '{start_of_verse: Verse 1}\nmountain morning light\n{end_of_verse}\n');
         const syl = page.locator('.ve-syl').first();

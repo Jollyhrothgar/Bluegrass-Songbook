@@ -1,213 +1,151 @@
-// E2E tests for WorkView (works with tablature)
+// E2E tests for works with tablature on the unified song page.
+// Tablature playback controls live in the fixed bottom band
+// (#app-bottomband); multi-part works get a .part-tabs segmented control.
 import { test, expect } from '@playwright/test';
 
-/**
- * Helper to expand the Controls disclosure if it's collapsed
- */
-async function expandControls(page) {
-    // Controls toggle button has id="work-controls-toggle" or "qc-toggle"
-    const controlsToggle = page.locator('#work-controls-toggle, #qc-toggle');
-    const controlsContent = page.locator('#work-controls-content, #quick-controls-content');
-
-    // Check if controls exist and are collapsed
-    if (await controlsToggle.count() > 0) {
-        // If content is hidden, click to expand
-        const isHidden = await controlsContent.evaluate(el => el?.classList.contains('hidden'));
-        if (isHidden) {
-            await controlsToggle.click();
-            // Wait for controls to become visible
-            await page.waitForTimeout(200);
-        }
-    }
-}
-
 test.describe('WorkView - Tablature', () => {
-    test('opens work with tablature via URL', async ({ page }) => {
-        // Navigate directly to a work with tablature; #song/ shows the
-        // lead sheet view (the work also has a mandolin tab part)
+    test('opens work with tablature via legacy #song URL', async ({ page }) => {
+        // #song/{id} redirects to the unified #work page
         await page.goto('/#song/foggy-mountain-breakdown');
-        await page.waitForTimeout(1000);
 
-        // Song view should be visible
-        await expect(page.locator('#song-view')).toBeVisible({ timeout: 10000 });
-
-        // Should show the title
-        await expect(page.locator('.work-title, .song-title')).toContainText(/foggy mountain/i);
+        await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
+        await expect(page).toHaveURL(/#work\/foggy-mountain-breakdown/);
+        await expect(page.locator('.song-title')).toContainText(/foggy mountain/i);
     });
 
-    test('displays tablature container for tab-only works', async ({ page }) => {
+    test('legacy slug redirects and part deep link renders tablature', async ({ page }) => {
         // Legacy slug on purpose: angeline-the-baker redirects to
-        // angeline-baker (URL-stability promise) and /banjo expands the part.
-        // A bare #work/ URL shows the dashboard; the part deep link shows tab.
+        // angeline-baker (URL-stability promise); /banjo selects the part.
         await page.goto('/#work/angeline-the-baker/banjo');
-        await page.locator('.tablature-container').first().waitFor();
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
-        // Should have tablature container
         await expect(page.locator('.tablature-container').first()).toBeVisible();
+        await expect(page).toHaveURL(/#work\/angeline-baker/);
     });
 
     test('tablature renders stave rows with notes', async ({ page }) => {
         await page.goto('/#work/foggy-mountain-breakdown/mandolin');
-        await page.locator('.tablature-container').first().waitFor();
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
-        // Should have at least one row of tab
-        const staveRows = page.locator('.stave-row');
-        const rowCount = await staveRows.count();
+        const rowCount = await page.locator('.stave-row').count();
         expect(rowCount).toBeGreaterThanOrEqual(1);
 
-        // Should have note elements
-        const notes = page.locator('.note-text');
-        const noteCount = await notes.count();
+        const noteCount = await page.locator('.note-text').count();
         expect(noteCount).toBeGreaterThanOrEqual(5);
     });
 
-    test('work URL loads tablature directly', async ({ page }) => {
-        // angeline-baker is a tab-only work; part deep link expands the banjo tab
-        await page.goto('/#work/angeline-baker/banjo');
-        await page.locator('.tablature-container').first().waitFor();
-
-        // Tablature should be visible
-        await expect(page.locator('.tablature-container').first()).toBeVisible();
-
-        // Expand controls to access playback controls
-        await expandControls(page);
-        await expect(page.locator('.tab-play-btn')).toBeVisible();
-    });
-
-    test('tablature controls are present', async ({ page }) => {
+    test('playback controls live in the bottom band', async ({ page }) => {
         await page.goto('/#work/foggy-mountain-breakdown/mandolin');
-        await page.locator('.tablature-container').first().waitFor();
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
-        // Expand controls disclosure
-        await expandControls(page);
-
-        // Should have play button
-        const playBtn = page.locator('.tab-play-btn');
-        await expect(playBtn).toBeVisible();
-
-        // Should have tempo controls (display is now a span, not input)
-        await expect(page.locator('.tab-tempo-display')).toBeVisible();
-        await expect(page.locator('.tab-tempo-down')).toBeVisible();
-        await expect(page.locator('.tab-tempo-up')).toBeVisible();
+        const band = page.locator('#app-bottomband');
+        await expect(band).toBeVisible();
+        await expect(band.locator('.tab-play-btn')).toBeVisible();
+        await expect(band.locator('.tab-tempo-display')).toBeVisible();
+        await expect(band.locator('.tab-tempo-down')).toBeVisible();
+        await expect(band.locator('.tab-tempo-up')).toBeVisible();
     });
 
     test('tempo controls adjust tempo value', async ({ page }) => {
         await page.goto('/#work/foggy-mountain-breakdown/mandolin');
-        await page.locator('.tablature-container').first().waitFor();
-
-        // Expand controls disclosure
-        await expandControls(page);
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
         const tempoDisplay = page.locator('.tab-tempo-display');
-        const tempoUp = page.locator('.tab-tempo-up');
-        const tempoDown = page.locator('.tab-tempo-down');
+        const initial = parseInt(await tempoDisplay.textContent(), 10);
 
-        // Get initial tempo (now from text content, not input value)
-        const initialTempo = await tempoDisplay.textContent();
-        const initial = parseInt(initialTempo, 10);
-
-        // Click tempo up
-        await tempoUp.click();
+        await page.locator('.tab-tempo-up').click();
         await expect(tempoDisplay).toHaveText(String(initial + 5));
 
-        // Click tempo down twice
-        await tempoDown.click();
-        await tempoDown.click();
+        await page.locator('.tab-tempo-down').click();
+        await page.locator('.tab-tempo-down').click();
         await expect(tempoDisplay).toHaveText(String(initial - 5));
     });
 
     test('metronome toggle exists and is clickable', async ({ page }) => {
         await page.goto('/#work/foggy-mountain-breakdown/mandolin');
-        await page.locator('.tablature-container').first().waitFor();
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
-        // Expand controls disclosure
-        await expandControls(page);
-
-        // The checkbox may be hidden but the label/icon is visible
         const metronomeLabel = page.locator('.tab-metronome-toggle');
         const metronomeCheckbox = page.locator('.tab-metronome-checkbox');
 
-        // Check the label/toggle is visible
         await expect(metronomeLabel).toBeVisible({ timeout: 10000 });
 
-        // Toggle on by clicking the label
         await metronomeLabel.click();
         await expect(metronomeCheckbox).toBeChecked();
 
-        // Toggle off
         await metronomeLabel.click();
         await expect(metronomeCheckbox).not.toBeChecked();
     });
 
     test('key selector shows capo indicator', async ({ page }) => {
         await page.goto('/#work/foggy-mountain-breakdown/mandolin');
-        await page.locator('.tablature-container').first().waitFor();
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
         const keySelect = page.locator('.tab-key-select');
-        if (await keySelect.isVisible()) {
-            // Change to a different key
-            await keySelect.selectOption('A');
-            await page.waitForTimeout(100);
+        await expect(keySelect).toBeVisible();
 
-            // Capo indicator should update
-            const capoIndicator = page.locator('.tab-capo-indicator');
-            await expect(capoIndicator).toContainText(/Capo/);
-        }
+        await keySelect.selectOption('A');
+        await page.waitForTimeout(100);
+
+        await expect(page.locator('.tab-capo-indicator')).toContainText(/Capo/);
     });
 });
 
-test.describe('WorkView - Part Selector', () => {
-    test('part selector shows when multiple parts exist', async ({ page }) => {
-        // Find a work with multiple parts (lead sheet + tablature)
-        // cripple-creek has both lead sheet and tablature
-        await page.goto('/#song/cripple-creek');
-        await page.waitForTimeout(1000);
+test.describe('WorkView - Part Tabs', () => {
+    // lonesome-road-blues-1 has a chordful lead sheet and a banjo tab
+    // → two part tabs (many multi-part works have ABC-only lead sheets,
+    // which render notation instead of a .song-body)
+    const MULTI_PART_URL = '/#work/lonesome-road-blues-1';
 
-        // If the work has multiple parts, selector should be visible
-        const partSelector = page.locator('.part-selector');
-        const partTabs = page.locator('.part-tab');
+    test('segmented control shows when a work has multiple parts', async ({ page }) => {
+        await page.goto(MULTI_PART_URL);
+        await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
 
-        // Check if selector exists (may have 0 or more parts)
-        const count = await partTabs.count();
-        if (count > 1) {
-            await expect(partSelector).toBeVisible();
-        }
+        const partTabs = page.locator('#part-tabs .part-tab');
+        expect(await partTabs.count()).toBeGreaterThanOrEqual(2);
+        // The default (lead sheet) tab is active
+        await expect(page.locator('#part-tabs .part-tab.active')).toHaveCount(1);
+        await expect(page.locator('.song-body')).toBeVisible();
     });
 
-    test('clicking part tab switches content', async ({ page }) => {
-        await page.goto('/#song/cripple-creek');
-        await page.waitForTimeout(1000);
+    test('clicking a part tab switches content and updates the URL', async ({ page }) => {
+        await page.goto(MULTI_PART_URL);
+        await expect(page.locator('#part-tabs .part-tab').nth(1)).toBeVisible({ timeout: 15000 });
 
-        const partTabs = page.locator('.part-tab');
-        const count = await partTabs.count();
+        const secondTab = page.locator('#part-tabs .part-tab').nth(1);
+        const partId = await secondTab.getAttribute('data-part-id');
+        await secondTab.click();
 
-        if (count > 1) {
-            // Click second part tab
-            await partTabs.nth(1).click();
-            await page.waitForTimeout(300);
+        // Tab becomes active, tablature renders, URL carries the part id
+        await expect(secondTab).toHaveClass(/active/);
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
+        expect(page.url()).toContain(`#work/lonesome-road-blues-1/${partId}`);
 
-            // URL should update with part
-            expect(page.url()).toMatch(/#(work|song)\/cripple-creek\/parts\//);
-        }
+        // Switching back restores the lead sheet and tears down the band
+        await page.locator('#part-tabs .part-tab').first().click();
+        await expect(page.locator('.song-body')).toBeVisible();
+        await expect(page.locator('#app-bottomband')).toBeHidden();
+    });
+
+    test('part deep link selects that part directly', async ({ page }) => {
+        await page.goto(`${MULTI_PART_URL}/banjo`);
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
+
+        await expect(page.locator('#part-tabs .part-tab.active')).toContainText(/banjo/i);
     });
 });
 
 test.describe('WorkView - Tablature Playback', () => {
     test('play button toggles to pause state', async ({ page }) => {
         await page.goto('/#work/foggy-mountain-breakdown/mandolin');
-        await page.locator('.tablature-container').first().waitFor();
-
-        // Expand controls disclosure
-        await expandControls(page);
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
         const playBtn = page.locator('.tab-play-btn');
         const stopBtn = page.locator('.tab-stop-btn');
 
-        // Initial state
         await expect(playBtn).toContainText('Play');
         await expect(stopBtn).toBeDisabled();
 
-        // Click play - button state changes immediately
         await playBtn.click();
 
         await expect(playBtn).toContainText('Pause');
@@ -216,16 +154,11 @@ test.describe('WorkView - Tablature Playback', () => {
 
     test('stop button resets to initial state', async ({ page }) => {
         await page.goto('/#work/foggy-mountain-breakdown/mandolin');
-        await page.locator('.tablature-container').first().waitFor();
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
-        // Expand controls disclosure
-        await expandControls(page);
-
-        // Start playback
         await page.locator('.tab-play-btn').click();
         await expect(page.locator('.tab-stop-btn')).toBeEnabled();
 
-        // Stop
         await page.locator('.tab-stop-btn').click();
 
         await expect(page.locator('.tab-play-btn')).toContainText('Play');
@@ -233,5 +166,4 @@ test.describe('WorkView - Tablature Playback', () => {
     });
 });
 
-// Lead sheet tests are covered in song-view.spec.js
-// (key selector, transposition, Nashville mode, chord display modes)
+// Lead sheet controls (Key/Display/Info pills) are covered in song-view.spec.js

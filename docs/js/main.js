@@ -36,7 +36,7 @@ import {
     clearListView, renderListsModal, createList, addSongToList, getViewingListId,
     showListView, fetchListData, renderManageListsView, showSongListsView, startCreateListInView,
     // Favorites functions (favorites is now just a list)
-    showFavorites, updateFavoritesCount, getFavoritesList, isFavorite, toggleFavorite,
+    showFavorites, getFavoritesList, isFavorite, toggleFavorite,
     updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
 import { initSongView, goBack, getCurrentSong, toggleFullscreen, exitFullscreen, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';

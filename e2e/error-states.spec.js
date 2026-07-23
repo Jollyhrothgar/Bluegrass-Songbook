@@ -2,38 +2,25 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Invalid URLs', () => {
-    test('invalid song URL shows error or redirects', async ({ page }) => {
-        // Navigate to a non-existent song
+    test('invalid song URL shows a not-found state with a way out', async ({ page }) => {
+        // Navigate to a non-existent song (redirects to the #work form first)
         await page.goto('/#song/this-song-does-not-exist-12345');
-        await page.waitForTimeout(2000);
 
-        // Should either show error message, landing page, or redirect to search
-        const errorMessage = page.locator('.error, .not-found, #error-message');
-        const searchContainer = page.locator('.search-container');
-        const landingPage = page.locator('#landing-page');
-
-        // One of these should be visible
-        const hasError = await errorMessage.isVisible().catch(() => false);
-        const hasSearch = await searchContainer.isVisible().catch(() => false);
-        const hasLanding = await landingPage.isVisible().catch(() => false);
-
-        expect(hasError || hasSearch || hasLanding).toBeTruthy();
+        const notFound = page.locator('.not-found');
+        await expect(notFound).toBeVisible({ timeout: 15000 });
+        await expect(notFound).toContainText(/not found/i);
+        // Escape hatch back to browsing
+        await expect(notFound.locator('.not-found-home-link')).toBeVisible();
     });
 
-    test('invalid work URL shows error or redirects', async ({ page }) => {
+    test('invalid work URL shows a not-found state', async ({ page }) => {
         await page.goto('/#work/nonexistent-work-slug');
-        await page.waitForTimeout(1000);
 
-        // Should handle gracefully
-        const errorMessage = page.locator('.error, .not-found, #error-message');
-        const searchContainer = page.locator('.search-container');
-        const landingPage = page.locator('#landing-page');
+        await expect(page.locator('.not-found')).toBeVisible({ timeout: 15000 });
 
-        const hasError = await errorMessage.isVisible().catch(() => false);
-        const hasSearch = await searchContainer.isVisible().catch(() => false);
-        const hasLanding = await landingPage.isVisible().catch(() => false);
-
-        expect(hasError || hasSearch || hasLanding).toBeTruthy();
+        // The escape link leads back to search
+        await page.locator('.not-found-home-link').click();
+        await expect(page.locator('.search-container')).toBeVisible();
     });
 
     test('malformed hash URL handled gracefully', async ({ page }) => {
@@ -78,10 +65,8 @@ test.describe('Empty States', () => {
         // navigation done before it (sub-second for users, a race for tests)
         await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
 
-        // Open sidebar and go to favorites
-        await page.locator('#hamburger-btn').click();
-        await expect(page.locator('.sidebar.open')).toBeVisible();
-        await page.locator('#nav-favorites').click();
+        // Go to favorites via the top band
+        await page.locator('.topbar-nav-link[data-nav="favorites"]').click();
 
         // Should show 0 favorites
         await expect(page.locator('#search-stats')).toContainText('0');
@@ -110,10 +95,8 @@ test.describe('Empty States', () => {
         await expect(page.locator('.list-picker-popup')).toBeVisible({ timeout: 5000 });
         await page.locator('.list-picker-popup .favorites-option input').click();
 
-        // Navigate to favorites via sidebar
-        await page.locator('#hamburger-btn').click();
-        await expect(page.locator('.sidebar.open')).toBeVisible();
-        await page.locator('#nav-favorites').click();
+        // Navigate to favorites via the top band
+        await page.locator('.topbar-nav-link[data-nav="favorites"]').click();
         await page.waitForTimeout(500);
 
         // Should show 1 song

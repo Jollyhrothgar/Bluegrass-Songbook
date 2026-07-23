@@ -122,7 +122,6 @@ export function undo() {
         redoStack.push(action);
         showUndoToast(`Undid: ${action.description}`, true);
         renderManageListsView();
-        updateFavoritesCount();
         // Refresh current list view if viewing the affected list
         if (viewingListId && action.data?.listId === viewingListId) {
             showListView(viewingListId);
@@ -147,7 +146,6 @@ export function redo() {
         undoStack.push(action);
         showUndoToast(`Redid: ${action.description}`, true);
         renderManageListsView();
-        updateFavoritesCount();
         // Refresh current list view if viewing the affected list
         if (viewingListId && action.data?.listId === viewingListId) {
             showListView(viewingListId);
@@ -690,7 +688,6 @@ let followedLists = [];
 // Note: Result picker now uses unified ListPicker component from list-picker.js
 
 // Nav element for favorites count badge
-let navFavoritesCountEl = null;
 
 // ============================================
 // FAVORITES (as a special list)
@@ -764,7 +761,6 @@ export function toggleFavorite(songId, skipUndo = false) {
     }
 
     saveLists();
-    updateFavoritesCount();
 
     // Re-render if currently viewing favorites
     if (viewingListId === FAVORITES_LIST_ID || viewingListId === 'favorites') {
@@ -790,22 +786,6 @@ export function reorderFavoriteItem(fromIndex, toIndex) {
     const favList = getFavoritesList();
     if (!favList) return false;
     return reorderSongInList(FAVORITES_LIST_ID, fromIndex, toIndex);
-}
-
-/**
- * Update the favorites count badge in the nav
- */
-export function updateFavoritesCount() {
-    if (!navFavoritesCountEl) {
-        navFavoritesCountEl = document.getElementById('nav-favorites-count');
-    }
-    if (!navFavoritesCountEl) return;
-
-    const favList = getFavoritesList();
-    const count = favList ? favList.songs.length : 0;
-
-    navFavoritesCountEl.textContent = count.toString();
-    navFavoritesCountEl.classList.toggle('hidden', count === 0);
 }
 
 /**
@@ -1921,7 +1901,6 @@ export async function performFullListsSync() {
         // Update local lists with processed data
         setUserLists(processedLists);
         saveLists();
-        updateFavoritesCount();
 
         // Also load followed lists
         await loadFollowedLists();
@@ -1947,7 +1926,6 @@ export function handleListsSignOut() {
     followedLists = [];
     setUserLists([]);
     localStorage.removeItem('songbook-lists');
-    updateFavoritesCount();
 }
 
 /**
@@ -3235,10 +3213,8 @@ export function initLists(options) {
 
     // Clean up legacy song IDs (async, runs in background)
     cleanupLegacySongIds().then(() => {
-        updateFavoritesCount();
     });
 
-    updateFavoritesCount();
 
     // Initialize undo/redo keyboard shortcuts
     initUndoKeyboardShortcuts();
