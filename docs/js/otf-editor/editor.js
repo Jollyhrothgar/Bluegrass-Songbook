@@ -7,7 +7,7 @@ import { EditorState, EditorMode, DURATIONS, TICKS_PER_BEAT } from './state.js';
 import { EditorCursor, positionFromSvgPoint } from './cursor.js';
 import {
     prepareCompactNotation, readingListTimeline, TimelineTiming,
-    maxMeasureIn, makePlaybackToVisualMapper,
+    maxMeasureIn, makePlaybackToVisualMapper, densifyNotation,
 } from '../renderers/measure-timing.js';
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar } from './toolbar.js';
@@ -754,6 +754,11 @@ export class OTFEditor {
         let notation = this.state.getNotation();
 
         if (!track || !notation) return;
+
+        // OTF omits silent measures; render them as empty bars (display
+        // copy only — the document stays sparse, and editing one goes
+        // through getOrCreateMeasure as usual).
+        notation = densifyNotation(notation, maxMeasureIn(this.state.otf.notation));
 
         // Repeat signs / ending brackets derive from the reading list;
         // compact presentation keeps WRITTEN numbering (identity), so

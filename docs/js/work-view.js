@@ -38,7 +38,7 @@ import {
     TimelineTiming, identityTimeline, readingListTimeline,
     expandNotation, makePlaybackToVisualMapper,
     maxMeasureIn, measureTimingFromOtf,
-    analyzeReadingList, prepareCompactNotation,
+    analyzeReadingList, prepareCompactNotation, densifyNotation,
 } from './renderers/index.js';
 import { clearListView } from './lists.js';
 import { getTagCategory, formatTagName } from './tags.js';
@@ -1706,6 +1706,9 @@ async function renderTablaturePart(part, container) {
 
             if (isMandolin && !isLead) continue;
 
+            // OTF omits silent measures; fill them so empty bars render
+            // (through the ALL-track max, keeping tracks time-aligned).
+            notation = densifyNotation(notation, maxMeasureIn(otf.notation));
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
                 notation = prepareCompactNotation(notation, otf.reading_list);
             } else if (otf.reading_list && otf.reading_list.length > 0) {

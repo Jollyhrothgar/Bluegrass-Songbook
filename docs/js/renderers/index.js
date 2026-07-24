@@ -117,6 +117,7 @@ export {
     identityTimeline,
     readingListTimeline,
     expandNotation,
+    densifyNotation,
     makePlaybackToVisualMapper,
     buildMetronomeSchedule,
     maxMeasureIn,

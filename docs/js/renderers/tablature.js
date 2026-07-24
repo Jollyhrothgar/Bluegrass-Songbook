@@ -603,13 +603,32 @@ export class TabRenderer {
         const adjustedHeight = height + endingHeight;
 
         // Per-measure geometry (ts-change aware). Edge adornments grow the
-        // measure by their footprint — the note area never shrinks.
-        let xCursor = opt.leftMargin;
-        const measureGeoms = measures.map(m => {
+        // measure by their footprint — the note area never shrinks below
+        // the fit factor computed here: rows are packed by count at the
+        // base width, so a row carrying adornments (time signature,
+        // repeat signs) would otherwise overflow the container and clip.
+        // Absorb the excess by scaling this row's base widths down — but
+        // never below the editor's grid floor, whose overflow is
+        // deliberate (rows scroll).
+        const prelim = measures.map(m => {
             const ticks = this.timing.ticksAt(m.measure);
             const signatureMark = this._signatureMarkFor(m.measure);
             const adorn = this._adornmentsFor(m, signatureMark);
-            const baseWidth = this._measureWidthFor(ticks);
+            return { ticks, signatureMark, adorn, base: this._measureWidthFor(ticks) };
+        });
+        const adornTotal = prelim.reduce((s, p) => s + p.adorn.leading + p.adorn.trailing, 0);
+        const baseTotal = prelim.reduce((s, p) => s + p.base, 0);
+        const rowAvailable = (this.container.clientWidth || 800) - opt.leftMargin - 20;
+        let fit = 1;
+        if (adornTotal > 0 && baseTotal + adornTotal > rowAvailable) {
+            fit = Math.max(0.5, (rowAvailable - adornTotal) / baseTotal);
+        }
+        const minBase = Math.max(60, opt.measureWidthFloor || 0);
+
+        let xCursor = opt.leftMargin;
+        const measureGeoms = measures.map((m, i) => {
+            const { ticks, signatureMark, adorn } = prelim[i];
+            const baseWidth = Math.max(minBase, Math.floor(prelim[i].base * fit));
             const geomWidth = baseWidth + adorn.leading + adorn.trailing;
             const noteW = baseWidth - 30;
             // Visual centering: proportional layout leaves the last note's

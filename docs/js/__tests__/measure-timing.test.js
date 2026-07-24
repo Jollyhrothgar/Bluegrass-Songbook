@@ -19,6 +19,7 @@ import {
     readingListTimeline,
     TimelineTiming,
     expandNotation,
+    densifyNotation,
     makePlaybackToVisualMapper,
     buildMetronomeSchedule,
     analyzeReadingList,
@@ -174,11 +175,14 @@ describe('expandNotation', () => {
     it('preserves timeline slots for measures missing from a sparse track', () => {
         // 27493 shape: mandolin has nothing in measures 1-5; before the fix
         // expansion renumbered its first measure to 1, playing it 5 measures
-        // early relative to the other tracks.
+        // early relative to the other tracks. Silent slots now come out as
+        // EMPTY entries so the renderer draws the silent bar instead of
+        // collapsing it (Welcome to New York m30-31).
         const tl = identityTimeline(3);
         const out = expandNotation(notation, tl);
-        expect(out.map(m => m.measure)).toEqual([2, 3]);
-        expect(out.map(m => m.originalMeasure)).toEqual([2, 3]);
+        expect(out.map(m => m.measure)).toEqual([1, 2, 3]);
+        expect(out.map(m => m.originalMeasure)).toEqual([1, 2, 3]);
+        expect(out[0].events).toEqual([]);
     });
 
     it('unrolls repeats and keeps original refs', () => {
@@ -187,11 +191,47 @@ describe('expandNotation', () => {
             { from_measure: 2, to_measure: 3 },
         ], 3);
         const out = expandNotation(notation, tl);
-        // slots: d1<-1 (missing), d2<-2, d3<-3, d4<-2, d5<-3
+        // slots: d1<-1 (silent -> empty entry), d2<-2, d3<-3, d4<-2, d5<-3
         expect(out.map(m => [m.measure, m.originalMeasure])).toEqual(
-            [[2, 2], [3, 3], [4, 2], [5, 3]]);
+            [[1, 1], [2, 2], [3, 3], [4, 2], [5, 3]]);
+        expect(out[0].events).toEqual([]);
         // events are cloned refs, not renumbered
-        expect(out[2].events[0].tick).toBe(0);
+        expect(out[3].events[0].tick).toBe(0);
+    });
+});
+
+describe('densifyNotation', () => {
+    it('fills written-measure gaps with empty entries', () => {
+        // Welcome to New York: m30-31 have no events, so the parser omits
+        // them; the display copy must still show the silent bars.
+        const notation = [
+            { measure: 1, events: [{ tick: 0, notes: [{ s: 1, f: 0 }] }] },
+            { measure: 4, events: [{ tick: 0, notes: [{ s: 2, f: 2 }] }] },
+        ];
+        const out = densifyNotation(notation);
+        expect(out.map(m => m.measure)).toEqual([1, 2, 3, 4]);
+        expect(out[1].events).toEqual([]);
+        expect(out[2].events).toEqual([]);
+        expect(out[0]).toBe(notation[0]); // present entries pass through
+    });
+
+    it('fills a silent tail up to maxMeasure for cross-track alignment', () => {
+        const notation = [{ measure: 1, events: [] }];
+        const out = densifyNotation(notation, 3);
+        expect(out.map(m => m.measure)).toEqual([1, 2, 3]);
+    });
+
+    it('returns already-dense notation untouched', () => {
+        const notation = [
+            { measure: 1, events: [] },
+            { measure: 2, events: [] },
+        ];
+        expect(densifyNotation(notation)).toBe(notation);
+    });
+
+    it('handles empty input', () => {
+        expect(densifyNotation([])).toEqual([]);
+        expect(densifyNotation(null)).toBeNull();
     });
 });
 
