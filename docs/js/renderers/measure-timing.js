@@ -387,7 +387,13 @@ export function prepareCompactNotation(notation, readingList) {
         const enhanced = { ...measure };
         if (analysis.repeatStartMarkers.has(m)) enhanced.repeatStart = true;
         if (analysis.repeatEndMarkers.has(m)) enhanced.repeatEnd = true;
-        if (analysis.endings[m]) enhanced.ending = analysis.endings[m];
+        if (analysis.endings[m]) {
+            enhanced.ending = analysis.endings[m];
+            // Mark the first measure of a contiguous ending run so the renderer
+            // labels the volta once at its start (a long ending spanning rows
+            // otherwise re-stamps "N." on every row).
+            if (analysis.endings[m - 1] !== analysis.endings[m]) enhanced.endingStart = true;
+        }
         return enhanced;
     });
 }

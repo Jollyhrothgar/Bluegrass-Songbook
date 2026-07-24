@@ -390,5 +390,23 @@ describe('analyzeReadingList — overlapping D.S.-style lists (27493)', () => {
         expect(a.endings[28]).toBe(1);
         expect(a.endings[48]).toBe(1);
         expect(a.endings[49]).toBe(2);
+
+        // The long (21-bar) Part B 1st ending must be LABELLED once, at its
+        // start (m28), not on every bar — endingStart marks only the 4 real
+        // volta starts so the renderer stamps "N." there and continues the
+        // bracket unlabelled across rows.
+        const rl = [
+            { from_measure: 1, to_measure: 3 }, { from_measure: 4, to_measure: 12 },
+            { from_measure: 5, to_measure: 11 }, { from_measure: 13, to_measure: 31 },
+            { from_measure: 32, to_measure: 48 }, { from_measure: 14, to_measure: 27 },
+            { from_measure: 49, to_measure: 50 },
+        ];
+        const notation = Array.from({ length: 50 }, (_, i) => ({ measure: i + 1, events: [] }));
+        const compact = prepareCompactNotation(notation, rl);
+        const starts = compact.filter(m => m.endingStart).map(m => m.measure);
+        expect(starts).toEqual([12, 13, 28, 49]);
+        // interior ending bars carry `ending` but NOT `endingStart`
+        expect(compact[28].ending).toBe(1);          // m29
+        expect(compact[28].endingStart).toBeUndefined();
     });
 });

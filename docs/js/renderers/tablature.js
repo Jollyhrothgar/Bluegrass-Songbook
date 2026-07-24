@@ -745,7 +745,10 @@ export class TabRenderer {
                     runEnd++;
                 }
                 const runWidth = (measureGeoms[runEnd].x + measureGeoms[runEnd].width) - x;
-                this.drawEndingBracket(svg, x, runWidth, opt.topMargin, measure.ending, opt);
+                // Label only at the volta's true start; continuation runs on
+                // later rows draw the bracket line without re-stamping "N."
+                this.drawEndingBracket(svg, x, runWidth, opt.topMargin, measure.ending,
+                    opt, !!measure.endingStart);
             }
 
             // Time-signature glyph at signature changes (and measure 1)
@@ -1064,23 +1067,28 @@ export class TabRenderer {
     /**
      * Draw ending bracket with number (e.g., [1.  or [2. )
      */
-    drawEndingBracket(svg, x, measureWidth, topY, endingNumber, opt) {
+    drawEndingBracket(svg, x, measureWidth, topY, endingNumber, opt, showLabel = true) {
         const bracketY = topY - 25;  // Position above the measure number
         const bracketHeight = 10;
 
-        // Left vertical line of bracket
-        svg.appendChild(this.createLine(x + 2, bracketY, x + 2, bracketY + bracketHeight, opt.measureLineColor));
+        // Left vertical hook only at the volta's start (continuation runs on
+        // later rows are just a horizontal line).
+        if (showLabel) {
+            svg.appendChild(this.createLine(x + 2, bracketY, x + 2, bracketY + bracketHeight, opt.measureLineColor));
+        }
 
         // Horizontal line
         svg.appendChild(this.createLine(x + 2, bracketY, x + measureWidth - 5, bracketY, opt.measureLineColor));
 
-        // Ending number
-        const label = this.createText(x + 10, bracketY + bracketHeight - 2, `${endingNumber}.`, {
-            fontSize: '11px',
-            fill: opt.measureLineColor,
-            fontWeight: '600'
-        });
-        svg.appendChild(label);
+        // Ending number — only at the start of the ending
+        if (showLabel) {
+            const label = this.createText(x + 10, bracketY + bracketHeight - 2, `${endingNumber}.`, {
+                fontSize: '11px',
+                fill: opt.measureLineColor,
+                fontWeight: '600'
+            });
+            svg.appendChild(label);
+        }
     }
 
     /**
