@@ -81,10 +81,11 @@ test.describe('WorkView - Tablature', () => {
         await page.goto('/#work/foggy-mountain-breakdown/mandolin');
         await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
-        const keySelect = page.locator('.tab-key-select');
-        await expect(keySelect).toBeVisible();
+        const keyPill = page.locator('.tab-key-pill');
+        await expect(keyPill).toBeVisible();
 
-        await keySelect.selectOption('A');
+        await keyPill.locator('.pill-btn').click();
+        await keyPill.locator('.pill-key-btn', { hasText: /^A$/ }).click();
         await page.waitForTimeout(100);
 
         await expect(page.locator('.tab-capo-indicator')).toContainText(/Capo/);

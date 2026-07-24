@@ -9525,3 +9525,19 @@ body.has-list-context.has-bottomband .container {
     border-color: var(--accent);
     color: #fff;
 }
+
+/* Pill popovers hosted in the bottom band open upward */
+.app-bottomband .pill-popover {
+    top: auto;
+    bottom: calc(100% + 6px);
+}
+
+.tab-key-pill .pill-popover {
+    min-width: 220px;
+}
+
+/* The key pill lives inside a qc-group whose overflow:hidden (rounded
+   button cluster) would clip its drop-up popover */
+.qc-group:has(.tab-key-pill) {
+    overflow: visible;
+}

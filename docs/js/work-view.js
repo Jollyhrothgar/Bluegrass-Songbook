@@ -1551,24 +1551,22 @@ async function renderTablaturePart(part, container) {
             });
         });
 
-        // Wire up repeat notation select (re-renders with repeat signs
+        // Wire up repeat notation buttons (re-renders with repeat signs
         // or unrolled)
-        const repeatSelect = controls.querySelector('.tab-repeat-select');
-        if (repeatSelect) {
-            repeatSelect.addEventListener('change', () => {
-                showRepeatsCompact = repeatSelect.value === 'repeats';
+        controls.querySelectorAll('.tab-repeat-group .pill-mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                showRepeatsCompact = btn.dataset.val === 'repeats';
                 renderTablaturePart(part, container);
             });
-        }
+        });
 
-        // Wire up two-feel toggle (cut-time presentation, re-render)
-        const feelSelect = controls.querySelector('.tab-feel-select');
-        if (feelSelect) {
-            feelSelect.addEventListener('change', () => {
-                twoFeelMode = feelSelect.value === 'two';
+        // Wire up two-feel buttons (cut-time presentation, re-render)
+        controls.querySelectorAll('.tab-feel-group .pill-mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                twoFeelMode = btn.dataset.val === 'two';
                 renderTablaturePart(part, container);
             });
-        }
+        });
 
         const leadRenderer = trackRenderers[leadTrackId] || Object.values(trackRenderers)[0];
         setupTablaturePlayer(otf, controls, leadRenderer);
@@ -1711,31 +1709,23 @@ function createTablatureControls(otf, part) {
     ` : '';
 
     const hasReadingList = otf.reading_list && otf.reading_list.length > 0;
+    // Segmented buttons, not native selects — mobile browsers float select
+    // menus over the band at odd sizes; buttons match the pill design.
     const repeatToggleHtml = hasReadingList ? `
-        <div class="qc-group">
-            <select class="tab-repeat-select qc-key-btn" title="Repeat notation: unrolled or repeat signs">
-                <option value="unrolled" ${showRepeatsCompact ? '' : 'selected'}>Unrolled</option>
-                <option value="repeats" ${showRepeatsCompact ? 'selected' : ''}>Repeats</option>
-            </select>
+        <div class="qc-group pill-mode-group tab-repeat-group" title="Repeat notation: unrolled or repeat signs">
+            <button class="pill-mode-btn ${showRepeatsCompact ? '' : 'active'}" data-val="unrolled">Unrolled</button>
+            <button class="pill-mode-btn ${showRepeatsCompact ? 'active' : ''}" data-val="repeats">Repeats</button>
         </div>
     ` : '';
 
-    // Feel selector (4/4 tunes only): explicit dropdown, no ambiguous
+    // Feel selector (4/4 tunes only): explicit buttons, no ambiguous
     // toggle state
     const feelToggleHtml = (otf.metadata?.time_signature || '4/4') === '4/4' ? `
-        <div class="qc-group">
-            <select class="tab-feel-select qc-key-btn" title="Rhythmic feel: quarter-note pulse or cut time (BPM counts the feel's beat)">
-                <option value="four" ${twoFeelMode ? '' : 'selected'}>Four feel</option>
-                <option value="two" ${twoFeelMode ? 'selected' : ''}>Two feel</option>
-            </select>
+        <div class="qc-group pill-mode-group tab-feel-group" title="Rhythmic feel: quarter-note pulse or cut time (BPM counts the feel's beat)">
+            <button class="pill-mode-btn ${twoFeelMode ? '' : 'active'}" data-val="four">Four feel</button>
+            <button class="pill-mode-btn ${twoFeelMode ? 'active' : ''}" data-val="two">Two feel</button>
         </div>
     ` : '';
-
-    const keyOptions = CHROMATIC_MAJOR_KEYS.map(k => {
-        const capo = (CHROMATIC_MAJOR_KEYS.indexOf(k) - CHROMATIC_MAJOR_KEYS.indexOf(originalKey) + 12) % 12;
-        const capoLabel = capo === 0 ? '' : ` (Capo ${capo})`;
-        return `<option value="${k}" data-capo="${capo}" ${k === originalKey ? 'selected' : ''}>${k}${capoLabel}</option>`;
-    }).join('');
 
     const controls = document.createElement('div');
     controls.className = 'tab-controls';
@@ -1747,9 +1737,7 @@ function createTablatureControls(otf, part) {
         </div>
         <div class="qc-group qc-key-group">
             <button class="tab-key-down qc-btn" title="Transpose down">−</button>
-            <select class="tab-key-select qc-key-btn" title="Select key">
-                ${keyOptions}
-            </select>
+            <span class="tab-key-slot"></span>
             <button class="tab-key-up qc-btn" title="Transpose up">+</button>
         </div>
         <div class="qc-group">
@@ -1779,6 +1767,41 @@ function createTablatureControls(otf, part) {
         ${trackMixerHtml}
     `;
 
+    // Key picker: a pill with a drop-up key grid (replaces the native
+    // select). Exposes a tiny API on the controls element so
+    // setupTablaturePlayer can read the capo and step keys.
+    const keys = CHROMATIC_MAJOR_KEYS;
+    const origIdx = Math.max(0, keys.indexOf(originalKey));
+    let keyIdx = origIdx;
+    const capoOf = (i) => (i - origIdx + 12) % 12;
+    const changeListeners = [];
+
+    const keyPill = pill(keys[keyIdx], (pop, api) => {
+        pop.innerHTML = `<div class="pill-key-grid">${keys.map((k, i) => `
+            <button class="pill-key-btn ${i === keyIdx ? 'active' : ''}" data-idx="${i}"
+                title="${capoOf(i) ? `Capo ${capoOf(i)}` : 'Open'}">${k}</button>`).join('')}</div>`;
+        pop.querySelectorAll('.pill-key-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setKeyIdx(parseInt(btn.dataset.idx, 10));
+                api.close();
+            });
+        });
+    }, { className: 'tab-key-pill', title: 'Select key' });
+
+    const setKeyIdx = (i) => {
+        keyIdx = Math.max(0, Math.min(keys.length - 1, i));
+        keyPill.pillApi.setLabel(keys[keyIdx]);
+        keyPill.pillApi.refresh();
+        changeListeners.forEach(cb => cb());
+    };
+
+    controls.querySelector('.tab-key-slot').replaceWith(keyPill);
+    controls._tabKey = {
+        get capo() { return capoOf(keyIdx); },
+        step: (delta) => setKeyIdx(keyIdx + delta),
+        onChange: (cb) => changeListeners.push(cb),
+    };
+
     return controls;
 }
 
@@ -1798,7 +1821,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
     const tempoDisplay = controls.querySelector('.tab-tempo-display');
     const tempoDown = controls.querySelector('.tab-tempo-down');
     const tempoUp = controls.querySelector('.tab-tempo-up');
-    const keySelect = controls.querySelector('.tab-key-select');
+    const tabKey = controls._tabKey;
     const keyDown = controls.querySelector('.tab-key-down');
     const keyUp = controls.querySelector('.tab-key-up');
     const capoIndicator = controls.querySelector('.tab-capo-indicator');
@@ -1876,21 +1899,14 @@ function setupTablaturePlayer(otf, controls, renderer) {
         capoIndicator.textContent = currentCapo > 0 ? `Capo ${currentCapo}` : '';
     };
 
-    const selectKeyByIndex = (index) => {
-        const options = keySelect.options;
-        const newIndex = Math.max(0, Math.min(options.length - 1, index));
-        keySelect.selectedIndex = newIndex;
-        currentCapo = parseInt(options[newIndex].dataset.capo, 10) || 0;
-        updateCapoIndicator();
-    };
-
-    keySelect?.addEventListener('change', () => {
-        currentCapo = parseInt(keySelect.options[keySelect.selectedIndex].dataset.capo, 10) || 0;
+    // Key state lives with the key pill (created in createTablatureControls)
+    tabKey?.onChange(() => {
+        currentCapo = tabKey.capo;
         updateCapoIndicator();
     });
 
-    keyDown?.addEventListener('click', () => selectKeyByIndex(keySelect.selectedIndex - 1));
-    keyUp?.addEventListener('click', () => selectKeyByIndex(keySelect.selectedIndex + 1));
+    keyDown?.addEventListener('click', () => tabKey?.step(-1));
+    keyUp?.addEventListener('click', () => tabKey?.step(1));
 
     // Position updates — also SELF-HEAL the play button from player
     // truth: optimistic UI plus loop restarts and view switches can
