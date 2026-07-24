@@ -9492,3 +9492,36 @@ body.has-list-context.has-bottomband .container {
         padding: 0.25rem 0;
     }
 }
+
+/* Segmented mode buttons inside pill popovers (replaces native selects,
+   whose menus render at odd sizes over the popover on mobile) */
+.pill-mode-label {
+    font-size: var(--font-xs);
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.pill-mode-group {
+    display: flex;
+    gap: 4px;
+}
+
+.pill-mode-btn {
+    flex: 1;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+    color: var(--text);
+    border-radius: 999px;
+    font-size: var(--font-sm);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.pill-mode-btn:hover { border-color: var(--accent); }
+
+.pill-mode-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}

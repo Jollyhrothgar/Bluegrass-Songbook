@@ -84,13 +84,13 @@ test.describe('Song View', () => {
 
     test('chord display mode "none" hides chords (Display pill)', async ({ page }) => {
         const popover = await openPill(page, 'display-pill');
-        const select = popover.locator('#pill-chord-mode');
+        const modeGroup = popover.locator('#pill-chord-mode');
 
-        await select.selectOption('none');
+        await modeGroup.locator('[data-mode="none"]').click();
         await page.waitForTimeout(200);
         await expect(chords(page)).toHaveCount(0);
 
-        await select.selectOption('all');
+        await modeGroup.locator('[data-mode="all"]').click();
         await page.waitForTimeout(200);
         expect(await chords(page).count()).toBeGreaterThan(0);
     });

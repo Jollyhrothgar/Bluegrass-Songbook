@@ -167,13 +167,13 @@ export function buildDisplayPill() {
                 <label class="qc-checkbox"><input type="checkbox" id="pill-sections" ${showSectionLabels ? 'checked' : ''}> Section labels</label>
                 <label class="qc-checkbox"><input type="checkbox" id="pill-compact" ${compactMode ? 'checked' : ''}> Compact</label>
             </div>
-            <div class="pill-section qc-dropdown-row">
-                <label>Chords</label>
-                <select id="pill-chord-mode" class="qc-select">
-                    <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All</option>
-                    <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First Only</option>
-                    <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>None</option>
-                </select>
+            <div class="pill-section">
+                <div class="pill-mode-label">Chords</div>
+                <div class="pill-mode-group" id="pill-chord-mode" role="group" aria-label="Chord display">
+                    <button class="pill-mode-btn ${chordDisplayMode === 'all' ? 'active' : ''}" data-mode="all">All</button>
+                    <button class="pill-mode-btn ${chordDisplayMode === 'first' ? 'active' : ''}" data-mode="first">First only</button>
+                    <button class="pill-mode-btn ${chordDisplayMode === 'none' ? 'active' : ''}" data-mode="none">None</button>
+                </div>
             </div>
         `;
 
@@ -187,7 +187,16 @@ export function buildDisplayPill() {
         container.querySelector('#pill-twocol').addEventListener('change', (e) => setTwoColumnMode(e.target.checked));
         container.querySelector('#pill-sections').addEventListener('change', (e) => setShowSectionLabels(e.target.checked));
         container.querySelector('#pill-compact').addEventListener('change', (e) => setCompactMode(e.target.checked));
-        container.querySelector('#pill-chord-mode').addEventListener('change', (e) => setChordDisplayMode(e.target.value));
+        // Segmented buttons instead of a native <select>: consistent pill
+        // styling everywhere (mobile browsers render select menus at odd
+        // sizes floating over the popover)
+        container.querySelectorAll('#pill-chord-mode .pill-mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setChordDisplayMode(btn.dataset.mode);
+                container.querySelectorAll('#pill-chord-mode .pill-mode-btn').forEach(b =>
+                    b.classList.toggle('active', b === btn));
+            });
+        });
     }, { id: 'display-pill', title: 'Display options' });
 }
 
