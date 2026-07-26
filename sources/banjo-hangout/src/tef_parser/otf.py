@@ -32,6 +32,26 @@ FINGERING_MAP = {
     0x12: 'M',  # Middle
 }
 
+# V3 note byte 10 packs BOTH hands base-6: value = 6*pluck + lh_code.
+# pluck 1..5 = picking finger (T I M R P; MusicXML pluck p i m a c),
+# lh_code 0 = none, else fretting digit = lh_code - 1 (so '3' -> 4).
+# Oracle-verified against TablEdit's MusicXML <pluck>/<fingering> on
+# Welcome to New York (37/37 notes match, incl. combined values like
+# 0x0b = p + finger 4 and 0x0a = p + finger 3).
+V3_PLUCK_LETTERS = {1: 'T', 2: 'I', 3: 'M', 4: 'R', 5: 'P'}
+
+
+def v3_fingering(event: TEFNoteEvent) -> tuple[str | None, int | None]:
+    """Decode (pluck_letter, left_hand_digit) from a V3 note's byte 10."""
+    raw = event.raw_data
+    b10 = raw[10] if raw and len(raw) >= 12 else 0
+    if not 0 < b10 <= 35:
+        return None, None
+    pluck = V3_PLUCK_LETTERS.get(b10 // 6)
+    lh_code = b10 % 6
+    lh = lh_code - 1 if lh_code else None
+    return pluck, lh
+
 
 @dataclass
 class OTFNote:
@@ -39,7 +59,8 @@ class OTFNote:
     s: int           # String number (1 = highest pitch)
     f: int           # Fret number (0 = open)
     tech: str | None = None    # Technique code (h, p, /, etc.)
-    finger: str | None = None  # Fingering annotation (T, I, M)
+    finger: str | None = None  # Picking-hand fingering (T, I, M, R, P)
+    lh: int | None = None      # Fretting-hand digit (0-4), circled in display
     dur: int | None = None     # Duration in ticks (for sustained notes)
     tie: bool = False          # True if tied to previous note (no re-articulation)
 
@@ -94,6 +115,15 @@ class OTFReadingListEntry:
     """Reading list entry for playback order."""
     from_measure: int
     to_measure: int
+    name: str = ""   # Optional section label ("Intro", "Part A1", ...)
+
+
+@dataclass
+class OTFAnnotation:
+    """A placed free-text annotation ("Long Choke", chord letters, ...)."""
+    measure: int     # 1-indexed written measure
+    tick: int        # Tick offset within the measure
+    text: str
 
 
 @dataclass
@@ -104,6 +134,7 @@ class OTFDocument:
     timing: OTFTiming = field(default_factory=OTFTiming)
     tracks: list[OTFTrack] = field(default_factory=list)
     notation: dict[str, list[OTFMeasure]] = field(default_factory=dict)
+    annotations: list[OTFAnnotation] = field(default_factory=list)
     reading_list: list[OTFReadingListEntry] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
@@ -153,6 +184,8 @@ class OTFDocument:
                             n["tech"] = note.tech
                         if note.finger:
                             n["finger"] = note.finger
+                        if note.lh is not None:
+                            n["lh"] = note.lh
                         if note.dur:
                             n["dur"] = note.dur
                         if note.tie:
@@ -161,12 +194,21 @@ class OTFDocument:
                     m["events"].append(e)
                 result["notation"][track_id].append(m)
 
+        # Add placed free-text annotations if present
+        if self.annotations:
+            result["annotations"] = [
+                {"measure": a.measure, "tick": a.tick, "text": a.text}
+                for a in self.annotations
+            ]
+
         # Add reading list if present
         if self.reading_list:
-            result["reading_list"] = [
-                {"from_measure": e.from_measure, "to_measure": e.to_measure}
-                for e in self.reading_list
-            ]
+            result["reading_list"] = []
+            for e in self.reading_list:
+                entry = {"from_measure": e.from_measure, "to_measure": e.to_measure}
+                if e.name:
+                    entry["name"] = e.name
+                result["reading_list"].append(entry)
 
         return result
 
@@ -470,6 +512,46 @@ def compute_articulations_v3(
     return articulations
 
 
+def bend_destination_keys(note_events, articulations):
+    """Keys (track, position, string) of BEND/CHOKE notes.
+
+    The tie sentinel (V2 dynamic-7 / V3 byte-5 bit-7) actually means "connected
+    to the previous note on this string." That renders as a TIE only when the
+    fret is unchanged (same pitch). When the fret DIFFERS and the note carries no
+    hammer/pull/slide (those already own the connection — e.g. 25635 m74's slide
+    destination, left untouched here), it's a bend/choke: TablEdit's own display
+    shows a bend, though its MusicXML exports it lossily as a tie-stop. We surface
+    it as a 'b' technique instead of a phantom tie.
+
+    Corpus-safe: zero notes in the 40+ file corpus meet all three conditions
+    (connect-bit AND fret change AND no h/p/slide), so this changes no existing
+    output; it only fixes real bends (e.g. Bill Emerson's "Welcome to New York"
+    m4, str3 fret 3->4). Full +1-semitone playback glide is tracked in #184.
+    """
+    by_track_string: dict = {}
+    for event in note_events:
+        if not event.is_melody:
+            continue
+        sf = event.decode_string_fret()
+        if not sf:
+            continue
+        by_track_string.setdefault((event.track, sf[0]), []).append(
+            (event.position, sf[1], event))
+
+    keys = set()
+    for (track, string), notes in by_track_string.items():
+        notes.sort(key=lambda x: x[0])
+        for i, (position, fret, event) in enumerate(notes):
+            if i == 0 or not is_tied_note(event):
+                continue
+            if notes[i - 1][1] == fret:
+                continue  # same fret = genuine tie
+            if articulations.get((track, position, string)) is not None:
+                continue  # h/p/slide already carries the connection
+            keys.add((track, position, string))
+    return keys
+
+
 # Common banjo tunings (MIDI note numbers)
 # Format: [string1, string2, string3, string4, string5] where string1 is highest
 BANJO_TUNINGS = {
@@ -732,6 +814,10 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     else:
         articulations = compute_articulations_v3(tef.note_events)
 
+    # Bend/choke notes: connect-bit + fret change + no h/p/slide (see
+    # bend_destination_keys). Surfaced as a 'b' technique instead of a tie.
+    bend_keys = bend_destination_keys(tef.note_events, articulations)
+
     # Group note events by track and measure.
     #
     # V2: event.position is in the NATIVE TEF grid — 256 units per whole
@@ -899,15 +985,26 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                             tech = 'x'
                         # Check if this note is tied to the previous note
                         tie = is_tied_note(evt)
-                        # Extract fingering annotation from effect2 when bit5 is set
+                        # ...unless it's really a bend/choke (connect bit but a
+                        # fret change, no h/p/slide): render 'b', not a tie.
+                        if (evt.track, evt.position, string) in bend_keys:
+                            tie = False
+                            tech = 'b'
+                        # Fingering: V2 stores a bare pluck letter in effect2
+                        # (bit5-gated); V3 packs pluck + fretting digit
+                        # base-6 in byte 10 (see v3_fingering).
                         finger = None
-                        if evt.raw_data and len(evt.raw_data) > 5:
-                            fret_byte = evt.raw_data[2]
-                            effect2 = evt.raw_data[5]
-                            if (fret_byte >> 5) & 0x01 and effect2 in FINGERING_MAP:
-                                finger = FINGERING_MAP[effect2]
-                        note = OTFNote(s=string, f=fret, tech=tech, finger=finger, tie=tie,
-                                       dur=evt.duration_ticks)
+                        lh = None
+                        if tef.header.is_v2:
+                            if evt.raw_data and len(evt.raw_data) > 5:
+                                fret_byte = evt.raw_data[2]
+                                effect2 = evt.raw_data[5]
+                                if (fret_byte >> 5) & 0x01 and effect2 in FINGERING_MAP:
+                                    finger = FINGERING_MAP[effect2]
+                        else:
+                            finger, lh = v3_fingering(evt)
+                        note = OTFNote(s=string, f=fret, tech=tech, finger=finger,
+                                       lh=lh, tie=tie, dur=evt.duration_ticks)
                         otf_event.notes.append(note)
 
                 if otf_event.notes:
@@ -920,11 +1017,22 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     # timing hack (see normalize_slide_timing / tab-debug SKILL).
     normalize_slide_timing(doc)
 
-    # Reading list
+    # Placed free-text annotations (V3 0x39 components: "Long Choke",
+    # chord letters, section banners). Positions share the note grid, so
+    # the same 16-slots-per-measure math applies.
+    for te in tef.text_events:
+        doc.annotations.append(OTFAnnotation(
+            measure=(te.position // POSITIONS_PER_MEASURE) + 1,
+            tick=(te.position % POSITIONS_PER_MEASURE) * TICKS_PER_POSITION,
+            text=te.text,
+        ))
+
+    # Reading list (with section labels when the file names its entries)
     for entry in tef.reading_list:
         doc.reading_list.append(OTFReadingListEntry(
             from_measure=entry.from_measure,
             to_measure=entry.to_measure,
+            name=entry.name,
         ))
 
     return doc

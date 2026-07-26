@@ -117,11 +117,17 @@ h1 {
     flex-shrink: 0;
 }
 
-.header-badge-left {
+/* Push the badges to the row's edges so the header spans the full width,
+   aligned with the search bar below. The auto margins must sit on the flex
+   ITEMS — the <a> links — not the <img> badges nested inside them (the old
+   rules targeted the imgs and were inert, leaving the signs clustered in the
+   centre). On mobile the imgs are hidden; the empty links keep the logo
+   centred via the same symmetric autos. */
+.header-badge-link:has(.header-badge-left) {
     margin-right: auto;
 }
 
-.header-badge-right {
+.header-badge-link:has(.header-badge-right) {
     margin-left: auto;
 }
 

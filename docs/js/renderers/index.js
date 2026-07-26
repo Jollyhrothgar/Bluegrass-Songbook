@@ -117,6 +117,8 @@ export {
     identityTimeline,
     readingListTimeline,
     expandNotation,
+    densifyNotation,
+    attachOtfDecorations,
     makePlaybackToVisualMapper,
     buildMetronomeSchedule,
     maxMeasureIn,

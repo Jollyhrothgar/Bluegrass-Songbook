@@ -175,22 +175,44 @@ class TEFReadingListEntry:
     from_measure: int    # Start measure (1-indexed)
     to_measure: int      # End measure (1-indexed, inclusive)
     offset: int          # File offset where entry was found
+    name: str = ""       # Entry label ("Intro", "Part A1", ...) — bytes 4+
+                         # of the 32-byte record; TablEdit prints it above
+                         # the range's first measure. Empty when unnamed.
+
+
+@dataclass
+class TEFTextEvent:
+    """A placed free-text annotation (V3 component type 0x39).
+
+    TablEdit anchors arbitrary text ("Long Choke", chord letters, section
+    banners) to a (position, string-row) in the grid; byte 5 of the
+    component is a 0-based index into the file's text table (header
+    pointer at offset 84: u16 count, then count x [u16 len][bytes,
+    NUL-terminated]).
+    """
+    position: int        # 16th-slot grid position (measure-table aware)
+    string_row: int      # 0-based string row the text is anchored to
+    text: str            # Resolved string from the text table
 
 
 @dataclass
 class TEFNoteEvent:
     """A note event from the TEF file.
 
-    12-byte record structure (large file / event list format):
-    - Bytes 0-1: Position (tick count, little-endian). Multiply by ~40 for MIDI ticks.
-    - Byte 2: Always 0
-    - Byte 3: Track/voice ID (1=melody, 3=bass?, 4=accompaniment?)
-    - Byte 4: Marker type (0x49='I', 0x46='F', 0x4C='L', 0x00='S')
-    - Byte 5: Articulation (0=normal, 1=hammer-on, 2=pull-off, 3=slide)
-    - Bytes 6-8: Always 0
-    - Byte 9: Module/voice (0=accompaniment, 6/12/18=melody voices)
-    - Byte 10: Always 0
-    - Byte 11: Combined string+fret encoding for melody notes
+    V3 12-byte component record (TuxGuitar TEInputStream layout; the
+    field names below this docstring are historical and repurposed —
+    see parse_note_events for the actual extraction):
+    - Bytes 0-3: location (u32). position = loc // (32*total_strings);
+      string row = (loc % (32*total_strings)) // 8.
+    - Byte 4: component type. Notes: bits 0-4 = fret+1 (0x01-0x19),
+      0x40 = grace flag. Non-notes: 0x39 = free text (byte 5 = text
+      table index), 0x35 = chord diagram anchor, etc.
+    - Byte 5: duration code (bits 0-4) + dynamics (bits 5-6) + tie/
+      connect bit (bit 7).
+    - Byte 6: articulation (1=hammer, 2=pull, 3=slide, 0x0c=bend/choke
+      source, 0x0f=dead/muted).
+    - Byte 10: fingering pack, base-6: 6*pluck + lh_code (see
+      v3_fingering in otf.py).
     """
     position: int          # Tick position (multiply by ~40 for MIDI ticks)
     track: int             # Track/module ID
@@ -290,6 +312,7 @@ class TEFFile:
     chords: list[TEFChord] = field(default_factory=list)
     sections: list[TEFSection] = field(default_factory=list)
     note_events: list[TEFNoteEvent] = field(default_factory=list)
+    text_events: list[TEFTextEvent] = field(default_factory=list)
     reading_list: list[TEFReadingListEntry] = field(default_factory=list)
     time_signature_changes: list[TEFTimeSignatureChange] = field(default_factory=list)
     # V3 only: (num, den) derived from the measure table — the table is
@@ -765,6 +788,37 @@ class TEFReader:
 
         return instruments
 
+    def parse_text_table_v3(self) -> list[str]:
+        """Parse the V3 free-text table.
+
+        Header offset 84 holds a 4-byte pointer to the table: u16 count,
+        then count length-prefixed entries ([u16 len][len bytes, incl. a
+        trailing NUL]). Note components of type 0x39 reference entries by
+        0-based index (byte 5). Verified against TablEdit's own MusicXML
+        export (<words> directions) on Welcome to New York: all 35
+        placements match.
+        """
+        if len(self.data) < 88:
+            return []
+        ptr = struct.unpack('<I', self.data[84:88])[0]
+        if not (0 < ptr < len(self.data) - 2):
+            return []
+        count = struct.unpack('<H', self.data[ptr:ptr + 2])[0]
+        if count > 1000:
+            return []
+        table: list[str] = []
+        off = ptr + 2
+        for _ in range(count):
+            if off + 2 > len(self.data):
+                break
+            ln = struct.unpack('<H', self.data[off:off + 2])[0]
+            if ln > 1000 or off + 2 + ln > len(self.data):
+                break
+            raw = self.data[off + 2:off + 2 + ln]
+            table.append(raw.split(b'\x00')[0].decode('latin1'))
+            off += 2 + ln
+        return table
+
     def parse_chords(self) -> list[TEFChord]:
         """Parse chord symbols from the file."""
         chords = []
@@ -867,11 +921,17 @@ class TEFReader:
             if from_measure == 0 and to_measure == 0:
                 continue
 
+            # Bytes 4+ carry the entry's label ("Intro", "Part A1", ...) —
+            # TablEdit prints it above the range's first measure.
+            raw_name = self.data[entry_offset + 4:entry_offset + entry_size]
+            name = raw_name.split(b'\x00')[0].decode('latin1')
+
             entries.append(TEFReadingListEntry(
                 index=i + 1,
                 from_measure=from_measure,
                 to_measure=to_measure,
                 offset=entry_offset,
+                name=name,
             ))
 
         return entries
@@ -1029,6 +1089,11 @@ class TEFReader:
         NON_NOTE_TYPES = {0x33, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3D,
                          0x75, 0x78, 0x7D, 0x7E, 0xB6, 0xB7, 0xBD, 0xBE, 0xFD, 0xFE}
 
+        # Free-text components (type 0x39) collected during this same pass;
+        # byte 5 is a 0-based index into the text table. Resolved to
+        # TEFTextEvents by _parse_v3.
+        self._v3_text_refs: list[tuple[int, int, int]] = []  # (position, string_row, index)
+
         offset = start_offset
         consecutive_invalid = 0
         max_invalid = 20
@@ -1040,8 +1105,14 @@ class TEFReader:
             location = struct.unpack('<I', record[0:4])[0]
             component_type = record[4]
 
-            # Skip known non-note component types
+            # Skip known non-note component types (capturing text anchors)
             if component_type in NON_NOTE_TYPES:
+                if component_type == 0x39:
+                    self._v3_text_refs.append((
+                        map_slot(location // VALUE_PER_POSITION),
+                        (location % VALUE_PER_POSITION) // VALUE_PER_STRING,
+                        record[5],
+                    ))
                 offset += 12
                 continue
 
@@ -1699,19 +1770,45 @@ class TEFReader:
 
         strings = self.find_strings()
 
-        # Find title (usually the longest string early in the file)
+        # Title = the FIRST substantial string in the info region (offset
+        # ~0x100), NOT the longest. The longest is usually a verbose tabber
+        # credit ("TablEdited by Greg Crisp"), and decorative section
+        # separators ("____INTRO____") are longer still — the old "longest"
+        # rule picked those over the real title ("Cherokee Shuffle",
+        # "Jerusalem Ridge", "Welcome To New York"). find_strings returns
+        # strings in ascending-offset order, so the first qualifying one wins.
         title = ""
         for s in strings:
-            if s.offset < 0x200 and len(s.value) > len(title):
-                # Skip common non-title strings
-                if 'Part' not in s.value and not s.value.startswith('('):
-                    title = s.value
+            if s.offset >= 0x200:
+                continue
+            v = s.value.strip()
+            if len(v) < 3 or 'Part' in v or v[:1] in ('(', '-'):
+                continue
+            nonspace = sum(not c.isspace() for c in v)
+            alnum = sum(c.isalnum() for c in v)
+            if nonspace and alnum / nonspace < 0.5:  # skip decorative separators
+                continue
+            title = v
+            break
 
         instruments = self.parse_track_records_v3() or self.parse_instruments()
         chords = self.parse_chords()
         sections = self.parse_sections()
         note_events = self.parse_note_events()
         reading_list = self.parse_reading_list()
+
+        # Resolve 0x39 text components (collected by parse_note_events)
+        # against the text table. Unresolvable indexes and empty strings
+        # are dropped.
+        text_table = self.parse_text_table_v3()
+        text_events = []
+        for position, string_row, idx in getattr(self, "_v3_text_refs", []):
+            if 0 <= idx < len(text_table) and text_table[idx]:
+                text_events.append(TEFTextEvent(
+                    position=position,
+                    string_row=string_row,
+                    text=text_table[idx],
+                ))
 
         return TEFFile(
             path=self.path,
@@ -1722,6 +1819,7 @@ class TEFReader:
             chords=chords,
             sections=sections,
             note_events=note_events,
+            text_events=text_events,
             reading_list=reading_list,
             time_signature_changes=getattr(self, "_v3_ts_changes", []),
             v3_global_ts=getattr(self, "_v3_global_ts", None),
