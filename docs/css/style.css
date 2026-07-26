@@ -9533,3 +9533,56 @@ body.has-list-context.has-bottomband .container {
         display: none;
     }
 }
+
+/* Wanted list on the bounty board */
+.wanted-block {
+    margin-bottom: 2rem;
+}
+
+.wanted-card {
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+.core-badge {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.05rem 0.45rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font-size: var(--font-xs);
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.wanted-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.4rem;
+}
+
+.wanted-chip {
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: var(--font-xs);
+    color: var(--text-secondary);
+}
+
+.bounty-show-more {
+    display: block;
+    margin: 0.75rem auto 0;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    font-size: var(--font-sm);
+    cursor: pointer;
+}
+
+.bounty-show-more:hover { border-color: var(--accent); }
