@@ -207,13 +207,16 @@ export function renderBountyView(container) {
     const totalItems = filteredPlaceholders.length + filteredBounties.length;
     const filterHint = getCurrentFilterHint();
 
-    // The wanted list, organized: the instrumental/fiddle gap first (the
-    // real hole in the corpus — tabs wanted for banjo/mandolin/guitar/
-    // fiddle), then gospel, then vocals (collapsed preview).
+    // The wanted list: Core jam standards lead (the 82 must-haves, every
+    // type mixed, coverage-sorted), then the rest by type — instrumentals
+    // next (tabs wanted for fiddle/banjo/mandolin/guitar), gospel, and
+    // the long tail of vocals behind a preview.
     const wanted = wantedSongs || [];
-    const wantedInstrumentals = wanted.filter(s => INSTRUMENTAL_TYPES.has(s.type));
-    const wantedGospel = wanted.filter(s => s.type === 'Gospel');
-    const wantedVocals = wanted.filter(s => s.type === 'Vocal');
+    const wantedCore = wanted.filter(s => s.core);
+    const rest = wanted.filter(s => !s.core);
+    const wantedInstrumentals = rest.filter(s => INSTRUMENTAL_TYPES.has(s.type));
+    const wantedGospel = rest.filter(s => s.type === 'Gospel');
+    const wantedVocals = rest.filter(s => s.type === 'Vocal');
 
     const wantedHtml = wanted.length ? `
         <div class="bounty-section wanted-block">
@@ -221,9 +224,10 @@ export function renderBountyView(container) {
                 <span class="bounty-group-count">(${wanted.length})</span></h2>
             <p class="bounty-filter-hint">Canonical repertoire — heavily recorded across bluegrass
                 generations — that the book doesn't have yet. Tap one to contribute it.</p>
-            ${wantedSection('Fiddle Tunes & Instrumentals', wantedInstrumentals)}
-            ${wantedSection('Gospel', wantedGospel)}
-            ${wantedSection('Songs', wantedVocals, { collapsible: true })}
+            ${wantedSection('Core Jam Standards — the must-haves', wantedCore)}
+            ${wantedSection('More Fiddle Tunes & Instrumentals', wantedInstrumentals)}
+            ${wantedSection('More Gospel', wantedGospel)}
+            ${wantedSection('More Songs', wantedVocals, { collapsible: true })}
         </div>
     ` : (wantedSongs === null ? '<div class="bounty-section"><p class="bounty-filter-hint">Loading wanted list…</p></div>' : '');
 
