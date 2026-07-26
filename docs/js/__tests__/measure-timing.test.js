@@ -20,6 +20,7 @@ import {
     TimelineTiming,
     expandNotation,
     densifyNotation,
+    attachOtfDecorations,
     makePlaybackToVisualMapper,
     buildMetronomeSchedule,
     analyzeReadingList,
@@ -232,6 +233,53 @@ describe('densifyNotation', () => {
     it('handles empty input', () => {
         expect(densifyNotation([])).toEqual([]);
         expect(densifyNotation(null)).toBeNull();
+    });
+});
+
+describe('attachOtfDecorations', () => {
+    const notation = [
+        { measure: 1, events: [] },
+        { measure: 2, events: [] },
+        { measure: 3, events: [] },
+    ];
+
+    it('attaches annotations grouped per measure and section labels', () => {
+        const otf = {
+            annotations: [
+                { measure: 2, tick: 0, text: 'Long Choke' },
+                { measure: 2, tick: 960, text: 'C' },
+            ],
+            reading_list: [
+                { from_measure: 1, to_measure: 2, name: 'Intro' },
+                { from_measure: 3, to_measure: 3 },   // unnamed
+            ],
+        };
+        const out = attachOtfDecorations(notation, otf);
+        expect(out[0].section).toBe('Intro');
+        expect(out[1].texts).toEqual([
+            { tick: 0, text: 'Long Choke' },
+            { tick: 960, text: 'C' },
+        ]);
+        expect(out[2].texts).toBeUndefined();
+        expect(out[2].section).toBeUndefined();
+        // untouched entries pass through by reference
+        expect(out[2]).toBe(notation[2]);
+    });
+
+    it('is a no-op without annotations or named ranges', () => {
+        const otf = { annotations: [], reading_list: [{ from_measure: 1, to_measure: 3 }] };
+        expect(attachOtfDecorations(notation, otf)).toBe(notation);
+        expect(attachOtfDecorations(notation, {})).toBe(notation);
+    });
+
+    it('first named range wins when two share a start measure', () => {
+        const otf = {
+            reading_list: [
+                { from_measure: 1, to_measure: 4, name: 'A' },
+                { from_measure: 1, to_measure: 2, name: 'B' },
+            ],
+        };
+        expect(attachOtfDecorations(notation, otf)[0].section).toBe('A');
     });
 });
 

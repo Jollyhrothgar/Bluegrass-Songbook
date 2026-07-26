@@ -427,6 +427,46 @@ export function prepareCompactNotation(notation, readingList) {
 }
 
 /**
+ * Attach display decorations from the OTF document onto a track's
+ * notation entries (display copy — the document itself is untouched):
+ *
+ * - `texts`:   placed free-text annotations ("Long Choke", chord letters)
+ *              from otf.annotations, grouped per written measure
+ * - `section`: reading-list entry names ("Intro", "Part A1") on each
+ *              range's first measure — TablEdit prints them there
+ *
+ * Call AFTER densifyNotation (annotations may target silent measures —
+ * Welcome to New York m30-31 carry the "...solo" texts) and BEFORE
+ * prepareCompactNotation/expandNotation, so the decorations ride along
+ * into either display mode.
+ */
+export function attachOtfDecorations(notation, otf) {
+    const anns = otf?.annotations || [];
+    const named = (otf?.reading_list || []).filter(e => e.name);
+    if (!anns.length && !named.length) return notation;
+    const textsByMeasure = new Map();
+    for (const a of anns) {
+        if (!textsByMeasure.has(a.measure)) textsByMeasure.set(a.measure, []);
+        textsByMeasure.get(a.measure).push({ tick: a.tick, text: a.text });
+    }
+    const sectionByMeasure = new Map();
+    for (const e of named) {
+        if (!sectionByMeasure.has(e.from_measure)) {
+            sectionByMeasure.set(e.from_measure, e.name);
+        }
+    }
+    return notation.map(m => {
+        const texts = textsByMeasure.get(m.measure);
+        const section = sectionByMeasure.get(m.measure);
+        if (!texts && !section) return m;
+        const out = { ...m };
+        if (texts) out.texts = texts;
+        if (section) out.section = section;
+        return out;
+    });
+}
+
+/**
  * Max written measure number across every track of an OTF notation map.
  */
 export function maxMeasureIn(notationByTrack) {

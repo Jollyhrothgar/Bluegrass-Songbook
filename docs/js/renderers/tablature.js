@@ -382,6 +382,17 @@ export class TabRenderer {
             identityTimeline(notation.reduce((mx, m) => Math.max(mx, m.measure), 1))
         );
 
+        // Free-text / section-label headroom: when the notation carries
+        // display decorations (attachOtfDecorations), bump the top margin
+        // UNIFORMLY so every row gets a text band above the ending
+        // brackets. Uniform matters: the editor cursor derives its y-math
+        // from options.topMargin + a measured row height.
+        if (this._baseTopMargin === undefined) {
+            this._baseTopMargin = this.options.topMargin;
+        }
+        const hasTextBand = notation.some(m => (m.texts && m.texts.length) || m.section);
+        this.options.topMargin = this._baseTopMargin + (hasTextBand ? 32 : 0);
+
         // Calculate responsive layout
         this._calculateLayout();
 
@@ -731,6 +742,12 @@ export class TabRenderer {
         // after all measures are laid out.
         const rowNotePositions = [];
 
+        // Annotation texts flow left-to-right across the row; when one
+        // would start inside the previous one, it hops to a second lane
+        // 11px higher ("C" at beat 1.5 under "Press F-12 ..." otherwise
+        // prints on top of it).
+        const textLaneEnds = [-Infinity, -Infinity];
+
         measures.forEach((measure, mi) => {
             const geom = measureGeoms[mi];
             const x = geom.x;
@@ -782,6 +799,37 @@ export class TabRenderer {
                 fill: this.options.mutedColor
             });
             svg.appendChild(numText);
+
+            // Section label (reading-list entry name — "Intro", "Part A1")
+            // at the very top of the text band, bold like TablEdit.
+            if (measure.section) {
+                const secText = this.createText(x + 3, 12, measure.section, {
+                    fontSize: '12px',
+                    fill: opt.fretColor,
+                    fontWeight: '700'
+                });
+                secText.setAttribute('class', 'section-label');
+                svg.appendChild(secText);
+            }
+
+            // Placed free-text annotations ("Long Choke", chord letters)
+            // above the ending-bracket band, x-positioned by tick and
+            // lane-stacked on overlap.
+            if (measure.texts && measure.texts.length) {
+                for (const t of measure.texts) {
+                    const tx = geom.noteX0 + geom.noteOffset
+                        + (t.tick / geom.ticks) * geom.noteW;
+                    const lane = tx >= textLaneEnds[0] + 6 ? 0
+                        : (tx >= textLaneEnds[1] + 6 ? 1 : 0);
+                    textLaneEnds[lane] = tx + 5.5 * t.text.length;
+                    const annText = this.createText(tx, opt.topMargin - 34 - lane * 11, t.text, {
+                        fontSize: '10px',
+                        fill: opt.fretColor,
+                    });
+                    annText.setAttribute('class', 'annotation-text');
+                    svg.appendChild(annText);
+                }
+            }
 
             // Rest glyphs in gaps AFTER duration-carrying notes.
             // TablEdit's tab staff hides rests, leaving the rhythm
@@ -841,10 +889,13 @@ export class TabRenderer {
 
                         // Wrap tied notes in brackets [7] to indicate tie continuation
                         // Dead/muted notes (chops) draw the standard ×
-                        // in place of the fret digit
+                        // in place of the fret digit. Bend/choke TARGETS are
+                        // bracketed too (TablEdit style: the source note is
+                        // picked, the target is the choked pitch — the
+                        // tilted-up arrow is drawn in renderSlurs).
                         const fretStr = note.tech === 'x' ? '×'
-                            : note.tie ? `[${note.f}]` : note.f.toString();
-                        const bgWidth = note.tie ? 22 : (fretStr.length > 1 ? 16 : 12);
+                            : (note.tie || note.tech === 'b') ? `[${note.f}]` : note.f.toString();
+                        const bgWidth = (note.tie || note.tech === 'b') ? 22 : (fretStr.length > 1 ? 16 : 12);
                         const bg = this.createRect(noteX - bgWidth/2, noteY - 7, bgWidth, 14, opt.fretBgColor);
                         bg.setAttribute('class', 'note-bg');
                         bg.dataset.absTick = absTick;
@@ -864,9 +915,11 @@ export class TabRenderer {
                         eventElements.push({ bg, text: fretText });
 
                         // Render technique symbols that aren't handled by renderSlurs
-                        // (h, p, / are rendered as slur arcs with labels in renderSlurs)
+                        // (h, p, / are slur arcs; 'b' is the bend arrow — both
+                        // drawn in renderSlurs)
                         if (note.tech && note.tech !== 'h' && note.tech !== 'p'
-                                && note.tech !== '/' && note.tech !== 'x') {
+                                && note.tech !== '/' && note.tech !== 'x'
+                                && note.tech !== 'b') {
                             const techText = this.createText(noteX, noteY - 10, note.tech, {
                                 fontSize: '9px',
                                 fill: opt.mutedColor,
@@ -887,6 +940,30 @@ export class TabRenderer {
                             });
                             fingerText.setAttribute('class', 'finger-text');
                             svg.appendChild(fingerText);
+                        }
+
+                        // Fretting-hand digit, circled (TablEdit style),
+                        // below the pluck letter when both are present.
+                        if (note.lh !== undefined && note.lh !== null
+                                && this.options.showFingerings !== false) {
+                            const cy = beamY + (note.finger ? 24 : 10);
+                            const circle = document.createElementNS(
+                                'http://www.w3.org/2000/svg', 'circle');
+                            circle.setAttribute('cx', noteX);
+                            circle.setAttribute('cy', cy);
+                            circle.setAttribute('r', 6);
+                            circle.setAttribute('fill', 'none');
+                            circle.setAttribute('stroke', opt.mutedColor);
+                            circle.setAttribute('stroke-width', '1');
+                            circle.setAttribute('class', 'lh-finger-circle');
+                            svg.appendChild(circle);
+                            const lhText = this.createText(noteX, cy + 3, String(note.lh), {
+                                fontSize: '8px',
+                                fill: opt.mutedColor,
+                                textAnchor: 'middle'
+                            });
+                            lhText.setAttribute('class', 'lh-finger-text');
+                            svg.appendChild(lhText);
                         }
                     });
 
@@ -969,6 +1046,37 @@ export class TabRenderer {
                 const n2 = notes[i];
                 const hasTechnique = n2.tech === 'h' || n2.tech === 'p' || n2.tech === '/';
                 const hasTie = n2.tie === true;
+
+                // Bend/choke: a tilted-up arrow from the SOURCE note (the
+                // one being bent) to the bracketed target, with the bend
+                // amount above the tip (TablEdit draws "½" for its
+                // quarter-tone choke; playback matches BEND_SEMITONES).
+                if (n2.tech === 'b') {
+                    const n1 = notes[i - 1];
+                    if (n2.x - n1.x > 60) continue;
+                    const x1 = n1.x + 9, y1 = n1.y - 2;
+                    const x2 = n2.x - 8, y2 = n2.y - 13;
+                    const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    // shaft + solid head pointing up-right along the shaft
+                    const ang = Math.atan2(y2 - y1, x2 - x1);
+                    const hx1 = x2 - 7 * Math.cos(ang - 0.45), hy1 = y2 - 7 * Math.sin(ang - 0.45);
+                    const hx2 = x2 - 7 * Math.cos(ang + 0.45), hy2 = y2 - 7 * Math.sin(ang + 0.45);
+                    arrow.setAttribute('d',
+                        `M ${x1} ${y1} L ${x2} ${y2} M ${hx1} ${hy1} L ${x2} ${y2} L ${hx2} ${hy2}`);
+                    arrow.setAttribute('fill', 'none');
+                    arrow.setAttribute('stroke', this.options.mutedColor);
+                    arrow.setAttribute('stroke-width', '1.2');
+                    arrow.setAttribute('class', 'bend-arrow');
+                    svg.appendChild(arrow);
+                    const amt = this.createText(x2 + 1, y2 - 3, '½', {
+                        fontSize: '9px',
+                        fill: this.options.mutedColor,
+                        textAnchor: 'middle'
+                    });
+                    amt.setAttribute('class', 'bend-amount');
+                    svg.appendChild(amt);
+                    continue;
+                }
 
                 if (!hasTechnique && !hasTie) continue;
 

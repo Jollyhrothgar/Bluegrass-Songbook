@@ -118,6 +118,7 @@ export {
     readingListTimeline,
     expandNotation,
     densifyNotation,
+    attachOtfDecorations,
     makePlaybackToVisualMapper,
     buildMetronomeSchedule,
     maxMeasureIn,
