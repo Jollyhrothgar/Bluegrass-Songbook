@@ -26,6 +26,10 @@ groups:
     variants:
       roll-in-my-sweet-babys-arms:
         label: Bluegrass Lyrics version
+  misty-1:
+    variants:
+      misty:
+        label: Marty Robbins version
 suppressed: {}
 keep: {}
 tag_exclusions:

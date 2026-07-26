@@ -148,6 +148,112 @@ def cmd_exclude_tag(args):
     print("Rebuild the index to apply: ./scripts/bootstrap --quick")
 
 
+def cmd_lint(args):
+    """Scan the built index for likely data errors.
+
+    Classes:
+      A. split-duplicates — same normalized title in multiple groups
+         (shows as duplicate search results; fix: `curate pin`)
+      B. over-merges — one group whose members' first lines barely match
+         (different songs folded together; fix: registry or source)
+      C. hygiene — blank artist/title, non-placeholder rows with no content
+    """
+    import csv as _csv
+    import difflib
+    import re as _re
+    import unicodedata
+
+    def norm_title(text):
+        if not text:
+            return ''
+        text = unicodedata.normalize('NFKD', str(text))
+        text = text.encode('ascii', 'ignore').decode('ascii').lower()
+        text = _re.sub(r'\s*\([^)]*\)\s*$', '', text)
+        for art in ('the ', 'a ', 'an '):
+            if text.startswith(art):
+                text = text[len(art):]
+        return _re.sub(r'[^a-z0-9]', '', text)
+
+    def norm_line(text):
+        text = unicodedata.normalize('NFKD', str(text or ''))
+        text = text.encode('ascii', 'ignore').decode('ascii').lower()
+        return ' '.join(_re.sub(r'[^a-z0-9\s]', '', text).split())
+
+    index_path = REPO_ROOT / 'docs' / 'data' / 'index.jsonl'
+    rows = [json.loads(l) for l in open(index_path)]
+    searchable = [r for r in rows if r.get('indexed') is not False]
+
+    findings = []
+
+    # A: same normalized title, multiple groups (searchable only — these
+    # render as duplicate search results)
+    by_title = {}
+    for r in searchable:
+        by_title.setdefault(norm_title(r.get('title')), []).append(r)
+    for t, members in sorted(by_title.items()):
+        groups = {m.get('group_id') for m in members}
+        if t and len(groups) > 1:
+            sims = []
+            base = norm_line(members[0].get('first_line'))
+            for m in members[1:]:
+                sims.append(difflib.SequenceMatcher(
+                    None, base, norm_line(m.get('first_line'))).ratio())
+            best = max(sims) if sims else 0
+            findings.append({
+                'class': 'split-duplicate',
+                'key': t,
+                'ids': ' | '.join(m['id'] for m in members),
+                'detail': f"{len(groups)} groups; first-line similarity {best:.0%}",
+                'likely_same_song': best >= 0.5,
+            })
+
+    # B: multi-member groups with dissimilar first lines (over-merge)
+    by_group = {}
+    for r in rows:
+        if r.get('group_id'):
+            by_group.setdefault(r['group_id'], []).append(r)
+    for gid, members in sorted(by_group.items()):
+        if len(members) < 2:
+            continue
+        base = norm_line(members[0].get('first_line'))
+        worst = 1.0
+        for m in members[1:]:
+            worst = min(worst, difflib.SequenceMatcher(
+                None, base, norm_line(m.get('first_line'))).ratio())
+        if worst < 0.4:
+            findings.append({
+                'class': 'over-merge',
+                'key': gid,
+                'ids': ' | '.join(m['id'] for m in members),
+                'detail': f"first-line similarity {worst:.0%}",
+                'likely_same_song': False,
+            })
+
+    # C: hygiene
+    for r in searchable:
+        if not str(r.get('title') or '').strip():
+            findings.append({'class': 'blank-title', 'key': r['id'], 'ids': r['id'], 'detail': '', 'likely_same_song': ''})
+        if not str(r.get('artist') or '').strip() and r.get('source') != 'tunearch':
+            findings.append({'class': 'blank-artist', 'key': r['id'], 'ids': r['id'], 'detail': f"src={r.get('source')}", 'likely_same_song': ''})
+
+    out = REPO_ROOT / 'curation' / 'lint_report.csv'
+    with open(out, 'w', newline='') as f:
+        w = _csv.DictWriter(f, fieldnames=['class', 'key', 'ids', 'detail', 'likely_same_song'])
+        w.writeheader()
+        w.writerows(findings)
+
+    from collections import Counter
+    counts = Counter(f['class'] for f in findings)
+    print("Index lint results:")
+    for cls, n in counts.most_common():
+        print(f"  {cls:16s} {n}")
+    strong = [f for f in findings if f['class'] == 'split-duplicate' and f['likely_same_song']]
+    print(f"\nStrong pin candidates (split duplicates, similar first lines): {len(strong)}")
+    for f in strong[:15]:
+        print(f"  {f['key']:35s} {f['ids']}")
+    print(f"\nFull report: {out}")
+
+
 def main():
     parser = argparse.ArgumentParser(
         prog='curate', description='Editorial curation registry management')
@@ -175,6 +281,9 @@ def main():
     p_unp.add_argument('work_id', help='Work id to keep indexed')
     p_unp.add_argument('--reason', required=True, help='Why it IS jam repertoire')
     p_unp.set_defaults(func=cmd_unprune)
+
+    p_lint = sub.add_parser('lint', help='Scan the index for likely data errors')
+    p_lint.set_defaults(func=cmd_lint)
 
     p_ext = sub.add_parser('exclude-tag', help='Editorially remove tags from a work')
     p_ext.add_argument('work_id', help='Work id')

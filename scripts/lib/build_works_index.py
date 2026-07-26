@@ -187,8 +187,11 @@ def compute_group_id(title: str, artist: str, lyrics: str) -> str:
     base = normalize_title(title)
     base_hash = hashlib.md5(base.encode()).hexdigest()[:12]
 
-    # Lyrics hash to distinguish different songs with same title
-    lyrics_norm = normalize_lyrics(lyrics[:200] if lyrics else '')
+    # Lyrics hash to distinguish different songs with same title.
+    # Normalize BEFORE truncating: a raw [:200] window shifts with stray
+    # whitespace/punctuation, splitting true duplicates into different
+    # groups (e.g. two "Misty" covers differing by one double-space).
+    lyrics_norm = normalize_lyrics(lyrics or '')[:200]
     lyrics_hash = hashlib.md5(lyrics_norm.encode()).hexdigest()[:8]
 
     return f"{base_hash}_{lyrics_hash}"

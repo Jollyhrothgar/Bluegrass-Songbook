@@ -914,13 +914,26 @@ export function search(query, options = {}) {
         return bRank - aRank;
     });
 
-    // Dedupe by group_id for accurate count
-    const seenGroups = new Set();
+    // Dedupe by group_id for accurate count. The canonical member (pinned
+    // via curation/registry.yaml) claims the card even when a variant
+    // ranked first — otherwise search shows one artist and the opened
+    // page another (the Misty problem).
+    const seenGroups = new Map(); // group_id -> index into dedupedResults
     const dedupedResults = [];
     for (const song of results) {
         const groupId = song.group_id;
-        if (groupId && seenGroups.has(groupId)) continue;
-        if (groupId) seenGroups.add(groupId);
+        if (!groupId) {
+            dedupedResults.push(song);
+            continue;
+        }
+        if (seenGroups.has(groupId)) {
+            const i = seenGroups.get(groupId);
+            if (song.canonical === true && dedupedResults[i].canonical !== true) {
+                dedupedResults[i] = song;
+            }
+            continue;
+        }
+        seenGroups.set(groupId, dedupedResults.length);
         dedupedResults.push(song);
     }
 
@@ -1138,12 +1151,13 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
         ? `<span class="grassiness-badge" title="Bluegrass score: ${grassinessScore}">🎵 ${grassinessScore}</span>`
         : '';
 
-    // Artist display
+    // Artist display: always the song's OWN artist — showing
+    // covering_artists[0] here made search disagree with the song page
+    // (e.g. "Misty" carded as David Grisman but by Ray Stevens). The
+    // bluegrass names stay on the "Also by:" line.
     const coveringArtists = song.covering_artists || [];
-    const primaryArtist = coveringArtists.length > 0
-        ? coveringArtists[0]
-        : (song.artist || 'Unknown artist');
-    const coveringDisplay = formatCoveringArtists(coveringArtists.slice(1), primaryArtist);
+    const primaryArtist = song.artist || 'Unknown artist';
+    const coveringDisplay = formatCoveringArtists(coveringArtists, primaryArtist);
 
     // Drag handle and attributes
     const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';

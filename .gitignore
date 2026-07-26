@@ -68,3 +68,4 @@ sources/tunearch/raw/
 # Copyrighted test tabs dropped in the worktree root (never commit)
 /*.tef
 sources/tef-uploads/uploads/
+curation/lint_report.csv
