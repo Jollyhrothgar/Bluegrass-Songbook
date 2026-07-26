@@ -30,6 +30,89 @@ groups:
     variants:
       misty:
         label: Marty Robbins version
+  am-i-blue-1:
+    variants:
+      am-i-blue:
+        label: George Strait version
+  before-i-met-you-1:
+    variants:
+      before-i-met-you:
+        label: Carl Smith version
+  boat-of-love:
+    variants:
+      the-boat-of-love: {}
+  broken-engagement:
+    variants:
+      broken-engagement-1:
+        label: The Louvin Brothers version
+  california-blues:
+    variants:
+      california-blues-blue-yodel-no-4:
+        label: Webb Pierce version
+  down-in-the-willow-garden:
+    variants:
+      down-in-the-willow-garden-1:
+        label: The Osborne Brothers version
+  haven-t-you-heard:
+    variants:
+      haven-t-you-heard-1:
+        label: Jeannie C. Riley version
+  i-am-a-pilgrim:
+    variants:
+      i-am-a-pilgrim-1:
+        label: Alabama version
+  if-you-think-you-re-lonely:
+    variants:
+      if-you-think-you-re-lonely-1:
+        label: Ray Price version
+  i-hear-you-talking-1:
+    variants:
+      i-hear-you-talking:
+        label: Faron Young version
+  i-m-a-long-way-from-home:
+    variants:
+      i-m-a-long-way-from-home-1:
+        label: Waylon Jennings version
+  john-henry:
+    variants:
+      john-henry-1:
+        label: Traditional version
+  lonesome-road-blues-1:
+    variants:
+      lonesome-road-blues: {}
+  long-journey-home:
+    variants:
+      long-journey-home-1:
+        label: Traditional version
+  mule-skinner-blues-blue-yodel-no-8:
+    variants:
+      mule-skinner-blues: {}
+  the-roving-gambler:
+    variants:
+      roving-gambler:
+        label: Traditional version
+  stairway-to-heaven:
+    variants:
+      stairway-to-heaven-1:
+        label: The Stanley Brothers version
+  st-louis-blues:
+    variants:
+      st-louis-blues-1:
+        label: Roy Drusky version
+  tom-dooley:
+    variants:
+      tom-dooley-1:
+        label: the Kingston Trio version
+  wayfaring-stranger-1:
+    variants:
+      wayfaring-stranger:
+        label: Don Edwards version
+      wayfaring-stranger-2:
+        label: Traditional version
+  where-were-you-when-the-world-stopped-turning:
+    variants:
+      where-were-you:
+        label: Loretta Lynn version
 suppressed: {}
 keep: {}
 tag_exclusions:
