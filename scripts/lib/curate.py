@@ -122,6 +122,32 @@ def cmd_suppress(args):
     print("Rebuild the index to apply: ./scripts/bootstrap --quick")
 
 
+def cmd_unprune(args):
+    """Rescue a work from the index prune (curation/index_prune.csv)."""
+    from curation import load_prune_list
+    prune_ids = load_prune_list(REPO_ROOT)
+    if args.work_id not in prune_ids:
+        print(f"Note: '{args.work_id}' is not on the prune list "
+              f"(adding a keep entry anyway — harmless).")
+    registry = load_registry(REPO_ROOT)
+    registry.keep[args.work_id] = {'reason': args.reason}
+    save_registry(registry)
+    print(f"Kept '{args.work_id}': {args.reason}")
+    print(f"Registry updated: {registry.path}")
+    print("Rebuild the index to apply: ./scripts/bootstrap --quick")
+
+
+def cmd_exclude_tag(args):
+    """Editorially remove tags from a work (survives LLM re-tagging)."""
+    registry = load_registry(REPO_ROOT)
+    existing = set(registry.tag_exclusions.get(args.work_id, []))
+    existing.update(args.tags)
+    registry.tag_exclusions[args.work_id] = sorted(existing)
+    save_registry(registry)
+    print(f"Excluded tags on '{args.work_id}': {', '.join(sorted(existing))}")
+    print("Rebuild the index to apply: ./scripts/bootstrap --quick")
+
+
 def main():
     parser = argparse.ArgumentParser(
         prog='curate', description='Editorial curation registry management')
@@ -144,6 +170,16 @@ def main():
     p_sup.add_argument('work_id', help='Work id to suppress')
     p_sup.add_argument('--reason', required=True, help='Why it is suppressed')
     p_sup.set_defaults(func=cmd_suppress)
+
+    p_unp = sub.add_parser('unprune', help='Rescue a work from the index prune')
+    p_unp.add_argument('work_id', help='Work id to keep indexed')
+    p_unp.add_argument('--reason', required=True, help='Why it IS jam repertoire')
+    p_unp.set_defaults(func=cmd_unprune)
+
+    p_ext = sub.add_parser('exclude-tag', help='Editorially remove tags from a work')
+    p_ext.add_argument('work_id', help='Work id')
+    p_ext.add_argument('tags', nargs='+', help='Tag names to exclude')
+    p_ext.set_defaults(func=cmd_exclude_tag)
 
     args = parser.parse_args()
     args.func(args)

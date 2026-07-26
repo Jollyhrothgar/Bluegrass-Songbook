@@ -208,3 +208,73 @@ class TestImportGuard:
         result = publish_to_works('my-song', 'My Song', None, self.CHORDPRO,
                                   'someone', '4', tmp_path)
         assert result == tmp_path / 'works' / 'my-song-2'
+
+
+# ============================================
+# Index prune + tag exclusions
+# ============================================
+
+from curation import apply_index_prune, apply_tag_exclusions, load_prune_list
+
+
+def _songs():
+    return [
+        {'id': 'kept-song', 'source': 'classic-country', 'tags': ['Bluegrass']},
+        {'id': 'pruned-song', 'source': 'classic-country', 'tags': ['ClassicCountry']},
+        {'id': 'user-song', 'source': 'manual', 'tags': []},
+        {'id': 'trusted-song', 'source': 'trusted-user', 'tags': []},
+        {'id': 'submitted-song', 'source': 'classic-country', 'submitted_by': 'someone', 'tags': []},
+        {'id': 'rescued-song', 'source': 'classic-country', 'tags': []},
+    ]
+
+
+def test_prune_flags_listed_rows_only():
+    songs = apply_index_prune(_songs(), {'pruned-song', 'rescued-song'}, Registry())
+    by_id = {s['id']: s for s in songs}
+    assert by_id['pruned-song'].get('indexed') is False
+    assert 'indexed' not in by_id['kept-song']
+    # Rows are flagged, never removed (non-destructive)
+    assert len(songs) == 6
+
+
+def test_prune_never_touches_user_contributions():
+    prune = {'user-song', 'trusted-song', 'submitted-song', 'pruned-song'}
+    songs = apply_index_prune(_songs(), prune, Registry())
+    by_id = {s['id']: s for s in songs}
+    assert 'indexed' not in by_id['user-song']
+    assert 'indexed' not in by_id['trusted-song']
+    assert 'indexed' not in by_id['submitted-song']
+    assert by_id['pruned-song'].get('indexed') is False
+
+
+def test_registry_keep_rescues_from_prune():
+    reg = Registry(keep={'rescued-song': {'reason': 'jam repertoire'}})
+    songs = apply_index_prune(_songs(), {'rescued-song', 'pruned-song'}, reg)
+    by_id = {s['id']: s for s in songs}
+    assert 'indexed' not in by_id['rescued-song']
+    assert by_id['pruned-song'].get('indexed') is False
+
+
+def test_empty_prune_list_is_noop():
+    songs = apply_index_prune(_songs(), set(), Registry())
+    assert all('indexed' not in s for s in songs)
+
+
+def test_tag_exclusions_strip_listed_tags():
+    reg = Registry(tag_exclusions={'kept-song': ['Bluegrass'], 'missing-id': ['X']})
+    songs = apply_tag_exclusions(_songs(), reg)
+    by_id = {s['id']: s for s in songs}
+    assert by_id['kept-song']['tags'] == []
+    assert by_id['pruned-song']['tags'] == ['ClassicCountry']
+
+
+def test_load_prune_list_skips_comments(tmp_path):
+    d = tmp_path / 'curation'
+    d.mkdir()
+    (d / 'index_prune.csv').write_text(
+        "# comment line\nid,title,mbcov\nfoo,Foo,2\nbar,Bar,0\n")
+    assert load_prune_list(tmp_path) == {'foo', 'bar'}
+
+
+def test_load_prune_list_absent_file(tmp_path):
+    assert load_prune_list(tmp_path) == set()

@@ -45,6 +45,8 @@ class Registry:
     """In-memory view of curation/registry.yaml."""
     groups: dict = field(default_factory=dict)
     suppressed: dict = field(default_factory=dict)
+    keep: dict = field(default_factory=dict)
+    tag_exclusions: dict = field(default_factory=dict)
     path: Optional[Path] = None
 
 
@@ -61,6 +63,8 @@ def load_registry(repo_root) -> Registry:
     return Registry(
         groups=data.get('groups') or {},
         suppressed=data.get('suppressed') or {},
+        keep=data.get('keep') or {},
+        tag_exclusions=data.get('tag_exclusions') or {},
         path=path,
     )
 
@@ -89,6 +93,8 @@ def save_registry(registry: Registry):
     data = {
         'groups': registry.groups or {},
         'suppressed': registry.suppressed or {},
+        'keep': registry.keep or {},
+        'tag_exclusions': registry.tag_exclusions or {},
     }
     registry.path.parent.mkdir(parents=True, exist_ok=True)
     registry.path.write_text(header + yaml.dump(
@@ -191,4 +197,64 @@ def apply_curation(songs: list, registry: Registry) -> list:
             if song.get('group_id') == new_gid and song.get('id') != canonical_id:
                 song['variant_of'] = canonical_id
 
+    return songs
+
+
+# ============================================
+# Index prune (jam-repertoire filter)
+# ============================================
+
+# Works from these sources were contributed by users of the site; the prune
+# never touches them regardless of what the prune list says.
+USER_SOURCES = {'manual', 'trusted-user', 'pending'}
+
+
+def prune_list_path(repo_root) -> Path:
+    return Path(repo_root) / 'curation' / 'index_prune.csv'
+
+
+def load_prune_list(repo_root) -> set:
+    """Ids to mark indexed:false. Empty set if the file is absent."""
+    path = prune_list_path(repo_root)
+    if not path.exists():
+        return set()
+    import csv
+    with open(path) as f:
+        rows = csv.DictReader(line for line in f if not line.startswith('#'))
+        return {r['id'] for r in rows if r.get('id')}
+
+
+def apply_index_prune(songs: list, prune_ids: set, registry: Registry) -> list:
+    """Stamp indexed:false on non-jam-repertoire rows (non-destructive prune).
+
+    A row is pruned when its id is on the prune list, UNLESS:
+    - it came from a user (source in USER_SOURCES or has submitted_by), or
+    - it was rescued via the registry's keep: map.
+    Rows stay in the index — deep links, lists, and arrangement groups keep
+    working — but search/collections exclude indexed:false rows.
+    """
+    if not prune_ids:
+        return songs
+    for song in songs:
+        if song.get('id') not in prune_ids:
+            continue
+        if song.get('source') in USER_SOURCES or song.get('submitted_by'):
+            continue
+        if song.get('id') in (registry.keep or {}):
+            continue
+        song['indexed'] = False
+    return songs
+
+
+def apply_tag_exclusions(songs: list, registry: Registry) -> list:
+    """Editorial tag removals (registry tag_exclusions), e.g. stripping
+    BluegrassStandard from country/pop mis-tags. Survives LLM re-tagging
+    because it runs at build time from the committed registry."""
+    exclusions = registry.tag_exclusions or {}
+    if not exclusions:
+        return songs
+    for song in songs:
+        excluded = exclusions.get(song.get('id'))
+        if excluded and song.get('tags'):
+            song['tags'] = [t for t in song['tags'] if t not in set(excluded)]
     return songs
