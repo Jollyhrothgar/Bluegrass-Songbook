@@ -13,10 +13,77 @@ import { openAddSongPicker } from './add-song-picker.js';
 let wantedSongs = null;
 let wantedFetchStarted = false;
 let showAllWantedVocals = false;
+let showAllPartGaps = false;
 
 const WANTED_VOCAL_PREVIEW = 24;
+const PART_GAP_PREVIEW = 24;
 
 const INSTRUMENTAL_TYPES = new Set(['Fiddle Tune', 'Instrumental', 'Old-Time']);
+
+function tagNames(song) {
+    const t = song.tags;
+    if (!t) return [];
+    return Array.isArray(t) ? t : Object.keys(t);
+}
+
+/** Instruments a song already covers (ABC counts as fiddle). */
+function instrumentsCovered(song) {
+    const have = new Set();
+    if (song.abc_content) have.add('fiddle');
+    for (const part of song.tablature_parts || []) {
+        const inst = part.instrument || '';
+        for (const k of ['banjo', 'guitar', 'mandolin', 'fiddle', 'dobro', 'bass']) {
+            if (inst.includes(k)) have.add(k);
+        }
+    }
+    return have;
+}
+
+/**
+ * Songs ON the book with partial instrument coverage — e.g. Black Mountain
+ * Rag has fiddle notation but no banjo/mandolin/guitar tab. Computed from
+ * the index: searchable instrumental repertoire missing any of the core
+ * jam instruments.
+ */
+function computePartGaps() {
+    const gaps = [];
+    for (const song of allSongs) {
+        if (song.indexed === false || isPlaceholder(song)) continue;
+        const isInstrumental = song.abc_content || song.tablature_parts?.length ||
+            tagNames(song).includes('Instrumental');
+        if (!isInstrumental) continue;
+        const have = instrumentsCovered(song);
+        const wants = ['fiddle', 'banjo', 'mandolin', 'guitar'].filter(i => !have.has(i));
+        if (!wants.length) continue;
+        gaps.push({ song, have: [...have], wants });
+    }
+    gaps.sort((a, b) => (b.song.canonical_rank || 0) - (a.song.canonical_rank || 0) ||
+        String(a.song.title).localeCompare(String(b.song.title)));
+    return gaps;
+}
+
+function describeHave(song, have) {
+    const bits = [];
+    if (song.content) bits.push('chords');
+    if (song.abc_content) bits.push('fiddle notation');
+    for (const i of have) {
+        if (i !== 'fiddle') bits.push(`${INSTRUMENT_LABELS[i] || i} tab`);
+    }
+    return bits.join(', ');
+}
+
+function partGapCard({ song, have, wants }) {
+    const chips = wants.map(i =>
+        `<span class="wanted-chip">${escapeHtml(INSTRUMENT_LABELS[i] || i)}</span>`).join('');
+    const haveDesc = describeHave(song, have);
+    return `
+        <a href="#work/${escapeHtml(song.id)}" class="bounty-card partgap-card">
+            <div class="bounty-card-title">${escapeHtml(song.title)}</div>
+            ${haveDesc ? `<div class="bounty-card-has">Has: ${escapeHtml(haveDesc)}</div>` : ''}
+            <div class="wanted-chips">${chips}</div>
+        </a>
+    `;
+}
 
 const PART_TYPE_LABELS = {
     'lead-sheet': 'Lyrics & Chords',
@@ -231,6 +298,20 @@ export function renderBountyView(container) {
         </div>
     ` : (wantedSongs === null ? '<div class="bounty-section"><p class="bounty-filter-hint">Loading wanted list…</p></div>' : '');
 
+    // Songs on the book missing instrument coverage (tab/notation gaps)
+    const partGaps = computePartGaps();
+    const gapVisible = showAllPartGaps ? partGaps : partGaps.slice(0, PART_GAP_PREVIEW);
+    const partGapsHtml = partGaps.length ? `
+        <div class="bounty-section wanted-block">
+            <h2 class="bounty-section-title">On the Book — Needs More Instruments
+                <span class="bounty-group-count">(${partGaps.length})</span></h2>
+            <p class="bounty-filter-hint">Tunes we have, but not for every instrument — e.g. fiddle
+                notation with no banjo, mandolin, or guitar tab. Tap one to open it and add a part.</p>
+            <div class="bounty-grid">${gapVisible.map(partGapCard).join('')}</div>
+            ${partGaps.length > gapVisible.length ? `<button class="bounty-show-more" id="partgap-show-more">Show all ${partGaps.length}</button>` : ''}
+        </div>
+    ` : '';
+
     container.innerHTML = `
         <div class="bounty-view">
             <div class="bounty-header">
@@ -240,6 +321,8 @@ export function renderBountyView(container) {
             </div>
 
             ${wantedHtml}
+
+            ${partGapsHtml}
 
             <div class="bounty-filters" id="bounty-filters">
                 ${FILTER_OPTIONS.map(opt => `
@@ -331,6 +414,11 @@ export function renderBountyView(container) {
 
     container.querySelector('#wanted-show-more')?.addEventListener('click', () => {
         showAllWantedVocals = true;
+        renderBountyView(container);
+    });
+
+    container.querySelector('#partgap-show-more')?.addEventListener('click', () => {
+        showAllPartGaps = true;
         renderBountyView(container);
     });
 

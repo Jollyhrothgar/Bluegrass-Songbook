@@ -9586,3 +9586,8 @@ body.has-list-context.has-bottomband .container {
 }
 
 .bounty-show-more:hover { border-color: var(--accent); }
+
+.partgap-card {
+    text-decoration: none;
+    color: inherit;
+}
