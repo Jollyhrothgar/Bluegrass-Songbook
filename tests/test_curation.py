@@ -278,3 +278,13 @@ def test_load_prune_list_skips_comments(tmp_path):
 
 def test_load_prune_list_absent_file(tmp_path):
     assert load_prune_list(tmp_path) == set()
+
+
+def test_tag_exclusions_preserve_dict_shape():
+    # Index rows store tags as {name: {score}} — exclusions must not
+    # flatten the dict (Object.keys of a list renders "0 1 2" in the UI)
+    songs = [{'id': 'x', 'tags': {'BluegrassStandard': {'score': 5}, 'Folk': {'score': 3}}}]
+    reg = Registry(tag_exclusions={'x': ['BluegrassStandard']})
+    out = apply_tag_exclusions(songs, reg)
+    assert out[0]['tags'] == {'Folk': {'score': 3}}
+    assert isinstance(out[0]['tags'], dict)

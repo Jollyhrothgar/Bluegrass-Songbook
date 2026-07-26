@@ -254,7 +254,15 @@ def apply_tag_exclusions(songs: list, registry: Registry) -> list:
     if not exclusions:
         return songs
     for song in songs:
-        excluded = exclusions.get(song.get('id'))
-        if excluded and song.get('tags'):
-            song['tags'] = [t for t in song['tags'] if t not in set(excluded)]
+        excluded = set(exclusions.get(song.get('id')) or [])
+        tags = song.get('tags')
+        if not excluded or not tags:
+            continue
+        # Index rows carry tags as a dict {name: {score...}}; some inputs
+        # use plain lists. Preserve the shape — the frontend renders
+        # Object.keys(), so flattening a dict to a list breaks the UI.
+        if isinstance(tags, dict):
+            song['tags'] = {k: v for k, v in tags.items() if k not in excluded}
+        else:
+            song['tags'] = [t for t in tags if t not in excluded]
     return songs
