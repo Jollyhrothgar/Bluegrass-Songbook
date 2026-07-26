@@ -245,10 +245,18 @@ function togglePopover(popover, anchorBtn) {
     closePopover();
     popover.classList.remove('hidden');
     anchorBtn.classList.add('open');
-    // Keep the popover on-screen: flip to right-aligned when it would overflow.
+    // Keep the popover on-screen: flip to right-aligned when it would
+    // overflow right, then clamp whatever edge still pokes out (narrow
+    // viewports can overflow BOTH ways depending on the anchor position).
     popover.classList.remove('align-right');
+    popover.style.transform = '';
     const rect = popover.getBoundingClientRect();
     if (rect.right > window.innerWidth - 8) popover.classList.add('align-right');
+    const r2 = popover.getBoundingClientRect();
+    let shift = 0;
+    if (r2.left < 8) shift = 8 - r2.left;
+    else if (r2.right > window.innerWidth - 8) shift = (window.innerWidth - 8) - r2.right;
+    if (shift) popover.style.transform = `translateX(${Math.round(shift)}px)`;
     openPopover = { el: popover.parentElement, popover, anchorBtn };
 }
 
