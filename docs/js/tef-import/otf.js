@@ -18,6 +18,20 @@ export function midiToPitchName(midi) {
 
 const FINGERING_MAP = { 0x06: 'T', 0x0c: 'I', 0x12: 'M' };
 
+// V3 note byte 10 packs BOTH hands base-6: value = 6*pluck + lh_code.
+// pluck 1..5 -> picking finger T/I/M/R/P; lh_code 0 = none, else fretting
+// digit = lh_code - 1. Oracle-verified against TablEdit's MusicXML
+// <pluck>/<fingering> (see otf.py).
+const V3_PLUCK_LETTERS = { 1: 'T', 2: 'I', 3: 'M', 4: 'R', 5: 'P' };
+
+function v3Fingering(evt) {
+    const b10 = (evt.raw && evt.raw.length >= 12) ? evt.raw[10] : 0;
+    if (!(b10 > 0 && b10 <= 35)) return [null, null];
+    const pluck = V3_PLUCK_LETTERS[fdiv(b10, 6)] ?? null;
+    const lhCode = b10 % 6;
+    return [pluck, lhCode ? lhCode - 1 : null];
+}
+
 // --- instrument identity -----------------------------------------------------
 export function instrumentToOtfId(inst) {
     const name = inst.name.toLowerCase();
@@ -395,15 +409,22 @@ export function tefToOtf(tef) {
                         tie = false;
                         tech = 'b';
                     }
-                    let finger = null;
-                    if (evt.raw && evt.raw.length > 5) {
-                        const fretByte = evt.raw[2];
-                        const effect2 = evt.raw[5];
-                        if (((fretByte >> 5) & 0x01) && FINGERING_MAP[effect2]) {
-                            finger = FINGERING_MAP[effect2];
+                    // Fingering: V2 stores a bare pluck letter in effect2
+                    // (bit5-gated); V3 packs pluck + fretting digit base-6
+                    // in byte 10 (see v3Fingering).
+                    let finger = null, lh = null;
+                    if (isV2) {
+                        if (evt.raw && evt.raw.length > 5) {
+                            const fretByte = evt.raw[2];
+                            const effect2 = evt.raw[5];
+                            if (((fretByte >> 5) & 0x01) && FINGERING_MAP[effect2]) {
+                                finger = FINGERING_MAP[effect2];
+                            }
                         }
+                    } else {
+                        [finger, lh] = v3Fingering(evt);
                     }
-                    notes.push({ s: string, f: fret, tech, finger, tie, dur: evt.durationTicks });
+                    notes.push({ s: string, f: fret, tech, finger, lh, tie, dur: evt.durationTicks });
                 }
                 if (notes.length) outEvents.push({ tick, notes });
             }
@@ -412,13 +433,23 @@ export function tefToOtf(tef) {
         notation[trackId] = outMeasures;
     }
 
+    // Placed free-text annotations (V3 0x39 components: "Long Choke",
+    // chord letters, section banners). Positions share the note grid.
+    const annotations = (tef.text_events || []).map(te => ({
+        measure: fdiv(te.position, POSITIONS_PER_MEASURE) + 1,
+        tick: (te.position % POSITIONS_PER_MEASURE) * TICKS_PER_POSITION,
+        text: te.text,
+    }));
+
     const doc = {
         otf_version: '1.0',
         metadata, timing: { ticks_per_beat: 480 },
         tracks, notation,
-        reading_list: tef.reading_list.map(e => ({
-            from_measure: e.from_measure, to_measure: e.to_measure,
-        })),
+        annotations,
+        reading_list: tef.reading_list.map(e => (
+            e.name ? { from_measure: e.from_measure, to_measure: e.to_measure, name: e.name }
+                   : { from_measure: e.from_measure, to_measure: e.to_measure }
+        )),
         _tsChanges: tsChanges,
     };
 
@@ -456,6 +487,7 @@ export function toOtfDict(doc) {
                     const out = { s: n.s, f: n.f };
                     if (n.tech) out.tech = n.tech;
                     if (n.finger) out.finger = n.finger;
+                    if (n.lh !== null && n.lh !== undefined) out.lh = n.lh;
                     if (n.dur) out.dur = n.dur;
                     if (n.tie) out.tie = true;
                     return out;
@@ -463,6 +495,7 @@ export function toOtfDict(doc) {
             })),
         }));
     }
+    if (doc.annotations && doc.annotations.length) result.annotations = doc.annotations;
     if (doc.reading_list && doc.reading_list.length) result.reading_list = doc.reading_list;
     return result;
 }

@@ -466,9 +466,42 @@ export function parseReadingListV3(data) {
         if (eo + 4 > data.length) break;
         const from = u16(data, eo), to = u16(data, eo + 2);
         if (from === 0 && to === 0) continue;
-        entries.push({ from_measure: from, to_measure: to });
+        // Bytes 4+ carry the entry's label ("Intro", "Part A1", ...) —
+        // TablEdit prints it above the range's first measure.
+        let name = '';
+        for (let j = eo + 4; j < eo + entrySize && data[j] !== 0; j++) {
+            name += String.fromCharCode(data[j]);   // latin1 parity with Python
+        }
+        entries.push({ from_measure: from, to_measure: to, name });
     }
     return entries;
+}
+
+/**
+ * V3 free-text table: header offset 84 holds a pointer to
+ * [u16 count] + count x [u16 len][len bytes incl. trailing NUL].
+ * Note components of type 0x39 reference entries by 0-based index.
+ */
+export function parseTextTableV3(data) {
+    if (data.length < 88) return [];
+    const ptr = u32(data, 84);
+    if (!(ptr > 0 && ptr < data.length - 2)) return [];
+    const count = u16(data, ptr);
+    if (count > 1000) return [];
+    const table = [];
+    let off = ptr + 2;
+    for (let i = 0; i < count; i++) {
+        if (off + 2 > data.length) break;
+        const len = u16(data, off);
+        if (len > 1000 || off + 2 + len > data.length) break;
+        let s = '';
+        for (let j = off + 2; j < off + 2 + len && data[j] !== 0; j++) {
+            s += String.fromCharCode(data[j]);      // latin1 parity with Python
+        }
+        table.push(s);
+        off += 2 + len;
+    }
+    return table;
 }
 
 const V3_NON_NOTE_TYPES = new Set([0x33, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3d,
@@ -476,10 +509,11 @@ const V3_NON_NOTE_TYPES = new Set([0x33, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3d,
 
 export function parseNoteEventsV3(data, instruments) {
     const events = [];
+    const textRefs = [];   // 0x39 components: {position, stringRow, index}
     const startOffset = findComponentOffset(data);
     let globalTs = null;
     const tsChanges = [];
-    if (startOffset < 0) return { events, tsChanges, globalTs };
+    if (startOffset < 0) return { events, textRefs, tsChanges, globalTs };
 
     let totalStrings = instruments.reduce((s, i) => s + i.num_strings, 0);
     if (totalStrings === 0) totalStrings = 5;
@@ -538,7 +572,17 @@ export function parseNoteEventsV3(data, instruments) {
         const record = data.subarray(offset, offset + 12);
         const location = u32(record, 0);
         const componentType = record[4];
-        if (V3_NON_NOTE_TYPES.has(componentType)) { offset += 12; continue; }
+        if (V3_NON_NOTE_TYPES.has(componentType)) {
+            if (componentType === 0x39) {
+                textRefs.push({
+                    position: mapSlot(fdiv(location, VALUE_PER_POSITION)),
+                    stringRow: fdiv(location % VALUE_PER_POSITION, VALUE_PER_STRING),
+                    index: record[5],
+                });
+            }
+            offset += 12;
+            continue;
+        }
         const lowerBits = componentType & 0x1f;
         if (lowerBits < 0x01 || lowerBits > 0x19) {
             offset += 12;
@@ -573,7 +617,7 @@ export function parseNoteEventsV3(data, instruments) {
         });
         offset += 12;
     }
-    return { events, tsChanges, globalTs };
+    return { events, textRefs, tsChanges, globalTs };
 }
 
 export function parseV3(data, name) {
@@ -598,8 +642,22 @@ export function parseV3(data, name) {
         break;
     }
     const instruments = parseTrackRecordsV3(data);   // name-pattern fallback not ported
-    const { events, tsChanges, globalTs } = parseNoteEventsV3(data, instruments);
+    const { events, textRefs, tsChanges, globalTs } = parseNoteEventsV3(data, instruments);
     const readingList = parseReadingListV3(data);
+
+    // Resolve 0x39 text components against the text table; unresolvable
+    // indexes and empty strings are dropped (reader.py parity).
+    const textTable = parseTextTableV3(data);
+    const textEvents = [];
+    for (const ref of textRefs) {
+        if (ref.index >= 0 && ref.index < textTable.length && textTable[ref.index]) {
+            textEvents.push({
+                position: ref.position,
+                string_row: ref.stringRow,
+                text: textTable[ref.index],
+            });
+        }
+    }
 
     return {
         path_stem: name,
@@ -607,6 +665,7 @@ export function parseV3(data, name) {
         title,
         instruments,
         note_events: events,
+        text_events: textEvents,
         reading_list: readingList,
         time_signature_changes: tsChanges,
         v3_global_ts: globalTs,
