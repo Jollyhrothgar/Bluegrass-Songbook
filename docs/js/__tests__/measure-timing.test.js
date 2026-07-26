@@ -19,6 +19,8 @@ import {
     readingListTimeline,
     TimelineTiming,
     expandNotation,
+    densifyNotation,
+    attachOtfDecorations,
     makePlaybackToVisualMapper,
     buildMetronomeSchedule,
     analyzeReadingList,
@@ -174,11 +176,14 @@ describe('expandNotation', () => {
     it('preserves timeline slots for measures missing from a sparse track', () => {
         // 27493 shape: mandolin has nothing in measures 1-5; before the fix
         // expansion renumbered its first measure to 1, playing it 5 measures
-        // early relative to the other tracks.
+        // early relative to the other tracks. Silent slots now come out as
+        // EMPTY entries so the renderer draws the silent bar instead of
+        // collapsing it (Welcome to New York m30-31).
         const tl = identityTimeline(3);
         const out = expandNotation(notation, tl);
-        expect(out.map(m => m.measure)).toEqual([2, 3]);
-        expect(out.map(m => m.originalMeasure)).toEqual([2, 3]);
+        expect(out.map(m => m.measure)).toEqual([1, 2, 3]);
+        expect(out.map(m => m.originalMeasure)).toEqual([1, 2, 3]);
+        expect(out[0].events).toEqual([]);
     });
 
     it('unrolls repeats and keeps original refs', () => {
@@ -187,11 +192,94 @@ describe('expandNotation', () => {
             { from_measure: 2, to_measure: 3 },
         ], 3);
         const out = expandNotation(notation, tl);
-        // slots: d1<-1 (missing), d2<-2, d3<-3, d4<-2, d5<-3
+        // slots: d1<-1 (silent -> empty entry), d2<-2, d3<-3, d4<-2, d5<-3
         expect(out.map(m => [m.measure, m.originalMeasure])).toEqual(
-            [[2, 2], [3, 3], [4, 2], [5, 3]]);
+            [[1, 1], [2, 2], [3, 3], [4, 2], [5, 3]]);
+        expect(out[0].events).toEqual([]);
         // events are cloned refs, not renumbered
-        expect(out[2].events[0].tick).toBe(0);
+        expect(out[3].events[0].tick).toBe(0);
+    });
+});
+
+describe('densifyNotation', () => {
+    it('fills written-measure gaps with empty entries', () => {
+        // Welcome to New York: m30-31 have no events, so the parser omits
+        // them; the display copy must still show the silent bars.
+        const notation = [
+            { measure: 1, events: [{ tick: 0, notes: [{ s: 1, f: 0 }] }] },
+            { measure: 4, events: [{ tick: 0, notes: [{ s: 2, f: 2 }] }] },
+        ];
+        const out = densifyNotation(notation);
+        expect(out.map(m => m.measure)).toEqual([1, 2, 3, 4]);
+        expect(out[1].events).toEqual([]);
+        expect(out[2].events).toEqual([]);
+        expect(out[0]).toBe(notation[0]); // present entries pass through
+    });
+
+    it('fills a silent tail up to maxMeasure for cross-track alignment', () => {
+        const notation = [{ measure: 1, events: [] }];
+        const out = densifyNotation(notation, 3);
+        expect(out.map(m => m.measure)).toEqual([1, 2, 3]);
+    });
+
+    it('returns already-dense notation untouched', () => {
+        const notation = [
+            { measure: 1, events: [] },
+            { measure: 2, events: [] },
+        ];
+        expect(densifyNotation(notation)).toBe(notation);
+    });
+
+    it('handles empty input', () => {
+        expect(densifyNotation([])).toEqual([]);
+        expect(densifyNotation(null)).toBeNull();
+    });
+});
+
+describe('attachOtfDecorations', () => {
+    const notation = [
+        { measure: 1, events: [] },
+        { measure: 2, events: [] },
+        { measure: 3, events: [] },
+    ];
+
+    it('attaches annotations grouped per measure and section labels', () => {
+        const otf = {
+            annotations: [
+                { measure: 2, tick: 0, text: 'Long Choke' },
+                { measure: 2, tick: 960, text: 'C' },
+            ],
+            reading_list: [
+                { from_measure: 1, to_measure: 2, name: 'Intro' },
+                { from_measure: 3, to_measure: 3 },   // unnamed
+            ],
+        };
+        const out = attachOtfDecorations(notation, otf);
+        expect(out[0].section).toBe('Intro');
+        expect(out[1].texts).toEqual([
+            { tick: 0, text: 'Long Choke' },
+            { tick: 960, text: 'C' },
+        ]);
+        expect(out[2].texts).toBeUndefined();
+        expect(out[2].section).toBeUndefined();
+        // untouched entries pass through by reference
+        expect(out[2]).toBe(notation[2]);
+    });
+
+    it('is a no-op without annotations or named ranges', () => {
+        const otf = { annotations: [], reading_list: [{ from_measure: 1, to_measure: 3 }] };
+        expect(attachOtfDecorations(notation, otf)).toBe(notation);
+        expect(attachOtfDecorations(notation, {})).toBe(notation);
+    });
+
+    it('first named range wins when two share a start measure', () => {
+        const otf = {
+            reading_list: [
+                { from_measure: 1, to_measure: 4, name: 'A' },
+                { from_measure: 1, to_measure: 2, name: 'B' },
+            ],
+        };
+        expect(attachOtfDecorations(notation, otf)[0].section).toBe('A');
     });
 });
 
@@ -369,5 +457,44 @@ describe('analyzeReadingList — overlapping D.S.-style lists (27493)', () => {
         expect([...a.repeatEndMarkers].sort((x, y) => x - y)).toEqual([8, 16]);
         // plain repeats — no first/second endings
         expect(Object.keys(a.endings)).toHaveLength(0);
+    });
+
+    it('two parts, backward-repeat 2nd part: Welcome to New York (Bill Emerson)', () => {
+        // Part A: |: 5 ..11 |1.12 :| |2.13   Part B: |: 14 ..27 |1.28..48 :| |2.49
+        // Part B's first-ending pass is emitted ahead of (and split across) the
+        // common replay [14-27], so its replay entry starts BEFORE the prior
+        // entry — the Case-5 backward-repeat the other cases miss.
+        const a = _arl([
+            { from_measure: 1, to_measure: 3 }, { from_measure: 4, to_measure: 12 },
+            { from_measure: 5, to_measure: 11 }, { from_measure: 13, to_measure: 31 },
+            { from_measure: 32, to_measure: 48 }, { from_measure: 14, to_measure: 27 },
+            { from_measure: 49, to_measure: 50 },
+        ]);
+        expect([...a.repeatStartMarkers].sort((x, y) => x - y)).toEqual([5, 14]);
+        expect([...a.repeatEndMarkers].sort((x, y) => x - y)).toEqual([12, 48]);
+        // Part A: 12 is 1st ending, 13 is 2nd. Part B: 28..48 is 1st ending, 49 is 2nd.
+        expect(a.endings[12]).toBe(1);
+        expect(a.endings[13]).toBe(2);
+        expect(a.endings[28]).toBe(1);
+        expect(a.endings[48]).toBe(1);
+        expect(a.endings[49]).toBe(2);
+
+        // The long (21-bar) Part B 1st ending must be LABELLED once, at its
+        // start (m28), not on every bar — endingStart marks only the 4 real
+        // volta starts so the renderer stamps "N." there and continues the
+        // bracket unlabelled across rows.
+        const rl = [
+            { from_measure: 1, to_measure: 3 }, { from_measure: 4, to_measure: 12 },
+            { from_measure: 5, to_measure: 11 }, { from_measure: 13, to_measure: 31 },
+            { from_measure: 32, to_measure: 48 }, { from_measure: 14, to_measure: 27 },
+            { from_measure: 49, to_measure: 50 },
+        ];
+        const notation = Array.from({ length: 50 }, (_, i) => ({ measure: i + 1, events: [] }));
+        const compact = prepareCompactNotation(notation, rl);
+        const starts = compact.filter(m => m.endingStart).map(m => m.measure);
+        expect(starts).toEqual([12, 13, 28, 49]);
+        // interior ending bars carry `ending` but NOT `endingStart`
+        expect(compact[28].ending).toBe(1);          // m29
+        expect(compact[28].endingStart).toBeUndefined();
     });
 });

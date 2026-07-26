@@ -37,7 +37,8 @@ import {
     TimelineTiming, identityTimeline, readingListTimeline,
     expandNotation, makePlaybackToVisualMapper,
     maxMeasureIn, measureTimingFromOtf,
-    prepareCompactNotation,
+    analyzeReadingList, prepareCompactNotation, densifyNotation,
+    attachOtfDecorations,
 } from './renderers/index.js';
 import { clearListView, openNotesSheet } from './lists.js';
 import { showListPicker, updateTriggerButton } from './list-picker.js';
@@ -1496,6 +1497,14 @@ async function renderTablaturePart(part, container) {
 
             if (isMandolin && !isLead) continue;
 
+            // OTF omits silent measures; fill them so empty bars render
+            // (through the ALL-track max, keeping tracks time-aligned).
+            notation = densifyNotation(notation, maxMeasureIn(otf.notation));
+
+            // Free-text annotations + reading-list section labels
+            // (display copy; attach after densify — annotations may
+            // target silent measures).
+            notation = attachOtfDecorations(notation, otf);
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
                 notation = prepareCompactNotation(notation, otf.reading_list);
             } else if (otf.reading_list && otf.reading_list.length > 0) {

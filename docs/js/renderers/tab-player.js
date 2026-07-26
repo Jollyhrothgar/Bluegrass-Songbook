@@ -132,6 +132,25 @@ export function slideWaypoints(deltaSemitones, holdSec, noteDurSec) {
     ];
 }
 
+// A bend/choke (OTF tech "b") rises a QUARTER TONE above the fretted note.
+// Banjo chokes typically bend a half step to a full step; a quarter tone is a
+// subtle, expressive micro-bend. Adjust here to taste.
+export const BEND_SEMITONES = 0.5;   // 0.5 semitone = a quarter tone
+
+/**
+ * Pitch-glide waypoints for a bend/choke, in WebAudioFont's `slides` format.
+ * Unlike a slide (a quick finger-dart), a choke is a slow, expressive rise: the
+ * note attacks at pitch, then bends up by `semitones` over the first part of its
+ * duration and holds. Pure.
+ */
+export function bendWaypoints(semitones, noteDurSec) {
+    const riseSec = Math.min(Math.max(noteDurSec * 0.5, 0.06), 0.18);
+    return [
+        { delta: 0, when: 0 },
+        { delta: semitones, when: riseSec },
+    ];
+}
+
 export function effectiveDurationSeconds(note, stringGap, rhythmicGap) {
     let duration;
     if (note.explicitDurSec != null) {
@@ -494,7 +513,8 @@ export class TabPlayer {
                             decay: mix.decay,
                             trackId: track.id,
                             instrument: track.instrument,
-                            muted: note.tech === 'x'  // dead note (chop)
+                            muted: note.tech === 'x',  // dead note (chop)
+                            bend: note.tech === 'b'    // choke: pitch rises a quarter tone
                         };
                         trackNotes.push(tn);
                         lastByString[note.s] = tn;
@@ -664,6 +684,9 @@ export class TabPlayer {
                         (note.slide.atTick - note.absTick) * secondsPerTick);
                     slides = slideWaypoints(
                         note.slide.toMidi - note.midi, holdSec, note.duration);
+                } else if (note.bend) {
+                    // Choke: the note attacks, then its pitch bends up a quarter tone.
+                    slides = bendWaypoints(BEND_SEMITONES, note.duration);
                 }
                 const envelope = this.player.queueWaveTable(
                     this.audioContext,

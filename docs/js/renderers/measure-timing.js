@@ -208,21 +208,49 @@ export class TimelineTiming {
 }
 
 /**
+ * Fill written-measure gaps with empty entries. OTF omits measures that
+ * have no events (silent bars — TEF and the Python parser both do this),
+ * and timing already preserves their duration; but display consumers that
+ * iterate the notation array back-to-back would otherwise collapse the
+ * silent bars visually (labels jump the gap, ending brackets split).
+ * Returns the input untouched when it is already dense.
+ *
+ * @param {Array} notation - [{measure, events}] sorted by measure
+ * @param {number} [maxMeasure] - fill through this measure (e.g. the max
+ *   across all tracks so silent tails stay aligned); defaults to the
+ *   track's own last measure.
+ */
+export function densifyNotation(notation, maxMeasure = 0) {
+    if (!notation || notation.length === 0) return notation;
+    const byMeasure = new Map();
+    let max = maxMeasure;
+    for (const m of notation) {
+        byMeasure.set(m.measure, m);
+        if (m.measure > max) max = m.measure;
+    }
+    if (byMeasure.size === max) return notation; // already dense from 1
+    const out = [];
+    for (let n = 1; n <= max; n++) {
+        out.push(byMeasure.get(n) || { measure: n, events: [] });
+    }
+    return out;
+}
+
+/**
  * Expand a track's notation onto a timeline. Slots whose original measure
- * has no entry in this track produce no output entry, but their slot (and
- * therefore their time) is preserved — display numbering never collapses.
- * (The old per-track renumbering shifted sparse tracks early: 27493's
- * mandolin, silent for measures 1-5, played 5 measures ahead.)
+ * has no entry in this track produce an EMPTY entry — their time was
+ * always preserved, and emitting the entry renders the silent bar instead
+ * of collapsing it visually. Display numbering never collapses. (The old
+ * per-track renumbering shifted sparse tracks early: 27493's mandolin,
+ * silent for measures 1-5, played 5 measures ahead.)
  */
 export function expandNotation(notation, timeline) {
     const byMeasure = new Map();
     for (const entry of notation || []) byMeasure.set(entry.measure, entry);
     const out = [];
     for (const { display, original } of timeline) {
-        const src = byMeasure.get(original);
-        if (src) {
-            out.push({ ...src, measure: display, originalMeasure: original });
-        }
+        const src = byMeasure.get(original) || { events: [] };
+        out.push({ ...src, measure: display, originalMeasure: original });
     }
     return out;
 }
@@ -351,6 +379,23 @@ export function analyzeReadingList(readingList) {
             repeatStartMarkers.add(nextStart);
             repeatEndMarkers.add(currEnd);
         }
+
+        // Case 5: next is a subset repeat that starts BEFORE current — a
+        // BACKWARD repeat whose first-ending pass was emitted ahead of (and
+        // possibly split across) the common-section replay. The other cases
+        // all assume next.from >= curr.from and miss this. Welcome to New York
+        // part B: [..,13-31],[32-48],[14-27],[49-50] — at [32-48]→[14-27] the
+        // replay jumps back to 14, so: |: 14 ..common 27 |1. 28..48 :| |2. 49.
+        // The :| closes the first ending (currEnd), matching Cases 1/2.
+        if (nextStart < currStart && nextEnd < currEnd && nextEnd >= nextStart) {
+            repeatStartMarkers.add(nextStart);
+            repeatEndMarkers.add(currEnd);
+            for (let m = nextEnd + 1; m <= currEnd; m++) endings[m] = 1;
+            const afterRepeat = readingList[i + 2];
+            if (afterRepeat && afterRepeat.from_measure === currEnd + 1) {
+                endings[currEnd + 1] = 2;
+            }
+        }
     }
 
     return { repeatStartMarkers, repeatEndMarkers, endings };
@@ -370,8 +415,54 @@ export function prepareCompactNotation(notation, readingList) {
         const enhanced = { ...measure };
         if (analysis.repeatStartMarkers.has(m)) enhanced.repeatStart = true;
         if (analysis.repeatEndMarkers.has(m)) enhanced.repeatEnd = true;
-        if (analysis.endings[m]) enhanced.ending = analysis.endings[m];
+        if (analysis.endings[m]) {
+            enhanced.ending = analysis.endings[m];
+            // Mark the first measure of a contiguous ending run so the renderer
+            // labels the volta once at its start (a long ending spanning rows
+            // otherwise re-stamps "N." on every row).
+            if (analysis.endings[m - 1] !== analysis.endings[m]) enhanced.endingStart = true;
+        }
         return enhanced;
+    });
+}
+
+/**
+ * Attach display decorations from the OTF document onto a track's
+ * notation entries (display copy — the document itself is untouched):
+ *
+ * - `texts`:   placed free-text annotations ("Long Choke", chord letters)
+ *              from otf.annotations, grouped per written measure
+ * - `section`: reading-list entry names ("Intro", "Part A1") on each
+ *              range's first measure — TablEdit prints them there
+ *
+ * Call AFTER densifyNotation (annotations may target silent measures —
+ * Welcome to New York m30-31 carry the "...solo" texts) and BEFORE
+ * prepareCompactNotation/expandNotation, so the decorations ride along
+ * into either display mode.
+ */
+export function attachOtfDecorations(notation, otf) {
+    const anns = otf?.annotations || [];
+    const named = (otf?.reading_list || []).filter(e => e.name);
+    if (!anns.length && !named.length) return notation;
+    const textsByMeasure = new Map();
+    for (const a of anns) {
+        if (!textsByMeasure.has(a.measure)) textsByMeasure.set(a.measure, []);
+        textsByMeasure.get(a.measure).push({ tick: a.tick, text: a.text });
+    }
+    const sectionByMeasure = new Map();
+    for (const e of named) {
+        if (!sectionByMeasure.has(e.from_measure)) {
+            sectionByMeasure.set(e.from_measure, e.name);
+        }
+    }
+    return notation.map(m => {
+        const texts = textsByMeasure.get(m.measure);
+        const section = sectionByMeasure.get(m.measure);
+        if (!texts && !section) return m;
+        const out = { ...m };
+        if (texts) out.texts = texts;
+        if (section) out.section = section;
+        return out;
     });
 }
 
