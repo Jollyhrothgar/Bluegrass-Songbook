@@ -14,6 +14,7 @@ let wantedSongs = null;
 let wantedFetchStarted = false;
 let showAllWantedVocals = false;
 let showAllPartGaps = false;
+let showAllChordGaps = false;
 
 const WANTED_VOCAL_PREVIEW = 24;
 const PART_GAP_PREVIEW = 24;
@@ -70,6 +71,32 @@ function describeHave(song, have) {
         if (i !== 'fiddle') bits.push(`${INSTRUMENT_LABELS[i] || i} tab`);
     }
     return bits.join(', ');
+}
+
+/**
+ * Songs on the book that are lyrics-only — content but zero chords
+ * (mostly the BluegrassLyrics import). chord_count comes from the index,
+ * so this is exact and cheap; subtler partial-chord cases live in the
+ * offline chord-gaps report, not here.
+ */
+function computeChordGaps() {
+    const gaps = allSongs.filter(song =>
+        song.indexed !== false && !isPlaceholder(song) &&
+        song.content && song.lyrics?.trim() && !(song.chord_count > 0));
+    gaps.sort((a, b) => (b.canonical_rank || 0) - (a.canonical_rank || 0) ||
+        String(a.title).localeCompare(String(b.title)));
+    return gaps;
+}
+
+function chordGapCard(song) {
+    return `
+        <a href="#work/${escapeHtml(song.id)}" class="bounty-card partgap-card">
+            <div class="bounty-card-title">${escapeHtml(song.title)}</div>
+            ${song.artist ? `<div class="bounty-card-artist">${escapeHtml(song.artist)}</div>` : ''}
+            <div class="bounty-card-has">Has: lyrics</div>
+            <div class="wanted-chips"><span class="wanted-chip">Chords</span></div>
+        </a>
+    `;
 }
 
 function partGapCard({ song, have, wants }) {
@@ -312,6 +339,20 @@ export function renderBountyView(container) {
         </div>
     ` : '';
 
+    // Lyrics-only songs wanting chords
+    const chordGaps = computeChordGaps();
+    const chordVisible = showAllChordGaps ? chordGaps : chordGaps.slice(0, PART_GAP_PREVIEW);
+    const chordGapsHtml = chordGaps.length ? `
+        <div class="bounty-section wanted-block">
+            <h2 class="bounty-section-title">On the Book — Needs Chords
+                <span class="bounty-group-count">(${chordGaps.length})</span></h2>
+            <p class="bounty-filter-hint">Songs we have the words for but not the changes.
+                Know how it goes? Tap one and hit Edit.</p>
+            <div class="bounty-grid">${chordVisible.map(chordGapCard).join('')}</div>
+            ${chordGaps.length > chordVisible.length ? `<button class="bounty-show-more" id="chordgap-show-more">Show all ${chordGaps.length}</button>` : ''}
+        </div>
+    ` : '';
+
     container.innerHTML = `
         <div class="bounty-view">
             <div class="bounty-header">
@@ -323,6 +364,8 @@ export function renderBountyView(container) {
             ${wantedHtml}
 
             ${partGapsHtml}
+
+            ${chordGapsHtml}
 
             <div class="bounty-filters" id="bounty-filters">
                 ${FILTER_OPTIONS.map(opt => `
@@ -419,6 +462,11 @@ export function renderBountyView(container) {
 
     container.querySelector('#partgap-show-more')?.addEventListener('click', () => {
         showAllPartGaps = true;
+        renderBountyView(container);
+    });
+
+    container.querySelector('#chordgap-show-more')?.addEventListener('click', () => {
+        showAllChordGaps = true;
         renderBountyView(container);
     });
 
