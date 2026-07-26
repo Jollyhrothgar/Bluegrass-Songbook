@@ -32,6 +32,26 @@ FINGERING_MAP = {
     0x12: 'M',  # Middle
 }
 
+# V3 note byte 10 packs BOTH hands base-6: value = 6*pluck + lh_code.
+# pluck 1..5 = picking finger (T I M R P; MusicXML pluck p i m a c),
+# lh_code 0 = none, else fretting digit = lh_code - 1 (so '3' -> 4).
+# Oracle-verified against TablEdit's MusicXML <pluck>/<fingering> on
+# Welcome to New York (37/37 notes match, incl. combined values like
+# 0x0b = p + finger 4 and 0x0a = p + finger 3).
+V3_PLUCK_LETTERS = {1: 'T', 2: 'I', 3: 'M', 4: 'R', 5: 'P'}
+
+
+def v3_fingering(event: TEFNoteEvent) -> tuple[str | None, int | None]:
+    """Decode (pluck_letter, left_hand_digit) from a V3 note's byte 10."""
+    raw = event.raw_data
+    b10 = raw[10] if raw and len(raw) >= 12 else 0
+    if not 0 < b10 <= 35:
+        return None, None
+    pluck = V3_PLUCK_LETTERS.get(b10 // 6)
+    lh_code = b10 % 6
+    lh = lh_code - 1 if lh_code else None
+    return pluck, lh
+
 
 @dataclass
 class OTFNote:
@@ -39,7 +59,8 @@ class OTFNote:
     s: int           # String number (1 = highest pitch)
     f: int           # Fret number (0 = open)
     tech: str | None = None    # Technique code (h, p, /, etc.)
-    finger: str | None = None  # Fingering annotation (T, I, M)
+    finger: str | None = None  # Picking-hand fingering (T, I, M, R, P)
+    lh: int | None = None      # Fretting-hand digit (0-4), circled in display
     dur: int | None = None     # Duration in ticks (for sustained notes)
     tie: bool = False          # True if tied to previous note (no re-articulation)
 
@@ -94,6 +115,15 @@ class OTFReadingListEntry:
     """Reading list entry for playback order."""
     from_measure: int
     to_measure: int
+    name: str = ""   # Optional section label ("Intro", "Part A1", ...)
+
+
+@dataclass
+class OTFAnnotation:
+    """A placed free-text annotation ("Long Choke", chord letters, ...)."""
+    measure: int     # 1-indexed written measure
+    tick: int        # Tick offset within the measure
+    text: str
 
 
 @dataclass
@@ -104,6 +134,7 @@ class OTFDocument:
     timing: OTFTiming = field(default_factory=OTFTiming)
     tracks: list[OTFTrack] = field(default_factory=list)
     notation: dict[str, list[OTFMeasure]] = field(default_factory=dict)
+    annotations: list[OTFAnnotation] = field(default_factory=list)
     reading_list: list[OTFReadingListEntry] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
@@ -153,6 +184,8 @@ class OTFDocument:
                             n["tech"] = note.tech
                         if note.finger:
                             n["finger"] = note.finger
+                        if note.lh is not None:
+                            n["lh"] = note.lh
                         if note.dur:
                             n["dur"] = note.dur
                         if note.tie:
@@ -161,12 +194,21 @@ class OTFDocument:
                     m["events"].append(e)
                 result["notation"][track_id].append(m)
 
+        # Add placed free-text annotations if present
+        if self.annotations:
+            result["annotations"] = [
+                {"measure": a.measure, "tick": a.tick, "text": a.text}
+                for a in self.annotations
+            ]
+
         # Add reading list if present
         if self.reading_list:
-            result["reading_list"] = [
-                {"from_measure": e.from_measure, "to_measure": e.to_measure}
-                for e in self.reading_list
-            ]
+            result["reading_list"] = []
+            for e in self.reading_list:
+                entry = {"from_measure": e.from_measure, "to_measure": e.to_measure}
+                if e.name:
+                    entry["name"] = e.name
+                result["reading_list"].append(entry)
 
         return result
 
@@ -948,15 +990,21 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                         if (evt.track, evt.position, string) in bend_keys:
                             tie = False
                             tech = 'b'
-                        # Extract fingering annotation from effect2 when bit5 is set
+                        # Fingering: V2 stores a bare pluck letter in effect2
+                        # (bit5-gated); V3 packs pluck + fretting digit
+                        # base-6 in byte 10 (see v3_fingering).
                         finger = None
-                        if evt.raw_data and len(evt.raw_data) > 5:
-                            fret_byte = evt.raw_data[2]
-                            effect2 = evt.raw_data[5]
-                            if (fret_byte >> 5) & 0x01 and effect2 in FINGERING_MAP:
-                                finger = FINGERING_MAP[effect2]
-                        note = OTFNote(s=string, f=fret, tech=tech, finger=finger, tie=tie,
-                                       dur=evt.duration_ticks)
+                        lh = None
+                        if tef.header.is_v2:
+                            if evt.raw_data and len(evt.raw_data) > 5:
+                                fret_byte = evt.raw_data[2]
+                                effect2 = evt.raw_data[5]
+                                if (fret_byte >> 5) & 0x01 and effect2 in FINGERING_MAP:
+                                    finger = FINGERING_MAP[effect2]
+                        else:
+                            finger, lh = v3_fingering(evt)
+                        note = OTFNote(s=string, f=fret, tech=tech, finger=finger,
+                                       lh=lh, tie=tie, dur=evt.duration_ticks)
                         otf_event.notes.append(note)
 
                 if otf_event.notes:
@@ -969,11 +1017,22 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     # timing hack (see normalize_slide_timing / tab-debug SKILL).
     normalize_slide_timing(doc)
 
-    # Reading list
+    # Placed free-text annotations (V3 0x39 components: "Long Choke",
+    # chord letters, section banners). Positions share the note grid, so
+    # the same 16-slots-per-measure math applies.
+    for te in tef.text_events:
+        doc.annotations.append(OTFAnnotation(
+            measure=(te.position // POSITIONS_PER_MEASURE) + 1,
+            tick=(te.position % POSITIONS_PER_MEASURE) * TICKS_PER_POSITION,
+            text=te.text,
+        ))
+
+    # Reading list (with section labels when the file names its entries)
     for entry in tef.reading_list:
         doc.reading_list.append(OTFReadingListEntry(
             from_measure=entry.from_measure,
             to_measure=entry.to_measure,
+            name=entry.name,
         ))
 
     return doc
