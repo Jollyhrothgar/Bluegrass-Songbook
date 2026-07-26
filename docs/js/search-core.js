@@ -695,17 +695,27 @@ function formatCoveringArtists(artists, primaryArtist) {
 }
 
 /**
+ * The searchable corpus: rows the jam-repertoire prune left indexed.
+ * Pruned rows (indexed === false) stay in allSongs so deep links, lists,
+ * and arrangement groups still resolve — but search, browse, and counts
+ * never surface them.
+ */
+export function searchableSongs() {
+    return allSongs.filter(s => s.indexed !== false);
+}
+
+/**
  * Show popular songs on initial load (sorted by canonical_rank)
  */
 export function showPopularSongs() {
     // Sort by canonical_rank (higher = more popular)
-    const sorted = [...allSongs].sort((a, b) => {
+    const sorted = searchableSongs().sort((a, b) => {
         const aRank = a.canonical_rank || 0;
         const bRank = b.canonical_rank || 0;
         return bRank - aRank;
     });
     // Use distinct title count to match subtitle
-    const distinctCount = new Set(allSongs.map(s => s.title?.toLowerCase())).size;
+    const distinctCount = new Set(searchableSongs().map(s => s.title?.toLowerCase())).size;
     if (searchStatsEl) {
         searchStatsEl.textContent = `${distinctCount.toLocaleString()} songs`;
     }
@@ -737,7 +747,7 @@ export function search(query, options = {}) {
         pendingSearchData = null;
         lastRecordedQuery = null;
         showPopularSongs();
-        return allSongs;
+        return searchableSongs();
     }
 
     const {
@@ -753,7 +763,7 @@ export function search(query, options = {}) {
     const stemmedTerms = textTerms.map(stemWord);
     const stemOnlyMatches = new Set();
 
-    const results = allSongs.filter(song => {
+    const results = searchableSongs().filter(song => {
         // General text search (searches all fields)
         if (textTerms.length > 0) {
             const searchText = [

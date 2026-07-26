@@ -585,23 +585,32 @@ function buildArrangementPill() {
     }, { id: 'arrangement-pill', title: 'Arrangements of this song', className: 'pill-wide' });
 }
 
-async function renderArrangementList(container, versions) {
+async function renderArrangementList(container, versions, voteData = null) {
     const groupId = versions[0]?.group_id;
 
-    // Vote counts via the same supabase fetch the version-picker modal used
-    let voteCounts = {};
-    let userVotes = {};
-    if (typeof SupabaseAuth !== 'undefined' && groupId) {
-        try {
-            const { data } = await SupabaseAuth.fetchGroupVotes(groupId);
-            voteCounts = data || {};
-            if (SupabaseAuth.isLoggedIn()) {
-                const { data: uv } = await SupabaseAuth.fetchUserVotes(versions.map(v => v.id));
-                userVotes = uv || {};
+    // Render immediately with whatever vote data we have; votes are
+    // decoration and must never gate the list (a slow Supabase fetch left
+    // the popover stuck on "Loading…").
+    const voteCounts = voteData?.voteCounts || {};
+    const userVotes = voteData?.userVotes || {};
+    if (voteData === null && typeof SupabaseAuth !== 'undefined' && groupId) {
+        (async () => {
+            try {
+                const { data } = await SupabaseAuth.fetchGroupVotes(groupId);
+                const counts = data || {};
+                let uv = {};
+                if (SupabaseAuth.isLoggedIn()) {
+                    const { data: u } = await SupabaseAuth.fetchUserVotes(versions.map(v => v.id));
+                    uv = u || {};
+                }
+                if (container.isConnected) {
+                    renderArrangementList(container, versions,
+                        { voteCounts: counts, userVotes: uv });
+                }
+            } catch (e) {
+                // votes are optional decoration
             }
-        } catch (e) {
-            // votes are optional decoration
-        }
+        })();
     }
 
     // Canonical first, then by votes (same ordering as the old modal)

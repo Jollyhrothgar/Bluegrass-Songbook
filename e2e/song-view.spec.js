@@ -7,12 +7,12 @@ import { gotoSearch, searchAndOpen, openPill, chords } from './helpers.js';
 test.describe('Song View', () => {
     test.beforeEach(async ({ page }) => {
         await gotoSearch(page);
-        await searchAndOpen(page, 'your cheating heart', /your cheat/i);
+        await searchAndOpen(page, 'old home place', /old home place/i);
     });
 
     test('displays song title and artist line', async ({ page }) => {
         await expect(page.locator('.song-title')).toBeVisible();
-        await expect(page.locator('.song-title')).toContainText(/cheat/i);
+        await expect(page.locator('.song-title')).toContainText(/old home place/i);
         await expect(page.locator('.song-artist-line')).toBeVisible();
     });
 
@@ -152,7 +152,7 @@ test.describe('Song Navigation', () => {
 test.describe('Print', () => {
     test('Export pill print action triggers print', async ({ page }) => {
         await gotoSearch(page);
-        await searchAndOpen(page, 'your cheating heart', /your cheat/i);
+        await searchAndOpen(page, 'old home place', /old home place/i);
 
         // Track if window.print was called
         let printCalled = false;

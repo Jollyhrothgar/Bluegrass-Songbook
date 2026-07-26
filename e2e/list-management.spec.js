@@ -203,7 +203,10 @@ test.describe('Removing Songs from Lists', () => {
         // Navigate to favorites
         await navClick(page, 'favorites');
 
-        await expect(page.locator('#search-stats')).toContainText('1');
+        // The list header owns the count (renderListViewUI clears #search-stats
+        // — the old assertion on it only passed because a stray async render
+        // left "17,432 songs" there, which happens to contain a "1")
+        await expect(page.locator('#list-header-count')).toContainText('1');
 
         // Click list button on the item in favorites view
         await page.locator('.result-list-btn').first().click();

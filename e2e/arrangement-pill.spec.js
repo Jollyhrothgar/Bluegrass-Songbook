@@ -33,7 +33,7 @@ test.describe('Arrangement Pill', () => {
         const popover = await openPill(page, 'arrangement-pill');
 
         const items = popover.locator('.arrangement-item');
-        expect(await items.count()).toBeGreaterThanOrEqual(2);
+        await expect(items.nth(1)).toBeVisible();  // retrying: list renders async
 
         // Exactly one is marked as currently viewing
         await expect(popover.locator('.arrangement-item.current')).toHaveCount(1);

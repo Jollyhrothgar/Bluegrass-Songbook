@@ -116,7 +116,7 @@ test.describe('Overflow Menu', () => {
 
     test('song page overflow has Report issue → feedback modal', async ({ page }) => {
         await gotoSearch(page);
-        await searchAndOpen(page, 'your cheating heart', /your cheat/i);
+        await searchAndOpen(page, 'old home place', /old home place/i);
 
         await page.locator('#topbar-overflow-btn').click();
         const flagItem = page.locator('#flag-btn');
@@ -125,7 +125,7 @@ test.describe('Overflow Menu', () => {
 
         await expect(page.locator('#flag-modal')).toBeVisible();
         // Song context is attached to the report
-        await expect(page.locator('#flag-song-context')).toContainText(/cheat/i);
+        await expect(page.locator('#flag-song-context')).toContainText(/old home place/i);
     });
 
     test('overflow menu closes on outside click', async ({ page }) => {
@@ -143,7 +143,7 @@ test.describe('Overflow Menu', () => {
 test.describe('Keyboard Shortcuts', () => {
     test('back button returns from song to search', async ({ page }) => {
         await gotoSearch(page);
-        await searchAndOpen(page, 'your cheating heart', /your cheat/i);
+        await searchAndOpen(page, 'old home place', /old home place/i);
 
         await page.goBack();
         await page.waitForTimeout(300);

@@ -485,7 +485,8 @@ const COLLECTION_ICONS = {
  * This matches the count shown in search results via showPopularSongs()
  */
 function getDistinctSongCount() {
-    return new Set(allSongs.map(s => s.title?.toLowerCase())).size;
+    return new Set(allSongs.filter(s => s.indexed !== false)
+        .map(s => s.title?.toLowerCase())).size;
 }
 
 /**
@@ -622,6 +623,7 @@ function getCollectionSongCount(query) {
 
     const tag = tagMatch[1].toLowerCase();
     return allSongs.filter(song => {
+        if (song.indexed === false) return false;
         if (!song.tags || typeof song.tags !== 'object') return false;
         // Tags are stored as object keys (e.g., { Bluegrass: {score: 50}, ... })
         const tagKeys = Object.keys(song.tags);

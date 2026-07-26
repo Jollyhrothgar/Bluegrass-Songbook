@@ -38,7 +38,7 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
   (`#export-pill`).
 - **Unified song page** (`work-view.js`): canonical URL `#work/{slug}`
   (+ `#work/{slug}/{partId}`); `#song/{id}` permanently redirects via
-  `history.replaceState`. Structure: title row (`.song-title`, `#focus-btn`),
+  `history.replaceState`. Structure: title row (`.song-title`, `#edit-song-btn`),
   `.song-artist-line`, pill row `#song-pill-row` (`#key-pill`, `#display-pill`,
   `#info-pill`, `#arrangement-pill` when the group has >1 version), part tabs
   `#part-tabs .part-tab` when a work has >1 part, content below.
@@ -88,7 +88,8 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 - Wait for `#search-stats` to contain "songs" before navigating away from
   search — the post-index-load render stomps earlier navigation
 - Use `.first()` for strict mode compliance when multiple elements match
-- Useful fixture works: `your-cheating-heart` (plain lead sheet),
+- Useful fixture works: `old-home-place` (plain lead sheet; note the jam-repertoire
+  prune hides non-bluegrass rows like `your-cheating-heart` from search),
   `wagon-wheel` (2-version group → arrangement pill),
   `arkansas-traveler-1` (lead sheet + banjo tab → part tabs),
   `foggy-mountain-breakdown` (tab-only, mandolin part),
