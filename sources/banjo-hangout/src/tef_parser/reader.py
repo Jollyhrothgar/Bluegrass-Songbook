@@ -199,16 +199,20 @@ class TEFTextEvent:
 class TEFNoteEvent:
     """A note event from the TEF file.
 
-    12-byte record structure (large file / event list format):
-    - Bytes 0-1: Position (tick count, little-endian). Multiply by ~40 for MIDI ticks.
-    - Byte 2: Always 0
-    - Byte 3: Track/voice ID (1=melody, 3=bass?, 4=accompaniment?)
-    - Byte 4: Marker type (0x49='I', 0x46='F', 0x4C='L', 0x00='S')
-    - Byte 5: Articulation (0=normal, 1=hammer-on, 2=pull-off, 3=slide)
-    - Bytes 6-8: Always 0
-    - Byte 9: Module/voice (0=accompaniment, 6/12/18=melody voices)
-    - Byte 10: Always 0
-    - Byte 11: Combined string+fret encoding for melody notes
+    V3 12-byte component record (TuxGuitar TEInputStream layout; the
+    field names below this docstring are historical and repurposed —
+    see parse_note_events for the actual extraction):
+    - Bytes 0-3: location (u32). position = loc // (32*total_strings);
+      string row = (loc % (32*total_strings)) // 8.
+    - Byte 4: component type. Notes: bits 0-4 = fret+1 (0x01-0x19),
+      0x40 = grace flag. Non-notes: 0x39 = free text (byte 5 = text
+      table index), 0x35 = chord diagram anchor, etc.
+    - Byte 5: duration code (bits 0-4) + dynamics (bits 5-6) + tie/
+      connect bit (bit 7).
+    - Byte 6: articulation (1=hammer, 2=pull, 3=slide, 0x0c=bend/choke
+      source, 0x0f=dead/muted).
+    - Byte 10: fingering pack, base-6: 6*pluck + lh_code (see
+      v3_fingering in otf.py).
     """
     position: int          # Tick position (multiply by ~40 for MIDI ticks)
     track: int             # Track/module ID

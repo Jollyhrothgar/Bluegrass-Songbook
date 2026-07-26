@@ -108,14 +108,53 @@ Path('docs/data/tabs/{work-slug}-banjo.otf.json').write_text(otf.to_json())
 ### V2 vs V3 Detection
 
 ```python
-# V2: starts with 0x1A byte, has fixed header structure
-# V3: starts with 'TablEdit' magic, uses chunk-based format with 'debt' marker
+# V2: starts with printable ASCII, has fixed header structure
+# V3: binary format id; 'debt' marker at offset 56 points at components
 
 if tef.header.is_v2:
     # 6-byte note records, positions 0-255 per measure
 else:
-    # Variable record format, uses 'debt' chunk for note data
+    # 12-byte component records (see V3 reference below)
 ```
+
+### V3 Format Reference (2026-07, reverse-engineered on Welcome to New York)
+
+**Header pointer table** (u32 little-endian at fixed offsets):
+
+| Offset | Points at |
+|--------|-----------|
+| 60 | Component (note) region — same value as the 'debt' pointer |
+| 64 / 68 / 72 | Title / subtitle / comments (each u16-len-prefixed) |
+| 84 | **Free-text table**: u16 count, then count × [u16 len][bytes, NUL-terminated] |
+| 88 | Chord diagram table: u16 entry_size (36), u16 count, then records (name inside) |
+| 128 | Reading list: u16 entry_size (32), u16 count, then records |
+
+**Reading-list records** (32 bytes): u16 from_measure, u16 to_measure, then a
+NUL-terminated **entry label** ("Intro", "Part A1", ...) — TablEdit prints it
+above the range's first measure. Parsed into `reading_list[].name` in OTF.
+
+**12-byte component record** (TuxGuitar TEInputStream layout):
+
+| Bytes | Meaning |
+|-------|---------|
+| 0-3 | location (u32): `position = loc // (32*total_strings)`, `string_row = (loc % (32*total_strings)) // 8` |
+| 4 | component type. Notes: bits 0-4 = fret+1 (0x01-0x19); 0x40 = grace flag. Non-notes below. |
+| 5 | notes: duration code (bits 0-4) + dynamics (bits 5-6) + **tie/connect bit (bit 7)**. Text components: 0-based text-table index. |
+| 6 | articulation: 1=hammer, 2=pull, 3=slide, **0x0c=bend/choke SOURCE**, 0x0f=dead/muted (chop ×) |
+| 10 | **fingering pack, base-6**: `6*pluck + lh_code`. pluck 1..5 = T/I/M/R/P; lh_code 0 = none, else fretting digit = lh_code-1. (0x0a = T + finger 3, 0x0b = T + finger 4.) |
+
+**Non-note component types** (skipped for notes): 0x33, 0x35, 0x36, 0x37,
+0x38, 0x39, 0x3D, 0x75, 0x78, 0x7D, 0x7E, 0xB6, 0xB7, 0xBD, 0xBE, 0xFD, 0xFE.
+Decoded so far:
+
+| Type | Meaning | Parsed? |
+|------|---------|---------|
+| 0x39 | **Free-text anchor**: byte 5 = 0-based index into the text table at header ptr 84; location gives (measure, slot, string row) | Yes → OTF `annotations: [{measure, tick, text}]` (byte 7 = signed y-offset, ignored) |
+| 0x35 | Chord-diagram anchor (byte 5 = chord index) | Not yet (chord NAME usually also appears as a 0x39 text) |
+
+All of the above oracle-verified against TablEdit's own MusicXML export
+(`<words>`, `<pluck>`, `<fingering>`, `<harmony>`): 35/35 text placements and
+37/37 fingerings match on Welcome to New York.
 
 ### Marker Types (V2 byte 3)
 
@@ -242,32 +281,25 @@ instrument_patterns = [
 **Symptom**: Notes with 1/4 step bends show pull-off slurs
 **Fix**: Removed 0x04 from legato detection - it's actually a bend indicator
 
-### Bends: not decoded, and none in the corpus (intended: +1 semitone)
+### Bends/chokes: DECODED (2026-07) via the connect bit, not the noisy 0x04 bit
 
-**Status**: We do NOT articulate bends. `V2_TECH = {1:"h", 2:"p", 3:"/"}` has no
-bend entry, so no OTF carries a bend tech (only `/ h p x` exist) — bends render
-and play as plain notes.
+**Status**: bends ARE decoded and rendered. Detection (`bend_destination_keys`
+in otf.py, both parsers): a note carrying the tie/connect bit (V2 dyn bit-7 /
+V3 byte-5 bit-7) whose fret CHANGED vs the previous note on that string, with
+no h/p/slide, is a bend/choke TARGET → `tech: 'b'`, `tie: false`. In V3 the
+SOURCE note additionally carries byte6 = 0x0c (corroboration, not required).
 
-**Why we don't just flip the bit on**: the raw `effect1 & 0x04` bit is NOISE, not
-a reliable bend flag. It fires on ~2,221 V2 notes (504 in shenandoah-breakdown
-alone), but TablEdit's own MusicXML export has **0 `<bend>` elements across the
-entire corpus** — i.e. there are genuinely no real bends in what we've imported,
-and decoding `0x04 → bend` would fabricate hundreds of phantom bends and break the
-oracle.
+- **Render** (tablature.js): TablEdit's glyph — tilted-up arrow from the
+  source note to the bracketed `[target]` fret, amount ("½") above the tip.
+- **Playback** (tab-player.js): `bendWaypoints`, quarter-tone choke
+  (`BEND_SEMITONES = 0.5`). Fuller +1-semitone glide is issue #184.
 
-**When real bends DO appear** (future tabs; MusicXML carries `<bend>` with the
-amount), the intended behavior — **bend UP a half-tone (+1 semitone)** — is:
-1. Detect real bends by oracle-fitting against `<bend>` (same rigor as
-   slides/hammers/pulls), NOT the noisy raw bit.
-2. Render a bend symbol.
-3. Play a +1 semitone pitch glide — reuse the slide infra: `slideWaypoints`
-   (tab-player.js) with `delta = +1` and NO target-note suppression (a bend is
-   one note whose pitch rises a half-step; there is no destination note).
-
-Tracked in GitHub issue #184.
-- `has_legato_effect()` now uses `effect1 & 0x03` (not 0x07)
-- `technique_from_event()` no longer checks for 0x04
-**Files**: `sources/banjo-hangout/src/tef_parser/otf.py`
+**Old caution still true**: the raw V2 `effect1 & 0x04` bit is NOISE (fires on
+~2,221 corpus notes; TablEdit's MusicXML has 0 `<bend>` elements there). Do
+not decode 0x04 → bend.
+- `has_legato_effect()` uses `effect1 & 0x03` (not 0x07)
+- `technique_from_event()` doesn't check 0x04
+**Files**: `sources/banjo-hangout/src/tef_parser/otf.py`, `docs/js/tef-import/otf.js`
 
 ### Wrong articulation (slide showing as hammer)
 
@@ -345,14 +377,36 @@ Note the distinct **32nd grace-slide** shape (source is a 32nd, target lands a
 32nd late) is intentionally left as-is for now — 21 notes across 8 works; revisit
 if those need cleaning too.
 
+### Silent measures vanish from the display (labels jump the gap)
+
+**Cause**: OTF omits measures with no events (TEF convention; timing preserves
+their duration). Display consumers that iterate the notation array
+back-to-back collapse them visually.
+**Fix (in place)**: `densifyNotation()` fills gaps with empty entries in the
+display prep (editor `_render`, work-view); `expandNotation()` emits empty
+entries for silent slots. The saved OTF stays sparse.
+**Files**: `docs/js/renderers/measure-timing.js`
+
+### Annotations / fingerings / section labels not showing
+
+The pipeline: parser emits OTF `annotations` (+ `finger`/`lh` on notes,
+`name` on reading-list entries) → `attachOtfDecorations()` hangs them onto
+the display notation (AFTER `densifyNotation` — texts can target silent
+measures — BEFORE compact/expand) → renderer draws texts above the staff
+(lane-stacked on overlap), section labels bold at row top, pluck letters and
+circled fretting digits below the beams.
+**Files**: `docs/js/renderers/measure-timing.js`, `docs/js/renderers/tablature.js`,
+`docs/js/otf-editor/editor.js`, `docs/js/work-view.js`
+
 ## Key Files
 
 | File | Purpose |
 |------|---------|
-| `sources/banjo-hangout/src/tef_parser/reader.py` | Binary parsing, marker filtering |
+| `sources/banjo-hangout/src/tef_parser/reader.py` | Binary parsing, marker filtering (Python oracle) |
 | `sources/banjo-hangout/src/tef_parser/otf.py` | TEF→OTF conversion, articulations, triplets |
-| `docs/js/renderers/tablature.js` | SVG rendering, slurs, brackets |
-| `docs/js/renderers/tab-player.js` | Audio playback, note scheduling |
+| `docs/js/tef-import/{reader,otf}.js` | In-browser JS port — MUST stay byte-exact vs Python (golden gate: `docs/js/__tests__/tef-import-golden.test.js`; regenerate fixture with `uv run python docs/js/tef-import/__fixtures__/gen_golden.py` whenever the Python parser legitimately changes) |
+| `docs/js/renderers/tablature.js` | SVG rendering, slurs, brackets, bends, annotations |
+| `docs/js/renderers/tab-player.js` | Audio playback, note scheduling, bend/slide waypoints |
 | `sources/banjo-hangout/conversion_log.json` | Batch conversion results |
 
 ## Testing Changes
