@@ -94,6 +94,11 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && openPopover) closePopover();
     });
+    window.addEventListener('scroll', handleChromeScroll, { passive: true });
+    // Tapping the peek strip of a hidden band brings it back
+    topbarEl.addEventListener('click', () => {
+        document.body.classList.remove('chrome-hidden');
+    });
 }
 
 /**
@@ -190,15 +195,38 @@ export function setBottomBand(contentEl) {
 }
 
 /**
- * Immersive (focus) mode: the top band slides away; the bottom band and
- * content remain. Replaces the old fullscreen-mode view fork.
+ * Auto-hiding chrome (progressive disclosure — replaces focus mode):
+ * on pages that enable it, the top band slides away as you scroll down
+ * into the content and returns on scroll-up, tapping the top edge, or
+ * returning to the top. No mode, no toggle, no state to learn.
  */
-export function setImmersive(on) {
-    document.body.classList.toggle('immersive', on);
+let autoHideEnabled = false;
+let lastScrollY = 0;
+let scrollTickPending = false;
+
+export function setChromeAutoHide(on) {
+    autoHideEnabled = on;
+    lastScrollY = window.scrollY;
+    if (!on) document.body.classList.remove('chrome-hidden');
 }
 
-export function isImmersive() {
-    return document.body.classList.contains('immersive');
+function handleChromeScroll() {
+    if (!autoHideEnabled || scrollTickPending) return;
+    scrollTickPending = true;
+    requestAnimationFrame(() => {
+        scrollTickPending = false;
+        const y = window.scrollY;
+        const dy = y - lastScrollY;
+        lastScrollY = y;
+        if (y < 48) {
+            document.body.classList.remove('chrome-hidden');
+        } else if (dy > 6) {
+            document.body.classList.add('chrome-hidden');
+            closePopover();
+        } else if (dy < -6) {
+            document.body.classList.remove('chrome-hidden');
+        }
+    });
 }
 
 /**

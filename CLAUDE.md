@@ -363,7 +363,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
 - **Song versions**: Multiple arrangements with voting via the Arrangement pill; editorial curation (canonical/variant pins) in `curation/registry.yaml`
 - **URL stability**: Work URLs (`#work/{slug}`) are permanent; legacy `#song/{id}` URLs redirect
-- **App shell UI**: slim top band + bottom band + pill controls (`docs/js/shell.js`); one unified song page (`work-view.js` / `openWork`); focus mode = `body.immersive`
+- **App shell UI**: slim top band + bottom band + pill controls (`docs/js/shell.js`); one unified song page (`work-view.js` / `openWork`); auto-hiding chrome (`body.chrome-hidden`) instead of a focus mode
 
 **Recent additions (Jan-Feb 2026):**
 - **Trusted user editing**: Trusted users can make instant edits without approval
@@ -373,7 +373,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Legacy ID migration**: Song IDs migrated from filename-based to work slugs
 - **Strum Machine integration**: 605+ songs with practice backing tracks
 - **UI redesign (Jul 2026)**: app shell with top/bottom bands, pill controls (Key/Display/Info/Export/Arrangement) replacing the old quick-controls bar, sidebar, and version-picker modal
-- **Focus mode**: Distraction-free immersive view (top band slides away)
+- **Auto-hiding chrome**: the top band hides while you scroll through a song (replaced focus mode)
 - **Covering artists**: Shows which bluegrass legends recorded each song
 - **Multi-owner lists**: Collaborative list curation with follow/unfollow
 - **Thunderdome**: Claim abandoned lists (now 1 year inactivity threshold)

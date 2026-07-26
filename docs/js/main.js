@@ -24,7 +24,6 @@ import {
     twoColumnMode,
     fontSizeLevel,
     setListContext,
-    setFullscreenMode,
     setWorkRedirects, resolveWorkId,
     setBountyIndex,
     // Reactive state system
@@ -39,14 +38,14 @@ import {
     showFavorites, getFavoritesList, isFavorite, toggleFavorite,
     updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
-import { initSongView, goBack, getCurrentSong, toggleFullscreen, exitFullscreen, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
-import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar } from './work-view.js';
+import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
+import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
-import { initShell, setTopBar, setBottomBand, setOverflowBase, setImmersive } from './shell.js';
+import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide } from './shell.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
 import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
@@ -329,11 +328,8 @@ function initViewSubscription() {
         // view rebuilds everything it needs on render.
         teardownTablatureView();
 
-        // Exit focus (immersive) mode when navigating away from song/work views
-        if (view !== 'song' && view !== 'work') {
-            setImmersive(false);
-            setFullscreenMode(false);
-        }
+        // Chrome auto-hide only lives on the song page
+        setChromeAutoHide(view === 'song');
 
         // Close any open editor hints panel
         closeHints();
@@ -2288,11 +2284,10 @@ function init() {
     songContent?.addEventListener('click', (e) => {
         const target = e.target;
 
-        // Focus button (in title row) — focus is the immersive shell now;
-        // the old focus header/exit/prev/next buttons died with it (Esc and
-        // arrow keys still work via the global keydown handler).
-        if (target.closest('#focus-btn')) {
-            toggleFullscreen();
+        // Edit button (in title row — a content action lives with the
+        // content; the old Focus button died with focus mode)
+        if (target.closest('#edit-song-btn')) {
+            handleEditAction();
             return;
         }
     });
@@ -2373,7 +2368,8 @@ init();
 
 // Exit fullscreen button
 if (exitFullscreenBtn) {
-    exitFullscreenBtn.addEventListener('click', exitFullscreen);
+    // "List" button in the list nav bar: return to the list
+    exitFullscreenBtn.addEventListener('click', () => history.back());
 }
 
 // ============================================
@@ -2384,19 +2380,6 @@ document.addEventListener('keydown', (e) => {
     // Don't trigger shortcuts when typing in inputs
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
         return;
-    }
-
-    // F key - toggle fullscreen mode (only when viewing a song)
-    if (e.key === 'f' || e.key === 'F') {
-        if (!songView.classList.contains('hidden')) {
-            e.preventDefault();
-            toggleFullscreen();
-        }
-    }
-
-    // Escape - exit fullscreen
-    if (e.key === 'Escape') {
-        exitFullscreen();
     }
 
     // Arrow keys for navigation (when viewing a song from a list)

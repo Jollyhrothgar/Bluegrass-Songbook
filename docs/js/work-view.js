@@ -16,7 +16,6 @@ import {
     setCurrentDetectedKey,
     setOriginalDetectedKey,
     setOriginalDetectedMode,
-    fullscreenMode, setFullscreenMode,
     listContext, setListContext,
     currentView, setCurrentView,
     resolveWorkId,
@@ -44,8 +43,8 @@ import { clearListView, openNotesSheet } from './lists.js';
 import { showListPicker, updateTriggerButton } from './list-picker.js';
 import { openFlagModal } from './flags.js';
 import { trackSongView } from './analytics.js';
-import { setTopBar, setBottomBand, pill, setImmersive } from './shell.js';
-import { buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill } from './song-controls.js';
+import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
+import { buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
 import {
     attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
 } from './tab-playback-interactions.js';
@@ -294,17 +293,13 @@ export async function openWork(workId, options = {}) {
         }
         clearListView();
 
-        // Exit focus (immersive) when opening the page directly (not from list nav)
-        if (fullscreenMode) {
-            setImmersive(false);
-            setFullscreenMode(false);
-        }
         const navBar = document.getElementById('song-nav-bar');
         if (navBar) navBar.classList.add('hidden');
     }
 
     setCurrentChordpro(null);
     setCurrentView('song');
+    setChromeAutoHide(true);
 
     setOriginalDetectedKey(null);
     setOriginalDetectedMode(null);
@@ -346,10 +341,9 @@ export async function openWork(workId, options = {}) {
         setListContext(null);
     }
 
-    // Auto-enter focus (immersive) when opening from a list
+    // List context flag for CSS (band offsets above the list nav bar);
+    // chrome auto-hide handles immersion — no mode to enter.
     if (fromList && listContext) {
-        setFullscreenMode(true);
-        setImmersive(true);
         document.body.classList.add('has-list-context');
     }
 
@@ -500,12 +494,12 @@ function renderTitleHeader() {
             <div class="song-title-row">
                 <span class="song-title">${escapeHtml(title)}</span>
                 ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
-                <button id="focus-btn" class="focus-btn" title="Focus mode (F)">${fullscreenMode ? '&#x2715; Exit' : '&#x26F6; Focus'}</button>
+                <button id="edit-song-btn" class="focus-btn" title="Edit this song">&#x270F;&#xFE0F; Edit</button>
             </div>
             ${artist ? `<div class="song-artist-line">${escapeHtml(artist)}</div>` : ''}
         </div>
     `;
-    // #focus-btn is wired via main.js's songContent delegation
+    // #edit-song-btn is wired via main.js's songContent delegation
     return header;
 }
 
@@ -737,27 +731,31 @@ export function configureWorkPage(hooks = {}) {
  * actions, and the overflow (Report issue, Song notes, admin Delete).
  * Also called by main.js when admin status resolves.
  */
+/**
+ * Title-row Edit action (delegated from main.js): placeholders get the
+ * metadata editor, real songs the ChordPro editor.
+ */
+export function handleEditAction() {
+    if (!currentWork) return;
+    if (isPlaceholder(currentWork)) {
+        showPlaceholderEditor();
+    } else {
+        workPageHooks.onEdit?.(currentWork);
+    }
+}
+
 export function updateWorkTopBar() {
     if (!currentWork || currentView !== 'song') return;
 
     const actions = [];
 
-    // Edit applies to chordpro lead sheets (tab parts carry their own Edit
-    // in the playback controls); placeholders get the metadata editor.
-    if (partUsesSongActions(activePart) || isPlaceholder(currentWork)) {
-        actions.push({
-            id: 'edit-song-btn',
-            label: 'Edit',
-            icon: '✏️',
-            title: isPlaceholder(currentWork) ? 'Edit placeholder metadata' : 'Edit this song',
-            onClick: () => {
-                if (isPlaceholder(currentWork)) {
-                    showPlaceholderEditor();
-                } else if (workPageHooks.onEdit) {
-                    workPageHooks.onEdit(currentWork);
-                }
-            },
-        });
+    // Edit lives in the title row (a content action stays with the
+    // content); here we only sync its visibility to the active part —
+    // tab parts carry their own Edit in the playback controls.
+    const editBtn = document.getElementById('edit-song-btn');
+    if (editBtn) {
+        editBtn.classList.toggle('hidden',
+            !(partUsesSongActions(activePart) || isPlaceholder(currentWork)));
     }
 
     actions.push({
@@ -774,13 +772,23 @@ export function updateWorkTopBar() {
         },
     });
 
-    if (currentWork.content) {
+    // Phone band diet: Export moves into the ⋯ overflow (the band keeps
+    // back · logo · Lists · ⋯); desktop keeps the Export pill.
+    const phoneBand = window.matchMedia('(max-width: 640px)').matches;
+    if (currentWork.content && !phoneBand) {
         actions.push({ el: buildExportPill() });
     }
 
     const overflow = [
         { id: 'flag-btn', label: '🚩 Report issue', onClick: () => openFlagModal(currentWork) },
     ];
+    if (currentWork.content && phoneBand) {
+        overflow.push(
+            { label: '🖨️ Print', onClick: () => handleExport('print') },
+            { label: '📋 Copy ChordPro', onClick: () => handleExport('copy-chordpro') },
+            { label: '⬇️ Download .pro', onClick: () => handleExport('download-chordpro') },
+        );
+    }
     if (listContext && listContext.listId) {
         overflow.push({
             id: 'song-notes-btn',

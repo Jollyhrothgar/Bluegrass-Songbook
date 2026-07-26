@@ -1,5 +1,5 @@
 // E2E tests for shell UI features: theme toggle (top band), focus mode
-// (body.immersive), overflow menu, and view preference persistence.
+// (auto-hiding chrome), overflow menu, and view preference persistence.
 // The old sidebar/hamburger and fullscreen-header tests died with those
 // surfaces in the redesign.
 import { test, expect } from '@playwright/test';
@@ -45,45 +45,45 @@ test.describe('Theme', () => {
     });
 });
 
-test.describe('Focus Mode (immersive)', () => {
+test.describe('Auto-hiding chrome (song page)', () => {
+    // Short viewport so any song overflows and the page can actually scroll
+    test.use({ viewport: { width: 700, height: 480 } });
+
     test.beforeEach(async ({ page }) => {
         await gotoSearch(page);
         await searchAndOpen(page, 'blue moon kentucky');
     });
 
-    test('F key toggles focus mode; Escape exits', async ({ page }) => {
-        await page.keyboard.press('f');
-        await page.waitForTimeout(100);
+    test('scrolling down hides the top band; scrolling up reveals it', async ({ page }) => {
+        // Repeated small scrolls so the shell's rAF delta logic sees
+        // downward motion (a single jump can land in one frame)
+        for (let i = 0; i < 6; i++) {
+            await page.mouse.wheel(0, 120);
+            await page.waitForTimeout(50);
+        }
+        await expect(page.locator('body')).toHaveClass(/chrome-hidden/);
 
-        await expect(page.locator('body')).toHaveClass(/immersive/);
-
-        await page.keyboard.press('Escape');
-        await page.waitForTimeout(100);
-
-        await expect(page.locator('body')).not.toHaveClass(/immersive/);
+        for (let i = 0; i < 3; i++) {
+            await page.mouse.wheel(0, -120);
+            await page.waitForTimeout(50);
+        }
+        await expect(page.locator('body')).not.toHaveClass(/chrome-hidden/);
     });
 
-    test('focus button in the title row toggles focus mode', async ({ page }) => {
-        const focusBtn = page.locator('#focus-btn');
-        await expect(focusBtn).toBeVisible();
-
-        await focusBtn.click();
-        await page.waitForTimeout(100);
-        await expect(page.locator('body')).toHaveClass(/immersive/);
-
-        await page.keyboard.press('Escape');
-        await page.waitForTimeout(100);
-        await expect(page.locator('body')).not.toHaveClass(/immersive/);
-    });
-
-    test('song content stays visible in focus mode', async ({ page }) => {
-        await page.keyboard.press('f');
-        await page.waitForTimeout(100);
-
+    test('song content stays visible while chrome is hidden', async ({ page }) => {
+        for (let i = 0; i < 6; i++) {
+            await page.mouse.wheel(0, 120);
+            await page.waitForTimeout(50);
+        }
         await expect(page.locator('.song-body')).toBeVisible();
-        await expect(page.locator('.song-title')).toBeVisible();
+    });
 
-        await page.keyboard.press('Escape');
+    test('Edit lives in the title row (Focus button is gone)', async ({ page }) => {
+        await expect(page.locator('#focus-btn')).toHaveCount(0);
+        const editBtn = page.locator('#edit-song-btn');
+        await expect(editBtn).toBeVisible();
+        await editBtn.click();
+        await expect(page.locator('#editor-panel')).toBeVisible();
     });
 });
 

@@ -47,7 +47,7 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 - **Bottom band** (`#app-bottomband`): tablature playback controls
   (`.tab-play-btn`, `.tab-tempo-*`, mixer) and ABC controls (`#abc-play-btn`,
   `#abc-tempo-label`).
-- **Focus mode**: `body.immersive` (F toggles, Esc exits, `#focus-btn`).
+- **Auto-hiding chrome**: `body.chrome-hidden` — the top band hides on scroll-down on song pages, returns on scroll-up/top (no focus mode; `#edit-song-btn` sits in the title row).
 - **Feedback**: one unified modal `#flag-modal` (type selector), opened from
   the overflow menu ("Send Feedback" everywhere, "Report issue" on song pages).
 - **List navigation**: `#song-nav-bar` (bottom bar) still used in list context.
@@ -69,7 +69,7 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 | `visual-editor.spec.js` | Two-pane editor: chord strip, lyric editing, palette |
 | `transposition.spec.js` | Key pill: key grid, semitone steps, Nashville, edge cases |
 | `print-options.spec.js` | Export pill actions (print/copy/download), list print |
-| `ui.spec.js` | Theme toggle (top band), focus mode (immersive), overflow menu, pref persistence |
+| `ui.spec.js` | Theme toggle (top band), auto-hiding chrome, overflow menu, pref persistence |
 | `abc-notation.spec.js` | ABC sheet music display, bottom-band playback controls |
 | `error-states.spec.js` | Not-found states, invalid URLs, graceful errors |
 | `otf-editor.spec.js` | Standalone OTF editor demo (`/editor-demo.html`, `/create.html`) |

@@ -68,10 +68,10 @@ quick-controls bar, or bottom sheet anymore:
   with `setBottomBand(el)`; pass `null` to hide it.
 - **Pill primitive**: `pill(label, buildContent, opts)` returns a small
   labeled button that opens a popover. All song-page controls are pills.
-- **Focus mode = `body.immersive`**: `setImmersive(on)` toggles it. The top
-  band slides off-screen (a 4px peek strip remains; hover/focus reveals it)
-  while content, the pill row, and the bottom band stay. No separate focus
-  header or view fork exists. `F` toggles, `Esc` exits.
+- **Auto-hiding chrome** (`setChromeAutoHide(on)`, enabled on song pages):
+  the top band hides as you scroll down (`body.chrome-hidden`, 4px peek
+  strip) and returns on scroll-up, hover, tapping the strip, or reaching
+  the top. There is no focus mode — immersion is automatic.
 
 ### Unified Song Page (`work-view.js`)
 
@@ -535,13 +535,12 @@ Trusted users can make instant edits without waiting for approval:
 - `refreshPendingSongs()` merges pending songs into `allSongs`
 - Regular users can request trusted status via super-user request modal
 
-### Focus Mode (immersive)
+### Auto-hiding chrome
 
-Distraction-free practice view: `body.immersive` (toggled via
-`setImmersive()` in shell.js). The top band slides off-screen (hover the
-top edge to reveal it); the content, pill row, and bottom band stay. `F`
-toggles, `Esc` exits. Opening a song from a list auto-enters focus and
-shows the list nav bar for prev/next.
+The song page enables `setChromeAutoHide(true)`: scrolling down hides the
+top band (`body.chrome-hidden`), scrolling up or returning to the top
+reveals it. Edit lives in the title row (`#edit-song-btn`); the phone-width
+band keeps only back / logo / Lists / overflow.
 
 ### Strum Machine Integration
 

@@ -9066,15 +9066,6 @@ mark {
     transition: transform 0.25s ease;
 }
 
-body.immersive .app-topbar {
-    transform: translateY(-100%);
-}
-
-body.immersive .app-topbar:hover,
-body.immersive .app-topbar:focus-within {
-    transform: none;
-}
-
 .topbar-left {
     display: flex;
     align-items: center;
@@ -9409,11 +9400,6 @@ body.has-bottomband .container {
     width: 100%;
 }
 
-/* Keep the pill row reachable in focus (immersive) mode */
-body.immersive .song-pill-row {
-    padding: 0 var(--space-md);
-}
-
 /* Tab controls hosted in the bottom band: flatten the old boxed styling so
    the band itself is the container, and the mixer flows inline. */
 .app-bottomband .tab-controls {
@@ -9433,18 +9419,14 @@ body.immersive .song-pill-row {
     width: auto;
 }
 
-/* Immersive (focus) refinements: the top band leaves the layout entirely,
-   with a 4px peek strip so mouse-to-top reveals it. */
-body.immersive .app-topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+/* Auto-hidden chrome: the band slides up to a 4px peek strip. Scroll-up,
+   hovering, or tapping the strip brings it back (see shell.js). */
+body.chrome-hidden .app-topbar {
     transform: translateY(calc(-100% + 4px));
 }
 
-body.immersive .app-topbar:hover,
-body.immersive .app-topbar:focus-within {
+body.chrome-hidden .app-topbar:hover,
+body.chrome-hidden .app-topbar:focus-within {
     transform: none;
 }
 
@@ -9540,4 +9522,14 @@ body.has-list-context.has-bottomband .container {
    button cluster) would clip its drop-up popover */
 .qc-group:has(.tab-key-pill) {
     overflow: visible;
+}
+
+/* Phone song-page band diet: back · logo · Lists · ⋯ (Export/bug/theme/
+   auth live in the overflow or on other pages) */
+@media (max-width: 640px) {
+    .app-topbar.has-back #topbar-bug,
+    .app-topbar.has-back #topbar-theme,
+    .app-topbar.has-back #auth-section {
+        display: none;
+    }
 }

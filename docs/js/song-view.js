@@ -26,8 +26,7 @@ import {
     abcTimingCallbacks, setAbcTimingCallbacks,
     abcIsPlaying, setAbcIsPlaying,
     abcPlaybackSession, incrementAbcPlaybackSession,
-    // Fullscreen/navigation state
-    fullscreenMode, setFullscreenMode,
+    // Navigation state
     listContext, setListContext
 } from './state.js';
 import { escapeHtml } from './utils.js';
@@ -38,7 +37,7 @@ import {
 import { parseChordPro, renderSectionsHtml } from './renderers/chordpro.js';
 import { getSongMetadata, updateSongMetadata } from './lists.js';
 import { endSongView } from './analytics.js';
-import { setBottomBand, setImmersive } from './shell.js';
+import { setBottomBand } from './shell.js';
 import { openWork } from './work-view.js';
 
 // DOM element references (set by init)
@@ -546,47 +545,6 @@ export async function openSongFromHistory(songId) {
 }
 
 /**
- * Toggle focus mode. Focus is now just the immersive shell: the top band
- * slides away (hover/focus reveals it) while the content, pill row, and
- * bottom band stay — no separate focus header or view fork.
- */
-export function toggleFullscreen() {
-    const newMode = !fullscreenMode;
-    setFullscreenMode(newMode);
-    setImmersive(newMode);
-    updateFocusButton();
-    updateNavBar();
-}
-
-// The Focus button is a true toggle — same spot to enter and exit
-// (Esc and F still work). Label follows the mode.
-function updateFocusButton() {
-    const btn = document.getElementById('focus-btn');
-    if (btn) btn.innerHTML = fullscreenMode ? '✕ Exit' : '⛶ Focus';
-}
-
-/**
- * Exit focus (immersive) mode
- */
-export function exitFullscreen() {
-    if (fullscreenMode) {
-        setFullscreenMode(false);
-        setImmersive(false);
-        updateFocusButton();
-
-        // If we came from a list, go back to list view
-        if (listContext && listContext.listId) {
-            // Use history.back() to return to list view
-            if (historyInitialized && history.state) {
-                history.back();
-            }
-        }
-
-        updateNavBar();
-    }
-}
-
-/**
  * Update navigation bar based on list context
  */
 export function updateNavBar() {
@@ -634,23 +592,13 @@ export function updateNavBar() {
             navNextBtnEl.disabled = idx >= total - 1;
         }
 
-        // Show nav bar in fullscreen mode (CSS handles this)
-        // In non-fullscreen, show it if we have context
-        if (fullscreenMode) {
-            navBarEl.classList.remove('hidden');
-        }
-        // Add class to indicate we have list context (for CSS)
+        // List context: the nav bar is the prev/next surface
+        navBarEl.classList.remove('hidden');
         navBarEl.classList.add('has-list-context');
     } else {
-        // No list context - remove list context class
+        // No list context: no nav bar
         navBarEl.classList.remove('has-list-context');
-        // Show nav bar in fullscreen mode (for Song button access)
-        // Hide only if NOT in fullscreen
-        if (fullscreenMode) {
-            navBarEl.classList.remove('hidden');
-        } else {
-            navBarEl.classList.add('hidden');
-        }
+        navBarEl.classList.add('hidden');
         // Clear the content so it doesn't show stale data
         if (navPositionEl) navPositionEl.textContent = '';
         if (navListNameEl) navListNameEl.textContent = '';
@@ -724,9 +672,6 @@ export function navigateNext() {
 export function goBack() {
     // Track time spent on song before navigating away
     endSongView();
-
-    // Exit fullscreen mode
-    exitFullscreen();
 
     // Check for a saved return URL (e.g., when coming from a list via "Go to Song")
     const returnUrl = sessionStorage.getItem('songbook-return-url');

@@ -298,10 +298,8 @@ export function setHistoryInitialized(value) { historyInitialized = value; }
 // FULLSCREEN / MUSICIAN MODE
 // ============================================
 
-export let fullscreenMode = false;
 export let listContext = null;  // { listId, songs, currentIndex } - for prev/next navigation
 
-export function setFullscreenMode(value) { fullscreenMode = value; }
 export function setListContext(context) { listContext = context; }
 
 // ============================================
@@ -438,7 +436,6 @@ const stateGetters = {
     historyInitialized: () => historyInitialized,
 
     // Fullscreen/musician mode
-    fullscreenMode: () => fullscreenMode,
     listContext: () => listContext,
 
     // Editor
@@ -505,7 +502,6 @@ const stateSetters = {
     historyInitialized: setHistoryInitialized,
 
     // Fullscreen/musician mode
-    fullscreenMode: setFullscreenMode,
     listContext: setListContext,
 
     // Editor
