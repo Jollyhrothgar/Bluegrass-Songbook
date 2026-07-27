@@ -3,7 +3,8 @@
   "metadata": {
     "title": "Dixie Breakdown",
     "time_signature": "2/4",
-    "tempo": 100
+    "tempo": 100,
+    "key": "G"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -4113,8 +4114,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "23408.tef",
-    "converted_at": "2026-07-02T11:24:53.180243"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/tab-dixie-breakdown-23408-5147310112018.tef",
+    "author": "Yohansen",
+    "converted_at": "2026-07-26T22:20:07.213657"
   }
 }

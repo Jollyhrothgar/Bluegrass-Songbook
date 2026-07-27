@@ -6,6 +6,9 @@ composers:
 tags:
 - Instrumental
 - OldTime
+- Scruggs
+- Bluegrass
+- Folk
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,3 +17,33 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '18299'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=18299
+    author: dholland
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '1282'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=1282
+    author: Kallesandria
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '3285'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3285
+    author: MandoTom2
+    imported_at: '2026-07-26'

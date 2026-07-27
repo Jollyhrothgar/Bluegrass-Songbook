@@ -1,10 +1,11 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "Ground Speed",
+    "title": "Ground Speed (Backup)",
     "time_signature": "4/4",
     "tempo": 270,
-    "composer": "Backup for \"The Session Book\" - seanray.com"
+    "composer": "Backup for \"The Session Book\" - seanray.com",
+    "key": "G"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -6086,8 +6087,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "19520.tef",
-    "converted_at": "2026-07-02T11:24:53.483516"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/tab-ground-speed-ba-19520-1601111102013.tef",
+    "author": "seanray",
+    "converted_at": "2026-07-26T22:20:07.232331"
   }
 }

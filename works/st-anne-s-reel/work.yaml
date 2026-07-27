@@ -5,6 +5,7 @@ default_key: G
 tags:
 - Instrumental
 - Fiddle
+- Bluegrass
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,4 +14,34 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11718'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11718
+    author: mwblake
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '3137'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=3137
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2956'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2956
+    author: MandoTom2
+    imported_at: '2026-07-26'
 notes: Traditional reel. Very popular at jam sessions.

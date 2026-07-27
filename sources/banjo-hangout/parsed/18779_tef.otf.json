@@ -1,9 +1,10 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "Cattle in the Cane.tef",
+    "title": "Cattle In The Cane",
     "time_signature": "4/4",
-    "tempo": 150
+    "tempo": 150,
+    "key": "A"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -2820,8 +2821,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "18779.tef",
-    "converted_at": "2026-07-02T11:24:53.455764"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cattle-in-the-c-18779-37622852013.tef",
+    "author": "delmando",
+    "converted_at": "2026-07-26T22:20:06.968630"
   }
 }

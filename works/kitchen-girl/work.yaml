@@ -6,6 +6,7 @@ composers:
 tags:
 - Instrumental
 - OldTime
+- Scruggs
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,3 +15,13 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11729'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11729
+    author: mwblake
+    imported_at: '2026-07-26'

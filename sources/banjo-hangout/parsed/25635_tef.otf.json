@@ -1,9 +1,10 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "TablEdited by Greg Crisp",
+    "title": "Cherokee Shuffle",
     "time_signature": "4/4",
-    "tempo": 260
+    "tempo": 260,
+    "key": "A"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -13511,9 +13512,27 @@
       }
     ]
   },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "1st Break"
+    },
+    {
+      "measure": 38,
+      "tick": 0,
+      "text": "2nd Break"
+    },
+    {
+      "measure": 73,
+      "tick": 1440,
+      "text": "Ending"
+    }
+  ],
   "x_source": {
-    "type": "local",
-    "source_file": "25635.tef",
-    "converted_at": "2026-07-02T11:24:53.686648"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cherokee-shuffl-25635-1910201292022.tef",
+    "author": "stratovarious520",
+    "converted_at": "2026-07-26T22:20:06.258087"
   }
 }

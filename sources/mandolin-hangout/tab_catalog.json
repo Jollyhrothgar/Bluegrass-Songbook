@@ -362,8 +362,12 @@
       "tuning": "GDAE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:52:37.650167"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:52:37.650167",
+      "downloaded_at": "2026-07-26T22:10:50.600034",
+      "converted_at": "2026-07-26T22:20:04.987873",
+      "imported_at": "2026-07-26T22:26:25.569526",
+      "work_slug": "black-mountain-rag"
     },
     "3074_tef": {
       "id": "3074_tef",
@@ -374,8 +378,10 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:52:37.650169"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:52:37.650169",
+      "downloaded_at": "2026-07-26T22:10:52.101618",
+      "converted_at": "2026-07-26T22:20:04.995699"
     },
     "3076_tef": {
       "id": "3076_tef",
@@ -387,8 +393,12 @@
       "tuning": "GDAE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:52:37.650171"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:52:37.650171",
+      "downloaded_at": "2026-07-26T22:10:53.611459",
+      "converted_at": "2026-07-26T22:20:05.028665",
+      "imported_at": "2026-07-26T22:26:25.559934",
+      "work_slug": "black-mountain-rag"
     },
     "2962_tef": {
       "id": "2962_tef",
@@ -400,8 +410,12 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:52:37.650173"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:52:37.650173",
+      "downloaded_at": "2026-07-26T22:10:28.191575",
+      "converted_at": "2026-07-26T22:20:04.850933",
+      "imported_at": "2026-07-26T22:26:25.584029",
+      "work_slug": "blackberry-blossom"
     },
     "2694_tef": {
       "id": "2694_tef",
@@ -1066,8 +1080,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366209"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366209",
+      "downloaded_at": "2026-07-26T22:10:56.626710",
+      "converted_at": "2026-07-26T22:20:05.037350",
+      "imported_at": "2026-07-26T22:26:25.519585",
+      "work_slug": "angeline-the-baker"
     },
     "3244_tef": {
       "id": "3244_tef",
@@ -1079,8 +1097,10 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366211"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.366211",
+      "downloaded_at": "2026-07-26T22:10:58.135072",
+      "converted_at": "2026-07-26T22:20:05.045640"
     },
     "3245_tef": {
       "id": "3245_tef",
@@ -1196,8 +1216,12 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366228"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366228",
+      "downloaded_at": "2026-07-26T22:10:47.582886",
+      "converted_at": "2026-07-26T22:20:04.971521",
+      "imported_at": "2026-07-26T22:26:25.527855",
+      "work_slug": "arkansas-traveler-1"
     },
     "2580_tef": {
       "id": "2580_tef",
@@ -1209,8 +1233,10 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366230"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.366230",
+      "downloaded_at": "2026-07-26T22:10:49.087435",
+      "converted_at": "2026-07-26T22:20:04.973968"
     },
     "2649_tef": {
       "id": "2649_tef",
@@ -1364,8 +1390,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366251"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366251",
+      "downloaded_at": "2026-07-26T22:11:17.726148",
+      "converted_at": "2026-07-26T22:20:05.167375",
+      "imported_at": "2026-07-26T22:26:25.534124",
+      "work_slug": "ashokan-farewell-1"
     },
     "2688_tef": {
       "id": "2688_tef",
@@ -1819,8 +1849,12 @@
       "tuning": "GDAE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366320"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366320",
+      "downloaded_at": "2026-07-26T22:11:13.203036",
+      "converted_at": "2026-07-26T22:20:05.143984",
+      "imported_at": "2026-07-26T22:26:25.608809",
+      "work_slug": "cluck-old-hen"
     },
     "2590_tef": {
       "id": "2590_tef",
@@ -1832,8 +1866,10 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366322"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.366322",
+      "downloaded_at": "2026-07-26T22:11:14.717788",
+      "converted_at": "2026-07-26T22:20:05.152299"
     },
     "3362_tef": {
       "id": "3362_tef",
@@ -1962,8 +1998,10 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366339"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.366339",
+      "downloaded_at": "2026-07-26T22:11:25.255635",
+      "converted_at": "2026-07-26T22:20:05.201913"
     },
     "2992_tef": {
       "id": "2992_tef",
@@ -1975,8 +2013,12 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366341"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366341",
+      "downloaded_at": "2026-07-26T22:11:29.785551",
+      "converted_at": "2026-07-26T22:20:05.232204",
+      "imported_at": "2026-07-26T22:26:25.359432",
+      "work_slug": "cumberland-gap"
     },
     "3269_tef": {
       "id": "3269_tef",
@@ -2221,8 +2263,12 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366380"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366380",
+      "downloaded_at": "2026-07-26T22:11:19.228442",
+      "converted_at": "2026-07-26T22:20:05.175299",
+      "imported_at": "2026-07-26T22:26:25.622043",
+      "work_slug": "dear-old-dixie"
     },
     "3124_tef": {
       "id": "3124_tef",
@@ -2234,8 +2280,10 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366383"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.366383",
+      "downloaded_at": "2026-07-26T22:11:20.733816",
+      "converted_at": "2026-07-26T22:20:05.183243"
     },
     "3122_tef": {
       "id": "3122_tef",
@@ -2338,8 +2386,12 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366397"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366397",
+      "downloaded_at": "2026-07-26T22:11:04.165548",
+      "converted_at": "2026-07-26T22:20:05.098314",
+      "imported_at": "2026-07-26T22:26:25.627818",
+      "work_slug": "devils-dream"
     },
     "2602_tef": {
       "id": "2602_tef",
@@ -2906,8 +2958,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366612"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366612",
+      "downloaded_at": "2026-07-26T22:10:41.545631",
+      "converted_at": "2026-07-26T22:20:04.926552",
+      "imported_at": "2026-07-26T22:26:25.658138",
+      "work_slug": "fisher-s-hornpipe"
     },
     "3246_tef": {
       "id": "3246_tef",
@@ -2957,8 +3013,12 @@
       "genre": "Bluegrass",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366621"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366621",
+      "downloaded_at": "2026-07-26T22:10:59.644866",
+      "converted_at": "2026-07-26T22:20:05.059190",
+      "imported_at": "2026-07-26T22:26:25.668749",
+      "work_slug": "flop-eared-mule"
     },
     "1736_tef": {
       "id": "1736_tef",
@@ -3027,8 +3087,10 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366632"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.366632",
+      "downloaded_at": "2026-07-26T22:10:38.525184",
+      "converted_at": "2026-07-26T22:20:04.900424"
     },
     "3040_tef": {
       "id": "3040_tef",
@@ -3040,8 +3102,10 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366634"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.366634",
+      "downloaded_at": "2026-07-26T22:10:40.034701",
+      "converted_at": "2026-07-26T22:20:04.922083"
     },
     "2716_tef": {
       "id": "2716_tef",
@@ -3469,8 +3533,10 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366693"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.366693",
+      "downloaded_at": "2026-07-26T22:11:22.247049",
+      "converted_at": "2026-07-26T22:20:05.188091"
     },
     "2927_tef": {
       "id": "2927_tef",
@@ -3482,8 +3548,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366695"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366695",
+      "downloaded_at": "2026-07-26T22:11:23.752292",
+      "converted_at": "2026-07-26T22:20:05.197669",
+      "imported_at": "2026-07-26T22:26:25.698579",
+      "work_slug": "gold-rush"
     },
     "1738_tef": {
       "id": "1738_tef",
@@ -3647,8 +3717,12 @@
       "tuning": "GDAE (Standard)",
       "key": "Am",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366717"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366717",
+      "downloaded_at": "2026-07-26T22:11:16.214672",
+      "converted_at": "2026-07-26T22:20:05.154989",
+      "imported_at": "2026-07-26T22:26:25.704163",
+      "work_slug": "growling-old-man"
     },
     "2677_tef": {
       "id": "2677_tef",
@@ -4912,8 +4986,12 @@
       "tuning": "GDAE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366901"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366901",
+      "downloaded_at": "2026-07-26T22:10:43.055444",
+      "converted_at": "2026-07-26T22:20:04.937643",
+      "imported_at": "2026-07-26T22:26:25.719577",
+      "work_slug": "june-apple"
     },
     "3240_tef": {
       "id": "3240_tef",
@@ -5247,8 +5325,10 @@
       "tuning": "GDAE (Standard)",
       "key": "Am",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366952"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.366952",
+      "downloaded_at": "2026-07-26T22:11:10.185283",
+      "converted_at": "2026-07-26T22:20:05.127075"
     },
     "2617_tef": {
       "id": "2617_tef",
@@ -5260,8 +5340,12 @@
       "tuning": "GDAE (Standard)",
       "key": "Am",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.366954"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.366954",
+      "downloaded_at": "2026-07-26T22:11:11.689595",
+      "converted_at": "2026-07-26T22:20:05.132708",
+      "imported_at": "2026-07-26T22:26:25.745916",
+      "work_slug": "lonesome-fiddle-blues"
     },
     "2963_tef": {
       "id": "2963_tef",
@@ -5667,8 +5751,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367013"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.367013",
+      "downloaded_at": "2026-07-26T22:11:07.173975",
+      "converted_at": "2026-07-26T22:20:05.118252",
+      "imported_at": "2026-07-26T22:26:25.755936",
+      "work_slug": "mississippi-sawyer"
     },
     "2850_tef": {
       "id": "2850_tef",
@@ -5680,8 +5768,10 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367015"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.367015",
+      "downloaded_at": "2026-07-26T22:11:08.678729",
+      "converted_at": "2026-07-26T22:20:05.122771"
     },
     "2789_tef": {
       "id": "2789_tef",
@@ -6473,8 +6563,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367140"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.367140",
+      "downloaded_at": "2026-07-26T22:11:05.671065",
+      "converted_at": "2026-07-26T22:20:05.112777",
+      "imported_at": "2026-07-26T22:26:25.792474",
+      "work_slug": "orange-blossom-special"
     },
     "2846_tef": {
       "id": "2846_tef",
@@ -6524,8 +6618,12 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367147"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.367147",
+      "downloaded_at": "2026-07-26T22:11:01.285269",
+      "converted_at": "2026-07-26T22:20:05.075629",
+      "imported_at": "2026-07-26T22:26:25.805840",
+      "work_slug": "over-the-waterfall"
     },
     "3286_tef": {
       "id": "3286_tef",
@@ -6537,8 +6635,10 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367149"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.367149",
+      "downloaded_at": "2026-07-26T22:11:02.882487",
+      "converted_at": "2026-07-26T22:20:05.080646"
     },
     "2953_tef": {
       "id": "2953_tef",
@@ -6840,8 +6940,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367193"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.367193",
+      "downloaded_at": "2026-07-26T22:10:55.117435",
+      "converted_at": "2026-07-26T22:20:05.032915",
+      "imported_at": "2026-07-26T22:26:25.819627",
+      "work_slug": "ragtime-annie"
     },
     "3115_tef": {
       "id": "3115_tef",
@@ -6914,8 +7018,10 @@
       "tuning": "GDAE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367204"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.367204",
+      "downloaded_at": "2026-07-26T22:10:29.506984",
+      "converted_at": "2026-07-26T22:20:04.858021"
     },
     "2935_tef": {
       "id": "2935_tef",
@@ -6927,8 +7033,12 @@
       "tuning": "GDAE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367206"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.367206",
+      "downloaded_at": "2026-07-26T22:10:31.004264",
+      "converted_at": "2026-07-26T22:20:04.878598",
+      "imported_at": "2026-07-26T22:26:25.825154",
+      "work_slug": "red-haired-boy"
     },
     "1746_tef": {
       "id": "1746_tef",
@@ -7524,8 +7634,10 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367290"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:57:43.367290",
+      "downloaded_at": "2026-07-26T22:10:44.559907"
     },
     "2956_tef": {
       "id": "2956_tef",
@@ -7537,8 +7649,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367292"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.367292",
+      "downloaded_at": "2026-07-26T22:10:46.072436",
+      "converted_at": "2026-07-26T22:20:04.955306",
+      "imported_at": "2026-07-26T22:26:25.896210",
+      "work_slug": "st-anne-s-reel"
     },
     "2537_tef": {
       "id": "2537_tef",
@@ -8008,8 +8124,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367365"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.367365",
+      "downloaded_at": "2026-07-26T22:11:26.767865",
+      "converted_at": "2026-07-26T22:20:05.206002",
+      "imported_at": "2026-07-26T22:26:25.303254",
+      "work_slug": "cuckoo-s-nest"
     },
     "2553_tef": {
       "id": "2553_tef",
@@ -8021,8 +8141,10 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367367"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.367367",
+      "downloaded_at": "2026-07-26T22:11:28.272883",
+      "converted_at": "2026-07-26T22:20:05.210468"
     },
     "1748_tef": {
       "id": "1748_tef",
@@ -8355,8 +8477,12 @@
       "tuning": "GDAE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367419"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.367419",
+      "downloaded_at": "2026-07-26T22:10:37.017098",
+      "converted_at": "2026-07-26T22:20:04.896431",
+      "imported_at": "2026-07-26T22:26:25.915023",
+      "work_slug": "turkey-in-the-straw"
     },
     "2982_tef": {
       "id": "2982_tef",
@@ -8775,8 +8901,10 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367486"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.367486",
+      "downloaded_at": "2026-07-26T22:10:32.509702",
+      "converted_at": "2026-07-26T22:20:04.883825"
     },
     "3241_tef": {
       "id": "3241_tef",
@@ -8788,8 +8916,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367488"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:57:43.367488",
+      "downloaded_at": "2026-07-26T22:10:34.010991",
+      "converted_at": "2026-07-26T22:20:04.888974",
+      "imported_at": "2026-07-26T22:26:25.932541",
+      "work_slug": "whiskey-before-breakfast"
     },
     "3229_tef": {
       "id": "3229_tef",
@@ -8801,8 +8933,10 @@
       "tuning": "GDAE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:57:43.367489"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:57:43.367489",
+      "downloaded_at": "2026-07-26T22:10:35.513365",
+      "converted_at": "2026-07-26T22:20:04.893771"
     },
     "2938_tef": {
       "id": "2938_tef",

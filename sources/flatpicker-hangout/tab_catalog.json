@@ -66,8 +66,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166661"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166661",
+      "downloaded_at": "2026-07-26T22:10:00.628036",
+      "converted_at": "2026-07-26T22:20:04.670382",
+      "imported_at": "2026-07-26T22:26:25.522751",
+      "work_slug": "arkansas-traveler-1"
     },
     "1529_tef": {
       "id": "1529_tef",
@@ -102,8 +106,12 @@
       "source_url": "https://www.hangoutstorage.com/flatpickerhangout.com/storage/tabs/a/tab-ashokan-farewel-3145-235973112019.tef",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166668"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166668",
+      "downloaded_at": "2026-07-26T22:10:17.218739",
+      "converted_at": "2026-07-26T22:20:04.738465",
+      "imported_at": "2026-07-26T22:26:25.530282",
+      "work_slug": "ashokan-farewell-1"
     },
     "1526_tef": {
       "id": "1526_tef",
@@ -181,8 +189,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166682"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:05.166682",
+      "downloaded_at": "2026-07-26T22:10:14.205985",
+      "converted_at": "2026-07-26T22:20:04.730454"
     },
     "3347_tef": {
       "id": "3347_tef",
@@ -194,8 +204,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166684"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:58:05.166684",
+      "downloaded_at": "2026-07-26T22:10:15.708709"
     },
     "1860_tef": {
       "id": "1860_tef",
@@ -207,8 +219,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166686"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166686",
+      "downloaded_at": "2026-07-26T22:10:23.241820",
+      "converted_at": "2026-07-26T22:20:04.747328",
+      "imported_at": "2026-07-26T22:26:25.185949",
+      "work_slug": "big-mon"
     },
     "3303_tef": {
       "id": "3303_tef",
@@ -246,8 +262,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166691"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166691",
+      "downloaded_at": "2026-07-26T22:10:02.134880",
+      "converted_at": "2026-07-26T22:20:04.676597",
+      "imported_at": "2026-07-26T22:26:25.563704",
+      "work_slug": "black-mountain-rag"
     },
     "798_tef": {
       "id": "798_tef",
@@ -260,8 +280,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "A",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166693"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:58:05.166693",
+      "downloaded_at": "2026-07-26T22:10:03.647274"
     },
     "967_tef": {
       "id": "967_tef",
@@ -273,8 +295,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166695"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:05.166695",
+      "downloaded_at": "2026-07-26T22:09:41.247748",
+      "converted_at": "2026-07-26T22:20:04.580339"
     },
     "3435_tef": {
       "id": "3435_tef",
@@ -286,8 +310,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166697"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166697",
+      "downloaded_at": "2026-07-26T22:09:42.542967",
+      "converted_at": "2026-07-26T22:20:04.584801",
+      "imported_at": "2026-07-26T22:26:25.580407",
+      "work_slug": "blackberry-blossom"
     },
     "762_tef": {
       "id": "762_tef",
@@ -463,8 +491,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166726"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:58:05.166726",
+      "downloaded_at": "2026-07-26T22:10:12.704939"
     },
     "1870_tef": {
       "id": "1870_tef",
@@ -503,8 +533,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "A",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166732"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166732",
+      "downloaded_at": "2026-07-26T22:09:45.557349",
+      "converted_at": "2026-07-26T22:20:04.592513",
+      "imported_at": "2026-07-26T22:26:25.619072",
+      "work_slug": "cripple-creek"
     },
     "973_tef": {
       "id": "973_tef",
@@ -530,8 +564,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166736"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166736",
+      "downloaded_at": "2026-07-26T22:10:24.749200",
+      "converted_at": "2026-07-26T22:20:04.749661",
+      "imported_at": "2026-07-26T22:26:25.299548",
+      "work_slug": "cuckoo-s-nest"
     },
     "794_tef": {
       "id": "794_tef",
@@ -544,8 +582,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166738"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:58:05.166738",
+      "downloaded_at": "2026-07-26T22:10:26.252354"
     },
     "1540_tef": {
       "id": "1540_tef",
@@ -650,8 +690,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "C",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166755"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:58:05.166755",
+      "downloaded_at": "2026-07-26T22:10:27.755838"
     },
     "3048_tef": {
       "id": "3048_tef",
@@ -728,8 +770,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166769"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:58:05.166769",
+      "downloaded_at": "2026-07-26T22:10:08.170134"
     },
     "1519_tef": {
       "id": "1519_tef",
@@ -741,8 +785,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166771"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166771",
+      "downloaded_at": "2026-07-26T22:09:56.141688",
+      "converted_at": "2026-07-26T22:20:04.647953",
+      "imported_at": "2026-07-26T22:26:25.655391",
+      "work_slug": "fisher-s-hornpipe"
     },
     "1474_tef": {
       "id": "1474_tef",
@@ -766,8 +814,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166775"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166775",
+      "downloaded_at": "2026-07-26T22:09:54.600628",
+      "converted_at": "2026-07-26T22:20:04.644832",
+      "imported_at": "2026-07-26T22:26:25.677515",
+      "work_slug": "foggy-mountain-breakdown"
     },
     "1285_tef": {
       "id": "1285_tef",
@@ -779,8 +831,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166777"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166777",
+      "downloaded_at": "2026-07-26T22:10:05.155993",
+      "converted_at": "2026-07-26T22:20:04.689126",
+      "imported_at": "2026-07-26T22:26:25.687827",
+      "work_slug": "forked-deer"
     },
     "1388_tef": {
       "id": "1388_tef",
@@ -855,8 +911,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166788"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166788",
+      "downloaded_at": "2026-07-26T22:10:18.726745",
+      "converted_at": "2026-07-26T22:20:04.740006",
+      "imported_at": "2026-07-26T22:26:25.694955",
+      "work_slug": "gold-rush"
     },
     "3299_tef": {
       "id": "3299_tef",
@@ -868,8 +928,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166790"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:05.166790",
+      "downloaded_at": "2026-07-26T22:10:20.221826",
+      "converted_at": "2026-07-26T22:20:04.742704"
     },
     "3433_tef": {
       "id": "3433_tef",
@@ -881,8 +943,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166792"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:58:05.166792",
+      "downloaded_at": "2026-07-26T22:10:21.733556"
     },
     "1043_tef": {
       "id": "1043_tef",
@@ -1224,8 +1288,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166848"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166848",
+      "downloaded_at": "2026-07-26T22:10:11.191747",
+      "converted_at": "2026-07-26T22:20:04.708849",
+      "imported_at": "2026-07-26T22:26:25.738387",
+      "work_slug": "liberty"
     },
     "1083_tef": {
       "id": "1083_tef",
@@ -1445,8 +1513,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166879"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166879",
+      "downloaded_at": "2026-07-26T22:09:47.065215",
+      "converted_at": "2026-07-26T22:20:04.595670",
+      "imported_at": "2026-07-26T22:26:25.762780",
+      "work_slug": "old-joe-clark"
     },
     "960_tef": {
       "id": "960_tef",
@@ -1484,8 +1556,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166884"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166884",
+      "downloaded_at": "2026-07-26T22:10:09.678436",
+      "converted_at": "2026-07-26T22:20:04.704694",
+      "imported_at": "2026-07-26T22:26:25.800992",
+      "work_slug": "over-the-waterfall"
     },
     "787_tef": {
       "id": "787_tef",
@@ -1549,8 +1625,12 @@
       "genre": "Old-Time",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166894"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166894",
+      "downloaded_at": "2026-07-26T22:10:06.663824",
+      "converted_at": "2026-07-26T22:20:04.698176",
+      "imported_at": "2026-07-26T22:26:25.816915",
+      "work_slug": "ragtime-annie"
     },
     "1550_tef": {
       "id": "1550_tef",
@@ -1599,8 +1679,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166901"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:05.166901",
+      "downloaded_at": "2026-07-26T22:09:57.700146",
+      "converted_at": "2026-07-26T22:20:04.661826"
     },
     "821_tef": {
       "id": "821_tef",
@@ -1728,8 +1810,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166920"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166920",
+      "downloaded_at": "2026-07-26T22:09:48.580632",
+      "converted_at": "2026-07-26T22:20:04.598163",
+      "imported_at": "2026-07-26T22:26:25.885457",
+      "work_slug": "soldier-s-joy"
     },
     "1396_tef": {
       "id": "1396_tef",
@@ -1752,8 +1838,12 @@
       "genre": "Bluegrass",
       "key": "D",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166924"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166924",
+      "downloaded_at": "2026-07-26T22:09:59.124992",
+      "converted_at": "2026-07-26T22:20:04.667132",
+      "imported_at": "2026-07-26T22:26:25.893423",
+      "work_slug": "st-anne-s-reel"
     },
     "819_tef": {
       "id": "819_tef",
@@ -2025,8 +2115,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166961"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:58:05.166961",
+      "downloaded_at": "2026-07-26T22:09:50.087622"
     },
     "820_tef": {
       "id": "820_tef",
@@ -2039,8 +2131,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166963"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166963",
+      "downloaded_at": "2026-07-26T22:09:51.575329",
+      "converted_at": "2026-07-26T22:20:04.612909",
+      "imported_at": "2026-07-26T22:26:25.912123",
+      "work_slug": "turkey-in-the-straw"
     },
     "1491_tef": {
       "id": "1491_tef",
@@ -2051,8 +2147,12 @@
       "genre": "Bluegrass",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166965"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166965",
+      "downloaded_at": "2026-07-26T22:09:53.092972",
+      "converted_at": "2026-07-26T22:20:04.622651",
+      "imported_at": "2026-07-26T22:26:25.909680",
+      "work_slug": "turkey-in-the-straw"
     },
     "2526_tef": {
       "id": "2526_tef",
@@ -2165,8 +2265,12 @@
       "source_url": "https://www.hangoutstorage.com/flatpickerhangout.com/storage/tabs/w/tab-whiskey-before--308-2414102582008.tef",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166981"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166981",
+      "downloaded_at": "2026-07-26T22:09:44.048668",
+      "converted_at": "2026-07-26T22:20:04.590776",
+      "imported_at": "2026-07-26T22:26:25.925214",
+      "work_slug": "whiskey-before-breakfast"
     },
     "1376_tef": {
       "id": "1376_tef",

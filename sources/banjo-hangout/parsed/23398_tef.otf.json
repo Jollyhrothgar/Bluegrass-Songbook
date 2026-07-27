@@ -3,7 +3,8 @@
   "metadata": {
     "title": "Angeline the Baker",
     "time_signature": "2/4",
-    "tempo": 100
+    "tempo": 100,
+    "key": "C"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -1157,8 +1158,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "23398.tef",
-    "converted_at": "2026-07-02T11:24:53.171386"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/a/tab-angeline-the-ba-23398-213310112018.tef",
+    "author": "Yohansen",
+    "converted_at": "2026-07-26T22:20:06.075073"
   }
 }

@@ -5,12 +5,34 @@ default_key: A
 tags:
 - Instrumental
 - Fiddle
+- OldTime
+- Clawhammer
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/cluck-old-hen/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/cluck-old-hen/
+    imported_at: '2026-02-08'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16051'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16051
+    author: janolov
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '3051'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3051
+    author: MandoTom2
+    imported_at: '2026-07-26'

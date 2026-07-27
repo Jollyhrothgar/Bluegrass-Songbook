@@ -1,0 +1,40 @@
+id: cuckoo-s-nest
+title: Cuckoo's Nest
+artist: Traditional
+composers: []
+default_key: D
+tags:
+- Instrumental
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '23189'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23189
+    author: howsy-bee
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '766'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=766
+    author: GuitarTom2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2587'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2587
+    author: MandoTom2
+    imported_at: '2026-07-26'

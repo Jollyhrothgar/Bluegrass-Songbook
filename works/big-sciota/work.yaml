@@ -5,6 +5,28 @@ default_key: G
 tags:
 - Instrumental
 - Fiddle
+- Bluegrass
+- Scruggs
 status: placeholder
 notes: Traditional fiddle tune. Fast and fun at jams.
-parts: []
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '23579'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23579
+    author: howsy-bee
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2438'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2438
+    author: Live on What You Grow
+    imported_at: '2026-07-26'

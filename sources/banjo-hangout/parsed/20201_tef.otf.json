@@ -1,10 +1,11 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "SALT CREEK",
+    "title": "Salt Creek",
     "time_signature": "4/4",
     "tempo": 230,
-    "composer": "ARRANGED BY LYNN WILLIAMS"
+    "composer": "ARRANGED BY LYNN WILLIAMS",
+    "key": "G"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -3799,8 +3800,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "tab-salt-creek-20201-57182722014.tef",
-    "converted_at": "2026-07-02T11:24:53.492656"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-salt-creek-20201-57182722014.tef",
+    "author": "banjoman 1",
+    "converted_at": "2026-07-26T22:20:06.167378"
   }
 }

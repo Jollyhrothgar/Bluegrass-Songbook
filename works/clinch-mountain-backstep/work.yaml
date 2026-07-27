@@ -15,3 +15,23 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '26006'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=26006
+    author: stratovarious520
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: tenor-banjo
+  format: otf
+  file: tenor-banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '12122'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12122
+    author: Mirek Tim Patek
+    imported_at: '2026-07-26'

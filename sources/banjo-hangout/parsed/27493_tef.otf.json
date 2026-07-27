@@ -1,7 +1,7 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "  tabbed Chris Lewis",
+    "title": "Jerusalem Ridge",
     "time_signature": "4/4",
     "tempo": 240,
     "time_signature_changes": [
@@ -13,7 +13,8 @@
         "measure": 49,
         "time_signature": "2/4"
       }
-    ]
+    ],
+    "key": "Am"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -11328,8 +11329,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "27493.tef",
-    "converted_at": "2026-07-02T11:24:53.720447"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/j/tab-jerusalem-ridge-27493-2347822102024.tef",
+    "author": "crisslewis",
+    "converted_at": "2026-07-26T22:20:06.795267"
   }
 }

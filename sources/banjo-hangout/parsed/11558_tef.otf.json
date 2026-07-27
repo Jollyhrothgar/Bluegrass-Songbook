@@ -1,7 +1,7 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "Beaumont Rag",
+    "title": "Beaumont Rag (F)",
     "time_signature": "4/4",
     "tempo": 220,
     "time_signature_changes": [
@@ -2664,8 +2664,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "11558.tef",
-    "converted_at": "2026-07-02T11:24:53.304827"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/beaumont_rag_(f)-2693.tef",
+    "author": "schlange",
+    "converted_at": "2026-07-26T22:20:06.445542"
   }
 }

@@ -1,10 +1,11 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "ARKANSAS TRAVELER",
+    "title": "Arkansas Traveler",
     "time_signature": "2/2",
     "tempo": 120,
-    "composer": "Sanford C. Faulkner (1806-1874)"
+    "composer": "Sanford C. Faulkner (1806-1874)",
+    "key": "G"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -3708,8 +3709,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "tab-arkansas-travel-20556-233610972014.tef",
-    "converted_at": "2026-07-02T11:24:53.058329"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/a/tab-arkansas-travel-20556-233610972014.tef",
+    "author": "Rawhide Creek",
+    "converted_at": "2026-07-26T22:20:05.968551"
   }
 }

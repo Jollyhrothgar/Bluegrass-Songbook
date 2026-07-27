@@ -3,7 +3,8 @@
   "metadata": {
     "title": "Lonesome Fiddle Blues",
     "time_signature": "4/4",
-    "tempo": 160
+    "tempo": 160,
+    "key": "Dm"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -2622,8 +2623,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "tab-lonesome-fiddle-21057-361621222015.tef",
-    "converted_at": "2026-07-02T11:24:53.521979"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/tab-lonesome-fiddle-21057-361621222015.tef",
+    "author": "delmando",
+    "converted_at": "2026-07-26T22:20:06.579954"
   }
 }

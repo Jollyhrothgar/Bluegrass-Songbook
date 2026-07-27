@@ -4,6 +4,8 @@ artist: Traditional
 default_key: D
 tags:
 - Instrumental
+- Scruggs
+- OldTime
 parts:
 - type: lead-sheet
   format: chordpro
@@ -11,4 +13,34 @@ parts:
   default: true
   provenance:
     source: tunearch
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '17713'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=17713
+    author: banjoman 1
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '2996'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=2996
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2268'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2268
+    author: onaroll
     imported_at: '2026-07-26'

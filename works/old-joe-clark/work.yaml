@@ -6,6 +6,7 @@ tags:
 - Instrumental
 - Bluegrass
 - OldTime
+- Scruggs
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,3 +15,43 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24068'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24068
+    author: b_kamper
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2592'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2592
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '1777'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=1777
+    author: stan
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: tenor-banjo
+  format: otf
+  file: tenor-banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '12126'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12126
+    author: Mirek Tim Patek
+    imported_at: '2026-07-26'

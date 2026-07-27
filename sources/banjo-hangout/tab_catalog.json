@@ -11,9 +11,10 @@
       "author": "schlange",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/a/arkansas_traveller-426.tef",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272583",
-      "downloaded_at": "2026-01-04T12:40:37.131013"
+      "downloaded_at": "2026-07-26T22:14:23.289444",
+      "converted_at": "2026-07-26T22:20:05.963074"
     },
     "16790_tef": {
       "id": "16790_tef",
@@ -25,9 +26,10 @@
       "tuning": "Drop C (gCGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272603",
-      "downloaded_at": "2026-01-04T12:40:38.315515"
+      "downloaded_at": "2026-07-26T22:14:24.783923",
+      "converted_at": "2026-07-26T22:20:05.966292"
     },
     "20556_tef": {
       "id": "20556_tef",
@@ -40,10 +42,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272608",
-      "downloaded_at": "2026-01-04T12:40:39.821565"
+      "downloaded_at": "2026-07-26T22:14:26.294628",
+      "converted_at": "2026-07-26T22:20:05.969349"
     },
     "26610_tef": {
       "id": "26610_tef",
@@ -56,9 +58,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272611",
-      "downloaded_at": "2026-01-04T12:40:41.323430"
+      "downloaded_at": "2026-07-26T22:14:27.797393"
     },
     "27154_tef": {
       "id": "27154_tef",
@@ -71,10 +74,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272614",
-      "downloaded_at": "2026-01-04T12:40:42.824040"
+      "downloaded_at": "2026-01-04T12:40:42.824040",
+      "converted_at": "2026-07-26T22:20:05.974757"
     },
     "28424_tef": {
       "id": "28424_tef",
@@ -87,9 +90,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272617",
-      "downloaded_at": "2026-01-04T12:40:44.325657"
+      "downloaded_at": "2026-07-26T22:14:29.308759"
     },
     "11059_tef": {
       "id": "11059_tef",
@@ -99,9 +103,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/red_haired_boy-1687.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272620",
-      "downloaded_at": "2026-01-04T12:40:45.831651"
+      "downloaded_at": "2026-07-26T22:11:48.151891",
+      "converted_at": "2026-07-26T22:20:05.418115"
     },
     "14690_tef": {
       "id": "14690_tef",
@@ -114,10 +119,12 @@
       "tuning": "Tenor G (DGdg)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "imported",
       "discovered_at": "2026-01-04T12:38:28.272624",
-      "downloaded_at": "2026-01-04T12:40:47.332935"
+      "downloaded_at": "2026-07-26T22:11:49.661398",
+      "converted_at": "2026-07-26T22:20:05.420628",
+      "imported_at": "2026-07-26T22:26:25.832763",
+      "work_slug": "red-haired-boy"
     },
     "14809_tef": {
       "id": "14809_tef",
@@ -130,9 +137,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272626",
-      "downloaded_at": "2026-01-04T12:40:48.832541"
+      "downloaded_at": "2026-07-26T22:11:51.172969",
+      "converted_at": "2026-07-26T22:20:05.425199"
     },
     "17182_tef": {
       "id": "17182_tef",
@@ -145,9 +153,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272629",
-      "downloaded_at": "2026-01-04T12:40:50.336976"
+      "downloaded_at": "2026-07-26T22:11:52.672696",
+      "converted_at": "2026-07-26T22:20:05.431582"
     },
     "20228_tef": {
       "id": "20228_tef",
@@ -160,9 +169,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272631",
-      "downloaded_at": "2026-01-04T12:40:51.846750"
+      "downloaded_at": "2026-07-26T22:11:54.184208",
+      "converted_at": "2026-07-26T22:20:05.453206"
     },
     "20843_tef": {
       "id": "20843_tef",
@@ -175,9 +185,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272634",
-      "downloaded_at": "2026-01-04T12:40:53.346050"
+      "downloaded_at": "2026-07-26T22:11:55.691496",
+      "converted_at": "2026-07-26T22:20:05.455987"
     },
     "24093_tef": {
       "id": "24093_tef",
@@ -190,10 +201,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272637",
-      "downloaded_at": "2026-01-04T12:40:54.843624"
+      "downloaded_at": "2026-07-26T22:11:57.196893",
+      "converted_at": "2026-07-26T22:20:05.459755"
     },
     "25251_tef": {
       "id": "25251_tef",
@@ -206,9 +217,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272639",
-      "downloaded_at": "2026-01-04T12:40:56.352165"
+      "downloaded_at": "2026-07-26T22:11:58.713463"
     },
     "27408_tef": {
       "id": "27408_tef",
@@ -221,10 +233,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272641",
-      "downloaded_at": "2026-01-04T12:40:57.848878"
+      "downloaded_at": "2026-01-04T12:40:57.848878",
+      "converted_at": "2026-07-26T22:20:05.464884"
     },
     "11173_tef": {
       "id": "11173_tef",
@@ -234,9 +246,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/salt_creek-1932.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272644",
-      "downloaded_at": "2026-01-04T12:40:59.353551"
+      "downloaded_at": "2026-07-26T22:15:37.078980"
     },
     "11174_tef": {
       "id": "11174_tef",
@@ -246,9 +259,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/salt_creek-1933.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272646",
-      "downloaded_at": "2026-01-04T12:41:00.857869"
+      "downloaded_at": "2026-07-26T22:15:38.581648",
+      "converted_at": "2026-07-26T22:20:06.160696"
     },
     "11723_tef": {
       "id": "11723_tef",
@@ -261,10 +275,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272649",
-      "downloaded_at": "2026-01-04T12:41:02.360434"
+      "downloaded_at": "2026-07-26T22:15:40.085613",
+      "converted_at": "2026-07-26T22:20:06.162877"
     },
     "14233_tef": {
       "id": "14233_tef",
@@ -277,9 +291,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272651",
-      "downloaded_at": "2026-01-04T12:41:03.862218"
+      "downloaded_at": "2026-07-26T22:15:41.589221",
+      "converted_at": "2026-07-26T22:20:06.165270"
     },
     "20201_tef": {
       "id": "20201_tef",
@@ -292,10 +307,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272653",
-      "downloaded_at": "2026-01-04T12:41:05.368793"
+      "downloaded_at": "2026-07-26T22:15:43.097849",
+      "converted_at": "2026-07-26T22:20:06.168436"
     },
     "20923_tef": {
       "id": "20923_tef",
@@ -308,10 +323,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Expert",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272655",
-      "downloaded_at": "2026-01-04T12:41:06.875923"
+      "downloaded_at": "2026-07-26T22:15:44.609630",
+      "converted_at": "2026-07-26T22:20:06.173947"
     },
     "20936_tef": {
       "id": "20936_tef",
@@ -324,10 +339,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Expert",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272657",
-      "downloaded_at": "2026-01-04T12:41:08.376715"
+      "downloaded_at": "2026-07-26T22:15:46.110820",
+      "converted_at": "2026-07-26T22:20:06.179025"
     },
     "24091_tef": {
       "id": "24091_tef",
@@ -340,10 +355,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272660",
-      "downloaded_at": "2026-01-04T12:41:09.875482"
+      "downloaded_at": "2026-07-26T22:15:47.615715",
+      "converted_at": "2026-07-26T22:20:06.181423"
     },
     "24741_tef": {
       "id": "24741_tef",
@@ -356,9 +371,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272662",
-      "downloaded_at": "2026-01-04T12:41:11.388035"
+      "downloaded_at": "2026-07-26T22:15:49.122139"
     },
     "27418_tef": {
       "id": "27418_tef",
@@ -371,10 +387,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272664",
-      "downloaded_at": "2026-01-04T12:41:12.883852"
+      "downloaded_at": "2026-01-04T12:41:12.883852",
+      "converted_at": "2026-07-26T22:20:06.199813"
     },
     "20627_tef": {
       "id": "20627_tef",
@@ -387,10 +403,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272667",
-      "downloaded_at": "2026-01-04T12:41:14.385314"
+      "downloaded_at": "2026-01-04T12:41:14.385314",
+      "converted_at": "2026-07-26T22:20:06.201047"
     },
     "11684_tef": {
       "id": "11684_tef",
@@ -400,9 +416,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/soldier&no39s_joy-2992.tef",
       "genre": "Bluegrass",
       "style": "Other",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272670",
-      "downloaded_at": "2026-01-04T12:41:15.891352"
+      "downloaded_at": "2026-07-26T22:12:58.952396",
+      "converted_at": "2026-07-26T22:20:05.639327"
     },
     "11775_tef": {
       "id": "11775_tef",
@@ -415,9 +432,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "F",
       "difficulty": "Expert",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272672",
-      "downloaded_at": "2026-01-04T12:41:17.393266"
+      "downloaded_at": "2026-07-26T22:13:00.455450"
     },
     "12124_tef": {
       "id": "12124_tef",
@@ -433,8 +451,9 @@
       "status": "imported",
       "discovered_at": "2026-01-04T12:38:28.272674",
       "downloaded_at": "2026-01-04T12:41:18.897703",
-      "imported_at": "2026-07-08T13:32:03.755126",
-      "work_slug": "soldier-s-joy-1"
+      "converted_at": "2026-07-26T22:20:05.645019",
+      "imported_at": "2026-07-26T22:26:25.888452",
+      "work_slug": "soldier-s-joy"
     },
     "11460_tef": {
       "id": "11460_tef",
@@ -444,9 +463,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/w/whiskey_before_breakfast-2447.tef",
       "genre": "Traditional",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272677",
-      "downloaded_at": "2026-01-04T12:41:20.404980"
+      "downloaded_at": "2026-07-26T22:12:00.220243",
+      "converted_at": "2026-07-26T22:20:05.468203"
     },
     "11462_tef": {
       "id": "11462_tef",
@@ -456,9 +476,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/w/whiskey_before_breakfast-2449.tef",
       "genre": "Fiddle/Celtic/Irish",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272679",
-      "downloaded_at": "2026-01-04T12:41:21.906427"
+      "downloaded_at": "2026-07-26T22:12:01.724700",
+      "converted_at": "2026-07-26T22:20:05.473787"
     },
     "18030_tef": {
       "id": "18030_tef",
@@ -471,10 +492,10 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272681",
-      "downloaded_at": "2026-01-04T12:41:23.406676"
+      "downloaded_at": "2026-07-26T22:12:03.234894",
+      "converted_at": "2026-07-26T22:20:05.476625"
     },
     "21563_tef": {
       "id": "21563_tef",
@@ -486,9 +507,10 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272684",
-      "downloaded_at": "2026-01-04T12:41:24.912030"
+      "downloaded_at": "2026-07-26T22:12:04.824932",
+      "converted_at": "2026-07-26T22:20:05.480944"
     },
     "22962_tef": {
       "id": "22962_tef",
@@ -501,9 +523,10 @@
       "tuning": "Double C (gCGCD)",
       "key": "D",
       "difficulty": "Beginner",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272686",
-      "downloaded_at": "2026-01-04T12:41:26.418185"
+      "downloaded_at": "2026-07-26T22:12:06.319318",
+      "converted_at": "2026-07-26T22:20:05.483609"
     },
     "22981_tef": {
       "id": "22981_tef",
@@ -516,9 +539,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272688",
-      "downloaded_at": "2026-01-04T12:41:27.915865"
+      "downloaded_at": "2026-07-26T22:12:07.876052",
+      "converted_at": "2026-07-26T22:20:05.485293"
     },
     "23412_tef": {
       "id": "23412_tef",
@@ -531,9 +555,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272690",
-      "downloaded_at": "2026-01-04T12:41:29.422074"
+      "downloaded_at": "2026-07-26T22:12:09.260185",
+      "converted_at": "2026-07-26T22:20:05.486926"
     },
     "23848_tef": {
       "id": "23848_tef",
@@ -546,10 +571,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272693",
-      "downloaded_at": "2026-01-04T12:41:30.925183"
+      "downloaded_at": "2026-07-26T22:12:10.766487",
+      "converted_at": "2026-07-26T22:20:05.489760"
     },
     "24112_tef": {
       "id": "24112_tef",
@@ -562,10 +587,10 @@
       "tuning": "Double C (gCGCD)",
       "key": "C",
       "difficulty": "Beginner",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272695",
-      "downloaded_at": "2026-01-04T12:41:32.431549"
+      "downloaded_at": "2026-01-04T12:41:32.431549",
+      "converted_at": "2026-07-26T22:20:05.492527"
     },
     "25933_tef": {
       "id": "25933_tef",
@@ -578,9 +603,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272697",
-      "downloaded_at": "2026-01-04T12:41:33.942188"
+      "downloaded_at": "2026-07-26T22:12:12.287677"
     },
     "26855_tef": {
       "id": "26855_tef",
@@ -593,9 +619,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272699",
-      "downloaded_at": "2026-01-04T12:41:35.439723"
+      "downloaded_at": "2026-07-26T22:12:13.786567"
     },
     "28474_tef": {
       "id": "28474_tef",
@@ -608,9 +635,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Expert",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272701",
-      "downloaded_at": "2026-01-04T12:41:36.939800"
+      "downloaded_at": "2026-07-26T22:12:15.290136"
     },
     "23439_tef": {
       "id": "23439_tef",
@@ -638,10 +666,10 @@
       "style": "Bluegrass (Scruggs)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272706",
-      "downloaded_at": "2026-01-04T12:41:39.945474"
+      "downloaded_at": "2026-07-26T22:15:03.961068",
+      "converted_at": "2026-07-26T22:20:06.069954"
     },
     "11831_tef": {
       "id": "11831_tef",
@@ -654,10 +682,12 @@
       "tuning": "aDGBD, no capo.",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "imported",
       "discovered_at": "2026-01-04T12:38:28.272709",
-      "downloaded_at": "2026-01-04T12:41:41.447885"
+      "downloaded_at": "2026-07-26T22:15:05.453481",
+      "converted_at": "2026-07-26T22:20:06.072314",
+      "imported_at": "2026-07-26T22:26:25.517237",
+      "work_slug": "angeline-the-baker"
     },
     "19887_tef": {
       "id": "19887_tef",
@@ -670,9 +700,10 @@
       "tuning": "Double C (gCGCD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272712",
-      "downloaded_at": "2026-01-04T12:41:42.950953"
+      "downloaded_at": "2026-07-26T22:15:06.967194",
+      "converted_at": "2026-07-26T22:20:06.074158"
     },
     "23398_tef": {
       "id": "23398_tef",
@@ -685,10 +716,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272714",
-      "downloaded_at": "2026-01-04T12:41:44.449551"
+      "downloaded_at": "2026-01-04T12:41:44.449551",
+      "converted_at": "2026-07-26T22:20:06.075777"
     },
     "28438_tef": {
       "id": "28438_tef",
@@ -701,9 +732,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272716",
-      "downloaded_at": "2026-01-04T12:41:45.954698"
+      "downloaded_at": "2026-07-26T22:15:08.477662"
     },
     "11829_tef": {
       "id": "11829_tef",
@@ -715,10 +747,10 @@
       "style": "Bluegrass (Scruggs)",
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272718",
-      "downloaded_at": "2026-01-04T12:41:47.459887"
+      "downloaded_at": "2026-01-04T12:41:47.459887",
+      "converted_at": "2026-07-26T22:20:06.081371"
     },
     "11830_tef": {
       "id": "11830_tef",
@@ -730,9 +762,10 @@
       "style": "Bluegrass (Scruggs)",
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272721",
-      "downloaded_at": "2026-01-04T12:41:48.964740"
+      "downloaded_at": "2026-01-04T12:41:48.964740",
+      "converted_at": "2026-07-26T22:20:06.084376"
     },
     "10276_tef": {
       "id": "10276_tef",
@@ -741,9 +774,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/cherokee_shuffle-189.tef",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272723",
-      "downloaded_at": "2026-01-04T12:41:52.574094"
+      "downloaded_at": "2026-07-26T22:15:52.133585",
+      "converted_at": "2026-07-26T22:20:06.210905"
     },
     "20620_tef": {
       "id": "20620_tef",
@@ -755,9 +789,10 @@
       "style": "Bluegrass (Scruggs)",
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272726",
-      "downloaded_at": "2026-01-04T12:41:52.671820"
+      "downloaded_at": "2026-07-26T22:15:53.640149",
+      "converted_at": "2026-07-26T22:20:06.217185"
     },
     "22240_tef": {
       "id": "22240_tef",
@@ -770,9 +805,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272728",
-      "downloaded_at": "2026-01-04T12:41:54.173744"
+      "downloaded_at": "2026-07-26T22:15:55.146338",
+      "converted_at": "2026-07-26T22:20:06.222860"
     },
     "23404_tef": {
       "id": "23404_tef",
@@ -785,10 +821,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272730",
-      "downloaded_at": "2026-01-04T12:41:55.674955"
+      "downloaded_at": "2026-07-26T22:15:56.651115",
+      "converted_at": "2026-07-26T22:20:06.224894"
     },
     "23778_tef": {
       "id": "23778_tef",
@@ -801,10 +837,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272732",
-      "downloaded_at": "2026-01-04T12:41:57.175972"
+      "downloaded_at": "2026-07-26T22:15:58.155227",
+      "converted_at": "2026-07-26T22:20:06.227394"
     },
     "23819_tef": {
       "id": "23819_tef",
@@ -817,9 +853,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272734",
-      "downloaded_at": "2026-01-04T12:41:58.680678"
+      "downloaded_at": "2026-07-26T22:15:59.658067",
+      "converted_at": "2026-07-26T22:20:06.232628"
     },
     "24087_tef": {
       "id": "24087_tef",
@@ -832,10 +869,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272736",
-      "downloaded_at": "2026-01-04T12:42:00.194250"
+      "downloaded_at": "2026-07-26T22:16:01.173046",
+      "converted_at": "2026-07-26T22:20:06.236494"
     },
     "25161_tef": {
       "id": "25161_tef",
@@ -848,9 +885,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272738",
-      "downloaded_at": "2026-01-04T12:42:01.686548"
+      "downloaded_at": "2026-07-26T22:16:02.673541",
+      "converted_at": "2026-07-26T22:20:06.238867"
     },
     "25635_tef": {
       "id": "25635_tef",
@@ -863,10 +901,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272741",
-      "downloaded_at": "2026-01-04T12:42:03.191513"
+      "downloaded_at": "2026-01-04T12:42:03.191513",
+      "converted_at": "2026-07-26T22:20:06.260959"
     },
     "21874_tef": {
       "id": "21874_tef",
@@ -879,9 +917,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "imported",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272743",
       "downloaded_at": "2026-01-04T12:42:04.691127",
+      "converted_at": "2026-07-26T22:20:06.262257",
       "imported_at": "2026-07-08T00:00:00",
       "work_slug": "cherokee-shuffle-a"
     },
@@ -892,10 +931,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/cherokee_shuffle_(banjo_break)-191.tef",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272746",
-      "downloaded_at": "2026-01-04T12:42:06.191452"
+      "downloaded_at": "2026-01-04T12:42:06.191452",
+      "converted_at": "2026-07-26T22:20:06.264253"
     },
     "26756_tef": {
       "id": "26756_tef",
@@ -908,9 +947,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272748",
-      "downloaded_at": "2026-01-04T12:42:07.703060"
+      "downloaded_at": "2026-07-26T22:16:04.190019"
     },
     "10652_tef": {
       "id": "10652_tef",
@@ -918,9 +958,10 @@
       "author": "schlange",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/devil&no39s_dream-753.tef",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272751",
-      "downloaded_at": "2026-01-04T12:42:09.196192"
+      "downloaded_at": "2026-07-26T22:16:05.699822",
+      "converted_at": "2026-07-26T22:20:06.270342"
     },
     "10653_tef": {
       "id": "10653_tef",
@@ -930,9 +971,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/devil&no39s_dream-756.tef",
       "genre": "Traditional",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272753",
-      "downloaded_at": "2026-01-04T12:42:10.705240"
+      "downloaded_at": "2026-07-26T22:16:07.195875",
+      "converted_at": "2026-07-26T22:20:06.272200"
     },
     "27165_tef": {
       "id": "27165_tef",
@@ -945,10 +987,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272755",
-      "downloaded_at": "2026-01-04T12:42:12.213913"
+      "downloaded_at": "2026-01-04T12:42:12.213913",
+      "converted_at": "2026-07-26T22:20:06.273405"
     },
     "15317_tef": {
       "id": "15317_tef",
@@ -961,10 +1003,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "Am",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272758",
-      "downloaded_at": "2026-01-04T12:42:13.711631"
+      "downloaded_at": "2026-01-04T12:42:13.711631",
+      "converted_at": "2026-07-26T22:20:06.274794"
     },
     "11188_tef": {
       "id": "11188_tef",
@@ -974,9 +1016,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/temperance_reel-1959.tef",
       "genre": "Fiddle/Celtic/Irish",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272760",
-      "downloaded_at": "2026-01-04T12:42:15.223934"
+      "downloaded_at": "2026-07-26T22:16:53.903591",
+      "converted_at": "2026-07-26T22:20:06.587593"
     },
     "12661_tef": {
       "id": "12661_tef",
@@ -989,9 +1032,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272763",
-      "downloaded_at": "2026-01-04T12:42:16.718545"
+      "downloaded_at": "2026-07-26T22:16:55.415139",
+      "converted_at": "2026-07-26T22:20:06.591956"
     },
     "17275_tef": {
       "id": "17275_tef",
@@ -1004,9 +1048,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272765",
-      "downloaded_at": "2026-01-04T12:42:18.219856"
+      "downloaded_at": "2026-07-26T22:16:56.926758",
+      "converted_at": "2026-07-26T22:20:06.593561"
     },
     "19123_tef": {
       "id": "19123_tef",
@@ -1019,9 +1064,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272767",
-      "downloaded_at": "2026-01-04T12:42:19.725896"
+      "downloaded_at": "2026-07-26T22:16:58.426782",
+      "converted_at": "2026-07-26T22:20:06.595721"
     },
     "20084_tef": {
       "id": "20084_tef",
@@ -1034,9 +1080,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272769",
-      "downloaded_at": "2026-01-04T12:42:21.225451"
+      "downloaded_at": "2026-07-26T22:16:59.934251",
+      "converted_at": "2026-07-26T22:20:06.597986"
     },
     "21467_tef": {
       "id": "21467_tef",
@@ -1049,9 +1096,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272771",
-      "downloaded_at": "2026-01-04T12:42:22.724073"
+      "downloaded_at": "2026-01-04T12:42:22.724073",
+      "converted_at": "2026-07-26T22:20:06.600532"
     },
     "21627_tef": {
       "id": "21627_tef",
@@ -1064,9 +1112,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272773",
-      "downloaded_at": "2026-01-04T12:42:24.240488"
+      "downloaded_at": "2026-07-26T22:17:01.449619"
     },
     "24839_tef": {
       "id": "24839_tef",
@@ -1079,9 +1128,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272776",
-      "downloaded_at": "2026-01-04T12:42:25.733556"
+      "downloaded_at": "2026-07-26T22:17:02.955536"
     },
     "28162_tef": {
       "id": "28162_tef",
@@ -1094,9 +1144,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272778",
-      "downloaded_at": "2026-01-04T12:42:27.237576"
+      "downloaded_at": "2026-07-26T22:17:04.471668"
     },
     "28388_tef": {
       "id": "28388_tef",
@@ -1109,9 +1160,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272780",
-      "downloaded_at": "2026-01-04T12:42:28.738728"
+      "downloaded_at": "2026-07-26T22:17:05.972121"
     },
     "27500_tef": {
       "id": "27500_tef",
@@ -1124,9 +1176,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272783",
-      "downloaded_at": "2026-01-04T12:42:30.241498"
+      "downloaded_at": "2026-07-26T22:17:07.481344"
     },
     "27499_tef": {
       "id": "27499_tef",
@@ -1139,9 +1192,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272785",
-      "downloaded_at": "2026-01-04T12:42:31.745335"
+      "downloaded_at": "2026-07-26T22:17:08.984282"
     },
     "13609_tef": {
       "id": "13609_tef",
@@ -1154,9 +1208,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "F",
       "difficulty": "Expert",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272787",
-      "downloaded_at": "2026-01-04T12:42:33.257513"
+      "downloaded_at": "2026-07-26T22:16:31.324300"
     },
     "21307_tef": {
       "id": "21307_tef",
@@ -1169,10 +1224,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "F",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272789",
-      "downloaded_at": "2026-01-04T12:42:34.753860"
+      "downloaded_at": "2026-01-04T12:42:34.753860",
+      "converted_at": "2026-07-26T22:20:06.442400"
     },
     "11557_tef": {
       "id": "11557_tef",
@@ -1182,10 +1237,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/beaumont_rag-2690.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272792",
-      "downloaded_at": "2026-01-04T12:42:36.261526"
+      "downloaded_at": "2026-01-04T12:42:36.261526",
+      "converted_at": "2026-07-26T22:20:06.444270"
     },
     "11558_tef": {
       "id": "11558_tef",
@@ -1195,10 +1250,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/beaumont_rag_(f)-2693.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272794",
-      "downloaded_at": "2026-01-04T12:42:37.761219"
+      "downloaded_at": "2026-01-04T12:42:37.761219",
+      "converted_at": "2026-07-26T22:20:06.446464"
     },
     "21420_tef": {
       "id": "21420_tef",
@@ -1211,9 +1266,12 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "imported",
       "discovered_at": "2026-01-04T12:38:28.272797",
-      "downloaded_at": "2026-01-04T12:42:39.259453"
+      "downloaded_at": "2026-01-04T12:42:39.259453",
+      "converted_at": "2026-07-26T22:20:06.202679",
+      "imported_at": "2026-07-26T22:26:25.637062",
+      "work_slug": "eighth-of-january"
     },
     "22474_tef": {
       "id": "22474_tef",
@@ -1226,9 +1284,10 @@
       "tuning": "Sawmill (gDGCD)",
       "key": "Am",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272800",
-      "downloaded_at": "2026-01-04T12:42:40.759518"
+      "downloaded_at": "2026-07-26T22:17:43.621158",
+      "converted_at": "2026-07-26T22:20:06.775660"
     },
     "23374_tef": {
       "id": "23374_tef",
@@ -1241,10 +1300,10 @@
       "tuning": "Open Gm (gDGBbD)",
       "key": "Am",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272802",
-      "downloaded_at": "2026-01-04T12:42:42.267270"
+      "downloaded_at": "2026-07-26T22:17:45.134612",
+      "converted_at": "2026-07-26T22:20:06.778146"
     },
     "27493_tef": {
       "id": "27493_tef",
@@ -1257,10 +1316,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "Am",
       "difficulty": "Expert",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272804",
-      "downloaded_at": "2026-01-04T12:42:43.775485"
+      "downloaded_at": "2026-01-04T12:42:43.775485",
+      "converted_at": "2026-07-26T22:20:06.797232"
     },
     "13248_tef": {
       "id": "13248_tef",
@@ -1273,9 +1332,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "Am",
       "difficulty": "Intermediate",
-      "status": "imported",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272807",
       "downloaded_at": "2026-01-04T12:42:45.278318",
+      "converted_at": "2026-07-26T22:20:06.806873",
       "imported_at": "2026-07-08T13:32:03.769922",
       "work_slug": "jerusalem-ridge"
     },
@@ -1287,10 +1347,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/leather_britches-1044.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272810",
-      "downloaded_at": "2026-01-04T12:42:46.784479"
+      "downloaded_at": "2026-07-26T22:16:32.831282",
+      "converted_at": "2026-07-26T22:20:06.451372"
     },
     "16624_tef": {
       "id": "16624_tef",
@@ -1301,9 +1361,10 @@
       "style": "Clawhammer and Old-Time",
       "tuning": "Standard Open G (gDGBD)",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272813",
-      "downloaded_at": "2026-01-04T12:42:48.282609"
+      "downloaded_at": "2026-07-26T22:16:34.329481",
+      "converted_at": "2026-07-26T22:20:06.452976"
     },
     "18926_tef": {
       "id": "18926_tef",
@@ -1316,10 +1377,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272815",
-      "downloaded_at": "2026-01-04T12:42:49.781704"
+      "downloaded_at": "2026-01-04T12:42:49.781704",
+      "converted_at": "2026-07-26T22:20:06.454654"
     },
     "10775_tef": {
       "id": "10775_tef",
@@ -1329,9 +1390,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/liberty-1061.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272817",
-      "downloaded_at": "2026-01-04T12:42:51.287562"
+      "downloaded_at": "2026-07-26T22:15:31.066845",
+      "converted_at": "2026-07-26T22:20:06.133510"
     },
     "16825_tef": {
       "id": "16825_tef",
@@ -1343,10 +1405,10 @@
       "style": "Clawhammer and Old-Time",
       "tuning": "Double C (gCGCD)",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272819",
-      "downloaded_at": "2026-01-04T12:42:52.792078"
+      "downloaded_at": "2026-07-26T22:15:32.572853",
+      "converted_at": "2026-07-26T22:20:06.134925"
     },
     "23192_tef": {
       "id": "23192_tef",
@@ -1359,9 +1421,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272822",
-      "downloaded_at": "2026-01-04T12:42:54.294822"
+      "downloaded_at": "2026-01-04T12:42:54.294822",
+      "converted_at": "2026-07-26T22:20:06.138782"
     },
     "25725_tef": {
       "id": "25725_tef",
@@ -1374,9 +1437,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272824",
-      "downloaded_at": "2026-01-04T12:42:55.800280"
+      "downloaded_at": "2026-07-26T22:15:34.076046"
     },
     "27214_tef": {
       "id": "27214_tef",
@@ -1389,9 +1453,10 @@
       "tuning": "Double C (gCGCD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272826",
-      "downloaded_at": "2026-01-04T12:42:57.304479"
+      "downloaded_at": "2026-07-26T22:15:35.578222"
     },
     "10776_tef": {
       "id": "10776_tef",
@@ -1401,10 +1466,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/liberty_(d_tuning)-1058.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272828",
-      "downloaded_at": "2026-01-04T12:42:58.802901"
+      "downloaded_at": "2026-01-04T12:42:58.802901",
+      "converted_at": "2026-07-26T22:20:06.148305"
     },
     "10777_tef": {
       "id": "10777_tef",
@@ -1414,10 +1479,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/liberty_(g_tuning)-1059.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272830",
-      "downloaded_at": "2026-01-04T12:43:00.311083"
+      "downloaded_at": "2026-01-04T12:43:00.311083",
+      "converted_at": "2026-07-26T22:20:06.150167"
     },
     "17879_tef": {
       "id": "17879_tef",
@@ -1430,10 +1495,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272832",
-      "downloaded_at": "2026-01-04T12:43:01.808839"
+      "downloaded_at": "2026-01-04T12:43:01.808839",
+      "converted_at": "2026-07-26T22:20:06.151316"
     },
     "14699_tef": {
       "id": "14699_tef",
@@ -1446,9 +1511,10 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272835",
-      "downloaded_at": "2026-01-04T12:43:03.312690"
+      "downloaded_at": "2026-01-04T12:43:03.312690",
+      "converted_at": "2026-07-26T22:20:06.456618"
     },
     "16117_tef": {
       "id": "16117_tef",
@@ -1461,10 +1527,10 @@
       "tuning": "Open C (gCGCE)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272837",
-      "downloaded_at": "2026-01-04T12:43:04.814630"
+      "downloaded_at": "2026-01-04T12:43:04.814630",
+      "converted_at": "2026-07-26T22:20:06.458107"
     },
     "11047_tef": {
       "id": "11047_tef",
@@ -1474,10 +1540,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/ragtime_annie-1664.tef",
       "genre": "Ragtime",
       "style": "Clawhammer and Old-Time",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272840",
-      "downloaded_at": "2026-01-04T12:43:06.323873"
+      "downloaded_at": "2026-07-26T22:14:57.924010",
+      "converted_at": "2026-07-26T22:20:06.054132"
     },
     "17674_tef": {
       "id": "17674_tef",
@@ -1490,10 +1556,10 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272842",
-      "downloaded_at": "2026-01-04T12:43:07.819908"
+      "downloaded_at": "2026-07-26T22:14:59.428626",
+      "converted_at": "2026-07-26T22:20:06.057042"
     },
     "17713_tef": {
       "id": "17713_tef",
@@ -1506,10 +1572,12 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "imported",
       "discovered_at": "2026-01-04T12:38:28.272844",
-      "downloaded_at": "2026-01-04T12:43:09.328511"
+      "downloaded_at": "2026-01-04T12:43:09.328511",
+      "converted_at": "2026-07-26T22:20:06.061234",
+      "imported_at": "2026-07-26T22:26:25.813912",
+      "work_slug": "ragtime-annie"
     },
     "26612_tef": {
       "id": "26612_tef",
@@ -1522,9 +1590,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272846",
-      "downloaded_at": "2026-01-04T12:43:10.829491"
+      "downloaded_at": "2026-07-26T22:15:00.939020"
     },
     "28267_tef": {
       "id": "28267_tef",
@@ -1537,9 +1606,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272848",
-      "downloaded_at": "2026-01-04T12:43:12.336222"
+      "downloaded_at": "2026-07-26T22:15:02.444603"
     },
     "10270_tef": {
       "id": "10270_tef",
@@ -1547,9 +1617,10 @@
       "author": "schlange",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/cattle_in_the_cane-177.tef",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272851",
-      "downloaded_at": "2026-01-04T12:43:13.833849"
+      "downloaded_at": "2026-07-26T22:18:09.233437",
+      "converted_at": "2026-07-26T22:20:06.967168"
     },
     "18779_tef": {
       "id": "18779_tef",
@@ -1562,9 +1633,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272853",
-      "downloaded_at": "2026-01-04T12:43:15.340317"
+      "downloaded_at": "2026-01-04T12:43:15.340317",
+      "converted_at": "2026-07-26T22:20:06.969260"
     },
     "11449_tef": {
       "id": "11449_tef",
@@ -1574,10 +1646,12 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/w/wheel_hoss-2430.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "imported",
       "discovered_at": "2026-01-04T12:38:28.272855",
-      "downloaded_at": "2026-01-04T12:43:16.836680"
+      "downloaded_at": "2026-07-26T22:16:08.707099",
+      "converted_at": "2026-07-26T22:20:06.279979",
+      "imported_at": "2026-07-26T22:26:25.922485",
+      "work_slug": "wheel-hoss"
     },
     "11450_tef": {
       "id": "11450_tef",
@@ -1587,9 +1661,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/w/wheel_hoss-2431.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272857",
-      "downloaded_at": "2026-01-04T12:43:18.344361"
+      "downloaded_at": "2026-07-26T22:16:10.206697",
+      "converted_at": "2026-07-26T22:20:06.285733"
     },
     "23602_tef": {
       "id": "23602_tef",
@@ -1602,10 +1677,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272859",
-      "downloaded_at": "2026-01-04T12:43:19.841706"
+      "downloaded_at": "2026-01-04T12:43:19.841706",
+      "converted_at": "2026-07-26T22:20:06.287737"
     },
     "10657_tef": {
       "id": "10657_tef",
@@ -1615,9 +1690,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/dixie_breakdown-765.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272862",
-      "downloaded_at": "2026-01-04T12:43:21.347180"
+      "downloaded_at": "2026-07-26T22:18:39.355587",
+      "converted_at": "2026-07-26T22:20:07.203617"
     },
     "16958_tef": {
       "id": "16958_tef",
@@ -1630,9 +1706,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272864",
-      "downloaded_at": "2026-01-04T12:43:22.848934"
+      "downloaded_at": "2026-07-26T22:18:40.841593",
+      "converted_at": "2026-07-26T22:20:07.211535"
     },
     "23408_tef": {
       "id": "23408_tef",
@@ -1645,10 +1722,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272866",
-      "downloaded_at": "2026-01-04T12:43:24.353895"
+      "downloaded_at": "2026-01-04T12:43:24.353895",
+      "converted_at": "2026-07-26T22:20:07.214526"
     },
     "10658_tef": {
       "id": "10658_tef",
@@ -1658,10 +1735,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/dixie_breakdown_(1st_break)-768.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272868",
-      "downloaded_at": "2026-01-04T12:43:25.859192"
+      "downloaded_at": "2026-01-04T12:43:25.859192",
+      "converted_at": "2026-07-26T22:20:07.216473"
     },
     "10659_tef": {
       "id": "10659_tef",
@@ -1671,10 +1748,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/dixie_breakdown_(2nd_break)-771.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272871",
-      "downloaded_at": "2026-01-04T12:43:27.360133"
+      "downloaded_at": "2026-01-04T12:43:27.360133",
+      "converted_at": "2026-07-26T22:20:07.218175"
     },
     "12874_tef": {
       "id": "12874_tef",
@@ -1686,9 +1763,10 @@
       "style": "Bluegrass (Scruggs)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272873",
-      "downloaded_at": "2026-01-04T12:43:28.861144"
+      "downloaded_at": "2026-07-26T22:17:40.609355",
+      "converted_at": "2026-07-26T22:20:06.739333"
     },
     "27168_tef": {
       "id": "27168_tef",
@@ -1701,10 +1779,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272875",
-      "downloaded_at": "2026-01-04T12:43:30.363907"
+      "downloaded_at": "2026-01-04T12:43:30.363907",
+      "converted_at": "2026-07-26T22:20:06.741283"
     },
     "19500_tef": {
       "id": "19500_tef",
@@ -1717,9 +1795,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272877",
-      "downloaded_at": "2026-01-04T12:43:31.863853"
+      "downloaded_at": "2026-01-04T12:43:31.863853",
+      "converted_at": "2026-07-26T22:20:06.745592"
     },
     "10719_tef": {
       "id": "10719_tef",
@@ -1728,9 +1807,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/ground_speed-923.tef",
       "style": "Bluegrass (Scruggs)",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272880",
-      "downloaded_at": "2026-01-04T12:43:33.366983"
+      "downloaded_at": "2026-07-26T22:18:42.348163",
+      "converted_at": "2026-07-26T22:20:07.221427"
     },
     "15313_tef": {
       "id": "15313_tef",
@@ -1743,10 +1823,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272882",
-      "downloaded_at": "2026-01-04T12:43:34.869314"
+      "downloaded_at": "2026-01-04T12:43:34.869314",
+      "converted_at": "2026-07-26T22:20:07.225406"
     },
     "27183_tef": {
       "id": "27183_tef",
@@ -1759,9 +1839,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272885",
-      "downloaded_at": "2026-01-04T12:43:36.375417"
+      "downloaded_at": "2026-07-26T22:18:43.857241"
     },
     "19520_tef": {
       "id": "19520_tef",
@@ -1774,9 +1855,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "downloaded",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272887",
-      "downloaded_at": "2026-01-04T12:43:37.878308"
+      "downloaded_at": "2026-01-04T12:43:37.878308",
+      "converted_at": "2026-07-26T22:20:07.233445"
     },
     "11514_tef": {
       "id": "11514_tef",
@@ -1786,10 +1868,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/n/north_carolina_breakdown-2583.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272889",
-      "downloaded_at": "2026-01-04T12:43:39.383749"
+      "downloaded_at": "2026-01-04T12:43:39.383749",
+      "converted_at": "2026-07-26T22:20:07.238444"
     },
     "24440_tef": {
       "id": "24440_tef",
@@ -1802,9 +1884,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Expert",
-      "status": "downloaded",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-01-04T12:38:28.272892",
-      "downloaded_at": "2026-01-04T12:43:40.884239"
+      "downloaded_at": "2026-07-26T22:18:45.369028"
     },
     "11245_tef": {
       "id": "11245_tef",
@@ -1814,10 +1897,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/shenandoah_breakdown-2080.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "skipped",
-      "error": "import declined (duplicate part?)",
+      "status": "converted",
       "discovered_at": "2026-01-04T12:38:28.272894",
-      "downloaded_at": "2026-01-04T12:43:42.393318"
+      "downloaded_at": "2026-01-04T12:43:42.393318",
+      "converted_at": "2026-07-26T22:20:06.772681"
     },
     "12121_tef": {
       "id": "12121_tef",
@@ -1838,8 +1921,10 @@
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=12123",
       "style": "Bluegrass (Scruggs)",
-      "status": "imported",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-07-08T13:31:44.602381",
+      "downloaded_at": "2026-07-26T22:19:48.785138",
       "imported_at": "2026-07-08T13:32:03.750656",
       "work_slug": "shuckin-the-corn"
     },
@@ -1874,8 +1959,10 @@
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=13648",
       "style": "Classical",
-      "status": "imported",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-07-08T13:31:44.602386",
+      "downloaded_at": "2026-07-26T22:18:01.892787",
       "imported_at": "2026-07-08T13:32:03.774230",
       "work_slug": "ashokan-farewell-1"
     },
@@ -1922,8 +2009,10 @@
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=15032",
       "style": "Clawhammer and Old-Time",
-      "status": "imported",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-07-08T13:31:44.602393",
+      "downloaded_at": "2026-07-26T22:19:09.641727",
       "imported_at": "2026-07-08T13:32:03.788844",
       "work_slug": "done-gone"
     },
@@ -2018,8 +2107,10 @@
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=20545",
       "style": "Bluegrass (Scruggs)",
-      "status": "imported",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-07-08T13:31:44.602406",
+      "downloaded_at": "2026-07-26T22:18:10.929982",
       "imported_at": "2026-07-08T13:32:03.834979",
       "work_slug": "dear-old-dixie"
     },
@@ -2170,8 +2261,10 @@
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=23345",
       "style": "Bluegrass (Scruggs)",
-      "status": "imported",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-07-08T13:31:44.602425",
+      "downloaded_at": "2026-07-26T22:16:49.694369",
       "imported_at": "2026-07-08T13:32:03.882353",
       "work_slug": "lonesome-fiddle-blues"
     },
@@ -2182,8 +2275,10 @@
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=23409",
       "style": "Bluegrass (Scruggs)",
-      "status": "imported",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-07-08T13:31:44.602427",
+      "downloaded_at": "2026-07-26T22:19:05.403591",
       "imported_at": "2026-07-08T13:32:03.889473",
       "work_slug": "dixie-hoedown"
     },
@@ -2218,8 +2313,10 @@
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=25010",
       "style": "Bluegrass (Scruggs)",
-      "status": "imported",
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
       "discovered_at": "2026-07-08T13:31:44.602431",
+      "downloaded_at": "2026-07-26T22:18:19.909345",
       "imported_at": "2026-07-08T13:32:03.915907",
       "work_slug": "gold-rush"
     },
@@ -3702,8 +3799,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.177924"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.177924",
+      "downloaded_at": "2026-07-26T22:18:03.204263",
+      "converted_at": "2026-07-26T22:20:06.949394"
     },
     "16564_tef": {
       "id": "16564_tef",
@@ -3716,8 +3815,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.177926"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.177926",
+      "downloaded_at": "2026-07-26T22:18:04.706489",
+      "converted_at": "2026-07-26T22:20:06.953022"
     },
     "16872_tef": {
       "id": "16872_tef",
@@ -3730,8 +3831,10 @@
       "tuning": "Drop C (gCGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.177928"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.177928",
+      "downloaded_at": "2026-07-26T22:18:06.215486",
+      "converted_at": "2026-07-26T22:20:06.956331"
     },
     "27756_tef": {
       "id": "27756_tef",
@@ -3744,8 +3847,10 @@
       "tuning": "Double C (gCGCD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.177930"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.177930",
+      "downloaded_at": "2026-07-26T22:18:07.718992"
     },
     "26029_tef": {
       "id": "26029_tef",
@@ -5927,8 +6032,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178254"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.178254",
+      "downloaded_at": "2026-07-26T22:18:25.791229",
+      "converted_at": "2026-07-26T22:20:07.167296",
+      "imported_at": "2026-07-26T22:26:25.183409",
+      "work_slug": "big-mon"
     },
     "28676_tef": {
       "id": "28676_tef",
@@ -5941,8 +6050,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178256"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.178256",
+      "downloaded_at": "2026-07-26T22:18:27.285661"
     },
     "29278_tef": {
       "id": "29278_tef",
@@ -5955,8 +6066,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178258"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.178258",
+      "downloaded_at": "2026-07-26T22:18:28.794690"
     },
     "26392_tef": {
       "id": "26392_tef",
@@ -6107,8 +6220,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/big_sciota-1556.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178279"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178279",
+      "downloaded_at": "2026-07-26T22:17:12.003960",
+      "converted_at": "2026-07-26T22:20:06.659204"
     },
     "11828_tef": {
       "id": "11828_tef",
@@ -6121,8 +6236,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178281"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178281",
+      "downloaded_at": "2026-07-26T22:17:13.511170",
+      "converted_at": "2026-07-26T22:20:06.663027"
     },
     "18031_tef": {
       "id": "18031_tef",
@@ -6130,8 +6247,10 @@
       "author": "Ricky Mier",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/tab-big-sciota-18031-505718112012.tef",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178283"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178283",
+      "downloaded_at": "2026-07-26T22:17:15.022444",
+      "converted_at": "2026-07-26T22:20:06.665035"
     },
     "20306_tef": {
       "id": "20306_tef",
@@ -6144,8 +6263,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178285"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178285",
+      "downloaded_at": "2026-07-26T22:17:16.528416",
+      "converted_at": "2026-07-26T22:20:06.668612"
     },
     "22034_tef": {
       "id": "22034_tef",
@@ -6158,8 +6279,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178286"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178286",
+      "downloaded_at": "2026-07-26T22:17:18.035136",
+      "converted_at": "2026-07-26T22:20:06.670128"
     },
     "23579_tef": {
       "id": "23579_tef",
@@ -6172,8 +6295,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178288"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.178288",
+      "downloaded_at": "2026-07-26T22:17:19.536598",
+      "converted_at": "2026-07-26T22:20:06.676388",
+      "imported_at": "2026-07-26T22:26:25.537922",
+      "work_slug": "big-sciota"
     },
     "28379_tef": {
       "id": "28379_tef",
@@ -6186,8 +6313,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178290"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.178290",
+      "downloaded_at": "2026-07-26T22:17:21.041814"
     },
     "23400_tef": {
       "id": "23400_tef",
@@ -6760,8 +6889,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/billy_in_the_lowground-2797.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178369"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178369",
+      "downloaded_at": "2026-07-26T22:14:30.806557",
+      "converted_at": "2026-07-26T22:20:05.981982"
     },
     "11598_tef": {
       "id": "11598_tef",
@@ -6769,8 +6900,10 @@
       "author": "schlange",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/billy_in_the_lowground-2802.tef",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178371"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178371",
+      "downloaded_at": "2026-07-26T22:14:32.309650",
+      "converted_at": "2026-07-26T22:20:05.987555"
     },
     "20000_tef": {
       "id": "20000_tef",
@@ -6783,8 +6916,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178373"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.178373",
+      "downloaded_at": "2026-07-26T22:14:33.827729",
+      "converted_at": "2026-07-26T22:20:05.999239",
+      "imported_at": "2026-07-26T22:26:25.546550",
+      "work_slug": "billy-in-the-lowground"
     },
     "21997_tef": {
       "id": "21997_tef",
@@ -6797,8 +6934,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178374"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178374",
+      "downloaded_at": "2026-07-26T22:14:35.330375",
+      "converted_at": "2026-07-26T22:20:06.000970"
     },
     "22001_tef": {
       "id": "22001_tef",
@@ -6811,8 +6950,10 @@
       "tuning": "Open C (gCGCE)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178376"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178376",
+      "downloaded_at": "2026-07-26T22:14:36.841720",
+      "converted_at": "2026-07-26T22:20:06.002486"
     },
     "22911_tef": {
       "id": "22911_tef",
@@ -6825,8 +6966,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178378"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.178378",
+      "downloaded_at": "2026-07-26T22:14:38.350299",
+      "converted_at": "2026-07-26T22:20:06.004236",
+      "imported_at": "2026-07-26T22:26:25.542590",
+      "work_slug": "billy-in-the-lowground"
     },
     "25611_tef": {
       "id": "25611_tef",
@@ -6839,8 +6984,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178380"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.178380",
+      "downloaded_at": "2026-07-26T22:14:39.852523"
     },
     "24938_tef": {
       "id": "24938_tef",
@@ -7095,8 +7242,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/black_mountain_rag-2806.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178419"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.178419",
+      "downloaded_at": "2026-07-26T22:14:41.364679"
     },
     "11600_tef": {
       "id": "11600_tef",
@@ -7106,8 +7255,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/black_mountain_rag-2811.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178421"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178421",
+      "downloaded_at": "2026-07-26T22:14:42.866226",
+      "converted_at": "2026-07-26T22:20:06.016957"
     },
     "11601_tef": {
       "id": "11601_tef",
@@ -7117,8 +7268,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/black_mountain_rag-2813.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178423"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178423",
+      "downloaded_at": "2026-07-26T22:14:44.372450",
+      "converted_at": "2026-07-26T22:20:06.019350"
     },
     "17966_tef": {
       "id": "17966_tef",
@@ -7131,8 +7284,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178425"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178425",
+      "downloaded_at": "2026-07-26T22:14:45.876303",
+      "converted_at": "2026-07-26T22:20:06.023067"
     },
     "20612_tef": {
       "id": "20612_tef",
@@ -7145,8 +7300,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178426"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.178426",
+      "downloaded_at": "2026-07-26T22:14:47.377053",
+      "converted_at": "2026-07-26T22:20:06.033280",
+      "imported_at": "2026-07-26T22:26:25.553055",
+      "work_slug": "black-mountain-rag"
     },
     "23375_tef": {
       "id": "23375_tef",
@@ -7159,8 +7318,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178428"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178428",
+      "downloaded_at": "2026-07-26T22:14:48.877401",
+      "converted_at": "2026-07-26T22:20:06.035469"
     },
     "26577_tef": {
       "id": "26577_tef",
@@ -7173,8 +7334,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178430"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.178430",
+      "downloaded_at": "2026-07-26T22:14:50.383973"
     },
     "24750_tef": {
       "id": "24750_tef",
@@ -7254,8 +7417,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/blackberry_blossom-2818.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178441"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178441",
+      "downloaded_at": "2026-07-26T22:11:30.292800",
+      "converted_at": "2026-07-26T22:20:05.333694"
     },
     "11603_tef": {
       "id": "11603_tef",
@@ -7265,8 +7430,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/blackberry_blossom-2822.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178442"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178442",
+      "downloaded_at": "2026-07-26T22:11:31.602021",
+      "converted_at": "2026-07-26T22:20:05.348233"
     },
     "11605_tef": {
       "id": "11605_tef",
@@ -7276,8 +7443,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/blackberry_blossom-2828.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178444"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178444",
+      "downloaded_at": "2026-07-26T22:11:33.104270",
+      "converted_at": "2026-07-26T22:20:05.350573"
     },
     "11607_tef": {
       "id": "11607_tef",
@@ -7287,8 +7456,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/blackberry_blossom-2835.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178446"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178446",
+      "downloaded_at": "2026-07-26T22:11:34.612946",
+      "converted_at": "2026-07-26T22:20:05.352791"
     },
     "13647_tef": {
       "id": "13647_tef",
@@ -7301,8 +7472,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178448"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.178448",
+      "downloaded_at": "2026-07-26T22:11:36.114895",
+      "converted_at": "2026-07-26T22:20:05.371593",
+      "imported_at": "2026-07-26T22:26:25.574304",
+      "work_slug": "blackberry-blossom"
     },
     "14677_tef": {
       "id": "14677_tef",
@@ -7315,8 +7490,12 @@
       "tuning": "Tenor G (DGdg)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178450"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.178450",
+      "downloaded_at": "2026-07-26T22:11:37.614694",
+      "converted_at": "2026-07-26T22:20:05.374242",
+      "imported_at": "2026-07-26T22:26:25.587853",
+      "work_slug": "blackberry-blossom"
     },
     "23402_tef": {
       "id": "23402_tef",
@@ -7329,8 +7508,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178452"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178452",
+      "downloaded_at": "2026-07-26T22:11:39.123242",
+      "converted_at": "2026-07-26T22:20:05.376899"
     },
     "24099_tef": {
       "id": "24099_tef",
@@ -7343,8 +7524,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178453"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178453",
+      "downloaded_at": "2026-07-26T22:11:40.625774",
+      "converted_at": "2026-07-26T22:20:05.379453"
     },
     "24111_tef": {
       "id": "24111_tef",
@@ -7357,8 +7540,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178455"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178455",
+      "downloaded_at": "2026-07-26T22:11:42.130604",
+      "converted_at": "2026-07-26T22:20:05.381754"
     },
     "24211_tef": {
       "id": "24211_tef",
@@ -7371,8 +7556,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178457"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178457",
+      "downloaded_at": "2026-07-26T22:11:43.643586",
+      "converted_at": "2026-07-26T22:20:05.384000"
     },
     "25014_tef": {
       "id": "25014_tef",
@@ -7385,8 +7572,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178459"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.178459",
+      "downloaded_at": "2026-07-26T22:11:45.150855"
     },
     "25016_tef": {
       "id": "25016_tef",
@@ -7438,8 +7627,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/blackberry_blossom_(banjo_lead)-2823.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178467"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178467",
+      "downloaded_at": "2026-07-26T22:11:46.647713",
+      "converted_at": "2026-07-26T22:20:05.412034"
     },
     "25124_tef": {
       "id": "25124_tef",
@@ -8252,8 +8443,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/bluegrass_breakdown-2896.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178585"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.178585",
+      "downloaded_at": "2026-07-26T22:19:01.930087",
+      "converted_at": "2026-07-26T22:20:07.324366"
     },
     "23403_tef": {
       "id": "23403_tef",
@@ -8266,8 +8459,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178587"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.178587",
+      "downloaded_at": "2026-07-26T22:19:03.441470",
+      "converted_at": "2026-07-26T22:20:07.326904",
+      "imported_at": "2026-07-26T22:26:25.240893",
+      "work_slug": "bluegrass-breakdown"
     },
     "23183_tef": {
       "id": "23183_tef",
@@ -9061,8 +9258,12 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/brilliancy-2938.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178711"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.178711",
+      "downloaded_at": "2026-07-26T22:18:30.297293",
+      "converted_at": "2026-07-26T22:20:07.176976",
+      "imported_at": "2026-07-26T22:26:25.590274",
+      "work_slug": "brilliancy"
     },
     "29028_tef": {
       "id": "29028_tef",
@@ -9184,8 +9385,10 @@
       "author": "Ricky Mier",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/tab-brown-county-br-19150-152122282013.tef",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178732"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.178732",
+      "downloaded_at": "2026-07-26T22:17:49.653944"
     },
     "27771_tef": {
       "id": "27771_tef",
@@ -9198,8 +9401,10 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178734"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.178734",
+      "downloaded_at": "2026-07-26T22:17:51.157059"
     },
     "12066_tef": {
       "id": "12066_tef",
@@ -11387,8 +11592,12 @@
       "tuning": "Tenor G (DGdg)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179053"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179053",
+      "downloaded_at": "2026-07-26T22:16:11.715738",
+      "converted_at": "2026-07-26T22:20:06.289700",
+      "imported_at": "2026-07-26T22:26:25.603592",
+      "work_slug": "clinch-mountain-backstep"
     },
     "20601_tef": {
       "id": "20601_tef",
@@ -11401,8 +11610,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179055"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179055",
+      "downloaded_at": "2026-07-26T22:16:13.226592",
+      "converted_at": "2026-07-26T22:20:06.291475"
     },
     "20602_tef": {
       "id": "20602_tef",
@@ -11415,8 +11626,10 @@
       "tuning": "Sawmill (gDGCD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179057"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179057",
+      "downloaded_at": "2026-07-26T22:16:14.721807",
+      "converted_at": "2026-07-26T22:20:06.293222"
     },
     "23405_tef": {
       "id": "23405_tef",
@@ -11429,8 +11642,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179059"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179059",
+      "downloaded_at": "2026-07-26T22:16:16.237796",
+      "converted_at": "2026-07-26T22:20:06.295042"
     },
     "23803_tef": {
       "id": "23803_tef",
@@ -11443,8 +11658,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179061"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179061",
+      "downloaded_at": "2026-07-26T22:16:17.748659",
+      "converted_at": "2026-07-26T22:20:06.297241"
     },
     "24134_tef": {
       "id": "24134_tef",
@@ -11457,8 +11674,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179063"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179063",
+      "downloaded_at": "2026-07-26T22:16:19.252966",
+      "converted_at": "2026-07-26T22:20:06.301268"
     },
     "26006_tef": {
       "id": "26006_tef",
@@ -11471,8 +11690,12 @@
       "tuning": "Sawmill (gDGCD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179065"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179065",
+      "downloaded_at": "2026-07-26T22:16:20.762838",
+      "converted_at": "2026-07-26T22:20:06.322249",
+      "imported_at": "2026-07-26T22:26:25.600936",
+      "work_slug": "clinch-mountain-backstep"
     },
     "28452_tef": {
       "id": "28452_tef",
@@ -11485,8 +11708,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179066"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179066",
+      "downloaded_at": "2026-07-26T22:16:22.271276"
     },
     "15259_tef": {
       "id": "15259_tef",
@@ -11498,8 +11723,10 @@
       "style": "Unknown/None Chosen",
       "tuning": "Standard Open G (gDGBD)",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179068"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179068",
+      "downloaded_at": "2026-07-26T22:16:23.982828",
+      "converted_at": "2026-07-26T22:20:06.332698"
     },
     "19495_tef": {
       "id": "19495_tef",
@@ -11553,8 +11780,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/cluck_old_hen-268.tef",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179077"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179077",
+      "downloaded_at": "2026-07-26T22:17:52.656841",
+      "converted_at": "2026-07-26T22:20:06.841011"
     },
     "10301_tef": {
       "id": "10301_tef",
@@ -11563,8 +11792,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/cluck_old_hen-270.tef",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179080"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179080",
+      "downloaded_at": "2026-07-26T22:17:54.163843",
+      "converted_at": "2026-07-26T22:20:06.846776"
     },
     "17948_tef": {
       "id": "17948_tef",
@@ -11574,8 +11805,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cluck-old-hen-17948-6352020102012.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179082"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179082",
+      "downloaded_at": "2026-07-26T22:17:55.668940",
+      "converted_at": "2026-07-26T22:20:06.849541"
     },
     "21716_tef": {
       "id": "21716_tef",
@@ -11587,8 +11820,10 @@
       "style": "Clawhammer and Old-Time",
       "tuning": "Sawmill (gDGCD)",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179084"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179084",
+      "downloaded_at": "2026-07-26T22:17:57.174844",
+      "converted_at": "2026-07-26T22:20:06.851464"
     },
     "16051_tef": {
       "id": "16051_tef",
@@ -11601,8 +11836,12 @@
       "tuning": "Sawmill (gDGCD)",
       "key": "Am",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179087"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179087",
+      "downloaded_at": "2026-07-26T22:17:58.687079",
+      "converted_at": "2026-07-26T22:20:06.852963",
+      "imported_at": "2026-07-26T22:26:25.605282",
+      "work_slug": "cluck-old-hen"
     },
     "24315_tef": {
       "id": "24315_tef",
@@ -12495,8 +12734,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/cripple_creek-335.tef",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179221"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179221",
+      "downloaded_at": "2026-07-26T22:12:16.797441",
+      "converted_at": "2026-07-26T22:20:05.517208"
     },
     "13301_tef": {
       "id": "13301_tef",
@@ -12509,8 +12750,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179223"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179223",
+      "downloaded_at": "2026-07-26T22:12:18.313206",
+      "converted_at": "2026-07-26T22:20:05.520158"
     },
     "14126_tef": {
       "id": "14126_tef",
@@ -12523,8 +12766,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179225"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179225",
+      "downloaded_at": "2026-07-26T22:12:19.813542",
+      "converted_at": "2026-07-26T22:20:05.522727"
     },
     "14128_tef": {
       "id": "14128_tef",
@@ -12536,8 +12781,10 @@
       "style": "Clawhammer and Old-Time",
       "key": "E",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179227"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179227",
+      "downloaded_at": "2026-07-26T22:12:21.316787",
+      "converted_at": "2026-07-26T22:20:05.524442"
     },
     "23407_tef": {
       "id": "23407_tef",
@@ -12550,8 +12797,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179228"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179228",
+      "downloaded_at": "2026-07-26T22:12:22.823635",
+      "converted_at": "2026-07-26T22:20:05.527070"
     },
     "24094_tef": {
       "id": "24094_tef",
@@ -12564,8 +12813,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179230"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179230",
+      "downloaded_at": "2026-07-26T22:12:24.331566",
+      "converted_at": "2026-07-26T22:20:05.531151"
     },
     "24367_tef": {
       "id": "24367_tef",
@@ -12578,8 +12829,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179232"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179232",
+      "downloaded_at": "2026-07-26T22:12:25.844406",
+      "converted_at": "2026-07-26T22:20:05.535825"
     },
     "26562_tef": {
       "id": "26562_tef",
@@ -12592,8 +12845,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179234"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179234",
+      "downloaded_at": "2026-07-26T22:12:27.339437"
     },
     "27635_tef": {
       "id": "27635_tef",
@@ -12606,8 +12861,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179235"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179235",
+      "downloaded_at": "2026-07-26T22:12:28.840306"
     },
     "21206_tef": {
       "id": "21206_tef",
@@ -12620,8 +12877,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179237"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179237",
+      "downloaded_at": "2026-07-26T22:12:30.349341",
+      "converted_at": "2026-07-26T22:20:05.593404",
+      "imported_at": "2026-07-26T22:26:25.613371",
+      "work_slug": "cripple-creek"
     },
     "26497_tef": {
       "id": "26497_tef",
@@ -12634,8 +12895,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179239"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179239",
+      "downloaded_at": "2026-07-26T22:12:31.860477"
     },
     "20850_tef": {
       "id": "20850_tef",
@@ -12676,8 +12939,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179244"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179244",
+      "downloaded_at": "2026-07-26T22:12:33.366566",
+      "converted_at": "2026-07-26T22:20:05.597871"
     },
     "16053_tef": {
       "id": "16053_tef",
@@ -12690,8 +12955,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179246"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179246",
+      "downloaded_at": "2026-07-26T22:12:34.870328",
+      "converted_at": "2026-07-26T22:20:05.599120"
     },
     "15312_tef": {
       "id": "15312_tef",
@@ -13031,8 +13298,12 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179297"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179297",
+      "downloaded_at": "2026-07-26T22:19:17.002717",
+      "converted_at": "2026-07-26T22:20:07.521598",
+      "imported_at": "2026-07-26T22:26:25.297388",
+      "work_slug": "cuckoo-s-nest"
     },
     "23866_tef": {
       "id": "23866_tef",
@@ -13045,8 +13316,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179298"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179298",
+      "downloaded_at": "2026-07-26T22:19:18.511396",
+      "converted_at": "2026-07-26T22:20:07.525909"
     },
     "27734_tef": {
       "id": "27734_tef",
@@ -13058,8 +13331,10 @@
       "style": "Clawhammer and Old-Time",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179300"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179300",
+      "downloaded_at": "2026-07-26T22:19:20.016530"
     },
     "10346_tef": {
       "id": "10346_tef",
@@ -13068,8 +13343,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/cuckoos_nest-394.tef",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179302"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179302",
+      "downloaded_at": "2026-07-26T22:19:21.527748",
+      "converted_at": "2026-07-26T22:20:07.539535"
     },
     "16600_tef": {
       "id": "16600_tef",
@@ -13080,8 +13357,10 @@
       "style": "Clawhammer and Old-Time",
       "tuning": "Sawmill (gDGCD)",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179304"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179304",
+      "downloaded_at": "2026-07-26T22:19:23.025253",
+      "converted_at": "2026-07-26T22:20:07.541710"
     },
     "16601_tef": {
       "id": "16601_tef",
@@ -13105,8 +13384,12 @@
       "style": "Clawhammer and Old-Time",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179309"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179309",
+      "downloaded_at": "2026-07-26T22:19:24.532550",
+      "converted_at": "2026-07-26T22:20:07.543904",
+      "imported_at": "2026-07-26T22:26:25.354213",
+      "work_slug": "cumberland-gap"
     },
     "14667_tef": {
       "id": "14667_tef",
@@ -13119,8 +13402,12 @@
       "tuning": "Tenor G (DGdg)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179311"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179311",
+      "downloaded_at": "2026-07-26T22:19:26.040388",
+      "converted_at": "2026-07-26T22:20:07.545106",
+      "imported_at": "2026-07-26T22:26:25.361437",
+      "work_slug": "cumberland-gap"
     },
     "17695_tef": {
       "id": "17695_tef",
@@ -13131,8 +13418,10 @@
       "genre": "Old Time",
       "style": "Clawhammer and Old-Time",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179314"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179314",
+      "downloaded_at": "2026-07-26T22:19:27.551171",
+      "converted_at": "2026-07-26T22:20:07.546342"
     },
     "21892_tef": {
       "id": "21892_tef",
@@ -13145,8 +13434,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179316"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179316",
+      "downloaded_at": "2026-07-26T22:19:29.058121",
+      "converted_at": "2026-07-26T22:20:07.549234"
     },
     "24734_tef": {
       "id": "24734_tef",
@@ -13159,8 +13450,10 @@
       "tuning": "Sawmill (gDGCD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179319"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179319",
+      "downloaded_at": "2026-07-26T22:19:30.548210",
+      "converted_at": "2026-07-26T22:20:07.550404"
     },
     "25808_tef": {
       "id": "25808_tef",
@@ -13173,8 +13466,10 @@
       "tuning": "Sawmill (gDGCD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179321"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179321",
+      "downloaded_at": "2026-07-26T22:19:32.061644"
     },
     "27159_tef": {
       "id": "27159_tef",
@@ -13187,8 +13482,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179324"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179324",
+      "downloaded_at": "2026-07-26T22:19:33.565302"
     },
     "24908_tef": {
       "id": "24908_tef",
@@ -13201,8 +13498,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179326"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179326",
+      "downloaded_at": "2026-07-26T22:19:35.071247",
+      "converted_at": "2026-07-26T22:20:07.564799"
     },
     "19497_tef": {
       "id": "19497_tef",
@@ -13229,8 +13528,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179330"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179330",
+      "downloaded_at": "2026-07-26T22:19:36.795037",
+      "converted_at": "2026-07-26T22:20:07.566406"
     },
     "27171_tef": {
       "id": "27171_tef",
@@ -13934,8 +14235,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/daybreak_in_dixie-459.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179430"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179430",
+      "downloaded_at": "2026-07-26T22:19:44.092018",
+      "converted_at": "2026-07-26T22:20:07.583291"
     },
     "10552_tef": {
       "id": "10552_tef",
@@ -13945,8 +14248,12 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/daybreak_in_dixie-462.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179437"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179437",
+      "downloaded_at": "2026-07-26T22:19:45.591508",
+      "converted_at": "2026-07-26T22:20:07.585340",
+      "imported_at": "2026-07-26T22:26:25.410689",
+      "work_slug": "daybreak-in-dixie"
     },
     "28225_tef": {
       "id": "28225_tef",
@@ -13982,8 +14289,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/dear_old_dixie_(bluegrass)-552.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179443"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179443",
+      "downloaded_at": "2026-07-26T22:18:12.245648",
+      "converted_at": "2026-07-26T22:20:07.047494"
     },
     "11768_tef": {
       "id": "11768_tef",
@@ -13996,8 +14305,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179444"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179444",
+      "downloaded_at": "2026-07-26T22:18:13.749623"
     },
     "27161_tef": {
       "id": "27161_tef",
@@ -14010,8 +14321,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179446"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179446",
+      "downloaded_at": "2026-07-26T22:18:15.247075"
     },
     "26361_tef": {
       "id": "26361_tef",
@@ -14048,8 +14361,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/dear_old_dixie_(g)-535.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179452"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179452",
+      "downloaded_at": "2026-07-26T22:18:16.757262",
+      "converted_at": "2026-07-26T22:20:07.075760"
     },
     "14695_tef": {
       "id": "14695_tef",
@@ -14061,8 +14376,12 @@
       "tuning": "Tenor G (DGdg)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179454"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179454",
+      "downloaded_at": "2026-07-26T22:18:18.264493",
+      "converted_at": "2026-07-26T22:20:07.077968",
+      "imported_at": "2026-07-26T22:26:25.624072",
+      "work_slug": "dear-old-dixie"
     },
     "10577_tef": {
       "id": "10577_tef",
@@ -14636,8 +14955,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/dixie_hoedown-779.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179539"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179539",
+      "downloaded_at": "2026-07-26T22:19:06.458757",
+      "converted_at": "2026-07-26T22:20:07.401651"
     },
     "24386_tef": {
       "id": "24386_tef",
@@ -14650,8 +14971,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179541"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179541",
+      "downloaded_at": "2026-07-26T22:19:07.962491"
     },
     "13066_tef": {
       "id": "13066_tef",
@@ -15034,8 +15357,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/done_gone-793.tef",
       "genre": "Traditional",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179598"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179598",
+      "downloaded_at": "2026-07-26T22:19:10.975829",
+      "converted_at": "2026-07-26T22:20:07.494416"
     },
     "10668_tef": {
       "id": "10668_tef",
@@ -15045,8 +15370,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/done_gone-798.tef",
       "genre": "Traditional",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179600"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179600",
+      "downloaded_at": "2026-07-26T22:19:12.481026",
+      "converted_at": "2026-07-26T22:20:07.500113"
     },
     "12662_tef": {
       "id": "12662_tef",
@@ -15059,8 +15386,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A#/Bb",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179602"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179602",
+      "downloaded_at": "2026-07-26T22:19:13.991576",
+      "converted_at": "2026-07-26T22:20:07.513859"
     },
     "10667_tef": {
       "id": "10667_tef",
@@ -15070,8 +15399,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/done_gone_(banjo_lead)-796.tef",
       "genre": "Traditional",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179604"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179604",
+      "downloaded_at": "2026-07-26T22:19:15.496082",
+      "converted_at": "2026-07-26T22:20:07.515662"
     },
     "13027_tef": {
       "id": "13027_tef",
@@ -16328,8 +16659,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179791"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179791",
+      "downloaded_at": "2026-07-26T22:17:42.119579"
     },
     "17414_tef": {
       "id": "17414_tef",
@@ -16376,8 +16709,12 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/e/east_tennessee_blues-483.tef",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179800"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179800",
+      "downloaded_at": "2026-07-26T22:19:38.215105",
+      "converted_at": "2026-07-26T22:20:07.571502",
+      "imported_at": "2026-07-26T22:26:25.632853",
+      "work_slug": "east-tennessee-blues"
     },
     "10562_tef": {
       "id": "10562_tef",
@@ -17516,8 +17853,12 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/f/fire_on_the_mountain-571.tef",
       "genre": "Bluegrass",
       "style": "Other",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179968"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179968",
+      "downloaded_at": "2026-07-26T22:15:09.983214",
+      "converted_at": "2026-07-26T22:20:06.087717",
+      "imported_at": "2026-07-26T22:26:25.650705",
+      "work_slug": "fire-on-the-mountain"
     },
     "10592_tef": {
       "id": "10592_tef",
@@ -17527,8 +17868,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/f/fire_on_the_mountain-573.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179970"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179970",
+      "downloaded_at": "2026-07-26T22:15:11.486518",
+      "converted_at": "2026-07-26T22:20:06.092551"
     },
     "14205_tef": {
       "id": "14205_tef",
@@ -17541,8 +17884,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179972"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.179972",
+      "downloaded_at": "2026-07-26T22:15:12.995955",
+      "converted_at": "2026-07-26T22:20:06.099816",
+      "imported_at": "2026-07-26T22:26:25.645341",
+      "work_slug": "fire-on-the-mountain"
     },
     "14208_tef": {
       "id": "14208_tef",
@@ -17555,8 +17902,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179973"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.179973",
+      "downloaded_at": "2026-07-26T22:15:14.506808",
+      "converted_at": "2026-07-26T22:20:06.101612"
     },
     "26282_tef": {
       "id": "26282_tef",
@@ -17569,8 +17918,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179975"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179975",
+      "downloaded_at": "2026-07-26T22:15:16.011975"
     },
     "26283_tef": {
       "id": "26283_tef",
@@ -17583,8 +17934,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179977"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.179977",
+      "downloaded_at": "2026-07-26T22:15:17.525035"
     },
     "15388_tef": {
       "id": "15388_tef",
@@ -17797,8 +18150,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/f/fisher&no39s_hornpipe-2976.tef",
       "genre": "Fiddle/Celtic/Irish",
       "style": "Other",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180013"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180013",
+      "downloaded_at": "2026-07-26T22:13:45.658325",
+      "converted_at": "2026-07-26T22:20:05.835296"
     },
     "12659_tef": {
       "id": "12659_tef",
@@ -17811,8 +18166,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "F",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180015"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180015",
+      "downloaded_at": "2026-07-26T22:13:47.168064",
+      "converted_at": "2026-07-26T22:20:05.840085"
     },
     "12660_tef": {
       "id": "12660_tef",
@@ -17825,8 +18182,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180017"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180017",
+      "downloaded_at": "2026-07-26T22:13:48.671326",
+      "converted_at": "2026-07-26T22:20:05.844803"
     },
     "21500_tef": {
       "id": "21500_tef",
@@ -17839,8 +18198,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180018"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180018",
+      "downloaded_at": "2026-07-26T22:13:50.186040",
+      "converted_at": "2026-07-26T22:20:05.849144"
     },
     "23908_tef": {
       "id": "23908_tef",
@@ -17853,8 +18214,12 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180020"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.180020",
+      "downloaded_at": "2026-07-26T22:13:51.683763",
+      "converted_at": "2026-07-26T22:20:05.858438",
+      "imported_at": "2026-07-26T22:26:25.653319",
+      "work_slug": "fisher-s-hornpipe"
     },
     "26367_tef": {
       "id": "26367_tef",
@@ -17867,8 +18232,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180022"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.180022",
+      "downloaded_at": "2026-07-26T22:13:53.195034"
     },
     "13853_tef": {
       "id": "13853_tef",
@@ -17880,8 +18247,10 @@
       "style": "Bluegrass (Scruggs)",
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180024"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180024",
+      "downloaded_at": "2026-07-26T22:13:54.694195",
+      "converted_at": "2026-07-26T22:20:05.864513"
     },
     "20168_tef": {
       "id": "20168_tef",
@@ -17894,8 +18263,10 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180026"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180026",
+      "downloaded_at": "2026-07-26T22:13:56.197816",
+      "converted_at": "2026-07-26T22:20:05.867648"
     },
     "16611_tef": {
       "id": "16611_tef",
@@ -18156,8 +18527,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/f/flop_eared_mule-659.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180076"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.180076",
+      "downloaded_at": "2026-07-26T22:15:19.044693"
     },
     "17815_tef": {
       "id": "17815_tef",
@@ -18170,8 +18543,12 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180078"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.180078",
+      "downloaded_at": "2026-07-26T22:15:20.796838",
+      "converted_at": "2026-07-26T22:20:06.112135",
+      "imported_at": "2026-07-26T22:26:25.660234",
+      "work_slug": "flop-eared-mule"
     },
     "27051_tef": {
       "id": "27051_tef",
@@ -18184,8 +18561,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180080"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.180080",
+      "downloaded_at": "2026-07-26T22:15:22.043075"
     },
     "29199_tef": {
       "id": "29199_tef",
@@ -18198,8 +18577,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180081"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.180081",
+      "downloaded_at": "2026-07-26T22:15:23.558381"
     },
     "10637_tef": {
       "id": "10637_tef",
@@ -18469,8 +18850,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180117"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180117",
+      "downloaded_at": "2026-07-26T22:13:32.097250",
+      "converted_at": "2026-07-26T22:20:05.698485"
     },
     "20690_tef": {
       "id": "20690_tef",
@@ -18483,8 +18866,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180118"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.180118",
+      "downloaded_at": "2026-07-26T22:13:33.605709",
+      "converted_at": "2026-07-26T22:20:05.707882",
+      "imported_at": "2026-07-26T22:26:25.671795",
+      "work_slug": "foggy-mountain-breakdown"
     },
     "22352_tef": {
       "id": "22352_tef",
@@ -18497,8 +18884,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180120"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180120",
+      "downloaded_at": "2026-07-26T22:13:35.114161",
+      "converted_at": "2026-07-26T22:20:05.713881"
     },
     "24054_tef": {
       "id": "24054_tef",
@@ -18511,8 +18900,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180122"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180122",
+      "downloaded_at": "2026-07-26T22:13:36.619600",
+      "converted_at": "2026-07-26T22:20:05.721080"
     },
     "27176_tef": {
       "id": "27176_tef",
@@ -18525,8 +18916,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180123"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180123",
+      "downloaded_at": "2026-07-26T22:13:38.121763",
+      "converted_at": "2026-07-26T22:20:05.723679"
     },
     "28081_tef": {
       "id": "28081_tef",
@@ -18539,8 +18932,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180125"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.180125",
+      "downloaded_at": "2026-07-26T22:13:39.631230"
     },
     "19627_tef": {
       "id": "19627_tef",
@@ -18553,8 +18948,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180127"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180127",
+      "downloaded_at": "2026-07-26T22:13:41.142795",
+      "converted_at": "2026-07-26T22:20:05.730061"
     },
     "19519_tef": {
       "id": "19519_tef",
@@ -18581,8 +18978,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180130"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180130",
+      "downloaded_at": "2026-07-26T22:13:42.650280",
+      "converted_at": "2026-07-26T22:20:05.736720"
     },
     "25273_tef": {
       "id": "25273_tef",
@@ -18595,8 +18994,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180132"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180132",
+      "downloaded_at": "2026-07-26T22:13:44.148906",
+      "converted_at": "2026-07-26T22:20:05.832298"
     },
     "26530_tef": {
       "id": "26530_tef",
@@ -18705,8 +19106,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180147"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.180147",
+      "downloaded_at": "2026-07-26T22:18:46.877338",
+      "converted_at": "2026-07-26T22:20:07.257848",
+      "imported_at": "2026-07-26T22:26:25.461506",
+      "work_slug": "foggy-mountain-special"
     },
     "22330_tef": {
       "id": "22330_tef",
@@ -18976,8 +19381,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/f/forked_deer-677.tef",
       "genre": "Bluegrass",
       "style": "Other",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180184"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180184",
+      "downloaded_at": "2026-07-26T22:14:51.892872",
+      "converted_at": "2026-07-26T22:20:06.044700"
     },
     "10639_tef": {
       "id": "10639_tef",
@@ -18987,8 +19394,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/f/forked_deer-720.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180186"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180186",
+      "downloaded_at": "2026-07-26T22:14:53.399438",
+      "converted_at": "2026-07-26T22:20:06.048775"
     },
     "16094_tef": {
       "id": "16094_tef",
@@ -19000,8 +19409,10 @@
       "style": "Clawhammer and Old-Time",
       "tuning": "Double C (gCGCD)",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180188"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180188",
+      "downloaded_at": "2026-07-26T22:14:54.902545",
+      "converted_at": "2026-07-26T22:20:06.050523"
     },
     "21514_tef": {
       "id": "21514_tef",
@@ -19014,8 +19425,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180189"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.180189",
+      "downloaded_at": "2026-07-26T22:14:56.416010",
+      "converted_at": "2026-07-26T22:20:06.052335",
+      "imported_at": "2026-07-26T22:26:25.682854",
+      "work_slug": "forked-deer"
     },
     "25639_tef": {
       "id": "25639_tef",
@@ -20501,8 +20916,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/gold_rush-644.tef",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180397"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180397",
+      "downloaded_at": "2026-07-26T22:18:21.268909",
+      "converted_at": "2026-07-26T22:20:07.159234"
     },
     "13034_tef": {
       "id": "13034_tef",
@@ -20515,8 +20932,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180399"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180399",
+      "downloaded_at": "2026-07-26T22:18:22.768790",
+      "converted_at": "2026-07-26T22:20:07.162286"
     },
     "27180_tef": {
       "id": "27180_tef",
@@ -20529,8 +20948,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180401"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.180401",
+      "downloaded_at": "2026-07-26T22:18:24.285911",
+      "converted_at": "2026-07-26T22:20:07.164765"
     },
     "24428_tef": {
       "id": "24428_tef",
@@ -20599,8 +21020,12 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180411"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.180411",
+      "downloaded_at": "2026-07-26T22:18:48.385493",
+      "converted_at": "2026-07-26T22:20:07.261915",
+      "imported_at": "2026-07-26T22:26:25.700171",
+      "work_slug": "golden-slippers"
     },
     "25911_tef": {
       "id": "25911_tef",
@@ -20613,8 +21038,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180413"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.180413",
+      "downloaded_at": "2026-07-26T22:18:49.891151"
     },
     "17835_tef": {
       "id": "17835_tef",
@@ -21522,8 +21949,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180542"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.180542",
+      "downloaded_at": "2026-07-26T22:18:00.199303",
+      "converted_at": "2026-07-26T22:20:06.855311",
+      "imported_at": "2026-07-26T22:26:25.701722",
+      "work_slug": "growling-old-man"
     },
     "26913_tef": {
       "id": "26913_tef",
@@ -25660,8 +26091,10 @@
       "style": "Bluegrass (Scruggs)",
       "key": "Em",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181134"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.181134",
+      "downloaded_at": "2026-07-26T22:17:46.636564"
     },
     "21523_tef": {
       "id": "21523_tef",
@@ -25673,8 +26106,10 @@
       "style": "Backing Track",
       "key": "Am",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181137"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.181137",
+      "downloaded_at": "2026-07-26T22:17:48.143528"
     },
     "17427_tef": {
       "id": "17427_tef",
@@ -27064,8 +27499,10 @@
       "genre": "Old Time",
       "style": "Clawhammer and Old-Time",
       "tuning": "Standard Open G (gDGBD)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181544"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.181544",
+      "downloaded_at": "2026-07-26T22:13:57.704341",
+      "converted_at": "2026-07-26T22:20:05.869343"
     },
     "23847_tef": {
       "id": "23847_tef",
@@ -27078,8 +27515,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181546"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.181546",
+      "downloaded_at": "2026-07-26T22:13:59.205641",
+      "converted_at": "2026-07-26T22:20:05.873119",
+      "imported_at": "2026-07-26T22:26:25.711925",
+      "work_slug": "june-apple"
     },
     "25923_tef": {
       "id": "25923_tef",
@@ -27092,8 +27533,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181548"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.181548",
+      "downloaded_at": "2026-07-26T22:14:00.706694"
     },
     "25924_tef": {
       "id": "25924_tef",
@@ -27105,8 +27548,10 @@
       "style": "Clawhammer and Old-Time",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181550"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.181550",
+      "downloaded_at": "2026-07-26T22:14:02.217193",
+      "converted_at": "2026-07-26T22:20:05.880524"
     },
     "29041_tef": {
       "id": "29041_tef",
@@ -27119,8 +27564,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181551"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.181551",
+      "downloaded_at": "2026-07-26T22:14:03.721088"
     },
     "16082_tef": {
       "id": "16082_tef",
@@ -27133,8 +27580,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181553"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.181553",
+      "downloaded_at": "2026-07-26T22:14:05.217947",
+      "converted_at": "2026-07-26T22:20:05.893988"
     },
     "25561_tef": {
       "id": "25561_tef",
@@ -27334,8 +27783,12 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/k/katy_hill-1006.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181586"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.181586",
+      "downloaded_at": "2026-07-26T22:18:51.393055",
+      "converted_at": "2026-07-26T22:20:07.290624",
+      "imported_at": "2026-07-26T22:26:25.726602",
+      "work_slug": "katy-hill"
     },
     "16352_tef": {
       "id": "16352_tef",
@@ -27347,8 +27800,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181588"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.181588",
+      "downloaded_at": "2026-07-26T22:18:52.891326",
+      "converted_at": "2026-07-26T22:20:07.293091",
+      "imported_at": "2026-07-26T22:26:25.721188",
+      "work_slug": "katy-hill"
     },
     "16622_tef": {
       "id": "16622_tef",
@@ -27359,8 +27816,10 @@
       "style": "Clawhammer and Old-Time",
       "tuning": "Standard Open G (gDGBD)",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181591"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.181591",
+      "downloaded_at": "2026-07-26T22:18:54.414504",
+      "converted_at": "2026-07-26T22:20:07.294883"
     },
     "26388_tef": {
       "id": "26388_tef",
@@ -27373,8 +27832,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181593"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.181593",
+      "downloaded_at": "2026-07-26T22:18:55.913492"
     },
     "27391_tef": {
       "id": "27391_tef",
@@ -27387,8 +27848,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181596"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.181596",
+      "downloaded_at": "2026-07-26T22:18:57.411920"
     },
     "10751_tef": {
       "id": "10751_tef",
@@ -27398,8 +27861,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/k/katy_hill_(guitar_solo)-1007.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181598"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.181598",
+      "downloaded_at": "2026-07-26T22:18:58.925188",
+      "converted_at": "2026-07-26T22:20:07.314874"
     },
     "10752_tef": {
       "id": "10752_tef",
@@ -27790,8 +28255,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181654"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.181654",
+      "downloaded_at": "2026-07-26T22:17:22.545007",
+      "converted_at": "2026-07-26T22:20:06.685672",
+      "imported_at": "2026-07-26T22:26:25.728862",
+      "work_slug": "kitchen-girl"
     },
     "16623_tef": {
       "id": "16623_tef",
@@ -27802,8 +28271,10 @@
       "style": "Clawhammer and Old-Time",
       "tuning": "Sawmill (gDGCD)",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181656"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.181656",
+      "downloaded_at": "2026-07-26T22:17:24.059589",
+      "converted_at": "2026-07-26T22:20:06.687465"
     },
     "25402_tef": {
       "id": "25402_tef",
@@ -27816,8 +28287,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181658"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.181658",
+      "downloaded_at": "2026-07-26T22:17:25.556502"
     },
     "20141_tef": {
       "id": "20141_tef",
@@ -29614,8 +30087,10 @@
       "tuning": "Open C (gCGCE)",
       "key": "Dm",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181918"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.181918",
+      "downloaded_at": "2026-07-26T22:16:50.884228",
+      "converted_at": "2026-07-26T22:20:06.580704"
     },
     "10894_tef": {
       "id": "10894_tef",
@@ -29625,8 +30100,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/lonesome_fiddle_blues_(john_mceuen_-1361.tef",
       "genre": "Bluegrass",
       "style": "Other",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181920"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.181920",
+      "downloaded_at": "2026-07-26T22:16:52.394747",
+      "converted_at": "2026-07-26T22:20:06.582645"
     },
     "10895_tef": {
       "id": "10895_tef",
@@ -29664,8 +30141,12 @@
       "tuning": "aDGBD",
       "key": "Dm",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181925"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.181925",
+      "downloaded_at": "2026-07-26T22:17:27.063279",
+      "converted_at": "2026-07-26T22:20:06.702279",
+      "imported_at": "2026-07-26T22:26:25.747798",
+      "work_slug": "lonesome-moonlight-waltz"
     },
     "26030_tef": {
       "id": "26030_tef",
@@ -29678,8 +30159,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "Dm",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181927"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.181927",
+      "downloaded_at": "2026-07-26T22:17:28.674436"
     },
     "26654_tef": {
       "id": "26654_tef",
@@ -29691,8 +30174,10 @@
       "style": "Clawhammer and Old-Time",
       "key": "Em",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181929"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.181929",
+      "downloaded_at": "2026-07-26T22:17:30.266212"
     },
     "10896_tef": {
       "id": "10896_tef",
@@ -34165,8 +34650,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/old_joe_clark-1461.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182577"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182577",
+      "downloaded_at": "2026-07-26T22:12:36.373020",
+      "converted_at": "2026-07-26T22:20:05.601426"
     },
     "10973_tef": {
       "id": "10973_tef",
@@ -34176,8 +34663,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/old_joe_clark-1507.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182579"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.182579",
+      "downloaded_at": "2026-07-26T22:12:37.881925"
     },
     "10974_tef": {
       "id": "10974_tef",
@@ -34187,8 +34676,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/old_joe_clark-1508.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182581"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182581",
+      "downloaded_at": "2026-07-26T22:12:39.396244",
+      "converted_at": "2026-07-26T22:20:05.608874"
     },
     "10975_tef": {
       "id": "10975_tef",
@@ -34198,8 +34689,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/old_joe_clark-1509.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182583"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182583",
+      "downloaded_at": "2026-07-26T22:12:40.900740",
+      "converted_at": "2026-07-26T22:20:05.613042"
     },
     "12126_tef": {
       "id": "12126_tef",
@@ -34212,8 +34705,12 @@
       "tuning": "Tenor G (DGdg)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182584"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.182584",
+      "downloaded_at": "2026-07-26T22:12:42.400087",
+      "converted_at": "2026-07-26T22:20:05.615897",
+      "imported_at": "2026-07-26T22:26:25.765984",
+      "work_slug": "old-joe-clark"
     },
     "24068_tef": {
       "id": "24068_tef",
@@ -34226,8 +34723,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182587"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.182587",
+      "downloaded_at": "2026-07-26T22:12:43.904338",
+      "converted_at": "2026-07-26T22:20:05.618769",
+      "imported_at": "2026-07-26T22:26:25.758112",
+      "work_slug": "old-joe-clark"
     },
     "24083_tef": {
       "id": "24083_tef",
@@ -34240,8 +34741,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182589"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182589",
+      "downloaded_at": "2026-07-26T22:12:45.402728",
+      "converted_at": "2026-07-26T22:20:05.621338"
     },
     "27403_tef": {
       "id": "27403_tef",
@@ -34254,8 +34757,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182590"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182590",
+      "downloaded_at": "2026-07-26T22:12:46.908875",
+      "converted_at": "2026-07-26T22:20:05.623675"
     },
     "27134_tef": {
       "id": "27134_tef",
@@ -34279,8 +34784,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/old_joe_clark_(1st_banjo_break)-1452.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182594"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182594",
+      "downloaded_at": "2026-07-26T22:12:48.416603",
+      "converted_at": "2026-07-26T22:20:05.625372"
     },
     "10971_tef": {
       "id": "10971_tef",
@@ -34290,8 +34797,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/old_joe_clark_(2nd_banjo_break)-1501.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182596"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182596",
+      "downloaded_at": "2026-07-26T22:12:49.922689",
+      "converted_at": "2026-07-26T22:20:05.627199"
     },
     "10968_tef": {
       "id": "10968_tef",
@@ -34301,8 +34810,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/ol&no39_joe_clark_(2nd_break)-1492.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182598"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182598",
+      "downloaded_at": "2026-07-26T22:12:51.425416",
+      "converted_at": "2026-07-26T22:20:05.628722"
     },
     "10970_tef": {
       "id": "10970_tef",
@@ -34312,8 +34823,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/old_joe_clark_(3rd_banjo_break)-1500.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182600"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182600",
+      "downloaded_at": "2026-07-26T22:12:52.932830",
+      "converted_at": "2026-07-26T22:20:05.630712"
     },
     "10969_tef": {
       "id": "10969_tef",
@@ -34323,8 +34836,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/old_joe_clark_(banjo_lead)-1495.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182602"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182602",
+      "downloaded_at": "2026-07-26T22:12:54.433307",
+      "converted_at": "2026-07-26T22:20:05.632459"
     },
     "10972_tef": {
       "id": "10972_tef",
@@ -34334,8 +34849,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/old_joe_clark_(in_e)-1503.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182603"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182603",
+      "downloaded_at": "2026-07-26T22:12:55.940569",
+      "converted_at": "2026-07-26T22:20:05.634315"
     },
     "16120_tef": {
       "id": "16120_tef",
@@ -34348,8 +34865,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182605"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.182605",
+      "downloaded_at": "2026-07-26T22:12:57.445397"
     },
     "27242_tef": {
       "id": "27242_tef",
@@ -34442,8 +34961,12 @@
       "tuning": "Double C (gCGCD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182618"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.182618",
+      "downloaded_at": "2026-07-26T22:19:00.425695",
+      "converted_at": "2026-07-26T22:20:07.316900",
+      "imported_at": "2026-07-26T22:26:25.767416",
+      "work_slug": "old-molly-hare"
     },
     "20040_tef": {
       "id": "20040_tef",
@@ -34785,8 +35308,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182665"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.182665",
+      "downloaded_at": "2026-07-26T22:19:39.587026"
     },
     "28067_tef": {
       "id": "28067_tef",
@@ -34861,8 +35386,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/orange_blossom_special-1526.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182676"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182676",
+      "downloaded_at": "2026-07-26T22:16:25.401977",
+      "converted_at": "2026-07-26T22:20:06.346771"
     },
     "10986_tef": {
       "id": "10986_tef",
@@ -34872,8 +35399,12 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/orange_blossom_special-1530.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182678"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.182678",
+      "downloaded_at": "2026-07-26T22:16:26.796207",
+      "converted_at": "2026-07-26T22:20:06.413464",
+      "imported_at": "2026-07-26T22:26:25.782707",
+      "work_slug": "orange-blossom-special"
     },
     "14967_tef": {
       "id": "14967_tef",
@@ -34886,8 +35417,12 @@
       "tuning": "Tenor G (DGdg)",
       "key": "E",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182680"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.182680",
+      "downloaded_at": "2026-07-26T22:16:28.308237",
+      "converted_at": "2026-07-26T22:20:06.416299",
+      "imported_at": "2026-07-26T22:26:25.796423",
+      "work_slug": "orange-blossom-special"
     },
     "20018_tef": {
       "id": "20018_tef",
@@ -34900,8 +35435,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182681"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.182681",
+      "downloaded_at": "2026-07-26T22:16:29.821361",
+      "converted_at": "2026-07-26T22:20:06.432422",
+      "imported_at": "2026-07-26T22:26:25.771889",
+      "work_slug": "orange-blossom-special"
     },
     "10987_tef": {
       "id": "10987_tef",
@@ -35062,8 +35601,10 @@
       "style": "Clawhammer and Old-Time",
       "tuning": "Double C (gCGCD)",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182706"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182706",
+      "downloaded_at": "2026-07-26T22:15:25.052655",
+      "converted_at": "2026-07-26T22:20:06.124418"
     },
     "18299_tef": {
       "id": "18299_tef",
@@ -35076,8 +35617,12 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182708"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.182708",
+      "downloaded_at": "2026-07-26T22:15:26.556491",
+      "converted_at": "2026-07-26T22:20:06.127806",
+      "imported_at": "2026-07-26T22:26:25.798680",
+      "work_slug": "over-the-waterfall"
     },
     "21413_tef": {
       "id": "21413_tef",
@@ -35090,8 +35635,10 @@
       "tuning": "Double C (gCGCD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182710"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182710",
+      "downloaded_at": "2026-07-26T22:15:28.063976",
+      "converted_at": "2026-07-26T22:20:06.130357"
     },
     "10994_tef": {
       "id": "10994_tef",
@@ -35101,8 +35648,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/over_the_waterfall_(double_c_tuning-1547.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182712"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182712",
+      "downloaded_at": "2026-07-26T22:15:29.559917",
+      "converted_at": "2026-07-26T22:20:06.131946"
     },
     "19516_tef": {
       "id": "19516_tef",
@@ -35850,8 +36399,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/p/pike_county_breakdown-1608.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182823"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182823",
+      "downloaded_at": "2026-07-26T22:16:35.832712",
+      "converted_at": "2026-07-26T22:20:06.463665"
     },
     "11019_tef": {
       "id": "11019_tef",
@@ -35861,8 +36412,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/p/pike_county_breakdown-1609.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182825"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182825",
+      "downloaded_at": "2026-07-26T22:16:37.340859",
+      "converted_at": "2026-07-26T22:20:06.469164"
     },
     "18663_tef": {
       "id": "18663_tef",
@@ -35875,8 +36428,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182827"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.182827",
+      "downloaded_at": "2026-07-26T22:16:38.846223",
+      "converted_at": "2026-07-26T22:20:06.479664",
+      "imported_at": "2026-07-26T22:26:25.808826",
+      "work_slug": "pike-county-breakdown"
     },
     "24015_tef": {
       "id": "24015_tef",
@@ -35889,8 +36446,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182828"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182828",
+      "downloaded_at": "2026-07-26T22:16:40.351286",
+      "converted_at": "2026-07-26T22:20:06.492289"
     },
     "27404_tef": {
       "id": "27404_tef",
@@ -35903,8 +36462,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182830"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182830",
+      "downloaded_at": "2026-07-26T22:16:41.855817",
+      "converted_at": "2026-07-26T22:20:06.494997"
     },
     "29205_tef": {
       "id": "29205_tef",
@@ -35917,8 +36478,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182832"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182832",
+      "downloaded_at": "2026-07-26T22:16:43.360736",
+      "converted_at": "2026-07-26T22:20:06.503748"
     },
     "11015_tef": {
       "id": "11015_tef",
@@ -35928,8 +36491,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/p/pike_county_breakdown_(1st_banjo_br-1599.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182834"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182834",
+      "downloaded_at": "2026-07-26T22:16:44.860133",
+      "converted_at": "2026-07-26T22:20:06.505290"
     },
     "11016_tef": {
       "id": "11016_tef",
@@ -35939,8 +36504,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/p/pike_county_breakdown_(2nd_banjo_br-1604.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182836"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182836",
+      "downloaded_at": "2026-07-26T22:16:46.366041",
+      "converted_at": "2026-07-26T22:20:06.506783"
     },
     "11017_tef": {
       "id": "11017_tef",
@@ -35950,8 +36517,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/p/pike_county_breakdown_(3rd_banjo_br-1605.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182838"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.182838",
+      "downloaded_at": "2026-07-26T22:16:47.875101",
+      "converted_at": "2026-07-26T22:20:06.508892"
     },
     "13067_tef": {
       "id": "13067_tef",
@@ -37153,8 +37722,12 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/rawhide-1672.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183036"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.183036",
+      "downloaded_at": "2026-07-26T22:19:47.100872",
+      "converted_at": "2026-07-26T22:20:07.588058",
+      "imported_at": "2026-07-26T22:26:25.515237",
+      "work_slug": "rawhide"
     },
     "11053_tef": {
       "id": "11053_tef",
@@ -37411,8 +37984,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183076"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.183076",
+      "downloaded_at": "2026-07-26T22:14:06.729958",
+      "converted_at": "2026-07-26T22:20:05.908258",
+      "imported_at": "2026-07-26T22:26:25.839585",
+      "work_slug": "red-wing"
     },
     "20903_tef": {
       "id": "20903_tef",
@@ -37424,8 +38001,10 @@
       "style": "Bluegrass (Scruggs)",
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183078"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183078",
+      "downloaded_at": "2026-07-26T22:14:08.233778",
+      "converted_at": "2026-07-26T22:20:05.913022"
     },
     "24191_tef": {
       "id": "24191_tef",
@@ -37438,8 +38017,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183080"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.183080",
+      "downloaded_at": "2026-07-26T22:14:09.733433",
+      "converted_at": "2026-07-26T22:20:05.917361",
+      "imported_at": "2026-07-26T22:26:25.835452",
+      "work_slug": "red-wing"
     },
     "25151_tef": {
       "id": "25151_tef",
@@ -37452,8 +38035,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183081"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183081",
+      "downloaded_at": "2026-07-26T22:14:11.242547"
     },
     "27409_tef": {
       "id": "27409_tef",
@@ -37466,8 +38051,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183083"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183083",
+      "downloaded_at": "2026-07-26T22:14:12.739674"
     },
     "28928_tef": {
       "id": "28928_tef",
@@ -37480,8 +38067,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183085"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183085",
+      "downloaded_at": "2026-07-26T22:14:14.245012"
     },
     "24941_tef": {
       "id": "24941_tef",
@@ -38057,8 +38646,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183169"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.183169",
+      "downloaded_at": "2026-07-26T22:17:31.588315",
+      "converted_at": "2026-07-26T22:20:06.713438",
+      "imported_at": "2026-07-26T22:26:25.841492",
+      "work_slug": "road-to-columbus"
     },
     "19907_tef": {
       "id": "19907_tef",
@@ -38071,8 +38664,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183171"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183171",
+      "downloaded_at": "2026-07-26T22:17:33.084077"
     },
     "27415_tef": {
       "id": "27415_tef",
@@ -38085,8 +38680,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183173"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183173",
+      "downloaded_at": "2026-07-26T22:17:34.594078"
     },
     "28747_tef": {
       "id": "28747_tef",
@@ -38099,8 +38696,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183175"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183175",
+      "downloaded_at": "2026-07-26T22:17:36.103171"
     },
     "28390_tef": {
       "id": "28390_tef",
@@ -38113,8 +38712,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183176"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183176",
+      "downloaded_at": "2026-07-26T22:17:37.605494"
     },
     "11122_tef": {
       "id": "11122_tef",
@@ -38124,8 +38725,12 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/road_to_columbus_(guitar_piece)-1826.tef",
       "genre": "Ragtime",
       "style": "Other",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183178"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.183178",
+      "downloaded_at": "2026-07-26T22:17:39.109797",
+      "converted_at": "2026-07-26T22:20:06.732390",
+      "imported_at": "2026-07-26T22:26:25.844586",
+      "work_slug": "road-to-columbus"
     },
     "20747_tef": {
       "id": "20747_tef",
@@ -39484,8 +40089,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183370"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183370",
+      "downloaded_at": "2026-07-26T22:15:50.622274"
     },
     "19504_tef": {
       "id": "19504_tef",
@@ -41051,8 +41658,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/shuckin&no39_the_corn-2090.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183592"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183592",
+      "downloaded_at": "2026-07-26T22:19:50.121264",
+      "converted_at": "2026-07-26T22:20:07.669521"
     },
     "11249_tef": {
       "id": "11249_tef",
@@ -41062,8 +41671,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/shuckin&no39_the_corn-2091.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183593"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183593",
+      "downloaded_at": "2026-07-26T22:19:51.623889",
+      "converted_at": "2026-07-26T22:20:07.693052"
     },
     "20833_tef": {
       "id": "20833_tef",
@@ -41076,8 +41687,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183595"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183595",
+      "downloaded_at": "2026-07-26T22:19:53.129185",
+      "converted_at": "2026-07-26T22:20:07.697573"
     },
     "20832_tef": {
       "id": "20832_tef",
@@ -41090,8 +41703,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183597"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183597",
+      "downloaded_at": "2026-07-26T22:19:54.633289",
+      "converted_at": "2026-07-26T22:20:07.702497"
     },
     "25139_tef": {
       "id": "25139_tef",
@@ -41104,8 +41719,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183599"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183599",
+      "downloaded_at": "2026-07-26T22:19:56.136579"
     },
     "23610_tef": {
       "id": "23610_tef",
@@ -41895,8 +42512,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/soldier&no39s_joy_(in_d_-_capo_2)-2599.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183714"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183714",
+      "downloaded_at": "2026-07-26T22:13:01.971771",
+      "converted_at": "2026-07-26T22:20:05.647506"
     },
     "16138_tef": {
       "id": "16138_tef",
@@ -41908,8 +42527,10 @@
       "tuning": "Double C (gCGCD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183716"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183716",
+      "downloaded_at": "2026-07-26T22:13:03.470523",
+      "converted_at": "2026-07-26T22:20:05.649126"
     },
     "24453_tef": {
       "id": "24453_tef",
@@ -41922,8 +42543,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183718"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.183718",
+      "downloaded_at": "2026-07-26T22:13:04.983952",
+      "converted_at": "2026-07-26T22:20:05.651820",
+      "imported_at": "2026-07-26T22:26:25.878935",
+      "work_slug": "soldier-s-joy"
     },
     "25624_tef": {
       "id": "25624_tef",
@@ -41950,8 +42575,10 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183721"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183721",
+      "downloaded_at": "2026-07-26T22:13:06.483484",
+      "converted_at": "2026-07-26T22:20:05.653776"
     },
     "17670_tef": {
       "id": "17670_tef",
@@ -41964,8 +42591,10 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183723"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183723",
+      "downloaded_at": "2026-07-26T22:13:07.997263",
+      "converted_at": "2026-07-26T22:20:05.655224"
     },
     "22933_tef": {
       "id": "22933_tef",
@@ -41978,8 +42607,10 @@
       "tuning": "Double C (gCGCD)",
       "key": "D",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183725"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183725",
+      "downloaded_at": "2026-07-26T22:13:09.507594",
+      "converted_at": "2026-07-26T22:20:05.656883"
     },
     "27422_tef": {
       "id": "27422_tef",
@@ -41992,8 +42623,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183726"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183726",
+      "downloaded_at": "2026-07-26T22:13:11.187006"
     },
     "27555_tef": {
       "id": "27555_tef",
@@ -42006,8 +42639,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183728"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183728",
+      "downloaded_at": "2026-07-26T22:13:12.607090"
     },
     "28955_tef": {
       "id": "28955_tef",
@@ -42815,8 +43450,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183834"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.183834",
+      "downloaded_at": "2026-07-26T22:14:15.921012",
+      "converted_at": "2026-07-26T22:20:05.946559",
+      "imported_at": "2026-07-26T22:26:25.891027",
+      "work_slug": "st-anne-s-reel"
     },
     "20770_tef": {
       "id": "20770_tef",
@@ -42829,8 +43468,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183836"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183836",
+      "downloaded_at": "2026-07-26T22:14:17.339836",
+      "converted_at": "2026-07-26T22:20:05.948315"
     },
     "21187_tef": {
       "id": "21187_tef",
@@ -42871,8 +43512,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183841"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.183841",
+      "downloaded_at": "2026-07-26T22:14:18.762130",
+      "converted_at": "2026-07-26T22:20:05.952674"
     },
     "21809_tef": {
       "id": "21809_tef",
@@ -42884,8 +43527,10 @@
       "style": "Clawhammer and Old-Time",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183843"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183843",
+      "downloaded_at": "2026-07-26T22:14:20.267305"
     },
     "28341_tef": {
       "id": "28341_tef",
@@ -42898,8 +43543,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183845"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.183845",
+      "downloaded_at": "2026-07-26T22:14:21.777905"
     },
     "17473_tef": {
       "id": "17473_tef",
@@ -44830,8 +45477,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184125"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.184125",
+      "downloaded_at": "2026-07-26T22:17:10.496212"
     },
     "28557_tef": {
       "id": "28557_tef",
@@ -44989,8 +45638,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184147"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184147",
+      "downloaded_at": "2026-07-26T22:18:31.807135",
+      "converted_at": "2026-07-26T22:20:07.179299"
     },
     "16638_tef": {
       "id": "16638_tef",
@@ -45001,8 +45652,10 @@
       "style": "Clawhammer and Old-Time",
       "tuning": "Drop C (gCGBD)",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184149"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184149",
+      "downloaded_at": "2026-07-26T22:18:33.406284",
+      "converted_at": "2026-07-26T22:20:07.181102"
     },
     "20547_tef": {
       "id": "20547_tef",
@@ -45015,8 +45668,12 @@
       "tuning": "aDGBD",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184150"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.184150",
+      "downloaded_at": "2026-07-26T22:18:34.818702",
+      "converted_at": "2026-07-26T22:20:07.186503",
+      "imported_at": "2026-07-26T22:26:25.898357",
+      "work_slug": "tennessee-waltz-1"
     },
     "24418_tef": {
       "id": "24418_tef",
@@ -45029,8 +45686,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184152"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184152",
+      "downloaded_at": "2026-07-26T22:18:36.323993",
+      "converted_at": "2026-07-26T22:20:07.188543"
     },
     "12030_tef": {
       "id": "12030_tef",
@@ -46892,8 +47551,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184415"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.184415",
+      "downloaded_at": "2026-07-26T22:18:37.834962"
     },
     "27436_tef": {
       "id": "27436_tef",
@@ -48231,8 +48892,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/turkey_in_the_straw-2349.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184609"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184609",
+      "downloaded_at": "2026-07-26T22:13:14.019208",
+      "converted_at": "2026-07-26T22:20:05.664404"
     },
     "11398_tef": {
       "id": "11398_tef",
@@ -48242,8 +48905,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/turkey_in_the_straw-2351.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184611"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184611",
+      "downloaded_at": "2026-07-26T22:13:15.516002",
+      "converted_at": "2026-07-26T22:20:05.667036"
     },
     "16262_tef": {
       "id": "16262_tef",
@@ -48255,8 +48920,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184613"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184613",
+      "downloaded_at": "2026-07-26T22:13:17.031813",
+      "converted_at": "2026-07-26T22:20:05.669606"
     },
     "17149_tef": {
       "id": "17149_tef",
@@ -48269,8 +48936,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184615"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184615",
+      "downloaded_at": "2026-07-26T22:13:18.532689",
+      "converted_at": "2026-07-26T22:20:05.672998"
     },
     "18448_tef": {
       "id": "18448_tef",
@@ -48281,8 +48950,10 @@
       "genre": "Traditional",
       "tuning": "Standard Open G (gDGBD)",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184616"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.184616",
+      "downloaded_at": "2026-07-26T22:13:20.042241"
     },
     "20403_tef": {
       "id": "20403_tef",
@@ -48295,8 +48966,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184618"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184618",
+      "downloaded_at": "2026-07-26T22:13:21.553624",
+      "converted_at": "2026-07-26T22:20:05.676812"
     },
     "20409_tef": {
       "id": "20409_tef",
@@ -48309,8 +48982,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184620"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.184620",
+      "downloaded_at": "2026-07-26T22:13:23.065169",
+      "converted_at": "2026-07-26T22:20:05.680872",
+      "imported_at": "2026-07-26T22:26:25.905263",
+      "work_slug": "turkey-in-the-straw"
     },
     "24212_tef": {
       "id": "24212_tef",
@@ -48323,8 +49000,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184622"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184622",
+      "downloaded_at": "2026-07-26T22:13:24.578540",
+      "converted_at": "2026-07-26T22:20:05.683179"
     },
     "27306_tef": {
       "id": "27306_tef",
@@ -48337,8 +49016,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184623"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.184623",
+      "downloaded_at": "2026-07-26T22:13:26.085935"
     },
     "27423_tef": {
       "id": "27423_tef",
@@ -48351,8 +49032,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184625"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184625",
+      "downloaded_at": "2026-07-26T22:13:27.579960",
+      "converted_at": "2026-07-26T22:20:05.687333"
     },
     "28501_tef": {
       "id": "28501_tef",
@@ -48365,8 +49048,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184627"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.184627",
+      "downloaded_at": "2026-07-26T22:13:29.090491"
     },
     "11399_tef": {
       "id": "11399_tef",
@@ -48376,8 +49061,10 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/turkey_in_the_straw_(up_the_neck)-2355.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184628"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:58.184628",
+      "downloaded_at": "2026-07-26T22:13:30.593351",
+      "converted_at": "2026-07-26T22:20:05.696624"
     },
     "15887_tef": {
       "id": "15887_tef",
@@ -49941,8 +50628,12 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184852"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:58.184852",
+      "downloaded_at": "2026-07-26T22:19:41.085232",
+      "converted_at": "2026-07-26T22:20:07.578134",
+      "imported_at": "2026-07-26T22:26:25.917003",
+      "work_slug": "westphalia-waltz-1"
     },
     "24588_tef": {
       "id": "24588_tef",
@@ -49955,8 +50646,10 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184853"
+      "status": "skipped",
+      "error": "Empty notation (0 events)",
+      "discovered_at": "2026-07-26T21:59:58.184853",
+      "downloaded_at": "2026-07-26T22:19:42.595601"
     },
     "11444_tef": {
       "id": "11444_tef",

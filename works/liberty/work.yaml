@@ -20,3 +20,23 @@ parts:
     tef_time_sig: 4/4
     tef_tracks: 4
     tef_events: 461
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '1854'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=1854
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '1284'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=1284
+    author: Kallesandria
+    imported_at: '2026-07-26'

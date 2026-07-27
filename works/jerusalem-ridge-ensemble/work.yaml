@@ -35,3 +35,13 @@ parts:
     tef_time_sig: 4/4
     tef_tracks: 2
     tef_events: 1016
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '3098'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=3098
+    author: mmuussiiccaall
+    imported_at: '2026-07-26'

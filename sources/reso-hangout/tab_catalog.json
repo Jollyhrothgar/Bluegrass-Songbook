@@ -266,8 +266,12 @@
       "tuning": "GBDGBD (Standard Open G)",
       "key": "Dm",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:03.640563"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:03.640563",
+      "downloaded_at": "2026-07-26T22:08:19.173319",
+      "converted_at": "2026-07-26T22:20:04.068490",
+      "imported_at": "2026-07-26T22:26:25.743156",
+      "work_slug": "lonesome-fiddle-blues"
     },
     "2458_tef": {
       "id": "2458_tef",
@@ -279,8 +283,12 @@
       "tuning": "GBDGBD (Standard Open G)",
       "key": "Dm",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:03.640565"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:59:03.640565",
+      "downloaded_at": "2026-07-26T22:08:20.673581",
+      "converted_at": "2026-07-26T22:20:04.071022",
+      "imported_at": "2026-07-26T22:26:25.749851",
+      "work_slug": "lonesome-moonlight-waltz"
     },
     "2422_tef": {
       "id": "2422_tef",
@@ -437,8 +445,10 @@
       "tuning": "GBDGBD (Standard Open G)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:03.640589"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:03.640589",
+      "downloaded_at": "2026-07-26T22:07:09.442566",
+      "converted_at": "2026-07-26T22:20:04.061581"
     },
     "19_tef": {
       "id": "19_tef",
@@ -450,8 +460,10 @@
       "style": "Unknown/None Chosen",
       "tuning": "GBDGBD (Standard Open G)",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:03.640591"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:03.640591",
+      "downloaded_at": "2026-07-26T22:07:10.676528",
+      "converted_at": "2026-07-26T22:20:04.063907"
     },
     "20_tef": {
       "id": "20_tef",
@@ -463,8 +475,10 @@
       "style": "Unknown/None Chosen",
       "tuning": "GBDGBD (Standard Open G)",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:03.640593"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:03.640593",
+      "downloaded_at": "2026-07-26T22:08:16.373398",
+      "converted_at": "2026-07-26T22:20:04.065448"
     },
     "2492_tef": {
       "id": "2492_tef",
@@ -578,8 +592,10 @@
       "style": "Unknown/None Chosen",
       "tuning": "GBDGBD (Standard Open G)",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:03.640612"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:59:03.640612",
+      "downloaded_at": "2026-07-26T22:08:17.675327",
+      "converted_at": "2026-07-26T22:20:04.066571"
     },
     "2105_tef": {
       "id": "2105_tef",

@@ -3,7 +3,8 @@
   "metadata": {
     "title": "Cherokee Shuffle",
     "time_signature": "2/4",
-    "tempo": 100
+    "tempo": 100,
+    "key": "G"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -1575,8 +1576,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "tab-cherokee-shuffl-23404-3332310112018.tef",
-    "converted_at": "2026-07-02T11:24:53.174760"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cherokee-shuffl-23404-3332310112018.tef",
+    "author": "Yohansen",
+    "converted_at": "2026-07-26T22:20:06.224394"
   }
 }

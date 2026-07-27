@@ -1,0 +1,1195 @@
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="theme-color" content="#220401" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dear Old Dixie Tab - Details and Ratings - Banjo Hangout</title>
+	<link rel="stylesheet" href="/global/css/foundation.css?v=1.04">
+	<link rel="stylesheet" href="/global/css/app.css?v=1.43">
+	<link href='/global/css/jquery.mentionsInput.css?v=1.03' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400italic,300italic|Open+Sans:400,400italic,300italic,300,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<!--chocolat lightbox-->
+	<link rel="stylesheet" href="/global/css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+
+	<script src="/global/js/vendor/jquery.js?v=1.00"></script>
+
+	<!-- favicon browser & mobile icons - Generated at realfavicongenerator.net -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+
+	<!--for jquery mentionsInput-->
+	<script src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js' type='text/javascript'></script>
+	<!--sidr off canvas menu-->
+	<script src="/global/js/jquery.sidr.min.js"></script>
+
+	<script src="/global/jquery-ui.min.js?v=1.00" type="text/javascript"></script>
+	<link rel="stylesheet" href="/global/jquery-ui.min.css?v=1.02" type="text/css" />
+	<!--modal window includes-->
+
+	<link rel="stylesheet" href="/global/dhtmlwindow/windowfiles/dhtmlwindow.css" type="text/css" />
+	<link rel="stylesheet" href="/global/dhtmlwindow/modalfiles/modal.css" type="text/css" />
+	<script type="text/javascript" src="/global/dhtmlwindow/windowfiles/dhtmlwindow.js"></script>
+	<script type="text/javascript" src="/global/dhtmlwindow/modalfiles/modal.js"></script>
+
+	<!--end modal window includes-->
+
+	
+		<script type="text/javascript">
+			var offSet, theDate = new Date();
+
+			offSet = -theDate.getTimezoneOffset()/60;
+			theDate.setDate(theDate.getDate()+365);
+
+			document.cookie = 'TIMEZONE=' + offSet + '; expires=' + theDate.toUTCString() + '; path=/'
+		</script>
+	
+<!-- BEGIN THM AUTO CODE -->
+<!--this needs to load in order for privacy conset popup to work -->
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.cmd.push(function() {
+  googletag.pubads().disableInitialLoad(); googletag.pubads().enableSingleRequest();
+});
+var _hbopts = { alias: '/', type: 'banner' };
+var _hbwrap = _hbwrap || [];
+(function() {
+  var hbldr = function (url, resolution, cachebuster, millis, referrer) {
+    var s = document.createElement('script'); s.type = 'text/javascript';
+    s.async = true; s.src = 'https://' + url + '&resolution=' + resolution +
+      '&random=' + cachebuster + '&millis=' + millis + '&referrer=' + referrer;
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  };
+  hbldr(
+    'tradecore.tradehouse.media/servlet/hbwrap?stack=9',
+    (window.innerWidth||screen.width)+'x'+(window.innerHeight||screen.height),
+    Math.floor(89999999*Math.random()+10000000), new Date().getTime(), encodeURIComponent(
+      (window!=top&&window.location.ancestorOrigins)?
+        window.location.ancestorOrigins[window.location.ancestorOrigins.length-1]:document.location
+    )
+  );
+})();
+</script>
+<!-- END THM AUTO CODE -->
+
+
+
+
+
+
+
+</head>
+
+<body> 
+
+<div id="phone-nav-toggle" class="row show-for-small-only expanded">
+	<div class="small-2 columns">
+		<a id="left-menu" href="#left-column" class="lightLink"><i class="fa fa-bars fa-2x"></i></a>
+	</div>
+	<div class="small-8 columns end">
+		<a href="/" title="Go to Home Page"><img src="/images/logo.png" alt="Banjo Hangout Logo"></a>
+	</div>
+</div><!--phone-nav-->
+
+<div class="expanded collapse row" data-equalizer="main">
+	<div id="left-column" class="fixed-width small-12 sidr columns" data-equalizer-watch="main">
+		
+		<!-- move script right after element is rendered so users on slower devices don't have to wait for the entire page to load before they can toggle the mobile sidebar menu -->
+		<script>
+			$('#left-menu').sidr({
+			  name: 'left-column',
+			  side: 'left'
+			});
+		</script>
+
+		<div class="scrollerLeft" >
+			<div class="medium-login">
+            
+    <div class="user-profile expanded pad10Right pad10Left row">
+        <div class="small-12 columns">
+            <div class="show-for-small-only"><br></div>
+
+            <form method="post" action="/login/" name="thisform">
+
+                
+                    <input type="hidden" name="redir" value="/tab/browse.asp?m=detail&v=20545">
+                    <input type="hidden" name="refer" value="">
+                
+                
+                <input name="Email" type="text" size="20" maxlength="50" placeholder="Email" value="" />
+                <input class="noMargin" name="Password" type="password" size="20" maxlength="50" placeholder="Password" />
+
+                <div class="row collapse">
+                    <div class="columns small-12 text-left">
+                        <p class="noMargin small"><label for="member_login_save_password" class="white"><input id="member_login_save_password" name="SavePassword" type="checkbox" value="true" checked class="noSpacing" /> Save Password</label></p>
+                    </div>
+                </div>                            
+
+                <div class="row collapse">
+
+                    <div class="column small-12">
+                        <input class="small button noMargin" style="width:100%;" name="submit" type="submit" value="Log In" />
+                    </div>                                       
+                </div>
+
+                <div class="row collapse">
+                    <div class="column small-12 text-center">
+                        <p class="small "><a href="/pages/login/forgot.asp">Forgot Password</a></p>
+
+              
+
+                        <input class="small button noMargin"  style="width:100%;background-color:#229966;margin-bottom:20px;" name="submit" type="button" onclick="location.href='/login/profile.asp';" value="Sign Up" />
+                    </div>
+                </div>      
+
+            </form>
+        </div>
+    </div>
+    
+        	</div>
+        	<a class="hide-for-small-only" href="/" title="Go to Home Page"><img src="/images/logo.png" alt="Banjo Hangout Logo"></a>
+			<div class="rule gradient hide-for-small-only"></div>
+			        <!--<ul class="vertical dropdown menu" data-dropdown-menu>-->
+
+        <div class="show-for-small-only">
+            
+    <div class="user-profile expanded pad10Right pad10Left row">
+        <div class="small-12 columns">
+            <div class="show-for-small-only"><br></div>
+
+            <form method="post" action="/login/" name="thisform">
+
+                
+                    <input type="hidden" name="redir" value="/tab/browse.asp?m=detail&v=20545">
+                    <input type="hidden" name="refer" value="">
+                
+                
+                <input name="Email" type="text" size="20" maxlength="50" placeholder="Email" value="" />
+                <input class="noMargin" name="Password" type="password" size="20" maxlength="50" placeholder="Password" />
+
+                <div class="row collapse">
+                    <div class="columns small-12 text-left">
+                        <p class="noMargin small"><label for="member_login_save_password" class="white"><input id="member_login_save_password" name="SavePassword" type="checkbox" value="true" checked class="noSpacing" /> Save Password</label></p>
+                    </div>
+                </div>                            
+
+                <div class="row collapse">
+
+                    <div class="column small-12">
+                        <input class="small button noMargin" style="width:100%;" name="submit" type="submit" value="Log In" />
+                    </div>                                       
+                </div>
+
+                <div class="row collapse">
+                    <div class="column small-12 text-center">
+                        <p class="small "><a href="/pages/login/forgot.asp">Forgot Password</a></p>
+
+              
+
+                        <input class="small button noMargin"  style="width:100%;background-color:#229966;margin-bottom:20px;" name="submit" type="button" onclick="location.href='/login/profile.asp';" value="Sign Up" />
+                    </div>
+                </div>      
+
+            </form>
+        </div>
+    </div>
+    
+        </div>
+        
+    
+        <ul class="vertical dropdown menu" data-dropdown-menu>
+        
+            <li><a href="/forum" class="hide-for-small-only">Forums</a>         
+            <a href="/forum" class="show-for-small-only submenu-button">Forums</a>
+            
+                <ul class="menu submenu show-for-small-only" style="display:none;">
+                    <li><a href="/forum/"><strong>Browse Forums</strong></a></li>         
+                    <li><a href="/forum/active.asp">Active Topics</a></li>
+                    <li><a href="/forum/newpost.asp">Post New Topic</a></li>
+                    <!--<li><a href="/groups">Groups</a></li>-->
+                    <li><a href="/forum/subscription_list.asp">Subscriptions</a></li>
+                    <li><a href="/forum/moderators.asp">Moderators</a></li>
+                    <li><a href="/forum/rules.asp">Rules &amp; Guidelines</a></li>
+                    <li><a href="/groups/">Groups</a></li>
+                </ul>
+                
+                <div class="row hide-for-small-only">
+                    <div class="small-4 columns">
+                        <ul class="menu vertical">
+                            <li><a href="/forum/" class="bold">Browse Forums</a></li>
+                            <li><a href="/forum/active.asp">Active Topics</a></li>
+                            <li><a href="/forum/newpost.asp">Post New Topic</a></li>
+                            <!--<li><a href="/groups">Groups</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="small-4 columns">
+                        <ul class="menu vertical">
+                            <li><a href="/forum/subscription_list.asp">Subscriptions</a></li>
+                            <li><a href="/forum/moderators.asp">Moderators</a></li>
+                            <li><a href="/forum/rules.asp">Rules &amp; Guidelines</a></li>
+                            <li><a href="/groups/">Groups</a></li>
+                        </ul>
+                    </div>
+                    <div class="small-4 columns">
+                        <!--<h3>Search the Forums</h3>-->
+                        
+                        
+                        <form action="/pages/search-parse.asp">
+                            <input type="hidden" name="cx" value="003343045014085398078:ckok8j6qu0e" />
+                            <input type="hidden" name="cof" value="FORID:9" />
+                            <input type="hidden" name="ie" value="UTF-8" />     
+                                            
+                            <input name="query" type="text" style="margin-bottom:7px;" autocomplete="off" placeholder="Search Forums"/>
+                            <p style="margin:0px;">
+                            <label style="display:inline"><input type="radio" name="refine" value="forum" checked="checked" />All Topics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <label style="display:inline"><input type="radio" name="refine" value="active_topics" />Active Topics</label>
+                            </p>
+                            <input type="submit" name="submit" value="Search" style="width:100%" class="button" />
+
+                        </form>
+
+                        
+                        
+                        
+                    
+                    </div>
+                </div><!--row hide-for-small-only--> 
+            </li>
+            <li>
+                <a href="/classifieds/" class="hide-for-small-only">Marketplace</a>
+                <a href="/classifieds/" class="show-for-small-only submenu-button">Marketplace</a>
+                
+                <ul class="menu submenu show-for-small-only" style="display:none;">
+                    <li><a href="/classifieds/">Classifieds</a></li> 
+                    
+                    
+                        <li><a href="/classifieds/start.asp">Post New Ad</a></li>
+                      
+                 
+                    
+                    <li><a href="/classifieds/rules/">Classified Rules</a></li>
+                    <li><a href="/luthiers/">Luthier Search</a></li>
+                    <li><a href="/store/">Hangout Store</a></li>
+                </ul>
+                
+                <div class="row hide-for-small-only">
+                    <div class="small-4 columns">
+                        <ul class="menu vertical">
+
+                            <li><a href="/classifieds/" class="bold">Classifieds</a></li>
+                            
+                                <li><a href="/classifieds/start.asp">Post New Ad</a></li>
+                                                    
+                            
+                            <li><a href="/classifieds/rules/">Classified Rules</a></li>
+                            <li><a href="/classifieds/nofraud.asp">Avoiding Scams</a></li>
+
+                            
+                        </ul>
+
+                         <div  id="market_navMain">
+                            <!--<h3>Search the Marketplace</h3>-->                                
+                                                
+                            <input name="query" type="text" id="market_quicksearch" placeholder="Search Classifieds"/>
+                        </div>
+                    </div>
+                    <div class="small-4 columns">
+                        <ul class="menu vertical">
+                            <!-- Main Classifieds Categories -->
+                            <h3>Browse Classifieds</h3>
+                            
+                                <li><a href="/classifieds/search.asp?m=bycat&v=1">Banjos</a></li>
+                                
+                                <li><a href="/classifieds/search.asp?m=bycat&v=2">Banjo Parts</a></li>
+                                
+                                <li><a href="/classifieds/search.asp?m=bycat&v=3">Banjo Accessories</a></li>
+                                
+                                <li><a href="/classifieds/search.asp?m=bycat&v=8">Banjo-Related Services</a></li>
+                                
+                                <li><a href="/classifieds/search.asp?m=bycat&v=5">Instructional Materials</a></li>
+                                
+                                <li><a href="/classifieds/search.asp?m=bycat&v=6">Music (CD's, LP's, etc)</a></li>
+                                
+                                <li><a href="/classifieds/search.asp?m=bycat&v=4">Internet Auctions</a></li>
+                                
+                                <li><a href="/classifieds/search.asp?m=bycat&v=7">Other Instruments</a></li>
+                                
+                            
+                        </ul>
+                    </div>
+                    <div class="small-4 columns" id="market_navMain">
+                        <ul class="menu vertical">
+
+                            <li><a href="/luthiers/" class="bold">Luthier Search</a></li>
+                            <li><a href="/store/" class="bold">Hangout Merchandise</a></li>
+                            
+                        </ul>
+
+                    </div>
+                </div><!--row hide-for-small-only-->  
+            </li>
+            
+            <li>
+                <a href="/lessons" class="hide-for-small-only">Learn</a>
+                <a href="/lessons" class="show-for-small-only submenu-button">Learn</a>
+                
+                <ul class="menu submenu show-for-small-only" style="display:none;">
+                    <li><a href="/tab/">Tabs</a></li>
+                    <li><a href="/lessons/catalog/">Video Lessons</a></li>
+                    <li><a href="/teachers/">Find a Teacher</a></li>
+                     <li><a href="/lessons/">Lesson Links</a></li>
+                     <li><a href="/lessons/video/">More Video Lessons</a></li>
+                     
+                     <li><a href="/events/contests.asp">The Banjo Challenge</a></li>
+                     
+                </ul>
+                
+                <div class="row hide-for-small-only">
+                    <div class="small-4 columns">
+                        <!--<h3>Tabs</h3>-->
+                         <div  id="tab_navMain">
+                            <!--<h3>Search the Marketplace</h3>-->                             
+                                                
+                            <input name="query" type="text" id="tab_quicksearch" placeholder="Search Tabs"/>
+
+                        </div>
+
+                        <ul class="menu vertical">
+                            <li><a href="/tab/">Banjo Tab Library</a></li>
+                               
+                        </ul>
+                    </div>
+                    <div class="small-4 columns">
+                        <h3><a href="/lessons/catalog/">Video Lessons</a></h3>
+                        <p>DVD-quality lessons (including tabs/sheet music) available for immediate viewing on any device.</p>
+                       
+                        <ul class="menu vertical">
+                            <li><a href="/lessons/">Lesson Links</a></li>
+                            <li><a href="/lessons/video/">More Video Lessons</a></li>
+                            
+                     <li><a href="/events/contests.asp">The Banjo Challenge</a></li>
+                     
+                   
+                        </ul>
+                    </div>
+                    <div class="small-4 columns">
+                        <h3><a href="/teachers/">Find a Teacher</a></h3>
+                        <p>Take your playing to the next level with the help of a local or online banjo teacher.</p>
+                        
+                        
+                        <h3><a href="/lists/">Email Newsletter</a></h3>
+                       <p>Weekly newsletter includes free lessons, favorite member content, banjo news and more.</p>
+                      
+                    </div>
+                </div><!--row hide-for-small-only-->
+            </li>
+            <li>
+            
+                <a href="javascript:;" class="hide-for-small-only">Media</a>
+                <a href="javascript:;" class="show-for-small-only submenu-button">Media</a>
+                
+                <ul class="menu submenu show-for-small-only" style="display:none;">
+                    <li><a href="/media">Newest Additions</a></li>
+                    <li><a href="/myhangout/videos.asp">Video Library</a></li>
+                    <li><a href="/myhangout/music-search.asp">MP3 Library</a></li>
+                    <li><a href="javascript:;" onClick="var window_MEDIA=window.open('https://www.banjohangout.org/myhangout/media-player/audio_player.asp' , 'mediawindow','resizable=yes,WIDTH=480,HEIGHT=680');window_MEDIA.focus();return false;">Jukebox</a></li>
+                </ul>
+                
+                <div class="row narrow hide-for-small-only">
+                    <div class="small-12 columns">
+                        <ul class="menu vertical">
+
+                          
+                            <div class="small-12 columns">
+
+                                <li><a href="/media">Newest Additions</a></li>
+                                <li><a href="/myhangout/videos.asp">Video Library</a></li>
+                                <li><a href="/myhangout/music-search.asp">MP3 Library</a></li>
+                                <li><a href="javascript:;" onClick="var window_MEDIA=window.open('https://www.banjohangout.org/myhangout/media-player/audio_player.asp' , 'mediawindow','resizable=yes,WIDTH=480,HEIGHT=680');window_MEDIA.focus();return false;">Jukebox </a></li>
+                            </div>
+                            <div class="small-6 columns">
+                               
+                            </div>
+
+                        </ul>
+                    </div>
+                </div><!--row hide-for-small-only--> 
+            </li>
+            <li><a href="javascript:;" class="hide-for-small-only">More</a>
+                <a href="javascript:;" class="show-for-small-only submenu-button">More</a>
+                
+                <ul class="menu submenu show-for-small-only" style="display:none;">
+                    <li><a href="/myhangout/">Member Homepages</a></li>
+                    <li><a href="/blogcat/0">Blogs</a></li>
+                    <li><a href="/help/helpFull.asp">Help/FAQ</a></li>
+                    <li><a href="/reviews/">Reviews</a></li>
+                    <li><a href="/links/">Links</a></li>
+                    <li><a href="/events/">Calendar</a></li>
+                    <li><a href="/drawing/">Enter the Drawing</a></li>
+                    <li><a href="/store/details.asp?id=10">Players Union</a></li>
+                    <li><a href="/sponsors/donate.asp">Donate</a></li>
+                    <li><a href="/sponsors/tell-a-friend.asp">Tell a Friend</a></li>
+                    <li><a href="/sponsors/">Advertising</a></li>
+                    <li><a href="/sponsors/list.asp">Our Sponsors</a></li>
+                    <li><a href="/pages/contact.asp">Contact Us</a></li>
+                </ul>
+                
+                <div class="row medium hide-for-small-only">
+                    <div class="small-6 columns">
+                        <ul class="menu vertical">
+                            
+                                <li><a href="/myhangout/">Member Homepages</a></li>
+                                <li><a href="/blogcat/0">Blogs</a></li>
+                            
+
+                            
+                            <li><b><a href="/reviews/">Reviews</a></b></li>
+                            
+                            
+                            <li><b><a href="/events/">Calendar</a></b></li>
+                            
+                            <li><a data-open="helpModal">Help/FAQ</a></li>
+                            <li><a href="/links/">Links</a></li>
+                            <li><a href="/drawing/">Enter the Drawing</a></li>
+                        </ul>
+                    </div>
+                    <div class="small-6 columns">
+                        <h3>Support this Site</h3>
+                        <ul class="menu vertical">
+                            <li><a href="/store/details.asp?id=10">Players Union</a></li>
+                            <li><a href="/sponsors/donate.asp">Donate</a></li>
+                            <li><a href="/sponsors/tell-a-friend.asp">Tell a Friend</a></li>
+                            <li><a href="/sponsors/">Advertising</a></li>
+                            <li><a href="/sponsors/list.asp">Our Sponsors</a></li>
+                            <li><a href="/pages/contact.asp">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div><!--row hide-for-small-only-->
+            </li>
+            <li class="clearfix">
+                <form id="cse-search-box" onsubmit="if ($('#mainSearch').val()=='') {return false;}" autocomplete="off" name="searchform" action="/pages/search-parse.asp">
+                    
+
+
+            <script>
+                function iosScrollFix(el) {    
+
+                var ua = window.navigator.userAgent;
+                var iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
+                var webkit = !!ua.match(/WebKit/i);
+                var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
+
+                if (iOSSafari) {
+
+                    var rect = el.getBoundingClientRect(),
+                    scrollTop = window.pageYOffset;
+                    console.log(scrollTop);
+
+                    if(window.innerHeight > window.innerWidth){
+                        window.scrollTo(0,rect.top + scrollTop - 170);
+                    } else {
+                        window.scrollTo(0,rect.top + scrollTop - 100);
+                    }
+                }
+            }</script>
+
+                    <input type="hidden" name="cx" value="003343045014085398078:ckok8j6qu0e" />
+                    <input type="hidden" name="cof" value="FORID:9" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+
+                    <input placeholder="Search" onFocus="iosScrollFix(this);" autocomplete="off" name="query" id="mainSearch" type="text"/>                       
+                    <button name="sa" VALUE="Search"><img src="/img/icon-search.png" /></button>
+                    
+
+                     <div id="searchFilter">
+                        Restrict search to:<br>
+                        <label><input type="radio" name="refine" value="forum" checked> Forum</label>
+                        <label><input type="radio" name="refine" value="classifieds"> Classifieds</label>
+                        <label><input type="radio" name="refine" value="tab"> Tab</label>
+                        <label><input type="radio" name="refine" value="other"> All other pages</label>
+                     </div>
+                  
+                </form>
+            </li>
+        </ul><!--dropdown menu-->
+    
+			<div class="rule gradient hide-for-small-only"></div>
+			
+			
+			<div class="premiere-sponsors">
+				<div class="hide-for-small-only"><p>Premier Sponsors</p></div>
+				<ul class="menu vertical">
+					
+			
+				<li class="grow"><a target="_blank" href="/pages/sponsors/counter.asp?goto=https://www.murphymethod.com/-[]-adid=796" title="The Murphy Method"><img width="150" alt="The Murphy Method" src="/img/ads/small/murphy.gif"></a></li>
+			
+				<li class="grow"><a target="_blank" href="/pages/sponsors/counter.asp?goto=https://www.elderly.com/acoustics/banjos///utm_source=banjo%20hangoutAMPERutm_medium=adsAMPERutm_campaign=banjohangout1-[]-adid=799" title="Elderly Instruments - Since 1972"><img width="150" alt="Elderly Instruments - Since 1972" src="/img/ads/small/elderly-50th.png"></a></li>
+			
+				<li class="grow"><a target="_blank" href="/pages/sponsors/counter.asp?goto=https://crossrockcase.com/product-category/folk-instrument-cases/banjo-cases/ -[]-adid=908" title="CROSSROCK"><img width="150" alt="CROSSROCK" src="/img/ads/small/crossrock.png"></a></li>
+			
+				<li class="grow"><a target="_blank" href="/pages/sponsors/counter.asp?goto=https://www.deeringbanjos.com/-[]-adid=800" title="Deering Banjos"><img width="150" alt="Deering Banjos" src="/img/ads/small/deering.jpg"></a></li>
+			
+				<li class="grow"><a target="_blank" href="/pages/sponsors/counter.asp?goto=https://goldtonemusicgroup.com/goldtone/instruments/ob-12///utm_source=banjohangoutAMPERutm_medium=website-banner-linkAMPERutm_campaign=OB-12-Top-Tension-Ad-Banjo-Hangout-[]-adid=876" title="Gold Tone"><img width="150" alt="Gold Tone" src="/img/ads/small/GT-OB-12-Top-TEnsion-Banner-2.jpg"></a></li>
+			
+
+
+				</ul>
+			</div>
+			<!--premiere-sponsors-->
+			
+
+
+			<div class="social-icons">
+				<a href="#"><i class="fa fa-facebook fa-lg"></i></a><a href="/feeds"><i class="fa fa-feed fa-lg"></i></a>
+			</div><br>
+		</div>
+	</div><!--left-column-->
+
+	<div id="fixed-width-left" class="small-12 columns" data-equalizer-watch="main">
+		<div class="expanded collapse row" data-equalizer>
+
+		
+			<div class='row rowPadded addtop' style="border-bottom:1px solid black;background-size:cover;background-repeat:no-repeat;background-image:linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),url('https://banjohangout.org/img/ads/crossrock.jpg');">
+			<div class='columns small-12 medium-12'><p class='noSpacing' style="line-height:1.2;">
+				<a href='/pages/sponsors/counter.asp?goto=https://crossrockcase.com/product-category/folk-instrument-cases/banjo-cases/ -[]-adid=907'><img style='float:right;margin-left:10px;border:1px solid black;' alt='Please visit our sponsor' width='100' src='/img/ads/crossrock.jpg'></a>
+				<a style='color:#224488;text-decoration:underline;font-weight:bold;' href='/pages/sponsors/counter.asp?goto=https://crossrockcase.com/product-category/folk-instrument-cases/banjo-cases/ -[]-adid=907'>CROSSROCK Air Carbon Banjo Case</a><br>
+				<span style="font-size:11px;"><i><a style="text-decoration:none;color:#000;" href='/pages/sponsors/counter.asp?goto=https://crossrockcase.com/product-category/folk-instrument-cases/banjo-cases/ -[]-adid=907'>Lightweight, durable, stylish protection. Discover more cases and accessories for your banjo passion!</a></i></span></p>
+			</div>
+			</div>					
+				
+		
+
+		<div id="center-column" class="small-12 medium-8 large-9 columns" style="width:100%" data-equalizer-watch>
+
+		<!-- center column begin -->
+
+<div class="row">
+	<div class="column">
+
+
+		
+			<div ID="pms" style="padding:10px;"><span style="color:white;font-family:helvetica, arial, sans-serif"><a style="color:white;text-decoration:none;" href="/login/privacy-policy.asp">We use cookies to ensure that we give you the best experience on our website. If you continue, we will assume that you agree to <span style="text-decoration: underline;">our privacy policy</span> which includes details of cookie usage.
+			 </a></span> <span style="color:white;font-family:helvetica, arial, sans-serif;font-size:11px;"><a style="color:#FFFFAA" href="/pages/hidecookienotice.asp">Hide&nbsp;this&nbsp;notice</a></span></div><br />
+		
+
+	</div>
+</div>
+
+
+<div id="secondary-nav" class="row padding">
+    <div class="small-12 columns">
+	
+		<h2 class="float-left">Tab Detail</h2>
+	
+        
+        
+    </div>
+</div>
+<!--secondary-nav row-->
+
+
+
+
+<div class="row">
+    <div class="columns">
+
+
+<script language="Javascript" src="/global/ratings.js"></script>
+
+
+<script type="text/javascript" language="javascript">
+
+$(function() {
+	
+	$("#quicksearch").autocomplete({
+		minLength: 2,
+		source: function(request, response) {
+			$.getJSON("/tab/tab_search_ajax.asp", {q: request.term, getTop: 15}, response);
+		},
+		open: function( event, ui) {
+			if ($('li.ui-menu-item').size()!='1') {
+				$('li.ui-menu-item').addClass('zebra');
+
+				if ($('.ui-autocomplete > li').length > 15) {
+					var tempVal = $('.ui-widget-content li:last').text();
+					$('.ui-widget-content li:last').remove();
+					$('<li class="view-all zebra" role="menuitem"><a class="ui-corner-all" tabindex="-1" href="/w/tab/browse/m/bykeyword/v/' + escape($(this).val()) + '"><strong>' + tempVal + '</strong></a></li>').insertAfter($('li.ui-menu-item:last'));
+				}
+
+				//set width of dropdown to width of input (wonder why not automatic?)
+				$('.ui-widget-content').css('width',$(this).css('width'));
+
+				//remove blue focus from main elements when hovering over 'other items' link
+				$('.ui-corner-all').mouseenter(function() {$('.ui-menu-item-wrapper').removeClass('ui-state-active');})
+			}
+		},
+		 select: function( event, ui ) { 
+		 	if (ui.item.value!='0') {
+				location.href='/tab/browse.asp?m=detail&v=' + ui.item.value;
+			}
+			return false;
+		},
+		 focus: function( event, ui ){
+			 return false;
+		 }
+	});
+		
+});
+
+$(window).resize(function() {
+    $(".ui-autocomplete").css('display', 'none');
+});
+
+</script>
+
+
+		
+	<div class="row">
+		<div class="column small-12">
+			<input placeholder="Quick Search" type="text" id="quicksearch" style="margin-bottom:0px" />
+
+			<a href="javascript:;" title="View Advanced Search Options" class="advancedSearchLink header2" onclick="$('#advancedSearch').toggle('medium'); $('.fa-sort-asc, .fa-sort-desc').toggle();"><h3>Advanced Search <i class="fa fa-sort-desc" aria-hidden="true"></i><i class="fa fa-sort-asc" aria-hidden="true" style="display: none"></i></h3></a>
+
+		</div>
+	</div>
+
+	<div class="row adForm" id="advancedSearch" style="display:none">
+		<div class="column">
+			<form method="get" action="/tab/browse.asp" style="margin:0px">
+				<input type="hidden" name="m" value="advanced">
+
+				<div class="row rowPadded zebra">
+					<div class="column small-12 medium-3">Genre</div>
+					<div class="column small-12 medium-9">
+						
+						
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="1"> Bluegrass</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="2"> Classical</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="12"> Country</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="3"> Fiddle/Celtic/Irish</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="11"> Folk</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="4"> Jazz</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="10"> Old Time</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="5"> Other</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="6"> Popular</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="7"> Ragtime</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="13"> Rock</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="8"> Traditional</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabGenreID" value="9"> Unknown/None Chosen</label></div>
+							
+						
+					</div>
+				</div>
+
+				<div class="row rowPadded zebra">
+					<div class="column small-12 medium-3">Playing Style</div>
+					<div class="column small-12 medium-9">
+						
+							<div class="floatedListMed"><label><input type="checkbox" name="TabStyleID" value="1"> Unknown/None Chosen</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabStyleID" value="3"> Bluegrass (Scruggs) </label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabStyleID" value="5"> Clawhammer and Old-Time</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabStyleID" value="6"> 4-String (Tenor/Plectrum)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabStyleID" value="7"> Classical</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabStyleID" value="8"> Other</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabStyleID" value="9"> Backing Track</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabStyleID" value="10"> Minstrel (Stroke Style)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabStyleID" value="11"> Classic</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabStyleID" value="12"> Exercises and Licks</label></div>
+							</select>
+					</div>
+				</div>
+
+				<div class="row rowPadded zebra">
+					<div class="column small-12 medium-3">Tuning</div>
+					<div class="column small-12 medium-9">
+						
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="1">  Standard Open G (gDGBD)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="15"> aDGBD</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="9"> Chicago (DGBE)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="5"> Cm (gCGCEb)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="18"> Dm (aDFAD)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="4"> Double C (gCGCD)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="14"> Drop C (gCGBD)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="6"> Open C (gCGCE)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="17"> Open D (aDF#Ad)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="16"> Open D (f#DF#Ad)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="2"> Open Gm (gDGBbD)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="11"> Plectrum Open G (DGBD)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="10"> Plectrum Standard (CGBD)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="3"> Sawmill (gDGCD)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="13"> Tenor C (CGdg)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="12"> Tenor G (DGdg)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="8"> Tenor Irish (GDAE)</label></div>
+							
+							<div class="floatedListMed"><label><input type="checkbox" name="TabTuningID" value="7"> Tenor Standard (CGDA)</label></div>
+							</select>
+					</div>
+				</div>
+
+				<div class="row rowPadded zebra">
+					<div class="column small-12 medium-3">Key</div>
+					<div class="column small-12 medium-9">
+						
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="1"> A</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="2"> A#/Bb</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="3"> B</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="4"> C</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="5"> C#/Db</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="6"> D</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="7"> D#/Eb</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="8"> E</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="9"> F</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="10"> F#/Gb</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="11"> G</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="12"> G#/Ab</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="13"> Am</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="14"> A#/Bbm</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="15"> Bm</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="16"> Cm</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="17"> C#/Dbm</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="18"> Dm</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="19"> D#/Ebm</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="20"> Em</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="21"> Fm</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="22"> F#/Gbm</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="23"> Gm</label></div>
+							
+							<div class="floatedListSm"><label><input type="checkbox" name="TabKeyID" value="24"> G#/Abm</label></div>
+							</select>
+					</div>
+				</div>
+
+				<div class="row rowPadded zebra">
+					<div class="column small-12 medium-3">Difficulty</div>
+					<div class="column small-12 medium-9">
+
+						<div class="floatedListSm"><label><input type="checkbox" name="TabDifficulty" value="1">Beginner</label></div>
+
+						<div class="floatedListSm"><label><input type="checkbox" name="TabDifficulty" value="2">Intermediate</label></div>
+
+						<div class="floatedListSm"><label><input type="checkbox" name="TabDifficulty" value="3"> Expert</label></div>
+					
+					</div>
+				</div>
+
+				<div class="row rowPadded">
+					<div class="column small-12 text-right">
+						<input name="submit" type="submit" style="margin:0px" class="button" value="Search">
+					</div>
+				</div>		
+
+			</form>
+			
+		</div>
+	</div>
+		
+	<div class="row rowPadded">
+		<div class="column small-12 medium-9">
+			<h2>Alphabetical: <span style="font-size:14px"><strong><a href="/w/tab/browse/m/byletter/v/A" title="Browse by letter A">A</a>
+			<a href="/w/tab/browse/m/byletter/v/B" title="Browse by letter B">B</a>
+			<a href="/w/tab/browse/m/byletter/v/C" title="Browse by letter C">C</a>
+			<a href="/w/tab/browse/m/byletter/v/D" title="Browse by letter D">D</a>
+			<a href="/w/tab/browse/m/byletter/v/E" title="Browse by letter E">E</a>
+			<a href="/w/tab/browse/m/byletter/v/F" title="Browse by letter F">F</a>
+			<a href="/w/tab/browse/m/byletter/v/G" title="Browse by letter G">G</a>
+			<a href="/w/tab/browse/m/byletter/v/H" title="Browse by letter H">H</a>
+			<a href="/w/tab/browse/m/byletter/v/I" title="Browse by letter I">I</a>
+			<a href="/w/tab/browse/m/byletter/v/J" title="Browse by letter J">J</a>
+			<a href="/w/tab/browse/m/byletter/v/K" title="Browse by letter K">K</a>
+			<a href="/w/tab/browse/m/byletter/v/L" title="Browse by letter L">L</a>
+			<a href="/w/tab/browse/m/byletter/v/M" title="Browse by letter M">M</a>
+			<a href="/w/tab/browse/m/byletter/v/N" title="Browse by letter N">N</a>
+			<a href="/w/tab/browse/m/byletter/v/O" title="Browse by letter O">O</a>
+			<a href="/w/tab/browse/m/byletter/v/P" title="Browse by letter P">P</a>
+			<a href="/w/tab/browse/m/byletter/v/Q" title="Browse by letter Q">Q</a>
+			<a href="/w/tab/browse/m/byletter/v/R" title="Browse by letter R">R</a>
+			<a href="/w/tab/browse/m/byletter/v/S" title="Browse by letter S">S</a>
+			<a href="/w/tab/browse/m/byletter/v/T" title="Browse by letter T">T</a>
+			<a href="/w/tab/browse/m/byletter/v/U" title="Browse by letter U">U</a>
+			<a href="/w/tab/browse/m/byletter/v/V" title="Browse by letter V">V</a>
+			<a href="/w/tab/browse/m/byletter/v/W" title="Browse by letter W">W</a>
+			<a href="/w/tab/browse/m/byletter/v/X" title="Browse by letter X">X</a>
+			<a href="/w/tab/browse/m/byletter/v/Y" title="Browse by letter Y">Y</a>
+			<a href="/w/tab/browse/m/byletter/v/Z" title="Browse by letter Z">Z</a>
+			&nbsp;<a href="/tab/browse.asp?m=byletternum&v=num" title="Browse by numeric">#</a></strong></h2>			
+		</div>
+		<div class="column small-12 medium-3">
+			<h2><a href="/w/tab/browse/m/newest/banjo/tabs/">Newest Additions</a></h2>
+		</div>
+	</div>
+
+	<div class="row rowPadded">
+		
+		<div class="column small-12 text-center">
+			
+				You must <a href="/login/">log into your myHangout account</a> to post a tab.
+			
+		</div>
+	</div><div class='zebra'></div>
+
+
+	<div class="row zebra rowPadded">
+		<div class="column small-12">
+			<h2 class='noSpacing bold'>Dear Old Dixie</strong></h2><p class='noSpacing'><span class='small'><strong>Genre:</strong> Bluegrass&nbsp;&nbsp;<strong>Style:</strong> Bluegrass (Scruggs) &nbsp;&nbsp;<strong>Key:</strong> G&nbsp;&nbsp;<strong>Tuning:</strong>  Standard Open G (gDGBD)&nbsp;&nbsp;<strong>Difficulty:</strong> Intermediate<br>Posted by <a href='/my/bango'>bango</a>, updated: 9/6/2016
+
+	<a class="hide-print" href="javascript:;" onClick="alert('Please sign in before linking content to a group.');" title="Link This Content to a Group"><img style="position:relative; top:3px; " src="/global/img/link-to-group.png" title="Link This Item to Your Groups"></a>
+
+<br><strong>Download:</strong> <a href='https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/tab-dear-old-dixie-20545-112514692016.tef'>TABLEDIT</a></span><br><i>Notes: My first tab!</i></p>
+		</div>
+	</div>
+
+
+		<div class="row zebra rowPadded">
+			<div class="column small-12">
+				<p>
+		
+	
+	
+		<span style="color:#666666;"><a name="comments"></a><b>
+			Be the first to comment 
+		</b></span>
+
+		
+		
+		</p>
+		
+		
+
+		</div></div>
+
+		<a name="addcomment"></a>
+		
+		<p>You must <a href="/login/">sign into your myHangout account</a>
+before you can post comments.</p>
+		
+		
+
+		
+
+			
+	<br>
+	
+	
+	
+
+
+
+</div></div>
+
+
+			<div id="footer" class="row">
+				<div class="small-10 small-offset-1 columns">
+					<div class="rule gradient"></div>
+					<div class="row padding">
+						<div class="small-4 columns">
+							<h4>Top Links</h4>
+							<ul class="menu vertical">
+								<li><a href="/forum/">Forum Home</a></li>
+								<li><a href="/classifieds/">Classified Ads</a></li>
+								<li><a href="/tab/">Tab Archives</a></li>						
+							</ul>
+						</div>
+						
+						<div class="small-4 columns">
+							<h4>Support this Site</h4>
+							<ul class="menu vertical">
+								<li><a href="/store/details.asp?id=10">Players Union</a></li>
+	                            <li><a href="/sponsors/donate.asp">Donate</a></li>
+								<li><a href="/sponsors/tell-a-friend.asp">Tell a Friend</a></li>
+	                            <li><a href="/sponsors/">Advertising</a></li>
+	                            <li><a href="/sponsors/list.asp">Our Sponsors</a></li>
+	                            <li><a href="/pages/contact.asp">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="small-4 columns">
+							<h4>More Hangouts</h4>
+							<ul class="menu vertical">
+								
+								<li><A href="https://www.resohangout.com" class="leftnav">Dobro</a></li>
+								
+								<li><A href="https://www.fiddlehangout.com" class="leftnav">Fiddle</a></li>
+								
+								<li><A href="https://www.flatpickerhangout.com" class="leftnav">Guitar</a></li>
+								
+								<li><A href="https://www.mandohangout.com" class="leftnav">Mandolin</a></li>
+								
+							</ul>
+						</div>
+					</div><!--row-->
+					
+				</div>
+			</div><!--footer row-->
+
+			<div><p align="center"><!--<a href="#">Sitemap</a>  |  --><a href="/login/terms.asp">Terms of Use</a>  |  <a href="/login/privacy-policy.asp">Privacy Policy</a>  |  <a onclick="__tcfapi('displayConsentUi', 2, function(data,status){})">Privacy Consent (EU/GDPR Only)</a></p>
+
+				<p align="center" ID="mspa-footer-html-id" align="center"></p>
+
+			
+				<p align="center">Copyright 2026 Banjo Hangout. All Rights Reserved.</p>
+					<br><br><br><br></div>
+
+
+		</div><!--center-column-->
+
+		
+	</div><!--row-->
+</div><!--fixed-width-left-->
+
+
+
+<div id="right-column" class="columns" data-equalizer-watch="main">
+			<div id="scrollerRight">
+				
+				<div class="large-login">
+				
+    <div class="user-profile expanded pad10Right pad10Left row">
+        <div class="small-12 columns">
+            <div class="show-for-small-only"><br></div>
+
+            <form method="post" action="/login/" name="thisform">
+
+                
+                    <input type="hidden" name="redir" value="/tab/browse.asp?m=detail&v=20545">
+                    <input type="hidden" name="refer" value="">
+                
+                
+                <input name="Email" type="text" size="20" maxlength="50" placeholder="Email" value="" />
+                <input class="noMargin" name="Password" type="password" size="20" maxlength="50" placeholder="Password" />
+
+                <div class="row collapse">
+                    <div class="columns small-12 text-left">
+                        <p class="noMargin small"><label for="member_login_save_password" class="white"><input id="member_login_save_password" name="SavePassword" type="checkbox" value="true" checked class="noSpacing" /> Save Password</label></p>
+                    </div>
+                </div>                            
+
+                <div class="row collapse">
+
+                    <div class="column small-12">
+                        <input class="small button noMargin" style="width:100%;" name="submit" type="submit" value="Log In" />
+                    </div>                                       
+                </div>
+
+                <div class="row collapse">
+                    <div class="column small-12 text-center">
+                        <p class="small "><a href="/pages/login/forgot.asp">Forgot Password</a></p>
+
+              
+
+                        <input class="small button noMargin"  style="width:100%;background-color:#229966;margin-bottom:20px;" name="submit" type="button" onclick="location.href='/login/profile.asp';" value="Sign Up" />
+                    </div>
+                </div>      
+
+            </form>
+        </div>
+    </div>
+    
+				</div>
+
+				
+			<br><div class='row show-for-large-up'>
+			<div class='columns small-12 medium-12 show-for-large-up'>
+				<a href='/pages/sponsors/counter.asp?goto=https://crossrockcase.com/product-category/folk-instrument-cases/banjo-cases/ -[]-adid=907'><img style='padding-bottom:10px;' alt='Please visit our sponsor' width='200' src='/img/ads/crossrock.jpg'></a>
+				<p class='noSpacing' align="center"><a style='color:#224488;text-decoration:underline;' href='/pages/sponsors/counter.asp?goto=https://crossrockcase.com/product-category/folk-instrument-cases/banjo-cases/ -[]-adid=907'><b>CROSSROCK Air Carbon Banjo Case</b></a></p>
+			<p class='noSpacing'><i><a style="text-decoration:none;color:#000" href='/pages/sponsors/counter.asp?goto=https://crossrockcase.com/product-category/folk-instrument-cases/banjo-cases/ -[]-adid=907'>Lightweight, durable, stylish protection. Discover more cases and accessories for your banjo passion!</a></i></p>
+			</div>
+			</div>
+<br>
+			
+
+				<!--row-->
+
+				
+
+			</div>
+
+		</div><!--right-column-->
+
+
+</div><!--row-->
+
+<div class="reveal" id="helpModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  
+	<h1 class="center">Hangout Network Help</h1>
+
+<h3 class="center"><a href="#" onClick="getTopic(true,0,0);return false;">View All Topics</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" onClick="getTopic(false,0,0);return false;">View Categories</a></h3>
+<div id="topicContainer">
+
+</div>
+<div align="center">
+	<input type="button" value="Close Window" data-close class="button submit">
+</div>
+
+<script>
+	$(function(){
+		getTopic(true, 0, 0);
+	});
+
+	function getTopic(prmAllTopics, prmCategoryID, prmTopicID) {
+		var url = "/pages/help/helpajax.asp";
+		var qs = '';
+		if (prmAllTopics == true) {
+			qs = buildQS(qs, 'allTopics=1');
+		}
+		if (prmCategoryID > 0) {
+			qs = buildQS(qs, 'id=' + prmCategoryID);
+		}
+		if (prmTopicID > 0) {
+			qs = buildQS(qs, 'topicid=' + prmTopicID);
+		}
+		console.log(url + qs);
+		$.ajax(url + qs).done(
+			function(data) {
+				$("#topicContainer").html(data);
+			}
+		);
+	}
+
+	function buildQS(prmQS, prmText) {
+		var retVal;
+		if (prmQS == "") {
+			retVal = "?" + prmText;
+		} else {
+			retVal = "&" + prmText;
+		}
+		return retVal;
+	}
+</script>
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+
+<script src="/global/functions.js?v=1.16"></script>
+<script src="/global/onLoad.js?v=1.09"></script>
+
+<!--chocolat lightbox-->
+<script src="/global/js/jquery.chocolat.min.js"></script>
+<script src="/global/js/vendor/what-input.js"></script>
+<script src="/global/js/vendor/foundation.js?v=1.01"></script>
+<script src="/global/js/app.js"></script>
+
+<script src="/global/js/jquery.fitvids.js"></script>
+<script src="/global/js/jquery.dialogOptions.js?v=1.02"></script>
+
+<!--mentionsInput-->
+<script src='/global/js/jquery.events.input.js' type='text/javascript'></script>
+<script src='/global/js/jquery.elastic.js' type='text/javascript'></script>
+<script src='/global/js/jquery.mentionsInput.js?v=1.03' type='text/javascript'></script>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3145817-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3145817-1');
+</script>
+
+
+<script>
+$(function() {
+	//shorthand onLoad call	
+
+	$('.chocolat-parent').Chocolat( {
+		imageSize     : 'contain',
+		loop           : true,
+	});
+
+	$('.submenu-button').on('click touchend', function(e) {
+		e.preventDefault();
+
+		currentMenu = $(this).next()
+
+		$('.submenu').not(currentMenu).slideUp();
+		currentMenu.slideToggle();
+	});
+
+});
+</script>
+
+
+<div data-ad-tagid="LemPvcMNPWnpgCNFOb7l" data-zid="1284" data-name="Banjohangout.org_728x90!Adhesion.ZONE V2"></div>
+
+
+
+
+</body>
+</html>
+
+
+
+<span style="display:none;">0.1796875</span>

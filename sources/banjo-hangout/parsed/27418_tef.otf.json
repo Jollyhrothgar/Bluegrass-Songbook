@@ -3,7 +3,8 @@
   "metadata": {
     "title": "Salt Creek",
     "time_signature": "2/4",
-    "tempo": 100
+    "tempo": 100,
+    "key": "G"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -2679,8 +2680,9 @@
     ]
   },
   "x_source": {
-    "type": "local",
-    "source_file": "27418.tef",
-    "converted_at": "2026-07-02T11:24:53.234343"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-salt-creek-27418-585141992024.tef",
+    "author": "Yohansen",
+    "converted_at": "2026-07-26T22:20:06.199240"
   }
 }

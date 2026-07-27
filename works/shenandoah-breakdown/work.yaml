@@ -1,19 +1,32 @@
 id: shenandoah-breakdown
-title: "Shenandoah Breakdown"
-tags: [Instrumental, Bluegrass, Scruggs]
+title: Shenandoah Breakdown
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
 parts:
-  - type: tablature
-    instrument: banjo
-    format: otf
-    file: banjo.otf.json
-    default: true
-    provenance:
-      source: banjo-hangout
-      source_id: '11245'
-      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/shenandoah_breakdown-2080.tef
-      author: "schlange"
-      imported_at: '2026-01-04'
-      tef_format: v2
-      tef_time_sig: 4/4
-      tef_tracks: 4
-      tef_events: 1589
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '11245'
+    source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/shenandoah_breakdown-2080.tef
+    author: schlange
+    imported_at: '2026-01-04'
+    tef_format: v2
+    tef_time_sig: 4/4
+    tef_tracks: 4
+    tef_events: 1589
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2338'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2338
+    author: Live on What You Grow
+    imported_at: '2026-07-26'

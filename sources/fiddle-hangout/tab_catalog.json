@@ -90,8 +90,12 @@
       "genre": "Bluegrass",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422106"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422106",
+      "downloaded_at": "2026-07-26T22:09:04.601857",
+      "converted_at": "2026-07-26T22:20:04.403466",
+      "imported_at": "2026-07-26T22:26:25.540729",
+      "work_slug": "big-sciota"
     },
     "658_tef": {
       "id": "658_tef",
@@ -128,8 +132,12 @@
       "genre": "Bluegrass",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422113"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422113",
+      "downloaded_at": "2026-07-26T22:08:34.482065",
+      "converted_at": "2026-07-26T22:20:04.268862",
+      "imported_at": "2026-07-26T22:26:25.549861",
+      "work_slug": "billy-in-the-lowground"
     },
     "2384_tef": {
       "id": "2384_tef",
@@ -140,8 +148,12 @@
       "genre": "Bluegrass",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422116"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422116",
+      "downloaded_at": "2026-07-26T22:08:21.112319",
+      "converted_at": "2026-07-26T22:20:04.169412",
+      "imported_at": "2026-07-26T22:26:25.577517",
+      "work_slug": "blackberry-blossom"
     },
     "3374_tef": {
       "id": "3374_tef",
@@ -306,8 +318,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422143"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422143",
+      "downloaded_at": "2026-07-26T22:08:57.070249",
+      "converted_at": "2026-07-26T22:20:04.367472",
+      "imported_at": "2026-07-26T22:26:25.596905",
+      "work_slug": "cherokee-shuffle"
     },
     "3389_tef": {
       "id": "3389_tef",
@@ -407,8 +423,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422159"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422159",
+      "downloaded_at": "2026-07-26T22:08:25.432110",
+      "converted_at": "2026-07-26T22:20:04.224649",
+      "imported_at": "2026-07-26T22:26:25.616244",
+      "work_slug": "cripple-creek"
     },
     "831_tef": {
       "id": "831_tef",
@@ -509,8 +529,12 @@
       "tuning": "Standard",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422180"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422180",
+      "downloaded_at": "2026-07-26T22:09:07.614396",
+      "converted_at": "2026-07-26T22:20:04.424159",
+      "imported_at": "2026-07-26T22:26:25.630958",
+      "work_slug": "earls-breakdown"
     },
     "3009_tef": {
       "id": "3009_tef",
@@ -522,8 +546,12 @@
       "tuning": "Standard",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422182"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422182",
+      "downloaded_at": "2026-07-26T22:09:40.775496",
+      "converted_at": "2026-07-26T22:20:04.498436",
+      "imported_at": "2026-07-26T22:26:25.635314",
+      "work_slug": "east-tennessee-blues"
     },
     "1324_tef": {
       "id": "1324_tef",
@@ -547,8 +575,12 @@
       "genre": "Bluegrass",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422187"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422187",
+      "downloaded_at": "2026-07-26T22:08:46.522729",
+      "converted_at": "2026-07-26T22:20:04.329403",
+      "imported_at": "2026-07-26T22:26:25.640892",
+      "work_slug": "eighth-of-january"
     },
     "3056_tef": {
       "id": "3056_tef",
@@ -649,8 +681,10 @@
       "tuning": "Standard",
       "key": "D",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422208"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422208",
+      "downloaded_at": "2026-07-26T22:08:38.989784",
+      "converted_at": "2026-07-26T22:20:04.275038"
     },
     "2337_tef": {
       "id": "2337_tef",
@@ -661,8 +695,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422209"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422209",
+      "downloaded_at": "2026-07-26T22:08:40.498535",
+      "converted_at": "2026-07-26T22:20:04.277630",
+      "imported_at": "2026-07-26T22:26:25.647602",
+      "work_slug": "fire-on-the-mountain"
     },
     "2738_tef": {
       "id": "2738_tef",
@@ -685,8 +723,12 @@
       "genre": "Bluegrass",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422213"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422213",
+      "downloaded_at": "2026-07-26T22:08:42.003983",
+      "converted_at": "2026-07-26T22:20:04.290969",
+      "imported_at": "2026-07-26T22:26:25.664368",
+      "work_slug": "flop-eared-mule"
     },
     "1972_tef": {
       "id": "1972_tef",
@@ -697,8 +739,12 @@
       "genre": "Bluegrass",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422215"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422215",
+      "downloaded_at": "2026-07-26T22:08:29.948713",
+      "converted_at": "2026-07-26T22:20:04.247697",
+      "imported_at": "2026-07-26T22:26:25.680838",
+      "work_slug": "foggy-mountain-breakdown"
     },
     "3063_tef": {
       "id": "3063_tef",
@@ -710,8 +756,10 @@
       "tuning": "Standard",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422216"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422216",
+      "downloaded_at": "2026-07-26T22:08:31.457968",
+      "converted_at": "2026-07-26T22:20:04.253317"
     },
     "3012_tef": {
       "id": "3012_tef",
@@ -723,8 +771,12 @@
       "tuning": "Standard",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422218"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422218",
+      "downloaded_at": "2026-07-26T22:09:15.147515",
+      "converted_at": "2026-07-26T22:20:04.474300",
+      "imported_at": "2026-07-26T22:26:25.463204",
+      "work_slug": "foggy-mountain-special"
     },
     "3406_tef": {
       "id": "3406_tef",
@@ -758,8 +810,12 @@
       "genre": "Bluegrass",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422224"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422224",
+      "downloaded_at": "2026-07-26T22:08:35.981389",
+      "converted_at": "2026-07-26T22:20:04.272718",
+      "imported_at": "2026-07-26T22:26:25.685034",
+      "work_slug": "forked-deer"
     },
     "2489_tef": {
       "id": "2489_tef",
@@ -770,8 +826,10 @@
       "genre": "Old-Time",
       "tuning": "Standard",
       "key": "D",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422226"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422226",
+      "downloaded_at": "2026-07-26T22:08:37.487072",
+      "converted_at": "2026-07-26T22:20:04.274180"
     },
     "1844_tef": {
       "id": "1844_tef",
@@ -820,8 +878,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422233"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422233",
+      "downloaded_at": "2026-07-26T22:09:12.125215",
+      "converted_at": "2026-07-26T22:20:04.458133",
+      "imported_at": "2026-07-26T22:26:25.692762",
+      "work_slug": "gold-rush"
     },
     "3330_tef": {
       "id": "3330_tef",
@@ -844,8 +906,10 @@
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/g/tab-golden-slippers-2522-324823952017.tef",
       "genre": "Old-Time",
       "key": "A",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422237"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422237",
+      "downloaded_at": "2026-07-26T22:09:16.652991",
+      "converted_at": "2026-07-26T22:20:04.475246"
     },
     "2488_tef": {
       "id": "2488_tef",
@@ -1038,8 +1102,12 @@
       "tuning": "Standard",
       "key": "Am",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422267"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422267",
+      "downloaded_at": "2026-07-26T22:09:10.616946",
+      "converted_at": "2026-07-26T22:20:04.453117",
+      "imported_at": "2026-07-26T22:26:25.709370",
+      "work_slug": "jerusalem-ridge-ensemble"
     },
     "595_tef": {
       "id": "595_tef",
@@ -1076,8 +1144,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422273"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422273",
+      "downloaded_at": "2026-07-26T22:08:32.972497",
+      "converted_at": "2026-07-26T22:20:04.264724",
+      "imported_at": "2026-07-26T22:26:25.715353",
+      "work_slug": "june-apple"
     },
     "2697_tef": {
       "id": "2697_tef",
@@ -1086,8 +1158,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-bobby-2697-10542131102017.tef",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422276"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422276",
+      "downloaded_at": "2026-07-26T22:09:18.160563",
+      "converted_at": "2026-07-26T22:20:04.476439"
     },
     "2629_tef": {
       "id": "2629_tef",
@@ -1098,8 +1172,10 @@
       "genre": "Bluegrass",
       "tuning": "Standard",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422278"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422278",
+      "downloaded_at": "2026-07-26T22:09:19.666249",
+      "converted_at": "2026-07-26T22:20:04.477898"
     },
     "2497_tef": {
       "id": "2497_tef",
@@ -1110,8 +1186,10 @@
       "genre": "Old-Time",
       "tuning": "Standard",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422280"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422280",
+      "downloaded_at": "2026-07-26T22:09:21.174681",
+      "converted_at": "2026-07-26T22:20:04.478909"
     },
     "2698_tef": {
       "id": "2698_tef",
@@ -1120,8 +1198,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-johnn-2698-59162331102017.tef",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422281"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422281",
+      "downloaded_at": "2026-07-26T22:09:22.677429",
+      "converted_at": "2026-07-26T22:20:04.480038"
     },
     "2495_tef": {
       "id": "2495_tef",
@@ -1131,8 +1211,10 @@
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-josep-2495-3047131622017.tef",
       "genre": "Old-Time",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422283"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422283",
+      "downloaded_at": "2026-07-26T22:09:24.186113",
+      "converted_at": "2026-07-26T22:20:04.481580"
     },
     "2529_tef": {
       "id": "2529_tef",
@@ -1142,8 +1224,10 @@
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-kirk--2529-1915212062017.tef",
       "genre": "Old-Time",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422285"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422285",
+      "downloaded_at": "2026-07-26T22:09:25.688431",
+      "converted_at": "2026-07-26T22:20:04.482671"
     },
     "2703_tef": {
       "id": "2703_tef",
@@ -1153,8 +1237,10 @@
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-lowe--2703-1152178112017.tef",
       "genre": "Old-Time",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422286"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422286",
+      "downloaded_at": "2026-07-26T22:09:27.203334",
+      "converted_at": "2026-07-26T22:20:04.484006"
     },
     "2825_tef": {
       "id": "2825_tef",
@@ -1164,8 +1250,10 @@
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-mac-m-2825-14172016112018.tef",
       "genre": "Old-Time",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422288"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422288",
+      "downloaded_at": "2026-07-26T22:09:28.702410",
+      "converted_at": "2026-07-26T22:20:04.485174"
     },
     "2826_tef": {
       "id": "2826_tef",
@@ -1175,8 +1263,10 @@
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-mack--2826-39262016112018.tef",
       "genre": "Old-Time",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422290"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422290",
+      "downloaded_at": "2026-07-26T22:09:30.216076",
+      "converted_at": "2026-07-26T22:20:04.488239"
     },
     "2631_tef": {
       "id": "2631_tef",
@@ -1186,8 +1276,10 @@
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-monk--2631-2656232992017.tef",
       "genre": "Old-Time",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422292"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422292",
+      "downloaded_at": "2026-07-26T22:09:31.714033",
+      "converted_at": "2026-07-26T22:20:04.489279"
     },
     "2496_tef": {
       "id": "2496_tef",
@@ -1198,8 +1290,10 @@
       "genre": "Old-Time",
       "tuning": "Standard",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422293"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422293",
+      "downloaded_at": "2026-07-26T22:09:33.225634",
+      "converted_at": "2026-07-26T22:20:04.490455"
     },
     "2632_tef": {
       "id": "2632_tef",
@@ -1209,8 +1303,10 @@
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-risey-2632-1158232992017.tef",
       "genre": "Old-Time",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422295"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422295",
+      "downloaded_at": "2026-07-26T22:09:34.736360",
+      "converted_at": "2026-07-26T22:20:04.492020"
     },
     "2704_tef": {
       "id": "2704_tef",
@@ -1219,8 +1315,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-sonny-2704-2850178112017.tef",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422297"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422297",
+      "downloaded_at": "2026-07-26T22:09:36.248278",
+      "converted_at": "2026-07-26T22:20:04.493076"
     },
     "2630_tef": {
       "id": "2630_tef",
@@ -1231,8 +1329,10 @@
       "genre": "Old-Time",
       "tuning": "Standard",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422299"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422299",
+      "downloaded_at": "2026-07-26T22:09:37.753823",
+      "converted_at": "2026-07-26T22:20:04.494503"
     },
     "2702_tef": {
       "id": "2702_tef",
@@ -1241,8 +1341,10 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/k/tab-katy-hill-tommy-2702-759185112017.tef",
       "key": "G",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422302"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422302",
+      "downloaded_at": "2026-07-26T22:09:39.262133",
+      "converted_at": "2026-07-26T22:20:04.495658"
     },
     "1983_tef": {
       "id": "1983_tef",
@@ -1265,8 +1367,12 @@
       "genre": "Bluegrass",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422306"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422306",
+      "downloaded_at": "2026-07-26T22:09:01.591505",
+      "converted_at": "2026-07-26T22:20:04.392974",
+      "imported_at": "2026-07-26T22:26:25.731726",
+      "work_slug": "leather-britches"
     },
     "1854_tef": {
       "id": "1854_tef",
@@ -1277,8 +1383,12 @@
       "genre": "Bluegrass",
       "key": "D",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422309"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422309",
+      "downloaded_at": "2026-07-26T22:08:43.519084",
+      "converted_at": "2026-07-26T22:20:04.303330",
+      "imported_at": "2026-07-26T22:26:25.735832",
+      "work_slug": "liberty"
     },
     "2481_tef": {
       "id": "2481_tef",
@@ -1325,8 +1435,12 @@
       "genre": "Bluegrass",
       "key": "F",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422318"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422318",
+      "downloaded_at": "2026-07-26T22:09:06.108951",
+      "converted_at": "2026-07-26T22:20:04.408529",
+      "imported_at": "2026-07-26T22:26:25.752785",
+      "work_slug": "lonesome-moonlight-waltz"
     },
     "1869_tef": {
       "id": "1869_tef",
@@ -1487,8 +1601,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422344"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422344",
+      "downloaded_at": "2026-07-26T22:08:26.941401",
+      "converted_at": "2026-07-26T22:20:04.228068",
+      "imported_at": "2026-07-26T22:26:25.760236",
+      "work_slug": "old-joe-clark"
     },
     "3304_tef": {
       "id": "3304_tef",
@@ -1536,8 +1654,12 @@
       "style": "Unknown/None Chosen",
       "tuning": "Standard",
       "key": "A",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422352"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422352",
+      "downloaded_at": "2026-07-26T22:09:00.082064",
+      "converted_at": "2026-07-26T22:20:04.385229",
+      "imported_at": "2026-07-26T22:26:25.786224",
+      "work_slug": "orange-blossom-special"
     },
     "3355_tef": {
       "id": "3355_tef",
@@ -1586,8 +1708,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422360"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422360",
+      "downloaded_at": "2026-07-26T22:09:03.105186",
+      "converted_at": "2026-07-26T22:20:04.399319",
+      "imported_at": "2026-07-26T22:26:25.811829",
+      "work_slug": "pike-county-breakdown"
     },
     "111_tef": {
       "id": "111_tef",
@@ -1648,8 +1774,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422370"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422370",
+      "downloaded_at": "2026-07-26T22:08:22.421639",
+      "converted_at": "2026-07-26T22:20:04.194401",
+      "imported_at": "2026-07-26T22:26:25.829487",
+      "work_slug": "red-haired-boy"
     },
     "3384_tef": {
       "id": "3384_tef",
@@ -1785,8 +1915,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422391"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422391",
+      "downloaded_at": "2026-07-26T22:08:48.032459",
+      "converted_at": "2026-07-26T22:20:04.352369",
+      "imported_at": "2026-07-26T22:26:25.867807",
+      "work_slug": "sally-goodin"
     },
     "2501_tef": {
       "id": "2501_tef",
@@ -1797,8 +1931,10 @@
       "genre": "Old-Time",
       "tuning": "Standard",
       "key": "A",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422392"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422392",
+      "downloaded_at": "2026-07-26T22:08:49.539745",
+      "converted_at": "2026-07-26T22:20:04.353902"
     },
     "2499_tef": {
       "id": "2499_tef",
@@ -1809,8 +1945,10 @@
       "genre": "Old-Time",
       "tuning": "Standard",
       "key": "A",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422394"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422394",
+      "downloaded_at": "2026-07-26T22:08:51.045677",
+      "converted_at": "2026-07-26T22:20:04.355112"
     },
     "2513_tef": {
       "id": "2513_tef",
@@ -1820,8 +1958,10 @@
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/s/tab-sally-goodin-ki-2513-2830202642017.tef",
       "genre": "Old-Time",
       "key": "A",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422396"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422396",
+      "downloaded_at": "2026-07-26T22:08:52.776131",
+      "converted_at": "2026-07-26T22:20:04.356258"
     },
     "2506_tef": {
       "id": "2506_tef",
@@ -1832,8 +1972,10 @@
       "genre": "Old-Time",
       "tuning": "Standard",
       "key": "A",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422398"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422398",
+      "downloaded_at": "2026-07-26T22:08:54.193191",
+      "converted_at": "2026-07-26T22:20:04.357174"
     },
     "2500_tef": {
       "id": "2500_tef",
@@ -1843,8 +1985,10 @@
       "source_url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/s/tab-sally-goodin-to-2500-1931211822017.tef",
       "genre": "Old-Time",
       "key": "A",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422400"
+      "status": "converted",
+      "discovered_at": "2026-07-26T21:58:25.422400",
+      "downloaded_at": "2026-07-26T22:08:55.562832",
+      "converted_at": "2026-07-26T22:20:04.358423"
     },
     "2289_tef": {
       "id": "2289_tef",
@@ -1855,8 +1999,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422402"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422402",
+      "downloaded_at": "2026-07-26T22:08:45.023646",
+      "converted_at": "2026-07-26T22:20:04.316836",
+      "imported_at": "2026-07-26T22:26:25.872398",
+      "work_slug": "salt-creek-1"
     },
     "1978_tef": {
       "id": "1978_tef",
@@ -1916,8 +2064,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422411"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422411",
+      "downloaded_at": "2026-07-26T22:09:09.116251",
+      "converted_at": "2026-07-26T22:20:04.438801",
+      "imported_at": "2026-07-26T22:26:25.876895",
+      "work_slug": "shenandoah-breakdown"
     },
     "655_tef": {
       "id": "655_tef",
@@ -1956,8 +2108,12 @@
       "tuning": "Standard",
       "key": "D",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422416"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422416",
+      "downloaded_at": "2026-07-26T22:08:28.447831",
+      "converted_at": "2026-07-26T22:20:04.244139",
+      "imported_at": "2026-07-26T22:26:25.882909",
+      "work_slug": "soldier-s-joy"
     },
     "1050_tef": {
       "id": "1050_tef",
@@ -2018,8 +2174,12 @@
       "genre": "Bluegrass",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422426"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422426",
+      "downloaded_at": "2026-07-26T22:09:13.639036",
+      "converted_at": "2026-07-26T22:20:04.472430",
+      "imported_at": "2026-07-26T22:26:25.902685",
+      "work_slug": "tennessee-waltz-1"
     },
     "2354_tef": {
       "id": "2354_tef",
@@ -2248,8 +2408,12 @@
       "tuning": "Standard",
       "key": "G",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422462"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422462",
+      "downloaded_at": "2026-07-26T22:08:58.580817",
+      "converted_at": "2026-07-26T22:20:04.382143",
+      "imported_at": "2026-07-26T22:26:25.919666",
+      "work_slug": "wheel-hoss"
     },
     "2379_tef": {
       "id": "2379_tef",
@@ -2260,8 +2424,12 @@
       "genre": "Bluegrass",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422464"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422464",
+      "downloaded_at": "2026-07-26T22:08:23.926294",
+      "converted_at": "2026-07-26T22:20:04.215473",
+      "imported_at": "2026-07-26T22:26:25.929501",
+      "work_slug": "whiskey-before-breakfast"
     },
     "2412_tef": {
       "id": "2412_tef",

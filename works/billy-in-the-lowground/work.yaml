@@ -5,6 +5,38 @@ default_key: C
 tags:
 - Instrumental
 - Fiddle
+- Scruggs
+- Bluegrass
 status: placeholder
 notes: Classic fiddle tune in C. A jam session staple.
-parts: []
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '22911'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=22911
+    author: bango
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: ensemble
+  format: otf
+  file: ensemble.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '20000'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20000
+    author: dskeigley
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2367'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2367
+    author: Live on What You Grow
+    imported_at: '2026-07-26'

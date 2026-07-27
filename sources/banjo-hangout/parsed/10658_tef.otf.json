@@ -1,7 +1,7 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "Dixie Breakdown (1st Banjo Break)",
+    "title": "Dixie Breakdown (1st Break)",
     "time_signature": "4/4",
     "tempo": 120,
     "composer": "Traditional / arrangement by Mark Stockton"
@@ -2855,8 +2855,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "10658.tef",
-    "converted_at": "2026-07-02T11:24:52.948143"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/dixie_breakdown_(1st_break)-768.tef",
+    "author": "schlange",
+    "converted_at": "2026-07-26T22:20:07.215846"
   }
 }

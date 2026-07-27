@@ -4,7 +4,8 @@
     "title": "Cherokee Shuffle",
     "time_signature": "4/4",
     "tempo": 215,
-    "composer": "Traditional"
+    "composer": "Traditional",
+    "key": "G"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -7515,8 +7516,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "tab-cherokee-shuffl-22240-3043527112016.tef",
-    "converted_at": "2026-07-02T11:24:53.572098"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cherokee-shuffl-22240-3043527112016.tef",
+    "author": "HOWDYDOODY",
+    "converted_at": "2026-07-26T22:20:06.221110"
   }
 }

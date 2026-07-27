@@ -4,6 +4,8 @@ artist: Traditional
 default_key: G
 tags:
 - Instrumental
+- Bluegrass
+- Scruggs
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,3 +14,33 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '23908'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23908
+    author: howsy-bee
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '1519'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=1519
+    author: GuitarTom2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '1095'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=1095
+    author: onaroll
+    imported_at: '2026-07-26'

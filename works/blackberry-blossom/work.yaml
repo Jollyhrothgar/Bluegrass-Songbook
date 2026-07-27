@@ -6,6 +6,8 @@ tags:
 - JamFriendly
 - Instrumental
 - OldTime
+- Scruggs
+- Bluegrass
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,3 +16,53 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '13647'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=13647
+    author: Freddie.D.Holt
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2384'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2384
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '3435'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=3435
+    author: bango
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2962'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2962
+    author: MandoTom2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: tenor-banjo
+  format: otf
+  file: tenor-banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '14677'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=14677
+    author: Mirek Tim Patek
+    imported_at: '2026-07-26'

@@ -1,0 +1,21 @@
+id: bluegrass-breakdown
+title: Bluegrass Breakdown
+artist: Traditional
+composers: []
+default_key: G
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '23403'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23403
+    author: Yohansen
+    imported_at: '2026-07-26'

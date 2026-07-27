@@ -6,6 +6,8 @@ tags:
 - JamFriendly
 - Instrumental
 - OldTime
+- Scruggs
+- Bluegrass
 parts:
 - type: lead-sheet
   format: chordpro
@@ -15,5 +17,25 @@ parts:
     source: classic-country
     source_file: redwinglyricschords.pro
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24191'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24191
+    author: toolmaker
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: ensemble
+  format: otf
+  file: ensemble.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '20230'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20230
+    author: dskeigley
+    imported_at: '2026-07-26'
 composers:
 - Biography:Kerry Mills
