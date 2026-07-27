@@ -48,6 +48,15 @@ class TEFVersionError(Exception):
         super().__init__(message)
 
 
+class TEFParseError(Exception):
+    """Raised when a TEF file decodes to structurally impossible output.
+
+    Deliberately LOUD: a misread component stream still yields "notes",
+    just at absurd measure numbers. Failing the conversion is far better
+    than emitting a plausible-looking multi-thousand-measure OTF.
+    """
+
+
 @dataclass
 class TEFHeader:
     """TEF file header information."""
@@ -1186,8 +1195,48 @@ class TEFReader:
 
         return events
 
+    # ------------------------------------------------------------------
+    # V2 component-record sub-variants
+    #
+    # The common V2 layout is a 6-byte component record whose positions
+    # live on a 256-units-per-whole-note grid (see v2_ts_size). An OLDER
+    # sub-variant packs the same leading fields into 4 bytes and uses a
+    # 64-units-per-whole-note grid:
+    #
+    #   bytes 0-1  location (position/string/measure, same formula)
+    #   byte 2     component type + fret (bits 0-4 = fret+1)
+    #   byte 3     duration code (bits 0-3) + dynamic (bits 5-7)
+    #   -- NO effect1/effect2 bytes at all --
+    #
+    # Detection is STRUCTURAL, not a magic byte: a 4-byte file's component
+    # region cannot hold `count` 6-byte records without running past EOF.
+    # For the one known example (10591_tef_fire_on_the_mountain.tef,
+    # offset 258, count 638, filesize 3632): 258 + 6*638 = 4086 overruns
+    # by 454 bytes, while 258 + 4*638 = 2810 fits. Verified across the
+    # 402 V2 files in sources/*hangout*/downloads: exactly one overruns,
+    # so the 6-byte path is untouched for every other file.
+    #
+    # (data[205] == 0x00 here vs 0x03/0x0a in healthy 6-byte files is a
+    # corroborating signal only — n=1, so it is deliberately NOT the
+    # discriminator.)
+    # ------------------------------------------------------------------
+
+    #: position grid (units per whole note) keyed by component-record stride
+    _V2_GRID_BY_STRIDE = {6: 256, 4: 64}
+
+    #: canonical grid that TEFNoteEvent.position is reported in, so that
+    #: otf.py / anacrusis handling / articulation gaps need no changes
+    _V2_CANONICAL_GRID = 256
+
+    def v2_component_stride(self, header: TEFHeader) -> int:
+        """Size in bytes of one V2 component record in THIS file (4 or 6)."""
+        if not header.is_v2:
+            return 6
+        end_at_6 = header.v2_component_offset + 6 * header.v2_component_count
+        return 4 if end_at_6 > len(self.data) else 6
+
     def parse_note_events_v2(self, header: TEFHeader) -> list[TEFNoteEvent]:
-        """Parse note events from V2 format (6-byte records).
+        """Parse note events from V2 format (6-byte or 4-byte records).
 
         V2 record format (per TuxGuitar TEInputStream.java):
         - Bytes 0-1: location (combined position/string/measure encoding)
@@ -1205,10 +1254,34 @@ class TEFReader:
         events = []
 
         # Use header values for decoding
-        ts_size = header.v2_ts_size
         num_strings = header.v2_strings
         component_offset = header.v2_component_offset
         component_count = header.v2_component_count
+
+        # Record stride + native position grid for this sub-variant.
+        stride = self.v2_component_stride(header)
+        grid = self._V2_GRID_BY_STRIDE[stride]
+        # Native grid -> the canonical 256-per-whole-note grid that
+        # event.position is reported in (1 for the 6-byte layout, 4 for
+        # the 4-byte layout). All downstream consumers (otf.py's
+        # units_per_measure, the anacrusis shift, articulation_max_gap)
+        # keep reading header.v2_ts_size, so scaling here is what keeps
+        # them correct instead of teaching each of them about the grid.
+        pos_scale = self._V2_CANONICAL_GRID // grid
+        if grid == self._V2_CANONICAL_GRID:
+            ts_size = header.v2_ts_size
+        elif header.v2_time_denom == 0:
+            ts_size = grid
+        else:
+            ts_size = (grid * header.v2_time_num) // header.v2_time_denom
+        # Duration code width: the 6-byte layout uses 5 bits, where bit 4
+        # (0x10) is a double-dot flag (12574's 0x19 = double-dotted
+        # eighth). The 4-byte layout uses only bits 0-3 — in 10591, bit 4
+        # is set on 382/551 notes and reading it as a double dot makes 266
+        # notes overrun the next note on their own string, while masking
+        # it off yields 0 overruns and 304/542 durations exactly equal to
+        # the gap to the next note (the rest are followed by rests).
+        duration_mask = 0x1f if stride == 6 else 0x0f
 
         if ts_size == 0 or num_strings == 0:
             return events
@@ -1230,12 +1303,22 @@ class TEFReader:
         ts_move = 0
         ts_changes: list[TEFTimeSignatureChange] = []
 
+        # Loud-failure backstop. A component stream read at the wrong
+        # stride still decodes into "notes" — just at impossible measure
+        # numbers (10591 read as 6-byte records reported 324 notes across
+        # 5510 measures for a 62-measure tune). Across all 401 healthy
+        # 6-byte V2 files in the corpus the highest decoded measure is
+        # EXACTLY header.v2_measures, so this bound is enormously slack
+        # and only trips on a genuinely unknown layout.
+        measure_limit = (
+            2 * header.v2_measures + 16 if header.v2_measures > 0 else 0)
+
         offset = component_offset
         for _ in range(component_count):
-            if offset + 6 > len(self.data):
+            if offset + stride > len(self.data):
                 break
 
-            rec = self.data[offset:offset + 6]
+            rec = self.data[offset:offset + stride]
 
             # Decode location with overflow handling (per TuxGuitar)
             location = (rec[0] & 0xff) + (256 * (m_data + (rec[1] & 0xff)))
@@ -1249,6 +1332,14 @@ class TEFReader:
             position_in_measure = location % ts_size
             cumulative_string = (location // ts_size) % num_strings
             measure = location // (ts_size * num_strings)
+
+            if measure_limit and measure >= measure_limit:
+                raise TEFParseError(
+                    f"V2 component stream decoded measure {measure + 1} but "
+                    f"the header declares only {header.v2_measures} measures "
+                    f"(stride={stride}, grid={grid}). Refusing to emit "
+                    f"garbage — this file is probably an unsupported V2 "
+                    f"component-record sub-variant.")
 
             if measure != m_index:
                 ts_move = 0  # a ts override never outlives its measure
@@ -1266,9 +1357,14 @@ class TEFReader:
                 d3 = rec[3]
                 top = fret_byte >> 5
                 den = (2 ** top) // 2 if top > 0 else header.v2_time_denom
-                grid_len = ts_size - 4 * d3
-                num = (grid_len * den) // 256 if den > 0 else 0
-                ts_move = 4 * d3
+                # byte3 counts 64th notes; that is 4 units on the 256 grid
+                # and 1 unit on the 64 grid. (No type-27 component appears
+                # in the single known 4-byte file, so the rescale is a
+                # unit conversion by construction, not oracle-verified.)
+                units_per_64th = 4 // pos_scale
+                grid_len = ts_size - units_per_64th * d3
+                num = (grid_len * den) // grid if den > 0 else 0
+                ts_move = units_per_64th * d3
                 # d3 == 0 means the measure keeps the header DURATION, but
                 # the marker can still RE-LABEL the meter: 21874 has a 2/2
                 # header with an explicit 4/4 marker on every measure —
@@ -1281,7 +1377,7 @@ class TEFReader:
                         header.v2_time_num, header.v2_time_denom)):
                     ts_changes.append(TEFTimeSignatureChange(
                         measure=measure + 1, numerator=num, denominator=den))
-                offset += 6
+                offset += stride
                 continue
 
             if ts_move and position_in_measure >= ts_move:
@@ -1320,16 +1416,32 @@ class TEFReader:
                         break
                     local_string -= num_track_strings
 
-                # Carry positions in the NATIVE V2 grid: 256 units per whole
-                # note, i.e. ts_size units per measure (1 unit = 7.5 MIDI
-                # ticks at 480/quarter). The old `* 16 // ts_size` forced 16
-                # slots per measure — exact only when the measure divides
-                # into 16 even slots the notes actually sit on; it crushed
-                # 3/4 and 6/8 grids (slot = 90 ticks vs real 16th = 120) and
-                # any 32nds in 4/4. Downstream (otf.py) converts exactly.
-                abs_position = measure * ts_size + position_in_measure
+                # Carry positions in the CANONICAL V2 grid: 256 units per
+                # whole note, i.e. header.v2_ts_size units per measure
+                # (1 unit = 7.5 MIDI ticks at 480/quarter). The old
+                # `* 16 // ts_size` forced 16 slots per measure — exact
+                # only when the measure divides into 16 even slots the
+                # notes actually sit on; it crushed 3/4 and 6/8 grids
+                # (slot = 90 ticks vs real 16th = 120) and any 32nds in
+                # 4/4. Downstream (otf.py) converts exactly.
+                #
+                # The 4-byte sub-variant decodes on a 64-unit grid, so
+                # pos_scale (4) lifts it into the same canonical grid —
+                # nothing downstream has to know which variant this was.
+                abs_position = (
+                    measure * ts_size + position_in_measure) * pos_scale
 
-                # Create note event
+                # Create note event.
+                #
+                # raw_data is the record AS STORED: 6 bytes for the common
+                # layout, 4 for the sub-variant. That length difference is
+                # load-bearing — every effect/annotation/articulation
+                # consumer (otf.py's is_tie / has_legato_effect /
+                # is_slide_effect / compute_articulations, and the
+                # chord-overlay filter in _parse_v2) already gates on
+                # len(raw_data), so a 4-byte record correctly yields no
+                # effect1/effect2 information instead of reading past the
+                # record into the next one.
                 events.append(TEFNoteEvent(
                     position=abs_position,
                     track=track_idx,
@@ -1339,11 +1451,13 @@ class TEFReader:
                     raw_data=rec,
                     # byte3 bits 0-4 = duration code (bits 5-7 dynamics,
                     # 7 = tie sentinel); marker_char above is the same
-                    # historical misread of this byte.
-                    duration_ticks=decode_duration_code(rec[3] & 0x1f),
+                    # historical misread of this byte. See duration_mask
+                    # for why the 4-byte layout drops bit 4.
+                    duration_ticks=decode_duration_code(
+                        rec[3] & duration_mask),
                 ))
 
-            offset += 6
+            offset += stride
 
         # Stash for _parse_v2 (collected during the same single pass that
         # applies ts_move — TuxGuitar semantics are inherently sequential).
@@ -1577,7 +1691,10 @@ class TEFReader:
 
         V2 reading list format:
         - Count is at byte 222 of header (v2_repeats_count)
-        - Data starts right after components (offset 258 + component_count * 6)
+        - Data starts right after components (component_offset +
+          component_count * stride, where stride is 6 for the common V2
+          layout and 4 for the older sub-variant — see
+          v2_component_stride)
         - Each entry is 2 bytes: (from_measure, to_measure)
         """
         entries = []
@@ -1587,7 +1704,9 @@ class TEFReader:
             return entries
 
         # Reading list starts after components
-        reading_list_offset = header.v2_component_offset + header.v2_component_count * 6
+        reading_list_offset = (
+            header.v2_component_offset
+            + header.v2_component_count * self.v2_component_stride(header))
 
         for i in range(count):
             offset = reading_list_offset + i * 2
