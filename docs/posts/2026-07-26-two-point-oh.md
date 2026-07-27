@@ -10,20 +10,17 @@ The site just shipped its largest release. Here's what changed, and why.
 
 ## The index is bluegrass now
 
-Search used to return 18,204 songs, most of them classic-country lead sheets
-that came along with the original import. "House of the Rising Sun" was
-tagged a Bluegrass Standard. That's over.
+Keeping the entire imported corpus made search less useful for a site
+dedicated to bluegrass — a query would surface thousands of classic-country
+lead sheets, and "House of the Rising Sun" sat in the Bluegrass Standards
+collection. So I made the call: any song I couldn't programmatically
+identify as bluegrass — scored by which bluegrass artists actually recorded
+it, across how many generations — was dropped from search. That cut the
+index from **18,204 to about 5,200 songs**.
 
-Every song was scored against a MusicBrainz mirror by **who actually
-recorded it**: how many bluegrass-family artists, across how many
-generations. Songs with real jam pedigree stayed; 12,939 without it were
-removed from search. The result is about **5,200 searchable songs** that
-earn their place, and a Bluegrass Standards collection where every entry
-was validated by both the recording graph and a hand review.
-
-The prune is non-destructive. Nothing was deleted: direct links still work,
-your lists still work, and any song a user contributed is exempt no matter
-what the data says. There's a one-line command to bring any song back.
+The data was all retained. Direct links and lists still work, and if song
+requests come in for something that got cut, bringing it back is a
+one-line change.
 
 ## One page per song
 
@@ -43,28 +40,15 @@ this way, with tooling to keep going.
 
 ## Chrome that gets out of the way
 
-The old interface stacked a 250px logo header, a hamburger menu, and three
-different collapsible control bars on top of every song. All of it is gone,
-replaced by a slim bar at the top and, when a tab is playing, a transport
-bar at the bottom. Key, display, and song-info controls are small pills
-under the title.
-
-Focus mode no longer exists as a feature — because it's the default.
-Scroll into a song and the top bar slides away; scroll up and it's back.
-On a phone, the sheet runs edge to edge. Lines that used to wrap three
-times fit whole.
+We used to provide too many views of the same content — a works view, a
+focus view, a print view — and it was confusing. The new design assumes
+that most people coming here just want to **read the music**, so everything
+merged into one view that minimizes decoration and leaves the room to the
+content: a slim bar on top, controls as small pills under the title, and a
+transport bar on the bottom when a tab is playing. Scroll into a song and
+even the top bar slides away; on a phone, the sheet runs edge to edge.
 
 ![Scrolled into a song on a phone: the entire screen is music](/posts/images/2.0-immersive.png)
-
-## Deleting things works now
-
-An embarrassing one: the admin delete button wrote to a database table
-that nothing ever read, so deleted songs resurrected on every deploy.
-Deletions now sync into the repository hourly and stick. The same
-machinery — a committed curation registry — holds canonical pins,
-suppressions, and tag corrections, so editorial decisions survive
-re-imports and re-tagging instead of living in one database nobody
-checks.
 
 ## The bounty board knows what's missing
 
@@ -79,14 +63,40 @@ Tap any of them to contribute; the form comes prefilled.
 
 ![The bounty board, led by the missing core jam standards](/posts/images/2.0-bounty.png)
 
-## Tab rendering, round three
+## Tablature: a TablEdit for the browser
 
-The TEF import pipeline now carries text annotations, fingerings, section
-names, repeat brackets rendered as single voltas, and TablEdit-style bends
-played as quarter-tone chokes. Silent measures render as empty bars
-instead of vanishing.
+This one deserves its own headline. The tab system is no longer just a
+viewer — it's targeting **full TablEdit compatibility for bluegrass
+multipart tabs**, in the browser, no software to install:
+
+- **Import your `.tef` files directly.** Drop a TablEdit file on the
+  [create page](create.html) and it's parsed entirely in your browser —
+  tracks, tunings, capos, repeats, and all — then opens in the editor,
+  ready to review.
+- **Edit in the browser.** Every tab on the site has an Edit button:
+  fix a note, change a fingering, adjust a roll. Submissions go through
+  the same human review as song corrections. You can also build a tab
+  from scratch, and drafts save locally as you work.
+- **Multipart playback.** Arrangements with banjo, guitar, mandolin, and
+  bass play together, with a track mixer to bring parts in and out, solo
+  buttons, looping, count-in, a metronome, and tempo control.
+- **Faithful rendering.** Text annotations, fingerings, section names,
+  repeat brackets and voltas, and TablEdit-style bends — played back as
+  the quarter-tone chokes they are.
+
+If you've got a folder of `.tef` files from years of collecting, this is
+your invitation.
 
 ![A banjo tab with the playback transport and track mixer in the bottom band](/posts/images/2.0-tab-page.png)
+
+## Thanks
+
+None of this exists without the people who said yes:
+[BluegrassLyrics.com](https://www.bluegrasslyrics.com),
+[Classic Country Song Lyrics](https://www.classic-country-song-lyrics.com),
+and the Golden Standard collection all gave permission for their content
+to live on here. Banjo tabs link back to their original sources and
+authors on every page.
 
 ## Since January, in numbers
 
