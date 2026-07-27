@@ -40,13 +40,13 @@ load_env_file()
 try:
     import anthropic
 except ImportError:
-    print("Error: anthropic package not installed. Run: uv pip install anthropic")
+    print("Error: anthropic package not installed. Run: uv sync")
     sys.exit(1)
 
 try:
     from pydantic import BaseModel
 except ImportError:
-    print("Error: pydantic package not installed. Run: uv pip install pydantic")
+    print("Error: pydantic package not installed. Run: uv sync")
     sys.exit(1)
 
 # Paths

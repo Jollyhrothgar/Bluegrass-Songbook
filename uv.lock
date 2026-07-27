@@ -374,27 +374,21 @@ dependencies = [
 ]
 
 [package.optional-dependencies]
-analysis = [
-    { name = "matplotlib" },
-    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "numpy", version = "2.3.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
-]
 analytics = [
     { name = "jupyter" },
-    { name = "matplotlib" },
     { name = "nbstripout" },
     { name = "pandas" },
     { name = "psycopg2-binary" },
     { name = "supabase" },
 ]
+search = [
+    { name = "sentence-transformers" },
+]
+
+[package.dev-dependencies]
 dev = [
     { name = "pytest" },
     { name = "pytest-cov" },
-]
-search = [
-    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "numpy", version = "2.3.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
-    { name = "sentence-transformers" },
 ]
 
 [package.metadata]
@@ -406,19 +400,13 @@ requires-dist = [
     { name = "httpx", specifier = ">=0.27.0" },
     { name = "jupyter", marker = "extra == 'analytics'", specifier = ">=1.0.0" },
     { name = "matplotlib", specifier = ">=3.10.7" },
-    { name = "matplotlib", marker = "extra == 'analysis'", specifier = ">=3.7.0" },
-    { name = "matplotlib", marker = "extra == 'analytics'", specifier = ">=3.7.0" },
     { name = "nbstripout", marker = "extra == 'analytics'", specifier = ">=0.8.0" },
     { name = "numpy", specifier = ">=2.2.6" },
-    { name = "numpy", marker = "extra == 'analysis'", specifier = ">=1.24.0" },
-    { name = "numpy", marker = "extra == 'search'", specifier = ">=1.24.0" },
     { name = "pandas", marker = "extra == 'analytics'", specifier = ">=2.0.0" },
     { name = "playwright", specifier = ">=1.58.0" },
     { name = "psycopg2-binary", marker = "extra == 'analytics'", specifier = ">=2.9.0" },
     { name = "pydantic", specifier = ">=2.0.0" },
     { name = "pyphen", specifier = ">=0.17.2" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.0.0" },
-    { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=4.0.0" },
     { name = "python-dotenv", specifier = ">=1.0.0" },
     { name = "pyyaml", specifier = ">=6.0.0" },
     { name = "rapidfuzz", specifier = ">=3.14.3" },
@@ -428,7 +416,13 @@ requires-dist = [
     { name = "snowballstemmer", specifier = ">=3.0.0" },
     { name = "supabase", marker = "extra == 'analytics'", specifier = ">=2.0.0" },
 ]
-provides-extras = ["dev", "analysis", "analytics", "search"]
+provides-extras = ["analytics", "search"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pytest", specifier = ">=7.0.0" },
+    { name = "pytest-cov", specifier = ">=4.0.0" },
+]
 
 [[package]]
 name = "cachetools"
