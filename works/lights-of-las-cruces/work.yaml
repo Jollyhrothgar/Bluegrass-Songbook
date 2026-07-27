@@ -1,0 +1,13 @@
+id: lights-of-las-cruces
+title: Lights of Las Cruces
+artist: Ted Scanlon
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lightsoflascruceslyricschords.pro
+    imported_at: '2026-07-26'

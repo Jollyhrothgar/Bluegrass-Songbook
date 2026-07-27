@@ -1,0 +1,13 @@
+id: there-ll-never-be-anyone-else
+title: There'll Never Be Anyone Else
+artist: Emmylou Harris
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: therellneverbeanyoneelselyricschords.pro
+    imported_at: '2026-07-26'

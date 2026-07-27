@@ -1,0 +1,13 @@
+id: i-wouldn-t-take-a-million-dollars-for-a-single-maple-leaf
+title: I Wouldn't Take A Million Dollars For A Single Maple Leaf
+artist: Roy Payne
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwouldnttakeamilliondollarsforasinglemapleleaflyricschords.pro
+    imported_at: '2026-07-26'

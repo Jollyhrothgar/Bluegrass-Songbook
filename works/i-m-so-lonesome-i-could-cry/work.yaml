@@ -1,0 +1,13 @@
+id: i-m-so-lonesome-i-could-cry
+title: I'm So Lonesome I Could Cry
+artist: Hank Williams
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: imsolonesomeicouldcrylyricschords.pro
+    imported_at: '2026-07-26'

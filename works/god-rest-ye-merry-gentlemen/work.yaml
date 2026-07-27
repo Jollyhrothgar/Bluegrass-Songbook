@@ -1,0 +1,12 @@
+id: god-rest-ye-merry-gentlemen
+title: God Rest Ye Merry Gentlemen
+default_key: Am
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Godrestyemerrygentlemenlyricschords.pro
+    imported_at: '2026-07-26'

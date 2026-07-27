@@ -1,0 +1,15 @@
+id: i-dreamed-of-the-great-judgment-morning
+title: I Dreamed Of The Great Judgment Morning
+artist: Hank Williams
+composers:
+- Bertram H. Shadduck
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: idreamedofthegreatjudgmentmorninglyricschords.pro
+    imported_at: '2026-07-26'

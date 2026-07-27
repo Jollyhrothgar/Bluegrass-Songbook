@@ -1,0 +1,15 @@
+id: jack-o-diamonds
+title: Jack O' Diamonds
+composers:
+- Traditional
+default_key: G
+notes: Also known as "Rye Whiskey."
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: jackodiamondslyricschords.pro
+    imported_at: '2026-07-26'

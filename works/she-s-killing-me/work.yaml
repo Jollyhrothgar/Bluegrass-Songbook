@@ -1,0 +1,15 @@
+id: she-s-killing-me
+title: She's Killing Me
+artist: Bob Wills
+composers:
+- Claude Nichols
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sheskillingmelyricschords.pro
+    imported_at: '2026-07-26'

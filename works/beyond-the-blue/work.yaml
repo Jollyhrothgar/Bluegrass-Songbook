@@ -1,0 +1,14 @@
+id: beyond-the-blue
+title: Beyond the Blue
+composers:
+- Beth Nielsen Chapman
+default_key: Em
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: beyondthebluelyricschords.pro
+    imported_at: '2026-07-26'

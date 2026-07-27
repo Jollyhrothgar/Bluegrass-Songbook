@@ -1,0 +1,13 @@
+id: sweet-melody
+title: Sweet Melody
+artist: Billy Joe Shaver
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sweetmelodylyricschords.pro
+    imported_at: '2026-07-26'

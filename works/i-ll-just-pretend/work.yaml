@@ -1,0 +1,15 @@
+id: i-ll-just-pretend
+title: I'll Just Pretend
+artist: J.D. Crowe
+composers:
+- Jessie Mae Martin
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illjustpretendlyricschords.pro
+    imported_at: '2026-07-26'

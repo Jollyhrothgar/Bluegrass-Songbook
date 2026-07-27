@@ -1,0 +1,15 @@
+id: burning-bridges
+title: Burning Bridges
+artist: Garth Brooks
+composers:
+- Stephanie Brown and Garth Brooks
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: burningbridgeslyricsandchords.pro
+    imported_at: '2026-07-26'

@@ -1,0 +1,13 @@
+id: the-knoxville-girl
+title: The Knoxville Girl
+artist: Stonewall Jackson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theknoxvillegirllyricschords.pro
+    imported_at: '2026-07-26'

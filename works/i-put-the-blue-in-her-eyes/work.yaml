@@ -1,0 +1,15 @@
+id: i-put-the-blue-in-her-eyes
+title: I Put the Blue in Her Eyes
+artist: Carl Smith
+composers:
+- Larry Kingston
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iputtheblueinhereyeslyricschords.pro
+    imported_at: '2026-07-26'

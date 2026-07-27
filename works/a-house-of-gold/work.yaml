@@ -1,0 +1,13 @@
+id: a-house-of-gold
+title: A House of Gold
+artist: Hank Williams
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ahouseofgoldlyricschords.pro
+    imported_at: '2026-07-26'

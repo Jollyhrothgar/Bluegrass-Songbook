@@ -1,0 +1,15 @@
+id: o-holy-night
+title: O Holy Night
+artist: John Denver
+composers:
+- Adolphe Adam
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oholynightlyricschords.pro
+    imported_at: '2026-07-26'

@@ -1,0 +1,15 @@
+id: a-maiden-s-prayer
+title: A Maiden's Prayer
+artist: Bob Wills
+composers:
+- Bob Wills
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: amaidensprayerlyricschords.pro
+    imported_at: '2026-07-26'

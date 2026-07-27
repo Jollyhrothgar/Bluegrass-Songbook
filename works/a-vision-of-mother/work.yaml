@@ -1,0 +1,15 @@
+id: a-vision-of-mother
+title: A Vision Of Mother
+artist: Ricky Skaggs
+composers:
+- Ralph Stanley and Carter Stanley
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: avisionofmotherlyricschords.pro
+    imported_at: '2026-07-26'

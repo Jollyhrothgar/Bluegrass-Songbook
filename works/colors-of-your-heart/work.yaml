@@ -1,0 +1,15 @@
+id: colors-of-your-heart
+title: Colors of Your Heart
+artist: Emmylou Harris
+composers:
+- Rodney Crowell
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: colorsofyourheartlyricschords.pro
+    imported_at: '2026-07-26'

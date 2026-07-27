@@ -1,0 +1,13 @@
+id: the-burden-of-freedom
+title: The Burden of Freedom
+artist: Kris Kristofferson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theburdenoffreedomlyricschords.pro
+    imported_at: '2026-07-26'

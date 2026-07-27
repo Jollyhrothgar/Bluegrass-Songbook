@@ -1,0 +1,15 @@
+id: i-ll-never-love-another
+title: I'll Never Love Another
+artist: Earl Scruggs and Lester Flatt
+composers:
+- Lester Flatt
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illneverloveanotherlyricschords.pro
+    imported_at: '2026-07-26'

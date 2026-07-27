@@ -1,0 +1,13 @@
+id: boy-from-tupelo
+title: Boy from Tupelo
+artist: Emmylou Harris
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: boyfromtupelolyricschords.pro
+    imported_at: '2026-07-26'

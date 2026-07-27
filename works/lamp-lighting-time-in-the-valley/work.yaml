@@ -1,0 +1,15 @@
+id: lamp-lighting-time-in-the-valley
+title: Lamp Lighting Time In The Valley
+artist: Marty Robbins
+composers:
+- Harold Goodman, Sam C. Hart, Joe Lyons, Curt Poulton, Dean Upson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: lamplightingtimeinthevalleylyricschords.pro
+    imported_at: '2026-07-26'

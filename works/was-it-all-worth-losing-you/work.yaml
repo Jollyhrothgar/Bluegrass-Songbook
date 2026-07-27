@@ -1,0 +1,15 @@
+id: was-it-all-worth-losing-you
+title: Was It All Worth Losing You
+artist: Charlie Pride
+composers:
+- Audie Murphy and Terri Eddlemon
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wasitallworthlosingyoulyricschords.pro
+    imported_at: '2026-07-26'
