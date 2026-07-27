@@ -6,6 +6,7 @@ tags:
 - Instrumental
 - Scruggs
 - Folk
+- Bluegrass
 parts:
 - type: lead-sheet
   format: chordpro
@@ -34,3 +35,72 @@ parts:
     source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3243
     author: MandoTom2
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-19887.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '19887'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=19887
+    author: Tim Purcell
+    difficulty: Intermediate
+    tuning: Double C (gCGCD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11736.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11736'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11736
+    author: Banjoker
+    difficulty: Intermediate
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-23398.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '23398'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23398
+    author: Yohansen
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11829.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11829'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11829
+    author: s.parks
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11830.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11830'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11830
+    author: s.parks
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin-3244.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '3244'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3244
+    author: MandoTom2
+    difficulty: Expert
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'

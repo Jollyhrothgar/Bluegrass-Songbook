@@ -209,21 +209,49 @@ When determining the work's source for attribution:
 
 This ensures works with both a TuneArch lead sheet and a Banjo Hangout tab show "tunearch" as the source.
 
-### Tablature Attribution
+### Tablature Attribution & Arrangements
 
-Tablature parts include provenance for frontend attribution:
+A work can hold several tablature arrangements of the SAME instrument. The
+frontend renders that as a hierarchy: **instrument** (pill) → **arrangement**
+(selector) → **tracks** (mixer). Each entry in `tablature_parts`:
 
 ```json
 "tablature_parts": [{
   "instrument": "banjo",
-  "file": "data/tabs/red-haired-boy-banjo.otf.json",
+  "file": "data/tabs/red-haired-boy-banjo-11059.otf.json",
   "source": "banjo-hangout",
-  "source_id": "1687",
+  "source_id": "11059",
   "author": "schlange",
-  "source_page_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=1687",
-  "author_url": "https://www.banjohangout.org/my/schlange"
+  "source_page_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=11059",
+  "author_url": "https://www.banjohangout.org/my/schlange",
+  "default": true,
+  "difficulty": "Intermediate",
+  "tuning": "Standard Open G (gDGBD)"
 }]
 ```
+
+| Field | Notes |
+|-------|-------|
+| `instrument` | grouping key for the instrument pill |
+| `file` | ALWAYS `data/tabs/{work}-{instrument}-{source_id}.otf.json` — instrument alone is no longer unique (parts with no source_id fall back to `-p{position}`) |
+| `default` | exactly ONE true per instrument per work |
+| `difficulty` / `tuning` | optional, from part provenance (the Hangout listing) |
+| `label` | only when work.yaml sets one |
+
+**Default arrangement** = the `tab_pins:` entry in `curation/registry.yaml`
+if present, else the FIRST part listed for that instrument in `work.yaml`
+(so imports keep the default they already had when alternates land later).
+Resolved by `curation.apply_tab_defaults()` at build time.
+
+```bash
+./scripts/utility curate pin-tab <work-id> <instrument> <source_id>
+```
+
+Inside `works/`, the first arrangement of an instrument keeps the bare
+`{instrument}.otf.json`; alternates are `{instrument}-{source_id}.otf.json`.
+The copy step derives published names from the part, and deletes orphaned
+`docs/data/tabs/` files (renames, deletions, re-imports) — hand-placed
+fixtures that don't match the generated shape are left alone.
 
 ### Strum Machine Matching
 
@@ -259,10 +287,14 @@ in `curation/registry.yaml` at the repo root — not in `works/*/work.yaml`:
 frontend's Arrangement pill reads these). Importers call `is_suppressed()`
 so suppressed works are never re-created from sources.
 
+- **Tab pins**: which tablature arrangement is the default for a given
+  work + instrument (`tab_pins: {work-id: {instrument: source_id}}`)
+
 ```bash
 ./scripts/utility curate report                # groups without a canonical pin
 ./scripts/utility curate pin <canonical-id> [variant-id ...] [--label LABEL]
 ./scripts/utility curate suppress <work-id> --reason "..."
+./scripts/utility curate pin-tab <work-id> <instrument> <source_id>
 ```
 
 ### Deleted-Songs Sync
@@ -311,7 +343,8 @@ class Part:
     file: str           # Relative path to file
     default: bool       # Is this the default part?
     instrument: str     # Optional: 'banjo', 'fiddle', 'guitar'
-    provenance: dict    # Source info (source, source_file, imported_at)
+    provenance: dict    # Source info (source, source_id, source_file,
+                        # author, difficulty, tuning, imported_at)
 
 @dataclass
 class Work:
@@ -323,6 +356,13 @@ class Work:
     tags: list[str]
     parts: list[Part]
 ```
+
+### Validation
+
+`validate_work(work)` returns a list of problems (empty = valid). Several
+tablature parts may share an `instrument` — they're alternate arrangements
+— but `(instrument, provenance.source_id)` must be unique within a work,
+and part filenames must not repeat.
 
 ---
 

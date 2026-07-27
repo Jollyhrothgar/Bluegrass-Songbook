@@ -6,6 +6,8 @@ tags:
 - Instrumental
 - Scruggs
 - Bluegrass
+- OldTime
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -54,3 +56,71 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12124
     author: Mirek Tim Patek
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-17542.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '17542'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=17542
+    author: banjoman 1
+    difficulty: Intermediate
+    tuning: aDGBD
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-17670.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '17670'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=17670
+    author: banjoman 1
+    difficulty: Intermediate
+    tuning: aDGBD
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-16138.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16138'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16138
+    author: janolov
+    difficulty: Intermediate
+    tuning: Double C (gCGCD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-22933.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '22933'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=22933
+    author: AndyW
+    difficulty: Beginner
+    tuning: Double C (gCGCD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11519.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11519'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11519
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11684.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11684'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11684
+    author: schlange
+    imported_at: '2026-07-27'

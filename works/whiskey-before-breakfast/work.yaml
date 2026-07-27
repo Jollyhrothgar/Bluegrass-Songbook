@@ -50,3 +50,27 @@ parts:
     source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3241
     author: MandoTom2
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin-3242.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '3242'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3242
+    author: MandoTom2
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin-3229.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '3229'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3229
+    author: MandoTom2
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'

@@ -19,9 +19,14 @@ import yaml
 class Provenance:
     """Tracks where content came from for attribution and debugging."""
     source: str  # 'classic-country', 'manual', 'tef-import', 'user-submission'
+    source_id: Optional[str] = None  # Upstream id (e.g. Hangout tab id) —
+    # also the arrangement identity: a work may hold several tablature parts
+    # for one instrument, one per source_id.
     source_file: Optional[str] = None  # Original filename
     source_url: Optional[str] = None  # Original URL if scraped
     author: Optional[str] = None  # Who created/tabbed it
+    difficulty: Optional[str] = None  # Listing skill level ('Intermediate')
+    tuning: Optional[str] = None  # Listing tuning ('Standard Open G (gDGBD)')
     submitted_by: Optional[str] = None  # Username for submissions
     submitted_at: Optional[str] = None  # Date submitted
     imported_at: Optional[str] = None  # Date migrated to works/
@@ -30,7 +35,14 @@ class Provenance:
 
 @dataclass
 class Part:
-    """A single part within a work (lead sheet, tablature, notation)."""
+    """A single part within a work (lead sheet, tablature, notation).
+
+    Several tablature parts may share one ``instrument`` — they are
+    alternate arrangements of the same instrument, distinguished by
+    ``provenance.source_id``. Which one shows first is an editorial
+    decision (curation/registry.yaml ``tab_pins:``), defaulting to the
+    first part listed for that instrument.
+    """
     type: str  # 'lead-sheet', 'tablature', 'melody'
     format: str  # 'chordpro', 'htf', 'abc'
     file: str  # Filename within work directory
@@ -121,12 +133,18 @@ class Work:
                     p['label'] = part.label
                 if part.provenance:
                     prov = {'source': part.provenance.source}
+                    if part.provenance.source_id:
+                        prov['source_id'] = part.provenance.source_id
                     if part.provenance.source_file:
                         prov['source_file'] = part.provenance.source_file
                     if part.provenance.source_url:
                         prov['source_url'] = part.provenance.source_url
                     if part.provenance.author:
                         prov['author'] = part.provenance.author
+                    if part.provenance.difficulty:
+                        prov['difficulty'] = part.provenance.difficulty
+                    if part.provenance.tuning:
+                        prov['tuning'] = part.provenance.tuning
                     if part.provenance.submitted_by:
                         prov['submitted_by'] = part.provenance.submitted_by
                     if part.provenance.submitted_at:
@@ -161,9 +179,12 @@ class Work:
                 pv = p['provenance']
                 prov = Provenance(
                     source=pv.get('source', 'unknown'),
+                    source_id=pv.get('source_id'),
                     source_file=pv.get('source_file'),
                     source_url=pv.get('source_url'),
                     author=pv.get('author'),
+                    difficulty=pv.get('difficulty'),
+                    tuning=pv.get('tuning'),
                     submitted_by=pv.get('submitted_by'),
                     submitted_at=pv.get('submitted_at'),
                     imported_at=pv.get('imported_at'),
@@ -194,6 +215,73 @@ class Work:
             external=external,
             parts=parts,
         )
+
+
+def tablature_key(part) -> tuple:
+    """Arrangement identity of a tablature part: (instrument, source_id).
+
+    Accepts either a :class:`Part` or a raw work.yaml part dict.
+    """
+    if isinstance(part, dict):
+        instrument = part.get('instrument')
+        source_id = (part.get('provenance') or {}).get('source_id')
+    else:
+        instrument = part.instrument
+        source_id = part.provenance.source_id if part.provenance else None
+    return (instrument, str(source_id) if source_id is not None else None)
+
+
+def validate_work(work) -> list[str]:
+    """Return a list of schema problems (empty list = valid).
+
+    Accepts a :class:`Work` or a raw work.yaml dict.
+
+    Multiple tablature parts may share an instrument (alternate
+    arrangements), but each (instrument, source_id) pair must be unique —
+    two parts with the same pair are the same arrangement imported twice
+    and would collide on the published ``docs/data/tabs/`` filename.
+    Parts with no source_id can't be told apart, so at most one such part
+    per instrument is allowed.
+    """
+    errors = []
+
+    if isinstance(work, dict):
+        work_id = work.get('id')
+        parts = work.get('parts') or []
+        part_files = [p.get('file') for p in parts]
+        tabs = [p for p in parts if p.get('type') == 'tablature']
+    else:
+        work_id = work.id
+        parts = work.parts or []
+        part_files = [p.file for p in parts]
+        tabs = [p for p in parts if p.type == 'tablature']
+
+    if not work_id:
+        errors.append("work has no id")
+
+    seen_files = set()
+    for name in part_files:
+        if name in seen_files:
+            errors.append(f"duplicate part file '{name}'")
+        seen_files.add(name)
+
+    seen_keys = set()
+    for part in tabs:
+        key = tablature_key(part)
+        if key in seen_keys:
+            instrument, source_id = key
+            if source_id is None:
+                errors.append(
+                    f"two tablature parts for instrument '{instrument}' with no "
+                    f"provenance.source_id — alternate arrangements must carry "
+                    f"a source_id to be distinguishable")
+            else:
+                errors.append(
+                    f"duplicate tablature arrangement "
+                    f"instrument='{instrument}' source_id='{source_id}'")
+        seen_keys.add(key)
+
+    return errors
 
 
 def slugify(text: str) -> str:

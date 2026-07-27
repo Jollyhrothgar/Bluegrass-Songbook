@@ -756,10 +756,12 @@
       "tuning": "Standard",
       "key": "G",
       "difficulty": "Expert",
-      "status": "converted",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:25.422216",
       "downloaded_at": "2026-07-26T22:08:31.457968",
-      "converted_at": "2026-07-26T22:20:04.253317"
+      "converted_at": "2026-07-26T22:20:04.253317",
+      "imported_at": "2026-07-27T14:06:04.603931",
+      "work_slug": "foggy-mountain-breakdown"
     },
     "3012_tef": {
       "id": "3012_tef",

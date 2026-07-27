@@ -9,6 +9,7 @@ tags:
 - Scruggs
 - Bluegrass
 - Folk
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -47,3 +48,49 @@ parts:
     source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3285
     author: MandoTom2
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-21413.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21413'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21413
+    author: banjoman 1
+    difficulty: Intermediate
+    tuning: Double C (gCGCD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-16629.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16629'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16629
+    author: Julian44_4
+    difficulty: Intermediate
+    tuning: Double C (gCGCD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-10994.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '10994'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10994
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin-3286.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '3286'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3286
+    author: MandoTom2
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'

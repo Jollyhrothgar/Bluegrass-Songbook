@@ -6782,6 +6782,7 @@ mark {
     .song-meta,
     .song-nav-bar,
     .part-tabs,
+    .arr-host,
     .tab-controls,
     #exit-fullscreen-btn,
     .header-badge {
@@ -7257,6 +7258,9 @@ mark {
 }
 
 .part-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
     padding: 0.35rem 0.9rem;
     border: 1px solid var(--border);
     background: var(--bg-secondary);
@@ -7275,6 +7279,151 @@ mark {
     border-color: var(--accent);
     color: #fff;
     font-weight: 500;
+}
+
+/* Count badge: how many arrangements sit behind this instrument pill.
+   Rendered only when there's more than one — "1" on every pill is noise. */
+.part-tab-count {
+    font-size: var(--font-xs);
+    line-height: 1.4;
+    padding: 0 0.4rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+}
+
+.part-tab.active .part-tab-count {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+/* ============================================
+   ARRANGEMENT BAR (tier 2: whose take of this instrument you're reading)
+   Instrument pill → arrangement bar → track mixer.
+   ============================================ */
+
+.arr-host {
+    margin-bottom: var(--space-lg);
+}
+
+.arr-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    width: 100%;
+    text-align: left;
+    font: inherit;
+    padding: 0.45rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-secondary);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.arr-bar:hover {
+    border-color: var(--accent);
+}
+
+/* One arrangement: a quiet byline, nothing to open. */
+.arr-bar.is-single {
+    background: transparent;
+    border-style: dashed;
+    cursor: default;
+}
+
+.arr-bar.is-single:hover {
+    border-color: var(--border);
+}
+
+.arr-who {
+    font-weight: 600;
+}
+
+.arr-meta {
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+}
+
+/* The curation pin — the default everyone lands on. */
+.arr-pin {
+    color: var(--success);
+    font-size: var(--font-sm);
+}
+
+.arr-count {
+    margin-left: auto;
+    color: var(--accent);
+    font-size: var(--font-sm);
+    white-space: nowrap;
+}
+
+.arr-list {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    margin-top: 0.35rem;
+    overflow: hidden;
+}
+
+.arr-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    width: 100%;
+    text-align: left;
+    font: inherit;
+    padding: 0.45rem 0.7rem;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.arr-item:last-child {
+    border-bottom: 0;
+}
+
+.arr-item:hover {
+    background: var(--bg-secondary);
+}
+
+.arr-item.is-selected {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.arr-item .arr-pin {
+    min-width: 0.8em;
+}
+
+.arr-item .arr-src {
+    margin-left: auto;
+    color: var(--text-secondary);
+    font-size: var(--font-xs);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.arr-bar:focus-visible,
+.arr-item:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+}
+
+@media (max-width: 600px) {
+    /* Metadata is the first thing to go when the row can't hold it all —
+       author, count and source stay. */
+    .arr-bar .arr-meta {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .arr-item .arr-meta {
+        display: none;
+    }
 }
 
 /* Tablature view in song view */

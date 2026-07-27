@@ -39,3 +39,15 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=14695
     author: Mirek Tim Patek
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin-3124.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '3124'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3124
+    author: MandoTom2
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'

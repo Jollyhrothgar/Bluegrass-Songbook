@@ -7,6 +7,8 @@ tags:
 - Fiddle
 - Scruggs
 - Bluegrass
+- OldTime
+- Clawhammer
 status: placeholder
 notes: Classic fiddle tune in C. A jam session staple.
 parts:
@@ -40,3 +42,47 @@ parts:
     source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2367
     author: Live on What You Grow
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-21997.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21997'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21997
+    author: JanetB
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-22001.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '22001'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=22001
+    author: JanetB
+    difficulty: Intermediate
+    tuning: Open C (gCGCE)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11598.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11598'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11598
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11596.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11596'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11596
+    author: schlange
+    imported_at: '2026-07-27'

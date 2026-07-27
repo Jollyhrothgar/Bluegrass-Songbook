@@ -159,6 +159,60 @@ function tabLabel(instrument) {
     return `${pretty} Tab`;
 }
 
+/** "banjo-hangout" -> "Banjo Hangout" (source ids are slugs) */
+function prettySource(source) {
+    if (!source) return '';
+    return String(source).split(/[-_]/)
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+}
+
+// Fields that belong to ONE arrangement (not to the instrument). Selecting a
+// different arrangement copies these onto the part, so every downstream
+// reader (renderTablaturePart, the edit session, the attribution line)
+// follows the loaded take without needing to know arrangements exist.
+// `label` is deliberately NOT here: the pill's label (and therefore its
+// partId, which is a URL) belongs to the instrument and must not move when
+// the reader switches takes.
+const ARRANGEMENT_FIELDS = [
+    'file', 'source', 'source_id', 'author', 'source_page_url', 'author_url',
+    'difficulty', 'tuning',
+];
+
+/**
+ * Order an instrument's arrangements default-first.
+ *
+ * New index shape: exactly one row per instrument carries `default: true`
+ * (the curation pin). Old shape: no row has the field at all — the sole
+ * row is then the default by position. Tolerant of both, and of a bad
+ * multi-default group (all flagged rows float up, original order kept).
+ */
+function sortArrangements(tabs) {
+    const pinned = tabs.filter(t => t.default === true);
+    if (!pinned.length) return [...tabs];
+    return [...pinned, ...tabs.filter(t => t.default !== true)];
+}
+
+/** The arrangement currently loaded for a tablature part (null for others). */
+function activeArrangement(part) {
+    if (!part?.arrangements?.length) return null;
+    return part.arrangements[part.arrangementIndex || 0] || null;
+}
+
+/**
+ * Point a tablature part at one of its arrangements. Returns true when the
+ * selection actually changed. `part` is rebuilt on every openWork, so the
+ * choice resets to the default on work navigation for free.
+ */
+function applyArrangement(part, index) {
+    if (!part?.arrangements?.length) return false;
+    const i = Math.max(0, Math.min(index, part.arrangements.length - 1));
+    if (i === (part.arrangementIndex || 0)) return false;
+    part.arrangementIndex = i;
+    const arr = part.arrangements[i];
+    for (const f of ARRANGEMENT_FIELDS) part[f] = arr[f];
+    return true;
+}
+
 function buildPartsFromIndex(song) {
     const parts = [];
 
@@ -175,21 +229,32 @@ function buildPartsFromIndex(song) {
         });
     }
 
-    if (song.tablature_parts) {
+    // Tablature: ONE part (= one pill) per instrument, carrying that
+    // instrument's arrangements sorted default-first. A work with twelve
+    // banjo takes is still a single "Banjo Tab" pill; which take you read
+    // is page state under it, so #work/{id}/banjo-tab stays meaningful.
+    if (song.tablature_parts?.length) {
+        const byInstrument = new Map();
         for (const tab of song.tablature_parts) {
-            parts.push({
+            const key = tab.instrument || '';
+            if (!byInstrument.has(key)) byInstrument.set(key, []);
+            byInstrument.get(key).push(tab);
+        }
+
+        for (const tabs of byInstrument.values()) {
+            const arrangements = sortArrangements(tabs);
+            const primary = arrangements[0];
+            const part = {
                 type: 'tablature',
                 format: 'otf',
-                instrument: tab.instrument,
-                label: tab.label || tabLabel(tab.instrument),
-                file: tab.file,
+                instrument: primary.instrument,
+                label: primary.label || tabLabel(primary.instrument),
                 default: !song.content,
-                source: tab.source,
-                source_id: tab.source_id,
-                author: tab.author,
-                source_page_url: tab.source_page_url,
-                author_url: tab.author_url,
-            });
+                arrangements,
+                arrangementIndex: 0,
+            };
+            for (const f of ARRANGEMENT_FIELDS) part[f] = primary[f];
+            parts.push(part);
         }
     }
 
@@ -223,6 +288,20 @@ function buildPartsFromIndex(song) {
         const base = slugify(part.label || part.instrument || part.type);
         slugCounts[base] = (slugCounts[base] || 0) + 1;
         part.partId = slugCounts[base] === 1 ? base : `${base}-${slugCounts[base]}`;
+    }
+
+    // Alternate slugs a tablature part also answers to, so links minted
+    // before arrangements were grouped (one part per tab, slugged from that
+    // tab's own label) still land on the right instrument.
+    for (const part of parts) {
+        if (part.type !== 'tablature') continue;
+        const aliases = new Set([slugify(tabLabel(part.instrument))]);
+        if (part.instrument) aliases.add(slugify(part.instrument));
+        for (const arr of part.arrangements || []) {
+            if (arr.label) aliases.add(slugify(arr.label));
+        }
+        aliases.delete(part.partId);
+        part.aliases = [...aliases].filter(Boolean);
     }
 
     return parts;
@@ -330,11 +409,12 @@ export async function openWork(workId, options = {}) {
     // Active part: requested via deep link / part-qualified ref, else default
     activePart = null;
     if (partId) {
-        activePart = availableParts.find(p =>
-            p.partId === partId ||
-            p.instrument === partId ||
-            p.type === partId
-        ) || null;
+        activePart = availableParts.find(p => p.partId === partId) ||
+            availableParts.find(p =>
+                p.instrument === partId ||
+                p.type === partId ||
+                p.aliases?.includes(partId)
+            ) || null;
     }
     if (!activePart) {
         activePart = availableParts.find(p => p.default) || availableParts[0] || null;
@@ -418,11 +498,20 @@ export function renderWorkView() {
     const tabs = renderPartTabs();
     if (tabs) container.appendChild(tabs);
 
+    // Arrangement bar: whose take of the active instrument you're reading
+    // (filled by renderArrangementBar; empty + hidden for non-tab parts)
+    const arrHost = document.createElement('div');
+    arrHost.className = 'arr-host hidden';
+    arrHost.id = 'arrangement-host';
+    container.appendChild(arrHost);
+
     // Content area for the active part
     const content = document.createElement('div');
     content.className = 'work-part-content';
     content.id = 'work-part-content';
     container.appendChild(content);
+
+    renderArrangementBar();
 
     if (activePart) {
         renderActivePart(content, isInitial);
@@ -472,10 +561,13 @@ function selectPart(part) {
     setBottomBand(null);
 
     activePart = part;
+    part.arrangementsOpen = false;   // never hand over an open catalog
 
     document.querySelectorAll('#part-tabs .part-tab').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.partId === part.partId);
     });
+
+    renderArrangementBar();
 
     const content = document.getElementById('work-part-content');
     if (content) {
@@ -546,11 +638,154 @@ function renderPartTabs() {
         const btn = document.createElement('button');
         btn.className = 'part-tab' + (part === activePart ? ' active' : '');
         btn.dataset.partId = part.partId;
-        btn.textContent = part.label || part.type;
+        const n = part.arrangements?.length || 0;
+        // Badge only when there's a choice to be made — a lone arrangement
+        // is just "the tab", and "1" would be noise on every other pill.
+        btn.innerHTML = escapeHtml(part.label || part.type) +
+            (n > 1 ? `<span class="part-tab-count">${n}</span>` : '');
         btn.addEventListener('click', () => selectPart(part));
         bar.appendChild(btn);
     }
     return bar;
+}
+
+// ============================================
+// ARRANGEMENT BAR (which take of this instrument you're reading)
+// ============================================
+
+/** Human "Intermediate · Open G · Banjo Hangout" for one arrangement. */
+function arrangementMeta(arr, { withSource = true } = {}) {
+    return [arr.difficulty, arr.tuning, withSource ? prettySource(arr.source) : null]
+        .filter(Boolean).join(' · ');
+}
+
+function arrangementWho(arr) {
+    return arr.author || arr.label || 'Unattributed';
+}
+
+/**
+ * Render (or clear) the arrangement bar into its host. Shown for tablature
+ * parts only: a one-line byline when there's a single take, a clickable
+ * summary + expandable catalog when there's more than one.
+ *
+ * The chosen arrangement is page state, NOT a URL segment — shared links
+ * stay instrument-shaped and survive a re-pin.
+ */
+function renderArrangementBar() {
+    const host = document.getElementById('arrangement-host');
+    if (!host) return;
+    host.innerHTML = '';
+
+    const part = activePart;
+    const arrangements = part?.type === 'tablature' ? part.arrangements : null;
+    if (!arrangements?.length) {
+        host.classList.add('hidden');
+        return;
+    }
+    host.classList.remove('hidden');
+
+    const index = part.arrangementIndex || 0;
+    const cur = arrangements[index];
+    const single = arrangements.length === 1;
+    const meta = arrangementMeta(cur);
+    const isPinned = i => i === 0;   // sorted default-first at build time
+
+    const summary = document.createElement(single ? 'div' : 'button');
+    summary.className = 'arr-bar' + (single ? ' is-single' : '');
+    if (!single) {
+        summary.type = 'button';
+        summary.setAttribute('aria-expanded', String(!!part.arrangementsOpen));
+        summary.setAttribute('aria-controls', 'arr-list');
+    }
+    summary.innerHTML = `
+        ${isPinned(index) ? '<span class="arr-pin" title="Editor\'s pick">★</span>' : ''}
+        <span class="arr-who">${escapeHtml(arrangementWho(cur))}</span>
+        ${meta ? `<span class="arr-meta">${escapeHtml(meta)}</span>` : ''}
+        ${single ? '' : `<span class="arr-count">${arrangements.length} arrangements ${
+            part.arrangementsOpen ? '▴' : '▾'}</span>`}
+    `;
+    host.appendChild(summary);
+
+    if (single) return;
+
+    summary.addEventListener('click', () => {
+        part.arrangementsOpen = !part.arrangementsOpen;
+        renderArrangementBar();
+        if (part.arrangementsOpen) {
+            document.querySelector('#arr-list .arr-item.is-selected')?.focus();
+        } else {
+            document.querySelector('.arr-bar')?.focus();
+        }
+    });
+
+    if (!part.arrangementsOpen) return;
+
+    const list = document.createElement('div');
+    list.className = 'arr-list';
+    list.id = 'arr-list';
+    list.setAttribute('role', 'listbox');
+    list.setAttribute('aria-label', `${part.label || 'Tab'} arrangements`);
+
+    arrangements.forEach((arr, i) => {
+        const item = document.createElement('button');
+        item.type = 'button';
+        item.className = 'arr-item' + (i === index ? ' is-selected' : '');
+        item.setAttribute('role', 'option');
+        item.setAttribute('aria-selected', String(i === index));
+        const rowMeta = arrangementMeta(arr, { withSource: false });
+        item.innerHTML = `
+            <span class="arr-pin" ${isPinned(i)
+                ? 'title="Editor&#39;s pick" aria-label="Editor&#39;s pick">★' : '>'}</span>
+            <span class="arr-who">${escapeHtml(arrangementWho(arr))}</span>
+            ${rowMeta ? `<span class="arr-meta">${escapeHtml(rowMeta)}</span>` : ''}
+            <span class="arr-src">${escapeHtml(prettySource(arr.source))}</span>
+        `;
+        item.addEventListener('click', () => selectArrangement(part, i));
+        list.appendChild(item);
+    });
+
+    // Roving arrows inside the catalog; Esc closes it. Enter/Space are the
+    // buttons' own defaults.
+    list.addEventListener('keydown', (e) => {
+        const items = [...list.querySelectorAll('.arr-item')];
+        const at = items.indexOf(document.activeElement);
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            const next = e.key === 'ArrowDown' ? at + 1 : at - 1;
+            items[(next + items.length) % items.length]?.focus();
+        } else if (e.key === 'Escape') {
+            e.preventDefault();
+            part.arrangementsOpen = false;
+            renderArrangementBar();
+            document.querySelector('.arr-bar')?.focus();
+        }
+    });
+
+    host.appendChild(list);
+}
+
+/**
+ * Load a different arrangement of the active instrument: swap the rendered
+ * tab (and with it the mixer, player and attribution, which all read the
+ * part's arrangement fields) while leaving the URL alone.
+ */
+function selectArrangement(part, index) {
+    const changed = applyArrangement(part, index);
+    part.arrangementsOpen = false;
+
+    if (changed) {
+        teardownTablatureView();
+        setBottomBand(null);
+        setLoadedTablature(null);   // force a fetch of the new OTF
+        const content = document.getElementById('work-part-content');
+        if (content) {
+            content.innerHTML = '';
+            renderActivePart(content, false);
+        }
+    }
+
+    renderArrangementBar();
+    document.querySelector('.arr-bar')?.focus();
 }
 
 /**
@@ -1613,8 +1848,10 @@ async function renderTablaturePart(part, container) {
             editBtn.addEventListener('click', () => enterTabEditMode(otf, part, container));
         }
 
-        // Add attribution section for Banjo Hangout tabs
-        if (part.source === 'banjo-hangout') {
+        // Credit the arrangement that's actually on screen — `part` carries
+        // the loaded arrangement's fields (see applyArrangement), so this
+        // follows an arrangement switch instead of naming the pinned default.
+        if (part.author || part.source_page_url) {
             const attribution = document.createElement('div');
             attribution.className = 'tab-attribution';
 
@@ -1622,14 +1859,15 @@ async function renderTablaturePart(part, container) {
             if (part.author) {
                 attrHtml += '<span class="attribution-item">Tabbed by ';
                 if (part.author_url) {
-                    attrHtml += `<a href="${part.author_url}" target="_blank" rel="noopener">${escapeHtml(part.author)}</a>`;
+                    attrHtml += `<a href="${escapeHtml(part.author_url)}" target="_blank" rel="noopener">${escapeHtml(part.author)}</a>`;
                 } else {
                     attrHtml += escapeHtml(part.author);
                 }
                 attrHtml += '</span>';
             }
             if (part.source_page_url) {
-                attrHtml += `<span class="attribution-item"><a href="${part.source_page_url}" target="_blank" rel="noopener">View on Banjo Hangout</a></span>`;
+                const where = prettySource(part.source) || 'the source site';
+                attrHtml += `<span class="attribution-item"><a href="${escapeHtml(part.source_page_url)}" target="_blank" rel="noopener">View on ${escapeHtml(where)}</a></span>`;
             }
             attrHtml += '</div>';
             attrHtml += '<div class="attribution-disclaimer">';
@@ -2161,5 +2399,10 @@ export {
     currentWork,
     activePart,
     availableParts,
-    buildPartsFromIndex
+    buildPartsFromIndex,
+    sortArrangements,
+    applyArrangement,
+    activeArrangement,
+    prettySource,
+    tabLabel
 };

@@ -8,6 +8,7 @@ tags:
 - OldTime
 - Clawhammer
 - Bluegrass
+- Scruggs
 parts:
 - type: tablature
   instrument: banjo
@@ -40,3 +41,62 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=14667
     author: Mirek Tim Patek
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-16056.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16056'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16056
+    author: janolov
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-24734.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24734'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24734
+    author: ndlxs
+    difficulty: Intermediate
+    tuning: Sawmill (gDGCD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-17695.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '17695'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=17695
+    author: Treetops
+    difficulty: Intermediate
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-24908.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24908'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24908
+    author: mmuussiiccaall
+    difficulty: Expert
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-21892.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21892'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21892
+    author: HOWDYDOODY
+    difficulty: Beginner
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'

@@ -39,3 +39,15 @@ parts:
     source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2617
     author: MandoTom2
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin-1638.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '1638'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=1638
+    author: MandoTom2
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'

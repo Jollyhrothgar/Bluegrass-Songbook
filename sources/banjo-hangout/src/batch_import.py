@@ -165,7 +165,8 @@ def cmd_import(args):
         catalog,
         limit=args.limit,
         dry_run=args.dry_run,
-        site=site
+        site=site,
+        create_new_works=not args.no_new_works,
     )
 
     if not args.dry_run:
@@ -251,6 +252,9 @@ def main():
                                        help='Import to works/')
     imp_parser.add_argument('--limit', type=int, help='Maximum tabs to import')
     imp_parser.add_argument('--dry-run', action='store_true', help='Show what would be imported')
+    imp_parser.add_argument('--no-new-works', action='store_true',
+                            help='Only add arrangements to existing works '
+                                 '(never mint a new work)')
 
     # stats
     subparsers.add_parser('stats', parents=[site_parser],

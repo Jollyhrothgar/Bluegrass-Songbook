@@ -295,10 +295,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Expert",
-      "status": "converted",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166695",
       "downloaded_at": "2026-07-26T22:09:41.247748",
-      "converted_at": "2026-07-26T22:20:04.580339"
+      "converted_at": "2026-07-26T22:20:04.580339",
+      "imported_at": "2026-07-27T14:06:04.449963",
+      "work_slug": "blackberry-blossom"
     },
     "3435_tef": {
       "id": "3435_tef",
@@ -1679,10 +1681,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "converted",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166901",
       "downloaded_at": "2026-07-26T22:09:57.700146",
-      "converted_at": "2026-07-26T22:20:04.661826"
+      "converted_at": "2026-07-26T22:20:04.661826",
+      "imported_at": "2026-07-27T14:06:04.762147",
+      "work_slug": "red-wing"
     },
     "821_tef": {
       "id": "821_tef",

@@ -51,3 +51,15 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=14690
     author: Mirek Tim Patek
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: ensemble
+  format: otf
+  file: ensemble-2936.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2936'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2936
+    author: MandoTom2
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'

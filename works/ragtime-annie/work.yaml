@@ -6,6 +6,7 @@ tags:
 - Instrumental
 - Scruggs
 - OldTime
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -44,3 +45,25 @@ parts:
     source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2268
     author: onaroll
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-17674.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '17674'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=17674
+    author: banjoman 1
+    difficulty: Intermediate
+    tuning: aDGBD
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11047.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11047'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11047
+    author: schlange
+    imported_at: '2026-07-27'

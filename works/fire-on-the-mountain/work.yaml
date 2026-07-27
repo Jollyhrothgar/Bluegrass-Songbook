@@ -7,6 +7,7 @@ tags:
 - OldTime
 - Scruggs
 - Bluegrass
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -45,3 +46,25 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10591
     author: schlange
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-14208.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '14208'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=14208
+    author: LyleK
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-10592.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '10592'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10592
+    author: schlange
+    imported_at: '2026-07-27'

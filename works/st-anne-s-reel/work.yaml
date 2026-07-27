@@ -6,6 +6,7 @@ tags:
 - Instrumental
 - Fiddle
 - Bluegrass
+- Scruggs
 parts:
 - type: lead-sheet
   format: chordpro
@@ -44,4 +45,28 @@ parts:
     source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2956
     author: MandoTom2
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-20454.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '20454'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20454
+    author: schlange
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-20770.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '20770'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20770
+    author: smitchinson
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
 notes: Traditional reel. Very popular at jam sessions.

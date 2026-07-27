@@ -73,10 +73,18 @@ class TEFConverter:
                 print(f"Error converting {tef_path}: {error}")
                 return None, None
 
-            # Add source attribution
+            # Add source attribution. `source_id` is the tab detail id (the
+            # catalog key) — RECORD it here rather than leaving downstream
+            # checks to re-derive it from the storage filename: on the older
+            # Hangout scheme ({slug}-{n}.tef) that number is a per-file
+            # ATTACHMENT id in a different namespace, so a filename regex can
+            # never confirm the pairing. build_works_index's provenance gate
+            # compares work.yaml's source_id against this field.
             otf_dict['x_source'] = {
                 'type': self.site.source,
+                'source_id': tab.id.split('_')[0],
                 'url': tab.source_url,
+                'download_file': tef_path.name,  # debugging only — not an id
                 'author': tab.author,
                 'converted_at': datetime.now().isoformat(),
             }

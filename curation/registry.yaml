@@ -21,6 +21,11 @@
 #
 # tag_exclusions:                   # editorial tag removals (survive re-tagging)
 #   <work-id>: [TagName, ...]
+#
+# tab_pins:                         # default tablature arrangement per instrument
+#   <work-id>:
+#     <instrument>: "<source_id>"   # else the first part listed in work.yaml wins
+#                                   # ./scripts/utility curate pin-tab W banjo 12345
 groups:
   roll-in-my-sweet-baby-s-arms:
     variants:
@@ -200,3 +205,4 @@ tag_exclusions:
   - BluegrassStandard
   youve-been-fooling-me-baby:
   - BluegrassStandard
+tab_pins: {}

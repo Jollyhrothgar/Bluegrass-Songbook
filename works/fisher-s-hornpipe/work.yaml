@@ -44,3 +44,72 @@ parts:
     source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=1095
     author: onaroll
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-21500.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21500'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21500
+    author: corcoran
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-20168.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '20168'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20168
+    author: banjoman 1
+    difficulty: Intermediate
+    tuning: aDGBD
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-12660.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '12660'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12660
+    author: KI4PRK
+    difficulty: Expert
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-12659.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '12659'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12659
+    author: KI4PRK
+    difficulty: Expert
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-10734.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '10734'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10734
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-13853.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '13853'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=13853
+    author: Tono
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'

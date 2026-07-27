@@ -72,9 +72,27 @@ lead with the site's instrument and has 2+ melodic tracks is `ensemble`,
 and detection failure falls back to the site's instrument. So a banjo tab
 with guitar/bass backup stays `banjo.otf.json`, while a tenor-banjo or
 guitar arrangement posted on Banjo Hangout lands as
-`tenor-banjo.otf.json` / `guitar.otf.json`. The duplicate check is
-per-instrument, so a mandolin tab can join a work that already has a
-banjo tab.
+`tenor-banjo.otf.json` / `guitar.otf.json`.
+
+**Multiple arrangements per instrument**: the duplicate check is on the
+arrangement's identity — its `source_id` — not on the instrument. A work
+can hold several banjo tabs (the frontend groups instrument →
+arrangement → tracks). The first arrangement of an instrument keeps the
+bare `{instrument}.otf.json`; alternates land as
+`{instrument}-{source_id}.otf.json`. Which one shows by default is
+editorial: `./scripts/utility curate pin-tab <work> <instrument>
+<source_id>`, defaulting to the first part listed in work.yaml.
+
+**Strict-instrument gate**: on the sibling sites (mandolin/flatpicker/
+fiddle/reso) a conversion only imports when the detected instrument is the
+site's own or `ensemble` — otherwise a reso dobro written as
+`6-string-guitar`, or an instrument-less TEF defaulting to banjo, would be
+filed under the wrong instrument. Banjo Hangout is exempt: it genuinely
+hosts tenor-banjo, guitar and ensemble arrangements.
+
+`import --no-new-works` restricts a run to enriching existing works (used
+by arrangement-promotion passes, where minting new works needs its own
+title/curation review).
 
 Known gap: `tef_parser` defaults an instrument-less TEF to a 5-string
 banjo track, so such files import as `banjo` on any site. Teaching
@@ -305,24 +323,46 @@ parts:
     file: banjo.otf.json
     provenance:
       source: banjo-hangout
-      source_id: '1687'              # BH tab ID - REQUIRED for re-downloads
-      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/red_haired_boy-1687.tef
+      source_id: '11059'             # BH tab detail id - REQUIRED for re-downloads
+      source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11059
       author: "UserName"
+      difficulty: "Intermediate"     # optional, from the listing
+      tuning: "Standard Open G (gDGBD)"  # optional, from the listing
       imported_at: "2025-01-03"
 ```
 
+`source_id` is also the **arrangement identity**: it's what distinguishes
+two banjo tabs on one work, what the published
+`docs/data/tabs/{work}-{instrument}-{source_id}.otf.json` filename is keyed
+on, and what `curate pin-tab` names.
+
 ## Download URLs
 
-TEF files are hosted on `hangoutstorage.com`, not directly on banjohangout.org:
+TEF files are hosted on `hangoutstorage.com`, not directly on banjohangout.org.
+Two filename shapes exist, and **neither number is the tab id**:
 
 ```
-https://www.hangoutstorage.com/banjohangout.org/storage/tabs/{letter}/{filename}-{id}.tef
+older:  .../storage/tabs/{letter}/{slug}-{attachment_id}.tef
+newer:  .../storage/tabs/{letter}/tab-{slug}-{tab_id}-{timestamp}.tef
 ```
+
+⚠️ **The number in an older-shape filename is a per-file ATTACHMENT id in a
+different namespace than the tab id.** Tab `10545` ("Arkansas Traveler")
+ships `arkansas_traveller-426.tef`, `arkansas_traveler-428.gtp` and
+`arkansas_traveller-427.mid` — three attachment ids under one tab. Across
+the banjo-hangout catalog, attachment ids run 29–2999 while tab ids run
+10216–29391; they never collide.
 
 Example:
-- Tab ID: 1687
+- Tab detail id: 11059 (from the listing href `browse.asp?m=detail&v=11059`)
 - Title: "Red Haired Boy"
-- URL: `https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/red_haired_boy-1687.tef`
+- URL: `https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/red_haired_boy-1687.tef` (1687 = attachment id)
+
+So **never re-derive a tab id from a filename**. The converter records the id
+it used in the OTF's `x_source.source_id`, and `build_works_index`'s
+provenance gate compares that against `work.yaml`'s
+`provenance.source_id` — two recorded ids, no regex. Download URLs must
+always be scraped from the detail page href, never templated.
 
 ## File Naming in downloads/
 

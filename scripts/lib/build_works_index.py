@@ -74,8 +74,9 @@ from build_index import (
     KEYS,
 )
 
-from curation import (apply_curation, filter_suppressed, load_registry,
-                      load_prune_list, apply_index_prune, apply_tag_exclusions)
+from curation import (apply_curation, apply_tab_defaults, filter_suppressed,
+                      load_registry, load_prune_list, apply_index_prune,
+                      apply_tag_exclusions)
 
 
 def parse_chordpro_content(content: str) -> dict:
@@ -207,16 +208,42 @@ def compute_group_id(title: str, artist: str, lyrics: str) -> str:
     return f"{base_hash}_{lyrics_hash}"
 
 
+def published_tab_name(work_id: str, part: dict, position: int = 0) -> str:
+    """Filename for a tablature part inside docs/data/tabs/.
+
+    ``{work}-{instrument}-{source_id}.otf.json``. Since a work can carry
+    several arrangements per instrument, the source_id is always part of the
+    name — instrument alone is no longer unique. Parts without a source_id
+    (hand-uploaded TEFs) fall back to their position in work.yaml so they
+    still get a stable, collision-free name.
+    """
+    instrument = part.get('instrument') or 'tab'
+    source_id = (part.get('provenance') or {}).get('source_id')
+    suffix = str(source_id) if source_id else f"p{position}"
+    # Keep the name filesystem/URL-safe: ids are numeric upstream, but a
+    # hand-written provenance could carry anything.
+    suffix = re.sub(r'[^A-Za-z0-9]+', '-', suffix).strip('-') or f"p{position}"
+    return f"{work_id}-{instrument}-{suffix}.otf.json"
+
+
 def _tab_provenance_mismatch(otf_path: Path, prov_source_id):
-    """Detect an OTF built from the wrong TEF.
+    """Detect an OTF built from the wrong upstream tab.
 
-    Returns ``(prov_id, {embedded_ids})`` when the OTF's ``x_source`` names a
-    different source tab than ``prov_source_id`` (from work.yaml), else None.
+    Returns ``(prov_id, {otf_id})`` when the OTF's ``x_source.source_id``
+    disagrees with ``prov_source_id`` (from work.yaml), else None.
 
-    Conservative by design: only flags when BOTH a provenance source_id and an
-    embedded TEF id are present and disjoint. Tabs without ``x_source`` (older
-    imports) or without provenance never trip the gate, so enabling it can't
-    break the existing corpus — it only catches genuine mis-mappings.
+    The comparison is between two RECORDED ids: the converter stamps the tab
+    detail id it converted (``converter.TEFConverter.convert``) and the
+    importer stamps the same id into the part's provenance. An earlier version
+    of this gate re-derived the id with a regex over the storage filename
+    instead — but on the older Hangout scheme (``{slug}-{n}.tef``) that number
+    is a per-file ATTACHMENT id from a disjoint namespace (tab 10545 ships
+    ``arkansas_traveller-426.tef``), so the check could only ever produce
+    false positives there, never detect a real swap. Filenames are not ids.
+
+    Conservative by design: an OTF with no recorded ``x_source.source_id``
+    (pre-2026-07 conversions, hand-built or editor-authored tabs) yields no
+    verdict rather than a failure.
     """
     if not prov_source_id:
         return None
@@ -224,30 +251,10 @@ def _tab_provenance_mismatch(otf_path: Path, prov_source_id):
         data = json.loads(otf_path.read_text())
     except Exception:
         return None
-    xsrc = data.get('x_source') or {}
-    # x_source records the origin TEF as a bare "{id}.tef"/download filename in
-    # source_file, or a storage url. Filename shapes:
-    #   banjo-hangout:  {slug}-{id}.tef          -> id is the last digit run
-    #   sibling sites:  tab-{slug}-{id}-{ts}.tef -> id precedes the timestamp
-    #   bare download:  {id}.tef / {id}_{title}.tef
-    ids = set()
-    for key in ('source_file', 'url', 'source_url'):
-        name = str(xsrc.get(key, '')).rsplit('/', 1)[-1]
-        if not name:
-            continue
-        stem = name.rsplit('.', 1)[0]
-        runs = [seg for seg in re.split(r'[-_]', stem) if seg.isdigit()]
-        if not runs:
-            continue
-        # Trailing segment is a timestamp when two or more digit runs close
-        # the sibling-site pattern; the tab id is the one before it.
-        if len(runs) >= 2 and stem.endswith(f"{runs[-2]}-{runs[-1]}"):
-            ids.add(runs[-2])
-        else:
-            ids.add(runs[-1])
-    if not ids or str(prov_source_id) in ids:
+    otf_id = (data.get('x_source') or {}).get('source_id')
+    if not otf_id or str(otf_id) == str(prov_source_id):
         return None
-    return (str(prov_source_id), ids)
+    return (str(prov_source_id), {str(otf_id)})
 
 
 def build_song_from_work(work_dir: Path) -> dict:
@@ -379,23 +386,35 @@ def build_song_from_work(work_dir: Path) -> dict:
     if parsed['abc_content']:
         song['abc_content'] = parsed['abc_content']
 
-    # Add tablature parts info for frontend
+    # Add tablature parts info for frontend.
+    # A work can hold several arrangements of the SAME instrument (the
+    # frontend groups instrument -> arrangement), so published filenames are
+    # suffixed with the arrangement's source_id and `default` is resolved
+    # from the curation registry (see apply_tab_defaults) after the build.
     if tablature_parts:
         song['tablature_parts'] = []
-        for part in tablature_parts:
-            prov = part.get('provenance', {})
+        for i, part in enumerate(tablature_parts):
+            prov = part.get('provenance', {}) or {}
             tab_info = {
                 'instrument': part.get('instrument'),
-                # No default here: pre-filling with the bare instrument made
-                # the frontend's "<Instrument> Tab" fallback dead code and
+                # No default label here: pre-filling with the bare instrument
+                # made the frontend's "<Instrument> Tab" fallback dead code and
                 # collided with the ABC part's label (issue: fiddle vs fiddle-2)
                 **({'label': part['label']} if part.get('label') else {}),
-                'file': f"data/tabs/{work['id']}-{part.get('instrument')}.otf.json",
+                'file': f"data/tabs/{published_tab_name(work['id'], part, i)}",
                 # Include provenance for attribution
                 'source': prov.get('source'),
                 'source_id': prov.get('source_id'),
                 'author': prov.get('author'),
+                # Where the OTF lives inside works/ — used by the copy step,
+                # stripped before the index is written.
+                '_src': part.get('file'),
             }
+            # Arrangement-picker detail, when the listing had it
+            if prov.get('difficulty'):
+                tab_info['difficulty'] = prov['difficulty']
+            if prov.get('tuning'):
+                tab_info['tuning'] = prov['tuning']
             # Build source page URL for Hangout Network sites
             hangout_base = HANGOUT_SITE_URLS.get(prov.get('source'))
             if hangout_base and prov.get('source_id'):
@@ -739,19 +758,33 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     if excluded_count > 0:
         print(f"Excluded {excluded_count} suppressed/soft-deleted songs")
 
+    # Default arrangement per instrument (curation/registry.yaml tab_pins,
+    # else the first part listed in work.yaml). Runs before the copy step so
+    # the flag is set on every row that gets written.
+    songs = apply_tab_defaults(songs, registry)
+
     # Copy tablature files to docs/data/tabs/
     tabs_dir = Path('docs/data/tabs')
     tabs_dir.mkdir(parents=True, exist_ok=True)
     tabs_copied = 0
     tab_provenance_mismatches = []
+    published_tabs = set()
     for song in songs:
         for tab_part in song.get('tablature_parts', []):
-            # tab_part['file'] is like "data/tabs/arkansas-traveler-banjo.otf.json"
+            # `_src` is the part's file inside works/ ({instrument}.otf.json for
+            # the first arrangement, {instrument}-{source_id}.otf.json for the
+            # alternates); it never reaches the index.
+            src_name = tab_part.pop('_src', None)
+            # dest is data/tabs/{work}-{instrument}-{source_id}.otf.json
             dest_path = Path('docs') / tab_part['file']
-            # Source is works/{id}/{instrument}.otf.json
             work_id = song['id']
             instrument = tab_part.get('instrument', 'banjo')
-            source_path = works_dir / work_id / f"{instrument}.otf.json"
+            source_path = works_dir / work_id / (
+                src_name or f"{instrument}.otf.json")
+            # Anything the index references is never an orphan, even if the
+            # works/ copy is missing this build — deleting it would 404 a
+            # live song page.
+            published_tabs.add(dest_path.name)
             if not source_path.exists():
                 continue
 
@@ -762,7 +795,8 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
             # notes — and pass CI silently. Fail the build instead.
             mismatch = _tab_provenance_mismatch(source_path, tab_part.get('source_id'))
             if mismatch:
-                tab_provenance_mismatches.append((work_id, instrument, mismatch))
+                tab_provenance_mismatches.append(
+                    (work_id, source_path.name, mismatch))
                 continue  # never publish an OTF that fails the provenance gate
 
             if (not dest_path.exists() or
@@ -777,10 +811,28 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
         print("\nERROR: tablature provenance mismatch — an OTF was built from "
               "the wrong TEF (its x_source id disagrees with work.yaml "
               "provenance.source_id). Regenerate from the correct TEF:")
-        for work_id, instrument, (prov_id, otf_ids) in tab_provenance_mismatches:
-            print(f"  {work_id}/{instrument}.otf.json: "
+        for work_id, part_file, (prov_id, otf_ids) in tab_provenance_mismatches:
+            print(f"  {work_id}/{part_file}: "
                   f"provenance source_id={prov_id!r} but OTF x_source has {sorted(otf_ids)}")
         raise SystemExit(1)
+
+    # Prune orphans: published tabs whose work/part no longer exists (renames,
+    # deletions, re-imports). Only files matching the generated
+    # {work}-{instrument}-{id}.otf.json shape are touched, so hand-placed
+    # fixtures (e.g. 27493_tef.otf.json) survive. Runs after the gate so a
+    # failed build never mutates docs/data/tabs/.
+    orphan_re = re.compile(
+        r'^.+-(?:' + '|'.join(sorted(
+            {re.escape(p.get('instrument') or 'tab')
+             for s in songs for p in s.get('tablature_parts', [])} | {'banjo'},
+            key=len, reverse=True)) + r')(?:-[A-Za-z0-9-]+)?\.otf\.json$')
+    orphans = [p for p in tabs_dir.glob('*.otf.json')
+               if p.name not in published_tabs and orphan_re.match(p.name)]
+    for path in orphans:
+        path.unlink()
+    if orphans:
+        print(f"Removed {len(orphans)} orphaned tablature files from "
+              f"docs/data/tabs/")
 
     # Copy document files to docs/data/docs/
     docs_dir = Path('docs/data/docs')

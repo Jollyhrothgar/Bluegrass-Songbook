@@ -78,3 +78,13 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=14967
     author: Mirek Tim Patek
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-10985.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '10985'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10985
+    author: schlange
+    imported_at: '2026-07-27'

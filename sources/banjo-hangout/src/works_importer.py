@@ -27,6 +27,16 @@ from site_config import (
 REPO_ROOT = Path(__file__).parent.parent.parent.parent
 WORKS_DIR = REPO_ROOT / 'works'
 
+# Sibling sites: the TEF must actually hold the site's own instrument (or a
+# full ensemble). A mismatch means the TEF carried no/foreign instrument
+# metadata — reso dobros are written as 6-string-guitar, and an
+# instrument-less TEF defaults to 5-string banjo in the parser — so
+# importing it would file a dobro arrangement as guitar.otf.json on a live
+# song page. Banjo Hangout is exempt: it genuinely hosts tenor-banjo,
+# guitar and ensemble arrangements.
+STRICT_INSTRUMENT_SITES = {'mandolin-hangout', 'flatpicker-hangout',
+                           'fiddle-hangout', 'reso-hangout'}
+
 # Curation registry guard (scripts/lib/curation.py)
 _SCRIPTS_LIB = REPO_ROOT / 'scripts' / 'lib'
 if str(_SCRIPTS_LIB) not in sys.path:
@@ -138,6 +148,17 @@ def part_instrument(otf_path: Path, site: SiteConfig = DEFAULT_SITE) -> str:
     return resolve_instrument(otf.get('tracks', []), site.fallback_instrument)
 
 
+def instrument_mismatch(otf_path: Path, site: SiteConfig = DEFAULT_SITE) -> Optional[str]:
+    """Reason string when a sibling-site TEF doesn't hold its own instrument."""
+    if site.name not in STRICT_INSTRUMENT_SITES:
+        return None
+    instrument = part_instrument(otf_path, site)
+    if instrument in (site.fallback_instrument, 'ensemble'):
+        return None
+    return (f"instrument-mismatch (detected {instrument}, "
+            f"{site.name} is {site.fallback_instrument})")
+
+
 def create_new_work(tab: TabEntry, otf_path: Path, site: SiteConfig = DEFAULT_SITE) -> Path:
     """Create a new work from a tab entry.
 
@@ -187,23 +208,62 @@ def create_new_work(tab: TabEntry, otf_path: Path, site: SiteConfig = DEFAULT_SI
     return work_dir
 
 
+def tab_source_ids(work_data: dict) -> set:
+    """source_ids of every tablature part already on this work."""
+    ids = set()
+    for part in work_data.get('parts') or []:
+        if part.get('type') != 'tablature':
+            continue
+        source_id = (part.get('provenance') or {}).get('source_id')
+        if source_id is not None:
+            ids.add(str(source_id))
+    return ids
+
+
+def part_filename(work_data: dict, instrument: str, source_id) -> str:
+    """Filename for a new tablature part inside the work directory.
+
+    The FIRST arrangement of an instrument keeps the historical bare
+    ``{instrument}.otf.json``; additional arrangements land alongside it as
+    ``{instrument}-{source_id}.otf.json``. Keeping the first name stable
+    means promoting alternates doesn't rewrite the wave-1 corpus.
+    """
+    taken = {p.get('file') for p in (work_data.get('parts') or [])}
+    bare = f'{instrument}.otf.json'
+    if bare not in taken:
+        return bare
+    suffixed = f'{instrument}-{source_id}.otf.json' if source_id else None
+    if suffixed and suffixed not in taken:
+        return suffixed
+    # No source_id (or a freak collision): fall back to a numbered name.
+    n = 2
+    while f'{instrument}-{n}.otf.json' in taken:
+        n += 1
+    return f'{instrument}-{n}.otf.json'
+
+
 def add_part_to_work(work_dir: Path, tab: TabEntry, otf_path: Path,
                      site: SiteConfig = DEFAULT_SITE) -> bool:
     """Add a tablature part to an existing work.
 
-    Returns True if the part was added, False if already exists.
+    Returns True if the part was added, False if this exact arrangement is
+    already on the work.
+
+    A work may hold several arrangements of the same instrument (the
+    frontend groups instrument -> arrangement), so the duplicate check is
+    on the arrangement's identity — its source_id — not on the instrument.
     """
     work_data = load_work(work_dir)
     instrument = part_instrument(otf_path, site)
+    source_id = tab.id.split('_')[0]
 
-    # Check for a tab on the SAME instrument — a mandolin tab is welcome
-    # in a work that already has a banjo tab.
-    for part in work_data.get('parts', []):
-        if part.get('type') == 'tablature' and part.get('instrument') == instrument:
-            return False
+    # Same tab already imported? (any instrument — a re-detected instrument
+    # must not clone the same upstream arrangement onto the work twice)
+    if source_id and source_id in tab_source_ids(work_data):
+        return False
 
     # Copy OTF file
-    otf_filename = f'{instrument}.otf.json'
+    otf_filename = part_filename(work_data, instrument, source_id)
     shutil.copy2(otf_path, work_dir / otf_filename)
 
     # Add part
@@ -239,13 +299,19 @@ def _provenance(tab: TabEntry, site: SiteConfig = DEFAULT_SITE) -> dict:
     attribution links.
     """
     source_id = tab.id.split('_')[0]
-    return {
+    prov = {
         'source': site.source,
         'source_id': source_id,
         'source_url': site.tab_page_url(source_id),
         'author': tab.author,
-        'imported_at': str(date.today()),
     }
+    # Listing detail the arrangement picker shows next to each alternate
+    if tab.difficulty:
+        prov['difficulty'] = tab.difficulty
+    if tab.tuning:
+        prov['tuning'] = tab.tuning
+    prov['imported_at'] = str(date.today())
+    return prov
 
 
 def build_tags(tab: TabEntry, site: SiteConfig = DEFAULT_SITE) -> list[str]:
@@ -270,10 +336,15 @@ def build_tags(tab: TabEntry, site: SiteConfig = DEFAULT_SITE) -> list[str]:
 
 
 def import_tab(catalog: TabCatalog, tab: TabEntry,
-               site: SiteConfig = DEFAULT_SITE) -> Optional[str]:
+               site: SiteConfig = DEFAULT_SITE,
+               create_new_works: bool = True) -> Optional[str]:
     """Import a single converted tab to works/.
 
     Returns the work slug if successful, None otherwise.
+
+    ``create_new_works=False`` restricts the run to enriching works that
+    already exist (used by arrangement-promotion passes, where minting new
+    works would need a separate title/curation review).
     """
     # Find the converted OTF file
     otf_path = site.parsed_dir / f"{tab.id}.otf.json"
@@ -296,15 +367,25 @@ def import_tab(catalog: TabCatalog, tab: TabEntry,
               f"(curation registry / deleted songs)")
         return None
 
+    # Strict-instrument gate for sibling sites (see STRICT_INSTRUMENT_SITES)
+    mismatch = instrument_mismatch(otf_path, site)
+    if mismatch:
+        print(f"  Skipped: {mismatch}")
+        return None
+
     if matching_work:
         # Add to existing work
         if add_part_to_work(matching_work, tab, otf_path, site):
             print(f"  Added to existing work: {matching_work.name}")
             return matching_work.name
         else:
-            instrument = part_instrument(otf_path, site)
-            print(f"  Skipped: work {matching_work.name} already has {instrument} tab")
+            print(f"  Skipped: work {matching_work.name} already has this "
+                  f"arrangement (source_id={tab.id.split('_')[0]})")
             return None
+    elif not create_new_works:
+        print(f"  Skipped: no existing work matches '{tab.title}' "
+              f"(new-work creation disabled)")
+        return None
     else:
         # Create new work
         work_dir = create_new_work(tab, otf_path, site)
@@ -313,7 +394,8 @@ def import_tab(catalog: TabCatalog, tab: TabEntry,
 
 
 def batch_import(catalog: TabCatalog, limit: int = None, dry_run: bool = False,
-                 site: SiteConfig = DEFAULT_SITE) -> int:
+                 site: SiteConfig = DEFAULT_SITE,
+                 create_new_works: bool = True) -> int:
     """Import all importable tabs to works/.
 
     Args:
@@ -321,6 +403,7 @@ def batch_import(catalog: TabCatalog, limit: int = None, dry_run: bool = False,
         limit: Maximum number to import
         dry_run: If True, just print what would be done
         site: Hangout site the catalog belongs to
+        create_new_works: If False, only add arrangements to existing works
 
     Returns:
         Number of tabs imported
@@ -335,8 +418,10 @@ def batch_import(catalog: TabCatalog, limit: int = None, dry_run: bool = False,
             matching = find_matching_work(tab.title, site)
             if matching:
                 print(f"  {tab.title} -> add to {matching.name}")
-            else:
+            elif create_new_works:
                 print(f"  {tab.title} -> create new work")
+            else:
+                print(f"  {tab.title} -> skip (no matching work)")
         if len(importable) > 20:
             print(f"  ... and {len(importable) - 20} more")
         return 0
@@ -344,7 +429,8 @@ def batch_import(catalog: TabCatalog, limit: int = None, dry_run: bool = False,
     imported_count = 0
     for tab in importable:
         print(f"Importing: {tab.title}")
-        work_slug = import_tab(catalog, tab, site)
+        work_slug = import_tab(catalog, tab, site,
+                               create_new_works=create_new_works)
 
         if work_slug:
             catalog.update_status(tab.id, 'imported')
