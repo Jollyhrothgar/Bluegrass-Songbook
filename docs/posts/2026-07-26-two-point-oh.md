@@ -66,26 +66,28 @@ Tap any of them to contribute; the form comes prefilled.
 ## Tablature: a TablEdit for the browser
 
 This one deserves its own headline. The tab system is no longer just a
-viewer — it's targeting **full TablEdit compatibility for bluegrass
-multipart tabs**, in the browser, no software to install:
+viewer — the goal is **TablEdit compatibility for bluegrass multipart
+tabs**, in the browser, no software to install:
 
 - **Import your `.tef` files directly.** Drop a TablEdit file on the
-  [create page](create.html) and it's parsed entirely in your browser —
-  tracks, tunings, capos, repeats, and all — then opens in the editor,
-  ready to review.
-- **Edit in the browser.** Every tab on the site has an Edit button:
-  fix a note, change a fingering, adjust a roll. Submissions go through
-  the same human review as song corrections. You can also build a tab
-  from scratch, and drafts save locally as you work.
-- **Multipart playback.** Arrangements with banjo, guitar, mandolin, and
-  bass play together, with a track mixer to bring parts in and out, solo
-  buttons, looping, count-in, a metronome, and tempo control.
+  site and it's parsed entirely in your browser — all the tracks,
+  tunings, capos, and repeats — then opens in the editor, ready to
+  review and submit.
+- **Multipart playback.** Imported arrangements with banjo, guitar,
+  mandolin, and bass play together, with a track mixer to bring parts
+  in and out, solo buttons, looping, count-in, a metronome, and tempo
+  control.
 - **Faithful rendering.** Text annotations, fingerings, section names,
   repeat brackets and voltas, and TablEdit-style bends — played back as
   the quarter-tone chokes they are.
+- **Edit in the browser.** Every tab on the site has an Edit button:
+  fix a note, change a fingering, adjust a roll. Submissions go through
+  the same human review as song corrections.
 
-If you've got a folder of `.tef` files from years of collecting, this is
-your invitation.
+Honest print: creating tabs *from scratch* in the browser is banjo-first
+today — the multipart story currently runs through `.tef` import. If
+you've got a folder of TablEdit files from years of collecting, that's
+the invitation.
 
 ![A banjo tab with the playback transport and track mixer in the bottom band](/posts/images/2.0-tab-page.png)
 
