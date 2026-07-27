@@ -290,6 +290,13 @@ class HangoutScraper:
             # Use stored download URL (we'll need to adjust catalog to store this)
             response = self.session.get(download_url, timeout=60)
             response.raise_for_status()
+            # Error pages come back 200 with HTML bodies; saving one as
+            # .tef poisons every later conversion of that id.
+            head = response.content[:512].lower()
+            if b'<html' in head or b'<!doctype' in head or b'<meta' in head:
+                print(f"Error downloading {tab.id}: got HTML, not a TEF "
+                      f"(error page from {download_url})")
+                return None
             output_path.write_bytes(response.content)
             return output_path
         except requests.RequestException as e:

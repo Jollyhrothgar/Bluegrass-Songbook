@@ -151,11 +151,21 @@ function buildOtfTimings(otf, compact) {
  * Each part gets a unique `partId` slug derived from its label,
  * used in URLs (#work/{id}/{partId}) and list references.
  */
+/** "banjo" -> "Banjo Tab", "tenor-banjo" -> "Tenor Banjo Tab" */
+function tabLabel(instrument) {
+    if (!instrument) return 'Tab';
+    const pretty = instrument.split('-')
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return `${pretty} Tab`;
+}
+
 function buildPartsFromIndex(song) {
     const parts = [];
 
     if (song.content) {
-        const label = song.abc_content ? 'Fiddle' : 'Lyrics & Chords';
+        // Label the lead sheet by what it is, not a guessed instrument —
+        // ABC transcriptions aren't necessarily fiddle (flutes, pipes...).
+        const label = song.abc_content ? 'Notation' : 'Lyrics & Chords';
         parts.push({
             type: 'lead-sheet',
             format: 'chordpro',
@@ -171,7 +181,7 @@ function buildPartsFromIndex(song) {
                 type: 'tablature',
                 format: 'otf',
                 instrument: tab.instrument,
-                label: tab.label || `${tab.instrument} Tab`,
+                label: tab.label || tabLabel(tab.instrument),
                 file: tab.file,
                 default: !song.content,
                 source: tab.source,

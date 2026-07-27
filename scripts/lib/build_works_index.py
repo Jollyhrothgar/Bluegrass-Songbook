@@ -386,7 +386,10 @@ def build_song_from_work(work_dir: Path) -> dict:
             prov = part.get('provenance', {})
             tab_info = {
                 'instrument': part.get('instrument'),
-                'label': part.get('label', part.get('instrument', 'Tab')),
+                # No default here: pre-filling with the bare instrument made
+                # the frontend's "<Instrument> Tab" fallback dead code and
+                # collided with the ABC part's label (issue: fiddle vs fiddle-2)
+                **({'label': part['label']} if part.get('label') else {}),
                 'file': f"data/tabs/{work['id']}-{part.get('instrument')}.otf.json",
                 # Include provenance for attribution
                 'source': prov.get('source'),

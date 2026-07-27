@@ -187,18 +187,13 @@ def convert_tef_file(
         otf_json = otf.to_json()
         otf_data = json.loads(otf_json)
 
-        # Validate notation has content
+        # Validate notation has content and plausible structure
+        from converter import notation_sanity_error
         notation = otf_data.get('notation', {})
-        total_events = sum(
-            len(m.get('events', []))
-            for measures in notation.values()
-            if isinstance(measures, list)
-            for m in measures
-        )
-
-        if total_events == 0:
+        sanity_error = notation_sanity_error(notation)
+        if sanity_error:
             result['status'] = 'skipped'
-            result['error'] = f'Empty notation (0 events) - format: {result["tef_metadata"].get("format_version")}'
+            result['error'] = f'{sanity_error} - format: {result["tef_metadata"].get("format_version")}'
             return result
 
         # Instrument the file actually holds (decides the part + filename)

@@ -93850,7 +93850,9 @@
     ]
   },
   "x_source": {
-    "type": "local",
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/orange_blossom_special-1530.tef",
+    "author": "schlange",
     "source_file": "10986_tef_orange_blossom_special.tef",
     "converted_at": "2026-07-26T23:03:40.043534"
   }

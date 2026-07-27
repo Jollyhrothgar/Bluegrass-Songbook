@@ -13,6 +13,32 @@ from catalog import TabCatalog, TabEntry
 from site_config import SiteConfig, resolve_instrument
 
 
+def notation_sanity_error(notation: dict) -> Optional[str]:
+    """Reject conversions that are structurally implausible.
+
+    A misparsed TEF (wrong record stride, HTML saved as .tef) tends to
+    produce either zero events or a handful of notes scattered across
+    thousands of phantom measures. Both shapes previously sailed through
+    to live pages — fail loudly instead.
+    """
+    total_events = 0
+    distinct = 0
+    max_measure = 0
+    for measures in notation.values():
+        if not isinstance(measures, list):
+            continue
+        for m in measures:
+            total_events += len(m.get('events', []))
+            distinct += 1
+            max_measure = max(max_measure, m.get('measure', 0))
+    if total_events == 0:
+        return 'Empty notation (0 events)'
+    if max_measure > 0 and distinct / max_measure < 0.5:
+        return (f'Sparse notation ({distinct} occupied of {max_measure} '
+                f'measures) — likely misparsed TEF variant')
+    return None
+
+
 class TEFConverter:
     """Converts TEF files to OTF JSON format."""
 
@@ -41,6 +67,11 @@ class TEFConverter:
 
             # Get OTF as dict and add site attribution
             otf_dict = otf.to_dict()
+
+            error = notation_sanity_error(otf_dict.get('notation') or {})
+            if error:
+                print(f"Error converting {tef_path}: {error}")
+                return None, None
 
             # Add source attribution
             otf_dict['x_source'] = {
@@ -140,6 +171,12 @@ def convert_single(tef_path: Path, output_path: Path = None) -> Optional[Path]:
         otf = tef_to_otf(tef)
 
         otf_dict = otf.to_dict()
+
+        error = notation_sanity_error(otf_dict.get('notation') or {})
+        if error:
+            print(f"Error converting {tef_path}: {error}")
+            return None
+
         otf_dict['x_source'] = {
             'type': 'local',
             'source_file': tef_path.name,
