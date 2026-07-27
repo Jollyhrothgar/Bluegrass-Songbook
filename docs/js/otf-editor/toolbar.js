@@ -91,7 +91,7 @@ export class EditorToolbar {
             <div class="toolbar-separator"></div>
             <div class="toolbar-section track-section" style="display:none">
                 <span class="toolbar-label">Track</span>
-                <select class="track-select" title="Switch track"></select>
+                <div class="button-group track-buttons"></div>
             </div>
             <div class="toolbar-separator track-section-sep" style="display:none"></div>
             <div class="toolbar-section duration-section">
@@ -149,22 +149,28 @@ export class EditorToolbar {
         // Apply styles
         this._applyStyles();
 
-        // Track switcher (shown only for multi-track documents)
-        this.trackSelect = this.element.querySelector('.track-select');
+        // Track switcher (shown only for multi-track documents). Segmented
+        // buttons, not a dropdown — the old select was so small that even
+        // the site's author thought only banjo tracks existed.
+        this.trackButtons = this.element.querySelector('.track-buttons');
         const tracks = this.state.otf?.tracks || [];
         if (tracks.length > 1) {
             for (const t of tracks) {
-                const opt = document.createElement('option');
-                opt.value = t.id;
-                opt.textContent = t.id;
-                if (t.id === this.state.trackId) opt.selected = true;
-                this.trackSelect.appendChild(opt);
+                const btn = document.createElement('button');
+                btn.className = 'toolbar-button track-button';
+                btn.dataset.trackId = t.id;
+                btn.innerHTML = `<span class="button-content">${t.id}</span>`;
+                btn.title = `Edit the ${t.id} track`;
+                if (t.id === this.state.trackId) btn.classList.add('active');
+                btn.addEventListener('click', () => {
+                    this.state.setTrack(t.id);
+                    this.trackButtons.querySelectorAll('.track-button').forEach(b =>
+                        b.classList.toggle('active', b === btn));
+                });
+                this.trackButtons.appendChild(btn);
             }
             this.element.querySelector('.track-section').style.display = '';
             this.element.querySelector('.track-section-sep').style.display = '';
-            this.trackSelect.addEventListener('change', () => {
-                this.state.setTrack(this.trackSelect.value);
-            });
         }
 
         // Get references

@@ -84,11 +84,12 @@ tabs**, in the browser, no software to install:
   fix a note, change a fingering, adjust a roll, and download the
   corrected tab.
 
-Honest print: creating tabs *from scratch* in the browser is banjo-first
-today, and the submit-a-correction pipeline for tab edits is built but
-not yet switched on — the multipart story currently runs through `.tef`
-import. If you've got a folder of TablEdit files from years of
-collecting, that's the invitation.
+You can also build multipart tabs *from scratch* — pick any mix of
+banjo, guitar, mandolin, bass, tenor banjo, and dobro on the
+[create page](create.html) and switch between tracks as you write.
+Honest print: the submit-a-correction pipeline for tab edits is built
+but not yet switched on. If you've got a folder of TablEdit files from
+years of collecting, that's the invitation.
 
 ![A banjo tab with the playback transport and track mixer in the bottom band](/posts/images/2.0-tab-page.png)
 

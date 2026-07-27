@@ -228,6 +228,7 @@ export class OTFEditor {
                 display: flex;
                 flex-direction: column;
                 height: 100%;
+                position: relative; /* anchors the help overlay */
                 background: var(--bg, #fff);
                 border: 1px solid var(--border, #ddd);
                 border-radius: 8px;
@@ -358,6 +359,68 @@ export class OTFEditor {
                 right: 0;
                 bottom: 0;
                 pointer-events: none;
+            }
+
+            /* Keyboard-shortcut help overlay (?) */
+            .editor-help-overlay {
+                position: absolute;
+                inset: 0;
+                z-index: 50;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 0, 0, 0.45);
+                outline: none;
+            }
+
+            .editor-help-panel {
+                background: var(--bg, #fff);
+                color: var(--text, #111);
+                border: 1px solid var(--border, #ccc);
+                border-radius: 10px;
+                box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+                padding: 16px 20px;
+                max-width: 640px;
+                max-height: 80%;
+                overflow: auto;
+            }
+
+            .editor-help-head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .editor-help-close {
+                background: none;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                color: inherit;
+            }
+
+            .editor-help-cols {
+                display: flex;
+                gap: 24px;
+                flex-wrap: wrap;
+            }
+
+            .editor-help-cols dl { margin: 0; min-width: 240px; flex: 1; }
+            .editor-help-cols dt { font-weight: 600; margin-top: 10px; }
+            .editor-help-cols dd { margin: 2px 0 0 0; font-size: 13px; line-height: 1.7; }
+            .editor-help-panel kbd {
+                border: 1px solid var(--border, #ccc);
+                border-radius: 4px;
+                padding: 0 5px;
+                font-size: 12px;
+                background: var(--bg-secondary, #f5f5f5);
+            }
+            .editor-help-foot {
+                margin-top: 12px;
+                font-size: 12px;
+                opacity: 0.7;
+                text-align: center;
             }
         `;
 
@@ -734,17 +797,48 @@ export class OTFEditor {
     }
 
     /**
-     * Show keyboard shortcut help
+     * Show keyboard shortcut help — a dismissible overlay (the status-bar
+     * hint says "Press ? for help", so ? has to actually show something).
      */
     _showHelp() {
-        // Could open a modal with keyboard shortcuts
-        // For now, log to console
-        console.log('OTF Editor Keyboard Shortcuts:');
-        console.log('  Navigation: h/j/k/l or arrow keys');
-        console.log('  Modes: i (insert), v (visual), r (roll), A (annotation)');
-        console.log('  Insert: 0-9 for frets, q/e/s for durations');
-        console.log('  Edit: x (delete note), dd (delete tick), u (undo)');
-        console.log('  Press ? for more help');
+        const existing = this.editorRoot.querySelector('.editor-help-overlay');
+        if (existing) {
+            existing.remove();
+            return;
+        }
+        const overlay = document.createElement('div');
+        overlay.className = 'editor-help-overlay';
+        overlay.innerHTML = `
+            <div class="editor-help-panel" role="dialog" aria-label="Keyboard shortcuts">
+                <div class="editor-help-head">
+                    <strong>Keyboard shortcuts</strong>
+                    <button class="editor-help-close" title="Close">&times;</button>
+                </div>
+                <div class="editor-help-cols">
+                    <dl>
+                        <dt>Navigate</dt><dd><kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> or arrows · <kbd>w</kbd>/<kbd>b</kbd> next/prev measure · <kbd>gg</kbd>/<kbd>G</kbd> start/end</dd>
+                        <dt>Notes</dt><dd><kbd>0</kbd>–<kbd>9</kbd> fret at cursor · <kbd>Space</kbd> rest · <kbd>x</kbd> delete note · <kbd>dd</kbd> delete tick</dd>
+                        <dt>Durations</dt><dd><kbd>q</kbd> quarter · <kbd>e</kbd> eighth · <kbd>s</kbd> sixteenth · <kbd>t</kbd> thirty-second · <kbd>3</kbd> triplet</dd>
+                    </dl>
+                    <dl>
+                        <dt>Modes</dt><dd><kbd>v</kbd> visual select · <kbd>A</kbd> annotation · <kbd>Esc</kbd> back to normal</dd>
+                        <dt>Edit</dt><dd><kbd>u</kbd> undo · <kbd>Ctrl</kbd>+<kbd>R</kbd> redo · <kbd>y</kbd>/<kbd>p</kbd> copy/paste · <kbd>Cmd</kbd>+<kbd>C</kbd>/<kbd>X</kbd>/<kbd>V</kbd></dd>
+                        <dt>Play</dt><dd><kbd>Cmd</kbd>+<kbd>Space</kbd> play from cursor · <kbd>L</kbd> loop selection</dd>
+                    </dl>
+                </div>
+                <div class="editor-help-foot">Press <kbd>?</kbd> or <kbd>Esc</kbd> to close</div>
+            </div>
+        `;
+        const close = () => overlay.remove();
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay || e.target.closest('.editor-help-close')) close();
+        });
+        overlay.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' || e.key === '?') { e.stopPropagation(); close(); this.editorRoot.focus(); }
+        });
+        this.editorRoot.appendChild(overlay);
+        overlay.tabIndex = -1;
+        overlay.focus();
     }
 
     /**

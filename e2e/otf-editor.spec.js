@@ -181,9 +181,10 @@ test.describe('create-a-tab flow', () => {
 
         await page.locator('.editor-renderer .stave-row').first().waitFor();
         await expect(page.locator('#editor-title')).toHaveText('E2E Breakdown');
-        await expect(page.locator('.track-select')).toBeVisible();
+        // Segmented track buttons (replaced the old dropdown)
+        await expect(page.locator('.track-button')).toHaveCount(2);
 
-        await page.locator('.track-select').selectOption('guitar');
+        await page.locator('.track-button[data-track-id="guitar"]').click();
         await expect(async () => {
             const labels = await page.locator('.stave-row').first()
                 .locator('.string-label').count();
