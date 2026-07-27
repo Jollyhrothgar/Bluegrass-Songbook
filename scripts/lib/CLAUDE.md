@@ -17,6 +17,8 @@ sources/*/parsed/*.pro  →  migrate_to_works.py  →  works/
 **Key files:**
 - `build_works_index.py` - PRIMARY: Builds index from works/ directory
 - `work_schema.py` - Defines work.yaml schema and validation
+- `curation.py` - Editorial curation registry (canonical pins, suppressions)
+- `curate.py` - Convergence CLI for the curation registry
 - `build_index.py` - LEGACY: Builds from sources/ (kept for reference)
 
 ## Local vs CI Operations
@@ -30,6 +32,7 @@ Some operations require external APIs/databases and only run locally. Others run
 | **MusicBrainz tags** | Local only | `artist_tags.json` | Requires local MB database on port 5440 |
 | **Grassiness scores** | Local only | `bluegrass_recordings.json`, `bluegrass_tagged.json` | Song-level bluegrass detection |
 | **Strum Machine URLs** | Local only | `strum_machine_cache.json` | API rate limited (10 req/sec) |
+| **Deleted songs sync** | Scheduled CI + local | `deleted_songs.json` | `.github/workflows/sync-deleted-songs.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-deleted-songs` |
 | **TuneArch fetch** | Local only | - | Fetches new instrumentals |
 
 **How caching works:**
@@ -43,6 +46,7 @@ Some operations require external APIs/databases and only run locally. Others run
 - `docs/data/bluegrass_recordings.json` - Recordings by curated bluegrass artists
 - `docs/data/bluegrass_tagged.json` - Recordings with MusicBrainz bluegrass tags
 - `docs/data/grassiness_scores.json` - Computed grassiness scores per song
+- `docs/data/deleted_songs.json` - Soft-deleted song IDs (synced from Supabase via `fetch_deleted_songs.py`; suppressed at index build)
 
 ## Files
 
@@ -50,6 +54,9 @@ Some operations require external APIs/databases and only run locally. Others run
 scripts/lib/
 ├── build_works_index.py  # PRIMARY: Build index.jsonl from works/
 ├── work_schema.py        # work.yaml schema definition and validation
+├── curation.py           # Editorial curation registry (curation/registry.yaml)
+├── curate.py             # Curation CLI: report / pin / suppress
+├── fetch_deleted_songs.py # Sync Supabase deleted_songs → deleted_songs.json cache
 ├── migrate_to_works.py   # Migrate sources/ → works/ structure
 ├── build_index.py        # LEGACY: Build index from sources/*.pro
 ├── build_posts.py        # Build blog posts manifest (posts.json)
@@ -234,6 +241,41 @@ This handles cases like "Angeline Baker (C)" matching "angeline the baker" in th
 ```bash
 uv run python scripts/lib/build_works_index.py           # Full build
 uv run python scripts/lib/build_works_index.py --no-tags # Skip tag enrichment
+```
+
+### Editorial Curation (curation.py / curate.py)
+
+Works are ephemeral (regenerated from sources/), so editorial decisions live
+in `curation/registry.yaml` at the repo root — not in `works/*/work.yaml`:
+
+- **Canonical pins**: which version of a multi-version group is canonical,
+  plus optional display labels for the variants
+- **Suppressions**: work ids that must never come back (union'd with
+  `docs/data/deleted_songs.json` at build time)
+
+`build_works_index.py` applies the registry via `filter_suppressed()` and
+`apply_curation()`, which emits stable `grp:` group ids and the
+`canonical` / `variant_of` / `variant_label` fields on index rows (the
+frontend's Arrangement pill reads these). Importers call `is_suppressed()`
+so suppressed works are never re-created from sources.
+
+```bash
+./scripts/utility curate report                # groups without a canonical pin
+./scripts/utility curate pin <canonical-id> [variant-id ...] [--label LABEL]
+./scripts/utility curate suppress <work-id> --reason "..."
+```
+
+### Deleted-Songs Sync
+
+Admin soft-deletes land in the Supabase `deleted_songs` table. The
+`Sync Deleted Songs` workflow (`.github/workflows/sync-deleted-songs.yml`,
+hourly cron + manual dispatch) writes them to the committed
+`docs/data/deleted_songs.json` cache and its commit triggers a rebuild +
+deploy, so UI deletes actually stick. Manual fallback:
+
+```bash
+./scripts/utility sync-deleted-songs   # runs fetch_deleted_songs.py
+git add docs/data/deleted_songs.json && git commit -m "Sync deleted songs"
 ```
 
 ### Output Format

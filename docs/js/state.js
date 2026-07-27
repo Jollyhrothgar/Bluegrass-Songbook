@@ -298,10 +298,8 @@ export function setHistoryInitialized(value) { historyInitialized = value; }
 // FULLSCREEN / MUSICIAN MODE
 // ============================================
 
-export let fullscreenMode = false;
 export let listContext = null;  // { listId, songs, currentIndex } - for prev/next navigation
 
-export function setFullscreenMode(value) { fullscreenMode = value; }
 export function setListContext(context) { listContext = context; }
 
 // ============================================
@@ -360,12 +358,10 @@ export function setEditorNashvilleMode(value) { editorNashvilleMode = value; }
 // ============================================
 
 export let currentView = 'home';  // 'home' | 'search' | 'song' | 'add-song' | 'list'
-export let sidebarOpen = false;
-export let activeModal = null;  // 'account' | 'lists' | 'version' | 'correction' | 'contact' | null
+export let activeModal = null;  // 'account' | 'lists' | null
 export let currentSearchQuery = '';
 
 export function setCurrentView(value) { currentView = value; notifyChange('currentView'); }
-export function setSidebarOpen(value) { sidebarOpen = value; notifyChange('sidebarOpen'); }
 export function setActiveModal(value) { activeModal = value; notifyChange('activeModal'); }
 export function setCurrentSearchQuery(value) { currentSearchQuery = value; notifyChange('currentSearchQuery'); }
 
@@ -440,7 +436,6 @@ const stateGetters = {
     historyInitialized: () => historyInitialized,
 
     // Fullscreen/musician mode
-    fullscreenMode: () => fullscreenMode,
     listContext: () => listContext,
 
     // Editor
@@ -450,7 +445,6 @@ const stateGetters = {
 
     // UI view state
     currentView: () => currentView,
-    sidebarOpen: () => sidebarOpen,
     activeModal: () => activeModal,
     currentSearchQuery: () => currentSearchQuery,
 };
@@ -508,7 +502,6 @@ const stateSetters = {
     historyInitialized: setHistoryInitialized,
 
     // Fullscreen/musician mode
-    fullscreenMode: setFullscreenMode,
     listContext: setListContext,
 
     // Editor
@@ -518,7 +511,6 @@ const stateSetters = {
 
     // UI view state
     currentView: setCurrentView,
-    sidebarOpen: setSidebarOpen,
     activeModal: setActiveModal,
     currentSearchQuery: setCurrentSearchQuery,
 };

@@ -22,15 +22,18 @@ vi.mock('../lists.js', () => ({
     reorderFavoriteItem: vi.fn(),
     showFavorites: vi.fn(),
     isSongInAnyList: vi.fn(() => false),
-    showResultListPicker: vi.fn(),
+    updateResultListButton: vi.fn(),
     getViewingListId: vi.fn(() => null),
     reorderSongInList: vi.fn(),
     isViewingOwnList: vi.fn(() => false)
 }));
 
+vi.mock('../list-picker.js', () => ({
+    showListPicker: vi.fn()
+}));
+
 vi.mock('../song-view.js', () => ({
-    openSong: vi.fn(),
-    showVersionPicker: vi.fn()
+    openSong: vi.fn()
 }));
 
 vi.mock('../analytics.js', () => ({

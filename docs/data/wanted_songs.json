@@ -1,0 +1,8529 @@
+{
+ "_meta": {
+  "source": "bluegrass_list cover-coverage gap analysis (FINDINGS.md \u00a74.1)",
+  "generated": "2026-07-26",
+  "description": "Canonical jam repertoire missing from the songbook \u2014 the wanted list"
+ },
+ "songs": [
+  {
+   "title": "Cumberland Gap",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Beginner",
+   "coverage": 52,
+   "core": true,
+   "artists": [
+    "The Stanley Brothers",
+    "Doc Watson",
+    "David Johnson",
+    "Lonesome River Band"
+   ],
+   "notes": "up-tempo old-time",
+   "instruments": []
+  },
+  {
+   "title": "Katy Hill",
+   "type": "Fiddle Tune",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 38,
+   "core": true,
+   "artists": [
+    "Lester Flatt & Earl Scruggs",
+    "The Bluegrass Cut-Ups",
+    "Charlie Cline",
+    "The Warrior River Boys"
+   ],
+   "notes": "fast breakdown",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Lee Highway Blues",
+   "type": "Instrumental",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 31,
+   "core": true,
+   "artists": [
+    "Jim and Jesse",
+    "The Stanley Brothers",
+    "Benny Martin",
+    "New Grass Revival"
+   ],
+   "notes": "swing blues fiddle",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Train 45",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 30,
+   "core": true,
+   "artists": [
+    "Derek Dillman",
+    "The Travelin\u2019 McCourys",
+    "The Stanley Brothers",
+    "J. P. Cormier"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Rawhide",
+   "type": "Instrumental",
+   "key": "C",
+   "difficulty": "Advanced",
+   "coverage": 29,
+   "core": true,
+   "artists": [
+    "David Grisman",
+    "Clarence White",
+    "Jim Buchanan",
+    "Nashville Grass"
+   ],
+   "notes": "fast mandolin showpiece",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Bill Cheatham",
+   "type": "Fiddle Tune",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 27,
+   "core": true,
+   "artists": [
+    "Tony Rice",
+    "Fiddlin\u2019 Arthur Smith & His Dixieliners",
+    "Steve Kaufman",
+    "Roger Sprung and His Progressive Bluegrassers"
+   ],
+   "notes": "two parts",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Sweet Georgia Brown",
+   "type": "Instrumental",
+   "key": "F",
+   "difficulty": "Advanced",
+   "coverage": 27,
+   "core": true,
+   "artists": [
+    "Mike Auldridge",
+    "Ricky Skaggs",
+    "Marion Sumner",
+    "Sam Bush"
+   ],
+   "notes": "jazz swing jam",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Swing Low, Sweet Chariot",
+   "type": "Gospel",
+   "key": "G",
+   "difficulty": "Beginner",
+   "coverage": 27,
+   "core": true,
+   "artists": [
+    "The Louvin Brothers",
+    "Benny Martin",
+    "The Del McCoury Band",
+    "Bill Monroe"
+   ],
+   "notes": "spiritual",
+   "instruments": []
+  },
+  {
+   "title": "Dusty Miller",
+   "type": "Fiddle Tune",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 26,
+   "core": true,
+   "artists": [
+    "Bryan Sutton",
+    "Bobby Osborne",
+    "Billy Strings",
+    "Mark O\u2019Connor"
+   ],
+   "notes": "modal, two parts",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Farewell Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 26,
+   "core": true,
+   "artists": [
+    "David Grier",
+    "Jim and Jesse",
+    "Eric Weissberg",
+    "Larry Sparks and the Lonesome Ramblers"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Sourwood Mountain",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 25,
+   "core": true,
+   "artists": [
+    "David Johnson",
+    "Ralph Whited",
+    "Wade Ward",
+    "Andy Cahan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Chicken Reel",
+   "type": "Fiddle Tune",
+   "key": "D",
+   "difficulty": "Beginner",
+   "coverage": 24,
+   "core": true,
+   "artists": [
+    "Ed Haley",
+    "Carlton Rawlings",
+    "Kessinger Brothers",
+    "Melvin Wine"
+   ],
+   "notes": "novelty reel",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Jesse James",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 22,
+   "core": true,
+   "artists": [
+    "Sonny Osborne",
+    "Toby Stroud and the Blue Mountain Boys",
+    "Nitty Gritty Dirt Band",
+    "Cathy Barton"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Away in a Manger",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 21,
+   "core": true,
+   "artists": [
+    "Stuart Duncan",
+    "Jerry Douglas",
+    "Andrea Zonn",
+    "David Grier"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Cotton\u2010Eyed Joe",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 20,
+   "core": true,
+   "artists": [
+    "Double Decker String Band",
+    "Arthur Smith",
+    "Ricky Skaggs",
+    "Uncle Dave Macon"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Back Up and Push",
+   "type": "Fiddle Tune",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 19,
+   "core": true,
+   "artists": [
+    "Don Reno",
+    "The Stanley Brothers",
+    "John Hartford",
+    "Lester Flatt & Earl Scruggs"
+   ],
+   "notes": "swing breakdown",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Muleskinner Blues",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 19,
+   "core": true,
+   "artists": [
+    "Doc Watson",
+    "Rhonda Vincent",
+    "The Stonemans",
+    "Grandpa Jones"
+   ],
+   "notes": "yodel showpiece",
+   "instruments": []
+  },
+  {
+   "title": "Carroll County Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 18,
+   "core": true,
+   "artists": [
+    "Fred Price",
+    "Fiddlin\u2019 Doc Roberts",
+    "IIIrd Tyme Out",
+    "Alison Krauss & Union Station"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "God Rest Ye Merry Gentlemen",
+   "type": "Gospel",
+   "key": null,
+   "difficulty": null,
+   "coverage": 18,
+   "core": true,
+   "artists": [
+    "Ronnie Reno",
+    "Bryan Sutton",
+    "The Petersens",
+    "Gene Parsons"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Ruby",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 18,
+   "core": true,
+   "artists": [
+    "Ernie & Mack",
+    "Yonder Mountain String Band",
+    "The Osborne Brothers",
+    "J.D. Crowe"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Billy in the Low Ground",
+   "type": "Fiddle Tune",
+   "key": "C",
+   "difficulty": "Advanced",
+   "coverage": 17,
+   "core": true,
+   "artists": [
+    "Clarence White",
+    "Fiddlin\u2019 John Carson",
+    "The Osborne Brothers",
+    "Steve Kaufman"
+   ],
+   "notes": "classic C tune",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Cacklin' Hen",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 17,
+   "core": true,
+   "artists": [
+    "The Stanley Brothers",
+    "Hog-Eyed Man",
+    "J.E. Mainer",
+    "Ed Haley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Under the Double Eagle",
+   "type": "Instrumental",
+   "key": "D",
+   "difficulty": "Intermediate",
+   "coverage": 17,
+   "core": true,
+   "artists": [
+    "Steve Kaufman",
+    "Larry Sparks and the Lonesome Ramblers",
+    "The Virginia Boys",
+    "The Stonemans"
+   ],
+   "notes": "march guitar showpiece",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Big Mon",
+   "type": "Instrumental",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 16,
+   "core": true,
+   "artists": [
+    "Tony Rice",
+    "Bobby Hicks",
+    "Ricky Skaggs",
+    "The Bluegrass Cardinals"
+   ],
+   "notes": "mandolin showpiece",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Bringin\u2019 in the Georgia Mail",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 16,
+   "core": true,
+   "artists": [
+    "Don Reno",
+    "Nashville Grass",
+    "Reno and Smiley",
+    "The Tennessee Cut-Ups"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Darling Corey",
+   "type": "Vocal",
+   "key": "A",
+   "difficulty": "Beginner",
+   "coverage": 16,
+   "core": true,
+   "artists": [
+    "The New Lost City Ramblers",
+    "The Jellyman's Daughter",
+    "Country Gazette",
+    "Golden Delicious"
+   ],
+   "notes": "modal banjo song",
+   "instruments": []
+  },
+  {
+   "title": "Dueling Banjos",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 16,
+   "core": true,
+   "artists": [
+    "Hayseed Dixie",
+    "Lester Flatt & Earl Scruggs",
+    "Arthur Smith",
+    "The Bluegrass Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Panhandle Country",
+   "type": "Instrumental",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 16,
+   "core": true,
+   "artists": [
+    "The Seldom Scene",
+    "John Cowan",
+    "Blue Denim",
+    "Bill Monroe and the Bluegrass Boys"
+   ],
+   "notes": "breakdown",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Peacock Rag",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 16,
+   "core": true,
+   "artists": [
+    "The Tennessee Cut-Ups",
+    "The Pilot Mountain Bobcats",
+    "Vivian Williams",
+    "John Hartford"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Rollin\u2019 in My Sweet Baby\u2019s Arms",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 16,
+   "core": true,
+   "artists": [
+    "The String Cheese Incident",
+    "New Grass Revival",
+    "Country Gazette",
+    "Whiskey Shivers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Deck the Halls",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 15,
+   "core": true,
+   "artists": [
+    "Ricky Skaggs",
+    "Ronnie Reno",
+    "David Johnson",
+    "Joe Craven"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Greensleeves",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 15,
+   "core": true,
+   "artists": [
+    "Roger Sprung",
+    "Vassar Clements",
+    "Harold East",
+    "Richard Bennett"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Seven Year Blues",
+   "type": "Gospel",
+   "key": null,
+   "difficulty": null,
+   "coverage": 15,
+   "core": true,
+   "artists": [
+    "Red Smiley",
+    "The Louvin Brothers",
+    "The Tennessee Cut-Ups",
+    "Dismembered Tennesseans"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Dixie",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 14,
+   "core": true,
+   "artists": [
+    "Hobart Smith",
+    "Gill Landry",
+    "The Country Gentlemen",
+    "Gid Tanner & His Skillet Lickers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Whistling Rufus",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 14,
+   "core": true,
+   "artists": [
+    "Red Smiley",
+    "The Bluegrass Cut-Ups",
+    "Jim Eanes",
+    "Roger Sprung"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Limehouse Blues",
+   "type": "Instrumental",
+   "key": "G",
+   "difficulty": "Advanced",
+   "coverage": 13,
+   "core": true,
+   "artists": [
+    "Bill Harrell",
+    "Charlie Waller",
+    "Don Reno",
+    "Reno and Smiley"
+   ],
+   "notes": "swing standard",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Raleigh and Spencer",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 13,
+   "core": true,
+   "artists": [
+    "Pert Near Sandstone",
+    "Yonder Mountain String Band",
+    "Wildcats",
+    "Honey Buckets"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Black-Eyed Susie",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 12,
+   "core": true,
+   "artists": [
+    "Kyle Creed",
+    "Doc Watson",
+    "The Dillards",
+    "Bob Herring"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Instrumental",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 12,
+   "core": true,
+   "artists": [
+    "The Del McCoury Band",
+    "David Grisman",
+    "Norman Blake",
+    "The Tony Rice Unit"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Jimmy Brown the Newsboy",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 12,
+   "core": true,
+   "artists": [
+    "Bill Monroe",
+    "Bill Monroe and the Bluegrass Boys",
+    "Peter Rowan",
+    "Lester Flatt & Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Old Dangerfield",
+   "type": "Fiddle Tune",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 12,
+   "core": true,
+   "artists": [
+    "Barcelona Bluegrass Band",
+    "Wayne Benson",
+    "Dismembered Tennesseans",
+    "The String Cheese Incident"
+   ],
+   "notes": "three parts",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Sally Johnson",
+   "type": "Fiddle Tune",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 12,
+   "core": true,
+   "artists": [
+    "Charlie Higgins",
+    "Fiddlin\u2019 Arthur Smith",
+    "Alan Munde",
+    "Ralph Whited"
+   ],
+   "notes": "contest reel",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Stoney Creek",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 12,
+   "core": true,
+   "artists": [
+    "The Virginia Boys",
+    "Doc Watson",
+    "Larry Sparks and the Lonesome Ramblers",
+    "Jim and Jesse"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bye Bye Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 11,
+   "core": true,
+   "artists": [
+    "Jim and Jesse",
+    "Don Reno",
+    "Eddie Adcock",
+    "Bill Harrell"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Johnson Boys",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 11,
+   "core": true,
+   "artists": [
+    "Wolfe Bros.",
+    "Reed Martin",
+    "Grandpa Jones",
+    "Down Trodden String Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Cuckoo",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 11,
+   "core": true,
+   "artists": [
+    "Harvey Reid",
+    "Riley Baugus",
+    "Ben Miller Band",
+    "The Holy Modal Rounders"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Walking in Jerusalem",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 11,
+   "core": true,
+   "artists": [
+    "Doc Watson",
+    "Bill Monroe and the Bluegrass Boys",
+    "Boone Creek",
+    "Jimmy Martin"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Winter Wonderland",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 11,
+   "core": true,
+   "artists": [
+    "The Lewis Family",
+    "Rhonda Vincent",
+    "The Roys",
+    "David Grisman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Daybreak in Dixie",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 10,
+   "core": true,
+   "artists": [
+    "The Country Gentlemen",
+    "The Stanley Brothers",
+    "Cliff Waldron",
+    "Ralph Stanley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Durham's Bull",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 10,
+   "core": true,
+   "artists": [
+    "April Verch",
+    "Herschel Sizemore",
+    "Nashville Grass",
+    "Benton Flippen"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "O Death",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 10,
+   "core": true,
+   "artists": [
+    "The Stanley Brothers",
+    "Ralph Stanley",
+    "Gangstagrass",
+    "Mike Seeger"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Pallet on the Floor",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 10,
+   "core": true,
+   "artists": [
+    "Doc Watson",
+    "The Country Gentlemen",
+    "The Dead South",
+    "Bill Monroe"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Ballad of Jed Clampett",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 10,
+   "core": true,
+   "artists": [
+    "The Osborne Brothers",
+    "Earl Scruggs",
+    "Nashville Grass",
+    "Lester Flatt & Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Whispering",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 10,
+   "core": true,
+   "artists": [
+    "Mike Auldridge",
+    "Jim Eanes & The Shenandoah Valley Boys",
+    "David Grisman",
+    "Buck Ryan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Can the Circle Be Unbroken (By and By)",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": true,
+   "artists": [
+    "Ralph Stanley",
+    "Jimmy Martin",
+    "Punch Brothers",
+    "Alison Krauss"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Diamond Joe",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": true,
+   "artists": [
+    "Carolina Road",
+    "Peter Rowan",
+    "Del McCoury",
+    "The New Lost City Ramblers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Hickory Wind",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": true,
+   "artists": [
+    "Black Prairie",
+    "The Seldom Scene",
+    "Hickory Wind",
+    "John Duffey"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Interlude",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": true,
+   "artists": [
+    "Lindsay Lou & The Flatbellys",
+    "B\u00e9la Fleck and the Flecktones",
+    "Alder Street",
+    "Buckethead"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Little Willie",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": true,
+   "artists": [
+    "Wolfe Bros.",
+    "Bobby Harrison",
+    "The Stanley Brothers",
+    "The Osborne Brothers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Memphis",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": true,
+   "artists": [
+    "Mike Seeger",
+    "The Wood Brothers",
+    "Joyce Andersen",
+    "Jim and Jesse"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Old and in the Way",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": true,
+   "artists": [
+    "The Stanley Brothers",
+    "The Lewis Family",
+    "Peter Rowan",
+    "Jim Buchanan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Santa Claus Is Coming to Town",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": true,
+   "artists": [
+    "John 5",
+    "Charlie Daniels",
+    "Harvey Reid",
+    "Vince Gill"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Tom and Jerry",
+   "type": "Fiddle Tune",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 9,
+   "core": true,
+   "artists": [
+    "Mark O\u2019Connor",
+    "Wildcats",
+    "The Dillards",
+    "Uncle Dave Macon"
+   ],
+   "notes": "contest breakdown",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Two Soldiers",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": true,
+   "artists": [
+    "Joe Craven",
+    "Tony Rice",
+    "Ricky Skaggs",
+    "Norman Blake"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "20/20 Vision",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "David Grisman",
+    "Jimmy Martin and the Sunny Mountain Boys",
+    "Jimmy Martin",
+    "Del McCoury"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Band Introductions",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "The Seldom Scene",
+    "The Stanley Brothers",
+    "Ralph Stanley",
+    "The Earls of Leicester"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Band Intros",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "David Grisman",
+    "B\u00e9la Fleck and the Flecktones",
+    "The Chicks",
+    "The Bluegrass Album Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Boatman",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "John Hartford",
+    "Josh Turknett",
+    "Yonder Mountain String Band",
+    "Country Ham"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Boll Weevil",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Jethro Burns",
+    "Alice Gerrard",
+    "Bruce Molsky",
+    "Tommy Jarrell"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Follow the Leader",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Bill Harrell",
+    "Don Reno",
+    "The Bluegrass Band",
+    "The Tennessee Cut-Ups"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Going to Georgia",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Wade Mainer",
+    "The Gordons",
+    "J.E. Mainer",
+    "Ralph Stanley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Greenback Dollar",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "The Dillards",
+    "The New Lost City Ramblers",
+    "The Burnett Sisters Band",
+    "Reno and Smiley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Ground Hog",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Jim Mills",
+    "Mike Seeger",
+    "Tommy Jarrell",
+    "Dwight Diller"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Maggie\u2019s Farm",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Charlie Daniels",
+    "John Hartford",
+    "The Charlie Daniels Band",
+    "Mountain Heart"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Redbird",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Joe Newberry",
+    "Jim Lauderdale",
+    "Leftover Salmon",
+    "Yonder Mountain String Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Reuben",
+   "type": "Instrumental",
+   "key": "D",
+   "difficulty": "Intermediate",
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Tommy Jarrell",
+    "Jim Mills",
+    "The Scottsville Squirrel Barkers",
+    "The Osborne Brothers"
+   ],
+   "notes": "open D banjo tuning",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Ripple",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Beginner",
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Joe Craven",
+    "Darol Anger",
+    "David Grisman",
+    "The Grassmasters"
+   ],
+   "notes": "jam standard",
+   "instruments": []
+  },
+  {
+   "title": "Sixteen Tons",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Southern Raised",
+    "Mac Wiseman",
+    "Hayseed Dixie",
+    "The White Rattlesnake"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Fall",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Mike Marshall",
+    "The Avett Brothers",
+    "Elliott BROOD",
+    "Darol Anger"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Old Crossroad",
+   "type": "Gospel",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Ralph Stanley",
+    "Sonny Osborne",
+    "Bill Monroe",
+    "Bill Monroe and the Bluegrass Boys"
+   ],
+   "notes": "quartet gospel",
+   "instruments": []
+  },
+  {
+   "title": "Two Coats",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Dean Sapp and The Hartford Express",
+    "Ralph Stanley",
+    "Larry Cordle",
+    "The Sullivan Family"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Whitehouse Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": true,
+   "artists": [
+    "Doc Watson",
+    "The Tennessee Cut-Ups",
+    "Del McCoury and The Dixie Pals",
+    "Don Reno"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Sugar in the Gourd",
+   "type": "Old-Time",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 20,
+   "core": false,
+   "artists": [
+    "Rayna Gellert",
+    "Michael Cleveland",
+    "Sharon Gilchrist",
+    "Red Smiley"
+   ],
+   "notes": "breakdown",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "O Come All Ye Faithful",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 15,
+   "core": false,
+   "artists": [
+    "The Louvin Brothers",
+    "Mike Marshall",
+    "Vince Gill",
+    "The Petersens"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Red Apple Rag",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 13,
+   "core": false,
+   "artists": [
+    "Wayne Benson",
+    "Ricky Skaggs",
+    "Frank Wakefield",
+    "Don Reno"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "The First Noel",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 13,
+   "core": false,
+   "artists": [
+    "Michael Martin Murphey",
+    "Andrea Zonn",
+    "David Grier",
+    "Peter Ostroushko"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Cuckoo's Nest",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 12,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "Steve Kaufman",
+    "Bob Walters",
+    "Ed Haley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Sugar Tree Stomp",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 12,
+   "core": false,
+   "artists": [
+    "The Bluegrass Cut-Ups",
+    "The New Southern Ramblers",
+    "Norman Blake",
+    "Ralph Whited"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Dill Pickle Rag",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 11,
+   "core": false,
+   "artists": [
+    "Red Smiley",
+    "Doc Watson",
+    "Reno and Smiley",
+    "Bill Harrell"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Fortune",
+   "type": "Old-Time",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 11,
+   "core": false,
+   "artists": [
+    "Black Prairie",
+    "Riley Baugus",
+    "Benton Flippen",
+    "The New Lost City Ramblers"
+   ],
+   "notes": "modal",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Chilly Winds",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 10,
+   "core": false,
+   "artists": [
+    "The Lonesome Ace Stringband",
+    "Down Trodden String Band",
+    "Doc Watson",
+    "The New Lost City Ramblers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Flop-Eared Mule",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 10,
+   "core": false,
+   "artists": [
+    "Clarence White",
+    "Gid Tanner & His Skillet Lickers",
+    "Clark Kessinger",
+    "Steve Kaufman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Jack of Diamonds",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 10,
+   "core": false,
+   "artists": [
+    "Rhys Jones",
+    "Joyce Andersen",
+    "Gaither Carlton",
+    "Pete McMahan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Little Brown Jug",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 10,
+   "core": false,
+   "artists": [
+    "Tommy Jarrell",
+    "Dink Roberts",
+    "Rhys Jones",
+    "Andy Cahan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Banjo Signal",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": false,
+   "artists": [
+    "Reno and Smiley",
+    "Tony Trischka",
+    "The Tennessee Cut-Ups",
+    "Eddie Adcock"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Cricket on the Hearth",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": false,
+   "artists": [
+    "Country Ham",
+    "Steve Kaufman",
+    "Hickory Wind",
+    "Lost & Found"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Deep Elm Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": false,
+   "artists": [
+    "The Charlie Daniels Band",
+    "Jesse McReynolds",
+    "David Nelson",
+    "Northern Lights"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Devilish Mary",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": false,
+   "artists": [
+    "J.E. Mainer",
+    "Cathy Barton",
+    "The Bluegrass Cut-Ups",
+    "Grandpa Jones"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Dry and Dusty",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": false,
+   "artists": [
+    "Bob Herring",
+    "Rhys Jones",
+    "Bob Bovee",
+    "Appalachian Heaven Stringband"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Molly Put the Kettle On",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "The New Lost City Ramblers",
+    "Gid Tanner & His Skillet Lickers",
+    "Andy Cahan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Rabbit in the Log",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": false,
+   "artists": [
+    "Bill Monroe",
+    "The Stanley Brothers",
+    "The Craig County Boys",
+    "Ralph Stanley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Railroad Bill",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": false,
+   "artists": [
+    "The Stonemans",
+    "Hobart Smith",
+    "Crooked Still",
+    "Harvey Reid"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Star\u2010Spangled Banner",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": false,
+   "artists": [
+    "Mark O\u2019Connor",
+    "Dolly Parton",
+    "B\u00e9la Fleck",
+    "Alan Jackson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Whistlin' Rufus",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 9,
+   "core": false,
+   "artists": [
+    "Gid Tanner & His Skillet Lickers",
+    "New Ballards Branch Bogtrotters",
+    "The Bluegrass Cut-Ups",
+    "Clarence \"Tater\" Tate"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Brushy Fork of John's Creek",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "Big Medicine",
+    "John Hartford",
+    "Owen \"Snake\" Chapman",
+    "Erynn Marshall & Chris Coole"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Caroline",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "Mipso",
+    "Summervilla",
+    "The Cockman Family",
+    "Old Crow Medicine Show"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Durang's Hornpipe",
+   "type": "Fiddle Tune",
+   "key": "D",
+   "difficulty": "Intermediate",
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "Bob Walters",
+    "Country Gazette",
+    "Clark Kessinger",
+    "Johnnie Whisnant"
+   ],
+   "notes": "hornpipe",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "In the Bleak Midwinter",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "Stuart Duncan",
+    "Dismembered Tennesseans",
+    "David Grier",
+    "Cathy Barton"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Jolene",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "Yonder Mountain String Band",
+    "The Wood Brothers",
+    "The Petersens",
+    "Dolly Parton"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Natural Bridge Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "Red Smiley",
+    "Foghorn Stringband",
+    "The Tennessee Cut-Ups",
+    "Buck Ryan"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Rolling in My Sweet Baby\u2019s Arms",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "Yonder Mountain String Band",
+    "Ernie & Mack",
+    "Honey Buckets",
+    "Larry Sparks and the Lonesome Ramblers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Shortenin' Bread",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "The Bluegrass Cut-Ups",
+    "Carlton Rawlings",
+    "John Hartford",
+    "Jimmy Martin and the Sunny Mountain Boys"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Snow Deer",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "Clarence \"Tater\" Tate",
+    "Country Ham",
+    "Kenny Baker",
+    "The Stanley Brothers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Stepping Stones",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "Ernie & Mack",
+    "The Lewis Family",
+    "The Bluegrass Cut-Ups",
+    "Joe Val and The New England Bluegrass Boys"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Walking Boss",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 8,
+   "core": false,
+   "artists": [
+    "Doc Watson",
+    "Clint Howard",
+    "The New Lost City Ramblers",
+    "Hobart Smith"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "'A' Train",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Norman Blake",
+    "Butch Robins",
+    "Tut Taylor",
+    "The String Cheese Incident"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Amelia Earhart's Last Flight",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "The New Southern Ramblers",
+    "Martha Adcock",
+    "The Greenbriar Boys",
+    "Eddie Adcock"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Big Eyed Rabbit",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Wolfe Bros.",
+    "April Verch",
+    "J.E. Mainer",
+    "Wade Mainer"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Black Jack Davy",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Hickory Wind",
+    "Clarence White",
+    "Joyce Andersen",
+    "The New Lost City Ramblers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Caravan",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Mike Auldridge",
+    "Michael Lee Firkins",
+    "Vassar Clements",
+    "Jethro Burns"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Carol of the Bells",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Mark O\u2019Connor",
+    "Dailey & Vincent",
+    "Stuart Duncan",
+    "David Grier"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Cincinnati Rag",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "The Tennessee Cut-Ups",
+    "The Bluegrass Album Band",
+    "Don Reno",
+    "Kenny Baker"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Country Poor and Country Proud",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Jimmy Gaudreau",
+    "Eddie Adcock",
+    "Tom Gray",
+    "Randy Waller"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Crossroads",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Lonesome River Band",
+    "The Grassmasters",
+    "Sam Bush",
+    "B\u00e9la Fleck"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Elzic's Farewell",
+   "type": "Old-Time",
+   "key": "Am",
+   "difficulty": "Advanced",
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Blue Highway",
+    "Gaither Carlton",
+    "Pert Near Sandstone",
+    "Bill Evans"
+   ],
+   "notes": "modal, three parts",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Father's Table Grace",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Lester Flatt",
+    "Ken Seaman",
+    "The Bressler Brothers",
+    "Lester Flatt & Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Feuding Banjos",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Eric Weissberg",
+    "Arthur Smith",
+    "Don Reno",
+    "Frank Wakefield"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Fireball",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Jim and Jesse",
+    "Lester Flatt & Earl Scruggs",
+    "The Bluegrass Album Band",
+    "Bill Harrell"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Folsom Prison Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Jim Nunally",
+    "The Charlie Daniels Band",
+    "Dix Bruce",
+    "Lester Flatt & Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Free",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Whiskey Shivers",
+    "The Rowans",
+    "The Gospel Plowboys",
+    "Austin Lucas"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Friend of the Devil",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Joe Craven",
+    "Billy Strings",
+    "The Grassmasters",
+    "Vassar Clements"
+   ],
+   "notes": "jam standard",
+   "instruments": []
+  },
+  {
+   "title": "Frosty the Snowman",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "The Petersens",
+    "Reno and Smiley",
+    "Dailey & Vincent",
+    "The Charlie Daniels Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Glendale Train",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Sam Bush",
+    "Stuart Duncan",
+    "David Grier",
+    "Hickory Hill"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Hell Among the Yearlings",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "The New Southern Ramblers",
+    "Red Smiley",
+    "Fiddlin\u2019 Arthur Smith",
+    "Clark Kessinger"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Help!",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Bob Haydon",
+    "Greensky Bluegrass",
+    "Mipso",
+    "Dolly Parton"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "I Saw Your Face in the Moon",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Don Reno",
+    "Mac Wiseman",
+    "Reno and Smiley",
+    "Buck Ryan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "I'm Using My Bible for a Roadmap",
+   "type": "Gospel",
+   "key": "A",
+   "difficulty": "Beginner",
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "The Lewis Family",
+    "Don Reno",
+    "Barrier Brothers",
+    "Dismembered Tennesseans"
+   ],
+   "notes": "up-tempo gospel",
+   "instruments": []
+  },
+  {
+   "title": "I've Been All Around This World",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "David Davis",
+    "Joe Val and The New England Bluegrass Boys",
+    "Mike Seeger",
+    "Robbie Fulks"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Katy Cline",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Adam Hurt",
+    "The Greenbriar Boys",
+    "The Dillards",
+    "Don Stover"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Letter From My Darling",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Bill Monroe",
+    "The Bluegrass Album Band",
+    "Larry Sparks",
+    "Sonny Osborne"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Matthew 24",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "The Virginia Boys",
+    "Jim and Jesse",
+    "The Lewis Family",
+    "Shiloh Gospel Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Minor Swing",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Shoji Tabuchi",
+    "Mark O\u2019Connor",
+    "Bryan Sutton",
+    "Chris Thile"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Mr. Bojangles",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "Nitty Gritty Dirt Band",
+    "David Nelson",
+    "Vassar Clements"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "New Five Cents",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Rafe Stefanini",
+    "Country Ham",
+    "David Grier",
+    "Down Trodden String Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "O Come O Come Emmanuel",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Annie Moses Band",
+    "Punch Brothers",
+    "Alison Krauss",
+    "The Petersens"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Old Paint",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Bob Bovee",
+    "Bob Herring",
+    "Wolfe Bros.",
+    "The Lonesome Ace Stringband"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Old Reuben",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Tommy Jarrell",
+    "Peter Ostroushko",
+    "Wade Ward",
+    "J.E. Mainer"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Old Ruben",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Clint Howard",
+    "Doc Watson",
+    "Carolina Tar Heels",
+    "Wade Mainer"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Panama Red",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Tony Rice",
+    "Pert Near Sandstone",
+    "Peter Rowan",
+    "The Good Old Boys"
+   ],
+   "notes": "jam standard",
+   "instruments": []
+  },
+  {
+   "title": "Pastures of Plenty",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Bruce Hornsby",
+    "Harvey Reid",
+    "The Dillards",
+    "Joyce Andersen"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Patty on the Turnpike",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "The Warrior River Boys",
+    "The Bluegrass Partners",
+    "James Bryan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Redwing",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Kyle Creed",
+    "Reed Martin",
+    "Frank Wakefield",
+    "Ralph Whited"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Ruben's Train",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Old Crow Medicine Show",
+    "Tony Trischka",
+    "Dock Boggs",
+    "Dix Bruce"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Rye Straw",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Adam Hurt",
+    "The Osborne Brothers",
+    "Michael Cleveland",
+    "Rhys Jones"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Short\u2019nin\u2019 Bread",
+   "type": "Old-Time",
+   "key": "D",
+   "difficulty": "Beginner",
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Earl Johnson",
+    "Arthur Smith",
+    "J.E. Mainer\u2019s Mountaineers",
+    "Dykes\u2019 Magic City Trio"
+   ],
+   "notes": "crossover",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Sometimes",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Jim Lauderdale",
+    "The Roys",
+    "Punch Brothers",
+    "The Chicks"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Tough Luck",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Doc Watson",
+    "Clint Howard",
+    "Carolina Tar Heels",
+    "Dom Flemons"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Wabash Cannon Ball",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Mac Wiseman",
+    "Jim and Jesse",
+    "Don Reno",
+    "The Tennessee Cut-Ups"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Walking in Jerusalem Just Like John",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "The Dillards",
+    "The High Bar Gang",
+    "The Good Old Boys",
+    "Bill Monroe and the Bluegrass Boys"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Welcome to Daytrotter",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Black Prairie",
+    "Billy Strings",
+    "B\u00e9la Fleck",
+    "Sturgill Simpson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Whoa Mule",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "The Stanley Brothers",
+    "Foghorn Stringband",
+    "Clint Howard",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Willie Roy the Crippled Boy",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Bill Harrell",
+    "Charlie Waller",
+    "John Duffey",
+    "The Country Gentlemen"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Workin' on a Building",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 7,
+   "core": false,
+   "artists": [
+    "Red Smiley",
+    "Ricky Skaggs",
+    "The Del McCoury Band",
+    "Joe Craven"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "500 Miles",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "Charlie Waller",
+    "John Duffey",
+    "Lester Flatt & Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Ace of Spades",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Handsome Hank and His Lonesome Boys",
+    "Hayseed Dixie",
+    "Southfork Bluegrass Band",
+    "Peter Ostroushko"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Angelina Baker",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Sugar Run",
+    "The SteelDrivers",
+    "Whiskey Shivers",
+    "Steve Kaufman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Angeline",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Art Stevenson & High Water",
+    "J. P. Cormier",
+    "Gill Landry",
+    "The Slocan Ramblers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Apple Blossom",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Alan Munde",
+    "The Dillards",
+    "Gaither Carlton",
+    "Hog-Eyed Man"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Avalon",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Dix Bruce",
+    "David Grisman",
+    "Palast Orchester mit seinem S\u00e4nger Max Raabe",
+    "Kenny Baker"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Banjo Pickin' Girl",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Stringbean",
+    "Locust Honey String Band",
+    "Gloria Belle",
+    "Alice Gerrard"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Birdie",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "Tommy Jarrell",
+    "Kessinger Brothers",
+    "Kenny Baker"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bitter Creek",
+   "type": "Fiddle Tune",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "Double Decker String Band",
+    "Howdy Forrester",
+    "Bob Herring"
+   ],
+   "notes": "breakdown",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Camp Chase",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Bruce Molsky",
+    "Erynn Marshall and Carl Jones",
+    "James Bryan",
+    "Dwight Diller"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Carolina in My Mind",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Alison Krauss",
+    "Jerry Douglas",
+    "Hamilton County Bluegrass Band",
+    "The Petersens"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Choking the Strings",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Reno and Smiley",
+    "Bill Emerson",
+    "The Tennessee Cut-Ups",
+    "Don Reno"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Claude Allen",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Carolina Tar Heels",
+    "Fred Price",
+    "Hobart Smith",
+    "Clint Howard"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Corrina, Corrina",
+   "type": "Vocal",
+   "key": "A",
+   "difficulty": "Beginner",
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Gaither Carlton",
+    "Clint Howard",
+    "Jethro Burns",
+    "Fred Price"
+   ],
+   "notes": "bluesy standard",
+   "instruments": []
+  },
+  {
+   "title": "Darling Nellie Gray",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Bob Bovee",
+    "Al Hopkins and His Buckle Busters",
+    "Marion Sumner",
+    "Reed Martin"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Dire Wolf",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Molly Tuttle",
+    "The Grassmasters",
+    "Billy Strings",
+    "New Riders of the Purple Sage"
+   ],
+   "notes": "jam favorite",
+   "instruments": []
+  },
+  {
+   "title": "Duelling Banjos",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Lester Flatt & Earl Scruggs",
+    "Lester Flatt",
+    "Eric Weissberg",
+    "Hamilton County Bluegrass Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Fanny Hill",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "David Grisman",
+    "Bill Keith",
+    "Todd Phillips",
+    "Tony Rice"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Glory in the Meeting House",
+   "type": "Gospel",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Uncle Sinner",
+    "Erynn Marshall & Chris Coole",
+    "Bruce Molsky",
+    "Red Cravens"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "God's Gonna Ease My Troublin' Mind",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Doc Watson",
+    "The New Lost City Ramblers",
+    "Carolina Tar Heels",
+    "Clint Howard"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Graveyard Shift",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "The Travelin\u2019 McCourys",
+    "J. P. Cormier",
+    "The Dixie Bee-Liners",
+    "Back Porch Swing"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Hannah",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "The Bluegrass Cut-Ups",
+    "Authentic Unlimited",
+    "J.E. Mainer",
+    "Red Smiley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "High Level Hornpipe",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Howdy Forrester",
+    "Stuart Duncan",
+    "B\u00e9la Fleck",
+    "Bobby Osborne"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Hills of Mexico",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Roscoe Holcomb",
+    "Ricky Skaggs",
+    "Wolfe Bros.",
+    "The Lonesome Ace Stringband"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Hold Watcha Got",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Wires & Wood",
+    "The Bluegrass Album Band",
+    "Northern Lights",
+    "Vassar Clements"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Hook and Line",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Dock Boggs",
+    "Ricky Skaggs",
+    "Carolina Tar Heels",
+    "Roscoe Holcomb"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "I Shall Be Released",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "The Avett Brothers",
+    "Marty Stuart",
+    "The Charlie Daniels Band",
+    "The Grassmasters"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "I Truly Understand",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "The New Lost City Ramblers",
+    "Golden Delicious",
+    "The Volo Bogtrotters",
+    "Bruce Molsky"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Indian Creek",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "The String Cheese Incident",
+    "Red Smiley",
+    "Fiddlin\u2019 Arthur Smith & His Dixieliners",
+    "Buck Ryan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Johnny Get Your Gun",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "J.E. Mainer",
+    "Old Crow Medicine Show",
+    "The Bluegrass Cut-Ups",
+    "Red Smiley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Joshua",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Nitty Gritty Dirt Band",
+    "The Lewis Family",
+    "Dolly Parton",
+    "Rhonda Vincent"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Last of Callahan",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Bruce Molsky",
+    "Pert Near Sandstone",
+    "Highwoods String Band",
+    "Mike Seeger"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Louis Collins",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "David Nelson",
+    "Saddle River String Band",
+    "Tony Rice",
+    "David Grisman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Louise",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "The Seldom Scene",
+    "Mipso",
+    "Fiddlin\u2019 Arthur Smith",
+    "Jim Eanes & The Shenandoah Valley Boys"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "McKinley's Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Tut Taylor",
+    "Butch Robins",
+    "Jethro Burns",
+    "Sam Bush"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Mexico",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Carbon Leaf",
+    "Gill Landry",
+    "Norman Blake",
+    "Sam Bush"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Mocking Bird",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Vassar Clements",
+    "Dean Sapp and The Hartford Express",
+    "Bill Harrell",
+    "Don Reno"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Nearer My God to Thee",
+   "type": "Gospel",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Bill Harrell and The Virginians",
+    "The Louvin Brothers",
+    "The Country Gentlemen",
+    "Charlie Waller"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Nights in White Satin",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Doc Watson",
+    "John Cowan",
+    "Sam Bush",
+    "The Pigs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Oconee",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Jethro Burns",
+    "Butch Robins",
+    "Norman Blake",
+    "Tut Taylor"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Old Ship of Zion",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Don Rigsby",
+    "Ralph Stanley",
+    "Dudley Connell",
+    "Larry Cordle"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Over the Hills to the Poorhouse",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Lester Flatt",
+    "The Country Gentlemen",
+    "Lester Flatt & Earl Scruggs",
+    "Mac Wiseman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Pilgrim",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Marty Stuart",
+    "Ralph Stanley",
+    "Hickory Hill",
+    "The Wood Brothers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Pretty Little Widow",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Clint Howard",
+    "Roger Sprung and His Progressive Bluegrassers",
+    "Gid Tanner & His Skillet Lickers",
+    "Fred Price"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Rocky Mountain",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Hobart Smith",
+    "Fiddlin\u2019 Doc Roberts",
+    "Kyle Creed",
+    "Fred Galligher"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Rudolph the Red-Nosed Reindeer",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Palast Orchester mit seinem S\u00e4nger Max Raabe",
+    "Charlie Daniels",
+    "Valerie June",
+    "David Johnson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Saurkraut 'n Solar Energy",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Norman Blake",
+    "Vassar Clements",
+    "Jethro Burns",
+    "Butch Robins"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Simple Gifts",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Mark O\u2019Connor",
+    "Harvey Reid",
+    "Joyce Andersen",
+    "Shoji Tabuchi"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "St. James Infirmary",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Clint Howard",
+    "Harvey Reid",
+    "David Grisman",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Sweet Dixie",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Jimmy Martin and the Sunny Mountain Boys",
+    "Bill Emerson",
+    "Art Stamper",
+    "Wayne Benson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Sweet Thing",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Alison Brown",
+    "Reno and Smiley",
+    "Vince Gill",
+    "The Osborne Brothers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Talk",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Marty Stuart",
+    "Vince Gill",
+    "Sturgill Simpson",
+    "Molly Tuttle"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Talk About Suffering",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Bryan Sutton",
+    "Doc Watson",
+    "Tony Rice",
+    "Ricky Skaggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Tall Timber",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Vassar Clements",
+    "Michael Cleveland",
+    "Bill Monroe and the Bluegrass Boys",
+    "Audie Blaylock and Redline"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Coo-Coo Bird",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Fred Price",
+    "Doc Watson",
+    "Carolina Tar Heels",
+    "Clint Howard"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Flood",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "The Gordons",
+    "The Stanley Brothers",
+    "Scott Stutzman",
+    "Buckethead"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Letter",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Ronnie Reno",
+    "J. P. Cormier",
+    "Oneside",
+    "Bobby's Oar"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Old Brown Case",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Jethro Burns",
+    "Norman Blake",
+    "Butch Robins",
+    "Vassar Clements"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Two Little Boys",
+   "type": "Vocal",
+   "key": "A",
+   "difficulty": "Beginner",
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "Martha Adcock",
+    "Eddie Adcock",
+    "Tom Gray"
+   ],
+   "notes": "sentimental",
+   "instruments": []
+  },
+  {
+   "title": "Vassar & Dave",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Norman Blake",
+    "Jethro Burns",
+    "Vassar Clements",
+    "Sam Bush"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Watson Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Doc Watson",
+    "David Grisman",
+    "Bill Monroe",
+    "Billy Strings"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Weary Blues From Waitin\u2019",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "Vince Gill",
+    "Molly Tuttle",
+    "Hickory Wind",
+    "Andy Cahan"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Windy and Warm",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 6,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "Doc Watson",
+    "Banjo Express",
+    "David Grisman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "900 Miles",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Uncle Sinner",
+    "Mike Seeger",
+    "The Bluegrass Cut-Ups",
+    "Sister Sadie"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Banjo Riff",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Reno and Smiley",
+    "Buzz Busby",
+    "Don Reno",
+    "Eddie Adcock"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Beautiful",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The String Cheese Incident",
+    "The Pigs",
+    "Ralph Stanley",
+    "Jimmy Gaudreau"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bill Cheatum",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Hog-Eyed Man",
+    "Bob Walters",
+    "Marion Sumner",
+    "The Seldom Scene"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Black Eyed Suzie",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Pert Near Sandstone",
+    "Roscoe Holcomb",
+    "Adam Hurt",
+    "Clarence White"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Black Eyed Suzy",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Nashville Grass",
+    "The Earls of Leicester",
+    "The Holy Modal Rounders",
+    "Lester Flatt"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Black Lung",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Lonesome Ace Stringband",
+    "The Dead South",
+    "Steve Earle",
+    "Strange Creek Singers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Black Mountain Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Osborne Brothers",
+    "Ralph Stanley",
+    "Clarence White",
+    "Jim Mills"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Blackbird",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Rayna Gellert",
+    "J. P. Cormier",
+    "Jourdan Hines",
+    "The Woes"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bluegrass Radio",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Steve Martin",
+    "Todd Phillips",
+    "Sam Bush",
+    "Alison Brown"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bonie Maronie",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "David Nelson",
+    "Vassar Clements",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bootleg John",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Jason Davis",
+    "Don Rigsby",
+    "Ralph Stanley",
+    "The Stanley Brothers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Buckin' Mule",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Gid Tanner & His Skillet Lickers",
+    "Red Cravens",
+    "Clarence White",
+    "Larry Richardson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bum's Rush",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Jerry Douglas",
+    "Stuart Duncan",
+    "Bryan Sutton",
+    "B\u00e9la Fleck"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Burglar Man",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "The Dixie Mountain Boys",
+    "The Bluegrass Cut-Ups",
+    "J.E. Mainer"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Cannon Ball Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Greenbriar Boys",
+    "Grandpa Jones",
+    "The Warrior River Boys",
+    "Larry Sparks and the Lonesome Ramblers"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Carolina",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Charlie Daniels Band",
+    "The Jellyman's Daughter",
+    "The Gordons",
+    "Summervilla"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Cedar Hill",
+   "type": "Instrumental",
+   "key": "A",
+   "difficulty": "Advanced",
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Bob Haydon",
+    "Lester Flatt",
+    "David Grisman",
+    "Vic Jordan"
+   ],
+   "notes": "Dawg tune",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Chicken",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Don Reno",
+    "The Greenbriar Boys",
+    "Arthur Smith",
+    "The String Cheese Incident"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Clarinet Polka",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Country Ham",
+    "Bill Evans",
+    "B\u00e9la Fleck",
+    "Mark O\u2019Connor"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Conversation",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Bruce Hornsby",
+    "Jimmy Martin",
+    "Ralph Stanley",
+    "New Riders of the Purple Sage"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Cowboys and Indians",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Bill Emerson",
+    "The Country Gentlemen",
+    "Jim Mills",
+    "Peter Rowan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Cumberland Blues",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Travelin\u2019 McCourys",
+    "Doc Roberts and His Trio",
+    "The Chicken Chokers",
+    "The Grassmasters"
+   ],
+   "notes": "jam favorite",
+   "instruments": []
+  },
+  {
+   "title": "Durham's Reel",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Hot Rize",
+    "Clarence White",
+    "Lester Flatt & Earl Scruggs",
+    "Andy Statman"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Eastbound Train",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Gibson Brothers",
+    "Mac Wiseman",
+    "Clint Howard",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Farewell Angelina",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Watkins Family Hour",
+    "Sara Watkins",
+    "Rita Hosking",
+    "New Riders of the Purple Sage"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Fiddler's Pastime",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Sharon Gilchrist",
+    "Darol Anger",
+    "Bronwyn Keith-Hynes",
+    "Noam Pikelny"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Five Miles From Town",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Pharis & Jason Romero",
+    "Rayna Gellert",
+    "Tatiana Hargreaves",
+    "April Verch"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Flowers of Edinburgh",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Steve Kaufman",
+    "Adam Hurt",
+    "Mark O\u2019Connor",
+    "Grandpa Jones"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Franklin\u2019s Tower",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Leftover Salmon",
+    "The String Cheese Incident",
+    "Jesse McReynolds",
+    "David Nelson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Georgia",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Charlie Daniels Band",
+    "David Grisman",
+    "Country Gazette",
+    "Steve Kaufman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Gonna Be Movin'",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Larry Sparks",
+    "Ralph Stanley",
+    "Backwoods Bluegrass Band",
+    "The Lewis Family"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Henry Lee",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Ralph Stanley",
+    "The Tallboys",
+    "Locust Honey String Band",
+    "Foghorn Stringband"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "High Sierra",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Dillards",
+    "Jimmy Gaudreau",
+    "Moondi Klein",
+    "The Petersens"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Highway of Pain",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Flatt Lonesome",
+    "Lonesome River Band",
+    "The Seldom Scene",
+    "The Del McCoury Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Indian Nation",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Hog-Eyed Man",
+    "Ed Haley",
+    "Rhys Jones",
+    "Adam Hurt"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Insured Beyond the Grave",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Doyle Lawson",
+    "The Louvin Brothers",
+    "J.D. Crowe",
+    "Paul Williams"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Lowlands",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "IIIrd Tyme Out",
+    "J. P. Cormier",
+    "Nitty Gritty Dirt Band",
+    "Hickory Hill"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Luxury Liner",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Ricky Skaggs",
+    "The Travelin\u2019 McCourys",
+    "Michael Cleveland",
+    "The Coal Porters"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Maybe",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Alison Krauss",
+    "John Hartford",
+    "Jim Lauderdale",
+    "Buckethead"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Maybellene",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Jim and Jesse",
+    "Vince Gill",
+    "John Hartford",
+    "David Grisman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Maybelline",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "Mike Seeger",
+    "Jim and Jesse",
+    "David Grisman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Me and My Fiddle",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Jim and Jesse",
+    "John Hartford",
+    "Lester Flatt & Earl Scruggs",
+    "Michael Cleveland"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Melinda",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Tatiana Hargreaves",
+    "Lorraine Jordan",
+    "Grandpa Jones",
+    "Carolina Road"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Mississippi",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Charlie Daniels Band",
+    "Bobby Osborne",
+    "The Chicks",
+    "Donna the Buffalo"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Mississippi Waltz",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Butch Robins",
+    "Noam Pikelny",
+    "Chris Thile",
+    "Vassar Clements"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Northern White Clouds",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Billy Strings",
+    "Bill Evans",
+    "Dismembered Tennesseans",
+    "Bill Monroe"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Norwegian Wood",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Vassar Clements",
+    "Bull Harman",
+    "New Grass Revival",
+    "David Grisman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Otto Wood",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Foggy Hogtown Boys",
+    "Dwight Diller",
+    "Harvey Reid",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Pick Along",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Earl Scruggs",
+    "Lester Flatt & Earl Scruggs",
+    "Ricky Skaggs",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Polka on the Banjo",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "B\u00e9la Fleck and the Flecktones",
+    "Yonder Mountain String Band",
+    "B\u00e9la Fleck",
+    "Lester Flatt & Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Pretty Bird",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Norman Blake",
+    "Crooked Still",
+    "Alice Gerrard",
+    "Carolina Chocolate Drops"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Pretty Little Indian",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "New Ballards Branch Bogtrotters",
+    "The Osborne Brothers",
+    "John Cowan",
+    "Ralph Stanley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Prisoner Song",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Del McCoury",
+    "Norman Blake",
+    "Mac Wiseman",
+    "Del McCoury and The Dixie Pals"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Rattlesnake",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Bob Herring",
+    "Banjo Express",
+    "Pert Near Sandstone",
+    "Rafe Stefanini"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Red Bird",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Grandpa Jones",
+    "Stuart Duncan",
+    "Clark Kessinger",
+    "Rhys Jones"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Rosa Lee McFall",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Charlie Monroe",
+    "The New Lost City Ramblers",
+    "Frank Wakefield",
+    "Tony Rice"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Sailor's Hornpipe",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Jethro Burns",
+    "Harvey Reid",
+    "Steve Kaufman",
+    "Mark O\u2019Connor"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Sandy Boys",
+   "type": "Old-Time",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Rhys Jones",
+    "Double Decker String Band",
+    "Dwight Diller",
+    "Carolina Chocolate Drops"
+   ],
+   "notes": "modal",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Satan\u2019s Jeweled Crown",
+   "type": "Gospel",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Seldom Scene",
+    "The Gibson Brothers",
+    "The Louvin Brothers",
+    "Cliff Waldron"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Se\u00f1or (Tales of Yankee Power)",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Donna the Buffalo",
+    "Billy Strings",
+    "Chris Thile",
+    "Punch Brothers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Shake My Mother's Hand for Me",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The Stanley Brothers",
+    "Bill Monroe",
+    "J.E. Mainer\u2019s Mountaineers",
+    "The Bluegrass Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Silver Bell",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Kenny Baker",
+    "Bill Emerson",
+    "The Country Gentlemen",
+    "B\u00e9la Fleck"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Silver Dagger",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Old Crow Medicine Show",
+    "Ed Haley",
+    "Run Boy Run",
+    "The High Bar Gang"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Sinner Man",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Ralph Stanley",
+    "Joyce Andersen",
+    "Harvey Reid",
+    "Eric Weissberg"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Sledd Ridin'",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Sonny Osborne",
+    "Mike Auldridge",
+    "Jim Mills",
+    "The Osborne Brothers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Sleepy Eyed John",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Jim and Jesse",
+    "Alan Munde",
+    "Frank Wakefield",
+    "The Virginia Boys"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Slewfoot",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Clint Howard",
+    "New Riders of the Purple Sage",
+    "Fred Price",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Smith's Rag",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Aubrey Haynie",
+    "Howdy Forrester",
+    "Country Ham",
+    "Kenny Baker"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Southern Flavor",
+   "type": "Instrumental",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Yonder Mountain String Band",
+    "Dismembered Tennesseans",
+    "Bill Monroe and the Bluegrass Boys",
+    "Bill Monroe"
+   ],
+   "notes": "Grammy-winning tune",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Streamlined Cannonball",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Norman Blake",
+    "Billy Strings",
+    "Jim and Jesse",
+    "Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Sugar Babe",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Down Trodden String Band",
+    "John Cowan",
+    "David Johnson",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Sunny Days (Are Comin\u2019 Once Again)",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Michael Cleveland",
+    "Steep Canyon Rangers",
+    "Jeff White",
+    "Dan Tyminski"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Tallahassee",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Country Gazette",
+    "Bill Monroe",
+    "Cherryholmes",
+    "Kenny Baker"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Tarnation",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "David Grier",
+    "Chris Thile",
+    "Don Reno",
+    "Michael Cleveland"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Tater Patch",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Reed Martin",
+    "Andy Cahan",
+    "Tommy Jarrell",
+    "Highwoods String Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Telluride",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Bearfoot",
+    "Nitty Gritty Dirt Band",
+    "Yonder Mountain String Band",
+    "David Grisman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Bridge",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "The String Cheese Incident",
+    "BlueRidge",
+    "Elliott BROOD",
+    "Buckethead"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Legend of the Johnson Boys",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Lester Flatt & Earl Scruggs",
+    "Nashville Grass",
+    "Lester Flatt",
+    "Poutn\u00edci"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Memphis Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Doc Watson",
+    "Fiddlin\u2019 Arthur Smith",
+    "Arthur Smith",
+    "Rhiannon Giddens"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "The Preacher and the Bear",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Mac Wiseman",
+    "David Reed",
+    "The Lewis Family",
+    "Billy Strings"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Sheik of Araby",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Clarence White",
+    "Arthur Smith",
+    "Doc Watson",
+    "Dix Bruce"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Sweet By-and-By",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Reno and Smiley",
+    "Larry Cordle",
+    "Jerry Douglas",
+    "Tony Rice"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Weight",
+   "type": "Vocal",
+   "key": "A",
+   "difficulty": "Beginner",
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Old Crow Medicine Show",
+    "Marty Stuart",
+    "B\u00e9la Fleck",
+    "New Riders of the Purple Sage"
+   ],
+   "notes": "jam standard",
+   "instruments": []
+  },
+  {
+   "title": "Tiger Rag",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Roger Sprung",
+    "David Grisman",
+    "Mark O\u2019Connor",
+    "Old Crow Medicine Show"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Tulane and Johnny",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "David Nelson",
+    "Nitty Gritty Dirt Band",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Tumbling Tumbleweeds",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Ricky Skaggs",
+    "Tumbleweed",
+    "Punch Brothers",
+    "Sara Watkins"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Twin Sisters",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Rhys Jones",
+    "Reed Martin",
+    "Murphy Campbell",
+    "J. P. Cormier"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Vertigo",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Bryan Sutton",
+    "Stuart Duncan",
+    "John 5",
+    "Sam Bush"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Wait Till the Clouds Roll By",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Uncle Dave Macon",
+    "Pharis & Jason Romero",
+    "Andrea Zonn",
+    "Darin & Brooke Aldridge"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "You\u2019re Not a Drop in the Bucket",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Doc Watson",
+    "Blue Denim",
+    "The Earls of Leicester",
+    "Lester Flatt & Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "\u201cC\u201d Jam Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 5,
+   "core": false,
+   "artists": [
+    "Peter Ostroushko",
+    "Bryan Sutton",
+    "Jethro Burns",
+    "Vassar Clements"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Ashes",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Alison Krauss",
+    "Greensky Bluegrass",
+    "Alan Jackson",
+    "John Bowman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Backwater Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Bryan Sutton",
+    "B\u00e9la Fleck",
+    "Uncle Dave Macon",
+    "Robbie Fulks"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Bear Tracks",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Jim Mills",
+    "The Petersens",
+    "Jimmy Martin and the Sunny Mountain Boys",
+    "J.D. Crowe"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bird Song",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Holy Modal Rounders",
+    "David Nelson",
+    "Jesse McReynolds",
+    "Billy Strings"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Blackjack",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Billy Strings",
+    "Wayne Benson",
+    "The Wood Brothers",
+    "Aubrey Haynie"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bluest Man in Town",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Del McCoury and The Dixie Pals",
+    "Del McCoury",
+    "The Del McCoury Band",
+    "Bill Monroe"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Boatsman",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Appalachian Heaven Stringband",
+    "Hog-Eyed Man",
+    "Ed Haley",
+    "Dwight Diller"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bonapart's Retreat",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "J.E. Mainer\u2019s Mountaineers",
+    "Steve Kaufman",
+    "Critton Hollow String Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Brokedown Palace",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Sara Watkins",
+    "Billy Strings",
+    "Watkins Family Hour",
+    "Vassar Clements"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Brother John",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Dillards",
+    "The SteelDrivers",
+    "Lonesome River Band",
+    "The Seldom Scene"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Buckaroo",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Jim and Jesse",
+    "Clarence White",
+    "Lost & Found",
+    "Rual Yarbrough"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Cakewalk",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Del McCoury",
+    "Norman Blake",
+    "Jesse McReynolds",
+    "Tut Taylor"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Caleb Meyer",
+   "type": "Vocal",
+   "key": "D",
+   "difficulty": "Intermediate",
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Watkins Family Hour",
+    "Evergreen",
+    "Fair To Middlin'",
+    "The Greencards"
+   ],
+   "notes": "modern",
+   "instruments": []
+  },
+  {
+   "title": "Can't Stop Now",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "New Grass Revival",
+    "The String Cheese Incident",
+    "Sam Bush",
+    "Greensky Bluegrass"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Cannonball",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Sister Sadie",
+    "Ola Belle Reed",
+    "Dirtwire",
+    "The Seldom Scene"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Carol of the Drum",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Peter Ostroushko",
+    "Dolly Parton",
+    "Patty Loveless",
+    "I\u2019m With Her"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Carter\u2019s Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Larry Sparks",
+    "Larry Sparks and the Lonesome Ramblers",
+    "Wayne Benson",
+    "Vince Gill"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Chatter",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Lester Flatt & Earl Scruggs",
+    "Alison Krauss & Union Station",
+    "The String Cheese Incident",
+    "John Hartford"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Coleen Malone",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Close to Home",
+    "Hot Rize",
+    "Bill Emerson",
+    "Pete Goble"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Come All Ye Tenderhearted",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "Ralph Stanley",
+    "Peter Rowan",
+    "The Stanley Brothers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Come Unto Me",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Charlie Daniels Band",
+    "The Del McCoury Band",
+    "Forbes Family",
+    "Claire Lynch"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Copperhead Road",
+   "type": "Vocal",
+   "key": "D",
+   "difficulty": "Intermediate",
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Steve Earle",
+    "Norman Blake",
+    "Peter Rowan",
+    "The Del McCoury Band"
+   ],
+   "notes": "modern crossover",
+   "instruments": []
+  },
+  {
+   "title": "Crow Black Chicken",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Bob Bovee",
+    "The New Lost City Ramblers",
+    "Pert Near Sandstone",
+    "Yonder Mountain String Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Dead Flowers",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Beginner",
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Samantha Fish",
+    "New Riders of the Purple Sage",
+    "Steve Earle",
+    "The Grassmasters"
+   ],
+   "notes": "rock cover",
+   "instruments": []
+  },
+  {
+   "title": "Delia",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "New Riders of the Purple Sage",
+    "Harvey Reid",
+    "The Honey Dewdrops",
+    "The Grascals"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Dixieland",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Ralph Stanley",
+    "Boone Creek",
+    "Steve Earle",
+    "The Del McCoury Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Do Re Mi",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Bluegrass Band",
+    "Tony Trischka",
+    "Fair To Middlin'",
+    "The Dillards"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Doc\u2019s Guitar",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Gordons",
+    "Doc Watson",
+    "Billy Strings",
+    "Nitty Gritty Dirt Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Drivin\u2019 Nails in My Coffin",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Mike Auldridge",
+    "Rhonda Vincent",
+    "The Osborne Brothers",
+    "Mac Wiseman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Drunken Hiccups",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Pert Near Sandstone",
+    "The Tallboys",
+    "Tommy Jarrell",
+    "Hobart Smith"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Duncan & Brady",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The String Cheese Incident",
+    "Harvey Reid",
+    "The Seldom Scene",
+    "New Riders of the Purple Sage"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "El Cumbanchero",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Jim and Jesse",
+    "The Virginia Boys",
+    "David Grisman",
+    "Jethro Burns"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Euphoria",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Holy Modal Rounders",
+    "Leftover Salmon",
+    "John 5",
+    "Nitty Gritty Dirt Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Fathers and Sons",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Charlie Daniels Band",
+    "Possessed by Paul James",
+    "The Del McCoury Band",
+    "Charlie Daniels"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Fiddlin' Around",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Mark O\u2019Connor",
+    "Don Reno",
+    "Buck Ryan",
+    "Red Smiley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Fire",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The String Cheese Incident",
+    "Back Porch Swing",
+    "The Avett Brothers",
+    "Chris Stapleton"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Fire Ball Mail",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Mac Wiseman",
+    "Michael Cleveland",
+    "Jim and Jesse",
+    "Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Fire and Brimstone",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Alison Krauss",
+    "Leftover Salmon",
+    "The Lewis Family",
+    "Ralph Stanley"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Fishin' Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Vassar Clements",
+    "Nitty Gritty Dirt Band",
+    "The Holy Modal Rounders",
+    "Bruce Molsky"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Georgie",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Norman Blake",
+    "Doc Watson",
+    "Tony Rice",
+    "Richard Bennett"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Gloryland",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Ralph Stanley",
+    "Carbon Leaf",
+    "Old Crow Medicine Show",
+    "Forbes Family"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Gonna Have Myself a Ball",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Lester Flatt",
+    "Lonesome River Band",
+    "Nashville Grass",
+    "Lester Flatt & Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Graveyard",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Molly Tuttle",
+    "The Devil Makes Three",
+    "The New Lost City Ramblers",
+    "Elliott BROOD"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Greasy Coat",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Dwight Diller",
+    "Old Moonshine Band",
+    "Bill Evans",
+    "Andy Cahan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Hallelujah",
+   "type": "Gospel",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Charlie Daniels",
+    "The Charlie Daniels Band",
+    "Blue Highway",
+    "Mipso"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Hicks Farewell",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Blue Highway",
+    "Doc Watson",
+    "Gaither Carlton",
+    "Riley Baugus"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Higher Ground",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Cliff Waldron",
+    "Unlimited Tradition",
+    "Paul Williams",
+    "Darol Anger"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Hometown Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Pharis & Jason Romero",
+    "The Seldom Scene",
+    "The Del McCoury Band",
+    "Steve Earle"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Hopalong Peter",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Highwoods String Band",
+    "The New Lost City Ramblers",
+    "David Grisman",
+    "Charlie Monroe"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Huckleberry Hornpipe",
+   "type": "Instrumental",
+   "key": "A",
+   "difficulty": "Advanced",
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Kentucky Blue",
+    "The Wood Brothers",
+    "Hickory Hill",
+    "Country Gazette"
+   ],
+   "notes": "flatpicking jam",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "I Was Left on the Street",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Cherryholmes",
+    "Audie Blaylock and Redline",
+    "Bill Monroe and the Bluegrass Boys",
+    "Peter Rowan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "In Tall Buildings",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Watkins Family Hour",
+    "John Hartford",
+    "Sam Bush",
+    "Swamp Rats"
+   ],
+   "notes": "songwriter",
+   "instruments": []
+  },
+  {
+   "title": "Indian Springs",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Kenny Baker",
+    "Bryan Sutton",
+    "Ricky Skaggs",
+    "Aubrey Haynie"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Indiana (Back Home Again in Indiana)",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Vassar Clements",
+    "The Grascals",
+    "The Country Gentlemen",
+    "Lonnie Hoppers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Introductions",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Stanley Brothers",
+    "Hot Rize",
+    "Doc Watson",
+    "David Grisman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Intros",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "David Grisman",
+    "Del McCoury",
+    "B\u00e9la Fleck and the Flecktones",
+    "Bill Monroe and the Bluegrass Boys"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Jake Satterfield",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "David Davis",
+    "The Warrior River Boys",
+    "Bill Monroe",
+    "James Monroe"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Jimmy\u2019s Mule",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Paul Williams",
+    "J.D. Crowe",
+    "Jimmy Martin and the Sunny Mountain Boys",
+    "Jimmy Martin"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Just Joshin'",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Mike Auldridge",
+    "Arthur Smith",
+    "David Grisman",
+    "Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Keep Me Humble",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Blue Ridge Partners",
+    "Reno and Smiley",
+    "The Easter Brothers",
+    "Al Wood & The Smokey Ridge Boys"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Kickin' Mule",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Grandpa Jones",
+    "Fiddlin\u2019 John Carson",
+    "Billy Strings",
+    "Clarence White"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Lafayette",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Peter Ostroushko",
+    "Fiddlin\u2019 Arthur Smith",
+    "John Hartford",
+    "Watkins Family Hour"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Lazy Katie",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Jeff White",
+    "Sam Bush",
+    "Michael Cleveland",
+    "Barry Bales"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Let's",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Darin & Brooke Aldridge",
+    "Martha Adcock",
+    "The Country Gentlemen",
+    "Eddie Adcock"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Little Beggarman",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Hickory Wind",
+    "Tony Rice",
+    "The Chicks",
+    "Norman Blake"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Little Margaret",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Big Medicine",
+    "Uncle Sinner",
+    "Doc Watson",
+    "Rhiannon Giddens"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Long Hot Summer Days",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "Sara Watkins",
+    "The Lonesome Ace Stringband",
+    "Billy Strings"
+   ],
+   "notes": "jam favorite",
+   "instruments": []
+  },
+  {
+   "title": "Magdalene",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Frontier Ruckus",
+    "The SteelDrivers",
+    "Gill Landry",
+    "Palodine"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Make Me a Pallet on the Floor",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "Martha Adcock",
+    "Eddie Adcock",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Many a Mile",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "Martha Adcock",
+    "Eddie Adcock",
+    "Tom Gray"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Marching Through Georgia",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Don Stover",
+    "Kessinger Brothers",
+    "Country Gazette",
+    "Old Crow Medicine Show"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Miracle",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Peter Ostroushko",
+    "Robbie Fulks",
+    "Mountain Heart",
+    "Jourdan Hines"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Molly Bloom",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Steve Kaufman",
+    "Alan Munde",
+    "Tony Rice",
+    "Norman Blake"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Mother Maybelle",
+   "type": "Gospel",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Osborne Brothers",
+    "Mac Wiseman",
+    "Nashville Grass",
+    "Marty Stuart"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Mrs. Robinson",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "Eddie Adcock",
+    "Hayseed Dixie",
+    "The Grassmasters"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Muddy Roads",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Rayna Gellert",
+    "Gaither Carlton",
+    "Doc Watson",
+    "Roger Sprung and His Progressive Bluegrassers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Nardis",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The String Cheese Incident",
+    "The Tony Rice Unit",
+    "Tony Rice",
+    "Todd Phillips"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "New Speedway Boogie",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "New Riders of the Purple Sage",
+    "The String Cheese Incident",
+    "Jim Lauderdale",
+    "Yonder Mountain String Band"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Nightwalk (Instr.)",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Martha Adcock",
+    "Tom Gray",
+    "Eddie Adcock",
+    "The Country Gentlemen"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Nothing Else Matters",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Jerry Douglas",
+    "Chris Stapleton",
+    "Iron Horse",
+    "Steve \u2019n\u2019 Seagulls"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "O Tannenbaum",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Gene Parsons",
+    "Joe Craven",
+    "Harvey Reid",
+    "Palast Orchester mit seinem S\u00e4nger Max Raabe"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Oh Lovin' Babe",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Uncle Dave Macon",
+    "Rayna Gellert",
+    "Dudley Connell",
+    "Don Rigsby"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Oh, Atlanta",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Alison Krauss & Union Station",
+    "The Charlie Daniels Band",
+    "Leftover Salmon",
+    "Alison Krauss"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Ole Slewfoot",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Hickory Hill",
+    "Billy Strings",
+    "Aspen Run",
+    "Jim and Jesse"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "On Top of Old Smoky",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Stanley Brothers",
+    "The Good Old Boys",
+    "New Riders of the Purple Sage",
+    "Frank Wakefield"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Pick Away",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Lester Flatt",
+    "Jim and Jesse",
+    "The Virginia Boys",
+    "Nashville Grass"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Pickaway",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Seldom Scene",
+    "Mike Auldridge",
+    "Lester Flatt",
+    "Vic Jordan"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Pink",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Nonviolenze",
+    "Carbon Leaf",
+    "Dolly Parton",
+    "The Grassmasters"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Pistol Packin\u2019 Mama",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Chris Stapleton",
+    "Frank Wakefield",
+    "Mac Wiseman",
+    "The Good Old Boys"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Polka on a Banjo",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Yonder Mountain String Band",
+    "Lester Flatt & Earl Scruggs",
+    "Barrier Brothers",
+    "The Bluegrass Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Proud Mary",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Billy Strings",
+    "The Wood Brothers",
+    "Hamilton County Bluegrass Band",
+    "Iron Horse"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Quinn the Eskimo (The Mighty Quinn)",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The String Cheese Incident",
+    "The Charlie Daniels Band",
+    "Nitty Gritty Dirt Band",
+    "John 5"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Rainmaker",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Peter Rowan",
+    "Vassar Clements",
+    "Northern Lights",
+    "The Dillards"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Raise a Ruckus",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Old Crow Medicine Show",
+    "J.E. Mainer\u2019s Mountaineers",
+    "The Bluegrass 45",
+    "Alison Krauss"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Reflections",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Blue Denim",
+    "Andy Statman",
+    "The Charlie Daniels Band",
+    "Bettman & Halpin"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Renegade",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Michael Martin Murphey",
+    "The Charlie Daniels Band",
+    "Iron Horse",
+    "Charlie Daniels"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Return to Dismal Swamp II",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Tony Rice",
+    "Glen Duncan",
+    "Jerry Douglas",
+    "Nitty Gritty Dirt Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Revelation",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Peter Rowan",
+    "Larry Sparks",
+    "The String Cheese Incident",
+    "Poutn\u00edci"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Revelations",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Charlie Daniels Band",
+    "Charlie Daniels",
+    "Fireside Collective",
+    "Palodine"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Ruben",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Rual Yarbrough",
+    "Pierre Bensusan",
+    "NewFound Road",
+    "Alice Gerrard"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Ruby Ridge",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Tatiana Hargreaves",
+    "Steve Earle",
+    "Peter Rowan",
+    "Tony Rice"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Rutland's Reel",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Howdy Forrester",
+    "Dismembered Tennesseans",
+    "The Osborne Brothers",
+    "J. P. Cormier"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Say Darling Say",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Tatiana Hargreaves",
+    "Bruce Molsky",
+    "Tommy Jarrell",
+    "Watkins Family Hour"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Seven Bridges Road",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Seldom Scene",
+    "Alan Jackson",
+    "Jimmy Bowen & Santa Fe",
+    "Dolly Parton"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Skippin' in the Mississippi Dew",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "New Grass Revival",
+    "Leftover Salmon",
+    "The Lonesome Ace Stringband"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Slowly",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Jimmy Martin",
+    "Jimmy Martin and the Sunny Mountain Boys",
+    "Rhonda Vincent",
+    "The Bluegrass Cardinals"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Spain",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "David Grisman",
+    "Jerry Douglas",
+    "B\u00e9la Fleck",
+    "Buckethead"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Spanish Two Step",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Earls of Leicester",
+    "The Country Gentlemen",
+    "Doc Watson",
+    "Lester Flatt & Earl Scruggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "St. James Hospital",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Tony Rice Unit",
+    "Billy Strings",
+    "Doc Watson",
+    "Tony Rice"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Statesboro Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Devil Makes Three",
+    "The Charlie Daniels Band",
+    "Charlie Daniels",
+    "The Holy Modal Rounders"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Stay",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Vince Gill",
+    "Valerie June",
+    "Alison Krauss",
+    "Alison Krauss & Union Station"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Stealin",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Dom Flemons",
+    "David Grisman",
+    "The Wood Brothers",
+    "Pert Near Sandstone"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Steel Guitar Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Tut Taylor",
+    "Norman Blake",
+    "Clarence White",
+    "The Earls of Leicester"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Stingray",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "John Cowan",
+    "Jim Lauderdale",
+    "The String Cheese Incident",
+    "Sam Bush"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Stompin' at the Savoy",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "David Grisman",
+    "Mike Auldridge",
+    "Arthur Smith",
+    "The Seldom Scene"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Stone's Rag",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Jim Shumate",
+    "The New Lost City Ramblers",
+    "Michael Cleveland",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Sugar Foot Rag",
+   "type": "Fiddle Tune",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Mike Auldridge",
+    "John 5",
+    "Tommy Jarrell",
+    "Wayne Benson"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Talk About Suffering Here Below",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Darol Anger",
+    "Tony Rice",
+    "Doc Watson",
+    "Ricky Skaggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Bells of St. Mary's",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Hickory Hill",
+    "Reno and Smiley",
+    "David Grisman",
+    "Jeremy Stephens"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The High Road",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Molly Tuttle",
+    "Bryan Sutton",
+    "The Roys",
+    "Hot Rize"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Highwayman",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Dom Flemons",
+    "David Davis",
+    "The Warrior River Boys",
+    "Chatham County Line"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Key",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Authentic Unlimited",
+    "Mark Newton",
+    "J. P. Cormier",
+    "Donna Ulisse"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Lochs of Dread",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "B\u00e9la Fleck and the Flecktones",
+    "B\u00e9la Fleck",
+    "Jerry Douglas",
+    "Strength in Numbers"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Times They Are A\u2010Changin\u2019",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Lester Flatt & Earl Scruggs",
+    "Steve Earle",
+    "The Del McCoury Band",
+    "Nitty Gritty Dirt Band"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "The Traveler",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "Dean Sapp and The Hartford Express",
+    "Chatham County Line",
+    "Cherryholmes"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "There's a New Moon Over My Shoulder",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Larry Sparks",
+    "Del McCoury",
+    "Doc Watson",
+    "Mac Wiseman"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Those Gambler\u2019s Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Chris Jones and the Night Drivers",
+    "Bill Monroe",
+    "Bill Monroe and the Bluegrass Boys",
+    "Don Rigsby"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Two Brothers",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Hobart Smith",
+    "Big Medicine",
+    "Chris Stapleton",
+    "Run Boy Run"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Two Dollar Bill",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Art Stevenson & High Water",
+    "Iron Horse",
+    "Vassar Clements",
+    "The Gordons"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Walking My Lord Up Calvary Hill",
+   "type": "Gospel",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Jim and Jesse",
+    "The Sullivan Family",
+    "The Lewis Family",
+    "Rhonda Vincent"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "War Pigs",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The String Cheese Incident",
+    "Hayseed Dixie",
+    "Samantha Fish",
+    "Buckethead"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Watson's Blues",
+   "type": "Instrumental",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Marty Stuart",
+    "Bryan Sutton",
+    "Bill Monroe",
+    "Doc Watson"
+   ],
+   "notes": null,
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Waves",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "The Wood Brothers",
+    "Dangermuffin",
+    "Scott Stutzman",
+    "B\u00e9la Fleck"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Ways of the World",
+   "type": "Old-Time",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Rayna Gellert",
+    "Bruce Molsky",
+    "Hog-Eyed Man",
+    "Highwoods String Band"
+   ],
+   "notes": "crossover",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "We Can Work It Out",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "J. P. Cormier",
+    "The Dillards",
+    "The Grassmasters",
+    "Crooked Still"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Weary Traveler",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Paul Adkins",
+    "The Bluegrass Cut-Ups",
+    "Leftover Salmon",
+    "Bill Monroe"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Welcome to New York",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Harold East",
+    "Unlimited Tradition",
+    "Bill Emerson",
+    "The Country Gentlemen"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Welcome to the Jungle",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Hayseed Dixie",
+    "Scott Stutzman",
+    "John 5",
+    "Iron Horse"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "White Freight Liner Blues",
+   "type": "Vocal",
+   "key": "C",
+   "difficulty": "Intermediate",
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "New Grass Revival",
+    "Greensky Bluegrass",
+    "Molly Tuttle",
+    "Steve Earle"
+   ],
+   "notes": "modern jam standard",
+   "instruments": []
+  },
+  {
+   "title": "White Wheeled Limousine",
+   "type": "Vocal",
+   "key": null,
+   "difficulty": null,
+   "coverage": 4,
+   "core": false,
+   "artists": [
+    "Bruce Hornsby",
+    "B\u00e9la Fleck",
+    "The Travelin\u2019 McCourys",
+    "Ricky Skaggs"
+   ],
+   "notes": null,
+   "instruments": []
+  },
+  {
+   "title": "Bluegrass Stomp",
+   "type": "Instrumental",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "Bill Monroe",
+    "David Grisman",
+    "Doc Watson"
+   ],
+   "notes": "breakdown",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Bluegrass in the Backwoods",
+   "type": "Fiddle Tune",
+   "key": "Am",
+   "difficulty": "Advanced",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "Aubrey Haynie",
+    "Michael Cleveland",
+    "Kenny Baker"
+   ],
+   "notes": "contest tune",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Carrie Brown",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "Hillbilly Lovechild",
+    "The Del McCoury Band",
+    "Steve Earle"
+   ],
+   "notes": "modern",
+   "instruments": []
+  },
+  {
+   "title": "EMD",
+   "type": "Instrumental",
+   "key": "Em",
+   "difficulty": "Advanced",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "Doc Watson",
+    "David Grisman",
+    "Barcelona Bluegrass Band"
+   ],
+   "notes": "Dawg tune",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Highway 40 Blues",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "Larry Cordle",
+    "Ricky Skaggs",
+    "Glen Duncan"
+   ],
+   "notes": "modern standard",
+   "instruments": []
+  },
+  {
+   "title": "Hobo Song",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "The String Cheese Incident",
+    "Peter Rowan",
+    "Billy Strings"
+   ],
+   "notes": "jam standard",
+   "instruments": []
+  },
+  {
+   "title": "Katy Dear",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Beginner",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "John Duffey",
+    "Charlie Waller",
+    "The Country Gentlemen"
+   ],
+   "notes": "murder ballad",
+   "instruments": []
+  },
+  {
+   "title": "Kissimmee Kid",
+   "type": "Instrumental",
+   "key": "A",
+   "difficulty": "Advanced",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "Vassar Clements",
+    "Billy Strings",
+    "Tony Rice"
+   ],
+   "notes": "fiddle vehicle",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Rabbit in a Log",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Beginner",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "The Stanley Brothers",
+    "The Thumping Tommys",
+    "J.E. Mainer\u2019s Mountaineers"
+   ],
+   "notes": "up-tempo",
+   "instruments": []
+  },
+  {
+   "title": "Streets of London",
+   "type": "Vocal",
+   "key": "C",
+   "difficulty": "Intermediate",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "Northern Lights",
+    "Punch Brothers",
+    "Tony Rice"
+   ],
+   "notes": "songwriter cover",
+   "instruments": []
+  },
+  {
+   "title": "Swing 51",
+   "type": "Instrumental",
+   "key": "G",
+   "difficulty": "Advanced",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "Wayne Benson",
+    "David Grisman",
+    "The Tony Rice Unit"
+   ],
+   "notes": "Dawg tune",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "The Mountain",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "B\u00e9la Fleck",
+    "The Del McCoury Band",
+    "Steve Earle"
+   ],
+   "notes": "modern standard",
+   "instruments": []
+  },
+  {
+   "title": "Waynesboro",
+   "type": "Old-Time",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "Carlton Rawlings",
+    "Rhys Jones",
+    "Dwight Diller"
+   ],
+   "notes": "modal",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Whitewater",
+   "type": "Instrumental",
+   "key": "D",
+   "difficulty": "Advanced",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "B\u00e9la Fleck",
+    "Mike Marshall",
+    "Tony Rice"
+   ],
+   "notes": "newgrass instrumental",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Wild Horse",
+   "type": "Old-Time",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 3,
+   "core": false,
+   "artists": [
+    "Ed Haley",
+    "The Stanley Brothers",
+    "Kessinger Brothers"
+   ],
+   "notes": "aka Stoney Point",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Big Foot",
+   "type": "Instrumental",
+   "key": "G",
+   "difficulty": "Advanced",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "New Grass Revival",
+    "Marty Stuart"
+   ],
+   "notes": "newgrass",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Brown-Eyed Women",
+   "type": "Vocal",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "The String Cheese Incident",
+    "Trampled by Turtles"
+   ],
+   "notes": "jam favorite",
+   "instruments": []
+  },
+  {
+   "title": "Dawg\u2019s Waltz",
+   "type": "Instrumental",
+   "key": "G",
+   "difficulty": "Advanced",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "David Grisman",
+    "Joe Craven"
+   ],
+   "notes": "Dawg tune",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Free Mexican Airforce",
+   "type": "Vocal",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "Tony Rice",
+    "Peter Rowan"
+   ],
+   "notes": "jam favorite",
+   "instruments": []
+  },
+  {
+   "title": "Grass Valley",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "The Del McCoury Band",
+    "Molly Tuttle"
+   ],
+   "notes": "modern",
+   "instruments": []
+  },
+  {
+   "title": "Look At Miss Ohio",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "Old Crow Medicine Show",
+    "Valerie June"
+   ],
+   "notes": "songwriter",
+   "instruments": []
+  },
+  {
+   "title": "Manzanita",
+   "type": "Instrumental",
+   "key": "D",
+   "difficulty": "Advanced",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "The Tony Rice Unit",
+    "Tony Rice"
+   ],
+   "notes": "flatpicking showpiece",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Randall Collins",
+   "type": "Vocal",
+   "key": "D",
+   "difficulty": "Intermediate",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "Norman Blake",
+    "The Gordons"
+   ],
+   "notes": "songwriter",
+   "instruments": []
+  },
+  {
+   "title": "Redwood Hill",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "The Country Gentlemen",
+    "Carolina Sonshine"
+   ],
+   "notes": "second-generation",
+   "instruments": []
+  },
+  {
+   "title": "Up on the Hill Where They Do the Boogie",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "Yonder Mountain String Band",
+    "John Hartford"
+   ],
+   "notes": "songwriter",
+   "instruments": []
+  },
+  {
+   "title": "Widow Maker",
+   "type": "Vocal",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 2,
+   "core": false,
+   "artists": [
+    "Jimmy Martin",
+    "Jimmy Martin and the Sunny Mountain Boys"
+   ],
+   "notes": "truck song",
+   "instruments": []
+  },
+  {
+   "title": "Away From the Mire",
+   "type": "Vocal",
+   "key": "Em",
+   "difficulty": "Advanced",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Billy Strings"
+   ],
+   "notes": "jam vehicle",
+   "instruments": []
+  },
+  {
+   "title": "Blackjack County Chain",
+   "type": "Vocal",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "The Del McCoury Band"
+   ],
+   "notes": "Del staple",
+   "instruments": []
+  },
+  {
+   "title": "Boots of Spanish Leather",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "The Seldom Scene"
+   ],
+   "notes": "songwriter cover",
+   "instruments": []
+  },
+  {
+   "title": "Crooked Tree",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Molly Tuttle"
+   ],
+   "notes": "modern",
+   "instruments": []
+  },
+  {
+   "title": "Ghosts of Mississippi",
+   "type": "Vocal",
+   "key": "Bm",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "The SteelDrivers"
+   ],
+   "notes": "modern",
+   "instruments": []
+  },
+  {
+   "title": "I Hear Them All",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Old Crow Medicine Show"
+   ],
+   "notes": "modern",
+   "instruments": []
+  },
+  {
+   "title": "Land Of Lincoln",
+   "type": "Instrumental",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Kenny Baker"
+   ],
+   "notes": "breakdown",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Meet Me at the Creek",
+   "type": "Vocal",
+   "key": "Em",
+   "difficulty": "Advanced",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Billy Strings"
+   ],
+   "notes": "jam vehicle",
+   "instruments": []
+  },
+  {
+   "title": "Metric Lips",
+   "type": "Instrumental",
+   "key": "Am",
+   "difficulty": "Advanced",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "New Grass Revival"
+   ],
+   "notes": "newgrass",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Radio Boogie",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Hot Rize"
+   ],
+   "notes": "uptempo",
+   "instruments": []
+  },
+  {
+   "title": "Raised by the Railroad Line",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "The Seldom Scene"
+   ],
+   "notes": "second-generation",
+   "instruments": []
+  },
+  {
+   "title": "Sapporo",
+   "type": "Instrumental",
+   "key": "Am",
+   "difficulty": "Advanced",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "New Grass Revival"
+   ],
+   "notes": "newgrass",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Seven by Seven",
+   "type": "Instrumental",
+   "key": "G",
+   "difficulty": "Advanced",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "New Grass Revival"
+   ],
+   "notes": "newgrass",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Sopping the Gravy",
+   "type": "Fiddle Tune",
+   "key": "D",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Kessinger Brothers"
+   ],
+   "notes": "breakdown",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Take Em Away",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Old Crow Medicine Show"
+   ],
+   "notes": "modern",
+   "instruments": []
+  },
+  {
+   "title": "Tombstone Junction",
+   "type": "Instrumental",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Bill Monroe and the Bluegrass Boys"
+   ],
+   "notes": "breakdown",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Traffic Jam",
+   "type": "Vocal",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Yonder Mountain String Band"
+   ],
+   "notes": "jamgrass",
+   "instruments": []
+  },
+  {
+   "title": "Turmoil & Tinfoil",
+   "type": "Vocal",
+   "key": "Em",
+   "difficulty": "Advanced",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Billy Strings"
+   ],
+   "notes": "Billy Strings-era",
+   "instruments": []
+  },
+  {
+   "title": "Two Hits and the Joint Turned Brown",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Yonder Mountain String Band"
+   ],
+   "notes": "jamgrass",
+   "instruments": []
+  },
+  {
+   "title": "Untold Stories",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "Hot Rize"
+   ],
+   "notes": "modern standard",
+   "instruments": []
+  },
+  {
+   "title": "Where Rainbows Never Die",
+   "type": "Vocal",
+   "key": "E",
+   "difficulty": "Intermediate",
+   "coverage": 1,
+   "core": false,
+   "artists": [
+    "The SteelDrivers"
+   ],
+   "notes": "modern standard",
+   "instruments": []
+  },
+  {
+   "title": "Build Me Up From Bones",
+   "type": "Vocal",
+   "key": "Am",
+   "difficulty": "Intermediate",
+   "coverage": 0,
+   "core": false,
+   "artists": [],
+   "notes": "v1-curated (no cover-graph data). modern",
+   "instruments": []
+  },
+  {
+   "title": "Elvis Presley Blues",
+   "type": "Vocal",
+   "key": "D",
+   "difficulty": "Intermediate",
+   "coverage": 0,
+   "core": false,
+   "artists": [],
+   "notes": "v1-curated (no cover-graph data). songwriter",
+   "instruments": []
+  },
+  {
+   "title": "First Days in Town",
+   "type": "Fiddle Tune",
+   "key": "D",
+   "difficulty": "Intermediate",
+   "coverage": 0,
+   "core": false,
+   "artists": [],
+   "notes": "v1-curated (no cover-graph data). fiddle feature",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Fork in the Road",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 0,
+   "core": false,
+   "artists": [],
+   "notes": "v1-curated (no cover-graph data). jamgrass",
+   "instruments": []
+  },
+  {
+   "title": "In Spite of Ourselves",
+   "type": "Vocal",
+   "key": "C",
+   "difficulty": "Intermediate",
+   "coverage": 0,
+   "core": false,
+   "artists": [],
+   "notes": "v1-curated (no cover-graph data). songwriter cover",
+   "instruments": []
+  },
+  {
+   "title": "Nail That Catfish to a Tree",
+   "type": "Instrumental",
+   "key": "A",
+   "difficulty": "Intermediate",
+   "coverage": 0,
+   "core": false,
+   "artists": [],
+   "notes": "v1-curated (no cover-graph data). old-time crossover",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Ode to a Butterfly",
+   "type": "Instrumental",
+   "key": "Am",
+   "difficulty": "Advanced",
+   "coverage": 0,
+   "core": false,
+   "artists": [],
+   "notes": "v1-curated (no cover-graph data). modern instrumental",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "Old Slew Foot",
+   "type": "Vocal",
+   "key": "A",
+   "difficulty": "Beginner",
+   "coverage": 0,
+   "core": false,
+   "artists": [],
+   "notes": "v1-curated (no cover-graph data). comic hunting song",
+   "instruments": []
+  },
+  {
+   "title": "Smoothie Song",
+   "type": "Instrumental",
+   "key": "A",
+   "difficulty": "Advanced",
+   "coverage": 0,
+   "core": false,
+   "artists": [],
+   "notes": "v1-curated (no cover-graph data). modern instrumental",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
+   "title": "The Lighthouse's Tale",
+   "type": "Vocal",
+   "key": "G",
+   "difficulty": "Intermediate",
+   "coverage": 0,
+   "core": false,
+   "artists": [],
+   "notes": "v1-curated (no cover-graph data). modern standard",
+   "instruments": []
+  }
+ ]
+}

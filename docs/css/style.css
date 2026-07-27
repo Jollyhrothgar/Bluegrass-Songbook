@@ -83,16 +83,10 @@ body {
 }
 
 /* Header */
-header {
+/* Homepage hero (the old global header, now landing-page-only) */
+.landing-hero {
     text-align: center;
     margin-bottom: 1.5rem;
-}
-
-.header-top {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -101,72 +95,27 @@ h1 {
     margin-bottom: 0.25rem;
 }
 
-.logo-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-    gap: 2rem;
-    margin: 0 auto;
-}
-
-.header-badge {
-    width: 150px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-/* Push the badges to the row's edges so the header spans the full width,
-   aligned with the search bar below. The auto margins must sit on the flex
-   ITEMS — the <a> links — not the <img> badges nested inside them (the old
-   rules targeted the imgs and were inert, leaving the signs clustered in the
-   centre). On mobile the imgs are hidden; the empty links keep the logo
-   centred via the same symmetric autos. */
-.header-badge-link:has(.header-badge-left) {
-    margin-right: auto;
-}
-
-.header-badge-link:has(.header-badge-right) {
-    margin-left: auto;
-}
-
-.header-badge-link {
-    display: block;
-    transition: transform 0.2s, opacity 0.2s;
-}
-
-.header-badge-link:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-
-/* Dark theme: invert the header badges */
-[data-theme="dark"] .header-badge {
-    filter: invert(1);
-}
-
-/* Hide badges on small screens */
-@media (max-width: 600px) {
-    .header-badge {
-        display: none;
-    }
-}
-
 .site-logo {
     margin-bottom: 0.5rem;
 }
 
+/* The banner is wide filigree art; the plaque bg dissolves into the page */
 .site-logo img {
-    max-width: 180px;
+    max-width: 560px;
     width: 100%;
     height: auto;
+    border-radius: 12px;
+}
+
+/* The BB plaque is cream-on-dark; flip it in light mode so it reads as
+   dark-on-cream and matches the theme */
+:root:not([data-theme="dark"]) .site-logo img,
+:root:not([data-theme="dark"]) .topbar-brand img {
+    filter: invert(1);
 }
 
 /* Dark theme: invert the logo */
-[data-theme="dark"] .site-logo img {
-    filter: invert(1);
-}
+
 
 .subtitle {
     color: var(--text-secondary);
@@ -1080,77 +1029,6 @@ h1 {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.song-view-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-    gap: 0.5rem;
-}
-
-.song-actions {
-    display: flex;
-    gap: 0.5rem;
-    align-items: stretch;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 0.25rem; /* Space for scrollbar */
-}
-
-.song-actions .action-btn,
-.song-actions .bug-btn {
-    display: flex;
-    align-items: center;
-    font-size: var(--btn-label-size);
-    flex-shrink: 0;
-}
-
-/* Desktop actions container */
-.desktop-actions {
-    display: flex;
-    gap: 0.5rem;
-    align-items: stretch;
-}
-
-/* Mobile actions menu - hidden on desktop */
-.mobile-actions-wrapper {
-    display: none;
-    position: relative;
-}
-
-.mobile-actions-btn {
-    font-size: 1.25rem;
-}
-
-.mobile-actions-dropdown {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 100;
-    min-width: 180px;
-    padding: 0.5rem 0;
-}
-
-.mobile-action-option {
-    display: block;
-    width: 100%;
-    padding: 0.75rem 1rem;
-    background: none;
-    border: none;
-    color: var(--text);
-    font-size: 0.95rem;
-    text-align: left;
-    cursor: pointer;
-    transition: background 0.15s;
-}
-
-.mobile-action-option:hover {
-    background: var(--bg-secondary);
-}
 
 /* ==========================================================================
    Quick Controls Section (matches Tags section pattern)
@@ -1187,7 +1065,6 @@ h1 {
     flex-wrap: wrap;
 }
 
-.add-to-list-btn,
 .focus-btn {
     padding: 0.25rem 0.5rem;
     border: 1px solid var(--border);
@@ -1198,7 +1075,6 @@ h1 {
     cursor: pointer;
 }
 
-.add-to-list-btn:hover,
 .focus-btn:hover {
     color: var(--accent);
     border-color: var(--accent);
@@ -1286,24 +1162,6 @@ h1 {
     color: var(--text-muted);
 }
 
-/* Collapsible controls content area */
-.quick-controls-content {
-    border-bottom: 1px solid var(--border);
-    position: relative;
-}
-
-.quick-controls-content.hidden {
-    display: none;
-}
-
-/* Controls row */
-.qc-controls-row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-}
 
 /* Control groups - segmented button style */
 .qc-group {
@@ -1382,85 +1240,6 @@ h1 {
     background: var(--bg-tertiary);
 }
 
-.qc-dropdown-arrow {
-    font-size: 0.6rem;
-    opacity: 0.6;
-    margin-left: 0.15rem;
-}
-
-/* Dropdown button (Layout) */
-.qc-dropdown-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.4rem 0.75rem;
-    height: 32px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--bg);
-    color: var(--text);
-    font-size: 0.85rem;
-    cursor: pointer;
-    transition: background 0.15s;
-}
-
-.qc-dropdown-btn:hover {
-    background: var(--bg-tertiary);
-}
-
-/* Dropdown container */
-.qc-dropdown-group {
-    position: relative;
-}
-
-/* Dropdown panels */
-.qc-dropdown {
-    position: fixed;
-    padding: 0.5rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 2200;  /* Above fullscreen overlays (2100) */
-    min-width: 180px;
-}
-
-/* Key dropdown - grid layout for all keys */
-.qc-key-dropdown {
-    position: fixed;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.25rem;
-    min-width: 220px;
-    padding: 0.5rem;
-}
-
-.qc-key-dropdown button {
-    padding: 0.5rem 0.25rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--bg);
-    color: var(--text);
-    cursor: pointer;
-    font-size: 0.85rem;
-    transition: background 0.15s, transform 0.1s;
-}
-
-.qc-key-dropdown button:hover {
-    background: var(--bg-tertiary);
-}
-
-.qc-key-dropdown button.active {
-    background: var(--accent);
-    color: white;
-    border-color: var(--accent);
-}
-
-.qc-key-dropdown button.original::after {
-    content: '*';
-    margin-left: 2px;
-    font-size: 0.7rem;
-}
 
 /* Checkbox items in dropdown */
 .qc-checkbox {
@@ -1482,12 +1261,6 @@ h1 {
     width: 16px;
     height: 16px;
     accent-color: var(--accent);
-}
-
-.qc-dropdown-divider {
-    height: 1px;
-    background: var(--border);
-    margin: 0.5rem 0;
 }
 
 .qc-dropdown-row {
@@ -1532,24 +1305,6 @@ h1 {
     border-color: var(--accent);
 }
 
-/* Icon button (Strum Machine) */
-.qc-icon-btn {
-    padding: 0.25rem;
-    height: 32px;
-    width: 32px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--bg);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.15s;
-}
-
-.qc-icon-btn:hover {
-    background: var(--bg-tertiary);
-}
 
 .qc-strum-icon {
     width: 22px;
@@ -1558,10 +1313,6 @@ h1 {
 
 /* Quick controls responsive */
 @media (max-width: 600px) {
-    .qc-content {
-        gap: 0.4rem;
-    }
-
     .qc-btn {
         width: 28px;
         height: 28px;
@@ -1569,16 +1320,10 @@ h1 {
     }
 
     .qc-key-btn,
-    .qc-dropdown-btn,
     .qc-toggle-btn {
         height: 28px;
         font-size: 0.8rem;
         padding: 0.3rem 0.5rem;
-    }
-
-    .qc-icon-btn {
-        width: 28px;
-        height: 28px;
     }
 
     .qc-strum-icon {
@@ -1587,153 +1332,6 @@ h1 {
     }
 }
 
-/* Bottom sheet - works on all screen sizes when explicitly opened */
-.bottom-sheet-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.bottom-sheet-backdrop.hidden {
-    display: none;
-}
-
-.bottom-sheet {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--bg);
-    border-radius: 16px 16px 0 0;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-    max-height: 70vh;
-    overflow-y: auto;
-}
-
-.bottom-sheet.hidden {
-    display: none;
-}
-
-.bottom-sheet-handle {
-    width: 40px;
-    height: 4px;
-    background: var(--border);
-    border-radius: 2px;
-    margin: 12px auto;
-    cursor: pointer;
-}
-
-.bottom-sheet-content {
-    padding: 0 1rem 1.5rem;
-}
-
-.sheet-section {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.sheet-section:last-child {
-    border-bottom: none;
-}
-
-.sheet-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 0;
-}
-
-.sheet-label {
-    font-size: 0.95rem;
-    color: var(--text);
-    font-weight: 500;
-}
-
-.sheet-select {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.95rem;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--bg);
-    color: var(--text);
-    min-width: 100px;
-}
-
-.sheet-size-buttons {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.sheet-btn {
-    width: 44px;
-    height: 44px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 1.25rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.sheet-btn:hover {
-    background: var(--bg-secondary);
-}
-
-.sheet-btn:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-}
-
-.sheet-checkboxes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    padding-top: 0.5rem;
-}
-
-.sheet-checkbox {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--text);
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-.sheet-checkbox input {
-    width: 18px;
-    height: 18px;
-}
-
-.sheet-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.sheet-action {
-    display: block;
-    width: 100%;
-    padding: 0.875rem 0.5rem;
-    background: none;
-    border: none;
-    color: var(--text);
-    font-size: 1rem;
-    text-align: left;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.sheet-action:hover {
-    background: var(--bg-secondary);
-}
 
 /* Share Modal */
 .share-modal-backdrop {
@@ -1927,21 +1525,6 @@ h1 {
     border-color: var(--text-secondary);
 }
 
-.bug-btn {
-    background: var(--danger);
-    border: none;
-    color: #fff;
-    font-size: 0.8rem;
-    padding: 0.5rem 0.75rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.bug-btn:hover {
-    background: var(--danger-hover);
-}
-
 /* Song content */
 .song-content {
     background: var(--bg-secondary);
@@ -1985,7 +1568,19 @@ h1 {
     border-color: var(--accent);
 }
 
-/* Flag modal */
+/* Unified feedback modal */
+.flag-song-context {
+    margin: 0 0 1rem 0;
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+.flag-mailto-link {
+    margin-left: auto;
+    color: var(--text-secondary);
+    font-size: 0.85em;
+}
+
 .flag-intro {
     margin: 0 0 1rem 0;
     color: var(--text-secondary);
@@ -3008,30 +2603,6 @@ h1 {
         max-height: 90vh;
     }
 
-    .bug-btn {
-        font-size: 0.75rem;
-        padding: 0.4rem 0.6rem;
-    }
-
-    /* Mobile adjustments for song header */
-    .song-view-header {
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-
-    .song-actions {
-        flex-wrap: wrap;
-    }
-
-    /* Bottom sheet - mobile enhancements (slide-up animation) */
-    .bottom-sheet {
-        transform: translateY(100%);
-        transition: transform 0.3s ease-out;
-    }
-
-    .bottom-sheet:not(.hidden) {
-        transform: translateY(0);
-    }
 
     /* Mobile song header layout */
     .song-header {
@@ -3116,178 +2687,7 @@ mark {
     background: rgba(96, 165, 250, 0.3);
 }
 
-/* Hamburger button */
-.hamburger-btn {
-    background: none;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 0.5rem 0.75rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    transition: background 0.2s, border-color 0.2s;
-}
 
-.hamburger-btn:hover {
-    background: var(--bg-secondary);
-    border-color: var(--text-secondary);
-}
-
-.header-spacer {
-    flex: 1;
-}
-
-/* Sidebar */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -280px;
-    width: 280px;
-    height: 100%;
-    background: var(--bg);
-    border-right: 1px solid var(--border);
-    z-index: 1001;
-    display: flex;
-    flex-direction: column;
-    transition: left 0.3s ease;
-}
-
-.sidebar.open {
-    left: 0;
-}
-
-.sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.25rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.sidebar-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.sidebar-close {
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0;
-    line-height: 1;
-}
-
-.sidebar-close:hover {
-    color: var(--text);
-}
-
-.sidebar-nav {
-    flex: 1;
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.875rem 1.25rem;
-    background: none;
-    border: none;
-    color: var(--text);
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: left;
-    transition: background 0.2s;
-    position: relative;
-}
-
-.nav-item:hover {
-    background: var(--bg-secondary);
-}
-
-.nav-item.active {
-    background: var(--bg-secondary);
-    color: var(--accent);
-    font-weight: 500;
-}
-
-.nav-item.active::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: var(--accent);
-}
-
-.nav-icon {
-    font-size: 1.25rem;
-    width: 1.5rem;
-    text-align: center;
-}
-
-.nav-badge {
-    margin-left: auto;
-    font-size: 0.75rem;
-    background: var(--accent);
-    color: var(--bg);
-    border-radius: 10px;
-    padding: 0.1rem 0.5rem;
-    min-width: 1.2rem;
-    text-align: center;
-}
-
-.sidebar-footer {
-    border-top: 1px solid var(--border);
-    padding: 1rem 0;
-}
-
-.sidebar-link {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1.25rem;
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    cursor: pointer;
-    text-align: left;
-    text-decoration: none;
-    width: 100%;
-    transition: color 0.2s, background 0.2s;
-}
-
-.sidebar-link:hover {
-    color: var(--text);
-    background: var(--bg-secondary);
-}
-
-/* Sidebar backdrop */
-.sidebar-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.sidebar-backdrop.visible {
-    opacity: 1;
-    pointer-events: auto;
-}
 
 /* Editor panel */
 .editor-panel {
@@ -4591,29 +3991,6 @@ mark {
    LIST PICKER STYLES
    ============================================ */
 
-.list-picker-wrapper {
-    position: relative;
-}
-
-.list-picker-btn {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.list-picker-btn.has-lists {
-    color: var(--accent);
-}
-
-.list-picker-dropdown {
-    position: fixed;  /* Fixed positioning to escape parent overflow clipping */
-    min-width: 200px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 2001;  /* Above song content and other overlays */
-    overflow: hidden;
-}
 
 .list-option {
     display: flex;
@@ -5587,20 +4964,6 @@ mark {
     }
 }
 
-.result-list-picker {
-    min-width: 200px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 2001;  /* Above modals (2000) and sidebar (1001) */
-    overflow: hidden;
-}
-
-.result-picker-lists {
-    max-height: 200px;
-    overflow-y: auto;
-}
 
 /* ============================================
    LIST ITEM METADATA (Setlist Notes)
@@ -5689,197 +5052,7 @@ mark {
     opacity: 1;
 }
 
-/* Song view notes button when has notes */
-#song-notes-btn.has-notes {
-    background: rgba(79, 70, 229, 0.15);
-    color: var(--accent);
-}
 
-/* Focus mode notes button when has notes */
-#focus-notes-btn.has-notes {
-    background: rgba(79, 70, 229, 0.2);
-    color: var(--accent);
-}
-
-/* ============================================
-   FOCUS MODE COLLAPSIBLE NOTES PANEL
-   ============================================ */
-
-/* Only show in fullscreen mode */
-.focus-notes-panel {
-    display: none;
-}
-
-body.fullscreen-mode .focus-notes-panel {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--bg);
-    border-top: 1px solid var(--border);
-    z-index: 1000;
-    transition: transform 0.2s ease;
-}
-
-/* When panel has custom height set */
-body.fullscreen-mode .focus-notes-panel:not(.collapsed) {
-    height: var(--panel-height, auto);
-}
-
-/* Disable transitions while dragging */
-body.resizing-notes-panel .focus-notes-panel {
-    transition: none;
-}
-
-/* Drag handle */
-.focus-notes-drag-handle {
-    display: none;
-}
-
-body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 12px;
-    cursor: ns-resize;
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border);
-    touch-action: none;
-}
-
-.focus-notes-drag-handle:hover {
-    background: var(--bg-tertiary);
-}
-
-.drag-handle-bar {
-    width: 40px;
-    height: 4px;
-    background: var(--border);
-    border-radius: 2px;
-}
-
-.focus-notes-drag-handle:hover .drag-handle-bar {
-    background: var(--text-secondary);
-}
-
-/* Toggle button - always visible */
-.focus-notes-toggle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: var(--bg-secondary);
-    border: none;
-    color: var(--text-secondary);
-    cursor: pointer;
-    font-size: 0.85rem;
-}
-
-.focus-notes-toggle:hover {
-    background: var(--bg-tertiary);
-}
-
-.focus-notes-toggle-icon {
-    font-size: 0.7rem;
-}
-
-.focus-notes-toggle-label {
-    font-weight: 500;
-}
-
-.focus-notes-indicator {
-    color: var(--accent);
-    font-size: 1.2rem;
-    line-height: 1;
-}
-
-/* Collapsed state - hide content */
-.focus-notes-panel.collapsed .focus-notes-content {
-    display: none;
-}
-
-/* Expanded content */
-.focus-notes-content {
-    padding: 0.75rem 1rem 1rem;
-    flex: 1;
-    min-height: 0;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Default max-height when no custom height is set */
-.focus-notes-panel:not([style*="--panel-height"]) .focus-notes-content {
-    max-height: 40vh;
-}
-
-.focus-notes-fields {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.75rem;
-}
-
-.focus-notes-field {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.focus-notes-field label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-    font-weight: 600;
-}
-
-.focus-notes-field select,
-.focus-notes-field input {
-    padding: 0.4rem 0.5rem;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 0.9rem;
-}
-
-.focus-notes-field select {
-    min-width: 80px;
-}
-
-.focus-notes-field input[type="number"] {
-    width: 70px;
-}
-
-.focus-notes-textarea-wrapper {
-    width: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    min-height: 0;
-}
-
-#focus-notes-text {
-    width: 100%;
-    min-height: 80px;
-    flex: 1;
-    padding: 0.5rem;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 0.9rem;
-    font-family: inherit;
-    resize: none; /* Disable resize since we have drag handle */
-}
-
-#focus-notes-text::placeholder {
-    color: var(--text-secondary);
-    opacity: 0.7;
-}
 
 /* On touch devices, always show notes button */
 @media (hover: none) {
@@ -6840,65 +6013,49 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     }
 }
 
-/* Version picker modal */
-.version-picker {
-    max-width: 450px;
-}
 
-.version-list {
+/* Admin delete modal: one selectable row per group member */
+.delete-candidate-list {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.version-item {
+.delete-candidate {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 0.6rem;
     padding: 0.75rem;
     background: var(--bg-secondary);
     border: 1px solid var(--border);
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.2s;
 }
 
-.version-item:hover {
-    border-color: var(--accent);
-    background: var(--bg);
+.delete-candidate input[type="checkbox"] {
+    margin-top: 0.2rem;
 }
 
-.version-info {
-    flex: 1;
-    min-width: 0;
-}
-
-.version-label {
-    font-weight: 500;
-    font-size: 0.95rem;
-    color: var(--text);
-    margin-bottom: 0.25rem;
-}
-
-.version-meta {
-    font-size: 0.8rem;
+.delete-candidate .candidate-meta {
     color: var(--text-secondary);
+    font-size: 0.85rem;
 }
 
-.version-notes {
-    font-size: 0.75rem;
+.delete-candidate .candidate-first-line {
     color: var(--text-secondary);
+    font-size: 0.85rem;
     font-style: italic;
-    margin-top: 0.25rem;
 }
 
-.version-votes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-    padding-left: 1rem;
+.delete-candidate.current {
+    border-color: var(--accent);
 }
+
+.delete-modal-hint {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
 
 .vote-btn {
     width: 2rem;
@@ -6935,32 +6092,7 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     color: var(--text-secondary);
 }
 
-/* See versions button in song view */
-.see-versions-btn {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--accent);
-    background: rgba(79, 70, 229, 0.1);
-    border: 1px solid var(--accent);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    margin-left: 0.75rem;
-    cursor: pointer;
-    vertical-align: middle;
-    transition: all 0.2s;
-}
 
-.see-versions-btn:hover {
-    background: var(--accent);
-    color: white;
-}
-
-/* Current version indicator */
-.version-item.current {
-    border-color: var(--accent);
-    background: rgba(79, 70, 229, 0.08);
-}
 
 .current-badge {
     display: inline-block;
@@ -6975,14 +6107,20 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     vertical-align: middle;
 }
 
-/* First line preview in version picker */
-.version-first-line {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    font-style: italic;
-    margin-top: 0.35rem;
-    opacity: 0.85;
+/* Canonical (editorially pinned) version badge */
+.canonical-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--success);
+    background: rgba(22, 163, 74, 0.15);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
 }
+
 
 /* ============================================
    ABOUT VIEW STYLES
@@ -7347,205 +6485,6 @@ body.fullscreen-mode .focus-notes-panel:not(.collapsed) .focus-notes-drag-handle
     font-style: italic;
 }
 
-/* ============================================
-   FULLSCREEN / FOCUS MODE
-   ============================================ */
-
-/* Focus header - hidden by default, shown in fullscreen */
-.focus-header {
-    display: none;
-}
-
-body.fullscreen-mode .focus-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1rem;
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.focus-nav-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.5rem 0.75rem;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.focus-nav-btn:hover {
-    background: var(--bg-secondary);
-}
-
-/* Edit link in focus header */
-a.focus-nav-btn {
-    text-decoration: none;
-}
-
-.focus-nav-btn:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-}
-
-.focus-btn-label {
-    font-size: 0.85rem;
-}
-
-.focus-title-area {
-    flex: 1;
-    text-align: center;
-    min-width: 0;
-}
-
-.focus-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.focus-position {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-}
-
-/* Inline list nav buttons in focus header */
-.focus-list-nav {
-    display: none;  /* Hidden by default, shown when in list context */
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 6px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    color: var(--text);
-    font-size: 1.1rem;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: background 0.15s ease;
-}
-
-.focus-list-nav:hover {
-    background: var(--bg-secondary);
-}
-
-.focus-list-nav:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-}
-
-.focus-list-nav:disabled:hover {
-    background: var(--bg);
-}
-
-/* Show list nav buttons in fullscreen with list context */
-body.fullscreen-mode.has-list-context .focus-list-nav {
-    display: flex;
-}
-
-/* Fullscreen mode - hide everything except song */
-body.fullscreen-mode .sidebar,
-body.fullscreen-mode .header,
-body.fullscreen-mode .search-container,
-body.fullscreen-mode #results,
-body.fullscreen-mode .song-view-header,
-body.fullscreen-mode .song-tags-section,
-body.fullscreen-mode .song-meta,
-body.fullscreen-mode .song-header,
-body.fullscreen-mode .info-content {
-    display: none !important;
-}
-
-body.fullscreen-mode .main-content {
-    margin-left: 0;
-    padding: 0;
-}
-
-body.fullscreen-mode .song-view {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
-    background: var(--bg);
-    overflow-y: auto;
-    padding-bottom: 0;
-}
-
-body.fullscreen-mode .song-content {
-    max-width: min(100% - 4rem, 1800px);
-    margin: 0 auto;
-    border: none;
-    border-radius: 0;
-    min-height: 100vh;
-    padding-top: 0;
-}
-
-/* Tablature wants the width in focus mode (lead sheets keep 900px) */
-body.fullscreen-mode .song-content:has(.tablature-all-tracks) {
-    max-width: 96vw;
-}
-
-/* Work controls exist INSIDE the (hidden-in-focus) work header — give
-   them the same focus-mode treatment as the song quick controls, so
-   the ⚙ Controls button actually reveals something. */
-body.fullscreen-mode .work-controls-content {
-    display: flex !important;
-    padding: 0.5rem 1rem;
-    border-bottom: 1px solid var(--border);
-}
-
-body.fullscreen-mode .work-controls-content.hidden {
-    display: none !important;
-}
-
-/* Show quick controls in fullscreen mode */
-body.fullscreen-mode .quick-controls-content {
-    display: flex !important;
-    padding: 0.5rem 1rem;
-    border-bottom: 1px solid var(--border);
-}
-
-/* Allow hiding quick controls in fullscreen mode via toggle */
-body.fullscreen-mode .quick-controls-content.hidden {
-    display: none !important;
-}
-
-/* Hide bottom nav bar in fullscreen - we use top header now */
-body.fullscreen-mode .song-nav-bar {
-    display: none !important;
-}
-
-/* Hide work-view elements in fullscreen focus mode */
-body.fullscreen-mode .work-inline-back {
-    display: none !important;
-}
-
-body.fullscreen-mode .work-bounty-section {
-    display: none !important;
-}
-
-body.fullscreen-mode .work-header-container {
-    display: none !important;
-}
-
-body.fullscreen-mode .work-inline-controls.hidden {
-    display: none !important;
-}
-
 /* Bottom navigation bar */
 .song-nav-bar {
     position: fixed;
@@ -7624,30 +6563,6 @@ body.fullscreen-mode .work-inline-controls.hidden {
     font-weight: bold;
 }
 
-/* Fullscreen exit hint */
-body.fullscreen-mode::after {
-    content: 'Press F or Esc to exit';
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    padding: 0.5rem 1rem;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    z-index: 1002;
-    opacity: 0;
-    animation: hintFade 3s forwards;
-    pointer-events: none;
-}
-
-@keyframes hintFade {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 0; }
-}
 
 /* Mobile adjustments for nav bar */
 @media (max-width: 600px) {
@@ -7655,10 +6570,6 @@ body.fullscreen-mode::after {
         padding: 0.5rem 0.75rem;
     }
 
-    /* Hide nav labels in song navigation bar, but not in sidebar */
-    .song-nav .nav-label {
-        display: none;
-    }
 
     .nav-arrow {
         font-size: 1.25rem;
@@ -7668,16 +6579,6 @@ body.fullscreen-mode::after {
         display: none;
     }
 
-    body.fullscreen-mode .song-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    body.fullscreen-mode .header-controls {
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 0.5rem;
-    }
 }
 
 /* ============================================
@@ -7874,24 +6775,15 @@ body.fullscreen-mode::after {
 
 @media print {
     /* Hide non-essential elements */
-    .sidebar,
-    .sidebar-backdrop,
     header,
     .search-container,
     #results,
-    .song-view-header,
     .song-tags-section,
     .song-meta,
     .song-nav-bar,
-    .header-controls,
-    .bottom-sheet,
-    .bottom-sheet-backdrop,
-    .song-actions,
     .part-tabs,
     .tab-controls,
-    .leadsheet-controls,
     #exit-fullscreen-btn,
-    .fullscreen-hint,
     .header-badge {
         display: none !important;
     }
@@ -8003,27 +6895,6 @@ body.fullscreen-mode::after {
    WorkView Styles
    ============================================ */
 
-/* Work header container - matches song-view header pattern */
-.work-header-container {
-    position: relative;
-}
-
-/* Work controls disclosure content */
-.work-controls-content {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.work-controls-content.hidden {
-    display: none;
-}
-
-/* Legacy work-header (kept for compatibility) */
-.work-header {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
-}
 
 .work-title {
     font-size: 1.75rem;
@@ -8046,27 +6917,7 @@ body.fullscreen-mode::after {
     gap: 0.25rem;
 }
 
-.work-artist {
-    font-weight: 500;
-}
 
-.work-key,
-.work-tempo {
-    background: var(--bg-secondary);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-}
-
-/* Part selector */
-.part-selector {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    padding: 0.5rem;
-    background: var(--bg-secondary);
-    border-radius: 8px;
-}
 
 .part-tab {
     display: flex;
@@ -8093,333 +6944,23 @@ body.fullscreen-mode::after {
     color: white;
 }
 
-.part-icon {
-    font-size: 1.1rem;
-}
 
 .part-label {
     font-weight: 500;
 }
 
-/* Lead sheet controls */
-.leadsheet-controls {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-    padding: 0.75rem 1rem;
-    background: var(--bg-secondary);
-    border-radius: 8px;
-}
 
-.leadsheet-controls label {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-}
-
-.leadsheet-controls .key-selector {
-    padding: 0.25rem 0.5rem;
-    border: 1px solid var(--border);
-    background: var(--bg);
-    color: var(--text);
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-
-/* ChordPro content in work view */
-.chordpro-content {
-    font-family: 'Menlo', 'Consolas', monospace;
-    line-height: 1.6;
-}
-
-.chordpro-content .section {
-    margin-bottom: 1.5rem;
-}
-
-.chordpro-content .section.compact {
-    margin-bottom: 0.75rem;
-}
-
-.chordpro-content .section-label {
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.chordpro-content .line {
-    margin-bottom: 0.25rem;
-}
-
-.chordpro-content .chord-line {
-    color: var(--accent);
-    font-weight: 600;
-    white-space: pre;
-}
-
-.chordpro-content .chord {
-    display: inline;
-}
-
-.chordpro-content .chord.hidden {
-    visibility: hidden;
-}
-
-.chordpro-content .lyrics {
-    white-space: pre-wrap;
-}
-
-.chordpro-content .empty-line {
-    height: 1em;
-}
-
-.chordpro-content .comment {
-    color: var(--text-secondary);
-    font-style: italic;
-}
 
 .work-part-content {
     min-height: 200px;
 }
 
-.no-parts {
-    text-align: center;
-    color: var(--text-secondary);
-    padding: 2rem;
-}
 
-/* Dashboard part cards */
-.work-dashboard-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-}
 
-.work-part-card {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    transition: border-color 0.15s, box-shadow 0.15s;
-}
 
-.work-part-card:hover {
-    border-color: var(--accent);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
 
-.work-card-icon {
-    font-size: 1.5rem;
-    flex-shrink: 0;
-}
 
-.work-card-body {
-    flex: 1;
-    min-width: 0;
-}
 
-.work-card-label {
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: var(--text);
-}
-
-.work-card-meta {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.15rem;
-}
-
-.work-card-preview {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.25rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-style: italic;
-}
-
-.work-card-action {
-    background: var(--accent);
-    color: white;
-    border: none;
-    padding: 0.35rem 0.75rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.8rem;
-    font-weight: 500;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-
-.work-card-action:hover {
-    background: var(--accent-hover);
-}
-
-/* Version cards section */
-.work-versions-section {
-    margin-top: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.work-versions-heading {
-    font-size: var(--font-sm);
-    font-weight: 600;
-    color: var(--text-secondary);
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-}
-
-.work-versions-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 0.5rem;
-}
-
-.version-card {
-    display: flex;
-    align-items: flex-start;
-    padding: 0.65rem 0.85rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--border);
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.version-card:hover {
-    border-left-color: var(--accent);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.version-card-current {
-    border-left-color: var(--accent);
-    background: rgba(79, 70, 229, 0.04);
-    cursor: default;
-}
-
-[data-theme="dark"] .version-card-current {
-    background: rgba(96, 165, 250, 0.06);
-}
-
-.version-card-body {
-    flex: 1;
-    min-width: 0;
-}
-
-.version-card-label {
-    font-size: var(--font-base);
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-.version-card-badge {
-    font-size: 0.65rem;
-    font-weight: 500;
-    color: var(--accent);
-    background: rgba(79, 70, 229, 0.12);
-    padding: 0.1rem 0.4rem;
-    border-radius: 3px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-}
-
-.version-card-artist {
-    font-size: var(--font-sm);
-    color: var(--text);
-    margin-top: 0.15rem;
-}
-
-.version-card-source {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.15rem;
-}
-
-.version-card-meta {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.15rem;
-}
-
-.version-card-preview {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.25rem;
-    font-style: italic;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-/* Version count display (in work header, replaces old button) */
-.version-count-display {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-    background: rgba(79, 70, 229, 0.08);
-    padding: 0.15rem 0.5rem;
-    border-radius: 10px;
-    vertical-align: middle;
-    margin-left: 0.3rem;
-}
-
-/* Back to versions button (in song view) */
-.back-to-versions-btn {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--accent);
-    background: rgba(79, 70, 229, 0.1);
-    border: none;
-    padding: 0.2rem 0.6rem;
-    border-radius: 10px;
-    cursor: pointer;
-    vertical-align: middle;
-    transition: all 0.2s;
-}
-
-.back-to-versions-btn:hover {
-    background: var(--accent);
-    color: white;
-}
-
-/* Inline expansion back button */
-.work-inline-back {
-    background: none;
-    border: none;
-    color: var(--accent);
-    cursor: pointer;
-    font-size: 0.9rem;
-    padding: 0.5rem 0;
-    margin-bottom: 0.5rem;
-}
-
-.work-inline-back:hover {
-    text-decoration: underline;
-}
-
-.work-inline-controls {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.work-inline-controls:empty,
-.work-inline-controls.hidden {
-    display: none;
-}
 
 /* Bounty section title (non-collapsible on dashboard) */
 .work-bounty-title {
@@ -8707,33 +7248,32 @@ body.fullscreen-mode::after {
 }
 
 
-/* Part toggle tabs in song view */
+/* Part switcher on the unified song page: a segmented control, one look
+   everywhere (overrides the legacy .part-selector card styles above). */
 .part-tabs {
     display: flex;
-    gap: 0.25rem;
+    gap: 0.35rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.5rem;
 }
 
 .part-tab {
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 0.9rem;
     border: 1px solid var(--border);
     background: var(--bg-secondary);
-    border-radius: 6px 6px 0 0;
+    color: var(--text);
+    border-radius: 999px;
     cursor: pointer;
     font-size: 0.875rem;
-    border-bottom: none;
-    margin-bottom: -1px;
 }
 
 .part-tab:hover {
-    background: var(--bg-hover);
+    border-color: var(--accent);
 }
 
 .part-tab.active {
-    background: var(--bg);
-    border-bottom-color: var(--bg);
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
     font-weight: 500;
 }
 
@@ -8952,15 +7492,6 @@ body.fullscreen-mode::after {
     gap: 1.5rem;
 }
 
-/* Controls stay visible while the (page-scrolled) tab flows by —
-   sticky beats a nested scroll pane, which fought the page scroll
-   and made bottom tracks unreachable. */
-.work-controls-content {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    background: var(--bg);
-}
 
 /* Track VIEW tabs: which staff you see (audio = mixer checkboxes/Solo) */
 .track-view-tabs {
@@ -10514,4 +9045,549 @@ body.fullscreen-mode::after {
     .ve-palette { position: fixed; left: 0; right: 0; bottom: 0; }
     .ve-card-body { font-size: 1.05rem; }
     .ve-picker-root { min-width: 44px; }
+}
+
+/* ============================================
+   APP SHELL: top band, bottom band, pill primitive
+   (the one home for chrome — see docs/js/shell.js)
+   ============================================ */
+
+.app-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    height: 48px;
+    padding: 0 var(--space-md);
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    transition: transform 0.25s ease;
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    min-width: 0;
+}
+
+.topbar-back {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text);
+    font-size: var(--font-md);
+    padding: 0.2rem 0.55rem;
+    cursor: pointer;
+}
+
+.topbar-back:hover { border-color: var(--accent); }
+
+.topbar-brand img {
+    height: 32px;
+    width: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+
+
+.topbar-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.topbar-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--font-sm);
+}
+
+.topbar-nav-link:hover { color: var(--text); background: var(--bg-secondary); }
+.topbar-nav-link.active { color: var(--accent); }
+
+.topbar-title {
+    flex: 0 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: var(--font-md);
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-left: auto;
+}
+
+.topbar-action-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text);
+    font-size: var(--font-sm);
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+}
+
+.topbar-action-btn:hover { border-color: var(--accent); }
+.topbar-action-btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.topbar-icon-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: var(--font-lg);
+    line-height: 1;
+    padding: 0.25rem 0.45rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+}
+
+.topbar-icon-btn:hover { color: var(--text); background: var(--bg-secondary); }
+
+.topbar-overflow { position: relative; }
+
+.app-bottomband {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    min-height: 52px;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+}
+
+body.has-bottomband .container {
+    padding-bottom: 72px;
+}
+
+/* Pill: inline disclosure control (replaces bespoke collapsible bars) */
+.pill { position: relative; display: inline-flex; }
+
+.pill-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text);
+    font-size: var(--font-sm);
+    padding: 0.3rem 0.75rem;
+    cursor: pointer;
+}
+
+.pill-btn:hover, .pill-btn.open { border-color: var(--accent); }
+.pill-caret { font-size: 0.7em; color: var(--text-secondary); }
+
+.pill-popover {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    z-index: 950;
+    min-width: 180px;
+    /* Grow to fit content, but never past the viewport (fixes clipped
+       full-width rows like the Strum Machine button at narrow widths) */
+    width: max-content;
+    max-width: min(92vw, 480px);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    padding: var(--space-sm);
+}
+
+.pill-popover.align-right { left: auto; right: 0; }
+
+.topbar-overflow .pill-popover {
+    left: auto;
+    right: 0;
+}
+
+.pill-popover-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--text);
+    font-size: var(--font-sm);
+    padding: 0.45rem 0.6rem;
+    cursor: pointer;
+}
+
+.pill-popover-item:hover { background: var(--bg-secondary); }
+
+.pill-popover-divider {
+    border-top: 1px solid var(--border);
+    margin: var(--space-xs) 0;
+}
+
+/* Collapse top-band labels to icons well before they can crowd the band */
+@media (max-width: 800px) {
+    .topbar-nav-label { display: none; }
+    .topbar-nav-link { padding: 0.3rem 0.45rem; }
+    .topbar-action-label { display: none; }
+    .topbar-title { display: none; }
+}
+
+/* ============================================
+   UNIFIED SONG PAGE (M2): title/artist row, pill row, part tabs,
+   bottom-band playback controls. See work-view.js + song-controls.js.
+   ============================================ */
+
+.song-artist-line {
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    margin-top: 2px;
+}
+
+.song-pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-xs);
+    margin: var(--space-sm) 0;
+}
+
+/* Pill popover content building blocks */
+.pill-section {
+    padding: 4px 2px;
+}
+
+.pill-section + .pill-section {
+    border-top: 1px solid var(--border);
+    margin-top: 6px;
+    padding-top: 10px;
+}
+
+.pill-transpose-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pill-current-key {
+    font-weight: 600;
+    min-width: 2.5em;
+    text-align: center;
+}
+
+.pill-key-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.pill-key-btn {
+    padding: 4px 6px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-size: var(--font-sm);
+}
+
+.pill-key-btn:hover { border-color: var(--accent); }
+
+.pill-key-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.pill-key-btn.original { font-weight: 700; }
+
+.pill-checks {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pill-nashville-btn, .pill-strum-btn { width: 100%; }
+
+/* Wider popovers for Info / Arrangement content */
+.pill.pill-wide .pill-popover {
+    min-width: 300px;
+    max-width: min(440px, calc(100vw - 24px));
+}
+
+.pill-info-content { font-size: var(--font-sm); }
+
+.arrangement-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.arrangement-item.current { background: var(--bg-secondary); }
+
+.arrangement-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    min-width: 0;
+}
+
+/* Vote affordance carried over from the retired version-picker modal */
+.arrangement-votes {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.arrangement-meta {
+    color: var(--text-secondary);
+    font-size: 0.85em;
+}
+
+.arrangement-loading {
+    color: var(--text-secondary);
+    padding: var(--space-sm);
+}
+
+/* Playback controls mounted in the bottom band */
+.app-bottomband .tab-controls,
+.app-bottomband .abc-band-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Tab controls hosted in the bottom band: flatten the old boxed styling so
+   the band itself is the container, and the mixer flows inline. */
+.app-bottomband .tab-controls {
+    background: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 0;
+    justify-content: center;
+    flex: 1;
+}
+
+.app-bottomband .tab-track-mixer {
+    border-top: none;
+    margin-top: 0;
+    padding: 0 0 0 0.75rem;
+    border-left: 1px solid var(--border);
+    width: auto;
+}
+
+/* Auto-hidden chrome: the band slides up to a 4px peek strip. Scroll-up,
+   hovering, or tapping the strip brings it back (see shell.js). */
+body.chrome-hidden .app-topbar {
+    transform: translateY(calc(-100% + 4px));
+}
+
+body.chrome-hidden .app-topbar:hover,
+body.chrome-hidden .app-topbar:focus-within {
+    transform: none;
+}
+
+/* When the list nav bar and the bottom band are both present, stack them */
+body.has-list-context .app-bottomband {
+    bottom: 60px;
+}
+
+body.has-list-context.has-bottomband .container {
+    padding-bottom: 132px;
+}
+
+/* ============================================
+   PHONE-WIDTH: reclaim horizontal space
+   ============================================ */
+@media (max-width: 640px) {
+    /* Song pages: back + brand are the navigation — hide the global nav
+       icons so the band breathes */
+    .app-topbar.has-back .topbar-nav {
+        display: none;
+    }
+
+    .app-topbar {
+        gap: 0.35rem;
+        padding: 0 0.5rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    /* The desktop "comfortable margins" rule (100% - 4rem) costs 64px on a
+       phone — song and editor pages get the full width instead */
+    .container:has(.song-view:not(.hidden)),
+    .container:has(.editor-panel:not(.hidden)) {
+        max-width: 100%;
+    }
+
+    /* The song sheet goes full-bleed: no card chrome inside a container
+       inside a viewport — every horizontal pixel goes to the music */
+    .song-content {
+        background: none;
+        border: none;
+        border-radius: 0;
+        padding: 0.25rem 0;
+    }
+}
+
+/* Segmented mode buttons inside pill popovers (replaces native selects,
+   whose menus render at odd sizes over the popover on mobile) */
+.pill-mode-label {
+    font-size: var(--font-xs);
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.pill-mode-group {
+    display: flex;
+    gap: 4px;
+}
+
+.pill-mode-btn {
+    flex: 1;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+    color: var(--text);
+    border-radius: 999px;
+    font-size: var(--font-sm);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.pill-mode-btn:hover { border-color: var(--accent); }
+
+.pill-mode-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+/* Pill popovers hosted in the bottom band open upward */
+.app-bottomband .pill-popover {
+    top: auto;
+    bottom: calc(100% + 6px);
+}
+
+.tab-key-pill .pill-popover {
+    min-width: 220px;
+}
+
+/* The key pill lives inside a qc-group whose overflow:hidden (rounded
+   button cluster) would clip its drop-up popover */
+.qc-group:has(.tab-key-pill) {
+    overflow: visible;
+}
+
+/* Phone song-page band diet: back · logo · Lists · ⋯ (Export/bug/theme/
+   auth live in the overflow or on other pages) */
+@media (max-width: 640px) {
+    .app-topbar.has-back #topbar-bug,
+    .app-topbar.has-back #topbar-theme,
+    .app-topbar.has-back #auth-section {
+        display: none;
+    }
+}
+
+/* Wanted list on the bounty board */
+.wanted-block {
+    margin-bottom: 2rem;
+}
+
+.wanted-card {
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+.core-badge {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.05rem 0.45rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font-size: var(--font-xs);
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.wanted-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.4rem;
+}
+
+.wanted-chip {
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: var(--font-xs);
+    color: var(--text-secondary);
+}
+
+.bounty-show-more {
+    display: block;
+    margin: 0.75rem auto 0;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    font-size: var(--font-sm);
+    cursor: pointer;
+}
+
+.bounty-show-more:hover { border-color: var(--accent); }
+
+.partgap-card {
+    text-decoration: none;
+    color: inherit;
 }

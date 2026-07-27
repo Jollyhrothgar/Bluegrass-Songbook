@@ -148,6 +148,28 @@ export function requireLogin(actionDescription) {
 }
 
 /**
+ * Build the candidate rows for the admin delete modal.
+ * Deleting by currentSong.id alone is a trap: the viewed song is the group's
+ * *representative*, which may not be the copy the admin means to remove. So
+ * the modal must list every member of the group and let the admin choose.
+ */
+export function buildDeleteCandidates(song, songGroups) {
+    if (!song) return [];
+    const members = (song.group_id && songGroups?.[song.group_id]?.length)
+        ? songGroups[song.group_id]
+        : [song];
+    return members.map(member => ({
+        id: member.id,
+        title: member.title || member.id,
+        source: member.source || 'unknown',
+        key: member.key || null,
+        chordCount: member.chord_count || 0,
+        firstLine: member.first_line || '',
+        isCurrent: member.id === song.id,
+    }));
+}
+
+/**
  * Generate a URL-friendly slug from title and artist
  */
 export function generateSlug(title, artist) {

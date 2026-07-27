@@ -6,6 +6,7 @@ Matches tabs to existing works and creates new works as needed.
 import json
 import re
 import shutil
+import sys
 import unicodedata
 from datetime import date
 from pathlib import Path
@@ -20,6 +21,12 @@ from catalog import TabCatalog, TabEntry
 REPO_ROOT = Path(__file__).parent.parent.parent.parent
 WORKS_DIR = REPO_ROOT / 'works'
 PARSED_DIR = Path(__file__).parent.parent / 'parsed'
+
+# Curation registry guard (scripts/lib/curation.py)
+_SCRIPTS_LIB = REPO_ROOT / 'scripts' / 'lib'
+if str(_SCRIPTS_LIB) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_LIB))
+from curation import is_suppressed, load_deleted_songs, load_registry
 
 
 def slugify(text: str) -> str:
@@ -119,10 +126,12 @@ def create_new_work(tab: TabEntry, otf_path: Path) -> Path:
     normalized = normalize_title(tab.title)
     slug = slugify(normalized)
 
-    # Handle slug conflicts
+    # Handle slug conflicts (never claim a suppressed suffix slug)
+    registry = load_registry(REPO_ROOT)
+    deleted_songs = load_deleted_songs(REPO_ROOT)
     work_dir = WORKS_DIR / slug
     suffix = 1
-    while work_dir.exists():
+    while work_dir.exists() or is_suppressed(work_dir.name, registry, deleted_songs):
         work_dir = WORKS_DIR / f"{slug}-{suffix}"
         suffix += 1
 
@@ -266,8 +275,20 @@ def import_tab(catalog: TabCatalog, tab: TabEntry) -> Optional[str]:
         print(f"  Error: OTF file not found: {otf_path}")
         return None
 
+    # Curation guard: never re-create or touch suppressed works
+    registry = load_registry(REPO_ROOT)
+    deleted_songs = load_deleted_songs(REPO_ROOT)
+    slug = slugify(normalize_title(tab.title))
+    if is_suppressed(slug, registry, deleted_songs):
+        print(f"  Skipped: '{slug}' is suppressed (curation registry / deleted songs)")
+        return None
+
     # Try to match to existing work
     matching_work = find_matching_work(tab.title)
+    if matching_work and is_suppressed(matching_work.name, registry, deleted_songs):
+        print(f"  Skipped: matched work '{matching_work.name}' is suppressed "
+              f"(curation registry / deleted songs)")
+        return None
 
     if matching_work:
         # Add to existing work

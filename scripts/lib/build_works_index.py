@@ -64,6 +64,9 @@ from build_index import (
     KEYS,
 )
 
+from curation import (apply_curation, filter_suppressed, load_registry,
+                      load_prune_list, apply_index_prune, apply_tag_exclusions)
+
 
 def parse_chordpro_content(content: str) -> dict:
     """Extract lyrics, chords, and ABC content from ChordPro content."""
@@ -184,8 +187,11 @@ def compute_group_id(title: str, artist: str, lyrics: str) -> str:
     base = normalize_title(title)
     base_hash = hashlib.md5(base.encode()).hexdigest()[:12]
 
-    # Lyrics hash to distinguish different songs with same title
-    lyrics_norm = normalize_lyrics(lyrics[:200] if lyrics else '')
+    # Lyrics hash to distinguish different songs with same title.
+    # Normalize BEFORE truncating: a raw [:200] window shifts with stray
+    # whitespace/punctuation, splitting true duplicates into different
+    # groups (e.g. two "Misty" covers differing by one double-space).
+    lyrics_norm = normalize_lyrics(lyrics or '')[:200]
     lyrics_hash = hashlib.md5(lyrics_norm.encode()).hexdigest()[:8]
 
     return f"{base_hash}_{lyrics_hash}"
@@ -691,17 +697,18 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
         for work_id, error in errors:
             print(f"  {work_id}: {error}")
 
-    # Filter out soft-deleted songs
+    # Filter out suppressed songs (curation registry ∪ soft-deleted list)
+    registry = load_registry(Path('.'))
+    deleted_songs = {}
     deleted_songs_file = Path('docs/data/deleted_songs.json')
     if deleted_songs_file.exists():
         with open(deleted_songs_file) as f:
             deleted_songs = json.load(f)
-        if deleted_songs:
-            original_count = len(songs)
-            songs = [s for s in songs if s['id'] not in deleted_songs]
-            deleted_count = original_count - len(songs)
-            if deleted_count > 0:
-                print(f"Excluded {deleted_count} soft-deleted songs")
+    original_count = len(songs)
+    songs = filter_suppressed(songs, deleted_songs, registry)
+    excluded_count = original_count - len(songs)
+    if excluded_count > 0:
+        print(f"Excluded {excluded_count} suppressed/soft-deleted songs")
 
     # Copy tablature files to docs/data/tabs/
     tabs_dir = Path('docs/data/tabs')
@@ -853,6 +860,27 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     # Skip for CI/lightweight builds (--skip-fuzzy)
     if fuzzy_grouping:
         songs = fuzzy_group_songs(songs)
+
+    # Editorial curation (curation/registry.yaml): remap pinned groups to
+    # stable grp:<canonical-id> ids and mark canonical/variant rows.
+    # Runs unconditionally — even with --skip-fuzzy — so pins always apply.
+    songs = apply_curation(songs, registry)
+
+    # Jam-repertoire prune (curation/index_prune.csv): stamp indexed:false
+    # on non-bluegrass rows so search/collections skip them. Non-destructive:
+    # rows stay in the index (deep links, lists, groups keep working), and
+    # user-contributed works are never pruned. Rescues: registry keep: map.
+    prune_ids = load_prune_list(Path('.'))
+    songs = apply_index_prune(songs, prune_ids, registry)
+    pruned_count = sum(1 for s in songs if s.get('indexed') is False)
+    if prune_ids:
+        print(f"  Index prune: {pruned_count} works marked indexed:false "
+              f"({len(prune_ids)} listed)")
+
+    # Editorial tag exclusions (registry tag_exclusions): e.g. strip
+    # BluegrassStandard from country/pop mis-tags. Runs after all tag
+    # enrichment so exclusions always win.
+    songs = apply_tag_exclusions(songs, registry)
 
     # Deduplicate (by content for lead sheets, by id for tablature-only)
     seen_content = {}

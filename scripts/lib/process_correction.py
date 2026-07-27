@@ -21,6 +21,8 @@ from datetime import date
 from pathlib import Path
 import yaml
 
+from curation import is_suppressed, load_deleted_songs, load_registry
+
 
 def extract_chordpro(issue_body: str) -> str | None:
     """Extract ChordPro content from the issue body."""
@@ -145,7 +147,16 @@ def extract_metadata_from_chordpro(content: str) -> dict:
 
 
 def update_work(song_id: str, chordpro: str, author: str, issue_number: str, repo_root: Path) -> Path | None:
-    """Update or create work in works/ directory."""
+    """Update or create work in works/ directory.
+
+    Refuses (returns None without writing) when the id is suppressed by the
+    curation registry or the soft-deleted list.
+    """
+    if is_suppressed(song_id, load_registry(repo_root), load_deleted_songs(repo_root)):
+        print(f"Skipping work update: '{song_id}' is suppressed "
+              f"(curation/registry.yaml or deleted_songs.json); not writing to works/")
+        return None
+
     work_dir = repo_root / 'works' / song_id
     today = date.today().isoformat()
 

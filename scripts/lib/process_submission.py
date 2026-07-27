@@ -21,6 +21,8 @@ from datetime import date
 from pathlib import Path
 import yaml
 
+from curation import is_suppressed, load_deleted_songs, load_registry
+
 
 def extract_chordpro(issue_body: str) -> str | None:
     """Extract ChordPro content from the issue body."""
@@ -129,7 +131,19 @@ def extract_composer_from_chordpro(content: str) -> str | None:
 
 def publish_to_works(slug: str, title: str, artist: str | None, chordpro: str,
                      author: str, issue_number: str, repo_root: Path) -> Path:
-    """Publish the song to works/ for immediate search visibility."""
+    """Publish the song to works/ for immediate search visibility.
+
+    Returns None (without writing) when the slug is suppressed by the
+    curation registry or the soft-deleted list — suppressed works must
+    never be resurrected by an import.
+    """
+    registry = load_registry(repo_root)
+    deleted_songs = load_deleted_songs(repo_root)
+    if is_suppressed(slug, registry, deleted_songs):
+        print(f"Skipping publish: '{slug}' is suppressed "
+              f"(curation/registry.yaml or deleted_songs.json); not writing to works/")
+        return None
+
     today = date.today().isoformat()
 
     # Extract additional metadata from ChordPro
@@ -166,10 +180,10 @@ def publish_to_works(slug: str, title: str, artist: str | None, chordpro: str,
     # Create work directory
     work_dir = repo_root / 'works' / slug
 
-    # Handle collision - add suffix if needed
+    # Handle collision - add suffix if needed (skipping suppressed suffix slugs)
     counter = 1
     original_slug = slug
-    while work_dir.exists():
+    while work_dir.exists() or is_suppressed(slug, registry, deleted_songs):
         slug = f"{original_slug}-{counter}"
         work_dir = repo_root / 'works' / slug
         work_data['id'] = slug
@@ -256,7 +270,8 @@ def main():
 
     # 2. Publish to works/ (immediate search visibility)
     work_dir = publish_to_works(slug, title, artist, chordpro, submitter, issue_number, repo_root)
-    print(f"Published to: {work_dir}")
+    if work_dir:
+        print(f"Published to: {work_dir}")
 
     print(f"Title: {title}")
     print(f"Slug: {slug}")

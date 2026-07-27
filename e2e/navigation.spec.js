@@ -1,72 +1,114 @@
-// E2E tests for navigation and history
+// E2E tests for navigation and history in the redesigned shell:
+// the hamburger sidebar is gone — every view renders under the slim
+// top band (#app-topbar) with nav links, and song URLs are unified on
+// the #work/{slug} form (#song/{id} permanently redirects).
 import { test, expect } from '@playwright/test';
+import { gotoSearch, searchAndOpen, navClick } from './helpers.js';
 
-// Helper to open sidebar (required before clicking nav items)
-async function openSidebar(page) {
-    await page.locator('#hamburger-btn').click();
-    await expect(page.locator('.sidebar.open')).toBeVisible();
-}
-
-test.describe('Navigation', () => {
-    test('home page loads with landing page', async ({ page }) => {
+test.describe('Top Band Navigation', () => {
+    test('home page loads with landing page (logo hero lives only there)', async ({ page }) => {
         await page.goto('/');
 
-        // Landing page should be visible
         await expect(page.locator('#landing-page')).toBeVisible();
+        await expect(page.locator('.landing-hero')).toBeVisible();
 
         // Collection cards should load
         await page.waitForSelector('.collection-card', { timeout: 5000 });
     });
 
+    test('top band renders brand, nav links, theme and overflow', async ({ page }) => {
+        await gotoSearch(page);
+
+        await expect(page.locator('#app-topbar')).toBeVisible();
+        await expect(page.locator('#topbar-brand')).toBeVisible();
+        await expect(page.locator('.topbar-nav-link[data-nav="search"]')).toBeVisible();
+        await expect(page.locator('.topbar-nav-link[data-nav="add"]')).toBeVisible();
+        await expect(page.locator('.topbar-nav-link[data-nav="favorites"]')).toBeVisible();
+        await expect(page.locator('.topbar-nav-link[data-nav="lists"]')).toBeVisible();
+        await expect(page.locator('#topbar-theme')).toBeVisible();
+        await expect(page.locator('#topbar-overflow-btn')).toBeVisible();
+    });
+
     test('favorites nav link works', async ({ page }) => {
-        await page.goto('/');
-        await page.waitForSelector('#hamburger-btn');
+        await gotoSearch(page);
 
-        // Open sidebar first
-        await openSidebar(page);
-        await page.locator('#nav-favorites').click();
+        await navClick(page, 'favorites');
 
-        // URL should change to favorites
+        // URL should change to the favorites list
         await expect(page).toHaveURL(/#list\/favorites/);
+        await expect(page.locator('#search-stats')).toContainText(/favorite/);
     });
 
     test('search nav link shows search view', async ({ page }) => {
-        await page.goto('/');
-        await page.waitForSelector('#hamburger-btn');
+        await gotoSearch(page);
 
-        // Open sidebar and go to favorites
-        await openSidebar(page);
-        await page.locator('#nav-favorites').click();
-        await page.waitForTimeout(200);
+        // Go to favorites, then back to search via the nav
+        await navClick(page, 'favorites');
+        await expect(page).toHaveURL(/#list\/favorites/);
 
-        // Open sidebar again and click search nav
-        await openSidebar(page);
-        await page.locator('#nav-search').click();
+        await navClick(page, 'search');
 
-        // Should show search view (not landing page)
         await expect(page.locator('.search-container')).toBeVisible();
         await expect(page.locator('#search-input')).toBeVisible();
+    });
+
+    test('lists nav link opens the Song Lists view', async ({ page }) => {
+        await gotoSearch(page);
+
+        await navClick(page, 'lists');
+
+        await expect(page.locator('#song-lists-view')).toBeVisible();
+        await expect(page).toHaveURL(/#lists/);
+    });
+
+    test('add song nav opens the picker; Lyrics & Chords lands in the editor', async ({ page }) => {
+        await gotoSearch(page);
+
+        await navClick(page, 'add');
+
+        // The top-band Add Song entry opens the add-song picker modal
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+
+        // Choosing Lyrics & Chords goes to the new-song editor
+        await page.locator('.picker-card[data-type="chordpro"]').click();
+        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('#editor-content')).toBeVisible();
+    });
+
+    test('brand link returns home', async ({ page }) => {
+        await gotoSearch(page);
+
+        await page.locator('#topbar-brand').click();
+
+        await expect(page.locator('#landing-page')).toBeVisible();
+        await expect(page.locator('.search-container')).toBeHidden();
     });
 });
 
 test.describe('Deep Links', () => {
-    test('direct song URL loads song', async ({ page }) => {
-        // Navigate to a song deep link
-        await page.goto('/#song/yourcheatingheartlyricschords');
+    test('#song/{id} URL permanently redirects to #work/{slug}', async ({ page }) => {
+        await page.goto('/#song/your-cheating-heart');
 
-        await page.waitForTimeout(500);
+        // The song page renders and the URL is rewritten to the work form
+        await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('.song-title')).toContainText(/cheat/i);
+        await expect(page).toHaveURL(/#work\/your-cheating-heart/);
+    });
 
-        // If song exists, song view should be visible
-        // If not, we'll be at search (graceful fallback)
+    test('legacy #song id resolves and redirects to the canonical slug', async ({ page }) => {
+        await page.goto('/#song/bluemoonofkentuckylyricschords');
+
+        await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
+        // URL must be the canonical work form, not the legacy song form
+        await expect(page).toHaveURL(/#work\//);
+        expect(page.url()).not.toContain('#song/');
     });
 
     test('direct favorites URL loads favorites', async ({ page }) => {
         await page.goto('/#list/favorites');
 
-        await page.waitForTimeout(300);
-
         // Stats should show favorites
-        await expect(page.locator('#search-stats')).toContainText(/favorite/);
+        await expect(page.locator('#search-stats')).toContainText(/favorite/, { timeout: 15000 });
     });
 
     test('invalid hash gracefully falls back to home', async ({ page }) => {
@@ -74,51 +116,39 @@ test.describe('Deep Links', () => {
 
         await page.waitForTimeout(300);
 
-        // Should show landing page (graceful fallback)
         await expect(page.locator('#landing-page')).toBeVisible();
     });
 });
 
 test.describe('History Navigation', () => {
     test('browser back works from song to search', async ({ page }) => {
-        // Start at search view directly
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
+        await gotoSearch(page);
+        await searchAndOpen(page, 'your cheating heart hank williams');
 
-        // Search for something (use specific song to avoid version picker)
-        await page.fill('#search-input', 'your cheating heart hank williams');
-        await page.waitForTimeout(300);
-
-        // Click a result
-        await page.locator('.result-item').first().click();
-        await expect(page.locator('#song-view')).toBeVisible();
-
-        // Go back
         await page.goBack();
 
-        // Should be back at search results
+        await expect(page.locator('#results')).toBeVisible();
+    });
+
+    test('top-band back button returns from song to search', async ({ page }) => {
+        await gotoSearch(page);
+        await searchAndOpen(page, 'your cheating heart hank williams');
+
+        // The song page shows the back arrow in the top band
+        const backBtn = page.locator('#topbar-back');
+        await expect(backBtn).toBeVisible();
+        await backBtn.click();
+
         await expect(page.locator('#results')).toBeVisible();
     });
 
     test('browser forward works after back', async ({ page }) => {
-        // Start at search view directly
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-        // Wait for the index so history entries are pushed against a
-        // settled app (back/forward races the post-load render otherwise)
-        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
+        await gotoSearch(page);
+        await searchAndOpen(page, 'mountain dew');
 
-        await page.fill('#search-input', 'mountain dew');
-        await page.waitForTimeout(300);
-        await page.locator('.result-item').first().click();
-
-        await expect(page.locator('#song-view')).toBeVisible();
-
-        // Back then forward
         await page.goBack();
         await page.goForward();
 
-        // Should be at song view again
         await expect(page.locator('#song-view')).toBeVisible();
     });
 
@@ -130,89 +160,29 @@ test.describe('History Navigation', () => {
         await page.locator('.collection-card').first().click();
         await page.waitForTimeout(300);
 
-        // Open sidebar and click favorites
-        await openSidebar(page);
-        await page.locator('#nav-favorites').click();
+        // Nav to favorites, then search
+        await navClick(page, 'favorites');
+        await page.waitForTimeout(200);
+        await navClick(page, 'search');
         await page.waitForTimeout(200);
 
-        // Open sidebar and click search (goes to home)
-        await openSidebar(page);
-        await page.locator('#nav-search').click();
-        await page.waitForTimeout(200);
-
-        // Go back multiple times
         await page.goBack();
         await page.goBack();
 
-        // Should be able to navigate back through history
         await expect(page.locator('.search-container')).toBeVisible();
     });
 });
 
-test.describe('Sidebar Navigation', () => {
-    test('sidebar toggle works on mobile', async ({ page }) => {
-        // Set mobile viewport
+test.describe('Mobile Layout', () => {
+    test('top band is present on mobile (no hamburger, no sidebar)', async ({ page }) => {
         await page.setViewportSize({ width: 375, height: 667 });
 
         await page.goto('/');
         await page.waitForSelector('.collection-card', { timeout: 5000 });
 
-        // Hamburger menu should be visible
-        const hamburger = page.locator('#hamburger-btn');
-        if (await hamburger.isVisible()) {
-            await hamburger.click();
-
-            // Sidebar should be visible
-            await expect(page.locator('#sidebar')).toBeVisible();
-        }
-    });
-
-    test('add song nav works', async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-        // Wait for the index to load so the post-load render can't stomp
-        // the add-song view we navigate to
-        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 15000 });
-
-        // Open sidebar first
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-        // Add Song goes straight to the new-song editor (no picker modal)
-
-        // Editor panel should be visible (contains add song form)
-        await expect(page.locator('#editor-panel')).toBeVisible();
-    });
-});
-
-test.describe('View Transitions', () => {
-    test('bottom sheet closes when navigating away from song view', async ({ page }) => {
-        // Start at search view directly
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-
-        // Search and open a song (use specific song to avoid version picker)
-        await page.fill('#search-input', 'your cheating heart hank williams');
-        await page.waitForTimeout(300);
-        await page.locator('.result-item').first().click();
-        await expect(page.locator('#song-view')).toBeVisible();
-
-        // Open the bottom sheet (mobile options panel)
-        // The options button triggers the bottom sheet
-        const optionsBtn = page.locator('#options-btn');
-        if (await optionsBtn.isVisible()) {
-            await optionsBtn.click();
-            await expect(page.locator('#bottom-sheet')).toBeVisible();
-        }
-
-        // Navigate to Add Song
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-        // Add Song goes straight to the new-song editor (no picker modal)
-
-        // Bottom sheet should be hidden (regression: it has position:fixed)
-        await expect(page.locator('#bottom-sheet')).toBeHidden();
-
-        // Editor should be visible
-        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('#app-topbar')).toBeVisible();
+        // The old drawer chrome must not exist at all
+        await expect(page.locator('#hamburger-btn')).toHaveCount(0);
+        await expect(page.locator('#sidebar')).toHaveCount(0);
     });
 });
