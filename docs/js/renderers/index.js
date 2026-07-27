@@ -4,6 +4,9 @@
 import { TabRenderer, INSTRUMENT_ICONS } from './tablature.js';
 import { TabPlayer, getInstrumentKey, PITCH_TO_MIDI, INSTRUMENTS } from './tab-player.js';
 import { renderAsciiTab, copyAsciiTab } from './tab-ascii.js';
+import {
+    parseChordPro, renderSectionsHtml, renderSectionsAscii, renderSectionsPrintHtml
+} from './chordpro.js';
 
 /**
  * Renderer registry - maps format types to renderer modules
@@ -46,7 +49,6 @@ export const RENDERERS = {
 
     /**
      * ChordPro format - lead sheets
-     * (Existing rendering is in song-view.js - this is a placeholder for future extraction)
      */
     chordpro: {
         name: 'Lyrics & Chords',
@@ -54,9 +56,16 @@ export const RENDERERS = {
         canPlayback: false,
 
         render(container, content, options = {}) {
-            // TODO: Extract ChordPro rendering from song-view.js
-            // For now, this is handled by the existing song-view module
-            throw new Error('ChordPro rendering should use song-view.js directly');
+            const { sections } = parseChordPro(content);
+            if (options.ascii) {
+                const pre = document.createElement('pre');
+                pre.className = 'ascii-leadsheet';
+                pre.textContent = renderSectionsAscii(sections, options);
+                container.innerHTML = '';
+                container.appendChild(pre);
+            } else {
+                container.innerHTML = renderSectionsHtml(sections, options);
+            }
         }
     },
 
@@ -105,5 +114,28 @@ export {
     PITCH_TO_MIDI,
     INSTRUMENTS,
     renderAsciiTab,
-    copyAsciiTab
+    copyAsciiTab,
+    parseChordPro,
+    renderSectionsHtml,
+    renderSectionsAscii,
+    renderSectionsPrintHtml
 };
+
+// Ts-aware measure math (shared by renderer, player, work-view, editor)
+export {
+    parseTimeSignature,
+    measureTicksFor,
+    MeasureTiming,
+    TimelineTiming,
+    identityTimeline,
+    readingListTimeline,
+    expandNotation,
+    densifyNotation,
+    attachOtfDecorations,
+    makePlaybackToVisualMapper,
+    buildMetronomeSchedule,
+    maxMeasureIn,
+    measureTimingFromOtf,
+    analyzeReadingList,
+    prepareCompactNotation,
+} from './measure-timing.js';

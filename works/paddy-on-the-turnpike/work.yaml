@@ -1,0 +1,20 @@
+id: paddy-on-the-turnpike
+title: Paddy on the Turnpike
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '19600'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=19600
+    author: Jollyhrothgar
+    imported_at: '2026-07-08'

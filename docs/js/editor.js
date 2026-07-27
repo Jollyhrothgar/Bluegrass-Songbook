@@ -7,11 +7,25 @@ import {
     editingSongId, setEditingSongId,
     editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
-import { escapeHtml, generateSlug } from './utils.js';
-import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
+import { generateSlug } from './utils.js';
+import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
 import { openSuperUserRequestModal } from './superuser-request.js';
+import { createInteractivePreview } from './visual-editor/preview.js';
+import { wrapSelectionAsSection } from './visual-editor/wrap-section.js';
+import { parseSong, serializeSong } from './visual-editor/model.js';
+import {
+    cleanChordUPaste, cleanUltimateGuitarPaste,
+    editorConvertToChordPro, editorDetectAndConvert
+} from './smart-paste.js';
+
+// Re-export the shared smart-paste pipeline so existing importers/tests of
+// editor.js keep working unchanged (the code moved verbatim to smart-paste.js).
+export {
+    cleanChordUPaste, cleanUltimateGuitarPaste,
+    editorConvertToChordPro, editorDetectAndConvert
+};
 
 /**
  * Get the submitter attribution for issue body.
@@ -37,7 +51,6 @@ let editorTitleEl = null;
 let editorArtistEl = null;
 let editorWriterEl = null;
 let editorContentEl = null;
-let editorPreviewContentEl = null;
 let editorCopyBtnEl = null;
 let editorSaveBtnEl = null;
 let editorSubmitBtnEl = null;
@@ -54,6 +67,22 @@ let autoDetectCheckboxEl = null;
 let editorTransposeUpEl = null;
 let editorTransposeDownEl = null;
 let editorKeySelectEl = null;
+let metadataSummaryEl = null;
+let metadataFieldsEl = null;
+let onUploadRequestCb = null;
+let onSongRequestCb = null;
+
+// Two-pane interactive preview state
+let editorPreviewContainerEl = null;
+let editorUndoBtnEl = null;
+let editorRedoBtnEl = null;
+let editorTransposeGroupEl = null;
+let editorSelectionToolbarEl = null;
+let preview = null;
+// True once enterEditMode has run, until the editor is reset to a fresh
+// new-song state. Unlike editMode/editingSongId this survives exitEditMode,
+// so entering Add Song later can tell "abandoned edit" from "unsaved draft".
+let lastSessionWasEdit = false;
 
 // Other DOM references
 let navSearchEl = null;
@@ -61,6 +90,58 @@ let navAddSongEl = null;
 let navFavoritesEl = null;
 let resultsDivEl = null;
 let songViewEl = null;
+
+/**
+ * Derive the compact metadata line text from title/artist values.
+ * Exported for unit tests.
+ */
+export function deriveMetadataSummary(title, artist) {
+    const t = (title || '').trim();
+    const a = (artist || '').trim();
+    if (!t && !a) return 'Untitled song \u2014 tap to name';
+    if (!t) return `Untitled song \u2014 ${a}`;
+    return a ? `${t} \u2014 ${a}` : t;
+}
+
+/**
+ * Refresh the compact metadata line from the current field values.
+ * User content flows through textContent only.
+ */
+function updateMetadataSummary() {
+    if (!metadataSummaryEl) return;
+    metadataSummaryEl.textContent =
+        deriveMetadataSummary(editorTitleEl?.value, editorArtistEl?.value);
+    metadataSummaryEl.classList.toggle('metadata-summary-unnamed',
+        !(editorTitleEl?.value || '').trim());
+}
+
+/**
+ * Expand or collapse the full metadata fields under the compact line.
+ */
+function setMetadataExpanded(expanded) {
+    if (metadataFieldsEl) metadataFieldsEl.classList.toggle('hidden', !expanded);
+    if (metadataSummaryEl) {
+        metadataSummaryEl.setAttribute('aria-expanded', String(!!expanded));
+        metadataSummaryEl.classList.toggle('expanded', !!expanded);
+    }
+}
+
+function metadataExpanded() {
+    return !!(metadataFieldsEl && !metadataFieldsEl.classList.contains('hidden'));
+}
+
+/**
+ * Missing required metadata on submit/save: expand the fields, focus the
+ * offending input and surface a friendly notice via the status line.
+ */
+function promptForField(inputEl, message) {
+    setMetadataExpanded(true);
+    if (editorStatusEl) {
+        editorStatusEl.textContent = message;
+        editorStatusEl.className = 'save-status error';
+    }
+    inputEl?.focus();
+}
 
 /**
  * Enter edit mode for an existing song
@@ -74,6 +155,7 @@ export function enterEditMode(song, options = {}) {
 
     setEditMode(true);
     setEditingSongId(song.id);
+    lastSessionWasEdit = true;
     trackEditor('edit', song.id);
 
     // Reset key pin state for new edit session
@@ -86,8 +168,10 @@ export function enterEditMode(song, options = {}) {
     if (editorContentEl) editorContentEl.value = song.content || '';
     if (editorCommentEl) editorCommentEl.value = '';
 
-    // Show comment field
+    // Show comment field (visible when the metadata line is expanded)
     if (editCommentRowEl) editCommentRowEl.classList.remove('hidden');
+    updateMetadataSummary();
+    setMetadataExpanded(false);
 
     // Update submit button text
     if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit Correction';
@@ -113,8 +197,10 @@ export function enterEditMode(song, options = {}) {
         }));
     }
 
-    // Trigger preview update
-    updateEditorPreview();
+    // Refresh key detection / toolbar and re-render the preview with a
+    // clean undo history for the new editing session
+    updateEditorChrome();
+    if (preview) preview.reset();
 }
 
 /**
@@ -130,332 +216,47 @@ export function exitEditMode() {
 }
 
 /**
- * Check if a line is a chord line
+ * Fully reset the editor panel to a fresh new-song state: clear metadata
+ * fields and content, drop any edit-session state, and reload the visual
+ * editor with empty content (which also clears its undo/redo stacks).
  */
-function editorIsChordLine(line) {
-    if (!line.trim()) return false;
-    const words = line.trim().split(/\s+/);
-    if (words.length === 0) return false;
-    const chordPattern = /^[A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?$/;
-    const chordCount = words.filter(w => chordPattern.test(w)).length;
-    return chordCount / words.length > 0.5;
+export function resetEditorForNewSong() {
+    setEditMode(false);
+    setEditingSongId(null);
+    lastSessionWasEdit = false;
+    editorKeyPinned = false;
+    editorDetectedKey = null;
+
+    if (editorTitleEl) editorTitleEl.value = '';
+    if (editorArtistEl) editorArtistEl.value = '';
+    if (editorWriterEl) editorWriterEl.value = '';
+    if (editorContentEl) editorContentEl.value = '';
+    if (editorCommentEl) editorCommentEl.value = '';
+    if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
+    if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
+    if (editorStatusEl) {
+        editorStatusEl.textContent = '';
+        editorStatusEl.className = 'save-status';
+    }
+    updateEditorKeySelect(null);
+
+    updateMetadataSummary();
+    setMetadataExpanded(false);
+
+    updateEditorChrome();
+    if (preview) preview.reset();
 }
 
 /**
- * Check if a line is a section marker
+ * Called when navigating to the Add Song view. If the previous editor
+ * session was an edit of an existing song, reset to a fresh new-song editor
+ * so stale content doesn't leak in. An unsaved new-song draft is preserved
+ * (returning to your in-progress song is a feature, not a leak).
  */
-function editorIsSectionMarker(line) {
-    return /^\[.+\]$/.test(line.trim());
-}
-
-/**
- * Check if a line is an instrumental line
- */
-function editorIsInstrumentalLine(line) {
-    return /^[—\-]?[A-G][#b]?---/.test(line.trim());
-}
-
-/**
- * Extract chords with their positions from a chord line
- */
-function editorExtractChordsWithPositions(chordLine) {
-    const chords = [];
-    const pattern = /([A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?)/g;
-    let match;
-    while ((match = pattern.exec(chordLine)) !== null) {
-        chords.push({ chord: match[1], position: match.index });
+export function prepareAddSongView() {
+    if (editMode || editingSongId || lastSessionWasEdit) {
+        resetEditorForNewSong();
     }
-    return chords;
-}
-
-/**
- * Align chords to lyrics based on position
- */
-function editorAlignChordsToLyrics(chordLine, lyricLine, chordPositions) {
-    if (!chordPositions.length) return lyricLine;
-    const sorted = [...chordPositions].sort((a, b) => b.position - a.position);
-    let result = lyricLine;
-    for (const { chord, position } of sorted) {
-        let lyricPos = Math.min(position, result.length);
-        result = result.slice(0, lyricPos) + `[${chord}]` + result.slice(lyricPos);
-    }
-    return result;
-}
-
-/**
- * Convert chord sheet format to ChordPro
- */
-export function editorConvertToChordPro(text) {
-    const lines = text.split('\n');
-    const result = [];
-    let i = 0;
-
-    while (i < lines.length) {
-        const line = lines[i];
-        const trimmed = line.trim();
-
-        if (!trimmed) {
-            result.push('');
-            i++;
-            continue;
-        }
-
-        if (editorIsSectionMarker(trimmed)) {
-            const sectionName = trimmed.slice(1, -1).trim();
-            const lowerName = sectionName.toLowerCase();
-            if (lowerName.includes('chorus')) {
-                result.push('{soc}');
-            } else if (lowerName.includes('verse')) {
-                result.push(`{sov: ${sectionName}}`);
-            } else if (lowerName.includes('instrumental') || lowerName.includes('break')) {
-                result.push(`{comment: ${sectionName}}`);
-            } else if (lowerName.includes('bridge')) {
-                result.push('{sob}');
-            } else {
-                result.push(`{comment: ${sectionName}}`);
-            }
-            i++;
-            continue;
-        }
-
-        if (editorIsInstrumentalLine(trimmed)) {
-            result.push(`{comment: ${trimmed}}`);
-            i++;
-            continue;
-        }
-
-        if (editorIsChordLine(line)) {
-            const chordPositions = editorExtractChordsWithPositions(line);
-            if (i + 1 < lines.length) {
-                const nextLine = lines[i + 1];
-                if (!nextLine.trim() || editorIsChordLine(nextLine) || editorIsSectionMarker(nextLine.trim())) {
-                    const chords = chordPositions.map(c => c.chord).join(' ');
-                    result.push(`{comment: ${chords}}`);
-                    i++;
-                    continue;
-                }
-                const chordproLine = editorAlignChordsToLyrics(line, nextLine, chordPositions);
-                result.push(chordproLine);
-                i += 2;
-                continue;
-            } else {
-                const chords = chordPositions.map(c => c.chord).join(' ');
-                result.push(`{comment: ${chords}}`);
-                i++;
-                continue;
-            }
-        }
-
-        result.push(line);
-        i++;
-    }
-
-    return result.join('\n');
-}
-
-/**
- * Clean ChordU paste format
- * ChordU pastes have two song sections: a short preview and a full version with _ timing markers.
- * We want the full version, which comes after the "Traditional" display mode selector.
- */
-export function cleanChordUPaste(text) {
-    // Detect ChordU paste
-    const isChordU = text.includes('ChordU') ||
-                     text.includes('Find chords for tracks u love');
-
-    if (!isChordU) {
-        return { text, title: null, artist: null, cleaned: false };
-    }
-
-    const lines = text.split('\n');
-    let title = null;
-    let artist = null;
-
-    // Extract title and artist - handle both formats:
-    // "Chords for Artist "Title"" (with artist and quoted title)
-    // "Chords for Title" (just title, no quotes)
-    for (let i = 0; i < Math.min(lines.length, 20); i++) {
-        const line = lines[i];
-        // Try format with artist and quoted title first
-        const matchWithArtist = line.match(/Chords for (.+?) "(.+?)"/);
-        if (matchWithArtist) {
-            artist = matchWithArtist[1].trim();
-            title = matchWithArtist[2].trim();
-            break;
-        }
-        // Try format with just title (no quotes)
-        const matchTitleOnly = line.match(/^Chords for ([^"]+)$/);
-        if (matchTitleOnly) {
-            title = matchTitleOnly[1].trim();
-            break;
-        }
-    }
-
-    // Find full song section - starts after "Traditional" display mode line
-    let fullSongStart = -1;
-    for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (line === 'Traditional') {
-            fullSongStart = i + 1;
-            break;
-        }
-    }
-
-    // If we can't find "Traditional", fall back to looking for content after display controls
-    if (fullSongStart === -1) {
-        for (let i = 0; i < lines.length; i++) {
-            const line = lines[i].trim();
-            if (line === 'Hide lyrics' || line === 'Blocks') {
-                fullSongStart = i + 1;
-                break;
-            }
-        }
-    }
-
-    if (fullSongStart === -1) {
-        return { text, title, artist, cleaned: false };
-    }
-
-    // Find full song end - before footer
-    let fullSongEnd = lines.length;
-    for (let i = fullSongStart; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (line.startsWith('About ChordU') ||
-            line.startsWith('You may also like')) {
-            fullSongEnd = i;
-            break;
-        }
-    }
-
-    // Extract and clean song lines
-    const songLines = lines.slice(fullSongStart, fullSongEnd);
-    const cleanedLines = songLines
-        .map(line => {
-            // Remove _ timing placeholders, normalize whitespace
-            return line.replace(/\s*_\s*/g, ' ').replace(/\s+/g, ' ').trim();
-        })
-        .filter(line => {
-            // Remove empty lines
-            if (!line.trim()) return false;
-            // Remove lines that are just a single chord name (chord list remnants)
-            if (line.match(/^[A-G][#b]?(?:m|maj|min|dim|aug|sus|add|7|9|11|13)*$/)) return false;
-            return true;
-        });
-
-    return {
-        text: cleanedLines.join('\n'),
-        title,
-        artist,
-        cleaned: true
-    };
-}
-
-/**
- * Clean Ultimate Guitar paste format
- */
-export function cleanUltimateGuitarPaste(text) {
-    const isUG = text.includes('ultimate-guitar') ||
-                 text.includes('Ultimate-Guitar') ||
-                 (text.includes('Chords by') && text.includes('views') && text.includes('saves')) ||
-                 (text.includes('Tuning:') && text.includes('Key:') && text.includes('Capo:'));
-
-    if (!isUG) {
-        return { text, title: null, artist: null, cleaned: false };
-    }
-
-    const lines = text.split('\n');
-    let title = null;
-    let artist = null;
-    let songStartIndex = -1;
-    let songEndIndex = lines.length;
-
-    // Find title and artist
-    for (let i = 0; i < Math.min(lines.length, 30); i++) {
-        const line = lines[i];
-        const match = line.match(/^(.+?)\s+(?:Chords|Tab|Tabs)\s+by\s+(.+)$/i);
-        if (match) {
-            title = match[1].trim();
-            artist = match[2].trim();
-            break;
-        }
-    }
-
-    // Find song content start
-    for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (/^\[(Verse|Chorus|Intro|Bridge|Outro|Instrumental|Pre-Chorus|Hook|Interlude)/i.test(line)) {
-            songStartIndex = i;
-            break;
-        }
-        if (editorIsChordLine(line) && i + 1 < lines.length && lines[i + 1].trim() && !editorIsChordLine(lines[i + 1])) {
-            songStartIndex = i;
-            break;
-        }
-    }
-
-    // Find song content end
-    for (let i = songStartIndex; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (line.startsWith('Last update:') ||
-            line === 'Rating' ||
-            line === 'Welcome Offer' ||
-            line.startsWith('© ') ||
-            line === 'Chords' ||
-            (line === 'X' && i > songStartIndex + 10) ||
-            line.includes('Please, rate this tab') ||
-            line.match(/^\d+\.\d+$/) ||
-            line.match(/^\d+ rates$/) ||
-            /^\*?\s*Alternates?\s*:?\s*$/i.test(line)) {
-            songEndIndex = i;
-            break;
-        }
-    }
-
-    if (songStartIndex === -1) {
-        return { text, title, artist, cleaned: false };
-    }
-
-    const songLines = lines.slice(songStartIndex, songEndIndex);
-    const cleanedLines = songLines
-        .filter(line => {
-            const trimmed = line.trim();
-            if (trimmed === 'X') return false;
-            if (trimmed.match(/^\d+\.\d+$/)) return false;
-            if (trimmed.match(/^\(\d+,?\d*\)$/)) return false;
-            if (trimmed === 'Chords' || trimmed === 'Guitar' || trimmed === 'Ukulele' || trimmed === 'Piano') return false;
-            return true;
-        });
-
-    return {
-        text: cleanedLines.join('\n'),
-        title,
-        artist,
-        cleaned: true
-    };
-}
-
-/**
- * Detect and convert chord sheet format
- */
-export function editorDetectAndConvert(text) {
-    const lines = text.split('\n');
-    let chordLineCount = 0;
-    let consecutivePairs = 0;
-
-    for (let i = 0; i < lines.length - 1; i++) {
-        if (editorIsChordLine(lines[i]) && !editorIsChordLine(lines[i + 1]) && lines[i + 1].trim()) {
-            consecutivePairs++;
-        }
-        if (editorIsChordLine(lines[i])) {
-            chordLineCount++;
-        }
-    }
-
-    if (consecutivePairs >= 2 || chordLineCount >= 3) {
-        return editorConvertToChordPro(text);
-    }
-
-    return text;
 }
 
 /**
@@ -465,100 +266,22 @@ export function editorDetectAndConvert(text) {
 export function editorTransposeContent(content, semitones) {
     if (semitones === 0) return content;
 
-    // Regex to match chords in [brackets]
-    const bracketChordRegex = /\[([A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?)\]/g;
+    // Match ANY bracketed token and let isValidChord decide what to move —
+    // a fixed quality list here would skip chords the palette and typed
+    // entry happily insert (sus4, 6, m7b5, ...), leaving them a semitone
+    // out of step with the rest of the song.
+    const bracketTokenRegex = /\[([^\]\n]+)\]/g;
 
-    // Transpose all bracketed chords
-    return content.replace(bracketChordRegex, (match, chord) => {
-        const transposed = transposeChord(chord, semitones);
-        return `[${transposed}]`;
-    });
-}
+    let result = content.replace(bracketTokenRegex, (match, chord) =>
+        isValidChord(chord) ? `[${transposeChord(chord, semitones)}]` : match);
 
-/**
- * Parse editor content into sections
- */
-function editorParseContent(content) {
-    const lines = content.split('\n');
-    const sections = [];
-    let currentSection = { label: 'Verse 1', lines: [] };
-    let verseCount = 1;
+    // Keep {key: X} / {meta: key X} directives in step with the chords so
+    // downstream consumers (e.g. the visual editor's palette) see the new key
+    const keyDirectiveRegex = /\{(key:\s*|meta:\s*key\s+)([A-G][#b]?(?:m|min)?)\s*\}/gi;
+    result = result.replace(keyDirectiveRegex, (match, prefix, key) =>
+        `{${prefix}${transposeChord(key, semitones)}}`);
 
-    for (const line of lines) {
-        if (line.match(/^\{(sov|start_of_verse)/i)) {
-            if (currentSection.lines.length > 0) sections.push(currentSection);
-            const labelMatch = line.match(/:\s*(.+?)\s*\}/);
-            currentSection = { label: labelMatch ? labelMatch[1] : `Verse ${++verseCount}`, lines: [] };
-            continue;
-        }
-        if (line.match(/^\{(soc|start_of_chorus)/i)) {
-            if (currentSection.lines.length > 0) sections.push(currentSection);
-            currentSection = { label: 'Chorus', type: 'chorus', lines: [] };
-            continue;
-        }
-        if (line.match(/^\{(eov|eoc|end_of)/i)) {
-            if (currentSection.lines.length > 0) sections.push(currentSection);
-            currentSection = { label: `Verse ${++verseCount}`, lines: [] };
-            continue;
-        }
-        if (line.startsWith('{')) continue;
-
-        if (!line.trim()) {
-            if (currentSection.lines.length > 0) {
-                sections.push(currentSection);
-                currentSection = { label: `Verse ${++verseCount}`, lines: [] };
-            }
-            continue;
-        }
-
-        if (line.trim()) {
-            currentSection.lines.push(line);
-        }
-    }
-
-    if (currentSection.lines.length > 0) sections.push(currentSection);
-    return sections;
-}
-
-/**
- * Render a line in the editor preview
- */
-function editorRenderLine(line) {
-    const chords = [];
-    let lyrics = '';
-    const regex = /\[([^\]]+)\]/g;
-    let match;
-    let lastIndex = 0;
-
-    while ((match = regex.exec(line)) !== null) {
-        lyrics += line.slice(lastIndex, match.index);
-        chords.push({ chord: match[1], position: lyrics.length });
-        lastIndex = regex.lastIndex;
-    }
-    lyrics += line.slice(lastIndex);
-
-    if (chords.length === 0) {
-        return `<div class="song-line"><div class="lyrics-line">${escapeHtml(lyrics)}</div></div>`;
-    }
-
-    let chordLine = '';
-    let lastPos = 0;
-
-    for (const { chord, position } of chords) {
-        const displayChord = editorNashvilleMode && editorDetectedKey
-            ? toNashville(chord, editorDetectedKey)
-            : chord;
-        const spaces = Math.max(0, position - lastPos);
-        chordLine += ' '.repeat(spaces) + displayChord;
-        lastPos = position + displayChord.length;
-    }
-
-    return `
-        <div class="song-line">
-            <div class="chord-line">${escapeHtml(chordLine)}</div>
-            <div class="lyrics-line">${escapeHtml(lyrics)}</div>
-        </div>
-    `;
+    return result;
 }
 
 /**
@@ -592,20 +315,16 @@ function updateEditorKeySelect(detectedKey, detectedMode) {
 }
 
 /**
- * Update editor preview
+ * Refresh the editor chrome that derives from the textarea content:
+ * detected key + key select, and the progressive toolbar (transpose/key
+ * appear once the document has a chord). Does NOT touch the preview —
+ * preview-originated edits call this via onChange after they have already
+ * rendered themselves.
  */
-export function updateEditorPreview() {
-    if (!editorContentEl || !editorPreviewContentEl) return;
+function updateEditorChrome() {
+    if (!editorContentEl) return;
 
-    const title = editorTitleEl?.value.trim() || '';
-    const artist = editorArtistEl?.value.trim() || '';
     const content = editorContentEl.value;
-
-    if (!content.trim()) {
-        editorPreviewContentEl.innerHTML = '<p class="preview-placeholder">Enter a song to see preview...</p>';
-        return;
-    }
-
     const chords = extractChords(content);
     const detected = detectKey(chords);
 
@@ -615,71 +334,48 @@ export function updateEditorPreview() {
         updateEditorKeySelect(detected.key, detected.mode);
     }
 
-    const key = editorDetectedKey;
-
-    const sections = editorParseContent(content);
-
-    let html = '<div class="song-header">';
-    if (title) html += `<h2 class="song-title">${escapeHtml(title)}</h2>`;
-    const metaParts = [];
-    if (artist) metaParts.push(artist);
-    if (key) metaParts.push(`Key: ${key}`);
-    if (metaParts.length) html += `<div class="song-meta">${escapeHtml(metaParts.join(' | '))}</div>`;
-    html += '</div>';
-
-    for (const section of sections) {
-        const indentClass = section.type === 'chorus' ? 'section-indent' : '';
-        html += `<div class="song-section ${indentClass}">`;
-        html += `<div class="section-label">${escapeHtml(section.label)}</div>`;
-        html += '<div class="section-content">';
-        for (const line of section.lines) {
-            html += editorRenderLine(line);
-        }
-        html += '</div></div>';
+    // progressive toolbar: transpose/key stay out of the way until the
+    // document actually has a chord (space is reserved — no layout jump)
+    if (editorTransposeGroupEl) {
+        editorTransposeGroupEl.classList.toggle('ve-gone', chords.length === 0);
     }
-
-    editorPreviewContentEl.innerHTML = html;
 }
 
 /**
- * Generate ChordPro output
+ * Update the editor chrome and re-render the interactive preview from the
+ * textarea. Pass { immediate: false } for typing (debounced re-render that
+ * preserves the preview scroll); everything else re-renders immediately.
+ */
+export function updateEditorPreview(opts = {}) {
+    const { immediate = true } = opts;
+    updateEditorChrome();
+    if (!preview) return;
+    if (immediate) preview.refresh();
+    else preview.scheduleRefresh();
+}
+
+/**
+ * Generate ChordPro output for submit/copy/download. The textarea IS the
+ * document — bridges, intros, {key:}/{tempo:}, ABC blocks and unknown
+ * directives all round-trip through the model untouched (the same
+ * parse/serialize the interactive preview uses). The metadata form fields
+ * override or fill the corresponding directives; the detected key is added
+ * only when the document doesn't already declare one.
  */
 export function editorGenerateChordPro() {
     const title = editorTitleEl?.value.trim() || '';
     const artist = editorArtistEl?.value.trim() || '';
     const writer = editorWriterEl?.value.trim() || '';
-    const content = editorContentEl?.value.trim() || '';
+    const content = editorContentEl?.value || '';
 
-    let output = '';
-
-    if (title) output += `{meta: title ${title}}\n`;
-    if (artist) output += `{meta: artist ${artist}}\n`;
-    if (writer) output += `{meta: composer ${writer}}\n`;
-    if (editorDetectedKey) output += `{key: ${editorDetectedKey}}\n`;
-
-    if (output) output += '\n';
-
-    const sections = editorParseContent(content);
-
-    for (const section of sections) {
-        if (section.type === 'chorus') {
-            output += '{start_of_chorus}\n';
-        } else {
-            output += `{start_of_verse: ${section.label}}\n`;
-        }
-
-        for (const line of section.lines) {
-            output += line + '\n';
-        }
-
-        if (section.type === 'chorus') {
-            output += '{end_of_chorus}\n\n';
-        } else {
-            output += '{end_of_verse}\n\n';
-        }
+    const doc = parseSong(content);
+    if (title) doc.metadata.fields.title = title;
+    if (artist) doc.metadata.fields.artist = artist;
+    if (writer) doc.metadata.fields.composer = writer;
+    if (!doc.metadata.fields.key && editorDetectedKey) {
+        doc.metadata.fields.key = editorDetectedKey;
     }
-
-    return output.trim() + '\n';
+    return serializeSong(doc).replace(/\n+$/, '') + '\n';
 }
 
 /**
@@ -713,6 +409,87 @@ export function closeHints() {
 }
 
 /**
+ * Make-verse/chorus mini-bar. It sits at a FIXED spot (the ChordPro pane
+ * header) rather than floating near the selection: a textarea exposes no
+ * selection coordinates (measuring them needs a mirror-div hack that fights
+ * scrolling and resize), and a bar that pops in above the text would shift
+ * the very lines the user is mid-drag-selecting. The header row already
+ * exists, so showing the buttons there costs no layout at all.
+ */
+function updateSelectionToolbar() {
+    if (!editorSelectionToolbarEl || !editorContentEl) return;
+    const show = document.activeElement === editorContentEl &&
+        editorContentEl.selectionStart !== editorContentEl.selectionEnd;
+    editorSelectionToolbarEl.classList.toggle('hidden', !show);
+}
+
+/**
+ * Wrap the textarea's selected lines in {start_of_X}/{end_of_X} (pure text
+ * transform in visual-editor/wrap-section.js). One document-level undo
+ * step; the preview re-renders immediately.
+ */
+function applyWrapSelection(type) {
+    if (!editorContentEl) return;
+    const res = wrapSelectionAsSection(editorContentEl.value,
+        editorContentEl.selectionStart, editorContentEl.selectionEnd, type);
+    if (!res) return;
+    if (preview) preview.pushUndoSnapshot(editorContentEl.value);
+    editorContentEl.value = res.text;
+    editorContentEl.focus();
+    editorContentEl.setSelectionRange(res.selStart, res.selEnd);
+    updateEditorPreview();
+    updateSelectionToolbar();
+}
+
+function initSelectionToolbar() {
+    editorSelectionToolbarEl = document.getElementById('editor-selection-toolbar');
+    if (!editorSelectionToolbarEl || !editorContentEl) return;
+    editorSelectionToolbarEl.querySelectorAll('[data-wrap]').forEach((btn) => {
+        // keep focus (and the selection) in the textarea through the click
+        btn.addEventListener('pointerdown', (e) => e.preventDefault());
+        btn.addEventListener('mousedown', (e) => e.preventDefault());
+        btn.addEventListener('click', () => applyWrapSelection(btn.dataset.wrap));
+    });
+    // selectionchange covers collapse-from-anywhere; the textarea events
+    // are the belt-and-suspenders for browsers that don't fire it there
+    document.addEventListener('selectionchange', updateSelectionToolbar);
+    editorContentEl.addEventListener('select', updateSelectionToolbar);
+    editorContentEl.addEventListener('keyup', updateSelectionToolbar);
+    editorContentEl.addEventListener('mouseup', updateSelectionToolbar);
+    editorContentEl.addEventListener('blur', () => setTimeout(updateSelectionToolbar, 0));
+}
+
+/**
+ * Mount the interactive preview on the right-hand pane. The textarea is THE
+ * document: the preview renders parseSong(textarea.value), and every
+ * preview-side edit writes serialized ChordPro back into the textarea
+ * (one step on the preview's undo stack). Submit/copy/download flows keep
+ * reading the textarea unchanged.
+ */
+function initInteractivePreview() {
+    if (!editorPreviewContainerEl || !editorContentEl) return;
+    preview = createInteractivePreview({
+        container: editorPreviewContainerEl,
+        textarea: editorContentEl,
+        undoBtn: editorUndoBtnEl,
+        redoBtn: editorRedoBtnEl,
+        // Nashville display mode: chips show numbers, edits stay chords
+        displayChord: (chord) => (editorNashvilleMode && editorDetectedKey)
+            ? toNashville(chord, editorDetectedKey)
+            : chord,
+        onChange() {
+            // a preview edit wrote the textarea (it has already re-rendered
+            // itself): refresh only the derived chrome, never the preview —
+            // this one-way notification is what prevents update loops
+            updateEditorChrome();
+        },
+        onUploadRequest() { if (onUploadRequestCb) onUploadRequestCb(); },
+        onSongRequest() { if (onSongRequestCb) onSongRequestCb(); }
+    });
+    preview.refresh();
+}
+
+/**
  * Initialize editor module with DOM elements
  */
 export function initEditor(options) {
@@ -722,7 +499,6 @@ export function initEditor(options) {
         editorArtist,
         editorWriter,
         editorContent,
-        editorPreviewContent,
         editorCopyBtn,
         editorSaveBtn,
         editorSubmitBtn,
@@ -739,6 +515,14 @@ export function initEditor(options) {
         editorTransposeUp,
         editorTransposeDown,
         editorKeySelect,
+        metadataSummary,
+        metadataFields,
+        onUploadRequest,
+        onSongRequest,
+        editorPreviewContainer,
+        editorUndoBtn,
+        editorRedoBtn,
+        editorTransposeGroup,
         navSearch,
         navAddSong,
         navFavorites,
@@ -751,7 +535,6 @@ export function initEditor(options) {
     editorArtistEl = editorArtist;
     editorWriterEl = editorWriter;
     editorContentEl = editorContent;
-    editorPreviewContentEl = editorPreviewContent;
     editorCopyBtnEl = editorCopyBtn;
     editorSaveBtnEl = editorSaveBtn;
     editorSubmitBtnEl = editorSubmitBtn;
@@ -768,11 +551,34 @@ export function initEditor(options) {
     editorTransposeUpEl = editorTransposeUp;
     editorTransposeDownEl = editorTransposeDown;
     editorKeySelectEl = editorKeySelect;
+    metadataSummaryEl = metadataSummary;
+    metadataFieldsEl = metadataFields;
+    onUploadRequestCb = onUploadRequest;
+    onSongRequestCb = onSongRequest;
     navSearchEl = navSearch;
     navAddSongEl = navAddSong;
     navFavoritesEl = navFavorites;
     resultsDivEl = resultsDiv;
     songViewEl = songView;
+    editorPreviewContainerEl = editorPreviewContainer;
+    editorUndoBtnEl = editorUndoBtn;
+    editorRedoBtnEl = editorRedoBtn;
+    editorTransposeGroupEl = editorTransposeGroup;
+
+    // Compact metadata line: tap to expand/collapse the full fields
+    if (metadataSummaryEl) {
+        metadataSummaryEl.addEventListener('click', () => {
+            const expand = !metadataExpanded();
+            setMetadataExpanded(expand);
+            if (expand) editorTitleEl?.focus();
+        });
+        updateMetadataSummary();
+    }
+
+    // Two-pane editor: interactive preview over the raw textarea
+    initInteractivePreview();
+    initSelectionToolbar();
+    updateEditorChrome();
 
     // Edit song button
     // window.__editInterceptor is set by work-view.js for placeholders
@@ -814,6 +620,7 @@ export function initEditor(options) {
                     if (chordUResult.artist && editorArtistEl && !editorArtistEl.value.trim()) {
                         editorArtistEl.value = chordUResult.artist;
                     }
+                    updateMetadataSummary();
                 }
 
                 // Try Ultimate Guitar
@@ -830,12 +637,16 @@ export function initEditor(options) {
                         if (ugResult.artist && editorArtistEl && !editorArtistEl.value.trim()) {
                             editorArtistEl.value = ugResult.artist;
                         }
+                        updateMetadataSummary();
                     }
                 }
 
                 // Convert chord-above-lyrics format if needed
                 const converted = editorDetectAndConvert(text);
                 if (converted !== text || wasImported) {
+                    // one undo step, like transpose/key-select/wrap-section:
+                    // a wrong auto-conversion must be recoverable
+                    if (preview) preview.pushUndoSnapshot(editorContentEl.value);
                     editorContentEl.value = converted;
                     updateEditorPreview();
                     if (editorStatusEl) {
@@ -847,11 +658,12 @@ export function initEditor(options) {
             }, 0);
         });
 
-        editorContentEl.addEventListener('input', updateEditorPreview);
+        // typing re-renders the preview debounced, preserving its scroll
+        editorContentEl.addEventListener('input', () => updateEditorPreview({ immediate: false }));
     }
 
-    if (editorTitleEl) editorTitleEl.addEventListener('input', updateEditorPreview);
-    if (editorArtistEl) editorArtistEl.addEventListener('input', updateEditorPreview);
+    if (editorTitleEl) editorTitleEl.addEventListener('input', updateMetadataSummary);
+    if (editorArtistEl) editorArtistEl.addEventListener('input', updateMetadataSummary);
 
     if (editorNashvilleEl) {
         editorNashvilleEl.addEventListener('change', (e) => {
@@ -867,6 +679,7 @@ export function initEditor(options) {
             if (selected && editorDetectedKey && selected !== editorDetectedKey && editorContentEl) {
                 const semitones = getSemitonesBetweenKeys(editorDetectedKey, selected);
                 if (semitones !== 0) {
+                    if (preview) preview.pushUndoSnapshot(editorContentEl.value);
                     editorContentEl.value = editorTransposeContent(editorContentEl.value, semitones);
                 }
             }
@@ -888,6 +701,7 @@ export function initEditor(options) {
         editorTransposeUpEl.addEventListener('click', () => {
             if (editorContentEl) {
                 editorKeyPinned = false;
+                if (preview) preview.pushUndoSnapshot(editorContentEl.value);
                 editorContentEl.value = editorTransposeContent(editorContentEl.value, 1);
                 updateEditorPreview();
             }
@@ -898,6 +712,7 @@ export function initEditor(options) {
         editorTransposeDownEl.addEventListener('click', () => {
             if (editorContentEl) {
                 editorKeyPinned = false;
+                if (preview) preview.pushUndoSnapshot(editorContentEl.value);
                 editorContentEl.value = editorTransposeContent(editorContentEl.value, -1);
                 updateEditorPreview();
             }
@@ -934,10 +749,7 @@ export function initEditor(options) {
         editorSaveBtnEl.addEventListener('click', () => {
             const title = editorTitleEl?.value.trim();
             if (!title) {
-                if (editorStatusEl) {
-                    editorStatusEl.textContent = 'Title required';
-                    editorStatusEl.className = 'save-status error';
-                }
+                promptForField(editorTitleEl, 'Almost there \u2014 give your song a title first.');
                 return;
             }
 
@@ -970,10 +782,7 @@ export function initEditor(options) {
             const writer = editorWriterEl?.value.trim();
 
             if (!title) {
-                if (editorStatusEl) {
-                    editorStatusEl.textContent = 'Title required';
-                    editorStatusEl.className = 'save-status error';
-                }
+                promptForField(editorTitleEl, 'Almost there \u2014 give your song a title first.');
                 return;
             }
 
@@ -1148,10 +957,7 @@ async function submitToGitHubIssue(data) {
     if (editMode && editingSongId) {
         const comment = editorCommentEl?.value.trim();
         if (!comment) {
-            if (editorStatusEl) {
-                editorStatusEl.textContent = 'Please describe your changes';
-                editorStatusEl.className = 'save-status error';
-            }
+            promptForField(editorCommentEl, 'Please describe your changes');
             return;
         }
 
@@ -1235,6 +1041,8 @@ async function submitToGitHubIssue(data) {
             if (editorTitleEl) editorTitleEl.value = '';
             if (editorArtistEl) editorArtistEl.value = '';
             if (editorContentEl) editorContentEl.value = '';
+            updateMetadataSummary();
+            setMetadataExpanded(false);
             updateEditorPreview();
         }
 

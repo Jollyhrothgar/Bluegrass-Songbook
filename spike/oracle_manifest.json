@@ -1,0 +1,2242 @@
+[
+ {
+  "pid": "10277_tef",
+  "otf": "sources/banjo-hangout/parsed/10277_tef.otf.json",
+  "xml": "spike/oracle/batch/10277.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 301,
+     "oracle": 301,
+     "exact": 301,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "10658_tef",
+  "otf": "sources/banjo-hangout/parsed/10658_tef.otf.json",
+  "xml": "spike/oracle/batch/10658.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 256,
+     "oracle": 256,
+     "exact": 256,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "10659_tef",
+  "otf": "sources/banjo-hangout/parsed/10659_tef.otf.json",
+  "xml": "spike/oracle/batch/10659.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 256,
+     "oracle": 256,
+     "exact": 256,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "10776_tef",
+  "otf": "sources/banjo-hangout/parsed/10776_tef.otf.json",
+  "xml": "spike/oracle/batch/10776.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 111,
+     "oracle": 111,
+     "exact": 111,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11047_tef",
+  "otf": "sources/banjo-hangout/parsed/11047_tef.otf.json",
+  "xml": "spike/oracle/batch/ragtime_annie-1664.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 216,
+     "oracle": 216,
+     "exact": 216,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11736_tef",
+  "otf": "sources/banjo-hangout/parsed/11736_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-angeline-the-ba-11736-44510492009.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 162,
+     "oracle": 162,
+     "exact": 162,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "12121_tef",
+  "otf": "sources/banjo-hangout/parsed/12121_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-banjo-in-the-ho-12121-4516112422011.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "tenor-banjo": {
+     "otf": 92,
+     "oracle": 92,
+     "exact": 92,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "12123_tef",
+  "otf": "sources/banjo-hangout/parsed/12123_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-shuckin-the-cor-12123-2223135112009.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "tenor-banjo": {
+     "otf": 101,
+     "oracle": 101,
+     "exact": 101,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "12124_tef",
+  "otf": "sources/banjo-hangout/parsed/12124_tef.otf.json",
+  "xml": "spike/oracle/batch/12124.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "tenor-banjo": {
+     "otf": 127,
+     "oracle": 127,
+     "exact": 127,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "12127_tef",
+  "otf": "sources/banjo-hangout/parsed/12127_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-lonesome-road-b-12127-449122422011.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "tenor-banjo": {
+     "otf": 105,
+     "oracle": 105,
+     "exact": 105,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "13654_tef",
+  "otf": "sources/banjo-hangout/parsed/13654_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-ducks-on-millpo-13654-445142772010.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "piano": {
+     "otf": 104,
+     "oracle": 104,
+     "exact": 104,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "14406_tef",
+  "otf": "sources/banjo-hangout/parsed/14406_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-seneca-square-d-14406-5235521122010.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 105,
+     "oracle": 105,
+     "exact": 105,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "14683_tef",
+  "otf": "sources/banjo-hangout/parsed/14683_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-hot-corn-cold-c-14683-516122422011.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "tenor-banjo": {
+     "otf": 79,
+     "oracle": 79,
+     "exact": 79,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "14690_tef",
+  "otf": "sources/banjo-hangout/parsed/14690_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-red-haired-boy-14690-744122422011.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "tenor-banjo": {
+     "otf": 162,
+     "oracle": 162,
+     "exact": 162,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "15032_tef",
+  "otf": "sources/banjo-hangout/parsed/15032_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-done-gone-15032-1782342011.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 235,
+     "oracle": 235,
+     "exact": 235,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "15313_tef",
+  "otf": "sources/banjo-hangout/parsed/15313_tef.otf.json",
+  "xml": "spike/oracle/batch/15313.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 613,
+     "oracle": 613,
+     "exact": 613,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "15317_tef",
+  "otf": "sources/banjo-hangout/parsed/15317_tef.otf.json",
+  "xml": "spike/oracle/batch/15317.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 150,
+     "oracle": 150,
+     "exact": 150,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "15318_tef",
+  "otf": "sources/banjo-hangout/parsed/15318_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-harvest-home-15318-105722462011.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 141,
+     "oracle": 141,
+     "exact": 141,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "16117_tef",
+  "otf": "sources/banjo-hangout/parsed/16117_tef.otf.json",
+  "xml": "spike/oracle/batch/16117.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 104,
+     "oracle": 104,
+     "exact": 104,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "16825_tef",
+  "otf": "sources/banjo-hangout/parsed/16825_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-liberty-16825-4752172122012.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "guitar": {
+     "otf": 132,
+     "oracle": 132,
+     "exact": 132,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "17003_tef",
+  "otf": "sources/banjo-hangout/parsed/17003_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-shooting-creek-17003-56231732012.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 71,
+     "oracle": 71,
+     "exact": 71,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "17674_tef",
+  "otf": "sources/banjo-hangout/parsed/17674_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-ragtime-annie-17674-44661682012.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 295,
+     "oracle": 295,
+     "exact": 295,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "17879_tef",
+  "otf": "sources/banjo-hangout/parsed/17879_tef.otf.json",
+  "xml": "spike/oracle/batch/17879.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 151,
+     "oracle": 151,
+     "exact": 151,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "18136_tef",
+  "otf": "sources/banjo-hangout/parsed/18136_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-the-irish-washe-18136-12141224122012.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 92,
+     "oracle": 92,
+     "exact": 92,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "18926_tef",
+  "otf": "sources/banjo-hangout/parsed/18926_tef.otf.json",
+  "xml": "spike/oracle/batch/18926.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 192,
+     "oracle": 192,
+     "exact": 192,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "19600_tef",
+  "otf": "sources/banjo-hangout/parsed/19600_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-paddy-on-the-tu-19600-45331523102013.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 137,
+     "oracle": 137,
+     "exact": 137,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "19852_tef",
+  "otf": "sources/banjo-hangout/parsed/19852_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-little-rabbit-19852-294671122013.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 125,
+     "oracle": 125,
+     "exact": 125,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "20545_tef",
+  "otf": "sources/banjo-hangout/parsed/20545_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-dear-old-dixie-20545-112514692016.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 220,
+     "oracle": 220,
+     "exact": 220,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "20556_tef",
+  "otf": "sources/banjo-hangout/parsed/20556_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-arkansas-travel-20556-233610972014.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 382,
+     "oracle": 382,
+     "exact": 382,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "20627_tef",
+  "otf": "sources/banjo-hangout/parsed/20627_tef.otf.json",
+  "xml": "spike/oracle/batch/20627.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 117,
+     "oracle": 117,
+     "exact": 117,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "20911_tef",
+  "otf": "sources/banjo-hangout/parsed/20911_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-marching-jaybir-20911-3841512122014.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 102,
+     "oracle": 102,
+     "exact": 102,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "20923_tef",
+  "otf": "sources/banjo-hangout/parsed/20923_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-salt-creek-20923-42181315122014.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 772,
+     "oracle": 772,
+     "exact": 772,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "20936_tef",
+  "otf": "sources/banjo-hangout/parsed/20936_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-salt-creek-20936-3449718122014.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 779,
+     "oracle": 779,
+     "exact": 779,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "20981_tef",
+  "otf": "sources/banjo-hangout/parsed/20981_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-sally-ann-20981-574521512015.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 294,
+     "oracle": 294,
+     "exact": 294,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "21307_tef",
+  "otf": "sources/banjo-hangout/parsed/21307_tef.otf.json",
+  "xml": "spike/oracle/batch/21307.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 239,
+     "oracle": 239,
+     "exact": 239,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "21678_tef",
+  "otf": "sources/banjo-hangout/parsed/21678_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-waterbound-21678-201131012016.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 194,
+     "oracle": 194,
+     "exact": 194,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "21690_tef",
+  "otf": "sources/banjo-hangout/parsed/21690_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-paddy-on-the-tu-21690-1750131112016.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 114,
+     "oracle": 114,
+     "exact": 114,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "21802_tef",
+  "otf": "sources/banjo-hangout/parsed/21802_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-tennessee-mount-21802-2319132016.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 200,
+     "oracle": 200,
+     "exact": 200,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "21874_tef",
+  "otf": "sources/banjo-hangout/parsed/21874_tef.otf.json",
+  "xml": "spike/oracle/batch/21874.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 135,
+     "oracle": 135,
+     "exact": 135,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "21999_tef",
+  "otf": "sources/banjo-hangout/parsed/21999_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-arkansas-hoosie-21999-940122272016.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 141,
+     "oracle": 141,
+     "exact": 141,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "22228_tef",
+  "otf": "sources/banjo-hangout/parsed/22228_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-waterbound-22228-46511117112016.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 88,
+     "oracle": 88,
+     "exact": 88,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "22290_tef",
+  "otf": "sources/banjo-hangout/parsed/22290_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-scotland-22290-5541129122016.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 110,
+     "oracle": 110,
+     "exact": 110,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "22446_tef",
+  "otf": "sources/banjo-hangout/parsed/22446_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-chinese-breakdo-22446-5828232842017.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 977,
+     "oracle": 977,
+     "exact": 977,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "22456_tef",
+  "otf": "sources/banjo-hangout/parsed/22456_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-down-yonder-22456-66131632017.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 308,
+     "oracle": 308,
+     "exact": 308,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "23345_tef",
+  "otf": "sources/banjo-hangout/parsed/23345_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-lonesome-fiddle-23345-147202692018.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 175,
+     "oracle": 175,
+     "exact": 175,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "23374_tef",
+  "otf": "sources/banjo-hangout/parsed/23374_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-jerusalem-ridge-23374-20231218102018.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 255,
+     "oracle": 255,
+     "exact": 255,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "23398_tef",
+  "otf": "sources/banjo-hangout/parsed/23398_tef.otf.json",
+  "xml": "spike/oracle/batch/23398.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 101,
+     "oracle": 101,
+     "exact": 101,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "23404_tef",
+  "otf": "sources/banjo-hangout/parsed/23404_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cherokee-shuffl-23404-3332310112018.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 142,
+     "oracle": 142,
+     "exact": 142,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "23408_tef",
+  "otf": "sources/banjo-hangout/parsed/23408_tef.otf.json",
+  "xml": "spike/oracle/batch/23408.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 384,
+     "oracle": 384,
+     "exact": 384,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "23409_tef",
+  "otf": "sources/banjo-hangout/parsed/23409_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-dixie-hoedown-23409-3149310112018.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 139,
+     "oracle": 139,
+     "exact": 139,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "23439_tef",
+  "otf": "sources/banjo-hangout/parsed/23439_tef.otf.json",
+  "xml": "spike/oracle/batch/23439.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 142,
+     "oracle": 142,
+     "exact": 142,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "23602_tef",
+  "otf": "sources/banjo-hangout/parsed/23602_tef.otf.json",
+  "xml": "spike/oracle/batch/23602.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 187,
+     "oracle": 187,
+     "exact": 187,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "23778_tef",
+  "otf": "sources/banjo-hangout/parsed/23778_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cherokee-shuffl-23778-414171862019.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 284,
+     "oracle": 284,
+     "exact": 284,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "23848_tef",
+  "otf": "sources/banjo-hangout/parsed/23848_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-whiskey-before--23848-3747101382019.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 242,
+     "oracle": 242,
+     "exact": 242,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "25010_tef",
+  "otf": "sources/banjo-hangout/parsed/25010_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-gold-rush-25010-550201782021.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 298,
+     "oracle": 298,
+     "exact": 298,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "27154_tef",
+  "otf": "sources/banjo-hangout/parsed/27154_tef.otf.json",
+  "xml": "spike/oracle/batch/27154.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 222,
+     "oracle": 222,
+     "exact": 222,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "27165_tef",
+  "otf": "sources/banjo-hangout/parsed/27165_tef.otf.json",
+  "xml": "spike/oracle/batch/27165.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 126,
+     "oracle": 126,
+     "exact": 126,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "27168_tef",
+  "otf": "sources/banjo-hangout/parsed/27168_tef.otf.json",
+  "xml": "spike/oracle/batch/27168.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 237,
+     "oracle": 237,
+     "exact": 237,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "27408_tef",
+  "otf": "sources/banjo-hangout/parsed/27408_tef.otf.json",
+  "xml": "spike/oracle/batch/27408.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 119,
+     "oracle": 119,
+     "exact": 119,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "27418_tef",
+  "otf": "sources/banjo-hangout/parsed/27418_tef.otf.json",
+  "xml": "spike/oracle/batch/27418.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 253,
+     "oracle": 253,
+     "exact": 253,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "10770_tef",
+  "otf": "sources/banjo-hangout/parsed/10770_tef.otf.json",
+  "xml": "spike/oracle/batch/leather_britches-1044.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 333,
+     "oracle": 333,
+     "exact": 333,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "track-2": {
+     "otf": 348,
+     "oracle": 348,
+     "exact": 348,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "track-3": {
+     "otf": 95,
+     "oracle": 95,
+     "exact": 95,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "10777_tef",
+  "otf": "sources/banjo-hangout/parsed/10777_tef.otf.json",
+  "xml": "spike/oracle/batch/10777.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 122,
+     "oracle": 122,
+     "exact": 122,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 141,
+     "oracle": 141,
+     "exact": 141,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11245_tef",
+  "otf": "sources/banjo-hangout/parsed/11245_tef.otf.json",
+  "xml": "spike/oracle/batch/11245.xml",
+  "tracks": 4,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 502,
+     "oracle": 502,
+     "exact": 502,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 580,
+     "oracle": 580,
+     "exact": 580,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "mandolin": {
+     "otf": 507,
+     "oracle": 507,
+     "exact": 507,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 127,
+     "oracle": 127,
+     "exact": 127,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11449_tef",
+  "otf": "sources/banjo-hangout/parsed/11449_tef.otf.json",
+  "xml": "spike/oracle/batch/wheel_hoss-2430.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "guitar": {
+     "otf": 457,
+     "oracle": 457,
+     "exact": 457,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 288,
+     "oracle": 288,
+     "exact": 288,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11514_tef",
+  "otf": "sources/banjo-hangout/parsed/11514_tef.otf.json",
+  "xml": "spike/oracle/batch/11514.xml",
+  "tracks": 4,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 261,
+     "oracle": 261,
+     "exact": 261,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 303,
+     "oracle": 303,
+     "exact": 303,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "mandolin": {
+     "otf": 255,
+     "oracle": 255,
+     "exact": 255,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 64,
+     "oracle": 64,
+     "exact": 64,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11557_tef",
+  "otf": "sources/banjo-hangout/parsed/11557_tef.otf.json",
+  "xml": "spike/oracle/batch/11557.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 256,
+     "oracle": 256,
+     "exact": 256,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 0,
+     "oracle": 0,
+     "exact": 0,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "mandolin": {
+     "otf": 0,
+     "oracle": 0,
+     "exact": 0,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11558_tef",
+  "otf": "sources/banjo-hangout/parsed/11558_tef.otf.json",
+  "xml": "spike/oracle/batch/11558.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 239,
+     "oracle": 239,
+     "exact": 239,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 0,
+     "oracle": 0,
+     "exact": 0,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "mandolin": {
+     "otf": 0,
+     "oracle": 0,
+     "exact": 0,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11722_tef",
+  "otf": "sources/banjo-hangout/parsed/11722_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-sally-ann-11722-54143082009.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 123,
+     "oracle": 123,
+     "exact": 123,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "11723_tef",
+  "otf": "sources/banjo-hangout/parsed/11723_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-salt-creek-11723-713143082009.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 115,
+     "oracle": 115,
+     "exact": 115,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 132,
+     "oracle": 132,
+     "exact": 132,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11829_tef",
+  "otf": "sources/banjo-hangout/parsed/11829_tef.otf.json",
+  "xml": "spike/oracle/batch/11829.xml",
+  "tracks": 4,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 139,
+     "oracle": 139,
+     "exact": 139,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 36,
+     "oracle": 36,
+     "exact": 36,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "mandolin": {
+     "otf": 144,
+     "oracle": 144,
+     "exact": 144,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 180,
+     "oracle": 180,
+     "exact": 180,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11830_tef",
+  "otf": "sources/banjo-hangout/parsed/11830_tef.otf.json",
+  "xml": "spike/oracle/batch/11830.xml",
+  "tracks": 4,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 130,
+     "oracle": 130,
+     "exact": 130,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "11831_tef",
+  "otf": "sources/banjo-hangout/parsed/11831_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-angeline-the-ba-11831-52283892009.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 104,
+     "oracle": 104,
+     "exact": 104,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 167,
+     "oracle": 167,
+     "exact": 167,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "12135_tef",
+  "otf": "sources/banjo-hangout/parsed/12135_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-daleys-reel-12135-345886112009.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 184,
+     "oracle": 184,
+     "exact": 184,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 178,
+     "oracle": 178,
+     "exact": 178,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar-2": {
+     "otf": 200,
+     "oracle": 200,
+     "exact": 200,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "12574_tef",
+  "otf": "sources/banjo-hangout/parsed/12574_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-sledd-ridin-12574-23271623122009.xml",
+  "tracks": 4,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 659,
+     "oracle": 659,
+     "exact": 659,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "13248_tef",
+  "otf": "sources/banjo-hangout/parsed/13248_tef.otf.json",
+  "xml": "spike/oracle/batch/13248.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 521,
+     "oracle": 521,
+     "exact": 521,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 535,
+     "oracle": 535,
+     "exact": 535,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "13648_tef",
+  "otf": "sources/banjo-hangout/parsed/13648_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-ashokan-farewel-13648-312342372010.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 137,
+     "oracle": 137,
+     "exact": 137,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 285,
+     "oracle": 285,
+     "exact": 285,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "13788_tef",
+  "otf": "sources/banjo-hangout/parsed/13788_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-marching-throug-13788-495622392010.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 228,
+     "oracle": 228,
+     "exact": 228,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "14613_tef",
+  "otf": "sources/banjo-hangout/parsed/14613_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-down-yonder-14613-3353422011.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 186,
+     "oracle": 186,
+     "exact": 186,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "14699_tef",
+  "otf": "sources/banjo-hangout/parsed/14699_tef.otf.json",
+  "xml": "spike/oracle/batch/14699.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 250,
+     "oracle": 250,
+     "exact": 250,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "14809_tef",
+  "otf": "sources/banjo-hangout/parsed/14809_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-red-haired-boy-14809-25441912102011.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 470,
+     "oracle": 470,
+     "exact": 470,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "17492_tef",
+  "otf": "sources/banjo-hangout/parsed/17492_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-down-yonder-17492-3557123062012.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 188,
+     "oracle": 188,
+     "exact": 188,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 224,
+     "oracle": 224,
+     "exact": 224,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "17713_tef",
+  "otf": "sources/banjo-hangout/parsed/17713_tef.otf.json",
+  "xml": "spike/oracle/batch/17713.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 297,
+     "oracle": 297,
+     "exact": 297,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 288,
+     "oracle": 288,
+     "exact": 288,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "18030_tef",
+  "otf": "sources/banjo-hangout/parsed/18030_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-whiskey-before--18030-24531817112012.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 145,
+     "oracle": 145,
+     "exact": 145,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 144,
+     "oracle": 144,
+     "exact": 144,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 36,
+     "oracle": 36,
+     "exact": 36,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "18779_tef",
+  "otf": "sources/banjo-hangout/parsed/18779_tef.otf.json",
+  "xml": "spike/oracle/batch/18779.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 151,
+     "oracle": 151,
+     "exact": 151,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "18998_tef",
+  "otf": "sources/banjo-hangout/parsed/18998_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-monroes-hornpip-18998-4011132772013.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 263,
+     "oracle": 263,
+     "exact": 263,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "banjo-2": {
+     "otf": 321,
+     "oracle": 321,
+     "exact": 321,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "19500_tef",
+  "otf": "sources/banjo-hangout/parsed/19500_tef.otf.json",
+  "xml": "spike/oracle/batch/19500.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 268,
+     "oracle": 268,
+     "exact": 268,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "19520_tef",
+  "otf": "sources/banjo-hangout/parsed/19520_tef.otf.json",
+  "xml": "spike/oracle/batch/19520.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 240,
+     "oracle": 240,
+     "exact": 240,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "20201_tef",
+  "otf": "sources/banjo-hangout/parsed/20201_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-salt-creek-20201-57182722014.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 203,
+     "oracle": 203,
+     "exact": 203,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 200,
+     "oracle": 200,
+     "exact": 200,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "20822_tef",
+  "otf": "sources/banjo-hangout/parsed/20822_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-new-camptown-ra-20822-39131015122014.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 248,
+     "oracle": 248,
+     "exact": 248,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "20853_tef",
+  "otf": "sources/banjo-hangout/parsed/20853_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-shenandoah-walt-20853-18501115112014.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 189,
+     "oracle": 189,
+     "exact": 189,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "20924_tef",
+  "otf": "sources/banjo-hangout/parsed/20924_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-give-the-fiddle-20924-33351315122014.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 111,
+     "oracle": 111,
+     "exact": 111,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 192,
+     "oracle": 192,
+     "exact": 192,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "21057_tef",
+  "otf": "sources/banjo-hangout/parsed/21057_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-lonesome-fiddle-21057-361621222015.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 134,
+     "oracle": 134,
+     "exact": 134,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "21420_tef",
+  "otf": "sources/banjo-hangout/parsed/21420_tef.otf.json",
+  "xml": "spike/oracle/batch/21420.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 123,
+     "oracle": 123,
+     "exact": 123,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "21467_tef",
+  "otf": "sources/banjo-hangout/parsed/21467_tef.otf.json",
+  "xml": "spike/oracle/batch/21467.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 151,
+     "oracle": 151,
+     "exact": 151,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "21823_tef",
+  "otf": "sources/banjo-hangout/parsed/21823_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-maidens-prayer-21823-4941131832016.xml",
+  "tracks": 4,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 139,
+     "oracle": 139,
+     "exact": 139,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "22191_tef",
+  "otf": "sources/banjo-hangout/parsed/22191_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-lonesome-road-b-22191-59101214112019.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 511,
+     "oracle": 511,
+     "exact": 511,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 510,
+     "oracle": 510,
+     "exact": 510,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 253,
+     "oracle": 253,
+     "exact": 253,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "22240_tef",
+  "otf": "sources/banjo-hangout/parsed/22240_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cherokee-shuffl-22240-3043527112016.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 277,
+     "oracle": 277,
+     "exact": 277,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "23192_tef",
+  "otf": "sources/banjo-hangout/parsed/23192_tef.otf.json",
+  "xml": "spike/oracle/batch/23192.xml",
+  "tracks": 5,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 138,
+     "oracle": 138,
+     "exact": 138,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "23819_tef",
+  "otf": "sources/banjo-hangout/parsed/23819_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cherokee-shuffl-23819-332212472019.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 287,
+     "oracle": 287,
+     "exact": 287,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "24087_tef",
+  "otf": "sources/banjo-hangout/parsed/24087_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cherokee-shuffl-24087-5618122812020.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 292,
+     "oracle": 292,
+     "exact": 292,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 262,
+     "oracle": 262,
+     "exact": 262,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "24091_tef",
+  "otf": "sources/banjo-hangout/parsed/24091_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-salt-creek-24091-273152612020.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 171,
+     "oracle": 171,
+     "exact": 171,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 130,
+     "oracle": 130,
+     "exact": 130,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "24093_tef",
+  "otf": "sources/banjo-hangout/parsed/24093_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-red-haired-boy-24093-1443142912020.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 235,
+     "oracle": 235,
+     "exact": 235,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 207,
+     "oracle": 207,
+     "exact": 207,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "24112_tef",
+  "otf": "sources/banjo-hangout/parsed/24112_tef.otf.json",
+  "xml": "spike/oracle/batch/24112.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 168,
+     "oracle": 168,
+     "exact": 168,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 147,
+     "oracle": 147,
+     "exact": 147,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "24231_tef",
+  "otf": "sources/banjo-hangout/parsed/24231_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-i-dont-love-nob-24231-3106642020.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 398,
+     "oracle": 398,
+     "exact": 398,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 382,
+     "oracle": 382,
+     "exact": 382,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 95,
+     "oracle": 95,
+     "exact": 95,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "24337_tef",
+  "otf": "sources/banjo-hangout/parsed/24337_tef.otf.json",
+  "xml": "spike/oracle/batch/tab-cheyenne-24337-377151052020.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 515,
+     "oracle": 515,
+     "exact": 515,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 706,
+     "oracle": 706,
+     "exact": 706,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 128,
+     "oracle": 128,
+     "exact": 128,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "25635_tef",
+  "otf": "sources/banjo-hangout/parsed/25635_tef.otf.json",
+  "xml": "spike/oracle/batch/25635.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 595,
+     "oracle": 595,
+     "exact": 595,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 661,
+     "oracle": 661,
+     "exact": 661,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 160,
+     "oracle": 160,
+     "exact": 160,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "27493_tef",
+  "otf": "sources/banjo-hangout/parsed/27493_tef.otf.json",
+  "xml": "spike/oracle/batch/27493.xml",
+  "tracks": 4,
+  "result": {
+   "verdict": "PARTIAL",
+   "tracks": {
+    "banjo": {
+     "otf": 357,
+     "oracle": 357,
+     "exact": 357,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ }
+]

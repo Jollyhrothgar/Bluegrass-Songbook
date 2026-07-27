@@ -14,3 +14,13 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '13648'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=13648
+    author: Jollyhrothgar
+    imported_at: '2026-07-08'

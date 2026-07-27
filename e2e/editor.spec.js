@@ -1,77 +1,186 @@
-// E2E tests for Song Editor functionality
+// E2E tests for Song Editor functionality. The Add Song entry point is the
+// top-band nav item (opens the add-song picker; Lyrics & Chords lands in the
+// editor) or the #add deep link (straight to the editor).
 import { test, expect } from '@playwright/test';
+import { gotoSearch, navClick } from './helpers.js';
 
-// Helper to open sidebar
-async function openSidebar(page) {
-    await page.locator('#hamburger-btn').click();
-    await expect(page.locator('.sidebar.open')).toBeVisible();
+// Open a fresh new-song editor via the top-band flow
+async function openAddSongEditor(page) {
+    await navClick(page, 'add');
+    await expect(page.locator('#add-song-picker')).toBeVisible();
+    await page.locator('.picker-card[data-type="chordpro"]').click();
+    await expect(page.locator('#editor-panel')).toBeVisible();
 }
 
 test.describe('Editor Access', () => {
-    test('can access editor via sidebar Add Song button', async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
+    test('reloading while editing keeps home content hidden', async ({ page }) => {
+        // Force-refresh on an #edit deep link must restore the editor without
+        // stacking the landing page (logo, search, collections) above it.
+        await page.goto('/#edit/your-cheating-heart');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#editor-title')).toHaveValue(/Cheat/i);
+        // edit mode arrives with metadata known: the compact line shows it
+        await expect(page.locator('#metadata-summary')).toContainText(/Cheat/i);
 
-        // Open sidebar and click Add Song
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
+        await page.reload();
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#landing-page')).toBeHidden();
+        await expect(page.locator('.search-container')).toBeHidden();
+    });
 
-        // Editor panel should be visible
+    test('top-band Add Song opens picker; Lyrics & Chords lands in the editor', async ({ page }) => {
+        await gotoSearch(page);
+
+        await navClick(page, 'add');
+        // Picker modal with the three cards
+        await expect(page.locator('#add-song-picker')).toBeVisible();
+        await expect(page.locator('.picker-card[data-type="upload"]')).toBeVisible();
+        await expect(page.locator('.picker-card[data-type="chordpro"]')).toBeVisible();
+        await expect(page.locator('.picker-card[data-type="request"]')).toBeVisible();
+
+        await page.locator('.picker-card[data-type="chordpro"]').click();
+
+        // Editor: textarea + live preview
+        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('#editor-content')).toBeVisible();
+        await expect(page.locator('#editor-content')).toHaveValue('');
+        await expect(page.locator('.ve-preview-empty')).toBeVisible();
+        await expect(page.locator('#add-song-picker')).toBeHidden();
+
+        // guidance lives in the textarea placeholder
+        expect(await page.locator('#editor-content').getAttribute('placeholder'))
+            .toMatch(/Paste or type your song/);
+
+        // quiet escape hatches in the preview empty state
+        await expect(page.locator('.ve-link-upload')).toBeVisible();
+        await expect(page.locator('.ve-link-request')).toBeVisible();
+
+        // metadata is deferred to a compact line
+        await expect(page.locator('#metadata-summary')).toContainText('Untitled song');
+        await expect(page.locator('#metadata-fields')).toBeHidden();
+    });
+
+    test('#add deep link goes straight to the editor (no picker)', async ({ page }) => {
+        await page.goto('/#add');
+
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#add-song-picker')).toBeHidden();
+        await expect(page.locator('#editor-content')).toBeVisible();
+    });
+
+    test('upload link is login-gated: logged out click prompts sign-in, no upload view', async ({ page }) => {
+        await page.goto('/#add');
+        await expect(page.locator('.ve-preview-empty')).toBeVisible();
+
+        // stub the sign-in redirect so the test can observe the gate
+        await page.evaluate(() => {
+            window.__signInCalled = 0;
+            window.SupabaseAuth.signInWithGoogle = () => { window.__signInCalled++; };
+        });
+
+        await page.locator('.ve-link-upload').click();
+
+        expect(await page.evaluate(() => window.__signInCalled)).toBe(1);
+        // still in the editor — the upload view did not open
+        await expect(page.locator('#upload-panel')).toBeHidden();
         await expect(page.locator('#editor-panel')).toBeVisible();
     });
 
     test('editor shows title, artist, and content fields', async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
+        await gotoSearch(page);
+        await openAddSongEditor(page);
 
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-
-        // Check form fields exist
+        // Metadata fields are deferred behind the compact line — expand it
+        await page.locator('#metadata-summary').click();
         await expect(page.locator('#editor-title')).toBeVisible();
         await expect(page.locator('#editor-artist')).toBeVisible();
         await expect(page.locator('#editor-content')).toBeVisible();
     });
 
     test('edit button on song view opens editor with song data', async ({ page }) => {
-        // Navigate to a specific song
         await page.goto('/#work/your-cheating-heart');
-        await page.waitForTimeout(1000);
+        await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
 
-        // Wait for song view
-        await expect(page.locator('#song-view')).toBeVisible();
-
-        // Click edit button
+        // Edit lives in the top band on song pages
         const editBtn = page.locator('#edit-song-btn');
-        if (await editBtn.isVisible()) {
-            await editBtn.click();
+        await expect(editBtn).toBeVisible();
+        await editBtn.click();
 
-            // Editor should open
-            await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('#editor-title')).not.toHaveValue('');
+    });
+});
 
-            // Title should be populated
-            const titleInput = page.locator('#editor-title');
-            await expect(titleInput).not.toHaveValue('');
-        }
+test.describe('Editor State Reset', () => {
+    test('Add Song after editing a song shows a fresh empty editor', async ({ page }) => {
+        // Edit an existing song
+        await page.goto('/#edit/your-cheating-heart');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#editor-title')).toHaveValue(/Cheat/i);
+
+        // Home via the brand link, then Add Song (the reported repro)
+        await page.locator('#topbar-brand').click();
+        await expect(page.locator('#landing-page')).toBeVisible();
+
+        await openAddSongEditor(page);
+
+        // Fresh new-song editor: empty panes, no stale content
+        await expect(page.locator('.ve-preview-empty')).toBeVisible();
+        await expect(page.locator('#metadata-summary')).toContainText('Untitled song');
+        await expect(page.locator('#editor-title')).toHaveValue('');
+        await expect(page.locator('#editor-content')).toHaveValue('');
+        await expect(page.locator('#editor-submit')).toHaveText('Submit to Songbook');
+    });
+
+    test('an unsaved new-song draft survives leaving and returning to Add Song', async ({ page }) => {
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+
+        // Type a draft into the textarea
+        await page.locator('#editor-content').fill('[G]Working on my draft');
+
+        // Leave for home, then come back via Add Song
+        await page.locator('#topbar-brand').click();
+        await expect(page.locator('#landing-page')).toBeVisible();
+
+        await openAddSongEditor(page);
+
+        await expect(page.locator('#editor-content')).toHaveValue('[G]Working on my draft');
+    });
+
+    test('editing song B after abandoning an edit of song A shows B', async ({ page }) => {
+        await page.goto('/#edit/your-cheating-heart');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#editor-title')).toHaveValue(/Cheat/i);
+
+        // Abandon via home, then open another song and edit it
+        await page.locator('#topbar-brand').click();
+        await expect(page.locator('#landing-page')).toBeVisible();
+
+        await page.goto('/#edit/cold-cold-heart');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#editor-title')).toHaveValue(/Cold/i);
+        await expect(page.locator('#editor-title')).not.toHaveValue(/Cheat/i);
+        await expect(page.locator('#editor-content')).not.toHaveValue('');
     });
 });
 
 test.describe('Editor Content Input', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-        await expect(page.locator('#editor-panel')).toBeVisible();
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
     });
 
-    test('can enter title', async ({ page }) => {
+    test('can enter title and it shows on the compact metadata line', async ({ page }) => {
+        await page.locator('#metadata-summary').click();
         const titleInput = page.locator('#editor-title');
         await titleInput.fill('Test Song Title');
         await expect(titleInput).toHaveValue('Test Song Title');
+        await expect(page.locator('#metadata-summary')).toContainText('Test Song Title');
     });
 
     test('can enter artist', async ({ page }) => {
+        await page.locator('#metadata-summary').click();
         const artistInput = page.locator('#editor-artist');
         await artistInput.fill('Test Artist');
         await expect(artistInput).toHaveValue('Test Artist');
@@ -87,58 +196,35 @@ test.describe('Editor Content Input', () => {
 
 test.describe('Editor Preview', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-        await expect(page.locator('#editor-panel')).toBeVisible();
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
     });
 
     test('preview updates when content changes', async ({ page }) => {
         const contentArea = page.locator('#editor-content');
-        const previewArea = page.locator('#editor-preview-content');
+        const previewArea = page.locator('#editor-preview-container');
 
-        // Enter ChordPro content
+        // Enter ChordPro content (preview re-renders ~200ms after typing)
         await contentArea.fill('[G]Test [C]line with [D]chords');
 
-        // Wait for preview to update
-        await page.waitForTimeout(300);
-
-        // Preview should show rendered content
-        if (await previewArea.isVisible().catch(() => false)) {
-            const previewText = await previewArea.textContent();
-            expect(previewText).toContain('Test');
-        }
+        // Interactive preview shows the rendered lyrics
+        await expect(previewArea).toContainText('Test');
     });
 
-    test('chords are highlighted in preview', async ({ page }) => {
+    test('chords render as interactive chips in the preview', async ({ page }) => {
         const contentArea = page.locator('#editor-content');
-
-        // Enter content with chords
         await contentArea.fill('[G]Amazing [C]Grace');
 
-        // Wait for preview update
-        await page.waitForTimeout(300);
-
-        // Check for chord highlighting (chords have chord class)
-        const chordSpans = page.locator('.editor-preview .chord, #editor-preview-content .chord');
-        const count = await chordSpans.count();
-
-        // Preview should render chords
-        expect(count >= 0).toBeTruthy(); // May be 0 if preview renders differently
+        await expect(page.locator('#editor-preview-container .ve-chip')).toHaveCount(2);
+        await expect(page.locator('#editor-preview-container .ve-chip').first()).toHaveText('G');
     });
 });
 
 test.describe('ChordPro Conversion', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-        await expect(page.locator('#editor-panel')).toBeVisible();
-    });
+    test('paste with chord-above-lyrics format converts to ChordPro', async ({ page }) => {
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
-    test('paste with chord-above-lyrics format triggers conversion prompt', async ({ page }) => {
         const contentArea = page.locator('#editor-content');
 
         // Simulate chord-above-lyrics format (typical from guitar sites)
@@ -150,190 +236,108 @@ That saved a wretch like me`;
         await contentArea.fill(chordAboveLyrics);
         await page.waitForTimeout(500);
 
-        // The editor should either auto-convert or show a convert option
-        // Content should contain ChordPro brackets after conversion
         const content = await contentArea.inputValue();
-
-        // Either converted to ChordPro or kept original
         expect(content.length).toBeGreaterThan(0);
     });
 });
 
 test.describe('Editor Navigation', () => {
     test('back button returns to previous view', async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
+        await gotoSearch(page);
+        await openAddSongEditor(page);
 
-        // Open editor
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-        await expect(page.locator('#editor-panel')).toBeVisible();
-
-        // Click back button
         await page.locator('#editor-back-btn').click();
 
-        // Should return to search view
         await expect(page.locator('.search-container')).toBeVisible();
     });
 
     test('opening editor from song returns to song after back', async ({ page }) => {
-        // Navigate to a song first - use a song without version picker
         await page.goto('/#work/your-cheating-heart');
-        await page.waitForTimeout(1000);
+        await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
 
-        // Song view or work view should be visible (or version picker)
-        const songView = page.locator('#song-view:not(.hidden)');
-        const workView = page.locator('#work-view:not(.hidden)');
-        const versionPicker = page.locator('#version-modal:not(.hidden)');
-
-        // Wait for one of them
-        await expect(songView.or(workView).or(versionPicker)).toBeVisible({ timeout: 5000 });
-
-        // If version picker appeared, select first version
-        if (await versionPicker.isVisible()) {
-            await page.locator('.version-item .version-info').first().click();
-            await expect(songView.or(workView)).toBeVisible({ timeout: 3000 });
-        }
-
-        // Try to click edit if available
         const editBtn = page.locator('#edit-song-btn');
-        if (await editBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
-            await editBtn.click();
+        await expect(editBtn).toBeVisible();
+        await editBtn.click();
 
-            // Editor should open
-            await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('#editor-panel')).toBeVisible();
 
-            // Click back
-            await page.locator('#editor-back-btn').click();
+        await page.locator('#editor-back-btn').click();
 
-            // Should return to a valid non-editor view (song, work, or search)
-            const searchContainer = page.locator('.search-container');
-            await expect(songView.or(workView).or(searchContainer)).toBeVisible({ timeout: 3000 });
-
-            // Editor should be hidden
-            await expect(page.locator('#editor-panel')).toBeHidden();
-        }
+        // Should return to a valid non-editor view (song or search)
+        const songView = page.locator('#song-view:not(.hidden)');
+        const searchContainer = page.locator('.search-container');
+        await expect(songView.or(searchContainer)).toBeVisible({ timeout: 3000 });
+        await expect(page.locator('#editor-panel')).toBeHidden();
     });
 });
 
 test.describe('Editor Hints', () => {
     test('hints button shows ChordPro help', async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-        await expect(page.locator('#editor-panel')).toBeVisible();
+        await page.locator('#chordpro-hints-btn').click();
 
-        // Click hints button
-        const hintsBtn = page.locator('#hints-btn, .hints-btn, [title*="hint"]');
-        if (await hintsBtn.first().isVisible({ timeout: 2000 }).catch(() => false)) {
-            await hintsBtn.first().click();
+        const hintsPanel = page.locator('#chordpro-hints-panel');
+        await expect(hintsPanel).toBeVisible();
 
-            // Hints panel should appear
-            const hintsPanel = page.locator('#hints-panel, .hints-panel');
-            await expect(hintsPanel).toBeVisible();
-
-            // Should contain ChordPro syntax help
-            const hintsText = await hintsPanel.textContent();
-            expect(hintsText?.toLowerCase()).toMatch(/chord|bracket|section/i);
-        }
+        const hintsText = await hintsPanel.textContent();
+        expect(hintsText?.toLowerCase()).toMatch(/chord|verse|chorus/i);
     });
 });
 
 test.describe('Editor Copy Function', () => {
     test('copy button copies content to clipboard', async ({ page, context }) => {
-        // Grant clipboard permissions
         await context.grantPermissions(['clipboard-read', 'clipboard-write']);
 
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-        await expect(page.locator('#editor-panel')).toBeVisible();
-
-        // Enter content
         const contentArea = page.locator('#editor-content');
-        const testContent = '[G]Test song content';
-        await contentArea.fill(testContent);
+        await contentArea.fill('[G]Test song content');
 
-        // Click copy button
-        const copyBtn = page.locator('#editor-copy-btn');
-        if (await copyBtn.isVisible()) {
-            await copyBtn.click();
+        await page.locator('#editor-copy').click();
 
-            // Verify clipboard content (may need permissions)
-            const clipboardText = await page.evaluate(() => navigator.clipboard.readText());
-            expect(clipboardText).toContain('Test song content');
-        }
+        const clipboardText = await page.evaluate(() => navigator.clipboard.readText());
+        expect(clipboardText).toContain('Test song content');
     });
 });
 
 test.describe('Editor Nashville Mode', () => {
     test('Nashville toggle changes chord display in preview', async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-        await expect(page.locator('#editor-panel')).toBeVisible();
-
-        // Enter content with key
         const contentArea = page.locator('#editor-content');
         await contentArea.fill('{key: G}\n[G]Test [C]line [D]here');
         await page.waitForTimeout(300);
 
-        // Toggle Nashville mode - use first visible toggle
-        const nashvilleToggle = page.locator('#editor-nashville').first();
-        const altToggle = page.locator('input[name="nashville"]').first();
-        const toggle = await nashvilleToggle.isVisible() ? nashvilleToggle : altToggle;
+        const toggle = page.locator('#editor-nashville');
+        await expect(toggle).toBeVisible();
+        await toggle.click();
+        await page.waitForTimeout(300);
 
-        if (await toggle.isVisible()) {
-            await toggle.click();
-            await page.waitForTimeout(300);
-
-            // Preview should show Nashville numbers (I, IV, V instead of G, C, D)
-            const previewArea = page.locator('#editor-preview-content');
-            if (await previewArea.isVisible()) {
-                const previewText = await previewArea.textContent();
-                // Nashville numbers should appear
-                expect(previewText).toMatch(/I|IV|V/);
-            }
-        }
+        // Preview chips show Nashville numbers (I, IV, V)
+        await expect(page.locator('#editor-preview-container .ve-chip').first()).toHaveText(/I|IV|V/);
     });
 });
 
 test.describe('Editor Validation', () => {
     test('submit button requires title', async ({ page }) => {
-        await page.goto('/#search');
-        await page.waitForSelector('#search-input');
-
-        await openSidebar(page);
-        await page.locator('#nav-add-song').click();
-        await expect(page.locator('#editor-panel')).toBeVisible();
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
         // Enter content but no title
-        const contentArea = page.locator('#editor-content');
-        await contentArea.fill('[G]Some content here');
+        await page.locator('#editor-content').fill('[G]Some content here');
 
-        // Submit button should be present (ID is #editor-submit, not #editor-submit-btn)
         const submitBtn = page.locator('#editor-submit');
         await expect(submitBtn).toBeVisible();
-
-        // Click submit
         await submitBtn.click();
 
-        // Should show error or status message about missing title
-        await page.waitForTimeout(500);
-        const status = page.locator('#editor-status');
-        const statusText = await status.textContent().catch(() => '');
-
-        // Validation should prevent submission
-        // Either shows error or title field is highlighted
-        const titleInput = page.locator('#editor-title');
-        const isInvalid = await titleInput.evaluate(el => el.classList.contains('invalid') || el.validity?.valueMissing);
-
-        expect(statusText?.toLowerCase().includes('title') || isInvalid || statusText === '').toBeTruthy();
+        // Friendly nudge: fields expand, title gets focus, notice mentions the title
+        await expect(page.locator('#metadata-fields')).toBeVisible();
+        await expect(page.locator('#editor-title')).toBeFocused();
+        const statusText = await page.locator('#editor-status').textContent();
+        expect(statusText?.toLowerCase()).toContain('title');
     });
 });

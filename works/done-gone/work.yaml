@@ -5,6 +5,17 @@ default_key: A
 tags:
 - Instrumental
 - Fiddle
-status: placeholder
+- Clawhammer
 notes: Bill Monroe fiddle tune. Classic bluegrass instrumental.
-parts: []
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '15032'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=15032
+    author: Jollyhrothgar
+    imported_at: '2026-07-08'

@@ -1,16 +1,16 @@
 // Core search functionality for Bluegrass Songbook
 
 import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork } from './state.js';
-import { highlightMatch, escapeHtml, isTabOnlyWork, isPlaceholder, hasMultipleParts, requireLogin } from './utils.js';
+import { highlightMatch, escapeHtml, requireLogin } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { songHasTags, getTagCategory, formatTagName } from './tags.js';
 import {
     isFavorite, reorderFavoriteItem, reorderFavoriteItemByRef, showFavorites,
-    isSongInAnyList, showResultListPicker, getViewingListId, reorderSongInList, reorderSongInListByRef, isViewingOwnList,
+    isSongInAnyList, updateResultListButton, getViewingListId, reorderSongInList, reorderSongInListByRef, isViewingOwnList,
     removeSongFromList, showListView, FAVORITES_LIST_ID, toggleFavorite,
     addSongToList, clearListView, getSongMetadata, openNotesSheet
 } from './lists.js';
-import { openSong } from './song-view.js';
+import { showListPicker } from './list-picker.js';
 import { openWork } from './work-view.js';
 import { trackSearch as analyticsTrackSearch, trackSearchResultClick } from './analytics.js';
 import { stemWord } from './stem.js';
@@ -695,17 +695,27 @@ function formatCoveringArtists(artists, primaryArtist) {
 }
 
 /**
+ * The searchable corpus: rows the jam-repertoire prune left indexed.
+ * Pruned rows (indexed === false) stay in allSongs so deep links, lists,
+ * and arrangement groups still resolve — but search, browse, and counts
+ * never surface them.
+ */
+export function searchableSongs() {
+    return allSongs.filter(s => s.indexed !== false);
+}
+
+/**
  * Show popular songs on initial load (sorted by canonical_rank)
  */
 export function showPopularSongs() {
     // Sort by canonical_rank (higher = more popular)
-    const sorted = [...allSongs].sort((a, b) => {
+    const sorted = searchableSongs().sort((a, b) => {
         const aRank = a.canonical_rank || 0;
         const bRank = b.canonical_rank || 0;
         return bRank - aRank;
     });
     // Use distinct title count to match subtitle
-    const distinctCount = new Set(allSongs.map(s => s.title?.toLowerCase())).size;
+    const distinctCount = new Set(searchableSongs().map(s => s.title?.toLowerCase())).size;
     if (searchStatsEl) {
         searchStatsEl.textContent = `${distinctCount.toLocaleString()} songs`;
     }
@@ -737,7 +747,7 @@ export function search(query, options = {}) {
         pendingSearchData = null;
         lastRecordedQuery = null;
         showPopularSongs();
-        return allSongs;
+        return searchableSongs();
     }
 
     const {
@@ -753,7 +763,7 @@ export function search(query, options = {}) {
     const stemmedTerms = textTerms.map(stemWord);
     const stemOnlyMatches = new Set();
 
-    const results = allSongs.filter(song => {
+    const results = searchableSongs().filter(song => {
         // General text search (searches all fields)
         if (textTerms.length > 0) {
             const searchText = [
@@ -904,13 +914,26 @@ export function search(query, options = {}) {
         return bRank - aRank;
     });
 
-    // Dedupe by group_id for accurate count
-    const seenGroups = new Set();
+    // Dedupe by group_id for accurate count. The canonical member (pinned
+    // via curation/registry.yaml) claims the card even when a variant
+    // ranked first — otherwise search shows one artist and the opened
+    // page another (the Misty problem).
+    const seenGroups = new Map(); // group_id -> index into dedupedResults
     const dedupedResults = [];
     for (const song of results) {
         const groupId = song.group_id;
-        if (groupId && seenGroups.has(groupId)) continue;
-        if (groupId) seenGroups.add(groupId);
+        if (!groupId) {
+            dedupedResults.push(song);
+            continue;
+        }
+        if (seenGroups.has(groupId)) {
+            const i = seenGroups.get(groupId);
+            if (song.canonical === true && dedupedResults[i].canonical !== true) {
+                dedupedResults[i] = song;
+            }
+            continue;
+        }
+        seenGroups.set(groupId, dedupedResults.length);
         dedupedResults.push(song);
     }
 
@@ -1037,11 +1060,14 @@ function loadMoreResults() {
 
 /**
  * Pick the best representative version from a group for display.
- * Prefers: version with content > most chords > highest canonical_rank.
+ * A canonical row (editorially pinned via curation/registry.yaml) wins
+ * outright; otherwise prefers: content > most chords > highest canonical_rank.
  */
 function pickRepresentative(versions) {
     if (versions.length === 0) return null;
     if (versions.length === 1) return versions[0];
+    const pinned = versions.find(v => v.canonical === true);
+    if (pinned) return pinned;
     return [...versions].sort((a, b) => {
         // Prefer versions with content (lead sheets)
         const aHasContent = a.content ? 1 : 0;
@@ -1125,12 +1151,13 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
         ? `<span class="grassiness-badge" title="Bluegrass score: ${grassinessScore}">🎵 ${grassinessScore}</span>`
         : '';
 
-    // Artist display
+    // Artist display: always the song's OWN artist — showing
+    // covering_artists[0] here made search disagree with the song page
+    // (e.g. "Misty" carded as David Grisman but by Ray Stevens). The
+    // bluegrass names stay on the "Also by:" line.
     const coveringArtists = song.covering_artists || [];
-    const primaryArtist = coveringArtists.length > 0
-        ? coveringArtists[0]
-        : (song.artist || 'Unknown artist');
-    const coveringDisplay = formatCoveringArtists(coveringArtists.slice(1), primaryArtist);
+    const primaryArtist = song.artist || 'Unknown artist';
+    const coveringDisplay = formatCoveringArtists(coveringArtists, primaryArtist);
 
     // Drag handle and attributes
     const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
@@ -1334,11 +1361,14 @@ function setupResultEventListeners(resultsDiv) {
             return;
         }
 
-        // Handle list button click
+        // Handle list button click — unified ListPicker component
         const listBtn = e.target.closest('.result-list-btn');
         if (listBtn) {
             e.stopPropagation();
-            showResultListPicker(listBtn, listBtn.dataset.songId);
+            const songId = listBtn.dataset.songId;
+            showListPicker(songId, listBtn, {
+                onUpdate: () => updateResultListButton(listBtn, songId)
+            });
             return;
         }
 
@@ -1386,27 +1416,14 @@ function setupResultEventListeners(resultsDiv) {
             // Check for part-qualified item ref (from list view)
             const partId = resultItem.dataset.partId;
             if (partId) {
-                // Part-qualified: always open work with that part expanded
+                // Part-qualified: open the unified page on that part
                 openWork(resultItem.dataset.id, { partId });
             } else if (versions.length > 1) {
-                // Multi-version: go directly to the best version's song view
+                // Multi-version: open the group's canonical representative
                 const representative = pickRepresentative(versions);
-                const song = representative;
-                if (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song)) {
-                    openWork(representative.id, { groupId, fromList });
-                } else {
-                    openSong(representative.id, { fromList });
-                }
+                openWork(representative.id, { groupId, fromList });
             } else {
-                const songId = resultItem.dataset.id;
-                const song = allSongs.find(s => s.id === songId);
-                // Dashboard for: placeholders, tab-only, and multi-part works.
-                // Single-part songs with content go to song-view.
-                if (isPlaceholder(song) || isTabOnlyWork(song) || hasMultipleParts(song)) {
-                    openWork(songId);
-                } else {
-                    openSong(songId, { fromList });
-                }
+                openWork(resultItem.dataset.id, { fromList });
             }
         }
     });

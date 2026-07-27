@@ -1,11 +1,24 @@
 id: waterbound
 title: Waterbound
+tags:
+- Instrumental
+- Clawhammer
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/waterbound/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/waterbound/
+    imported_at: '2026-02-08'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21678'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21678
+    author: Jollyhrothgar
+    imported_at: '2026-07-08'

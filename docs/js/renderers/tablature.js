@@ -1,6 +1,62 @@
 // Tablature SVG Renderer
 // Extracted from TablEdit_Reverse viewer for Bluegrass Songbook
 
+import {
+    MeasureTiming,
+    TimelineTiming,
+    identityTimeline,
+    measureTicksFor,
+    parseTimeSignature,
+} from './measure-timing.js';
+
+/**
+ * Silent spans inside a measure that deserve rest glyphs: the gap after
+ * an event whose notes ALL carry explicit durations (editor-entered),
+ * up to the next event or the measure's end. Events without durations
+ * follow the legacy ring-until-next-event model — no rests for them.
+ *
+ * @param {Array} events - [{tick, notes: [{dur?}]}]
+ * @param {number} measureTicks - this measure's own tick length
+ * @returns {Array<{start: number, len: number}>}
+ */
+export function restSpansForMeasure(events, measureTicks) {
+    const spans = [];
+    const sorted = [...(events || [])].sort((a, b) => a.tick - b.tick);
+    for (let i = 0; i < sorted.length; i++) {
+        const ev = sorted[i];
+        const notes = ev.notes || [];
+        if (notes.length === 0 || !notes.every(n => n.dur > 0)) continue;
+        const end = ev.tick + Math.max(...notes.map(n => n.dur));
+        const nextStart = i + 1 < sorted.length ? sorted[i + 1].tick : measureTicks;
+        if (nextStart - end >= 60) {
+            spans.push({ start: end, len: nextStart - end });
+        }
+    }
+    return spans;
+}
+
+// SMuFL rest glyphs (Bravura): whole, half, quarter, 8th, 16th, 32nd
+const REST_GLYPHS = [
+    [1920, '\uE4E3'], [960, '\uE4E4'], [480, '\uE4E5'],
+    [240, '\uE4E6'], [120, '\uE4E7'], [60, '\uE4E8'],
+];
+
+/**
+ * Decompose a silent span into rest values, largest first.
+ * @returns {Array<{ticks: number, glyph: string}>}
+ */
+export function restGlyphSequence(len) {
+    const out = [];
+    let remaining = len;
+    for (const [ticks, glyph] of REST_GLYPHS) {
+        while (remaining >= ticks) {
+            out.push({ ticks, glyph });
+            remaining -= ticks;
+        }
+    }
+    return out;
+}
+
 const INSTRUMENT_ICONS = {
     '5-string-banjo': '🪕',
     'tenor-banjo': '🪕',
@@ -101,34 +157,40 @@ export class TabRenderer {
     constructor(container, options = {}) {
         this.container = container;
 
-        // Get theme-aware colors from CSS variables
-        const computedStyle = getComputedStyle(document.documentElement);
-        const bgColor = computedStyle.getPropertyValue('--bg').trim() || '#fff';
-        const textColor = computedStyle.getPropertyValue('--text').trim() || '#000';
-        const accentColor = computedStyle.getPropertyValue('--accent').trim() || '#007bff';
-
         this.options = {
             stringSpacing: 14,
             minMeasureWidth: 138,     // Minimum width per measure (increased 15% for triplet legibility)
             maxMeasureWidth: 288,     // Maximum width per measure
             targetMeasureWidth: 180,  // Preferred width per measure
+            measureWidthFloor: 0,     // Hard lower bound that OVERRIDES maxMeasureWidth
+                                      // (editor sets this so fine entry grids get room;
+                                      // rows may exceed the container and scroll)
+            centerNotes: true,        // Center notes in their measure (reading nicety);
+                                      // the editor sets false for a stable tick→x mapping
+            showRests: true,          // Rest glyphs in duration gaps. TablEdit's
+                                      // tab staff hides these, but that leaves the
+                                      // rhythm implicit (Mike: 'author laziness') —
+                                      // we show them; opt out per-renderer if needed
             measuresPerRow: 'auto',   // 'auto' or number (1-8)
             leftMargin: 50,
             topMargin: 40,
             stemAreaHeight: 28,
             fretFontSize: 12,
-            stringColor: '#666',
-            fretColor: textColor,
-            fretBgColor: bgColor,
-            measureLineColor: '#333',
-            stemColor: '#333',
-            beamColor: '#333',
             beamThickness: 3,
             stemWidth: 1.5,
-            highlightColor: accentColor,
             beatCursorColor: 'rgba(255, 100, 100, 0.6)',
             ...options
         };
+
+        // Theme colors are re-read from CSS variables on every theme
+        // change (SVG attributes bake colors in — a stale palette after
+        // toggling the theme left inverted fret chips over the staff).
+        // Only keys the caller did NOT set explicitly track the theme.
+        this._themedColorKeys = [
+            'stringColor', 'fretColor', 'fretBgColor', 'measureLineColor',
+            'stemColor', 'beamColor', 'highlightColor', 'mutedColor',
+        ].filter(k => !(k in options));
+        this._refreshThemeColors();
 
         // Playback visualization state
         this.noteElements = [];      // Array of {measure, tick, absTick, elements: []}
@@ -151,6 +213,41 @@ export class TabRenderer {
         // Resize observer for responsive layout
         this._resizeObserver = null;
         this._resizeTimeout = null;
+
+        // Engraved time-signature digits: kick off the (once-per-page)
+        // Bravura load and re-render when it arrives.
+        TabRenderer._ensureBravura().then(() => {
+            if (TabRenderer._bravuraReady && this._track && this._notation) {
+                this._renderInternal();
+            }
+        });
+    }
+
+    /**
+     * Read the current theme's palette from CSS variables into options.
+     * Structural marks (strings, barlines, stems, beams) derive from
+     * --text-secondary/--text so they stay legible on BOTH themes — the
+     * old hardcoded #333 was near-invisible on the dark background.
+     */
+    _refreshThemeColors() {
+        const cs = getComputedStyle(document.documentElement);
+        const bg = cs.getPropertyValue('--bg').trim() || '#fff';
+        const text = cs.getPropertyValue('--text').trim() || '#000';
+        const secondary = cs.getPropertyValue('--text-secondary').trim() || '#666';
+        const accent = cs.getPropertyValue('--accent').trim() || '#007bff';
+        const themed = {
+            stringColor: secondary,
+            fretColor: text,
+            fretBgColor: bg,
+            measureLineColor: secondary,
+            stemColor: secondary,
+            beamColor: secondary,
+            highlightColor: accent,
+            mutedColor: secondary,  // labels, rests, slurs, annotations
+        };
+        for (const key of this._themedColorKeys) {
+            this.options[key] = themed[key];
+        }
     }
 
     /**
@@ -168,6 +265,7 @@ export class TabRenderer {
                 opt.minMeasureWidth,
                 Math.min(opt.maxMeasureWidth, availableWidth / this._computedMeasuresPerRow)
             );
+            this._applyMeasureWidthFloor(availableWidth);
             return;
         }
 
@@ -187,14 +285,39 @@ export class TabRenderer {
 
         this._computedMeasuresPerRow = measuresPerRow;
         this._computedMeasureWidth = measureWidth;
+        this._applyMeasureWidthFloor(availableWidth);
     }
 
-    render(track, notation, ticksPerBeat = 480, timeSignature = '4/4') {
+    /**
+     * Enforce measureWidthFloor: a hard lower bound on measure width
+     * that beats maxMeasureWidth. Used by the editor to auto-expand
+     * measures when a fine entry grid (1/16, 1/32) needs breathing room
+     * — fewer measures per row, scrolling if a single measure exceeds
+     * the container.
+     */
+    _applyMeasureWidthFloor(availableWidth) {
+        const floor = this.options.measureWidthFloor;
+        if (!floor || this._computedMeasureWidth >= floor) return;
+        this._computedMeasureWidth = floor;
+        this._computedMeasuresPerRow = Math.max(
+            1, Math.min(this._computedMeasuresPerRow, Math.floor(availableWidth / floor)));
+    }
+
+    /**
+     * @param {Object} track - OTF track
+     * @param {Array} notation - measures [{measure, events}]
+     * @param {number} ticksPerBeat
+     * @param {string} timeSignature - global signature
+     * @param {TimelineTiming} [timing] - per-measure timing (built from
+     *   metadata.time_signature_changes); omit for a uniform grid
+     */
+    render(track, notation, ticksPerBeat = 480, timeSignature = '4/4', timing = null) {
         // Store for re-rendering on resize
         this._track = track;
         this._notation = notation;
         this._ticksPerBeat = ticksPerBeat;
         this._timeSignature = timeSignature;
+        this._timingParam = timing;
 
         this._renderInternal();
 
@@ -210,6 +333,20 @@ export class TabRenderer {
                 }, 150);
             });
             this._resizeObserver.observe(this.container);
+        }
+
+        // Re-render on theme change: SVG attributes bake colors in, so a
+        // toggle otherwise leaves the previous theme's chips and stems.
+        if (!this._themeObserver && typeof MutationObserver !== 'undefined') {
+            this._themeObserver = new MutationObserver(() => {
+                if (this._track && this._notation) {
+                    this._refreshThemeColors();
+                    this._renderInternal();
+                }
+            });
+            this._themeObserver.observe(document.documentElement, {
+                attributes: true, attributeFilter: ['data-theme'],
+            });
         }
     }
 
@@ -229,15 +366,32 @@ export class TabRenderer {
         this.beatCursors = [];
         this.rowData = [];
         this.ticksPerBeat = ticksPerBeat;         // For beat snapping
-        // Calculate ticks per measure from time signature (e.g., "4/4" -> 4 beats)
-        const beatsPerMeasure = parseInt(timeSignature.split('/')[0], 10) || 4;
-        this.ticksPerMeasure = ticksPerBeat * beatsPerMeasure;
+        // Default (den-aware) measure length; per-measure overrides below
+        this.ticksPerMeasure = measureTicksFor(timeSignature, ticksPerBeat);
         this._currentRowIndex = -1;               // Reset row tracking
 
         if (!track || !notation || notation.length === 0) {
             this.container.innerHTML = '<p style="color:#888;text-align:center;">No notation for this track</p>';
             return;
         }
+
+        // Per-measure timing: provided by the caller (ts-change aware) or a
+        // uniform fallback over the displayed measure numbers.
+        this.timing = this._timingParam || new TimelineTiming(
+            new MeasureTiming({ timeSignature, ticksPerBeat }),
+            identityTimeline(notation.reduce((mx, m) => Math.max(mx, m.measure), 1))
+        );
+
+        // Free-text / section-label headroom: when the notation carries
+        // display decorations (attachOtfDecorations), bump the top margin
+        // UNIFORMLY so every row gets a text band above the ending
+        // brackets. Uniform matters: the editor cursor derives its y-math
+        // from options.topMargin + a measured row height.
+        if (this._baseTopMargin === undefined) {
+            this._baseTopMargin = this.options.topMargin;
+        }
+        const hasTextBand = notation.some(m => (m.texts && m.texts.length) || m.section);
+        this.options.topMargin = this._baseTopMargin + (hasTextBand ? 32 : 0);
 
         // Calculate responsive layout
         this._calculateLayout();
@@ -254,6 +408,13 @@ export class TabRenderer {
             const rowIndex = Math.floor(rowStart / measuresPerRow);
             this.renderRow(rowMeasures, this.numStrings, staveHeight, track.tuning, rowIndex);
         }
+
+        // Layout consumers (editor cursor/grid overlays) must follow
+        // EVERY re-render — including the async ones this class triggers
+        // itself (debounced resize observer, Bravura font arrival) that
+        // callers can't see. Without this, overlays go stale and rulers
+        // drift off the notes.
+        this.onAfterRender?.();
     }
 
     /**
@@ -267,6 +428,10 @@ export class TabRenderer {
         if (this._resizeTimeout) {
             clearTimeout(this._resizeTimeout);
             this._resizeTimeout = null;
+        }
+        if (this._themeObserver) {
+            this._themeObserver.disconnect();
+            this._themeObserver = null;
         }
     }
 
@@ -301,14 +466,212 @@ export class TabRenderer {
         this.container.appendChild(info);
     }
 
+    /**
+     * Width of one measure, proportional to its tick length so short
+     * measures (pickups, mid-tune 2/4s) render tight instead of padding
+     * out a full-signature slot. Uniform files keep the exact base width.
+     */
+    _measureWidthFor(ticks) {
+        const base = this._computedMeasureWidth;
+        const defaultTicks = this.timing?.measureTiming?.defaultTicks || this.ticksPerMeasure;
+        if (!ticks || ticks === defaultTicks) return base;
+        return Math.max(60, Math.round(base * ticks / defaultTicks));
+    }
+
+    /**
+     * Time-signature glyph to print at the start of a display measure, or
+     * null. Printed at measure 1 (the GLOBAL signature — pickups are
+     * notated under the main signature, like TablEdit) and wherever the
+     * effective signature changes, including the reversion after a
+     * mid-tune short measure.
+     */
+    _signatureMarkFor(display) {
+        const t = this.timing;
+        const global = t?.measureTiming?.defaultSignature || this._timeSignature || '4/4';
+        if (display === 1) return global;
+        if (!t) return null;
+        const sigOf = (d) => d <= 1
+            ? global   // measure 1 counts as the global sig (pickup rule)
+            : t.measureTiming.signatureFor(t.originalAt(d));
+        const cur = sigOf(display);
+        return cur !== sigOf(display - 1) ? cur : null;
+    }
+
+    /**
+     * Load Bravura (SMuFL music font) once per page for engraved
+     * time-signature digits (U+E080..E089). Falls back to bold serif
+     * digits until/unless it loads (offline, jsdom, blocked CDN).
+     */
+    static _ensureBravura() {
+        if (TabRenderer._bravuraPromise) return TabRenderer._bravuraPromise;
+        try {
+            const style = document.createElement('style');
+            style.textContent =
+                "@font-face { font-family: 'Bravura'; " +
+                "src: url('https://cdn.jsdelivr.net/gh/steinbergmedia/bravura@latest/redist/woff/Bravura.woff2') format('woff2'); " +
+                "font-display: swap; }";
+            document.head.appendChild(style);
+            TabRenderer._bravuraPromise = document.fonts
+                ? document.fonts.load('28px Bravura').then(() => {
+                    TabRenderer._bravuraReady = document.fonts.check('28px Bravura');
+                }).catch(() => { TabRenderer._bravuraReady = false; })
+                : Promise.resolve();
+        } catch (e) {
+            TabRenderer._bravuraPromise = Promise.resolve();
+        }
+        return TabRenderer._bravuraPromise;
+    }
+
+    /**
+     * Horizontal room a signature glyph needs (wider for 12/8 etc.).
+     */
+    _sigInset(sig) {
+        const { num, den } = parseTimeSignature(sig);
+        const digits = Math.max(String(num).length, String(den).length);
+        return 16 + 16 * digits;
+    }
+
+    /**
+     * Edge-adornment layout for one measure — THE rule for anything drawn
+     * at a measure's edges (repeat signs, time signatures, future clefs/
+     * codas): each adornment contributes its footprint to the measure's
+     * width, leading ones push the note area right, trailing ones pad the
+     * right edge. The note area itself NEVER shrinks.
+     *
+     * Returns { leading, trailing, sigX } where sigX is the x-offset
+     * (relative to the measure start) at which the signature glyph zone
+     * begins.
+     */
+    static REPEAT_START_WIDTH = 14;
+    static REPEAT_END_WIDTH = 12;
+
+    _adornmentsFor(measure, signatureMark) {
+        const repeatLead = measure.repeatStart ? TabRenderer.REPEAT_START_WIDTH : 0;
+        const sigLead = signatureMark ? this._sigInset(signatureMark) : 0;
+        return {
+            leading: repeatLead + sigLead,
+            trailing: measure.repeatEnd ? TabRenderer.REPEAT_END_WIDTH : 0,
+            sigX: repeatLead,
+        };
+    }
+
+    /**
+     * Draw a stacked num/den time-signature at the measure start.
+     * With Bravura: SMuFL digits, sized to the tab staff, numerator
+     * centered in the top half and denominator in the bottom half
+     * (SMuFL timeSig glyphs are vertically centered on the baseline).
+     */
+    drawTimeSignature(svg, x, sig, opt) {
+        const { num, den } = parseTimeSignature(sig);
+        const span = (this.numStrings - 1) * opt.stringSpacing;
+        const midY = opt.topMargin + span / 2;
+        const cx = x + this._sigInset(sig) / 2;
+
+        const sigColor = opt.fretColor;
+
+        if (TabRenderer._bravuraReady) {
+            const pua = (n) => String(n).split('')
+                .map(d => String.fromCodePoint(0xE080 + Number(d))).join('');
+            // Compact centered stack (~2.7 string gaps tall, TablEdit-ish)
+            // rather than spanning the whole staff. SMuFL digits are ~0.5em
+            // tall and vertically centered on the baseline.
+            const sp = opt.stringSpacing;
+            for (const [glyphs, y] of [
+                [pua(num), midY - 0.7 * sp],
+                [pua(den), midY + 0.7 * sp],
+            ]) {
+                const text = this.createText(cx, y, glyphs, {
+                    fontSize: `${Math.round(2.6 * sp)}px`,
+                    fill: sigColor,
+                    textAnchor: 'middle'
+                });
+                text.setAttribute('class', 'time-signature');
+                text.setAttribute('font-family', 'Bravura');
+                svg.appendChild(text);
+            }
+            return;
+        }
+
+        // Fallback: engraved-ish bold serif digits, tight stack
+        for (const [value, y] of [[num, midY - 2], [den, midY + 13]]) {
+            const text = this.createText(cx, y, String(value), {
+                fontSize: '15px',
+                fill: sigColor,
+                fontWeight: '700',
+                textAnchor: 'middle'
+            });
+            text.setAttribute('class', 'time-signature');
+            text.setAttribute('font-family', "Georgia, 'Times New Roman', serif");
+            svg.appendChild(text);
+        }
+    }
+
     renderRow(measures, numStrings, height, tuning, rowIndex = 0) {
         const opt = this.options;
-        const measureWidth = this._computedMeasureWidth;
         // Add extra width for ending brackets if present
         const hasEndings = measures.some(m => m.ending);
         const endingHeight = hasEndings ? 18 : 0;
         const adjustedHeight = height + endingHeight;
-        const width = opt.leftMargin + measures.length * measureWidth + 20;
+
+        // Per-measure geometry (ts-change aware). Edge adornments grow the
+        // measure by their footprint — the note area never shrinks below
+        // the fit factor computed here: rows are packed by count at the
+        // base width, so a row carrying adornments (time signature,
+        // repeat signs) would otherwise overflow the container and clip.
+        // Absorb the excess by scaling this row's base widths down — but
+        // never below the editor's grid floor, whose overflow is
+        // deliberate (rows scroll).
+        const prelim = measures.map(m => {
+            const ticks = this.timing.ticksAt(m.measure);
+            const signatureMark = this._signatureMarkFor(m.measure);
+            const adorn = this._adornmentsFor(m, signatureMark);
+            return { ticks, signatureMark, adorn, base: this._measureWidthFor(ticks) };
+        });
+        const adornTotal = prelim.reduce((s, p) => s + p.adorn.leading + p.adorn.trailing, 0);
+        const baseTotal = prelim.reduce((s, p) => s + p.base, 0);
+        const rowAvailable = (this.container.clientWidth || 800) - opt.leftMargin - 20;
+        let fit = 1;
+        if (adornTotal > 0 && baseTotal + adornTotal > rowAvailable) {
+            fit = Math.max(0.5, (rowAvailable - adornTotal) / baseTotal);
+        }
+        const minBase = Math.max(60, opt.measureWidthFloor || 0);
+
+        let xCursor = opt.leftMargin;
+        const measureGeoms = measures.map((m, i) => {
+            const { ticks, signatureMark, adorn } = prelim[i];
+            const baseWidth = Math.max(minBase, Math.floor(prelim[i].base * fit));
+            const geomWidth = baseWidth + adorn.leading + adorn.trailing;
+            const noteW = baseWidth - 30;
+            // Visual centering: proportional layout leaves the last note's
+            // remaining duration as empty space on the right; split that
+            // leftover across both sides so the notes sit centered.
+            // The EDITOR disables this (centerNotes: false): centering
+            // varies per measure with its last event, so grid rulers
+            // derived from it break period at every barline (lines from
+            // neighboring measures land ~px apart — "doubled rulers").
+            // Editing wants one stable coordinate system: tick t always
+            // at the same relative x.
+            const lastTick = (m.events || []).reduce((mx, e) => Math.max(mx, e.tick), 0);
+            const noteOffset = opt.centerNotes === false
+                ? 0
+                : noteW * Math.max(0, 1 - lastTick / ticks) / 2;
+            const geom = {
+                display: m.measure,
+                x: xCursor,
+                width: geomWidth,
+                ticks,
+                startTick: this.timing.startTick(m.measure),
+                signatureMark,
+                sigX: xCursor + adorn.sigX,
+                noteX0: xCursor + adorn.leading + 15,
+                noteW,
+                noteOffset,
+            };
+            xCursor += geomWidth;
+            return geom;
+        });
+        const rowRight = xCursor;
+        const width = rowRight + 20;
 
         const rowDiv = document.createElement('div');
         rowDiv.className = 'stave-row';
@@ -327,6 +690,7 @@ export class TabRenderer {
             firstMeasure,
             lastMeasure,
             measureCount: measures.length,
+            measures: measureGeoms,
             height
         });
 
@@ -349,9 +713,10 @@ export class TabRenderer {
                 const label = pitch.replace(/\d/, '');
                 const text = this.createText(10, y + 4, label, {
                     fontSize: '11px',
-                    fill: '#666',
+                    fill: this.options.mutedColor,
                     fontWeight: '600'
                 });
+                text.setAttribute('class', 'string-label');
                 svg.appendChild(text);
             });
         }
@@ -362,7 +727,7 @@ export class TabRenderer {
             const y = opt.topMargin + s * opt.stringSpacing;
             const line = this.createLine(
                 opt.leftMargin - 10, y,
-                opt.leftMargin + measures.length * measureWidth, y,
+                rowRight, y,
                 opt.stringColor
             );
             svg.appendChild(line);
@@ -372,14 +737,29 @@ export class TabRenderer {
         const beamY = stringsBottom + opt.stemAreaHeight - 4;
 
         // Draw measures
-        measures.forEach((measure, mi) => {
-            const x = opt.leftMargin + mi * measureWidth;
+        // Slur/tie sources across the WHOLE row: ties legitimately cross
+        // barlines (split whole notes), so arcs are drawn at row scope
+        // after all measures are laid out.
+        const rowNotePositions = [];
 
+        // Annotation texts flow left-to-right across the row; when one
+        // would start inside the previous one, it hops to a second lane
+        // 11px higher ("C" at beat 1.5 under "Press F-12 ..." otherwise
+        // prints on top of it).
+        const textLaneEnds = [-Infinity, -Infinity];
+
+        measures.forEach((measure, mi) => {
+            const geom = measureGeoms[mi];
+            const x = geom.x;
+            const measureWidth = geom.width;
+
+            // Barlines span the staff only (top string to bottom string),
+            // like TablEdit — not the stem/beam area below.
             // Draw repeat start barline (|:) or regular barline
             if (measure.repeatStart) {
-                this.drawRepeatStartBarline(svg, x, opt.topMargin, beamY + 4, opt);
+                this.drawRepeatStartBarline(svg, x, opt.topMargin, stringsBottom, opt);
             } else {
-                const barLine = this.createLine(x, opt.topMargin, x, beamY + 4, opt.measureLineColor);
+                const barLine = this.createLine(x, opt.topMargin, x, stringsBottom, opt.measureLineColor);
                 svg.appendChild(barLine);
             }
 
@@ -387,34 +767,106 @@ export class TabRenderer {
             // (Only for mid-row repeat ends; final bar handled separately)
             if (measure.repeatEnd && mi < measures.length - 1) {
                 const endX = x + measureWidth;
-                this.drawRepeatEndBarline(svg, endX, opt.topMargin, beamY + 4, opt);
+                this.drawRepeatEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
             }
 
-            // Draw ending bracket if this measure is part of an ending
-            if (measure.ending) {
-                this.drawEndingBracket(svg, x, measureWidth, opt.topMargin, measure.ending, opt);
+            // Draw ONE ending bracket per contiguous run of same-numbered
+            // ending measures (spanning the whole run), not one per measure —
+            // a long 1st ending (e.g. a 21-bar volta) otherwise stamps "1." on
+            // every bar. Single-measure endings render identically to before.
+            if (measure.ending && (mi === 0 || measures[mi - 1].ending !== measure.ending)) {
+                let runEnd = mi;
+                while (runEnd + 1 < measures.length
+                       && measures[runEnd + 1].ending === measure.ending) {
+                    runEnd++;
+                }
+                const runWidth = (measureGeoms[runEnd].x + measureGeoms[runEnd].width) - x;
+                // Label only at the volta's true start; continuation runs on
+                // later rows draw the bracket line without re-stamping "N."
+                this.drawEndingBracket(svg, x, runWidth, opt.topMargin, measure.ending,
+                    opt, !!measure.endingStart);
+            }
+
+            // Time-signature glyph at signature changes (and measure 1)
+            if (geom.signatureMark) {
+                this.drawTimeSignature(svg, geom.sigX, geom.signatureMark, opt);
             }
 
             // Measure number (offset if repeat sign present)
             const numX = measure.repeatStart ? x + 12 : x + 3;
             const numText = this.createText(numX, opt.topMargin - 8, measure.measure.toString(), {
                 fontSize: '10px',
-                fill: '#999'
+                fill: this.options.mutedColor
             });
             svg.appendChild(numText);
+
+            // Section label (reading-list entry name — "Intro", "Part A1")
+            // at the very top of the text band, bold like TablEdit.
+            if (measure.section) {
+                const secText = this.createText(x + 3, 12, measure.section, {
+                    fontSize: '12px',
+                    fill: opt.fretColor,
+                    fontWeight: '700'
+                });
+                secText.setAttribute('class', 'section-label');
+                svg.appendChild(secText);
+            }
+
+            // Placed free-text annotations ("Long Choke", chord letters)
+            // above the ending-bracket band, x-positioned by tick and
+            // lane-stacked on overlap.
+            if (measure.texts && measure.texts.length) {
+                for (const t of measure.texts) {
+                    const tx = geom.noteX0 + geom.noteOffset
+                        + (t.tick / geom.ticks) * geom.noteW;
+                    const lane = tx >= textLaneEnds[0] + 6 ? 0
+                        : (tx >= textLaneEnds[1] + 6 ? 1 : 0);
+                    textLaneEnds[lane] = tx + 5.5 * t.text.length;
+                    const annText = this.createText(tx, opt.topMargin - 34 - lane * 11, t.text, {
+                        fontSize: '10px',
+                        fill: opt.fretColor,
+                    });
+                    annText.setAttribute('class', 'annotation-text');
+                    svg.appendChild(annText);
+                }
+            }
+
+            // Rest glyphs in gaps AFTER duration-carrying notes.
+            // TablEdit's tab staff hides rests, leaving the rhythm
+            // implied by the written durations alone — we draw them
+            // (options.showRests, default on).
+            if (opt.showRests && TabRenderer._bravuraReady && measure.events) {
+                const restY = opt.topMargin
+                    + ((this.numStrings - 1) * opt.stringSpacing) / 2;
+                const restAreaStart = geom.noteX0 + geom.noteOffset;
+                for (const span of restSpansForMeasure(measure.events, geom.ticks)) {
+                    let t = span.start;
+                    for (const g of restGlyphSequence(span.len)) {
+                        const rx = restAreaStart + (t / geom.ticks) * geom.noteW + 6;
+                        const rest = this.createText(rx, restY, g.glyph, {
+                            fontSize: `${Math.round(2.2 * opt.stringSpacing)}px`,
+                            fill: opt.mutedColor,
+                            textAnchor: 'start',
+                        });
+                        rest.setAttribute('class', 'rest-glyph');
+                        rest.setAttribute('font-family', 'Bravura');
+                        svg.appendChild(rest);
+                        t += g.ticks;
+                    }
+                }
+            }
 
             // Collect notes with positions
             const notePositions = [];
             if (measure.events) {
-                // Add extra left margin for repeat start to make room for |: symbol
-                const repeatStartOffset = measure.repeatStart ? 12 : 0;
-                const noteAreaStart = x + 15 + repeatStartOffset;
-                const noteAreaWidth = measureWidth - 30 - repeatStartOffset;
+                const noteAreaStart = geom.noteX0 + geom.noteOffset;
+                const noteAreaWidth = geom.noteW;
 
                 measure.events.forEach(event => {
-                    const ticksPerPosition = this.ticksPerMeasure / 16;  // 16 positions per measure
-                    const pos16th = Math.floor(event.tick / ticksPerPosition);
-                    const posRatio = event.tick / this.ticksPerMeasure;
+                    // 16th-note slot on the quarter grid (ts-independent)
+                    const pos16th = Math.floor(event.tick / (this.ticksPerBeat / 4));
+                    // Position within THIS measure's own tick length
+                    const posRatio = event.tick / geom.ticks;
                     const noteX = noteAreaStart + posRatio * noteAreaWidth;
 
                     let lowestString = 0;
@@ -424,8 +876,8 @@ export class TabRenderer {
 
                     notePositions.push({ x: noteX, pos16th, lowestString, event });
 
-                    // Calculate absolute tick for this event
-                    const absTick = (measure.measure - 1) * this.ticksPerMeasure + event.tick;
+                    // Absolute tick accumulates any short measures before this one
+                    const absTick = geom.startTick + event.tick;
 
                     // Track elements for this event (for highlighting)
                     const eventElements = [];
@@ -436,8 +888,14 @@ export class TabRenderer {
                         const noteY = opt.topMargin + stringIndex * opt.stringSpacing;
 
                         // Wrap tied notes in brackets [7] to indicate tie continuation
-                        const fretStr = note.tie ? `[${note.f}]` : note.f.toString();
-                        const bgWidth = note.tie ? 22 : (fretStr.length > 1 ? 16 : 12);
+                        // Dead/muted notes (chops) draw the standard ×
+                        // in place of the fret digit. Bend/choke TARGETS are
+                        // bracketed too (TablEdit style: the source note is
+                        // picked, the target is the choked pitch — the
+                        // tilted-up arrow is drawn in renderSlurs).
+                        const fretStr = note.tech === 'x' ? '×'
+                            : (note.tie || note.tech === 'b') ? `[${note.f}]` : note.f.toString();
+                        const bgWidth = (note.tie || note.tech === 'b') ? 22 : (fretStr.length > 1 ? 16 : 12);
                         const bg = this.createRect(noteX - bgWidth/2, noteY - 7, bgWidth, 14, opt.fretBgColor);
                         bg.setAttribute('class', 'note-bg');
                         bg.dataset.absTick = absTick;
@@ -456,10 +914,15 @@ export class TabRenderer {
                         // Store elements for highlighting
                         eventElements.push({ bg, text: fretText });
 
-                        if (note.tech && note.tech !== 'h' && note.tech !== 'p') {
+                        // Render technique symbols that aren't handled by renderSlurs
+                        // (h, p, / are slur arcs; 'b' is the bend arrow — both
+                        // drawn in renderSlurs)
+                        if (note.tech && note.tech !== 'h' && note.tech !== 'p'
+                                && note.tech !== '/' && note.tech !== 'x'
+                                && note.tech !== 'b') {
                             const techText = this.createText(noteX, noteY - 10, note.tech, {
                                 fontSize: '9px',
-                                fill: '#888',
+                                fill: opt.mutedColor,
                                 textAnchor: 'middle'
                             });
                             svg.appendChild(techText);
@@ -470,13 +933,37 @@ export class TabRenderer {
                             const fingerY = beamY + 12;
                             const fingerText = this.createText(noteX, fingerY, note.finger, {
                                 fontSize: '10px',
-                                fill: '#666',
+                                fill: opt.mutedColor,
                                 fontWeight: '500',
                                 textAnchor: 'middle',
                                 fontStyle: 'italic'
                             });
                             fingerText.setAttribute('class', 'finger-text');
                             svg.appendChild(fingerText);
+                        }
+
+                        // Fretting-hand digit, circled (TablEdit style),
+                        // below the pluck letter when both are present.
+                        if (note.lh !== undefined && note.lh !== null
+                                && this.options.showFingerings !== false) {
+                            const cy = beamY + (note.finger ? 24 : 10);
+                            const circle = document.createElementNS(
+                                'http://www.w3.org/2000/svg', 'circle');
+                            circle.setAttribute('cx', noteX);
+                            circle.setAttribute('cy', cy);
+                            circle.setAttribute('r', 6);
+                            circle.setAttribute('fill', 'none');
+                            circle.setAttribute('stroke', opt.mutedColor);
+                            circle.setAttribute('stroke-width', '1');
+                            circle.setAttribute('class', 'lh-finger-circle');
+                            svg.appendChild(circle);
+                            const lhText = this.createText(noteX, cy + 3, String(note.lh), {
+                                fontSize: '8px',
+                                fill: opt.mutedColor,
+                                textAnchor: 'middle'
+                            });
+                            lhText.setAttribute('class', 'lh-finger-text');
+                            svg.appendChild(lhText);
                         }
                     });
 
@@ -492,19 +979,30 @@ export class TabRenderer {
                 });
             }
 
-            this.renderSlurs(svg, notePositions, opt);
-            this.renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, measure.events);
+            rowNotePositions.push(...notePositions);
+            // Beam ("ligature") groups follow the FELT beat of this
+            // measure's signature: quarters in 4/4, halves in 2/2 (or in
+            // two-feel), so cut time beams runs of 4 eighths.
+            const groupTicks = this.timing?.measureTiming
+                ? this.timing.measureTiming.beatTicksFor(this.timing.originalAt(measure.measure))
+                : this.ticksPerBeat;
+            this.renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, measure.events, geom.ticks, groupTicks);
         });
 
         // Final bar line - check if last measure has repeat end
-        const endX = opt.leftMargin + measures.length * measureWidth;
+        const endX = rowRight;
         const finalMeasure = measures[measures.length - 1];
         if (finalMeasure && finalMeasure.repeatEnd) {
-            this.drawRepeatEndBarline(svg, endX, opt.topMargin, beamY + 4, opt);
+            this.drawRepeatEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
         } else {
-            const endBar = this.createLine(endX, opt.topMargin, endX, beamY + 4, opt.measureLineColor);
+            const endBar = this.createLine(endX, opt.topMargin, endX, stringsBottom, opt.measureLineColor);
             svg.appendChild(endBar);
         }
+
+        // Row-scope slurs/ties: cross-barline ties get their arcs.
+        // (Cross-ROW ties still don't — half-arc into the margin is a
+        // possible future nicety.)
+        this.renderSlurs(svg, rowNotePositions, opt);
 
         rowDiv.appendChild(svg);
         this.container.appendChild(rowDiv);
@@ -530,16 +1028,66 @@ export class TabRenderer {
 
         // For each string, when we see a note with tech or tie, draw slur from previous note
         Object.values(allNotesByString).forEach(notes => {
+            // A row-LEADING tie continuation's antecedent lives on the
+            // previous row — draw the incoming half-arc from the margin.
+            if (notes.length > 0 && notes[0].tie === true) {
+                const n = notes[0];
+                const y = n.y - 8;
+                const half = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                half.setAttribute('d', `M ${n.x - 24} ${y - 6} Q ${n.x - 12} ${y - 8} ${n.x - 5} ${y}`);
+                half.setAttribute('fill', 'none');
+                half.setAttribute('stroke', this.options.mutedColor);
+                half.setAttribute('stroke-width', '1');
+                half.setAttribute('class', 'tie-arc tie-arc-in');
+                svg.appendChild(half);
+            }
+
             for (let i = 1; i < notes.length; i++) {
                 const n2 = notes[i];
                 const hasTechnique = n2.tech === 'h' || n2.tech === 'p' || n2.tech === '/';
                 const hasTie = n2.tie === true;
 
+                // Bend/choke: a tilted-up arrow from the SOURCE note (the
+                // one being bent) to the bracketed target, with the bend
+                // amount above the tip (TablEdit draws "½" for its
+                // quarter-tone choke; playback matches BEND_SEMITONES).
+                if (n2.tech === 'b') {
+                    const n1 = notes[i - 1];
+                    if (n2.x - n1.x > 60) continue;
+                    const x1 = n1.x + 9, y1 = n1.y - 2;
+                    const x2 = n2.x - 8, y2 = n2.y - 13;
+                    const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    // shaft + solid head pointing up-right along the shaft
+                    const ang = Math.atan2(y2 - y1, x2 - x1);
+                    const hx1 = x2 - 7 * Math.cos(ang - 0.45), hy1 = y2 - 7 * Math.sin(ang - 0.45);
+                    const hx2 = x2 - 7 * Math.cos(ang + 0.45), hy2 = y2 - 7 * Math.sin(ang + 0.45);
+                    arrow.setAttribute('d',
+                        `M ${x1} ${y1} L ${x2} ${y2} M ${hx1} ${hy1} L ${x2} ${y2} L ${hx2} ${hy2}`);
+                    arrow.setAttribute('fill', 'none');
+                    arrow.setAttribute('stroke', this.options.mutedColor);
+                    arrow.setAttribute('stroke-width', '1.2');
+                    arrow.setAttribute('class', 'bend-arrow');
+                    svg.appendChild(arrow);
+                    const amt = this.createText(x2 + 1, y2 - 3, '½', {
+                        fontSize: '9px',
+                        fill: this.options.mutedColor,
+                        textAnchor: 'middle'
+                    });
+                    amt.setAttribute('class', 'bend-amount');
+                    svg.appendChild(amt);
+                    continue;
+                }
+
                 if (!hasTechnique && !hasTie) continue;
 
                 const n1 = notes[i - 1];
                 const xDist = n2.x - n1.x;
-                if (xDist > 60) continue; // Max distance for slur
+                // Techniques (h/p/slide) connect adjacent notes — keep the
+                // tight cap. TIES legitimately span barlines (a whole note
+                // entered mid-measure splits across it), so allow a full
+                // measure's reach.
+                const maxDist = hasTie ? 400 : 60;
+                if (xDist > maxDist) continue;
 
                 // For closely-spaced notes (like grace note slides), reduce the offsets
                 // so the slur is still visible
@@ -551,8 +1099,9 @@ export class TabRenderer {
                 const slur = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                 slur.setAttribute('d', `M ${n1.x + noteOffset} ${slurY} Q ${midX} ${slurY - curveDepth} ${n2.x - noteOffset} ${slurY}`);
                 slur.setAttribute('fill', 'none');
-                slur.setAttribute('stroke', hasTie ? '#888' : '#555');
+                slur.setAttribute('stroke', this.options.mutedColor);
                 slur.setAttribute('stroke-width', hasTie ? '1' : '1.5');
+                slur.setAttribute('class', hasTie ? 'tie-arc' : 'tech-slur');
                 svg.appendChild(slur);
 
                 // Draw label for techniques (not for ties)
@@ -564,7 +1113,7 @@ export class TabRenderer {
 
                     const labelText = this.createText(midX, slurY - curveDepth - 2, label, {
                         fontSize: '9px',
-                        fill: '#555',
+                        fill: this.options.mutedColor,
                         fontWeight: '600',
                         textAnchor: 'middle'
                     });
@@ -645,26 +1194,81 @@ export class TabRenderer {
     /**
      * Draw ending bracket with number (e.g., [1.  or [2. )
      */
-    drawEndingBracket(svg, x, measureWidth, topY, endingNumber, opt) {
+    drawEndingBracket(svg, x, measureWidth, topY, endingNumber, opt, showLabel = true) {
         const bracketY = topY - 25;  // Position above the measure number
         const bracketHeight = 10;
 
-        // Left vertical line of bracket
-        svg.appendChild(this.createLine(x + 2, bracketY, x + 2, bracketY + bracketHeight, opt.measureLineColor));
+        // Left vertical hook only at the volta's start (continuation runs on
+        // later rows are just a horizontal line).
+        if (showLabel) {
+            svg.appendChild(this.createLine(x + 2, bracketY, x + 2, bracketY + bracketHeight, opt.measureLineColor));
+        }
 
         // Horizontal line
         svg.appendChild(this.createLine(x + 2, bracketY, x + measureWidth - 5, bracketY, opt.measureLineColor));
 
-        // Ending number
-        const label = this.createText(x + 10, bracketY + bracketHeight - 2, `${endingNumber}.`, {
-            fontSize: '11px',
-            fill: opt.measureLineColor,
-            fontWeight: '600'
-        });
-        svg.appendChild(label);
+        // Ending number — only at the start of the ending
+        if (showLabel) {
+            const label = this.createText(x + 10, bracketY + bracketHeight - 2, `${endingNumber}.`, {
+                fontSize: '11px',
+                fill: opt.measureLineColor,
+                fontWeight: '600'
+            });
+            svg.appendChild(label);
+        }
     }
 
-    renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, events = []) {
+    /**
+     * Compute beam ("ligature") runs: one group per FELT beat of the
+     * measure's signature (quarters in 4/4, halves in 2/2/two-feel), but
+     * only notes lasting a dotted eighth or less (gap to the next event
+     * <= 3 sixteenth slots) may be beamed — a quarter note inside a
+     * half-note group keeps its plain stem instead of masquerading as an
+     * eighth (m6 of Down Yonder in two feel). Runs also split on gaps
+     * longer than a dotted eighth.
+     *
+     * @returns {Array<Array>} arrays of notePositions to beam together
+     */
+    _beamRuns(notePositions, groupTicks = null, measureTicks = null) {
+        const slotTicks = this.ticksPerBeat / 4;
+        const ticksInMeasure = measureTicks || this.ticksPerMeasure;
+        const perGroup = (groupTicks && groupTicks > 0) ? groupTicks : this.ticksPerBeat;
+        const slotsPerGroup = Math.max(1, Math.round(perGroup / slotTicks));
+        const totalSlots = Math.max(1, Math.round(ticksInMeasure / slotTicks));
+        const groupCount = Math.max(1, Math.ceil(totalSlots / slotsPerGroup));
+
+        // Duration in slots = gap to the next event (end of measure for
+        // the last one) — OTF events carry no explicit durations.
+        const sorted = [...notePositions].sort((a, b) => a.pos16th - b.pos16th);
+        const durSlots = new Map();
+        sorted.forEach((np, i) => {
+            const nextPos = i + 1 < sorted.length ? sorted[i + 1].pos16th : totalSlots;
+            durSlots.set(np, nextPos - np.pos16th);
+        });
+
+        const runs = [];
+        for (let g = 0; g < groupCount; g++) {
+            const groupNotes = sorted.filter(np =>
+                Math.floor(np.pos16th / slotsPerGroup) === g);
+            let run = [];
+            const flush = () => { if (run.length >= 2) runs.push(run); run = []; };
+            for (const np of groupNotes) {
+                if (durSlots.get(np) > 3) {   // quarter or longer: never beamed
+                    flush();
+                    continue;
+                }
+                if (run.length &&
+                    np.pos16th - run[run.length - 1].pos16th > 3) {
+                    flush();                  // gap too long: new run
+                }
+                run.push(np);
+            }
+            flush();
+        }
+        return runs;
+    }
+
+    renderStemsAndBeams(svg, notePositions, numStrings, opt, beamY, events = [], measureTicks = null, groupTicks = null) {
         if (notePositions.length === 0) return;
 
         // First, detect triplet groups based on actual tick spacing
@@ -673,13 +1277,9 @@ export class TabRenderer {
         const tripletNotes = new Set();
         tripletGroups.forEach(group => group.forEach(np => tripletNotes.add(np)));
 
-        const beats = [[], [], [], []];
-        notePositions.forEach(np => {
-            // Skip notes that are part of triplet groups
-            if (tripletNotes.has(np)) return;
-            const beatIndex = Math.floor(np.pos16th / 4);
-            if (beatIndex >= 0 && beatIndex < 4) beats[beatIndex].push(np);
-        });
+        const beats = this._beamRuns(
+            notePositions.filter(np => !tripletNotes.has(np)),
+            groupTicks, measureTicks);
 
         const beamedNotes = new Set();
 
@@ -780,6 +1380,19 @@ export class TabRenderer {
             let gapPositions = 4;
             if (sortedIdx < sortedByPos.length - 1) {
                 gapPositions = sortedByPos[sortedIdx + 1].pos16th - np.pos16th;
+            }
+            // Explicit written durations take precedence over gap
+            // inference: a chop eighth followed by an eighth REST was
+            // drawn with a quarter's plain stem while the dur-aware
+            // rest pass filled the gap beside it (jerusalem-ridge-
+            // ensemble m14 read as "quarter + eighth rest"). Gap
+            // inference remains the fallback for duration-less docs.
+            const durs = (np.event?.notes || [])
+                .map(n => n.dur).filter(Boolean);
+            if (durs.length) {
+                const d = Math.max(...durs);
+                gapPositions = d >= 1920 ? 16 : d >= 960 ? 8
+                    : d >= 480 ? 4 : d >= 240 ? 2 : 1;
             }
 
             const stemStartY = opt.topMargin + (np.lowestString - 1) * opt.stringSpacing + 7;
@@ -1060,17 +1673,25 @@ export class TabRenderer {
     updateBeatCursor(absTick, options = {}) {
         const { snapToBeats = true, autoScroll = true } = options;
         const opt = this.options;
-        const measureWidth = this._computedMeasureWidth;
 
-        // Snap to beat boundaries if enabled
-        let displayTick = absTick;
+        // Locate the display measure through the ts-aware timing map
+        const loc = this.timing
+            ? this.timing.locate(absTick)
+            : {
+                display: Math.floor(absTick / this.ticksPerMeasure) + 1,
+                tickInMeasure: absTick % this.ticksPerMeasure,
+            };
+        const measure = loc.display;
+        let tickInMeasure = loc.tickInMeasure;
+
+        // Snap to the FELT beat of this measure's signature: quarters in
+        // 4/4, halves in 2/2 / two feel — the cursor moves in two, not four.
         if (snapToBeats) {
-            displayTick = Math.floor(absTick / this.ticksPerBeat) * this.ticksPerBeat;
+            const beatTicks = this.timing?.measureTiming
+                ? this.timing.measureTiming.beatTicksFor(loc.original ?? measure)
+                : this.ticksPerBeat;
+            tickInMeasure = Math.floor(tickInMeasure / beatTicks) * beatTicks;
         }
-
-        // Calculate which measure and position within measure
-        const measure = Math.floor(displayTick / this.ticksPerMeasure) + 1;
-        const tickInMeasure = displayTick % this.ticksPerMeasure;
 
         // Find which row this measure is on
         const rowData = this.rowData.find(r =>
@@ -1082,11 +1703,15 @@ export class TabRenderer {
             return;
         }
 
-        // Calculate X position
-        const measureIndex = measure - rowData.firstMeasure;
-        const posRatio = tickInMeasure / this.ticksPerMeasure;
-        const measureX = opt.leftMargin + measureIndex * measureWidth;
-        const x = measureX + 15 + posRatio * (measureWidth - 30);
+        // Calculate X position from the measure's own geometry
+        const geom = rowData.measures?.find(g => g.display === measure);
+        if (!geom) {
+            this.hideBeatCursor();
+            return;
+        }
+        const posRatio = tickInMeasure / geom.ticks;
+        const x = (geom.noteX0 ?? geom.x + 15) + (geom.noteOffset ?? 0)
+            + posRatio * (geom.noteW ?? geom.width - 30);
 
         // Show cursor on correct row, hide others
         this.beatCursors.forEach(({ rowIndex, cursor }) => {

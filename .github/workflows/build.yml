@@ -12,6 +12,7 @@ on:
       - "Process Song Submission"
       - "Process Song Correction"
       - "Process Tune Request"
+      - "Sync Deleted Songs"
     types: [completed]
     branches: [main]
 
@@ -50,6 +51,12 @@ jobs:
 
       - name: Run unit tests
         run: npm test
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Run parser tests (pytest)
+        run: uv run --extra dev pytest -q
 
   deploy:
     needs: verify

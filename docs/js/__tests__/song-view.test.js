@@ -53,7 +53,6 @@ vi.mock('../state.js', () => ({
     abcIsPlaying: false,
     setAbcIsPlaying: vi.fn(),
     fullscreenMode: false,
-    setFullscreenMode: vi.fn(),
     listContext: null,
     setListContext: vi.fn()
 }));

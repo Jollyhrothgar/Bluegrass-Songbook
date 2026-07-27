@@ -64,6 +64,9 @@ from build_index import (
     KEYS,
 )
 
+from curation import (apply_curation, filter_suppressed, load_registry,
+                      load_prune_list, apply_index_prune, apply_tag_exclusions)
+
 
 def parse_chordpro_content(content: str) -> dict:
     """Extract lyrics, chords, and ABC content from ChordPro content."""
@@ -184,11 +187,42 @@ def compute_group_id(title: str, artist: str, lyrics: str) -> str:
     base = normalize_title(title)
     base_hash = hashlib.md5(base.encode()).hexdigest()[:12]
 
-    # Lyrics hash to distinguish different songs with same title
-    lyrics_norm = normalize_lyrics(lyrics[:200] if lyrics else '')
+    # Lyrics hash to distinguish different songs with same title.
+    # Normalize BEFORE truncating: a raw [:200] window shifts with stray
+    # whitespace/punctuation, splitting true duplicates into different
+    # groups (e.g. two "Misty" covers differing by one double-space).
+    lyrics_norm = normalize_lyrics(lyrics or '')[:200]
     lyrics_hash = hashlib.md5(lyrics_norm.encode()).hexdigest()[:8]
 
     return f"{base_hash}_{lyrics_hash}"
+
+
+def _tab_provenance_mismatch(otf_path: Path, prov_source_id):
+    """Detect an OTF built from the wrong TEF.
+
+    Returns ``(prov_id, {embedded_ids})`` when the OTF's ``x_source`` names a
+    different source tab than ``prov_source_id`` (from work.yaml), else None.
+
+    Conservative by design: only flags when BOTH a provenance source_id and an
+    embedded TEF id are present and disjoint. Tabs without ``x_source`` (older
+    imports) or without provenance never trip the gate, so enabling it can't
+    break the existing corpus — it only catches genuine mis-mappings.
+    """
+    if not prov_source_id:
+        return None
+    try:
+        data = json.loads(otf_path.read_text())
+    except Exception:
+        return None
+    xsrc = data.get('x_source') or {}
+    # x_source records the origin TEF as a bare "{id}.tef"/download filename in
+    # source_file, or a banjo-hangout url; the numeric tab id is embedded in
+    # either form.
+    hay = ' '.join(str(xsrc.get(k, '')) for k in ('source_file', 'url', 'source_url'))
+    ids = set(re.findall(r'\d{4,6}', hay))
+    if not ids or str(prov_source_id) in ids:
+        return None
+    return (str(prov_source_id), ids)
 
 
 def build_song_from_work(work_dir: Path) -> dict:
@@ -510,9 +544,10 @@ def fuzzy_group_songs(songs: list) -> list:
     for norm_title, group_ids in title_to_groups.items():
         if len(group_ids) < 2:
             continue
-        gid_list = list(group_ids)
-        # Pick canonical (most songs)
-        canonical = max(gid_list, key=lambda g: len(by_group.get(g, [])))
+        gid_list = sorted(group_ids)
+        # Pick canonical (most songs; group_id as a stable tiebreaker so the
+        # choice doesn't depend on set iteration order / PYTHONHASHSEED).
+        canonical = max(gid_list, key=lambda g: (len(by_group.get(g, [])), g))
         for gid in gid_list:
             if gid == canonical or gid in merge_map:
                 continue
@@ -562,11 +597,12 @@ def fuzzy_group_songs(songs: list) -> list:
                         break
 
                 if should_merge_pair:
-                    # Pick the canonical group_id (prefer the one with more songs)
+                    # Pick the canonical group_id (most songs; group_id as a
+                    # stable tiebreaker — see pre-pass note above).
                     all_groups = groups1 | groups2
-                    canonical = max(all_groups, key=lambda g: len(by_group.get(g, [])))
+                    canonical = max(all_groups, key=lambda g: (len(by_group.get(g, [])), g))
 
-                    for gid in all_groups:
+                    for gid in sorted(all_groups):
                         if gid != canonical:
                             merge_map[gid] = canonical
 
@@ -661,22 +697,24 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
         for work_id, error in errors:
             print(f"  {work_id}: {error}")
 
-    # Filter out soft-deleted songs
+    # Filter out suppressed songs (curation registry ∪ soft-deleted list)
+    registry = load_registry(Path('.'))
+    deleted_songs = {}
     deleted_songs_file = Path('docs/data/deleted_songs.json')
     if deleted_songs_file.exists():
         with open(deleted_songs_file) as f:
             deleted_songs = json.load(f)
-        if deleted_songs:
-            original_count = len(songs)
-            songs = [s for s in songs if s['id'] not in deleted_songs]
-            deleted_count = original_count - len(songs)
-            if deleted_count > 0:
-                print(f"Excluded {deleted_count} soft-deleted songs")
+    original_count = len(songs)
+    songs = filter_suppressed(songs, deleted_songs, registry)
+    excluded_count = original_count - len(songs)
+    if excluded_count > 0:
+        print(f"Excluded {excluded_count} suppressed/soft-deleted songs")
 
     # Copy tablature files to docs/data/tabs/
     tabs_dir = Path('docs/data/tabs')
     tabs_dir.mkdir(parents=True, exist_ok=True)
     tabs_copied = 0
+    tab_provenance_mismatches = []
     for song in songs:
         for tab_part in song.get('tablature_parts', []):
             # tab_part['file'] is like "data/tabs/arkansas-traveler-banjo.otf.json"
@@ -685,13 +723,35 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
             work_id = song['id']
             instrument = tab_part.get('instrument', 'banjo')
             source_path = works_dir / work_id / f"{instrument}.otf.json"
-            if source_path.exists() and (not dest_path.exists() or
+            if not source_path.exists():
+                continue
+
+            # Integrity gate: the OTF must actually come from the TEF named in
+            # this part's provenance. A conversion/import that pairs the wrong
+            # TEF with a work dir (e.g. a mismatched convert_single call) would
+            # otherwise ship a work labelled one tune but carrying another's
+            # notes — and pass CI silently. Fail the build instead.
+            mismatch = _tab_provenance_mismatch(source_path, tab_part.get('source_id'))
+            if mismatch:
+                tab_provenance_mismatches.append((work_id, instrument, mismatch))
+                continue  # never publish an OTF that fails the provenance gate
+
+            if (not dest_path.exists() or
                     source_path.stat().st_mtime > dest_path.stat().st_mtime):
                 dest_path.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source_path, dest_path)
                 tabs_copied += 1
     if tabs_copied:
         print(f"Copied {tabs_copied} tablature files to docs/data/tabs/")
+
+    if tab_provenance_mismatches:
+        print("\nERROR: tablature provenance mismatch — an OTF was built from "
+              "the wrong TEF (its x_source id disagrees with work.yaml "
+              "provenance.source_id). Regenerate from the correct TEF:")
+        for work_id, instrument, (prov_id, otf_ids) in tab_provenance_mismatches:
+            print(f"  {work_id}/{instrument}.otf.json: "
+                  f"provenance source_id={prov_id!r} but OTF x_source has {sorted(otf_ids)}")
+        raise SystemExit(1)
 
     # Copy document files to docs/data/docs/
     docs_dir = Path('docs/data/docs')
@@ -801,6 +861,27 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     if fuzzy_grouping:
         songs = fuzzy_group_songs(songs)
 
+    # Editorial curation (curation/registry.yaml): remap pinned groups to
+    # stable grp:<canonical-id> ids and mark canonical/variant rows.
+    # Runs unconditionally — even with --skip-fuzzy — so pins always apply.
+    songs = apply_curation(songs, registry)
+
+    # Jam-repertoire prune (curation/index_prune.csv): stamp indexed:false
+    # on non-bluegrass rows so search/collections skip them. Non-destructive:
+    # rows stay in the index (deep links, lists, groups keep working), and
+    # user-contributed works are never pruned. Rescues: registry keep: map.
+    prune_ids = load_prune_list(Path('.'))
+    songs = apply_index_prune(songs, prune_ids, registry)
+    pruned_count = sum(1 for s in songs if s.get('indexed') is False)
+    if prune_ids:
+        print(f"  Index prune: {pruned_count} works marked indexed:false "
+              f"({len(prune_ids)} listed)")
+
+    # Editorial tag exclusions (registry tag_exclusions): e.g. strip
+    # BluegrassStandard from country/pop mis-tags. Runs after all tag
+    # enrichment so exclusions always win.
+    songs = apply_tag_exclusions(songs, registry)
+
     # Deduplicate (by content for lead sheets, by id for tablature-only)
     seen_content = {}
     unique_songs = []
@@ -820,6 +901,12 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
 
     songs = unique_songs
     print(f"Indexed {len(songs)} songs ({duplicates} duplicates removed)")
+
+    # Deterministic output order. Several upstream passes reorder `songs`
+    # (imap_unordered worker completion, tag enrichment rebuilding the list),
+    # so sort by id right before writing to keep index.jsonl byte-stable
+    # across builds — avoids whole-file churn in git diffs.
+    songs.sort(key=lambda s: str(s.get('id', '')))
 
     # Write index
     output_file.parent.mkdir(parents=True, exist_ok=True)

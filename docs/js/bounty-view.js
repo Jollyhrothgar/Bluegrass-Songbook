@@ -1,10 +1,116 @@
-// BountyView - Bounty page showing placeholder works + part-level bounties
-// Two data sources: (1) placeholder works needing everything, (2) Supabase bounties on existing works
+// BountyView - Bounty page: the wanted list of missing jam standards +
+// placeholder works + part-level bounties.
+// Data sources: (1) docs/data/wanted_songs.json — canonical jam repertoire
+// the songbook is missing (from the cover-coverage gap analysis), (2)
+// placeholder works needing everything, (3) Supabase bounties on works.
 
 import { allSongs, bountyIndex, getBountyWorkCount } from './state.js';
 import { isPlaceholder, escapeHtml, requireLogin } from './utils.js';
 import { formatTagName } from './tags.js';
 import { openAddSongPicker } from './add-song-picker.js';
+
+// The wanted list (fetched once; null = not loaded yet)
+let wantedSongs = null;
+let wantedFetchStarted = false;
+let showAllWantedVocals = false;
+let showAllPartGaps = false;
+let showAllChordGaps = false;
+
+const WANTED_VOCAL_PREVIEW = 24;
+const PART_GAP_PREVIEW = 24;
+
+const INSTRUMENTAL_TYPES = new Set(['Fiddle Tune', 'Instrumental', 'Old-Time']);
+
+function tagNames(song) {
+    const t = song.tags;
+    if (!t) return [];
+    return Array.isArray(t) ? t : Object.keys(t);
+}
+
+/** Instruments a song already covers (ABC counts as fiddle). */
+function instrumentsCovered(song) {
+    const have = new Set();
+    if (song.abc_content) have.add('fiddle');
+    for (const part of song.tablature_parts || []) {
+        const inst = part.instrument || '';
+        for (const k of ['banjo', 'guitar', 'mandolin', 'fiddle', 'dobro', 'bass']) {
+            if (inst.includes(k)) have.add(k);
+        }
+    }
+    return have;
+}
+
+/**
+ * Songs ON the book with partial instrument coverage — e.g. Black Mountain
+ * Rag has fiddle notation but no banjo/mandolin/guitar tab. Computed from
+ * the index: searchable instrumental repertoire missing any of the core
+ * jam instruments.
+ */
+function computePartGaps() {
+    const gaps = [];
+    for (const song of allSongs) {
+        if (song.indexed === false || isPlaceholder(song)) continue;
+        const isInstrumental = song.abc_content || song.tablature_parts?.length ||
+            tagNames(song).includes('Instrumental');
+        if (!isInstrumental) continue;
+        const have = instrumentsCovered(song);
+        const wants = ['fiddle', 'banjo', 'mandolin', 'guitar'].filter(i => !have.has(i));
+        if (!wants.length) continue;
+        gaps.push({ song, have: [...have], wants });
+    }
+    gaps.sort((a, b) => (b.song.canonical_rank || 0) - (a.song.canonical_rank || 0) ||
+        String(a.song.title).localeCompare(String(b.song.title)));
+    return gaps;
+}
+
+function describeHave(song, have) {
+    const bits = [];
+    if (song.content) bits.push('chords');
+    if (song.abc_content) bits.push('fiddle notation');
+    for (const i of have) {
+        if (i !== 'fiddle') bits.push(`${INSTRUMENT_LABELS[i] || i} tab`);
+    }
+    return bits.join(', ');
+}
+
+/**
+ * Songs on the book that are lyrics-only — content but zero chords
+ * (mostly the BluegrassLyrics import). chord_count comes from the index,
+ * so this is exact and cheap; subtler partial-chord cases live in the
+ * offline chord-gaps report, not here.
+ */
+function computeChordGaps() {
+    const gaps = allSongs.filter(song =>
+        song.indexed !== false && !isPlaceholder(song) &&
+        song.content && song.lyrics?.trim() && !(song.chord_count > 0));
+    gaps.sort((a, b) => (b.canonical_rank || 0) - (a.canonical_rank || 0) ||
+        String(a.title).localeCompare(String(b.title)));
+    return gaps;
+}
+
+function chordGapCard(song) {
+    return `
+        <a href="#work/${escapeHtml(song.id)}" class="bounty-card partgap-card">
+            <div class="bounty-card-title">${escapeHtml(song.title)}</div>
+            ${song.artist ? `<div class="bounty-card-artist">${escapeHtml(song.artist)}</div>` : ''}
+            <div class="bounty-card-has">Has: lyrics</div>
+            <div class="wanted-chips"><span class="wanted-chip">Chords</span></div>
+        </a>
+    `;
+}
+
+function partGapCard({ song, have, wants }) {
+    const chips = wants.map(i =>
+        `<span class="wanted-chip">${escapeHtml(INSTRUMENT_LABELS[i] || i)}</span>`).join('');
+    const haveDesc = describeHave(song, have);
+    return `
+        <a href="#work/${escapeHtml(song.id)}" class="bounty-card partgap-card">
+            <div class="bounty-card-title">${escapeHtml(song.title)}</div>
+            ${haveDesc ? `<div class="bounty-card-has">Has: ${escapeHtml(haveDesc)}</div>` : ''}
+            <div class="wanted-chips">${chips}</div>
+        </a>
+    `;
+}
 
 const PART_TYPE_LABELS = {
     'lead-sheet': 'Lyrics & Chords',
@@ -111,9 +217,58 @@ function getCurrentFilterHint() {
 }
 
 /**
+ * One wanted-list card. Clicking opens the contribute flow prefilled.
+ */
+function wantedCard(song) {
+    const meta = [];
+    if (song.key) meta.push(`Key of ${song.key}`);
+    if (song.difficulty) meta.push(song.difficulty);
+    if (song.coverage) meta.push(`${song.coverage} bluegrass recordings`);
+    const chips = (song.instruments || []).map(i =>
+        `<span class="wanted-chip">${escapeHtml(INSTRUMENT_LABELS[i] || i)}</span>`).join('');
+    return `
+        <button class="bounty-card wanted-card" data-wanted-title="${escapeHtml(song.title)}"
+                data-wanted-key="${escapeHtml(song.key || '')}">
+            <div class="bounty-card-title">${escapeHtml(song.title)}
+                ${song.core ? '<span class="core-badge" title="Core jam repertoire">Core</span>' : ''}</div>
+            <div class="bounty-card-artist">${escapeHtml(meta.join(' · '))}</div>
+            ${song.artists?.length ? `<div class="bounty-card-notes">as cut by ${escapeHtml(song.artists.slice(0, 3).join(', '))}</div>` : ''}
+            ${chips ? `<div class="wanted-chips">${chips}</div>` : ''}
+        </button>
+    `;
+}
+
+function wantedSection(title, songs, { collapsible = false } = {}) {
+    if (!songs.length) return '';
+    const visible = collapsible && !showAllWantedVocals
+        ? songs.slice(0, WANTED_VOCAL_PREVIEW) : songs;
+    const moreCount = songs.length - visible.length;
+    return `
+        <div class="bounty-section">
+            <h3 class="bounty-section-title">${escapeHtml(title)}
+                <span class="bounty-group-count">(${songs.length})</span></h3>
+            <div class="bounty-grid">${visible.map(wantedCard).join('')}</div>
+            ${moreCount > 0 ? `<button class="bounty-show-more" id="wanted-show-more">Show all ${songs.length}</button>` : ''}
+        </div>
+    `;
+}
+
+/**
  * Render the bounty view.
  */
 export function renderBountyView(container) {
+    // Lazy-load the wanted list, then re-render once it lands
+    if (!wantedFetchStarted) {
+        wantedFetchStarted = true;
+        fetch('data/wanted_songs.json', { cache: 'no-cache' })
+            .then(r => r.json())
+            .then(data => {
+                wantedSongs = data.songs || [];
+                if (container.isConnected) renderBountyView(container);
+            })
+            .catch(() => { wantedSongs = []; });
+    }
+
     const placeholders = allSongs.filter(isPlaceholder);
 
     // Collect bounties with their associated song data
@@ -146,13 +301,71 @@ export function renderBountyView(container) {
     const totalItems = filteredPlaceholders.length + filteredBounties.length;
     const filterHint = getCurrentFilterHint();
 
+    // The wanted list: Core jam standards lead (the 82 must-haves, every
+    // type mixed, coverage-sorted), then the rest by type — instrumentals
+    // next (tabs wanted for fiddle/banjo/mandolin/guitar), gospel, and
+    // the long tail of vocals behind a preview.
+    const wanted = wantedSongs || [];
+    const wantedCore = wanted.filter(s => s.core);
+    const rest = wanted.filter(s => !s.core);
+    const wantedInstrumentals = rest.filter(s => INSTRUMENTAL_TYPES.has(s.type));
+    const wantedGospel = rest.filter(s => s.type === 'Gospel');
+    const wantedVocals = rest.filter(s => s.type === 'Vocal');
+
+    const wantedHtml = wanted.length ? `
+        <div class="bounty-section wanted-block">
+            <h2 class="bounty-section-title">Missing Jam Standards
+                <span class="bounty-group-count">(${wanted.length})</span></h2>
+            <p class="bounty-filter-hint">Canonical repertoire — heavily recorded across bluegrass
+                generations — that the book doesn't have yet. Tap one to contribute it.</p>
+            ${wantedSection('Core Jam Standards — the must-haves', wantedCore)}
+            ${wantedSection('More Fiddle Tunes & Instrumentals', wantedInstrumentals)}
+            ${wantedSection('More Gospel', wantedGospel)}
+            ${wantedSection('More Songs', wantedVocals, { collapsible: true })}
+        </div>
+    ` : (wantedSongs === null ? '<div class="bounty-section"><p class="bounty-filter-hint">Loading wanted list…</p></div>' : '');
+
+    // Songs on the book missing instrument coverage (tab/notation gaps)
+    const partGaps = computePartGaps();
+    const gapVisible = showAllPartGaps ? partGaps : partGaps.slice(0, PART_GAP_PREVIEW);
+    const partGapsHtml = partGaps.length ? `
+        <div class="bounty-section wanted-block">
+            <h2 class="bounty-section-title">On the Book — Needs More Instruments
+                <span class="bounty-group-count">(${partGaps.length})</span></h2>
+            <p class="bounty-filter-hint">Tunes we have, but not for every instrument — e.g. fiddle
+                notation with no banjo, mandolin, or guitar tab. Tap one to open it and add a part.</p>
+            <div class="bounty-grid">${gapVisible.map(partGapCard).join('')}</div>
+            ${partGaps.length > gapVisible.length ? `<button class="bounty-show-more" id="partgap-show-more">Show all ${partGaps.length}</button>` : ''}
+        </div>
+    ` : '';
+
+    // Lyrics-only songs wanting chords
+    const chordGaps = computeChordGaps();
+    const chordVisible = showAllChordGaps ? chordGaps : chordGaps.slice(0, PART_GAP_PREVIEW);
+    const chordGapsHtml = chordGaps.length ? `
+        <div class="bounty-section wanted-block">
+            <h2 class="bounty-section-title">On the Book — Needs Chords
+                <span class="bounty-group-count">(${chordGaps.length})</span></h2>
+            <p class="bounty-filter-hint">Songs we have the words for but not the changes.
+                Know how it goes? Tap one and hit Edit.</p>
+            <div class="bounty-grid">${chordVisible.map(chordGapCard).join('')}</div>
+            ${chordGaps.length > chordVisible.length ? `<button class="bounty-show-more" id="chordgap-show-more">Show all ${chordGaps.length}</button>` : ''}
+        </div>
+    ` : '';
+
     container.innerHTML = `
         <div class="bounty-view">
             <div class="bounty-header">
                 <h1 class="bounty-title">Bounty Board</h1>
                 <p class="bounty-subtitle">Songs and parts the community is looking for. Know one? Help us out!</p>
-                <p class="bounty-stats">${totalItems} bounties across ${filteredPlaceholders.length + getBountyWorkCount()} works</p>
+                <p class="bounty-stats">${wanted.length} missing standards · ${filteredPlaceholders.length} started pages · ${filteredBounties.length} part requests</p>
             </div>
+
+            ${wantedHtml}
+
+            ${partGapsHtml}
+
+            ${chordGapsHtml}
 
             <div class="bounty-filters" id="bounty-filters">
                 ${FILTER_OPTIONS.map(opt => `
@@ -165,7 +378,7 @@ export function renderBountyView(container) {
 
             ${filteredPlaceholders.length > 0 ? `
                 <div class="bounty-section">
-                    <h2 class="bounty-section-title">${currentFilter === 'all' ? 'Wanted Songs' : 'Wanted Songs'} <span class="bounty-group-count">(${filteredPlaceholders.length})</span></h2>
+                    <h2 class="bounty-section-title">Started — Needs Content <span class="bounty-group-count">(${filteredPlaceholders.length})</span></h2>
                     <div class="bounty-grid">
                         ${filteredPlaceholders.map(song => `
                             <a href="#work/${song.id}" class="bounty-card bounty-card-placeholder">
@@ -229,6 +442,32 @@ export function renderBountyView(container) {
     container.querySelector('#bounty-request-song-btn')?.addEventListener('click', () => {
         if (!requireLogin('request songs')) return;
         openAddSongPicker({ mode: 'request' });
+    });
+
+    // Wanted-list cards open the contribute flow prefilled with the song
+    container.querySelectorAll('.wanted-card').forEach(card => {
+        card.addEventListener('click', () => {
+            openAddSongPicker({
+                mode: 'contribute',
+                title: card.dataset.wantedTitle,
+                key: card.dataset.wantedKey || undefined,
+            });
+        });
+    });
+
+    container.querySelector('#wanted-show-more')?.addEventListener('click', () => {
+        showAllWantedVocals = true;
+        renderBountyView(container);
+    });
+
+    container.querySelector('#partgap-show-more')?.addEventListener('click', () => {
+        showAllPartGaps = true;
+        renderBountyView(container);
+    });
+
+    container.querySelector('#chordgap-show-more')?.addEventListener('click', () => {
+        showAllChordGaps = true;
+        renderBountyView(container);
     });
 
     container.querySelector('#bounty-request-part-btn')?.addEventListener('click', () => {

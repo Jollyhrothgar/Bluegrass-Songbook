@@ -66,7 +66,7 @@ export const COLLECTIONS = [
     {
         id: 'all-songs',
         title: 'Search All Songs',
-        description: 'Browse the full collection of 17,000+ songs',
+        description: 'Browse the full jam collection',
         query: '',
         image: 'images/collections/jam.svg',
         color: '#d97706',

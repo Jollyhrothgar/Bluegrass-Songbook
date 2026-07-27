@@ -1,0 +1,14 @@
+id: baby-shark
+title: "Baby shark"
+artist: "Misc Children"
+composers: []
+default_key: G
+tags: []
+parts:
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet.pro
+    default: true
+    provenance:
+      source: trusted-user
+      imported_at: '2026-04-25'

@@ -1,38 +1,54 @@
-// WorkView - Dashboard for works showing available parts, bounties, and metadata
-// Part of the works architecture refactor
+// WorkView — the unified song page. ONE page per song: title + artist,
+// a pill row (Key / Display / Info / Arrangement), part tabs when a work
+// has multiple parts, the active part's content, and the app shell's
+// top/bottom bands for actions and playback controls.
 //
-// Principle: Song-view renders songs. Tab renderers render tabs.
-// Work-view is a dashboard that links to them.
+// This replaced the old dashboard-of-cards and the separate song page:
+// every route (search, lists, deep links, history) lands in openWork().
 
 import {
     allSongs,
     songGroups,
-    currentSong, setCurrentSong,
+    setCurrentSong,
     currentChordpro, setCurrentChordpro,
     loadedTablature, setLoadedTablature,
     tablaturePlayer, setTablaturePlayer,
-    currentDetectedKey, setCurrentDetectedKey,
-    originalDetectedKey, setOriginalDetectedKey,
-    originalDetectedMode, setOriginalDetectedMode,
-    fullscreenMode, setFullscreenMode,
+    setCurrentDetectedKey,
+    setOriginalDetectedKey,
+    setOriginalDetectedMode,
     listContext, setListContext,
-    setCurrentView,
+    currentView, setCurrentView,
     resolveWorkId,
-    getBountiesForWork
+    getBountiesForWork,
+    subscribe
 } from './state.js';
 
 import {
-    openSong,
-    toggleFullscreen, exitFullscreen,
-    navigatePrev, navigateNext,
-    updateFocusHeader, updateNavBar
+    goBack,
+    updateListContextClass, updateNavBar,
+    stopAbcPlayback,
+    renderLeadSheetContent
 } from './song-view.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
-import { escapeHtml, isPlaceholder, requireLogin, slugify, parseItemRef } from './utils.js';
+import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
-import { TabRenderer, TabPlayer, INSTRUMENT_ICONS } from './renderers/index.js';
-import { clearListView } from './lists.js';
-import { getTagCategory, formatTagName } from './tags.js';
+import {
+    TabRenderer, TabPlayer, INSTRUMENT_ICONS,
+    TimelineTiming, identityTimeline, readingListTimeline,
+    expandNotation, makePlaybackToVisualMapper,
+    maxMeasureIn, measureTimingFromOtf,
+    analyzeReadingList, prepareCompactNotation, densifyNotation,
+    attachOtfDecorations,
+} from './renderers/index.js';
+import { clearListView, openNotesSheet } from './lists.js';
+import { showListPicker, updateTriggerButton } from './list-picker.js';
+import { openFlagModal } from './flags.js';
+import { trackSongView } from './analytics.js';
+import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
+import { buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
+import {
+    attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
+} from './tab-playback-interactions.js';
 
 // ============================================
 // WORK STATE
@@ -43,16 +59,54 @@ let activePart = null;           // Currently displayed part { type, format, fil
 let availableParts = [];         // All parts for current work
 let trackRenderers = {};         // Map of trackId -> TabRenderer instance
 let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
-let inlineExpanded = false;      // true = showing a part inline (tab/doc), false = showing dashboard
-let currentGroupVersions = [];   // All versions in the current group (for version cards)
+let twoFeelMode = false;         // true = present 4/4 as cut time (2/2)
+let tempoOverride = null;        // { workId, quarterBpm } — user-set tempo;
+                                 // stored in QUARTER-note bpm so the display
+                                 // can convert when the feel changes
+let activeTrackView = null;      // track id, 'all', or null (= lead track)
+let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
+let activeEditSession = null;    // live tab edit session (torn down on nav)
+
+/**
+ * Tear down everything the tablature view holds live handles to: the
+ * edit session (document-level listeners, undo history, its player),
+ * the per-track renderers (each owns a documentElement MutationObserver
+ * that would otherwise keep re-rendering into detached DOM on every
+ * theme toggle), and the tab player (stop() also kills an in-flight
+ * soundfont load). Idempotent — safe to call on any navigation.
+ */
+export function teardownTablatureView() {
+    if (activeEditSession) {
+        activeEditSession.destroy();
+        activeEditSession = null;
+    }
+    destroyTrackRenderers();
+    if (tablaturePlayer) {
+        tablaturePlayer.stop();
+        setTablaturePlayer(null);
+    }
+    // Stop any ABC synth playback started for a fiddle/ABC part
+    stopAbcPlayback();
+}
+
+function destroyTrackRenderers() {
+    for (const r of Object.values(trackRenderers)) r.destroy?.();
+    trackRenderers = {};
+}
+
+let currentGroupVersions = [];    // All versions in the current group (Arrangement pill)
+let pendingInitialRender = false; // set by openWork; consumed by renderWorkView (key/tempo init)
 
 /**
  * Pick the best representative version from a group for display.
- * Prefers: version with content > most chords > highest canonical_rank.
+ * A canonical row (editorially pinned via curation/registry.yaml) wins
+ * outright; otherwise prefers: content > most chords > highest canonical_rank.
  */
 function pickRepresentative(versions) {
     if (versions.length === 0) return null;
     if (versions.length === 1) return versions[0];
+    const pinned = versions.find(v => v.canonical === true);
+    if (pinned) return pinned;
     return [...versions].sort((a, b) => {
         const aHasContent = a.content ? 1 : 0;
         const bHasContent = b.content ? 1 : 0;
@@ -72,142 +126,20 @@ export function getCurrentWork() { return currentWork; }
 // ============================================
 
 /**
- * Analyze reading list to detect repeat structures
+ * Timing maps for a loaded OTF, ts-change aware (measure-timing.js):
+ * - visual: what the current display mode shows (original measures in
+ *   compact mode, unrolled reading list otherwise)
+ * - playback: always the unrolled reading list (what TabPlayer follows)
  */
-function analyzeReadingList(readingList) {
-    if (!readingList || readingList.length === 0) {
-        return { repeatSections: [], endings: {}, repeatStartMarkers: new Set(), repeatEndMarkers: new Set() };
-    }
-
-    const repeatStartMarkers = new Set();
-    const repeatEndMarkers = new Set();
-    const endings = {};
-
-    for (let i = 0; i < readingList.length - 1; i++) {
-        const curr = readingList[i];
-        const next = readingList[i + 1];
-
-        const currStart = curr.from_measure;
-        const currEnd = curr.to_measure;
-        const nextStart = next.from_measure;
-        const nextEnd = next.to_measure;
-
-        if (nextStart > currStart && nextStart <= currEnd &&
-            nextEnd < currEnd && nextEnd >= nextStart) {
-            repeatStartMarkers.add(nextStart);
-            repeatEndMarkers.add(nextEnd);
-            for (let m = nextEnd + 1; m <= currEnd; m++) {
-                endings[m] = 1;
-            }
-            const afterRepeat = readingList[i + 2];
-            if (afterRepeat &&
-                afterRepeat.from_measure === currEnd + 1 &&
-                afterRepeat.to_measure === afterRepeat.from_measure) {
-                endings[afterRepeat.from_measure] = 2;
-            }
-        }
-
-        if (nextStart === currStart && nextEnd < currEnd) {
-            repeatStartMarkers.add(currStart);
-            repeatEndMarkers.add(nextEnd);
-            for (let m = nextEnd + 1; m <= currEnd; m++) {
-                endings[m] = 1;
-            }
-            const afterRepeat = readingList[i + 2];
-            if (afterRepeat &&
-                afterRepeat.from_measure === currEnd + 1 &&
-                afterRepeat.to_measure === afterRepeat.from_measure) {
-                endings[afterRepeat.from_measure] = 2;
-            }
-        }
-
-        if (nextStart === currStart && nextEnd > currEnd) {
-            repeatStartMarkers.add(currStart);
-            repeatEndMarkers.add(currEnd);
-        }
-    }
-
-    return { repeatStartMarkers, repeatEndMarkers, endings };
-}
-
-/**
- * Build a tick mapping for compact mode visualization
- */
-function buildTickMapping(readingList, ticksPerMeasure) {
-    if (!readingList || readingList.length === 0) {
-        return (tick) => tick;
-    }
-
-    const measureMapping = [];
-    let expandedMeasure = 1;
-
-    for (const range of readingList) {
-        for (let m = range.from_measure; m <= range.to_measure; m++) {
-            measureMapping.push({ expanded: expandedMeasure, original: m });
-            expandedMeasure++;
-        }
-    }
-
-    return (playbackTick) => {
-        const expandedMeasureNum = Math.floor(playbackTick / ticksPerMeasure) + 1;
-        const tickInMeasure = playbackTick % ticksPerMeasure;
-        const mapping = measureMapping.find(m => m.expanded === expandedMeasureNum);
-        if (!mapping) return playbackTick;
-        return (mapping.original - 1) * ticksPerMeasure + tickInMeasure;
-    };
-}
-
-/**
- * Expand notation according to reading list (repeat structure)
- */
-function expandNotationWithReadingList(notation, readingList) {
-    if (!readingList || readingList.length === 0) {
-        return notation;
-    }
-
-    const measureMap = {};
-    for (const entry of notation) {
-        measureMap[entry.measure] = entry;
-    }
-
-    const expanded = [];
-    let newMeasureNum = 1;
-
-    for (const range of readingList) {
-        for (let m = range.from_measure; m <= range.to_measure; m++) {
-            const original = measureMap[m];
-            if (original) {
-                expanded.push({
-                    ...original,
-                    measure: newMeasureNum,
-                    originalMeasure: m
-                });
-                newMeasureNum++;
-            }
-        }
-    }
-
-    return expanded;
-}
-
-/**
- * Prepare compact notation with repeat markers
- */
-function prepareCompactNotation(notation, readingList) {
-    if (!readingList || readingList.length === 0) {
-        return notation;
-    }
-
-    const analysis = analyzeReadingList(readingList);
-
-    return notation.map(measure => {
-        const m = measure.measure;
-        const enhanced = { ...measure };
-        if (analysis.repeatStartMarkers.has(m)) enhanced.repeatStart = true;
-        if (analysis.repeatEndMarkers.has(m)) enhanced.repeatEnd = true;
-        if (analysis.endings[m]) enhanced.ending = analysis.endings[m];
-        return enhanced;
-    });
+function buildOtfTimings(otf, compact) {
+    const measureTiming = measureTimingFromOtf(otf, { feel: twoFeelMode ? 'two' : null });
+    const maxMeasure = maxMeasureIn(otf.notation);
+    const playbackTimeline = readingListTimeline(otf.reading_list, maxMeasure);
+    const playback = new TimelineTiming(measureTiming, playbackTimeline);
+    const visual = compact
+        ? new TimelineTiming(measureTiming, identityTimeline(maxMeasure))
+        : playback;
+    return { measureTiming, playbackTimeline, playback, visual };
 }
 
 // ============================================
@@ -287,7 +219,16 @@ function buildPartsFromIndex(song) {
 }
 
 /**
- * Open a work by ID
+ * Open a work — THE entry point for viewing any song/work.
+ *
+ * Options:
+ *   fromList     - navigating within a list (keeps context, auto-fullscreen)
+ *   listId       - list id for #list/... URL building (deep links)
+ *   groupId      - version group override for the Arrangement pill
+ *   partId       - open a specific part (deep links / part-qualified refs)
+ *   fromDeepLink - don't push history (URL already set)
+ *   fromHistory  - don't push history (back/forward navigation)
+ *   exact        - show THIS version; skip the canonical-representative snap
  */
 export async function openWork(workId, options = {}) {
     workId = resolveWorkId(workId);
@@ -299,14 +240,32 @@ export async function openWork(workId, options = {}) {
             song = allSongs.find(s => s.id === workId);
         }
     }
+
+    const {
+        fromList = false, listId = null, groupId = null,
+        partId = null, fromDeepLink = false, fromHistory = false,
+        exact = false,
+    } = options;
+
     if (!song) {
+        // Real error state with a way out, not a dead-end spinner
         console.error(`Work not found: ${workId}`);
+        setCurrentView('song');
+        const container = document.getElementById('song-content');
+        if (container) {
+            container.innerHTML = `
+                <div class="not-found">
+                    <p>Song not found: "${escapeHtml(workId)}"</p>
+                    <p>It may have been renamed or removed.</p>
+                    <a href="#search" class="not-found-home-link">Browse all songs</a>
+                </div>`;
+        }
+        setTopBar({ back: { onClick: goBack }, title: 'Not found' });
+        setBottomBand(null);
         return;
     }
 
-    const { fromList = false, groupId = null } = options;
-
-    // Store group context for version cards
+    // Store group context for the Arrangement pill
     if (groupId && songGroups[groupId]) {
         currentGroupVersions = songGroups[groupId];
     } else if (song.group_id && songGroups[song.group_id]) {
@@ -315,9 +274,11 @@ export async function openWork(workId, options = {}) {
         currentGroupVersions = [];
     }
 
-    // For multi-version groups, always use the canonical representative
-    // so the URL is stable regardless of which version you came from
-    if (currentGroupVersions.length > 1) {
+    // Generic entries (e.g. search results without an explicit version
+    // choice) snap to the canonical representative so the URL is stable.
+    // exact / deep links / history keep the requested version so
+    // arrangement links and list refs stay pointed where they aim.
+    if (!exact && !fromDeepLink && !fromHistory && currentGroupVersions.length > 1) {
         const representative = pickRepresentative(currentGroupVersions);
         if (representative && representative.id !== workId) {
             workId = representative.id;
@@ -333,104 +294,91 @@ export async function openWork(workId, options = {}) {
         }
         clearListView();
 
-        // Exit fullscreen when opening dashboard directly (not from list nav)
-        if (fullscreenMode) {
-            document.body.classList.remove('fullscreen-mode');
-            setFullscreenMode(false);
-        }
         const navBar = document.getElementById('song-nav-bar');
         if (navBar) navBar.classList.add('hidden');
     }
 
     setCurrentChordpro(null);
     setCurrentView('song');
+    setChromeAutoHide(true);
 
     setOriginalDetectedKey(null);
     setOriginalDetectedMode(null);
     setCurrentDetectedKey(null);
 
+    // Reset tablature state for the new work
+    activeTrackView = null;
     setLoadedTablature(null);
-    if (tablaturePlayer) {
-        tablaturePlayer.stop();
-        setTablaturePlayer(null);
-    }
+    teardownTablatureView();
+    setBottomBand(null);
 
     currentWork = song;
     availableParts = buildPartsFromIndex(song);
     setCurrentSong(song);
-    inlineExpanded = false;
+    setCurrentChordpro(song.content || null);
 
-    // Hide Work button on the dashboard — it only makes sense as
-    // "go back to all parts" when viewing a specific part in song-view
-    const workViewBtn = document.getElementById('work-view-btn');
-    if (workViewBtn) workViewBtn.classList.add('hidden');
-
-    // Hide song-view header actions that don't apply to the work dashboard
-    const editBtn = document.getElementById('edit-song-btn');
-    const exportBtn = document.getElementById('export-btn');
-    const exportWrapper = exportBtn?.closest('.export-wrapper');
-    if (isPlaceholder(song)) {
-        // Placeholders: show Edit (intercepted to show placeholder editor), hide Export
-        if (editBtn) editBtn.classList.remove('hidden');
-        if (exportWrapper) exportWrapper.classList.add('hidden');
-        window.__editInterceptor = () => {
-            showPlaceholderEditor();
-            return true;
-        };
-    } else {
-        if (editBtn) editBtn.classList.remove('hidden');
-        if (exportWrapper) exportWrapper.classList.remove('hidden');
-        window.__editInterceptor = null;
-    }
-
-    // If a specific part was requested via deep link, expand it inline
-    if (options.partId) {
+    // Active part: requested via deep link / part-qualified ref, else default
+    activePart = null;
+    if (partId) {
         activePart = availableParts.find(p =>
-            p.partId === options.partId ||
-            p.instrument === options.partId ||
-            p.type === options.partId
-        );
-        if (activePart && (activePart.type === 'tablature' || activePart.type === 'lead-sheet' || activePart.type === 'document')) {
-            inlineExpanded = true;
-        }
-    } else if (fromList && availableParts.length > 0) {
-        // From list navigation: auto-expand the default part for focus mode
-        activePart = availableParts.find(p => p.default) || availableParts[0];
-        inlineExpanded = true;
-    } else {
-        activePart = null;
+            p.partId === partId ||
+            p.instrument === partId ||
+            p.type === partId
+        ) || null;
+    }
+    if (!activePart) {
+        activePart = availableParts.find(p => p.default) || availableParts[0] || null;
     }
 
-    // Update list context index when navigating within a list
+    // Update list context index when navigating within a list;
+    // drop a stale context when the song isn't in the current list
     if (fromList && listContext && listContext.songIds) {
         const idx = listContext.songIds.indexOf(workId);
         if (idx !== -1) {
             setListContext({ ...listContext, currentIndex: idx });
         }
+    } else if (!fromList && listContext && listContext.songIds &&
+               !listContext.songIds.includes(workId)) {
+        setListContext(null);
     }
 
-    // Auto-enter fullscreen when opening from a list
+    // List context flag for CSS (band offsets above the list nav bar);
+    // chrome auto-hide handles immersion — no mode to enter.
     if (fromList && listContext) {
-        setFullscreenMode(true);
-        document.body.classList.add('fullscreen-mode');
         document.body.classList.add('has-list-context');
     }
 
-    renderWorkView();
-
-    // Update focus header and nav bar for list context
-    if (fromList) {
-        updateFocusHeader();
-        updateNavBar();
+    // Analytics
+    trackSongView(workId, fromDeepLink ? 'deep_link' : 'search', song.group_id);
+    if (typeof gtag === 'function') {
+        gtag('event', 'page_view', {
+            page_title: `${song.title} - ${song.artist || 'Unknown'}`,
+            page_location: `${window.location.origin}/song/${workId}`,
+            page_path: `/song/${workId}`
+        });
     }
 
-    const resolvedPartId = activePart?.partId || options.partId;
-    const hash = resolvedPartId
-        ? `#work/${workId}/${resolvedPartId}`
-        : `#work/${workId}`;
+    pendingInitialRender = true;
+    renderWorkView();
 
-    if (window.location.hash !== hash && !options.fromDeepLink) {
-        history.pushState({ workId, partId: resolvedPartId }, '', hash);
+    updateNavBar();
+    if (fromList) {
+        updateListContextClass();
+    }
+
+    // History: list-context pages keep #list/... URLs; everything else gets
+    // the canonical #work/... form (old #song links land here too).
+    const requestedPartId = partId ? (activePart?.partId || partId) : null;
+    const partSeg = requestedPartId ? `/${requestedPartId}` : '';
+    const effectiveListId = listId || (fromList && listContext ? listContext.listId : null);
+    const hash = effectiveListId
+        ? `#list/${effectiveListId}/${workId}${partSeg}`
+        : `#work/${workId}${partSeg}`;
+
+    if (!fromDeepLink && !fromHistory && window.location.hash !== hash) {
+        history.pushState(
+            { view: 'song', songId: workId, partId: requestedPartId, listId: effectiveListId },
+            '', hash);
     }
 }
 
@@ -439,594 +387,447 @@ export async function openWork(workId, options = {}) {
 // ============================================
 
 /**
- * Main render function for work view - dashboard layout
+ * Main render function — the unified song page.
  */
 export function renderWorkView() {
     const container = document.getElementById('song-content');
     if (!container || !currentWork) return;
 
+    const isInitial = pendingInitialRender;
+    pendingInitialRender = false;
+
     container.innerHTML = '';
 
-    // Focus header (shown only in fullscreen mode via CSS)
-    if (inlineExpanded) {
-        const focusHeader = renderWorkFocusHeader();
-        container.appendChild(focusHeader);
-    }
+    // Title row: song title + small artist line
+    container.appendChild(renderTitleHeader());
 
-    // Work header
-    const header = renderWorkHeader();
-    container.appendChild(header);
+    // Pill row: Key / Display / Info / Arrangement
+    container.appendChild(renderPillRow());
 
-    // Content area
+    // Part tabs (segmented control) — only when the work has multiple parts
+    const tabs = renderPartTabs();
+    if (tabs) container.appendChild(tabs);
+
+    // Content area for the active part
     const content = document.createElement('div');
     content.className = 'work-part-content';
+    content.id = 'work-part-content';
     container.appendChild(content);
 
-    if (inlineExpanded && activePart) {
-        // Inline expansion mode: show back button + content
-        renderInlineExpansion(activePart, content);
-    } else {
-        // Version cards (multi-version works) — replaces part cards when present
-        const versionCards = renderVersionCards();
-        if (versionCards) {
-            content.appendChild(versionCards);
-        } else {
-            // Single-version: show part cards as before
-            const cards = renderPartCards();
-            if (cards) {
-                content.appendChild(cards);
-            }
-        }
-
-        // Placeholder CTA
+    if (activePart) {
+        renderActivePart(content, isInitial);
         if (isPlaceholder(currentWork)) {
-            const cta = document.createElement('div');
-            cta.className = 'placeholder-cta';
-            const hasContent = availableParts.length > 0;
-            cta.innerHTML = `
-                <div class="placeholder-cta-text">${hasContent
-                    ? 'This song has reference material but no lyrics & chords or tablature yet.'
-                    : 'This song doesn\'t have lyrics & chords or tablature yet.'}</div>
-                <button class="placeholder-contribute-btn">Help complete this song</button>
-            `;
-            cta.querySelector('.placeholder-contribute-btn').addEventListener('click', () => {
-                if (!requireLogin('contribute')) return;
-                openAddSongPicker({
-                    mode: 'contribute',
-                    targetSlug: currentWork.id,
-                    title: currentWork.title,
-                    artist: currentWork.artist,
-                    key: currentWork.key,
-                });
-            });
-            content.appendChild(cta);
+            container.appendChild(buildPlaceholderCta(true));
         }
+    } else {
+        content.appendChild(buildPlaceholderCta(false));
     }
 
-    // Bounty section - only on dashboard, not in part views
-    if (!inlineExpanded) {
+    // Bounty section: the "help complete this song" surface. Shown for
+    // placeholders / empty works and any work with open bounties.
+    if (isPlaceholder(currentWork) || availableParts.length === 0 ||
+        getBountiesForWork(currentWork.id).length > 0) {
         const bountySection = renderBountySection();
-        if (bountySection) {
-            container.appendChild(bountySection);
-        }
+        if (bountySection) container.appendChild(bountySection);
+    }
+
+    updateWorkTopBar();
+}
+
+/**
+ * Render the active part into the content area.
+ */
+function renderActivePart(content, isInitial = false) {
+    if (activePart.type === 'tablature') {
+        renderTablaturePart(activePart, content);
+    } else if (activePart.type === 'document') {
+        renderDocumentPart(activePart, content);
+        setBottomBand(null);
+    } else {
+        // lead-sheet (chordpro, possibly with embedded ABC notation)
+        renderLeadSheetContent(content, currentWork,
+            currentChordpro || activePart.content || '', isInitial);
     }
 }
 
 /**
- * Render simplified work header - metadata only, no content controls
+ * Switch parts in place (segmented control). Tablature teardown MUST run
+ * when switching away from a tab part — it stops audio and drops renderer
+ * observers.
  */
-function renderWorkHeader() {
-    const header = document.createElement('div');
-    header.className = 'work-header-container';
+function selectPart(part) {
+    if (!part || part === activePart) return;
 
+    teardownTablatureView();
+    setBottomBand(null);
+
+    activePart = part;
+
+    document.querySelectorAll('#part-tabs .part-tab').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.partId === part.partId);
+    });
+
+    const content = document.getElementById('work-part-content');
+    if (content) {
+        content.innerHTML = '';
+        renderActivePart(content, false);
+    }
+
+    // Edit/Export applicability can change with the part type
+    updateWorkTopBar();
+
+    const hash = `#work/${currentWork.id}/${part.partId}`;
+    if (window.location.hash !== hash) {
+        history.pushState({ view: 'song', songId: currentWork.id, partId: part.partId }, '', hash);
+    }
+}
+
+/**
+ * Title row: song title + small artist line.
+ */
+function renderTitleHeader() {
+    const header = document.createElement('div');
+    header.className = 'song-header';
     const title = currentWork.title || 'Untitled';
     const artist = currentWork.artist || '';
-    const composer = currentWork.composer || '';
-
-    // Version count display (informational — version cards shown below)
-    const versionCount = currentGroupVersions.length;
-    const versionHtml = versionCount > 1
-        ? `<span class="version-count-display">${versionCount} versions</span>`
-        : '';
-
-    // Build artists list
-    const allArtists = new Set();
-    if (artist) allArtists.add(artist);
-    const coveringArtists = currentWork?.covering_artists || [];
-    coveringArtists.forEach(a => allArtists.add(a));
-    currentGroupVersions.forEach(v => { if (v.artist) allArtists.add(v.artist); });
-    const artistsList = Array.from(allArtists);
-
-    // Build info items
-    let infoItems = [];
-    if (composer) {
-        infoItems.push(`<div class="info-item"><span class="info-label">Written by:</span> ${escapeHtml(composer)}</div>`);
-    }
-
-    const source = currentWork.source;
-    if (source && SOURCE_DISPLAY_NAMES[source]) {
-        infoItems.push(`<div class="info-item"><span class="info-label">Source:</span> ${SOURCE_DISPLAY_NAMES[source]}</div>`);
-    }
-    if (artistsList.length > 0) {
-        const maxVisible = 3;
-        const hasMore = artistsList.length > maxVisible;
-        const visibleArtists = hasMore ? artistsList.slice(0, maxVisible) : artistsList;
-        const hiddenArtists = hasMore ? artistsList.slice(maxVisible) : [];
-
-        const artistsHtml = hasMore
-            ? `<span class="artists-visible">${visibleArtists.map(a => escapeHtml(a)).join(', ')}</span><button class="artists-toggle" id="artists-expand" type="button">… <span class="artists-more">(+${hiddenArtists.length})</span></button><span class="artists-hidden hidden" id="artists-full">, ${hiddenArtists.map(a => escapeHtml(a)).join(', ')}</span><button class="artists-toggle hidden" id="artists-collapse" type="button">(collapse)</button>`
-            : visibleArtists.map(a => escapeHtml(a)).join(', ');
-
-        infoItems.push(`<div class="info-item"><span class="info-label">Artists:</span> <span class="artists-list">${artistsHtml}</span></div>`);
-    }
-
-    if (currentWork.notes) {
-        infoItems.push(`<div class="info-item"><span class="info-label">Notes:</span> ${escapeHtml(currentWork.notes)}</div>`);
-    }
-
-    // Tags with voting controls
-    const songTags = currentWork?.tags || {};
-    const tagNames = Object.keys(songTags);
-    const isLoggedIn = window.SupabaseAuth?.isLoggedIn?.() || false;
-
-    const tagsHtml = tagNames.length > 0
-        ? tagNames.map(tag => {
-            const category = getTagCategory(tag);
-            const displayName = formatTagName(tag);
-            return `
-                <span class="votable-tag tag-${category}" data-tag="${escapeHtml(tag)}">
-                    <span class="tag-name">${escapeHtml(displayName)}</span>
-                    ${isLoggedIn ? `
-                        <span class="vote-chip">
-                            <button class="vote-btn vote-up" data-vote="1" title="Agree">
-                                <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 0L10 6H7V9H3V6H0L5 0Z" fill="currentColor"/></svg>
-                            </button>
-                            <span class="vote-divider"></span>
-                            <button class="vote-btn vote-down" data-vote="-1" title="Disagree">
-                                <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 12L0 6H3V3H7V6H10L5 12Z" fill="currentColor"/></svg>
-                            </button>
-                        </span>
-                    ` : ''}
-                </span>
-            `;
-        }).join('')
-        : '<em class="no-tags">None</em>';
-
-    const infoBarCollapsed = localStorage.getItem('infoBarCollapsed') !== 'false'; // Default collapsed
-
-    const headerControlsHtml = `
-        <div class="header-controls">
-            <button id="flag-btn" class="flag-btn" title="Report an issue">🚩 Report</button>
-            <button id="info-toggle" class="disclosure-btn" title="Toggle info">🎵 Info <span class="disclosure-arrow">${infoBarCollapsed ? '▼' : '▲'}</span></button>
-        </div>
-    `;
-
-    // Info disclosure content
-    const infoContentHtml = `
-        <div id="info-content" class="info-content ${infoBarCollapsed ? 'hidden' : ''}">
-            <div class="info-details">
-                ${infoItems.join('')}
-            </div>
-            <div class="info-tags">
-                <div class="info-tags-label">Tags:</div>
-                <div class="song-tags-row">
-                    <span id="song-tags-container" class="song-tags" data-song-id="${currentWork.id}">${tagsHtml}</span>
-                    ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${currentWork.id}">+ Add your own</button>` : ''}
-                </div>
-            </div>
-        </div>
-    `;
-
     header.innerHTML = `
-        <div class="song-header">
-            <div class="song-header-left">
-                <div class="song-title-row">
-                    <span class="song-title">${escapeHtml(title)}</span>
-                    ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
-                    ${versionHtml}
-                    ${inlineExpanded ? '<button id="add-to-list-btn" class="add-to-list-btn" title="Add to list">+ Lists</button>' : ''}
-                    ${inlineExpanded ? '<button id="focus-btn" class="focus-btn" title="Focus mode (F)">&#x26F6; Focus</button>' : ''}
-                    ${inlineExpanded && activePart?.type === 'tablature' ? '<button id="work-controls-toggle" class="focus-btn" title="Toggle controls">&#x2699;&#xFE0F; Controls</button>' : ''}
-                </div>
+        <div class="song-header-left">
+            <div class="song-title-row">
+                <span class="song-title">${escapeHtml(title)}</span>
+                ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
+                <button id="edit-song-btn" class="focus-btn" title="Edit this song">&#x270F;&#xFE0F; Edit</button>
             </div>
-            ${headerControlsHtml}
+            ${artist ? `<div class="song-artist-line">${escapeHtml(artist)}</div>` : ''}
         </div>
-        ${infoContentHtml}
     `;
+    // #edit-song-btn is wired via main.js's songContent delegation
+    return header;
+}
 
-    // Wire up info toggle
-    const infoToggle = header.querySelector('#info-toggle');
-    const infoContent = header.querySelector('#info-content');
-    if (infoToggle && infoContent) {
-        infoToggle.addEventListener('click', () => {
-            const isCollapsed = infoContent.classList.toggle('hidden');
-            localStorage.setItem('infoBarCollapsed', isCollapsed);
-            const arrow = infoToggle.querySelector('.disclosure-arrow');
-            if (arrow) arrow.textContent = isCollapsed ? '▼' : '▲';
+/**
+ * Pill row under the title (shell.js pill primitive).
+ */
+function renderPillRow() {
+    const row = document.createElement('div');
+    row.className = 'song-pill-row';
+    row.id = 'song-pill-row';
+
+    if (currentWork.content) {
+        row.appendChild(buildKeyPill(currentWork));
+        row.appendChild(buildDisplayPill());
+    }
+    row.appendChild(buildInfoPill(currentWork, currentGroupVersions));
+
+    if (currentGroupVersions.length > 1 || currentWork.variant_of || currentWork.variant_label) {
+        row.appendChild(buildArrangementPill());
+    }
+    return row;
+}
+
+/**
+ * Segmented control for part switching. Null when there's nothing to switch.
+ */
+function renderPartTabs() {
+    if (availableParts.length < 2) return null;
+    const bar = document.createElement('div');
+    bar.className = 'part-tabs';
+    bar.id = 'part-tabs';
+    for (const part of availableParts) {
+        const btn = document.createElement('button');
+        btn.className = 'part-tab' + (part === activePart ? ' active' : '');
+        btn.dataset.partId = part.partId;
+        btn.textContent = part.label || part.type;
+        btn.addEventListener('click', () => selectPart(part));
+        bar.appendChild(btn);
+    }
+    return bar;
+}
+
+/**
+ * Placeholder / empty-state CTA (reused below content for placeholders
+ * that do have reference material).
+ */
+function buildPlaceholderCta(hasContent) {
+    const cta = document.createElement('div');
+    cta.className = 'placeholder-cta';
+    cta.innerHTML = `
+        <div class="placeholder-cta-text">${hasContent
+            ? 'This song has reference material but no lyrics & chords or tablature yet.'
+            : 'This song doesn\'t have lyrics & chords or tablature yet.'}</div>
+        <button class="placeholder-contribute-btn">Help complete this song</button>
+    `;
+    cta.querySelector('.placeholder-contribute-btn').addEventListener('click', () => {
+        if (!requireLogin('contribute')) return;
+        openAddSongPicker({
+            mode: 'contribute',
+            targetSlug: currentWork.id,
+            title: currentWork.title,
+            artist: currentWork.artist,
+            key: currentWork.key,
         });
+    });
+    return cta;
+}
+
+// ============================================
+// ARRANGEMENT PILL (replaces the dashboard version cards)
+// ============================================
+
+/**
+ * Arrangement pill: lists the group's versions with canonical badge,
+ * variant labels and vote counts; clicking navigates to that version.
+ */
+function buildArrangementPill() {
+    const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
+    const label = versions.length > 1 ? `${versions.length} arrangements` : 'Arrangement';
+    return pill(label, (container) => {
+        container.innerHTML = '<div class="arrangement-loading">Loading…</div>';
+        renderArrangementList(container, versions);
+    }, { id: 'arrangement-pill', title: 'Arrangements of this song', className: 'pill-wide' });
+}
+
+async function renderArrangementList(container, versions, voteData = null) {
+    const groupId = versions[0]?.group_id;
+
+    // Render immediately with whatever vote data we have; votes are
+    // decoration and must never gate the list (a slow Supabase fetch left
+    // the popover stuck on "Loading…").
+    const voteCounts = voteData?.voteCounts || {};
+    const userVotes = voteData?.userVotes || {};
+    if (voteData === null && typeof SupabaseAuth !== 'undefined' && groupId) {
+        (async () => {
+            try {
+                const { data } = await SupabaseAuth.fetchGroupVotes(groupId);
+                const counts = data || {};
+                let uv = {};
+                if (SupabaseAuth.isLoggedIn()) {
+                    const { data: u } = await SupabaseAuth.fetchUserVotes(versions.map(v => v.id));
+                    uv = u || {};
+                }
+                if (container.isConnected) {
+                    renderArrangementList(container, versions,
+                        { voteCounts: counts, userVotes: uv });
+                }
+            } catch (e) {
+                // votes are optional decoration
+            }
+        })();
     }
 
-    // Wire up artists expand/collapse
-    const artistsExpand = header.querySelector('#artists-expand');
-    const artistsCollapse = header.querySelector('#artists-collapse');
-    if (artistsExpand) {
-        artistsExpand.addEventListener('click', () => {
-            header.querySelector('#artists-full')?.classList.remove('hidden');
-            header.querySelector('#artists-collapse')?.classList.remove('hidden');
-            artistsExpand.classList.add('hidden');
-        });
-    }
-    if (artistsCollapse) {
-        artistsCollapse.addEventListener('click', () => {
-            header.querySelector('#artists-full')?.classList.add('hidden');
-            artistsCollapse.classList.add('hidden');
-            header.querySelector('#artists-expand')?.classList.remove('hidden');
-        });
-    }
+    // Canonical first, then by votes (same ordering as the old modal)
+    const sorted = [...versions].sort((a, b) => {
+        const aCanonical = a.canonical === true ? 1 : 0;
+        const bCanonical = b.canonical === true ? 1 : 0;
+        if (aCanonical !== bCanonical) return bCanonical - aCanonical;
+        return (voteCounts[b.id] || 0) - (voteCounts[a.id] || 0);
+    });
 
-    // Wire up controls toggle (non-fullscreen)
-    const controlsToggle = header.querySelector('#work-controls-toggle');
-    if (controlsToggle) {
-        controlsToggle.addEventListener('click', () => {
-            const controls = document.getElementById('work-controls-content');
-            if (controls) {
-                controls.classList.toggle('hidden');
+    container.innerHTML = sorted.map(v => {
+        const isCurrent = v.id === currentWork?.id;
+        const tabPart = v.tablature_parts?.[0];
+        let label = v.variant_label || v.version_label;
+        if (!label) {
+            if (v.tablature_parts?.length && !v.content && tabPart?.author) {
+                label = `Tab by ${tabPart.author}`;
+            } else if (v.abc_content && !v.content) {
+                label = 'Fiddle notation';
+            } else if (v.key) {
+                label = `Key of ${v.key}`;
+            } else {
+                label = 'Original';
+            }
+        }
+        const meta = [];
+        if (v.artist && v.artist !== currentWork?.artist) meta.push(v.artist);
+        if (v.key) meta.push(`Key: ${v.key}`);
+        if (v.chord_count) meta.push(`${v.chord_count} chords`);
+        const votes = voteCounts[v.id] || 0;
+        const hasVoted = userVotes[v.id] ? ' voted' : '';
+        return `
+            <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-song-id="${escapeHtml(v.id)}" role="button" tabindex="0">
+                <span class="arrangement-info">
+                    <span class="arrangement-label">${escapeHtml(label)}${v.canonical === true ? ' <span class="canonical-badge">Canonical</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}</span>
+                    <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
+                </span>
+                <span class="arrangement-votes">
+                    <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(v.id)}" title="Vote for this arrangement">
+                        <span class="vote-arrow">▲</span>
+                    </button>
+                    <span class="vote-count">${votes}</span>
+                </span>
+            </div>
+        `;
+    }).join('');
+
+    container.querySelectorAll('.arrangement-item').forEach(item => {
+        item.addEventListener('click', (e) => {
+            if (e.target.closest('.arrangement-vote-btn')) return;
+            const songId = item.dataset.songId;
+            if (songId && songId !== currentWork?.id) {
+                openWork(songId, { groupId, exact: true });
+            }
+        });
+    });
+
+    // Vote casting — same affordance the version-picker modal had
+    container.querySelectorAll('.arrangement-vote-btn').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            e.stopPropagation();
+
+            if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+                alert('Please sign in to vote');
+                return;
+            }
+
+            const songId = btn.dataset.songId;
+            const hasVoted = btn.classList.contains('voted');
+            const countEl = btn.parentElement.querySelector('.vote-count');
+
+            if (hasVoted) {
+                await SupabaseAuth.removeVote(songId);
+                btn.classList.remove('voted');
+                if (countEl) countEl.textContent = Math.max(0, parseInt(countEl.textContent, 10) - 1);
+            } else {
+                await SupabaseAuth.castVote(songId, groupId);
+                btn.classList.add('voted');
+                if (countEl) countEl.textContent = parseInt(countEl.textContent, 10) + 1;
+            }
+        });
+    });
+}
+
+// ============================================
+// TOP BAND (app shell)
+// ============================================
+
+let workPageHooks = {};
+let prefSubscriptionsRegistered = false;
+
+/**
+ * Wire main.js-owned behaviors into the unified song page and register the
+ * display-preference subscriptions that re-render the lead-sheet body.
+ * Called once from main.js init.
+ *   onEdit(song) - open the song editor
+ *   onDelete()   - admin delete flow
+ *   isAdmin()    - current admin status (drives the Delete overflow item)
+ */
+export function configureWorkPage(hooks = {}) {
+    workPageHooks = hooks;
+    if (prefSubscriptionsRegistered) return;
+    prefSubscriptionsRegistered = true;
+
+    // Re-render only the part content on pref changes: pills stay mounted,
+    // so an open Key/Display popover survives its own updates.
+    const displayPrefKeys = [
+        'compactMode', 'nashvilleMode', 'twoColumnMode',
+        'chordDisplayMode', 'showSectionLabels', 'fontSizeLevel',
+        'currentDetectedKey',
+    ];
+    for (const key of displayPrefKeys) {
+        subscribe(key, () => {
+            if (currentView !== 'song' || !currentWork) return;
+            if (activePart && activePart.type !== 'lead-sheet') return;
+            const content = document.getElementById('work-part-content');
+            const chordpro = currentChordpro || activePart?.content;
+            if (content && chordpro) {
+                renderLeadSheetContent(content, currentWork, chordpro, false);
             }
         });
     }
-
-    return header;
-}
-
-// ============================================
-// FOCUS HEADER (for fullscreen mode in work-view)
-// ============================================
-
-/**
- * Render focus header for work-view inline expansion.
- * Same structure as song-view focus header for consistent UX.
- */
-function renderWorkFocusHeader() {
-    const title = currentWork?.title || 'Untitled';
-    const partLabel = activePart?.label ? ` - ${activePart.label}` : '';
-
-    const header = document.createElement('div');
-    header.className = 'focus-header';
-    header.innerHTML = `
-        <button id="focus-prev-btn" class="focus-list-nav" title="Previous song (\u2190)">\u2190</button>
-        <div class="focus-title-area">
-            <span class="focus-title">${escapeHtml(title)}${escapeHtml(partLabel)}</span>
-            <span id="focus-position" class="focus-position"></span>
-        </div>
-        <button id="focus-exit-btn" class="focus-nav-btn" title="Exit focus mode">
-            <span>\u2715</span>
-            <span class="focus-btn-label">Exit</span>
-        </button>
-        <button id="focus-goto-song-btn" class="focus-nav-btn" title="View work dashboard">
-            <span>\uD83C\uDFB5</span>
-            <span class="focus-btn-label">Go to Song</span>
-        </button>
-        <button id="focus-controls-toggle" class="focus-nav-btn" title="Toggle controls">
-            <span>\u2699\uFE0F</span>
-            <span class="focus-btn-label">Controls</span>
-        </button>
-        <button id="focus-next-btn" class="focus-list-nav" title="Next song (\u2192)">\u2192</button>
-    `;
-
-    // Wire up event handlers
-    header.querySelector('#focus-exit-btn')?.addEventListener('click', () => {
-        exitFullscreen();
-    });
-
-    header.querySelector('#focus-goto-song-btn')?.addEventListener('click', () => {
-        // Exit focus mode and navigate to work dashboard
-        setFullscreenMode(false);
-        document.body.classList.remove('fullscreen-mode');
-        document.body.classList.remove('has-list-context');
-        clearListView();
-        // Re-open as dashboard (not inline)
-        inlineExpanded = false;
-        activePart = null;
-        renderWorkView();
-        const hash = `#work/${currentWork.id}`;
-        history.pushState({ workId: currentWork.id }, '', hash);
-    });
-
-    header.querySelector('#focus-prev-btn')?.addEventListener('click', () => {
-        navigatePrev();
-    });
-
-    header.querySelector('#focus-next-btn')?.addEventListener('click', () => {
-        navigateNext();
-    });
-
-    header.querySelector('#focus-controls-toggle')?.addEventListener('click', () => {
-        const controls = document.getElementById('work-controls-content');
-        if (controls) {
-            controls.classList.toggle('hidden');
-        }
-    });
-
-    return header;
-}
-
-// ============================================
-// VERSION CARDS (Dashboard - multi-version works)
-// ============================================
-
-/**
- * Source display names for version attribution
- */
-const SOURCE_DISPLAY_NAMES = {
-    'classic-country': 'Classic Country Song Lyrics',
-    'golden-standard': 'Golden Standards Collection',
-    'tunearch': 'TuneArch.org',
-    'manual': 'Community Contribution',
-    'trusted-user': 'Community Contribution',
-    'pending': 'Community Contribution',
-    'banjo-hangout': 'Banjo Hangout',
-    'ultimate-guitar': 'Community Contribution',
-    'bluegrass-lyrics': 'BluegrassLyrics.com',
-};
-
-/**
- * Render version cards section for multi-version works.
- * Shows all versions in the group as cards with metadata.
- */
-function renderVersionCards() {
-    if (currentGroupVersions.length <= 1) return null;
-
-    const section = document.createElement('div');
-    section.className = 'work-versions-section';
-
-    const heading = document.createElement('div');
-    heading.className = 'work-versions-heading';
-    heading.textContent = `${currentGroupVersions.length} Versions`;
-    section.appendChild(heading);
-
-    const grid = document.createElement('div');
-    grid.className = 'work-versions-grid';
-
-    for (const version of currentGroupVersions) {
-        const card = createVersionCard(version);
-        grid.appendChild(card);
-    }
-
-    section.appendChild(grid);
-    return section;
 }
 
 /**
- * Create a single version card
+ * Declare the song page's top band: back, title, Edit / Lists / Export
+ * actions, and the overflow (Report issue, Song notes, admin Delete).
+ * Also called by main.js when admin status resolves.
  */
-function createVersionCard(version) {
-    const card = document.createElement('div');
-    card.className = 'version-card';
-
-    const isCurrent = version.id === currentWork?.id;
-    if (isCurrent) card.classList.add('version-card-current');
-
-    // Determine label: "Lyrics & Chords" or "Lyrics"
-    const hasChords = (version.chord_count || 0) > 0;
-    const hasContent = !!version.content;
-    let typeLabel;
-    if (hasContent) {
-        typeLabel = hasChords ? 'Lyrics & Chords' : 'Lyrics';
-    } else if (version.tablature_parts?.length > 0) {
-        typeLabel = 'Tablature';
+/**
+ * Title-row Edit action (delegated from main.js): placeholders get the
+ * metadata editor, real songs the ChordPro editor.
+ */
+export function handleEditAction() {
+    if (!currentWork) return;
+    if (isPlaceholder(currentWork)) {
+        showPlaceholderEditor();
     } else {
-        typeLabel = 'Song';
+        workPageHooks.onEdit?.(currentWork);
+    }
+}
+
+export function updateWorkTopBar() {
+    if (!currentWork || currentView !== 'song') return;
+
+    const actions = [];
+
+    // Edit lives in the title row (a content action stays with the
+    // content); here we only sync its visibility to the active part —
+    // tab parts carry their own Edit in the playback controls.
+    const editBtn = document.getElementById('edit-song-btn');
+    if (editBtn) {
+        editBtn.classList.toggle('hidden',
+            !(partUsesSongActions(activePart) || isPlaceholder(currentWork)));
     }
 
-    // Source attribution
-    const sourceName = SOURCE_DISPLAY_NAMES[version.source] || '';
-    const sourceHtml = sourceName
-        ? `<div class="version-card-source">From ${escapeHtml(sourceName)}</div>`
-        : '';
-
-    // Key + chord count
-    const metaParts = [];
-    if (version.key) metaParts.push(`Key: ${version.key}`);
-    if (hasChords) metaParts.push(`${version.chord_count} chords`);
-    const metaHtml = metaParts.length
-        ? `<div class="version-card-meta">${escapeHtml(metaParts.join(' · '))}</div>`
-        : '';
-
-    // First line preview
-    const firstLine = version.first_line || '';
-    const previewHtml = firstLine
-        ? `<div class="version-card-preview">"${escapeHtml(firstLine.substring(0, 80))}"</div>`
-        : '';
-
-    // Artist (if different from current work)
-    const artistHtml = version.artist && version.artist !== currentWork?.artist
-        ? `<div class="version-card-artist">${escapeHtml(version.artist)}</div>`
-        : '';
-
-    card.innerHTML = `
-        <div class="version-card-body">
-            <div class="version-card-label">${escapeHtml(typeLabel)}</div>
-            ${artistHtml}
-            ${sourceHtml}
-            ${metaHtml}
-            ${previewHtml}
-        </div>
-    `;
-
-    // Click to open this version directly in song view
-    card.addEventListener('click', () => {
-        const isTabOnly = version.tablature_parts?.length > 0 && !version.content;
-        if (isTabOnly || version.status === 'placeholder') {
-            openWork(version.id, { groupId: version.group_id });
-        } else {
-            openSong(version.id);
-        }
+    actions.push({
+        id: 'list-picker-btn',
+        label: 'Lists',
+        icon: '♡',
+        title: 'Add to list',
+        onClick: (e) => {
+            const itemRef = getActiveItemRef() || currentWork.id;
+            const anchor = e.currentTarget;
+            showListPicker(itemRef, anchor, {
+                onUpdate: () => updateTriggerButton(anchor, itemRef),
+            });
+        },
     });
 
-    return card;
-}
-
-// ============================================
-// PART CARDS (Dashboard)
-// ============================================
-
-/**
- * Render part cards grid showing available content
- */
-function renderPartCards() {
-    if (availableParts.length === 0) return null;
-
-    const grid = document.createElement('div');
-    grid.className = 'work-dashboard-cards';
-
-    for (const part of availableParts) {
-        const card = createPartCard(part);
-        grid.appendChild(card);
+    // Phone band diet: Export moves into the ⋯ overflow (the band keeps
+    // back · logo · Lists · ⋯); desktop keeps the Export pill.
+    const phoneBand = window.matchMedia('(max-width: 640px)').matches;
+    if (currentWork.content && !phoneBand) {
+        actions.push({ el: buildExportPill() });
     }
 
-    return grid;
-}
-
-/**
- * Create a single part card
- */
-function createPartCard(part) {
-    const card = document.createElement('div');
-    card.className = 'work-part-card';
-
-    if (part.type === 'lead-sheet') {
-        const icon = '📄';
-        const key = currentWork.key ? `Key: ${currentWork.key}` : '';
-        const chordCount = currentWork.chord_count ? `${currentWork.chord_count} chords` : '';
-        const meta = [key, chordCount].filter(Boolean).join(' · ');
-        const firstLine = currentWork.first_line ? escapeHtml(currentWork.first_line) : '';
-
-        card.innerHTML = `
-            <div class="work-card-icon">${icon}</div>
-            <div class="work-card-body">
-                <div class="work-card-label">${escapeHtml(part.label)}</div>
-                ${meta ? `<div class="work-card-meta">${meta}</div>` : ''}
-                ${firstLine ? `<div class="work-card-preview">${firstLine}</div>` : ''}
-            </div>
-            <button class="work-card-action">View</button>
-        `;
-
-        const viewAction = () => {
-            activePart = part;
-            inlineExpanded = true;
-            renderWorkView();
-            const hash = `#work/${currentWork.id}/${part.partId}`;
-            history.pushState({ workId: currentWork.id, partId: part.partId }, '', hash);
-        };
-
-        card.querySelector('.work-card-action').addEventListener('click', viewAction);
-        card.addEventListener('click', (e) => {
-            if (!e.target.closest('.work-card-action')) viewAction();
+    const overflow = [
+        { id: 'flag-btn', label: '🚩 Report issue', onClick: () => openFlagModal(currentWork) },
+    ];
+    if (currentWork.content && phoneBand) {
+        overflow.push(
+            { label: '🖨️ Print', onClick: () => handleExport('print') },
+            { label: '📋 Copy ChordPro', onClick: () => handleExport('copy-chordpro') },
+            { label: '⬇️ Download .pro', onClick: () => handleExport('download-chordpro') },
+        );
+    }
+    if (listContext && listContext.listId) {
+        overflow.push({
+            id: 'song-notes-btn',
+            label: '📝 Song notes',
+            onClick: () => openNotesSheet(listContext.listId, currentWork.id, currentWork.title),
         });
-
-    } else if (part.type === 'tablature') {
-        const icon = INSTRUMENT_ICONS[part.instrument] || '🎵';
-        const meta = [];
-        if (part.author) meta.push(`by ${part.author}`);
-        if (part.source === 'banjo-hangout') meta.push('Banjo Hangout');
-
-        card.innerHTML = `
-            <div class="work-card-icon">${icon}</div>
-            <div class="work-card-body">
-                <div class="work-card-label">${escapeHtml(part.label)}</div>
-                ${meta.length ? `<div class="work-card-meta">${escapeHtml(meta.join(' · '))}</div>` : ''}
-            </div>
-            <button class="work-card-action">View</button>
-        `;
-
-        const viewAction = () => {
-            activePart = part;
-            inlineExpanded = true;
-            renderWorkView();
-            const hash = `#work/${currentWork.id}/${part.partId}`;
-            history.pushState({ workId: currentWork.id, partId: part.partId }, '', hash);
-        };
-
-        card.querySelector('.work-card-action').addEventListener('click', viewAction);
-        card.addEventListener('click', (e) => {
-            if (!e.target.closest('.work-card-action')) viewAction();
-        });
-
-    } else if (part.type === 'document') {
-        const icon = '📎';
-
-        card.innerHTML = `
-            <div class="work-card-icon">${icon}</div>
-            <div class="work-card-body">
-                <div class="work-card-label">${escapeHtml(part.label)}</div>
-                <div class="work-card-meta">${part.format?.toUpperCase() || 'PDF'}</div>
-            </div>
-            <button class="work-card-action">View</button>
-        `;
-
-        const viewAction = () => {
-            activePart = part;
-            inlineExpanded = true;
-            renderWorkView();
-            const hash = `#work/${currentWork.id}/${part.partId}`;
-            history.pushState({ workId: currentWork.id, partId: part.partId }, '', hash);
-        };
-
-        card.querySelector('.work-card-action').addEventListener('click', viewAction);
-        card.addEventListener('click', (e) => {
-            if (!e.target.closest('.work-card-action')) viewAction();
+    }
+    if (workPageHooks.isAdmin?.()) {
+        overflow.push({
+            id: 'delete-song-btn',
+            label: '🗑️ Delete song',
+            onClick: () => workPageHooks.onDelete?.(),
         });
     }
 
-    return card;
-}
-
-// ============================================
-// INLINE EXPANSION (Tab/Doc within dashboard)
-// ============================================
-
-/**
- * Render a part inline with a back button to return to dashboard
- */
-function renderInlineExpansion(part, container) {
-    // Back button
-    const backBtn = document.createElement('button');
-    backBtn.className = 'work-inline-back';
-    backBtn.textContent = '\uD83D\uDCCB Work';
-    backBtn.addEventListener('click', () => {
-        inlineExpanded = false;
-        activePart = null;
-        // Stop any playing tablature
-        if (tablaturePlayer) {
-            tablaturePlayer.stop();
-            setTablaturePlayer(null);
-        }
-        renderWorkView();
-        // Update URL back to work
-        const hash = `#work/${currentWork.id}`;
-        history.pushState({ workId: currentWork.id }, '', hash);
+    setTopBar({
+        back: { onClick: goBack },
+        // No title here: the page h1 is directly below the band and a
+        // duplicate reads as clutter (owner feedback).
+        title: null,
+        actions,
+        overflow,
+        navActive: null,
     });
-    container.appendChild(backBtn);
-
-    // Controls container (tab controls go here, hidden by default — toggled via Controls button)
-    const controlsArea = document.createElement('div');
-    controlsArea.className = 'work-inline-controls hidden';
-    controlsArea.id = 'work-controls-content';
-    container.appendChild(controlsArea);
-
-    // Content
-    const contentArea = document.createElement('div');
-    contentArea.className = 'work-inline-content';
-    container.appendChild(contentArea);
-
-    if (part.type === 'tablature') {
-        renderTablaturePart(part, contentArea);
-    } else if (part.type === 'lead-sheet') {
-        renderLeadSheetPart(part, contentArea);
-    } else if (part.type === 'document') {
-        renderDocumentPart(part, contentArea);
-    }
 }
+
+// ============================================
+// FOCUS HEADER (fullscreen / list-practice mode)
+// ============================================
 
 // ============================================
 // BOUNTY SECTION
@@ -1597,62 +1398,9 @@ async function uploadPlaceholderDocumentRegular(file, label) {
 }
 
 // ============================================
-// PART RENDERERS (Tab + Doc for inline expansion)
+// PART RENDERERS (tablature + document; lead sheets render via
+// song-view.js renderLeadSheetContent)
 // ============================================
-
-/**
- * Render lead-sheet part inline.
- * ABC notation is rendered via ABCJS. ChordPro falls back to openSong().
- */
-function renderLeadSheetPart(part, container) {
-    const abcContent = currentWork.abc_content;
-
-    if (abcContent) {
-        // Render ABC notation inline
-        const abcId = 'work-abc-notation';
-        container.innerHTML = `<div id="${abcId}" class="abc-notation-container"></div>`;
-
-        // Use ABCJS if available
-        if (typeof ABCJS !== 'undefined') {
-            try {
-                const containerWidth = container.clientWidth || window.innerWidth - 32;
-                const isMobile = window.innerWidth <= 600;
-                const minWidth = isMobile ? 280 : 400;
-                const staffwidth = Math.max(minWidth, containerWidth - 32);
-
-                ABCJS.renderAbc(abcId, abcContent, {
-                    staffwidth,
-                    scale: 1.0,
-                    add_classes: true,
-                    wrap: {
-                        minSpacing: 1.5,
-                        maxSpacing: 2.5,
-                        preferredMeasuresPerLine: 4
-                    },
-                    paddingleft: 0,
-                    paddingright: 0,
-                    paddingbottom: 30
-                });
-            } catch (e) {
-                console.error('ABC rendering error:', e);
-                container.innerHTML = `<pre class="abc-fallback">${escapeHtml(abcContent)}</pre>`;
-            }
-        } else {
-            container.innerHTML = `<pre class="abc-fallback">${escapeHtml(abcContent)}</pre>`;
-        }
-
-        // Source attribution
-        if (currentWork.source) {
-            const sourceEl = document.createElement('div');
-            sourceEl.className = 'work-inline-source';
-            sourceEl.textContent = `Source: ${currentWork.source}`;
-            container.appendChild(sourceEl);
-        }
-    } else {
-        // ChordPro lead sheet - open in song view (full rendering pipeline)
-        openSong(currentWork.id);
-    }
-}
 
 function renderDocumentPart(part, container) {
     const downloadUrl = part.file;
@@ -1685,9 +1433,15 @@ async function renderTablaturePart(part, container) {
     container.innerHTML = '<div class="loading">Loading tablature...</div>';
 
     try {
+        // Load OTF data. cache: 'no-cache' = revalidate with the server
+        // (304 if unchanged) — Chrome's heuristic freshness otherwise
+        // serves long-unchanged tab files for WEEKS after they are
+        // re-published (a January parse of cherokee-shuffle-a survived
+        // multiple hard reloads and rendered 2/2 left-packed measures
+        // over the corrected data).
         let otf = loadedTablature;
         if (!otf || otf._partFile !== part.file) {
-            const response = await fetch(part.file);
+            const response = await fetch(part.file, { cache: 'no-cache' });
             if (!response.ok) throw new Error(`Failed to load ${part.file}`);
             otf = await response.json();
             otf._partFile = part.file;
@@ -1695,18 +1449,23 @@ async function renderTablaturePart(part, container) {
         }
 
         container.innerHTML = '';
-        trackRenderers = {};
+        destroyTrackRenderers(); // disconnect old theme/resize observers
 
-        // Inject controls into the inline controls area
+        // Playback controls + track mixer live in the app's bottom band
         const controls = createTablatureControls(otf, part);
-        const controlsContent = document.getElementById('work-controls-content');
-        if (controlsContent) {
-            controlsContent.innerHTML = '';
-            controlsContent.appendChild(controls);
-        } else {
-            container.appendChild(controls);
-        }
+        setBottomBand(controls);
 
+        // Track VIEW tabs (which staff you see; audio = mixer/Solo).
+        // One visible track at a time kills the nested-scroll fights and
+        // the 'cursors in different places' confusion — plus [All] for
+        // the stacked view. (True score view — every instrument's same
+        // measures aligned in one system — needs cross-track measure
+        // widths and is queued in the handoff.)
+        const trackTabsBar = document.createElement('div');
+        trackTabsBar.className = 'track-view-tabs';
+        container.appendChild(trackTabsBar);
+
+        // Create container for all tracks
         const allTracksContainer = document.createElement('div');
         allTracksContainer.className = 'tablature-all-tracks';
         container.appendChild(allTracksContainer);
@@ -1714,6 +1473,10 @@ async function renderTablaturePart(part, container) {
         const timeSignature = otf.metadata?.time_signature || '4/4';
         const ticksPerBeat = otf.timing?.ticks_per_beat || 480;
 
+        // Ts-change-aware timing for the current display mode
+        const timings = buildOtfTimings(otf, showRepeatsCompact && otf.reading_list?.length > 0);
+
+        // Determine which track is the "lead" (matches part instrument, or first track)
         let leadTrackId = otf.tracks[0]?.id;
         if (part.instrument && otf.tracks.length > 1) {
             const matchingTrack = otf.tracks.find(t =>
@@ -1734,10 +1497,18 @@ async function renderTablaturePart(part, container) {
 
             if (isMandolin && !isLead) continue;
 
+            // OTF omits silent measures; fill them so empty bars render
+            // (through the ALL-track max, keeping tracks time-aligned).
+            notation = densifyNotation(notation, maxMeasureIn(otf.notation));
+
+            // Free-text annotations + reading-list section labels
+            // (display copy; attach after densify — annotations may
+            // target silent measures).
+            notation = attachOtfDecorations(notation, otf);
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
                 notation = prepareCompactNotation(notation, otf.reading_list);
-            } else {
-                notation = expandNotationWithReadingList(notation, otf.reading_list);
+            } else if (otf.reading_list && otf.reading_list.length > 0) {
+                notation = expandNotation(notation, timings.playbackTimeline);
             }
             const icon = INSTRUMENT_ICONS[track.instrument] ||
                         (track.id.includes('banjo') ? '🪕' :
@@ -1748,10 +1519,13 @@ async function renderTablaturePart(part, container) {
             const trackSection = document.createElement('div');
             trackSection.className = `tablature-track-section${isLead ? '' : ' backup-track'}`;
             trackSection.dataset.trackId = track.id;
-            trackSection.style.display = isLead ? 'block' : 'none';
+            trackSection.style.display =
+                (activeTrackView === 'all' || (activeTrackView ?? leadTrackId) === track.id)
+                    ? 'block' : 'none';
 
-            // TabRenderer renders its own instrument/tuning header (track-info),
-            // so we skip adding a separate track header here to avoid duplication.
+            // (No separate section header — the renderer's own track-info
+            // row carries icon/name/tuning, and Solo is injected onto it
+            // by setupTablaturePlayer. One label layer per track.)
 
             const tabContainer = document.createElement('div');
             tabContainer.className = 'tablature-container';
@@ -1760,44 +1534,76 @@ async function renderTablaturePart(part, container) {
             allTracksContainer.appendChild(trackSection);
 
             const renderer = new TabRenderer(tabContainer);
-            renderer.render(track, notation, ticksPerBeat, timeSignature);
+            renderer.render(track, notation, ticksPerBeat, timeSignature, timings.visual);
             trackRenderers[track.id] = renderer;
         }
 
-        // Wire up track visibility toggles
+        // Populate the view tabs from the tracks that actually rendered
+        const renderedIds = Object.keys(trackRenderers);
+        if (renderedIds.length > 1) {
+            const current = activeTrackView ?? leadTrackId;
+            trackTabsBar.innerHTML = [
+                ...renderedIds.map(id => `
+                    <button class="track-view-tab${id === current ? ' active' : ''}"
+                            data-view="${id}">${escapeHtml(id)}</button>`),
+                `<button class="track-view-tab${current === 'all' ? ' active' : ''}"
+                         data-view="all">All</button>`,
+            ].join('');
+            trackTabsBar.addEventListener('click', (e) => {
+                const btn = e.target.closest('.track-view-tab');
+                if (!btn) return;
+                activeTrackView = btn.dataset.view;
+                trackTabsBar.querySelectorAll('.track-view-tab').forEach(b =>
+                    b.classList.toggle('active', b === btn));
+                for (const section of allTracksContainer.querySelectorAll('.tablature-track-section')) {
+                    section.style.display =
+                        (activeTrackView === 'all' || section.dataset.trackId === activeTrackView)
+                            ? 'block' : 'none';
+                }
+            });
+        } else {
+            trackTabsBar.remove();
+        }
+
+        // Track checkboxes control AUDIO only — the view tabs decide
+        // what you SEE. Default: the lead track sounds. Toggles apply
+        // LIVE during playback (per-track gain buses in TabPlayer).
         const trackCheckboxes = controls.querySelectorAll('.track-checkbox');
         trackCheckboxes.forEach(checkbox => {
-            const trackId = checkbox.dataset.trackId;
-            const trackSection = allTracksContainer.querySelector(`[data-track-id="${trackId}"]`);
-            if (trackSection) {
-                checkbox.checked = trackSection.style.display !== 'none';
-            }
-
+            checkbox.checked = checkbox.dataset.trackId === leadTrackId;
             checkbox.addEventListener('change', () => {
-                const section = allTracksContainer.querySelector(`[data-track-id="${trackId}"]`);
-                if (section) {
-                    section.style.display = checkbox.checked ? 'block' : 'none';
-                }
+                tablaturePlayer?.setTrackEnabled?.(
+                    checkbox.dataset.trackId, checkbox.checked);
             });
         });
 
-        // Wire up repeat toggle
-        const repeatCheckbox = controls.querySelector('.tab-repeat-checkbox');
-        const repeatLabel = controls.querySelector('.tab-repeat-label');
-        if (repeatCheckbox) {
-            repeatCheckbox.addEventListener('change', () => {
-                showRepeatsCompact = repeatCheckbox.checked;
-                if (repeatLabel) {
-                    repeatLabel.textContent = showRepeatsCompact ? 'Repeats' : 'Unrolled';
-                }
+        // Wire up repeat notation buttons (re-renders with repeat signs
+        // or unrolled)
+        controls.querySelectorAll('.tab-repeat-group .pill-mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                showRepeatsCompact = btn.dataset.val === 'repeats';
                 renderTablaturePart(part, container);
             });
-        }
+        });
+
+        // Wire up two-feel buttons (cut-time presentation, re-render)
+        controls.querySelectorAll('.tab-feel-group .pill-mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                twoFeelMode = btn.dataset.val === 'two';
+                renderTablaturePart(part, container);
+            });
+        });
 
         const leadRenderer = trackRenderers[leadTrackId] || Object.values(trackRenderers)[0];
         setupTablaturePlayer(otf, controls, leadRenderer);
 
-        // Attribution for Banjo Hangout tabs
+        // Wire up the Edit button — swap the rendered tab for an edit session
+        const editBtn = controls.querySelector('.tab-edit-btn');
+        if (editBtn) {
+            editBtn.addEventListener('click', () => enterTabEditMode(otf, part, container));
+        }
+
+        // Add attribution section for Banjo Hangout tabs
         if (part.source === 'banjo-hangout') {
             const attribution = document.createElement('div');
             attribution.className = 'tab-attribution';
@@ -1827,15 +1633,78 @@ async function renderTablaturePart(part, container) {
 
     } catch (e) {
         console.error('Error loading tablature:', e);
-        container.innerHTML = `<div class="error">Failed to load tablature: ${e.message}</div>`;
+        container.innerHTML = `<div class="error">Failed to load tablature: ${escapeHtml(e.message)}</div>`;
     }
+}
+
+/**
+ * Enter edit mode for a tablature part: mount the OTF editor over the
+ * rendered tab. Done/Ctrl+S applies the edited document back to the
+ * view (in memory) and re-renders; Cancel restores the original.
+ * Editor + session code are lazy-imported so readers never pay for it.
+ */
+async function enterTabEditMode(otf, part, container) {
+    // Stop playback before handing the document to the editor
+    if (tablaturePlayer?.isPlaying) {
+        tablaturePlayer.stop();
+    }
+
+    const [{ OTFEditor }, { createTabEditSession, resolveEditTrackId }, { submitTab }] = await Promise.all([
+        import('./otf-editor/editor.js'),
+        import('./otf-editor/work-edit.js'),
+        import('./otf-editor/submit-tab.js'),
+    ]);
+
+    // Park the bottom-band controls while editing (they drive dead renderers)
+    const editNotice = document.createElement('div');
+    editNotice.className = 'tab-controls';
+    editNotice.innerHTML = '<em>Editing — use the editor bar below. ✓ Done applies your changes, Cancel discards them.</em>';
+    setBottomBand(editNotice);
+
+    // The rendered-view renderers are about to be detached — drop their
+    // observers now; renderTablaturePart rebuilds them on exit.
+    destroyTrackRenderers();
+    container.innerHTML = '';
+    const baseName = (part.file || 'tab').split('/').pop().replace(/\.otf\.json$/, '');
+
+    activeEditSession = createTabEditSession({
+        mount: container,
+        otf,
+        trackId: resolveEditTrackId(otf, part.instrument),
+        filename: `${baseName}-edited`,
+        editorFactory: (opts) => new OTFEditor(opts),
+        onApply: (doc) => {
+            doc._partFile = part.file; // keep the view cache keyed to this part
+            setLoadedTablature(doc);
+        },
+        onExit: () => {
+            activeEditSession = null;
+            renderTablaturePart(part, container);
+        },
+        // Save-back: same human-approved GitHub-issue pipeline as song
+        // corrections — the editor's payoff beyond Download
+        onSubmit: (doc, comment) => submitTab({
+            type: 'tab-correction',
+            otf: doc,
+            title: currentWork?.title || doc.metadata?.title || 'Untitled',
+            instrument: part.instrument || 'banjo',
+            workId: currentWork?.id,
+            comment,
+        }),
+    });
 }
 
 /**
  * Create tablature controls
  */
 function createTablatureControls(otf, part) {
-    const defaultTempo = otf.metadata?.tempo || 100;
+    const quarterBpm = (tempoOverride && tempoOverride.workId === currentWork?.id)
+        ? tempoOverride.quarterBpm
+        : (otf.metadata?.tempo || 100);
+    // Displayed BPM is per BEAT of the current feel: in two feel (cut
+    // time) the beat is a half note, so the same absolute speed shows
+    // as half the number (240 quarters == 120 in cut time).
+    const defaultTempo = Math.round(quarterBpm / (twoFeelMode ? 2 : 1));
     const originalKey = currentWork.key || 'G';
 
     const filteredTracks = otf.tracks.filter(track => {
@@ -1847,7 +1716,7 @@ function createTablatureControls(otf, part) {
 
     const trackMixerHtml = filteredTracks.length > 1 ? `
         <div class="tab-track-mixer">
-            <span class="mixer-label">Tracks:</span>
+            <span class="mixer-label">Sound:</span>
             ${filteredTracks.map(track => {
                 const icon = track.instrument?.includes('banjo') ? '🪕' :
                             track.instrument?.includes('guitar') ? '🎸' :
@@ -1855,28 +1724,34 @@ function createTablatureControls(otf, part) {
                             track.instrument?.includes('bass') ? '🎸' :
                             track.instrument?.includes('fiddle') ? '🎻' : '🎵';
                 const isLead = track.role === 'lead' || track.instrument?.includes('banjo');
-                return `<label class="track-toggle" title="${track.id}">
-                    <input type="checkbox" class="track-checkbox" data-track-id="${track.id}" ${isLead ? 'checked' : ''}>
+                const safeId = escapeHtml(track.id);
+                return `<label class="track-toggle" title="${safeId}">
+                    <input type="checkbox" class="track-checkbox" data-track-id="${safeId}" ${isLead ? 'checked' : ''}>
                     <span class="track-icon">${icon}</span>
-                    <span class="track-name">${track.id}</span>
+                    <span class="track-name">${safeId}</span>
                 </label>`;
             }).join('')}
         </div>
     ` : '';
 
     const hasReadingList = otf.reading_list && otf.reading_list.length > 0;
+    // Segmented buttons, not native selects — mobile browsers float select
+    // menus over the band at odd sizes; buttons match the pill design.
     const repeatToggleHtml = hasReadingList ? `
-        <label class="tab-repeat-toggle" title="Toggle repeat notation style">
-            <input type="checkbox" class="tab-repeat-checkbox" ${showRepeatsCompact ? 'checked' : ''}>
-            <span class="tab-repeat-label">${showRepeatsCompact ? 'Repeats' : 'Unrolled'}</span>
-        </label>
+        <div class="qc-group pill-mode-group tab-repeat-group" title="Repeat notation: unrolled or repeat signs">
+            <button class="pill-mode-btn ${showRepeatsCompact ? '' : 'active'}" data-val="unrolled">Unrolled</button>
+            <button class="pill-mode-btn ${showRepeatsCompact ? 'active' : ''}" data-val="repeats">Repeats</button>
+        </div>
     ` : '';
 
-    const keyOptions = CHROMATIC_MAJOR_KEYS.map(k => {
-        const capo = (CHROMATIC_MAJOR_KEYS.indexOf(k) - CHROMATIC_MAJOR_KEYS.indexOf(originalKey) + 12) % 12;
-        const capoLabel = capo === 0 ? '' : ` (Capo ${capo})`;
-        return `<option value="${k}" data-capo="${capo}" ${k === originalKey ? 'selected' : ''}>${k}${capoLabel}</option>`;
-    }).join('');
+    // Feel selector (4/4 tunes only): explicit buttons, no ambiguous
+    // toggle state
+    const feelToggleHtml = (otf.metadata?.time_signature || '4/4') === '4/4' ? `
+        <div class="qc-group pill-mode-group tab-feel-group" title="Rhythmic feel: quarter-note pulse or cut time (BPM counts the feel's beat)">
+            <button class="pill-mode-btn ${twoFeelMode ? '' : 'active'}" data-val="four">Four feel</button>
+            <button class="pill-mode-btn ${twoFeelMode ? 'active' : ''}" data-val="two">Two feel</button>
+        </div>
+    ` : '';
 
     const controls = document.createElement('div');
     controls.className = 'tab-controls';
@@ -1888,9 +1763,7 @@ function createTablatureControls(otf, part) {
         </div>
         <div class="qc-group qc-key-group">
             <button class="tab-key-down qc-btn" title="Transpose down">−</button>
-            <select class="tab-key-select qc-key-btn" title="Select key">
-                ${keyOptions}
-            </select>
+            <span class="tab-key-slot"></span>
             <button class="tab-key-up qc-btn" title="Transpose up">+</button>
         </div>
         <div class="qc-group">
@@ -1900,15 +1773,60 @@ function createTablatureControls(otf, part) {
         </div>
         <button class="tab-play-btn qc-toggle-btn">▶ Play</button>
         <button class="tab-stop-btn qc-toggle-btn" disabled>⏹ Stop</button>
+        <button class="tab-edit-btn qc-toggle-btn" title="Edit this tab">✏️ Edit</button>
         <label class="tab-metronome-toggle">
             <input type="checkbox" class="tab-metronome-checkbox">
             <span class="tab-metronome-icon">🥁</span>
         </label>
+        <label class="tab-countin-toggle" title="Count-in before looped phrases">
+            <input type="checkbox" class="tab-countin-checkbox" checked>
+            <span class="tab-countin-label">1·2·3·4</span>
+        </label>
+        <label class="tab-loop-toggle" title="Loop the whole song">
+            <input type="checkbox" class="tab-loop-checkbox">
+            <span class="tab-loop-label">🔁</span>
+        </label>
         ${repeatToggleHtml}
+        ${feelToggleHtml}
         <span class="tab-position"></span>
         <span class="tab-capo-indicator"></span>
         ${trackMixerHtml}
     `;
+
+    // Key picker: a pill with a drop-up key grid (replaces the native
+    // select). Exposes a tiny API on the controls element so
+    // setupTablaturePlayer can read the capo and step keys.
+    const keys = CHROMATIC_MAJOR_KEYS;
+    const origIdx = Math.max(0, keys.indexOf(originalKey));
+    let keyIdx = origIdx;
+    const capoOf = (i) => (i - origIdx + 12) % 12;
+    const changeListeners = [];
+
+    const keyPill = pill(keys[keyIdx], (pop, api) => {
+        pop.innerHTML = `<div class="pill-key-grid">${keys.map((k, i) => `
+            <button class="pill-key-btn ${i === keyIdx ? 'active' : ''}" data-idx="${i}"
+                title="${capoOf(i) ? `Capo ${capoOf(i)}` : 'Open'}">${k}</button>`).join('')}</div>`;
+        pop.querySelectorAll('.pill-key-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setKeyIdx(parseInt(btn.dataset.idx, 10));
+                api.close();
+            });
+        });
+    }, { className: 'tab-key-pill', title: 'Select key' });
+
+    const setKeyIdx = (i) => {
+        keyIdx = Math.max(0, Math.min(keys.length - 1, i));
+        keyPill.pillApi.setLabel(keys[keyIdx]);
+        keyPill.pillApi.refresh();
+        changeListeners.forEach(cb => cb());
+    };
+
+    controls.querySelector('.tab-key-slot').replaceWith(keyPill);
+    controls._tabKey = {
+        get capo() { return capoOf(keyIdx); },
+        step: (delta) => setKeyIdx(keyIdx + delta),
+        onChange: (cb) => changeListeners.push(cb),
+    };
 
     return controls;
 }
@@ -1924,11 +1842,12 @@ function setupTablaturePlayer(otf, controls, renderer) {
     const player = tablaturePlayer;
     const playBtn = controls.querySelector('.tab-play-btn');
     const stopBtn = controls.querySelector('.tab-stop-btn');
+    const loopCheckbox = controls.querySelector('.tab-loop-checkbox');
     const posEl = controls.querySelector('.tab-position');
     const tempoDisplay = controls.querySelector('.tab-tempo-display');
     const tempoDown = controls.querySelector('.tab-tempo-down');
     const tempoUp = controls.querySelector('.tab-tempo-up');
-    const keySelect = controls.querySelector('.tab-key-select');
+    const tabKey = controls._tabKey;
     const keyDown = controls.querySelector('.tab-key-down');
     const keyUp = controls.querySelector('.tab-key-up');
     const capoIndicator = controls.querySelector('.tab-capo-indicator');
@@ -1940,17 +1859,25 @@ function setupTablaturePlayer(otf, controls, renderer) {
     let currentCapo = 0;
     let currentScale = 1.0;
 
-    const timeSignature = otf.metadata?.time_signature || '4/4';
-    const ticksPerBeat = otf.timing?.ticks_per_beat || 480;
-    const beatsPerMeasure = parseInt(timeSignature.split('/')[0], 10) || 4;
-    const ticksPerMeasure = ticksPerBeat * beatsPerMeasure;
-    const tickMapper = showRepeatsCompact
-        ? buildTickMapping(otf.reading_list, ticksPerMeasure)
+    // Map playback ticks to visual ticks for compact mode: playback follows
+    // the unrolled reading list while the display shows written measures.
+    // Ts-change aware on both sides (measure-timing.js).
+    const compact = showRepeatsCompact && otf.reading_list?.length > 0;
+    const timings = buildOtfTimings(otf, compact);
+    const tickMapper = compact
+        ? makePlaybackToVisualMapper(timings.playback, timings.visual)
         : (tick) => tick;
 
-    player.onTick = (absTick) => renderer.updateBeatCursor(tickMapper(absTick));
-    player.onNoteStart = (absTick) => renderer.highlightNote(tickMapper(absTick));
-    player.onNoteEnd = (absTick) => renderer.clearNoteHighlight(tickMapper(absTick));
+    // Playback visualization callbacks (with tick mapping for compact mode).
+    // Fan out to EVERY track's renderer so the cursor runs on all visible
+    // parts; only the lead renderer drives auto-scroll.
+    const eachRenderer = (fn) => {
+        for (const r of Object.values(trackRenderers)) fn(r, r === renderer);
+    };
+    player.onTick = (absTick) => eachRenderer((r, isLead) =>
+        r.updateBeatCursor(tickMapper(absTick), { autoScroll: isLead }));
+    player.onNoteStart = (absTick) => eachRenderer(r => r.highlightNote(tickMapper(absTick)));
+    player.onNoteEnd = (absTick) => eachRenderer(r => r.clearNoteHighlight(tickMapper(absTick)));
 
     const updateSize = (delta) => {
         currentScale = Math.max(0.6, Math.min(1.6, currentScale + delta));
@@ -1972,14 +1899,22 @@ function setupTablaturePlayer(otf, controls, renderer) {
         player.metronomeEnabled = metronomeCheckbox.checked;
     });
 
+    // Tempo controls
+    // No ceiling — bluegrass runs past 240 in cut time. Floor keeps the
+    // scheduler sane.
     const updateTempoButtons = () => {
-        tempoDown.disabled = currentTempo <= 40;
-        tempoUp.disabled = currentTempo >= 280;
+        tempoDown.disabled = currentTempo <= 20;
     };
 
     const setTempo = (val) => {
-        currentTempo = Math.max(40, Math.min(280, val));
+        currentTempo = Math.max(20, Math.round(val));
         tempoDisplay.textContent = currentTempo;
+        // Persist as quarter-note bpm so the feel toggle's re-render can
+        // convert the display while keeping the actual speed.
+        tempoOverride = {
+            workId: currentWork?.id,
+            quarterBpm: currentTempo * (twoFeelMode ? 2 : 1),
+        };
         updateTempoButtons();
     };
 
@@ -1990,33 +1925,35 @@ function setupTablaturePlayer(otf, controls, renderer) {
         capoIndicator.textContent = currentCapo > 0 ? `Capo ${currentCapo}` : '';
     };
 
-    const selectKeyByIndex = (index) => {
-        const options = keySelect.options;
-        const newIndex = Math.max(0, Math.min(options.length - 1, index));
-        keySelect.selectedIndex = newIndex;
-        currentCapo = parseInt(options[newIndex].dataset.capo, 10) || 0;
-        updateCapoIndicator();
-    };
-
-    keySelect?.addEventListener('change', () => {
-        currentCapo = parseInt(keySelect.options[keySelect.selectedIndex].dataset.capo, 10) || 0;
+    // Key state lives with the key pill (created in createTablatureControls)
+    tabKey?.onChange(() => {
+        currentCapo = tabKey.capo;
         updateCapoIndicator();
     });
 
-    keyDown?.addEventListener('click', () => selectKeyByIndex(keySelect.selectedIndex - 1));
-    keyUp?.addEventListener('click', () => selectKeyByIndex(keySelect.selectedIndex + 1));
+    keyDown?.addEventListener('click', () => tabKey?.step(-1));
+    keyUp?.addEventListener('click', () => tabKey?.step(1));
 
+    // Position updates — also SELF-HEAL the play button from player
+    // truth: optimistic UI plus loop restarts and view switches can
+    // desync the label from reality (Mike: 'the play button state is
+    // lost'). While ticks arrive, the player IS playing.
     player.onPositionUpdate = (elapsed, total) => {
         const fmt = (s) => `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
         posEl.textContent = `${fmt(elapsed)} / ${fmt(total)}`;
+        if (!playBtn.classList.contains('playing')) {
+            playBtn.textContent = '⏸ Pause';
+            playBtn.classList.add('playing');
+            stopBtn.disabled = false;
+        }
     };
 
     player.onPlaybackEnd = () => {
-        playBtn.textContent = '▶ Play';
+        playBtn.textContent = armed?.kind === 'loop' ? '▶ Loop' : '▶ Play';
         playBtn.classList.remove('playing');
         stopBtn.disabled = true;
         posEl.textContent = '';
-        renderer.resetPlaybackVisualization();
+        eachRenderer(r => r.resetPlaybackVisualization());
     };
 
     const getEnabledTrackIds = () => {
@@ -2033,19 +1970,152 @@ function setupTablaturePlayer(otf, controls, renderer) {
         return Array.from(checkboxes).map(cb => cb.dataset.trackId);
     };
 
+    // Shared playback entry: the Play button executes whatever is
+    // ARMED (cursor / phrase); nothing plays on click alone.
+    const startPlayback = async (extra = {}) => {
+        if (player.isPlaying) player.stop();
+        playBtn.textContent = '⏸ Pause';
+        playBtn.classList.add('playing');
+        stopBtn.disabled = false;
+        await player.play(otf, {
+            // Player tempo is quarter-note bpm; the displayed number is
+            // per-beat of the feel, so two feel plays twice as fast.
+            tempo: currentTempo * (twoFeelMode ? 2 : 1),
+            transpose: currentCapo,
+            trackIds: getEnabledTrackIds(),
+            feel: twoFeelMode ? 'two' : null,
+            // Whole-song loop checkbox. A phrase-loop (drag) passes its own
+            // loop:true + range via `extra`, which overrides this.
+            loop: !!loopCheckbox?.checked,
+            ...extra,
+        });
+        // play() can bail (superseded by a newer call, audio context
+        // blocked) — reconcile the optimistic button with reality
+        if (!player.isPlaying) {
+            playBtn.classList.remove('playing');
+            stopBtn.disabled = true;
+            updatePlayLabel();
+        }
+    };
+
+    // ARM-THEN-PLAY (Mike: clicking/highlighting must not auto-start):
+    // click arms a play cursor at that BEAT; drag arms a whole-measure
+    // phrase for looping (one-measure count-in optional). The Play
+    // button label reflects what's armed; Esc disarms.
+    let armed = null; // {kind:'cursor', tick} | {kind:'loop', ...range}
+    let armedVisual = null; // {trackId, measure, tick} | {trackId, m0, m1}
+    const updatePlayLabel = () => {
+        if (player.isPlaying) return;
+        playBtn.textContent = armed?.kind === 'loop' ? '▶ Loop' : '▶ Play';
+    };
+    const disarm = () => {
+        armed = null;
+        armedVisual = null;
+        eachRenderer(r => r._playbackInteractions?.clearArmed());
+        updatePlayLabel();
+    };
+
+    const countInCheckbox = controls.querySelector('.tab-countin-checkbox');
+    const beatTicks = timings.measureTiming.beatTicksFor
+        ? timings.measureTiming.beatTicksFor(1) : 480;
+    const countInBeatsFor = () => {
+        if (!countInCheckbox?.checked) return 0;
+        return Math.max(1, Math.round(timings.measureTiming.ticksFor(1) / beatTicks));
+    };
+
+    // Solo button rides the renderer's track-info row (the only label
+    // row per track now); re-injected after every renderer re-render.
+    const injectSolo = (r, trackId) => {
+        if (otf.tracks.length < 2) return;
+        const info = r.container?.querySelector('.track-info');
+        if (!info || info.querySelector('.track-solo')) return;
+        const solo = document.createElement('button');
+        solo.className = 'track-solo';
+        solo.textContent = 'Solo';
+        solo.title = 'Hear only this track (click again for all)';
+        solo.addEventListener('click', () => {
+            const boxes = [...controls.querySelectorAll('.track-checkbox')];
+            const soloed = boxes.every(cb =>
+                cb.checked === (cb.dataset.trackId === trackId));
+            for (const cb of boxes) {
+                const want = soloed ? true : cb.dataset.trackId === trackId;
+                if (cb.checked !== want) {
+                    cb.checked = want;
+                    cb.dispatchEvent(new Event('change', { bubbles: true }));
+                }
+            }
+        });
+        info.appendChild(solo);
+    };
+
+    const attachInteractions = (r, trackId) => {
+        injectSolo(r, trackId);
+        r._playbackInteractions?.destroy();
+        r._playbackInteractions = attachTabPlaybackInteractions(r, {
+            beatTicks,
+            onPlayFrom: ({ measure, tick }) => {
+                const t = playbackTickForPoint(
+                    timings.playback, compact, measure, tick);
+                if (t == null) return;
+                armed = { kind: 'cursor', tick: t };
+                armedVisual = { trackId, measure, tick };
+                eachRenderer((other) => {
+                    if (other !== r) other._playbackInteractions?.clearArmed();
+                });
+                updatePlayLabel();
+            },
+            onLoopMeasures: (m0, m1) => {
+                const range = playbackRangeForMeasures(
+                    timings.playback, compact, m0, m1);
+                if (!range) return;
+                armed = { kind: 'loop', ...range };
+                armedVisual = { trackId, m0, m1 };
+                eachRenderer((other) => {
+                    if (other !== r) other._playbackInteractions?.clearArmed();
+                });
+                updatePlayLabel();
+            },
+        });
+        // restore armed visuals after a renderer re-render
+        if (armedVisual?.trackId === trackId) {
+            if (armedVisual.m0 != null) {
+                r._playbackInteractions.highlightMeasures(armedVisual.m0, armedVisual.m1);
+            } else {
+                r._playbackInteractions.armCaretAt(armedVisual.measure, armedVisual.tick);
+            }
+        }
+    };
+    for (const [trackId, r] of Object.entries(trackRenderers)) {
+        attachInteractions(r, trackId);
+        // renderer re-renders (resize, Bravura) rebuild the row SVGs —
+        // reattach so the handlers survive
+        r.onAfterRender = () => attachInteractions(r, trackId);
+    }
+
+    // Esc disarms (one live listener; replaced on re-render)
+    if (workViewEscHandler) document.removeEventListener('keydown', workViewEscHandler);
+    workViewEscHandler = (e) => {
+        if (e.key === 'Escape' && document.contains(controls)) disarm();
+    };
+    document.addEventListener('keydown', workViewEscHandler);
+
+    // Play/stop
     playBtn.addEventListener('click', async () => {
         if (player.isPlaying) {
             player.stop();
-            playBtn.textContent = '▶ Play';
+            updatePlayLabel();
             playBtn.classList.remove('playing');
             stopBtn.disabled = true;
-            renderer.resetPlaybackVisualization();
+            eachRenderer(r => r.resetPlaybackVisualization());
+        } else if (armed?.kind === 'loop') {
+            await startPlayback({
+                startTick: armed.startTick, endTick: armed.endTick,
+                loop: true, countInBeats: countInBeatsFor(),
+            });
+        } else if (armed?.kind === 'cursor') {
+            await startPlayback({ startTick: armed.tick });
         } else {
-            playBtn.textContent = '⏸ Pause';
-            playBtn.classList.add('playing');
-            stopBtn.disabled = false;
-            const trackIds = getEnabledTrackIds();
-            await player.play(otf, { tempo: currentTempo, transpose: currentCapo, trackIds });
+            await startPlayback();
         }
     });
 
@@ -2055,7 +2125,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
         playBtn.classList.remove('playing');
         stopBtn.disabled = true;
         posEl.textContent = '';
-        renderer.resetPlaybackVisualization();
+        eachRenderer(r => r.resetPlaybackVisualization());
     });
 }
 
@@ -2065,7 +2135,9 @@ function setupTablaturePlayer(otf, controls, renderer) {
  */
 export function getActiveItemRef() {
     if (!currentWork) return null;
-    if (inlineExpanded && activePart?.partId) {
+    // Part-qualified ref only when the user is on a non-default part of a
+    // multi-part work; the plain work id is the common case.
+    if (availableParts.length > 1 && activePart?.partId && !activePart.default) {
         return `${currentWork.id}/${activePart.partId}`;
     }
     return currentWork.id;
