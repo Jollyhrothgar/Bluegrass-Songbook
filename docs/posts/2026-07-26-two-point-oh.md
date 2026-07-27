@@ -93,6 +93,24 @@ years of collecting, that's the invitation.
 
 ![A banjo tab with the playback transport and track mixer in the bottom band](/posts/images/2.0-tab-page.png)
 
+## Rough edges, and what's next
+
+Being honest about where this stands:
+
+- **Everything is git-driven under the hood.** Contributions, corrections,
+  and tab submissions all flow through GitHub pull requests and issues.
+  That keeps every change reviewable and the whole songbook versioned —
+  but it's not user-friendly, and most pickers shouldn't have to know
+  what a PR is. Smoothing that path is the next big piece of work.
+- **Writing tablature fast is unsolved.** The editor works, but bluegrass
+  has idioms — rolls, common licks, backup patterns — that deserve
+  first-class ergonomics, not note-by-note entry. That needs more design
+  thought before more code.
+- **The corpus needs filling out.** 515 canonical songs are still missing,
+  the instrumental repertoire barely has tabs beyond banjo, and a hundred
+  songs are waiting on chords. The bounty board is the map; now it needs
+  hands.
+
 ## Thanks
 
 None of this exists without the people who said yes:
