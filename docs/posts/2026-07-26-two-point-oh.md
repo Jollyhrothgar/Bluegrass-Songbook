@@ -81,13 +81,14 @@ tabs**, in the browser, no software to install:
   repeat brackets and voltas, and TablEdit-style bends — played back as
   the quarter-tone chokes they are.
 - **Edit in the browser.** Every tab on the site has an Edit button:
-  fix a note, change a fingering, adjust a roll. Submissions go through
-  the same human review as song corrections.
+  fix a note, change a fingering, adjust a roll, and download the
+  corrected tab.
 
 Honest print: creating tabs *from scratch* in the browser is banjo-first
-today — the multipart story currently runs through `.tef` import. If
-you've got a folder of TablEdit files from years of collecting, that's
-the invitation.
+today, and the submit-a-correction pipeline for tab edits is built but
+not yet switched on — the multipart story currently runs through `.tef`
+import. If you've got a folder of TablEdit files from years of
+collecting, that's the invitation.
 
 ![A banjo tab with the playback transport and track mixer in the bottom band](/posts/images/2.0-tab-page.png)
 
