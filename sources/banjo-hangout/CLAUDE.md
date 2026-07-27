@@ -44,6 +44,43 @@ The parser supports V2 and one V3 variant. Some V3 files lack the 'debt' marker 
 2. Analyze the V3 binary structure in `tef_parser/reader.py`
 3. The V3 parser exists but needs the alternate variant handled
 
+## Multi-Site (Hangout Network)
+
+The pipeline in `src/` is shared by the sibling Hangout sites. Every site
+is one entry in `src/site_config.py` (`SITES`), and every CLI takes
+`--site` (default `banjo-hangout`, so existing invocations are unchanged):
+
+```bash
+uv run python sources/banjo-hangout/src/batch_import.py stats --site mandolin-hangout
+uv run python sources/banjo-hangout/src/batch_convert.py --site flatpicker-hangout
+```
+
+| Site | base_url | Instrument | Data dir |
+|------|----------|-----------|----------|
+| banjo-hangout | https://www.banjohangout.org | banjo | `sources/banjo-hangout/` |
+| mandolin-hangout | **pending recon** | mandolin | `sources/mandolin-hangout/` |
+| flatpicker-hangout | **pending recon** | guitar | `sources/flatpicker-hangout/` |
+
+Each site owns its `tab_catalog.json`, `raw/`, `downloads/` and `parsed/`
+— tab ids are only unique within a site. Scanning a site whose `base_url`
+is still `None` fails with a clear error; fill in the domain to enable it.
+
+**Instrument detection**: the part's `instrument:` and the OTF filename
+come from the converted OTF's tracks (`site_config.resolve_instrument`),
+not from the site — the first melodic track wins, a file that doesn't
+lead with the site's instrument and has 2+ melodic tracks is `ensemble`,
+and detection failure falls back to the site's instrument. So a banjo tab
+with guitar/bass backup stays `banjo.otf.json`, while a tenor-banjo or
+guitar arrangement posted on Banjo Hangout lands as
+`tenor-banjo.otf.json` / `guitar.otf.json`. The duplicate check is
+per-instrument, so a mandolin tab can join a work that already has a
+banjo tab.
+
+Known gap: `tef_parser` defaults an instrument-less TEF to a 5-string
+banjo track, so such files import as `banjo` on any site. Teaching
+`tef_to_otf` a default-instrument argument is deferred (the parser is
+locked by golden tests against the JS port).
+
 ## Overview
 
 - **Content**: 9,270+ banjo tabs in TEF (TablEdit) format
@@ -58,10 +95,11 @@ banjo-hangout/
 │   ├── tef_parser/           # TEF binary parser - REUSABLE for other instruments
 │   │   ├── reader.py         # Binary file reader (V2 and V3 formats)
 │   │   └── otf.py            # TEF to OTF conversion
-│   ├── scraper.py            # Banjo Hangout HTTP client
-│   ├── catalog.py            # Tab catalog management
+│   ├── site_config.py        # Per-site config + instrument resolution
+│   ├── scraper.py            # Hangout HTTP client
+│   ├── catalog.py            # Tab catalog management (one per site)
 │   ├── converter.py          # TEF → OTF pipeline
-│   └── batch_import.py       # CLI for batch operations
+│   └── batch_import.py       # CLI for batch operations (--site)
 ├── raw/                      # Cached HTML (gitignored)
 ├── downloads/                # Downloaded TEF files (gitignored)
 └── tab_catalog.json          # Tracks fetch/conversion status

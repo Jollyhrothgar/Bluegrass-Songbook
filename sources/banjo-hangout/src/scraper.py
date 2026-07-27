@@ -1,6 +1,7 @@
-"""Banjo Hangout tab scraper.
+"""Hangout Network tab scraper.
 
-Fetches tab metadata and downloads TEF files from banjohangout.org.
+Fetches tab metadata and downloads TEF files from a Hangout site
+(banjohangout.org and its siblings — see site_config.SITES).
 """
 
 import re
@@ -13,6 +14,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
 from catalog import TabEntry, TabCatalog
+from site_config import SiteConfig
 
 
 @dataclass
@@ -30,20 +32,22 @@ class TabMetadata:
     difficulty: Optional[str] = None
 
 
-class BanjoHangoutScraper:
-    """Scraper for Banjo Hangout tab archive."""
+class HangoutScraper:
+    """Scraper for a Hangout site's tab archive.
 
-    BASE_URL = "https://www.banjohangout.org"
-    TAB_BROWSE_URL = f"{BASE_URL}/w/tab/browse/m/byletter/v/"
-    TAB_DETAIL_URL = f"{BASE_URL}/tab/browse.asp"
+    All the Hangout sites share the same templates, so only the domain
+    (site.base_url) and the storage host differ.
+    """
+
     RATE_LIMIT_SECONDS = 1.5  # Be respectful
 
     # Letters to scan (A-Z, plus numeric)
     LETTERS = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ') + ['0']
 
-    def __init__(self, cache_dir: Path, download_dir: Path):
-        self.cache_dir = cache_dir
-        self.download_dir = download_dir
+    def __init__(self, site: SiteConfig, cache_dir: Path = None, download_dir: Path = None):
+        self.site = site
+        self.cache_dir = cache_dir or site.cache_dir
+        self.download_dir = download_dir or site.downloads_dir
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'BluegrassSongbook/1.0 (educational project; github.com/Jollyhrothgar/Bluegrass-Songbook)'
@@ -85,7 +89,8 @@ class BanjoHangoutScraper:
 
         self._rate_limit()
 
-        url = f"{self.TAB_BROWSE_URL}{letter}"
+        # Raises for a site whose domain isn't configured yet
+        url = f"{self.site.tab_browse_url}{letter}"
         try:
             response = self.session.get(url, timeout=30)
             response.raise_for_status()
@@ -190,8 +195,8 @@ class BanjoHangoutScraper:
             href = link.get('href', '')
             text = link.get_text(strip=True).upper()
 
-            # Check for download links on hangoutstorage.com
-            if 'hangoutstorage.com' in href:
+            # Check for download links on the storage host
+            if self.site.storage_host in href:
                 # Determine format from extension or link text
                 if href.endswith('.tef'):
                     links.append(('tef', href))
@@ -220,6 +225,8 @@ class BanjoHangoutScraper:
         """
         if letters is None:
             letters = self.LETTERS
+
+        self.site.require_base_url()  # fail fast on an unconfigured site
 
         all_tabs = []
         for letter in letters:
@@ -279,15 +286,15 @@ class BanjoHangoutScraper:
 
 def scan_and_update_catalog(
     catalog: TabCatalog,
-    scraper: BanjoHangoutScraper,
+    scraper: HangoutScraper,
     letters: list[str] = None,
     limit: int = None
 ) -> int:
-    """Scan Banjo Hangout and update the catalog.
+    """Scan a Hangout site and update the catalog.
 
     Args:
         catalog: TabCatalog to update
-        scraper: BanjoHangoutScraper instance
+        scraper: HangoutScraper instance
         letters: Letters to scan (default: all)
         limit: Max tabs to add
 

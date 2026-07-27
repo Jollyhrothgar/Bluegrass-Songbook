@@ -1,6 +1,8 @@
-"""Tab catalog management for Banjo Hangout.
+"""Tab catalog management for the Hangout Network sites.
 
-Tracks discovered tabs, download status, and conversion status.
+Tracks discovered tabs, download status, and conversion status. One
+catalog per site (see site_config.SiteConfig.catalog_path) — tab ids are
+only unique within a site.
 """
 
 import json
@@ -9,17 +11,19 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
+from site_config import DEFAULT_SITE_NAME
+
 
 @dataclass
 class TabEntry:
     """A single tab entry in the catalog."""
-    id: str                          # Banjo Hangout tab ID
+    id: str                          # Hangout tab ID
     title: str                       # Tab title
     author: str                      # Username who uploaded
     format: str                      # 'tef', 'pdf', 'txt', 'mp3', 'midi'
     source_url: str                  # Full URL to tab page
 
-    # Optional metadata from Banjo Hangout
+    # Optional metadata from the tab listing
     genre: Optional[str] = None      # e.g., 'Bluegrass', 'Old-Time'
     style: Optional[str] = None      # e.g., 'Scruggs', 'Clawhammer'
     tuning: Optional[str] = None     # e.g., 'Open G', 'Double C'
@@ -47,7 +51,7 @@ class TabEntry:
 @dataclass
 class CatalogMetadata:
     """Catalog-level metadata."""
-    source: str = 'banjo-hangout'
+    source: str = DEFAULT_SITE_NAME
     last_scan: Optional[str] = None
     total_tabs: int = 0
 
@@ -56,15 +60,21 @@ class CatalogMetadata:
 
 
 class TabCatalog:
-    """Manages the tab catalog for Banjo Hangout."""
+    """Manages the tab catalog for one Hangout site."""
 
-    def __init__(self, catalog_path: Path):
+    def __init__(self, catalog_path: Path, source: str = DEFAULT_SITE_NAME):
         self.catalog_path = catalog_path
-        self.metadata = CatalogMetadata()
+        self.source = source
+        self.metadata = CatalogMetadata(source=source)
         self.tabs: dict[str, TabEntry] = {}
 
         if self.catalog_path.exists():
             self.load()
+
+    @classmethod
+    def for_site(cls, site) -> 'TabCatalog':
+        """Open the catalog belonging to a SiteConfig."""
+        return cls(site.catalog_path, source=site.source)
 
     def load(self) -> None:
         """Load catalog from JSON file."""
@@ -73,7 +83,7 @@ class TabCatalog:
         # Load metadata
         meta = data.get('metadata', {})
         self.metadata = CatalogMetadata(
-            source=meta.get('source', 'banjo-hangout'),
+            source=meta.get('source', self.source),
             last_scan=meta.get('last_scan'),
             total_tabs=meta.get('total_tabs', 0),
         )

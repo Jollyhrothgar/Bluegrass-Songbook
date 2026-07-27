@@ -1,8 +1,8 @@
-"""Priority list for Banjo Hangout tab scanning.
+"""Priority list for Hangout Network tab scanning.
 
 Prioritizes tabs that match:
 1. Curated instrumental tune list (from tunearch)
-2. Existing works without tablature
+2. Existing works without tablature for the site's instrument
 3. Golden standard bluegrass songs
 """
 
@@ -13,6 +13,8 @@ from typing import Optional
 
 import yaml
 
+from site_config import DEFAULT_SITE, SiteConfig, strip_title_decorations
+
 
 # Paths
 REPO_ROOT = Path(__file__).parent.parent.parent.parent
@@ -20,16 +22,14 @@ WORKS_DIR = REPO_ROOT / 'works'
 TUNEARCH_LIST = REPO_ROOT / 'sources' / 'tunearch' / 'src' / 'tune_list.py'
 
 
-def normalize_title(title: str) -> str:
+def normalize_title(title: str, site: SiteConfig = DEFAULT_SITE) -> str:
     """Normalize title for matching."""
     # Normalize unicode
     title = unicodedata.normalize('NFKD', title)
     title = title.encode('ascii', 'ignore').decode('ascii')
 
-    # Remove common suffixes and parentheticals
-    title = re.sub(r'\s*\([^)]*\)\s*$', '', title)
-    title = re.sub(r'\s*-\s*(tab|banjo|break|solo|arr\.?).*$', '', title, flags=re.I)
-    title = re.sub(r'\s*banjo\s*(tab|break|solo)?$', '', title, flags=re.I)
+    # Remove common suffixes and parentheticals (instrument words per-site)
+    title = strip_title_decorations(title, site.instrument_words)
 
     # Normalize case and whitespace
     title = ' '.join(title.lower().split())
@@ -37,7 +37,7 @@ def normalize_title(title: str) -> str:
     return title
 
 
-def get_tune_list_priorities() -> dict[str, int]:
+def get_tune_list_priorities(site: SiteConfig = DEFAULT_SITE) -> dict[str, int]:
     """Get priority scores from tunearch tune list.
 
     Returns dict of normalized title -> priority (1=highest, 20=lowest)
@@ -73,15 +73,16 @@ def get_tune_list_priorities() -> dict[str, int]:
         tune_match = re.search(r'"([^"]+)"', line)
         if tune_match:
             tune = tune_match.group(1)
-            normalized = normalize_title(tune)
+            normalized = normalize_title(tune, site)
             if normalized not in priorities:
                 priorities[normalized] = current_tier or 10
 
     return priorities
 
 
-def get_works_without_banjo_tab() -> set[str]:
-    """Get normalized titles of works that don't have banjo tablature.
+def get_works_without_tab(instrument: str,
+                          site: SiteConfig = DEFAULT_SITE) -> set[str]:
+    """Get normalized titles of works with no tablature for `instrument`.
 
     Returns set of normalized titles.
     """
@@ -97,25 +98,25 @@ def get_works_without_banjo_tab() -> set[str]:
         try:
             data = yaml.safe_load(work_yaml.read_text())
 
-            # Check if already has banjo tab
-            has_banjo_tab = False
+            # Check if it already has a tab for this instrument
+            has_tab = False
             for part in data.get('parts', []):
                 if (part.get('type') == 'tablature' and
-                    part.get('instrument') == 'banjo'):
-                    has_banjo_tab = True
+                    part.get('instrument') == instrument):
+                    has_tab = True
                     break
 
-            if not has_banjo_tab:
+            if not has_tab:
                 title = data.get('title', '')
                 if title:
-                    titles.add(normalize_title(title))
+                    titles.add(normalize_title(title, site))
         except Exception:
             continue
 
     return titles
 
 
-def get_instrumental_works() -> set[str]:
+def get_instrumental_works(site: SiteConfig = DEFAULT_SITE) -> set[str]:
     """Get normalized titles of works tagged as Instrumental.
 
     Returns set of normalized titles.
@@ -136,14 +137,14 @@ def get_instrumental_works() -> set[str]:
             if 'Instrumental' in tags:
                 title = data.get('title', '')
                 if title:
-                    titles.add(normalize_title(title))
+                    titles.add(normalize_title(title, site))
         except Exception:
             continue
 
     return titles
 
 
-def build_priority_list() -> list[tuple[str, int]]:
+def build_priority_list(site: SiteConfig = DEFAULT_SITE) -> list[tuple[str, int]]:
     """Build prioritized list of titles to scan for.
 
     Returns list of (normalized_title, priority) tuples, sorted by priority.
@@ -152,19 +153,19 @@ def build_priority_list() -> list[tuple[str, int]]:
     results = {}
 
     # Priority 1-20: Tune list items (already tiered)
-    tune_priorities = get_tune_list_priorities()
+    tune_priorities = get_tune_list_priorities(site)
     for title, tier in tune_priorities.items():
         results[title] = tier
 
     # Priority 25: Other instrumental works we have
-    instrumentals = get_instrumental_works()
+    instrumentals = get_instrumental_works(site)
     for title in instrumentals:
         if title not in results:
             results[title] = 25
 
-    # Priority 30: Any work without banjo tab
+    # Priority 30: Any work without a tab for this site's instrument
     # (Lower priority - there are 17k+ of these)
-    works_needing_tabs = get_works_without_banjo_tab()
+    works_needing_tabs = get_works_without_tab(site.fallback_instrument, site)
     for title in works_needing_tabs:
         if title not in results:
             results[title] = 30
@@ -174,12 +175,13 @@ def build_priority_list() -> list[tuple[str, int]]:
     return sorted_list
 
 
-def match_title(tab_title: str, priority_list: list[tuple[str, int]]) -> Optional[int]:
+def match_title(tab_title: str, priority_list: list[tuple[str, int]],
+                site: SiteConfig = DEFAULT_SITE) -> Optional[int]:
     """Check if a tab title matches any priority title.
 
     Returns the priority if matched, None otherwise.
     """
-    normalized = normalize_title(tab_title)
+    normalized = normalize_title(tab_title, site)
 
     for priority_title, priority in priority_list:
         if normalized == priority_title:
@@ -191,13 +193,13 @@ def match_title(tab_title: str, priority_list: list[tuple[str, int]]) -> Optiona
     return None
 
 
-def print_priority_stats():
+def print_priority_stats(site: SiteConfig = DEFAULT_SITE):
     """Print statistics about the priority list."""
-    tune_list = get_tune_list_priorities()
-    instrumentals = get_instrumental_works()
-    needs_tabs = get_works_without_banjo_tab()
+    tune_list = get_tune_list_priorities(site)
+    instrumentals = get_instrumental_works(site)
+    needs_tabs = get_works_without_tab(site.fallback_instrument, site)
 
-    print("Priority List Statistics")
+    print(f"Priority List Statistics ({site.name})")
     print("=" * 40)
     print(f"Tier 1-5 tunes (essential):  {sum(1 for t, p in tune_list.items() if p <= 5)}")
     print(f"Tier 6-10 tunes (common):    {sum(1 for t, p in tune_list.items() if 6 <= p <= 10)}")
@@ -205,11 +207,12 @@ def print_priority_stats():
     print(f"Total curated tunes:         {len(tune_list)}")
     print()
     print(f"Instrumental works:          {len(instrumentals)}")
-    print(f"Works needing banjo tab:     {len(needs_tabs)}")
+    needs_label = f"Works needing {site.fallback_instrument} tab:"
+    print(f"{needs_label:29s}{len(needs_tabs)}")
     print()
 
     # Show top priorities
-    priority_list = build_priority_list()
+    priority_list = build_priority_list(site)
     print("Top 20 priorities:")
     for title, priority in priority_list[:20]:
         print(f"  [{priority:2d}] {title}")
