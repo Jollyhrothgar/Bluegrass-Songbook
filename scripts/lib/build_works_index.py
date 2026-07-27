@@ -226,10 +226,25 @@ def _tab_provenance_mismatch(otf_path: Path, prov_source_id):
         return None
     xsrc = data.get('x_source') or {}
     # x_source records the origin TEF as a bare "{id}.tef"/download filename in
-    # source_file, or a banjo-hangout url; the numeric tab id is embedded in
-    # either form.
-    hay = ' '.join(str(xsrc.get(k, '')) for k in ('source_file', 'url', 'source_url'))
-    ids = set(re.findall(r'\d{4,6}', hay))
+    # source_file, or a storage url. Filename shapes:
+    #   banjo-hangout:  {slug}-{id}.tef          -> id is the last digit run
+    #   sibling sites:  tab-{slug}-{id}-{ts}.tef -> id precedes the timestamp
+    #   bare download:  {id}.tef / {id}_{title}.tef
+    ids = set()
+    for key in ('source_file', 'url', 'source_url'):
+        name = str(xsrc.get(key, '')).rsplit('/', 1)[-1]
+        if not name:
+            continue
+        stem = name.rsplit('.', 1)[0]
+        runs = [seg for seg in re.split(r'[-_]', stem) if seg.isdigit()]
+        if not runs:
+            continue
+        # Trailing segment is a timestamp when two or more digit runs close
+        # the sibling-site pattern; the tab id is the one before it.
+        if len(runs) >= 2 and stem.endswith(f"{runs[-2]}-{runs[-1]}"):
+            ids.add(runs[-2])
+        else:
+            ids.add(runs[-1])
     if not ids or str(prov_source_id) in ids:
         return None
     return (str(prov_source_id), ids)

@@ -1,10 +1,11 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "EIGHTH OF JANUARY ",
+    "title": "Eighth of January",
     "time_signature": "4/4",
     "tempo": 180,
-    "composer": "arr.  Lynn Williams"
+    "composer": "arr.  Lynn Williams",
+    "key": "D"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -2470,8 +2471,9 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "21420.tef",
-    "converted_at": "2026-07-12T08:06:07.068491"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/e/tab-eighth-of-janua-21420-311171072015.tef",
+    "author": "banjoman 1",
+    "converted_at": "2026-07-26T22:20:06.202149"
   }
 }
