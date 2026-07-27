@@ -101,8 +101,16 @@ class HangoutScraper:
             print(f"Error fetching letter {letter}: {e}")
             return None
 
+    # Unterminated numeric charref, e.g. the site emits "D&#39er Maker"
+    # for "D'yer Maker" — html.parser hands the whole tail to int() and
+    # blows up, so terminate them before parsing.
+    _BAD_DEC_CHARREF = re.compile(r'&#(\d+)(?![\d;])')
+    _BAD_HEX_CHARREF = re.compile(r'&#([xX][0-9a-fA-F]+)(?![0-9a-fA-F;])')
+
     def parse_tab_entries(self, html: str) -> list[TabMetadata]:
         """Parse tab entries from a browse page."""
+        html = self._BAD_DEC_CHARREF.sub(r'&#\1;', html)
+        html = self._BAD_HEX_CHARREF.sub(r'&#\1;', html)
         soup = BeautifulSoup(html, 'html.parser')
         entries = []
 
@@ -233,7 +241,12 @@ class HangoutScraper:
             print(f"Scanning letter {letter}...")
             html = self.fetch_letter_page(letter)
             if html:
-                tabs = self.parse_tab_entries(html)
+                try:
+                    tabs = self.parse_tab_entries(html)
+                except Exception as e:
+                    # One malformed page must not sink the whole scan
+                    print(f"  Error parsing letter {letter}: {e}")
+                    continue
                 print(f"  Found {len(tabs)} tabs")
                 all_tabs.extend(tabs)
 

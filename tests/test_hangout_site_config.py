@@ -133,3 +133,25 @@ def test_click_tracks_are_ignored():
 def test_undetectable_falls_back_to_the_site_instrument():
     assert resolve_instrument([], 'mandolin') == 'mandolin'
     assert resolve_instrument([track('4-string')], 'banjo') == 'banjo'
+
+
+# --- scraper HTML sanitization ---
+
+def test_unterminated_charref_does_not_crash_parse():
+    """Mandolin Hangout emits 'D&#39er Maker' (unterminated &#39) which made
+    html.parser call int('39er Maker...') and killed whole-site scans."""
+    sys.path.insert(0, str(REPO_ROOT / 'sources/banjo-hangout/src'))
+    from scraper import HangoutScraper
+    from site_config import get_site
+
+    html = """
+    <h2 class='noSpacing bold'><a href='/tab/browse.asp?m=detail&v=2867'>D&#39er Maker - Led Zeppelin</a></h2>
+    <p class='noSpacing'><span class='small'><strong>Genre:</strong> Other&nbsp;
+    <strong>Key:</strong> C</span>
+    <a href='https://www.hangoutstorage.com/mandohangout.com/storage/tabs/d/tab-dyer-2867-01.tef'>TABLEDIT</a></p>
+    """
+    scraper = HangoutScraper(get_site('mandolin-hangout'))
+    entries = scraper.parse_tab_entries(html)
+    assert len(entries) == 1
+    assert entries[0].id == '2867_tef'
+    assert entries[0].title == "D'er Maker - Led Zeppelin"
