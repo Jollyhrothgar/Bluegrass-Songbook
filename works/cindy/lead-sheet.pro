@@ -1,22 +1,24 @@
 {meta: title Cindy}
 {meta: x_lyrics_source bluegrass-lyrics}
 {meta: x_lyrics_url https://www.bluegrasslyrics.com/song/cindy/}
+{meta: x_chords_source ultimate-guitar}
+{meta: x_chords_url https://tabs.ultimate-guitar.com/tab/3891389}
 
 {start_of_verse}
-You ought to see my Cindy she lives way down south
-She’s so sweet the honey bees swarm around her mouth
+You [D]ought to see my Cindy [A]she lives way down [A7]south
+[D]She’s so sweet the [G]honey bees [D]swarm [A]around her [D]mouth
 {end_of_verse}
 
 {start_of_chorus}
 Get along home Cindy Cindy
 Get along home Cindy Cindy
 Get along home Cindy Cindy
-I’ll marry you some day
+I’ll [D]marry [A]you [D]some day
 {end_of_chorus}
 
 {start_of_verse}
-The first I seen my Cindy she was standing in the door
-Her shoes and stocking in her hand her feet all over the floor
+The [D]first I seen my Cindy [A]she was standing in the [A7]door
+[D]Her shoes and stocking [G]in her hand her [D]feet all [A]over the [D]floor
 {end_of_verse}
 
 {start_of_verse}
@@ -45,6 +47,6 @@ I’d sew that gal to my coat tails and down the road I’d go
 {end_of_verse}
 
 {start_of_verse}
-I wish I was an apple a-hanging on a tree
-Every time that Cindy passed she’d take a bite of me
+I [D]wish I was an apple [A]a-hanging on a [A7]tree
+[D]Every time that [G]Cindy passed [D]she’d take a [A]bite of [D]me
 {end_of_verse}

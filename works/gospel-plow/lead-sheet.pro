@@ -1,26 +1,28 @@
 {meta: title Gospel Plow}
 {meta: x_lyrics_source bluegrass-lyrics}
 {meta: x_lyrics_url https://www.bluegrasslyrics.com/song/gospel-plow/}
+{meta: x_chords_source ultimate-guitar}
+{meta: x_chords_url https://tabs.ultimate-guitar.com/tab/4639892}
 
 {start_of_verse}
-Well I got my hands on the gospel plow
-And I wouldn’t take nothin’ for my  journey now
-Keep your hands on that plow of  God
+Well [G]I [F]got my [G]hands on the gospel plow
+And [G]I [F]wouldn’t take [G]nothin’ [G]for my  journey now
+Keep [G]your [D]hands on [G]that [G]plow of  God
 {end_of_verse}
 
 {start_of_verse}
-Hold on hold on
-Keep your hands on that plow hold on
+[F]Hold [F]on [G]hold [G]on
+Keep [G]your [D]hands on [G]that [G]plow hold on
 {end_of_verse}
 
 {start_of_verse}
-Well Matthew Mark Luke and John
-All those prophets are dead and gone
-Keep your hands on that plow of God
+Well [G]Matthew [F]Mark [G]Luke and John
+[G]All those [F]prophets are [G]dead and gone
+Keep your [G]hands on that [D]plow of [G]God
 {end_of_verse}
 
 {start_of_verse}
-I never been to heaven but I’ve been told
-The streets up there are made of gold
-Keep your hands on that plow of God
+I [G]never been to [F]heaven but [G]I’ve been told
+The [G]streets up [F]there are [G]made of gold
+Keep your [G]hands on that [D]plow of [G]God
 {end_of_verse}

@@ -1,25 +1,27 @@
 {meta: title I Wish You Knew}
 {meta: x_lyrics_source bluegrass-lyrics}
 {meta: x_lyrics_url https://www.bluegrasslyrics.com/song/i-wish-you-knew/}
+{meta: x_chords_source ultimate-guitar}
+{meta: x_chords_url https://tabs.ultimate-guitar.com/tab/3957085}
 
 {start_of_chorus}
-I wish you knew how hard I’ve tried to tell you
-How hard I’ve tried to get you off my mind
-I wish you knew how hard I’ve tried to sleep at night
-Since I know that you’re no longer mine
-Since you let another beat my time
+[F]I wish [G]you knew how hard I’ve tried to tell you
+[G]How [F]hard I’ve tried to get you off my [C]mind
+[F]I [G]wish you knew how hard I’ve tried to sleep at night
+[G]Since I [F]know that you’re no longer [C]mine
+[F]Since you let [G]another beat my [C]time
 {end_of_chorus}
 
 {start_of_verse}
-If only half the things were true you say about my heart
-Then I would have forgotten you since we’ve been apart
-You said I forced my lips to kiss you when we said goodbye
-You even said I forced the tears that came into my eyes
+[F]If [C]only half the things were true you say about my [G]heart
+[G]Then [F]I would have forgotten you [G]since we’ve been [C]apart
+[F]You [C]said I forced my lips to kiss you when we said [G]goodbye
+[G]You even said I forced the tears that came into my [C]eyes
 {end_of_verse}
 
 {start_of_verse}
-There’s not a thought that could be worse than knowing that you’re gone
-But in the picture in your mind I’m never all alone
-You see me in another’s arms just like I’ve been with you
-By the way I cry for you each night I only wish you knew
+[C]There’s not a thought that could be worse than knowing that you’re [G]gone
+[F]But [G]in the picture in your mind I’m [F]never all [C]alone
+[C]You see me in another’s arms just like I’ve been with [F]you
+[F]By [G]the way I cry for you each night I only wish you [C]knew
 {end_of_verse}
