@@ -12,6 +12,10 @@ dependencies = [
     "numpy>=2.2.6",
     "playwright>=1.58.0",
     "pyphen>=0.17.2",
+    # Core scripts (strum_machine, batch_tag_songs) read the bootstrap-provisioned
+    # .env, so this must stay in the base deps: `uv sync` prunes anything that
+    # lives only in an extra.
+    "python-dotenv>=1.0.0",
     "pyyaml>=6.0.0",
     "rapidfuzz>=3.14.3",
     "requests>=2.32.5",
@@ -33,7 +37,6 @@ analytics = [
     "nbstripout>=0.8.0",
     "pandas>=2.0.0",
     "psycopg2-binary>=2.9.0",
-    "python-dotenv>=1.0.0",
     "supabase>=2.0.0",
     "matplotlib>=3.7.0",
 ]
