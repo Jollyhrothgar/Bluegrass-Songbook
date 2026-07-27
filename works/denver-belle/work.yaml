@@ -1,0 +1,16 @@
+id: denver-belle
+title: Denver Belle
+artist: Traditional
+composers:
+- Biography:Kenny Baker
+default_key: C
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-07-26'

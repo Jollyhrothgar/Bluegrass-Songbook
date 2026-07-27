@@ -1,0 +1,16 @@
+id: growling-old-man
+title: Growling Old Man
+artist: Traditional
+composers:
+- Grandy Fagnan
+default_key: DMix
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-07-26'
