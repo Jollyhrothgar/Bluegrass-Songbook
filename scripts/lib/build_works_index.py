@@ -23,6 +23,16 @@ from urllib.parse import quote
 
 import yaml
 
+# Attribution link bases for Hangout Network tab sources (matches the
+# SITES registry in sources/banjo-hangout/src/site_config.py)
+HANGOUT_SITE_URLS = {
+    'banjo-hangout': 'https://www.banjohangout.org',
+    'mandolin-hangout': 'https://www.mandohangout.com',
+    'flatpicker-hangout': 'https://www.flatpickerhangout.com',
+    'fiddle-hangout': 'https://www.fiddlehangout.com',
+    'reso-hangout': 'https://www.resohangout.com',
+}
+
 # Canonical ranks cache (loaded once per process)
 _canonical_ranks = None
 _worker_initialized = False
@@ -368,11 +378,12 @@ def build_song_from_work(work_dir: Path) -> dict:
                 'source_id': prov.get('source_id'),
                 'author': prov.get('author'),
             }
-            # Build source page URL for banjo-hangout
-            if prov.get('source') == 'banjo-hangout' and prov.get('source_id'):
-                tab_info['source_page_url'] = f"https://www.banjohangout.org/tab/browse.asp?m=detail&v={prov.get('source_id')}"
+            # Build source page URL for Hangout Network sites
+            hangout_base = HANGOUT_SITE_URLS.get(prov.get('source'))
+            if hangout_base and prov.get('source_id'):
+                tab_info['source_page_url'] = f"{hangout_base}/tab/browse.asp?m=detail&v={prov.get('source_id')}"
                 if prov.get('author'):
-                    tab_info['author_url'] = f"https://www.banjohangout.org/my/{quote(prov.get('author'))}"
+                    tab_info['author_url'] = f"{hangout_base}/my/{quote(prov.get('author'))}"
             song['tablature_parts'].append(tab_info)
 
     # Add document parts info for frontend
