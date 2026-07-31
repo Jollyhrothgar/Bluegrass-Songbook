@@ -12,7 +12,6 @@ big-black-train
 big-eyed-rabbit
 big-john-mcneil
 bitter-creek
-black-diamond
 black-velvet-band
 blackjack
 blue-river-waltz
@@ -80,7 +79,6 @@ going-down-the-road-feeling-bad
 gonna-paint-this-town
 good-corn-liquor
 good-night-irene
-goodbye-girls
 goodbye-liza-jane
 grandfathers-clock
 grandma-got-run-over-by-a-reindeer
