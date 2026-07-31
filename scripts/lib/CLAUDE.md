@@ -309,13 +309,14 @@ Mechanism: `curation/index_prune.csv` lists work ids that
 exempt if it is user-origin (`USER_SOURCES` or `submitted_by` — user
 contributions are never pruned) or has a registry `keep:` entry.
 
-How the current keep set was decided (details in the CSV header):
-1. **2026-07-23**: MusicBrainz cover-coverage rule (mbcov ≥ 5).
-2. **2026-07-31**: two-independent-signals rule over three ledgers
-   (MB coverage / Strum Machine catalog / BluegrassLyrics.com), plus the
-   instrumental jam canon, curated-artist credits, and user origin —
-   followed by a manual title-by-title review of everything pruned
-   (163 rescues, reasons in `registry.yaml` `keep:`).
+How the current keep set was decided: see **`curation/INDEX_DECISIONS.md`**
+(the full decision record — self-contained, with every data source as an
+in-repo path). Short version: a 2026-07-23 MusicBrainz cover-coverage rule,
+then a 2026-07-31 two-of-three-ledgers rule, then a manual title-by-title
+review (163 rescues, reasons in `registry.yaml` `keep:`). The MusicBrainz
+coverage snapshot the decisions used is vendored at
+`curation/analysis/site_index_scored.csv` — no local database needed to
+re-analyze or reverse any of it.
 
 Restoring songs later:
 

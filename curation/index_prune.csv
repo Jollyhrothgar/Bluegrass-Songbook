@@ -1,7 +1,8 @@
 # Works excluded from search/collections (indexed: false at build time).
 #
 # TWO PRUNE WAVES (third column says which):
-#  1. numeric mbcov  — 2026-07-23 coverage prune (bluegrass_list FINDINGS.md §5.3):
+#  1. numeric mbcov  — 2026-07-23 coverage prune (see curation/analysis/FINDINGS.md §5.3
+#     and curation/INDEX_DECISIONS.md; per-work snapshot: curation/analysis/site_index_scored.csv):
 #     REMOVE = mbcov < 5 AND not blind-spot-whitelisted AND not verified-canonical.
 #     NOTE: mbcov was fuzzy-title-matched and inflated for generic titles.
 #  2. 'ledger-cleanup' — 2026-07-31 convergence on the bluegrass canon. KEEP needed
