@@ -1,6 +1,9 @@
 # Bluegrass Songbook
 
-A searchable collection of 18,300+ bluegrass and country songs with chords, built for the bluegrass community.
+A bluegrass jam songbook: a curated searchable index of ~1,800 bluegrass and
+bluegrass-adjacent songs, backed by an 18,500+ work archive (every archived
+work still resolves by direct URL and can be restored to search — see
+"Index Prune" in `scripts/lib/CLAUDE.md`).
 
 ## Quick Start
 
@@ -356,7 +359,8 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 
 ## Current State
 
-- **18,300+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
+- **Curated index (2026-07-31)**: search/collections show the bluegrass canon (~1,800 songs kept by a two-of-three-ledgers rule — MusicBrainz coverage, Strum Machine, BluegrassLyrics — plus instrumentals, curated artists, user adds, and a manual review). The other ~16,900 works are archived, not deleted: direct URLs work, and `./scripts/utility curate unprune <id>` puts any song back
+- **18,500+ works** in works-based architecture with chord search, transposition, favorites, dark mode
 - **Works system**: Each song is a "work" with multiple parts (lead sheet, tablature, ABC notation)
 - **Tablature**: Banjo Hangout tabs with TEF→OTF parsing, playback, track mixer for multi-instrument arrangements
 - **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - primary source is LLM tagging, with MusicBrainz and grassiness scoring as fallbacks

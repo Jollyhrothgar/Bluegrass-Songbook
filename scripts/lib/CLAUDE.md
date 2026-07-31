@@ -297,6 +297,37 @@ so suppressed works are never re-created from sources.
 ./scripts/utility curate pin-tab <work-id> <instrument> <source_id>
 ```
 
+### Index Prune — the searchable index is the bluegrass canon
+
+**Policy (Mike, 2026-07-31):** search and collections deliberately show only
+bluegrass + bluegrass-adjacent repertoire (~1,800 songs). The other ~16,900
+works are NOT deleted: they stay on disk, keep their `#work/{slug}` URLs,
+stay in lists, and can be restored to search at any time.
+
+Mechanism: `curation/index_prune.csv` lists work ids that
+`apply_index_prune()` stamps `indexed: false` at build time. A row is
+exempt if it is user-origin (`USER_SOURCES` or `submitted_by` — user
+contributions are never pruned) or has a registry `keep:` entry.
+
+How the current keep set was decided (details in the CSV header):
+1. **2026-07-23**: MusicBrainz cover-coverage rule (mbcov ≥ 5).
+2. **2026-07-31**: two-independent-signals rule over three ledgers
+   (MB coverage / Strum Machine catalog / BluegrassLyrics.com), plus the
+   instrumental jam canon, curated-artist credits, and user origin —
+   followed by a manual title-by-title review of everything pruned
+   (163 rescues, reasons in `registry.yaml` `keep:`).
+
+Restoring songs later:
+
+```bash
+# one song back on the index
+./scripts/utility curate unprune <work-id> --reason "why it belongs"
+./scripts/bootstrap --quick
+
+# in bulk: remove rows from curation/index_prune.csv (or add keep:
+# entries in curation/registry.yaml), then rebuild
+```
+
 ### Deleted-Songs Sync
 
 Admin soft-deletes land in the Supabase `deleted_songs` table. The

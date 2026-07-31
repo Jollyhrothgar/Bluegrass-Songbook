@@ -1,8 +1,24 @@
 # Works excluded from search/collections (indexed: false at build time).
-# Source: bluegrass_list cover-coverage analysis, 2026-07-23 (FINDINGS.md §5.3):
-# REMOVE = mbcov < 5 AND not blind-spot-whitelisted AND not verified-canonical.
+#
+# TWO PRUNE WAVES (third column says which):
+#  1. numeric mbcov  — 2026-07-23 coverage prune (bluegrass_list FINDINGS.md §5.3):
+#     REMOVE = mbcov < 5 AND not blind-spot-whitelisted AND not verified-canonical.
+#     NOTE: mbcov was fuzzy-title-matched and inflated for generic titles.
+#  2. 'ledger-cleanup' — 2026-07-31 convergence on the bluegrass canon. KEEP needed
+#     two independent signals: any two of {MB coverage, Strum Machine catalog,
+#     BluegrassLyrics.com} — or instrumental jam canon (tune list/tab/ABC), a
+#     curated-bluegrass-artist credit, or user origin. Single-signal rows pruned.
+#     Every pruned title was then manually reviewed (163 rescued via keep:).
+#
+# POLICY (Mike, 2026-07-31): the searchable index is deliberately bluegrass +
+# bluegrass-adjacent. The full archive stays on disk and resolves by direct URL;
+# nothing here is deleted, and anything can come back later.
+#
 # Non-destructive: works stay on disk and resolve by direct URL; user-origin
-# works are never pruned; rescue ids via `./scripts/utility curate unprune`.
+# works are never pruned regardless of this list; registry keep: entries win.
+#
+# RESTORE a song:  ./scripts/utility curate unprune <work-id> --reason "..."
+# RESTORE in bulk: delete rows here (or add keep: entries), then rebuild.
 id,title,mbcov
 1-1-love,1+1 = Love,2
 1-rock-n-roll-c-w-boogie-blues-man,#1 Rock 'N' Roll C & W Boogie Blues Man,3
