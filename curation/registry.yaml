@@ -119,7 +119,249 @@ groups:
       where-were-you:
         label: Loretta Lynn version
 suppressed: {}
-keep: {}
+keep:
+  a-lonesome-road-to-travel:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  abilene:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  adieu-false-heart:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  alberta:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  all-of-me:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  all-of-me-loves-all-of-you:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  all-prayed-up:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  aloha-oe:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  amazing-love:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  amber-tresses:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  anchored-in-love:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  another-day-another-dollar:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  aragon-mill:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  banjo-in-the-hollow:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  battle-hymn-of-the-republic:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  behind-these-prison-walls-of-love:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  blessed-jesus-hold-my-hand:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  blowing-in-the-wind:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  blue-prairie:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  bonaparte-crossing-the-rocky-mountains:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  calliope-house:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  carry-me-back-to-the-lone-prairie:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  carry-me-back-to-the-lone-prairie-1:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  carry-me-back-to-the-mountains:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  chalk-up-another-one:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  clementine:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  could-you-love-me-one-more-time:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  cowboy-jack:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  crockett-s-honeymoon:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  crow-little-rooster:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  darling-alalee:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  dont-neglect-the-rose:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  down-among-the-budded-roses:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  driving-nails-in-my-coffin:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  forty-years-of-trouble:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  ghost-riders-in-the-sky:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  go-rest-high-on-that-mountain:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  going-to-the-west:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  gonna-settle-down:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  good-things-outweigh-the-bad:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  gospel-ship:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  gum-tree-canoe:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  happy-birthday:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  hard-aint-it-hard:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  have-you-come-to-say-goodbye:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  hello-city-limits:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  hello-city-limits-1:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  here-today-gone-tomorrow:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  hobo-blues:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  home-from-the-forest:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  home-on-the-range:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  i-ain-t-broke-but-i-m-badly-bent:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  i-aint-broke-but-im-badly-bent:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  i-believed-in-you-darling:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  i-dreamed-of-an-old-love-affair:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  i-ll-see-you-in-my-dreams:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  i-think-of-you:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  i-think-of-you-1:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  i-want-a-girl:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  i-won-t-be-hanging-around:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  in-case-you-ever-change-your-mind:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  in-the-highways:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  kentucky-girl:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  killin-time:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  little-georgia-rose:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  little-white-washed-chimney:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  meet-me-by-the-moonlight:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  midnight-on-the-highway:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  millers-cave:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  mother-s-not-dead:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  my-better-years:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  north-carolina-breakdown:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  off-to-california:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  okie-from-muskogee:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  oklahoma-hills:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  old-love-letters:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  old-mother-flanagan:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  one-more-dollar:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  out-on-the-ocean:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  over-the-garden-wall:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  peaches-and-cream:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  puncheon-floor:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  rebecca:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  red-prairie-dawn:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  roaring-river:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  robinson-county:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  satans-jewel-crown:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  sea-of-regret:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  seneca-square-dance:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  shell-be-coming-round-the-mountain:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  silver-ghost:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  sioux-city-sue:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  somewhere-between:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  spider-bit-the-baby:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  star-of-the-county-down:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  swinging-doors:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  take-your-shoes-off-moses:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  talk-to-your-heart:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  tennessee-mountain-fox-chase:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  thanks-a-lot:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  the-cat-came-back:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  the-green-rolling-hills-of-west-virginia:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  the-irish-washerwoman:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  the-ln-dont-stop-here-anymore:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  the-way-i-am:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  thirty-years-of-farming:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  walking-the-dog:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  washington-county:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  water-bound:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  wheeling:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  when-the-cactus-is-in-bloom:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  when-you-re-smiling:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  where-the-wild-river-rolls:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  white-oak-on-the-hill:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  who-at-my-door-is-standing:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  wild-mountain-flowers-for-mary:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  will-my-mother-know-me-there:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  will-you-miss-me:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  wont-you-come-and-sing-for-me:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  you-re-my-best-friend:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  youll-get-no-more-of-me:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
 tag_exclusions:
   big-iron:
   - BluegrassStandard
