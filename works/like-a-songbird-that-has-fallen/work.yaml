@@ -1,0 +1,12 @@
+id: like-a-songbird-that-has-fallen
+title: Like a Songbird That Has Fallen
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: like-a-songbird-that-has-fallen.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-soundtrack/cold-mountain-like-a-songbird-that-has-fallen-chords-1123786
+    imported_at: '2026-07-31'

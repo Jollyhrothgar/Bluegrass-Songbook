@@ -1,0 +1,13 @@
+id: the-cuckoo
+title: The Cuckoo
+artist: Rory Gallagher
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: cuckoo-the.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/rory-gallagher/the-cuckoo-chords-2841710
+    imported_at: '2026-07-31'

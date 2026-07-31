@@ -1,0 +1,13 @@
+id: darling-nellie-gray
+title: Darling Nellie Gray
+artist: Louis Armstrong
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: darling-nellie-gray.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/louis-armstrong/darling-nelly-gray-chords-3278963
+    imported_at: '2026-07-31'

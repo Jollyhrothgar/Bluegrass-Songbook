@@ -1,4 +1,4 @@
-{meta: title A Few Old Memories}
+{meta: title Few Old Memories}
 {meta: artist Dolly Parton}
 {meta: x_source web-chords}
 {meta: x_source_file few-old-memories-a.txt}

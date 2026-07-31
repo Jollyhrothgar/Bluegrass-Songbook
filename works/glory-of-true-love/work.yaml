@@ -1,0 +1,13 @@
+id: glory-of-true-love
+title: Glory of True Love
+artist: John Prine
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: glory-of-true-love.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/john-prine/glory-of-true-love-chords-592360
+    imported_at: '2026-07-31'

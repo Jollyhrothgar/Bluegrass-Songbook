@@ -1,0 +1,13 @@
+id: i-still-write-your-name-in-the-sand
+title: I Still Write Your Name in the Sand
+artist: Buddy Starcher
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: i-still-write-your-name-in-the-sand.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/buddy-starcher/ill-still-write-your-name-in-the-sand-chords-1709936
+    imported_at: '2026-07-31'

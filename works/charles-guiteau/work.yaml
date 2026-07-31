@@ -1,0 +1,13 @@
+id: charles-guiteau
+title: Charles Guiteau
+artist: Kelly Harrell
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: charles-guiteau.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/kelly-harrell/charles-guiteau-chords-2125989
+    imported_at: '2026-07-31'

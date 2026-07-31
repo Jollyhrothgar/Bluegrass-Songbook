@@ -1,0 +1,13 @@
+id: boil-them-cabbages-down
+title: Boil Them Cabbages Down
+artist: Doc Watson
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: boil-them-cabbages-down.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/doc-watson/boil-them-cabbage-down-chords-3382898
+    imported_at: '2026-07-31'

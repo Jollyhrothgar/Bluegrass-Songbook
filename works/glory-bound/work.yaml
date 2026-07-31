@@ -1,0 +1,13 @@
+id: glory-bound
+title: Glory Bound
+artist: The Wailin Jennys
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: glory-bound-wailin-jennys.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-wailin-jennys/glory-bound-chords-698077
+    imported_at: '2026-07-31'

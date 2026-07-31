@@ -1,0 +1,12 @@
+id: the-girl-who-broke-my-heart
+title: The Girl Who Broke My Heart
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: girl-who-broke-my-heart-the.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/892829
+    imported_at: '2026-07-31'

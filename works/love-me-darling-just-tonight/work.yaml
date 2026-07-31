@@ -1,0 +1,13 @@
+id: love-me-darling-just-tonight
+title: Love Me Darling Just Tonight
+artist: The Stanley Brothers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: love-me-darling-just-tonight.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-stanley-brothers/love-me-darling-just-tonight-chords-2121529
+    imported_at: '2026-07-31'

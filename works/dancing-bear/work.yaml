@@ -1,0 +1,13 @@
+id: dancing-bear
+title: Dancing Bear
+artist: The Mamas the Papas
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: dancing-bear.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-mamas-the-papas/the-dancing-bear-chords-2157193
+    imported_at: '2026-07-31'

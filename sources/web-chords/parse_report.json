@@ -1,11 +1,11 @@
 {
   "total": 325,
-  "emitted": 242,
-  "rejected": 83,
-  "review_recommended": 10,
+  "emitted": 239,
+  "rejected": 86,
+  "review_recommended": 8,
   "rejected_by_reason": {
-    "title-mismatch": 68,
-    "duplicate": 6,
+    "title-mismatch": 67,
+    "duplicate": 10,
     "no-lyrics-instrumental": 5,
     "tab-only": 4
   },
@@ -517,7 +517,7 @@
     {
       "file": "beautiful-life-a.txt",
       "pro": "beautiful-life-a.pro",
-      "title": "A Beautiful Life",
+      "title": "Beautiful Life",
       "artist": "Misc Praise Songs",
       "source_url": "https://tabs.ultimate-guitar.com/tab/misc-praise-songs/a-beautiful-life-chords-557225",
       "stats": {
@@ -631,9 +631,9 @@
         "valid_chord_tokens": 36,
         "chords_placed": 128,
         "lyric_lines": 25,
-        "title_match": 0.86,
+        "title_match": 1.0,
         "title_checkable": true,
-        "attribution_disagreement": "catalogue says 'C to Em', page is 'Old Crow Medicine Show'",
+        "attribution_disagreement": null,
         "chord_only_lines": 27,
         "paired_lines": 21,
         "plain_lyric_lines": 4,
@@ -693,7 +693,7 @@
     {
       "file": "black-eyed-susie-bluegrass-version.txt",
       "pro": "black-eyed-susie-bluegrass-version.pro",
-      "title": "Black Eyed Susie bluegrass",
+      "title": "Black Eyed Susie",
       "artist": "Old Crow Medicine Show",
       "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/black-eyed-susie-chords-3904601",
       "stats": {
@@ -706,32 +706,7 @@
         "valid_chord_tokens": 124,
         "chords_placed": 132,
         "lyric_lines": 64,
-        "title_match": 0.76,
-        "title_checkable": true,
-        "attribution_disagreement": null,
-        "chord_only_lines": 4,
-        "paired_lines": 64,
-        "plain_lyric_lines": 0,
-        "inline_chord_lines": 0
-      }
-    },
-    {
-      "file": "black-eyed-susie-old-time-version.txt",
-      "pro": "black-eyed-susie-old-time-version.pro",
-      "title": "Black Eyed Susie old-time",
-      "artist": "Old Crow Medicine Show",
-      "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/black-eyed-susie-chords-3904601",
-      "stats": {
-        "raw_content_lines": 143,
-        "kept_lines": 142,
-        "tab_lines": 0,
-        "debris_lines": 1,
-        "chord_token_validity": 1.0,
-        "chord_tokens": 124,
-        "valid_chord_tokens": 124,
-        "chords_placed": 132,
-        "lyric_lines": 64,
-        "title_match": 0.8,
+        "title_match": 1.0,
         "title_checkable": true,
         "attribution_disagreement": null,
         "chord_only_lines": 4,
@@ -1925,7 +1900,7 @@
     {
       "file": "cumberland-gap-d-version-three-parts.txt",
       "pro": "cumberland-gap-d-version-three-parts.pro",
-      "title": "Cumberland Gap D",
+      "title": "Cumberland Gap",
       "artist": "Jason Isbell and the 400 Unit",
       "source_url": "https://tabs.ultimate-guitar.com/tab/jason-isbell-and-the-400-unit/cumberland-gap-chords-2021019",
       "stats": {
@@ -1938,7 +1913,7 @@
         "valid_chord_tokens": 62,
         "chords_placed": 69,
         "lyric_lines": 25,
-        "title_match": 0.96,
+        "title_match": 1.0,
         "title_checkable": true,
         "attribution_disagreement": null,
         "chord_only_lines": 6,
@@ -1950,7 +1925,7 @@
     {
       "file": "cumberland-gap-d-version-two-parts.txt",
       "pro": "cumberland-gap-d-version-two-parts.pro",
-      "title": "Cumberland Gap D",
+      "title": "Cumberland Gap",
       "artist": "David Rawlings",
       "source_url": "https://tabs.ultimate-guitar.com/tab/david-rawlings/cumberland-gap-chords-2383349",
       "stats": {
@@ -1963,32 +1938,7 @@
         "valid_chord_tokens": 69,
         "chords_placed": 69,
         "lyric_lines": 32,
-        "title_match": 0.96,
-        "title_checkable": true,
-        "attribution_disagreement": null,
-        "chord_only_lines": 4,
-        "paired_lines": 32,
-        "plain_lyric_lines": 0,
-        "inline_chord_lines": 0
-      }
-    },
-    {
-      "file": "cumberland-gap-g-version.txt",
-      "pro": "cumberland-gap-g-version.pro",
-      "title": "Cumberland Gap G",
-      "artist": "David Rawlings",
-      "source_url": "https://tabs.ultimate-guitar.com/tab/david-rawlings/cumberland-gap-chords-2383349",
-      "stats": {
-        "raw_content_lines": 79,
-        "kept_lines": 78,
-        "tab_lines": 0,
-        "debris_lines": 1,
-        "chord_token_validity": 1.0,
-        "chord_tokens": 69,
-        "valid_chord_tokens": 69,
-        "chords_placed": 69,
-        "lyric_lines": 32,
-        "title_match": 0.96,
+        "title_match": 1.0,
         "title_checkable": true,
         "attribution_disagreement": null,
         "chord_only_lines": 4,
@@ -2480,7 +2430,7 @@
     {
       "file": "down-in-the-valley-folk-version.txt",
       "pro": "down-in-the-valley-folk-version.pro",
-      "title": "Down in the Valley folk",
+      "title": "Down in the Valley",
       "artist": "Burl Ives",
       "source_url": "https://tabs.ultimate-guitar.com/tab/burl-ives/down-in-the-valley-chords-3718322",
       "stats": {
@@ -2493,7 +2443,7 @@
         "valid_chord_tokens": 29,
         "chords_placed": 29,
         "lyric_lines": 22,
-        "title_match": 0.83,
+        "title_match": 1.0,
         "title_checkable": true,
         "attribution_disagreement": null,
         "chord_only_lines": 1,
@@ -2934,7 +2884,7 @@
     {
       "file": "few-old-memories-a.txt",
       "pro": "few-old-memories-a.pro",
-      "title": "A Few Old Memories",
+      "title": "Few Old Memories",
       "artist": "Dolly Parton",
       "source_url": "https://tabs.ultimate-guitar.com/tab/dolly-parton/a-few-old-memories-chords-2113421",
       "stats": {
@@ -3916,7 +3866,7 @@
     {
       "file": "happy-birthday-fast-bluegrass-version.txt",
       "pro": "happy-birthday-fast-bluegrass-version.pro",
-      "title": "Happy Birthday fast/bluegrass",
+      "title": "Happy Birthday",
       "artist": null,
       "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/happy-birthday-chords-2435107",
       "stats": {
@@ -3929,7 +3879,7 @@
         "valid_chord_tokens": 27,
         "chords_placed": 27,
         "lyric_lines": 12,
-        "title_match": 0.67,
+        "title_match": 1.0,
         "title_checkable": true,
         "attribution_disagreement": null,
         "chord_only_lines": 0,
@@ -4292,7 +4242,7 @@
     {
       "file": "home-on-the-range-more-chords.txt",
       "pro": "home-on-the-range-more-chords.pro",
-      "title": "Home on the Range more",
+      "title": "Home on the Range",
       "artist": null,
       "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/home-on-the-range-chords-794207",
       "stats": {
@@ -4305,32 +4255,7 @@
         "valid_chord_tokens": 84,
         "chords_placed": 84,
         "lyric_lines": 29,
-        "title_match": 0.82,
-        "title_checkable": true,
-        "attribution_disagreement": null,
-        "chord_only_lines": 0,
-        "paired_lines": 28,
-        "plain_lyric_lines": 1,
-        "inline_chord_lines": 0
-      }
-    },
-    {
-      "file": "home-on-the-range-three-chords.txt",
-      "pro": "home-on-the-range-three-chords.pro",
-      "title": "Home on the Range three",
-      "artist": null,
-      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/home-on-the-range-chords-794207",
-      "stats": {
-        "raw_content_lines": 60,
-        "kept_lines": 59,
-        "tab_lines": 0,
-        "debris_lines": 1,
-        "chord_token_validity": 1.0,
-        "chord_tokens": 84,
-        "valid_chord_tokens": 84,
-        "chords_placed": 84,
-        "lyric_lines": 29,
-        "title_match": 0.78,
+        "title_match": 1.0,
         "title_checkable": true,
         "attribution_disagreement": null,
         "chord_only_lines": 0,
@@ -4392,7 +4317,7 @@
     {
       "file": "hundred-years-from-now-a.txt",
       "pro": "hundred-years-from-now-a.pro",
-      "title": "A Hundred Years From Now",
+      "title": "Hundred Years From Now",
       "artist": "Flatt Scruggs",
       "source_url": "https://tabs.ultimate-guitar.com/tab/flatt-scruggs/a-hundred-years-from-now-chords-1777216",
       "stats": {
@@ -5311,9 +5236,9 @@
         "valid_chord_tokens": 191,
         "chords_placed": 190,
         "lyric_lines": 60,
-        "title_match": 0.76,
+        "title_match": 1.0,
         "title_checkable": true,
-        "attribution_disagreement": "catalogue says 'double time', page is 'Bob Dylan'",
+        "attribution_disagreement": null,
         "chord_only_lines": 5,
         "paired_lines": 60,
         "plain_lyric_lines": 0,
@@ -6218,9 +6143,9 @@
         "valid_chord_tokens": 36,
         "chords_placed": 128,
         "lyric_lines": 25,
-        "title_match": 0.86,
+        "title_match": 1.0,
         "title_checkable": true,
-        "attribution_disagreement": "catalogue says 'Em to C', page is 'Old Crow Medicine Show'",
+        "attribution_disagreement": null,
         "chord_only_lines": 27,
         "paired_lines": 21,
         "plain_lyric_lines": 4,
@@ -6277,6 +6202,31 @@
         "plain_lyric_lines": 2,
         "inline_chord_lines": 0,
         "prose_lines_dropped": 2
+      }
+    },
+    {
+      "file": "black-eyed-susie-old-time-version.txt",
+      "reason": "duplicate",
+      "detail": "identical chart already emitted as black-eyed-susie-bluegrass-version.txt",
+      "title": "Black Eyed Susie",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/black-eyed-susie-chords-3904601",
+      "stats": {
+        "raw_content_lines": 143,
+        "kept_lines": 142,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 124,
+        "valid_chord_tokens": 124,
+        "chords_placed": 132,
+        "lyric_lines": 64,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 64,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
       }
     },
     {
@@ -6964,6 +6914,31 @@
       }
     },
     {
+      "file": "cumberland-gap-g-version.txt",
+      "reason": "duplicate",
+      "detail": "identical chart already emitted as cumberland-gap-d-version-two-parts.txt",
+      "title": "Cumberland Gap",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/david-rawlings/cumberland-gap-chords-2383349",
+      "stats": {
+        "raw_content_lines": 79,
+        "kept_lines": 78,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 69,
+        "valid_chord_tokens": 69,
+        "chords_placed": 69,
+        "lyric_lines": 32,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 32,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "darling-cory-modal-version.txt",
       "reason": "duplicate",
       "detail": "identical chart already emitted as darling-cory-modal-version-w-7b-chord.txt",
@@ -7525,6 +7500,31 @@
       }
     },
     {
+      "file": "home-on-the-range-three-chords.txt",
+      "reason": "duplicate",
+      "detail": "identical chart already emitted as home-on-the-range-more-chords.txt",
+      "title": "Home on the Range",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/home-on-the-range-chords-794207",
+      "stats": {
+        "raw_content_lines": 60,
+        "kept_lines": 59,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 84,
+        "valid_chord_tokens": 84,
+        "chords_placed": 84,
+        "lyric_lines": 29,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 28,
+        "plain_lyric_lines": 1,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "hound-dog-blues.txt",
       "reason": "title-mismatch",
       "detail": "fetched page is a different song (asked ['hound', 'dog', 'blues'] got ['hound', 'dog'])",
@@ -7781,9 +7781,9 @@
     },
     {
       "file": "lady-of-spain-bluegrass-ified.txt",
-      "reason": "title-mismatch",
-      "detail": "fetched page is a different song (asked ['lady', 'spain', 'bluegrass', 'ified'] got ['lady', 'spain'])",
-      "title": "Lady of Spain bluegrass-ified",
+      "reason": "duplicate",
+      "detail": "identical chart already emitted as lady-of-spain-3-4-time.txt",
+      "title": "Lady of Spain",
       "source_url": "https://tabs.ultimate-guitar.com/tab/eddie-fisher/lady-of-spain-chords-1159177",
       "stats": {
         "raw_content_lines": 53,
@@ -7795,7 +7795,7 @@
         "valid_chord_tokens": 155,
         "chords_placed": 155,
         "lyric_lines": 24,
-        "title_match": 0.56,
+        "title_match": 1.0,
         "title_checkable": true,
         "attribution_disagreement": null,
         "chord_only_lines": 0,
@@ -8261,31 +8261,6 @@
       }
     },
     {
-      "file": "big-sciota-c-to-em-version.txt",
-      "pro": "big-sciota-c-to-em-version.pro",
-      "title": "Big Sciota",
-      "artist": "Old Crow Medicine Show",
-      "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/big-sciota-chords-1177259",
-      "stats": {
-        "raw_content_lines": 81,
-        "kept_lines": 80,
-        "tab_lines": 0,
-        "debris_lines": 1,
-        "chord_token_validity": 1.0,
-        "chord_tokens": 36,
-        "valid_chord_tokens": 36,
-        "chords_placed": 128,
-        "lyric_lines": 25,
-        "title_match": 0.86,
-        "title_checkable": true,
-        "attribution_disagreement": "catalogue says 'C to Em', page is 'Old Crow Medicine Show'",
-        "chord_only_lines": 27,
-        "paired_lines": 21,
-        "plain_lyric_lines": 4,
-        "inline_chord_lines": 0
-      }
-    },
-    {
       "file": "black-diamond-don-stover.txt",
       "pro": "black-diamond-don-stover.pro",
       "title": "Black Diamond",
@@ -8410,31 +8385,6 @@
         "plain_lyric_lines": 0,
         "inline_chord_lines": 0,
         "prose_lines_dropped": 3
-      }
-    },
-    {
-      "file": "like-a-rolling-stone-double-time.txt",
-      "pro": "like-a-rolling-stone-double-time.pro",
-      "title": "Like a Rolling Stone",
-      "artist": "Bob Dylan",
-      "source_url": "https://tabs.ultimate-guitar.com/tab/bob-dylan/like-a-rolling-stone-chords-371756",
-      "stats": {
-        "raw_content_lines": 143,
-        "kept_lines": 139,
-        "tab_lines": 0,
-        "debris_lines": 1,
-        "chord_token_validity": 0.995,
-        "chord_tokens": 192,
-        "valid_chord_tokens": 191,
-        "chords_placed": 190,
-        "lyric_lines": 60,
-        "title_match": 0.76,
-        "title_checkable": true,
-        "attribution_disagreement": "catalogue says 'double time', page is 'Bob Dylan'",
-        "chord_only_lines": 5,
-        "paired_lines": 60,
-        "plain_lyric_lines": 0,
-        "inline_chord_lines": 0
       }
     },
     {

@@ -1,0 +1,12 @@
+id: listen-to-the-mockingbird
+title: Listen to the Mockingbird
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: listen-to-the-mockingbird.txt
+    source_url: https://www.cowboylyrics.com/tabs/parton-dolly/listen-to-the-mockingbird-30336.html
+    imported_at: '2026-07-31'

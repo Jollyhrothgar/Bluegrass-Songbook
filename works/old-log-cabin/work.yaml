@@ -1,0 +1,13 @@
+id: old-log-cabin
+title: Old Log Cabin
+artist: Longview
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: old-log-cabin-longview.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/longview/old-log-cabin-chords-5158012
+    imported_at: '2026-07-31'

@@ -481,6 +481,8 @@ _TITLE_MODIFIERS = re.compile(
     r'\s+(?:'
     r'chords?|tabs?|lyrics|versions?|arrangements?|arranged|simplified|'
     r'modal|major|minor|'
+    r'bluegrass(?:-?ified)?|old[\s-]?time|folk|fast|slow|double|'
+    r'(?:more|less|two|three|four|five|six|\d+)\s+chords?|'
     r'just\s+the\s+.*|via\s+.*|w/.*|with\s+\d.*|with\s+[^,]*chords?.*|'
     r'key\s+of\s+.*|capo\s+.*|living\s+room.*|'
     r'\d+\s+bars?|\d+\s*/?\s*\d+\s+time|'
@@ -488,6 +490,10 @@ _TITLE_MODIFIERS = re.compile(
     r'(?:dobro|fiddle|banjo|mandolin|guitar)\s+tune|'
     r'round\s+peak|texas\s+style|drawn\s+out'
     r')\b.*$', re.I)
+
+_TRAILING_KEY_RE = re.compile(
+    r'\s+(?:in\s+)?[A-G][#b]?(?:m|min|maj|mix|dor)?7?(?:\s+to\s+[A-G][#b]?'
+    r'(?:m|min|maj|mix|dor)?7?)?$')
 
 _STOPWORDS = {'the', 'a', 'an', 'of', 'and', 'to', 'my', 'in', 'is', 'on',
               's', 'o'}
@@ -659,6 +665,13 @@ def derive_title_artist(header_title: str, url: str) -> TitleVerdict:
     # "Title (alt title)" -> keep the primary
     stripped = re.sub(r'\s*\([^)]*\)\s*$', '', raw).strip() or raw
     stripped = _TITLE_MODIFIERS.sub('', stripped).strip(' -,')
+    # A trailing key names the arrangement, not the tune ("Cumberland Gap D",
+    # "Big Sciota C to Em"). Never strip a one-word title down to nothing.
+    while len(stripped.split()) > 2:
+        shorter = _TRAILING_KEY_RE.sub('', stripped).strip(' -,')
+        if shorter == stripped:
+            break
+        stripped = shorter
     title = stripped or raw
 
     url_artist = None

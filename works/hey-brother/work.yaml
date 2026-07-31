@@ -1,0 +1,13 @@
+id: hey-brother
+title: Hey Brother
+artist: Avicii
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: hey-brother.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/avicii/hey-brother-chords-1426261
+    imported_at: '2026-07-31'

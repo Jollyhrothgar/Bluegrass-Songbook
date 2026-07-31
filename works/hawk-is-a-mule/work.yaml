@@ -1,0 +1,13 @@
+id: hawk-is-a-mule
+title: Hawk is a Mule
+artist: Andrew Marlin
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: hawk-is-a-mule.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/andrew-marlin/hawk-is-a-mule-chords-3554366
+    imported_at: '2026-07-31'

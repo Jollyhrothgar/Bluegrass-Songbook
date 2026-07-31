@@ -1,0 +1,1832 @@
+{
+  "imported_at": "2026-07-31",
+  "parsed_files": 239,
+  "created": 144,
+  "skipped_existing_with_chords": 79,
+  "merge_candidates": 16,
+  "errors": 0,
+  "created_works": [
+    {
+      "id": "across-the-great-divide",
+      "file": "across-the-great-divide.pro",
+      "title": "Across the Great Divide",
+      "artist": "Kate Wolf",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/kate-wolf/across-the-great-divide-chords-1461446"
+    },
+    {
+      "id": "all-my-loving",
+      "file": "all-my-loving.pro",
+      "title": "All My Loving",
+      "artist": "The Beatles",
+      "default_key": "E",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-beatles/all-my-loving-chords-453882"
+    },
+    {
+      "id": "all-you-need-is-love",
+      "file": "all-you-need-is-love.pro",
+      "title": "All You Need is Love",
+      "artist": "The Beatles",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-beatles/all-you-need-is-love-chords-878481"
+    },
+    {
+      "id": "alleycat",
+      "file": "alleycat.pro",
+      "title": "Alleycat",
+      "artist": "Peggy Lee",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/peggy-lee/the-alley-cat-song-chords-2004659"
+    },
+    {
+      "id": "amber-tresses-tied-in-blue",
+      "file": "amber-tresses-tied-in-blue-flatt-scruggs.pro",
+      "title": "Amber Tresses Tied in Blue",
+      "artist": "The Carter Family",
+      "default_key": null,
+      "source_url": "https://www.e-chords.com/chords/the-carter-family/amber-tresses-tied-in-blue"
+    },
+    {
+      "id": "amelia-earharts-last-flight",
+      "file": "amelia-earhart-s-last-flight.pro",
+      "title": "Amelia Earhart's Last Flight",
+      "artist": "Plainsong",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/plainsong/amelia-earharts-last-flight-chords-3688346"
+    },
+    {
+      "id": "amie",
+      "file": "amie.pro",
+      "title": "Amie",
+      "artist": "Pure Prairie League",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/pure-prairie-league/amie-chords-403000"
+    },
+    {
+      "id": "ash-grove",
+      "file": "ash-grove.pro",
+      "title": "Ash Grove",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/the-ash-grove-chords-1425935"
+    },
+    {
+      "id": "the-ballad-of-jed-clampett",
+      "file": "ballad-of-jed-clampett-the.pro",
+      "title": "The Ballad of Jed Clampett",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-television/beverly-hillbillies-the-ballad-of-jed-clampett-chords-7216"
+    },
+    {
+      "id": "banjo-picking-girl",
+      "file": "banjo-picking-girl.pro",
+      "title": "Banjo Picking Girl",
+      "artist": "Hazel Dickens",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/hazel-dickens/banjo-pickin-girl-chords-5227305"
+    },
+    {
+      "id": "big-black-train",
+      "file": "big-black-train.pro",
+      "title": "Big Black Train",
+      "artist": "Flatt Scruggs",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/flatt-scruggs/big-black-train-chords-3013988"
+    },
+    {
+      "id": "big-eyed-rabbit",
+      "file": "big-eyed-rabbit.pro",
+      "title": "Big Eyed Rabbit",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/big-eyed-rabbit-chords-3823955"
+    },
+    {
+      "id": "big-john-mcneil",
+      "file": "big-john-mcneil.pro",
+      "title": "Big John McNeil",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-originals/leon-gallant-ballad-of-big-john-mcneil-chords-3588764"
+    },
+    {
+      "id": "bitter-creek",
+      "file": "bitter-creek.pro",
+      "title": "Bitter Creek",
+      "artist": "Eagles",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/eagles/bitter-creek-chords-1196071"
+    },
+    {
+      "id": "black-diamond",
+      "file": "black-diamond-don-stover.pro",
+      "title": "Black Diamond",
+      "artist": "Kiss",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/kiss/black-diamond-chords-971525"
+    },
+    {
+      "id": "black-velvet-band",
+      "file": "black-velvet-band-irish-rovers-version.pro",
+      "title": "Black Velvet Band",
+      "artist": "The Irish Rovers",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-irish-rovers/black-velvet-band-chords-1008871"
+    },
+    {
+      "id": "blackjack",
+      "file": "blackjack.pro",
+      "title": "Blackjack",
+      "artist": "Ray Charles",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ray-charles/blackjack-chords-4975201"
+    },
+    {
+      "id": "blue-river-waltz",
+      "file": "blue-river-waltz.pro",
+      "title": "Blue River Waltz",
+      "artist": "Jay Ungar",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/jay-ungar/the-blue-river-waltz-chords-3500789"
+    },
+    {
+      "id": "blue-virginia-blue",
+      "file": "blue-virginia-blue.pro",
+      "title": "Blue Virginia Blue",
+      "artist": "Larry Sparks",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/larry-sparks/blue-virginia-blues-chords-2331085"
+    },
+    {
+      "id": "boatman",
+      "file": "boatman.pro",
+      "title": "Boatman",
+      "artist": "Levellers",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/levellers/the-boatman-chords-1678174"
+    },
+    {
+      "id": "boil-them-cabbages-down",
+      "file": "boil-them-cabbages-down.pro",
+      "title": "Boil Them Cabbages Down",
+      "artist": "Doc Watson",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/doc-watson/boil-them-cabbage-down-chords-3382898"
+    },
+    {
+      "id": "bonnie-prince-charlie",
+      "file": "bonnie-prince-charlie.pro",
+      "title": "Bonnie Prince Charlie",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-originals/ray-porter-bonnie-prince-charlie-chords-3257414"
+    },
+    {
+      "id": "booth-shot-lincoln",
+      "file": "booth-shot-lincoln.pro",
+      "title": "Booth Shot Lincoln",
+      "artist": "Uncle Earl",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/uncle-earl/booth-shot-lincoln-chords-5314860"
+    },
+    {
+      "id": "born-to-be-with-you",
+      "file": "born-to-be-with-you.pro",
+      "title": "Born to Be With You",
+      "artist": "The Chordettes",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-chordettes/born-to-be-with-you-chords-847806"
+    },
+    {
+      "id": "the-boy-who-wouldnt-hoe-corn",
+      "file": "boy-who-wouldn-t-hoe-corn-the.pro",
+      "title": "The Boy Who Wouldn't Hoe Corn",
+      "artist": "Dan Tyminski",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/dan-tyminski/the-boy-who-wouldnt-hoe-corn-chords-1480985"
+    },
+    {
+      "id": "breaking-up-christmas",
+      "file": "breaking-up-christmas.pro",
+      "title": "Breaking Up Christmas",
+      "artist": "Dan Shay",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/dan-shay/break-up-on-christmas-chords-5537991"
+    },
+    {
+      "id": "bring-back-my-blue-eyed-boy-to-me",
+      "file": "bring-back-my-blue-eyed-boy-to-me.pro",
+      "title": "Bring Back My Blue Eyed Boy to Me",
+      "artist": "The Carter Family",
+      "default_key": null,
+      "source_url": "https://www.e-chords.com/chords/the-carter-family/bring-back-my-blue-eyed-boy"
+    },
+    {
+      "id": "cant-you-hear-me-callin",
+      "file": "can-t-you-hear-me-callin.pro",
+      "title": "Can't You Hear Me Callin'",
+      "artist": "Bill Monroe",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bill-monroe/cant-you-hear-me-callin-chords-3026873"
+    },
+    {
+      "id": "can-you-hear-me-now",
+      "file": "can-you-hear-me-now.pro",
+      "title": "Can You Hear Me Now?",
+      "artist": "Emmylou Harris",
+      "default_key": null,
+      "source_url": "https://www.e-chords.com/chords/emmylou-harris/can-you-hear-me-now"
+    },
+    {
+      "id": "canadian-waltz",
+      "file": "canadian-waltz.pro",
+      "title": "Canadian Waltz",
+      "artist": "R W Hampton",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/r-w-hampton/canadian-river-waltz-chords-5031550"
+    },
+    {
+      "id": "candy-girl",
+      "file": "candy-girl.pro",
+      "title": "Candy Girl",
+      "artist": "The Four Seasons",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-four-seasons/candy-girl-chords-68652"
+    },
+    {
+      "id": "carters-blues",
+      "file": "carter-s-blues-larry-sparks-version.pro",
+      "title": "Carter's Blues",
+      "artist": "The Carter Family",
+      "default_key": null,
+      "source_url": "https://www.e-chords.com/chords/the-carter-family/carters-blues"
+    },
+    {
+      "id": "charles-guiteau",
+      "file": "charles-guiteau.pro",
+      "title": "Charles Guiteau",
+      "artist": "Kelly Harrell",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/kelly-harrell/charles-guiteau-chords-2125989"
+    },
+    {
+      "id": "charmaine",
+      "file": "charmaine.pro",
+      "title": "Charmaine",
+      "artist": "The Bachelors",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-bachelors/charmaine-chords-917454"
+    },
+    {
+      "id": "cherry-river-line",
+      "file": "cherry-river-line.pro",
+      "title": "Cherry River Line",
+      "artist": "Lonesome Ace Stringband",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/lonesome-ace-stringband/cherry-river-line-gauley-junction-chords-5137354"
+    },
+    {
+      "id": "chicken-wire",
+      "file": "chicken-wire-jonathan-byrd.pro",
+      "title": "Chicken Wire",
+      "artist": "Jonathan Byrd",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/jonathan-byrd/chicken-wire-chords-2901596"
+    },
+    {
+      "id": "choices",
+      "file": "choices.pro",
+      "title": "Choices",
+      "artist": "George Jones",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/george-jones/choices-chords-1064856"
+    },
+    {
+      "id": "christmas-times-a-comin",
+      "file": "christmas-time-s-a-comin.pro",
+      "title": "Christmas Time's a Comin'",
+      "artist": "Ricky Skaggs",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ricky-skaggs/christmas-times-a-comin-chords-3474206"
+    },
+    {
+      "id": "cliffs-of-moher",
+      "file": "cliffs-of-moher.pro",
+      "title": "Cliffs of Moher",
+      "artist": "Gurbe Douwstra",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/gurbe-douwstra/cliffs-of-moher-chords-2755299"
+    },
+    {
+      "id": "corrina",
+      "file": "corrina.pro",
+      "title": "Corrina",
+      "artist": "Bob Dylan",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bob-dylan/corrina-corrina-chords-2368147"
+    },
+    {
+      "id": "cowboys-and-indians",
+      "file": "cowboys-and-indians.pro",
+      "title": "Cowboys and Indians",
+      "artist": "Joshua James",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/joshua-james/cowboys-and-indians-chords-1026175"
+    },
+    {
+      "id": "crooked-tree",
+      "file": "crooked-tree.pro",
+      "title": "Crooked Tree",
+      "artist": "Molly Tuttle Golden Highway",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/molly-tuttle-golden-highway/crooked-tree-chords-4040593"
+    },
+    {
+      "id": "cry-cry-darlin",
+      "file": "cry-cry-darlin.pro",
+      "title": "Cry, Cry Darlin'",
+      "artist": "Webb Pierce",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/webb-pierce/cry-cry-darling-chords-1732471"
+    },
+    {
+      "id": "crying-waltz",
+      "file": "crying-waltz.pro",
+      "title": "Crying Waltz",
+      "artist": "Hank Snow",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/hank-snow/the-crying-steel-guitar-waltz-chords-4434101"
+    },
+    {
+      "id": "the-cuckoo",
+      "file": "cuckoo-the.pro",
+      "title": "The Cuckoo",
+      "artist": "Rory Gallagher",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/rory-gallagher/the-cuckoo-chords-2841710"
+    },
+    {
+      "id": "dance-with-me-kenny",
+      "file": "dance-with-me-kenny.pro",
+      "title": "Dance With Me Kenny",
+      "artist": "Orleans",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/orleans/dance-with-me-chords-507699"
+    },
+    {
+      "id": "dancing-bear",
+      "file": "dancing-bear.pro",
+      "title": "Dancing Bear",
+      "artist": "The Mamas the Papas",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-mamas-the-papas/the-dancing-bear-chords-2157193"
+    },
+    {
+      "id": "darling-cory",
+      "file": "darling-cory-modal-version-w-7b-chord.pro",
+      "title": "Darling Cory",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/darling-corey-chords-3110864"
+    },
+    {
+      "id": "darling-nellie-gray",
+      "file": "darling-nellie-gray.pro",
+      "title": "Darling Nellie Gray",
+      "artist": "Louis Armstrong",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/louis-armstrong/darling-nelly-gray-chords-3278963"
+    },
+    {
+      "id": "darling-nelly-gray",
+      "file": "darling-nelly-gray.pro",
+      "title": "Darling Nelly Gray",
+      "artist": "Louis Armstrong",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/louis-armstrong/darling-nelly-gray-chords-3278963"
+    },
+    {
+      "id": "desvairada",
+      "file": "desvairada.pro",
+      "title": "Desvairada",
+      "artist": "Garoto",
+      "default_key": null,
+      "source_url": "https://www.e-chords.com/tabs/garoto/desvairada"
+    },
+    {
+      "id": "dixie",
+      "file": "dixie.pro",
+      "title": "Dixie",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/dixie-chords-1044431"
+    },
+    {
+      "id": "doin-my-time",
+      "file": "doin-my-time.pro",
+      "title": "Doin' My Time",
+      "artist": "Johnny Cash",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/johnny-cash/doin-my-time-chords-602618"
+    },
+    {
+      "id": "dont-think-twice-its-all-right",
+      "file": "don-t-think-twice-it-s-all-right.pro",
+      "title": "Don't Think Twice, It's All Right",
+      "artist": "Bob Dylan",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bob-dylan/dont-think-twice-its-all-right-chords-178850"
+    },
+    {
+      "id": "down-to-the-river-to-pray-oh-brother",
+      "file": "down-to-the-river-to-pray-oh-brother.pro",
+      "title": "Down to the River to Pray Oh Brother",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-soundtrack/o-brother-where-art-thou-down-to-the-river-to-pray-chords-1770243"
+    },
+    {
+      "id": "drinking-dark-whiskey",
+      "file": "drinking-dark-whiskey-the-steeldrivers.pro",
+      "title": "Drinking Dark Whiskey",
+      "artist": "The Steeldrivers",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-steeldrivers/drinkin-dark-whiskey-chords-2065645"
+    },
+    {
+      "id": "drowsy-maggie",
+      "file": "drowsy-maggie.pro",
+      "title": "Drowsy Maggie",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/drowsy-maggie-tabs-2472776"
+    },
+    {
+      "id": "dry-and-dusty",
+      "file": "dry-and-dusty.pro",
+      "title": "Dry and Dusty",
+      "artist": "Fever Ray",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/fever-ray/dry-and-dusty-chords-1904459"
+    },
+    {
+      "id": "dueling-banjos",
+      "file": "dueling-banjos-just-the-fast-part.pro",
+      "title": "Dueling Banjos",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-soundtrack/deliverance-dueling-banjos-tabs-7336"
+    },
+    {
+      "id": "duncan-and-brady",
+      "file": "duncan-and-brady.pro",
+      "title": "Duncan and Brady",
+      "artist": "Bob Dylan",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bob-dylan/duncan-and-brady-chords-66592"
+    },
+    {
+      "id": "dusty-miller",
+      "file": "dusty-miller.pro",
+      "title": "Dusty Miller",
+      "artist": "Dan Crary",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/dan-crary/the-dusty-miller-tabs-5377206"
+    },
+    {
+      "id": "el-cumbanchero",
+      "file": "el-cumbanchero.pro",
+      "title": "El Cumbanchero",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/1663593"
+    },
+    {
+      "id": "elk-river-blues",
+      "file": "elk-river-blues.pro",
+      "title": "Elk River Blues",
+      "artist": "Sierra Ferrell",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/sierra-ferrell/elk-river-blues-chords-3177338"
+    },
+    {
+      "id": "far-away",
+      "file": "far-away.pro",
+      "title": "Far Away",
+      "artist": "Nickelback",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/nickelback/far-away-chords-441256"
+    },
+    {
+      "id": "fiddlers-green",
+      "file": "fiddler-s-green.pro",
+      "title": "Fiddler's Green",
+      "artist": "The Tragically Hip",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-tragically-hip/fiddlers-green-chords-58800"
+    },
+    {
+      "id": "fireball",
+      "file": "fireball-dobro-tune.pro",
+      "title": "Fireball",
+      "artist": "One Shot Bards",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/one-shot-bards/fireball-chords-5454663"
+    },
+    {
+      "id": "flower-in-the-desert",
+      "file": "flower-in-the-desert.pro",
+      "title": "Flower in the Desert",
+      "artist": "The Cult",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-cult/a-flower-in-the-desert-chords-4620539"
+    },
+    {
+      "id": "folsom-prison-blues",
+      "file": "folsom-prison-blues.pro",
+      "title": "Folsom Prison Blues",
+      "artist": "Johnny Cash",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/johnny-cash/folsom-prison-blues-chords-811776"
+    },
+    {
+      "id": "for-what-its-worth",
+      "file": "for-what-it-s-worth-buffalo-springfield.pro",
+      "title": "For What It's Worth",
+      "artist": "Buffalo Springfield",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/buffalo-springfield/for-what-its-worth-chords-139827"
+    },
+    {
+      "id": "forty-miles-from-poplar-bluff",
+      "file": "forty-miles-from-poplar-bluff.pro",
+      "title": "Forty Miles From Poplar Bluff",
+      "artist": null,
+      "default_key": "G",
+      "source_url": "https://www.cowboylyrics.com/tabs/wagoner-porter/40-miles-from-poplar-bluff-968.html"
+    },
+    {
+      "id": "friend-of-the-devil",
+      "file": "friend-of-the-devil.pro",
+      "title": "Friend of the Devil",
+      "artist": "Grateful Dead",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/grateful-dead/friend-of-the-devil-chords-1087323"
+    },
+    {
+      "id": "frosty-the-snowman",
+      "file": "frosty-the-snowman.pro",
+      "title": "Frosty the Snowman",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-christmas/frosty-the-snowman-chords-766862"
+    },
+    {
+      "id": "girl-on-the-greenbriar-shore",
+      "file": "girl-on-the-greenbriar-shore.pro",
+      "title": "Girl on the Greenbriar Shore",
+      "artist": "The Carter Family",
+      "default_key": null,
+      "source_url": "https://www.e-chords.com/chords/the-carter-family/girl-on-the-greenbriar-shore"
+    },
+    {
+      "id": "the-girl-who-broke-my-heart",
+      "file": "girl-who-broke-my-heart-the.pro",
+      "title": "The Girl Who Broke My Heart",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/892829"
+    },
+    {
+      "id": "glory-bound",
+      "file": "glory-bound-wailin-jennys.pro",
+      "title": "Glory Bound",
+      "artist": "The Wailin Jennys",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-wailin-jennys/glory-bound-chords-698077"
+    },
+    {
+      "id": "glory-of-true-love",
+      "file": "glory-of-true-love.pro",
+      "title": "Glory of True Love",
+      "artist": "John Prine",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/john-prine/glory-of-true-love-chords-592360"
+    },
+    {
+      "id": "go-tell-aunt-rhody",
+      "file": "go-tell-aunt-rhody.pro",
+      "title": "Go Tell Aunt Rhody",
+      "artist": "Woody Guthrie",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/woody-guthrie/go-tell-aunt-rhody-chords-2969930"
+    },
+    {
+      "id": "going-across-the-sea",
+      "file": "going-across-the-sea.pro",
+      "title": "Going Across the Sea",
+      "artist": "Weezer",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/weezer/across-the-sea-chords-1192896"
+    },
+    {
+      "id": "going-down-the-road-feeling-bad",
+      "file": "going-down-the-road-feeling-bad.pro",
+      "title": "Going Down the Road Feeling Bad",
+      "artist": "Grateful Dead",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/grateful-dead/goin-down-the-road-feeling-bad-chords-363786"
+    },
+    {
+      "id": "gonna-paint-this-town",
+      "file": "gonna-paint-this-town.pro",
+      "title": "Gonna Paint This Town",
+      "artist": "Old Crow Medicine Show",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/paint-this-town-chords-3985408"
+    },
+    {
+      "id": "good-corn-liquor",
+      "file": "good-corn-liquor.pro",
+      "title": "Good Corn Liquor",
+      "artist": "The Steeldrivers",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-steeldrivers/good-corn-liquor-chords-1468373"
+    },
+    {
+      "id": "good-night-irene",
+      "file": "good-night-irene.pro",
+      "title": "Good Night Irene",
+      "artist": "Leadbelly",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/leadbelly/goodnight-irene-chords-1147133"
+    },
+    {
+      "id": "goodbye-girls",
+      "file": "goodbye-girls-marco-sneed.pro",
+      "title": "Goodbye Girls",
+      "artist": "Bread",
+      "default_key": null,
+      "source_url": "https://www.e-chords.com/chords/bread/goodbye-girl"
+    },
+    {
+      "id": "goodbye-liza-jane",
+      "file": "goodbye-liza-jane.pro",
+      "title": "Goodbye Liza Jane",
+      "artist": "The Highwoods String Band",
+      "default_key": "G",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-highwoods-string-band/goodbye-miss-liza-jane-chords-4001353"
+    },
+    {
+      "id": "grandfathers-clock",
+      "file": "grandfather-s-clock.pro",
+      "title": "Grandfather's Clock",
+      "artist": "Johnny Cash",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/johnny-cash/my-grandfathers-clock-chords-1156322"
+    },
+    {
+      "id": "grandma-got-run-over-by-a-reindeer",
+      "file": "grandma-got-run-over-by-a-reindeer.pro",
+      "title": "Grandma Got Run Over By a Reindeer",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-christmas/grandma-got-run-over-by-a-reindeer-chords-765888"
+    },
+    {
+      "id": "green-light-on-the-southern",
+      "file": "green-light-on-the-southern.pro",
+      "title": "Green Light on the Southern",
+      "artist": "Tony Rice",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/tony-rice/greenlight-on-the-southern-chords-4046338"
+    },
+    {
+      "id": "greensleeves",
+      "file": "greensleeves.pro",
+      "title": "Greensleeves",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/greensleeves-chords-173713"
+    },
+    {
+      "id": "ground-hog",
+      "file": "ground-hog-major-version.pro",
+      "title": "Ground Hog",
+      "artist": "Doc Watson",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/doc-watson/groundhog-chords-4631330"
+    },
+    {
+      "id": "guitar-boogie",
+      "file": "guitar-boogie.pro",
+      "title": "Guitar Boogie",
+      "artist": "Arthur Smith",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/arthur-smith/guitar-boogie-tabs-3183728"
+    },
+    {
+      "id": "happy-hollow",
+      "file": "happy-hollow.pro",
+      "title": "Happy Hollow",
+      "artist": "Billy Strings",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/billy-strings/happy-hollow-chords-5485002"
+    },
+    {
+      "id": "hawk-is-a-mule",
+      "file": "hawk-is-a-mule.pro",
+      "title": "Hawk is a Mule",
+      "artist": "Andrew Marlin",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/andrew-marlin/hawk-is-a-mule-chords-3554366"
+    },
+    {
+      "id": "here-rattler-here",
+      "file": "here-rattler-here.pro",
+      "title": "Here Rattler Here",
+      "artist": "Carolina Chocolate Drops",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/carolina-chocolate-drops/here-rattler-here-chords-2352047"
+    },
+    {
+      "id": "hey-brother",
+      "file": "hey-brother.pro",
+      "title": "Hey Brother",
+      "artist": "Avicii",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/avicii/hey-brother-chords-1426261"
+    },
+    {
+      "id": "hey-good-lookin",
+      "file": "hey-good-lookin.pro",
+      "title": "Hey Good Lookin'",
+      "artist": "Hank Williams",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/hank-williams/hey-good-lookin-chords-675106"
+    },
+    {
+      "id": "hickory-wind",
+      "file": "hickory-wind.pro",
+      "title": "Hickory Wind",
+      "artist": "Gram Parsons",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/gram-parsons/hickory-wind-chords-1421592"
+    },
+    {
+      "id": "high-on-the-mountain",
+      "file": "high-on-the-mountain.pro",
+      "title": "High on the Mountain",
+      "artist": "The Del Mccoury Band",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-del-mccoury-band/high-on-a-mountain-chords-1034301"
+    },
+    {
+      "id": "the-high-road",
+      "file": "high-road-the.pro",
+      "title": "The High Road",
+      "artist": "Zach Bryan",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/zach-bryan/high-road-chords-5498559"
+    },
+    {
+      "id": "hop-high-my-lula-gal",
+      "file": "hop-high-my-lula-gal.pro",
+      "title": "Hop High My Lula Gal",
+      "artist": "Dirk Powell",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/dirk-powell/hop-high-my-lulu-gal-chords-4590212"
+    },
+    {
+      "id": "i-am-weary-let-me-rest-ralph-stanley",
+      "file": "i-am-weary-let-me-rest-ralph-stanley.pro",
+      "title": "I Am Weary, Let Me Rest Ralph Stanley",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-soundtrack/o-brother-where-art-thou-i-am-weary-let-me-rest-chords-939015"
+    },
+    {
+      "id": "i-cant-give-you-anything-but-love",
+      "file": "i-can-t-give-you-anything-but-love.pro",
+      "title": "I Can't Give You Anything But Love",
+      "artist": "Louis Armstrong",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/louis-armstrong/i-cant-give-you-anything-but-love-chords-1489653"
+    },
+    {
+      "id": "i-cant-think-of-one",
+      "file": "i-can-t-think-of-one.pro",
+      "title": "I Can’t Think of One",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://www.cowboylyrics.com/tabs/burgess-sonny/i-cant-think-of-one-27672.html"
+    },
+    {
+      "id": "id-jump-the-mississippi",
+      "file": "i-d-jump-the-mississippi.pro",
+      "title": "I'd Jump the Mississippi",
+      "artist": "Foghorn Stringband",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/foghorn-stringband/id-jump-the-mississippi-chords-3945635"
+    },
+    {
+      "id": "i-dont-care-anymore",
+      "file": "i-don-t-care-anymore.pro",
+      "title": "I Don't Care Anymore",
+      "artist": "Phil Collins",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/phil-collins/i-dont-care-anymore-chords-1642221"
+    },
+    {
+      "id": "i-dont-want-your-mandolins-mister",
+      "file": "i-don-t-want-your-mandolins-mister.pro",
+      "title": "I Don't Want Your Mandolins Mister",
+      "artist": "The Almanac Singers",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-almanac-singers/i-dont-want-your-millions-mister-chords-2088113"
+    },
+    {
+      "id": "i-know-you-rider",
+      "file": "i-know-you-rider.pro",
+      "title": "I Know You Rider",
+      "artist": "Grateful Dead",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/grateful-dead/i-know-you-rider-chords-1848716"
+    },
+    {
+      "id": "im-using-my-bible-for-a-roadmap",
+      "file": "i-m-using-my-bible-for-a-roadmap.pro",
+      "title": "I'm Using My Bible for a Roadmap",
+      "artist": "Reno Smiley",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/reno-smiley/im-using-my-bible-for-a-road-map-chords-2102635"
+    },
+    {
+      "id": "i-still-write-your-name-in-the-sand",
+      "file": "i-still-write-your-name-in-the-sand.pro",
+      "title": "I Still Write Your Name in the Sand",
+      "artist": "Buddy Starcher",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/buddy-starcher/ill-still-write-your-name-in-the-sand-chords-1709936"
+    },
+    {
+      "id": "ive-been-all-around-this-world",
+      "file": "i-ve-been-all-around-this-world.pro",
+      "title": "I've Been All Around This World",
+      "artist": "Grateful Dead",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/grateful-dead/been-all-around-this-world-chords-2535900"
+    },
+    {
+      "id": "if-i-could-only-have-your-love-lrb",
+      "file": "if-i-could-only-have-your-love-lrb.pro",
+      "title": "If I Could Only Have Your Love LRB",
+      "artist": "Emmylou Harris",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/emmylou-harris/if-i-could-only-win-your-love-chords-3648632"
+    },
+    {
+      "id": "if-i-only-i-had-a-brain",
+      "file": "if-i-only-i-had-a-brain.pro",
+      "title": "If I Only I Had a Brain",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-soundtrack/the-wizard-of-oz-if-i-only-had-a-brain-chords-1125822"
+    },
+    {
+      "id": "in-spite-of-ourselves",
+      "file": "in-spite-of-ourselves.pro",
+      "title": "In Spite of Ourselves",
+      "artist": "John Prine",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/john-prine/in-spite-of-ourselves-chords-1872988"
+    },
+    {
+      "id": "in-tall-buildings",
+      "file": "in-tall-buildings.pro",
+      "title": "In Tall Buildings",
+      "artist": "John Hartford",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/john-hartford/in-tall-buildings-chords-2524449"
+    },
+    {
+      "id": "inisheer",
+      "file": "inisheer.pro",
+      "title": "Inisheer",
+      "artist": "Thomas Walsh",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/thomas-walsh/inisheer-tabs-3018086"
+    },
+    {
+      "id": "it-aint-gonna-rain-no-more",
+      "file": "it-ain-t-gonna-rain-no-more.pro",
+      "title": "It Ain't Gonna Rain No More",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/it-aint-gonna-rain-no-more-chords-3309455"
+    },
+    {
+      "id": "jailbreak",
+      "file": "jailbreak.pro",
+      "title": "Jailbreak",
+      "artist": "Thin Lizzy",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/thin-lizzy/jailbreak-chords-2501466"
+    },
+    {
+      "id": "jerusalem-ridge",
+      "file": "jerusalem-ridge-kenny-baker.pro",
+      "title": "Jerusalem Ridge",
+      "artist": "Kenny Baker US Fiddler",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/kenny-baker-us-fiddler/jerusalem-ridge-tabs-2591301"
+    },
+    {
+      "id": "jesse-james",
+      "file": "jesse-james.pro",
+      "title": "Jesse James",
+      "artist": "Woody Guthrie",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/woody-guthrie/jesse-james-chords-1749799"
+    },
+    {
+      "id": "john-browns-dream",
+      "file": "john-brown-s-dream.pro",
+      "title": "John Brown's Dream",
+      "artist": "Red Tail Ring",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/red-tail-ring/always-been-rambler-john-browns-dream-chords-3442934"
+    },
+    {
+      "id": "john-jacob-jingleheimer-schmidt",
+      "file": "john-jacob-jingleheimer-schmidt.pro",
+      "title": "John Jacob Jingleheimer Schmidt",
+      "artist": "Misc Children",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-children/john-jacob-jingleheimer-schmidt-chords-2698209"
+    },
+    {
+      "id": "lady-of-spain",
+      "file": "lady-of-spain-3-4-time.pro",
+      "title": "Lady of Spain",
+      "artist": "Eddie Fisher",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/eddie-fisher/lady-of-spain-chords-1159177"
+    },
+    {
+      "id": "late-last-night",
+      "file": "late-last-night.pro",
+      "title": "Late Last Night",
+      "artist": "Todd Snider",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/todd-snider/late-last-night-chords-3929180"
+    },
+    {
+      "id": "les-marionnettes",
+      "file": "les-marionnettes.pro",
+      "title": "Les Marionnettes",
+      "artist": "Christophe",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/christophe/les-marionnettes-chords-1450262"
+    },
+    {
+      "id": "like-a-rolling-stone",
+      "file": "like-a-rolling-stone-double-time.pro",
+      "title": "Like a Rolling Stone",
+      "artist": "Bob Dylan",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bob-dylan/like-a-rolling-stone-chords-371756"
+    },
+    {
+      "id": "like-a-songbird-that-has-fallen",
+      "file": "like-a-songbird-that-has-fallen.pro",
+      "title": "Like a Songbird That Has Fallen",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-soundtrack/cold-mountain-like-a-songbird-that-has-fallen-chords-1123786"
+    },
+    {
+      "id": "limehouse-blues",
+      "file": "limehouse-blues.pro",
+      "title": "Limehouse Blues",
+      "artist": "Django Reinhardt",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/django-reinhardt/limehouse-blues-chords-2172513"
+    },
+    {
+      "id": "listen-to-the-mockingbird",
+      "file": "listen-to-the-mockingbird.pro",
+      "title": "Listen to the Mockingbird",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://www.cowboylyrics.com/tabs/parton-dolly/listen-to-the-mockingbird-30336.html"
+    },
+    {
+      "id": "little-brown-jug",
+      "file": "little-brown-jug.pro",
+      "title": "Little Brown Jug",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/little-brown-jug-chords-4977844"
+    },
+    {
+      "id": "little-log-cabin-in-the-lane",
+      "file": "little-log-cabin-in-the-lane.pro",
+      "title": "Little Log Cabin in the Lane",
+      "artist": "Fiddlin John Carson",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/fiddlin-john-carson/little-old-log-cabin-in-the-lane-chords-3147578"
+    },
+    {
+      "id": "the-little-mountain-church",
+      "file": "little-mountain-church-the.pro",
+      "title": "The Little Mountain Church",
+      "artist": "Nitty Gritty Dirt Band",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/nitty-gritty-dirt-band/little-mountain-church-house-chords-1789149"
+    },
+    {
+      "id": "lonesome-feeling",
+      "file": "lonesome-feeling-osborne-brothers.pro",
+      "title": "Lonesome Feeling",
+      "artist": "The Osborne Brothers",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-osborne-brothers/lonesome-feeling-chords-3881168"
+    },
+    {
+      "id": "long-gone-lonesome-blues",
+      "file": "long-gone-lonesome-blues.pro",
+      "title": "Long Gone Lonesome Blues",
+      "artist": "Hank Williams",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/hank-williams/long-gone-lonesome-blues-chords-820875"
+    },
+    {
+      "id": "lost-indian",
+      "file": "lost-indian.pro",
+      "title": "Lost Indian",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://www.cowboylyrics.com/tabs/john-hartford/lost-indian-23810.html"
+    },
+    {
+      "id": "love-has-no-pride",
+      "file": "love-has-no-pride.pro",
+      "title": "Love Has No Pride",
+      "artist": "Bonnie Raitt",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bonnie-raitt/love-has-no-pride-chords-1445726"
+    },
+    {
+      "id": "love-me-darling-just-tonight",
+      "file": "love-me-darling-just-tonight.pro",
+      "title": "Love Me Darling Just Tonight",
+      "artist": "The Stanley Brothers",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-stanley-brothers/love-me-darling-just-tonight-chords-2121529"
+    },
+    {
+      "id": "lovers-waltz",
+      "file": "lover-s-waltz-arrangement-with-modulation.pro",
+      "title": "Lover's Waltz",
+      "artist": "Ben Caplan",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ben-caplan/lovers-waltz-chords-3029459"
+    },
+    {
+      "id": "make-me-a-pallet-on-your-floor",
+      "file": "make-me-a-pallet-on-your-floor.pro",
+      "title": "Make Me a Pallet on Your Floor",
+      "artist": "Gillian Welch",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/gillian-welch/make-me-a-pallet-on-your-floor-chords-650471"
+    },
+    {
+      "id": "mamas-hungry-eyes",
+      "file": "mama-s-hungry-eyes.pro",
+      "title": "Mama's Hungry Eyes",
+      "artist": "Merle Haggard",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/merle-haggard/mamas-hungry-eyes-chords-4143004"
+    },
+    {
+      "id": "man-gave-names-to-all-the-animals",
+      "file": "man-gave-names-to-all-the-animals.pro",
+      "title": "Man Gave Names to All the Animals",
+      "artist": "Bob Dylan",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bob-dylan/man-gave-names-to-all-the-animals-chords-1243333"
+    },
+    {
+      "id": "the-memory-of-your-smile",
+      "file": "memory-of-your-smile-the.pro",
+      "title": "The Memory of Your Smile",
+      "artist": "The Stanley Brothers",
+      "default_key": "G",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-stanley-brothers/the-memory-of-your-smile-chords-4007995"
+    },
+    {
+      "id": "midnight-on-the-water",
+      "file": "midnight-on-the-water.pro",
+      "title": "Midnight on the Water",
+      "artist": "Caroline Herring",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/caroline-herring/midnight-on-the-water-chords-1735773"
+    },
+    {
+      "id": "mississippi-waltz",
+      "file": "mississippi-waltz.pro",
+      "title": "Mississippi Waltz",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://www.cowboylyrics.com/tabs/john-hartford/waltz-of-the-mississippi-23855.html"
+    },
+    {
+      "id": "molly-bloom",
+      "file": "molly-bloom.pro",
+      "title": "Molly Bloom",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/molly-bloom-tabs-7179"
+    },
+    {
+      "id": "old-log-cabin",
+      "file": "old-log-cabin-longview.pro",
+      "title": "Old Log Cabin",
+      "artist": "Longview",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/longview/old-log-cabin-chords-5158012"
+    }
+  ],
+  "skipped": [
+    {
+      "file": "act-naturally.pro",
+      "title": "Act Naturally",
+      "existing_work": "act-naturally-lyrics-with-chords",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-beatles/act-naturally-chords-816028"
+    },
+    {
+      "file": "adieu-false-heart.pro",
+      "title": "Adieu False Heart",
+      "existing_work": "adieu-false-heart",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/linda-ronstadt/adieu-false-heart-chords-2856827"
+    },
+    {
+      "file": "age-bluegrass-album-band.pro",
+      "title": "Age",
+      "existing_work": "age",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-bluegrass-album-band/age-chords-2566437"
+    },
+    {
+      "file": "alabama-jubilee.pro",
+      "title": "Alabama Jubilee",
+      "existing_work": "alabama-jubilee",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/alabama-jubilee-chords-7330"
+    },
+    {
+      "file": "amber-tresses-carter-family.pro",
+      "title": "Amber Tresses",
+      "existing_work": "amber-tresses",
+      "state": "chords",
+      "source_url": "https://www.e-chords.com/chords/the-carter-family/amber-tresses-tied-in-blue"
+    },
+    {
+      "file": "anchored-in-love.pro",
+      "title": "Anchored in Love",
+      "existing_work": "anchored-in-love",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-carter-family/anchored-in-love-chords-1210101"
+    },
+    {
+      "file": "another-day-another-dollar-dan-tyminski.pro",
+      "title": "Another Day, Another Dollar",
+      "existing_work": "another-day-another-dollar",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/dan-tyminski/another-day-another-dollar-chords-3559859"
+    },
+    {
+      "file": "another-day-another-dollar-wynn-stewart.pro",
+      "title": "Another Day, Another Dollar",
+      "existing_work": "another-day-another-dollar",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/wynn-stewart/another-day-another-dollar-chords-1773357"
+    },
+    {
+      "file": "aragon-mill.pro",
+      "title": "Aragon Mill",
+      "existing_work": "aragon-mill",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/karen-matheson/aragon-mill-chords-3350396"
+    },
+    {
+      "file": "battle-of-new-orleans-eighth-of-january.pro",
+      "title": "Battle of New Orleans",
+      "existing_work": "battle-of-new-orleans",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/pete-seeger/the-battle-of-new-orleans-chords-1763874"
+    },
+    {
+      "file": "beautiful-life-a.pro",
+      "title": "Beautiful Life",
+      "existing_work": "beautiful-life",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-praise-songs/a-beautiful-life-chords-557225"
+    },
+    {
+      "file": "black-eyed-susie-bluegrass-version.pro",
+      "title": "Black Eyed Susie",
+      "existing_work": "black-eyed-susie",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/black-eyed-susie-chords-3904601"
+    },
+    {
+      "file": "black-velvet-band.pro",
+      "title": "Black Velvet Band",
+      "existing_work": "black-velvet-band",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-dubliners/black-velvet-band-chords-626924"
+    },
+    {
+      "file": "blackest-crow-the.pro",
+      "title": "The Blackest Crow",
+      "existing_work": "blackest-crow",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/red-tail-ring/the-blackest-crow-chords-1805304"
+    },
+    {
+      "file": "blessed-jesus-hold-my-hand.pro",
+      "title": "Blessed Jesus, Hold My Hand",
+      "existing_work": "blessed-jesus-hold-my-hand",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/vern-gosdin/jesus-hold-my-hand-chords-1762149"
+    },
+    {
+      "file": "blue-eyed-boston-boy.pro",
+      "title": "Blue-Eyed Boston Boy",
+      "existing_work": "blue-eyed-boston-boy",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/dwight-mccall/blue-eyed-boston-boy-chords-2935955"
+    },
+    {
+      "file": "blue-railroad-train-tony-rice.pro",
+      "title": "Blue Railroad Train",
+      "existing_work": "blue-railroad-train",
+      "state": "chords",
+      "source_url": "https://www.cowboylyrics.com/tabs/rice-tony/blue-railroad-train-2510.html"
+    },
+    {
+      "file": "body-and-soul.pro",
+      "title": "Body and Soul",
+      "existing_work": "body-and-soul",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/billie-holiday/body-and-soul-chords-1642179"
+    },
+    {
+      "file": "brown-s-ferry-blues.pro",
+      "title": "Brown's Ferry Blues",
+      "existing_work": "browns-ferry-blues",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/billy-strings/brownsferry-blues-chords-3470618"
+    },
+    {
+      "file": "cabin-in-caroline.pro",
+      "title": "Cabin in Caroline",
+      "existing_work": "cabin-in-caroline",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/flatt-scruggs/my-cabin-in-caroline-chords-879411"
+    },
+    {
+      "file": "church-street-blues.pro",
+      "title": "Church Street Blues",
+      "existing_work": "church-street-blues",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/tony-rice/church-street-blues-chords-928861"
+    },
+    {
+      "file": "cindy.pro",
+      "title": "Cindy",
+      "existing_work": "cindy",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/cindy-chords-3891389"
+    },
+    {
+      "file": "cluck-old-hen.pro",
+      "title": "Cluck Old Hen",
+      "existing_work": "cluck-old-hen",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/cluck-old-hen-chords-4602479"
+    },
+    {
+      "file": "columbus-stockade-blues-doc-watson-s-minor-version.pro",
+      "title": "Columbus Stockade Blues",
+      "existing_work": "columbus-stockade-blues",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/doc-watson/columbus-stockade-blues-chords-1850467"
+    },
+    {
+      "file": "cotton-eyed-joe-16-bars.pro",
+      "title": "Cotton-Eyed Joe",
+      "existing_work": "cotton-eyed-joe",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/rednex/cotton-eye-joe-chords-1509613"
+    },
+    {
+      "file": "crazy-arms-ray-price.pro",
+      "title": "Crazy Arms",
+      "existing_work": "crazy-arms",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ray-price/crazy-arms-chords-1104163"
+    },
+    {
+      "file": "darcy-farrow.pro",
+      "title": "Darcy Farrow",
+      "existing_work": "darcy-farrow",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/john-denver/darcy-farrow-chords-66195"
+    },
+    {
+      "file": "dark-as-the-night-blue-as-the-day.pro",
+      "title": "Dark as the Night, Blue as the Day",
+      "existing_work": "dark-as-the-night-blue-as-the-day",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/sierra-hull/dark-as-the-night-blue-as-the-day-chords-4377980"
+    },
+    {
+      "file": "darkest-hour-is-just-before-dawn-the.pro",
+      "title": "The Darkest Hour is Just Before Dawn",
+      "existing_work": "darkest-hour-is-just-before-dawn-the",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/emmylou-harris/darkest-hour-just-before-dawn-chords-1734604"
+    },
+    {
+      "file": "deck-the-halls.pro",
+      "title": "Deck the Halls",
+      "existing_work": "deck-the-halls",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-christmas/deck-the-halls-chords-1692241"
+    },
+    {
+      "file": "deep-elem-blues-drawn-out.pro",
+      "title": "Deep Elem Blues",
+      "existing_work": "deep-elem-blues",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/grateful-dead/deep-elem-blues-chords-2325799"
+    },
+    {
+      "file": "deep-river-blues-with-major-7-chord.pro",
+      "title": "Deep River Blues",
+      "existing_work": "deep-river-blues",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/doc-watson/deep-river-blues-chords-1411673"
+    },
+    {
+      "file": "diesel-on-my-tail-jim-jesse.pro",
+      "title": "Diesel on My Tail",
+      "existing_work": "diesel-on-my-tail",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/jim-jesse/diesel-on-my-tail-chords-3443504"
+    },
+    {
+      "file": "don-t-neglect-the-rose.pro",
+      "title": "Don't Neglect the Rose",
+      "existing_work": "dont-neglect-the-rose",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/larry-sparks/dont-neglect-the-roses-chords-1812545"
+    },
+    {
+      "file": "dooley-the-dillards.pro",
+      "title": "Dooley",
+      "existing_work": "dooley",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-dillards/dooley-chords-2985032"
+    },
+    {
+      "file": "down-in-the-valley-folk-version.pro",
+      "title": "Down in the Valley",
+      "existing_work": "down-in-the-valley",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/burl-ives/down-in-the-valley-chords-3718322"
+    },
+    {
+      "file": "down-in-the-valley-seven-beat-lines.pro",
+      "title": "Down in the Valley",
+      "existing_work": "down-in-the-valley",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-head-and-the-heart/down-in-the-valley-chords-1159015"
+    },
+    {
+      "file": "down-the-road-flatt-scruggs-version.pro",
+      "title": "Down the Road",
+      "existing_work": "down-the-road",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/flatt-scruggs/down-the-road-chords-3849611"
+    },
+    {
+      "file": "dust-in-a-baggie-living-room-version.pro",
+      "title": "Dust in a Baggie",
+      "existing_work": "dust-in-a-baggie",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/billy-strings/dust-in-a-baggie-chords-1792953"
+    },
+    {
+      "file": "farewell-blues.pro",
+      "title": "Farewell Blues",
+      "existing_work": "farewell-blues",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/luke-winslow-king/farewell-blues-chords-3148275"
+    },
+    {
+      "file": "farther-along.pro",
+      "title": "Farther Along",
+      "existing_work": "farther-along",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/brad-paisley/farther-along-chords-1004737"
+    },
+    {
+      "file": "few-old-memories-a.pro",
+      "title": "Few Old Memories",
+      "existing_work": "a-few-old-memories",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/dolly-parton/a-few-old-memories-chords-2113421"
+    },
+    {
+      "file": "fly-around-my-pretty-little-miss.pro",
+      "title": "Fly Around My Pretty Little Miss",
+      "existing_work": "fly-around-my-pretty-little-miss",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/built-to-spill/fly-around-my-pretty-little-miss-chords-737412"
+    },
+    {
+      "file": "forty-years-of-trouble.pro",
+      "title": "Forty Years of Trouble",
+      "existing_work": "forty-years-of-trouble",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/aubrey-haynie/forty-years-of-trouble-chords-4392635"
+    },
+    {
+      "file": "fox-on-the-run-bill-emerson.pro",
+      "title": "Fox on the Run",
+      "existing_work": "fox-on-the-run",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/tom-t-hall/fox-on-the-run-chords-3633401"
+    },
+    {
+      "file": "gathering-flowers-from-the-hillside.pro",
+      "title": "Gathering Flowers from the Hillside",
+      "existing_work": "gathering-flowers-from-the-hillside",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-carter-family/gathering-flowers-from-the-hillside-chords-4951060"
+    },
+    {
+      "file": "ginseng-sullivan-norman-blake.pro",
+      "title": "Ginseng Sullivan",
+      "existing_work": "ginseng-sullivan",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/norman-blake/ginseng-sullivan-chords-7345"
+    },
+    {
+      "file": "god-rest-ye-merry-gentlemen.pro",
+      "title": "God Rest Ye Merry Gentlemen",
+      "existing_work": "god-rest-ye-merry-gentlemen",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-christmas/god-rest-ye-merry-gentlemen-chords-1443549"
+    },
+    {
+      "file": "going-to-the-west.pro",
+      "title": "Going to the West",
+      "existing_work": "going-to-the-west",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/laurie-lewis/going-to-the-west-chords-5097460"
+    },
+    {
+      "file": "gospel-plow.pro",
+      "title": "Gospel Plow",
+      "existing_work": "gospel-plow",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/chance-mccoy/gospel-plow-chords-3463112"
+    },
+    {
+      "file": "green-rolling-hills-of-west-virginia-the.pro",
+      "title": "The Green Rolling Hills of West Virginia",
+      "existing_work": "the-green-rolling-hills-of-west-virginia",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/utah-phillips/green-rolling-hills-of-west-virginia-chords-4040998"
+    },
+    {
+      "file": "gum-tree-canoe.pro",
+      "title": "Gum Tree Canoe",
+      "existing_work": "gum-tree-canoe",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/john-hartford/gum-tree-canoe-chords-2458692"
+    },
+    {
+      "file": "happy-birthday-fast-bluegrass-version.pro",
+      "title": "Happy Birthday",
+      "existing_work": "happy-birthday",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/happy-birthday-chords-2435107"
+    },
+    {
+      "file": "hard-ain-t-it-hard.pro",
+      "title": "Hard, Ain't It Hard",
+      "existing_work": "hard-aint-it-hard",
+      "state": "chords",
+      "source_url": "https://www.e-chords.com/chords/woody-guthrie/hard-aint-it-hard"
+    },
+    {
+      "file": "hard-times-come-again-no-more.pro",
+      "title": "Hard Times Come Again No More",
+      "existing_work": "hard-times-come-again-no-more",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/nanci-griffith/hard-times-come-again-no-more-chords-1045537"
+    },
+    {
+      "file": "have-you-come-to-say-goodbye.pro",
+      "title": "Have You Come to Say Goodbye",
+      "existing_work": "have-you-come-to-say-goodbye",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/carl-story/have-you-come-to-say-goodbye-chords-4023832"
+    },
+    {
+      "file": "here-today-gone-tomorrow.pro",
+      "title": "Here Today, Gone Tomorrow",
+      "existing_work": "here-today-gone-tomorrow",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ramones/here-today-gone-tomorrow-chords-403128"
+    },
+    {
+      "file": "hobo-blues-lonesome-river-band.pro",
+      "title": "Hobo Blues",
+      "existing_work": "hobo-blues",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/lonesome-river-band/hobo-blues-chords-1855139"
+    },
+    {
+      "file": "home-on-the-range-more-chords.pro",
+      "title": "Home on the Range",
+      "existing_work": "home-on-the-range",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/home-on-the-range-chords-794207"
+    },
+    {
+      "file": "hot-corn-cold-corn.pro",
+      "title": "Hot Corn, Cold Corn",
+      "existing_work": "hot-corn-cold-corn",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/flatt-scruggs/hot-corn-cold-corn-chords-2527752"
+    },
+    {
+      "file": "hundred-years-from-now-a.pro",
+      "title": "Hundred Years From Now",
+      "existing_work": "a-hundred-years-from-now",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/flatt-scruggs/a-hundred-years-from-now-chords-1777216"
+    },
+    {
+      "file": "i-ll-remember-you-love-in-my-prayers.pro",
+      "title": "I'll Remember You Love in My Prayers",
+      "existing_work": "ill-remember-you-love-in-my-prayers",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/alison-krauss-union-station/ill-remember-you-love-in-my-prayers-chords-2599320"
+    },
+    {
+      "file": "i-m-blue-i-m-lonesome.pro",
+      "title": "I'm Blue, I'm Lonesome",
+      "existing_work": "i-m-blue-i-m-lonesome",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bill-monroe/im-blue-im-lonesome-chords-4062586"
+    },
+    {
+      "file": "i-m-working-on-a-building-bill-monroe-version.pro",
+      "title": "I'm Working on a Building",
+      "existing_work": "im-working-on-a-building",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bill-monroe/im-working-on-a-building-chords-1942871"
+    },
+    {
+      "file": "i-ve-endured.pro",
+      "title": "I've Endured",
+      "existing_work": "ive-endured",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ola-belle-reed/ive-endured-chords-2597340"
+    },
+    {
+      "file": "ida-red-with-4-chords.pro",
+      "title": "Ida Red",
+      "existing_work": "ida-red",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bob-wills-his-texas-playboys/ida-red-chords-2439899"
+    },
+    {
+      "file": "jimmie-brown-the-newsboy.pro",
+      "title": "Jimmie Brown the Newsboy",
+      "existing_work": "jimmie-brown-the-newsboy",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/mac-wiseman/jimmy-brown-the-newsboy-chords-2118275"
+    },
+    {
+      "file": "keep-on-the-firing-line-carter-family-version.pro",
+      "title": "Keep on the Firing Line",
+      "existing_work": "keep-on-the-firing-line",
+      "state": "chords",
+      "source_url": "https://www.e-chords.com/chords/the-carter-family/keep-on-the-firing-line"
+    },
+    {
+      "file": "l-n-don-t-stop-here-anymore-the.pro",
+      "title": "The L&N Don't Stop Here Anymore",
+      "existing_work": "the-ln-dont-stop-here-anymore",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/michelle-shocked/the-l-and-n-dont-stop-here-anymore-chords-1868494"
+    },
+    {
+      "file": "last-train-from-poor-valley.pro",
+      "title": "Last Train From Poor Valley",
+      "existing_work": "last-train-from-poor-valley",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/norman-blake/last-train-from-poor-valley-chords-1830657"
+    },
+    {
+      "file": "lazy-john.pro",
+      "title": "Lazy John",
+      "existing_work": "lazy-john",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/chance-mccoy/lazy-john-chords-3367079"
+    },
+    {
+      "file": "lily-dale-bob-wills.pro",
+      "title": "Lily Dale",
+      "existing_work": "lily-dale",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bob-wills/lily-dale-chords-2363187"
+    },
+    {
+      "file": "little-birdie.pro",
+      "title": "Little Birdie",
+      "existing_work": "little-birdie",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-stanley-brothers/little-birdie-chords-1238397"
+    },
+    {
+      "file": "little-sadie-doc-watson-s-version.pro",
+      "title": "Little Sadie",
+      "existing_work": "little-sadie",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/doc-watson/little-sadie-chords-1123681"
+    },
+    {
+      "file": "little-sadie-tony-rice-s-version.pro",
+      "title": "Little Sadie",
+      "existing_work": "little-sadie",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/jerry-garcia/little-sadie-chords-4346165"
+    },
+    {
+      "file": "lonesome-moonlight-waltz.pro",
+      "title": "Lonesome Moonlight Waltz",
+      "existing_work": "lonesome-moonlight-waltz",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/lonesome-moonlight-waltz-tabs-4744007"
+    },
+    {
+      "file": "mama-don-t-allow.pro",
+      "title": "Mama Don't Allow",
+      "existing_work": "mama-dont-allow",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/mama-dont-allow-chords-607861"
+    },
+    {
+      "file": "molly-and-tenbrooks.pro",
+      "title": "Molly and Tenbrooks",
+      "existing_work": "molly-and-tenbrooks",
+      "state": "chords",
+      "source_url": "https://www.e-chords.com/chords/bill-monroe/molly-and-tenbrooks"
+    },
+    {
+      "file": "more-pretty-girls-than-one-4-4-time.pro",
+      "title": "More Pretty Girls Than One",
+      "existing_work": "more-pretty-girls-than-one",
+      "state": "chords",
+      "source_url": "https://www.e-chords.com/chords/ricky-skaggs/more-pretty-girls-than-one"
+    }
+  ],
+  "merge_candidate_works": [
+    {
+      "file": "big-sciota-c-to-em-version.pro",
+      "title": "Big Sciota",
+      "existing_work": "big-sciota",
+      "state": "no-lead-sheet",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/big-sciota-chords-1177259"
+    },
+    {
+      "file": "bringing-in-the-georgia-mail.pro",
+      "title": "Bringing in the Georgia Mail",
+      "existing_work": "bringing-in-the-georgia-mail",
+      "state": "lyrics-only",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/flatt-scruggs/bringing-in-the-georgia-mail-chords-2837582"
+    },
+    {
+      "file": "cuckoo-bird-the-osborne-brothers.pro",
+      "title": "Cuckoo Bird",
+      "existing_work": "the-cuckoo-bird",
+      "state": "lyrics-only",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-osborne-brothers/the-cuckoo-bird-chords-3061220"
+    },
+    {
+      "file": "cuckoo-s-nest.pro",
+      "title": "Cuckoo's Nest",
+      "existing_work": "cuckoo-s-nest",
+      "state": "no-lead-sheet",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/john-hartford/cuckoos-nest-chords-4442294"
+    },
+    {
+      "file": "cumberland-gap-d-version-three-parts.pro",
+      "title": "Cumberland Gap",
+      "existing_work": "cumberland-gap",
+      "state": "no-lead-sheet",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/jason-isbell-and-the-400-unit/cumberland-gap-chords-2021019"
+    },
+    {
+      "file": "cumberland-gap-d-version-two-parts.pro",
+      "title": "Cumberland Gap",
+      "existing_work": "cumberland-gap",
+      "state": "no-lead-sheet",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/david-rawlings/cumberland-gap-chords-2383349"
+    },
+    {
+      "file": "distant-land-to-roam.pro",
+      "title": "Distant Land to Roam",
+      "existing_work": "distant-land-to-roam",
+      "state": "lyrics-only",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/mighty-poplar/a-distant-land-to-roam-chords-4677089"
+    },
+    {
+      "file": "dreams-del-mccoury.pro",
+      "title": "Dreams",
+      "existing_work": "dreams",
+      "state": "lyrics-only",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-del-mccoury-band/dreams-chords-4684610"
+    },
+    {
+      "file": "eight-more-miles-to-louisville.pro",
+      "title": "Eight More Miles to Louisville",
+      "existing_work": "eight-more-miles-to-louisville",
+      "state": "lyrics-only",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/grandpa-jones/eight-more-miles-to-louisville-chords-1804784"
+    },
+    {
+      "file": "gold-rush.pro",
+      "title": "Gold Rush",
+      "existing_work": "gold-rush",
+      "state": "no-lead-sheet",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/taylor-swift/gold-rush-chords-3462080"
+    },
+    {
+      "file": "golden-slippers.pro",
+      "title": "Golden Slippers",
+      "existing_work": "golden-slippers",
+      "state": "lyrics-only",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/frank-luther/oh-dem-golden-slippers-ukulele-2918309"
+    },
+    {
+      "file": "head-over-heels.pro",
+      "title": "Head Over Heels",
+      "existing_work": "head-over-heels",
+      "state": "lyrics-only",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/tears-for-fears/head-over-heels-chords-135630"
+    },
+    {
+      "file": "irish-washerwoman.pro",
+      "title": "Irish Washerwoman",
+      "existing_work": "the-irish-washerwoman",
+      "state": "no-lead-sheet",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/the-irish-washerwoman-chords-1053920"
+    },
+    {
+      "file": "little-rabbit.pro",
+      "title": "Little Rabbit",
+      "existing_work": "little-rabbit",
+      "state": "no-lead-sheet",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/brotherkenzie/little-rabbit-chords-2863754"
+    },
+    {
+      "file": "long-gone.pro",
+      "title": "Long Gone",
+      "existing_work": "long-gone",
+      "state": "lyrics-only",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/lonesome-river-band/long-gone-chords-2074873"
+    },
+    {
+      "file": "man-in-the-middle.pro",
+      "title": "Man in the Middle",
+      "existing_work": "man-in-the-middle-the",
+      "state": "lyrics-only",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-cupps/the-man-in-the-middle-chords-4727324"
+    }
+  ],
+  "error_details": []
+}

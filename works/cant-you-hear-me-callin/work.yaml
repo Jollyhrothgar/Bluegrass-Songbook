@@ -1,0 +1,13 @@
+id: cant-you-hear-me-callin
+title: Can't You Hear Me Callin'
+artist: Bill Monroe
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: can-t-you-hear-me-callin.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/bill-monroe/cant-you-hear-me-callin-chords-3026873
+    imported_at: '2026-07-31'

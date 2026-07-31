@@ -1,0 +1,13 @@
+id: jailbreak
+title: Jailbreak
+artist: Thin Lizzy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: jailbreak.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/thin-lizzy/jailbreak-chords-2501466
+    imported_at: '2026-07-31'

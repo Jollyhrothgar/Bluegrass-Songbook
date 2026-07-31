@@ -1,0 +1,13 @@
+id: banjo-picking-girl
+title: Banjo Picking Girl
+artist: Hazel Dickens
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: banjo-picking-girl.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/hazel-dickens/banjo-pickin-girl-chords-5227305
+    imported_at: '2026-07-31'

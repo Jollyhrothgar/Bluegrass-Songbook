@@ -1,0 +1,13 @@
+id: fiddlers-green
+title: Fiddler's Green
+artist: The Tragically Hip
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: fiddler-s-green.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-tragically-hip/fiddlers-green-chords-58800
+    imported_at: '2026-07-31'

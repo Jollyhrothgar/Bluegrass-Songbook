@@ -1,0 +1,13 @@
+id: good-corn-liquor
+title: Good Corn Liquor
+artist: The Steeldrivers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: good-corn-liquor.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-steeldrivers/good-corn-liquor-chords-1468373
+    imported_at: '2026-07-31'

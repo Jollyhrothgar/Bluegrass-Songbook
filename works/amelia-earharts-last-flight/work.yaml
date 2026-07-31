@@ -1,0 +1,13 @@
+id: amelia-earharts-last-flight
+title: Amelia Earhart's Last Flight
+artist: Plainsong
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: amelia-earhart-s-last-flight.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/plainsong/amelia-earharts-last-flight-chords-3688346
+    imported_at: '2026-07-31'

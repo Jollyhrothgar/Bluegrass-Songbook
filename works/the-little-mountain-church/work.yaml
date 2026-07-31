@@ -1,0 +1,13 @@
+id: the-little-mountain-church
+title: The Little Mountain Church
+artist: Nitty Gritty Dirt Band
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: little-mountain-church-the.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/nitty-gritty-dirt-band/little-mountain-church-house-chords-1789149
+    imported_at: '2026-07-31'

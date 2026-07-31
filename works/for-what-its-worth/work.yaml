@@ -1,0 +1,13 @@
+id: for-what-its-worth
+title: For What It's Worth
+artist: Buffalo Springfield
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: for-what-it-s-worth-buffalo-springfield.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/buffalo-springfield/for-what-its-worth-chords-139827
+    imported_at: '2026-07-31'

@@ -378,11 +378,15 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
     // Source attribution for bottom of page
     // Link to classic-country home page (individual pages are often broken)
     // For bluegrass-lyrics, use the x_lyrics_url from ChordPro metadata
+    // web-chords charts each came from a different site, so the per-song
+    // x_source_url is the only meaningful link.
     const sourceUrl = song?.source === 'classic-country'
         ? 'https://www.classic-country-song-lyrics.com/'
         : (song?.source === 'bluegrass-lyrics' && metadata.x_lyrics_url)
             ? metadata.x_lyrics_url
-            : null;
+            : (song?.source === 'web-chords' && metadata.x_source_url)
+                ? metadata.x_source_url
+                : null;
     const bookDisplay = metadata.x_book || song?.book || null;
     const bookUrl = metadata.x_book_url || song?.book_url || null;
     const sourceDisplayNames = {
@@ -394,7 +398,8 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
         'pending': 'Community Contribution',
         'banjo-hangout': 'Banjo Hangout',
         'ultimate-guitar': 'Community Contribution',
-        'bluegrass-lyrics': 'BluegrassLyrics.com'
+        'bluegrass-lyrics': 'BluegrassLyrics.com',
+        'web-chords': 'Original chord chart'
     };
     let sourceHtml = '';
     if (sourceUrl) {

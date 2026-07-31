@@ -1,0 +1,13 @@
+id: big-black-train
+title: Big Black Train
+artist: Flatt Scruggs
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: big-black-train.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/flatt-scruggs/big-black-train-chords-3013988
+    imported_at: '2026-07-31'

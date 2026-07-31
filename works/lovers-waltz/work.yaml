@@ -1,0 +1,13 @@
+id: lovers-waltz
+title: Lover's Waltz
+artist: Ben Caplan
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: lover-s-waltz-arrangement-with-modulation.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/ben-caplan/lovers-waltz-chords-3029459
+    imported_at: '2026-07-31'

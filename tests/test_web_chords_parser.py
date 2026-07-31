@@ -572,6 +572,25 @@ class TestTitleArtist:
         assert v.title == 'Ida Red'
         assert v.verified
 
+    @pytest.mark.parametrize('catalogue,expected', [
+        ('Black Eyed Susie bluegrass version', 'Black Eyed Susie'),
+        ('Cumberland Gap D version two parts', 'Cumberland Gap'),
+        ('Home on the Range more chords', 'Home on the Range'),
+        ('Down in the Valley folk version', 'Down in the Valley'),
+        ('Big Sciota C to Em version', 'Big Sciota'),
+        ('Lady of Spain bluegrass-ified', 'Lady of Spain'),
+        # ...without eating words that only look like qualifiers.
+        ("It Ain't Gonna Rain No More", "It Ain't Gonna Rain No More"),
+        ('Take Five', 'Take Five'),
+        ('Once Upon a Time', 'Once Upon a Time'),
+        ('Blue Valley Waltz', 'Blue Valley Waltz'),
+    ])
+    def test_arrangement_qualifiers_reduce_to_the_tune_name(self, catalogue,
+                                                            expected):
+        v = wc.derive_title_artist(
+            catalogue, 'https://tabs.ultimate-guitar.com/tab/x/y-chords-1')
+        assert v.title == expected
+
     def test_apostrophes_do_not_break_verification(self):
         for title, slug in [
             ("Don't Think Twice, It's All Right", 'dont-think-twice-its-all-right'),

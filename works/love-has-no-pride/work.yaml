@@ -1,0 +1,13 @@
+id: love-has-no-pride
+title: Love Has No Pride
+artist: Bonnie Raitt
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: love-has-no-pride.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/bonnie-raitt/love-has-no-pride-chords-1445726
+    imported_at: '2026-07-31'

@@ -1,0 +1,13 @@
+id: jerusalem-ridge
+title: Jerusalem Ridge
+artist: Kenny Baker US Fiddler
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: jerusalem-ridge-kenny-baker.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/kenny-baker-us-fiddler/jerusalem-ridge-tabs-2591301
+    imported_at: '2026-07-31'

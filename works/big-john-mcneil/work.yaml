@@ -1,0 +1,12 @@
+id: big-john-mcneil
+title: Big John McNeil
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: big-john-mcneil.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-originals/leon-gallant-ballad-of-big-john-mcneil-chords-3588764
+    imported_at: '2026-07-31'

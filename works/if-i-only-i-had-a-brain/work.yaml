@@ -1,0 +1,12 @@
+id: if-i-only-i-had-a-brain
+title: If I Only I Had a Brain
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: if-i-only-i-had-a-brain.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-soundtrack/the-wizard-of-oz-if-i-only-had-a-brain-chords-1125822
+    imported_at: '2026-07-31'

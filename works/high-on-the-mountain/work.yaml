@@ -1,0 +1,13 @@
+id: high-on-the-mountain
+title: High on the Mountain
+artist: The Del Mccoury Band
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: high-on-the-mountain.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-del-mccoury-band/high-on-a-mountain-chords-1034301
+    imported_at: '2026-07-31'

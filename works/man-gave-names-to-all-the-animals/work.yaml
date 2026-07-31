@@ -1,0 +1,13 @@
+id: man-gave-names-to-all-the-animals
+title: Man Gave Names to All the Animals
+artist: Bob Dylan
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: man-gave-names-to-all-the-animals.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/bob-dylan/man-gave-names-to-all-the-animals-chords-1243333
+    imported_at: '2026-07-31'

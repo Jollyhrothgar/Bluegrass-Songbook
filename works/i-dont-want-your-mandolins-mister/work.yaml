@@ -1,0 +1,13 @@
+id: i-dont-want-your-mandolins-mister
+title: I Don't Want Your Mandolins Mister
+artist: The Almanac Singers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: i-don-t-want-your-mandolins-mister.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-almanac-singers/i-dont-want-your-millions-mister-chords-2088113
+    imported_at: '2026-07-31'

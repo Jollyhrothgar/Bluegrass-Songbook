@@ -1,0 +1,13 @@
+id: crying-waltz
+title: Crying Waltz
+artist: Hank Snow
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: crying-waltz.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/hank-snow/the-crying-steel-guitar-waltz-chords-4434101
+    imported_at: '2026-07-31'

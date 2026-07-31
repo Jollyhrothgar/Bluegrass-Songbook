@@ -1,4 +1,4 @@
-{meta: title Home on the Range more}
+{meta: title Home on the Range}
 {meta: x_source web-chords}
 {meta: x_source_file home-on-the-range-more-chords.txt}
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/misc-traditional/home-on-the-range-chords-794207}

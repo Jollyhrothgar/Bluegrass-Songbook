@@ -1,0 +1,13 @@
+id: crooked-tree
+title: Crooked Tree
+artist: Molly Tuttle Golden Highway
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: crooked-tree.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/molly-tuttle-golden-highway/crooked-tree-chords-4040593
+    imported_at: '2026-07-31'

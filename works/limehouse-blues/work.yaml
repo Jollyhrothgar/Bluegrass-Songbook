@@ -1,0 +1,13 @@
+id: limehouse-blues
+title: Limehouse Blues
+artist: Django Reinhardt
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: limehouse-blues.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/django-reinhardt/limehouse-blues-chords-2172513
+    imported_at: '2026-07-31'

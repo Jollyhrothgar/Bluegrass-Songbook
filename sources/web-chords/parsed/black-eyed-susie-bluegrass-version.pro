@@ -1,4 +1,4 @@
-{meta: title Black Eyed Susie bluegrass}
+{meta: title Black Eyed Susie}
 {meta: artist Old Crow Medicine Show}
 {meta: x_source web-chords}
 {meta: x_source_file black-eyed-susie-bluegrass-version.txt}

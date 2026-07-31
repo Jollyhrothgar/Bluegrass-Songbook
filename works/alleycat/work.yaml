@@ -1,0 +1,13 @@
+id: alleycat
+title: Alleycat
+artist: Peggy Lee
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: alleycat.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/peggy-lee/the-alley-cat-song-chords-2004659
+    imported_at: '2026-07-31'

@@ -1,0 +1,13 @@
+id: dont-think-twice-its-all-right
+title: Don't Think Twice, It's All Right
+artist: Bob Dylan
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: don-t-think-twice-it-s-all-right.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/bob-dylan/dont-think-twice-its-all-right-chords-178850
+    imported_at: '2026-07-31'

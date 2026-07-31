@@ -1,0 +1,13 @@
+id: amie
+title: Amie
+artist: Pure Prairie League
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: amie.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/pure-prairie-league/amie-chords-403000
+    imported_at: '2026-07-31'

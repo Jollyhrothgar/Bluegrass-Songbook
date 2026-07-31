@@ -1,0 +1,12 @@
+id: little-brown-jug
+title: Little Brown Jug
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: little-brown-jug.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/little-brown-jug-chords-4977844
+    imported_at: '2026-07-31'

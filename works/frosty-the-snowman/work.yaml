@@ -1,0 +1,12 @@
+id: frosty-the-snowman
+title: Frosty the Snowman
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: frosty-the-snowman.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-christmas/frosty-the-snowman-chords-766862
+    imported_at: '2026-07-31'

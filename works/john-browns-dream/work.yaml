@@ -1,0 +1,13 @@
+id: john-browns-dream
+title: John Brown's Dream
+artist: Red Tail Ring
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: john-brown-s-dream.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/red-tail-ring/always-been-rambler-john-browns-dream-chords-3442934
+    imported_at: '2026-07-31'

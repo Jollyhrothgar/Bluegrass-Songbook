@@ -74,14 +74,28 @@ def normalize_title(title: str) -> str:
     return ' '.join(text.lower().split())
 
 
-_TITLE_INDEX: Optional[dict[str, list[Path]]] = None
+def bare_title(title: str) -> str:
+    """Normalized title without its leading article.
+
+    "The Irish Washerwoman" and "Irish Washerwoman" are one tune; matching
+    only on the exact normalized form creates a second work for it.
+    """
+    return re.sub(r'^(?:the|a|an)\s+', '', normalize_title(title))
 
 
-def title_index(works_dir: Path = WORKS_DIR) -> dict[str, list[Path]]:
-    """normalized title -> work dirs, built once (18k works, one yaml each)."""
+_TITLE_INDEX: Optional[tuple[dict, dict]] = None
+
+
+def title_index(works_dir: Path = WORKS_DIR) -> tuple[dict, dict]:
+    """``(exact, article-insensitive)`` title -> work dirs, built once.
+
+    18k works with a yaml parse each, so this is cached; a per-title scan made
+    batch imports quadratic in the banjo-hangout importer.
+    """
     global _TITLE_INDEX
     if _TITLE_INDEX is None:
-        index: dict[str, list[Path]] = {}
+        exact: dict[str, list[Path]] = {}
+        bare: dict[str, list[Path]] = {}
         for work_dir in sorted(works_dir.iterdir()):
             work_yaml = work_dir / 'work.yaml'
             if not work_dir.is_dir() or not work_yaml.exists():
@@ -90,21 +104,30 @@ def title_index(works_dir: Path = WORKS_DIR) -> dict[str, list[Path]]:
                 data = yaml.safe_load(work_yaml.read_text()) or {}
             except Exception:
                 continue
-            index.setdefault(normalize_title(data.get('title', '')), []).append(work_dir)
-        _TITLE_INDEX = index
+            title = data.get('title', '')
+            exact.setdefault(normalize_title(title), []).append(work_dir)
+            bare.setdefault(bare_title(title), []).append(work_dir)
+        _TITLE_INDEX = (exact, bare)
     return _TITLE_INDEX
 
 
 def find_matching_works(title: str, works_dir: Path = WORKS_DIR) -> list[Path]:
-    """Existing works for this title: exact slug first, then normalized title."""
-    normalized = normalize_title(title)
+    """Existing works for this title: exact slug, exact title, then bare title."""
+    exact, bare = title_index(works_dir)
     matches: list[Path] = []
-    slug_dir = works_dir / slugify(normalized)
-    if slug_dir.is_dir() and (slug_dir / 'work.yaml').exists():
-        matches.append(slug_dir)
-    for candidate in title_index(works_dir).get(normalized, []):
-        if candidate not in matches:
-            matches.append(candidate)
+
+    def add(path: Path):
+        if path not in matches and (path / 'work.yaml').exists():
+            matches.append(path)
+
+    slug_dir = works_dir / slugify(normalize_title(title))
+    if slug_dir.is_dir():
+        add(slug_dir)
+    for candidate in exact.get(normalize_title(title), []):
+        add(candidate)
+    if not matches:
+        for candidate in bare.get(bare_title(title), []):
+            add(candidate)
     return matches
 
 

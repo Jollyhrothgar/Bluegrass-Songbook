@@ -1,4 +1,4 @@
-{meta: title Cumberland Gap D}
+{meta: title Cumberland Gap}
 {meta: artist David Rawlings}
 {meta: x_source web-chords}
 {meta: x_source_file cumberland-gap-d-version-two-parts.txt}

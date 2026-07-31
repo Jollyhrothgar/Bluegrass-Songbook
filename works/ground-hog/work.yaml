@@ -1,0 +1,13 @@
+id: ground-hog
+title: Ground Hog
+artist: Doc Watson
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: ground-hog-major-version.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/doc-watson/groundhog-chords-4631330
+    imported_at: '2026-07-31'

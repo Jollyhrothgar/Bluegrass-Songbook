@@ -1,0 +1,13 @@
+id: cry-cry-darlin
+title: Cry, Cry Darlin'
+artist: Webb Pierce
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: cry-cry-darlin.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/webb-pierce/cry-cry-darling-chords-1732471
+    imported_at: '2026-07-31'

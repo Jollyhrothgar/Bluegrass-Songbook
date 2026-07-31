@@ -1,0 +1,13 @@
+id: here-rattler-here
+title: Here Rattler Here
+artist: Carolina Chocolate Drops
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: here-rattler-here.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/carolina-chocolate-drops/here-rattler-here-chords-2352047
+    imported_at: '2026-07-31'
