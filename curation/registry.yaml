@@ -120,6 +120,12 @@ groups:
         label: Loretta Lynn version
 suppressed: {}
 keep:
+  born-to-be-with-you-lyrics-and-chords:
+    reason: "SM ledger match once filename debris is stripped from the title (2026-07 ledger cleanup)"
+  farther-along-lyrics-and-chords:
+    reason: "SM+BL ledger match once filename debris is stripped from the title (2026-07 ledger cleanup)"
+  i-ll-remember-you-love-in-my-prayers-lyrics-and-chords:
+    reason: "SM+BL ledger match once filename debris is stripped from the title (2026-07 ledger cleanup)"
   a-lonesome-road-to-travel:
     reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
   abilene:
