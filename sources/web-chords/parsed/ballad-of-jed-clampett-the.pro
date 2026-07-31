@@ -1,4 +1,4 @@
-{meta: title Ballad of Jed Clampett, The}
+{meta: title The Ballad of Jed Clampett}
 {meta: x_source web-chords}
 {meta: x_source_file ballad-of-jed-clampett-the.txt}
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/misc-television/beverly-hillbillies-the-ballad-of-jed-clampett-chords-7216}

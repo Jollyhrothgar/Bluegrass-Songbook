@@ -1,7 +1,7 @@
-{meta: title Cumberland Gap D}
+{meta: title Cumberland Gap G}
 {meta: artist David Rawlings}
 {meta: x_source web-chords}
-{meta: x_source_file cumberland-gap-d-version-two-parts.txt}
+{meta: x_source_file cumberland-gap-g-version.txt}
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/david-rawlings/cumberland-gap-chords-2383349}
 
 {start_of_verse: Intro}

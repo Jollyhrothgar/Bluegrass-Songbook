@@ -1,4 +1,4 @@
-{meta: title Little Mountain Church, The}
+{meta: title The Little Mountain Church}
 {meta: artist Nitty Gritty Dirt Band}
 {meta: x_source web-chords}
 {meta: x_source_file little-mountain-church-the.txt}

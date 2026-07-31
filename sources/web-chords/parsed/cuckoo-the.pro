@@ -1,4 +1,4 @@
-{meta: title Cuckoo, The}
+{meta: title The Cuckoo}
 {meta: artist Rory Gallagher}
 {meta: x_source web-chords}
 {meta: x_source_file cuckoo-the.txt}

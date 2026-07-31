@@ -5,7 +5,6 @@
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/uncle-earl/booth-shot-lincoln-chords-5314860}
 
 {start_of_verse: Verse 1}
-Worked out on request for Pekavanaugh. Do you mind your avatar is here?
 ATTENTION: I did find lyrics but could only find instrumental versions.
 {end_of_verse}
 

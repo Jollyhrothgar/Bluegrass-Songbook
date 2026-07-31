@@ -1,7 +1,7 @@
-{meta: title Black Eyed Susie bluegrass}
+{meta: title Black Eyed Susie old-time}
 {meta: artist Old Crow Medicine Show}
 {meta: x_source web-chords}
-{meta: x_source_file black-eyed-susie-bluegrass-version.txt}
+{meta: x_source_file black-eyed-susie-old-time-version.txt}
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/black-eyed-susie-chords-3904601}
 
 {start_of_verse: Intro}

@@ -1,4 +1,4 @@
-{meta: title Green Rolling Hills of West Virginia}
+{meta: title The Green Rolling Hills of West Virginia}
 {meta: artist Utah Phillips}
 {meta: x_source web-chords}
 {meta: x_source_file green-rolling-hills-of-west-virginia-the.txt}

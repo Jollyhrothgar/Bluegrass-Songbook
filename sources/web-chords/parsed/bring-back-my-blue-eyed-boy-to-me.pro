@@ -1,4 +1,4 @@
-{meta: title Bring Back My Blue Eyed Boy to}
+{meta: title Bring Back My Blue Eyed Boy to Me}
 {meta: artist The Carter Family}
 {meta: x_source web-chords}
 {meta: x_source_file bring-back-my-blue-eyed-boy-to-me.txt}

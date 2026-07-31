@@ -1,4 +1,4 @@
-{meta: title Boy Who Wouldn't Hoe Corn}
+{meta: title The Boy Who Wouldn't Hoe Corn}
 {meta: artist Dan Tyminski}
 {meta: x_source web-chords}
 {meta: x_source_file boy-who-wouldn-t-hoe-corn-the.txt}

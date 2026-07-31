@@ -1,4 +1,4 @@
-{meta: title Dance With Me}
+{meta: title Dance With Me Kenny}
 {meta: artist Orleans}
 {meta: x_source web-chords}
 {meta: x_source_file dance-with-me-kenny.txt}

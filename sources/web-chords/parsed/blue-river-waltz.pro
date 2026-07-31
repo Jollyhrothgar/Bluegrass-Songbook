@@ -10,9 +10,6 @@ The Blue River Waltz - Jay Ungar
 
 {start_of_verse: Verse 2}
 Intro/Verse (Violin):
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Am] [C] [Am] [D7] [G]
 {end_of_verse}
 
@@ -26,9 +23,6 @@ Intro/Verse (Violin):
 
 {start_of_verse: Verse 3}
 Verse (Mandolin):
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Am] [C] [Am] [D7] [G]
 {end_of_verse}
 
@@ -42,9 +36,6 @@ Verse (Mandolin):
 
 {start_of_verse: Verse 4}
 Verse (Violin & Mandolin):
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Am] [C] [Am] [D7] [G]
 {end_of_verse}
 

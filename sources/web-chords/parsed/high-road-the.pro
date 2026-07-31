@@ -1,4 +1,4 @@
-{meta: title High Road}
+{meta: title The High Road}
 {meta: artist Zach Bryan}
 {meta: x_source web-chords}
 {meta: x_source_file high-road-the.txt}

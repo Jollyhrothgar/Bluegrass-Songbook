@@ -6,14 +6,6 @@
 {meta: x_capo 1 fret}
 
 {start_of_verse: Verse 9}
-Parody of “Fireball” by Katy Perry.
-{end_of_verse}
-
-{start_of_verse: Verse 10}
-Released: 28 Sept 2024
-{end_of_verse}
-
-{start_of_verse: Verse 11}
 Note: Music starts 0:10
 {end_of_verse}
 

@@ -5,7 +5,6 @@
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/bob-wills/lily-dale-chords-2363187}
 
 {start_of_verse: Verse 1}
-This is an old song from 1852, written by, H.S. Thompson.  Billy Jack
 Wills, Bob's brother, re-wrote it somewhat and put a tune to it that
 would fit the Bob Wills style.  It modulates from D to A and back, kinda
 like, "San Antonia Rose.

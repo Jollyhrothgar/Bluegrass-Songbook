@@ -1,4 +1,4 @@
-{meta: title Happy Birthday}
+{meta: title Happy Birthday fast/bluegrass}
 {meta: x_source web-chords}
 {meta: x_source_file happy-birthday-fast-bluegrass-version.txt}
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/misc-traditional/happy-birthday-chords-2435107}

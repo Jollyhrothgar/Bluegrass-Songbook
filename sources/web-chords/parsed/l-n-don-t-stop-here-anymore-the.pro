@@ -1,4 +1,4 @@
-{meta: title L&N Don't Stop Here Anymore}
+{meta: title The L&N Don't Stop Here Anymore}
 {meta: artist Michelle Shocked}
 {meta: x_source web-chords}
 {meta: x_source_file l-n-don-t-stop-here-anymore-the.txt}

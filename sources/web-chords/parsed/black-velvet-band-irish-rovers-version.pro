@@ -4,11 +4,6 @@
 {meta: x_source_file black-velvet-band-irish-rovers-version.txt}
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/the-irish-rovers/black-velvet-band-chords-1008871}
 
-{start_of_verse: Verse 5}
-Black Velvet Band:The Irish Rovers.
-Album - The Irish Rovers In Australia - 1976.
-{end_of_verse}
-
 {start_of_chorus}
 [A]Her eyes they shone like the diamonds.
 You'd think she was Queen of the [E]Land.
@@ -95,6 +90,6 @@ And her [A]hair hung over her [F#m]shoulder,
 tied [D]up with a [E]Black Velvet [A]Band.
 {end_of_chorus}
 
-{start_of_verse: Verse 6}
+{start_of_verse: Verse 5}
 A seventies smash from Kraziekhat.
 {end_of_verse}

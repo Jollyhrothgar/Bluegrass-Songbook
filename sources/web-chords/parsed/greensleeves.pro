@@ -3,10 +3,6 @@
 {meta: x_source_file greensleeves.txt}
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/misc-traditional/greensleeves-chords-173713}
 
-{start_of_verse: Verse 5}
-See http://accordeonworld.weebly.com/greensleeves.html for more verses and history.
-{end_of_verse}
-
 {start_of_verse: Verse 1}
 [Am]Alas my [C]love, you [G]do me [Em]wrong,
 to [Am]cast me off [E]discourteously.

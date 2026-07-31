@@ -1,4 +1,4 @@
-{meta: title Down in the Valley}
+{meta: title Down in the Valley folk}
 {meta: artist Burl Ives}
 {meta: x_source web-chords}
 {meta: x_source_file down-in-the-valley-folk-version.txt}

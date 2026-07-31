@@ -4,10 +4,6 @@
 {meta: x_source_file born-to-be-with-you.txt}
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/the-chordettes/born-to-be-with-you-chords-847806}
 
-{start_of_verse: Verse 6}
-Born To Be With You:The Chordettes.
-{end_of_verse}
-
 {start_of_verse: Intro}
 [C]Born to [F]be [G]wi...th [G7][C]yo....u.
 {end_of_verse}
@@ -45,6 +41,6 @@ Cause I was [C]born..to [G]be with [C]you.
 [C7]All..life [F]through...yes, I was [C]born to [G]be with [C]you.
 {end_of_verse}
 
-{start_of_verse: Verse 7}
+{start_of_verse: Verse 6}
 A fifties smash from Kraziekhat.
 {end_of_verse}

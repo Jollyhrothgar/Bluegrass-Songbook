@@ -24,21 +24,9 @@ In your [Am]heart you love another
 
 {start_of_verse: Instrumental}
 [Am] [E7] [Am]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Am] [E7] [Am]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Dm] [Am]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Dm] [E7]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Am] [E7] [Am]
 {end_of_verse}
 
@@ -58,21 +46,9 @@ In your [Am]heart you love another
 
 {start_of_verse: Instrumental}
 [Am] [E7] [Am]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Am] [E7] [Am]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Dm] [Am]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Dm] [E7]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Am] [E7] [Am]
 {end_of_verse}
 

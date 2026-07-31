@@ -1,4 +1,4 @@
-{meta: title Blackest Crow}
+{meta: title The Blackest Crow}
 {meta: artist Red Tail Ring}
 {meta: x_source web-chords}
 {meta: x_source_file blackest-crow-the.txt}
@@ -6,10 +6,6 @@
 {meta: x_capo II}
 
 {start_of_verse: Verse 1}
-Just a Simple and beautiful song that I would love to preserve online for others to enjoy and play.
-{end_of_verse}
-
-{start_of_verse: Verse 2}
 as [A]time draws near my [D][G]dearest [D]dear
 when you and i must [Bm]part
 [A]how little you know of the [D]grief [G]and [D]woe
@@ -24,7 +20,7 @@ or I was going with [Bm]you
 [A] [D] [Bm]
 {end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
 [A]I wish my breast were [D]made [G]of [D]glass
 wherein you might [Bm]behold
 [A]upon my heart your [D]name [G]lies [D]wrote
@@ -51,7 +47,7 @@ until my dying [Bm]day
 [A] [D] [Bm]
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
 [A]the blackest crow that [D]ever [G][D]flew
 would surely turn to [Bm]white
 [A]if ever i prove [D]false [G]to [D]you

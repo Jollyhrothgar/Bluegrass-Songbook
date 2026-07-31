@@ -74,7 +74,9 @@ REPORT_PATH = REPO_ROOT / 'sources' / 'web-chords' / 'parse_report.json'
 MIN_CHORD_VALIDITY = 0.60
 MIN_GATE_TOKENS = 8
 MIN_LYRIC_LINES = 4
-MIN_TITLE_TOKEN_MATCH = 0.65
+# Two of three tokens matching (0.67) is not enough: "Box Elder Beetles" vs the
+# page "Box Elder" scores exactly that, and the page is Pavement's song.
+MIN_TITLE_TOKEN_MATCH = 0.70
 PREAMBLE_SCAN_LINES = 12
 
 
@@ -179,7 +181,7 @@ def is_tab_line(line: str) -> bool:
 _FURNITURE_RE = re.compile(
     # `l` is a mistyped bar line — common enough in hand-typed grids
     # ("Dm  F  l  C   l C  G") that it's worth treating as furniture.
-    r'^(?:\|+|l+|/+|:+|\*+|-+|\.+|%|[xX]\d+|\d+[xX]|\(\)|N\.?C\.?)$')
+    r'^(?:\|+|l+|/+|:+|\*+|[-–—]+|\.+|%|[xX]\d+|\d+[xX]|\(\)|N\.?C\.?)$')
 
 
 def tokens_of(line: str) -> list[str]:
@@ -515,12 +517,55 @@ def _slug_tokens(slug: str) -> list[str]:
     return toks
 
 
+def _slug_words(slug: str) -> list[str]:
+    """Every word of the slug, stopwords included.
+
+    Needed for positional checks: dropping stopwords turns the page title
+    "In a Big Country" into "big country", which then looks like a prefix of
+    the catalogue's "Big Country Jimmy Martin".
+    """
+    text = strip_accents(slug.replace('-', ' ')).lower()
+    return [w for w in re.sub(r'[^a-z0-9 ]', ' ', text).split() if w]
+
+
 def _token_matches(a: str, b: str) -> bool:
     if a == b:
         return True
     if len(a) >= 4 and len(b) >= 4:
         return difflib.SequenceMatcher(None, a, b).ratio() >= 0.85
     return False
+
+
+# Words that mean the rest of the title continues, rather than an attribution
+# beginning. A page that truncated "…Boy to Me" to "…Boy" must not shorten our
+# title too.
+_TITLE_TAIL_KEEP = {
+    'to', 'of', 'in', 'on', 'and', 'or', 'for', 'my', 'your', 'our', 'the',
+    'a', 'an', 'at', 'with', 'from', 'by', 'no', 'not', 'is', 'it', 'its',
+    'that', 'this', 'be', 'me', 'you', 'so', 'but', 'as', 'was', 'were',
+    'am', 'aint', 'when', 'where', 'while', 'if', 'all', 'up', 'down',
+}
+
+_TRAILING_ARTICLE_RE = re.compile(r'^(.+?),\s*(the|a|an)$', re.I)
+
+
+def _move_trailing_article(title: str) -> str:
+    """``Cuckoo, The`` -> ``The Cuckoo``.
+
+    The catalogue files titles for sorting; works/ overwhelmingly stores the
+    natural form, and the comma form otherwise never matches an existing work.
+    """
+    m = _TRAILING_ARTICLE_RE.match(title.strip())
+    if not m:
+        return title
+    return f'{m.group(2).capitalize()} {m.group(1).strip()}'
+
+
+def _starts_with(haystack: list[str], needle: list[str]) -> bool:
+    """Does ``haystack`` begin with ``needle`` (fuzzy per token)?"""
+    if not needle or len(needle) > len(haystack):
+        return False
+    return all(_token_matches(n, h) for n, h in zip(needle, haystack))
 
 
 def _contiguous_in(needle: list[str], haystack: list[str]) -> bool:
@@ -534,6 +579,60 @@ def _contiguous_in(needle: list[str], haystack: list[str]) -> bool:
     return False
 
 
+def _attribution_split(title: str, slug_tokens: list[str]) -> Optional[int]:
+    """Word index where an attribution the catalogue appended begins.
+
+    ``None`` when the catalogue title isn't the page's title plus a trailing
+    attribution. Requirements:
+
+    * the page's whole title is the head of the catalogue's, at least two
+      significant tokens long — a one-word page title is far too weak
+      ("Brushy Run" vs the page "Run");
+    * the split doesn't fall mid-phrase. A head ending on a function word
+      ("Going Down to" | "Cairo") or a tail opening with one ("Charlie Brooks"
+      | "and Nellie Adair") means the page truncated the title, not that the
+      catalogue appended a name;
+    * the tail is at least two words, because a one-word tail is as likely to
+      be part of the title ("Box Elder" | "Beetles" — really Pavement's song,
+      not the SM tune).
+    """
+    want = _significant_tokens(title)
+    n = len(slug_tokens)
+    if n < 2 or len(want) <= n:
+        return None
+    if not all(_token_matches(w, s) for w, s in zip(want[:n], slug_tokens)):
+        return None
+
+    words = title.split()
+    for k in range(2, len(words)):
+        if _significant_tokens(' '.join(words[:k])) != want[:n]:
+            continue
+        tail = words[k:]
+        if len(tail) < 2:
+            continue
+        if words[k - 1].lower().strip('.,') in _TITLE_TAIL_KEEP:
+            continue
+        if tail[0].lower().strip('.,') in _TITLE_TAIL_KEEP:
+            continue
+        return k
+    return None
+
+
+def _looks_like_appended_attribution(title: str, slug_tokens: list[str],
+                                     title_slug: str) -> bool:
+    """As :func:`_attribution_split`, plus: does the page title start where the
+    requested one does?
+
+    Head alignment against the *unabridged* slug words is what stops "Big
+    Country Jimmy Martin" claiming the page "In a Big Country" — there the
+    requested title begins three words into the page's.
+    """
+    if _attribution_split(title, slug_tokens) is None:
+        return False
+    want = _significant_tokens(title)
+    return any(_token_matches(want[0], w) for w in _slug_words(title_slug)[:2])
+
+
 @dataclass
 class TitleVerdict:
     title: str
@@ -542,6 +641,7 @@ class TitleVerdict:
     checkable: bool         # did the URL carry a title slug at all?
     matched: float = 0.0
     detail: str = ''
+    attribution_disagreement: Optional[str] = None
 
 
 def derive_title_artist(header_title: str, url: str) -> TitleVerdict:
@@ -578,33 +678,24 @@ def derive_title_artist(header_title: str, url: str) -> TitleVerdict:
                 title = ' '.join(ttoks_raw[:k]).strip(' -,')
                 break
 
-    # Otherwise, if some prefix of the catalogue title *is* the page's own
-    # title, the rest is an attribution the catalogue tacked on:
-    # "Amber Tresses Tied in Blue Flatt & Scruggs" -> "Amber Tresses Tied in
-    # Blue" (the page is the-carter-family/amber-tresses-tied-in-blue).
-    slug_tokens = _slug_tokens(title_slug)
-    if slug_tokens:
-        ttoks_raw = title.split()
-        for k in range(len(ttoks_raw) - 1, 1, -1):
-            head = _significant_tokens(' '.join(ttoks_raw[:k]))
-            if len(head) == len(slug_tokens) and all(
-                    _token_matches(h, s) for h, s in zip(head, slug_tokens)):
-                title = ' '.join(ttoks_raw[:k]).strip(' -,')
-                break
-
     if not title:
         title = raw
 
     # Cross-check against the page's own title slug.
+    slug_tokens = _slug_tokens(title_slug)
     if not slug_tokens:
-        return TitleVerdict(title=title, artist=url_artist, verified=True,
+        return TitleVerdict(title=_move_trailing_article(title),
+                            artist=url_artist, verified=True,
                             checkable=False, detail='no url title slug')
 
     best = 0.0
     ok = False
-    # Check the cleaned title and the catalogue's raw title; either
-    # corroborating is enough, so an over-eager modifier strip can't reject a
-    # good file.
+    # Check the artist-suffix-stripped title, the modifier-stripped title and
+    # the catalogue's raw title; any one corroborating is enough, so an
+    # over-eager strip can't reject a good file. Note what is *not* in here:
+    # a title shortened to match the slug (below). Verifying that against the
+    # slug it was derived from is circular, and let "Big Country Jimmy Martin"
+    # pass as Big Country's "In a Big Country".
     for candidate in dict.fromkeys([title, stripped, raw]):
         want = _significant_tokens(candidate)
         if not want:
@@ -632,9 +723,21 @@ def derive_title_artist(header_title: str, url: str) -> TitleVerdict:
             # page's "Across the Sea"). Requiring most of the catalogue title
             # to be accounted for keeps "Blue Moon of Kentucky waltz version"
             # from matching the page's (different) "Kentucky Waltz".
+            # The page's whole title sits inside the catalogue's, with the
+            # extra words in *front* ("Going Across the Sea" for the page's
+            # "Across the Sea"). Extra words at the end are the attribution
+            # case below, which needs stricter evidence: "Box Elder Beetles"
+            # vs the page "Box Elder" has the same containment but is
+            # Pavement's song, not the SM tune.
             or (_contiguous_in(slug_tokens, want)
+                and not _starts_with(want, slug_tokens)
                 and len(slug_tokens) >= 2
                 and len(slug_tokens) / len(want) >= 0.6)
+            # The catalogue title *starts* with the page's whole title, so the
+            # remainder is the attribution the catalogue appended ("Fox on the
+            # Run Bill Emerson" for the page's "Fox on the Run").
+            or _looks_like_appended_attribution(candidate, slug_tokens,
+                                                title_slug)
         )
 
         if passed and len(want) < 2:
@@ -646,10 +749,33 @@ def derive_title_artist(header_title: str, url: str) -> TitleVerdict:
             passed = not extra or concat >= 0.90
         ok = ok or passed
 
+    if ok:
+        # Verification passed, so the page's own title is trustworthy: if it is
+        # a prefix of the catalogue's, the remainder was an attribution.
+        # "Amber Tresses Tied in Blue Flatt & Scruggs" -> "Amber Tresses Tied
+        # in Blue" (the page is .../amber-tresses-tied-in-blue).
+        split = _attribution_split(title, slug_tokens)
+        if split is not None:
+            title = ' '.join(title.split()[:split]).strip(' -,')
+
+    # The catalogue attributed the song to one artist and the page belongs to
+    # another. Usually that's just a cover (Larry Sparks doing a Carter Family
+    # song), but it's also the shape of a same-title collision — the page
+    # "Black Diamond" by Kiss standing in for Don Stover's banjo tune. Not
+    # grounds for rejection; flagged so the pair can be eyeballed.
+    disagreement = None
+    if url_artist and stripped != title:
+        suffix = stripped[len(title):].strip(' -,')
+        if suffix and all(_token_matches(t, a) is False
+                          for t in _significant_tokens(suffix)
+                          for a in _significant_tokens(url_artist)):
+            disagreement = f'catalogue says {suffix!r}, page is {url_artist!r}'
+
     return TitleVerdict(
-        title=title, artist=url_artist, verified=ok, checkable=True,
-        matched=round(best, 2),
+        title=_move_trailing_article(title), artist=url_artist, verified=ok,
+        checkable=True, matched=round(best, 2),
         detail=f"asked {_significant_tokens(title)!r} got {slug_tokens!r}",
+        attribution_disagreement=disagreement,
     )
 
 
@@ -695,7 +821,14 @@ _PREAMBLE_RES = (
     re.compile(r'^\s*\(?\d{4}\)?\s*$'),                          # year
     re.compile(r'^\s*by\s+\S{1,30}\s*$', re.I),                  # "By Ohrblind"
     re.compile(r'^\s*\(.{0,60}\)\s*$'),                          # "(No Capo)"
+    # "FORTY MILES FROM POPLAR BLUFF   Writers, Frank Dycus and Larry Kingston"
+    re.compile(r'^.*\b(?:writers?|composers?|words\s+and\s+music|'
+               r'music\s+and\s+(?:words|lyrics))\b.*$', re.I),
 )
+
+# Prose sentence in the preamble ("Here's one that Porter and Dolly got a lot
+# of "Miles" out of."). Only ever applied before the first chord line.
+_PREAMBLE_SENTENCE_RE = re.compile(r'[A-Za-z]{2,}\.(?:\s|$)')
 
 # A bare name line in the preamble ("Stuart Duncan & Dolly Parton", "SONNY
 # BURGESS") — title-cased or shouted, short, unpunctuated.
@@ -829,6 +962,9 @@ def _strip_preamble(lines: list[str], title: str, artist: str) -> list[str]:
             continue
         if len(ln) <= 50 and _PREAMBLE_NAME_RE.match(ln) and names_dropped < 3:
             names_dropped += 1
+            drop_to = i + 1
+            continue
+        if len(ln.split()) >= 3 and _PREAMBLE_SENTENCE_RE.search(ln):
             drop_to = i + 1
             continue
         break
@@ -1010,6 +1146,35 @@ def _expand_markers(lines: list[str]) -> tuple[list[str], dict[int, SectionMarke
     return expanded, markers
 
 
+def _stanza_sizes(expanded: list[str]) -> list[int]:
+    """Content-line counts of each blank-separated group (markers excluded)."""
+    sizes: list[int] = []
+    run = 0
+    for ln in expanded:
+        if ln == MARKER:
+            continue
+        if ln.strip():
+            run += 1
+        elif run:
+            sizes.append(run)
+            run = 0
+    if run:
+        sizes.append(run)
+    return sizes
+
+
+def _is_double_spaced(expanded: list[str]) -> bool:
+    """Does this page put a blank line between *every* lyric line?
+
+    cowboylyrics pages often do. Treating those blanks as stanza breaks turns
+    a four-line verse into four one-line "verses", so in that case only a
+    double blank separates stanzas.
+    """
+    sizes = _stanza_sizes(expanded)
+    singles = sum(1 for s in sizes if s == 1)
+    return len(sizes) >= 6 and singles / len(sizes) >= 0.6
+
+
 def _is_marker_driven(expanded: list[str], markers: dict) -> bool:
     """Does this file label every stanza, or only mention a section in passing?
 
@@ -1056,7 +1221,9 @@ def _build_sections(lines: list[str]) -> tuple[list[Section], dict]:
             start('verse', f'Verse {verse_no}', auto=True)
 
     expanded, markers = _expand_markers(lines)
-    marker_driven = _is_marker_driven(expanded, markers)
+    # Whether a single blank line ends a section is a per-file decision.
+    break_on_single_blank = not (_is_marker_driven(expanded, markers)
+                                 or _is_double_spaced(expanded))
 
     i = 0
     n = len(expanded)
@@ -1091,9 +1258,7 @@ def _build_sections(lines: list[str]) -> tuple[list[Section], dict]:
             run = 0
             while i + run < n and not expanded[i + run].strip():
                 run += 1
-            # A stanza break ends the section: always in an unmarked file, and
-            # on a double blank in a marker-driven one.
-            if not marker_driven or run >= 2:
+            if break_on_single_blank or run >= 2:
                 current = None
             i += run
             continue
@@ -1171,7 +1336,10 @@ def _normalize_inline(line: str) -> str:
     out = INLINE_CHORD_RE.sub(repl, line)
     # Grid lines like "|(A) |(A) |(D)" become "[A] [A] [D]"
     out = re.sub(r'\|\s*', ' ', out) if out.count('|') >= 3 else out
-    return re.sub(r'\s+', ' ', out).strip()
+    out = re.sub(r'\s+', ' ', out).strip()
+    # "(G) I NEVER HAD" means the chord lands on "I", not on the space before
+    # it. Chord-only runs ("[A] [A] [D]") keep their spacing.
+    return re.sub(r'(\[[^\]]+\]) (?=\w)', r'\1', out)
 
 
 def chord_validity(lines: list[str]) -> tuple[float, int, int]:
@@ -1225,6 +1393,7 @@ def parse_text(text: str, source_file: str) -> ParseResult:
         'lyric_lines': res.lyric_line_count,
         'title_match': verdict.matched,
         'title_checkable': verdict.checkable,
+        'attribution_disagreement': verdict.attribution_disagreement,
         **line_stats,
     }
 
@@ -1362,14 +1531,18 @@ def batch(raw_dir: Path = RAW_DIR, out_dir: Path = PARSED_DIR,
     for r in rejected:
         by_reason[r['reason']] = by_reason.get(r['reason'], 0) + 1
 
+    review = [e for e in emitted if e['stats'].get('attribution_disagreement')]
+
     report = {
         'total': len(files),
         'emitted': len(emitted),
         'rejected': len(rejected),
+        'review_recommended': len(review),
         'rejected_by_reason': dict(sorted(by_reason.items(),
                                           key=lambda kv: -kv[1])),
         'emitted_files': emitted,
         'rejects': rejected,
+        'review': review,
     }
     if not dry_run:
         report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False))
@@ -1403,6 +1576,12 @@ def main(argv=None) -> int:
     print(f"rejected {report['rejected']}")
     for reason, count in report['rejected_by_reason'].items():
         print(f"    {reason:26} {count}")
+    if report['review_recommended']:
+        print(f"\nattribution disagreements (emitted, worth an eyeball): "
+              f"{report['review_recommended']}")
+        for e in report['review']:
+            print(f"    {e['file'][:44]:46} "
+                  f"{e['stats']['attribution_disagreement']}")
     if not args.dry_run:
         print(f"\nreport -> {args.report}")
     return 0

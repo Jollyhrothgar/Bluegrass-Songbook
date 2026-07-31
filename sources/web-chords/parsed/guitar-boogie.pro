@@ -10,77 +10,38 @@ Guitar Boogie - Arthur Smith
 
 {start_of_verse: Verse 1}
 [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [A] [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [B7] [E]
 {end_of_verse}
 
 {start_of_verse: Verse 2}
 [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [A] [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [B7] [E]
 {end_of_verse}
 
 {start_of_verse: Verse 3}
 [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [A] [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [B7] [E]
 {end_of_verse}
 
 {start_of_verse: Verse 4}
 [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [A] [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [B7] [E]
 {end_of_verse}
 
 {start_of_verse: Verse 5}
 [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [A] [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [B7] [E]
 {end_of_verse}
 
 {start_of_verse: Outro}
 [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [A] [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [B7] [E]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [E]
 {end_of_verse}
 

@@ -1,4 +1,4 @@
-{meta: title Memory of Your Smile}
+{meta: title The Memory of Your Smile}
 {meta: artist The Stanley Brothers}
 {key: G}
 {meta: x_source web-chords}

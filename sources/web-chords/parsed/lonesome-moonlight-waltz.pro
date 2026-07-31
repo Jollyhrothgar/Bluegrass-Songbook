@@ -5,33 +5,12 @@
 
 {start_of_verse: Breakdown}
 [Dm] [F] [Dm]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Dm] [G] [A]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Dm] [F] [Dm]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Dm] [C] [F]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Bb] [F]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [G] [C] [A]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Dm] [F] [Dm]
-{end_of_verse}
-
-{start_of_verse: Instrumental}
 [Dm] [C] [F]
 {end_of_verse}
 

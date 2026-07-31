@@ -1,4 +1,4 @@
-{meta: title Beautiful Life}
+{meta: title A Beautiful Life}
 {meta: artist Misc Praise Songs}
 {meta: x_source web-chords}
 {meta: x_source_file beautiful-life-a.txt}

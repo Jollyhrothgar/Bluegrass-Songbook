@@ -135,6 +135,10 @@ class TestChordPlacement:
     def test_chord_only_line_renders_as_brackets(self):
         assert wc.render_chord_only('D7 G   D7 G') == '[D7] [G] [D7] [G]'
 
+    def test_en_dash_separated_chord_run_is_a_chord_line(self):
+        assert wc.is_chord_line('E – A – C#m – F#m')
+        assert wc.render_chord_only('E – A – C#m – F#m') == '[E] [A] [C#m] [F#m]'
+
 
 # ---------------------------------------------------------------------------
 # Section markers
@@ -372,6 +376,73 @@ class TestInlineChordFormat:
     def test_chorus_detected(self):
         assert self.res.sections[-1].kind == 'chorus'
 
+    def test_space_after_an_inline_chord_is_closed_up(self):
+        res = wc.parse_text(raw(DOUBLE_SPACED_BODY, title='Forty Miles',
+                                url='https://www.cowboylyrics.com/tabs/x/'
+                                    'forty-miles-968.html'), 'forty.txt')
+        assert res.ok, res.reject_reason
+        assert res.sections[0].lines[0].startswith('[G]I NEVER HAD')
+
+    def test_chord_only_run_keeps_its_spacing(self):
+        assert wc._normalize_inline('|(A) |(A) |(D) |(D) |') == '[A] [A] [D] [D]'
+
+
+# A page that puts a blank line between every lyric line (cowboylyrics does
+# this) must not turn each line into its own one-line verse.
+DOUBLE_SPACED_BODY = """(G) I NEVER HAD A PAIR OF SHOES, THAT WERN'T OLD HAND ME (C) DOWNS,
+
+AND DADDY'S MORNIN' (G) COFFEE, CAME FROM OLD LEFT OVER (D7)GROUNDS,
+
+MY (G) MAMA WORE NO JEWELRY, OR ANY STORE BOUGHT (C) STUFF,
+
+'CAUSE HOME WAS JUST A (D7) HILLSIDE, FORTY MILES FROM POPLAR (G) BLUFF.
+
+
+* * *  CHORUS  * * *
+
+FORTY (D7) MILES BACK IN MISSOURI,
+
+THERE'S A (C) DIFFERENT WAY OF (G) LIFE,
+
+WHERE A (D7) MAN THINKS OF HIS NEIGHBOR,
+
+AND (C) NOT HIS NEIGHBOR'S (D7) WIFE,
+"""
+
+
+class TestDoubleSpacedLyrics:
+    def setup_method(self):
+        self.res = wc.parse_text(
+            raw(DOUBLE_SPACED_BODY, title='Forty Miles',
+                url='https://www.cowboylyrics.com/tabs/x/forty-miles-968.html'),
+            'forty.txt')
+
+    def test_accepted(self):
+        assert self.res.ok, self.res.reject_reason
+
+    def test_single_blanks_do_not_split_every_line_into_a_verse(self):
+        labels = [(s.kind, s.label) for s in self.res.sections]
+        assert labels == [('verse', 'Verse 1'), ('chorus', None)]
+        assert len(self.res.sections[0].lines) == 4
+        assert len(self.res.sections[1].lines) == 4
+
+
+class TestPreambleProse:
+    def test_leading_prose_and_credits_dropped(self):
+        body = ("Here's one that Porter and Dolly got a lot of \"Miles\" out "
+                'of. This is the\nwork of Tim Ausburn.\n\n'
+                'FORTY MILES FROM POPLAR BLUFF   Writers, Frank Dycus\n\n'
+                'Key of G\n\n' + DOUBLE_SPACED_BODY)
+        res = wc.parse_text(
+            raw(body, title='Forty Miles',
+                url='https://www.cowboylyrics.com/tabs/x/forty-miles-968.html'),
+            'forty.txt')
+        text = wc.to_chordpro(res)
+        assert 'Tim Ausburn' not in text
+        assert 'Writers' not in text
+        assert '{key: G}' in text
+        assert res.sections[0].lines[0].startswith('[G]I NEVER HAD')
+
 
 AZCHORDS_BODY = """Candy Girl:Four Seasons.
 
@@ -527,11 +598,68 @@ class TestTitleArtist:
         ("I Don't Love Nobody", 'love-dont-love-nobody'),
         ('Blue Moon of Kentucky waltz version', 'kentucky-waltz'),
         ('Maytime Swing', 'swing-swing'),
+        # Same-title-plus-a-word: the page is a different song, not the
+        # catalogue's song with an attribution appended.
+        ('Box Elder Beetles', 'box-elder'),          # Pavement's "Box Elder"
+        ('Crazy Finger Blues', 'crazy-fingers'),     # Grateful Dead
+        ('Make a Little Boat', 'make-a-little'),     # Midland
+        ('Going Down to Cairo', 'going-down'),       # Freddie King
+        ('Black Velvet Waltz', 'black-velvet'),      # Alannah Myles
+        ('Hound Dog Blues', 'hound-dog'),            # Elvis
     ])
     def test_wrong_song_rejected(self, title, slug):
         v = wc.derive_title_artist(
             title, f'https://tabs.ultimate-guitar.com/tab/x/{slug}-chords-1')
         assert not v.verified, f'{title} vs {slug} should not verify'
+
+    def test_split_never_lands_on_a_dangling_function_word(self):
+        """"Charlie Brooks" + "and Nellie Adair" is one title, not two."""
+        v = wc.derive_title_artist(
+            'Charlie Brooks and Nellie Adair',
+            'https://tabs.ultimate-guitar.com/tab/the-carter-family/'
+            'charlie-brooks-chords-4051819')
+        assert v.title == 'Charlie Brooks and Nellie Adair'
+
+    def test_page_truncated_title_does_not_shorten_ours(self):
+        v = wc.derive_title_artist(
+            'Bring Back My Blue Eyed Boy to Me',
+            'https://www.e-chords.com/chords/the-carter-family/'
+            'bring-back-my-blue-eyed-boy')
+        assert v.verified
+        assert v.title == 'Bring Back My Blue Eyed Boy to Me'
+
+    def test_shortening_a_title_to_match_the_slug_is_not_evidence(self):
+        """The prefix strip must not manufacture its own corroboration.
+
+        "Big Country Jimmy Martin" shortened to "Big Country" matches the page
+        slug "in-a-big-country" perfectly — but the page is the Scottish band
+        Big Country, not Jimmy Martin's bluegrass tune.
+        """
+        v = wc.derive_title_artist(
+            'Big Country Jimmy Martin',
+            'https://tabs.ultimate-guitar.com/tab/big-country/'
+            'in-a-big-country-chords-1711409')
+        assert not v.verified
+
+    @pytest.mark.parametrize('title,slug', [
+        ('Fox on the Run Bill Emerson', 'fox-on-the-run'),
+        ('Black Diamond Don Stover', 'black-diamond'),
+        ('Big Sciota C to Em version', 'big-sciota'),
+        ('Happy Birthday fast bluegrass version', 'happy-birthday'),
+        ('Little Sadie Tony Rice&#39;s version', 'little-sadie'),
+    ])
+    def test_catalogue_appended_attribution_accepted(self, title, slug):
+        """The page title being a prefix of the catalogue's is real evidence."""
+        v = wc.derive_title_artist(
+            title, f'https://tabs.ultimate-guitar.com/tab/x/{slug}-chords-1')
+        assert v.verified, v.detail
+
+    def test_trailing_article_moved_to_the_front(self):
+        v = wc.derive_title_artist(
+            'Cuckoo, The',
+            'https://tabs.ultimate-guitar.com/tab/x/the-cuckoo-chords-1')
+        assert v.title == 'The Cuckoo'
+        assert v.verified
 
     def test_url_without_a_title_slug_is_unverifiable_not_rejected(self):
         v = wc.derive_title_artist(

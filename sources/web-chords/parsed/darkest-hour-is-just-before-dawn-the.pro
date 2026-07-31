@@ -1,4 +1,4 @@
-{meta: title Darkest Hour is Just Before Dawn}
+{meta: title The Darkest Hour is Just Before Dawn}
 {meta: artist Emmylou Harris}
 {meta: x_source web-chords}
 {meta: x_source_file darkest-hour-is-just-before-dawn-the.txt}

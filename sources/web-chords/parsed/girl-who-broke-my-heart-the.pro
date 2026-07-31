@@ -1,4 +1,4 @@
-{meta: title Girl Who Broke My Heart, The}
+{meta: title The Girl Who Broke My Heart}
 {meta: x_source web-chords}
 {meta: x_source_file girl-who-broke-my-heart-the.txt}
 {meta: x_source_url https://tabs.ultimate-guitar.com/tab/892829}
