@@ -1,11 +1,13 @@
 id: another-saturday-night
 title: Another Saturday Night
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/another-saturday-night/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/another-saturday-night/
+    imported_at: '2026-02-08'
+composers:
+- Sam Cooke

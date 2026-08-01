@@ -11,3 +11,5 @@ parts:
     source_file: like-a-rolling-stone-double-time.txt
     source_url: https://tabs.ultimate-guitar.com/tab/bob-dylan/like-a-rolling-stone-chords-371756
     imported_at: '2026-07-31'
+composers:
+- Bob Dylan

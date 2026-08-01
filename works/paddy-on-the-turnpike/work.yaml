@@ -1,7 +1,8 @@
 id: paddy-on-the-turnpike
 title: Paddy on the Turnpike
 artist: null
-composers: []
+composers:
+- Traditional
 default_key: null
 tags:
 - Instrumental

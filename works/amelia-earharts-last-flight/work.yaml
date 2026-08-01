@@ -11,3 +11,5 @@ parts:
     source_file: amelia-earhart-s-last-flight.txt
     source_url: https://tabs.ultimate-guitar.com/tab/plainsong/amelia-earharts-last-flight-chords-3688346
     imported_at: '2026-07-31'
+composers:
+- David McEnery

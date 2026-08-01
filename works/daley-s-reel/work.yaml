@@ -1,7 +1,8 @@
 id: daley-s-reel
 title: Daley's Reel
 artist: null
-composers: []
+composers:
+- Traditional
 default_key: null
 tags:
 - Instrumental

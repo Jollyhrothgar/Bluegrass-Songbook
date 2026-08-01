@@ -1,7 +1,8 @@
 id: seneca-square-dance
 title: Seneca Square Dance
 artist: null
-composers: []
+composers:
+- Traditional
 default_key: null
 tags:
 - Instrumental

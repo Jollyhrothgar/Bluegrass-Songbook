@@ -11,3 +11,5 @@ parts:
     source_file: blackjack.txt
     source_url: https://tabs.ultimate-guitar.com/tab/ray-charles/blackjack-chords-4975201
     imported_at: '2026-07-31'
+composers:
+- Ray Charles

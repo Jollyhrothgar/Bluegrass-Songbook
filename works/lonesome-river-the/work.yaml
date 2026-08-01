@@ -1,11 +1,14 @@
 id: lonesome-river-the
 title: Lonesome River, The
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/lonesome-river-the/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/lonesome-river-the/
+    imported_at: '2026-02-08'
+composers:
+- Carter Stanley
+- Ralph Stanley

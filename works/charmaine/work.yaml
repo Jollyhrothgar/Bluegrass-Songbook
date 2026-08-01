@@ -11,3 +11,6 @@ parts:
     source_file: charmaine.txt
     source_url: https://tabs.ultimate-guitar.com/tab/the-bachelors/charmaine-chords-917454
     imported_at: '2026-07-31'
+composers:
+- Erno Rapee
+- Lew Pollack

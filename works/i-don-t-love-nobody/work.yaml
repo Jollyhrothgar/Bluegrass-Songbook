@@ -1,7 +1,8 @@
 id: i-don-t-love-nobody
 title: I Don't Love Nobody
 artist: null
-composers: []
+composers:
+- Traditional
 default_key: null
 tags:
 - Instrumental

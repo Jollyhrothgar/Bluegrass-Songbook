@@ -11,3 +11,5 @@ parts:
     source_file: alleycat.txt
     source_url: https://tabs.ultimate-guitar.com/tab/peggy-lee/the-alley-cat-song-chords-2004659
     imported_at: '2026-07-31'
+composers:
+- Frank Bjorn

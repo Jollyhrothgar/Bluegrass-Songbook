@@ -1,7 +1,8 @@
 id: harvest-home
 title: Harvest Home
 artist: null
-composers: []
+composers:
+- Traditional
 default_key: null
 tags:
 - Instrumental

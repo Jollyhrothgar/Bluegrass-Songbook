@@ -1,7 +1,8 @@
 id: dear-old-dixie
 title: Dear Old Dixie
 artist: null
-composers: []
+composers:
+- Earl Scruggs
 default_key: null
 tags:
 - Instrumental

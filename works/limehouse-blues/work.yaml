@@ -11,3 +11,6 @@ parts:
     source_file: limehouse-blues.txt
     source_url: https://tabs.ultimate-guitar.com/tab/django-reinhardt/limehouse-blues-chords-2172513
     imported_at: '2026-07-31'
+composers:
+- Philip Braham
+- Douglas Furber
