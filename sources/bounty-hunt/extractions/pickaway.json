@@ -1,0 +1,20 @@
+{
+ "wanted": {
+  "title": "Pickaway",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Seldom Scene",
+   "Mike Auldridge",
+   "Lester Flatt",
+   "Vic Jordan"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "status": "error: AttributeError(\"'str' object has no attribute 'get'\")",
+ "scraped_at": "2026-08-01T11:29:38"
+}

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Reflections",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Blue Denim",
+   "Andy Statman",
+   "The Charlie Daniels Band",
+   "Bettman & Halpin"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:05",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 108.6,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 586479,
+  "song_id": 47079,
+  "song_name": "Reflections",
+  "artist_id": 1662,
+  "artist_name": "The Charlie Daniels Band",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 15,
+  "difficulty": "",
+  "rating": 4.74467,
+  "date": "1191801601",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 83991
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/1658919/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/7/5/75247/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1191801601,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "REFLECTIONS \u00a8C THE CHARLIE DANIELS BAND\r\n\r\nINTRO: (Slow, 6/8 Time)\r\n(Guitar solo, piano arpeggios, +cymbals)\r\n\u00a9\u00a6[ch]Em[/ch]         \u00a9\u00a6[ch]B[/ch]\t      \u00a9\u00a6[ch]D[/ch]          \u00a9\u00a6[ch]A[/ch]\t      \u00a9\u00a6\r\n[tab]\u00a9\u00a6[ch]C[/ch]          \u00a9\u00a6[ch]G[/ch]          \u00a9\u00a6[ch]F#7[/ch]        \u00a9\u00a6[ch]B7[/ch]         \u00a9\u00a6\r\n(Tremolo guitar and piano, +drums +strings)[/tab]\r\n\u00a9\u00a6[ch]Em[/ch]         \u00a9\u00a6[ch]B[/ch]\t      \u00a9\u00a6[ch]D[/ch]          \u00a9\u00a6[ch]A[/ch]\t      \u00a9\u00a6\r\n\u00a9\u00a6[ch]C[/ch]          \u00a9\u00a6[ch]G[/ch]          \u00a9\u00a6[ch]F#7[/ch]        \u00a9\u00a6[ch]B7[/ch]         \u00a9\u00a6\r\n\r\nVERSE 1: \r\n(Piano block chords, +drums)\r\n[tab][ch]Em[/ch]                       [ch]B[/ch]\r\n  I remember you back in nineteen-fifty-six.[/tab]\r\n[tab][ch]D[/ch]                              [ch]A[/ch]\r\n  You had all the moves and you knew all the tricks.[/tab]\r\n[tab][ch]C[/ch]                             [ch]G[/ch]\r\n  You left all the ladies in a hell of a fix,[/tab]\r\n[tab][ch]F#7[/ch]                           [ch]B7[/ch]\r\n  When your voice took wings.[/tab]\r\n(Piano arpeggios, +drums)\r\n[tab][ch]Em[/ch]                          [ch]B[/ch]\r\nThen you'd shake around and oh, how'd you sing,[/tab]\r\n[tab][ch]D[/ch]                             [ch]A[/ch]\r\n  Just an old boy from Memphis with a big diamond ring.[/tab]\r\n[tab][ch]C[/ch]                              [ch]G[/ch]\r\n  A country girl's prayer and a city girl\u00a1\u00afs dream;[/tab]\r\n[tab][ch]F#7[/ch]             [ch]B7[/ch]\r\n  Hail the king.[/tab]\r\n\r\nCHORUS:\r\n(All)\r\n[tab]         [ch]Am[/ch]  [ch]G[/ch]     [ch]D[/ch]      [ch]D[/ch]-[ch]C[/ch]-[ch]D[/ch]\r\nBut it\u00a1\u00afs all right now.[/tab]\r\n[tab][ch]Am[/ch]      [ch]G[/ch]        [ch]D[/ch]\r\nKeep on  singin' loud.[/tab]\r\n[tab]     [ch]Am[/ch]  [ch]G[/ch]     [ch]D[/ch]     [ch]D[/ch]-[ch]C[/ch]-[ch]D[/ch]\r\nIt\u00a1\u00afs all right now.[/tab]\r\n[tab][ch]Am[/ch]     [ch]G[/ch]          [ch]D[/ch]\r\nHeaven  should be proud.[/tab]\r\n\r\nVERSE 2:\r\n(Piano block chords, +drums)\r\n[tab][ch]Em[/ch]                           [ch]B[/ch]\r\n  The fifties left town on a crowded dance floor.[/tab]\r\n[tab][ch]D[/ch]                         [ch]A[/ch]\r\n  The sixties came in with a bang and a roar.[/tab]\r\n[tab][ch]C[/ch]                         [ch]G[/ch]\r\n  The world heard a knock  it was Janice at the door;[/tab]\r\n[tab][ch]F#7[/ch]               [ch]B7[/ch]\r\n  They let her in.[/tab]\r\n(Piano arpeggios, +strings +drums)\r\n[tab][ch]Em[/ch]                                       [ch]B[/ch]\r\n  And when it seemed this whole world was falling apart,[/tab]\r\n[tab][ch]D[/ch]                                    [ch]A[/ch]\r\n  The houselights would fall and the  music would start.[/tab]\r\n[tab][ch]C[/ch]                          [ch]G[/ch]\r\n  She'd be givin\u00a1\u00af us all a piece of her heart,[/tab]\r\n[tab][ch]F#7[/ch]          [ch]B7[/ch]\r\n  Once again.[/tab]\r\n\r\nCHORUS:\r\n(All)\r\n[tab]         [ch]Am[/ch]  [ch]G[/ch]     [ch]D[/ch]      [ch]D[/ch]-[ch]C[/ch]-[ch]D[/ch]\r\nBut it\u00a1\u00afs all right now.[/tab]\r\n[tab][ch]Am[/ch]      [ch]G[/ch]        [ch]D[/ch]\r\nKeep on  singin' loud.[/tab]\r\n[tab]     [ch]Am[/ch]  [ch]G[/ch]     [ch]D[/ch]     [ch]D[/ch]-[ch]C[/ch]-[ch]D[/ch]\r\nIt\u00a1\u00afs all right now.[/tab]\r\n[tab][ch]Am[/ch]     [ch]G[/ch]          [ch]D[/ch]\r\nHeaven  should be proud.[/tab]\r\n\r\nINSTRUMENTAL:\r\n(Tremolo guitar and piano, +drums +strings)\r\n\u00a9\u00a6[ch]Em[/ch]         \u00a9\u00a6[ch]B[/ch]\t      \u00a9\u00a6[ch]D[/ch]          \u00a9\u00a6[ch]A[/ch]\t[ch]Bm7[/ch]   \u00a9\u00a6\r\n\r\nVERSE 3:\r\n(Piano block chords, +drums)\r\n[tab][ch]Em[/ch]                  [ch]B[/ch]\r\n  It was October in  St. Louis town,[/tab]\r\n[tab][ch]D[/ch]                                      [ch]A[/ch]\r\n  When we heard that the Free Bird had  fell to the ground;[/tab]\r\n[tab][ch]C[/ch]                         [ch]G[/ch]\r\n  We all said a prayer before we went down,[/tab]\r\n[tab][ch]F#7[/ch]       [ch]B7[/ch]\r\n  To play.[/tab]\r\n(Piano arpeggios, +strings +drums)\r\n[tab][ch]Em[/ch]                      [ch]B[/ch]\r\n  And Ronnie, my buddy,   above all the rest,[/tab]\r\n[tab][ch]D[/ch]                           [ch]A[/ch] \r\n  I miss you the most and I  loved you the best,[/tab]\r\n[tab][ch]C[/ch]                                  [ch]G[/ch]\r\n  And now that you\u00a1\u00afre gone I thank God I was blessed[/tab]\r\n[tab][ch]F#7[/ch]                [ch]B7[/ch]\r\n  Just to know you.[/tab]\r\n\r\nCHORUS:\r\n(All)\r\n[tab]         [ch]Am[/ch]  [ch]G[/ch]     [ch]D[/ch]      [ch]D[/ch]-[ch]C[/ch]-[ch]D[/ch]\r\nBut it\u00a1\u00afs all right now.[/tab]\r\n[tab][ch]Am[/ch]      [ch]G[/ch]        [ch]D[/ch]\r\nKeep on  singin' loud.[/tab]\r\n[tab]     [ch]Am[/ch]  [ch]G[/ch]     [ch]D[/ch]     [ch]D[/ch]-[ch]C[/ch]-[ch]D[/ch]\r\nIt\u00a1\u00afs all right now.[/tab]\r\n[tab][ch]Am[/ch]     [ch]G[/ch]          [ch]D[/ch]\r\nHeaven  should be proud.[/tab]\r\n\r\nOUTRO:\r\n(Guitar solo, +cymbals +strings +drums)\r\n\u00a9\u00a6[ch]Em[/ch]         \u00a9\u00a6[ch]B[/ch]\t      \u00a9\u00a6[ch]D[/ch]          \u00a9\u00a6[ch]A[/ch]\t      \u00a9\u00a6\r\n[tab]\u00a9\u00a6[ch]C[/ch]          \u00a9\u00a6[ch]G[/ch]          \u00a9\u00a6[ch]F#7[/ch]        \u00a9\u00a6[ch]B7[/ch]         \u00a9\u00a6\r\n(Tremolo guitar and piano, +drums +strings)[/tab]\r\n\u00a9\u00a6[ch]Em[/ch]         \u00a9\u00a6[ch]B[/ch]\t      \u00a9\u00a6[ch]D[/ch]          \u00a9\u00a6[ch]A[/ch]\t      \u00a9\u00a6\r\n\u00a9\u00a6[ch]C[/ch]          \u00a9\u00a6[ch]G[/ch]          \u00a9\u00a6[ch]F#7[/ch]        \u00a9\u00a6[ch]B7[/ch]/{[ch]B[/ch] [ch]C#[/ch] [ch]D#[/ch] [ch]E[/ch] [ch]F#[/ch] [ch]G[/ch]}\u00a9\u00a6\r\n\u00a9\u00a6[ch]Em[/ch]    [ch]Bm[/ch]   \u00a9\u00a6[ch]Em[/ch]\t      \u00a9\u00a6\r\n\r\nEND\r\n\r\nPersonally transcribed by OliThePianist \u00a8C there\u00a1\u00afs not enough free piano music out there!\r\n\r\nEmail:\tfingersmcstanyon@hotmail.co.uk\r\n\r\nPlease rate this tab!!!"
+}

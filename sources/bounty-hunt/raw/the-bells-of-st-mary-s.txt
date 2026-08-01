@@ -1,0 +1,30 @@
+# title: The Bells of St. Mary's
+# artist: Sam Cooke
+# source_url: https://tabs.ultimate-guitar.com/tab/sam-cooke/the-bells-of-st-marys-chords-1852218
+# fetched_at: 2026-08-01T11:32:22
+
+[Intro]
+Eb  Cm7
+Eb  Cm7
+Fm  Bb   Eb
+
+[Verse]
+Eb                Cm7
+The bells of St. Mary's
+Ab                F7
+I hear they are calling
+Eb                 Cm7   
+the young loves, the true loves
+                  Bb
+who come from the sea
+
+Eb
+And so my beloved
+            Ab         F7
+when red leaves are falling
+    Eb     Bb    Cm  Eb
+the love bells are shell
+  Eb  Bb   Cm  Eb   
+ring out, ring out
+Ab   Bb     Eb
+for you and me 

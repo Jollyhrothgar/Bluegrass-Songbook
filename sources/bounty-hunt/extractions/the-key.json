@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "The Key",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Authentic Unlimited",
+   "Mark Newton",
+   "J. P. Cormier",
+   "Donna Ulisse"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:33:17",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 100,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "C"
+ },
+ "candidate": {
+  "id": 4749842,
+  "song_id": 15494087,
+  "song_name": "The Key",
+  "artist_id": 1929413,
+  "artist_name": "Authentic Unlimited",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1682941040",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "C",
+  "version_description": "This is a novice version. It's not a replicate of the artist playing.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/1/2102923/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/6/161560/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1682941040,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Video https://www.youtube.com/watch?v=Lujva1zxEHQ&t=3s\r\n\r\nKey C\r\n\r\n[Intro]\r\n[ch]C[/ch]     [ch]F[/ch]     [ch]C[/ch]     [ch]G[/ch]\r\n\r\n[ch]C[/ch]     [ch]F[/ch]     [ch]C[/ch]     [ch]G[/ch]\r\n\r\n[Verse]\r\n[tab]      [ch]C[/ch]             [ch]F[/ch]           [ch]C[/ch]              [ch]G[/ch]\r\nI was lost and all alone, on my own and out of place,[/tab]\r\n[tab]          [ch]C[/ch]              [ch]F[/ch]                 [ch]C[/ch]             [ch]G[/ch]\r\nSearchin' hard and heavy for the door that holds amazin' grace.[/tab]\r\n[tab]       [ch]F[/ch]               [ch]Em[/ch]                [ch]Dm7[/ch]     [ch]G[/ch]       [ch]C[/ch]\r\nWhen I finally hit the bottom and looked up from where I fell,[/tab]\r\n[tab]    [ch]Am[/ch]     [ch]Em[/ch]         [ch]F[/ch]    [ch]G[/ch]    [ch]C[/ch]\r\nthe Key to Heaven was hung on a nail.[/tab]\r\n\r\n[Solo]\r\n   [ch]C[/ch]  |  [ch]F[/ch]  |  [ch]C[/ch]  |  [ch]G[/ch]  |\r\n\r\n|  [ch]C[/ch]  |  [ch]F[/ch]  |  [ch]C[/ch]  |  [ch]G[/ch]  |\r\n\r\n[Chorus]\r\n[tab][ch]Dm7[/ch]   [ch]G[/ch]                   [ch]F[/ch]       [ch]G[/ch]   [ch]C[/ch]\r\nFor - giveness was always for someone else,[/tab]\r\n[tab]      [ch]Dm7[/ch]  [ch]G[/ch]               [ch]F[/ch]         [ch]G[/ch]     [ch]C[/ch]\r\nI was sure wishin' I could find some for myself.[/tab]\r\n[tab]    [ch]F[/ch]            [ch]C[/ch]             [ch]Dm7[/ch]       [ch]G[/ch]      [ch]C[/ch]\r\nThe best of my intentions only paved the way to hell.[/tab]\r\n[tab]      [ch]Am[/ch]             [ch]Em[/ch]         [ch]F[/ch]    [ch]G[/ch]    [ch]C[/ch]\r\nThank God the Key to Heaven was hung on a nail.[/tab]\r\n\r\n[Solo]\r\n   [ch]C[/ch]  |  [ch]F[/ch]  |  [ch]C[/ch]  |  [ch]G[/ch]  |\r\n\r\n|  [ch]C[/ch]  |  [ch]F[/ch]  |  [ch]C[/ch]  |  [ch]G[/ch]  |\r\n\r\n[Chorus]\r\n[tab][ch]Dm7[/ch]   [ch]G[/ch]                   [ch]F[/ch]       [ch]G[/ch]   [ch]C[/ch]\r\nFor - giveness was always for someone else,[/tab]\r\n[tab]      [ch]Dm7[/ch]  [ch]G[/ch]               [ch]F[/ch]         [ch]G[/ch]     [ch]C[/ch]\r\nI was sure wishin' I could find some for myself.[/tab]\r\n[tab]      [ch]F[/ch]             [ch]Em[/ch]                    [ch]Dm7[/ch]    [ch]G[/ch]      [ch]C[/ch]\r\nEvery time I try to walk that line, I'm reminded when I fail,[/tab]\r\n[tab]    [ch]Am[/ch]     [ch]Em[/ch]         [ch]F[/ch]    [ch]G[/ch]    [ch]C[/ch]\r\nThe Key to Heaven was hung on a nail.[/tab]\r\n\r\n[Outro]\r\n[tab]      [ch]Am[/ch]             [ch]Em[/ch]         [ch]F[/ch]    [ch]G[/ch]    [ch]C[/ch]\r\nThank God the Key to Heaven was hung on a nail.[/tab]\r\n\r\n[Solo]\r\n   [ch]C[/ch]  |  [ch]F[/ch]  |  [ch]C[/ch]  |  [ch]G[/ch]  |\r\n\r\n|  [ch]C[/ch]  |  [ch]F[/ch]  |  [ch]C[/ch]  |  [ch]G[/ch]  |  [ch]C[/ch]"
+}

@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Pick Away",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Lester Flatt",
+   "Jim and Jesse",
+   "The Virginia Boys",
+   "Nashville Grass"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:29:34",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 2
+ },
+ "candidate": null,
+ "content": null
+}

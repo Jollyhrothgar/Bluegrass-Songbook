@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "Seven Bridges Road",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Seldom Scene",
+   "Alan Jackson",
+   "Jimmy Bowen & Santa Fe",
+   "Dolly Parton"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:35",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "D"
+ },
+ "candidate": {
+  "id": 1119255,
+  "song_id": 43046,
+  "song_name": "Seven Bridges Road",
+  "artist_id": 1509,
+  "artist_name": "Eagles",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 163,
+  "difficulty": "novice",
+  "rating": 4.85783,
+  "date": "1326067201",
+  "status": "approved",
+  "preset_id": 20049,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "D",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 22605
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/5/6/5690/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1756938555,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Seven Bridges Road chords\r\nThe Eagles 1980 (Stephen Young 1969)\r\n\r\nhttps://en.wikipedia.org/wiki/Seven_Bridges_Road\r\n\r\nCapo V*\r\n\r\n[ch]A[/ch] \r\n\r\n[tab][ch]A[/ch]         [ch]G[/ch]            [ch]D[/ch]        [ch]A[/ch]\r\nThere are stars in the southern sky[/tab]\r\n[tab]          [ch]G[/ch]      [ch]D[/ch]  [ch]A[/ch]\r\nSouthward as you go[/tab]\r\n[tab]         [ch]G[/ch]             [ch]D[/ch]           [ch]A[/ch]\r\nThere is moonlight and moss in the trees[/tab]\r\n[tab]               [ch]G[/ch]       [ch]D[/ch]   [ch]A[/ch]\r\nDown the seven bridges road[/tab]\r\n\r\n(instruments)\r\n\r\n[ch]A[/ch] [ch]G[/ch] [ch]D[/ch] [ch]A[/ch]\r\n\r\n[tab]    [ch]A[/ch]      [ch]G[/ch]         [ch]D[/ch]      [ch]A[/ch]\r\nNow I have loved you like a baby[/tab]\r\n[tab]          [ch]G[/ch]        [ch]D[/ch]    [ch]A[/ch]\r\nLike some lonesome child[/tab]\r\n[tab]           [ch]G[/ch]     [ch]D[/ch]        [ch]A[/ch]\r\nAnd I have loved you in a tame way[/tab]\r\n[tab]           [ch]G[/ch]         [ch]D[/ch]   [ch]A[/ch]\r\nAnd I have loved you wild[/tab]\r\n\r\n[tab]    [ch]G[/ch]               [ch]A[/ch]\r\nSometimes there's a part of me[/tab]\r\n[tab]       [ch]G[/ch]                  [ch]A[/ch]\r\nHas to turn from here and go[/tab]\r\n[tab][ch]G[/ch]                         [ch]A[/ch]\r\nRunning like a child from these warm stars[/tab]\r\n[tab]               [ch]G[/ch]       [ch]D[/ch]   [ch]A[/ch]\r\nDown the seven bridges road[/tab]\r\n\r\n(without instruments)\r\n\r\n[tab][ch]A[/ch]         [ch]G[/ch]            [ch]D[/ch]        [ch]A[/ch]\r\nThere are stars in the southern sky[/tab]\r\n[tab]                  [ch]G[/ch]               [ch]D[/ch] [ch]A[/ch]\r\nAnd if ever you decide you should go[/tab]\r\n[tab]           [ch]G[/ch]        [ch]D[/ch]              [ch]A[/ch]\r\nThere is a taste of time sweetened honey[/tab]\r\n[tab]               [ch]G[/ch]       [ch]D[/ch]   [ch]A[/ch]\r\nDown the seven bridges road[/tab]\r\n\r\n* Alternates: (original key D)\r\n\r\nOpen\r\n\r\n[ch]A[/ch]  = [ch]D[/ch]\r\n[ch]G[/ch]  = [ch]C[/ch]\r\n[ch]D[/ch]  = [ch]G[/ch]\r\n\r\nCapo II\r\n\r\n[ch]A[/ch]  = [ch]C[/ch]\r\n[ch]G[/ch]  = [ch]Bb[/ch]\r\n[ch]D[/ch]  = [ch]F[/ch]\r\n\r\nOpen (These chords are not in the original key)\r\n\r\n[ch]A[/ch]  = [ch]E[/ch]\r\n[ch]G[/ch]  = [ch]D[/ch]\r\n[ch]D[/ch]  = [ch]A[/ch]\r\n\r\nSet8"
+}

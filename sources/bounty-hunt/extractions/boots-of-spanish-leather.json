@@ -1,0 +1,71 @@
+{
+ "wanted": {
+  "title": "Boots of Spanish Leather",
+  "type": "Vocal",
+  "key": "G",
+  "difficulty": "Intermediate",
+  "coverage": 1,
+  "core": false,
+  "artists": [
+   "The Seldom Scene"
+  ],
+  "notes": "songwriter cover",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:36:26",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 2373859,
+  "song_id": 2731467,
+  "song_name": "Boots Of Spanish Leather",
+  "artist_id": 37156,
+  "artist_name": "Watchhouse (Mandolin Orange)",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 291,
+  "difficulty": "novice",
+  "rating": 4.89252,
+  "date": "1524654095",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "This is a cover version of Bob Dylans great song \"Boots of spanish leather\", by Mandolin Orange. It is actually also fingerpicked in their version, but i find that its nice to strum a song to get the feel for it first. This version is with capo in 2nd which makes the chords pretty easy. Some hammer on/off effects, change of pattern or finger picking is recommended when you get the feel for the song. Hope you enjoy and as my motto in life is...\"Just Play\".",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 1,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/2/7/27917/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1524654095,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "By: Mandolin Orange..NOT the BOB D. Version \u2013 CAPO 2 (2/4)\r\n\r\n[Intro]\r\n [ch]G[/ch] [ch]C[/ch]  [ch]G[/ch] [ch]D[/ch]  [ch]G[/ch] [ch]C[/ch]  [ch]G[/ch] [ch]G[/ch] \r\n\r\n\r\n[Verse 1]\r\n[tab]       [ch]Em[/ch]       [ch]Em[/ch]     [ch]D[/ch]        [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nOh I'm sailin' away my own true love[/tab]\r\n[tab]    [ch]Em[/ch]      [ch]D[/ch]           [ch]G[/ch]       [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nI'm sailin' away in the morning[/tab]\r\n[tab]         [ch]Em[/ch]              [ch]Em[/ch]             [ch]D[/ch]         [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nIs there something I can send you from across the sea[/tab]\r\n[tab]         [ch]Em[/ch]    [ch]D[/ch]            [ch]G[/ch]         [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nFrom the place that I'll be landing?[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab]            [ch]Em[/ch]              [ch]Em[/ch]          [ch]D[/ch]        [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nNo, there's nothin' you can send me, my own true love[/tab]\r\n[tab]        [ch]Em[/ch]        [ch]D[/ch]          [ch]G[/ch]       [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nThere's nothin' I wish to be ownin'[/tab]\r\n[tab]     [ch]Em[/ch]        [ch]Em[/ch]           [ch]D[/ch]    [ch]G[/ch]        [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nJust carry yourself back to me unspoiled[/tab]\r\n[tab]      [ch]Em[/ch]         [ch]D[/ch]        [ch]G[/ch]       [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nFrom across that lonesome ocean[/tab]\r\n\r\n\r\n[Verse 3]\r\n[tab]        [ch]Em[/ch]                 [ch]Em[/ch]         [ch]D[/ch]         [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nOh, but I just thought you might want something fine[/tab]\r\n[tab]        [ch]Em[/ch]     [ch]D[/ch]     [ch]G[/ch]       [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nMade of silver or of golden[/tab]\r\n[tab]       [ch]Em[/ch]       [ch]Em[/ch]        [ch]D[/ch]    [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nEither from the mountains of Madrid[/tab]\r\n[tab]   [ch]Em[/ch]       [ch]D[/ch]             [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nOr from the coast of Barcelona[/tab]\r\n\r\n\r\n[Verse 4]\r\n[tab]        [ch]Em[/ch]           [ch]Em[/ch]             [ch]D[/ch]       [ch]G[/ch]     [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nOh, but if I had the stars from the darkest night[/tab]\r\n[tab]        [ch]Em[/ch]                [ch]D[/ch]       [ch]G[/ch]       [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nAnd the diamonds from the deepest ocean[/tab]\r\n[tab]       [ch]Em[/ch]        [ch]Em[/ch]      [ch]D[/ch]          [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nI'd forsake them all for your sweet kiss[/tab]\r\n[tab]           [ch]Em[/ch]       [ch]D[/ch]            [ch]G[/ch]      [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nFor that's all I'm wishin' to be ownin'[/tab]\r\n\r\n\r\n[Verse 5]\r\n[tab]       [ch]Em[/ch]       [ch]Em[/ch]     [ch]D[/ch]        [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nThat I might be gone a long old time[/tab]\r\n[tab]         [ch]Em[/ch]   [ch]D[/ch]        [ch]G[/ch]       [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nAnd it's only that I'm askin'[/tab]\r\n[tab]         [ch]Em[/ch]              [ch]Em[/ch]            [ch]D[/ch]         [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nIs there something I can send you to remember me by[/tab]\r\n[tab]             [ch]Em[/ch]        [ch]D[/ch]     [ch]G[/ch]        [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nTo make your time more easy  passin'?[/tab]\r\n\r\n\r\n[Verse 6]\r\n[tab]    [ch]Em[/ch]       [ch]Em[/ch]          [ch]D[/ch]       [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nOh, how can, how can you ask me again[/tab]\r\n[tab]   [ch]Em[/ch]   [ch]D[/ch]         [ch]G[/ch]       [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nIt only brings me sorrow[/tab]\r\n[tab]    [ch]Em[/ch]   [ch]Em[/ch]            [ch]D[/ch]       [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nThe same thing I would want today[/tab]\r\n[tab]        [ch]Em[/ch]    [ch]D[/ch]      [ch]G[/ch]        [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nI would want again tomorrow[/tab]\r\n\r\n\r\n[Verse 7]\r\n[tab]     [ch]Em[/ch]    [ch]Em[/ch]          [ch]D[/ch]        [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nOh I got a letter on a lonesome day[/tab]\r\n[tab]       [ch]Em[/ch]       [ch]D[/ch]      [ch]G[/ch]       [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nIt was from her ship a-sailin'[/tab]\r\n[tab]       [ch]Em[/ch]      [ch]Em[/ch]                [ch]D[/ch]            [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nSaying I don't know when I'll be comin' back again[/tab]\r\n[tab]     [ch]Em[/ch]       [ch]D[/ch]       [ch]G[/ch]        [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nIt depends on how I'm feelin'[/tab]\r\n\r\n\r\n[Verse 8]\r\n[tab]    [ch]Em[/ch]     [ch]Em[/ch]         [ch]D[/ch]            [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nIf you, my love, must think that-a-way[/tab]\r\n[tab]    [ch]Em[/ch]        [ch]D[/ch]       [ch]G[/ch]       [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nI'm sure your mind is roamin'[/tab]\r\n[tab]    [ch]Em[/ch]        [ch]Em[/ch]           [ch]D[/ch]        [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nI'm sure your thoughts are not with me[/tab]\r\n[tab]             [ch]Em[/ch]         [ch]D[/ch]            [ch]G[/ch]        [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nBut with the country to where you're goin'[/tab]\r\n\r\n\r\n[Verse 9]\r\n[tab]        [ch]Em[/ch]         [ch]Em[/ch]          [ch]D[/ch]       [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nSo take heed, take heed of the western wind[/tab]\r\n[tab]     [ch]Em[/ch]          [ch]D[/ch]      [ch]G[/ch]       [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nTake heed of the stormy weather[/tab]\r\n[tab]    [ch]Em[/ch]            [ch]Em[/ch]               [ch]D[/ch]            [ch]G[/ch]    [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nAnd yes, there's something you can send back to me[/tab]\r\n[tab]        [ch]Em[/ch]       [ch]D[/ch]       [ch]G[/ch]        [ch]C[/ch] [ch]G[/ch] [ch]G[/ch]\r\nSpanish boots of Spanish leather[/tab]"
+}

@@ -1,0 +1,138 @@
+# title: Revelations
+# artist: Iron Maiden
+# source_url: https://tabs.ultimate-guitar.com/tab/iron-maiden/revelations-chords-1971523
+# fetched_at: 2026-08-01T11:31:21
+
+REVELATIONS - Iron Maiden
+
+from Piece Of Mind (1983) album
+written by Bruce Dickinson
+
+C6      x32210
+C6add9  x30210  (easier)
+
+        (picked, full chord)
+Am      x0221x  (x02210)
+Fmaj7   x3321x  (133210)
+C       x3201x  (x32010)
+Gadd4/B x2001x  (x20010 G6add11/B)
+
+
+[Intro]
+|G Am G Am   |C C6 C      |C   D       | x4  
+|N.C.        |
+
+[Instrumental]
+|Am N.C.   |F  N.C.   |G  N.C.   |Am N.C. G | x2
+
+[Prologue]
+    Am               F         G                 Am
+"O' God of earth and altar bow down and hear our cry 
+G   Am             F           G                Am
+Our earthly rulers falter, our people drift and die 
+G    Am              F             G                 Am 
+ The walls of gold entombe us, the swords of scorn divide 
+G    Am              F        G             Am *
+Take not thy thunder from us, take away our pride." 
+(from O God of Earth and Altar by G. K. Chesterton)
+
+[Interlude]
+|Am        |Fmaj7     |C         |Gadd4/B   | x4
+
+[Bridge]
+|Am G Am   |Am G Am   |G    D    |F    G    | x2
+
+[Riff]
+|Am G Am   |Am G Am   |G    D    |F    G    | x4
+(slow down on two last bars)
+
+[Interlude]
+|Am        |Fmaj7     |C         |Gadd4/B   | x2
+
+[Verse 1]
+Am               Fmaj7        
+Just a babe in a black abyss, 
+   C            Gadd4/B
+No reason for a place like this 
+    Am                 Fmaj7            C     Gadd4/B
+The walls are cold and souls cry out in pain 
+
+[Verse 2]
+   Am               Fmaj7        
+An easy way for the blind to go, 
+  C                   Gadd4/B
+A clever path for the fools who know 
+    Am            Fmaj7           C             Gadd4/B
+The secret of the hanged man - the smile on his lips 
+
+[Chorus]
+Am         G      Am     C      D
+ The light of the blind, you'll see 
+    F     G        Am  G
+The venom tears my spine 
+Am        C      D        F   G            Am *
+ The eyes of the nile are opening - you'll see
+
+[Interlude]
+|Am        |Fmaj7     |C         |Gadd4/B   | 
+
+[Verse 3]
+    Am                Fmaj7           
+She came to me with a serpent's kiss 
+       C               Gadd4/B
+As the eye of the sun rose on her lips 
+Am                Fmaj7          C    Gadd4/B
+Moonlight catches silver tears I cry
+
+[Verse 4]
+Am             Fmaj7          
+So we lay in a black embrace 
+        C                 Gadd4/B
+And the seed is sown in a holy place 
+      Am            Fmaj7           C    Gadd4/B
+And I watched and I waited for the dawn...
+
+[Chorus]
+Am         G      Am     C      D
+ The light of the blind, you'll see 
+    F     G     Am    G
+The venom tears my spine 
+Am        C      D        F   G            Am    N.C.
+ The eyes of the nile are opening - you'll see...
+
+[Bridge]
+|Am G Am   |Am G Am   |G    D    |F    G    | x4
+
+[Solo 1]
+|Am G Am   |Am G Am   |D   C   B |Am        | x7
+|Am G Am   |Am G Am   |D   C   B |
+
+[Harmony]
+|Am   G    |C    D    |F    G    |C    Am   | x4
+
+[Bridge]
+|Am G Am   |Am G Am   |G    D    |F    G    | x4
+(slow down on two last bars)
+
+[Instrumental]
+|Am N.C.   |F  N.C.   |G  N.C.   |Am N.C. G | x2
+
+[Prologue]
+G    Am        F          G                   Am
+Bind all of us together, ablaze with hope and free 
+G  Am             F            G                     Am
+No storm or heavy weather will rock the boat, you'll see 
+G   Am               F                   G                  Am
+The time has come to close your eyes and still the wind and rain 
+G       Am              F         G              Am *
+For the one who will be king, the watcher in the ring...
+
+[Outro]
+|Am        |Fmaj7     |C         |Gadd4/B   |
+                                      It is 
+|Am        |Fmaj7     |C         |Gadd4/B   |
+ you,      ooh...                     It is 
+|Am
+ you...
+
+-TTP

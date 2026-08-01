@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Weary Traveler",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Paul Adkins",
+   "The Bluegrass Cut-Ups",
+   "Leftover Salmon",
+   "Bill Monroe"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:34:09",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 100,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2366775,
+  "song_id": 2176043,
+  "song_name": "Weary Traveler",
+  "artist_id": 10950,
+  "artist_name": "Bill Monroe",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1523542836",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 154297
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1533267/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/9/3913/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1687776272,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n|([ch]D[/ch]) |([ch]D[/ch]) |([ch]D[/ch]) |([ch]D7[/ch]) |([ch]G[/ch]) |([ch]G[/ch]) |([ch]D[/ch]) |([ch]D[/ch]) |\r\n|([ch]G[/ch]) |([ch]G[/ch]) |([ch]D[/ch]) |([ch]D[/ch]) |([ch]D[/ch])([ch]A[/ch])|([ch]D[/ch]) |([ch]D[/ch])\r\n\r\n[Verse]\r\n[tab]    [ch]D[/ch]                         [ch]D7[/ch]   [ch]G[/ch]            [ch]D[/ch]\r\nOne night so dark and stormy, when I was all a- lone[/tab]\r\n[tab]  [ch]G[/ch]                    [ch]D[/ch]                [ch]A[/ch]    [ch]D[/ch]\r\nI thought I'd leave my troubles, and my only home[/tab]\r\n[tab]   [ch]D[/ch]                           [ch]D7[/ch] [ch]G[/ch]                [ch]D[/ch]\r\nMy sweetheart she had left me, I hung my head and cried[/tab]\r\n[tab][ch]G[/ch]              [ch]D[/ch]                    [ch]A[/ch]         [ch]D[/ch]\r\nWaiting by the railroad, to catch a train and ride[/tab]\r\n\r\n[tab]  [ch]D[/ch]                          [ch]D7[/ch]  [ch]G[/ch]                [ch]D[/ch]\r\nI heard the train a comin?f, and as she passed me by[/tab]\r\n[tab]  [ch]G[/ch]              [ch]D[/ch]                    [ch]A[/ch]          [ch]D[/ch]\r\nI swung upon the boxcar, and waved my home good- bye[/tab]\r\n[tab][ch]D[/ch]                     [ch]D7[/ch]  [ch]G[/ch]             [ch]D[/ch]\r\nI'm a weary traveler, I'm always on the go[/tab]\r\n[tab]  [ch]G[/ch]                  [ch]D[/ch]                          [ch]A[/ch]      [ch]D[/ch]\r\nI ride that lonesome railroad train, to where I do not know[/tab]\r\n\r\n[Solo]\r\n|([ch]D[/ch]) |([ch]D[/ch]) |([ch]D[/ch]) |([ch]D7[/ch]) |([ch]G[/ch]) |([ch]G[/ch]) |([ch]D[/ch]) |([ch]D[/ch]) |\r\n|([ch]G[/ch]) |([ch]G[/ch]) |([ch]D[/ch]) |([ch]D[/ch]) |([ch]D[/ch])([ch]A[/ch])|([ch]D[/ch]) |([ch]D[/ch])\r\n\r\n[Verse]\r\n[tab][ch]D[/ch]                   [ch]D7[/ch] [ch]G[/ch]                [ch]D[/ch]\r\nI'm growing feeble, my hair is like the snow[/tab]\r\n[tab]    [ch]G[/ch]             [ch]D[/ch]                       [ch]A[/ch]      [ch]D[/ch]\r\nI'm on my pathway leading on, I know that I must go[/tab]\r\n[tab]    [ch]D[/ch]                      [ch]D7[/ch] [ch]G[/ch]                [ch]D[/ch]\r\nAnd you will follow after, no one with you can be[/tab]\r\n[tab]       [ch]G[/ch]                   [ch]D[/ch]                     [ch]A[/ch]      [ch]D[/ch]\r\nYou'll cross the great di- vide of life, into e- terni- ty[/tab]\r\n\r\n[Tag]\r\n[tab][ch]D[/ch]                     [ch]D7[/ch]  [ch]G[/ch]             [ch]D[/ch]\r\nI'm a weary traveler, I'm always on the go[/tab]\r\n[tab]  [ch]G[/ch]                  [ch]D[/ch]                          [ch]A[/ch]      [ch]D[/ch]\r\nI ride that lonesome railroad train, to where I do not know[/tab]"
+}

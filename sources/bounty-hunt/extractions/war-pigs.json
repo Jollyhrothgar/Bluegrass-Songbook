@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "War Pigs",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The String Cheese Incident",
+   "Hayseed Dixie",
+   "Samantha Fish",
+   "Buckethead"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:33:55",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Em"
+ },
+ "candidate": {
+  "id": 1694335,
+  "song_id": 52232,
+  "song_name": "War Pigs",
+  "artist_id": 1898,
+  "artist_name": "Black Sabbath",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 695,
+  "difficulty": "",
+  "rating": 4.80574,
+  "date": "1419707341",
+  "status": "approved",
+  "preset_id": 136,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Em",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 801
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/5/2/52950/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/8/185763/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1753395656,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "War Pigs - Black Sabbath (Acoustic)\r\n\r\nThere are no versions of this in Chord format on this site, so I have taken the time to provide it\r\nfor all those who have been looking. Note: Works GREAT on acoustic! Enjoy!!\r\n\r\nIntro:  \r\n[ch]E[/ch] [ch]D[/ch] [ch]E[/ch] [ch]D[/ch]  [ch]D[/ch] [ch]E[/ch]\r\n\r\n[tab][ch]D[/ch] [ch]E[/ch]                                [ch]D[/ch] [ch]E[/ch] \r\n  Generals gathered in their masses, Just like witches at black masses[/tab]\r\n[tab][ch]D[/ch] [ch]E[/ch]                               [ch]D[/ch] [ch]E[/ch]\r\n  Evil minds that plot destruction, Sorcerer of death's construction [/tab]\r\n[tab][ch]D[/ch] [ch]E[/ch]                               [ch]D[/ch] [ch]E[/ch]\r\n  In the fields the bodies burning, As the war machine keeps turning[/tab]\r\n[tab][ch]D[/ch] [ch]E[/ch]                          [ch]D[/ch] [ch]E[/ch] \r\n  Death and hatred to mankind, Poisoning their brainwashed minds [/tab]\r\n[tab]            [ch]D[/ch] [ch]E[/ch]  \r\nOh lord yeah! [/tab]\r\n\r\n[ch]G[/ch] [ch]Gb[/ch] [ch]F[/ch] [ch]E[/ch]  [ch]G[/ch] [ch]Gb[/ch] [ch]F[/ch] [ch]E[/ch]\r\n\r\n[tab][ch]E[/ch] \r\nPoliticians hide themselves away, they only started the war [/tab]\r\n\r\nWhy should they go out to fight? \r\n[tab]                                   [ch]D[/ch] [ch]E[/ch]   \r\nThey leave that role to the poor, yeah![/tab]\r\n\r\n[ch]E[/ch] [ch]E[/ch] [ch]E[/ch] [ch]E[/ch]\r\n\r\n[tab][ch]E[/ch] \r\nTime will tell on their power minds, making war just for fun [/tab]\r\n\r\nTreating people just like pawns in chess, \r\n[tab]                                       [ch]D[/ch] [ch]E[/ch]  \r\nWait 'till their judgement day comes, yeah [/tab]\r\n\r\n[ch]G[/ch] [ch]Gb[/ch] [ch]F[/ch] [ch]E[/ch]  [ch]G[/ch] [ch]Gb[/ch] [ch]F[/ch] [ch]E[/ch] (2x) [ch]D[/ch] [ch]E[/ch] \r\n\r\n[tab][ch]D[/ch] [ch]E[/ch]                                  [ch]D[/ch] [ch]E[/ch]\r\n  Now in darkness world stops turning, ashes where the bodies burning [/tab]\r\n[tab][ch]D[/ch] [ch]E[/ch]                              [ch]D[/ch] [ch]E[/ch]\r\n  No more War Pigs have the power, hand of God has struck the hour[/tab]\r\n[tab][ch]D[/ch] [ch]E[/ch]                               [ch]D[/ch] [ch]E[/ch] \r\n  Day of judgement, God is calling, on their knees the war pigs crawling[/tab]\r\n[tab][ch]D[/ch] [ch]E[/ch]                             [ch]D[/ch] [ch]E[/ch]\r\n  Begging mercies for their sins, Satan, laughing, spreads his wings [/tab]\r\n[tab]         [ch]D[/ch] [ch]E[/ch]   \r\nOh lord yeah! [/tab]\r\n\r\n[ch]D[/ch] [ch]E[/ch]  [ch]G[/ch] [ch]Gb[/ch] [ch]F[/ch] [ch]E[/ch]  [ch]G[/ch] [ch]Gb[/ch] [ch]F[/ch] [ch]E[/ch]"
+}

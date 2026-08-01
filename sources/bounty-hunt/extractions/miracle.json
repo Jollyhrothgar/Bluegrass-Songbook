@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Miracle",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Peter Ostroushko",
+   "Robbie Fulks",
+   "Mountain Heart",
+   "Jourdan Hines"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:28:04",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "B"
+ },
+ "candidate": {
+  "id": 2458304,
+  "song_id": 1755793,
+  "song_name": "Miracle",
+  "artist_id": 7801,
+  "artist_name": "Rise Against",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 87,
+  "difficulty": "novice",
+  "rating": 4.90445,
+  "date": "1535460728",
+  "status": "approved",
+  "preset_id": 35034,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "B",
+  "version_description": "From Ghost Note Symphonies https://www.youtube.com/watch?v=cj1YlDceAcQ.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 1,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1573222/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/2/2/2244/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1535456349,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n\r\n[tab]            [ch]Am[/ch]\r\nWe scan the empty sky[/tab]\r\n[tab]           [ch]F[/ch]\r\nAlways without success[/tab]\r\n[tab]               [ch]C[/ch]\r\nWe're lighting signal fires[/tab]\r\n[tab]              [ch]G[/ch]\r\nAnd spelling \"SOS\"[/tab]\r\n[tab]            [ch]Am[/ch]\r\nWe stare at broken clocks[/tab]\r\n[tab]                [ch]F[/ch]\r\nThe truth comes twice a day[/tab]\r\n[tab]            [ch]C[/ch]                   [ch]G[/ch]\r\nWhile every second just slips away[/tab]\r\n\r\n\r\n[Pre-chorus]\r\n\r\n[tab]              [ch]F[/ch]               [ch]C[/ch]               [ch]G[/ch]          [ch]G[/ch]\r\nAre you gonna wait here for a sign to let you know now?[/tab]\r\n[tab]                 [ch]F[/ch]             [ch]C[/ch]                 [ch]G[/ch]         [ch]G[/ch]\r\nAre you gonna to sit there paralyzed by what you've seen?[/tab]\r\n[tab]                 [ch]F[/ch]                 [ch]C[/ch]                 [ch]G[/ch]         [ch]G[/ch]\r\nOr are you gonna finally grip the wheel? I think you know how[/tab]\r\n[tab]        [ch]F[/ch]               [ch]C[/ch]            [ch]G[/ch]     [ch]G[/ch]\r\nIs this more than you expected it to be[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab]                 [ch]Dm[/ch]\r\nDon't wait for a miracle[/tab]\r\n[tab]   [ch]F[/ch]\r\nTo tumble from the sky[/tab]\r\n[tab]   [ch]Am[/ch]\r\nTo part the seas around you[/tab]\r\n[tab]        [ch]G[/ch]\r\nOr turn water into wine[/tab]\r\n[tab]                 [ch]Dm[/ch]\r\nDon't wait for a miracle[/tab]\r\n[tab]    [ch]F[/ch]\r\nThe world is passing by[/tab]\r\n[tab]    [ch]Am[/ch]\r\nThe walls that all surround you[/tab]\r\n[tab]    [ch]G[/ch]                        [ch]Dm[/ch]  [ch]F[/ch]  [ch]G[/ch]\r\nAre only in your mind, oh-oh oh[/tab]\r\n\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab]             [ch]Am[/ch]\r\nThe stage is set[/tab]\r\n[tab]                 [ch]F[/ch]\r\nAnd the curtains pulled[/tab]\r\n[tab]         [ch]C[/ch]                           [ch]G[/ch]\r\nReady or not, it's time, on with the show[/tab]\r\n[tab]            [ch]Am[/ch]\r\nAnd now the crowd has grown impatient[/tab]\r\n[tab]        [ch]F[/ch]\r\nBut the train has left the station[/tab]\r\n[tab]        [ch]C[/ch]                               [ch]G[/ch]\r\nAnd the candles you are burning in the dark will fade away[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n\r\n[tab]                [ch]F[/ch]               [ch]C[/ch]               [ch]G[/ch]         [ch]G[/ch]\r\nSo, what are you waiting for, a sign to let you know now?[/tab]\r\n[tab]                 [ch]F[/ch]             [ch]C[/ch]                 [ch]G[/ch]          [ch]G[/ch]\r\nAre you going to sit there paralyzed by what you've seen?[/tab]\r\n[tab]                 [ch]F[/ch]                [ch]C[/ch]                  [ch]G[/ch]         [ch]G[/ch]\r\nOr are you gonna finally grip the wheel? I think you know how[/tab]\r\n[tab]              [ch]F[/ch]         [ch]C[/ch]     [ch]G[/ch]    [ch]G[/ch]\r\nAre you gonna throw it all away?[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab]                 [ch]Dm[/ch]\r\nDon't wait for a miracle[/tab]\r\n[tab]   [ch]F[/ch]\r\nTo tumble from the sky[/tab]\r\n[tab]   [ch]Am[/ch]\r\nTo part the seas around you[/tab]\r\n[tab]        [ch]G[/ch]\r\nOr turn water into wine[/tab]\r\n[tab]                 [ch]Dm[/ch]\r\nDon't wait for a miracle[/tab]\r\n[tab]    [ch]F[/ch]\r\nThe world is passing by[/tab]\r\n[tab]    [ch]Am[/ch]\r\nThe walls that all surround you[/tab]\r\n[tab]    [ch]G[/ch]                        [ch]Dm[/ch]  [ch]F[/ch]  [ch]G[/ch]\r\nAre only in your mind, oh-oh oh[/tab]\r\n\r\n\r\n[Bridge]\r\n\r\n[tab]         [ch]F[/ch]               [ch]Em[/ch]                          [ch]Dm[/ch]        [ch]Dm[/ch]\r\nWhen the weight we carry breaks us, we're tempted to stay down[/tab]\r\n[tab]    [ch]F[/ch]               [ch]Em[/ch]                   [ch]Dm[/ch]        [ch]Dm[/ch]\r\nBut every road to recovery starts at the breakdown[/tab]\r\n\r\nC x8\r\n\r\n[Chorus]\r\n\r\n[tab]                  [ch]Dm[/ch]\r\nBut we don't need miracles[/tab]\r\n[tab]   [ch]F[/ch]\r\nTo tumble from the sky[/tab]\r\n[tab]   [ch]Am[/ch]\r\nTo part the seas around us[/tab]\r\n[tab]        [ch]G[/ch]\r\nOr turn water into wine[/tab]\r\n[tab]                  [ch]Dm[/ch]\r\n'Cause we are the miracles[/tab]\r\n[tab]   [ch]F[/ch]\r\nWe happen all the time[/tab]\r\n[tab]          [ch]Am[/ch]\r\nWe're not scared of what surrounds us[/tab]\r\n[tab]          [ch]G[/ch]\r\nWe're not waiting for a sign[/tab]\r\n[tab]                 [ch]Dm[/ch]   [ch]F[/ch]\r\nCause we are the miracles[/tab]\r\n[tab]                 [ch]Am[/ch]   [ch]G[/ch]\r\nYeah, we are the miracles[/tab]\r\n[tab]           [ch]Dm[/ch]     [ch]F[/ch] [ch]G[/ch]\r\nWe are the miracles[/tab]\r\n[tab][ch]C[/ch]    [ch]C[/ch]\r\n Hey![/tab]"
+}

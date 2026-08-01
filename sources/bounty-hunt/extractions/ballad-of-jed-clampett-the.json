@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "Ballad of Jed Clampett, The",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:39:37",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 15
+ },
+ "candidate": null,
+ "content": null
+}

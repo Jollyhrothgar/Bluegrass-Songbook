@@ -1,0 +1,75 @@
+{
+ "wanted": {
+  "title": "Brown-Eyed Women",
+  "type": "Vocal",
+  "key": "A",
+  "difficulty": "Intermediate",
+  "coverage": 2,
+  "core": false,
+  "artists": [
+   "The String Cheese Incident",
+   "Trampled by Turtles"
+  ],
+  "notes": "jam favorite",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:35:43",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1853771,
+  "song_id": 38460,
+  "song_name": "Brown Eyed Women",
+  "artist_id": 1339,
+  "artist_name": "Grateful Dead",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 384,
+  "difficulty": "",
+  "rating": 4.88474,
+  "date": "1466166310",
+  "status": "approved",
+  "preset_id": 49742,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 38195
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/0/204980/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/153160/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1755121533,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n[tab][ch]C#m[/ch]                        [ch]E[/ch]\r\nGone are the days when the ox fall down,[/tab]\r\n[tab][ch]B[/ch]                                 [ch]A[/ch]\r\nYou take up the yoke and plow the fields around.[/tab]\r\n[tab][ch]C#m[/ch]                        [ch]E[/ch]\r\nGone are the days when the ladies said, \"Please,[/tab]\r\n[tab][ch]A[/ch]                                   [ch]E[/ch]\r\nGentle Jack Jones won't you come to me.\"[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]B[/ch]\r\nBrown-eyed women and red grenadine,[/tab]\r\n[tab]    [ch]A[/ch]                        [ch]E[/ch]          [ch]B[/ch]\r\nThe bottle was dusty but the liquor was clean.[/tab]\r\n[tab][ch]A[/ch]                             [ch]E[/ch]            [ch]C#m[/ch]\r\nSound of the thunder with the rain pourin' down,[/tab]\r\n[tab]       [ch]F#m[/ch]                     [ch]A[/ch]        [ch]E[/ch]\r\nAnd it looks like the old man's gettin' on.[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]C#m[/ch]                        [ch]E[/ch]\r\n1920 when he stepped to the bar,[/tab]\r\n[tab][ch]B[/ch]                                 [ch]A[/ch]\r\nDrank to the dregs of the whiskey jar.[/tab]\r\n[tab][ch]C#m[/ch]                        [ch]E[/ch]\r\n1930 when the wall caved in,[/tab]\r\n[tab][ch]A[/ch]                                   [ch]E[/ch]\r\nHe paid his way selling red-eyed gin.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]B[/ch]\r\nBrown-eyed women and red grenadine,[/tab]\r\n[tab]    [ch]A[/ch]                        [ch]E[/ch]          [ch]B[/ch]\r\nThe bottle was dusty but the liquor was clean.[/tab]\r\n[tab][ch]A[/ch]                             [ch]E[/ch]            [ch]C#m[/ch]\r\nSound of the thunder with the rain pourin' down,[/tab]\r\n[tab]       [ch]F#m[/ch]                     [ch]A[/ch]        [ch]E[/ch]\r\nAnd it looks like the old man's gettin' on.[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]C#m[/ch]                        [ch]E[/ch]\r\nDelilah Jones was the mother of twins,[/tab]\r\n[tab][ch]B[/ch]                                 [ch]A[/ch]\r\nTwo times over and the rest were sins.[/tab]\r\n[tab][ch]C#m[/ch]                        [ch]E[/ch]\r\nRaised eight boys, only I turned bad,[/tab]\r\n[tab][ch]A[/ch]                                   [ch]E[/ch]\r\nDidn't get the lickin's that the other ones had.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]B[/ch]\r\nBrown-eyed women and red grenadine,[/tab]\r\n[tab]    [ch]A[/ch]                        [ch]E[/ch]          [ch]B[/ch]\r\nThe bottle was dusty but the liquor was clean.[/tab]\r\n[tab][ch]A[/ch]                             [ch]E[/ch]            [ch]C#m[/ch]\r\nSound of the thunder with the rain pourin' down,[/tab]\r\n[tab]       [ch]F#m[/ch]                     [ch]A[/ch]        [ch]E[/ch]\r\nAnd it looks like the old man's gettin' on.[/tab]\r\n\r\n[Solo]\r\n[ch]C#m[/ch]   [ch]E[/ch]\r\n[ch]B[/ch]     [ch]A[/ch]\r\n[ch]C#m[/ch]   [ch]E[/ch]\r\n[ch]A[/ch]     [ch]E[/ch]\r\n\r\n[Bridge]\r\n[tab][ch]Bm[/ch]                   [ch]A[/ch]        [ch]E[/ch]\r\nTumble down shack in Big Foot county.[/tab]\r\n[tab][ch]Bm[/ch]                      [ch]A[/ch]          [ch]E[/ch]\r\nSnowed so hard that the roof caved in.[/tab]\r\n[tab][ch]C#m[/ch]     [ch]B[/ch]             [ch]A[/ch]        [ch]G#m[/ch]\r\nDelilah Jones went to meet her God,[/tab]\r\n[tab]        [ch]A[/ch]                           [ch]E[/ch]\r\nAnd the old man never was the same again.[/tab]\r\n\r\n[Verse 4]\r\n[tab][ch]C#m[/ch]                       [ch]E[/ch]\r\nDaddy made whiskey and he made it well.[/tab]\r\n[tab][ch]B[/ch]                       [ch]A[/ch]\r\nCost two dollars and it burned like hell.[/tab]\r\n[tab][ch]C#m[/ch]                   [ch]E[/ch]\r\nI cut hick'ry just to fire the still,[/tab]\r\n[tab][ch]A[/ch]                          [ch]E[/ch]\r\nDrink down a bottle and be ready to kill.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]B[/ch]\r\nBrown-eyed women and red grenadine,[/tab]\r\n[tab]    [ch]A[/ch]                        [ch]E[/ch]          [ch]B[/ch]\r\nThe bottle was dusty but the liquor was clean.[/tab]\r\n[tab][ch]A[/ch]                             [ch]E[/ch]            [ch]C#m[/ch]\r\nSound of the thunder with the rain pourin' down,[/tab]\r\n[tab]       [ch]F#m[/ch]                     [ch]A[/ch]        [ch]E[/ch]\r\nAnd it looks like the old man's gettin' on.[/tab]\r\n\r\n[Verse 5]\r\n[tab][ch]C#m[/ch]                        [ch]E[/ch]\r\nGone are the days when the ox fall down,[/tab]\r\n[tab][ch]B[/ch]                                 [ch]A[/ch]\r\nYou take up the yoke and plow the fields around.[/tab]\r\n[tab][ch]C#m[/ch]                        [ch]E[/ch]\r\nGone are the days when the ladies said, \"Please,[/tab]\r\n[tab][ch]A[/ch]                                   [ch]E[/ch]\r\nGentle Jack Jones won't you come to me.\"[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]B[/ch]\r\nBrown-eyed women and red grenadine,[/tab]\r\n[tab]    [ch]A[/ch]                        [ch]E[/ch]          [ch]B[/ch]\r\nThe bottle was dusty but the liquor was clean.[/tab]\r\n[tab][ch]A[/ch]                             [ch]E[/ch]            [ch]C#m[/ch]\r\nSound of the thunder with the rain pourin' down,[/tab]\r\n[tab]       [ch]F#m[/ch]                     [ch]A[/ch]        [ch]E[/ch]\r\nAnd it looks like the old man's gettin' on.[/tab]\r\n[tab]       [ch]F#m[/ch]                      [ch]A[/ch]       [ch]E[/ch]\r\nAnd it looks like the old man's gettin' on.[/tab]"
+}

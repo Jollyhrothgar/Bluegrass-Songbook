@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "Ghosts of Mississippi",
+  "type": "Vocal",
+  "key": "Bm",
+  "difficulty": "Intermediate",
+  "coverage": 1,
+  "core": false,
+  "artists": [
+   "The SteelDrivers"
+  ],
+  "notes": "modern",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:36:32",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1904737,
+  "song_id": 1685561,
+  "song_name": "Ghosts Of Mississippi",
+  "artist_id": 27168,
+  "artist_name": "The SteelDrivers",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 170,
+  "difficulty": "",
+  "rating": 4.77695,
+  "date": "1479677001",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 189969
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/154067/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/8/38014/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1479676999,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[tab][Intro]\r\n   [ch]Em[/ch]\r\ne|----------------------------------------|\r\nB|--3h5-3---0-3-0-------0-----------------|\r\nG|--------2-------2-0-2---2-0-------------|\r\nD|----------------------------4-2-0h2-----|\r\nA|----------------------------------------|\r\nE|----------------------------------------|[/tab]\r\n\r\n[tab]   [ch]Em[/ch]\r\ne|----------------------------------------|\r\nB|--------------0-------0-----------------|\r\nG|----------0-2---2-0-2---2-0-------------|\r\nD|---0-2-2--------------------4-2-0-0h2---|\r\nA|-2--------------------------------------|\r\nE|----------------------------------------|[/tab]\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab] [ch]E[/ch]\r\nLate one night behind corn whiskey[/tab]\r\n[tab] [ch]E[/ch]\r\nI fell asleep with a guitar in my hand[/tab]\r\n[tab] [ch]E[/ch]\r\nI dreamed about the ghosts of Mississippi[/tab]\r\n[tab]        [ch]G[/ch]          [ch]A[/ch]              [ch]E[/ch]\r\nAnd the blues came walking like a man[/tab]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab] [ch]E[/ch]\r\nWithout a word I passed that guitar over[/tab]\r\n[tab] [ch]E[/ch]\r\nHe tuned it up like I'd never seen[/tab]\r\n[tab] [ch]E[/ch]\r\nA crooked smile was his expression[/tab]\r\n[tab]        [ch]G[/ch]                   [ch]A[/ch]           [ch]E[/ch]\r\nThen he closed his eyes and he began to sing[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab] [ch]E7[/ch]\r\nOh Lord, why have you forsaken me[/tab]\r\n[tab] [ch]E7[/ch]\r\nGot me down in Mississippi[/tab]\r\n[tab] [ch]E7[/ch]\r\nWhere I don't wanna be[/tab]\r\n[tab] [ch]E7[/ch]\r\nOh Lord, why have you forsaken me[/tab]\r\n[tab] [ch]E7[/ch]\r\nGot me down in Mississippi[/tab]\r\n[tab] [ch]E7[/ch]\r\nWhere I don't wanna be[/tab]\r\n\r\n\r\n[Instrumental]\r\n\r\n[ch]E[/ch] [ch]D[/ch] [ch]A[/ch] [ch]C[/ch]\r\n[ch]E[/ch] [ch]G[/ch] [ch]A[/ch] [ch]C[/ch] [ch]B7[/ch]\r\n[ch]E[/ch] [ch]G[/ch] [ch]A[/ch] [ch]C[/ch]\r\n[ch]G[/ch] [ch]A[/ch] [ch]E[/ch]\r\n\r\n\r\n[Verse 3]\r\n\r\n[tab] [ch]E[/ch]\r\nWhen I woke up I looked into the mirror[/tab]\r\n[tab] [ch]E[/ch]\r\nI saw no reflection for a while[/tab]\r\n[tab] [ch]E[/ch]\r\nBut as my eyes came into focus[/tab]\r\n[tab]  [ch]G[/ch]     [ch]A[/ch]                 [ch]E[/ch]\r\nI recognized that crooked smile[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab] [ch]E7[/ch]\r\nOh Lord, why have you forsaken me[/tab]\r\n[tab] [ch]E7[/ch]\r\nGot me down in Mississippi[/tab]\r\n[tab] [ch]E7[/ch]\r\nWhere I don't wanna be[/tab]\r\n[tab] [ch]E7[/ch]\r\nOh Lord, why have you forsaken me[/tab]\r\n[tab] [ch]E7[/ch]\r\nGot me down in Mississippi[/tab]\r\n[tab] [ch]E7[/ch]\r\nWhere I don't wanna be[/tab]\r\n\r\n\r\n[Verse 4]\r\n\r\n[tab] [ch]E[/ch]\r\nLate one night behind corn whiskey[/tab]\r\n[tab] [ch]E[/ch]\r\nI fell asleep with a guitar in my hand[/tab]\r\n[tab] [ch]E[/ch]\r\nI dreamed about the ghosts of Mississippi[/tab]\r\n[tab]        [ch]G[/ch]          [ch]A[/ch]              [ch]E[/ch]\r\nAnd the blues came walking like a man[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab] [ch]E7[/ch]\r\nOh Lord, why have you forsaken me[/tab]\r\n[tab] [ch]E7[/ch]\r\nGot me down in Mississippi[/tab]\r\n[tab] [ch]E7[/ch]\r\nWhere I don't wanna be[/tab]\r\n[tab] [ch]E7[/ch]\r\nOh Lord, why have you forsaken me[/tab]\r\n[tab] [ch]E7[/ch]\r\nGot me down in Mississippi[/tab]\r\n[tab] [ch]E7[/ch]\r\nWhere I don't wanna be[/tab]\r\n\r\n[tab] [ch]E7[/ch]\r\nOh Lord, why have you forsaken me[/tab]\r\n[tab] [ch]E7[/ch]\r\nGot me down in Mississippi[/tab]\r\n[tab] [ch]E7[/ch]\r\nWhere I don't wanna be[/tab]\r\n[tab] [ch]E7[/ch]\r\nOh Lord, why have you forsaken me[/tab]\r\n[tab] [ch]E7[/ch]\r\nGot me down in Mississippi[/tab]\r\n[tab] [ch]E7[/ch]\r\nWhere I don't wanna be[/tab]\r\n\r\n\r\n[tab][Outro]\r\n   [ch]Em[/ch]\r\ne|----------------------------------------|\r\nB|--3h5-3---0-3-0-------0-----------------|\r\nG|--------2-------2-0-2---2-0-------------|\r\nD|----------------------------4-2-0h2-----|\r\nA|----------------------------------------|\r\nE|----------------------------------------|[/tab]\r\n\r\n[tab]   [ch]Em[/ch]\r\ne|----------------------------------------|\r\nB|--------------0-------0-----------------|\r\nG|----------0-2---2-0-2---2-0-------------|\r\nD|---0-2-2--------------------4-2-0-0h2---|\r\nA|-2--------------------------------------|\r\nE|----------------------------------------|[/tab]"
+}

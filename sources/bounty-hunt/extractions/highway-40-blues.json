@@ -1,0 +1,76 @@
+{
+ "wanted": {
+  "title": "Highway 40 Blues",
+  "type": "Vocal",
+  "key": "G",
+  "difficulty": "Intermediate",
+  "coverage": 3,
+  "core": false,
+  "artists": [
+   "Larry Cordle",
+   "Ricky Skaggs",
+   "Glen Duncan"
+  ],
+  "notes": "modern standard",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:34:35",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 84890,
+  "song_id": 2556285,
+  "song_name": "Highway 40 Blues",
+  "artist_id": 11336,
+  "artist_name": "Ricky Skaggs",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 154,
+  "difficulty": "",
+  "rating": 4.83064,
+  "date": "1062028800",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/3/5/352081/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/7/37477/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1750451111,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Highway Forty Blues\r\nWords & Music by Larry Cordle\r\nc1979 PolyGram Int'l Publishing & Amanda-Lin Music\r\nPerformed by Ricky Skaggs\r\nBrightly (2 beat feel)\r\n\r\n\r\n[Intro]\r\n\r\n[ch]E[/ch] [ch]F#m[/ch]\r\n[ch]B[/ch] [ch]E[/ch]\r\n[ch]G[/ch] [ch]D[/ch] [ch]A[/ch] [ch]E[/ch]\r\n\r\n\r\n[Verse 1]\r\n[tab][ch]E[/ch]                        [ch]F#m[/ch]\r\nWell these Highway Forty Blues,[/tab]\r\n[tab][ch]B[/ch]                            [ch]E[/ch]\r\nI've walked holes in both my shoes.[/tab]\r\n[tab]                                 [ch]F#m[/ch]\r\nCounted the days since I've been gone,[/tab]\r\n[tab]    [ch]B[/ch]                             [ch]E[/ch]\r\nAnd I'd love to see the lights of home.[/tab]\r\n[tab]                      [ch]A[/ch]\r\nWasted time and money too,[/tab]\r\n[tab][ch]B[/ch]                             [ch]E[/ch]      [ch]B[/ch]\r\nSquandered youth in search of truth,[/tab]\r\n[tab][ch]C#m[/ch]                     [ch]F#[/ch]\r\nBut in the end I had to lose[/tab]\r\n[tab]                        [ch]B[/ch]\r\nLord above I've paid my dues[/tab]\r\n[tab]                       [ch]E[/ch]       [ch]G[/ch] [ch]D[/ch] [ch]A[/ch] [ch]E[/ch]\r\nGot them Highway Forty Blues.[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]E[/ch]                             [ch]F#m[/ch]\r\nThe highway called when I was young,[/tab]\r\n[tab][ch]B[/ch]                         [ch]E[/ch]\r\nTold me lies of things to come.[/tab]\r\n[tab]                       [ch]F#m[/ch]\r\nFame and fortune lies ahead,[/tab]\r\n[tab][ch]B[/ch]                                    [ch]E[/ch]\r\nThat's what the billboard lights had said.[/tab]\r\n[tab]                            [ch]A[/ch]\r\nShattered dreams my mind is numb,[/tab]\r\n[tab][ch]B[/ch]                            [ch]E[/ch]      [ch]B[/ch]\r\nMy money's gone stick out my thumb.[/tab]\r\n[tab][ch]C#m[/ch]                     [ch]F#[/ch]\r\nMy eyes are filled with bitter tears,[/tab]\r\n[tab]                        [ch]B[/ch]\r\nLord I ain't been home in years,[/tab]\r\n[tab]                      [ch]E[/ch]       [ch]G[/ch] [ch]D[/ch] [ch]A[/ch] [ch]E[/ch]\r\nGot the Highway Forty Blues.[/tab]\r\n\r\n\r\n[Solo]\r\n# First half Mandolin, second half starting on the A chord is Banjo\r\n\r\n[ch]E[/ch] [ch]F#m[/ch]\r\n[ch]B[/ch] [ch]E[/ch]\r\n[ch]E[/ch] [ch]F#m[/ch]\r\n[ch]B[/ch] [ch]E[/ch]\r\n[ch]E[/ch] [ch]A[/ch]\r\n| [ch]B[/ch]     | [ch]E[/ch]  [ch]B[/ch]  |\r\n| [ch]C#m[/ch]   | [ch]F#[/ch]    |\r\n| [ch]B[/ch]     | [ch]E[/ch]  ([ch]G[/ch] [ch]D[/ch] [ch]A[/ch] [ch]E[/ch])  (2 beats [ch]E[/ch] followed by staccato [ch]G[/ch] [ch]D[/ch] [ch]A[/ch] [ch]E[/ch])\r\n\r\n# Repeat Solo with first half Electric Guitar then second half with pedal steel guitar\r\n\r\n\r\n[Verse 3]\r\n[tab][ch]E[/ch]                          [ch]F#m[/ch]\r\nYou know I've rambled all around,[/tab]\r\n[tab][ch]B[/ch]                                 [ch]E[/ch]\r\nLike a rolling stone from town to town.[/tab]\r\n[tab]                            [ch]F#m[/ch]\r\nMet pretty girls, I have to say,[/tab]\r\n[tab][ch]B[/ch]                              [ch]E[/ch]\r\nBut none of them could make me stay.[/tab]\r\n[tab]                                      [ch]A[/ch]\r\nWell, I've played the music halls and bars,[/tab]\r\n[tab][ch]B[/ch]                              [ch]E[/ch]     [ch]B[/ch]\r\nHad fancy clothes and big fine cars,[/tab]\r\n[tab][ch]C#m[/ch]                     [ch]F#[/ch]\r\nThings a country boy can't use,[/tab]\r\n[tab]                       [ch]B[/ch]\r\nDixie Land I sure miss you,[/tab]\r\n[tab]                      [ch]E[/ch]       [ch]G[/ch] [ch]D[/ch] [ch]A[/ch] [ch]E[/ch]\r\nGot the Highway Forty Blues.[/tab]\r\n\r\n\r\n[Outro]\r\n\r\n[ch]E[/ch] [ch]F#m[/ch]\r\n[ch]B[/ch] [ch]E[/ch]\r\n[ch]G[/ch] [ch]D[/ch] [ch]A[/ch]\r\n[ch]D[/ch] [ch]A[/ch] [ch]E[/ch]"
+}

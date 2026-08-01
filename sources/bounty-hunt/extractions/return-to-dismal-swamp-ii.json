@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Return to Dismal Swamp II",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Tony Rice",
+   "Glen Duncan",
+   "Jerry Douglas",
+   "Nitty Gritty Dirt Band"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:14",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Mrs. Robinson",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Country Gentlemen",
+   "Eddie Adcock",
+   "Hayseed Dixie",
+   "The Grassmasters"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:28:54",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "A"
+ },
+ "candidate": {
+  "id": 3322274,
+  "song_id": 5384,
+  "song_name": "Mrs Robinson",
+  "artist_id": 274,
+  "artist_name": "Simon & Garfunkel",
+  "type": "Chords",
+  "part": "",
+  "version": 10,
+  "common_version": 1,
+  "votes": 121,
+  "difficulty": "intermediate",
+  "rating": 4.90653,
+  "date": "1599229854",
+  "status": "approved",
+  "preset_id": 15739,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "A",
+  "version_description": "All lyrics with accompanying chords with bass note progressions. Full chord legend. Includes additional verse, and tablature of main riff. https://www.youtube.com/watch?v=9C1BCAgu2I8.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 4432
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/6/9/69484/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/8/389/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1762451780,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Song: Mrs Robinson\r\nArtist: Simon and Garfunkel\r\nComposer: Paul Simon\r\nAlbum: Bookends\r\n\r\nTabbed by DJ  7th July 2016\r\n\r\nFINE TUNING:\r\nTo better match the original single and 'Bookends'\r\nalbum track, use a chromatic tuner and tune all the\r\nstrings up slightly sharp by approx. +25 cents.\r\nLive versions are more likely to be in standard pitch\r\n\r\nCAPO: 2nd fret\r\n(Will then sound in the recorded key of A)\r\n\r\nEmphasise the bass notes of each chord. \r\nBoth the (G/F#) and the (Em/F#) are intended to be\r\nplayed as just passing bass notes only.\r\nOn Asus4 bend the D note on the 2nd string/3rd fret\r\n\r\nI would recommend using the voicings in the text\r\ncolumn numbers below.\r\nRegarding the CHORD BOX DIAGRAMS please follow the\r\ninformation at the bottom of the tab.\r\n\r\nChord names & fret positions are relative to the capo\r\nE7 * = 076700     Am     = x02210    C/A = x02010\r\nA7   = x02020     Asus4  = x02230    C/G = 332010\r\nD7   = xx0212     E      = 022100    D   = xx0232\r\nG    = 320033    (D7sus) = xx0213    D/C = x30232\r\nC    = x32010    (G/F#)  = 2xxxxx    D/B = x20232\r\nC/B  = x2x010    (Em/F#) = 2xxxxx    D/A = x00232\r\n                  E7     = 022130    h   = Hammer-on\r\n\r\n[tab]Please take a second to scroll down to the bottom of\r\nthe page and select a star rating for my tab, thanks\r\n=====================================================\r\n[Intro - Riff repeats]\r\n                         [ch]E7[/ch] *\r\ne|----------------|------0----0--0---|\r\nB|----------------|------0----0--0---|\r\nG|----------------|------7----7--7---| [x3]\r\nD|----------------|------6----6--6---|\r\nA|-------------5--|--7---7----7--7---|\r\nE|--0--h5--h7-----|------0----0--0---|[/tab]\r\n\r\n[Verse 1]\r\n[tab][ch]E7[/ch]\r\nDi-di, dee-dee, di-dee, di-dee, di-di, di-di-dee![/tab]\r\n[tab][ch]A7[/ch]\r\nDoo, doo-doo-doo, doo-doo, doo-doo, doo![/tab]\r\n[tab][ch]D7[/ch]                 [ch]G[/ch]\r\nDi - di, dee -dee, di -dee,[/tab]\r\n[tab][ch]C[/ch]         [ch]C/B[/ch]       [ch]Am[/ch]    [ch]Asus4[/ch] [ch]Am[/ch]   [ch]E[/ch]    [ch]D7[/ch]\r\nDi - dee, di - di - dee![/tab]\r\n\r\n[Chorus]    (See tablature of riff at bottom of page)\r\n[tab][ch]D7[/ch] ([ch]D7sus[/ch]) [ch]D7[/ch]  [ch]G[/ch]        [ch]G/F#[/ch]  [ch]Em[/ch]       ([ch]Em/F#[/ch])\r\nAnd here's to  you, Mrs.----  Robinson,[/tab]\r\n[tab][ch]G[/ch]           [ch]G/F#[/ch] [ch]Em[/ch]                 [ch]C[/ch]   [ch]C/B[/ch]  [ch]C/A[/ch]\r\nJesus loves you  more than you will know,[/tab]\r\n[tab][ch]C/G[/ch]       [ch]D[/ch]   [ch]D/C[/ch]  [ch]D/B[/ch]\r\nWoh - oo, oh![/tab]\r\n[tab]    [ch]D/A[/ch]       [ch]G[/ch]            [ch]G/F#[/ch] [ch]Em[/ch]      ([ch]Em/F#[/ch])\r\nGod bless you please, Mrs.----  Robinson,[/tab]\r\n[tab][ch]G[/ch]            [ch]G/F#[/ch] [ch]Em[/ch]                  [ch]C[/ch]   [ch]C/B[/ch]  [ch]C/A[/ch]\r\nHeaven holds a    place for those who pray,[/tab]\r\n[tab][ch]C/G[/ch]        [ch]Am[/ch]                [ch]E7[/ch] * [Riff x2]\r\nHey - hey, hey!   Hey - hey, hey![/tab]\r\n\r\n[Verse 2]\r\n[tab]     [ch]E7[/ch]\r\nWe'd like to know...[/tab]\r\n[tab]     [ch]E7[/ch]\r\n...a little bit about you for our files,[/tab]\r\n[tab]     [ch]A7[/ch]\r\nWe'd like to help you learn to help yourself, [/tab]\r\n[tab][ch]D7[/ch]                    [ch]G[/ch]\r\n  ...Look around you, all you see...[/tab]\r\n[tab]    [ch]C[/ch]       [ch]C/B[/ch]    [ch]Am[/ch]  [ch]Asus4[/ch] [ch]Am[/ch]  [ch]Asus4[/ch] [ch]Am[/ch]\r\nAre sympa - thetic eyes,[/tab]\r\n[tab][ch]E[/ch]                                [ch]D7[/ch]\r\n  Stroll around the grounds un - til you feel at home[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]D7[/ch] ([ch]D7sus[/ch]) [ch]D7[/ch]  [ch]G[/ch]       ([ch]G/F#[/ch]) [ch]Em[/ch]       ([ch]Em/F#[/ch])\r\nAnd here's to  you, Mrs.----  Robinson,[/tab]\r\n[tab][ch]G[/ch]           [ch]G/F#[/ch] [ch]Em[/ch]                 [ch]C[/ch]   [ch]C/B[/ch]  [ch]C/A[/ch]\r\nJesus loves you  more than you will know,[/tab]\r\n[tab][ch]C/G[/ch]       [ch]D[/ch]   [ch]D/C[/ch]  [ch]D/B[/ch]\r\nWoh - oo, oh![/tab]\r\n[tab]    [ch]D/A[/ch]       [ch]G[/ch]           [ch]G/F#[/ch] [ch]Em[/ch]       ([ch]Em/F#[/ch])\r\nGod bless you please, Mrs.---  Robinson,[/tab]\r\n[tab][ch]G[/ch]            [ch]G/F#[/ch] [ch]Em[/ch]                  [ch]C[/ch]   [ch]C/B[/ch]  [ch]C/A[/ch]\r\nHeaven holds a    place for those who pray,[/tab]\r\n[tab][ch]C/G[/ch]        [ch]Am[/ch]                [ch]E7[/ch] *  [Riff x2]\r\nHey - hey, hey!   Hey - hey, hey![/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]E7[/ch]\r\n   Hide it in a hiding place where no one ever goes,[/tab]\r\n[tab][ch]A7[/ch]\r\n   Put in your pantry with your cupcakes,[/tab]\r\n[tab][ch]D7[/ch]                [ch]G[/ch]\r\n   It's a little secret,[/tab]\r\n[tab]         [ch]C[/ch]       [ch]C/B[/ch]        [ch]Am[/ch]      [ch]Asus4[/ch]\r\nJust the Robin - son's af - fair,[/tab]\r\n[tab][ch]E[/ch]                             [ch]D7[/ch]\r\n   Most of all, you've got to hide it from the kids[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]D7[/ch]   ([ch]D7sus[/ch]) [ch]D7[/ch]   [ch]G[/ch]         [ch]G/F#[/ch] [ch]Em[/ch]       ([ch]Em/F#[/ch])\r\nCoo - coo,   ca - choo, Mrs.---- Robinson,[/tab]\r\n[tab][ch]G[/ch]           [ch]G/F#[/ch] [ch]Em[/ch]                 [ch]C[/ch]   [ch]C/B[/ch]  [ch]C/A[/ch]\r\nJesus loves you  more than you will know,[/tab]\r\n[tab][ch]C/G[/ch]       [ch]D[/ch]   [ch]D/C[/ch]  [ch]D/B[/ch]\r\nWoh - oo, oh![/tab]\r\n[tab]    [ch]D/A[/ch]       [ch]G[/ch]           [ch]G/F#[/ch] [ch]Em[/ch]       ([ch]Em/F#[/ch])\r\nGod bless you please, Mrs.---  Robinson,[/tab]\r\n[tab][ch]G[/ch]           [ch]G/F#[/ch] [ch]Em[/ch]                  [ch]C[/ch]   [ch]C/B[/ch]  [ch]C/A[/ch]\r\nHeaven holds a   place for those who pray,[/tab]\r\n[tab][ch]C/G[/ch]        [ch]Am[/ch]                [ch]E7[/ch] *  [Riff x2]\r\nHey - hey, hey!   Hey - hey, hey![/tab]\r\n\r\n[Verse 4]\r\n[tab][ch]E7[/ch]\r\n    Sitting on a sofa on a Sunday afternoon,[/tab]\r\n[tab][ch]A7[/ch]\r\n    Going to the candidates debate,[/tab]\r\n[tab][ch]D7[/ch]                  [ch]G[/ch]\r\n ...Laugh about it, shout about it,[/tab]\r\n[tab][ch]C[/ch]           [ch]C/B[/ch]    [ch]Am[/ch]     [ch]Asus4[/ch] [ch]Am[/ch]   [ch]Asus4[/ch] [ch]Am[/ch]\r\nWhen you've got to choose,[/tab]\r\n[tab][ch]E[/ch]                                 [ch]D7[/ch]\r\n    Every way you look at it, you lose[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]D7[/ch]   ([ch]D7sus[/ch]) [ch]D7[/ch]  [ch]G[/ch]         [ch]G/F#[/ch]  [ch]Em[/ch]      ([ch]Em/F#[/ch])\r\nWhere have   you gone, Joe Di  - Maggio?[/tab]\r\n[tab]  [ch]G[/ch]            [ch]G/F#[/ch] [ch]Em[/ch]             [ch]C[/ch]   [ch]C/B[/ch]  [ch]C/A[/ch]\r\nA nation turns its' lonely eyes to you,[/tab]\r\n[tab][ch]C/G[/ch]       [ch]D[/ch]   [ch]D/C[/ch]  [ch]D/B[/ch]\r\nWoo - oo, oo![/tab]\r\n[tab]       [ch]D/A[/ch]      [ch]G[/ch]         [ch]G/F#[/ch] [ch]Em[/ch]        ([ch]Em/F#[/ch])\r\nWhat's that you say, Mrs.----  Robinson?[/tab]\r\n[tab] [ch]G[/ch]            [ch]G/F#[/ch] [ch]Em[/ch]                 [ch]C[/ch]  [ch]C/B[/ch]  [ch]C/A[/ch]\r\n'Joltin' Joe' has  left, and gone a - way,[/tab]\r\n[tab][ch]C/G[/ch]        [ch]Am[/ch]                [ch]E7[/ch] * [Riff]\r\nHey - hey, hey!   Hey - hey, hey![/tab]\r\n\r\n[tab][Coda]\r\n                         [ch]E7[/ch] *\r\ne|----------------|------0----0--0---| [Riff repeats]\r\nB|----------------|------0----0--0---|\r\nG|----------------|------7----7--7---|\r\nD|----------------|------6----6--6---|\r\nA|-------------5--|--7---7----7--7---|\r\nE|--0--h5--h7-----|------0----0--0---|[/tab]\r\n\r\n        h = Hammer-on notes  \r\n=====================================================\r\nAdditional verses from 'The graduate' soundtrack\r\n\r\n[Verse 5]\r\n[tab][ch]E7[/ch]\r\nDi-di, dee-dee, di-dee, di-dee, di-di, di-di-dee![/tab]\r\n[tab][ch]A7[/ch]\r\nDoo, doo-doo-doo, doo-doo, doo-doo, doo![/tab]\r\n[tab][ch]D7[/ch]                 [ch]G[/ch]\r\nDi - di, dee -dee, di -dee,[/tab]\r\n[tab][ch]C[/ch]         [ch]C/B[/ch]       [ch]Am[/ch]    [ch]Asus4[/ch] [ch]Am[/ch]   [ch]E[/ch]    [ch]D7[/ch]\r\nDi - dee, di - di - dee![/tab]\r\n\r\n[Chorus]\r\n[tab][ch]D7[/ch] ([ch]D7sus[/ch]) [ch]D7[/ch]  [ch]G[/ch]        [ch]G/F#[/ch] [ch]Em[/ch]       ([ch]Em/F#[/ch])\r\nAnd here's to  you, Mrs.---- Robinson,[/tab]\r\n[tab][ch]G[/ch]           [ch]G/F#[/ch] [ch]Em[/ch]                 [ch]C[/ch]   [ch]C/B[/ch]  [ch]C/A[/ch]\r\nJesus loves you  more than you will know,[/tab]\r\n[tab][ch]C/G[/ch]       [ch]D[/ch]   [ch]D/C[/ch]  [ch]D/B[/ch]\r\nWoh - oo, oh![/tab]\r\n[tab][ch]D/A[/ch]      [ch]G[/ch]         [ch]G/F#[/ch] [ch]Em[/ch]       ([ch]Em/F#[/ch])\r\nStand up tall, Mrs.---- Robinson,[/tab]\r\n[tab][ch]G[/ch]             [ch]G/F#[/ch] [ch]Em[/ch]                  [ch]C[/ch]   [ch]C/B[/ch]  [ch]C/A[/ch]\r\nGod, in hea - ven, smiles on those who pray,[/tab]\r\n[tab][ch]C/G[/ch]        [ch]Am[/ch]                [ch]E7[/ch] * [Riff]\r\nHey - hey, hey!   Hey - hey, hey![/tab]\r\n\r\n[Coda]\r\nRepeat the Riff and then gradually slow down\r\nover an E7 chord to end\r\n\r\n[tab]=====================================================\r\n[Chorus with bass note progressions]\r\n    D7    (D7sus)(D7)   G       G/F# Em      (Em/F#)\r\n       And here's to    you, Mrs.    Ro-binson...\r\ne|--2----------------|--3--3---------0--0---------|\r\nB|--1----------------|--3--3---------0--0---------|\r\nG|--2----------------|--0--0---------0--0---------|\r\nD|--0----------------|--0--0---------2--2---------|\r\nA|----------------0--|--2------------2------------|\r\nE|-----2---3---------|--3-----3--2---0---------2--|[/tab]\r\n\r\n=====================================================\r\nFor the GUITAR chord box diagrams to match my\r\nsuggested choices you need to manually select the\r\nfollowing choice of options by clicking on the\r\nforward/backward arrows below five of the diagrams.\r\nAll the other chord boxes can be the default\r\nfirst option and don't need any reselecting.\r\nAs long as you are logged into your account,\r\nthese choices will be saved automatically for every\r\ntime you view this tab\r\n    E7          G         C/B\r\n<30 of 47>  <2 of 27>  <12 of 15>\r\n         Asus4       G/F#\r\n       <2 of 21>  <12 of 16>"
+}

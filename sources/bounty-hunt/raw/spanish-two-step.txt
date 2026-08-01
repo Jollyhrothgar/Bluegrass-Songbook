@@ -1,0 +1,65 @@
+# title: Spanish Two Step
+# artist: Bob Wills & His Texas Playboys
+# source_url: https://tabs.ultimate-guitar.com/tab/bob-wills-his-texas-playboys/new-spanish-two-step-chords-5207049
+# fetched_at: 2026-08-01T11:31:52
+
+Video https://www.youtube.com/watch?v=vAesys4xLXc&t=29s
+
+Key E capo 2
+
+Fake tabs notes for a partial intro only,
+
+[Intro]
+   A          E          A          E
+e|---5---5------4---4------5---5------4---4------2-4---|
+B|-5---5---5--3---5---5--5---5--5---3---5---5--5-------|
+G|-----------------------------------------------------|
+D|-----------------------------------------------------|
+A|-----------------------------------------------------|
+E|-----------------------------------------------------|
+
+A     A     A     E     E     E     E     A     A
+
+A     A     E     E     E     E     A     A
+
+[Verse 1]
+A                               E
+Down below the Rio Grande a senorita held my hand
+                            A
+And sweetly sang an old melody
+                                     E
+Without a worry or a care a rose she gave me from her hair
+                                   A
+And then she whispered si senor si si
+
+[Verse 2]
+                          E
+In a cabaret we dance the hours away
+                                         A
+Her eyes told more than words ever could say
+                                E
+I told her I had to go left her down in Mexico
+                                              A
+While the band play Spanish Two Step soft and low
+
+[Solo]
+D     D     G     E     A     A7     D     D
+D     D     G     E     A     A7     D     D
+
+D     D     G     E     A     A7     D     D
+D     D     G     E     A     A7
+
+D     D     A     A7    E     E      E     E     A    A
+A     A7    E     E     E     E      A     A
+
+A     A7    E     E     E     E      A     A
+
+
+[Verse 3]
+A                               E
+I told her I had to go left her down in Mexico
+                                              A
+While the band play Spanish Two Step soft and low
+
+[Solo]
+A     E     A     E     A     A

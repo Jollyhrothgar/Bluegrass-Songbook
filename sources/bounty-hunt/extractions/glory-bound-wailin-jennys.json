@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "Glory Bound Wailin' Jennys",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:51:52",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 3
+ },
+ "candidate": null,
+ "content": null
+}

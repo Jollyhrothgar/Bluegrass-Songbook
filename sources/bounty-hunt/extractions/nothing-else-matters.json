@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Nothing Else Matters",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Jerry Douglas",
+   "Chris Stapleton",
+   "Iron Horse",
+   "Steve \u2019n\u2019 Seagulls"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:29:09",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Em"
+ },
+ "candidate": {
+  "id": 830604,
+  "song_id": 29886,
+  "song_name": "Nothing Else Matters",
+  "artist_id": 954,
+  "artist_name": "Metallica",
+  "type": "Chords",
+  "part": "",
+  "version": 3,
+  "common_version": 1,
+  "votes": 5416,
+  "difficulty": "novice",
+  "rating": 4.85409,
+  "date": "1243641601",
+  "status": "approved",
+  "preset_id": 9823,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Em",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 167
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/8/1829/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/4/1471/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1582199551,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n(all 6/8 except for the one short bar which is 3/8)\r\n| [ch]Em[/ch]    |   %   |   %   |   %   |\r\n| [ch]Em[/ch]    |   %   | [ch]Em[/ch] |\r\n\r\n| [ch]Am[/ch]    |   %   | [ch]C[/ch]     | [ch]D[/ch]     |\r\n| [ch]Em[/ch]    |   %   |   %   |   %   |\r\n\r\n| [ch]Em[/ch]    | [ch]D[/ch]  [ch]C[/ch]  |\r\n| [ch]Em[/ch]    | [ch]D[/ch]  [ch]C[/ch]  |\r\n| [ch]Em[/ch]    | [ch]D[/ch]  [ch]C[/ch]  | [ch]G[/ch]  [ch]B7[/ch] |\r\n| [ch]Em[/ch]    |   %   |\r\n\r\n[Verse]\r\n[tab][ch]Em[/ch]                    [ch]D[/ch]     [ch]C[/ch]\r\n   So close no matter how far[/tab]\r\n[tab][ch]Em[/ch]                       [ch]D[/ch]          [ch]C[/ch]\r\n   Couldn't be much more from the heart[/tab]\r\n[tab][ch]Em[/ch]                  [ch]D[/ch]       [ch]C[/ch]\r\n   Forever trusting who we are[/tab]\r\n[tab][ch]G[/ch]      [ch]B7[/ch]           [ch]Em[/ch]\r\n   and nothing else matters[/tab]\r\n\r\n[tab][ch]Em[/ch]                [ch]D[/ch]          [ch]C[/ch]\r\n   Never opened myself this way[/tab]\r\n[tab][ch]Em[/ch]                          [ch]D[/ch]     [ch]C[/ch]\r\n   Life is ours, we live it our way[/tab]\r\n[tab][ch]Em[/ch]                         [ch]D[/ch]      [ch]C[/ch]\r\n   All these words I don't just say[/tab]\r\n[tab][ch]G[/ch]      [ch]B7[/ch]           [ch]Em[/ch]\r\n   and nothing else matters[/tab]\r\n\r\n[tab][ch]Em[/ch]                    [ch]D[/ch]         [ch]C[/ch]\r\n   Trust I seek and I find in you[/tab]\r\n[tab][ch]Em[/ch]                  [ch]D[/ch]           [ch]C[/ch]\r\n   Every day for us something new[/tab]\r\n[tab][ch]Em[/ch]                 [ch]D[/ch]           [ch]C[/ch]\r\n   Open mind for a different view[/tab]\r\n[tab][ch]G[/ch]      [ch]B7[/ch]           [ch]Em[/ch]      [ch]C[/ch]  [ch]A[/ch]\r\n   and nothing else matters[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]D[/ch]                           [ch]C[/ch]  [ch]A[/ch]\r\n  Never cared for what they do[/tab]\r\n[tab][ch]D[/ch]                           [ch]C[/ch]  [ch]A[/ch]\r\n  Never cared for what they know[/tab]\r\n[tab][ch]D[/ch]       [ch]Em[/ch]\r\n  But I know[/tab]\r\n\r\n[Verse]\r\n[tab][ch]Em[/ch]                    [ch]D[/ch]     [ch]C[/ch]\r\n   So close no matter how far[/tab]\r\n[tab][ch]Em[/ch]                       [ch]D[/ch]          [ch]C[/ch]\r\n   Couldn't be much more from the heart[/tab]\r\n[tab][ch]Em[/ch]                  [ch]D[/ch]       [ch]C[/ch]\r\n   Forever trusting who we are[/tab]\r\n[tab][ch]G[/ch]      [ch]B7[/ch]           [ch]Em[/ch]      [ch]C[/ch]  [ch]A[/ch]\r\n   and nothing else matters[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]D[/ch]                           [ch]C[/ch]  [ch]A[/ch]\r\n  Never cared for what they do[/tab]\r\n[tab][ch]D[/ch]                           [ch]C[/ch]  [ch]A[/ch]\r\n  Never cared for what they know[/tab]\r\n[tab][ch]D[/ch]       [ch]Em[/ch]\r\n  But I know[/tab]\r\n\r\n[Instrumental]\r\n| [ch]Em[/ch]    |   %   | [ch]Am[/ch]    |   %   |\r\n| [ch]C[/ch]     | [ch]D[/ch]     | [ch]Em[/ch]    |   %   |\r\n\r\n| [ch]Em[/ch]    |   %   | [ch]Am[/ch]    |   %   |\r\n| [ch]C[/ch]     | [ch]D[/ch]     | [ch]Em[/ch]    |   %   |\r\n\r\n[Verse]\r\n[tab][ch]Em[/ch]                [ch]D[/ch]          [ch]C[/ch]\r\n   Never opened myself this way[/tab]\r\n[tab][ch]Em[/ch]                          [ch]D[/ch]     [ch]C[/ch]\r\n   Life is ours, we live it our way[/tab]\r\n[tab][ch]Em[/ch]                         [ch]D[/ch]      [ch]C[/ch]\r\n   All these words I don't just say[/tab]\r\n[tab][ch]G[/ch]      [ch]B7[/ch]           [ch]Em[/ch]\r\n   and nothing else matters[/tab]\r\n\r\n[tab][ch]Em[/ch]                    [ch]D[/ch]         [ch]C[/ch]\r\n   Trust I seek and I find in you[/tab]\r\n[tab][ch]Em[/ch]                  [ch]D[/ch]           [ch]C[/ch]\r\n   Every day for us something new[/tab]\r\n[tab][ch]Em[/ch]                 [ch]D[/ch]           [ch]C[/ch]\r\n   Open mind for a different view[/tab]\r\n[tab][ch]G[/ch]      [ch]B7[/ch]           [ch]Em[/ch]     [ch]C[/ch]   [ch]A[/ch]\r\n   and nothing else matter-ers[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]D[/ch]                           [ch]C[/ch]  [ch]A[/ch]\r\n  Never cared for what they say[/tab]\r\n[tab][ch]D[/ch]                            [ch]C[/ch]  [ch]A[/ch]\r\n  Never cared for games they play[/tab]\r\n[tab][ch]D[/ch]                           [ch]C[/ch]  [ch]A[/ch]\r\n  Never cared for what they do[/tab]\r\n[tab][ch]D[/ch]                           [ch]C[/ch]  [ch]A[/ch]\r\n  Never cared for what they know[/tab]\r\n[tab][ch]D[/ch]       [ch]Em[/ch]\r\n  And I know[/tab]\r\n\r\n[Solo]\r\n| [ch]Em[/ch]    | [ch]D[/ch]  [ch]C[/ch]  |\r\n| [ch]Em[/ch]    | [ch]D[/ch]  [ch]C[/ch]  |\r\n| [ch]Em[/ch]    | [ch]D[/ch]  [ch]C[/ch]  | [ch]G[/ch]  [ch]B7[/ch] |\r\n| [ch]Em[/ch]    |   %   |   %   |   %   |\r\n\r\n[Verse]\r\n[tab][ch]Em[/ch]                    [ch]D[/ch]     [ch]C[/ch]\r\n   So close no matter how far[/tab]\r\n[tab][ch]Em[/ch]                       [ch]D[/ch]          [ch]C[/ch]\r\n   Couldn't be much more from the heart[/tab]\r\n[tab][ch]Em[/ch]                  [ch]D[/ch]       [ch]C[/ch]\r\n   Forever trusting who we are[/tab]\r\n[tab][ch]G[/ch]      [ch]B7[/ch]           [ch]Em[/ch]\r\n   No, nothing else matters[/tab]\r\n\r\n[Outro]\r\n(6/8 except short 3/8 bar)\r\n| [ch]Em[/ch]    |   %   | [ch]Em[/ch] | [ch]Em[/ch]    |   %   | x3\r\n[tab]| [ch]Em[/ch]    |   %   | [ch]Em[/ch] |\r\n(fade out)[/tab]"
+}

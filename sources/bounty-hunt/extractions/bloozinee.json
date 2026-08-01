@@ -1,0 +1,9 @@
+{
+ "wanted": {
+  "title": "Bloozinee",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "status": "error: AttributeError(\"'str' object has no attribute 'get'\")",
+ "scraped_at": "2026-08-01T11:41:25"
+}

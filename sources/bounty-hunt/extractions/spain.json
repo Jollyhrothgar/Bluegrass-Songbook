@@ -1,0 +1,71 @@
+{
+ "wanted": {
+  "title": "Spain",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "David Grisman",
+   "Jerry Douglas",
+   "B\u00e9la Fleck",
+   "Buckethead"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:48",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 7.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1019473,
+  "song_id": 201617,
+  "song_name": "Spain",
+  "artist_id": 19949,
+  "artist_name": "Between the Trees",
+  "type": "Chords",
+  "part": "",
+  "version": 3,
+  "common_version": 1,
+  "votes": 5,
+  "difficulty": "novice",
+  "rating": 4.8005,
+  "date": "1295308801",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 3305701
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1295308801,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "\r\nBetween The Trees\r\nSpain\r\n\r\nNo Capo\r\n\r\n\r\nVerse 1\r\n\r\n[tab][ch]Em[/ch]             [ch]D[/ch]                 [ch]C[/ch]\r\nCan we sail to spain just me and you[/tab]\r\n[tab]                   [ch]Am[/ch]\r\nOpen ocean and the bright blue sky above[/tab]\r\n[tab][ch]Em[/ch]                [ch]D[/ch]               [ch]C[/ch]     [ch]Am[/ch]\r\nWhat do you want? Do you want the moon? I'll get it for you[/tab]\r\n[tab][ch]Em[/ch]              [ch]D[/ch]                  [ch]C[/ch]\r\nFrom the top so high To the valley low[/tab]\r\n[tab]                                [ch]Am[/ch]                  [ch]Em[/ch]\r\nI want to give you whatever you need so just let me know[/tab]\r\n[tab]            [ch]D[/ch]               [ch]C[/ch]      [ch]Am[/ch]\r\nCause all I want is more of you[/tab]\r\n\r\n\r\nPre Chorus\r\n\r\n[tab][ch]C[/ch]             [ch]D[/ch]\r\nAll I want is you[/tab]\r\n\r\n\r\nChorus\r\n\r\n[tab]          [ch]Am[/ch]   \r\nGive me a dance she says[/tab]\r\n[tab]             [ch]C[/ch]\r\nJust take my hand she says[/tab]\r\n[tab]             [ch]G[/ch]   [ch]D[/ch]\r\nI don't want anything[/tab]\r\n[tab]               [ch]Am[/ch]\r\nLet's make our getaway[/tab]\r\n[tab]            [ch]C[/ch]\r\nJust me and you babe[/tab]\r\n[tab]                [ch]G[/ch]              [ch]D[/ch]\r\nThe rest of the world can wait[/tab]\r\n[tab]                            [ch]Am[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch]\r\nCause I've been waiting for you[/tab]\r\n[tab]                      [ch]Am[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch]\r\nI've been waiting for you[/tab]\r\n\r\n\r\nVerse 2\r\n\r\n[tab][ch]Em[/ch]                [ch]D[/ch]               [ch]C[/ch]\r\nWith the world we know waiting on hold[/tab]\r\n[tab]                      [ch]Am[/ch]             [ch]Em[/ch]\r\nDo you think we could really just be alone?[/tab]\r\n[tab]         [ch]D[/ch]                 [ch]C[/ch]        [ch]Am[/ch]\r\nFar from all that seems to keep us apart? [/tab]\r\n[tab][ch]Em[/ch]         [ch]D[/ch]              \r\nI need you so don't leave yet[/tab]\r\n[tab]      [ch]C[/ch]                       [ch]Am[/ch]\r\nLet's find a way to stay even if just for a moment[/tab]\r\n[tab][ch]Em[/ch]          [ch]D[/ch]               [ch]C[/ch]     [ch]Am[/ch]\r\nCause all I need is more of you         (Pre Chorus) (Chorus 3x)[/tab]\r\n\r\n\r\n(Your pretty much just playing the chorus chords \r\n over and over after the second verse)\r\n\r\n\r\nChords\r\n\r\n[ch]Em[/ch] - 0-2-2-0-3-3\r\n\r\n[ch]D[/ch] - x-0-0-2-3-2\r\n\r\n[ch]C[/ch] - x-3-x-0-3-3 or x-3-2-0-3-3\r\n\r\n[ch]G[/ch] - 3-x-0-0-3-3 or 3-2-0-0-3-3\r\n\r\n[ch]Am[/ch] - x-0-2-2-1-0 or 5-7-7-5-5-5 (I just like it sounds better like this)\r\n\r\nx = Mute or don't play"
+}

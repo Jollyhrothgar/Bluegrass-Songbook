@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Pink",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Nonviolenze",
+   "Carbon Leaf",
+   "Dolly Parton",
+   "The Grassmasters"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:29:40",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 50
+ },
+ "candidate": null,
+ "content": null
+}

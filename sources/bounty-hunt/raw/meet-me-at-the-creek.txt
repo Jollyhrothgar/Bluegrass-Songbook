@@ -1,0 +1,134 @@
+# title: Meet Me at the Creek
+# artist: Billy Strings
+# source_url: https://tabs.ultimate-guitar.com/tab/billy-strings/meet-me-at-the-creek-chords-2744361
+# fetched_at: 2026-08-01T11:36:41
+
+Well ya strum it like it's a bluegrass song.
+
+Key of E, Billy plays it with a Capo on the 2nd Fret so you can use the transpose (-2) feature if you'd like 
+the chords relative to the capo. 
+
+[Verse 1]
+ E                     D
+Well I'm standin' all alone
+       A           G
+By the river of my home
+ E                                  B7
+Thinkin' 'bout the days I've left behind
+ E               D
+All the years I rode
+       A           G
+Not a nickel can I show
+         E             B7              E
+And the river helps to ease my worried mind
+
+
+[Verse 2]
+          E              D
+Well the river run all night
+          A               G
+Lord, the river runs all day
+  E                                     B7
+I can't run no more 'cause I'm here to stay
+  E                 D
+I had an eye for trouble
+         A                G
+And I've lived a life of pain
+      E                   B7           E
+I sit back and let that water heal my brain
+
+
+[Chorus]
+ D                       E
+I'm letting go of all my trouble
+ D                             B7
+I think I'll be right here to stay
+ E                          D                 A        G
+Well the water keeps a-churnin' while my poor heart is burnin'
+ E           B7            E
+Muddy water, take my pain away
+
+
+[Verse 3]
+  E                        D
+Well one thing I want to know
+          A                G
+Lord, is where we people go
+      E                               B7
+When everything comes crashin' to the ground
+   E              D
+Meet me at the creek
+         A                G
+Grab a beer and tap your feet
+ E             B7              E
+See that muddy water flowin' down
+
+
+[Chorus]
+ D                         E
+I'm letting go of all my trouble
+ D                             B7
+I think I'll be right here to stay
+          E                D           A                G
+Well the water keeps a-churnin' while my poor heart is burnin'
+  E           B7           E
+Muddy water, take my pain away
+
+
+[Instrumental]
+                               E   E    D   D    A   A   G   G
+                 Choppy part: Dun Dun| Dun Dun| Dun Dun|Dun Dun|
+
+
+Back to bluegrass strumming: E E B7 B7
+
+                               E   E    D   D    A   A   G   G
+                 Choppy part: Dun Dun| Dun Dun| Dun Dun|Dun Dun|
+
+          Chromatic walkdown: E G F# F E G F# F Em (drawn out strum -> jam on E minor)
+
+          Jam goes on for like 4 or 5 minutes floating around E minor. Towards the end it
+          transitions to Em D Em F#m a few times before walking up E F# G A. It's pretty weird.
+          I'm not exactly sure how to explain it, you'll have to listen real carefully.
+          Next part transitioning out is kinda tough but you should be able to get it. I'm ~85%
+          sure the chords are right =]
+
+          |E E |D D |
+          |E E |D D |
+          |E E |D D |
+          |F F F F |
+          |E E |D D |
+          |E E |D D |
+          |E E |D D |
+          |E D A C E
+          |E E |
+          |E D A C B |
+          |B B ->NEXT VERSE|
+
+
+[Verse 1]
+         E            D
+Well I'm standin' all alone
+         A         G
+By the river of my home
+ E                                B7
+Thinkin' 'bout the days I've left behind
+ E              D
+All the years I rode
+       A            G
+Not a nickel can I show
+         E             B7                E
+And the river helps to ease my worried mind
+
+
+[Chorus]
+ D                        E
+I'm letting go of all my trouble
+ D                        B7
+I think I'll be right here to stay
+          E              D                A            G
+Well the water keeps a-churnin' while my poor heart is burnin'
+E            B7           E
+Muddy water, take my pain away
+E            B7           E
+Muddy water, take my pain away

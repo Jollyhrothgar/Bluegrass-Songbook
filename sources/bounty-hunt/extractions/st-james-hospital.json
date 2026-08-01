@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "St. James Hospital",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Tony Rice Unit",
+   "Billy Strings",
+   "Doc Watson",
+   "Tony Rice"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:56",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1805613,
+  "song_id": 1643362,
+  "song_name": "St James Hospital",
+  "artist_id": 13063,
+  "artist_name": "Doc Watson",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 42,
+  "difficulty": "",
+  "rating": 4.89789,
+  "date": "1453233767",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 168595
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/8/9/89538/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/6/166/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1470418821,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "St. James hospital - Doc Watson\r\n\r\nFrom the album \"Doc Watson\" released in 1964\r\n\r\nOriginal key: Bm\r\n\r\n\r\n[Introduction]\r\n\r\n[ch]Am[/ch]\r\n\r\n[Verse 1]\r\n[tab][ch]Am[/ch]        [ch]G[/ch]                  [ch]E7[/ch]    [ch]Am[/ch]\r\nEarly one morning at the St. James Hospital[/tab]\r\n[tab][ch]Am[/ch]        [ch]G[/ch]                   [ch]E7[/ch]\r\nEarly one morning morn in the month of May[/tab]\r\n[tab]       [ch]Am[/ch]                 [ch]G[/ch]            [ch]E7[/ch]           [ch]Am[/ch]\r\nWhen I looked through the window and a'spied a dear cowboy[/tab]\r\n[tab][ch]Am[/ch]     [ch]Dm[/ch]        [ch]E7[/ch]          [ch]Am[/ch]\r\nA dear cowboy as cold as the clay[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]Am[/ch]          [ch]G[/ch]         [ch]E7[/ch]          [ch]Am[/ch]\r\nSet ye down by me and hear my sad story[/tab]\r\n[tab][ch]Am[/ch]          [ch]G[/ch]         [ch]E7[/ch] \r\nSet ye down by me and sing me a song     [/tab]\r\n[tab]       [ch]Am[/ch]           [ch]G[/ch]             [ch]E7[/ch]           [ch]Am[/ch]\r\nFor my poor head is aching and my sad heart is breaking[/tab]\r\n[tab][ch]Am[/ch]         [ch]Dm[/ch]          [ch]E7[/ch]             [ch]Am[/ch] \r\nI'm a poor cowboy that knowed he done wrong[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]Am[/ch]            [ch]G[/ch]                [ch]E7[/ch]      [ch]Am[/ch]\r\nSend for that doctor to come n'heal up my body[/tab]\r\n[tab][ch]Am[/ch]               [ch]G[/ch]                    [ch]E7[/ch]\r\nAnd send for the preacher to come and pray for my soul[/tab]\r\n[tab]       [ch]Am[/ch]           [ch]G[/ch]              [ch]E7[/ch]          [ch]Am[/ch]\r\nFor my poor head is aching and my sad heart is breaking[/tab]\r\n[tab][ch]Am[/ch]    [ch]Dm[/ch]              [ch]E7[/ch]         [ch]Am[/ch]\r\nI'm a poor cowboy and hell is my doom[/tab]\r\n\r\n[Verse 4]\r\n[tab][ch]Am[/ch]                 [ch]G[/ch]                   [ch]E7[/ch]       [ch]Am[/ch]\r\nGet sixteen pretty maidens to come and carry my coffin[/tab]\r\n[tab][ch]Am[/ch]             [ch]G[/ch]                   [ch]E7[/ch]\r\nSixteen pretty maidens to come and sing me a song[/tab]\r\n[tab]    [ch]Am[/ch]          [ch]G[/ch]                 [ch]E7[/ch]             [ch]Am[/ch]\r\nAnd tell 'em to bring some o'them sweet smelling roses[/tab]\r\n[tab][ch]Am[/ch]            [ch]Dm[/ch]               [ch]E7[/ch]        [ch]Am[/ch]\r\nSo they can't smell me as they tote me along[/tab]\r\n\r\n[Verse 5]\r\n[tab][ch]Am[/ch]             [ch]G[/ch]          [ch]E7[/ch]            [ch]Am[/ch]\r\nBeat the drums slowly and play the fife lowly[/tab]\r\n[tab][ch]Am[/ch]             [ch]G[/ch]           [ch]E7[/ch]\r\nPlay the death march as ye carry me along[/tab]\r\n[tab]      [ch]Am[/ch]         [ch]G[/ch]          [ch]E7[/ch]      [ch]Am[/ch]\r\nThrow bunches of lilies all over my coffin[/tab]\r\n[tab][ch]Am[/ch]                [ch]Dm[/ch]          [ch]E7[/ch]             [ch]Am[/ch]\r\nThare goes a poor cowboy that knowed he done wrong.[/tab]"
+}

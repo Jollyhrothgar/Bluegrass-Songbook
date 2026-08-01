@@ -83,6 +83,7 @@ class Tag(str, Enum):
     Pop = "Pop"
     Jazz = "Jazz"
     Rock = "Rock"  # Rock, alternative, punk, indie - for covers
+    Americana = "Americana"  # Modern roots/jam-band repertoire that crosses into bluegrass jams
 
     # Vibe/Structure Tags
     Instrumental = "Instrumental"
@@ -163,6 +164,9 @@ choose 1-3 tags (preferring fewer, more accurate tags) for each song from the al
 - **Rock**: Rock, alternative, punk, indie, metal - Radiohead, Green Day, Beatles, Eagles
 - **Pop**: Mainstream pop, Christmas songs, easy listening
 - **Jazz**: Jazz standards, swing
+- **Americana**: Modern roots / alt-country / jam-band material that crosses into bluegrass jams -
+  Grateful Dead songbook, New Riders, Old Crow Medicine Show, Avett Brothers, Emmylou Harris.
+  NOT Bluegrass: use for americana repertoire even when bluegrass bands jam it.
 
 ### Structure Tags
 - **Instrumental**: No vocals (fiddle tunes, breakdowns, rags)

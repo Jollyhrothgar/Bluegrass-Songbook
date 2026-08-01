@@ -1,0 +1,72 @@
+{
+ "wanted": {
+  "title": "Build Me Up From Bones",
+  "type": "Vocal",
+  "key": "Am",
+  "difficulty": "Intermediate",
+  "coverage": 0,
+  "core": false,
+  "artists": [],
+  "notes": "v1-curated (no cover-graph data). modern",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:38:03",
+ "status": "accepted",
+ "validation": {
+  "tier": "mb-recording",
+  "score": 91.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2220427,
+  "song_id": 1460160,
+  "song_name": "Build Me Up From Bones",
+  "artist_id": 30218,
+  "artist_name": "Sarah Jarosz",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 39,
+  "difficulty": "",
+  "rating": 4.72391,
+  "date": "1509322824",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "Sarah Jarosz plays this on an octave mandolin with capo at the third fret, but I've transcribed it without. To play with a capo, transpose up three half steps.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1095317
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/5/4/547160/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/6/16320/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1554372047,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]Dm7[/ch]  [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\n[ch]Dm7[/ch]  [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\n\r\n[Verse]\r\n[tab][ch]Dm7[/ch]       [ch]Bbsus2[/ch]      [ch]C5[/ch]\r\nBuild me up from bones[/tab]\r\n[tab][ch]Dm7[/ch]      [ch]Bbsus2[/ch]    [ch]C5[/ch]\r\nWrap me up in skin[/tab]\r\n[tab]         [ch]Gm[/ch]      [ch]Bb[/ch]                [ch]C5[/ch]\r\nHold me close enough to breathe me in[/tab]\r\n[tab]    [ch]Dm7[/ch]        [ch]Bbsus2[/ch]  [ch]C5[/ch]\r\nThe moon\u2019s a fingernail[/tab]\r\n[tab][ch]Dm7[/ch]         [ch]Bbsus2[/ch]   [ch]C5[/ch]\r\nScratching on the back[/tab]\r\n[tab]       [ch]Gm[/ch]       [ch]Bb[/ch]               [ch]C5[/ch]\r\nOf the night in which we lay beside[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]Eb[/ch]   [ch]Bb[/ch]             [ch]Csus4[/ch]\r\nI held every inch of you[/tab]\r\n[tab]  [ch]Eb[/ch]    [ch]Bb[/ch]              [ch]Csus4[/ch]\r\nI wrote every line for you[/tab]\r\n[tab]  [ch]Dm[/ch]   [ch]C[/ch]         [ch]Eb[/ch]        [ch]Bb[/ch]     [ch]Abmaj7[/ch]\r\nI made time when time was all but gone[/tab]\r\n[tab]            [ch]Bb[/ch]                [ch]Dm7[/ch]\r\nYou\u2019re the love I\u2019ve always known[/tab]\r\n\r\n [ch]Dm7[/ch]   [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\n [ch]Dm7[/ch]   [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\n\r\n[Verse]\r\n[tab]    [ch]Dm7[/ch]         [ch]Bbsus2[/ch]       [ch]C5[/ch]\r\nThe night\u2019s so dark and grey[/tab]\r\n[tab]           [ch]Dm7[/ch]        [ch]Bbsus2[/ch]      [ch]C5[/ch]\r\nBut you\u2019ve helped me find my way[/tab]\r\n[tab]            [ch]Gm[/ch]       [ch]Bb[/ch]                 [ch]C5[/ch]\r\nThrough the wild and wonders of this world[/tab]\r\n[tab]   [ch]Dm7[/ch]       [ch]Bbsus2[/ch]     [ch]C5[/ch]\r\nSo take me with you now[/tab]\r\n[tab]         [ch]Dm7[/ch]        [ch]Bbsus2[/ch]    [ch]C5[/ch]\r\n'Cause I need to show you how[/tab]\r\n[tab]      [ch]Gm[/ch]       [ch]Bb[/ch]              [ch]C5[/ch]\r\nI can love you better than before[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]Eb[/ch]   [ch]Bb[/ch]             [ch]Csus4[/ch]\r\nI held every inch of you[/tab]\r\n[tab]  [ch]Eb[/ch]    [ch]Bb[/ch]              [ch]Csus4[/ch]\r\nI wrote every line for you[/tab]\r\n[tab]  [ch]Dm[/ch]   [ch]C[/ch]         [ch]Eb[/ch]        [ch]Bb[/ch]     [ch]Abmaj7[/ch]\r\nI made time when time was all but gone[/tab]\r\n[tab]            [ch]Bb[/ch]                [ch]Dm7[/ch]\r\nYou\u2019re the love I\u2019ve always known[/tab]\r\n\r\n[tab] [ch]Dm[/ch]    [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\n        Oooooooh[/tab]\r\n [ch]Dm7[/ch]   [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\n\r\n[Instrumental Break]\r\n[ch]Ebmaj7[/ch]  [ch]Ebmaj7[/ch]  [ch]Dbmaj7[/ch]  [ch]Dbmaj7[/ch]\r\n[ch]G7sus2[/ch]  [ch]G7sus2[/ch]  [ch]Cm[/ch]  [ch]Bb[/ch]\r\n[ch]Ebmaj7[/ch]  [ch]Ebmaj7[/ch]  [ch]Dbmaj7[/ch]  [ch]Dbmaj7[/ch]\r\n[ch]Fmaj7[/ch]  [ch]Fmaj7[/ch]  [ch]Cm[/ch]  [ch]Bb[/ch]\r\n[ch]Dm7[/ch]   [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\n[ch]Dm7[/ch]   [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\n\r\n[Verse]\r\n[tab]   [ch]Dm7[/ch]        [ch]Bbsus2[/ch]     [ch]C5[/ch]\r\nSo play it sweet and low[/tab]\r\n[tab]             [ch]Dm7[/ch]       [ch]Bbsus2[/ch]   [ch]C5[/ch]\r\n'Cause we\u2019ve got no where to go[/tab]\r\n[tab]     [ch]Gm[/ch]        [ch]Bb[/ch]                [ch]C5[/ch]\r\nI am yours and you\u2019re the love I know[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]Eb[/ch]   [ch]Bb[/ch]             [ch]Csus4[/ch]\r\nI held every inch of you[/tab]\r\n[tab]  [ch]Eb[/ch]    [ch]Bb[/ch]              [ch]Csus4[/ch]\r\nI wrote every line for you[/tab]\r\n[tab]  [ch]Dm[/ch]   [ch]C[/ch]         [ch]Eb[/ch]        [ch]Bb[/ch]     [ch]Abmaj7[/ch]\r\nI made time when time was all but gone[/tab]\r\n[tab]            [ch]Bb[/ch]                [ch]Dm7[/ch]\r\nYou\u2019re the love I\u2019ve always known[/tab]\r\n\r\n[Outro]\r\n [ch]Dm7[/ch]   [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\n[tab] [ch]Dm7[/ch]   [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\nOooooooh[/tab]\r\n [ch]Dm7[/ch]   [ch]Bbsus2[/ch]  [ch]C5[/ch]  [ch]C5[/ch]\r\n [ch]Dm7[/ch]   [ch]Bbsus2[/ch]  [ch]C5[/ch]"
+}

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Revelation",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Peter Rowan",
+   "Larry Sparks",
+   "The String Cheese Incident",
+   "Poutn\u00edci"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:17",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 753454,
+  "song_id": 4144,
+  "song_name": "Revelation",
+  "artist_id": 224,
+  "artist_name": "Third Day",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 159,
+  "difficulty": "",
+  "rating": 4.66302,
+  "date": "1226275201",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 4805
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/160172/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/8/181560/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1679111480,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n[tab]   [ch]A[/ch]                                         [ch]E[/ch]\r\nMy life has led me down the road that\u2019s so uncertain[/tab]\r\n[tab]                             [ch]G[/ch]\r\nNow I am left alone and I am broken trying to find my way[/tab]\r\n[tab][ch]D[/ch]\r\nTrying to find the faith that\u2019s gone[/tab]\r\n\r\n[Verse 2]\r\n[tab]     [ch]A[/ch]                                        [ch]E[/ch]\r\nThis time I know that You are holding all the answers[/tab]\r\n[tab]                                    [ch]G[/ch]\r\nI\u2019m tired of losing hope and taking chances[/tab]\r\n[tab]                            [ch]D[/ch]\r\nOn roads that never seem to be the ones that bring me home[/tab]\r\n\r\n[Chorus]\r\n[tab]              [ch]A[/ch]                       [ch]G[/ch]\r\nGive me a revelation, show me what to do[/tab]\r\n[tab]                          [ch]Bm[/ch]\r\nCause I\u2019ve been trying to find my way[/tab]\r\n[tab]                [ch]D[/ch]\r\nI haven\u2019t got a clue[/tab]\r\n[tab]                 [ch]A[/ch]                         [ch]G[/ch]\r\nTell me should I stay here or do I need to move[/tab]\r\n[tab]              [ch]Bm[/ch]                               [ch]D[/ch]\r\nGive me a revelation, I\u2019ve got nothing without You[/tab]\r\n[tab]                         [ch]A[/ch]\r\nI\u2019ve got nothing without You[/tab]\r\n\r\n[Verse 3]\r\n[tab]   [ch]A[/ch]                                          [ch]E[/ch]\r\nMy life has led me down this path that\u2019s ever winding[/tab]\r\n[tab]                                        [ch]G[/ch]\r\nThrough every twist and turn I\u2019m always finding[/tab]\r\n[tab]                              [ch]D[/ch]\r\nThat I am lost again, tell me when this road will ever end[/tab]\r\n\r\n[Chorus]\r\n[tab]              [ch]A[/ch]                       [ch]G[/ch]\r\nGive me a revelation, show me what to do[/tab]\r\n[tab]                          [ch]Bm[/ch]\r\nCause I\u2019ve been trying to find my way[/tab]\r\n[tab]                [ch]D[/ch]\r\nI haven\u2019t got a clue[/tab]\r\n[tab]                 [ch]A[/ch]                         [ch]G[/ch]\r\nTell me should I stay here or do I need to move[/tab]\r\n[tab]              [ch]Bm[/ch]                               [ch]D[/ch]\r\nGive me a revelation, I\u2019ve got nothing without You[/tab]\r\n[tab]                         [ch]A[/ch]\r\nI\u2019ve got nothing without You[/tab]\r\n\r\n[Bridge]\r\n[tab][ch]G[/ch]                              [ch]Bm[/ch]\r\nI don\u2019t know where I can turn, tell me when will I learn[/tab]\r\n[tab][ch]F#m[/ch]                               [ch]E[/ch]\r\nWon\u2019t you show me where I need to go[/tab]\r\n[tab][ch]G[/ch]\r\nLet me follow Your lead[/tab]\r\n[tab][ch]Bm[/ch]                        [ch]F#m[/ch]                     [ch]G[/ch]     [ch]E[/ch]\r\nI know that it\u2019s the only way that I can get back home (Give me a...)[/tab]"
+}

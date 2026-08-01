@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Renegade",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Michael Martin Murphey",
+   "The Charlie Daniels Band",
+   "Iron Horse",
+   "Charlie Daniels"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:09",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.3,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 3775964,
+  "song_id": 6669257,
+  "song_name": "Renegade",
+  "artist_id": 154989,
+  "artist_name": "Big Red Machine",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 60,
+  "difficulty": "",
+  "rating": 4.94295,
+  "date": "1625223337",
+  "status": "approved",
+  "preset_id": 49979,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "New song that just came out, this version with capo on 5 is easier to play than with no capo.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1054514
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/7/1706259/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/2/42156/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1625223337,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n[tab][ch]G[/ch]                                       [ch]C[/ch]\r\nI tapped on your window on your darkest night[/tab]\r\n[tab]                                [ch]Am[/ch]\r\nThe shape of you was jagged and weak[/tab]\r\n[tab]                            [ch]D[/ch]\r\nThere was nowhere for me to stay, but I stayed anyway[/tab]\r\n[tab][ch]Em[/ch]                               [ch]G[/ch]\r\nAnd if I would've known how many pieces you had crumbled into[/tab]\r\n[tab][ch]C[/ch]                     [ch]D[/ch]\r\nI might have let them lay[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]                                [ch]G[/ch]\r\nAre you really gonna talk about timin\u2019 in times like these?[/tab]\r\n[tab]                 [ch]C[/ch]\r\nAnd let all your damage, damage me[/tab]\r\n[tab]               [ch]Am[/ch]\r\nAnd carry your baggage up my street[/tab]\r\n[tab]                 [ch]D[/ch]\r\nAnd make me your future history, it's time[/tab]\r\n[tab][ch]Em[/ch]                               [ch]G[/ch]\r\nYou've come a long way, open the blinds, let me see your face[/tab]\r\n[tab]             [ch]C[/ch]                                  [ch]D[/ch]\r\nYou wouldn\u2019t be the first renegade, to need somebody[/tab]\r\n[tab][ch]Em[/ch]                    [ch]G[/ch]                          [ch]C[/ch]               [ch]D[/ch]\r\nIs it insensitive for me to say \"Get your shit together so I can love you?\"[/tab]\r\n[tab][ch]Em[/ch]                      [ch]G[/ch]                               [ch]C[/ch]\r\nIs it really your anxiety that stops you from givin' me everything?[/tab]\r\n[tab]                 [ch]D[/ch]\r\nOr do you just not want to?[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]G[/ch]                                       [ch]C[/ch]\r\nI tapped on your window on your darkest night[/tab]\r\n[tab]                                [ch]Am[/ch]\r\nThe shape of you was jagged and weak[/tab]\r\n[tab]                            [ch]D[/ch]\r\nThere was nowhere for me to stay, but I stayed anyway[/tab]\r\n[tab][ch]G[/ch]                                          [ch]C[/ch]\r\nYou fire off missiles 'cause you hate yourself[/tab]\r\n[tab]                                   [ch]Am[/ch]\r\nAnd do you know you're demolishin' me?[/tab]\r\n[tab]                                    [ch]D[/ch]\r\nAnd then you squeeze my hand as I'm about to leave[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]                                [ch]G[/ch]\r\nAre you really gonna talk about timin\u2019 in times like these?[/tab]\r\n[tab]                 [ch]C[/ch]\r\nAnd let all your damage, damage me[/tab]\r\n[tab]               [ch]Am[/ch]\r\nAnd carry your baggage up my street[/tab]\r\n[tab]                 [ch]D[/ch]\r\nAnd make me your future history, it's time[/tab]\r\n[tab][ch]Em[/ch]                               [ch]G[/ch]\r\nYou've come a long way, open the blinds, let me see your face[/tab]\r\n[tab]             [ch]C[/ch]                                  [ch]D[/ch]\r\nYou wouldn\u2019t be the first renegade, to need somebody[/tab]\r\n[tab][ch]Em[/ch]                    [ch]G[/ch]                          [ch]C[/ch]               [ch]D[/ch]\r\nIs it insensitive for me to say \"Get your shit together so I can love you?\"[/tab]\r\n[tab][ch]Em[/ch]                      [ch]G[/ch]                               [ch]C[/ch]\r\nIs it really your anxiety that stops you from givin' me everything?[/tab]\r\n[tab]                 [ch]D[/ch]\r\nOr do you just not want to?[/tab]\r\n\r\n[Break]\r\n[ch]Em[/ch] [ch]G[/ch] [ch]C[/ch] [ch]D[/ch] (x2)\r\n\r\n[Bridge]\r\n[tab][ch]Em[/ch]\r\nAnd if I would have known[/tab]\r\n[tab]              [ch]G[/ch]                              [ch]C[/ch]\r\nHow sharp the pieces were you crumbled into[/tab]\r\n[tab]                      [ch]D[/ch]\r\nI might have let them lay[/tab]\r\n\r\n[Chorus]\r\n[tab]                                [ch]G[/ch]\r\nAre you really gonna talk about timin\u2019 in times like these?[/tab]\r\n[tab]                 [ch]C[/ch]\r\nAnd let all your damage, damage me[/tab]\r\n[tab]               [ch]Am[/ch]\r\nAnd carry your baggage up my street[/tab]\r\n[tab]                 [ch]D[/ch]\r\nAnd make me your future history, it's time[/tab]\r\n[tab][ch]Em[/ch]                               [ch]G[/ch]\r\nYou've come a long way, open the blinds, let me see your face[/tab]\r\n[tab]             [ch]C[/ch]                                  [ch]D[/ch]\r\nYou wouldn\u2019t be the first renegade, to need somebody[/tab]\r\n[tab]            [ch]Em[/ch]                [ch]G[/ch]                 [ch]C[/ch]         [ch]D[/ch]\r\nTo need somebody, to need somebody, to need somebody, to need[/tab]\r\n[tab][ch]Em[/ch]                    [ch]G[/ch]                          [ch]C[/ch]               [ch]D[/ch]\r\nIs it insensitive for me to say \"Get your shit together so I can love you?\"[/tab]\r\n[tab][ch]Em[/ch]                      [ch]G[/ch]                               [ch]C[/ch]\r\nIs it really your anxiety that stops you from givin' me everything?[/tab]\r\n[tab]                 [ch]D[/ch]\r\nOr do you just not want to?[/tab]"
+}

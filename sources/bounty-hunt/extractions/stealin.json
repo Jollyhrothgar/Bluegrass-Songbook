@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Stealin",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Dom Flemons",
+   "David Grisman",
+   "The Wood Brothers",
+   "Pert Near Sandstone"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:32:06",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1771769,
+  "song_id": 2209,
+  "song_name": "Stealin",
+  "artist_id": 131,
+  "artist_name": "Uriah Heep",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 41,
+  "difficulty": "intermediate",
+  "rating": 4.80467,
+  "date": "1444014167",
+  "status": "approved",
+  "preset_id": 71006,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 78877
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/8/6/860827/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/178872/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1447758281,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Stealin' - Uriah Heep (Ken Hensley, 1973)\r\n4/4 time @ 112 and 120 BPM (4 Min. 50 Sec.)\r\n\r\nNote: \r\nThere's no guitar until second refrain, but I included\r\nthe chords until then so you can play the rhythm on solo guitar.\r\nThanks also to 'Maguri' for his input on this one.\r\n\r\n[Chords]\r\n              Guitar             Keyboard\r\n[tab]        [ch]E[/ch]  [ch]A[/ch]  [ch]D[/ch]  [ch]G[/ch]  [ch]B[/ch]  e     Bass|  Chord\r\n       ------------------    --------------[/tab]\r\nDm      x  x  0  2  3  1      D    A-D-F\r\nD       x  x  0  2  3  2      D    A-D-F#\r\nC/D     x  x  0  0  1  0      D    G-C-E    -OR-\r\n        x  x  0  5  5  3\r\nG/D     x  x  0  0  0  3      D    G-B-D    -OR-\r\n        x  x  0  4  3  3\r\nG       3  2  0  0  0  3      G    G-B-D    -OR-\r\n        3  2  0  0  3  3\r\nF       1  3  3  2  1  1      F    A-C-F\r\nFM7     x  x  3  2  1  0      F    A-C-E-F  -OR-\r\n        1  3  2  2  1  1\r\nBb/D    x  x  0  3  3  1      D    Bb-D-F\r\nAb/D    x  x  0  5  4  4      D    Ab-C-Eb\r\n\r\n[Intro]\r\n\r\n 1 2 3 4  1 2 3 4  1  +2+3 4  1  +2+3 4  1 2 3 4  1 2 3 4 \r\n|BASS    |BASS    |[ch]Dm[/ch] [ch]D[/ch]      |[ch]Dm[/ch] [ch]D[/ch]      |[ch]C/D[/ch] [ch]G/D[/ch] |[ch]D[/ch]       |\r\n|[ch]Dm[/ch] [ch]D[/ch]    |[ch]Dm[/ch] [ch]D[/ch]    |[ch]C/D[/ch] [ch]G/D[/ch]   |[ch]D[/ch]         |[ch]D[/ch]       |\r\n\r\n[Verse 1]\r\n[tab]|[ch]D[/ch]                 |[ch]D[/ch]              |[ch]C/D[/ch]       [ch]G/D[/ch]          |[ch]D[/ch]       |\r\n Take me across the water  'cause I need some place to hide        I[/tab]\r\n[tab]|[ch]D[/ch]                         |[ch]D[/ch]           |[ch]C/D[/ch]      [ch]G/D[/ch]           |[ch]D[/ch]           |\r\n done the rancher's  daugh-  ter,  and I sure did hurt his pride,  Heh-heh [/tab]\r\n\r\n[Refrain]\r\n[tab]|[ch]Dm[/ch]  [ch]D[/ch]        |[ch]Dm[/ch]  [ch]D[/ch]       |[ch]C/D[/ch]    [ch]G/D[/ch]    |[ch]D[/ch]        |\r\n Ooh-oo,       ooh-oo       Ah,    ah,     ah    [/tab]\r\n[tab]|[ch]Dm[/ch]  [ch]D[/ch]        |[ch]Dm[/ch]  [ch]D[/ch]       |[ch]C/D[/ch]    [ch]G/D[/ch]    |[ch]D[/ch]        |\r\n Ooh-oo,       ooh-oo       Ah,    ah,     ah     Well, there's a[/tab]\r\n\r\n[Verse 2]\r\n[tab]|[ch]D[/ch]                |[ch]D[/ch]             |[ch]C/D[/ch]       [ch]G/D[/ch]          |[ch]D[/ch]            |\r\n hundred miles of  desert lies be-tween his hide and mine      I don't [/tab]\r\n[tab]|[ch]D[/ch]               |[ch]D[/ch]                       |[ch]C/D[/ch]     [ch]G/D[/ch]        |[ch]D[/ch]       |\r\n need no food, no water, Lord, 'cause I'm  runnin' out of time [/tab]\r\n[tab]|[ch]G[/ch]                   |[ch]F[/ch]                   |[ch]FM7[/ch]               |[ch]FM7[/ch]     |\r\n Fightin',  killin',  wine and women gonna put me to my grave [/tab]\r\n[tab]|[ch]G[/ch]                 |[ch]F[/ch]               |[ch]FM7[/ch]                 |[ch]FM7[/ch]           |\r\n Runnin',  hidin',  losin',  cryin'  nothin' left to save    but my life [/tab]\r\n\r\n[Refrain]\r\n[tab]|[ch]Dm[/ch]  [ch]D[/ch]      |[ch]Dm[/ch]  [ch]D[/ch]       |[ch]C/D[/ch]    [ch]G/D[/ch]    |[ch]D[/ch]        |\r\n Ooh-oo,     ooh-oo       Ah,    ah,     ah    [/tab]\r\n[tab]|[ch]Dm[/ch]  [ch]D[/ch]      |[ch]Dm[/ch]  [ch]D[/ch]       |[ch]C/D[/ch]    [ch]G/D[/ch]    |[ch]D[/ch]        |\r\n Ooh-oo,     ooh-oo       Ah,    ah,     ah      I[/tab]\r\n\r\n[Chorus]\r\n[tab]|[ch]D[/ch]                   |[ch]D[/ch]               |[ch]C/D[/ch]              [ch]G/D[/ch]       |[ch]D[/ch]       |\r\n Stood on a ridge and shunned religion thinkin' the world was mine        I[/tab]\r\n[tab]|[ch]D[/ch]                  |[ch]D[/ch]            |[ch]C/D[/ch]             [ch]G/D[/ch]                 |\r\n made my break and a big mistake   Stealin' when I should have been buy-[/tab]\r\n[tab]|[ch]D[/ch]               |[ch]G[/ch]                  |[ch]F[/ch]                             |\r\n in'    All that  fightin', killin',  wine  and those women  gonna [/tab]\r\n[tab]|[ch]FM7[/ch]                     |[ch]FM7[/ch]     |[ch]G[/ch]                 |[ch]F[/ch]               |\r\n put me to an early grave          Runnin',  hidin',  losin',  cryin' [/tab]\r\n[tab]|[ch]FM7[/ch]                 |[ch]FM7[/ch]            |[ch]D[/ch]           |[ch]D[/ch]           |\r\n nothin' left to save    but my life,        life,        life, [/tab]\r\n[tab]|[ch]F[/ch]       [ch]G[/ch]        |[ch]Bb/D[/ch]        [ch]C/D[/ch]         |\r\n    life,    life, life, life, life, life [/tab]\r\n\r\n[Solo]\r\n|[ch]D[/ch]     |[ch]D[/ch]     |[ch]C/D[/ch] [ch]G/D[/ch] |[ch]D[/ch]     |[ch]D[/ch]     |[ch]D[/ch]     |[ch]C/D[/ch] [ch]G/D[/ch] |[ch]D[/ch]     |\r\n[tab]|[ch]D[/ch]     |[ch]D[/ch]     |[ch]C/D[/ch] [ch]G/D[/ch] |[ch]D[/ch]     |[ch]D[/ch]     |[ch]D[/ch]     |[ch]C/D[/ch] [ch]G/D[/ch] |[ch]D[/ch]     |\r\n                                                          So I[/tab]\r\n\r\n[Chorus]\r\n[tab]|[ch]D[/ch]                   |[ch]D[/ch]                      |[ch]C/D[/ch]      [ch]G/D[/ch]           |[ch]D[/ch]      |\r\n stood on a ridge and shunned religion think-  in' the world was mine       I[/tab]\r\n[tab]|[ch]D[/ch]                  |[ch]D[/ch]            |[ch]C/D[/ch]             [ch]G/D[/ch]                  |\r\n made my break and a big mistake   Stealin' when I should have been  buy-[/tab]\r\n[tab]|[ch]D[/ch]           |[ch]C/D[/ch]             [ch]G/D[/ch]                  |[ch]D[/ch]           |\r\n in'    I was stealing when I should have been  buy-in'    I was[/tab]\r\n[tab]|[ch]C/D[/ch]             [ch]G/D[/ch]                  |[ch]D[/ch]      |\r\n stealing when I should have been  buy-in' [/tab]\r\n\r\n[Outro]\r\n[tab]|[ch]D[/ch]                |[ch]C/D[/ch]               [ch]G/D[/ch]     |\r\n Stealin'   when I should have been  buyin' [/tab]\r\n[tab]|[ch]D[/ch]                |[ch]C/D[/ch]               [ch]G/D[/ch]     |\r\n Stealin'   when I should have been  buyin' [/tab]\r\n[tab]|[ch]D[/ch]                |[ch]C/D[/ch]               [ch]G/D[/ch]     |\r\n Stealin'   when I should have been  buyin' [/tab]\r\n[tab]|[ch]D[/ch]                |[ch]C/D[/ch]               [ch]G/D[/ch]     |\r\n Stealin'   when I should have been  buyin' [/tab]\r\n[tab]|[ch]D[/ch]             |[ch]C/D[/ch] [ch]G/D[/ch] |[ch]D[/ch]                      |[ch]C/D[/ch]    [ch]G/D[/ch]    |\r\n Stealin'   Woo          Stealin'     Ah-ha-ha,  yeah    I was [/tab]\r\n[tab]|[ch]D[/ch]                |[ch]C/D[/ch]               [ch]G/D[/ch]      |\r\n Stealin'   when I should have been  buyin'   [/tab]\r\n[tab]|[ch]D[/ch]             |[ch]C/D[/ch]                     [ch]G/D[/ch]   |\r\n Stealin'   Ah, yeah, yeah, yeah, yeah, yeah [/tab]\r\n[tab]|[ch]D[/ch]              |[ch]C/D[/ch] [ch]G/D[/ch] |[ch]D[/ch]                          |[ch]C/D[/ch] [ch]G/D[/ch]       |\r\n Stealin'   Ooh            Stealin'     Rock and roll       Alright [/tab]\r\n[tab]|[ch]D[/ch]                       |[ch]C/D[/ch] [ch]G/D[/ch]       |\r\n  Stealin'  Rock and roll       Alright [/tab]\r\n[tab]|[ch]D[/ch]               |[ch]C/D[/ch]    [ch]G/D[/ch] |\r\n  Stealin'  Babe,    babe [/tab]\r\n[tab]|[ch]D[/ch]                    |[ch]C/D[/ch]               [ch]G/D[/ch]    |\r\n Should,    should,    should have been  buyin' [/tab]\r\n Stealin'    \r\n[tab]|[ch]D[/ch]                    |[ch]C/D[/ch]               [ch]G/D[/ch]    |\r\n Should,    should,    should have been  buyin' [/tab]\r\n Stealin'    \r\n[tab]|[ch]D[/ch]                      |[ch]C/D[/ch]           [ch]G/D[/ch]      |\r\n Shoulda,   shoulda,     shoulda been  buyin' [/tab]\r\n Stealin'    \r\n[tab]|[ch]D[/ch]               |[ch]C/D[/ch] [ch]G/D[/ch]     |[ch]D[/ch]        |[ch]C/D[/ch]     |[ch]Bb/D[/ch]    |[ch]Ab/D[/ch]    |\r\n Wee                   Buyin', yeah [/tab]\r\n Stealin'    \r\n\r\n[Coda]\r\n|[ch]D[/ch]    |[ch]D[/ch]    |[ch]D[/ch]    |[ch]D[/ch]    |[ch]D[/ch]    |"
+}

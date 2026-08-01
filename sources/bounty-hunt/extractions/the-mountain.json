@@ -1,0 +1,76 @@
+{
+ "wanted": {
+  "title": "The Mountain",
+  "type": "Vocal",
+  "key": "G",
+  "difficulty": "Intermediate",
+  "coverage": 3,
+  "core": false,
+  "artists": [
+   "B\u00e9la Fleck",
+   "The Del McCoury Band",
+   "Steve Earle"
+  ],
+  "notes": "modern standard",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:35:38",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 960058,
+  "song_id": 224512,
+  "song_name": "The Mountain",
+  "artist_id": 10222,
+  "artist_name": "Steve Earle",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 218,
+  "difficulty": "",
+  "rating": 4.82084,
+  "date": "1276819201",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 70555
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/3/6/367935/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/173597/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1276826206,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "The Mountain - Steve Earle and The Del McCoury Band                    \r\n \r\n[Intro]\r\n[ch]D[/ch] [ch]D[/ch] [ch]D[/ch] [ch]Bm[/ch]\r\n[ch]Bm[/ch] [ch]D[/ch] [ch]Em[/ch] [ch]G[/ch]\r\n[ch]Bm[/ch] [ch]Bm[/ch]\r\n\r\n[Verse]\r\n[tab]      [ch]D[/ch]                                 [ch]Bm[/ch]\r\nI was born on this mountain a long time ago [/tab]\r\n[tab]            [ch]D[/ch]                [ch]Em[/ch]         [ch]G[/ch]               [ch]Bm[/ch]\r\nBefore they knocked down the timber and strip-mined the coal [/tab]\r\n[tab]         [ch]D[/ch]                                 [ch]Bm[/ch]\r\nWhen you rose in the mornin' before it was light [/tab]\r\n[tab]      [ch]D[/ch]            [ch]Em[/ch]                 [ch]G[/ch]          [ch]Bm[/ch]    [ch]A[/ch]\r\nTo go down in that dark hole and come back up at night[/tab]\r\n\r\n[Chorus]\r\n[tab]      [ch]D[/ch]                                         [ch]Bm[/ch] \r\nI was born on this mountain, this mountain's my home [/tab]\r\n[tab]        [ch]D[/ch]            [ch]Em[/ch]            [ch]G[/ch]         [ch]A[/ch]\r\nAnd she holds me and keeps me from worry and woe [/tab]\r\n[tab]           [ch]D[/ch]                                          [ch]Bm[/ch]\r\nWell, they took everything that she gave, now they're gone [/tab]\r\n[tab]         [ch]D[/ch]           [ch]Em[/ch]             [ch]G[/ch]             [ch]D[/ch]  \r\nBut I'll die on this mountain, this mountain's my home[/tab]\r\n\r\n[Verse]\r\n[tab]      [ch]D[/ch]                                   [ch]Bm[/ch]\r\nI was young on this mountain but now I am old [/tab]\r\n[tab]      [ch]D[/ch]          [ch]Em[/ch]            [ch]G[/ch]             [ch]Bm[/ch] \r\nAnd I knew every holler, every cool swimmin' hole [/tab]\r\n[tab]     [ch]D[/ch]                                   [ch]Bm[/ch]\r\nTill one night I lay down and woke up to find [/tab]\r\n[tab]        [ch]D[/ch]             [ch]Em[/ch]              [ch]G[/ch]           [ch]Bm[/ch]  [ch]A[/ch]\r\nThat my childhood was over and I went down in the mine[/tab]\r\n\r\n[Chorus]\r\n[tab]      [ch]D[/ch]                                         [ch]Bm[/ch] \r\nI was born on this mountain, this mountain's my home [/tab]\r\n[tab]        [ch]D[/ch]            [ch]Em[/ch]            [ch]G[/ch]         [ch]A[/ch]\r\nAnd she holds me and keeps me from worry and woe [/tab]\r\n[tab]           [ch]D[/ch]                                          [ch]Bm[/ch]\r\nWell, they took everything that she gave, now they're gone [/tab]\r\n[tab]         [ch]D[/ch]           [ch]Em[/ch]             [ch]G[/ch]             [ch]D[/ch]  \r\nBut I'll die on this mountain, this mountain's my home[/tab]\r\n\r\n[Solo]\r\n[ch]D[/ch] [ch]D[/ch] [ch]D[/ch] [ch]Bm[/ch]\r\n[ch]Bm[/ch] [ch]D[/ch] [ch]Em[/ch] [ch]G[/ch]\r\n[tab][ch]A[/ch] [ch]A[/ch]\r\nx2[/tab]\r\n\r\n[Verse]\r\n[tab]          [ch]D[/ch]                                            [ch]Bm[/ch]\r\nThere's a hole in this mountain and it's dark and it's deep [/tab]\r\n[tab]    [ch]D[/ch]        [ch]Em[/ch]            [ch]G[/ch]          [ch]Bm[/ch]   \r\nAnd God only knows all the secrets it keeps [/tab]\r\n[tab]          [ch]D[/ch]                                [ch]Bm[/ch]\r\nThere's a chill in the air only miners can feel [/tab]\r\n[tab]         [ch]D[/ch]             [ch]Em[/ch]               [ch]G[/ch]       [ch]Bm[/ch]     [ch]A[/ch]\r\nThere're ghosts in the tunnels that the company sealed[/tab]\r\n\r\n[Chorus]\r\n[tab]      [ch]D[/ch]                                         [ch]Bm[/ch] \r\nI was born on this mountain, this mountain's my home [/tab]\r\n[tab]        [ch]D[/ch]            [ch]Em[/ch]            [ch]G[/ch]         [ch]A[/ch]\r\nAnd she holds me and keeps me from worry and woe [/tab]\r\n[tab]           [ch]D[/ch]                                          [ch]Bm[/ch]\r\nWell, they took everything that she gave, now they're gone [/tab]\r\n[tab]         [ch]D[/ch]           [ch]Em[/ch]             [ch]G[/ch]             [ch]D[/ch]  \r\nBut I'll die on this mountain, this mountain's my home[/tab]\r\n\r\n[Outro]\r\n[ch]D[/ch] [ch]Em[/ch] [ch]G[/ch] [ch]D[/ch]"
+}

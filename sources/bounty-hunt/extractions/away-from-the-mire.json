@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "Away From the Mire",
+  "type": "Vocal",
+  "key": "Em",
+  "difficulty": "Advanced",
+  "coverage": 1,
+  "core": false,
+  "artists": [
+   "Billy Strings"
+  ],
+  "notes": "jam vehicle",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:36:17",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.3,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2801240,
+  "song_id": 3650933,
+  "song_name": "Away From The Mire",
+  "artist_id": 146183,
+  "artist_name": "Billy Strings",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 562,
+  "difficulty": "novice",
+  "rating": 4.92814,
+  "date": "1566401715",
+  "status": "approved",
+  "preset_id": 73975,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 801941
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/7/1719607/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/17711/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1630796599,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "SONG:   AWAY FROM THE MIRE\r\nARTIST: BILLY STRINGS\r\nTAB BY: DON CZARSKI\r\nEMAIL:  GUITARZAN7@HOTMAIL.COM\r\n\r\n\r\n                      AWAY FROM THE MIRE\r\n                        BILLY STRINGS\r\n\r\n\r\nCAPO: 2nd FRET\r\n\r\nINTRO:\r\n\r\n[tab]   [ch]D[/ch]      [ch]Am[/ch]   [ch]G[/ch]          [ch]Bm[/ch]         [ch]D[/ch]          [ch]Em[/ch]       [ch]G[/ch]\r\nE -----------|----------|----------|---------------|-------|\r\nB -----------|----------|----------|---------------|-------|\r\nG ---------5-|-4--------|-4--------|---------------|-------|\r\nD ---4-5-7---|---7-7--5-|---7-7--5-|---------------|-------|\r\nA -5---------|----------|----------|-9--9-7-9-10-7-|-7-9-5-|\r\nE -----------|----------|----------|---------------|-------|[/tab]\r\n\r\n[tab]   [ch]D[/ch]      [ch]Am[/ch]   [ch]G[/ch]          [ch]Bm[/ch]         [ch]D[/ch]          [ch]Em[/ch]       [ch]G[/ch]\r\nE -----------|----------|----------|---------------|-------|\r\nB -----------|----------|----------|---------------|-------|\r\nG ---------5-|-4--------|-4--------|---------------|-------|\r\nD ---4-5-7---|---7-7--5-|---7-7--5-|---------------|-------|\r\nA -5---------|----------|----------|-9--9-7-9-10-7-|-7-9-5-|\r\nE -----------|----------|----------|---------------|-------|[/tab]\r\n\r\n\r\nVERSE:\r\n[tab][ch]D[/ch]              [ch]Am[/ch]           [ch]G[/ch]\r\n Remember the time we were both eye to eye[/tab]\r\n[tab]        [ch]Bm[/ch]                    [ch]D[/ch]\r\nAnd we both knew the reasons why[/tab]\r\n[tab]                [ch]Em[/ch]                     [ch]G[/ch]\r\nSeemed like we faced the world on our own[/tab]\r\n\r\n[tab][ch]D[/ch]              [ch]Am[/ch]          [ch]G[/ch]\r\n Before we collide can we just take a moment[/tab]\r\n[tab]    [ch]Bm[/ch]                     [ch]D[/ch]\r\nCollecting reflections of this[/tab]\r\n[tab]       [ch]Em[/ch]                        [ch]G[/ch]\r\nAnd remember the paths that we chose[/tab]\r\n\r\n\r\nCHORUS:\r\n[tab][ch]Bm[/ch]\r\n Spring lied to us this year again[/tab]\r\n[tab][ch]C[/ch]\r\n Can't stand to face the fear again[/tab]\r\n[tab][ch]G[/ch]                   [ch]D[/ch]                 [ch]C[/ch]\r\n You could always laugh about those things[/tab]\r\n\r\n[tab][ch]Bm[/ch]\r\n It's enough to make a man feel sour[/tab]\r\n[tab][ch]C[/ch]\r\n Burning minutes every day by the hour[/tab]\r\n[tab][ch]G[/ch]                [ch]D[/ch]                    [ch]C[/ch]\r\n Just to end up gone like everything else[/tab]\r\n\r\n[tab]   [ch]D[/ch]      [ch]Am[/ch]   [ch]G[/ch]          [ch]Bm[/ch]         [ch]D[/ch]          [ch]Em[/ch]       [ch]G[/ch]\r\nE -----------|----------|----------|---------------|-------|\r\nB -----------|----------|----------|---------------|-------|\r\nG ---------5-|-4--------|-4--------|---------------|-------|\r\nD ---4-5-7---|---7-7--5-|---7-7--5-|---------------|-------|\r\nA -5---------|----------|----------|-9--9-7-9-10-7-|-7-9-5-|\r\nE -----------|----------|----------|---------------|-------|[/tab]\r\n\r\n\r\nVERSE:\r\n[tab][ch]D[/ch]               [ch]Am[/ch]         [ch]G[/ch]\r\n Let go of the pain, hold onto the rhythm[/tab]\r\n[tab]      [ch]Bm[/ch]                       [ch]D[/ch]\r\nIt's consciously held back in you[/tab]\r\n[tab]                   [ch]Em[/ch]                         [ch]G[/ch]\r\nYou're drowning a sorrow that's long been at rest[/tab]\r\n\r\n[tab][ch]D[/ch]               [ch]Am[/ch]            [ch]G[/ch]\r\n The past is a hell, it can creep up inside you[/tab]\r\n[tab]   [ch]Bm[/ch]                    [ch]D[/ch]\r\nSo let me remind you of this[/tab]\r\n[tab]           [ch]Em[/ch]                    [ch]G[/ch]\r\nThere's a reason your troubles exist[/tab]\r\n\r\n\r\nCHORUS:\r\n[tab] [ch]Bm[/ch]\r\nSpring lied to us again this year[/tab]\r\n[tab]  [ch]C[/ch]\r\nStill I can't stand to face the fear[/tab]\r\n[tab] [ch]G[/ch]                [ch]D[/ch]                 [ch]C[/ch]\r\nWill you always laugh about those things[/tab]\r\n\r\n[tab][ch]Bm[/ch]\r\n It's enough to make a man stay humble[/tab]\r\n[tab][ch]C[/ch]\r\n Everyday is just a new chance to stumble[/tab]\r\n[tab][ch]G[/ch]                [ch]D[/ch]                    [ch]C[/ch]   [ch]C[/ch]\r\n Just to end up gone like everything else[/tab]\r\n\r\n\r\nINSTRUMENTAL:\r\n[ch]D[/ch]  [ch]Am[/ch]  [ch]G[/ch]  [ch]Bm[/ch]\r\n[ch]D[/ch]  [ch]Em[/ch]  [ch]G[/ch]  [ch]G[/ch]\r\n\r\n[ch]D[/ch]  [ch]Am[/ch]  [ch]G[/ch]  [ch]Bm[/ch]\r\n[ch]D[/ch]  [ch]Em[/ch]  [ch]G[/ch]  [ch]G[/ch]\r\n\r\n\r\nVERSE:\r\n[tab][ch]D[/ch]           [ch]Am[/ch]           [ch]G[/ch]\r\n If ever a time comes around in the wheel[/tab]\r\n[tab]       [ch]Bm[/ch]                          [ch]D[/ch]\r\nTo replace where we stand side by side[/tab]\r\n[tab]          [ch]Em[/ch]                [ch]G[/ch]\r\nWe'll be ready and able to fly[/tab]\r\n\r\n[tab][ch]D[/ch]               [ch]Am[/ch]\r\n Away from the mire[/tab]\r\n[tab]         [ch]G[/ch]                      [ch]Bm[/ch]                  [ch]D[/ch]\r\nAnd the senseless decisions of somebody's wasted desire[/tab]\r\n[tab]             [ch]Em[/ch]                         [ch]G[/ch]\r\nThrough the smoke and the wind and the fire[/tab]\r\n\r\n\r\nCHORUS:\r\n[tab] [ch]Bm[/ch]\r\nSpring lied to us this year again[/tab]\r\n[tab] [ch]C[/ch]\r\nCan't stand to face the fear again[/tab]\r\n[tab] [ch]G[/ch]                 [ch]D[/ch]                 [ch]C[/ch]\r\nYou could always laugh about those things[/tab]\r\n\r\n[tab][ch]Bm[/ch]\r\nIt's enough to make a man feel sour[/tab]\r\n[tab][ch]C[/ch]\r\n Burning minutes every day by the hour[/tab]\r\n[tab][ch]G[/ch]                [ch]D[/ch]                    [ch]C[/ch]\r\n Just to end up gone like everything else[/tab]\r\n\r\n\r\n==========================================\r\n\r\nINSTRUMENTAL: (2 minutes 30 seconds long)\r\n\r\n              - Play 11x\u2019s -\r\n[ch]Em[/ch]  [ch]D[/ch]    [ch]Em[/ch]  [ch]D[/ch]    [ch]Em[/ch]  [ch]D[/ch]    [ch]Em[/ch]  [ch]D[/ch]    [ch]Em[/ch]  [ch]D[/ch]\r\n[ch]Em[/ch]  [ch]D[/ch]    [ch]Em[/ch]  [ch]D[/ch]    [ch]Em[/ch]  [ch]D[/ch]    [ch]Em[/ch]  [ch]D[/ch]    [ch]Em[/ch]  [ch]D[/ch]\r\n[ch]Em[/ch]  [ch]D[/ch]\r\n\r\nNOTE:\r\nAt this point Billy Strings is basically picking notes\r\nand soloing and not really playing chords. \r\n\r\nHowever to me the simplest way to get through this part \r\nis to alternate between the Em and D chord which works\r\nfor me playing along at this part.\r\n\r\nSince there are just too many chord changes at this point \r\nand no markers to identify where the changes occur to place \r\nthese chords you would have to listen for when those changes \r\nare made.\r\n\r\nAnother option is to play the Verse and Chorus chords if \r\nplaying this song yourself or improvising a solo.\r\n\r\nPlease do not rate this tab down because of this part because\r\nas stated this is a CHORD tab and does not require a TAB of this\r\nSOLO.\r\n\r\n=============================================\r\n\r\nPlay this right before entering with the VERSE:\r\n\r\n[tab]   [ch]D[/ch]      [ch]Am[/ch]   [ch]G[/ch]          [ch]Bm[/ch]         [ch]D[/ch]          [ch]Em[/ch]       [ch]G[/ch]\r\nE -----------|----------|----------|---------------|-------|\r\nB -----------|----------|----------|---------------|-------|\r\nG ---------5-|-4--------|-4--------|---------------|-------|\r\nD ---4-5-7---|---7-7--5-|---7-7--5-|---------------|-------|\r\nA -5---------|----------|----------|-9--9-7-9-10-7-|-7-9-5-|\r\nE -----------|----------|----------|---------------|-------|[/tab]\r\n\r\n\r\nVERSE:\r\n[tab][ch]D[/ch]              [ch]Am[/ch]           [ch]G[/ch]\r\n Remember the time we were both eye to eye[/tab]\r\n[tab]       [ch]Bm[/ch]                     [ch]D[/ch]\r\nAnd we both knew the reasons why[/tab]\r\n[tab]                [ch]Em[/ch]                     [ch]G[/ch]\r\nSeemed like we faced the world on our own[/tab]\r\n\r\n[tab][ch]D[/ch]              [ch]Am[/ch]          [ch]G[/ch]\r\n Before we collide can we just take a moment[/tab]\r\n[tab]   [ch]Bm[/ch]                      [ch]D[/ch]\r\nCollecting reflections of this[/tab]\r\n[tab]      [ch]Em[/ch]                         [ch]G[/ch]\r\nAnd remember the paths that we chose[/tab]\r\n\r\n\r\nCHORUS:\r\n[tab] [ch]Bm[/ch]\r\nSpring lied to us this year again[/tab]\r\n[tab] [ch]C[/ch]\r\nCan't stand to face the fear again[/tab]\r\n[tab] [ch]G[/ch]                [ch]D[/ch]                 [ch]C[/ch]\r\nWill you always laugh about those things[/tab]\r\n\r\n[tab][ch]Bm[/ch]\r\nIt's enough to make a man feel sour[/tab]\r\n[tab][ch]C[/ch]\r\n Burning minutes every day by the hour[/tab]\r\n[tab][ch]G[/ch]                [ch]D[/ch]                    [ch]C[/ch]   [ch]C[/ch]   [ch]C[/ch]  [ch]G[/ch]  [ch]Em[/ch]\r\n Just to end up gone like everything else[/tab]"
+}
