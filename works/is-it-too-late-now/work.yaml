@@ -13,3 +13,5 @@ parts:
     source: classic-country
     source_file: isittoolatenowlyricschords.pro
     imported_at: '2026-01-02'
+composers:
+- Lester Flatt

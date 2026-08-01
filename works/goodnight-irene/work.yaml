@@ -2,7 +2,8 @@ id: goodnight-irene
 title: Goodnight Irene
 artist: Ernest Tubb
 composers:
-- George Vaughn
+- Huddie Ledbetter
+- John Lomax
 default_key: G
 parts:
 - type: lead-sheet

@@ -1,7 +1,9 @@
 id: shuckin-the-corn
 title: Shuckin' the Corn
 artist: null
-composers: []
+composers:
+- Lester Flatt
+- Earl Scruggs
 default_key: null
 tags:
 - Instrumental

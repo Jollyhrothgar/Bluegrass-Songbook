@@ -18,3 +18,5 @@ parts:
     source: classic-country
     source_file: bigriverlyricschords.pro
     imported_at: '2026-01-02'
+composers:
+- Johnny Cash

@@ -11,3 +11,5 @@ parts:
     source_file: long-gone-lonesome-blues.txt
     source_url: https://tabs.ultimate-guitar.com/tab/hank-williams/long-gone-lonesome-blues-chords-820875
     imported_at: '2026-07-31'
+composers:
+- Hank Williams

@@ -1,7 +1,8 @@
 id: rawhide
 title: Rawhide
 artist: Traditional
-composers: []
+composers:
+- Bill Monroe
 default_key: null
 tags:
 - Instrumental

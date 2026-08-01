@@ -1,7 +1,8 @@
 id: cuckoo-s-nest
 title: Cuckoo's Nest
 artist: Traditional
-composers: []
+composers:
+- Traditional
 default_key: D
 tags:
 - Instrumental

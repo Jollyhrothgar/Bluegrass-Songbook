@@ -10,3 +10,5 @@ parts:
     source_file: lost-indian.txt
     source_url: https://www.cowboylyrics.com/tabs/john-hartford/lost-indian-23810.html
     imported_at: '2026-07-31'
+composers:
+- Traditional

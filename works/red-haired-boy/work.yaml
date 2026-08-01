@@ -63,3 +63,5 @@ parts:
     difficulty: Intermediate
     tuning: GDAE (Standard)
     imported_at: '2026-07-27'
+composers:
+- Traditional

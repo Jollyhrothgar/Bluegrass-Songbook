@@ -1,7 +1,9 @@
 id: gold-rush
 title: Gold Rush
 artist: null
-composers: []
+composers:
+- Bill Monroe
+- Byron Berline
 default_key: null
 tags:
 - Instrumental

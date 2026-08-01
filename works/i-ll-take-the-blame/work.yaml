@@ -13,3 +13,5 @@ parts:
     source: classic-country
     source_file: illtaketheblamelyricsandchords.pro
     imported_at: '2026-01-02'
+composers:
+- Carter Stanley

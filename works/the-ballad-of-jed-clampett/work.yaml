@@ -10,3 +10,5 @@ parts:
     source_file: ballad-of-jed-clampett-the.txt
     source_url: https://tabs.ultimate-guitar.com/tab/misc-television/beverly-hillbillies-the-ballad-of-jed-clampett-chords-7216
     imported_at: '2026-07-31'
+composers:
+- Paul Henning

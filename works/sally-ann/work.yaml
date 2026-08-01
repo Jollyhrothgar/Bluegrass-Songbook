@@ -1,7 +1,8 @@
 id: sally-ann
 title: Sally Ann
 artist: null
-composers: []
+composers:
+- Traditional
 default_key: null
 tags:
 - Instrumental

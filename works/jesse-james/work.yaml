@@ -11,3 +11,5 @@ parts:
     source_file: jesse-james.txt
     source_url: https://tabs.ultimate-guitar.com/tab/woody-guthrie/jesse-james-chords-1749799
     imported_at: '2026-07-31'
+composers:
+- Traditional

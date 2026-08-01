@@ -13,3 +13,6 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
+composers:
+- Boudleaux Bryant
+- Felice Bryant

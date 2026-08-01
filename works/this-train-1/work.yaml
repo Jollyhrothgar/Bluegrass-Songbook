@@ -11,3 +11,5 @@ parts:
     source: classic-country
     source_file: thistrainlyricsandchords.pro
     imported_at: '2026-07-26'
+composers:
+- Traditional

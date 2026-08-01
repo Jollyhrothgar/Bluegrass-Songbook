@@ -11,3 +11,5 @@ parts:
     source_file: amie.txt
     source_url: https://tabs.ultimate-guitar.com/tab/pure-prairie-league/amie-chords-403000
     imported_at: '2026-07-31'
+composers:
+- Craig Fuller

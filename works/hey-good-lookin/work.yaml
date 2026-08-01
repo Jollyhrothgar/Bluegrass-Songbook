@@ -11,3 +11,5 @@ parts:
     source_file: hey-good-lookin.txt
     source_url: https://tabs.ultimate-guitar.com/tab/hank-williams/hey-good-lookin-chords-675106
     imported_at: '2026-07-31'
+composers:
+- Hank Williams

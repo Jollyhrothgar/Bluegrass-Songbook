@@ -1,7 +1,8 @@
 id: big-mon
 title: Big Mon
 artist: Traditional
-composers: []
+composers:
+- Bill Monroe
 default_key: G
 tags:
 - Instrumental

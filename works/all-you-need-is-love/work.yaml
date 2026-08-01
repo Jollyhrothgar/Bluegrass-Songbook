@@ -11,3 +11,6 @@ parts:
     source_file: all-you-need-is-love.txt
     source_url: https://tabs.ultimate-guitar.com/tab/the-beatles/all-you-need-is-love-chords-878481
     imported_at: '2026-07-31'
+composers:
+- John Lennon
+- Paul McCartney

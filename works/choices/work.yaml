@@ -11,3 +11,6 @@ parts:
     source_file: choices.txt
     source_url: https://tabs.ultimate-guitar.com/tab/george-jones/choices-chords-1064856
     imported_at: '2026-07-31'
+composers:
+- Billy Yates
+- Mike Curtis

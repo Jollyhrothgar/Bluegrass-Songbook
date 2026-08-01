@@ -1,19 +1,24 @@
 id: temperance-reel
-title: "Temperance Reel"
-tags: [Instrumental, Bluegrass, Scruggs]
+title: Temperance Reel
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
 parts:
-  - type: tablature
-    instrument: banjo
-    format: otf
-    file: banjo.otf.json
-    default: true
-    provenance:
-      source: banjo-hangout
-      source_id: '21467'
-      source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/tab-temperance-reel-21467-554592182015.tef
-      author: "banjoman 1"
-      imported_at: '2026-01-04'
-      tef_format: v2
-      tef_time_sig: 4/4
-      tef_tracks: 3
-      tef_events: 437
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '21467'
+    source_url: https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/tab-temperance-reel-21467-554592182015.tef
+    author: banjoman 1
+    imported_at: '2026-01-04'
+    tef_format: v2
+    tef_time_sig: 4/4
+    tef_tracks: 3
+    tef_events: 437
+composers:
+- Traditional

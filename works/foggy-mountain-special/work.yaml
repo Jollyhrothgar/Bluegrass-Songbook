@@ -1,7 +1,8 @@
 id: foggy-mountain-special
 title: Foggy Mountain Special
 artist: Traditional
-composers: []
+composers:
+- Earl Scruggs
 default_key: G
 tags:
 - Instrumental

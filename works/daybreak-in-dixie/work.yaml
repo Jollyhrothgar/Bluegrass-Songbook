@@ -1,7 +1,8 @@
 id: daybreak-in-dixie
 title: Daybreak In Dixie
 artist: Traditional
-composers: []
+composers:
+- Traditional
 default_key: null
 tags:
 - Instrumental

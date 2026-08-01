@@ -11,3 +11,6 @@ parts:
     source_file: good-night-irene.txt
     source_url: https://tabs.ultimate-guitar.com/tab/leadbelly/goodnight-irene-chords-1147133
     imported_at: '2026-07-31'
+composers:
+- Huddie Ledbetter
+- John Lomax

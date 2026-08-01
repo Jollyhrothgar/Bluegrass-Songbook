@@ -12,3 +12,6 @@ parts:
     source_file: all-my-loving.txt
     source_url: https://tabs.ultimate-guitar.com/tab/the-beatles/all-my-loving-chords-453882
     imported_at: '2026-07-31'
+composers:
+- John Lennon
+- Paul McCartney

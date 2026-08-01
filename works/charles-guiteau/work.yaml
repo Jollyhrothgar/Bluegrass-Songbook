@@ -11,3 +11,5 @@ parts:
     source_file: charles-guiteau.txt
     source_url: https://tabs.ultimate-guitar.com/tab/kelly-harrell/charles-guiteau-chords-2125989
     imported_at: '2026-07-31'
+composers:
+- Traditional

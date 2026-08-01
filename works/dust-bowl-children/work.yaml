@@ -1,11 +1,13 @@
 id: dust-bowl-children
 title: Dust Bowl Children
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/dust-bowl-children/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/dust-bowl-children/
+    imported_at: '2026-02-08'
+composers:
+- Peter Rowan

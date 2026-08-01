@@ -1,8 +1,7 @@
 id: my-home-ain-t-in-the-hall-of-fame
 title: My Home Ain't In The Hall Of Fame
 artist: J.D. Crowe
-composers:
-- Joe Dolce
+composers: []
 default_key: C
 parts:
 - type: lead-sheet

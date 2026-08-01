@@ -104,3 +104,5 @@ parts:
     difficulty: Expert
     tuning: GDAE (Standard)
     imported_at: '2026-07-27'
+composers:
+- Stephen Foster

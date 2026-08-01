@@ -11,3 +11,5 @@ parts:
     source: classic-country
     source_file: whisperinghopelyricschords.pro
     imported_at: '2026-01-02'
+composers:
+- Septimus Winner

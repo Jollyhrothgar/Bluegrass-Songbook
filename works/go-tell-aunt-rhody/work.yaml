@@ -11,3 +11,5 @@ parts:
     source_file: go-tell-aunt-rhody.txt
     source_url: https://tabs.ultimate-guitar.com/tab/woody-guthrie/go-tell-aunt-rhody-chords-2969930
     imported_at: '2026-07-31'
+composers:
+- Traditional

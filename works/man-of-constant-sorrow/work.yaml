@@ -1,7 +1,8 @@
 id: man-of-constant-sorrow
 title: Man of Constant Sorrow
 artist: Soggy Bottom Boys
-composers: []
+composers:
+- Traditional
 default_key: G
 tags:
 - JamFriendly
