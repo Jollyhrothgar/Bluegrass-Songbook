@@ -1,0 +1,14 @@
+id: althea
+title: Althea
+artist: Grateful Dead
+default_key: E
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-althea.txt
+    source_url: https://docs.google.com/document/d/1Hw-AvZ6MndVh7HKvTuKsvsR410OVZ_-WhrPr0K43ujQ/edit?usp=sharing
+    imported_at: '2026-08-01'

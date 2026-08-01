@@ -1,0 +1,14 @@
+id: orphan-annie
+title: Orphan Annie
+artist: Tony Rice
+default_key: Eb
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-orphan-annie.txt
+    source_url: https://docs.google.com/document/d/15bq9XFQlQVLluHWKxsRffSSndppAF5VG_lIDKNOYsdI/edit?usp=sharing
+    imported_at: '2026-08-01'

@@ -1,0 +1,613 @@
+{
+  "imported_at": "2026-08-01",
+  "parsed_files": 75,
+  "created": 75,
+  "skipped_existing_with_chords": 0,
+  "merge_candidates": 0,
+  "errors": 0,
+  "created_works": [
+    {
+      "id": "1952-vincent-black-lightning",
+      "file": "mcb-1952-vincent-black-lightning.pro",
+      "title": "1952 Vincent Black Lightning",
+      "artist": "Richard Thompson",
+      "default_key": "C",
+      "source_url": "https://docs.google.com/document/d/12ZUdXrpavOwxkfGIDbs15WgosYb5ipJX3E_LsCioqnA/edit?usp=sharing"
+    },
+    {
+      "id": "99-years",
+      "file": "mcb-99-years.pro",
+      "title": "99 Years",
+      "artist": "Jesse Fuller",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1YKpL_xXOPFyMonAEqriVyWqhdeP9V2CfH13Y17qldRI/edit?usp=sharing"
+    },
+    {
+      "id": "all-around-this-world",
+      "file": "mcb-all-around-this-world.pro",
+      "title": "All Around This World",
+      "artist": null,
+      "default_key": "C",
+      "source_url": "https://docs.google.com/document/d/1nO64E78BfgQF-fS1ItHXd3YC7ER21S-2S5eRU3C49Ao/edit?usp=sharing"
+    },
+    {
+      "id": "all-good-times-are-past-and-gone",
+      "file": "mcb-all-good-times-are-past-and-gone.pro",
+      "title": "All Good Times Are Past and Gone",
+      "artist": null,
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1iltMuWK6hHLdd3CIlPY6GQXoprtKCy3KSw2Vh2zyK00/edit?usp=sharing"
+    },
+    {
+      "id": "althea",
+      "file": "mcb-althea.pro",
+      "title": "Althea",
+      "artist": "Grateful Dead",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/1Hw-AvZ6MndVh7HKvTuKsvsR410OVZ_-WhrPr0K43ujQ/edit?usp=sharing"
+    },
+    {
+      "id": "atlantic-city",
+      "file": "mcb-atlantic-city.pro",
+      "title": "Atlantic City",
+      "artist": "Bruce Springsteen",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1CYBKQGIdPBaXucwJzYMv8DYZsSeBVqcUXVDvI6lWRVc/edit?usp=sharing"
+    },
+    {
+      "id": "back-in-baltimore",
+      "file": "mcb-back-in-baltimore.pro",
+      "title": "Back in Baltimore",
+      "artist": "Ned Luberecki / Becky Buller",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1rsBb3-YR9dQHQ7-Vbq2JDDZFUaxeb94p_fHS0LaOGMY/edit?usp=sharing"
+    },
+    {
+      "id": "back-to-the-carolinas",
+      "file": "mcb-back-to-the-carolinas.pro",
+      "title": "Back to the Carolinas",
+      "artist": "Seth Mulder",
+      "default_key": "C",
+      "source_url": "https://docs.google.com/document/d/1mt1ES4Buu1TOpWmJQeo5tmvn1k08_x65p_WfqzonQ_w/edit?usp=sharing"
+    },
+    {
+      "id": "black-muddy-river",
+      "file": "mcb-black-muddy-river.pro",
+      "title": "Black Muddy River",
+      "artist": "Grateful Dead",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1g-fzOYyCPK88SpmspGvkWUv9-HmllSew/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "box-of-rain",
+      "file": "mcb-box-of-rain.pro",
+      "title": "Box of Rain",
+      "artist": "Grateful Dead",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1iug-Vk8UZaA7O-YWOMM24r3S7P4sLE_i/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "can-you-run",
+      "file": "mcb-can-you-run.pro",
+      "title": "Can You Run",
+      "artist": "Steeldrivers",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1Vye7NHwzo2unGZnyudWNmEukw8_VSDTg/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "cassidy",
+      "file": "mcb-cassidy.pro",
+      "title": "Cassidy",
+      "artist": "Grateful Dead",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/1yMpj4ajisGqIUk0rMv-OOzYlesBvxwjJ4fVCU7z844M/edit?usp=sharing"
+    },
+    {
+      "id": "charleston-girl",
+      "file": "mcb-charleston-girl.pro",
+      "title": "Charleston Girl",
+      "artist": "Tyler Childers",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1Jgpw4g3TooMCc-nKD_M5OP0x_JZy21js0cVCCs5kd1g/edit?usp=sharing"
+    },
+    {
+      "id": "cigarettes-whiskey-and-wild-women",
+      "file": "mcb-cigarettes-whiskey-and-wild-women.pro",
+      "title": "Cigarettes, whiskey and wild women",
+      "artist": null,
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1qIM6grFIlhICryp6sAjWbnos0nK5W7JV/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "cold-heart",
+      "file": "mcb-cold-heart.pro",
+      "title": "Cold Heart",
+      "artist": "Hank Williams",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1mMIh7zjyg_aDOODysoTf4QNnMW0Jz1td/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "cold-rain-and-snow",
+      "file": "mcb-cold-rain-and-snow.pro",
+      "title": "Cold Rain and Snow",
+      "artist": null,
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1DAatUbtiegE48ZyVhNbIk312GiqX3w4yQExK2Znuvhg/edit?usp=sharing"
+    },
+    {
+      "id": "counting-flowers-on-the-wall",
+      "file": "mcb-counting-flowers-on-the-wall.pro",
+      "title": "Counting Flowers on the Wall",
+      "artist": "The Statler Brothers",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1ftbbneqem5yDiy8nvhq5iUvg8gexU1ZThNbAezwwaxA/edit?usp=sharing"
+    },
+    {
+      "id": "day-to-day",
+      "file": "mcb-day-to-day.pro",
+      "title": "Day to Day",
+      "artist": "Frank Sullivan",
+      "default_key": "Bb",
+      "source_url": "https://docs.google.com/document/d/1lKDck1L521r_PKmqknVghOmgXFuLh4KkvaYVE4Fg668/edit?usp=sharing"
+    },
+    {
+      "id": "dixie-chicken",
+      "file": "mcb-dixie-chicken.pro",
+      "title": "Dixie Chicken",
+      "artist": "Little Feat",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/19ZnI_ZPVdmQ_QEjPhI4upYQPkxu7IBNBHko9TwXt3IA/edit?usp=sharing"
+    },
+    {
+      "id": "down-along-the-dixie-line",
+      "file": "mcb-down-along-the-dixie-line.pro",
+      "title": "Down Along the Dixie Line",
+      "artist": "Gillian Welch",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1rKKWKhxtOAH1x67_oWpdD0VwIqfxcmHZ/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "down-home-dispensary",
+      "file": "mcb-down-home-dispensary.pro",
+      "title": "Down Home Dispensary",
+      "artist": "Molly Tuttle",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1Gq0N5FPaV9qUfPlpvk0uA-H3OOUBZP1ltMxhg0JtcgU/edit?usp=sharing"
+    },
+    {
+      "id": "dry-town",
+      "file": "mcb-dry-town.pro",
+      "title": "Dry Town",
+      "artist": "Gillian Welch",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/1-URcJ_UAwBy5ZqF19LDvkKDitr6GQaWmgTENHWGB4Us/edit?usp=sharing"
+    },
+    {
+      "id": "dusty-boxcar-wall",
+      "file": "mcb-dusty-boxcar-wall.pro",
+      "title": "Dusty Boxcar Wall",
+      "artist": "Gillian Welch",
+      "default_key": "Am",
+      "source_url": "https://docs.google.com/document/d/1MD6NQufPyMExiYs-Fo2MQOjChxSFp1z4/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "evergreen-ok",
+      "file": "mcb-evergreen-ok.pro",
+      "title": "Evergreen OK",
+      "artist": "Molly Tuttle",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1BFjDbxeShmF7TGtNoSK3ZC8kJQVxRw0dchRbAHWx0Hs/edit?usp=sharing"
+    },
+    {
+      "id": "followin-you",
+      "file": "mcb-followin-you.pro",
+      "title": "Followin You",
+      "artist": "East Nash Grass",
+      "default_key": "Gb",
+      "source_url": "https://docs.google.com/document/d/1n0wTBuzVSSgReWyDe0rkjOlYpB-rTSGL1txsKcn2Osk/edit?usp=sharing"
+    },
+    {
+      "id": "galway-girl",
+      "file": "mcb-galway-girl.pro",
+      "title": "Galway Girl",
+      "artist": "Steve Earle",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/112yNknhw9KrQZ-eysQGLLxXD4Uowg97PX4lcCe6bwCc/edit?usp=sharing"
+    },
+    {
+      "id": "he-calls-that-religion",
+      "file": "mcb-he-calls-that-religion.pro",
+      "title": "He Calls That Religion",
+      "artist": null,
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1MnwNTR_URZA43wc5nO5nKlLdBDGbKx4V/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "head",
+      "file": "mcb-head.pro",
+      "title": "Head",
+      "artist": "Railroad Earth",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1tg92TaK1B6z8WBhzmoNAqBhFk1C-DyI89DPwfRlb46k/edit?usp=sharing"
+    },
+    {
+      "id": "hickory-walnut-and-pine",
+      "file": "mcb-hickory-walnut-and-pine.pro",
+      "title": "Hickory Walnut And Pine",
+      "artist": "po ramblin boys",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/14317C7CJ2vnnFcpgpz-deHNw2-glN6BV0njOCmbJ1Ac/edit?usp=drivesdk"
+    },
+    {
+      "id": "hold-on",
+      "file": "mcb-hold-on.pro",
+      "title": "Hold On",
+      "artist": "Tim O'Brien",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/1rfHNx6xzTYMKKR95Vn6F0xq-TgQIA6rN/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "homerun-man",
+      "file": "mcb-homerun-man.pro",
+      "title": "Homerun Man",
+      "artist": "Jimmy Martin",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/1HmxZopOo1jy10IgNfjyBlYRZ3nV3n9qwbpza40x_Ci0/edit?usp=sharing"
+    },
+    {
+      "id": "i-aint-got-no-home",
+      "file": "mcb-i-aint-got-no-home.pro",
+      "title": "I Ain’t Got No Home",
+      "artist": "Woody Guthrie",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1jOURDwyuaZ7A1tTRdl38Pk3OAkM3BZf6/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "i-know-you-dont-love-me-no-more",
+      "file": "mcb-i-know-you-dont-love-me-no-more.pro",
+      "title": "I Know You Don’t Love Me No More",
+      "artist": null,
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1SHAY6PrzwLnQSl0kfkjXwPAvDhZRurUS/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "i-know-your-rider",
+      "file": "mcb-i-know-your-rider.pro",
+      "title": "I Know Your Rider",
+      "artist": "Grateful Dead",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1fIEcGQa3Pt2b0ozEesokg85IX6Plxfl_/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "if-the-river-was-whiskey",
+      "file": "mcb-if-the-river-was-whiskey.pro",
+      "title": "If The River Was Whiskey",
+      "artist": null,
+      "default_key": "Eb",
+      "source_url": "https://docs.google.com/document/d/1wIjVpl9YleUOdA8GGLn9O4qOonrI-KiX/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "johnny-has-gone-for-soldier",
+      "file": "mcb-johnny-has-gone-for-soldier.pro",
+      "title": "Johnny Has Gone for Soldier",
+      "artist": null,
+      "default_key": "Am",
+      "source_url": "https://docs.google.com/document/d/1oxz98Ml20CgrmLmLoNideZ9UfSpoU90k/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "la-la-blues",
+      "file": "mcb-la-la-blues.pro",
+      "title": "La La Blues",
+      "artist": "Pokey LaFarge",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/12F6afpAL-tIcd85vP99Fvgb7nvxY3bIkvi3ErCp5qTk/edit?usp=sharing"
+    },
+    {
+      "id": "load-the-wagon",
+      "file": "mcb-load-the-wagon.pro",
+      "title": "load the wagon",
+      "artist": "Junior Sisk",
+      "default_key": "C",
+      "source_url": "https://docs.google.com/document/d/1Y6JQ73QHocySOGndINDedYowXdHuLbk3uiIjDxFBA2c/edit?tab=t.0"
+    },
+    {
+      "id": "look-down-that-lonesome-road",
+      "file": "mcb-look-down-that-lonesome-road.pro",
+      "title": "Look Down That Lonesome Road",
+      "artist": "Tim O'Brien",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/17aDdftbRjcc9kVQOJmuoqNiJUl1Y8Ct7/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "luckiest-man",
+      "file": "mcb-luckiest-man.pro",
+      "title": "Luckiest Man",
+      "artist": "The Wood Brothers",
+      "default_key": "Dm",
+      "source_url": "https://docs.google.com/document/d/1qpJEPJ0B-1vx9TW8UvvhkEfS5JXxsRRn/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "mail-myself-to-you",
+      "file": "mcb-mail-myself-to-you.pro",
+      "title": "Mail Myself to You",
+      "artist": "Woody Guthrie",
+      "default_key": "C",
+      "source_url": "https://docs.google.com/document/d/1PcSrOLgtLR3fuw-Imu6hpzUakNwB09vG/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "me-and-my-uncle",
+      "file": "mcb-me-and-my-uncle.pro",
+      "title": "Me and My Uncle",
+      "artist": "Grateful Dead",
+      "default_key": "Em",
+      "source_url": "https://docs.google.com/document/d/1iaBHlx1pGfstjc0Mqdfu-b7yfqjOR3uD/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "mean-mother-blues",
+      "file": "mcb-mean-mother-blues.pro",
+      "title": "Mean Mother Blues",
+      "artist": "The Seldom Scene",
+      "default_key": "F",
+      "source_url": "https://docs.google.com/document/d/1sCyQ9DTsXPY6BPMJUOLrcJHQdufLvSqg/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "mexicali-blues",
+      "file": "mcb-mexicali-blues.pro",
+      "title": "Mexicali Blues",
+      "artist": "Grateful Dead",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/109pEfvzl9XY5c0irs-iPCkmY3rE1B4Bs/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "midnight-rider",
+      "file": "mcb-midnight-rider.pro",
+      "title": "Midnight Rider",
+      "artist": "Allman Brothers Band",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1XnPMaJFtQhC40-ASCutg16sR2z4rX93oUteiZzjnJhE/edit?usp=sharing"
+    },
+    {
+      "id": "monkey-the-engineer",
+      "file": "mcb-monkey-the-engineer.pro",
+      "title": "Monkey & the Engineer",
+      "artist": null,
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1KETNNCXZIZBcGLUJK0CsewoPbEaQYp9y/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "mountain-song",
+      "file": "mcb-mountain-song.pro",
+      "title": "Mountain Song",
+      "artist": "Kitchen Dwellers",
+      "default_key": "B",
+      "source_url": "https://docs.google.com/document/d/14WulxZ51_gHoUoPJ4_ls1GKJspen6uJ2WTROgcDTUpI/edit?usp=sharing"
+    },
+    {
+      "id": "my-dear-old-southern-home",
+      "file": "mcb-my-dear-old-southern-home.pro",
+      "title": "My Dear Old Southern Home",
+      "artist": null,
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/10uW66w_Kt5En_L39K7nfYA4Ck5Lx6jGpyS0aiSydczM/edit?usp=sharing"
+    },
+    {
+      "id": "my-little-girl-from-tennessee",
+      "file": "mcb-my-little-girl-from-tennessee.pro",
+      "title": "My Little Girl From Tennessee",
+      "artist": null,
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1r8_W12fL8cqzKEQrLyjXetwCNy-9pMQB/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "my-my-my",
+      "file": "mcb-my-my-my.pro",
+      "title": "My My My",
+      "artist": "Seth Mulder",
+      "default_key": "B",
+      "source_url": "https://docs.google.com/document/d/1PEhWIFvwqGd73QE5j3iWJkBIkVNEdPaOnjdrxtytaQQ/edit?usp=sharing"
+    },
+    {
+      "id": "never-meant-to-be",
+      "file": "mcb-never-meant-to-be.pro",
+      "title": "Never Meant to Be",
+      "artist": "Tony Rice",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/1aMs4ugVdKyNYGVd3CzQkexqZJX3yZQtA/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "never-more-will-roam",
+      "file": "mcb-never-more-will-roam.pro",
+      "title": "Never More will Roam",
+      "artist": "Joe K Walsh",
+      "default_key": "Gm",
+      "source_url": "https://docs.google.com/document/d/1Ilx-24ut3X833V46Om7_YrDqZOOkkjiI/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "new-minglewood-blues",
+      "file": "mcb-new-minglewood-blues.pro",
+      "title": "New Minglewood Blues",
+      "artist": "Grateful Dead",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1Mmf1354bxxUOoV7TG7pwzlImRtOrob6t/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "next-to-the-trash",
+      "file": "mcb-next-to-the-trash.pro",
+      "title": "Next to the Trash",
+      "artist": "Chris Thile",
+      "default_key": "F",
+      "source_url": "https://docs.google.com/document/d/1r3WDPGuJQ_5ekIGP2z-TcegJZCBpOof_/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "no-idea",
+      "file": "mcb-no-idea.pro",
+      "title": "No Idea",
+      "artist": "Greensky Bluegrass",
+      "default_key": "Am",
+      "source_url": "https://docs.google.com/document/d/1ONatLe7Y6GhFIkAU01F6-nADLwsiz0wK/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "not-gonna-cry-over-you",
+      "file": "mcb-not-gonna-cry-over-you.pro",
+      "title": "Not Gonna Cry Over You",
+      "artist": "AJ Lee & Blue Summit",
+      "default_key": "Bb",
+      "source_url": "https://docs.google.com/document/d/1IezOcGEqIHDzetXrbiaYbXhrBieHFWoXyqIsxVxQXH4/edit?usp=sharing"
+    },
+    {
+      "id": "oceans-of-diamonds",
+      "file": "mcb-oceans-of-diamonds.pro",
+      "title": "Oceans of Diamonds",
+      "artist": "Jimmy Martin",
+      "default_key": "F",
+      "source_url": "https://docs.google.com/document/d/1bGSBs5gAW5z_B9RfABUCIqbFK0H3B5y6ijwT-7GARBE/edit?usp=sharing"
+    },
+    {
+      "id": "orphan-annie",
+      "file": "mcb-orphan-annie.pro",
+      "title": "Orphan Annie",
+      "artist": "Tony Rice",
+      "default_key": "Eb",
+      "source_url": "https://docs.google.com/document/d/15bq9XFQlQVLluHWKxsRffSSndppAF5VG_lIDKNOYsdI/edit?usp=sharing"
+    },
+    {
+      "id": "peggy-o",
+      "file": "mcb-peggy-o.pro",
+      "title": "Peggy-o",
+      "artist": null,
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1KVy0m7UsT3Cn0lKqeLPVBV7iPSY0zbgG3KcGNZr3MyY/edit?usp=sharing"
+    },
+    {
+      "id": "poncho-and-lefty",
+      "file": "mcb-poncho-and-lefty.pro",
+      "title": "Poncho and Lefty",
+      "artist": "Townes Van Zandt",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1KLxvgs6Nzsi4duwYeMf-I7wuXZgv8VvMf-yYG6hTQB8/edit?usp=sharing"
+    },
+    {
+      "id": "poor-heart",
+      "file": "mcb-poor-heart.pro",
+      "title": "Poor Heart",
+      "artist": "Phish",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1U05jUGsyas5wkxr1AVkv0Zbg_f0V33vX/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "ragged-but-im-right",
+      "file": "mcb-ragged-but-i-m-right.pro",
+      "title": "Ragged but I'm Right",
+      "artist": null,
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1-9jtNoZwxpK4F5WENcB3XFqs_nahB5TZ/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "ramble-on-rose",
+      "file": "mcb-ramble-on-rose.pro",
+      "title": "Ramble on Rose",
+      "artist": "Grateful Dead",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1JOVafuhHwZt8NuGqf48RjMclGgb16h2c378o9p73eeA/edit?usp=sharing"
+    },
+    {
+      "id": "russian-lullaby",
+      "file": "mcb-russian-lullaby.pro",
+      "title": "Russian Lullaby",
+      "artist": null,
+      "default_key": "Dm",
+      "source_url": "https://docs.google.com/document/d/15t6_xPmznX46LB4K4gY4XT5bn_KDGQ7Q/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "rye-whiskey",
+      "file": "mcb-rye-whiskey.pro",
+      "title": "Rye Whiskey",
+      "artist": null,
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1VkfJCaoTK8mYiZCgIlqguaR1NdZxh28E/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "samson-and-delilah",
+      "file": "mcb-samson-and-delilah.pro",
+      "title": "Samson and Delilah",
+      "artist": "Grateful Dead",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1kk4tye1ix7-XfYy0IavVwFNvP7qeC_Mk/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "scarlet-begonias",
+      "file": "mcb-scarlet-begonias.pro",
+      "title": "Scarlet Begonias",
+      "artist": "Grateful Dead",
+      "default_key": "B",
+      "source_url": "https://docs.google.com/document/d/1QAMn1hQjgjhO9bp9TbgMD1fZ7hKPe4FskXWjALOscqI/edit?usp=sharing"
+    },
+    {
+      "id": "spanish-pipedream",
+      "file": "mcb-spanish-pipedream.pro",
+      "title": "Spanish Pipedream",
+      "artist": "John Prine",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1pvmLIXZDU4UQaDyo9_rLphqYEav2GKD8uLSeaFl4iho/edit?usp=sharing"
+    },
+    {
+      "id": "sugaree",
+      "file": "mcb-sugaree.pro",
+      "title": "Sugaree",
+      "artist": null,
+      "default_key": "B",
+      "source_url": "https://docs.google.com/document/d/1i_tb6hAZy-YqGkRVEtlNnwoLjgB10i2g/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "sweet-heaven-when-i-die",
+      "file": "mcb-sweet-heaven-when-i-die.pro",
+      "title": "Sweet Heaven When I Die",
+      "artist": null,
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1NuB_kjlCqPcO_zrgxL3J5hnoQsOdUvmaTc1qKbzdDiU/edit?usp=sharing"
+    },
+    {
+      "id": "takes-one-to-know-one",
+      "file": "mcb-takes-one-to-know-one.pro",
+      "title": "Takes one to Know One",
+      "artist": "Jimmy Martin",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1MIJtS4KRlbcrBH6D7cVBNTGXKJVz7Eh3/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "tennessee-jed",
+      "file": "mcb-tennessee-jed.pro",
+      "title": "Tennessee Jed",
+      "artist": "Grateful Dead",
+      "default_key": "C",
+      "source_url": "https://docs.google.com/document/d/1PGTwRtnL2XuHkHyEigroXVgYKaK7i5UgDprDwSyQYD4/edit?usp=sharing"
+    },
+    {
+      "id": "thats-the-way-that-it-goes",
+      "file": "mcb-thats-the-way-that-it-goes.pro",
+      "title": "That’s the Way that it Goes",
+      "artist": "Gillian Welch",
+      "default_key": "Em",
+      "source_url": "https://docs.google.com/document/d/1kS-T8sgNFTNtthUCQ7guS46NeAIOaYvE/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "thats-what-i-like-about-the-south",
+      "file": "mcb-thats-what-i-like-about-the-south.pro",
+      "title": "That’s what I like about the South",
+      "artist": null,
+      "default_key": "F",
+      "source_url": "https://docs.google.com/document/d/1-059OJq7i-ccPwIphjmrtLHICr7M9n2b/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "the-night-they-drove-old-dixie-down",
+      "file": "mcb-the-night-they-drove-old-dixie-down.pro",
+      "title": "The Night They Drove Old Dixie Down",
+      "artist": "The Band",
+      "default_key": "Am",
+      "source_url": "https://docs.google.com/document/d/1tKBFR0ys5gxyBxmmt_8mgOM3Irc_PMbd/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    }
+  ],
+  "skipped": [],
+  "merge_candidate_works": [],
+  "error_details": []
+}

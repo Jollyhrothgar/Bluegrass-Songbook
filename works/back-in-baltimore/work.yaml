@@ -1,0 +1,14 @@
+id: back-in-baltimore
+title: Back in Baltimore
+artist: Ned Luberecki / Becky Buller
+default_key: A
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-back-in-baltimore.txt
+    source_url: https://docs.google.com/document/d/1rsBb3-YR9dQHQ7-Vbq2JDDZFUaxeb94p_fHS0LaOGMY/edit?usp=sharing
+    imported_at: '2026-08-01'

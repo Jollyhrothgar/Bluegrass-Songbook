@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Maneater",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:00:53",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1909144,
+  "song_id": 37183,
+  "song_name": "Maneater",
+  "artist_id": 1241,
+  "artist_name": "Hall & Oates",
+  "type": "Chords",
+  "part": "",
+  "version": 6,
+  "common_version": 1,
+  "votes": 62,
+  "difficulty": "",
+  "rating": 4.89857,
+  "date": "1481453169",
+  "status": "approved",
+  "preset_id": 27701,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 69103
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/1/117621/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/7/0/7082/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1646982114,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[tab]Bassline:  [ch]B[/ch] [ch]C#[/ch] [ch]D[/ch]   [ch]E[/ch]    [ch]B[/ch]\r\n          (ooh here she comes)[/tab]\r\n\r\n[Intro]\r\n[ch]Bm[/ch]  [ch]A[/ch]  [ch]G[/ch]  [ch]A[/ch] (x4)\r\n\r\n[Verse 1]\r\n[tab][ch]D[/ch]                                  [ch]A[/ch]                     [ch]C[/ch]                                   [ch]B[/ch]\r\nShe'll only come out at night, the lean and hungry type, nothing is new, I've seen her here before[/tab]\r\n[tab][ch]Em[/ch]                              [ch]A[/ch]                       [ch]F#[/ch]           \u00a0  [ch]Bm[/ch]    [ch]A[/ch] [ch]Bm[/ch]\r\nWatching and waiting, oh she's sittin' with you but her eyes are on the door[/tab]\r\n[tab][ch]D[/ch]                                  [ch]A[/ch]                                  [ch]C[/ch]                                     [ch]B[/ch]\r\nSo many have paid to see, what you think you're gettin' for free, the woman is wild, a she-cat tamed by the..[/tab]\r\n[tab][ch]Em[/ch]                            [ch]A[/ch]                   [ch]F#[/ch]                \u00a0 [ch]Bm[/ch]     [ch]A[/ch]\u00a0\u00a0\u00a0 [ch]Bm[/ch]\r\nMoney's the matter, if you're in it for love, you ain't gonna get too far[/tab]\r\n\r\n[Chorus 1]\r\n[tab][ch]Bm[/ch]                   [ch]A[/ch]                                 [ch]G[/ch]                            [ch]F#[/ch]\r\nOhhh here she co    mes, watch out boy she'll chew you up, ohhh here she comes, she's a maneater[/tab]\r\n[tab][ch]Bm[/ch]                   [ch]A[/ch]                                 [ch]Em[/ch]                           [ch]G[/ch]         [ch]A[/ch]\r\nOhhh here she comes, watch out boy she'll chew you up, ohhh here she comes, she's a maneater[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]D[/ch]                                  [ch]A[/ch]                     [ch]C[/ch]                                   [ch]B[/ch]\r\n.....................................................................................................[/tab]\r\n[tab][ch]Em[/ch]                              [ch]A[/ch]                       [ch]F#[/ch]              [ch]Bm[/ch]    [ch]A[/ch] [ch]Bm[/ch]\r\n.....................................................................................................[/tab]\r\n[tab][ch]D[/ch]                           [ch]A[/ch]                           [ch]C[/ch]                                [ch]B[/ch]\r\nI wouldn't if I were you, I know what she can do, she's deadly man, and she could really rip your world apart[/tab]\r\n[tab][ch]Em[/ch]                        [ch]A[/ch]                      [ch]F#[/ch]           \u00a0  [ch]Bm[/ch]       [ch]A[/ch]     [ch]Bm[/ch]\r\nMind over matter, ooh the beauty is there, but a beast is in the heart[/tab]\r\n\r\n[Chorus 2]\r\n[tab][ch]Bm[/ch]                   [ch]A[/ch]                                 [ch]G[/ch]                            [ch]F#[/ch]\r\nOhhh here she comes, watch out boy she'll chew you up, ohhh here she comes, she's a maneater[/tab]\r\n[tab][ch]Bm[/ch]                   [ch]A[/ch]                                 [ch]Em[/ch]                           [ch]G[/ch]         [ch]A[/ch]\r\nOhhh here she comes, watch out boy she'll chew you up, ohhh here she comes, she's a maneater[/tab]\r\n[tab][ch]Bm[/ch]                   [ch]A[/ch]                                 [ch]G[/ch]                            [ch]F#[/ch] \u00a0      [ch]A[/ch]\r\nOhhh here she comes, watch out boy she'll chew you up, ohhh here she comes, she's a maneater[/tab]\r\n[tab][ch]Bm[/ch]                   [ch]A[/ch]                                 [ch]Em[/ch]                           [ch]G[/ch]         [ch]A[/ch]\r\nOhhh here she comes, watch out boy she'll chew you up, ohhh here she comes, she's a maneater[/tab]\r\n\r\n(till fade)"
+}

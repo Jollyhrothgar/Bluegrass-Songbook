@@ -1,0 +1,13 @@
+id: he-calls-that-religion
+title: He Calls That Religion
+default_key: A
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-he-calls-that-religion.txt
+    source_url: https://docs.google.com/document/d/1MnwNTR_URZA43wc5nO5nKlLdBDGbKx4V/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

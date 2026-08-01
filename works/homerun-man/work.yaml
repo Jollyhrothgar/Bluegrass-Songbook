@@ -1,0 +1,14 @@
+id: homerun-man
+title: Homerun Man
+artist: Jimmy Martin
+default_key: E
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-homerun-man.txt
+    source_url: https://docs.google.com/document/d/1HmxZopOo1jy10IgNfjyBlYRZ3nV3n9qwbpza40x_Ci0/edit?usp=sharing
+    imported_at: '2026-08-01'

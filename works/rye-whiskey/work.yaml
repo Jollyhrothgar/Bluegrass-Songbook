@@ -1,0 +1,13 @@
+id: rye-whiskey
+title: Rye Whiskey
+default_key: D
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-rye-whiskey.txt
+    source_url: https://docs.google.com/document/d/1VkfJCaoTK8mYiZCgIlqguaR1NdZxh28E/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

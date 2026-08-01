@@ -1,0 +1,14 @@
+id: takes-one-to-know-one
+title: Takes one to Know One
+artist: Jimmy Martin
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-takes-one-to-know-one.txt
+    source_url: https://docs.google.com/document/d/1MIJtS4KRlbcrBH6D7cVBNTGXKJVz7Eh3/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

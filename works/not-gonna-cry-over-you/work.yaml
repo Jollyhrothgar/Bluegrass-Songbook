@@ -1,0 +1,14 @@
+id: not-gonna-cry-over-you
+title: Not Gonna Cry Over You
+artist: AJ Lee & Blue Summit
+default_key: Bb
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-not-gonna-cry-over-you.txt
+    source_url: https://docs.google.com/document/d/1IezOcGEqIHDzetXrbiaYbXhrBieHFWoXyqIsxVxQXH4/edit?usp=sharing
+    imported_at: '2026-08-01'

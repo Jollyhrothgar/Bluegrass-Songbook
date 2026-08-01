@@ -1,0 +1,14 @@
+id: thats-the-way-that-it-goes
+title: That’s the Way that it Goes
+artist: Gillian Welch
+default_key: Em
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-thats-the-way-that-it-goes.txt
+    source_url: https://docs.google.com/document/d/1kS-T8sgNFTNtthUCQ7guS46NeAIOaYvE/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

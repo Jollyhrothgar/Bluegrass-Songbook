@@ -1,0 +1,73 @@
+{meta: title This Must Be the Place}
+{meta: artist Talking Heads}
+{key: G}
+{meta: x_source_url https://docs.google.com/document/d/1nSd0cEg28LoiQamblN630e0SLsOlYVZS/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true}
+{meta: x_source web-chords}
+{meta: x_source_file mcb-this-must-be-the-place-naive-melody.txt}
+
+{start_of_verse: Verse 1}
+This Must Be the Place (Naive Melody)
+{end_of_verse}
+
+{start_of_verse: Instrumental}
+[G] [Am] [Bm] [Am]
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Home ... is where I want to be
+Pick me up ... and turn me round
+I feel numb ... born with a weak heart
+I guess I must be having fun
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+The less we say about it the better
+Make it up as we go along
+Feet on the ground, head in the sky
+It's ok I know nothing's wrong ... nothing
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+Hey Yeah... I got plenty of   time
+Hey Yeah... you got light in your eye      (And you’re ...)
+{end_of_verse}
+
+{start_of_verse: Verse 5}
+And you're standing here beside me
+I love the passing of time
+Never for money - always for love
+Cover up and say goodnight - say goodnight
+{end_of_verse}
+
+{start_of_verse: Instrumental}
+Home ... is where I want to be
+But I     guess I'm already there
+I come home ... she lifted up her wings
+I guess that this must be the place
+{end_of_verse}
+
+{start_of_verse: Verse 6}
+I can't tell one from another
+Did I find you, or you find me?
+There was a time before we were born
+If someone asks, this where I'll be... where I'll be
+{end_of_verse}
+
+{start_of_verse: Verse 7}
+Hey Yeah... we drift in and out
+Hey Yeah... sing into my mouth
+{end_of_verse}
+
+{start_of_verse: Verse 8}
+Out of all those kinds of people
+You got a face with a view
+I'm just an animal looking for a home and
+Share the same space for a minute or two
+{end_of_verse}
+
+{start_of_verse: Verse 9}
+And you love me till my heart stops
+Love me till I'm dead
+Eyes that light up, eyes look through you
+Cover up the blank spots, hit me on the head ahh wooo
+{end_of_verse}

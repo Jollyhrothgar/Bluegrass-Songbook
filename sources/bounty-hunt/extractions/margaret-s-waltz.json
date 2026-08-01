@@ -1,0 +1,63 @@
+{
+ "wanted": {
+  "title": "Margaret's Waltz",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:01:49",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 7.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 4113322,
+  "song_id": 11625517,
+  "song_name": "Margarets Waltz",
+  "artist_id": 461465,
+  "artist_name": "Connie Kaldor",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 6,
+  "difficulty": "",
+  "rating": 4.60047,
+  "date": "1647468924",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/6/36905/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1647468924,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Margaret\u2019s Waltz  Connie Kaldor    Swing Waltz\r\n\r\n[Verse 1]\r\n[tab]             [ch]A[/ch]              [ch]F#m[/ch]       [ch]Bm[/ch]          [ch]E[/ch]\r\nI'm not the kind to sit and pine for places far away[/tab]\r\n[tab]       [ch]A[/ch]            [ch]F#m[/ch]         [ch]Bm[/ch]        [ch]E[/ch]        [ch]A[/ch]\r\nEvery town I travel to has its charms and its delights[/tab]\r\n[tab]                 [ch]A[/ch]             [ch]F#m[/ch]          [ch]Bm[/ch]             [ch]E[/ch]\r\nBut something about the moon tonight sent a longing to my soul[/tab]\r\n[tab]            [ch]A[/ch]                   [ch]F#m[/ch]       [ch]Bm[/ch]    [ch]E[/ch]        [ch]A[/ch]\r\nTo be at a dance with the one I love on a warm prairie night[/tab]\r\n\r\n[Chorus]\r\n[tab]           [ch]A[/ch]                    [ch]F#m[/ch]          [ch]Bm[/ch]             [ch]E[/ch]\r\nAnd I can hear that Margaret's Waltz, that fiddle play so sweet[/tab]\r\n[tab]          [ch]F#m[/ch]                     [ch]C#m[/ch]       [ch]D[/ch]               [ch]E[/ch]\r\nAnd I can feel the spring of the hardwood floor beneath my feet[/tab]\r\n[tab]            [ch]A[/ch]                  [ch]F#m[/ch]             [ch]D[/ch]          [ch]Bm[/ch]\r\nI close my eyes and I see the lights of town twinkling at night[/tab]\r\n[tab]               [ch]A[/ch]                  [ch]F#m[/ch]         [ch]Bm[/ch]     [ch]E[/ch]      [ch]A[/ch]\r\nThey say that home is where your heart is. I guess they're right[/tab]\r\n\r\n[Instrumental]\r\n[ch]A[/ch]    [ch]F#m[/ch]    [ch]C#m[/ch]    [ch]D[/ch]\r\n[ch]A[/ch]    [ch]F#m[/ch]    [ch]Bm[/ch]     [ch]E[/ch]\r\n[ch]A[/ch]    [ch]A7[/ch]     [ch]D[/ch]      [ch]A[/ch]\r\n[ch]A[/ch]    [ch]F#m[/ch]    [ch]Bm[/ch]  [ch]E[/ch]  [ch]A[/ch]\r\n\r\n[Verse 2]\r\n[tab]              [ch]A[/ch]             [ch]F#m[/ch]         [ch]Bm[/ch]               [ch]E[/ch]\r\nSo please forgive me, but tonight, my thoughts are far away[/tab]\r\n[tab]                 [ch]A[/ch]          [ch]F#m[/ch]       [ch]Bm[/ch]      [ch]E[/ch]       [ch]A[/ch]\r\nTo the place my memory will go, if I give it half a chance[/tab]\r\n[tab]             [ch]A[/ch]            [ch]F#m[/ch]          [ch]Bm[/ch]             [ch]E[/ch]\r\nI smell the sage upon the air and I'm walking arm in arm[/tab]\r\n[tab]                [ch]A[/ch]                [ch]F#m[/ch]        [ch]Bm[/ch]        [ch]E[/ch]       [ch]A[/ch]\r\nWith the one I love towards the sound of an old-time country dance[/tab]\r\n\r\n[Chorus]\r\n[tab]           [ch]A[/ch]                    [ch]F#m[/ch]          [ch]Bm[/ch]             [ch]E[/ch]\r\nAnd I can hear that Margaret's Waltz, that fiddle play so sweet[/tab]\r\n[tab]          [ch]F#m[/ch]                     [ch]C#m[/ch]       [ch]D[/ch]                [ch]E[/ch]\r\nAnd I can feel the spring of the hardwood floor beneath my feet[/tab]\r\n[tab]            [ch]A[/ch]                  [ch]F#m[/ch]             [ch]D[/ch]          [ch]Bm[/ch]\r\nI close my eyes and I see the lights of town twinkling at night[/tab]\r\n[tab]               [ch]A[/ch]                  [ch]F#m[/ch]         [ch]Bm[/ch]     [ch]E[/ch]      [ch]A[/ch]\r\nThey say that home is where your heart is. I guess they're right[/tab]"
+}

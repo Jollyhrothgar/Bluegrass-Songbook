@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Lost Girl",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:00:23",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 8.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2701875,
+  "song_id": 4337369,
+  "song_name": "Lost Girls",
+  "artist_id": 671990,
+  "artist_name": "Lights",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 10,
+  "difficulty": "intermediate",
+  "rating": 4.80031,
+  "date": "1558507750",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 351566
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/3/0/3087094/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/2/12319/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1574805246,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n[tab][ch]Am[/ch]                       [ch]G[/ch]   [ch]D[/ch]\r\n  Roll the window all the way down[/tab]\r\n[tab][ch]Am[/ch]                     [ch]G[/ch]    [ch]D[/ch]\r\n  Leave the city in the background[/tab]\r\n[tab][ch]Am[/ch]                            [ch]G[/ch]       [ch]D[/ch]\r\n  Block the number that you're getting in[/tab]\r\n[tab]     [ch]Am[/ch]                  N.C.\r\nThis fucking sunset is a specimen[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab]     [ch]C[/ch] \r\nLook up, look up, look up, look up, look up[/tab]\r\n[tab][ch]G[/ch]   [ch]D[/ch]\r\n No ceilings[/tab]\r\n[tab]    [ch]C[/ch]\r\nYou love, you love, you love, you love, you love[/tab]\r\n[tab][ch]G[/ch]     [ch]D[/ch]\r\n This feeling[/tab]\r\n[tab][ch]Am[/ch]                            [ch]G[/ch]       [ch]D[/ch]\r\n  Block the number that you're getting in[/tab]\r\n[tab]    [ch]Am[/ch]                    N.C\r\nThis god damn sunset is a specimen[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]              [ch]D[/ch]\r\nLook at us now, atop a mad world[/tab]\r\n[tab][ch]Am[/ch]                 [ch]C[/ch]\r\nWith a nose bleed, poppin' Advil[/tab]\r\n[tab][ch]Em[/ch]              [ch]D[/ch]\r\nLook at us now, fuck the bastards[/tab]\r\n[tab][ch]Am[/ch]                  [ch]C[/ch]\r\nIn your dad's truck, just a lost girl[/tab]\r\n[tab][ch]Em[/ch]              [ch]D[/ch]\r\nLook at us now, atop a mad world[/tab]\r\n[tab][ch]Am[/ch]                [ch]C[/ch]\r\nWith a nose bleed, poppin' Advil[/tab]\r\n[tab][ch]Em[/ch]              [ch]D[/ch]\r\nLook at us now, got your daughters[/tab]\r\n[tab][ch]Am[/ch]                   [ch]C[/ch]              [ch]Em[/ch]\r\nIn your dad's truck, just the lost girls[/tab]\r\n\r\n\r\n[Post-Chorus]\r\n[tab][ch]D[/ch]                  [ch]Am[/ch]\r\n Just the lost girls[/tab]\r\n[tab][ch]C[/ch]                  [ch]Em[/ch]\r\n Just the lost girls[/tab]\r\n[tab][ch]D[/ch]                  [ch]Am[/ch] [ch]C[/ch] [ch]D[/ch]\r\n Just the lost girls[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab]N.C.                              [ch]G[/ch]     [ch]D[/ch]\r\nDon't call me, I'm not looking for love tonight[/tab]\r\n[tab]      [ch]Am[/ch]                     [ch]G[/ch]   [ch]D[/ch]\r\nDon't come up, I ain't tryna f', alright[/tab]\r\n[tab]             [ch]Am[/ch]                 [ch]G[/ch]        [ch]D[/ch]\r\nI just wanna lay low, I already feel fine[/tab]\r\n[tab]                  [ch]Am[/ch]\r\nI don't wanna get high[/tab]\r\n[tab]                   [ch]G[/ch]         [ch]D[/ch]\r\nI just wanna sip a cheap wine[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab]     [ch]C[/ch]\r\nLook up, look up, look up, look up, look up[/tab]\r\n[tab][ch]G[/ch]   [ch]D[/ch]\r\n No ceilings[/tab]\r\n[tab]    [ch]C[/ch]\r\nYou love, you love, you love, you love, you love[/tab]\r\n[tab][ch]G[/ch]    [ch]D[/ch]\r\n This feeling[/tab]\r\n[tab][ch]Am[/ch]                       [ch]G[/ch]    [ch]D[/ch]\r\n  Roll the window all the way down[/tab]\r\n[tab][ch]Am[/ch]                      N.C.\r\n  Leave the city in the background[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]             [ch]D[/ch]\r\nLook at us now, atop a mad world[/tab]\r\n[tab][ch]Am[/ch]                 [ch]C[/ch]\r\nWith a nose bleed, poppin' Advil[/tab]\r\n[tab][ch]Em[/ch]             [ch]D[/ch]\r\nLook at us now, fuck the bastards[/tab]\r\n[tab][ch]Am[/ch]                  [ch]C[/ch]\r\nIn your dad's truck, just a lost girl[/tab]\r\n[tab][ch]Em[/ch]             [ch]D[/ch]\r\nLook at us now, atop a mad world[/tab]\r\n[tab][ch]Am[/ch]                 [ch]C[/ch]\r\nWith a nose bleed, poppin' Advil[/tab]\r\n[tab][ch]Em[/ch]              [ch]D[/ch]\r\nLook at us now, got your daughters[/tab]\r\n[tab][ch]Am[/ch]                   [ch]C[/ch]               [ch]Em[/ch]\r\nIn your dad's truck, just the lost girls[/tab]\r\n\r\n\r\n[Post-Chorus]\r\n[tab][ch]D[/ch]                  [ch]Am[/ch]\r\n Just the lost girls[/tab]\r\n[tab][ch]C[/ch]                  [ch]Em[/ch]\r\n Just the lost girls[/tab]\r\n[tab][ch]D[/ch]                  [ch]Am[/ch]   \r\n Just the lost girls[/tab]\r\n\r\n\r\n[tab][ch]Em[/ch] [ch]D[/ch]               [ch]Am[/ch]\r\n    Just the lost girls[/tab]\r\n[tab][ch]C[/ch]                [ch]Em[/ch]\r\n Just the lost girls[/tab]\r\n[tab][ch]D[/ch]                [ch]Am[/ch]  [ch]C[/ch]\r\n Just the lost girls[/tab]\r\n\r\n\r\n[Bridge]\r\n[tab][ch]Em[/ch]      [ch]D[/ch]       [ch]Am[/ch]      [ch]C[/ch]  [ch]D[/ch]\r\nConsole gaming, crystal gazing[/tab]\r\n[tab][ch]Em[/ch]          [ch]D[/ch]      [ch]Am[/ch]         [ch]C[/ch]  [ch]D[/ch]\r\nFriends are flaking, backyard blazing[/tab]\r\n[tab][ch]Em[/ch]    [ch]D[/ch]       [ch]Am[/ch]   [ch]C[/ch]  [ch]D[/ch]\r\nHula-hooping, ELO looping[/tab]\r\n[tab][ch]Em[/ch]            [ch]D[/ch]             [ch]Am[/ch]\r\nAll I want in this old life, are the things I[/tab]\r\n[tab][ch]Am[/ch]               N.C.\r\nAre the things I like[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]             [ch]D[/ch]\r\nLook at us now, atop a mad world[/tab]\r\n[tab][ch]Am[/ch]                 [ch]C[/ch]\r\nWith a nose bleed, poppin' Advil[/tab]\r\n[tab][ch]Em[/ch]             [ch]D[/ch]\r\nLook at us now, fuck the bastards[/tab]\r\n[tab][ch]Am[/ch]                  [ch]C[/ch]\r\nIn your dad's truck, just a lost girl[/tab]\r\n[tab][ch]Em[/ch]             [ch]D[/ch]\r\nLook at us now, atop a mad world[/tab]\r\n[tab][ch]Am[/ch]                 [ch]C[/ch]\r\nWith a nose bleed, poppin' Advil[/tab]\r\n[tab][ch]Em[/ch]             [ch]D[/ch]\r\nLook at us now, got your daughters[/tab]\r\n[tab][ch]Am[/ch]                   [ch]C[/ch]               [ch]Em[/ch]\r\nIn your dad's truck, just the lost girls[/tab]\r\n\r\n\r\n[Post-Chorus]\r\n[tab][ch]D[/ch]               [ch]Am[/ch]\r\n Just the lost girls[/tab]\r\n[tab][ch]C[/ch]               [ch]Em[/ch]\r\n Just the lost girls[/tab]\r\n[tab][ch]D[/ch]               [ch]Am[/ch]  [ch]C[/ch] [ch]D[/ch]\r\n Just the lost girls  (lost girls)[/tab]\r\n\r\n[tab][ch]Em[/ch] [ch]D[/ch]               [ch]Am[/ch]\r\n    Just the lost girls[/tab]\r\n[tab][ch]C[/ch]                [ch]Em[/ch]\r\n Just the lost girls[/tab]\r\n[tab][ch]D[/ch]                [ch]Am[/ch]  [ch]C[/ch] [ch]D[/ch]\r\n Just the lost girls[/tab]"
+}

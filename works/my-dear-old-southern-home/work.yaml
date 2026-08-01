@@ -1,0 +1,13 @@
+id: my-dear-old-southern-home
+title: My Dear Old Southern Home
+default_key: E
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-my-dear-old-southern-home.txt
+    source_url: https://docs.google.com/document/d/10uW66w_Kt5En_L39K7nfYA4Ck5Lx6jGpyS0aiSydczM/edit?usp=sharing
+    imported_at: '2026-08-01'

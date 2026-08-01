@@ -1,0 +1,13 @@
+id: cigarettes-whiskey-and-wild-women
+title: Cigarettes, whiskey and wild women
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-cigarettes-whiskey-and-wild-women.txt
+    source_url: https://docs.google.com/document/d/1qIM6grFIlhICryp6sAjWbnos0nK5W7JV/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'
