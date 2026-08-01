@@ -37,6 +37,7 @@ docs/
 │   │   ├── tablature.js # Tablature display
 │   │   ├── tab-player.js # Interactive tab player with playback
 │   │   ├── tab-ascii.js # ASCII tab format
+│   │   ├── otf-tracks.js # isPercussionTrack / pitchedTracks (shared filter)
 │   │   └── measure-timing.js # Measure timing helpers for playback
 │   ├── chord-explorer/ # Chord exploration tool (standalone)
 │   ├── visual-editor/  # Two-pane editor: interactive preview + ChordPro model
@@ -298,6 +299,13 @@ Multi-track tabs (e.g., ensemble arrangements with guitar, banjo, mandolin, bass
 **Track detection** is based on the `instrument` field in the OTF:
 - `5-string-banjo`, `6-string-guitar`, `mandolin`, `upright-bass`, etc.
 - Falls back to track index if no instrument name
+
+**Percussion tracks are excluded everywhere** — stave, mixer, playback and
+the OTF editor — via `isPercussionTrack` / `pitchedTracks` in
+`renderers/otf-tracks.js`. A drum track (`percussion: true`,
+`instrument: 'percussion'`, empty `tuning`) is not pitched: its `s` is a
+kit staff line and its `f` a hit variant, so `tuning[s-1] + f` yields
+nonsense. Use the shared predicate — never sniff track names, which lie.
 
 ### Transposition
 

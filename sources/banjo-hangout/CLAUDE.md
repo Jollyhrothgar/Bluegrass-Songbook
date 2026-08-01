@@ -387,6 +387,30 @@ Downloaded files use two naming patterns:
 | Slides showing as hammer-ons | Check effect1=0x03 before 0x01 | otf.py |
 | Slurs not rendering for close notes | Fixed slur rendering for closely-spaced notes | tablature.js |
 
+### Percussion (drum) tracks
+
+Many TablEdit arrangements — MandoTom2's especially — carry a drum track
+alongside the melodic ones. It is detected **structurally**, from `u16 @
+track_record+6 == 98` (`reader.py` `_PERCUSSION_FLAG`), never from the
+track name: TablEdit lets the name lie, and mandolin-hangout 2613's drum
+track is literally named `Guitar Standard`.
+
+A flagged track's 8 "tuning" bytes are drum-kit staff-line assignments, so
+the `96 - b` pitch formula must NOT run on them. Doing so used to fabricate
+a tuning (`C#4-D#4-F#3-D4-A3-C#3-F3-G#2`), which the renderer drew as an
+8-line stave and the player sounded as arbitrary guitar notes. Flagged
+tracks now convert to:
+
+```json
+{"id": "percussion", "instrument": "percussion", "tuning": [],
+ "capo": 0, "role": "percussion", "percussion": true, "lines": 8}
+```
+
+The frontend filters them out of the stave, the mixer, playback and the
+editor (`docs/js/renderers/otf-tracks.js`), and `build_works_index`'s
+`tracks` count excludes them. The notation is preserved, so a real drum
+renderer/kit playback can pick it up later without reconverting.
+
 ### Multi-Track Ensemble Support
 
 Some TEF files have multiple instruments (guitar, bass, mandolin, banjo). These are imported with `instrument: ensemble`:

@@ -49,17 +49,13 @@
       "role": "rhythm"
     },
     {
-      "id": "banjo",
-      "instrument": "5-string-banjo",
-      "tuning": [
-        "C#4",
-        "F#3",
-        "F3",
-        "C#3",
-        "G#2"
-      ],
+      "id": "percussion",
+      "instrument": "percussion",
+      "tuning": [],
       "capo": 0,
-      "role": "rhythm"
+      "role": "percussion",
+      "percussion": true,
+      "lines": 5
     }
   ],
   "notation": {

@@ -9,13 +9,17 @@
 // only editor surface used: save(), download(filename?), destroy(),
 // state.facade.canUndo() (dirty check), and the onSave option.
 
+import { pitchedTracks } from '../renderers/otf-tracks.js';
+
 /**
  * Pick the track to edit for a part. Mirrors work-view's lead-track
  * resolution: match the part instrument, then the lead role, then the
  * first track. Instrument specifics are data, not architecture.
  */
 export function resolveEditTrackId(otf, instrument) {
-    const tracks = otf?.tracks || [];
+    // Percussion is never editable here: the editor is a pitched-stave tool
+    // (strings and frets), which a drum track has neither of.
+    const tracks = pitchedTracks(otf?.tracks || []);
     if (instrument) {
         const match = tracks.find(t =>
             t.instrument?.includes(instrument) || t.id?.includes(instrument));

@@ -54,20 +54,13 @@
       "role": "rhythm"
     },
     {
-      "id": "guitar",
-      "instrument": "6-string-guitar",
-      "tuning": [
-        "C#4",
-        "D#4",
-        "F#3",
-        "D4",
-        "A3",
-        "C#3",
-        "F3",
-        "G#2"
-      ],
+      "id": "percussion",
+      "instrument": "percussion",
+      "tuning": [],
       "capo": 0,
-      "role": "rhythm"
+      "role": "percussion",
+      "percussion": true,
+      "lines": 8
     }
   ],
   "notation": {
@@ -3085,7 +3078,7 @@
         ]
       }
     ],
-    "guitar": [
+    "percussion": [
       {
         "measure": 2,
         "events": [

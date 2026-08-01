@@ -87,6 +87,12 @@ class OTFTrack:
     tuning: list[str]
     capo: int = 0
     role: str = "lead"
+    # Percussion tracks are NOT pitched: `tuning` is empty and a note's
+    # `s` is a drum-kit staff line, not a string, so `f` is a hit variant
+    # rather than a fret. Consumers must not run tuning[s] + f on them.
+    # `lines` carries the staff-line count `tuning` would otherwise imply.
+    percussion: bool = False
+    lines: int = 0
 
 
 @dataclass
@@ -163,13 +169,18 @@ class OTFDocument:
 
         # Add tracks
         for track in self.tracks:
-            result["tracks"].append({
+            t = {
                 "id": track.id,
                 "instrument": track.instrument,
                 "tuning": track.tuning,
                 "capo": track.capo,
                 "role": track.role,
-            })
+            }
+            # Emitted only for drum tracks, so pitched tabs stay byte-identical
+            if track.percussion:
+                t["percussion"] = True
+                t["lines"] = track.lines
+            result["tracks"].append(t)
 
         # Add notation per track
         for track_id, measures in self.notation.items():
@@ -234,7 +245,14 @@ def instrument_to_otf_id(inst: TEFInstrument) -> str:
     corpus and frontend already use (guitar, bass, mandolin, banjo, ...)
     instead of hyphenating arbitrary names. A clearly named non-banjo
     5-string track (e.g. a "Clicks" click track) must NOT become "banjo".
+
+    The percussion flag wins over every name/string-count rule below,
+    because a drum track's name can lie (2613's is "Guitar Standard") and
+    its line count collides with real instruments (5-line drum tracks were
+    landing on the `num_strings == 5 -> banjo` rule).
     """
+    if inst.is_percussion:
+        return "percussion"
     name = inst.name.lower()
     # 4-string tenor banjo (before the generic keyword scan)
     if inst.num_strings == 4 and ("banjo" in name or "tenor" in name or "cgdg" in name or "cgda" in name):
@@ -269,6 +287,8 @@ def instrument_to_otf_id(inst: TEFInstrument) -> str:
 
 def instrument_to_type(inst: TEFInstrument) -> str:
     """Map instrument name to standard type identifier."""
+    if inst.is_percussion:
+        return "percussion"
     name = inst.name.lower()
     # 4-string tenor banjo (check before generic banjo check)
     if inst.num_strings == 4 and ("banjo" in name or "tenor" in name or "cgdg" in name or "cgda" in name):
@@ -765,6 +785,21 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             track_id = f"{track_id}-{count}"
 
         inst_type = instrument_to_type(inst)
+
+        # A drum track has no tuning to fall back to — inventing one (which
+        # is what the banjo default below would do) is exactly what made
+        # percussion play back as pitched notes.
+        if inst.is_percussion:
+            doc.tracks.append(OTFTrack(
+                id=track_id,
+                instrument=inst_type,
+                tuning=[],
+                capo=0,
+                role="percussion",
+                percussion=True,
+                lines=inst.num_strings,
+            ))
+            continue
 
         # Use extracted tuning if available, otherwise use default
         if inst.tuning_pitches:

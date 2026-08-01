@@ -42,7 +42,7 @@ import {
     expandNotation, makePlaybackToVisualMapper,
     maxMeasureIn, measureTimingFromOtf,
     analyzeReadingList, prepareCompactNotation, densifyNotation,
-    attachOtfDecorations,
+    attachOtfDecorations, isPercussionTrack, pitchedTracks,
 } from './renderers/index.js';
 import { clearListView, openNotesSheet } from './lists.js';
 import { showListPicker, updateTriggerButton } from './list-picker.js';
@@ -1814,10 +1814,12 @@ async function renderTablaturePart(part, container) {
         // Ts-change-aware timing for the current display mode
         const timings = buildOtfTimings(otf, showRepeatsCompact && otf.reading_list?.length > 0);
 
-        // Determine which track is the "lead" (matches part instrument, or first track)
-        let leadTrackId = otf.tracks[0]?.id;
-        if (part.instrument && otf.tracks.length > 1) {
-            const matchingTrack = otf.tracks.find(t =>
+        // Determine which track is the "lead" (matches part instrument, or
+        // first track). Percussion can never be the lead.
+        const pitched = pitchedTracks(otf.tracks);
+        let leadTrackId = pitched[0]?.id;
+        if (part.instrument && pitched.length > 1) {
+            const matchingTrack = pitched.find(t =>
                 t.instrument?.includes(part.instrument) ||
                 t.id?.includes(part.instrument)
             );
@@ -1827,6 +1829,9 @@ async function renderTablaturePart(part, container) {
         }
 
         for (const track of otf.tracks) {
+            // Percussion has no pitched stave to draw (see otf-tracks.js)
+            if (isPercussionTrack(track)) continue;
+
             let notation = otf.notation[track.id];
             if (!notation || notation.length === 0) continue;
 
@@ -2048,7 +2053,8 @@ function createTablatureControls(otf, part) {
     const defaultTempo = Math.round(quarterBpm / (twoFeelMode ? 2 : 1));
     const originalKey = currentWork.key || 'G';
 
-    const filteredTracks = otf.tracks.filter(track => {
+    // Percussion is dropped up front: it has no tuning to sound (otf-tracks.js)
+    const filteredTracks = pitchedTracks(otf.tracks).filter(track => {
         const isMandolin = track.instrument?.includes('mandolin') || track.id?.includes('mandolin');
         const isLead = track.role === 'lead' || track.instrument?.includes('banjo') ||
                        (part.instrument && track.instrument?.includes(part.instrument));
@@ -2300,7 +2306,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
     const getEnabledTrackIds = () => {
         const checkboxes = controls.querySelectorAll('.track-checkbox:checked');
         if (checkboxes.length === 0) {
-            return otf.tracks
+            return pitchedTracks(otf.tracks)
                 .filter(t => {
                     const isMandolin = t.instrument?.includes('mandolin') || t.id?.includes('mandolin');
                     const isLead = t.role === 'lead' || t.instrument?.includes('banjo');
