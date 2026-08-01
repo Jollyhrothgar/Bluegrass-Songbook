@@ -1,0 +1,12 @@
+id: what-a-friend-we-have-in-mother
+title: What A Friend We Have In Mother
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/what-a-friend-we-have-in-mother/
+    imported_at: '2026-08-01'

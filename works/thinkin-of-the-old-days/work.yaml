@@ -1,0 +1,12 @@
+id: thinkin-of-the-old-days
+title: Thinkin’ Of The Old Days
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/thinkin-of-the-old-days/
+    imported_at: '2026-08-01'

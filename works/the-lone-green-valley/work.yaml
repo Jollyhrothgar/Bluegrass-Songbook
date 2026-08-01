@@ -1,0 +1,12 @@
+id: the-lone-green-valley
+title: The Lone Green Valley
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/the-lone-green-valley/
+    imported_at: '2026-08-01'

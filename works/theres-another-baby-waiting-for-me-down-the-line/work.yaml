@@ -1,0 +1,12 @@
+id: theres-another-baby-waiting-for-me-down-the-line
+title: There’s Another Baby Waiting For Me Down The Line
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/theres-another-baby-waiting-for-me-down-the-line/
+    imported_at: '2026-08-01'

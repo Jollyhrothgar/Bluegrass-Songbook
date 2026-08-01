@@ -1,0 +1,12 @@
+id: all-i-have-is-just-a-memory
+title: All I Have Is Just A Memory
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/all-i-have-is-just-a-memory/
+    imported_at: '2026-08-01'

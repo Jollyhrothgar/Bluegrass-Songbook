@@ -1,0 +1,12 @@
+id: i-guess-its-only-right-that-i-should-pay
+title: I Guess It’s Only Right That I Should Pay
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/i-guess-its-only-right-that-i-should-pay/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: wreck-of-the-old-ninety-seven
+title: Wreck Of The Old Ninety -Seven
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/wreck-of-the-old-ninety-seven/
+    imported_at: '2026-08-01'

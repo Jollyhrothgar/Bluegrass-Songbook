@@ -1,0 +1,12 @@
+id: ice-cold-stone
+title: Ice Cold Stone
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/ice-cold-stone/
+    imported_at: '2026-08-01'

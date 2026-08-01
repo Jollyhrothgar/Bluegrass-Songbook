@@ -1,0 +1,12 @@
+id: the-sweetest-song-i-sing
+title: The Sweetest Song I Sing
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/the-sweetest-song-i-sing/
+    imported_at: '2026-08-01'

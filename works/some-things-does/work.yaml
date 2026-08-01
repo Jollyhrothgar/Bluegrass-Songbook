@@ -1,0 +1,12 @@
+id: some-things-does
+title: Some Things Does
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/some-things-does/
+    imported_at: '2026-08-01'

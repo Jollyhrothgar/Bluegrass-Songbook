@@ -1,0 +1,12 @@
+id: im-too-old-to-stand-a-broken-heart
+title: I’m too Old to Stand a Broken Heart
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/im-too-old-to-stand-a-broken-heart/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: lonesome-here-without-you
+title: Lonesome Here Without You
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/lonesome-here-without-you/
+    imported_at: '2026-08-01'

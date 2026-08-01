@@ -1,0 +1,12 @@
+id: six-feet-under-the-ground
+title: Six Feet Under The Ground
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/six-feet-under-the-ground/
+    imported_at: '2026-08-01'

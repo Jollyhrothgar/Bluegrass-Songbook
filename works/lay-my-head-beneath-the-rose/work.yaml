@@ -1,0 +1,12 @@
+id: lay-my-head-beneath-the-rose
+title: Lay My Head Beneath The Rose
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/lay-my-head-beneath-the-rose/
+    imported_at: '2026-08-01'

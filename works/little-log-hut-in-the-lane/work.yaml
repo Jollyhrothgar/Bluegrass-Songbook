@@ -1,0 +1,12 @@
+id: little-log-hut-in-the-lane
+title: Little Log Hut In The Lane
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/little-log-hut-in-the-lane/
+    imported_at: '2026-08-01'

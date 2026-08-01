@@ -1,0 +1,12 @@
+id: train-that-i-ride
+title: Train That I Ride
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/train-that-i-ride/
+    imported_at: '2026-08-01'

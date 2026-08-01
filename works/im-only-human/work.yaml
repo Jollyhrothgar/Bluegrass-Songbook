@@ -1,0 +1,12 @@
+id: im-only-human
+title: I’m Only Human
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/im-only-human/
+    imported_at: '2026-08-01'

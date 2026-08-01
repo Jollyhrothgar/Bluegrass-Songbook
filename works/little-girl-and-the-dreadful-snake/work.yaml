@@ -1,0 +1,12 @@
+id: little-girl-and-the-dreadful-snake
+title: Little Girl And The Dreadful Snake
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/little-girl-and-the-dreadful-snake/
+    imported_at: '2026-08-01'

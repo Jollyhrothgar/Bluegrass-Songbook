@@ -1,0 +1,12 @@
+id: while-im-reading-your-letter
+title: While I’m Reading Your Letter
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/while-im-reading-your-letter/
+    imported_at: '2026-08-01'

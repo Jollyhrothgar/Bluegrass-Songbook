@@ -1,0 +1,12 @@
+id: take-my-hand-and-tell-me
+title: Take My Hand and Tell Me
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/take-my-hand-and-tell-me/
+    imported_at: '2026-08-01'

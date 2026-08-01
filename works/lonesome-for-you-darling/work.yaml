@@ -1,0 +1,12 @@
+id: lonesome-for-you-darling
+title: Lonesome For You Darling
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/lonesome-for-you-darling/
+    imported_at: '2026-08-01'

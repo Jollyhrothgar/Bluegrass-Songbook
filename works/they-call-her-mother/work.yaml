@@ -1,0 +1,12 @@
+id: they-call-her-mother
+title: They Call Her Mother
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/they-call-her-mother/
+    imported_at: '2026-08-01'

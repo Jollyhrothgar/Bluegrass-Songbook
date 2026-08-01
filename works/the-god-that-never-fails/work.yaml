@@ -1,0 +1,12 @@
+id: the-god-that-never-fails
+title: The God That Never Fails
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/the-god-that-never-fails/
+    imported_at: '2026-08-01'

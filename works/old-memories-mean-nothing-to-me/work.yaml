@@ -1,0 +1,12 @@
+id: old-memories-mean-nothing-to-me
+title: Old Memories Mean Nothing To Me
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/old-memories-mean-nothing-to-me/
+    imported_at: '2026-08-01'

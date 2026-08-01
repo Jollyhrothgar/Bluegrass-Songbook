@@ -1,0 +1,12 @@
+id: let-the-harvest-go-to-seed
+title: Let The Harvest Go To Seed
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/let-the-harvest-go-to-seed/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: look-away-from-the-cross
+title: Look Away From The Cross
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/look-away-from-the-cross/
+    imported_at: '2026-08-01'

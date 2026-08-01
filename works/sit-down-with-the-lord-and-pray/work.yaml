@@ -1,0 +1,12 @@
+id: sit-down-with-the-lord-and-pray
+title: Sit Down With The Lord And Pray
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/sit-down-with-the-lord-and-pray/
+    imported_at: '2026-08-01'

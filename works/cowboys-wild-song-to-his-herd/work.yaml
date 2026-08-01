@@ -1,0 +1,12 @@
+id: cowboys-wild-song-to-his-herd
+title: Cowboy’s Wild Song To His Herd
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/cowboys-wild-song-to-his-herd/
+    imported_at: '2026-08-01'

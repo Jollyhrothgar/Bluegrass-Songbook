@@ -1,0 +1,12 @@
+id: charlie-and-nellie
+title: Charlie And Nellie
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/charlie-and-nellie/
+    imported_at: '2026-08-01'

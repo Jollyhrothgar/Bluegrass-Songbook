@@ -1,0 +1,12 @@
+id: bury-me-beneath-the-pines
+title: Bury Me Beneath The Pines
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/bury-me-beneath-the-pines/
+    imported_at: '2026-08-01'

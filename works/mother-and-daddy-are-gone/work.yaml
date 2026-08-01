@@ -1,0 +1,12 @@
+id: mother-and-daddy-are-gone
+title: Mother And Daddy Are Gone
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/mother-and-daddy-are-gone/
+    imported_at: '2026-08-01'

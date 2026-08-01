@@ -1,0 +1,12 @@
+id: shut-up-in-the-mines-at-coal-creek
+title: Shut Up In The Mines At Coal Creek
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/shut-up-in-the-mines-at-coal-creek/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: see-gods-ark-amovin
+title: See God’s Ark A’movin’
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/see-gods-ark-amovin/
+    imported_at: '2026-08-01'

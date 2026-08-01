@@ -1,0 +1,12 @@
+id: no-one-but-my-darlin
+title: No One But My Darlin’
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/no-one-but-my-darlin/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: im-going-across-the-sea
+title: I’m Going Across The Sea
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/im-going-across-the-sea/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: blue-yodel-4
+title: 'Blue Yodel #4'
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/blue-yodel-4/
+    imported_at: '2026-08-01'

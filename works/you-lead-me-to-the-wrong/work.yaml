@@ -1,0 +1,12 @@
+id: you-lead-me-to-the-wrong
+title: You Lead Me to the Wrong
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/you-lead-me-to-the-wrong/
+    imported_at: '2026-08-01'

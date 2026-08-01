@@ -1,0 +1,12 @@
+id: in-the-shadow-of-clinch-mountain
+title: In The Shadow Of Clinch Mountain
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/in-the-shadow-of-clinch-mountain/
+    imported_at: '2026-08-01'

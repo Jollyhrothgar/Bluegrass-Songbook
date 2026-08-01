@@ -1,0 +1,12 @@
+id: sals-got-a-meatskin
+title: Sal’s Got A Meatskin
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/sals-got-a-meatskin/
+    imported_at: '2026-08-01'

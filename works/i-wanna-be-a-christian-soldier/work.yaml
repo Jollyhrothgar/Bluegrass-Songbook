@@ -1,0 +1,12 @@
+id: i-wanna-be-a-christian-soldier
+title: I Wanna Be A Christian Soldier
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/i-wanna-be-a-christian-soldier/
+    imported_at: '2026-08-01'

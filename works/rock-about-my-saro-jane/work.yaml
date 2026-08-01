@@ -1,0 +1,12 @@
+id: rock-about-my-saro-jane
+title: Rock About My Saro Jane
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/rock-about-my-saro-jane/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: whos-that-knocking-at-my-window
+title: Who’s That Knocking At My Window
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/whos-that-knocking-at-my-window/
+    imported_at: '2026-08-01'

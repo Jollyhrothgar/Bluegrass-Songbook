@@ -1,0 +1,12 @@
+id: when-its-time-for-the-whippoorwill-to-sing
+title: When It’s Time For The Whippoorwill To Sing
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/when-its-time-for-the-whippoorwill-to-sing/
+    imported_at: '2026-08-01'

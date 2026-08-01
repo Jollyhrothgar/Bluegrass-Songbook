@@ -1,0 +1,12 @@
+id: darling-nellie-across-the-sea
+title: Darling Nellie Across The Sea
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/darling-nellie-across-the-sea-2/
+    imported_at: '2026-08-01'

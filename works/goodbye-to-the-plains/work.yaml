@@ -1,0 +1,12 @@
+id: goodbye-to-the-plains
+title: Goodbye To The Plains
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/goodbye-to-the-plains/
+    imported_at: '2026-08-01'

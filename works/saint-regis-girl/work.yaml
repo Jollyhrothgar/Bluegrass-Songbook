@@ -1,0 +1,12 @@
+id: saint-regis-girl
+title: Saint Regis Girl
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/saint-regis-girl/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: now-my-flowers-gone-away
+title: Now My Flower’s Gone Away
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/now-my-flowers-gone-away/
+    imported_at: '2026-08-01'

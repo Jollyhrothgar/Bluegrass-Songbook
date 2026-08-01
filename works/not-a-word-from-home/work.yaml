@@ -1,0 +1,12 @@
+id: not-a-word-from-home
+title: Not A Word From Home
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/not-a-word-from-home/
+    imported_at: '2026-08-01'

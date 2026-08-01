@@ -1,0 +1,12 @@
+id: bring-on-the-blues
+title: Bring On The Blues
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/bring-on-the-blues/
+    imported_at: '2026-08-01'

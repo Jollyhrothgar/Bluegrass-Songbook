@@ -1,0 +1,12 @@
+id: faded-flowers
+title: Faded Flowers
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/faded-flowers/
+    imported_at: '2026-08-01'

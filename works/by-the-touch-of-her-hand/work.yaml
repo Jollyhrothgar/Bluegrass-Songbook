@@ -1,0 +1,12 @@
+id: by-the-touch-of-her-hand
+title: By The Touch Of Her Hand
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/by-the-touch-of-her-hand/
+    imported_at: '2026-08-01'

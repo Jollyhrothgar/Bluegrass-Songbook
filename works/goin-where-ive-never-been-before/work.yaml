@@ -1,0 +1,12 @@
+id: goin-where-ive-never-been-before
+title: Goin Where I’ve Never Been Before
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/goin-where-ive-never-been-before/
+    imported_at: '2026-08-01'

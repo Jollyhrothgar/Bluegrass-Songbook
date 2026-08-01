@@ -1,0 +1,12 @@
+id: no-letter-in-the-mail
+title: No Letter In The Mail
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/no-letter-in-the-mail/
+    imported_at: '2026-08-01'
