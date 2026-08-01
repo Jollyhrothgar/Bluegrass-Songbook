@@ -58,6 +58,15 @@ jobs:
       - name: Run parser tests (pytest)
         run: uv run --extra dev pytest -q
 
+      # Exercise the real index rebuild on the runner (same command and
+      # Python as the deploy job) so a builder regression fails the PR
+      # here instead of surfacing in the post-merge deploy. Shape checks
+      # only — committed jsonl may legitimately differ from a fresh build.
+      - name: Rebuild search index (deploy dry-run)
+        run: |
+          uv run --python 3.12 python3 scripts/lib/build_works_index.py
+          uv run --python 3.12 python3 scripts/lib/check_index_outputs.py
+
   deploy:
     needs: verify
     # Deploy on: direct push to main, OR successful workflow_run from content workflows
