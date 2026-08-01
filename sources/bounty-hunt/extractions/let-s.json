@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Let's",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Darin & Brooke Aldridge",
+   "Martha Adcock",
+   "The Country Gentlemen",
+   "Eddie Adcock"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:27:39",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 50
+ },
+ "candidate": null,
+ "content": null
+}

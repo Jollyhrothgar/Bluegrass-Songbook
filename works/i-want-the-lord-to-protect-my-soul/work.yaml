@@ -1,0 +1,12 @@
+id: i-want-the-lord-to-protect-my-soul
+title: I Want the Lord to Protect My Soul
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/i-want-the-lord-to-protect-my-soul/
+    imported_at: '2026-08-01'

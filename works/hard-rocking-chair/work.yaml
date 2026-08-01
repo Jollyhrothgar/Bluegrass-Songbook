@@ -1,0 +1,12 @@
+id: hard-rocking-chair
+title: Hard Rocking Chair
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/hard-rocking-chair/
+    imported_at: '2026-08-01'

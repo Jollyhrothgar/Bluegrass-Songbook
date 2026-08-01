@@ -1,0 +1,12 @@
+id: sweet-as-the-flowers-in-maytime
+title: Sweet As The Flowers In Maytime
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/sweet-as-the-flowers-in-maytime/
+    imported_at: '2026-08-01'

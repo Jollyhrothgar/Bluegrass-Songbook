@@ -1,0 +1,19 @@
+id: bye-bye-blues
+title: Bye Bye Blues
+artist: null
+composers: []
+default_key: C
+tags:
+- Instrumental
+parts:
+- type: tablature
+  instrument: ensemble
+  format: otf
+  file: ensemble.otf.json
+  default: true
+  provenance:
+    source: mandozine
+    source_url: https://mandozine.com/music/zip_files/allfiles.zip
+    author: Compton
+    imported_at: '2026-08-01'
+    source_file: ByeByeBlues-C-Compton.tef

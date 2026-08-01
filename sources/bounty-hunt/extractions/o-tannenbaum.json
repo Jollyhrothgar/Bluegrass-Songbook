@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "O Tannenbaum",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Gene Parsons",
+   "Joe Craven",
+   "Harvey Reid",
+   "Palast Orchester mit seinem S\u00e4nger Max Raabe"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:29:14",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Eb"
+ },
+ "candidate": {
+  "id": 3463751,
+  "song_id": 5659784,
+  "song_name": "Oh Tannenbaum",
+  "artist_id": 64844,
+  "artist_name": "Heintje",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 60,
+  "difficulty": "novice",
+  "rating": 4.70486,
+  "date": "1607775120",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Eb",
+  "version_description": "Https://youtu.be/tc4xd7GYvrE Complete aligned lyrics and sequence.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2560165
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/3/23546/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/2/1/21635/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1636218289,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Auch auf Niederl\u00e4ndisch bei UG, auch durch Heintje oder Jan(tje) Smit (Oh, Denne(n)boom).\r\n\r\n(Dreiviertelzeit - 3/4)\r\n\r\n[Intro]\r\n| [ch]D[/ch] | [ch]D[/ch] | [ch]A[/ch] | [ch]A[/ch] |\r\n\r\n[Verse 1]\r\n[tab]   [ch]D[/ch]\r\nO, Tannenbaum, o, Tannenbaum.[/tab]\r\n[tab]    [ch]Em[/ch]              [ch]A7[/ch]  [ch]D[/ch]\r\nWie gr\u00fcn sind deine Bl\u00e4tter?[/tab]\r\n[tab]                [ch]G[/ch]       [ch]A[/ch]\r\nDu gr\u00fcnst nicht nur zur Sommerzeit.[/tab]\r\n[tab]      [ch]A7[/ch]             [ch]D[/ch]\r\nNein, auch im Winter wenn es schneit.[/tab]\r\n[tab]   [ch]Bm[/ch]          [ch]A[/ch]  [ch]D[/ch]\r\nO, Tannenbaum, o, Tannenbaum.[/tab]\r\n[tab][ch]Bm[/ch]  [ch]Em[/ch]              [ch]A[/ch]   [ch]D[/ch]\r\nWie gr\u00fcn sind deine Bl\u00e4tter?[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]G[/ch] [ch]A[/ch]   [ch]Bm[/ch]             [ch]D[/ch]\r\n   O, Tannenbaum, o, Tannenbaum.[/tab]\r\n[tab]   [ch]Em[/ch]                [ch]A[/ch]  [ch]D[/ch]\r\nDu kannst mir sehr gefallen.[/tab]\r\n[tab]                      [ch]A[/ch]\r\nWie oft hat nicht zur Weihnachtszeit,[/tab]\r\n[tab]                      [ch]D[/ch]\r\nein Baum von dir mich hoch erfreut?[/tab]\r\n[tab]   [ch]Bm[/ch]          [ch]A[/ch]  [ch]D[/ch]\r\nO, Tannenbaum, o, Tannenbaum.[/tab]\r\n[tab][ch]Bm[/ch] [ch]Em[/ch]                [ch]A[/ch]  [ch]D[/ch]\r\nDu kannst mir sehr gefallen.[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]G[/ch] [ch]A[/ch]   [ch]D[/ch]\r\n   O, Tannenbaum, o, Tannenbaum.[/tab]\r\n[tab]     [ch]Em[/ch]                  [ch]A7[/ch] [ch]D[/ch]\r\nDein Kleid will mich was lehren.[/tab]\r\n[tab]                   [ch]A[/ch]\r\nDie Hoffnung und Best\u00e4ndigkeit.[/tab]\r\n[tab]                        [ch]D[/ch]\r\nGibt Trost und Kraft zu jeder Zeit.[/tab]\r\n[tab]   [ch]Bm[/ch]          [ch]A[/ch]  [ch]D[/ch]\r\nO, Tannenbaum, o, Tannenbaum.[/tab]\r\n[tab][ch]Bm[/ch]   [ch]Em[/ch]                  [ch]A[/ch]  [ch]D[/ch]\r\nDein Kleid will mich was lehren.[/tab]\r\n\r\n[Coda]\r\n[tab]| [ch]D[/ch] | [ch]A[/ch] | [ch]A7[/ch] | [ch]D[/ch] |\r\n(ha,ha,ha,ha,ha..)[/tab]\r\n\r\n[Outro]\r\n[tab]   [ch]Bm[/ch]          [ch]A[/ch]  [ch]D[/ch]\r\nO, Tannenbaum, o, Tannenbaum.[/tab]\r\n[tab][ch]Bm[/ch]  [ch]Em[/ch]              [ch]A[/ch]   [ch]D[/ch]\r\nWie gr\u00fcn sind deine Bl\u00e4tter?[/tab]\r\n| [ch]Bm[/ch] | [ch]D[/ch] | [ch]Em[/ch] | [ch]A[/ch] |"
+}

@@ -1,0 +1,12 @@
+id: darlin-do-you-know-who-loves-you
+title: Darlin Do You Know Who Loves You
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/darlin-do-you-know-who-loves-you/
+    imported_at: '2026-08-01'

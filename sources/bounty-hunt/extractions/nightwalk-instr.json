@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Nightwalk (Instr.)",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Martha Adcock",
+   "Tom Gray",
+   "Eddie Adcock",
+   "The Country Gentlemen"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:29:06",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,63 @@
+{
+ "wanted": {
+  "title": "When You Are Lonely",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:22:58",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 6.3,
+  "lyric_overlap": 0.348,
+  "bl_slug": "when-you-are-lonely",
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2752248,
+  "song_id": 3640133,
+  "song_name": "When Youre Lonely",
+  "artist_id": 434267,
+  "artist_name": "Boys (Australia)",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 3,
+  "difficulty": "",
+  "rating": 4.56735,
+  "date": "1562176576",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 299666
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/4/148563/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1566036215,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "When You're Lonely - The Boys (1980)\r\n\r\nhttps://www.youtube.com/watch?v=eGSTTg0ib1Q\r\noriginal key up one fret, start D#\r\n\r\n\r\n\r\n[Intro]\r\n[tab][ch]D[/ch]                   [ch]A[/ch]                   [ch]C[/ch]                   [ch]G[/ch]\r\n/ / / /   / / / /   / / / /   / / / /   / / / /   / / / /   / / / /   / / / /      (x 2)[/tab]\r\n\r\n[Verse]\r\n[tab]        [ch]D[/ch]                                          [ch]A[/ch]\r\nWe were drawn together by an understanding of each other's tragedy[/tab]\r\n[tab]        [ch]C[/ch]                                        [ch]G[/ch]\r\nYou had eyes for him, I had eyes for her; we had eyes, we couldn't see[/tab]\r\n[tab]         [ch]D[/ch]                                         [ch]A[/ch]\r\nBut then I caught on in my own little way, try and make a dream come true[/tab]\r\n[tab]         [ch]C[/ch]                                                 [ch]G[/ch]\r\nAnd it's been such a long time, been such a long time, I'm not sure what to do[/tab]\r\n\r\n[Chorus]\r\n[tab]              [ch]D[/ch]              [ch]A[/ch]\r\nIt just goes,    when you're lonely[/tab]\r\n[tab]       [ch]C[/ch]              [ch]G[/ch]\r\nOh-ho,    when you're lonely[/tab]\r\n[tab]                         [ch]D[/ch]              [ch]A[/ch]\r\nIt just goes, just goes,    when you're lonely[/tab]\r\n[tab]       [ch]C[/ch]              [ch]G[/ch]\r\nOh-ho,    when you're lonely[/tab]\r\n\r\n[Verse]\r\n[tab]  [ch]D[/ch]                                               [ch]A[/ch]\r\nI really don't know if I need your love, I know I need your company[/tab]\r\n[tab]  [ch]C[/ch]                                [ch]G[/ch]\r\nI guess I'm not a pretty sight but could you stay with me?[/tab]\r\n[tab]             [ch]D[/ch]                                      [ch]A[/ch]\r\nWell you can use me if you want to babe, 'cause you know I wouldn't mind[/tab]\r\n[tab]  [ch]C[/ch]                                  [ch]G[/ch]\r\nI guess I've always been that way, I guess I've been behind[/tab]\r\n\r\n[Chorus]\r\n[tab]              [ch]D[/ch]              [ch]A[/ch]\r\nIt just goes,    when you're lonely[/tab]\r\n[tab]       [ch]C[/ch]              [ch]G[/ch]\r\nOh-ho,    when you're lonely[/tab]\r\n\r\nIt just goes, just goes...\r\n\r\n[Instrumental]\r\n\r\n[tab][ch]D[/ch]                   [ch]A[/ch]                   [ch]C[/ch]                   [ch]G[/ch]\r\n/ / / /   / / / /   / / / /   / / / /   / / / /   / / / /   / / / /   / / / /[/tab]\r\n\r\n[Bridge] (Bass riff only)\r\n\r\n[tab][ch]D[/ch]                               [ch]A[/ch]\r\n   You probably thought I was a well-adjusted boy[/tab]\r\n[tab][ch]C[/ch]                          [ch]G[/ch]\r\n   But I'm just as lost as everybody else[/tab]\r\n[tab][ch]D[/ch]                               [ch]A[/ch]\r\n   You might've thought I was a well-adjusted boy[/tab]\r\n[tab][ch]C[/ch]                             [ch]G[/ch]\r\n   But I'm just as stuffed as everybody else[/tab]\r\n\r\n[Chorus]\r\n[tab]              [ch]D[/ch]              [ch]A[/ch]\r\nIt just goes,    when you're lonely[/tab]\r\n[tab]       [ch]C[/ch]              [ch]G[/ch]\r\nOh-ho,    when you're lonely[/tab]\r\n[tab]                         [ch]D[/ch]              [ch]A[/ch]\r\nIt just goes, just goes,    when you're lonely[/tab]\r\n[tab]       [ch]C[/ch]              [ch]G[/ch]          [ch]A[/ch]\r\nOh-ho,    when you're lonely[/tab]\r\n\r\n[Slow tempo verse]\r\n\r\n[tab]        [ch]D[/ch]                                          [ch]A[/ch]\r\nWe were drawn together by an understanding of each other's tragedy[/tab]\r\n[tab]        [ch]C[/ch]                                        [ch]G[/ch]\r\nYou had eyes for him, I had eyes for her; we had eyes, we could not see[/tab]\r\n[tab]         [ch]D[/ch]                                         [ch]A[/ch]\r\nBut then I caught on in my own little way, try and make a dream come true[/tab]\r\n[tab]         [ch]C[/ch]                                                 [ch]G[/ch]\r\nAnd it's been such a long time, been such a long time, I'm not sure what to do[/tab]\r\n\r\n[Chorus]\r\n[tab]              [ch]D[/ch]              [ch]A[/ch]\r\nIt just goes,    when you're lonely[/tab]\r\n[tab]       [ch]C[/ch]              [ch]G[/ch]\r\nOh-ho,    when you're lonely[/tab]\r\n[tab]                         [ch]D[/ch]              [ch]A[/ch]\r\nIt just goes, just goes,    when you're lonely[/tab]\r\n[tab]       [ch]C[/ch]              [ch]G[/ch]\r\nOh-ho,    when you're lonely[/tab]\r\n[tab][ch]D[/ch]              [ch]A[/ch]\r\n   When you're lonely[/tab]\r\n[tab]       [ch]C[/ch]              [ch]G[/ch]\r\nOh-ho,    when you're lonely.....[/tab]"
+}

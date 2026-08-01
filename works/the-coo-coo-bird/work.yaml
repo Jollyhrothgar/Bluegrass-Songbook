@@ -1,0 +1,13 @@
+id: the-coo-coo-bird
+title: The Coo-Coo Bird
+artist: The BE Good Tanyas
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: the-coo-coo-bird.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-be-good-tanyas/the-coo-coo-bird-chords-4634954
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: sante-fe-train
+title: Sante Fe Train
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/sante-fe-train/
+    imported_at: '2026-08-01'

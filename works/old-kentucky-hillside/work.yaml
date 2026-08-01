@@ -1,0 +1,12 @@
+id: old-kentucky-hillside
+title: Old Kentucky Hillside
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/old-kentucky-hillside/
+    imported_at: '2026-08-01'

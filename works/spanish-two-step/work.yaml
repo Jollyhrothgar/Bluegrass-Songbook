@@ -1,0 +1,13 @@
+id: spanish-two-step
+title: Spanish Two Step
+artist: Bob Wills his Texas Playboys
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: spanish-two-step.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/bob-wills-his-texas-playboys/new-spanish-two-step-chords-5207049
+    imported_at: '2026-08-01'

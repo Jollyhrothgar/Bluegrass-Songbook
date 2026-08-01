@@ -249,8 +249,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166689"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166689",
+      "downloaded_at": "2026-08-01T11:10:38.024360",
+      "converted_at": "2026-08-01T11:11:18.478261",
+      "imported_at": "2026-08-01T11:13:12.333595",
+      "work_slug": "billy-in-the-lowground"
     },
     "318_tef": {
       "id": "318_tef",
@@ -1384,8 +1388,12 @@
       "source_url": "https://www.hangoutstorage.com/flatpickerhangout.com/storage/tabs/m/tab-manzanita-937-561916942010.tef",
       "genre": "Other",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166861"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166861",
+      "downloaded_at": "2026-08-01T11:14:42.893815",
+      "converted_at": "2026-08-01T11:15:01.913193",
+      "imported_at": "2026-08-01T11:15:01.938098",
+      "work_slug": "manzanita"
     },
     "1066_tef": {
       "id": "1066_tef",
@@ -1576,8 +1584,10 @@
       "tuning": "EADGBE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166886"
+      "status": "skipped",
+      "error": "Conversion failed",
+      "discovered_at": "2026-07-26T21:58:05.166886",
+      "downloaded_at": "2026-08-01T11:10:38.024691"
     },
     "1041_tef": {
       "id": "1041_tef",
@@ -1723,8 +1733,12 @@
       "style": "Unknown/None Chosen",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:05.166907"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:05.166907",
+      "downloaded_at": "2026-08-01T11:10:38.024800",
+      "converted_at": "2026-08-01T11:11:18.515151",
+      "imported_at": "2026-08-01T11:13:12.333586",
+      "work_slug": "sailor-s-hornpipe"
     },
     "321_tef": {
       "id": "321_tef",

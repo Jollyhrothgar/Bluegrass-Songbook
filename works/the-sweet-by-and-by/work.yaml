@@ -1,0 +1,13 @@
+id: the-sweet-by-and-by
+title: The Sweet By-and-By
+artist: Randy Travis
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: the-sweet-by-and-by.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/randy-travis/sweet-by-and-by-chords-5131201
+    imported_at: '2026-08-01'

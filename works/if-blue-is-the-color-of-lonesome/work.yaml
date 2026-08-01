@@ -1,0 +1,12 @@
+id: if-blue-is-the-color-of-lonesome
+title: If Blue Is The Color Of Lonesome
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/if-blue-is-the-color-of-lonesome/
+    imported_at: '2026-08-01'

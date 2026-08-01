@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "I Will Follow You Into the Dark Death Cab for Cutie",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:55:26",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 36
+ },
+ "candidate": null,
+ "content": null
+}

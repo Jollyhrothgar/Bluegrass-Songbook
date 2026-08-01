@@ -1,0 +1,12 @@
+id: dont-forget-me-little-darling
+title: Don’t Forget Me Little Darling
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/dont-forget-me-little-darling/
+    imported_at: '2026-08-01'

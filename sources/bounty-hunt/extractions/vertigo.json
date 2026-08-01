@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Vertigo",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Bryan Sutton",
+   "Stuart Duncan",
+   "John 5",
+   "Sam Bush"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:21:30",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 4050256,
+  "song_id": 10968028,
+  "song_name": "Vertigo",
+  "artist_id": 986954,
+  "artist_name": "Edwin Rosen",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 57,
+  "difficulty": "",
+  "rating": 4.92343,
+  "date": "1643471436",
+  "status": "approved",
+  "preset_id": 78376,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2134913
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/7/1767681/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/9/3/93591/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1643545543,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[ch]E[/ch] 022100\r\n[ch]B[/ch] 224442 or Esus4 024400\r\n[ch]C#m[/ch] 446654 or 046600\r\n[ch]Aadd9[/ch] x002420 or [ch]A[/ch]\r\n\r\nYou can also play on capo 1st with these chords, which might sound better to some of you.\r\nG 320033\r\nBb 224432\r\nEm7 022033\r\nCadd9 x32033\r\n\r\n\r\n[Intro]\r\n3x\r\n[ch]E[/ch] [ch]B[/ch] [ch]C#m[/ch] [ch]Aadd9[/ch]\r\n\r\n[Vers]\r\n[tab][ch]E[/ch]                   [ch]B[/ch]                   [ch]C#m[/ch]\r\n   Halt dich an mir fest, lass mich nie mehr los[/tab]\r\n[tab]                          [ch]Aadd9[/ch]               [ch]E[/ch]\r\nDeine Augen schrei\u2019n mich an, ich kriege Vertigo[/tab]\r\n[tab]                      [ch]B[/ch]                 [ch]C#m[/ch]\r\nAlles zieht an mir vorbei, bitte bleib noch hier[/tab]\r\n[tab]                [ch]Aadd9[/ch]                 [ch]E[/ch]\r\nIch fange an zu fall\u2019n, zu fall\u2019n mit dir[/tab]\r\n\r\n[Chorus]\r\n[tab]                 [ch]B[/ch]                             [ch]C#m[/ch]\r\nUnd ich renn\u2019 im Kreis, ich hab\u2019 vergessen wie ich hei\u00df\u2019[/tab]\r\n[tab]                   [ch]Aadd9[/ch]                            [ch]E[/ch]\r\nUnd ich wei\u00df nicht wohin, ich hab\u2019 vergessen wo ich bin[/tab]\r\n[tab]                 [ch]B[/ch]                             [ch]C#m[/ch]\r\nUnd ich renn\u2019 im Kreis, ich hab\u2019 vergessen wie ich hei\u00df\u2019[/tab]\r\n[tab]                   [ch]Aadd9[/ch]                             [ch]E[/ch]\r\nUnd ich wei\u00df nicht wohin, ich hab\u2019 vergessen wer ich bin[/tab]\r\n[tab][ch]B[/ch]  [ch]C#m[/ch]                    [ch]Aadd9[/ch]           [ch]E[/ch]\r\n       Hab\u2019 vergessen wer ich bin[/tab]\r\n\r\n[Vers]\r\n[tab][ch]E[/ch]                   [ch]B[/ch]                    [ch]C#m[/ch]\r\n   Halt dich an mir fest, lass mich nie mehr los[/tab]\r\n[tab]                          [ch]Aadd9[/ch]               [ch]E[/ch]\r\nDeine Augen schrei\u2019n mich an, ich kriege Vertigo[/tab]\r\n[tab]                      [ch]B[/ch]                 [ch]C#m[/ch]\r\nAlles zieht an mir vorbei, bitte bleib doch hier[/tab]\r\n[tab]                [ch]Aadd9[/ch]           [ch]E[/ch]\r\nBleib noch eine Nacht, hier bei mir[/tab]\r\n\r\n[Chorus]\r\n[tab]                 [ch]B[/ch]                             [ch]C#m[/ch]\r\nUnd ich renn\u2019 im Kreis, ich hab\u2019 vergessen wie ich hei\u00df\u2019[/tab]\r\n[tab]                   [ch]Aadd9[/ch]                             [ch]E[/ch]\r\nUnd ich wei\u00df nicht wohin, ich hab\u2019 vergessen wer ich bin[/tab]\r\n[tab]                 [ch]B[/ch]                             [ch]C#m[/ch]\r\nUnd ich renn\u2019 im Kreis, ich hab\u2019 vergessen wie ich hei\u00df\u2019[/tab]\r\n[tab]                   [ch]Aadd9[/ch]                             [ch]E[/ch]\r\nUnd ich wei\u00df nicht wohin, ich hab\u2019 vergessen wo ich-[/tab]\r\n\r\n[Outro]\r\n[tab]               [ch]B[/ch]                 [ch]C#m[/ch]\r\nMach die Augen auf und du bist nicht hier[/tab]\r\n[tab]               [ch]Aadd9[/ch]              [ch]E[/ch]\r\nSolange das so ist tr\u00e4um\u2019 ich von dir[/tab]\r\n[tab][ch]B[/ch]              [ch]C#m[/ch]   [ch]Aadd9[/ch]\r\n    Tr\u00e4um\u2019 ich von dir[/tab]\r\n\r\n2x\r\n[ch]E[/ch] [ch]B[/ch] [ch]C#m[/ch] [ch]Aadd9[/ch]"
+}

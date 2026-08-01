@@ -1,0 +1,13 @@
+id: stompin-at-the-savoy
+title: Stompin' at the Savoy
+artist: Ella Fitzgerald
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: stompin-at-the-savoy.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/ella-fitzgerald/stompin-at-the-savoy-chords-2169667
+    imported_at: '2026-08-01'

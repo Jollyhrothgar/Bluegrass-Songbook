@@ -1,0 +1,22 @@
+id: peacock-rag
+title: Peacock Rag
+artist: null
+composers: []
+default_key: D
+tags:
+- Instrumental
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '16874'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16874
+    author: banjoman 1
+    difficulty: Intermediate
+    tuning: aDGBD
+    imported_at: '2026-08-01'

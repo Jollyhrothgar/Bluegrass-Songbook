@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "We Can Work It Out",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "J. P. Cormier",
+   "The Dillards",
+   "The Grassmasters",
+   "Crooked Still"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:34:04",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "D"
+ },
+ "candidate": {
+  "id": 1088940,
+  "song_id": 53239,
+  "song_name": "We Can Work It Out",
+  "artist_id": 1916,
+  "artist_name": "The Beatles",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 264,
+  "difficulty": "intermediate",
+  "rating": 4.81802,
+  "date": "1314748801",
+  "status": "approved",
+  "preset_id": 13233,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "D",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2420450
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/7/2/728611/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/5/4/5401/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1742331836,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "We Can Work It Out chords\r\nThe Beatles  1965 *\r\n\r\nhttps://en.wikipedia.org/wiki/We_Can_Work_It_Out\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]D[/ch]             [ch]Dsus4[/ch] [ch]D[/ch]\r\nTry to see it my    way  [/tab]\r\n[tab]             [ch]Dsus2[/ch]            [ch]C[/ch]               [ch]D[/ch]\r\nDo I have to keep on talking, till I can't go on[/tab]\r\n[tab]                 [ch]Dsus4[/ch] [ch]D[/ch]\r\nWhile you see it your  way?  [/tab]\r\n[tab]                [ch]Dsus2[/ch]            [ch]C[/ch]                [ch]D[/ch]\r\nrun the risk of knowing that our love may soon be gone[/tab]\r\n\r\n[Chorus]\r\n\r\n[tab][ch]G[/ch]              [ch]D[/ch]\r\nWe can work it out,[/tab]\r\n[tab][ch]G[/ch]              [ch]Asus4[/ch] [ch]A[/ch]\r\nWe can work it out[/tab]\r\n\r\n[Verse 2]\r\n\r\n[tab][ch]D[/ch]                    [ch]Dsus4[/ch] [ch]D[/ch]\r\nThink of what you're say - ing[/tab]\r\n[tab][ch]D[/ch]              [ch]Dsus2[/ch]               [ch]C[/ch]                   [ch]D[/ch]\r\nYou can get it wrong and still you think that it's all right[/tab]\r\n[tab]                  [ch]Dsus4[/ch] [ch]D[/ch]\r\nThink of what I'm say   ing,[/tab]\r\n[tab][ch]D[/ch]              [ch]Dsus2[/ch]          [ch]C[/ch]                   [ch]D[/ch]\r\nWe can work it out and get it straight or say goodnight[/tab]\r\n\r\n[Chorus]\r\n\r\n[tab][ch]G[/ch]              [ch]D[/ch]\r\nWe can work it out,[/tab]\r\n[tab][ch]G[/ch]              [ch]Asus4[/ch] [ch]A[/ch]\r\nWe can work it out[/tab]\r\n\r\n[Bridge]\r\n\r\n[tab][ch]Bm[/ch]                                [ch]G[/ch]   [ch]F#[/ch]\r\nLife is very short and there's no time[/tab]\r\n[tab]                [ch]Bm[/ch]          \r\nFor fussing and fighting my friend[/tab]\r\n[tab][ch]Bm[/ch]                                [ch]G[/ch]   [ch]F#[/ch]\r\nI have always thought that it's a crime[/tab]\r\n[tab]          [ch]Bm[/ch]      \r\nSo I will ask you once again[/tab]\r\n\r\n[Verse 3]\r\n\r\n[tab][ch]D[/ch]             [ch]Dsus4[/ch] [ch]D[/ch]\r\nTry to see it my    way  [/tab]\r\n[tab]               [ch]Dsus2[/ch]        [ch]C[/ch]             [ch]D[/ch]\r\nOnly time will tell if I am right or I am wrong[/tab]\r\n[tab]                    [ch]Dsus4[/ch] [ch]D[/ch]\r\nWhile do you see it your  way?   [/tab]\r\n[tab]                      [ch]Dsus2[/ch]         [ch]C[/ch]                [ch]D[/ch]\r\nThere's a chance that we might fall apart before too long[/tab]\r\n\r\n[Chorus]\r\n\r\n[tab][ch]G[/ch]              [ch]D[/ch]\r\nWe can work it out,[/tab]\r\n[tab][ch]G[/ch]              [ch]Asus4[/ch] [ch]A[/ch]\r\nWe can work it out[/tab]\r\n\r\n[Bridge]\r\n\r\n[tab][ch]Bm[/ch]                                [ch]G[/ch]   [ch]F#[/ch]\r\nLife is very short and there's no time[/tab]\r\n[tab]                [ch]Bm[/ch]          \r\nFor fussing and fighting my friend[/tab]\r\n[tab][ch]Bm[/ch]                                [ch]G[/ch]   [ch]F#[/ch]\r\nI have always thought that it's a crime[/tab]\r\n[tab]          [ch]Bm[/ch]      \r\nSo I will ask you once again[/tab]\r\n\r\n[Verse 4]\r\n\r\n[tab][ch]D[/ch]             [ch]Dsus4[/ch] [ch]D[/ch]\r\nTry to see it my    way  [/tab]\r\n[tab]               [ch]Dsus2[/ch]        [ch]C[/ch]             [ch]D[/ch]\r\nOnly time will tell if I am right or I am wrong[/tab]\r\n[tab]                    [ch]Dsus4[/ch] [ch]D[/ch]\r\nWhile do you see it your  way?[/tab]\r\n[tab]                      [ch]Dsus2[/ch]          [ch]C[/ch]               [ch]D[/ch]\r\nThere's a chance that we might fall apart before too long[/tab]\r\n\r\n[Chorus]\r\n\r\n[tab][ch]G[/ch]              [ch]D[/ch]\r\nWe can work it out[/tab]\r\n[tab][ch]G[/ch]              [ch]Asus4[/ch] [ch]A[/ch]\r\nWe can work it out[/tab]\r\n\r\n[ch]D[/ch]  [ch]Dsus4[/ch]  [ch]D[/ch]\r\n\r\n* Alternates:\r\n\r\nCapo II\r\n\r\n[ch]D[/ch]     = [ch]C[/ch]\r\n[ch]Dsus4[/ch] = [ch]Csus4[/ch]\r\n[ch]Dsus2[/ch] = [ch]Csus2[/ch]\r\n[ch]C[/ch]     = [ch]Bb[/ch]\r\n[ch]Bm[/ch]    = [ch]Am[/ch]\r\n[ch]G[/ch]     = [ch]F[/ch]\r\n[ch]F#[/ch]    = [ch]E[/ch]\r\n[ch]Asus4[/ch] = [ch]Gsus4[/ch]\r\n[ch]A[/ch]     = [ch]G[/ch]\r\n\r\nCapo V\r\n\r\n[ch]D[/ch]     = [ch]A[/ch]\r\n[ch]Dsus4[/ch] = [ch]Asus4[/ch]\r\n[ch]Dsus2[/ch] = [ch]Asus2[/ch]\r\n[ch]C[/ch]     = [ch]G[/ch]\r\n[ch]Bm[/ch]    = [ch]F#m[/ch]\r\n[ch]G[/ch]     = [ch]D[/ch]\r\n[ch]F#[/ch]    = [ch]C#[/ch]\r\n[ch]Asus4[/ch] = [ch]Esus4[/ch]\r\n[ch]A[/ch]     = [ch]E[/ch]\r\n\r\nSet8"
+}

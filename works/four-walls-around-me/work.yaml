@@ -1,0 +1,12 @@
+id: four-walls-around-me
+title: Four Walls Around Me
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/four-walls-around-me/
+    imported_at: '2026-08-01'

@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "Delia",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "New Riders of the Purple Sage",
+   "Harvey Reid",
+   "The Honey Dewdrops",
+   "The Grascals"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:23:56",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 100,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 5155984,
+  "song_id": 10075210,
+  "song_name": "Delia",
+  "artist_id": 20091,
+  "artist_name": "The Grascals",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1708521479",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "Based on the video at https://www.youtube.com/watch?v=Tkwtratskn8. 125 bpm.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1480939
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/152390/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1708521479,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]G[/ch]\r\n[ch]Em[/ch]    [ch]D[/ch]\r\n[ch]Em[/ch]    [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n\r\n[Verse 1]\r\n[tab][ch]G[/ch]\r\nDance with me Delia, dance all night long[/tab]\r\n[tab]                           [ch]C[/ch]       [ch]D[/ch]       [ch]G[/ch]\r\nSteal away my Delia, we'll dance until the dawn[/tab]\r\n[tab][ch]G[/ch]\r\nSweet as magnolia, honey from the hive[/tab]\r\n[tab]                            [ch]C[/ch]        [ch]D[/ch]     [ch]G[/ch]\r\nSome day if I'm lucky, I'll make you be my wife[/tab]\r\n[tab]      [ch]C[/ch]    [ch]D[/ch]      [ch]G[/ch]\r\nGonna make you my wife[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]                                   [ch]D[/ch]\r\nDance with me Delia, dance all night long[/tab]\r\n[tab][ch]Em[/ch]                         [ch]D[/ch]               [ch]G[/ch]\r\nSteal away my Delia, we'll dance until the dawn[/tab]\r\n\r\n\r\n[Interlude]\r\n[ch]G[/ch]    [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n[ch]G[/ch]    [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n[ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]G[/ch]\r\nPluck that old guitar, pull that fiddle bow[/tab]\r\n[tab]                            [ch]C[/ch]       [ch]D[/ch]       [ch]G[/ch]\r\nGather round the barrel and let the whiskey flow[/tab]\r\n[tab][ch]G[/ch]\r\nGirls all wearing gingham such a pretty sight[/tab]\r\n[tab]                         [ch]C[/ch]       [ch]D[/ch]      [ch]G[/ch]\r\nFireworks and fireflies, lighten up the night[/tab]\r\n[tab]     [ch]C[/ch]       [ch]D[/ch]      [ch]G[/ch]\r\nYes, lighten up the night[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]                                   [ch]D[/ch]\r\nDance with me Delia, dance all night long[/tab]\r\n[tab][ch]Em[/ch]                         [ch]D[/ch]               [ch]G[/ch]\r\nSteal away my Delia, we'll dance until the dawn[/tab]\r\n\r\n\r\n[Interlude]\r\n[ch]G[/ch]     [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n[ch]Em[/ch]    [ch]D[/ch]\r\n[ch]Em[/ch]    [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n[ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n\r\n[Verse 3]\r\n[tab][ch]G[/ch]\r\nKick your shoes off Delia, there's sawdust on the floor[/tab]\r\n[tab]                                  [ch]C[/ch]       [ch]D[/ch]        [ch]G[/ch]\r\nYour pretty little bare feet just make me love you more[/tab]\r\n[tab]   [ch]G[/ch]\r\nMy legs are getting shaky, knees are getting sore[/tab]\r\n[tab]                               [ch]C[/ch]           [ch]D[/ch]       [ch]G[/ch]\r\nBut steal away my Delia, we'll dance right out the door[/tab]\r\n[tab]    [ch]C[/ch]           [ch]D[/ch]       [ch]G[/ch]\r\nAnd dance right out the door[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]                                   [ch]D[/ch]\r\nDance with me Delia, dance all night long[/tab]\r\n[tab][ch]Em[/ch]                         [ch]D[/ch]               [ch]G[/ch]\r\nSteal away my Delia, we'll dance until the dawn[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]                                   [ch]D[/ch]\r\nDance with me Delia, dance all night long[/tab]\r\n[tab][ch]Em[/ch]                         [ch]D[/ch]               [ch]G[/ch]\r\nSteal away my Delia, we'll dance until the dawn[/tab]\r\n\r\n\r\n[Outro]\r\n[ch]G[/ch]\r\n[ch]Em[/ch]    [ch]D[/ch]\r\n[ch]Em[/ch]    [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n[ch]G[/ch]     [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n[ch]C[/ch] [ch]D[/ch] [ch]G[/ch]"
+}

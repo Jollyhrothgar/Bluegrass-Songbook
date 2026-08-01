@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Welcome to the Jungle",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Hayseed Dixie",
+   "Scott Stutzman",
+   "John 5",
+   "Iron Horse"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:34:18",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1941985,
+  "song_id": 39531,
+  "song_name": "Welcome To The Jungle",
+  "artist_id": 1367,
+  "artist_name": "Guns N' Roses",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 190,
+  "difficulty": "novice",
+  "rating": 4.7845,
+  "date": "1486105968",
+  "status": "approved",
+  "preset_id": 87,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 597
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/7/1761072/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/5/4595/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1542017134,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n[tab][ch]A[/ch] \r\nWelcome to the jungle [/tab]\r\nWe got fun'n'games \r\nWe got everything you want \r\nHoney we know the names \r\n\r\n[tab]           [ch]E[/ch] \r\nWe are the people that can find [/tab]\r\nWhatever you may need \r\nIf you got the money honey \r\nWe got your disease \r\n\r\n[Chorus]\r\n[tab]        [ch]C[/ch] \r\nIn the jungle [/tab]\r\n[tab]                [ch]D[/ch] \r\nWelcome to the jungle [/tab]\r\n[tab]                          [ch]E[/ch] \r\nWatch it bring you to your knees, knees   [/tab]\r\nI wanna watch you bleed \r\n\r\n[Verse 2]\r\n[tab] [ch]A[/ch] \r\nWelcome to the jungle [/tab]\r\nWe take it day by day \r\nIf you want it you're gonna bleed \r\nBut it's the price you pay \r\n\r\n[tab]              [ch]E[/ch] \r\nAnd you're a very sexy girl [/tab]\r\nThat's very hard to please \r\nYou can taste the bright lights \r\nBut you won't get them for free \r\n\r\n[tab]        [ch]C[/ch] \r\nIn the jungle [/tab]\r\n[tab]                [ch]D[/ch] \r\nWelcome to the jungle [/tab]\r\n[tab]        [ch]E[/ch] \r\nFell my, my, my serpentine [/tab]\r\n[tab]  [ch]B[/ch]                          [ch]E[/ch] \r\nI, I wanna hear your scream [/tab]\r\n\r\n[Guitar Solo]\r\n\r\n[Verse 3]\r\n[tab] [ch]A[/ch] \r\nWelcome to the jungle [/tab]\r\nIt gets worse here everyday \r\nYa learn ta live like an animal \r\nIn the jungle where we play \r\n\r\n[tab]              [ch]E[/ch] \r\nIf you got a hunger for what you see [/tab]\r\nYou'll take it eventually \r\nYou can have anything you want \r\nBut you better not take it from me \r\n\r\n[Chorus]\r\n[tab]        [ch]C[/ch] \r\nIn the jungle [/tab]\r\n[tab]                [ch]D[/ch] \r\nWelcome to the jungle [/tab]\r\n[tab]                          [ch]E[/ch] \r\nWatch it bring you to your knees, kness [/tab]\r\n                        [ch]D[/ch] [ch]G[/ch] [ch]D[/ch] [ch]G[/ch] \r\n\r\nI wanna watch you bleed \r\n\r\n[Bridge]\r\n[tab]                    [ch]G[/ch] \r\nAnd when you're high you never [/tab]\r\n[tab]                      [ch]G[/ch] \r\nEver want to come down [/tab]\r\n[tab][ch]F[/ch]   [ch]G[/ch]    [ch]F[/ch]   [ch]G[/ch]    [ch]F[/ch]   [ch]A[/ch]     [ch]E[/ch]  [ch]E9[/ch] [ch]E[/ch] [ch]E9[/ch] [ch]C#m[/ch] [ch]B[/ch] [ch]C#m[/ch] [ch]B[/ch] [ch]C#m[/ch]  \r\nSo down, so down, so down, yeah         [/tab]\r\n\r\n[ch]B[/ch] [ch]E[/ch] [ch]B[/ch] [ch]E[/ch] [ch]B[/ch] [ch]A[/ch] [ch]F#[/ch] [ch]B[/ch] [ch]E[/ch]   \r\n\r\n[Guitar Solo]\r\n\r\n[Bridge]\r\nYou know where you are \r\nYou're in the jungle, baby \r\n[tab]                [ch]F#[/ch] [ch]F[/ch] [ch]F#[/ch] [ch]G[/ch] [ch]A[/ch] [ch]G#[/ch] [ch]A[/ch] [ch]A#[/ch] \r\nYou're gonna die [/tab]\r\n[tab]        [ch]C[/ch] \r\nIn the jungle [/tab]\r\n       \r\n[Chorus]\r\n[tab]                [ch]D[/ch] \r\nWelcome to the jungle [/tab]\r\n[tab]                          [ch]E[/ch] \r\nWatch it bring you to your knees, knees [/tab]\r\n[tab]        [ch]C[/ch] \r\nIn the jungle [/tab]\r\n[tab]                [ch]D[/ch] \r\nWelcome to the jungle [/tab]\r\n[tab]        [ch]E[/ch] \r\nFell my, my, my serpentine [/tab]\r\n[tab]        [ch]C[/ch] \r\nIn the jungle [/tab]\r\n[tab]                [ch]D[/ch] \r\nWelcome to the jungle [/tab]\r\n[tab]                          [ch]E[/ch] \r\nWatch it bring you to your knees, knees [/tab]\r\n[tab]        [ch]C[/ch] \r\nIn the jungle [/tab]\r\n[tab]                [ch]D[/ch] \r\nWelcome to the jungle [/tab]\r\n[tab]                     [ch]E[/ch] \r\nWatch it bring to you [/tab]\r\n[tab]    [ch]D[/ch]    [ch]Bb[/ch]    [ch]A[/ch]  [ch]G[/ch] [ch]E[/ch] [ch]A[/ch]  [ch]G[/ch] [ch]E[/ch]  [ch]E9[/ch] \r\nIt's gonna bring you down, ha![/tab]"
+}

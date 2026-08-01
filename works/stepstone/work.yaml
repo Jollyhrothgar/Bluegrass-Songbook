@@ -1,0 +1,13 @@
+id: stepstone
+title: Stepstone
+artist: Woody Guthrie
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: stepstone.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/woody-guthrie/stepstone-chords-2325661
+    imported_at: '2026-08-01'

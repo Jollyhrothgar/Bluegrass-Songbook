@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Pretty Little Indian",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "New Ballards Branch Bogtrotters",
+   "The Osborne Brothers",
+   "John Cowan",
+   "Ralph Stanley"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:19:07",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

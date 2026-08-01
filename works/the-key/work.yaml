@@ -1,0 +1,14 @@
+id: the-key
+title: The Key
+artist: Authentic Unlimited
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: the-key.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/authentic-unlimited/the-key-chords-4749842
+    imported_at: '2026-08-01'

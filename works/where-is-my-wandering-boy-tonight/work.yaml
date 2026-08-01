@@ -1,0 +1,12 @@
+id: where-is-my-wandering-boy-tonight
+title: Where Is My Wandering Boy Tonight
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/where-is-my-wandering-boy-tonight/
+    imported_at: '2026-08-01'

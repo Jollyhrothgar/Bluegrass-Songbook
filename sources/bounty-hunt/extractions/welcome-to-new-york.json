@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Welcome to New York",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Harold East",
+   "Unlimited Tradition",
+   "Bill Emerson",
+   "The Country Gentlemen"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:34:13",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1769017,
+  "song_id": 1622231,
+  "song_name": "Welcome To New York",
+  "artist_id": 2251,
+  "artist_name": "Ryan Adams",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 44,
+  "difficulty": "novice",
+  "rating": 4.92345,
+  "date": "1442988909",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 41705
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/8/3/838651/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/1/1119/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1442988909,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Song: Welcome To New York\r\nArtist: Ryan Adams\r\nAlbum: 1989\r\n\r\nStandard Tuning\r\nCapo on the 2nd fret\r\n\r\n\r\n Intro:    [ch]G[/ch]    [ch]D[/ch]  [ch]C[/ch]  x 2\r\n\r\n\r\n Verse:\r\n[tab]  [ch]G[/ch]                            [ch]D[/ch]                \r\n Walking through the crowd the village is aglow[/tab]\r\n[tab]    [ch]C[/ch]\r\n Kaleidoscope of loud heartbeats under coats[/tab]\r\n[tab] [ch]G[/ch]               [ch]D[/ch]           \r\n Everybody here wants something more[/tab]\r\n[tab] [ch]C[/ch]\r\n Searching for a sound that they hadn\u2019t heard before[/tab]\r\n\r\n\r\n Chorus:\r\n[tab]  [ch]G[/ch]                  [ch]D[/ch]   \r\n Welcome to New York, it\u2019s been waiting for you[/tab]\r\n[tab]  [ch]C[/ch]\r\n Welcome to New York[/tab]\r\n[tab]  [ch]G[/ch]                  [ch]D[/ch]   \r\n Welcome to New York, it\u2019s been waiting for you[/tab]\r\n[tab]  [ch]C[/ch]\r\n Welcome to New York[/tab]\r\n\r\n[tab]    [ch]G[/ch]                     [ch]D[/ch]\r\n Say, It\u2019s a new soundtrack[/tab]\r\n[tab]                        [ch]C[/ch]            \r\n I could dance to the beat, beat, [/tab]\r\n[tab]    [ch]Em[/ch]                          [ch]D[/ch]               \r\n forever more the lights are so bright[/tab]\r\n[tab]                       [ch]C[/ch]\r\n They\u2019ve been blinding me, me[/tab]\r\n\r\n\r\n Verse:\r\n[tab]         [ch]G[/ch]                          [ch]D[/ch]        \r\n When we first dropped our bags on apartment floors[/tab]\r\n[tab]  [ch]C[/ch]\r\n Took our broken hearts, and put them in the drawer[/tab]\r\n[tab] [ch]G[/ch]                   [ch]D[/ch]\r\n Everybody here was someone else before[/tab]\r\n[tab]         [ch]C[/ch]\r\n And you want who you want[/tab]\r\n  \r\n Boys and boys, girls and girls\r\n\r\n\r\n Chorus:\r\n[tab]  [ch]G[/ch]                  [ch]D[/ch]   \r\n Welcome to New York, it\u2019s been waiting for you[/tab]\r\n[tab]  [ch]C[/ch]\r\n Welcome to New York[/tab]\r\n[tab]  [ch]G[/ch]                  [ch]D[/ch]   \r\n Welcome to New York, it\u2019s been waiting for you[/tab]\r\n[tab]  [ch]C[/ch]\r\n Welcome to New York, Welcome to New York[/tab]\r\n\r\n[tab]  [ch]G[/ch]                  [ch]D[/ch]\r\n It\u2019s a new soundtrack[/tab]\r\n[tab]                        [ch]C[/ch]            \r\n I could dance to the beat, beat, [/tab]\r\n[tab]    [ch]Em[/ch]                          [ch]D[/ch]               \r\n forever more the lights are so bright[/tab]\r\n[tab]                           [ch]C[/ch]\r\n And they\u2019ve been blinding me, me[/tab]\r\n\r\n\r\n Bridge:\r\n[tab] [ch]G[/ch]                                 [ch]D[/ch]     \r\n Like any great love, it keeps you guessing[/tab]\r\n[tab]       [ch]C[/ch]\r\n Like any real love, it\u2019s ever changing[/tab]\r\n[tab]      [ch]Em[/ch]                           [ch]D[/ch]\r\n Like any true love, it drives you crazy[/tab]\r\n[tab]              [ch]C[/ch]\r\n But you wouldn\u2019t change anything, anything, anything[/tab]\r\n\r\n Outro:\r\n [ch]G[/ch]    [ch]D[/ch]    [ch]C[/ch]   [ch]Em[/ch]    [ch]D[/ch]    [ch]C[/ch]\r\n\r\n[tab] [ch]G[/ch]              [ch]D[/ch]     [ch]C[/ch] \r\n Aaa, ahh, Aaa, ahh,[/tab]\r\n[tab] [ch]Em[/ch]        [ch]D[/ch]  [ch]C[/ch]\r\n Mmm, mmm[/tab]\r\n [ch]G[/ch]    [ch]D[/ch]    [ch]C[/ch]   [ch]Em[/ch]    [ch]D[/ch]    [ch]C[/ch]\r\n\r\n End on [ch]G[/ch]"
+}

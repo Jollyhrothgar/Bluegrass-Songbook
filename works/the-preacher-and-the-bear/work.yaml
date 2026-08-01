@@ -1,0 +1,13 @@
+id: the-preacher-and-the-bear
+title: The Preacher and the Bear
+artist: Billy Strings
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: the-preacher-and-the-bear.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/billy-strings/the-preacher-and-the-bear-chords-3905975
+    imported_at: '2026-08-01'

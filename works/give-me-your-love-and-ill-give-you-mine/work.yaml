@@ -1,0 +1,12 @@
+id: give-me-your-love-and-ill-give-you-mine
+title: Give Me Your Love And I’ll Give You Mine
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/give-me-your-love-and-ill-give-you-mine/
+    imported_at: '2026-08-01'

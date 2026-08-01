@@ -1,0 +1,12 @@
+id: old-home-place-of-mine
+title: Old Home Place Of Mine
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/old-home-place-of-mine/
+    imported_at: '2026-08-01'

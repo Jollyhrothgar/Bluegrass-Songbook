@@ -1,0 +1,12 @@
+id: i-just-cant-go-on-this-old-way
+title: I Just Can’t Go On This Old Way
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/i-just-cant-go-on-this-old-way/
+    imported_at: '2026-08-01'

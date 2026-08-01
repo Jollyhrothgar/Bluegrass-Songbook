@@ -1,0 +1,75 @@
+{
+ "wanted": {
+  "title": "Look At Miss Ohio",
+  "type": "Vocal",
+  "key": "G",
+  "difficulty": "Intermediate",
+  "coverage": 2,
+  "core": false,
+  "artists": [
+   "Old Crow Medicine Show",
+   "Valerie June"
+  ],
+  "notes": "songwriter",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:35:54",
+ "status": "accepted",
+ "validation": {
+  "tier": "mb-recording",
+  "score": 91.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1089277,
+  "song_id": 276948,
+  "song_name": "Look At Miss Ohio",
+  "artist_id": 11572,
+  "artist_name": "Gillian Welch",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 1303,
+  "difficulty": "novice",
+  "rating": 4.88165,
+  "date": "1314835201",
+  "status": "approved",
+  "preset_id": 57772,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 162531
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/5/5/55198/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/150792/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1314835201,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Gillian Welch - Look At Miss Ohio\r\n\r\n[Intro]\r\n| [ch]F[/ch] | [ch]C[/ch] | [ch]G[/ch] | [ch]Am[/ch] [ch]G[/ch] |\r\n| [ch]F[/ch] | [ch]C[/ch] | [ch]G[/ch] |\r\n\r\n[Chorus]\r\n[tab][ch]F[/ch]        [ch]C[/ch]      [ch]G[/ch]              [ch]Am[/ch]  [ch]G[/ch]\r\nOh me oh my oh, look at Miss O-hio[/tab]\r\n[tab]        [ch]F[/ch]                       [ch]C[/ch]       [ch]G[/ch]\r\nShe's a-running around with her rag-top down[/tab]\r\n[tab]           [ch]F[/ch]                  [ch]C[/ch]         [ch]G[/ch]\r\nShe says I wanna do right but not right now[/tab]\r\n \r\n[Verse]\r\n[tab]      [ch]F[/ch]           [ch]C[/ch]        [ch]G[/ch]             [ch]Am[/ch]  [ch]G[/ch]\r\nGonna drive to Atlanta and live out this fantasy[/tab]\r\n[tab][ch]F[/ch]                       [ch]C[/ch]       [ch]G[/ch]\r\nRunning around with the rag-top down[/tab]\r\n[tab]       [ch]F[/ch]                  [ch]C[/ch]            [ch]G[/ch]\r\nYeah I wanna do right but not right now[/tab]\r\n \r\n \r\n[Instrumental]\r\n| [ch]Am[/ch] | [ch]D7[/ch] |\r\n| [ch]Am[/ch] | [ch]D7[/ch] |\r\n\r\n[Verse]\r\n[tab]         [ch]F[/ch]              [ch]C[/ch]            [ch]G[/ch]          [ch]Am[/ch]  [ch]G[/ch]\r\nHad your arm around her shoulder, a regimental soldier[/tab]\r\n[tab]     [ch]F[/ch]                        [ch]C[/ch]       [ch]G[/ch]\r\nAn' mamma starts pushing that wedding gown[/tab]\r\n[tab]         [ch]F[/ch]                  [ch]C[/ch]         [ch]G[/ch]\r\nYeah you wanna do right but not right now[/tab]\r\n\r\n[Chorus] \r\n[tab][ch]F[/ch]        [ch]C[/ch]               [ch]G[/ch]            [ch]Am[/ch] [ch]G[/ch]\r\nOh me oh my oh, would ya look at Miss Ohio[/tab]\r\n[tab]        [ch]F[/ch]                       [ch]C[/ch]       [ch]G[/ch]\r\nShe's a-runnin' around with the rag-top down[/tab]\r\n[tab]           [ch]F[/ch]                  [ch]C[/ch]         [ch]G[/ch]\r\nShe says I wanna do right but not right now[/tab]\r\n\r\n \r\n[Instrumental]\r\n| [ch]Am[/ch] | [ch]D7[/ch] |\r\n| [ch]Am[/ch] | [ch]D7[/ch] |\r\n| [ch]F[/ch] | [ch]C[/ch] | [ch]G[/ch] | [ch]Am[/ch] [ch]G[/ch] |\r\n| [ch]F[/ch] | [ch]C[/ch] | [ch]G[/ch] |\r\n \r\n\r\n[Verse]\r\n[tab][ch]F[/ch]            [ch]C[/ch]          [ch]G[/ch]                  [ch]Am[/ch] [ch]G[/ch]\r\nI know all about it, so you don't have to shout it[/tab]\r\n[tab][ch]F[/ch]                       [ch]C[/ch]         [ch]G[/ch]\r\nI'm gonna straighten it out somehow[/tab]\r\n[tab]       [ch]F[/ch]                  [ch]C[/ch]         [ch]G[/ch]\r\nYeah I wanna do right but not right now[/tab]\r\n\r\n[Chorus] \r\n[tab][ch]F[/ch]        [ch]C[/ch]      [ch]G[/ch]            [ch]Am[/ch] [ch]G[/ch]\r\nOh me oh my oh, look at Miss Ohio[/tab]\r\n[tab][ch]F[/ch]                             [ch]C[/ch]       [ch]G[/ch]\r\nShe a-runnin' around with her rag-top down[/tab]\r\n[tab][ch]F[/ch]                             [ch]C[/ch]         [ch]G[/ch]\r\nShe says I wanna do right but not right now[/tab]\r\n[tab]     [ch]F[/ch]                  [ch]C[/ch]         [ch]G[/ch]\r\nOh I wanna do right but not right now[/tab]\r\n\r\n\r\n[Outro]\r\n| [ch]F[/ch] | [ch]C[/ch] | [ch]G[/ch] | [ch]Am[/ch] [ch]G[/ch] |\r\n| [ch]F[/ch] | [ch]C[/ch] | [ch]G[/ch] |\r\n\r\n| [ch]F[/ch] | [ch]C[/ch] | [ch]G[/ch] | [ch]Am[/ch] [ch]G[/ch] |\r\n| [ch]F[/ch] | [ch]C[/ch] | [ch]G[/ch] |"
+}

@@ -1,0 +1,60 @@
+{
+ "wanted": {
+  "title": "Few Old Memories, A",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:50:08",
+ "status": "accepted",
+ "validation": {
+  "tier": "mb-recording",
+  "score": 86.5,
+  "lyric_overlap": 0.968,
+  "bl_slug": "a-few-old-memories",
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "B"
+ },
+ "candidate": {
+  "id": 4059130,
+  "song_id": 11035189,
+  "song_name": "A Few Old Memories",
+  "artist_id": 57764,
+  "artist_name": "James King",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 3,
+  "difficulty": "",
+  "rating": 4.734,
+  "date": "1644067917",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "B",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1644067917,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "https://www.youtube.com/watch?v=g_x0QkMmkhk\r\n\r\n\r\n[Verse 1]\r\n[tab]               [ch]G[/ch]                              [ch]C[/ch]\r\nJust a few old memories slipped in through my door[/tab]\r\n[tab]                   [ch]G[/ch]                      [ch]D[/ch]\r\nOh I thought I had closed it so tightly before[/tab]\r\n[tab]             [ch]G[/ch]                                [ch]C[/ch]\r\nI can\u2019t understand it why it should bother my mind[/tab]\r\n[tab]             [ch]G[/ch]         [ch]D[/ch]               [ch]G[/ch]\r\nFor it all belongs to another place in time[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]               [ch]C[/ch]                         [ch]G[/ch]\r\nJust a few old keepsakes way back on the shelf[/tab]\r\n[tab]                   [ch]C[/ch]                                  [ch]D[/ch]\r\nNo they don\u2019t mean nothing I\u2019m surprised that they\u2019re left[/tab]\r\n[tab]                    [ch]G[/ch]                            [ch]C[/ch]\r\nJust a few old love letters with their edges all brown[/tab]\r\n[tab]                 [ch]G[/ch]              [ch]D[/ch]             [ch]G[/ch]\r\nAnd an old faded picture I keep turned upside down[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]G[/ch]  [ch]C[/ch]  [ch]G[/ch]  [ch]D[/ch]\r\n[ch]G[/ch]  [ch]C[/ch]  [ch]G[/ch]  [ch]D[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Verse 2]\r\n[tab]                                          [ch]C[/ch]\r\nJust a few old memories going way back in time[/tab]\r\n[tab]                    [ch]G[/ch]                           [ch]D[/ch]\r\nWell I can hardly remember I don\u2019t know why I\u2019m crying[/tab]\r\n[tab]             [ch]G[/ch]                                [ch]C[/ch]\r\nI can\u2019t understand it well I\u2019m surprised at myself[/tab]\r\n[tab]                     [ch]G[/ch]            [ch]D[/ch]              [ch]G[/ch]\r\nFirst thing tomorrow morning I\u2019ll clean off that shelf[/tab]\r\n\r\n\r\n[Outro]\r\n[tab]               [ch]C[/ch]                         [ch]G[/ch]\r\nJust a few old keepsakes way back on the shelf[/tab]\r\n[tab]                   [ch]C[/ch]                                  [ch]D[/ch]\r\nNo they don\u2019t mean nothing I\u2019m surprised that they\u2019re left[/tab]\r\n[tab]                    [ch]G[/ch]                            [ch]C[/ch]\r\nJust a few old love letters with their edges all brown[/tab]\r\n[tab]                 [ch]G[/ch]              [ch]D[/ch]             [ch]G[/ch]\r\nAnd an old faded picture I keep turned upside down[/tab]"
+}

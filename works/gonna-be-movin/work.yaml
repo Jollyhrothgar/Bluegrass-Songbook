@@ -1,0 +1,13 @@
+id: gonna-be-movin
+title: Gonna Be Movin'
+artist: Balsam Range
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: gonna-be-movin.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/balsam-range/gonna-be-moving-chords-3099938
+    imported_at: '2026-08-01'

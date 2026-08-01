@@ -1,0 +1,12 @@
+id: shes-just-a-cute-thing
+title: She’s Just A Cute Thing
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/shes-just-a-cute-thing/
+    imported_at: '2026-08-01'

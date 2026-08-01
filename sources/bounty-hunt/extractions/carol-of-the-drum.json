@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Carol of the Drum",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Peter Ostroushko",
+   "Dolly Parton",
+   "Patty Loveless",
+   "I\u2019m With Her"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:23:27",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

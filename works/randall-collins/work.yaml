@@ -1,0 +1,14 @@
+id: randall-collins
+title: Randall Collins
+artist: Norman Blake
+default_key: Ab
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-randall-collins.txt
+    source_url: https://docs.google.com/document/d/1gTEJjxiJU1LMPxMObHOtD21Xifc7hCqqqh5Yolrf0LE/edit?usp=sharing
+    imported_at: '2026-08-01'

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Ashes",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Alison Krauss",
+   "Greensky Bluegrass",
+   "Alan Jackson",
+   "John Bowman"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:21:40",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Cm"
+ },
+ "candidate": {
+  "id": 2379171,
+  "song_id": 2735183,
+  "song_name": "Ashes",
+  "artist_id": 9679,
+  "artist_name": "Celine Dion",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 497,
+  "difficulty": "intermediate",
+  "rating": 4.91083,
+  "date": "1525392988",
+  "status": "approved",
+  "preset_id": 29278,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Cm",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2440517
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1589439/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/8/187287/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1559728515,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]Am[/ch] [ch]G[/ch] [ch]F[/ch] [ch]C[/ch] [ch]G[/ch]   [ch]Am[/ch] [ch]G[/ch] [ch]F[/ch]\r\n\r\n\r\n[Verse 1]\r\n[tab] [ch]Am[/ch]             [ch]G[/ch]\r\nWhat's left to say?[/tab]\r\n[tab]                      [ch]F[/ch]         [ch]C[/ch]  [ch]G[/ch]\r\nThese prayers ain't working anymore[/tab]\r\n[tab]  [ch]Am[/ch]   [ch]G[/ch]                  [ch]F[/ch]\r\nEvery word shot down in flames[/tab]\r\n[tab] [ch]Am[/ch]            [ch]G[/ch]                     [ch]F[/ch]               [ch]C[/ch]  [ch]G[/ch]\r\nWhat's left to do with these broken pieces on the floor?[/tab]\r\n[tab]      [ch]Am[/ch]        [ch]G[/ch]            [ch]F[/ch]\r\nI'm losing my voice calling on you[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab]        [ch]F[/ch]\r\n'Cause I've been shaking[/tab]\r\n[tab] [ch]Am[/ch]                    [ch]C[/ch]              [ch]F[/ch]\r\nI've been bending backwards till I'm broke[/tab]\r\n[tab] [ch]Dm[/ch]                  [ch]Am[/ch]           [ch]G[/ch]\r\nWatching all these dreams go up in smoke[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]                 [ch]F[/ch]     [ch]C[/ch]   [ch]Am[/ch]  [ch]G[/ch]\r\nLet beauty come out of ashes[/tab]\r\n[tab]                 [ch]F[/ch]     [ch]C[/ch]   [ch]Am[/ch]  [ch]G[/ch]\r\nLet beauty come out of ashes[/tab]\r\n[tab]                        [ch]F[/ch]     [ch]C[/ch]      [ch]Am[/ch]  [ch]G[/ch]\r\nAnd when I pray to God all I ask is[/tab]\r\n[tab]                 [ch]F[/ch]     [ch]C[/ch]   [ch]Am[/ch]  [ch]G[/ch]\r\nCan beauty come out of ashes?[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab] [ch]Am[/ch]                [ch]G[/ch]                     [ch]F[/ch]          [ch]C[/ch]  [ch]G[/ch]\r\nCan you use these tears to put out the fires in my soul?[/tab]\r\n[tab]      [ch]Am[/ch]           [ch]G[/ch]      [ch]F[/ch]\r\n'Cause I need you here, woah[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab]        [ch]F[/ch]\r\n'Cause I've been shaking[/tab]\r\n[tab] [ch]Am[/ch]                    [ch]C[/ch]              [ch]F[/ch]\r\nI've been bending backwards till I'm broke[/tab]\r\n[tab] [ch]Dm[/ch]                  [ch]Am[/ch]           [ch]G[/ch]\r\nWatching all these dreams go up in smoke[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]                 [ch]F[/ch]     [ch]C[/ch]   [ch]Am[/ch]  [ch]G[/ch]\r\nLet beauty come out of ashes[/tab]\r\n[tab]                 [ch]F[/ch]     [ch]C[/ch]   [ch]Am[/ch]  [ch]G[/ch]\r\nLet beauty come out of ashes[/tab]\r\n[tab]                        [ch]F[/ch]     [ch]C[/ch]      [ch]Am[/ch]  [ch]G[/ch]\r\nAnd when I pray to God all I ask is[/tab]\r\n[tab]                 [ch]F[/ch]     [ch]C[/ch]   [ch]Am[/ch]  [ch]G[/ch]\r\nCan beauty come out of ashes?[/tab]\r\n\r\n[ch]Am[/ch] [ch]G[/ch] [ch]F[/ch] [ch]C[/ch]\r\n\r\n\r\n[Outro]\r\n[tab]       [ch]G[/ch]         [ch]Am[/ch]     [ch]G[/ch]  [ch]F[/ch]\r\nCan beauty come out of ashes?[/tab]"
+}

@@ -1,0 +1,12 @@
+id: the-shuffle-of-my-feet
+title: The Shuffle Of My Feet
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/the-shuffle-of-my-feet/
+    imported_at: '2026-08-01'

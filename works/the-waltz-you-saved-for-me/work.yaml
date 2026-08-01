@@ -1,0 +1,13 @@
+id: the-waltz-you-saved-for-me
+title: The Waltz You Saved for Me
+artist: Merle Haggard
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: waltz-you-saved-for-me-the.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/merle-haggard/the-waltz-you-saved-for-me-chords-4129522
+    imported_at: '2026-08-01'

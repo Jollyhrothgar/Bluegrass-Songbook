@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Tough Luck",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Doc Watson",
+   "Clint Howard",
+   "Carolina Tar Heels",
+   "Dom Flemons"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:07:30",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Db"
+ },
+ "candidate": {
+  "id": 5795099,
+  "song_id": 24551747,
+  "song_name": "Tough Luck",
+  "artist_id": 580664,
+  "artist_name": "Laufey",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 184,
+  "difficulty": "",
+  "rating": 4.80963,
+  "date": "1747240279",
+  "status": "approved",
+  "preset_id": 92558,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Db",
+  "version_description": "This is based on the studio version. Link: https://www.youtube.com/watch?v=cc96-nAqZus&pp=ygURbGF1ZmV5IHRvdWdoIGx1Y2s%3D.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/9/2919651/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/5/45758/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1755863534,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n[tab]        [ch]C[/ch]                             [ch]A7[/ch]\r\nAre you tired? I can tell that you're tired[/tab]\r\n[tab]     [ch]Dm7[/ch]                              [ch]Dm7b5[/ch]\r\nYour eyes turn gray, you beg me to be silent[/tab]\r\n[tab]                 [ch]C[/ch]\r\nYou said I can\u2019t read your mind[/tab]\r\n[tab]                   [ch]A7[/ch]\r\nBut I'm reading it just fine[/tab]\r\n[tab]    [ch]Dm7[/ch]\r\nYou think you're so misunderstood[/tab]\r\n[tab]    [ch]Dm7b5[/ch]\r\nThe black cat of your neighborhood[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]      [ch]C[/ch]\r\nTough luck, my boy, your time is up[/tab]\r\n[tab]     [ch]Dm7b5[/ch]\r\nI\u2019ll break it first, I've had enough[/tab]\r\n[tab]   [ch]C[/ch]\r\nOf waiting 'til you lie and cheat[/tab]\r\n[tab]     [ch]Dm7b5[/ch]                         [ch]Bm[/ch]\r\nJust like you did to the actress before me[/tab]\r\n[tab][ch]E9[/ch]        [ch]Am[/ch]           [ch]D9[/ch]\r\nOops, she doesn't even know[/tab]\r\n[tab]    [ch]Dm[/ch]                   [ch]Dm7b5[/ch]           [ch]C[/ch]\r\nYou won't be missed, I'm glad to see you go[/tab]\r\n\r\n\r\n[Post-Chorus]\r\n\r\nTough luck, tough luck\r\n\r\n\r\n[Verse 2]\r\n[tab]                     [ch]C[/ch]\r\nSince we're spilling secrets[/tab]\r\n[tab]                    [ch]A7[/ch]\r\nDoes your moth\u0435r even know? (Mother \u0435ven know)[/tab]\r\n[tab]      [ch]Dm7[/ch]\r\nYou demoralized, defaced me[/tab]\r\n[tab]        [ch]Dm7b5[/ch]\r\nJust to feed your frail ego (Oh)[/tab]\r\n[tab]                             [ch]C[/ch]\r\nWhen you're screaming at the TV[/tab]\r\n[tab]                     [ch]A7[/ch]\r\nCussing out opposing football teams[/tab]\r\n[tab]    [ch]Dm7[/ch]\r\nYou say I\u2019d never understand[/tab]\r\n[tab]    [ch]Dm7b5[/ch]\r\nThe things that make a man a man[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]      [ch]C[/ch]\r\nTough luck, my boy, your time is up[/tab]\r\n[tab]     [ch]Dm7b5[/ch]\r\nI\u2019ll break it first, I've had enough[/tab]\r\n[tab]   [ch]C[/ch]\r\nOf waiting 'til you lie and cheat[/tab]\r\n[tab]     [ch]Dm7b5[/ch]                         [ch]Bm[/ch]\r\nJust like you did to the actress before me[/tab]\r\n[tab][ch]E9[/ch]        [ch]Am[/ch]           [ch]D9[/ch]\r\nOops, she doesn't even know[/tab]\r\n[tab]    [ch]Dm[/ch]                   [ch]Dm7b5[/ch]\r\nYou won't be missed, I'm glad to see you[/tab]\r\n\r\n\r\n[Bridge]\r\n[tab][ch]C[/ch]\r\nI should congratulate thee[/tab]\r\n\r\nFor so nearly convincing me\r\n[tab]    [ch]Dm7b5[/ch]\r\nI\u2019m not quite as smart as I seem[/tab]\r\n\r\nThat I'm a loud-mouthed nobody\r\n[tab]   [ch]C[/ch]\r\nMy accent and music are dumb[/tab]\r\n\r\nYour tattoos are no better, hun\r\n[tab]    [ch]Dm7b5[/ch]\r\nThe proof says you're tragic as fuck[/tab]\r\n[tab]                                      [ch]C[/ch]\r\nThe truth is that's just tough, tough luck (Tough luck)[/tab]\r\n[tab]             [ch]Bdim7[/ch]\r\nTough, tough luck (Tough luck)[/tab]\r\n[tab]             [ch]Fm[/ch]\r\nTough, tough luck (Tough, tough luck)[/tab]\r\n[tab][ch]Dm7b5[/ch]\r\n(Tough, tough luck)[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]      [ch]C[/ch]\r\nTough luck, my boy, your time is up[/tab]\r\n[tab]     [ch]Dm7b5[/ch]\r\nI\u2019ll break it first, I've had enough[/tab]\r\n[tab]   [ch]C[/ch]\r\nOf waiting 'til you lie and cheat[/tab]\r\n[tab]     [ch]Dm7b5[/ch]                         [ch]Bm[/ch]\r\nJust like you did to the actress before me[/tab]\r\n[tab][ch]E9[/ch]        [ch]Am[/ch]           [ch]D9[/ch]\r\nOops, she doesn't even know[/tab]\r\n[tab]    [ch]Dm[/ch]                   [ch]Dm7b5[/ch]           [ch]C[/ch]\r\nYou won't be missed, I'm glad to see you go[/tab]"
+}

@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Hold Watcha Got",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Wires & Wood",
+   "The Bluegrass Album Band",
+   "Northern Lights",
+   "Vassar Clements"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:10:57",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

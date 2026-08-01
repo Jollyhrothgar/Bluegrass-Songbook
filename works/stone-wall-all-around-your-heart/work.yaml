@@ -1,0 +1,12 @@
+id: stone-wall-all-around-your-heart
+title: Stone Wall All Around Your Heart
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/stone-wall-all-around-your-heart/
+    imported_at: '2026-08-01'

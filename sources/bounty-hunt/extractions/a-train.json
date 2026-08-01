@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "'A' Train",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Norman Blake",
+   "Butch Robins",
+   "Tut Taylor",
+   "The String Cheese Incident"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:04:58",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 50
+ },
+ "candidate": null,
+ "content": null
+}

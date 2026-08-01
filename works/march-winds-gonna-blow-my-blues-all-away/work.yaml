@@ -1,0 +1,12 @@
+id: march-winds-gonna-blow-my-blues-all-away
+title: March Winds Gonna Blow My Blues All Away
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/march-winds-gonna-blow-my-blues-all-away/
+    imported_at: '2026-08-01'

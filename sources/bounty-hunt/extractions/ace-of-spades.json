@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Ace of Spades",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Handsome Hank and His Lonesome Boys",
+   "Hayseed Dixie",
+   "Southfork Bluegrass Band",
+   "Peter Ostroushko"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:08:44",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1903762,
+  "song_id": 27981,
+  "song_name": "Ace Of Spades",
+  "artist_id": 922,
+  "artist_name": "Mot\u00f6rhead",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 69,
+  "difficulty": "",
+  "rating": 4.90835,
+  "date": "1479565012",
+  "status": "approved",
+  "preset_id": 113,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "Ace Of Spades acoustic version as heard on the Kronenbourg 1664 Beer Commercial.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 1,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/6/1/6131/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/2/6/26082/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1761032834,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Ace Of Spades Acoustic version\r\n\r\nEddie Clarke Ian Kilmister Phil Taylor\r\n\r\nAs heard on the Kronenbourg 1664 Beer Commercial. Original version by leigh555, upgrade to\r\nbe played with two guitars by mail131. \"Riff A\" and \"Riff B\" is the part of the 2nd guitar.\r\n\r\n\r\n[Intro Part]\r\n\r\n[tab]e|--------------------|---------------------|\r\nB|--------------------|---------------------|\r\nG|----2----2---2----2-|----2----2----2----2-|\r\nD|----2----2---2----2-|----2----2----2----2-|\r\nA|-3b-0----0---0----0-|-3b-0----0-3b-0----0-|\r\nE|------3b-------3b---|------3b--------3b---|[/tab]\r\n\r\n\r\n[Riff A] (used in verses)\r\n\r\n[tab]e|-------------------|--------------------|\r\nB|----7b---5-----5---|----7b-7--5---------|\r\nG|----7b-x-5-x-7-5-x-|----7b-7--5--x--7---|\r\nD|-------------------|--------------------|\r\nA|-------------------|--------------------|\r\nE|-------------------|--------------------|[/tab]\r\n\r\n\r\n[Riff B] (always at \"The Ace of Spades\" and following)\r\n\r\n[tab]e|-----------------|-----------------|\r\nB|-----------------|-----------------|\r\nG|---------9--8--7-|---------9--8--7-|\r\nD|-----------------|-----------------|\r\nA|-----------------|-----------------|\r\nE|-----------------|-----------------|[/tab]\r\n\r\n\r\n\r\n[Intro Part] x2\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]C[/ch]\r\nIf you like to gamble, I tell you I'm your man[/tab]\r\n[tab][ch]C[/ch]\r\nYou win some, lose some, it's all the same to me[/tab]\r\n\r\n[Intro with Riff A] x2\r\n\r\n[tab]    [ch]G[/ch]                         [ch]F[/ch]\r\nThe pleasure is to play, it makes no difference what you say[/tab]\r\n\r\n[Intro with Riff A]\r\n\r\n[tab][ch]G[/ch]                             [ch]F[/ch]\r\nI don't share your greed, the only card I need[/tab]\r\n[tab]       [ch]A[/ch]\r\nIs the Ace of Spades (played with Intro and Riff B)[/tab]\r\n\r\n[Intro with Riff B]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab][ch]C[/ch]\r\nPlaying for the high one, dicing with the devil[/tab]\r\n[tab][ch]C[/ch]\r\nGoing with the flow, it's all a game to me[/tab]\r\n\r\n[Intro with Riff A] x2\r\n\r\n[tab][ch]G[/ch]                [ch]F[/ch]\r\nSeven or eleven, snake eyes watchin' you[/tab]\r\n\r\n[Intro Part]\r\n\r\n[tab][ch]G[/ch]                     [ch]F[/ch]\r\nDouble up or quit, double stake or split[/tab]\r\n[tab]    [ch]A[/ch]\r\nThe Ace of Spades (played with Intro and Riff B)[/tab]\r\n\r\n[Intro with Riff B]\r\n\r\n\r\n[Bridge]\r\n\r\n[tab]    [ch]A[/ch]    N.C.                 [ch]G[/ch]   [ch]A[/ch]   N.C.\r\nYou know I'm born to lose,    and gambling's for fools[/tab]\r\n[tab]    N.C.                                                       [ch]G[/ch]      [ch]A[/ch] [ch]G[/ch] [ch]F[/ch] [ch]E[/ch]\r\nBut that's the way I like it baby, I don't want to live forever[/tab]\r\n[tab]([ch]E[/ch])\r\nBut apparently I am[/tab]\r\n\r\n\r\n[Solo with D strumming]\r\n\r\n[tab]e|-----------------------------------------------------------------------10------------------|\r\nB|--------------------------------------------------------10----10----10-------10------------|\r\nG|------------------10--10--------------------------10-11----11----11-------11----11---------|\r\nD|--10/12-12-10------------12--12-10----12-12-10--------------------------------------12\\3---|\r\nA|--------------12-------------------12----------12-----------------------------------12\\3---|\r\nE|-------------------------------------------------------------------------------------------|[/tab]\r\n\r\n[Intro with Riff B] x2\r\n\r\n\r\n[Verse 3]\r\n\r\n[tab][ch]C[/ch]\r\nPushing up the ante, I know you gotta see me[/tab]\r\n[tab][ch]C[/ch]\r\nRead 'em and weep, the dead man's hand again[/tab]\r\n\r\n[Intro with Riff A] x2\r\n\r\n[tab]  [ch]G[/ch]                   [ch]F[/ch]\r\nI see it in your eyes, take one look and die[/tab]\r\n\r\n[Intro Part]\r\n\r\n[tab]    [ch]G[/ch]                  [ch]F[/ch]\r\nThe only thing you see, you know it's gonna be[/tab]\r\n[tab]    [ch]A[/ch]\r\nThe Ace of Spades (played with Intro and Riff B)[/tab]\r\n[tab]    [ch]A[/ch]\r\nThe Ace of Spades (played with Intro and Riff B)[/tab]\r\n\r\n\r\n[Outro]\r\n\r\n[ch]G[/ch]    [ch]F[/ch]    x2\r\n\r\n[ch]A[/ch] [ch]A[/ch] [ch]G[/ch] [ch]A[/ch] N.C.  [ch]A[/ch] [ch]A[/ch] [ch]G[/ch] [ch]A[/ch] N.C."
+}

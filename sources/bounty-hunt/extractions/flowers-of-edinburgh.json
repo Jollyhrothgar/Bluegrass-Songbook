@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "Flowers of Edinburgh",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Steve Kaufman",
+   "Adam Hurt",
+   "Mark O\u2019Connor",
+   "Grandpa Jones"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:16:59",
+ "status": "accepted",
+ "validation": {
+  "tier": "traditional",
+  "score": 30,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 5221017,
+  "song_id": 15132569,
+  "song_name": "The Flowers Of Edinburgh",
+  "artist_id": 885,
+  "artist_name": "Misc Traditional",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1712834853",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p0/media/cover/artist/8/8f92475bb203d60e25db7724ce2b6d5b/misc-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1712876392,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Flowers of Edinburgh is a traditional Scottish fiddle tune that's in the public domain.\r\nI'm publishing so my guitar playing friends can play along.\r\n\r\nThis is standard notation for fiddle tunes.\r\n\r\n Flowers Of Edinburgh\r\nReel in G\r\n\r\nx2 Part A\r\n[ch]G[/ch] [ch]G[/ch] | [ch]G[/ch] [ch]G[/ch] | [ch]D[/ch] [ch]D[/ch] | [ch]D[/ch] [ch]Em[/ch]\r\n[ch]G[/ch] [ch]G[/ch] | [ch]G[/ch] [ch]C[/ch] | [ch]D[/ch] [ch]D[/ch] | [ch]G[/ch] [ch]G[/ch]\r\n\r\nx2 Part B\r\n[ch]G[/ch] [ch]G[/ch] | [ch]D[/ch] [ch]D[/ch] | [ch]C[/ch] [ch]C[/ch] | [ch]Em[/ch] [ch]C[/ch]\r\n[ch]G[/ch] [ch]G[/ch] | [ch]C[/ch] [ch]C[/ch] | [ch]D[/ch] [ch]D[/ch] | [ch]G[/ch] [ch]G[/ch]"
+}

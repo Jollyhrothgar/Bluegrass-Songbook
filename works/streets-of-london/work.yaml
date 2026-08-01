@@ -1,0 +1,13 @@
+id: streets-of-london
+title: Streets of London
+artist: Tony Rice
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: streets-of-london.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/tony-rice/streets-of-london-chords-2983250
+    imported_at: '2026-08-01'

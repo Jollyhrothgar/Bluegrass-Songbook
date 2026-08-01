@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Ole Slewfoot",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Hickory Hill",
+   "Billy Strings",
+   "Aspen Run",
+   "Jim and Jesse"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:29:28",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

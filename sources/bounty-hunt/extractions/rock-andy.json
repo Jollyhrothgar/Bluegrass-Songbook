@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "Rock Andy",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:11:01",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 11
+ },
+ "candidate": null,
+ "content": null
+}

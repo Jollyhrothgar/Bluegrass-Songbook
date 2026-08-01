@@ -1,0 +1,12 @@
+id: sinking-in-the-lonesome-sea
+title: Sinking In The Lonesome Sea
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/sinking-in-the-lonesome-sea/
+    imported_at: '2026-08-01'

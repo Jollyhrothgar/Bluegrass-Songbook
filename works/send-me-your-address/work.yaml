@@ -1,0 +1,12 @@
+id: send-me-your-address
+title: Send Me Your Address
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/send-me-your-address/
+    imported_at: '2026-08-01'

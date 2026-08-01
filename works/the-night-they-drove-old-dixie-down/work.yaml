@@ -1,0 +1,14 @@
+id: the-night-they-drove-old-dixie-down
+title: The Night They Drove Old Dixie Down
+artist: The Band
+default_key: Am
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-the-night-they-drove-old-dixie-down.txt
+    source_url: https://docs.google.com/document/d/1tKBFR0ys5gxyBxmmt_8mgOM3Irc_PMbd/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

@@ -1,0 +1,13 @@
+id: jimmy-brown-the-newsboy
+title: Jimmy Brown the Newsboy
+artist: Mac Wiseman
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: jimmy-brown-the-newsboy.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/mac-wiseman/jimmy-brown-the-newsboy-chords-2118275
+    imported_at: '2026-07-31'

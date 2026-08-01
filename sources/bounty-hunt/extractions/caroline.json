@@ -1,0 +1,85 @@
+{
+ "wanted": {
+  "title": "Caroline",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": false,
+  "artists": [
+   "Mipso",
+   "Summervilla",
+   "The Cockman Family",
+   "Old Crow Medicine Show"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:03:37",
+ "status": "accepted",
+ "validation": {
+  "tier": "mb-recording",
+  "score": 90.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "C"
+ },
+ "candidate": {
+  "id": 2164527,
+  "song_id": 2607459,
+  "song_name": "Caroline",
+  "artist_id": 11840,
+  "artist_name": "Steve Martin",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 26,
+  "difficulty": "intermediate",
+  "rating": 4.87602,
+  "date": "1506424368",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "C",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [
+    {
+     "join_field": " & ",
+     "artist": {
+      "id": 24082,
+      "name": "Steep Canyon Rangers"
+     }
+    }
+   ],
+   "video_urls": null,
+   "album_id": 224832
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1579254/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/177960/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1506424368,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]Dm[/ch] [ch]C[/ch] [ch]G[/ch] [ch]Dm[/ch] [ch]C[/ch] [ch]G[/ch] [ch]C[/ch] (x2 and hold the last [ch]C[/ch] for four beats)\r\n\r\n[Verse]\r\n[tab][ch]Dm[/ch]                                       [ch]G[/ch]      [ch]C[/ch]       [ch]G[/ch]\r\nCan you tell me why you left me standing in the parking structure[/tab]\r\n[tab][ch]Dm[/ch]                                 [ch]G[/ch]          [ch]C[/ch]     [ch]G[/ch]\r\nCaroline, I was the almost perfect boyfriend, ever, for you[/tab]\r\n[tab][ch]Dm[/ch]                                       [ch]G[/ch]      [ch]C[/ch]     [ch]G[/ch]\r\nAnd, you even said that to me, one time, at the Olive Garden[/tab]\r\n[tab][ch]Dm[/ch]                                        [ch]G[/ch]        [ch]C[/ch]        [ch]G[/ch]\r\nPlease return my car and leave the keys inside the glove compartment[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]C[/ch]         [ch]Dm[/ch]           [ch]Em[/ch]           [ch]F[/ch]\r\nCaroline, Caroline, oh Caroline, oh Caroline[/tab]\r\n[tab]    [ch]C[/ch]            [ch]F[/ch]            [ch]Dm[/ch] [ch]G[/ch]   [ch]C[/ch]\r\nOh, Caroline, oh Caroline, oh Ca-rol-ine[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]Dm[/ch]                                       [ch]G[/ch]    [ch]C[/ch]     [ch]G[/ch]\r\nCaroline, you are the hardest thing I'll ever put behind me[/tab]\r\n[tab][ch]Dm[/ch]                                          [ch]G[/ch]        [ch]C[/ch]      [ch]G[/ch]\r\nNever thought you'd leave me stranded not a glance into the rearview[/tab]\r\n[tab][ch]Dm[/ch]                                          [ch]G[/ch]      [ch]C[/ch]     [ch]G[/ch]\r\nI'll be looking for someone who wears their hair exactly like you[/tab]\r\n[tab][ch]Dm[/ch]                                             [ch]G[/ch]        [ch]C[/ch]      [ch]G[/ch]\r\nAnd who swears a blue streak when the Tarheels lose the quarterfinals[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]C[/ch]         [ch]Dm[/ch]           [ch]Em[/ch]           [ch]F[/ch]\r\nCaroline, Caroline, oh Caroline, oh Caroline[/tab]\r\n[tab]    [ch]C[/ch]            [ch]F[/ch]            [ch]Dm[/ch] [ch]G[/ch]   [ch]C[/ch]\r\nOh, Caroline, oh Caroline, oh Ca-rol-ine[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]Dm[/ch]                                     [ch]G[/ch]     [ch]C[/ch]       [ch]G[/ch]\r\nIf you ever find another, please don't put a post on Facebook[/tab]\r\n[tab][ch]Dm[/ch]                                   [ch]G[/ch]       [ch]C[/ch]       [ch]G[/ch]\r\nI would rather think I was a deep regret you can't resolve[/tab]\r\n[tab][ch]Dm[/ch]                                     [ch]G[/ch]        [ch]C[/ch]    [ch]G[/ch]\r\nIf I have a drink with someone, I will tell her all about you[/tab]\r\n[tab][ch]Dm[/ch]                                       [ch]G[/ch]       [ch]C[/ch]        [ch]G[/ch]\r\nThat will be the big mistake that I will make on my first date[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]C[/ch]         [ch]Dm[/ch]           [ch]Em[/ch]           [ch]F[/ch]\r\nCaroline, Caroline, oh Caroline, oh Caroline[/tab]\r\n[tab]    [ch]C[/ch]            [ch]F[/ch]            [ch]Dm[/ch] [ch]G[/ch]   [ch]C[/ch]\r\nOh, Caroline, oh Caroline, oh Ca-rol-ine[/tab]\r\n\r\n[Bridge]\r\n[tab][ch]Dm[/ch] [ch]C[/ch] [ch]G[/ch] [ch]Dm[/ch] [ch]C[/ch] [ch]G[/ch] [ch]C[/ch] [ch]G[/ch] (x3)\r\n[Chorus Chords][/tab]\r\n\r\n[Banjo solo chords]\r\n[ch]C[/ch] [ch]Dm[/ch] [ch]Em[/ch] [ch]F[/ch] (x3)\r\n[ch]C[/ch] [ch]F[/ch]  [ch]Dm[/ch] [ch]G[/ch] [ch]C[/ch]\r\n\r\n[Verse 4]\r\n[tab][ch]Dm[/ch]                  [ch]G[/ch]     [ch]C[/ch]        [ch]G[/ch]\r\nYes, I know that we could not have lasted[/tab]\r\n[tab][ch]Dm[/ch]                 [ch]G[/ch]  [ch]C[/ch]    [ch]G[/ch]\r\nDaily life can not be that intense[/tab]\r\n[tab][ch]Dm[/ch]\r\nI'll phone my friends and try to explain[/tab]\r\n[tab][ch]Dm[/ch]                        [ch]G[/ch]     [ch]C[/ch]  [ch]G[/ch]\r\nWhy this past year I have acted so insane![/tab]\r\n\r\n[Chorus]\r\n[tab][ch]C[/ch]         [ch]Dm[/ch]           [ch]Em[/ch]           [ch]F[/ch]\r\nCaroline, Caroline, oh Caroline, oh Caroline[/tab]\r\n[tab]    [ch]C[/ch]            [ch]F[/ch]            [ch]Dm[/ch] [ch]Am[/ch]   [ch]G[/ch]\r\nOh, Caroline, oh Caroline, oh Ca-rol-ine[/tab]\r\n[tab][ch]C[/ch]         [ch]Dm[/ch]           [ch]Em[/ch]           [ch]F[/ch]\r\nCaroline, Caroline, oh Caroline, oh Caroline[/tab]\r\n[tab]    [ch]C[/ch]            [ch]F[/ch]            [ch]Dm[/ch] [ch]G[/ch]   [ch]C[/ch]    [ch]C[/ch] (final strum)\r\nOh, Caroline, oh Caroline, oh Ca-rol-ine[/tab]"
+}

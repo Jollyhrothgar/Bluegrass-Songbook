@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Sometimes",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Jim Lauderdale",
+   "The Roys",
+   "Punch Brothers",
+   "The Chicks"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:07:26",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1230516,
+  "song_id": 26948,
+  "song_name": "Sometimes",
+  "artist_id": 902,
+  "artist_name": "My Bloody Valentine",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 110,
+  "difficulty": "intermediate",
+  "rating": 4.89739,
+  "date": "1363564801",
+  "status": "approved",
+  "preset_id": 50324,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 5435
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/2/2244/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/6/9/6956/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1472732756,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Courtesy of Writer:  Kevin Shields\r\n\r\nI just love this and it's a good one to play if, like me, you're not much of a singer!\r\n\r\n\r\nChords as I use:\r\n\r\n[tab]   [ch]D5[/ch]    [ch]D[/ch]     [ch]Bm11/D[/ch]    [ch]Em11/D[/ch]    [ch]G5[/ch]     [ch]F#5[/ch]     [ch]Em[/ch]    [ch]D2[/ch]   [ch]Aadd11/D[/ch]\r\nE  x     2     0         0         x      x       0     0    0[/tab]\r\nB  3     3     0         3         x      x       0     3    3\r\nG  2     2     2         2         x      x       0     2    2\r\nD  0     0     4         0         5      4       2     0    0\r\nA  0     0     4         2         5      4       2     0    4\r\nD  0     0     0         0         5      4       2     0    2\r\n\r\n\r\n\r\n[Intro]\r\n[ch]D5[/ch]        \r\n\r\n[Verse 1]\r\n[tab][ch]D[/ch]\r\n  Close my eyes[/tab]\r\n[tab][ch]Bm11/D[/ch]\r\n  Feel me now[/tab]\r\n[tab][ch]Em11/D[/ch]                [ch]G5[/ch]\r\n  I don't know maybe you could not love me now[/tab]\r\n[tab][ch]F#5[/ch]                       [ch]Em[/ch]\r\n  You will know, and her feet down to the ground[/tab]\r\n[tab][ch]D5[/ch]                  [ch]Em[/ch]\r\n  Over there, and I want true love to love[/tab]\r\n[tab][ch]Em11/D[/ch]            [ch]Bm11/D[/ch]          [ch]Em[/ch]\r\n  You can't hide, oh no, from the way I feel[/tab]\r\n\r\n[ch]D2[/ch] \r\n\r\n[Verse 2]\r\n[tab][ch]D[/ch]\r\n  Turn my head[/tab]\r\n[tab][ch]Bm11/D[/ch]\r\n  Into sound[/tab]\r\n[tab][ch]Em11/D[/ch]                 [ch]G5[/ch]\r\n  I don't know when I lay down on the ground[/tab]\r\n[tab][ch]F#5[/ch]                   [ch]Em[/ch]\r\n  You will find the (way it) hurts to love[/tab]\r\n[tab][ch]D5[/ch]                   [ch]Em[/ch]\r\n  Never cared and the world turned hearts to love[/tab]\r\n[tab][ch]Em11/D[/ch]          [ch]Bm11/D[/ch]         [ch]Em[/ch]\r\n  You will see, oh now, oh the way I do[/tab]\r\n\r\n[ch]Em11/D[/ch] \r\n\r\n[Verse 3]\r\n[tab][ch]D[/ch]\r\n  You will wait[/tab]\r\n[tab][ch]Bm11/D[/ch]\r\n  See me go[/tab]\r\n[tab][ch]Em11/D[/ch]                    [ch]G5[/ch]\r\n  I don't care when your head turned all alone[/tab]\r\n[tab][ch]F#5[/ch]                     [ch]Em[/ch]\r\n  You will wait when I turn my eyes around[/tab]\r\n[tab][ch]D5[/ch]                [ch]Em[/ch]\r\n  Overhead when I hold you next to me[/tab]\r\n[tab][ch]Em11/D[/ch]      [ch]Bm11/D[/ch]          [ch]Em[/ch]\r\n  Overhead, to know, oh the way I see[/tab]\r\n\r\n[ch]D2[/ch] \r\n\r\n[Verse 4]\r\n[tab][ch]D[/ch]\r\n  Close my eyes[/tab]\r\n[tab][ch]Bm11/D[/ch]\r\n  Feel me how[/tab]\r\n[tab][ch]Em11/D[/ch]                [ch]G5[/ch]\r\n  I don't know maybe you could not hurt me now[/tab]\r\n[tab][ch]F#5[/ch]                  [ch]Em[/ch]\r\n  Here alone when I feel down too[/tab]\r\n[tab][ch]D5[/ch]                  [ch]Em[/ch]\r\n  Over there when I await true love for you[/tab]\r\n[tab][ch]Em11/D[/ch]          [ch]Bm11/D[/ch]        [ch]Em[/ch]\r\n  You can hide, oh no, oh the way I do[/tab]\r\n[ch]D2[/ch]\r\n\r\n[tab][ch]Em11/D[/ch]          [ch]Bm11/D[/ch]        [ch]Em[/ch]\r\n  You will see, oh now, oh the way I do[/tab]\r\n\r\n[ch]Em11/D[/ch] \r\n  \r\n\r\n(play verse 1 without lyrics through twice)\r\n\r\nFinish with a few bars of Aadd11/D"
+}

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Maybellene",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Jim and Jesse",
+   "Vince Gill",
+   "John Hartford",
+   "David Grisman"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:17:48",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 16987,
+  "song_id": 134832,
+  "song_name": "Maybellene",
+  "artist_id": 9819,
+  "artist_name": "Chuck Berry",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 198,
+  "difficulty": "",
+  "rating": 4.85277,
+  "date": "1004486400",
+  "status": "approved",
+  "preset_id": 16027,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 39201
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/8/1818120/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/1/31601/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1474980357,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "MAYBELLENE\r\n\r\n[NOTE] This song was later covered by Johnny Rivers in the key of F, and by\r\nPaul Revere and the Raiders in the key of G.  I like to play it in G, but\r\nthis tab is in A because A is what Chuck sang it in. \r\n\r\n(A chord plays throughout all verses)\r\n\r\n[Intro]\r\n[ch]A[/ch] / / / 2 / / /\r\n\r\n[Chorus]\r\nMaybellene, why can't you be true\r\n[tab]          [ch]D7[/ch]                     [ch]A[/ch]\r\nOh, Maybellene, why can't you be true[/tab]\r\n[tab]       [ch]E7[/ch]                     [ch]D7[/ch]                 [ch]A[/ch]       \r\nYou've started back doin' the things you used to do[/tab]\r\n\r\n[Verse 1]\r\nAs I was motivatin' over the hill\r\nI saw Maybellene in a Coupe de Ville\r\nCadillac rollin' on the open road\r\nNothin' outruns my V-8 Ford\r\nCadillac doin' 'bout 95\r\nBumper-to-bumper, rollin' side by side\r\n\r\n[Chorus]\r\nMaybellene, why can't you be true\r\n[tab]          [ch]D7[/ch]                     [ch]A[/ch]\r\nOh, Maybellene, why can't you be true[/tab]\r\n[tab]       [ch]E7[/ch]                     [ch]D7[/ch]                 [ch]A[/ch]       \r\nYou've started back doin' the things you used to do[/tab]\r\n\r\n[Verse 2]\r\nCadillac rolled up ahead of the Ford\r\nThe Ford got hot, wouldn't do no more\r\nIt soon got cloudy and it started to rain\r\nI tooted my horn for the passing lane\r\nRain was pourin' under my hood\r\nI knew that was doin' my motor good\r\n\r\n[Chorus]\r\nMaybellene, why can't you be true\r\n[tab]          [ch]D7[/ch]                     [ch]A[/ch]\r\nOh, Maybellene, why can't you be true[/tab]\r\n[tab]       [ch]E7[/ch]                     [ch]D7[/ch]                 [ch]A[/ch]       \r\nYou've started back doin' the things you used to do[/tab]\r\n\r\n(instrumental, same pattern as chorus)\r\n\r\n[Chorus]\r\nMaybellene, why can't you be true\r\n[tab]          [ch]D7[/ch]                     [ch]A[/ch]\r\nOh, Maybellene, why can't you be true[/tab]\r\n[tab]       [ch]E7[/ch]                     [ch]D7[/ch]                 [ch]A[/ch]       \r\nYou've started back doin' the things you used to do[/tab]\r\n\r\n[Verse 3]\r\nMotor cooled down, the heat went down\r\nThat's when I heard that highway sound\r\nThe Cadillac sittin' like a ton of lead\r\n110 half a mile ahead\r\nThe Cadillac looked like it was sittin' still\r\nI caught Maybellene at the top of the hill\r\n\r\n[Chorus]\r\nMaybellene, why can't you be true\r\n[tab]          [ch]D7[/ch]                     [ch]A[/ch]\r\nOh, Maybellene, why can't you be true[/tab]\r\n[tab]       [ch]E7[/ch]                     [ch]D7[/ch]                 [ch]A[/ch]       \r\nYou've started back doin' the things you used to do[/tab]"
+}

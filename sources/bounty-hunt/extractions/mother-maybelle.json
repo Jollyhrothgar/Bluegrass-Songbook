@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Mother Maybelle",
+  "type": "Gospel",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Osborne Brothers",
+   "Mac Wiseman",
+   "Nashville Grass",
+   "Marty Stuart"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:28:52",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 2
+ },
+ "candidate": null,
+ "content": null
+}

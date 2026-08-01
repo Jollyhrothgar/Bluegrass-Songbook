@@ -1,0 +1,12 @@
+id: im-on-my-way-somewhere
+title: I’m On My Way Somewhere
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/im-on-my-way-somewhere/
+    imported_at: '2026-08-01'

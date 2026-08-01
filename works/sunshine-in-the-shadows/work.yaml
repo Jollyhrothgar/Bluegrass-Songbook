@@ -1,0 +1,12 @@
+id: sunshine-in-the-shadows
+title: Sunshine In The Shadows
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/sunshine-in-the-shadows/
+    imported_at: '2026-08-01'

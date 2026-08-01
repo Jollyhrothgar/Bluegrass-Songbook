@@ -1,0 +1,13 @@
+id: redwood-hill
+title: Redwood Hill
+artist: The Country Gentlemen
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: redwood-hill.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-country-gentlemen/redwood-hill-chords-4893328
+    imported_at: '2026-08-01'

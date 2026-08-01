@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Fathers and Sons",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Charlie Daniels Band",
+   "Possessed by Paul James",
+   "The Del McCoury Band",
+   "Charlie Daniels"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:25:19",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 7.5,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1858020,
+  "song_id": 1667425,
+  "song_name": "Fathers And Sons",
+  "artist_id": 28488,
+  "artist_name": "High Valley",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 8,
+  "difficulty": "",
+  "rating": 4.67309,
+  "date": "1467569907",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1631302
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1547485/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/3/13669/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1467569907,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "High Valley's Fathers and Sons\r\nGreat song, everything should be right\r\n\r\nStandard Tuning\r\n\r\n[Intro]\r\n\r\n  [ch]C[/ch]\r\n\r\n[Verse]\r\n\r\n[tab]     [ch]Am[/ch]           [ch]G[/ch]         [ch]F[/ch]            [ch]C[/ch]\r\nIt's barefoot and baseball, battle-scar stitches[/tab]\r\n[tab][ch]Am[/ch]            [ch]G[/ch]           [ch]F[/ch]          [ch]C[/ch]\r\nHot dogs and pep talks, in between pitches[/tab]\r\n[tab]   [ch]Am[/ch]         [ch]G[/ch]           [ch]F[/ch]            [ch]C[/ch]\r\nUnspeakable things that a mom's never done[/tab]\r\n[tab] [ch]Am[/ch]                [ch]G[/ch]            [ch]F[/ch]            [ch]C[/ch]\r\nSome things should stay between fathers and sons[/tab]\r\n\r\n[Chorus]\r\n\r\n[tab]     [ch]G[/ch]                             [ch]F[/ch]             [ch]C[/ch]\r\nIt's holding 'em back while you're letting them go[/tab]\r\n[tab][ch]G[/ch]                        [ch]F[/ch]             [ch]C[/ch]\r\nTrying to teach what you don't really know[/tab]\r\n[tab]      [ch]Am[/ch]            [ch]G[/ch]             [ch]F[/ch]          [ch]C[/ch]\r\nSo you watch and you pray to see what they become[/tab]\r\n[tab]       [ch]Am[/ch]           [ch]G[/ch]             [ch]F[/ch]           [ch]C[/ch]\r\nIt just runs in the blood between fathers and sons[/tab]\r\n\r\n[Verse]\r\n\r\n[tab] [ch]Am[/ch]            [ch]G[/ch]        [ch]F[/ch]             [ch]C[/ch]\r\nNo flowers or dolls, unless you can burn 'em[/tab]\r\n[tab]          [ch]Am[/ch]            [ch]G[/ch]                [ch]F[/ch]       [ch]C[/ch]\r\nIt's all car parts and guitars and the backyard learning[/tab]\r\n[tab][ch]Am[/ch]          [ch]G[/ch]             [ch]F[/ch]           [ch]C[/ch]\r\nSaying good night with an I love you punch[/tab]\r\n[tab]        [ch]Am[/ch]           [ch]G[/ch]          [ch]F[/ch]           [ch]C[/ch]\r\nJust the way that it is between fathers and sons[/tab]\r\n\r\n[Chorus]\r\n\r\n[tab]     [ch]G[/ch]                             [ch]F[/ch]             [ch]C[/ch]\r\nIt's holding 'em back while you're letting them go[/tab]\r\n[tab][ch]G[/ch]                        [ch]F[/ch]             [ch]C[/ch]\r\nTrying to teach what you don't really know[/tab]\r\n[tab]      [ch]Am[/ch]            [ch]G[/ch]             [ch]F[/ch]          [ch]C[/ch]\r\nSo you watch and you pray to see what they become[/tab]\r\n[tab]       [ch]Am[/ch]           [ch]G[/ch]             [ch]F[/ch]           [ch]C[/ch]\r\nIt just runs in the blood between fathers and sons[/tab]\r\n\r\n[Bridge]\r\n\r\n[tab][ch]Am[/ch]      [ch]G[/ch]     [ch]F[/ch]     [ch]C[/ch]\r\nOoohhhh ohhhh ohhhh ohhhh[/tab]\r\n\r\n[tab][ch]Am[/ch]      [ch]G[/ch]     [ch]F[/ch]     [ch]C[/ch]\r\nOoohhhh ohhhh ohhhh[/tab]\r\n[tab]      [ch]Am[/ch]         [ch]G[/ch]           [ch]F[/ch]          [ch]C[/ch]\r\nI'm a cowboy, an outlaw, an ace with a gun[/tab]\r\n[tab]   [ch]Am[/ch]          [ch]G[/ch]          [ch]F[/ch]         [ch]C[/ch]\r\nA preacher, a teacher, a seeker of fun[/tab]\r\n[tab]   [ch]Am[/ch]         [ch]G[/ch]          [ch]F[/ch]         [ch]C[/ch]\r\nThe scariest thing that I've ever done[/tab]\r\n[tab]   [ch]Am[/ch]         [ch]G[/ch]           [ch]F[/ch]          [ch]C[/ch]\r\nIs taking my place among fathers and sons[/tab]\r\n\r\n[Chorus]\r\n\r\n[tab]     [ch]G[/ch]                             [ch]F[/ch]             [ch]C[/ch]\r\nIt's holding 'em back while you're letting them go[/tab]\r\n[tab][ch]G[/ch]                        [ch]F[/ch]             [ch]C[/ch]\r\nTrying to teach what you don't really know[/tab]\r\n[tab]      [ch]Am[/ch]        [ch]G[/ch]             [ch]F[/ch]          [ch]C[/ch]\r\nSo I watch and I pray to see what you become[/tab]\r\n[tab]            [ch]Am[/ch]            [ch]G[/ch]      [ch]F[/ch]                  [ch]C[/ch]\r\nI'll try to soak up the moments while you're still young[/tab]\r\n\r\n[Outro]\r\n\r\n[tab][ch]Am[/ch]           [ch]G[/ch]            [ch]F[/ch]        [ch]C[/ch]\r\nKingdoms and castles can all come undone[/tab]\r\n[tab][ch]Am[/ch]             [ch]G[/ch]             [ch]F[/ch]          [ch]C[/ch]\r\nAin't nothing stronger than fathers and sons[/tab]\r\n[tab]         [ch]Am[/ch]             [ch]G[/ch]             [ch]F[/ch]          [ch]C[/ch]\r\nNo there ain't nothing stronger than fathers and sons[/tab]"
+}

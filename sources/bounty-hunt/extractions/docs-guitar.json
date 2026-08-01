@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Doc\u2019s Guitar",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Gordons",
+   "Doc Watson",
+   "Billy Strings",
+   "Nitty Gritty Dirt Band"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:25:00",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 2
+ },
+ "candidate": null,
+ "content": null
+}

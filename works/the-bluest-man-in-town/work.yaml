@@ -1,0 +1,12 @@
+id: the-bluest-man-in-town
+title: The Bluest Man In Town
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/the-bluest-man-in-town/
+    imported_at: '2026-08-01'

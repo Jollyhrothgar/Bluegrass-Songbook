@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Graveyard",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Molly Tuttle",
+   "The Devil Makes Three",
+   "The New Lost City Ramblers",
+   "Elliott BROOD"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:25:50",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "D"
+ },
+ "candidate": {
+  "id": 2824979,
+  "song_id": 3674492,
+  "song_name": "Graveyard",
+  "artist_id": 46331,
+  "artist_name": "Halsey",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 57,
+  "difficulty": "intermediate",
+  "rating": 4.90671,
+  "date": "1568452077",
+  "status": "approved",
+  "preset_id": 42101,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "D",
+  "version_description": "Fairly tab and chords for Graveyard by Halsey (no capo necessary, but the Bm barre chord may be difficult for beginners).",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 575285
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/1623162/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/0/3055/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1600216879,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n\r\n[tab]e|---------------------------------------------------------------------------|\r\nB|----------3---------------3---------------3---------------2----------------|\r\nG|------4-------4---4---4-------4---2---2-------2---2---2-------2---2--------|  \r\nD|----5---5---5---5---5---5---5---5---4---4---4---4---4---4---4---4----------|  \r\nA|---------------------------------------------------------------------------|\r\nE|---------------------------------------------------------------------------|[/tab]\r\n\r\n[Verse 1]\r\n\r\n[tab]e|---------------------------------------------------------------------------|\r\nB|----------3---------------3---------------3---------------2----------------|\r\nG|------4-------4---4---4-------4---2---2-------2---2---2-------2---2--------|    x4\r\nD|----5---5---5---5---5---5---5---5---4---4---4---4---4---4---4---4----------|  \r\nA|---------------------------------------------------------------------------|\r\nE|---------------------------------------------------------------------------|[/tab]\r\n\r\n[Verse 1]\r\n[tab][ch]G[/ch]\r\nIt's crazy when[/tab]\r\n[tab]   [ch]Bm[/ch]                  [ch]A[/ch]                    [ch]G[/ch]\r\nThe thing you love the most is the detriment[/tab]\r\n[tab]                [ch]Bm[/ch] [ch]D[/ch] [ch]G[/ch]\r\nLet that sink in[/tab]\r\n\r\nYou can think again\r\n[tab]        [ch]Bm[/ch]              [ch]A[/ch]\r\nWhen the hand you wanna hold is a weapon and[/tab]\r\n[tab][ch]G[/ch]                       [ch]Bm[/ch] [ch]D[/ch]\r\nYou're nothin' but skin[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab]           [ch]G[/ch]\r\nOh, 'cause I keep diggin' myself down deeper[/tab]\r\n[tab]  [ch]Bm[/ch]                [ch]D[/ch]\r\nI won't stop 'til I get where you are[/tab]\r\n[tab][ch]G[/ch]                               [ch]Bm[/ch]             [ch]D[/ch]\r\nI keep running, I keep running, I keep running[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]     [ch]G[/ch]     [ch]A[/ch]      [ch]Bm[/ch]           [ch]D[/ch]\r\nThey say I may be making a mistake[/tab]\r\n[tab]         [ch]G[/ch]                [ch]A[/ch]                     [ch]Bm[/ch] [ch]D[/ch]\r\nI woulda followed all the way, no matter how far[/tab]\r\n[tab]   [ch]G[/ch]            [ch]A[/ch]       [ch]Bm[/ch]                  [ch]D[/ch]\r\nI know when you go down all your darkest roads[/tab]\r\n[tab]         [ch]G[/ch]                [ch]A[/ch]                  [ch]Bm[/ch] [ch]D[/ch]\r\nI woulda followed all the way to the graveyard[/tab]\r\n[tab]           [ch]G[/ch]              [ch]A[/ch]\r\nOh, 'cause I keep diggin' myself down deeper[/tab]\r\n[tab]  [ch]Bm[/ch]                [ch]D[/ch]\r\nI won't stop 'til I get where you are[/tab]\r\n[tab][ch]G[/ch]                   [ch]A[/ch]\r\nI keep running when both my feet hurt[/tab]\r\n[tab]  [ch]Bm[/ch]                [ch]D[/ch]\r\nI won't stop 'til I get where you are[/tab]\r\n[tab][ch]G[/ch]            [ch]A[/ch]       [ch]Bm[/ch]               [ch]D[/ch]\r\nOh, when you go down all your darkest roads[/tab]\r\n[tab]         [ch]G[/ch]                [ch]A[/ch]                   [ch]Bm[/ch] [ch]D[/ch]\r\nI woulda followed all the way to the graveyard (No, oh)[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]G[/ch]\r\nYou look at me (Look at me)[/tab]\r\n[tab]     [ch]Bm[/ch]                  [ch]A[/ch]\r\nWith eyes so dark, don't know how you even see[/tab]\r\n[tab][ch]G[/ch]                         [ch]Bm[/ch]                     [ch]D[/ch]\r\nYou push right through me (Push right through me)[/tab]\r\n[tab][ch]G[/ch]\r\nIt's gettin' real[/tab]\r\n[tab]    [ch]Bm[/ch]                    [ch]A[/ch]\r\nYou lock the door, you're drunk at the steering wheel[/tab]\r\n[tab][ch]G[/ch]                  [ch]Bm[/ch] [ch]D[/ch]\r\nAnd I can't conceal[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab]           [ch]G[/ch]\r\nOh, 'cause I've been diggin' myself down deeper[/tab]\r\n[tab]  [ch]Bm[/ch]                [ch]D[/ch]\r\nI won't stop 'til I get where you are[/tab]\r\n[tab][ch]G[/ch]                              [ch]Bm[/ch]             [ch]D[/ch]\r\nI keep running, I keep running, I keep running[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]     [ch]G[/ch]     [ch]A[/ch]      [ch]Bm[/ch]           [ch]D[/ch]\r\nThey say I may be making a mistake[/tab]\r\n[tab]         [ch]G[/ch]                [ch]A[/ch]                     [ch]Bm[/ch] [ch]D[/ch]\r\nI woulda followed all the way, no matter how far[/tab]\r\n[tab]   [ch]G[/ch]            [ch]A[/ch]       [ch]Bm[/ch]                  [ch]D[/ch]\r\nI know when you go down all your darkest roads[/tab]\r\n[tab]         [ch]G[/ch]                [ch]A[/ch]                  [ch]Bm[/ch] [ch]D[/ch]\r\nI woulda followed all the way to the graveyard[/tab]\r\n[tab]           [ch]G[/ch]              [ch]A[/ch]\r\nOh, 'cause I keep diggin' myself down deeper[/tab]\r\n[tab]  [ch]Bm[/ch]                [ch]D[/ch]\r\nI won't stop 'til I get where you are[/tab]\r\n[tab][ch]G[/ch]                   [ch]A[/ch]\r\nI keep running when both my feet hurt[/tab]\r\n[tab]  [ch]Bm[/ch]                [ch]D[/ch]\r\nI won't stop 'til I get where you are[/tab]\r\n[tab][ch]G[/ch]            [ch]A[/ch]       [ch]Bm[/ch]               [ch]D[/ch]\r\nOh, when you go down all your darkest roads[/tab]\r\n[tab]         [ch]G[/ch]                [ch]A[/ch]                   [ch]Bm[/ch] [ch]D[/ch]\r\nI woulda followed all the way to the graveyard[/tab]\r\n\r\n\r\n[Bridge]\r\n[tab][ch]G[/ch]\r\nOh, it's funny how[/tab]\r\n[tab]    [ch]Bm[/ch]                 [ch]D[/ch]\r\nThe warning signs can feel like they're butterflies[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]                          [ch]A[/ch]\r\n Oh, 'cause I keep diggin' myself down deeper[/tab]\r\n[tab]  [ch]Bm[/ch]                [ch]D[/ch]\r\nI won't stop 'til I get where you are[/tab]\r\n[tab][ch]G[/ch]                  [ch]A[/ch]\r\nI keep running when both my feet hurt[/tab]\r\n[tab][ch]Bm[/ch]                  [ch]D[/ch]\r\nI won't stop 'til I get where you are[/tab]\r\n[tab][ch]G[/ch]            [ch]A[/ch]       [ch]Bm[/ch]               [ch]D[/ch]\r\nOh, when you go down all your darkest roads[/tab]\r\n[tab]         [ch]G[/ch]                [ch]A[/ch]                   [ch]Bm[/ch] [ch]D[/ch]\r\nI woulda followed all the way to the graveyard[/tab]"
+}

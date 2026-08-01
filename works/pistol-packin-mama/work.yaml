@@ -1,0 +1,13 @@
+id: pistol-packin-mama
+title: Pistol Packin’ Mama
+artist: Al Dexter
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: pistol-packin-mama.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/al-dexter/pistol-packin-mama-chords-2694702
+    imported_at: '2026-08-01'

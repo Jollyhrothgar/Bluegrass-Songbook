@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Patty on the Turnpike",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "The Country Gentlemen",
+   "The Warrior River Boys",
+   "The Bluegrass Partners",
+   "James Bryan"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:07:10",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

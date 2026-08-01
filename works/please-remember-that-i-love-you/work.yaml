@@ -1,0 +1,12 @@
+id: please-remember-that-i-love-you
+title: Please Remember That I Love You
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/please-remember-that-i-love-you/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: away-on-a-lonely-dark-hill
+title: Away on a Lonely Dark Hill
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/away-on-a-lonely-dark-hill/
+    imported_at: '2026-08-01'

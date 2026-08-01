@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Blackbird",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Rayna Gellert",
+   "J. P. Cormier",
+   "Jourdan Hines",
+   "The Woes"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:15:13",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1464418,
+  "song_id": 52896,
+  "song_name": "Blackbird",
+  "artist_id": 1916,
+  "artist_name": "The Beatles",
+  "type": "Chords",
+  "part": "",
+  "version": 5,
+  "common_version": 1,
+  "votes": 437,
+  "difficulty": "",
+  "rating": 4.82594,
+  "date": "1393372801",
+  "status": "approved",
+  "preset_id": 13303,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2076899
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1521903/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/5/4/5401/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1462887932,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Blackbird\r\n------------\r\nby The Beatles\r\n\r\nChords by bballmer\r\n-------------------\r\n\r\n\r\n[Intro]\r\n\r\n[ch]G[/ch] [ch]Am7[/ch] [ch]G/B[/ch] [ch]G[/ch]\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]G[/ch]         [ch]Am7[/ch]            [ch]G/B[/ch]     [ch]G[/ch]\r\nBlackbird singing in the dead of night[/tab]\r\n[tab][ch]C[/ch]          [ch]A7/C#[/ch]  [ch]D7[/ch]        [ch]B7/D#[/ch]    [ch]Em[/ch]    [ch]Gaug/Eb[/ch]\r\nTake these broken wings and learn to fly[/tab]\r\n[tab][ch]G/D[/ch] [ch]A7/C#[/ch] [ch]C[/ch]   [ch]Cm[/ch]\r\nAll your  life[/tab]\r\n[tab][ch]G/B[/ch]           [ch]A7/C#[/ch]            [ch]Am7/D[/ch]  [ch]D7[/ch]  [ch]G[/ch]\r\nYou were only waiting for this moment to arise[/tab]\r\n\r\n\r\n[Instrumental]\r\n\r\n[ch]G/B[/ch]  [ch]A7/C#[/ch]  [ch]Am7/D[/ch]  [ch]D7[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab][ch]G[/ch]         [ch]Am7[/ch]            [ch]G/B[/ch]     [ch]G[/ch]\r\nBlackbird singing in the dead of night[/tab]\r\n[tab][ch]C[/ch]          [ch]A7/C#[/ch]  [ch]D7[/ch]       [ch]B7/D#[/ch]    [ch]Em[/ch]    [ch]Gaug/Eb[/ch]\r\nTake these sunken eyes and learn to see[/tab]\r\n[tab][ch]G/D[/ch] [ch]A7/C#[/ch] [ch]C[/ch]   [ch]Cm[/ch]\r\nAll your  life[/tab]\r\n[tab][ch]G/B[/ch]           [ch]A7/C#[/ch]            [ch]Am7/D[/ch]  [ch]D7[/ch]    [ch]G[/ch]\r\nYou were only waiting for this moment to be free[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab][ch]Fsus2[/ch]  [ch]C/E[/ch] [ch]Dm[/ch] [ch]C[/ch] [ch]Gm/Bb[/ch]  [ch]C[/ch]\r\nBlack------bird fly, [/tab]\r\n\r\n[tab][ch]Fsus2[/ch]  [ch]C/E[/ch] [ch]Dm[/ch] [ch]C[/ch] [ch]Gm/Bb[/ch]  [ch]A7[/ch]\r\nBlack------bird fly, [/tab]\r\n[tab]         [ch]Dm7[/ch]          [ch]G/D[/ch]        [ch]G[/ch]\r\nInto the light of the dark black night[/tab]\r\n\r\n\r\n[Instumental Break]\r\n\r\n[ch]G[/ch] [ch]Am7[/ch] [ch]G/B[/ch] [ch]G[/ch]\r\n[ch]C[/ch] [ch]A7/C#[/ch]   [ch]D7[/ch]   [ch]B7/D#[/ch] [ch]Em[/ch]  [ch]Gaug/Eb[/ch]\r\n[ch]G/D[/ch] [ch]A7/C#[/ch]   [ch]C[/ch]  [ch]Cm[/ch]\r\n[ch]G/B[/ch]  [ch]A7/C#[/ch]   [ch]Am7/D[/ch] [ch]D7[/ch]  [ch]G[/ch]\r\n[ch]G/B[/ch]  [ch]A7/C#[/ch]   [ch]Am7/D[/ch] [ch]D7[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab][ch]Fsus2[/ch]  [ch]C/E[/ch] [ch]Dm[/ch] [ch]C[/ch] [ch]Gm/Bb[/ch]  [ch]C[/ch]\r\nBlack------bird fly, [/tab]\r\n[tab][ch]Fsus2[/ch]  [ch]C/E[/ch] [ch]Dm[/ch] [ch]C[/ch] [ch]Gm/Bb[/ch]  [ch]A7[/ch]\r\nBlack------bird fly, [/tab]\r\n[tab]         [ch]Dm7[/ch]          [ch]G/D[/ch]        [ch]G[/ch]\r\nInto the light of the dark black night[/tab]\r\n\r\n\r\n[Instrumental]\r\n\r\n[ch]G[/ch]    [ch]Am7[/ch]   [ch]G/B[/ch]   [ch]G[/ch]\r\n[ch]G[/ch]    [ch]Am7[/ch]   [ch]G/B[/ch]   [ch]C[/ch]    [ch]Bm[/ch]   [ch]A7/C#[/ch]   [ch]Am7/D[/ch]\r\n\r\n\r\n[Verse 3]\r\n\r\n[tab][ch]G[/ch]         [ch]Am7[/ch]            [ch]G/B[/ch]     [ch]G[/ch]\r\nBlackbird singing in the dead of night[/tab]\r\n[tab][ch]C[/ch]          [ch]A7/C#[/ch]  [ch]D7[/ch]        [ch]B7/D#[/ch]    [ch]Em[/ch]    [ch]Gaug/Eb[/ch]\r\nTake these broken wings and learn to fly[/tab]\r\n[tab][ch]G/D[/ch] [ch]A7/C#[/ch] [ch]C[/ch]   [ch]Cm[/ch]\r\nAll your  life[/tab]\r\n[tab][ch]G/B[/ch]           [ch]A7/C#[/ch]            [ch]Am7/D[/ch]  [ch]D7[/ch]  [ch]G[/ch]\r\nYou were only waiting for this moment to arise[/tab]\r\n[tab][ch]C[/ch]        [ch]G/B[/ch]  [ch]A7/C#[/ch]            [ch]Am7/D[/ch]  [ch]D7[/ch]  [ch]G[/ch]\r\nYou were only waiting for this moment to arise[/tab]\r\n\r\n[tab][ch]C[/ch]        [ch]G/B[/ch]  [ch]A7/C#[/ch]            [ch]Am7/D[/ch]  [ch]D7[/ch]  [ch]G[/ch]\r\nYou were only waiting for this moment to arise[/tab]"
+}

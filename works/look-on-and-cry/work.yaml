@@ -1,0 +1,12 @@
+id: look-on-and-cry
+title: Look On and Cry
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/look-on-and-cry/
+    imported_at: '2026-08-01'

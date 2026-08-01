@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "Five Speed",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:50:31",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 4
+ },
+ "candidate": null,
+ "content": null
+}

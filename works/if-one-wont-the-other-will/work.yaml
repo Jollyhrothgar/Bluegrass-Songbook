@@ -1,0 +1,12 @@
+id: if-one-wont-the-other-will
+title: If One Won’t The Other Will
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/if-one-wont-the-other-will/
+    imported_at: '2026-08-01'

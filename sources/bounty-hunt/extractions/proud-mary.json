@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Proud Mary",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Billy Strings",
+   "The Wood Brothers",
+   "Hamilton County Bluegrass Band",
+   "Iron Horse"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:29:55",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "D"
+ },
+ "candidate": {
+  "id": 1051382,
+  "song_id": 48692,
+  "song_name": "Proud Mary",
+  "artist_id": 1746,
+  "artist_name": "Creedence Clearwater Revival",
+  "type": "Chords",
+  "part": "",
+  "version": 3,
+  "common_version": 1,
+  "votes": 1781,
+  "difficulty": "intermediate",
+  "rating": 4.80234,
+  "date": "1303862401",
+  "status": "approved",
+  "preset_id": 4343,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "D",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 11043
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/0/105238/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/9/198357/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1719262667,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Proud Mary chords\r\nCreedence Clearwater Revival  1969\r\n\r\nhttps://en.wikipedia.org/wiki/Proud_Mary\r\n\r\n[ch]C[/ch] [ch]A[/ch]  [ch]C[/ch] [ch]A[/ch]  [ch]C[/ch] [ch]A[/ch] [ch]G[/ch] [ch]F[/ch]  [ch]G[/ch] \\ [ch]D[/ch]\r\n\r\n[ch]D[/ch]\r\n\r\n[tab][ch]D[/ch]\r\nLeft a good job in the city[/tab]\r\n\r\nWorkin' for the man ev'ry night and day\r\n\r\nAnd I never lost one minute of sleepin'\r\n\r\nWorryin' 'bout the way things might have been\r\n\r\n[tab][ch]A[/ch]\r\nBig wheel keep on turnin'[/tab]\r\n[tab][ch]Bm[/ch]\r\nProud Mary keep on burnin'[/tab]\r\n[tab][ch]D[/ch]\r\nRollin', rollin', rollin' on the river[/tab]\r\n\r\n[tab][ch]D[/ch]\r\nCleaned a lot of plates in Memphis[/tab]\r\n\r\nPumped a lot of pane down in New Orleans\r\n\r\nBut I never saw the good side of the city\r\n\r\n'Til I hitched a ride on a river boat queen\r\n\r\n[tab][ch]A[/ch]\r\nBig wheel keep on turnin'[/tab]\r\n[tab][ch]Bm[/ch]\r\nProud Mary keep on burnin'[/tab]\r\n[tab][ch]D[/ch]\r\nRollin', rollin', rollin' on the river[/tab]\r\n\r\n[ch]C[/ch] [ch]A[/ch]  [ch]C[/ch] [ch]A[/ch]  [ch]C[/ch] [ch]A[/ch] [ch]G[/ch] [ch]F[/ch]  [ch]G[/ch] \\ [ch]D[/ch]\r\n\r\n[ch]D[/ch]\r\n\r\n[tab][ch]D[/ch]\r\nIf you come down to the river[/tab]\r\n\r\nBet you gonna find some people who live\r\n\r\nYou don't have to worry 'cause you have [if you got] no money\r\n\r\nPeople on the river are happy to give\r\n\r\n[tab][ch]A[/ch]\r\nBig wheel keep on turnin'[/tab]\r\n[tab][ch]Bm[/ch]\r\nProud Mary keep on burnin'[/tab]\r\n[tab][ch]D[/ch]\r\nRollin', rollin', rollin' on the river[/tab]\r\n\r\n[tab][ch]D[/ch]\r\nRollin', rollin', rollin' on the river 3x[/tab]\r\n\r\nSet8"
+}

@@ -1,0 +1,14 @@
+id: day-to-day
+title: Day to Day
+artist: Frank Sullivan
+default_key: Bb
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-day-to-day.txt
+    source_url: https://docs.google.com/document/d/1lKDck1L521r_PKmqknVghOmgXFuLh4KkvaYVE4Fg668/edit?usp=sharing
+    imported_at: '2026-08-01'

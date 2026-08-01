@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Nardis",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The String Cheese Incident",
+   "The Tony Rice Unit",
+   "Tony Rice",
+   "Todd Phillips"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:29:03",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 6
+ },
+ "candidate": null,
+ "content": null
+}

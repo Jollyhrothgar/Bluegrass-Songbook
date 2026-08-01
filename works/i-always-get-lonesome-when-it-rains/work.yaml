@@ -1,0 +1,12 @@
+id: i-always-get-lonesome-when-it-rains
+title: I Always Get Lonesome When It Rains
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/i-always-get-lonesome-when-it-rains/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: youve-got-the-look-of-a-perfect-diamond
+title: You’ve Got The Look Of A Perfect Diamond
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/youve-got-the-look-of-a-perfect-diamond/
+    imported_at: '2026-08-01'

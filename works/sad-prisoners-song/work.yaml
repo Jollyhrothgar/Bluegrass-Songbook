@@ -1,0 +1,12 @@
+id: sad-prisoners-song
+title: Sad Prisoner’s Song
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/sad-prisoners-song/
+    imported_at: '2026-08-01'

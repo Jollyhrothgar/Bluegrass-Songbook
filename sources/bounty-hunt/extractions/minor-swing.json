@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Minor Swing",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Shoji Tabuchi",
+   "Mark O\u2019Connor",
+   "Bryan Sutton",
+   "Chris Thile"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:06:33",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 10.8,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1050870,
+  "song_id": 169716,
+  "song_name": "Minor Swing",
+  "artist_id": 13050,
+  "artist_name": "Django Reinhardt",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 139,
+  "difficulty": "intermediate",
+  "rating": 4.48875,
+  "date": "1303862401",
+  "status": "approved",
+  "preset_id": 13625,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 78331
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/2/125553/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/6/8/681/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1467029645,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "MINOR SWING - DJANGO REINHARDT\r\n\r\n   There are only 3 chords you need to play this tune here they are :\r\n\r\n[tab]          A minor 6                D minor 6                   E7\r\n      e|-------------|          e|-------------|          e------------|\r\n      B|--------5----|          B|------10-----|          B---5--------|\r\n      G|--------5----|          G|------10-----|          G-------7----|\r\n      D|------4------|          D|----9--------|          D-----6------|\r\n      A|-------------|          A|-------------|          A-------7----|\r\n      E|--------5----|          E|------10-----|          E------------|[/tab]\r\n\r\n                           THE CHORD PATTERN\r\n\r\n             [ch]Am6[/ch] / [ch]Dm6[/ch] / [ch]E7[/ch] / [ch]Am6[/ch] / [ch]Dm6[/ch] / [ch]Am6[/ch] / [ch]E7[/ch] / [ch]Am6[/ch] [ch]E7[/ch]\r\n\r\n    This chord pattern is simply repeated, again and again, try using an\r\n   [ch]E7#9[/ch] instead of [ch]E7[/ch] on the turnaround, just to make it more interesting."
+}

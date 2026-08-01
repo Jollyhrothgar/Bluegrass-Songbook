@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "O Death",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 10,
+  "core": true,
+  "artists": [
+   "The Stanley Brothers",
+   "Ralph Stanley",
+   "Gangstagrass",
+   "Mike Seeger"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:00:19",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2549508,
+  "song_id": 2948964,
+  "song_name": "O Death",
+  "artist_id": 39657,
+  "artist_name": "Shakey Graves",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 81,
+  "difficulty": "",
+  "rating": 4.82623,
+  "date": "1545390374",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2382824
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1538415/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/9/1/9174/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1545390374,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Capo 3\r\n\r\n\r\n[Intro]\r\n[ch]Am[/ch] [ch]Am7[/ch] [ch]Am[/ch] [ch]Em[/ch] [ch]D[/ch] [ch]C[/ch] [ch]G[/ch] [ch]Am[/ch]\r\n\r\n[Chorus]\r\n[tab][ch]Am[/ch]  [ch]D[/ch]     [ch]Am[/ch]\r\nOh-oh death[/tab]\r\n[tab][ch]Em[/ch] [ch]D[/ch]  [ch]Am[/ch]\r\nOh-oh death[/tab]\r\n[tab]          [ch]D[/ch]                   [ch]C[/ch]   [ch]D[/ch]  [ch]Am[/ch]\r\nWon't you spare me over till another year?[/tab]\r\n\r\n\r\n[Verse]\r\n[tab]   [ch]Am[/ch]      [ch]Am7[/ch]       [ch]Am[/ch]\r\nOh, what is this that I can see[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nWith ice cold hands taken hold of me[/tab]\r\n[tab]   [ch]Am[/ch]       [ch]Am7[/ch]       [ch]Am[/ch]\r\nWell, I am death none can excel[/tab]\r\n[tab]      [ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nI'll open the door to Heaven or Hell[/tab]\r\n\r\n[tab]       [ch]Am7[/ch]       [ch]Am[/ch]       [ch]Em[/ch]\r\nWhoa death, someone would pray[/tab]\r\n[tab][ch]D[/ch]              [ch]C[/ch]   [ch]G[/ch]   [ch]Am[/ch]\r\nCould you wait to call me another day[/tab]\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]       [ch]Am[/ch]\r\nThe children prayed, the preacher preached[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nTime and mercy is out of your reach[/tab]\r\n\r\n[tab][ch]Am7[/ch]      [ch]Am[/ch]       [ch]Em[/ch]\r\nI'll fix your feet so you can't walk[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nI'll lock your jaw so you can't talk[/tab]\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]       [ch]Am[/ch]\r\nI'll close your eyes so you can't see[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nThis very hour come and go with me[/tab]\r\n\r\n[tab][ch]Am[/ch]       [ch]Am7[/ch]       [ch]Em[/ch]\r\nDeath, I come to take the soul[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nLeave the body and leave it cold[/tab]\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]       [ch]Am[/ch]\r\nTo drop the flesh up off the frame[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nDirt and worm both have a claim[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Am[/ch] [ch]D[/ch]  [ch]Am[/ch]\r\nOh-oh death[/tab]\r\n[tab][ch]Em[/ch] [ch]D[/ch]  [ch]Am[/ch]\r\nOh-oh death[/tab]\r\n[tab]          [ch]D[/ch]                   [ch]C[/ch]   [ch]D[/ch]  [ch]Am[/ch]   [ch]C[/ch]  [ch]D[/ch]  [ch]Am[/ch]  [ch]G[/ch]\r\nCan't you spare me over till another year[/tab]\r\n\r\n\r\n[Verse]\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]       [ch]Am[/ch]\r\nMy mother came to my bed[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nPlaced a cold towel upon my head[/tab]\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]        [ch]Em[/ch]\r\nMy head is warm, my feet are cold[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nDeath is moving upon my soul[/tab]\r\n\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]        [ch]Am[/ch]\r\nOh death, how you treating me[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nYou closed my eyes so I can't see[/tab]\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]       [ch]Em[/ch]\r\nWell you hurting my body, you make cold[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nYou run my life right out of my soul[/tab]\r\n\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]        [ch]Am[/ch]\r\nOh death, please consider my age[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nPlease don't take me at this stage[/tab]\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]       [ch]Em[/ch]\r\nMy wealth is all at your command[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nIf you will move your icy hands[/tab]\r\n\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]       [ch]Am[/ch]\r\nOh the young, the rich, or poor[/tab]\r\n[tab][ch]D[/ch]              [ch]C[/ch]         [ch]G[/ch]   [ch]Am[/ch]\r\nAre all alike to me, you know[/tab]\r\n[tab][ch]Am[/ch]      [ch]Am7[/ch]         [ch]Em[/ch]\r\nNo wealth, no land, no silver or gold[/tab]\r\n[tab][ch]D[/ch]                 [ch]C[/ch]      [ch]G[/ch]  [ch]Am[/ch]\r\nNothing satisfies me but your soul[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Am[/ch]  [ch]D[/ch]     [ch]Am[/ch]\r\nOh-oh death[/tab]\r\n[tab][ch]Em[/ch] [ch]D[/ch]  [ch]Am[/ch]\r\nOh-oh death[/tab]\r\n[tab]          [ch]D[/ch]                   [ch]C[/ch]   [ch]D[/ch]  [ch]Am[/ch]\r\nCan't you spare me over till another year?[/tab]"
+}

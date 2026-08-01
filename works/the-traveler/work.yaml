@@ -1,0 +1,13 @@
+id: the-traveler
+title: The Traveler
+artist: Chatham County Line
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: the-traveler.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/chatham-county-line/the-traveler-chords-5371161
+    imported_at: '2026-08-01'

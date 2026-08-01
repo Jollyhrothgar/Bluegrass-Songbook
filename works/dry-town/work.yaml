@@ -1,0 +1,14 @@
+id: dry-town
+title: Dry Town
+artist: Gillian Welch
+default_key: E
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-dry-town.txt
+    source_url: https://docs.google.com/document/d/1-URcJ_UAwBy5ZqF19LDvkKDitr6GQaWmgTENHWGB4Us/edit?usp=sharing
+    imported_at: '2026-08-01'

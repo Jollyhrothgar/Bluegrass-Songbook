@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Bootleg John",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Jason Davis",
+   "Don Rigsby",
+   "Ralph Stanley",
+   "The Stanley Brothers"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:15:24",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 2
+ },
+ "candidate": null,
+ "content": null
+}

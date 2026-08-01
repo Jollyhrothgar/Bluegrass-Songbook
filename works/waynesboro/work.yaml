@@ -1,0 +1,19 @@
+id: waynesboro
+title: Waynesboro
+artist: null
+composers: []
+default_key: G
+tags:
+- Instrumental
+parts:
+- type: tablature
+  instrument: ensemble
+  format: otf
+  file: ensemble.otf.json
+  default: true
+  provenance:
+    source: mandozine
+    source_url: https://mandozine.com/music/zip_files/allfiles.zip
+    author: Trad
+    imported_at: '2026-08-01'
+    source_file: Waynesboro-G-Trad.tef

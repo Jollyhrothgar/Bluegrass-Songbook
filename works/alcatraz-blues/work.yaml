@@ -1,0 +1,12 @@
+id: alcatraz-blues
+title: Alcatraz Blues
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/alcatraz-blues/
+    imported_at: '2026-08-01'

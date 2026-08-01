@@ -1,0 +1,130 @@
+# title: Stealin
+# artist: Uriah Heep
+# source_url: https://tabs.ultimate-guitar.com/tab/uriah-heep/stealin-chords-1771769
+# fetched_at: 2026-08-01T11:32:06
+
+Stealin' - Uriah Heep (Ken Hensley, 1973)
+4/4 time @ 112 and 120 BPM (4 Min. 50 Sec.)
+
+Note: 
+There's no guitar until second refrain, but I included
+the chords until then so you can play the rhythm on solo guitar.
+Thanks also to 'Maguri' for his input on this one.
+
+[Chords]
+              Guitar             Keyboard
+        E  A  D  G  B  e     Bass|  Chord
+       ------------------    --------------
+Dm      x  x  0  2  3  1      D    A-D-F
+D       x  x  0  2  3  2      D    A-D-F#
+C/D     x  x  0  0  1  0      D    G-C-E    -OR-
+        x  x  0  5  5  3
+G/D     x  x  0  0  0  3      D    G-B-D    -OR-
+        x  x  0  4  3  3
+G       3  2  0  0  0  3      G    G-B-D    -OR-
+        3  2  0  0  3  3
+F       1  3  3  2  1  1      F    A-C-F
+FM7     x  x  3  2  1  0      F    A-C-E-F  -OR-
+        1  3  2  2  1  1
+Bb/D    x  x  0  3  3  1      D    Bb-D-F
+Ab/D    x  x  0  5  4  4      D    Ab-C-Eb
+
+[Intro]
+
+ 1 2 3 4  1 2 3 4  1  +2+3 4  1  +2+3 4  1 2 3 4  1 2 3 4 
+|BASS    |BASS    |Dm D      |Dm D      |C/D G/D |D       |
+|Dm D    |Dm D    |C/D G/D   |D         |D       |
+
+[Verse 1]
+|D                 |D              |C/D       G/D          |D       |
+ Take me across the water  'cause I need some place to hide        I
+|D                         |D           |C/D      G/D           |D           |
+ done the rancher's  daugh-  ter,  and I sure did hurt his pride,  Heh-heh 
+
+[Refrain]
+|Dm  D        |Dm  D       |C/D    G/D    |D        |
+ Ooh-oo,       ooh-oo       Ah,    ah,     ah    
+|Dm  D        |Dm  D       |C/D    G/D    |D        |
+ Ooh-oo,       ooh-oo       Ah,    ah,     ah     Well, there's a
+
+[Verse 2]
+|D                |D             |C/D       G/D          |D            |
+ hundred miles of  desert lies be-tween his hide and mine      I don't 
+|D               |D                       |C/D     G/D        |D       |
+ need no food, no water, Lord, 'cause I'm  runnin' out of time 
+|G                   |F                   |FM7               |FM7     |
+ Fightin',  killin',  wine and women gonna put me to my grave 
+|G                 |F               |FM7                 |FM7           |
+ Runnin',  hidin',  losin',  cryin'  nothin' left to save    but my life 
+
+[Refrain]
+|Dm  D      |Dm  D       |C/D    G/D    |D        |
+ Ooh-oo,     ooh-oo       Ah,    ah,     ah    
+|Dm  D      |Dm  D       |C/D    G/D    |D        |
+ Ooh-oo,     ooh-oo       Ah,    ah,     ah      I
+
+[Chorus]
+|D                   |D               |C/D              G/D       |D       |
+ Stood on a ridge and shunned religion thinkin' the world was mine        I
+|D                  |D            |C/D             G/D                 |
+ made my break and a big mistake   Stealin' when I should have been buy-
+|D               |G                  |F                             |
+ in'    All that  fightin', killin',  wine  and those women  gonna 
+|FM7                     |FM7     |G                 |F               |
+ put me to an early grave          Runnin',  hidin',  losin',  cryin' 
+|FM7                 |FM7            |D           |D           |
+ nothin' left to save    but my life,        life,        life, 
+|F       G        |Bb/D        C/D         |
+    life,    life, life, life, life, life 
+
+[Solo]
+|D     |D     |C/D G/D |D     |D     |D     |C/D G/D |D     |
+|D     |D     |C/D G/D |D     |D     |D     |C/D G/D |D     |
+                                                          So I
+
+[Chorus]
+|D                   |D                      |C/D      G/D           |D      |
+ stood on a ridge and shunned religion think-  in' the world was mine       I
+|D                  |D            |C/D             G/D                  |
+ made my break and a big mistake   Stealin' when I should have been  buy-
+|D           |C/D             G/D                  |D           |
+ in'    I was stealing when I should have been  buy-in'    I was
+|C/D             G/D                  |D      |
+ stealing when I should have been  buy-in' 
+
+[Outro]
+|D                |C/D               G/D     |
+ Stealin'   when I should have been  buyin' 
+|D                |C/D               G/D     |
+ Stealin'   when I should have been  buyin' 
+|D                |C/D               G/D     |
+ Stealin'   when I should have been  buyin' 
+|D                |C/D               G/D     |
+ Stealin'   when I should have been  buyin' 
+|D             |C/D G/D |D                      |C/D    G/D    |
+ Stealin'   Woo          Stealin'     Ah-ha-ha,  yeah    I was 
+|D                |C/D               G/D      |
+ Stealin'   when I should have been  buyin'   
+|D             |C/D                     G/D   |
+ Stealin'   Ah, yeah, yeah, yeah, yeah, yeah 
+|D              |C/D G/D |D                          |C/D G/D       |
+ Stealin'   Ooh            Stealin'     Rock and roll       Alright 
+|D                       |C/D G/D       |
+  Stealin'  Rock and roll       Alright 
+|D               |C/D    G/D |
+  Stealin'  Babe,    babe 
+|D                    |C/D               G/D    |
+ Should,    should,    should have been  buyin' 
+ Stealin'    
+|D                    |C/D               G/D    |
+ Should,    should,    should have been  buyin' 
+ Stealin'    
+|D                      |C/D           G/D      |
+ Shoulda,   shoulda,     shoulda been  buyin' 
+ Stealin'    
+|D               |C/D G/D     |D        |C/D     |Bb/D    |Ab/D    |
+ Wee                   Buyin', yeah 
+ Stealin'    
+
+[Coda]
+|D    |D    |D    |D    |D    |

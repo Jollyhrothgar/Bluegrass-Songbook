@@ -1,0 +1,24 @@
+# title: The Star‐Spangled Banner
+# artist: Misc Traditional
+# source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/the-star-spangled-banner-chords-1834872
+# fetched_at: 2026-08-01T11:03:26
+
+  G       D   Em   B7     Em        A7 D
+O say can you see, by the dawn's early light,
+D7      G          D7            G
+What so proudly we hailed at the twilight's last gleaming,
+
+            G           D      Em    B7          Em  A7   D
+Whose broad stripes and bright stars through the perilous fight,
+D7       G           D7               G
+O'er the ramparts we watched, were so gallantly streaming?
+
+        G                             D           D7
+And the rockets' red glare, the bombs bursting in air,
+     G                 D              Em       A7    D
+Gave proof through the night that our flag was still there;
+
+D7 G             C        E7   Am C   Am  G5 D
+O  say does that star-spangled banner yet wa-ve
+D7       Em             G     Em  D    G    D      G
+O'er the land of the freeeeee and the home of the brave?

@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Cacklin' Hen",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 17,
+  "core": true,
+  "artists": [
+   "The Stanley Brothers",
+   "Hog-Eyed Man",
+   "J.E. Mainer",
+   "Ed Haley"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T10:55:13",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

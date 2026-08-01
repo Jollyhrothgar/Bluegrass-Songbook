@@ -1,0 +1,14 @@
+id: proud-mary
+title: Proud Mary
+artist: Creedence Clearwater Revival
+default_key: D
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-proud-mary.txt
+    source_url: https://docs.google.com/document/d/1nvHOOHaW5NqcUgjVv3n5E4uLEZXI_3Sj/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

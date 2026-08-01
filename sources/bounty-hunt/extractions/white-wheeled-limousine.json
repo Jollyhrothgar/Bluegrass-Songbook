@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "White Wheeled Limousine",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Bruce Hornsby",
+   "B\u00e9la Fleck",
+   "The Travelin\u2019 McCourys",
+   "Ricky Skaggs"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:34:28",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

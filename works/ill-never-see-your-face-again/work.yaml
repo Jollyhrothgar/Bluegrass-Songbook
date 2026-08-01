@@ -1,0 +1,12 @@
+id: ill-never-see-your-face-again
+title: I’ll Never See Your Face Again
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/ill-never-see-your-face-again/
+    imported_at: '2026-08-01'

@@ -1,0 +1,13 @@
+id: margarets-waltz
+title: Margaret's Waltz
+artist: Connie Kaldor
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: margaret-s-waltz.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/connie-kaldor/margarets-waltz-chords-4113322
+    imported_at: '2026-08-01'

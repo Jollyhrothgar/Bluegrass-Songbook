@@ -1,0 +1,14 @@
+id: i-shall-be-released
+title: I Shall Be Released
+artist: Bob Dylan
+default_key: A
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-i-shall-be-released.txt
+    source_url: https://docs.google.com/document/d/1711MNIJymr24NJFfBpqm0iZGwrDSIUzkrNg0s15q7Lg/edit?usp=sharing
+    imported_at: '2026-08-01'

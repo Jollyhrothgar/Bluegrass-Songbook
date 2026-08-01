@@ -1,0 +1,12 @@
+id: thinking-of-home
+title: Thinking of Home
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/thinking-of-home/
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: 900-miles
+title: 900 Miles
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: 900-miles.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/900-miles-chords-3326867
+    imported_at: '2026-08-01'

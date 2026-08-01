@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Oh Lovin' Babe",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Uncle Dave Macon",
+   "Rayna Gellert",
+   "Dudley Connell",
+   "Don Rigsby"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:29:19",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

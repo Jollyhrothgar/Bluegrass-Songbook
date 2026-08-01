@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Father's Table Grace",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Lester Flatt",
+   "Ken Seaman",
+   "The Bressler Brothers",
+   "Lester Flatt & Earl Scruggs"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:05:27",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

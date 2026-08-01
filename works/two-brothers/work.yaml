@@ -1,0 +1,13 @@
+id: two-brothers
+title: Two Brothers
+artist: Chris Stapleton
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: two-brothers.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/chris-stapleton/two-brothers-chords-1935703
+    imported_at: '2026-08-01'

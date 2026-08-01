@@ -86,5 +86,18 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11596
     author: schlange
     imported_at: '2026-07-27'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '319'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=319
+    author: TheOtherCW
+    difficulty: Intermediate
+    tuning: EADGBE (Standard)
+    imported_at: '2026-08-01'
+  default: false
 composers:
 - Traditional

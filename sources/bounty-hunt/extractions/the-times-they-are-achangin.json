@@ -1,0 +1,103 @@
+{
+ "wanted": {
+  "title": "The Times They Are A\u2010Changin\u2019",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Lester Flatt & Earl Scruggs",
+   "Steve Earle",
+   "The Del McCoury Band",
+   "Nitty Gritty Dirt Band"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:33:25",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 107.8,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 3562913,
+  "song_id": 6282188,
+  "song_name": "The Times They Are A-Changin",
+  "artist_id": 6400,
+  "artist_name": "Nitty Gritty Dirt Band",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 9,
+  "difficulty": "novice",
+  "rating": 4.78368,
+  "date": "1613204608",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [
+    {
+     "join_field": " feat. ",
+     "artist": {
+      "id": 10002,
+      "name": "Rosanne Cash"
+     }
+    },
+    {
+     "join_field": ", ",
+     "artist": {
+      "id": 10222,
+      "name": "Steve Earle"
+     }
+    },
+    {
+     "join_field": ", ",
+     "artist": {
+      "id": 24537,
+      "name": "Jason Isbell"
+     }
+    },
+    {
+     "join_field": " & ",
+     "artist": {
+      "id": 579512,
+      "name": "The War And Treaty"
+     }
+    }
+   ],
+   "video_urls": null,
+   "album_id": 2120873
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/8/7/8763/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1738504858,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]G[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Verse 1]\r\n[tab]     [ch]G[/ch]             [ch]Em[/ch]         [ch]C[/ch]        [ch]G[/ch]\r\nCome gather 'round people wherever you roam[/tab]\r\n[tab]      [ch]G[/ch]            [ch]Am[/ch]      [ch]D[/ch]              [ch]D[/ch]\r\nAnd admit that the waters around you have grown[/tab]\r\n[tab]      [ch]G[/ch]            [ch]Em[/ch]             [ch]C[/ch]               [ch]G[/ch]\r\nAnd accept it that soon you'll be drenched to the bone[/tab]\r\n[tab]        [ch]G[/ch]       [ch]Am[/ch]           [ch]D[/ch]      [ch]D[/ch]\r\nIf your time to you is worth savin'[/tab]\r\n[tab]         [ch]D[/ch]            [ch]D7[/ch]                 [ch]D6[/ch]          [ch]D[/ch]\r\nThen you better start swimmin' or you'll sink like a stone,[/tab]\r\n[tab]        [ch]G[/ch]                  [ch]D[/ch]   [ch]G[/ch]\r\nFor the times, they are a-changin'[/tab]\r\n[ch]G[/ch]\r\n\r\n[Verse 2] (Jason Isbell)\r\n[tab]     [ch]G[/ch]           [ch]Em[/ch]          [ch]C[/ch]                    [ch]G[/ch]\r\nCome writers and critics who prophesize with your pen[/tab]\r\n[tab]    [ch]G[/ch]              [ch]Am[/ch]              [ch]D[/ch]           [ch]D[/ch]\r\nAnd keep your eyes wide the chance won't come again[/tab]\r\n[tab]    [ch]G[/ch]               [ch]Em[/ch]           [ch]C[/ch]                [ch]G[/ch]\r\nAnd don't speak too soon for the wheel's still in spin[/tab]\r\n[tab]            [ch]G[/ch]          [ch]Am[/ch]            [ch]D[/ch]       [ch]D[/ch]\r\nAnd there's no tellin' who that it's namin'[/tab]\r\n[tab]         [ch]D[/ch]       [ch]D7[/ch]       [ch]D6[/ch]       [ch]D[/ch]\r\nFor the loser now will be later to win[/tab]\r\n[tab]        [ch]G[/ch]                [ch]D[/ch]     [ch]G[/ch]\r\nFor the times they are a-changin'[/tab]\r\n[ch]G[/ch]\r\n\r\n[Verse 3] (Rosanne Cash)\r\n[tab]     [ch]G[/ch]         [ch]Em[/ch]          [ch]C[/ch]               [ch]G[/ch]\r\nCome senators, congressmen please heed the call[/tab]\r\n[tab]      [ch]G[/ch]            [ch]Am[/ch]             [ch]D[/ch]            [ch]D[/ch]\r\nDon't stand in the doorway, don't block up the hall[/tab]\r\n[tab]    [ch]G[/ch]            [ch]Em[/ch]           [ch]C[/ch]          [ch]G[/ch]\r\nFor he that gets hurt will be he who has stalled[/tab]\r\n[tab]          [ch]G[/ch]         [ch]Am[/ch]            [ch]D[/ch]      [ch]D[/ch]\r\nThere's a battle outside and it's ragin'[/tab]\r\n[tab]         [ch]D[/ch]             [ch]D7[/ch]         [ch]D6[/ch]          [ch]D[/ch]\r\nIt'll soon shake your windows and rattle your walls[/tab]\r\n[tab]        [ch]G[/ch]                 [ch]D[/ch]   [ch]G[/ch]\r\nFor the times they are a-changin'[/tab]\r\n[ch]G[/ch]\r\n\r\n[Verse 4] (The War and Treaty)\r\n[tab]     [ch]G[/ch]           [ch]Em[/ch]      [ch]C[/ch]              [ch]G[/ch]\r\nCome mothers and fathers throughout the land[/tab]\r\n[tab]    [ch]G[/ch]          [ch]Am[/ch]            [ch]D[/ch]            [ch]D[/ch]\r\nAnd don't criticize what you can't understand[/tab]\r\n[tab]     [ch]G[/ch]             [ch]Em[/ch]              [ch]C[/ch]            [ch]G[/ch]\r\nYour sons and your daughters are beyond your command[/tab]\r\n[tab]     [ch]G[/ch]           [ch]Am[/ch]      [ch]D[/ch]       [ch]D[/ch]\r\nYour old road is rapidly ageing[/tab]\r\n[tab]         [ch]D[/ch]             [ch]D7[/ch]            [ch]D6[/ch]           [ch]D[/ch]\r\nPlease get out of the new one if you can't lend a hand[/tab]\r\n[tab]        [ch]G[/ch]                 [ch]D[/ch]   [ch]G[/ch]\r\nFor the times they are a-changin'[/tab]\r\n\r\n[Verse 5]\r\n[tab]    [ch]G[/ch]          [ch]Em[/ch]        [ch]C[/ch]           [ch]G[/ch]\r\nThe line it is drawn the curse it is cast[/tab]\r\n[tab]    [ch]G[/ch]        [ch]Am[/ch]       [ch]D[/ch]        [ch]D[/ch]\r\nThe slow one now will later be fast[/tab]\r\n[tab]       [ch]G[/ch]       [ch]Em[/ch]       [ch]C[/ch]        [ch]G[/ch]\r\nAs the present now will later be past[/tab]\r\n[tab]    [ch]G[/ch]        [ch]Am[/ch]      [ch]D[/ch]\r\nThe order is rapidly fadin'[/tab]\r\n[tab]         [ch]D[/ch]         [ch]D7[/ch]      [ch]D6[/ch]       [ch]D[/ch]\r\nAnd the first one now will later be last[/tab]\r\n[tab]        [ch]G[/ch]                 [ch]D[/ch]   [ch]G[/ch]\r\nFor the times they are a-changin'[/tab]\r\n\r\n[Verse 6]\r\n[tab]     [ch]G[/ch]             [ch]Em[/ch]         [ch]C[/ch]        [ch]G[/ch]\r\nCome gather 'round people wherever you roam[/tab]\r\n[tab]      [ch]G[/ch]            [ch]Am[/ch]      [ch]D[/ch]              [ch]D[/ch]\r\nAnd admit that the waters around you have grown[/tab]\r\n[tab]      [ch]G[/ch]            [ch]Em[/ch]             [ch]C[/ch]               [ch]G[/ch]\r\nAnd accept it that soon you'll be drenched to the bone[/tab]\r\n[tab]        [ch]G[/ch]       [ch]Am[/ch]           [ch]D[/ch]      [ch]D[/ch]\r\nIf your time to you is worth savin'[/tab]\r\n[tab]         [ch]D[/ch]            [ch]D7[/ch]                 [ch]D6[/ch]          [ch]D[/ch]\r\nThen you better start swimmin' or you'll sink like a stone,[/tab]\r\n[tab]        [ch]G[/ch]                  [ch]D[/ch]   [ch]G[/ch]\r\nFor the times, they are a-changin'[/tab]\r\n\r\n[Outro]\r\n[ch]G[/ch]    [ch]Em[/ch]  [ch]C[/ch] [ch]G[/ch]\r\n[tab]        [ch]G[/ch]                  [ch]D[/ch]   [ch]G[/ch]\r\nFor the times, they are a-changin'[/tab]\r\n[ch]G[/ch]    [ch]Em[/ch]  [ch]C[/ch] [ch]G[/ch]\r\n[tab]        [ch]G[/ch]                  [ch]D[/ch]   [ch]G[/ch]\r\nFor the times, they are a-changin'[/tab]"
+}

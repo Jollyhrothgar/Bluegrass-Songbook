@@ -1,0 +1,76 @@
+{
+ "wanted": {
+  "title": "Streets of London",
+  "type": "Vocal",
+  "key": "C",
+  "difficulty": "Intermediate",
+  "coverage": 3,
+  "core": false,
+  "artists": [
+   "Northern Lights",
+   "Punch Brothers",
+   "Tony Rice"
+  ],
+  "notes": "songwriter cover",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:35:34",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "C"
+ },
+ "candidate": {
+  "id": 2983250,
+  "song_id": 3793028,
+  "song_name": "Streets Of London",
+  "artist_id": 11786,
+  "artist_name": "Tony Rice",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 88,
+  "difficulty": "",
+  "rating": 4.87261,
+  "date": "1581322856",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "C",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1082999
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/1/215862/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/9/49641/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1581322856,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "NOTE: The walkdown to D7 can either be played\r\nwith the actual chords (C-Em-A-G-D7) or the\r\nnotes (C-B-A-G-Gb). Tony Rice leans more towards\r\nthe notes in the actual record.\r\n\r\nCapo: 3rd Fret\r\n\r\n\r\n[Intro]\r\n\r\n[ch]C[/ch]  [ch]G[/ch]  [ch]Am[/ch]  [ch]Em[/ch]  [ch]F[/ch]  [ch]C[/ch]  [ch]G[/ch]  [ch]C[/ch]\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]C[/ch]                 [ch]G[/ch]               [ch]Am[/ch]          [ch]Em[/ch]\r\nHave you seen the old man, in the closed-down market[/tab]\r\n[tab][ch]F[/ch]              [ch]C[/ch]                [ch]F[/ch]        [ch]G[/ch]\r\nKicking up the papers, with his worn-out shoes?[/tab]\r\n[tab][ch]C[/ch]               [ch]G[/ch]                 [ch]Am[/ch]            [ch]Em[/ch]\r\nIn his eyes you see no pride, and there loosely at his side[/tab]\r\n[tab][ch]F[/ch]           [ch]C[/ch]              [ch]G[/ch]           [ch]C[/ch]\r\nYesterday's paper, telling yesterday's news[/tab]\r\n\r\n\r\n[Chorus 1]\r\n\r\n[tab]   [ch]F[/ch]           [ch]C[/ch]\r\nSo how can you tell me, that you're mourning[/tab]\r\n[tab][ch]D7[/ch]                                     [ch]G[/ch]\r\nAnd you say for you that the sun don't shine?[/tab]\r\n[tab][ch]C[/ch]               [ch]G[/ch]\r\nLet me take you by the hand[/tab]\r\n[tab]    [ch]Am[/ch]                   [ch]Em[/ch]\r\nAnd lead you through the streets of London[/tab]\r\n[tab][ch]F[/ch]             [ch]C[/ch]             [ch]G[/ch]                    [ch]C[/ch]\r\nI'll show you something, to make you change your mind[/tab]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab][ch]C[/ch]                 [ch]G[/ch]            [ch]Am[/ch]                   [ch]Em[/ch]\r\nHave you seen the old gal, who walks the streets of London[/tab]\r\n[tab][ch]F[/ch]           [ch]C[/ch]             [ch]F[/ch]          [ch]G[/ch]\r\nDirt in her hair, and her clothes in rags?[/tab]\r\n[tab][ch]C[/ch]                 [ch]G[/ch]            [ch]Am[/ch]                  [ch]Em[/ch]\r\nShe's no time for talking, she just keeps right on walking[/tab]\r\n[tab][ch]F[/ch]            [ch]C[/ch]            [ch]G[/ch]       [ch]C[/ch]\r\nCarrying her home, in two carrier bags[/tab]\r\n\r\n\r\n[Chorus 2]\r\n\r\n[tab]   [ch]F[/ch]           [ch]C[/ch]\r\nSo how can you tell me, that you're mourning[/tab]\r\n[tab][ch]D7[/ch]                                     [ch]G[/ch]\r\nAnd you say for you that the sun don't shine?[/tab]\r\n[tab][ch]C[/ch]               [ch]G[/ch]\r\nLet me take you by the hand[/tab]\r\n[tab]    [ch]Am[/ch]                   [ch]Em[/ch]\r\nAnd lead you through the streets of London[/tab]\r\n[tab][ch]F[/ch]             [ch]C[/ch]             [ch]G[/ch]                    [ch]C[/ch]\r\nI'll show you something, to make you change your mind[/tab]\r\n\r\n\r\n[Interlude]\r\n\r\n[ch]C[/ch]  [ch]G[/ch]  [ch]Am[/ch]  [ch]Em[/ch]  [ch]F[/ch]  [ch]C[/ch]  [ch]G[/ch]  [ch]C[/ch]\r\n\r\n\r\n[Verse 3]\r\n\r\n[tab]    [ch]C[/ch]                [ch]G[/ch]          [ch]Am[/ch]            [ch]Em[/ch]\r\nAnd in the all-night cafe, at a quarter past eleven[/tab]\r\n[tab][ch]F[/ch]        [ch]C[/ch]           [ch]F[/ch]             [ch]G[/ch]\r\nSame old man sitting there, on his own[/tab]\r\n[tab][ch]C[/ch]              [ch]G[/ch]               [ch]Am[/ch]         [ch]Em[/ch]\r\nLooking at the world, over the rim of his tea-cup[/tab]\r\n[tab]    [ch]F[/ch]                 [ch]C[/ch]            [ch]G[/ch]             [ch]C[/ch]\r\nAnd each tea lasts an hour, and he wanders home alone[/tab]\r\n\r\n\r\n[Chorus 3]\r\n\r\n[tab]   [ch]F[/ch]           [ch]C[/ch]\r\nSo how can you tell me, that you're mourning[/tab]\r\n[tab][ch]D7[/ch]                                     [ch]G[/ch]\r\nAnd you say for you that the sun don't shine?[/tab]\r\n[tab][ch]C[/ch]               [ch]G[/ch]\r\nLet me take you by the hand[/tab]\r\n[tab]    [ch]Am[/ch]                   [ch]Em[/ch]\r\nAnd lead you through the streets of London[/tab]\r\n[tab][ch]F[/ch]             [ch]C[/ch]             [ch]G[/ch]                    [ch]C[/ch]\r\nI'll show you something, to make you change your mind[/tab]\r\n\r\n\r\n[Verse 4]\r\n\r\n[tab]    [ch]C[/ch]                 [ch]G[/ch]          [ch]Am[/ch]                [ch]Em[/ch]\r\nAnd have you seen the old man outside the seamens' mission[/tab]\r\n[tab][ch]F[/ch]             [ch]C[/ch]              [ch]F[/ch]               [ch]G[/ch]\r\nMemory fading with the medal-ribbon that he wears[/tab]\r\n[tab]    [ch]C[/ch]             [ch]G[/ch]              [ch]Am[/ch]             [ch]Em[/ch]\r\nAnd in the winter city, the rain cries a little pity[/tab]\r\n[tab]    [ch]F[/ch]                  [ch]C[/ch]          [ch]G[/ch]                  [ch]C[/ch]\r\nFor one more forgotten hero, in a world that doesn't care[/tab]\r\n\r\n\r\n[Chorus 4]\r\n\r\n[tab]   [ch]F[/ch]           [ch]C[/ch]\r\nSo how can you tell me, that you're mourning[/tab]\r\n[tab][ch]D7[/ch]                                     [ch]G[/ch]\r\nAnd you say for you that the sun don't shine?[/tab]\r\n[tab][ch]C[/ch]               [ch]G[/ch]\r\nLet me take you by the hand[/tab]\r\n[tab]    [ch]Am[/ch]                   [ch]Em[/ch]\r\nAnd lead you through the streets of London[/tab]\r\n[tab][ch]F[/ch]             [ch]C[/ch]             [ch]G[/ch]                    [ch]C[/ch]\r\nI'll show you something, to make you change your mind[/tab]"
+}

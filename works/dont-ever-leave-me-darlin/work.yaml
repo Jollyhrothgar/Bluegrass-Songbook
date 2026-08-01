@@ -1,0 +1,12 @@
+id: dont-ever-leave-me-darlin
+title: Don’t Ever Leave Me Darlin’
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/dont-ever-leave-me-darlin/
+    imported_at: '2026-08-01'

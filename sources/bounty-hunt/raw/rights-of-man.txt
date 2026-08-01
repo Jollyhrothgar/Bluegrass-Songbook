@@ -1,0 +1,16 @@
+# title: Rights of Man
+# artist: Misc Traditional
+# source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/rights-of-man-chords-4657778
+# fetched_at: 2026-08-01T12:10:43
+
+||:   | Em  Bm  | Em      |         | Am  Bm  |
+||: 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
+
+| Em  Bm  | Em      |     B7  | Em    :||
+| 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 :||
+
+||:   | Em      |         | D       |     Bm  |
+||: 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
+
+| Em  D   | Em      |     Bm  | Em    :||
+| 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 :||

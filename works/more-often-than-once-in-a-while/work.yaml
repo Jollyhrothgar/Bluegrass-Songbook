@@ -1,0 +1,12 @@
+id: more-often-than-once-in-a-while
+title: More Often Than Once In A While
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/more-often-than-once-in-a-while/
+    imported_at: '2026-08-01'

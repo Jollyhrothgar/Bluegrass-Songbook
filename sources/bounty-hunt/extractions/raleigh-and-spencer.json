@@ -1,0 +1,71 @@
+{
+ "wanted": {
+  "title": "Raleigh and Spencer",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 13,
+  "core": true,
+  "artists": [
+   "Pert Near Sandstone",
+   "Yonder Mountain String Band",
+   "Wildcats",
+   "Honey Buckets"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T10:55:34",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 7.7,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "D"
+ },
+ "candidate": {
+  "id": 4124692,
+  "song_id": 11733664,
+  "song_name": "Raleigh And Spencer",
+  "artist_id": 1555627,
+  "artist_name": "Brad Leftwich & the Humdingers",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 9,
+  "difficulty": "",
+  "rating": 4.70035,
+  "date": "1648220219",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "D",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1648220219,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Raleigh & Spencer\r\nWritten By: Traditional\r\nAppears on: Rise And Bloom Again\r\nStrum Pattern: Boom Chuck pattern with the root note on the down beat and the rest of the strings on the &.\r\n1 measure for every letter in the song\r\n\r\n[Intro]\r\n[ch]D[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]D[/ch] [ch]C[/ch]\r\n\r\n[Verse 1]\r\n[tab][ch]D[/ch]                       [ch]C[/ch]\r\nRaleigh and Spencer has done gone dry[/tab]\r\n[tab]            [ch]G[/ch]                            [ch]D[/ch]\r\nLord, there ain't no more liquor in this town[/tab]\r\n[tab]          [ch]C[/ch]                            [ch]D[/ch]\r\nNo, there ain't no more liquor in this town[/tab]\r\n\r\n[ch]D[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]D[/ch] [ch]C[/ch]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]D[/ch]                    [ch]C[/ch]\r\nWhat you gonna do to wet your lips[/tab]\r\n[tab]          [ch]G[/ch]                       [ch]D[/ch]\r\nWhen this whole dang world's goes dry?[/tab]\r\n[tab]          [ch]C[/ch]                       [ch]D[/ch]\r\nWhen this whole dang world's goes dry?[/tab]\r\n\r\n[ch]D[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]D[/ch] [ch]C[/ch]\r\n\r\n\r\n[Verse 3]\r\n[tab]      [ch]D[/ch]                              [ch]C[/ch]\r\nI can eat more fat meat than you can cook in a week[/tab]\r\n[tab]           [ch]G[/ch]                          [ch]D[/ch]\r\nLord, I\u2019ll tell more of them dog gone lies[/tab]\r\n[tab]          [ch]C[/ch]                          [ch]D[/ch]\r\nYes, I\u2019ll tell more of them dog gone lies[/tab]\r\n\r\n[ch]D[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]D[/ch] [ch]C[/ch]\r\n\r\n\r\n[Verse 4]\r\n[tab]   [ch]D[/ch]                          [ch]C[/ch]\r\nOh Raleigh & Spencer, they\u2019re burning down[/tab]\r\n[tab]            [ch]G[/ch]                            [ch]D[/ch]\r\nLord, there ain\u2019t no more liquor in this town[/tab]\r\n[tab]          [ch]C[/ch]                            [ch]D[/ch]\r\nNo, there ain\u2019t no more liquor in this town[/tab]\r\n\r\n[ch]D[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]D[/ch] [ch]C[/ch]\r\n\r\n\r\n[Verse 5]\r\n[tab]     [ch]D[/ch]                       [ch]C[/ch]\r\nI'll pawn you my shoes for a bottle of booze[/tab]\r\n[tab]           [ch]G[/ch]                         [ch]D[/ch]\r\nLord, I\u2019ll drink it and lay down and die[/tab]\r\n[tab]          [ch]C[/ch]                         [ch]D[/ch]\r\nYes, I\u2019ll drink it and lay down and die[/tab]\r\n\r\n[ch]D[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]D[/ch] [ch]C[/ch]\r\n\r\n\r\n[Verse 6]\r\n[tab]        [ch]D[/ch]                      [ch]C[/ch]\r\nYou can tromp down the flowers all around my grave[/tab]\r\n[tab]            [ch]G[/ch]               [ch]D[/ch]\r\nBut they'll rise and bloom again[/tab]\r\n[tab]             [ch]C[/ch]               [ch]D[/ch]\r\nYes, they'll rise and bloom again[/tab]\r\n\r\n\r\nOTHER VERSES NOT IN THIS VERSION:\r\nI've been all around this whole wide world\r\nI've been down to Memphis, Tennessee\r\nI've been down to Memphis, Tennessee\r\n\r\nI've played cards with the king and the queen\r\nShot them dice with old Jesse James\r\nShot them dice with old Jesse James\r\n\r\nI can eat more chicken than any one gal can fry\r\nI can tell more lowdown lies\r\nI can tell more lowdown lies\r\n\r\nI can tell more lies than the stars in the skies\r\nI'll never get to heaven when I die\r\nNo, I'll never get to heaven when I die"
+}

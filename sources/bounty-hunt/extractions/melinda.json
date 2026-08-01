@@ -1,0 +1,82 @@
+{
+ "wanted": {
+  "title": "Melinda",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Tatiana Hargreaves",
+   "Lorraine Jordan",
+   "Grandpa Jones",
+   "Carolina Road"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:18:00",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 6.8,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [
+   {
+    "id": 157733,
+    "why": "empty-or-chordless"
+   }
+  ],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 809295,
+  "song_id": 2279,
+  "song_name": "Melinda",
+  "artist_id": 136,
+  "artist_name": "UFO",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 5,
+  "difficulty": "",
+  "rating": 4.5505,
+  "date": "1238976001",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 86763
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/9/0/90700/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/8/188366/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1238976001,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Artist : UFO\r\nTrack : Melinda\r\nAlbum : Same (1971)\r\nTabbed by: bhushan154\r\n\r\n[tab][ch]Dm[/ch]          [ch]C[/ch]\r\nDaddy Daddy, come and look[/tab]\r\n[tab][ch]A#[/ch]                      [ch]C[/ch]\r\nCome and see what I have found[/tab]\r\n[tab][ch]Dm[/ch]                [ch]C[/ch]\r\nA little way's away from here[/tab]\r\n[tab][ch]A#[/ch]                       [ch]Dm[/ch]\r\nWhile digging in the ground[/tab]\r\n\r\n\r\n[tab][ch]F[/ch]           [ch]C[/ch]\r\nCome away Melinda[/tab]\r\n[tab][ch]Am[/ch]                    [ch]C[/ch]\r\nCome in and close the door[/tab]\r\n[tab][ch]F[/ch]                   [ch]C[/ch]\r\nThat thing's just a picture book[/tab]\r\n[tab][ch]Am[/ch]                 \r\nThey had before the war[/tab]\r\n\r\n[tab][ch]Dm[/ch]          [ch]C[/ch]\r\nDaddy Daddy, come and see[/tab]\r\n[tab][ch]A#[/ch]            [ch]C[/ch]\r\nDaddy, hurry, do[/tab]\r\n[tab][ch]Dm[/ch]             [ch]C[/ch]\r\nThere's someone in a pretty dress[/tab]\r\n[tab][ch]A#[/ch]                          [ch]Dm[/ch]\r\nAnd she's all grown up like you[/tab]\r\n\r\n\r\n[tab][ch]F[/ch]           [ch]C[/ch]\r\nCome away Melinda[/tab]\r\n[tab][ch]Am[/ch]                    [ch]C[/ch]\r\nCome in and close the door[/tab]\r\n[tab][ch]F[/ch]            [ch]C[/ch]\r\nSomeone is your mommy[/tab]\r\n[tab][ch]Am[/ch]\r\nYou had before the war[/tab]\r\n\r\n[tab][ch]Dm[/ch]          [ch]C[/ch]\r\nDaddy daddy, tell me please[/tab]\r\n[tab][ch]A#[/ch]          [ch]C[/ch]\r\nTell me if you can[/tab]\r\n[tab][ch]Dm[/ch]               [ch]C[/ch]\r\nWhy things can't be the way they were[/tab]\r\n[tab][ch]A#[/ch]             [ch]Dm[/ch]\r\nBefore this war began[/tab]\r\n\r\n\r\n[tab][ch]F[/ch]           [ch]C[/ch]\r\nCome away Melinda[/tab]\r\n[tab][ch]Am[/ch]                   [ch]C[/ch]\r\nCome in and close the door[/tab]\r\n[tab][ch]F[/ch]              [ch]C[/ch]\r\nAnswer lies in yesterday[/tab]\r\n[tab][ch]Am[/ch]\r\nBefore they had the war[/tab]\r\n\r\n\r\nDuring solo : [ch]Dm[/ch] [ch]C[/ch] [ch]A#[/ch] [ch]C[/ch] [ch]Dm[/ch] [ch]C[/ch] [ch]A#[/ch] [ch]Dm[/ch]"
+}

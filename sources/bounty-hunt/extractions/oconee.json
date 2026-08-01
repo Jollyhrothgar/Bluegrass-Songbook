@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Oconee",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Jethro Burns",
+   "Butch Robins",
+   "Norman Blake",
+   "Tut Taylor"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:11:53",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

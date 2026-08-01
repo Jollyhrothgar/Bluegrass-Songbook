@@ -1,0 +1,60 @@
+{
+ "wanted": {
+  "title": "Bramble And The Rose, The",
+  "type": "Vocal",
+  "wanted_source": "bluegrass-lyrics"
+ },
+ "scraped_at": "2026-08-01T12:28:02",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 8.4,
+  "lyric_overlap": 0.9,
+  "bl_slug": "the-bramble-and-the-rose",
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2102633,
+  "song_id": 2535511,
+  "song_name": "The Bramble And The Rose",
+  "artist_id": 6755,
+  "artist_name": "Reilly and Maloney",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 13,
+  "difficulty": "",
+  "rating": 4.83777,
+  "date": "1502199279",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1502199279,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "The Bramble and the Rose\r\nBy Reilly and Maloney\r\nChords by krapplem\r\nCapo on 3rd fret\r\n\r\n[tab][ch]F[/ch]                       [ch]C[/ch]        [ch]Bb[/ch]\r\nWe have been so close together[/tab]\r\n[tab]       [ch]C[/ch]             [ch]F[/ch]\r\nEach a candle each a flame[/tab]\r\n[tab]                        [ch]C[/ch]      [ch]Bb[/ch]\r\nAll the dangers were outside us[/tab]\r\n[tab]       [ch]C[/ch]                [ch]F[/ch]\r\nAnd we knew them all by name[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]F[/ch]   [ch]C[/ch]       [ch]Bb[/ch]              [ch]F[/ch]     [ch]Bb[/ch]\r\nSee how the bramble and the rose [/tab]\r\n[tab]     [ch]C[/ch]\r\nintertwine[/tab]\r\n[tab][ch]F[/ch]    [ch]C[/ch]              [ch]Bb[/ch]              [ch]F[/ch]     [ch]Bb[/ch]\r\nLove grows like the bramble and the rose[/tab]\r\n[tab]           [ch]C[/ch]             [ch]F[/ch]\r\nRound each other we will twine[/tab]\r\n\r\n[Verse]\r\n[tab][ch]F[/ch]                        [ch]C[/ch]         [ch]Bb[/ch]\r\nNow I've hurt you and it hurts me[/tab]\r\n[tab]        [ch]C[/ch]               [ch]F[/ch]  \r\nJust to see what we can do[/tab]\r\n[tab][ch]F[/ch]                        [ch]C[/ch]      [ch]Bb[/ch]\r\nTo ourselves and to each other[/tab]\r\n[tab]        [ch]C[/ch]              [ch]F[/ch]\r\nWithout really meaning to.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]F[/ch]   [ch]C[/ch]       [ch]Bb[/ch]              [ch]F[/ch]     [ch]Bb[/ch]\r\nSee how the bramble and the rose [/tab]\r\n[tab]     [ch]C[/ch]\r\nintertwine[/tab]\r\n[tab][ch]F[/ch]    [ch]C[/ch]              [ch]Bb[/ch]              [ch]F[/ch]     [ch]Bb[/ch]\r\nLove grows like the bramble and the rose[/tab]\r\n[tab]           [ch]C[/ch]             [ch]F[/ch]\r\nRound each other we will twine[/tab]\r\n\r\n[Instrumental]\r\n[tab][ch]F[/ch]                 [ch]C[/ch]         [ch]Bb[/ch]\r\nSo put your arms around me[/tab]\r\n[tab]          [ch]C[/ch]                [ch]F[/ch]\r\nAnd we'll sing a true love song[/tab]\r\n[tab]                        [ch]C[/ch]      [ch]Bb[/ch]\r\nWe will learn to sing together[/tab]\r\n[tab]         [ch]C[/ch]                     [ch]F[/ch]\r\nSing and laugh the whole night long[/tab]\r\n\r\n[Chorus](Twice)\r\n[tab][ch]Bb[/ch]         [ch]C[/ch]             [ch]F[/ch]\r\nRound each other we will twine[/tab]"
+}

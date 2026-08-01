@@ -1,0 +1,33 @@
+id: durang-s-hornpipe
+title: Durang's Hornpipe
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+- Scruggs
+- OldTime
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '10700'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10700
+    author: schlange
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '1092'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=1092
+    author: vehenry
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-08-01'

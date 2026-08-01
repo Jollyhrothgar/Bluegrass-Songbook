@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Durham's Bull",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 10,
+  "core": true,
+  "artists": [
+   "April Verch",
+   "Herschel Sizemore",
+   "Nashville Grass",
+   "Benton Flippen"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T10:56:04",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

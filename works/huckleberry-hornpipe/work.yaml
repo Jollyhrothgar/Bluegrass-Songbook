@@ -1,0 +1,23 @@
+id: huckleberry-hornpipe
+title: Huckleberry Hornpipe
+artist: null
+composers: []
+default_key: A
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '24144'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24144
+    author: RB100_1963
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'

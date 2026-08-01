@@ -1,0 +1,13 @@
+id: raise-a-ruckus
+title: Raise a Ruckus
+artist: The 97th Regimental String Band
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: raise-a-ruckus.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-97th-regimental-string-band/raise-a-ruckus-chords-5769398
+    imported_at: '2026-08-01'

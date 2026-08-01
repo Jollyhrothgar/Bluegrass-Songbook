@@ -1,0 +1,71 @@
+{
+ "wanted": {
+  "title": "Raise a Ruckus",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Old Crow Medicine Show",
+   "J.E. Mainer\u2019s Mountaineers",
+   "The Bluegrass 45",
+   "Alison Krauss"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:30:10",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 5769398,
+  "song_id": 24549755,
+  "song_name": "Raise A Ruckus",
+  "artist_id": 1750562,
+  "artist_name": "The 97th Regimental String Band",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1745667244",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1745875404,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n\r\n[ch]G[/ch] [ch]D[/ch] [ch]G[/ch] (x4)\r\n\r\n[ch]G[/ch] [ch]C[/ch] [ch]G[/ch] [ch]G[/ch] [ch]D[/ch]\r\n\r\n[ch]G[/ch] [ch]C[/ch] [ch]G[/ch] [ch]G[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n[Verse 1]\r\n[tab]      [ch]G[/ch]                                  [ch]D[/ch]        [ch]G[/ch]\r\nWell, my old master promised me (raise a ruckus tonight),[/tab]\r\n[tab]     [ch]G[/ch]                                                  [ch]D[/ch]        [ch]G[/ch]\r\nThat when he died he's gonna set me free (gonna raise a ruckus tonight).[/tab]\r\n[tab]   [ch]G[/ch]                                             [ch]D[/ch]        [ch]G[/ch]\r\nHe lived so long that his head got bald (raise a ruckus tonight),[/tab]\r\n[tab]        [ch]G[/ch]                                                 [ch]D[/ch]        [ch]G[/ch]\r\nHe done give up the notion of dyin' at all (gonna raise a ruckus tonight)![/tab]\r\n\r\n[Chorus]\r\n[tab]           [ch]G[/ch]                  [ch]C[/ch]               [ch]G[/ch]\r\nI said now come along, little children, come along,[/tab]\r\n[tab][ch]G[/ch]                              [ch]D[/ch]\r\nCome while the moon is shining bright (while the moon is shining...).[/tab]\r\n[tab][ch]G[/ch]                    [ch]C[/ch]                [ch]G[/ch]\r\nGet on board, little children, get on board,[/tab]\r\n[tab]            [ch]G[/ch]       [ch]D[/ch]        [ch]G[/ch]\r\nWe're gonna raise a ruckus tonight.[/tab]\r\n\r\n[Verse 2]\r\n[tab]      [ch]G[/ch]                                    [ch]D[/ch]        [ch]G[/ch]\r\nWell, my old mistress promised me (raise a ruckus tonight)[/tab]\r\n[tab]     [ch]G[/ch]                                                 [ch]D[/ch]        [ch]G[/ch]\r\nThat when she died she gonna set me free (gon' raise a ruckus tonight).[/tab]\r\n[tab]    [ch]G[/ch]                                               [ch]D[/ch]        [ch]G[/ch]\r\nShe lived 'til her head got slick and bald (raise a ruckus tonight),[/tab]\r\n[tab]        [ch]G[/ch]                                                     [ch]D[/ch]        [ch]G[/ch]\r\nAnd the Lord couldn't kill her with a big green maul (raise a ruckus tonight).[/tab]\r\n\r\n[Chorus]\r\n[tab]           [ch]G[/ch]                  [ch]C[/ch]               [ch]G[/ch]\r\nI said now come along, little children, come along,[/tab]\r\n[tab][ch]G[/ch]                              [ch]D[/ch]\r\nCome while the moon is shining bright (while the moon is shining...).[/tab]\r\n[tab][ch]G[/ch]                    [ch]C[/ch]                [ch]G[/ch]\r\nGet on board, little children, get on board,[/tab]\r\n[tab]            [ch]G[/ch]       [ch]D[/ch]        [ch]G[/ch]\r\nWe're gonna raise a ruckus tonight.[/tab]\r\n\r\n[Verse 3]\r\n[tab]      [ch]G[/ch]                                          [ch]D[/ch]        [ch]G[/ch]\r\nWell, that's what they both promised me (raise a ruckus tonight),[/tab]\r\n[tab][ch]G[/ch]                                            [ch]D[/ch]        [ch]G[/ch]\r\nBut they died too slow for me (gonna raise a ruckus tonight)![/tab]\r\n[tab]  [ch]G[/ch]                                         [ch]D[/ch]        [ch]G[/ch]\r\nA dose of poison helped them along (raise a ruckus tonight),[/tab]\r\n[tab]        [ch]G[/ch]                                           [ch]D[/ch]        [ch]G[/ch]\r\nMay the devil sing their funeral song (gon' raise a ruckus tonight).[/tab]\r\n\r\n[Chorus]\r\n[tab]           [ch]G[/ch]                  [ch]C[/ch]               [ch]G[/ch]\r\nI said now come along, little children, come along,[/tab]\r\n[tab][ch]G[/ch]                              [ch]D[/ch]\r\nCome while the moon is shining bright (while the moon is shining...).[/tab]\r\n[tab][ch]G[/ch]                    [ch]C[/ch]                [ch]G[/ch]\r\nGet on board, little children, get on board,[/tab]\r\n[tab]            [ch]G[/ch]       [ch]D[/ch]        [ch]G[/ch]\r\nWe're gonna raise a ruckus tonight.[/tab]\r\n\r\n[Verse 4]\r\n[tab]      [ch]G[/ch]                                          [ch]D[/ch]        [ch]G[/ch]\r\nWell, way down yonder in Chitlin Switch (raise a ruckus tonight),[/tab]\r\n[tab]  [ch]G[/ch]                                                    [ch]D[/ch]        [ch]G[/ch]\r\nA bullfrog jumped from ditch to ditch (he gon' raise a ruckus tonight).[/tab]\r\n[tab]   [ch]G[/ch]                                                [ch]D[/ch]        [ch]G[/ch]\r\nHe jumped way down to the bottom of a well (raise a ruckus tonight),[/tab]\r\n[tab]   [ch]G[/ch]                                                      [ch]D[/ch]        [ch]G[/ch]\r\nHe swore that he jumped all the way to Hell (gon' raise a ruckus tonight)![/tab]\r\n\r\n[Chorus]\r\n[tab]           [ch]G[/ch]                  [ch]C[/ch]               [ch]G[/ch]\r\nI said now come along, little children, come along,[/tab]\r\n[tab][ch]G[/ch]                              [ch]D[/ch]\r\nCome while the moon is shining bright (while the moon is shining...).[/tab]\r\n[tab][ch]G[/ch]                    [ch]C[/ch]                [ch]G[/ch]\r\nGet on board, little children, get on board,[/tab]\r\n[tab]            [ch]G[/ch]       [ch]D[/ch]        [ch]G[/ch]\r\nWe're gonna raise a ruckus tonight.[/tab]\r\n\r\n[Verse 5]\r\n[tab]      [ch]G[/ch]                                                   [ch]D[/ch]        [ch]G[/ch]\r\nWell, some folks say that a preacher won't steal (raise a ruckus tonight),[/tab]\r\n[tab]    [ch]G[/ch]                                      [ch]D[/ch]        [ch]G[/ch]\r\nBut I caught two in my cornfield (raise a ruckus tonight)![/tab]\r\n[tab]      [ch]G[/ch]                                                [ch]D[/ch]        [ch]G[/ch]\r\nWell, one had a bushel and the other had four (raise a ruckus tonight),[/tab]\r\n[tab]   [ch]G[/ch]                                               [ch]D[/ch]        [ch]G[/ch]\r\nIf that ain't stealing, then I don't know (raise a ruckus tonight).[/tab]\r\n\r\n[Chorus]\r\n[tab]           [ch]G[/ch]                  [ch]C[/ch]               [ch]G[/ch]\r\nI said now come along, little children, come along,[/tab]\r\n[tab][ch]G[/ch]                              [ch]D[/ch]\r\nCome while the moon is shining bright (while the moon is shining...).[/tab]\r\n[tab][ch]G[/ch]                    [ch]C[/ch]                [ch]G[/ch]\r\nGet on board, little children, get on board,[/tab]\r\n[tab]            [ch]G[/ch]       [ch]D[/ch]        [ch]G[/ch]\r\nWe're gonna raise a ruckus tonight.[/tab]"
+}

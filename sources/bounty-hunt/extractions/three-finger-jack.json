@@ -1,0 +1,60 @@
+{
+ "wanted": {
+  "title": "Three Finger Jack",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:19:22",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1728046,
+  "song_id": 1598152,
+  "song_name": "Three-Fingered Jack",
+  "artist_id": 59932,
+  "artist_name": "Dave Carter & Tracy Grammer",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "novice",
+  "rating": 0,
+  "date": "1428418071",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 494480
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1428418071,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Dave Carter And Tracy Grammer - Three-Fingered Jack\r\n\r\n\r\n\r\nINTRO: [ch]D[/ch]  [ch]Dsus2[/ch]  (5x)  [ch]D[/ch]\r\n\r\n[tab]                        [ch]A[/ch]    [ch]D[/ch]\r\nBuilt me a cabin on the Coho Trail[/tab]\r\n[tab]                       [ch]Dsus2[/ch]    [ch]D[/ch]\r\nCedar shake roof and a fence of rails[/tab]\r\n[tab]                            [ch]A[/ch]        [ch]D[/ch]\r\nWind come a-howling and the sky turn black[/tab]\r\n[tab]                        [ch]G[/ch]              [ch]D[/ch]\r\n'Round the bald head of Three-Fingered Jack[/tab]\r\n\r\n\r\nCHORUS:\r\n[tab]                                   [ch]G[/ch]\r\nThree-Fingered Jack in his coat of trees[/tab]\r\n[tab][ch]D[/ch]                        [ch]Dsus2[/ch]  [ch]A[/ch]\r\nNever a kind word did he say to me[/tab]\r\n[tab][ch]D[/ch]                  [ch]Dsus2[/ch]      [ch]G[/ch]\r\nWalking away and I won't look back[/tab]\r\n[tab][ch]D[/ch]                     [ch]Dsus2[/ch]          [ch]D[/ch]          [ch]G[/ch]  [ch]D[/ch]\r\nFare thee well, cruel Three-Fingered Jack[/tab]\r\n\r\n\r\n[tab]                        [ch]A[/ch]     [ch]D[/ch]\r\nGoodbye my sorrel, Miss Celie Jane[/tab]\r\n[tab]                                  [ch]Dsus2[/ch]   [ch]D[/ch]\r\nProud were your haunches and your tangled mane[/tab]\r\n[tab]                           [ch]A[/ch]       [ch]D[/ch]\r\nWill you await me 'til the sunrise red[/tab]\r\n[tab]                               [ch]G[/ch]             [ch]D[/ch]\r\nMelts the white snowbank where you laid your head[/tab]\r\n\r\n\r\nCHORUS:\r\n[tab]                                   [ch]G[/ch]\r\nThree-Fingered Jack in his coat of trees[/tab]\r\n[tab][ch]D[/ch]                        [ch]Dsus2[/ch]  [ch]A[/ch]\r\nNever a kind word did he say to me[/tab]\r\n[tab][ch]D[/ch]                  [ch]Dsus2[/ch]      [ch]G[/ch]\r\nWalking away and I won't look back[/tab]\r\n[tab][ch]D[/ch]                     [ch]Dsus2[/ch]          [ch]D[/ch]           [ch]G[/ch]  [ch]D[/ch]        [ch]G[/ch]  [ch]D[/ch]     [ch]G[/ch]  [ch]D[/ch]\r\nFare thee well, cruel Three-Fingered Jack[/tab]\r\n\r\n\r\n[tab]                             [ch]A[/ch]         [ch]D[/ch]\r\nNow if I was Joshua, I would shake and shine[/tab]\r\n[tab]                                  [ch]Dsus2[/ch]  [ch]D[/ch]\r\n'Round the wide valley, three and thirty times[/tab]\r\n[tab]                              [ch]A[/ch]         [ch]D[/ch]\r\nBlow my brass trumpet and I'd stomp the ground[/tab]\r\n[tab]                              [ch]G[/ch]        [ch]D[/ch]\r\n'Til that ol' mountain come a-tumbling down[/tab]\r\n\r\n\r\nCHORUS:\r\n[tab]                                   [ch]G[/ch]\r\nThree-Fingered Jack in his coat of trees[/tab]\r\n[tab][ch]D[/ch]                        [ch]Dsus2[/ch]  [ch]A[/ch]\r\nNever a kind word did he say to me[/tab]\r\n[tab][ch]D[/ch]                  [ch]Dsus2[/ch]      [ch]G[/ch]\r\nWalking away and I won't look back[/tab]\r\n[tab][ch]D[/ch]                     [ch]Dsus2[/ch]          [ch]D[/ch]     \r\nFare thee well, cruel Three-Fingered Jack[/tab]\r\n[tab][ch]D[/ch]                     [ch]Dsus2[/ch]          [ch]D[/ch]           [ch]G[/ch]  [ch]D[/ch]        [ch]G[/ch]  [ch]D[/ch]     [ch]G[/ch]  [ch]D[/ch]\r\nFare thee well, cruel Three-Fingered Jack[/tab]"
+}

@@ -1,0 +1,12 @@
+id: when-the-nightbirds-cry
+title: When The Nightbirds Cry
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/when-the-nightbirds-cry/
+    imported_at: '2026-08-01'

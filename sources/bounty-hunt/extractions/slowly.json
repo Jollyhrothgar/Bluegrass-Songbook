@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Slowly",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Jimmy Martin",
+   "Jimmy Martin and the Sunny Mountain Boys",
+   "Rhonda Vincent",
+   "The Bluegrass Cardinals"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:43",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 10.6,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 3923894,
+  "song_id": 6708902,
+  "song_name": "Slowly",
+  "artist_id": 509306,
+  "artist_name": "Olivia Dean",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 38,
+  "difficulty": "",
+  "rating": 4.44891,
+  "date": "1635168515",
+  "status": "approved",
+  "preset_id": 99995,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2431832
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/8/1824905/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/4/140810/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1635168515,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]Bbmaj7[/ch] [ch]Bb[/ch]\r\n[ch]Bb[/ch] [ch]F[/ch] [ch]Bb[/ch] [ch]F[/ch]\r\n\r\n\r\n[Verse 1]\r\n[tab][ch]Bbmaj7[/ch]                          [ch]Bb[/ch]\r\nDown in Margate had a sip of you[/tab]\r\n[tab]                          [ch]Bb[/ch] [ch]F[/ch]      [ch]Bb[/ch] [ch]F[/ch]\r\nAnd it went straight to my head[/tab]\r\n[tab][ch]Bbmaj7[/ch]\r\nI could've opened up, cried and almost been myself[/tab]\r\n[tab]                          [ch]Bb[/ch] [ch]F[/ch] [ch]Bb[/ch] [ch]F[/ch]\r\nBut I took the piss instead[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab]             [ch]Bb[/ch]              [ch]Dm[/ch]\r\nI find it hard, hard to be soft[/tab]\r\n[tab]                [ch]G[/ch]\r\nStop saying I'm perfect[/tab]\r\n[tab]                   [ch]Bb[/ch]\r\nWhen clearly I'm not[/tab]\r\n[tab]                 [ch]Am[/ch]\r\nJust need to catch[/tab]\r\n[tab]              [ch]Gm[/ch]\r\nCatch my breath[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Bbmaj7[/ch]\r\nGo slowly, slowly[/tab]\r\n[tab][ch]Fmaj7[/ch]                           [ch]Dm[/ch]\r\nI know you're not supposed to know me[/tab]\r\n[tab][ch]Gm[/ch]                         [ch]Bb[/ch]\r\nI only see it when you show me slowly[/tab]\r\n[tab] [ch]F[/ch]                [ch]Fmaj7[/ch]        [ch]Dm[/ch]\r\nI love to teach you how to hold me[/tab]\r\n[tab]             [ch]Gm[/ch]\r\nSo go on, hold me[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab] [ch]Bbmaj7[/ch]                              [ch]Bb[/ch]\r\nRemember when you called us both a cab[/tab]\r\n[tab]                          [ch]F[/ch]  [ch]Bb[/ch] [ch]F[/ch]\r\nAnd forgot you had your bike[/tab]\r\n[tab]  [ch]Bbmaj7[/ch]\r\nAnd the whole way home, I thought[/tab]\r\n[tab]              [ch]Bb[/ch]\r\n\"How's he keeping up with me?[/tab]\r\n\r\nHe must be really into me\"\r\n[tab]         [ch]F[/ch]  [ch]Bb[/ch] [ch]F[/ch] [ch]Bb[/ch] [ch]F[/ch]\r\nAs I fight the urge to fly[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab]            [ch]Bbmaj7[/ch]            [ch]Dm[/ch]\r\nI find it hard, hard to be soft[/tab]\r\n[tab]                      [ch]G[/ch]\r\nStop saying I'm perfect[/tab]\r\n[tab]                   [ch]Bb[/ch]\r\nWhen clearly I'm not[/tab]\r\n[tab]                [ch]Am[/ch]\r\nJust need to catch[/tab]\r\n[tab]              [ch]Gm[/ch]\r\nCatch my breath[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]    [ch]Bbmaj7[/ch]\r\nGo slowly, slowly[/tab]\r\n[tab]   [ch]F[/ch]                              [ch]Dm[/ch]\r\nI know you're not supposed to know me[/tab]\r\n[tab] [ch]Gm[/ch]                      [ch]Bb[/ch]         [ch]F[/ch]\r\nI only see it when you show me slowly[/tab]\r\n[tab]                             [ch]Dm[/ch]\r\nI love to teach you how to hold me[/tab]\r\n[tab]              [ch]Gm[/ch]\r\nSo go on, hold me[/tab]\r\n[tab]     [ch]Bbmaj7[/ch]\r\nGo slowly, slowly[/tab]\r\n[tab]  [ch]F[/ch]                               [ch]Dm[/ch]\r\nI know you're not supposed to know me[/tab]\r\n[tab]    [ch]Gm[/ch]                    [ch]Bb[/ch]          [ch]F[/ch]\r\nI only see it when you show me slowly[/tab]\r\n[tab]                           [ch]Dm[/ch]\r\nI love to teach you how to hold me[/tab]\r\n[tab]              [ch]Gm[/ch]\r\nSo go on, hold me[/tab]\r\n\r\n\r\n[Outro]\r\n[tab][ch]F[/ch]  [ch]Dm[/ch]  [ch]Bb[/ch]     [ch]G[/ch]   [ch]Gm7[/ch]     [ch]G[/ch]\r\nMaybe I will be fine this time[/tab]\r\n[tab]    [ch]F[/ch]     [ch]C[/ch] [ch]Dm[/ch]       [ch]Gm[/ch]       [ch]G[/ch]\r\nAnd I'll let you see me in the light[/tab]\r\n[tab]      [ch]F[/ch]   [ch]Dm[/ch]  [ch]G[/ch]             [ch]F[/ch] [ch]Bb[/ch] [ch]F[/ch] [ch]Bb[/ch]\r\nYeah, maybe I will be fine[/tab]"
+}

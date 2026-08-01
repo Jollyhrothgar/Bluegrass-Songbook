@@ -1,0 +1,12 @@
+id: look-how-this-world-has-made-a-change
+title: Look How This World Has Made A Change
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/look-how-this-world-has-made-a-change/
+    imported_at: '2026-08-01'

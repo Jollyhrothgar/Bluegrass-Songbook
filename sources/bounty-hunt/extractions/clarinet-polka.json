@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Clarinet Polka",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Country Ham",
+   "Bill Evans",
+   "B\u00e9la Fleck",
+   "Mark O\u2019Connor"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:15:45",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

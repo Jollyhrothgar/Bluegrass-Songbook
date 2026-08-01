@@ -1,0 +1,12 @@
+id: ive-got-a-bulldog
+title: I’ve Got a Bulldog
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/ive-got-a-bulldog/
+    imported_at: '2026-08-01'

@@ -1,0 +1,14 @@
+id: my-my-my
+title: My My My
+artist: Seth Mulder
+default_key: B
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-my-my-my.txt
+    source_url: https://docs.google.com/document/d/1PEhWIFvwqGd73QE5j3iWJkBIkVNEdPaOnjdrxtytaQQ/edit?usp=sharing
+    imported_at: '2026-08-01'

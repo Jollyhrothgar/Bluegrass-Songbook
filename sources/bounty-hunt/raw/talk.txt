@@ -1,0 +1,95 @@
+# title: Talk
+# artist: Coldplay
+# source_url: https://tabs.ultimate-guitar.com/tab/coldplay/talk-chords-1070625
+# fetched_at: 2026-08-01T11:13:22
+
+Notice: If you listen carefully to the song, you'll notice that the progression
+C Em G is played like that: C for 1 stroke, Em and G for 1/2 stroke. Keep that in 
+mind while playing.
+
+Capo on 3rd fret
+
+* = strike once and hold for 4 bars
+
+[Intro]
+| C  | Em | G  | x4
+| C  | D  |
+
+[Verse 1]
+C              Em       G         C        Em G 
+ Oh, brother I can't, I can't get through.
+          C              Em
+I've been trying hard to reach you
+  G       C                  D
+'Cause I don't know what to do.
+
+[Verse 2]
+C              Em       G         C     Em G 
+ Oh, brother I can't believe it's true.
+       C                Em
+I'm so scared about the future
+G     C               D
+And I want to talk to you.
+      C                D    Em*
+Oh, I want to talk to you.
+
+[Chorus]
+          C                 Em            G    C Em G
+You could take a picture of something you see.
+C             Em           G    C Em G
+In the future where will I be?
+          C              Em        G   C Em G
+You could climb a ladder up to the sun
+   C              Em       G
+Or write a song nobody had sung
+   C                   D               Em*
+Or do something that's never been done.
+
+[Verse 3]
+C         Em      G     C Em G
+ Are you lost or incomplete?
+       C            Em     G         C                  D
+Do you feel like a puzzle, You can't find your missing piece.
+        C       Em  G   C Em G
+Tell me how you feeeel.
+        C                 Em
+Well, I feel like they're talking
+G     C                 D
+In a language I don't speak.
+             C             D   Em*
+And they're talking it to me.
+
+[Chorus]
+       C                 Em            G    C Em G
+So you take a picture of something you see.
+C             Em           G   C Em G
+In the future where will I be?
+          C              Em        G   C Em G
+You could climb a ladder up to the sun
+   C              Em       G
+Or write a song nobody had sung
+   C                   D
+Or do something that's never been done.
+C                   D               Em*
+Do something that's never been done.
+
+[Solo]
+| Am | C  | Em | D  | x4
+| C  | Em G |         x3
+| C  | D  |
+
+[Chorus]
+       C                                     Em      G     C Em G
+So you don't know where you're going and you want to talk.
+        C                                   Em     G     C Em G
+And you feel like you're going where you've been before.
+            C                            Em     G      C Em G
+You'll tell anyone who'll listen but you feel ignored.
+C                           Em       G
+Nothing's really making any sense at all.
+
+[Outro]
+      C           D
+Let's talk, let's talk.
+      C           D     Em
+Let's talk, let's talk.

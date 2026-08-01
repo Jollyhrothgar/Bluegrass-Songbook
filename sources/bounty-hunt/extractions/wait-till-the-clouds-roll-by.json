@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Wait Till the Clouds Roll By",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Uncle Dave Macon",
+   "Pharis & Jason Romero",
+   "Andrea Zonn",
+   "Darin & Brooke Aldridge"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:21:35",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

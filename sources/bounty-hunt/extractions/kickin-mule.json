@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Kickin' Mule",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Grandpa Jones",
+   "Fiddlin\u2019 John Carson",
+   "Billy Strings",
+   "Clarence White"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:27:29",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

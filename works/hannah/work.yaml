@@ -1,0 +1,13 @@
+id: hannah
+title: Hannah
+artist: Authentic Unlimited
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: hannah.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/authentic-unlimited/hannah-chords-4729967
+    imported_at: '2026-08-01'

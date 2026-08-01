@@ -1,0 +1,13 @@
+id: o-death
+title: O Death
+artist: Shakey Graves
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: o-death.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/shakey-graves/o-death-chords-2549508
+    imported_at: '2026-08-01'

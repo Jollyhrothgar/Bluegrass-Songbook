@@ -1,0 +1,96 @@
+# title: Sweet Thing
+# artist: Van Morrison
+# source_url: https://tabs.ultimate-guitar.com/tab/van-morrison/sweet-thing-chords-2259251
+# fetched_at: 2026-08-01T11:13:18
+
+Song:  Sweet Thing
+Artist:  Van Morrison
+Album:  Astral Weeks
+
+         E A D G B E
+
+E:      [0 2 2 1 0 0]
+F#m:    [2 4 4 2 2 2]
+A:      [x 0 2 2 2 0]
+Asus2:  [x 0 2 2 0 0]
+A6:     [x 0 2 2 2 2]
+B6:     [x 0 4 4 4 4]
+
+There is a general progression to the verse which is...
+E F#m A Asus2
+
+Then the following where you slide the chord shape back and forth.
+A6 / B6 \ A6
+
+[Intro]
+E    F#m    A    Asus2    A6 / B6 \ A6 (2x)
+
+[Verse 1]
+E          F#m                       A               Asus2        A6 / B6 \ A6
+And I will stroll the merry way and jump the hedges first
+E          F#m                          A             Asus2       A6 / B6 \ A6
+And I will drink the clear Clean water for to quench my thirst
+E          F#m                         A           Asus2          A6 / B6 \ A6
+And I shall watch the ferry-boats And they'll get high
+E          F#m            A          Asus2                        A6 / B6 \ A6
+On a bluer ocean against tomorrow's sky
+E          F#m         A      Asus2                               A6 / B6 \ A6
+And I will never grow so old again
+E          F#m               A           Asus2                    A6 / B6 \ A6
+And I will walk and talk in gardens all wet with rain
+
+[Chorus 1] 
+E               A
+Oh.... whoa....    sweet thing, sweet thing
+E               A
+Yeah....ya....     sweet thing, na...nah...
+E                        A                                       A6 / B6 \ A6
+Leah...yeah, my, my, my, my sweet thing
+
+[Verse 2]
+E           F#m              A                     Asus2         A6 / B6 \ A6
+And I shall drive my chariot down your streets and cry
+E          F#m                    A          Asus2               A6 / B6 \ A6
+'Hey, it's me, I'm dynamite and I don't know why'
+E       F#m                    A            Asus2                A6 / B6 \ A6
+And you shall take me strongly in your arms again
+E          F#m                      A        Asus2               A6 / B6 \ A6
+And I will not remember that I even felt the pain.
+E        F#m              A                                     Asus2     A6 / B6 \ A6
+We shall walk and talk in gardens all misty wet, misty wet with rain yeah
+E          F#m                 A           Asus2                  A6 / B6 \ A6
+And I will never, never, never grow so old again.
+
+[Chorus 2]
+E                A
+Oh sweet thing, sweet thing
+E                A
+My, my, my, my, my sweet thing
+
+[Verse 3]
+E           F#m          A                      Asus2             A6 / B6 \ A6
+And I will raise my hand up into the night time sky
+E             F#m          A               Asus2                  A6 / B6 \ A6
+And count the stars that's shining in your eye
+E              F#m            A                  Asus2            A6 / B6 \ A6
+Just to dig it all an' not to wonder that's just fine
+E           F#m              A                   Asus2            A6 / B6 \ A6
+And I'll be satisfied not to read in between the lines
+E          F#m              A                    Asus2            A6 / B6 \ A6
+And I will walk and talk in gardens all wet with rain
+E          F#m                     A           Asus2              A6 / B6 \ A6
+And I will never, ever, ever, ever grow so old again.
+
+[Outro]
+E              A
+Oh.... whoa.... sweet thing
+E              A
+Oh.... whoa.... Sugar-baby
+E              A
+Oh.... whoa.... sweet thing
+E              A
+sugar baby.....sugar ba..by, sugar baby
+E              A
+...............with your champagne eyes
+E              A
+........And your saint-like smile.... 

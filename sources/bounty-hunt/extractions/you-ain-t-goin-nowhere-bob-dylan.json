@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "You Ain't Goin' Nowhere Bob Dylan",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:25:52",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 14
+ },
+ "candidate": null,
+ "content": null
+}

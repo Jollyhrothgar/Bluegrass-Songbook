@@ -1,0 +1,12 @@
+id: ive-still-got-ninety-nine
+title: I’ve Still Got Ninety Nine
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/ive-still-got-ninety-nine/
+    imported_at: '2026-08-01'

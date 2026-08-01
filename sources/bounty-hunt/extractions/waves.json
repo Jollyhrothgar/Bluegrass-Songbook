@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Waves",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Wood Brothers",
+   "Dangermuffin",
+   "Scott Stutzman",
+   "B\u00e9la Fleck"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:34:00",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "D"
+ },
+ "candidate": {
+  "id": 1899241,
+  "song_id": 1683538,
+  "song_name": "Waves",
+  "artist_id": 70772,
+  "artist_name": "Dean Lewis",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 2235,
+  "difficulty": "intermediate",
+  "rating": 4.89832,
+  "date": "1478031165",
+  "status": "approved",
+  "preset_id": 29224,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "D",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 713741
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1594264/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/17265/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1683368397,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]G[/ch] [ch]Bm[/ch] [ch]D[/ch] [ch]A[/ch]\r\n\r\n[Verse 1]\r\n[tab][ch]G[/ch]                   [ch]Bm[/ch]\r\nThere is a swelling storm[/tab]\r\n[tab]        [ch]D[/ch]                             [ch]A[/ch]\r\nAnd I'm caught up in the middle of it all[/tab]\r\n[tab]       [ch]G[/ch]          [ch]Bm[/ch]                              [ch]D[/ch]\r\nAnd it takes control of the person that I thought I was[/tab]\r\n[tab]                   [ch]A[/ch]\r\nThe boy I used to know[/tab]\r\n[tab]    [ch]G[/ch]          [ch]A[/ch]            [ch]Bm[/ch]\r\nBut there is a light in the dark[/tab]\r\n[tab][ch]D[/ch]              [ch]G[/ch]\r\nAnd I feel its warmth[/tab]\r\n[tab]      [ch]A[/ch]            [ch]Bm[/ch]\r\nIn my hands, in my heart[/tab]\r\n[tab][ch]Em[/ch]        [ch]D[/ch]      [ch]A[/ch]\r\nWhy can't I hold on?[/tab]\r\n\r\n[Pre-Chorus]\r\n[tab][ch]Bm[/ch]            [ch]G[/ch]      [ch]D[/ch]\r\nIt comes and goes in waves[/tab]\r\n[tab][ch]A[/ch]         [ch]Bm[/ch]   [ch]G[/ch]   [ch]D[/ch]        [ch]A[/ch]\r\nIt always does, it always does[/tab]\r\n[tab]   [ch]Bm[/ch]           [ch]G[/ch]            [ch]D[/ch]\r\nWe watch as our young hearts fade[/tab]\r\n[tab][ch]A[/ch]        [ch]Bm[/ch]   [ch]G[/ch]  [ch]D[/ch]          [ch]A[/ch]\r\nInto the flood, into the flood[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]            [ch]A[/ch]\r\n  The freedom, of falling,[/tab]\r\n[tab][ch]Bm[/ch]                 [ch]D[/ch]           [ch]A[/ch]      [ch]G[/ch]\r\nThe feeling that I thought was set in stone[/tab]\r\n[tab][ch]G[/ch]             [ch]A[/ch]\r\nSlips through my fingers[/tab]\r\n[tab][ch]Bm[/ch]     [ch]D[/ch]\r\nTrying hard to let go[/tab]\r\n[tab][ch]Em[/ch]           [ch]D[/ch]       [ch]A[/ch]\r\nIt comes and goes in waves[/tab]\r\n[tab][ch]Em[/ch]           [ch]D[/ch]       [ch]A[/ch]\r\nIt comes and goes in waves[/tab]\r\n[tab][ch]A[/ch]\r\nIt carries us away[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]G[/ch]           [ch]Bm[/ch]\r\nThrough the wind[/tab]\r\n[tab]            [ch]D[/ch]                                 [ch]A[/ch]\r\nDown to the place we used to lay when we were kids[/tab]\r\n[tab][ch]G[/ch]                    [ch]Bm[/ch]\r\nMemories of a stolen place[/tab]\r\n[tab]              [ch]D[/ch]                        [ch]A[/ch]\r\nCaught in the silence, an echo lost in space[/tab]\r\n\r\n[Pre-Chorus]\r\n[tab][ch]Bm[/ch]            [ch]G[/ch]      [ch]D[/ch]\r\nIt comes and goes in waves[/tab]\r\n[tab][ch]A[/ch]         [ch]Bm[/ch]   [ch]G[/ch]   [ch]D[/ch]        [ch]A[/ch]\r\nIt always does, it always does[/tab]\r\n[tab]   [ch]Bm[/ch]           [ch]G[/ch]            [ch]D[/ch]\r\nWe watch as our young hearts fade[/tab]\r\n[tab][ch]A[/ch]        [ch]Bm[/ch]   [ch]G[/ch]  [ch]D[/ch]          [ch]A[/ch]\r\nInto the flood, into the flood[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]            [ch]A[/ch]\r\n  The freedom, of falling,[/tab]\r\n[tab][ch]Bm[/ch]                 [ch]D[/ch]           [ch]A[/ch]      [ch]G[/ch]\r\nThe feeling that I thought was set in stone[/tab]\r\n[tab][ch]G[/ch]             [ch]A[/ch]\r\nSlips through my fingers[/tab]\r\n[tab][ch]Bm[/ch]     [ch]D[/ch]\r\nTrying hard to let go[/tab]\r\n[tab][ch]Em[/ch]           [ch]D[/ch]       [ch]A[/ch]\r\nIt comes and goes in waves[/tab]\r\n[tab][ch]Em[/ch]           [ch]D[/ch]       [ch]A[/ch]\r\nIt comes and goes in waves[/tab]\r\n[tab][ch]A[/ch]\r\nIt carries us away[/tab]\r\n\r\n[Bridge]\r\n[tab][ch]G[/ch]            [ch]Bm[/ch]         [ch]A[/ch]            [ch]D[/ch]\r\nI watched my wild youth disappear in front of my eyes[/tab]\r\n[tab][ch]G[/ch]          [ch]Bm[/ch]        [ch]A[/ch]\r\nMoments of magic and wonder[/tab]\r\n[tab][ch]A[/ch]\r\nSeems so hard to find[/tab]\r\n[tab][ch]G[/ch]            [ch]Bm[/ch]\r\nIs it coming back again?[/tab]\r\n[tab][ch]A[/ch]                 [ch]D[/ch]\r\nIs it ever coming back again?[/tab]\r\n[tab][ch]G[/ch]                   [ch]Bm[/ch]\r\nTake me back to the feeling when[/tab]\r\n[tab][ch]A[/ch]\r\nEverything was left to find[/tab]\r\n\r\n[Pre-Chorus]\r\n[tab][ch]Bm[/ch]            [ch]G[/ch]      [ch]D[/ch]\r\nIt comes and goes in waves[/tab]\r\n[tab][ch]A[/ch]         [ch]Bm[/ch]   [ch]G[/ch]   [ch]D[/ch]        [ch]A[/ch]\r\nIt always does, it always does[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]            [ch]A[/ch]\r\n  The freedom, of falling,[/tab]\r\n[tab][ch]Bm[/ch]                 [ch]D[/ch]           [ch]A[/ch]      [ch]G[/ch]\r\nThe feeling that I thought was set in stone[/tab]\r\n[tab][ch]G[/ch]             [ch]A[/ch]\r\nSlips through my fingers[/tab]\r\n[tab][ch]Bm[/ch]     [ch]D[/ch]\r\nTrying hard to let go[/tab]\r\n[tab][ch]Em[/ch]           [ch]D[/ch]       [ch]A[/ch]\r\nIt comes and goes in waves[/tab]\r\n[tab][ch]Em[/ch]           [ch]D[/ch]       [ch]A[/ch]\r\nIt comes and goes in waves[/tab]\r\nN.C.\r\nIt carries us away"
+}

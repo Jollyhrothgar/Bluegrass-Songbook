@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "The Sheik of Araby",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Clarence White",
+   "Arthur Smith",
+   "Doc Watson",
+   "Dix Bruce"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:21:08",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 10.8,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1977809,
+  "song_id": 53214,
+  "song_name": "The Sheik Of Araby",
+  "artist_id": 1916,
+  "artist_name": "The Beatles",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 35,
+  "difficulty": "novice",
+  "rating": 4.85272,
+  "date": "1491818039",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "With simple chords. No capo. This is an easy way to play the song on acoustic guitar.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1366145
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/2/1214/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/5/4/5401/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1613430463,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[tab][Intro]\r\ne|-------------------------------------------------------------|\r\nB|-------------------------------------------------------------|\r\nG|-------------------------------------------------------------|\r\nD|-----------------0-----------0-2-2-2-3-2-0-------------------|\r\nA|-0-2-3-2-0-0-2-3---3-2-0---3---------------3--2--0-----------|\r\nE|-------------------------------------------------------------|[/tab]\r\n\r\n[Verse 1]\r\n[tab]             [ch]C[/ch]       [ch]Cdim[/ch]  [ch]Dm[/ch]\r\nWell I'm the sheik of Ara- by[/tab]\r\n[tab][ch]Dm[/ch]        [ch]G[/ch]          [ch]C[/ch]\r\nYour love belongs to me[/tab]\r\n[tab][ch]C[/ch]                  [ch]Cdim[/ch]   [ch]Dm[/ch]\r\nWell at night when you're asleep[/tab]\r\n[tab][ch]Dm[/ch]        [ch]G[/ch]         [ch]C[/ch]\r\nInto your tent I'll creep[/tab]\r\nN.C.\r\nAha\r\n\r\n[Verse 2]\r\n[tab]    [ch]C[/ch]          [ch]Cdim[/ch]   [ch]Dm[/ch]\r\nThe stars that shine above[/tab]\r\n[tab][ch]Dm[/ch]             [ch]G[/ch]      [ch]E7[/ch]\r\nWill light our way to love[/tab]\r\n[tab]       [ch]A[/ch]         [ch]A[/ch]     [ch]D7[/ch]      [ch]D7[/ch]\r\nAh you rule this world with me[/tab]\r\n[tab]       [ch]G[/ch]         [ch]A[/ch]\r\nI'm the sheik of Araby[/tab]\r\n\r\n[Verse 3]\r\n[tab]             [ch]C[/ch]       [ch]Cdim[/ch]  [ch]Dm[/ch]\r\nWell I'm the sheik of Ara- by[/tab]\r\n[tab][ch]Dm[/ch]        [ch]G[/ch]          [ch]C[/ch]\r\nYour love belongs to me[/tab]\r\n[tab][ch]C[/ch]                    [ch]Cdim[/ch]    [ch]Dm[/ch]\r\nWow oh at night where you're asleep[/tab]\r\n[tab][ch]Dm[/ch]        [ch]G[/ch]         [ch]C[/ch]\r\nInto your tent I'll creep[/tab]\r\nN.C.\r\nAha\r\n\r\n[Verse 4]\r\n[tab]    [ch]C[/ch]        [ch]Cdim[/ch]   [ch]Dm[/ch]\r\nThe sun that shines above[/tab]\r\n[tab][ch]Dm[/ch]             [ch]G[/ch]      [ch]E7[/ch]\r\nWill light our way to love[/tab]\r\n[tab]    [ch]A[/ch]          [ch]A[/ch]          [ch]D7[/ch]    [ch]D7[/ch]\r\nYou rule this world with me[/tab]\r\n[tab]        [ch]D7[/ch]       [ch]G[/ch]   [ch]C[/ch]     [ch]A[/ch]\r\nI'm the sheik of Ara-by[/tab]\r\n[tab]             [ch]D7[/ch]       [ch]G[/ch]   [ch]C[/ch]   [ch]A[/ch]\r\nWell I'm the sheik of Ara-by[/tab]\r\n[tab]             [ch]D7[/ch]       [ch]G[/ch]      [ch]C[/ch]   \r\nWell I'm the sheik of Araby, yeah [/tab]"
+}

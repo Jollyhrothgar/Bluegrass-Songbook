@@ -1,0 +1,12 @@
+id: no-more-the-moon-shines-on-lorena
+title: No More The Moon Shines On Lorena
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/no-more-the-moon-shines-on-lorena/
+    imported_at: '2026-08-01'

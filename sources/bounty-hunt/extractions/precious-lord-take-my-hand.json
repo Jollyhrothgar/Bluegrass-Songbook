@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Precious Lord, Take My Hand",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:08:56",
+ "status": "accepted",
+ "validation": {
+  "tier": "mb-recording",
+  "score": 91.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "E"
+ },
+ "candidate": {
+  "id": 3753041,
+  "song_id": 2305603,
+  "song_name": "Precious Lord Take My Hand",
+  "artist_id": 13063,
+  "artist_name": "Doc Watson",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 40,
+  "difficulty": "",
+  "rating": 4.8466,
+  "date": "1623742969",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "E",
+  "version_description": "Playing with capo on the fifth fret makes some of the second guitar fills easier (transpose down 4 steps).",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 168407
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/8/9/89564/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/6/166/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1623742969,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Doc Watson and Richard Watson\r\n\r\n[Intro]\r\n[ch]E[/ch]  [ch]E7[/ch] [ch]A[/ch]   [ch]E[/ch]  [ch]F#[/ch] [ch]B7[/ch]\r\n[ch]E[/ch]   [ch]A[/ch] [ch]E[/ch]  [ch]B7[/ch] [ch]E[/ch] [ch]A[/ch] [ch]E[/ch]\r\n\r\n[Verse 1]\r\n[tab]         [ch]E[/ch]             [ch]E7[/ch]            [ch]A[/ch]\r\nPrecious Lord, take my hand, lead me on, help me stand[/tab]\r\n[tab]    [ch]E[/ch]               [ch]F#[/ch]       [ch]B7[/ch]\r\nI'm tired Lord, I'm weak and I'm worn[/tab]\r\n[tab]             [ch]E[/ch]                       [ch]E9[/ch]         [ch]A[/ch]\r\nThrough the storm, through the night,   lead me on Lord to the light[/tab]\r\n[tab]         [ch]E[/ch]             [ch]B7[/ch]                [ch]E[/ch]   [ch]A[/ch]  [ch]E[/ch]\r\nPrecious Lord, take my hand, and lead me on[/tab]\r\n\r\n[Verse 2]\r\n[tab]        [ch]E[/ch]                  [ch]E7[/ch]              [ch]A[/ch]                   [ch]A7[/ch]\r\nWhen my friends don't understand, and they fail to lend a hand[/tab]\r\n[tab]        [ch]E[/ch]             [ch]F#[/ch]       [ch]B7[/ch]\r\nWhen my load gets too heavy to bear[/tab]\r\n[tab]     [ch]E[/ch]                [ch]E9[/ch]        [ch]A[/ch]\r\nAs I go on life's way    I just slip away and pray[/tab]\r\n[tab]         [ch]E[/ch]           [ch]B7[/ch]               [ch]E[/ch]   [ch]A[/ch]  [ch]E[/ch]\r\nAnd dear Lord, I can always find you there[/tab]\r\n\r\n[Instumental]\r\n[ch]E[/ch] [ch]E7[/ch] [ch]A[/ch]   [ch]E[/ch]  [ch]F#[/ch] [ch]B[/ch]\r\n[ch]E[/ch]   [ch]A[/ch] [ch]E[/ch]  [ch]B7[/ch] [ch]E[/ch] [ch]A[/ch] [ch]E[/ch]\r\n\r\n[Verse 3]\r\n[tab]        [ch]E[/ch]              [ch]E7[/ch]            [ch]A[/ch]\r\nWhen my way is growing drear and the night is growing near[/tab]\r\n[tab]        [ch]E[/ch]       [ch]F#[/ch]       [ch]B7[/ch]\r\nWhen my life is past and gone[/tab]\r\n[tab]         [ch]E[/ch]      [ch]E7[/ch]              [ch]A[/ch]\r\nAt that river I stand, guide my feet Lord, would you hold my hand[/tab]\r\n[tab]         [ch]E[/ch]             [ch]B7[/ch]                [ch]E[/ch]   [ch]A[/ch]  [ch]E[/ch]\r\nPrecious Lord, take my hand, and lead me on[/tab]\r\n\r\n[Verse 4]\r\n[tab]         [ch]E[/ch]             [ch]E7[/ch]            [ch]A[/ch]                [ch]A7[/ch]\r\nPrecious Lord, take my hand, lead me on, help me stand[/tab]\r\n[tab]    [ch]E[/ch]               [ch]F#[/ch]           [ch]B7[/ch]\r\nI'm tired Lord, I'm weak and I'm worn[/tab]\r\n[tab]         [ch]E[/ch]                [ch]E9[/ch]         [ch]A[/ch]\r\nHear my cry, hear my call,   hold my hand Lord, lest I fall[/tab]\r\n[tab]         [ch]E[/ch]             [ch]B7[/ch]                [ch]E[/ch]   [ch]A[/ch]  [ch]E[/ch]\r\nPrecious Lord, take my hand and lead me on[/tab]"
+}

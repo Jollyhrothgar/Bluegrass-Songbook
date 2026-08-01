@@ -1,0 +1,12 @@
+id: old-swinging-bridge
+title: Old Swinging Bridge
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/old-swinging-bridge/
+    imported_at: '2026-08-01'

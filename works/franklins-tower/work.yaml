@@ -1,0 +1,13 @@
+id: franklins-tower
+title: Franklin’s Tower
+artist: Grateful Dead
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: franklins-tower.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/grateful-dead/franklins-tower-chords-1136186
+    imported_at: '2026-08-01'

@@ -1,0 +1,13 @@
+id: widow-maker
+title: Widow Maker
+artist: Jimmy Martin
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: widow-maker.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/jimmy-martin/widow-maker-chords-3536324
+    imported_at: '2026-08-01'

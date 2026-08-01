@@ -1,0 +1,228 @@
+{
+  "imported_at": "2026-08-01",
+  "parsed_files": 27,
+  "created": 25,
+  "skipped_existing_with_chords": 2,
+  "merge_candidates": 0,
+  "errors": 0,
+  "created_works": [
+    {
+      "id": "2020-vision",
+      "file": "mcb-2020-vision.pro",
+      "title": "2020 vision",
+      "artist": "Gene Johnson",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/1gSlXJr1DCq-CtYes0xHAX0fbwHhed33E/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "bird-song",
+      "file": "mcb-bird-song.pro",
+      "title": "Bird Song",
+      "artist": "Grateful Dead",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1yWkOtDHY8DaodIBPAGF3W3BvAdR9pkSF/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "black-jack-county-chains",
+      "file": "mcb-black-jack-county-chains.pro",
+      "title": "Black Jack County Chains",
+      "artist": "Del McCoury",
+      "default_key": "Em",
+      "source_url": "https://docs.google.com/document/d/1YR97q5cx_NeCvY8JWlm3ERvUE1AP-RtynYefs5GpeAA/edit?usp=sharing"
+    },
+    {
+      "id": "cumberland-blues",
+      "file": "mcb-cumberland-blues.pro",
+      "title": "Cumberland Blues",
+      "artist": "Grateful Dead",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1gMOa6t7yZYMrE4Jx8uWN0RfBn5cJb-OS/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "dire-wolf",
+      "file": "mcb-dire-wolf.pro",
+      "title": "Dire Wolf",
+      "artist": "Grateful Dead",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/14Zai6CuKkZsjAx_N6lOzWXdiQof5Neig/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "do-re-mi",
+      "file": "mcb-do-re-mi.pro",
+      "title": "Do Re Mi",
+      "artist": "Woody Guthrie",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/18v6RfEBtYATbGmDgc-lycQZKhlelLyuj/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "fall-on-my-knees",
+      "file": "mcb-fall-on-my-knees.pro",
+      "title": "Fall on my Knees",
+      "artist": null,
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1NfLVChuXEtspRPt4FbKsBw0I-Wa9oR8W/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "goodbye-old-pal",
+      "file": "mcb-goodbye-old-pal.pro",
+      "title": "Goodbye Old Pal",
+      "artist": "Bill Monroe",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1GJzAuSMQkMDd8qTzQEVKjto3M02am2l9htSMqeiCUiI/edit?usp=sharing"
+    },
+    {
+      "id": "highway-40-blues",
+      "file": "mcb-highway-40-blues.pro",
+      "title": "Highway 40 Blues",
+      "artist": "Ricky Skaggs",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/1tVSGNYp4upsJ4jtPQIWs1buMfbuRv2uz/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "hobo-song",
+      "file": "mcb-hobo-song.pro",
+      "title": "Hobo Song",
+      "artist": "Jack Bonus",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1OjWLlOjO1tLVYx667r8PuMrVPwIV33AA/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "hometown-blues",
+      "file": "mcb-hometown-blues.pro",
+      "title": "Hometown Blues",
+      "artist": "Steve Earle",
+      "default_key": "B",
+      "source_url": "https://docs.google.com/document/d/1EUVIlqjw1XPCj1l0peKJcPstI8aeBbMZoGggOuy2zQ8/edit?usp=sharing"
+    },
+    {
+      "id": "i-shall-be-released",
+      "file": "mcb-i-shall-be-released.pro",
+      "title": "I Shall Be Released",
+      "artist": "Bob Dylan",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1711MNIJymr24NJFfBpqm0iZGwrDSIUzkrNg0s15q7Lg/edit?usp=sharing"
+    },
+    {
+      "id": "jolene",
+      "file": "mcb-jolene.pro",
+      "title": "Jolene",
+      "artist": "Dolly Parton",
+      "default_key": "Am",
+      "source_url": "https://docs.google.com/document/d/1vBWtTvqY_Mwwh2m1qtAjYO9CZhUr-G8n/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "my-walking-shoes-dont-fit-me-anymore",
+      "file": "mcb-my-walking-shoes-don-t-fit-me-anymore.pro",
+      "title": "My Walking Shoes Don't Fit Me Anymore",
+      "artist": null,
+      "default_key": "C",
+      "source_url": "https://docs.google.com/document/d/1Qg7iZFBOS2M73gf1jHedcKsh1arsQgA-xg4XNFZCriU/edit?usp=sharing"
+    },
+    {
+      "id": "new-speedway-boogie",
+      "file": "mcb-new-speedway-boogie.pro",
+      "title": "New Speedway Boogie",
+      "artist": "Grateful Dead",
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/1p2QzlZ4nUOY81fox6CaJ7mnZ3FmFDgzn/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "old-slew-foot",
+      "file": "mcb-old-slew-foot.pro",
+      "title": "Old Slew Foot",
+      "artist": null,
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/12micUbHp4oX-zU6esx2CXObOtbNiMjnFfsre3Hey14A/edit?usp=sharing"
+    },
+    {
+      "id": "panama-red",
+      "file": "mcb-panama-red.pro",
+      "title": "Panama Red",
+      "artist": "Peter Rowan",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1E1pagjlS5PkvgEwAevpVuLEAkLV97lgziIxqsALxIpA/edit?usp=sharing"
+    },
+    {
+      "id": "proud-mary",
+      "file": "mcb-proud-mary.pro",
+      "title": "Proud Mary",
+      "artist": "Creedence Clearwater Revival",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1nvHOOHaW5NqcUgjVv3n5E4uLEZXI_3Sj/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "rabbit-in-a-log",
+      "file": "mcb-rabbit-in-a-log.pro",
+      "title": "Rabbit in a Log",
+      "artist": null,
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1FcTjm2DFZbqXbwCC8h8cWmZzdWL_rHEH/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "randall-collins",
+      "file": "mcb-randall-collins.pro",
+      "title": "Randall Collins",
+      "artist": "Norman Blake",
+      "default_key": "Ab",
+      "source_url": "https://docs.google.com/document/d/1gTEJjxiJU1LMPxMObHOtD21Xifc7hCqqqh5Yolrf0LE/edit?usp=sharing"
+    },
+    {
+      "id": "ripple",
+      "file": "mcb-ripple.pro",
+      "title": "Ripple",
+      "artist": "Grateful Dead",
+      "default_key": "G",
+      "source_url": "https://docs.google.com/document/d/1nE8_vL2QZ-gIOQgFpmvvxsUjD7L9syZokURZOkYCfUM/edit?usp=sharing"
+    },
+    {
+      "id": "rosa-lee-mcfall",
+      "file": "mcb-rosa-lee-mcfall.pro",
+      "title": "Rosa Lee McFall",
+      "artist": null,
+      "default_key": "E",
+      "source_url": "https://docs.google.com/document/d/16xAfphNLEJQg-FynrEmv4WiRknSXzBYh/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "saint-james-infirmary",
+      "file": "mcb-saint-james-infirmary.pro",
+      "title": "Saint James Infirmary",
+      "artist": null,
+      "default_key": "Am",
+      "source_url": "https://docs.google.com/document/d/1fn2_yl7JOtPlyxAsUEm4XndU9jIuIk8K/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    },
+    {
+      "id": "the-weight",
+      "file": "mcb-the-weight.pro",
+      "title": "The Weight",
+      "artist": "The Band",
+      "default_key": "A",
+      "source_url": "https://docs.google.com/document/d/1uCHr-zSx8HMLqf-lVodjtJV6QkNPPOAnHQEO7WHWq2I/edit?usp=sharing"
+    },
+    {
+      "id": "we-can-work-it-out",
+      "file": "mcb-we-can-work-it-out.pro",
+      "title": "We Can Work it Out",
+      "artist": "The Beatles",
+      "default_key": "D",
+      "source_url": "https://docs.google.com/document/d/1zOc_BNmJpDgp9Pqof7Eh6bgevGmZtVKd/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true"
+    }
+  ],
+  "skipped": [
+    {
+      "file": "mcb-darling-corey.pro",
+      "title": "Darling Corey",
+      "existing_work": "darling-corey",
+      "state": "chords",
+      "source_url": "https://docs.google.com/document/d/1VoI-p1fhC1sYh1ICFIvdxRjpaglmAgTGtG0gyKkgVPs/edit?usp=sharing"
+    },
+    {
+      "file": "mcb-jimmy-brown-the-newsboy.pro",
+      "title": "Jimmy Brown the Newsboy",
+      "existing_work": "jimmy-brown-the-newsboy",
+      "state": "chords",
+      "source_url": "https://docs.google.com/document/d/1wg8tKEj5T0GHgcUM6ojhVjKqG-rySlu8jv1rb8Llb2g/edit?usp=sharing"
+    }
+  ],
+  "merge_candidate_works": [],
+  "error_details": []
+}

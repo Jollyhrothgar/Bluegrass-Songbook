@@ -1,0 +1,12 @@
+id: ive-never-been-so-lonesome-in-my-life
+title: I’ve Never Been So Lonesome In My Life
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/ive-never-been-so-lonesome-in-my-life/
+    imported_at: '2026-08-01'

@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "Nearer My God to Thee",
+  "type": "Gospel",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Bill Harrell and The Virginians",
+   "The Louvin Brothers",
+   "The Country Gentlemen",
+   "Charlie Waller"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:11:44",
+ "status": "accepted",
+ "validation": {
+  "tier": "traditional",
+  "score": 41.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 1062123,
+  "song_id": 2793473,
+  "song_name": "Nearer My God To Thee",
+  "artist_id": 888,
+  "artist_name": "Misc Praise Songs",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 233,
+  "difficulty": "intermediate",
+  "rating": 4.87457,
+  "date": "1306886401",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p0/media/cover/artist/b/b2b8131e6f4ea1114b486193cca9cbe4/misc-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1741045069,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Nearer My God To Thee Chords\r\nSarah Flower Adams / Lowell Mason 1840   *\r\n\r\nhttps://en.wikipedia.org/wiki/Nearer,_My_God,_to_Thee\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]G[/ch]          [ch]C[/ch]\r\nNearer, my God, to Thee[/tab]\r\n[tab][ch]G[/ch]         [ch]D[/ch]\r\nNearer to Thee[/tab]\r\n[tab][ch]G[/ch]              [ch]C[/ch]\r\nE'en though it be a cross[/tab]\r\n[tab][ch]G[/ch]    [ch]D7[/ch]      [ch]G[/ch]\r\nThat raiseth me[/tab]\r\n[tab][ch]G[/ch]     [ch]C[/ch]      [ch]G[/ch]\r\nStill all my song would be[/tab]\r\n[tab][ch]G[/ch]          [ch]C[/ch]       [ch]D7[/ch]\r\nNearer, my God, to Thee[/tab]\r\n[tab][ch]G[/ch]         [ch]C[/ch]            [ch]G[/ch]   [ch]D7[/ch]    [ch]G[/ch]\r\nNearer my God to Thee, nearer to Thee[/tab]\r\n\r\n[Verse 2]\r\n\r\n[tab][ch]G[/ch]                [ch]C[/ch]\r\nThough, like the wanderer[/tab]\r\n[tab]    [ch]G[/ch]        [ch]D[/ch]\r\nThe sun gone down[/tab]\r\n[tab][ch]G[/ch]           [ch]C[/ch]\r\nDarkness be over me[/tab]\r\n[tab][ch]G[/ch]       [ch]D7[/ch] [ch]G[/ch]\r\nMy rest a  stone[/tab]\r\n[tab][ch]G[/ch]   [ch]C[/ch]     [ch]G[/ch]   \r\nYet in my dreams I'd be[/tab]\r\n[tab][ch]G[/ch]          [ch]C[/ch]       [ch]D7[/ch]\r\nNearer, my God, to Thee[/tab]\r\n[tab][ch]G[/ch]         [ch]C[/ch]            [ch]G[/ch]   [ch]D7[/ch]    [ch]G[/ch]\r\nNearer my God to Thee, nearer to Thee[/tab]\r\n\r\n[Verse 3]\r\n\r\n[tab][ch]G[/ch]                   [ch]C[/ch]\r\nThere let the way appear[/tab]\r\n[tab]      [ch]G[/ch]     [ch]D[/ch]\r\nSteps up to heaven[/tab]\r\n[tab][ch]G[/ch]             [ch]C[/ch]\r\nAll that Thou sendest me[/tab]\r\n[tab][ch]G[/ch]  [ch]D7[/ch]    [ch]G[/ch]\r\nIn mercy given[/tab]\r\n[tab][ch]G[/ch]         [ch]C[/ch]      [ch]G[/ch]\r\nAngels to beckon me[/tab]\r\n[tab][ch]G[/ch]          [ch]C[/ch]       [ch]D7[/ch]\r\nNearer, my God, to Thee[/tab]\r\n[tab][ch]G[/ch]         [ch]C[/ch]            [ch]G[/ch]   [ch]D7[/ch]    [ch]G[/ch]\r\nNearer my God to Thee, nearer to Thee[/tab]\r\n\r\n[verse 4]\r\n\r\n[tab][ch]G[/ch]                    [ch]C[/ch]\r\nThen, with my waking thoughts[/tab]\r\n[tab]       [ch]G[/ch]        [ch]D[/ch]\r\nBright with Thy praise[/tab]\r\n[tab][ch]G[/ch]               [ch]C[/ch]\r\nOut of my stony griefs[/tab]\r\n[tab][ch]G[/ch]      [ch]D7[/ch]   [ch]G[/ch]\r\nBethel I'll raise[/tab]\r\n[tab][ch]G[/ch]        [ch]C[/ch]       [ch]G[/ch]\r\nSo by my woes to be[/tab]\r\n[tab][ch]G[/ch]          [ch]C[/ch]       [ch]D7[/ch]\r\nNearer, my God, to Thee[/tab]\r\n[tab][ch]G[/ch]         [ch]C[/ch]            [ch]G[/ch]   [ch]D7[/ch]    [ch]G[/ch]\r\nNearer my God to Thee, nearer to Thee[/tab]\r\n\r\n[verse 5]\r\n\r\n[tab][ch]G[/ch]                [ch]C[/ch]\r\nOr, if on joyful wing[/tab]\r\n[tab][ch]G[/ch]            [ch]D[/ch]\r\nCleaving the sky[/tab]\r\n[tab][ch]G[/ch]                       [ch]C[/ch]\r\nSun, moon, and stars forgot[/tab]\r\n[tab][ch]G[/ch]       [ch]D7[/ch] [ch]G[/ch]\r\nUpwards I  fly[/tab]\r\n[tab][ch]G[/ch]            [ch]C[/ch]          [ch]G[/ch]\r\nStill all my song shall be[/tab]\r\n[tab][ch]G[/ch]          [ch]C[/ch]       [ch]D7[/ch]\r\nNearer, my God, to Thee[/tab]\r\n[tab][ch]G[/ch]         [ch]C[/ch]            [ch]G[/ch]   [ch]D7[/ch]    [ch]G[/ch]\r\nNearer my God to Thee, nearer to Thee[/tab]\r\n\r\n* Alternates:\r\n\r\nOpen\r\n\r\n[ch]G[/ch]  = [ch]E[/ch]\r\n[ch]C[/ch]  = [ch]A[/ch]\r\n[ch]D[/ch]  = [ch]B[/ch]\r\n[ch]D7[/ch] = [ch]B7[/ch]\r\n\r\nCapo 2\r\n\r\n[ch]G[/ch]  = [ch]A[/ch]\r\n[ch]C[/ch]  = [ch]D[/ch]\r\n[ch]D[/ch]  = [ch]E[/ch]\r\n[ch]D7[/ch] = [ch]E7[/ch]\r\n\r\nSet8"
+}

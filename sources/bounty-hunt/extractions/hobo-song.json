@@ -1,0 +1,81 @@
+{
+ "wanted": {
+  "title": "Hobo Song",
+  "type": "Vocal",
+  "key": "G",
+  "difficulty": "Intermediate",
+  "coverage": 3,
+  "core": false,
+  "artists": [
+   "The String Cheese Incident",
+   "Peter Rowan",
+   "Billy Strings"
+  ],
+  "notes": "jam standard",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:34:40",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 107.7,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "A"
+ },
+ "candidate": {
+  "id": 4126738,
+  "song_id": 11746006,
+  "song_name": "Hobo Song",
+  "artist_id": 146183,
+  "artist_name": "Billy Strings",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 8,
+  "difficulty": "",
+  "rating": 4.85491,
+  "date": "1648327930",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "A",
+  "version_description": "Taken from the Lower Standards version (www.youtube.com/watch?v=V2RHZHHOq04).",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [
+    {
+     "join_field": " & ",
+     "artist": {
+      "id": 478805,
+      "name": "Don Julin"
+     }
+    }
+   ],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/17711/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1648327930,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Standard tuning, Capo on 2\r\n\r\n[Intro]\r\n[ch]Em[/ch] [ch]C/G[/ch] [ch]Am[/ch] [ch]F[/ch] [ch]Am[/ch] [ch]G[/ch]\r\n[ch]Em[/ch] [ch]C/G[/ch] [ch]Am[/ch] [ch]F[/ch] [ch]Am[/ch] [ch]G[/ch]\r\n\r\n[Verse 1]\r\n[tab][ch]G[/ch]                [ch]Em[/ch]\r\nToo late to feel sorrow[/tab]\r\n[tab][ch]C/G[/ch]              [ch]Am[/ch]\r\nToo late to feel pain[/tab]\r\n[tab][ch]F[/ch]                [ch]Am[/ch]\r\nHe's just an old hobo[/tab]\r\n[tab][ch]G[/ch]\r\nSleep out in the rain[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]G[/ch]                 [ch]Em[/ch]\r\nHe'll never cause trouble[/tab]\r\n[tab][ch]C/G[/ch]           [ch]Am[/ch]\r\nDon't have no fear[/tab]\r\n[tab][ch]F[/ch]                [ch]Am[/ch]\r\nHe's just an old hobo[/tab]\r\n[tab]          [ch]G[/ch]\r\nAnd he'll soon be far away from here[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]B7/F#[/ch]                        [ch]C/G[/ch]           [ch]C7[/ch]\r\nHe used to be a gambling man just like you[/tab]\r\n[tab]         [ch]G[/ch]                     [ch]D[/ch]                    [ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]\r\nUntil he sank so low there was nothing no one could do[/tab]\r\n[tab][ch]B7/F#[/ch]                        [ch]C/G[/ch]           [ch]C7[/ch]\r\nHe used to be a gambling man just like you[/tab]\r\n[tab]         [ch]G[/ch]                     [ch]D[/ch]                    [ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]\r\nUntil he sank so low there was nothing no one could do[/tab]\r\n\r\n[Interlude]\r\n[ch]Em[/ch] [ch]C/G[/ch] [ch]Am[/ch] [ch]F[/ch] [ch]Am[/ch] [ch]G[/ch]\r\n[ch]Em[/ch] [ch]C/G[/ch] [ch]Am[/ch] [ch]F[/ch] [ch]Am[/ch] [ch]G[/ch]\r\n[ch]B7/F#[/ch] [ch]C/G[/ch] [ch]C7[/ch]\r\n[ch]G[/ch] [ch]D[/ch] [ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]\r\n[ch]B7/F#[/ch] [ch]C/G[/ch] [ch]C7[/ch]\r\n[ch]G[/ch] [ch]D[/ch] [ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]\r\n\r\n[Verse 3]\r\n[tab][ch]G[/ch]                  [ch]Em[/ch]\r\nOh, don't make him ask you[/tab]\r\n[tab][ch]C/G[/ch]                [ch]Am[/ch]\r\nOh, don't make him beg[/tab]\r\n[tab][ch]F[/ch]            [ch]Am[/ch]\r\nHe was a war hero[/tab]\r\n[tab]           [ch]G[/ch]\r\nAnd that's how he hurt his leg[/tab]\r\n\r\n[Verse 4]\r\n[tab][ch]G[/ch]                [ch]Em[/ch]\r\nHe killed thirty injuns[/tab]\r\n[tab][ch]C/G[/ch]            [ch]Am[/ch]\r\nWith one cannonball[/tab]\r\n[tab][ch]F[/ch]                [ch]Am[/ch]\r\nHe's just an old hobo[/tab]\r\n[tab] [ch]G[/ch]\r\nAsleep out in the hall[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]B7/F#[/ch]                        [ch]C/G[/ch]           [ch]C7[/ch]\r\nHe used to be a gambling man just like you[/tab]\r\n[tab]         [ch]G[/ch]                     [ch]D[/ch]                    [ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]\r\nUntil he sank so low there was nothing no one could do[/tab]\r\n[tab][ch]B7/F#[/ch]                        [ch]C/G[/ch]           [ch]C7[/ch]\r\nHe used to be a gambling man just like you[/tab]\r\n[tab]         [ch]G[/ch]                     [ch]D[/ch]                    [ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]\r\nUntil he sank so low there was nothing no one could do[/tab]\r\n\r\n[Interlude]\r\n[ch]Em[/ch] [ch]C/G[/ch] [ch]Am[/ch] [ch]F[/ch] [ch]Am[/ch] [ch]G[/ch]\r\n[ch]Em[/ch] [ch]C/G[/ch] [ch]Am[/ch] [ch]F[/ch] [ch]Am[/ch] [ch]G[/ch]\r\n[ch]B7/F#[/ch] [ch]C/G[/ch] [ch]C7[/ch]\r\n[ch]G[/ch] [ch]D[/ch] [ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]\r\n[ch]B7/F#[/ch] [ch]C/G[/ch] [ch]C7[/ch]\r\n[ch]G[/ch] [ch]D[/ch] [ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]\r\n\r\n[Verse 5]\r\n[tab][ch]G[/ch]               [ch]Em[/ch]\r\nA wife and five children[/tab]\r\n[tab][ch]C/G[/ch]           [ch]Am[/ch]\r\nWho live in L.A.[/tab]\r\n[tab][ch]F[/ch]                    [ch]Am[/ch]\r\nThey miss their dear daddy[/tab]\r\n[tab]      [ch]G[/ch]\r\nWho's gone so far away[/tab]\r\n\r\n[Verse 6]\r\n[tab][ch]G[/ch]                   [ch]Em[/ch]\r\nThey still have his picture[/tab]\r\n[tab][ch]C/G[/ch]              [ch]Am[/ch]\r\nIt's hung on the wall[/tab]\r\n[tab][ch]F[/ch]                [ch]Am[/ch]\r\nHe's just an old hobo[/tab]\r\n[tab] [ch]G[/ch]\r\nAsleep out in the hall[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]B7/F#[/ch]                        [ch]C/G[/ch]           [ch]C7[/ch]\r\nHe used to be a gambling man just like you[/tab]\r\n[tab]         [ch]G[/ch]                     [ch]D[/ch]                    [ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]\r\nUntil he sank so low there was nothing no one could do[/tab]\r\n[tab][ch]B7/F#[/ch]                        [ch]C/G[/ch]           [ch]C7[/ch]\r\nHe used to be a gambling man just like you[/tab]\r\n[tab]         [ch]G[/ch]                     [ch]D[/ch]                    [ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]\r\nUntil he sank so low there was nothing no one could do[/tab]\r\n\r\n[Outro]\r\n[ch]C[/ch] [ch]C/B[/ch] [ch]C/A[/ch] [ch]G[/ch]"
+}

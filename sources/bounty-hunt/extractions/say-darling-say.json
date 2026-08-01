@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Say Darling Say",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Tatiana Hargreaves",
+   "Bruce Molsky",
+   "Tommy Jarrell",
+   "Watkins Family Hour"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:31",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 4
+ },
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,14 @@
+id: counting-flowers-on-the-wall
+title: Counting Flowers on the Wall
+artist: The Statler Brothers
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-counting-flowers-on-the-wall.txt
+    source_url: https://docs.google.com/document/d/1ftbbneqem5yDiy8nvhq5iUvg8gexU1ZThNbAezwwaxA/edit?usp=sharing
+    imported_at: '2026-08-01'

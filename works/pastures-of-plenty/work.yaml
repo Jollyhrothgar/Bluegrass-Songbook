@@ -1,0 +1,13 @@
+id: pastures-of-plenty
+title: Pastures of Plenty
+artist: Woody Guthrie
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: pastures-of-plenty.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/woody-guthrie/pastures-of-plenty-chords-933742
+    imported_at: '2026-08-01'

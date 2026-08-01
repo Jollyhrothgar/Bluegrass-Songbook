@@ -1,0 +1,12 @@
+id: im-just-a-ghost-in-this-house
+title: I’m Just A Ghost In  This House
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/im-just-a-ghost-in-this-house/
+    imported_at: '2026-08-01'

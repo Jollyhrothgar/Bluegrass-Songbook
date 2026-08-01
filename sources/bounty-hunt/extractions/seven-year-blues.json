@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Seven Year Blues",
+  "type": "Gospel",
+  "key": null,
+  "difficulty": null,
+  "coverage": 15,
+  "core": true,
+  "artists": [
+   "Red Smiley",
+   "The Louvin Brothers",
+   "The Tennessee Cut-Ups",
+   "Dismembered Tennesseans"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T10:55:28",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

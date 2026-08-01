@@ -1,0 +1,12 @@
+id: when-autumn-leaves-begin-to-fall
+title: When Autumn Leaves Begin To Fall
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/when-autumn-leaves-begin-to-fall/
+    imported_at: '2026-08-01'

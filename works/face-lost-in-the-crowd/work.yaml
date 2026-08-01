@@ -1,0 +1,12 @@
+id: face-lost-in-the-crowd
+title: Face Lost In The Crowd
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/face-lost-in-the-crowd/
+    imported_at: '2026-08-01'

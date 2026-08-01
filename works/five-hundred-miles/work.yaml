@@ -1,0 +1,12 @@
+id: five-hundred-miles
+title: Five Hundred Miles
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: five-hundred-miles.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/five-hundred-miles-chords-1475051
+    imported_at: '2026-08-01'

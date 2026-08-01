@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Sixteen Tons",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": true,
+  "artists": [
+   "Southern Raised",
+   "Mac Wiseman",
+   "Hayseed Dixie",
+   "The White Rattlesnake"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:02:27",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1793902,
+  "song_id": 137414,
+  "song_name": "Sixteen Tons",
+  "artist_id": 10001,
+  "artist_name": "Johnny Cash",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 247,
+  "difficulty": "novice",
+  "rating": 4.85362,
+  "date": "1452771405",
+  "status": "approved",
+  "preset_id": 89124,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 23195
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/6/8/68767/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/4/144013/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1545992477,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n\r\n[tab]e|---------------------------------------|\r\nB|--4h5-4h5--4h5--3--1---1---------------|\r\nG|---------------------2----2--0--1/2----|\r\nD|---------------------------------------|\r\nA|---------------------------------------|\r\nE|---------------------------------------|[/tab]\r\n\r\n[tab]e|-----------------------------------------------------------0-----------|\r\nB|--4h5-4h5--4h5--3--1---1-----------------------------------1-----------|\r\nG|---------------------2----2--0--1/2--0-----------2---0-----2-----------|\r\nD|----------------------------------------3--2------------3--2-----------|\r\nA|-----------------------------------------------------------------------|\r\nE|-----------------------------------------------------------------------|[/tab]\r\n\r\n\r\n[Verse 1]\r\n[tab]     [ch]Am[/ch]                  [ch]F[/ch]          [ch]E[/ch]\r\nSome people say a man is made outta mud[/tab]\r\n[tab]  [ch]Am[/ch]                    [ch]F[/ch]          [ch]E[/ch]\r\nA poor man's made outta muscle and blood[/tab]\r\n[tab][ch]Am[/ch]                   [ch]Dm[/ch]\r\nMuscle and blood and skin and bone[/tab]\r\n[tab]  [ch]Am[/ch]   N.C.\r\nA mind that's weak and a back that's strong[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]         [ch]Am[/ch]               [ch]F[/ch]           [ch]E[/ch]\r\nYou load sixteen tons and what do you get[/tab]\r\n[tab] [ch]Am[/ch]                   [ch]F[/ch]         [ch]E[/ch]\r\nAnother day older and deeper in debt[/tab]\r\n[tab]      [ch]Am[/ch]                             [ch]Dm[/ch]       \r\nSaint Peter, don't ya call me 'cause I can't go[/tab]\r\n[tab]  [ch]Am[/ch]  N.C.\r\nI owe my soul to the company store[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab]      [ch]Am[/ch]                        [ch]F[/ch]          [ch]E[/ch]\r\nI was born one morning when the sun didn't shine[/tab]\r\n[tab]  [ch]Am[/ch]                        [ch]F[/ch]             [ch]E[/ch]\r\nI picked up my shovel and I walked to the mine[/tab]\r\n[tab]         [ch]Am[/ch]              [ch]Dm[/ch]\r\nI loaded sixteen tons of number nine coal[/tab]\r\n[tab]        [ch]Am[/ch]    N.C.\r\nAnd the straw boss said, \"Well, a-bless my soul!\"[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]         [ch]Am[/ch]               [ch]F[/ch]           [ch]E[/ch]\r\nYou load sixteen tons and what do you get[/tab]\r\n[tab] [ch]Am[/ch]                   [ch]F[/ch]         [ch]E[/ch]\r\nAnother day older and deeper in debt[/tab]\r\n[tab]      [ch]Am[/ch]                              [ch]Dm[/ch]       \r\nSaint Peter, don't you call me 'cause I can't go[/tab]\r\n[tab]  [ch]Am[/ch]  N.C.\r\nI owe my soul to the company store[/tab]\r\n\r\n\r\n[Verse 3]\r\n[tab]      [ch]Am[/ch]                        [ch]F[/ch]        [ch]E[/ch]\r\nI was born one morning, it was drizzlin' rain[/tab]\r\n[tab][ch]Am[/ch]                       [ch]F[/ch]         [ch]E[/ch]\r\nFightin' and trouble are my middle name[/tab]\r\n[tab][ch]Am[/ch]                            [ch]Dm[/ch]\r\nRaised in the canebrake by an old mama lion[/tab]\r\n[tab]         [ch]Am[/ch]   N.C.\r\nAin't no high-tone woman make me walk the line[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]         [ch]Am[/ch]               [ch]F[/ch]           [ch]E[/ch]\r\nYou load sixteen tons and what do you get[/tab]\r\n[tab] [ch]Am[/ch]                   [ch]F[/ch]         [ch]E[/ch]\r\nAnother day older and deeper in debt[/tab]\r\n[tab]      [ch]Am[/ch]                              [ch]Dm[/ch]\r\nSaint Peter, don't you call me 'cause I can't go[/tab]\r\n[tab]  [ch]Am[/ch]  N.C.\r\nI owe my soul to the company store[/tab]\r\n\r\n\r\n[Verse 4]\r\n[tab]      [ch]Am[/ch]                   [ch]F[/ch]      [ch]E[/ch]\r\nIf ya see me coming better step aside[/tab]\r\n[tab]  [ch]Am[/ch]                     [ch]F[/ch]         [ch]E[/ch]\r\nA lotta men didn't and a lotta men died[/tab]\r\n[tab]     [ch]Am[/ch]                       [ch]Dm[/ch]\r\nWith one fist of iron and the other of steel[/tab]\r\n[tab]       [ch]Am[/ch]    N.C.\r\nIf the right one don't get you then the left one will[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]         [ch]Am[/ch]               [ch]F[/ch]           [ch]E[/ch]\r\nYou load sixteen tons and what do you get[/tab]\r\n[tab] [ch]Am[/ch]                   [ch]F[/ch]         [ch]E[/ch]\r\nAnother day older and deeper in debt[/tab]\r\n[tab]      [ch]Am[/ch]                              [ch]Dm[/ch]\r\nSaint Peter, don't you call me 'cause I can't go[/tab]\r\n[tab]N.C.                                  [ch]Am[/ch]\r\nI owe my soul to the company store[/tab]"
+}

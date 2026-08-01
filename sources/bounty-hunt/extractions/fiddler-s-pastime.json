@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Fiddler's Pastime",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Sharon Gilchrist",
+   "Darol Anger",
+   "Bronwyn Keith-Hynes",
+   "Noam Pikelny"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:16:53",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Revelations",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Charlie Daniels Band",
+   "Charlie Daniels",
+   "Fireside Collective",
+   "Palodine"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:21",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 10.7,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1971523,
+  "song_id": 36431,
+  "song_name": "Revelations",
+  "artist_id": 1201,
+  "artist_name": "Iron Maiden",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 34,
+  "difficulty": "intermediate",
+  "rating": 4.87582,
+  "date": "1490908243",
+  "status": "approved",
+  "preset_id": 8025,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "Full song with chords and lyrics.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1027
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/7/7/774/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/4/1451/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1492990686,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "REVELATIONS - Iron Maiden\r\n\r\nfrom Piece Of Mind (1983) album\r\nwritten by Bruce Dickinson\r\n\r\n[ch]C6[/ch]      x32210\r\n[ch]C6add9[/ch]  x30210  (easier)\r\n\r\n        (picked, full chord)\r\n[ch]Am[/ch]      x0221x  (x02210)\r\n[ch]Fmaj7[/ch]   x3321x  (133210)\r\n[ch]C[/ch]       x3201x  (x32010)\r\n[ch]Gadd4/B[/ch] x2001x  (x20010 G6add11/B)\r\n\r\n\r\n[Intro]\r\n[tab]|[ch]G[/ch] [ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]C[/ch] [ch]C6[/ch] [ch]C[/ch]      |[ch]C[/ch]   [ch]D[/ch]       | x4  \r\n|N.C.        |[/tab]\r\n\r\n[Instrumental]\r\n|[ch]Am[/ch] N.C.   |[ch]F[/ch]  N.C.   |[ch]G[/ch]  N.C.   |[ch]Am[/ch] N.C. [ch]G[/ch] | x2\r\n\r\n[Prologue]\r\n[tab]    [ch]Am[/ch]               [ch]F[/ch]         [ch]G[/ch]                 [ch]Am[/ch]\r\n\"O' God of earth and altar bow down and hear our cry [/tab]\r\n[tab][ch]G[/ch]   [ch]Am[/ch]             [ch]F[/ch]           [ch]G[/ch]                [ch]Am[/ch]\r\nOur earthly rulers falter, our people drift and die [/tab]\r\n[tab][ch]G[/ch]    [ch]Am[/ch]              [ch]F[/ch]             [ch]G[/ch]                 [ch]Am[/ch] \r\n The walls of gold entombe us, the swords of scorn divide [/tab]\r\n[tab][ch]G[/ch]    [ch]Am[/ch]              [ch]F[/ch]        [ch]G[/ch]             [ch]Am[/ch] *\r\nTake not thy thunder from us, take away our pride.\" [/tab]\r\n(from O God of Earth and Altar by G. K. Chesterton)\r\n\r\n[Interlude]\r\n|[ch]Am[/ch]        |[ch]Fmaj7[/ch]     |[ch]C[/ch]         |[ch]Gadd4/B[/ch]   | x4\r\n\r\n[Bridge]\r\n|[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]G[/ch]    [ch]D[/ch]    |[ch]F[/ch]    [ch]G[/ch]    | x2\r\n\r\n[Riff]\r\n[tab]|[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]G[/ch]    [ch]D[/ch]    |[ch]F[/ch]    [ch]G[/ch]    | x4\r\n(slow down on two last bars)[/tab]\r\n\r\n[Interlude]\r\n|[ch]Am[/ch]        |[ch]Fmaj7[/ch]     |[ch]C[/ch]         |[ch]Gadd4/B[/ch]   | x2\r\n\r\n[Verse 1]\r\n[tab][ch]Am[/ch]               [ch]Fmaj7[/ch]        \r\nJust a babe in a black abyss, [/tab]\r\n[tab]   [ch]C[/ch]            [ch]Gadd4/B[/ch]\r\nNo reason for a place like this [/tab]\r\n[tab]    [ch]Am[/ch]                 [ch]Fmaj7[/ch]            [ch]C[/ch]     [ch]Gadd4/B[/ch]\r\nThe walls are cold and souls cry out in pain [/tab]\r\n\r\n[Verse 2]\r\n[tab]   [ch]Am[/ch]               [ch]Fmaj7[/ch]        \r\nAn easy way for the blind to go, [/tab]\r\n[tab]  [ch]C[/ch]                   [ch]Gadd4/B[/ch]\r\nA clever path for the fools who know [/tab]\r\n[tab]    [ch]Am[/ch]            [ch]Fmaj7[/ch]           [ch]C[/ch]             [ch]Gadd4/B[/ch]\r\nThe secret of the hanged man - the smile on his lips [/tab]\r\n\r\n[Chorus]\r\n[tab][ch]Am[/ch]         [ch]G[/ch]      [ch]Am[/ch]     [ch]C[/ch]      [ch]D[/ch]\r\n The light of the blind, you'll see [/tab]\r\n[tab]    [ch]F[/ch]     [ch]G[/ch]        [ch]Am[/ch]  [ch]G[/ch]\r\nThe venom tears my spine [/tab]\r\n[tab][ch]Am[/ch]        [ch]C[/ch]      [ch]D[/ch]        [ch]F[/ch]   [ch]G[/ch]            [ch]Am[/ch] *\r\n The eyes of the nile are opening - you'll see[/tab]\r\n\r\n[Interlude]\r\n|[ch]Am[/ch]        |[ch]Fmaj7[/ch]     |[ch]C[/ch]         |[ch]Gadd4/B[/ch]   | \r\n\r\n[Verse 3]\r\n[tab]    [ch]Am[/ch]                [ch]Fmaj7[/ch]           \r\nShe came to me with a serpent's kiss [/tab]\r\n[tab]       [ch]C[/ch]               [ch]Gadd4/B[/ch]\r\nAs the eye of the sun rose on her lips [/tab]\r\n[tab][ch]Am[/ch]                [ch]Fmaj7[/ch]          [ch]C[/ch]    [ch]Gadd4/B[/ch]\r\nMoonlight catches silver tears I cry[/tab]\r\n\r\n[Verse 4]\r\n[tab][ch]Am[/ch]             [ch]Fmaj7[/ch]          \r\nSo we lay in a black embrace [/tab]\r\n[tab]        [ch]C[/ch]                 [ch]Gadd4/B[/ch]\r\nAnd the seed is sown in a holy place [/tab]\r\n[tab]      [ch]Am[/ch]            [ch]Fmaj7[/ch]           [ch]C[/ch]    [ch]Gadd4/B[/ch]\r\nAnd I watched and I waited for the dawn...[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]Am[/ch]         [ch]G[/ch]      [ch]Am[/ch]     [ch]C[/ch]      [ch]D[/ch]\r\n The light of the blind, you'll see [/tab]\r\n[tab]    [ch]F[/ch]     [ch]G[/ch]     [ch]Am[/ch]    [ch]G[/ch]\r\nThe venom tears my spine [/tab]\r\n[tab][ch]Am[/ch]        [ch]C[/ch]      [ch]D[/ch]        [ch]F[/ch]   [ch]G[/ch]            [ch]Am[/ch]    N.C.\r\n The eyes of the nile are opening - you'll see...[/tab]\r\n\r\n[Bridge]\r\n|[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]G[/ch]    [ch]D[/ch]    |[ch]F[/ch]    [ch]G[/ch]    | x4\r\n\r\n[Solo 1]\r\n|[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]D[/ch]   [ch]C[/ch]   [ch]B[/ch] |[ch]Am[/ch]        | x7\r\n|[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]D[/ch]   [ch]C[/ch]   [ch]B[/ch] |\r\n\r\n[Harmony]\r\n|[ch]Am[/ch]   [ch]G[/ch]    |[ch]C[/ch]    [ch]D[/ch]    |[ch]F[/ch]    [ch]G[/ch]    |[ch]C[/ch]    [ch]Am[/ch]   | x4\r\n\r\n[Bridge]\r\n[tab]|[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]Am[/ch] [ch]G[/ch] [ch]Am[/ch]   |[ch]G[/ch]    [ch]D[/ch]    |[ch]F[/ch]    [ch]G[/ch]    | x4\r\n(slow down on two last bars)[/tab]\r\n\r\n[Instrumental]\r\n|[ch]Am[/ch] N.C.   |[ch]F[/ch]  N.C.   |[ch]G[/ch]  N.C.   |[ch]Am[/ch] N.C. [ch]G[/ch] | x2\r\n\r\n[Prologue]\r\n[tab][ch]G[/ch]    [ch]Am[/ch]        [ch]F[/ch]          [ch]G[/ch]                   [ch]Am[/ch]\r\nBind all of us together, ablaze with hope and free [/tab]\r\n[tab][ch]G[/ch]  [ch]Am[/ch]             [ch]F[/ch]            [ch]G[/ch]                     [ch]Am[/ch]\r\nNo storm or heavy weather will rock the boat, you'll see [/tab]\r\n[tab][ch]G[/ch]   [ch]Am[/ch]               [ch]F[/ch]                   [ch]G[/ch]                  [ch]Am[/ch]\r\nThe time has come to close your eyes and still the wind and rain [/tab]\r\n[tab][ch]G[/ch]       [ch]Am[/ch]              [ch]F[/ch]         [ch]G[/ch]              [ch]Am[/ch] *\r\nFor the one who will be king, the watcher in the ring...[/tab]\r\n\r\n[Outro]\r\n[tab]|[ch]Am[/ch]        |[ch]Fmaj7[/ch]     |[ch]C[/ch]         |[ch]Gadd4/B[/ch]   |\r\n                                      It is [/tab]\r\n[tab]|[ch]Am[/ch]        |[ch]Fmaj7[/ch]     |[ch]C[/ch]         |[ch]Gadd4/B[/ch]   |\r\n you,      ooh...                     It is [/tab]\r\n[tab]|[ch]Am[/ch]\r\n you...[/tab]\r\n\r\n-TTP"
+}

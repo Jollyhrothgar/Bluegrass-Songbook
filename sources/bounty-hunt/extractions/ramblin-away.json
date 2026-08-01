@@ -1,0 +1,9 @@
+{
+ "wanted": {
+  "title": "Ramblin Away",
+  "type": "Vocal",
+  "wanted_source": "bluegrass-lyrics"
+ },
+ "status": "error: AttributeError(\"'str' object has no attribute 'get'\")",
+ "scraped_at": "2026-08-01T12:47:04"
+}

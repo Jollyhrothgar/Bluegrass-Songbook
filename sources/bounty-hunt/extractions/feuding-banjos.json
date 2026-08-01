@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Feuding Banjos",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Eric Weissberg",
+   "Arthur Smith",
+   "Don Reno",
+   "Frank Wakefield"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:05:30",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

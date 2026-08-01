@@ -1,0 +1,13 @@
+id: sweet-heaven-when-i-die
+title: Sweet Heaven When I Die
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-sweet-heaven-when-i-die.txt
+    source_url: https://docs.google.com/document/d/1NuB_kjlCqPcO_zrgxL3J5hnoQsOdUvmaTc1qKbzdDiU/edit?usp=sharing
+    imported_at: '2026-08-01'

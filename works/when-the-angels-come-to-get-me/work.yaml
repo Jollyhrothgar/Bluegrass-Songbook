@@ -1,0 +1,12 @@
+id: when-the-angels-come-to-get-me
+title: When The Angels Come To Get Me
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/when-the-angels-come-to-get-me/
+    imported_at: '2026-08-01'

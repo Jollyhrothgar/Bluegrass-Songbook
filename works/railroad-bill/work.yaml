@@ -1,0 +1,13 @@
+id: railroad-bill
+title: Railroad Bill
+artist: Crooked Still
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: railroad-bill.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/crooked-still/railroad-bill-chords-5335029
+    imported_at: '2026-08-01'

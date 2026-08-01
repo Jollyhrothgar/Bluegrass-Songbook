@@ -1,0 +1,13 @@
+id: mairis-wedding
+title: Mairi's Wedding
+artist: The High Kings
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mairi-s-wedding.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-high-kings/maries-wedding-chords-1443590
+    imported_at: '2026-08-01'

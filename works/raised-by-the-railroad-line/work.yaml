@@ -1,0 +1,13 @@
+id: raised-by-the-railroad-line
+title: Raised by the Railroad Line
+artist: The Seldom Scene
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: raised-by-the-railroad-line.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-seldom-scene/raised-by-the-railroad-line-chords-5212767
+    imported_at: '2026-08-01'

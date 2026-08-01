@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Bill Cheatum",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Hog-Eyed Man",
+   "Bob Walters",
+   "Marion Sumner",
+   "The Seldom Scene"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:14:59",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

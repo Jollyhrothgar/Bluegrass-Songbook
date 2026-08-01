@@ -1,0 +1,35 @@
+# title: Waltz You Saved for Me, The
+# artist: Merle Haggard
+# source_url: https://tabs.ultimate-guitar.com/tab/merle-haggard/the-waltz-you-saved-for-me-chords-4129522
+# fetched_at: 2026-08-01T12:22:09
+
+[Intro]
+F   Bb  F  F7
+Bb  Bbm F
+F   Bb  F  D7
+G7      C7
+
+F   Bb  F  F7
+Bb      A7
+D   D7  G7 G
+F   C7  F  C7
+
+
+[Verse]
+        F           Bb        F     F7
+Ever in dreams with you, I'll sway, dear
+       Bb        Bbm       F
+To the waltz you saved for me
+        F            Bb   F    D7
+Ever in dreams while I'm away, dear
+     G7           C7
+I'll hear this melody
+
+            F       Bb     F    F7
+Whisper goodbye and gently say, dear
+         Bb             A7
+That in all the days to be
+         D   D7     G7 G
+You will sometime remember
+    F         C7        F
+The waltz you saved for me

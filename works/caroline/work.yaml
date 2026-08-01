@@ -1,0 +1,13 @@
+id: caroline
+title: Caroline
+artist: Steve Martin
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: caroline.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/steve-martin/caroline-chords-2164527
+    imported_at: '2026-08-01'

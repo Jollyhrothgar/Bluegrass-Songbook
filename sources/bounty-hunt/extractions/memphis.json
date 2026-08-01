@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Memphis",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 9,
+  "core": true,
+  "artists": [
+   "Mike Seeger",
+   "The Wood Brothers",
+   "Joyce Andersen",
+   "Jim and Jesse"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:00:48",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1049642,
+  "song_id": 259940,
+  "song_name": "Memphis",
+  "artist_id": 11193,
+  "artist_name": "Johnny Rivers",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 220,
+  "difficulty": "intermediate",
+  "rating": 4.80451,
+  "date": "1304035201",
+  "status": "approved",
+  "preset_id": 64082,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 160515
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/2/1283873/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/1/11186/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1755201983,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Memphis chords\r\nJohnny Rivers  1964 (Chuck Berry Memphis, Tennessee 1959) *\r\n\r\nhttps://en.wikipedia.org/wiki/Memphis,_Tennessee_(song)\r\n\r\n[Intro]\r\n\r\n[tab]e|-0-0-0-----------0-0-0----------0-0-0------------------|\r\nB|-5-3-0-0---0-----5-3-0-0---0----5-3-0-0---0------------|\r\nG|-------0h2-0-----------0h2-0----------0h2-0------------|\r\nD|-------------2---------------2--------------2--2-2-----|\r\nA|-----------------------------------------------2-2-----|\r\nE|-----------------------------------------------0-0-----|[/tab]\r\n\r\n[ch]E[/ch]\r\n\r\n[tab]     [ch]B7[/ch]\r\nLong distance information, give me Memphis Tennessee[/tab]\r\n\r\nHelp me find a party that tried to get in touch with me\r\n[tab]    [ch]E[/ch]                              [ch]E7[/ch]                  [ch]E[/ch]\r\nShe could not leave a number but I know who placed the call[/tab]\r\n[tab]          [ch]B7[/ch]                                          [ch]E[/ch]\r\n'Cause my uncle took a message and he wrote it on the wall[/tab]\r\n\r\n[tab][ch]B7[/ch]\r\nHelp me, information, get in touch with my Marie[/tab]\r\n\r\nShe's the only one who'd call me here from Memphis Tennessee\r\n[tab]    [ch]E[/ch]                          [ch]E7[/ch]          [ch]E[/ch]  \r\nHer home is on the south side, high upon a ridge[/tab]\r\n[tab][ch]B7[/ch]                          [ch]B[/ch]           [ch]E[/ch]\r\nJust a half a mile from the Mississippi bridge[/tab]\r\n\r\n[ch]B7[/ch]   [ch]E[/ch] [ch]E7[/ch] [ch]E[/ch]   [ch]B7[/ch] [ch]B[/ch] [ch]E[/ch]\r\n\r\n[tab]     [ch]B7[/ch]\r\nLast time I saw Marie she was wavin' me goodbye[/tab]\r\n\r\nWith \"hurry-home\" drops on her cheek that trickled from her eye\r\n[tab]    [ch]E[/ch]                                [ch]E7[/ch]           [ch]E[/ch]\r\nBut we were pulled apart because her mom did not agree[/tab]\r\n[tab]    [ch]B7[/ch]                           [ch]B[/ch]             [ch]E[/ch]\r\nAnd tore apart our happy home in Memphis Tennessee[/tab]\r\n\r\n[tab][ch]B7[/ch]\r\nHelp me, information, more than that I cannot add[/tab]\r\n\r\nOnly that I miss her and all the fun we had\r\n[tab]  [ch]E[/ch]                          [ch]E7[/ch]          [ch]E[/ch]\r\nMarie is only six years old, information please[/tab]\r\n[tab][ch]B7[/ch]                              [ch]B[/ch]             [ch]E[/ch]\r\nTry to put me through to her in Memphis Tennessee[/tab]\r\n\r\n[ch]E[/ch]  [ch]B7[/ch]  [ch]B[/ch]  [ch]E[/ch]\r\n\r\n* Alternates:\r\n\r\nCapo II\r\n\r\n[ch]B7[/ch] = [ch]A7[/ch]\r\n[ch]E[/ch]  = [ch]D[/ch]\r\n[ch]E7[/ch] = [ch]D7[/ch]\r\n[ch]B[/ch]  = [ch]A[/ch]\r\n\r\nOpen (These chords are not in the original key)\r\n\r\n[ch]B7[/ch] = [ch]A7[/ch]\r\n[ch]E[/ch]  = [ch]D[/ch]\r\n[ch]E7[/ch] = [ch]D7[/ch]\r\n[ch]B[/ch]  = [ch]A[/ch]\r\n\r\nSet8"
+}

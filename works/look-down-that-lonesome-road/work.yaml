@@ -1,0 +1,14 @@
+id: look-down-that-lonesome-road
+title: Look Down That Lonesome Road
+artist: Tim O'Brien
+default_key: E
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-look-down-that-lonesome-road.txt
+    source_url: https://docs.google.com/document/d/17aDdftbRjcc9kVQOJmuoqNiJUl1Y8Ct7/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Indiana (Back Home Again in Indiana)",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Vassar Clements",
+   "The Grascals",
+   "The Country Gentlemen",
+   "Lonnie Hoppers"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:27:09",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 6
+ },
+ "candidate": null,
+ "content": null
+}

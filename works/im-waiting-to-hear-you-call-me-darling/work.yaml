@@ -1,0 +1,12 @@
+id: im-waiting-to-hear-you-call-me-darling
+title: I’m Waiting To Hear You Call Me Darling
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/im-waiting-to-hear-you-call-me-darling/
+    imported_at: '2026-08-01'

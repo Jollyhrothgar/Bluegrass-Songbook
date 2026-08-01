@@ -1,0 +1,71 @@
+{
+ "wanted": {
+  "title": "Wabash Cannon Ball",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Mac Wiseman",
+   "Jim and Jesse",
+   "Don Reno",
+   "The Tennessee Cut-Ups"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:07:35",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 7.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2127455,
+  "song_id": 2553739,
+  "song_name": "Wabash Cannon Ball",
+  "artist_id": 84817,
+  "artist_name": "A. P. Carter",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 5,
+  "difficulty": "",
+  "rating": 4.8005,
+  "date": "1504162145",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 1,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1504895153,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse]\r\n[tab][ch]C[/ch]                                                 [ch]F[/ch]\r\nFrom the great Atlantic Ocean to the wide Pacific shore,[/tab]\r\n[tab]       [ch]G[/ch]                                                    [ch]C[/ch]\r\nTo the green old flow'ring mountains, to the ice-bound Labrador[/tab]\r\n[tab][ch]C[/ch]                                                     [ch]F[/ch]\r\nShe's long and tall and handsome and known quite well to all.[/tab]\r\n[tab][ch]G[/ch]                                                          [ch]C[/ch]\r\nShe's the modern combination called the Wabash Cannonball.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]C[/ch]                                           [ch]F[/ch]\r\nSo listen to the jingle, the jumble and the roar[/tab]\r\n[tab]       [ch]G[/ch]                                                        [ch]C[/ch]\r\nas she glides along the woodlands, through the hills and by the shore.[/tab]\r\n[tab][ch]C[/ch]                                                            [ch]F[/ch]\r\nHear the mighty rush of the engine, and the lonesome hoboes squall,[/tab]\r\n[tab]          [ch]G[/ch]                                               [ch]C[/ch]\r\nWhile riding through the jungle on the Wabash Cannonball.[/tab]\r\n\r\n[Verse]\r\n[tab][ch]C[/ch]                                                [ch]F[/ch]\r\nShe came in from Birmingham on a cold and frosty day.[/tab]\r\n[tab]        [ch]G[/ch]                                                  [ch]C[/ch]\r\nAs she rolled into the station, you could hear the people say,[/tab]\r\n[tab] [ch]C[/ch]                                                            [ch]F[/ch]\r\n\"There\u2019s a gal out there form Tennessee, she\u2019s long, boy, and tall.[/tab]\r\n[tab][ch]G[/ch]                                                          [ch]C[/ch]\r\nShe's the modern combination called the Wabash Cannonball.\"[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]C[/ch]                                           [ch]F[/ch]\r\nSo listen to the jingle, the jumble and the roar[/tab]\r\n[tab]           [ch]G[/ch]                                                        [ch]C[/ch]\r\nas she glides along the woodlands, through the hills and by the shore.[/tab]\r\n[tab][ch]C[/ch]                                                            [ch]F[/ch]\r\nHear the mighty rush of the engine, and the lonesome hoboes squall,[/tab]\r\n[tab]      [ch]G[/ch]                                               [ch]C[/ch]\r\nWhile riding through the jungle on the Wabash Cannonball.[/tab]\r\n\r\n[Verse]\r\n[tab]        [ch]C[/ch]                                               [ch]F[/ch]\r\nNow the Eastern states are dandy, so the all the people say,[/tab]\r\n[tab]     [ch]G[/ch]                                          [ch]C[/ch]\r\nFrom New York to Saint Louis and Chicago by the way,[/tab]\r\n[tab]         [ch]C[/ch]                                             [ch]F[/ch]\r\nFrom the lakes of Minnehaha where the laughing waters fall,[/tab]\r\n[tab]    [ch]G[/ch]                                                   [ch]C[/ch]\r\nNo change in standard gauging on the Wabash Cannonball.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]C[/ch]                                           [ch]F[/ch]\r\nSo listen to the jingle, the jumble and the roar[/tab]\r\n[tab]           [ch]G[/ch]                                                        [ch]C[/ch]\r\nas she glides along the woodlands, through the hills and by the shore.[/tab]\r\n[tab][ch]C[/ch]                                                            [ch]F[/ch]\r\nHear the mighty rush of the engine, and the lonesome hoboes squall,[/tab]\r\n[tab]          [ch]G[/ch]                                               [ch]C[/ch]\r\nWhile riding through the jungle on the Wabash Cannonball.[/tab]"
+}

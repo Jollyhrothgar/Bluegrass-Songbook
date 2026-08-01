@@ -1,0 +1,13 @@
+id: lowlands
+title: Lowlands
+artist: Nitty Gritty Dirt Band
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: lowlands.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/nitty-gritty-dirt-band/the-lowlands-chords-1477484
+    imported_at: '2026-08-01'

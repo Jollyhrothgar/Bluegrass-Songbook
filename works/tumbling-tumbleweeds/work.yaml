@@ -1,0 +1,13 @@
+id: tumbling-tumbleweeds
+title: Tumbling Tumbleweeds
+artist: Sons of the Pioneers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: tumbling-tumbleweeds.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/sons-of-the-pioneers/tumbling-tumbleweeds-chords-84312
+    imported_at: '2026-08-01'

@@ -1,0 +1,14 @@
+id: cold-heart
+title: Cold Heart
+artist: Hank Williams
+default_key: A
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-cold-heart.txt
+    source_url: https://docs.google.com/document/d/1mMIh7zjyg_aDOODysoTf4QNnMW0Jz1td/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

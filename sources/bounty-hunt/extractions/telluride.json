@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Telluride",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Bearfoot",
+   "Nitty Gritty Dirt Band",
+   "Yonder Mountain String Band",
+   "David Grisman"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:20:49",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 9.4,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1745646,
+  "song_id": 1608540,
+  "song_name": "Telluride",
+  "artist_id": 11595,
+  "artist_name": "Kate Wolf",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 21,
+  "difficulty": "novice",
+  "rating": 4.8502,
+  "date": "1434572024",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 894518
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/3/132760/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/4/4408/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1434572024,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Kate Wolf - Telluride\r\n\r\n\r\nCAPO: 2nd Fret\r\n\r\n\r\n\r\nINTRO: [ch]G[/ch]  [ch]D[/ch]  [ch]Am[/ch]  [ch]G[/ch]  [ch]Am[/ch]  [ch]C[/ch]  [ch]Am[/ch]  [ch]D[/ch]  [ch]C[/ch]  [ch]G[/ch]  [ch]B7[/ch]  [ch]Em[/ch]  [ch]Am[/ch]  [ch]F[/ch]  [ch]D[/ch]\r\n\r\n[tab]      [ch]G[/ch]          [ch]D[/ch]         [ch]Am[/ch]        [ch]G[/ch]\r\nOn my way to the Telluride sawmill today[/tab]\r\n[tab]  [ch]Am[/ch]            [ch]C[/ch]                [ch]Am[/ch]         [ch]D[/ch]\r\nI thought of an old friend who'd long gone away[/tab]\r\n[tab][ch]C[/ch]          [ch]G[/ch]                  [ch]B7[/ch]          [ch]Em[/ch]\r\nHe took to travelling when he turned seventeen[/tab]\r\n[tab]    [ch]Am[/ch]          [ch]F[/ch]             [ch]D[/ch] \r\nAnd I stayed at home with the family[/tab]\r\n\r\n\r\n[tab]  [ch]G[/ch]            [ch]D[/ch]             [ch]Am[/ch]          [ch]G[/ch]\r\nA collector of dreams was my old friend[/tab]\r\n[tab]   [ch]Am[/ch]               [ch]C[/ch]            [ch]Am[/ch]    [ch]D[/ch]\r\nHe talked about the times yet to come[/tab]\r\n[tab]    [ch]C[/ch]         [ch]G[/ch]              [ch]B7[/ch]        [ch]Em[/ch]\r\nBut I took to working at the Telluride sawmill[/tab]\r\n[tab]         [ch]Am[/ch]                 [ch]F[/ch]             [ch]D[/ch] \r\nAnd I've been there since I turned twenty-one[/tab]\r\n\r\n\r\nCHORUS:\r\n[tab]    [ch]C[/ch]           [ch]G[/ch]                [ch]B7[/ch]           [ch]Em[/ch]   \r\nThe river keeps rolling past the south county line[/tab]\r\n[tab]    [ch]Am[/ch]           [ch]C[/ch]                 [ch]Am[/ch]         [ch]D[/ch]  \r\nI'd love to roll with it, but I've run out of time[/tab]\r\n[tab]    [ch]C[/ch]         [ch]G[/ch]           [ch]B7[/ch]          [ch]C[/ch]   \r\nThe days roll by like the logs at the river[/tab]\r\n[tab]      [ch]Am[/ch]           [ch]F[/ch]          [ch]D[/ch]    \r\nAnd I know I ain't getting no younger[/tab]\r\n\r\n\r\n[tab]        [ch]G[/ch]            [ch]D[/ch]         [ch]Am[/ch]       [ch]G[/ch]\r\nWe were kids growing up in the Rockies[/tab]\r\n[tab]         [ch]Am[/ch]             [ch]C[/ch]            [ch]Am[/ch]    [ch]D[/ch]\r\nWhen the mountains were young and so free[/tab]\r\n[tab][ch]C[/ch]         [ch]G[/ch]             [ch]B7[/ch]     [ch]Em[/ch]\r\nHe was my friend and my equal[/tab]\r\n[tab]          [ch]Am[/ch]           [ch]F[/ch]          [ch]D[/ch] \r\nThough in years he was younger by three[/tab]\r\n\r\n\r\n[tab]        [ch]G[/ch]         [ch]D[/ch]     [ch]Am[/ch]       [ch]G[/ch]\r\nWe grew up in the usual fashion[/tab]\r\n[tab]      [ch]Am[/ch]         [ch]C[/ch]          [ch]Am[/ch]   [ch]D[/ch]\r\nNever wanting to grow up at all[/tab]\r\n[tab]    [ch]C[/ch]         [ch]G[/ch]          [ch]B7[/ch]           [ch]Em[/ch]\r\nBut I found a family and he found the rails[/tab]\r\n[tab]   [ch]Am[/ch]          [ch]F[/ch]               [ch]D[/ch] \r\nHe left on the train for Saint Paul[/tab]\r\n\r\n\r\nCHORUS:\r\n[tab]    [ch]C[/ch]           [ch]G[/ch]                [ch]B7[/ch]           [ch]Em[/ch]   \r\nThe river keeps rolling past the south county line[/tab]\r\n[tab]    [ch]Am[/ch]           [ch]C[/ch]                 [ch]Am[/ch]         [ch]D[/ch]  \r\nI'd love to roll with it, but I've run out of time[/tab]\r\n[tab]    [ch]C[/ch]         [ch]G[/ch]           [ch]B7[/ch]          [ch]C[/ch]   \r\nThe days roll by like the logs at the river[/tab]\r\n[tab]      [ch]Am[/ch]          [ch]F[/ch]           [ch]D[/ch]    \r\nAnd I don't often think of my old friend[/tab]\r\n\r\n\r\nINSTRUMENTAL: [ch]G[/ch]  [ch]D[/ch]  [ch]Am[/ch]  [ch]G[/ch]  [ch]Am[/ch]  [ch]C[/ch]  [ch]Am[/ch]  [ch]D[/ch]  [ch]C[/ch]  [ch]G[/ch]  [ch]B7[/ch]  [ch]Em[/ch]  [ch]Am[/ch]  [ch]F[/ch]  [ch]D[/ch]\r\n\r\n\r\nCHORUS 2:\r\n[tab]    [ch]C[/ch]                [ch]G[/ch]          [ch]B7[/ch]      [ch]Em[/ch]   \r\nMr. Preacher can you give me an answer[/tab]\r\n[tab]        [ch]Am[/ch]       [ch]C[/ch]       [ch]Am[/ch]   [ch]D[/ch]  \r\nLord, I can't go on this way [/tab]\r\n[tab][ch]C[/ch]           [ch]G[/ch]         [ch]B7[/ch]            [ch]C[/ch]   \r\nI'm getting old and I don't feel so good[/tab]\r\n[tab]       [ch]Am[/ch]        [ch]F[/ch]          [ch]D[/ch]    \r\nHave I just been wasting my time[/tab]\r\n[tab]     [ch]G[/ch]          [ch]C[/ch] [ch]G[/ch]   [ch]B7[/ch]  [ch]Em[/ch]\r\nTelluride, Telluride[/tab]\r\n[tab]       [ch]Am[/ch]        [ch]F[/ch]          [ch]D[/ch]\r\nHave I just been wasting my time[/tab]"
+}

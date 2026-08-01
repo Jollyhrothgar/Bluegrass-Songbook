@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "You\u2019re Not a Drop in the Bucket",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Doc Watson",
+   "Blue Denim",
+   "The Earls of Leicester",
+   "Lester Flatt & Earl Scruggs"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:21:37",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

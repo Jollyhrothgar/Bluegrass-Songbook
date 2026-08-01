@@ -1,0 +1,13 @@
+id: my-little-girl-from-tennessee
+title: My Little Girl From Tennessee
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-my-little-girl-from-tennessee.txt
+    source_url: https://docs.google.com/document/d/1r8_W12fL8cqzKEQrLyjXetwCNy-9pMQB/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

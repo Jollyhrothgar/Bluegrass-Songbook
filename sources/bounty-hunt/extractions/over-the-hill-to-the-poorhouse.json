@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Over the Hill to the Poorhouse",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:07:27",
+ "status": "accepted",
+ "validation": {
+  "tier": "bluegrass-artist",
+  "score": 50,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 4611764,
+  "song_id": 8027396,
+  "song_name": "Over The Hill To The Poorhouse",
+  "artist_id": 5193,
+  "artist_name": "Flatt & Scruggs",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1674300203",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "Basic chords for the whole song.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1054049
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/3/6/362057/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/4/144046/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1674300203,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]G[/ch] [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n[Verse 1]\r\n[tab]                          [ch]C[/ch]\r\nOh how can it be they have driven[/tab]\r\n[tab]      [ch]D[/ch]                      [ch]G[/ch]\r\nTheir father so helpless and old[/tab]\r\n[tab]                           [ch]C[/ch]\r\nOh God may their crimes be forgiven[/tab]\r\n[tab]   [ch]D[/ch]                      [ch]G[/ch]\r\nTo perish out here in the cold[/tab]\r\n\r\n[tab]                          [ch]C[/ch]\r\nOh heaven I'm sad and I'm wearied[/tab]\r\n[tab]        [ch]D[/ch]                             [ch]G[/ch]\r\nSee the tears how they course down my cheek[/tab]\r\n[tab]                            [ch]C[/ch]\r\nThis world is so lonely and weary[/tab]\r\n[tab]   [ch]D[/ch]                       [ch]G[/ch]\r\nMy heart for relief vainly seeks[/tab]\r\n\r\n[Chorus]\r\n[tab]    [ch]G[/ch]\r\nI'm old I'm helpless and feeble[/tab]\r\n[tab]        [ch]D[/ch]\r\nAnd the days of my youth have gone by[/tab]\r\n[tab]         [ch]G[/ch]                    [ch]C[/ch]\r\nAnd it's over the hill to the poor house[/tab]\r\n[tab]       [ch]D[/ch]                     [ch]G[/ch]\r\nI must wander alone there to die[/tab]\r\n\r\n[ch]G[/ch] [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n[Verse 2]\r\n[tab][ch]G[/ch]                         [ch]C[/ch]\r\nLong years since Mary was taken[/tab]\r\n[tab]   [ch]D[/ch]                     [ch]G[/ch]\r\nMy faithful affectionate wife[/tab]\r\n[tab]                               [ch]C[/ch]\r\nSince then I've been alone and forsaken[/tab]\r\n[tab]    [ch]D[/ch]                        [ch]G[/ch]\r\nThe light has died out of my life[/tab]\r\n\r\n[tab]                          [ch]C[/ch]\r\nOh me on the doorstep up yonder[/tab]\r\n[tab]     [ch]D[/ch]                       [ch]G[/ch]\r\nI've sit with my babes on my knee[/tab]\r\n[tab]                       [ch]C[/ch]\r\nNo father was happy or fonder[/tab]\r\n[tab]     [ch]D[/ch]                   [ch]G[/ch]\r\nThan I of my little ones three[/tab]\r\n\r\n[Chorus]\r\n[tab]    [ch]G[/ch]\r\nI'm old I'm helpless and feeble[/tab]\r\n[tab]        [ch]D[/ch]\r\nAnd the days of my youth have gone by[/tab]\r\n[tab]         [ch]G[/ch]                    [ch]C[/ch]\r\nAnd it's over the hill to the poor house[/tab]\r\n[tab]       [ch]D[/ch]                     [ch]G[/ch]\r\nI must wander alone there to die[/tab]\r\n\r\n[ch]G[/ch] [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n[Verse 3]\r\n[tab]                          [ch]C[/ch]\r\nThe boys were so rosy and cheerful[/tab]\r\n[tab]    [ch]D[/ch]                     [ch]G[/ch]\r\nAnd Lily would chatter so sweet[/tab]\r\n[tab]                               [ch]C[/ch]\r\nGod knows how their father has loved them[/tab]\r\n[tab]    [ch]D[/ch]                             [ch]G[/ch]\r\nBut they've driven him out on the street[/tab]\r\n\r\n[tab]                                [ch]C[/ch]\r\nI gave them the place that they lived on[/tab]\r\n[tab]  [ch]D[/ch]                    [ch]G[/ch]\r\nA deed to the farm and more[/tab]\r\n[tab]                                [ch]C[/ch]\r\nI gave them the house they were born in[/tab]\r\n[tab]    [ch]D[/ch]                         [ch]G[/ch]\r\nAnd now I am turned from it's door[/tab]\r\n\r\n[Chorus]\r\n[tab]    [ch]G[/ch]\r\nI'm old I'm helpless and feeble[/tab]\r\n[tab]        [ch]D[/ch]\r\nAnd the days of my youth have gone by[/tab]\r\n[tab]         [ch]G[/ch]                    [ch]C[/ch]\r\nAnd it's over the hill to the poor house[/tab]\r\n[tab]       [ch]D[/ch]                     [ch]G[/ch]\r\nI must wander alone there to die[/tab]\r\n\r\n[ch]G[/ch] [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]"
+}

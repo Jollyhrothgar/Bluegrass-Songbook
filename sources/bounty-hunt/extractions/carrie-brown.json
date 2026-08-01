@@ -1,0 +1,76 @@
+{
+ "wanted": {
+  "title": "Carrie Brown",
+  "type": "Vocal",
+  "key": "G",
+  "difficulty": "Intermediate",
+  "coverage": 3,
+  "core": false,
+  "artists": [
+   "Hillbilly Lovechild",
+   "The Del McCoury Band",
+   "Steve Earle"
+  ],
+  "notes": "modern",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:34:31",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 109.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1878159,
+  "song_id": 1678241,
+  "song_name": "Carrie Brown",
+  "artist_id": 10222,
+  "artist_name": "Steve Earle",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 20,
+  "difficulty": "novice",
+  "rating": 4.49583,
+  "date": "1474889396",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 70555
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/3/6/367935/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/173597/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1474889396,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n\r\n[tab][ch]G[/ch]                                    [ch]C[/ch]\r\nCarrie darlin' Carrie Carrie Brown I cry[/tab]\r\n[tab]                 [ch]G[/ch]              [ch]Em[/ch]               [ch]D[/ch]\r\nIf I can't marry Carrie Brown believe I'd rather die[/tab]\r\n[tab][ch]G[/ch]                  [ch]C[/ch] \r\nBelieve I'd rather die boys[/tab]\r\n[tab][ch]D[/ch]                  [ch]G[/ch]\r\nBelieve I'd rather die[/tab]\r\n \r\n[ch]G[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]G[/ch] \r\nThe first time I saw Carrie Brown[/tab]\r\n[tab]                     [ch]C[/ch]\r\nShe was so young and fair[/tab]\r\n[tab]                         [ch]G[/ch]                  [ch]Em[/ch]            [ch]D[/ch]\r\nA voice like spring rain fallin' down and sunlight in her hair[/tab]\r\n[tab]    [ch]G[/ch]                                         [ch]C[/ch]\r\nI'd never seen her face before so I asked all around[/tab]\r\n[tab]                 [ch]G[/ch]                           [ch]D[/ch]          [ch]G[/ch]\r\nHer daddy owns a grocery store and she lives in Bristol town[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n\r\n[tab][ch]G[/ch]                                    [ch]C[/ch]\r\nCarrie darlin' Carrie Carrie Brown I cry[/tab]\r\n[tab]                 [ch]G[/ch]              [ch]Em[/ch]               [ch]D[/ch]\r\nIf I can't marry Carrie Brown believe I'd rather die[/tab]\r\n[tab][ch]G[/ch]                  [ch]C[/ch] \r\nBelieve I'd rather die boys[/tab]\r\n[tab][ch]D[/ch]                  [ch]G[/ch]\r\nBelieve I'd rather die[/tab]\r\n\r\n[ch]G[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n\r\n[Verse 2]\r\n\r\n\r\n[tab][ch]G[/ch] \r\nI laid my last ten dollars down[/tab]\r\n[tab]                       [ch]C[/ch]\r\nThough I didn't need a thing[/tab]\r\n[tab]                    [ch]G[/ch]\r\nJust to touch sweet Carrie Brown[/tab]\r\n[tab]         [ch]Em[/ch]           [ch]D[/ch]\r\nWhen she handed me my change[/tab]\r\n[tab]  [ch]G[/ch]                                                   [ch]C[/ch]\r\nI hung around 'till closin' time I scarce believed my eyes[/tab]\r\n[tab]                   [ch]G[/ch]\r\nMy darlin' walkin' arm in arm[/tab]\r\n[tab]       [ch]D[/ch]               [ch]G[/ch]\r\nWith a boy named Billy Wise[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n\r\n[tab][ch]G[/ch]                                    [ch]C[/ch]\r\nCarrie darlin' Carrie Carrie Brown I cry[/tab]\r\n[tab]                 [ch]G[/ch]              [ch]Em[/ch]               [ch]D[/ch]\r\nIf I can't marry Carrie Brown believe I'd rather die[/tab]\r\n[tab][ch]G[/ch]                  [ch]C[/ch] \r\nBelieve I'd rather die boys[/tab]\r\n[tab][ch]D[/ch]                  [ch]G[/ch]\r\nBelieve I'd rather die[/tab]\r\n\r\n[Verse 3]\r\n\r\n\r\n[tab][ch]G[/ch]                                               [ch]C[/ch]\r\nI walked around in Bristol town a bitter broken man[/tab]\r\n[tab]                       [ch]G[/ch]                [ch]Em[/ch]             [ch]D[/ch]\r\nA heart that pined for Carrie Brown and a pistol in my hand[/tab]\r\n[tab]   [ch]G[/ch]                                             [ch]C[/ch]\r\nWe met again on State Street poor Billy Wise and me[/tab]\r\n[tab]              [ch]G[/ch]               [ch]D[/ch]             [ch]G[/ch]\r\nI shot him in Virginia and he died in Tennessee[/tab]\r\n\r\n[ch]G[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n\r\n[Chorus]\r\n\r\n\r\n[tab][ch]G[/ch]                                    [ch]C[/ch]\r\nCarrie darlin' Carrie Carrie Brown I cry[/tab]\r\n[tab]                 [ch]G[/ch]              [ch]Em[/ch]               [ch]D[/ch]\r\nIf I can't marry Carrie Brown believe I'd rather die[/tab]\r\n[tab][ch]G[/ch]                  [ch]C[/ch] \r\nBelieve I'd rather die boys[/tab]\r\n[tab][ch]D[/ch]                  [ch]G[/ch]\r\nBelieve I'd rather die[/tab]\r\n\r\n\r\n[Verse 4]\r\n\r\n\r\n[tab][ch]G[/ch]                                                [ch]C[/ch]\r\nNow I'm down in the Bristol jail and all I do is cry[/tab]\r\n[tab]                      [ch]G[/ch]                 [ch]Em[/ch]                [ch]D[/ch]\r\n'Cause the jury found me guilty and the judge says I must die[/tab]\r\n[tab]    [ch]G[/ch] \r\nI'm just a poor young mountain boy[/tab]\r\n[tab]                    [ch]C[/ch]\r\nAin't never been to town[/tab]\r\n[tab]                 [ch]G[/ch]             [ch]D[/ch]                  [ch]G[/ch]\r\nAnd I've come to ruination for the love of Carrie Brown[/tab]\r\n\r\n[ch]G[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n\r\n[Chorus]\r\n\r\n\r\n[tab][ch]G[/ch]                                    [ch]C[/ch]\r\nCarrie darlin' Carrie Carrie Brown I cry[/tab]\r\n[tab]                 [ch]G[/ch]              [ch]Em[/ch]               [ch]D[/ch]\r\nIf I can't marry Carrie Brown believe I'd rather die[/tab]\r\n[tab][ch]G[/ch]                  [ch]C[/ch] \r\nBelieve I'd rather die boys[/tab]\r\n[tab][ch]D[/ch]                  [ch]G[/ch]\r\nBelieve I'd rather die[/tab]\r\n\r\n\r\n[Outro]\r\n\r\n[ch]G[/ch] [ch]C[/ch] [ch]G[/ch] [ch]D[/ch] [ch]G[/ch]"
+}

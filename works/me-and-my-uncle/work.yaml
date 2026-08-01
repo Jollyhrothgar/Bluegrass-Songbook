@@ -1,0 +1,14 @@
+id: me-and-my-uncle
+title: Me and My Uncle
+artist: Grateful Dead
+default_key: Em
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-me-and-my-uncle.txt
+    source_url: https://docs.google.com/document/d/1iaBHlx1pGfstjc0Mqdfu-b7yfqjOR3uD/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

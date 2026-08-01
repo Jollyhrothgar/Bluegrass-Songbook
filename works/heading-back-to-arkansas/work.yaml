@@ -1,0 +1,12 @@
+id: heading-back-to-arkansas
+title: Heading Back to Arkansas
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/heading-back-to-arkansas/
+    imported_at: '2026-08-01'

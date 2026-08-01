@@ -1,0 +1,13 @@
+id: little-beggarman
+title: Little Beggarman
+artist: The Clancy Brothers and Tommy Makem
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: little-beggarman.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-clancy-brothers-and-tommy-makem/the-little-beggarman-chords-2403887
+    imported_at: '2026-08-01'

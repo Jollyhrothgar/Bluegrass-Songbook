@@ -1,0 +1,91 @@
+# title: Ruben's Train
+# artist: The Tillers
+# source_url: https://tabs.ultimate-guitar.com/tab/the-tillers/rubens-train-chords-2711802
+# fetched_at: 2026-08-01T11:07:18
+
+-------------------------------------------------------------------------------
+        Ruben's Train   The Tillers
+---------------------------------------------------------------- 2009 ---------------
+Tabbed by: Mike Lydiat
+E-mail: mike@docsworkshop.co.uk
+Tuning:EADGBE
+
+The chord pattern is pretty straightforward but they vary the 'interlude' patterns between the verses.
+Capo on fret 2 to play along here:
+https://www.youtube.com/watch?v=ZaDBZh4Wzw4
+
+
+   VERSE CHORDS  INTERLUDE CHORDS
+   Em B7         G C D B7 Em
+e|-0--2----------3-0-2-2--0-|
+B|-0--0----------0-1-3-0--0-|
+G|-0--2----------0-0-2-2--0-|
+D|-2--1----------0-2-0-1--2-|
+A|-2--2----------2-3-0-2--2-|
+E|-0--x----------3-x-x-x--0-|
+
+[INTRO]
+Em       Em       C       D
+Em       Em       C       D
+Em       Em       C       D
+Em       Em       C       D
+
+[Verse 1]
+     Em
+Well Ruben had a train, he put it on the track
+          Em               B7             Em
+You could hear the whistle blow a hundred miles.
+         Em
+And it's oh me, oh Lordy my,
+          Em               B7             Em
+You could hear the whistle blow a hundred miles.
+
+[INTERLUDE 1]
+Em - - - Em - - - Em - B7 - Em - - -
+ G - - - Em - - - Em - B7 - Em - - -
+
+[Verse 2]
+         Em
+Well the train I ride on is a hundred coaches long
+          Em               B7             Em
+You could hear the whistle blow a hundred miles.
+         Em
+And it's oh me, oh Lordy my,
+          Em               B7             Em
+You could hear the whistle blow a hundred miles.
+
+[INTERLUDE 2]
+Em - - - Em - - - Em - B7 - Em - - -
+ G - - - Em - - -  C -  D - Em - - -
+
+[Verse 3]
+         Em
+Well I'm walkin' down this track I got tears in my eyes
+    Em               B7             Em
+I'm trying to read a letter from my home.
+         Em
+And it's oh me, oh Lordy my,
+    Em               B7             Em
+I'm trying to read a letter from my home.
+
+[INTERLUDE 3]
+Em - - - Em - - - Em - B7 - Em - - -
+ G - - - Em - - - Em - B7 - Em - - - Em - - -
+ C - - -  D - - - Em - - -  Em - - -
+ C - - -  D - - - Em - - -  Em - - -
+ C - - -  D - - - Em - - -  Em - - -
+ C - - -  D - - -
+
+[Verse 4]
+       Em
+Oh the train I ride on is six hundred coaches long
+          Em               B7             Em
+You could hear the whistle blow a hundred miles.
+         Em
+And it's oh me, oh Lordy my,
+          Em               B7             Em
+You could hear the whistle blow a hundred miles.
+         Em
+And it's oh me, oh Lordy my,
+          Em               B7             Em
+You could hear the whistle blow a hundred miles.

@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "Mountain House, The",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:03:18",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 13
+ },
+ "candidate": null,
+ "content": null
+}

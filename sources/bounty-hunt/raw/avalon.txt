@@ -1,0 +1,98 @@
+# title: Avalon
+# artist: Roxy Music
+# source_url: https://tabs.ultimate-guitar.com/tab/roxy-music/avalon-chords-1060866
+# fetched_at: 2026-08-01T11:09:02
+
+---------------------------------------------------------------------------
+                Avalon - Roxy Music
+---------------------------------------------------------------------------
+
+Written by: Bryan Ferry
+From: "Avalon" (1982)
+
+Tabbed by: maguri
+Tuning: Standard
+
+capo: 3rd fret
+play: D
+key: F
+
+For chords in original key, transpose this tab +3 to F (and "use flats").
+
+---------------------------------------------------------------------------
+
+SPECIAL CHORD VOICINGS
+
+capo 3rd fret            no capo (transpose this tab +3)
+          E-A-D-G-B-e           E-A-D-G-B-e
+D/E       0-2-2-2-3-2    F/G    3-x-3-2-1-1
+Cadd9     x-3-2-0-3-0    Ebadd9 x-6-8-8-6-6
+Asus4     x-0-2-2-3-0    Db     x-4-6-6-6-4
+                         Csus4  x-3-5-5-6-3
+                         C      x-3-5-5-5-3
+
+---------------------------------------------------------------------------
+
+[Intro]
+| D/E | % | % | % | 
+
+[Verse 1]
+D          A             G        A
+   Now the party's over,   I'm so tired
+D         A               G        A
+   Then I see you coming    out of nowhere
+D          A           G       A
+   Much communication     in a motion
+D          A             G        A
+   Without conversation      or a notion
+
+[Chorus]
+| Cadd9 | Bb | Asus4 | A | 
+               (Oooh - oooh)
+| Cadd9 | Bb | Asus4 | E | % |
+Avalon
+
+[Verse 2]
+D           A               G         A
+   When the samba takes you    out of nowhere
+D          A                    G        A
+   And the background's fading    out of focus
+D          A                   G       A
+   Yes the picture's changing    every moment
+D           A            G            A
+   And your destination     you don't know it
+
+[Chorus]
+| Cadd9 | Bb | Asus4 | A | 
+               (Oooh - oooh)
+| Cadd9 | Bb | Asus4 | E | % |
+Avalon
+
+[Interlude] / [Middle 8]
+| E | A | E | A |
+(instrumental)
+| E | A | E | A |
+(instrumental)
+E        A          E      A
+Dancing, dancing
+E        A          E      
+Dancing, dancing
+
+[Verse 3]
+D           A            G            A
+   When you bossa nova     there's no holding
+D            A               G         A
+   Would you have me dancing    out of nowhere
+
+[Chorus]
+| Cadd9 | Bb | Asus4 | A | 
+               (Oooh - oooh)
+| Cadd9 | Bb | Asus4 | E | % |
+Avalon
+
+[Outro]
+| D | A | G | A | 
+| D | A | G | A | 
+(vocals ad lib) Avalon, ooh 
+
+(repeat and fade)

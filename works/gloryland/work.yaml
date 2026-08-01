@@ -1,0 +1,13 @@
+id: gloryland
+title: Gloryland
+artist: Ralph Stanley
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: gloryland.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/ralph-stanley/gloryland-chords-4802456
+    imported_at: '2026-08-01'

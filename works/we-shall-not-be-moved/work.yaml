@@ -1,0 +1,13 @@
+id: we-shall-not-be-moved
+title: We Shall Not Be Moved
+artist: Pete Seeger
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: we-shall-not-be-moved.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/pete-seeger/we-shall-not-be-moved-chords-3356516
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: the-wind-that-shakes-the-barley
+title: The Wind That Shakes the Barley
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: wind-that-shakes-the-barley-the.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/the-wind-that-shakes-the-barley-chords-1425179
+    imported_at: '2026-08-01'

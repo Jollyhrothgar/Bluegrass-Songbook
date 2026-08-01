@@ -1,0 +1,12 @@
+id: funny-when-you-feel-that-way
+title: Funny When You Feel That Way
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/funny-when-you-feel-that-way/
+    imported_at: '2026-08-01'

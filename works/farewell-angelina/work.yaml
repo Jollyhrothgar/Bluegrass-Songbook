@@ -1,0 +1,13 @@
+id: farewell-angelina
+title: Farewell Angelina
+artist: The Seldom Scene
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: farewell-angelina.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-seldom-scene/farewell-angelina-chords-5663655
+    imported_at: '2026-08-01'

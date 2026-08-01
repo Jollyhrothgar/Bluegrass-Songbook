@@ -1,0 +1,13 @@
+id: where-rainbows-never-die
+title: Where Rainbows Never Die
+artist: The Steeldrivers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: where-rainbows-never-die.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-steeldrivers/where-rainbows-never-die-chords-1770640
+    imported_at: '2026-08-01'

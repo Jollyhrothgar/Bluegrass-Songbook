@@ -1,0 +1,13 @@
+id: polka-on-a-banjo
+title: Polka on a Banjo
+artist: Flatt Scruggs
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: polka-on-a-banjo.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/flatt-scruggs/polka-on-a-banjo-chords-5251890
+    imported_at: '2026-08-01'

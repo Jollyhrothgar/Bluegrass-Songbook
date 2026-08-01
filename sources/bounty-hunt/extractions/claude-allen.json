@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Claude Allen",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Carolina Tar Heels",
+   "Fred Price",
+   "Hobart Smith",
+   "Clint Howard"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:25",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

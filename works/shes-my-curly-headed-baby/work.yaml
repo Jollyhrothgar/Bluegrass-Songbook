@@ -1,0 +1,12 @@
+id: shes-my-curly-headed-baby
+title: She’s My Curly Headed Baby
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/shes-my-curly-headed-baby/
+    imported_at: '2026-08-01'

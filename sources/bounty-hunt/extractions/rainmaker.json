@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Rainmaker",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Peter Rowan",
+   "Vassar Clements",
+   "Northern Lights",
+   "The Dillards"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:30:05",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 9.4,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 359832,
+  "song_id": 36427,
+  "song_name": "Rainmaker",
+  "artist_id": 1201,
+  "artist_name": "Iron Maiden",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 21,
+  "difficulty": "novice",
+  "rating": 4.8502,
+  "date": "1146268801",
+  "status": "approved",
+  "preset_id": 52790,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1021
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/3/136802/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/4/1451/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1146268801,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Chords:\r\n[ch]Gm/Bb[/ch]  x10033\r\n\r\n[Intro]\r\n[ch]Dm[/ch]   [ch]Bb[/ch]   [ch]Dm[/ch]   [ch]C[/ch]   [ch]Dm[/ch]   [ch]Bb[/ch]   [ch]C[/ch]   [ch]C[/ch]\r\n\r\n[Verse]\r\n[tab][ch]Dm[/ch]         [ch]Bb[/ch]                    [ch]F[/ch]            [ch]C[/ch]\r\nWhen I was wandering through the desert I was searching for the truth[/tab]\r\n[tab][ch]Dm[/ch]        [ch]Bb[/ch]              [ch]F[/ch]              [ch]C[/ch]\r\nI heard a choir of angels calling out my name[/tab]\r\n[tab][ch]Dm[/ch]        [ch]Bb[/ch]              [ch]F[/ch]                [ch]C[/ch]\r\nI had the feeling that my life would never be the same again[/tab]\r\n[tab][ch]Bb[/ch]                           [ch]C[/ch]\r\nI turned my face towards the barren sun[/tab]\r\n\r\n[Bridge]\r\n[tab]      [ch]Dm[/ch]          [ch]F[/ch]\r\nAnd I know of the pain[/tab]\r\n[tab]         [ch]Bb[/ch]               [ch]C[/ch]\r\nThat you feel the same as me[/tab]\r\n[tab]      [ch]Gm[/ch]           [ch]Bb[/ch]\r\nAnd I dream of the rain[/tab]\r\n[tab]      [ch]F[/ch]              [ch]C[/ch]\r\nAs it falls upon the leaves[/tab]\r\n[tab]        [ch]Dm[/ch]            [ch]F[/ch]\r\nAnd the cracks in our lives[/tab]\r\n[tab]         [ch]Bb[/ch]              [ch]C[/ch]\r\nLike the cracks upon the ground[/tab]\r\n[tab]         [ch]Gm[/ch]             [ch]Bb[/ch]          [ch]C[/ch]\r\nThey are sealed and are now washed away[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Dm[/ch]          [ch]Dsus4[/ch]            [ch]Dm[/ch]\r\nYou tell me we can start the rain[/tab]\r\n[tab]            [ch]Dsus4[/ch]           [ch]Bb[/ch]\r\nYou tell me that we all can change[/tab]\r\n[tab]            [ch]Gm/Bb[/ch]\r\nYou tell me we can find[/tab]\r\n[tab]    [ch]F[/ch]                 [ch]C[/ch]\r\nSomething to wash the tears away[/tab]\r\n[tab][ch]Dm[/ch]          [ch]Dsus4[/ch]            [ch]Dm[/ch]\r\nYou tell me we can start the rain[/tab]\r\n[tab]            [ch]Dsus4[/ch]           [ch]Bb[/ch]\r\nYou tell me that we all can change[/tab]\r\n[tab]            [ch]Gm/Bb[/ch]\r\nYou tell me we can find[/tab]\r\n[tab]    [ch]F[/ch]                 [ch]C[/ch]\r\nSomething to wash the tears[/tab]\r\n\r\n[Bridge]\r\n[tab]      [ch]Dm[/ch]          [ch]F[/ch]\r\nAnd I know of the pain[/tab]\r\n[tab]         [ch]Bb[/ch]               [ch]C[/ch]\r\nThat you feel the same as me[/tab]\r\n[tab]      [ch]Gm[/ch]           [ch]Bb[/ch]\r\nAnd I dream of the rain[/tab]\r\n[tab]      [ch]F[/ch]              [ch]C[/ch]\r\nAs it falls upon the leaves[/tab]\r\n[tab]        [ch]Dm[/ch]            [ch]F[/ch]\r\nAnd the cracks in the ground[/tab]\r\n[tab]         [ch]Bb[/ch]                [ch]C[/ch]\r\nLike the cracks are in our lives[/tab]\r\n[tab]         [ch]Gm[/ch]             [ch]Bb[/ch]       [ch]C[/ch]\r\nThey are sealed and are now far away[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]Dm[/ch]          [ch]Dsus4[/ch]            [ch]Dm[/ch]\r\nYou tell me we can start the rain[/tab]\r\n[tab]            [ch]Dsus4[/ch]           [ch]Bb[/ch]\r\nYou tell me that we all can change[/tab]\r\n[tab]            [ch]Gm/Bb[/ch]\r\nYou tell me we can find[/tab]\r\n[tab]    [ch]F[/ch]                 [ch]C[/ch]\r\nSomething to wash the tears away[/tab]\r\n[tab][ch]Dm[/ch]          [ch]Dsus4[/ch]            [ch]Dm[/ch]\r\nYou tell me we can start the rain[/tab]\r\n[tab]            [ch]Dsus4[/ch]           [ch]Bb[/ch]\r\nYou tell me that we all can change[/tab]\r\n[tab]            [ch]Gm/Bb[/ch]\r\nYou tell me we can find[/tab]\r\n[tab]    [ch]F[/ch]                 [ch]C[/ch]\r\nSomething to wash the tears[/tab]\r\n\r\n[Solo]\r\n[ch]Dm[/ch]   [ch]Bb[/ch]   [ch]C[/ch]   [ch]F[/ch] [ch]Gm[/ch]\r\n[ch]Dm[/ch]   [ch]Bb[/ch]   [ch]C[/ch]           x2\r\n[ch]Bm[/ch]   [ch]F#m[/ch] [ch]G[/ch]   [ch]A[/ch]   [ch]D[/ch] [ch]Em[/ch]\r\n[ch]Bm[/ch]   [ch]F#m[/ch] [ch]G[/ch]   [ch]A[/ch]        x2\r\n\r\n[Chorus]\r\n[tab][ch]Dm[/ch]          [ch]Dsus4[/ch]            [ch]Dm[/ch]\r\nYou tell me we can start the rain[/tab]\r\n[tab]            [ch]Dsus4[/ch]           [ch]Bb[/ch]\r\nYou tell me that we all can change[/tab]\r\n[tab]            [ch]Gm/Bb[/ch]\r\nYou tell me we can find[/tab]\r\n[tab]    [ch]F[/ch]                 [ch]C[/ch]\r\nSomething to wash the tears away[/tab]\r\n[tab][ch]Dm[/ch]          [ch]Dsus4[/ch]            [ch]Dm[/ch]\r\nYou tell me we can start the rain[/tab]\r\n[tab]            [ch]Dsus4[/ch]           [ch]Bb[/ch]\r\nYou tell me that we all can change[/tab]\r\n[tab]            [ch]Gm/Bb[/ch]\r\nYou tell me we can find[/tab]\r\n[tab]    [ch]F[/ch]                 [ch]C[/ch]\r\nSomething to wash the tears[/tab]\r\n\r\n[Bridge]\r\n[tab]      [ch]Dm[/ch]          [ch]F[/ch]\r\nAnd I know of the pain[/tab]\r\n[tab]         [ch]Bb[/ch]               [ch]C[/ch]\r\nThat you feel the same as me[/tab]\r\n[tab]      [ch]Gm[/ch]           [ch]Bb[/ch]\r\nAnd I dream of the rain[/tab]\r\n[tab]      [ch]F[/ch]              [ch]C[/ch]\r\nAs it falls upon the leaves[/tab]\r\n[tab]        [ch]Dm[/ch]            [ch]F[/ch]\r\nAnd the cracks in the ground[/tab]\r\n[tab]         [ch]Bb[/ch]                [ch]C[/ch]\r\nLike the cracks are in our lives[/tab]\r\n[tab]         [ch]Gm[/ch]             [ch]Bb[/ch]       [ch]C[/ch]\r\nThey are sealed and are now far away[/tab]\r\n\r\n[Outro]\r\n[ch]Dm[/ch]   [ch]Bb[/ch]   [ch]Dm[/ch]   [ch]C[/ch]   [ch]Dm[/ch]   [ch]Bb[/ch]   [ch]C[/ch]   [ch]C[/ch]   [ch]C[/ch]   [ch]C[/ch]   [ch]Dm[/ch]"
+}

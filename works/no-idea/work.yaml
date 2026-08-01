@@ -1,0 +1,14 @@
+id: no-idea
+title: No Idea
+artist: Greensky Bluegrass
+default_key: Am
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-no-idea.txt
+    source_url: https://docs.google.com/document/d/1ONatLe7Y6GhFIkAU01F6-nADLwsiz0wK/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

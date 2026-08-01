@@ -1,31 +1,10 @@
 {
  "_meta": {
-  "source": "ledger cleanup remainders: bluegrass_list gap analysis + Strum Machine missing-vocals + BluegrassLyrics unimported",
-  "generated": "2026-07-31",
+  "source": "ledger cleanup remainders: bluegrass_list gap analysis + Strum Machine missing-vocals + BluegrassLyrics unimported \u2014 refreshed after bounty-hunt campaign (fuzzy title matching)",
+  "generated": "2026-08-01",
   "description": "Canonical repertoire the ledgers vouch for that the songbook still lacks \u2014 the bounty wanted list"
  },
  "songs": [
-  {
-   "title": "Lee Highway Blues",
-   "type": "Instrumental",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 31,
-   "core": true,
-   "artists": [
-    "Jim and Jesse",
-    "The Stanley Brothers",
-    "Benny Martin",
-    "New Grass Revival"
-   ],
-   "notes": "swing blues fiddle",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
   {
    "title": "Train 45",
    "type": "Vocal",
@@ -40,154 +19,6 @@
     "J. P. Cormier"
    ],
    "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Bill Cheatham",
-   "type": "Fiddle Tune",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 27,
-   "core": true,
-   "artists": [
-    "Tony Rice",
-    "Fiddlin\u2019 Arthur Smith & His Dixieliners",
-    "Steve Kaufman",
-    "Roger Sprung and His Progressive Bluegrassers"
-   ],
-   "notes": "two parts",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Sweet Georgia Brown",
-   "type": "Instrumental",
-   "key": "F",
-   "difficulty": "Advanced",
-   "coverage": 27,
-   "core": true,
-   "artists": [
-    "Mike Auldridge",
-    "Ricky Skaggs",
-    "Marion Sumner",
-    "Sam Bush"
-   ],
-   "notes": "jazz swing jam",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Swing Low, Sweet Chariot",
-   "type": "Gospel",
-   "key": "G",
-   "difficulty": "Beginner",
-   "coverage": 27,
-   "core": true,
-   "artists": [
-    "The Louvin Brothers",
-    "Benny Martin",
-    "The Del McCoury Band",
-    "Bill Monroe"
-   ],
-   "notes": "spiritual",
-   "instruments": []
-  },
-  {
-   "title": "Sourwood Mountain",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 25,
-   "core": true,
-   "artists": [
-    "David Johnson",
-    "Ralph Whited",
-    "Wade Ward",
-    "Andy Cahan"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Chicken Reel",
-   "type": "Fiddle Tune",
-   "key": "D",
-   "difficulty": "Beginner",
-   "coverage": 24,
-   "core": true,
-   "artists": [
-    "Ed Haley",
-    "Carlton Rawlings",
-    "Kessinger Brothers",
-    "Melvin Wine"
-   ],
-   "notes": "novelty reel",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Cotton\u2010Eyed Joe",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 20,
-   "core": true,
-   "artists": [
-    "Double Decker String Band",
-    "Arthur Smith",
-    "Ricky Skaggs",
-    "Uncle Dave Macon"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Back Up and Push",
-   "type": "Fiddle Tune",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 19,
-   "core": true,
-   "artists": [
-    "Don Reno",
-    "The Stanley Brothers",
-    "John Hartford",
-    "Lester Flatt & Earl Scruggs"
-   ],
-   "notes": "swing breakdown",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Muleskinner Blues",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 19,
-   "core": true,
-   "artists": [
-    "Doc Watson",
-    "Rhonda Vincent",
-    "The Stonemans",
-    "Grandpa Jones"
-   ],
-   "notes": "yodel showpiece",
    "instruments": []
   },
   {
@@ -212,43 +43,6 @@
    ]
   },
   {
-   "title": "Ruby",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 18,
-   "core": true,
-   "artists": [
-    "Ernie & Mack",
-    "Yonder Mountain String Band",
-    "The Osborne Brothers",
-    "J.D. Crowe"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Billy in the Low Ground",
-   "type": "Fiddle Tune",
-   "key": "C",
-   "difficulty": "Advanced",
-   "coverage": 17,
-   "core": true,
-   "artists": [
-    "Clarence White",
-    "Fiddlin\u2019 John Carson",
-    "The Osborne Brothers",
-    "Steve Kaufman"
-   ],
-   "notes": "classic C tune",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
    "title": "Cacklin' Hen",
    "type": "Vocal",
    "key": null,
@@ -260,112 +54,6 @@
     "Hog-Eyed Man",
     "J.E. Mainer",
     "Ed Haley"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Bringin\u2019 in the Georgia Mail",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 16,
-   "core": true,
-   "artists": [
-    "Don Reno",
-    "Nashville Grass",
-    "Reno and Smiley",
-    "The Tennessee Cut-Ups"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Darling Corey",
-   "type": "Vocal",
-   "key": "A",
-   "difficulty": "Beginner",
-   "coverage": 16,
-   "core": true,
-   "artists": [
-    "The New Lost City Ramblers",
-    "The Jellyman's Daughter",
-    "Country Gazette",
-    "Golden Delicious"
-   ],
-   "notes": "modal banjo song",
-   "instruments": []
-  },
-  {
-   "title": "Panhandle Country",
-   "type": "Instrumental",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 16,
-   "core": true,
-   "artists": [
-    "The Seldom Scene",
-    "John Cowan",
-    "Blue Denim",
-    "Bill Monroe and the Bluegrass Boys"
-   ],
-   "notes": "breakdown",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Peacock Rag",
-   "type": "Fiddle Tune",
-   "key": null,
-   "difficulty": null,
-   "coverage": 16,
-   "core": true,
-   "artists": [
-    "The Tennessee Cut-Ups",
-    "The Pilot Mountain Bobcats",
-    "Vivian Williams",
-    "John Hartford"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Rollin\u2019 in My Sweet Baby\u2019s Arms",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 16,
-   "core": true,
-   "artists": [
-    "The String Cheese Incident",
-    "New Grass Revival",
-    "Country Gazette",
-    "Whiskey Shivers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Seven Year Blues",
-   "type": "Gospel",
-   "key": null,
-   "difficulty": null,
-   "coverage": 15,
-   "core": true,
-   "artists": [
-    "Red Smiley",
-    "The Louvin Brothers",
-    "The Tennessee Cut-Ups",
-    "Dismembered Tennesseans"
    ],
    "notes": null,
    "instruments": []
@@ -387,112 +75,6 @@
    "instruments": []
   },
   {
-   "title": "Raleigh and Spencer",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 13,
-   "core": true,
-   "artists": [
-    "Pert Near Sandstone",
-    "Yonder Mountain String Band",
-    "Wildcats",
-    "Honey Buckets"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Black-Eyed Susie",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 12,
-   "core": true,
-   "artists": [
-    "Kyle Creed",
-    "Doc Watson",
-    "The Dillards",
-    "Bob Herring"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Instrumental",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 12,
-   "core": true,
-   "artists": [
-    "The Del McCoury Band",
-    "David Grisman",
-    "Norman Blake",
-    "The Tony Rice Unit"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Jimmy Brown the Newsboy",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 12,
-   "core": true,
-   "artists": [
-    "Bill Monroe",
-    "Bill Monroe and the Bluegrass Boys",
-    "Peter Rowan",
-    "Lester Flatt & Earl Scruggs"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Old Dangerfield",
-   "type": "Fiddle Tune",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 12,
-   "core": true,
-   "artists": [
-    "Barcelona Bluegrass Band",
-    "Wayne Benson",
-    "Dismembered Tennesseans",
-    "The String Cheese Incident"
-   ],
-   "notes": "three parts",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Sally Johnson",
-   "type": "Fiddle Tune",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 12,
-   "core": true,
-   "artists": [
-    "Charlie Higgins",
-    "Fiddlin\u2019 Arthur Smith",
-    "Alan Munde",
-    "Ralph Whited"
-   ],
-   "notes": "contest reel",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
    "title": "Stoney Creek",
    "type": "Vocal",
    "key": null,
@@ -507,27 +89,6 @@
    ],
    "notes": null,
    "instruments": []
-  },
-  {
-   "title": "Bye Bye Blues",
-   "type": "Instrumental",
-   "key": null,
-   "difficulty": null,
-   "coverage": 11,
-   "core": true,
-   "artists": [
-    "Jim and Jesse",
-    "Don Reno",
-    "Eddie Adcock",
-    "Bill Harrell"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
   },
   {
    "title": "Johnson Boys",
@@ -546,22 +107,6 @@
    "instruments": []
   },
   {
-   "title": "Walking in Jerusalem",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 11,
-   "core": true,
-   "artists": [
-    "Doc Watson",
-    "Bill Monroe and the Bluegrass Boys",
-    "Boone Creek",
-    "Jimmy Martin"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Durham's Bull",
    "type": "Vocal",
    "key": null,
@@ -573,22 +118,6 @@
     "Herschel Sizemore",
     "Nashville Grass",
     "Benton Flippen"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "O Death",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 10,
-   "core": true,
-   "artists": [
-    "The Stanley Brothers",
-    "Ralph Stanley",
-    "Gangstagrass",
-    "Mike Seeger"
    ],
    "notes": null,
    "instruments": []
@@ -642,22 +171,6 @@
    "instruments": []
   },
   {
-   "title": "Diamond Joe",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 9,
-   "core": true,
-   "artists": [
-    "Carolina Road",
-    "Peter Rowan",
-    "Del McCoury",
-    "The New Lost City Ramblers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Interlude",
    "type": "Vocal",
    "key": null,
@@ -690,107 +203,6 @@
    "instruments": []
   },
   {
-   "title": "Memphis",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 9,
-   "core": true,
-   "artists": [
-    "Mike Seeger",
-    "The Wood Brothers",
-    "Joyce Andersen",
-    "Jim and Jesse"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Old and in the Way",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 9,
-   "core": true,
-   "artists": [
-    "The Stanley Brothers",
-    "The Lewis Family",
-    "Peter Rowan",
-    "Jim Buchanan"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Santa Claus Is Coming to Town",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 9,
-   "core": true,
-   "artists": [
-    "John 5",
-    "Charlie Daniels",
-    "Harvey Reid",
-    "Vince Gill"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Tom and Jerry",
-   "type": "Fiddle Tune",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 9,
-   "core": true,
-   "artists": [
-    "Mark O\u2019Connor",
-    "Wildcats",
-    "The Dillards",
-    "Uncle Dave Macon"
-   ],
-   "notes": "contest breakdown",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Two Soldiers",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 9,
-   "core": true,
-   "artists": [
-    "Joe Craven",
-    "Tony Rice",
-    "Ricky Skaggs",
-    "Norman Blake"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "20/20 Vision",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": true,
-   "artists": [
-    "David Grisman",
-    "Jimmy Martin and the Sunny Mountain Boys",
-    "Jimmy Martin",
-    "Del McCoury"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Band Introductions",
    "type": "Vocal",
    "key": null,
@@ -818,22 +230,6 @@
     "B\u00e9la Fleck and the Flecktones",
     "The Chicks",
     "The Bluegrass Album Band"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Boll Weevil",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": true,
-   "artists": [
-    "Jethro Burns",
-    "Alice Gerrard",
-    "Bruce Molsky",
-    "Tommy Jarrell"
    ],
    "notes": null,
    "instruments": []
@@ -887,22 +283,6 @@
    "instruments": []
   },
   {
-   "title": "Maggie\u2019s Farm",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": true,
-   "artists": [
-    "Charlie Daniels",
-    "John Hartford",
-    "The Charlie Daniels Band",
-    "Mountain Heart"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Redbird",
    "type": "Vocal",
    "key": null,
@@ -914,59 +294,6 @@
     "Jim Lauderdale",
     "Leftover Salmon",
     "Yonder Mountain String Band"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Reuben",
-   "type": "Instrumental",
-   "key": "D",
-   "difficulty": "Intermediate",
-   "coverage": 8,
-   "core": true,
-   "artists": [
-    "Tommy Jarrell",
-    "Jim Mills",
-    "The Scottsville Squirrel Barkers",
-    "The Osborne Brothers"
-   ],
-   "notes": "open D banjo tuning",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Ripple",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Beginner",
-   "coverage": 8,
-   "core": true,
-   "artists": [
-    "Joe Craven",
-    "Darol Anger",
-    "David Grisman",
-    "The Grassmasters"
-   ],
-   "notes": "jam standard",
-   "instruments": []
-  },
-  {
-   "title": "Sixteen Tons",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": true,
-   "artists": [
-    "Southern Raised",
-    "Mac Wiseman",
-    "Hayseed Dixie",
-    "The White Rattlesnake"
    ],
    "notes": null,
    "instruments": []
@@ -988,133 +315,6 @@
    "instruments": []
   },
   {
-   "title": "The Old Crossroad",
-   "type": "Gospel",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 8,
-   "core": true,
-   "artists": [
-    "Ralph Stanley",
-    "Sonny Osborne",
-    "Bill Monroe",
-    "Bill Monroe and the Bluegrass Boys"
-   ],
-   "notes": "quartet gospel",
-   "instruments": []
-  },
-  {
-   "title": "Two Coats",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": true,
-   "artists": [
-    "Dean Sapp and The Hartford Express",
-    "Ralph Stanley",
-    "Larry Cordle",
-    "The Sullivan Family"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Whitehouse Blues",
-   "type": "Instrumental",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": true,
-   "artists": [
-    "Doc Watson",
-    "The Tennessee Cut-Ups",
-    "Del McCoury and The Dixie Pals",
-    "Don Reno"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Sugar in the Gourd",
-   "type": "Old-Time",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 20,
-   "core": false,
-   "artists": [
-    "Rayna Gellert",
-    "Michael Cleveland",
-    "Sharon Gilchrist",
-    "Red Smiley"
-   ],
-   "notes": "breakdown",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "O Come All Ye Faithful",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 15,
-   "core": false,
-   "artists": [
-    "The Louvin Brothers",
-    "Mike Marshall",
-    "Vince Gill",
-    "The Petersens"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Red Apple Rag",
-   "type": "Fiddle Tune",
-   "key": null,
-   "difficulty": null,
-   "coverage": 13,
-   "core": false,
-   "artists": [
-    "Wayne Benson",
-    "Ricky Skaggs",
-    "Frank Wakefield",
-    "Don Reno"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "The First Noel",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 13,
-   "core": false,
-   "artists": [
-    "Michael Martin Murphey",
-    "Andrea Zonn",
-    "David Grier",
-    "Peter Ostroushko"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Sugar Tree Stomp",
    "type": "Instrumental",
    "key": null,
@@ -1126,27 +326,6 @@
     "The New Southern Ramblers",
     "Norman Blake",
     "Ralph Whited"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Dill Pickle Rag",
-   "type": "Fiddle Tune",
-   "key": null,
-   "difficulty": null,
-   "coverage": 11,
-   "core": false,
-   "artists": [
-    "Red Smiley",
-    "Doc Watson",
-    "Reno and Smiley",
-    "Bill Harrell"
    ],
    "notes": null,
    "instruments": [
@@ -1176,54 +355,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "title": "Chilly Winds",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 10,
-   "core": false,
-   "artists": [
-    "The Lonesome Ace Stringband",
-    "Down Trodden String Band",
-    "Doc Watson",
-    "The New Lost City Ramblers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Flop-Eared Mule",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 10,
-   "core": false,
-   "artists": [
-    "Clarence White",
-    "Gid Tanner & His Skillet Lickers",
-    "Clark Kessinger",
-    "Steve Kaufman"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Jack of Diamonds",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 10,
-   "core": false,
-   "artists": [
-    "Rhys Jones",
-    "Joyce Andersen",
-    "Gaither Carlton",
-    "Pete McMahan"
-   ],
-   "notes": null,
-   "instruments": []
   },
   {
    "title": "Banjo Signal",
@@ -1258,43 +389,6 @@
    "instruments": []
   },
   {
-   "title": "Deep Elm Blues",
-   "type": "Instrumental",
-   "key": null,
-   "difficulty": null,
-   "coverage": 9,
-   "core": false,
-   "artists": [
-    "The Charlie Daniels Band",
-    "Jesse McReynolds",
-    "David Nelson",
-    "Northern Lights"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Devilish Mary",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 9,
-   "core": false,
-   "artists": [
-    "J.E. Mainer",
-    "Cathy Barton",
-    "The Bluegrass Cut-Ups",
-    "Grandpa Jones"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Molly Put the Kettle On",
    "type": "Vocal",
    "key": null,
@@ -1306,54 +400,6 @@
     "The New Lost City Ramblers",
     "Gid Tanner & His Skillet Lickers",
     "Andy Cahan"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Rabbit in the Log",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 9,
-   "core": false,
-   "artists": [
-    "Bill Monroe",
-    "The Stanley Brothers",
-    "The Craig County Boys",
-    "Ralph Stanley"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Railroad Bill",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 9,
-   "core": false,
-   "artists": [
-    "The Stonemans",
-    "Hobart Smith",
-    "Crooked Still",
-    "Harvey Reid"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "The Star\u2010Spangled Banner",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 9,
-   "core": false,
-   "artists": [
-    "Mark O\u2019Connor",
-    "Dolly Parton",
-    "B\u00e9la Fleck",
-    "Alan Jackson"
    ],
    "notes": null,
    "instruments": []
@@ -1391,75 +437,6 @@
    "instruments": []
   },
   {
-   "title": "Caroline",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": false,
-   "artists": [
-    "Mipso",
-    "Summervilla",
-    "The Cockman Family",
-    "Old Crow Medicine Show"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Durang's Hornpipe",
-   "type": "Fiddle Tune",
-   "key": "D",
-   "difficulty": "Intermediate",
-   "coverage": 8,
-   "core": false,
-   "artists": [
-    "Bob Walters",
-    "Country Gazette",
-    "Clark Kessinger",
-    "Johnnie Whisnant"
-   ],
-   "notes": "hornpipe",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "In the Bleak Midwinter",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": false,
-   "artists": [
-    "Stuart Duncan",
-    "Dismembered Tennesseans",
-    "David Grier",
-    "Cathy Barton"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Jolene",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": false,
-   "artists": [
-    "Yonder Mountain String Band",
-    "The Wood Brothers",
-    "The Petersens",
-    "Dolly Parton"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Natural Bridge Blues",
    "type": "Instrumental",
    "key": null,
@@ -1481,22 +458,6 @@
    ]
   },
   {
-   "title": "Rolling in My Sweet Baby\u2019s Arms",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": false,
-   "artists": [
-    "Yonder Mountain String Band",
-    "Ernie & Mack",
-    "Honey Buckets",
-    "Larry Sparks and the Lonesome Ramblers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Shortenin' Bread",
    "type": "Vocal",
    "key": null,
@@ -1508,54 +469,6 @@
     "Carlton Rawlings",
     "John Hartford",
     "Jimmy Martin and the Sunny Mountain Boys"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Snow Deer",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": false,
-   "artists": [
-    "Clarence \"Tater\" Tate",
-    "Country Ham",
-    "Kenny Baker",
-    "The Stanley Brothers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Stepping Stones",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": false,
-   "artists": [
-    "Ernie & Mack",
-    "The Lewis Family",
-    "The Bluegrass Cut-Ups",
-    "Joe Val and The New England Bluegrass Boys"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Walking Boss",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 8,
-   "core": false,
-   "artists": [
-    "Doc Watson",
-    "Clint Howard",
-    "The New Lost City Ramblers",
-    "Hobart Smith"
    ],
    "notes": null,
    "instruments": []
@@ -1577,22 +490,6 @@
    "instruments": []
   },
   {
-   "title": "Black Jack Davy",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Hickory Wind",
-    "Clarence White",
-    "Joyce Andersen",
-    "The New Lost City Ramblers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Caravan",
    "type": "Vocal",
    "key": null,
@@ -1604,59 +501,6 @@
     "Michael Lee Firkins",
     "Vassar Clements",
     "Jethro Burns"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Carol of the Bells",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Mark O\u2019Connor",
-    "Dailey & Vincent",
-    "Stuart Duncan",
-    "David Grier"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Cincinnati Rag",
-   "type": "Fiddle Tune",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "The Tennessee Cut-Ups",
-    "The Bluegrass Album Band",
-    "Don Reno",
-    "Kenny Baker"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Country Poor and Country Proud",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Jimmy Gaudreau",
-    "Eddie Adcock",
-    "Tom Gray",
-    "Randy Waller"
    ],
    "notes": null,
    "instruments": []
@@ -1676,27 +520,6 @@
    ],
    "notes": null,
    "instruments": []
-  },
-  {
-   "title": "Elzic's Farewell",
-   "type": "Old-Time",
-   "key": "Am",
-   "difficulty": "Advanced",
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Blue Highway",
-    "Gaither Carlton",
-    "Pert Near Sandstone",
-    "Bill Evans"
-   ],
-   "notes": "modal, three parts",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
   },
   {
    "title": "Father's Table Grace",
@@ -1747,22 +570,6 @@
    "instruments": []
   },
   {
-   "title": "Glendale Train",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Sam Bush",
-    "Stuart Duncan",
-    "David Grier",
-    "Hickory Hill"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Hell Among the Yearlings",
    "type": "Vocal",
    "key": null,
@@ -1790,38 +597,6 @@
     "Greensky Bluegrass",
     "Mipso",
     "Dolly Parton"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "I Saw Your Face in the Moon",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Don Reno",
-    "Mac Wiseman",
-    "Reno and Smiley",
-    "Buck Ryan"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Katy Cline",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Adam Hurt",
-    "The Greenbriar Boys",
-    "The Dillards",
-    "Don Stover"
    ],
    "notes": null,
    "instruments": []
@@ -1859,22 +634,6 @@
    "instruments": []
   },
   {
-   "title": "Mr. Bojangles",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "John Hartford",
-    "Nitty Gritty Dirt Band",
-    "David Nelson",
-    "Vassar Clements"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "New Five Cents",
    "type": "Vocal",
    "key": null,
@@ -1886,38 +645,6 @@
     "Country Ham",
     "David Grier",
     "Down Trodden String Band"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "O Come O Come Emmanuel",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Annie Moses Band",
-    "Punch Brothers",
-    "Alison Krauss",
-    "The Petersens"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Old Paint",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Bob Bovee",
-    "Bob Herring",
-    "Wolfe Bros.",
-    "The Lonesome Ace Stringband"
    ],
    "notes": null,
    "instruments": []
@@ -1955,38 +682,6 @@
    "instruments": []
   },
   {
-   "title": "Panama Red",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Tony Rice",
-    "Pert Near Sandstone",
-    "Peter Rowan",
-    "The Good Old Boys"
-   ],
-   "notes": "jam standard",
-   "instruments": []
-  },
-  {
-   "title": "Pastures of Plenty",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Bruce Hornsby",
-    "Harvey Reid",
-    "The Dillards",
-    "Joyce Andersen"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Patty on the Turnpike",
    "type": "Vocal",
    "key": null,
@@ -1998,38 +693,6 @@
     "The Warrior River Boys",
     "The Bluegrass Partners",
     "James Bryan"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Redwing",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Kyle Creed",
-    "Reed Martin",
-    "Frank Wakefield",
-    "Ralph Whited"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Ruben's Train",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Old Crow Medicine Show",
-    "Tony Trischka",
-    "Dock Boggs",
-    "Dix Bruce"
    ],
    "notes": null,
    "instruments": []
@@ -2104,22 +767,6 @@
    "instruments": []
   },
   {
-   "title": "Wabash Cannon Ball",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Mac Wiseman",
-    "Jim and Jesse",
-    "Don Reno",
-    "The Tennessee Cut-Ups"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Walking in Jerusalem Just Like John",
    "type": "Vocal",
    "key": null,
@@ -2184,22 +831,6 @@
    "instruments": []
   },
   {
-   "title": "Workin' on a Building",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Red Smiley",
-    "Ricky Skaggs",
-    "The Del McCoury Band",
-    "Joe Craven"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "500 Miles",
    "type": "Vocal",
    "key": null,
@@ -2211,54 +842,6 @@
     "Charlie Waller",
     "John Duffey",
     "Lester Flatt & Earl Scruggs"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Ace of Spades",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Handsome Hank and His Lonesome Boys",
-    "Hayseed Dixie",
-    "Southfork Bluegrass Band",
-    "Peter Ostroushko"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Angelina Baker",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Sugar Run",
-    "The SteelDrivers",
-    "Whiskey Shivers",
-    "Steve Kaufman"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Angeline",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Art Stevenson & High Water",
-    "J. P. Cormier",
-    "Gill Landry",
-    "The Slocan Ramblers"
    ],
    "notes": null,
    "instruments": []
@@ -2296,22 +879,6 @@
    "instruments": []
   },
   {
-   "title": "Banjo Pickin' Girl",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Stringbean",
-    "Locust Honey String Band",
-    "Gloria Belle",
-    "Alice Gerrard"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Birdie",
    "type": "Vocal",
    "key": null,
@@ -2344,22 +911,6 @@
    "instruments": []
   },
   {
-   "title": "Carolina in My Mind",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Alison Krauss",
-    "Jerry Douglas",
-    "Hamilton County Bluegrass Band",
-    "The Petersens"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Choking the Strings",
    "type": "Vocal",
    "key": null,
@@ -2387,54 +938,6 @@
     "Fred Price",
     "Hobart Smith",
     "Clint Howard"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Corrina, Corrina",
-   "type": "Vocal",
-   "key": "A",
-   "difficulty": "Beginner",
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Gaither Carlton",
-    "Clint Howard",
-    "Jethro Burns",
-    "Fred Price"
-   ],
-   "notes": "bluesy standard",
-   "instruments": []
-  },
-  {
-   "title": "Dire Wolf",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Molly Tuttle",
-    "The Grassmasters",
-    "Billy Strings",
-    "New Riders of the Purple Sage"
-   ],
-   "notes": "jam favorite",
-   "instruments": []
-  },
-  {
-   "title": "Duelling Banjos",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Lester Flatt & Earl Scruggs",
-    "Lester Flatt",
-    "Eric Weissberg",
-    "Hamilton County Bluegrass Band"
    ],
    "notes": null,
    "instruments": []
@@ -2504,22 +1007,6 @@
    "instruments": []
   },
   {
-   "title": "Hannah",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "The Bluegrass Cut-Ups",
-    "Authentic Unlimited",
-    "J.E. Mainer",
-    "Red Smiley"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "High Level Hornpipe",
    "type": "Fiddle Tune",
    "key": null,
@@ -2541,38 +1028,6 @@
    ]
   },
   {
-   "title": "Hills of Mexico",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Roscoe Holcomb",
-    "Ricky Skaggs",
-    "Wolfe Bros.",
-    "The Lonesome Ace Stringband"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Hold Watcha Got",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Wires & Wood",
-    "The Bluegrass Album Band",
-    "Northern Lights",
-    "Vassar Clements"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Hook and Line",
    "type": "Vocal",
    "key": null,
@@ -2584,38 +1039,6 @@
     "Ricky Skaggs",
     "Carolina Tar Heels",
     "Roscoe Holcomb"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "I Shall Be Released",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "The Avett Brothers",
-    "Marty Stuart",
-    "The Charlie Daniels Band",
-    "The Grassmasters"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "I Truly Understand",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "The New Lost City Ramblers",
-    "Golden Delicious",
-    "The Volo Bogtrotters",
-    "Bruce Molsky"
    ],
    "notes": null,
    "instruments": []
@@ -2653,22 +1076,6 @@
    "instruments": []
   },
   {
-   "title": "Joshua",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Nitty Gritty Dirt Band",
-    "The Lewis Family",
-    "Dolly Parton",
-    "Rhonda Vincent"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Last of Callahan",
    "type": "Vocal",
    "key": null,
@@ -2680,38 +1087,6 @@
     "Pert Near Sandstone",
     "Highwoods String Band",
     "Mike Seeger"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Louis Collins",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "David Nelson",
-    "Saddle River String Band",
-    "Tony Rice",
-    "David Grisman"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Louise",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "The Seldom Scene",
-    "Mipso",
-    "Fiddlin\u2019 Arthur Smith",
-    "Jim Eanes & The Shenandoah Valley Boys"
    ],
    "notes": null,
    "instruments": []
@@ -2770,38 +1145,6 @@
    "instruments": []
   },
   {
-   "title": "Nearer My God to Thee",
-   "type": "Gospel",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Bill Harrell and The Virginians",
-    "The Louvin Brothers",
-    "The Country Gentlemen",
-    "Charlie Waller"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Nights in White Satin",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Doc Watson",
-    "John Cowan",
-    "Sam Bush",
-    "The Pigs"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Oconee",
    "type": "Vocal",
    "key": null,
@@ -2813,54 +1156,6 @@
     "Butch Robins",
     "Norman Blake",
     "Tut Taylor"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Old Ship of Zion",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Don Rigsby",
-    "Ralph Stanley",
-    "Dudley Connell",
-    "Larry Cordle"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Over the Hills to the Poorhouse",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Lester Flatt",
-    "The Country Gentlemen",
-    "Lester Flatt & Earl Scruggs",
-    "Mac Wiseman"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Pilgrim",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Marty Stuart",
-    "Ralph Stanley",
-    "Hickory Hill",
-    "The Wood Brothers"
    ],
    "notes": null,
    "instruments": []
@@ -2898,22 +1193,6 @@
    "instruments": []
   },
   {
-   "title": "Rudolph the Red-Nosed Reindeer",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Palast Orchester mit seinem S\u00e4nger Max Raabe",
-    "Charlie Daniels",
-    "Valerie June",
-    "David Johnson"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Saurkraut 'n Solar Energy",
    "type": "Vocal",
    "key": null,
@@ -2925,38 +1204,6 @@
     "Vassar Clements",
     "Jethro Burns",
     "Butch Robins"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Simple Gifts",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Mark O\u2019Connor",
-    "Harvey Reid",
-    "Joyce Andersen",
-    "Shoji Tabuchi"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "St. James Infirmary",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Clint Howard",
-    "Harvey Reid",
-    "David Grisman",
-    "Doc Watson"
    ],
    "notes": null,
    "instruments": []
@@ -3010,22 +1257,6 @@
    "instruments": []
   },
   {
-   "title": "Talk About Suffering",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Bryan Sutton",
-    "Doc Watson",
-    "Tony Rice",
-    "Ricky Skaggs"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Tall Timber",
    "type": "Vocal",
    "key": null,
@@ -3037,22 +1268,6 @@
     "Michael Cleveland",
     "Bill Monroe and the Bluegrass Boys",
     "Audie Blaylock and Redline"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "The Coo-Coo Bird",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Fred Price",
-    "Doc Watson",
-    "Carolina Tar Heels",
-    "Clint Howard"
    ],
    "notes": null,
    "instruments": []
@@ -3106,22 +1321,6 @@
    "instruments": []
   },
   {
-   "title": "Two Little Boys",
-   "type": "Vocal",
-   "key": "A",
-   "difficulty": "Beginner",
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "The Country Gentlemen",
-    "Martha Adcock",
-    "Eddie Adcock",
-    "Tom Gray"
-   ],
-   "notes": "sentimental",
-   "instruments": []
-  },
-  {
    "title": "Vassar & Dave",
    "type": "Vocal",
    "key": null,
@@ -3138,48 +1337,6 @@
    "instruments": []
   },
   {
-   "title": "Watson Blues",
-   "type": "Instrumental",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Doc Watson",
-    "David Grisman",
-    "Bill Monroe",
-    "Billy Strings"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Weary Blues From Waitin\u2019",
-   "type": "Instrumental",
-   "key": null,
-   "difficulty": null,
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Vince Gill",
-    "Molly Tuttle",
-    "Hickory Wind",
-    "Andy Cahan"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
    "title": "Windy and Warm",
    "type": "Vocal",
    "key": null,
@@ -3191,22 +1348,6 @@
     "Doc Watson",
     "Banjo Express",
     "David Grisman"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "900 Miles",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Uncle Sinner",
-    "Mike Seeger",
-    "The Bluegrass Cut-Ups",
-    "Sister Sadie"
    ],
    "notes": null,
    "instruments": []
@@ -3292,22 +1433,6 @@
    "instruments": []
   },
   {
-   "title": "Black Lung",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "The Lonesome Ace Stringband",
-    "The Dead South",
-    "Steve Earle",
-    "Strange Creek Singers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Black Mountain Blues",
    "type": "Instrumental",
    "key": null,
@@ -3329,38 +1454,6 @@
    ]
   },
   {
-   "title": "Blackbird",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Rayna Gellert",
-    "J. P. Cormier",
-    "Jourdan Hines",
-    "The Woes"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Bluegrass Radio",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Steve Martin",
-    "Todd Phillips",
-    "Sam Bush",
-    "Alison Brown"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Bonie Maronie",
    "type": "Vocal",
    "key": null,
@@ -3372,38 +1465,6 @@
     "David Nelson",
     "Vassar Clements",
     "Doc Watson"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Bootleg John",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Jason Davis",
-    "Don Rigsby",
-    "Ralph Stanley",
-    "The Stanley Brothers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Buckin' Mule",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Gid Tanner & His Skillet Lickers",
-    "Red Cravens",
-    "Clarence White",
-    "Larry Richardson"
    ],
    "notes": null,
    "instruments": []
@@ -3441,27 +1502,6 @@
    "instruments": []
   },
   {
-   "title": "Cannon Ball Blues",
-   "type": "Instrumental",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "The Greenbriar Boys",
-    "Grandpa Jones",
-    "The Warrior River Boys",
-    "Larry Sparks and the Lonesome Ramblers"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
    "title": "Carolina",
    "type": "Vocal",
    "key": null,
@@ -3476,27 +1516,6 @@
    ],
    "notes": null,
    "instruments": []
-  },
-  {
-   "title": "Cedar Hill",
-   "type": "Instrumental",
-   "key": "A",
-   "difficulty": "Advanced",
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Bob Haydon",
-    "Lester Flatt",
-    "David Grisman",
-    "Vic Jordan"
-   ],
-   "notes": "Dawg tune",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
   },
   {
    "title": "Chicken",
@@ -3541,75 +1560,6 @@
     "Bruce Hornsby",
     "Jimmy Martin",
     "Ralph Stanley",
-    "New Riders of the Purple Sage"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Cumberland Blues",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "The Travelin\u2019 McCourys",
-    "Doc Roberts and His Trio",
-    "The Chicken Chokers",
-    "The Grassmasters"
-   ],
-   "notes": "jam favorite",
-   "instruments": []
-  },
-  {
-   "title": "Durham's Reel",
-   "type": "Fiddle Tune",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Hot Rize",
-    "Clarence White",
-    "Lester Flatt & Earl Scruggs",
-    "Andy Statman"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Eastbound Train",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "The Gibson Brothers",
-    "Mac Wiseman",
-    "Clint Howard",
-    "Doc Watson"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Farewell Angelina",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Watkins Family Hour",
-    "Sara Watkins",
-    "Rita Hosking",
     "New Riders of the Purple Sage"
    ],
    "notes": null,
@@ -3664,86 +1614,6 @@
    "instruments": []
   },
   {
-   "title": "Franklin\u2019s Tower",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Leftover Salmon",
-    "The String Cheese Incident",
-    "Jesse McReynolds",
-    "David Nelson"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Georgia",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "The Charlie Daniels Band",
-    "David Grisman",
-    "Country Gazette",
-    "Steve Kaufman"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Gonna Be Movin'",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Larry Sparks",
-    "Ralph Stanley",
-    "Backwoods Bluegrass Band",
-    "The Lewis Family"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Henry Lee",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Ralph Stanley",
-    "The Tallboys",
-    "Locust Honey String Band",
-    "Foghorn Stringband"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "High Sierra",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "The Dillards",
-    "Jimmy Gaudreau",
-    "Moondi Klein",
-    "The Petersens"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Highway of Pain",
    "type": "Vocal",
    "key": null,
@@ -3792,38 +1662,6 @@
    "instruments": []
   },
   {
-   "title": "Lowlands",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "IIIrd Tyme Out",
-    "J. P. Cormier",
-    "Nitty Gritty Dirt Band",
-    "Hickory Hill"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Luxury Liner",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Ricky Skaggs",
-    "The Travelin\u2019 McCourys",
-    "Michael Cleveland",
-    "The Coal Porters"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Maybe",
    "type": "Vocal",
    "key": null,
@@ -3835,22 +1673,6 @@
     "John Hartford",
     "Jim Lauderdale",
     "Buckethead"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Maybellene",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Jim and Jesse",
-    "Vince Gill",
-    "John Hartford",
-    "David Grisman"
    ],
    "notes": null,
    "instruments": []
@@ -3904,22 +1726,6 @@
    "instruments": []
   },
   {
-   "title": "Mississippi",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "The Charlie Daniels Band",
-    "Bobby Osborne",
-    "The Chicks",
-    "Donna the Buffalo"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Northern White Clouds",
    "type": "Vocal",
    "key": null,
@@ -3931,22 +1737,6 @@
     "Bill Evans",
     "Dismembered Tennesseans",
     "Bill Monroe"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Norwegian Wood",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Vassar Clements",
-    "Bull Harman",
-    "New Grass Revival",
-    "David Grisman"
    ],
    "notes": null,
    "instruments": []
@@ -3984,22 +1774,6 @@
    "instruments": []
   },
   {
-   "title": "Polka on the Banjo",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "B\u00e9la Fleck and the Flecktones",
-    "Yonder Mountain String Band",
-    "B\u00e9la Fleck",
-    "Lester Flatt & Earl Scruggs"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Pretty Bird",
    "type": "Vocal",
    "key": null,
@@ -4027,22 +1801,6 @@
     "The Osborne Brothers",
     "John Cowan",
     "Ralph Stanley"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Prisoner Song",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Del McCoury",
-    "Norman Blake",
-    "Mac Wiseman",
-    "Del McCoury and The Dixie Pals"
    ],
    "notes": null,
    "instruments": []
@@ -4080,64 +1838,6 @@
    "instruments": []
   },
   {
-   "title": "Rosa Lee McFall",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Charlie Monroe",
-    "The New Lost City Ramblers",
-    "Frank Wakefield",
-    "Tony Rice"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Sailor's Hornpipe",
-   "type": "Fiddle Tune",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Jethro Burns",
-    "Harvey Reid",
-    "Steve Kaufman",
-    "Mark O\u2019Connor"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Sandy Boys",
-   "type": "Old-Time",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Rhys Jones",
-    "Double Decker String Band",
-    "Dwight Diller",
-    "Carolina Chocolate Drops"
-   ],
-   "notes": "modal",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
    "title": "Se\u00f1or (Tales of Yankee Power)",
    "type": "Vocal",
    "key": null,
@@ -4149,70 +1849,6 @@
     "Billy Strings",
     "Chris Thile",
     "Punch Brothers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Shake My Mother's Hand for Me",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "The Stanley Brothers",
-    "Bill Monroe",
-    "J.E. Mainer\u2019s Mountaineers",
-    "The Bluegrass Band"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Silver Bell",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Kenny Baker",
-    "Bill Emerson",
-    "The Country Gentlemen",
-    "B\u00e9la Fleck"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Silver Dagger",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Old Crow Medicine Show",
-    "Ed Haley",
-    "Run Boy Run",
-    "The High Bar Gang"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Sinner Man",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Ralph Stanley",
-    "Joyce Andersen",
-    "Harvey Reid",
-    "Eric Weissberg"
    ],
    "notes": null,
    "instruments": []
@@ -4269,43 +1905,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "title": "Southern Flavor",
-   "type": "Instrumental",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Yonder Mountain String Band",
-    "Dismembered Tennesseans",
-    "Bill Monroe and the Bluegrass Boys",
-    "Bill Monroe"
-   ],
-   "notes": "Grammy-winning tune",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Streamlined Cannonball",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Norman Blake",
-    "Billy Strings",
-    "Jim and Jesse",
-    "Earl Scruggs"
-   ],
-   "notes": null,
-   "instruments": []
   },
   {
    "title": "Sugar Babe",
@@ -4404,38 +2003,6 @@
    "instruments": []
   },
   {
-   "title": "The Bridge",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "The String Cheese Incident",
-    "BlueRidge",
-    "Elliott BROOD",
-    "Buckethead"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "The Legend of the Johnson Boys",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Lester Flatt & Earl Scruggs",
-    "Nashville Grass",
-    "Lester Flatt",
-    "Poutn\u00edci"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "The Memphis Blues",
    "type": "Instrumental",
    "key": null,
@@ -4455,70 +2022,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "title": "The Preacher and the Bear",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Mac Wiseman",
-    "David Reed",
-    "The Lewis Family",
-    "Billy Strings"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "The Sheik of Araby",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Clarence White",
-    "Arthur Smith",
-    "Doc Watson",
-    "Dix Bruce"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "The Sweet By-and-By",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Reno and Smiley",
-    "Larry Cordle",
-    "Jerry Douglas",
-    "Tony Rice"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "The Weight",
-   "type": "Vocal",
-   "key": "A",
-   "difficulty": "Beginner",
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Old Crow Medicine Show",
-    "Marty Stuart",
-    "B\u00e9la Fleck",
-    "New Riders of the Purple Sage"
-   ],
-   "notes": "jam standard",
-   "instruments": []
   },
   {
    "title": "Tiger Rag",
@@ -4553,22 +2056,6 @@
     "David Nelson",
     "Nitty Gritty Dirt Band",
     "Doc Watson"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Tumbling Tumbleweeds",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 5,
-   "core": false,
-   "artists": [
-    "Ricky Skaggs",
-    "Tumbleweed",
-    "Punch Brothers",
-    "Sara Watkins"
    ],
    "notes": null,
    "instruments": []
@@ -4696,54 +2183,6 @@
    ]
   },
   {
-   "title": "Bear Tracks",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Jim Mills",
-    "The Petersens",
-    "Jimmy Martin and the Sunny Mountain Boys",
-    "J.D. Crowe"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Bird Song",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Holy Modal Rounders",
-    "David Nelson",
-    "Jesse McReynolds",
-    "Billy Strings"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Bluest Man in Town",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Del McCoury and The Dixie Pals",
-    "Del McCoury",
-    "The Del McCoury Band",
-    "Bill Monroe"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Boatsman",
    "type": "Vocal",
    "key": null,
@@ -4760,70 +2199,6 @@
    "instruments": []
   },
   {
-   "title": "Bonapart's Retreat",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "John Hartford",
-    "J.E. Mainer\u2019s Mountaineers",
-    "Steve Kaufman",
-    "Critton Hollow String Band"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Brokedown Palace",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Sara Watkins",
-    "Billy Strings",
-    "Watkins Family Hour",
-    "Vassar Clements"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Brother John",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Dillards",
-    "The SteelDrivers",
-    "Lonesome River Band",
-    "The Seldom Scene"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Buckaroo",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Jim and Jesse",
-    "Clarence White",
-    "Lost & Found",
-    "Rual Yarbrough"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Cakewalk",
    "type": "Vocal",
    "key": null,
@@ -4835,54 +2210,6 @@
     "Norman Blake",
     "Jesse McReynolds",
     "Tut Taylor"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Caleb Meyer",
-   "type": "Vocal",
-   "key": "D",
-   "difficulty": "Intermediate",
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Watkins Family Hour",
-    "Evergreen",
-    "Fair To Middlin'",
-    "The Greencards"
-   ],
-   "notes": "modern",
-   "instruments": []
-  },
-  {
-   "title": "Can't Stop Now",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "New Grass Revival",
-    "The String Cheese Incident",
-    "Sam Bush",
-    "Greensky Bluegrass"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Cannonball",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Sister Sadie",
-    "Ola Belle Reed",
-    "Dirtwire",
-    "The Seldom Scene"
    ],
    "notes": null,
    "instruments": []
@@ -4920,22 +2247,6 @@
    "instruments": []
   },
   {
-   "title": "Coleen Malone",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Close to Home",
-    "Hot Rize",
-    "Bill Emerson",
-    "Pete Goble"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Come All Ye Tenderhearted",
    "type": "Vocal",
    "key": null,
@@ -4947,118 +2258,6 @@
     "Ralph Stanley",
     "Peter Rowan",
     "The Stanley Brothers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Come Unto Me",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Charlie Daniels Band",
-    "The Del McCoury Band",
-    "Forbes Family",
-    "Claire Lynch"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Copperhead Road",
-   "type": "Vocal",
-   "key": "D",
-   "difficulty": "Intermediate",
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Steve Earle",
-    "Norman Blake",
-    "Peter Rowan",
-    "The Del McCoury Band"
-   ],
-   "notes": "modern crossover",
-   "instruments": []
-  },
-  {
-   "title": "Crow Black Chicken",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Bob Bovee",
-    "The New Lost City Ramblers",
-    "Pert Near Sandstone",
-    "Yonder Mountain String Band"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Dead Flowers",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Beginner",
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Samantha Fish",
-    "New Riders of the Purple Sage",
-    "Steve Earle",
-    "The Grassmasters"
-   ],
-   "notes": "rock cover",
-   "instruments": []
-  },
-  {
-   "title": "Delia",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "New Riders of the Purple Sage",
-    "Harvey Reid",
-    "The Honey Dewdrops",
-    "The Grascals"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Dixieland",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Ralph Stanley",
-    "Boone Creek",
-    "Steve Earle",
-    "The Del McCoury Band"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Do Re Mi",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Bluegrass Band",
-    "Tony Trischka",
-    "Fair To Middlin'",
-    "The Dillards"
    ],
    "notes": null,
    "instruments": []
@@ -5080,22 +2279,6 @@
    "instruments": []
   },
   {
-   "title": "Drivin\u2019 Nails in My Coffin",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Mike Auldridge",
-    "Rhonda Vincent",
-    "The Osborne Brothers",
-    "Mac Wiseman"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Drunken Hiccups",
    "type": "Vocal",
    "key": null,
@@ -5107,22 +2290,6 @@
     "The Tallboys",
     "Tommy Jarrell",
     "Hobart Smith"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Duncan & Brady",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The String Cheese Incident",
-    "Harvey Reid",
-    "The Seldom Scene",
-    "New Riders of the Purple Sage"
    ],
    "notes": null,
    "instruments": []
@@ -5192,22 +2359,6 @@
    "instruments": []
   },
   {
-   "title": "Fire Ball Mail",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Mac Wiseman",
-    "Michael Cleveland",
-    "Jim and Jesse",
-    "Earl Scruggs"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Fire and Brimstone",
    "type": "Vocal",
    "key": null,
@@ -5243,38 +2394,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "title": "Georgie",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Norman Blake",
-    "Doc Watson",
-    "Tony Rice",
-    "Richard Bennett"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Gloryland",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Ralph Stanley",
-    "Carbon Leaf",
-    "Old Crow Medicine Show",
-    "Forbes Family"
-   ],
-   "notes": null,
-   "instruments": []
   },
   {
    "title": "Gonna Have Myself a Ball",
@@ -5325,22 +2444,6 @@
    "instruments": []
   },
   {
-   "title": "Hallelujah",
-   "type": "Gospel",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Charlie Daniels",
-    "The Charlie Daniels Band",
-    "Blue Highway",
-    "Mipso"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Hicks Farewell",
    "type": "Vocal",
    "key": null,
@@ -5355,80 +2458,6 @@
    ],
    "notes": null,
    "instruments": []
-  },
-  {
-   "title": "Higher Ground",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Cliff Waldron",
-    "Unlimited Tradition",
-    "Paul Williams",
-    "Darol Anger"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Hometown Blues",
-   "type": "Instrumental",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Pharis & Jason Romero",
-    "The Seldom Scene",
-    "The Del McCoury Band",
-    "Steve Earle"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Hopalong Peter",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Highwoods String Band",
-    "The New Lost City Ramblers",
-    "David Grisman",
-    "Charlie Monroe"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Huckleberry Hornpipe",
-   "type": "Instrumental",
-   "key": "A",
-   "difficulty": "Advanced",
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Kentucky Blue",
-    "The Wood Brothers",
-    "Hickory Hill",
-    "Country Gazette"
-   ],
-   "notes": "flatpicking jam",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
   },
   {
    "title": "I Was Left on the Street",
@@ -5490,22 +2519,6 @@
     "Hot Rize",
     "Doc Watson",
     "David Grisman"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Intros",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "David Grisman",
-    "Del McCoury",
-    "B\u00e9la Fleck and the Flecktones",
-    "Bill Monroe and the Bluegrass Boys"
    ],
    "notes": null,
    "instruments": []
@@ -5575,22 +2588,6 @@
    "instruments": []
   },
   {
-   "title": "Kickin' Mule",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Grandpa Jones",
-    "Fiddlin\u2019 John Carson",
-    "Billy Strings",
-    "Clarence White"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Lafayette",
    "type": "Vocal",
    "key": null,
@@ -5639,22 +2636,6 @@
    "instruments": []
   },
   {
-   "title": "Little Beggarman",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Hickory Wind",
-    "Tony Rice",
-    "The Chicks",
-    "Norman Blake"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Little Margaret",
    "type": "Vocal",
    "key": null,
@@ -5684,38 +2665,6 @@
     "Billy Strings"
    ],
    "notes": "jam favorite",
-   "instruments": []
-  },
-  {
-   "title": "Magdalene",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Frontier Ruckus",
-    "The SteelDrivers",
-    "Gill Landry",
-    "Palodine"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Make Me a Pallet on the Floor",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Country Gentlemen",
-    "Martha Adcock",
-    "Eddie Adcock",
-    "Doc Watson"
-   ],
-   "notes": null,
    "instruments": []
   },
   {
@@ -5767,22 +2716,6 @@
    "instruments": []
   },
   {
-   "title": "Mrs. Robinson",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Country Gentlemen",
-    "Eddie Adcock",
-    "Hayseed Dixie",
-    "The Grassmasters"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Muddy Roads",
    "type": "Vocal",
    "key": null,
@@ -5815,27 +2748,6 @@
    "instruments": []
   },
   {
-   "title": "New Speedway Boogie",
-   "type": "Instrumental",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "New Riders of the Purple Sage",
-    "The String Cheese Incident",
-    "Jim Lauderdale",
-    "Yonder Mountain String Band"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
    "title": "Nightwalk (Instr.)",
    "type": "Vocal",
    "key": null,
@@ -5847,22 +2759,6 @@
     "Tom Gray",
     "Eddie Adcock",
     "The Country Gentlemen"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Nothing Else Matters",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Jerry Douglas",
-    "Chris Stapleton",
-    "Iron Horse",
-    "Steve \u2019n\u2019 Seagulls"
    ],
    "notes": null,
    "instruments": []
@@ -5895,54 +2791,6 @@
     "Rayna Gellert",
     "Dudley Connell",
     "Don Rigsby"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Oh, Atlanta",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Alison Krauss & Union Station",
-    "The Charlie Daniels Band",
-    "Leftover Salmon",
-    "Alison Krauss"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Ole Slewfoot",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Hickory Hill",
-    "Billy Strings",
-    "Aspen Run",
-    "Jim and Jesse"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "On Top of Old Smoky",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Stanley Brothers",
-    "The Good Old Boys",
-    "New Riders of the Purple Sage",
-    "Frank Wakefield"
    ],
    "notes": null,
    "instruments": []
@@ -5996,54 +2844,6 @@
    "instruments": []
   },
   {
-   "title": "Pistol Packin\u2019 Mama",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Chris Stapleton",
-    "Frank Wakefield",
-    "Mac Wiseman",
-    "The Good Old Boys"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Polka on a Banjo",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Yonder Mountain String Band",
-    "Lester Flatt & Earl Scruggs",
-    "Barrier Brothers",
-    "The Bluegrass Band"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Proud Mary",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Billy Strings",
-    "The Wood Brothers",
-    "Hamilton County Bluegrass Band",
-    "Iron Horse"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Quinn the Eskimo (The Mighty Quinn)",
    "type": "Vocal",
    "key": null,
@@ -6071,38 +2871,6 @@
     "Vassar Clements",
     "Northern Lights",
     "The Dillards"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Raise a Ruckus",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Old Crow Medicine Show",
-    "J.E. Mainer\u2019s Mountaineers",
-    "The Bluegrass 45",
-    "Alison Krauss"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Reflections",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Blue Denim",
-    "Andy Statman",
-    "The Charlie Daniels Band",
-    "Bettman & Halpin"
    ],
    "notes": null,
    "instruments": []
@@ -6188,91 +2956,6 @@
    "instruments": []
   },
   {
-   "title": "Ruby Ridge",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Tatiana Hargreaves",
-    "Steve Earle",
-    "Peter Rowan",
-    "Tony Rice"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Rutland's Reel",
-   "type": "Fiddle Tune",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Howdy Forrester",
-    "Dismembered Tennesseans",
-    "The Osborne Brothers",
-    "J. P. Cormier"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Say Darling Say",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Tatiana Hargreaves",
-    "Bruce Molsky",
-    "Tommy Jarrell",
-    "Watkins Family Hour"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Seven Bridges Road",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Seldom Scene",
-    "Alan Jackson",
-    "Jimmy Bowen & Santa Fe",
-    "Dolly Parton"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Skippin' in the Mississippi Dew",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "John Hartford",
-    "New Grass Revival",
-    "Leftover Salmon",
-    "The Lonesome Ace Stringband"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Slowly",
    "type": "Vocal",
    "key": null,
@@ -6300,38 +2983,6 @@
     "Jerry Douglas",
     "B\u00e9la Fleck",
     "Buckethead"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Spanish Two Step",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Earls of Leicester",
-    "The Country Gentlemen",
-    "Doc Watson",
-    "Lester Flatt & Earl Scruggs"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "St. James Hospital",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Tony Rice Unit",
-    "Billy Strings",
-    "Doc Watson",
-    "Tony Rice"
    ],
    "notes": null,
    "instruments": []
@@ -6427,64 +3078,6 @@
    "instruments": []
   },
   {
-   "title": "Stompin' at the Savoy",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "David Grisman",
-    "Mike Auldridge",
-    "Arthur Smith",
-    "The Seldom Scene"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Stone's Rag",
-   "type": "Fiddle Tune",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Jim Shumate",
-    "The New Lost City Ramblers",
-    "Michael Cleveland",
-    "Doc Watson"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Sugar Foot Rag",
-   "type": "Fiddle Tune",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Mike Auldridge",
-    "John 5",
-    "Tommy Jarrell",
-    "Wayne Benson"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
    "title": "Talk About Suffering Here Below",
    "type": "Vocal",
    "key": null,
@@ -6501,54 +3094,6 @@
    "instruments": []
   },
   {
-   "title": "The Bells of St. Mary's",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Hickory Hill",
-    "Reno and Smiley",
-    "David Grisman",
-    "Jeremy Stephens"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "The Highwayman",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Dom Flemons",
-    "David Davis",
-    "The Warrior River Boys",
-    "Chatham County Line"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "The Key",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Authentic Unlimited",
-    "Mark Newton",
-    "J. P. Cormier",
-    "Donna Ulisse"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "The Lochs of Dread",
    "type": "Vocal",
    "key": null,
@@ -6560,54 +3105,6 @@
     "B\u00e9la Fleck",
     "Jerry Douglas",
     "Strength in Numbers"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "The Times They Are A\u2010Changin\u2019",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Lester Flatt & Earl Scruggs",
-    "Steve Earle",
-    "The Del McCoury Band",
-    "Nitty Gritty Dirt Band"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "The Traveler",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The Country Gentlemen",
-    "Dean Sapp and The Hartford Express",
-    "Chatham County Line",
-    "Cherryholmes"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "There's a New Moon Over My Shoulder",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Larry Sparks",
-    "Del McCoury",
-    "Doc Watson",
-    "Mac Wiseman"
    ],
    "notes": null,
    "instruments": []
@@ -6634,22 +3131,6 @@
    ]
   },
   {
-   "title": "Two Brothers",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Hobart Smith",
-    "Big Medicine",
-    "Chris Stapleton",
-    "Run Boy Run"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
    "title": "Two Dollar Bill",
    "type": "Vocal",
    "key": null,
@@ -6666,59 +3147,6 @@
    "instruments": []
   },
   {
-   "title": "Walking My Lord Up Calvary Hill",
-   "type": "Gospel",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Jim and Jesse",
-    "The Sullivan Family",
-    "The Lewis Family",
-    "Rhonda Vincent"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "War Pigs",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "The String Cheese Incident",
-    "Hayseed Dixie",
-    "Samantha Fish",
-    "Buckethead"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Watson's Blues",
-   "type": "Instrumental",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Marty Stuart",
-    "Bryan Sutton",
-    "Bill Monroe",
-    "Doc Watson"
-   ],
-   "notes": null,
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
    "title": "Waves",
    "type": "Vocal",
    "key": null,
@@ -6730,59 +3158,6 @@
     "Dangermuffin",
     "Scott Stutzman",
     "B\u00e9la Fleck"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Ways of the World",
-   "type": "Old-Time",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Rayna Gellert",
-    "Bruce Molsky",
-    "Hog-Eyed Man",
-    "Highwoods String Band"
-   ],
-   "notes": "crossover",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "We Can Work It Out",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "J. P. Cormier",
-    "The Dillards",
-    "The Grassmasters",
-    "Crooked Still"
-   ],
-   "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Weary Traveler",
-   "type": "Vocal",
-   "key": null,
-   "difficulty": null,
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Paul Adkins",
-    "The Bluegrass Cut-Ups",
-    "Leftover Salmon",
-    "Bill Monroe"
    ],
    "notes": null,
    "instruments": []
@@ -6820,22 +3195,6 @@
    "instruments": []
   },
   {
-   "title": "White Freight Liner Blues",
-   "type": "Vocal",
-   "key": "C",
-   "difficulty": "Intermediate",
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "New Grass Revival",
-    "Greensky Bluegrass",
-    "Molly Tuttle",
-    "Steve Earle"
-   ],
-   "notes": "modern jam standard",
-   "instruments": []
-  },
-  {
    "title": "White Wheeled Limousine",
    "type": "Vocal",
    "key": null,
@@ -6849,126 +3208,6 @@
     "Ricky Skaggs"
    ],
    "notes": null,
-   "instruments": []
-  },
-  {
-   "title": "Bluegrass Stomp",
-   "type": "Instrumental",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "Bill Monroe",
-    "David Grisman",
-    "Doc Watson"
-   ],
-   "notes": "breakdown",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Bluegrass in the Backwoods",
-   "type": "Fiddle Tune",
-   "key": "Am",
-   "difficulty": "Advanced",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "Aubrey Haynie",
-    "Michael Cleveland",
-    "Kenny Baker"
-   ],
-   "notes": "contest tune",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Carrie Brown",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "Hillbilly Lovechild",
-    "The Del McCoury Band",
-    "Steve Earle"
-   ],
-   "notes": "modern",
-   "instruments": []
-  },
-  {
-   "title": "EMD",
-   "type": "Instrumental",
-   "key": "Em",
-   "difficulty": "Advanced",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "Doc Watson",
-    "David Grisman",
-    "Barcelona Bluegrass Band"
-   ],
-   "notes": "Dawg tune",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Highway 40 Blues",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "Larry Cordle",
-    "Ricky Skaggs",
-    "Glen Duncan"
-   ],
-   "notes": "modern standard",
-   "instruments": []
-  },
-  {
-   "title": "Hobo Song",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "The String Cheese Incident",
-    "Peter Rowan",
-    "Billy Strings"
-   ],
-   "notes": "jam standard",
-   "instruments": []
-  },
-  {
-   "title": "Katy Dear",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Beginner",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "John Duffey",
-    "Charlie Waller",
-    "The Country Gentlemen"
-   ],
-   "notes": "murder ballad",
    "instruments": []
   },
   {
@@ -6992,183 +3231,6 @@
    ]
   },
   {
-   "title": "Rabbit in a Log",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Beginner",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "The Stanley Brothers",
-    "The Thumping Tommys",
-    "J.E. Mainer\u2019s Mountaineers"
-   ],
-   "notes": "up-tempo",
-   "instruments": []
-  },
-  {
-   "title": "Streets of London",
-   "type": "Vocal",
-   "key": "C",
-   "difficulty": "Intermediate",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "Northern Lights",
-    "Punch Brothers",
-    "Tony Rice"
-   ],
-   "notes": "songwriter cover",
-   "instruments": []
-  },
-  {
-   "title": "Swing 51",
-   "type": "Instrumental",
-   "key": "G",
-   "difficulty": "Advanced",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "Wayne Benson",
-    "David Grisman",
-    "The Tony Rice Unit"
-   ],
-   "notes": "Dawg tune",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "The Mountain",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "B\u00e9la Fleck",
-    "The Del McCoury Band",
-    "Steve Earle"
-   ],
-   "notes": "modern standard",
-   "instruments": []
-  },
-  {
-   "title": "Waynesboro",
-   "type": "Old-Time",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "Carlton Rawlings",
-    "Rhys Jones",
-    "Dwight Diller"
-   ],
-   "notes": "modal",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Whitewater",
-   "type": "Instrumental",
-   "key": "D",
-   "difficulty": "Advanced",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "B\u00e9la Fleck",
-    "Mike Marshall",
-    "Tony Rice"
-   ],
-   "notes": "newgrass instrumental",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Wild Horse",
-   "type": "Old-Time",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 3,
-   "core": false,
-   "artists": [
-    "Ed Haley",
-    "The Stanley Brothers",
-    "Kessinger Brothers"
-   ],
-   "notes": "aka Stoney Point",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Big Foot",
-   "type": "Instrumental",
-   "key": "G",
-   "difficulty": "Advanced",
-   "coverage": 2,
-   "core": false,
-   "artists": [
-    "New Grass Revival",
-    "Marty Stuart"
-   ],
-   "notes": "newgrass",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Brown-Eyed Women",
-   "type": "Vocal",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 2,
-   "core": false,
-   "artists": [
-    "The String Cheese Incident",
-    "Trampled by Turtles"
-   ],
-   "notes": "jam favorite",
-   "instruments": []
-  },
-  {
-   "title": "Dawg\u2019s Waltz",
-   "type": "Instrumental",
-   "key": "G",
-   "difficulty": "Advanced",
-   "coverage": 2,
-   "core": false,
-   "artists": [
-    "David Grisman",
-    "Joe Craven"
-   ],
-   "notes": "Dawg tune",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
    "title": "Free Mexican Airforce",
    "type": "Vocal",
    "key": "A",
@@ -7180,174 +3242,6 @@
     "Peter Rowan"
    ],
    "notes": "jam favorite",
-   "instruments": []
-  },
-  {
-   "title": "Grass Valley",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 2,
-   "core": false,
-   "artists": [
-    "The Del McCoury Band",
-    "Molly Tuttle"
-   ],
-   "notes": "modern",
-   "instruments": []
-  },
-  {
-   "title": "Look At Miss Ohio",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 2,
-   "core": false,
-   "artists": [
-    "Old Crow Medicine Show",
-    "Valerie June"
-   ],
-   "notes": "songwriter",
-   "instruments": []
-  },
-  {
-   "title": "Manzanita",
-   "type": "Instrumental",
-   "key": "D",
-   "difficulty": "Advanced",
-   "coverage": 2,
-   "core": false,
-   "artists": [
-    "The Tony Rice Unit",
-    "Tony Rice"
-   ],
-   "notes": "flatpicking showpiece",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Randall Collins",
-   "type": "Vocal",
-   "key": "D",
-   "difficulty": "Intermediate",
-   "coverage": 2,
-   "core": false,
-   "artists": [
-    "Norman Blake",
-    "The Gordons"
-   ],
-   "notes": "songwriter",
-   "instruments": []
-  },
-  {
-   "title": "Redwood Hill",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 2,
-   "core": false,
-   "artists": [
-    "The Country Gentlemen",
-    "Carolina Sonshine"
-   ],
-   "notes": "second-generation",
-   "instruments": []
-  },
-  {
-   "title": "Up on the Hill Where They Do the Boogie",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 2,
-   "core": false,
-   "artists": [
-    "Yonder Mountain String Band",
-    "John Hartford"
-   ],
-   "notes": "songwriter",
-   "instruments": []
-  },
-  {
-   "title": "Widow Maker",
-   "type": "Vocal",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 2,
-   "core": false,
-   "artists": [
-    "Jimmy Martin",
-    "Jimmy Martin and the Sunny Mountain Boys"
-   ],
-   "notes": "truck song",
-   "instruments": []
-  },
-  {
-   "title": "Away From the Mire",
-   "type": "Vocal",
-   "key": "Em",
-   "difficulty": "Advanced",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "Billy Strings"
-   ],
-   "notes": "jam vehicle",
-   "instruments": []
-  },
-  {
-   "title": "Blackjack County Chain",
-   "type": "Vocal",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "The Del McCoury Band"
-   ],
-   "notes": "Del staple",
-   "instruments": []
-  },
-  {
-   "title": "Boots of Spanish Leather",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "The Seldom Scene"
-   ],
-   "notes": "songwriter cover",
-   "instruments": []
-  },
-  {
-   "title": "Ghosts of Mississippi",
-   "type": "Vocal",
-   "key": "Bm",
-   "difficulty": "Intermediate",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "The SteelDrivers"
-   ],
-   "notes": "modern",
-   "instruments": []
-  },
-  {
-   "title": "I Hear Them All",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "Old Crow Medicine Show"
-   ],
-   "notes": "modern",
    "instruments": []
   },
   {
@@ -7369,19 +3263,6 @@
    ]
   },
   {
-   "title": "Meet Me at the Creek",
-   "type": "Vocal",
-   "key": "Em",
-   "difficulty": "Advanced",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "Billy Strings"
-   ],
-   "notes": "jam vehicle",
-   "instruments": []
-  },
-  {
    "title": "Metric Lips",
    "type": "Instrumental",
    "key": "Am",
@@ -7398,32 +3279,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "title": "Radio Boogie",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "Hot Rize"
-   ],
-   "notes": "uptempo",
-   "instruments": []
-  },
-  {
-   "title": "Raised by the Railroad Line",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "The Seldom Scene"
-   ],
-   "notes": "second-generation",
-   "instruments": []
   },
   {
    "title": "Sapporo",
@@ -7480,19 +3335,6 @@
    ]
   },
   {
-   "title": "Take Em Away",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "Old Crow Medicine Show"
-   ],
-   "notes": "modern",
-   "instruments": []
-  },
-  {
    "title": "Tombstone Junction",
    "type": "Instrumental",
    "key": "A",
@@ -7524,32 +3366,6 @@
    "instruments": []
   },
   {
-   "title": "Turmoil & Tinfoil",
-   "type": "Vocal",
-   "key": "Em",
-   "difficulty": "Advanced",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "Billy Strings"
-   ],
-   "notes": "Billy Strings-era",
-   "instruments": []
-  },
-  {
-   "title": "Two Hits and the Joint Turned Brown",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "Yonder Mountain String Band"
-   ],
-   "notes": "jamgrass",
-   "instruments": []
-  },
-  {
    "title": "Untold Stories",
    "type": "Vocal",
    "key": "G",
@@ -7563,41 +3379,6 @@
    "instruments": []
   },
   {
-   "title": "Where Rainbows Never Die",
-   "type": "Vocal",
-   "key": "E",
-   "difficulty": "Intermediate",
-   "coverage": 1,
-   "core": false,
-   "artists": [
-    "The SteelDrivers"
-   ],
-   "notes": "modern standard",
-   "instruments": []
-  },
-  {
-   "title": "Build Me Up From Bones",
-   "type": "Vocal",
-   "key": "Am",
-   "difficulty": "Intermediate",
-   "coverage": 0,
-   "core": false,
-   "artists": [],
-   "notes": "v1-curated (no cover-graph data). modern",
-   "instruments": []
-  },
-  {
-   "title": "Elvis Presley Blues",
-   "type": "Vocal",
-   "key": "D",
-   "difficulty": "Intermediate",
-   "coverage": 0,
-   "core": false,
-   "artists": [],
-   "notes": "v1-curated (no cover-graph data). songwriter",
-   "instruments": []
-  },
-  {
    "title": "First Days in Town",
    "type": "Fiddle Tune",
    "key": "D",
@@ -7606,33 +3387,6 @@
    "core": false,
    "artists": [],
    "notes": "v1-curated (no cover-graph data). fiddle feature",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "title": "Fork in the Road",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 0,
-   "core": false,
-   "artists": [],
-   "notes": "v1-curated (no cover-graph data). jamgrass",
-   "instruments": []
-  },
-  {
-   "title": "Nail That Catfish to a Tree",
-   "type": "Instrumental",
-   "key": "A",
-   "difficulty": "Intermediate",
-   "coverage": 0,
-   "core": false,
-   "artists": [],
-   "notes": "v1-curated (no cover-graph data). old-time crossover",
    "instruments": [
     "fiddle",
     "banjo",
@@ -7657,17 +3411,6 @@
    ]
   },
   {
-   "title": "Old Slew Foot",
-   "type": "Vocal",
-   "key": "A",
-   "difficulty": "Beginner",
-   "coverage": 0,
-   "core": false,
-   "artists": [],
-   "notes": "v1-curated (no cover-graph data). comic hunting song",
-   "instruments": []
-  },
-  {
    "title": "Smoothie Song",
    "type": "Instrumental",
    "key": "A",
@@ -7682,17 +3425,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "title": "The Lighthouse's Tale",
-   "type": "Vocal",
-   "key": "G",
-   "difficulty": "Intermediate",
-   "coverage": 0,
-   "core": false,
-   "artists": [],
-   "notes": "v1-curated (no cover-graph data). modern standard",
-   "instruments": []
   },
   {
    "title": "Abe's Retreat",
@@ -7765,11 +3497,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Ballad of Jed Clampett, The",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Banish Misfortune",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -7796,11 +3523,6 @@
   },
   {
    "title": "Battle of New Orleans Eighth of January",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Beautiful Life, A",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -7861,11 +3583,6 @@
   },
   {
    "title": "Black Velvet Waltz",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Blackest Crow, The",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -7935,11 +3652,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Bonaparte Crossing the Rhine",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Bonaparte Crossing the Rhine extended 4 chord in B part",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -7965,17 +3677,7 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Boy Who Wouldn't Hoe Corn, The",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Brand New Pair of Shoes",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Bravest Cowboy, The",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -8095,11 +3797,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Christine Leroy",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Climbing the Golden Stairs",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -8191,11 +3888,6 @@
   },
   {
    "title": "Cuckoo Bird, The Osborne Brothers",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Cuckoo, The",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -8355,11 +4047,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Edelweiss",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Eileen's Waltz",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -8380,22 +4067,12 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Fall on My Knees",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Farewell Trion via Bob Carlin's album",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
   {
    "title": "Farewell to Long Hollow",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Few Old Memories, A",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -8416,11 +4093,6 @@
   },
   {
    "title": "First Day in Town",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Five Hundred Miles",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -8460,11 +4132,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "For What It's Worth Buffalo Springfield",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Fox on the Run Bill Emerson",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -8486,11 +4153,6 @@
   },
   {
    "title": "Ginseng Sullivan Norman Blake",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Girl Who Broke My Heart, The",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -8525,11 +4187,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Goodbye Old Pal",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Goodbye So Long King Wilkie",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -8551,11 +4208,6 @@
   },
   {
    "title": "Green Corn The Dillards",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Green Rolling Hills of West Virginia, The",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -8615,11 +4267,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "High Road, The",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Highlander's Farewell",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -8660,11 +4307,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Hundred Years From Now, A",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Hunting the Buffalo",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -8691,11 +4333,6 @@
   },
   {
    "title": "I'll Be There (If You Ever Want Me) Ray Price",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "I'm Waiting to Hear You Call Me Darling",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -8850,22 +4487,12 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "L&N Don't Stop Here Anymore, The",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "La Arboleda",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
   {
    "title": "La Bastringue",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "La Danse de Mardi Gras",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -8926,11 +4553,6 @@
   },
   {
    "title": "Little Burnt Potato",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Little Mountain Church, The",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -9000,11 +4622,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Lost and I'll Never Find the Way",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Lover's Waltz arrangement, with modulation",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -9020,17 +4637,7 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Mairi's Wedding",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Make a Little Boat",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Man in the Middle",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -9041,11 +4648,6 @@
   },
   {
    "title": "Maple Sugar",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Margaret's Waltz",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -9076,11 +4678,6 @@
   },
   {
    "title": "McHattie's Waltz",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Memory of Your Smile, The",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -9165,21 +4762,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "My Sweet Blue Eyed Darlin'",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "My Walking Shoes Don't Fit Me Anymore",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Nail That Catfish to the Tree",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Nashville Blues Earl Scruggs",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -9210,11 +4792,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Ninety Nine Years and One Dark Day",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Nothing to It",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -9231,11 +4808,6 @@
   },
   {
    "title": "Old Billy Hell",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Old Black Choo Choo",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -9265,22 +4837,12 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Old Folks at Home",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Old Folks at Home a la Vern Williams",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
   {
    "title": "Old Grimes",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Old Home Town, The",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -9346,16 +4908,6 @@
   },
   {
    "title": "Ora Lee with minor chords",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Our Darling's Gone",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Over the Hill to the Poorhouse",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -9451,11 +5003,6 @@
   },
   {
    "title": "Prairie Spring Waltz",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Precious Lord, Take My Hand",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -9575,22 +5122,12 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Rights of Man",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Riverboat's Gone, A",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
   {
    "title": "Road to Boston",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Road to Lisdoonvarna",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -9715,16 +5252,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Scotland the Brave",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Seeing Nellie Home",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Shady Grove minor, via Doc Watson",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -9761,11 +5288,6 @@
   },
   {
    "title": "Sitting on Top of the World with 6m",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Skip to My Lou",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -9855,11 +5377,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Speed of the Sound of Loneliness",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Spootiskerry",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -9890,11 +5407,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Stay All Night",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Steam Powered Aereo Plane John Hartford",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -9910,22 +5422,7 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Stepstone",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Stillhouse aka Cider",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Stone Wall",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Stony Point",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -10005,11 +5502,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Sweetheart You've Done Me Wrong",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Swing 42",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -10031,11 +5523,6 @@
   },
   {
    "title": "Sycamore Tea",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Take Me Out to the Ball Game",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -10075,32 +5562,12 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Texas Gales",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Theme Time",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
   {
-   "title": "There is a Ship",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Thinking of Home",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Three Finger Jack",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Till the End of the World Rolls Around",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -10130,11 +5597,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Tonight the Bottle Let Me Down",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Traveling Teardrop Blues",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -10145,22 +5607,12 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Trying to Get Over You",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Tumbling Tumbleweeds Buck White version",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
   {
    "title": "Tumbling Tumbleweeds Sons of the Pioneers",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Tune of a Twenty Dollar Bill",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -10220,11 +5672,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Walkin' After Midnight",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Walking With You in My Dreams",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -10236,16 +5683,6 @@
   },
   {
    "title": "Walking in the Parlor",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Waltz You Saved for Me, The",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Waltzing Matilda",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -10280,16 +5717,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "We Can't Be Darlings Anymore",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "We Shall Not Be Moved",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Wednesday Night Waltz",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -10311,11 +5738,6 @@
   },
   {
    "title": "When My Time Comes to Go",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "When You Are Lonely",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -10355,11 +5777,6 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Why Don't You Tell Me So",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Wild Horses Old and in the Way",
    "type": "Vocal",
    "wanted_source": "strum-machine"
@@ -10370,27 +5787,12 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Wild Mountain Thyme",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Wild Rose of the Mountain Si Kahn",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
   {
-   "title": "Will You Be Loving Another Man",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "Willow Creek",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Wind That Shakes the Barley, The",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -10401,11 +5803,6 @@
   },
   {
    "title": "Winder Slide",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Winter's Come and Gone",
    "type": "Vocal",
    "wanted_source": "strum-machine"
   },
@@ -10465,1934 +5862,9 @@
    "wanted_source": "strum-machine"
   },
   {
-   "title": "You Can Keep Your Nine Pound Hammer",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
    "title": "You Don't Know My Mind Jimmy Martin",
    "type": "Vocal",
    "wanted_source": "strum-machine"
-  },
-  {
-   "title": "You Were On My Mind This Morning",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "You're a Flower in the Wildwood",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "Your Cheatin' Heart",
-   "type": "Vocal",
-   "wanted_source": "strum-machine"
-  },
-  {
-   "title": "A White Cross Marks The Grave",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Alcatraz Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Alive And Alone",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "All I Have Is Just A Memory",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Anchored To The Shore",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Angels Are Singing, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Away on a Lonely Dark Hill",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Balo\u2019s Song",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Behind Those Stone Walls",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Bellville Georgia",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Big Ball In Boston",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Black Jack County Chains",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Blackie\u2019s Gunman",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Blue Ridge Mountain Memories",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Blue Yodel #4",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Blue Yodel Number Three",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Blues For Your Own",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Bonnie Blue Eyes",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Bramble And The Rose, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Bravest Cowboy",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Brighter Mansions",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Bring Back My Blue Eyed Boy",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Bring Back My Blue-Eyed Boy To Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Bring On The Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Broken Down Tramp",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Brown Eyed Kentucky Girl",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Bury Me Beneath The Pines",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "By The Touch Of Her Hand",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Call Me Long Gone",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Can\u2019t Stay Here Anymore",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Carry Me Back To The Bluegrass",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Charlie And Nellie",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Charming Beauty Bright",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Children Are Crying And Calling Your Name",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Clinch Mountain Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Cold Hard Rain",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Cowboy\u2019s Wild Song To His Herd",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Cuban Soldier",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Custom Made Woman Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Dark and Thorny",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Darlin Do You Know Who Loves You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Darlin Nellie Gray",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Darling Daisies",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Darling Nellie Across The Sea",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Darling, I\u2019m Living In The Past",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Dawn The Day You Left Me, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Dog Bite Your Hide",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Dog House Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Don\u2019t Drink From A Whiskey Bottle",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Don\u2019t Ever Leave Me Darlin\u2019",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Don\u2019t Forget Me Little Darling",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Don\u2019t Forget This Song",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Dying Californian",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Each Night I Dream of You Darling",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Eight Thirty Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Every Time You Say Good-Bye",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Face Lost In The Crowd",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Faded Flowers",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Farewell Nellie",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Fate Of Dewey Lee, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Fly Around My Blue-Eyed Gal",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Footsteps So Near",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Forty Four Gun",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Four Walls Around Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "From Your Heart To Mine",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Fugitive Breakdown",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Funny When You Feel That Way",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Ginsing Sullivan",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Give Me Your Love And I\u2019ll Give You Mine",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Go Tell Aunt Rodie",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Goin Where I\u2019ve Never Been Before",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Going Back To The Blue Ridge Mountains",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Going Home To Stay",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Going to Write Me a Letter",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Going \u2019round This World",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Goodbye To The Plains",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Handmade Cross",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Happy In Prison",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Happy Or Lonesome",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Happy Sunny Side Of Life, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Hard Luck in Heaven",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Hard Rocking Chair",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Hard Traveling",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "He Took White Roses From Her Hair",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Heading Back to Arkansas",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Hear Jerusalem Moan",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Heart That Was Broken For Me, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Her Sweet Love\u2019s Calling Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Hide Me Oh Blessed Rock of Ages",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Home In Tennessee",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Honey Babe Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "How I Miss My Darling Mother",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Always Get Lonesome When It Rains",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Am Going in the Morning",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Cannot Be Your Sweetheart",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Can\u2019t Feel At Home In This World Anymore",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Can\u2019t Stand To Ramble",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Can\u2019t Stop Calling Your Name",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Guess It\u2019s Only Right That I Should Pay",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Have No Mother Now",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Just Can\u2019t Go On This Old Way",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Just Got Wise",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Love No One But Your",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Loved This Better Than You Knew",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Wanna Be A Christian Soldier",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Want the Lord to Protect My Soul",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Wasted My Tears When I Cried Over You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I Wouldn\u2019t Mind Dying",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Ice Cold Stone",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "If Blue Is The Color Of Lonesome",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "If I Could Only Go Back Home Again",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "If It Takes Me A Lifetime",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "If One Won\u2019t The Other Will",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "If We Never Meet Again This Side Of Heaven",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "If You\u2019re Ever Gonna Love Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "In A Little Village Churchyard",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "In The Room Over Mine",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "In The Shadow Of Clinch Mountain",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Is There Hope For This Heartbreak",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "It Won\u2019t Work This Time",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "It\u2019s Grand To Have Someone To Love You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019d Rather Have It This Way",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ll Find Another Woman",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ll Just Take a Train and Ride",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ll Love Noone But You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ll Never Forsake You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ll Never Make You Blue",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ll Never See Your Face Again",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m Better Off Now That You\u2019re Gone",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m Going Across The Sea",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m Going Back To The Old Home",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m Gonna Get My Picture Took",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m Gonna Love You One More Time",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m Just A Ghost In  This House",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m Lonesome Without You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m On My Way Somewhere",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m Only Human",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m The Boss Of This Here House",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m Traveling On And On",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m Waiting At The Gate",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019m too Old to Stand a Broken Heart",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ve Always Been a Rambler",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ve Got Bluegrass On My Mind",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ve Got a Bulldog",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ve Lost You Forever",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ve Never Been So Lonesome In My Life",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "I\u2019ve Still Got Ninety Nine",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "John Henry Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Just One Teardrop",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Just Wondering Why",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Last Letter, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Last Move For Me, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lay My Head Beneath The Rose",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Let Me Whisper",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Let The Harvest Go To Seed",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Let Us Be Lover\u2019s Again",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Let\u2019s Go To The Fair",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Like A Child In The Rain",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Little Black Pony",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Little Country Preacher",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Little Girl And The Dreadful Snake",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Little Girl That Played Upon My Knee, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Little Log Hut In The Lane",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Little Poplar Log House On The Hill",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Litttle Community Church House",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lonesome Depot",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lonesome For You Darling",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lonesome Here Without You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lonesome Homesick Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lonesome Old Homesick Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lonesome Pine Special",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lonesome Truck Driver Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lonesome Without You \u2013 Delmore Brothers",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lonesome Without You \u2013 Stanleys",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Long Time Travelin\u2019",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Longing For Old Virginia",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Look Away From The Cross",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Look How This World Has Made A Change",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Look On and Cry",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Look Who\u2019s Needin\u2019 Who",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lord I\u2019m In Your Care",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lost Soldier Son",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Love Will Roll the Clouds Away",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lover\u2019s Farewell",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Lovesick And Sorrow",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Loving Sweethearts",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "March Winds Gonna Blow My Blues All Away",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Martha White Theme",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Memories Cover Everything I Own",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Memories Of Mother \u2013 Stanleys",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Memphis Special",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Methodist Pie",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "More Often Than Once In A While",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Mother And Daddy Are Gone",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Mother No Longer Awaits Me At Home",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Mother\u2019s Footsteps Guide Me On",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Mountain Rosa Lee",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Brother\u2019s Bride",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Brown Eyed Darlin\u2019",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Brown-Eyed Darling",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Darling You Know That I Love You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Darling\u2019s Last Goodbye",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Darlin\u2019s In Heaven",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Dixie Home",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Get Up And Go Has Got Up And Went",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Heart\u2019s Tonight In Texas",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Honey Lou",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Little Honeysuckle Rose",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Little Sweetheart Of The Mountain",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Native Home",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Old Log Cabin",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "My Sinful Past",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Never Get To Hold You In My Arms Anymore",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Never Let The Devil Get The Upper Hand Of You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "New John Henry Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "No Burdens Pass Through",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "No Letter In The Mail",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "No More The Moon Shines On Lorena",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "No More To Be Lonesome",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "No One But My Darlin\u2019",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "No Other\u2019s Bride I\u2019ll Be",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Not A Word From Home",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Now My Flower\u2019s Gone Away",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Oh Suzanna",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Old Bill Miner",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Old Black Mountain Saturday Night",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Old Devil\u2019s Dream",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Old Home Place Of Mine",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Old Kentucky Hillside",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Old Man Below",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Old Memories Mean Nothing To Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Old Railroad Track",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Old Swinging Bridge",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Old Village Churchyard",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Only Girl I Ever Cared About, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Only Way To Say Goodbye, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Only the Leading Role Will Do",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Our Darlin\u2019s Gone",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Over Yonder in the Graveyard",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Over the Sunset Hill",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Petals in my Pocket",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Please Remember That I Love You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Poison Lies",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Poor Little Orphaned Boy",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Poor Rebel Soldier",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Prisoner\u2019s Farewell",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Ramblin Away",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Rebel Soldier",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Reckless Motorman",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Remember I Feel Lonesome Too",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Riley And Spencer",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Rock About My Saro Jane",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Room In Heaven For Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Rose On God\u2019s Shore",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Rove Riley Rove",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Sad Prisoner\u2019s Song",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Sailor On The Deep Blue Sea",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Saint Regis Girl",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Sal\u2019s Got A Meatskin",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Sante Fe Train",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "See God\u2019s Ark A\u2019movin\u2019",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "See That My Grave Is Kept Green",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Seeds My Daddy Sowed",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Send Me Your Address",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Seven Years Blues",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "She Appeared To Be Eighteen Or Nineteen Years Old",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "She Has Forgotten",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "She\u2019s A Railroad Lady",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "She\u2019s Just A Cute Thing",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "She\u2019s My Curly Headed Baby",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Shut Up In The Mines At Coal Creek",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Since My Sweet Love Ain\u2019t Around",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Since The Day You Went Away",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Singing All Day And Dinner On The Ground",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Sinking In The Lonesome Sea",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Sit Down With The Lord And Pray",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Six Feet Under The Ground",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Some Things Does",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Somebody\u2019s Waiting For Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Someday You\u2019ll Pay",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Someone\u2019s Last Day",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Southern Railroad Line",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Sow \u2018Em On The Mountain",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Steal Away and Die",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Stern Old Bachelor",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Stone Wall All Around Your Heart",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Sunshine In The Shadows",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Sweet As The Flowers In Maytime",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Swinging A Nine Pound Hammer All Day",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Take My Hand and Tell Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Tell Me Now Or Tell Me Never",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Tell Me Why My Daddy Don\u2019t Come Home",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Tennessee Truck Driving Man",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Texas Bluebonnets",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "That Happy Night",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Beech Nut Tree",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Day Has Passed",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The First Whipporwill",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The God That Never Fails",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Good Things Out Weigh The Bad",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Little Old Church By The Road",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Lone Green Valley",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Lonely Years Belong To Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Shining Path",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Shuffle Of My Feet",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Sweetest Song I Sing",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Testing Time",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Train Carrying Jimmie Rogers Home",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "The Voice Of My Darling",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "There Was Nothing We Could Do",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "There\u2019ll Be Joy, Joy, Joy",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "There\u2019ll Be No Distinction",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "There\u2019s Another Baby Waiting For Me Down The Line",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "There\u2019s No One Like Mother To Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "There\u2019s Someone Awaiting For Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "They Call Her Mother",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Thinking Right",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Thinkin\u2019 Of The Old Days",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Thirty Two Acres",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "This Little Sparrow",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Throw Down Your Earthly Crown",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Too Late To Walk The Floor",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Too Much Mountain Dew",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Too Sweet To Last",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Train That I Ride",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Two Arms To Hold Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Walking On The Blueridge Mountains",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Wayworn Traveler, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Weary Angel",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Weary Prodigal Son",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Weathered Gray Stone",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "What A Friend We Have In Mother",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "What\u2019s Good For You",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "When Autumn Leaves Begin To Fall",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "When I Can Read My Titles Clear",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "When It\u2019s Time For The Whippoorwill To Sing",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "When My Savior Reached Down",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "When Silver Threads Are Gold Again",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "When The Angels Come To Get Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "When The Bees Are In The Hive",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "When The Nightbirds Cry",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "When You Go Walking After Midnight",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Where Did Our Young Years Go",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Where Is My Wandering Boy Tonight",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Where Shall I Be",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Where The Dim Lights Are The Dimmest",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Where The Silvery Colorado Wends Its Way",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Where We Never Shall Die",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Where the City Ends",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Where the Wild Flowers Grow",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Where the Wild Wild Flowers Grow",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "While I\u2019m Reading Your Letter",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Whiskey Deaf Whiskey Blind",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Who Done It",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Who Will Call You Sweetheart",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Who\u2019s Calling You Sweetheart Tonight",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Who\u2019s Going Down To Town",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Who\u2019s That Knocking At My Window",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Why Me Ralph",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Why Must I Remain",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Will He Wait A Little Longer",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Will The Roses Bloom In Heaven",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Willie Roy",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Wishing Waltz",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Wonderful City, The",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Wreck Of The Old Ninety -Seven",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You Better Let That Liar Alone",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You Broke Your Promise",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You Could Never Be True",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You Denied Your Love",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You Give Me Your Love And I\u2019ll Give You Mine",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You Lead Me to the Wrong",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You Won\u2019t Be Satisfied That Way",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Young Freda Bolt",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "Your Greedy Heart",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You\u2019d Better Get Right Little Darling",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You\u2019re Drifting Away",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You\u2019re Drifting On",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You\u2019re Nothing More To Me",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You\u2019re leaving me for the last time",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
-  },
-  {
-   "title": "You\u2019ve Got The Look Of A Perfect Diamond",
-   "type": "Vocal",
-   "wanted_source": "bluegrass-lyrics"
   }
  ]
 }

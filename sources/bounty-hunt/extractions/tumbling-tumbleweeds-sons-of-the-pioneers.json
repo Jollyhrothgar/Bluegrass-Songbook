@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "Tumbling Tumbleweeds Sons of the Pioneers",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:20:33",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 3
+ },
+ "candidate": null,
+ "content": null
+}

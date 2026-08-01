@@ -1,0 +1,14 @@
+id: luckiest-man
+title: Luckiest Man
+artist: The Wood Brothers
+default_key: Dm
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-luckiest-man.txt
+    source_url: https://docs.google.com/document/d/1qpJEPJ0B-1vx9TW8UvvhkEfS5JXxsRRn/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

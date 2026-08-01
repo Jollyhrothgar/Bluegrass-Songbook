@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Hicks Farewell",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Blue Highway",
+   "Doc Watson",
+   "Gaither Carlton",
+   "Riley Baugus"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:26:03",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

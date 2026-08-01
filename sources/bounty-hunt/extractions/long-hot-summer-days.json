@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Long Hot Summer Days",
+  "type": "Vocal",
+  "key": "G",
+  "difficulty": "Intermediate",
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "John Hartford",
+   "Sara Watkins",
+   "The Lonesome Ace Stringband",
+   "Billy Strings"
+  ],
+  "notes": "jam favorite",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:27:49",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

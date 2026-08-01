@@ -1,0 +1,13 @@
+id: my-walking-shoes-dont-fit-me-anymore
+title: My Walking Shoes Don't Fit Me Anymore
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-my-walking-shoes-don-t-fit-me-anymore.txt
+    source_url: https://docs.google.com/document/d/1Qg7iZFBOS2M73gf1jHedcKsh1arsQgA-xg4XNFZCriU/edit?usp=sharing
+    imported_at: '2026-08-01'

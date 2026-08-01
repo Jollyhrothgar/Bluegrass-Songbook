@@ -1,0 +1,13 @@
+id: elvis-presley-blues
+title: Elvis Presley Blues
+artist: Gillian Welch
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: elvis-presley-blues.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/gillian-welch/elvis-presley-blues-chords-948267
+    imported_at: '2026-08-01'

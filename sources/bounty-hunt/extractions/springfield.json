@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Springfield",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:15:44",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2053629,
+  "song_id": 1749635,
+  "song_name": "Springfield",
+  "artist_id": 3481,
+  "artist_name": "Anathema",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "novice",
+  "rating": 0,
+  "date": "1497789533",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "Since there isn't a traditional verse-chorus form in this song, and instead mainly a large jam section combined with some spare vocals, I made the section dividers as such: 'Intro' for the piano part at the beginning, 'Verse' for the bit of vocals, and 'Whispered' for at the end, after the band stops playing. Original audio taken from here: https://www.youtube.com/watch?v=8y1ROzCUpbU.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 11861
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1573189/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/7/6/76361/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1497789533,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "SPRINGFIELD \u2014 ANATHEMA, \"The Optimist\"(2017)\r\nTranscribed by ClassicalfreaK, 2017\r\n============================================\r\nSuggested Capo Use...\r\n\r\nTranspose (-3), use Capo III. Thus, the chord\r\n[tab]progression becomes: [ch]F[/ch]  [ch]Em[/ch]  [ch]C6[/ch]  [ch]A5[/ch]\r\n============================================[/tab]\r\n[INTRO]\r\n[ch]Ab[/ch]   [ch]Gm[/ch]      [ch]Eb5[/ch]  [ch]C5[/ch]\r\n[tab][ch]Ab[/ch]   [ch]Gm[/ch]      [ch]Eb5[/ch]  [ch]C5[/ch]\r\n [piano][/tab]\r\n[tab][ch]Ab[/ch]   [ch]Gm[/ch]      [ch]Eb5[/ch]  [ch]Cm[/ch]\r\n [drums][/tab]\r\n[ch]AbM7[/ch] [ch]Gm[/ch]      [ch]Eb6[/ch]  [ch]Cm[/ch]\r\n[ch]AbM7[/ch] [ch]Gm[/ch]      [ch]Eb6[/ch]  [ch]Cm[/ch]\r\n\r\n[VERSE]\r\n[tab][ch]Cm[/ch]\r\n How did I get here?[/tab]\r\n[ch]AbM7[/ch] [ch]Gm[/ch]      [ch]Eb6[/ch]  [ch]Cm[/ch]\r\n[tab][ch]AbM7[/ch] [ch]Gm[/ch]      [ch]Eb6[/ch]  [ch]Cm[/ch]\r\n                   I don't belong here[/tab]\r\n[ch]AbM7[/ch] [ch]Gm[/ch]      [ch]Eb6[/ch]  [ch]Cm[/ch]\r\n[tab][ch]AbM7[/ch] [ch]Gm[/ch]      [ch]Eb6[/ch]  [ch]Cm[/ch]\r\n                   How did I get here?[/tab]\r\n[tab][ch]AbM7[/ch] [ch]Gm[/ch]      [ch]Eb6[/ch]  [ch]Cm[/ch]\r\n      I...[/tab]\r\n[tab][ch]AbM7[/ch] [ch]Gm[/ch]      [ch]Eb6[/ch]  [ch]Cm[/ch]\r\n                   I don't belong here[/tab]\r\n[tab][ch]AbM7[/ch] [ch]Gm[/ch]      [ch]Eb6[/ch]  [ch]Cm[/ch]\r\n      I...[/tab]\r\n\r\n\r\n[ch]Ab[/ch]   [ch]Gm[/ch]      [ch]Eb6[/ch]  [ch]Cm[/ch]\r\n\r\n (vamp for several minutes)\r\n\r\n[whispered]\r\nN.C.\r\nThis town is like someone's memory of a town,\r\nAnd the memories are fading."
+}

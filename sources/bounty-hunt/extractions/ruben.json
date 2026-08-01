@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Ruben",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Rual Yarbrough",
+   "Pierre Bensusan",
+   "NewFound Road",
+   "Alice Gerrard"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:31:25",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 50
+ },
+ "candidate": null,
+ "content": null
+}

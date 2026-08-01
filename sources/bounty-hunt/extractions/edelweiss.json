@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Edelweiss",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:49:42",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Ebm"
+ },
+ "candidate": {
+  "id": 4887568,
+  "song_id": 11342248,
+  "song_name": "Edelweiss",
+  "artist_id": 545778,
+  "artist_name": "Vince Hill",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 86,
+  "difficulty": "",
+  "rating": 4.71238,
+  "date": "1690215357",
+  "status": "approved",
+  "preset_id": 82056,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Ebm",
+  "version_description": "From 1967. Link to the song: https://youtu.be/PldYfqkFhXo.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1715629
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/7/175670/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/4/142220/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1776275765,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "EDELWEISS\r\nAs recorded by Vince Hill\r\n(1967 single relase)\r\n\r\n\r\nCapo 1st fret\r\n\r\n\r\n[Intro]\r\n[tab][ch]A[/ch]   [ch]E7[/ch]     [ch]A[/ch]   [ch]D[/ch]     [ch]A[/ch]  [ch]E[/ch]  [ch]D[/ch]  [ch]A[/ch]\r\nEdelweiss, Edelweiss[/tab]\r\n\r\n\r\n[Verse 1]\r\n[tab][ch]A[/ch]   [ch]E[/ch]      [ch]A[/ch]   [ch]D[/ch]\r\nEdelweiss, Edelweiss[/tab]\r\n[tab][ch]A[/ch]     [ch]Gbm[/ch]         [ch]Bm7[/ch]   [ch]E7[/ch]\r\nEv'ry morning you greet me[/tab]\r\n[tab][ch]A[/ch]         [ch]E[/ch]\r\nSmall and White[/tab]\r\n[tab][ch]A[/ch]         [ch]D[/ch]\r\nClean and bright[/tab]\r\n[tab][ch]A[/ch]        [ch]E7[/ch]       [ch]A[/ch]\r\nYou look happy to meet me[/tab]\r\n[tab][ch]E7[/ch]                      [ch]A[/ch]\r\nBlossem of snow may you bloom and grow[/tab]\r\n[tab][ch]D[/ch]         [ch]B7[/ch]   [ch]E[/ch]   [ch]E7[/ch]\r\nBloom and grow forever[/tab]\r\n[tab][ch]A[/ch]   [ch]E[/ch]      [ch]D[/ch]   [ch]Bbm[/ch]\r\nEdelweiss, Edelweiss[/tab]\r\n[tab][ch]A[/ch]        [ch]E[/ch]           [ch]A[/ch] [ch]F7[/ch]\r\nBless my homeland forever[/tab]\r\n\r\n\r\n[Interlude]\r\n[ch]Bb[/ch]  [ch]F7[/ch]  [ch]Bb[/ch]  [ch]Eb[/ch]\r\n[ch]Bb[/ch]  [ch]Gm[/ch]  [ch]Cm[/ch]  [ch]F7[/ch]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]Bb[/ch]        [ch]F7[/ch]\r\nSmall and White[/tab]\r\n[tab][ch]Gm[/ch]        [ch]Eb[/ch]\r\nClean and Bright[/tab]\r\n[tab][ch]Bb[/ch]       [ch]F7[/ch]       [ch]Eb[/ch]   [ch]Bb[/ch]\r\nYou look happy to meet me[/tab]\r\n[tab][ch]F7[/ch]                      [ch]Bb[/ch]\r\nBlossem of snow may you bloom and grow[/tab]\r\n[tab][ch]Eb[/ch]        [ch]C7[/ch]      [ch]F[/ch] [ch]F7[/ch]\r\nBloom and grow forever[/tab]\r\n[tab][ch]Bb[/ch]  [ch]F[/ch]      [ch]Eb[/ch]  [ch]Ebm[/ch]\r\nEdelweiss, Edelweiss[/tab]\r\n[tab]N.C.         [ch]Ebm[/ch]     [ch]Eb[/ch] [ch]Bb[/ch]\r\nBless my homeland forever[/tab]"
+}

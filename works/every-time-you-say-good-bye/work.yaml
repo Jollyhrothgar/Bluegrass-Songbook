@@ -1,0 +1,12 @@
+id: every-time-you-say-good-bye
+title: Every Time You Say Good-Bye
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/every-time-you-say-good-bye/
+    imported_at: '2026-08-01'

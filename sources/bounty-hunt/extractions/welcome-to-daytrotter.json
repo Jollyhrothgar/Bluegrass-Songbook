@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Welcome to Daytrotter",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Black Prairie",
+   "Billy Strings",
+   "B\u00e9la Fleck",
+   "Sturgill Simpson"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:07:42",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

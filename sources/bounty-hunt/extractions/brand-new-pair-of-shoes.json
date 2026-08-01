@@ -1,0 +1,60 @@
+{
+ "wanted": {
+  "title": "Brand New Pair of Shoes",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:42:58",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Bb"
+ },
+ "candidate": {
+  "id": 3741014,
+  "song_id": 6639053,
+  "song_name": "Brand New Pair Of Shoes",
+  "artist_id": 468512,
+  "artist_name": "Ana Cristina Cash",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1622990077",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Bb",
+  "version_description": "Based on the video at https://www.youtube.com/watch?v=3sLfOJzltq0. 83 bpm. Bb. Jazzy.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2804953
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1623026617,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]Bb[/ch]  [ch]B[/ch]  [ch]Cm[/ch]  [ch]F[/ch]\r\n[ch]Bb[/ch]  [ch]B[/ch]  [ch]Cm[/ch]  [ch]F[/ch]\r\n\r\n\r\n[Chorus]\r\n[tab]    [ch]Bb[/ch]\r\nI'm breaking[/tab]\r\n[tab]    [ch]B[/ch]             [ch]Cm[/ch]                [ch]F[/ch]\r\nI'm breaking in a brand new pair of shoes[/tab]\r\n[tab][ch]Cm[/ch]             [ch]F[/ch]           [ch]Bb[/ch]      [ch]Bb7[/ch]\r\nWalking 'til I lose all my   money blues[/tab]\r\n[tab]  [ch]Eb[/ch]            [ch]D[/ch]           [ch]D7[/ch]            [ch]Gm[/ch]\r\nI spent my last dollar I'll ever spend on you[/tab]\r\n[tab]        [ch]C7[/ch]            [ch]F[/ch]                 [ch]Bb[/ch]\r\nAnd I'm breaking in a brand new pair of shoes[/tab]\r\n\r\n\r\n[Verse 1]\r\n[tab]            [ch]D7[/ch]\r\nYour closet walls are busting out[/tab]\r\n[tab]     [ch]Gm[/ch]\r\nWith your expensive rags[/tab]\r\n[tab]     [ch]C7[/ch]\r\nYour shelves are packed[/tab]\r\n[tab]                   [ch]F[/ch]\r\nWith crocodile and alligator bags[/tab]\r\n[tab]  [ch]D7[/ch]\r\nA thousand little mink have died[/tab]\r\n[tab]   [ch]Gm[/ch]\r\nSo you could have their coats[/tab]\r\n[tab]        [ch]C7[/ch]\r\nNow the money's gone, the money's gone[/tab]\r\n[tab]    [ch]F[/ch]\r\nAnd that's all you wrote[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]    [ch]Bb[/ch]\r\nI'm breaking[/tab]\r\n[tab]    [ch]B[/ch]             [ch]Cm[/ch]                [ch]F[/ch]\r\nI'm breaking in a brand new pair of shoes[/tab]\r\n[tab][ch]Cm[/ch]             [ch]F[/ch]           [ch]Bb[/ch]      [ch]Bb7[/ch]\r\nWalking 'til I lose all my   money blues[/tab]\r\n[tab]  [ch]Eb[/ch]            [ch]D[/ch]           [ch]D7[/ch]            [ch]Gm[/ch]\r\nI spent my last dollar I'll ever spend on you[/tab]\r\n[tab]       [ch]C7[/ch]       [ch]Bb[/ch]   [ch]F[/ch]                 [ch]Bb[/ch]\r\nSo I'm breaking in a brand new pair of shoes[/tab]\r\n\r\n\r\n[Solo]\r\n[ch]Bb[/ch]  [ch]B[/ch]  [ch]Cm[/ch]  [ch]F[/ch]\r\n[ch]Cm[/ch]  [ch]F[/ch]  [ch]Bb[/ch]  [ch]Bb7[/ch]\r\n[ch]Eb[/ch]  [ch]Bb[/ch] [ch]D7[/ch]  [ch]Gm[/ch]\r\n[ch]C7[/ch]     [ch]F[/ch]   [ch]Bb[/ch]\r\n\r\n\r\n[Bridge]\r\n[tab]     [ch]Gm[/ch]\r\nSlap on that false eyelash[/tab]\r\n[tab]    [ch]Cm[/ch]\r\nAnd jam on your wig[/tab]\r\n[tab]         [ch]F[/ch]\r\nSpray yourself with french perfume[/tab]\r\n[tab]    [ch]Bb[/ch]\r\nAnd go spending big[/tab]\r\n[tab]     [ch]D7[/ch]                 [ch]Gm[/ch]\r\nJust save a little tiny bit for me[/tab]\r\n[tab]                 [ch]C7[/ch]\r\nTen dollars will do to buy myself[/tab]\r\n[tab]  [ch]F[/ch]\r\nA brand new pair of shoes[/tab]\r\n\r\n\r\n\r\n[Chorus]\r\n[tab]    [ch]Bb[/ch]\r\nI'm breaking[/tab]\r\n[tab]    [ch]B[/ch]             [ch]Cm[/ch]                [ch]F[/ch]\r\nI'm breaking in a brand new pair of shoes[/tab]\r\n[tab][ch]Cm[/ch]             [ch]F[/ch]           [ch]Bb[/ch]      [ch]Bb7[/ch]\r\nWalking 'til I lose all my   money blues[/tab]\r\n[tab]  [ch]Eb[/ch]            [ch]D[/ch]           [ch]D7[/ch]            [ch]Gm[/ch]\r\nI spent my last dollar I'll ever spend on you[/tab]\r\n[tab]       [ch]C7[/ch]       [ch]Bb[/ch]   [ch]F[/ch]                 [ch]Bb[/ch]\r\nSo I'm breaking in a brand new pair of shoes[/tab]\r\n\r\n\r\n\r\n[Outro]\r\n[tab]    [ch]Eb[/ch]       [ch]Bb[/ch]   [ch]Cm[/ch]        [ch]F7[/ch]      [ch]Bb[/ch]\r\nI'm breaking in a brand new pair of shoes[/tab]"
+}

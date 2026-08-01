@@ -1,0 +1,13 @@
+id: cold-rain-and-snow
+title: Cold Rain and Snow
+default_key: D
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-cold-rain-and-snow.txt
+    source_url: https://docs.google.com/document/d/1DAatUbtiegE48ZyVhNbIk312GiqX3w4yQExK2Znuvhg/edit?usp=sharing
+    imported_at: '2026-08-01'

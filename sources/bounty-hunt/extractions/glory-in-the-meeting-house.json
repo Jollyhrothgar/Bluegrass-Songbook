@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Glory in the Meeting House",
+  "type": "Gospel",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Uncle Sinner",
+   "Erynn Marshall & Chris Coole",
+   "Bruce Molsky",
+   "Red Cravens"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:44",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

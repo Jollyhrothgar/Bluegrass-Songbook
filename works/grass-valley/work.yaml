@@ -1,0 +1,13 @@
+id: grass-valley
+title: Grass Valley
+artist: Molly Tuttle Golden Highway
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: grass-valley.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/molly-tuttle-golden-highway/grass-valley-chords-4241470
+    imported_at: '2026-08-01'

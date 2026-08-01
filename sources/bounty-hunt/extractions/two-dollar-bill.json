@@ -1,0 +1,83 @@
+{
+ "wanted": {
+  "title": "Two Dollar Bill",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Art Stevenson & High Water",
+   "Iron Horse",
+   "Vassar Clements",
+   "The Gordons"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:33:46",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 6.5,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 5229072,
+  "song_id": 24177069,
+  "song_name": "Two Dollar Bill",
+  "artist_id": 2641035,
+  "artist_name": "Libby Lux",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 3,
+  "difficulty": "",
+  "rating": 4.734,
+  "date": "1713443379",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "As close to the original as I could get from watching Libby play and sing it on YouTube and learning it myself.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 1,
+   "tonality_name": "",
+   "performance": {
+    "name": "live acoustic",
+    "serie": null,
+    "venue": null,
+    "date_start": 0,
+    "date_end": 0,
+    "cancelled": 0,
+    "type": "concert",
+    "comment": "",
+    "video_urls": []
+   },
+   "recording_artists": [],
+   "video_urls": [
+    "https://www.youtube.com/watch?v=1zwrrJty2u8&ab_channel=%F0%9D%95%B7%F0%9D%96%8E%F0%9D%96%87%F0%9D%96%87%F0%9D%96%9E%F0%9D%95%B7%F0%9D%96%9A%F0%9D%96%9D"
+   ],
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1713443379,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]C[/ch] [ch]F[/ch] [ch]G[/ch] [ch]C[/ch]\r\n\r\n[Verse 1]\r\n[tab][ch]C[/ch]                                                      [ch]F[/ch]\r\nWalkin' down the street the other day, you know what I found?[/tab]\r\n[tab]        [ch]G[/ch]                                              [ch]C[/ch]\r\nI was a two dollar bill, just layin' right there on the ground[/tab]\r\n[tab]     [ch]C[/ch]                                            [ch]F[/ch]\r\nSo I put it in my pocket and later I found it was gone[/tab]\r\n[tab]       [ch]G[/ch]                                          [ch]C[/ch]\r\nIt was then that I knew my own lover was doin' me wrong[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]C[/ch]                         [ch]F[/ch]\r\nA two dollar bill, Lord a two dollar bill[/tab]\r\n[tab][ch]G[/ch]                       [ch]C[/ch]\r\nYou're gunna go out and get your cheap thrill[/tab]\r\n[tab][ch]C[/ch]                         [ch]F[/ch]\r\nA two dollar bill, Lord a two dollar bill[/tab]\r\n[tab]   [ch]G[/ch]                                [ch]C[/ch]\r\nmy honey done spent all my money on pills[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]C[/ch]                                                   [ch]F[/ch]\r\nyou said you'd be a good man said you'd make a good husband,[/tab]\r\n[tab]         [ch]G[/ch]                                                 [ch]C[/ch]\r\nswore in sickness and health i'm  the only one gettin your lovin'[/tab]\r\n[tab]           [ch]C[/ch]                                           [ch]F[/ch]\r\nbut you're spending my money on women and bottom shelf gin[/tab]\r\n[tab]   [ch]G[/ch]                                            [ch]C[/ch]\r\nAnytime you aint home you living a life full of sin.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]C[/ch]                         [ch]F[/ch]\r\nA two dollar bill, Lord a two dollar bill[/tab]\r\n[tab][ch]G[/ch]                       [ch]C[/ch]\r\nYou're gunna go out and get your cheap thrill[/tab]\r\n[tab][ch]C[/ch]                         [ch]F[/ch]\r\nA two dollar bill, Lord a two dollar bill[/tab]\r\n[tab]   [ch]G[/ch]                                [ch]C[/ch]\r\nmy honey done spent all my money on pills[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]C[/ch]                                            [ch]F[/ch]\r\nI had to go down to the tow yard to get back my car[/tab]\r\n[tab]  [ch]G[/ch]                                             [ch]C[/ch]\r\nI had to pay an overdue tab at my neighbourhood bar.[/tab]\r\n[tab]        [ch]C[/ch]                                               [ch]F[/ch]\r\nbut I'm sick of the way that you steal the way that you lie.[/tab]\r\n[tab]         [ch]G[/ch]                                                     [ch]C[/ch]\r\nThe last cent that i'll spend's the two cents just to tell you goodbye.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]C[/ch]                         [ch]F[/ch]\r\nA two dollar bill, Lord a two dollar bill[/tab]\r\n[tab][ch]G[/ch]                       [ch]C[/ch]\r\nYou're gunna go out and get your cheap thrill[/tab]\r\n[tab][ch]C[/ch]                         [ch]F[/ch]\r\nA two dollar bill, Lord a two dollar bill[/tab]\r\n[tab]   [ch]G[/ch]                                [ch]C[/ch]\r\nmy honey done spent all my money on pills[/tab]"
+}

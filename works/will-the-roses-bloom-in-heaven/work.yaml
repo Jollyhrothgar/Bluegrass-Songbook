@@ -1,0 +1,12 @@
+id: will-the-roses-bloom-in-heaven
+title: Will The Roses Bloom In Heaven
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/will-the-roses-bloom-in-heaven/
+    imported_at: '2026-08-01'

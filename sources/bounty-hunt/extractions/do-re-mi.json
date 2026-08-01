@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Do Re Mi",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Bluegrass Band",
+   "Tony Trischka",
+   "Fair To Middlin'",
+   "The Dillards"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:24:55",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Bbm"
+ },
+ "candidate": {
+  "id": 2004493,
+  "song_id": 1738229,
+  "song_name": "Do Re Mi",
+  "artist_id": 59644,
+  "artist_name": "blackbear",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 456,
+  "difficulty": "intermediate",
+  "rating": 4.87234,
+  "date": "1495634093",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Bbm",
+  "version_description": "This is the fist version of this tab so hope you enjoy.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 196743
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/1618637/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/1/31145/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1544427459,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[tab][Intro]\r\ne|--0--3--5--7--10--7-7----------------3--2-|\r\nB|--1------------7------10--10--8--10--5--1-|\r\nG|--2------------7---------------------4--0-| x2\r\nD|--2------------7--------------------------|\r\nA|--0------------7--------------------------|\r\nE|------------------------------------------|[/tab]\r\n\r\n[Verse 1]\r\n[tab]           [ch]Am[/ch]\r\nIf I could go back to the day we met[/tab]\r\n[tab]  [ch]G[/ch]\r\nI probably would just stay in bed[/tab]\r\n[tab]    [ch]D[/ch]\r\nYou run your mouth all over town[/tab]\r\n[tab]    [ch]F[/ch]                 [ch]G[/ch]\r\nAnd this one goes out to the sound[/tab]\r\n[tab]   [ch]Am[/ch]\r\nOf breaking glass on my Range Rover[/tab]\r\n[tab][ch]G[/ch]\r\nPay my back or bitch it's over[/tab]\r\n[tab][ch]D[/ch]\r\nAll the presents I would send[/tab]\r\n[tab][ch]F[/ch]               [ch]G[/ch]\r\nFuck my friends behind my shoulder[/tab]\r\n[tab][ch]Am[/ch]                      [ch]G[/ch]\r\nNext time I'ma stay asleep[/tab]\r\n[tab][ch]D[/ch]                          [ch]F[/ch]      [ch]G[/ch]\r\nI pray the Lord my soul to keep, oh[/tab]\r\n\r\n[Pre-Chorus]\r\n[tab][ch]Am[/ch]\r\nAnd you got me thinking lately[/tab]\r\n[tab][ch]G[/ch]\r\nBitch, you crazy[/tab]\r\n[tab]    [ch]D[/ch]\r\nAnd nothing's ever good enough[/tab]\r\n[tab]   [ch]F[/ch]                         [ch]G[/ch]\r\nSo I wrote a little song for ya[/tab]\r\nN.C.\r\nIt go like\r\n\r\n[Chorus]\r\n[tab][ch]Am[/ch]              [ch]G[/ch]                     [ch]D[/ch]\r\nDo, re, mi, fa, so fucking done with you, girl[/tab]\r\n[tab][ch]F[/ch]           [ch]G[/ch]                [ch]Am[/ch]\r\nSo fucking done with all the games you play[/tab]\r\n[tab]  [ch]G[/ch]                [ch]D[/ch]\r\nI ain't no tic-tac-toe[/tab]\r\n[tab]   [ch]F[/ch]                     [ch]G[/ch]\r\nSo send the X and O's on another note[/tab]\r\n[tab]    [ch]Am[/ch]              [ch]G[/ch]                     [ch]D[/ch]\r\nI'm do, re, mi, fa, so fucking done with you babe[/tab]\r\n[tab]   [ch]F[/ch]                     [ch]G[/ch]             [ch]Am[/ch]\r\nSo send the X and O's on another note, I'm ghost[/tab]\r\n[tab][ch]Am[/ch]     [ch]G[/ch]      [ch]D[/ch]    [ch]G[/ch]\r\nYeah, yeah, yeah, oh[/tab]\r\n\r\n[Verse 2]\r\n[tab]           [ch]Am[/ch]\r\nIf I could go back to the day we met[/tab]\r\n[tab]  [ch]G[/ch]\r\nI probably woulda stayed in bed[/tab]\r\n[tab]    [ch]D[/ch]\r\nYou wake up everyday[/tab]\r\n[tab]    [ch]F[/ch]                     [ch]G[/ch]\r\nand make me feel like I'm incompetent[/tab]\r\n[tab][ch]Am[/ch]\r\nDesigner shoes and Xanax tabs[/tab]\r\n[tab][ch]G[/ch]\r\nCompliments your make-up bag[/tab]\r\n[tab]    [ch]D[/ch]\r\nYou never had to buy yourself a drink[/tab]\r\n[tab]    [ch]F[/ch]                 [ch]G[/ch]\r\nCuz everybody want to tap that ass[/tab]\r\n\r\n[Bridge]\r\n[tab][ch]Am[/ch]\r\nAnd you got me thinking lately[/tab]\r\n[tab][ch]G[/ch]\r\nBitch, you crazy[/tab]\r\n[tab]    [ch]D[/ch]\r\nAnd nothing's ever good enough[/tab]\r\n[tab]   [ch]F[/ch]                         [ch]G[/ch]\r\nSo I wrote a little song for ya[/tab]\r\nN.C.\r\nIt go like\r\n\r\n[Chorus]\r\n[tab][ch]Am[/ch]              [ch]G[/ch]                    [ch]D[/ch]\r\nDo, re, mi, fa, so fucking done with you girl[/tab]\r\n[tab][ch]F[/ch]          [ch]G[/ch]                  [ch]Am[/ch]\r\nSo fucking done with all the games you play[/tab]\r\n[tab][ch]G[/ch]                  [ch]D[/ch]\r\nI ain't no tic-tac-toe[/tab]\r\n[tab]   [ch]F[/ch]                      [ch]G[/ch]\r\nSo send the X and O's on another note[/tab]\r\n[tab]    [ch]Am[/ch]              [ch]G[/ch]                    [ch]D[/ch]\r\nI'm do, re, mi, fa, so fucking done with you, babe[/tab]\r\n[tab]    [ch]F[/ch]                    [ch]G[/ch]                  [ch]Am[/ch]\r\nSo send the X and O's on another note, I'm ghost[/tab]"
+}

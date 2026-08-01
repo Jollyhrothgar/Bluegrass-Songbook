@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "Where Rainbows Never Die",
+  "type": "Vocal",
+  "key": "E",
+  "difficulty": "Intermediate",
+  "coverage": 1,
+  "core": false,
+  "artists": [
+   "The SteelDrivers"
+  ],
+  "notes": "modern standard",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:37:59",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1770640,
+  "song_id": 251310,
+  "song_name": "Where Rainbows Never Die",
+  "artist_id": 27168,
+  "artist_name": "The SteelDrivers",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 918,
+  "difficulty": "novice",
+  "rating": 4.85713,
+  "date": "1443603399",
+  "status": "approved",
+  "preset_id": 59137,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 189969
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/154067/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/8/38014/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1721929316,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Standard Tuning\r\nCapo 2nd Fret\r\n\r\n\r\n[Intro]\r\n\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]D[/ch]  [ch]A[/ch]               [ch]Bm[/ch]    [ch]G[/ch]        [ch]D[/ch]      [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n   I'm an old man now, I can't do nothing[/tab]\r\n[tab][ch]D[/ch]  [ch]A[/ch]            [ch]Bm[/ch]        [ch]G[/ch]      [ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n    Young folks don't pay me no mind[/tab]\r\n[tab][ch]D[/ch]  [ch]A[/ch]           [ch]Bm[/ch]  [ch]G[/ch]        [ch]D[/ch]        [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n   But in my day I sure was something[/tab]\r\n[tab]  [ch]D[/ch]      [ch]A[/ch]        [ch]Bm[/ch]    [ch]G[/ch]        [ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\nBefore I felt the heavy hand of time[/tab]\r\n\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab][ch]D[/ch]  [ch]A[/ch]              [ch]Bm[/ch]       [ch]G[/ch]         [ch]D[/ch]    [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n   I'm an old man now, I'm bound for glory[/tab]\r\n[tab][ch]D[/ch]  [ch]A[/ch]       [ch]Bm[/ch]        [ch]G[/ch]       [ch]D[/ch]   [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n   Time to lay these burdens down[/tab]\r\n[tab][ch]D[/ch]  [ch]A[/ch]             [ch]Bm[/ch]       [ch]G[/ch]        [ch]D[/ch]    [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n   Had enough of this old world of worry[/tab]\r\n[tab][ch]D[/ch]  [ch]A[/ch]              [ch]Bm[/ch]       [ch]G[/ch]     [ch]D[/ch]    [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n   Gonna trade my troubles for a crown[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab]       [ch]D[/ch]       [ch]A[/ch]     [ch]Bm[/ch]       [ch]G[/ch]           [ch]D[/ch]    [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\nI will make my way across the fields of cotton[/tab]\r\n[tab]    [ch]D[/ch]            [ch]A[/ch]     [ch]Bm[/ch]     [ch]G[/ch]          [ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\nAnd wade through muddy waters one last time[/tab]\r\n[tab]    [ch]D[/ch]     [ch]A[/ch]        [ch]Bm[/ch]       [ch]G[/ch]\r\nAnd in my dreams I come out clean[/tab]\r\n[tab][ch]Bm[/ch]        [ch]A[/ch]                [ch]G[/ch]\r\n   When I reach the other side[/tab]\r\n[tab]                   [ch]Em[/ch]      [ch]G[/ch]\r\nWest of where the sun sets, where rainbows never die[/tab]\r\n\r\n\r\n[Guitar Solo]\r\n\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Bridge]\r\n\r\n[tab][ch]A[/ch]                              [ch]A[/ch] [ch]A[/ch] [ch]A[/ch]\r\n  I've got one last thing to do[/tab]\r\n[tab][ch]G[/ch]\r\n  One more mile before I'm through[/tab]\r\n[tab][ch]A[/ch]                                 [ch]A[/ch] [ch]A[/ch] [ch]A[/ch]\r\n  Casting off these earthly chains[/tab]\r\n[tab][ch]G[/ch]                     [ch]A[/ch]\r\n  Going where there's no more pain[/tab]\r\n\r\n\r\n[Violin Solo]\r\n\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n[ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab]       [ch]D[/ch]       [ch]A[/ch]     [ch]Bm[/ch]       [ch]G[/ch]           [ch]D[/ch]    [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\nI will make my way across the fields of cotton[/tab]\r\n[tab]    [ch]D[/ch]            [ch]A[/ch]     [ch]Bm[/ch]     [ch]G[/ch]          [ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\nAnd wade through muddy waters one last time[/tab]\r\n[tab]    [ch]D[/ch]     [ch]A[/ch]        [ch]Bm[/ch]       [ch]G[/ch]\r\nAnd in my dreams I come out clean[/tab]\r\n[tab][ch]Bm[/ch]        [ch]A[/ch]                [ch]G[/ch]\r\n   When I reach the other side[/tab]\r\n[tab]                   [ch]Em[/ch]      [ch]G[/ch]                     [ch]D[/ch]\r\nWest of where the sun sets, where rainbows never die[/tab]\r\n\r\n\r\n[Outro]\r\n\r\n([ch]D[/ch]) [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n [ch]D[/ch]  [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n\r\n[tab][ch]D[/ch]  [ch]A[/ch]               [ch]Bm[/ch]    [ch]G[/ch]        [ch]D[/ch]      [ch]A[/ch]  [ch]Bm[/ch]  [ch]G[/ch]\r\n   I'm an old man now, I can't do nothing[/tab]\r\n[tab][ch]D[/ch]  [ch]A[/ch]            [ch]Bm[/ch]        [ch]G[/ch]     [ch]D[/ch]\r\n    Young folks don't pay me no mind[/tab]"
+}

@@ -1,0 +1,12 @@
+id: when-i-can-read-my-titles-clear
+title: When I Can Read My Titles Clear
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/when-i-can-read-my-titles-clear/
+    imported_at: '2026-08-01'

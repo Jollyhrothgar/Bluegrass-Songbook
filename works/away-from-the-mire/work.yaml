@@ -1,0 +1,13 @@
+id: away-from-the-mire
+title: Away From the Mire
+artist: Billy Strings
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: away-from-the-mire.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/billy-strings/away-from-the-mire-chords-2801240
+    imported_at: '2026-08-01'

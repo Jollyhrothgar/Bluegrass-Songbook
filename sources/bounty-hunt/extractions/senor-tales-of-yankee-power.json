@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Se\u00f1or (Tales of Yankee Power)",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Donna the Buffalo",
+   "Billy Strings",
+   "Chris Thile",
+   "Punch Brothers"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:19:27",
+ "status": "accepted",
+ "validation": {
+  "tier": "bluegrass-artist",
+  "score": 59.9,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "Gm"
+ },
+ "candidate": {
+  "id": 345336,
+  "song_id": 151518,
+  "song_name": "Se\u00f1or Tales Of Yankee Power",
+  "artist_id": 11030,
+  "artist_name": "Tim O'Brien",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 28,
+  "difficulty": "",
+  "rating": 4.65822,
+  "date": "1142899201",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Gm",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 248877
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/1/218434/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/4/3409/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1684033236,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Se\u00f1or (Tales of Yankee Power)\r\nTim O'Brien\r\nRed on Blonde\r\n\r\nStandard tuning\r\nCapo on the 3rd fret\r\n\r\n\r\n[Intro]\r\n[ch]Em[/ch]    [ch]Bm[/ch]\r\n[ch]C[/ch]  [ch]G[/ch]  [ch]G[/ch] [ch]D/F#[/ch] [ch]Em[/ch]\r\n[ch]D[/ch]     [ch]C[/ch]   [ch]C/B[/ch]\r\n[ch]Am[/ch]    [ch]Em[/ch]\r\n\r\n[Verse 1]\r\n[tab] [ch]Em[/ch]      [ch]Bm[/ch]\r\nSe\u00f1or, Se\u00f1or,[/tab]\r\n[tab]        [ch]C[/ch]                [ch]G[/ch]\r\nCan you tell me where we heading?[/tab]\r\n[tab]               [ch]G[/ch]       [ch]D/F#[/ch] [ch]Em[/ch]\r\nLincoln County Road or Arma-geddon?[/tab]\r\n[tab][ch]D[/ch]                                 [ch]C[/ch]    [ch]C/B[/ch]\r\nSeems like I been down this way before[/tab]\r\n[tab][ch]Am[/ch]                             [ch]Em[/ch]\r\n  Is there any truth to that, Se\u00f1or?[/tab]\r\n\r\n[Verse 2]\r\n[tab] [ch]Em[/ch]     [ch]Bm[/ch]\r\nSe\u00f1or, Se\u00f1or,[/tab]\r\n[tab]       [ch]C[/ch]                [ch]G[/ch]\r\nDo you know where she's hiding?[/tab]\r\n[tab]    [ch]G[/ch]           [ch]D/F#[/ch]     [ch]Em[/ch]\r\nHow long are we gonna be riding?[/tab]\r\n[tab]         [ch]D[/ch]                                [ch]C[/ch]     [ch]C/B[/ch]\r\nHow long must I keep my eyes glued to the door?[/tab]\r\n[tab]     [ch]Am[/ch]                           [ch]Em[/ch]\r\nWill there be any comfort there, Se\u00f1or?[/tab]\r\n\r\n[Instrumental]\r\n[ch]Em[/ch]    [ch]Bm[/ch]\r\n[ch]C[/ch]  [ch]G[/ch]  [ch]G[/ch] [ch]D/F#[/ch] [ch]Em[/ch]\r\n[ch]D[/ch]     [ch]C[/ch]   [ch]C/B[/ch]\r\n[ch]Am[/ch]    [ch]Em[/ch]\r\n\r\n[Bridge 1]\r\n[tab]          [ch]G[/ch]                                 [ch]Bm[/ch]\r\nThere's a wicked wind still blowing on that upper deck[/tab]\r\n[tab]           [ch]C[/ch]                              [ch]Em[/ch]\r\nThere's an iron cross still hanging from around her neck[/tab]\r\n[tab]          [ch]G[/ch]                                   [ch]Bm[/ch]\r\nThere's a marching band still playing in that vacant lot[/tab]\r\n[tab]          [ch]C[/ch]                                [ch]Em[/ch]\r\nWhere she held me in her arms one time and said forget me not[/tab]\r\n\r\n[Verse 3]\r\n[tab] [ch]Em[/ch]      [ch]Bm[/ch]\r\nSe\u00f1or, Se\u00f1or,[/tab]\r\n[tab]      [ch]C[/ch]                [ch]G[/ch]\r\nI can see that painted wagon[/tab]\r\n[tab]          [ch]G[/ch]    [ch]D/F#[/ch] [ch]Em[/ch]\r\nSmell the tail of a dragon[/tab]\r\n[tab]  [ch]D[/ch]                           [ch]C[/ch]    [ch]C/B[/ch]\r\nI can't stand the suspense anymore[/tab]\r\n[tab]        [ch]Am[/ch]                            [ch]Em[/ch]\r\nCan you tell me who to contact here, Se\u00f1or?[/tab]\r\n\r\n[Instrumental]\r\n[ch]Em[/ch]    [ch]Bm[/ch]\r\n[ch]C[/ch]  [ch]G[/ch]  [ch]G[/ch] [ch]D/F#[/ch] [ch]Em[/ch]\r\n[ch]D[/ch]     [ch]C[/ch]   [ch]C/B[/ch]\r\n[ch]Am[/ch]    [ch]Em[/ch]\r\n\r\n[Bridge 2]\r\n[tab]          [ch]G[/ch]                              [ch]Bm[/ch]\r\nWell, the last thing I remember before I stripped and kneeled[/tab]\r\n[tab]      [ch]C[/ch]                                         [ch]Em[/ch]\r\nWas a train load full of fools bogged down in a magnetic field[/tab]\r\n[tab]      [ch]G[/ch]                              [ch]Bm[/ch]\r\nAnd a gypsy with a broken flag and a flashing ring[/tab]\r\n[tab]          [ch]C[/ch]                                       [ch]Em[/ch]\r\nHe says, \"Son, this ain't a dream no more, it's a real thing\"[/tab]\r\n\r\n[Verse 4]\r\n[tab]  [ch]Em[/ch]     [ch]Bm[/ch]\r\nSe\u00f1or, Se\u00f1or,[/tab]\r\n[tab]               [ch]C[/ch]                  [ch]G[/ch]\r\nYou know their hearts are hard as leather[/tab]\r\n[tab]          [ch]G[/ch]              [ch]D/F#[/ch]     [ch]Em[/ch]\r\nGive me a minute, let me get it together[/tab]\r\n[tab][ch]D[/ch]                               [ch]C[/ch]     [ch]C/B[/ch]\r\n I gotta pick myself up off the floor[/tab]\r\n[tab][ch]Am[/ch]                        [ch]Em[/ch]\r\n I'm ready when you are, Se\u00f1or[/tab]\r\n\r\n[Instrumental]\r\n[ch]G[/ch]    [ch]Bm[/ch]\r\n[ch]C[/ch]    [ch]Em[/ch]\r\n[ch]G[/ch]    [ch]Bm[/ch]\r\n[ch]C[/ch]    [ch]Em[/ch]\r\n\r\n[Verse 5]\r\n[tab] [ch]Em[/ch]     [ch]Bm[/ch]\r\nSe\u00f1or, Se\u00f1or,[/tab]\r\n[tab]      [ch]C[/ch]              [ch]G[/ch]\r\nLet's overturn these tables[/tab]\r\n[tab][ch]G[/ch]      [ch]D/F#[/ch]      [ch]Em[/ch]\r\nDisconnect these cables[/tab]\r\n[tab]     [ch]D[/ch]                               [ch]C[/ch]    [ch]C/B[/ch]\r\nThis place don't make sense to me no more[/tab]\r\n[tab]        [ch]Am[/ch]                               [ch]Em[/ch]\r\nCan you tell me what we're waiting for, Se\u00f1or?[/tab]\r\n\r\n[Instrumental]\r\n([ch]Em[/ch])   [ch]Bm[/ch]\r\n [ch]C[/ch]  [ch]G[/ch]  [ch]G[/ch] [ch]D/F#[/ch] [ch]Em[/ch]\r\n\r\n[Coda]\r\n[tab][ch]D[/ch]                                  [ch]C[/ch]    [ch]C/B[/ch]\r\nSeems like I been down this road before[/tab]\r\n[tab][ch]Am[/ch]                             [ch]Em[/ch]\r\n  Is there any truth to that, Se\u00f1or?[/tab]"
+}

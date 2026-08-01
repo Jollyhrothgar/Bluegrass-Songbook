@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Roscoe",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:11:10",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1692387,
+  "song_id": 186830,
+  "song_name": "Roscoe",
+  "artist_id": 16249,
+  "artist_name": "Midlake",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 168,
+  "difficulty": "novice",
+  "rating": 4.87375,
+  "date": "1419387163",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 3253228
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/4/2/42682/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/6/16972/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1485344961,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Capo 4\r\n\r\n[ch]Em[/ch]\r\n\r\n[tab][ch]Em[/ch]                             [ch]D[/ch]\r\nStone-cutters made them from stones[/tab]\r\n[tab]                    [ch]C[/ch] \r\nChosen specially for you and I[/tab]\r\n[tab]              [ch]Em[/ch]\r\nWho will live inside[/tab]\r\n[tab]                                   [ch]D[/ch]\r\nThe mountaineers gathered timber, piled high[/tab]\r\n[tab]                   [ch]C[/ch]\r\nIn which to take along[/tab]\r\n[tab]                                      [ch]Em[/ch]\r\nTravelling many miles, knowing they'd get here[/tab]\r\n\r\n[tab][ch]Em[/ch]\r\nWhen they got here, all exhausted[/tab]\r\n[tab]        [ch]D[/ch] \r\nOn the roof leaks, they got started[/tab]\r\n[tab]    [ch]C[/ch]                                  [ch]Em[/ch]\r\nAnd now when the rain comes we can be thankful[/tab]\r\n\r\n[tab][ch]Em[/ch]        [ch]D[/ch]\r\nOoh aaah ooh[/tab]\r\n[tab]                     [ch]C[/ch]  \r\nWhen the mountaineers saw that everything fit[/tab]\r\n[tab]                            [ch]Em[/ch]\r\nThey were glad and so they took off[/tab]\r\n\r\n[Chorus 1]\r\n[tab][ch]Em[/ch]                   [ch]D[/ch]\r\nThought we were due for [/tab]\r\n[tab]             [ch]C[/ch]            [ch]Em[/ch]    \r\nA change or two around this place[/tab]\r\n[tab]                [ch]D[/ch]                    [ch]C[/ch]\r\nWhen they get back they're all mixed up[/tab]\r\n[tab]                [ch]Em[/ch]\r\nWith no one to stay with[/tab]\r\n\r\n[ch]Em[/ch] [ch]D[/ch] [ch]C[/ch]\r\n\r\n[tab]             [ch]Em[/ch]\r\nThe village used to be all one really needs[/tab]\r\n[tab]                       [ch]D[/ch]\r\nNow it's filled with hundreds and hundreds of chemicals[/tab]\r\n[tab]                [ch]C[/ch]\r\nThat mostly surround you, you wish to flee[/tab]\r\n[tab]                                          [ch]Em[/ch]\r\nBut it's not like you, so listen to me, listen to me[/tab]\r\n\r\n[tab][ch]Em[/ch]\r\nOh and when the morning comes[/tab]\r\n\r\nWe will step outside\r\n[tab]             [ch]D[/ch]\r\nWe will not find another man in sight[/tab]\r\n[tab]                            [ch]C[/ch]\r\nWe like the newness, the newness of all[/tab]\r\n\r\nThat has grown in our garden\r\n[tab]                 [ch]Em[/ch]\r\nStruggling for so long[/tab]\r\n\r\n[tab][ch]Em[/ch]\r\nWhenever I was a child [/tab]\r\n\r\nI wondered what if my name had changed\r\n[tab]       [ch]D[/ch]\r\nInto something more productive like Roscoe[/tab]\r\n[tab]              [ch]C[/ch]\r\nBeen born in eighteen ninety one[/tab]\r\n[tab]                      [ch]Em[/ch]\r\nWaiting with my aunt Rosaline[/tab]\r\n\r\n[Chorus 2]\r\n[tab][ch]Em[/ch]                   [ch]D[/ch]\r\nThought we were due for [/tab]\r\n[tab]             [ch]C[/ch]            [ch]Em[/ch]    \r\nA change or two around this place[/tab]\r\n[tab]                [ch]D[/ch]                    [ch]C[/ch]\r\nWhen they get back they're all mixed up[/tab]\r\n[tab]                [ch]Em[/ch]\r\nWith no one to stay with[/tab]\r\n\r\n[ch]Em[/ch] [ch]D[/ch] [ch]C[/ch] [ch]Em[/ch] x2\r\n\r\n[tab]                [ch]Em[/ch]                           [ch]D[/ch]\r\nEighteen ninety one they roamed around and foraged[/tab]\r\n[tab]                            [ch]C[/ch]\r\nThey made their house from cedars[/tab]\r\n[tab]                             [ch]Em[/ch]\r\nThey made their house from stone[/tab]\r\n[tab]                          [ch]D[/ch]\r\nOh they're a little like you[/tab]\r\n[tab]                          [ch]C[/ch]\r\nAnd they're a little like me[/tab]\r\n[tab]                [ch]Em[/ch]\r\nWe have all we need[/tab]\r\n\r\n[Chorus 3]\r\n[tab][ch]Em[/ch]                   [ch]D[/ch]\r\nThought we were due for [/tab]\r\n[tab]             [ch]C[/ch]            [ch]Em[/ch]             [ch]D[/ch]           [ch]C[/ch]  [ch]Em[/ch]\r\nA change or two around this place, this place, this pla-ce[/tab]\r\n[tab]               [ch]D[/ch]                     [ch]C[/ch]\r\nWhen they get back they're all mixed up[/tab]\r\n[tab]                  [ch]Em[/ch]\r\nWith no one to stay with[/tab]\r\n[tab][ch]Em[/ch]             [ch]D[/ch]                     [ch]C[/ch]\r\nWhen they get back they're all mixed up[/tab]\r\n[tab]                         [ch]Em[/ch]\r\nWith no one to stay with [/tab]"
+}

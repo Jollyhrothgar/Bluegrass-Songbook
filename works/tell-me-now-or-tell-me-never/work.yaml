@@ -1,0 +1,12 @@
+id: tell-me-now-or-tell-me-never
+title: Tell Me Now Or Tell Me Never
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/tell-me-now-or-tell-me-never/
+    imported_at: '2026-08-01'

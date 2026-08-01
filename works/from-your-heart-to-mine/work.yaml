@@ -1,0 +1,12 @@
+id: from-your-heart-to-mine
+title: From Your Heart To Mine
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/from-your-heart-to-mine/
+    imported_at: '2026-08-01'

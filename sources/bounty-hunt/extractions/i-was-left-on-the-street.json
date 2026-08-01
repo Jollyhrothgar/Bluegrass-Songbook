@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "I Was Left on the Street",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Cherryholmes",
+   "Audie Blaylock and Redline",
+   "Bill Monroe and the Bluegrass Boys",
+   "Peter Rowan"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:27:03",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

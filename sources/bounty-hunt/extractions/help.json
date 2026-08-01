@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Help!",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Bob Haydon",
+   "Greensky Bluegrass",
+   "Mipso",
+   "Dolly Parton"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:05:43",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 50
+ },
+ "candidate": null,
+ "content": null
+}

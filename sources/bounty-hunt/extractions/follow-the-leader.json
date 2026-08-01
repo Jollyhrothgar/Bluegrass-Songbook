@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Follow the Leader",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": true,
+  "artists": [
+   "Bill Harrell",
+   "Don Reno",
+   "The Bluegrass Band",
+   "The Tennessee Cut-Ups"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:01:21",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 8.5,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1900699,
+  "song_id": 1683690,
+  "song_name": "Follow The Leader",
+  "artist_id": 39626,
+  "artist_name": "Foxygen",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 16,
+  "difficulty": "intermediate",
+  "rating": 4.49495,
+  "date": "1478137796",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "Full song with chords and correct timings.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 195555
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1543763/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/9/1977/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1700581072,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]Em[/ch] [ch]Bm[/ch] x2\r\n[ch]A[/ch]  [ch]D[/ch]\r\n[ch]A[/ch] [ch]D[/ch]  [ch]B[/ch]\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]Em[/ch]            [ch]Bm[/ch]\r\nHey baby, you know it's true[/tab]\r\n[tab][ch]Em[/ch]     [ch]Bm[/ch]\r\nI'm in love with you[/tab]\r\n[tab]              [ch]Am[/ch]                           [ch]D[/ch]\r\nBabe, but you never (Never gonna be what I want)[/tab]\r\n[tab]           [ch]Am[/ch]                                    [ch]D[/ch]\r\nNo, you're never gonna be (Never gonna be what I want)[/tab]\r\n[tab]            [ch]Em[/ch]                       [ch]Bm[/ch]\r\nYeah, I was shocked on lovers on the avenue[/tab]\r\n[tab]     [ch]Em[/ch]                       [ch]Bm[/ch]\r\nYes, it's true, he's much too old for you[/tab]\r\n[tab]              [ch]A[/ch]                            [ch]D[/ch]\r\nBabe, but you never (Never gonna be what I want)[/tab]\r\n[tab]           [ch]A[/ch]                                     [ch]D[/ch]\r\nNo, you're never gonna be (Never gonna be what I want)[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]                                         [ch]C[/ch]   [ch]Am[/ch]    \r\nI know sometimes everyone wants to be someone else[/tab]\r\n[tab][ch]Em[/ch]            [ch]Am[/ch]\r\nSo follow the leader[/tab]\r\n[tab][ch]Em[/ch]         [ch]Am[/ch]\r\nFollow the leader[/tab]\r\n[tab][ch]Em[/ch]         [ch]Am[/ch]\r\nFollow the leader[/tab]\r\n[tab]                  [ch]C[/ch]         [ch]Bm[/ch]\r\nAnd the leader is you-oo-oo-ou[/tab]\r\n[tab][ch]Em[/ch]               [ch]Am[/ch]\r\nYeah, follow the leader[/tab]\r\n[tab][ch]Em[/ch]         [ch]Am[/ch]\r\nFollow the leader[/tab]\r\n[tab]                  [ch]C[/ch]         [ch]Bm[/ch]\r\nAnd the leader is you-oo-oo-ou[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]Em[/ch] [ch]D[/ch] [ch]Am[/ch] \r\n[ch]Em[/ch]\r\n[ch]A[/ch]\r\n[ch]Em[/ch] [ch]D[/ch] [ch]Am[/ch]\r\n[ch]Em[/ch]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]Em[/ch]                      [ch]Bm[/ch]\r\n(Hot flash!) Fun in the summertime[/tab]\r\n[tab][ch]Em[/ch]                             [ch]Bm[/ch]\r\nThere's no better way to spend our time, baby[/tab]\r\n[tab]           [ch]Am[/ch]                              [ch]D[/ch]\r\nBut that's never (Never really what's it's about)[/tab]\r\n[tab]                       [ch]Am[/ch]                     [ch]D[/ch]\r\nNo, no, no, no, that's never really what it's about[/tab]\r\n[tab][ch]Em[/ch]                          [ch]Bm[/ch]\r\nOh yeah, I know what you're thinking[/tab]\r\n[tab]          [ch]Em[/ch]              [ch]Bm[/ch]\r\nYou could never get me to cheat on you[/tab]\r\n[tab]               [ch]Am[/ch]                              [ch]D[/ch]\r\nBabe, but it's never (Never really what's it's about)[/tab]\r\n[tab]               [ch]Am[/ch]                             [ch]D[/ch]\r\nStop making me feel (Never really what's it's about)[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]                                         [ch]C[/ch]   [ch]Am[/ch]    \r\nI know sometimes everyone wants to be someone else[/tab]\r\n[tab][ch]G[/ch]                          [ch]C[/ch]     [ch]Am[/ch]\r\nOh, you people know that's true, yeah[/tab]\r\n[tab][ch]Em[/ch]            [ch]Am[/ch]\r\nSo follow the leader[/tab]\r\n[tab][ch]Em[/ch]         [ch]Am[/ch]\r\nFollow the leader[/tab]\r\n[tab][ch]Em[/ch]         [ch]Am[/ch]\r\nFollow the leader[/tab]\r\n[tab]                  [ch]C[/ch]         [ch]Bm[/ch]\r\nAnd the leader is you-oo-oo-ou[/tab]\r\n[tab][ch]Em[/ch]               [ch]Am[/ch]\r\nYeah, follow the leader[/tab]\r\n[tab][ch]Em[/ch]         [ch]Am[/ch]\r\nFollow the leader[/tab]\r\n[tab]                  [ch]C[/ch]         [ch]Bm[/ch]\r\nAnd the leader is you-oo-oo-ou[/tab]"
+}

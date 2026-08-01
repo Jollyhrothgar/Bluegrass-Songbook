@@ -1,0 +1,12 @@
+id: i-cannot-be-your-sweetheart
+title: I Cannot Be Your Sweetheart
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/i-cannot-be-your-sweetheart/
+    imported_at: '2026-08-01'

@@ -1,0 +1,13 @@
+id: chilly-winds
+title: Chilly Winds
+artist: The Kingston Trio
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: chilly-winds.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-kingston-trio/chilly-winds-chords-1687781
+    imported_at: '2026-08-01'

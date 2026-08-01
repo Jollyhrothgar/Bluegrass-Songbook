@@ -1,0 +1,12 @@
+id: walking-on-the-blueridge-mountains
+title: Walking On The Blueridge Mountains
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/walking-on-the-blueridge-mountains/
+    imported_at: '2026-08-01'

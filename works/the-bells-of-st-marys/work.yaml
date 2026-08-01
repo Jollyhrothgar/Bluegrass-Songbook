@@ -1,0 +1,13 @@
+id: the-bells-of-st-marys
+title: The Bells of St. Mary's
+artist: Sam Cooke
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: the-bells-of-st-mary-s.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/sam-cooke/the-bells-of-st-marys-chords-1852218
+    imported_at: '2026-08-01'

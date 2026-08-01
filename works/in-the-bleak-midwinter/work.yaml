@@ -1,0 +1,12 @@
+id: in-the-bleak-midwinter
+title: In the Bleak Midwinter
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: in-the-bleak-midwinter.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-christmas/in-the-bleak-midwinter-chords-994870
+    imported_at: '2026-08-01'

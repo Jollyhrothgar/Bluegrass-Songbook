@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Sunny Days (Are Comin\u2019 Once Again)",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Michael Cleveland",
+   "Steep Canyon Rangers",
+   "Jeff White",
+   "Dan Tyminski"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:20:38",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

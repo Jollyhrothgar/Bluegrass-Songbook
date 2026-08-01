@@ -6,8 +6,9 @@ parts:
   file: lead-sheet.pro
   default: true
   provenance:
-    source: bluegrass-lyrics
-    source_url: https://www.bluegrasslyrics.com/song/bringing-in-the-georgia-mail/
-    imported_at: '2026-02-08'
+    source: web-chords
+    source_url: https://tabs.ultimate-guitar.com/tab/flatt-scruggs/bringing-in-the-georgia-mail-chords-2837582
+    imported_at: '2026-08-01'
+    note: chords upgraded from bounty-hunt chart; previous lyrics-only sheet in lead-sheet.pre-bounty.pro.bak
 composers:
 - Fred Rose

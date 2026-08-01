@@ -1,0 +1,12 @@
+id: love-will-roll-the-clouds-away
+title: Love Will Roll the Clouds Away
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/love-will-roll-the-clouds-away/
+    imported_at: '2026-08-01'

@@ -1,0 +1,14 @@
+id: midnight-rider
+title: Midnight Rider
+artist: Allman Brothers Band
+default_key: D
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-midnight-rider.txt
+    source_url: https://docs.google.com/document/d/1XnPMaJFtQhC40-ASCutg16sR2z4rX93oUteiZzjnJhE/edit?usp=sharing
+    imported_at: '2026-08-01'

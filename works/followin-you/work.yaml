@@ -1,0 +1,14 @@
+id: followin-you
+title: Followin You
+artist: East Nash Grass
+default_key: Gb
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-followin-you.txt
+    source_url: https://docs.google.com/document/d/1n0wTBuzVSSgReWyDe0rkjOlYpB-rTSGL1txsKcn2Osk/edit?usp=sharing
+    imported_at: '2026-08-01'

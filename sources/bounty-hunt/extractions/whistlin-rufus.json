@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Whistlin' Rufus",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 9,
+  "core": false,
+  "artists": [
+   "Gid Tanner & His Skillet Lickers",
+   "New Ballards Branch Bogtrotters",
+   "The Bluegrass Cut-Ups",
+   "Clarence \"Tater\" Tate"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:03:31",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

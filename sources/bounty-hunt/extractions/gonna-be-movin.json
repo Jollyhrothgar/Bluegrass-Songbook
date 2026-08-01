@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Gonna Be Movin'",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Larry Sparks",
+   "Ralph Stanley",
+   "Backwoods Bluegrass Band",
+   "The Lewis Family"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:17:12",
+ "status": "accepted",
+ "validation": {
+  "tier": "mb-recording",
+  "score": 87.8,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 3099938,
+  "song_id": 3879905,
+  "song_name": "Gonna Be Moving",
+  "artist_id": 58984,
+  "artist_name": "Balsam Range",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 9,
+  "difficulty": "novice",
+  "rating": 4.78368,
+  "date": "1587396192",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "This is my version of Balsam Range\u2019s Gonna Be Movin. It is a fairly easy song to play, so it\u2019s great for beginners.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1380815
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1553237/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/7/9/79498/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1587396192,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "\r\n[Verse 1]\r\n\r\n[tab]    [ch]G[/ch]\r\nThis old world is no place for livin'[/tab]\r\n[tab]            [ch]G[/ch]\r\nNot enough care, not enough givin'[/tab]\r\n[tab]             [ch]C[/ch]                              [ch]G[/ch]\r\nSometime clouds of sin and sorrow hide the way[/tab]\r\n[tab]               [ch]G[/ch]\r\nBut this life of stormy weather[/tab]\r\n[tab]                          [ch]G[/ch]\r\nAin't gonna be my home forever[/tab]\r\n[tab]            [ch]D[/ch]                     [ch]G[/ch]\r\nGonna be movin' - one of these days[/tab]\r\n\r\n[Chorus]\r\n[tab]           [ch]G[/ch]\r\nI'm gonna be movin' - movin' away[/tab]\r\n[tab]           [ch]C[/ch]                    [ch]G[/ch]\r\nGonna be movin' - one of these days[/tab]\r\n[tab]          [ch]G[/ch]\r\nWhen I leave this life behind me[/tab]\r\n[tab]                                       [ch]Em[/ch]\r\nTroubles and cares are never gonna find me[/tab]\r\n[tab]  [ch]G[/ch]       [ch]D[/ch]                       [ch]G[/ch]\r\nGonna be movin' - one of these days[/tab]\r\n\r\n[Verse 2]\r\n[tab]   [ch]G[/ch]\r\nThere won't be any time for cryin'[/tab]\r\n[tab]          [ch]G[/ch]\r\nNo more sickness, toil or dyin[/tab]\r\n[tab]         [ch]C[/ch]                           [ch]G[/ch]\r\nJoy awaits me in that mansion far away[/tab]\r\n[tab]           [ch]G[/ch]\r\nWhen I rest from all my labor[/tab]\r\n[tab]           [ch]G[/ch]\r\nThe Lord's gonna be my next door neighbor[/tab]\r\n[tab]            [ch]D[/ch]                    [ch]G[/ch]\r\nGonna be movin' - one of these days[/tab]\r\n\r\n[Chorus]\r\n[tab]    [ch]G[/ch]\r\nI'm gonna be movin' - movin' away[/tab]\r\n[tab]            [ch]C[/ch]                    [ch]G[/ch]\r\nGonna be movin' - one of these days[/tab]\r\n[tab]         [ch]G[/ch]\r\nWhen I leave this life behind me[/tab]\r\n[tab]                                        [ch]Em[/ch]\r\nTroubles and cares are never gonna find me[/tab]\r\n[tab]  [ch]G[/ch]          [ch]D[/ch]                  [ch]G[/ch]\r\nGonna be movin' - one of these days[/tab]"
+}

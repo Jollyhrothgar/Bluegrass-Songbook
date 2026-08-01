@@ -1,0 +1,14 @@
+id: hold-on
+title: Hold On
+artist: Tim O'Brien
+default_key: E
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-hold-on.txt
+    source_url: https://docs.google.com/document/d/1rfHNx6xzTYMKKR95Vn6F0xq-TgQIA6rN/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

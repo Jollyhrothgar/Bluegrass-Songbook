@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Otto Wood",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "The Foggy Hogtown Boys",
+   "Dwight Diller",
+   "Harvey Reid",
+   "Doc Watson"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:18:53",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 2
+ },
+ "candidate": null,
+ "content": null
+}

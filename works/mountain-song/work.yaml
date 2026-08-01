@@ -1,0 +1,14 @@
+id: mountain-song
+title: Mountain Song
+artist: Kitchen Dwellers
+default_key: B
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-mountain-song.txt
+    source_url: https://docs.google.com/document/d/14WulxZ51_gHoUoPJ4_ls1GKJspen6uJ2WTROgcDTUpI/edit?usp=sharing
+    imported_at: '2026-08-01'

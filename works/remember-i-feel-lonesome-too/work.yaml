@@ -1,0 +1,12 @@
+id: remember-i-feel-lonesome-too
+title: Remember I Feel Lonesome Too
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/remember-i-feel-lonesome-too/
+    imported_at: '2026-08-01'

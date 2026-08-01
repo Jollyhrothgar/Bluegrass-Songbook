@@ -1,0 +1,14 @@
+id: 1952-vincent-black-lightning
+title: 1952 Vincent Black Lightning
+artist: Richard Thompson
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-1952-vincent-black-lightning.txt
+    source_url: https://docs.google.com/document/d/12ZUdXrpavOwxkfGIDbs15WgosYb5ipJX3E_LsCioqnA/edit?usp=sharing
+    imported_at: '2026-08-01'

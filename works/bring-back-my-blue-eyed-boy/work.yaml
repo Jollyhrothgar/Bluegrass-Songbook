@@ -1,0 +1,12 @@
+id: bring-back-my-blue-eyed-boy
+title: Bring Back My Blue Eyed Boy
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/bring-back-my-blue-eyed-boy/
+    imported_at: '2026-08-01'

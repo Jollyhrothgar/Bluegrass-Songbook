@@ -1,0 +1,12 @@
+id: we-cant-be-darlings-anymore
+title: We Can’t Be Darlings Anymore
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/we-cant-be-darlings-anymore/
+    imported_at: '2026-08-01'

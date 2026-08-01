@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Coleen Malone",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Close to Home",
+   "Hot Rize",
+   "Bill Emerson",
+   "Pete Goble"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:23:33",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

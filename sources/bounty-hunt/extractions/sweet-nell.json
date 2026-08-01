@@ -1,0 +1,60 @@
+{
+ "wanted": {
+  "title": "Sweet Nell",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:17:32",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 3268613,
+  "song_id": 4002671,
+  "song_name": "Sweet Nellie",
+  "artist_id": 44033,
+  "artist_name": "Gary Fjellgaard",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1596020698",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 3576697
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1596020698,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[CAPO 4]\r\n\r\n[Intro]\r\n[ch]A[/ch] [ch]D[/ch] [ch]A[/ch] [ch]E7[/ch]\r\n\r\n[Verse 1]\r\n[tab]  [ch]A[/ch]                 [ch]D[/ch]          [ch]A[/ch]\r\nYou and me Nellie back in our prime[/tab]\r\n[tab]   [ch]D[/ch]     [ch]A[/ch]                  [ch]E7[/ch]\r\nWe could turn on a nickel spin on a dime[/tab]\r\n[tab]    [ch]A[/ch]                            [ch]D[/ch]        [ch]A[/ch]\r\nWe were green as the grass like new young vines[/tab]\r\n[tab]    [ch]A[/ch]                       [ch]E7[/ch]         [ch]A[/ch]\r\nYou and me Nellie we just ran out of time[/tab]\r\n\r\n[Chorus]\r\n[tab]   [ch]D[/ch]        [ch]A[/ch]         [ch]E[/ch]                [ch]A[/ch]\r\nOh Sweet Nellie your such a good old horse[/tab]\r\n[tab]   [ch]A[/ch]                       [ch]E7[/ch]\r\nYou know times are tough but then they could get worse[/tab]\r\n[tab]   [ch]D[/ch]              [ch]A[/ch]        [ch]E7[/ch]             [ch]A[/ch]\r\nIf your tail is south we must be headin north[/tab]\r\n[tab]   [ch]D[/ch]                [ch]A[/ch]          [ch]E[/ch]                [ch]A[/ch]\r\nTake me home Sweet Nellie your such a good old horse[/tab]\r\n\r\n[Verse 2]\r\n[tab] [ch]A[/ch]                            [ch]D[/ch]     [ch]A[/ch]\r\nWell I had me a girl in my drifter days[/tab]\r\n[tab]    [ch]D[/ch]             [ch]A[/ch]           [ch]E7[/ch]\r\nShe was southern born she was southern raised[/tab]\r\n[tab]  [ch]A[/ch]                                 [ch]D[/ch]          [ch]A[/ch]\r\nWhile you rolled in the grass we rolled in the hay[/tab]\r\n[tab]   [ch]A[/ch]                                [ch]E7[/ch]               [ch]A[/ch]\r\nBut I was gone in the morning I couldn't change my ways[/tab]\r\n\r\n[Chorus]\r\n[tab]   [ch]D[/ch]        [ch]A[/ch]         [ch]E[/ch]                [ch]A[/ch]\r\nOh Sweet Nellie your such a good old girl[/tab]\r\n[tab]   [ch]A[/ch]                       [ch]E7[/ch]\r\ncrossing all those borders just to see the world[/tab]\r\n[tab]   [ch]D[/ch]              [ch]A[/ch]        [ch]E7[/ch]        [ch]A[/ch]\r\nwe gave it a spin oh we gave it a whirl[/tab]\r\n[tab]   [ch]D[/ch]                [ch]A[/ch]          [ch]E[/ch]                [ch]A[/ch]\r\nTake me home Sweet Nellie your such a good old girl[/tab]\r\n\r\n[Bridge]\r\n[tab] [ch]F#m[/ch]                                       [ch]A[/ch]\r\nWe've been over the mountains across the plains[/tab]\r\n[tab]  [ch]F#m[/ch]                     [ch]B7[/ch]\r\nBent by the wind near drowned by the rain[/tab]\r\n[tab]    [ch]A[/ch]                      [ch]D[/ch]         [ch]A[/ch]\r\nYou carried my body you carried my pain[/tab]\r\n[tab]  [ch]A[/ch]               [ch]E7[/ch]                  [ch]A[/ch]\r\nOh Sweet Nellie you were good on the rein[/tab]\r\n\r\n[Chorus]\r\n[tab]   [ch]D[/ch]        [ch]A[/ch]         [ch]E[/ch]                [ch]A[/ch]\r\nOh Sweet Nellie your such a good old horse[/tab]\r\n[tab]   [ch]A[/ch]                       [ch]E7[/ch]\r\nYou know times are tough but then they could get worse[/tab]\r\n[tab]   [ch]D[/ch]              [ch]A[/ch]        [ch]E7[/ch]             [ch]A[/ch]\r\nIf your tail is south we must be headin north[/tab]\r\n[tab]   [ch]D[/ch]                [ch]A[/ch]          [ch]E[/ch]                [ch]A[/ch]\r\nTake me home Sweet Nellie your such a good old horse[/tab]"
+}

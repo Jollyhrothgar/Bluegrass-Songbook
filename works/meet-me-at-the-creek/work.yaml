@@ -1,0 +1,13 @@
+id: meet-me-at-the-creek
+title: Meet Me at the Creek
+artist: Billy Strings
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: meet-me-at-the-creek.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/billy-strings/meet-me-at-the-creek-chords-2744361
+    imported_at: '2026-08-01'

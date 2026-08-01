@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Prisoner Song",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Del McCoury",
+   "Norman Blake",
+   "Mac Wiseman",
+   "Del McCoury and The Dixie Pals"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:19:10",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 7.7,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 458549,
+  "song_id": 133603,
+  "song_name": "Prisoners Song",
+  "artist_id": 9727,
+  "artist_name": "Chet Atkins",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 8,
+  "difficulty": "novice",
+  "rating": 4.85491,
+  "date": "1168560001",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 72583
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/0/103319/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/6/0/607/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1168560001,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "                 I\r\n[tab]       [ch]C[/ch]                    [ch]F[/ch]\r\nOh! I wish I had someone to love me,[/tab]\r\n[tab][ch]G7[/ch]                        [ch]C[/ch]\r\nSomeone to call me their own.[/tab]\r\n[tab]                            [ch]F[/ch]\r\nOh! I wish I had someone to live with, [/tab]\r\n[tab]          [ch]G[/ch]                 [ch]C[/ch]\r\nCause I'm tired of livin' alone.[/tab]\r\n\r\n                 II\r\n[tab]         [ch]C[/ch]                        [ch]F[/ch]\r\nI'll be carried to the new jail tomorrow,[/tab]\r\n[tab]        [ch]G7[/ch]                [ch]C[/ch]  \r\nLeaving my poor darling alone[/tab]\r\n[tab]                           [ch]F[/ch] \r\nWith cold prison bars all around me[/tab]\r\n[tab]        [ch]G7[/ch]                 [ch]C[/ch]\r\nAnd my head on a pillow of stone.[/tab]\r\n\r\n(INSTRUMENTAL)\r\n\r\n                 III\r\n[tab]      [ch]C[/ch]                        [ch]F[/ch]\r\nNow I have a grand ship on the ocean[/tab]\r\n[tab]     [ch]G7[/ch]                      [ch]C[/ch] \r\nAll mounted with silver and gold[/tab]\r\n[tab]                                [ch]F[/ch]\r\nAnd before my poor darling would suffer[/tab]\r\n[tab]          [ch]G7[/ch]                         [ch]C[/ch] \r\nOh! that ship would be anchored and sold[/tab]\r\n\r\n                  IV\r\n[tab]       [ch]C[/ch]                   [ch]F[/ch]\r\nNow if I had wings like an angel[/tab]\r\n[tab]       [ch]G7[/ch]                        [ch]C[/ch]\r\nOver these prison walls I would fly[/tab]\r\n[tab]                                   [ch]F[/ch]\r\nAnd I'd fly to the arms of my poor darlin'[/tab]\r\n[tab]      [ch]G7[/ch]                    [ch]C[/ch]\r\nAnd there I'd be willing to die[/tab]"
+}

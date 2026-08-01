@@ -1,0 +1,13 @@
+id: dead-flowers
+title: Dead Flowers
+artist: Steve Earle
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: dead-flowers.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/steve-earle/dead-flowers-chords-1878923
+    imported_at: '2026-08-01'

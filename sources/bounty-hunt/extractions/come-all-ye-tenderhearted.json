@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Come All Ye Tenderhearted",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Country Gentlemen",
+   "Ralph Stanley",
+   "Peter Rowan",
+   "The Stanley Brothers"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:23:36",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

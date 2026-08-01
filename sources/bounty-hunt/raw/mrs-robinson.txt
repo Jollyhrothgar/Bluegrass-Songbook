@@ -1,0 +1,222 @@
+# title: Mrs. Robinson
+# artist: Simon & Garfunkel
+# source_url: https://tabs.ultimate-guitar.com/tab/simon-garfunkel/mrs-robinson-chords-3322274
+# fetched_at: 2026-08-01T11:28:54
+
+Song: Mrs Robinson
+Artist: Simon and Garfunkel
+Composer: Paul Simon
+Album: Bookends
+
+Tabbed by DJ  7th July 2016
+
+FINE TUNING:
+To better match the original single and 'Bookends'
+album track, use a chromatic tuner and tune all the
+strings up slightly sharp by approx. +25 cents.
+Live versions are more likely to be in standard pitch
+
+CAPO: 2nd fret
+(Will then sound in the recorded key of A)
+
+Emphasise the bass notes of each chord. 
+Both the (G/F#) and the (Em/F#) are intended to be
+played as just passing bass notes only.
+On Asus4 bend the D note on the 2nd string/3rd fret
+
+I would recommend using the voicings in the text
+column numbers below.
+Regarding the CHORD BOX DIAGRAMS please follow the
+information at the bottom of the tab.
+
+Chord names & fret positions are relative to the capo
+E7 * = 076700     Am     = x02210    C/A = x02010
+A7   = x02020     Asus4  = x02230    C/G = 332010
+D7   = xx0212     E      = 022100    D   = xx0232
+G    = 320033    (D7sus) = xx0213    D/C = x30232
+C    = x32010    (G/F#)  = 2xxxxx    D/B = x20232
+C/B  = x2x010    (Em/F#) = 2xxxxx    D/A = x00232
+                  E7     = 022130    h   = Hammer-on
+
+Please take a second to scroll down to the bottom of
+the page and select a star rating for my tab, thanks
+=====================================================
+[Intro - Riff repeats]
+                         E7 *
+e|----------------|------0----0--0---|
+B|----------------|------0----0--0---|
+G|----------------|------7----7--7---| [x3]
+D|----------------|------6----6--6---|
+A|-------------5--|--7---7----7--7---|
+E|--0--h5--h7-----|------0----0--0---|
+
+[Verse 1]
+E7
+Di-di, dee-dee, di-dee, di-dee, di-di, di-di-dee!
+A7
+Doo, doo-doo-doo, doo-doo, doo-doo, doo!
+D7                 G
+Di - di, dee -dee, di -dee,
+C         C/B       Am    Asus4 Am   E    D7
+Di - dee, di - di - dee!
+
+[Chorus]    (See tablature of riff at bottom of page)
+D7 (D7sus) D7  G        G/F#  Em       (Em/F#)
+And here's to  you, Mrs.----  Robinson,
+G           G/F# Em                 C   C/B  C/A
+Jesus loves you  more than you will know,
+C/G       D   D/C  D/B
+Woh - oo, oh!
+    D/A       G            G/F# Em      (Em/F#)
+God bless you please, Mrs.----  Robinson,
+G            G/F# Em                  C   C/B  C/A
+Heaven holds a    place for those who pray,
+C/G        Am                E7 * [Riff x2]
+Hey - hey, hey!   Hey - hey, hey!
+
+[Verse 2]
+     E7
+We'd like to know...
+     E7
+...a little bit about you for our files,
+     A7
+We'd like to help you learn to help yourself, 
+D7                    G
+  ...Look around you, all you see...
+    C       C/B    Am  Asus4 Am  Asus4 Am
+Are sympa - thetic eyes,
+E                                D7
+  Stroll around the grounds un - til you feel at home
+
+[Chorus]
+D7 (D7sus) D7  G       (G/F#) Em       (Em/F#)
+And here's to  you, Mrs.----  Robinson,
+G           G/F# Em                 C   C/B  C/A
+Jesus loves you  more than you will know,
+C/G       D   D/C  D/B
+Woh - oo, oh!
+    D/A       G           G/F# Em       (Em/F#)
+God bless you please, Mrs.---  Robinson,
+G            G/F# Em                  C   C/B  C/A
+Heaven holds a    place for those who pray,
+C/G        Am                E7 *  [Riff x2]
+Hey - hey, hey!   Hey - hey, hey!
+
+[Verse 3]
+E7
+   Hide it in a hiding place where no one ever goes,
+A7
+   Put in your pantry with your cupcakes,
+D7                G
+   It's a little secret,
+         C       C/B        Am      Asus4
+Just the Robin - son's af - fair,
+E                             D7
+   Most of all, you've got to hide it from the kids
+
+[Chorus]
+D7   (D7sus) D7   G         G/F# Em       (Em/F#)
+Coo - coo,   ca - choo, Mrs.---- Robinson,
+G           G/F# Em                 C   C/B  C/A
+Jesus loves you  more than you will know,
+C/G       D   D/C  D/B
+Woh - oo, oh!
+    D/A       G           G/F# Em       (Em/F#)
+God bless you please, Mrs.---  Robinson,
+G           G/F# Em                  C   C/B  C/A
+Heaven holds a   place for those who pray,
+C/G        Am                E7 *  [Riff x2]
+Hey - hey, hey!   Hey - hey, hey!
+
+[Verse 4]
+E7
+    Sitting on a sofa on a Sunday afternoon,
+A7
+    Going to the candidates debate,
+D7                  G
+ ...Laugh about it, shout about it,
+C           C/B    Am     Asus4 Am   Asus4 Am
+When you've got to choose,
+E                                 D7
+    Every way you look at it, you lose
+
+[Chorus]
+D7   (D7sus) D7  G         G/F#  Em      (Em/F#)
+Where have   you gone, Joe Di  - Maggio?
+  G            G/F# Em             C   C/B  C/A
+A nation turns its' lonely eyes to you,
+C/G       D   D/C  D/B
+Woo - oo, oo!
+       D/A      G         G/F# Em        (Em/F#)
+What's that you say, Mrs.----  Robinson?
+ G            G/F# Em                 C  C/B  C/A
+'Joltin' Joe' has  left, and gone a - way,
+C/G        Am                E7 * [Riff]
+Hey - hey, hey!   Hey - hey, hey!
+
+[Coda]
+                         E7 *
+e|----------------|------0----0--0---| [Riff repeats]
+B|----------------|------0----0--0---|
+G|----------------|------7----7--7---|
+D|----------------|------6----6--6---|
+A|-------------5--|--7---7----7--7---|
+E|--0--h5--h7-----|------0----0--0---|
+
+        h = Hammer-on notes  
+=====================================================
+Additional verses from 'The graduate' soundtrack
+
+[Verse 5]
+E7
+Di-di, dee-dee, di-dee, di-dee, di-di, di-di-dee!
+A7
+Doo, doo-doo-doo, doo-doo, doo-doo, doo!
+D7                 G
+Di - di, dee -dee, di -dee,
+C         C/B       Am    Asus4 Am   E    D7
+Di - dee, di - di - dee!
+
+[Chorus]
+D7 (D7sus) D7  G        G/F# Em       (Em/F#)
+And here's to  you, Mrs.---- Robinson,
+G           G/F# Em                 C   C/B  C/A
+Jesus loves you  more than you will know,
+C/G       D   D/C  D/B
+Woh - oo, oh!
+D/A      G         G/F# Em       (Em/F#)
+Stand up tall, Mrs.---- Robinson,
+G             G/F# Em                  C   C/B  C/A
+God, in hea - ven, smiles on those who pray,
+C/G        Am                E7 * [Riff]
+Hey - hey, hey!   Hey - hey, hey!
+
+[Coda]
+Repeat the Riff and then gradually slow down
+over an E7 chord to end
+
+=====================================================
+[Chorus with bass note progressions]
+    D7    (D7sus)(D7)   G       G/F# Em      (Em/F#)
+       And here's to    you, Mrs.    Ro-binson...
+e|--2----------------|--3--3---------0--0---------|
+B|--1----------------|--3--3---------0--0---------|
+G|--2----------------|--0--0---------0--0---------|
+D|--0----------------|--0--0---------2--2---------|
+A|----------------0--|--2------------2------------|
+E|-----2---3---------|--3-----3--2---0---------2--|
+
+=====================================================
+For the GUITAR chord box diagrams to match my
+suggested choices you need to manually select the
+following choice of options by clicking on the
+forward/backward arrows below five of the diagrams.
+All the other chord boxes can be the default
+first option and don't need any reselecting.
+As long as you are logged into your account,
+these choices will be saved automatically for every
+time you view this tab
+    E7          G         C/B
+<30 of 47>  <2 of 27>  <12 of 15>
+         Asus4       G/F#
+       <2 of 21>  <12 of 16>

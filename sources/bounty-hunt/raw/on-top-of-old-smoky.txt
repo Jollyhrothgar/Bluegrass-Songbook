@@ -1,0 +1,109 @@
+# title: On Top of Old Smoky
+# artist: Dave Van Ronk
+# source_url: https://tabs.ultimate-guitar.com/tab/dave-van-ronk/on-top-of-old-smoky-chords-4176865
+# fetched_at: 2026-08-01T11:29:30
+
+This is based off of the recording from the album 'Mayor of MacDougal Street: Rarities 1957-1969'--
+(https://www.youtube.com/watch?v=qm4r4fm8up0).
+
+Standard tuning, capo on 4th fret.
+I've also included the intro riff, the last three bars of which (seperated with the asterisks below)
+he repeats between each verse.
+There is no set tempo, but for the verses he mainly just strums the chord once.
+
+
+[Intro]
+
+e|-----------|-----------|--------------|-----------|---------|------------|
+B|-----------|-----------|--------------|-----------|---------|(1)-(1)-----|
+G|-----------|-----------|--(0)---------|-----------|---------|-2-0-0------|
+D|---0h2-----|-----------|---0h2--------|---0h2-----|---------|-3---2------|
+A|-3-----3-0-|-------0h3-|-3-------(3)--|-3-----3-0-|-------3-|-3---3------|
+E|-----------|-3-0-3-----|--------------|-----------|-3-0-3---|------------|
+
+
+e|-----------|-----------|----------------|*|-----------|---------|--------------|*|
+B|-----------|-----------|--(1)-------(1)-|*|-----------|---------|(1)-(1)--1--1-|*|
+G|--(0)--0-0-|(0)---(0)--|---2--------(2)-|*|-----------|---------|-2---0---0--0-|*|
+D|---0h2-----|-2p0---2p0-|---2--------(2)-|*|---0h2-----|---------|-3-0-2---2--2-|*|
+A|-3---------|-3---3-3---|-3----(3)-------|*|-3-----3-0-|-------3-|-3---3---3--3-|*|
+E|-----------|-----------|----------------|*|-----------|-3-0-3---|--------------|*|
+
+
+
+
+
+C             C          F            C
+On top of Old Smokey all covered with snow,
+  C            C         F           C
+I lost my true lover for courtin' so slow
+     C             Am           C          Am
+Now, courtin' is a pleasure and partin' is grief,
+      C             C        F            C
+And a false-hearted lover is worse than a thief.
+
+[*]
+
+      C               C           F             C
+For a thief will just rob you and take what you save,
+       C            C           F               C
+But a false-hearted lover will lead you to your grave.
+        C            Am          C           Am
+And the grave will decay you and turn you to dust;
+        C          C         F             C
+Not one man in 10 thousand a poor girl can trust.
+
+[*]
+
+        C           C            F             C
+They'll hug you and kiss you and tell you more lies
+          C          C          F            C
+Than crossties on a railroad or stars in the sky.
+        C                Am             C               Am
+They'll throw their arms around you and give your heart ease,
+        C           C                  F               C
+But the minute your back's turned they love whom they please
+
+[*]
+
+     C             C            F           C
+Come all you young women take a warnin' from me
+      C             C            F             C
+Never place your affections on a green growin' tree
+     C               Am         C               Am
+The leaves they will wither the roots they will die
+       C         C         F          C
+You'll all be forsaken and never know why
+
+[*]
+
+    C        C            F      C
+Yet if I am forsaken I'll not be forsworn,
+       C          C           F             C
+And he sure is mistaken if he thinks I will mourn.
+   C           Am                  C         Am
+Oh Johnny is a young man but still younger am I,
+    C            C                  F         C
+And often, as he told me, that he'd wed me or die
+
+[*]
+
+C             C          F            C
+On top of Old Smokey all covered with snow,
+  C            C         F           C
+I lost my true lover for courtin' so slow
+     C             Am           C          Am
+Now, courtin' is a pleasure and partin' is grief,
+      C             C        F            C
+And a false-hearted lover is worse than a thief.
+
+
+
+************************************
+
+| (n)  Ghost note
+| h    Hammer-on
+
+| p    Pull-off
+
+************************************

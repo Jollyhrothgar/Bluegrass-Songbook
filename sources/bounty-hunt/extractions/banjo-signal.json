@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Banjo Signal",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 9,
+  "core": false,
+  "artists": [
+   "Reno and Smiley",
+   "Tony Trischka",
+   "The Tennessee Cut-Ups",
+   "Eddie Adcock"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:03:05",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

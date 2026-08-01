@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Brushy Fork of John's Creek",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": false,
+  "artists": [
+   "Big Medicine",
+   "John Hartford",
+   "Owen \"Snake\" Chapman",
+   "Erynn Marshall & Chris Coole"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:03:34",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,13 @@
+id: carolina-in-my-mind
+title: Carolina in My Mind
+artist: James Taylor
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: carolina-in-my-mind.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/james-taylor/carolina-in-my-mind-chords-2476874
+    imported_at: '2026-08-01'

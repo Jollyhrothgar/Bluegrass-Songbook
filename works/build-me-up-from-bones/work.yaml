@@ -1,0 +1,13 @@
+id: build-me-up-from-bones
+title: Build Me Up From Bones
+artist: Sarah Jarosz
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: build-me-up-from-bones.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/sarah-jarosz/build-me-up-from-bones-chords-2220427
+    imported_at: '2026-08-01'

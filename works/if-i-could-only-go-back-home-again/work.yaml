@@ -1,0 +1,12 @@
+id: if-i-could-only-go-back-home-again
+title: If I Could Only Go Back Home Again
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/if-i-could-only-go-back-home-again/
+    imported_at: '2026-08-01'

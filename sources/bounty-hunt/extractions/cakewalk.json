@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Cakewalk",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Del McCoury",
+   "Norman Blake",
+   "Jesse McReynolds",
+   "Tut Taylor"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:23:09",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 10
+ },
+ "candidate": null,
+ "content": null
+}

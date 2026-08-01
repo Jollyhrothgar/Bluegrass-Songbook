@@ -1,0 +1,12 @@
+id: petals-in-my-pocket
+title: Petals in my Pocket
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/petals-in-my-pocket/
+    imported_at: '2026-08-01'

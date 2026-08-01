@@ -1,0 +1,13 @@
+id: i-truly-understand
+title: I Truly Understand
+artist: Jerry Garcia
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: i-truly-understand.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/jerry-garcia/i-truly-understand-chords-3142010
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: i-just-got-wise
+title: I Just Got Wise
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/i-just-got-wise/
+    imported_at: '2026-08-01'

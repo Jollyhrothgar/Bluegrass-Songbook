@@ -1,0 +1,12 @@
+id: old-black-mountain-saturday-night
+title: Old Black Mountain Saturday Night
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/old-black-mountain-saturday-night/
+    imported_at: '2026-08-01'

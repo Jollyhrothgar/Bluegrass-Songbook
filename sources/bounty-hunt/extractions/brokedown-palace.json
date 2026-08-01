@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Brokedown Palace",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Sara Watkins",
+   "Billy Strings",
+   "Watkins Family Hour",
+   "Vassar Clements"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:22:56",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "F"
+ },
+ "candidate": {
+  "id": 1058519,
+  "song_id": 38458,
+  "song_name": "Brokedown Palace",
+  "artist_id": 1339,
+  "artist_name": "Grateful Dead",
+  "type": "Chords",
+  "part": "",
+  "version": 3,
+  "common_version": 1,
+  "votes": 1338,
+  "difficulty": "",
+  "rating": 4.88846,
+  "date": "1306195201",
+  "status": "approved",
+  "preset_id": 48428,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "F",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 38271
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/6/3/6327/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/153160/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1730055706,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n\r\n[tab][ch]G[/ch]                 [ch]Am[/ch]     [ch]Bb[/ch]         [ch]F[/ch]                 [ch]C[/ch]\r\nFare you well, my honey, fare you well my only true one.[/tab]\r\n[tab][ch]G[/ch]                       [ch]Dm[/ch]          [ch]Bb[/ch]                 [ch]C[/ch]          [ch]F[/ch]\r\nAll the birds that were singing are flown, except you alone.[/tab]\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]F[/ch]                    [ch]Bb[/ch]\r\nGoing to leave this brokedown palace,[/tab]\r\n[tab]      [ch]F[/ch]            [ch]Dm[/ch]            [ch]Bb[/ch]           [ch]F[/ch]\r\nOn my hands and my knees, I will roll, roll, roll.[/tab]\r\n[tab][ch]F[/ch]             [ch]Am[/ch]         [ch]Bb[/ch]    [ch]F[/ch]\r\nMake myself a bed by the waterside,[/tab]\r\n[tab]                  [ch]G[/ch]            [ch]Bb[/ch]          [ch]F[/ch]\r\nIn my time, In my time, I will roll, roll roll.[/tab]\r\n\r\n\r\n[Chorus 1]\r\n\r\n[tab][ch]F[/ch]         [ch]A[/ch]\r\nIn a bed, in a bed,[/tab]\r\n[tab]       [ch]Bb[/ch]                [ch]F[/ch]      [ch]G[/ch]\r\nBy the waterside I will lay my head.[/tab]\r\n[tab][ch]F[/ch]                     [ch]G[/ch]                   [ch]Bb[/ch]      [ch]F[/ch]\r\nListen to the river sing sweet songs, to rock my soul.[/tab]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab][ch]F[/ch]                       [ch]Bb[/ch]\r\nRiver going to take me, sing me sweet and sleepy,[/tab]\r\n[tab][ch]F[/ch]                 [ch]Dm[/ch]             [ch]Bb[/ch]       [ch]F[/ch]\r\nSing me sweet and sleepy all the way back home.[/tab]\r\n[tab][ch]F[/ch]                 [ch]Am[/ch]           [ch]Bb[/ch]        [ch]F[/ch]\r\nIt's a far gone lullaby, sung many years ago.[/tab]\r\n[tab]                [ch]G[/ch]                      [ch]Bb[/ch]            [ch]F[/ch]\r\nMama, mama many worlds I've come since I first left home.[/tab]\r\n\r\n\r\n[Chorus 2]\r\n\r\n[tab][ch]F[/ch]           [ch]A[/ch]\r\nGoin' home, goin' home,[/tab]\r\n[tab]       [ch]Bb[/ch]                [ch]F[/ch]       [ch]G[/ch]\r\nBy the waterside I will rest my bones,[/tab]\r\n[tab][ch]F[/ch]                   [ch]G[/ch]                    [ch]Bb[/ch]       [ch]F[/ch]\r\nListen to the river sing sweet songs, to rock my soul.[/tab]\r\n\r\n\r\n[Verse 3]\r\n\r\n[tab][ch]F[/ch]                [ch]Bb[/ch]\r\nGoing to plant a weeping willow,[/tab]\r\n[tab][ch]F[/ch]                   [ch]Dm[/ch]            [ch]Bb[/ch]           [ch]F[/ch]\r\nOn the bank's green edge it will grow, grow, grow.[/tab]\r\n[tab][ch]F[/ch]           [ch]Am[/ch]   [ch]Bb[/ch]         [ch]F[/ch]\r\nSing a lullaby beside the water,[/tab]\r\n[tab]                [ch]G[/ch]             [ch]Bb[/ch]           [ch]F[/ch]\r\nLovers come and go, the river roll, roll, roll.[/tab]\r\n\r\n\r\n[Chorus 3]\r\n\r\n[tab][ch]F[/ch]              [ch]A[/ch]\r\nFare you well, fare you well,[/tab]\r\n[tab]  [ch]Bb[/ch]                  [ch]F[/ch]         [ch]G[/ch]\r\nI love you more than words can tell,[/tab]\r\n[tab][ch]F[/ch]                   [ch]G[/ch]                    [ch]Bb[/ch]       [ch]F[/ch]\r\nListen to the river sing sweet songs, to rock my soul.[/tab]\r\n\r\n\r\n[Outro]\r\n\r\n[tab]       [ch]F[/ch]              [ch]Bb[/ch]\r\nDoo do doo, do da do, doo-oo[/tab]\r\n[tab][ch]F[/ch]       [ch]G[/ch]       [ch]Bb[/ch]     [ch]F[/ch]\r\nDoo, do doo, da doo da doo[/tab]\r\n[tab]       [ch]F[/ch]              [ch]Bb[/ch]     [ch]F[/ch]\r\nDoo do doo, do da do, doo da doo[/tab]\r\n[tab][ch]F[/ch]       [ch]G[/ch]       [ch]Bb[/ch]     [ch]F[/ch]\r\nDoo, do doo, da doo da doo[/tab]\r\n[tab]      [ch]F[/ch]       [ch]G[/ch]       [ch]Bb[/ch]     [ch]F[/ch]\r\nDo do Doo, do doo, da doo da doo[/tab]"
+}

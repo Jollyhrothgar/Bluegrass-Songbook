@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Slewfoot",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Clint Howard",
+   "New Riders of the Purple Sage",
+   "Fred Price",
+   "Doc Watson"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:19:48",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

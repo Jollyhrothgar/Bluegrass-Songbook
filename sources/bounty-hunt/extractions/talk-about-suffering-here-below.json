@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Talk About Suffering Here Below",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Darol Anger",
+   "Tony Rice",
+   "Doc Watson",
+   "Ricky Skaggs"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:32:19",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

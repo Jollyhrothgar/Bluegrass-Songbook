@@ -1,0 +1,12 @@
+id: o-come-o-come-emmanuel
+title: O Come O Come Emmanuel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: o-come-o-come-emmanuel.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-christmas/o-come-o-come-emmanuel-chords-1797942
+    imported_at: '2026-08-01'

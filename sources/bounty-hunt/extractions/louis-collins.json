@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Louis Collins",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "David Nelson",
+   "Saddle River String Band",
+   "Tony Rice",
+   "David Grisman"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:11:26",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 821721,
+  "song_id": 2740841,
+  "song_name": "Louis Collins",
+  "artist_id": 10353,
+  "artist_name": "Jerry Garcia",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 52,
+  "difficulty": "",
+  "rating": 4.88003,
+  "date": "1241654401",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2027470
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1519711/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/176932/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1241654401,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "LOUIS COLLINS\r\nwritten by Mississippi John Hurt\r\n\r\n\r\n[tab]   [ch]G[/ch]                [ch]C[/ch]\r\nMs Collins weep, Ms Collins moan[/tab]\r\n[tab][ch]C[/ch]             [ch]C7[/ch]        [ch]F[/ch]\r\nWhat made her son Louis leave his home?[/tab]\r\n[tab][ch]C[/ch]      [ch]G[/ch]           [ch]C[/ch]\r\nAngels laid him away[/tab]\r\n\r\n\r\nCHORUS:\r\nAngels laid him away\r\nLaid him six feet under the clay\r\nAngels laid him away\r\n\r\n\r\nOh kind friends, now ain't it hard\r\nTo see poor Louis in a new grave yard\r\nAngels laid him away\r\n\r\n-CHORUS-\r\n\r\nBob shot one and Louis shot two\r\nShot poor Collins, shot him through and through\r\nAngels laid him away\r\n\r\n-CHORUS-\r\n\r\nWhen they heard that Louis was dead\r\nAll the women folks they dressed in red\r\nAngels laid him away\r\n\r\n-CHORUS-\r\n\r\nOh kind friends, now ain't it hard\r\nTo see poor Louis in a new grave yard\r\nAngels laid him away\r\n\r\n-CHORUS-\r\n\r\nMrs Collins weep, Mrs Collins moan\r\nWhat made her son Louis leave his home?\r\nAngels laid him away\r\n\r\n-CHORUS-"
+}

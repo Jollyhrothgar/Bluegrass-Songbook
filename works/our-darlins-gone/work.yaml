@@ -1,0 +1,12 @@
+id: our-darlins-gone
+title: Our Darlin’s Gone
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/our-darlins-gone/
+    imported_at: '2026-08-01'

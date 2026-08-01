@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Make Me a Pallet on the Floor",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Country Gentlemen",
+   "Martha Adcock",
+   "Eddie Adcock",
+   "Doc Watson"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:27:55",
+ "status": "accepted",
+ "validation": {
+  "tier": "bluegrass-artist",
+  "score": 61.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "F"
+ },
+ "candidate": {
+  "id": 2376555,
+  "song_id": 2081583,
+  "song_name": "Make Me A Pallet On Your Floor",
+  "artist_id": 11572,
+  "artist_name": "Gillian Welch",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 158,
+  "difficulty": "intermediate",
+  "rating": 4.88449,
+  "date": "1525081433",
+  "status": "approved",
+  "preset_id": 103463,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "F",
+  "version_description": "This is the chord progression used on the Soul Journey album. The G-Gmaj7-G7 walkdown is accented on the upstrokes on strings 1-3.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 162531
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/5/5/55198/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/150792/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1737987875,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]C/G[/ch]\r\n\r\n[Verse 1]\r\n[tab][ch]F[/ch]                             [ch]C/G[/ch]\r\nMake me down a pallet on your floor[/tab]\r\n[tab][ch]F[/ch]                             [ch]G[/ch]     [ch]G[/ch] [ch]Gmaj7[/ch] [ch]G7[/ch]\r\nMake me down a pallet on your floor[/tab]\r\n[tab][ch]C/G[/ch]     [ch]E7[/ch]     [ch]F[/ch]\r\nMake me down a pallet soft and low[/tab]\r\n[tab][ch]C/G[/ch]                  [ch]G[/ch]              [ch]C/G[/ch]\r\nWhen I'm broke an' I got nowhere to go[/tab]\r\n\r\n[Verse 2]\r\n[tab]     [ch]F[/ch]                                          [ch]C/G[/ch]\r\nBeen hangin' around with a good time friends of mine[/tab]\r\n[tab][ch]F[/ch]                                           [ch]G[/ch]    [ch]G[/ch] [ch]Gmaj7[/ch] [ch]G7[/ch]\r\nHangin' around with a good time friends of mine[/tab]\r\n[tab][ch]C/G[/ch]      [ch]E7[/ch]       [ch]F[/ch]\r\nOh, they treat me very nice and kind[/tab]\r\n[tab][ch]C/G[/ch]             [ch]G[/ch]            [ch]C/G[/ch]\r\nWhen I've got a dollar and a dime[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]F[/ch]                        [ch]C/G[/ch]\r\nWeary blues everywhere I see[/tab]\r\n[tab][ch]F[/ch]                            [ch]G[/ch]    [ch]G[/ch] [ch]Gmaj7[/ch] [ch]G7[/ch]\r\nWeary in blues everywhere I see[/tab]\r\n[tab][ch]C/G[/ch]   [ch]E7[/ch]            [ch]F[/ch]\r\nWeary blues, honey, everywhere I see[/tab]\r\n[tab][ch]C/G[/ch]         [ch]G[/ch]                  [ch]C/G[/ch]\r\nNo one ever had the blues like me[/tab]\r\n\r\n[Verse 4]\r\n[tab][ch]F[/ch]                                       [ch]C/G[/ch]\r\nWay I'm sleepin', my back and shoulders tired[/tab]\r\n[tab][ch]F[/ch]                                       [ch]G[/ch]     [ch]G[/ch] [ch]Gmaj7[/ch] [ch]G7[/ch]\r\nWay I'm sleepin', my back and shoulders tired[/tab]\r\n[tab][ch]C/G[/ch]     [ch]E7[/ch]     [ch]F[/ch]\r\nCome tomorrow, I'll be satisfied[/tab]\r\n[tab]   [ch]C/G[/ch]              [ch]G[/ch]              [ch]C/G[/ch]\r\nIf I can catch that fast train and ride[/tab]\r\n\r\n[Verse 5]\r\n[tab]    [ch]F[/ch]                             [ch]C/G[/ch]\r\nSo, make me down a pallet on your floor[/tab]\r\n[tab][ch]F[/ch]                             [ch]G[/ch]    [ch]G[/ch] [ch]Gmaj7[/ch] [ch]G7[/ch]\r\nMake me down a pallet on your floor[/tab]\r\n[tab][ch]C/G[/ch]     [ch]E7[/ch]     [ch]F[/ch]\r\nMake me down a pallet soft and low[/tab]\r\n[tab][ch]C/G[/ch]                   [ch]G[/ch]              [ch]C/G[/ch]\r\nBabe, I'm broke and I got nowhere to go[/tab]"
+}

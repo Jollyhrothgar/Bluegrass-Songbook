@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Mexico",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Carbon Leaf",
+   "Gill Landry",
+   "Norman Blake",
+   "Sam Bush"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:11:34",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 554374,
+  "song_id": 176517,
+  "song_name": "Mexico",
+  "artist_id": 14546,
+  "artist_name": "Kain",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 302,
+  "difficulty": "novice",
+  "rating": 4.84397,
+  "date": "1185408001",
+  "status": "approved",
+  "preset_id": 85656,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/8/1809138/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/2/123318/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1475829634,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Capo 2e fret\r\n\r\n[Intro]\r\n[ch]Em[/ch] - [ch]D[/ch] - [ch]G[/ch] - [ch]Em[/ch] - [ch]D[/ch] - [ch]G[/ch]\r\n\r\n\r\n[tab][ch]Em[/ch]                [ch]D[/ch]                     [ch]G[/ch]\r\nMoi Je suis c\u2019que j\u2019ai toujours voulu \u00eatre[/tab]\r\n[tab][ch]Em[/ch]                [ch]D[/ch]             [ch]G[/ch]\r\nHonn\u00eate dans un monde d\u2019infid\u00e8les[/tab]\r\n[tab][ch]C[/ch]                        [ch]D[/ch]                          [ch]Em[/ch]\r\nQuand j\u2019\u00e9tais ti-cul, mon r\u00eave c\u2019\u00e9tait d\u2019faire l\u2019amour[/tab]\r\n[tab][ch]C[/ch]                        [ch]D[/ch]                   [ch]G[/ch]\r\nUn peu plus tard c\u2019\u00e9tait d\u2019aimer pour toujours[/tab]\r\n\r\n\r\n[tab][ch]Em[/ch]           [ch]D[/ch]                  [ch]G[/ch]\r\nJ\u2019avance un peu \u00e0 tous les jours[/tab]\r\n[tab][ch]Em[/ch]                  [ch]D[/ch]              [ch]G[/ch]\r\nUn peu moins jeune, un peu moins con[/tab]\r\n[tab][ch]C[/ch]                     [ch]D[/ch]                     [ch]Em[/ch]\r\nJ\u2019te go\u00fbte, lentement mes yeux te d\u00e9shabillent[/tab]\r\n[tab][ch]C[/ch]                       [ch]D[/ch]            [ch]G[/ch]\r\nDans mes nuits d\u2019insomnie, je te dessine[/tab]\r\n\r\n\r\n[tab][ch]G[/ch]                                  [ch]C[/ch]\r\nLa belle vie pour moi en tous cas c\u2019est clair c\u2019est toi[/tab]\r\n[tab][ch]G[/ch]                                   [ch]D[/ch]\r\nC\u2019est pas les \u00eeles Fidji c\u2019est pas l\u2019soleil de Tahiti[/tab]\r\n[tab][ch]C[/ch]                    [ch]D[/ch]    [ch]C[/ch]             [ch]D[/ch]         [ch]Em[/ch]\r\nJuste un dimanche dehors \u00e9tendu dans l\u2019\u00e9t\u00e9 avec toi[/tab]\r\n[tab][ch]C[/ch]                             [ch]D[/ch]            [ch]G[/ch]\r\nJ\u2019te promets que c\u2019est aussi beau que Mexico[/tab]\r\n\r\n\r\n[tab][ch]Em[/ch]                    [ch]D[/ch]                 [ch]G[/ch]\r\nC\u2019est dr\u00f4le comme le destin t\u2019as souffl\u00e9e[/tab]\r\n[tab][ch]Em[/ch]                  [ch]D[/ch]              [ch]G[/ch]\r\nDevant mes yeux comme le vent de mai[/tab]\r\n[tab][ch]C[/ch]                     [ch]D[/ch]                     [ch]Em[/ch]\r\nMon corps est ton fleuve, viens boire un coup[/tab]\r\n[tab][ch]C[/ch]                       [ch]D[/ch]                        [ch]G[/ch]\r\nViens voir vu d\u2019en haut comme c\u2019est bon d\u2019\u00eatre nous[/tab]\r\n\r\n\r\n[tab][ch]Em[/ch]                    [ch]D[/ch]                    [ch]G[/ch]\r\nJe brille, tu m\u2019allumes m\u00eame en plein jours[/tab]\r\n[tab][ch]Em[/ch]                  [ch]D[/ch]             [ch]G[/ch]\r\nJe t\u2019aime de mon corps un peu lourd[/tab]\r\n[tab][ch]C[/ch]                    [ch]D[/ch]               [ch]Em[/ch]\r\nEn attendant d\u2019vieillir viens t\u2019\u00e9tendre[/tab]\r\n[tab][ch]C[/ch]                       [ch]D[/ch]                  [ch]G[/ch]\r\nY\u2019a personne d\u2019autres de qui j\u2019veux d\u00e9pendre[/tab]\r\n\r\n\r\n[tab][ch]G[/ch]                                  [ch]C[/ch]\r\nLa belle vie pour moi en tous cas c\u2019est clair c\u2019est toi[/tab]\r\n[tab][ch]G[/ch]                                   [ch]D[/ch]\r\nC\u2019est pas les \u00eeles Fidji c\u2019est pas l\u2019soleil de Tahiti[/tab]\r\n[tab][ch]C[/ch]                    [ch]D[/ch]    [ch]C[/ch]             [ch]D[/ch]         [ch]Em[/ch]\r\nJuste un dimanche dehors \u00e9tendu dans l\u2019\u00e9t\u00e9 avec toi[/tab]\r\n[tab][ch]C[/ch]                             [ch]D[/ch]            [ch]G[/ch]\r\nJ\u2019te promets que c\u2019est aussi beau que Mexico[/tab]\r\n\r\n\r\n[tab][ch]D[/ch]            [ch]C[/ch]        [ch]G[/ch]                 [ch]D[/ch]\r\n        Mexico, qu'n'importe quel paradis[/tab]\r\n                                                4X\r\n[tab]        [ch]D[/ch]    [ch]C[/ch]            [ch]G[/ch]         [ch]D[/ch]\r\n        Mexico, pourvu qu'on s'oublie[/tab]\r\n\r\n\r\n[tab][ch]D[/ch]    [ch]C[/ch]  [ch]G[/ch]    [ch]D[/ch]   [ch]C[/ch]              [ch]G[/ch]         [ch]D[/ch]\r\nMexico, Mexico-o-ooo    pourvu qu'on s'oublie        2X[/tab]"
+}

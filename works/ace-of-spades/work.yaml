@@ -1,0 +1,13 @@
+id: ace-of-spades
+title: Ace of Spades
+artist: Motorhead
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: ace-of-spades.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/motorhead/ace-of-spades-chords-1903762
+    imported_at: '2026-08-01'

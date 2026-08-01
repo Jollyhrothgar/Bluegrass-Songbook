@@ -1,0 +1,20 @@
+{
+ "wanted": {
+  "title": "Old Home Town, The",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:06:21",
+ "status": "rejected-all-candidates",
+ "validation": {
+  "tried": [
+   {
+    "id": 1814517,
+    "why": "empty-or-chordless"
+   }
+  ],
+  "results_seen": 4
+ },
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,12 @@
+id: lord-im-in-your-care
+title: Lord I’m In Your Care
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/lord-im-in-your-care/
+    imported_at: '2026-08-01'

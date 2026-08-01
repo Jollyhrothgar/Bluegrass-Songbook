@@ -1,0 +1,12 @@
+id: see-that-my-grave-is-kept-green
+title: See That My Grave Is Kept Green
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/see-that-my-grave-is-kept-green/
+    imported_at: '2026-08-01'

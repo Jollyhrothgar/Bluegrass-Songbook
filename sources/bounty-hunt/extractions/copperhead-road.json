@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Copperhead Road",
+  "type": "Vocal",
+  "key": "D",
+  "difficulty": "Intermediate",
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Steve Earle",
+   "Norman Blake",
+   "Peter Rowan",
+   "The Del McCoury Band"
+  ],
+  "notes": "modern crossover",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:23:44",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "D"
+ },
+ "candidate": {
+  "id": 1861944,
+  "song_id": 140377,
+  "song_name": "Copperhead Road",
+  "artist_id": 10222,
+  "artist_name": "Steve Earle",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 1572,
+  "difficulty": "novice",
+  "rating": 4.78759,
+  "date": "1469171223",
+  "status": "approved",
+  "preset_id": 33204,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "D",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 70565
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/3/6/362798/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/173597/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1543922423,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]D[/ch]\r\n\r\n[tab][Riff 1]           [Riff 2]\r\ne|---0---0-------2--0-0--0-0-0-0-0-0-0-0-2------|\r\nB|---3---3-------3--0-0--5-5-5-0-0-0-0-0-3------|\r\nG|-2-2-2-2-4p2p0-2--0-0--5-5-5-4-4\\2-2p0-2------|\r\nD|-0---0-----------------0-0-0-0-0-0-0-0-0------|\r\nA|----------------------------------------------|\r\nE|----------------------------------------------|\r\n* PLAY RIFF 1 AFTER EACH VERSE LINE[/tab]\r\n\r\n[Verse]\r\n[tab][ch]D[/ch]\r\nWell my name's John Lee Pettimore[/tab]\r\nSame as my daddy and his daddy before\r\n[tab][ch]D[/ch]\r\nYou hardly ever saw Grandaddy down here[/tab]\r\nHe only came to town about twice a year\r\n[tab][ch]D[/ch]\r\nHe'd buy a hundred pounds of yeast and some copper line[/tab]\r\nEverybody knew that he made moonshine\r\n[tab]           [ch]G[/ch]                  [ch]C[/ch]       [ch]G[/ch]\r\nNow the revenue man wanted Grandaddy bad[/tab]\r\n[tab][ch]D[/ch]\r\nHe headed up the holler with everything he had[/tab]\r\n[tab]       [ch]G[/ch]                  [ch]C[/ch]         [ch]G[/ch]\r\nIt's before my time but I've been told[/tab]\r\n[tab][ch]D[/ch]\r\nHe never came back from Copperhead Road[/tab]\r\n\r\n[INTRO RIFF]\r\n\r\n[Verse]\r\n[tab][ch]D[/ch]\r\nNow Daddy ran the whiskey in a big block Dodge[/tab]\r\nBought it at an auction at the Mason's Lodge\r\n[tab][ch]D[/ch]\r\nJohnson County Sheriff painted on the side[/tab]\r\nJust shot a coat of primer then he looked inside\r\n[tab][ch]D[/ch]\r\nWell him and my uncle tore that engine down[/tab]\r\nI still remember that rumblin' sound\r\n[tab]            [ch]G[/ch]                         [ch]C[/ch]             [ch]G[/ch]\r\nWell the sheriff came around in the middle of the night[/tab]\r\n[tab][ch]D[/ch]\r\nHeard mama cryin', knew something wasn't right[/tab]\r\n[tab]         [ch]G[/ch]                                 [ch]C[/ch]      [ch]G[/ch]\r\nHe was headed down to Knoxville with the weekly load[/tab]\r\n[tab][ch]D[/ch] (LET RING)\r\nYou could smell the whiskey burnin' down Copperhead Road[/tab]\r\n\r\n[Break]\r\n[ch]D[/ch]  N.C. x4\r\n\r\n[Instrumental]  x2\r\n[ch]G[/ch]  [ch]C[/ch] [ch]G[/ch]  [ch]D[/ch]\r\n\r\n[Verse]\r\n[tab][ch]D[/ch]\r\nI volunteered for the Army on my birthday[/tab]\r\nThey draft the white trash first,'round here anyway\r\n[tab][ch]D[/ch]\r\nI done two tours of duty in Vietnam[/tab]\r\nAnd I came home with a brand new plan\r\n[tab][ch]D[/ch]\r\nI take the seed from Colombia and Mexico[/tab]\r\nI plant it up the holler down Copperhead Road\r\n[tab]           [ch]G[/ch]              [ch]C[/ch]             [ch]G[/ch]\r\nWell the D.E.A.'s got a chopper in the air[/tab]\r\n[tab][ch]D[/ch]\r\nI wake up screaming like I'm back over there[/tab]\r\n[tab]     [ch]G[/ch]                               [ch]C[/ch]               [ch]G[/ch]\r\nI learned a thing or two from ol' Charlie don't you know[/tab]\r\n[tab][ch]D[/ch]\r\nYou better stay away from Copperhead Road[/tab]\r\n\r\n[Break]\r\n[ch]D[/ch]  N.C. 4x\r\n\r\n[tab][Outro]\r\n [Riff 1]           [Riff 2]\r\ne|---0---0-------2--0-0--0-0-0-0-0-0-0-0-2------|\r\nB|---3---3-------3--0-0--5-5-5-0-0-0-0-0-3------|\r\nG|-2-2-2-2-4p2p0-2--0-0--5-5-5-4-4\\2-2p0-2------|\r\nD|-0---0-----------------0-0-0-0-0-0-0-0-0------|\r\nA|----------------------------------------------|\r\nE|----------------------------------------------|\r\n* PLAY RIFF 1 AFTER EACH VERSE LINE[/tab]\r\n\r\n************************************\r\n\r\n| p  Pull-off\r\n| \\  Slide down\r\n\r\n************************************"
+}

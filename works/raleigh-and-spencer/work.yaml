@@ -1,0 +1,13 @@
+id: raleigh-and-spencer
+title: Raleigh and Spencer
+artist: Brad Leftwich the Humdingers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: raleigh-and-spencer.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/brad-leftwich-the-humdingers/raleigh-and-spencer-chords-4124692
+    imported_at: '2026-07-31'

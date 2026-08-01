@@ -1,0 +1,12 @@
+id: im-waiting-at-the-gate
+title: I’m Waiting At The Gate
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/im-waiting-at-the-gate/
+    imported_at: '2026-08-01'

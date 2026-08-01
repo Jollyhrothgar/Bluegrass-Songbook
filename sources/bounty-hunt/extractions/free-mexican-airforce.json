@@ -1,0 +1,21 @@
+{
+ "wanted": {
+  "title": "Free Mexican Airforce",
+  "type": "Vocal",
+  "key": "A",
+  "difficulty": "Intermediate",
+  "coverage": 2,
+  "core": false,
+  "artists": [
+   "Tony Rice",
+   "Peter Rowan"
+  ],
+  "notes": "jam favorite",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:35:47",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

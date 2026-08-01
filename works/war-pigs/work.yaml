@@ -1,0 +1,13 @@
+id: war-pigs
+title: War Pigs
+artist: Black Sabbath
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: war-pigs.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/black-sabbath/war-pigs-chords-1694335
+    imported_at: '2026-08-01'

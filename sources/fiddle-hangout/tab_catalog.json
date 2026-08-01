@@ -66,8 +66,12 @@
       "genre": "Bluegrass",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422102"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422102",
+      "downloaded_at": "2026-08-01T11:14:42.897496",
+      "converted_at": "2026-08-01T11:14:48.111225",
+      "imported_at": "2026-08-01T11:14:48.137841",
+      "work_slug": "back-up-and-push"
     },
     "2307_tef": {
       "id": "2307_tef",
@@ -120,8 +124,12 @@
       "genre": "Bluegrass",
       "key": "A",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422111"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422111",
+      "downloaded_at": "2026-08-01T11:14:42.898337",
+      "converted_at": "2026-08-01T11:14:48.157502",
+      "imported_at": "2026-08-01T11:14:48.187944",
+      "work_slug": "bill-cheatham"
     },
     "2367_tef": {
       "id": "2367_tef",
@@ -229,8 +237,12 @@
       "genre": "Bluegrass",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422127"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422127",
+      "downloaded_at": "2026-08-01T11:10:48.743313",
+      "converted_at": "2026-08-01T11:11:29.596809",
+      "imported_at": "2026-08-01T11:11:40.473676",
+      "work_slug": "bluegrass-stomp"
     },
     "1813_tef": {
       "id": "1813_tef",
@@ -1893,8 +1905,12 @@
       "genre": "Bluegrass",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:58:25.422387"
+      "status": "imported",
+      "discovered_at": "2026-07-26T21:58:25.422387",
+      "downloaded_at": "2026-08-01T11:10:48.743574",
+      "converted_at": "2026-08-01T11:11:40.479417",
+      "imported_at": "2026-08-01T11:11:40.504605",
+      "work_slug": "sailor-s-hornpipe"
     },
     "2498_tef": {
       "id": "2498_tef",

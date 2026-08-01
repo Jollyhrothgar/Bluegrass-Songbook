@@ -1,0 +1,12 @@
+id: lets-go-to-the-fair
+title: Let’s Go To The Fair
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/lets-go-to-the-fair/
+    imported_at: '2026-08-01'

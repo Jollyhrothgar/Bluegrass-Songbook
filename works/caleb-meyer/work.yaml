@@ -1,0 +1,13 @@
+id: caleb-meyer
+title: Caleb Meyer
+artist: Gillian Welch
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: caleb-meyer.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/gillian-welch/caleb-meyer-chords-917136
+    imported_at: '2026-08-01'

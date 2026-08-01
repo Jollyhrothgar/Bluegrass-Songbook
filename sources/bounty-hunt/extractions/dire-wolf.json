@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Dire Wolf",
+  "type": "Vocal",
+  "key": "G",
+  "difficulty": "Intermediate",
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Molly Tuttle",
+   "The Grassmasters",
+   "Billy Strings",
+   "New Riders of the Purple Sage"
+  ],
+  "notes": "jam favorite",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:33",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1242797,
+  "song_id": 38483,
+  "song_name": "Dire Wolf",
+  "artist_id": 1339,
+  "artist_name": "Grateful Dead",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 278,
+  "difficulty": "novice",
+  "rating": 4.85552,
+  "date": "1368489601",
+  "status": "approved",
+  "preset_id": 58516,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 11397
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/6/3/6324/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/153160/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1693857396,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "DIRE WOLF - GRATEFUL DEAD\r\n\r\nWords by Robert Hunter\r\nMusic by Jerry Garcia\r\n\r\nAlbum version - Workingman's Dead (1970)\r\n\r\nOfficial Audio: https://youtu.be/VWY4hyIlsqQ?si=BSWwiaD8O8PLKVFc\r\n\r\n\r\n[tab]C#7 x-4-3-4-2-x[/tab]\r\n\r\n\r\n[Intro]\r\n\r\n[tab]e|------------|\r\nB|------------|\r\nG|------------|\r\nD|------------|\r\nA|--0-0-------|\r\nE|------4--2--|[/tab]\r\n\r\n| [ch]E[/ch]    | [ch]D[/ch]    | [ch]A[/ch]    | [ch]A[/ch]    |\r\n\r\n\r\n[Verse 1]\r\n[tab]       [ch]E[/ch]\r\nIn the timbers of Fennario[/tab]\r\n[tab]    [ch]G[/ch]                   [ch]D[/ch]\r\nThe wolves are running 'round[/tab]\r\n[tab]    [ch]D[/ch]\r\nThe winter was so hard and cold[/tab]\r\n[tab]      [ch]D[/ch]                    [ch]E[/ch]\r\nFroze ten feet 'neath the ground[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]             [ch]D[/ch]    [ch]E[/ch]\r\nDon't murder me[/tab]\r\n[tab]         [ch]A[/ch]                 [ch]D[/ch]\r\nI beg of you, don't murder me[/tab]\r\n[tab][ch]E[/ch]       [ch]D[/ch]\r\n Plea - se[/tab]\r\n[tab]             [ch]A[/ch]\r\nDon't murder me[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab]  [ch]E[/ch]\r\nI sat down to my supper[/tab]\r\n[tab] [ch]G[/ch]                        [ch]D[/ch]\r\n'Twas a bottle of red whiskey[/tab]\r\n[tab]  [ch]D[/ch]\r\nI said my prayers and went to bed[/tab]\r\n[tab]           [ch]A[/ch]         [ch]G#[/ch]  [ch]G[/ch]  [ch]F#m[/ch]\r\nThat's the last they saw of me[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]             [ch]E[/ch]    [ch]D[/ch]\r\nDon't murder me[/tab]\r\n[tab]         [ch]A[/ch]                 [ch]D[/ch]\r\nI beg of you, don't murder me[/tab]\r\n[tab][ch]E[/ch]       [ch]D[/ch]\r\n Plea - se[/tab]\r\n[tab]             [ch]A[/ch]\r\nDon't murder me[/tab]\r\n\r\n\r\n[Verse 3]\r\n[tab]     [ch]F#m[/ch]          [ch]E[/ch]\r\nWhen I awoke, the Dire Wolf[/tab]\r\n[tab]    [ch]A[/ch]       [ch]G[/ch]         [ch]D[/ch]\r\nSix hundred pounds of sin[/tab]\r\n[tab]    [ch]D[/ch]\r\nWas grinning at my window[/tab]\r\n[tab]      [ch]D[/ch]                  [ch]E[/ch]\r\nAll I said was \"Come on in\"[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]             [ch]D[/ch]    [ch]E[/ch]\r\nDon't murder me[/tab]\r\n[tab]         [ch]A[/ch]          [ch]C#7[/ch]    [ch]F#m[/ch]\r\nI beg of you, don't murder me[/tab]\r\n[tab][ch]E[/ch]       [ch]D[/ch]\r\n Plea - se[/tab]\r\n[tab]             [ch]A[/ch]\r\nDon't murder me[/tab]\r\n\r\n\r\n[Verse 4]\r\n[tab]    [ch]F#m[/ch]             [ch]E[/ch]\r\nThe wolf came in, I got my cards[/tab]\r\n[tab]   [ch]A[/ch]        [ch]G[/ch]     [ch]D[/ch]\r\nWe sat down for a game[/tab]\r\n[tab]  [ch]D[/ch]\r\nI cut my deck to the queen of spades[/tab]\r\n[tab]        [ch]D[/ch]                   [ch]E[/ch]\r\nBut the cards were all the same[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]             [ch]D[/ch]    [ch]E[/ch]\r\nDon't murder me[/tab]\r\n[tab]         [ch]A[/ch]          [ch]C#7[/ch]    [ch]F#m[/ch]\r\nI beg of you, don't murder me[/tab]\r\n[tab][ch]E[/ch]       [ch]D[/ch]\r\n Plea - se[/tab]\r\n[tab]             [ch]A[/ch]\r\nDon't murder me[/tab]\r\n\r\n\r\n[Solo] (same as Verse 4 plus Chorus)\r\n\r\n| [ch]F#m[/ch]     | [ch]E[/ch]       | [ch]A[/ch]   [ch]G[/ch]   | [ch]D[/ch]       |\r\n| [ch]D[/ch]       | [ch]D[/ch]       | [ch]D[/ch]       | [ch]E[/ch]       |\r\n\r\n| [ch]D[/ch]       | [ch]E[/ch]       | [ch]A[/ch]   [ch]C#7[/ch] | [ch]F#m[/ch]     |\r\n| [ch]E[/ch]       | [ch]D[/ch]       | [ch]A[/ch]       | [ch]A[/ch]       |\r\n\r\n\r\n[Verse 5]\r\n[tab]       [ch]E[/ch]\r\nIn the backwash of Fennario[/tab]\r\n[tab]    [ch]G[/ch]                [ch]D[/ch]\r\nThe black and bloody mire[/tab]\r\n[tab]    [ch]D[/ch]\r\nThe Dire Wolf collects his due[/tab]\r\n[tab]          [ch]D[/ch]                    [ch]E[/ch]\r\nWhile the boys sing round the fire[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]             [ch]D[/ch]    [ch]E[/ch]\r\nDon't murder me[/tab]\r\n[tab]         [ch]A[/ch]                 [ch]D[/ch]\r\nI beg of you, don't murder me[/tab]\r\n[tab][ch]E[/ch]       [ch]D[/ch]\r\n Plea - se[/tab]\r\n[tab]             [ch]A[/ch]\r\nDon't murder me[/tab]\r\n\r\n[tab]             [ch]E[/ch]    [ch]D[/ch]\r\nDon't murder me[/tab]\r\n[tab]         [ch]A[/ch]          [ch]C#7[/ch]    [ch]F#m[/ch]\r\nI beg of you, don't murder me[/tab]\r\n[tab][ch]E[/ch]       [ch]D[/ch]\r\n Plea - se[/tab]\r\n[tab]             [ch]A[/ch]\r\nDon't murder me - No, no, no[/tab]\r\n\r\n[tab]             [ch]E[/ch]    [ch]D[/ch]\r\nDon't murder me[/tab]\r\n[tab]         [ch]A[/ch]          [ch]C#7[/ch]    [ch]F#m[/ch]\r\nI beg of you, don't murder me[/tab]\r\n[tab][ch]E[/ch]       [ch]D[/ch]\r\n Plea - se[/tab]\r\n[tab]             [ch]A[/ch]\r\nDon't murder me[/tab]\r\n[tab][ch]E[/ch]       [ch]D[/ch]\r\n Plea - se[/tab]\r\n[tab]             [ch]A[/ch]    [ch]A[/ch] [ch]E[/ch] [ch]A[/ch]\r\nDon't murder me[/tab]"
+}

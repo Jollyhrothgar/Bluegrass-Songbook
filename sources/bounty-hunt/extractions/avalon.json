@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Avalon",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Dix Bruce",
+   "David Grisman",
+   "Palast Orchester mit seinem S\u00e4nger Max Raabe",
+   "Kenny Baker"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:02",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "F"
+ },
+ "candidate": {
+  "id": 1060866,
+  "song_id": 106361,
+  "song_name": "Avalon",
+  "artist_id": 6824,
+  "artist_name": "Roxy Music",
+  "type": "Chords",
+  "part": "",
+  "version": 3,
+  "common_version": 1,
+  "votes": 320,
+  "difficulty": "novice",
+  "rating": 4.82168,
+  "date": "1306886401",
+  "status": "approved",
+  "preset_id": 60389,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "F",
+  "version_description": "Complete chords and lyrics / capo 3rd fret (easier to play) / suggestions for chord voicings.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 119637
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/3/6/363385/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/2/4/24949/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1673000506,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "---------------------------------------------------------------------------\r\n                Avalon - Roxy Music\r\n---------------------------------------------------------------------------\r\n\r\nWritten by: Bryan Ferry\r\nFrom: \"Avalon\" (1982)\r\n\r\nTabbed by: maguri\r\nTuning: Standard\r\n\r\ncapo: 3rd fret\r\nplay: D\r\nkey: F\r\n\r\nFor chords in original key, transpose this tab +3 to F (and \"use flats\").\r\n\r\n---------------------------------------------------------------------------\r\n\r\nSPECIAL CHORD VOICINGS\r\n\r\n[tab]capo 3rd fret            no capo (transpose this tab +3)\r\n          E-A-D-G-B-e           E-A-D-G-B-e\r\nD/E       0-2-2-2-3-2    F/G    3-x-3-2-1-1\r\nCadd9     x-3-2-0-3-0    Ebadd9 x-6-8-8-6-6\r\nAsus4     x-0-2-2-3-0    Db     x-4-6-6-6-4\r\n                         Csus4  x-3-5-5-6-3\r\n                         C      x-3-5-5-5-3[/tab]\r\n\r\n---------------------------------------------------------------------------\r\n\r\n[Intro]\r\n| [ch]D/E[/ch] | % | % | % | \r\n\r\n[Verse 1]\r\n[tab][ch]D[/ch]          [ch]A[/ch]             [ch]G[/ch]        [ch]A[/ch]\r\n   Now the party's over,   I'm so tired[/tab]\r\n[tab][ch]D[/ch]         [ch]A[/ch]               [ch]G[/ch]        [ch]A[/ch]\r\n   Then I see you coming    out of nowhere[/tab]\r\n[tab][ch]D[/ch]          [ch]A[/ch]           [ch]G[/ch]       [ch]A[/ch]\r\n   Much communication     in a motion[/tab]\r\n[tab][ch]D[/ch]          [ch]A[/ch]             [ch]G[/ch]        [ch]A[/ch]\r\n   Without conversation      or a notion[/tab]\r\n\r\n[Chorus]\r\n[tab]| [ch]Cadd9[/ch] | [ch]Bb[/ch] | [ch]Asus4[/ch] | [ch]A[/ch] | \r\n               (Oooh - oooh)[/tab]\r\n[tab]| [ch]Cadd9[/ch] | [ch]Bb[/ch] | [ch]Asus4[/ch] | [ch]E[/ch] | % |\r\nAvalon[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]D[/ch]           [ch]A[/ch]               [ch]G[/ch]         [ch]A[/ch]\r\n   When the samba takes you    out of nowhere[/tab]\r\n[tab][ch]D[/ch]          [ch]A[/ch]                    [ch]G[/ch]        [ch]A[/ch]\r\n   And the background's fading    out of focus[/tab]\r\n[tab][ch]D[/ch]          [ch]A[/ch]                   [ch]G[/ch]       [ch]A[/ch]\r\n   Yes the picture's changing    every moment[/tab]\r\n[tab][ch]D[/ch]           [ch]A[/ch]            [ch]G[/ch]            [ch]A[/ch]\r\n   And your destination     you don't know it[/tab]\r\n\r\n[Chorus]\r\n[tab]| [ch]Cadd9[/ch] | [ch]Bb[/ch] | [ch]Asus4[/ch] | [ch]A[/ch] | \r\n               (Oooh - oooh)[/tab]\r\n[tab]| [ch]Cadd9[/ch] | [ch]Bb[/ch] | [ch]Asus4[/ch] | [ch]E[/ch] | % |\r\nAvalon[/tab]\r\n\r\n[Interlude] / [Middle 8]\r\n[tab]| [ch]E[/ch] | [ch]A[/ch] | [ch]E[/ch] | [ch]A[/ch] |\r\n(instrumental)[/tab]\r\n[tab]| [ch]E[/ch] | [ch]A[/ch] | [ch]E[/ch] | [ch]A[/ch] |\r\n(instrumental)[/tab]\r\n[tab][ch]E[/ch]        [ch]A[/ch]          [ch]E[/ch]      [ch]A[/ch]\r\nDancing, dancing[/tab]\r\n[tab][ch]E[/ch]        [ch]A[/ch]          [ch]E[/ch]      \r\nDancing, dancing[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]D[/ch]           [ch]A[/ch]            [ch]G[/ch]            [ch]A[/ch]\r\n   When you bossa nova     there's no holding[/tab]\r\n[tab][ch]D[/ch]            [ch]A[/ch]               [ch]G[/ch]         [ch]A[/ch]\r\n   Would you have me dancing    out of nowhere[/tab]\r\n\r\n[Chorus]\r\n[tab]| [ch]Cadd9[/ch] | [ch]Bb[/ch] | [ch]Asus4[/ch] | [ch]A[/ch] | \r\n               (Oooh - oooh)[/tab]\r\n[tab]| [ch]Cadd9[/ch] | [ch]Bb[/ch] | [ch]Asus4[/ch] | [ch]E[/ch] | % |\r\nAvalon[/tab]\r\n\r\n[Outro]\r\n| [ch]D[/ch] | [ch]A[/ch] | [ch]G[/ch] | [ch]A[/ch] | \r\n[tab]| [ch]D[/ch] | [ch]A[/ch] | [ch]G[/ch] | [ch]A[/ch] | \r\n(vocals ad lib) Avalon, ooh [/tab]\r\n\r\n(repeat and fade)"
+}

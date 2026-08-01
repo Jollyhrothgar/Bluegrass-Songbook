@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Fanny Hill",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "David Grisman",
+   "Bill Keith",
+   "Todd Phillips",
+   "Tony Rice"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:41",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

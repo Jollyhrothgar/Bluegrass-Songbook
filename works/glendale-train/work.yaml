@@ -1,0 +1,13 @@
+id: glendale-train
+title: Glendale Train
+artist: New Riders of the Purple Sage
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: glendale-train.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/new-riders-of-the-purple-sage/glendale-train-chords-891314
+    imported_at: '2026-08-01'

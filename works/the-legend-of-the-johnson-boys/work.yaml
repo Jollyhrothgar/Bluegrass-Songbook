@@ -1,0 +1,13 @@
+id: the-legend-of-the-johnson-boys
+title: The Legend of the Johnson Boys
+artist: Leroy Troy
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: the-legend-of-the-johnson-boys.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/leroy-troy/the-legend-of-the-johnson-boys-chords-2938571
+    imported_at: '2026-08-01'

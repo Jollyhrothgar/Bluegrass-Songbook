@@ -1,0 +1,13 @@
+id: johnny-has-gone-for-soldier
+title: Johnny Has Gone for Soldier
+default_key: Am
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-johnny-has-gone-for-soldier.txt
+    source_url: https://docs.google.com/document/d/1oxz98Ml20CgrmLmLoNideZ9UfSpoU90k/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

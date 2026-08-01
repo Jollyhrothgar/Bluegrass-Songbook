@@ -1,0 +1,13 @@
+id: norwegian-wood
+title: Norwegian Wood
+artist: The Beatles
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: norwegian-wood.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-beatles/norwegian-wood-chords-1050930
+    imported_at: '2026-08-01'

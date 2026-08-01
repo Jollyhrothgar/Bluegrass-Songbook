@@ -1,0 +1,13 @@
+id: up-on-the-hill-where-they-do-the-boogie
+title: Up on the Hill Where They Do the Boogie
+artist: John Hartford
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: up-on-the-hill-where-they-do-the-boogie.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/john-hartford/up-on-the-hill-where-they-do-the-boogie-chords-743672
+    imported_at: '2026-08-01'

@@ -1,0 +1,13 @@
+id: stay-all-night
+title: Stay All Night
+artist: Willie Nelson
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: stay-all-night.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/willie-nelson/stay-all-night-chords-1463118
+    imported_at: '2026-08-01'

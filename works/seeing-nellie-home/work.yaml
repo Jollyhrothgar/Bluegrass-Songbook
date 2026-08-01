@@ -1,0 +1,13 @@
+id: seeing-nellie-home
+title: Seeing Nellie Home
+artist: Johnny Cash
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: seeing-nellie-home.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/johnny-cash/seeing-nellie-home-chords-2129423
+    imported_at: '2026-08-01'

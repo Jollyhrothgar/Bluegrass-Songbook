@@ -1,0 +1,12 @@
+id: fly-around-my-blue-eyed-gal
+title: Fly Around My Blue-Eyed Gal
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/fly-around-my-blue-eyed-gal/
+    imported_at: '2026-08-01'

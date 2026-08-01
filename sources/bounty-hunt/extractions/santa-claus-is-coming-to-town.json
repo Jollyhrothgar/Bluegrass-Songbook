@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "Santa Claus Is Coming to Town",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 9,
+  "core": true,
+  "artists": [
+   "John 5",
+   "Charlie Daniels",
+   "Harvey Reid",
+   "Vince Gill"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:00:57",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1686531,
+  "song_id": 28877,
+  "song_name": "Santa Claus Is Coming To Town",
+  "artist_id": 933,
+  "artist_name": "Misc Christmas",
+  "type": "Chords",
+  "part": "",
+  "version": 5,
+  "common_version": 1,
+  "votes": 45,
+  "difficulty": "",
+  "rating": 4.90422,
+  "date": "1417754228",
+  "status": "approved",
+  "preset_id": 35220,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p0/media/cover/artist/8/8098662f1fec03c4e12ffd240e7bfe75/misc-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1638389920,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Santa Clause is Coming to Town\r\n\r\n[Chorus]\r\n[tab]    [ch]C[/ch]              [ch]C7[/ch]       [ch]F[/ch]         [ch]Fm[/ch]\r\nYou better watch out, you better not cry,[/tab]\r\n[tab]    [ch]C[/ch]          [ch]C7[/ch]       [ch]F[/ch]          [ch]Fm[/ch]\r\nyou better not pout I'm telling you why,[/tab]\r\n[tab][ch]C[/ch]     [ch]Am[/ch]       [ch]Dm[/ch]     [ch]G7[/ch]\r\nSanta Claus is coming    to town.[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]C[/ch] [ch]Am[/ch] [ch]Dm[/ch] [ch]G7[/ch]\r\n\r\n\r\n[Verse 1]\r\n[tab]    [ch]C[/ch]              [ch]C7[/ch]       [ch]F[/ch]         [ch]Fm[/ch]\r\nHe's making a list and checking it twice,[/tab]\r\n[tab]    [ch]C[/ch]              [ch]C7[/ch]       [ch]F[/ch]         [ch]Fm[/ch]\r\ngonna find out who's naughty and nice,[/tab]\r\n[tab][ch]C[/ch]     [ch]Am[/ch]       [ch]Dm[/ch]     [ch]G7[/ch]\r\nSanta Claus is coming    to town.[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]C[/ch] [ch]Am[/ch] [ch]Dm[/ch] [ch]G7[/ch]\r\n\r\n\r\n[Bridge]\r\n[tab]   [ch]Gm[/ch]         [ch]C7[/ch]        [ch]F[/ch]    [ch]Dm[/ch]\r\nHe sees you when your sleeping,[/tab]\r\n[tab]   [ch]Gm[/ch]         [ch]C7[/ch]        [ch]F[/ch]    [ch]Dm[/ch]\r\nhe knows when you're awake[/tab]\r\n[tab]   [ch]Am[/ch] [ch]D7[/ch]                   [ch]G[/ch]     [ch]E7[/ch]\r\nhe knows if you've been bad or good so be[/tab]\r\n[tab][ch]Am[/ch]       [ch]D7[/ch]       [ch]G[/ch]    [ch]G7[/ch]\r\ngood for goodness sake Ohhhhhhh[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]    [ch]C[/ch]              [ch]C7[/ch]       [ch]F[/ch]         [ch]Fm[/ch]\r\nYou better watch out, you better not cry,[/tab]\r\n[tab]    [ch]C[/ch]          [ch]C7[/ch]       [ch]F[/ch]          [ch]Fm[/ch]\r\nyou better not pout I'm telling you why,[/tab]\r\n[tab][ch]C[/ch]     [ch]Am[/ch]       [ch]Dm[/ch]     [ch]G7[/ch]\r\nSanta Claus is coming    to town.[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]C[/ch] [ch]Am[/ch] [ch]Dm[/ch] [ch]G7[/ch]\r\n\r\n\r\n[Verse 2]\r\n[tab]    [ch]C[/ch]              [ch]C7[/ch]       [ch]F[/ch]         [ch]Fm[/ch]\r\nWith little tin horns and little toy drums,[/tab]\r\n[tab]    [ch]C[/ch]          [ch]C7[/ch]       [ch]F[/ch]          [ch]Fm[/ch]\r\nwith root-ti-toot-toots and rumpty-tum-tums,[/tab]\r\n[tab][ch]C[/ch]     [ch]Am[/ch]       [ch]Dm[/ch]     [ch]G7[/ch]\r\nSanta Claus is coming to town.[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]C[/ch] [ch]Am[/ch] [ch]Dm[/ch] [ch]G7[/ch]\r\n\r\n\r\n[Verse 3]\r\n[tab]    [ch]C[/ch]              [ch]C7[/ch]       [ch]F[/ch]         [ch]Fm[/ch]\r\nAnd curley-haired dolls to cuddle and coo,[/tab]\r\n[tab]    [ch]C[/ch]              [ch]C7[/ch]       [ch]F[/ch]         [ch]Fm[/ch]\r\nelephants, boats and kiddie cars too,[/tab]\r\n[tab][ch]C[/ch]     [ch]Am[/ch]       [ch]Dm[/ch]     [ch]G7[/ch]\r\nSanta Claus is coming    to town.[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]C[/ch] [ch]Am[/ch] [ch]Dm[/ch] [ch]G7[/ch]\r\n\r\n\r\n[Bridge]\r\n[tab]   [ch]Gm[/ch]         [ch]C7[/ch]        [ch]F[/ch]    [ch]Dm[/ch]\r\nThe boys and girls in town,[/tab]\r\n[tab]   [ch]Gm[/ch]         [ch]C7[/ch]        [ch]F[/ch]    [ch]Dm[/ch]\r\nwill have a jubilee[/tab]\r\n[tab]   [ch]Am[/ch] [ch]D7[/ch]                   [ch]G[/ch]     [ch]E7[/ch]\r\nthey're gonna build a toy land town[/tab]\r\n[tab]     [ch]Am[/ch]          [ch]D7[/ch]        [ch]G[/ch]   [ch]G7[/ch]\r\nall around the christmas tree, soooooo[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]    [ch]C[/ch]              [ch]C7[/ch]       [ch]F[/ch]         [ch]Fm[/ch]\r\nYou better watch out, you better not cry,[/tab]\r\n[tab]    [ch]C[/ch]          [ch]C7[/ch]       [ch]F[/ch]          [ch]Fm[/ch]\r\nyou better not pout I'm telling you why,[/tab]\r\n[tab][ch]C[/ch]     [ch]Am[/ch]       [ch]Dm[/ch]     [ch]G7[/ch]\r\nSanta Claus is coming    to town.[/tab]\r\n\r\n\r\n[Outro]\r\n[ch]C[/ch] [ch]Am[/ch] [ch]Dm[/ch] [ch]G7[/ch]"
+}

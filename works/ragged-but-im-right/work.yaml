@@ -1,0 +1,13 @@
+id: ragged-but-im-right
+title: Ragged but I'm Right
+default_key: A
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-ragged-but-i-m-right.txt
+    source_url: https://docs.google.com/document/d/1-9jtNoZwxpK4F5WENcB3XFqs_nahB5TZ/edit?usp=sharing&ouid=113940300559160059959&rtpof=true&sd=true
+    imported_at: '2026-08-01'

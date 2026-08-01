@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Sledd Ridin'",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Sonny Osborne",
+   "Mike Auldridge",
+   "Jim Mills",
+   "The Osborne Brothers"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:19:45",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,12 @@
+id: fate-of-dewey-lee-the
+title: Fate Of Dewey Lee, The
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/fate-of-dewey-lee-the/
+    imported_at: '2026-08-01'

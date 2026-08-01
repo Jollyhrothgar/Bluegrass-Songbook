@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Last Letter, The",
+  "type": "Vocal",
+  "wanted_source": "bluegrass-lyrics"
+ },
+ "scraped_at": "2026-08-01T12:39:36",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 7.7,
+  "lyric_overlap": 0.386,
+  "bl_slug": "the-last-letter",
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "Db"
+ },
+ "candidate": {
+  "id": 2134155,
+  "song_id": 2556491,
+  "song_name": "Last Letter",
+  "artist_id": 62504,
+  "artist_name": "Witt Lowry",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 8,
+  "difficulty": "novice",
+  "rating": 4.85491,
+  "date": "1504103092",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Db",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2239421
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/1663683/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/6/9/69904/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1504103092,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]Db[/ch]  [ch]Gb[/ch]\r\n[tab][ch]Bbm[/ch]               [ch]Ab[/ch]\r\nI miss, I mi\u2014, I miss you[/tab]\r\nEh, fuck it!\r\n\r\n[Verse 1]\r\n[tab]                           [ch]Db[/ch]\r\nThis might be the hardest song I've ever had to write[/tab]\r\nYeah, I dreamt about you last night\r\n[tab]                       [ch]Gb[/ch]\r\nI only see you when I close my eyes tight[/tab]\r\nYeah, I wish I told you how I felt before you left\r\n[tab]              [ch]Bbm[/ch]\r\nBut it just never felt right[/tab]\r\n[tab]        [ch]Ab[/ch]\r\nYeah, *crying*[/tab]\r\n[tab]                    [ch]Db[/ch]\r\nI wish I told you everything before you left[/tab]\r\nI won't forget the day that they found the growth in your chest\r\n[tab]                              [ch]Gb[/ch]\r\nThe cancer took ahold of your body and then it spread[/tab]\r\nI talk to you more now than I ever did\u2014I'm a mess\r\n[tab]                                 [ch]Bbm[/ch]\r\nThis song will never capture the pain that I could express[/tab]\r\nI learned from you that nothing is perfect, but try your best\r\n[tab]                                            [ch]Ab[/ch]\r\nI know you had your demons that younger me didn't get[/tab]\r\nAnd out of all our demons, our biggest might be regret\r\n[tab]                                 [ch]Db[/ch]\r\nRelate more than ever, remember back when I would only see you every other week[/tab]\r\nAnd every other Wednesday, you would take us out to eat\r\n[tab][ch]Gb[/ch]\r\nMom and you had split, so we're living in between[/tab]\r\nLooking up the word \"divorced\" to understand what it could mean\r\n[tab]               [ch]Bbm[/ch]\r\nBut I don't understand, Mom is with another man[/tab]\r\nYou been drinking heavier, to me it was just another can\r\n[tab]                [ch]Ab[/ch]\r\nCulture full of broken homes, we were just another fam[/tab]\r\nCoulda left like other dads, you, you had another plan\r\n[tab]               [ch]Db[/ch]\r\nSo you stuck around, dealt a life that you probably would never choose[/tab]\r\nYou bottled it inside and that bottle turned into booze\r\n[tab]       [ch]Gb[/ch]\r\nThe J\u00e4ger took ahold and your body took the abuse[/tab]\r\nBut finally found soberity, cried when I got the news\r\n[tab] [ch]Bbm[/ch]\r\nI know, been hurting more than I show[/tab]\r\nInspired by your story, couple things you should know\r\n[tab]              [ch]Ab[/ch]\r\nI met this girl at my show, teared up by what I was told[/tab]\r\nShe said, \"I'm sober 'cause of you, you do way more than you know\"\r\nAnd I say\u2014\r\n\r\n[Hook]\r\n[tab]            [ch]Db[/ch]\r\nAnd I say, \"Ohh, please grant me the serenity[/tab]\r\n[tab]     [ch]Gb[/ch]\r\nTo accept everything I cannot change\"[/tab]\r\n[tab] [ch]Bbm[/ch]                                 [ch]Db[/ch]\r\nYou, you always told me I had to do anything[/tab]\r\n[tab]             [ch]Ab[/ch]\r\nTo have you back, see you one day[/tab]\r\n[tab][ch]Db[/ch]                                [ch]Gb[/ch]\r\nI, I wonder if you see me when I fall, yeah[/tab]\r\n[tab]                                 [ch]Bbm[/ch]\r\nI wonder if you hear me now at all[/tab]\r\nMaybe if the world played this through speakers\r\n[tab]        [ch]Ab[/ch]\r\nI'd be loud enough to reach you, and you'll hear[/tab]\r\nMy last letter for you\r\n\r\n[Verse 2]\r\n[tab]                             [ch]Db[/ch]\r\nAnd I don't understand how you would stay so optimistic[/tab]\r\nYou started chemo, fought the battle, never quit\r\n[tab]              [ch]Gb[/ch]\r\nThat really left an imprint[/tab]\r\nAnd we would talk about our lives and after this\r\n[tab]              [ch]Bbm[/ch]\r\nHow we would live 'em different[/tab]\r\nSee, Mom and you would put your differences aside\r\n[tab] [ch]Ab[/ch]\r\nEvery day she would visit, see the love and your vision[/tab]\r\nSee the hurt in your smile, your wisdom is what I'm missing the most\r\n[tab][ch]Db[/ch]\r\nI'll never be ready to let you go[/tab]\r\nI never felt so helpless it's outta both our control\r\n[tab]     [ch]Gb[/ch]\r\nYou told me how you wanted to travel, next year you'll go[/tab]\r\nAnd your body had become fragile, not once did you lose your soul\r\n[tab][ch]Bbm[/ch]\r\nWe were told, it was progressing and you had less than a week[/tab]\r\nTrue love is every tear when we told you we had to leave\r\n[tab]    [ch]Ab[/ch]\r\nAnd how we would converse it, not once did we need to speak[/tab]\r\nThat one day in late October you passed away in your sleep\r\n[tab]         [ch]Db[/ch]\r\nI been cryin' when I think about it[/tab]\r\nI miss your smile, I miss your laugh, and now I live without it\r\n[tab]                           [ch]Gb[/ch]\r\nI told you music was my passion, and you never doubt it[/tab]\r\nAnd people tell me they relate, but now I truly doubt it\r\n[tab]                        [ch]Bbm[/ch]\r\nRemember cryin' on your grave and yellin' up to you, \"How did I lose my way?\"[/tab]\r\nI won't forget that summer was some of my darkest days\r\n[tab]     [ch]Ab[/ch]\r\nWas asking for a sign, sat in my tears and prayed[/tab]\r\nWhen I saw that sign you sent me, that day was forever changed\r\n[tab][ch]Db[/ch]\r\nI know, I know, I should've been a better me[/tab]\r\nOh, blame me when we argue, I said things I didn't mean\r\n[tab]         [ch]Gb[/ch]\r\nMe and you are who our issues should have always been between[/tab]\r\nSo I'm sorry for the lack of communication from me\r\n[tab]        [ch]Bbm[/ch]\r\nI just wish that you were here, so you could watch me win a Grammy[/tab]\r\nBut more importantly to build a family\r\n[tab]                  [ch]Ab[/ch]\r\nI hope I make you proud and become everything I can be[/tab]\r\nI hope they play it loud and send this letter where I can't reach\r\nSincerely, Mark\r\n\r\n[Hook]\r\n[tab]            [ch]Db[/ch]\r\nAnd I say, \"Ohh, please grant me the serenity[/tab]\r\n[tab]     [ch]Gb[/ch]\r\nTo accept everything I cannot change\"[/tab]\r\n[tab] [ch]Bbm[/ch]                                 [ch]Db[/ch]\r\nYou, you always told me I had to do anything[/tab]\r\n[tab]             [ch]Ab[/ch]\r\nTo have you back, see you one day[/tab]\r\n[tab][ch]Db[/ch]                                [ch]Gb[/ch]\r\nI, I wonder if you see me when I fall, yeah[/tab]\r\n[tab]                                 [ch]Bbm[/ch]\r\nI wonder if you hear me now at all[/tab]\r\nMaybe if the world played this through speakers\r\n[tab]        [ch]Ab[/ch]\r\nI'd be loud enough to reach you, and you'll hear[/tab]\r\nMy last letter for you"
+}

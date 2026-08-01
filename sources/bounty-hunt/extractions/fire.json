@@ -1,0 +1,89 @@
+{
+ "wanted": {
+  "title": "Fire",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The String Cheese Incident",
+   "Back Porch Swing",
+   "The Avett Brothers",
+   "Chris Stapleton"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:25:27",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 835022,
+  "song_id": 132579,
+  "song_name": "Fire",
+  "artist_id": 9674,
+  "artist_name": "Bruce Springsteen",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 952,
+  "difficulty": "",
+  "rating": 4.7868,
+  "date": "1244678401",
+  "status": "approved",
+  "preset_id": 41684,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": {
+    "name": "Live at the Winterland",
+    "serie": null,
+    "venue": null,
+    "date_start": 0,
+    "date_end": 0,
+    "cancelled": 0,
+    "type": "concert",
+    "comment": "",
+    "video_urls": []
+   },
+   "recording_artists": [],
+   "video_urls": [
+    "https://www.youtube.com/watch?v=pxnNidqdOZI"
+   ],
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/3/8/38291/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/6/36237/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1551480353,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Fire - Bruce Springsteen\r\n\r\n\r\n[Verse 1]\r\n[tab]                  [ch]G[/ch]\r\nI'm drivin' in my car     I turn on the radio[/tab]\r\n[tab]                [ch]Am[/ch]                          [ch]G[/ch]\r\nI'm pullin' you close          You just say no[/tab]\r\n[tab]                  [ch]Am[/ch]                                [ch]Em[/ch]\r\nYou say you don't like it, but girl I know you're a liar[/tab]\r\n[tab]               [ch]C[/ch]     [ch]D[/ch]     [ch]G[/ch]\r\n'cause when we kiss, hmm   Fire[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab]              [ch]G[/ch]\r\nWell, late at night       I'm takin' you home[/tab]\r\n[tab]                   [ch]Am[/ch]                               [ch]G[/ch]\r\nWhen I say I wanna stay       You say you wanna be alone[/tab]\r\n[tab]                  [ch]Am[/ch]                                       [ch]Em[/ch]\r\nYou say you don't love me      Girl, you can't hide your desire[/tab]\r\n[tab]            [ch]C[/ch]     [ch]D[/ch]       [ch]G[/ch]      [ch]G[/ch]\r\nAnd when we kiss, oh-oh   Fire   Fire[/tab]\r\n\r\n\r\n[Bridge]\r\n[tab]          [ch]C[/ch]                [ch]G[/ch]\r\nYou got a hold on me right from the start[/tab]\r\n[tab]       [ch]D[/ch]                      [ch]G[/ch]\r\nIt's a grip so tight I cannot tear it apart[/tab]\r\n[tab]   [ch]C[/ch]                          [ch]G[/ch]\r\nMy nerves all jumpin', actin' like a fool[/tab]\r\n[tab]     [ch]A[/ch]                         [ch]D[/ch]\r\nYour kisses they burn but your heart stays cool[/tab]\r\n\r\n\r\n[Verse 3]\r\n[tab]              [ch]G[/ch]\r\nRomeo and Juliet          Samson and Delilah[/tab]\r\n[tab]              [ch]Am[/ch]                                  [ch]G[/ch]\r\nBaby, you can bet       their love they didn't deny[/tab]\r\n[tab]               [ch]Am[/ch]                             [ch]Em[/ch]\r\nYour words say split      but your words they lie[/tab]\r\n[tab]               [ch]C[/ch]     [ch]D[/ch]     [ch]G[/ch]      [ch]G[/ch]\r\n'cause when we kiss, hmm   Fire   Fire[/tab]"
+}

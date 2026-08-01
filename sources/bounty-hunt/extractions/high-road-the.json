@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "High Road, The",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:54:00",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1670423,
+  "song_id": 218884,
+  "song_name": "The High Road",
+  "artist_id": 27422,
+  "artist_name": "Broken Bells",
+  "type": "Chords",
+  "part": "",
+  "version": 3,
+  "common_version": 1,
+  "votes": 271,
+  "difficulty": "",
+  "rating": 4.87737,
+  "date": "1413189570",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 8067
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/0/101242/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/2/12728/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1449914007,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Intro:\r\nDm, C, G, G (repeat)\r\n\r\n[Verse 1]\r\n[tab][ch]Dm[/ch]       [ch]C[/ch]                 [ch]Dm[/ch]\r\nWe're bound to wait all night[/tab]\r\n[tab]        [ch]C[/ch]            [ch]Dm[/ch]\r\nShe's bound to run amok[/tab]\r\n[tab][ch]C[/ch]                         [ch]G[/ch]\r\nInvested enough in it anyhow,[/tab]\r\n[tab]                [ch]Dm[/ch]\r\nTo each his own[/tab]\r\n[tab][ch]Dm[/ch]      [ch]C[/ch]                [ch]Dm[/ch]\r\nThe garden needs sorting out[/tab]\r\n[tab][ch]C[/ch]                         [ch]Dm[/ch]\r\nShe curls her lips on a bow[/tab]\r\n[tab][ch]C[/ch]                     [ch]G[/ch]\r\nI don't know if I'm dead or not[/tab]\r\n[tab]          [ch]Dm[/ch]\r\nTo anyone...[/tab]\r\n\r\n[tab]      [ch]C[/ch]                     [ch]Dm[/ch]\r\nCome on and get the minimum[/tab]\r\n[tab]    [ch]C[/ch]                        [ch]Dm[/ch]\r\nBefore you open up your eyes,[/tab]\r\n[tab]        [ch]C[/ch]                   [ch]G[/ch]\r\nThis army has so many heads[/tab]\r\n[tab]          [ch]Dm[/ch]\r\nTo analyse[/tab]\r\n[tab]      [ch]C[/ch]                       [ch]Dm[/ch]\r\nCome on and get your overdose[/tab]\r\n[tab]      [ch]C[/ch]                       [ch]Dm[/ch]\r\nCollect it at the borderline[/tab]\r\n[tab]      [ch]C[/ch]                      [ch]G[/ch]\r\nThey want to get up in your head...[/tab]\r\n\r\n\r\n[Chorus 1]\r\n[tab]       [ch]Dm[/ch]           [ch]C[/ch]      [ch]G[/ch]\r\nCause they know and so do I[/tab]\r\n[tab]     [ch]Dm[/ch]            [ch]C[/ch]       [ch]G[/ch]\r\nThe high road is hard to find[/tab]\r\n[tab]      [ch]Dm[/ch]       [ch]C[/ch]          [ch]G[/ch]\r\nA detour to your new life[/tab]\r\n[tab]  [ch]Dm[/ch]               [ch]C[/ch]         [ch]G[/ch]\r\nTell all of your friends goodbye[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]Dm[/ch]    [ch]C[/ch]                    [ch]Dm[/ch]\r\nThe dawn to end all nights[/tab]\r\n[tab]       [ch]C[/ch]                   [ch]Dm[/ch]\r\nThat's all we hoped it was[/tab]\r\n[tab]     [ch]C[/ch]                     [ch]G[/ch]\r\nA break from the warfare in your house[/tab]\r\n[tab]                [ch]Dm[/ch]\r\nTo each his own[/tab]\r\n[tab]        [ch]C[/ch]                [ch]Dm[/ch]\r\nThe soldier is bailing out[/tab]\r\n[tab]       [ch]C[/ch]                      [ch]Dm[/ch]\r\nAnd curled his lips on a barrel[/tab]\r\n[tab]      [ch]C[/ch]                              [ch]G[/ch]\r\nAnd I don't know if the dead can talk[/tab]\r\n[tab]             [ch]Dm[/ch]\r\nTo anyone...[/tab]\r\n\r\n[tab]     [ch]C[/ch]                     [ch]Dm[/ch]\r\nCome on and get the minimum[/tab]\r\n[tab]     [ch]C[/ch]                     [ch]Dm[/ch]\r\nBefore you open up your eyes[/tab]\r\n[tab]     [ch]C[/ch]                    [ch]G[/ch]\r\nThis army has so many hands[/tab]\r\n[tab]                   [ch]Dm[/ch]\r\nAre you one of us[/tab]\r\n[tab]       [ch]C[/ch]                     [ch]Dm[/ch]\r\nCome on and get your overdose[/tab]\r\n[tab]      [ch]C[/ch]                     [ch]Dm[/ch]\r\nCollect it at the borderline[/tab]\r\n[tab]      [ch]C[/ch]                            [ch]G[/ch]\r\nAnd they want to get up in your head[/tab]\r\n\r\n\r\n[Chorus 2]\r\n[tab]       [ch]Dm[/ch]        [ch]C[/ch]        [ch]G[/ch]\r\nCause they know, so do I[/tab]\r\n[tab]     [ch]Dm[/ch]           [ch]C[/ch]          [ch]G[/ch]\r\nThe high road is hard to find[/tab]\r\n[tab]     [ch]Dm[/ch]       [ch]C[/ch]          [ch]G[/ch]\r\nA detour to your new life[/tab]\r\n[tab]      [ch]Dm[/ch]           [ch]C[/ch]             [ch]G[/ch]\r\nTell all of your friends goodbye[/tab]\r\n\r\nBridge\r\n\r\n[tab]e|-----------------------5----------------------------------------|\r\nB|-----------------------5----------------------------------------|\r\nG|-----------------------5----------------------------------------|\r\nD|-----------------------7----------------------------------------|\r\nA|---2-3--5-3-2----------7-----2-3-5-3-2-------2-3-5-7-5-3-2------|\r\nE|-5-------------5-3-5---5---5-----------5-3-5--------------------|[/tab]\r\n\r\n[Outro]\r\n[tab]     [ch]C[/ch]                           [ch]F[/ch]\r\nIt's too late to change your mind[/tab]\r\n[tab]         [ch]Dm[/ch]              [ch]G[/ch] (repeat)\r\nYou let loss be your guide[/tab]"
+}
