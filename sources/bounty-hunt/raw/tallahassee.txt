@@ -1,0 +1,96 @@
+# title: Tallahassee
+# artist: The Mountain Goats
+# source_url: https://tabs.ultimate-guitar.com/tab/the-mountain-goats/tallahassee-chords-389140
+# fetched_at: 2026-08-01T11:20:40
+
+This song is very easy to play, but Darnielle's awesome chord voicings make
+it beautifully satisfying. Most of the credit for this goes to TMG Wiki, but
+I fixed a few errors by watching John play it live here:
+https://www.youtube.com/watch?v=ICCWW40Vhog
+There's a repeating bass riff (I think? There's definitely a bass playing this on
+the 5th & 7th frets, but sound like it's in the guitar octave) tabbed below, and
+John usually does some sort of embelishment on the end of each verse, so I put
+the most common one below as well.
+
+[Chords]
+G/D:  x5540x or x55403 (John uses the first)
+G:    320033
+A5/G: xxx055
+G5:   xxx033
+A/E:  x776xx
+All others play according to UG pop-ups :)
+
+Bass Ostinato:           Dsus2 Lick
+e|------------------|    e|-0--3p2p0--|
+B|------------------|    B|-2---------|
+G|------------------|    G|-3---------|
+D|------------------|    D|-0---------|
+A|-7-5-5-7-5-5-7-5--|    A|-----------|
+E|------------------|    E|-----------|
+
+
+[Intro]
+| D | E | G/D |Dsus2 | (x4)
+
+[Verse 1]
+D       E     G/D          Dsus2
+ Window facing an ill-kept front yard
+D             E    G/D        Dsus2
+ Plums on the tree heavy with nectar
+D           E       G/D          Dsus2
+ Prayers to summon the destroying angel
+D            E                   G/D             Dsus2
+ Moon stuttering in the sky like film stuck in a projector
+  | G | G |
+And you
+  | D | D |
+You
+
+[Instrumental]
+|A5/G | G5  | D   | D   |
+| D   | E   | G/D |Dsus2|
+| D   | E   | G/D |Dsus2|
+
+[Verse 2]
+D            E       G/D            Dsus2
+ Twin prop airplanes passing loudly overhead
+D             E      G/D        Dsus2
+ Road to the airport, two lanes clear
+D            E      G/D           Dsus2
+ Half the whole town gone for the summer
+D        E      G/D          Dsus2
+ Terrible silence coming down here
+  | G | G |
+And you
+  | D | D |
+You
+
+[Instrumental]
+|A5/G | G5  | D   | D   |
+| D   | E   | G/D |Dsus2|
+| D   | E   | G/D |Dsus2|
+
+[Verse 3]
+D             E        G/D         Dsus2
+ There is no deadline, there is no schedule
+D            E       G/D      Dsus2
+ There is no plan we can fall back on
+D        E              G/D  Dsus2
+ The road this far can't be retraced
+D             E        G/D         Dsus2
+ There is no punchline anybody can tack on
+D      E         G/D         Dsus2
+ There are loose ends by the score
+D         E      G/D       A/E
+ What did I come down here for?
+|G/D |G/D |
+ You
+   | D | D |
+ You
+
+[Coda]
+|A5/G | G5  | D   | D   |
+| D   | E   | G/D |Dsus2|
+| D   | E   | G/D |Dsus2|
+| D   | E   | G/D |Dsus2|
+| D   | E   | G/D |Dsus2|

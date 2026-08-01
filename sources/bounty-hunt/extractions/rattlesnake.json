@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Rattlesnake",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Bob Herring",
+   "Banjo Express",
+   "Pert Near Sandstone",
+   "Rafe Stefanini"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:19:14",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "A"
+ },
+ "candidate": {
+  "id": 4201549,
+  "song_id": 12019843,
+  "song_name": "Rattlesnake",
+  "artist_id": 139517,
+  "artist_name": "Jack Van Cleaf",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 124,
+  "difficulty": "",
+  "rating": 4.92446,
+  "date": "1653220669",
+  "status": "approved",
+  "preset_id": 89250,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "A",
+  "version_description": "Transcribed from the chords Jack posted on his Instagram.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/8/2808773/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/172895/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1726531004,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Jack posted these chords on his Instagram, so I've added the voicings he uses below!\r\n\r\n[tab]  [ch]Dmaj7sus2[/ch]    [ch]Asus2[/ch]     [ch]F#m[/ch]\r\ne|----0----------x--------2---|\r\nB|----2----------0--------2---|\r\nG|----2----------2--------2---|\r\nD|----0----------2--------4---|\r\nA|----x----------0--------4---|\r\nE|----x----------x--------2---|[/tab]\r\n\r\n[tab]   [ch]Asus2/B[/ch]    [ch]Asus2/F#[/ch]   [ch]Dmaj7sus2/B[/ch]\r\ne|----x----------x------------0-----|\r\nB|----0----------0------------2-----|\r\nG|----2----------2------------2-----|\r\nD|----2----------2------------0-----|\r\nA|----2----------0------------2-----|\r\nE|----x----------2------------x-----|[/tab]\r\n\r\n\r\n[Intro]\r\n\r\n[ch]Dmaj7sus2[/ch]    [ch]Asus2[/ch]\r\n[ch]Dmaj7sus2[/ch]    [ch]Asus2[/ch]\r\n\r\n\r\n[Verse 1]\r\n\r\nHmm\r\n[tab][ch]Dmaj7sus2[/ch]\r\nLosing touch in Tennessee[/tab]\r\n\r\nFreedom's got the best of me\r\n[tab]   [ch]Asus2[/ch]\r\nGoddamn my opportunities[/tab]\r\n\r\nGoddamn this easy livin'\r\n\r\n[tab][ch]Dmaj7sus2[/ch]\r\nGasping for the mountain air[/tab]\r\n\r\nCrawling up the campus stairs\r\n[tab]   [ch]Asus2[/ch]\r\nMy throne is an electric chair[/tab]\r\n\r\nI'm stunned with indecision\r\n\r\n[ch]Dmaj7sus2[/ch]    [ch]Asus2[/ch]\r\n\r\n\r\n[Verse 2]\r\n\r\nHmm\r\n[tab][ch]Dmaj7sus2[/ch]\r\nPray for upgrades on my soul[/tab]\r\n\r\nTearing through an open road\r\n[tab]  [ch]Asus2[/ch]\r\nQuestioning my moral code[/tab]\r\n\r\nAnd screaming at a windshield\r\n\r\n[tab][ch]Dmaj7sus2[/ch]\r\nKnowing better all along[/tab]\r\n\r\nKnowing all I know is wrong\r\n[tab][ch]Asus2[/ch]\r\nThrowing up my alcohol[/tab]\r\n\r\nAm I making this a big deal?\r\n\r\n[tab][ch]Dmaj7sus2[/ch]    [ch]Asus2[/ch]\r\nOoh[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab]      [ch]F#m[/ch]             [ch]Asus2[/ch]\r\nOh my skull is just a big white house[/tab]\r\n[tab]        [ch]F#m[/ch]                [ch]Asus2[/ch]\r\nTo some punk-ass kids from out of town[/tab]\r\n[tab]     [ch]F#m[/ch]              [ch]Asus2[/ch]\r\nThey stay up late and talk real loud[/tab]\r\n[tab]        [ch]Asus2/B[/ch]           [ch]Asus2/F#[/ch]\r\nAnd sometimes I feel like kicking them out[/tab]\r\n\r\n\r\n[Interlude]\r\n\r\n[ch]Asus2/F#[/ch]   [ch]Asus2/B[/ch]\r\n\r\n[tab][ch]Dmaj7sus2[/ch]\r\nOoh[/tab]\r\n[tab][ch]Asus2[/ch]\r\nOoh[/tab]\r\n\r\n\r\n[Verse 3]\r\n\r\nHmm\r\n[tab][ch]Dmaj7sus2[/ch]\r\nSelf-absorbed most of the time[/tab]\r\n\r\nObsessed with sex and suicide\r\n[tab]    [ch]Asus2[/ch]\r\nTh\u0435 dreams of Texas girls gone by[/tab]\r\n\r\nI li\u0435 like California\r\n[tab][ch]Dmaj7sus2[/ch]\r\nStumbling over all the states[/tab]\r\n\r\nMumblin' like a basket case\r\n[tab]     [ch]Asus2[/ch]\r\n\"Oh, love is like a rattlesnake[/tab]\r\n\r\nBefore it bites it tries to warn ya\"\r\n\r\n[ch]Dmaj7sus2[/ch]    [ch]Asus2[/ch]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab]       [ch]F#m[/ch]             [ch]Asus2[/ch]\r\nBut my heart is just a little boy[/tab]\r\n[tab][ch]F#m[/ch]                [ch]Asus2[/ch]\r\nHolding hands like brand new toys[/tab]\r\n[tab][ch]F#m[/ch]               [ch]Asus2[/ch]\r\nDrunk on freedom, stuck on choice[/tab]\r\n[tab]     [ch]Asus2/B[/ch]        [ch]Asus2/F#[/ch]\r\nJust cooing for the rattle's noise[/tab]\r\n\r\n[ch]Asus2/F#[/ch]   [ch]Asus2/B[/ch]\r\n[ch]Dmaj7sus2[/ch]   [ch]Dmaj7sus2/B[/ch]   [ch]Asus2/F#[/ch]\r\n[ch]Asus2/F#[/ch]   [ch]Asus2/B[/ch]\r\n[ch]Dmaj7sus2[/ch]   [ch]Dmaj7sus2/B[/ch]   [ch]Asus2/F#[/ch]\r\n\r\n\r\n[Verse 4]\r\n\r\n[tab][ch]Asus2/F#[/ch]   [ch]Asus2/B[/ch]\r\nHmm[/tab]\r\n[tab][ch]Dmaj7sus2[/ch]\r\nOut of town and two clicks past[/tab]\r\n[tab]  [ch]Dmaj7sus2/B[/ch]\r\nI found the Western diamondback[/tab]\r\n[tab]   [ch]Asus2/F#[/ch]\r\nIt blocks my self-destructive path[/tab]\r\n[tab]                       [ch]Asus2/F#[/ch]   [ch]Asus2/B[/ch]\r\nI laugh, it shakes its tail[/tab]\r\n\r\n[tab]      [ch]Dmaj7sus2[/ch]\r\nSays, \"If you hurt all of your friends[/tab]\r\n[tab]    [ch]Dmaj7sus2/B[/ch]\r\nAnd disappear around the bend[/tab]\r\n[tab]    [ch]Asus2/F#[/ch]\r\nYou bet, you come right back again[/tab]\r\n[tab]                               [ch]Asus2/F#[/ch]   [ch]Asus2/B[/ch]\r\nAnd try to love though you may fail\"[/tab]\r\n\r\n\r\n[Outro]\r\n\r\n[tab][ch]Dmaj7sus2[/ch]   [ch]Dmaj7sus2/B[/ch]   [ch]Asus2/F#[/ch]\r\nOoh[/tab]\r\n[tab][ch]Dmaj7sus2[/ch]   [ch]Dmaj7sus2/B[/ch]   [ch]Asus2/F#[/ch]\r\nOoh[/tab]"
+}

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Lowlands",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "IIIrd Tyme Out",
+   "J. P. Cormier",
+   "Nitty Gritty Dirt Band",
+   "Hickory Hill"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:17:35",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 110.6,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1477484,
+  "song_id": 2499109,
+  "song_name": "The Lowlands",
+  "artist_id": 6400,
+  "artist_name": "Nitty Gritty Dirt Band",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 33,
+  "difficulty": "intermediate",
+  "rating": 4.84457,
+  "date": "1398159055",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "Added the actual chorus and formatted properly.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 117701
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/5/1531691/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/8/7/8763/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1663419910,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "THE LOWLANDS - Nitty Gritty Dirt Band (featuring Jaime Hanna and Jonathan McEuen)\r\n\r\n\r\n[Verse 1]\r\n[tab]      [ch]C#m[/ch]               [ch]A[/ch]                                [ch]E[/ch]\r\nI'm headed for the lowlands would you please direct my way[/tab]\r\n[tab]                     [ch]B[/ch]                              [ch]C#m[/ch]\r\nThe train is leaving shortly there's no time for de-lay[/tab]\r\n[tab]     [ch]C#m[/ch]              [ch]A[/ch]                            [ch]E[/ch]\r\nShe told me she'd be waiting I'm not so sure she is[/tab]\r\n[tab]                     [ch]B[/ch]                                  [ch]C#m[/ch] \r\nI heard that there's another man who claims that she is his[/tab]\r\n\r\n[Chorus]\r\n[tab]       [ch]C#m[/ch]           [ch]B[/ch]                        [ch]C#m[/ch]\r\nThe lowlands were my home when I was but a child[/tab]\r\n[tab]                   [ch]B[/ch]                          [ch]C#m[/ch]  \r\nthey will be my deathbed when I've passed my time[/tab]\r\n\r\n[Verse 2]\r\n[tab]     [ch]C#m[/ch]        [ch]A[/ch]                               [ch]E[/ch]\r\nI remember one summer day the clouds began to build[/tab]\r\n[tab]                [ch]B[/ch]                                    [ch]C#m[/ch]  \r\nWe gathered the cattle that had scattered cross the fields[/tab]\r\n[tab]                  [ch]A[/ch]                          [ch]E[/ch] \r\nWell it started to rain and continued several days[/tab]\r\n[tab]                 [ch]B[/ch]                               [ch]C#m[/ch] \r\nThe river over-flowed and the crops all went to waste[/tab]\r\n\r\n[Chorus]\r\n[tab]       [ch]C#m[/ch]           [ch]B[/ch]                        [ch]C#m[/ch]\r\nThe lowlands were my home when I was but a child[/tab]\r\n[tab]                   [ch]B[/ch]                          [ch]C#m[/ch]  \r\nthey will be my deathbed when I've passed my time[/tab]\r\n\r\n[Verse 3]\r\n[tab]     [ch]C#m[/ch]               [ch]A[/ch]                                [ch]E[/ch]  \r\nYou know that I'm no failure through my victories are few[/tab]\r\n[tab]              [ch]B[/ch]                                 [ch]C#m[/ch]                                        \r\nI'm trying my best but there's too much here to do[/tab]\r\n[tab]            [ch]A[/ch]                                   [ch]E[/ch]\r\nThat girl I love once told me I made her feel se-cure[/tab]\r\n[tab]                        [ch]B[/ch]                              [ch]C#m[/ch]\r\nIt's hard to think I've been replaced. Nothing does en-dure.[/tab]"
+}

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "High Sierra",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "The Dillards",
+   "Jimmy Gaudreau",
+   "Moondi Klein",
+   "The Petersens"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:17:21",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 109.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 3092804,
+  "song_id": 3875072,
+  "song_name": "High Sierra",
+  "artist_id": 498368,
+  "artist_name": "The Petersens",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 19,
+  "difficulty": "novice",
+  "rating": 4.88203,
+  "date": "1587030714",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "This is the version the Peterson's used when played on Youtube.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/3/2367174/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/158254/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1587030714,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]G[/ch] [ch]C[/ch] [ch]G[/ch] [ch]C[/ch] [ch]G[/ch]\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]         [ch]D[/ch]               [ch]C[/ch]    [ch]G[/ch]\r\nI've been higher than the high sierra[/tab]\r\n[tab][ch]C[/ch]                            [ch]F[/ch]  [ch]D[/ch]\r\nLower than death valley must be[/tab]\r\n[tab][ch]G[/ch]         [ch]D[/ch]      [ch]C[/ch]      [ch]G[/ch]\r\nI've been right, mostly wrong[/tab]\r\n[tab][ch]C[/ch]           [ch]G[/ch]    [ch]D7[/ch]          [ch]G[/ch]  [ch]D[/ch]\r\nWrong about you, right about me[/tab]\r\n\r\n[Verse 1]\r\n[tab][ch]G[/ch]         [ch]D[/ch]     [ch]C[/ch]     [ch]G[/ch]\r\nThe way I feel, can't explain[/tab]\r\n[tab][ch]C[/ch]                         [ch]F[/ch]    [ch]D[/ch]\r\nSo much passion turned to pain[/tab]\r\n[tab][ch]G[/ch]             [ch]D[/ch]      [ch]C[/ch]           [ch]G[/ch]\r\nThe sun still shines most of the time[/tab]\r\n[tab][ch]C[/ch]                [ch]G[/ch]          [ch]D[/ch]       [ch]G[/ch]     [ch]D[/ch]\r\nDid you know the sun shines when it rains[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]         [ch]D[/ch]               [ch]C[/ch]    [ch]G[/ch]\r\nI've been higher than the high sierra[/tab]\r\n[tab][ch]C[/ch]                            [ch]F[/ch]  [ch]D[/ch]\r\nLower than death valley must be[/tab]\r\n[tab][ch]G[/ch]         [ch]D[/ch]      [ch]C[/ch]      [ch]G[/ch]\r\nI've been right, mostly wrong[/tab]\r\n[tab][ch]C[/ch]           [ch]G[/ch]    [ch]D7[/ch]          [ch]G[/ch]  [ch]D[/ch]\r\nWrong about you, right about me[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]G[/ch]         [ch]D[/ch]      [ch]C[/ch]             [ch]G[/ch]\r\nI've been cussed and I've been praised[/tab]\r\n[tab][ch]C[/ch]                           [ch]F[/ch]    [ch]D[/ch]\r\nAnd I've been nothing these days[/tab]\r\n[tab][ch]G[/ch]             [ch]D[/ch]     [ch]C[/ch]         [ch]G[/ch]\r\nBut I'll come back, time will see[/tab]\r\n[tab][ch]C[/ch]                  [ch]G[/ch]    [ch]D[/ch]           [ch]G[/ch]  [ch]D[/ch]\r\nIf I'm wrong about you, right about me[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]         [ch]D[/ch]               [ch]C[/ch]    [ch]G[/ch]\r\nI've been higher than the high sierra[/tab]\r\n[tab][ch]C[/ch]                            [ch]F[/ch]  [ch]D[/ch]\r\nLower than death valley must be[/tab]\r\n[tab][ch]G[/ch]         [ch]D[/ch]      [ch]C[/ch]      [ch]G[/ch]\r\nI've been right, mostly wrong[/tab]\r\n[tab][ch]C[/ch]           [ch]G[/ch]    [ch]D7[/ch]          [ch]G[/ch]\r\nWrong about you, right about me[/tab]\r\n\r\n[Outro]\r\n[tab][ch]C[/ch]           [ch]G[/ch]    [ch]D[/ch]           [ch]C[/ch] [ch]Cm[/ch] [ch]G[/ch]\r\nWrong about you, right about me[/tab]"
+}

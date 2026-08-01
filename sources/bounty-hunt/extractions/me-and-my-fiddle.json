@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Me and My Fiddle",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Jim and Jesse",
+   "John Hartford",
+   "Lester Flatt & Earl Scruggs",
+   "Michael Cleveland"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:17:57",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

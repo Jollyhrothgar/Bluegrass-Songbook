@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Bluest Man in Town",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Del McCoury and The Dixie Pals",
+   "Del McCoury",
+   "The Del McCoury Band",
+   "Bill Monroe"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:22:49",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Silver Bell",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Kenny Baker",
+   "Bill Emerson",
+   "The Country Gentlemen",
+   "B\u00e9la Fleck"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:19:33",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "E"
+ },
+ "candidate": {
+  "id": 2845007,
+  "song_id": 152767,
+  "song_name": "Silver Bells",
+  "artist_id": 11125,
+  "artist_name": "Elvis Presley",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 102,
+  "difficulty": "novice",
+  "rating": 4.90864,
+  "date": "1570043536",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "E",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/1/115580/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/6/3/6329/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1664639736,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "SILVER BELLS\r\n(From the 1971 Album ElVIS SINGS THE WONDERFUL WORLD OF CHRISTMAS)\r\nSong in 3/4 measure.\r\nBetween brackets: Backing vocals by 'The Imperials'.\r\n\r\n[Intro]\r\n| [ch]A[/ch] | [ch]A[/ch] | \r\n\r\n[Chorus]\r\n[tab][ch]A[/ch]                            [ch]D[/ch]\r\nSilver bells,(silver bells), silver bells,(silver bells).[/tab]\r\n[tab][ch]E[/ch]                          [ch]A[/ch]      [ch]E[/ch]\r\nIt's Christmas time in the city. (uhuhuhu)[/tab]\r\n[tab][ch]A[/ch]                          [ch]D[/ch]\r\nRing-a-ling,(ring-a-ling), hear them ring,(hear them ring).[/tab]\r\n[tab][ch]E[/ch]            [ch]E7[/ch]           [ch]A[/ch]\r\nSoon it will be Christmas day[/tab]\r\n\r\n[Verse 1]\r\n[tab]     [ch]A[/ch]\r\nCity sidewalks, busy sidewalks.[/tab]\r\n[tab]           [ch]D[/ch]       [ch]Bm[/ch]\r\nDressed in holiday style.[/tab]\r\n[tab]       [ch]E[/ch]                         [ch]A[/ch]           \r\nIn the air, there's a feeling of Christmas.[/tab]\r\n[tab][ch]E[/ch]         [ch]A[/ch]                [ch]A7[/ch]\r\n Children laughing, people passing.[/tab]\r\n[tab]        [ch]D[/ch]           [ch]Bm[/ch]\r\nMeeting smile after smile.[/tab]\r\n[tab]       [ch]E[/ch]                           [ch]A[/ch]     [ch]E[/ch]\r\nAnd on every street corner, you'll hear[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]A[/ch]                            [ch]D[/ch]\r\nSilver bells,(silver bells), silver bells,(silver bells).[/tab]\r\n[tab][ch]E[/ch]                          [ch]A[/ch]     [ch]E[/ch]\r\nIt's Christmas time in the city. (uhuhuhu)[/tab]\r\n[tab][ch]A[/ch]                          [ch]D[/ch]\r\nRing-a-ling,(ring-a-ling), hear them ring,(hear them ring).[/tab]\r\n[tab][ch]E[/ch]                         [ch]A[/ch]     [ch]E[/ch]\r\nSoon it will be Christmas day[/tab]\r\n\r\n[Verse 2]\r\n[tab]           [ch]A[/ch]\r\nStrings of streetlights, even stoplights.[/tab]\r\n[tab]        [ch]D[/ch]             [ch]Bm[/ch]\r\nBlink a bright red 'n green.[/tab]\r\n[tab]       [ch]E[/ch]             [ch]E7[/ch]              [ch]A[/ch]         \r\nAs the shoppers rush home with their treasures.[/tab]\r\n[tab][ch]E[/ch]         [ch]A[/ch]                    [ch]A7[/ch]\r\n Hear the snow crunch, see the kids bunch.[/tab]\r\n[tab]        [ch]D[/ch]              [ch]Bm[/ch]\r\nThis is Santa's big scene.[/tab]\r\n[tab]    [ch]E[/ch]                           [ch]A[/ch]      [ch]E[/ch]\r\nAnd above all the bustle you'll hear ...[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]A[/ch]                            [ch]D[/ch]\r\nSilver bells,(silver bells), silver bells,(silver bells).[/tab]\r\n[tab][ch]E[/ch]                          [ch]A[/ch]     [ch]E[/ch]\r\nIt's Christmas time in the city. (uhuhuhu)[/tab]\r\n[tab][ch]A[/ch]                          [ch]D[/ch]\r\nRing-a-ling,(ring-a-ling), hear them ring,(hear them ring).[/tab]\r\n[tab][ch]E[/ch]                         [ch]A[/ch]\r\nSoon it will be Christmas day[/tab]\r\n\r\n[Outro]\r\n[tab][ch]E[/ch]                          [ch]A[/ch]\r\nSoon it will be, Christmas day[/tab]"
+}

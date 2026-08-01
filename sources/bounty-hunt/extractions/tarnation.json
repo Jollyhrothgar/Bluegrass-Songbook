@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Tarnation",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "David Grier",
+   "Chris Thile",
+   "Don Reno",
+   "Michael Cleveland"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:20:44",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 7
+ },
+ "candidate": null,
+ "content": null
+}

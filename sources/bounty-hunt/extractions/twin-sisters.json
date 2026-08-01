@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Twin Sisters",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Rhys Jones",
+   "Reed Martin",
+   "Murphy Campbell",
+   "J. P. Cormier"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:21:27",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 2
+ },
+ "candidate": null,
+ "content": null
+}

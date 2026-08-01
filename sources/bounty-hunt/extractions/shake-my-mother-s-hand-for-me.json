@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Shake My Mother's Hand for Me",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "The Stanley Brothers",
+   "Bill Monroe",
+   "J.E. Mainer\u2019s Mountaineers",
+   "The Bluegrass Band"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:19:30",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

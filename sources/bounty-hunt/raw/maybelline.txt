@@ -1,0 +1,90 @@
+# title: Maybelline
+# artist: Babyshambles
+# source_url: https://tabs.ultimate-guitar.com/tab/babyshambles/maybelline-chords-1174857
+# fetched_at: 2026-08-01T11:17:53
+
+Tuning: standard
+
+[Chords]
+    G   B   Em  C    D   Am  Abm  Bm  Em* A   G/F#
+e|--3---7---7---8----x---5---6----7---0---0---3---------------------------|
+B|--3---7---8---8----7---5---6----7---0---2---3---------------------------|
+G|--4---8---9---9----7---5---6----7---0---2---4---------------------------|
+D|--5---9---9---10---7---7---8----9---2---2---5---------------------------|
+A|--5---9---7---10---5---7---8----9---2---0---5---------------------------|
+E|--3---7---x---8----x---5---6----7---0---x---2---------------------------|
+
+[Intro/chorus]
+G       B       Em      C (x3)
+
+[Verse]
+G       D       Em      C       Bm      D (Bm and D are played for two measures)
+Aaaaahhhh I don’t want you now, bang bang I’m gone.
+G       D       Em      C       Bm      D
+But I still need you oh (…?)
+Am      Abm     Bm  (run down chromatically from Am to Bm)
+Oh baby, baby, baby
+Bm      Abm     Am (and back up)        D       D
+Won’t you crash into my arms
+
+[Chorus]
+G       B       Em      C
+Oh Maybelline, Maybelline worth one million prizes
+G       B       Em      C
+Why would I feel this way?
+G       B       Em      C
+Maybelline, Maybelline said she moved to devices out the way
+C Cm
+Aaaahhh
+
+[Verse]
+G       D       Em      C       Bm      D
+Ahhhh I don’t want you now, bang bang I’m gone.
+G       D       Em      C       Bm      D
+Come I still need you oh (…?)
+Am      Abm     Bm
+Oh baby, baby, baby
+Bm      Abm     Am      D
+Won’t you crash into my arms
+Am      Abm     Bm
+Oh baby, baby, baby
+Bm      Abm     Am      D       D
+Crash into my arms
+
+[Chorus]
+G       B       Em      C
+Oh Maybelline, Maybelline worth one million prizes
+G       B       Em      C
+Why would I feel this way?
+G       B       Em      C
+Maybelline, Maybelline said she moved to devices just down the way
+C       Cm      (alternate between these chords for a few measures)
+Aaaahhh
+
+[Instrumental part/bridge]
+G/F# G] G/F# G]  Em*   A
+
+[Verse]
+G       D       Em      C       Bm      D
+Ahhhh I don’t want you now, bang bang I’m gone.
+G       D       Em      C       Bm      D
+Come I still need you oh (…?)
+Am      Abm     Bm
+Oh baby, baby, baby
+Bm      Abm     Am      D
+Won’t you crash into my arms
+Am      Abm     Bm
+Oh baby, baby, baby
+Bm      Abm     Am      D
+Won’t you crash into my arms
+
+[Chorus]
+G       B       Em      C
+Oh Maybelline, Maybelline worth one million prizes
+G       B       Em      C
+Why would I feel this way?
+G       B       Em      C
+Maybelline, Maybelline said she moved to devices just down the way
+
+[Ending]
+G

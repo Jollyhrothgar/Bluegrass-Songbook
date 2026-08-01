@@ -1,0 +1,71 @@
+{
+ "wanted": {
+  "title": "The Legend of the Johnson Boys",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Lester Flatt & Earl Scruggs",
+   "Nashville Grass",
+   "Lester Flatt",
+   "Poutn\u00edci"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:20:58",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 2938571,
+  "song_id": 3757304,
+  "song_name": "The Legend Of The Johnson Boys",
+  "artist_id": 217437,
+  "artist_name": "Leroy Troy",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "novice",
+  "rating": 0,
+  "date": "1577185123",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "Based on the video at https://www.youtube.com/watch?v=1acxWlceu1g.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1768920880,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n[tab]               [ch]G[/ch]\r\nWell, you have heard many a story[/tab]\r\n[tab]                           [ch]D[/ch]\r\nTold by young and old with joy[/tab]\r\n[tab]       [ch]G[/ch]\r\nOf the many deeds of darin[/tab]\r\n[tab]         [ch]G[/ch]\r\nThat was done by the Johnson boys,[/tab]\r\n[tab]         [ch]G[/ch]           [ch]D[/ch]       [ch]G[/ch]\r\nThat was done by the Johnson boys[/tab]\r\n\r\n[tab]         [ch]G[/ch]\r\nThat was done by the Johnson boys,[/tab]\r\n[tab]         [ch]G[/ch]           [ch]D[/ch]       [ch]G[/ch]\r\nThat was done by the Johnson boys[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]G[/ch]\r\n[ch]G[/ch]     [ch]D[/ch]\r\n[ch]G[/ch]\r\n[ch]G[/ch]  [ch]D[/ch]  [ch]G[/ch]\r\n[ch]G[/ch]\r\n[ch]G[/ch]  [ch]D[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Verse 2]\r\n[tab]        [ch]G[/ch]\r\nJohnson boys were men of honor,[/tab]\r\n[tab]                           [ch]D[/ch]\r\nThey knew how to court the maids[/tab]\r\n[tab]          [ch]G[/ch]\r\nThey knew how to hug and kiss 'em[/tab]\r\n[tab]       [ch]G[/ch]\r\nHop up purty girls, don't be afraid[/tab]\r\n[tab]       [ch]G[/ch]            [ch]D[/ch]         [ch]G[/ch]\r\nHop up purty girls, don't be afraid[/tab]\r\n\r\n[tab]       [ch]G[/ch]\r\nHop up purty girls, don't be afraid[/tab]\r\n[tab]       [ch]G[/ch]            [ch]D[/ch]         [ch]G[/ch]\r\nHop up purty girls, don't be afraid[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]G[/ch]\r\n[ch]G[/ch]     [ch]D[/ch]\r\n[ch]G[/ch]\r\n[ch]G[/ch]  [ch]D[/ch]  [ch]G[/ch]\r\n[ch]G[/ch]\r\n[ch]G[/ch]  [ch]D[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Verse 3]\r\n[tab]          [ch]G[/ch]\r\nThey were loud and skilled in courage[/tab]\r\n[tab]                           [ch]D[/ch]\r\nAnd their sight was pretty poor[/tab]\r\n[tab]         [ch]G[/ch]\r\nAnd they joined their country's service[/tab]\r\n[tab]        [ch]G[/ch]\r\nIn that awful civil war[/tab]\r\n[tab]        [ch]G[/ch]     [ch]D[/ch]     [ch]G[/ch]\r\nIn that awful civil war[/tab]\r\n\r\n[tab]        [ch]G[/ch]\r\nIn that awful civil war[/tab]\r\n[tab]        [ch]G[/ch]     [ch]D[/ch]     [ch]G[/ch]\r\nIn that awful civil war[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]G[/ch]\r\n[ch]G[/ch]     [ch]D[/ch]\r\n[ch]G[/ch]\r\n[ch]G[/ch]  [ch]D[/ch]  [ch]G[/ch]\r\n[ch]G[/ch]\r\n[ch]G[/ch]  [ch]D[/ch]  [ch]G[/ch]\r\n\r\n\r\n[Verse 4]\r\n[tab]          [ch]G[/ch]\r\nThey were scouts in the rebel's army[/tab]\r\n[tab]                        [ch]D[/ch]\r\nThey were known far and wide[/tab]\r\n[tab]         [ch]G[/ch]\r\nWhen the yankees saw them comin[/tab]\r\n[tab]             [ch]G[/ch]\r\nThey'd throw down the guns and hide[/tab]\r\n[tab]             [ch]G[/ch]        [ch]D[/ch]        [ch]G[/ch]\r\nThey'd throw down the guns and hide[/tab]\r\n\r\n[tab]             [ch]G[/ch]\r\nThey'd throw down the guns and hide[/tab]\r\n[tab]             [ch]G[/ch]        [ch]D[/ch]        [ch]G[/ch]\r\nThey'd throw down the guns and hide[/tab]"
+}

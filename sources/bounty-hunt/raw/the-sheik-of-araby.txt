@@ -1,0 +1,60 @@
+# title: The Sheik of Araby
+# artist: The Beatles
+# source_url: https://tabs.ultimate-guitar.com/tab/the-beatles/the-sheik-of-araby-chords-1977809
+# fetched_at: 2026-08-01T11:21:08
+
+[Intro]
+e|-------------------------------------------------------------|
+B|-------------------------------------------------------------|
+G|-------------------------------------------------------------|
+D|-----------------0-----------0-2-2-2-3-2-0-------------------|
+A|-0-2-3-2-0-0-2-3---3-2-0---3---------------3--2--0-----------|
+E|-------------------------------------------------------------|
+
+[Verse 1]
+             C       Cdim  Dm
+Well I'm the sheik of Ara- by
+Dm        G          C
+Your love belongs to me
+C                  Cdim   Dm
+Well at night when you're asleep
+Dm        G         C
+Into your tent I'll creep
+N.C.
+Aha
+
+[Verse 2]
+    C          Cdim   Dm
+The stars that shine above
+Dm             G      E7
+Will light our way to love
+       A         A     D7      D7
+Ah you rule this world with me
+       G         A
+I'm the sheik of Araby
+
+[Verse 3]
+             C       Cdim  Dm
+Well I'm the sheik of Ara- by
+Dm        G          C
+Your love belongs to me
+C                    Cdim    Dm
+Wow oh at night where you're asleep
+Dm        G         C
+Into your tent I'll creep
+N.C.
+Aha
+
+[Verse 4]
+    C        Cdim   Dm
+The sun that shines above
+Dm             G      E7
+Will light our way to love
+    A          A          D7    D7
+You rule this world with me
+        D7       G   C     A
+I'm the sheik of Ara-by
+             D7       G   C   A
+Well I'm the sheik of Ara-by
+             D7       G      C   
+Well I'm the sheik of Araby, yeah 

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Franklin\u2019s Tower",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Leftover Salmon",
+   "The String Cheese Incident",
+   "Jesse McReynolds",
+   "David Nelson"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:17:03",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1136186,
+  "song_id": 38492,
+  "song_name": "Franklins Tower",
+  "artist_id": 1339,
+  "artist_name": "Grateful Dead",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 568,
+  "difficulty": "",
+  "rating": 4.82203,
+  "date": "1331078401",
+  "status": "approved",
+  "preset_id": 47576,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 3060517
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/6/3/6335/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/153160/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1656352546,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n[tab][ch]A[/ch]               [ch]G[/ch]   [ch]D[/ch]             [ch]G[/ch]\r\nIn another times forgotten space[/tab]\r\n[tab][ch]A[/ch]               [ch]G[/ch]          [ch]D[/ch]               [ch]G[/ch]\r\nYour eyes looked from your mother's face[/tab]\r\n[tab][ch]A[/ch]              [ch]G[/ch]       [ch]D[/ch]                [ch]G[/ch]\r\nWildflower seed on the sand and stone[/tab]\r\n[tab][ch]A[/ch]                  [ch]G[/ch]        [ch]D[/ch]            [ch]G[/ch]\r\nMay the four winds blow you safely home[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n\r\n\r\n[Solo]\r\n[ch]A[/ch]  [ch]G[/ch]  [ch]D[/ch]  [ch]G[/ch]  x4\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]A[/ch]             [ch]G[/ch]         [ch]D[/ch]          [ch]G[/ch]\r\nI'll tell you where the four winds dwell[/tab]\r\n[tab][ch]A[/ch]             [ch]G[/ch]           [ch]D[/ch]       [ch]G[/ch]\r\nIn Franklin's tower there hangs a bell[/tab]\r\n[tab][ch]A[/ch]      [ch]G[/ch]          [ch]D[/ch]        [ch]G[/ch]\r\nIt can ring, turn night to day[/tab]\r\n[tab][ch]A[/ch]           [ch]G[/ch]                  [ch]D[/ch]         [ch]G[/ch]\r\nIt can ring like fire when you lose your way[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n\r\n\r\n[Verse 3]\r\n[tab][ch]A[/ch]            [ch]G[/ch]          [ch]D[/ch]          [ch]G[/ch]\r\nGod save the child that rings that bell[/tab]\r\n[tab][ch]A[/ch]            [ch]G[/ch]               [ch]D[/ch]         [ch]G[/ch]\r\nMay have one good ring baby, you can't tell[/tab]\r\n[tab][ch]A[/ch]            [ch]G[/ch]          [ch]D[/ch]        [ch]G[/ch]\r\nOne watch by night, one watch by day[/tab]\r\n[tab][ch]A[/ch]          [ch]G[/ch]                       [ch]D[/ch]     [ch]G[/ch]\r\nIf you get confused, listen to the music play[/tab]\r\n\r\n\r\n[Solo]\r\n[ch]A[/ch]  [ch]G[/ch]  [ch]D[/ch]  [ch]G[/ch]  x4\r\n\r\n\r\n[Verse 4]\r\n[tab][ch]A[/ch]            [ch]G[/ch]           [ch]D[/ch]         [ch]G[/ch]\r\nSome come to laugh their past away[/tab]\r\n[tab][ch]A[/ch]            [ch]G[/ch]            [ch]D[/ch]            [ch]G[/ch]\r\nSome come to make it just one more day[/tab]\r\n[tab][ch]A[/ch]                  [ch]G[/ch]        [ch]D[/ch]      [ch]G[/ch]\r\nWhichever way your pleasure tends[/tab]\r\n[tab][ch]A[/ch]                 [ch]G[/ch]            [ch]D[/ch]            [ch]G[/ch]\r\nIf you plant ice, you're gonna harvest wind[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n\r\n\r\n[Verse 5]\r\n[tab][ch]A[/ch]             [ch]G[/ch]              [ch]D[/ch]           [ch]G[/ch]\r\nIn Franklin's tower the four winds sleep[/tab]\r\n[tab][ch]A[/ch]              [ch]G[/ch]                    [ch]D[/ch]      [ch]G[/ch]\r\nLike four lean hounds, the lighthouse keep[/tab]\r\n[tab][ch]A[/ch]              [ch]G[/ch]           [ch]D[/ch]         [ch]G[/ch]\r\nWildflower seed on the sand and wind[/tab]\r\n[tab][ch]A[/ch]                [ch]G[/ch]          [ch]D[/ch]         [ch]G[/ch]\r\nMay the four winds blow you home again[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nYou better roll Away the Dew[/tab]\r\n\r\n\r\n[Outro] (repeat and fade)\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nRoll Away the Dew[/tab]\r\n[tab][ch]A[/ch]        [ch]G[/ch]    [ch]D[/ch]       [ch]G[/ch]\r\nYou better roll Away the Dew[/tab]"
+}

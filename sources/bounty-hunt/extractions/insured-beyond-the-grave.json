@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Insured Beyond the Grave",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Doyle Lawson",
+   "The Louvin Brothers",
+   "J.D. Crowe",
+   "Paul Williams"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:17:32",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

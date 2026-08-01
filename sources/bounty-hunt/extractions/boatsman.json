@@ -1,0 +1,20 @@
+{
+ "wanted": {
+  "title": "Boatsman",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Appalachian Heaven Stringband",
+   "Hog-Eyed Man",
+   "Ed Haley",
+   "Dwight Diller"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "status": "error: AttributeError(\"'str' object has no attribute 'get'\")",
+ "scraped_at": "2026-08-01T11:22:52"
+}
