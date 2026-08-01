@@ -3,7 +3,11 @@
 import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork } from './state.js';
 import { highlightMatch, escapeHtml, requireLogin } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
-import { songHasTags, getTagCategory, formatTagName, syncTagControls } from './tags.js';
+import {
+    songHasTags, getTagCategory, formatTagName, syncTagControls,
+    getInstrumentTags, INSTRUMENT_FACETS, toggleFacetTag, activeQueryTags, onTagSync,
+} from './tags.js';
+import { songHasContent } from './song-content.js';
 import { setFieldTerm } from './search-query.js';
 import { pill } from './shell.js';
 import {
@@ -935,9 +939,10 @@ function pickRepresentative(versions) {
     const pinned = versions.find(v => v.canonical === true);
     if (pinned) return pinned;
     return [...versions].sort((a, b) => {
-        // Prefer versions with content (lead sheets)
-        const aHasContent = a.content ? 1 : 0;
-        const bHasContent = b.content ? 1 : 0;
+        // Prefer versions with content (lead sheets). has_content on the
+        // lean index; an inline `content` string on legacy rows.
+        const aHasContent = songHasContent(a) ? 1 : 0;
+        const bHasContent = songHasContent(b) ? 1 : 0;
         if (aHasContent !== bHasContent) return bHasContent - aHasContent;
         // Then by chord count
         const aChords = a.chord_count || 0;
@@ -980,19 +985,18 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
         return `<span class="tag-badge tag-${category}" data-tag="${tag}">${formatTagName(tag)}</span>`;
     }).join('');
 
-    // Tablature/notation instrument tags
-    const tabParts = song.tablature_parts || [];
-    const hasAbc = song.content && song.content.includes('{start_of_abc}');
-    const instrumentTags = new Set();
-    tabParts.forEach(p => {
-        if (p.instrument) instrumentTags.add(p.instrument.toLowerCase());
-    });
-    if (hasAbc) instrumentTags.add('fiddle');
-
-    const instrumentBadges = Array.from(instrumentTags).map(inst => {
-        const label = inst.charAt(0).toUpperCase() + inst.slice(1);
-        return `<span class="tag-badge tag-instrument" data-tag="${inst}" title="Has ${label} tab/notation">${label}</span>`;
-    }).join('');
+    // Tablature/notation instrument badges — same derivation as the
+    // Instrument facet (tags.js getInstrumentTags), so a badge you see is a
+    // tag you can search. Family tags only: the raw "5-string-banjo" spelling
+    // is searchable but would be noise on the card next to "Banjo".
+    const facetTags = new Set(INSTRUMENT_FACETS.map(f => f.tag));
+    const instrumentBadges = getInstrumentTags(song)
+        .filter(t => facetTags.has(t))
+        .map(inst => {
+            const label = (INSTRUMENT_FACETS.find(f => f.tag === inst)?.label || inst)
+                .replace(/\s*\(.*\)$/, '');   // "Notation (ABC)" → "Notation"
+            return `<span class="tag-badge tag-instrument" data-tag="${inst}" title="Has ${label} tab/notation">${escapeHtml(label)}</span>`;
+        }).join('');
 
     // Placeholder badge
     const placeholderBadge = song.status === 'placeholder'
@@ -1455,6 +1459,8 @@ export function trackSearch(query) {
 
 let chordsPillRoot = null;
 let chordsPillApi = null;
+let instrumentPillRoot = null;
+let instrumentPillApi = null;
 
 /** Put a query in the box, run it, and re-sync every facet control */
 function applyFacetQuery(query) {
@@ -1465,7 +1471,7 @@ function applyFacetQuery(query) {
     syncFacetPills();
 }
 
-/** Reflect the query's key / chord / prog terms in the pills */
+/** Reflect the query's chord / prog / instrument terms in the pills */
 function syncFacetPills() {
     if (!searchInputEl) return;
     const { chordFilters, progressionFilter } = parseSearchQuery(searchInputEl.value);
@@ -1473,6 +1479,59 @@ function syncFacetPills() {
     const chordsActive = chordFilters.length > 0 || (progressionFilter || []).length > 0;
     if (chordsPillApi) chordsPillApi.setLabel(chordsActive ? 'Chords ✓' : 'Chords…');
     chordsPillRoot?.classList.toggle('facet-active', chordsActive);
+
+    const selected = selectedInstrumentTags();
+    if (instrumentPillApi) {
+        instrumentPillApi.setLabel(selected.length
+            ? `Instrument (${selected.length})`
+            : 'Instrument');
+    }
+    instrumentPillRoot?.classList.toggle('facet-active', selected.length > 0);
+    refreshInstrumentFacet();
+}
+
+/** Instrument facet tags currently in the search box */
+function selectedInstrumentTags() {
+    const active = activeQueryTags();
+    return INSTRUMENT_FACETS
+        .map(f => f.tag)
+        .filter(tag => active.includes(tag));
+}
+
+/** Repaint the instrument options' checked state (no-op until first open) */
+function refreshInstrumentFacet() {
+    const selected = new Set(selectedInstrumentTags());
+    instrumentPillRoot?.querySelectorAll('.facet-toggle').forEach(btn => {
+        const on = selected.has(btn.dataset.tag);
+        btn.classList.toggle('checked', on);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+}
+
+/**
+ * Instrument facet: the same virtual tags as the Tags dropdown's
+ * Instruments group (tags.js INSTRUMENT_FACETS), one tap each. Toggling
+ * routes through tags.js so the dropdown checkbox, this pill and the
+ * search box can never disagree.
+ */
+function buildInstrumentFacet(popover) {
+    popover.innerHTML = INSTRUMENT_FACETS.map(f => `
+        <button type="button" class="pill-popover-item facet-toggle" data-tag="${f.tag}" aria-pressed="false">
+            <span class="facet-toggle-box" aria-hidden="true"></span>${escapeHtml(f.label)}
+        </button>
+    `).join('') + `
+        <div class="facet-hint">Works with tab or notation for that instrument.
+        Multipart = multi-track arrangement.</div>
+    `;
+
+    popover.querySelectorAll('.facet-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            toggleFacetTag(btn.dataset.tag);   // writes tag:… and re-runs search
+            refreshInstrumentFacet();
+        });
+    });
+
+    refreshInstrumentFacet();
 }
 
 function buildChordsFacet(popover, api) {
@@ -1538,6 +1597,15 @@ function initSearchFacets(container) {
 
     // Runs after the pill's own handler, so the content exists by now
     chordsPillRoot.querySelector('.pill-btn')?.addEventListener('click', prefillChordsFacet);
+
+    instrumentPillRoot = pill('Instrument', buildInstrumentFacet,
+        { title: 'Filter by instrument tab or notation' });
+    instrumentPillRoot.classList.add('search-facet-pill');
+    instrumentPillApi = instrumentPillRoot.pillApi;
+    container.appendChild(instrumentPillRoot);
+
+    // Typing in the box (or clicking a chip/checkbox) re-syncs both pills
+    onTagSync(syncFacetPills);
 
     syncFacetPills();
 }

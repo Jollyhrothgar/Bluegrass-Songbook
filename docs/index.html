@@ -104,6 +104,19 @@
                             <label><input type="checkbox" data-tag="Instrumental"> Instrumental</label>
                             <label><input type="checkbox" data-tag="Waltz"> Waltz</label>
                         </div>
+                        <!-- Instrument-type facets: virtual tags derived from a
+                             work's parts (tags.js getInstrumentTags). Keep in
+                             step with INSTRUMENT_FACETS there. -->
+                        <div class="tag-group">
+                            <div class="tag-group-label">Instruments</div>
+                            <label><input type="checkbox" data-tag="banjo"> Banjo</label>
+                            <label><input type="checkbox" data-tag="mandolin"> Mandolin</label>
+                            <label><input type="checkbox" data-tag="guitar"> Guitar</label>
+                            <label><input type="checkbox" data-tag="fiddle"> Fiddle</label>
+                            <label><input type="checkbox" data-tag="dobro"> Dobro</label>
+                            <label><input type="checkbox" data-tag="notation"> Notation (ABC)</label>
+                            <label><input type="checkbox" data-tag="multipart"> Multipart</label>
+                        </div>
                     </div>
                 </div>
                 <!-- One-tap facets: these write/remove tag: terms in the box.
@@ -133,6 +146,11 @@
                         <p><strong>Filter by tag</strong> (add a minus to exclude):</p>
                         <code>tag:Gospel,Waltz</code>
                         <code>tag:Bluegrass -tag:Instrumental</code>
+                        <p><strong>Instrument tags</strong> find playable parts &mdash; tab or notation
+                           for an instrument (<code>notation</code> = ABC, <code>multipart</code> = multi-track
+                           arrangement). Same options as the Instrument pill:</p>
+                        <code>tag:banjo</code>
+                        <code>tag:notation tag:multipart</code>
                     </div>
                 </div>
             </div>

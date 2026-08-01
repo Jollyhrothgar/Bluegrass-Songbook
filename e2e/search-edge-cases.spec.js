@@ -44,10 +44,10 @@ test.describe('Advanced Search Filters', () => {
         expect(count).toBeGreaterThan(0);
     });
 
-    test('key: filter returns songs in specific key', async ({ page }) => {
+    test('tag:banjo returns works with banjo tablature', async ({ page }) => {
         const input = page.locator('#search-input');
         await input.click();
-        await input.pressSequentially('key:G', { delay: 30 });
+        await input.pressSequentially('tag:banjo', { delay: 30 });
         await page.waitForTimeout(500);
 
         const results = page.locator('.result-item');
@@ -118,15 +118,15 @@ test.describe('Negative Filters', () => {
         expect(countWithoutInstrumental).toBeLessThanOrEqual(countWithTag);
     });
 
-    test('-key: excludes songs in key', async ({ page }) => {
+    test('tag:multipart returns multi-track arrangements', async ({ page }) => {
         const input = page.locator('#search-input');
         await input.click();
-        await input.pressSequentially('tag:Bluegrass -key:C', { delay: 30 });
+        await input.pressSequentially('tag:multipart', { delay: 30 });
         await page.waitForTimeout(500);
 
         const results = page.locator('.result-item');
         const count = await results.count();
-        expect(count >= 0).toBeTruthy(); // May be 0 if all bluegrass is in C
+        expect(count).toBeGreaterThan(0);
     });
 });
 
@@ -159,10 +159,10 @@ test.describe('Combined Filters', () => {
         expect(count).toBeGreaterThan(0);
     });
 
-    test('combining chord and key filter', async ({ page }) => {
+    test('combining chord and tag filter', async ({ page }) => {
         const input = page.locator('#search-input');
         await input.click();
-        await input.pressSequentially('chord:V7 key:G', { delay: 30 });
+        await input.pressSequentially('chord:V7 tag:Bluegrass', { delay: 30 });
         await page.waitForTimeout(500);
 
         const stats = page.locator('#search-stats');
@@ -287,7 +287,7 @@ test.describe('Search Results Display', () => {
     test('results show key badge', async ({ page }) => {
         const input = page.locator('#search-input');
         await input.click();
-        await input.pressSequentially('key:G', { delay: 30 });
+        await input.pressSequentially('tag:Bluegrass', { delay: 30 });
         await page.waitForTimeout(1000);
         await page.waitForSelector('.result-item', { timeout: 5000 });
 
@@ -296,7 +296,7 @@ test.describe('Search Results Display', () => {
 
         if (await keyBadge.isVisible({ timeout: 2000 }).catch(() => false)) {
             const keyText = await keyBadge.textContent();
-            expect(keyText).toContain('G');
+            expect(keyText).toMatch(/[A-G]/);
         } else {
             // Key badge may not be visible in compact view - just verify results loaded
             await expect(firstResult).toBeVisible();

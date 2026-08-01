@@ -8,6 +8,7 @@ import {
     editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
 import { generateSlug } from './utils.js';
+import { getSongContent, primeSongContent } from './song-content.js';
 import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
@@ -150,8 +151,20 @@ function promptForField(inputEl, message) {
  * @param {boolean} options.fromHistory - True if called from history navigation (don't push history)
  * @param {boolean} options.fromDeepLink - True if called from deep link (don't push history)
  */
-export function enterEditMode(song, options = {}) {
+export async function enterEditMode(song, options = {}) {
     const { fromHistory = false, fromDeepLink = false } = options;
+
+    // The ChordPro lives in data/songs/{id}.pro now (legacy rows still carry
+    // it inline; getSongContent hands that back untouched). Fetch BEFORE
+    // touching the editor so a slow network can't leave a half-open editor
+    // with an empty textarea that a save would then publish.
+    let content = '';
+    try {
+        content = await getSongContent(song);
+    } catch (e) {
+        window.alert('Could not load this song for editing. Please try again.');
+        return;
+    }
 
     setEditMode(true);
     setEditingSongId(song.id);
@@ -165,7 +178,7 @@ export function enterEditMode(song, options = {}) {
     if (editorTitleEl) editorTitleEl.value = song.title || '';
     if (editorArtistEl) editorArtistEl.value = song.artist || '';
     if (editorWriterEl) editorWriterEl.value = song.composer || '';
-    if (editorContentEl) editorContentEl.value = song.content || '';
+    if (editorContentEl) editorContentEl.value = content || '';
     if (editorCommentEl) editorCommentEl.value = '';
 
     // Show comment field (visible when the metadata line is expanded)
@@ -909,6 +922,14 @@ async function submitAsTrustedUser(data) {
         if (editorStatusEl) {
             editorStatusEl.textContent = 'Saved!';
             editorStatusEl.className = 'save-status success';
+        }
+
+        // The saved text IS the truth for this session — seed the content
+        // cache so the song page shows the edit instead of re-fetching the
+        // published (pre-edit) data/songs/{slug}.pro
+        primeSongContent(slug, pendingEntry.content || '');
+        if (pendingEntry.replaces_id) {
+            primeSongContent(pendingEntry.replaces_id, pendingEntry.content || '');
         }
 
         // Refresh the song index to include our new pending song, then navigate

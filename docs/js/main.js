@@ -52,7 +52,10 @@ import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
 import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
 import { initDocUpload, resetDocUpload, prefillDocUpload } from './doc-upload.js';
-import { buildStemSet } from './stem.js';
+import {
+    fetchJsonl, mergeCorpus, markArchived, countDistinctTitles, whenIdle,
+} from './corpus.js';
+import { getSongContents } from './song-content.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -265,16 +268,23 @@ function handleHistoryNavigation(state) {
             break;
         case 'edit':
             if (state.songId) {
-                // Re-enter edit mode for the song
-                const song = allSongs.find(s => s.id === state.songId);
-                if (song) {
-                    // Route through the view state machine so home/search
-                    // content is hidden before the editor panel is shown
-                    showView('add-song');
-                    enterEditMode(song, { fromHistory: true });
-                } else {
-                    showView('search');
-                }
+                // Re-enter edit mode for the song (archive rows arrive late,
+                // so a miss waits for archive.jsonl before giving up)
+                (async () => {
+                    let song = allSongs.find(s => s.id === state.songId);
+                    if (!song) {
+                        await ensureArchiveLoaded();
+                        song = allSongs.find(s => s.id === state.songId);
+                    }
+                    if (song) {
+                        // Route through the view state machine so home/search
+                        // content is hidden before the editor panel is shown
+                        showView('add-song');
+                        await enterEditMode(song, { fromHistory: true });
+                    } else {
+                        showView('search');
+                    }
+                })();
             }
             break;
         case 'add-song':
@@ -485,8 +495,7 @@ const COLLECTION_ICONS = {
  * This matches the count shown in search results via showPopularSongs()
  */
 function getDistinctSongCount() {
-    return new Set(allSongs.filter(s => s.indexed !== false)
-        .map(s => s.title?.toLowerCase())).size;
+    return countDistinctTitles(allSongs);
 }
 
 /**
@@ -688,18 +697,25 @@ function handleDeepLink() {
     } else if (hash.startsWith('#edit/')) {
         const songId = hash.slice(6);
         trackDeepLink('edit', hash);
-        const song = allSongs.find(s => s.id === songId);
-        if (song) {
-            // Route through the view state machine so the landing page is
-            // hidden before the editor panel is shown (enterEditMode only
-            // toggles editor-adjacent panels, not the home view)
-            showView('add-song');
-            enterEditMode(song, { fromDeepLink: true });
-            pushHistoryState('edit', { songId }, true);
-        } else {
-            // Song not found, go to search
-            showView('search');
-        }
+        (async () => {
+            let song = allSongs.find(s => s.id === songId);
+            if (!song) {
+                // Might be an archived work — wait for archive.jsonl once
+                await ensureArchiveLoaded();
+                song = allSongs.find(s => s.id === songId);
+            }
+            if (song) {
+                // Route through the view state machine so the landing page is
+                // hidden before the editor panel is shown (enterEditMode only
+                // toggles editor-adjacent panels, not the home view)
+                showView('add-song');
+                await enterEditMode(song, { fromDeepLink: true });
+                pushHistoryState('edit', { songId }, true);
+            } else {
+                // Song not found, go to search
+                showView('search');
+            }
+        })();
         return true;
     } else if (hash === '#upload') {
         trackDeepLink('upload', hash);
@@ -980,20 +996,94 @@ function transformPendingToIndexFormat(pending) {
     };
 }
 
+// The three row sources, kept apart so any one of them can be re-fetched
+// and re-merged without re-reading the others (see rebuildCorpus).
+let canonRows = [];
+let archiveRows = [];
+let pendingRows = [];
+
+// Archive load state. The promise resolves once the archive is merged (or has
+// definitively failed) and NEVER rejects, so awaiting it is always safe;
+// window.ensureArchiveLoaded() is the hook other modules use.
+let archivePromise = null;
+let archiveLoaded = false;
+let cancelArchiveIdle = null;
+
+/**
+ * Re-merge canon + archive + pending into allSongs/songGroups and refresh
+ * the counts that describe "the book". Subscribers of `allSongs` (lists,
+ * search results) re-render themselves off the notification.
+ */
+function rebuildCorpus() {
+    const { songs, groups } = mergeCorpus({
+        canon: canonRows,
+        archive: archiveRows,
+        pending: pendingRows,
+    });
+    setAllSongs(songs);
+    setSongGroups(groups);
+    return songs;
+}
+
+/** The searchable-title count shown next to the search box. */
+function updateSongbookCount(songs) {
+    if (!searchStats) return;
+    searchStats.textContent = `${countDistinctTitles(songs).toLocaleString()} songs`;
+}
+
+/**
+ * Load data/archive.jsonl and merge it in. Idempotent: repeat calls get the
+ * same promise, so a deep link that needs an archived work and the idle
+ * prefetch can't double-fetch.
+ */
+function loadArchive() {
+    if (archivePromise) return archivePromise;
+
+    cancelArchiveIdle?.();
+    cancelArchiveIdle = null;
+
+    archivePromise = fetchJsonl('data/archive.jsonl')
+        .then(rows => {
+            archiveRows = markArchived(rows);
+            rebuildCorpus();
+            archiveLoaded = true;
+            console.log(`Archive loaded: ${archiveRows.length} rows off the shelf`);
+        })
+        .catch(error => {
+            // No archive published (or offline): the canon still works, only
+            // deep links to pruned works fail — mark it done so nothing waits.
+            archiveLoaded = true;
+            console.warn('Archive not loaded:', error.message);
+        });
+
+    return archivePromise;
+}
+
+/**
+ * Await the archive exactly once from any path that failed to resolve an id
+ * in the canon (openWork, legacy #song/ redirects, #edit/ deep links).
+ * Resolves immediately when the archive is already in.
+ */
+function ensureArchiveLoaded() {
+    if (archiveLoaded) return Promise.resolve();
+    return loadArchive();
+}
+window.ensureArchiveLoaded = ensureArchiveLoaded;
+window.isArchiveLoaded = () => archiveLoaded;
+
 async function loadIndex() {
     if (resultsDiv) {
         resultsDiv.innerHTML = '<div class="loading">Loading songbook...</div>';
     }
 
     try {
-        // no-cache = revalidate (304 if unchanged); heuristic caching
-        // otherwise serves a stale index for weeks after a re-publish.
-        const [response, redirectsResponse] = await Promise.all([
-            fetch('data/index.jsonl', { cache: 'no-cache' }),
+        // Only the canon blocks first paint. Song content (data/songs/{id}.pro)
+        // is fetched per song page; the archive follows when the browser idles.
+        const [canon, redirectsResponse] = await Promise.all([
+            fetchJsonl('data/index.jsonl'),
             fetch('data/redirects.json').catch(() => null),
         ]);
-        const text = await response.text();
-        const staticSongs = text.trim().split('\n').map(line => JSON.parse(line));
+        canonRows = canon;
 
         // Load work redirects (merged/renamed works)
         if (redirectsResponse?.ok) {
@@ -1007,7 +1097,6 @@ async function loadIndex() {
         }
 
         // Fetch pending songs from Supabase (graceful failure if offline/error)
-        let pendingSongs = [];
         try {
             const supabase = window.SupabaseAuth?.supabase;
             if (supabase) {
@@ -1015,9 +1104,9 @@ async function loadIndex() {
                     .from('pending_songs')
                     .select('*');
                 if (data && !error) {
-                    pendingSongs = data.map(transformPendingToIndexFormat);
-                    if (pendingSongs.length > 0) {
-                        console.log(`Merged ${pendingSongs.length} pending song(s)`);
+                    pendingRows = data.map(transformPendingToIndexFormat);
+                    if (pendingRows.length > 0) {
+                        console.log(`Merged ${pendingRows.length} pending song(s)`);
                     }
                 }
             }
@@ -1026,58 +1115,12 @@ async function loadIndex() {
             // Static index still works - graceful degradation
         }
 
-        // Merge: pending corrections overlay on static songs, preserving fields like tablature_parts
-        const staticMap = {};
-        staticSongs.forEach(s => { staticMap[s.id] = s; });
-
-        const mergedPending = pendingSongs.map(p => {
-            const base = p.replaces_id ? staticMap[p.replaces_id] : null;
-            return base ? { ...base, ...p, source: 'pending' } : p;
-        });
-
-        const replacedIds = new Set(
-            pendingSongs.filter(s => s.replaces_id).map(s => s.replaces_id)
-        );
-        const filteredStatic = staticSongs.filter(s => !replacedIds.has(s.id));
-        const songs = [...filteredStatic, ...mergedPending];
-
-        setAllSongs(songs);
-
-        // Pre-compute stemmed word sets for fuzzy search
-        for (const song of songs) {
-            song._stems = buildStemSet([
-                song.title || '',
-                song.artist || '',
-                song.composer || '',
-                song.first_line || ''
-            ].join(' '));
-        }
-
-        // Build song groups for version detection
-        const groups = {};
-        songs.forEach(song => {
-            const groupId = song.group_id;
-            if (groupId) {
-                if (!groups[groupId]) {
-                    groups[groupId] = [];
-                }
-                groups[groupId].push(song);
-            }
-        });
-        setSongGroups(groups);
-
-        // Count distinct SEARCHABLE song titles (the curated canon) — the
-        // archive rows with indexed:false resolve by URL but aren't "the book"
-        const distinctTitles = new Set(
-            songs.filter(s => s.indexed !== false).map(s => s.title?.toLowerCase())
-        ).size;
+        const songs = rebuildCorpus();
 
         if (resultsDiv) {
             resultsDiv.innerHTML = '';
         }
-        if (searchStats) {
-            searchStats.textContent = `${distinctTitles.toLocaleString()} songs`;
-        }
+        updateSongbookCount(songs);
 
         // Render collection cards on landing page
         renderCollectionCards();
@@ -1093,6 +1136,10 @@ async function loadIndex() {
 
         // Fetch bounties in background (non-blocking, not needed for initial render)
         refreshBounties();
+
+        // Archive: everything the prune left off the shelf. Loaded after the
+        // first render so it costs nothing on the way to the home screen.
+        cancelArchiveIdle = whenIdle(() => loadArchive());
     } catch (error) {
         console.error('Failed to load index:', error);
         if (resultsDiv) {
@@ -1121,52 +1168,11 @@ async function refreshPendingSongs() {
             return;
         }
 
-        const pendingSongs = data.map(transformPendingToIndexFormat);
+        pendingRows = data.map(transformPendingToIndexFormat);
+        rebuildCorpus();
 
-        // Get current static songs (those not from pending source)
-        const currentSongs = allSongs.filter(s => s.source !== 'pending');
-
-        // Merge: pending corrections overlay on static songs, preserving fields like tablature_parts
-        const staticMap = {};
-        currentSongs.forEach(s => { staticMap[s.id] = s; });
-
-        const mergedPending = pendingSongs.map(p => {
-            const base = p.replaces_id ? staticMap[p.replaces_id] : null;
-            return base ? { ...base, ...p, source: 'pending' } : p;
-        });
-
-        const replacedIds = new Set(
-            pendingSongs.filter(s => s.replaces_id).map(s => s.replaces_id)
-        );
-        const filteredStatic = currentSongs.filter(s => !replacedIds.has(s.id));
-        const songs = [...filteredStatic, ...mergedPending];
-
-        setAllSongs(songs);
-
-        // Pre-compute stems for any new pending songs
-        for (const song of pendingSongs) {
-            if (!song._stems) {
-                song._stems = buildStemSet([
-                    song.title || '',
-                    song.artist || '',
-                    song.composer || '',
-                    song.first_line || ''
-                ].join(' '));
-            }
-        }
-
-        // Rebuild song groups for version detection
-        const groups = {};
-        songs.forEach(song => {
-            if (song.group_id) {
-                if (!groups[song.group_id]) groups[song.group_id] = [];
-                groups[song.group_id].push(song);
-            }
-        });
-        setSongGroups(groups);
-
-        if (pendingSongs.length > 0) {
-            console.log(`Refreshed: ${pendingSongs.length} pending song(s) merged`);
+        if (pendingRows.length > 0) {
+            console.log(`Refreshed: ${pendingRows.length} pending song(s) merged`);
         }
     } catch (e) {
         console.warn('Error refreshing pending songs:', e);
@@ -1697,7 +1703,7 @@ function openListsModal() {
 // PRINT LIST VIEW
 // ============================================
 
-function openPrintListView() {
+async function openPrintListView() {
     // Get the current list
     const listId = getViewingListId();
     if (!listId) return;
@@ -1732,7 +1738,11 @@ function openPrintListView() {
         fontSizeLevel
     };
 
-    const printHtml = generatePrintListPage(list.name, listSongs, prefs);
+    // Lead sheets live in data/songs/{id}.pro now — pull them all in before
+    // rendering (failures come back as '' so one bad song can't kill a set)
+    const contents = await getSongContents(listSongs);
+
+    const printHtml = generatePrintListPage(list.name, listSongs, prefs, contents);
 
     const printWindow = window.open('', '_blank');
     if (!printWindow) {
@@ -1743,13 +1753,13 @@ function openPrintListView() {
     printWindow.document.close();
 }
 
-function generatePrintListPage(listName, songs, prefs) {
+function generatePrintListPage(listName, songs, prefs, contents = []) {
     // Pre-render every song HERE in the main window via the shared ChordPro
     // renderer (renderers/chordpro.js). The print window receives static
     // HTML only — its controls just toggle CSS body classes, so zero
     // parsing/rendering/transposition logic ships inside the page.
     const songsHtml = songs.map((song, idx) => {
-        const { sections } = parseChordPro(song.content || '');
+        const { sections } = parseChordPro(contents[idx] || song.content || '');
         const body = renderSectionsPrintHtml(sections, { key: song.key || 'C' });
         return `<div class="song-container">
             <div class="song-header">

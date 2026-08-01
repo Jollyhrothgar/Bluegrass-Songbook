@@ -2373,6 +2373,40 @@ h1 {
     padding: 2rem;
 }
 
+/* Part content fetched on demand (data/songs/{id}.pro) */
+.part-loading {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 2rem;
+    font-style: italic;
+}
+
+.part-error {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 1.5rem;
+}
+
+.part-error-detail {
+    font-size: 0.8rem;
+    opacity: 0.75;
+    margin-top: 0.25rem;
+}
+
+.part-retry-btn {
+    font: inherit;
+    font-size: 0.85rem;
+    margin-top: 0.75rem;
+    padding: 0.35rem 1rem;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--accent);
+    cursor: pointer;
+}
+
+.part-retry-btn:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+
 /* Dead-link landing (unknown #song/#work slug) */
 .not-found {
     text-align: center;
@@ -9810,6 +9844,46 @@ body.has-list-context.has-bottomband .container {
     text-decoration: none;
 }
 .facet-explorer-link:hover { text-decoration: underline; }
+
+/* Instrument facet: one-tap toggles inside the Instrument pill */
+.facet-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    width: 100%;
+}
+.facet-toggle-box {
+    flex: 0 0 auto;
+    width: 0.85rem;
+    height: 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--bg);
+}
+.facet-toggle.checked { color: var(--accent); }
+.facet-toggle.checked .facet-toggle-box {
+    border-color: var(--accent);
+    background: var(--accent);
+    position: relative;
+}
+.facet-toggle.checked .facet-toggle-box::after {
+    content: '';
+    position: absolute;
+    left: 0.22rem;
+    top: 0.04rem;
+    width: 0.22rem;
+    height: 0.45rem;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.facet-hint {
+    padding: 0.35rem 0.6rem 0.5rem;
+    font-size: 0.7rem;
+    line-height: 1.35;
+    color: var(--text-secondary);
+    max-width: 15rem;
+}
 
 .landing-facets {
     display: flex;

@@ -27,8 +27,12 @@ import {
     goBack,
     updateListContextClass, updateNavBar,
     stopAbcPlayback,
-    renderLeadSheetContent
+    renderLeadSheetContent,
+    initKeyState
 } from './song-view.js';
+import {
+    getSongContent, peekSongContent, songHasContent, songHasAbc,
+} from './song-content.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
@@ -108,8 +112,10 @@ function pickRepresentative(versions) {
     const pinned = versions.find(v => v.canonical === true);
     if (pinned) return pinned;
     return [...versions].sort((a, b) => {
-        const aHasContent = a.content ? 1 : 0;
-        const bHasContent = b.content ? 1 : 0;
+        // Flag-based (has_content) so the order can't depend on which
+        // versions the reader happens to have opened this session
+        const aHasContent = songHasContent(a) ? 1 : 0;
+        const bHasContent = songHasContent(b) ? 1 : 0;
         if (aHasContent !== bHasContent) return bHasContent - aHasContent;
         const aChords = a.chord_count || 0;
         const bChords = b.chord_count || 0;
@@ -213,18 +219,25 @@ function applyArrangement(part, index) {
     return true;
 }
 
-function buildPartsFromIndex(song) {
+/**
+ * @param {object} song  index row
+ * @param {string|null} content  ChordPro if we already have it; null means
+ *   "fetch on render" (the part is still built — has_content says it exists)
+ */
+function buildPartsFromIndex(song, content = undefined) {
     const parts = [];
+    const leadSheet = content === undefined ? peekSongContent(song) : content;
+    const hasLeadSheet = songHasContent(song);
 
-    if (song.content) {
+    if (hasLeadSheet) {
         // Label the lead sheet by what it is, not a guessed instrument —
         // ABC transcriptions aren't necessarily fiddle (flutes, pipes...).
-        const label = song.abc_content ? 'Notation' : 'Lyrics & Chords';
+        const label = songHasAbc(song) ? 'Notation' : 'Lyrics & Chords';
         parts.push({
             type: 'lead-sheet',
             format: 'chordpro',
             label: label,
-            content: song.content,
+            content: leadSheet,   // null until the .pro file lands
             default: true
         });
     }
@@ -249,7 +262,7 @@ function buildPartsFromIndex(song) {
                 format: 'otf',
                 instrument: primary.instrument,
                 label: primary.label || tabLabel(primary.instrument),
-                default: !song.content,
+                default: !hasLeadSheet,
                 arrangements,
                 arrangementIndex: 0,
             };
@@ -265,7 +278,7 @@ function buildPartsFromIndex(song) {
                 format: doc.format || 'pdf',
                 label: doc.label || 'PDF',
                 file: doc.file,
-                default: !song.content && !song.tablature_parts?.length,
+                default: !hasLeadSheet && !song.tablature_parts?.length,
             });
         }
     }
@@ -308,6 +321,20 @@ function buildPartsFromIndex(song) {
 }
 
 /**
+ * "Looking for this song…" while a late source (archive.jsonl, pending rows)
+ * is fetched. Better than a blank page and better than flashing "not found".
+ */
+function showWorkLoading() {
+    setCurrentView('song');
+    const container = document.getElementById('song-content');
+    if (container) {
+        container.innerHTML = '<div class="loading">Loading song…</div>';
+    }
+    setTopBar({ back: { onClick: goBack }, title: '' });
+    setBottomBand(null);
+}
+
+/**
  * Open a work — THE entry point for viewing any song/work.
  *
  * Options:
@@ -323,11 +350,27 @@ export async function openWork(workId, options = {}) {
     workId = resolveWorkId(workId);
 
     let song = allSongs.find(s => s.id === workId);
-    if (!song) {
-        if (window.refreshPendingSongs) {
-            await window.refreshPendingSongs();
-            song = allSongs.find(s => s.id === workId);
+
+    // A miss is not (yet) a 404: the archive (data/archive.jsonl) loads after
+    // first paint, and a brand-new pending row may not be merged. Show a
+    // loading state, then try each late source exactly once before giving up.
+    if (!song && !window.isArchiveLoaded?.()) {
+        showWorkLoading();
+        await window.ensureArchiveLoaded?.();
+        song = allSongs.find(s => s.id === workId);
+        // A redirect may only be resolvable once the archive is in
+        if (!song) {
+            const resolved = resolveWorkId(workId);
+            if (resolved !== workId) {
+                song = allSongs.find(s => s.id === resolved);
+                if (song) workId = resolved;
+            }
         }
+    }
+    if (!song && window.refreshPendingSongs) {
+        showWorkLoading();
+        await window.refreshPendingSongs();
+        song = allSongs.find(s => s.id === workId);
     }
 
     const {
@@ -402,9 +445,19 @@ export async function openWork(workId, options = {}) {
     setBottomBand(null);
 
     currentWork = song;
-    availableParts = buildPartsFromIndex(song);
+    // Content comes from data/songs/{id}.pro on demand. Whatever we already
+    // have (legacy inline row, cached fetch) renders synchronously; otherwise
+    // the lead-sheet part fetches itself with a loading state.
+    const knownContent = peekSongContent(song);
+    availableParts = buildPartsFromIndex(song, knownContent);
     setCurrentSong(song);
-    setCurrentChordpro(song.content || null);
+    setCurrentChordpro(knownContent || null);
+
+    // Seed the Key pill from the index's precomputed key so it reads
+    // "Key of G" immediately instead of "Key" until the .pro file lands
+    if (!knownContent && songHasContent(song) && song.key) {
+        initKeyState(song, '', true);
+    }
 
     // Active part: requested via deep link / part-qualified ref, else default
     activePart = null;
@@ -544,9 +597,45 @@ function renderActivePart(content, isInitial = false) {
         setBottomBand(null);
     } else {
         // lead-sheet (chordpro, possibly with embedded ABC notation)
-        renderLeadSheetContent(content, currentWork,
-            currentChordpro || activePart.content || '', isInitial);
+        const chordpro = currentChordpro ?? activePart.content;
+        if (typeof chordpro === 'string') {
+            renderLeadSheetContent(content, currentWork, chordpro, isInitial);
+        } else {
+            fetchAndRenderLeadSheet(content, isInitial);
+        }
     }
+}
+
+/**
+ * Lead sheet whose ChordPro isn't in memory yet: show a light loading state,
+ * fetch data/songs/{id}.pro, then render. A failed fetch offers Retry rather
+ * than leaving an empty page (and the failure isn't cached, so Retry works).
+ */
+function fetchAndRenderLeadSheet(container, isInitial = false) {
+    const work = currentWork;
+    const part = activePart;
+
+    container.innerHTML = '<div class="part-loading">Loading song…</div>';
+    setBottomBand(null);
+
+    getSongContent(work).then(text => {
+        // Bail if the reader has navigated on while we were fetching
+        if (currentWork !== work || activePart !== part) return;
+        part.content = text || '';
+        setCurrentChordpro(text || null);
+        renderLeadSheetContent(container, work, text || '', isInitial);
+    }).catch(error => {
+        if (currentWork !== work || activePart !== part) return;
+        container.innerHTML = `
+            <div class="part-error">
+                <p>Couldn't load this song's lyrics &amp; chords.</p>
+                <p class="part-error-detail">${escapeHtml(error.message || 'Network error')}</p>
+                <button class="part-retry-btn" type="button">Try again</button>
+            </div>`;
+        container.querySelector('.part-retry-btn')?.addEventListener('click', () => {
+            fetchAndRenderLeadSheet(container, isInitial);
+        });
+    });
 }
 
 /**
@@ -614,7 +703,7 @@ function renderPillRow() {
     row.className = 'song-pill-row';
     row.id = 'song-pill-row';
 
-    if (currentWork.content) {
+    if (songHasContent(currentWork)) {
         row.appendChild(buildKeyPill(currentWork));
         row.appendChild(buildDisplayPill());
     }
@@ -872,9 +961,9 @@ async function renderArrangementList(container, versions, voteData = null) {
         const tabPart = v.tablature_parts?.[0];
         let label = v.variant_label || v.version_label;
         if (!label) {
-            if (v.tablature_parts?.length && !v.content && tabPart?.author) {
+            if (v.tablature_parts?.length && !songHasContent(v) && tabPart?.author) {
                 label = `Tab by ${tabPart.author}`;
-            } else if (v.abc_content && !v.content) {
+            } else if (songHasAbc(v) && !songHasContent(v)) {
                 label = 'Fiddle notation';
             } else if (v.key) {
                 label = `Key of ${v.key}`;
@@ -1030,14 +1119,14 @@ export function updateWorkTopBar() {
     // Phone band diet: Export moves into the ⋯ overflow (the band keeps
     // back · logo · Lists · ⋯); desktop keeps the Export pill.
     const phoneBand = window.matchMedia('(max-width: 640px)').matches;
-    if (currentWork.content && !phoneBand) {
+    if (songHasContent(currentWork) && !phoneBand) {
         actions.push({ el: buildExportPill() });
     }
 
     const overflow = [
         { id: 'flag-btn', label: '🚩 Report issue', onClick: () => openFlagModal(currentWork) },
     ];
-    if (currentWork.content && phoneBand) {
+    if (songHasContent(currentWork) && phoneBand) {
         overflow.push(
             { label: '🖨️ Print', onClick: () => handleExport('print') },
             { label: '📋 Copy ChordPro', onClick: () => handleExport('copy-chordpro') },
@@ -1419,12 +1508,16 @@ async function savePlaceholderMetadataTrusted({ title, artist, key, notes }) {
 
     const user = window.SupabaseAuth?.getUser?.();
 
+    // A metadata-only save must not blank out existing ChordPro, which now
+    // lives in data/songs/{id}.pro — fetch it before writing the row back
+    const existingContent = await getSongContent(currentWork).catch(() => null);
+
     const entry = {
         id: currentWork.id,
         replaces_id: currentWork.id,
         title,
         artist: artist || null,
-        content: currentWork.content || null,
+        content: existingContent || null,
         key: key || null,
         notes: notes || null,
         status: 'placeholder',

@@ -12,12 +12,14 @@ docs/
 │   ├── main.js         # Entry point, initialization, event wiring, routing
 │   ├── shell.js        # App shell: top band, bottom band, pill primitive
 │   ├── state.js        # Shared state (allSongs, currentSong, etc.)
+│   ├── corpus.js       # Corpus assembly: canon + lazy archive + pending merge
+│   ├── song-content.js # ChordPro on demand (data/songs/{id}.pro) + has_* flags
 │   ├── search-core.js  # Search logic, query parsing, filtering
 │   ├── work-view.js    # THE unified song page (openWork) — all routes land here
 │   ├── song-view.js    # Lead-sheet rendering helpers, ABC notation, list nav
 │   ├── song-controls.js # Pill builders: Key / Display / Info / Export
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
-│   ├── tags.js         # Tag dropdown, filtering, instrument tags
+│   ├── tags.js         # Tag dropdown, filtering, virtual instrument tags/facets
 │   ├── lists.js        # User lists, favorites, multi-owner, Thunderdome
 │   ├── list-picker.js  # List picker popup component
 │   ├── editor.js       # Song editor (Raw tab), re-exports smart-paste pipeline
@@ -43,7 +45,9 @@ docs/
 ├── css/style.css       # Dark/light themes, responsive layout
 ├── posts/              # Blog posts (markdown)
 └── data/
-    ├── index.jsonl     # Song index (built by scripts/lib/build_works_index.py)
+    ├── index.jsonl     # SEARCHABLE canon only, no ChordPro (~1.8k rows)
+    ├── archive.jsonl   # Pruned rows, same shape, lyrics truncated (lazy)
+    ├── songs/{id}.pro  # Full ChordPro per work — fetched when a page opens
     └── posts.json      # Blog manifest (built by scripts/lib/build_posts.py)
 ```
 
@@ -146,7 +150,10 @@ let userLists = [];             // Custom user lists (via supabase-auth.js)
 
 | Function | Purpose |
 |----------|---------|
-| `loadIndex()` | Fetch and parse `data/index.jsonl`, build songGroups |
+| `loadIndex()` | Fetch/parse `data/index.jsonl` (canon only), merge, then schedule the archive |
+| `ensureArchiveLoaded()` | `window.` hook: await `archive.jsonl` once before declaring an id unknown |
+| `getSongContent(song)` | ChordPro for a work: cached fetch of `data/songs/{id}.pro` (song-content.js) |
+| `songHasContent(song)` / `songHasAbc(song)` | Cheap, sync "does this work have a lead sheet / ABC" |
 | `refreshPendingSongs()` | Re-fetch pending songs from Supabase, merge into allSongs |
 | `search(query)` | Filter songs by query, chords, progression |
 | `renderResults(songs)` | Display search results list (with version badges) |
@@ -172,9 +179,25 @@ artist:hank williams      # Filter by artist (multi-word supported)
 title:blue moon           # Filter by title
 lyrics:lonesome highway   # Filter by lyrics content
 tag:bluegrass             # Filter by tag; whole value = tags (commas or spaces)
-tag:fiddle                # Instrument tag (fiddle, banjo, guitar, etc.)
+tag:fiddle                # Instrument tag (see "Instrument tags" below)
 composer:bill monroe      # Filter by composer/writer
 ```
+
+**Instrument tags** are *virtual* — derived per row by
+`tags.js getInstrumentTags(song)`, never stored:
+
+| Tag | Comes from |
+|-----|------------|
+| `tag:banjo` / `mandolin` / `guitar` / `fiddle` / `dobro` / `bass` | a tablature part whose instrument is in that family (`5-string-banjo` also answers to `banjo`, and to `tag:5-string-banjo`) |
+| `tag:tenor-banjo` | a tenor banjo part (also matches `tag:banjo`) |
+| `tag:fiddle` + `tag:notation` | `has_abc: true` (ABC notation) |
+| `tag:multipart` | any part with `tracks > 1`, or an `ensemble` part |
+
+That one function is THE source: `songHasTags` matching (case- and
+separator-insensitive), the result-card instrument badges, the Tags
+dropdown's Instruments group, and the Instrument facet pill all read it.
+Add a facet by adding it to `INSTRUMENT_FACETS` in `tags.js` (and the
+matching checkbox in `index.html`).
 
 There is deliberately NO `key:` filter — keys are transposable, so the
 detected key is display metadata (song page "Key of G" pill), not a search
@@ -188,9 +211,13 @@ tag:bluegrass -tag:instrumental    # Bluegrass but not instrumentals
 ```
 
 **Facet UI**: the search page and the landing page share one-tap facet
-chips (Instrumentals/Gospel/Old-Time/Waltzes/Jam-Friendly) plus a
-Chords popover; all of them write syntax into the search box (helpers in
-`search-query.js`) so the box stays the single source of truth.
+chips (Instrumentals/Gospel/Old-Time/Waltzes/Jam-Friendly) plus the
+**Chords** and **Instrument** popovers (`#search-facet-pills`, built by
+`search-core.js`); all of them write syntax into the search box (helpers in
+`search-query.js`) so the box stays the single source of truth. The
+Instrument pill routes through `tags.js toggleFacetTag`, so it and the Tags
+dropdown checkbox for the same tag can never disagree; any surface can keep
+itself in step by registering with `tags.js onTagSync(fn)`.
 
 **Chord search**: Find songs with specific Nashville numbers
 ```
@@ -383,6 +410,9 @@ mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
 - `editor.test.js` - Editor functionality, ChordPro conversion
 - `search-core.test.js` - Query parsing, chord/progression filtering
 - `song-view.test.js` - ChordPro parsing
+- `song-content.test.js` - Content on demand: cache, dedupe, legacy fallback
+- `corpus.test.js` - Canon + archive + pending merge, archive gating
+- `tags.test.js` - Tag matching + virtual instrument tag derivation
 - `state.test.js` - State management, pub/sub system
 - `utils.test.js` - Utility functions
 
@@ -439,16 +469,27 @@ renderSong(currentSong, currentChordpro);  // Re-render with new state
 
 ## Data Format
 
-Songs in `index.jsonl`:
+The index is **split three ways** (2026-07): a lean searchable canon, a lazy
+archive, and one ChordPro file per work. Nothing in `index.jsonl` carries song
+text beyond `lyrics` / `first_line` (which search snippets need).
+
+```
+data/index.jsonl      ~1.8k searchable canon rows        fetched at startup
+data/archive.jsonl    pruned rows, lyrics truncated      fetched when idle
+data/songs/{id}.pro   the work's full ChordPro           fetched per song page
+```
+
+A row in `index.jsonl` (or `archive.jsonl` — same shape, plus `indexed: false`):
 ```json
 {
-  "id": "yourcheatingheartlyricschords",
-  "title": "Your Cheatin Heart",
-  "artist": "Hank Williams",
-  "composer": "Hank Williams",
-  "first_line": "Your cheatin heart will make you weep",
-  "lyrics": "Your cheatin heart...",
-  "content": "{meta: title...}[full ChordPro]",
+  "id": "blue-moon-of-kentucky",
+  "title": "Blue Moon of Kentucky",
+  "artist": "Bill Monroe",
+  "composer": "Bill Monroe",
+  "first_line": "Blue moon of Kentucky keep on shining",
+  "lyrics": "Blue moon of Kentucky...",
+  "has_content": true,
+  "has_abc": true,
   "key": "G",
   "mode": "major",
   "nashville": ["I", "IV", "V", "V7"],
@@ -460,6 +501,36 @@ Songs in `index.jsonl`:
   "arrangement_by": "John Smith"
 }
 ```
+
+**Content flags** (there is no `content` field any more):
+- `has_content: true` — a lead sheet exists at `data/songs/{id}.pro`
+- `has_abc: true` — that lead sheet contains an ABC notation block
+
+**Reading content — always through `song-content.js`, never `song.content`:**
+```javascript
+import { getSongContent, songHasContent, songHasAbc, peekSongContent }
+    from './song-content.js';
+
+if (songHasContent(song)) {            // sync, flag-based
+    const chordpro = await getSongContent(song);   // cached + deduped fetch
+}
+```
+`getSongContent` **degrades to either index generation**: a row that still
+carries an inline `content` string (the old fat index, Supabase pending rows,
+synthetic editor rows) resolves to that string with no request. Rows with
+neither the flag nor a string resolve to `''` — no speculative 404s on
+tab-only works. `peekSongContent` returns what's already in hand (or `null`)
+for code that cannot await; a failed fetch is never cached, so the song
+page's Retry actually retries.
+
+**Corpus assembly** (`corpus.js` + `loadIndex`/`loadArchive` in main.js): the
+canon blocks first paint; `archive.jsonl` is fetched on
+`requestIdleCallback` (2s `setTimeout` fallback) and re-merged, which notifies
+`allSongs` subscribers so list views re-render with archived rows. Archive rows
+are forced to `indexed: false`, so search, collection counts and the songbook
+total ignore them while deep links, lists and redirects still resolve. Any path
+that fails to find an id awaits `window.ensureArchiveLoaded()` **once** before
+showing "not found" (openWork, `#song/` redirects, `#edit/` deep links).
 
 **Version fields** (for alternate arrangements):
 - `group_id`: Links songs that are versions of each other (stable `grp:` ids
@@ -482,9 +553,10 @@ Songs in `index.jsonl`:
     "file": "data/tabs/red-haired-boy-banjo.otf.json",
     "source": "banjo-hangout",
     "source_id": "1687",
-    "author": "schlange"
+    "author": "schlange",
+    "tracks": 3          // OTF track count — >1 means "multipart"
   }],
-  "abc_content": "X:1\nT:Red Haired Boy\n..."  // For fiddle tunes
+  "has_abc": true        // ABC notation lives in data/songs/{id}.pro
 }
 ```
 
@@ -507,7 +579,8 @@ otherwise: content > most chords > highest `canonical_rank`.
 ## Dependencies
 
 - **Supabase JS** - CDN loaded for auth and database
-- Fetches `data/index.jsonl` at startup
+- Fetches `data/index.jsonl` at startup (canon only), `data/archive.jsonl` when
+  the browser idles, and `data/songs/{id}.pro` per song page
 - Uses GitHub API for issue submission (no auth required)
 
 ## supabase-auth.js

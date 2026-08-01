@@ -13,12 +13,12 @@ test.describe('Key Detection and Display', () => {
         await expect(page.locator('#key-pill .pill-label')).toContainText(/Key of [A-G][#b]?m?/);
     });
 
-    test('song found via key:G search shows key G', async ({ page }) => {
+    test('song opened from search shows its detected key', async ({ page }) => {
         await gotoSearch(page);
-        await searchAndOpen(page, 'key:G');
+        await searchAndOpen(page, 'old home place');
 
         const popover = await openPill(page, 'key-pill');
-        await expect(popover.locator('.pill-current-key')).toHaveText(/^G/);
+        await expect(popover.locator('.pill-current-key')).toHaveText(/^A/);
     });
 });
 

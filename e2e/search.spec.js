@@ -55,11 +55,11 @@ test.describe('Search', () => {
         await expect(results.first()).toBeVisible();
     });
 
-    test('search with key filter', async ({ page }) => {
-        await page.fill('#search-input', 'key:G');
+    test('search with instrument filter', async ({ page }) => {
+        await page.fill('#search-input', 'tag:banjo');
         await page.waitForTimeout(300);
 
-        // Should return results in key of G
+        // Should return works carrying banjo tablature (virtual instrument tag)
         const results = page.locator('.result-item');
         await expect(results.first()).toBeVisible();
     });
@@ -78,7 +78,7 @@ test.describe('Search', () => {
 
     test('clicking result opens song view', async ({ page }) => {
         // Use a specific song title that's unlikely to have multiple versions
-        await page.fill('#search-input', 'your cheating heart hank williams');
+        await page.fill('#search-input', 'old home place');
         await page.waitForTimeout(300);
 
         // Click first result
@@ -144,7 +144,7 @@ test.describe('Search', () => {
     test('combined filters work correctly', async ({ page }) => {
         const input = page.locator('#search-input');
         await input.click();
-        await input.pressSequentially('tag:bluegrass key:G chord:V', { delay: 30 });
+        await input.pressSequentially('tag:bluegrass chord:V', { delay: 30 });
         await page.waitForTimeout(500);
 
         // Should return results matching all criteria

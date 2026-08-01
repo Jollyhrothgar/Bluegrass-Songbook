@@ -1,6 +1,7 @@
 // Tag system for Bluegrass Songbook
 
 import { setTagTerms, toggleTagTerm } from './search-query.js';
+import { songHasAbc } from './song-content.js';
 
 // Tag category mapping for display
 export const TAG_CATEGORIES = {
@@ -16,7 +17,35 @@ export const TAG_CATEGORIES = {
     // Instrument (for tab/notation availability)
     'banjo': 'instrument', 'mandolin': 'instrument', 'fiddle': 'instrument',
     'guitar': 'instrument', 'dobro': 'instrument', 'bass': 'instrument',
+    'tenor-banjo': 'instrument',
+    // Instrument-type facets that aren't instruments themselves
+    'notation': 'instrument', 'multipart': 'instrument',
 };
+
+/**
+ * Instrument-type facets: the virtual tags derived from a work's parts
+ * (see getInstrumentTags). ONE list drives the Tags dropdown's Instruments
+ * group, the Instrument facet pill, and the docs — so `tag:banjo` typed by
+ * hand and clicked in the UI can never disagree.
+ */
+export const INSTRUMENT_FACETS = [
+    { tag: 'banjo', label: 'Banjo' },
+    { tag: 'mandolin', label: 'Mandolin' },
+    { tag: 'guitar', label: 'Guitar' },
+    { tag: 'fiddle', label: 'Fiddle' },
+    { tag: 'dobro', label: 'Dobro' },
+    { tag: 'notation', label: 'Notation (ABC)' },
+    { tag: 'multipart', label: 'Multipart' },
+];
+
+/**
+ * Instruments a raw OTF/part instrument string counts as. Sources spell
+ * them "5-string-banjo", "upright-bass", "Mandolin" — the facet tags are
+ * the plain family names.
+ */
+const INSTRUMENT_FAMILIES = [
+    'tenor-banjo', 'banjo', 'mandolin', 'guitar', 'fiddle', 'dobro', 'bass',
+];
 
 // Tag categories for dropdown display — mirrors the checkbox groups in
 // index.html. The sub-flavors of country (HonkyTonk, Outlaw, Rockabilly,
@@ -25,7 +54,8 @@ export const TAG_CATEGORIES = {
 export const TAG_DISPLAY_CATEGORIES = {
     'Genre': ['Bluegrass', 'ClassicCountry', 'OldTime', 'Gospel', 'Folk'],
     'Vibe': ['JamFriendly', 'Modal', 'Jazzy'],
-    'Structure': ['Instrumental', 'Waltz']
+    'Structure': ['Instrumental', 'Waltz'],
+    'Instruments': INSTRUMENT_FACETS.map(f => f.tag),
 };
 
 /**
@@ -50,18 +80,33 @@ function normalizeTag(tag) {
 }
 
 /**
- * Get instrument tags for a song (from tablature_parts and abc_notation)
+ * THE source of instrument-type tags for a work. Everything instrument-
+ * flavored — `tag:banjo` search, the Instruments dropdown group, the
+ * Instrument facet pill, the result-card badges — comes from here.
+ *
+ * Derived (never stored):
+ * - each tablature part's instrument, both raw ("5-string-banjo") and
+ *   family ("banjo"), so hand-typed and clicked terms both land
+ * - ABC notation ⇒ 'fiddle' AND 'notation'
+ * - any part with more than one track (or an 'ensemble' part) ⇒ 'multipart'
  */
 export function getInstrumentTags(song) {
     const instruments = new Set();
-    if (song.tablature_parts) {
-        song.tablature_parts.forEach(p => {
-            if (p.instrument) instruments.add(p.instrument.toLowerCase());
-        });
+    for (const part of song?.tablature_parts || []) {
+        const raw = (part.instrument || '').toLowerCase();
+        if (raw) {
+            instruments.add(raw);
+            for (const family of INSTRUMENT_FAMILIES) {
+                if (raw.includes(family)) instruments.add(family);
+            }
+        }
+        if ((part.tracks || 0) > 1 || raw === 'ensemble') instruments.add('multipart');
     }
-    // Check for ABC notation in content (uses {start_of_abc} directive)
-    if (song.content && song.content.includes('{start_of_abc}')) {
-        instruments.add('fiddle'); // ABC assumed to be fiddle
+    // ABC notation: fiddle by convention, and notation as its own facet
+    // (has_abc on the lean index; a {start_of_abc} block on legacy rows)
+    if (songHasAbc(song)) {
+        instruments.add('fiddle');
+        instruments.add('notation');
     }
     return Array.from(instruments);
 }
@@ -77,8 +122,10 @@ export function songHasTags(song, requiredTags) {
     const songTags = song.tags || {};
     const songTagKeys = Object.keys(songTags).map(normalizeTag);
 
-    // Add instrument tags (from tabs and ABC notation)
-    const instrumentTags = getInstrumentTags(song);
+    // Add the virtual instrument tags (tabs, ABC notation, multipart),
+    // normalized like the real ones so `tag:tenor-banjo`, `tag:Notation`
+    // and `tag:multipart` all match case- and separator-insensitively.
+    const instrumentTags = getInstrumentTags(song).map(normalizeTag);
     const allTags = [...songTagKeys, ...instrumentTags];
 
     return requiredTags.every(searchTag => {
@@ -114,10 +161,27 @@ let facetChipEls = [];
 let searchFn = null;
 let parseSearchQueryFn = null;
 
+/** Extra sync callbacks (facet pills built outside this module) */
+const tagSyncHooks = [];
+
+/**
+ * Register a callback that runs whenever the tag surfaces re-sync with the
+ * search box (checkbox change, chip click, typing). Facet pills owned by
+ * other modules use this so every surface agrees with the query.
+ */
+export function onTagSync(fn) {
+    if (typeof fn === 'function') tagSyncHooks.push(fn);
+}
+
 /** Positive tags currently in the search box */
 function currentQueryTags() {
     if (!searchInputEl || !parseSearchQueryFn) return [];
     return parseSearchQueryFn(searchInputEl.value).tagFilters || [];
+}
+
+/** Positive tags currently in the box, lowercased (for active-state sync) */
+export function activeQueryTags() {
+    return currentQueryTags().map(t => t.toLowerCase());
 }
 
 /** Tags that a control (checkbox or chip) represents, lowercased */
@@ -161,7 +225,7 @@ export function updateSearchFromTagCheckboxes() {
  * Toggle a single tag from a facet chip. When the dropdown also has a checkbox
  * for that tag, go through the checkbox so the two surfaces stay in step.
  */
-function toggleFacetTag(tag) {
+export function toggleFacetTag(tag) {
     if (!searchInputEl) return;
 
     const checkbox = Array.from(
@@ -207,10 +271,13 @@ export function syncFacetChips() {
     });
 }
 
-/** Sync every tag surface (dropdown + chips) with the query */
+/** Sync every tag surface (dropdown + chips + registered pills) with the query */
 export function syncTagControls() {
     syncTagCheckboxes();
     syncFacetChips();
+    for (const hook of tagSyncHooks) {
+        try { hook(); } catch (e) { /* a broken surface must not block the rest */ }
+    }
 }
 
 /**
