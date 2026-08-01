@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Instrumental",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 12,
+  "core": true,
+  "artists": [
+   "The Del McCoury Band",
+   "David Grisman",
+   "Norman Blake",
+   "The Tony Rice Unit"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T10:55:43",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 840657,
+  "song_id": 202567,
+  "song_name": "Instrumental",
+  "artist_id": 20250,
+  "artist_name": "Box Car Racer",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1245888001",
+  "status": "approved",
+  "preset_id": 32916,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 12253
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/0/107418/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/2/120048/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1245888001,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Boxcar Racer\r\nInstrumental\r\nBoxcar Racer\r\n2002 MCA Records\r\nSubmitted by: paramore_fans@yahoo.com\r\n\r\nKey: [ch]A[/ch] then [ch]E[/ch]\r\n\r\nTuning: Standard EADGBe\r\n\r\nChords used:\r\n[ch]A[/ch] -    x02220\r\n[ch]E/G#[/ch] - 476xxx\r\n[ch]F#m[/ch] -  244222\r\n[ch]E[/ch] -    022100\r\n[ch]B/Eb[/ch] - x698xx\r\n[ch]G#m[/ch] -  466444\r\n\r\n\r\n[tab]Verse:\r\nA--E/G#--F#m--E-- x4[/tab]\r\n\r\n\r\n[tab]Xylophone:\r\n      [ch]A[/ch]          [ch]E/G#[/ch]         [ch]F#m[/ch]            [ch]E[/ch]\r\ne|--------0-|-4--5--4--0-|-5--4--0----|-5-4-0-------|\r\nB|--2--3----|------------|----------3-|-------3-2---|\r\nG|----------|------------|------------|-----------2-|\r\nD|----------|------------|------------|-------------| x2\r\nA|----------|------------|------------|-------------|\r\nE|----------|------------|------------|-------------|[/tab]\r\n\r\n\r\n[tab]Chorus:\r\nE-B/Eb-E--E-G#m-E-A x2[/tab]\r\n\r\n\r\n(Repeat Verse and Chorus)\r\n\r\n\r\n[tab]Bridge:\r\nA--E/G#--F#m--E-- x2[/tab]\r\n\r\n\r\n(Repeat Chorus twice)"
+}

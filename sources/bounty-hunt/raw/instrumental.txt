@@ -1,0 +1,50 @@
+# title: Instrumental
+# artist: Box Car Racer
+# source_url: https://tabs.ultimate-guitar.com/tab/box-car-racer/instrumental-chords-840657
+# fetched_at: 2026-08-01T10:55:43
+
+Boxcar Racer
+Instrumental
+Boxcar Racer
+2002 MCA Records
+Submitted by: paramore_fans@yahoo.com
+
+Key: A then E
+
+Tuning: Standard EADGBe
+
+Chords used:
+A -    x02220
+E/G# - 476xxx
+F#m -  244222
+E -    022100
+B/Eb - x698xx
+G#m -  466444
+
+
+Verse:
+A--E/G#--F#m--E-- x4
+
+
+Xylophone:
+      A          E/G#         F#m            E
+e|--------0-|-4--5--4--0-|-5--4--0----|-5-4-0-------|
+B|--2--3----|------------|----------3-|-------3-2---|
+G|----------|------------|------------|-----------2-|
+D|----------|------------|------------|-------------| x2
+A|----------|------------|------------|-------------|
+E|----------|------------|------------|-------------|
+
+
+Chorus:
+E-B/Eb-E--E-G#m-E-A x2
+
+
+(Repeat Verse and Chorus)
+
+
+Bridge:
+A--E/G#--F#m--E-- x2
+
+
+(Repeat Chorus twice)

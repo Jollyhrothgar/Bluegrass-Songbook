@@ -1,0 +1,109 @@
+{
+  "imported_at": "2026-07-31",
+  "parsed_files": 12,
+  "created": 11,
+  "skipped_existing_with_chords": 1,
+  "merge_candidates": 0,
+  "errors": 0,
+  "created_works": [
+    {
+      "id": "bringin-in-the-georgia-mail",
+      "file": "bringin-in-the-georgia-mail.pro",
+      "title": "Bringin’ in the Georgia Mail",
+      "artist": "Flatt Scruggs",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/flatt-scruggs/bringing-in-the-georgia-mail-chords-2837582"
+    },
+    {
+      "id": "cottoneyed-joe",
+      "file": "cottoneyed-joe.pro",
+      "title": "Cotton‐Eyed Joe",
+      "artist": null,
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/cotton-eyed-joe-chords-3035025"
+    },
+    {
+      "id": "darling-corey",
+      "file": "darling-corey.pro",
+      "title": "Darling Corey",
+      "artist": "The Seldom Scene",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-seldom-scene/darling-corey-chords-3166403"
+    },
+    {
+      "id": "jimmy-brown-the-newsboy",
+      "file": "jimmy-brown-the-newsboy.pro",
+      "title": "Jimmy Brown the Newsboy",
+      "artist": "Mac Wiseman",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/mac-wiseman/jimmy-brown-the-newsboy-chords-2118275"
+    },
+    {
+      "id": "muleskinner-blues",
+      "file": "muleskinner-blues.pro",
+      "title": "Muleskinner Blues",
+      "artist": "The Cramps",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-cramps/muleskinner-blues-chords-1873264"
+    },
+    {
+      "id": "raleigh-and-spencer",
+      "file": "raleigh-and-spencer.pro",
+      "title": "Raleigh and Spencer",
+      "artist": "Brad Leftwich the Humdingers",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/brad-leftwich-the-humdingers/raleigh-and-spencer-chords-4124692"
+    },
+    {
+      "id": "rollin-in-my-sweet-babys-arms",
+      "file": "rollin-in-my-sweet-babys-arms.pro",
+      "title": "Rollin’ in My Sweet Baby’s Arms",
+      "artist": "Buck Owens",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/buck-owens/rollin-in-my-sweet-babys-arms-chords-2460100"
+    },
+    {
+      "id": "ruby",
+      "file": "ruby.pro",
+      "title": "Ruby",
+      "artist": "The Osborne Brothers",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-osborne-brothers/ruby-chords-4200901"
+    },
+    {
+      "id": "sourwood-mountain",
+      "file": "sourwood-mountain.pro",
+      "title": "Sourwood Mountain",
+      "artist": "Andy Griffith",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/andy-griffith/sourwood-mountain-chords-3996367"
+    },
+    {
+      "id": "swing-low-sweet-chariot",
+      "file": "swing-low-sweet-chariot.pro",
+      "title": "Swing Low, Sweet Chariot",
+      "artist": "Bill Monroe",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bill-monroe/swing-low-sweet-chariot-chords-4032571"
+    },
+    {
+      "id": "walking-in-jerusalem",
+      "file": "walking-in-jerusalem.pro",
+      "title": "Walking in Jerusalem",
+      "artist": "Bill Monroe",
+      "default_key": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bill-monroe/walking-in-jerusalem-chords-3203720"
+    }
+  ],
+  "skipped": [
+    {
+      "file": "black-eyed-susie.pro",
+      "title": "Black-Eyed Susie",
+      "existing_work": "black-eyed-susie",
+      "state": "chords",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/black-eyed-susie-chords-3904601"
+    }
+  ],
+  "merge_candidate_works": [],
+  "error_details": []
+}

@@ -1,0 +1,12 @@
+id: cottoneyed-joe
+title: Cotton‐Eyed Joe
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: cottoneyed-joe.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/cotton-eyed-joe-chords-3035025
+    imported_at: '2026-07-31'

@@ -1,0 +1,15 @@
+{
+  "_note": "Knowledge-based review of needs_review extractions (Claude, 2026-08-01). Approve = lyrics/artist confirm the wanted traditional song; reject = different song or junk wanted entry.",
+  "approved": [
+    "black-eyed-susie",
+    "muleskinner-blues",
+    "raleigh-and-spencer",
+    "rollin-in-my-sweet-babys-arms",
+    "sourwood-mountain"
+  ],
+  "rejected": {
+    "instrumental": "junk wanted-list entry ('Instrumental' is not a song title); UG grab is Box Car Racer",
+    "stoney-creek": "Xavier Rudd's modern song, not the bluegrass Stoney Creek (Virginia Boys / Jim & Jesse)",
+    "train-45": "Woody Guthrie chart is the 900 Miles / 'hundred coaches long' song in Am, not the bluegrass Train 45 (Stanley Brothers, G modal); parser also rejected on slug mismatch"
+  }
+}

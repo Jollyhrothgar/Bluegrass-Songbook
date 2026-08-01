@@ -30,6 +30,7 @@ import json
 import re
 import sys
 import unicodedata
+from datetime import date
 from pathlib import Path
 from typing import Optional
 
@@ -41,7 +42,7 @@ PARSED_DIR = REPO_ROOT / 'sources' / 'web-chords' / 'parsed'
 REPORT_PATH = REPO_ROOT / 'sources' / 'web-chords' / 'import_report.json'
 NEW_IDS_PATH = REPO_ROOT / 'sources' / 'web-chords' / 'new_work_ids.txt'
 
-IMPORTED_AT = '2026-07-31'
+IMPORTED_AT = date.today().isoformat()
 SOURCE = 'web-chords'
 
 _SCRIPTS_LIB = REPO_ROOT / 'scripts' / 'lib'

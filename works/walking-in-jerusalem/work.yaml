@@ -1,0 +1,13 @@
+id: walking-in-jerusalem
+title: Walking in Jerusalem
+artist: Bill Monroe
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: walking-in-jerusalem.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/bill-monroe/walking-in-jerusalem-chords-3203720
+    imported_at: '2026-07-31'

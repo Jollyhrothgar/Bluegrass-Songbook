@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Train 45",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 30,
+  "core": true,
+  "artists": [
+   "Derek Dillman",
+   "The Travelin\u2019 McCourys",
+   "The Stanley Brothers",
+   "J. P. Cormier"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T10:54:46",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 7.5,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 860848,
+  "song_id": 143445,
+  "song_name": "Train 45",
+  "artist_id": 10435,
+  "artist_name": "Woody Guthrie",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 7,
+  "difficulty": "intermediate",
+  "rating": 4.8404,
+  "date": "1250640001",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/4/1497875/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/7/474/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1250640001,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "      Train 45 - Woodie Guthrie\r\n_______________________________________________________\r\n\r\nIntro: [ch]Am[/ch], [ch]E[/ch], [ch]Am[/ch], [ch]Dm[/ch], [ch]Am[/ch], [ch]E[/ch], [ch]Am[/ch], [ch]E[/ch], [ch]Am[/ch]\r\n\r\n\r\n[tab][ch]Am[/ch]\r\nThe train I ride on is a hundred couches long,[/tab]\r\n\r\n[tab]                                        [ch]E[/ch]\r\nyou can hear the whistle blow a hundred miles.[/tab]\r\n\r\n[tab]        [ch]Am[/ch]                       [ch]Dm[/ch]\r\nIf that train runs right, Ill be home tomorrow night,[/tab]\r\n\r\n[tab][ch]Am[/ch]              [ch]E[/ch]                    [ch]Am[/ch]\r\ncause I'm nine hundred miles from my home[/tab]\r\n\r\n[tab]      [ch]E[/ch]                                  [ch]Am[/ch]\r\nand I hate to hear that lonesome whistle blow.[/tab]\r\n\r\n\r\n[ch]Am[/ch], [ch]E[/ch], [ch]Am[/ch], [ch]Dm[/ch], [ch]Am[/ch], [ch]E[/ch], [ch]Am[/ch], [ch]E[/ch], [ch]Am[/ch]\r\n\r\n\r\n[tab][ch]Am[/ch]\r\nWalkin down the track I got tears in my eyes,[/tab]\r\n\r\n[tab]                               [ch]E[/ch]\r\ntryin ta read a letter from my home.[/tab]\r\n\r\n[tab]        [ch]Am[/ch]                       [ch]Dm[/ch]\r\nIf that train runs right I'll be home tomorrow night,[/tab]\r\n\r\n[tab]          [ch]Am[/ch]           [ch]E[/ch]             [ch]Am[/ch]\r\ncause I'm nine hundred miles from my home[/tab]\r\n\r\n\r\n[tab]      [ch]E[/ch]                                  [ch]Am[/ch]\r\nand I hate to hear that lonesome whistle blow.[/tab]\r\n\r\n\r\n[ch]Am[/ch], [ch]E[/ch], [ch]Am[/ch], [ch]Dm[/ch], [ch]Am[/ch], [ch]E[/ch], [ch]Am[/ch], [ch]E[/ch], [ch]Am[/ch]\r\n\r\n\r\nWell there you go, that's the basic chord pattern  for train 45. You may have to listen\r\nit a few times to get the hang of it. I'll put up the solo soon."
+}

@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Whistling Rufus",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 14,
+  "core": true,
+  "artists": [
+   "Red Smiley",
+   "The Bluegrass Cut-Ups",
+   "Jim Eanes",
+   "Roger Sprung"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T10:55:31",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

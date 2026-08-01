@@ -1,0 +1,13 @@
+id: bringin-in-the-georgia-mail
+title: Bringin’ in the Georgia Mail
+artist: Flatt Scruggs
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: bringin-in-the-georgia-mail.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/flatt-scruggs/bringing-in-the-georgia-mail-chords-2837582
+    imported_at: '2026-07-31'

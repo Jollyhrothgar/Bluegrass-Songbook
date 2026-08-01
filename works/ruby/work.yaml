@@ -1,0 +1,13 @@
+id: ruby
+title: Ruby
+artist: The Osborne Brothers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: ruby.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-osborne-brothers/ruby-chords-4200901
+    imported_at: '2026-07-31'

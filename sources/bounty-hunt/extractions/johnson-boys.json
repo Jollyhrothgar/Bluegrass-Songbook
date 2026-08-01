@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Johnson Boys",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 11,
+  "core": true,
+  "artists": [
+   "Wolfe Bros.",
+   "Reed Martin",
+   "Grandpa Jones",
+   "Down Trodden String Band"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T10:55:57",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 7
+ },
+ "candidate": null,
+ "content": null
+}
