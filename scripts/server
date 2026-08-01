@@ -134,6 +134,15 @@ case "$COMMAND" in
         echo "Starting frontend server..."
         echo "Serving: $REPO_ROOT/docs"
         echo "Visit: http://localhost:$PORT"
+        # The server binds all interfaces, so if Tailscale is up the same
+        # port is reachable from any device on the tailnet (phone testing).
+        if command -v tailscale >/dev/null 2>&1; then
+            TS_NAME=$(tailscale status --json 2>/dev/null \
+                | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['Self']['DNSName'].rstrip('.')) if d['Self'].get('Online') else None" 2>/dev/null)
+            if [ -n "$TS_NAME" ] && [ "$TS_NAME" != "None" ]; then
+                echo "Tailnet: http://$TS_NAME:$PORT  (phone: open this on any tailnet device)"
+            fi
+        fi
         python3 -c "
 import http.server, functools
 
