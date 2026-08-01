@@ -1,0 +1,21 @@
+id: big-foot
+title: Big Foot
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '11577'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11577
+    author: schlange
+    imported_at: '2026-08-01'

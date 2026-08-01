@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Talk",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Marty Stuart",
+   "Vince Gill",
+   "Sturgill Simpson",
+   "Molly Tuttle"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:13:22",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1070625,
+  "song_id": 50117,
+  "song_name": "Talk",
+  "artist_id": 1782,
+  "artist_name": "Coldplay",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 447,
+  "difficulty": "novice",
+  "rating": 4.90755,
+  "date": "1309478401",
+  "status": "approved",
+  "preset_id": 1081,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 529
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/161700/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/5/5/5596/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1670193324,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Notice: If you listen carefully to the song, you'll notice that the progression\r\nC Em G is played like that: C for 1 stroke, Em and G for 1/2 stroke. Keep that in \r\nmind while playing.\r\n\r\nCapo on 3rd fret\r\n\r\n* = strike once and hold for 4 bars\r\n\r\n[Intro]\r\n| [ch]C[/ch]  | [ch]Em[/ch] | [ch]G[/ch]  | x4\r\n| [ch]C[/ch]  | [ch]D[/ch]  |\r\n\r\n[Verse 1]\r\n[tab][ch]C[/ch]              [ch]Em[/ch]       [ch]G[/ch]         [ch]C[/ch]        [ch]Em[/ch] [ch]G[/ch] \r\n Oh, brother I can't, I can't get through.[/tab]\r\n[tab]          [ch]C[/ch]              [ch]Em[/ch]\r\nI've been trying hard to reach you[/tab]\r\n[tab]  [ch]G[/ch]       [ch]C[/ch]                  [ch]D[/ch]\r\n'Cause I don't know what to do.[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]C[/ch]              [ch]Em[/ch]       [ch]G[/ch]         [ch]C[/ch]     [ch]Em[/ch] [ch]G[/ch] \r\n Oh, brother I can't believe it's true.[/tab]\r\n[tab]       [ch]C[/ch]                [ch]Em[/ch]\r\nI'm so scared about the future[/tab]\r\n[tab][ch]G[/ch]     [ch]C[/ch]               [ch]D[/ch]\r\nAnd I want to talk to you.[/tab]\r\n[tab]      [ch]C[/ch]                [ch]D[/ch]    [ch]Em[/ch]*\r\nOh, I want to talk to you.[/tab]\r\n\r\n[Chorus]\r\n[tab]          [ch]C[/ch]                 [ch]Em[/ch]            [ch]G[/ch]    [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\nYou could take a picture of something you see.[/tab]\r\n[tab][ch]C[/ch]             [ch]Em[/ch]           [ch]G[/ch]    [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\nIn the future where will I be?[/tab]\r\n[tab]          [ch]C[/ch]              [ch]Em[/ch]        [ch]G[/ch]   [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\nYou could climb a ladder up to the sun[/tab]\r\n[tab]   [ch]C[/ch]              [ch]Em[/ch]       [ch]G[/ch]\r\nOr write a song nobody had sung[/tab]\r\n[tab]   [ch]C[/ch]                   [ch]D[/ch]               [ch]Em[/ch]*\r\nOr do something that's never been done.[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]C[/ch]         [ch]Em[/ch]      [ch]G[/ch]     [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\n Are you lost or incomplete?[/tab]\r\n[tab]       [ch]C[/ch]            [ch]Em[/ch]     [ch]G[/ch]         [ch]C[/ch]                  [ch]D[/ch]\r\nDo you feel like a puzzle, You can't find your missing piece.[/tab]\r\n[tab]        [ch]C[/ch]       [ch]Em[/ch]  [ch]G[/ch]   [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\nTell me how you feeeel.[/tab]\r\n[tab]        [ch]C[/ch]                 [ch]Em[/ch]\r\nWell, I feel like they're talking[/tab]\r\n[tab][ch]G[/ch]     [ch]C[/ch]                 [ch]D[/ch]\r\nIn a language I don't speak.[/tab]\r\n[tab]             [ch]C[/ch]             [ch]D[/ch]   [ch]Em[/ch]*\r\nAnd they're talking it to me.[/tab]\r\n\r\n[Chorus]\r\n[tab]       [ch]C[/ch]                 [ch]Em[/ch]            [ch]G[/ch]    [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\nSo you take a picture of something you see.[/tab]\r\n[tab][ch]C[/ch]             [ch]Em[/ch]           [ch]G[/ch]   [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\nIn the future where will I be?[/tab]\r\n[tab]          [ch]C[/ch]              [ch]Em[/ch]        [ch]G[/ch]   [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\nYou could climb a ladder up to the sun[/tab]\r\n[tab]   [ch]C[/ch]              [ch]Em[/ch]       [ch]G[/ch]\r\nOr write a song nobody had sung[/tab]\r\n[tab]   [ch]C[/ch]                   [ch]D[/ch]\r\nOr do something that's never been done.[/tab]\r\n[tab][ch]C[/ch]                   [ch]D[/ch]               [ch]Em[/ch]*\r\nDo something that's never been done.[/tab]\r\n\r\n[Solo]\r\n| [ch]Am[/ch] | [ch]C[/ch]  | [ch]Em[/ch] | [ch]D[/ch]  | x4\r\n| [ch]C[/ch]  | [ch]Em[/ch] [ch]G[/ch] |         x3\r\n| [ch]C[/ch]  | [ch]D[/ch]  |\r\n\r\n[Chorus]\r\n[tab]       [ch]C[/ch]                                     [ch]Em[/ch]      [ch]G[/ch]     [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\nSo you don't know where you're going and you want to talk.[/tab]\r\n[tab]        [ch]C[/ch]                                   [ch]Em[/ch]     [ch]G[/ch]     [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\nAnd you feel like you're going where you've been before.[/tab]\r\n[tab]            [ch]C[/ch]                            [ch]Em[/ch]     [ch]G[/ch]      [ch]C[/ch] [ch]Em[/ch] [ch]G[/ch]\r\nYou'll tell anyone who'll listen but you feel ignored.[/tab]\r\n[tab][ch]C[/ch]                           [ch]Em[/ch]       [ch]G[/ch]\r\nNothing's really making any sense at all.[/tab]\r\n\r\n[Outro]\r\n[tab]      [ch]C[/ch]           [ch]D[/ch]\r\nLet's talk, let's talk.[/tab]\r\n[tab]      [ch]C[/ch]           [ch]D[/ch]     [ch]Em[/ch]\r\nLet's talk, let's talk.[/tab]"
+}

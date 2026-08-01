@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Sweet Thing",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Alison Brown",
+   "Reno and Smiley",
+   "Vince Gill",
+   "The Osborne Brothers"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:13:18",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.3,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2259251,
+  "song_id": 110080,
+  "song_name": "Sweet Thing",
+  "artist_id": 7520,
+  "artist_name": "Van Morrison",
+  "type": "Chords",
+  "part": "",
+  "version": 3,
+  "common_version": 1,
+  "votes": 135,
+  "difficulty": "intermediate",
+  "rating": 4.95948,
+  "date": "1513686629",
+  "status": "approved",
+  "preset_id": 85902,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 8801
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/4/1495433/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/6/1/6110/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1718422438,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Song:  Sweet Thing\r\nArtist:  Van Morrison\r\nAlbum:  Astral Weeks\r\n\r\n         [ch]E[/ch] [ch]A[/ch] [ch]D[/ch] [ch]G[/ch] [ch]B[/ch] [ch]E[/ch]\r\n\r\nE:      [0 2 2 1 0 0]\r\nF#m:    [2 4 4 2 2 2]\r\nA:      [x 0 2 2 2 0]\r\nAsus2:  [x 0 2 2 0 0]\r\nA6:     [x 0 2 2 2 2]\r\nB6:     [x 0 4 4 4 4]\r\n\r\nThere is a general progression to the verse which is...\r\n[ch]E[/ch] [ch]F#m[/ch] [ch]A[/ch] [ch]Asus2[/ch]\r\n\r\nThen the following where you slide the chord shape back and forth.\r\n[ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\n\r\n[Intro]\r\n[ch]E[/ch]    [ch]F#m[/ch]    [ch]A[/ch]    [ch]Asus2[/ch]    [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch] (2x)\r\n\r\n[Verse 1]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]                       [ch]A[/ch]               [ch]Asus2[/ch]        [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I will stroll the merry way and jump the hedges first[/tab]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]                          [ch]A[/ch]             [ch]Asus2[/ch]       [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I will drink the clear Clean water for to quench my thirst[/tab]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]                         [ch]A[/ch]           [ch]Asus2[/ch]          [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I shall watch the ferry-boats And they'll get high[/tab]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]            [ch]A[/ch]          [ch]Asus2[/ch]                        [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nOn a bluer ocean against tomorrow's sky[/tab]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]         [ch]A[/ch]      [ch]Asus2[/ch]                               [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I will never grow so old again[/tab]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]               [ch]A[/ch]           [ch]Asus2[/ch]                    [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I will walk and talk in gardens all wet with rain[/tab]\r\n\r\n[Chorus 1] \r\n[tab][ch]E[/ch]               [ch]A[/ch]\r\nOh.... whoa....    sweet thing, sweet thing[/tab]\r\n[tab][ch]E[/ch]               [ch]A[/ch]\r\nYeah....ya....     sweet thing, na...nah...[/tab]\r\n[tab][ch]E[/ch]                        [ch]A[/ch]                                       [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nLeah...yeah, my, my, my, my sweet thing[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]E[/ch]           [ch]F#m[/ch]              [ch]A[/ch]                     [ch]Asus2[/ch]         [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I shall drive my chariot down your streets and cry[/tab]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]                    [ch]A[/ch]          [ch]Asus2[/ch]               [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\n'Hey, it's me, I'm dynamite and I don't know why'[/tab]\r\n[tab][ch]E[/ch]       [ch]F#m[/ch]                    [ch]A[/ch]            [ch]Asus2[/ch]                [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd you shall take me strongly in your arms again[/tab]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]                      [ch]A[/ch]        [ch]Asus2[/ch]               [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I will not remember that I even felt the pain.[/tab]\r\n[tab][ch]E[/ch]        [ch]F#m[/ch]              [ch]A[/ch]                                     [ch]Asus2[/ch]     [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nWe shall walk and talk in gardens all misty wet, misty wet with rain yeah[/tab]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]                 [ch]A[/ch]           [ch]Asus2[/ch]                  [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I will never, never, never grow so old again.[/tab]\r\n\r\n[Chorus 2]\r\n[tab][ch]E[/ch]                [ch]A[/ch]\r\nOh sweet thing, sweet thing[/tab]\r\n[tab][ch]E[/ch]                [ch]A[/ch]\r\nMy, my, my, my, my sweet thing[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]E[/ch]           [ch]F#m[/ch]          [ch]A[/ch]                      [ch]Asus2[/ch]             [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I will raise my hand up into the night time sky[/tab]\r\n[tab][ch]E[/ch]             [ch]F#m[/ch]          [ch]A[/ch]               [ch]Asus2[/ch]                  [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd count the stars that's shining in your eye[/tab]\r\n[tab][ch]E[/ch]              [ch]F#m[/ch]            [ch]A[/ch]                  [ch]Asus2[/ch]            [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nJust to dig it all an' not to wonder that's just fine[/tab]\r\n[tab][ch]E[/ch]           [ch]F#m[/ch]              [ch]A[/ch]                   [ch]Asus2[/ch]            [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I'll be satisfied not to read in between the lines[/tab]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]              [ch]A[/ch]                    [ch]Asus2[/ch]            [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I will walk and talk in gardens all wet with rain[/tab]\r\n[tab][ch]E[/ch]          [ch]F#m[/ch]                     [ch]A[/ch]           [ch]Asus2[/ch]              [ch]A6[/ch] / [ch]B6[/ch] \\ [ch]A6[/ch]\r\nAnd I will never, ever, ever, ever grow so old again.[/tab]\r\n\r\n[Outro]\r\n[tab][ch]E[/ch]              [ch]A[/ch]\r\nOh.... whoa.... sweet thing[/tab]\r\n[tab][ch]E[/ch]              [ch]A[/ch]\r\nOh.... whoa.... Sugar-baby[/tab]\r\n[tab][ch]E[/ch]              [ch]A[/ch]\r\nOh.... whoa.... sweet thing[/tab]\r\n[tab][ch]E[/ch]              [ch]A[/ch]\r\nsugar baby.....sugar ba..by, sugar baby[/tab]\r\n[tab][ch]E[/ch]              [ch]A[/ch]\r\n...............with your champagne eyes[/tab]\r\n[tab][ch]E[/ch]              [ch]A[/ch]\r\n........And your saint-like smile.... [/tab]"
+}

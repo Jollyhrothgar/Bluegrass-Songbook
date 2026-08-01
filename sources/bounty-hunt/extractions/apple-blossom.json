@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Apple Blossom",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Alan Munde",
+   "The Dillards",
+   "Gaither Carlton",
+   "Hog-Eyed Man"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:08:57",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 101364,
+  "song_id": 58849,
+  "song_name": "Apple Blossom",
+  "artist_id": 2241,
+  "artist_name": "The White Stripes",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 647,
+  "difficulty": "",
+  "rating": 4.82524,
+  "date": "1074556800",
+  "status": "approved",
+  "preset_id": 12807,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 2240987
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/8/1839/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/2/1249/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1556277643,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[tab]    [ch]Am[/ch]  [ch]Dm[/ch]  [ch]Em[/ch]  [ch]G[/ch]\r\ne|--0---1---0---3--|\r\nB|--1---3---0---3--|\r\nG|--2---2---0---0--|\r\nD|--2---0---2---0--|\r\nA|----------2---2--|\r\nE|--------------3--|[/tab]\r\n\r\n\r\n[Intro]\r\n\r\n[ch]Am[/ch]  [ch]Em[/ch]\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]Am[/ch]\r\nHey Little Apple Blossom[/tab]\r\n[tab]     [ch]Dm[/ch]\r\nWhat seems to be the problem[/tab]\r\n[tab][ch]Am[/ch]\r\nAll the ones you tell your troubles to[/tab]\r\n[tab]      [ch]Em[/ch]           [ch]G[/ch]       [ch]Am[/ch]\r\nThey don't really care for you[/tab]\r\n\r\n\r\n[tab][ch]Am[/ch]\r\nCome and tell me what you're thinking[/tab]\r\n[tab]       [ch]Dm[/ch]\r\nCause just when the boat is sinking[/tab]\r\n[tab][ch]Am[/ch]\r\nA little light is blinking[/tab]\r\n[tab]   [ch]Em[/ch]              [ch]G[/ch]       [ch]Am[/ch]\r\nAnd I will come and rescue you[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab][ch]Dm[/ch]                   [ch]Am[/ch]\r\nLots of girls walk around in tears[/tab]\r\n[tab][ch]Em[/ch]                 [ch]Am[/ch]\r\nBut that's not for you[/tab]\r\n[tab][ch]Dm[/ch]                        [ch]Am[/ch]\r\nYou've been looking all around for years[/tab]\r\n[tab]         [ch]B[/ch]                            [ch]E[/ch]  [ch]G[/ch]\r\nFor someone to tell your troubles to[/tab]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab][ch]Am[/ch]\r\nCome and sit with me and talk a while[/tab]\r\n[tab][ch]Dm[/ch]\r\nLet me see your pretty little smile[/tab]\r\n[tab][ch]Am[/ch]\r\nPut your troubles in a little pile[/tab]\r\n[tab]   [ch]Em[/ch]                 [ch]G[/ch]     [ch]Am[/ch]\r\nAnd I will sort them out for you[/tab]\r\n\r\n\r\n[Solo]\r\n\r\n[tab]e|-------------------------|-----------------------|\r\nB|-------------------------|-----------------------|\r\nG|-------------------------|-----------------------|\r\nD|-------------------------|--5/7--7-5-------------|\r\nA|---5/7--7-7-5------------|------------/8---7-5---|\r\nE|---------------/8---7-5--|-----------------------|[/tab]\r\n     [ch]Am[/ch]                       [ch]Dm[/ch]\r\n\r\n[tab]e|--------------------------------------------|\r\nB|--------------------------------------------|\r\nG|--------------------------------------------|\r\nD|--------------------------------------------|\r\nA|---0-7----0-5----0-3----0--3--5--3----------|\r\nE|------------------------------------/7---5--|[/tab]\r\n     [ch]Am[/ch]\r\n\r\n[tab]e|----------------------------------|\r\nB|----------------------------------|\r\nG|----------------------------------|\r\nD|----------------------------------|\r\nA|----------------------------------|\r\nE|---/7-7-7-7---8--8--7~~-0------3--|[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab][ch]Dm[/ch]                   [ch]Am[/ch]\r\nLots of girls walk around in tears[/tab]\r\n[tab][ch]Em[/ch]                 [ch]Am[/ch]\r\nBut that's not for you[/tab]\r\n[tab][ch]Dm[/ch]                        [ch]Am[/ch]\r\nYou've been looking all around for years[/tab]\r\n[tab]         [ch]B[/ch]                            [ch]E[/ch]  [ch]G[/ch]\r\nFor someone to tell your troubles to[/tab]\r\n\r\n\r\n[Verse 3]\r\n\r\n[tab][ch]Am[/ch]\r\nCome and sit with me and talk a while[/tab]\r\n[tab][ch]Dm[/ch]\r\nLet me see your pretty little smile[/tab]\r\n[tab][ch]Am[/ch]\r\nPut your troubles in a little pile[/tab]\r\n[tab]   [ch]Em[/ch]                 [ch]G[/ch]     [ch]Am[/ch]\r\nAnd I will sort them out for you[/tab]\r\n\r\n\r\n[Outro]\r\n\r\n[tab][ch]Em[/ch]            [ch]G[/ch]         [ch]Am[/ch]\r\nI'll fall in love with you[/tab]\r\n[tab][ch]Em[/ch]            [ch]G[/ch]     [ch]Am[/ch]\r\nI think I'll marry you[/tab]"
+}

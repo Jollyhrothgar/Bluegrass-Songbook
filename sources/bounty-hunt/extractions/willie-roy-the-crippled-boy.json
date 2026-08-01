@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Willie Roy the Crippled Boy",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Bill Harrell",
+   "Charlie Waller",
+   "John Duffey",
+   "The Country Gentlemen"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:08:31",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

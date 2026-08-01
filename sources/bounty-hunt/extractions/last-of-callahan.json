@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Last of Callahan",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Bruce Molsky",
+   "Pert Near Sandstone",
+   "Highwoods String Band",
+   "Mike Seeger"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:11:23",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

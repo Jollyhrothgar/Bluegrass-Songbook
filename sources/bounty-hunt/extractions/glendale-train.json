@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Glendale Train",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Sam Bush",
+   "Stuart Duncan",
+   "David Grier",
+   "Hickory Hill"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:05:36",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 891314,
+  "song_id": 162479,
+  "song_name": "Glendale Train",
+  "artist_id": 11912,
+  "artist_name": "New Riders of the Purple Sage",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 99,
+  "difficulty": "",
+  "rating": 4.69026,
+  "date": "1257811201",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 759665
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/9/8/98460/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/5/1/51007/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1710163159,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Glendale Train - New Riders of the Purple Sage\r\n\r\n\r\n[Chorus]\r\n[tab][ch]D[/ch]\r\nSomebody robbed the Glendale train[/tab]\r\n[tab]     [ch]G[/ch]                    [ch]D[/ch]\r\nThis mornin' at half past nine[/tab]\r\n\r\nSombody robbed the Glendale train\r\n[tab]      [ch]E[/ch]              [ch]A[/ch]\r\nAnd I swear, I ain't lyin'[/tab]\r\n[tab]     [ch]D[/ch]\r\nThey made clean off with sixteen gee's[/tab]\r\n[tab]         [ch]G[/ch]             [ch]D[/ch]\r\nAnd left two men lyin' cold[/tab]\r\n[tab][ch]D[/ch]\r\nSomebody robbed the Glendale train[/tab]\r\n[tab]         [ch]A[/ch]                 [ch]D[/ch]\r\nAnd they made off with the gold[/tab]\r\n\r\n\r\n[Verse]\r\n[tab][ch]D[/ch]\r\nCharlie Jones was the engineer,[/tab]\r\n[tab]    [ch]G[/ch]                      [ch]D[/ch]\r\nhe had twenty years on the line.[/tab]\r\n\r\nHe kissed his wife at the station gate,\r\n[tab]     [ch]E[/ch]                 [ch]A[/ch]\r\nthis morning at six thirty five[/tab]\r\n[tab]   [ch]D[/ch]\r\nEvery thing went fine till half past nine[/tab]\r\n[tab]         [ch]G[/ch]               [ch]D[/ch]\r\nwhen Charlie looked up and he saw.[/tab]\r\n[tab]  [ch]D[/ch]\r\nMen on horses, men with guns,[/tab]\r\n[tab]        [ch]A[/ch]            [ch]D[/ch]\r\nand no sign of the law.[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]D[/ch]\r\nSomebody robbed the Glendale train[/tab]\r\n[tab]     [ch]G[/ch]                    [ch]D[/ch]\r\nThis mornin' at half past nine[/tab]\r\n\r\nSombody robbed the Glendale train\r\n[tab]      [ch]E[/ch]              [ch]A[/ch]\r\nAnd I swear, I ain't lyin'[/tab]\r\n[tab]     [ch]D[/ch]\r\nThey made clean off with sixteen gee's[/tab]\r\n[tab]         [ch]G[/ch]             [ch]D[/ch]\r\nAnd left two men lyin' cold[/tab]\r\n[tab][ch]D[/ch]\r\nSomebody robbed the Glendale train[/tab]\r\n[tab]         [ch]A[/ch]                 [ch]D[/ch]\r\nAnd they made off with the gold[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]D[/ch] [ch]G[/ch] [ch]D[/ch]\r\n[ch]E[/ch] [ch]A[/ch]\r\n[ch]D[/ch]\r\n[ch]G[/ch] [ch]D[/ch] [ch]D[/ch]\r\n[ch]A[/ch] [ch]D[/ch]\r\n\r\n\r\n[Verse]\r\n[tab][ch]D[/ch]\r\nAmos White was the baggage man,[/tab]\r\n[tab]    [ch]G[/ch]                 [ch]D[/ch]\r\nand dearly loved his job.[/tab]\r\n\r\nThe company rewarded him,\r\n[tab]      [ch]E[/ch]               [ch]A[/ch]\r\nwith a golden watch and fob.[/tab]\r\n[tab]  [ch]D[/ch]\r\nWell Amos he was markin' time[/tab]\r\n[tab]       [ch]G[/ch]                 [ch]D[/ch]\r\nwhen the door blew off his car.[/tab]\r\n[tab] [ch]D[/ch]\r\nThey found Amos White in fifteen pieces[/tab]\r\n[tab]     [ch]A[/ch]           [ch]D[/ch]\r\nFifteen miles apart.[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]D[/ch]\r\nSomebody robbed the Glendale train[/tab]\r\n[tab]     [ch]G[/ch]                    [ch]D[/ch]\r\nThis mornin' at half past nine[/tab]\r\n\r\nSombody robbed the Glendale train\r\n[tab]      [ch]E[/ch]              [ch]A[/ch]\r\nAnd I swear, I ain't lyin'[/tab]\r\n[tab]     [ch]D[/ch]\r\nThey made clean off with sixteen gee's[/tab]\r\n[tab]         [ch]G[/ch]             [ch]D[/ch]\r\nAnd left two men lyin' cold[/tab]\r\n[tab][ch]D[/ch]\r\nSomebody robbed the Glendale train[/tab]\r\n[tab]         [ch]A[/ch]                 [ch]D[/ch]\r\nAnd they made off with the gold[/tab]\r\n\r\n[tab][ch]D[/ch]\r\nI said, somebody robbed the Glendale train[/tab]\r\n[tab]         [ch]A[/ch]                 [ch]D[/ch]\r\nAnd they made off with the gold[/tab]"
+}

@@ -1,0 +1,20 @@
+{
+ "wanted": {
+  "title": "Rye Straw",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Adam Hurt",
+   "The Osborne Brothers",
+   "Michael Cleveland",
+   "Rhys Jones"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "status": "error: AttributeError(\"'str' object has no attribute 'get'\")",
+ "scraped_at": "2026-08-01T11:07:24"
+}

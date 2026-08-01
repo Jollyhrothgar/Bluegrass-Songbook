@@ -1,0 +1,54 @@
+id: bill-cheatham
+title: Bill Cheatham
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '11591'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11591
+    author: schlange
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11592.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11592'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11592
+    author: schlange
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '1968'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=1968
+    author: Live on What You Grow
+    difficulty: Beginner
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-22337.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '22337'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=22337
+    author: HOWDYDOODY
+    difficulty: Beginner
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'

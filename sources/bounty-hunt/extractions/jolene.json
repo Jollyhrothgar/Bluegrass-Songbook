@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Jolene",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": false,
+  "artists": [
+   "Yonder Mountain String Band",
+   "The Wood Brothers",
+   "The Petersens",
+   "Dolly Parton"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:04:33",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "C#m"
+ },
+ "candidate": {
+  "id": 183019,
+  "song_id": 152163,
+  "song_name": "Jolene",
+  "artist_id": 11081,
+  "artist_name": "Dolly Parton",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 25372,
+  "difficulty": "novice",
+  "rating": 4.89065,
+  "date": "1115596800",
+  "status": "approved",
+  "preset_id": 10647,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "C#m",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 48097
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/7/1700393/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/1/4186/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1741558179,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n\r\n[tab]   [ch]Am[/ch]\r\ne|---------------------------------|\r\nB|-------0-----0h1---0-----1p0-----|\r\nG|---2---------------------------0-|\r\nD|-----2-------0h2-----0-------0---| x4\r\nA|-0-------0-------0-------0-------|\r\nE|---------------------------------|[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]Am[/ch]      [ch]C[/ch]       [ch]G[/ch]       [ch]Am[/ch]\r\nJolene, Jolene, Jolene, Jolene[/tab]\r\n[tab]    [ch]G[/ch]                                   [ch]Am[/ch]\r\nI'm begging of you, please don't take my man[/tab]\r\n[tab]  [ch]Am[/ch]      [ch]C[/ch]       [ch]G[/ch]       [ch]Am[/ch]\r\nJolene, Jolene, Jolene, Jolene[/tab]\r\n[tab][ch]G[/ch]                                     [ch]Am[/ch]\r\nPlease don't take him just because you can[/tab]\r\n\r\n[Verse 1]\r\n[tab]     [ch]Am[/ch]           [ch]C[/ch]\r\nYour beauty is beyond compare[/tab]\r\n[tab]      [ch]G[/ch]                [ch]Am[/ch]\r\nWith flaming locks of auburn hair[/tab]\r\n[tab]     [ch]G[/ch]                              [ch]Am[/ch]\r\nWith ivory skin and eyes of emerald green[/tab]\r\n[tab]      [ch]Am[/ch]              [ch]C[/ch]\r\nYour smile is like a breath of spring[/tab]\r\n[tab]      [ch]G[/ch]                  [ch]Am[/ch]\r\nYour voice is soft like summer rain[/tab]\r\n[tab]    [ch]G[/ch]                          [ch]Am[/ch]\r\nAnd I cannot compete with you, Jolene[/tab]\r\n\r\n[Verse 2]\r\n[tab]   [ch]Am[/ch]               [ch]C[/ch]\r\nHe talks about you in his sleep[/tab]\r\n[tab]        [ch]G[/ch]             [ch]Am[/ch]\r\nThere's nothing I can do to keep[/tab]\r\n[tab]      [ch]G[/ch]                              [ch]Am[/ch]\r\nFrom crying when he calls your name, Jolene[/tab]\r\n[tab]    [ch]Am[/ch]            [ch]C[/ch]\r\nAnd I can easily understand[/tab]\r\n[tab]    [ch]G[/ch]                 [ch]Am[/ch]\r\nHow you could easily take my man[/tab]\r\n[tab]        [ch]G[/ch]                                [ch]Am[/ch]\r\nBut you don't know what he means to me, Jolene[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]Am[/ch]      [ch]C[/ch]       [ch]G[/ch]       [ch]Am[/ch]\r\nJolene, Jolene, Jolene, Jolene[/tab]\r\n[tab]    [ch]G[/ch]                                   [ch]Am[/ch]\r\nI'm begging of you, please don't take my man[/tab]\r\n[tab]  [ch]Am[/ch]      [ch]C[/ch]       [ch]G[/ch]       [ch]Am[/ch]\r\nJolene, Jolene, Jolene, Jolene[/tab]\r\n[tab][ch]G[/ch]                                    [ch]Am[/ch]\r\nPlease don't take him just because you can[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]Am[/ch]                    [ch]C[/ch]\r\nYou could have your choice of men[/tab]\r\n[tab]    [ch]G[/ch]              [ch]Am[/ch]\r\nBut I could never love again[/tab]\r\n[tab][ch]G[/ch]                          [ch]Am[/ch]\r\nHe's the only one for me, Jolene[/tab]\r\n[tab]  [ch]Am[/ch]                [ch]C[/ch]\r\nI had to have this talk with you[/tab]\r\n[tab]   [ch]G[/ch]            [ch]Am[/ch]\r\nMy happiness depends on you[/tab]\r\n[tab]        [ch]G[/ch]                        [ch]Am[/ch]\r\nAnd whatever you decide to do, Jolene[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]Am[/ch]      [ch]C[/ch]       [ch]G[/ch]       [ch]Am[/ch]\r\nJolene, Jolene, Jolene, Jolene[/tab]\r\n[tab]    [ch]G[/ch]                                   [ch]Am[/ch]\r\nI'm begging of you, please don't take my man[/tab]\r\n[tab]  [ch]Am[/ch]      [ch]C[/ch]       [ch]G[/ch]       [ch]Am[/ch]\r\nJolene, Jolene, Jolene, Jolene[/tab]\r\n[tab][ch]G[/ch]                                    [ch]Am[/ch]\r\nPlease don't take him even though you can[/tab]"
+}

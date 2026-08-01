@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Free",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Whiskey Shivers",
+   "The Rowans",
+   "The Gospel Plowboys",
+   "Austin Lucas"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:05:32",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 983491,
+  "song_id": 209769,
+  "song_name": "Free",
+  "artist_id": 22712,
+  "artist_name": "Zac Brown Band",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 58,
+  "difficulty": "novice",
+  "rating": 4.87552,
+  "date": "1283385601",
+  "status": "approved",
+  "preset_id": 40787,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 7397
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/8/185099/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/9/198044/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1283385601,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Free - Into the Mystic (Zac Brown Band / Live - Pass the Jar)\r\n\r\n[Tune down 1/2 step to D#.]\r\n\r\n[tab][ch]D[/ch]                         [ch]D[/ch]                           [ch]G[/ch]\r\nSo we live in our old van Travel all across this land Me and you[/tab]\r\n[tab][ch]D[/ch]                         [ch]D[/ch]                           [ch]G[/ch]\r\nWe'll end up hand in hand Somewhere down on the sand Me and you[/tab]\r\n\r\n[tab][ch]D[/ch]                        [ch]G[/ch]\r\nJust as free Free as we'll ever be[/tab]\r\n[tab]             [ch]D[/ch]           [ch]G[/ch]\r\nJust as free Free as we'll ever be[/tab]\r\n\r\n[ch]D[/ch] [ch]G[/ch] [ch]D[/ch] [ch]G[/ch]\r\n\r\n\r\n[tab][ch]D[/ch]                         [ch]D[/ch]                           [ch]G[/ch]\r\nDrive until the city lights Dissolve into a country sky Me and you[/tab]\r\n[tab][ch]D[/ch]                               [ch]D[/ch]                                [ch]G[/ch]\r\nLay underneath the Harvest moon Do all the things that lovers do Just me and you[/tab]\r\n\r\n[tab][ch]D[/ch]                        [ch]G[/ch]\r\nJust as free Free as we'll ever be[/tab]\r\n[tab]             [ch]D[/ch]           [ch]G[/ch]\r\nJust as free Free as we'll ever be[/tab]\r\n\r\n\r\n(D) (D#) (F) (G)  // Walk Up\r\n(G) (F) (D#) (G)  // Walk Down\r\n(D) (D#) (F) (G)  // Walk Up\r\n\r\n// Into the Mystic part\r\n(D) // Get into Groove\r\n\r\n[tab][ch]D[/ch]                            [ch]D[/ch]\r\nWe were born before the wind Also younger than the sun[/tab]\r\n[tab][ch]A[/ch]                           [ch]A[/ch]                     [ch]D[/ch]\r\nAnd the bonny boat was won As we sailed into the mystic[/tab]\r\n\r\n[tab][ch]D[/ch]                            [ch]D[/ch]\r\nHark, now, hear the sailor's cry ya Smell the sea and feel the sky[/tab]\r\n[tab][ch]A[/ch]                            [ch]A[/ch]          [ch]D[/ch]\r\nLet your soul and spirit fly Into the mystic.[/tab]\r\n\r\n(bridge)\r\n[tab][ch]F#m[/ch]              [ch]G[/ch]                         [ch]D[/ch]\r\nWhen that foghorn blows, I will be comin' home, [/tab]\r\n[tab][ch]F#m[/ch]              [ch]G[/ch]              [ch]A[/ch]\r\nWhen that foghorn blows, I wanna feel it, don't have to fear it[/tab]\r\n\r\n(chorus)\r\n[tab][ch]D[/ch]                                     [ch]D[/ch]\r\nAnd I  wanna rock you gypsy soul Just like way back in the days of old[/tab]\r\n[tab][ch]A[/ch]                               [ch]A[/ch]          [ch]D[/ch]\r\nAnd together we will float Into the mystic[/tab]\r\n\r\n[ch]D[/ch]   [ch]D[/ch]   [ch]A[/ch]   [ch]D[/ch]   (Punches)\r\n\r\n\r\n[tab][ch]D[/ch]\r\nNo we don't have a lot of money  (Repeat 7 times and build)[/tab]\r\n[tab]             [ch]D[/ch]\r\nAll we need is love[/tab]\r\n\r\n[tab][ch]D[/ch]       ([ch]D#[/ch]    [ch]F[/ch])   [ch]G[/ch]         (Walk Up)\r\nFree as we'll ever be [/tab]\r\n[tab][ch]D[/ch]               [ch]D[/ch]    ([ch]D#[/ch]    [ch]F[/ch])   [ch]G[/ch]         (Walk Up)\r\nJust as free... Free as we'll ever be [/tab]\r\n\r\n(soft)\r\n[tab][ch]D[/ch]                         [ch]D[/ch]                           [ch]G[/ch]\r\nSo we live in our old van Travel all across this land Me and you[/tab]"
+}

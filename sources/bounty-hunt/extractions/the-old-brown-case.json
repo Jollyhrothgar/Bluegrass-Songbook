@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "The Old Brown Case",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Jethro Burns",
+   "Norman Blake",
+   "Butch Robins",
+   "Vassar Clements"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:13:49",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

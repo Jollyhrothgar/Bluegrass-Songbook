@@ -1,0 +1,21 @@
+id: bluegrass-stomp
+title: Bluegrass Stomp
+artist: null
+composers: []
+default_key: D
+tags:
+- Instrumental
+- Bluegrass
+parts:
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  default: true
+  provenance:
+    source: fiddle-hangout
+    source_id: '2735'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2735
+    author: Live on What You Grow
+    difficulty: Intermediate
+    imported_at: '2026-08-01'

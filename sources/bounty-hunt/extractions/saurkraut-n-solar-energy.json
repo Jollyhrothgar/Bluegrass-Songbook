@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Saurkraut 'n Solar Energy",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Norman Blake",
+   "Vassar Clements",
+   "Jethro Burns",
+   "Butch Robins"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:13:01",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

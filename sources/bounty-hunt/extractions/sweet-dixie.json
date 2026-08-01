@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Sweet Dixie",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Jimmy Martin and the Sunny Mountain Boys",
+   "Bill Emerson",
+   "Art Stamper",
+   "Wayne Benson"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:13:15",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 7
+ },
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Birdie",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "John Hartford",
+   "Tommy Jarrell",
+   "Kessinger Brothers",
+   "Kenny Baker"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:10",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Bb"
+ },
+ "candidate": {
+  "id": 2605308,
+  "song_id": 3075129,
+  "song_name": "Birdie",
+  "artist_id": 2725,
+  "artist_name": "Avril Lavigne",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 38,
+  "difficulty": "novice",
+  "rating": 4.88795,
+  "date": "1550195944",
+  "status": "approved",
+  "preset_id": 42179,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Bb",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 226959
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/1606494/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/173691/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1561096504,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n|[ch]Em[/ch]  |[ch]G[/ch]   |[ch]Am[/ch]  |[ch]C[/ch]   |\r\n|[ch]Em[/ch]  |[ch]G[/ch]   |[ch]A[/ch]   |[ch]C[/ch]   |\r\n\r\n\r\n[Verse 1]\r\n[tab][ch]Em[/ch]            [ch]G[/ch]             [ch]Am[/ch]            [ch]C[/ch]\r\n Like a bird locked up in a cage called love[/tab]\r\n[tab][ch]Em[/ch]                         [ch]G[/ch]                 [ch]A[/ch]     [ch]C[/ch]\r\n He clipped her wings when she was born to fly[/tab]\r\n[tab]        [ch]Em[/ch]            [ch]G[/ch]              [ch]Am[/ch]\r\nHe said,  \"A pretty bird, you can't sing[/tab]\r\n[tab]                 [ch]C[/ch]                   [ch]Em[/ch]\r\nBut I'll buy you diamonds and ruby rings\"[/tab]\r\n[tab]             [ch]G[/ch]              [ch]A[/ch]     [ch]C[/ch]\r\nLike a bird locked up in a cage[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]                [ch]Em[/ch]          [ch]G[/ch]          [ch]Am[/ch]          [ch]C[/ch]\r\nAnd how can I escape this place and go higher, higher?[/tab]\r\n[tab]           [ch]Em[/ch]         [ch]G[/ch]              [ch]Am[/ch]      [ch]C[/ch]\r\nHow can I avoid the flames from your fire, fire?[/tab]\r\n[tab]    [ch]Em[/ch]      [ch]G[/ch]               [ch]Am[/ch]   [ch]C[/ch]\r\nAnd oh, you can't hold me down, no[/tab]\r\n[tab][ch]Em[/ch]      [ch]G[/ch]               [ch]Am[/ch]\r\nOh, you can't pull me down[/tab]\r\n[tab]          N.C.  [ch]Em[/ch]  [ch]G[/ch]           [ch]Am[/ch]\r\nSo birdie fly away (Higher, higher)[/tab]\r\n[tab]          [ch]C[/ch]     [ch]Em[/ch]  [ch]G[/ch]           [ch]Am[/ch]\r\nSo birdie fly away (Higher, higher)[/tab]\r\n[tab]          [ch]C[/ch]\r\nSo birdie fly away[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]Em[/ch]                    [ch]G[/ch]                [ch]Am[/ch]        [ch]C[/ch]\r\n I'm tired of getting lost inside this maze all day[/tab]\r\n[tab][ch]Em[/ch]                      [ch]G[/ch]               [ch]A[/ch]     [ch]C[/ch]\r\n Your twisted words are getting to my head[/tab]\r\n[tab]      [ch]Em[/ch]                [ch]G[/ch]                  [ch]Am[/ch]\r\nI say,  \"And no more glasses and seein' stars[/tab]\r\n[tab]              [ch]C[/ch]                   [ch]Em[/ch]\r\nAnd no more bruises and battle scars\"[/tab]\r\n[tab]             [ch]G[/ch]              [ch]A[/ch]     [ch]C[/ch]\r\nLike a bird locked up in a cage[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]                [ch]Em[/ch]          [ch]G[/ch]          [ch]Am[/ch]          [ch]C[/ch]\r\nAnd how can I escape this place and go higher, higher?[/tab]\r\n[tab]           [ch]Em[/ch]         [ch]G[/ch]              [ch]Am[/ch]      [ch]C[/ch]\r\nHow can I avoid the flames from your fire, fire?[/tab]\r\n[tab]    [ch]Em[/ch]      [ch]G[/ch]               [ch]Am[/ch]   [ch]C[/ch]\r\nAnd oh, you can't hold me down, no[/tab]\r\n[tab][ch]Em[/ch]      [ch]G[/ch]               [ch]Am[/ch]\r\nOh, you can't pull me down[/tab]\r\n[tab]          N.C.  [ch]Em[/ch]  [ch]G[/ch]           [ch]Am[/ch]\r\nSo birdie fly away (Higher, higher)[/tab]\r\n[tab]          [ch]C[/ch]     [ch]Em[/ch]  [ch]G[/ch]           [ch]Am[/ch]\r\nSo birdie fly away (Higher, higher)[/tab]\r\n          N.C.\r\nSo birdie fly away\r\n\r\n\r\n[Bridge]\r\n[tab]             [ch]Em[/ch]        [ch]G[/ch]\r\nI ain't your prisoner[/tab]\r\n[tab]          [ch]Am[/ch]             [ch]C[/ch]\r\nYou can't lock me up no more[/tab]\r\n[tab]              [ch]Em[/ch]              [ch]G[/ch]\r\nI'll show you what I'm worth[/tab]\r\n[tab]               [ch]A[/ch]          [ch]C[/ch]\r\nTake back what I deserve[/tab]\r\n[tab]             [ch]Em[/ch]        [ch]G[/ch]\r\nI ain't your prisoner[/tab]\r\n[tab]          [ch]Am[/ch]                [ch]C[/ch]\r\nYou can't chain me down no more[/tab]\r\n[tab]              [ch]Em[/ch]          [ch]G[/ch]\r\nGoddamn, it's gonna hurt[/tab]\r\n[tab]               [ch]B7[/ch]\r\nSo fly away, little bird[/tab]\r\n\r\n\r\n[Chorus]\r\nN.C.\r\nAnd how can I escape this place and go higher, higher?\r\nN.C.\r\nHow can I avoid the flames from your fire, fire?\r\n[tab]    [ch]Em[/ch]      [ch]G[/ch]               [ch]Am[/ch]   [ch]C[/ch]\r\nAnd oh, you can't hold me down, no[/tab]\r\n[tab][ch]Em[/ch]      [ch]G[/ch]               [ch]Am[/ch]\r\nOh, you can't pull me down[/tab]\r\n[tab]          N.C.  [ch]Em[/ch]           \r\nSo birdie fly away [/tab]\r\n[tab]          [ch]G[/ch]        \r\n(Oh, oh, oh) Can you hear me?[/tab]\r\n[tab] [ch]Am[/ch]       [ch]C[/ch]                    \r\n(Oh, oh, oh) Are you listenin'? [/tab]\r\n[tab] [ch]Em[/ch]       [ch]G[/ch]           [ch]Am[/ch]           [ch]C[/ch]   \r\n(Oh, oh, oh) Set me free, set me free [/tab]\r\n[tab] [ch]Em[/ch]       [ch]G[/ch]                \r\n(Oh, oh, oh) Can you hear me? [/tab]\r\n[tab] [ch]Am[/ch]       [ch]C[/ch]                   \r\n(Oh, oh, oh) Are you listenin'?[/tab]\r\n[tab] [ch]Em[/ch]       [ch]G[/ch]           [ch]Am[/ch]           [ch]C[/ch]\r\n(Oh, oh, oh) Set me free, set me free[/tab]"
+}

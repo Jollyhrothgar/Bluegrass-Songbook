@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "Rudolph the Red-Nosed Reindeer",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Palast Orchester mit seinem S\u00e4nger Max Raabe",
+   "Charlie Daniels",
+   "Valerie June",
+   "David Johnson"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:12:57",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1051750,
+  "song_id": 28875,
+  "song_name": "Rudolph The Red-Nosed Reindeer",
+  "artist_id": 933,
+  "artist_name": "Misc Christmas",
+  "type": "Chords",
+  "part": "",
+  "version": 3,
+  "common_version": 1,
+  "votes": 91,
+  "difficulty": "novice",
+  "rating": 4.85533,
+  "date": "1303948801",
+  "status": "approved",
+  "preset_id": 30900,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p0/media/cover/artist/8/8098662f1fec03c4e12ffd240e7bfe75/misc-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1721846588,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Rudolph The Red Nosed Reindeer Chords\r\nMarks / May 1947\r\n\r\nhttps://en.wikipedia.org/wiki/Rudolph_the_Red-Nosed_Reindeer\r\n\r\n[tab]         [ch]F[/ch]          [ch]Em[/ch]\r\nYou know Dasher and Dancer[/tab]\r\n[tab]    [ch]Dm[/ch]          [ch]C[/ch]\r\nAnd Prancer and Vixen,[/tab]\r\n[tab][ch]F[/ch]         [ch]Em[/ch]\r\nComet and Cupid[/tab]\r\n[tab]    [ch]Dm[/ch]         [ch]C[/ch]\r\nAnd Donner and Blitzen.[/tab]\r\n[tab][ch]Am[/ch]           [ch]G[/ch]\r\nBut do you recall[/tab]\r\n[tab]         [ch]D[/ch]                  [ch]G[/ch]\r\nThe most famous reindeer of all?[/tab]\r\n\r\n[tab][ch]C[/ch]\r\nRudolph the red-nose reindeer,[/tab]\r\n[tab]                 [ch]G7[/ch]\r\nHad a very shiny nose[/tab]\r\n\r\nAnd if you ever saw it,\r\n[tab]                      [ch]C[/ch]\r\nYou would even say it glows[/tab]\r\n\r\n[tab][ch]C[/ch]\r\nAll of the other reindeer,[/tab]\r\n[tab]                           [ch]G7[/ch]\r\nUsed to laugh and call him names;[/tab]\r\n\r\nThey never let poor Rudolph,\r\n[tab]                     [ch]C[/ch]   [ch]C7[/ch]\r\nJoin in any reindeer games[/tab]\r\n\r\n[tab][ch]F[/ch]              [ch]C[/ch]\r\nThen one foggy Christmas Eve,[/tab]\r\n[tab][ch]Dm[/ch]    [ch]G7[/ch]      [ch]C[/ch]\r\nSanta came to say[/tab]\r\n[tab][ch]G[/ch]\r\nRudolph with your nose so bright,[/tab]\r\n[tab][ch]D7[/ch]                 [ch]G7[/ch]\r\nWon't you guide my sleigh tonight?[/tab]\r\n\r\n[tab][ch]C[/ch] \r\nThen how the reindeer loved him,[/tab]\r\n[tab]                         [ch]G7[/ch]\r\nAs they shouted out with glee[/tab]\r\n\r\nRudolph the red-nosed reindeer,\r\n[tab]                       [ch]C[/ch]\r\nYou'll go down in history[/tab]\r\n\r\nSet8"
+}

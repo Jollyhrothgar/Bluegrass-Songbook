@@ -1,0 +1,23 @@
+# title: Minor Swing
+# artist: Django Reinhardt
+# source_url: https://tabs.ultimate-guitar.com/tab/django-reinhardt/minor-swing-chords-1050870
+# fetched_at: 2026-08-01T11:06:33
+
+MINOR SWING - DJANGO REINHARDT
+
+   There are only 3 chords you need to play this tune here they are :
+
+          A minor 6                D minor 6                   E7
+      e|-------------|          e|-------------|          e------------|
+      B|--------5----|          B|------10-----|          B---5--------|
+      G|--------5----|          G|------10-----|          G-------7----|
+      D|------4------|          D|----9--------|          D-----6------|
+      A|-------------|          A|-------------|          A-------7----|
+      E|--------5----|          E|------10-----|          E------------|
+
+                           THE CHORD PATTERN
+
+             Am6 / Dm6 / E7 / Am6 / Dm6 / Am6 / E7 / Am6 E7
+
+    This chord pattern is simply repeated, again and again, try using an
+   E7#9 instead of E7 on the turnaround, just to make it more interesting.

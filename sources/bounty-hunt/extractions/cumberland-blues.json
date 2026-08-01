@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Cumberland Blues",
+  "type": "Vocal",
+  "key": "G",
+  "difficulty": "Intermediate",
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "The Travelin\u2019 McCourys",
+   "Doc Roberts and His Trio",
+   "The Chicken Chokers",
+   "The Grassmasters"
+  ],
+  "notes": "jam favorite",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:15:52",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 12320,
+  "song_id": 38476,
+  "song_name": "Cumberland Blues",
+  "artist_id": 1339,
+  "artist_name": "Grateful Dead",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 258,
+  "difficulty": "",
+  "rating": 4.78314,
+  "date": "1004486400",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 11397
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/6/3/6324/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/153160/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1481888363,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Cumberland Blues -- Grateful Dead (Hunter, Garcia)\r\n \r\n[tab][ch]G[/ch]\r\nI can't stay much longer, Melinda, the sun is getting high,[/tab]\r\n[tab][ch]G[/ch]\r\nI can't help you with your troubles if you won't help with mine.[/tab]\r\n[tab][ch]F#[/ch]               [ch]Bb[/ch]         [ch]B[/ch]    [ch]Bb[/ch]             [ch]A[/ch]    [ch]Ab[/ch]  [ch]G[/ch]\r\nI gotta get down, I gotta get down, I gotta get down to the mine.[/tab]\r\n \r\n \r\nYou keep me up just one more night, I can't sleep here no more.\r\nLittle Ben clock says quarter 'til eight, you kept me up 'til four.\r\nI gotta get down, I gotta get down, or I can't work there no more.\r\n \r\n[tab][ch]G[/ch]\r\nLotta poor man make a five dollar bill, keep him happy all the time.[/tab]\r\n[tab][ch]G[/ch]\r\nSome other fella's makin' nothin' at all and you can hear him cry, [/tab]\r\n[tab][ch]C[/ch]                             [ch]D[/ch]\r\n\"Can I go buddy, can I go down, take your shift at the mine?\" [/tab]\r\n[tab][ch]C[/ch]\r\nGotta get down to the Cumberland mine [/tab]\r\n[tab]                       [ch]F[/ch]          [ch]C[/ch]\r\n(Gotta get down to the Cumberland mine) [/tab]\r\n[tab][ch]F[/ch]                                   [ch]C[/ch]\r\nThat's where I mainly spend my time. [/tab]\r\n[tab][ch]C[/ch]\r\nMake good money, five dollars a day, [/tab]\r\n[tab][ch]F[/ch]                               [ch]C[/ch]  [ch]Am7[/ch]  [ch]C7[/ch]  [ch]Em[/ch]  [ch]G[/ch]\r\nMade any more I might move away. [/tab]\r\n[tab][ch]G[/ch]                      [ch]C[/ch]          [ch]G[/ch]\r\nLotta poor man got the Cumberland blues, [/tab]\r\n[tab]                 [ch]C[/ch]\r\nHe can't win for losin', [/tab]\r\n[tab][ch]C[/ch]                      [ch]G[/ch]             [ch]A[/ch]                     [ch]D[/ch]\r\nLotta poor man got to walk the line just to pay his union dues, [/tab]\r\n[tab][ch]C[/ch]                [ch]D[/ch]                  [ch]C[/ch]             [ch]Am7[/ch]      [ch]G[/ch]\r\nI don't know now, I just don't know, if I'm goin' back again.[/tab]"
+}

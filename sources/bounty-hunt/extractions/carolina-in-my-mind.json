@@ -1,0 +1,79 @@
+{
+ "wanted": {
+  "title": "Carolina in My Mind",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Alison Krauss",
+   "Jerry Douglas",
+   "Hamilton County Bluegrass Band",
+   "The Petersens"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:17",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "F"
+ },
+ "candidate": {
+  "id": 2476874,
+  "song_id": 156718,
+  "song_name": "Carolina In My Mind",
+  "artist_id": 11439,
+  "artist_name": "James Taylor",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 161,
+  "difficulty": "intermediate",
+  "rating": 4.85617,
+  "date": "1537862249",
+  "status": "approved",
+  "preset_id": 33636,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "F",
+  "version_description": "This is the version that James Taylor plays in his website tutorial and in some live performances.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 1,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": [
+    "https://www.youtube.com/watch?v=J8-5czYJvPM"
+   ],
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/16666/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/7/176981/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1704330510,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "------------------------------------------------------------------------------------------\r\n                        Carolina in My Mind \u2013 James Taylor\r\n------------------------------------------------------------------------------------------\r\n\r\nStandard tuning\r\nIn the key of F (D relative to capo)\r\nCapo on 3\r\nTabbed by Robert Saunders\r\n\r\n[Chords]\r\n\r\nD:        XX0232\r\nG5/F#:    2X0033\r\nEm7:      020030 (or 022030. In the intro play: 0X0033)\r\nGsus2/A:  X00033 (also Dsus4/A)\r\nG:        320033 (JT nearly always plays it with 3rd fret second string)\r\nA:        X02220\r\nD/C#:     X40232\r\nEm7/B:    X2003X\r\nA7sus4:   X0203X\r\nCadd9:    X32030\r\nBm:       X24432 (or play Bm7: X24232)\r\nBm7:      X2023X\r\nE7sus4/B: X20200 (or X20230)\r\nF#m:      244222\r\nG/B:      X20003\r\nEm9:      0X4035\r\n[ch]A7[/ch]*:      X00035\r\n\r\n[Notes]\r\n\r\nJames Taylor plays this song a bit differently every time. This tab is transcibed from the way\r\nhe plays it in the tutorial on his website: https://www.youtube.com/watch?v=J8-5czYJvPM\r\n\r\nI\u2019ve not included James Taylor\u2019s trademark embellishments on the A chords but they are all based\r\naround A(X02220) Asus2(X02200) Asus4(X02230) A7(X0202) A7sus2(X0200)and A7sus4(X02030).\r\n\r\nTo keep the tab easy to read, I\u2019ve not added all the walk-up and -downs but here is the tab for\r\nthe walk up in the second line of verse 3:\r\n\r\n[tab]   [ch]G[/ch]                            [ch]A[/ch]                            [ch]Bm[/ch]\r\ne|----------------------------|---------------0------------|-----|\r\nB|-0------2------3------0-----|-2------3-------------------|-----|\r\nG|-0------0------0------0-----|-2------2-------------------|-----|\r\nD|----------------------------|----------------------------|-----|\r\nA|--------0------2------------|-0------0-------------1-----|-2---|\r\nE|-3--------------------3-----|----------------------------|-----|[/tab]\r\n\r\n  Think I mighta heard  the     high\u2014--way    call---ing\r\n\r\n\r\n\r\n[Intro]\r\n[ch]D[/ch]  [ch]G[/ch]  [ch]G5/F#[/ch]  [ch]Em7[/ch] [ch]Gsus2/A[/ch]\r\n\r\n[Chorus]\r\n[tab][ch]D[/ch]              [ch]G[/ch]       [ch]Em7[/ch] [ch]A[/ch]\r\nIn my mind I'm gone to Carolina[/tab]\r\n[tab][ch]G[/ch]                 [ch]A[/ch]         [ch]Em7[/ch]                      [ch]A[/ch]\r\nCan't you see the sunshine? Can't you just feel the  moonshine[/tab]\r\n[tab]    [ch]D[/ch]              [ch]D/C#[/ch]   [ch]Em7/B[/ch]    [ch]A7sus4[/ch]\r\nAnd Ain't it just like a friend of mine to[/tab]\r\n[tab][ch]G[/ch]       [ch]D/F#[/ch]   [ch]E7[/ch]   [ch]A7[/ch]\r\nhit me  from behind[/tab]\r\n[tab]    [ch]D[/ch]       [ch]Bm7[/ch]  [ch]Em7[/ch] [ch]A7sus4[/ch] [ch]D[/ch]\r\nI'm gone to Carolina in my  mind.[/tab]\r\n\r\n[Verse 1]\r\n[tab][ch]D[/ch]              [ch]Cadd9[/ch]\r\nKaren, she's a silver sun you'd best[/tab]\r\n[tab][ch]G[/ch]                [ch]A[/ch]\r\nwalk her way and watch it shining.[/tab]\r\n[tab][ch]Bm[/ch]             [ch]G[/ch]                 [ch]A[/ch]\r\n   watch her   watch the morning come.[/tab]\r\n[tab][ch]G[/ch]              [ch]D/F#[/ch]             [ch]E7sus4/B[/ch] [ch]E7[/ch]  [ch]A7[/ch]\r\nA silver tear appearing now, Im cry-     ing ain't I?[/tab]\r\n[tab]    [ch]D[/ch]       [ch]Bm7[/ch]  [ch]Em7[/ch] [ch]A7sus4[/ch] [ch]D[/ch]\r\nI'm gone to Carolina in my  mind.[/tab]\r\n\r\n[Verse 2]\r\n[tab]      [ch]D[/ch]                 [ch]Cadd9[/ch]\r\nThere ain't no doubt in no ones mind that[/tab]\r\n[tab][ch]G[/ch]                [ch]A[/ch]\r\nloves the finest thing around.[/tab]\r\n[tab][ch]Bm[/ch]         [ch]G[/ch]                  [ch]A[/ch]\r\n   Whisper something soft and kind.[/tab]\r\n[tab]    [ch]G[/ch]                 [ch]D/F#[/ch]          [ch]E7sus4/B[/ch] [ch]E7[/ch]  [ch]A7[/ch]\r\nAnd hey babe, the skies on fire, Im dy-      ing ain't I?[/tab]\r\n[tab]         [ch]D[/ch]       [ch]Bm7[/ch]  [ch]Em7[/ch] [ch]A7sus4[/ch] [ch]D[/ch]      [ch]G[/ch]    [ch]A[/ch]\r\nSaid I\u2019m gone to Carolina in my  mind.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]D[/ch]              [ch]G[/ch]       [ch]Em7[/ch] [ch]A[/ch]\r\nIn my mind I'm gone to Carolina[/tab]\r\n[tab][ch]G[/ch]                 [ch]A[/ch]         [ch]Em7[/ch]                      [ch]A[/ch]\r\nCan't you see the sunshine? Can't you just feel the  moonshine[/tab]\r\n[tab]    [ch]D[/ch]              [ch]D/C#[/ch]   [ch]Em7/B[/ch]    [ch]A7sus4[/ch]\r\nAnd Ain't it just like a friend of mine to[/tab]\r\n[tab][ch]G[/ch]       [ch]D/F#[/ch]   [ch]E7[/ch]   [ch]A7[/ch]\r\nhit me  from behind[/tab]\r\n[tab]    [ch]D[/ch]       [ch]Bm7[/ch]  [ch]Em7[/ch] [ch]A7sus4[/ch] [ch]D[/ch]\r\nI'm gone to Carolina in my  mind.[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]D[/ch]                [ch]Cadd9[/ch]\r\nDark and silent, late last night[/tab]\r\n[tab]  [ch]G[/ch]                            [ch]A[/ch]\r\nI think I might have heard the highway  calling;[/tab]\r\n[tab][ch]Bm[/ch]           [ch]G[/ch]                    [ch]A[/ch]\r\n    geese in flight and dogs that bite.[/tab]\r\n[tab]    [ch]G[/ch]                   [ch]D/F#[/ch]        [ch]E7sus4/B[/ch] [ch]E7[/ch]\r\nAnd signs that might be omens say Im go------ing,[/tab]\r\n[tab]    [ch]A7[/ch]\r\nYes I gotta be going,[/tab]\r\n[tab]    [ch]D[/ch]       [ch]Bm7[/ch]  [ch]Em7[/ch] [ch]A7sus4[/ch] [ch]D[/ch]\r\nI'm gone to Carolina in my  mind.[/tab]\r\n\r\n[Bridge]\r\n[tab]            [ch]G[/ch]            [ch]A[/ch]               [ch]Bm[/ch]\r\nNow with a  holy host of others standing round me[/tab]\r\n[tab][ch]F#m[/ch]             [ch]Em[/ch]               [ch]G[/ch]      [ch]A7[/ch]\r\nStill Im on the dark side of the moon.[/tab]\r\n[tab]       [ch]C[/ch]                  [ch]G/B[/ch]             [ch]D[/ch]\r\nAnd it looks like it goes on like this forever.[/tab]\r\n[tab]            [ch]C9[/ch]      [ch]G/B[/ch]    [ch]Em9[/ch]\r\nYou must forgive me[/tab]\r\n[tab]    [ch]A7[/ch]*   [ch]D[/ch]       [ch]Bm7[/ch]  [ch]Em7[/ch] [ch]A7sus4[/ch] [ch]D[/ch]     [ch]G[/ch]   [ch]A[/ch]\r\nif I am   gone to Carolina in my  mind.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]D[/ch]              [ch]G[/ch]       [ch]Em7[/ch] [ch]A[/ch]\r\nIn my mind I'm gone to Carolina[/tab]\r\n[tab][ch]G[/ch]                 [ch]A[/ch]         [ch]Em7[/ch]                      [ch]A[/ch]\r\nCan't you see the sunshine? Can't you just feel the  moonshing[/tab]\r\n[tab]    [ch]D[/ch]              [ch]D/C#[/ch]   [ch]Em7/B[/ch]    [ch]A7sus4[/ch]\r\nAnd Ain't it just like a friend of mine to[/tab]\r\n[tab][ch]G[/ch]       [ch]D/F#[/ch]   [ch]E7[/ch]   [ch]A7[/ch]\r\nhit me  from behind[/tab]\r\n[tab]    [ch]D[/ch]       [ch]Bm7[/ch]  [ch]Em7[/ch] [ch]A7sus4[/ch] [ch]D[/ch]\r\nI'm gone to Carolina in my  mind.[/tab]\r\n\r\n[Outro]\r\n[ch]D/C#[/ch]   [ch]Em7/B[/ch]    [ch]A7sus4[/ch]\r\n\r\n[tab]    [ch]G[/ch]       [ch]D/F#[/ch] [ch]Em7[/ch]  [ch]A7sus4[/ch]  [ch]D[/ch]\r\nI\u2019m gone to Caro-lina in my   mind[/tab]\r\n\r\n[tab][ch]D/C#[/ch]   [ch]Em7/B[/ch]    [ch]A7sus4[/ch] [ch]G[/ch]       [ch]D/F#[/ch]   [ch]E7[/ch]   [ch]A7[/ch]\r\n                                           If I am[/tab]\r\n\r\n[tab][ch]D[/ch]         [ch]Bm7[/ch]   [ch]G[/ch]   [ch]D/F#[/ch]  [ch]Em7[/ch]  [ch]A7sus4[/ch]  [ch]D[/ch]\r\nGone to   Caro\u2014lin--a     in   my     mind[/tab]"
+}

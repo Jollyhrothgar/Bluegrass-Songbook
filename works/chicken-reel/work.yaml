@@ -1,0 +1,48 @@
+id: chicken-reel
+title: Chicken Reel
+artist: null
+composers: []
+default_key: D
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+- OldTime
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '14211'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=14211
+    author: Hannes Fehringer
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-16735.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16735'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16735
+    author: hum
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-16912.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16912'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16912
+    author: banjoman 1
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'

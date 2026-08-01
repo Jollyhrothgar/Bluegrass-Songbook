@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Windy and Warm",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "The Country Gentlemen",
+   "Doc Watson",
+   "Banjo Express",
+   "David Grisman"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:13:59",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 19
+ },
+ "candidate": null,
+ "content": null
+}

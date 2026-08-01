@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Whoa Mule",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "The Stanley Brothers",
+   "Foghorn Stringband",
+   "Clint Howard",
+   "Doc Watson"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:08:28",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

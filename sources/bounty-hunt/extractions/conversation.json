@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Conversation",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Bruce Hornsby",
+   "Jimmy Martin",
+   "Ralph Stanley",
+   "New Riders of the Purple Sage"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:15:47",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2668707,
+  "song_id": 3265632,
+  "song_name": "Conversation",
+  "artist_id": 35976,
+  "artist_name": "Catfish and the Bottlemen",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 72,
+  "difficulty": "novice",
+  "rating": 4.89875,
+  "date": "1555670500",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1282823
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/1609392/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/7/37733/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1555670500,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "To play without a Capo just transpose the tab -4\r\n\r\n[ch]Em[/ch] [ch]G[/ch] [ch]C[/ch]\r\n[ch]Em[/ch] [ch]G[/ch] [ch]C[/ch]\r\n[ch]Em[/ch] [ch]G[/ch] [ch]Am[/ch]\r\n[ch]Em[/ch] [ch]G[/ch] [ch]C[/ch]\r\n\r\n\r\n[Verse 1]\r\n[tab][ch]G[/ch]\r\nI'd love to find myself[/tab]\r\n[tab]                                   [ch]C[/ch]\r\nLooking straight up to you for the answers[/tab]\r\n[tab][ch]G[/ch]\r\nFor when I've found myself[/tab]\r\n[tab]                            [ch]C[/ch]\r\nWrapped up in my own little world[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab]          [ch]Em[/ch]         [ch]B7[/ch]\r\nCause you tell me to get through tomorrow[/tab]\r\n[tab][ch]G[/ch]          [ch]A[/ch]              [ch]C[/ch]\r\n'cause you know how it feels[/tab]\r\n\r\nYes, you know how it feels\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]       [ch]G[/ch]              [ch]C[/ch]\r\nWhen the perfect conversation[/tab]\r\n\r\nLooks you in the eyes\r\n[tab][ch]Em[/ch]            [ch]G[/ch]                       [ch]C[/ch]\r\nAnd says they get what you've been saying[/tab]\r\n\r\nThis whole time\r\n[tab][ch]Em[/ch]      [ch]G[/ch]              [ch]Am[/ch]\r\nYou can look for confirmation[/tab]\r\n\r\nAll your life\r\n[tab][ch]Em[/ch]      [ch]G[/ch]                     [ch]C[/ch]\r\nBut you ain't gonna find much better than this[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]G[/ch]\r\nYou stood beside myself[/tab]\r\n[tab]                       [ch]C[/ch]\r\nWhen everything lacked momentum[/tab]\r\n[tab][ch]G[/ch]\r\nYou stood beside myself[/tab]\r\n[tab]                           [ch]C[/ch]\r\nWhen I needed somebody who knows[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab]                      [ch]Em[/ch]      [ch]B7[/ch]\r\nWho knows just how to tell me how to get through tomorrow[/tab]\r\n[tab][ch]G[/ch]           [ch]A[/ch]           [ch]C[/ch]\r\n'Cause they know how it feels[/tab]\r\n\r\nYes, they know how it feels\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]       [ch]G[/ch]              [ch]C[/ch]\r\nWhen the perfect conversation[/tab]\r\n\r\nLooks you in the eyes\r\n[tab][ch]Em[/ch]            [ch]G[/ch]                       [ch]C[/ch]\r\nAnd says they get what you've been saying[/tab]\r\n\r\nThis whole time\r\n[tab][ch]Em[/ch]      [ch]G[/ch]              [ch]Am[/ch]\r\nYou can look for confirmation[/tab]\r\n\r\nAll your life\r\n[tab][ch]Em[/ch]      [ch]G[/ch]                     [ch]C[/ch]\r\nBut you ain't gonna find much better than this[/tab]\r\n\r\n\r\n[Bridge]\r\n[tab][ch]Am[/ch]          [ch]D[/ch]\r\nAnd I know, after all that's gone on[/tab]\r\n[tab][ch]Am[/ch]        [ch]D[/ch]\r\nThere's no, comparing us at all[/tab]\r\n[tab][ch]C[/ch]           [ch]D[/ch]            [ch]Em[/ch]\r\nHow did you expect me to leave it[/tab]\r\n[tab][ch]C[/ch]             [ch]D[/ch]                   [ch]Em[/ch]\r\nWhen you know me more than I know myself[/tab]\r\n[tab][ch]C[/ch]                 [ch]D[/ch]           [ch]Em[/ch]\r\nThe minute you're up for it I mean it[/tab]\r\n[tab][ch]C[/ch]     [ch]D[/ch]             [ch]Em[/ch]\r\nWe'll find a little moment in time[/tab]\r\n[tab][ch]C[/ch]                   [ch]D[/ch]\r\nTo set up somewhere different for a while[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]       [ch]G[/ch]              [ch]C[/ch]\r\nWhen the perfect conversation[/tab]\r\n\r\nLooks you in the eyes\r\n[tab][ch]Em[/ch]            [ch]G[/ch]                       [ch]C[/ch]\r\nAnd says they get what you've been saying[/tab]\r\n\r\nThis whole time\r\n[tab][ch]Em[/ch]      [ch]G[/ch]              [ch]Am[/ch]\r\nYou can look for confirmation[/tab]\r\n\r\nAll your life\r\n[tab][ch]Em[/ch]      [ch]G[/ch]                     [ch]C[/ch]\r\nBut you ain't gonna find aint gonna find, much better than this[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]       [ch]G[/ch]              [ch]C[/ch]\r\nWhen the perfect conversation[/tab]\r\n\r\nSheds a little light\r\n[tab][ch]Em[/ch]            [ch]G[/ch]                       [ch]C[/ch]\r\nAnd says they get what you've been saying[/tab]\r\n\r\nThis entire time\r\n[tab][ch]Em[/ch]      [ch]G[/ch]              [ch]Am[/ch]\r\nYou can look for confirmation[/tab]\r\n\r\nAll that ya like\r\n[tab][ch]Em[/ch]      [ch]G[/ch]                     [ch]C[/ch]\r\nBut you ain't gonna find ain't gonna find it[/tab]\r\n\r\n[Outro]\r\n[ch]Em[/ch] [ch]G[/ch] [ch]C[/ch]\r\n[ch]Em[/ch] [ch]G[/ch] [ch]C[/ch]\r\n[ch]Em[/ch] [ch]G[/ch] [ch]Am[/ch]\r\n[ch]Em[/ch] [ch]G[/ch] [ch]C[/ch]\r\n\r\nCheers!"
+}

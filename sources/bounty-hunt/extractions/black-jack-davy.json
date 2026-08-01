@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Black Jack Davy",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Hickory Wind",
+   "Clarence White",
+   "Joyce Andersen",
+   "The New Lost City Ramblers"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:05:03",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 7.9,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2276253,
+  "song_id": 2665007,
+  "song_name": "Black Jack Davy",
+  "artist_id": 8052,
+  "artist_name": "Steeleye Span",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 9,
+  "difficulty": "novice",
+  "rating": 4.867,
+  "date": "1515493225",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1097342
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/7/2/72924/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/5/3577/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1515493225,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]G[/ch]   [ch]F[/ch]   [ch]C[/ch] [ch]F[/ch]  [ch]G[/ch]\r\n[ch]G[/ch]   [ch]F[/ch]   [ch]C[/ch] [ch]F[/ch]  [ch]G[/ch]\r\n\r\n[Verse]\r\n[tab]                         [ch]F[/ch]\r\nLate last night when the squire come home[/tab]\r\n[tab]  [ch]C[/ch]       [ch]F[/ch]         [ch]G[/ch]\r\nEnquiring for his lady[/tab]\r\n[tab]                [ch]F[/ch]\r\nSome denied and some replied[/tab]\r\n[tab]      [ch]C[/ch]             [ch]F[/ch]            [ch]G[/ch]\r\nShe's gone with the Black Jack Davy[/tab]\r\n\r\n[Verse]\r\n[tab]                     [ch]F[/ch]\r\n\"Go saddle to me the bonny brown steed[/tab]\r\n[tab]        [ch]C[/ch]        [ch]F[/ch]            [ch]G[/ch]\r\nFor the grey was never so speedy[/tab]\r\n[tab]                           [ch]F[/ch]\r\nI'll ride all day and I'll ride all night[/tab]\r\n[tab]       [ch]C[/ch]          [ch]F[/ch]            [ch]G[/ch]\r\nTill I catch that Black Jack Davy\"[/tab]\r\n\r\n[Chorus]\r\n[tab]       [ch]D[/ch]                              [ch]Am[/ch]\r\nOh, he rode up hills and he rode down dales[/tab]\r\n[tab]     [ch]G[/ch]      [ch]C[/ch]         [ch]G[/ch]\r\nOver many a wild high mountain[/tab]\r\n[tab]    [ch]D[/ch]                          [ch]Am[/ch]\r\nAnd they did say, that saw him go[/tab]\r\n[tab]      [ch]G[/ch]    [ch]Bb[/ch] [ch]F[/ch]  [ch]Am[/ch] [ch]Em[/ch]     [ch]D[/ch]   [ch]C[/ch] [ch]Bb[/ch] [ch]A[/ch] [ch]D[/ch]  [ch]G[/ch]\r\nBlack Jack Davy, he is hunting[/tab]\r\n\r\n[Verse]\r\n[tab]                 [ch]F[/ch]\r\nHe rode east and he rode west[/tab]\r\n[tab]    [ch]C[/ch]      [ch]F[/ch]          [ch]G[/ch]\r\nAll in the morning early[/tab]\r\n[tab]                   [ch]F[/ch]\r\nUntil he spied his lady fair[/tab]\r\n[tab][ch]C[/ch]        [ch]F[/ch]          [ch]G[/ch]\r\nCold and wet and weary[/tab]\r\n\r\n[Verse]\r\n[tab]                        [ch]F[/ch]\r\n\"Why did you leave your house and land?[/tab]\r\n[tab][ch]C[/ch]           [ch]F[/ch]            [ch]G[/ch]\r\nWhy did you leave your baby?[/tab]\r\n[tab]                       [ch]F[/ch]\r\nWhy did you leave your own wedded lord[/tab]\r\n[tab]   [ch]C[/ch]           [ch]F[/ch]            [ch]G[/ch]\r\nTo go with the Black Jack Davy?\"[/tab]\r\n\r\n[Chorus]\r\n[tab]       [ch]D[/ch]                              [ch]Am[/ch]\r\nOh, he rode up hills and he rode down dales[/tab]\r\n[tab]     [ch]G[/ch]      [ch]C[/ch]         [ch]G[/ch]\r\nOver many a wild high mountain[/tab]\r\n[tab]    [ch]D[/ch]                          [ch]Am[/ch]\r\nAnd they did say, that saw him go[/tab]\r\n[tab]      [ch]G[/ch]    [ch]Bb[/ch] [ch]F[/ch]  [ch]Am[/ch] [ch]Em[/ch]     [ch]D[/ch]   [ch]C[/ch] [ch]Bb[/ch] [ch]A[/ch] [ch]D[/ch]  [ch]G[/ch]\r\nBlack Jack Davy, he is hunting[/tab]\r\n\r\n[Verse]\r\n[tab]                      [ch]F[/ch]\r\n\"What care I for your goose feather bed[/tab]\r\n[tab]     [ch]C[/ch]             [ch]F[/ch]            [ch]G[/ch]\r\nYour sheets turned down so bravely[/tab]\r\n[tab]                         [ch]F[/ch]\r\nWell, I may sleep on the cold hard ground[/tab]\r\n[tab] [ch]C[/ch]             [ch]F[/ch]             [ch]G[/ch]\r\nAlong with the Black Jack Davy\"[/tab]\r\n\r\n[Verse]\r\n[tab]                       [ch]F[/ch]\r\n\"Then I'll kick off my high healed shoes[/tab]\r\n[tab][ch]C[/ch]           [ch]F[/ch]          [ch]G[/ch]\r\nMade of the Spanish leather[/tab]\r\n[tab]                   [ch]F[/ch]\r\nAnd I'll put on my lowland brogues[/tab]\r\n[tab]    [ch]C[/ch]       [ch]F[/ch]           [ch]G[/ch]\r\nAnd skip it o'er the heather\"[/tab]\r\n\r\n[Chorus]\r\n[tab]       [ch]D[/ch]                              [ch]Am[/ch]\r\nOh, he rode up hills and he rode down dales[/tab]\r\n[tab]     [ch]G[/ch]      [ch]C[/ch]         [ch]G[/ch]\r\nOver many a wild high mountain[/tab]\r\n[tab]    [ch]D[/ch]                          [ch]Am[/ch]\r\nAnd they did say, that saw him go[/tab]\r\n[tab]      [ch]G[/ch]    [ch]Bb[/ch] [ch]F[/ch]  [ch]Am[/ch] [ch]Em[/ch]     [ch]D[/ch]   [ch]C[/ch] [ch]Bb[/ch] [ch]A[/ch] [ch]D[/ch]  [ch]G[/ch]\r\nBlack Jack Davy, he is hunting[/tab]\r\n\r\n[Instrumental]\r\n[ch]G[/ch]   [ch]F[/ch]   [ch]C[/ch] [ch]F[/ch]  [ch]G[/ch]\r\n[ch]G[/ch]   [ch]F[/ch]   [ch]C[/ch] [ch]F[/ch]  [ch]G[/ch]\r\n\r\n[Chorus]\r\n[tab]       [ch]D[/ch]                              [ch]Am[/ch]\r\nOh, he rode up hills and he rode down dales[/tab]\r\n[tab]     [ch]G[/ch]      [ch]C[/ch]         [ch]G[/ch]\r\nOver many a wild high mountain[/tab]\r\n[tab]    [ch]D[/ch]                          [ch]Am[/ch]\r\nAnd they did say, that saw him go[/tab]\r\n[tab]      [ch]G[/ch]    [ch]Bb[/ch] [ch]F[/ch]  [ch]Am[/ch] [ch]Em[/ch]     [ch]D[/ch]   [ch]C[/ch] [ch]Bb[/ch] [ch]A[/ch] [ch]D[/ch]  [ch]G[/ch]\r\nBlack Jack Davy, he is hunting[/tab]"
+}

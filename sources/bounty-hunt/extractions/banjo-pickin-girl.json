@@ -1,0 +1,85 @@
+{
+ "wanted": {
+  "title": "Banjo Pickin' Girl",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Stringbean",
+   "Locust Honey String Band",
+   "Gloria Belle",
+   "Alice Gerrard"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:06",
+ "status": "accepted",
+ "validation": {
+  "tier": "bluegrass-artist",
+  "score": 50,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 5227305,
+  "song_id": 24176694,
+  "song_name": "Banjo Pickin Girl",
+  "artist_id": 60271,
+  "artist_name": "Hazel Dickens",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1713189147",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "Originally recorded by the Coon Creek Sisters, this song has been re-recorded many times, including by Hazel Dickens and Alice Gerrard. A great version to learn it is performed by the Augusta Bluegrass Women, https://www.youtube.com/watch?v=HXF2SHvDkPc.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [
+    {
+     "join_field": " & ",
+     "artist": {
+      "id": 393684,
+      "name": "Alice Gerrard"
+     }
+    }
+   ],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/8/1896064/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/3/133302/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1713189147,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Chorus]\r\n\r\n[tab]        [ch]A[/ch]\r\nI\u2019m going \u2018round this world, baby mine (baby mine)[/tab]\r\n[tab][ch]D[/ch]                              [ch]A[/ch]\r\nGoing \u2018round this world, baby mine[/tab]\r\n[tab][ch]D[/ch]                               [ch]A[/ch]\r\nGoing \u2018round this world, I\u2019m a banjo pickin\u2019 girl[/tab]\r\n[tab]                        [ch]E[/ch]          [ch]A[/ch]\r\nI\u2019m going \u2018round this world, baby mine.[/tab]\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab]      [ch]A[/ch]\r\nI\u2019m going to Tennessee, baby mine (baby mine)[/tab]\r\n[tab][ch]D[/ch]                          [ch]A[/ch]\r\nGoing to Tennessee, baby mine[/tab]\r\n[tab][ch]D[/ch]                               [ch]A[/ch]\r\nGoing to Tennessee, don\u2019t  you try to follow me[/tab]\r\n[tab]                    [ch]E[/ch]          [ch]A[/ch]\r\nI\u2019m going to Tennessee, baby mine.[/tab]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab]      [ch]A[/ch]\r\nI\u2019m going to Arkansas, baby mine (baby mine)[/tab]\r\n[tab][ch]D[/ch]                         [ch]A[/ch]\r\nGoing to Arkansas, baby mine[/tab]\r\n[tab][ch]D[/ch]                             [ch]A[/ch]\r\nGoing to Arkansas,  you stay here with Ma and Pa[/tab]\r\n[tab]                   [ch]E[/ch]          [ch]A[/ch]\r\nI\u2019m going to Arkansas, baby mine.[/tab]\r\n\r\n\r\n[Verse 3]\r\n\r\n[tab]       [ch]A[/ch]\r\nI\u2019m going to Arizona, baby mine (baby mine)[/tab]\r\n[tab][ch]D[/ch]                       [ch]A[/ch]\r\nGoing to Arizona, baby mine[/tab]\r\n[tab][ch]D[/ch]                           [ch]A[/ch]\r\nGoing to Arizona,  I\u2019ll forget I ever known ya[/tab]\r\n[tab]                 [ch]E[/ch]           [ch]A[/ch]\r\nI\u2019m going to Arizona, baby mine.[/tab]\r\n\r\n\r\n[Verse 4]\r\n\r\n[tab]      [ch]A[/ch]\r\nI\u2019m going to Illinois, baby mine (baby mine)[/tab]\r\n[tab][ch]D[/ch]                         [ch]A[/ch]\r\nGoing to Illinois, baby mine[/tab]\r\n[tab][ch]D[/ch]                           [ch]A[/ch]\r\nGoing to Illinois,  find a banjo pickin\u2019 boy[/tab]\r\n[tab]      [ch]E[/ch]                      [ch]A[/ch]\r\nI\u2019m going to Illinois, baby mine.[/tab]\r\n\r\n\r\n[Verse 5]\r\n\r\n[tab]      [ch]A[/ch]\r\nI\u2019m going across the ocean, baby mine (baby mine)[/tab]\r\n[tab][ch]D[/ch]                             [ch]A[/ch]\r\nGoing across the ocean, baby mine[/tab]\r\n[tab][ch]D[/ch]                               [ch]A[/ch]\r\nGoing across the ocean,  If I don\u2019t change my notion[/tab]\r\n[tab]     [ch]E[/ch]                             [ch]A[/ch]\r\nI\u2019m going across the ocean, baby mine.[/tab]\r\n\r\n\r\n[Verse 6]\r\n\r\n[tab]           [ch]A[/ch]\r\nI\u2019m going North Carolina, baby mine (baby mine)[/tab]\r\n[tab]          [ch]D[/ch]                    [ch]A[/ch]\r\nGoing to North Carolina, baby mine[/tab]\r\n[tab]          [ch]D[/ch]                         [ch]A[/ch]\r\nGoing to North Carolina, and from there onto China[/tab]\r\n[tab]               [ch]E[/ch]                    [ch]A[/ch]\r\nI\u2019m going to North Carolina, baby mine.[/tab]\r\n\r\n\r\n[Verse 7]\r\n\r\n[tab]         [ch]A[/ch]\r\nIf you ain\u2019t got no money, baby mine (baby mine)[/tab]\r\n[tab]         [ch]D[/ch]                       [ch]A[/ch]\r\nIf you ain\u2019t got no money, baby mine[/tab]\r\n[tab]        [ch]D[/ch]                           [ch]A[/ch]\r\nIf you ain\u2019t got no money, get yourself another honey[/tab]\r\n[tab]     [ch]E[/ch]                             [ch]A[/ch]\r\nI\u2019m going \u2018round this world, baby mine.[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab]     [ch]A[/ch]\r\nI\u2019m going \u2018round this world, baby mine (baby mine)[/tab]\r\n[tab][ch]D[/ch]                               [ch]A[/ch]\r\nGoing \u2018round this world, baby mine[/tab]\r\n[tab][ch]D[/ch]                               [ch]A[/ch]\r\nGoing \u2018round this world, I\u2019m a banjo pickin\u2019 girl[/tab]\r\n[tab]     [ch]E[/ch]                             [ch]A[/ch]\r\nI\u2019m going \u2018round this world, baby mine.[/tab]"
+}

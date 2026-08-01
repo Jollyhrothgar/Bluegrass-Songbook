@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Snow Deer",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": false,
+  "artists": [
+   "Clarence \"Tater\" Tate",
+   "Country Ham",
+   "Kenny Baker",
+   "The Stanley Brothers"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:04:45",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 6.5,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1784928,
+  "song_id": 1631829,
+  "song_name": "Snow Deer",
+  "artist_id": 10435,
+  "artist_name": "Woody Guthrie",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 3,
+  "difficulty": "",
+  "rating": 4.734,
+  "date": "1448416136",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 143003
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/5/7/57448/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/7/474/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1448416136,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Capo I\r\n\r\n[tab]          [ch]G[/ch]        \r\nsnow deer mine, Moon's a-shine, through the pines[/tab]\r\n[tab]              [ch]D7[/ch]     \r\nWhile Mohawks sleep, Let us creep, through the vale[/tab]\r\n[tab]                                     [ch]G[/ch]      \r\nYour cowboy lover,   your heart will cover[/tab]\r\n[tab]          [ch]G[/ch]\r\nDon't hesitate, it is late, ponies wait[/tab]\r\n[tab]            [ch]D7[/ch]\r\nFor you and me by the trees in the dale[/tab]\r\n[tab]                                     [ch]G[/ch]\r\nHear tom-toms beating, let's hit the trail[/tab]\r\n\r\n[tab]          [ch]C[/ch]                       [ch]G[/ch]  \r\nMy pretty snow deer, say you will go, dear[/tab]\r\n[tab]          [ch]D7[/ch]\r\nFrom your side, I'll never part[/tab]\r\n[tab]                          [ch]G[/ch]\r\nEvery trail leads to your heart[/tab]\r\n[tab]             [ch]C[/ch]                 [ch]G[/ch]\r\nIt's time to marry, no time to tarry[/tab]\r\n[tab]       [ch]D[/ch]              [ch]D7[/ch]                 [ch]G[/ch]  \r\nLet me carry you from here my sweet snow deer[/tab]\r\n\r\n[tab]            [ch]G[/ch]                        \r\nThe red men come, Bullets hum, there'll be some[/tab]\r\n[tab]            [ch]D7[/ch] \r\nLeft on the trail, I can't fail, cling to me[/tab]\r\n[tab]                                    [ch]G[/ch]\r\nWe'll crown the story with love and glory[/tab]\r\n[tab]           [ch]G[/ch] \r\nNow, after all, must I fall, hear my call[/tab]\r\n[tab]         [ch]D7[/ch]\r\nAnd fly away while we may, can't you see?[/tab]\r\n[tab]                                              [ch]G[/ch]\r\nThose ranch lights gleaming, safe there we'll be[/tab]\r\n\r\n[tab]          [ch]C[/ch]                       [ch]G[/ch]  \r\nMy pretty snow deer, say you will go, dear[/tab]\r\n[tab]          [ch]D7[/ch]\r\nFrom your side, I'll never part[/tab]\r\n[tab]                          [ch]G[/ch]\r\nEvery trail leads to your heart[/tab]\r\n[tab]             [ch]C[/ch]                 [ch]G[/ch]\r\nIt's time to marry, no time to tarry[/tab]\r\n[tab]       [ch]D[/ch]              [ch]D7[/ch]                 [ch]G[/ch]  \r\nLet me carry you from here my sweet snow deer[/tab]\r\n\r\n[tab]          [ch]C[/ch]                       [ch]G[/ch]  \r\nMy pretty snow deer, say you will go, dear[/tab]\r\n[tab]          [ch]D7[/ch]\r\nFrom your side, I'll never part[/tab]\r\n[tab]                          [ch]G[/ch]\r\nEvery trail leads to your heart[/tab]\r\n[tab]             [ch]C[/ch]                 [ch]G[/ch]\r\nIt's time to marry, no time to tarry[/tab]\r\n[tab]       [ch]D[/ch]              [ch]D7[/ch]                 [ch]G[/ch]  \r\nLet me carry you from here my sweet snow deer[/tab]"
+}

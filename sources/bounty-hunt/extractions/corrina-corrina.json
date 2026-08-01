@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Corrina, Corrina",
+  "type": "Vocal",
+  "key": "A",
+  "difficulty": "Beginner",
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Gaither Carlton",
+   "Clint Howard",
+   "Jethro Burns",
+   "Fred Price"
+  ],
+  "notes": "bluesy standard",
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:28",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "F"
+ },
+ "candidate": {
+  "id": 2368147,
+  "song_id": 139981,
+  "song_name": "Corrina Corrina",
+  "artist_id": 10212,
+  "artist_name": "Bob Dylan",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 126,
+  "difficulty": "novice",
+  "rating": 4.86358,
+  "date": "1523650112",
+  "status": "approved",
+  "preset_id": 59017,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "F",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 3644
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/6/4/64395/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/9/49/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1546062064,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n[tab][ch]E[/ch]\r\nCorrina, Corrina[/tab]\r\n[tab][ch]A[/ch]              [ch]B[/ch]    [ch]A[/ch]  [ch]E[/ch]\r\nGal, where you been so long?[/tab]\r\n[tab][ch]A[/ch]\r\nCorrina, Corrina[/tab]\r\n[tab][ch]B[/ch]             [ch]A[/ch]       [ch]E[/ch]\r\nGal where you been so long?[/tab]\r\n[tab]       [ch]B[/ch]\r\nI been worr'in' about you, baby[/tab]\r\n[tab][ch]A[/ch]     [ch]B[/ch]            [ch]E[/ch]\r\nBaby, please come home[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab][ch]E[/ch]\r\nI got a bird that whistles[/tab]\r\n[tab][ch]A[/ch]       [ch]B[/ch]    [ch]A[/ch]    [ch]E[/ch]\r\nI got a bird that sings[/tab]\r\n[tab][ch]A[/ch]\r\nI got a bird that whistles[/tab]\r\n[tab][ch]B[/ch]       [ch]A[/ch]         [ch]E[/ch]\r\nI got a bird that sings[/tab]\r\n[tab]      [ch]B[/ch]\r\nBut I ain't a-got Corrina[/tab]\r\n[tab][ch]A[/ch]          [ch]B[/ch]      [ch]E[/ch]\r\nLife don't mean a thing[/tab]\r\n\r\n\r\n[Verse 3]\r\n[tab][ch]E[/ch]\r\nCorrina, Corrina[/tab]\r\n[tab][ch]A[/ch]           [ch]B[/ch]  [ch]A[/ch]  [ch]E[/ch]\r\nGal, you're on my mind[/tab]\r\n[tab][ch]A[/ch]\r\nCorrina, Corrina[/tab]\r\n[tab][ch]B[/ch]           [ch]A[/ch]  [ch]B[/ch]  [ch]E[/ch]\r\nGal, you're on my mind[/tab]\r\n[tab]      [ch]B[/ch]\r\nI was sittin' down thinking of you[/tab]\r\n[tab][ch]A[/ch]            [ch]B[/ch]         [ch]E[/ch]\r\nI just can't keep from crying[/tab]"
+}

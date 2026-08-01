@@ -1,0 +1,71 @@
+{
+ "wanted": {
+  "title": "Chicken",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "Don Reno",
+   "The Greenbriar Boys",
+   "Arthur Smith",
+   "The String Cheese Incident"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:15:41",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Ab"
+ },
+ "candidate": {
+  "id": 3507725,
+  "song_id": 6170906,
+  "song_name": "Chicken",
+  "artist_id": 427999,
+  "artist_name": "Your Neighbors (US, Tennessee)",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 39,
+  "difficulty": "novice",
+  "rating": 4.74769,
+  "date": "1610284137",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Ab",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1610284137,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "From video https://www.youtube.com/watch?v=H-NyTtDsrxU\r\n\r\n\r\n[Verse 1]\r\n[tab][ch]Am7[/ch]\r\n    Tongue tied again[/tab]\r\n[tab][ch]G[/ch]\r\n    How do I break it?[/tab]\r\n[tab][ch]G[/ch]                             [ch]Gmaj7[/ch]\r\n    A silence sits around our faces late[/tab]\r\n[tab][ch]Gmaj7[/ch]\r\nSo awkward I make it[/tab]\r\n\r\n[tab][ch]Am7[/ch]\r\n    I think that you like me[/tab]\r\n[tab][ch]Am7[/ch]\r\nBut I don't play maybe's[/tab]\r\n[tab][ch]Gmaj7[/ch]\r\n      So far deep inside my head again[/tab]\r\n[tab][ch]Gmaj7[/ch]\r\nWhen she's probably thinking[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab][ch]Am7[/ch]\r\nShoot your shot boy, give it a go[/tab]\r\n[tab][ch]Am7[/ch]\r\nWorst that'll happen is you hearing no[/tab]\r\n[tab][ch]Gmaj7[/ch]\r\nIf you don't then you'll never know[/tab]\r\n[tab]               [ch]G[/ch]\r\nI ain't got no time to wait[/tab]\r\n[tab][ch]Dm7[/ch]                                   [ch]D[/ch]\r\nYou don't get what you don't ask for[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]                         [ch]G[/ch]\r\nI just don't know how to bring it up[/tab]\r\n[tab]                    [ch]Am7[/ch]\r\nLet you know what I really want[/tab]\r\n[tab]               [ch]C[/ch]\r\nSurely I ain't worthy, have some mercy[/tab]\r\n[tab]      [ch]G[/ch]\r\nI'm a sorry soul[/tab]\r\n\r\n[tab][ch]G[/ch]                        [ch]Gmaj7[/ch]\r\nI just don't know how to bring it up[/tab]\r\n[tab]                  [ch]Am7[/ch]\r\nRack my head for another joke[/tab]\r\n[tab]               [ch]C[/ch]                                [ch]G[/ch] N.C.\r\nOther than the one that's right in front of you[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab]    [ch]Am[/ch]\r\nI'm Grade A bitch made[/tab]\r\n[tab]                  [ch]G[/ch]\r\nBut I want you to stay[/tab]\r\n[tab]                           [ch]D[/ch]\r\nI'm tryna find the perfect words to say to her like[/tab]\r\n[tab]          [ch]Am7[/ch]\r\nNo that's clich\u00e9, no one would say[/tab]\r\n[tab]                                   [ch]Gmaj7[/ch]\r\nSomething like that in this day in age[/tab]\r\n[tab][ch]Gmaj7[/ch]\r\nYou're overthinking everything[/tab]\r\n\r\n\r\n[Pre-Chorus]\r\n[tab][ch]Am7[/ch]\r\nShoot your shot boy, give it a go[/tab]\r\n[tab][ch]Am7[/ch]\r\nWorst that'll happen is you hearing no[/tab]\r\n[tab][ch]G[/ch]\r\nIf you don't then you'll never know[/tab]\r\n[tab][ch]G[/ch]\r\nI ain't got no time to wait[/tab]\r\n[tab][ch]Dm7[/ch]                              [ch]Cm[/ch]\r\nYou don't get what you don't ask for[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]                         [ch]G[/ch]\r\nI just don't know how to bring it up[/tab]\r\n[tab]                    [ch]Am7[/ch]\r\nLet you know what I really want[/tab]\r\n[tab]               [ch]C[/ch]\r\nSurely I ain't worthy, have some mercy[/tab]\r\n[tab]      [ch]G[/ch]\r\nI'm a sorry soul[/tab]\r\n\r\n[tab]                         [ch]Gmaj7[/ch]\r\nI just don't know how to bring it up[/tab]\r\n[tab]                  [ch]Am7[/ch]\r\nRack my head for another joke[/tab]\r\n[tab]               [ch]C[/ch]                                [ch]G[/ch]\r\nOther than the one that's right in front of you[/tab]\r\n\r\n\r\n[Bridge]\r\n[tab][ch]F[/ch]\r\n  Drinking again[/tab]\r\n[tab][ch]Bb[/ch]   [ch]Ebmaj7[/ch]\r\n  To find the words and[/tab]\r\n[tab][ch]F[/ch]\r\n  It's making me an[/tab]\r\n[tab]   [ch]Eb[/ch]       [ch]F[/ch]\r\nAn empty person[/tab]\r\n\r\n[tab][ch]F[/ch]\r\nSmoking again[/tab]\r\n[tab]   [ch]Ebmaj7[/ch]\r\nTo calm me down and[/tab]\r\n[tab][ch]F[/ch]                             [ch]Em[/ch]\r\n  All it's doing is making me vain[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]             [ch]G[/ch]\r\nI just don't know how to bring it up[/tab]\r\n[tab]                     [ch]Am[/ch]\r\nFriends or more what do ya really want?[/tab]\r\n[tab][ch]Am[/ch]\r\nFirstly I ain't thirsty, but I'm worried that[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]\r\n   I just don't know how to bring it up[/tab]\r\n[tab]                    [ch]Am7[/ch]\r\nLet you know what I really want[/tab]\r\n[tab]               [ch]C[/ch]\r\nSurely I ain't worthy, have some mercy[/tab]\r\n[tab]      [ch]G[/ch]\r\nI'm a sorry soul[/tab]\r\n\r\n[tab][ch]G[/ch]\r\nI just don't know how to bring it up[/tab]\r\n[tab]                  [ch]Am7[/ch]\r\nRack my head for another joke[/tab]\r\n[tab]               [ch]C[/ch]                                    [ch]G[/ch]\r\nOther than the one that's right in front of you, oh oh[/tab]\r\n\r\n\r\n[Outro]\r\n[tab][ch]G[/ch]\r\nI just don't know how to bring it up[/tab]\r\n[tab]                    [ch]Am7[/ch]\r\nLet you know what I really want[/tab]\r\n[tab]               [ch]C[/ch]\r\nSurely I ain't worthy, have some mercy[/tab]\r\n[tab]      [ch]G[/ch]\r\nI'm a sorry soul[/tab]\r\n\r\n[tab][ch]G[/ch]\r\nI just don't know how to bring it up[/tab]\r\n[tab]                  [ch]Am7[/ch]          [ch]Cm[/ch]\r\nRack my head for another joke[/tab]"
+}

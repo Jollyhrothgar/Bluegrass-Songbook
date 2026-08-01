@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Burglar Man",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "The Country Gentlemen",
+   "The Dixie Mountain Boys",
+   "The Bluegrass Cut-Ups",
+   "J.E. Mainer"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:15:33",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

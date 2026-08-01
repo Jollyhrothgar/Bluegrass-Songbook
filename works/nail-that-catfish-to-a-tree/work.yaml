@@ -1,0 +1,36 @@
+id: nail-that-catfish-to-a-tree
+title: Nail That Catfish to a Tree
+artist: null
+composers: []
+default_key: G
+tags:
+- Instrumental
+- OldTime
+- Scruggs
+- Bluegrass
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '20966'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20966
+    author: dholland
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-23666.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '23666'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23666
+    author: howsy-bee
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'

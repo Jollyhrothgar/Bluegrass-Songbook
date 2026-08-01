@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Shortenin' Bread",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": false,
+  "artists": [
+   "The Bluegrass Cut-Ups",
+   "Carlton Rawlings",
+   "John Hartford",
+   "Jimmy Martin and the Sunny Mountain Boys"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:04:42",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

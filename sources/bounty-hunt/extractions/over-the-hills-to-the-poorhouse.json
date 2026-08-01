@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Over the Hills to the Poorhouse",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Lester Flatt",
+   "The Country Gentlemen",
+   "Lester Flatt & Earl Scruggs",
+   "Mac Wiseman"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:12:41",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,34 @@
+id: manzanita
+title: Manzanita
+artist: null
+composers: []
+default_key: Dm
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '24654'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24654
+    author: banjoy
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: ensemble
+  format: otf
+  file: ensemble.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '937'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=937
+    author: rdiesel007
+    difficulty: Intermediate
+    imported_at: '2026-08-01'

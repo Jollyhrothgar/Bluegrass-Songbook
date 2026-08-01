@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Indian Creek",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "The String Cheese Incident",
+   "Red Smiley",
+   "Fiddlin\u2019 Arthur Smith & His Dixieliners",
+   "Buck Ryan"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:11:14",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

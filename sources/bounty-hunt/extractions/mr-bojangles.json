@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Mr. Bojangles",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "John Hartford",
+   "Nitty Gritty Dirt Band",
+   "David Nelson",
+   "Vassar Clements"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:06:37",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1153395,
+  "song_id": 104555,
+  "song_name": "Mr Bojangles",
+  "artist_id": 6400,
+  "artist_name": "Nitty Gritty Dirt Band",
+  "type": "Chords",
+  "part": "",
+  "version": 3,
+  "common_version": 1,
+  "votes": 875,
+  "difficulty": "novice",
+  "rating": 4.79428,
+  "date": "1336694401",
+  "status": "approved",
+  "preset_id": 61364,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 118263
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/5/5/55061/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/8/7/8763/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1593052355,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Capo on 7th fret\r\n\r\n[tab] [Lick1]    [Lick2]       G/B\r\ne-------|  e--------|  e---X-----|\r\nB-------|  B--------|  B---3-----|\r\nG-------|  G--------|  G---0-----|\r\nD-------|  D--------|  D---0-----|                \r\nA---0-2-|  A--------|  A---2-----|\r\nE-3-----|  E-3-2-1--|  E---X-----|[/tab]\r\n\r\n\r\n\r\n[Intro]\r\n\r\n[Lick1] [ch]C[/ch]    [ch]G/B[/ch]   [ch]Am[/ch]    \r\n\r\n\r\n[Verse]\r\n\r\n[tab]   [ch]C[/ch]           [ch]G/B[/ch]              [ch]Am[/ch]            [ch]Am/G[/ch]\r\nI knew a man Bojangles and he'd dance for you [/tab]\r\n[tab][ch]F[/ch]             [ch]G[/ch]     [Lick1]\r\n  In worn out shoes[/tab]\r\n[tab]     [ch]C[/ch]              [ch]G/B[/ch]               [ch]Am[/ch]           [ch]Am/G[/ch]\r\nWith silver hair, a ragged shirt, and baggy pants[/tab]\r\n[tab][ch]F[/ch]               [ch]G[/ch]    [Lick2]\r\n   The old soft shoe [/tab]\r\n[tab][ch]F[/ch]              [ch]Em[/ch]   [ch]E[/ch]           [ch]Am[/ch]    [ch]Am/G[/ch]\r\n  He jumped so high,  jumped so high[/tab]\r\n[tab][ch]D/F#[/ch]                        [ch]G[/ch]     [ch]G7[/ch]           [Lick1]\r\n    Then he lightly touched down[/tab]\r\n\r\n[tab]  [ch]C[/ch]            [ch]G/B[/ch]           [ch]Am[/ch]          [ch]Am/G[/ch] \r\nI met him in a cell in New Orleans I was [/tab]\r\n[tab][ch]F[/ch]           [ch]G[/ch]  [Lick1]\r\n  down and out[/tab]\r\n[tab]   [ch]C[/ch]               [ch]G/B[/ch]    [ch]Am[/ch]           [ch]Am/G[/ch]\r\nHe looked to me to be the eyes of age[/tab]\r\n[tab][ch]F[/ch]                    [ch]G[/ch]  [Lick2]\r\n   as he spoke right out [/tab]\r\n[tab][ch]F[/ch]               [ch]Em[/ch]  [ch]E[/ch]           [ch]Am[/ch]    [ch]Am/G[/ch] [ch]D/F#[/ch]\r\n   He talked of life, talked of life,            he laughed[/tab]\r\n[tab]                      [ch]G[/ch]      [ch]G7[/ch]      [Lick1]\r\nclicked his heels and stepped[/tab]\r\n \r\n[tab]   [ch]C[/ch]              [ch]G/B[/ch]               [ch]Am[/ch]            [ch]Am/G[/ch]\r\nHe said his name \"Bojangles\" and he danced a lick [/tab]\r\n[tab][ch]F[/ch]             [ch]G[/ch]    [Lick1]\r\n  across the cell[/tab]\r\n[tab]   [ch]C[/ch]                     [ch]G/B[/ch]                     [ch]Am[/ch]             [ch]Am/G[/ch]\r\nHe grabbed his pants and spread his stance,Oh he jumped so high [/tab]\r\n[tab][ch]F[/ch]                          [ch]G[/ch]     [Lick2]\r\n   and then he clicked his heels [/tab]\r\n[tab][ch]F[/ch]              [ch]Em[/ch]     [ch]E[/ch]        [ch]Am[/ch]     [ch]Am/G[/ch]\r\n   He let go a laugh, let go a laugh[/tab]\r\n[tab][ch]D/F#[/ch]                                [ch]G[/ch]       [ch]G7[/ch] \r\n     and shook back his clothes all around[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab][ch]Am[/ch]       [ch]G[/ch]        [ch]Am[/ch]       [ch]G[/ch]\r\n   Mr. Bojangles,    Mr. Bojangles[/tab]\r\n[tab][ch]Am[/ch]       [ch]G[/ch]        [ch]C[/ch]     [ch]G/B[/ch]  [ch]Am[/ch] [Lick1]\r\n   Mr. Bojangles, dance[/tab]\r\n\r\n\r\n[Verse]\r\n\r\n[tab]   [ch]C[/ch]                   [ch]G/B[/ch]                [ch]Am[/ch]           [ch]Am/G[/ch]\r\nHe danced for those at minstrel shows and county fairs[/tab]\r\n[tab][ch]F[/ch]                [ch]G[/ch]    [Lick1]\r\n  throughout the south[/tab]\r\n[tab]   [ch]C[/ch]                      [ch]G/B[/ch]              [ch]Am[/ch]           [ch]Am/G[/ch]\r\nHe spoke through tears of 15 years how his dog and him[/tab]\r\n[tab][ch]F[/ch]           [ch]G[/ch]     [Lick2]\r\n  traveled about[/tab]\r\n[tab][ch]F[/ch]                [ch]Em[/ch]   [ch]E[/ch]            [ch]Am[/ch]    [ch]Am/G[/ch]\r\n  The dog up and died,   he up and died[/tab]\r\n[tab][ch]D/F#[/ch]                             [ch]G[/ch]       [ch]G7[/ch] \r\n     And after 20 years he still grieves [/tab]\r\n\r\n[tab]   [ch]C[/ch]                   [ch]G/B[/ch]             [ch]Am[/ch]           [ch]Am/G[/ch]\r\nHe said I dance now at every chance in honky tonks[/tab]\r\n[tab][ch]F[/ch]                [ch]G[/ch]    [Lick1]\r\n  for drinks and tips[/tab]\r\n[tab]    [ch]C[/ch]               [ch]G/B[/ch]                [ch]Am[/ch]          [ch]Am/G[/ch]\r\nBut most the time I spend behind these county bars[/tab]\r\n[tab][ch]F[/ch]                   [ch]G[/ch]     [Lick2]\r\n  'cause I drinks a bit[/tab]\r\n[tab][ch]F[/ch]               [ch]Em[/ch]    [ch]E[/ch]                   [ch]Am[/ch]    [ch]Am/G[/ch]\r\n   He shook his head, and as he shook his head[/tab]\r\n[tab][ch]D/F#[/ch]                        [ch]G[/ch]      [ch]G7[/ch] \r\n    I heard someone ask him please plee-ease[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab][ch]Am[/ch]        [ch]G[/ch]        [ch]Am[/ch]         [ch]G[/ch]\r\n    Mr. Bojangles,      Mr. Bojangles[/tab]\r\n[tab][ch]Am[/ch]       [ch]G[/ch]          [ch]C[/ch]     [ch]G/B[/ch]    [ch]Am[/ch]    [ch]Am/G[/ch]    [ch]C[/ch] ......\r\n   Mr. Bojangles,   dance[/tab]"
+}

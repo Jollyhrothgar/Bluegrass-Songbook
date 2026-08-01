@@ -1,0 +1,46 @@
+id: old-dangerfield
+title: Old Dangerfield
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+- Clawhammer
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '11688'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11688
+    author: schlange
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-18710.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '18710'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=18710
+    author: delmando
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-23608.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '23608'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23608
+    author: Yohansen
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'

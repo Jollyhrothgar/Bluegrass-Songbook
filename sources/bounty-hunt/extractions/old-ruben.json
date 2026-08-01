@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Old Ruben",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Clint Howard",
+   "Doc Watson",
+   "Carolina Tar Heels",
+   "Wade Mainer"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:06:58",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

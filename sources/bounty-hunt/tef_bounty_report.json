@@ -1,0 +1,110 @@
+[
+ {
+  "title": "Back Up and Push",
+  "site": "fiddle-hangout",
+  "tab_id": "2269_tef",
+  "author": "Live on What You Grow",
+  "alternates": [],
+  "outcome": "imported:back-up-and-push"
+ },
+ {
+  "title": "Bill Cheatham",
+  "site": "fiddle-hangout",
+  "tab_id": "1968_tef",
+  "author": "Live on What You Grow",
+  "alternates": [],
+  "outcome": "imported:bill-cheatham"
+ },
+ {
+  "title": "Bill Cheatham",
+  "site": "banjo-hangout",
+  "tab_id": "22337_tef",
+  "author": "HOWDYDOODY",
+  "alternates": [
+   "23401_tef",
+   "24082_tef",
+   "24293_tef",
+   "26131_tef"
+  ],
+  "outcome": "imported:bill-cheatham"
+ },
+ {
+  "title": "Chicken Reel",
+  "site": "banjo-hangout",
+  "tab_id": "16912_tef",
+  "author": "banjoman 1",
+  "alternates": [
+   "18650_tef",
+   "21283_tef"
+  ],
+  "outcome": "imported:chicken-reel"
+ },
+ {
+  "title": "Elzic's Farewell",
+  "site": "banjo-hangout",
+  "tab_id": "19407_tef",
+  "author": "delmando",
+  "alternates": [],
+  "outcome": "imported:elzic-s-farewell"
+ },
+ {
+  "title": "Old Dangerfield",
+  "site": "banjo-hangout",
+  "tab_id": "23608_tef",
+  "author": "Yohansen",
+  "alternates": [
+   "25225_tef"
+  ],
+  "outcome": "imported:old-dangerfield"
+ },
+ {
+  "title": "Reuben",
+  "site": "banjo-hangout",
+  "tab_id": "17816_tef",
+  "author": "cmcnabb",
+  "alternates": [
+   "27406_tef"
+  ],
+  "outcome": "imported:reuben"
+ },
+ {
+  "title": "Southern Flavor",
+  "site": "banjo-hangout",
+  "tab_id": "22562_tef",
+  "author": "janolov",
+  "alternates": [
+   "22563_tef"
+  ],
+  "outcome": "imported:southern-flavor"
+ },
+ {
+  "title": "Sugar in the Gourd",
+  "site": "banjo-hangout",
+  "tab_id": "16191_tef",
+  "author": "Julian44_4",
+  "alternates": [
+   "16192_tef"
+  ],
+  "outcome": "imported:sugar-in-the-gourd"
+ },
+ {
+  "title": "Sweet Georgia Brown",
+  "site": "banjo-hangout",
+  "tab_id": "23181_tef",
+  "author": "wilbanjo",
+  "alternates": [
+   "23184_tef",
+   "25133_tef",
+   "26185_tef"
+  ],
+  "outcome": "imported:sweet-georgia-brown"
+ },
+ {
+  "title": "Manzanita",
+  "site": "flatpicker-hangout",
+  "tab_id": "937_tef",
+  "author": "rdiesel007",
+  "alternates": [],
+  "outcome": "imported:manzanita"
+ }
+]

@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Duelling Banjos",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Lester Flatt & Earl Scruggs",
+   "Lester Flatt",
+   "Eric Weissberg",
+   "Hamilton County Bluegrass Band"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:37",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

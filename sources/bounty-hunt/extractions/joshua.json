@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Joshua",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Nitty Gritty Dirt Band",
+   "The Lewis Family",
+   "Dolly Parton",
+   "Rhonda Vincent"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:11:18",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 110.7,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 169071,
+  "song_id": 152164,
+  "song_name": "Joshua",
+  "artist_id": 11081,
+  "artist_name": "Dolly Parton",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 34,
+  "difficulty": "",
+  "rating": 4.8488,
+  "date": "1109808000",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 48203
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/5/4/54694/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/1/4186/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1109808000,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Artist - Dolly Parton\r\nSong   - Joshua\r\n\r\n[tab][ch]D[/ch]\r\nWell a good ways down the railroad track [/tab]\r\n[tab][ch]G[/ch]\r\nThere was this little old rundown shack [/tab]\r\n[tab][ch]A[/ch]\r\nAnd in it lived a man I'd never seen [/tab]\r\n[tab][ch]D[/ch]\r\nFolks said he was a mean and a vicious man [/tab]\r\n[tab][ch]G[/ch]\r\nAnd you better not set foot on his land [/tab]\r\n[tab][ch]A[/ch]                                   [ch]D[/ch]\r\nI didn't think nobody could be that mean [/tab]\r\n[tab][ch]D[/ch]\r\nSo I took me out walking down the railroad track [/tab]\r\n[tab][ch]G[/ch]\r\nI was a-gonna go down to that little old shack [/tab]\r\n[tab]         [ch]A[/ch]                                         [ch]D[/ch]\r\nAnd just find out if all them things I'd heard was true [/tab]\r\n\r\nThere was a big black dog laying out in the yard \r\n[tab]       [ch]G[/ch]\r\nAnd it growled at me and I swallowed hard [/tab]\r\n[tab]      [ch]A[/ch]                               [ch]D[/ch]\r\nAnd I heard somebody say well who are you [/tab]\r\n\r\nOh and there he stood in the door of that shack \r\n[tab]    [ch]G[/ch]\r\nHis beard and his hair was long and black [/tab]\r\n[tab]    [ch]A[/ch]                               [ch]D[/ch]\r\nAnd he was the biggest man I'd ever seen [/tab]\r\n\r\nWhen he spoke his voice was low and deep    \r\n[tab]    [ch]G[/ch]\r\nBut he just didn't frighten me [/tab]\r\n[tab]       [ch]A[/ch]                             [ch]D[/ch]\r\n'Cause somehow I just knew he wasn't mean [/tab]\r\n\r\nHe said what you doing snooping 'round my place \r\n[tab]    [ch]G[/ch]\r\nAnd I saw a smile come across his face [/tab]\r\n[tab][ch]A[/ch]\r\nSo I smiled back and I told him who I was [/tab]\r\n[tab][ch]D[/ch]\r\nHe said come on in and pull you up a chair [/tab]\r\n[tab][ch]G[/ch]\r\nYou might as well since you already here [/tab]\r\n[tab]    [ch]A[/ch]                       [ch]D[/ch]\r\nAnd he said you can call me Joshua [/tab]\r\n\r\n[tab][ch]G[/ch]      [ch]D[/ch]\r\nJoshua Joshua [/tab]\r\n[tab][ch]A[/ch]                         [ch]D[/ch]\r\nWhatcha doing living here all alone [/tab]\r\n[tab][ch]G[/ch]      [ch]D[/ch]\r\nJoshua Joshua [/tab]\r\n[tab][ch]A[/ch]                       [ch]D[/ch]\r\nAin't you got nobody to call your own [/tab]\r\n[tab]   [ch]A[/ch]     [ch]E[/ch]\r\nNo no no no [/tab]\r\n\r\n[tab][ch]E[/ch]\r\nWe talked 'til the sun was clean out of sight [/tab]\r\n[tab]    [ch]A[/ch]\r\nAnd we still talking when it come daylight [/tab]\r\n[tab]    [ch]B[/ch]\r\nAnd there was just so much we had to say hey [/tab]\r\n[tab][ch]E[/ch]\r\nI'd spent my life in an orphan's home [/tab]\r\n[tab]    [ch]A[/ch]\r\nAnd just like him I was all alone [/tab]\r\n[tab]   [ch]B[/ch]                                [ch]E[/ch]\r\nSo I said yeah when he asked if I'd stay [/tab]\r\n\r\nOh we grew closer as time went on \r\n[tab]         [ch]A[/ch]\r\nAnd that little old shack it was a happy home [/tab]\r\n[tab][ch]B[/ch]\r\nAnd we just couldn't help but fall in love [/tab]\r\n[tab][ch]E[/ch]\r\nThat big black dog and that little old shack [/tab]\r\n[tab][ch]A[/ch]\r\nSitting down by the railroad track [/tab]\r\n[tab]     [ch]B[/ch]                             [ch]D[/ch]\r\nIt's plenty good enough for me and Joshua [/tab]\r\n\r\n[tab][ch]G[/ch]      [ch]D[/ch]\r\nJoshua Joshua [/tab]\r\n[tab]    [ch]A[/ch]                          [ch]E[/ch]\r\nWhy you're just what I've been looking for [/tab]\r\n[tab][ch]A[/ch]      [ch]E[/ch]\r\nJoshua Joshua [/tab]\r\n[tab][ch]B[/ch]                           [ch]E[/ch]\r\nYou ain't gonna be lonesome anymore [/tab]\r\n[tab][ch]B[/ch]\r\nNo no [/tab]\r\n\r\n\r\n[tab][ch]B[/ch]          [ch]A[/ch] [ch]E[/ch]\r\nMe and Joshua [/tab]\r\nMe and Joshua \r\nMe and Joshua yeah yeah \r\nMe and Joshua"
+}

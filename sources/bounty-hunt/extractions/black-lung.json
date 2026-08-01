@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Black Lung",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 5,
+  "core": false,
+  "artists": [
+   "The Lonesome Ace Stringband",
+   "The Dead South",
+   "Steve Earle",
+   "Strange Creek Singers"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:15:08",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 111.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 2876498,
+  "song_id": 3713981,
+  "song_name": "Black Lung",
+  "artist_id": 66733,
+  "artist_name": "The Dead South",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 75,
+  "difficulty": "",
+  "rating": 4.76156,
+  "date": "1572440394",
+  "status": "approved",
+  "preset_id": 86259,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1246103
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/1627087/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/3/33758/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1578950821,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\nBass - [ch]E[/ch] [ch]B[/ch]  [ch]E[/ch] [ch]B[/ch]  [ch]E[/ch] [ch]B[/ch]  [ch]E[/ch] [ch]B[/ch]\r\nBanjo & Guitar - [ch]Em[/ch] [ch]G[/ch] [ch]Em[/ch] [ch]G[/ch] [ch]Em[/ch] [ch]G[/ch] [ch]Em[/ch] [ch]G[/ch]\r\n\r\n[Verse]\r\n[tab][ch]Em[/ch]                                                        [ch]G[/ch]\r\nBasically we are all alone in the centre of a pickaxe mine.[/tab]\r\n[tab][ch]Em[/ch]\r\nBlack lung stings as the pickaxe swings.[/tab]\r\n[tab][ch]Em[/ch]                               [ch]G[/ch]\r\nAs the void of the mine closes in,[/tab]\r\n[tab][ch]Em[/ch]\r\nThe Devil came and the angels sang.[/tab]\r\n[tab][ch]Em[/ch]                      [ch]G[/ch]\r\nA Song of the Holy Ghost.[/tab]\r\n[tab][ch]Em[/ch]\r\nTempted the soul from the pennies to the gold,[/tab]\r\n[tab][ch]Em[/ch]                                [ch]G[/ch]\r\nLike the dust I spit from my mouth.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]                                             [ch]G[/ch]\r\nWooa Wooa oooo oo oo oooooooo oo oo oooooooo oo[/tab]\r\n[tab][ch]Em[/ch]                                             [ch]G[/ch]\r\nWooa Wooa oooo oo oo oooooooo oo oo oooooooo oo[/tab]\r\n\r\n[Verse]\r\n[tab][ch]Em[/ch]\r\nRemember the night with the barroom fight[/tab]\r\n[tab][ch]Em[/ch]                                 [ch]G[/ch]\r\nWhere I killed all my best friends.[/tab]\r\n[tab][ch]Em[/ch]\r\nWe gambled it away with the whiskey open keg,[/tab]\r\n[tab][ch]Em[/ch]                       [ch]G[/ch]\r\nAnd we never saw it again.[/tab]\r\n[tab][ch]Em[/ch]\r\nWell I had a wife that I met back in high school;[/tab]\r\n[tab][ch]Em[/ch]                    [ch]G[/ch]\r\nHer name was Lyla-Jean.[/tab]\r\n[tab][ch]Em[/ch]\r\nWe saved away to escape some place[/tab]\r\n[tab][ch]Em[/ch]                          [ch]G[/ch]\r\nOn a local miner's minor pay.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]                                             [ch]G[/ch]\r\nWooa Wooa oooo oo oo oooooooo oo oo oooooooo oo[/tab]\r\n[tab][ch]Em[/ch]                                             [ch]G[/ch]\r\nWooa Wooa oooo oo oo oooooooo oo oo oooooooo oo[/tab]\r\n\r\n[Banjo Break]\r\n\r\n[Verse]\r\n[tab][ch]Em[/ch]\r\nWe saved so long, the fall came and gone[/tab]\r\n[tab][ch]Em[/ch]               [ch]G[/ch]\r\nAt Least 27 times.[/tab]\r\n[tab][ch]Em[/ch]\r\nIt fell through the floorboards into deep dark darkness,[/tab]\r\n[tab][ch]Em[/ch]                       [ch]G[/ch]\r\nAnd we never saw it again.[/tab]\r\n[tab][ch]Em[/ch]\r\nSo West Virginia's home and that's where we're staying[/tab]\r\n[tab][ch]Em[/ch]                            [ch]G[/ch]\r\nTo the blade of the bible hymn.[/tab]\r\n[tab][ch]Em[/ch]\r\nJesus says we're wicked so we just keep on pickin'[/tab]\r\n[tab][ch]Em[/ch]                          [ch]G[/ch]\r\nAt the scab of the open mine[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]                                             [ch]G[/ch]\r\nWooa Wooa oooo oo oo oooooooo oo oo oooooooo oo[/tab]\r\n[tab][ch]Em[/ch]                                             [ch]G[/ch]\r\nWooa Wooa oooo oo oo oooooooo oo oo oooooooo oo[/tab]\r\n[tab][ch]Em[/ch]                                             [ch]G[/ch]\r\nWooa Wooa oooo oo oo oooooooo oo oo oooooooo oo[/tab]\r\n[tab][ch]Em[/ch]   N.C.                                      [ch]Em[/ch]\r\nWooa Wooa oooo oo oo oooooooo oo oo oooooooo oo[/tab]\r\n\r\n[Outro]\r\n[tab][ch]Em[/ch]\r\n(Single strum)[/tab]"
+}

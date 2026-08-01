@@ -1,0 +1,157 @@
+# title: Carolina in My Mind
+# artist: James Taylor
+# source_url: https://tabs.ultimate-guitar.com/tab/james-taylor/carolina-in-my-mind-chords-2476874
+# fetched_at: 2026-08-01T11:09:17
+
+------------------------------------------------------------------------------------------
+                        Carolina in My Mind – James Taylor
+------------------------------------------------------------------------------------------
+
+Standard tuning
+In the key of F (D relative to capo)
+Capo on 3
+Tabbed by Robert Saunders
+
+[Chords]
+
+D:        XX0232
+G5/F#:    2X0033
+Em7:      020030 (or 022030. In the intro play: 0X0033)
+Gsus2/A:  X00033 (also Dsus4/A)
+G:        320033 (JT nearly always plays it with 3rd fret second string)
+A:        X02220
+D/C#:     X40232
+Em7/B:    X2003X
+A7sus4:   X0203X
+Cadd9:    X32030
+Bm:       X24432 (or play Bm7: X24232)
+Bm7:      X2023X
+E7sus4/B: X20200 (or X20230)
+F#m:      244222
+G/B:      X20003
+Em9:      0X4035
+A7*:      X00035
+
+[Notes]
+
+James Taylor plays this song a bit differently every time. This tab is transcibed from the way
+he plays it in the tutorial on his website: https://www.youtube.com/watch?v=J8-5czYJvPM
+
+I’ve not included James Taylor’s trademark embellishments on the A chords but they are all based
+around A(X02220) Asus2(X02200) Asus4(X02230) A7(X0202) A7sus2(X0200)and A7sus4(X02030).
+
+To keep the tab easy to read, I’ve not added all the walk-up and -downs but here is the tab for
+the walk up in the second line of verse 3:
+
+   G                            A                            Bm
+e|----------------------------|---------------0------------|-----|
+B|-0------2------3------0-----|-2------3-------------------|-----|
+G|-0------0------0------0-----|-2------2-------------------|-----|
+D|----------------------------|----------------------------|-----|
+A|--------0------2------------|-0------0-------------1-----|-2---|
+E|-3--------------------3-----|----------------------------|-----|
+
+  Think I mighta heard  the     high—--way    call---ing
+
+
+
+[Intro]
+D  G  G5/F#  Em7 Gsus2/A
+
+[Chorus]
+D              G       Em7 A
+In my mind I'm gone to Carolina
+G                 A         Em7                      A
+Can't you see the sunshine? Can't you just feel the  moonshine
+    D              D/C#   Em7/B    A7sus4
+And Ain't it just like a friend of mine to
+G       D/F#   E7   A7
+hit me  from behind
+    D       Bm7  Em7 A7sus4 D
+I'm gone to Carolina in my  mind.
+
+[Verse 1]
+D              Cadd9
+Karen, she's a silver sun you'd best
+G                A
+walk her way and watch it shining.
+Bm             G                 A
+   watch her   watch the morning come.
+G              D/F#             E7sus4/B E7  A7
+A silver tear appearing now, Im cry-     ing ain't I?
+    D       Bm7  Em7 A7sus4 D
+I'm gone to Carolina in my  mind.
+
+[Verse 2]
+      D                 Cadd9
+There ain't no doubt in no ones mind that
+G                A
+loves the finest thing around.
+Bm         G                  A
+   Whisper something soft and kind.
+    G                 D/F#          E7sus4/B E7  A7
+And hey babe, the skies on fire, Im dy-      ing ain't I?
+         D       Bm7  Em7 A7sus4 D      G    A
+Said I’m gone to Carolina in my  mind.
+
+[Chorus]
+D              G       Em7 A
+In my mind I'm gone to Carolina
+G                 A         Em7                      A
+Can't you see the sunshine? Can't you just feel the  moonshine
+    D              D/C#   Em7/B    A7sus4
+And Ain't it just like a friend of mine to
+G       D/F#   E7   A7
+hit me  from behind
+    D       Bm7  Em7 A7sus4 D
+I'm gone to Carolina in my  mind.
+
+[Verse 3]
+D                Cadd9
+Dark and silent, late last night
+  G                            A
+I think I might have heard the highway  calling;
+Bm           G                    A
+    geese in flight and dogs that bite.
+    G                   D/F#        E7sus4/B E7
+And signs that might be omens say Im go------ing,
+    A7
+Yes I gotta be going,
+    D       Bm7  Em7 A7sus4 D
+I'm gone to Carolina in my  mind.
+
+[Bridge]
+            G            A               Bm
+Now with a  holy host of others standing round me
+F#m             Em               G      A7
+Still Im on the dark side of the moon.
+       C                  G/B             D
+And it looks like it goes on like this forever.
+            C9      G/B    Em9
+You must forgive me
+    A7*   D       Bm7  Em7 A7sus4 D     G   A
+if I am   gone to Carolina in my  mind.
+
+[Chorus]
+D              G       Em7 A
+In my mind I'm gone to Carolina
+G                 A         Em7                      A
+Can't you see the sunshine? Can't you just feel the  moonshing
+    D              D/C#   Em7/B    A7sus4
+And Ain't it just like a friend of mine to
+G       D/F#   E7   A7
+hit me  from behind
+    D       Bm7  Em7 A7sus4 D
+I'm gone to Carolina in my  mind.
+
+[Outro]
+D/C#   Em7/B    A7sus4
+
+    G       D/F# Em7  A7sus4  D
+I’m gone to Caro-lina in my   mind
+
+D/C#   Em7/B    A7sus4 G       D/F#   E7   A7
+                                           If I am
+
+D         Bm7   G   D/F#  Em7  A7sus4  D
+Gone to   Caro—lin--a     in   my     mind

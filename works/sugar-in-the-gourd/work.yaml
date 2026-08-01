@@ -1,0 +1,45 @@
+id: sugar-in-the-gourd
+title: Sugar In the Gourd
+artist: null
+composers: []
+default_key: null
+tags:
+- Instrumental
+- Clawhammer
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '16189'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16189
+    author: Julian44_4
+    difficulty: Intermediate
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-16190.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16190'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16190
+    author: Julian44_4
+    difficulty: Intermediate
+    tuning: Double C (gCGCD)
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-16191.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16191'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16191
+    author: Julian44_4
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'

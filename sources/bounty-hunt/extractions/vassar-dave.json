@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Vassar & Dave",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Norman Blake",
+   "Jethro Burns",
+   "Vassar Clements",
+   "Sam Bush"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:13:56",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

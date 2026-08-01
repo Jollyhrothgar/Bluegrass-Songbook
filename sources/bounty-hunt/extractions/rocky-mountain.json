@@ -1,0 +1,91 @@
+{
+ "wanted": {
+  "title": "Rocky Mountain",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Hobart Smith",
+   "Fiddlin\u2019 Doc Roberts",
+   "Kyle Creed",
+   "Fred Galligher"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:12:52",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 3501866,
+  "song_id": 6166025,
+  "song_name": "My Rocky Mountain",
+  "artist_id": 35102,
+  "artist_name": "Erik Sumo Band",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "novice",
+  "rating": 0,
+  "date": "1610353512",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "Converted from youtube video and it looks there is no chords on the internet for this song anywhere else.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": {
+    "name": "Trafo, Budapest",
+    "serie": null,
+    "venue": {
+     "name": "Trafo",
+     "area": {
+      "name": "Budapest",
+      "country": {
+       "name_english": "Iceland"
+      }
+     }
+    },
+    "date_start": 1191110400,
+    "date_end": 1191110400,
+    "cancelled": 0,
+    "type": "concert",
+    "comment": "",
+    "video_urls": []
+   },
+   "recording_artists": [],
+   "video_urls": [
+    "https://www.youtube.com/watch?v=JSH330_G1Lg"
+   ],
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1610353512,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]Em[/ch]  [ch]E/Eb[/ch]  [ch]Em[/ch]  [ch]E/Eb[/ch]\r\n[ch]Em[/ch]  [ch]E/Eb[/ch]  [ch]Em[/ch]  [ch]E/Eb[/ch]\r\n\r\n[Verse]\r\n[tab][ch]E[/ch]              [ch]G[/ch]   [ch]Am[/ch]              [ch]D[/ch]\r\nGreat pile of news  drowned by the sea[/tab]\r\n[tab]        [ch]G[/ch]           [ch]B[/ch]           [ch]Em[/ch]\r\nI dont care I dont care I dont care[/tab]\r\n[tab]             [ch]G[/ch]     [ch]A[/ch]            [ch]D[/ch]\r\nMy rocky mountain  waiting for me[/tab]\r\n[tab]       [ch]G[/ch]         [ch]B[/ch]        [ch]Em[/ch]\r\nI'm aware I'm aware i'm aware[/tab]\r\n[tab][ch]E[/ch]              [ch]G[/ch]   [ch]Am[/ch]              [ch]D[/ch]\r\nGreat pile of news  drowned by the sea[/tab]\r\n[tab]        [ch]G[/ch]           [ch]B[/ch]           [ch]Em[/ch]\r\nI dont care I dont care I dont care[/tab]\r\n[tab]                         [ch]G[/ch]\r\nI've seen a dream and I know[/tab]\r\n[tab] [ch]Am[/ch]               [ch]D[/ch]                [ch]G[/ch]             [ch]B[/ch]\r\nall those golden bubbles dancing there dancing there[/tab]\r\n\r\n[Bridge]\r\n[ch]E[/ch] [ch]Bm[/ch] [ch]Am[/ch] [ch]D[/ch]\r\n[ch]G[/ch] [ch]B[/ch] [ch]Am[/ch] [ch]B[/ch] [ch]Abm[/ch]\r\n[ch]B[/ch]      [ch]Em[/ch]\r\n\r\n[ch]Em[/ch]  [ch]E/Eb[/ch]  [ch]Em[/ch]  [ch]E/Eb[/ch]\r\n[ch]Em[/ch]  [ch]E/Eb[/ch]  [ch]Em[/ch]  [ch]E/Eb[/ch]\r\n\r\n[Verse]\r\n[tab] [ch]E[/ch]              [ch]G[/ch]   [ch]Am[/ch]              [ch]D[/ch]\r\nGreat pile of news  drowned by the sea[/tab]\r\n[tab]        [ch]G[/ch]           [ch]B[/ch]           [ch]Em[/ch]\r\nI dont care I dont care I dont care[/tab]\r\n[tab]             [ch]G[/ch]     [ch]A[/ch]            [ch]D[/ch]\r\nMy rocky mountain  waiting for me[/tab]\r\n[tab]       [ch]G[/ch]         [ch]B[/ch]        [ch]Em[/ch]\r\nI'm aware I'm aware i'm aware[/tab]\r\n[tab][ch]E[/ch]              [ch]G[/ch]   [ch]Am[/ch]              [ch]D[/ch]\r\nGreat pile of news  drowned by the sea[/tab]\r\n[tab]         [ch]G[/ch]           [ch]B[/ch]          [ch]Em[/ch]\r\nI dont care I dont care I dont care[/tab]\r\n[tab]                         [ch]G[/ch]\r\nI've seen a dream and I know[/tab]\r\n[tab] [ch]Am[/ch]               [ch]D[/ch]                [ch]G[/ch]             [ch]B[/ch]\r\nall those golden bubbles dancing there dancing there[/tab]"
+}

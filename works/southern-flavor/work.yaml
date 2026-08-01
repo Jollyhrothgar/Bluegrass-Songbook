@@ -1,0 +1,47 @@
+id: southern-flavor
+title: Southern Flavor
+artist: null
+composers: []
+default_key: Em
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+- Clawhammer
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '21361'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21361
+    author: corcoran
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-21702.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21702'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21702
+    author: Cwiiis
+    difficulty: Intermediate
+    tuning: aDGBD
+    imported_at: '2026-08-01'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-22562.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '22562'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=22562
+    author: janolov
+    difficulty: Intermediate
+    imported_at: '2026-08-01'

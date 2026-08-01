@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Camp Chase",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 6,
+  "core": false,
+  "artists": [
+   "Bruce Molsky",
+   "Erynn Marshall and Carl Jones",
+   "James Bryan",
+   "Dwight Diller"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:09:14",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 3
+ },
+ "candidate": null,
+ "content": null
+}

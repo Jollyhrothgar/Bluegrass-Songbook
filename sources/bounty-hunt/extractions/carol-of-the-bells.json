@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Carol of the Bells",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 7,
+  "core": false,
+  "artists": [
+   "Mark O\u2019Connor",
+   "Dailey & Vincent",
+   "Stuart Duncan",
+   "David Grier"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:05:11",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Am"
+ },
+ "candidate": {
+  "id": 1684920,
+  "song_id": 1576249,
+  "song_name": "Carol Of The Bells",
+  "artist_id": 44931,
+  "artist_name": "Pentatonix",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 220,
+  "difficulty": "novice",
+  "rating": 4.78212,
+  "date": "1417554248",
+  "status": "approved",
+  "preset_id": 78850,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Am",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1099223
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/6/1678621/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/3/6/36928/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1482843721,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Hey! I love this song so much so here are some chords to it! \r\n\r\n*The original song is played on CAPO 3 but NO CAPO with the same positions sound good too*\r\nI prefer CAPO 3 though!\r\n\r\n\r\n[tab][Intro]: [ch]Am[/ch]     [ch]C[/ch]      [ch]Dm[/ch]      [ch]E[/ch]    x4\r\n         La, la, la, la...[/tab]\r\n\r\n\r\n[tab][ch]Am[/ch]\r\nHark how the bells[/tab]\r\nSweet silver bells\r\n[tab][ch]C[/ch]\r\nAll seem to say[/tab]\r\nThrow cares away\r\n\r\n[tab][ch]F[/ch]\r\nChristmas is here[/tab]\r\nBringing good cheer\r\n[tab][ch]G[/ch]\r\nTo young and old[/tab]\r\nMeek and the bold\r\n\r\n[tab][ch]Am[/ch]\r\nDing dong ding dong[/tab]\r\nThat is their song\r\n[tab][ch]C[/ch]\r\nWith joyful ring[/tab]\r\nAll caroling. (Oh! Oh! Ahh)\r\n\r\n[tab][ch]F[/ch]\r\nOne seems to hear[/tab]\r\nWords of good cheer\r\n[tab][ch]G[/ch]\r\nFrom everywhere (From everywhere)[/tab]\r\nFilling the air\r\n\r\n[tab][ch]Am[/ch]\r\nOh how they pound, (Oh how they pound)[/tab]\r\nRaising the sound\r\n[tab][ch]C[/ch]\r\nO'er hill and dale[/tab]\r\nTelling their tale. (Telling their tale)\r\n\r\n[tab][ch]Am[/ch]\r\nGaily they ring[/tab]\r\n[tab][ch]C[/ch]\r\nWhile people sing[/tab]\r\n[tab][ch]G[/ch]\r\nSongs of good cheer[/tab]\r\n[tab][ch]F[/ch]\r\nChristmas is here[/tab]\r\n\r\n[tab][ch]E[/ch]                           \r\nMerry, Merry, Merry, Merry Christmas,  x2[/tab]\r\n\r\n[tab][ch]Am[/ch]\r\nOn on they send[/tab]\r\nOn without end\r\n[tab][ch]C[/ch]\r\nTheir joyful tone[/tab]\r\nTo every home\r\n\r\n[tab][ch]F[/ch]\r\nAh! Ah! Ah![/tab]\r\n\r\n[tab][ch]Am[/ch]   [ch]C[/ch]     [ch]Am[/ch]   [ch]C[/ch]     [ch]Am[/ch]   [ch]C[/ch]     [ch]Am[/ch]   [ch]C[/ch]\r\nDing dong, ding dong, ding dong, ding dong[/tab]\r\n\r\n[tab][ch]Am[/ch]     [ch]C[/ch]      [ch]Dm[/ch]      [ch]E[/ch]    x2\r\nLa, la, la, la... [/tab]\r\n\r\n[tab][ch]Am[/ch]  \r\nHark how the bells, (Hark how the bells)[/tab]\r\nSweet silver bells\r\n[tab][ch]C[/ch]\r\nAll seem to say, (All seem to say)[/tab]\r\nThrow cares away \r\n\r\n[tab]         [ch]F[/ch]           [ch]G[/ch]\r\n(We will throw cares away)[/tab]\r\n\r\n[tab][ch]Am[/ch]\r\nChristmas is here[/tab]\r\nBringing good cheer\r\n[tab][ch]C[/ch]\r\nTo young and old[/tab]\r\nMeek and the bold\r\n\r\n[tab] [ch]F[/ch]                    [ch]G[/ch]\r\n(Bringing good cheer, oh)[/tab]\r\n\r\n[tab][ch]Am[/ch]\r\nOh how they pound, (Oh how they pound)[/tab]\r\nRaising the sound\r\n[tab][ch]C[/ch]\r\nO'er hill and dale[/tab]\r\nTelling their tale (Telling their tale)\r\n\r\n[tab][ch]Am[/ch]\r\nGaily they ring[/tab]\r\n[tab][ch]C[/ch]\r\nWhile people sing[/tab]\r\n[tab][ch]G[/ch]\r\nSongs of good cheer[/tab]\r\n[tab][ch]F[/ch]\r\nChristmas is here[/tab]\r\n[tab][ch]E[/ch]\r\nMerry, Merry, Merry, Merry Christmas x2[/tab]\r\n\r\n       \r\n[Outro] :\r\n\r\n[tab][ch]Am[/ch]   [ch]C[/ch]   [ch]Dm[/ch]  [ch]E[/ch]\r\nLa, la, la, la...[/tab]"
+}
