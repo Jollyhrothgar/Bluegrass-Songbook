@@ -38,10 +38,10 @@ was needed.
 
 Evidence vendored into this repo (originals lived in the untracked local
 workspace `~/workspace/bluegrass_list/` — do not rely on that surviving):
-- `curation/analysis/FINDINGS.md` — full methodology + results (§5.3 = the rule)
-- `curation/analysis/bg_query.sql` — the exact coverage SQL
-- `curation/analysis/run_export.sh` — the export driver
-- `curation/analysis/site_index_scored.csv` — **the frozen per-work snapshot**
+- `curation/decision-data/FINDINGS.md` — full methodology + results (§5.3 = the rule)
+- `curation/decision-data/bg_query.sql` — the exact coverage SQL
+- `curation/decision-data/run_export.sh` — the export driver
+- `curation/decision-data/site_index_scored.csv` — **the frozen per-work snapshot**
   (`id,title,source,nt,bg,std,crank,tags,mbcov`) used for the decisions.
   Use THIS for any future analysis; regeneration is optional, not required.
 
@@ -94,7 +94,7 @@ Final searchable count after all waves: **1,766** (plus later additions).
 ./scripts/bootstrap --quick
 
 # a category (example: everything by an artist, or mbcov >= 10)
-# filter curation/analysis/site_index_scored.csv for the ids, remove those
+# filter curation/decision-data/site_index_scored.csv for the ids, remove those
 # rows from curation/index_prune.csv (or add keep: entries), rebuild.
 ```
 

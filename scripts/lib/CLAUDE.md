@@ -315,7 +315,7 @@ in-repo path). Short version: a 2026-07-23 MusicBrainz cover-coverage rule,
 then a 2026-07-31 two-of-three-ledgers rule, then a manual title-by-title
 review (163 rescues, reasons in `registry.yaml` `keep:`). The MusicBrainz
 coverage snapshot the decisions used is vendored at
-`curation/analysis/site_index_scored.csv` — no local database needed to
+`curation/decision-data/site_index_scored.csv` — no local database needed to
 re-analyze or reverse any of it.
 
 Restoring songs later:
