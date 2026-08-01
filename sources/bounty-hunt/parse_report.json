@@ -1,12 +1,12 @@
 {
-  "total": 188,
-  "emitted": 180,
-  "rejected": 8,
+  "total": 281,
+  "emitted": 270,
+  "rejected": 11,
   "review_recommended": 0,
   "rejected_by_reason": {
-    "title-mismatch": 4,
+    "title-mismatch": 6,
+    "no-lyrics-instrumental": 2,
     "low-chord-validity": 2,
-    "no-lyrics-instrumental": 1,
     "tab-only": 1
   },
   "emitted_files": [
@@ -239,6 +239,32 @@
       }
     },
     {
+      "file": "away-from-the-mire.txt",
+      "pro": "away-from-the-mire.pro",
+      "title": "Away From the Mire",
+      "artist": "Billy Strings",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/billy-strings/away-from-the-mire-chords-2801240",
+      "stats": {
+        "raw_content_lines": 168,
+        "kept_lines": 139,
+        "tab_lines": 24,
+        "debris_lines": 2,
+        "chord_token_validity": 0.974,
+        "chord_tokens": 155,
+        "valid_chord_tokens": 151,
+        "chords_placed": 167,
+        "lyric_lines": 62,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 11,
+        "paired_lines": 48,
+        "plain_lyric_lines": 14,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 8
+      }
+    },
+    {
       "file": "banjo-pickin-girl.txt",
       "pro": "banjo-pickin-girl.pro",
       "title": "Banjo Pickin' Girl",
@@ -285,6 +311,31 @@
         "chord_only_lines": 16,
         "paired_lines": 28,
         "plain_lyric_lines": 2,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "beautiful-life-a.txt",
+      "pro": "beautiful-life-a.pro",
+      "title": "Beautiful Life",
+      "artist": "Bill Monroe",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bill-monroe/a-beautiful-life-chords-2315769",
+      "stats": {
+        "raw_content_lines": 45,
+        "kept_lines": 45,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 27,
+        "valid_chord_tokens": 27,
+        "chords_placed": 27,
+        "lyric_lines": 21,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 21,
+        "plain_lyric_lines": 0,
         "inline_chord_lines": 0
       }
     },
@@ -466,6 +517,56 @@
       }
     },
     {
+      "file": "blackest-crow-the.txt",
+      "pro": "blackest-crow-the.pro",
+      "title": "The Blackest Crow",
+      "artist": "Red Tail Ring",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/red-tail-ring/the-blackest-crow-chords-1805304",
+      "stats": {
+        "raw_content_lines": 58,
+        "kept_lines": 55,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 73,
+        "valid_chord_tokens": 73,
+        "chords_placed": 81,
+        "lyric_lines": 24,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 7,
+        "paired_lines": 24,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "blackjack-county-chain.txt",
+      "pro": "blackjack-county-chain.pro",
+      "title": "Blackjack County Chain",
+      "artist": "The Del Mccoury Band",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-del-mccoury-band/blackjack-county-chains-chords-4164196",
+      "stats": {
+        "raw_content_lines": 65,
+        "kept_lines": 65,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 85,
+        "valid_chord_tokens": 85,
+        "chords_placed": 93,
+        "lyric_lines": 24,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 10,
+        "paired_lines": 24,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "bluegrass-radio.txt",
       "pro": "bluegrass-radio.pro",
       "title": "Bluegrass Radio",
@@ -514,6 +615,82 @@
         "plain_lyric_lines": 8,
         "inline_chord_lines": 0,
         "prose_lines_dropped": 1
+      }
+    },
+    {
+      "file": "boots-of-spanish-leather.txt",
+      "pro": "boots-of-spanish-leather.pro",
+      "title": "Boots of Spanish Leather",
+      "artist": "Watchhouse Mandolin Orange",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/watchhouse-mandolin-orange/boots-of-spanish-leather-chords-2373859",
+      "stats": {
+        "raw_content_lines": 84,
+        "kept_lines": 84,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 234,
+        "valid_chord_tokens": 234,
+        "chords_placed": 242,
+        "lyric_lines": 36,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 36,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 1
+      }
+    },
+    {
+      "file": "boy-who-wouldn-t-hoe-corn-the.txt",
+      "pro": "boy-who-wouldn-t-hoe-corn-the.pro",
+      "title": "The Boy Who Wouldn't Hoe Corn",
+      "artist": "Dan Tyminski",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/dan-tyminski/the-boy-who-wouldnt-hoe-corn-chords-1480985",
+      "stats": {
+        "raw_content_lines": 54,
+        "kept_lines": 54,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 48,
+        "valid_chord_tokens": 48,
+        "chords_placed": 48,
+        "lyric_lines": 24,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 24,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "brand-new-pair-of-shoes.txt",
+      "pro": "brand-new-pair-of-shoes.pro",
+      "title": "Brand New Pair of Shoes",
+      "artist": "Ana Cristina Cash",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ana-cristina-cash/brand-new-pair-of-shoes-chords-3741014",
+      "stats": {
+        "raw_content_lines": 76,
+        "kept_lines": 76,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 71,
+        "valid_chord_tokens": 71,
+        "chords_placed": 91,
+        "lyric_lines": 31,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 6,
+        "paired_lines": 31,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
       }
     },
     {
@@ -592,6 +769,31 @@
       }
     },
     {
+      "file": "brown-eyed-women.txt",
+      "pro": "brown-eyed-women.pro",
+      "title": "Brown-Eyed Women",
+      "artist": "Grateful Dead",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/grateful-dead/brown-eyed-women-chords-1853771",
+      "stats": {
+        "raw_content_lines": 106,
+        "kept_lines": 106,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 113,
+        "valid_chord_tokens": 113,
+        "chords_placed": 113,
+        "lyric_lines": 45,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 45,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "buckaroo.txt",
       "pro": "buckaroo.pro",
       "title": "Buckaroo",
@@ -637,6 +839,31 @@
         "attribution_disagreement": null,
         "chord_only_lines": 9,
         "paired_lines": 27,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "build-me-up-from-bones.txt",
+      "pro": "build-me-up-from-bones.pro",
+      "title": "Build Me Up From Bones",
+      "artist": "Sarah Jarosz",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/sarah-jarosz/build-me-up-from-bones-chords-2220427",
+      "stats": {
+        "raw_content_lines": 81,
+        "kept_lines": 81,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 123,
+        "valid_chord_tokens": 123,
+        "chords_placed": 147,
+        "lyric_lines": 29,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 14,
+        "paired_lines": 29,
         "plain_lyric_lines": 0,
         "inline_chord_lines": 0
       }
@@ -845,6 +1072,31 @@
         "plain_lyric_lines": 0,
         "inline_chord_lines": 0,
         "prose_lines_dropped": 1
+      }
+    },
+    {
+      "file": "carrie-brown.txt",
+      "pro": "carrie-brown.pro",
+      "title": "Carrie Brown",
+      "artist": "Steve Earle",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/steve-earle/carrie-brown-chords-1878159",
+      "stats": {
+        "raw_content_lines": 97,
+        "kept_lines": 97,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 85,
+        "valid_chord_tokens": 85,
+        "chords_placed": 110,
+        "lyric_lines": 41,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 5,
+        "paired_lines": 41,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
       }
     },
     {
@@ -1096,6 +1348,31 @@
         "attribution_disagreement": null,
         "chord_only_lines": 0,
         "paired_lines": 24,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "cuckoo-the.txt",
+      "pro": "cuckoo-the.pro",
+      "title": "The Cuckoo",
+      "artist": "Stephen Wilson JR",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/stephen-wilson-jr/cuckoo-chords-5689487",
+      "stats": {
+        "raw_content_lines": 101,
+        "kept_lines": 98,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 48,
+        "valid_chord_tokens": 48,
+        "chords_placed": 50,
+        "lyric_lines": 42,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 3,
+        "paired_lines": 42,
         "plain_lyric_lines": 0,
         "inline_chord_lines": 0
       }
@@ -1403,6 +1680,56 @@
       }
     },
     {
+      "file": "edelweiss.txt",
+      "pro": "edelweiss.pro",
+      "title": "Edelweiss",
+      "artist": "Vince Hill",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/vince-hill/edelweiss-chords-4887568",
+      "stats": {
+        "raw_content_lines": 44,
+        "kept_lines": 40,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 58,
+        "valid_chord_tokens": 58,
+        "chords_placed": 67,
+        "lyric_lines": 17,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 17,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "elvis-presley-blues.txt",
+      "pro": "elvis-presley-blues.pro",
+      "title": "Elvis Presley Blues",
+      "artist": "Gillian Welch",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/gillian-welch/elvis-presley-blues-chords-948267",
+      "stats": {
+        "raw_content_lines": 90,
+        "kept_lines": 88,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 0.96,
+        "chord_tokens": 75,
+        "valid_chord_tokens": 72,
+        "chords_placed": 72,
+        "lyric_lines": 42,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 41,
+        "plain_lyric_lines": 1,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "euphoria.txt",
       "pro": "euphoria.pro",
       "title": "Euphoria",
@@ -1474,6 +1801,31 @@
         "chord_only_lines": 1,
         "paired_lines": 29,
         "plain_lyric_lines": 1,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "few-old-memories-a.txt",
+      "pro": "few-old-memories-a.pro",
+      "title": "Few Old Memories",
+      "artist": "James King",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/james-king/a-few-old-memories-chords-4059130",
+      "stats": {
+        "raw_content_lines": 40,
+        "kept_lines": 39,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 35,
+        "valid_chord_tokens": 35,
+        "chords_placed": 44,
+        "lyric_lines": 16,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 16,
+        "plain_lyric_lines": 0,
         "inline_chord_lines": 0
       }
     },
@@ -1553,6 +1905,31 @@
       }
     },
     {
+      "file": "five-hundred-miles.txt",
+      "pro": "five-hundred-miles.pro",
+      "title": "Five Hundred Miles",
+      "artist": null,
+      "source_url": "https://tabs.ultimate-guitar.com/tab/misc-traditional/five-hundred-miles-chords-1475051",
+      "stats": {
+        "raw_content_lines": 45,
+        "kept_lines": 45,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 78,
+        "valid_chord_tokens": 78,
+        "chords_placed": 78,
+        "lyric_lines": 19,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 19,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "follow-the-leader.txt",
       "pro": "follow-the-leader.pro",
       "title": "Follow the Leader",
@@ -1574,6 +1951,56 @@
         "chord_only_lines": 8,
         "paired_lines": 33,
         "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "for-what-it-s-worth-buffalo-springfield.txt",
+      "pro": "for-what-it-s-worth-buffalo-springfield.pro",
+      "title": "For What It's Worth Buffalo Springfield",
+      "artist": "Stevie Nicks",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/stevie-nicks/for-what-its-worth-buffalo-springfield-cover-chords-4363361",
+      "stats": {
+        "raw_content_lines": 142,
+        "kept_lines": 137,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 114,
+        "valid_chord_tokens": 114,
+        "chords_placed": 129,
+        "lyric_lines": 61,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 59,
+        "plain_lyric_lines": 2,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "fork-in-the-road.txt",
+      "pro": "fork-in-the-road.pro",
+      "title": "Fork in the Road",
+      "artist": "The Infamous Stringdusters",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-infamous-stringdusters/fork-in-the-road-chords-2952437",
+      "stats": {
+        "raw_content_lines": 60,
+        "kept_lines": 59,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 48,
+        "valid_chord_tokens": 48,
+        "chords_placed": 48,
+        "lyric_lines": 28,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 27,
+        "plain_lyric_lines": 1,
         "inline_chord_lines": 0
       }
     },
@@ -1678,6 +2105,31 @@
       }
     },
     {
+      "file": "ghosts-of-mississippi.txt",
+      "pro": "ghosts-of-mississippi.pro",
+      "title": "Ghosts of Mississippi",
+      "artist": "The Steeldrivers",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-steeldrivers/ghosts-of-mississippi-chords-1904737",
+      "stats": {
+        "raw_content_lines": 122,
+        "kept_lines": 98,
+        "tab_lines": 24,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 55,
+        "valid_chord_tokens": 55,
+        "chords_placed": 68,
+        "lyric_lines": 40,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 8,
+        "paired_lines": 40,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "glendale-train.txt",
       "pro": "glendale-train.pro",
       "title": "Glendale Train",
@@ -1778,6 +2230,32 @@
       }
     },
     {
+      "file": "grass-valley.txt",
+      "pro": "grass-valley.pro",
+      "title": "Grass Valley",
+      "artist": "Molly Tuttle Golden Highway",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/molly-tuttle-golden-highway/grass-valley-chords-4241470",
+      "stats": {
+        "raw_content_lines": 84,
+        "kept_lines": 80,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 0.954,
+        "chord_tokens": 87,
+        "valid_chord_tokens": 83,
+        "chords_placed": 105,
+        "lyric_lines": 36,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 30,
+        "plain_lyric_lines": 6,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 1
+      }
+    },
+    {
       "file": "graveyard-shift.txt",
       "pro": "graveyard-shift.pro",
       "title": "Graveyard Shift",
@@ -1824,6 +2302,31 @@
         "chord_only_lines": 0,
         "paired_lines": 45,
         "plain_lyric_lines": 1,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "green-rolling-hills-of-west-virginia-the.txt",
+      "pro": "green-rolling-hills-of-west-virginia-the.pro",
+      "title": "The Green Rolling Hills of West Virginia",
+      "artist": "Utah Phillips",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/utah-phillips/green-rolling-hills-of-west-virginia-chords-4040998",
+      "stats": {
+        "raw_content_lines": 62,
+        "kept_lines": 61,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 49,
+        "valid_chord_tokens": 49,
+        "chords_placed": 59,
+        "lyric_lines": 25,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 3,
+        "paired_lines": 25,
+        "plain_lyric_lines": 0,
         "inline_chord_lines": 0
       }
     },
@@ -1930,6 +2433,31 @@
       }
     },
     {
+      "file": "high-road-the.txt",
+      "pro": "high-road-the.pro",
+      "title": "The High Road",
+      "artist": "Broken Bells",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/broken-bells/the-high-road-chords-1670423",
+      "stats": {
+        "raw_content_lines": 94,
+        "kept_lines": 88,
+        "tab_lines": 6,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 83,
+        "valid_chord_tokens": 83,
+        "chords_placed": 83,
+        "lyric_lines": 42,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 39,
+        "plain_lyric_lines": 3,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "high-sierra.txt",
       "pro": "high-sierra.pro",
       "title": "High Sierra",
@@ -1977,6 +2505,32 @@
         "paired_lines": 32,
         "plain_lyric_lines": 0,
         "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "highway-40-blues.txt",
+      "pro": "highway-40-blues.pro",
+      "title": "Highway 40 Blues",
+      "artist": "Ricky Skaggs",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ricky-skaggs/highway-40-blues-chords-84890",
+      "stats": {
+        "raw_content_lines": 82,
+        "kept_lines": 78,
+        "tab_lines": 0,
+        "debris_lines": 2,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 86,
+        "valid_chord_tokens": 86,
+        "chords_placed": 90,
+        "lyric_lines": 30,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 13,
+        "paired_lines": 28,
+        "plain_lyric_lines": 2,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 1
       }
     },
     {
@@ -2053,6 +2607,57 @@
         "paired_lines": 8,
         "plain_lyric_lines": 12,
         "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "hundred-years-from-now-a.txt",
+      "pro": "hundred-years-from-now-a.pro",
+      "title": "Hundred Years From Now",
+      "artist": "Flatt Scruggs",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/flatt-scruggs/a-hundred-years-from-now-chords-1777216",
+      "stats": {
+        "raw_content_lines": 40,
+        "kept_lines": 40,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 28,
+        "valid_chord_tokens": 28,
+        "chords_placed": 28,
+        "lyric_lines": 20,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 20,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "i-hear-them-all.txt",
+      "pro": "i-hear-them-all.pro",
+      "title": "I Hear Them All",
+      "artist": "Old Crow Medicine Show",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/i-hear-them-all-chords-992548",
+      "stats": {
+        "raw_content_lines": 66,
+        "kept_lines": 63,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 63,
+        "valid_chord_tokens": 63,
+        "chords_placed": 108,
+        "lyric_lines": 27,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 8,
+        "paired_lines": 22,
+        "plain_lyric_lines": 5,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 1
       }
     },
     {
@@ -2308,6 +2913,106 @@
       }
     },
     {
+      "file": "katy-dear.txt",
+      "pro": "katy-dear.pro",
+      "title": "Katy Dear",
+      "artist": "Ian Sylvia",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ian-sylvia/katy-dear-chords-2280381",
+      "stats": {
+        "raw_content_lines": 69,
+        "kept_lines": 69,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 95,
+        "valid_chord_tokens": 95,
+        "chords_placed": 143,
+        "lyric_lines": 24,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 12,
+        "paired_lines": 24,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "lafayette.txt",
+      "pro": "lafayette.pro",
+      "title": "Lafayette",
+      "artist": "Orville Peck",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/orville-peck/lafayette-chords-4146022",
+      "stats": {
+        "raw_content_lines": 59,
+        "kept_lines": 59,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 89,
+        "valid_chord_tokens": 89,
+        "chords_placed": 100,
+        "lyric_lines": 27,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 27,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "little-beggarman.txt",
+      "pro": "little-beggarman.pro",
+      "title": "Little Beggarman",
+      "artist": "The Clancy Brothers and Tommy Makem",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-clancy-brothers-and-tommy-makem/the-little-beggarman-chords-2403887",
+      "stats": {
+        "raw_content_lines": 65,
+        "kept_lines": 65,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 84,
+        "valid_chord_tokens": 84,
+        "chords_placed": 84,
+        "lyric_lines": 33,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 32,
+        "plain_lyric_lines": 1,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "look-at-miss-ohio.txt",
+      "pro": "look-at-miss-ohio.pro",
+      "title": "Look At Miss Ohio",
+      "artist": "Gillian Welch",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/gillian-welch/look-at-miss-ohio-chords-1089277",
+      "stats": {
+        "raw_content_lines": 61,
+        "kept_lines": 61,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 89,
+        "valid_chord_tokens": 89,
+        "chords_placed": 109,
+        "lyric_lines": 20,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 12,
+        "paired_lines": 19,
+        "plain_lyric_lines": 1,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "louis-collins.txt",
       "pro": "louis-collins.pro",
       "title": "Louis Collins",
@@ -2408,6 +3113,31 @@
       }
     },
     {
+      "file": "magdalene.txt",
+      "pro": "magdalene.pro",
+      "title": "Magdalene",
+      "artist": "The Steeldrivers",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-steeldrivers/magdalene-chords-5083603",
+      "stats": {
+        "raw_content_lines": 80,
+        "kept_lines": 80,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 65,
+        "valid_chord_tokens": 65,
+        "chords_placed": 93,
+        "lyric_lines": 30,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 7,
+        "paired_lines": 30,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "maggies-farm.txt",
       "pro": "maggies-farm.pro",
       "title": "Maggie’s Farm",
@@ -2430,6 +3160,57 @@
         "paired_lines": 34,
         "plain_lyric_lines": 1,
         "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "make-me-a-pallet-on-the-floor.txt",
+      "pro": "make-me-a-pallet-on-the-floor.pro",
+      "title": "Make Me a Pallet on the Floor",
+      "artist": "Gillian Welch",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/gillian-welch/make-me-a-pallet-on-your-floor-chords-2376555",
+      "stats": {
+        "raw_content_lines": 47,
+        "kept_lines": 47,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 66,
+        "valid_chord_tokens": 66,
+        "chords_placed": 66,
+        "lyric_lines": 20,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 20,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "many-a-mile.txt",
+      "pro": "many-a-mile.pro",
+      "title": "Many a Mile",
+      "artist": "Sara Bareilles",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/sara-bareilles/many-the-miles-chords-735116",
+      "stats": {
+        "raw_content_lines": 79,
+        "kept_lines": 76,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 0.902,
+        "chord_tokens": 82,
+        "valid_chord_tokens": 74,
+        "chords_placed": 83,
+        "lyric_lines": 42,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 6,
+        "paired_lines": 18,
+        "plain_lyric_lines": 24,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 1
       }
     },
     {
@@ -2511,6 +3292,32 @@
       }
     },
     {
+      "file": "meet-me-at-the-creek.txt",
+      "pro": "meet-me-at-the-creek.pro",
+      "title": "Meet Me at the Creek",
+      "artist": "Billy Strings",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/billy-strings/meet-me-at-the-creek-chords-2744361",
+      "stats": {
+        "raw_content_lines": 107,
+        "kept_lines": 106,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 106,
+        "valid_chord_tokens": 106,
+        "chords_placed": 144,
+        "lyric_lines": 44,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 11,
+        "paired_lines": 38,
+        "plain_lyric_lines": 6,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 5
+      }
+    },
+    {
       "file": "melinda.txt",
       "pro": "melinda.pro",
       "title": "Melinda",
@@ -2587,6 +3394,31 @@
       }
     },
     {
+      "file": "miracle.txt",
+      "pro": "miracle.pro",
+      "title": "Miracle",
+      "artist": "Rise Against",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/rise-against/miracle-chords-2458304",
+      "stats": {
+        "raw_content_lines": 111,
+        "kept_lines": 111,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 96,
+        "valid_chord_tokens": 96,
+        "chords_placed": 96,
+        "lyric_lines": 51,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 51,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "mississippi.txt",
       "pro": "mississippi.pro",
       "title": "Mississippi",
@@ -2659,6 +3491,57 @@
         "chord_only_lines": 1,
         "paired_lines": 23,
         "plain_lyric_lines": 24,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "mrs-robinson.txt",
+      "pro": "mrs-robinson.pro",
+      "title": "Mrs. Robinson",
+      "artist": "Simon Garfunkel",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/simon-garfunkel/mrs-robinson-chords-3322274",
+      "stats": {
+        "raw_content_lines": 195,
+        "kept_lines": 166,
+        "tab_lines": 18,
+        "debris_lines": 6,
+        "chord_token_validity": 0.855,
+        "chord_tokens": 200,
+        "valid_chord_tokens": 171,
+        "chords_placed": 226,
+        "lyric_lines": 85,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 54,
+        "plain_lyric_lines": 27,
+        "inline_chord_lines": 4,
+        "prose_lines_dropped": 12
+      }
+    },
+    {
+      "file": "muddy-roads.txt",
+      "pro": "muddy-roads.pro",
+      "title": "Muddy Roads",
+      "artist": "Kate Wolf",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/kate-wolf/muddy-roads-chords-1747785",
+      "stats": {
+        "raw_content_lines": 69,
+        "kept_lines": 68,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 78,
+        "valid_chord_tokens": 78,
+        "chords_placed": 100,
+        "lyric_lines": 31,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 30,
+        "plain_lyric_lines": 1,
         "inline_chord_lines": 0
       }
     },
@@ -2765,6 +3648,31 @@
       }
     },
     {
+      "file": "nothing-else-matters.txt",
+      "pro": "nothing-else-matters.pro",
+      "title": "Nothing Else Matters",
+      "artist": "Metallica",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/metallica/nothing-else-matters-chords-830604",
+      "stats": {
+        "raw_content_lines": 110,
+        "kept_lines": 110,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 166,
+        "valid_chord_tokens": 166,
+        "chords_placed": 166,
+        "lyric_lines": 42,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 17,
+        "paired_lines": 40,
+        "plain_lyric_lines": 2,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "o-come-all-ye-faithful.txt",
       "pro": "o-come-all-ye-faithful.pro",
       "title": "O Come All Ye Faithful",
@@ -2841,6 +3749,57 @@
       }
     },
     {
+      "file": "o-tannenbaum.txt",
+      "pro": "o-tannenbaum.pro",
+      "title": "O Tannenbaum",
+      "artist": "Heintje",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/heintje/oh-tannenbaum-chords-3463751",
+      "stats": {
+        "raw_content_lines": 52,
+        "kept_lines": 52,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 0.964,
+        "chord_tokens": 55,
+        "valid_chord_tokens": 53,
+        "chords_placed": 65,
+        "lyric_lines": 23,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 21,
+        "plain_lyric_lines": 2,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "oh-atlanta.txt",
+      "pro": "oh-atlanta.pro",
+      "title": "Oh, Atlanta",
+      "artist": "Alison Krauss",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/alison-krauss/oh-atlanta-chords-953252",
+      "stats": {
+        "raw_content_lines": 73,
+        "kept_lines": 72,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 0.921,
+        "chord_tokens": 63,
+        "valid_chord_tokens": 58,
+        "chords_placed": 53,
+        "lyric_lines": 39,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 23,
+        "plain_lyric_lines": 16,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 2
+      }
+    },
+    {
       "file": "old-and-in-the-way.txt",
       "pro": "old-and-in-the-way.pro",
       "title": "Old and in the Way",
@@ -2914,6 +3873,32 @@
         "paired_lines": 16,
         "plain_lyric_lines": 0,
         "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "on-top-of-old-smoky.txt",
+      "pro": "on-top-of-old-smoky.pro",
+      "title": "On Top of Old Smoky",
+      "artist": "Dave Van Ronk",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/dave-van-ronk/on-top-of-old-smoky-chords-4176865",
+      "stats": {
+        "raw_content_lines": 77,
+        "kept_lines": 62,
+        "tab_lines": 12,
+        "debris_lines": 3,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 96,
+        "valid_chord_tokens": 96,
+        "chords_placed": 101,
+        "lyric_lines": 30,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 24,
+        "plain_lyric_lines": 11,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 2
       }
     },
     {
@@ -3018,6 +4003,56 @@
       }
     },
     {
+      "file": "pistol-packin-mama.txt",
+      "pro": "pistol-packin-mama.pro",
+      "title": "Pistol Packin’ Mama",
+      "artist": "Al Dexter",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/al-dexter/pistol-packin-mama-chords-2694702",
+      "stats": {
+        "raw_content_lines": 62,
+        "kept_lines": 62,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 26,
+        "valid_chord_tokens": 26,
+        "chords_placed": 26,
+        "lyric_lines": 26,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 24,
+        "plain_lyric_lines": 2,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "polka-on-a-banjo.txt",
+      "pro": "polka-on-a-banjo.pro",
+      "title": "Polka on a Banjo",
+      "artist": "Flatt Scruggs",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/flatt-scruggs/polka-on-a-banjo-chords-5251890",
+      "stats": {
+        "raw_content_lines": 62,
+        "kept_lines": 62,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 62,
+        "valid_chord_tokens": 62,
+        "chords_placed": 62,
+        "lyric_lines": 27,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 27,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "polka-on-the-banjo.txt",
       "pro": "polka-on-the-banjo.pro",
       "title": "Polka on the Banjo",
@@ -3064,6 +4099,82 @@
         "chord_only_lines": 2,
         "paired_lines": 11,
         "plain_lyric_lines": 20,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "proud-mary.txt",
+      "pro": "proud-mary.pro",
+      "title": "Proud Mary",
+      "artist": "Creedence Clearwater Revival",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/creedence-clearwater-revival/proud-mary-chords-1051382",
+      "stats": {
+        "raw_content_lines": 43,
+        "kept_lines": 42,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 15,
+        "valid_chord_tokens": 15,
+        "chords_placed": 36,
+        "lyric_lines": 23,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 13,
+        "plain_lyric_lines": 10,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 2
+      }
+    },
+    {
+      "file": "quinn-the-eskimo-the-mighty-quinn.txt",
+      "pro": "quinn-the-eskimo-the-mighty-quinn.pro",
+      "title": "Quinn the Eskimo",
+      "artist": "Nitty Gritty Dirt Band",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/nitty-gritty-dirt-band/quinn-the-eskimo-the-mighty-quinn-chords-4201615",
+      "stats": {
+        "raw_content_lines": 94,
+        "kept_lines": 94,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 0.979,
+        "chord_tokens": 96,
+        "valid_chord_tokens": 94,
+        "chords_placed": 111,
+        "lyric_lines": 42,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 3,
+        "paired_lines": 39,
+        "plain_lyric_lines": 3,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "rabbit-in-a-log.txt",
+      "pro": "rabbit-in-a-log.pro",
+      "title": "Rabbit in a Log",
+      "artist": "Bill Monroe",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bill-monroe/rabbit-in-a-log-chords-3349673",
+      "stats": {
+        "raw_content_lines": 71,
+        "kept_lines": 71,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 39,
+        "valid_chord_tokens": 39,
+        "chords_placed": 59,
+        "lyric_lines": 28,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 28,
+        "plain_lyric_lines": 0,
         "inline_chord_lines": 0
       }
     },
@@ -3118,6 +4229,81 @@
       }
     },
     {
+      "file": "rainmaker.txt",
+      "pro": "rainmaker.pro",
+      "title": "Rainmaker",
+      "artist": "Iron Maiden",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/iron-maiden/rainmaker-chords-359832",
+      "stats": {
+        "raw_content_lines": 116,
+        "kept_lines": 116,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 145,
+        "valid_chord_tokens": 145,
+        "chords_placed": 145,
+        "lyric_lines": 49,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 7,
+        "paired_lines": 49,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "raise-a-ruckus.txt",
+      "pro": "raise-a-ruckus.pro",
+      "title": "Raise a Ruckus",
+      "artist": "The 97th Regimental String Band",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-97th-regimental-string-band/raise-a-ruckus-chords-5769398",
+      "stats": {
+        "raw_content_lines": 94,
+        "kept_lines": 94,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 115,
+        "valid_chord_tokens": 115,
+        "chords_placed": 129,
+        "lyric_lines": 40,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 3,
+        "paired_lines": 40,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "raised-by-the-railroad-line.txt",
+      "pro": "raised-by-the-railroad-line.pro",
+      "title": "Raised by the Railroad Line",
+      "artist": "The Seldom Scene",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-seldom-scene/raised-by-the-railroad-line-chords-5212767",
+      "stats": {
+        "raw_content_lines": 69,
+        "kept_lines": 69,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 97,
+        "valid_chord_tokens": 97,
+        "chords_placed": 108,
+        "lyric_lines": 29,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 29,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "raleigh-and-spencer.txt",
       "pro": "raleigh-and-spencer.pro",
       "title": "Raleigh and Spencer",
@@ -3141,6 +4327,31 @@
         "plain_lyric_lines": 14,
         "inline_chord_lines": 0,
         "prose_lines_dropped": 2
+      }
+    },
+    {
+      "file": "randall-collins.txt",
+      "pro": "randall-collins.pro",
+      "title": "Randall Collins",
+      "artist": "Norman Blake",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/norman-blake/randall-collins-chords-4228126",
+      "stats": {
+        "raw_content_lines": 35,
+        "kept_lines": 35,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 53,
+        "valid_chord_tokens": 53,
+        "chords_placed": 53,
+        "lyric_lines": 14,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 14,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
       }
     },
     {
@@ -3241,6 +4452,132 @@
         "chord_only_lines": 3,
         "paired_lines": 17,
         "plain_lyric_lines": 4,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "redwood-hill.txt",
+      "pro": "redwood-hill.pro",
+      "title": "Redwood Hill",
+      "artist": "The Country Gentlemen",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-country-gentlemen/redwood-hill-chords-4893328",
+      "stats": {
+        "raw_content_lines": 68,
+        "kept_lines": 65,
+        "tab_lines": 0,
+        "debris_lines": 2,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 72,
+        "valid_chord_tokens": 72,
+        "chords_placed": 72,
+        "lyric_lines": 26,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 26,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "reflections.txt",
+      "pro": "reflections.pro",
+      "title": "Reflections",
+      "artist": "The Charlie Daniels Band",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-charlie-daniels-band/reflections-chords-586479",
+      "stats": {
+        "raw_content_lines": 110,
+        "kept_lines": 110,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 0.804,
+        "chord_tokens": 112,
+        "valid_chord_tokens": 90,
+        "chords_placed": 102,
+        "lyric_lines": 57,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 36,
+        "plain_lyric_lines": 18,
+        "inline_chord_lines": 3,
+        "prose_lines_dropped": 9
+      }
+    },
+    {
+      "file": "renegade.txt",
+      "pro": "renegade.pro",
+      "title": "Renegade",
+      "artist": "Big Red Machine",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/big-red-machine/renegade-chords-3775964",
+      "stats": {
+        "raw_content_lines": 92,
+        "kept_lines": 92,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 72,
+        "valid_chord_tokens": 72,
+        "chords_placed": 76,
+        "lyric_lines": 42,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 42,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "revelation.txt",
+      "pro": "revelation.pro",
+      "title": "Revelation",
+      "artist": "Third Day",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/third-day/revelation-chords-753454",
+      "stats": {
+        "raw_content_lines": 56,
+        "kept_lines": 56,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 39,
+        "valid_chord_tokens": 39,
+        "chords_placed": 39,
+        "lyric_lines": 25,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 25,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "revelations.txt",
+      "pro": "revelations.pro",
+      "title": "Revelations",
+      "artist": "Iron Maiden",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/iron-maiden/revelations-chords-1971523",
+      "stats": {
+        "raw_content_lines": 107,
+        "kept_lines": 107,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 0.972,
+        "chord_tokens": 218,
+        "valid_chord_tokens": 212,
+        "chords_placed": 218,
+        "lyric_lines": 42,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 10,
+        "paired_lines": 33,
+        "plain_lyric_lines": 9,
         "inline_chord_lines": 0
       }
     },
@@ -3396,6 +4733,31 @@
       }
     },
     {
+      "file": "ruby-ridge.txt",
+      "pro": "ruby-ridge.pro",
+      "title": "Ruby Ridge",
+      "artist": "Old Crow Medicine Show",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/ruby-ridge-chords-2400873",
+      "stats": {
+        "raw_content_lines": 90,
+        "kept_lines": 90,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 54,
+        "valid_chord_tokens": 54,
+        "chords_placed": 77,
+        "lyric_lines": 40,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 40,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "ruby.txt",
       "pro": "ruby.pro",
       "title": "Ruby",
@@ -3494,6 +4856,32 @@
         "paired_lines": 35,
         "plain_lyric_lines": 3,
         "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "seven-bridges-road.txt",
+      "pro": "seven-bridges-road.pro",
+      "title": "Seven Bridges Road",
+      "artist": "Eagles",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/eagles/seven-bridges-road-chords-1119255",
+      "stats": {
+        "raw_content_lines": 54,
+        "kept_lines": 51,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 0.882,
+        "chord_tokens": 76,
+        "valid_chord_tokens": 67,
+        "chords_placed": 53,
+        "lyric_lines": 19,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 16,
+        "plain_lyric_lines": 3,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 12
       }
     },
     {
@@ -3623,6 +5011,56 @@
       }
     },
     {
+      "file": "skippin-in-the-mississippi-dew.txt",
+      "pro": "skippin-in-the-mississippi-dew.pro",
+      "title": "Skippin' in the Mississippi Dew",
+      "artist": "John Hartford",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/john-hartford/skippin-in-the-mississippi-dew-chords-4931269",
+      "stats": {
+        "raw_content_lines": 109,
+        "kept_lines": 105,
+        "tab_lines": 0,
+        "debris_lines": 2,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 200,
+        "valid_chord_tokens": 200,
+        "chords_placed": 200,
+        "lyric_lines": 28,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 34,
+        "paired_lines": 28,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "slowly.txt",
+      "pro": "slowly.pro",
+      "title": "Slowly",
+      "artist": "Olivia Dean",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/olivia-dean/slowly-chords-3923894",
+      "stats": {
+        "raw_content_lines": 85,
+        "kept_lines": 85,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 71,
+        "valid_chord_tokens": 71,
+        "chords_placed": 84,
+        "lyric_lines": 38,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 37,
+        "plain_lyric_lines": 1,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "snow-deer.txt",
       "pro": "snow-deer.pro",
       "title": "Snow Deer",
@@ -3673,6 +5111,83 @@
       }
     },
     {
+      "file": "spain.txt",
+      "pro": "spain.pro",
+      "title": "Spain",
+      "artist": "Between the Trees",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/between-the-trees/spain-chords-1019473",
+      "stats": {
+        "raw_content_lines": 58,
+        "kept_lines": 54,
+        "tab_lines": 1,
+        "debris_lines": 1,
+        "chord_token_validity": 0.935,
+        "chord_tokens": 46,
+        "valid_chord_tokens": 43,
+        "chords_placed": 50,
+        "lyric_lines": 28,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 21,
+        "plain_lyric_lines": 7,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 1
+      }
+    },
+    {
+      "file": "spanish-two-step.txt",
+      "pro": "spanish-two-step.pro",
+      "title": "Spanish Two Step",
+      "artist": "Bob Wills his Texas Playboys",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bob-wills-his-texas-playboys/new-spanish-two-step-chords-5207049",
+      "stats": {
+        "raw_content_lines": 46,
+        "kept_lines": 39,
+        "tab_lines": 6,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 95,
+        "valid_chord_tokens": 95,
+        "chords_placed": 95,
+        "lyric_lines": 10,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 11,
+        "paired_lines": 10,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 2
+      }
+    },
+    {
+      "file": "st-james-hospital.txt",
+      "pro": "st-james-hospital.pro",
+      "title": "St. James Hospital",
+      "artist": "Doc Watson",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/doc-watson/st-james-hospital-chords-1805613",
+      "stats": {
+        "raw_content_lines": 50,
+        "kept_lines": 48,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 0.975,
+        "chord_tokens": 79,
+        "valid_chord_tokens": 77,
+        "chords_placed": 76,
+        "lyric_lines": 21,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 20,
+        "plain_lyric_lines": 1,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "st-james-infirmary.txt",
       "pro": "st-james-infirmary.pro",
       "title": "St. James Infirmary",
@@ -3698,6 +5213,58 @@
       }
     },
     {
+      "file": "stay.txt",
+      "pro": "stay.pro",
+      "title": "Stay",
+      "artist": "Post Malone",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/post-malone/stay-chords-2362315",
+      "stats": {
+        "raw_content_lines": 97,
+        "kept_lines": 89,
+        "tab_lines": 6,
+        "debris_lines": 2,
+        "chord_token_validity": 0.86,
+        "chord_tokens": 57,
+        "valid_chord_tokens": 49,
+        "chords_placed": 41,
+        "lyric_lines": 41,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 3,
+        "paired_lines": 29,
+        "plain_lyric_lines": 12,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 8
+      }
+    },
+    {
+      "file": "stealin.txt",
+      "pro": "stealin.pro",
+      "title": "Stealin",
+      "artist": "Uriah Heep",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/uriah-heep/stealin-chords-1771769",
+      "stats": {
+        "raw_content_lines": 112,
+        "kept_lines": 111,
+        "tab_lines": 1,
+        "debris_lines": 0,
+        "chord_token_validity": 0.74,
+        "chord_tokens": 285,
+        "valid_chord_tokens": 211,
+        "chords_placed": 188,
+        "lyric_lines": 55,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 35,
+        "plain_lyric_lines": 20,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 6
+      }
+    },
+    {
       "file": "stepping-stones.txt",
       "pro": "stepping-stones.pro",
       "title": "Stepping Stones",
@@ -3719,6 +5286,31 @@
         "chord_only_lines": 4,
         "paired_lines": 35,
         "plain_lyric_lines": 2,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "stompin-at-the-savoy.txt",
+      "pro": "stompin-at-the-savoy.pro",
+      "title": "Stompin' at the Savoy",
+      "artist": "Ella Fitzgerald",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ella-fitzgerald/stompin-at-the-savoy-chords-2169667",
+      "stats": {
+        "raw_content_lines": 27,
+        "kept_lines": 27,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 33,
+        "valid_chord_tokens": 33,
+        "chords_placed": 33,
+        "lyric_lines": 13,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 13,
+        "plain_lyric_lines": 0,
         "inline_chord_lines": 0
       }
     },
@@ -3770,6 +5362,32 @@
         "paired_lines": 28,
         "plain_lyric_lines": 0,
         "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "streets-of-london.txt",
+      "pro": "streets-of-london.pro",
+      "title": "Streets of London",
+      "artist": "Tony Rice",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/tony-rice/streets-of-london-chords-2983250",
+      "stats": {
+        "raw_content_lines": 89,
+        "kept_lines": 88,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 112,
+        "valid_chord_tokens": 112,
+        "chords_placed": 128,
+        "lyric_lines": 39,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 36,
+        "plain_lyric_lines": 3,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 1
       }
     },
     {
@@ -3844,6 +5462,31 @@
         "attribution_disagreement": null,
         "chord_only_lines": 5,
         "paired_lines": 24,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "take-em-away.txt",
+      "pro": "take-em-away.pro",
+      "title": "Take Em Away",
+      "artist": "Old Crow Medicine Show",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/take-em-away-chords-804697",
+      "stats": {
+        "raw_content_lines": 107,
+        "kept_lines": 105,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 99,
+        "valid_chord_tokens": 99,
+        "chords_placed": 123,
+        "lyric_lines": 44,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 3,
+        "paired_lines": 44,
         "plain_lyric_lines": 0,
         "inline_chord_lines": 0
       }
@@ -3976,6 +5619,31 @@
       }
     },
     {
+      "file": "the-bells-of-st-mary-s.txt",
+      "pro": "the-bells-of-st-mary-s.pro",
+      "title": "The Bells of St. Mary's",
+      "artist": "Sam Cooke",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/sam-cooke/the-bells-of-st-marys-chords-1852218",
+      "stats": {
+        "raw_content_lines": 23,
+        "kept_lines": 23,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 28,
+        "valid_chord_tokens": 28,
+        "chords_placed": 28,
+        "lyric_lines": 9,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 3,
+        "paired_lines": 9,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "the-bridge.txt",
       "pro": "the-bridge.pro",
       "title": "The Bridge",
@@ -4077,6 +5745,56 @@
       }
     },
     {
+      "file": "the-highwayman.txt",
+      "pro": "the-highwayman.pro",
+      "title": "The Highwayman",
+      "artist": "Phil Ochs",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/phil-ochs/the-highwayman-chords-2382769",
+      "stats": {
+        "raw_content_lines": 184,
+        "kept_lines": 184,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 171,
+        "valid_chord_tokens": 171,
+        "chords_placed": 171,
+        "lyric_lines": 88,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 87,
+        "plain_lyric_lines": 1,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "the-key.txt",
+      "pro": "the-key.pro",
+      "title": "The Key",
+      "artist": "Authentic Unlimited",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/authentic-unlimited/the-key-chords-4749842",
+      "stats": {
+        "raw_content_lines": 44,
+        "kept_lines": 42,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 71,
+        "valid_chord_tokens": 71,
+        "chords_placed": 96,
+        "lyric_lines": 13,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 8,
+        "paired_lines": 13,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "the-legend-of-the-johnson-boys.txt",
       "pro": "the-legend-of-the-johnson-boys.pro",
       "title": "The Legend of the Johnson Boys",
@@ -4123,6 +5841,56 @@
         "chord_only_lines": 4,
         "paired_lines": 33,
         "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "the-lighthouse-s-tale.txt",
+      "pro": "the-lighthouse-s-tale.pro",
+      "title": "The Lighthouse's Tale",
+      "artist": "Nickel Creek",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/nickel-creek/the-lighthouses-tale-chords-1758695",
+      "stats": {
+        "raw_content_lines": 65,
+        "kept_lines": 65,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 106,
+        "valid_chord_tokens": 106,
+        "chords_placed": 106,
+        "lyric_lines": 24,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 5,
+        "paired_lines": 24,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "the-mountain.txt",
+      "pro": "the-mountain.pro",
+      "title": "The Mountain",
+      "artist": "Steve Earle",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/steve-earle/the-mountain-chords-960058",
+      "stats": {
+        "raw_content_lines": 66,
+        "kept_lines": 66,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 79,
+        "valid_chord_tokens": 79,
+        "chords_placed": 99,
+        "lyric_lines": 26,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 6,
+        "paired_lines": 25,
+        "plain_lyric_lines": 1,
         "inline_chord_lines": 0
       }
     },
@@ -4252,6 +6020,57 @@
       }
     },
     {
+      "file": "the-times-they-are-achangin.txt",
+      "pro": "the-times-they-are-achangin.pro",
+      "title": "The Times They Are A‐Changin’",
+      "artist": "Nitty Gritty Dirt Band",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/nitty-gritty-dirt-band/the-times-they-are-a-changin-chords-3562913",
+      "stats": {
+        "raw_content_lines": 90,
+        "kept_lines": 90,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 156,
+        "valid_chord_tokens": 156,
+        "chords_placed": 156,
+        "lyric_lines": 41,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 6,
+        "paired_lines": 38,
+        "plain_lyric_lines": 3,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "the-traveler.txt",
+      "pro": "the-traveler.pro",
+      "title": "The Traveler",
+      "artist": "Chatham County Line",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/chatham-county-line/the-traveler-chords-5371161",
+      "stats": {
+        "raw_content_lines": 65,
+        "kept_lines": 65,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 69,
+        "valid_chord_tokens": 69,
+        "chords_placed": 69,
+        "lyric_lines": 28,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 28,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 1
+      }
+    },
+    {
       "file": "the-weight.txt",
       "pro": "the-weight.pro",
       "title": "The Weight",
@@ -4273,6 +6092,31 @@
         "chord_only_lines": 3,
         "paired_lines": 54,
         "plain_lyric_lines": 2,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "there-s-a-new-moon-over-my-shoulder.txt",
+      "pro": "there-s-a-new-moon-over-my-shoulder.pro",
+      "title": "There's a New Moon Over My Shoulder",
+      "artist": "Jim Reeves",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/jim-reeves/theres-a-new-moon-over-my-shoulder-chords-2599167",
+      "stats": {
+        "raw_content_lines": 48,
+        "kept_lines": 48,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 38,
+        "valid_chord_tokens": 38,
+        "chords_placed": 43,
+        "lyric_lines": 20,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 20,
+        "plain_lyric_lines": 0,
         "inline_chord_lines": 0
       }
     },
@@ -4302,6 +6146,31 @@
       }
     },
     {
+      "file": "traffic-jam.txt",
+      "pro": "traffic-jam.pro",
+      "title": "Traffic Jam",
+      "artist": "Weird AL Yankovic",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/weird-al-yankovic/traffic-jam-chords-2404967",
+      "stats": {
+        "raw_content_lines": 66,
+        "kept_lines": 65,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 55,
+        "valid_chord_tokens": 55,
+        "chords_placed": 55,
+        "lyric_lines": 29,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 29,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "tumbling-tumbleweeds.txt",
       "pro": "tumbling-tumbleweeds.pro",
       "title": "Tumbling Tumbleweeds",
@@ -4327,6 +6196,57 @@
       }
     },
     {
+      "file": "turmoil-tinfoil.txt",
+      "pro": "turmoil-tinfoil.pro",
+      "title": "Turmoil & Tinfoil",
+      "artist": "Billy Strings",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/billy-strings/turmoil-and-tinfoil-chords-2873123",
+      "stats": {
+        "raw_content_lines": 82,
+        "kept_lines": 80,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 102,
+        "valid_chord_tokens": 102,
+        "chords_placed": 118,
+        "lyric_lines": 31,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 11,
+        "paired_lines": 28,
+        "plain_lyric_lines": 3,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 1
+      }
+    },
+    {
+      "file": "two-brothers.txt",
+      "pro": "two-brothers.pro",
+      "title": "Two Brothers",
+      "artist": "Chris Stapleton",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/chris-stapleton/two-brothers-chords-1935703",
+      "stats": {
+        "raw_content_lines": 46,
+        "kept_lines": 46,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 32,
+        "valid_chord_tokens": 32,
+        "chords_placed": 67,
+        "lyric_lines": 16,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 5,
+        "paired_lines": 16,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "two-coats.txt",
       "pro": "two-coats.pro",
       "title": "Two Coats",
@@ -4348,6 +6268,56 @@
         "chord_only_lines": 1,
         "paired_lines": 10,
         "plain_lyric_lines": 11,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "two-dollar-bill.txt",
+      "pro": "two-dollar-bill.pro",
+      "title": "Two Dollar Bill",
+      "artist": "Libby Lux",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/libby-lux/two-dollar-bill-chords-5229072",
+      "stats": {
+        "raw_content_lines": 56,
+        "kept_lines": 56,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 48,
+        "valid_chord_tokens": 48,
+        "chords_placed": 52,
+        "lyric_lines": 24,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 24,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "two-hits-and-the-joint-turned-brown.txt",
+      "pro": "two-hits-and-the-joint-turned-brown.pro",
+      "title": "Two Hits and the Joint Turned Brown",
+      "artist": "John Hartford",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/john-hartford/two-hits-and-the-joint-turned-brown-chords-2822873",
+      "stats": {
+        "raw_content_lines": 81,
+        "kept_lines": 81,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 0.857,
+        "chord_tokens": 105,
+        "valid_chord_tokens": 90,
+        "chords_placed": 90,
+        "lyric_lines": 37,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 36,
+        "plain_lyric_lines": 1,
         "inline_chord_lines": 0
       }
     },
@@ -4398,6 +6368,56 @@
         "chord_only_lines": 5,
         "paired_lines": 32,
         "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "untold-stories.txt",
+      "pro": "untold-stories.pro",
+      "title": "Untold Stories",
+      "artist": "Buju Banton",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/buju-banton/untold-stories-chords-358576",
+      "stats": {
+        "raw_content_lines": 106,
+        "kept_lines": 102,
+        "tab_lines": 0,
+        "debris_lines": 2,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 88,
+        "valid_chord_tokens": 88,
+        "chords_placed": 96,
+        "lyric_lines": 57,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 34,
+        "plain_lyric_lines": 23,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "up-on-the-hill-where-they-do-the-boogie.txt",
+      "pro": "up-on-the-hill-where-they-do-the-boogie.pro",
+      "title": "Up on the Hill Where They Do the Boogie",
+      "artist": "John Hartford",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/john-hartford/up-on-the-hill-where-they-do-the-boogie-chords-743672",
+      "stats": {
+        "raw_content_lines": 35,
+        "kept_lines": 35,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 9,
+        "valid_chord_tokens": 9,
+        "chords_placed": 9,
+        "lyric_lines": 25,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 5,
+        "plain_lyric_lines": 20,
         "inline_chord_lines": 0
       }
     },
@@ -4503,6 +6523,208 @@
       }
     },
     {
+      "file": "walking-my-lord-up-calvary-hill.txt",
+      "pro": "walking-my-lord-up-calvary-hill.pro",
+      "title": "Walking My Lord Up Calvary Hill",
+      "artist": "Rhonda Vincent",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/rhonda-vincent/walking-my-lord-up-calvarys-hill-chords-1788937",
+      "stats": {
+        "raw_content_lines": 42,
+        "kept_lines": 42,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 52,
+        "valid_chord_tokens": 52,
+        "chords_placed": 52,
+        "lyric_lines": 21,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 0,
+        "paired_lines": 21,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "war-pigs.txt",
+      "pro": "war-pigs.pro",
+      "title": "War Pigs",
+      "artist": "Black Sabbath",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/black-sabbath/war-pigs-chords-1694335",
+      "stats": {
+        "raw_content_lines": 39,
+        "kept_lines": 39,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 42,
+        "valid_chord_tokens": 42,
+        "chords_placed": 80,
+        "lyric_lines": 18,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 5,
+        "paired_lines": 14,
+        "plain_lyric_lines": 3,
+        "inline_chord_lines": 1,
+        "prose_lines_dropped": 1
+      }
+    },
+    {
+      "file": "waves.txt",
+      "pro": "waves.pro",
+      "title": "Waves",
+      "artist": "Dean Lewis",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/dean-lewis/waves-chords-1899241",
+      "stats": {
+        "raw_content_lines": 111,
+        "kept_lines": 111,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 131,
+        "valid_chord_tokens": 131,
+        "chords_placed": 135,
+        "lyric_lines": 51,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 49,
+        "plain_lyric_lines": 2,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "we-can-work-it-out.txt",
+      "pro": "we-can-work-it-out.pro",
+      "title": "We Can Work It Out",
+      "artist": "The Beatles",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-beatles/we-can-work-it-out-chords-1088940",
+      "stats": {
+        "raw_content_lines": 100,
+        "kept_lines": 97,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 0.846,
+        "chord_tokens": 143,
+        "valid_chord_tokens": 121,
+        "chords_placed": 85,
+        "lyric_lines": 34,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 32,
+        "plain_lyric_lines": 2,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 20
+      }
+    },
+    {
+      "file": "weary-traveler.txt",
+      "pro": "weary-traveler.pro",
+      "title": "Weary Traveler",
+      "artist": "Bill Monroe",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/bill-monroe/weary-traveler-chords-2366775",
+      "stats": {
+        "raw_content_lines": 37,
+        "kept_lines": 37,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 56,
+        "valid_chord_tokens": 56,
+        "chords_placed": 88,
+        "lyric_lines": 14,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 14,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "welcome-to-new-york.txt",
+      "pro": "welcome-to-new-york.pro",
+      "title": "Welcome to New York",
+      "artist": "Ryan Adams",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/ryan-adams/welcome-to-new-york-chords-1769017",
+      "stats": {
+        "raw_content_lines": 76,
+        "kept_lines": 71,
+        "tab_lines": 0,
+        "debris_lines": 2,
+        "chord_token_validity": 0.968,
+        "chord_tokens": 63,
+        "valid_chord_tokens": 61,
+        "chords_placed": 60,
+        "lyric_lines": 33,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 30,
+        "plain_lyric_lines": 3,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "welcome-to-the-jungle.txt",
+      "pro": "welcome-to-the-jungle.pro",
+      "title": "Welcome to the Jungle",
+      "artist": "Guns N Roses",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/guns-n-roses/welcome-to-the-jungle-chords-1941985",
+      "stats": {
+        "raw_content_lines": 100,
+        "kept_lines": 100,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 55,
+        "valid_chord_tokens": 55,
+        "chords_placed": 76,
+        "lyric_lines": 55,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 2,
+        "paired_lines": 33,
+        "plain_lyric_lines": 22,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "where-rainbows-never-die.txt",
+      "pro": "where-rainbows-never-die.pro",
+      "title": "Where Rainbows Never Die",
+      "artist": "The Steeldrivers",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-steeldrivers/where-rainbows-never-die-chords-1770640",
+      "stats": {
+        "raw_content_lines": 75,
+        "kept_lines": 73,
+        "tab_lines": 0,
+        "debris_lines": 1,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 139,
+        "valid_chord_tokens": 139,
+        "chords_placed": 203,
+        "lyric_lines": 24,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 16,
+        "paired_lines": 24,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "whispering.txt",
       "pro": "whispering.pro",
       "title": "Whispering",
@@ -4524,6 +6746,56 @@
         "chord_only_lines": 4,
         "paired_lines": 29,
         "plain_lyric_lines": 10,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "white-freight-liner-blues.txt",
+      "pro": "white-freight-liner-blues.pro",
+      "title": "White Freight Liner Blues",
+      "artist": "Townes Van Zandt",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/townes-van-zandt/white-freight-liner-blues-chords-1449319",
+      "stats": {
+        "raw_content_lines": 76,
+        "kept_lines": 76,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 59,
+        "valid_chord_tokens": 59,
+        "chords_placed": 59,
+        "lyric_lines": 33,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 4,
+        "paired_lines": 32,
+        "plain_lyric_lines": 1,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "widow-maker.txt",
+      "pro": "widow-maker.pro",
+      "title": "Widow Maker",
+      "artist": "Jimmy Martin",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/jimmy-martin/widow-maker-chords-3536324",
+      "stats": {
+        "raw_content_lines": 43,
+        "kept_lines": 43,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 58,
+        "valid_chord_tokens": 58,
+        "chords_placed": 58,
+        "lyric_lines": 22,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 1,
+        "paired_lines": 16,
+        "plain_lyric_lines": 6,
         "inline_chord_lines": 0
       }
     },
@@ -4580,6 +6852,31 @@
       }
     },
     {
+      "file": "fall-on-my-knees.txt",
+      "reason": "title-mismatch",
+      "detail": "fetched page is a different song (asked ['fall', 'knees'] got ['falling', 'knees'])",
+      "title": "Fall on My Knees",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/william-mcdowell/falling-on-my-knees-chords-2378885",
+      "stats": {
+        "raw_content_lines": 85,
+        "kept_lines": 85,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 59,
+        "valid_chord_tokens": 59,
+        "chords_placed": 71,
+        "lyric_lines": 40,
+        "title_match": 0.86,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 3,
+        "paired_lines": 40,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0
+      }
+    },
+    {
       "file": "flowers-of-edinburgh.txt",
       "reason": "no-lyrics-instrumental",
       "detail": "chord grid only (3 lyric lines)",
@@ -4602,6 +6899,32 @@
         "paired_lines": 0,
         "plain_lyric_lines": 3,
         "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "hobo-song.txt",
+      "reason": "title-mismatch",
+      "detail": "fetched page is a different song (asked ['hobo', 'song'] got ['hobo'])",
+      "title": "Hobo Song",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/billy-strings/hobo-song-chords-4126738",
+      "stats": {
+        "raw_content_lines": 101,
+        "kept_lines": 101,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 1.0,
+        "chord_tokens": 108,
+        "valid_chord_tokens": 108,
+        "chords_placed": 172,
+        "lyric_lines": 36,
+        "title_match": 0.67,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 15,
+        "paired_lines": 36,
+        "plain_lyric_lines": 0,
+        "inline_chord_lines": 0,
+        "prose_lines_dropped": 1
       }
     },
     {
@@ -4727,6 +7050,31 @@
         "chord_only_lines": 6,
         "paired_lines": 26,
         "plain_lyric_lines": 8,
+        "inline_chord_lines": 0
+      }
+    },
+    {
+      "file": "stingray.txt",
+      "reason": "no-lyrics-instrumental",
+      "detail": "chord grid only (2 lyric lines)",
+      "title": "Stingray",
+      "source_url": "https://tabs.ultimate-guitar.com/tab/the-shadows/stingray-chords-518810",
+      "stats": {
+        "raw_content_lines": 12,
+        "kept_lines": 12,
+        "tab_lines": 0,
+        "debris_lines": 0,
+        "chord_token_validity": 0.931,
+        "chord_tokens": 87,
+        "valid_chord_tokens": 81,
+        "chords_placed": 75,
+        "lyric_lines": 2,
+        "title_match": 1.0,
+        "title_checkable": true,
+        "attribution_disagreement": null,
+        "chord_only_lines": 10,
+        "paired_lines": 0,
+        "plain_lyric_lines": 2,
         "inline_chord_lines": 0
       }
     },

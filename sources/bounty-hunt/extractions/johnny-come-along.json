@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "Johnny Come Along",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:56:54",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 4
+ },
+ "candidate": null,
+ "content": null
+}

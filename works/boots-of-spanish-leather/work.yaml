@@ -1,0 +1,13 @@
+id: boots-of-spanish-leather
+title: Boots of Spanish Leather
+artist: Watchhouse Mandolin Orange
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: boots-of-spanish-leather.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/watchhouse-mandolin-orange/boots-of-spanish-leather-chords-2373859
+    imported_at: '2026-08-01'

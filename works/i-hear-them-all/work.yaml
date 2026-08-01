@@ -1,0 +1,14 @@
+id: i-hear-them-all
+title: I Hear Them All
+artist: Old Crow Medicine Show
+default_key: A
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: i-hear-them-all.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/i-hear-them-all-chords-992548
+    imported_at: '2026-08-01'

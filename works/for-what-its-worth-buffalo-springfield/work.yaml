@@ -1,0 +1,13 @@
+id: for-what-its-worth-buffalo-springfield
+title: For What It's Worth Buffalo Springfield
+artist: Stevie Nicks
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: for-what-it-s-worth-buffalo-springfield.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/stevie-nicks/for-what-its-worth-buffalo-springfield-cover-chords-4363361
+    imported_at: '2026-08-01'

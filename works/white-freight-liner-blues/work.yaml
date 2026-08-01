@@ -1,0 +1,13 @@
+id: white-freight-liner-blues
+title: White Freight Liner Blues
+artist: Townes Van Zandt
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: white-freight-liner-blues.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/townes-van-zandt/white-freight-liner-blues-chords-1449319
+    imported_at: '2026-08-01'

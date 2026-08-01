@@ -1,0 +1,13 @@
+id: walking-my-lord-up-calvary-hill
+title: Walking My Lord Up Calvary Hill
+artist: Rhonda Vincent
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: walking-my-lord-up-calvary-hill.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/rhonda-vincent/walking-my-lord-up-calvarys-hill-chords-1788937
+    imported_at: '2026-08-01'

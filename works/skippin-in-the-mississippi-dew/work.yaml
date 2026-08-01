@@ -1,0 +1,13 @@
+id: skippin-in-the-mississippi-dew
+title: Skippin' in the Mississippi Dew
+artist: John Hartford
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: skippin-in-the-mississippi-dew.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/john-hartford/skippin-in-the-mississippi-dew-chords-4931269
+    imported_at: '2026-08-01'

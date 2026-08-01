@@ -1,0 +1,13 @@
+id: brown-eyed-women
+title: Brown-Eyed Women
+artist: Grateful Dead
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: brown-eyed-women.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/grateful-dead/brown-eyed-women-chords-1853771
+    imported_at: '2026-08-01'

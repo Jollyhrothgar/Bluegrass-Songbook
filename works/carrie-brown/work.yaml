@@ -1,0 +1,13 @@
+id: carrie-brown
+title: Carrie Brown
+artist: Steve Earle
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: carrie-brown.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/steve-earle/carrie-brown-chords-1878159
+    imported_at: '2026-08-01'

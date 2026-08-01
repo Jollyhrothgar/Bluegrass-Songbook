@@ -1,0 +1,13 @@
+id: fork-in-the-road
+title: Fork in the Road
+artist: The Infamous Stringdusters
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: fork-in-the-road.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-infamous-stringdusters/fork-in-the-road-chords-2952437
+    imported_at: '2026-08-01'

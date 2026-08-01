@@ -1,0 +1,13 @@
+id: two-hits-and-the-joint-turned-brown
+title: Two Hits and the Joint Turned Brown
+artist: John Hartford
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: two-hits-and-the-joint-turned-brown.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/john-hartford/two-hits-and-the-joint-turned-brown-chords-2822873
+    imported_at: '2026-08-01'

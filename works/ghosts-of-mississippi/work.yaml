@@ -1,0 +1,13 @@
+id: ghosts-of-mississippi
+title: Ghosts of Mississippi
+artist: The Steeldrivers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: ghosts-of-mississippi.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-steeldrivers/ghosts-of-mississippi-chords-1904737
+    imported_at: '2026-08-01'

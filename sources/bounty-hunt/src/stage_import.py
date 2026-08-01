@@ -19,16 +19,57 @@ Then:
 """
 
 import argparse
+import difflib
 import json
 import re
 import shutil
+import unicodedata
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[3]
+WORKS_DIR = REPO_ROOT / "works"
 EXTRACT_DIR = BASE / "extractions"
 PARSED_DIR = BASE / "parsed"
 STAGING_DIR = BASE / "staging"
 DECISIONS_FILE = BASE / "review_decisions.json"
+
+
+def _norm(t):
+    t = unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore").decode()
+    t = t.lower().replace("&", " and ")
+    t = re.sub(r"[^a-z0-9\s]", "", t)
+    t = re.sub(r"\b(the|a|an)\b", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def build_fuzzy_index():
+    """squashed norm title -> work slug, for near-dup detection."""
+    idx = {}
+    for wy in WORKS_DIR.glob("*/work.yaml"):
+        for line in open(wy, errors="replace"):
+            if line.startswith("title:"):
+                idx[_norm(line.split(":", 1)[1]).replace(" ", "")] = wy.parent.name
+                break
+    return idx
+
+
+def fuzzy_dup(title, own_slug, idx):
+    """Existing work slug whose title near-matches, or None.
+
+    Catches the wanted list's variant entries (Rabbit in a/the Log,
+    500/Five Hundred Miles, ...) that exact normalization misses.
+    """
+    sq = _norm(title).replace(" ", "")
+    hit = idx.get(sq)
+    if hit and hit != own_slug:
+        return hit
+    for other, slug in idx.items():
+        if slug == own_slug or abs(len(other) - len(sq)) > 4:
+            continue
+        if difflib.SequenceMatcher(None, sq, other).ratio() >= 0.94:
+            return slug
+    return None
 
 
 def lyric_snippet(content: str, n: int = 4) -> list:
@@ -99,6 +140,7 @@ def main():
     for old in STAGING_DIR.glob("*.pro"):
         old.unlink()
 
+    fuzzy_idx = build_fuzzy_index()
     staged, held, dropped = [], [], []
     for pro in sorted(PARSED_DIR.glob("*.pro")):
         slug = pro.stem
@@ -113,6 +155,10 @@ def main():
         if v.get("needs_review") and slug not in approved:
             held.append((slug, f"needs review (UG artist: "
                                f"{rec.get('candidate', {}).get('artist_name')})"))
+            continue
+        dup = fuzzy_dup(rec["wanted"]["title"], slug, fuzzy_idx)
+        if dup:
+            held.append((slug, f"near-dup of existing work '{dup}'"))
             continue
         shutil.copy2(pro, STAGING_DIR / pro.name)
         staged.append(slug)

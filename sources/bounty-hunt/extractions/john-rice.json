@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "John Rice",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:56:48",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 37
+ },
+ "candidate": null,
+ "content": null
+}

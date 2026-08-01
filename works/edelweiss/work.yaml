@@ -1,0 +1,13 @@
+id: edelweiss
+title: Edelweiss
+artist: Vince Hill
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: edelweiss.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/vince-hill/edelweiss-chords-4887568
+    imported_at: '2026-08-01'

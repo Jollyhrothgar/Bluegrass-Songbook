@@ -1,0 +1,13 @@
+id: katy-dear
+title: Katy Dear
+artist: Ian Sylvia
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: katy-dear.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/ian-sylvia/katy-dear-chords-2280381
+    imported_at: '2026-08-01'

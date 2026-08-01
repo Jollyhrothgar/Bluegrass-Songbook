@@ -1,0 +1,13 @@
+id: hallelujah
+title: Hallelujah
+artist: Jeff Buckley
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: hallelujah.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/jeff-buckley/hallelujah-chords-198052
+    imported_at: '2026-08-01'

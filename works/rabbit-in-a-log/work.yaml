@@ -1,0 +1,13 @@
+id: rabbit-in-a-log
+title: Rabbit in a Log
+artist: Bill Monroe
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: rabbit-in-a-log.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/bill-monroe/rabbit-in-a-log-chords-3349673
+    imported_at: '2026-08-01'

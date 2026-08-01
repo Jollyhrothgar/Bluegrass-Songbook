@@ -1,0 +1,13 @@
+id: weary-traveler
+title: Weary Traveler
+artist: Bill Monroe
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: weary-traveler.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/bill-monroe/weary-traveler-chords-2366775
+    imported_at: '2026-08-01'

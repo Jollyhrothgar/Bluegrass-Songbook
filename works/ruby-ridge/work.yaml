@@ -1,0 +1,13 @@
+id: ruby-ridge
+title: Ruby Ridge
+artist: Old Crow Medicine Show
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: ruby-ridge.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/ruby-ridge-chords-2400873
+    imported_at: '2026-08-01'

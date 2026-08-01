@@ -1,0 +1,13 @@
+id: look-at-miss-ohio
+title: Look At Miss Ohio
+artist: Gillian Welch
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: look-at-miss-ohio.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/gillian-welch/look-at-miss-ohio-chords-1089277
+    imported_at: '2026-08-01'

@@ -1,0 +1,13 @@
+id: reflections
+title: Reflections
+artist: The Charlie Daniels Band
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: reflections.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-charlie-daniels-band/reflections-chords-586479
+    imported_at: '2026-08-01'

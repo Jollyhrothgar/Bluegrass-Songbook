@@ -1,0 +1,13 @@
+id: turmoil-tinfoil
+title: Turmoil & Tinfoil
+artist: Billy Strings
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: turmoil-tinfoil.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/billy-strings/turmoil-and-tinfoil-chords-2873123
+    imported_at: '2026-08-01'

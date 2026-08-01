@@ -1,0 +1,13 @@
+id: the-lighthouses-tale
+title: The Lighthouse's Tale
+artist: Nickel Creek
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: the-lighthouse-s-tale.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/nickel-creek/the-lighthouses-tale-chords-1758695
+    imported_at: '2026-08-01'

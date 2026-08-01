@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "Late for the Dance",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T11:58:57",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 9
+ },
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,13 @@
+id: theres-a-new-moon-over-my-shoulder
+title: There's a New Moon Over My Shoulder
+artist: Jim Reeves
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: there-s-a-new-moon-over-my-shoulder.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/jim-reeves/theres-a-new-moon-over-my-shoulder-chords-2599167
+    imported_at: '2026-08-01'
