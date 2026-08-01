@@ -21,19 +21,29 @@ from curation import load_registry, save_registry
 
 REPO_ROOT = Path(__file__).parent.parent.parent
 INDEX_PATH = REPO_ROOT / 'docs' / 'data' / 'index.jsonl'
+ARCHIVE_PATH = REPO_ROOT / 'docs' / 'data' / 'archive.jsonl'
 
 
 def load_index() -> list:
+    """Every built row — canon (index.jsonl) plus pruned (archive.jsonl).
+
+    Curation operates on the WHOLE corpus: `unprune` and `pin` name works
+    that are (by definition) off the canon index, so reading index.jsonl
+    alone would report them as unknown ids.
+    """
     if not INDEX_PATH.exists():
         print(f"Error: index not found at {INDEX_PATH}. "
               f"Run ./scripts/bootstrap --quick first.", file=sys.stderr)
         sys.exit(1)
     songs = []
-    with open(INDEX_PATH, encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                songs.append(json.loads(line))
+    for path in (INDEX_PATH, ARCHIVE_PATH):
+        if not path.exists():
+            continue
+        with open(path, encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    songs.append(json.loads(line))
     return songs
 
 
@@ -209,8 +219,8 @@ def cmd_lint(args):
         text = text.encode('ascii', 'ignore').decode('ascii').lower()
         return ' '.join(_re.sub(r'[^a-z0-9\s]', '', text).split())
 
-    index_path = REPO_ROOT / 'docs' / 'data' / 'index.jsonl'
-    rows = [json.loads(l) for l in open(index_path)]
+    # Whole corpus: group hygiene spans canon and archived rows alike.
+    rows = load_index()
     searchable = [r for r in rows if r.get('indexed') is not False]
 
     findings = []

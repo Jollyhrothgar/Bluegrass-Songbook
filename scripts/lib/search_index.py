@@ -18,6 +18,10 @@ Supports the same query syntax as the web app:
     tag:TAG or t:TAG          - Filter by tag (e.g., bluegrass, jamfriendly)
     -prefix:VALUE             - Exclude (e.g., -tag:classiccountry)
     plain text                - Search all fields
+
+Searches the canon index (docs/data/index.jsonl) — the same rows the site
+searches. Pass --archive to also include the pruned works in
+docs/data/archive.jsonl.
 """
 
 import json
@@ -293,6 +297,9 @@ def main():
     parser.add_argument('--count', action='store_true', help='Only show count')
     parser.add_argument('--index', type=Path, default=Path('docs/data/index.jsonl'),
                         help='Path to index.jsonl')
+    parser.add_argument('--archive', action='store_true',
+                        help='Also search the pruned works in archive.jsonl '
+                             '(the CLI matches the site by default: canon only)')
 
     args = parser.parse_args()
 
@@ -308,6 +315,15 @@ def main():
         sys.exit(1)
 
     songs = load_index(index_path)
+
+    # index.jsonl holds only the canon (searchable) rows — the same set the
+    # site searches. --archive folds the indexed:false rows back in.
+    if args.archive:
+        archive_path = index_path.parent / 'archive.jsonl'
+        if archive_path.exists():
+            songs.extend(load_index(archive_path))
+        else:
+            print(f"Warning: no archive at {archive_path}", file=sys.stderr)
 
     if not args.query:
         print(f"Loaded {len(songs):,} songs from index")

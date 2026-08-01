@@ -3,7 +3,12 @@
 Build search index from works/ directory.
 
 This replaces build_index.py as the primary index builder.
-Reads work.yaml + lead-sheet.pro from each work directory and outputs index.jsonl.
+Reads work.yaml + lead-sheet.pro from each work directory and emits a
+THREE-PART output (see `write_outputs` and scripts/lib/CLAUDE.md):
+
+    docs/data/index.jsonl   canon rows only (indexed is not False), no content
+    docs/data/archive.jsonl indexed:false rows, no content, lyrics clipped
+    docs/data/songs/{id}.pro   full ChordPro per work, fetched on page open
 
 Usage:
     uv run python scripts/lib/build_works_index.py
@@ -255,6 +260,113 @@ def _tab_provenance_mismatch(otf_path: Path, prov_source_id):
     if not otf_id or str(otf_id) == str(prov_source_id):
         return None
     return (str(prov_source_id), {str(otf_id)})
+
+
+def otf_track_count(otf_path: Path):
+    """Number of tracks in an OTF file, or None if it can't be read.
+
+    Published on each `tablature_parts` entry as `tracks` so the frontend can
+    tell a one-track tab from a multi-instrument arrangement (whether to show
+    the track mixer) without downloading the OTF first.
+    """
+    try:
+        data = json.loads(otf_path.read_text())
+    except Exception:
+        return None
+    tracks = data.get('tracks')
+    if isinstance(tracks, list):
+        return len(tracks)
+    return None
+
+
+# ── Slim-output shape ────────────────────────────────────────────────────
+# Fields that used to ride along on every index row and now live in
+# docs/data/songs/{id}.pro instead (fetched when a song page opens).
+SPLIT_OUT_FIELDS = ('content', 'abc_content')
+
+# Archive rows only feed the work-page header fallback, never search, so
+# their lyrics are clipped harder than the canon rows'.
+ARCHIVE_LYRICS_CHARS = 200
+
+
+def write_outputs(songs: list, index_file: Path):
+    """Split the built rows into the three published artifacts.
+
+    - ``index_file`` (docs/data/index.jsonl): canon rows only — this is the
+      startup payload, so `content`/`abc_content` are stripped and replaced
+      by the booleans `has_content` / `has_abc`.
+    - ``archive.jsonl`` beside it: the ``indexed: false`` rows in the same
+      slim shape, with `lyrics` clipped to ARCHIVE_LYRICS_CHARS. Loaded
+      lazily (deep links, lists, arrangement groups), never for search.
+    - ``songs/{id}.pro``: the FULL ChordPro exactly as the old `content`
+      field — for canon AND archive works.
+
+    `songs` must already be sorted by id; both jsonl files inherit that
+    order, keeping the build byte-stable.
+    """
+    data_dir = index_file.parent
+    archive_file = data_dir / 'archive.jsonl'
+    songs_dir = data_dir / 'songs'
+    songs_dir.mkdir(parents=True, exist_ok=True)
+
+    canon_rows = []
+    archive_rows = []
+    published_songs = set()
+    written = 0
+
+    for song in songs:
+        content = song.pop('content', '') or ''
+        abc_content = song.pop('abc_content', None)
+
+        if content:
+            name = f"{song['id']}.pro"
+            published_songs.add(name)
+            dest = songs_dir / name
+            # Only rewrite when the text actually changed: keeps mtimes (and
+            # therefore incremental rebuilds / git status) quiet.
+            try:
+                unchanged = dest.read_text(encoding='utf-8') == content
+            except OSError:
+                unchanged = False
+            if not unchanged:
+                dest.write_text(content, encoding='utf-8')
+                written += 1
+            song['has_content'] = True
+        if abc_content:
+            song['has_abc'] = True
+
+        if song.get('indexed') is False:
+            song['lyrics'] = (song.get('lyrics') or '')[:ARCHIVE_LYRICS_CHARS]
+            archive_rows.append(song)
+        else:
+            canon_rows.append(song)
+
+    # Prune orphans: .pro files whose work was renamed, deleted, suppressed or
+    # lost its lead sheet. Nothing but this step writes to docs/data/songs/,
+    # so every unexpected *.pro there is an orphan.
+    orphans = [p for p in songs_dir.glob('*.pro')
+               if p.name not in published_songs]
+    for path in orphans:
+        path.unlink()
+
+    def _write(path: Path, rows: list):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with open(path, 'w', encoding='utf-8') as f:
+            for row in rows:
+                f.write(json.dumps(row, ensure_ascii=False) + '\n')
+        return path.stat().st_size
+
+    index_size = _write(index_file, canon_rows)
+    archive_size = _write(archive_file, archive_rows)
+
+    print(f"Written to {index_file}")
+    print(f"  {len(canon_rows)} canon rows, "
+          f"{index_size / 1024 / 1024:.1f} MB")
+    print(f"Written to {archive_file}")
+    print(f"  {len(archive_rows)} archive (indexed:false) rows, "
+          f"{archive_size / 1024 / 1024:.1f} MB")
+    print(f"Song content: {len(published_songs)} files in {songs_dir} "
+          f"({written} written this build, {len(orphans)} orphans removed)")
 
 
 def build_song_from_work(work_dir: Path) -> dict:
@@ -786,6 +898,11 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
             # live song page.
             published_tabs.add(dest_path.name)
             if not source_path.exists():
+                # No works/ copy this build — fall back to the already
+                # published OTF so the row keeps its track count.
+                tracks = otf_track_count(dest_path) if dest_path.exists() else None
+                if tracks is not None:
+                    tab_part['tracks'] = tracks
                 continue
 
             # Integrity gate: the OTF must actually come from the TEF named in
@@ -798,6 +915,12 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
                 tab_provenance_mismatches.append(
                     (work_id, source_path.name, mismatch))
                 continue  # never publish an OTF that fails the provenance gate
+
+            # Track count for the frontend's mixer decision (read here — the
+            # OTF is already open for the provenance gate).
+            tracks = otf_track_count(source_path)
+            if tracks is not None:
+                tab_part['tracks'] = tracks
 
             if (not dest_path.exists() or
                     source_path.stat().st_mtime > dest_path.stat().st_mtime):
@@ -989,14 +1112,10 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     # across builds — avoids whole-file churn in git diffs.
     songs.sort(key=lambda s: str(s.get('id', '')))
 
-    # Write index
-    output_file.parent.mkdir(parents=True, exist_ok=True)
-    with open(output_file, 'w', encoding='utf-8') as f:
-        for song in songs:
-            f.write(json.dumps(song, ensure_ascii=False) + '\n')
-
-    print(f"Written to {output_file}")
-    print(f"Size: {output_file.stat().st_size / 1024 / 1024:.1f} MB")
+    # Split into canon index + archive + per-song ChordPro files. Runs after
+    # the provenance gate (which raises), so a failed build never mutates
+    # docs/data/.
+    write_outputs(songs, output_file)
 
     # Lightweight dedup check: warn about potential duplicates
     _check_duplicates(songs)

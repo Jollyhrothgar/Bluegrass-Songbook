@@ -1,0 +1,50 @@
+{meta: title Crazy Heart}
+{meta: artist The Lonesome River Band}
+{meta: composer Sharon Rose Higgins and Billy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file crazyheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
+
+{start_of_verse: Verse 1}
+[G]Like the wild west wind so un[D7]certain
+You're changing like the weather every[G]day
+One night we're in love the next I'm [D7]hurtin'
+Your crazy heart is driving me [G]insane
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Crazy heart I wish I didn't [D7]love you
+And I could turn around and walk [G]away
+I've only got a half a mind to [D7]leave you
+Your crazy heart is driving me [G]insane
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+All I want is a love that I can [D7]count on
+Can't hold to the promises you've [G]made
+How can it feel so right then go [D7]so wrong
+Your crazy heart is driving me [G]insane
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Crazy heart I wish I didn't [D7]love you
+And I could turn around and walk [G]away
+I've only got a half a mind to [D7]leave you
+Your crazy heart is driving me [G]insane
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Crazy heart I wish I didn't [D7]love you
+And I could turn around and walk [G]away
+I've only got a half a mind to [D7]leave you
+Your crazy heart is driving me [G]insane
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+Your crazy [D7]heart is driving me [G]insane
+{end_of_verse}
+
+
+
+
+

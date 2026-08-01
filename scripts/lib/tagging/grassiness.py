@@ -670,39 +670,51 @@ def score_index(
     with_artist_score = 0
     with_tag_score = 0
 
-    with open(index_file) as f:
-        for line in f:
-            song = json.loads(line)
-            total += 1
+    # index.jsonl holds only the canon rows since 2026-07-31; the pruned works
+    # live in archive.jsonl. Grassiness scores the WHOLE corpus (the scores are
+    # an input to what belongs on the index in the first place), so read both.
+    def iter_rows():
+        paths = [index_file]
+        archive_file = index_file.parent / 'archive.jsonl'
+        if archive_file.exists():
+            paths.append(archive_file)
+        for path in paths:
+            with open(path) as f:
+                for line in f:
+                    if line.strip():
+                        yield json.loads(line)
 
-            title = song.get('title', '')
-            song_id = song.get('id', '')
+    for song in iter_rows():
+        total += 1
 
-            if not title or not song_id:
-                continue
+        title = song.get('title', '')
+        song_id = song.get('id', '')
 
-            artist_score, artists, tag_score = compute_grassiness(
-                title, recordings_cache, tagged_cache
-            )
-            total_score = combined_score(artist_score, tag_score)
+        if not title or not song_id:
+            continue
 
-            if total_score > 0:
-                if artist_score > 0:
-                    with_artist_score += 1
-                if tag_score > 0:
-                    with_tag_score += 1
+        artist_score, artists, tag_score = compute_grassiness(
+            title, recordings_cache, tagged_cache
+        )
+        total_score = combined_score(artist_score, tag_score)
 
-                # Convert artist tuples to list with year data for sorting
-                # artists is [(name, year), ...]
-                artist_data = [{'name': name, 'year': year} for name, year in artists]
+        if total_score > 0:
+            if artist_score > 0:
+                with_artist_score += 1
+            if tag_score > 0:
+                with_tag_score += 1
 
-                scores[song_id] = {
-                    'score': total_score,
-                    'artist_score': artist_score,
-                    'tag_score': tag_score,
-                    'artists': artist_data,
-                    'title': title,
-                }
+            # Convert artist tuples to list with year data for sorting
+            # artists is [(name, year), ...]
+            artist_data = [{'name': name, 'year': year} for name, year in artists]
+
+            scores[song_id] = {
+                'score': total_score,
+                'artist_score': artist_score,
+                'tag_score': tag_score,
+                'artists': artist_data,
+                'title': title,
+            }
 
     print(f"Scored {total} songs:")
     print(f"  {with_artist_score} with artist covers")
