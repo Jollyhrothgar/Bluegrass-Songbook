@@ -270,11 +270,16 @@ if __name__ == "__main__":
             print(f"Index file not found: {index_file}", file=sys.stderr)
             sys.exit(1)
 
+        # index.jsonl is canon-only; archive.jsonl holds the pruned works.
+        # Backing-track links show on every work page, so match both.
         songs = []
-        with open(index_file) as f:
-            for line in f:
-                if line.strip():
-                    songs.append(json.loads(line))
+        for path in (index_file, index_file.parent / "archive.jsonl"):
+            if not path.exists():
+                continue
+            with open(path) as f:
+                for line in f:
+                    if line.strip():
+                        songs.append(json.loads(line))
 
         if force:
             print(f"FORCE MODE: Re-fetching all {len(songs)} songs...", file=sys.stderr)

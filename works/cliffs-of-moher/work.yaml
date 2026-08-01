@@ -1,0 +1,13 @@
+id: cliffs-of-moher
+title: Cliffs of Moher
+artist: Gurbe Douwstra
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: cliffs-of-moher.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/gurbe-douwstra/cliffs-of-moher-chords-2755299
+    imported_at: '2026-07-31'

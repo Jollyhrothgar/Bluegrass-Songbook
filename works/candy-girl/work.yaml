@@ -1,0 +1,13 @@
+id: candy-girl
+title: Candy Girl
+artist: The Four Seasons
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: candy-girl.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-four-seasons/candy-girl-chords-68652
+    imported_at: '2026-07-31'

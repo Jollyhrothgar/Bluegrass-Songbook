@@ -1,0 +1,13 @@
+id: canadian-waltz
+title: Canadian Waltz
+artist: R W Hampton
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: canadian-waltz.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/r-w-hampton/canadian-river-waltz-chords-5031550
+    imported_at: '2026-07-31'

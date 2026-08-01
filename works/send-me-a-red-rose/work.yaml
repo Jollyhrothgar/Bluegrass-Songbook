@@ -1,0 +1,15 @@
+id: send-me-a-red-rose
+title: Send Me a Red Rose
+artist: Bob Wills
+composers:
+- Cindy Walker
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sendmearedroselyricschords.pro
+    imported_at: '2026-07-26'

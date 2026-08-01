@@ -1,0 +1,12 @@
+id: molly-bloom
+title: Molly Bloom
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: molly-bloom.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/molly-bloom-tabs-7179
+    imported_at: '2026-07-31'

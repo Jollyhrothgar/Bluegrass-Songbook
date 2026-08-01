@@ -1,0 +1,15 @@
+id: bring-back-my-blue-eyed-boy-to-me
+title: Bring Back My Blue Eyed Boy to Me
+artist: The Carter Family
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: bring-back-my-blue-eyed-boy-to-me.txt
+    source_url: https://www.e-chords.com/chords/the-carter-family/bring-back-my-blue-eyed-boy
+    imported_at: '2026-07-31'
+composers:
+- A.P. Carter

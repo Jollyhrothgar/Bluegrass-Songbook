@@ -6,7 +6,8 @@
 
 import { allSongs, bountyIndex, getBountyWorkCount } from './state.js';
 import { isPlaceholder, escapeHtml, requireLogin } from './utils.js';
-import { formatTagName } from './tags.js';
+import { formatTagName, getInstrumentTags } from './tags.js';
+import { songHasContent, songHasAbc } from './song-content.js';
 import { openAddSongPicker } from './add-song-picker.js';
 
 // The wanted list (fetched once; null = not loaded yet)
@@ -27,17 +28,14 @@ function tagNames(song) {
     return Array.isArray(t) ? t : Object.keys(t);
 }
 
-/** Instruments a song already covers (ABC counts as fiddle). */
+/**
+ * Instruments a song already covers (ABC counts as fiddle). Derived by
+ * tags.js so the bounty page and the Instrument facet agree about what
+ * "has a banjo part" means.
+ */
+const CORE_INSTRUMENTS = ['banjo', 'guitar', 'mandolin', 'fiddle', 'dobro', 'bass'];
 function instrumentsCovered(song) {
-    const have = new Set();
-    if (song.abc_content) have.add('fiddle');
-    for (const part of song.tablature_parts || []) {
-        const inst = part.instrument || '';
-        for (const k of ['banjo', 'guitar', 'mandolin', 'fiddle', 'dobro', 'bass']) {
-            if (inst.includes(k)) have.add(k);
-        }
-    }
-    return have;
+    return new Set(getInstrumentTags(song).filter(t => CORE_INSTRUMENTS.includes(t)));
 }
 
 /**
@@ -50,7 +48,7 @@ function computePartGaps() {
     const gaps = [];
     for (const song of allSongs) {
         if (song.indexed === false || isPlaceholder(song)) continue;
-        const isInstrumental = song.abc_content || song.tablature_parts?.length ||
+        const isInstrumental = songHasAbc(song) || song.tablature_parts?.length ||
             tagNames(song).includes('Instrumental');
         if (!isInstrumental) continue;
         const have = instrumentsCovered(song);
@@ -65,8 +63,8 @@ function computePartGaps() {
 
 function describeHave(song, have) {
     const bits = [];
-    if (song.content) bits.push('chords');
-    if (song.abc_content) bits.push('fiddle notation');
+    if (songHasContent(song)) bits.push('chords');
+    if (songHasAbc(song)) bits.push('fiddle notation');
     for (const i of have) {
         if (i !== 'fiddle') bits.push(`${INSTRUMENT_LABELS[i] || i} tab`);
     }
@@ -82,7 +80,7 @@ function describeHave(song, have) {
 function computeChordGaps() {
     const gaps = allSongs.filter(song =>
         song.indexed !== false && !isPlaceholder(song) &&
-        song.content && song.lyrics?.trim() && !(song.chord_count > 0));
+        songHasContent(song) && song.lyrics?.trim() && !(song.chord_count > 0));
     gaps.sort((a, b) => (b.canonical_rank || 0) - (a.canonical_rank || 0) ||
         String(a.title).localeCompare(String(b.title)));
     return gaps;
@@ -153,8 +151,8 @@ function formatBountyLabel(bounty) {
  */
 function describeExistingParts(song) {
     const parts = [];
-    if (song.content) parts.push('Lyrics & chords');
-    if (song.abc_content) parts.push('ABC notation');
+    if (songHasContent(song)) parts.push('Lyrics & chords');
+    if (songHasAbc(song)) parts.push('ABC notation');
     if (song.tablature_parts?.length) {
         for (const tab of song.tablature_parts) {
             const inst = INSTRUMENT_LABELS[tab.instrument] || tab.instrument || 'tab';

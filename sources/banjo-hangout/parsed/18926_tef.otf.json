@@ -9,7 +9,8 @@
         "measure": 1,
         "time_signature": "1/4"
       }
-    ]
+    ],
+    "key": "G"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -2100,8 +2101,10 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "18926.tef",
-    "converted_at": "2026-07-02T11:24:53.040707"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/tab-leather-britche-18926-555318172013.tef",
+    "author": "n2banjos",
+    "converted_at": "2026-07-26T22:20:06.453892",
+    "source_id": "18926"
   }
 }

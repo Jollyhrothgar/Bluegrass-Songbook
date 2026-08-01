@@ -1,0 +1,13 @@
+id: dry-and-dusty
+title: Dry and Dusty
+artist: Fever Ray
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: dry-and-dusty.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/fever-ray/dry-and-dusty-chords-1904459
+    imported_at: '2026-07-31'

@@ -1,5 +1,8 @@
 // Tag system for Bluegrass Songbook
 
+import { setTagTerms, toggleTagTerm } from './search-query.js';
+import { songHasAbc } from './song-content.js';
+
 // Tag category mapping for display
 export const TAG_CATEGORIES = {
     // Genre
@@ -14,13 +17,45 @@ export const TAG_CATEGORIES = {
     // Instrument (for tab/notation availability)
     'banjo': 'instrument', 'mandolin': 'instrument', 'fiddle': 'instrument',
     'guitar': 'instrument', 'dobro': 'instrument', 'bass': 'instrument',
+    'tenor-banjo': 'instrument',
+    // Instrument-type facets that aren't instruments themselves
+    'notation': 'instrument', 'multipart': 'instrument',
 };
 
-// Tag categories for dropdown display
+/**
+ * Instrument-type facets: the virtual tags derived from a work's parts
+ * (see getInstrumentTags). ONE list drives the Tags dropdown's Instruments
+ * group, the Instrument facet pill, and the docs — so `tag:banjo` typed by
+ * hand and clicked in the UI can never disagree.
+ */
+export const INSTRUMENT_FACETS = [
+    { tag: 'banjo', label: 'Banjo' },
+    { tag: 'mandolin', label: 'Mandolin' },
+    { tag: 'guitar', label: 'Guitar' },
+    { tag: 'fiddle', label: 'Fiddle' },
+    { tag: 'dobro', label: 'Dobro' },
+    { tag: 'notation', label: 'Notation (ABC)' },
+    { tag: 'multipart', label: 'Multipart' },
+];
+
+/**
+ * Instruments a raw OTF/part instrument string counts as. Sources spell
+ * them "5-string-banjo", "upright-bass", "Mandolin" — the facet tags are
+ * the plain family names.
+ */
+const INSTRUMENT_FAMILIES = [
+    'tenor-banjo', 'banjo', 'mandolin', 'guitar', 'fiddle', 'dobro', 'bass',
+];
+
+// Tag categories for dropdown display — mirrors the checkbox groups in
+// index.html. The sub-flavors of country (HonkyTonk, Outlaw, Rockabilly,
+// WesternSwing) are no longer offered as checkboxes now that the whole index is
+// bluegrass-adjacent; songs keep those tags and `tag:HonkyTonk` still works.
 export const TAG_DISPLAY_CATEGORIES = {
-    'Genre': ['Bluegrass', 'ClassicCountry', 'OldTime', 'Gospel', 'Folk', 'HonkyTonk', 'Outlaw', 'Rockabilly', 'WesternSwing'],
+    'Genre': ['Bluegrass', 'ClassicCountry', 'OldTime', 'Gospel', 'Folk'],
     'Vibe': ['JamFriendly', 'Modal', 'Jazzy'],
-    'Structure': ['Instrumental', 'Waltz']
+    'Structure': ['Instrumental', 'Waltz'],
+    'Instruments': INSTRUMENT_FACETS.map(f => f.tag),
 };
 
 /**
@@ -45,18 +80,33 @@ function normalizeTag(tag) {
 }
 
 /**
- * Get instrument tags for a song (from tablature_parts and abc_notation)
+ * THE source of instrument-type tags for a work. Everything instrument-
+ * flavored — `tag:banjo` search, the Instruments dropdown group, the
+ * Instrument facet pill, the result-card badges — comes from here.
+ *
+ * Derived (never stored):
+ * - each tablature part's instrument, both raw ("5-string-banjo") and
+ *   family ("banjo"), so hand-typed and clicked terms both land
+ * - ABC notation ⇒ 'fiddle' AND 'notation'
+ * - any part with more than one track (or an 'ensemble' part) ⇒ 'multipart'
  */
 export function getInstrumentTags(song) {
     const instruments = new Set();
-    if (song.tablature_parts) {
-        song.tablature_parts.forEach(p => {
-            if (p.instrument) instruments.add(p.instrument.toLowerCase());
-        });
+    for (const part of song?.tablature_parts || []) {
+        const raw = (part.instrument || '').toLowerCase();
+        if (raw) {
+            instruments.add(raw);
+            for (const family of INSTRUMENT_FAMILIES) {
+                if (raw.includes(family)) instruments.add(family);
+            }
+        }
+        if ((part.tracks || 0) > 1 || raw === 'ensemble') instruments.add('multipart');
     }
-    // Check for ABC notation in content (uses {start_of_abc} directive)
-    if (song.content && song.content.includes('{start_of_abc}')) {
-        instruments.add('fiddle'); // ABC assumed to be fiddle
+    // ABC notation: fiddle by convention, and notation as its own facet
+    // (has_abc on the lean index; a {start_of_abc} block on legacy rows)
+    if (songHasAbc(song)) {
+        instruments.add('fiddle');
+        instruments.add('notation');
     }
     return Array.from(instruments);
 }
@@ -72,8 +122,10 @@ export function songHasTags(song, requiredTags) {
     const songTags = song.tags || {};
     const songTagKeys = Object.keys(songTags).map(normalizeTag);
 
-    // Add instrument tags (from tabs and ABC notation)
-    const instrumentTags = getInstrumentTags(song);
+    // Add the virtual instrument tags (tabs, ABC notation, multipart),
+    // normalized like the real ones so `tag:tenor-banjo`, `tag:Notation`
+    // and `tag:multipart` all match case- and separator-insensitively.
+    const instrumentTags = getInstrumentTags(song).map(normalizeTag);
     const allTags = [...songTagKeys, ...instrumentTags];
 
     return requiredTags.every(searchTag => {
@@ -105,11 +157,55 @@ export function renderTagBadges(song, onClick = null) {
 let searchInputEl = null;
 let tagDropdownBtnEl = null;
 let tagDropdownContentEl = null;
+let facetChipEls = [];
 let searchFn = null;
 let parseSearchQueryFn = null;
 
+/** Extra sync callbacks (facet pills built outside this module) */
+const tagSyncHooks = [];
+
 /**
- * Update search from tag checkboxes
+ * Register a callback that runs whenever the tag surfaces re-sync with the
+ * search box (checkbox change, chip click, typing). Facet pills owned by
+ * other modules use this so every surface agrees with the query.
+ */
+export function onTagSync(fn) {
+    if (typeof fn === 'function') tagSyncHooks.push(fn);
+}
+
+/** Positive tags currently in the search box */
+function currentQueryTags() {
+    if (!searchInputEl || !parseSearchQueryFn) return [];
+    return parseSearchQueryFn(searchInputEl.value).tagFilters || [];
+}
+
+/** Positive tags currently in the box, lowercased (for active-state sync) */
+export function activeQueryTags() {
+    return currentQueryTags().map(t => t.toLowerCase());
+}
+
+/** Tags that a control (checkbox or chip) represents, lowercased */
+function controlledTags() {
+    const tags = new Set();
+    tagDropdownContentEl?.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        if (cb.dataset.tag) tags.add(cb.dataset.tag.toLowerCase());
+    });
+    facetChipEls.forEach(chip => {
+        if (chip.dataset.facetTag) tags.add(chip.dataset.facetTag.toLowerCase());
+    });
+    return tags;
+}
+
+/** Write a query into the box, re-run the search, and re-sync the controls */
+function applyQuery(query) {
+    searchInputEl.value = query;
+    if (searchFn) searchFn(query);
+    syncTagControls();
+}
+
+/**
+ * Update search from tag checkboxes.
+ * Typed tags that no control represents (e.g. `tag:HonkyTonk`) are preserved.
  */
 export function updateSearchFromTagCheckboxes() {
     if (!tagDropdownContentEl || !searchInputEl) return;
@@ -119,19 +215,30 @@ export function updateSearchFromTagCheckboxes() {
         checkedTags.push(cb.dataset.tag);
     });
 
-    // Get current search without tag filters
-    let currentSearch = searchInputEl.value;
-    // Remove existing tag: filters
-    currentSearch = currentSearch.replace(/\s*(tag|t):[^\s]+/g, '').trim();
+    const controlled = controlledTags();
+    const preserved = currentQueryTags().filter(t => !controlled.has(t.toLowerCase()));
 
-    // Add new tag filters
-    if (checkedTags.length > 0) {
-        const tagFilter = `tag:${checkedTags.join(',')}`;
-        currentSearch = currentSearch ? `${currentSearch} ${tagFilter}` : tagFilter;
+    applyQuery(setTagTerms(searchInputEl.value, [...preserved, ...checkedTags]));
+}
+
+/**
+ * Toggle a single tag from a facet chip. When the dropdown also has a checkbox
+ * for that tag, go through the checkbox so the two surfaces stay in step.
+ */
+export function toggleFacetTag(tag) {
+    if (!searchInputEl) return;
+
+    const checkbox = Array.from(
+        tagDropdownContentEl?.querySelectorAll('input[type="checkbox"]') || []
+    ).find(cb => (cb.dataset.tag || '').toLowerCase() === tag.toLowerCase());
+
+    if (checkbox) {
+        checkbox.checked = !checkbox.checked;
+        updateSearchFromTagCheckboxes();
+        return;
     }
 
-    searchInputEl.value = currentSearch;
-    if (searchFn) searchFn(currentSearch);
+    applyQuery(toggleTagTerm(searchInputEl.value, currentQueryTags(), tag));
 }
 
 /**
@@ -140,14 +247,37 @@ export function updateSearchFromTagCheckboxes() {
 export function syncTagCheckboxes() {
     if (!tagDropdownContentEl || !searchInputEl || !parseSearchQueryFn) return;
 
-    const { tagFilters } = parseSearchQueryFn(searchInputEl.value);
-    const tagFiltersLower = tagFilters.map(t => t.toLowerCase());
+    const tagFiltersLower = currentQueryTags().map(t => t.toLowerCase());
 
     tagDropdownContentEl.querySelectorAll('input[type="checkbox"]').forEach(cb => {
         const tag = cb.dataset.tag.toLowerCase();
         // Check if this tag (or prefix) is in the filters
         cb.checked = tagFiltersLower.some(f => tag.startsWith(f) || f.startsWith(tag));
     });
+}
+
+/**
+ * Sync facet chips' active state with the search input
+ */
+export function syncFacetChips() {
+    if (!facetChipEls.length || !searchInputEl || !parseSearchQueryFn) return;
+
+    const tagFiltersLower = currentQueryTags().map(t => t.toLowerCase());
+    facetChipEls.forEach(chip => {
+        const tag = (chip.dataset.facetTag || '').toLowerCase();
+        const active = tagFiltersLower.some(f => tag.startsWith(f) || f.startsWith(tag));
+        chip.classList.toggle('active', active);
+        chip.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+}
+
+/** Sync every tag surface (dropdown + chips + registered pills) with the query */
+export function syncTagControls() {
+    syncTagCheckboxes();
+    syncFacetChips();
+    for (const hook of tagSyncHooks) {
+        try { hook(); } catch (e) { /* a broken surface must not block the rest */ }
+    }
 }
 
 /**
@@ -158,6 +288,7 @@ export function initTagDropdown(options) {
         searchInput,
         tagDropdownBtn,
         tagDropdownContent,
+        facetChips,
         search,
         parseSearchQuery
     } = options;
@@ -165,8 +296,23 @@ export function initTagDropdown(options) {
     searchInputEl = searchInput;
     tagDropdownBtnEl = tagDropdownBtn;
     tagDropdownContentEl = tagDropdownContent;
+    facetChipEls = Array.from(facetChips || document.querySelectorAll('.facet-chip[data-facet-tag]'));
     searchFn = search;
     parseSearchQueryFn = parseSearchQuery;
+
+    // Facet chips work on their own — they don't need the dropdown to exist
+    facetChipEls.forEach(chip => {
+        chip.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleFacetTag(chip.dataset.facetTag);
+            searchInputEl?.focus();
+        });
+    });
+
+    // Keep chips in step with typing
+    if (searchInputEl) {
+        searchInputEl.addEventListener('input', syncTagControls);
+    }
 
     if (!tagDropdownBtnEl || !tagDropdownContentEl) return;
 
@@ -189,9 +335,4 @@ export function initTagDropdown(options) {
             updateSearchFromTagCheckboxes();
         });
     });
-
-    // Sync checkboxes with search input
-    if (searchInputEl) {
-        searchInputEl.addEventListener('input', syncTagCheckboxes);
-    }
 }

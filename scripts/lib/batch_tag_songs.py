@@ -181,18 +181,26 @@ Use the submit_song_tags tool to return your classifications."""
 
 
 def load_songs():
-    """Load all songs from index.jsonl."""
+    """Load all songs from index.jsonl + archive.jsonl.
+
+    Tags are shown on every work page, canon or archived, so tagging covers
+    the whole corpus — index.jsonl alone is only the canon slice.
+    """
     songs = []
-    with open(INDEX_FILE) as f:
-        for line in f:
-            if line.strip():
-                song = json.loads(line)
-                songs.append({
-                    'id': song['id'],
-                    'title': song.get('title', ''),
-                    'artist': song.get('artist', ''),
-                    'first_line': song.get('first_line', '')
-                })
+    paths = [INDEX_FILE, INDEX_FILE.parent / 'archive.jsonl']
+    for path in paths:
+        if not path.exists():
+            continue
+        with open(path) as f:
+            for line in f:
+                if line.strip():
+                    song = json.loads(line)
+                    songs.append({
+                        'id': song['id'],
+                        'title': song.get('title', ''),
+                        'artist': song.get('artist', ''),
+                        'first_line': song.get('first_line', '')
+                    })
     return songs
 
 

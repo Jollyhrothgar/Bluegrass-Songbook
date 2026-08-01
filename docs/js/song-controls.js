@@ -18,6 +18,7 @@ import {
 } from './state.js';
 import { CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { escapeHtml, downloadFile } from './utils.js';
+import { getSongContent } from './song-content.js';
 import { pill } from './shell.js';
 import { trackTranspose, trackExport } from './analytics.js';
 import { getTagCategory, formatTagName } from './tags.js';
@@ -537,9 +538,14 @@ function wireTagControls(container, song) {
  * Export a song: same actions the old export dropdown had.
  * Exported for the mobile bottom sheet, which reuses these actions.
  */
-export function handleExport(action) {
+export async function handleExport(action) {
     const song = currentSong;
-    const chordpro = currentChordpro;
+    // Content is fetched per song page; an export fired before the .pro
+    // landed (or from a surface that never rendered it) pulls it itself.
+    let chordpro = currentChordpro;
+    if (!chordpro && song) {
+        chordpro = await getSongContent(song).catch(() => null);
+    }
     if (!song || !chordpro) return;
 
     const title = song.title || 'song';

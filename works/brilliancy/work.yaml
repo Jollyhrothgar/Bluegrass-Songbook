@@ -2,10 +2,12 @@ id: brilliancy
 title: Brilliancy
 artist: Traditional
 composers:
-- Biography:Eck Robertson
+- Traditional
 tags:
 - Instrumental
 - OldTime
+- Bluegrass
+- Scruggs
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,3 +16,13 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11655'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11655
+    author: schlange
+    imported_at: '2026-07-26'

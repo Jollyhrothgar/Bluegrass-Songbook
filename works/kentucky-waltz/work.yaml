@@ -13,3 +13,5 @@ parts:
     imported_at: '2026-01-02'
 tags:
 - JamFriendly
+composers:
+- Bill Monroe

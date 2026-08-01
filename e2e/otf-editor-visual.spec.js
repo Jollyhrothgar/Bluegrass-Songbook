@@ -6,36 +6,45 @@ import { test, expect } from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
 
-// Test tab set (from plan) — covers all editor features
+// Test tab set (from plan) — covers all editor features.
+// Published tab filenames are `{work}-{instrument}-{source_id}.otf.json`
+// (a work can hold several arrangements per instrument), so entries name a
+// prefix and the exact file is resolved from docs/data/tabs at run time —
+// re-importing an arrangement changes the id, not this list.
+const TAB_DIR = path.join(import.meta.dirname, '..', 'docs', 'data', 'tabs');
+
+function resolveTab(prefix) {
+    const hit = fs.readdirSync(TAB_DIR)
+        .filter((f) => f.startsWith(`${prefix}-`) && f.endsWith('.otf.json'))
+        .sort()[0];
+    if (!hit) throw new Error(`No published tab for '${prefix}' in ${TAB_DIR}`);
+    return `data/tabs/${hit}`;
+}
+
 const TEST_TABS = [
     {
-        name: 'ebenezer-banjo',
-        file: 'data/tabs/ebenezer-banjo.otf.json',
-        features: ['compact', 'repeats', 'slides', 'h/p'],
-    },
-    {
-        name: 'cherokee-shuffle-a-banjo',
-        file: 'data/tabs/cherokee-shuffle-a-banjo.otf.json',
+        name: 'cherokee-shuffle-banjo',
+        file: resolveTab('cherokee-shuffle-banjo'),
         features: ['2/2 time', 'repeats', 'many articulations'],
     },
     {
         name: 'cattle-in-the-cane-banjo',
-        file: 'data/tabs/cattle-in-the-cane-banjo.otf.json',
+        file: resolveTab('cattle-in-the-cane-banjo'),
         features: ['multi-track', 'capo', 'all articulation types'],
     },
     {
         name: 'foggy-mountain-breakdown-mandolin',
-        file: 'data/tabs/foggy-mountain-breakdown-mandolin.otf.json',
+        file: resolveTab('foggy-mountain-breakdown-mandolin'),
         features: ['mandolin', 'ties'],
     },
     {
         name: 'jerusalem-ridge-ensemble',
-        file: 'data/tabs/jerusalem-ridge-ensemble-ensemble.otf.json',
+        file: resolveTab('jerusalem-ridge-ensemble-ensemble'),
         features: ['4 tracks', 'full ensemble', '2/2 time'],
     },
     {
         name: 'salt-creek-banjo',
-        file: 'data/tabs/salt-creek-banjo.otf.json',
+        file: resolveTab('salt-creek-1-banjo'),
         features: ['no repeats', 'slides', 'pull-offs'],
     },
 ];

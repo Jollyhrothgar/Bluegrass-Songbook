@@ -1,0 +1,15 @@
+id: going-across-the-sea
+title: Going Across the Sea
+artist: Weezer
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: going-across-the-sea.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/weezer/across-the-sea-chords-1192896
+    imported_at: '2026-07-31'
+composers:
+- Traditional

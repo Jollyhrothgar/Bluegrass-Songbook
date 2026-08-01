@@ -1,0 +1,15 @@
+id: what-s-the-use-in-just-me-trying
+title: What's the Use in Just Me Trying
+artist: Mel Tillis
+composers:
+- Jim Owen
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatstheuseinjustmetryinglyricschords.pro
+    imported_at: '2026-07-26'

@@ -1,0 +1,15 @@
+id: in-tall-buildings
+title: In Tall Buildings
+artist: John Hartford
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: in-tall-buildings.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/john-hartford/in-tall-buildings-chords-2524449
+    imported_at: '2026-07-31'
+composers:
+- John Hartford

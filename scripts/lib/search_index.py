@@ -18,6 +18,10 @@ Supports the same query syntax as the web app:
     tag:TAG or t:TAG          - Filter by tag (e.g., bluegrass, jamfriendly)
     -prefix:VALUE             - Exclude (e.g., -tag:classiccountry)
     plain text                - Search all fields
+
+Searches the canon index (docs/data/index.jsonl) — the same rows the site
+searches. Pass --archive to also include the pruned works in
+docs/data/archive.jsonl.
 """
 
 import json
@@ -75,14 +79,7 @@ def parse_query(query: str) -> dict:
         'title_filter': None,
         'lyrics_filter': None,
         'composer_filter': None,
-        'key_filter': None,
-        'exclude_artist': None,
-        'exclude_title': None,
-        'exclude_lyrics': None,
-        'exclude_composer': None,
-        'exclude_key': None,
         'exclude_tags': [],
-        'exclude_chords': [],
     }
 
     # Load prefixes from shared config
@@ -95,9 +92,15 @@ def parse_query(query: str) -> dict:
     # Find all prefix positions
     matches = []
     for m in re.finditer(pattern, query, re.IGNORECASE):
+        prefix = m.group(2).lower()
+        is_negative = m.group(1) == '-'
+        # Only tags support negation; a '-' before any other prefix means the
+        # whole token stays plain text (mirrors search-core.js).
+        if is_negative and prefix_map.get(prefix) != 'tag':
+            continue
         matches.append({
-            'prefix': m.group(2).lower(),
-            'is_negative': m.group(1) == '-',
+            'prefix': prefix,
+            'is_negative': is_negative,
             'index': m.start(),
             'end': m.end(),
         })
@@ -116,20 +119,9 @@ def parse_query(query: str) -> dict:
         field_type = prefix_map.get(prefix)
 
         if is_negative:
-            if field_type == 'artist':
-                result['exclude_artist'] = value.lower()
-            elif field_type == 'title':
-                result['exclude_title'] = value.lower()
-            elif field_type == 'lyrics':
-                result['exclude_lyrics'] = value.lower()
-            elif field_type == 'composer':
-                result['exclude_composer'] = value.lower()
-            elif field_type == 'key':
-                result['exclude_key'] = value.upper()
-            elif field_type == 'chord':
-                result['exclude_chords'].extend(c.strip() for c in value.split(',') if c.strip())
-            elif field_type == 'tag':
-                result['exclude_tags'].extend(t.strip() for t in value.split(',') if t.strip())
+            # Only -tag: reaches here (others are filtered out above)
+            if field_type == 'tag':
+                result['exclude_tags'].extend(t for t in re.split(r'[\s,]+', value) if t)
         else:
             if field_type == 'artist':
                 result['artist_filter'] = value.lower()
@@ -139,20 +131,18 @@ def parse_query(query: str) -> dict:
                 result['lyrics_filter'] = value.lower()
             elif field_type == 'composer':
                 result['composer_filter'] = value.lower()
-            elif field_type == 'key':
-                result['key_filter'] = value.upper()
             elif field_type == 'chord':
                 result['chord_filters'].extend(c.strip() for c in value.split(',') if c.strip())
             elif field_type == 'prog':
                 result['progression_filter'] = [c.strip() for c in value.split('-') if c.strip()]
             elif field_type == 'tag':
-                result['tag_filters'].extend(t.strip() for t in value.split(',') if t.strip())
+                result['tag_filters'].extend(t for t in re.split(r'[\s,]+', value) if t)
 
     # Extract general text (before first prefix)
     first_prefix_index = matches[0]['index'] if matches else len(query)
     general_text = query[:first_prefix_index].strip()
     if general_text:
-        result['text_terms'] = general_text.lower().split()
+        result['text_terms'] = general_text.lower().split() + result['text_terms']
 
     return result
 
@@ -234,35 +224,11 @@ def search(songs: list[dict], query: str) -> list[dict]:
         if parsed['composer_filter']:
             if parsed['composer_filter'] not in (song.get('composer') or '').lower():
                 continue
-        if parsed['key_filter']:
-            if (song.get('key') or '').upper() != parsed['key_filter']:
-                continue
-
-        # Field filters (exclusion)
-        if parsed['exclude_artist']:
-            if parsed['exclude_artist'] in (song.get('artist') or '').lower():
-                continue
-        if parsed['exclude_title']:
-            if parsed['exclude_title'] in (song.get('title') or '').lower():
-                continue
-        if parsed['exclude_lyrics']:
-            if parsed['exclude_lyrics'] in (song.get('lyrics') or '').lower():
-                continue
-        if parsed['exclude_composer']:
-            if parsed['exclude_composer'] in (song.get('composer') or '').lower():
-                continue
-        if parsed['exclude_key']:
-            if (song.get('key') or '').upper() == parsed['exclude_key']:
-                continue
 
         # Chord filters
         if parsed['chord_filters']:
             if not song_has_chords(song, parsed['chord_filters']):
                 continue
-        if parsed['exclude_chords']:
-            if song_has_chords(song, parsed['exclude_chords']):
-                continue
-
         # Progression filter
         if parsed['progression_filter']:
             if not song_has_progression(song, parsed['progression_filter']):
@@ -331,6 +297,9 @@ def main():
     parser.add_argument('--count', action='store_true', help='Only show count')
     parser.add_argument('--index', type=Path, default=Path('docs/data/index.jsonl'),
                         help='Path to index.jsonl')
+    parser.add_argument('--archive', action='store_true',
+                        help='Also search the pruned works in archive.jsonl '
+                             '(the CLI matches the site by default: canon only)')
 
     args = parser.parse_args()
 
@@ -346,6 +315,15 @@ def main():
         sys.exit(1)
 
     songs = load_index(index_path)
+
+    # index.jsonl holds only the canon (searchable) rows — the same set the
+    # site searches. --archive folds the indexed:false rows back in.
+    if args.archive:
+        archive_path = index_path.parent / 'archive.jsonl'
+        if archive_path.exists():
+            songs.extend(load_index(archive_path))
+        else:
+            print(f"Warning: no archive at {archive_path}", file=sys.stderr)
 
     if not args.query:
         print(f"Loaded {len(songs):,} songs from index")

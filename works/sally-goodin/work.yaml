@@ -2,7 +2,7 @@ id: sally-goodin
 title: Sally Goodin
 artist: Traditional
 composers:
-- Biography:Eck Robertson
+- Traditional
 default_key: A
 tags:
 - Jazzy
@@ -17,3 +17,13 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2275'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2275
+    author: Live on What You Grow
+    imported_at: '2026-07-26'

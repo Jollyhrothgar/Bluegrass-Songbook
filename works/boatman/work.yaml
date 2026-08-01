@@ -1,0 +1,13 @@
+id: boatman
+title: Boatman
+artist: Levellers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: boatman.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/levellers/the-boatman-chords-1678174
+    imported_at: '2026-07-31'

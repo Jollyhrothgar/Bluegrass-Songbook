@@ -1,0 +1,15 @@
+id: booth-shot-lincoln
+title: Booth Shot Lincoln
+artist: Uncle Earl
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: booth-shot-lincoln.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/uncle-earl/booth-shot-lincoln-chords-5314860
+    imported_at: '2026-07-31'
+composers:
+- Traditional

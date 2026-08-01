@@ -172,12 +172,19 @@ if __name__ == '__main__':
             print("Index file not found. Run build_index.py first.")
             exit(1)
 
+        # index.jsonl is the canon slice; archive.jsonl holds the pruned works.
+        # Artist tags feed every work page, so collect artists from both.
         artists = set()
-        with open(index_file) as f:
-            for line in f:
-                song = json.loads(line)
-                if song.get('artist'):
-                    artists.add(song['artist'])
+        for path in (index_file, index_file.parent / 'archive.jsonl'):
+            if not path.exists():
+                continue
+            with open(path) as f:
+                for line in f:
+                    if not line.strip():
+                        continue
+                    song = json.loads(line)
+                    if song.get('artist'):
+                        artists.add(song['artist'])
 
         print(f"Found {len(artists)} unique artists in index")
         refresh_artist_tags('docs/data/artist_tags.json', list(artists))

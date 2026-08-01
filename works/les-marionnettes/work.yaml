@@ -1,0 +1,13 @@
+id: les-marionnettes
+title: Les Marionnettes
+artist: Christophe
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: les-marionnettes.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/christophe/les-marionnettes-chords-1450262
+    imported_at: '2026-07-31'

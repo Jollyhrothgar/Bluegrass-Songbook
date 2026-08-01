@@ -1,0 +1,13 @@
+id: can-you-hear-me-now
+title: Can You Hear Me Now?
+artist: Emmylou Harris
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: can-you-hear-me-now.txt
+    source_url: https://www.e-chords.com/chords/emmylou-harris/can-you-hear-me-now
+    imported_at: '2026-07-31'

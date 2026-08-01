@@ -21,6 +21,11 @@
 #
 # tag_exclusions:                   # editorial tag removals (survive re-tagging)
 #   <work-id>: [TagName, ...]
+#
+# tab_pins:                         # default tablature arrangement per instrument
+#   <work-id>:
+#     <instrument>: "<source_id>"   # else the first part listed in work.yaml wins
+#                                   # ./scripts/utility curate pin-tab W banjo 12345
 groups:
   roll-in-my-sweet-baby-s-arms:
     variants:
@@ -114,7 +119,581 @@ groups:
       where-were-you:
         label: Loretta Lynn version
 suppressed: {}
-keep: {}
+keep:
+  a-heart-that-will-never-break-again:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  a-little-bit-of-heaven:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  all-that-s-worth-remembering-is-you:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  are-you-sad-tonight:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  big-blue-roses:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  big-river:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  blessed-assurance:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  branded-wherever-i-go:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  bye-bye-love:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  cocaine-blues:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  come-back-to-me-1:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  come-on-down-to-my-world:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  cotton-mill-man:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  country-boy-rock-and-roll:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  crying-heart-blues:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  daydreams-of-you:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  don-t-put-her-down-you-helped-put-her-there:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  dont-let-me-cross-over:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  down-the-road-of-life:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  down-where-the-still-waters-flow:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  drop-kick-me-jesus:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  early-morning-rain:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  everybody-will-be-happy-over-there:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  everything-s-alright:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  family-bible-lyrics-and-chords:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  far-side-banks-of-jordan:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  five-hundred-miles-away-from-home:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  four-strong-winds:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  fraulein:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  from-heaven-to-a-lonely-dark-hill:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  georgia-pineywoods:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  get-along-home-cindy-cindy:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  get-lost-you-wolf:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  girl-at-the-crossroads-bar:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  give-me-my-flowers-while-i-m-living:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  glory-hallelujah-now-i-m-satisfied:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  god-put-a-rainbow-in-the-clouds:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  god-s-own-singer:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  goodnight-irene:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  he-s-coming-back-to-earth-again:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  head-over-heels-in-love-with-you:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  hesitation-blues:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  hey-lonesome:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  hey-porter:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-believe:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-call-it-home:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-don-t-believe-you-ve-met-my-baby:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-dont-have-a-prayer-without-you:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-feel-like-traveling-on:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-just-want-to-thanks-you-lord:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-know-you-re-married-but-i-love-you-still:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-saw-you-face-in-the-moon:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-shall-be-at-home-with-jesus:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-washed-my-face-in-the-morning-dew:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-went-down-a-beggar-but-i-came-up-a-millionaire:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-wonder-if-you-know:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-ll-have-a-new-body-i-ll-have-a-new-life:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-ll-never-love-nobody-but-you:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  i-m-working-on-a-road:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  in-his-arms-i-m-not-afraid:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  im-a-man-of-constant-sorrow:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  jack-o-diamonds:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  jackson:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  jealous-heart:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  jesus-on-the-mainline:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  left-my-gal-in-the-mountains:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  let-us-travel-travel-on:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  letter-edged-in-black:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  letter-edged-in-black-1:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  listenin-to-the-rain:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  live-forever:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  love-you-like-it-s-our-last-time:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  lovesick-blues:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  making-believe:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  mary-don-t-you-weep-for-me:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  mississippi-river-raft:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  move-it-on-over:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  my-grandfather-s-clock:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  my-home-ain-t-in-the-hall-of-fame:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  my-little-girl-in-tennessee:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  my-mother-s-bible:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  new-freedom-bell:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  new-roving-gambler:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  no-longer-a-sweetheart-of-mine:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  old-brush-arbors:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  old-time-religion:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  on-the-jericho-road:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  on-the-jericho-road-1:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  on-the-wings-of-a-snow-white-dove:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  one-day-at-a-time:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  one-day-at-a-time-1:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  pancho-and-lefty:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  paradise-aka-mr-peabody-s-coal-train:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  peace-in-the-valley:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  peach-picking-time-down-in-georgia:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  philadelphia-lawyer:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  please-help-me-i-m-falling:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  pray-for-the-boys-the-bad:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  preachin-prayin-singin:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  river-of-time-1:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  rock-of-ages:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  ruby-are-you-mad:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  salty-dog-blues:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  satisfied-1:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  shake-hands-with-mother-again:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  shall-we-gather-at-the-river:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  silver-haired-daddy-of-mine:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  silver-threads-among-the-gold:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  sing-me-back-home:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  six-days-on-the-road:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  six-more-miles-love:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  sleepy-eyed-john:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  so-happy-i-ll-be:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  soldier-s-last-letter:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  somebody-loves-you-darling:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  someday-my-ship-will-sail:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  someday-soon-1:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  stay-all-night-stay-a-little-longer:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  sugarfoot-rag:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  t-for-texas:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  take-me-back-into-your-heart:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  take-my-hand-precious-lord:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  ten-degrees-and-getting-colder:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  tennessee-flat-top:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  tennessee-whiskey-lyrics-chords:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  thank-god-for-the-u-s-a:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  that-dawn-the-day-you-left-me:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  that-glory-bound-train:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  the-angels-rejoiced-last-night:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  the-family-who-prays-never-shall-part:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  the-lord-s-last-supper:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  the-pain-of-loving-you:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  the-sweetest-gift:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  the-tramp-on-the-street:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  the-wreck-of-the-number-nine:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  there-is-power-in-the-blood:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  there-s-a-higher-power:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  there-s-just-something-about-that-name:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  theres-no-disappointment-in-heaven:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  this-little-light-of-mine:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  trail-of-sorrow:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  traveling-the-highway-home:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  we-live-in-two-different-worlds:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  were-you-there-when-they-crucified-my-lord:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  what-a-day-that-will-be:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  what-are-you-trying-to-say:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  what-was-i-supposed-to-do:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  what-would-you-give-in-exchange-for-your-soul:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  when-i-lay-my-burdens-down:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  when-i-take-my-vacation-in-heaven:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  when-my-blue-moon-turns-to-gold:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  when-the-roses-bloom-again:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  where-no-one-stands-alone:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  where-no-one-stands-alone-1:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  where-the-roses-never-fade:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  why-me-lord:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  wild-side-of-life-lyrics-chords:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  will-you-be-lonesome-too:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  you-can-be-a-millionaire-with-me:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  you-can-share-my-blanket:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  you-didn-t-say-goodbye:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  you-win-again:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  your-long-journey:
+    reason: "manual review: bluegrass/jam repertoire (2026-07-31 full read of the pruned list)"
+  born-to-be-with-you-lyrics-and-chords:
+    reason: "SM ledger match once filename debris is stripped from the title (2026-07 ledger cleanup)"
+  farther-along-lyrics-and-chords:
+    reason: "SM+BL ledger match once filename debris is stripped from the title (2026-07 ledger cleanup)"
+  i-ll-remember-you-love-in-my-prayers-lyrics-and-chords:
+    reason: "SM+BL ledger match once filename debris is stripped from the title (2026-07 ledger cleanup)"
+  a-lonesome-road-to-travel:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  abilene:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  adieu-false-heart:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  alberta:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  all-of-me:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  all-of-me-loves-all-of-you:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  all-prayed-up:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  aloha-oe:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  amazing-love:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  amber-tresses:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  anchored-in-love:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  another-day-another-dollar:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  aragon-mill:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  banjo-in-the-hollow:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  battle-hymn-of-the-republic:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  behind-these-prison-walls-of-love:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  blessed-jesus-hold-my-hand:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  blowing-in-the-wind:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  blue-prairie:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  bonaparte-crossing-the-rocky-mountains:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  calliope-house:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  carry-me-back-to-the-lone-prairie:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  carry-me-back-to-the-lone-prairie-1:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  carry-me-back-to-the-mountains:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  chalk-up-another-one:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  clementine:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  could-you-love-me-one-more-time:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  cowboy-jack:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  crockett-s-honeymoon:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  crow-little-rooster:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  darling-alalee:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  dont-neglect-the-rose:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  down-among-the-budded-roses:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  driving-nails-in-my-coffin:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  forty-years-of-trouble:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  ghost-riders-in-the-sky:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  go-rest-high-on-that-mountain:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  going-to-the-west:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  gonna-settle-down:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  good-things-outweigh-the-bad:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  gospel-ship:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  gum-tree-canoe:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  happy-birthday:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  hard-aint-it-hard:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  have-you-come-to-say-goodbye:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  hello-city-limits:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  hello-city-limits-1:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  here-today-gone-tomorrow:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  hobo-blues:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  home-from-the-forest:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  home-on-the-range:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  i-ain-t-broke-but-i-m-badly-bent:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  i-aint-broke-but-im-badly-bent:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  i-believed-in-you-darling:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  i-dreamed-of-an-old-love-affair:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  i-ll-see-you-in-my-dreams:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  i-think-of-you:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  i-think-of-you-1:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  i-want-a-girl:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  i-won-t-be-hanging-around:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  in-case-you-ever-change-your-mind:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  in-the-highways:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  kentucky-girl:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  killin-time:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  little-georgia-rose:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  little-white-washed-chimney:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  meet-me-by-the-moonlight:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  midnight-on-the-highway:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  millers-cave:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  mother-s-not-dead:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  my-better-years:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  north-carolina-breakdown:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  off-to-california:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  okie-from-muskogee:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  oklahoma-hills:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  old-love-letters:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  old-mother-flanagan:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  one-more-dollar:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  out-on-the-ocean:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  over-the-garden-wall:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  peaches-and-cream:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  puncheon-floor:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  rebecca:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  red-prairie-dawn:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  roaring-river:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  robinson-county:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  satans-jewel-crown:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  sea-of-regret:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  seneca-square-dance:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  shell-be-coming-round-the-mountain:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  silver-ghost:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  sioux-city-sue:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  somewhere-between:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  spider-bit-the-baby:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  star-of-the-county-down:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  swinging-doors:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  take-your-shoes-off-moses:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  talk-to-your-heart:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  tennessee-mountain-fox-chase:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  thanks-a-lot:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  the-cat-came-back:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  the-green-rolling-hills-of-west-virginia:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  the-irish-washerwoman:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  the-ln-dont-stop-here-anymore:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  the-way-i-am:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  thirty-years-of-farming:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  walking-the-dog:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  washington-county:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  water-bound:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  wheeling:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  when-the-cactus-is-in-bloom:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  when-you-re-smiling:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  where-the-wild-river-rolls:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  white-oak-on-the-hill:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  who-at-my-door-is-standing:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  wild-mountain-flowers-for-mary:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  will-my-mother-know-me-there:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  will-you-miss-me:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  wont-you-come-and-sing-for-me:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  you-re-my-best-friend:
+    reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
+  youll-get-no-more-of-me:
+    reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
 tag_exclusions:
   big-iron:
   - BluegrassStandard
@@ -200,3 +779,4 @@ tag_exclusions:
   - BluegrassStandard
   youve-been-fooling-me-baby:
   - BluegrassStandard
+tab_pins: {}

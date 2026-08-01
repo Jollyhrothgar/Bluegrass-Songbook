@@ -1,0 +1,15 @@
+id: this-should-go-on-forever
+title: This Should Go On Forever
+artist: Wanda Jackson
+composers:
+- J.D. Miller
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: thisshouldgoonforeverlyricschords.pro
+    imported_at: '2026-07-26'

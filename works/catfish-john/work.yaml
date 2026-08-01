@@ -17,3 +17,6 @@ parts:
     source: classic-country
     source_file: catfishjohnlyricschords.pro
     imported_at: '2026-01-02'
+composers:
+- Bob McDill
+- Allen Reynolds

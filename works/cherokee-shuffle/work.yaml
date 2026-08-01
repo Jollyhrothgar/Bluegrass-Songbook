@@ -4,6 +4,7 @@ tags:
 - Instrumental
 - Scruggs
 - Clawhammer
+- Bluegrass
 parts:
 - type: tablature
   instrument: banjo
@@ -20,3 +21,15 @@ parts:
     tef_time_sig: null
     tef_tracks: 3
     tef_events: 1418
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2169'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2169
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+composers:
+- Traditional

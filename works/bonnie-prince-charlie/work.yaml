@@ -1,0 +1,14 @@
+id: bonnie-prince-charlie
+title: Bonnie Prince Charlie
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: bonnie-prince-charlie.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-originals/ray-porter-bonnie-prince-charlie-chords-3257414
+    imported_at: '2026-07-31'
+composers:
+- Traditional

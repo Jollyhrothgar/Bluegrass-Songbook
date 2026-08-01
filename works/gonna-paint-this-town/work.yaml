@@ -1,0 +1,15 @@
+id: gonna-paint-this-town
+title: Gonna Paint This Town
+artist: Old Crow Medicine Show
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: gonna-paint-this-town.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/paint-this-town-chords-3985408
+    imported_at: '2026-07-31'
+composers:
+- Ralph Stanley

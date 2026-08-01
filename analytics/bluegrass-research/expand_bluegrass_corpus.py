@@ -113,12 +113,20 @@ def extract_primary_artist(artist: str) -> str:
 
 
 def load_index(index_path: Path) -> list[dict]:
-    """Load songs from index.jsonl."""
+    """Load the whole corpus: index.jsonl (canon) + archive.jsonl (pruned).
+
+    Since 2026-07-31 index.jsonl carries only the canon rows, so corpus
+    research has to read the archive too or it reasons about ~1.8k of 18.5k
+    works.
+    """
     songs = []
-    with open(index_path) as f:
-        for line in f:
-            if line.strip():
-                songs.append(json.loads(line))
+    for path in (index_path, index_path.parent / 'archive.jsonl'):
+        if not path.exists():
+            continue
+        with open(path) as f:
+            for line in f:
+                if line.strip():
+                    songs.append(json.loads(line))
     return songs
 
 

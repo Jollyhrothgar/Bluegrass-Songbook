@@ -1,0 +1,15 @@
+id: what-a-day-that-will-be
+title: What a Day That Will Be
+artist: Jim Hill
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatadaythatwillbelyricschords.pro
+    imported_at: '2026-07-26'
+composers:
+- Jim Hill

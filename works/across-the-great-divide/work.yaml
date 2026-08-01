@@ -1,0 +1,15 @@
+id: across-the-great-divide
+title: Across the Great Divide
+artist: Kate Wolf
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: across-the-great-divide.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/kate-wolf/across-the-great-divide-chords-1461446
+    imported_at: '2026-07-31'
+composers:
+- Kate Wolf

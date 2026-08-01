@@ -1,6 +1,6 @@
 id: wagon-wheel
 title: Wagon Wheel
-artist: Bob Dylan, Ketch Secor
+artist: Old Crow Medicine Show
 default_key: G
 tags:
 - JamFriendly
@@ -12,3 +12,6 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
+composers:
+- Bob Dylan
+- Ketch Secor

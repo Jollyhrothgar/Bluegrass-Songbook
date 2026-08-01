@@ -1,0 +1,15 @@
+id: broken-man-s-lament
+title: Broken Man's Lament
+artist: Emmylou Harris
+composers:
+- Mark Germino
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: brokenmanslamentlyricschords.pro
+    imported_at: '2026-07-26'

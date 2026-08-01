@@ -1,6 +1,6 @@
 id: deep-river-blues
 title: Deep River Blues
-artist: Eddie Green and Lucile Marie Handy
+artist: Doc Watson
 default_key: E
 tags:
 - JamFriendly
@@ -13,3 +13,6 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
+composers:
+- Alton Delmore
+- Rabon Delmore

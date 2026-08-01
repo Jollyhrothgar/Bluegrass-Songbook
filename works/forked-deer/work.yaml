@@ -4,6 +4,9 @@ artist: Traditional
 tags:
 - Instrumental
 - OldTime
+- Bluegrass
+- Clawhammer
+- Scruggs
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,3 +15,67 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21514'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21514
+    author: peter somerville
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2352'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2352
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '1285'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=1285
+    author: Kallesandria
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-16094.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16094'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16094
+    author: Julian44_4
+    difficulty: Intermediate
+    tuning: Double C (gCGCD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-10623.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '10623'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10623
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-10639.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '10639'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10639
+    author: schlange
+    imported_at: '2026-07-27'
+composers:
+- Traditional

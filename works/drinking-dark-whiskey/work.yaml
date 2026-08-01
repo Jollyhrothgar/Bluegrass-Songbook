@@ -1,0 +1,16 @@
+id: drinking-dark-whiskey
+title: Drinking Dark Whiskey
+artist: The Steeldrivers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: drinking-dark-whiskey-the-steeldrivers.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-steeldrivers/drinkin-dark-whiskey-chords-2065645
+    imported_at: '2026-07-31'
+composers:
+- Chris Stapleton
+- Mike Henderson

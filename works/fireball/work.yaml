@@ -1,0 +1,13 @@
+id: fireball
+title: Fireball
+artist: One Shot Bards
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: fireball-dobro-tune.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/one-shot-bards/fireball-chords-5454663
+    imported_at: '2026-07-31'

@@ -1,0 +1,15 @@
+id: hop-high-my-lula-gal
+title: Hop High My Lula Gal
+artist: Dirk Powell
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: hop-high-my-lula-gal.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/dirk-powell/hop-high-my-lulu-gal-chords-4590212
+    imported_at: '2026-07-31'
+composers:
+- Traditional

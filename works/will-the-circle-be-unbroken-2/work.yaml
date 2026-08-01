@@ -1,6 +1,6 @@
 id: will-the-circle-be-unbroken-2
 title: Will The Circle Be Unbroken
-artist: Ada R. Habershon, Charles H. Gabriel
+artist: Traditional
 default_key: G
 tags:
 - JamFriendly
@@ -12,3 +12,6 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
+composers:
+- Ada R. Habershon
+- Charles H. Gabriel

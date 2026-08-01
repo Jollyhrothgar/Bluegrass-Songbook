@@ -5,8 +5,15 @@ Uses catalog metadata for:
 - Title fallback when TEF title is invalid
 - Author attribution
 - Genre/style → tags mapping
+
+TODO: this duplicates works_importer.py (slug + work.yaml + provenance),
+with its own slug rules, its own YAML template and no curation guard. It
+predates the works importer and is kept because its `tef_*` provenance
+fields and conversion_log.json aren't produced anywhere else. The two
+should collapse into works_importer/converter.
 """
 
+import argparse
 import json
 import re
 import sys
@@ -19,35 +26,25 @@ sys.path.insert(0, str(Path(__file__).parent))
 from tef_parser.reader import TEFReader
 from tef_parser.otf import tef_to_otf
 from catalog import TabCatalog, TabEntry
+from site_config import (
+    DEFAULT_SITE,
+    DEFAULT_SITE_NAME,
+    REPO_ROOT,
+    SITES,
+    SiteConfig,
+    get_site,
+    resolve_instrument,
+)
 
 
-# Genre/style to tag mapping
-GENRE_TAG_MAP = {
-    'bluegrass': 'Bluegrass',
-    'old time': 'OldTime',
-    'old-time': 'OldTime',
-    'folk': 'Folk',
-    'gospel': 'Gospel',
-    'blues': 'Blues',
-    'country': 'ClassicCountry',
-}
-
-STYLE_TAG_MAP = {
-    'scruggs': 'Scruggs',
-    'bluegrass (scruggs)': 'Scruggs',
-    'melodic': 'Melodic',
-    'clawhammer': 'Clawhammer',
-    'clawhammer and old-time': 'Clawhammer',
-}
-
-
-def map_to_tags(genre: Optional[str], style: Optional[str]) -> list[str]:
-    """Map BH genre/style to songbook tags."""
+def map_to_tags(genre: Optional[str], style: Optional[str],
+                site: SiteConfig = DEFAULT_SITE) -> list[str]:
+    """Map a tab listing's genre/style to songbook tags."""
     tags = ['Instrumental']  # All tabs are instrumentals
 
     if genre:
         genre_lower = genre.lower()
-        for pattern, tag in GENRE_TAG_MAP.items():
+        for pattern, tag in site.genre_tag_map.items():
             if pattern in genre_lower:
                 if tag not in tags:
                     tags.append(tag)
@@ -55,7 +52,7 @@ def map_to_tags(genre: Optional[str], style: Optional[str]) -> list[str]:
 
     if style:
         style_lower = style.lower()
-        for pattern, tag in STYLE_TAG_MAP.items():
+        for pattern, tag in site.style_tag_map.items():
             if pattern in style_lower:
                 if tag not in tags:
                     tags.append(tag)
@@ -120,7 +117,8 @@ def convert_tef_file(
     tef_path: Path,
     works_dir: Path,
     tabs_dir: Path,
-    catalog_entry: Optional[TabEntry] = None
+    catalog_entry: Optional[TabEntry] = None,
+    site: SiteConfig = DEFAULT_SITE
 ) -> dict:
     """Convert a single TEF file. Returns status dict.
 
@@ -128,7 +126,8 @@ def convert_tef_file(
         tef_path: Path to TEF file
         works_dir: Directory for work output
         tabs_dir: Directory for tab files (docs/data/tabs)
-        catalog_entry: Optional catalog entry with BH metadata for fallback
+        catalog_entry: Optional catalog entry with listing metadata for fallback
+        site: Hangout site the TEF came from
     """
     tef_id = tef_path.stem.replace('_tef', '')
 
@@ -188,24 +187,24 @@ def convert_tef_file(
         otf_json = otf.to_json()
         otf_data = json.loads(otf_json)
 
-        # Validate notation has content
+        # Validate notation has content and plausible structure
+        from converter import notation_sanity_error
         notation = otf_data.get('notation', {})
-        total_events = sum(
-            len(m.get('events', []))
-            for measures in notation.values()
-            if isinstance(measures, list)
-            for m in measures
-        )
-
-        if total_events == 0:
+        sanity_error = notation_sanity_error(notation)
+        if sanity_error:
             result['status'] = 'skipped'
-            result['error'] = f'Empty notation (0 events) - format: {result["tef_metadata"].get("format_version")}'
+            result['error'] = f'{sanity_error} - format: {result["tef_metadata"].get("format_version")}'
             return result
+
+        # Instrument the file actually holds (decides the part + filename)
+        instrument = resolve_instrument(otf_data.get('tracks', []),
+                                        site.fallback_instrument)
+        result['instrument'] = instrument
 
         # Create slug
         slug = slugify(title)
         if not slug:
-            slug = f'banjo-tab-{tef_id}'
+            slug = f'{instrument}-tab-{tef_id}'
         result['slug'] = slug
 
         # Create work directory
@@ -213,13 +212,14 @@ def convert_tef_file(
         work_dir.mkdir(exist_ok=True)
 
         # Save OTF
-        (work_dir / 'banjo.otf.json').write_text(otf_json)
-        (tabs_dir / f'{slug}-banjo.otf.json').write_text(otf_json)
+        (work_dir / f'{instrument}.otf.json').write_text(otf_json)
+        (tabs_dir / f'{slug}-{instrument}.otf.json').write_text(otf_json)
 
         # Build tags from catalog metadata
         tags = map_to_tags(
             catalog_entry.genre if catalog_entry else None,
-            catalog_entry.style if catalog_entry else None
+            catalog_entry.style if catalog_entry else None,
+            site
         )
         tags_str = ', '.join(tags)
 
@@ -227,7 +227,8 @@ def convert_tef_file(
         author = catalog_entry.author if catalog_entry else 'unknown'
 
         # Get download URL from catalog (more accurate than page URL)
-        download_url = catalog_entry.source_url if catalog_entry else f'https://www.banjohangout.org/tab/{tef_id}'
+        download_url = (catalog_entry.source_url if catalog_entry
+                        else f'{site.require_base_url()}/tab/{tef_id}')
 
         # Create work.yaml with full provenance
         work_yaml_path = work_dir / 'work.yaml'
@@ -238,12 +239,12 @@ title: "{title.replace('"', '\\"')}"
 tags: [{tags_str}]
 parts:
   - type: tablature
-    instrument: banjo
+    instrument: {instrument}
     format: otf
-    file: banjo.otf.json
+    file: {instrument}.otf.json
     default: true
     provenance:
-      source: banjo-hangout
+      source: {site.source}
       source_id: '{tef_id}'
       source_url: {download_url}
       author: "{author}"
@@ -271,7 +272,8 @@ def batch_convert(
     works_dir: Path,
     tabs_dir: Path,
     log_path: Path,
-    catalog: Optional[TabCatalog] = None
+    catalog: Optional[TabCatalog] = None,
+    site: SiteConfig = DEFAULT_SITE
 ):
     """Convert all TEF files with validation and logging.
 
@@ -281,6 +283,7 @@ def batch_convert(
         tabs_dir: Output directory for tab files
         log_path: Path to write conversion log
         catalog: Optional catalog for metadata lookup
+        site: Hangout site the TEF files came from
     """
     results = {
         'timestamp': datetime.now().isoformat(),
@@ -298,7 +301,7 @@ def batch_convert(
             # Try both ID formats (with and without _tef suffix)
             catalog_entry = catalog.get_tab(f'{tef_id}_tef') or catalog.get_tab(tef_id)
 
-        result = convert_tef_file(tef_path, works_dir, tabs_dir, catalog_entry)
+        result = convert_tef_file(tef_path, works_dir, tabs_dir, catalog_entry, site)
         results['files'].append(result)
         results['summary'][result['status']] = results['summary'].get(result['status'], 0) + 1
 
@@ -309,22 +312,26 @@ def batch_convert(
 
 
 def main():
-    base_dir = Path(__file__).parent.parent
-    downloads_dir = base_dir / 'downloads'
-    works_dir = base_dir.parent.parent / 'works'
-    tabs_dir = base_dir.parent.parent / 'docs' / 'data' / 'tabs'
-    log_path = base_dir / 'conversion_log.json'
-    catalog_path = base_dir / 'tab_catalog.json'
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--site', default=DEFAULT_SITE_NAME, choices=sorted(SITES),
+                        help=f'Hangout site to convert (default: {DEFAULT_SITE_NAME})')
+    args = parser.parse_args()
+
+    site = get_site(args.site)
+    downloads_dir = site.downloads_dir
+    works_dir = REPO_ROOT / 'works'
+    tabs_dir = REPO_ROOT / 'docs' / 'data' / 'tabs'
+    log_path = site.conversion_log_path
 
     # Load catalog for metadata
     catalog = None
-    if catalog_path.exists():
-        catalog = TabCatalog(catalog_path)
+    if site.catalog_path.exists():
+        catalog = TabCatalog.for_site(site)
         print(f'Loaded catalog with {len(catalog.tabs)} entries')
 
     print(f'Converting TEF files from {downloads_dir}...')
 
-    results = batch_convert(downloads_dir, works_dir, tabs_dir, log_path, catalog)
+    results = batch_convert(downloads_dir, works_dir, tabs_dir, log_path, catalog, site)
 
     # Print summary
     s = results['summary']

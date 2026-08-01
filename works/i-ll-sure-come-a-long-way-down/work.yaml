@@ -1,0 +1,15 @@
+id: i-ll-sure-come-a-long-way-down
+title: I'll Sure Come a Long Way Down
+artist: Loretta Lynn
+composers:
+- Loretta Lynn and Maggie Vaughn
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: illsurecomealongwaydownlyricschords.pro
+    imported_at: '2026-07-26'

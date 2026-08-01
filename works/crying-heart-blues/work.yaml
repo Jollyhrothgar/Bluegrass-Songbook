@@ -1,0 +1,15 @@
+id: crying-heart-blues
+title: Crying Heart Blues
+artist: Johnny And Jack
+composers:
+- J. Brown
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: cryingheartblueslyricschords.pro
+    imported_at: '2026-07-26'

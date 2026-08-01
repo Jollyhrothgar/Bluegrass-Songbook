@@ -65,6 +65,8 @@ jobs:
           git add sources/tunearch/parsed/
           git add works/
           git add docs/data/index.jsonl
+          git add docs/data/archive.jsonl
+          git add docs/data/songs/
           git diff --staged --quiet || git commit -m "Add tune from request #${{ github.event.issue.number }}
 
           ${{ github.event.issue.title }}

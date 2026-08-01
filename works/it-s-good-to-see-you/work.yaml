@@ -1,0 +1,15 @@
+id: it-s-good-to-see-you
+title: It's Good To See You
+artist: Don Williams
+composers:
+- Alan Taylor
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsgoodtoseeyoulyricschords.pro
+    imported_at: '2026-07-26'

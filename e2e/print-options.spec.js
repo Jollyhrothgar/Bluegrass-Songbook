@@ -7,7 +7,7 @@ import { gotoSearch, searchAndOpen, searchFor, navClick, openPill } from './help
 test.describe('Export Pill', () => {
     test.beforeEach(async ({ page }) => {
         await gotoSearch(page);
-        await searchAndOpen(page, 'your cheating heart hank williams');
+        await searchAndOpen(page, 'old home place');
     });
 
     test('Export pill is visible in the top band on song pages', async ({ page }) => {

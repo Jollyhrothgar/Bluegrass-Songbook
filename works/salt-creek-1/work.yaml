@@ -29,3 +29,15 @@ parts:
     tef_time_sig: 4/4
     tef_tracks: 1
     tef_events: 117
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2289'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2289
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+composers:
+- Bill Monroe

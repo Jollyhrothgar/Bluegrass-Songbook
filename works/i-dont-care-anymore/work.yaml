@@ -1,0 +1,13 @@
+id: i-dont-care-anymore
+title: I Don't Care Anymore
+artist: Phil Collins
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: i-don-t-care-anymore.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/phil-collins/i-dont-care-anymore-chords-1642221
+    imported_at: '2026-07-31'

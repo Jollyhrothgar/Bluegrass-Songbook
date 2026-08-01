@@ -1,14 +1,15 @@
 id: roll-in-my-sweet-baby-s-arms
-title: "Roll In My Sweet Baby's Arms"
-artist: "Lester Flatt"
-composers: []
+title: Roll In My Sweet Baby's Arms
+artist: Lester Flatt
+composers:
+- Traditional
 default_key: G
 tags: []
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: trusted-user
-      imported_at: '2026-07-02'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: trusted-user
+    imported_at: '2026-07-02'

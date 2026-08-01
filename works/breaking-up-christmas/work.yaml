@@ -1,0 +1,15 @@
+id: breaking-up-christmas
+title: Breaking Up Christmas
+artist: Dan Shay
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: breaking-up-christmas.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/dan-shay/break-up-on-christmas-chords-5537991
+    imported_at: '2026-07-31'
+composers:
+- Traditional

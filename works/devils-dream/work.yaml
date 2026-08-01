@@ -20,3 +20,15 @@ parts:
     tef_time_sig: 2/4
     tef_tracks: 1
     tef_events: 125
+- type: tablature
+  instrument: ensemble
+  format: otf
+  file: ensemble.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2798'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2798
+    author: MandoTom2
+    imported_at: '2026-07-26'
+composers:
+- Traditional

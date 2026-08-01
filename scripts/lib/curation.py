@@ -17,6 +17,9 @@ Registry format:
       <work-id>:
         reason: "why"
         suppressed_at: "YYYY-MM-DD"
+    tab_pins:
+      <work-id>:
+        <instrument>: "<source_id>"   # default arrangement for that instrument
 
 Used by:
 - build_works_index.py: ``filter_suppressed()`` (registry.suppressed ∪
@@ -47,6 +50,7 @@ class Registry:
     suppressed: dict = field(default_factory=dict)
     keep: dict = field(default_factory=dict)
     tag_exclusions: dict = field(default_factory=dict)
+    tab_pins: dict = field(default_factory=dict)
     path: Optional[Path] = None
 
 
@@ -65,6 +69,7 @@ def load_registry(repo_root) -> Registry:
         suppressed=data.get('suppressed') or {},
         keep=data.get('keep') or {},
         tag_exclusions=data.get('tag_exclusions') or {},
+        tab_pins=data.get('tab_pins') or {},
         path=path,
     )
 
@@ -95,6 +100,7 @@ def save_registry(registry: Registry):
         'suppressed': registry.suppressed or {},
         'keep': registry.keep or {},
         'tag_exclusions': registry.tag_exclusions or {},
+        'tab_pins': registry.tab_pins or {},
     }
     registry.path.parent.mkdir(parents=True, exist_ok=True)
     registry.path.write_text(header + yaml.dump(
@@ -197,6 +203,64 @@ def apply_curation(songs: list, registry: Registry) -> list:
             if song.get('group_id') == new_gid and song.get('id') != canonical_id:
                 song['variant_of'] = canonical_id
 
+    return songs
+
+
+# ============================================
+# Tablature arrangement pins
+# ============================================
+
+
+def tab_pin(work_id: str, instrument: str, registry: Registry) -> Optional[str]:
+    """Pinned default arrangement (a source_id) for work+instrument, or None."""
+    pins = (registry.tab_pins or {}).get(work_id) or {}
+    pinned = pins.get(instrument)
+    return str(pinned) if pinned is not None else None
+
+
+def resolve_tab_defaults(work_id: str, tablature_parts: list,
+                         registry: Registry) -> list:
+    """Stamp ``default`` on exactly one arrangement per instrument.
+
+    ``tablature_parts`` are index-row tab entries (dicts carrying
+    ``instrument`` and ``source_id``) in work.yaml order. For each
+    instrument the default is:
+
+    1. the part whose ``source_id`` matches the registry ``tab_pins`` entry
+       for (work_id, instrument), if that part exists;
+    2. otherwise the FIRST part listed for that instrument — so wave-1
+       imports keep the default they already had when alternates land
+       after them.
+
+    Returns the same list (mutated in place) for convenience.
+    """
+    by_instrument = {}
+    for part in tablature_parts:
+        by_instrument.setdefault(part.get('instrument'), []).append(part)
+
+    for instrument, parts in by_instrument.items():
+        pinned = tab_pin(work_id, instrument, registry)
+        chosen = None
+        if pinned is not None:
+            chosen = next(
+                (p for p in parts if str(p.get('source_id')) == pinned), None)
+            if chosen is None:
+                print(f"curation: warning: tab pin {work_id}/{instrument} "
+                      f"-> source_id {pinned!r} has no matching part; "
+                      f"falling back to the first arrangement", file=sys.stderr)
+        if chosen is None:
+            chosen = parts[0]
+        for part in parts:
+            part['default'] = part is chosen
+    return tablature_parts
+
+
+def apply_tab_defaults(songs: list, registry: Registry) -> list:
+    """Apply :func:`resolve_tab_defaults` to every indexed song's tab parts."""
+    for song in songs:
+        parts = song.get('tablature_parts')
+        if parts:
+            resolve_tab_defaults(song.get('id'), parts, registry)
     return songs
 
 

@@ -1,0 +1,16 @@
+id: blue-virginia-blue
+title: Blue Virginia Blue
+artist: Larry Sparks
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: blue-virginia-blue.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/larry-sparks/blue-virginia-blues-chords-2331085
+    imported_at: '2026-07-31'
+composers:
+- Pete Goble
+- Leroy Drumm

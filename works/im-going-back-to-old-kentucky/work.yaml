@@ -1,11 +1,13 @@
 id: im-going-back-to-old-kentucky
 title: I’m Going Back To Old Kentucky
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/im-going-back-to-old-kentucky/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/im-going-back-to-old-kentucky/
+    imported_at: '2026-02-08'
+composers:
+- Bill Monroe

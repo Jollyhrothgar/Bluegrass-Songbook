@@ -1,0 +1,15 @@
+id: guitar-boogie
+title: Guitar Boogie
+artist: Arthur Smith
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: guitar-boogie.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/arthur-smith/guitar-boogie-tabs-3183728
+    imported_at: '2026-07-31'
+composers:
+- Arthur Smith

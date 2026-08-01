@@ -1,0 +1,16 @@
+id: goodbye-liza-jane
+title: Goodbye Liza Jane
+artist: The Highwoods String Band
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: goodbye-liza-jane.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-highwoods-string-band/goodbye-miss-liza-jane-chords-4001353
+    imported_at: '2026-07-31'
+composers:
+- Traditional

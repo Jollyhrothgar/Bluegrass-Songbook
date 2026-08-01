@@ -1,0 +1,15 @@
+id: girl-on-the-greenbriar-shore
+title: Girl on the Greenbriar Shore
+artist: The Carter Family
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: girl-on-the-greenbriar-shore.txt
+    source_url: https://www.e-chords.com/chords/the-carter-family/girl-on-the-greenbriar-shore
+    imported_at: '2026-07-31'
+composers:
+- A.P. Carter

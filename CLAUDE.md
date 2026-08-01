@@ -1,6 +1,9 @@
 # Bluegrass Songbook
 
-A searchable collection of 18,300+ bluegrass and country songs with chords, built for the bluegrass community.
+A bluegrass jam songbook: a curated searchable index of ~1,800 bluegrass and
+bluegrass-adjacent songs, backed by an 18,500+ work archive (every archived
+work still resolves by direct URL and can be restored to search — see
+"Index Prune" in `scripts/lib/CLAUDE.md`).
 
 ## Quick Start
 
@@ -170,9 +173,19 @@ Bluegrass-Songbook/
 
 ## Works Architecture
 
-Note: works are generated from sources. We are actively developing right now, and we should treat
-works as emphemeral - e.g. built from sources. E.g. if there is a banjo tab error - do not correct
-the work, instead correct the parser (do this interactively with the user).
+**Works are now authoritative (Mike, 2026-07-31).** Source regeneration is
+finished: `works/` is the durable, hand-editable store. Metadata fixes
+(artist, composers, tags, titles) belong DIRECTLY in `works/*/work.yaml` —
+they will not be clobbered, because nothing bulk-regenerates works from
+sources anymore. Importers still ADD works/parts (new tabs, new songs) but
+must never overwrite existing works' metadata.
+
+History: before 2026-07-31 works were treated as ephemeral parser output
+("fix the parser, not the work"), and source `artist` fields inherited
+whatever performer page a chart was scraped from — so authorship-looking
+attributions (e.g. "You Are My Sunshine ~ Johnny Cash") are scrape artifacts.
+The `artist` field means "as performed by"; authorship lives in `composers`
+(the index's `composer` comes only from work.yaml `composers`).
 
 Songs are organized in `works/`, where each work is a directory containing:
 
@@ -356,7 +369,8 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 
 ## Current State
 
-- **18,300+ songs** in works-based architecture with chord search, transposition, favorites, dark mode
+- **Curated index (2026-07-31)**: search/collections show the bluegrass canon (~1,800 songs kept by a two-of-three-ledgers rule — MusicBrainz coverage, Strum Machine, BluegrassLyrics — plus instrumentals, curated artists, user adds, and a manual review). The other ~16,900 works are archived, not deleted: direct URLs work, and `./scripts/utility curate unprune <id>` puts any song back
+- **18,500+ works** in works-based architecture with chord search, transposition, favorites, dark mode
 - **Works system**: Each song is a "work" with multiple parts (lead sheet, tablature, ABC notation)
 - **Tablature**: Banjo Hangout tabs with TEF→OTF parsing, playback, track mixer for multi-instrument arrangements
 - **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - primary source is LLM tagging, with MusicBrainz and grassiness scoring as fallbacks

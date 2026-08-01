@@ -1,0 +1,12 @@
+id: i-cant-think-of-one
+title: I Can’t Think of One
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: i-can-t-think-of-one.txt
+    source_url: https://www.cowboylyrics.com/tabs/burgess-sonny/i-cant-think-of-one-27672.html
+    imported_at: '2026-07-31'

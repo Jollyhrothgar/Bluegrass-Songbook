@@ -1,0 +1,15 @@
+id: living-the-life-of-a-dog
+title: Living the Life of a Dog
+artist: Johnny Paycheck
+composers:
+- Aubrey Mayhew and Billy Eldridge
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: livingthelifeofadoglyricschords.pro
+    imported_at: '2026-07-26'

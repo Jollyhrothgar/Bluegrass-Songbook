@@ -1,0 +1,13 @@
+id: heart-with-a-wiew
+title: Heart with a Wiew
+artist: Blackhawk
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartwithawiewlyricschords.pro
+    imported_at: '2026-07-26'

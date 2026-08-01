@@ -1,0 +1,15 @@
+id: midnight-on-the-water
+title: Midnight on the Water
+artist: Caroline Herring
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: midnight-on-the-water.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/caroline-herring/midnight-on-the-water-chords-1735773
+    imported_at: '2026-07-31'
+composers:
+- Traditional

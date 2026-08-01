@@ -1,0 +1,15 @@
+id: carters-blues
+title: Carter's Blues
+artist: The Carter Family
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: carter-s-blues-larry-sparks-version.txt
+    source_url: https://www.e-chords.com/chords/the-carter-family/carters-blues
+    imported_at: '2026-07-31'
+composers:
+- Traditional

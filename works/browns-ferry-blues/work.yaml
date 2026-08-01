@@ -1,11 +1,14 @@
 id: browns-ferry-blues
 title: Brown’s Ferry Blues
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/browns-ferry-blues/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/browns-ferry-blues/
+    imported_at: '2026-02-08'
+composers:
+- Alton Delmore
+- Rabon Delmore

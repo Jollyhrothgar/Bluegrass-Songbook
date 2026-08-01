@@ -20,3 +20,27 @@ parts:
     tef_time_sig: 4/4
     tef_tracks: 2
     tef_events: 252
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2957'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2957
+    author: MandoTom2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin-2850.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2850'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2850
+    author: MandoTom2
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'
+composers:
+- Traditional

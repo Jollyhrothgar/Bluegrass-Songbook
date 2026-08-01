@@ -1,14 +1,15 @@
 id: she-3
-title: "She"
-artist: "Green Day"
-composers: []
+title: She
+artist: Green Day
+composers:
+- Billie Joe Armstrong
 default_key: G
 tags: []
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: trusted-user
-      imported_at: '2026-02-01'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: trusted-user
+    imported_at: '2026-02-01'

@@ -1,0 +1,15 @@
+id: one-of-my-sad-days
+title: One of My Sad Days
+artist: Faron Young
+composers:
+- Cile Davis
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: oneofmysaddayslyricschords.pro
+    imported_at: '2026-07-26'

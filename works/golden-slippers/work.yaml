@@ -1,0 +1,28 @@
+id: golden-slippers
+title: Golden Slippers
+artist: Traditional
+composers:
+- James A. Bland
+default_key: D
+tags:
+- Instrumental
+- OldTime
+- Scruggs
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21417'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21417
+    author: banjoman 1
+    imported_at: '2026-07-26'

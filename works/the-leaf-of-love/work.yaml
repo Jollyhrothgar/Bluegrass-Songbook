@@ -1,0 +1,13 @@
+id: the-leaf-of-love
+title: The Leaf Of Love
+artist: Gene Autry
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theleafoflovelyricschords.pro
+    imported_at: '2026-07-26'

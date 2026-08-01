@@ -1,11 +1,14 @@
 id: gold-rush
 title: Gold Rush
 artist: null
-composers: []
+composers:
+- Bill Monroe
+- Byron Berline
 default_key: null
 tags:
 - Instrumental
 - Scruggs
+- Bluegrass
 parts:
 - type: tablature
   instrument: banjo
@@ -18,3 +21,45 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=25010
     author: banjoy
     imported_at: '2026-07-08'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2733'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2733
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '1042'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=1042
+    author: Duffy
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2927'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2927
+    author: MandoTom2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin-2613.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2613'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2613
+    author: MandoTom2
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'

@@ -1,0 +1,13 @@
+id: the-one-i-loved-back-then-the-corvette-song
+title: The One I Loved Back Then (The Corvette Song)
+artist: George Jones
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: theoneilovedbackthenlyricschords.pro
+    imported_at: '2026-07-26'

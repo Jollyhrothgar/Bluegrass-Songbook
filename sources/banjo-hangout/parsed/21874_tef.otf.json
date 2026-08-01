@@ -1,9 +1,10 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "Cherokee Shuffle (A).tef",
+    "title": "Cherokee Shuffle (A)",
     "time_signature": "4/4",
-    "tempo": 200
+    "tempo": 200,
+    "key": "A"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -1559,8 +1560,10 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "21874.tef",
-    "converted_at": "2026-07-02T11:24:53.124548"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cherokee-shuffl-21874-3927142142016.tef",
+    "author": "ShhhItsASecret",
+    "converted_at": "2026-07-26T22:20:06.261717",
+    "source_id": "21874"
   }
 }

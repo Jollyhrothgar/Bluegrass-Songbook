@@ -1,0 +1,13 @@
+id: flower-in-the-desert
+title: Flower in the Desert
+artist: The Cult
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: flower-in-the-desert.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-cult/a-flower-in-the-desert-chords-4620539
+    imported_at: '2026-07-31'

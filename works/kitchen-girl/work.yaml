@@ -2,10 +2,12 @@ id: kitchen-girl
 title: Kitchen Girl
 artist: Traditional
 composers:
-- Biography:Henry Reed
+- Traditional
 tags:
 - Instrumental
 - OldTime
+- Scruggs
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,3 +16,25 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11729'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11729
+    author: mwblake
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-16623.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16623'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16623
+    author: Julian44_4
+    difficulty: Intermediate
+    tuning: Sawmill (gDGCD)
+    imported_at: '2026-07-27'

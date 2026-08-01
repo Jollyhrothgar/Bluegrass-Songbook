@@ -1,5 +1,7 @@
 // Utility functions for Bluegrass Songbook
 
+import { songHasContent } from './song-content.js';
+
 /**
  * Escape HTML special characters
  */
@@ -104,7 +106,7 @@ export function generateLocalId() {
  * Used to determine routing between openSong() and openWork()
  */
 export function isTabOnlyWork(song) {
-    return song?.tablature_parts?.length > 0 && !song.content;
+    return song?.tablature_parts?.length > 0 && !songHasContent(song);
 }
 
 /**
@@ -130,7 +132,7 @@ export function isPlaceholder(song) {
  */
 export function hasMultipleParts(song) {
     let count = 0;
-    if (song?.content) count++;
+    if (songHasContent(song)) count++;
     count += song?.tablature_parts?.length || 0;
     count += song?.document_parts?.length || 0;
     return count > 1;

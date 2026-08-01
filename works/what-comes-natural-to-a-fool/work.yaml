@@ -1,0 +1,15 @@
+id: what-comes-natural-to-a-fool
+title: What Comes Natural to a Fool
+artist: Mel Tillis
+composers:
+- Ronald Elmer McCown
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: whatcomesnaturaltoafoollyricschords.pro
+    imported_at: '2026-07-26'

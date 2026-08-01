@@ -1,21 +1,152 @@
 id: foggy-mountain-breakdown
 title: Foggy Mountain Breakdown
-artist: null
-composers: [Earl Scruggs]
+artist: Earl Scruggs
+composers:
+- Earl Scruggs
 default_key: G
 default_tempo: 260
 time_signature: 4/4
-tags: [Bluegrass, Instrumental, JamFriendly]
-
+tags:
+- Bluegrass
+- Instrumental
+- JamFriendly
+- Scruggs
+- Clawhammer
 parts:
-  - type: tablature
-    instrument: mandolin
-    format: otf
-    file: mandolin.otf.json
-    label: "Mandolin Break"
-    default: true
-    provenance:
-      source: tef-uploads
-      source_file: uploads/mandolin_foggy_mountain_breakdown.tef
-      author: "Joe Carr - Merlin's Magical Mandolin Method (1978)"
-      imported_at: 2025-01-02
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  label: Mandolin Break
+  default: true
+  provenance:
+    source: tef-uploads
+    source_file: uploads/mandolin_foggy_mountain_breakdown.tef
+    author: Joe Carr - Merlin's Magical Mandolin Method (1978)
+    imported_at: 2025-01-02
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '20690'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20690
+    author: schlange
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: ensemble
+  format: otf
+  file: ensemble.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '1481'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=1481
+    author: GuitarTom2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '1972'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=1972
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-24054.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24054'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24054
+    author: corcoran
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-22352.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '22352'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=22352
+    author: HOWDYDOODY
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-27176.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '27176'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=27176
+    author: Yohansen
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-19627.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '19627'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=19627
+    author: janolov
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-25273.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '25273'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=25273
+    author: mmuussiiccaall
+    difficulty: Expert
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-18967.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '18967'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=18967
+    author: Devon Wells
+    difficulty: Expert
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-12561.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '12561'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12561
+    author: fishnfule
+    difficulty: Beginner
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle-3063.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '3063'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=3063
+    author: mmuussiiccaall
+    difficulty: Expert
+    tuning: Standard
+    imported_at: '2026-07-27'

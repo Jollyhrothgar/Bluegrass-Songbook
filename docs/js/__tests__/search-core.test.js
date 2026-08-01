@@ -120,20 +120,11 @@ describe('parseSearchQuery', () => {
         });
     });
 
-    describe('key filter', () => {
-        it('parses key filter', () => {
+    describe('key: is not an operator (keys are transposable)', () => {
+        it('treats key: as plain text', () => {
             const result = parseSearchQuery('key:G');
-            expect(result.keyFilter).toBe('G');
-        });
-
-        it('normalizes key to uppercase', () => {
-            const result = parseSearchQuery('key:g');
-            expect(result.keyFilter).toBe('G');
-        });
-
-        it('parses key shorthand k:', () => {
-            const result = parseSearchQuery('k:Am');
-            expect(result.keyFilter).toBe('AM');
+            expect(result.keyFilter).toBeUndefined();
+            expect(result.textTerms).toEqual(['key:g']);
         });
     });
 
@@ -183,37 +174,57 @@ describe('parseSearchQuery', () => {
         });
     });
 
-    describe('negative filters', () => {
-        it('parses negative artist', () => {
-            const result = parseSearchQuery('-artist:hank');
-            expect(result.excludeArtist).toBe('hank');
-        });
-
-        it('parses negative title', () => {
-            const result = parseSearchQuery('-title:drinking');
-            expect(result.excludeTitle).toBe('drinking');
-        });
-
-        it('parses negative lyrics', () => {
-            const result = parseSearchQuery('-lyrics:sad');
-            expect(result.excludeLyrics).toBe('sad');
-        });
-
-        it('parses negative key', () => {
-            const result = parseSearchQuery('-key:C');
-            expect(result.excludeKey).toBe('C');
-        });
-
+    describe('negation (only -tag: is an operator)', () => {
         it('parses negative tag', () => {
             const result = parseSearchQuery('-tag:instrumental');
             expect(result.excludeTags).toEqual(['instrumental']);
         });
 
-        it('parses negative chords', () => {
-            const result = parseSearchQuery('-chord:VII');
-            expect(result.excludeChords).toEqual(['VII']);
+        it('splits negative tag values on commas and whitespace', () => {
+            const result = parseSearchQuery('-tag:Instrumental,Waltz');
+            expect(result.excludeTags).toEqual(['Instrumental', 'Waltz']);
+        });
+
+        it('treats removed negations as plain text, not operators', () => {
+            for (const q of ['-artist:hank', '-title:drinking', '-lyrics:sad', '-chord:VII']) {
+                const result = parseSearchQuery(q);
+                expect(result.textTerms).toEqual([q.toLowerCase()]);
+                expect(result.excludeTags).toEqual([]);
+            }
         });
     });
+
+    describe('removed operators degrade to text', () => {
+        it('status: is no longer an operator', () => {
+            const result = parseSearchQuery('status:placeholder');
+            expect(result.textTerms).toEqual(['status:placeholder']);
+        });
+
+        it('has: is no longer an operator', () => {
+            const result = parseSearchQuery('has:bounty');
+            expect(result.textTerms).toEqual(['has:bounty']);
+        });
+    });
+
+    describe('tag: takes its whole value', () => {
+        it('splits on whitespace', () => {
+            const result = parseSearchQuery('tag:Gospel Waltz');
+            expect(result.tagFilters).toEqual(['Gospel', 'Waltz']);
+            expect(result.textTerms).toEqual([]);
+        });
+
+        it('splits on commas', () => {
+            const result = parseSearchQuery('tag:Gospel,Waltz');
+            expect(result.tagFilters).toEqual(['Gospel', 'Waltz']);
+        });
+
+        it('text before the tag stays text', () => {
+            const result = parseSearchQuery('monroe tag:Gospel');
+            expect(result.textTerms).toEqual(['monroe']);
+            expect(result.tagFilters).toEqual(['Gospel']);
+        });
+    });
+
 
     describe('combined filters', () => {
         it('parses multiple filters', () => {

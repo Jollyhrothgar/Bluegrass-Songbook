@@ -1,0 +1,15 @@
+id: wonder-could-i-live-there-anymore
+title: Wonder Could I Live There Anymore
+artist: Charlie Pride
+composers:
+- Bill Rice
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wondercouldilivethereanymorelyricschords.pro
+    imported_at: '2026-07-26'

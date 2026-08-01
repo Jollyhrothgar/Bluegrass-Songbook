@@ -1,11 +1,13 @@
 id: when-he-reached-down-his-hand
 title: When He Reached Down His Hand
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/when-he-reached-down-his-hand/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/when-he-reached-down-his-hand/
+    imported_at: '2026-02-08'
+composers:
+- G.E. Wright

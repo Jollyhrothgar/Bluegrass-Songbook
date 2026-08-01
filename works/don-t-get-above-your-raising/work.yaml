@@ -1,0 +1,15 @@
+id: don-t-get-above-your-raising
+title: Don't Get Above Your Raising
+artist: Ricky Skaggs
+composers:
+- Lester Flatt and Earl Scruggs
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dontgetaboveyourraisinglyricschords.pro
+    imported_at: '2026-07-26'

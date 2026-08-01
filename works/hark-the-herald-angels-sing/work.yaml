@@ -1,0 +1,14 @@
+id: hark-the-herald-angels-sing
+title: Hark the Herald Angels Sing
+composers:
+- Charles Wesley and Felix Mendelssohn
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: harktheheraldangelssinglyricschords.pro
+    imported_at: '2026-07-26'

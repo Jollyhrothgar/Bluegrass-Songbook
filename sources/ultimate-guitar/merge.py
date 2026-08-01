@@ -35,7 +35,14 @@ class ChordedLine:
 
         def snap_to_word_start(pos: int) -> int:
             """Snap position to nearest word start (prefer earlier)."""
-            # Find the word start that's <= pos
+            # A position landing exactly on a space is ambiguous: the previous
+            # word has already ended, so the chord change belongs to the word
+            # that follows. Snap forward in that case only.
+            if pos < len(self.lyrics) and self.lyrics[pos] == ' ':
+                for ws in word_starts:
+                    if ws > pos:
+                        return ws
+            # Otherwise find the word start that's <= pos
             for ws in reversed(word_starts):
                 if ws <= pos:
                     return ws
@@ -43,13 +50,17 @@ class ChordedLine:
 
         result = []
         last_pos = 0
+        placed_any = False
         for pos, chord in sorted(self.chords):
             # Clamp position to line length
             pos = min(pos, len(self.lyrics))
             # Snap to word boundary
             pos = snap_to_word_start(pos)
-            # If this position is at or before last_pos, advance to next word boundary
-            if pos <= last_pos:
+            # If this position is at or before last_pos, advance to next word
+            # boundary. Skipped for the very first chord: last_pos starts at 0,
+            # so a downbeat chord at column 0 would otherwise be pushed onto
+            # the second word of the line.
+            if placed_any and pos <= last_pos:
                 # Find next word start after last_pos
                 next_word = None
                 for ws in word_starts:
@@ -60,6 +71,7 @@ class ChordedLine:
             result.append(self.lyrics[last_pos:pos])
             result.append(f'[{chord}]')
             last_pos = pos
+            placed_any = True
         result.append(self.lyrics[last_pos:])
         return ''.join(result)
 
@@ -165,14 +177,24 @@ def convert_bbcode_to_inline(content: str) -> str:
         chords = []
         chord_pattern = re.compile(r'\[ch\]([^[]+)\[/ch\]')
 
-        # Build the line by tracking positions
+        # Build the line by tracking positions.
+        #
+        # The chord line renders as `<ws1>X<ws2>Y...`, so the display column of
+        # chord Y is len(ws1) + len("X") + len(ws2) -- the widths of the
+        # preceding chord NAMES count toward the column, not just the
+        # whitespace. clean_block accumulates only the whitespace, so carry the
+        # chord widths in a separate offset or every chord after the first
+        # drifts left (and word-snapping then lands it a word early).
         clean_block = ''
         pos = 0
+        chord_width_offset = 0
         for chord_match in chord_pattern.finditer(block):
             # Add text before this chord (preserving spaces for positioning)
             before_text = block[pos:chord_match.start()]
             clean_block += before_text
-            chords.append((len(clean_block), chord_match.group(1)))
+            chord_name = chord_match.group(1)
+            chords.append((len(clean_block) + chord_width_offset, chord_name))
+            chord_width_offset += len(chord_name)
             pos = chord_match.end()
         clean_block += block[pos:]
 

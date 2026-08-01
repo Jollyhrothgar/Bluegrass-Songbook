@@ -65,6 +65,9 @@ show_help() {
     echo "  curate suppress <work-id> --reason \"...\""
     echo "      Suppress a work (dropped from the index, refused by importers)"
     echo ""
+    echo "  curate pin-tab <work-id> <instrument> <source_id>"
+    echo "      Pin the default tablature arrangement for that instrument"
+    echo ""
     echo "  loc [path]"
     echo "      Count lines of code by language"
     echo ""
@@ -104,6 +107,10 @@ show_help() {
     echo ""
     echo "  banjo-convert-file <tef_path> [output_path]"
     echo "      Convert a single TEF file to OTF (standalone, no catalog)"
+    echo ""
+    echo "  coverage [--csv PATH] [--gaps]"
+    echo "      Report chords/lyrics/tab/abc coverage across works/, plus"
+    echo "      canonical tune-list coverage"
     echo ""
 }
 
@@ -264,6 +271,9 @@ case "$COMMAND" in
             exit 1
         fi
         uv run python3 sources/banjo-hangout/src/batch_import.py convert-file "$@"
+        ;;
+    coverage)
+        uv run python3 scripts/lib/coverage_report.py "$@"
         ;;
     help|--help|-h|"")
         show_help

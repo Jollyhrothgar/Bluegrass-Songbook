@@ -1,9 +1,10 @@
 {
   "otf_version": "1.0",
   "metadata": {
-    "title": "jerusalem ridge.tef",
+    "title": "Jerusalem Ridge (high break)",
     "time_signature": "4/4",
-    "tempo": 240
+    "tempo": 240,
+    "key": "Am"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -9776,8 +9777,10 @@
     ]
   },
   "x_source": {
-    "type": "local",
-    "source_file": "13248.tef",
-    "converted_at": "2026-07-02T11:24:53.384507"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/j/tab-jerusalem-ridge-13248-45892342010.tef",
+    "author": "fivestring61",
+    "converted_at": "2026-07-26T22:20:06.801675",
+    "source_id": "13248"
   }
 }

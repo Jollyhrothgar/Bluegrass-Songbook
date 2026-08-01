@@ -5,6 +5,88 @@ default_key: G
 tags:
 - Instrumental
 - Fiddle
+- Bluegrass
+- Scruggs
+- OldTime
+- Clawhammer
 status: placeholder
 notes: Traditional fiddle tune. Fast and fun at jams.
-parts: []
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '23579'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23579
+    author: howsy-bee
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2438'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2438
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11828.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11828'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11828
+    author: s.parks
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-20306.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '20306'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20306
+    author: Old Hickory
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-22034.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '22034'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=22034
+    author: JanetB
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-10998.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '10998'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10998
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-18031.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '18031'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=18031
+    author: Ricky Mier
+    imported_at: '2026-07-27'
+composers:
+- Traditional

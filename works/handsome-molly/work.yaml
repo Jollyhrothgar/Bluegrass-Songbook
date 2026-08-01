@@ -12,3 +12,5 @@ parts:
   provenance:
     source: manual
     imported_at: '2026-01-02'
+composers:
+- Traditional

@@ -1,0 +1,15 @@
+id: christmas-for-cowboys
+title: Christmas for Cowboys
+artist: John Denver
+composers:
+- Steve Weisberg
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: Christmasforcowboyslyricschords.pro
+    imported_at: '2026-07-26'

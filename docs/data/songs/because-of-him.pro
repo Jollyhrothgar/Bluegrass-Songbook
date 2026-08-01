@@ -1,0 +1,61 @@
+{meta: title Because Of Him}
+{meta: artist Rhonda Vincent}
+{meta: composer Colbert Croft and Joyce S. Croft}
+{meta: x_source classic-country}
+{meta: x_source_file becauseofhimlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
+
+{start_of_verse: Verse 1}
+[C]I know I’ve been saved because of Jesus
+[G7]I know I’ve been saved because of Him
+[F]I’m glad He heard [G7]my plea [C]He reached and set me [Am]free
+[D7]I know I’ve been [G7]saved because of [C]Him
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Some people look at me and think I’m different
+[G7]Some people look at me and think I’m strange
+[F]But I got something [G7]new [C]that the world can’t [F]undo
+[G7]I know I’ve been saved because of [C]Him
+{end_of_verse}
+
+{start_of_verse: Verse 1}
+[C]I know I’ve been saved because of Jesus
+[G7]I know I’ve been saved because of Him
+[F]I’m glad He heard [G7]my plea [C]He reached and set me [Am]free
+[D7]I know I’ve been [G7]saved because of [C]Him
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Well it feels so good since I got this feeling
+[G7]And it feels so good since my faith I know
+[F]I’m walking in the [G7]light [C]since Jesus won the [F]fight
+[G7]I know I’ve been saved because of [C]Him
+{end_of_verse}
+
+{start_of_verse: Verse 1}
+[C]I know I’ve been saved because of Jesus
+[G7]I know I’ve been saved because of Him
+[F]I’m glad He heard [G7]my plea [C]He reached and set me [Am]free
+[D7]I know I’ve been [G7]saved because of [C]Him
+{end_of_verse}
+
+{start_of_verse: Verse 1}
+[C]I know I’ve been saved because of Jesus
+[G7]I know I’ve been saved because of Him
+[F]I’m glad He heard [G7]my plea [C]He reached and set me [Am]free
+[D7]I know I’ve been [G7]saved because of [C]Him
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+[G7]I know I’ve been saved because of [C]Him
+[G7]I know I’ve been saved because of [C]Him
+[G7]I know I’ve been saved because of [C]Him
+[G7]I know I’ve been saved because of [C]Him
+{end_of_verse}
+
+
+
+
+
+

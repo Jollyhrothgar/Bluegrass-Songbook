@@ -2,11 +2,13 @@ id: clinch-mountain-backstep
 title: Clinch Mountain Backstep
 artist: Traditional
 composers:
-- Biography:Ralph Stanley
+- Ralph Stanley
 tags:
 - Instrumental
 - Bluegrass
 - OldTime
+- Scruggs
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -15,3 +17,95 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '26006'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=26006
+    author: stratovarious520
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: tenor-banjo
+  format: otf
+  file: tenor-banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '12122'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12122
+    author: Mirek Tim Patek
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-23803.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '23803'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23803
+    author: egoldfinger
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-23405.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '23405'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23405
+    author: Yohansen
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-15259.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '15259'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=15259
+    author: bandzo
+    difficulty: Beginner
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-24134.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24134'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24134
+    author: Lefty5string
+    difficulty: Beginner
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-20602.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '20602'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20602
+    author: Rawhide Creek
+    difficulty: Beginner
+    tuning: Sawmill (gDGCD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-20601.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '20601'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20601
+    author: Rawhide Creek
+    difficulty: Beginner
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'

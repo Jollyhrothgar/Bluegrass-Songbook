@@ -1,7 +1,8 @@
 id: dixie-hoedown
 title: Dixie Hoedown
 artist: null
-composers: []
+composers:
+- Don Reno
 default_key: null
 tags:
 - Instrumental

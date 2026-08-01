@@ -1,0 +1,32 @@
+id: big-mon
+title: Big Mon
+artist: Traditional
+composers:
+- Bill Monroe
+default_key: G
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+parts:
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  default: true
+  provenance:
+    source: banjo-hangout
+    source_id: '23599'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23599
+    author: Yohansen
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '1860'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=1860
+    author: novaraandy
+    imported_at: '2026-07-26'

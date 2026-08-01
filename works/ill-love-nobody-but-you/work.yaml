@@ -1,11 +1,14 @@
 id: ill-love-nobody-but-you
 title: I’ll Love Nobody But You
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/ill-love-nobody-but-you/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/ill-love-nobody-but-you/
+    imported_at: '2026-02-08'
+composers:
+- Jesse McReynolds
+- Jim McReynolds

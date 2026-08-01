@@ -3,7 +3,8 @@
   "metadata": {
     "title": "Earl's Breakdown",
     "time_signature": "2/4",
-    "tempo": 120
+    "tempo": 120,
+    "key": "G"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -2623,8 +2624,10 @@
     }
   ],
   "x_source": {
-    "type": "local",
-    "source_file": "27168.tef",
-    "converted_at": "2026-07-02T11:24:53.225223"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/e/tab-earls-breakdown-27168-193841462024.tef",
+    "author": "Yohansen",
+    "converted_at": "2026-07-26T22:20:06.740705",
+    "source_id": "27168"
   }
 }

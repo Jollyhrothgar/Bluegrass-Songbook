@@ -1,0 +1,16 @@
+id: tam-lin
+title: Tam Lin
+artist: Traditional
+composers:
+- Traditional
+default_key: Em
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-07-26'

@@ -1,0 +1,15 @@
+id: mamas-hungry-eyes
+title: Mama's Hungry Eyes
+artist: Merle Haggard
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mama-s-hungry-eyes.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/merle-haggard/mamas-hungry-eyes-chords-4143004
+    imported_at: '2026-07-31'
+composers:
+- Merle Haggard

@@ -4,7 +4,8 @@
     "title": "Cherokee Shuffle",
     "time_signature": "4/4",
     "tempo": 240,
-    "composer": "based on version from The Great Dobro Sessions album"
+    "composer": "based on version from The Great Dobro Sessions album",
+    "key": "A"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -7033,8 +7034,10 @@
     ]
   },
   "x_source": {
-    "type": "local",
-    "source_file": "tab-cherokee-shuffl-23819-332212472019.tef",
-    "converted_at": "2026-07-02T11:24:53.591731"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cherokee-shuffl-23819-332212472019.tef",
+    "author": "Old Hickory",
+    "converted_at": "2026-07-26T22:20:06.231234",
+    "source_id": "23819"
   }
 }

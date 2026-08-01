@@ -18,6 +18,12 @@ const latin1 = (bytes) => {                            // latin-1 is a 1:1 map
 
 export class TefVersionError extends Error {}
 
+/** Port of reader.py TEFParseError — a decode that produced structurally
+ *  impossible output (e.g. thousands of measures for a 62-measure tune).
+ *  Deliberately loud: better a failed import than a plausible-looking
+ *  garbage OTF. */
+export class TefParseError extends Error {}
+
 /** Written duration in ticks (480/quarter) from a TEF duration code.
  *  Port of decode_duration_code(). Oracle-validated corpus-wide. */
 export function decodeDurationCode(code) {
@@ -183,11 +189,44 @@ export function parseInstrumentsV2(data, h) {
     return parseTrackRecordsV2(data, h);
 }
 
+// --- V2 component-record sub-variants --------------------------------------
+// The common V2 layout is a 6-byte component record on a 256-units-per-whole-
+// note position grid. An OLDER sub-variant packs the same leading fields into
+// 4 bytes (bytes 0-1 location, byte 2 type+fret, byte 3 duration+dynamic) with
+// NO effect bytes, and uses a 64-units-per-whole-note grid.
+//
+// Detection is STRUCTURAL, not a magic byte: a 4-byte file's component region
+// cannot hold `count` 6-byte records without running past EOF. Port of
+// reader.py TEFReader.v2_component_stride — see the long comment there.
+const V2_GRID_BY_STRIDE = { 6: 256, 4: 64 };
+const V2_CANONICAL_GRID = 256;
+
+/** Size in bytes of one V2 component record in this file (4 or 6). */
+export function v2ComponentStride(data, h) {
+    const endAt6 = h.v2_component_offset + 6 * h.v2_component_count;
+    return endAt6 > data.length ? 4 : 6;
+}
+
 // --- note events -----------------------------------------------------------
 export function parseNoteEventsV2(data, h, instruments) {
     const events = [];
     const tsChanges = [];
-    const tsSize = h.v2_ts_size, numStrings = h.v2_strings;
+    const numStrings = h.v2_strings;
+
+    const stride = v2ComponentStride(data, h);
+    const grid = V2_GRID_BY_STRIDE[stride];
+    // Native grid -> the canonical 256-per-whole-note grid that event.position
+    // is reported in (1 for 6-byte, 4 for 4-byte), so otf.js / the anacrusis
+    // shift / articulationMaxGap keep reading h.v2_ts_size unchanged.
+    const posScale = fdiv(V2_CANONICAL_GRID, grid);
+    const tsSize = grid === V2_CANONICAL_GRID ? h.v2_ts_size
+        : (h.v2_time_denom === 0 ? grid : fdiv(grid * h.v2_time_num, h.v2_time_denom));
+    // The 6-byte duration code is 5 bits (bit 4 = double dot). The 4-byte
+    // layout uses only bits 0-3 — reading bit 4 as a double dot makes 266 of
+    // 10591's notes overrun the next note on their own string; masking it off
+    // yields zero overruns. See reader.py for the full evidence.
+    const durationMask = stride === 6 ? 0x1f : 0x0f;
+
     if (tsSize === 0 || numStrings === 0) return { events, tsChanges };
 
     let trackStringCounts = instruments.map(i => i.num_strings);
@@ -196,9 +235,16 @@ export function parseNoteEventsV2(data, h, instruments) {
     let mData = 0, mIndex = 0, tsMove = 0;
     let offset = h.v2_component_offset;
 
+    // Loud-failure backstop: a stream read at the wrong stride still decodes
+    // into "notes", just at impossible measure numbers (10591 read as 6-byte
+    // records reported 324 notes across 5510 measures for a 62-measure tune).
+    // Across the whole 6-byte corpus the highest decoded measure is EXACTLY
+    // h.v2_measures, so this bound is enormously slack.
+    const measureLimit = h.v2_measures > 0 ? 2 * h.v2_measures + 16 : 0;
+
     for (let n = 0; n < h.v2_component_count; n++) {
-        if (offset + 6 > data.length) break;
-        const rec = data.subarray(offset, offset + 6);
+        if (offset + stride > data.length) break;
+        const rec = data.subarray(offset, offset + stride);
 
         let location = (rec[0] & 0xff) + 256 * (mData + (rec[1] & 0xff));
         if (fdiv(location, tsSize * numStrings) < mIndex) {
@@ -210,6 +256,15 @@ export function parseNoteEventsV2(data, h, instruments) {
         const cumulativeString = fdiv(location, tsSize) % numStrings;
         const measure = fdiv(location, tsSize * numStrings);
 
+        if (measureLimit && measure >= measureLimit) {
+            throw new TefParseError(
+                `V2 component stream decoded measure ${measure + 1} but the `
+                + `header declares only ${h.v2_measures} measures `
+                + `(stride=${stride}, grid=${grid}). Refusing to emit garbage `
+                + `— this file is probably an unsupported V2 `
+                + `component-record sub-variant.`);
+        }
+
         if (measure !== mIndex) tsMove = 0;
         mIndex = measure;
 
@@ -220,13 +275,17 @@ export function parseNoteEventsV2(data, h, instruments) {
             const d3 = rec[3];
             const top = fretByte >> 5;
             const den = top > 0 ? fdiv(Math.pow(2, top), 2) : h.v2_time_denom;
-            const gridLen = tsSize - 4 * d3;
-            const num = den > 0 ? fdiv(gridLen * den, 256) : 0;
-            tsMove = 4 * d3;
+            // byte3 counts 64th notes: 4 units on the 256 grid, 1 on the 64
+            // grid. (No type-27 component exists in the one known 4-byte
+            // file, so this is a unit conversion by construction.)
+            const unitsPer64th = fdiv(4, posScale);
+            const gridLen = tsSize - unitsPer64th * d3;
+            const num = den > 0 ? fdiv(gridLen * den, grid) : 0;
+            tsMove = unitsPer64th * d3;
             if (num > 0 && (d3 > 0 || !(num === h.v2_time_num && den === h.v2_time_denom))) {
                 tsChanges.push({ measure: measure + 1, numerator: num, denominator: den });
             }
-            offset += 6;
+            offset += stride;
             continue;
         }
 
@@ -245,16 +304,22 @@ export function parseNoteEventsV2(data, h, instruments) {
             }
 
             events.push({
-                position: measure * tsSize + positionInMeasure,
+                // posScale lifts the 4-byte variant's 64-unit grid into the
+                // canonical 256-unit grid; nothing downstream has to know.
+                position: (measure * tsSize + positionInMeasure) * posScale,
                 track: trackIdx,
                 marker: markerChar,
                 extra: localString + 1,
                 pitchByte: fret,
-                raw: Uint8Array.from(rec),              // own copy of the 6 bytes
-                durationTicks: decodeDurationCode(rec[3] & 0x1f),
+                // The record AS STORED (6 or 4 bytes). The length is
+                // load-bearing: every effect/articulation consumer in otf.js
+                // gates on raw.length, so a 4-byte record correctly yields no
+                // effect1/effect2 instead of reading into the next record.
+                raw: Uint8Array.from(rec),
+                durationTicks: decodeDurationCode(rec[3] & durationMask),
             });
         }
-        offset += 6;
+        offset += stride;
     }
     return { events, tsChanges };
 }
@@ -264,7 +329,10 @@ export function parseReadingListV2(data, h) {
     const entries = [];
     const count = h.v2_repeats_count;
     if (count === 0) return entries;
-    const base = h.v2_component_offset + h.v2_component_count * 6;
+    // Sits immediately after the components, so the offset depends on the
+    // component-record stride (4 or 6) too.
+    const base = h.v2_component_offset
+        + h.v2_component_count * v2ComponentStride(data, h);
     for (let i = 0; i < count; i++) {
         const o = base + i * 2;
         if (o + 1 >= data.length) break;

@@ -1,0 +1,15 @@
+id: born-to-be-with-you
+title: Born to Be With You
+artist: The Chordettes
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: born-to-be-with-you.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-chordettes/born-to-be-with-you-chords-847806
+    imported_at: '2026-07-31'
+composers:
+- Don Robertson

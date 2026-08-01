@@ -4,7 +4,8 @@
     "title": "Salt Creek",
     "time_signature": "4/4",
     "tempo": 210,
-    "composer": "Arr: bye Don Titus"
+    "composer": "Arr: bye Don Titus",
+    "key": "A"
   },
   "timing": {
     "ticks_per_beat": 480
@@ -8009,8 +8010,10 @@
     ]
   },
   "x_source": {
-    "type": "local",
-    "source_file": "tab-salt-creek-20923-42181315122014.tef",
-    "converted_at": "2026-07-02T11:24:53.073951"
+    "type": "banjo-hangout",
+    "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-salt-creek-20923-42181315122014.tef",
+    "author": "banjo_don",
+    "converted_at": "2026-07-26T22:20:06.172217",
+    "source_id": "20923"
   }
 }

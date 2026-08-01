@@ -2,6 +2,7 @@
 // Supports modes: 'default' (3 cards), 'request' (straight to form), 'contribute' (2 cards, pre-filled)
 
 import { allSongs } from './state.js';
+import { songHasContent, songHasAbc } from './song-content.js';
 import { generateSlug, escapeHtml, isPlaceholder } from './utils.js';
 import { track } from './analytics.js';
 
@@ -224,7 +225,7 @@ function checkDedup() {
     const top = candidates.slice(0, 3);
 
     const matchHtml = top.map(({ song }) => {
-        const hasParts = song.content || song.tablature_parts?.length || song.abc_content;
+        const hasParts = songHasContent(song) || song.tablature_parts?.length || songHasAbc(song);
         const badge = isPlaceholder(song) ? ' <span class="dedup-badge">placeholder</span>' : '';
         return `
             <div class="dedup-match">

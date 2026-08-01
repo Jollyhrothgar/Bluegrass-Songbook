@@ -1,0 +1,5 @@
+# Cached HTML pages
+raw/
+
+# Conversion logs
+conversion_log.json

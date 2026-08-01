@@ -1,0 +1,17 @@
+id: all-my-loving
+title: All My Loving
+artist: The Beatles
+default_key: E
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: all-my-loving.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-beatles/all-my-loving-chords-453882
+    imported_at: '2026-07-31'
+composers:
+- John Lennon
+- Paul McCartney

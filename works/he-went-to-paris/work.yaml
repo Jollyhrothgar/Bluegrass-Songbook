@@ -1,0 +1,15 @@
+id: he-went-to-paris
+title: He Went to Paris
+artist: Waylon Jennings
+composers:
+- Jimmy Buffett
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: hewenttoparislyricschords.pro
+    imported_at: '2026-07-26'

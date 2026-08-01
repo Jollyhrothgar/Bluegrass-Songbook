@@ -1,0 +1,15 @@
+id: ive-been-all-around-this-world
+title: I've Been All Around This World
+artist: Grateful Dead
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: i-ve-been-all-around-this-world.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/grateful-dead/been-all-around-this-world-chords-2535900
+    imported_at: '2026-07-31'
+composers:
+- Traditional

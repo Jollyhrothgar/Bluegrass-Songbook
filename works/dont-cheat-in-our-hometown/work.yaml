@@ -1,11 +1,14 @@
 id: dont-cheat-in-our-hometown
 title: Don’t Cheat In Our Hometown
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/dont-cheat-in-our-hometown/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/dont-cheat-in-our-hometown/
+    imported_at: '2026-02-08'
+composers:
+- Ray Pennington
+- Roy Marcum

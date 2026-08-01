@@ -1,0 +1,15 @@
+id: a-way-to-free-myself
+title: A Way To Free Myself
+artist: Ray Price
+composers:
+- Joe Hayes
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: awaytofreemyselflyricschords.pro
+    imported_at: '2026-07-26'

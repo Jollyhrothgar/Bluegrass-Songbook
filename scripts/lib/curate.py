@@ -5,6 +5,7 @@ Usage (via ./scripts/utility curate ...):
     curate report                     # multi-version groups without a canonical pin
     curate pin <canonical-id> [variant-id ...] [--label LABEL]
     curate suppress <work-id> --reason "..."
+    curate pin-tab <work-id> <instrument> <source_id>   # default arrangement
 
 The registry lives at curation/registry.yaml and is applied at index build
 time (see curation.py / build_works_index.py).
@@ -20,19 +21,29 @@ from curation import load_registry, save_registry
 
 REPO_ROOT = Path(__file__).parent.parent.parent
 INDEX_PATH = REPO_ROOT / 'docs' / 'data' / 'index.jsonl'
+ARCHIVE_PATH = REPO_ROOT / 'docs' / 'data' / 'archive.jsonl'
 
 
 def load_index() -> list:
+    """Every built row — canon (index.jsonl) plus pruned (archive.jsonl).
+
+    Curation operates on the WHOLE corpus: `unprune` and `pin` name works
+    that are (by definition) off the canon index, so reading index.jsonl
+    alone would report them as unknown ids.
+    """
     if not INDEX_PATH.exists():
         print(f"Error: index not found at {INDEX_PATH}. "
               f"Run ./scripts/bootstrap --quick first.", file=sys.stderr)
         sys.exit(1)
     songs = []
-    with open(INDEX_PATH, encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                songs.append(json.loads(line))
+    for path in (INDEX_PATH, ARCHIVE_PATH):
+        if not path.exists():
+            continue
+        with open(path, encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    songs.append(json.loads(line))
     return songs
 
 
@@ -122,6 +133,35 @@ def cmd_suppress(args):
     print("Rebuild the index to apply: ./scripts/bootstrap --quick")
 
 
+def cmd_pin_tab(args):
+    """Pin the default tablature arrangement for a work+instrument."""
+    registry = load_registry(REPO_ROOT)
+
+    # Early feedback: does the index actually hold that arrangement?
+    if INDEX_PATH.exists():
+        song = next((s for s in load_index() if s.get('id') == args.work_id), None)
+        if song is None:
+            print(f"warning: '{args.work_id}' not found in the current index",
+                  file=sys.stderr)
+        else:
+            available = [(p.get('instrument'), str(p.get('source_id')))
+                         for p in song.get('tablature_parts') or []]
+            if (args.instrument, str(args.source_id)) not in available:
+                print(f"warning: {args.work_id} has no {args.instrument} "
+                      f"arrangement with source_id {args.source_id!r}. "
+                      f"Available: {available}", file=sys.stderr)
+
+    pins = registry.tab_pins.setdefault(args.work_id, {}) or {}
+    registry.tab_pins[args.work_id] = pins
+    pins[args.instrument] = str(args.source_id)
+
+    save_registry(registry)
+    print(f"Pinned {args.work_id} {args.instrument} default arrangement "
+          f"-> source_id {args.source_id}")
+    print(f"Registry updated: {registry.path}")
+    print("Rebuild the index to apply: ./scripts/bootstrap --quick")
+
+
 def cmd_unprune(args):
     """Rescue a work from the index prune (curation/index_prune.csv)."""
     from curation import load_prune_list
@@ -179,8 +219,8 @@ def cmd_lint(args):
         text = text.encode('ascii', 'ignore').decode('ascii').lower()
         return ' '.join(_re.sub(r'[^a-z0-9\s]', '', text).split())
 
-    index_path = REPO_ROOT / 'docs' / 'data' / 'index.jsonl'
-    rows = [json.loads(l) for l in open(index_path)]
+    # Whole corpus: group hygiene spans canon and archived rows alike.
+    rows = load_index()
     searchable = [r for r in rows if r.get('indexed') is not False]
 
     findings = []
@@ -276,6 +316,13 @@ def main():
     p_sup.add_argument('work_id', help='Work id to suppress')
     p_sup.add_argument('--reason', required=True, help='Why it is suppressed')
     p_sup.set_defaults(func=cmd_suppress)
+
+    p_ptab = sub.add_parser(
+        'pin-tab', help='Pin the default tablature arrangement for an instrument')
+    p_ptab.add_argument('work_id', help='Work id')
+    p_ptab.add_argument('instrument', help="Instrument, e.g. 'banjo'")
+    p_ptab.add_argument('source_id', help='source_id of the arrangement to default to')
+    p_ptab.set_defaults(func=cmd_pin_tab)
 
     p_unp = sub.add_parser('unprune', help='Rescue a work from the index prune')
     p_unp.add_argument('work_id', help='Work id to keep indexed')

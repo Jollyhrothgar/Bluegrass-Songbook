@@ -13,3 +13,6 @@ parts:
     source: classic-country
     source_file: ahundredyearsfromnowlyricswithchords.pro
     imported_at: '2026-01-02'
+composers:
+- Lester Flatt
+- Earl Scruggs

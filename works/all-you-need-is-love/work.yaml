@@ -1,0 +1,16 @@
+id: all-you-need-is-love
+title: All You Need is Love
+artist: The Beatles
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: all-you-need-is-love.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-beatles/all-you-need-is-love-chords-878481
+    imported_at: '2026-07-31'
+composers:
+- John Lennon
+- Paul McCartney

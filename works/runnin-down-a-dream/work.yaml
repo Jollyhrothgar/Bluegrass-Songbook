@@ -1,14 +1,17 @@
 id: runnin-down-a-dream
-title: "Runnin Down A Dream"
-artist: "Tom Petty"
-composers: []
+title: Runnin Down A Dream
+artist: Tom Petty
+composers:
+- Tom Petty
+- Jeff Lynne
+- Mike Campbell
 default_key: E
 tags: []
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: trusted-user
-      imported_at: '2026-02-22'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: trusted-user
+    imported_at: '2026-02-22'

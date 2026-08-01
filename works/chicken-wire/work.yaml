@@ -1,0 +1,13 @@
+id: chicken-wire
+title: Chicken Wire
+artist: Jonathan Byrd
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: chicken-wire-jonathan-byrd.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/jonathan-byrd/chicken-wire-chords-2901596
+    imported_at: '2026-07-31'

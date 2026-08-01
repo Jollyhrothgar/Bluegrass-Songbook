@@ -1,0 +1,13 @@
+id: you-can-t-beat-jesus-christ
+title: You Can't Beat Jesus Christ
+artist: Billy Joe Shaver
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: youcantbeatJesuschristlyricschords.pro
+    imported_at: '2026-07-26'

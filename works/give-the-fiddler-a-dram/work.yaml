@@ -1,7 +1,8 @@
 id: give-the-fiddler-a-dram
 title: Give the Fiddler a Dram
 artist: null
-composers: []
+composers:
+- Traditional
 default_key: null
 tags:
 - Instrumental

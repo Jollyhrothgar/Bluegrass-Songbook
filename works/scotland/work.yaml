@@ -1,7 +1,8 @@
 id: scotland
 title: Scotland
 artist: null
-composers: []
+composers:
+- Bill Monroe
 default_key: null
 tags:
 - Instrumental

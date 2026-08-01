@@ -1,0 +1,15 @@
+id: great-society
+title: Great Society
+artist: Hank Thompson
+composers:
+- Hank Thompson and Bill Penix
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: greatsocietylyricschords.pro
+    imported_at: '2026-07-26'

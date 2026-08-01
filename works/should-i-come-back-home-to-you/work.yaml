@@ -1,0 +1,13 @@
+id: should-i-come-back-home-to-you
+title: Should I Come Back Home to You
+artist: Ernest Tubb
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: shouldicomebackhometyoulyricschords.pro
+    imported_at: '2026-07-26'

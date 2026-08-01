@@ -1,0 +1,16 @@
+id: i-cant-give-you-anything-but-love
+title: I Can't Give You Anything But Love
+artist: Louis Armstrong
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: i-can-t-give-you-anything-but-love.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/louis-armstrong/i-cant-give-you-anything-but-love-chords-1489653
+    imported_at: '2026-07-31'
+composers:
+- Jimmy McHugh
+- Dorothy Fields

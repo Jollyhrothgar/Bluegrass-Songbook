@@ -1,0 +1,15 @@
+id: it-s-only-love-2
+title: It's Only Love
+artist: Elvis Presley
+composers:
+- Steve Tyrell and Mark James
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: itsonlylovelyricschords.pro
+    imported_at: '2026-07-26'

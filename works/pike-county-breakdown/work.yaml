@@ -2,10 +2,12 @@ id: pike-county-breakdown
 title: Pike County Breakdown
 artist: Traditional
 composers:
-- Biography:Rupert Jones
+- Rupert Jones
 tags:
 - Instrumental
 - Bluegrass
+- Scruggs
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,3 +16,109 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '18663'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=18663
+    author: corcoran
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2024'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2024
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-29205.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '29205'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=29205
+    author: janolov
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-27404.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '27404'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=27404
+    author: Yohansen
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-24015.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24015'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24015
+    author: kmwaterstx
+    difficulty: Expert
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11019.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11019'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11019
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11018.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11018'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11018
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11017.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11017'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11017
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11015.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11015'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11015
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11016.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11016'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11016
+    author: schlange
+    imported_at: '2026-07-27'

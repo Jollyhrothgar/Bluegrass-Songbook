@@ -1,0 +1,38 @@
+id: eighth-of-january
+title: Eighth of January
+artist: Traditional
+composers:
+- Arkansas Barefoot Boys
+default_key: D
+tags:
+- Instrumental
+- Scruggs
+- Bluegrass
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21420'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21420
+    author: banjoman 1
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2192'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2192
+    author: Live on What You Grow
+    imported_at: '2026-07-26'

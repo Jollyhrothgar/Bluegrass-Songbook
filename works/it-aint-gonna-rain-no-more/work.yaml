@@ -1,0 +1,14 @@
+id: it-aint-gonna-rain-no-more
+title: It Ain't Gonna Rain No More
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: it-ain-t-gonna-rain-no-more.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/it-aint-gonna-rain-no-more-chords-3309455
+    imported_at: '2026-07-31'
+composers:
+- Wendell Hall

@@ -1,0 +1,13 @@
+id: bitter-creek
+title: Bitter Creek
+artist: Eagles
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: bitter-creek.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/eagles/bitter-creek-chords-1196071
+    imported_at: '2026-07-31'

@@ -1,11 +1,14 @@
 id: life-of-sorrow
 title: Life Of Sorrow
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/life-of-sorrow/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/life-of-sorrow/
+    imported_at: '2026-02-08'
+composers:
+- Carter Stanley
+- Ralph Stanley

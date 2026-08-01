@@ -123,7 +123,7 @@ test.describe('Deep Links', () => {
 test.describe('History Navigation', () => {
     test('browser back works from song to search', async ({ page }) => {
         await gotoSearch(page);
-        await searchAndOpen(page, 'your cheating heart hank williams');
+        await searchAndOpen(page, 'old home place');
 
         await page.goBack();
 
@@ -132,7 +132,7 @@ test.describe('History Navigation', () => {
 
     test('top-band back button returns from song to search', async ({ page }) => {
         await gotoSearch(page);
-        await searchAndOpen(page, 'your cheating heart hank williams');
+        await searchAndOpen(page, 'old home place');
 
         // The song page shows the back arrow in the top band
         const backBtn = page.locator('#topbar-back');

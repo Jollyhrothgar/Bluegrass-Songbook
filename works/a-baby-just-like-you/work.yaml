@@ -1,0 +1,15 @@
+id: a-baby-just-like-you
+title: A Baby Just Like You
+artist: John Denver
+composers:
+- John Denver and Joe Henry
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: ababyjustlikeyoulyricschords.pro
+    imported_at: '2026-07-26'

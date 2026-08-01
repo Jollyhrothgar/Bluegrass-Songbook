@@ -1,0 +1,15 @@
+id: winter-wonderland
+title: Winter Wonderland
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: winterwonderlandlyricschords.pro
+    imported_at: '2026-07-26'
+composers:
+- Felix Bernard
+- Richard B. Smith

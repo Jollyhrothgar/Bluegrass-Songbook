@@ -1,7 +1,8 @@
 id: monroe-s-hornpipe
 title: Monroe's Hornpipe
 artist: null
-composers: []
+composers:
+- Bill Monroe
 default_key: null
 tags:
 - Instrumental

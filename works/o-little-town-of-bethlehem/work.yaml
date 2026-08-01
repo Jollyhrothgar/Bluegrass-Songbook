@@ -1,0 +1,14 @@
+id: o-little-town-of-bethlehem
+title: O Little Town of Bethlehem
+composers:
+- Lewis H. Redner and Phillips Brooks
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: olittletownofbethlehemlyricschords.pro
+    imported_at: '2026-07-26'

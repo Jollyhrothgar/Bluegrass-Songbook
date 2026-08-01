@@ -1,0 +1,48 @@
+id: lonesome-moonlight-waltz
+title: Lonesome Moonlight Waltz
+artist: Traditional
+composers:
+- Bill Monroe
+default_key: Dm
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '18215'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=18215
+    author: mwblake
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: dobro
+  format: otf
+  file: dobro.otf.json
+  provenance:
+    source: reso-hangout
+    source_id: '2458'
+    source_url: https://www.resohangout.com/tab/browse.asp?m=detail&v=2458
+    author: banjohn2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2380'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2380
+    author: Live on What You Grow
+    imported_at: '2026-07-26'

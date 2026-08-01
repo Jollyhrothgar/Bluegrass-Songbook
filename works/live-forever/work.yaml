@@ -1,0 +1,15 @@
+id: live-forever
+title: Live Forever
+artist: Billy Joe Shaver
+composers:
+- Billy Joe Shaver and Eddy Shaver
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: liveforeverlyricschords.pro
+    imported_at: '2026-07-26'

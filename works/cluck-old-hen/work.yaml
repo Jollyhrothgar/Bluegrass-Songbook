@@ -5,12 +5,92 @@ default_key: A
 tags:
 - Instrumental
 - Fiddle
+- OldTime
+- Clawhammer
+- Scruggs
+- Bluegrass
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/cluck-old-hen/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/cluck-old-hen/
+    imported_at: '2026-02-08'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16051'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16051
+    author: janolov
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '3051'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3051
+    author: MandoTom2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-21716.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21716'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21716
+    author: Bill
+    difficulty: Beginner
+    tuning: Sawmill (gDGCD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-10301.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '10301'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10301
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-10300.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '10300'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10300
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-17948.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '17948'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=17948
+    author: kmwaters
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin-2590.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2590'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2590
+    author: MandoTom2
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'
+composers:
+- Traditional

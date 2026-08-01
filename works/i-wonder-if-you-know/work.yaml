@@ -1,0 +1,15 @@
+id: i-wonder-if-you-know
+title: I Wonder If You Know
+artist: Johnny And Jack
+composers:
+- Ella Barrett
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: iwonderifyouknowlyricschords.pro
+    imported_at: '2026-07-26'

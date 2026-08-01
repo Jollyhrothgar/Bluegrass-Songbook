@@ -1,7 +1,8 @@
 id: long-black-veil
 title: Long Black Veil
 composers:
-- Marijohn Wilkin and Danny Dill
+- Marijohn Wilkin
+- Danny Dill
 default_key: G
 tags:
 - JamFriendly
@@ -13,3 +14,4 @@ parts:
   provenance:
     source: null
     imported_at: '2026-01-02'
+artist: Lefty Frizzell

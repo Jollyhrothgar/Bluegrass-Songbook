@@ -93,8 +93,8 @@ function expectFreshNewSongEditor() {
 }
 
 describe('prepareAddSongView', () => {
-    it('resets to a fresh new-song editor when the previous session edited a song', () => {
-        enterEditMode(SONG_A);
+    it('resets to a fresh new-song editor when the previous session edited a song', async () => {
+        await enterEditMode(SONG_A);
         expect(refs.editorTitle.value).toBe('Your Cheatin Heart');
         expect(editingSongId).toBe('your-cheating-heart');
 
@@ -102,8 +102,8 @@ describe('prepareAddSongView', () => {
         expectFreshNewSongEditor();
     });
 
-    it('still resets after exitEditMode already ran (home detour between edit and Add Song)', () => {
-        enterEditMode(SONG_A);
+    it('still resets after exitEditMode already ran (home detour between edit and Add Song)', async () => {
+        await enterEditMode(SONG_A);
         // Navigating home fires exitEditMode via the view subscriber;
         // editingSongId is already null by the time Add Song is clicked.
         exitEditMode();
@@ -114,7 +114,7 @@ describe('prepareAddSongView', () => {
         expectFreshNewSongEditor();
     });
 
-    it('preserves an unsaved new-song draft (no previous edit session)', () => {
+    it('preserves an unsaved new-song draft (no previous edit session)', async () => {
         refs.editorTitle.value = 'My Draft Song';
         refs.editorContent.value = '[G]Half-finished line';
 
@@ -126,8 +126,8 @@ describe('prepareAddSongView', () => {
         expect(editingSongId).toBe(null);
     });
 
-    it('resets when Add Song is entered directly from an active edit session', () => {
-        enterEditMode(SONG_A);
+    it('resets when Add Song is entered directly from an active edit session', async () => {
+        await enterEditMode(SONG_A);
         // no exitEditMode: user goes straight edit -> Add Song
         prepareAddSongView();
         expectFreshNewSongEditor();
@@ -135,10 +135,10 @@ describe('prepareAddSongView', () => {
 });
 
 describe('sequential edit sessions and reverse leak', () => {
-    it('editing song B after abandoning an edit of song A shows B, not A', () => {
-        enterEditMode(SONG_A);
+    it('editing song B after abandoning an edit of song A shows B, not A', async () => {
+        await enterEditMode(SONG_A);
         exitEditMode();
-        enterEditMode(SONG_B);
+        await enterEditMode(SONG_B);
         expect(refs.editorTitle.value).toBe('Blue Moon of Kentucky');
         expect(refs.editorContent.value).toBe(SONG_B.content);
         expect(editingSongId).toBe('blue-moon-of-kentucky');
@@ -148,11 +148,11 @@ describe('sequential edit sessions and reverse leak', () => {
         expect(text).not.toContain('cheatin');
     });
 
-    it('opening Edit after abandoning a new-song draft fully loads the song', () => {
+    it('opening Edit after abandoning a new-song draft fully loads the song', async () => {
         refs.editorTitle.value = 'My Draft Song';
         refs.editorContent.value = '[G]Half-finished line';
 
-        enterEditMode(SONG_A);
+        await enterEditMode(SONG_A);
         expect(refs.editorTitle.value).toBe('Your Cheatin Heart');
         expect(refs.editorContent.value).toBe(SONG_A.content);
         const text = refs.editorPreviewContainer.textContent;
@@ -160,14 +160,14 @@ describe('sequential edit sessions and reverse leak', () => {
         expect(text).not.toContain('Half-finished');
     });
 
-    it('a reset session submits as a new song, and a later edit is unaffected', () => {
-        enterEditMode(SONG_A);
+    it('a reset session submits as a new song, and a later edit is unaffected', async () => {
+        await enterEditMode(SONG_A);
         prepareAddSongView();
         // submit flow reads editMode/editingSongId: both must be new-song
         expect(editMode).toBe(false);
         expect(editingSongId).toBe(null);
 
-        enterEditMode(SONG_B);
+        await enterEditMode(SONG_B);
         expect(editMode).toBe(true);
         expect(editingSongId).toBe('blue-moon-of-kentucky');
         expect(refs.editorSubmitBtn.textContent).toBe('Submit Correction');

@@ -1,0 +1,15 @@
+id: inisheer
+title: Inisheer
+artist: Thomas Walsh
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: inisheer.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/thomas-walsh/inisheer-tabs-3018086
+    imported_at: '2026-07-31'
+composers:
+- Thomas Walsh

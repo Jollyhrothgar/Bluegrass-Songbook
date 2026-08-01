@@ -1,0 +1,13 @@
+id: cowboys-and-indians
+title: Cowboys and Indians
+artist: Joshua James
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: cowboys-and-indians.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/joshua-james/cowboys-and-indians-chords-1026175
+    imported_at: '2026-07-31'

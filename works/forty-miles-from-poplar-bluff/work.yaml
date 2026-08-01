@@ -1,0 +1,16 @@
+id: forty-miles-from-poplar-bluff
+title: Forty Miles From Poplar Bluff
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: forty-miles-from-poplar-bluff.txt
+    source_url: https://www.cowboylyrics.com/tabs/wagoner-porter/40-miles-from-poplar-bluff-968.html
+    imported_at: '2026-07-31'
+composers:
+- Frank Dycus
+- Larry Kingston

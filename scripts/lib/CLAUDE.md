@@ -8,11 +8,16 @@ The build pipeline now uses **works/** as the primary data source:
 
 ```
 PRIMARY (current):
-works/*/work.yaml + lead-sheet.pro  →  build_works_index.py  →  index.jsonl
+                                                        ┌→ docs/data/index.jsonl    (canon rows, no content)
+works/*/work.yaml + lead-sheet.pro → build_works_index.py┼→ docs/data/archive.jsonl  (indexed:false rows)
+                                                        └→ docs/data/songs/{id}.pro (full ChordPro, per work)
 
 LEGACY (migration complete):
 sources/*/parsed/*.pro  →  migrate_to_works.py  →  works/
 ```
+
+**The index no longer carries song content** — see
+[Split Output](#split-output-lean-canon-index--archive--per-song-content).
 
 **Key files:**
 - `build_works_index.py` - PRIMARY: Builds index from works/ directory
@@ -174,7 +179,8 @@ Files listed in `sources/{source}/protected.txt` are skipped. These are human-co
 
 ## build_works_index.py (PRIMARY)
 
-Generates `docs/data/index.jsonl` from the `works/` directory.
+Generates the three published artifacts (see [Split Output](#split-output-lean-canon-index--archive--per-song-content))
+from the `works/` directory.
 
 ### What It Does
 
@@ -182,10 +188,63 @@ Generates `docs/data/index.jsonl` from the `works/` directory.
 2. Reads work metadata (title, artist, composers, tags, parts)
 3. Reads lead sheet content from `lead-sheet.pro`
 4. Detects key and computes Nashville numbers
-5. Identifies tablature parts and includes their paths
+5. Identifies tablature parts, copies their OTFs, records each one's track count
 6. Applies fuzzy grouping to merge similar titles
 7. Matches to Strum Machine cache
-8. Outputs unified JSON index
+8. Writes the canon index, the archive index, and one `.pro` per work
+
+### Split Output: lean canon index + archive + per-song content
+
+**Decision (Mike, 2026-07-31): phones without wifi.** `index.jsonl` had grown
+to **48.8 MB / 18,388 rows** — every visitor downloaded every song's full
+ChordPro before the first search could run. The row data the search actually
+needs is a fraction of that, so the build now splits its output:
+
+| Output | Contents | Size (2026-07-31) |
+|--------|----------|-------------------|
+| `docs/data/index.jsonl` | canon rows only (`indexed` is not `false`), no song content | **2.2 MB** (482 KB gzipped), 1,766 rows |
+| `docs/data/archive.jsonl` | the `indexed: false` rows, same slim shape, `lyrics` clipped to 200 chars | 15.7 MB, 16,764 rows |
+| `docs/data/songs/{id}.pro` | the FULL ChordPro for one work — canon *and* archive | 25 MB across 18,475 files |
+
+The frontend loads `index.jsonl` at startup, fetches `songs/{id}.pro` when a
+song page opens, and only touches `archive.jsonl` when it needs a row that
+isn't in the canon (deep links, saved lists, arrangement groups). Archive rows
+never feed search, which is why their lyrics are clipped — canon lyrics are
+left at full builder width because `lyrics:` search reads them.
+
+Row-shape changes (`write_outputs()` in `build_works_index.py`):
+
+| Field | Change |
+|-------|--------|
+| `content` | **removed** → `docs/data/songs/{id}.pro` |
+| `abc_content` | **removed** → still inside the `.pro` (`{start_of_abc}` block) |
+| `has_content` | `true` when the work has a lead sheet; **omitted** otherwise (placeholders, tab-only works) |
+| `has_abc` | `true` when the lead sheet embeds an ABC block; **omitted** otherwise |
+| `tablature_parts[].tracks` | int — the OTF's track count, read during the tab copy step (lets the frontend decide about the track mixer without downloading the OTF) |
+| `lyrics` | unchanged on canon rows; clipped to 200 chars on archive rows |
+
+Everything else is byte-for-byte what it was. Both `.jsonl` files inherit the
+build's id sort, and `.pro` files are only rewritten when their text changed,
+so repeat builds are byte-stable and quiet in `git status`. Stale
+`docs/data/songs/*.pro` (renames, deletions, suppressions, a lead sheet that
+went away) are pruned each build, the same way `docs/data/tabs/` is — after
+the tab provenance gate, so a failed build never mutates `docs/data/`.
+
+**Reading the corpus from Python**: `index.jsonl` alone is the canon slice.
+Tools that reason about the whole corpus (`curate`, `batch_tag_songs`,
+`grassiness`, `query_artist_tags --refresh`, `strum_machine --batch`, the
+`analytics/bluegrass-research` scripts) read `archive.jsonl` too. The
+`search_index.py` CLI deliberately matches the site — canon only — with
+`--archive` to fold the pruned rows back in:
+
+```bash
+uv run python scripts/lib/search_index.py "tag:bluegrass key:G"
+uv run python scripts/lib/search_index.py --archive "artist:hank williams"
+```
+
+**Local dev**: `./scripts/server` gzips `.jsonl/.json/.pro/.js/.css/.html`
+for clients that send `Accept-Encoding: gzip`, so a local (or tailnet/phone)
+page load measures roughly what GitHub Pages serves.
 
 ### Version Grouping
 
@@ -209,21 +268,51 @@ When determining the work's source for attribution:
 
 This ensures works with both a TuneArch lead sheet and a Banjo Hangout tab show "tunearch" as the source.
 
-### Tablature Attribution
+### Tablature Attribution & Arrangements
 
-Tablature parts include provenance for frontend attribution:
+A work can hold several tablature arrangements of the SAME instrument. The
+frontend renders that as a hierarchy: **instrument** (pill) → **arrangement**
+(selector) → **tracks** (mixer). Each entry in `tablature_parts`:
 
 ```json
 "tablature_parts": [{
   "instrument": "banjo",
-  "file": "data/tabs/red-haired-boy-banjo.otf.json",
+  "file": "data/tabs/red-haired-boy-banjo-11059.otf.json",
   "source": "banjo-hangout",
-  "source_id": "1687",
+  "source_id": "11059",
   "author": "schlange",
-  "source_page_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=1687",
-  "author_url": "https://www.banjohangout.org/my/schlange"
+  "source_page_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=11059",
+  "author_url": "https://www.banjohangout.org/my/schlange",
+  "default": true,
+  "difficulty": "Intermediate",
+  "tuning": "Standard Open G (gDGBD)",
+  "tracks": 3
 }]
 ```
+
+| Field | Notes |
+|-------|-------|
+| `instrument` | grouping key for the instrument pill |
+| `tracks` | number of tracks in the OTF (read at build time; omitted only if the OTF can't be read) |
+| `file` | ALWAYS `data/tabs/{work}-{instrument}-{source_id}.otf.json` — instrument alone is no longer unique (parts with no source_id fall back to `-p{position}`) |
+| `default` | exactly ONE true per instrument per work |
+| `difficulty` / `tuning` | optional, from part provenance (the Hangout listing) |
+| `label` | only when work.yaml sets one |
+
+**Default arrangement** = the `tab_pins:` entry in `curation/registry.yaml`
+if present, else the FIRST part listed for that instrument in `work.yaml`
+(so imports keep the default they already had when alternates land later).
+Resolved by `curation.apply_tab_defaults()` at build time.
+
+```bash
+./scripts/utility curate pin-tab <work-id> <instrument> <source_id>
+```
+
+Inside `works/`, the first arrangement of an instrument keeps the bare
+`{instrument}.otf.json`; alternates are `{instrument}-{source_id}.otf.json`.
+The copy step derives published names from the part, and deletes orphaned
+`docs/data/tabs/` files (renames, deletions, re-imports) — hand-placed
+fixtures that don't match the generated shape are left alone.
 
 ### Strum Machine Matching
 
@@ -259,10 +348,46 @@ in `curation/registry.yaml` at the repo root — not in `works/*/work.yaml`:
 frontend's Arrangement pill reads these). Importers call `is_suppressed()`
 so suppressed works are never re-created from sources.
 
+- **Tab pins**: which tablature arrangement is the default for a given
+  work + instrument (`tab_pins: {work-id: {instrument: source_id}}`)
+
 ```bash
 ./scripts/utility curate report                # groups without a canonical pin
 ./scripts/utility curate pin <canonical-id> [variant-id ...] [--label LABEL]
 ./scripts/utility curate suppress <work-id> --reason "..."
+./scripts/utility curate pin-tab <work-id> <instrument> <source_id>
+```
+
+### Index Prune — the searchable index is the bluegrass canon
+
+**Policy (Mike, 2026-07-31):** search and collections deliberately show only
+bluegrass + bluegrass-adjacent repertoire (~1,800 songs). The other ~16,900
+works are NOT deleted: they stay on disk, keep their `#work/{slug}` URLs,
+stay in lists, and can be restored to search at any time.
+
+Mechanism: `curation/index_prune.csv` lists work ids that
+`apply_index_prune()` stamps `indexed: false` at build time. A row is
+exempt if it is user-origin (`USER_SOURCES` or `submitted_by` — user
+contributions are never pruned) or has a registry `keep:` entry.
+
+How the current keep set was decided: see **`curation/INDEX_DECISIONS.md`**
+(the full decision record — self-contained, with every data source as an
+in-repo path). Short version: a 2026-07-23 MusicBrainz cover-coverage rule,
+then a 2026-07-31 two-of-three-ledgers rule, then a manual title-by-title
+review (163 rescues, reasons in `registry.yaml` `keep:`). The MusicBrainz
+coverage snapshot the decisions used is vendored at
+`curation/decision-data/site_index_scored.csv` — no local database needed to
+re-analyze or reverse any of it.
+
+Restoring songs later:
+
+```bash
+# one song back on the index
+./scripts/utility curate unprune <work-id> --reason "why it belongs"
+./scripts/bootstrap --quick
+
+# in bulk: remove rows from curation/index_prune.csv (or add keep:
+# entries in curation/registry.yaml), then rebuild
 ```
 
 ### Deleted-Songs Sync
@@ -280,6 +405,9 @@ git add docs/data/deleted_songs.json && git commit -m "Sync deleted songs"
 
 ### Output Format
 
+One row per work in `index.jsonl` (canon) or `archive.jsonl` (pruned). The
+ChordPro itself lives beside them in `docs/data/songs/{id}.pro`:
+
 ```json
 {
   "id": "blue-moon-of-kentucky",
@@ -288,9 +416,9 @@ git add docs/data/deleted_songs.json && git commit -m "Sync deleted songs"
   "composers": ["Bill Monroe"],
   "key": "C",
   "tags": ["ClassicCountry", "JamFriendly"],
-  "content": "{meta: title...}[full ChordPro]",
+  "has_content": true,
   "tablature_parts": [
-    {"type": "tablature", "instrument": "banjo", "path": "data/tabs/..."}
+    {"instrument": "banjo", "file": "data/tabs/...", "tracks": 3}
   ]
 }
 ```
@@ -311,7 +439,8 @@ class Part:
     file: str           # Relative path to file
     default: bool       # Is this the default part?
     instrument: str     # Optional: 'banjo', 'fiddle', 'guitar'
-    provenance: dict    # Source info (source, source_file, imported_at)
+    provenance: dict    # Source info (source, source_id, source_file,
+                        # author, difficulty, tuning, imported_at)
 
 @dataclass
 class Work:
@@ -323,6 +452,13 @@ class Work:
     tags: list[str]
     parts: list[Part]
 ```
+
+### Validation
+
+`validate_work(work)` returns a list of problems (empty = valid). Several
+tablature parts may share an `instrument` — they're alternate arrangements
+— but `(instrument, provenance.source_id)` must be unique within a work,
+and part filenames must not repeat.
 
 ---
 

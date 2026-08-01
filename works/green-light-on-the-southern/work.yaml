@@ -1,0 +1,15 @@
+id: green-light-on-the-southern
+title: Green Light on the Southern
+artist: Tony Rice
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: green-light-on-the-southern.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/tony-rice/greenlight-on-the-southern-chords-4046338
+    imported_at: '2026-07-31'
+composers:
+- Norman Blake

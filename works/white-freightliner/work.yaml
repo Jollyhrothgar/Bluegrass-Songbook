@@ -13,3 +13,5 @@ parts:
     corrected_at: '2026-08-01'
     correction_issue: 196
 default_key: G
+composers:
+- Townes Van Zandt

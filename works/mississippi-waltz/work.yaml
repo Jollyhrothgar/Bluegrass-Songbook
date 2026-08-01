@@ -1,0 +1,12 @@
+id: mississippi-waltz
+title: Mississippi Waltz
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mississippi-waltz.txt
+    source_url: https://www.cowboylyrics.com/tabs/john-hartford/waltz-of-the-mississippi-23855.html
+    imported_at: '2026-07-31'

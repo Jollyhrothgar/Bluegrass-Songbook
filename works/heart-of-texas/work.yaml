@@ -1,0 +1,15 @@
+id: heart-of-texas
+title: Heart of Texas
+artist: Billy Joe Shaver
+composers:
+- Billy Joe Shaver
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: heartoftexaslyricschords.pro
+    imported_at: '2026-07-26'

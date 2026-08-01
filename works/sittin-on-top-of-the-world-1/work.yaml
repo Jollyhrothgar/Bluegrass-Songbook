@@ -1,0 +1,16 @@
+id: sittin-on-top-of-the-world-1
+title: Sittin' on Top of the World
+artist: Bob Wills
+composers:
+- Walter Vinson
+- Lonnie Chatmon
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: sittinontopoftheworldlyricschords.pro
+    imported_at: '2026-07-26'

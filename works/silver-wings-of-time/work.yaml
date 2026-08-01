@@ -1,0 +1,13 @@
+id: silver-wings-of-time
+title: Silver Wings of Time
+artist: Billy Joe Shaver
+default_key: Am
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: silverwingsoftimelyricschords.pro
+    imported_at: '2026-07-26'

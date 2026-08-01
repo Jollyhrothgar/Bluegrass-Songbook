@@ -2,10 +2,13 @@ id: june-apple
 title: June Apple
 artist: Traditional
 composers:
-- Biography:Ben Jarrell, Biography:Uncle Charlie Higgins
+- Traditional
 tags:
 - Instrumental
 - OldTime
+- Scruggs
+- Bluegrass
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,3 +17,67 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '23847'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23847
+    author: howsy-bee
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2346'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2346
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2747'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2747
+    author: MandoTom2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-25924.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '25924'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=25924
+    author: mmuussiiccaall
+    difficulty: Intermediate
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-16082.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '16082'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16082
+    author: janolov
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-21937.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21937'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21937
+    author: Chad Jones
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'

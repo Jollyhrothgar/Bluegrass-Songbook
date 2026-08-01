@@ -1,0 +1,16 @@
+id: down-in-little-egypt
+title: Down in Little Egypt
+artist: Traditional
+composers:
+- Noah Beavers
+default_key: C
+tags:
+- Instrumental
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-07-26'

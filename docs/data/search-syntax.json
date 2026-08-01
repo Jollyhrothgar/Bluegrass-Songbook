@@ -7,16 +7,12 @@
     "l:": "lyrics",
     "composer:": "composer",
     "writer:": "composer",
-    "key:": "key",
-    "k:": "key",
     "chord:": "chord",
     "c:": "chord",
     "prog:": "prog",
     "p:": "prog",
     "tag:": "tag",
-    "t:": "tag",
-    "status:": "status",
-    "s:": "status"
+    "t:": "tag"
   },
-  "description": "Search query prefix mappings. Used by both JS frontend and Python CLI."
+  "description": "Search query prefix mappings. Used by both JS frontend and Python CLI. Only tag: supports negation (-tag:X); no other field takes a - prefix."
 }

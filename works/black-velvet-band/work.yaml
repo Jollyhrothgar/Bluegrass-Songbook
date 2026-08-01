@@ -1,0 +1,15 @@
+id: black-velvet-band
+title: Black Velvet Band
+artist: The Irish Rovers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: black-velvet-band-irish-rovers-version.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-irish-rovers/black-velvet-band-chords-1008871
+    imported_at: '2026-07-31'
+composers:
+- Traditional

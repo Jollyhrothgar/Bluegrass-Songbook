@@ -19,12 +19,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from catalog import TabCatalog, TabEntry
+from site_config import get_site
 from works_importer import import_tab
 
-HERE = Path(__file__).parent.parent          # sources/banjo-hangout
+SITE = get_site('banjo-hangout')             # oracle verification is banjo-only
+HERE = SITE.data_dir                         # sources/banjo-hangout
 REPO = HERE.parent.parent                    # repo root
 MANIFEST = REPO / 'spike' / 'oracle_manifest.json'
-CATALOG = HERE / 'tab_catalog.json'
+CATALOG = SITE.catalog_path
 
 # Detail-page metadata for verified pids missing from the catalog
 # (scraped 2026-07-05 from banjohangout.org detail pages).
@@ -78,7 +80,7 @@ def seed_catalog(catalog: TabCatalog) -> int:
             title=title,
             author=author,
             format='tef',
-            source_url=f"https://www.banjohangout.org/tab/browse.asp?m=detail&v={num}",
+            source_url=SITE.tab_page_url(str(num)),
             style=style,
             status='downloaded',
         ))
@@ -93,7 +95,7 @@ def main():
     verified = [e['pid'] for e in manifest if e['result']['verdict'] == 'VERIFIED']
     print(f"Oracle manifest: {len(verified)} VERIFIED pids")
 
-    catalog = TabCatalog(CATALOG)
+    catalog = TabCatalog(CATALOG, source=SITE.source)
     added = seed_catalog(catalog)
     print(f"Seeded {added} scraped entries into the catalog")
 
@@ -112,7 +114,7 @@ def main():
             print(f"  would import: {pid} ({tab.title} / {tab.author})")
             continue
         print(f"Importing {pid}: {tab.title} ({tab.author})")
-        slug = import_tab(catalog, tab)
+        slug = import_tab(catalog, tab, SITE)
         if slug:
             catalog.update_status(pid, 'imported')
             catalog.set_work_slug(pid, slug)

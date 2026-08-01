@@ -20,3 +20,5 @@ parts:
     tef_time_sig: 4/4
     tef_tracks: 0
     tef_events: 243
+composers:
+- Traditional

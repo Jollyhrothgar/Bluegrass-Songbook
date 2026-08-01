@@ -1,0 +1,14 @@
+id: we-three-kings
+title: We Three Kings
+composers:
+- John Henry Hopkins
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: wethreekingslyricschords.pro
+    imported_at: '2026-07-26'

@@ -1,0 +1,15 @@
+id: dear-santa
+title: Dear Santa
+artist: Tim McGraw
+composers:
+- Aaron M. Sain and Jimmy F. Highland
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: dearsantalyricschords.pro
+    imported_at: '2026-07-26'

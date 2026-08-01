@@ -6,6 +6,9 @@ tags:
 - JamFriendly
 - Instrumental
 - OldTime
+- Scruggs
+- Bluegrass
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,3 +17,165 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '13647'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=13647
+    author: Freddie.D.Holt
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: fiddle
+  format: otf
+  file: fiddle.otf.json
+  provenance:
+    source: fiddle-hangout
+    source_id: '2384'
+    source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2384
+    author: Live on What You Grow
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '3435'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=3435
+    author: bango
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '2962'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=2962
+    author: MandoTom2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: tenor-banjo
+  format: otf
+  file: tenor-banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '14677'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=14677
+    author: Mirek Tim Patek
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-24111.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24111'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24111
+    author: toolmaker
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-23402.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '23402'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23402
+    author: Yohansen
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-24099.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24099'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24099
+    author: Lefty5string
+    difficulty: Beginner
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-24211.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24211'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24211
+    author: Claude Grassley
+    difficulty: Beginner
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11603.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11603'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11603
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11602.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11602'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11602
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11604.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11604'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11604
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11605.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11605'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11605
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-11607.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11607'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11607
+    author: schlange
+    imported_at: '2026-07-27'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar-967.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '967'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=967
+    author: jameypittman
+    difficulty: Expert
+    tuning: EADGBE (Standard)
+    imported_at: '2026-07-27'
+composers:
+- Traditional

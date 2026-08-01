@@ -1,0 +1,14 @@
+id: the-memory-of-your-smile
+title: The Memory of Your Smile
+artist: The Stanley Brothers
+default_key: G
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: memory-of-your-smile-the.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-stanley-brothers/the-memory-of-your-smile-chords-4007995
+    imported_at: '2026-07-31'

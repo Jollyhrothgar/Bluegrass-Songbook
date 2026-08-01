@@ -1,11 +1,13 @@
 id: dear-old-dixie
 title: Dear Old Dixie
 artist: null
-composers: []
+composers:
+- Earl Scruggs
 default_key: null
 tags:
 - Instrumental
 - Scruggs
+- Bluegrass
 parts:
 - type: tablature
   instrument: banjo
@@ -18,3 +20,35 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20545
     author: Jollyhrothgar
     imported_at: '2026-07-08'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '3123'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3123
+    author: MandoTom2
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: tenor-banjo
+  format: otf
+  file: tenor-banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '14695'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=14695
+    author: Mirek Tim Patek
+    imported_at: '2026-07-26'
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin-3124.otf.json
+  provenance:
+    source: mandolin-hangout
+    source_id: '3124'
+    source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3124
+    author: MandoTom2
+    difficulty: Intermediate
+    tuning: GDAE (Standard)
+    imported_at: '2026-07-27'
