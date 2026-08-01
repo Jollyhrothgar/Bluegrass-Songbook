@@ -75,7 +75,6 @@ def parse_query(query: str) -> dict:
         'title_filter': None,
         'lyrics_filter': None,
         'composer_filter': None,
-        'key_filter': None,
         'exclude_tags': [],
     }
 
@@ -128,11 +127,6 @@ def parse_query(query: str) -> dict:
                 result['lyrics_filter'] = value.lower()
             elif field_type == 'composer':
                 result['composer_filter'] = value.lower()
-            elif field_type == 'key':
-                # A key is one token; the tail returns to text search
-                key_tok, *rest = value.split()
-                result['key_filter'] = key_tok.upper()
-                result['text_terms'].extend(t.lower() for t in rest)
             elif field_type == 'chord':
                 result['chord_filters'].extend(c.strip() for c in value.split(',') if c.strip())
             elif field_type == 'prog':
@@ -225,9 +219,6 @@ def search(songs: list[dict], query: str) -> list[dict]:
                 continue
         if parsed['composer_filter']:
             if parsed['composer_filter'] not in (song.get('composer') or '').lower():
-                continue
-        if parsed['key_filter']:
-            if (song.get('key') or '').upper() != parsed['key_filter']:
                 continue
 
         # Chord filters

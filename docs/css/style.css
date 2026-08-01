@@ -9768,28 +9768,6 @@ body.has-list-context.has-bottomband .container {
     background: color-mix(in srgb, var(--accent) 12%, transparent);
 }
 
-.pill-key-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.3rem;
-    padding: 0.5rem;
-}
-.pill-key-btn {
-    font: inherit;
-    font-size: 0.8rem;
-    padding: 0.3rem 0;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--bg);
-    color: var(--text);
-    cursor: pointer;
-}
-.pill-key-btn:hover { border-color: var(--accent); color: var(--accent); }
-.pill-key-btn.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-}
 .facet-clear { text-align: center; color: var(--text-secondary); }
 
 .facet-field { padding: 0.4rem 0.6rem; }
@@ -9832,3 +9810,11 @@ body.has-list-context.has-bottomband .container {
     text-decoration: none;
 }
 .facet-explorer-link:hover { text-decoration: underline; }
+
+.landing-facets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: 0.6rem;
+}

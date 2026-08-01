@@ -2203,6 +2203,14 @@ function init() {
 
     editorBackBtn?.addEventListener('click', () => navigateTo('search'));
 
+    // Landing facet chips: tags.js already toggles the tag in the main
+    // search box and runs the search — we just carry the user to it
+    document.getElementById('landing-facets')?.addEventListener('click', (e) => {
+        if (!e.target.closest('.facet-chip[data-facet-tag]')) return;
+        showView('search');
+        pushHistoryState('search', { query: searchInput?.value || '' });
+    });
+
     // Landing page search - switches to search view on input
     landingSearchInput?.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {

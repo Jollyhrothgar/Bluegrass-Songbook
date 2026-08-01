@@ -171,18 +171,26 @@ blue moon kentucky
 artist:hank williams      # Filter by artist (multi-word supported)
 title:blue moon           # Filter by title
 lyrics:lonesome highway   # Filter by lyrics content
-key:G                     # Filter by key
-tag:bluegrass             # Filter by genre tag
-tag:fiddle                # Filter by instrument tag (fiddle, banjo, guitar, etc.)
+tag:bluegrass             # Filter by tag; whole value = tags (commas or spaces)
+tag:fiddle                # Instrument tag (fiddle, banjo, guitar, etc.)
 composer:bill monroe      # Filter by composer/writer
 ```
 
-**Negative filters**: Exclude results with `-` prefix
+There is deliberately NO `key:` filter — keys are transposable, so the
+detected key is display metadata (song page "Key of G" pill), not a search
+dimension (removed 2026-07-31 at Mike's direction). `status:`/`has:` and
+all negations except `-tag:` were removed at the same time; typing any of
+them degrades to plain text.
+
+**Negative filter** (`-tag:` is the only negation)
 ```
 tag:bluegrass -tag:instrumental    # Bluegrass but not instrumentals
-artist:george jones -lyrics:drinking
--key:C                             # Exclude songs in C
 ```
+
+**Facet UI**: the search page and the landing page share one-tap facet
+chips (Instrumentals/Gospel/Old-Time/Waltzes/Jam-Friendly) plus a
+Chords popover; all of them write syntax into the search box (helpers in
+`search-query.js`) so the box stays the single source of truth.
 
 **Chord search**: Find songs with specific Nashville numbers
 ```

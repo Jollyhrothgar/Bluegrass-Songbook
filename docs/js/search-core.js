@@ -417,7 +417,6 @@ const FALLBACK_PREFIX_MAP = {
     'title:': 'title',
     'lyrics:': 'lyrics', 'l:': 'lyrics',
     'composer:': 'composer', 'writer:': 'composer',
-    'key:': 'key', 'k:': 'key',
     'chord:': 'chord', 'c:': 'chord',
     'prog:': 'prog', 'p:': 'prog',
     'tag:': 'tag', 't:': 'tag'
@@ -471,7 +470,6 @@ export function parseSearchQuery(query) {
         titleFilter: null,      // title search
         lyricsFilter: null,     // lyrics search
         composerFilter: null,   // composer/writer search
-        keyFilter: null,        // musical key search
         excludeTags: []         // the one supported negation: -tag:X
     };
 
@@ -532,16 +530,6 @@ export function parseSearchQuery(query) {
             case 'composer':
                 result.composerFilter = value.toLowerCase();
                 break;
-            case 'key': {
-                // A key is one token; anything after it goes back to text
-                // search ("key:G wagon" finds G songs matching "wagon")
-                const [keyTok, ...restKey] = value.split(/\s+/);
-                result.keyFilter = keyTok.toUpperCase();
-                if (restKey.length) {
-                    result.textTerms.push(...restKey.map(t => t.toLowerCase()));
-                }
-                break;
-            }
             case 'chord':
                 result.chordFilters.push(...value.split(',').map(c => c.trim()).filter(c => c));
                 break;
@@ -696,7 +684,7 @@ export function search(query, options = {}) {
 
     const {
         textTerms, chordFilters, progressionFilter, tagFilters,
-        artistFilter, titleFilter, lyricsFilter, composerFilter, keyFilter,
+        artistFilter, titleFilter, lyricsFilter, composerFilter,
         excludeTags
     } = parseSearchQuery(query);
 
@@ -744,9 +732,6 @@ export function search(query, options = {}) {
             return false;
         }
         if (composerFilter && !(song.composer || '').toLowerCase().includes(composerFilter)) {
-            return false;
-        }
-        if (keyFilter && (song.key || '').toUpperCase() !== keyFilter) {
             return false;
         }
 
@@ -835,7 +820,6 @@ export function search(query, options = {}) {
     if (artistFilter) filters.push(`artist: "${artistFilter}"`);
     if (titleFilter) filters.push(`title: "${titleFilter}"`);
     if (composerFilter) filters.push(`by: "${composerFilter}"`);
-    if (keyFilter) filters.push(`key: ${keyFilter}`);
     if (chordFilters.length > 0) filters.push(`chords: ${chordFilters.join(', ')}`);
     if (progressionFilter && progressionFilter.length > 0) filters.push(`prog: ${progressionFilter.join('-')}`);
     if (tagFilters.length > 0) filters.push(`tags: ${tagFilters.map(formatTagName).join(', ')}`);
@@ -860,7 +844,6 @@ export function search(query, options = {}) {
             has_tag: tagFilters.length > 0,
             has_chord: chordFilters.length > 0,
             has_progression: !!progressionFilter,
-            has_key: !!keyFilter,
             has_lyrics: !!lyricsFilter
         }
     };
@@ -1470,11 +1453,6 @@ export function trackSearch(query) {
 // single source of truth, so typing and clicking can't disagree.
 // ---------------------------------------------------------------------------
 
-// Common jam keys, laid out 4-per-row in the popover grid
-const FACET_KEYS = ['G', 'A', 'C', 'D', 'E', 'F', 'Bb', 'B', 'Am', 'Bm', 'Dm', 'Em'];
-
-let keyPillRoot = null;
-let keyPillApi = null;
 let chordsPillRoot = null;
 let chordsPillApi = null;
 
@@ -1490,50 +1468,11 @@ function applyFacetQuery(query) {
 /** Reflect the query's key / chord / prog terms in the pills */
 function syncFacetPills() {
     if (!searchInputEl) return;
-    const { keyFilter, chordFilters, progressionFilter } = parseSearchQuery(searchInputEl.value);
-
-    if (keyPillApi) {
-        const display = FACET_KEYS.find(k => k.toUpperCase() === keyFilter) || keyFilter;
-        keyPillApi.setLabel(keyFilter ? `Key: ${display}` : 'Key');
-    }
-    keyPillRoot?.classList.toggle('facet-active', !!keyFilter);
-    keyPillRoot?.querySelectorAll('.pill-key-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.key.toUpperCase() === keyFilter);
-    });
+    const { chordFilters, progressionFilter } = parseSearchQuery(searchInputEl.value);
 
     const chordsActive = chordFilters.length > 0 || (progressionFilter || []).length > 0;
     if (chordsPillApi) chordsPillApi.setLabel(chordsActive ? 'Chords ✓' : 'Chords…');
     chordsPillRoot?.classList.toggle('facet-active', chordsActive);
-}
-
-function buildKeyFacet(popover, api) {
-    const grid = document.createElement('div');
-    grid.className = 'pill-key-grid';
-    FACET_KEYS.forEach(k => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'pill-key-btn';
-        btn.dataset.key = k;
-        btn.textContent = k;
-        btn.addEventListener('click', () => {
-            applyFacetQuery(setFieldTerm(searchInputEl.value, 'key', k));
-            api.close();
-        });
-        grid.appendChild(btn);
-    });
-    popover.appendChild(grid);
-
-    const anyKey = document.createElement('button');
-    anyKey.type = 'button';
-    anyKey.className = 'pill-popover-item facet-clear';
-    anyKey.textContent = 'Any key';
-    anyKey.addEventListener('click', () => {
-        applyFacetQuery(setFieldTerm(searchInputEl.value, 'key', ''));
-        api.close();
-    });
-    popover.appendChild(anyKey);
-
-    syncFacetPills();
 }
 
 function buildChordsFacet(popover, api) {
@@ -1591,11 +1530,6 @@ function prefillChordsFacet() {
  */
 function initSearchFacets(container) {
     if (!container) return;
-
-    keyPillRoot = pill('Key', buildKeyFacet, { title: 'Filter by key' });
-    keyPillRoot.classList.add('search-facet-pill');
-    keyPillApi = keyPillRoot.pillApi;
-    container.appendChild(keyPillRoot);
 
     chordsPillRoot = pill('Chords…', buildChordsFacet, { title: 'Filter by chords or progression' });
     chordsPillRoot.classList.add('search-facet-pill');

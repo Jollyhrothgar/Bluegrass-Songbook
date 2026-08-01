@@ -120,20 +120,11 @@ describe('parseSearchQuery', () => {
         });
     });
 
-    describe('key filter', () => {
-        it('parses key filter', () => {
+    describe('key: is not an operator (keys are transposable)', () => {
+        it('treats key: as plain text', () => {
             const result = parseSearchQuery('key:G');
-            expect(result.keyFilter).toBe('G');
-        });
-
-        it('normalizes key to uppercase', () => {
-            const result = parseSearchQuery('key:g');
-            expect(result.keyFilter).toBe('G');
-        });
-
-        it('parses key shorthand k:', () => {
-            const result = parseSearchQuery('k:Am');
-            expect(result.keyFilter).toBe('AM');
+            expect(result.keyFilter).toBeUndefined();
+            expect(result.textTerms).toEqual(['key:g']);
         });
     });
 
@@ -195,7 +186,7 @@ describe('parseSearchQuery', () => {
         });
 
         it('treats removed negations as plain text, not operators', () => {
-            for (const q of ['-artist:hank', '-title:drinking', '-lyrics:sad', '-key:C', '-chord:VII']) {
+            for (const q of ['-artist:hank', '-title:drinking', '-lyrics:sad', '-chord:VII']) {
                 const result = parseSearchQuery(q);
                 expect(result.textTerms).toEqual([q.toLowerCase()]);
                 expect(result.excludeTags).toEqual([]);
@@ -234,19 +225,6 @@ describe('parseSearchQuery', () => {
         });
     });
 
-    describe('key: is a single token', () => {
-        it('returns the tail to text search', () => {
-            const result = parseSearchQuery('key:G wagon');
-            expect(result.keyFilter).toBe('G');
-            expect(result.textTerms).toEqual(['wagon']);
-        });
-
-        it('merges spillover with leading text', () => {
-            const result = parseSearchQuery('blue key:G wagon');
-            expect(result.keyFilter).toBe('G');
-            expect(result.textTerms).toEqual(['blue', 'wagon']);
-        });
-    });
 
     describe('combined filters', () => {
         it('parses multiple filters', () => {

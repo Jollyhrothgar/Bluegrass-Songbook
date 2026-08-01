@@ -17,7 +17,6 @@ export const FIELD_ALIASES = {
     title: ['title'],
     lyrics: ['lyrics', 'l'],
     composer: ['composer', 'writer'],
-    key: ['key', 'k'],
     chord: ['chord', 'c'],
     prog: ['prog', 'p'],
     tag: ['tag', 't']
