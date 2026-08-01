@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "The First Noel",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 13,
+  "core": false,
+  "artists": [
+   "Michael Martin Murphey",
+   "Andrea Zonn",
+   "David Grier",
+   "Peter Ostroushko"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:02:48",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 1446961,
+  "song_id": 28891,
+  "song_name": "The First Noel",
+  "artist_id": 933,
+  "artist_name": "Misc Christmas",
+  "type": "Chords",
+  "part": "",
+  "version": 5,
+  "common_version": 1,
+  "votes": 876,
+  "difficulty": "novice",
+  "rating": 4.80933,
+  "date": "1386806401",
+  "status": "approved",
+  "preset_id": 36798,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p0/media/cover/artist/8/8098662f1fec03c4e12ffd240e7bfe75/misc-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1702647618,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n[tab]    [ch]G[/ch]       [ch]D[/ch]\r\nThe first Noel[/tab]\r\n[tab]    [ch]C[/ch]          [ch]G[/ch]\r\nThe angels did say[/tab]\r\n[tab]       [ch]C[/ch]\r\nWas to certain poor[/tab]\r\n[tab][ch]G/B[/ch]          [ch]C[/ch]         [ch]D[/ch]    [ch]G[/ch]\r\nShepherds in fields as they lay:[/tab]\r\n[tab]   [ch]G[/ch]            [ch]D[/ch]\r\nIn fields where they[/tab]\r\n[tab]    [ch]C[/ch]             [ch]G[/ch]\r\nLay keeping their sheep[/tab]\r\n[tab]     [ch]C[/ch]             [ch]G/B[/ch]        [ch]C[/ch]   [ch]D[/ch]  [ch]G[/ch]\r\nOn a cold winter's night that was so deep.[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]G[/ch]    [ch]D[/ch]    [ch]C[/ch]    [ch]G[/ch]\r\nNoel Noel, Noel Noel[/tab]\r\n[tab][ch]C[/ch]           [ch]G/B[/ch]     [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\nBorn is the King of Israel.[/tab]\r\n\r\n[Verse 2]\r\n[tab]     [ch]G[/ch]      [ch]D[/ch]\r\nThey looked up[/tab]\r\n[tab]    [ch]C[/ch]     [ch]G[/ch]\r\nAnd saw a star[/tab]\r\n[tab]        [ch]C[/ch]      [ch]G/B[/ch]     [ch]C[/ch]    [ch]D[/ch]    [ch]G[/ch]\r\nShining in the east beyond them far:[/tab]\r\n[tab]    [ch]G[/ch]      [ch]D[/ch]\r\nAnd to the earth[/tab]\r\n[tab]   [ch]C[/ch]          [ch]G[/ch]\r\nIt gave great light[/tab]\r\n[tab]    [ch]C[/ch]         [ch]G/B[/ch]          [ch]C[/ch]  [ch]D[/ch]    [ch]G[/ch]\r\nAnd so it continued both day and night.[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]G[/ch]    [ch]D[/ch]    [ch]C[/ch]    [ch]G[/ch]\r\nNoel Noel, Noel Noel[/tab]\r\n[tab][ch]C[/ch]           [ch]G/B[/ch]     [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\nBorn is the King of Israel.[/tab]\r\n\r\n[Verse 3]\r\n[tab]    [ch]G[/ch]         [ch]D[/ch]\r\nAnd by the light[/tab]\r\n[tab]    [ch]C[/ch]        [ch]G[/ch]\r\nOf that same star[/tab]\r\n[tab]      [ch]C[/ch]        [ch]G/B[/ch]           [ch]C[/ch]   [ch]D[/ch]    [ch]G[/ch]\r\nThree wise men came from the country far;[/tab]\r\n[tab]   [ch]G[/ch]          [ch]D[/ch]\r\nTo seek for a King[/tab]\r\n[tab]    [ch]C[/ch]       [ch]G[/ch]\r\nWas their intent,[/tab]\r\n[tab]       [ch]C[/ch]          [ch]G/B[/ch]       [ch]C[/ch]   [ch]D[/ch]    [ch]G[/ch]\r\nAnd to follow the star wherever it went.[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]G[/ch]    [ch]D[/ch]    [ch]C[/ch]    [ch]G[/ch]\r\nNoel Noel, Noel Noel[/tab]\r\n[tab][ch]C[/ch]           [ch]G/B[/ch]     [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\nBorn is the King of Israel.[/tab]\r\n\r\n[Verse 4]\r\n[tab]     [ch]G[/ch]    [ch]D[/ch]\r\nThis star drew nigh[/tab]\r\n[tab]    [ch]C[/ch]        [ch]G[/ch]\r\nTo the north-west;[/tab]\r\n[tab]     [ch]C[/ch]     [ch]G/B[/ch]     [ch]C[/ch]    [ch]D[/ch]  [ch]G[/ch]\r\nO'er Bethlehem it took its rest,[/tab]\r\n[tab]    [ch]G[/ch]        [ch]D[/ch]\r\nAnd there it did[/tab]\r\n[tab]     [ch]C[/ch]        [ch]G[/ch]\r\nBoth stop and stay,[/tab]\r\n[tab]      [ch]C[/ch]        [ch]G/B[/ch]         [ch]C[/ch] [ch]D[/ch]  [ch]G[/ch]\r\nRight over the place where Jesus lay.[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]G[/ch]    [ch]D[/ch]    [ch]C[/ch]    [ch]G[/ch]\r\nNoel Noel, Noel Noel[/tab]\r\n[tab][ch]C[/ch]           [ch]G/B[/ch]     [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\nBorn is the King of Israel.[/tab]\r\n\r\n[Verse 5]\r\n[tab]     [ch]G[/ch]       [ch]D[/ch]\r\nThen entered in[/tab]\r\n[tab]      [ch]C[/ch]        [ch]G[/ch]\r\nThose wise men three,[/tab]\r\n[tab]     [ch]C[/ch]      [ch]G/B[/ch]  [ch]C[/ch]    [ch]D[/ch]     [ch]G[/ch]\r\nFell reverently upon their knee,[/tab]\r\n[tab]    [ch]G[/ch]       [ch]D[/ch]\r\nAnd offered there[/tab]\r\n[tab]       [ch]C[/ch]  [ch]G[/ch]\r\nIn his presence[/tab]\r\n[tab]      [ch]C[/ch]        [ch]G/B[/ch]       [ch]C[/ch]   [ch]D[/ch]    [ch]G[/ch]\r\nTheir gold and myrrh and frankincense.[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]G[/ch]    [ch]D[/ch]    [ch]C[/ch]    [ch]G[/ch]\r\nNoel Noel, Noel Noel[/tab]\r\n[tab][ch]C[/ch]           [ch]G/B[/ch]     [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\nBorn is the King of Israel.[/tab]\r\n\r\n[Verse 6]\r\n[tab]     [ch]G[/ch]      [ch]D[/ch]\r\nThen let us all[/tab]\r\n[tab]     [ch]C[/ch]   [ch]G[/ch]\r\nWith one accord[/tab]\r\n[tab]     [ch]C[/ch]       [ch]G/B[/ch]      [ch]C[/ch]   [ch]D[/ch]    [ch]G[/ch]\r\nSing praises to our heavenly Lord,[/tab]\r\n[tab]     [ch]G[/ch]    [ch]D[/ch]\r\nThat hath made heav'n[/tab]\r\n[tab]    [ch]C[/ch]        [ch]G[/ch]\r\nAnd earth of nought,[/tab]\r\n[tab]    [ch]C[/ch]        [ch]G/B[/ch]       [ch]C[/ch]   [ch]D[/ch]    [ch]G[/ch]\r\nAnd with his blood mankind has bought.[/tab]\r\n\r\n[Chorus]\r\n[tab]  [ch]G[/ch]    [ch]D[/ch]    [ch]C[/ch]    [ch]G[/ch]\r\nNoel Noel, Noel Noel[/tab]\r\n[tab][ch]C[/ch]           [ch]G/B[/ch]     [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\nBorn is the King of Israel.[/tab]\r\n\r\n[tab]  [ch]G[/ch]    [ch]D[/ch]    [ch]C[/ch]    [ch]G[/ch]\r\nNoel Noel, Noel Noel[/tab]\r\n[tab][ch]C[/ch]           [ch]G/B[/ch]     [ch]C[/ch] [ch]D[/ch] [ch]G[/ch]\r\nBorn is the King of Israel.[/tab]"
+}

@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "The Fall",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": true,
+  "artists": [
+   "Mike Marshall",
+   "The Avett Brothers",
+   "Elliott BROOD",
+   "Darol Anger"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:02:31",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 50
+ },
+ "candidate": null,
+ "content": null
+}

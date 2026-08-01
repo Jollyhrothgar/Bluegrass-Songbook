@@ -1,0 +1,14 @@
+id: black-jack-county-chains
+title: Black Jack County Chains
+artist: Del McCoury
+default_key: Em
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mcb-black-jack-county-chains.txt
+    source_url: https://docs.google.com/document/d/1YR97q5cx_NeCvY8JWlm3ERvUE1AP-RtynYefs5GpeAA/edit?usp=sharing
+    imported_at: '2026-08-01'

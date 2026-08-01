@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Going to Georgia",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": true,
+  "artists": [
+   "Wade Mainer",
+   "The Gordons",
+   "J.E. Mainer",
+   "Ralph Stanley"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:01:25",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 996140,
+  "song_id": 103004,
+  "song_name": "Going To Georgia",
+  "artist_id": 6238,
+  "artist_name": "The Mountain Goats",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 316,
+  "difficulty": "novice",
+  "rating": 4.86335,
+  "date": "1287532801",
+  "status": "approved",
+  "preset_id": 71321,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 68917
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/9/4/94898/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/6/1/6167/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1607458003,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Mountain Goats - Going to Georgia\r\nTabbed by Austincredible\r\nTune Down a Half Step\r\n\r\n\r\nChords:\r\n\r\n[ch]D[/ch]      xx0232\r\n[ch]Asus4[/ch]  x02230\r\n[ch]A[/ch]      x02220\r\n[ch]G6[/ch]     320030\r\n\r\n\r\n[Verse 1]\r\n\r\n[tab][ch]D[/ch]                                    [ch]Asus4[/ch]\r\nthe most remarkable thing about coming home to you is the feeling of being [/tab]\r\n[tab]   [ch]G6[/ch]\r\nin motion again[/tab]\r\n[tab][ch]D[/ch]                                  [ch]Asus4[/ch]                    [ch]G6[/ch]\r\nit's the most extraordinary feeling in the world[/tab]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab]        [ch]D[/ch]                    [ch]Asus4[/ch]                    [ch]G6[/ch]\r\ni have two big hands and a heart pumping blood and a 1967 colt .45 with a [/tab]\r\n[tab][ch]D[/ch]                            [ch]Asus4[/ch]                    [ch]G6[/ch]\r\nbusted safety catch[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab]          [ch]Asus4[/ch]    [ch]A[/ch]             [ch]D[/ch]               [ch]G6[/ch]\r\nthe world shiiiiiiiiiiines as i cross the macon county line[/tab]\r\n[tab]         [ch]D[/ch]                      [ch]Asus4[/ch]           [ch]D[/ch]\r\ngoing to georgia[/tab]\r\n\r\n\r\n[Verse 3]\r\n\r\n[tab][ch]D[/ch]                                    [ch]Asus4[/ch]                              [ch]G6[/ch]\r\nthe most remarkable thing about you standing in the doorway is that it's you[/tab]\r\nand that you're standing in the doorway\r\n[tab]        [ch]D[/ch]                     [ch]Asus4[/ch]                    [ch]G6[/ch]\r\nand you smile as you ease the gun from my hand and i'm frozen with joy right where i stand[/tab]\r\n\r\n\r\n[Verse 4]\r\n\r\n[tab]          [ch]Asus4[/ch]                  [ch]A[/ch]\r\nthe world throws its light underneath your hair[/tab]\r\n[tab]      [ch]D[/ch]                          [ch]G6[/ch]\r\nforty miles from atlanta, this is nowhere[/tab]\r\n[tab]         [ch]D[/ch]                      [ch]Asus4[/ch]           [ch]D[/ch]\r\ngoing to georgia[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab]          [ch]Asus4[/ch]    [ch]A[/ch]             [ch]D[/ch]                [ch]G6[/ch]\r\nthe world shiiiiiiiiiiines as i cross the macon county line[/tab]\r\n[tab]          [ch]D[/ch]                     [ch]Asus4[/ch]           [ch]D[/ch]\r\ngoing to georgia[/tab]"
+}

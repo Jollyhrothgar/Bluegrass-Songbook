@@ -1,0 +1,89 @@
+{
+ "wanted": {
+  "title": "The Star\u2010Spangled Banner",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 9,
+  "core": false,
+  "artists": [
+   "Mark O\u2019Connor",
+   "Dolly Parton",
+   "B\u00e9la Fleck",
+   "Alan Jackson"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:03:26",
+ "status": "accepted",
+ "validation": {
+  "tier": "traditional",
+  "score": 41.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1834872,
+  "song_id": 1753879,
+  "song_name": "The Star-Spangled Banner",
+  "artist_id": 885,
+  "artist_name": "Misc Traditional",
+  "type": "Chords",
+  "part": "",
+  "version": 6,
+  "common_version": 1,
+  "votes": 81,
+  "difficulty": "novice",
+  "rating": 4.7786,
+  "date": "1460464630",
+  "status": "approved",
+  "preset_id": 33153,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [
+    {
+     "join_field": "/",
+     "artist": {
+      "id": 10669,
+      "name": "Francis Scott Key"
+     }
+    },
+    {
+     "join_field": ", ",
+     "artist": {
+      "id": 13412,
+      "name": "John Stafford Smith"
+     }
+    }
+   ],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p0/media/cover/artist/8/8f92475bb203d60e25db7724ce2b6d5b/misc-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1575996618,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[tab]  [ch]G[/ch]       [ch]D[/ch]   [ch]Em[/ch]   [ch]B7[/ch]     [ch]Em[/ch]        [ch]A7[/ch] [ch]D[/ch]\r\nO say can you see, by the dawn's early light,[/tab]\r\n[tab][ch]D7[/ch]      [ch]G[/ch]          [ch]D7[/ch]            [ch]G[/ch]\r\nWhat so proudly we hailed at the twilight's last gleaming,[/tab]\r\n\r\n[tab]            [ch]G[/ch]           [ch]D[/ch]      [ch]Em[/ch]    [ch]B7[/ch]          [ch]Em[/ch]  [ch]A7[/ch]   [ch]D[/ch]\r\nWhose broad stripes and bright stars through the perilous fight,[/tab]\r\n[tab][ch]D7[/ch]       [ch]G[/ch]           [ch]D7[/ch]               [ch]G[/ch]\r\nO'er the ramparts we watched, were so gallantly streaming?[/tab]\r\n\r\n[tab]        [ch]G[/ch]                             [ch]D[/ch]           [ch]D7[/ch]\r\nAnd the rockets' red glare, the bombs bursting in air,[/tab]\r\n[tab]     [ch]G[/ch]                 [ch]D[/ch]              [ch]Em[/ch]       [ch]A7[/ch]    [ch]D[/ch]\r\nGave proof through the night that our flag was still there;[/tab]\r\n\r\n[tab][ch]D7[/ch] [ch]G[/ch]             [ch]C[/ch]        [ch]E7[/ch]   [ch]Am[/ch] [ch]C[/ch]   [ch]Am[/ch]  [ch]G5[/ch] [ch]D[/ch]\r\nO  say does that star-spangled banner yet wa-ve[/tab]\r\n[tab][ch]D7[/ch]       [ch]Em[/ch]             [ch]G[/ch]     [ch]Em[/ch]  [ch]D[/ch]    [ch]G[/ch]    [ch]D[/ch]      [ch]G[/ch]\r\nO'er the land of the freeeeee and the home of the brave?[/tab]"
+}

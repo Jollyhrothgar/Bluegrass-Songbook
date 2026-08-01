@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Maggie\u2019s Farm",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": true,
+  "artists": [
+   "Charlie Daniels",
+   "John Hartford",
+   "The Charlie Daniels Band",
+   "Mountain Heart"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:01:35",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 66570,
+  "song_id": 140112,
+  "song_name": "Maggies Farm",
+  "artist_id": 10212,
+  "artist_name": "Bob Dylan",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 226,
+  "difficulty": "novice",
+  "rating": 4.74413,
+  "date": "1062028800",
+  "status": "approved",
+  "preset_id": 5543,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 3654
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/4/6/4683/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/4/9/49/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1596371562,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n| [ch]G[/ch] | % | % | % |\r\n\r\n\r\n[Verse 1]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work on Maggie's farm no more[/tab]\r\n[tab]      [ch]G[/ch]\r\nNo, I ain't gonna work on Maggie's farm no more[/tab]\r\n[tab]        [ch]G[/ch]\r\nWell, I wake up in the morning, hold my hands and pray for rain[/tab]\r\n[tab]        [ch]G[/ch]\r\nI got a head full of ideas that are driving me insane[/tab]\r\n[tab]       [ch]Em[/ch]                                   [ch]D[/ch]\r\nIt's a shame the way she makes me scrub the floor[/tab]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work on Maggie's farm no more[/tab]\r\n\r\n\r\n[Verse 2]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work for Maggie's brother no more[/tab]\r\n[tab]      [ch]G[/ch]\r\nNo, I ain't gonna work for Maggie's brother no more[/tab]\r\n[tab]         [ch]G[/ch]\r\nWell, he hands you a nickel, he hands you a dime[/tab]\r\n[tab]   [ch]G[/ch]\r\nHe asks you with a grin if you're having a good time[/tab]\r\n[tab]        [ch]Em[/ch]                                [ch]D[/ch]\r\nThen he fines you every time you slam the door[/tab]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work for Maggie's brother no more[/tab]\r\n\r\n\r\n[Verse 3]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work for Maggie's pa no more[/tab]\r\n[tab]      [ch]G[/ch]\r\nNo, I ain't work for Maggie's pa no more[/tab]\r\n[tab]         [ch]G[/ch]\r\nWell, he puts his cigar out in your face just for kicks[/tab]\r\n[tab]    [ch]G[/ch]\r\nHis bedroom window, it is made out of bricks[/tab]\r\n[tab]    [ch]Em[/ch]                               [ch]D[/ch]\r\nThe National Guard stands around his door[/tab]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work for Maggie's pa no more[/tab]\r\n\r\n\r\n[Interlude]\r\n[tab]| [ch]G[/ch] | % | % | % |\r\n(harp)[/tab]\r\n[tab]| [ch]G[/ch] | % | % | % |\r\n(harp)[/tab]\r\n\r\n\r\n[Verse 4]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work for Maggie's ma no more[/tab]\r\n[tab]      [ch]G[/ch]\r\nNo, I ain't gonna work for Maggie's ma no more[/tab]\r\n[tab]          [ch]G[/ch]\r\nWell, she talks to all the servants about Man and God and Law[/tab]\r\n[tab]          [ch]G[/ch]\r\nEverybody says she's the brains behind Pa[/tab]\r\n[tab]      [ch]Em[/ch]                                    [ch]D[/ch]\r\nShe's sixty-eight, but she says she's fifty-four[/tab]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work for Maggie's ma no more[/tab]\r\n\r\n\r\n[Interlude]\r\n[tab]| [ch]G[/ch] | % | % | % |\r\n(harp)[/tab]\r\n| [ch]G[/ch] | % |\r\n\r\n\r\n[Verse 5]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work on Maggie's farm no more[/tab]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work on Maggie's farm no more[/tab]\r\n[tab]        [ch]G[/ch]\r\nWell, I try my best to be just like I am[/tab]\r\n[tab]    [ch]G[/ch]\r\nBut everybody wants you to be just like them[/tab]\r\n[tab]         [ch]Em[/ch]                                   [ch]D[/ch]\r\nThey say sing while you slave, but I just get bored[/tab]\r\n[tab]  [ch]G[/ch]\r\nI ain't gonna work on Maggie's farm no more[/tab]\r\n\r\n\r\n[Outro]\r\n(repeat and fade)\r\n[tab]| [ch]G[/ch] | % | % | % |\r\n(harp)[/tab]"
+}

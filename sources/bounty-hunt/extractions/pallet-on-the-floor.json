@@ -1,0 +1,71 @@
+{
+ "wanted": {
+  "title": "Pallet on the Floor",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 10,
+  "core": true,
+  "artists": [
+   "Doc Watson",
+   "The Country Gentlemen",
+   "The Dead South",
+   "Bill Monroe"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:00:24",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 5439720,
+  "song_id": 24321165,
+  "song_name": "Pallet On The Floor",
+  "artist_id": 13902,
+  "artist_name": "Steve Mann",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1727269690",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "The late Steve Mann used to perform this at the Ash Grove and included it on his two recordings. It is probably a traditional song updated.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1727284653,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n\r\n[tab][ch]F[/ch]                                  [ch]C[/ch]\r\nHello all you good time friends of mine[/tab]\r\n[tab][ch]F[/ch]                                  [ch]C[/ch]\r\nHello all you good time friends of mine[/tab]\r\n[tab][ch]C[/ch]            [ch]E7[/ch]          [ch]F[/ch]               [ch]D[/ch]\r\nWhen I had a dollar, you treated me just fine[/tab]\r\n[tab]   [ch]C[/ch]         [ch]A[/ch]        [ch]D[/ch]     [ch]G[/ch]     [ch]C[/ch]\r\nWhere'd you go when I only had a dime?[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab][ch]F[/ch]                             [ch]C[/ch]\r\nLay me down a pallet on your floor[/tab]\r\n[tab][ch]F[/ch]                            [ch]C[/ch]    [ch]G[/ch]\r\nLay me down a pallet on your floor[/tab]\r\n[tab][ch]C[/ch]                [ch]E7[/ch]         [ch]F[/ch]             [ch]D[/ch]\r\nLay it soft and low, lay it down by your door[/tab]\r\n[tab]          [ch]C[/ch]      [ch]A[/ch]       [ch]D[/ch]     [ch]G[/ch]        [ch]C[/ch]\r\nWon't you lay me down a pallet on your floor[/tab]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab][ch]F[/ch]                                  [ch]C[/ch]\r\nIda Belle, now don't  you cry this time[/tab]\r\n[tab][ch]F[/ch]                                  [ch]C[/ch]\r\nIda Belle, now don't you cry this time[/tab]\r\n[tab][ch]C[/ch]                   [ch]E7[/ch]             [ch]F[/ch]         [ch]D[/ch]\r\nIf you'll cry for a nickle, you'll die for a dime[/tab]\r\n[tab]         [ch]C[/ch]          [ch]A[/ch]         [ch]D[/ch]       [ch]G[/ch]           [ch]C[/ch]\r\nYou can cry all you want to, but your money won't mind[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab][ch]F[/ch]                            [ch]C[/ch]\r\nLay me down a pallet on your floor[/tab]\r\n[tab][ch]F[/ch]                            [ch]C[/ch]    [ch]G[/ch]\r\nLay me down a pallet on your floor[/tab]\r\n[tab][ch]F[/ch]                     [ch]E7[/ch]            [ch]F[/ch]                [ch]D[/ch]\r\nWhen I come home from Atlanta and I have no where to go[/tab]\r\n[tab]          [ch]C[/ch]      [ch]A[/ch]       [ch]D[/ch]            [ch]G[/ch]\r\nWon't you lay me down a pallet on your floor[/tab]\r\n\r\n\r\n[Verse 3]\r\n\r\n[tab][ch]F[/ch]                           [ch]C[/ch]\r\nThese blues are everywhere I see[/tab]\r\n[tab]       [ch]F[/ch]                            [ch]C[/ch]\r\nI say, these bludes are everywhere I see[/tab]\r\n[tab][ch]C[/ch]                      [ch]E7[/ch]              [ch]F[/ch]             [ch]D[/ch]\r\nThese blues are all around me, they're everywhere I see[/tab]\r\n[tab]      [ch]C[/ch]             [ch]A[/ch]          [ch]D[/ch]        [ch]G[/ch]             [ch]C[/ch]\r\nThese blues are all around, but no ones got them like me[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab][ch]F[/ch]                             [ch]C[/ch]\r\nLay me down a pallet on your floor[/tab]\r\n[tab][ch]F[/ch]                            [ch]C[/ch]    [ch]G[/ch]\r\nLay me down a pallet on your floor[/tab]\r\n[tab][ch]C[/ch]                [ch]E7[/ch]         [ch]F[/ch]             [ch]D[/ch]\r\nLay it soft and low, lay it down by your door[/tab]\r\n[tab]          [ch]C[/ch]      [ch]A[/ch]       [ch]D[/ch]     [ch]G[/ch]        [ch]C[/ch]\r\nWon't you lay me down a pallet on your floor.[/tab]"
+}

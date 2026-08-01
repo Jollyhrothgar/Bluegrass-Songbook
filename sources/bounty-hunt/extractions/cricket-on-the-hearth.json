@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Cricket on the Hearth",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 9,
+  "core": false,
+  "artists": [
+   "Country Ham",
+   "Steve Kaufman",
+   "Hickory Wind",
+   "Lost & Found"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:03:07",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

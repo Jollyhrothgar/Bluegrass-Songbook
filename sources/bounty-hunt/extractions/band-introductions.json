@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Band Introductions",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": true,
+  "artists": [
+   "The Seldom Scene",
+   "The Stanley Brothers",
+   "Ralph Stanley",
+   "The Earls of Leicester"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:01:11",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 1
+ },
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,91 @@
+# title: O Come All Ye Faithful
+# artist: Misc Christmas
+# source_url: https://tabs.ultimate-guitar.com/tab/misc-christmas/o-come-all-ye-faithful-chords-1445917
+# fetched_at: 2026-08-01T11:02:43
+
+---------------------------------------------------------------------------
+                O’ Come All Ye Faithful
+---------------------------------------------------------------------------
+
+Traditional 18th century Christmas carol that has been attributed to various 
+authors, including John Francis Wade (1711–1786), John Reading (1645–1692), 
+King John IV of Portugal (1604–1656), and anonymous monks.
+(https://en.wikipedia.org/wiki/O_Come,_All_Ye_Faithful)
+
+Tabbed by: maguri
+Tuning: Standard
+
+Listen to this Tab (UG shot):
+https://www.ultimate-guitar.com/shot/maguri/839674064
+
+---------------------------------------------------------------------------
+
+CHORDS
+          E-A-D-G-B-e
+A/C#      x-4-2-2-2-0
+D/A       x-0-0-2-3-2
+A/E       x-x-2-2-2-0 or 0-x-2-2-2-0
+E/G#      4-x-2-1-0-0
+D/F#      2-x-0-2-3-2 
+
+---------------------------------------------------------------------------
+
+[Verse 1]
+  D           A
+O Come All Ye Faithful
+D  A/C# D   G  D/A A
+Joyful  and trium--phant,
+  Bm   A   E A D  A/C# D  A/E E   A
+O come ye, O come ye   to Be--thlehem
+D    A7  D G    D
+Come and behold Him,
+A    D   E7      A
+Born the King of Angels;
+  D     A   D  G D
+O come, let us a-dore Him,
+  D     A   D   A7 D/A  A
+O come, let us  a--dore Him,
+  G/B   D/A G6 E/G# A    D/F# Em
+O come, let us a----dore Him,
+D/A  A      D
+Chri-st the Lord
+
+[Verse 2]
+  D               A
+O Sing, choirs of angels,
+D    A/C# D G D/A A
+Sing in   exulta--tion,
+Bm   A   E  A D A/C# D  A/E E    A
+Sing all ye citizens of Hea-ven above
+D  A7 D  G  D
+Glory to Go-d 
+A D E7    A
+In    the Highest
+  D     A   D  G D
+O come, let us a-dore Him,
+  D     A   D   A7 D/A  A
+O come, let us  a--dore Him,
+D G/B   D/A G6 E/G# A    D/F# Em
+O come, let us a----dore Him,
+D/A  A      D
+Chri-st the Lord
+
+[Verse 2]
+    D              A
+All Hail! Lord, we greet Thee,
+D    A/C# D G   D/A A
+Born this happy mor-ning,
+  Bm A    E   A D  A/C# D  A/E E     A
+O Je-sus! for e-vermore be Thy name adored
+D    A7 D   G D
+Word of the Father
+A   D  E7      A
+now in flesh appearing;
+  D     A   D  G D
+O come, let us a-dore Him,
+  D     A   D   A7 D/A  A
+O come, let us  a--dore Him,
+D G/B   D/A G6 E/G# A    D/F# Em
+O come, let us a----dore Him,
+D/A  A      D
+Chri-st the Lord

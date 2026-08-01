@@ -1,0 +1,25 @@
+{
+ "wanted": {
+  "title": "Little Willie",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 9,
+  "core": true,
+  "artists": [
+   "Wolfe Bros.",
+   "Bobby Harrison",
+   "The Stanley Brothers",
+   "The Osborne Brothers"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:00:45",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 45
+ },
+ "candidate": null,
+ "content": null
+}

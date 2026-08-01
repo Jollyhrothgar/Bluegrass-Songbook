@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "O Come All Ye Faithful",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 15,
+  "core": false,
+  "artists": [
+   "The Louvin Brothers",
+   "Mike Marshall",
+   "Vince Gill",
+   "The Petersens"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:02:43",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "D"
+ },
+ "candidate": {
+  "id": 1445917,
+  "song_id": 28850,
+  "song_name": "O Come All Ye Faithful",
+  "artist_id": 933,
+  "artist_name": "Misc Christmas",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 85,
+  "difficulty": "intermediate",
+  "rating": 4.85687,
+  "date": "1386806401",
+  "status": "approved",
+  "preset_id": 36729,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "D",
+  "version_description": "Complete chords and lyrics / intermediate: quick changes / with split chords and suggestions for voicings.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p0/media/cover/artist/8/8098662f1fec03c4e12ffd240e7bfe75/misc-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1765031971,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "---------------------------------------------------------------------------\r\n                O\u2019 Come All Ye Faithful\r\n---------------------------------------------------------------------------\r\n\r\nTraditional 18th century Christmas carol that has been attributed to various \r\nauthors, including John Francis Wade (1711\u20131786), John Reading (1645\u20131692), \r\nKing John IV of Portugal (1604\u20131656), and anonymous monks.\r\n(https://en.wikipedia.org/wiki/O_Come,_All_Ye_Faithful)\r\n\r\nTabbed by: maguri\r\nTuning: Standard\r\n\r\nListen to this Tab (UG shot):\r\nhttps://www.ultimate-guitar.com/shot/maguri/839674064\r\n\r\n---------------------------------------------------------------------------\r\n\r\n[tab]CHORDS\r\n          E-A-D-G-B-e\r\nA/C#      x-4-2-2-2-0\r\nD/A       x-0-0-2-3-2\r\nA/E       x-x-2-2-2-0 or 0-x-2-2-2-0\r\nE/G#      4-x-2-1-0-0\r\nD/F#      2-x-0-2-3-2 [/tab]\r\n\r\n---------------------------------------------------------------------------\r\n\r\n[Verse 1]\r\n[tab]  [ch]D[/ch]           [ch]A[/ch]\r\nO Come All Ye Faithful[/tab]\r\n[tab][ch]D[/ch]  [ch]A/C#[/ch] [ch]D[/ch]   [ch]G[/ch]  [ch]D/A[/ch] [ch]A[/ch]\r\nJoyful  and trium--phant,[/tab]\r\n[tab]  [ch]Bm[/ch]   [ch]A[/ch]   [ch]E[/ch] [ch]A[/ch] [ch]D[/ch]  [ch]A/C#[/ch] [ch]D[/ch]  [ch]A/E[/ch] [ch]E[/ch]   [ch]A[/ch]\r\nO come ye, O come ye   to Be--thlehem[/tab]\r\n[tab][ch]D[/ch]    [ch]A7[/ch]  [ch]D[/ch] [ch]G[/ch]    [ch]D[/ch]\r\nCome and behold Him,[/tab]\r\n[tab][ch]A[/ch]    [ch]D[/ch]   [ch]E7[/ch]      [ch]A[/ch]\r\nBorn the King of Angels;[/tab]\r\n[tab]  [ch]D[/ch]     [ch]A[/ch]   [ch]D[/ch]  [ch]G[/ch] [ch]D[/ch]\r\nO come, let us a-dore Him,[/tab]\r\n[tab]  [ch]D[/ch]     [ch]A[/ch]   [ch]D[/ch]   [ch]A7[/ch] [ch]D/A[/ch]  [ch]A[/ch]\r\nO come, let us  a--dore Him,[/tab]\r\n[tab]  [ch]G/B[/ch]   [ch]D/A[/ch] [ch]G6[/ch] [ch]E/G#[/ch] [ch]A[/ch]    [ch]D/F#[/ch] [ch]Em[/ch]\r\nO come, let us a----dore Him,[/tab]\r\n[tab][ch]D/A[/ch]  [ch]A[/ch]      [ch]D[/ch]\r\nChri-st the Lord[/tab]\r\n\r\n[Verse 2]\r\n[tab]  [ch]D[/ch]               [ch]A[/ch]\r\nO Sing, choirs of angels,[/tab]\r\n[tab][ch]D[/ch]    [ch]A/C#[/ch] [ch]D[/ch] [ch]G[/ch] [ch]D/A[/ch] [ch]A[/ch]\r\nSing in   exulta--tion,[/tab]\r\n[tab][ch]Bm[/ch]   [ch]A[/ch]   [ch]E[/ch]  [ch]A[/ch] [ch]D[/ch] [ch]A/C#[/ch] [ch]D[/ch]  [ch]A/E[/ch] [ch]E[/ch]    [ch]A[/ch]\r\nSing all ye citizens of Hea-ven above[/tab]\r\n[tab][ch]D[/ch]  [ch]A7[/ch] [ch]D[/ch]  [ch]G[/ch]  [ch]D[/ch]\r\nGlory to Go-d [/tab]\r\n[tab][ch]A[/ch] [ch]D[/ch] [ch]E7[/ch]    [ch]A[/ch]\r\nIn    the Highest[/tab]\r\n[tab]  [ch]D[/ch]     [ch]A[/ch]   [ch]D[/ch]  [ch]G[/ch] [ch]D[/ch]\r\nO come, let us a-dore Him,[/tab]\r\n[tab]  [ch]D[/ch]     [ch]A[/ch]   [ch]D[/ch]   [ch]A7[/ch] [ch]D/A[/ch]  [ch]A[/ch]\r\nO come, let us  a--dore Him,[/tab]\r\n[tab][ch]D[/ch] [ch]G/B[/ch]   [ch]D/A[/ch] [ch]G6[/ch] [ch]E/G#[/ch] [ch]A[/ch]    [ch]D/F#[/ch] [ch]Em[/ch]\r\nO come, let us a----dore Him,[/tab]\r\n[tab][ch]D/A[/ch]  [ch]A[/ch]      [ch]D[/ch]\r\nChri-st the Lord[/tab]\r\n\r\n[Verse 2]\r\n[tab]    [ch]D[/ch]              [ch]A[/ch]\r\nAll Hail! Lord, we greet Thee,[/tab]\r\n[tab][ch]D[/ch]    [ch]A/C#[/ch] [ch]D[/ch] [ch]G[/ch]   [ch]D/A[/ch] [ch]A[/ch]\r\nBorn this happy mor-ning,[/tab]\r\n[tab]  [ch]Bm[/ch] [ch]A[/ch]    [ch]E[/ch]   [ch]A[/ch] [ch]D[/ch]  [ch]A/C#[/ch] [ch]D[/ch]  [ch]A/E[/ch] [ch]E[/ch]     [ch]A[/ch]\r\nO Je-sus! for e-vermore be Thy name adored[/tab]\r\n[tab][ch]D[/ch]    [ch]A7[/ch] [ch]D[/ch]   [ch]G[/ch] [ch]D[/ch]\r\nWord of the Father[/tab]\r\n[tab][ch]A[/ch]   [ch]D[/ch]  [ch]E7[/ch]      [ch]A[/ch]\r\nnow in flesh appearing;[/tab]\r\n[tab]  [ch]D[/ch]     [ch]A[/ch]   [ch]D[/ch]  [ch]G[/ch] [ch]D[/ch]\r\nO come, let us a-dore Him,[/tab]\r\n[tab]  [ch]D[/ch]     [ch]A[/ch]   [ch]D[/ch]   [ch]A7[/ch] [ch]D/A[/ch]  [ch]A[/ch]\r\nO come, let us  a--dore Him,[/tab]\r\n[tab][ch]D[/ch] [ch]G/B[/ch]   [ch]D/A[/ch] [ch]G6[/ch] [ch]E/G#[/ch] [ch]A[/ch]    [ch]D/F#[/ch] [ch]Em[/ch]\r\nO come, let us a----dore Him,[/tab]\r\n[tab][ch]D/A[/ch]  [ch]A[/ch]      [ch]D[/ch]\r\nChri-st the Lord[/tab]"
+}

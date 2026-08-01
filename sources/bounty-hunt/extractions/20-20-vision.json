@@ -1,0 +1,71 @@
+{
+ "wanted": {
+  "title": "20/20 Vision",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 8,
+  "core": true,
+  "artists": [
+   "David Grisman",
+   "Jimmy Martin and the Sunny Mountain Boys",
+   "Jimmy Martin",
+   "Del McCoury"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:01:06",
+ "status": "accepted",
+ "validation": {
+  "tier": "hint",
+  "score": 107.9,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": "C"
+ },
+ "candidate": {
+  "id": 3536384,
+  "song_id": 6233441,
+  "song_name": "20-20 Vision",
+  "artist_id": 100857,
+  "artist_name": "Jimmy Martin",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 11,
+  "difficulty": "novice",
+  "rating": 4.60031,
+  "date": "1611756274",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "C",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 993848
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1611756274,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "from the album \"Sunnyside of the mountain\"\r\n\r\n[Intro]\r\n[ch]C[/ch]  [ch]G7[/ch]  [ch]C[/ch]\r\n\r\n[Verse 1]\r\n[tab]  [ch]C[/ch]\r\nI been to the doctor he says I\u2019m all right[/tab]\r\n[tab]  [ch]F[/ch]                              [ch]C[/ch]\r\nI know he\u2019s lying, I\u2019m losing my sight[/tab]\r\n[tab]   [ch]F[/ch]                                   [ch]C[/ch]\r\nHe should have examined the eyes of my mind[/tab]\r\n[tab][ch]C[/ch]                [ch]G[/ch]              [ch]C[/ch]\r\n20/20 vision and walkin\u2019 \u2019round blind[/tab]\r\n\r\n[Instrumental]\r\n[ch]C[/ch]  [ch]G7[/ch]  [ch]C[/ch]\r\n\r\n[Verse 2]\r\n[tab]        [ch]C[/ch]\r\nWith my eyes wide open I lay in my bed[/tab]\r\n[tab]      [ch]F[/ch]                              [ch]C[/ch]\r\nIf it wasn\u2019t for dying, I wish I was dead[/tab]\r\n[tab]     [ch]F[/ch]                                  [ch]C[/ch]\r\nBut this is my punishment, death is too kind[/tab]\r\n[tab][ch]C[/ch]                [ch]G[/ch]              [ch]C[/ch]\r\n20/20 vision and walkin\u2019 \u2019round blind[/tab]\r\n\r\n[Instrumental]\r\n[ch]C[/ch]  [ch]G7[/ch]  [ch]C[/ch]\r\n\r\n[Verse 3]\r\n[tab][ch]C[/ch]\r\nYou just couldn\u2019t know her the way that I do[/tab]\r\n[tab]    [ch]F[/ch]                                    [ch]C[/ch]\r\nYou say that she\u2019s wicked and maybe it\u2019s true[/tab]\r\n[tab]             [ch]F[/ch]                                    [ch]C[/ch]\r\nBut there's  one thing I do know, she\u2019s no longer mine[/tab]\r\n[tab][ch]C[/ch]                [ch]G[/ch]              [ch]C[/ch]\r\n20/20 vision and walkin\u2019 \u2019round blind[/tab]\r\n\r\n[Instrumental]\r\n[ch]C[/ch]  [ch]G7[/ch]  [ch]C[/ch]\r\n\r\n[Verse 4]\r\n[tab]     [ch]C[/ch]\r\nI\u2019ve lost her, I\u2019ve lost her, oh what will I do[/tab]\r\n[tab]  [ch]F[/ch]                                        [ch]C[/ch]\r\nI bet you\u2019re not happy if she\u2019s there with you[/tab]\r\n[tab]    [ch]F[/ch]                                         [ch]C[/ch]\r\nThe eyes of your heart will have trouble like mine[/tab]\r\n[tab][ch]C[/ch]                [ch]G[/ch]              [ch]C[/ch]\r\n20/20 vision and walkin\u2019 \u2019round blind[/tab]\r\n[tab][ch]C[/ch]                [ch]G[/ch]              [ch]C[/ch]\r\n20/20 vision and walkin\u2019 \u2019round blind[/tab]"
+}
