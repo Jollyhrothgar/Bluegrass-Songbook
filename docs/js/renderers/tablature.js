@@ -1283,10 +1283,23 @@ export class TabRenderer {
 
         const beamedNotes = new Set();
 
+        // Written duration is authoritative when present: a 16th followed
+        // by a 16th REST attacks an eighth apart, so gap inference dressed
+        // it as an eighth while playback (dur-aware) sounded the true
+        // staccato 16th (old-dangerfield 23608 m12). Attack spacing remains
+        // the fallback for duration-less docs.
+        const writtenDur = (np) => {
+            const durs = (np.event?.notes || []).map(n => n.dur).filter(Boolean);
+            return durs.length ? Math.max(...durs) : null;
+        };
+        const is16thByDur = (np) => {
+            const d = writtenDur(np);
+            return d !== null && d < 240;
+        };
         const is16thNote = (note, nextNote) => {
             if (note.pos16th % 2 === 1) return true;
             if (nextNote && nextNote.pos16th - note.pos16th === 1) return true;
-            return false;
+            return is16thByDur(note);
         };
 
         beats.forEach(beatNotes => {
@@ -1342,6 +1355,30 @@ export class TabRenderer {
                     }
                 }
 
+                // Fractional secondary-beam stubs: a written 16th with no
+                // gap-1 neighbour (16th + 16th rest inside a beamed beat)
+                // still needs its second beam — drawn as a short stub, the
+                // way TablEdit engraves it.
+                const stubbed = new Set();
+                beatNotes.forEach((np, i) => {
+                    if (!is16thByDur(np)) return;
+                    const prev = beatNotes[i - 1];
+                    const next = beatNotes[i + 1];
+                    const afterNext = beatNotes[i + 2];
+                    const joinsPrev = prev && np.pos16th - prev.pos16th === 1 &&
+                        is16thNote(prev, np) && is16thNote(np, next);
+                    const joinsNext = next && next.pos16th - np.pos16th === 1 &&
+                        is16thNote(np, next) && is16thNote(next, afterNext);
+                    if (joinsPrev || joinsNext) return; // full secondary beam covers it
+                    stubbed.add(np);
+                    const stubLen = 7;
+                    const pointsLeft = i === beatNotes.length - 1;
+                    const x0 = pointsLeft ? np.x + halfStem - stubLen : np.x - halfStem;
+                    svg.appendChild(this.createRect(
+                        x0, secondBeamY - opt.beamThickness,
+                        stubLen, opt.beamThickness, opt.beamColor));
+                });
+
                 // Draw stems
                 beatNotes.forEach((np, i) => {
                     beamedNotes.add(np);
@@ -1351,7 +1388,7 @@ export class TabRenderer {
                     const next = beatNotes[i + 1];
                     const afterNext = beatNotes[i + 2];
 
-                    let hasSecondaryBeam = false;
+                    let hasSecondaryBeam = stubbed.has(np);
                     if (prev && np.pos16th - prev.pos16th === 1 && is16thNote(prev, np) && is16thNote(np, next)) {
                         hasSecondaryBeam = true;
                     }
