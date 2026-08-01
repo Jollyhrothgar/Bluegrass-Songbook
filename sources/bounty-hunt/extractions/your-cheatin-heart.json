@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Your Cheatin' Heart",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:26:10",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1415999,
+  "song_id": 170858,
+  "song_name": "Your Cheatin Heart",
+  "artist_id": 13281,
+  "artist_name": "Hank Williams",
+  "type": "Chords",
+  "part": "",
+  "version": 5,
+  "common_version": 1,
+  "votes": 195,
+  "difficulty": "novice",
+  "rating": 4.86066,
+  "date": "1378252801",
+  "status": "approved",
+  "preset_id": 57460,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 54601
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/1/217709/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/2/2/223/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1706733099,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "My first tab.\r\n\r\n\r\nYour Cheatin Heart - Hank Williams\r\n\r\n\r\nVerse 1:\r\n[tab]              [ch]G[/ch]                   [ch]C[/ch]\r\nYour cheatin' heart will make you weep[/tab]\r\n[tab]               [ch]D[/ch]              [ch]G[/ch]\r\nYou'll cry and cry and try to sleep[/tab]\r\n[tab]                [ch]G[/ch]                    [ch]C[/ch]\r\nBut sleep won't come the whole night through[/tab]\r\n[tab]              [ch]D[/ch]                  [ch]G[/ch]\r\nYour cheatin' heart will tell on you[/tab]\r\n\r\n\r\nChorus:\r\n[tab]                [ch]C[/ch]                 [ch]G[/ch]\r\nWhen tears come down like fallin' rain[/tab]\r\n[tab]              [ch]A7[/ch]               [ch]D[/ch]\r\nYou'll toss around and call my name[/tab]\r\n[tab]                [ch]G[/ch]               [ch]C[/ch]\r\nYou'll walk the floor the way I do[/tab]\r\n[tab]              [ch]D[/ch]                  [ch]G[/ch]\r\nYour cheatin' heart will tell on you[/tab]\r\n\r\n\r\n\r\n\r\nVerse 2:\r\n[tab]              [ch]G[/ch]                    [ch]C[/ch]\r\nYour cheatin' heart will pine some day[/tab]\r\n[tab]              [ch]D[/ch]               [ch]G[/ch]\r\nAnd crave the love you threw away[/tab]\r\n[tab]              [ch]G[/ch]                   [ch]C[/ch] \r\nThe time will come when you'll be blue[/tab]\r\n[tab]             [ch]D[/ch]                  [ch]G[/ch]\r\nYour cheatin heart will tell on you[/tab]\r\n\r\nChorus:\r\n[tab]                [ch]C[/ch]                 [ch]G[/ch]\r\nWhen tears come down like fallin' rain[/tab]\r\n[tab]              [ch]A7[/ch]               [ch]D[/ch]\r\nYou'll toss around and call my name[/tab]\r\n[tab]                [ch]G[/ch]               [ch]C[/ch]\r\nYou'll walk the floor the way I do[/tab]\r\n[tab]              [ch]D[/ch]                  [ch]G[/ch]\r\nYour cheatin' heart will tell on you[/tab]"
+}

@@ -1,0 +1,13 @@
+id: scotland-the-brave
+title: Scotland the Brave
+artist: The Corries
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: scotland-the-brave.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-corries/scotland-the-brave-chords-2634480
+    imported_at: '2026-08-01'

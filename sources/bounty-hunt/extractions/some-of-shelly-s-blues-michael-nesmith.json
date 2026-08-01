@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "Some of Shelly's Blues Michael Nesmith",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:14:29",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 2
+ },
+ "candidate": null,
+ "content": null
+}

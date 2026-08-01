@@ -1,0 +1,68 @@
+{
+ "wanted": {
+  "title": "I\u2019m Only Human",
+  "type": "Vocal",
+  "wanted_source": "bluegrass-lyrics"
+ },
+ "scraped_at": "2026-08-01T12:38:08",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": 0.237,
+  "bl_slug": "im-only-human",
+  "needs_review": true,
+  "tried": [
+   {
+    "id": 4023640,
+    "why": "lyric-mismatch 0.132"
+   }
+  ],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 2910278,
+  "song_id": 3737393,
+  "song_name": "Im Only Human",
+  "artist_id": 23203,
+  "artist_name": "The Ink Spots",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "novice",
+  "rating": 0,
+  "date": "1575278274",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "Based off of this video/recording: https://youtu.be/Gx6N8wIZWGE.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": false
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/7/9/79472/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1575278274,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse]\r\n[tab]         [ch]G[/ch]\r\nI'm only human[/tab]\r\n[tab]                                                 [ch]G7[/ch]\r\nI've got two arms, I've got two lips, I've got a heart[/tab]\r\n[tab]         [ch]C[/ch]\r\nI'm only human,[/tab]\r\n[tab]            [ch]C[/ch]\r\nI need your love or else my life will never start[/tab]\r\n[tab][ch]G[/ch]                 [ch]E7[/ch]          [ch]A7[/ch]\r\nIf you were mine, you could design my future at last[/tab]\r\n[tab][ch]A7[/ch]                                       [ch]D7[/ch]          [ch]G7[/ch]           [ch]D7[/ch]\r\nIf it can't be, then take it from me, my future is a thing of the past[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]         [ch]G[/ch]\r\nI'm only human[/tab]\r\n[tab]                                           [ch]G7[/ch]\r\nMust have a smile, a gentle word, a tender kiss[/tab]\r\n[tab]         [ch]C[/ch]\r\nI'm only human[/tab]\r\n[tab]         [ch]C[/ch]\r\nAnd only you can fill my heart with all I miss[/tab]\r\n[tab][ch]G7[/ch]      [ch]E7[/ch]       [ch]Am[/ch]\r\nMaybe I love you too much[/tab]\r\n[tab][ch]E7[/ch]               [ch]A7[/ch]\r\nMaybe I'm too sincere[/tab]\r\n[tab]            [ch]A7[/ch]\r\nBut can you blame me?[/tab]\r\n[tab]         [ch]D7[/ch]     [ch]G[/ch]\r\nI'm only human, dear[/tab]\r\n\r\n\r\n[Spoken Verse]\r\n[tab][ch]G[/ch]\r\n Listen here honeychild, I'm only human[/tab]\r\n[tab]                                     [ch]G7[/ch]\r\nI've got two arms, I've got two lips,  and I've got a heart[/tab]\r\n[tab]            [ch]C[/ch]\r\nI mean this, I'm only human[/tab]\r\n[tab]                                        [ch]C[/ch]\r\nAnd if I don't get your love, I know my life ain't never gonna start[/tab]\r\n[tab]          [ch]G[/ch]                    [ch]G7[/ch]                   [ch]E7[/ch]  [ch]A7[/ch]\r\nYou know, if you was only mine,  I know you could design  my future at last[/tab]\r\n[tab]     [ch]A7[/ch]                                               [ch]D7[/ch]                [ch]G7[/ch]                  [ch]D7[/ch]\r\nBut, if that can't be, then just take it from me, our future is gonna be  a thing of the past[/tab]\r\n\r\n\r\n[Chorus]\r\n[tab]         [ch]G[/ch]\r\nI'm only human[/tab]\r\n[tab]                                           [ch]G7[/ch]\r\nMust have a smile, a gentle word, a tender kiss[/tab]\r\n[tab]         [ch]C[/ch]\r\nI'm only human[/tab]\r\n[tab]         [ch]C[/ch]\r\nAnd only you can fill my heart with all I miss[/tab]\r\n[tab][ch]G7[/ch]      [ch]E7[/ch]       [ch]Am[/ch]\r\nMaybe I love you too much[/tab]\r\n[tab][ch]E7[/ch]               [ch]A7[/ch]\r\nMaybe I'm too sincere[/tab]\r\n[tab]            [ch]A7[/ch]\r\nBut can you blame me?[/tab]\r\n[tab]         [ch]D7[/ch] [ch]D[/ch]    [ch]G[/ch]\r\nI'm only hu-man, dear[/tab]"
+}

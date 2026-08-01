@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Stymied",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:17:00",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 0,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "G"
+ },
+ "candidate": {
+  "id": 5464104,
+  "song_id": 11345068,
+  "song_name": "Stymied",
+  "artist_id": 11473,
+  "artist_name": "Buffalo Tom",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 0,
+  "difficulty": "",
+  "rating": 0,
+  "date": "1728915665",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "G",
+  "version_description": "Acoustic Version Youtube : https://www.youtube.com/watch?v=EMomheMBkjc.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 1,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/1/21296/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/7/8/78032/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1728915665,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]G[/ch] [ch]G/F#[/ch] [ch]Am7[/ch] [ch]D[/ch]\r\n\r\n[Verse]\r\n[tab][ch]G[/ch]\r\nBroken[/tab]\r\n[tab]              [ch]G/F#[/ch]\r\nBy words left unspoken[/tab]\r\n[tab]                 [ch]Am7[/ch]\r\nI thought you was joking[/tab]\r\n[tab]              [ch]D[/ch]    [ch]Cadd9[/ch]\r\nThe words you say[/tab]\r\n\r\n[tab][ch]G[/ch]\r\nStymied[/tab]\r\n[tab]             [ch]G/F#[/ch]\r\nPlease come untie me[/tab]\r\n[tab]                   [ch]Am7[/ch]\r\nYou\u2032re lyin' right beside me[/tab]\r\n[tab]            [ch]D[/ch]     [ch]Cadd9[/ch]\r\nDon\u2032t lie to me[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]\r\nLying[/tab]\r\n[tab][ch]Cadd9[/ch]  [ch]Dsus2[/ch] [ch]Em[/ch]\r\nI caught you lying[/tab]\r\n[tab][ch]Cadd9[/ch]  [ch]Dsus2[/ch] [ch]Em[/ch]\r\nYou caught me trying[/tab]\r\n[tab]      [ch]Cadd9[/ch]  [ch]Dsus2[/ch]    [ch]Em[/ch]\r\nDon't let me catch you lying[/tab]\r\n\r\n[Interlude]\r\n[ch]G[/ch] [ch]G/F#[/ch] [ch]Am7[/ch] [ch]D[/ch] [ch]Cadd9[/ch]\r\n\r\n[Verse]\r\n[tab][ch]G[/ch]\r\nDaisy[/tab]\r\n[tab]            [ch]G/F#[/ch]\r\nOpen up the daisies[/tab]\r\n[tab]              [ch]Am7[/ch]\r\nAnd lay my so lazy[/tab]\r\n[tab]        [ch]D[/ch]    [ch]Cadd9[/ch]\r\nSoul to sleep[/tab]\r\n\r\n[tab][ch]G[/ch]\r\nHoping[/tab]\r\n[tab]          [ch]G/F#[/ch]\r\nI was not joking[/tab]\r\n[tab]           [ch]Am7[/ch]\r\nWas merely choking[/tab]\r\n[tab]              [ch]D[/ch]    [ch]Cadd9[/ch]\r\nThe words got caught[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]\r\nLying[/tab]\r\n[tab][ch]Cadd9[/ch]  [ch]Dsus2[/ch] [ch]Em[/ch]\r\nYou caught me lying[/tab]\r\n[tab][ch]Cadd9[/ch]  [ch]Dsus2[/ch] [ch]Em[/ch]\r\nI caught you trying[/tab]\r\n[tab]      [ch]Cadd9[/ch]  [ch]Dsus2[/ch]    [ch]Em[/ch]\r\nDon't let me catch you lying[/tab]\r\n\r\n[Interlude]\r\n[ch]G[/ch] [ch]G/F#[/ch] [ch]Am7[/ch] [ch]D[/ch] [ch]Cadd9[/ch]\r\n\r\n[Chorus]\r\n[tab][ch]Em[/ch]\r\nLying[/tab]\r\n[tab][ch]Cadd9[/ch]  [ch]Dsus2[/ch] [ch]Em[/ch]\r\nI caught you lying[/tab]\r\n[tab][ch]Cadd9[/ch]  [ch]Dsus2[/ch] [ch]Em[/ch]\r\nYou caught me trying[/tab]\r\n[tab]      [ch]Cadd9[/ch]  [ch]Dsus2[/ch]    [ch]Em[/ch]\r\nDon't let me catch you lying[/tab]\r\n\r\n[Instrumental]\r\n[ch]G[/ch] [ch]G/F#[/ch] [ch]Am7[/ch] [ch]D[/ch] [ch]Cadd9[/ch]\r\n[ch]G[/ch] [ch]G/F#[/ch] [ch]Am7[/ch] [ch]D[/ch] [ch]Cadd9[/ch]\r\n\r\n[Outro]\r\n[tab][ch]G[/ch]\r\nLazy[/tab]\r\n[tab][ch]G/F#[/ch]\r\nDaisy[/tab]\r\n[tab][ch]Am7[/ch]\r\nLazy[/tab]\r\n[tab][ch]D[/ch]\r\nDaisy[/tab]\r\n[tab][ch]Cadd9[/ch]\r\nLazy[/tab]"
+}

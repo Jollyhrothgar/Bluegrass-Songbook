@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Sweet Marie",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:17:28",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1824756,
+  "song_id": 1653099,
+  "song_name": "Sweet Marie",
+  "artist_id": 61676,
+  "artist_name": "The Walters",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 273,
+  "difficulty": "novice",
+  "rating": 4.90727,
+  "date": "1458119939",
+  "status": "approved",
+  "preset_id": 79251,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 1180283
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/7/1718967/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/152313/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1458321114,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Intro]\r\n[ch]A[/ch]  [ch]Amaj7[/ch]  [ch]A7[/ch]  [ch]D[/ch]  [ch]Bm[/ch]  [ch]D[/ch]  [ch]E[/ch]  [ch]E7[/ch]\r\n\r\n\r\n[Verse]\r\n[tab][ch]A[/ch]        [ch]Amaj7[/ch]\r\n Sweet Marie[/tab]\r\n[tab]            [ch]A7[/ch]\r\nyour beauty shines[/tab]\r\n[tab]            [ch]D[/ch]            [ch]Bm[/ch]\r\nyou are the wonder in my eyes[/tab]\r\n[tab]       [ch]D[/ch]              [ch]E[/ch]\r\nI just want to be the man [/tab]\r\n[tab]   [ch]E7[/ch]\r\nso choose me[/tab]\r\n\r\n\r\n[Verse]\r\n[tab][ch]A[/ch]          [ch]Amaj7[/ch]\r\nI make you sway[/tab]\r\n[tab]            [ch]A7[/ch]\r\nI twirl you twice [/tab]\r\n[tab]          [ch]D[/ch]                   [ch]Bm[/ch]\r\nI did the move that makes you smile[/tab]\r\n[tab]        [ch]D[/ch]                [ch]E[/ch]\r\nI just want to take your hand[/tab]\r\n[tab]    [ch]E7[/ch]\r\nand show you[/tab]\r\n\r\n\r\n[Instrumental]\r\n[ch]A[/ch] [ch]Amaj7[/ch] [ch]A7[/ch] [ch]D[/ch] [ch]Bm[/ch] [ch]D[/ch] [ch]E[/ch] [ch]E7[/ch] [ch]A[/ch]\r\n\r\n\r\n[Chorus]\r\n[tab]   [ch]Amaj7[/ch]\r\nMy love[/tab]\r\n[tab][ch]A7[/ch]   [ch]D[/ch]                [ch]Bm[/ch]    [ch]D[/ch]\r\n this night is all for you[/tab]\r\n[tab]          [ch]E[/ch]         [ch]E7[/ch]        [ch]A[/ch]\r\nand we're not gonna waste it[/tab]\r\n[tab]   [ch]Amaj7[/ch]\r\nMy sweet Marie[/tab]\r\n[tab][ch]A7[/ch]              [ch]D[/ch]          [ch]Bm[/ch]\r\nyou're the only one for me [/tab]\r\n[tab]     [ch]D[/ch]                   [ch]E[/ch]      [ch]E7[/ch]\r\nit's fate and that's the way we want it[/tab]"
+}

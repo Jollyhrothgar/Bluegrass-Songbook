@@ -1,51 +1,49 @@
-{meta: title Mule Skinner Blues}
-{meta: x_lyrics_source bluegrass-lyrics}
-{meta: x_lyrics_url https://www.bluegrasslyrics.com/song/mule-skinner-blues/}
+{meta: title Muleskinner Blues}
+{meta: artist The Cramps}
+{meta: x_source web-chords}
+{meta: x_source_file muleskinner-blues.txt}
+{meta: x_source_url https://tabs.ultimate-guitar.com/tab/the-cramps/muleskinner-blues-chords-1873264}
 
-{start_of_verse}
-Good morning captain good morning son
-Do you need another mule skinner
-Out on your new road line
+{start_of_verse: Intro}
+[E]Good morning Captain
+[G#5][E]Good morning to you
+[E]Ah ha ha ha ha haaa
 {end_of_verse}
 
-{start_of_verse}
-Well I like to work I’m rolling all the time
-Lord I like to work boy I’m rolling all the time
-I can pop my initials Right on a mule’s behind
+{start_of_verse: Verse 1}
+Uh, do you [A]need another mule skinner
+Down on your new mud [E]run
+[E]Ha haaa ha ha ha ha ha haaa
+Eh [B]hey-hey heee, He hoo, [A#5]ee  [A]ee
+[A]Ha ha ha ha haaa
+[E]Ah ha ha ha ha ha, [E]ah ha ha ha ha haaa[E]
 {end_of_verse}
 
-{start_of_verse}
-Well it’s hey little water boy bring your water ’round
-Lord it’s hey little water boy bring your water ’round
-And if you don’t like your job just set that water bucket down
+{start_of_verse: Verse 2}
+[E]Well I'm an old mule skinner, hey haw
+[E]Down from ol Ken-tuh-huh-huh-huh-huh-huh-huh-huuuh
+And I can [A]make any mule listen
+[A]Are you listenin'
+[A]Or I won't accept your [E]pay
+[E]Hey hey, Ha ha ha ha ha ha
+Yeh [B]hey-hey heee ee haw[A#5][A]
+[A]Ah ha ha ha haaa
+[E]Ah ha ha ha ha ha, [E]ah ha ha ha ha ha
 {end_of_verse}
 
-{start_of_verse}
-I work out on the new road from a dollar and a dime a day
-Lord I work out on the new road I make a dollar and a dime a day
-I’ve got three women on Saturday night Waiting to draw my pay
-{end_of_verse}
-
-{start_of_verse}
-Well I’m going to town honey what can I bring you back
-Well I’m going to town baby what can I bring you back
-Just bring a pint of good rye And a John B.Stetson hat
-{end_of_verse}
-
-{start_of_verse}
-Lord it’s raining here and it’s storming on the deep blue sea
-Lord it’s raining here and it’s storming on the deep blue sea
-Can’t no blonde headed woman make a monkey out for me
-{end_of_verse}
-
-{start_of_verse}
-If your house catches fire and there ain’t no water ’round
-If your house catches fire and there ain’t no water ’round
-Just throw your good gal out the window let your house just burn on down
-{end_of_verse}
-
-{start_of_verse}
-Well I’m leaving here and I ain’t gonna take no clothes
-I’m leaving here and I ain’t gonna take no clothes
-There may be good times in this old town but it’s better on down the road
+{start_of_verse: Verse 3}
+N.C.
+Hey, little ol water boy,
+N.C.
+Where's that water boy man?
+N.C.
+Bring that mop bucket now
+[E]Wah wah ha ha ha ha ha haa
+[A]And if you don't like your j-ob
+Then put that mop bucket [E]down
+[E]Ha ha, Ha ha ha ha ha ha
+Yeh [B]hey-hey heee ee haw [A#5]ee  [A]ee
+[A]Ah ha ha ha haaa
+[E]Ah ha ha ha ha ha, [E]ah ha ha ha ha ha
+[E]Cha cha cha, ha!
 {end_of_verse}

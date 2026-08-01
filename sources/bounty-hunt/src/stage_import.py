@@ -40,6 +40,7 @@ def _norm(t):
     t = t.lower().replace("&", " and ")
     t = re.sub(r"[^a-z0-9\s]", "", t)
     t = re.sub(r"\b(the|a|an)\b", " ", t)
+    t = re.sub(r"in\b", "ing", t)  # pickin/picking, workin/working
     return re.sub(r"\s+", " ", t).strip()
 
 

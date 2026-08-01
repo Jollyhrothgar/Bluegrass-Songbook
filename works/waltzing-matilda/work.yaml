@@ -1,0 +1,12 @@
+id: waltzing-matilda
+title: Waltzing Matilda
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: waltzing-matilda.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/waltzing-matilda-chords-484897
+    imported_at: '2026-08-01'

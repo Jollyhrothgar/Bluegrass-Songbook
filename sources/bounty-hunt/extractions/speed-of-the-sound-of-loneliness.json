@@ -1,0 +1,66 @@
+{
+ "wanted": {
+  "title": "Speed of the Sound of Loneliness",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:15:34",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1723392,
+  "song_id": 152918,
+  "song_name": "Speed Of The Sound Of Loneliness",
+  "artist_id": 11130,
+  "artist_name": "John Prine",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 316,
+  "difficulty": "",
+  "rating": 4.87583,
+  "date": "1427780891",
+  "status": "approved",
+  "preset_id": 47813,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 65317
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/3/1/31712/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/7/8/78326/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1427780891,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[tab][ch]G[/ch]   [ch]G[/ch]   [ch]C[/ch]   [ch]C[/ch]   [ch]D[/ch]   [ch]D[/ch]   [ch]G[/ch]   [ch]G[/ch]\r\n[intro][/tab]\r\n\r\n[tab][ch]G[/ch]                                       [ch]C[/ch]     \r\n  You come home late and you come home early[/tab]\r\n[tab][ch]D[/ch]                                      [ch]G[/ch]     [ch]G[/ch]\r\n  You come on big when you're feeling small[/tab]\r\n[tab][ch]G[/ch]                                           [ch]C[/ch]     \r\n  You come home straight and you come home curly[/tab]\r\n[tab][ch]D[/ch]                [ch]D7[/ch]                [ch]G[/ch]\r\n  Sometimes you don't come home at all.[/tab]\r\n\r\n[tab][ch]G[/ch]                 [ch]G[/ch]           [ch]C[/ch]          \r\n  So what in the world's come over you[/tab]\r\n[tab][ch]D[/ch]                                    [ch]G[/ch]\r\n  And what in heaven's name have you done.[/tab]\r\n[tab][ch]G[/ch]                     [ch]G[/ch]                    [ch]C[/ch]           \r\n  You've broken the speed of the sound of loneliness[/tab]\r\n[tab][ch]D[/ch]                  [ch]D7[/ch]                         [ch]G[/ch]     \r\n  You're out there running just to be on the run.[/tab]\r\n\r\n\r\n[tab][ch]G[/ch]                                    [ch]C[/ch]  \r\nWell I got a heart that burns with a fever,[/tab]\r\n[tab][ch]D[/ch]                                  [ch]G[/ch]\r\nAnd I got a worried and a jealous mind.[/tab]\r\n[tab][ch]G[/ch]                               [ch]C[/ch]   \r\nHow can a love that'll last forever,[/tab]\r\n[tab][ch]D[/ch]   [ch]D7[/ch]              [ch]G[/ch]  \r\nGet left so far behind.[/tab]\r\n\r\n[tab][ch]G[/ch]                 [ch]G[/ch]           [ch]C[/ch]          \r\n  So what in the world's come over you[/tab]\r\n[tab][ch]D[/ch]                                    [ch]G[/ch]\r\n  And what in heaven's name have you done.[/tab]\r\n[tab][ch]G[/ch]                     [ch]G[/ch]                    [ch]C[/ch]           \r\n  You've broken the speed of the sound of loneliness[/tab]\r\n[tab][ch]D[/ch]                  [ch]D7[/ch]                         [ch]G[/ch]     \r\n  You're out there running just to be on the run.[/tab]\r\n\r\n[Instrumental, same chords as one verse]\r\n\r\n[tab][ch]G[/ch]                [ch]G[/ch]                       [ch]C[/ch]  \r\nIt's a mighty mean and a dreadful sorrow,[/tab]\r\n[tab][ch]D[/ch]                             [ch]G[/ch]\r\nIt's crossed the evil line today.[/tab]\r\n[tab][ch]G[/ch]                        [ch]C[/ch]   \r\nHow can you ask about tomorrow,[/tab]\r\n[tab][ch]D[/ch]        [ch]D7[/ch]              [ch]G[/ch]  \r\nWe ain't got one word to say.[/tab]\r\n\r\n[tab][ch]G[/ch]                 [ch]G[/ch]           [ch]C[/ch]          \r\n  So what in the world's come over you[/tab]\r\n[tab][ch]D[/ch]                                    [ch]G[/ch]\r\n  And what in heaven's name have you done.[/tab]\r\n[tab][ch]G[/ch]                     [ch]G[/ch]                    [ch]C[/ch]           \r\n  You've broken the speed of the sound of loneliness[/tab]\r\n[tab][ch]D[/ch]                  [ch]D7[/ch]                         [ch]G[/ch]     \r\n  You're out there running just to be on the run.[/tab]\r\n[tab][ch]D[/ch]                  [ch]D7[/ch]                         [ch]G[/ch]     \r\n  You're out there running just to be on the run.[/tab]\r\n[tab][ch]D[/ch]                  [ch]D[/ch]                          [ch]G[/ch]\r\n  You're out there running just to be on the run[/tab]"
+}

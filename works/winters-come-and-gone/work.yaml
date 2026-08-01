@@ -1,0 +1,13 @@
+id: winters-come-and-gone
+title: Winter's Come and Gone
+artist: Gillian Welch
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: winter-s-come-and-gone.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/gillian-welch/winters-come-and-gone-chords-1120798
+    imported_at: '2026-08-01'

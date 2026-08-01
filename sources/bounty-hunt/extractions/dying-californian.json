@@ -1,0 +1,9 @@
+{
+ "wanted": {
+  "title": "Dying Californian",
+  "type": "Vocal",
+  "wanted_source": "bluegrass-lyrics"
+ },
+ "status": "error: AttributeError(\"'str' object has no attribute 'get'\")",
+ "scraped_at": "2026-08-01T12:31:02"
+}

@@ -1,0 +1,12 @@
+id: wild-mountain-thyme
+title: Wild Mountain Thyme
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: wild-mountain-thyme.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/wild-mountain-thyme-chords-1012614
+    imported_at: '2026-08-01'

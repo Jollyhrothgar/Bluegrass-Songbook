@@ -2220,9 +2220,6 @@
   "ClassicCountry",
   "Gospel"
  ],
- "all-good-times-are-past-and-gone": [
-  "Bluegrass"
- ],
  "all-grownup": [
   "ClassicCountry",
   "HonkyTonk"
@@ -4876,10 +4873,6 @@
   "ClassicCountry",
   "HonkyTonk"
  ],
- "banjo-pickin-girl": [
-  "OldTime",
-  "Bluegrass"
- ],
  "banks-of-the-arkansas": [
   "OldTime",
   "Instrumental"
@@ -6077,10 +6070,6 @@
  "black-jack-davey": [
   "Folk"
  ],
- "black-jack-davy": [
-  "Folk",
-  "OldTime"
- ],
  "black-jack-s-bar": [
   "ClassicCountry"
  ],
@@ -7239,10 +7228,6 @@
  "bring-yourself-home": [
   "ClassicCountry"
  ],
- "bringin-in-the-georgia-mail": [
-  "Bluegrass",
-  "BluegrassStandard"
- ],
  "bringing-in-the-georgia-mail": [
   "OldTime"
  ],
@@ -7430,10 +7415,6 @@
  ],
  "buckaroos": [
   "ClassicCountry"
- ],
- "buckin-mule": [
-  "OldTime",
-  "Bluegrass"
  ],
  "bucking-mule": [
   "OldTime",
@@ -9763,9 +9744,6 @@
   "OldTime",
   "Instrumental"
  ],
- "cottoneyed-joe": [
-  "OldTime"
- ],
  "cottonwood-tree": [
   "ClassicCountry"
  ],
@@ -10741,9 +10719,6 @@
  ],
  "darling-companion": [
   "ClassicCountry"
- ],
- "darling-corey": [
-  "BluegrassStandard"
  ],
  "darling-days": [
   "ClassicCountry"
@@ -12977,10 +12952,6 @@
  "drive-you-out-of-my-mind": [
   "ClassicCountry"
  ],
- "drivin-nails-in-my-coffin": [
-  "ClassicCountry",
-  "HonkyTonk"
- ],
  "driving-me-out-of-your-mind": [
   "ClassicCountry"
  ],
@@ -13041,10 +13012,6 @@
  ],
  "dumb-blonde": [
   "ClassicCountry"
- ],
- "duncan-brady": [
-  "Folk",
-  "OldTime"
  ],
  "durham-s-reel": [
   "Bluegrass",
@@ -13182,9 +13149,6 @@
  ],
  "eastbound-and-down": [
   "ClassicCountry"
- ],
- "eastbound-train": [
-  "Bluegrass"
  ],
  "easter-parade": [
   "ClassicCountry",
@@ -23154,10 +23118,6 @@
  "i-know-your-memory-well": [
   "ClassicCountry"
  ],
- "i-know-your-rider": [
-  "Folk",
-  "Americana"
- ],
  "i-know-youre-married": [
   "ClassicCountry"
  ],
@@ -25737,10 +25697,6 @@
  ],
  "i-saw-you-today": [
   "ClassicCountry"
- ],
- "i-saw-your-face-in-the-moon": [
-  "ClassicCountry",
-  "NashvilleSound"
  ],
  "i-see-a-bridge": [
   "Bluegrass",
@@ -30291,10 +30247,6 @@
   "ClassicCountry",
   "Outlaw"
  ],
- "jack-of-diamonds": [
-  "OldTime",
-  "Bluegrass"
- ],
  "jackson": [
   "ClassicCountry"
  ],
@@ -31872,6 +31824,9 @@
  ],
  "l-o-v-e-love-lyrics-chords": [
   "ClassicCountry"
+ ],
+ "la-danse-de-mardi-gras": [
+  "Folk"
  ],
  "la-la-blues": [
   "Americana"
@@ -35239,6 +35194,10 @@
  "main-street": [
   "ClassicCountry"
  ],
+ "mairis-wedding": [
+  "Folk",
+  "OldTime"
+ ],
  "maitland-black-boy": [
   "Folk"
  ],
@@ -35552,6 +35511,10 @@
  ],
  "mardi-gras-in-new-orleans": [
   "Rock"
+ ],
+ "margarets-waltz": [
+  "Folk",
+  "Waltz"
  ],
  "margie": [
   "Rock"
@@ -36974,10 +36937,6 @@
   "BluegrassStandard"
  ],
  "mule-skinner-blues-blue-yodel-no-8": [
-  "BluegrassStandard"
- ],
- "muleskinner-blues": [
-  "Bluegrass",
   "BluegrassStandard"
  ],
  "multiply-the-heartaches": [
@@ -39070,9 +39029,6 @@
  "ocean-of-diamonds-1": [
   "BluegrassStandard"
  ],
- "oceans-of-diamonds": [
-  "Bluegrass"
- ],
  "odd-man-out": [
   "ClassicCountry"
  ],
@@ -39359,6 +39315,9 @@
  "old-flames-can-t-hold-a-candle-to-you": [
   "ClassicCountry",
   "Bakersfield"
+ ],
+ "old-folks-at-home": [
+  "Folk"
  ],
  "old-frame-of-mine": [
   "ClassicCountry"
@@ -39719,10 +39678,6 @@
   "ClassicCountry",
   "Folk",
   "BluegrassStandard"
- ],
- "on-top-of-old-smoky": [
-  "Folk",
-  "OldTime"
  ],
  "on-your-way-home": [
   "ClassicCountry"
@@ -40675,6 +40630,9 @@
  "over-the-hill-1": [
   "ClassicCountry"
  ],
+ "over-the-hill-to-the-poorhouse": [
+  "Bluegrass"
+ ],
  "over-the-next-hill-we-ll-be-home": [
   "ClassicCountry"
  ],
@@ -41559,6 +41517,9 @@
  "precious-jewel": [
   "OldTime"
  ],
+ "precious-lord-take-my-hand": [
+  "Gospel"
+ ],
  "precious-memories": [
   "Gospel",
   "BluegrassStandard"
@@ -42225,6 +42186,10 @@
   "ClassicCountry",
   "Bakersfield"
  ],
+ "rebel-soldier": [
+  "Folk",
+  "OldTime"
+ ],
  "rebels-without-a-clue": [
   "ClassicCountry"
  ],
@@ -42647,6 +42612,9 @@
   "ClassicCountry",
   "NashvilleSound"
  ],
+ "rights-of-man": [
+  "OldTime"
+ ],
  "ring-of-fire": [
   "ClassicCountry",
   "BluegrassStandard"
@@ -42739,6 +42707,9 @@
  "road-to-columbus": [
   "OldTime",
   "Instrumental"
+ ],
+ "road-to-lisdoonvarna": [
+  "OldTime"
  ],
  "road-to-recovery": [
   "ClassicCountry"
@@ -43775,6 +43746,9 @@
   "ClassicCountry",
   "WesternSwing"
  ],
+ "scotland-the-brave": [
+  "Folk"
+ ],
  "sea-breeze": [
   "ClassicCountry",
   "NashvilleSound"
@@ -43915,6 +43889,9 @@
  ],
  "seeing-my-father-in-me": [
   "ClassicCountry"
+ ],
+ "seeing-nellie-home": [
+  "Folk"
  ],
  "seminole-winds": [
   "ClassicCountry"
@@ -45214,6 +45191,9 @@
  "skip-a-rope": [
   "ClassicCountry"
  ],
+ "skip-to-my-lou": [
+  "Folk"
+ ],
  "skippin-in-the-mississippi-dew": [
   "Bluegrass",
   "Folk"
@@ -46429,6 +46409,9 @@
  "speed-of-flight": [
   "ClassicCountry"
  ],
+ "speed-of-the-sound-of-loneliness": [
+  "Americana"
+ ],
  "spell-of-the-freight-train": [
   "ClassicCountry"
  ],
@@ -46662,6 +46645,10 @@
  "stay-a-little-longer-in-your-bed": [
   "ClassicCountry"
  ],
+ "stay-all-night": [
+  "WesternSwing",
+  "ClassicCountry"
+ ],
  "stay-all-night-stay-a-little-longer": [
   "ClassicCountry",
   "WesternSwing"
@@ -46735,6 +46722,10 @@
  "steps-1-and-2": [
   "Rockabilly"
  ],
+ "stepstone": [
+  "Folk",
+  "OldTime"
+ ],
  "still": [
   "ClassicCountry"
  ],
@@ -46796,6 +46787,9 @@
  "stone-s-rag": [
   "OldTime",
   "Instrumental"
+ ],
+ "stone-wall": [
+  "Bluegrass"
  ],
  "stone-walls-and-steel-bars": [
   "Bluegrass"
@@ -47056,10 +47050,6 @@
  ],
  "sugar-daddy": [
   "ClassicCountry"
- ],
- "sugar-foot-rag": [
-  "ClassicCountry",
-  "Instrumental"
  ],
  "sugar-hill": [
   "OldTime"
@@ -47661,6 +47651,9 @@
  ],
  "take-me-like-i-am": [
   "ClassicCountry"
+ ],
+ "take-me-out-to-the-ball-game": [
+  "Pop"
  ],
  "take-me-to-heaven": [
   "ClassicCountry"
@@ -50559,10 +50552,6 @@
   "Bluegrass",
   "Gospel"
  ],
- "the-old-crossroad": [
-  "Gospel",
-  "Bluegrass"
- ],
  "the-old-fiddler": [
   "Folk"
  ],
@@ -51211,6 +51200,10 @@
   "ClassicCountry",
   "Outlaw"
  ],
+ "the-waltz-you-saved-for-me": [
+  "ClassicCountry",
+  "Waltz"
+ ],
  "the-warm-red-wine": [
   "ClassicCountry",
   "HonkyTonk"
@@ -51308,6 +51301,9 @@
  "the-wind-changes": [
   "ClassicCountry",
   "Outlaw"
+ ],
+ "the-wind-that-shakes-the-barley": [
+  "OldTime"
  ],
  "the-window-up-above": [
   "ClassicCountry"
@@ -51531,6 +51527,9 @@
  ],
  "there-i-go-dreamin": [
   "ClassicCountry"
+ ],
+ "there-is-a-ship": [
+  "Folk"
  ],
  "there-is-a-time": [
   "ClassicCountry"
@@ -53309,6 +53308,10 @@
  "tonight-s-the-night": [
   "ClassicCountry"
  ],
+ "tonight-the-bottle-let-me-down": [
+  "ClassicCountry",
+  "Bakersfield"
+ ],
  "tonight-the-heartache-s-on-me": [
   "ClassicCountry"
  ],
@@ -53978,6 +53981,9 @@
   "Instrumental",
   "OldTime"
  ],
+ "tune-of-a-twenty-dollar-bill": [
+  "Bluegrass"
+ ],
  "tunnel-of-your-mind": [
   "Bluegrass"
  ],
@@ -54639,10 +54645,6 @@
   "Bluegrass",
   "Gospel"
  ],
- "wabash-cannon-ball": [
-  "ClassicCountry",
-  "BluegrassStandard"
- ],
  "wabash-cannonball": [
   "BluegrassStandard"
  ],
@@ -54931,11 +54933,6 @@
   "ClassicCountry",
   "NashvilleSound"
  ],
- "walking-in-jerusalem": [
-  "Gospel",
-  "Bluegrass",
-  "BluegrassStandard"
- ],
  "walking-in-the-moonlight": [
   "ClassicCountry"
  ],
@@ -54945,10 +54942,6 @@
  ],
  "walking-in-the-sunshine": [
   "ClassicCountry"
- ],
- "walking-my-lord-up-calvary-hill": [
-  "Gospel",
-  "Bluegrass"
  ],
  "walking-my-lord-up-calvarys-hill": [
   "Gospel",
@@ -55054,6 +55047,9 @@
  "waltzing-by-the-ohio": [
   "ClassicCountry",
   "Waltz"
+ ],
+ "waltzing-matilda": [
+  "Folk"
  ],
  "waltzing-on-top-of-the-world": [
   "ClassicCountry",
@@ -55583,6 +55579,10 @@
  "we-shall-meet-someday": [
   "Gospel",
   "ClassicCountry"
+ ],
+ "we-shall-not-be-moved": [
+  "Gospel",
+  "Folk"
  ],
  "we-shall-rise": [
   "Gospel",
@@ -57344,6 +57344,10 @@
  "where-s-willie": [
   "ClassicCountry"
  ],
+ "where-shall-i-be": [
+  "Gospel",
+  "Bluegrass"
+ ],
  "where-she-left-off": [
   "ClassicCountry"
  ],
@@ -57626,9 +57630,6 @@
  ],
  "white-fences-and-evergreen-trees": [
   "ClassicCountry"
- ],
- "white-freight-liner-blues": [
-  "Americana"
  ],
  "white-freightliner": [
   "Bluegrass"
@@ -58165,6 +58166,9 @@
  "wild-mountain-rose": [
   "ClassicCountry"
  ],
+ "wild-mountain-thyme": [
+  "Folk"
+ ],
  "wild-rose": [
   "ClassicCountry",
   "NashvilleSound"
@@ -58393,6 +58397,9 @@
  ],
  "wino-the-clown": [
   "ClassicCountry"
+ ],
+ "winters-come-and-gone": [
+  "Americana"
  ],
  "winters-night": [
   "OldTime"
@@ -59409,6 +59416,9 @@
  "you-can-hear-a-teardrop": [
   "HonkyTonk",
   "ClassicCountry"
+ ],
+ "you-can-keep-your-nine-pound-hammer": [
+  "Bluegrass"
  ],
  "you-can-lead-a-heart-to-love": [
   "ClassicCountry"
@@ -60928,6 +60938,9 @@
  ],
  "you-were-never-mine-to-lose": [
   "ClassicCountry"
+ ],
+ "you-were-on-my-mind-this-morning": [
+  "Bluegrass"
  ],
  "you-were-only-fooling": [
   "ClassicCountry",

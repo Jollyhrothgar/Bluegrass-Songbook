@@ -1,0 +1,13 @@
+id: rebel-soldier
+title: Rebel Soldier
+artist: Jamey Johnson
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: rebel-soldier.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/jamey-johnson/rebel-soldier-chords-1935685
+    imported_at: '2026-08-01'

@@ -1,0 +1,63 @@
+{
+ "wanted": {
+  "title": "Waltzing Matilda",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:22:14",
+ "status": "accepted",
+ "validation": {
+  "tier": "traditional",
+  "score": 41.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 484897,
+  "song_id": 23900,
+  "song_name": "Waltzing Matilda",
+  "artist_id": 885,
+  "artist_name": "Misc Traditional",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 155,
+  "difficulty": "",
+  "rating": 4.86335,
+  "date": "1173657601",
+  "status": "approved",
+  "preset_id": 50819,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p0/media/cover/artist/8/8f92475bb203d60e25db7724ce2b6d5b/misc-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1532695139,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Verse 1]\r\n\r\n[tab][ch]D[/ch]              [ch]A[/ch]     [ch]Bm[/ch]           [ch]G[/ch]       \r\nOnce a jolly swagman camped by a billabong[/tab]\r\n[tab][ch]D[/ch]                   [ch]A7[/ch]      \r\nUnder the shade of coolibah tree[/tab]\r\n[tab]        [ch]D[/ch]          [ch]A[/ch]           [ch]Bm[/ch]              [ch]G[/ch]\r\nAnd he sang as he watched and waited 'til his billy boiled[/tab]\r\n[tab] [ch]D[/ch]                       [ch]A7[/ch]          [ch]D[/ch]\r\nYou'll come a-waltzing Matilda with me[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab] [ch]D[/ch]                 [ch]G[/ch]          \r\nWaltzing Matilda, waltzing Matilda[/tab]\r\n[tab] [ch]D[/ch]                        [ch]A[/ch]\r\nYou'll come a waltzing Matilda with me[/tab]\r\n[tab]        [ch]D[/ch]          [ch]A[/ch]           [ch]Bm[/ch]              [ch]G[/ch]\r\nAnd he sang as he watched and waited 'til his billy boiled[/tab]\r\n[tab]  [ch]D[/ch]                      [ch]A7[/ch]          [ch]D[/ch]\r\nYou'll come a-waltzing Matilda with me[/tab]\r\n\r\n\r\n[Verse 2]\r\n\r\n[tab]      [ch]D[/ch]           [ch]A[/ch]          [ch]Bm[/ch]            [ch]G[/ch]\r\nThen down came a jumbuck to drink at that billabong[/tab]\r\n[tab][ch]D[/ch]                          [ch]A7[/ch]\r\nUp jumped the swagman and grabbed him with glee[/tab]\r\n[tab]        [ch]D[/ch]           [ch]A[/ch]          [ch]Bm[/ch]              [ch]G[/ch]\r\nAnd he sang as he shoved that jumbuck in his tucker-bag[/tab]\r\n[tab] [ch]D[/ch]                       [ch]A7[/ch]          [ch]D[/ch]\r\nYou'll come a-waltzing Matilda with me[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab] [ch]D[/ch]                 [ch]G[/ch]          \r\nWaltzing Matilda, waltzing Matilda[/tab]\r\n[tab] [ch]D[/ch]                        [ch]A[/ch]\r\nYou'll come a waltzing Matilda with me[/tab]\r\n[tab]        [ch]D[/ch]           [ch]A[/ch]          [ch]Bm[/ch]              [ch]G[/ch]\r\nAnd he sang as he shoved that jumbuck in his tucker-bag[/tab]\r\n[tab] [ch]D[/ch]                       [ch]A7[/ch]          [ch]D[/ch]\r\nYou'll come a-waltzing Matilda with me[/tab]\r\n\r\n\r\n[Verse 3]\r\n\r\n[tab]      [ch]D[/ch]              [ch]A[/ch]        [ch]Bm[/ch]              [ch]G[/ch]\r\nThen down came the squatter, mounted on his thoroughbred[/tab]\r\n[tab] [ch]D[/ch]                      [ch]A7[/ch]\r\nDown came the troopers, one, two, three[/tab]\r\n[tab]  [ch]D[/ch]                 [ch]A[/ch]            [ch]Bm[/ch]                 [ch]G[/ch]\r\nWhere's that jolly jumbuck that you've got in your tucker-bag?[/tab]\r\n[tab] [ch]D[/ch]                       [ch]A7[/ch]          [ch]D[/ch]\r\nYou'll come a-waltzing Matilda with me[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab] [ch]D[/ch]                 [ch]G[/ch]          \r\nWaltzing Matilda, waltzing Matilda[/tab]\r\n[tab] [ch]D[/ch]                        [ch]A[/ch]\r\nYou'll come a waltzing Matilda with me[/tab]\r\n[tab]  [ch]D[/ch]                 [ch]A[/ch]            [ch]Bm[/ch]                 [ch]G[/ch]\r\nWhere's that jolly jumbuck that you've got in your tucker-bag?[/tab]\r\n[tab] [ch]D[/ch]                       [ch]A7[/ch]          [ch]D[/ch]\r\nYou'll come a-waltzing Matilda with me[/tab]\r\n\r\n\r\n[Verse 4]\r\n\r\n[tab]   [ch]D[/ch]               [ch]A[/ch]               [ch]Bm[/ch]              [ch]G[/ch]\r\nSo up jumped the swagman, and he sprang into that billabong[/tab]\r\n[tab] [ch]D[/ch]                    [ch]A7[/ch]\r\nYou'll never take me alive!, said he[/tab]\r\n[tab]          [ch]D[/ch]           [ch]A[/ch]           [ch]Bm[/ch]            [ch]G[/ch]\r\nAnd his ghost may be heard as you pass by that billabong[/tab]\r\n[tab] [ch]D[/ch]                       [ch]A7[/ch]          [ch]D[/ch]\r\nYou'll come a-waltzing Matilda with me[/tab]\r\n\r\n\r\n[Chorus]\r\n\r\n[tab] [ch]D[/ch]                 [ch]G[/ch]          \r\nWaltzing Matilda, waltzing Matilda[/tab]\r\n[tab] [ch]D[/ch]                        [ch]A[/ch]\r\nYou'll come a waltzing Matilda with me[/tab]\r\n[tab]          [ch]D[/ch]           [ch]A[/ch]           [ch]Bm[/ch]            [ch]G[/ch]\r\nAnd his ghost may be heard as you pass by that billabong[/tab]\r\n[tab] [ch]D[/ch]                       [ch]A7[/ch]          [ch]D[/ch]\r\nYou'll come a-waltzing Matilda with me[/tab]\r\n[tab][ch]D[/ch]                        [ch]A7[/ch]          [ch]D[/ch]\r\nYou'll come a-waltzing Matilda with me[/tab]"
+}

@@ -1,0 +1,14 @@
+{
+ "wanted": {
+  "title": "You Don't Know My Mind Jimmy Martin",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:26:00",
+ "status": "rejected-no-title-match",
+ "validation": {
+  "results_seen": 2
+ },
+ "candidate": null,
+ "content": null
+}

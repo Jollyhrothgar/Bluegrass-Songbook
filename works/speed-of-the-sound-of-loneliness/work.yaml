@@ -1,0 +1,13 @@
+id: speed-of-the-sound-of-loneliness
+title: Speed of the Sound of Loneliness
+artist: John Prine
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: speed-of-the-sound-of-loneliness.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/john-prine/speed-of-the-sound-of-loneliness-chords-1723392
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: take-me-out-to-the-ball-game
+title: Take Me Out to the Ball Game
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: take-me-out-to-the-ball-game.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-traditional/take-me-out-to-the-ball-game-chords-653035
+    imported_at: '2026-08-01'

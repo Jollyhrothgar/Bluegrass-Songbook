@@ -1,0 +1,13 @@
+id: precious-lord-take-my-hand
+title: Precious Lord, Take My Hand
+artist: Doc Watson
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: precious-lord-take-my-hand.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/doc-watson/precious-lord-take-my-hand-chords-3753041
+    imported_at: '2026-08-01'

@@ -1,0 +1,13 @@
+id: la-danse-de-mardi-gras
+title: La Danse de Mardi Gras
+artist: The Balfa Brothers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: la-danse-de-mardi-gras.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-balfa-brothers/la-danse-de-mardi-gras-chords-1824907
+    imported_at: '2026-08-01'

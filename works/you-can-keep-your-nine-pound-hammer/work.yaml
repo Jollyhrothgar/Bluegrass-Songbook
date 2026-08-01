@@ -1,0 +1,13 @@
+id: you-can-keep-your-nine-pound-hammer
+title: You Can Keep Your Nine Pound Hammer
+artist: Josh Williams
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: you-can-keep-your-nine-pound-hammer.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/josh-williams/you-can-keep-your-nine-pound-hammer-chords-5591367
+    imported_at: '2026-08-01'

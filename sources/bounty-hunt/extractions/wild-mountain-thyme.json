@@ -1,0 +1,63 @@
+{
+ "wanted": {
+  "title": "Wild Mountain Thyme",
+  "type": "Vocal",
+  "wanted_source": "strum-machine"
+ },
+ "scraped_at": "2026-08-01T12:24:09",
+ "status": "accepted",
+ "validation": {
+  "tier": "traditional",
+  "score": 41.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1012614,
+  "song_id": 23912,
+  "song_name": "Wild Mountain Thyme",
+  "artist_id": 885,
+  "artist_name": "Misc Traditional",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 98,
+  "difficulty": "intermediate",
+  "rating": 4.81585,
+  "date": "1292544001",
+  "status": "approved",
+  "preset_id": 77380,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p0/media/cover/artist/8/8f92475bb203d60e25db7724ce2b6d5b/misc-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1292544001,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[tab]         [ch]C[/ch]      [ch]F[/ch]       [ch]C[/ch]              [ch]F[/ch]                  [ch]C[/ch]\r\nOh, the summer time is coming and the leaves are sweetly turning[/tab]\r\n\r\n[tab]         [ch]F[/ch]    [ch]C[/ch]        [ch]Am[/ch]            [ch]Dm[/ch]                 [ch]F[/ch]   \r\nAnd the wild mountain thyme  looms across the purple heather[/tab]\r\n\r\n[tab]     [ch]C[/ch]       [ch]F[/ch]       [ch]C[/ch]\r\nWill you go, Lassie, go?[/tab]\r\n\r\n[tab]     [ch]C[/ch]        [ch]F[/ch]       [ch]C[/ch]           [ch]F[/ch]             [ch]C[/ch]\r\nIf you will not go with me  I will surely find another[/tab]\r\n\r\n[tab]         [ch]F[/ch]   [ch]C[/ch]          [ch]Am[/ch]         [ch]Dm[/ch]                 [ch]F[/ch]\r\nTo pull wild mountain thyme  all across the purple heather[/tab]\r\n\r\n[tab]     [ch]C[/ch]       [ch]F[/ch]       [ch]C[/ch]\r\nWill you go, Lassie, go?[/tab]\r\n\r\n[tab]          [ch]F[/ch]            [ch]C[/ch]              [ch]F[/ch]     [ch]C[/ch]        [ch]Am[/ch]\r\nAnd we'll all go  together  to pull wild mountain thyme[/tab]\r\n\r\n[tab]      [ch]Dm[/ch]                [ch]F[/ch]             [ch]C[/ch]      [ch]F[/ch]      [ch]C[/ch]\r\nAll across the purple heather,  will you go Lassie, go?[/tab]\r\n\r\n[tab]          [ch]F[/ch]            [ch]C[/ch]              [ch]F[/ch]     [ch]C[/ch]        [ch]Am[/ch]\r\nAnd we'll all go  together  to pull wild mountain thyme[/tab]\r\n\r\n[tab]      [ch]Dm[/ch]               [ch]F[/ch]              [ch]C[/ch]      [ch]F[/ch]      [ch]C[/ch]\r\nAll across the purple heather,  will you go Lassie, go?[/tab]\r\n\r\n\r\n\r\nI have seen another tab out there, that I don't think is quite right. Here is my \r\ntake - much easier for accordion players, in my opinion."
+}

@@ -1,0 +1,13 @@
+id: over-the-hill-to-the-poorhouse
+title: Over the Hill to the Poorhouse
+artist: Flatt Scruggs
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: over-the-hill-to-the-poorhouse.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/flatt-scruggs/over-the-hill-to-the-poorhouse-chords-4611764
+    imported_at: '2026-08-01'

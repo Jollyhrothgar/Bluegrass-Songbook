@@ -1,0 +1,13 @@
+id: where-shall-i-be
+title: Where Shall I Be
+artist: Larry Sparks
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: where-shall-i-be.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/larry-sparks/where-shall-i-be-chords-4030714
+    imported_at: '2026-08-01'
