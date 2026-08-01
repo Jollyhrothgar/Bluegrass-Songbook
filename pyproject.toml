@@ -6,12 +6,21 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "aiohttp>=3.13.3",
+    # LLM tagging (batch_tag_songs.py) — imports anthropic + pydantic directly.
+    "anthropic>=0.40.0",
     "beautifulsoup4>=4.12.0",
     "flask>=3.0.0",
+    # HTTP client for strum_machine.py and fetch_chords.py.
+    "httpx>=0.27.0",
     "matplotlib>=3.10.7",
     "numpy>=2.2.6",
     "playwright>=1.58.0",
+    "pydantic>=2.0.0",
     "pyphen>=0.17.2",
+    # Core scripts (strum_machine, batch_tag_songs) read the bootstrap-provisioned
+    # .env, so this must stay in the base deps: `uv sync` prunes anything that
+    # lives only in an extra.
+    "python-dotenv>=1.0.0",
     "pyyaml>=6.0.0",
     "rapidfuzz>=3.14.3",
     "requests>=2.32.5",
@@ -19,27 +28,28 @@ dependencies = [
     "snowballstemmer>=3.0.0",
 ]
 
-[project.optional-dependencies]
+# Dev tooling lives in a PEP 735 dependency group, not an extra: uv installs
+# default groups on a plain `uv sync`, so the documented `uv run pytest` works
+# without flags. An extra would be pruned on every sync (see python-dotenv).
+[dependency-groups]
 dev = [
     "pytest>=7.0.0",
     "pytest-cov>=4.0.0",
 ]
-analysis = [
-    "matplotlib>=3.7.0",
-    "numpy>=1.24.0",
-]
+
+# Extras are for genuinely optional features only. Anything the core scripts
+# import belongs in [project.dependencies] above — extras are not installed by
+# a plain `uv sync`, and packages left only in one get pruned by it.
+[project.optional-dependencies]
 analytics = [
     "jupyter>=1.0.0",
     "nbstripout>=0.8.0",
     "pandas>=2.0.0",
     "psycopg2-binary>=2.9.0",
-    "python-dotenv>=1.0.0",
     "supabase>=2.0.0",
-    "matplotlib>=3.7.0",
 ]
 search = [
     "sentence-transformers>=2.2.0",
-    "numpy>=1.24.0",
 ]
 
 # Note: This project doesn't use a traditional package structure.

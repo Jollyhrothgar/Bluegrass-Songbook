@@ -56,7 +56,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
 
       - name: Run parser tests (pytest)
-        run: uv run --extra dev pytest -q
+        run: uv run pytest -q
 
       # Exercise the real index rebuild on the runner (same command and
       # Python as the deploy job) so a builder regression fails the PR
