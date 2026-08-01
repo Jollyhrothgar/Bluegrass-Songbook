@@ -173,9 +173,19 @@ Bluegrass-Songbook/
 
 ## Works Architecture
 
-Note: works are generated from sources. We are actively developing right now, and we should treat
-works as emphemeral - e.g. built from sources. E.g. if there is a banjo tab error - do not correct
-the work, instead correct the parser (do this interactively with the user).
+**Works are now authoritative (Mike, 2026-07-31).** Source regeneration is
+finished: `works/` is the durable, hand-editable store. Metadata fixes
+(artist, composers, tags, titles) belong DIRECTLY in `works/*/work.yaml` —
+they will not be clobbered, because nothing bulk-regenerates works from
+sources anymore. Importers still ADD works/parts (new tabs, new songs) but
+must never overwrite existing works' metadata.
+
+History: before 2026-07-31 works were treated as ephemeral parser output
+("fix the parser, not the work"), and source `artist` fields inherited
+whatever performer page a chart was scraped from — so authorship-looking
+attributions (e.g. "You Are My Sunshine ~ Johnny Cash") are scrape artifacts.
+The `artist` field means "as performed by"; authorship lives in `composers`
+(the index's `composer` comes only from work.yaml `composers`).
 
 Songs are organized in `works/`, where each work is a directory containing:
 
