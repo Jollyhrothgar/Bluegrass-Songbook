@@ -1,0 +1,13 @@
+id: two-soldiers
+title: Two Soldiers
+artist: Ricky Skaggs
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: two-soldiers.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/ricky-skaggs/two-soldiers-chords-1935513
+    imported_at: '2026-08-01'

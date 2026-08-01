@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Lazy Katie",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Jeff White",
+   "Sam Bush",
+   "Michael Cleveland",
+   "Barry Bales"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:27:37",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

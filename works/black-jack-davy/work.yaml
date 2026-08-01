@@ -1,0 +1,13 @@
+id: black-jack-davy
+title: Black Jack Davy
+artist: Steeleye Span
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: black-jack-davy.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/steeleye-span/black-jack-davy-chords-2276253
+    imported_at: '2026-08-01'

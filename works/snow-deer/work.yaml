@@ -1,0 +1,13 @@
+id: snow-deer
+title: Snow Deer
+artist: Woody Guthrie
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: snow-deer.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/woody-guthrie/snow-deer-chords-1784928
+    imported_at: '2026-08-01'

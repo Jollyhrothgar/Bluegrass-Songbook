@@ -1,0 +1,13 @@
+id: higher-ground
+title: Higher Ground
+artist: Misc Praise Songs
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: higher-ground.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-praise-songs/higher-ground-chords-1195036
+    imported_at: '2026-08-01'

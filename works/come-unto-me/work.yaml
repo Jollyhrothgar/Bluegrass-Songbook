@@ -1,0 +1,13 @@
+id: come-unto-me
+title: Come Unto Me
+artist: Misc Praise Songs
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: come-unto-me.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-praise-songs/come-unto-me-chords-2217593
+    imported_at: '2026-08-01'

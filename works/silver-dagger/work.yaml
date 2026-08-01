@@ -1,0 +1,14 @@
+id: silver-dagger
+title: Silver Dagger
+artist: Old Crow Medicine Show
+default_key: D
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: silver-dagger.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/old-crow-medicine-show/silver-dagger-chords-1805084
+    imported_at: '2026-08-01'

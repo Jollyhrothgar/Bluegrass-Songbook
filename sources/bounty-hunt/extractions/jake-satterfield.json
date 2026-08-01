@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Jake Satterfield",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "David Davis",
+   "The Warrior River Boys",
+   "Bill Monroe",
+   "James Monroe"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:27:19",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

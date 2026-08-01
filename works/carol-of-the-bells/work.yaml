@@ -1,0 +1,13 @@
+id: carol-of-the-bells
+title: Carol of the Bells
+artist: Pentatonix
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: carol-of-the-bells.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/pentatonix/carol-of-the-bells-chords-1684920
+    imported_at: '2026-08-01'

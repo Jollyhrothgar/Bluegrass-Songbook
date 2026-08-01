@@ -1,0 +1,13 @@
+id: diamond-joe
+title: Diamond Joe
+artist: Sam Bush
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: diamond-joe.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/sam-bush/diamond-joe-chords-4105015
+    imported_at: '2026-08-01'

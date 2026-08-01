@@ -1,0 +1,13 @@
+id: mississippi
+title: Mississippi
+artist: The Chicks Dixie Chicks
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: mississippi.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-chicks-dixie-chicks/mississippi-chords-1100346
+    imported_at: '2026-08-01'

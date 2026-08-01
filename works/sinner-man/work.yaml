@@ -1,0 +1,13 @@
+id: sinner-man
+title: Sinner Man
+artist: The Seekers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: sinner-man.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-seekers/sinner-man-chords-2350381
+    imported_at: '2026-08-01'

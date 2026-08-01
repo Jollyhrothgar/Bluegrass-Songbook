@@ -1,0 +1,13 @@
+id: drivin-nails-in-my-coffin
+title: Drivin’ Nails in My Coffin
+artist: Rhonda Vincent
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: drivin-nails-in-my-coffin.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/rhonda-vincent/driving-nails-in-my-coffin-chords-1859987
+    imported_at: '2026-08-01'

@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Euphoria",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "The Holy Modal Rounders",
+   "Leftover Salmon",
+   "John 5",
+   "Nitty Gritty Dirt Band"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:25:14",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "C"
+ },
+ "candidate": {
+  "id": 5425704,
+  "song_id": 24309852,
+  "song_name": "Euphoria",
+  "artist_id": 151977,
+  "artist_name": "keshi",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 61,
+  "difficulty": "",
+  "rating": 4.88128,
+  "date": "1726314352",
+  "status": "approved",
+  "preset_id": 100934,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "C",
+  "version_description": "Slightly different from the original song - some extensions are off, but this is a good, simple launchpad.",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/2/7/2737285/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/1/5/152244/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1726314352,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "[Vese 1]\r\n[tab][ch]Cmaj7[/ch]\r\nShe\u2019s toxic for the thrill of it[/tab]\r\n[tab][ch]Fmaj7[/ch]\r\nBad news but I\u2019m into it, she\u2019s all mine[/tab]\r\n[tab][ch]Cmaj7[/ch]                           [ch]Fmaj7[/ch]\r\nI chase that dragon all the time[/tab]\r\n[tab][ch]Cmaj7[/ch]\r\nShe knows how to reel me in[/tab]\r\n[tab][ch]Fmaj7[/ch]\r\nUse me up and she\u2019s gone again, oh my[/tab]\r\n[tab][ch]Cmaj7[/ch]                          [ch]Fmaj7[/ch]\r\nI stick around just for the high[/tab]\r\n\r\n[Pre-Chorus]\r\n[tab][ch]Dm7[/ch]\r\nYour touch is my favorite drug[/tab]\r\n[tab][ch]Fm[/ch]\r\nFiending for a faded love[/tab]\r\n[tab][ch]C[/ch]         [ch]Bb[/ch]     [ch]A[/ch]\r\nI\u2019m gone, all for you[/tab]\r\n\r\n[Chorus]\r\n[tab]           [ch]C[/ch]         [ch]E[/ch]\r\nTake me to euphoria, euphoria[/tab]\r\n[tab]  [ch]F[/ch]\r\nI need you in my veins[/tab]\r\n[tab]   [ch]G[/ch]                        [ch]C[/ch]         [ch]E[/ch]\r\nI crave the sweet escape of euphoria, euphoria[/tab]\r\n[tab]   [ch]F[/ch]\r\nI try to walk away[/tab]\r\n[tab]    [ch]Fm[/ch]                                  [ch]Cmaj7[/ch]\r\nCus if I stay you\u2019ll be the death of me[/tab]\r\n\r\n[Instrumental]\r\n[ch]Cmaj7[/ch]   [ch]E[/ch]\r\n\r\n[Verse 2]\r\n[tab][ch]Cmaj7[/ch]                                      [ch]Fmaj7[/ch]\r\nI know there\u2019s no such thing as a free ride[/tab]\r\n(I do, I do, I do)\r\n[tab][ch]Cmaj7[/ch]                                [ch]Fmaj7[/ch]\r\nBut when it comes to you I\u2019m down to pay the price[/tab]\r\n[tab][ch]Cmaj7[/ch]\r\nGot me cut wide open, girl I\u2019m bleeding[/tab]\r\n[tab][ch]F[/ch]\r\nI don\u2019t know why I still need it[/tab]\r\n[tab][ch]Cmaj7[/ch]                             [ch]F[/ch]\r\n   So kiss me and put me to sleep tonight[/tab]\r\n\r\n[Pre-Chorus]\r\n[tab][ch]Dm7[/ch]\r\nYour touch is my favorite drug[/tab]\r\n[tab][ch]Em7[/ch]\r\nFiending for a faded love[/tab]\r\n[tab][ch]Fmaj7[/ch]            [ch]G[/ch]\r\nI\u2019m gone, off of you[/tab]\r\n\r\n[Chorus]\r\n[tab]           [ch]Cmaj7[/ch]     [ch]E[/ch]\r\nTake me to euphoria, euphoria[/tab]\r\n[tab][ch]Fmaj7[/ch]\r\nI need you in my veins[/tab]\r\n[tab]   [ch]G[/ch]                        [ch]C[/ch]         [ch]E[/ch]\r\nI crave the sweet escape of euphoria, euphoria[/tab]\r\n[tab]  [ch]Fmaj7[/ch]\r\nI try to walk away[/tab]\r\n[tab]    [ch]Fm[/ch]\r\nCus if I stay you\u2019ll be the death of me[/tab]\r\n\r\n[Solo]\r\n[ch]Am[/ch]   [ch]E[/ch]   [ch]C[/ch]   [ch]D[/ch]     [ch]F[/ch]   [ch]E[/ch]   [ch]G[/ch]   [ch]C[/ch]  \r\n\r\n[Outro]\r\n[tab][ch]E[/ch]                  [ch]F[/ch]\r\n   Yeah, yeah, yeah[/tab]\r\n[tab][ch]Cmaj7[/ch]     [ch]Bm7[/ch]  [ch]E7[/ch]\r\nEuphoria, euphoria[/tab]\r\n[tab]   [ch]Am7[/ch]\r\nI try to walk away[/tab]\r\n[tab]    [ch]Fmaj7[/ch]            [ch]G7[/ch]              [ch]C[/ch]\r\nCus if I stay you\u2019ll be the death of me[/tab]"
+}

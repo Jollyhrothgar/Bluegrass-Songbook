@@ -1,0 +1,14 @@
+id: buckin-mule
+title: Buckin' Mule
+artist: The Dillards
+default_key: C
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: buckin-mule.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-dillards/buckin-mule-chords-5008132
+    imported_at: '2026-08-01'

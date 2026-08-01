@@ -1,0 +1,13 @@
+id: cant-stop-now
+title: Can't Stop Now
+artist: New Grass Revival
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: can-t-stop-now.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/new-grass-revival/cant-stop-now-chords-4278724
+    imported_at: '2026-08-01'

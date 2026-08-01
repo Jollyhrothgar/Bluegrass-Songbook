@@ -1,0 +1,13 @@
+id: louis-collins
+title: Louis Collins
+artist: Jerry Garcia
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: louis-collins.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/jerry-garcia/louis-collins-chords-821721
+    imported_at: '2026-08-01'

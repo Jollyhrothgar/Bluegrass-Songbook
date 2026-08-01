@@ -1,0 +1,13 @@
+id: country-poor-and-country-proud
+title: Country Poor and Country Proud
+artist: The Garrett Newton Band
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: country-poor-and-country-proud.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-garrett-newton-band/country-poor-country-proud-chords-5754638
+    imported_at: '2026-08-01'

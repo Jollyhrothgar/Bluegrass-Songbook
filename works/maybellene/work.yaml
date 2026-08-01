@@ -1,0 +1,13 @@
+id: maybellene
+title: Maybellene
+artist: Chuck Berry
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: maybellene.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/chuck-berry/maybellene-chords-16987
+    imported_at: '2026-08-01'

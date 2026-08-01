@@ -1,0 +1,13 @@
+id: old-ship-of-zion
+title: Old Ship of Zion
+artist: Ralph Stanley
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: old-ship-of-zion.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/ralph-stanley/old-ship-of-zion-chords-4416974
+    imported_at: '2026-08-01'

@@ -1,0 +1,13 @@
+id: jack-of-diamonds
+title: Jack of Diamonds
+artist: Tim O Brien
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: jack-of-diamonds.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/tim-o-brien/jack-of-diamonds-chords-3704276
+    imported_at: '2026-08-01'

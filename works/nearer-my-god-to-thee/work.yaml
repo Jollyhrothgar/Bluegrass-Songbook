@@ -1,0 +1,13 @@
+id: nearer-my-god-to-thee
+title: Nearer My God to Thee
+artist: Misc Praise Songs
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: nearer-my-god-to-thee.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-praise-songs/nearer-my-god-to-thee-chords-1062123
+    imported_at: '2026-08-01'

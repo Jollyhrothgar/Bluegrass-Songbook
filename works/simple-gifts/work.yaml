@@ -1,0 +1,13 @@
+id: simple-gifts
+title: Simple Gifts
+artist: Judy Collins
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: simple-gifts.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/judy-collins/simple-gifts-chords-1971383
+    imported_at: '2026-08-01'

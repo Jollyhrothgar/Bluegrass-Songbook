@@ -1,0 +1,13 @@
+id: bear-tracks
+title: Bear Tracks
+artist: The Petersens
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: bear-tracks.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-petersens/bear-tracks-chords-5174191
+    imported_at: '2026-08-01'

@@ -1,0 +1,12 @@
+id: the-first-noel
+title: The First Noel
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: the-first-noel.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-christmas/the-first-noel-chords-1446961
+    imported_at: '2026-08-01'

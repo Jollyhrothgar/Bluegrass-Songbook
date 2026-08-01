@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Hallelujah",
+  "type": "Gospel",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Charlie Daniels",
+   "The Charlie Daniels Band",
+   "Blue Highway",
+   "Mipso"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:25:58",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 11.2,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": "Db"
+ },
+ "candidate": {
+  "id": 198052,
+  "song_id": 135952,
+  "song_name": "Hallelujah",
+  "artist_id": 9898,
+  "artist_name": "Jeff Buckley",
+  "type": "Chords",
+  "part": "",
+  "version": 2,
+  "common_version": 1,
+  "votes": 57833,
+  "difficulty": "novice",
+  "rating": 4.87708,
+  "date": "1121385600",
+  "status": "approved",
+  "preset_id": 125,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "Db",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 3357
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/1/115842/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/2/4/245/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1544259891,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Capo 1 for the official video  https://www.youtube.com/watch?v=y8AWFf7EAc4\r\nNo capo for the original studio version  https://www.youtube.com/watch?v=WIF4_Sm-rgQ\r\n\r\n[Intro]\r\n[ch]C[/ch] [ch]Am[/ch] [ch]C[/ch] [ch]Am[/ch]\r\n\r\n[Verse 1]\r\n[tab]  [ch]C[/ch]                 [ch]Am[/ch]\r\nI heard there was a secret chord[/tab]\r\n[tab]     [ch]C[/ch]                   [ch]Am[/ch]\r\nThat David played and it pleased the Lord[/tab]\r\n[tab]    [ch]F[/ch]                         [ch]G[/ch]      [ch]C[/ch]        [ch]G[/ch]\r\nBut you don't really care for music, do you?[/tab]\r\n[tab]        [ch]C[/ch]                  [ch]F[/ch]           [ch]G[/ch]\r\nWell it goes like this the fourth, the fifth[/tab]\r\n[tab]    [ch]Am[/ch]                 [ch]F[/ch]\r\nThe minor fall and the major lift[/tab]\r\n[tab]    [ch]G[/ch]               [ch]E7[/ch]          [ch]Am[/ch]\r\nThe baffled king composing hallelujah[/tab]\r\n\r\n[Chorus]\r\n[tab]     [ch]F[/ch]           [ch]Am[/ch]          [ch]F[/ch]           [ch]C[/ch]    [ch]G[/ch]   [ch]C[/ch]      [ch]Am[/ch] [ch]C[/ch] [ch]Am[/ch]\r\nHallelujah, hallelujah, hallelujah, hallelu-u-u-u-jah ....[/tab]\r\n\r\n[Verse 2]\r\n[tab]           [ch]C[/ch]                        [ch]Am[/ch]\r\nWell, your faith was strong but you needed proof[/tab]\r\n[tab]    [ch]C[/ch]               [ch]Am[/ch]\r\nYou saw her bathing on the roof[/tab]\r\n[tab]    [ch]F[/ch]                        [ch]G[/ch]   [ch]C[/ch]            [ch]G[/ch]\r\nHer beauty and the moonlight overthrew you[/tab]\r\n[tab]    [ch]C[/ch]               [ch]F[/ch]       [ch]G[/ch]\r\nShe tied you to her kitchen chair[/tab]\r\n[tab]    [ch]Am[/ch]                        [ch]F[/ch]\r\nShe broke your throne and she cut your hair[/tab]\r\n[tab]    [ch]G[/ch]                  [ch]E7[/ch]            [ch]Am[/ch]\r\nAnd from your lips she drew the hallelujah[/tab]\r\n\r\n[Chorus]\r\n[tab]     [ch]F[/ch]           [ch]Am[/ch]          [ch]F[/ch]           [ch]C[/ch]    [ch]G[/ch]   [ch]C[/ch]      [ch]Am[/ch] [ch]C[/ch] [ch]Am[/ch]\r\nHallelujah, hallelujah, hallelujah, hallelu-u-u-u-jah ....[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]C[/ch]               [ch]Am[/ch]\r\nBaby, I've been here before[/tab]\r\n[tab]     [ch]C[/ch]                       [ch]Am[/ch]\r\nI've seen this room and I've walked this floor, you know[/tab]\r\n[tab]  [ch]F[/ch]                    [ch]G[/ch]      [ch]C[/ch]          [ch]G[/ch]\r\nI used to live alone before I knew you[/tab]\r\n[tab]     [ch]C[/ch]                     [ch]F[/ch]      [ch]G[/ch]\r\nI've seen your flag on the marble arch[/tab]\r\n[tab]    [ch]Am[/ch]            [ch]F[/ch]\r\nAnd love is not a victory march[/tab]\r\n[tab]       [ch]G[/ch]               [ch]E7[/ch]          [ch]Am[/ch]\r\nIt's a cold and it's a broken hallelujah[/tab]\r\n\r\n[Chorus]\r\n[tab]     [ch]F[/ch]           [ch]Am[/ch]          [ch]F[/ch]           [ch]C[/ch]    [ch]G[/ch]   [ch]C[/ch]      [ch]Am[/ch] [ch]C[/ch] [ch]Am[/ch]\r\nHallelujah, hallelujah, hallelujah, hallelu-u-u-u-jah ....[/tab]\r\n\r\n[Verse 4]\r\n[tab]            [ch]C[/ch]                   [ch]Am[/ch]\r\nWell, there was a time when you let me know[/tab]\r\n[tab]       [ch]C[/ch]            [ch]Am[/ch]\r\nWhat's really going on below[/tab]\r\n[tab]    [ch]F[/ch]                       [ch]G[/ch]     [ch]C[/ch]        [ch]G[/ch]\r\nBut now you never show that to me do you[/tab]\r\n[tab]      [ch]C[/ch]             [ch]F[/ch]        [ch]G[/ch]\r\nBut remember when I moved in you[/tab]\r\n[tab]        [ch]Am[/ch]            [ch]F[/ch]\r\nAnd the holy dove was moving too[/tab]\r\n[tab]    [ch]G[/ch]               [ch]E7[/ch]            [ch]Am[/ch]\r\nAnd every breath we drew was hallelujah[/tab]\r\n\r\n[Chorus]\r\n[tab]     [ch]F[/ch]           [ch]Am[/ch]          [ch]F[/ch]           [ch]C[/ch]    [ch]G[/ch]   [ch]C[/ch]      [ch]Am[/ch] [ch]C[/ch] [ch]Am[/ch]  \r\nHallelujah, hallelujah, hallelujah, hallelu-u-u-u-jah ....[/tab]\r\n\r\n[Verse 5]\r\n[tab]      [ch]C[/ch]               [ch]Am[/ch]\r\nWell, maybe there's a God above[/tab]\r\n[tab]    [ch]C[/ch]             [ch]Am[/ch]\r\nBut all I've ever learned from love[/tab]\r\n[tab]    [ch]F[/ch]                     [ch]G[/ch]      [ch]C[/ch]        [ch]G[/ch]    \r\nWas how to shoot somebody who outdrew you[/tab]\r\n[tab]         [ch]C[/ch]                  [ch]F[/ch]       [ch]G[/ch]\r\nAnd it's not a cry that you hear at night[/tab]\r\n[tab]     [ch]Am[/ch]                 [ch]F[/ch]\r\nIt's not somebody who's seen the light[/tab]\r\n[tab]       [ch]G[/ch]               [ch]E7[/ch]          [ch]Am[/ch]\r\nIt's a cold and it's a broken hallelujah[/tab]\r\n\r\n[Outro]\r\n[tab]     [ch]F[/ch]           [ch]Am[/ch]          [ch]F[/ch]           [ch]C[/ch]    [ch]G[/ch]   \r\nHallelujah, hallelujah, hallelujah, hallelu-u-u-u ....[/tab]\r\n[tab]     [ch]F[/ch]           [ch]Am[/ch]          [ch]F[/ch]           [ch]C[/ch]    [ch]G[/ch]   \r\nHallelujah, hallelujah, hallelujah, hallelu-u-u-u ....[/tab]\r\n[tab]     [ch]F[/ch]           [ch]Am[/ch]          [ch]F[/ch]               [ch]C[/ch]     [ch]G[/ch]    [ch]F[/ch]    [ch]Am[/ch]   [ch]F[/ch]   [ch]Am[/ch]\r\nHallelujah, hallelujah, hallelujah, hallelu-u-u-u-u-u-u-u-u-u-u-u-u-u-u-u-ujah ....[/tab]\r\n[tab]     [ch]F[/ch]   [ch]G[/ch]     [ch]C[/ch]\r\nHalleluuuuuuujah[/tab]"
+}

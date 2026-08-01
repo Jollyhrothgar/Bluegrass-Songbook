@@ -1,0 +1,12 @@
+id: o-come-all-ye-faithful
+title: O Come All Ye Faithful
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: o-come-all-ye-faithful.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/misc-christmas/o-come-all-ye-faithful-chords-1445917
+    imported_at: '2026-08-01'

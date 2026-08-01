@@ -1,0 +1,13 @@
+id: angeline
+title: Angeline
+artist: The Slocan Ramblers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: angeline.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-slocan-ramblers/angeline-chords-1898186
+    imported_at: '2026-08-01'

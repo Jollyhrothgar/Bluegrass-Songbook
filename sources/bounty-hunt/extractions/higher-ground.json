@@ -1,0 +1,74 @@
+{
+ "wanted": {
+  "title": "Higher Ground",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Cliff Waldron",
+   "Unlimited Tradition",
+   "Paul Williams",
+   "Darol Anger"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:26:06",
+ "status": "accepted",
+ "validation": {
+  "tier": "traditional",
+  "score": 41.1,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": false,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1195036,
+  "song_id": 2706341,
+  "song_name": "Higher Ground",
+  "artist_id": 888,
+  "artist_name": "Misc Praise Songs",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 95,
+  "difficulty": "intermediate",
+  "rating": 4.73885,
+  "date": "1352937601",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": "",
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": null
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p0/media/cover/artist/b/b2b8131e6f4ea1114b486193cca9cbe4/misc-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": false
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1562429453,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "Capo on the 5th fret\r\n(Must play moderately fast)\r\n\r\n[Verse 1]\r\n[tab][ch]G[/ch]                          [ch]C[/ch]\r\nI m pressing on the upward way[/tab]\r\n[tab]                [ch]G[/ch]             [ch]D[/ch]\r\nNew heights I'm gaining every day[/tab]\r\n[tab]              [ch]G[/ch]             [ch]C[/ch]\r\nStill praying as I'm onward bound[/tab]\r\n[tab]                [ch]G[/ch]       [ch]D[/ch]      [ch]G[/ch]\r\n\"Lord, plant my feet on higher ground.\"[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]                           [ch]C[/ch]\r\nLord, lift me up and let me stand[/tab]\r\n[tab]            [ch]D[/ch]              [ch]G[/ch]\r\nBy faith on heaven's table land[/tab]\r\n[tab]         [ch]G[/ch]                 [ch]C[/ch]\r\nA higher plane than I have found[/tab]\r\n[tab]               [ch]G[/ch]       [ch]D[/ch]      [ch]G[/ch]\r\nLord, plant my feet on higher ground.[/tab]\r\n\r\n[Verse 2]\r\n[tab][ch]G[/ch]                         [ch]C[/ch]\r\nMy heart has no desire to stay[/tab]\r\n[tab]             [ch]G[/ch]               [ch]D[/ch]\r\nWhere doubts arise and fears dismay[/tab]\r\n[tab]              [ch]G[/ch]                 [ch]C[/ch]\r\nTho' some may dwell where these abound[/tab]\r\n[tab]              [ch]G[/ch]      [ch]D[/ch]      [ch]G[/ch]\r\nMy prayer, my aim is higher ground.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]                           [ch]C[/ch]\r\nLord, lift me up and let me stand[/tab]\r\n[tab]            [ch]D[/ch]              [ch]G[/ch]\r\nBy faith on heaven's table land[/tab]\r\n[tab]         [ch]G[/ch]                 [ch]C[/ch]\r\nA higher plane than I have found[/tab]\r\n[tab]               [ch]G[/ch]       [ch]D[/ch]      [ch]G[/ch]\r\nLord, plant my feet on higher ground.[/tab]\r\n\r\n[Verse 3]\r\n[tab][ch]G[/ch]                        [ch]C[/ch]\r\nI want to live above the world[/tab]\r\n[tab]             [ch]G[/ch]               [ch]D[/ch]\r\nTho' satan's darts at me are hurled[/tab]\r\n[tab]              [ch]G[/ch]                 [ch]C[/ch]\r\nFor faith has caught the joyful sound[/tab]\r\n[tab]            [ch]G[/ch]         [ch]D[/ch]      [ch]G[/ch]\r\nThe song of saints on higher ground.[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]                           [ch]C[/ch]\r\nLord, lift me up and let me stand[/tab]\r\n[tab]            [ch]D[/ch]              [ch]G[/ch]\r\nBy faith on heaven's table land[/tab]\r\n[tab]         [ch]G[/ch]                 [ch]C[/ch]\r\nA higher plane than I have found[/tab]\r\n[tab]               [ch]G[/ch]       [ch]D[/ch]      [ch]G[/ch]\r\nLord, plant my feet on higher ground.[/tab]\r\n\r\n[Verse 4]\r\n[tab][ch]G[/ch]                          [ch]C[/ch]\r\nI want to scale the utmost height[/tab]\r\n[tab]            [ch]G[/ch]              [ch]D[/ch]\r\nAnd catch a gleam of glory bright[/tab]\r\n[tab]               [ch]G[/ch]                     [ch]C[/ch]\r\nBut still I'll pray till heaven I've found[/tab]\r\n[tab]               [ch]G[/ch]     [ch]D[/ch]      [ch]G[/ch]\r\n\"Lord, lead me on to higher ground.\"[/tab]\r\n\r\n[Chorus]\r\n[tab][ch]G[/ch]                           [ch]C[/ch]\r\nLord, lift me up and let me stand[/tab]\r\n[tab]            [ch]D[/ch]              [ch]G[/ch]\r\nBy faith on heaven's table land[/tab]\r\n[tab]         [ch]G[/ch]                 [ch]C[/ch]\r\nA higher plane than I have found[/tab]\r\n[tab]               [ch]G[/ch]       [ch]D[/ch]      [ch]G[/ch]\r\nLord, plant my feet on higher ground.[/tab]"
+}

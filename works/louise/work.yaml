@@ -1,0 +1,13 @@
+id: louise
+title: Louise
+artist: Mipso
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: louise.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/mipso/louise-chords-1856160
+    imported_at: '2026-08-01'

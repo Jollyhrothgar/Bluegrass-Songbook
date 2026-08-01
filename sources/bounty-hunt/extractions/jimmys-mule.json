@@ -1,0 +1,23 @@
+{
+ "wanted": {
+  "title": "Jimmy\u2019s Mule",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Paul Williams",
+   "J.D. Crowe",
+   "Jimmy Martin and the Sunny Mountain Boys",
+   "Jimmy Martin"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:27:21",
+ "status": "no-results",
+ "validation": {},
+ "candidate": null,
+ "content": null
+}

@@ -1,0 +1,13 @@
+id: memphis
+title: Memphis
+artist: Johnny Rivers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: memphis.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/johnny-rivers/memphis-chords-1049642
+    imported_at: '2026-08-01'

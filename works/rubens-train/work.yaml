@@ -1,0 +1,13 @@
+id: rubens-train
+title: Ruben's Train
+artist: The Tillers
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: ruben-s-train.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/the-tillers/rubens-train-chords-2711802
+    imported_at: '2026-08-01'

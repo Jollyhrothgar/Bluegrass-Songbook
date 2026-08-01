@@ -1,0 +1,13 @@
+id: crow-black-chicken
+title: Crow Black Chicken
+artist: Yonder Mountain String Band
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: crow-black-chicken.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/yonder-mountain-string-band/crow-black-chicken-chords-712273
+    imported_at: '2026-08-01'

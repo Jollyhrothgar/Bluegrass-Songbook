@@ -1,0 +1,13 @@
+id: brokedown-palace
+title: Brokedown Palace
+artist: Grateful Dead
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: brokedown-palace.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/grateful-dead/brokedown-palace-chords-1058519
+    imported_at: '2026-08-01'

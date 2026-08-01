@@ -1,0 +1,13 @@
+id: two-coats
+title: Two Coats
+artist: Patty Loveless
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: two-coats.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/patty-loveless/two-coats-chords-1806262
+    imported_at: '2026-08-01'

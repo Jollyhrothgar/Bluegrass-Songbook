@@ -1,0 +1,77 @@
+{
+ "wanted": {
+  "title": "Fiddlin' Around",
+  "type": "Vocal",
+  "key": null,
+  "difficulty": null,
+  "coverage": 4,
+  "core": false,
+  "artists": [
+   "Mark O\u2019Connor",
+   "Don Reno",
+   "Buck Ryan",
+   "Red Smiley"
+  ],
+  "notes": null,
+  "instruments": []
+ },
+ "scraped_at": "2026-08-01T11:25:23",
+ "status": "accepted",
+ "validation": {
+  "tier": "unverified",
+  "score": 8.4,
+  "lyric_overlap": null,
+  "bl_slug": null,
+  "needs_review": true,
+  "tried": [],
+  "key_hint": null
+ },
+ "candidate": {
+  "id": 1160995,
+  "song_id": 308546,
+  "song_name": "Fiddlin Around",
+  "artist_id": 9341,
+  "artist_name": "Dierks Bentley",
+  "type": "Chords",
+  "part": "",
+  "version": 1,
+  "common_version": 1,
+  "votes": 13,
+  "difficulty": "intermediate",
+  "rating": 4.83777,
+  "date": "1339545601",
+  "status": "approved",
+  "preset_id": 0,
+  "tab_access_type": "public",
+  "tp_version": 0,
+  "tonality_name": "",
+  "version_description": null,
+  "verified": 0,
+  "recording": {
+   "is_acoustic": 0,
+   "tonality_name": "",
+   "performance": null,
+   "recording_artists": [],
+   "video_urls": null,
+   "album_id": 68349
+  },
+  "album_cover": {
+   "has_album_cover": true,
+   "app_album_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/album/cover/1/1/118153/primary-cover.jpg@200?c=1"
+   }
+  },
+  "artist_cover": {
+   "has_artist_cover": true,
+   "app_artist_cover": {
+    "small": "https://www.ultimate-guitar.com/static/s3/ugdb-p1/media/artist/cover/5/3/5386/primary-cover.jpg@200?c=1"
+   }
+  },
+  "unique_chords": "",
+  "ug_difficulty": "",
+  "date_update": 1339545601,
+  "source": "",
+  "typeLabel": null
+ },
+ "content": "\"Fiddlin' Around\"\r\n-Dierks Bentley-\r\n\r\n\r\n\r\n\r\nVerse 1:\r\n[tab][ch]Em[/ch]                        [ch]C[/ch]\r\nUp in the window light tonight,[/tab]\r\n\r\n[tab]                           [ch]G[/ch]       [ch]D[/ch]\r\nWhere I can see your silhouette[/tab]\r\n\r\n[tab][ch]Em[/ch]\r\nI've been throwing little stones,[/tab]\r\n\r\n[tab]      [ch]C[/ch]                               [ch]G[/ch]    [ch]D[/ch]\r\nBut don't even think you've heard me yet[/tab]\r\n\r\n\r\n[ch]Em[/ch]      [ch]C[/ch]\r\n\r\n\r\n[tab][ch]Em[/ch]\r\nToday you crossed your heart[/tab]\r\n\r\n[tab][ch]C[/ch]\r\nAnd said you would meet me in the dark[/tab]\r\n\r\n[tab][ch]Em[/ch]\r\nWhen I called you on the phone,[/tab]\r\n\r\n[tab]          [ch]C[/ch]                 [ch]D[/ch]\r\nYou pretended you weren't home[/tab]\r\n\r\n\r\nChorus:\r\n[tab]          [ch]G[/ch]            [ch]D[/ch]\r\nHey baby, what do you say[/tab]\r\n\r\n[tab]          [ch]Em[/ch]\r\nWon't you come on outside tonight[/tab]\r\n\r\n[tab]          [ch]C[/ch]                              [ch]G[/ch]\r\nThe moon is finally shining bright as day[/tab]\r\n\r\n[tab]                  [ch]D[/ch]\r\nHey, what do ya say[/tab]\r\n\r\n[tab][ch]Em[/ch]                                [ch]C[/ch]\r\nCan't you hear the music in the wind[/tab]\r\n\r\n[tab]                                   [ch]G[/ch]\r\nAnd see our shadows on the ground[/tab]\r\n\r\n[tab]                       [ch]D[/ch]\r\nAw what don't ya come on down[/tab]\r\n\r\n[tab]            [ch]Em[/ch]          [ch]D[/ch]         [ch]G[/ch]\r\nWe're gonna do a little fiddlin' around[/tab]\r\n\r\n[ch]G[/ch]     [ch]D[/ch]\r\n[ch]Em[/ch]    [ch]C[/ch]\r\n[ch]G[/ch]     [ch]D[/ch]\r\n[ch]Em[/ch]    [ch]C[/ch]\r\n\r\n\r\n[tab][ch]Em[/ch]                        [ch]C[/ch]\r\nCan't ya hear the banjos ringin' through the air[/tab]\r\n\r\n[tab][ch]Em[/ch]                        [ch]C[/ch]\r\nThere'll be mandolins and guitars everywhere[/tab]\r\n\r\n[tab][ch]Em[/ch]               [ch]C[/ch]        [ch]D[/ch]\r\nNow don't ya wanna be there?[/tab]\r\n\r\n\r\nChorus\r\n\r\nVerse 2:\r\n[tab][ch]Em[/ch]\r\nIf you'd look outside you could see the lights[/tab]\r\n\r\n[tab][ch]C[/ch]\r\nof my old corvette[/tab]\r\n\r\n[tab]       [ch]Em[/ch]\r\nAre you trying to drive me crazy babe[/tab]\r\n\r\n[tab][ch]C[/ch]                   [ch]D[/ch]\r\nor did you just forget[/tab]\r\n\r\nChorus\r\n\r\n[ch]G[/ch]     [ch]D[/ch]\r\n[ch]Em[/ch]    [ch]C[/ch]\r\n[ch]G[/ch]     [ch]D[/ch]\r\n[ch]Em[/ch]    [ch]C[/ch]"
+}

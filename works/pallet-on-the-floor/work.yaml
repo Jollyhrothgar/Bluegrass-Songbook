@@ -1,0 +1,13 @@
+id: pallet-on-the-floor
+title: Pallet on the Floor
+artist: Steve Mann
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: pallet-on-the-floor.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/steve-mann/pallet-on-the-floor-chords-5439720
+    imported_at: '2026-08-01'

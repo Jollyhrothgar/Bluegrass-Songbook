@@ -1,0 +1,13 @@
+id: streamlined-cannonball
+title: Streamlined Cannonball
+artist: Norman Blake
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: web-chords
+    source_file: streamlined-cannonball.txt
+    source_url: https://tabs.ultimate-guitar.com/tab/norman-blake/streamlined-cannonball-chords-5510220
+    imported_at: '2026-08-01'
