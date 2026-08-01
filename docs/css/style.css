@@ -9740,3 +9740,95 @@ body.has-list-context.has-bottomband .container {
     text-decoration: none;
     color: inherit;
 }
+
+/* --- Search facets: one-tap tag chips + Key/Chords pills (2026-07) --- */
+.facet-chip {
+    font-size: 0.75rem;
+    font-family: inherit;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+.facet-chip:hover { color: var(--accent); border-color: var(--accent); }
+.facet-chip.active {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.search-facet-pills { display: inline-flex; gap: 0.35rem; align-items: center; }
+.search-facet-pill .pill-btn { font-size: 0.75rem; padding: 0.2rem 0.6rem; }
+.search-facet-pill.facet-active .pill-btn {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.pill-key-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3rem;
+    padding: 0.5rem;
+}
+.pill-key-btn {
+    font: inherit;
+    font-size: 0.8rem;
+    padding: 0.3rem 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    cursor: pointer;
+}
+.pill-key-btn:hover { border-color: var(--accent); color: var(--accent); }
+.pill-key-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+.facet-clear { text-align: center; color: var(--text-secondary); }
+
+.facet-field { padding: 0.4rem 0.6rem; }
+.facet-field-label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.2rem;
+}
+.facet-field-input {
+    width: 100%;
+    font: inherit;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+}
+.facet-field-input:focus { outline: none; border-color: var(--accent); }
+.facet-apply-btn {
+    font: inherit;
+    font-size: 0.8rem;
+    margin: 0.3rem 0.6rem 0.4rem;
+    padding: 0.3rem 0.9rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+}
+.facet-apply-btn:hover { background: var(--accent-hover); }
+.facet-explorer-link {
+    display: block;
+    padding: 0.35rem 0.6rem 0.5rem;
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+.facet-explorer-link:hover { text-decoration: underline; }

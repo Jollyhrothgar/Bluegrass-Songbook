@@ -3,7 +3,9 @@
 import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork } from './state.js';
 import { highlightMatch, escapeHtml, requireLogin } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
-import { songHasTags, getTagCategory, formatTagName } from './tags.js';
+import { songHasTags, getTagCategory, formatTagName, syncTagControls } from './tags.js';
+import { setFieldTerm } from './search-query.js';
+import { pill } from './shell.js';
 import {
     isFavorite, reorderFavoriteItem, reorderFavoriteItemByRef, showFavorites,
     isSongInAnyList, updateResultListButton, getViewingListId, reorderSongInList, reorderSongInListByRef, isViewingOwnList,
@@ -409,6 +411,18 @@ function flushPendingSearch() {
 // Ground truth: docs/data/search-syntax.json
 let searchPrefixMap = null;
 
+// Kept in sync with docs/data/search-syntax.json (used only when the fetch fails)
+const FALLBACK_PREFIX_MAP = {
+    'artist:': 'artist', 'a:': 'artist',
+    'title:': 'title',
+    'lyrics:': 'lyrics', 'l:': 'lyrics',
+    'composer:': 'composer', 'writer:': 'composer',
+    'key:': 'key', 'k:': 'key',
+    'chord:': 'chord', 'c:': 'chord',
+    'prog:': 'prog', 'p:': 'prog',
+    'tag:': 'tag', 't:': 'tag'
+};
+
 /**
  * Load prefix map from shared config (lazy, cached)
  */
@@ -427,44 +441,25 @@ async function loadPrefixMap() {
     }
 
     // Fallback if config not found
-    searchPrefixMap = {
-        'artist:': 'artist', 'a:': 'artist',
-        'title:': 'title',
-        'lyrics:': 'lyrics', 'l:': 'lyrics',
-        'composer:': 'composer', 'writer:': 'composer',
-        'key:': 'key', 'k:': 'key',
-        'chord:': 'chord', 'c:': 'chord',
-        'prog:': 'prog', 'p:': 'prog',
-        'tag:': 'tag', 't:': 'tag',
-        'status:': 'status', 's:': 'status',
-        'has:': 'has'
-    };
+    searchPrefixMap = { ...FALLBACK_PREFIX_MAP };
     return searchPrefixMap;
 }
 
 // Synchronous version using cached value (call loadPrefixMap first during init)
 function getPrefixMap() {
-    return searchPrefixMap || {
-        'artist:': 'artist', 'a:': 'artist',
-        'title:': 'title',
-        'lyrics:': 'lyrics', 'l:': 'lyrics',
-        'composer:': 'composer', 'writer:': 'composer',
-        'key:': 'key', 'k:': 'key',
-        'chord:': 'chord', 'c:': 'chord',
-        'prog:': 'prog', 'p:': 'prog',
-        'tag:': 'tag', 't:': 'tag',
-        'status:': 'status', 's:': 'status'
-    };
+    return searchPrefixMap || FALLBACK_PREFIX_MAP;
 }
 
 /**
  * Parse search query for special modifiers
  * Supports field:value syntax where value continues until next field: or end
- * Supports negative filters with - prefix: -artist:name, -tag:genre
+ * `tag:` is the ONLY field that takes a negation (`-tag:Instrumental`); a `-`
+ * in front of any other prefix is not an operator, so `-artist:hank` is just
+ * plain text.
  * Examples:
  *   artist:hank williams lyrics:cheatin
- *   tag:classic -tag:instrumental
- *   george jones -lyrics:drinking
+ *   tag:gospel,waltz -tag:instrumental
+ *   george jones key:G
  */
 export function parseSearchQuery(query) {
     const result = {
@@ -477,18 +472,7 @@ export function parseSearchQuery(query) {
         lyricsFilter: null,     // lyrics search
         composerFilter: null,   // composer/writer search
         keyFilter: null,        // musical key search
-        // Negative filters (exclusions)
-        excludeArtist: null,
-        excludeTitle: null,
-        excludeLyrics: null,
-        excludeComposer: null,
-        excludeKey: null,
-        excludeTags: [],
-        excludeChords: [],
-        statusFilter: null,
-        excludeStatus: null,
-        hasFilters: [],        // e.g., ['bounty']
-        excludeHas: []
+        excludeTags: []         // the one supported negation: -tag:X
     };
 
     // Get prefix map (from shared config or fallback)
@@ -498,12 +482,14 @@ export function parseSearchQuery(query) {
     // Match optional - before prefix
     const prefixRegex = new RegExp(`(-?)(${prefixPattern.map(p => p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
 
-    // Find all prefix positions
+    // Find all prefix positions. A negated prefix only counts for tags —
+    // everything else falls through to plain text.
     const matches = [];
     let match;
     while ((match = prefixRegex.exec(query)) !== null) {
         const isNegative = match[1] === '-';
         const prefix = match[2].toLowerCase();
+        if (isNegative && prefixMap[prefix] !== 'tag') continue;
         matches.push({
             prefix,
             isNegative,
@@ -521,94 +507,47 @@ export function parseSearchQuery(query) {
 
         if (!value) continue;
 
-        if (isNegative) {
-            // Negative filters
-            switch (fieldType) {
-                case 'artist':
-                    result.excludeArtist = value.toLowerCase();
-                    break;
-                case 'title':
-                    result.excludeTitle = value.toLowerCase();
-                    break;
-                case 'lyrics':
-                    result.excludeLyrics = value.toLowerCase();
-                    break;
-                case 'composer':
-                    result.excludeComposer = value.toLowerCase();
-                    break;
-                case 'key':
-                    result.excludeKey = value.toUpperCase();
-                    break;
-                case 'chord':
-                    result.excludeChords.push(...value.split(',').map(c => c.trim()).filter(c => c));
-                    break;
-                case 'tag': {
-                    // Tags are single words - split by whitespace first
-                    const parts = value.split(/\s+/).filter(p => p);
-                    if (parts.length > 0) {
-                        const tags = parts[0].split(',').map(t => t.trim()).filter(t => t);
-                        result.excludeTags.push(...tags);
-                        // Remaining parts are text terms
-                        if (parts.length > 1) {
-                            result.textTerms.push(...parts.slice(1).map(t => t.toLowerCase()));
-                        }
-                    }
-                    break;
-                }
-                case 'status':
-                    result.excludeStatus = value.toLowerCase();
-                    break;
-                case 'has':
-                    result.excludeHas.push(value.toLowerCase());
-                    break;
+        // The whole value up to the next prefix is tags, split on commas
+        // and/or whitespace (`tag:Gospel Waltz` == `tag:Gospel,Waltz`).
+        if (fieldType === 'tag') {
+            const tags = value.split(/[\s,]+/).map(t => t.trim()).filter(t => t);
+            if (isNegative) {
+                result.excludeTags.push(...tags);
+            } else {
+                result.tagFilters.push(...tags);
             }
-        } else {
-            // Positive filters
-            switch (fieldType) {
-                case 'artist':
-                    result.artistFilter = value.toLowerCase();
-                    break;
-                case 'title':
-                    result.titleFilter = value.toLowerCase();
-                    break;
-                case 'lyrics':
-                    result.lyricsFilter = value.toLowerCase();
-                    break;
-                case 'composer':
-                    result.composerFilter = value.toLowerCase();
-                    break;
-                case 'key':
-                    result.keyFilter = value.toUpperCase();
-                    break;
-                case 'chord':
-                    result.chordFilters.push(...value.split(',').map(c => c.trim()).filter(c => c));
-                    break;
-                case 'prog':
-                    result.progressionFilter = value.split('-').map(c => c.trim()).filter(c => c);
-                    break;
-                case 'tag': {
-                    // Tags are single words - split by whitespace first
-                    // Only first token(s) are tags (may be comma-separated)
-                    // Remaining words become text search terms
-                    const parts = value.split(/\s+/).filter(p => p);
-                    if (parts.length > 0) {
-                        // First part can be comma-separated tags
-                        const tags = parts[0].split(',').map(t => t.trim()).filter(t => t);
-                        result.tagFilters.push(...tags);
-                        // Remaining parts are text terms
-                        if (parts.length > 1) {
-                            result.textTerms.push(...parts.slice(1).map(t => t.toLowerCase()));
-                        }
-                    }
-                    break;
+            continue;
+        }
+
+        switch (fieldType) {
+            case 'artist':
+                result.artistFilter = value.toLowerCase();
+                break;
+            case 'title':
+                result.titleFilter = value.toLowerCase();
+                break;
+            case 'lyrics':
+                result.lyricsFilter = value.toLowerCase();
+                break;
+            case 'composer':
+                result.composerFilter = value.toLowerCase();
+                break;
+            case 'key': {
+                // A key is one token; anything after it goes back to text
+                // search ("key:G wagon" finds G songs matching "wagon")
+                const [keyTok, ...restKey] = value.split(/\s+/);
+                result.keyFilter = keyTok.toUpperCase();
+                if (restKey.length) {
+                    result.textTerms.push(...restKey.map(t => t.toLowerCase()));
                 }
-                case 'status':
-                    result.statusFilter = value.toLowerCase();
-                    break;
-                case 'has':
-                    result.hasFilters.push(value.toLowerCase());
-                    break;
+                break;
             }
+            case 'chord':
+                result.chordFilters.push(...value.split(',').map(c => c.trim()).filter(c => c));
+                break;
+            case 'prog':
+                result.progressionFilter = value.split('-').map(c => c.trim()).filter(c => c);
+                break;
         }
     }
 
@@ -616,7 +555,12 @@ export function parseSearchQuery(query) {
     const firstPrefixIndex = matches.length > 0 ? matches[0].index : query.length;
     const generalText = query.slice(0, firstPrefixIndex).trim();
     if (generalText) {
-        result.textTerms = generalText.toLowerCase().split(/\s+/).filter(t => t);
+        // Prepend: field parsing above may already have pushed spillover
+        // terms (e.g. the tail of "key:G wagon")
+        result.textTerms = [
+            ...generalText.toLowerCase().split(/\s+/).filter(t => t),
+            ...result.textTerms
+        ];
     }
 
     return result;
@@ -753,10 +697,7 @@ export function search(query, options = {}) {
     const {
         textTerms, chordFilters, progressionFilter, tagFilters,
         artistFilter, titleFilter, lyricsFilter, composerFilter, keyFilter,
-        excludeArtist, excludeTitle, excludeLyrics, excludeComposer, excludeKey,
-        excludeTags, excludeChords,
-        statusFilter, excludeStatus,
-        hasFilters, excludeHas
+        excludeTags
     } = parseSearchQuery(query);
 
     // Pre-compute stemmed query terms (once per search, not per song)
@@ -809,31 +750,9 @@ export function search(query, options = {}) {
             return false;
         }
 
-        // Field-specific filters (exclusion)
-        if (excludeArtist && (song.artist || '').toLowerCase().includes(excludeArtist)) {
-            return false;
-        }
-        if (excludeTitle && (song.title || '').toLowerCase().includes(excludeTitle)) {
-            return false;
-        }
-        if (excludeLyrics && (song.lyrics || '').toLowerCase().includes(excludeLyrics)) {
-            return false;
-        }
-        if (excludeComposer && (song.composer || '').toLowerCase().includes(excludeComposer)) {
-            return false;
-        }
-        if (excludeKey && (song.key || '').toUpperCase() === excludeKey) {
-            return false;
-        }
-
         // Chord search
         if (chordFilters.length > 0) {
             if (!songHasChords(song, chordFilters)) return false;
-        }
-
-        // Exclude chords
-        if (excludeChords.length > 0) {
-            if (songHasChords(song, excludeChords)) return false;
         }
 
         // Progression search
@@ -849,34 +768,6 @@ export function search(query, options = {}) {
         // Exclude tags
         if (excludeTags.length > 0) {
             if (songHasTags(song, excludeTags)) return false;
-        }
-
-        // Status filter
-        if (statusFilter) {
-            const songStatus = song.status || 'complete';
-            if (songStatus !== statusFilter) return false;
-        }
-        if (excludeStatus) {
-            const songStatus = song.status || 'complete';
-            if (songStatus === excludeStatus) return false;
-        }
-
-        // has: filters (e.g., has:bounty)
-        if (hasFilters.length > 0) {
-            for (const hasVal of hasFilters) {
-                if (hasVal === 'bounty') {
-                    const hasBounty = song.status === 'placeholder' || getBountiesForWork(song.id).length > 0;
-                    if (!hasBounty) return false;
-                }
-            }
-        }
-        if (excludeHas.length > 0) {
-            for (const hasVal of excludeHas) {
-                if (hasVal === 'bounty') {
-                    const hasBounty = song.status === 'placeholder' || getBountiesForWork(song.id).length > 0;
-                    if (hasBounty) return false;
-                }
-            }
         }
 
         return true;
@@ -949,16 +840,8 @@ export function search(query, options = {}) {
     if (progressionFilter && progressionFilter.length > 0) filters.push(`prog: ${progressionFilter.join('-')}`);
     if (tagFilters.length > 0) filters.push(`tags: ${tagFilters.map(formatTagName).join(', ')}`);
     if (lyricsFilter) filters.push(`lyrics: "${lyricsFilter}"`);
-    if (statusFilter) filters.push(`status: ${statusFilter}`);
-    // Exclusion filters
-    if (excludeArtist) filters.push(`-artist: "${excludeArtist}"`);
-    if (excludeTitle) filters.push(`-title: "${excludeTitle}"`);
-    if (excludeComposer) filters.push(`-by: "${excludeComposer}"`);
-    if (excludeKey) filters.push(`-key: ${excludeKey}`);
-    if (excludeChords.length > 0) filters.push(`-chords: ${excludeChords.join(', ')}`);
+    // The one exclusion filter left
     if (excludeTags.length > 0) filters.push(`-tags: ${excludeTags.map(formatTagName).join(', ')}`);
-    if (excludeLyrics) filters.push(`-lyrics: "${excludeLyrics}"`);
-    if (excludeStatus) filters.push(`-status: ${excludeStatus}`);
     if (filters.length > 0) {
         statsText += ` (${filters.join(', ')})`;
     }
@@ -1581,6 +1464,150 @@ export function trackSearch(query) {
     }, 1000);
 }
 
+// ---------------------------------------------------------------------------
+// Search facets: the Key pill and the Chords popover next to the facet chips.
+// Both do nothing but write syntax into the search box — the box stays the
+// single source of truth, so typing and clicking can't disagree.
+// ---------------------------------------------------------------------------
+
+// Common jam keys, laid out 4-per-row in the popover grid
+const FACET_KEYS = ['G', 'A', 'C', 'D', 'E', 'F', 'Bb', 'B', 'Am', 'Bm', 'Dm', 'Em'];
+
+let keyPillRoot = null;
+let keyPillApi = null;
+let chordsPillRoot = null;
+let chordsPillApi = null;
+
+/** Put a query in the box, run it, and re-sync every facet control */
+function applyFacetQuery(query) {
+    if (!searchInputEl) return;
+    searchInputEl.value = query;
+    search(query);
+    syncTagControls();
+    syncFacetPills();
+}
+
+/** Reflect the query's key / chord / prog terms in the pills */
+function syncFacetPills() {
+    if (!searchInputEl) return;
+    const { keyFilter, chordFilters, progressionFilter } = parseSearchQuery(searchInputEl.value);
+
+    if (keyPillApi) {
+        const display = FACET_KEYS.find(k => k.toUpperCase() === keyFilter) || keyFilter;
+        keyPillApi.setLabel(keyFilter ? `Key: ${display}` : 'Key');
+    }
+    keyPillRoot?.classList.toggle('facet-active', !!keyFilter);
+    keyPillRoot?.querySelectorAll('.pill-key-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.key.toUpperCase() === keyFilter);
+    });
+
+    const chordsActive = chordFilters.length > 0 || (progressionFilter || []).length > 0;
+    if (chordsPillApi) chordsPillApi.setLabel(chordsActive ? 'Chords ✓' : 'Chords…');
+    chordsPillRoot?.classList.toggle('facet-active', chordsActive);
+}
+
+function buildKeyFacet(popover, api) {
+    const grid = document.createElement('div');
+    grid.className = 'pill-key-grid';
+    FACET_KEYS.forEach(k => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'pill-key-btn';
+        btn.dataset.key = k;
+        btn.textContent = k;
+        btn.addEventListener('click', () => {
+            applyFacetQuery(setFieldTerm(searchInputEl.value, 'key', k));
+            api.close();
+        });
+        grid.appendChild(btn);
+    });
+    popover.appendChild(grid);
+
+    const anyKey = document.createElement('button');
+    anyKey.type = 'button';
+    anyKey.className = 'pill-popover-item facet-clear';
+    anyKey.textContent = 'Any key';
+    anyKey.addEventListener('click', () => {
+        applyFacetQuery(setFieldTerm(searchInputEl.value, 'key', ''));
+        api.close();
+    });
+    popover.appendChild(anyKey);
+
+    syncFacetPills();
+}
+
+function buildChordsFacet(popover, api) {
+    popover.innerHTML = `
+        <div class="facet-field">
+            <label class="facet-field-label" for="facet-chords-input">Contains chords</label>
+            <input type="text" id="facet-chords-input" class="facet-field-input"
+                   placeholder="I, IV, V" autocomplete="off">
+        </div>
+        <div class="facet-field">
+            <label class="facet-field-label" for="facet-prog-input">Progression</label>
+            <input type="text" id="facet-prog-input" class="facet-field-input"
+                   placeholder="I-IV-V" autocomplete="off">
+        </div>
+        <button type="button" class="facet-apply-btn" id="facet-chords-apply">Apply</button>
+        <a class="facet-explorer-link" href="chord-explorer.html">Open Chord Explorer &rarr;</a>
+    `;
+
+    const chordsInput = popover.querySelector('#facet-chords-input');
+    const progInput = popover.querySelector('#facet-prog-input');
+
+    const apply = () => {
+        const chords = chordsInput.value.split(',').map(c => c.trim()).filter(c => c).join(',');
+        const prog = progInput.value.trim().replace(/\s*-\s*/g, '-').replace(/\s+/g, '-');
+        let query = setFieldTerm(searchInputEl.value, 'chord', chords);
+        query = setFieldTerm(query, 'prog', prog);
+        applyFacetQuery(query);
+        api.close();
+    };
+
+    popover.querySelector('#facet-chords-apply').addEventListener('click', apply);
+    [chordsInput, progInput].forEach(input => {
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                apply();
+            }
+        });
+    });
+}
+
+/** Fill the Chords popover's inputs from whatever is in the box right now */
+function prefillChordsFacet() {
+    if (!chordsPillRoot || !searchInputEl) return;
+    const chordsInput = chordsPillRoot.querySelector('#facet-chords-input');
+    const progInput = chordsPillRoot.querySelector('#facet-prog-input');
+    if (!chordsInput || !progInput) return;
+    const { chordFilters, progressionFilter } = parseSearchQuery(searchInputEl.value);
+    chordsInput.value = chordFilters.join(', ');
+    progInput.value = (progressionFilter || []).join('-');
+}
+
+/**
+ * Mount the Key and Chords facet pills into the search-help row
+ */
+function initSearchFacets(container) {
+    if (!container) return;
+
+    keyPillRoot = pill('Key', buildKeyFacet, { title: 'Filter by key' });
+    keyPillRoot.classList.add('search-facet-pill');
+    keyPillApi = keyPillRoot.pillApi;
+    container.appendChild(keyPillRoot);
+
+    chordsPillRoot = pill('Chords…', buildChordsFacet, { title: 'Filter by chords or progression' });
+    chordsPillRoot.classList.add('search-facet-pill');
+    chordsPillApi = chordsPillRoot.pillApi;
+    container.appendChild(chordsPillRoot);
+
+    // Runs after the pill's own handler, so the content exists by now
+    chordsPillRoot.querySelector('.pill-btn')?.addEventListener('click', prefillChordsFacet);
+
+    syncFacetPills();
+}
+
 /**
  * Initialize search module with DOM elements
  */
@@ -1601,6 +1628,10 @@ export async function initSearch(options) {
 
     // Preload search syntax config (shared with CLI)
     await loadPrefixMap();
+
+    // Mount the Key / Chords facet pills (no-op if the container is absent,
+    // e.g. in unit tests)
+    initSearchFacets(document.getElementById('search-facet-pills'));
 
     // Setup search input listener
     if (searchInputEl) {

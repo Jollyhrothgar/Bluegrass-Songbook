@@ -1066,8 +1066,11 @@ async function loadIndex() {
         });
         setSongGroups(groups);
 
-        // Count distinct song titles (for stats display)
-        const distinctTitles = new Set(songs.map(s => s.title?.toLowerCase())).size;
+        // Count distinct SEARCHABLE song titles (the curated canon) — the
+        // archive rows with indexed:false resolve by URL but aren't "the book"
+        const distinctTitles = new Set(
+            songs.filter(s => s.indexed !== false).map(s => s.title?.toLowerCase())
+        ).size;
 
         if (resultsDiv) {
             resultsDiv.innerHTML = '';

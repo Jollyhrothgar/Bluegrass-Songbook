@@ -52,7 +52,7 @@
                 <input
                     type="text"
                     id="landing-search-input"
-                    placeholder="Search songs, artists, or lyrics..."
+                    placeholder="Search songs &mdash; title, artist, or lyrics"
                     autocomplete="off"
                 >
             </div>
@@ -71,7 +71,7 @@
             <input
                 type="text"
                 id="search-input"
-                placeholder="Search songs, or try: chord:VII prog:I-IV-V"
+                placeholder="Search songs &mdash; title, artist, or lyrics"
                 autocomplete="off"
             >
             <div class="search-help">
@@ -85,9 +85,6 @@
                             <label><input type="checkbox" data-tag="OldTime"> Old Time</label>
                             <label><input type="checkbox" data-tag="Gospel"> Gospel</label>
                             <label><input type="checkbox" data-tag="Folk"> Folk</label>
-                            <label><input type="checkbox" data-tag="HonkyTonk"> Honky Tonk</label>
-                            <label><input type="checkbox" data-tag="Outlaw"> Outlaw</label>
-                            <label><input type="checkbox" data-tag="Rockabilly"> Rockabilly</label>
                         </div>
                         <div class="tag-group">
                             <div class="tag-group-label">Vibe</div>
@@ -102,27 +99,34 @@
                         </div>
                     </div>
                 </div>
-                <span class="search-hint">chord:VII,II</span>
-                <span class="search-hint">prog:ii-V-I</span>
-                <span class="search-hint">status:placeholder</span>
+                <!-- One-tap facets: these write/remove tag: terms in the box.
+                     The Key pill and Chords popover are built by search-core.js
+                     into #search-facet-pills. -->
+                <button class="facet-chip" data-facet-tag="Instrumental">Instrumentals</button>
+                <button class="facet-chip" data-facet-tag="Gospel">Gospel</button>
+                <button class="facet-chip" data-facet-tag="OldTime">Old-Time</button>
+                <button class="facet-chip" data-facet-tag="Waltz">Waltzes</button>
+                <button class="facet-chip" data-facet-tag="JamFriendly">Jam-Friendly</button>
+                <span class="search-facet-pills" id="search-facet-pills"></span>
                 <button class="search-tips-btn" id="search-tips-btn" title="Search tips">?</button>
                 <div class="search-tips-dropdown hidden" id="search-tips-dropdown">
                     <div class="search-tips-content">
                         <div class="search-tips-header">Search Tips</div>
                         <p><strong>Just type</strong> to search titles, artists, and lyrics:</p>
                         <code>blue moon kentucky</code>
+                        <code>monroe</code>
                         <p><strong>Filter by field</strong> for precise results:</p>
                         <code>artist:hank williams</code>
-                        <code>lyrics:lonesome highway</code>
                         <code>title:blue moon</code>
+                        <code>lyrics:lonesome highway</code>
+                        <code>composer:bill monroe</code>
                         <code>key:G</code>
-                        <code>tag:bluegrass</code>
-                        <p><strong>Exclude results</strong> with minus:</p>
-                        <code>tag:bluegrass -tag:instrumental</code>
-                        <code>artist:george jones -lyrics:drinking</code>
-                        <p><strong>Find chord progressions:</strong></p>
+                        <p><strong>Find chords and progressions:</strong></p>
                         <code>chord:VII,II</code>
                         <code>prog:I-IV-V</code>
+                        <p><strong>Filter by tag</strong> (add a minus to exclude):</p>
+                        <code>tag:Gospel,Waltz</code>
+                        <code>tag:Bluegrass -tag:Instrumental</code>
                     </div>
                 </div>
             </div>

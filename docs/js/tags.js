@@ -1,5 +1,7 @@
 // Tag system for Bluegrass Songbook
 
+import { setTagTerms, toggleTagTerm } from './search-query.js';
+
 // Tag category mapping for display
 export const TAG_CATEGORIES = {
     // Genre
@@ -16,9 +18,12 @@ export const TAG_CATEGORIES = {
     'guitar': 'instrument', 'dobro': 'instrument', 'bass': 'instrument',
 };
 
-// Tag categories for dropdown display
+// Tag categories for dropdown display — mirrors the checkbox groups in
+// index.html. The sub-flavors of country (HonkyTonk, Outlaw, Rockabilly,
+// WesternSwing) are no longer offered as checkboxes now that the whole index is
+// bluegrass-adjacent; songs keep those tags and `tag:HonkyTonk` still works.
 export const TAG_DISPLAY_CATEGORIES = {
-    'Genre': ['Bluegrass', 'ClassicCountry', 'OldTime', 'Gospel', 'Folk', 'HonkyTonk', 'Outlaw', 'Rockabilly', 'WesternSwing'],
+    'Genre': ['Bluegrass', 'ClassicCountry', 'OldTime', 'Gospel', 'Folk'],
     'Vibe': ['JamFriendly', 'Modal', 'Jazzy'],
     'Structure': ['Instrumental', 'Waltz']
 };
@@ -105,11 +110,38 @@ export function renderTagBadges(song, onClick = null) {
 let searchInputEl = null;
 let tagDropdownBtnEl = null;
 let tagDropdownContentEl = null;
+let facetChipEls = [];
 let searchFn = null;
 let parseSearchQueryFn = null;
 
+/** Positive tags currently in the search box */
+function currentQueryTags() {
+    if (!searchInputEl || !parseSearchQueryFn) return [];
+    return parseSearchQueryFn(searchInputEl.value).tagFilters || [];
+}
+
+/** Tags that a control (checkbox or chip) represents, lowercased */
+function controlledTags() {
+    const tags = new Set();
+    tagDropdownContentEl?.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        if (cb.dataset.tag) tags.add(cb.dataset.tag.toLowerCase());
+    });
+    facetChipEls.forEach(chip => {
+        if (chip.dataset.facetTag) tags.add(chip.dataset.facetTag.toLowerCase());
+    });
+    return tags;
+}
+
+/** Write a query into the box, re-run the search, and re-sync the controls */
+function applyQuery(query) {
+    searchInputEl.value = query;
+    if (searchFn) searchFn(query);
+    syncTagControls();
+}
+
 /**
- * Update search from tag checkboxes
+ * Update search from tag checkboxes.
+ * Typed tags that no control represents (e.g. `tag:HonkyTonk`) are preserved.
  */
 export function updateSearchFromTagCheckboxes() {
     if (!tagDropdownContentEl || !searchInputEl) return;
@@ -119,19 +151,30 @@ export function updateSearchFromTagCheckboxes() {
         checkedTags.push(cb.dataset.tag);
     });
 
-    // Get current search without tag filters
-    let currentSearch = searchInputEl.value;
-    // Remove existing tag: filters
-    currentSearch = currentSearch.replace(/\s*(tag|t):[^\s]+/g, '').trim();
+    const controlled = controlledTags();
+    const preserved = currentQueryTags().filter(t => !controlled.has(t.toLowerCase()));
 
-    // Add new tag filters
-    if (checkedTags.length > 0) {
-        const tagFilter = `tag:${checkedTags.join(',')}`;
-        currentSearch = currentSearch ? `${currentSearch} ${tagFilter}` : tagFilter;
+    applyQuery(setTagTerms(searchInputEl.value, [...preserved, ...checkedTags]));
+}
+
+/**
+ * Toggle a single tag from a facet chip. When the dropdown also has a checkbox
+ * for that tag, go through the checkbox so the two surfaces stay in step.
+ */
+function toggleFacetTag(tag) {
+    if (!searchInputEl) return;
+
+    const checkbox = Array.from(
+        tagDropdownContentEl?.querySelectorAll('input[type="checkbox"]') || []
+    ).find(cb => (cb.dataset.tag || '').toLowerCase() === tag.toLowerCase());
+
+    if (checkbox) {
+        checkbox.checked = !checkbox.checked;
+        updateSearchFromTagCheckboxes();
+        return;
     }
 
-    searchInputEl.value = currentSearch;
-    if (searchFn) searchFn(currentSearch);
+    applyQuery(toggleTagTerm(searchInputEl.value, currentQueryTags(), tag));
 }
 
 /**
@@ -140,14 +183,34 @@ export function updateSearchFromTagCheckboxes() {
 export function syncTagCheckboxes() {
     if (!tagDropdownContentEl || !searchInputEl || !parseSearchQueryFn) return;
 
-    const { tagFilters } = parseSearchQueryFn(searchInputEl.value);
-    const tagFiltersLower = tagFilters.map(t => t.toLowerCase());
+    const tagFiltersLower = currentQueryTags().map(t => t.toLowerCase());
 
     tagDropdownContentEl.querySelectorAll('input[type="checkbox"]').forEach(cb => {
         const tag = cb.dataset.tag.toLowerCase();
         // Check if this tag (or prefix) is in the filters
         cb.checked = tagFiltersLower.some(f => tag.startsWith(f) || f.startsWith(tag));
     });
+}
+
+/**
+ * Sync facet chips' active state with the search input
+ */
+export function syncFacetChips() {
+    if (!facetChipEls.length || !searchInputEl || !parseSearchQueryFn) return;
+
+    const tagFiltersLower = currentQueryTags().map(t => t.toLowerCase());
+    facetChipEls.forEach(chip => {
+        const tag = (chip.dataset.facetTag || '').toLowerCase();
+        const active = tagFiltersLower.some(f => tag.startsWith(f) || f.startsWith(tag));
+        chip.classList.toggle('active', active);
+        chip.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+}
+
+/** Sync every tag surface (dropdown + chips) with the query */
+export function syncTagControls() {
+    syncTagCheckboxes();
+    syncFacetChips();
 }
 
 /**
@@ -158,6 +221,7 @@ export function initTagDropdown(options) {
         searchInput,
         tagDropdownBtn,
         tagDropdownContent,
+        facetChips,
         search,
         parseSearchQuery
     } = options;
@@ -165,8 +229,23 @@ export function initTagDropdown(options) {
     searchInputEl = searchInput;
     tagDropdownBtnEl = tagDropdownBtn;
     tagDropdownContentEl = tagDropdownContent;
+    facetChipEls = Array.from(facetChips || document.querySelectorAll('.facet-chip[data-facet-tag]'));
     searchFn = search;
     parseSearchQueryFn = parseSearchQuery;
+
+    // Facet chips work on their own — they don't need the dropdown to exist
+    facetChipEls.forEach(chip => {
+        chip.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleFacetTag(chip.dataset.facetTag);
+            searchInputEl?.focus();
+        });
+    });
+
+    // Keep chips in step with typing
+    if (searchInputEl) {
+        searchInputEl.addEventListener('input', syncTagControls);
+    }
 
     if (!tagDropdownBtnEl || !tagDropdownContentEl) return;
 
@@ -189,9 +268,4 @@ export function initTagDropdown(options) {
             updateSearchFromTagCheckboxes();
         });
     });
-
-    // Sync checkboxes with search input
-    if (searchInputEl) {
-        searchInputEl.addEventListener('input', syncTagCheckboxes);
-    }
 }

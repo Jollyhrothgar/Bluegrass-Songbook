@@ -76,13 +76,7 @@ def parse_query(query: str) -> dict:
         'lyrics_filter': None,
         'composer_filter': None,
         'key_filter': None,
-        'exclude_artist': None,
-        'exclude_title': None,
-        'exclude_lyrics': None,
-        'exclude_composer': None,
-        'exclude_key': None,
         'exclude_tags': [],
-        'exclude_chords': [],
     }
 
     # Load prefixes from shared config
@@ -95,9 +89,15 @@ def parse_query(query: str) -> dict:
     # Find all prefix positions
     matches = []
     for m in re.finditer(pattern, query, re.IGNORECASE):
+        prefix = m.group(2).lower()
+        is_negative = m.group(1) == '-'
+        # Only tags support negation; a '-' before any other prefix means the
+        # whole token stays plain text (mirrors search-core.js).
+        if is_negative and prefix_map.get(prefix) != 'tag':
+            continue
         matches.append({
-            'prefix': m.group(2).lower(),
-            'is_negative': m.group(1) == '-',
+            'prefix': prefix,
+            'is_negative': is_negative,
             'index': m.start(),
             'end': m.end(),
         })
@@ -116,20 +116,9 @@ def parse_query(query: str) -> dict:
         field_type = prefix_map.get(prefix)
 
         if is_negative:
-            if field_type == 'artist':
-                result['exclude_artist'] = value.lower()
-            elif field_type == 'title':
-                result['exclude_title'] = value.lower()
-            elif field_type == 'lyrics':
-                result['exclude_lyrics'] = value.lower()
-            elif field_type == 'composer':
-                result['exclude_composer'] = value.lower()
-            elif field_type == 'key':
-                result['exclude_key'] = value.upper()
-            elif field_type == 'chord':
-                result['exclude_chords'].extend(c.strip() for c in value.split(',') if c.strip())
-            elif field_type == 'tag':
-                result['exclude_tags'].extend(t.strip() for t in value.split(',') if t.strip())
+            # Only -tag: reaches here (others are filtered out above)
+            if field_type == 'tag':
+                result['exclude_tags'].extend(t for t in re.split(r'[\s,]+', value) if t)
         else:
             if field_type == 'artist':
                 result['artist_filter'] = value.lower()
@@ -140,19 +129,22 @@ def parse_query(query: str) -> dict:
             elif field_type == 'composer':
                 result['composer_filter'] = value.lower()
             elif field_type == 'key':
-                result['key_filter'] = value.upper()
+                # A key is one token; the tail returns to text search
+                key_tok, *rest = value.split()
+                result['key_filter'] = key_tok.upper()
+                result['text_terms'].extend(t.lower() for t in rest)
             elif field_type == 'chord':
                 result['chord_filters'].extend(c.strip() for c in value.split(',') if c.strip())
             elif field_type == 'prog':
                 result['progression_filter'] = [c.strip() for c in value.split('-') if c.strip()]
             elif field_type == 'tag':
-                result['tag_filters'].extend(t.strip() for t in value.split(',') if t.strip())
+                result['tag_filters'].extend(t for t in re.split(r'[\s,]+', value) if t)
 
     # Extract general text (before first prefix)
     first_prefix_index = matches[0]['index'] if matches else len(query)
     general_text = query[:first_prefix_index].strip()
     if general_text:
-        result['text_terms'] = general_text.lower().split()
+        result['text_terms'] = general_text.lower().split() + result['text_terms']
 
     return result
 
@@ -238,31 +230,10 @@ def search(songs: list[dict], query: str) -> list[dict]:
             if (song.get('key') or '').upper() != parsed['key_filter']:
                 continue
 
-        # Field filters (exclusion)
-        if parsed['exclude_artist']:
-            if parsed['exclude_artist'] in (song.get('artist') or '').lower():
-                continue
-        if parsed['exclude_title']:
-            if parsed['exclude_title'] in (song.get('title') or '').lower():
-                continue
-        if parsed['exclude_lyrics']:
-            if parsed['exclude_lyrics'] in (song.get('lyrics') or '').lower():
-                continue
-        if parsed['exclude_composer']:
-            if parsed['exclude_composer'] in (song.get('composer') or '').lower():
-                continue
-        if parsed['exclude_key']:
-            if (song.get('key') or '').upper() == parsed['exclude_key']:
-                continue
-
         # Chord filters
         if parsed['chord_filters']:
             if not song_has_chords(song, parsed['chord_filters']):
                 continue
-        if parsed['exclude_chords']:
-            if song_has_chords(song, parsed['exclude_chords']):
-                continue
-
         # Progression filter
         if parsed['progression_filter']:
             if not song_has_progression(song, parsed['progression_filter']):
