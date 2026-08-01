@@ -1,0 +1,19 @@
+id: watson-s-blues
+title: Watson's Blues
+artist: null
+composers: []
+default_key: E
+tags:
+- Instrumental
+parts:
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  default: true
+  provenance:
+    source: mandozine
+    source_url: https://mandozine.com/music/zip_files/allfiles.zip
+    author: Monroe
+    imported_at: '2026-08-01'
+    source_file: WatsonsBlues-E-Monroe.tef

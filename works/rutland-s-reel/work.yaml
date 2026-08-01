@@ -1,0 +1,19 @@
+id: rutland-s-reel
+title: Rutland's Reel
+artist: null
+composers: []
+default_key: Am
+tags:
+- Instrumental
+parts:
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  default: true
+  provenance:
+    source: mandozine
+    source_url: https://mandozine.com/music/zip_files/allfiles.zip
+    author: Spider
+    imported_at: '2026-08-01'
+    source_file: RutlandsReel-Am-Spider.tef

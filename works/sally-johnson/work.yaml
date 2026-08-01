@@ -1,0 +1,19 @@
+id: sally-johnson
+title: Sally Johnson
+artist: null
+composers: []
+default_key: G
+tags:
+- Instrumental
+parts:
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  default: true
+  provenance:
+    source: mandozine
+    source_url: https://mandozine.com/music/zip_files/allfiles.zip
+    author: Trad
+    imported_at: '2026-08-01'
+    source_file: SallyJohnson-G-Trad.tef

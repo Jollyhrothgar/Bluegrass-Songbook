@@ -1,0 +1,19 @@
+id: swing-51
+title: Swing 51
+artist: null
+composers: []
+default_key: D
+tags:
+- Instrumental
+parts:
+- type: tablature
+  instrument: mandolin
+  format: otf
+  file: mandolin.otf.json
+  default: true
+  provenance:
+    source: mandozine
+    source_url: https://mandozine.com/music/zip_files/allfiles.zip
+    author: Grisman
+    imported_at: '2026-08-01'
+    source_file: Swing51-D-Grisman.tef
