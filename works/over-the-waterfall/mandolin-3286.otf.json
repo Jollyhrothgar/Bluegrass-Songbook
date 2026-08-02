@@ -66,20 +66,13 @@
       "role": "rhythm"
     },
     {
-      "id": "hill-billy-percu",
-      "instrument": "8-string",
-      "tuning": [
-        "C#4",
-        "D#4",
-        "F#3",
-        "D4",
-        "A3",
-        "C#3",
-        "F3",
-        "G#2"
-      ],
+      "id": "percussion",
+      "instrument": "percussion",
+      "tuning": [],
       "capo": 0,
-      "role": "rhythm"
+      "role": "percussion",
+      "percussion": true,
+      "lines": 8
     }
   ],
   "notation": {
@@ -1526,7 +1519,7 @@
         ]
       }
     ],
-    "hill-billy-percu": [
+    "percussion": [
       {
         "measure": 1,
         "events": [

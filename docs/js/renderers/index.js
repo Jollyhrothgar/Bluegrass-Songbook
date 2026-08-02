@@ -4,6 +4,7 @@
 import { TabRenderer, INSTRUMENT_ICONS } from './tablature.js';
 import { TabPlayer, getInstrumentKey, PITCH_TO_MIDI, INSTRUMENTS } from './tab-player.js';
 import { renderAsciiTab, copyAsciiTab } from './tab-ascii.js';
+import { isPercussionTrack, pitchedTracks } from './otf-tracks.js';
 import {
     parseChordPro, renderSectionsHtml, renderSectionsAscii, renderSectionsPrintHtml
 } from './chordpro.js';
@@ -118,7 +119,9 @@ export {
     parseChordPro,
     renderSectionsHtml,
     renderSectionsAscii,
-    renderSectionsPrintHtml
+    renderSectionsPrintHtml,
+    isPercussionTrack,
+    pitchedTracks
 };
 
 // Ts-aware measure math (shared by renderer, player, work-view, editor)

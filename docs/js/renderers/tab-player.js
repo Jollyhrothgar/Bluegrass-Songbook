@@ -9,6 +9,7 @@ import {
     maxMeasureIn,
     measureTimingFromOtf,
 } from './measure-timing.js';
+import { pitchedTracks } from './otf-tracks.js';
 
 // Pitch name to MIDI mapping
 const PITCH_TO_MIDI = {};
@@ -394,9 +395,14 @@ export class TabPlayer {
         // AUDIBLE at start. Each track plays through its own gain bus so
         // parts can be toggled LIVE mid-loop (setTrackEnabled) without
         // restarting playback.
-        const tracksToPlay = otfData.tracks;
+        //
+        // Percussion is excluded outright: a drum track has no tuning, and
+        // its `s`/`f` are kit line + hit variant, so the pitched scheduling
+        // below would sound it as arbitrary guitar notes (otf-tracks.js).
+        // Playing drums properly needs a kit soundfont, not this path.
+        const tracksToPlay = pitchedTracks(otfData.tracks);
         const audibleAtStart = new Set(
-            options.trackIds ?? otfData.tracks.map(t => t.id));
+            options.trackIds ?? tracksToPlay.map(t => t.id));
 
         if (tracksToPlay.length === 0) return;
 

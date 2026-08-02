@@ -62,19 +62,17 @@
       "role": "lead"
     },
     {
-      "id": "clicks",
-      "instrument": "3-string",
-      "tuning": [
-        "C#4",
-        "F3",
-        "G#2"
-      ],
+      "id": "percussion",
+      "instrument": "percussion",
+      "tuning": [],
       "capo": 0,
-      "role": "rhythm"
+      "role": "percussion",
+      "percussion": true,
+      "lines": 3
     }
   ],
   "notation": {
-    "clicks": [
+    "percussion": [
       {
         "measure": 1,
         "events": [

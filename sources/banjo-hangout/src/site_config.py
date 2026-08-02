@@ -64,6 +64,13 @@ INSTRUMENT_ALIASES = {
 
 # Tracks that aren't a playable instrument part (click/metronome tracks
 # are emitted with a real instrument type, so match on the track id).
+#
+# Percussion is NO LONGER handled here: TEF's structural percussion flag
+# (reader.py _PERCUSSION_FLAG) types drum tracks as `instrument: percussion`,
+# which normalize_instrument() drops on its own. Don't add drum names to this
+# list — TablEdit names lie (mandolin-hangout 2613's drum track is called
+# "Guitar Standard"), which is exactly why the flag exists. This list now only
+# covers unflagged sources.
 UTILITY_TRACK_IDS = ('clicks', 'click', 'metronome')
 
 # Backup-only instruments: their presence doesn't make a file an ensemble.

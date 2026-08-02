@@ -147,3 +147,61 @@ def test_11245_capo_metadata_and_sounding_tuning():
     assert banjo.tuning_pitches == [p + 2 for p in OPEN_G]
     assert tef.instruments[2].tuning_pitches == MANDOLIN  # no capo
     assert tef.instruments[2].capo == 0
+
+
+# ----------------------------------------------------------- percussion
+
+# u16 @ record+6 == 98 marks a drum track. Its 8 "tuning" bytes are drum-kit
+# staff-line assignments, so the `96 - b` pitch formula must not run on them —
+# doing so fabricated a tuning (C#4-D#4-F#3-D4-A3-C#3-F3-G#2) that the player
+# then sounded as arbitrary guitar notes.
+
+def test_2927_percussion_track_is_flagged_not_pitched():
+    """MandoTom2's Gold Rush: 4 melodic tracks + 1 drum track."""
+    tef = TEFReader(str(FIXTURES / "2927_gold_rush_percussion.tef")).parse()
+    perc = [i for i in tef.instruments if i.is_percussion]
+    assert len(perc) == 1
+    assert perc[0].num_strings == 8
+    # No fabricated pitches, and the flag never leaks onto melodic tracks
+    assert perc[0].tuning_pitches == []
+    assert all(not i.is_percussion for i in tef.instruments if i is not perc[0])
+    assert [i.num_strings for i in tef.instruments] == [4, 4, 4, 4, 8]
+
+
+def test_2613_percussion_detected_despite_lying_name():
+    """The flag beats the name: this drum track is named "Guitar Standard".
+
+    Its drum-line bytes are byte-identical to 2927's "Percussion..." track,
+    so any name- or string-count-based rule misfiles it as a guitar.
+    """
+    tef = TEFReader(str(FIXTURES / "2613_gold_rush_percussion_misnamed.tef")).parse()
+    perc = [i for i in tef.instruments if i.is_percussion]
+    assert len(perc) == 1
+    assert perc[0].name == "Guitar Standard"
+    assert perc[0].tuning_pitches == []
+
+
+def test_percussion_otf_track_is_untuned_and_typed():
+    """OTF must say "percussion" outright — no fake tuning, no fake instrument."""
+    tef = TEFReader(str(FIXTURES / "2927_gold_rush_percussion.tef")).parse()
+    tracks = tef_to_otf(tef).to_dict()["tracks"]
+    perc = [t for t in tracks if t.get("percussion")]
+    assert len(perc) == 1
+    assert perc[0] == {
+        "id": "percussion", "instrument": "percussion", "tuning": [],
+        "capo": 0, "role": "percussion", "percussion": True, "lines": 8,
+    }
+    # Melodic tracks are untouched and carry no percussion keys
+    assert [t["id"] for t in tracks] == [
+        "mandolin", "guitar", "bass", "fiddle", "percussion"]
+    assert all("percussion" not in t for t in tracks[:4])
+
+
+def test_misnamed_percussion_does_not_become_a_guitar():
+    """Regression: 2613's drum track used to publish as a 6-string guitar
+    with EIGHT tuning entries."""
+    tef = TEFReader(str(FIXTURES / "2613_gold_rush_percussion_misnamed.tef")).parse()
+    tracks = tef_to_otf(tef).to_dict()["tracks"]
+    assert [t["instrument"] for t in tracks] == [
+        "mandolin", "mandolin", "upright-bass", "percussion"]
+    assert tracks[-1]["tuning"] == []

@@ -220,7 +220,7 @@ Row-shape changes (`write_outputs()` in `build_works_index.py`):
 | `abc_content` | **removed** → still inside the `.pro` (`{start_of_abc}` block) |
 | `has_content` | `true` when the work has a lead sheet; **omitted** otherwise (placeholders, tab-only works) |
 | `has_abc` | `true` when the lead sheet embeds an ABC block; **omitted** otherwise |
-| `tablature_parts[].tracks` | int — the OTF's track count, read during the tab copy step (lets the frontend decide about the track mixer without downloading the OTF) |
+| `tablature_parts[].tracks` | int — the OTF's PLAYABLE track count, read during the tab copy step (lets the frontend decide about the track mixer without downloading the OTF). Percussion tracks are excluded: they're neither rendered nor played, so counting them would stamp `tag:multipart` on single-instrument tabs |
 | `lyrics` | unchanged on canon rows; clipped to 200 chars on archive rows |
 
 Everything else is byte-for-byte what it was. Both `.jsonl` files inherit the

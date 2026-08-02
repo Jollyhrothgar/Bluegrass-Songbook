@@ -34,6 +34,9 @@ function v3Fingering(evt) {
 
 // --- instrument identity -----------------------------------------------------
 export function instrumentToOtfId(inst) {
+    // The structural percussion flag wins over every name/string-count rule
+    // below — a drum track's name can lie ("Guitar Standard" in 2613).
+    if (inst.is_percussion) return 'percussion';
     const name = inst.name.toLowerCase();
     if (inst.num_strings === 4 && (name.includes('banjo') || name.includes('tenor')
         || name.includes('cgdg') || name.includes('cgda'))) return 'tenor-banjo';
@@ -52,6 +55,7 @@ export function instrumentToOtfId(inst) {
 }
 
 export function instrumentToType(inst) {
+    if (inst.is_percussion) return 'percussion';
     const name = inst.name.toLowerCase();
     if (inst.num_strings === 4 && (name.includes('banjo') || name.includes('tenor')
         || name.includes('cgdg') || name.includes('cgda'))) return 'tenor-banjo';
@@ -289,6 +293,17 @@ export function tefToOtf(tef) {
         if (count > 1) trackId = `${trackId}-${count}`;
 
         const instType = instrumentToType(inst);
+
+        // A drum track has no tuning to fall back to — the banjo default
+        // below is exactly what made percussion play back as pitched notes.
+        if (inst.is_percussion) {
+            tracks.push({
+                id: trackId, instrument: instType, tuning: [], capo: 0,
+                role: 'percussion', percussion: true, lines: inst.num_strings,
+            });
+            continue;
+        }
+
         let tuning;
         if (inst.tuning_pitches && inst.tuning_pitches.length) {
             tuning = inst.tuning_pitches.map(midiToPitchName);
@@ -473,9 +488,15 @@ export function toOtfDict(doc) {
         otf_version: doc.otf_version,
         metadata,
         timing: { ticks_per_beat: doc.timing.ticks_per_beat },
-        tracks: doc.tracks.map(t => ({
-            id: t.id, instrument: t.instrument, tuning: t.tuning, capo: t.capo, role: t.role,
-        })),
+        tracks: doc.tracks.map(t => {
+            const out = {
+                id: t.id, instrument: t.instrument, tuning: t.tuning,
+                capo: t.capo, role: t.role,
+            };
+            // Emitted only for drum tracks, so pitched tabs stay byte-identical
+            if (t.percussion) { out.percussion = true; out.lines = t.lines; }
+            return out;
+        }),
         notation: {},
     };
     for (const [trackId, measures] of Object.entries(doc.notation)) {

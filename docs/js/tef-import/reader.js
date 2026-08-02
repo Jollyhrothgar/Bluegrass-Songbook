@@ -116,9 +116,15 @@ function readV2Header(data) {
 // --- track records ---------------------------------------------------------
 const V2_TRACK_RECORD_SIZE = 50;
 
+// u16 @ record+6 === 98 marks a PERCUSSION (drum) track; its "tuning" bytes
+// are drum-kit line assignments, so the `96 - b` pitch formula must not run.
+// Mirror of TEFReader._PERCUSSION_FLAG — see reader.py for the corpus survey.
+const PERCUSSION_FLAG = 98;
+
 function recordToInstruments(data, o) {
     const numStrings = u16(data, o);
     const split = u16(data, o + 4);
+    const isPercussion = u16(data, o + 6) === PERCUSSION_FLAG;
     const program = data[o + 8];
     const program2 = data[o + 10];
     const capo = data[o + 12];
@@ -129,14 +135,23 @@ function recordToInstruments(data, o) {
     if (nul >= 0) nameBytes = nameBytes.subarray(0, nul);
     const name = latin1(nameBytes).trim();
 
-    const isPacked = numStrings >= 9 && split >= 3 && split <= 8
+    // A drum track is never a packed pair of melodic sub-tracks.
+    const isPacked = !isPercussion && numStrings >= 9 && split >= 3 && split <= 8
         && (numStrings - split) >= 3 && (numStrings - split) <= 8
         && program2 <= 127;
 
     const mk = (nm, ns, tun, cp, prog) => ({
         name: nm, tuning_name: '', num_strings: ns,
         tuning_pitches: tun.map(b => 96 - b), capo: cp <= 12 ? cp : 0, midi_program: prog,
+        is_percussion: false,
     });
+
+    if (isPercussion) {
+        return [{
+            name: name || 'Percussion', tuning_name: '', num_strings: numStrings,
+            tuning_pitches: [], capo: 0, midi_program: program, is_percussion: true,
+        }];
+    }
 
     if (isPacked) {
         const rest = numStrings - split;

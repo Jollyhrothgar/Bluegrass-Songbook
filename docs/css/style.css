@@ -7731,6 +7731,39 @@ mark {
     opacity: 0.9;
 }
 
+/* Percussion: detected, deliberately not drawn. We can identify a drum
+   track reliably but not yet which drum each staff line means, so we show
+   the track greyed out and say so rather than inventing a pitched stave. */
+.tablature-track-section.percussion-track {
+    border-style: dashed;
+    background: var(--bg-secondary);
+}
+
+.percussion-placeholder {
+    padding: 1rem;
+    color: var(--text-secondary);
+}
+
+.percussion-placeholder-head {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.percussion-icon {
+    font-size: 1.1rem;
+    filter: grayscale(1);
+    opacity: 0.7;
+}
+
+.percussion-note {
+    margin: 0.4rem 0 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    max-width: 46ch;
+}
+
 .tablature-track-header {
     display: flex;
     align-items: center;

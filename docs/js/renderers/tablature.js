@@ -8,6 +8,7 @@ import {
     measureTicksFor,
     parseTimeSignature,
 } from './measure-timing.js';
+import { isPercussionTrack } from './otf-tracks.js';
 
 /**
  * Silent spans inside a measure that deserve rest glyphs: the gap after
@@ -372,6 +373,17 @@ export class TabRenderer {
 
         if (!track || !notation || notation.length === 0) {
             this.container.innerHTML = '<p style="color:#888;text-align:center;">No notation for this track</p>';
+            return;
+        }
+
+        // This renderer draws a PITCHED stave: it needs `tuning` for the
+        // line count and the header, and treats `f` as a fret. A drum track
+        // satisfies none of that, so say so rather than drawing a stave of
+        // fabricated strings (see otf-tracks.js). Callers normally filter
+        // percussion out well before here.
+        if (isPercussionTrack(track)) {
+            this.container.innerHTML =
+                '<p style="color:#888;text-align:center;">Percussion track (not shown)</p>';
             return;
         }
 

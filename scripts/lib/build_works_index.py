@@ -263,11 +263,15 @@ def _tab_provenance_mismatch(otf_path: Path, prov_source_id):
 
 
 def otf_track_count(otf_path: Path):
-    """Number of tracks in an OTF file, or None if it can't be read.
+    """Number of PLAYABLE tracks in an OTF file, or None if it can't be read.
 
     Published on each `tablature_parts` entry as `tracks` so the frontend can
     tell a one-track tab from a multi-instrument arrangement (whether to show
     the track mixer) without downloading the OTF first.
+
+    Percussion tracks don't count: they are neither rendered nor played (see
+    docs/js/renderers/otf-tracks.js), so counting them would show a mixer
+    with one entry and stamp `tag:multipart` on single-instrument tabs.
     """
     try:
         data = json.loads(otf_path.read_text())
@@ -275,7 +279,12 @@ def otf_track_count(otf_path: Path):
         return None
     tracks = data.get('tracks')
     if isinstance(tracks, list):
-        return len(tracks)
+        return sum(
+            1 for t in tracks
+            if not (isinstance(t, dict)
+                    and (t.get('percussion') is True
+                         or t.get('instrument') == 'percussion'))
+        )
     return None
 
 
