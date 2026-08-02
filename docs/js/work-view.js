@@ -1828,12 +1828,40 @@ async function renderTablaturePart(part, container) {
             }
         }
 
-        for (const track of otf.tracks) {
-            // Percussion has no pitched stave to draw (see otf-tracks.js)
-            if (isPercussionTrack(track)) continue;
+        // Track ids that own a section, in document order — rendered staves
+        // AND percussion placeholders (which have no renderer).
+        const viewIds = [];
 
+        for (const track of otf.tracks) {
             let notation = otf.notation[track.id];
             if (!notation || notation.length === 0) continue;
+
+            // Percussion is SHOWN but not drawn: we can detect a drum track
+            // reliably, but not yet which drum each staff line means, so a
+            // pitched stave would be fiction. Say so instead of hiding it.
+            // See otf-tracks.js and sources/banjo-hangout/CLAUDE.md.
+            if (isPercussionTrack(track)) {
+                const section = document.createElement('div');
+                section.className = 'tablature-track-section percussion-track';
+                section.dataset.trackId = track.id;
+                section.style.display =
+                    (activeTrackView === 'all' || (activeTrackView ?? leadTrackId) === track.id)
+                        ? 'block' : 'none';
+                section.innerHTML = `
+                    <div class="percussion-placeholder">
+                        <div class="percussion-placeholder-head">
+                            <span class="percussion-icon">🥁</span>
+                            <span class="percussion-name">${escapeHtml(track.id)}</span>
+                        </div>
+                        <p class="percussion-note">
+                            Drum notation is in progress — this arrangement has a
+                            percussion track, but it isn't displayed or played yet.
+                        </p>
+                    </div>`;
+                allTracksContainer.appendChild(section);
+                viewIds.push(track.id);
+                continue;
+            }
 
             const isLead = track.id === leadTrackId || track.role === 'lead';
             const isMandolin = track.instrument?.includes('mandolin') || track.id?.includes('mandolin');
@@ -1879,14 +1907,14 @@ async function renderTablaturePart(part, container) {
             const renderer = new TabRenderer(tabContainer);
             renderer.render(track, notation, ticksPerBeat, timeSignature, timings.visual);
             trackRenderers[track.id] = renderer;
+            viewIds.push(track.id);
         }
 
-        // Populate the view tabs from the tracks that actually rendered
-        const renderedIds = Object.keys(trackRenderers);
-        if (renderedIds.length > 1) {
+        // Populate the view tabs from every track that owns a section
+        if (viewIds.length > 1) {
             const current = activeTrackView ?? leadTrackId;
             trackTabsBar.innerHTML = [
-                ...renderedIds.map(id => `
+                ...viewIds.map(id => `
                     <button class="track-view-tab${id === current ? ' active' : ''}"
                             data-view="${id}">${escapeHtml(id)}</button>`),
                 `<button class="track-view-tab${current === 'all' ? ' active' : ''}"

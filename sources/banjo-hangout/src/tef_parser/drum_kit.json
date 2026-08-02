@@ -1,0 +1,312 @@
+{
+  "_source": "TablEdit 3.x \u2192 track Instrument dialog \u2192 Configuration tab (drum kit table), read from mandolin-hangout 2927 track 5 on 2026-08-01",
+  "_note": "Key = GM percussion note number, which is EXACTLY the byte stored per staff line in a TEF drum-tab track record at +20. Channel 10.",
+  "drums": {
+    "32": {
+      "name": "Square Kick",
+      "tab_symbol": "0",
+      "note_pitch": 27,
+      "note_head": 0
+    },
+    "33": {
+      "name": "Metronome Click",
+      "tab_symbol": "0",
+      "note_pitch": 27,
+      "note_head": 0
+    },
+    "34": {
+      "name": "Metronome Bell",
+      "tab_symbol": "0",
+      "note_pitch": 27,
+      "note_head": 0
+    },
+    "35": {
+      "name": "Kick Drum 2",
+      "tab_symbol": "0",
+      "note_pitch": 25,
+      "note_head": 0
+    },
+    "36": {
+      "name": "Kick Drum 1",
+      "tab_symbol": "0",
+      "note_pitch": 25,
+      "note_head": 0
+    },
+    "37": {
+      "name": "Side Stick",
+      "tab_symbol": "x",
+      "note_pitch": 21,
+      "note_head": 3
+    },
+    "38": {
+      "name": "Acoustic Snare",
+      "tab_symbol": "x",
+      "note_pitch": 21,
+      "note_head": 0
+    },
+    "39": {
+      "name": "Hand Clap",
+      "tab_symbol": "x",
+      "note_pitch": 20,
+      "note_head": 0
+    },
+    "40": {
+      "name": "Electric Snare",
+      "tab_symbol": "x",
+      "note_pitch": 21,
+      "note_head": 0
+    },
+    "41": {
+      "name": "Low Floor Tom",
+      "tab_symbol": "x",
+      "note_pitch": 23,
+      "note_head": 0
+    },
+    "42": {
+      "name": "Closed Hi-Hat",
+      "tab_symbol": "x",
+      "note_pitch": 17,
+      "note_head": 4
+    },
+    "43": {
+      "name": "High Floor Tom",
+      "tab_symbol": "x",
+      "note_pitch": 23,
+      "note_head": 0
+    },
+    "44": {
+      "name": "Pedal Hi-Hat",
+      "tab_symbol": "f",
+      "note_pitch": 27,
+      "note_head": 4
+    },
+    "45": {
+      "name": "Low Tom",
+      "tab_symbol": "x",
+      "note_pitch": 20,
+      "note_head": 0
+    },
+    "46": {
+      "name": "Open Hi-Hat",
+      "tab_symbol": "o",
+      "note_pitch": 17,
+      "note_head": 1
+    },
+    "47": {
+      "name": "Low-Mid Tom",
+      "tab_symbol": "x",
+      "note_pitch": 20,
+      "note_head": 0
+    },
+    "48": {
+      "name": "High-Mid Tom",
+      "tab_symbol": "x",
+      "note_pitch": 20,
+      "note_head": 0
+    },
+    "49": {
+      "name": "Crash Cymbal",
+      "tab_symbol": "X",
+      "note_pitch": 16,
+      "note_head": 2
+    },
+    "50": {
+      "name": "High Tom",
+      "tab_symbol": "x",
+      "note_pitch": 19,
+      "note_head": 0
+    },
+    "51": {
+      "name": "Ride Cymbal 1",
+      "tab_symbol": "x",
+      "note_pitch": 17,
+      "note_head": 2
+    },
+    "52": {
+      "name": "Chinese Cymbal",
+      "tab_symbol": "c",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "53": {
+      "name": "Ride Bell",
+      "tab_symbol": "X",
+      "note_pitch": 17,
+      "note_head": 2
+    },
+    "54": {
+      "name": "Tambourine",
+      "tab_symbol": "?",
+      "note_pitch": 17,
+      "note_head": 0
+    },
+    "55": {
+      "name": "Splash Cymbal",
+      "tab_symbol": "s",
+      "note_pitch": 17,
+      "note_head": 3
+    },
+    "56": {
+      "name": "Cowbell",
+      "tab_symbol": "?",
+      "note_pitch": 17,
+      "note_head": 0
+    },
+    "57": {
+      "name": "Crash Cymbal 2",
+      "tab_symbol": "X",
+      "note_pitch": 16,
+      "note_head": 3
+    },
+    "58": {
+      "name": "Vibraslap",
+      "tab_symbol": "?",
+      "note_pitch": 17,
+      "note_head": 0
+    },
+    "59": {
+      "name": "Ride Cymbal 2",
+      "tab_symbol": "x",
+      "note_pitch": 17,
+      "note_head": 2
+    },
+    "60": {
+      "name": "High Bongo",
+      "tab_symbol": "?",
+      "note_pitch": 15,
+      "note_head": 0
+    },
+    "61": {
+      "name": "Low Bongo",
+      "tab_symbol": "?",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "62": {
+      "name": "Mute High Conga",
+      "tab_symbol": "c",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "63": {
+      "name": "Open High Conga",
+      "tab_symbol": "C",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "64": {
+      "name": "Low Conga",
+      "tab_symbol": "?",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "65": {
+      "name": "High Timbale",
+      "tab_symbol": "T",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "66": {
+      "name": "Low Timbale",
+      "tab_symbol": "t",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "67": {
+      "name": "High Agogo",
+      "tab_symbol": "A",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "68": {
+      "name": "Low Agogo",
+      "tab_symbol": "a",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "69": {
+      "name": "Cabasa",
+      "tab_symbol": "c",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "70": {
+      "name": "Maracas",
+      "tab_symbol": "m",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "71": {
+      "name": "Short Whistle",
+      "tab_symbol": "w",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "72": {
+      "name": "Long Whistle",
+      "tab_symbol": "W",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "73": {
+      "name": "Short Guiro",
+      "tab_symbol": "g",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "74": {
+      "name": "Long Guiro",
+      "tab_symbol": "G",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "75": {
+      "name": "Claves",
+      "tab_symbol": "C",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "76": {
+      "name": "High Wood Block",
+      "tab_symbol": "W",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "77": {
+      "name": "Low Wood Block",
+      "tab_symbol": "w",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "78": {
+      "name": "Mute Cuica",
+      "tab_symbol": "c",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "79": {
+      "name": "Open Cuica",
+      "tab_symbol": "C",
+      "note_pitch": 15,
+      "note_head": 2
+    },
+    "80": {
+      "name": "Mute Triangle",
+      "tab_symbol": "t",
+      "note_pitch": 14,
+      "note_head": 3
+    },
+    "81": {
+      "name": "Open Triangle",
+      "tab_symbol": "T",
+      "note_pitch": 15,
+      "note_head": 3
+    },
+    "82": {
+      "name": "Shaker",
+      "tab_symbol": "S",
+      "note_pitch": 15,
+      "note_head": 2
+    }
+  }
+}

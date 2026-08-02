@@ -406,10 +406,45 @@ tracks now convert to:
  "capo": 0, "role": "percussion", "percussion": true, "lines": 8}
 ```
 
-The frontend filters them out of the stave, the mixer, playback and the
-editor (`docs/js/renderers/otf-tracks.js`), and `build_works_index`'s
-`tracks` count excludes them. The notation is preserved, so a real drum
-renderer/kit playback can pick it up later without reconverting.
+The frontend keeps them out of the mixer, playback and the editor
+(`docs/js/renderers/otf-tracks.js`), and `build_works_index`'s `tracks`
+count excludes them. The track IS shown on the song page — greyed out,
+with a "drum notation is in progress" note — rather than hidden, because
+we can detect a drum track reliably but cannot yet say which drum each
+staff line means (see below). Notation is preserved, so a real drum
+renderer / kit playback can pick it up later without reconverting.
+
+#### What the line→drum mapping is NOT (verified 2026-08-02)
+
+Confirmed against TablEdit itself (its track dialog shows **"Drum Tab"**
+checked and **MIDI Channels 10-10** for a flagged track, so the `+6 == 98`
+detection is semantically right). Ground truth came from TablEdit MIDI
+exports of gold-rush 2927 (8 lines) and big-sciota 23579 (3 lines), each
+matching our OTF note-for-note (786/786 notes over 285 chords for 2927).
+
+Two hypotheses are **falsified** — don't re-try them:
+
+1. **The `+20` bytes are not the drum assignment.** They decode to
+   plausible GM drum names, which makes them *look* right. But both files
+   carry bytes `43` and `52` on used lines while their MIDI produces
+   different drums ({36,41,43} vs {32,41}); and no 8-byte window anywhere
+   in 2927 contains all four drums it actually plays ({36,41,43,51}).
+2. **`f` is not the drum selector.** In 2927 lines 1 and 2 have different
+   `f` (2 and 0) but the same drum (GM 51); in 23579 lines 2 and 3 share
+   `f = 0` but produce different drums.
+
+The staff line decides, and that mapping is not in the data we parse.
+That two distinct lines map to the *same* drum argues against a simple
+per-line vector and toward something derived — a fixed drum-tab template
+by line count (an app preference, not in the file), or the track's MIDI
+kit ("TR-808 Set" on 2927) remapping. Unresolved: whether it varies per
+file at all.
+
+`drum_kit.json` (beside `reader.py`) holds TablEdit's own 51-drum table —
+GM note → name, tab symbol, staff position, notehead — scraped from the
+track dialog's Configuration tab. It's what a renderer will need once the
+line→drum mapping is found. Next lead: TuxGuitar's TablEdit importer,
+which already validated our track-record layout.
 
 ### Multi-Track Ensemble Support
 

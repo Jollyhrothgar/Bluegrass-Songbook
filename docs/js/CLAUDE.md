@@ -300,12 +300,19 @@ Multi-track tabs (e.g., ensemble arrangements with guitar, banjo, mandolin, bass
 - `5-string-banjo`, `6-string-guitar`, `mandolin`, `upright-bass`, etc.
 - Falls back to track index if no instrument name
 
-**Percussion tracks are excluded everywhere** — stave, mixer, playback and
-the OTF editor — via `isPercussionTrack` / `pitchedTracks` in
-`renderers/otf-tracks.js`. A drum track (`percussion: true`,
-`instrument: 'percussion'`, empty `tuning`) is not pitched: its `s` is a
-kit staff line and its `f` a hit variant, so `tuning[s-1] + f` yields
-nonsense. Use the shared predicate — never sniff track names, which lie.
+**Percussion tracks are excluded from mixer, playback and the OTF editor**
+via `isPercussionTrack` / `pitchedTracks` in `renderers/otf-tracks.js`. A
+drum track (`percussion: true`, `instrument: 'percussion'`, empty
+`tuning`) is not pitched: its `s` is a kit staff line, so `tuning[s-1] + f`
+yields nonsense. Use the shared predicate — never sniff track names, which
+lie (one drum track is named "Guitar Standard").
+
+On the song page the track IS shown, greyed out (`.percussion-track` +
+`.percussion-placeholder`), with a "drum notation is in progress" note,
+and it gets a track-view tab like any other. Deliberate: we can detect a
+drum track reliably but not yet which drum each line means, so drawing a
+stave would be fiction and hiding it would be a lie by omission. See
+`sources/banjo-hangout/CLAUDE.md` for what's known about the mapping.
 
 ### Transposition
 
