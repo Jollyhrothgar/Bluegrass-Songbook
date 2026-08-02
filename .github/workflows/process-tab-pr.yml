@@ -66,10 +66,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add works/
-          git add docs/data/index.jsonl
-          git add docs/data/archive.jsonl
-          git add docs/data/songs/
-          git add docs/data/tabs/
           git diff --staged --quiet || git commit -m "Finalize tab PR: provenance + index"
           git push
 
