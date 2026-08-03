@@ -171,6 +171,53 @@ Bluegrass-Songbook/
 └── package.json             # Node.js test dependencies
 ```
 
+## Data Tiers — what's tracked, and why
+
+**The rule: if a build produces it, git doesn't track it.** `git status` should
+only ever show things a human edited, so "commit everything that's dirty" is
+always the right answer and nobody has to decide what belongs in a PR.
+
+| Tier | Where | Tracked? | Read by the site build? | If lost |
+|------|-------|----------|------------------------|---------|
+| 1. Acquisition cache | `sources/*/raw/`, `downloads/` | mostly **no** (per-source `.gitignore`) | no | re-scrape |
+| 2. Primary artifacts | `sources/*/parsed/`, Hangout `downloads/*.tef` | **yes** | no | not re-creatable cheaply — the parsers are frozen |
+| 3. Authoritative | `works/*/work.yaml` + parts | **yes** | **yes** | unrecoverable — hand-edited |
+| 4. Generated site data | `docs/data/index.jsonl`, `archive.jsonl`, `songs/`, `tabs/*.otf.json` | **no** | rebuilt every deploy | `./scripts/bootstrap --quick` |
+
+Tier 4 is gitignored (2026-08-02). Every consumer rebuilds it before use — the
+Pages deploy (`.github/workflows/build.yml` runs `build_works_index.py` then
+uploads `docs/`) and all four `process-*.yml` automations — so the committed
+copies never reached production and only made corpus PRs unreadable.
+
+Three carve-outs, all deliberate — each verified by wiping `docs/data/` and
+rebuilding from `works/` (songs and tabs came back with **0 diffs**; the items
+below did **not** come back, which is exactly why they stay tracked):
+
+- **`docs/data/tabs/*_tef.otf.json` stays tracked.** Those six are hand-placed
+  OTF test fixtures, not build output: `build_works_index`'s orphan prune
+  spares them and `docs/js/__tests__/otf-editor/facade-27493.test.js` reads one
+  directly. Adding a new fixture means matching that `*_tef` name.
+- **`docs/data/docs/` (published PDFs) stays tracked.** It's 4 files that never
+  churn, so ignoring it would buy nothing — and one of them
+  (`ive-just-seen-a-face-banjo-intro-tab.pdf`) has no matching source anywhere
+  in `works/`, so it is only recoverable from git. The doc-copy step also has
+  no orphan prune, so stale copies from deleted works linger here.
+- **Caches in `docs/data/*.json` stay tracked** (`artist_tags`, `llm_tags`,
+  `tag_overrides`, `strum_machine_cache`, `deleted_songs`, `grassiness_scores`,
+  …). They are *inputs* CI reads, not outputs — see "Local vs CI Operations" in
+  `scripts/lib/CLAUDE.md`.
+
+Re-verify any time with: snapshot `docs/data/`, delete `songs/ tabs/
+index.jsonl archive.jsonl`, run `./scripts/bootstrap --quick`, diff.
+
+Consequences worth knowing: a fresh clone must run `./scripts/bootstrap` before
+`./scripts/server` has data; and to see what an import did to the published
+corpus, rebuild and inspect locally (or check prod) rather than reading a diff.
+
+Provenance is unaffected — it lives in `works/*/work.yaml` under
+`parts[].provenance` (`source`, `source_id`, `source_file`), which is what ties
+tier 4 back to tier 1. Only 9 of 19,227 works lack it.
+
 ## Works Architecture
 
 **Works are now authoritative (Mike, 2026-07-31).** Source regeneration is

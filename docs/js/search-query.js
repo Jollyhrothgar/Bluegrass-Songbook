@@ -6,7 +6,10 @@
 // so both search-core.js and tags.js can share them without an import cycle.
 //
 // Field values run until the next field prefix, matching parseSearchQuery():
-//   "tag:Gospel Waltz artist:monroe"  →  tag term is "tag:Gospel Waltz"
+//   "artist:hank williams tag:Gospel"  →  artist term is "artist:hank williams"
+// EXCEPT `tag:`, whose value is a comma list ending at the first space:
+//   "tag:Instrumental,banjo black"     →  tag term is "tag:Instrumental,banjo"
+// These two files encode one contract twice — change them together.
 //
 // Negated terms are never touched: `-tag:Instrumental` is the only negation the
 // parser supports and it stays exactly where the user typed it.
@@ -25,8 +28,18 @@ export const FIELD_ALIASES = {
 // Any token that starts a new (possibly negated) field ends the current value.
 const NEXT_PREFIX = `-?(?:${Object.values(FIELD_ALIASES).flat().join('|')}):`;
 
-function termRegex(aliases) {
-    // (start|space) alias ":" then every following token that isn't a prefix
+function termRegex(aliases, field) {
+    // `tag:` takes a COMMA list that ends at the first space — it must match
+    // parseSearchQuery's splitTagValue exactly, or stripFieldTerms will eat
+    // free text the parser would have kept (the bug where clicking a second
+    // facet chip silently deleted what you'd typed).
+    if (field === 'tag') {
+        return new RegExp(
+            `(?:^|\\s)(?:${aliases.join('|')}):[^\\s,]+(?:\\s*,\\s*[^\\s,]+)*`,
+            'gi'
+        );
+    }
+    // Every other field's value runs to the next prefix ("artist:hank williams")
     return new RegExp(
         `(?:^|\\s)(?:${aliases.join('|')}):(?:\\s*(?!${NEXT_PREFIX})\\S+)*`,
         'gi'
@@ -42,7 +55,8 @@ function termRegex(aliases) {
 export function stripFieldTerms(query, field) {
     const aliases = FIELD_ALIASES[field];
     if (!aliases) return query;
-    return (query || '').replace(termRegex(aliases), ' ').replace(/\s+/g, ' ').trim();
+    return (query || '').replace(termRegex(aliases, field), ' ')
+        .replace(/\s+/g, ' ').trim();
 }
 
 /**

@@ -1,5 +1,11 @@
 # Feasibility: Closing the TablEdit → OTF Fidelity Loop
 
+> **SUPERSEDED (2026-08-02).** Both headline findings below are obsolete:
+> the parser now has a full test harness (`tests/parser/`, plus a byte-exact
+> JS-vs-Python golden gate at `docs/js/__tests__/tef-import-golden.test.js`),
+> and the "strategic fork" is resolved — the AlphaTab pivot was abandoned and
+> its `PLAN.md` deleted. Kept for the format lore in later sections.
+
 **Question asked:** Is it feasible to finish the browser tab editor by building a
 loop — author tabs in TablEdit, save the binary `.tef`, parse it, translate to
 OTF, render, and compare the two — iterating until the parser is "done"? And is

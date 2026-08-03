@@ -69,3 +69,18 @@ sources/tunearch/raw/
 /*.tef
 sources/tef-uploads/uploads/
 curation/lint_report.csv
+
+# ── Generated site data (never hand-edit, never commit) ───────────────────
+# Rebuilt from works/ by scripts/lib/build_works_index.py. Every consumer
+# regenerates these before use — the Pages deploy (.github/workflows/build.yml)
+# and all four process-*.yml automations — so the copies in git were pure
+# redundancy and made every corpus PR ambiguous. Recreate locally with
+# ./scripts/bootstrap --quick. See "Data tiers" in CLAUDE.md.
+docs/data/index.jsonl
+docs/data/archive.jsonl
+docs/data/songs/
+docs/data/tabs/*.otf.json
+# ...but NOT the hand-placed OTF test fixtures. These are authored, not
+# generated: build_works_index's orphan prune deliberately spares them and
+# docs/js/__tests__/otf-editor/facade-27493.test.js reads one directly.
+!docs/data/tabs/*_tef.otf.json

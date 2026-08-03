@@ -58,20 +58,6 @@ export function restGlyphSequence(len) {
     return out;
 }
 
-const INSTRUMENT_ICONS = {
-    '5-string-banjo': '🪕',
-    'tenor-banjo': '🪕',
-    'banjo': '🪕',
-    'mandolin': '🎸',
-    '6-string-guitar': '🎸',
-    'guitar': '🎸',
-    'dobro': '🎸',
-    'fiddle': '🎻',
-    'violin': '🎻',
-    'upright-bass': '🎸',
-    'bass': '🎸'
-};
-
 // Common banjo tunings: pattern (strings 1-5, note letters) → name
 // Patterns use just the note letter, ignoring octave
 const BANJO_TUNINGS = {
@@ -451,7 +437,10 @@ export class TabRenderer {
         const info = document.createElement('div');
         info.className = 'track-info';
 
-        const icon = INSTRUMENT_ICONS[track.instrument] || '🎵';
+        // No instrument emoji: Unicode covers banjo/guitar/violin and
+        // nothing else we render, so mandolin, upright bass and dobro all
+        // came out as a generic guitar. The track name + instrument type
+        // below already say it, accurately.
 
         // Detect tuning name (considering capo)
         const tuningInfo = detectTuningName(track.tuning, track.instrument, track.capo || 0);
@@ -467,7 +456,6 @@ export class TabRenderer {
         // not when it's just raw notes (e.g. "G-D-G-C") which duplicates the circles.
         const showTuningName = tuningInfo.name != null;
         info.innerHTML = `
-            <span class="instrument-icon">${icon}</span>
             <strong>${track.id}</strong>
             ${showInstrument ? `<span style="color:#888;font-size:13px;">${track.instrument}</span>` : ''}
             <div class="tuning-display">
@@ -1854,4 +1842,3 @@ export class TabRenderer {
     }
 }
 
-export { INSTRUMENT_ICONS };

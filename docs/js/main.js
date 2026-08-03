@@ -41,7 +41,7 @@ import {
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
 import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
-import { initSearch, search, showRandomSongs, renderResults, parseSearchQuery } from './search-core.js';
+import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
@@ -393,9 +393,21 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
-                // Show empty state if no search query (don't show random songs)
-                if (!searchInput?.value?.trim() && resultsDiv) {
-                    resultsDiv.innerHTML = '<div class="search-prompt">Search for songs by title, artist, lyrics, or use filters like <code>tag:bluegrass</code></div>';
+                // An empty box means BROWSE THE WHOLE CANON, not "show a
+                // prompt": the home page's "Search All Songs" card advertises
+                // "Browse the full jam collection — N songs", so #search, the
+                // card, and the nav link must all deliver that.
+                //
+                // Guarded on the corpus being loaded. showView('search') can
+                // fire before loadIndex resolves, and rendering an empty
+                // allSongs would paint "No songs found" — which the load flow
+                // then wipes (`resultsDiv.innerHTML = ''`), leaving a blank
+                // page that never recovers, because the later
+                // showView('search') is a no-op when the view is unchanged.
+                // The entry points call browseAllSongs() themselves for that
+                // reason; this branch just covers other transitions.
+                if (!searchInput?.value?.trim() && resultsDiv && allSongs.length) {
+                    showPopularSongs();
                 }
                 searchInput?.focus();
                 break;
@@ -557,9 +569,7 @@ function renderCollectionCards() {
             e.preventDefault();
 
             if (isSearchAll) {
-                // Navigate to search view without query
-                searchInput.value = '';
-                showView('search');
+                browseAllSongs();
                 pushHistoryState('search', { query: '' });
                 track('collection_click', { collection: 'all-songs' });
             } else if (href && href.startsWith('#search/')) {
@@ -785,10 +795,9 @@ function handleDeepLink() {
         pushHistoryState('song-lists', { folderId }, true);
         return true;
     } else if (hash === '#search') {
-        // Search view without query
+        // Search view without query = browse the whole canon
         trackDeepLink('search', hash);
-        searchInput.value = '';
-        showView('search');
+        browseAllSongs();
         pushHistoryState('search', {}, true);
         return true;
     } else if (hash.startsWith('#search/')) {
@@ -936,11 +945,31 @@ function checkPendingInvite() {
 // NAVIGATION
 // ============================================
 
+/**
+ * Show the search view browsing the WHOLE canon (empty query).
+ *
+ * Called explicitly by every "browse everything" entry point rather than
+ * relying on the currentView subscriber: showView('search') is a no-op when
+ * the view is already 'search', so the subscriber can't be trusted to fire.
+ */
+function browseAllSongs() {
+    if (searchInput) searchInput.value = '';
+    showView('search');
+    showPopularSongs();
+}
+
 function navigateTo(mode) {
     trackNavigation(mode);
     // Entering Add Song after an edit session must start from a fresh
     // new-song editor (an unsaved new-song draft is preserved)
     if (mode === 'add-song') prepareAddSongView();
+    // The Search nav link browses everything when there's nothing typed, but
+    // never throws away a query the user still has in the box.
+    if (mode === 'search' && !searchInput?.value?.trim()) {
+        browseAllSongs();
+        pushHistoryState(mode);
+        return;
+    }
     showView(mode);
     pushHistoryState(mode);
 }

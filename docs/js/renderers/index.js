@@ -1,7 +1,7 @@
 // Renderer Registry for Bluegrass Songbook
 // Central module for rendering different content types (ChordPro, Tablature, etc.)
 
-import { TabRenderer, INSTRUMENT_ICONS } from './tablature.js';
+import { TabRenderer } from './tablature.js';
 import { TabPlayer, getInstrumentKey, PITCH_TO_MIDI, INSTRUMENTS } from './tab-player.js';
 import { renderAsciiTab, copyAsciiTab } from './tab-ascii.js';
 import { isPercussionTrack, pitchedTracks } from './otf-tracks.js';
@@ -110,7 +110,6 @@ export function detectFormat(filename) {
 export {
     TabRenderer,
     TabPlayer,
-    INSTRUMENT_ICONS,
     getInstrumentKey,
     PITCH_TO_MIDI,
     INSTRUMENTS,
