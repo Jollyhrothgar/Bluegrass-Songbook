@@ -454,15 +454,35 @@ function getPrefixMap() {
 }
 
 /**
+ * Split a `tag:` value into [tagList, spillover].
+ *
+ * A COMMA continues the tag list; the first whitespace not bound to a comma
+ * ends it. So `tag:Instrumental,banjo black` is two tags plus the text
+ * "black", while `tag:Gospel, Waltz` is still two tags.
+ *
+ * This is what keeps the tag UI usable: the facet chips and Tags dropdown
+ * append `tag:` at the END of the query (search-query.js setTagTerms), so a
+ * greedy value turns anything typed afterwards into a bogus tag name.
+ */
+function splitTagValue(value) {
+    const m = /^([^\s,]+(?:\s*,\s*[^\s,]+)*)\s*([\s\S]*)$/.exec(value);
+    if (!m) return [value, ''];
+    // A dangling comma ("tag:Gospel,") shouldn't leak into the text terms
+    return [m[1], m[2].replace(/^[\s,]+/, '')];
+}
+
+/**
  * Parse search query for special modifiers
  * Supports field:value syntax where value continues until next field: or end
- * `tag:` is the ONLY field that takes a negation (`-tag:Instrumental`); a `-`
- * in front of any other prefix is not an operator, so `-artist:hank` is just
- * plain text.
+ * `tag:` is the exception — its value is a comma list and stops at the first
+ * space, with the remainder returned to free text (see splitTagValue).
+ * `tag:` is also the ONLY field that takes a negation (`-tag:Instrumental`); a
+ * `-` in front of any other prefix is not an operator, so `-artist:hank` is
+ * just plain text.
  * Examples:
  *   artist:hank williams lyrics:cheatin
  *   tag:gospel,waltz -tag:instrumental
- *   george jones key:G
+ *   tag:Instrumental,banjo black   -> tags Instrumental+banjo, text "black"
  */
 export function parseSearchQuery(query) {
     const result = {
@@ -509,14 +529,27 @@ export function parseSearchQuery(query) {
 
         if (!value) continue;
 
-        // The whole value up to the next prefix is tags, split on commas
-        // and/or whitespace (`tag:Gospel Waltz` == `tag:Gospel,Waltz`).
+        // `tag:` takes a COMMA-delimited list; the first whitespace ends it
+        // and everything after is free text again ("tag:Instrumental,banjo
+        // black" = tags Instrumental+banjo, text "black"). Commas may be
+        // followed by spaces, so "tag:Gospel, Waltz" is still two tags.
+        //
+        // It used to swallow everything to the next prefix, which made the
+        // tag UI a trap: setTagTerms appends `tag:` LAST, so anything typed
+        // afterwards silently became a tag name and matched nothing.
         if (fieldType === 'tag') {
-            const tags = value.split(/[\s,]+/).map(t => t.trim()).filter(t => t);
+            const [tagPart, ...restParts] = splitTagValue(value);
+            const tags = tagPart.split(',').map(t => t.trim()).filter(t => t);
             if (isNegative) {
                 result.excludeTags.push(...tags);
             } else {
                 result.tagFilters.push(...tags);
+            }
+            // Spillover goes back to free text (merged in below)
+            const rest = restParts.join(' ').trim();
+            if (rest) {
+                result.textTerms.push(
+                    ...rest.toLowerCase().split(/\s+/).filter(t => t));
             }
             continue;
         }

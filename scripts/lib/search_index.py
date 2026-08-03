@@ -68,6 +68,24 @@ def load_prefix_map() -> dict:
     }
 
 
+def _split_tag_value(value: str) -> tuple[str, str]:
+    """Split a ``tag:`` value into (tag_list, spillover).
+
+    A COMMA continues the tag list; the first whitespace not bound to a comma
+    ends it, and the remainder goes back to free text. Mirrors
+    ``splitTagValue`` in docs/js/search-core.js — one contract written twice,
+    so change them together.
+
+        tag:Instrumental,banjo black  -> ("Instrumental,banjo", "black")
+        tag:Gospel, Waltz             -> ("Gospel, Waltz", "")
+        tag:Gospel Waltz              -> ("Gospel", "Waltz")
+    """
+    m = re.match(r'^([^\s,]+(?:\s*,\s*[^\s,]+)*)\s*([\s\S]*)$', value)
+    if not m:
+        return value, ''
+    return m.group(1), re.sub(r'^[\s,]+', '', m.group(2))
+
+
 def parse_query(query: str) -> dict:
     """Parse search query into structured filters."""
     result = {
@@ -121,7 +139,11 @@ def parse_query(query: str) -> dict:
         if is_negative:
             # Only -tag: reaches here (others are filtered out above)
             if field_type == 'tag':
-                result['exclude_tags'].extend(t for t in re.split(r'[\s,]+', value) if t)
+                tag_part, rest = _split_tag_value(value)
+                result['exclude_tags'].extend(
+                    t.strip() for t in tag_part.split(',') if t.strip())
+                if rest:
+                    result['text_terms'].extend(rest.lower().split())
         else:
             if field_type == 'artist':
                 result['artist_filter'] = value.lower()
@@ -136,7 +158,11 @@ def parse_query(query: str) -> dict:
             elif field_type == 'prog':
                 result['progression_filter'] = [c.strip() for c in value.split('-') if c.strip()]
             elif field_type == 'tag':
-                result['tag_filters'].extend(t for t in re.split(r'[\s,]+', value) if t)
+                tag_part, rest = _split_tag_value(value)
+                result['tag_filters'].extend(
+                    t.strip() for t in tag_part.split(',') if t.strip())
+                if rest:
+                    result['text_terms'].extend(rest.lower().split())
 
     # Extract general text (before first prefix)
     first_prefix_index = matches[0]['index'] if matches else len(query)

@@ -206,21 +206,57 @@ describe('parseSearchQuery', () => {
         });
     });
 
-    describe('tag: takes its whole value', () => {
-        it('splits on whitespace', () => {
-            const result = parseSearchQuery('tag:Gospel Waltz');
+    // `tag:` takes a COMMA list; the first space ends it and the rest is text
+    // again. It used to swallow everything to the next prefix, which made the
+    // tag UI a trap — setTagTerms appends `tag:` LAST, so anything typed after
+    // using a facet chip became a bogus tag and matched nothing.
+    describe('tag: takes a comma list, then returns to text', () => {
+        it('splits on commas', () => {
+            const result = parseSearchQuery('tag:Gospel,Waltz');
             expect(result.tagFilters).toEqual(['Gospel', 'Waltz']);
             expect(result.textTerms).toEqual([]);
         });
 
-        it('splits on commas', () => {
-            const result = parseSearchQuery('tag:Gospel,Waltz');
+        it('allows spaces after commas', () => {
+            const result = parseSearchQuery('tag:Gospel, Waltz');
             expect(result.tagFilters).toEqual(['Gospel', 'Waltz']);
+            expect(result.textTerms).toEqual([]);
+        });
+
+        it('a bare space ends the tag list and starts free text', () => {
+            const result = parseSearchQuery('tag:Gospel Waltz');
+            expect(result.tagFilters).toEqual(['Gospel']);
+            expect(result.textTerms).toEqual(['waltz']);
+        });
+
+        // The exact reported bug: facet chip + Tags dropdown + typing.
+        it('keeps text typed after a facet-written tag term', () => {
+            const result = parseSearchQuery('tag:Instrumental,banjo black');
+            expect(result.tagFilters).toEqual(['Instrumental', 'banjo']);
+            expect(result.textTerms).toEqual(['black']);
         });
 
         it('text before the tag stays text', () => {
             const result = parseSearchQuery('monroe tag:Gospel');
             expect(result.textTerms).toEqual(['monroe']);
+            expect(result.tagFilters).toEqual(['Gospel']);
+        });
+
+        it('a dangling comma does not leak into text', () => {
+            const result = parseSearchQuery('tag:Gospel, ');
+            expect(result.tagFilters).toEqual(['Gospel']);
+            expect(result.textTerms).toEqual([]);
+        });
+
+        it('negated tags spill over too', () => {
+            const result = parseSearchQuery('-tag:Instrumental black');
+            expect(result.excludeTags).toEqual(['Instrumental']);
+            expect(result.textTerms).toEqual(['black']);
+        });
+
+        it('other fields still run to the next prefix', () => {
+            const result = parseSearchQuery('artist:hank williams tag:Gospel');
+            expect(result.artistFilter).toBe('hank williams');
             expect(result.tagFilters).toEqual(['Gospel']);
         });
     });
