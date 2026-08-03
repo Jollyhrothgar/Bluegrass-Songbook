@@ -25,7 +25,8 @@ docs/
 │   ├── editor.js       # Song editor (Raw tab), re-exports smart-paste pipeline
 │   ├── smart-paste.js  # Shared chord-sheet→ChordPro conversion (Raw + Visual paste)
 │   ├── flags.js        # Unified feedback modal (song issues, bugs, general feedback)
-│   ├── add-song-picker.js # Add/request-a-song picker (also serves #request-song)
+│   ├── add-song-picker.js # Add/request-a-song picker (also serves #request-song);
+│   │                      #   the Tablature card routes to docs/create.html
 │   ├── superuser-request.js # Super-user request modal and submission
 │   ├── collections.js  # Landing page collection definitions
 │   ├── analytics.js    # Behavioral analytics tracking

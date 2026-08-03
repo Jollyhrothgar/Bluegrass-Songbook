@@ -1,5 +1,7 @@
-// Add Song Picker — type selection modal (Upload Image, Lyrics & Chords, Request a Song)
-// Supports modes: 'default' (3 cards), 'request' (straight to form), 'contribute' (2 cards, pre-filled)
+// Add Song Picker — type selection modal (Upload Image, Lyrics & Chords,
+// Tablature, Request a Song)
+// Supports modes: 'default' (all cards), 'request' (straight to form),
+// 'contribute' (upload/chords only, pre-filled)
 
 import { allSongs } from './state.js';
 import { songHasContent, songHasAbc } from './song-content.js';
@@ -14,8 +16,10 @@ let pickerCards = null;
 let requestForm = null;
 let headerTitle = null;
 let requestCard = null;
+let tabCard = null;
 let onUpload = null;
 let onChordPro = null;
+let onTab = null;
 
 // Form elements
 let reqTitle = null;
@@ -29,17 +33,19 @@ let dedupWarning = null;
 // Current context (set by openAddSongPicker)
 let currentContext = {};
 
-export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }) {
+export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb, onTab: tabCb }) {
     pickerModal = document.getElementById('add-song-picker');
     if (!pickerModal) return;
 
     onUpload = uploadCb;
     onChordPro = chordProCb;
+    onTab = tabCb;
 
     pickerCards = pickerModal.querySelector('.picker-cards');
     requestForm = pickerModal.querySelector('.picker-request-form');
     headerTitle = document.getElementById('picker-header-title');
     requestCard = pickerModal.querySelector('.picker-card-request');
+    tabCard = pickerModal.querySelector('.picker-card-tab');
 
     // Form elements
     reqTitle = document.getElementById('picker-req-title');
@@ -79,6 +85,7 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
             const ctx = { ...currentContext };
             if (type === 'upload' && onUpload) onUpload(ctx);
             else if (type === 'chordpro' && onChordPro) onChordPro(ctx);
+            else if (type === 'tab' && onTab) onTab(ctx);
         });
     });
 
@@ -325,8 +332,11 @@ export function openAddSongPicker(options = {}) {
     currentContext = { ...options };
 
     if (options.mode === 'contribute') {
-        // Hide request card — placeholder already exists, show upload/chordpro only
+        // Hide request card — placeholder already exists, show upload/chordpro only.
+        // Tab is hidden too: the create-a-tab flow does not yet bind to an
+        // existing work, so offering it here would mint a duplicate.
         requestCard?.classList.add('hidden');
+        tabCard?.classList.add('hidden');
         headerTitle.textContent = 'Help Complete This Song';
         showCards();
     } else if (options.mode === 'request') {
@@ -336,8 +346,9 @@ export function openAddSongPicker(options = {}) {
         pickerModal.classList.remove('hidden');
         return; // don't show cards first
     } else {
-        // Default — show all 3 cards
+        // Default — show every card
         requestCard?.classList.remove('hidden');
+        tabCard?.classList.remove('hidden');
         headerTitle.textContent = 'Add a Song';
         showCards();
     }

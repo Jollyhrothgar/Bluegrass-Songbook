@@ -2119,6 +2119,9 @@ function init() {
                 navigateTo('add-song');
             }
         },
+        // The tab editor is its own page (create.html), not a view of the
+        // SPA — so this is a real navigation, not showView().
+        onTab: () => { window.location.href = 'create.html'; },
     });
     initDocUpload();
 
