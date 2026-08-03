@@ -6,7 +6,7 @@ SVG-based tablature rendering and playback for OpenTabFormat (OTF) files.
 
 | File | Purpose |
 |------|---------|
-| `index.js` | Renderer registry, exports `TabRenderer`, `TabPlayer`, `INSTRUMENT_ICONS` |
+| `index.js` | Renderer registry, exports `TabRenderer`, `TabPlayer`, `isPercussionTrack`/`pitchedTracks` |
 | `tablature.js` | `TabRenderer` class - converts OTF to SVG tablature |
 | `tab-player.js` | `TabPlayer` class - audio playback with note highlighting |
 | `tab-ascii.js` | ASCII tablature format (legacy, rarely used) |
@@ -98,20 +98,19 @@ Uses Web Audio API with oscillators:
 - Note durations in ticks converted to ms using tempo
 - Time signature affects measure boundaries
 
-## INSTRUMENT_ICONS
+## No instrument emoji in the tab UI
 
-SVG icons for track mixer:
+Removed 2026-08-02 (with the `INSTRUMENT_ICONS` map). Unicode has a banjo,
+a guitar and a violin and **nothing** for mandolin, upright bass or dobro,
+so those all rendered as a generic guitar. Worse, the mixer picked its icon
+from `track.instrument` while the chip label came from `track.id`, so a
+mislabeled track (id `guitar`, instrument `5-string-banjo`) showed a banjo
+beside the word "guitar".
 
-```javascript
-import { INSTRUMENT_ICONS } from './index.js';
+The tab page now uses text: a speaker glyph labels the Sound row, the track
+options are plain names, and the staff selector is labelled "View track".
+Don't reintroduce per-instrument emoji here — the coverage isn't there.
 
-// Icons available:
-INSTRUMENT_ICONS['5-string-banjo']  // Banjo icon
-INSTRUMENT_ICONS['6-string-guitar'] // Guitar icon
-INSTRUMENT_ICONS['mandolin']        // Mandolin icon
-INSTRUMENT_ICONS['upright-bass']    // Bass icon
-INSTRUMENT_ICONS['fiddle']          // Fiddle icon
-```
 
 ## Common Issues
 

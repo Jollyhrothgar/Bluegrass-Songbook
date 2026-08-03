@@ -37,7 +37,7 @@ import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import {
-    TabRenderer, TabPlayer, INSTRUMENT_ICONS,
+    TabRenderer, TabPlayer,
     TimelineTiming, identityTimeline, readingListTimeline,
     expandNotation, makePlaybackToVisualMapper,
     maxMeasureIn, measureTimingFromOtf,
@@ -1881,12 +1881,6 @@ async function renderTablaturePart(part, container) {
             } else if (otf.reading_list && otf.reading_list.length > 0) {
                 notation = expandNotation(notation, timings.playbackTimeline);
             }
-            const icon = INSTRUMENT_ICONS[track.instrument] ||
-                        (track.id.includes('banjo') ? '🪕' :
-                         track.id.includes('mandolin') ? '🎸' :
-                         track.id.includes('guitar') ? '🎸' :
-                         track.id.includes('fiddle') ? '🎻' : '🎵');
-
             const trackSection = document.createElement('div');
             trackSection.className = `tablature-track-section${isLead ? '' : ' backup-track'}`;
             trackSection.dataset.trackId = track.id;
@@ -1913,7 +1907,10 @@ async function renderTablaturePart(part, container) {
         // Populate the view tabs from every track that owns a section
         if (viewIds.length > 1) {
             const current = activeTrackView ?? leadTrackId;
+            // Labelled so it reads as "which staff am I looking at", not as
+            // an unexplained row of instrument names next to the Sound row.
             trackTabsBar.innerHTML = [
+                '<span class="track-view-label">View track</span>',
                 ...viewIds.map(id => `
                     <button class="track-view-tab${id === current ? ' active' : ''}"
                             data-view="${id}">${escapeHtml(id)}</button>`),
@@ -2089,20 +2086,20 @@ function createTablatureControls(otf, part) {
         return !isMandolin || isLead;
     });
 
+    // No instrument emoji here — Unicode has 🪕/🎸/🎻 and nothing for
+    // mandolin, upright bass or dobro, so they all collapsed to 🎸. Worse,
+    // the icon was picked from track.instrument while the label comes from
+    // track.id, so a mislabeled track (id "guitar", instrument
+    // "5-string-banjo") showed a banjo next to the word "guitar". A speaker
+    // labels the row; the options are plain text.
     const trackMixerHtml = filteredTracks.length > 1 ? `
         <div class="tab-track-mixer">
-            <span class="mixer-label">Sound:</span>
+            <span class="mixer-label" title="Sound" aria-label="Sound">🔊</span>
             ${filteredTracks.map(track => {
-                const icon = track.instrument?.includes('banjo') ? '🪕' :
-                            track.instrument?.includes('guitar') ? '🎸' :
-                            track.instrument?.includes('mandolin') ? '🎸' :
-                            track.instrument?.includes('bass') ? '🎸' :
-                            track.instrument?.includes('fiddle') ? '🎻' : '🎵';
                 const isLead = track.role === 'lead' || track.instrument?.includes('banjo');
                 const safeId = escapeHtml(track.id);
                 return `<label class="track-toggle" title="${safeId}">
                     <input type="checkbox" class="track-checkbox" data-track-id="${safeId}" ${isLead ? 'checked' : ''}>
-                    <span class="track-icon">${icon}</span>
                     <span class="track-name">${safeId}</span>
                 </label>`;
             }).join('')}

@@ -7625,9 +7625,13 @@ mark {
 }
 
 .tab-track-mixer .mixer-label {
-    font-size: 0.75rem;
+    /* A speaker glyph labels the row; the track options are plain text
+       (instrument emoji were dropped — Unicode can't tell a mandolin from
+       a guitar, so they were actively misleading). */
+    font-size: 0.95rem;
+    line-height: 1;
     color: var(--text-secondary);
-    font-weight: 500;
+    flex: 0 0 auto;
 }
 
 .track-toggle {
@@ -7657,10 +7661,6 @@ mark {
     display: none;
 }
 
-.track-icon {
-    font-size: 1rem;
-}
-
 .track-name {
     max-width: 80px;
     overflow: hidden;
@@ -7686,6 +7686,15 @@ mark {
     z-index: 19;
     background: var(--bg);
     padding: 0.25rem 0;
+}
+
+.track-view-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    align-self: center;
+    margin-right: 0.15rem;
+    flex: 0 0 auto;
 }
 
 .track-view-tab {
