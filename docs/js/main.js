@@ -39,7 +39,7 @@ import {
     updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
-import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
+import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction, createTabUrl } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
@@ -2120,8 +2120,14 @@ function init() {
             }
         },
         // The tab editor is its own page (create.html), not a view of the
-        // SPA — so this is a real navigation, not showView().
-        onTab: () => { window.location.href = 'create.html'; },
+        // SPA — so this is a real navigation, not showView(). In the
+        // contribute flow the picker carries a targetSlug; binding it means
+        // the tab lands on that work instead of minting a duplicate.
+        onTab: (ctx) => {
+            window.location.href = ctx?.targetSlug
+                ? createTabUrl({ id: ctx.targetSlug, title: ctx.title })
+                : 'create.html';
+        },
     });
     initDocUpload();
 

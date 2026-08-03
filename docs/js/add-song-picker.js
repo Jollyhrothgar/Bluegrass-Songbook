@@ -1,7 +1,7 @@
 // Add Song Picker — type selection modal (Upload Image, Lyrics & Chords,
 // Tablature, Request a Song)
 // Supports modes: 'default' (all cards), 'request' (straight to form),
-// 'contribute' (upload/chords only, pre-filled)
+// 'contribute' (no request card — the song already exists — pre-filled)
 
 import { allSongs } from './state.js';
 import { songHasContent, songHasAbc } from './song-content.js';
@@ -332,11 +332,10 @@ export function openAddSongPicker(options = {}) {
     currentContext = { ...options };
 
     if (options.mode === 'contribute') {
-        // Hide request card — placeholder already exists, show upload/chordpro only.
-        // Tab is hidden too: the create-a-tab flow does not yet bind to an
-        // existing work, so offering it here would mint a duplicate.
+        // Hide request card — placeholder already exists. Tab stays: the
+        // context's targetSlug binds the submission to this work.
         requestCard?.classList.add('hidden');
-        tabCard?.classList.add('hidden');
+        tabCard?.classList.remove('hidden');
         headerTitle.textContent = 'Help Complete This Song';
         showCards();
     } else if (options.mode === 'request') {

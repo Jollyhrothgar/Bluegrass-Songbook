@@ -100,6 +100,25 @@ content, and the shell's top/bottom bands for actions and playback.
   rewritten with `history.replaceState`. List-context pages keep
   `#list/{listId}/{workId}` URLs.
 
+### Adding a tab (`create.html`)
+
+The tab editor is a separate page, not a view. Two entry points, one URL
+builder (`createTabUrl` in work-view.js):
+
+- **Add a Song → Tablature** — unbound `create.html`; the submission
+  slugifies the title into a *new* work.
+- **"Add tab" on the song page** (and the contribute picker) —
+  `create.html?work={slug}&title=…`. Bound, so the tab lands on that work.
+
+Binding is what makes duplicates structurally impossible, and it changes
+the submission type: only `tab-correction` carries `workId` through the
+`create-tab-pr` edge function (`tab-submission` ignores it and mints a
+work from the title). "Correction" covers additions too —
+`scripts/lib/process_tab.py` appends a `parts[]` entry when the work has
+no tab for that instrument yet, and updates it in place when it does. A
+`?work=` value that isn't `[a-z0-9-]+` is dropped and the page falls back
+to unbound; it becomes a repo path downstream.
+
 ### State Variables
 
 State is managed via a **reactive pub/sub system** in `state.js`. Variables have getters/setters that notify subscribers on change:

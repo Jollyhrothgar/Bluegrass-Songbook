@@ -38,15 +38,31 @@
         .import-error { color: #b00020; font-size: 13px; margin-top: 8px; }
         .or-sep { max-width: 560px; text-align: center; color: #999; font-size: 13px;
                   margin: 4px 0 14px; }
+        .bound-banner { background: #eef6ff; border: 1px solid #bcd8f5; padding: 10px 14px;
+                        border-radius: 6px; margin-bottom: 16px; max-width: 560px;
+                        display: grid; gap: 8px; font-size: 14px; }
+        .bound-banner label { display: grid; gap: 4px; font-size: 13px; color: #444; }
+        .bound-banner input { padding: 6px 8px; font-size: 14px; }
         .hidden { display: none !important; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Create a Tab</h1>
-        <a href="index.html">← Bluegrass Book</a>
+        <h1 id="page-title">Create a Tab</h1>
+        <a id="back-link" href="index.html">← Bluegrass Book</a>
     </header>
     <main>
+        <div id="bound-banner" class="bound-banner hidden">
+            <div>
+                Adding a tab to <strong id="bound-title"></strong>. It becomes a new part
+                of that song — no duplicate work is created.
+            </div>
+            <label>What's this tab? (shown to the reviewer)
+                <input id="bound-note" type="text"
+                       placeholder="e.g. Scruggs-style break, transcribed from the 1967 recording">
+            </label>
+        </div>
+
         <div id="draft-banner" class="draft-banner hidden">
             <span>You have an unsaved draft (<span id="draft-when"></span>).</span>
             <button id="draft-resume">Resume</button>
@@ -109,6 +125,27 @@
         import { parseTef, TefVersionError } from './js/tef-import/index.js';
 
         const $ = (id) => document.getElementById(id);
+
+        // ── Work binding ──────────────────────────────────────────────
+        // ?work=<slug> arrives from the song page's "Add tab" button. With
+        // it, the submission attaches a part to THAT work; without it, the
+        // edge function slugifies the title into a brand-new work. Binding
+        // is the whole reason duplicates can't happen on this path.
+        const params = new URLSearchParams(location.search);
+        const rawWork = params.get('work') || '';
+        // Same slug shape the edge function enforces — it becomes a repo
+        // path, so reject anything else here rather than submit garbage.
+        const boundWorkId = /^[a-z0-9-]+$/.test(rawWork) ? rawWork : null;
+        const boundTitle = params.get('title') || boundWorkId || '';
+
+        if (boundWorkId) {
+            $('page-title').textContent = 'Add a Tab';
+            $('bound-title').textContent = boundTitle;
+            $('bound-banner').classList.remove('hidden');
+            $('back-link').href = `index.html#work/${boundWorkId}`;
+            $('back-link').textContent = `← ${boundTitle}`;
+            $('f-title').value = boundTitle;
+        }
 
         // Instrument checkboxes
         for (const [i, inst] of INSTRUMENT_CHOICES.entries()) {
@@ -222,14 +259,31 @@
             status.textContent = 'Submitting…';
             try {
                 const doc = editor.save();
-                const result = await submitTab({
+                // instrument, not track id: duplicate instruments get
+                // deduped ids like 5-string-banjo-2, which would leak
+                // into the published filename
+                const instrument = doc.tracks[0]?.instrument || doc.tracks[0]?.id || 'banjo';
+                const title = doc.metadata?.title || 'Untitled';
+                // 'tab-correction' is the only type that honours workId —
+                // 'tab-submission' ignores it and slugifies the title into a
+                // new work. process_tab.py adds the part when the work has
+                // no tab for this instrument yet, so "correction" covers
+                // additions too; the comment says which one it is.
+                const note = $('bound-note')?.value?.trim();
+                const result = await submitTab(boundWorkId ? {
+                    type: 'tab-correction',
+                    otf: doc,
+                    title,
+                    instrument,
+                    workId: boundWorkId,
+                    comment: note
+                        ? `${instrument} tab for ${boundTitle}: ${note}`
+                        : `Adds a ${instrument} tab to ${boundTitle}, from the in-app tab editor.`,
+                } : {
                     type: 'tab-submission',
                     otf: doc,
-                    title: doc.metadata?.title || 'Untitled',
-                    // instrument, not track id: duplicate instruments get
-                    // deduped ids like 5-string-banjo-2, which would leak
-                    // into the published filename
-                    instrument: doc.tracks[0]?.instrument || doc.tracks[0]?.id || 'banjo',
+                    title,
+                    instrument,
                 });
                 // DOM construction, not innerHTML: the URL comes back
                 // from a network response

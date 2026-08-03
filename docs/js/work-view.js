@@ -687,12 +687,27 @@ function renderTitleHeader() {
                 <span class="song-title">${escapeHtml(title)}</span>
                 ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
                 <button id="edit-song-btn" class="focus-btn" title="Edit this song">&#x270F;&#xFE0F; Edit</button>
+                <button id="add-tab-btn" class="focus-btn" title="Add a tab for this song">&#127928; Add tab</button>
             </div>
             ${artist ? `<div class="song-artist-line">${escapeHtml(artist)}</div>` : ''}
         </div>
     `;
     // #edit-song-btn is wired via main.js's songContent delegation
+    // Add tab: hand the work id to the tab editor so the submission
+    // attaches a part to THIS work instead of minting a new one.
+    header.querySelector('#add-tab-btn')?.addEventListener('click', () => {
+        window.location.href = createTabUrl(currentWork);
+    });
     return header;
+}
+
+/**
+ * URL of the tab editor bound to a work. The `work` param is what stops
+ * a tab submission from creating a duplicate work — see create.html.
+ */
+export function createTabUrl(work) {
+    const params = new URLSearchParams({ work: work.id, title: work.title || '' });
+    return `create.html?${params}`;
 }
 
 /**

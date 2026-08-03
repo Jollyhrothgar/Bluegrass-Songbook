@@ -127,7 +127,7 @@ all** — that's the common case and must stay frictionless.
 Sequenced so the thing Mike actually asked for (dogfooding the editor) happens
 first and commits to none of the architecture.
 
-### Step 0 — make the existing pipeline reachable
+### Step 0 — make the existing pipeline reachable — **DONE 2026-08-02**
 
 **Hours. No backend. No index risk.** This is the one that serves the stated
 goal: "start using it so it improves."
@@ -144,7 +144,17 @@ see it in the editor, and download the OTF. Nothing reaches the index.
 
 **Commit separately** so it can ship even if Step 1 stalls.
 
-### Step 1 — "Add a tab for this song" from a work page
+### Step 1 — "Add a tab for this song" from a work page — **DONE 2026-08-02**
+
+> **One thing this step discovered, and it matters for Step 3:** the
+> `create-tab-pr` edge function *ignores* `workId` when
+> `type: 'tab-submission'` — it slugifies the title and probes for a free
+> `works/<slug>`. Only `tab-correction` honours it. So the bound flow
+> submits as a correction, with a generated comment. That's not a hack
+> for its own sake: `process_tab.py` appends a `parts[]` entry when the
+> work has no tab for that instrument, so "correction" already means
+> add-or-update. If a future step wants an honest `tab-submission +
+> workId`, that's an edge-function change and a deploy.
 
 **Small.** Makes the *good* path the easy path, and structurally prevents the
 duplicate-work problem.
