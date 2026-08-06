@@ -15,6 +15,9 @@ on:
       - "Sync Deleted Songs"
     types: [completed]
     branches: [main]
+  # Manual escape hatch. Always rebuilds and deploys, bypassing the gate job —
+  # use it if the live site ever drifts from main without the commit changing.
+  workflow_dispatch:
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 concurrency:
@@ -22,9 +25,77 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  verify:
-    # Skip if triggered by a failed workflow_run
+  # The content workflows below fire this one on *every* completion, including the
+  # (common) case where they committed nothing — so an unchanged tree was being
+  # rebuilt and republished ~8-10x a day. Skip the pipeline when main@HEAD is
+  # already the live Pages deploy.
+  #
+  # This gates on deployment state rather than "did the trigger commit anything?"
+  # because the workflow_run payload exposes no outputs from the triggering
+  # workflow; artifacts are the only sanctioned channel and would mean touching
+  # all four content workflows. Gating here covers them uniformly instead.
+  #
+  # ASSUMPTION: the deployed site is a pure function of the commit tree. True
+  # today — build_works_index.py reads only works/ and the tracked docs/data/*.json
+  # caches, and its output is byte-stable. If a deploy-time step ever pulls live
+  # external data, this gate would wrongly skip; use workflow_dispatch to force.
+  #
+  # Fails OPEN: any API hiccup leaves should_run=true, because a redundant deploy
+  # is harmless and a missed one is not.
+  gate:
+    # Skip if triggered by a failed workflow_run (verify/deploy skip in turn)
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: read
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+    steps:
+      - name: Check whether main@HEAD is already deployed
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT" != "workflow_run" ]; then
+            echo "Event is '$EVENT' (not workflow_run) — always run."
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          head=$(gh api "repos/$REPO/commits/main" --jq '.sha' 2>/dev/null || true)
+          # A failed call can still print an error body on stdout — only trust a real SHA.
+          case "$head" in
+            *[!0-9a-f]* | "") head="" ;;
+          esac
+
+          # Newest github-pages deployment whose latest status is success.
+          live=""
+          for id in $(gh api "repos/$REPO/deployments?environment=github-pages&per_page=20" \
+                        --jq '.[].id' 2>/dev/null || true); do
+            state=$(gh api "repos/$REPO/deployments/$id/statuses?per_page=1" \
+                      --jq '.[0].state // empty' 2>/dev/null || true)
+            if [ "$state" = "success" ]; then
+              live=$(gh api "repos/$REPO/deployments/$id" --jq '.sha' 2>/dev/null || true)
+              break
+            fi
+          done
+
+          echo "main@HEAD:     ${head:-<unknown>}"
+          echo "last deployed: ${live:-<none>}"
+
+          if [ -n "$head" ] && [ "$head" = "$live" ]; then
+            echo "::notice::main@$head is already the live Pages deploy — skipping rebuild."
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  verify:
+    needs: gate
+    if: needs.gate.outputs.should_run == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -68,11 +139,14 @@ jobs:
           uv run --python 3.12 python3 scripts/lib/check_index_outputs.py
 
   deploy:
-    needs: verify
-    # Deploy on: direct push to main, OR successful workflow_run from content workflows
+    needs: [gate, verify]
+    # Deploy on: direct push to main, successful workflow_run from content
+    # workflows, or a manual dispatch on main. (The gate job has already decided
+    # whether we get here at all — if it said no, verify skipped and so does this.)
     if: |
       (github.ref == 'refs/heads/main' && github.event_name == 'push') ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') ||
+      (github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
 
     permissions:
