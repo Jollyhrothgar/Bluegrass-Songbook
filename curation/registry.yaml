@@ -118,6 +118,22 @@ groups:
     variants:
       where-were-you:
         label: Loretta Lynn version
+  back-home-again-in-indiana:
+    variants:
+      back-home-again-in-indiana-1:
+        label: TuneArch instrumental setting
+  down-yonder:
+    variants:
+      down-yonder-1:
+        label: TuneArch instrumental setting
+  tennessee-waltz:
+    variants:
+      tennessee-waltz-2-the:
+        label: TuneArch instrumental setting
+  westphalia-waltz:
+    variants:
+      westphalia-waltz-1:
+        label: TuneArch instrumental setting
 suppressed: {}
 keep:
   a-heart-that-will-never-break-again:

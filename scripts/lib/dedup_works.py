@@ -385,11 +385,19 @@ def detect_duplicates(works_dir: Path, min_confidence: float = 0.7) -> list[dict
                             subgroup.append(work)
                             placed = True
                             break
-                    else:
-                        # One or both lack lyrics — group together
+                    elif not norm_lyrics and not rep_lyrics:
+                        # Both instrumental — a shared title is enough.
                         subgroup.append(work)
                         placed = True
                         break
+                    else:
+                        # Exactly one side has lyrics. Never auto-merge a tune
+                        # transcription with a song of the same name: the two
+                        # are often unrelated, and choose_canonical() scores on
+                        # part_count, so a heavily-tabbed instrumental silently
+                        # deletes the vocal version's lyrics. Pair them by hand
+                        # in curation/registry.yaml instead.
+                        continue
                 if not placed:
                     lyrics_subgroups.append([work])
 

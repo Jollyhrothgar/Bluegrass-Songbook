@@ -1,0 +1,18 @@
+id: new-camptown-races
+title: New Camptown Races
+artist: Frank Wakefield
+composers:
+- Frank Wakefield
+tags:
+- Instrumental
+- Bluegrass
+external:
+  musicbrainz: 28b08396-8ed6-4e92-b3ba-9c44db84240e
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: tunearch
+    imported_at: '2026-01-02'

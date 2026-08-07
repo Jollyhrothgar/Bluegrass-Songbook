@@ -1,0 +1,20 @@
+id: westphalia-waltz
+title: Westphalia Waltz
+artist: Lone Star Playboys
+composers:
+- Cotton Collins
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+external:
+  musicbrainz: 5d7075a8-ae08-3765-81ce-5dab07e8489b
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: westphaliawaltzlyricschords.pro
+    imported_at: '2026-01-02'
