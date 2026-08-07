@@ -710,6 +710,210 @@ keep:
     reason: "Strum Machine catalog lists it (2026-07 ledger cleanup)"
   youll-get-no-more-of-me:
     reason: "SM + BluegrassLyrics ledgers both list it (2026-07 ledger cleanup)"
+  silver-bells:
+    reason: "wave 3 readmit 2026-08-07: bgcov 22 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  when-you-re-lonely:
+    reason: "wave 3 readmit 2026-08-07: bgcov 15 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  y-all-come:
+    reason: "wave 3 readmit 2026-08-07: bgcov 14 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  six-white-horses:
+    reason: "wave 3 readmit 2026-08-07: bgcov 12 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  lord-i-m-coming-home:
+    reason: "wave 3 readmit 2026-08-07: bgcov 11 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  lord-im-coming-home:
+    reason: "wave 3 readmit 2026-08-07: bgcov 11 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  happy-ill-be:
+    reason: "wave 3 readmit 2026-08-07: bgcov 10 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  i-m-gonna-sing:
+    reason: "wave 3 readmit 2026-08-07: bgcov 9 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  air-mail-special:
+    reason: "wave 3 readmit 2026-08-07: bgcov 8 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  help-me-make-it-through-the-night:
+    reason: "wave 3 readmit 2026-08-07: bgcov 8 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  help-me-make-it-through-the-night-1:
+    reason: "wave 3 readmit 2026-08-07: bgcov 8 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  st-louis-blues:
+    reason: "wave 3 readmit 2026-08-07: bgcov 8 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  st-louis-blues-1:
+    reason: "wave 3 readmit 2026-08-07: bgcov 8 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  the-room-at-the-top-of-the-stairs:
+    reason: "wave 3 readmit 2026-08-07: bgcov 8 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  bowling-green:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  by-the-side-of-the-road:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  honky-tonkin:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  i-ll-be-home:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  is-this-my-destiny:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  people-get-ready:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  put-it-off-until-tomorrow:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  the-old-chisholm-trail:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  those-memories-of-you:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  till-the-end-of-the-world:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  tulsa-time:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  years-from-now:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  both-sides-now:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  boulder-to-birmingham:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  bunch-of-keys:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  dark-as-the-night:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  diggy-liggy-lo:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  don-t-think-twice:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  high-lonesome:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  i-ain-t-got-nobody:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  i-d-like-to-be:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  if-we-never-meet-again:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  pan-american:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  up-this-hill-and-down:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  way-up-on-the-mountain:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  when-the-savior-reached-down-for-me:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  a-few-more-years:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  another-broken-heart:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  birth-of-the-blues:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  endless-highway:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  everybody-s-talkin:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  first-step-to-heaven:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  heartaches:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  heartaches-1:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  heartbreak-mountain:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  if-we-make-it-through-december:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  i-ll-be-here-in-the-morning:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  i-ll-sail-my-ship-alone:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  im-walking-the-dog:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  life-s-highway:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  milwaukee-here-i-come:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  once-a-day:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  on-down-the-line:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  one-too-many-mornings:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  out-of-you:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  ready-to-go-home:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  ribbon-of-darkness:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  ruby-don-t-take-your-love-to-town:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  smokey-mountain-memories:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  t-b-blues:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 3 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  that-little-kid-sister-of-mine:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  the-birth-of-the-blues:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  the-bottle-let-me-down:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  this-old-road:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  twenty-twenty-vision:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  where-is-your-heart-tonight:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  winters-night:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 4 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  your-old-love-letters:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 1 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  your-old-standby:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5) across 2 MusicBrainz work(s); see decision-data/readmit_query.sql"
+  cabin-home-on-the-hill:
+    reason: "wave 3 readmit 2026-08-07: bgcov 23 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  going-back-to-old-kentucky:
+    reason: "wave 3 readmit 2026-08-07: bgcov 16 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  when-they-ring-those-golden-bells:
+    reason: "wave 3 readmit 2026-08-07: bgcov 10 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  why-don-t-you-tell-me:
+    reason: "wave 3 readmit 2026-08-07: bgcov 10 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  wouldnt-change-you-if-i-could:
+    reason: "wave 3 readmit 2026-08-07: bgcov 10 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  honey-you-don-t-know-my-mind:
+    reason: "wave 3 readmit 2026-08-07: bgcov 9 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  honey-you-dont-know-my-mind:
+    reason: "wave 3 readmit 2026-08-07: bgcov 9 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  the-old-cross-road:
+    reason: "wave 3 readmit 2026-08-07: bgcov 9 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  bile-them-cabbage-down:
+    reason: "wave 3 readmit 2026-08-07: bgcov 8 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  california-cottonfields:
+    reason: "wave 3 readmit 2026-08-07: bgcov 8 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  carolina-sunshine-girl:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  don-t-think-twice-it-s-alright:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  jimmy-brown-the-news-boy:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  mary-did-you-know:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  standing-on-the-mountain:
+    reason: "wave 3 readmit 2026-08-07: bgcov 7 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  bury-me-beneath-the-weeping-willow:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  i-m-walking:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  little-girl-in-tennessee:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  tell-her-lies-and-feed-her-candy:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  where-no-cabins-fall:
+    reason: "wave 3 readmit 2026-08-07: bgcov 6 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  eating-out-of-your-hand:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  in-my-dear-old-southern-home:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  lamplighting-time-in-the-valley:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  pistol-packing-mama:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  rambling-boy:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  streamline-cannonball:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  the-traveling-kind:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  tomorrow-ill-be-gone:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
+  you-go-to-your-church:
+    reason: "wave 3 readmit 2026-08-07: bgcov 5 (>=5); no competing MusicBrainz work with this title; see decision-data/readmit_query.sql"
 tag_exclusions:
   big-iron:
   - BluegrassStandard
