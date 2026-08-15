@@ -23,6 +23,7 @@ import multiprocessing
 import os
 import re
 import shutil
+import sys
 from pathlib import Path
 from urllib.parse import quote
 
@@ -81,7 +82,7 @@ from build_index import (
 
 from curation import (apply_curation, apply_tab_defaults, filter_suppressed,
                       load_registry, load_prune_list, apply_index_prune,
-                      apply_tag_exclusions)
+                      apply_tag_exclusions, load_promoted_songs)
 
 
 def parse_chordpro_content(content: str) -> dict:
@@ -1084,11 +1085,20 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     # rows stay in the index (deep links, lists, groups keep working), and
     # user-contributed works are never pruned. Rescues: registry keep: map.
     prune_ids = load_prune_list(Path('.'))
-    songs = apply_index_prune(songs, prune_ids, registry)
+    promoted_ids = frozenset(load_promoted_songs(Path('.')))
+    songs = apply_index_prune(songs, prune_ids, registry,
+                              promoted_ids=promoted_ids)
     pruned_count = sum(1 for s in songs if s.get('indexed') is False)
     if prune_ids:
         print(f"  Index prune: {pruned_count} works marked indexed:false "
-              f"({len(prune_ids)} listed)")
+              f"({len(prune_ids)} listed, {len(promoted_ids)} promoted)")
+    # Promoted ids that don't exist in the corpus: either a typo or the work
+    # was deleted (filter_suppressed runs earlier, so deletion wins). Warn so
+    # the conflict is visible rather than silently ignored.
+    missing_promoted = promoted_ids - {s.get('id') for s in songs}
+    for work_id in sorted(missing_promoted):
+        print(f"  WARNING: promoted work not in corpus (deleted?): {work_id}",
+              file=sys.stderr)
 
     # Editorial tag exclusions (registry tag_exclusions): e.g. strip
     # BluegrassStandard from country/pop mis-tags. Runs after all tag
