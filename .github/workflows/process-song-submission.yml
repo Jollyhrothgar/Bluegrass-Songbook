@@ -4,12 +4,17 @@ on:
   issues:
     types: [labeled]
 
-# Serialize per issue, NOT across all content workflows. GitHub keeps only one
-# pending run per concurrency group, so a shared group silently evicts queued
-# runs when several issues are labelled at once (this dropped #208 and #209).
-# Cross-issue push races are already handled by the rebase-retry push below.
+# Group per (workflow, issue). All three content workflows trigger on every
+# `labeled` event and the job-level `if` filters them AFTERWARDS -- concurrency
+# is evaluated at the workflow-run level, before any job's `if`, so a run that
+# will skip still claims the group. With one shared group a SINGLE label event
+# started three runs, one won, one queued, and the third evicted the queued one
+# (GitHub keeps only one pending run per group). That is what silently dropped
+# submissions #208 and #209; batching several issues was never required.
+# Same issue + same workflow still serialises, which is the part that matters.
+# Cross-run push races are handled by the rebase-retry push below.
 concurrency:
-  group: content-processing-${{ github.event.issue.number }}
+  group: content-processing-submission-${{ github.event.issue.number }}
   cancel-in-progress: false
 
 jobs:
