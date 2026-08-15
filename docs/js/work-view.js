@@ -913,11 +913,11 @@ function buildPlaceholderCta(hasContent) {
  */
 function buildArrangementPill() {
     const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
-    const label = versions.length > 1 ? `${versions.length} arrangements` : 'Arrangement';
+    const label = versions.length > 1 ? `${versions.length} versions` : 'Version';
     return pill(label, (container) => {
         container.innerHTML = '<div class="arrangement-loading">Loading…</div>';
         renderArrangementList(container, versions);
-    }, { id: 'arrangement-pill', title: 'Arrangements of this song', className: 'pill-wide' });
+    }, { id: 'arrangement-pill', title: 'Versions of this song', className: 'pill-wide' });
 }
 
 async function renderArrangementList(container, versions, voteData = null) {

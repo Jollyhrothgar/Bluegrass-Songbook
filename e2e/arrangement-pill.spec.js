@@ -1,6 +1,6 @@
 // E2E tests for the Arrangement pill — the replacement for the old
 // version-picker modal (#version-modal) and work-dashboard version cards.
-// A work whose group has multiple versions shows an "N arrangements" pill;
+// A work whose group has multiple versions shows an "N versions" pill;
 // its popover lists each version (canonical badge, current marker, vote
 // affordance) and clicking one navigates to that arrangement.
 import { test, expect } from '@playwright/test';
@@ -23,7 +23,7 @@ test.describe('Arrangement Pill', () => {
         await expect(page.locator('#version-modal')).toHaveCount(0);
 
         // The arrangement pill announces the group
-        await expect(page.locator('#arrangement-pill .pill-label')).toContainText(/\d+ arrangements/);
+        await expect(page.locator('#arrangement-pill .pill-label')).toContainText(/\d+ versions/);
     });
 
     test('popover lists the versions with the current one marked', async ({ page }) => {
