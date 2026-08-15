@@ -1321,6 +1321,12 @@ window.refreshBounties = refreshBounties;
 // Admin state (cached to avoid repeated RPC calls)
 let isAdminUser = false;
 
+// Trusted state (cached the same way; gates the Promote overflow item)
+let isTrustedFlag = false;
+
+// Songs promoted this session (flips the overflow item to "Undo promote")
+const promotedIds = new Set();
+
 function getInitials(user) {
     const name = user.user_metadata?.full_name;
     if (name) {
@@ -1370,8 +1376,9 @@ function updateAuthUI(user, event) {
         updateSyncUI('syncing');
         performFullListsSync();
 
-        // Check admin status (async, updates UI when ready)
+        // Check admin/trusted status (async, updates UI when ready)
         checkAdminStatus();
+        checkTrustedStatus();
     } else {
         // Show sign-in button, hide user info
         signInBtn?.classList.remove('hidden');
@@ -1384,8 +1391,10 @@ function updateAuthUI(user, event) {
             handleListsSignOut();
         }
 
-        // Clear admin status (drops the Delete item from the song overflow)
+        // Clear admin/trusted status (drops the Delete and Promote items
+        // from the song overflow)
         isAdminUser = false;
+        isTrustedFlag = false;
         updateDeleteButtonVisibility();
     }
 }
@@ -1399,12 +1408,58 @@ async function checkAdminStatus() {
     }
 }
 
-// Admin status changed: rebuild the song page's top band so the Delete
-// overflow item appears/disappears (work-view reads isAdmin via hook).
+// Check if current user is trusted and update UI (gates Promote)
+async function checkTrustedStatus() {
+    if (typeof SupabaseAuth !== 'undefined') {
+        isTrustedFlag = await SupabaseAuth.isTrustedUser();
+        updateDeleteButtonVisibility();
+    }
+}
+
+// Admin/trusted status changed: rebuild the song page's top band so the
+// Delete/Promote overflow items appear/disappear (work-view reads the
+// isAdmin/isTrusted hooks).
 function updateDeleteButtonVisibility() {
     if (currentView === 'song') {
         updateWorkTopBar();
     }
+}
+
+// Promote the viewed archived song into the main index (trusted users).
+// Writes a promoted_songs row; the hourly sync + rebuild make it live on
+// the site, while an optimistic flip makes it searchable locally right away.
+async function handlePromoteSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    if (promotedIds.has(song.id)) {
+        // Undo path
+        const { error } = await SupabaseAuth.unpromoteSong(song.id);
+        if (error) {
+            alert(`Could not undo promotion: ${error.message}`);
+            return;
+        }
+        promotedIds.delete(song.id);
+        song.indexed = false;
+        alert(`Promotion of "${song.title}" undone.`);
+        updateWorkTopBar();
+        return;
+    }
+
+    if (song.indexed !== false) {
+        alert(`"${song.title}" is already in the songbook.`);
+        return;
+    }
+
+    const { error } = await SupabaseAuth.promoteSong(song.id);
+    if (error) {
+        alert(`Could not promote song: ${error.message}`);
+        return;
+    }
+    promotedIds.add(song.id);
+    song.indexed = true;
+    alert(`Promoted "${song.title}" to the songbook!\n\nIt is searchable for you immediately; the live site picks it up after the next hourly sync and rebuild.`);
+    updateWorkTopBar();
 }
 
 // Handle song deletion. Opens a modal listing every version in the group:
@@ -2236,6 +2291,9 @@ function init() {
         onEdit: (song) => enterEditMode(song),
         onDelete: handleDeleteSong,
         isAdmin: () => isAdminUser,
+        isTrusted: () => isTrustedFlag,
+        onPromote: handlePromoteSong,
+        isPromoted: (id) => promotedIds.has(id),
     });
 
     initSearch({

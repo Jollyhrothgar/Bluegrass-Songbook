@@ -1041,9 +1041,12 @@ let prefSubscriptionsRegistered = false;
  * Wire main.js-owned behaviors into the unified song page and register the
  * display-preference subscriptions that re-render the lead-sheet body.
  * Called once from main.js init.
- *   onEdit(song) - open the song editor
- *   onDelete()   - admin delete flow
- *   isAdmin()    - current admin status (drives the Delete overflow item)
+ *   onEdit(song)   - open the song editor
+ *   onDelete()     - admin delete flow
+ *   isAdmin()      - current admin status (drives the Delete overflow item)
+ *   isTrusted()    - current trusted status (drives the Promote overflow item)
+ *   onPromote()    - promote/unpromote the viewed archived song
+ *   isPromoted(id) - promoted this session (flips the item to Undo)
  */
 export function configureWorkPage(hooks = {}) {
     workPageHooks = hooks;
@@ -1139,6 +1142,22 @@ export function updateWorkTopBar() {
             label: '📝 Song notes',
             onClick: () => openNotesSheet(listContext.listId, currentWork.id, currentWork.title),
         });
+    }
+    if (workPageHooks.isTrusted?.()) {
+        const promotedNow = workPageHooks.isPromoted?.(currentWork.id);
+        if (promotedNow) {
+            overflow.push({
+                id: 'promote-song-btn',
+                label: '↩️ Undo promote',
+                onClick: () => workPageHooks.onPromote?.(),
+            });
+        } else if (currentWork.indexed === false) {
+            overflow.push({
+                id: 'promote-song-btn',
+                label: '⬆️ Promote to songbook',
+                onClick: () => workPageHooks.onPromote?.(),
+            });
+        }
     }
     if (workPageHooks.isAdmin?.()) {
         overflow.push({

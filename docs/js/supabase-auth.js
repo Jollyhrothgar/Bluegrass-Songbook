@@ -247,6 +247,61 @@ async function deleteSong(songId, reason = null) {
     }
 }
 
+// Promote an archived song into the main index (trusted users only)
+async function promoteSong(songId, reason = null) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('promote_song', {
+            p_song_id: songId,
+            p_reason: reason
+        });
+
+        if (error) {
+            console.error('Error promoting song:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error promoting song:', err);
+        return { data: null, error: err };
+    }
+}
+
+// Undo a promotion (trusted users only)
+async function unpromoteSong(songId) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('unpromote_song', {
+            p_song_id: songId
+        });
+
+        if (error) {
+            console.error('Error unpromoting song:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error unpromoting song:', err);
+        return { data: null, error: err };
+    }
+}
+
 // Clear trusted user cache (called on auth state change)
 function clearTrustedUserCache() {
     trustedUserCache = null;
@@ -1437,6 +1492,8 @@ window.SupabaseAuth = {
     isTrustedUser,
     isAdmin,
     deleteSong,
+    promoteSong,
+    unpromoteSong,
     // Expose supabase client for direct access (e.g., pending_songs)
     get supabase() { return supabaseClient; },
     // Favorites
