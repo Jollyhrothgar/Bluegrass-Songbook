@@ -14,21 +14,6 @@ import bounty_decisions as bd  # noqa: E402
 REPO_ROOT = Path(__file__).parent.parent
 
 
-class TestLedgerSlug:
-    def test_strips_strum_machine_annotations(self):
-        assert bd.ledger_slug('Sweet Sunny South modal') == 'sweet-sunny-south'
-        assert bd.ledger_slug('Cotton-Eyed Joe 16 bars') == 'cotton-eyed-joe'
-        assert bd.ledger_slug('Sally Ann via Tommy Jarrell, mostly 1 & 4') == 'sally-ann'
-
-    def test_folds_accents(self):
-        assert bd.ledger_slug('Señor') == 'senor'
-
-    def test_variants_collapse_to_one_key(self):
-        a = bd.ledger_slug('Sweet Sunny South major')
-        b = bd.ledger_slug('Sweet Sunny South modal')
-        assert a == b
-
-
 class TestInferType:
     @pytest.mark.parametrize('title', [
         'Flatbush Waltz', 'Clarinet Polka', 'Blackberry Blossom Reel',

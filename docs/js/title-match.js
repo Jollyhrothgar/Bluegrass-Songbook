@@ -20,7 +20,10 @@
 // Arrangement/performer annotations the Strum Machine catalog glues onto its
 // display names: "Sweet Sunny South modal", "Cotton-Eyed Joe 16 bars",
 // "Sally Ann via Tommy Jarrell, mostly 1 & 4".
-// Mirrors ANNOTATION_RE in scripts/lib/bounty_decisions.py.
+//
+// This lives only here. The build-time emitter looks verdicts up by exact
+// pinned title and does no normalization, so there is no Python counterpart to
+// keep in step with.
 const ANNOTATION = /\s+(via\s+.*|w\/.*|\d+\s*bars?|\d\/\d\s*time|modal|major|minor|1-4-5\s*only|with\s+\d+m|original chords|bluegrass version.*)$/i;
 
 const STOPWORDS = new Set([

@@ -221,11 +221,20 @@ itself performed.
 
 ## 5. The plan
 
-### Phase 1 — Shared title matcher
+### Phase 1 — Title matcher (frontend done)
 
-`scripts/lib/title_match.py` + `docs/js/title-match.js`, driven off one shared
-fixture so the implementations cannot drift:
-`tests/fixtures/title_match_cases.json`, asserted by **both** pytest and vitest.
+`docs/js/title-match.js`. Originally specced as a Python + JS pair driven off a
+shared fixture; that turned out to be unnecessary. Pinning exact board titles in
+the ledger removed the build side's need to normalize anything — it is a lookup,
+not a matcher — so there is one implementation, in the language that actually
+does matching.
+
+Phases 2–4 will need title comparison in Python (catalogue-internal dedupe,
+catalogue-minus-corpus). That does **not** have to be a byte-exact twin of the
+JS module: the generator is authoritative and reviewable in a diff, while the
+frontend pass is a render-time safety net. If they disagree the worst case is a
+redundant filter, so enforcing parity would buy nothing and cost a fixture
+nobody maintains.
 
 Ladder: NFKC + lowercase + quote normalization → strip annotations (` via …`,
 trailing `modal|major|minor`, `w/…`, `N bars`, `N/N time`, parentheticals) →
@@ -375,7 +384,9 @@ title is also covered.
 
 - **pytest**: matcher tiers; catalogue and wanted-list determinism (two runs,
   byte-identical)
-- **vitest**: JS matcher parity against the shared fixture
+- **vitest**: matcher tiers, and that the pairs fuzzy scoring gets wrong
+  (`500 Miles`/`900 Miles`, `New Camptown Races`/`Camptown Races`) are *not*
+  auto-resolved
 - **Regression guard**: assert `Can the Circle Be Unbroken` and `Pallet on the
   Floor` do not render — the two entries that prompted this work
 - **Invariant**: no rendered wanted entry resolves to an indexed work
@@ -386,12 +397,9 @@ title is also covered.
 
 1. ~~**Phase 6 frontend dedupe — ship first.**~~ **Done 2026-08-15.** The
    spurious cards no longer render; the board is 696 → 634.
-2. Phase 1 matcher + fixture (unblocks 2–5, testable in isolation). Partly done:
-   `docs/js/title-match.js` exists and is tested. Still owed are the Python
-   twin (`scripts/lib/title_match.py`) and the shared
-   `tests/fixtures/title_match_cases.json` both sides assert against — until
-   then the normalization ladder lives in two places
-   (`title-match.js` and `bounty_decisions.py`) and can drift.
+2. Phase 1 matcher. **Done for the frontend** — `docs/js/title-match.js`, 22
+   tests. No Python counterpart is owed: the build-time emitter looks verdicts
+   up by exact pinned title and does no normalization at all.
 3. Phase 2 catalogue builder, then Phase 3 dedupe with a real review pass
 4. Phase 4 generator, still writing the tracked file (diffable review)
 5. Phase 7 tests
