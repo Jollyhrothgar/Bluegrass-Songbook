@@ -23,6 +23,8 @@ import {
     showSectionLabels,
     twoColumnMode,
     fontSizeLevel,
+    printFontPxForLevel,
+    PRINT_BASE_FONT_PX, PRINT_FONT_PX_MIN, PRINT_FONT_PX_MAX,
     setListContext,
     setWorkRedirects, resolveWorkId,
     setBountyIndex,
@@ -1928,6 +1930,12 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
     if (prefs.chordDisplayMode === 'first') bodyClasses.push('chords-first');
     if (prefs.chordDisplayMode === 'none') bodyClasses.push('chords-none');
 
+    // Carry the reader's font size across the document boundary. The print
+    // window can't inherit the app's em multiplier (it's a separate document
+    // with its own stylesheet), so derive its px scale from the SAME
+    // FONT_SIZES table the song page uses — one source of truth, not two.
+    const fontPx = printFontPxForLevel(prefs.fontSizeLevel);
+
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2107,7 +2115,8 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
         }
         body.compact .repeat-instruction { display: block; }
         body.compact .section.is-repeat { display: none; }
-        .song-content { font-size: var(--font-size, 14px); }
+        .song-content { font-size: var(--font-size, ${PRINT_BASE_FONT_PX}px); }
+        :root { --font-size: ${fontPx}px; }
     </style>
 </head>
 <body class="${bodyClasses.join(' ')}">
@@ -2115,7 +2124,7 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
         <div class="font-size-control">
             <span class="control-label">Size:</span>
             <button id="font-decrease" class="size-btn">−</button>
-            <input type="number" id="font-size-input" value="14" min="8" max="32">
+            <input type="number" id="font-size-input" value="${fontPx}" min="${PRINT_FONT_PX_MIN}" max="${PRINT_FONT_PX_MAX}">
             <button id="font-increase" class="size-btn">+</button>
         </div>
         <div class="checkbox-group">
@@ -2152,7 +2161,7 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
         bind('page-per-song-toggle', e => B.toggle('page-per-song', e.target.checked));
         const input = document.getElementById('font-size-input');
         const setSize = v => {
-            input.value = Math.max(8, Math.min(32, v || 14));
+            input.value = Math.max(${PRINT_FONT_PX_MIN}, Math.min(${PRINT_FONT_PX_MAX}, v || ${fontPx}));
             document.documentElement.style.setProperty('--font-size', input.value + 'px');
         };
         document.getElementById('font-decrease').addEventListener('click', () => setSize(+input.value - 2));

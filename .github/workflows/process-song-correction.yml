@@ -4,9 +4,17 @@ on:
   issues:
     types: [labeled]
 
-# Serialize all content-processing workflows to prevent push conflicts
+# Group per (workflow, issue). All three content workflows trigger on every
+# `labeled` event and the job-level `if` filters them AFTERWARDS -- concurrency
+# is evaluated at the workflow-run level, before any job's `if`, so a run that
+# will skip still claims the group. With one shared group a SINGLE label event
+# started three runs, one won, one queued, and the third evicted the queued one
+# (GitHub keeps only one pending run per group). That is what silently dropped
+# submissions #208 and #209; batching several issues was never required.
+# Same issue + same workflow still serialises, which is the part that matters.
+# Cross-run push races are handled by the rebase-retry push below.
 concurrency:
-  group: content-processing
+  group: content-processing-correction-${{ github.event.issue.number }}
   cancel-in-progress: false
 
 jobs:
@@ -62,12 +70,19 @@ jobs:
           git diff --staged --quiet || \
             git commit -m "Apply song correction from #${ISSUE_NUMBER}" -m "$ISSUE_TITLE"
 
-          # Retry push with rebase in case of concurrent pushes
+          # Retry push with rebase in case of concurrent pushes.
+          # Must fail loudly: falling out of the loop used to exit 0, so a
+          # commit that never reached the remote looked like a success.
+          pushed=0
           for i in 1 2 3; do
-            git push && break
+            if git push; then pushed=1; break; fi
             echo "Push failed, attempt $i - pulling and retrying..."
             git pull --rebase
           done
+          if [ "$pushed" -ne 1 ]; then
+            echo "::error::Push failed after 3 attempts - correction was NOT committed"
+            exit 1
+          fi
 
       - name: Close issue with comment
         uses: actions/github-script@v7

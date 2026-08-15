@@ -197,6 +197,19 @@ export const FONT_SIZES = {
     '6': 2.0
 };
 
+// The list print view is a separate document with its own stylesheet, so it
+// can't inherit the em multiplier above — it sizes song text in px instead.
+// These translate one scale into the other so the two can't drift apart.
+export const PRINT_BASE_FONT_PX = 14;   // what a 1.0 multiplier means in print
+export const PRINT_FONT_PX_MIN = 8;     // bounds match the print view's +/- input
+export const PRINT_FONT_PX_MAX = 32;
+
+/** Font size in px for the print view, for a given app font size level. */
+export function printFontPxForLevel(level) {
+    const px = PRINT_BASE_FONT_PX * (FONT_SIZES[level] ?? 1);
+    return Math.max(PRINT_FONT_PX_MIN, Math.min(PRINT_FONT_PX_MAX, Math.round(px)));
+}
+
 // ============================================
 // TABLATURE STATE
 // ============================================
