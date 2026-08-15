@@ -214,7 +214,8 @@ class TestImportGuard:
 # Index prune + tag exclusions
 # ============================================
 
-from curation import apply_index_prune, apply_tag_exclusions, load_prune_list
+from curation import (apply_index_prune, apply_tag_exclusions, load_prune_list,
+                      load_promoted_songs)
 
 
 def _songs():
@@ -258,6 +259,42 @@ def test_registry_keep_rescues_from_prune():
 def test_empty_prune_list_is_noop():
     songs = apply_index_prune(_songs(), set(), Registry())
     assert all('indexed' not in s for s in songs)
+
+
+def test_promoted_ids_rescue_from_prune():
+    songs = apply_index_prune(_songs(), {'rescued-song', 'pruned-song'},
+                              Registry(), promoted_ids=frozenset({'rescued-song'}))
+    by_id = {s['id']: s for s in songs}
+    assert 'indexed' not in by_id['rescued-song']
+    assert by_id['pruned-song'].get('indexed') is False
+
+
+def test_promoted_id_not_on_prune_list_is_noop():
+    # Promoting an already-canon song must not change anything
+    songs = apply_index_prune(_songs(), {'pruned-song'},
+                              Registry(), promoted_ids=frozenset({'kept-song'}))
+    by_id = {s['id']: s for s in songs}
+    assert 'indexed' not in by_id['kept-song']
+    assert by_id['pruned-song'].get('indexed') is False
+
+
+def test_load_promoted_songs_absent_file(tmp_path):
+    assert load_promoted_songs(tmp_path) == {}
+
+
+def test_load_promoted_songs_corrupt_file(tmp_path):
+    d = tmp_path / 'docs' / 'data'
+    d.mkdir(parents=True)
+    (d / 'promoted_songs.json').write_text('{not json')
+    assert load_promoted_songs(tmp_path) == {}
+
+
+def test_load_promoted_songs_reads_cache(tmp_path):
+    d = tmp_path / 'docs' / 'data'
+    d.mkdir(parents=True)
+    (d / 'promoted_songs.json').write_text(
+        '{"some-song": {"promoted_at": "2026-08-14T00:00:00Z", "reason": null}}')
+    assert set(load_promoted_songs(tmp_path)) == {'some-song'}
 
 
 def test_tag_exclusions_strip_listed_tags():

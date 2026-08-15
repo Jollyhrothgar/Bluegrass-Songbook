@@ -23,7 +23,8 @@ export const COLLECTION_PINS = {
         "old-joe-clark", "soldier-s-joy", "cripple-creek",
         "arkansas-traveler", "turkey-in-the-straw", "fire-on-the-mountain"
     ],
-    'all-songs': []  // No pinned songs for "search all"
+    'all-songs': [],  // No pinned songs for "search all"
+    'bluegrass-dungeon': []  // The dungeon has no pins — it's an archive browse
 };
 
 export const COLLECTIONS = [
