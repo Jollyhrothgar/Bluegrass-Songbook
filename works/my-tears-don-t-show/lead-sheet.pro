@@ -33,7 +33,7 @@ But when I'm [G]blue no one will [C]ever [Am]know
 When memories [D7]make me cry my tears don't [G]show
 {end_of_verse}
 
-{start_of_outro: Outro}
+{start_of_verse: Verse 5}
 Sweet memor[G]ies that make the [C]teardrops [Am]flow
 Although I've [D7]cried for you my tears don't [G]show
-{end_of_outro}
+{end_of_verse}
