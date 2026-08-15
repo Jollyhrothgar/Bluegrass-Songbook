@@ -30,7 +30,7 @@ If they could [D7]only see inside my [G][G7]heart
 [C]They could see the memories that [G]I still treasure there
 [A7]They could see how much I've cried and [D7]know how much I've cared
 But when I'm [G]blue no one will [C]ever [Am]know
-When memories {D7]make me cry my tears don't [G]show
+When memories [D7]make me cry my tears don't [G]show
 {end_of_verse}
 
 {start_of_outro: Outro}
