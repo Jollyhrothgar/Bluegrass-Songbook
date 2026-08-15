@@ -48,7 +48,8 @@ import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGen
 import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill } from './shell.js';
-import { buildListChordPro, buildListText, listFileBase } from './list-export.js';
+import { buildListChordPro, buildListText, buildListZipFiles, listFileBase } from './list-export.js';
+import { createZip } from './zip.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
 import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
@@ -1823,6 +1824,14 @@ async function handleListExport(action) {
         downloadFile(`${base}.pro`, buildListChordPro(listSongs, contents), 'text/plain');
     } else if (action === 'download-text') {
         downloadFile(`${base}.txt`, buildListText(listSongs, contents), 'text/plain');
+    } else if (action === 'download-zip') {
+        // One .pro per song, for readers that import a folder of files
+        const files = buildListZipFiles(listSongs, contents);
+        if (!files.length) {
+            alert('No song content available to export.');
+            return;
+        }
+        downloadFile(`${base}.zip`, createZip(files), 'application/zip');
     }
 }
 
@@ -1830,6 +1839,7 @@ const LIST_EXPORT_ACTIONS = [
     { action: 'print', label: '🖨️ Print' },
     { action: 'download-chordpro', label: '⬇️ Download .pro' },
     { action: 'download-text', label: '⬇️ Download .txt' },
+    { action: 'download-zip', label: '🗜️ Download .zip (one file per song)' },
 ];
 
 /**

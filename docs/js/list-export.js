@@ -84,6 +84,40 @@ export function buildListText(songs, contents = []) {
     return blocks.join('\n\n\n' + '-'.repeat(40) + '\n\n\n') + '\n';
 }
 
+/**
+ * One .pro file per song, for readers that import a folder rather than a
+ * multi-song file. Same metadata normalisation as the combined export.
+ *
+ * Names are deduplicated: a list can legitimately hold two works with the same
+ * title (different arrangements), and a zip with duplicate names extracts to
+ * whichever entry lands last.
+ */
+export function buildListZipFiles(songs, contents = []) {
+    const used = new Set();
+    const files = [];
+
+    songs.forEach((song, i) => {
+        const raw = (contents[i] || song.content || '').trim();
+        if (!raw) return;
+
+        let body = normalizeChordProMeta(raw);
+        if (!/^\{title:/m.test(body) && song.title) {
+            body = `{title: ${song.title}}\n${body}`;
+        }
+
+        const stem = listFileBase(song.title || song.id || 'song');
+        let name = `${stem}.pro`;
+        for (let n = 2; used.has(name.toLowerCase()); n++) {
+            name = `${stem} (${n}).pro`;
+        }
+        used.add(name.toLowerCase());
+
+        files.push({ name, content: body.endsWith('\n') ? body : `${body}\n` });
+    });
+
+    return files;
+}
+
 /** Filename stem for a list, safe across filesystems. */
 export function listFileBase(listName) {
     const cleaned = (listName || '')

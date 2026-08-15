@@ -11,6 +11,7 @@ import {
     stripToPlainText,
     buildListChordPro,
     buildListText,
+    buildListZipFiles,
     listFileBase,
 } from '../list-export.js';
 
@@ -135,5 +136,44 @@ describe('listFileBase', () => {
 
     it('bounds the length', () => {
         expect(listFileBase('x'.repeat(200)).length).toBeLessThanOrEqual(80);
+    });
+});
+
+describe('buildListZipFiles', () => {
+    it('emits one file per song, named from the title', () => {
+        const files = buildListZipFiles([SONG_A, SONG_B], [CONTENT_A, CONTENT_B]);
+        expect(files.map(f => f.name)).toEqual(['How Long Blues.pro', 'Sally Goodin.pro']);
+    });
+
+    it('normalises metadata the same way the combined export does', () => {
+        const [file] = buildListZipFiles([SONG_A], [CONTENT_A]);
+        expect(file.content).toContain('{title: How Long Blues}');
+        expect(file.content).toContain('{meta: x_source web-chords}');
+    });
+
+    it('never emits {new_song} - each file is a single song', () => {
+        const files = buildListZipFiles([SONG_A, SONG_B], [CONTENT_A, CONTENT_B]);
+        for (const f of files) expect(f.content).not.toContain('{new_song}');
+    });
+
+    it('deduplicates names when two works share a title', () => {
+        // A list can hold two arrangements of the same song; without this the
+        // zip would extract to a single file.
+        const dup = { id: 'c', title: 'How Long Blues', artist: 'Someone Else' };
+        const files = buildListZipFiles(
+            [SONG_A, dup],
+            [CONTENT_A, '{meta: title How Long Blues}\n[E]other version\n']
+        );
+        expect(files.map(f => f.name)).toEqual(['How Long Blues.pro', 'How Long Blues (2).pro']);
+    });
+
+    it('skips songs with no content', () => {
+        const files = buildListZipFiles([SONG_A, SONG_B], [CONTENT_A, '']);
+        expect(files).toHaveLength(1);
+    });
+
+    it('ends every file with a newline', () => {
+        const files = buildListZipFiles([SONG_A, SONG_B], [CONTENT_A, CONTENT_B]);
+        for (const f of files) expect(f.content.endsWith('\n')).toBe(true);
     });
 });
