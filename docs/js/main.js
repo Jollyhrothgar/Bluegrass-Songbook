@@ -2197,6 +2197,7 @@ function init() {
     ]);
     document.getElementById('topbar-brand')?.addEventListener('click', (e) => {
         e.preventDefault();
+        setDungeonMode(false);
         searchInput.value = '';
         showView('home');
         pushHistoryState('home');
@@ -2208,10 +2209,13 @@ function init() {
     // Initialize reactive view state subscription
     initViewSubscription();
 
-    // Dungeon chrome (zombie topbar face, blood-red accent) follows the flag
-    subscribe('dungeonMode', (on) => {
-        document.body.classList.toggle('dungeon-mode', on);
+    // Dungeon chrome (zombie topbar face, blood-red accent) follows the flag.
+    // Read the live binding rather than the callback arg: notifies are
+    // rAF-batched, so the argument can lag behind rapid flag changes.
+    subscribe('dungeonMode', () => {
+        document.body.classList.toggle('dungeon-mode', dungeonMode);
     });
+    document.body.classList.toggle('dungeon-mode', dungeonMode);
 
     // Initialize analytics (early, before other modules)
     initAnalytics();

@@ -9361,12 +9361,14 @@ body.dungeon-mode #search-stats {
     border-radius: 6px;
 }
 
-/* Zombie Earl rises over the plaque in dungeon mode only */
-.brand-dungeon-face {
+/* Zombie Earl rises over the plaque in dungeon mode only.
+   Selector includes .topbar-brand so display:none outranks the
+   .topbar-brand img { display: block } base rule. */
+.topbar-brand .brand-dungeon-face {
     display: none;
 }
 
-body.dungeon-mode .brand-dungeon-face {
+body.dungeon-mode .topbar-brand .brand-dungeon-face {
     display: block;
     position: absolute;
     left: 50%;

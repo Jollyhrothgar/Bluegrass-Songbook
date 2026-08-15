@@ -455,6 +455,7 @@ const stateGetters = {
     currentView: () => currentView,
     activeModal: () => activeModal,
     currentSearchQuery: () => currentSearchQuery,
+    dungeonMode: () => dungeonMode,
 };
 
 const stateSetters = {
@@ -519,6 +520,7 @@ const stateSetters = {
 
     // UI view state
     currentView: setCurrentView,
+    dungeonMode: setDungeonMode,
     activeModal: setActiveModal,
     currentSearchQuery: setCurrentSearchQuery,
 };
