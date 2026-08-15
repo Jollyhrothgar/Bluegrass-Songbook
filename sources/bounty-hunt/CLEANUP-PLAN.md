@@ -5,141 +5,66 @@ derived, produced locally and committed) and a **wanted list** (cheap
 subtraction, generated in CI), with a durable adjudication ledger for the
 identity calls no algorithm — and no external identifier — can make.
 
+Status: adjudication is **done** (110/110, `curation/bounty_decisions.yaml`).
+The board goes 696 → 639. Nothing else in this plan is built yet.
+
+Readable version: https://claude.ai/code/artifact/33a6a180-bee0-4587-bb5a-5d2ea928bc5a
+
 ---
 
-## 1. Diagnosis
+## 1. What's wrong
 
-### How the board was actually built
+### The board is built from two jobs with opposite constraints
 
-The Aug 1 refresh (`cde9ef3a5`) was **not** a simple fuzzy title match. It was a
-final scan against the local MusicBrainz mirror that took the **full outer
-union** of several sources-of-truth from different research runs to define the
-canonical bluegrass catalogue; the bounty board is the residual after
-subtracting what the songbook has.
+The Aug 1 refresh (`cde9ef3a5`) was **not** a fuzzy title match. It was a scan
+against the local MusicBrainz mirror that took the **full outer union** of
+several research runs to define the canonical bluegrass catalogue; the board is
+the residual after subtracting what the songbook holds.
 
-That matters for two reasons, and they pull in opposite directions:
+Those two halves pull in opposite directions:
 
-1. **The expensive half can never run in CI.** The MB mirror is a local
-   Postgres container (port 5440) — `scripts/lib/CLAUDE.md` already classes
-   MusicBrainz work as "Local only", with the established pattern being *run
-   locally → commit the cache → CI reads the cache* (`artist_tags.json`,
+1. **The union needs the local MB mirror** (a Postgres container on port 5440)
+   and can never run in CI — `scripts/lib/CLAUDE.md` already classes MusicBrainz
+   work as "Local only", with the established pattern being *run locally →
+   commit the cache → CI reads it* (`artist_tags.json`,
    `bluegrass_recordings.json`, `grassiness_scores.json`).
-2. **The cheap half goes stale constantly.** Catalogue-minus-corpus changes on
-   every import, and that subtraction needs no MB access at all.
+2. **The subtraction needs no MB access at all** and goes stale on every import.
 
-Conflating the two is the actual structural defect. There is no single
-generator that could be committed and run — which is why nothing was.
+Conflating them is the structural defect. There is no single generator that
+could be committed and run — which is why nothing ever was. Seven scripts read
+`wanted_songs.json`; nothing builds it.
 
-### Why the reported entries slipped through
+### Why the two reported entries slipped through
 
 | Wanted entry | What we actually have | Why matching missed it |
 |---|---|---|
 | `Can the Circle Be Unbroken (By and By)` | `will-the-circle-be-unbroken{,-1,-2}` — all indexed, 3–4 chords | Can ≠ Will → 0.87, below any safe auto-threshold |
-| `Pallet on the Floor` | `make-me-a-pallet-on-the-floor` (5 chords), `make-me-a-pallet-on-your-floor` (4), `pallet-on-your-floor` (2) — all indexed | Best-fuzzy-match picks the **wrong** candidate: `Carpet on the Floor` scores 0.84, beating every real match |
+| `Pallet on the Floor` | `make-me-a-pallet-on-the-floor` (5 chords), `-on-your-floor` (4), `pallet-on-your-floor` (2) — all indexed | Best-match-only picks the **wrong** candidate: `Carpet on the Floor` scores 0.84, beating every real match |
 
 Both are alias / word-order problems, not threshold-tuning problems. Match on
 **candidate sets, never best-match-only** — that inversion is precisely what put
 `Carpet on the Floor` ahead of the real Pallet works.
 
-### The wanted side has only the title — everything else is unavailable or circular
+---
 
-Before reaching for a better matcher, it is worth knowing what evidence exists
-at all. Only one signal is usable, and not on the side that needs it:
+## 2. What the evidence rules out
 
-| Signal | Corpus side | Wanted side |
-|---|---|---|
-| Lyrics / first line | Excellent — all three Circle works share `"I was standing by my window"`; all three Pallet works share `"Make me…a pallet on your floor"`; `Carpet on the Floor` is plainly unrelated from its first line | **Nothing** — by definition these are songs we lack; zero wanted titles have BL parsed text |
-| Artist sets | From `bluegrass_recordings.json` | 257/696, and **circular** — MB keys recordings by title, so fragmented titles have disjoint artist sets by construction |
+Three plausible fixes were tested against the real data and rejected. Each
+rejection narrows what the remaining solution can be.
 
-Artist-overlap was measured and rejected: true pairs score 0.00–0.25 Jaccard,
-false pairs 0.00–0.07 — the bands overlap, and `Sweet Thing`/`Sweet Thang`
-(true) scores 0.00, identical to `500 Miles`/`900 Miles` (false).
+### Artist-set overlap — circular
 
-**So the wanted side offers only the title string.** That makes the identity
-question a *referential* one — which strings denote the same musical work in
-this tradition — which is world knowledge, not string distance and not phrase
-semantics.
+MusicBrainz keys recordings by title, so the fragmentation we are fixing
+*guarantees* disjoint artist sets. True pairs score 0.00–0.25 Jaccard, false
+pairs 0.00–0.07 — overlapping bands. `Sweet Thing`/`Sweet Thang` (true) scores
+0.00, identical to `500 Miles`/`900 Miles` (false). Coverage is 257/696.
 
-### Tested and rejected: embeddings on titles
+### MusicBrainz work IDs as a join key — too sparse, and itself fragmented
 
-Semantic similarity is the obvious upgrade over word matching and is the wrong
-tool here. Song titles are rigid designators: their identity is conventional,
-not compositional, so phrase-meaning similarity is close to orthogonal to song
-identity. Embeddings would fix Circle and Pallet while breaking these
-*confidently*, which is worse than breaking them noisily:
-
-- `500 Miles` / `900 Miles` — the phrase is `<number> Miles`; numerals embed
-  poorly. Different songs.
-- `Foggy Mountain Rock` / `Top` / `Breakdown` — three different Flatt & Scruggs
-  numbers, near-identical phrases.
-- `New Camptown Races` / `Camptown Races` — a Monroe/Wakefield bluegrass
-  instrumental versus the Stephen Foster minstrel song. Nothing in the phrase
-  separates them.
-
-The working tool is an **LLM adjudicator** — the architecture already in the
-repo (LLM tagging via the Anthropic batch API; the bounty-hunt
-`review_decisions.json` review queue).
-
-### Adjudication, run once by hand on the full gray band
-
-All 58 gray-band entries, judged by knowledge rather than string distance:
-
-| Verdict | Count | Examples |
-|---|---:|---|
-| **Covered — drop from board** | **28** | `Can the Circle`→`will-the-circle-*`, `Pallet on the Floor`→`pallet-on-your-floor`, `Bill Cheatum`→`Bill Cheatham`, `Ora Lee`→`Aura Lee`, `Walking in the Parlor`→`Walk in the Parlor` |
-| **Distinct — keep on board** | 26 | `New Camptown Races`, `500 Miles`, `Foggy Mountain Rock`, `Maid Behind the Bar` (Irish reel) vs `The Girl Behind The Bar` (country song) |
-| **Genuinely uncertain** | 4 | `Sweet Thing`, `Carolina`, `Rattlesnake`, `Come Along Jody` |
-
-Nearly half the gray band is real coverage, and fuzzy scoring errs in both
-directions at the same score: `Come All Ye Tenderhearted`→`Come All You Tender
-Hearted` (0.92, true) sits level with false pairs.
-
-**Six of the 28 are archived** — `Come All You Tender Hearted`, `Bunch of Keys`,
-`Aura Lee`, `Roxanna Waltz`, `Walk in the Parlor`, `Will You Be Satisfied That
-Way`. That is the Dungeon promote list, and it matches the estimate from the
-title pass.
-
-Two incidental findings: `st-james-infirmary` has `first_line: "EADGBe"` (a tab
-header leaked into the lyrics field), and the candidate lists expose
-**corpus-internal** duplicates the bounty work never touches — `Streamline
-Cannonball`/`Streamlined Cannonball`, `Yellow Rose of Texas` ×2, `Sitting on Top
-of the World` ×3, `Will the Circle` ×3. Those belong in `curation/registry.yaml`
-under `groups:`.
-
-### Adjudication is done — no API job needed
-
-The full adjudication debt was **110 entries**, not 700: only that many have any
-corpus candidate at all (fuzzy ≥0.78 or stopword-free token containment). The
-other 586 are genuinely missing and need no verdict.
-
-All 110 were adjudicated by hand on 2026-08-15 and committed to
-`curation/bounty_decisions.yaml`. A batch-API pass was scoped (~$2.71 on Opus 5)
-and dropped as over-engineering — the work fit in one sitting.
-
-| Verdict | Board titles |
-|---|---:|
-| Covered — drop | **53** (44 ledger keys; 9 are two-title arrangement variants) |
-| Distinct — keep | 50 |
-| Uncertain — needs a human who knows the tune | 7 |
-| Not a song | 4 (no candidates; found separately) |
-
-Reconciles exactly: 53 + 50 + 7 = 110. **The board goes 696 → 639.**
-
-Of the 53 covered: **7 resolve to archived works** (the Dungeon promote list) and
-**12 resolve to lyrics-only works** — the double-count, where the board
-advertises as missing a song whose page its own "Needs Chords" section lists.
-
-An API pass only becomes worth building if a future research run adds a large
-batch of new candidates. Until then the generator reads the ledger and the
-queue stays empty.
-
-### Tested and rejected: MusicBrainz work IDs as the join key
-
-The obvious fix is to stop matching strings and join on MB work IDs.
 `bg_query.sql` does select `lrw.entity1 AS work_id`, and the raw export still
 exists (`~/workspace/bluegrass_list/bg_coverage.csv.gz`, 75,356 rows) even
-though every committed downstream artifact dropped the column. **Tested against
-the raw export — it does not work:**
+though every committed downstream artifact dropped the column. Recovering it
+does not help:
 
 ```
 rows with work_id:                         15,744 / 75,356  (20.9%)
@@ -153,41 +78,62 @@ PALLET   work_id=12445814  'Make Me a Pallet on Your Floor'
 ```
 
 Three failures at once: the `LEFT JOIN l_recording_work` misses 79% of
-recordings, so coverage is far too sparse for a primary key; `COALESCE(w.name,
-r.name)` makes work_id → title 1:1 by construction, so it supplies no
-title-variant clustering; and **MusicBrainz fragments the exact songs in
-question across separate work entities** — it has three distinct works for Will
-/ Can the Circle and two for Make Me a Pallet.
-
-The consequence is the important part: **the outer union inherited MB's own
-fragmentation.** The board's duplicates are not merely a title-matching artifact
-downstream — the canonical catalogue itself contains the same song several
-times, because its authority does. No external identifier will fix this. Song
-identity is a judgment we have to own.
+recordings; `COALESCE(w.name, r.name)` makes work_id → title 1:1 by
+construction, so it clusters nothing; and **MusicBrainz fragments the exact
+songs in question** — three works for Will/Can the Circle, two for Make Me a
+Pallet.
 
 (MB's `l_work_work` relations could cluster some of these, but only within the
 21% that have work IDs at all. Worth a look someday; not a foundation.)
 
-### Measured scope (696 entries, against index 2,458 / archive 16,764)
+### Embeddings on titles — the wrong kind of similarity
+
+Song titles are rigid designators: their identity is conventional, not
+compositional, so phrase-meaning similarity is close to orthogonal to song
+identity. Embeddings would fix Circle and Pallet while breaking these
+*confidently*, which is worse than breaking them noisily:
+
+- `500 Miles` / `900 Miles` — the phrase is `<number> Miles`; numerals embed
+  poorly. Different songs.
+- `Foggy Mountain Rock` / `Top` / `Breakdown` — three different Flatt & Scruggs
+  numbers, near-identical phrases.
+- `New Camptown Races` / `Camptown Races` — a Monroe/Wakefield bluegrass
+  instrumental versus the Stephen Foster minstrel song.
+
+### What follows
+
+The wanted side carries **only a title**. Lyrics exist on the corpus side alone
+— by definition these are songs we lack; zero wanted titles have BL parsed text.
+So the identity question is *referential*: which strings denote the same musical
+work in this tradition. That is world knowledge, not string distance and not
+phrase semantics — and the outer union inherited MB's own fragmentation, so
+**song identity is a judgment we have to own**.
+
+---
+
+## 3. Measured scope
+
+696 wanted entries, against the live build (index 2,458 / archive 16,764).
 
 | Class | Count | Notes |
 |---|---:|---|
 | Resolve to an indexed work at ≥0.93 | 12 | provably spurious |
 | Resolve by stopword-free token containment | 17 | `Pallet on the Floor`, `Johnson Boys`, `Grey Eagle` |
-| Gray band 0.80–0.93 | 58 | needs adjudication |
+| Gray band 0.80–0.93 | 58 | a coin flip — see below |
 | Annotation-suffix entries | 38 | `Sally Ann via Tommy Jarrell, mostly 1 & 4` |
 | Non-song junk | 4 | `Band Introductions`, `Band Intros`, `Talk`, `Age Bluegrass Album Band` |
 | Instrumentals mistyped `Vocal` | 38 | `Clarinet Polka`, `Flatbush Waltz` |
 | Thin schema (title/type/source only) | 488 | bare cards, empty artist line |
 
-The gray band is a coin flip and must not be automated:
+The gray band cannot be automated at any threshold — true and false pairs
+interleave at the same score:
 
 ```
-0.92  Come All Ye Tenderhearted  -> Come All You Tender Hearted   TRUE
-0.91  Sweet Thing                -> Sweet Thang                   TRUE
-0.89  500 Miles                  -> 900 Miles                     FALSE
-0.86  Foggy Mountain Rock        -> Foggy Mountain Top            FALSE
-0.84  Pallet on the Floor        -> Carpet On The Floor           FALSE
+0.92  Come All Ye Tenderhearted  ->  Come All You Tender Hearted   TRUE
+0.91  Sweet Thing                ->  Sweet Thang                   TRUE
+0.89  500 Miles                  ->  900 Miles                     FALSE
+0.86  Foggy Mountain Rock        ->  Foggy Mountain Top            FALSE
+0.84  Pallet on the Floor        ->  Carpet On The Floor           FALSE
 ```
 
 Two artifacts of the union worth naming:
@@ -204,23 +150,70 @@ Two artifacts of the union worth naming:
   collapsed 82 → 19 because the union dropped rich fields instead of merging
   them.
 
-### Archived-coverage hypothesis: negative, with a better finding next door
+---
 
-**Zero archived works title-match a wanted entry at ≥0.93**; ~6 plausible ones
-sit in the gray band (`Come All You Tender Hearted`, `Sweet Thang`, `Roxanna
-Waltz`, `Bunch of Keys`, `Aura Lee`, `Come Along John`). The prune rule and the
-catalogue agree with each other — a useful consistency check, not a scandal.
+## 4. Adjudication — done
 
-The real hidden-coverage bucket is **611 indexed works that are lyrics-only**
-(`has_content: true`, `chord_count: 0`), largely from `bl_fallback.py` — an
-import this campaign itself performed. Wanted entries land on `sally-ann`,
-`my-native-home`, `bill-cheatham`, `buffalo-gals`, `the-bluest-man-in-town`,
-`paddy-on-the-turnpike`. **The board advertises these as "Missing Jam Standards"
-while its own "Needs Chords" section lists the same works.**
+The real debt was **110 entries, not 696**: only that many have any corpus
+candidate at all (fuzzy ≥0.78 or stopword-free token containment). The other
+586 are genuinely missing and need no verdict.
+
+All 110 were adjudicated by hand on 2026-08-15 and committed to
+`curation/bounty_decisions.yaml`. A batch-API pass was scoped (~$2.71 on Opus 5)
+and dropped as over-engineering — the work fit in one sitting.
+
+| Verdict | Board titles | Detail |
+|---|---:|---|
+| Covered — drop | **53** | 44 ledger keys; 9 are two-title arrangement variants |
+| Distinct — keep | 50 | close scores, different songs |
+| Uncertain | 7 | needs someone who knows which tune the source meant |
+| Not a song | 4 | catalog artifacts; found separately, no candidates |
+
+Reconciles exactly: 53 + 50 + 7 = 110. **The board goes 696 → 639.**
+
+### Two findings inside the 53
+
+**7 resolve to archived works** — `streamline-cannonball`, `aura-lee`,
+`come-all-you-tender-hearted`, `will-you-be-satisfied-that-way`,
+`walk-in-the-parlor`, `roxanna-waltz`, `bunch-of-keys`. That is the Dungeon
+promote list.
+
+**12 resolve to lyrics-only works** — `sally-ann`, `bill-cheatham`,
+`buffalo-gals`, `my-native-home`, `paddy-on-the-turnpike` and others. This is
+the double-count: the board advertises them as missing standards while its own
+"Needs Chords" section lists the same works.
+
+### Cases only knowledge could settle
+
+- `Feuding Banjos` → `dueling-banjos`. Feudin' Banjos (Smith/Reno, 1955) is the
+  original composition later popularized as Dueling Banjos. Scored 0.79 —
+  below every threshold.
+- `Can the Circle Be Unbroken` → `will-the-circle-be-unbroken`. All three corpus
+  works carry the Carter Family lyric, which *is* "Can the Circle Be Unbroken".
+  Technically distinct compositions; universally one song in a jam.
+- `New Camptown Races` stays on the board despite scoring 0.88 against
+  `Camptown Races`.
+
+### Incidental findings
+
+`st-james-infirmary` has `first_line: "EADGBe"` — a tab header leaked into the
+lyrics field. Separately, the candidate lists exposed nine **corpus-internal**
+duplicate groups the bounty work never touches: Will the Circle ×3, Sitting on
+Top of the World ×3, Shady Grove ×3, Streamline/Streamlined Cannonball, Yellow
+Rose of Texas ×2. Those belong in `curation/registry.yaml` under `groups:`.
+
+### The archived-coverage hypothesis: negative
+
+Zero archived works title-match a wanted entry at ≥0.93; the 7 confirmed ones
+all sit in the gray band. The prune rule and the catalogue agree with each other
+— a useful consistency check, not a scandal. The real hidden-coverage bucket is
+the **611 indexed works that are lyrics-only** (`has_content: true`,
+`chord_count: 0`), largely from `bl_fallback.py` — an import this campaign
+itself performed.
 
 ---
 
-## 2. Plan
+## 5. The plan
 
 ### Phase 1 — Shared title matcher
 
@@ -237,26 +230,13 @@ Tiers: exact-normalized → **auto**; token-set equality → **auto**; fuzzy ≥
 **auto**; token-set containment → **queue**; 0.80–0.93 → **queue**; below → miss.
 
 This is a *narrowing* tool that proposes candidates. It never decides identity —
-that is the adjudicator's job (Phase 5), because neither string distance nor
-title embeddings can do it (see § Tested and rejected above).
-
-### Phase 1b — adjudication (already done)
-
-The matcher's queued candidate sets get a verdict per item: does this title
-denote a work we already have? That pass is **complete** — all 110 candidates
-are adjudicated in `curation/bounty_decisions.yaml` (see above). The generator
-consumes that file; it does not re-derive the verdicts.
-
-If a later research run adds many new candidates, batch-API adjudication is the
-scale-out path (~$2.71 for a 700-item pass, cost shown and approved before
-submission per the repo rule). It is not needed for the current corpus.
+that is the ledger's job (Phase 5), because neither string distance nor title
+embeddings can do it (see § 2).
 
 ### Phase 2 — Catalogue builder (local only, output tracked)
 
 `sources/bounty-hunt/src/build_catalogue.py` — reconstructs and freezes the
 outer union that currently exists only as one-off research output.
-
-Inputs (all present; the MB-derived ones need the local mirror):
 
 | Ledger | File | Contributes |
 |---|---|---|
@@ -280,7 +260,7 @@ presence implies vocal.
 
 ### Phase 3 — Catalogue-internal dedupe
 
-Distinct from Phase 4, and it has to come first. Because the union inherited
+Has to come before any comparison with the corpus. Because the union inherited
 MB's fragmentation, **the catalogue contains the same song more than once**
 before the corpus is even consulted: `Will the Circle Be Unbroken` /
 `Will the Circle Be Unbroken?` / `Can the Circle Be Unbroken (By and By)` are
@@ -325,7 +305,7 @@ Output schema, uniform on every row — no more two-tier cards:
 }
 ```
 
-### Phase 5 — Adjudication ledger
+### Phase 5 — Adjudication ledger (seeded)
 
 `curation/bounty_decisions.yaml` — tracked, permanent, survives regeneration.
 Same proven pattern as `sources/bounty-hunt/review_decisions.json` (which
@@ -335,39 +315,12 @@ already caught the Xavier Rudd "Stoney Creek" error).
 vary between research runs, so a title-keyed decision silently detaches the next
 time the catalogue is rebuilt.
 
-```yaml
-same_song:        # catalogue-internal merge (Phase 3)
-  will-the-circle-be-unbroken:
-    merge: [can-the-circle-be-unbroken-by-and-by, will-the-circle-be-unbroken-q]
-    reason: "One jam tune; MB fragments it across three work entities"
-    decided: "2026-08-15"
+Sections: `covered`, `distinct`, `uncertain`, `not_a_song`, `intra_dupes`, and
+`corpus_duplicates_noted` (which feeds `curation/registry.yaml`, not the board).
 
-covered:          # catalogue song IS this work — drop from the board (Phase 4)
-  pallet-on-the-floor:
-    work: make-me-a-pallet-on-the-floor
-    reason: "Same tune; we hold three arrangements"
-
-distinct:         # looks similar, is a different song — keep on the board
-  500-miles:
-    not: 900-miles
-    reason: "Hedy West song, unrelated to the 900 Miles fiddle tune"
-
-not_a_song:
-  band-introductions: { reason: "SM catalog artifact" }
-```
-
-CLI mirroring the existing `curate` verbs:
-
-```bash
-./scripts/utility bounty review                        # queue + candidates + chord counts
-./scripts/utility bounty resolve <id> --covered <work-id> --reason "..."
-./scripts/utility bounty resolve <id> --distinct <work-id> --reason "..."
-./scripts/utility bounty resolve <id> --merge <id,...> --reason "..."
-./scripts/utility bounty resolve <id> --not-a-song --reason "..."
-```
-
-Seed the bulk first (29 provable + 4 junk + 38 annotation collapses), then work
-the ~58 gray band by hand.
+A `./scripts/utility bounty review | resolve` CLI mirroring the existing
+`curate` verbs handles the residual queue. All 110 current candidates are
+already resolved; the queue is empty until a research run adds more.
 
 ### Phase 6 — Frontend
 
@@ -393,26 +346,23 @@ the ~58 gray band by hand.
 
 ---
 
-## 3. Dependency: the Dungeon promote flow
-
-Archived works the ledger confirms as real coverage should be restored through
-the **existing** promote path — `promoted_songs.json` → hourly sync workflow →
-build unions it with registry `keep:` — not a new mechanism.
-
-That ships on `feature/bluegrass-dungeon`, **not yet merged to main**, still
-needing `supabase db push` and a live promote test. ~6 candidates depend on it;
-small enough that this cleanup should not block on the merge. Sequence it after.
-
----
-
-## 4. Suggested execution order
+## 6. Order of work
 
 1. **Phase 6 frontend dedupe — ship first.** Independent of everything else; the
-   spurious cards stop rendering immediately.
+   spurious cards stop rendering immediately, and it can read the ledger
+   directly.
 2. Phase 1 matcher + fixture (unblocks 2–5, testable in isolation)
 3. Phase 2 catalogue builder, then Phase 3 dedupe with a real review pass
 4. Phase 4 generator, still writing the tracked file (diffable review)
-5. Phase 5 ledger: bulk seed, then the gray band
-6. Phase 7 tests
-7. Flip `wanted_songs.json` to generated + gitignored once CI is verified green
-8. Post-merge: promote the confirmed archived works via the Dungeon flow
+5. Phase 7 tests
+6. Flip `wanted_songs.json` to generated + gitignored once CI is verified green
+7. Post-merge: promote the 7 confirmed archived works via the Dungeon flow
+
+### One dependency
+
+Archived works the ledger confirms should be restored through the **existing**
+promote path — `promoted_songs.json` → hourly sync workflow → build unions it
+with registry `keep:` — not a new mechanism. That ships on
+`feature/bluegrass-dungeon`, **not yet merged to main**, still needing
+`supabase db push` and a live promote test. Only 7 items depend on it, so this
+cleanup should not block on the merge.
