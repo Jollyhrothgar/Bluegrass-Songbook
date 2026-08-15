@@ -5,8 +5,9 @@ derived, produced locally and committed) and a **wanted list** (cheap
 subtraction, generated in CI), with a durable adjudication ledger for the
 identity calls no algorithm — and no external identifier — can make.
 
-Status: adjudication is **done** (110/110, `curation/bounty_decisions.yaml`).
-The board goes 696 → 639. Nothing else in this plan is built yet.
+Status: adjudication is **done** (110/110, `curation/bounty_decisions.yaml`)
+and the frontend dedupe (Phase 6) has **shipped** — the board is 696 → 634.
+Phases 1–4 (matcher twin, catalogue builder, generator) are not built yet.
 
 Readable version: https://claude.ai/code/artifact/33a6a180-bee0-4587-bb5a-5d2ea928bc5a
 
@@ -169,7 +170,12 @@ and dropped as over-engineering — the work fit in one sitting.
 | Uncertain | 7 | needs someone who knows which tune the source meant |
 | Not a song | 4 | catalog artifacts; found separately, no candidates |
 
-Reconciles exactly: 53 + 50 + 7 = 110. **The board goes 696 → 639.**
+Reconciles exactly: 53 + 50 + 7 = 110.
+
+Pinning exact board titles during the Phase 6 build (below) later raised the
+covered count to 56 — three same-song siblings of already-adjudicated entries
+turned up (`Old Mother Flanagan three parts`, `Yellow Rose of Texas, The
+Ben/Tommy Jarrell`, `Black Eyed Susie bluegrass version via Vern Williams`).
 
 ### Two findings inside the 53
 
@@ -322,18 +328,48 @@ A `./scripts/utility bounty review | resolve` CLI mirroring the existing
 `curate` verbs handles the residual queue. All 110 current candidates are
 already resolved; the queue is empty until a research run adds more.
 
-### Phase 6 — Frontend
+### Phase 6 — Frontend (shipped)
 
-`docs/js/bounty-view.js`:
+Shipped 2026-08-15. `partitionWanted()` in `docs/js/bounty-view.js` filters the
+wanted list at render from two sources: the adjudicated verdicts
+(`docs/data/bounty_decisions.json`, lowered from the YAML ledger by
+`scripts/lib/bounty_decisions.py` during the index build) and a live
+exact/token-set re-check against `allSongs` via the new `docs/js/title-match.js`.
+The live pass is what keeps the page honest between builds — a contribution in
+`pending_songs` is in `allSongs` before any generator runs again.
 
-- Import the shared matcher; filter wanted entries against `allSongs` **at
-  render**, so the page stays honest between builds when contributions land in
-  `pending_songs` and the static JSON can't know.
-- Split the outcome rather than just dropping: match **with chords** → drop;
-  match **lyrics-only** → route into "Needs Chords", deduped against
-  `computeChordGaps()` so it doesn't double-render.
-- Section routing then reads the corrected `type`, so fiddle-tune bounties land
-  under instrumentals with their instrument chips.
+`title-match.js` deliberately exposes **no fuzzy ratio**: there is nothing safe
+to do with a 0.80–0.93 score, and returning a single best match is what put
+`Carpet on the Floor` ahead of the real Pallet works, so it returns candidate
+arrays and auto-resolves only exact and token-set matches.
+
+A covered entry whose work is lyrics-only is dropped from "Missing Jam
+Standards" but not deleted — `computeChordGaps()` already lists it under
+"Needs Chords", and listing it in both places was the double-count. The hint
+line under the section reports how many entries were hidden and why.
+
+Type correction ships as a title regex in the emitter (`infer_type`), which
+reaches only titles that name their tune form — `Flatbush Waltz` yes,
+`Maid Behind the Bar` no. Phase 2 should import that function and extend it
+with ledger tags rather than reimplementing it.
+
+**Result: the board goes 696 → 634.** 56 adjudicated titles retire, plus 4 junk
+entries, plus 2 the live re-check caught on its own — `Canadian Waltz original
+chords` and `Lady of Spain 3/4 time`, whose base titles match the corpus
+exactly but which scored below the adjudication threshold in their annotated
+form. The self-healing pass earned its place on day one.
+(Three more than the ledger's 53: pinning exact titles surfaced
+`Old Mother Flanagan three parts`, `Yellow Rose of Texas, The Ben/Tommy Jarrell`
+and `Black Eyed Susie bluegrass version via Vern Williams`, all same-song
+siblings of entries already adjudicated.)
+
+One thing the build taught us: the ledger originally keyed verdicts by a slug
+recomputed from the title, and the keys drifted — `shady-grove` (base song) vs
+`shady-grove-minor` (what the slug produces). A prefix fallback then swallowed
+the junk entry `Talk` into `talk-about-suffering`. Every covered entry now pins
+the exact board titles it retires in a `titles:` list, and
+`tests/test_bounty_decisions.py` asserts no title is claimed twice and no junk
+title is also covered.
 
 ### Phase 7 — Verification
 
@@ -348,10 +384,14 @@ already resolved; the queue is empty until a research run adds more.
 
 ## 6. Order of work
 
-1. **Phase 6 frontend dedupe — ship first.** Independent of everything else; the
-   spurious cards stop rendering immediately, and it can read the ledger
-   directly.
-2. Phase 1 matcher + fixture (unblocks 2–5, testable in isolation)
+1. ~~**Phase 6 frontend dedupe — ship first.**~~ **Done 2026-08-15.** The
+   spurious cards no longer render; the board is 696 → 634.
+2. Phase 1 matcher + fixture (unblocks 2–5, testable in isolation). Partly done:
+   `docs/js/title-match.js` exists and is tested. Still owed are the Python
+   twin (`scripts/lib/title_match.py`) and the shared
+   `tests/fixtures/title_match_cases.json` both sides assert against — until
+   then the normalization ladder lives in two places
+   (`title-match.js` and `bounty_decisions.py`) and can drift.
 3. Phase 2 catalogue builder, then Phase 3 dedupe with a real review pass
 4. Phase 4 generator, still writing the tracked file (diffable review)
 5. Phase 7 tests

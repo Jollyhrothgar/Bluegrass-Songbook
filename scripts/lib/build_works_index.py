@@ -1126,6 +1126,16 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     # docs/data/.
     write_outputs(songs, output_file)
 
+    # Lower the bounty adjudication ledger to JSON the browser can read. Runs
+    # here rather than as a separate command so the three callers of this
+    # script (scripts/bootstrap and both build.yml jobs) can't drift; needs the
+    # freshly written index for chord counts.
+    try:
+        from bounty_decisions import build_bounty_decisions
+    except ImportError:
+        from scripts.lib.bounty_decisions import build_bounty_decisions
+    build_bounty_decisions(output_file.parent)
+
     # Lightweight dedup check: warn about potential duplicates
     _check_duplicates(songs)
 

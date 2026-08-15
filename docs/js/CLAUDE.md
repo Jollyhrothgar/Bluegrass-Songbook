@@ -20,6 +20,7 @@ docs/
 │   ├── song-controls.js # Pill builders: Key / Display / Info / Export
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
 │   ├── tags.js         # Tag dropdown, filtering, virtual instrument tags/facets
+│   ├── title-match.js  # Song-title normalization (bounty board dedupe)
 │   ├── lists.js        # User lists, favorites, multi-owner, Thunderdome
 │   ├── list-picker.js  # List picker popup component
 │   ├── editor.js       # Song editor (Raw tab), re-exports smart-paste pipeline
@@ -49,7 +50,9 @@ docs/
     ├── index.jsonl     # SEARCHABLE canon only, no ChordPro (~1.8k rows)
     ├── archive.jsonl   # Pruned rows, same shape, lyrics truncated (lazy)
     ├── songs/{id}.pro  # Full ChordPro per work — fetched when a page opens
-    └── posts.json      # Blog manifest (built by scripts/lib/build_posts.py)
+    ├── posts.json      # Blog manifest (built by scripts/lib/build_posts.py)
+    └── bounty_decisions.json  # Wanted-list verdicts (built from
+                        # curation/bounty_decisions.yaml at index build)
 ```
 
 ## Quick Start
@@ -675,6 +678,33 @@ Frictionless song requests without a GitHub account.
 - `openAddSongPicker({ mode: 'request' })` — reachable via the
   `#request-song` hash and the bounty page's "Request a Song" button
 - Creates GitHub issues via the `create-song-request` Supabase edge function
+
+### Bounty board dedupe (`title-match.js` + `bounty-view.js`)
+
+The wanted list used to advertise songs the book already had — "Can the Circle
+Be Unbroken" while three `will-the-circle-be-unbroken` works sat indexed.
+`partitionWanted()` filters it at render from two sources:
+
+1. **`data/bounty_decisions.json`** — the adjudicated verdicts, built from
+   `curation/bounty_decisions.yaml` by `scripts/lib/bounty_decisions.py` during
+   the index build. These are the alias calls no algorithm gets right.
+2. **A live re-check against `allSongs`** via `title-match.js`. This is what
+   keeps the page honest between builds: a contribution in `pending_songs` is
+   in `allSongs` before any generator has run again.
+
+`title-match.js` deliberately exposes **no fuzzy ratio**. Scores in the
+0.80–0.93 band interleave true and false pairs at identical values
+(`Come All Ye Tenderhearted`/`Come All You Tender Hearted` is real at 0.92;
+`500 Miles`/`900 Miles` is not at 0.89), so there is nothing safe to do with
+the number. It auto-resolves exact and token-set matches only, and returns
+**candidate arrays, never a best match** — ranking by score once put
+`Carpet on the Floor` ahead of the three real Pallet works.
+
+A covered entry whose work is lyrics-only is dropped from "Missing Jam
+Standards" but not deleted: `computeChordGaps()` already lists it under
+"Needs Chords". Listing it in both places was the original double-count.
+
+See `sources/bounty-hunt/CLEANUP-PLAN.md` for the full evidence.
 
 ### Multi-Owner Lists & Thunderdome
 

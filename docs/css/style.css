@@ -5844,6 +5844,15 @@ mark {
     margin: 0.5rem 0 0;
     font-style: italic;
 }
+/* Trailing count of wanted entries the board filtered out because we already
+   hold the song. Quieter than the hint itself — it's provenance, not a task. */
+.bounty-hint-aside {
+    display: block;
+    margin-top: 0.2rem;
+    font-style: normal;
+    font-size: 0.94em;
+    opacity: 0.75;
+}
 .bounty-empty {
     text-align: center;
     color: var(--text-secondary);
