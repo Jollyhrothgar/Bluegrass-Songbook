@@ -88,16 +88,17 @@ def build_bounty_decisions(data_dir: Path = None, quiet: bool = False) -> dict:
     wanted = json.loads(WANTED_FILE.read_text(encoding='utf-8')).get('songs', [])
     counts = _chord_counts(data_dir)
 
-    # Each ledger entry pins the exact board titles it retires. Deriving them
-    # from the key by slug was tried and abandoned: the keys name the base song
-    # ("shady-grove") while a slug carries the annotation ("shady-grove-minor"),
-    # and a prefix fallback silently swallowed the junk entry "Talk" into
-    # "talk-about-suffering". Explicit lists cannot drift.
-    title_to_entry = {}
+    # Verdicts key on catalogue_id and wanted rows carry theirs, so the join is
+    # exact. Two earlier keying schemes failed: a slug recomputed from the title
+    # drifted from the hand-written keys, and pinning board titles detached
+    # wholesale once the catalogue folded arrangement suffixes away.
+    covered_by_id = {}
     for entry in (ledger.get('covered') or {}).values():
-        for title in entry.get('titles') or []:
-            title_to_entry[title] = entry
+        for cid in entry.get('catalogue_ids') or []:
+            covered_by_id[cid] = entry
 
+    junk_ids = {e['catalogue_id'] for e in (ledger.get('not_a_song') or {}).values()
+                if e.get('catalogue_id')}
     junk_titles = {e['title'] for e in (ledger.get('not_a_song') or {}).values()
                    if e.get('title')}
 
@@ -109,11 +110,12 @@ def build_bounty_decisions(data_dir: Path = None, quiet: bool = False) -> dict:
         if not title:
             continue
 
-        if title in junk_titles:
+        cid = song.get('catalogue_id')
+        if title in junk_titles or (cid and cid in junk_ids):
             not_a_song.append(title)
             continue
 
-        entry = title_to_entry.get(title)
+        entry = covered_by_id.get(cid) if cid else None
         if entry:
             work = entry['work']
             covered[title] = {
@@ -127,10 +129,11 @@ def build_bounty_decisions(data_dir: Path = None, quiet: bool = False) -> dict:
         if corrected != song.get('type'):
             types[title] = corrected
 
-    # A pinned title that is no longer on the board means the wanted list was
-    # regenerated with different spellings — the verdict has detached and needs
-    # a human, so say so loudly rather than silently dropping coverage.
-    unmatched = sorted(t for t in title_to_entry if t not in board_titles)
+    # A verdict whose catalogue row is no longer on the board is usually fine —
+    # the corpus check subtracted it first. One that names a row the catalogue
+    # dropped entirely is not, so surface that rather than hide it.
+    board_ids = {s.get('catalogue_id') for s in wanted}
+    unmatched = sorted(i for i in covered_by_id if i not in board_ids)
 
     payload = {
         '_meta': {
@@ -156,8 +159,8 @@ def build_bounty_decisions(data_dir: Path = None, quiet: bool = False) -> dict:
               f"({lyrics_only} lyrics-only, {archived} archived), "
               f"{len(not_a_song)} junk, {len(types)} type fixes")
         if unmatched:
-            print(f"  WARNING: {len(unmatched)} pinned titles are no longer on "
-                  f"the board — verdicts detached: {'; '.join(unmatched[:3])}")
+            print(f"  note: {len(unmatched)} verdicts name rows already off the "
+                  f"board (usually subtracted by the corpus check)")
 
     return payload
 

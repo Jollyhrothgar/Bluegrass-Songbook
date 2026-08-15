@@ -252,10 +252,13 @@
   {
    "catalogue_id": "adieu-false-heart",
    "title": "Adieu False Heart",
-   "title_variants": [],
+   "title_variants": [
+    "Adieu False Heart via Dirk Powell"
+   ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 2,
    "spread": 1,
@@ -265,21 +268,6 @@
     "Riley Baugus",
     "Troublesome Creek String Band"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "adieu-false-heart-via-dirk-powell",
-   "title": "Adieu False Heart via Dirk Powell",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -3328,23 +3316,10 @@
   },
   {
    "catalogue_id": "bag-of-spuds",
-   "title": "Bag of Spuds",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "bag-of-spuds-major-key-tune",
    "title": "Bag of Spuds major key tune",
-   "title_variants": [],
+   "title_variants": [
+    "Bag of Spuds"
+   ],
    "sources": [
     "strum-machine"
    ],
@@ -5809,7 +5784,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "black-eyed-susie-bluegrass-version-via-vern-williams",
+   "catalogue_id": "black-eyed-susie-bluegrass-version",
    "title": "Black Eyed Susie bluegrass version via Vern Williams",
    "title_variants": [],
    "sources": [
@@ -6574,10 +6549,14 @@
   {
    "catalogue_id": "blue-eyed-boston-boy",
    "title": "Blue Eyed Boston Boy",
-   "title_variants": [],
+   "title_variants": [
+    "Blue-Eyed Boston Boy 3/4 version",
+    "Blue-Eyed Boston Boy 4/4 version"
+   ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 1,
    "spread": 1,
@@ -6586,36 +6565,6 @@
    "artists": [
     "The Bluegrass Cardinals"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "blue-eyed-boston-boy-3-4-version",
-   "title": "Blue-Eyed Boston Boy 3/4 version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "blue-eyed-boston-boy-4-4-version",
-   "title": "Blue-Eyed Boston Boy 4/4 version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -7623,12 +7572,14 @@
    "catalogue_id": "bluest-man-in-town",
    "title": "Bluest Man in Town",
    "title_variants": [
+    "Bluest Man in Town, The via Del McCoury",
     "The Bluest Man In Town",
     "The Bluest Man in Town"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 4,
    "spread": 3,
@@ -7640,21 +7591,6 @@
     "Del McCoury and The Dixie Pals",
     "The Del McCoury Band"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "bluest-man-in-town-the-via-del-mccoury",
-   "title": "Bluest Man in Town, The via Del McCoury",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -7909,7 +7845,8 @@
    "catalogue_id": "bonaparte-crossing-the-rhine",
    "title": "Bonaparte Crossing The Rhine",
    "title_variants": [
-    "Bonaparte Crossing the Rhine"
+    "Bonaparte Crossing the Rhine",
+    "Bonaparte Crossing the Rhine extended 4 chord in B part"
    ],
    "sources": [
     "mb-coverage",
@@ -7924,21 +7861,6 @@
     "Harvey Reid",
     "Stuart Duncan"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "bonaparte-crossing-the-rhine-extended-4-chord-in-b-part",
-   "title": "Bonaparte Crossing the Rhine extended 4 chord in B part",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -9626,7 +9548,7 @@
    ]
   },
   {
-   "catalogue_id": "buffalo-girls-gals-via-john-hatcher-mississippi",
+   "catalogue_id": "buffalo-girls-gals",
    "title": "Buffalo Girls / Gals - via John Hatcher, Mississippi",
    "title_variants": [],
    "sources": [
@@ -10662,28 +10584,10 @@
   },
   {
    "catalogue_id": "canadian-waltz",
-   "title": "Canadian Waltz",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Instrumental",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "catalogue_id": "canadian-waltz-original-chords",
    "title": "Canadian Waltz original chords",
-   "title_variants": [],
+   "title_variants": [
+    "Canadian Waltz"
+   ],
    "sources": [
     "strum-machine"
    ],
@@ -11591,17 +11495,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "charlie-brooks-and-nellie-adair-via-reno-and-smiley",
+   "catalogue_id": "charlie-brooks-and-nellie-adair",
    "title": "Charlie Brooks and Nellie Adair via Reno & Smiley",
-   "title_variants": [],
+   "title_variants": [
+    "Charlie Brooks and Nellie Adair"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Reno and Smiley"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -12206,9 +12115,13 @@
   {
    "catalogue_id": "chinquapin-hunting",
    "title": "Chinquapin Hunting",
-   "title_variants": [],
+   "title_variants": [
+    "Chinquapin Hunting crooked 3-part \"A\" tune",
+    "Chinquapin Hunting square 2-part \"D\" tune"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 7,
    "spread": 3,
@@ -12223,36 +12136,6 @@
     "Ricky Skaggs",
     "The Foggy Hogtown Boys"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "chinquapin-hunting-crooked-3-part-a-tune",
-   "title": "Chinquapin Hunting crooked 3-part \"A\" tune",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "chinquapin-hunting-square-2-part-d-tune",
-   "title": "Chinquapin Hunting square 2-part \"D\" tune",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -13717,7 +13600,9 @@
   {
    "catalogue_id": "coon-dog",
    "title": "Coon Dog",
-   "title_variants": [],
+   "title_variants": [
+    "Coon Dog via Mary Jane Epps"
+   ],
    "sources": [
     "mb-coverage",
     "strum-machine"
@@ -13730,21 +13615,6 @@
     "Bob Herring",
     "Rafe Stefanini"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "coon-dog-via-mary-jane-epps",
-   "title": "Coon Dog via Mary Jane Epps",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -13916,11 +13786,14 @@
    "title": "Cotton Eyed Joe",
    "title_variants": [
     "Cotton-Eyed Joe",
+    "Cotton-Eyed Joe 16 bars",
+    "Cotton-Eyed Joe 20 bars",
     "Cotton‐Eyed Joe"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 34,
    "spread": 3,
@@ -13947,36 +13820,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "catalogue_id": "cotton-eyed-joe-16-bars",
-   "title": "Cotton-Eyed Joe 16 bars",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "cotton-eyed-joe-20-bars",
-   "title": "Cotton-Eyed Joe 20 bars",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
   },
   {
    "catalogue_id": "cotton-patch-rag",
@@ -15975,23 +15818,10 @@
   },
   {
    "catalogue_id": "darling-cory-modal-version",
-   "title": "Darling Cory modal version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "darling-cory-modal-version-w-7b-chord",
    "title": "Darling Cory modal version w/7b chord",
-   "title_variants": [],
+   "title_variants": [
+    "Darling Cory modal version"
+   ],
    "sources": [
     "strum-machine"
    ],
@@ -16480,11 +16310,13 @@
    "title": "Deep River Blues",
    "title_variants": [
     "Deep River Blues (live at Cornell University and Town Hall / 1970)",
+    "Deep River Blues with major 7 chord",
     "The Deep River Blues"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 5,
    "spread": 2,
@@ -16497,21 +16329,6 @@
     "Doc Watson",
     "The Warrior River Boys"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "deep-river-blues-with-major-7-chord",
-   "title": "Deep River Blues with major 7 chord",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -16638,32 +16455,24 @@
    "instruments": []
   },
   {
-   "catalogue_id": "devil-chased-me-around-the-stump-the-via-laurie-lewis-tom-ro",
-   "title": "Devil Chased Me Around the Stump, The via Laurie Lewis/Tom Rozum",
-   "title_variants": [],
+   "catalogue_id": "devil-chased-me-around-the-stump",
+   "title": "Devil Chased Me Around the Stump",
+   "title_variants": [
+    "Devil Chased Me Around the Stump, The via Laurie Lewis/Tom Rozum",
+    "Devil Chased Me Around the Stump, The via Norman Blake"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 2,
+   "spread": 2,
+   "score": 3.0,
    "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "devil-chased-me-around-the-stump-the-via-norman-blake",
-   "title": "Devil Chased Me Around the Stump, The via Norman Blake",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
+   "artists": [
+    "Lonesome River Band",
+    "Norman Blake"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -17525,7 +17334,7 @@
    ]
   },
   {
-   "catalogue_id": "done-gone-eck-robertson-version-w-extra-beats",
+   "catalogue_id": "done-gone-eck-robertson-version",
    "title": "Done Gone Eck Robertson version w/extra beats",
    "title_variants": [],
    "sources": [
@@ -19330,7 +19139,9 @@
   {
    "catalogue_id": "duck-river",
    "title": "Duck River",
-   "title_variants": [],
+   "title_variants": [
+    "Duck River with minor"
+   ],
    "sources": [
     "mb-coverage",
     "strum-machine"
@@ -19343,21 +19154,6 @@
     "Art Stamper",
     "Josh Turknett"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "duck-river-with-minor",
-   "title": "Duck River with minor",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -19504,17 +19300,26 @@
    "instruments": []
   },
   {
-   "catalogue_id": "duncan-and-brady-via-the-johnson-mountain-boys",
-   "title": "Duncan and Brady via the Johnson Mountain Boys",
-   "title_variants": [],
+   "catalogue_id": "duncan-and-brady",
+   "title": "Duncan and Brady",
+   "title_variants": [
+    "Duncan & Brady",
+    "Duncan and Brady via the Johnson Mountain Boys"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 4,
+   "spread": 2,
+   "score": 6.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Harvey Reid",
+    "New Riders of the Purple Sage",
+    "The Seldom Scene",
+    "The String Cheese Incident"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -21364,17 +21169,23 @@
    "instruments": []
   },
   {
-   "catalogue_id": "farewell-trion-via-bob-carlins-album",
-   "title": "Farewell Trion via Bob Carlin's album",
-   "title_variants": [],
+   "catalogue_id": "farewell-trion",
+   "title": "Farewell Trion",
+   "title_variants": [
+    "Farewell Trion via Bob Carlin's album"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 2,
+   "spread": 2,
+   "score": 3.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "James Bryan",
+    "Red Hen Stringband"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -22606,6 +22417,7 @@
    "catalogue_id": "fly-around-my-pretty-little-miss",
    "title": "Fly Around My Pretty Little Miss",
    "title_variants": [
+    "Fly Around My Pretty Little Miss 4 chord in A part",
     "Fly around My Pretty Little Miss"
    ],
    "sources": [
@@ -22638,21 +22450,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "catalogue_id": "fly-around-my-pretty-little-miss-4-chord-in-a-part",
-   "title": "Fly Around My Pretty Little Miss 4 chord in A part",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
   },
   {
    "catalogue_id": "foggy-mountain-breakdown",
@@ -25624,24 +25421,12 @@
   },
   {
    "catalogue_id": "going-to-the-west",
-   "title": "Going To The West",
-   "title_variants": [],
-   "sources": [
-    "bluegrass-lyrics"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "going-to-the-west-via-laurie-lewis",
    "title": "Going to the West via Laurie Lewis",
-   "title_variants": [],
+   "title_variants": [
+    "Going To The West"
+   ],
    "sources": [
+    "bluegrass-lyrics",
     "strum-machine"
    ],
    "coverage": 0,
@@ -26428,10 +26213,13 @@
   {
    "catalogue_id": "gospel-plow",
    "title": "Gospel Plow",
-   "title_variants": [],
+   "title_variants": [
+    "Gospel Plow via the Nashville Bluegrass Band"
+   ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 4,
    "spread": 2,
@@ -26444,21 +26232,6 @@
     "Uncle Sinner"
    ],
    "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "gospel-plow-via-the-nashville-bluegrass-band",
-   "title": "Gospel Plow via the Nashville Bluegrass Band",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
    "instruments": []
   },
   {
@@ -27433,7 +27206,9 @@
   {
    "catalogue_id": "half-past-four",
    "title": "Half Past Four",
-   "title_variants": [],
+   "title_variants": [
+    "Half Past Four with 7 chord"
+   ],
    "sources": [
     "mb-coverage",
     "strum-machine"
@@ -27449,21 +27224,6 @@
     "John Hartford",
     "Rhys Jones"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "half-past-four-with-7-chord",
-   "title": "Half Past Four with 7 chord",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -33770,9 +33530,12 @@
   {
    "catalogue_id": "ida-red",
    "title": "Ida Red",
-   "title_variants": [],
+   "title_variants": [
+    "Ida Red with 4 chords"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 13,
    "spread": 3,
@@ -33792,21 +33555,6 @@
     "Stringbean",
     "Tommy Jarrell"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "ida-red-with-4-chords",
-   "title": "Ida Red with 4 chords",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -40603,10 +40351,12 @@
    "catalogue_id": "lady-of-spain",
    "title": "Lady of Spain",
    "title_variants": [
-    "Lady Of Spain"
+    "Lady Of Spain",
+    "Lady of Spain 3/4 time"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 6,
    "spread": 3,
@@ -40620,21 +40370,6 @@
     "Rual Yarbrough",
     "The Blue Ridge Gentlemen"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "lady-of-spain-3-4-time",
-   "title": "Lady of Spain 3/4 time",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -40654,17 +40389,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "ladys-fancy-via-dan-crary",
+   "catalogue_id": "ladys-fancy",
    "title": "Lady's Fancy via Dan Crary",
-   "title_variants": [],
+   "title_variants": [
+    "Lady’s Fancy"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "John Hartford"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -43387,17 +43127,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "little-pink-via-chance-mccoy",
+   "catalogue_id": "little-pink",
    "title": "Little Pink via Chance McCoy",
-   "title_variants": [],
+   "title_variants": [
+    "Little Pink"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Reed Martin"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -46146,28 +45891,10 @@
   },
   {
    "catalogue_id": "lovers-waltz",
-   "title": "Lover's Waltz",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Instrumental",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "catalogue_id": "lovers-waltz-arrangement-with-modulation",
    "title": "Lover's Waltz arrangement, with modulation",
-   "title_variants": [],
+   "title_variants": [
+    "Lover's Waltz"
+   ],
    "sources": [
     "strum-machine"
    ],
@@ -48728,9 +48455,13 @@
   {
    "catalogue_id": "mole-in-the-ground",
    "title": "Mole in the Ground",
-   "title_variants": [],
+   "title_variants": [
+    "Mole in the Ground w/5 chord in the middle",
+    "Mole in the Ground w/o 5 chord in the middle"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 7,
    "spread": 3,
@@ -48745,36 +48476,6 @@
     "Whiskey Shivers",
     "Wolfe Bros."
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "mole-in-the-ground-w-5-chord-in-the-middle",
-   "title": "Mole in the Ground w/5 chord in the middle",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "mole-in-the-ground-w-o-5-chord-in-the-middle",
-   "title": "Mole in the Ground w/o 5 chord in the middle",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -49085,11 +48786,14 @@
    "catalogue_id": "more-pretty-girls-than-one",
    "title": "More Pretty Girls Than One",
    "title_variants": [
+    "More Pretty Girls Than One 4/4 time",
+    "More Pretty Girls Than One w/minor",
     "More Pretty Girls than One"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 21,
    "spread": 3,
@@ -49110,36 +48814,6 @@
     "Jimmy Martin and the Sunny Mountain Boys"
    ],
    "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "more-pretty-girls-than-one-4-4-time",
-   "title": "More Pretty Girls Than One 4/4 time",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "more-pretty-girls-than-one-w-minor",
-   "title": "More Pretty Girls Than One w/minor",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
    "instruments": []
   },
   {
@@ -50516,10 +50190,13 @@
   {
    "catalogue_id": "my-native-home",
    "title": "My Native Home",
-   "title_variants": [],
+   "title_variants": [
+    "My Native Home via the Nashville Bluegrass Band"
+   ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 2,
    "spread": 2,
@@ -50529,21 +50206,6 @@
     "Lester Flatt & Earl Scruggs",
     "Mike Seeger"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "my-native-home-via-the-nashville-bluegrass-band",
-   "title": "My Native Home via the Nashville Bluegrass Band",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -55083,18 +54745,24 @@
    "instruments": []
   },
   {
-   "catalogue_id": "ookpik-waltz-original-chords",
-   "title": "Ookpik Waltz original chords",
-   "title_variants": [],
+   "catalogue_id": "ookpik-waltz",
+   "title": "Ookpik Waltz",
+   "title_variants": [
+    "Ookpik Waltz original chords"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 2,
+   "spread": 2,
+   "score": 3.0,
    "core": false,
-   "artists": [],
-   "type": "Instrumental",
+   "artists": [
+    "Chris Thile",
+    "Steve Kaufman"
+   ],
+   "type": "Fiddle Tune",
    "instruments": [
     "fiddle",
     "banjo",
@@ -55123,23 +54791,10 @@
   },
   {
    "catalogue_id": "ora-lee",
-   "title": "Ora Lee",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "ora-lee-with-minor-chords",
    "title": "Ora Lee with minor chords",
-   "title_variants": [],
+   "title_variants": [
+    "Ora Lee"
+   ],
    "sources": [
     "strum-machine"
    ],
@@ -57098,24 +56753,11 @@
    "instruments": []
   },
   {
-   "catalogue_id": "poor-liza-jane-1-4-5",
-   "title": "Poor Liza Jane 1-4-5",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "poor-liza-jane-with-minors",
+   "catalogue_id": "poor-liza-jane",
    "title": "Poor Liza Jane with minors",
-   "title_variants": [],
+   "title_variants": [
+    "Poor Liza Jane 1-4-5"
+   ],
    "sources": [
     "strum-machine"
    ],
@@ -58117,17 +57759,24 @@
    "instruments": []
   },
   {
-   "catalogue_id": "rachel-via-melvin-wine",
-   "title": "Rachel via Melvin Wine",
-   "title_variants": [],
+   "catalogue_id": "rachel",
+   "title": "Rachel",
+   "title_variants": [
+    "Rachel via Melvin Wine"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 3,
+   "spread": 2,
+   "score": 4.5,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Larry Richardson",
+    "New Ballards Branch Bogtrotters",
+    "Pete McMahan"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -58469,7 +58118,8 @@
    "title": "Raleigh and Spencer",
    "title_variants": [
     "Raleigh & Spencer",
-    "Raleigh And Spencer"
+    "Raleigh And Spencer",
+    "Raleigh and Spencer via Laurie Lewis"
    ],
    "sources": [
     "mb-coverage",
@@ -58493,21 +58143,6 @@
     "Tommy Jarrell",
     "Wildcats"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "raleigh-and-spencer-via-laurie-lewis",
-   "title": "Raleigh and Spencer via Laurie Lewis",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -59242,11 +58877,13 @@
    "catalogue_id": "red-rocking-chair",
    "title": "Red Rocking Chair",
    "title_variants": [
-    "Red Rocking Chair (remix by Dex)"
+    "Red Rocking Chair (remix by Dex)",
+    "Red Rocking Chair modal"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 25,
    "spread": 3,
@@ -59266,21 +58903,6 @@
     "Leftover Salmon",
     "Mac Wiseman"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "red-rocking-chair-modal",
-   "title": "Red Rocking Chair modal",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -59909,17 +59531,23 @@
    ]
   },
   {
-   "catalogue_id": "riddle-song-the-via-doc-watson",
+   "catalogue_id": "riddle-song",
    "title": "Riddle Song, The via Doc Watson",
-   "title_variants": [],
+   "title_variants": [
+    "Riddle Song",
+    "The Riddle Song"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Doc Watson"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -60667,17 +60295,24 @@
    "instruments": []
   },
   {
-   "catalogue_id": "rocky-pallet-via-the-skillet-lickers",
-   "title": "Rocky Pallet via the Skillet Lickers",
-   "title_variants": [],
+   "catalogue_id": "rocky-pallet",
+   "title": "Rocky Pallet",
+   "title_variants": [
+    "Rocky Pallet via the Skillet Lickers"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 3,
+   "spread": 2,
+   "score": 4.5,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Foghorn Stringband",
+    "Gid Tanner & His Skillet Lickers",
+    "Tatiana Hargreaves"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -62017,10 +61652,13 @@
    "catalogue_id": "sally-ann",
    "title": "Sally Ann",
    "title_variants": [
-    "Sally Ann (instrumental Duet)"
+    "Sally Ann (instrumental Duet)",
+    "Sally Ann key of D, 1-4-5",
+    "Sally Ann key of G w/minors"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 40,
    "spread": 3,
@@ -62066,36 +61704,6 @@
   {
    "catalogue_id": "sally-ann-earl-scruggs-version",
    "title": "Sally Ann Earl Scruggs version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "sally-ann-key-of-d-1-4-5",
-   "title": "Sally Ann key of D, 1-4-5",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "sally-ann-key-of-g-w-minors",
-   "title": "Sally Ann key of G w/minors",
    "title_variants": [],
    "sources": [
     "strum-machine"
@@ -63411,11 +63019,14 @@
     "Shady Grove (alternate take 1)",
     "Shady Grove (alternate take 2)",
     "Shady Grove >",
+    "Shady Grove minor, via Doc Watson",
+    "Shady Grove minor, via Garcia/Grisman",
     "Shady grove"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 56,
    "spread": 3,
@@ -63435,36 +63046,6 @@
     "David Grisman",
     "Dix Bruce"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "shady-grove-minor-via-doc-watson",
-   "title": "Shady Grove minor, via Doc Watson",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "shady-grove-minor-via-garcia-grisman",
-   "title": "Shady Grove minor, via Garcia/Grisman",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -64975,11 +64556,14 @@
    "title": "Sitting on Top of the World",
    "title_variants": [
     "Sitting On Top Of The World",
-    "Sitting on Top of the World (backup)"
+    "Sitting on Top of the World (backup)",
+    "Sitting on Top of the World 1-4-5 only",
+    "Sitting on Top of the World with 6m"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 30,
    "spread": 3,
@@ -64999,36 +64583,6 @@
     "Harvey Reid",
     "Jim Nunally"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "sitting-on-top-of-the-world-1-4-5-only",
-   "title": "Sitting on Top of the World 1-4-5 only",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "sitting-on-top-of-the-world-with-6m",
-   "title": "Sitting on Top of the World with 6m",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -67369,17 +66923,24 @@
    "instruments": []
   },
   {
-   "catalogue_id": "stillhouse-aka-cider",
-   "title": "Stillhouse aka Cider",
-   "title_variants": [],
+   "catalogue_id": "stillhouse",
+   "title": "Stillhouse",
+   "title_variants": [
+    "Stillhouse aka Cider"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 3,
+   "spread": 1,
+   "score": 3.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Adam Hurt",
+    "Foghorn Stringband",
+    "The Whitetop Mountaineers"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -67902,9 +67463,12 @@
   {
    "catalogue_id": "sugar-hill",
    "title": "Sugar Hill",
-   "title_variants": [],
+   "title_variants": [
+    "Sugar Hill with minor chord"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 8,
    "spread": 2,
@@ -67927,21 +67491,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "catalogue_id": "sugar-hill-with-minor-chord",
-   "title": "Sugar Hill with minor chord",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
   },
   {
    "catalogue_id": "sugar-in-the-gourd",
@@ -68758,12 +68307,15 @@
    "catalogue_id": "sweet-sunny-south",
    "title": "Sweet Sunny South",
    "title_variants": [
+    "Sweet Sunny South major",
+    "Sweet Sunny South modal",
     "Sweet, Sunny South",
     "The Sweet Sunny South"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 21,
    "spread": 3,
@@ -68783,36 +68335,6 @@
     "Larry Richardson",
     "Mike Seeger"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "sweet-sunny-south-major",
-   "title": "Sweet Sunny South major",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "sweet-sunny-south-modal",
-   "title": "Sweet Sunny South modal",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -69583,17 +69105,24 @@
    "instruments": []
   },
   {
-   "catalogue_id": "talk-to-your-heart-4-4-time",
-   "title": "Talk to Your Heart 4/4 time",
-   "title_variants": [],
+   "catalogue_id": "talk-to-your-heart",
+   "title": "Talk to Your Heart",
+   "title_variants": [
+    "Talk to Your Heart 4/4 time"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 3,
+   "spread": 3,
+   "score": 6.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Audie Blaylock and Redline",
+    "Frank Wakefield",
+    "Roland White"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -72677,15 +72206,16 @@
    "title_variants": [
     "Train '45' (Heading South)",
     "Train 45 (4/26/58)",
-    "Train 45 (6/28/58)"
+    "Train 45 (6/28/58)",
+    "Train 45 1/2"
    ],
    "sources": [
     "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 30,
+   "coverage": 31,
    "spread": 3,
-   "score": 60.0,
+   "score": 62.0,
    "core": true,
    "artists": [
     "Benton Flippen",
@@ -74934,10 +74464,12 @@
    "catalogue_id": "walking-in-my-sleep",
    "title": "Walking in My Sleep",
    "title_variants": [
-    "Walking In My Sleep"
+    "Walking In My Sleep",
+    "Walking in My Sleep via Fiddlin' Arthur Smith"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 12,
    "spread": 3,
@@ -74957,21 +74489,6 @@
     "The Seldom Scene",
     "Tommy Jarrell"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "walking-in-my-sleep-via-fiddlin-arthur-smith",
-   "title": "Walking in My Sleep via Fiddlin' Arthur Smith",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -77861,7 +77378,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "when-youre-smiling-bluegrass-arrangement",
+   "catalogue_id": "when-youre-smiling-bluegrass",
    "title": "When You're Smiling bluegrass arrangement",
    "title_variants": [],
    "sources": [

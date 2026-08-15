@@ -93,6 +93,74 @@ NON_SONG_RE = re.compile(
 JAM_INSTRUMENTS = ['fiddle', 'banjo', 'mandolin', 'guitar']
 
 
+# Strum Machine ships arrangement notes inside its display names, so the same
+# song arrives as several titles ("Sally Ann key of D, 1-4-5", "Sally Ann Earl
+# Scruggs version"). Only the STRUCTURED forms are stripped here — the ones
+# whose shape identifies them as notation rather than title. Bare performer
+# suffixes ("Sally Ann Alison Fisher") are deliberately left alone: the same
+# position also carries real title words (`Salty Dog Blues`, `Angel Band To The
+# Lord`), so stripping by position would destroy titles. Those go to the
+# review queue instead — see --queue.
+ANNOTATION_RE = re.compile(
+    r'[,(\s]+('
+    r'via\s+\S.*'                                  # via Doc Watson
+    r'|w/o?\S*(\s+\S.*)?'                          # w/minor, w/ 5 chord in the middle
+    r'|with(out)?\s+(a\s+)?[\w\d]+(\s+\w+){0,3}\s+chords?'   # with 7 chord
+    r'|with(out)?\s+minors?'                       # with minor
+    r'|with(out)?\s+\d+\w*'                         # with 6m
+    r'|\d+\s*bars?'                                # 16 bars
+    r'|\d/\d\s*(time|version)?'                    # 4/4 time
+    r'|key\s+of\s+[A-G][#b]?\b.*'                  # key of D, 1-4-5
+    r'|(extended\s+)?\d+\s*chords?\s+in\s+\w+\s+part'
+    r'|original\s+chords?'
+    r'|(a\.?k\.?a\.?)\s+.*'
+    r'|1-4-5(\s*only)?'
+    r'|(modal|major|minor)(\s+key)?(\s+tune)?'     # modal / major key tune
+    r'|(crooked|square)\s+[\d-]*\s*part\b.*'
+    r'|arrangement\b.*'
+    r')[)\s]*$',
+    re.IGNORECASE,
+)
+
+# Floor on what a strip may leave. The regex requires a separator before the
+# annotation, so it can no longer match from position 0 and eat a whole title
+# (`Canadian Waltz original chords` once did). This is the backstop for that
+# class, not a ratio: a ratio blocks legitimate strips on short titles with
+# long annotations — "Sally Ann key of D, 1-4-5" keeps only 36% of its length.
+MIN_KEPT_CHARS = 3
+
+# ...and must not remove more words than it leaves. A pattern of the form
+# "<arbitrary words> version" was tried and reverted: it truncated
+# "Sally Ann Earl Scruggs version" to "Sally" and "Irish Rovers version" to
+# "Irish". A character floor did not catch that — "Sally" clears any of them —
+# because the damage is measured in words, not characters. Forms whose own
+# shape identifies them (key of D, 16 bars, 4/4 time) are safe; "arbitrary
+# words plus a keyword" is not, and belongs in the review queue.
+MAX_WORDS_REMOVED_RATIO = 3.0
+
+
+def strip_annotation(title: str) -> str:
+    """Remove trailing structured arrangement notes, if any.
+
+    Applied repeatedly because Strum Machine stacks them
+    ("Sally Ann key of D, 1-4-5"), and refuses any strip that would eat most
+    of the title.
+    """
+    original = (title or '').strip()
+    out = original
+    for _ in range(4):                      # bounded; stacking runs 2-3 deep
+        candidate = ANNOTATION_RE.sub('', out).strip().rstrip(',(-')
+        if candidate == out:
+            break
+        kept, before = len(candidate.split()), len(out.split())
+        if len(candidate) < MIN_KEPT_CHARS:
+            break
+        if (before - kept) > MAX_WORDS_REMOVED_RATIO * kept:
+            break
+        out = candidate
+    return out or original
+
+
 def normalize(title: str) -> str:
     """Fold a title to its comparison key.
 
@@ -101,7 +169,7 @@ def normalize(title: str) -> str:
     goes on the board, that one is a render-time safety net. See
     CLEANUP-PLAN.md § 5 Phase 1.
     """
-    t = unicodedata.normalize('NFKD', title or '')
+    t = unicodedata.normalize('NFKD', strip_annotation(title))
     t = ''.join(c for c in t if not unicodedata.combining(c))
     t = t.lower()
     # Strip every apostrophe form to nothing, not to a space. Sources disagree

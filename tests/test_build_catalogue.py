@@ -129,3 +129,45 @@ class TestCatalogueOutput:
 
     def test_no_catalog_artifacts_survived(self, songs):
         assert not [r for r in songs if bc.NON_SONG_RE.match(bc.normalize(r['title']))]
+
+
+class TestStripAnnotation:
+    """Strum Machine glues arrangement notes into display names."""
+
+    @pytest.mark.parametrize('title,base', [
+        ('Sally Ann key of D, 1-4-5', 'Sally Ann'),
+        ('Sweet Sunny South modal', 'Sweet Sunny South'),
+        ('Cotton-Eyed Joe 16 bars', 'Cotton-Eyed Joe'),
+        ('Talk to Your Heart 4/4 time', 'Talk to Your Heart'),
+        ('Shady Grove minor, via Doc Watson', 'Shady Grove'),
+        ('Canadian Waltz original chords', 'Canadian Waltz'),
+        ('More Pretty Girls Than One w/minor', 'More Pretty Girls Than One'),
+        ('Bag of Spuds major key tune', 'Bag of Spuds'),
+        ('Fly Around My Pretty Little Miss 4 chord in A part',
+         'Fly Around My Pretty Little Miss'),
+    ])
+    def test_strips_structured_notes(self, title, base):
+        assert bc.strip_annotation(title) == base
+
+    @pytest.mark.parametrize('title', [
+        # Real titles whose last words look like annotation vocabulary.
+        'Salty Dog Blues', 'Angel Band To The Lord', 'Minor Swing',
+        'Black Mountain Rag', 'Major Bowes', 'Fire', 'Spain',
+        # Bare performer suffixes are NOT strippable — the same position also
+        # carries real title words, so these go to review instead.
+        'Sally Ann Alison Fisher', 'Sally Ann Earl Scruggs version',
+        'Irish Rovers version',
+    ])
+    def test_leaves_everything_else_alone(self, title):
+        assert bc.strip_annotation(title) == title
+
+    def test_refuses_to_eat_most_of_a_title(self):
+        # An "<arbitrary words> version" pattern was tried and reverted: it cut
+        # "Sally Ann Earl Scruggs version" down to "Sally". A character floor
+        # missed that (5 chars clears any of them) because the damage is
+        # measured in words. This is the guard for that class.
+        assert bc.strip_annotation('Sally Ann Earl Scruggs version').startswith('Sally Ann')
+
+    def test_collapses_variants_onto_one_key(self):
+        assert bc.normalize('Sally Ann key of D, 1-4-5') == bc.normalize('Sally Ann')
+        assert bc.normalize('Sweet Sunny South major') == bc.normalize('Sweet Sunny South modal')

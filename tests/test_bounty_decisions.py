@@ -47,33 +47,35 @@ class TestLedgerIntegrity:
         return yaml.safe_load((REPO_ROOT / 'curation' / 'bounty_decisions.yaml').read_text())
 
     @pytest.fixture(scope='class')
-    def board_titles(self):
-        path = REPO_ROOT / 'docs' / 'data' / 'wanted_songs.json'
-        return {s['title'] for s in json.loads(path.read_text())['songs']}
+    def catalogue_ids(self):
+        path = REPO_ROOT / 'docs' / 'data' / 'bluegrass_catalogue.json'
+        if not path.exists():
+            pytest.skip('catalogue not built')
+        return {r['catalogue_id'] for r in json.loads(path.read_text())['songs']}
 
-    def test_every_covered_entry_pins_titles(self, ledger):
-        # Deriving board titles from the key by slug was tried and abandoned —
-        # see the comment in bounty_decisions.py. Explicit lists or nothing.
-        missing = [k for k, v in ledger['covered'].items() if not v.get('titles')]
-        assert not missing, f"covered entries without `titles`: {missing}"
+    def test_every_covered_entry_names_catalogue_ids(self, ledger):
+        # Title-keyed verdicts were tried and detached wholesale when the
+        # catalogue folded Strum Machine arrangement suffixes away.
+        missing = [k for k, v in ledger['covered'].items() if not v.get('catalogue_ids')]
+        assert not missing, f"covered entries without `catalogue_ids`: {missing}"
 
-    def test_pinned_titles_are_on_the_board(self, ledger, board_titles):
-        detached = [t for v in ledger['covered'].values()
-                    for t in v['titles'] if t not in board_titles]
-        assert not detached, f"pinned titles no longer on the board: {detached}"
+    def test_covered_ids_exist_in_the_catalogue(self, ledger, catalogue_ids):
+        detached = [i for v in ledger['covered'].values()
+                    for i in v['catalogue_ids'] if i not in catalogue_ids]
+        assert not detached, f"verdicts pointing at absent catalogue rows: {detached}"
 
-    def test_no_title_claimed_twice(self, ledger):
+    def test_no_catalogue_id_claimed_twice(self, ledger):
         seen, dupes = set(), []
         for key, v in ledger['covered'].items():
-            for t in v['titles']:
-                if t in seen:
-                    dupes.append((key, t))
-                seen.add(t)
-        assert not dupes, f"titles claimed by two verdicts: {dupes}"
+            for i in v['catalogue_ids']:
+                if i in seen:
+                    dupes.append((key, i))
+                seen.add(i)
+        assert not dupes, f"catalogue ids claimed by two verdicts: {dupes}"
 
     def test_junk_entries_are_not_also_covered(self, ledger):
-        junk = {e['title'] for e in ledger['not_a_song'].values()}
-        covered = {t for v in ledger['covered'].values() for t in v['titles']}
+        junk = {e.get('catalogue_id') for e in ledger['not_a_song'].values()} - {None}
+        covered = {i for v in ledger['covered'].values() for i in v['catalogue_ids']}
         # A prefix-matching bug once swallowed the junk entry "Talk" into
         # "talk-about-suffering"; this is the guard against that class.
         assert not (junk & covered)
@@ -91,17 +93,33 @@ class TestLedgerIntegrity:
 
 
 class TestBuildOutput:
-    def test_emits_expected_shape(self, tmp_path):
+    def test_emits_expected_shape(self, tmp_path, monkeypatch):
+        # Once build_wanted.py subtracts upstream, the committed board carries
+        # no covered rows at all — the render-time filter is a pure safety net
+        # that finds nothing. Drive the shape from a synthetic board instead,
+        # so this still tests the join rather than the current corpus state.
+        ledger = yaml.safe_load((REPO_ROOT / 'curation' / 'bounty_decisions.yaml').read_text())
+        cid = next(iter(ledger['covered'].values()))['catalogue_ids'][0]
+        work = next(v['work'] for v in ledger['covered'].values()
+                    if v['catalogue_ids'][0] == cid)
+
+        wanted = tmp_path / 'wanted.json'
+        wanted.write_text(json.dumps({'songs': [
+            {'catalogue_id': cid, 'title': 'Synthetic Row', 'type': 'Vocal'},
+            {'catalogue_id': 'flatbush-waltz', 'title': 'Flatbush Waltz', 'type': 'Vocal'},
+        ]}))
+        monkeypatch.setattr(bd, 'WANTED_FILE', wanted)
         (tmp_path / 'index.jsonl').write_text(
-            json.dumps({'id': 'sally-ann', 'chord_count': 0}) + '\n'
-            + json.dumps({'id': 'make-me-a-pallet-on-the-floor', 'chord_count': 5}) + '\n'
-        )
+            json.dumps({'id': work, 'chord_count': 4}) + '\n')
+
         payload = bd.build_bounty_decisions(tmp_path, quiet=True)
 
         assert 'covered' in payload and 'not_a_song' in payload and 'types' in payload
-        # Chord counts come from the freshly built index, not the ledger.
-        assert payload['covered']['Sally Ann via Tommy Jarrell, mostly 1 & 4']['chords'] == 0
-        assert payload['covered']['Pallet on the Floor']['chords'] == 5
+        # Joined on catalogue_id; chord count comes from the fresh index.
+        assert payload['covered']['Synthetic Row']['work'] == work
+        assert payload['covered']['Synthetic Row']['chords'] == 4
+        # Type correction still reaches rows the catalogue mistyped.
+        assert payload['types']['Flatbush Waltz'] == 'Instrumental'
         assert (tmp_path / 'bounty_decisions.json').exists()
 
     def test_is_byte_stable(self, tmp_path):

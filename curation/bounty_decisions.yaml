@@ -1,9 +1,10 @@
 # Bounty board adjudication ledger — song-identity decisions
 #
-# Which wanted-list titles denote a work the songbook already has. Keyed on a
-# catalogue id (a slug we own), NOT on the raw title, because union spellings
-# shift between research runs and a title-keyed decision silently detaches on
-# the next rebuild.
+# Which catalogue songs denote a work the songbook already has. Keyed on
+# `catalogue_id` from docs/data/bluegrass_catalogue.json, NOT on a raw title:
+# titles shift between research runs, and they did — the first cut of this
+# ledger pinned board titles carrying Strum Machine arrangement suffixes, and
+# every one of them detached the moment the catalogue folded those away.
 #
 # Why this file exists: the wanted side carries only a title. Lyrics exist on
 # the corpus side only, and artist overlap is circular (MusicBrainz keys
@@ -20,6 +21,11 @@
 #   distinct     — scores close, different song; keep on the board
 #   uncertain    — needs someone who knows which tune the source meant
 #   not_a_song   — catalogue artifact, never a bounty
+#   keep         — real repertoire the catalogue cannot vouch for (no MB
+#                  coverage / below the score cut). Carried onto the board
+#                  verbatim by build_wanted.py, the way registry.yaml `keep:`
+#                  rescues pruned works. Row data lives here because the
+#                  catalogue has no row to take it from.
 #   intra_dupes  — same song listed twice under arrangement-variant titles
 #
 # `chords: 0` on a covered work means the page exists but is lyrics-only —
@@ -29,311 +35,246 @@
 
 covered:
   adieu-false-heart:
-    title: Adieu False Heart via Dirk Powell
+    catalogue_ids:
+    - adieu-false-heart
     work: adieu-false-heart
     reason: Exact match; " via Dirk Powell" is an SM arrangement label.
-    titles:
-    - Adieu False Heart via Dirk Powell
-  duncan-and-brady:
-    title: Duncan and Brady via the Johnson Mountain Boys
-    work: duncan-and-brady
-    reason: Exact match; artist annotation only.
-    titles:
-    - Duncan and Brady via the Johnson Mountain Boys
-  going-to-the-west:
-    title: Going to the West via Laurie Lewis
-    work: going-to-the-west
-    reason: Exact match; artist annotation only.
-    titles:
-    - Going to the West via Laurie Lewis
-  gospel-plow:
-    title: Gospel Plow via the Nashville Bluegrass Band
-    work: gospel-plow
-    reason: Exact match; artist annotation only.
-    titles:
-    - Gospel Plow via the Nashville Bluegrass Band
-  my-native-home:
-    title: My Native Home via the Nashville Bluegrass Band
-    work: my-native-home
+  another-day-another-dollar-dan-tyminski:
+    catalogue_ids:
+    - another-day-another-dollar-dan-tyminski
+    - another-day-another-dollar-wynn-stewart
+    work: another-day-another-dollar
+    reason: One song; two SM entries differing only by performer.
+  bill-cheatum:
+    catalogue_ids:
+    - bill-cheatum
+    work: bill-cheatham
+    reason: Standard spelling variant of the fiddle tune.
     chords: 0
-    reason: Exact match; artist annotation only. Lyrics-only work.
-    titles:
-    - My Native Home via the Nashville Bluegrass Band
-  raleigh-and-spencer:
-    title: Raleigh and Spencer via Laurie Lewis
-    work: raleigh-and-spencer
-    reason: Exact match; artist annotation only. Distinct from Riley and Spencer.
-    titles:
-    - Raleigh and Spencer via Laurie Lewis
-  sally-ann:
-    title: Sally Ann via Tommy Jarrell, mostly 1 & 4
-    work: sally-ann
-    chords: 0
-    reason: Exact match; the trailing text is an SM arrangement note.
-    titles:
-    - Sally Ann via Tommy Jarrell, mostly 1 & 4
-  senor:
-    title: Señor (Tales of Yankee Power)
-    work: senor
-    reason: Parenthetical is the song's own subtitle.
-    titles:
-    - Señor (Tales of Yankee Power)
-  quinn-the-eskimo:
-    title: Quinn the Eskimo (The Mighty Quinn)
-    work: quinn-the-eskimo
-    reason: Parenthetical is the alternate title of the same Dylan song.
-    titles:
-    - Quinn the Eskimo (The Mighty Quinn)
-  bluest-man-in-town:
-    title: Bluest Man in Town, The via Del McCoury
-    work: the-bluest-man-in-town
-    chords: 0
-    reason: Trailing-article form plus artist annotation. Lyrics-only work.
-    titles:
-    - Bluest Man in Town, The via Del McCoury
-  buffalo-gals:
-    title: Buffalo Girls / Gals - via John Hatcher, Mississippi
-    work: buffalo-gals
-    chords: 0
-    reason: Girls/Gals is the standard title variant of one minstrel tune.
-    titles:
-    - Buffalo Girls / Gals - via John Hatcher, Mississippi
-  walking-in-my-sleep:
-    title: Walking in My Sleep via Fiddlin' Arthur Smith
-    work: walkin-in-my-sleep
-    reason: Same tune; apostrophe elision plus artist annotation.
-    titles:
-    - Walking in My Sleep via Fiddlin' Arthur Smith
-  blue-railroad-train:
-    title: Blue Railroad Train Tony Rice
+  black-eyed-susie-bluegrass-version:
+    catalogue_ids:
+    - black-eyed-susie-bluegrass-version
+    - black-eyed-suzie
+    - black-eyed-suzy
+    work: black-eyed-susie
+    reason: One tune, three spellings. Two wanted entries collapse here.
+  blue-railroad-train-tony-rice:
+    catalogue_ids:
+    - blue-railroad-train-tony-rice
     work: blue-railroad-train
     reason: Delmore Brothers song; trailing text is the performer.
-    titles:
-    - Blue Railroad Train Tony Rice
-  steam-powered-aereo-plane:
-    title: Steam Powered Aereo Plane John Hartford
-    work: steam-powered-aereo-plane
-    reason: Hartford is the composer, appended to the title by the SM catalog.
-    titles:
-    - Steam Powered Aereo Plane John Hartford
-  wild-mountain-flowers-for-mary:
-    title: Wild Mountain Flowers for Mary Lost and Found
-    work: wild-mountain-flowers-for-mary
-    reason: Lost and Found is the band name, not part of the title.
-    titles:
-    - Wild Mountain Flowers for Mary Lost and Found
-  yellow-rose-of-texas:
-    title: Yellow Rose of Texas Bob Wills
-    work: the-yellow-rose-of-texas
-    reason: Trailing text is the performer. Corpus has two copies — see registry.
-    titles:
-    - Yellow Rose of Texas Bob Wills
-    - Yellow Rose of Texas, The Ben/Tommy Jarrell
-  who-s-that-knocking-at-my-window:
-    title: Who's That Knocking At My Window (Carter family / Hazel & Alice)
-    work: whos-that-knocking-at-my-window
+  bluest-man-in-town:
+    catalogue_ids:
+    - bluest-man-in-town
+    work: the-bluest-man-in-town
+    reason: Trailing-article form plus artist annotation. Lyrics-only work.
     chords: 0
-    reason: One song; two SM entries differing only by performer.
-    titles:
-    - Who's That Knocking At My Window Carter family
-    - Who's That Knocking At My Window Hazel & Alice
-  talk-to-your-heart:
-    title: Talk to Your Heart (4/4 time / Ray Price)
-    work: talk-to-your-heart
-    reason: One song; two SM entries differing by meter label and performer.
-    titles:
-    - Talk to Your Heart 4/4 time
-    - Talk to Your Heart Ray Price
-  streamline-cannonball:
-    title: Streamline Cannonball Julia
-    work: streamline-cannonball
-    archived: true
-    reason: Acuff song; trailing text is a performer. Corpus also holds "Streamlined Cannonball"
-      (indexed) — a corpus-internal duplicate.
-    titles:
-    - Streamline Cannonball Julia
-  red-rocking-chair:
-    title: Red Rocking Chair modal
-    work: red-rocking-chair
-    reason: modal is an SM arrangement label, not a different song.
-    titles:
-    - Red Rocking Chair modal
-  fly-around-my-pretty-little-miss:
-    title: Fly Around My Pretty Little Miss 4 chord in A part
-    work: fly-around-my-pretty-little-miss
-    reason: Trailing text is an SM chord-arrangement note.
-    titles:
-    - Fly Around My Pretty Little Miss 4 chord in A part
-  old-mother-flanagan:
-    title: Old Mother Flanagan two parts
-    work: old-mother-flanagan
+  buffalo-girls-gals:
+    catalogue_ids:
+    - buffalo-girls-gals
+    work: buffalo-gals
+    reason: Girls/Gals is the standard title variant of one minstrel tune.
     chords: 0
-    reason: two parts describes the arrangement, not a different tune.
-    titles:
-    - Old Mother Flanagan two parts
-    - Old Mother Flanagan three parts
   can-the-circle-be-unbroken:
-    title: Can the Circle Be Unbroken (By and By)
+    catalogue_ids:
+    - can-the-circle-be-unbroken
     work: will-the-circle-be-unbroken
     reason: The Carter Family 1935 rewrite of the 1907 hymn. All three corpus works carry
       the Carter lyric ("I was standing by my window"), which IS "Can the Circle Be Unbroken".
       Technically distinct compositions, universally one song in a jam. Corpus has three copies
       — see registry.
-    titles:
-    - Can the Circle Be Unbroken (By and By)
+  cotton-eyed-joe:
+    catalogue_ids:
+    - cotton-eyed-joe
+    work: cotton-eyed-joe
+    reason: One tune; two SM entries differing by bar count.
+  duncan-and-brady:
+    catalogue_ids:
+    - duncan-and-brady
+    work: duncan-and-brady
+    reason: Exact match; artist annotation only.
+  feuding-banjos:
+    catalogue_ids:
+    - feuding-banjos
+    work: dueling-banjos
+    reason: Feudin' Banjos (Smith/Reno, 1955) is the original composition later popularized
+      as "Dueling Banjos". Same work.
+  fly-around-my-pretty-little-miss:
+    catalogue_ids:
+    - fly-around-my-pretty-little-miss
+    work: fly-around-my-pretty-little-miss
+    reason: Trailing text is an SM chord-arrangement note.
+  going-to-the-west:
+    catalogue_ids:
+    - going-to-the-west
+    work: going-to-the-west
+    reason: Exact match; artist annotation only.
+  gospel-plow:
+    catalogue_ids:
+    - gospel-plow
+    work: gospel-plow
+    reason: Exact match; artist annotation only.
+  molly-put-the-kettle-on:
+    catalogue_ids:
+    - molly-put-the-kettle-on
+    work: polly-put-the-kettle-on
+    reason: Molly/Polly is the usual variant pair for this old-time tune.
+    chords: 0
+  more-pretty-girls-than-one:
+    catalogue_ids:
+    - more-pretty-girls-than-one
+    work: more-pretty-girls-than-one
+    reason: One song; two SM entries differing by arrangement label.
+  my-native-home:
+    catalogue_ids:
+    - my-native-home
+    work: my-native-home
+    reason: Exact match; artist annotation only. Lyrics-only work.
+    chords: 0
+  old-bunch-of-keys:
+    catalogue_ids:
+    - old-bunch-of-keys
+    work: bunch-of-keys
+    reason: The tune is catalogued both with and without the leading "Old".
+    chords: 0
+    archived: true
+  old-mother-flanagan-three-parts:
+    catalogue_ids:
+    - old-mother-flanagan-three-parts
+    - old-mother-flanagan-two-parts
+    work: old-mother-flanagan
+    reason: two parts describes the arrangement, not a different tune.
+    chords: 0
+  ora-lee:
+    catalogue_ids:
+    - ora-lee
+    work: aura-lee
+    reason: Spelling variant of the 1861 song (later "Love Me Tender").
+    archived: true
   pallet-on-the-floor:
-    title: Pallet on the Floor
+    catalogue_ids:
+    - pallet-on-the-floor
     work: make-me-a-pallet-on-the-floor
     reason: Same folk blues. Corpus holds three arrangements (make-me-a-pallet-on-the-floor
       / -on-your-floor / pallet-on-your-floor). Note fuzzy matching ranks "Carpet On The Floor"
       above all three.
-    titles:
-    - Pallet on the Floor
-  bill-cheatum:
-    title: Bill Cheatum
-    work: bill-cheatham
-    chords: 0
-    reason: Standard spelling variant of the fiddle tune.
-    titles:
-    - Bill Cheatum
-  black-eyed-susie:
-    title: Black Eyed Suzie / Black Eyed Suzy
-    work: black-eyed-susie
-    reason: One tune, three spellings. Two wanted entries collapse here.
-    titles:
-    - Black Eyed Suzie
-    - Black Eyed Suzy
-    - Black Eyed Susie bluegrass version via Vern Williams
   patty-on-the-turnpike:
-    title: Patty on the Turnpike
+    catalogue_ids:
+    - patty-on-the-turnpike
     work: paddy-on-the-turnpike
-    chords: 0
     reason: Standard spelling variant of the fiddle tune.
-    titles:
-    - Patty on the Turnpike
-  molly-put-the-kettle-on:
-    title: Molly Put the Kettle On
-    work: polly-put-the-kettle-on
     chords: 0
-    reason: Molly/Polly is the usual variant pair for this old-time tune.
-    titles:
-    - Molly Put the Kettle On
+  raleigh-and-spencer:
+    catalogue_ids:
+    - raleigh-and-spencer
+    work: raleigh-and-spencer
+    reason: Exact match; artist annotation only. Distinct from Riley and Spencer.
+  red-rocking-chair:
+    catalogue_ids:
+    - red-rocking-chair
+    work: red-rocking-chair
+    reason: modal is an SM arrangement label, not a different song.
+  roxannes-waltz:
+    catalogue_ids:
+    - roxannes-waltz
+    work: roxanna-waltz
+    reason: Roxanne/Roxanna variant of one waltz.
+    chords: 0
+    archived: true
   saint-james-infirmary:
-    title: Saint James Infirmary
+    catalogue_ids:
+    - saint-james-infirmary
     work: st-james-infirmary
     reason: Saint/St. abbreviation only. NOTE — that work's first_line is "EADGBe", a tab
       header leaked into the lyrics field. Separate data bug.
-    titles:
-    - Saint James Infirmary
-  ora-lee:
-    title: Ora Lee
-    work: aura-lee
-    archived: true
-    reason: Spelling variant of the 1861 song (later "Love Me Tender").
-    titles:
-    - Ora Lee
-  come-all-ye-tenderhearted:
-    title: Come All Ye Tenderhearted
-    work: come-all-you-tender-hearted
-    archived: true
-    reason: Ye/You and the word split; first lines match exactly.
-    titles:
-    - Come All Ye Tenderhearted
-  would-you-be-satisfied-that-way:
-    title: Would You Be Satisfied That Way
-    work: will-you-be-satisfied-that-way
-    archived: true
-    reason: Would/Will title variant of one song. Corpus also holds "Would You Be Satisfied"
-      and "You Won't Be Satisfied That Way".
-    titles:
-    - Would You Be Satisfied That Way
-  walking-in-the-parlor:
-    title: Walking in the Parlor
-    work: walk-in-the-parlor
-    archived: true
+  sally-ann-via-tommy-jarrell-mostly-1-and-4:
+    catalogue_ids:
+    - sally-ann-via-tommy-jarrell-mostly-1-and-4
+    work: sally-ann
+    reason: Exact match; the trailing text is an SM arrangement note.
     chords: 0
-    reason: Walk/Walking variant of the old-time tune.
-    titles:
-    - Walking in the Parlor
-  roxannes-waltz:
-    title: Roxanne's Waltz
-    work: roxanna-waltz
-    archived: true
-    chords: 0
-    reason: Roxanne/Roxanna variant of one waltz.
-    titles:
-    - Roxanne's Waltz
-  old-bunch-of-keys:
-    title: Old Bunch of Keys
-    work: bunch-of-keys
-    archived: true
-    chords: 0
-    reason: The tune is catalogued both with and without the leading "Old".
-    titles:
-    - Old Bunch of Keys
-  tell-me-baby-why-you-been-gone-so-long:
-    title: Tell Me Baby Why You Been Gone So Long
-    work: why-you-been-gone-so-long
-    reason: Mickey Newbury song; the wanted title includes the opening words.
-    titles:
-    - Tell Me Baby Why You Been Gone So Long
-  talk-about-suffering:
-    title: Talk About Suffering Here Below
-    work: talk-about-suffering
-    reason: The wanted title is the full first line of the same gospel song.
-    titles:
-    - Talk About Suffering Here Below
-  feuding-banjos:
-    title: Feuding Banjos
-    work: dueling-banjos
-    reason: Feudin' Banjos (Smith/Reno, 1955) is the original composition later popularized
-      as "Dueling Banjos". Same work.
-    titles:
-    - Feuding Banjos
-  another-day-another-dollar:
-    title: Another Day, Another Dollar (Dan Tyminski / Wynn Stewart)
-    work: another-day-another-dollar
-    reason: One song; two SM entries differing only by performer.
-    titles:
-    - Another Day, Another Dollar Dan Tyminski
-    - Another Day, Another Dollar Wynn Stewart
-  more-pretty-girls-than-one:
-    title: More Pretty Girls Than One (4/4 time / w-minor)
-    work: more-pretty-girls-than-one
-    reason: One song; two SM entries differing by arrangement label.
-    titles:
-    - More Pretty Girls Than One 4/4 time
-    - More Pretty Girls Than One w/minor
-  cotton-eyed-joe:
-    title: Cotton-Eyed Joe (16 bars / 20 bars)
-    work: cotton-eyed-joe
-    reason: One tune; two SM entries differing by bar count.
-    titles:
-    - Cotton-Eyed Joe 16 bars
-    - Cotton-Eyed Joe 20 bars
-  sweet-sunny-south:
-    title: Sweet Sunny South (major / modal)
-    work: sweet-sunny-south
-    reason: One song; two SM entries differing by mode.
-    titles:
-    - Sweet Sunny South major
-    - Sweet Sunny South modal
+  senor:
+    catalogue_ids:
+    - senor
+    work: senor
+    reason: Parenthetical is the song's own subtitle.
   shady-grove:
-    title: Shady Grove minor (Doc Watson / Garcia-Grisman)
+    catalogue_ids:
+    - shady-grove
     work: shady-grove
     reason: One tune; two SM entries differing by performer. Corpus holds three copies — see
       registry.
-    titles:
-    - Shady Grove minor, via Doc Watson
-    - Shady Grove minor, via Garcia/Grisman
   sitting-on-top-of-the-world:
-    title: Sitting on Top of the World (1-4-5 only / with 6m)
+    catalogue_ids:
+    - sitting-on-top-of-the-world
     work: sitting-on-top-of-the-world
     reason: One song; two SM entries differing by chord arrangement. Corpus holds three copies
       — see registry.
-    titles:
-    - Sitting on Top of the World 1-4-5 only
-    - Sitting on Top of the World with 6m
+  steam-powered-aereo-plane-john-hartford:
+    catalogue_ids:
+    - steam-powered-aereo-plane-john-hartford
+    work: steam-powered-aereo-plane
+    reason: Hartford is the composer, appended to the title by the SM catalog.
+  streamline-cannonball-julia:
+    catalogue_ids:
+    - streamline-cannonball-julia
+    work: streamline-cannonball
+    reason: Acuff song; trailing text is a performer. Corpus also holds "Streamlined Cannonball"
+      (indexed) — a corpus-internal duplicate.
+    archived: true
+  sweet-sunny-south:
+    catalogue_ids:
+    - sweet-sunny-south
+    work: sweet-sunny-south
+    reason: One song; two SM entries differing by mode.
+  talk-to-your-heart:
+    catalogue_ids:
+    - talk-to-your-heart
+    - talk-to-your-heart-ray-price
+    work: talk-to-your-heart
+    reason: One song; two SM entries differing by meter label and performer.
+  tell-me-baby-why-you-been-gone-so-long:
+    catalogue_ids:
+    - tell-me-baby-why-you-been-gone-so-long
+    work: why-you-been-gone-so-long
+    reason: Mickey Newbury song; the wanted title includes the opening words.
+  walking-in-my-sleep:
+    catalogue_ids:
+    - walking-in-my-sleep
+    work: walkin-in-my-sleep
+    reason: Same tune; apostrophe elision plus artist annotation.
+  walking-in-the-parlor:
+    catalogue_ids:
+    - walking-in-the-parlor
+    work: walk-in-the-parlor
+    reason: Walk/Walking variant of the old-time tune.
+    chords: 0
+    archived: true
+  whos-that-knocking-at-my-window-carter-family:
+    catalogue_ids:
+    - whos-that-knocking-at-my-window-carter-family
+    - whos-that-knocking-at-my-window-hazel-and-alice
+    work: whos-that-knocking-at-my-window
+    reason: One song; two SM entries differing only by performer.
+    chords: 0
+  wild-mountain-flowers-for-mary-lost-and-found:
+    catalogue_ids:
+    - wild-mountain-flowers-for-mary-lost-and-found
+    work: wild-mountain-flowers-for-mary
+    reason: Lost and Found is the band name, not part of the title.
+  would-you-be-satisfied-that-way:
+    catalogue_ids:
+    - would-you-be-satisfied-that-way
+    work: will-you-be-satisfied-that-way
+    reason: Would/Will title variant of one song. Corpus also holds "Would You Be Satisfied"
+      and "You Won't Be Satisfied That Way".
+    archived: true
+  yellow-rose-of-texas-bob-wills:
+    catalogue_ids:
+    - yellow-rose-of-texas-bob-wills
+    - yellow-rose-of-texas-the-ben-tommy-jarrell
+    work: the-yellow-rose-of-texas
+    reason: Trailing text is the performer. Corpus has two copies — see registry.
 distinct:
   500-miles:
     not: 900-miles
@@ -527,6 +468,417 @@ not_a_song:
     reason: Malformed catalog entry
     not a song title.: null
     title: Age Bluegrass Album Band
+    catalogue_id: age-bluegrass-album-band
+  introductions:
+    title: Introductions
+    reason: Catalog artifact, same class as Band Introductions. Surfaced when the catalogue
+      rebuild dropped it; filed rather than kept.
+keep:
+  Doc’s Guitar:
+    title: Doc’s Guitar
+    type: Vocal
+    coverage: 4
+    artists:
+    - The Gordons
+    - Doc Watson
+    - Billy Strings
+    - Nitty Gritty Dirt Band
+  Drunken Hiccups:
+    title: Drunken Hiccups
+    type: Vocal
+    coverage: 4
+    artists:
+    - Pert Near Sandstone
+    - The Tallboys
+    - Tommy Jarrell
+    - Hobart Smith
+  Euphoria:
+    title: Euphoria
+    type: Vocal
+    coverage: 4
+    artists:
+    - The Holy Modal Rounders
+    - Leftover Salmon
+    - John 5
+    - Nitty Gritty Dirt Band
+  Fiddlin' Around:
+    title: Fiddlin' Around
+    type: Vocal
+    coverage: 4
+    artists:
+    - Mark O’Connor
+    - Don Reno
+    - Buck Ryan
+    - Red Smiley
+  Fire:
+    title: Fire
+    type: Vocal
+    coverage: 4
+    artists:
+    - The String Cheese Incident
+    - Back Porch Swing
+    - The Avett Brothers
+    - Chris Stapleton
+  Fire and Brimstone:
+    title: Fire and Brimstone
+    type: Vocal
+    coverage: 4
+    artists:
+    - Alison Krauss
+    - Leftover Salmon
+    - The Lewis Family
+    - Ralph Stanley
+  First Days in Town:
+    title: First Days in Town
+    type: Fiddle Tune
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: D
+    difficulty: Intermediate
+  Fishin' Blues:
+    title: Fishin' Blues
+    type: Instrumental
+    coverage: 4
+    artists:
+    - Vassar Clements
+    - Nitty Gritty Dirt Band
+    - The Holy Modal Rounders
+    - Bruce Molsky
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+  Free Mexican Airforce:
+    title: Free Mexican Airforce
+    type: Vocal
+    coverage: 2
+    artists:
+    - Tony Rice
+    - Peter Rowan
+    key: A
+    difficulty: Intermediate
+  Graveyard:
+    title: Graveyard
+    type: Vocal
+    coverage: 4
+    artists:
+    - Molly Tuttle
+    - The Devil Makes Three
+    - The New Lost City Ramblers
+    - Elliott BROOD
+  Indian Springs:
+    title: Indian Springs
+    type: Vocal
+    coverage: 4
+    artists:
+    - Kenny Baker
+    - Bryan Sutton
+    - Ricky Skaggs
+    - Aubrey Haynie
+  Just Joshin':
+    title: Just Joshin'
+    type: Vocal
+    coverage: 4
+    artists:
+    - Mike Auldridge
+    - Arthur Smith
+    - David Grisman
+    - Earl Scruggs
+  Keep Me Humble:
+    title: Keep Me Humble
+    type: Vocal
+    coverage: 4
+    artists:
+    - The Blue Ridge Partners
+    - Reno and Smiley
+    - The Easter Brothers
+    - Al Wood & The Smokey Ridge Boys
+  Kissimmee Kid:
+    title: Kissimmee Kid
+    type: Instrumental
+    coverage: 3
+    artists:
+    - Vassar Clements
+    - Billy Strings
+    - Tony Rice
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: A
+    difficulty: Advanced
+  Lafayette:
+    title: Lafayette
+    type: Vocal
+    coverage: 4
+    artists:
+    - Peter Ostroushko
+    - Fiddlin’ Arthur Smith
+    - John Hartford
+    - Watkins Family Hour
+  Land Of Lincoln:
+    title: Land Of Lincoln
+    type: Instrumental
+    coverage: 1
+    artists:
+    - Kenny Baker
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: G
+    difficulty: Intermediate
+  Lazy Katie:
+    title: Lazy Katie
+    type: Vocal
+    coverage: 4
+    artists:
+    - Jeff White
+    - Sam Bush
+    - Michael Cleveland
+    - Barry Bales
+  Little Margaret:
+    title: Little Margaret
+    type: Vocal
+    coverage: 4
+    artists:
+    - Big Medicine
+    - Uncle Sinner
+    - Doc Watson
+    - Rhiannon Giddens
+  Metric Lips:
+    title: Metric Lips
+    type: Instrumental
+    coverage: 1
+    artists:
+    - New Grass Revival
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: Am
+    difficulty: Advanced
+  Mother Maybelle:
+    title: Mother Maybelle
+    type: Gospel
+    coverage: 4
+    artists:
+    - The Osborne Brothers
+    - Mac Wiseman
+    - Nashville Grass
+    - Marty Stuart
+  Ode to a Butterfly:
+    title: Ode to a Butterfly
+    type: Instrumental
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: Am
+    difficulty: Advanced
+  Oh Lovin' Babe:
+    title: Oh Lovin' Babe
+    type: Vocal
+    coverage: 4
+    artists:
+    - Uncle Dave Macon
+    - Rayna Gellert
+    - Dudley Connell
+    - Don Rigsby
+  Pickaway:
+    title: Pickaway
+    type: Vocal
+    coverage: 4
+    artists:
+    - The Seldom Scene
+    - Mike Auldridge
+    - Lester Flatt
+    - Vic Jordan
+  Pink:
+    title: Pink
+    type: Vocal
+    coverage: 4
+    artists:
+    - Nonviolenze
+    - Carbon Leaf
+    - Dolly Parton
+    - The Grassmasters
+  Rainmaker:
+    title: Rainmaker
+    type: Vocal
+    coverage: 4
+    artists:
+    - Peter Rowan
+    - Vassar Clements
+    - Northern Lights
+    - The Dillards
+  Return to Dismal Swamp II:
+    title: Return to Dismal Swamp II
+    type: Vocal
+    coverage: 4
+    artists:
+    - Tony Rice
+    - Glen Duncan
+    - Jerry Douglas
+    - Nitty Gritty Dirt Band
+  Ruben:
+    title: Ruben
+    type: Vocal
+    coverage: 4
+    artists:
+    - Rual Yarbrough
+    - Pierre Bensusan
+    - NewFound Road
+    - Alice Gerrard
+  Sapporo:
+    title: Sapporo
+    type: Instrumental
+    coverage: 1
+    artists:
+    - New Grass Revival
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: Am
+    difficulty: Advanced
+  Seven by Seven:
+    title: Seven by Seven
+    type: Instrumental
+    coverage: 1
+    artists:
+    - New Grass Revival
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: G
+    difficulty: Advanced
+  Slowly:
+    title: Slowly
+    type: Vocal
+    coverage: 4
+    artists:
+    - Jimmy Martin
+    - Jimmy Martin and the Sunny Mountain Boys
+    - Rhonda Vincent
+    - The Bluegrass Cardinals
+  Smoothie Song:
+    title: Smoothie Song
+    type: Instrumental
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: A
+    difficulty: Advanced
+  Sopping the Gravy:
+    title: Sopping the Gravy
+    type: Fiddle Tune
+    coverage: 1
+    artists:
+    - Kessinger Brothers
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: D
+    difficulty: Intermediate
+  Spain:
+    title: Spain
+    type: Vocal
+    coverage: 4
+    artists:
+    - David Grisman
+    - Jerry Douglas
+    - Béla Fleck
+    - Buckethead
+  Stay:
+    title: Stay
+    type: Vocal
+    coverage: 4
+    artists:
+    - Vince Gill
+    - Valerie June
+    - Alison Krauss
+    - Alison Krauss & Union Station
+  Stealin:
+    title: Stealin
+    type: Vocal
+    coverage: 4
+    artists:
+    - Dom Flemons
+    - David Grisman
+    - The Wood Brothers
+    - Pert Near Sandstone
+  Tombstone Junction:
+    title: Tombstone Junction
+    type: Instrumental
+    coverage: 1
+    artists:
+    - Bill Monroe and the Bluegrass Boys
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: A
+    difficulty: Intermediate
+  Traffic Jam:
+    title: Traffic Jam
+    type: Vocal
+    coverage: 1
+    artists:
+    - Yonder Mountain String Band
+    key: A
+    difficulty: Intermediate
+  Two Dollar Bill:
+    title: Two Dollar Bill
+    type: Vocal
+    coverage: 4
+    artists:
+    - Art Stevenson & High Water
+    - Iron Horse
+    - Vassar Clements
+    - The Gordons
+  Untold Stories:
+    title: Untold Stories
+    type: Vocal
+    coverage: 1
+    artists:
+    - Hot Rize
+    key: G
+    difficulty: Intermediate
+  Waves:
+    title: Waves
+    type: Vocal
+    coverage: 4
+    artists:
+    - The Wood Brothers
+    - Dangermuffin
+    - Scott Stutzman
+    - Béla Fleck
+  Welcome to the Jungle:
+    title: Welcome to the Jungle
+    type: Vocal
+    coverage: 4
+    artists:
+    - Hayseed Dixie
+    - Scott Stutzman
+    - John 5
+    - Iron Horse
 intra_dupes:
 - - Another Day Another Dollar Dan Tyminski
   - Another Day Another Dollar Wynn Stewart
