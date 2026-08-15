@@ -41,6 +41,88 @@ Both are alias / word-order problems, not threshold-tuning problems. Match on
 **candidate sets, never best-match-only** — that inversion is precisely what put
 `Carpet on the Floor` ahead of the real Pallet works.
 
+### The wanted side has only the title — everything else is unavailable or circular
+
+Before reaching for a better matcher, it is worth knowing what evidence exists
+at all. Only one signal is usable, and not on the side that needs it:
+
+| Signal | Corpus side | Wanted side |
+|---|---|---|
+| Lyrics / first line | Excellent — all three Circle works share `"I was standing by my window"`; all three Pallet works share `"Make me…a pallet on your floor"`; `Carpet on the Floor` is plainly unrelated from its first line | **Nothing** — by definition these are songs we lack; zero wanted titles have BL parsed text |
+| Artist sets | From `bluegrass_recordings.json` | 257/696, and **circular** — MB keys recordings by title, so fragmented titles have disjoint artist sets by construction |
+
+Artist-overlap was measured and rejected: true pairs score 0.00–0.25 Jaccard,
+false pairs 0.00–0.07 — the bands overlap, and `Sweet Thing`/`Sweet Thang`
+(true) scores 0.00, identical to `500 Miles`/`900 Miles` (false).
+
+**So the wanted side offers only the title string.** That makes the identity
+question a *referential* one — which strings denote the same musical work in
+this tradition — which is world knowledge, not string distance and not phrase
+semantics.
+
+### Tested and rejected: embeddings on titles
+
+Semantic similarity is the obvious upgrade over word matching and is the wrong
+tool here. Song titles are rigid designators: their identity is conventional,
+not compositional, so phrase-meaning similarity is close to orthogonal to song
+identity. Embeddings would fix Circle and Pallet while breaking these
+*confidently*, which is worse than breaking them noisily:
+
+- `500 Miles` / `900 Miles` — the phrase is `<number> Miles`; numerals embed
+  poorly. Different songs.
+- `Foggy Mountain Rock` / `Top` / `Breakdown` — three different Flatt & Scruggs
+  numbers, near-identical phrases.
+- `New Camptown Races` / `Camptown Races` — a Monroe/Wakefield bluegrass
+  instrumental versus the Stephen Foster minstrel song. Nothing in the phrase
+  separates them.
+
+The working tool is an **LLM adjudicator** — the architecture already in the
+repo (LLM tagging via the Anthropic batch API; the bounty-hunt
+`review_decisions.json` review queue).
+
+### Adjudication, run once by hand on the full gray band
+
+All 58 gray-band entries, judged by knowledge rather than string distance:
+
+| Verdict | Count | Examples |
+|---|---:|---|
+| **Covered — drop from board** | **28** | `Can the Circle`→`will-the-circle-*`, `Pallet on the Floor`→`pallet-on-your-floor`, `Bill Cheatum`→`Bill Cheatham`, `Ora Lee`→`Aura Lee`, `Walking in the Parlor`→`Walk in the Parlor` |
+| **Distinct — keep on board** | 26 | `New Camptown Races`, `500 Miles`, `Foggy Mountain Rock`, `Maid Behind the Bar` (Irish reel) vs `The Girl Behind The Bar` (country song) |
+| **Genuinely uncertain** | 4 | `Sweet Thing`, `Carolina`, `Rattlesnake`, `Come Along Jody` |
+
+Nearly half the gray band is real coverage, and fuzzy scoring errs in both
+directions at the same score: `Come All Ye Tenderhearted`→`Come All You Tender
+Hearted` (0.92, true) sits level with false pairs.
+
+**Six of the 28 are archived** — `Come All You Tender Hearted`, `Bunch of Keys`,
+`Aura Lee`, `Roxanna Waltz`, `Walk in the Parlor`, `Will You Be Satisfied That
+Way`. That is the Dungeon promote list, and it matches the estimate from the
+title pass.
+
+Two incidental findings: `st-james-infirmary` has `first_line: "EADGBe"` (a tab
+header leaked into the lyrics field), and the candidate lists expose
+**corpus-internal** duplicates the bounty work never touches — `Streamline
+Cannonball`/`Streamlined Cannonball`, `Yellow Rose of Texas` ×2, `Sitting on Top
+of the World` ×3, `Will the Circle` ×3. Those belong in `curation/registry.yaml`
+under `groups:`.
+
+### Cost of running adjudication at scale
+
+Estimate only — nothing submitted. ~700 wanted entries, one request each
+carrying the title plus its top-3 candidates with first lines; ~800 input tokens
+(~400 cacheable system prompt + ~400 payload), ~150 output tokens per verdict.
+
+| | Tokens | Batch rate (50% off list) | Cost |
+|---|---|---|---|
+| Input | 0.56 MTok | $2.50/MTok | $1.40 |
+| Output | 0.105 MTok | $12.50/MTok | $1.31 |
+| **Total (Opus 5, batch)** | | | **~$2.71** |
+
+Roughly double for the Phase 3 catalogue-internal pass — under $10 for the whole
+job, cheap enough that dropping to a smaller model isn't worth the accuracy
+loss. Per the repo cost-control rule, the batch script gets reviewed before
+anything is submitted.
+
 ### Tested and rejected: MusicBrainz work IDs as the join key
 
 The obvious fix is to stop matching strings and join on MB work IDs.
@@ -144,7 +226,21 @@ contains `Last Song, The`, `Mountain House, The`, `Bluest Man in Town, The`).
 Tiers: exact-normalized → **auto**; token-set equality → **auto**; fuzzy ≥0.93 →
 **auto**; token-set containment → **queue**; 0.80–0.93 → **queue**; below → miss.
 
-This is a *narrowing* tool that proposes candidates. It never decides identity.
+This is a *narrowing* tool that proposes candidates. It never decides identity —
+that is the adjudicator's job (Phase 5), because neither string distance nor
+title embeddings can do it (see § Tested and rejected above).
+
+### Phase 1b — LLM adjudicator over the queue
+
+`sources/bounty-hunt/src/adjudicate.py` — takes the matcher's queued candidate
+sets and asks, per item, whether the titles denote the same musical work,
+returning a structured verdict (`covered` / `distinct` / `same_song` /
+`not_a_song` / `uncertain`) with a one-line reason and a confidence. Anthropic
+batch API, same pattern as LLM tagging. `uncertain` falls through to human
+review; every verdict lands in the Phase 5 ledger and is never re-asked.
+
+Cost is ~$2.71 per full pass (table above) — always shown and approved before
+submission, per the repo cost-control rule.
 
 ### Phase 2 — Catalogue builder (local only, output tracked)
 
