@@ -1,0 +1,351 @@
+# Bounty board adjudication ledger — song-identity decisions
+#
+# Which wanted-list titles denote a work the songbook already has. Keyed on a
+# catalogue id (a slug we own), NOT on the raw title, because union spellings
+# shift between research runs and a title-keyed decision silently detaches on
+# the next rebuild.
+#
+# Why this file exists: the wanted side carries only a title. Lyrics exist on
+# the corpus side only, and artist overlap is circular (MusicBrainz keys
+# recordings by title, so the fragmentation we are fixing guarantees disjoint
+# artist sets). Identity here is referential — which strings denote the same
+# musical work — so neither string distance nor title embeddings can decide it.
+# See sources/bounty-hunt/CLEANUP-PLAN.md for the evidence.
+#
+# Adjudicated 2026-08-15 against index 2,458 / archive 16,764: all 110 wanted
+# entries that had any candidate. The other 586 have no corpus match.
+#
+# Sections:
+#   covered      — the wanted song IS this work; drop from the board
+#   distinct     — scores close, different song; keep on the board
+#   uncertain    — needs someone who knows which tune the source meant
+#   not_a_song   — catalogue artifact, never a bounty
+#   intra_dupes  — same song listed twice under arrangement-variant titles
+#
+# `chords: 0` on a covered work means the page exists but is lyrics-only —
+# route it to "Needs Chords", not "Missing Jam Standards".
+# `archived: true` means the work is pruned from search; these are the
+# promote candidates for the Dungeon flow.
+
+covered:
+  # --- exact matches hidden behind Strum Machine annotation suffixes ---
+  adieu-false-heart:
+    title: Adieu False Heart via Dirk Powell
+    work: adieu-false-heart
+    reason: Exact match; " via Dirk Powell" is an SM arrangement label.
+  duncan-and-brady:
+    title: Duncan and Brady via the Johnson Mountain Boys
+    work: duncan-and-brady
+    reason: Exact match; artist annotation only.
+  going-to-the-west:
+    title: Going to the West via Laurie Lewis
+    work: going-to-the-west
+    reason: Exact match; artist annotation only.
+  gospel-plow:
+    title: Gospel Plow via the Nashville Bluegrass Band
+    work: gospel-plow
+    reason: Exact match; artist annotation only.
+  my-native-home:
+    title: My Native Home via the Nashville Bluegrass Band
+    work: my-native-home
+    chords: 0
+    reason: Exact match; artist annotation only. Lyrics-only work.
+  raleigh-and-spencer:
+    title: Raleigh and Spencer via Laurie Lewis
+    work: raleigh-and-spencer
+    reason: Exact match; artist annotation only. Distinct from Riley and Spencer.
+  sally-ann:
+    title: Sally Ann via Tommy Jarrell, mostly 1 & 4
+    work: sally-ann
+    chords: 0
+    reason: Exact match; the trailing text is an SM arrangement note.
+  senor:
+    title: Señor (Tales of Yankee Power)
+    work: senor
+    reason: Parenthetical is the song's own subtitle.
+  quinn-the-eskimo:
+    title: Quinn the Eskimo (The Mighty Quinn)
+    work: quinn-the-eskimo
+    reason: Parenthetical is the alternate title of the same Dylan song.
+  bluest-man-in-town:
+    title: Bluest Man in Town, The via Del McCoury
+    work: the-bluest-man-in-town
+    chords: 0
+    reason: Trailing-article form plus artist annotation. Lyrics-only work.
+  buffalo-gals:
+    title: Buffalo Girls / Gals - via John Hatcher, Mississippi
+    work: buffalo-gals
+    chords: 0
+    reason: Girls/Gals is the standard title variant of one minstrel tune.
+  walking-in-my-sleep:
+    title: Walking in My Sleep via Fiddlin' Arthur Smith
+    work: walkin-in-my-sleep
+    reason: Same tune; apostrophe elision plus artist annotation.
+  blue-railroad-train:
+    title: Blue Railroad Train Tony Rice
+    work: blue-railroad-train
+    reason: Delmore Brothers song; trailing text is the performer.
+  steam-powered-aereo-plane:
+    title: Steam Powered Aereo Plane John Hartford
+    work: steam-powered-aereo-plane
+    reason: Hartford is the composer, appended to the title by the SM catalog.
+  wild-mountain-flowers-for-mary:
+    title: Wild Mountain Flowers for Mary Lost and Found
+    work: wild-mountain-flowers-for-mary
+    reason: Lost and Found is the band name, not part of the title.
+  yellow-rose-of-texas:
+    title: Yellow Rose of Texas Bob Wills
+    work: the-yellow-rose-of-texas
+    reason: Trailing text is the performer. Corpus has two copies — see registry.
+  who-s-that-knocking-at-my-window:
+    title: Who's That Knocking At My Window (Carter family / Hazel & Alice)
+    work: whos-that-knocking-at-my-window
+    chords: 0
+    reason: One song; two SM entries differing only by performer.
+  talk-to-your-heart:
+    title: Talk to Your Heart (4/4 time / Ray Price)
+    work: talk-to-your-heart
+    reason: One song; two SM entries differing by meter label and performer.
+  streamline-cannonball:
+    title: Streamline Cannonball Julia
+    work: streamline-cannonball
+    archived: true
+    reason: Acuff song; trailing text is a performer. Corpus also holds
+      "Streamlined Cannonball" (indexed) — a corpus-internal duplicate.
+  red-rocking-chair:
+    title: Red Rocking Chair modal
+    work: red-rocking-chair
+    reason: modal is an SM arrangement label, not a different song.
+  fly-around-my-pretty-little-miss:
+    title: Fly Around My Pretty Little Miss 4 chord in A part
+    work: fly-around-my-pretty-little-miss
+    reason: Trailing text is an SM chord-arrangement note.
+  old-mother-flanagan:
+    title: Old Mother Flanagan two parts
+    work: old-mother-flanagan
+    chords: 0
+    reason: two parts describes the arrangement, not a different tune.
+
+  # --- alias / spelling / word-order variants ---
+  can-the-circle-be-unbroken:
+    title: Can the Circle Be Unbroken (By and By)
+    work: will-the-circle-be-unbroken
+    reason: The Carter Family 1935 rewrite of the 1907 hymn. All three corpus
+      works carry the Carter lyric ("I was standing by my window"), which IS
+      "Can the Circle Be Unbroken". Technically distinct compositions,
+      universally one song in a jam. Corpus has three copies — see registry.
+  pallet-on-the-floor:
+    title: Pallet on the Floor
+    work: make-me-a-pallet-on-the-floor
+    reason: Same folk blues. Corpus holds three arrangements
+      (make-me-a-pallet-on-the-floor / -on-your-floor / pallet-on-your-floor).
+      Note fuzzy matching ranks "Carpet On The Floor" above all three.
+  bill-cheatum:
+    title: Bill Cheatum
+    work: bill-cheatham
+    chords: 0
+    reason: Standard spelling variant of the fiddle tune.
+  black-eyed-susie:
+    title: Black Eyed Suzie / Black Eyed Suzy
+    work: black-eyed-susie
+    reason: One tune, three spellings. Two wanted entries collapse here.
+  patty-on-the-turnpike:
+    title: Patty on the Turnpike
+    work: paddy-on-the-turnpike
+    chords: 0
+    reason: Standard spelling variant of the fiddle tune.
+  molly-put-the-kettle-on:
+    title: Molly Put the Kettle On
+    work: polly-put-the-kettle-on
+    chords: 0
+    reason: Molly/Polly is the usual variant pair for this old-time tune.
+  saint-james-infirmary:
+    title: Saint James Infirmary
+    work: st-james-infirmary
+    reason: Saint/St. abbreviation only. NOTE — that work's first_line is
+      "EADGBe", a tab header leaked into the lyrics field. Separate data bug.
+  ora-lee:
+    title: Ora Lee
+    work: aura-lee
+    archived: true
+    reason: Spelling variant of the 1861 song (later "Love Me Tender").
+  come-all-ye-tenderhearted:
+    title: Come All Ye Tenderhearted
+    work: come-all-you-tender-hearted
+    archived: true
+    reason: Ye/You and the word split; first lines match exactly.
+  would-you-be-satisfied-that-way:
+    title: Would You Be Satisfied That Way
+    work: will-you-be-satisfied-that-way
+    archived: true
+    reason: Would/Will title variant of one song. Corpus also holds
+      "Would You Be Satisfied" and "You Won't Be Satisfied That Way".
+  walking-in-the-parlor:
+    title: Walking in the Parlor
+    work: walk-in-the-parlor
+    archived: true
+    chords: 0
+    reason: Walk/Walking variant of the old-time tune.
+  roxannes-waltz:
+    title: Roxanne's Waltz
+    work: roxanna-waltz
+    archived: true
+    chords: 0
+    reason: Roxanne/Roxanna variant of one waltz.
+  old-bunch-of-keys:
+    title: Old Bunch of Keys
+    work: bunch-of-keys
+    archived: true
+    chords: 0
+    reason: The tune is catalogued both with and without the leading "Old".
+  tell-me-baby-why-you-been-gone-so-long:
+    title: Tell Me Baby Why You Been Gone So Long
+    work: why-you-been-gone-so-long
+    reason: Mickey Newbury song; the wanted title includes the opening words.
+  talk-about-suffering:
+    title: Talk About Suffering Here Below
+    work: talk-about-suffering
+    reason: The wanted title is the full first line of the same gospel song.
+  feuding-banjos:
+    title: Feuding Banjos
+    work: dueling-banjos
+    reason: Feudin' Banjos (Smith/Reno, 1955) is the original composition
+      later popularized as "Dueling Banjos". Same work.
+
+  # --- arrangement-variant entries that collapse onto one work ---
+  another-day-another-dollar:
+    title: Another Day, Another Dollar (Dan Tyminski / Wynn Stewart)
+    work: another-day-another-dollar
+    reason: One song; two SM entries differing only by performer.
+  more-pretty-girls-than-one:
+    title: More Pretty Girls Than One (4/4 time / w-minor)
+    work: more-pretty-girls-than-one
+    reason: One song; two SM entries differing by arrangement label.
+  cotton-eyed-joe:
+    title: Cotton-Eyed Joe (16 bars / 20 bars)
+    work: cotton-eyed-joe
+    reason: One tune; two SM entries differing by bar count.
+  sweet-sunny-south:
+    title: Sweet Sunny South (major / modal)
+    work: sweet-sunny-south
+    reason: One song; two SM entries differing by mode.
+  shady-grove:
+    title: Shady Grove minor (Doc Watson / Garcia-Grisman)
+    work: shady-grove
+    reason: One tune; two SM entries differing by performer. Corpus holds
+      three copies — see registry.
+  sitting-on-top-of-the-world:
+    title: Sitting on Top of the World (1-4-5 only / with 6m)
+    work: sitting-on-top-of-the-world
+    reason: One song; two SM entries differing by chord arrangement. Corpus
+      holds three copies — see registry.
+
+distinct:
+  500-miles: { not: 900-miles, reason: Hedy West song; unrelated to the traditional 900 Miles. }
+  new-camptown-races: { not: camptown-races, reason: Monroe/Wakefield bluegrass instrumental; not the Stephen Foster minstrel song. }
+  foggy-mountain-rock: { not: foggy-mountain-top, reason: Three separate Flatt & Scruggs numbers (Rock, Top, Chimes, Breakdown). }
+  maid-behind-the-bar: { not: the-girl-behind-the-bar, reason: Irish reel vs a country song. }
+  black-mountain-blues: { not: clinch-mountain-blues, reason: Also distinct from Sand Mountain Blues and Black Mountain Rag. }
+  whispering: { not: whispering-hope, reason: The 1920 pop standard, played as a swing tune; not the hymn. }
+  little-margaret: { not: little-maggie, reason: Child ballad; unrelated to Little Maggie. }
+  hicks-farewell: { not: elzic-s-farewell, reason: Shape-note hymn vs a West Virginia fiddle tune. }
+  martins-waltz: { not: mozart-s-waltz, reason: Also distinct from Margravine's and Garnerins Waltz. }
+  golden-fiddle-waltz: { not: blue-fiddle-waltz, reason: Different waltzes sharing one word. }
+  blue-violet-waltz: { not: blue-fiddle-waltz, reason: Different waltzes; also not Blue Skirt or Blue River. }
+  blue-valley-waltz: { not: blue-river-waltz, reason: Different waltzes. }
+  black-velvet-waltz: { not: black-velvet-band, reason: A waltz vs the Irish ballad. }
+  swannanoa-waltz: { not: i-wanna-waltz, reason: Coincidental string similarity. }
+  boda-waltz: { not: bandera-waltz, reason: Different waltzes. }
+  elies-waltz: { not: keith-s-waltz, reason: Different waltzes. }
+  rangers-waltz: { not: garnerins-waltz, reason: Different waltzes. }
+  shenandoah-falls: { not: shenandoah-waltz, reason: A fiddle tune vs the Bailes Brothers waltz. }
+  c-jam-blues: { not: l-a-blues, reason: The Ellington standard; coincidental match. }
+  poca-river-blues: { not: dog-river-blues, reason: West Virginia fiddle tune; also not Deep River Blues. }
+  maury-river-blues: { not: kern-river-blues, reason: Different blues sharing the river construction. }
+  hound-dog-blues: { not: low-dog-blues, reason: Different blues. }
+  polecat-blues: { not: polka-dot-blues, reason: Coincidental string similarity. }
+  houston-on-my-mind: { not: out-of-my-mind, reason: Different songs sharing "on my mind". }
+  one-tear: { not: one-heart, reason: Different songs. }
+  beautiful: { not: beautiful-you, reason: Different songs; also not The Beautiful City. }
+  buck-mountain: { not: kentucky-mountain, reason: A fiddle tune vs a country song. }
+  old-kentucky-whiskey: { not: old-kentucky-hillside, reason: Different songs. }
+  little-whiskey: { not: little-stream-of-whiskey, reason: Different songs. }
+  little-pink: { not: little-robin, reason: Old-time tune; coincidental match. }
+  pretty-bird: { not: pretty-words, reason: Hazel Dickens song; coincidental match. }
+  pretty-little-indian: { not: pretty-little-miss, reason: Different old-time tunes. }
+  pretty-little-widow: { not: pretty-little-miss, reason: Different old-time tunes. }
+  sweet-marie: { not: sweet-memories, reason: Different songs; also not Sweet Caroline. }
+  sweet-dixie: { not: sweet-desire, reason: Different songs. }
+  sweet-little-julie: { not: sweet-little-sixteen, reason: Different songs. }
+  willow-creek: { not: willow-tree, reason: Different tunes; also not Yellow Creek. }
+  round-the-horn: { not: around-the-world, reason: Coincidental string similarity. }
+  spring-in-the-valley: { not: down-in-the-valley, reason: Different tunes sharing "valley". }
+  down-in-the-swamp: { not: down-on-the-farm, reason: Different songs. }
+  tulane-and-johnny: { not: frankie-and-johnny, reason: Different songs; also not Jeannie And Johnny. }
+  last-song-the: { not: last-country-song, reason: Bag-containment artifact; four unrelated candidates. }
+  mountain-house-the: { not: little-mountain-church-house, reason: Bag-containment artifact. }
+  maple-sugar: { not: maple-sugar-sweetheart, reason: The Ward Allen fiddle tune vs an unrelated song. }
+  ol-lonesome-wont-leave-me-alone: { not: love-me-or-leave-me-alone, reason: Different songs. }
+  old-billy-hell: { not: hillbilly-hell, reason: Coincidental anagram-like similarity. }
+  bowing-the-strings: { not: sawin-on-the-strings, reason: Different tunes. }
+  fiddlin-around: { not: fooling-around, reason: Different songs. }
+  ladys-fancy: { not: ladys-man, reason: A fiddle tune vs a country song. }
+  welcome-to-the-jungle: { not: welcome-to-the-sunshine-sweet-baby-jane, reason: Coincidental match on the first two words. }
+
+uncertain:
+  sweet-thing:
+    candidate: sweet-thang
+    reason: sweet-thang is the Ernest Tubb/Nat Stuckey country song. Unclear
+      whether the SM "Sweet Thing" is that or a separate old-time tune.
+  carolina:
+    candidate: oh-carolina
+    reason: Bare "Carolina" is ambiguous; several unrelated songs use it.
+  rattlesnake:
+    candidate: rattlesnake-jig
+    reason: Unclear whether the SM entry means the jig or a separate old-time
+      "Rattlesnake" tune.
+  come-along-jody:
+    candidate: come-along-john
+    reason: Jody/John may be a variant of one old-time tune or two tunes.
+  brand-new-pair-of-shoes:
+    candidate: brand-new-shoes
+    reason: Plausibly one song under two titles; needs a lyric check.
+  grey-eagle:
+    candidate: tennessee-grey-eagle
+    reason: Related fiddle-tune family; unclear whether the same setting.
+  johnson-boys:
+    candidate: the-legend-of-the-johnson-boys
+    reason: The traditional "Johnson Boys" vs what may be a distinct arrangement.
+
+not_a_song:
+  band-introductions: { reason: Strum Machine catalog artifact. }
+  band-intros: { reason: Strum Machine catalog artifact. }
+  talk: { reason: Strum Machine catalog artifact. }
+  age-bluegrass-album-band: { reason: Malformed catalog entry, not a song title. }
+
+# Same song listed twice on the board under arrangement-variant titles. All
+# resolve to a `covered` entry above; recorded separately because the
+# catalogue generator must collapse them even if the work were absent.
+intra_dupes:
+  - [Another Day Another Dollar Dan Tyminski, Another Day Another Dollar Wynn Stewart]
+  - [Black Eyed Suzie, Black Eyed Suzy]
+  - [Cotton-Eyed Joe 16 bars, Cotton-Eyed Joe 20 bars]
+  - [More Pretty Girls Than One 4/4 time, More Pretty Girls Than One w/minor]
+  - [Shady Grove minor via Doc Watson, Shady Grove minor via Garcia/Grisman]
+  - [Sitting on Top of the World 1-4-5 only, Sitting on Top of the World with 6m]
+  - [Sweet Sunny South major, Sweet Sunny South modal]
+  - [Talk to Your Heart 4/4 time, Talk to Your Heart Ray Price]
+  - [Who's That Knocking At My Window Carter family, Who's That Knocking At My Window Hazel & Alice]
+
+# Corpus-internal duplicates surfaced by the candidate lists. Not bounty work —
+# these belong in curation/registry.yaml under `groups:`.
+corpus_duplicates_noted:
+  - [will-the-circle-be-unbroken, will-the-circle-be-unbroken-1, will-the-circle-be-unbroken-2]
+  - [sitting-on-top-of-the-world, sittin-on-top-of-the-world, sittin-on-top-of-the-world-1]
+  - [shady-grove, shady-grove-1, shady-grove-2]
+  - [the-yellow-rose-of-texas, the-yellow-rose-of-texas-1]
+  - [streamline-cannonball, streamlined-cannonball]
+  - [red-rocking-chair, red-rocking-chair-1]
+  - [little-maggie, little-maggie-1]
+  - [why-you-been-gone-so-long, why-you-been-gone-so-long-1]
+  - [make-me-a-pallet-on-the-floor, make-me-a-pallet-on-your-floor, pallet-on-your-floor]

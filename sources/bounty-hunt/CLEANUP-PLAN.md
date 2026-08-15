@@ -106,22 +106,32 @@ Cannonball`/`Streamlined Cannonball`, `Yellow Rose of Texas` ×2, `Sitting on To
 of the World` ×3, `Will the Circle` ×3. Those belong in `curation/registry.yaml`
 under `groups:`.
 
-### Cost of running adjudication at scale
+### Adjudication is done — no API job needed
 
-Estimate only — nothing submitted. ~700 wanted entries, one request each
-carrying the title plus its top-3 candidates with first lines; ~800 input tokens
-(~400 cacheable system prompt + ~400 payload), ~150 output tokens per verdict.
+The full adjudication debt was **110 entries**, not 700: only that many have any
+corpus candidate at all (fuzzy ≥0.78 or stopword-free token containment). The
+other 586 are genuinely missing and need no verdict.
 
-| | Tokens | Batch rate (50% off list) | Cost |
-|---|---|---|---|
-| Input | 0.56 MTok | $2.50/MTok | $1.40 |
-| Output | 0.105 MTok | $12.50/MTok | $1.31 |
-| **Total (Opus 5, batch)** | | | **~$2.71** |
+All 110 were adjudicated by hand on 2026-08-15 and committed to
+`curation/bounty_decisions.yaml`. A batch-API pass was scoped (~$2.71 on Opus 5)
+and dropped as over-engineering — the work fit in one sitting.
 
-Roughly double for the Phase 3 catalogue-internal pass — under $10 for the whole
-job, cheap enough that dropping to a smaller model isn't worth the accuracy
-loss. Per the repo cost-control rule, the batch script gets reviewed before
-anything is submitted.
+| Verdict | Board titles |
+|---|---:|
+| Covered — drop | **53** (44 ledger keys; 9 are two-title arrangement variants) |
+| Distinct — keep | 50 |
+| Uncertain — needs a human who knows the tune | 7 |
+| Not a song | 4 (no candidates; found separately) |
+
+Reconciles exactly: 53 + 50 + 7 = 110. **The board goes 696 → 639.**
+
+Of the 53 covered: **7 resolve to archived works** (the Dungeon promote list) and
+**12 resolve to lyrics-only works** — the double-count, where the board
+advertises as missing a song whose page its own "Needs Chords" section lists.
+
+An API pass only becomes worth building if a future research run adds a large
+batch of new candidates. Until then the generator reads the ledger and the
+queue stays empty.
 
 ### Tested and rejected: MusicBrainz work IDs as the join key
 
@@ -230,17 +240,16 @@ This is a *narrowing* tool that proposes candidates. It never decides identity �
 that is the adjudicator's job (Phase 5), because neither string distance nor
 title embeddings can do it (see § Tested and rejected above).
 
-### Phase 1b — LLM adjudicator over the queue
+### Phase 1b — adjudication (already done)
 
-`sources/bounty-hunt/src/adjudicate.py` — takes the matcher's queued candidate
-sets and asks, per item, whether the titles denote the same musical work,
-returning a structured verdict (`covered` / `distinct` / `same_song` /
-`not_a_song` / `uncertain`) with a one-line reason and a confidence. Anthropic
-batch API, same pattern as LLM tagging. `uncertain` falls through to human
-review; every verdict lands in the Phase 5 ledger and is never re-asked.
+The matcher's queued candidate sets get a verdict per item: does this title
+denote a work we already have? That pass is **complete** — all 110 candidates
+are adjudicated in `curation/bounty_decisions.yaml` (see above). The generator
+consumes that file; it does not re-derive the verdicts.
 
-Cost is ~$2.71 per full pass (table above) — always shown and approved before
-submission, per the repo cost-control rule.
+If a later research run adds many new candidates, batch-API adjudication is the
+scale-out path (~$2.71 for a 700-item pass, cost shown and approved before
+submission per the repo rule). It is not needed for the current corpus.
 
 ### Phase 2 — Catalogue builder (local only, output tracked)
 
