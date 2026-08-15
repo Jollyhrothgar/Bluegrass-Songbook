@@ -4,9 +4,12 @@ on:
   issues:
     types: [labeled]
 
-# Serialize all content-processing workflows to prevent push conflicts
+# Serialize per issue, NOT across all content workflows. GitHub keeps only one
+# pending run per concurrency group, so a shared group silently evicts queued
+# runs when several issues are labelled at once (this dropped #208 and #209).
+# Cross-issue push races are already handled by the rebase-retry push below.
 concurrency:
-  group: content-processing
+  group: content-processing-${{ github.event.issue.number }}
   cancel-in-progress: false
 
 jobs:
@@ -81,12 +84,19 @@ jobs:
           git diff --staged --quiet || \
             git commit -m "Add tune from request #${ISSUE_NUMBER}" -m "$ISSUE_TITLE"
 
-          # Retry push with rebase in case of concurrent pushes
+          # Retry push with rebase in case of concurrent pushes.
+          # Must fail loudly: falling out of the loop used to exit 0, so a
+          # commit that never reached the remote looked like a success.
+          pushed=0
           for i in 1 2 3; do
-            git push && break
+            if git push; then pushed=1; break; fi
             echo "Push failed, attempt $i - pulling and retrying..."
             git pull --rebase
           done
+          if [ "$pushed" -ne 1 ]; then
+            echo "::error::Push failed after 3 attempts - tune was NOT committed"
+            exit 1
+          fi
 
       - name: Close issue with comment
         uses: actions/github-script@v7
