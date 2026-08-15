@@ -23,10 +23,6 @@ export const COLLECTION_PINS = {
         "old-joe-clark", "soldier-s-joy", "cripple-creek",
         "arkansas-traveler", "turkey-in-the-straw", "fire-on-the-mountain"
     ],
-    'waltz': [
-        "kentucky-waltz", "tennessee-waltz", "lonesome-moonlight-waltz",
-        "the-alabama-waltz", "waltz-across-texas", "blue-eyes-crying-in-the-rain"
-    ],
     'all-songs': []  // No pinned songs for "search all"
 };
 
@@ -73,12 +69,13 @@ export const COLLECTIONS = [
         isSearchLink: true
     },
     {
-        id: 'waltz',
-        title: 'Waltzes',
-        description: 'Songs in 3/4 time',
-        query: 'tag:Waltz',
-        image: 'images/collections/waltz.svg',
-        color: '#0891b2'
+        id: 'bluegrass-dungeon',
+        title: 'The Bluegrass Dungeon',
+        description: "16,000+ songs that didn't make the book",
+        query: '',
+        image: 'images/bluegrass_dungeon.png',
+        color: '#7f1d1d',
+        isDungeonLink: true
     }
 ];
 

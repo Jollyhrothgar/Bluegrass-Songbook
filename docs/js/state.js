@@ -361,9 +361,17 @@ export let currentView = 'home';  // 'home' | 'search' | 'song' | 'add-song' | '
 export let activeModal = null;  // 'account' | 'lists' | null
 export let currentSearchQuery = '';
 
+// Dungeon mode: search scope flips to archived-only rows (indexed === false)
+export let dungeonMode = false;
+
 export function setCurrentView(value) { currentView = value; notifyChange('currentView'); }
 export function setActiveModal(value) { activeModal = value; notifyChange('activeModal'); }
 export function setCurrentSearchQuery(value) { currentSearchQuery = value; notifyChange('currentSearchQuery'); }
+export function setDungeonMode(value) {
+    if (dungeonMode === value) return;
+    dungeonMode = value;
+    notifyChange('dungeonMode');
+}
 
 // ============================================
 // CONSTANTS

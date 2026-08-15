@@ -1,6 +1,6 @@
 // Core search functionality for Bluegrass Songbook
 
-import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork } from './state.js';
+import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork, dungeonMode } from './state.js';
 import { highlightMatch, escapeHtml, requireLogin } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import {
@@ -668,9 +668,12 @@ function formatCoveringArtists(artists, primaryArtist) {
  * Pruned rows (indexed === false) stay in allSongs so deep links, lists,
  * and arrangement groups still resolve — but search, browse, and counts
  * never surface them.
+ * In dungeon mode the scope inverts: only archived rows are searchable.
  */
 export function searchableSongs() {
-    return allSongs.filter(s => s.indexed !== false);
+    return dungeonMode
+        ? allSongs.filter(s => s.indexed === false)
+        : allSongs.filter(s => s.indexed !== false);
 }
 
 /**
@@ -686,7 +689,7 @@ export function showPopularSongs() {
     // Use distinct title count to match subtitle
     const distinctCount = new Set(searchableSongs().map(s => s.title?.toLowerCase())).size;
     if (searchStatsEl) {
-        searchStatsEl.textContent = `${distinctCount.toLocaleString()} songs`;
+        searchStatsEl.textContent = `${distinctCount.toLocaleString()} songs${dungeonMode ? ' in the dungeon' : ''}`;
     }
     // Pass all results - renderResults handles pagination via infinite scroll
     renderResults(sorted, '');
@@ -851,7 +854,7 @@ export function search(query, options = {}) {
     }
 
     // Update stats with search info
-    let statsText = `${dedupedResults.length.toLocaleString()} songs`;
+    let statsText = `${dedupedResults.length.toLocaleString()} songs${dungeonMode ? ' in the dungeon' : ''}`;
     const filters = [];
     // Inclusion filters
     if (artistFilter) filters.push(`artist: "${artistFilter}"`);
