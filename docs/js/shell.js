@@ -33,6 +33,7 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
             <button id="topbar-back" class="topbar-back hidden" title="Back">&larr;</button>
             <a href="#" id="topbar-brand" class="topbar-brand" title="Home">
                 <img src="images/new_bb_logo.svg" alt="Bluegrass Book">
+                <img src="images/earl_zombie_face.png" class="brand-dungeon-face" alt="" aria-hidden="true">
             </a>
             <nav class="topbar-nav"></nav>
         </div>

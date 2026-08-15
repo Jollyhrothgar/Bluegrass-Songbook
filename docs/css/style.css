@@ -110,7 +110,7 @@ h1 {
 /* The BB plaque is cream-on-dark; flip it in light mode so it reads as
    dark-on-cream and matches the theme */
 :root:not([data-theme="dark"]) .site-logo img,
-:root:not([data-theme="dark"]) .topbar-brand img {
+:root:not([data-theme="dark"]) .topbar-brand img:not(.brand-dungeon-face) {
     filter: invert(1);
 }
 
@@ -6749,6 +6749,55 @@ mark {
     margin-top: 0.25rem;
 }
 
+/* ============================================
+   THE BLUEGRASS DUNGEON
+   ============================================ */
+
+/* Homepage card: dark crypt styling regardless of theme */
+.collection-card.dungeon-card {
+    background: #17171a;
+    border-color: #7f1d1d;
+}
+
+.collection-card.dungeon-card:hover {
+    border-color: #b91c1c;
+    box-shadow: 0 4px 12px rgba(127, 29, 29, 0.45);
+}
+
+.collection-card.dungeon-card .collection-title {
+    color: #f87171;
+}
+
+.collection-card.dungeon-card .collection-description {
+    color: #a1a1aa;
+}
+
+/* Show the whole badge — cover crops the blood-drip frame */
+.collection-card.dungeon-card .collection-image {
+    background: #000;
+}
+
+.collection-card.dungeon-card .collection-image img {
+    object-fit: contain;
+}
+
+/* Dungeon mode: blood-red accent while browsing the archive */
+body.dungeon-mode {
+    --accent: #b91c1c;
+}
+
+body.dungeon-mode #search-stats {
+    color: #b91c1c;
+    font-weight: 600;
+}
+
+.dungeon-loading {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
 /* Landing footer with bounty link */
 .landing-footer {
     margin-top: 1.5rem;
@@ -9310,11 +9359,34 @@ mark {
 
 .topbar-back:hover { border-color: var(--accent); }
 
+.topbar-brand {
+    position: relative;
+}
+
 .topbar-brand img {
     height: 32px;
     width: auto;
     display: block;
     border-radius: 6px;
+}
+
+/* Zombie Earl rises over the plaque in dungeon mode only.
+   Selector includes .topbar-brand so display:none outranks the
+   .topbar-brand img { display: block } base rule. */
+.topbar-brand .brand-dungeon-face {
+    display: none;
+}
+
+body.dungeon-mode .topbar-brand .brand-dungeon-face {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55%);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6));
 }
 
 

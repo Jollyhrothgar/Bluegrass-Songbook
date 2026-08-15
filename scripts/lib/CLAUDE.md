@@ -38,6 +38,7 @@ Some operations require external APIs/databases and only run locally. Others run
 | **Grassiness scores** | Local only | `bluegrass_recordings.json`, `bluegrass_tagged.json` | Song-level bluegrass detection |
 | **Strum Machine URLs** | Local only | `strum_machine_cache.json` | API rate limited (10 req/sec) |
 | **Deleted songs sync** | Scheduled CI + local | `deleted_songs.json` | `.github/workflows/sync-deleted-songs.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-deleted-songs` |
+| **Promoted songs sync** | Scheduled CI + local | `promoted_songs.json` | same workflow as deleted songs, or `./scripts/utility sync-promoted-songs` |
 | **TuneArch fetch** | Local only | - | Fetches new instrumentals |
 
 **How caching works:**
@@ -52,6 +53,7 @@ Some operations require external APIs/databases and only run locally. Others run
 - `docs/data/bluegrass_tagged.json` - Recordings with MusicBrainz bluegrass tags
 - `docs/data/grassiness_scores.json` - Computed grassiness scores per song
 - `docs/data/deleted_songs.json` - Soft-deleted song IDs (synced from Supabase via `fetch_deleted_songs.py`; suppressed at index build)
+- `docs/data/promoted_songs.json` - Trusted-user promotions from the Bluegrass Dungeon (synced from Supabase via `fetch_promoted_songs.py`; unioned with the registry `keep:` map at index build)
 
 ## Files
 
@@ -390,17 +392,24 @@ Restoring songs later:
 # entries in curation/registry.yaml), then rebuild
 ```
 
-### Deleted-Songs Sync
+### Deleted/Promoted-Songs Sync
 
-Admin soft-deletes land in the Supabase `deleted_songs` table. The
-`Sync Deleted Songs` workflow (`.github/workflows/sync-deleted-songs.yml`,
-hourly cron + manual dispatch) writes them to the committed
-`docs/data/deleted_songs.json` cache and its commit triggers a rebuild +
-deploy, so UI deletes actually stick. Manual fallback:
+Admin soft-deletes land in the Supabase `deleted_songs` table; trusted-user
+promotions from the Bluegrass Dungeon land in `promoted_songs`. The
+`Sync Deleted + Promoted Songs` workflow
+(`.github/workflows/sync-deleted-songs.yml`, hourly cron + manual dispatch)
+writes both to the committed caches (`docs/data/deleted_songs.json`,
+`docs/data/promoted_songs.json`) and its commit triggers a rebuild + deploy,
+so UI deletes and promotions actually stick. A promotion has the same effect
+as `curate unprune` but lives in the JSON cache instead of `registry.yaml`;
+if a promoted work was also deleted, deletion wins (the build warns).
+Manual fallback:
 
 ```bash
-./scripts/utility sync-deleted-songs   # runs fetch_deleted_songs.py
-git add docs/data/deleted_songs.json && git commit -m "Sync deleted songs"
+./scripts/utility sync-deleted-songs    # runs fetch_deleted_songs.py
+./scripts/utility sync-promoted-songs   # runs fetch_promoted_songs.py
+git add docs/data/deleted_songs.json docs/data/promoted_songs.json
+git commit -m "Sync deleted/promoted songs"
 ```
 
 ### Output Format

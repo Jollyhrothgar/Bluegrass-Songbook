@@ -118,6 +118,21 @@ def load_deleted_songs(repo_root) -> dict:
         return {}
 
 
+def load_promoted_songs(repo_root) -> dict:
+    """Load docs/data/promoted_songs.json ({work_id: {promoted_at, reason}}).
+
+    Trusted-user promotions synced from the Supabase promoted_songs table;
+    unioned with the registry keep: map by apply_index_prune.
+    """
+    path = Path(repo_root) / 'docs' / 'data' / 'promoted_songs.json'
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text()) or {}
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
 def is_suppressed(work_id: str, registry: Registry, deleted_songs: dict = None) -> bool:
     """True if a work id must not be (re)created by importers.
 
@@ -288,12 +303,14 @@ def load_prune_list(repo_root) -> set:
         return {r['id'] for r in rows if r.get('id')}
 
 
-def apply_index_prune(songs: list, prune_ids: set, registry: Registry) -> list:
+def apply_index_prune(songs: list, prune_ids: set, registry: Registry,
+                      promoted_ids: frozenset = frozenset()) -> list:
     """Stamp indexed:false on non-jam-repertoire rows (non-destructive prune).
 
     A row is pruned when its id is on the prune list, UNLESS:
     - it came from a user (source in USER_SOURCES or has submitted_by), or
-    - it was rescued via the registry's keep: map.
+    - it was rescued via the registry's keep: map, or
+    - it was promoted by a trusted user (docs/data/promoted_songs.json).
     Rows stay in the index — deep links, lists, and arrangement groups keep
     working — but search/collections exclude indexed:false rows.
     """
@@ -305,6 +322,8 @@ def apply_index_prune(songs: list, prune_ids: set, registry: Registry) -> list:
         if song.get('source') in USER_SOURCES or song.get('submitted_by'):
             continue
         if song.get('id') in (registry.keep or {}):
+            continue
+        if song.get('id') in promoted_ids:
             continue
         song['indexed'] = False
     return songs

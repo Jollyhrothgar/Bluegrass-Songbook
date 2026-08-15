@@ -29,7 +29,8 @@ import {
     setWorkRedirects, resolveWorkId,
     setBountyIndex,
     // Reactive state system
-    subscribe, setCurrentView, currentView
+    subscribe, setCurrentView, currentView,
+    dungeonMode, setDungeonMode
 } from './state.js';
 import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import {
@@ -43,7 +44,7 @@ import {
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
 import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
-import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery } from './search-core.js';
+import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
@@ -222,6 +223,9 @@ function pushHistoryState(view, data = {}, replace = false) {
         case 'search':
             hash = data.query ? `#search/${encodeURIComponent(data.query)}` : '#search';
             break;
+        case 'dungeon':
+            hash = data.query ? `#dungeon/${encodeURIComponent(data.query)}` : '#dungeon';
+            break;
         case 'home':
         default:
             hash = '';
@@ -243,8 +247,15 @@ function handleHistoryNavigation(state) {
         if (handleDeepLink()) {
             return;
         }
+        setDungeonMode(false);
         showView('home');
         return;
+    }
+
+    // Dungeon chrome persists only on the dungeon list and song pages opened
+    // from it — any other destination drops back to the canon scope
+    if (state.view !== 'dungeon' && state.view !== 'song') {
+        setDungeonMode(false);
     }
 
     switch (state.view) {
@@ -309,6 +320,9 @@ function handleHistoryNavigation(state) {
             break;
         case 'song-lists':
             showSongListsView(state.folderId || null);
+            break;
+        case 'dungeon':
+            enterDungeon(state.query || '', { fromHistory: true });
             break;
         case 'search':
         default:
@@ -489,7 +503,7 @@ const COLLECTION_IMAGES = {
     'gospel': 'images/jimmy_martin_gospel.jpg',
     'fiddle-tunes': 'images/fiddle_tunes.png',
     'all-songs': 'images/jam_friendly.png',
-    'waltz': 'images/waltz.png'
+    'bluegrass-dungeon': 'images/bluegrass_dungeon.png'
 };
 
 const COLLECTION_ICONS = {
@@ -498,7 +512,7 @@ const COLLECTION_ICONS = {
     'gospel': '⛪',
     'fiddle-tunes': '🎻',
     'jam-friendly': '🤝',
-    'waltz': '💃',
+    'bluegrass-dungeon': '🧟',
     'classic-country': '🤠',
     'old-time': '🪕',
     'chord-explorer': '🎹'
@@ -519,8 +533,8 @@ function renderCollectionCards() {
     if (!collectionsGrid) return;
 
     const cards = COLLECTIONS.map(collection => {
-        // Count songs matching the query (or distinct titles for "all songs", or skip for tools)
-        const count = collection.isToolLink ? 0 : collection.isSearchLink ? getDistinctSongCount() : getCollectionSongCount(collection.query);
+        // Count songs matching the query (or distinct titles for "all songs", or skip for tools/dungeon)
+        const count = (collection.isToolLink || collection.isDungeonLink) ? 0 : collection.isSearchLink ? getDistinctSongCount() : getCollectionSongCount(collection.query);
         const icon = COLLECTION_ICONS[collection.id] || '🎵';
         const imageSrc = COLLECTION_IMAGES[collection.id];
 
@@ -530,7 +544,9 @@ function renderCollectionCards() {
             : icon;
 
         // Determine href based on collection type
-        const href = collection.isToolLink
+        const href = collection.isDungeonLink
+            ? '#dungeon'
+            : collection.isToolLink
             ? collection.href
             : collection.isSearchLink
             ? '#search'
@@ -538,7 +554,7 @@ function renderCollectionCards() {
 
         return `
             <a href="${href}"
-               class="collection-card${imageSrc ? ' has-image' : ''}${collection.isSearchLink ? ' search-all' : ''}${collection.isToolLink ? ' tool-link' : ''}"
+               class="collection-card${imageSrc ? ' has-image' : ''}${collection.isSearchLink ? ' search-all' : ''}${collection.isToolLink ? ' tool-link' : ''}${collection.isDungeonLink ? ' dungeon-card' : ''}"
                data-collection="${collection.id}"
                style="--collection-color: ${collection.color}">
                 <div class="collection-image">
@@ -547,7 +563,7 @@ function renderCollectionCards() {
                 <div class="collection-content">
                     <h3 class="collection-title">${escapeHtml(collection.title)}</h3>
                     <p class="collection-description">${escapeHtml(collection.description)}</p>
-                    ${collection.isToolLink ? '' : `<span class="collection-count">${count.toLocaleString()} songs</span>`}
+                    ${(collection.isToolLink || collection.isDungeonLink) ? '' : `<span class="collection-count">${count.toLocaleString()} songs</span>`}
                 </div>
             </a>
         `;
@@ -570,7 +586,10 @@ function renderCollectionCards() {
 
             e.preventDefault();
 
-            if (isSearchAll) {
+            if (href === '#dungeon') {
+                enterDungeon('');
+                track('collection_click', { collection: 'bluegrass-dungeon' });
+            } else if (isSearchAll) {
                 browseAllSongs();
                 pushHistoryState('search', { query: '' });
                 track('collection_click', { collection: 'all-songs' });
@@ -663,6 +682,12 @@ function showLandingPage() {
 function handleDeepLink() {
     const hash = window.location.hash;
     if (!hash) return false;
+
+    // Dungeon chrome persists only on dungeon and song URLs — every other
+    // destination drops back to the canon scope
+    if (!/^#(dungeon|work\/|song\/)/.test(hash)) {
+        setDungeonMode(false);
+    }
 
     // Use replace=true for deep links to avoid duplicate history entries
     // (the URL is already set from the initial page load)
@@ -795,6 +820,15 @@ function handleDeepLink() {
         trackDeepLink('song-lists', hash);
         showSongListsView(folderId);
         pushHistoryState('song-lists', { folderId }, true);
+        return true;
+    } else if (hash === '#dungeon') {
+        trackDeepLink('dungeon', hash);
+        enterDungeon('', { replace: true });
+        return true;
+    } else if (hash.startsWith('#dungeon/')) {
+        const query = decodeURIComponent(hash.slice(9));
+        trackDeepLink('dungeon', hash);
+        enterDungeon(query, { replace: true });
         return true;
     } else if (hash === '#search') {
         // Search view without query = browse the whole canon
@@ -955,9 +989,32 @@ function checkPendingInvite() {
  * the view is already 'search', so the subscriber can't be trusted to fire.
  */
 function browseAllSongs() {
+    setDungeonMode(false);
     if (searchInput) searchInput.value = '';
     showView('search');
     showPopularSongs();
+}
+
+/**
+ * Enter the Bluegrass Dungeon: the archive-only search scope.
+ * Waits for archive.jsonl if it hasn't arrived yet (idle prefetch).
+ */
+async function enterDungeon(query = '', { fromHistory = false, replace = false } = {}) {
+    setDungeonMode(true);
+    if (searchInput) searchInput.value = query;
+    showView('search');
+    if (!fromHistory) pushHistoryState('dungeon', { query }, replace);
+    if (!window.isArchiveLoaded()) {
+        if (searchStats) searchStats.textContent = '';
+        if (resultsDiv) resultsDiv.innerHTML = '<div class="dungeon-loading">🧟 Opening the dungeon…</div>';
+        await ensureArchiveLoaded();
+        // User may have navigated away while the archive downloaded
+        if (!dungeonMode) return;
+    }
+    search(query);
+    if (searchableSongs().length === 0 && resultsDiv) {
+        resultsDiv.innerHTML = '<div class="no-results">The dungeon is empty — the archive could not be loaded. Try reloading the page.</div>';
+    }
 }
 
 function navigateTo(mode) {
@@ -971,6 +1028,14 @@ function navigateTo(mode) {
         browseAllSongs();
         pushHistoryState(mode);
         return;
+    }
+    if (dungeonMode) {
+        // Explicit nav away from the dungeon returns to the canon scope;
+        // re-run any typed query so results match the restored scope
+        setDungeonMode(false);
+        if (mode === 'search' && searchInput?.value?.trim()) {
+            search(searchInput.value);
+        }
     }
     showView(mode);
     pushHistoryState(mode);
@@ -1258,6 +1323,12 @@ window.refreshBounties = refreshBounties;
 // Admin state (cached to avoid repeated RPC calls)
 let isAdminUser = false;
 
+// Trusted state (cached the same way; gates the Promote overflow item)
+let isTrustedFlag = false;
+
+// Songs promoted this session (flips the overflow item to "Undo promote")
+const promotedIds = new Set();
+
 function getInitials(user) {
     const name = user.user_metadata?.full_name;
     if (name) {
@@ -1307,8 +1378,9 @@ function updateAuthUI(user, event) {
         updateSyncUI('syncing');
         performFullListsSync();
 
-        // Check admin status (async, updates UI when ready)
+        // Check admin/trusted status (async, updates UI when ready)
         checkAdminStatus();
+        checkTrustedStatus();
     } else {
         // Show sign-in button, hide user info
         signInBtn?.classList.remove('hidden');
@@ -1321,8 +1393,10 @@ function updateAuthUI(user, event) {
             handleListsSignOut();
         }
 
-        // Clear admin status (drops the Delete item from the song overflow)
+        // Clear admin/trusted status (drops the Delete and Promote items
+        // from the song overflow)
         isAdminUser = false;
+        isTrustedFlag = false;
         updateDeleteButtonVisibility();
     }
 }
@@ -1336,12 +1410,58 @@ async function checkAdminStatus() {
     }
 }
 
-// Admin status changed: rebuild the song page's top band so the Delete
-// overflow item appears/disappears (work-view reads isAdmin via hook).
+// Check if current user is trusted and update UI (gates Promote)
+async function checkTrustedStatus() {
+    if (typeof SupabaseAuth !== 'undefined') {
+        isTrustedFlag = await SupabaseAuth.isTrustedUser();
+        updateDeleteButtonVisibility();
+    }
+}
+
+// Admin/trusted status changed: rebuild the song page's top band so the
+// Delete/Promote overflow items appear/disappear (work-view reads the
+// isAdmin/isTrusted hooks).
 function updateDeleteButtonVisibility() {
     if (currentView === 'song') {
         updateWorkTopBar();
     }
+}
+
+// Promote the viewed archived song into the main index (trusted users).
+// Writes a promoted_songs row; the hourly sync + rebuild make it live on
+// the site, while an optimistic flip makes it searchable locally right away.
+async function handlePromoteSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    if (promotedIds.has(song.id)) {
+        // Undo path
+        const { error } = await SupabaseAuth.unpromoteSong(song.id);
+        if (error) {
+            alert(`Could not undo promotion: ${error.message}`);
+            return;
+        }
+        promotedIds.delete(song.id);
+        song.indexed = false;
+        alert(`Promotion of "${song.title}" undone.`);
+        updateWorkTopBar();
+        return;
+    }
+
+    if (song.indexed !== false) {
+        alert(`"${song.title}" is already in the songbook.`);
+        return;
+    }
+
+    const { error } = await SupabaseAuth.promoteSong(song.id);
+    if (error) {
+        alert(`Could not promote song: ${error.message}`);
+        return;
+    }
+    promotedIds.add(song.id);
+    song.indexed = true;
+    alert(`Promoted "${song.title}" to the songbook!\n\nIt is searchable for you immediately; the live site picks it up after the next hourly sync and rebuild.`);
+    updateWorkTopBar();
 }
 
 // Handle song deletion. Opens a modal listing every version in the group:
@@ -2086,6 +2206,7 @@ function init() {
     ]);
     document.getElementById('topbar-brand')?.addEventListener('click', (e) => {
         e.preventDefault();
+        setDungeonMode(false);
         searchInput.value = '';
         showView('home');
         pushHistoryState('home');
@@ -2096,6 +2217,14 @@ function init() {
 
     // Initialize reactive view state subscription
     initViewSubscription();
+
+    // Dungeon chrome (zombie topbar face, blood-red accent) follows the flag.
+    // Read the live binding rather than the callback arg: notifies are
+    // rAF-batched, so the argument can lag behind rapid flag changes.
+    subscribe('dungeonMode', () => {
+        document.body.classList.toggle('dungeon-mode', dungeonMode);
+    });
+    document.body.classList.toggle('dungeon-mode', dungeonMode);
 
     // Initialize analytics (early, before other modules)
     initAnalytics();
@@ -2175,6 +2304,9 @@ function init() {
         onEdit: (song) => enterEditMode(song),
         onDelete: handleDeleteSong,
         isAdmin: () => isAdminUser,
+        isTrusted: () => isTrustedFlag,
+        onPromote: handlePromoteSong,
+        isPromoted: (id) => promotedIds.has(id),
     });
 
     initSearch({
@@ -2190,7 +2322,7 @@ function init() {
         urlUpdateTimeout = setTimeout(() => {
             const query = e.target.value.trim();
             // Use replaceState so back button goes to previous page, not previous keystroke
-            pushHistoryState('search', { query }, true);
+            pushHistoryState(dungeonMode ? 'dungeon' : 'search', { query }, true);
         }, 500);
     });
 
@@ -2239,6 +2371,7 @@ function init() {
 
     // Home buttons - go home
     const goHome = () => {
+        setDungeonMode(false);
         searchInput.value = '';
         showView('home');
         pushHistoryState('home');

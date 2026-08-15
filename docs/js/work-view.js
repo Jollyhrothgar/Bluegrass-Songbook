@@ -913,11 +913,11 @@ function buildPlaceholderCta(hasContent) {
  */
 function buildArrangementPill() {
     const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
-    const label = versions.length > 1 ? `${versions.length} arrangements` : 'Arrangement';
+    const label = versions.length > 1 ? `${versions.length} versions` : 'Version';
     return pill(label, (container) => {
         container.innerHTML = '<div class="arrangement-loading">Loading…</div>';
         renderArrangementList(container, versions);
-    }, { id: 'arrangement-pill', title: 'Arrangements of this song', className: 'pill-wide' });
+    }, { id: 'arrangement-pill', title: 'Versions of this song', className: 'pill-wide' });
 }
 
 async function renderArrangementList(container, versions, voteData = null) {
@@ -1041,9 +1041,12 @@ let prefSubscriptionsRegistered = false;
  * Wire main.js-owned behaviors into the unified song page and register the
  * display-preference subscriptions that re-render the lead-sheet body.
  * Called once from main.js init.
- *   onEdit(song) - open the song editor
- *   onDelete()   - admin delete flow
- *   isAdmin()    - current admin status (drives the Delete overflow item)
+ *   onEdit(song)   - open the song editor
+ *   onDelete()     - admin delete flow
+ *   isAdmin()      - current admin status (drives the Delete overflow item)
+ *   isTrusted()    - current trusted status (drives the Promote overflow item)
+ *   onPromote()    - promote/unpromote the viewed archived song
+ *   isPromoted(id) - promoted this session (flips the item to Undo)
  */
 export function configureWorkPage(hooks = {}) {
     workPageHooks = hooks;
@@ -1123,6 +1126,21 @@ export function updateWorkTopBar() {
         actions.push({ el: buildExportPill() });
     }
 
+    // Trusted users see Promote on archived (dungeon) songs — a visible
+    // band button on desktop, ⋯ overflow on phones (same diet as Export).
+    const promotedNow = workPageHooks.isPromoted?.(currentWork.id);
+    const showPromote = workPageHooks.isTrusted?.() &&
+        (promotedNow || currentWork.indexed === false);
+    if (showPromote && !phoneBand) {
+        actions.push({
+            id: 'promote-song-btn',
+            label: promotedNow ? 'Undo promote' : 'Promote',
+            icon: promotedNow ? '↩️' : '⬆️',
+            title: promotedNow ? 'Undo promotion' : 'Promote this song into the songbook',
+            onClick: () => workPageHooks.onPromote?.(),
+        });
+    }
+
     const overflow = [
         { id: 'flag-btn', label: '🚩 Report issue', onClick: () => openFlagModal(currentWork) },
     ];
@@ -1138,6 +1156,13 @@ export function updateWorkTopBar() {
             id: 'song-notes-btn',
             label: '📝 Song notes',
             onClick: () => openNotesSheet(listContext.listId, currentWork.id, currentWork.title),
+        });
+    }
+    if (showPromote && phoneBand) {
+        overflow.push({
+            id: 'promote-song-btn',
+            label: promotedNow ? '↩️ Undo promote' : '⬆️ Promote to songbook',
+            onClick: () => workPageHooks.onPromote?.(),
         });
     }
     if (workPageHooks.isAdmin?.()) {
