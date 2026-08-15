@@ -6772,6 +6772,15 @@ mark {
     color: #a1a1aa;
 }
 
+/* Show the whole badge — cover crops the blood-drip frame */
+.collection-card.dungeon-card .collection-image {
+    background: #000;
+}
+
+.collection-card.dungeon-card .collection-image img {
+    object-fit: contain;
+}
+
 /* Dungeon mode: blood-red accent while browsing the archive */
 body.dungeon-mode {
     --accent: #b91c1c;

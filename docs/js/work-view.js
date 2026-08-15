@@ -1126,6 +1126,21 @@ export function updateWorkTopBar() {
         actions.push({ el: buildExportPill() });
     }
 
+    // Trusted users see Promote on archived (dungeon) songs — a visible
+    // band button on desktop, ⋯ overflow on phones (same diet as Export).
+    const promotedNow = workPageHooks.isPromoted?.(currentWork.id);
+    const showPromote = workPageHooks.isTrusted?.() &&
+        (promotedNow || currentWork.indexed === false);
+    if (showPromote && !phoneBand) {
+        actions.push({
+            id: 'promote-song-btn',
+            label: promotedNow ? 'Undo promote' : 'Promote',
+            icon: promotedNow ? '↩️' : '⬆️',
+            title: promotedNow ? 'Undo promotion' : 'Promote this song into the songbook',
+            onClick: () => workPageHooks.onPromote?.(),
+        });
+    }
+
     const overflow = [
         { id: 'flag-btn', label: '🚩 Report issue', onClick: () => openFlagModal(currentWork) },
     ];
@@ -1143,21 +1158,12 @@ export function updateWorkTopBar() {
             onClick: () => openNotesSheet(listContext.listId, currentWork.id, currentWork.title),
         });
     }
-    if (workPageHooks.isTrusted?.()) {
-        const promotedNow = workPageHooks.isPromoted?.(currentWork.id);
-        if (promotedNow) {
-            overflow.push({
-                id: 'promote-song-btn',
-                label: '↩️ Undo promote',
-                onClick: () => workPageHooks.onPromote?.(),
-            });
-        } else if (currentWork.indexed === false) {
-            overflow.push({
-                id: 'promote-song-btn',
-                label: '⬆️ Promote to songbook',
-                onClick: () => workPageHooks.onPromote?.(),
-            });
-        }
+    if (showPromote && phoneBand) {
+        overflow.push({
+            id: 'promote-song-btn',
+            label: promotedNow ? '↩️ Undo promote' : '⬆️ Promote to songbook',
+            onClick: () => workPageHooks.onPromote?.(),
+        });
     }
     if (workPageHooks.isAdmin?.()) {
         overflow.push({
