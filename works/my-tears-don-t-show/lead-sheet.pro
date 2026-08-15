@@ -7,7 +7,7 @@
 
 {start_of_verse: Verse 1}
 [G]I've learned to hide my greed with[C]in my [Am]heart
-And to con[D7]ceal the thing that hurts me [G][D]so
+And to con[D7]ceal the thing that hurts me [G]so [D]
 But every [G]time somebody [C]calls your [Am]name
 Although I've [D7]cried for you my tears don't [G][G7]show
 {end_of_verse}
@@ -21,7 +21,7 @@ Although I've [D7]cried for you my tears don't [G]show
 
 {start_of_verse: Verse 3}
 Some friends of [G]mine ask me if [C]we were [Am]through
-They found it [D7]strange that we should be a[G][D]part
+They found it [D7]strange that we should be a[G]part [D]
 Although I [G]smile and say that, [C]"I don't [Am]care"
 If they could [D7]only see inside my [G][G7]heart
 {end_of_verse}
