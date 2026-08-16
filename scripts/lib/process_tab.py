@@ -94,10 +94,42 @@ def finalize_tab_file(otf_path: Path, meta: dict) -> Path:
     pr_number = meta.get('pr_number')
     issue_ref = int(pr_number) if str(pr_number).isdigit() else pr_number
 
+    # Three shapes reach here, and only the middle one is a correction:
+    #   - no work.yaml            → a submission that mints its own work
+    #   - work.yaml, no such part → a NEW tab for an existing song (the
+    #                               bounty case): append the part, and
+    #                               stamp it as a submission, not a fix
+    #   - work.yaml with the part → a correction to published content
+    work = works_writer.load_work(repo_root, work_id) if work_yaml.exists() else None
+    is_correction = bool(work and works_writer.find_parts(
+        work, {'type': 'tablature', 'instrument': instrument}))
+    submission_provenance = {
+        'source': 'user-submission',
+        'author': meta.get('attribution'),
+        'submission_pr': issue_ref,
+        'imported_at': str(date.today()),
+    }
+
     # The OTF is already committed on the branch, so no part content is
     # written here — works_writer only authors work.yaml around it.
     try:
-        if work_yaml.exists():
+        if work_yaml.exists() and not is_correction:
+            # New part on an existing work: no x_corrected_* stamps — this
+            # content was never published, so there is nothing it corrects.
+            works_writer.update_part(
+                repo_root, work_id,
+                match={'type': 'tablature', 'instrument': instrument},
+                file=otf_path.name,
+                add_if_missing=works_writer.PartSpec(
+                    file=otf_path.name,
+                    type='tablature',
+                    format='otf',
+                    instrument=instrument,
+                    provenance=dict(submission_provenance),
+                ),
+                on_suppressed='raise',
+            )
+        elif work_yaml.exists():
             # Correction: record provenance on the matching part
             works_writer.update_part(
                 repo_root, work_id,
@@ -111,14 +143,6 @@ def finalize_tab_file(otf_path: Path, meta: dict) -> Path:
                     'x_correction_pr': issue_ref,
                     'x_corrected': str(date.today()),
                 },
-                add_if_missing=works_writer.PartSpec(
-                    file=otf_path.name,
-                    type='tablature',
-                    format='otf',
-                    instrument=instrument,
-                    provenance={'source': 'user-submission',
-                                'author': meta.get('attribution')},
-                ),
                 on_suppressed='raise',
             )
         else:

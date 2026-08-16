@@ -184,9 +184,26 @@ opening the gate:** per-user rate limits and size caps on the write path —
 the Deferred rate-limiting item lands here, not later.
 *Deviation, 2026-08-15:* the tab half shipped separately — 2b delivered the
 lead-sheet pipeline and retired the song-issue flow, while `create-tab-pr` /
-`process-tab-pr.yml` stay live until **4c** builds the new-tab UI that
-replaces them, so the only tab submission surface is never left without a
-server.
+`process-tab-pr.yml` stayed live pending 4c.
+
+*Resolved at 4c, 2026-08-15 — **tabs keep the PR flow**.* The overlay this
+paragraph assumes doesn't exist for tabs: `pending_songs` is one row per
+SONG with a `content text` column holding ChordPro, no notion of parts or
+instruments, and the site loads a tab by fetching its `.otf.json` file, not
+from the overlay. Moving tabs onto it means a parts-aware overlay row, an
+overlay branch in the tablature loader, and OTF validation lifted into the
+shared writer — a Phase-2-sized rebuild, not the wiring 4c is. Half-doing
+it would leave the only tab surface split across two servers, so
+`create-tab-pr` + `process-tab-pr.yml` are the durable path for tabs until
+someone chooses that rebuild deliberately.
+
+**Accepted exception, tracked:** this leaves tabs review-gated while text
+content is additive-instant. A new tab is live on merge, not in seconds.
+4a still shows it — `create-tab-pr` writes `submission_log` — but as
+"Requested" until the PR merges, never as Live, because there is no
+`pending_songs` row behind it. That is a real inconsistency in the
+contract, accepted for now because tab volume is low and the merge gate is
+cheap at that volume — not because it's right.
 
 **2c. Fork-to-arrangement.** The editor's "edit" action on content you
 don't own becomes "create your arrangement" — same work, new version part,
@@ -300,10 +317,34 @@ require a human running a local script. Add them to the hourly sync
 automatically — they're curation decisions, the Live tier already owns those
 — genre suggestions export for review (free text stays human-judged).
 
-**4c. New-tab submission UI.** `create-tab-pr` supports `tab-submission` and
-`create-tab.js` exists, but no UI path constructs the call. After 2b, wire
-new-tab creation into the same unified pipeline (this supersedes the PR-flow
-half of #180; the deploy half lands in 1a).
+**4c. New-tab submission UI.** *Shipped 2026-08-15.* `create-tab-pr`
+supported `tab-submission` and `create-tab.js` existed, but nothing in the
+site constructed the call — only tab *corrections* were reachable. Two
+entry points now do, both gated on login at the click (2a):
+
+- **From a work page** — the bounty section's Contribute button on a
+  tablature bounty opens the tab editor pre-targeted at that work and
+  instrument, and a "+ Add a tab" button does the same unprompted. This
+  closes the bounty loop: "this work wants a banjo tab" → tab it → the
+  part lands on that work.
+- **From the add-song picker** — a Tablature card that asks which song the
+  tab is for (searching the corpus with the same normalize+similarity pair
+  the dedup check uses), then hands off. This is the surface that reaches
+  works with no bounty and no gap in their part list.
+
+Both route through `create.html` carrying `?work=&instrument=&title=`;
+`create-tab-entry.js` owns the target contract and the submission payload.
+Three gaps in the chain were real and are fixed: `create-tab-pr` ignored
+`workId` on a submission and always minted a fresh slug (so a tab for an
+existing song forked a duplicate work — it now targets the work, and 409s
+rather than overwrite a published tab of that instrument); the client sent
+the editor's PRESET name (`5-string-banjo`, and `tenor_banjo` — which the
+server's own `[a-z0-9-]` check rejects) where the corpus wants `banjo`;
+and `process_tab.py` stamped `x_corrected_*` on a part that had never been
+published. It does NOT move tabs onto the `pending_songs` pipeline — see
+the resolved deviation under 2b for why, and for the review-gate exception
+that leaves standing. Supersedes the new-tab half of #180; `create.html`
+is now reachable from the site, which was #180's last checklist item.
 
 ---
 

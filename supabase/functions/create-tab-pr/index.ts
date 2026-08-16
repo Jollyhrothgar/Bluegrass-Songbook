@@ -125,9 +125,15 @@ serve(async (req) => {
       return bad(400, 'otf is not a valid OTF JSON document')
     }
 
-    // Resolve the target path
+    // Resolve the target path.
+    //
+    // A tab-submission WITH a workId is a new part for a song that already
+    // exists — the bounty case ("this work wants a banjo tab"). It targets
+    // that work directly; process_tab.py appends the part to its
+    // work.yaml. Without a workId the submission mints its own work, so we
+    // hunt for a free slug.
     let targetWorkId = workId
-    if (type === 'tab-submission') {
+    if (type === 'tab-submission' && !workId) {
       const base = slugify(title)
       targetWorkId = base
       // find a free slug (works/<slug> must not exist on main)
@@ -138,6 +144,17 @@ serve(async (req) => {
       }
     }
     const filePath = `works/${targetWorkId}/${instrument}.otf.json`
+
+    // A submission must never quietly overwrite a tab that's already
+    // published for that instrument — replacing existing content is a
+    // CORRECTION, and that path requires a comment describing the change.
+    if (type === 'tab-submission' && workId) {
+      const clash = await gh(`/contents/${filePath}?ref=main`)
+      if (clash.ok) {
+        return bad(409, `This song already has a ${instrument} tab — `
+          + `open it and use Edit to submit a correction.`)
+      }
+    }
 
     // Branch off main
     const mainRef = await gh('/git/ref/heads/main')

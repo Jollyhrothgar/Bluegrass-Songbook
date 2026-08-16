@@ -5,6 +5,7 @@ import { allSongs } from './state.js';
 import { songHasContent, songHasAbc } from './song-content.js';
 import { generateSlug, escapeHtml, isPlaceholder } from './utils.js';
 import { track } from './analytics.js';
+import { launchTabCreator } from './otf-editor/create-tab-entry.js';
 
 const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
@@ -12,6 +13,10 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 let pickerModal = null;
 let pickerCards = null;
 let requestForm = null;
+let tabTargetPanel = null;
+let tabSearch = null;
+let tabInstrument = null;
+let tabResults = null;
 let headerTitle = null;
 let requestCard = null;
 let onUpload = null;
@@ -40,6 +45,12 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
     requestForm = pickerModal.querySelector('.picker-request-form');
     headerTitle = document.getElementById('picker-header-title');
     requestCard = pickerModal.querySelector('.picker-card-request');
+
+    // Tablature target step
+    tabTargetPanel = pickerModal.querySelector('.picker-tab-target');
+    tabSearch = document.getElementById('picker-tab-search');
+    tabInstrument = document.getElementById('picker-tab-instrument');
+    tabResults = document.getElementById('picker-tab-results');
 
     // Form elements
     reqTitle = document.getElementById('picker-req-title');
@@ -75,6 +86,10 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
                 showRequestForm();
                 return;
             }
+            if (type === 'tablature') {
+                startTabFlow();
+                return;
+            }
             closeAddSongPicker();
             const ctx = { ...currentContext };
             if (type === 'upload' && onUpload) onUpload(ctx);
@@ -82,8 +97,20 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
         });
     });
 
-    // Back button in request form
-    pickerModal.querySelector('.picker-back-btn')?.addEventListener('click', showCards);
+    // Back buttons (request form and tab-target step)
+    pickerModal.querySelectorAll('.picker-back-btn').forEach(
+        btn => btn.addEventListener('click', showCards));
+
+    // Tab target: search existing works, or start one without a song
+    tabSearch?.addEventListener('input', renderTabResults);
+    tabResults?.addEventListener('click', (e) => {
+        const row = e.target.closest('.picker-tab-result');
+        if (!row) return;
+        openTabCreator(row.dataset.workId, row.dataset.title);
+    });
+    document.getElementById('picker-tab-new')?.addEventListener('click', () => {
+        openTabCreator(null, tabSearch?.value?.trim() || '');
+    });
 
     // Title input: enable submit + dedup check
     reqTitle?.addEventListener('input', updateRequestSubmitState);
@@ -96,11 +123,78 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
 function showCards() {
     pickerCards?.classList.remove('hidden');
     requestForm?.classList.add('hidden');
+    tabTargetPanel?.classList.add('hidden');
     headerTitle.textContent = currentContext.mode === 'contribute' ? 'Help Complete This Song' : 'Add a Song';
+}
+
+/**
+ * Tablature card. A tab is always a tab OF something, so the flow needs a
+ * work before the editor is any use: in 'contribute' mode we already know
+ * it (the picker was opened from that work's page), otherwise ask.
+ */
+function startTabFlow() {
+    if (currentContext.targetSlug) {
+        openTabCreator(currentContext.targetSlug, currentContext.title || '');
+        return;
+    }
+    pickerCards?.classList.add('hidden');
+    requestForm?.classList.add('hidden');
+    tabTargetPanel?.classList.remove('hidden');
+    headerTitle.textContent = 'Tab a Song';
+    if (tabSearch) {
+        tabSearch.value = currentContext.title || '';
+        tabSearch.focus();
+    }
+    renderTabResults();
+}
+
+/**
+ * Existing works whose title looks like the query. Deliberately the same
+ * normalize+similarity pair the request form's dedup check uses — one
+ * notion of "same song" in this file, not two.
+ */
+export function searchWorksForTab(query, songs = allSongs, limit = 8) {
+    const q = normalizeForMatch(query);
+    if (!q) return [];
+    const scored = [];
+    for (const song of songs) {
+        const title = normalizeForMatch(song.title);
+        if (!title) continue;
+        const score = title.startsWith(q) ? 1 + similarity(q, title) : similarity(q, title);
+        if (title.includes(q) || score >= 0.7) scored.push({ song, score });
+    }
+    scored.sort((a, b) => b.score - a.score || a.song.title.localeCompare(b.song.title));
+    return scored.slice(0, limit).map(s => s.song);
+}
+
+function renderTabResults() {
+    if (!tabResults) return;
+    const matches = searchWorksForTab(tabSearch?.value || '');
+    if (!matches.length) {
+        tabResults.innerHTML = tabSearch?.value?.trim()
+            ? '<div class="picker-tab-empty">No song by that name — you can still start a tab without one.</div>'
+            : '';
+        return;
+    }
+    tabResults.innerHTML = matches.map(song => `
+        <button class="picker-tab-result" data-work-id="${escapeHtml(song.id)}"
+                data-title="${escapeHtml(song.title || song.id)}">
+            <span class="picker-tab-result-title">${escapeHtml(song.title || song.id)}</span>
+            ${song.artist ? `<span class="picker-tab-result-artist">${escapeHtml(song.artist)}</span>` : ''}
+        </button>
+    `).join('');
+}
+
+/** Hand off to the tab editor. Login is gated inside launchTabCreator. */
+function openTabCreator(workId, title) {
+    const instrument = tabInstrument?.value || currentContext.instrument || '';
+    const launched = launchTabCreator({ workId: workId || null, instrument, title });
+    if (launched) closeAddSongPicker();
 }
 
 function showRequestForm() {
     pickerCards?.classList.add('hidden');
+    tabTargetPanel?.classList.add('hidden');
     requestForm?.classList.remove('hidden');
     headerTitle.textContent = 'Request a Song';
 
@@ -370,4 +464,6 @@ export function closeAddSongPicker() {
     // Reset to cards view for next open
     pickerCards?.classList.remove('hidden');
     requestForm?.classList.add('hidden');
+    tabTargetPanel?.classList.add('hidden');
+    if (tabResults) tabResults.innerHTML = '';
 }

@@ -704,11 +704,39 @@ This is the [G]chorus [D]part
                             <span class="picker-card-title">Lyrics &amp; Chords</span>
                             <span class="picker-card-desc">Type or paste a chord sheet</span>
                         </button>
+                        <button class="picker-card picker-card-tab" data-type="tablature">
+                            <span class="picker-card-icon">&#127928;</span>
+                            <span class="picker-card-title">Tablature</span>
+                            <span class="picker-card-desc">Tab out a break for a song</span>
+                        </button>
                         <button class="picker-card picker-card-request" data-type="request">
                             <span class="picker-card-icon">&#128269;</span>
                             <span class="picker-card-title">Request a Song</span>
                             <span class="picker-card-desc">Can't find it? Add it to the wanted list.</span>
                         </button>
+                    </div>
+                    <!-- Tablature: a tab is always FOR a song, so this asks
+                         which one before handing off to the tab editor -->
+                    <div class="picker-tab-target hidden">
+                        <button class="picker-back-btn picker-tab-back">&larr; Back</button>
+                        <div class="picker-form-fields">
+                            <input id="picker-tab-search" type="text" autocomplete="off"
+                                   placeholder="Which song is this tab for?">
+                            <select id="picker-tab-instrument">
+                                <option value="">Instrument (optional)</option>
+                                <option value="banjo">Banjo</option>
+                                <option value="guitar">Guitar</option>
+                                <option value="mandolin">Mandolin</option>
+                                <option value="fiddle">Fiddle</option>
+                                <option value="dobro">Dobro</option>
+                                <option value="bass">Bass</option>
+                                <option value="tenor-banjo">Tenor banjo</option>
+                            </select>
+                        </div>
+                        <div id="picker-tab-results" class="picker-tab-results"></div>
+                        <div class="picker-form-actions">
+                            <button id="picker-tab-new" class="action-btn">Start a tab without a song</button>
+                        </div>
                     </div>
                     <div class="picker-request-form hidden">
                         <button class="picker-back-btn">&larr; Back</button>
