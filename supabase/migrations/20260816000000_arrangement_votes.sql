@@ -32,6 +32,12 @@
 -- flips are rare, editorial, and happen precisely BECAUSE a fork won the count,
 -- so the reinterpretation is at worst a reset. Fixing it would mean rewriting
 -- historical rows at flip time; not worth the machinery today.
+--
+-- Verified against a throwaway PostgreSQL 15 with pre-migration rows already in
+-- the table: legacy rows survive with arr_key '', a stacked NULL-slug vote is
+-- still refused, a fork vote by the same user on the same song is accepted,
+-- `on conflict (user_id, song_id, arr_key)` arbitrates, fork votes do not
+-- appear in song_vote_counts, and re-running the whole file is a no-op.
 
 -- ---------------------------------------------------------------------------
 -- Column
