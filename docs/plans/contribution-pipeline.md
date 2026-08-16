@@ -23,9 +23,27 @@ Three tiers, one rule.
 `cleanup-pending` breaks this today, which is why songs can vanish mid-jam.
 That's Step 1.
 
-**Supabase is for latency, git is for the corpus.** Don't migrate 19,227 works
-into a database you'd then need an admin UI for — `works/*.yaml` is where you
-actually curate, by grep and diff.
+### Decided: don't move the corpus into Supabase (2026-08-15)
+
+Considered seriously, because the dual-write is genuinely expensive — Steps 1,
+5 and half of 6 exist *only* because two stores must agree, and git-as-a-write-target
+already cost you issues #208/#209 (dropped by concurrency-group eviction) and a
+hand-rolled rebase-retry loop. 82 MB of text across 19,228 works would fit in
+Postgres without complaint.
+
+**The reason not to isn't that git is sacred.** It's that the problem is not
+which store is primary — it's that `pending_songs` holds *content*. Supabase
+owning decisions and git owning content is a clean split; `pending_songs`
+straddles it, and that straddle generates the reconciler, the cleanup race, and
+the drift. Step 6 fixes exactly that seam.
+
+The migration cost is **12 scripts**, not the data — everything in `scripts/lib/`
+walks directories. And you'd lose per-work history, which git gives free.
+
+**Revisit if:** after Step 6, reconciliation is still painful. At that point
+there's one write path to redirect instead of three, so the migration is cheaper
+than it is today. Nothing here is wasted either way — one writer is the
+prerequisite for both outcomes.
 
 ---
 
