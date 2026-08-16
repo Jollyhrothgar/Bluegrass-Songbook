@@ -36,16 +36,22 @@ the whole point all along):
 | Edit own content in place | author or trusted | instant |
 | Edit someone else's content | anyone | forks to a new arrangement, instant |
 | Delete, suppress, merge-redirect | trusted + review | queued |
-| Binary doc upload | trusted instant; others | queued (can't diff a PDF) |
 | Flag a problem, request a song | anyone, no login | issue/report only |
+
+**Binary doc uploads are killed, not gated (2026-08-15).** The pipeline
+exists to make artifacts that are durable *and trackable* — diffable,
+forkable, dedupable. A PDF is none of those: it can't take an arrangement
+fork, can't enter the dedup scorer, can't be reviewed by diff. Rather than
+build a review queue for the one content type the contract can't cover,
+the feature goes away (see 2d).
 
 **The GitHub issue flow for content is dead.** `create-song-issue` →
 auto-label → human `approved` label → workflow was a review queue built out
 of issue machinery. With additive-instant there is nothing for it to review.
 `create-song-issue`, `process-song-submission.yml` and
 `process-song-correction.yml` retire; GitHub issues go back to being for bug
-reports and feedback. The small reviewed residue (deletions, doc uploads)
-gets an in-app queue, not labels.
+reports and feedback. The small reviewed residue (deletions, suppressions,
+merge-redirects) gets an in-app queue, not labels.
 
 ---
 
@@ -186,14 +192,18 @@ the fallback for others' content:** you can fork your *own* versions too
 place" are both first-class actions on content you own, and ownership only
 decides whether in-place is offered at all.
 
-**2d. The reviewed residue gets an in-app queue.** Deletions, suppressions,
-merge-redirects, and non-trusted binary doc uploads land in a small
+**2d. The reviewed residue gets an in-app queue; the docs feature dies.**
+Deletions, suppressions, and merge-redirects land in a small
 trusted-user-facing queue in the app (the Dungeon is the natural home).
-This also **fixes the doc-upload dead end**: today `doc_staging` rows and the
-`doc-staging` bucket are read by *nothing* — no workflow, no issue (the
-follow-up call sends a payload `create-song-request` doesn't accept), while
-the UI says "Submitted for review!" Wire the queue to it, or hide the
-regular-user upload button until the queue ships. Do not leave the lie up.
+Doc upload is **removed**, which also resolves its dead end (today
+`doc_staging` rows and the `doc-staging` bucket are read by *nothing* — no
+workflow, no issue, while the UI says "Submitted for review!"). Tear-down:
+the upload UI in `doc-upload.js` and `work-view.js` (both trusted and
+regular paths), the attachment branch of `auto-commit-song`, and the
+`doc_staging` table + `doc-staging` bucket (check for stranded rows/files
+worth rescuing before dropping). Existing document parts already in
+`works/` and the four published PDFs in `docs/data/docs/` stay served —
+this kills the intake, not the shelf.
 
 ### Phase 3 — the offramp (dedup)
 
@@ -355,8 +365,9 @@ Composer coverage: **12 of 19,228 works** (0.1%).
   `user-submission` (doc uploads) is missing from that set; fixed in 1c.
 - Both `will-the-circle-be-unbroken` works are indexed, not archived.
 - Interview decisions (2026-08-15): additive = instant for any login;
-  fork-to-arrangement for others' content; reviewed residue = deletions,
-  suppressions, non-trusted doc uploads; GitHub issue flow killed for
+  fork-to-arrangement for others' content and one's own; reviewed residue =
+  deletions, suppressions, merge-redirects; GitHub issue flow killed for
   content; dedup ships both surfaces in one milestone; instant scope = all
-  text content, binary docs reviewed; one shared writer library across all
-  five paths; "my submissions" is an explicit deliverable.
+  text content; **binary doc uploads killed entirely** (existing doc parts
+  stay served); one shared writer library across all five paths; "my
+  submissions" is an explicit deliverable.
