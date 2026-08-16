@@ -592,6 +592,38 @@ and lets signed-in users vote. When picking a group's representative
 (search results, non-exact navigation), a `canonical` row wins outright;
 otherwise: content > most chords > highest `canonical_rank`.
 
+**Two takes on one work** (`arrangements`, issue #232). Editing a chart you
+don't own doesn't overwrite it — the server lands your text as an extra
+lead-sheet part on the SAME work, and the build publishes it as
+`data/songs/{id}--{slug}.pro` with an entry in the row's `arrangements`:
+
+```json
+"arrangements": [
+  {"slug": "default", "label": "Original", "default": true,
+   "file": "data/songs/how-long-blues.pro", "key": "G", "chord_count": 4},
+  {"slug": "simplified", "label": "Simplified", "arrangement_by": "Jane",
+   "file": "data/songs/how-long-blues--simplified.pro", "chord_count": 3}
+]
+```
+
+The field is absent unless a work really holds two charts, so nothing
+changes for the rest of the corpus. In the pill, the current work expands
+into one row per take; picking one calls `selectLeadSheetArrangement` and
+swaps the rendered chart **in place** — same work, same URL, page state
+only, exactly like tablature arrangements. Votes are cast per work id and a
+part has no id, so only the primary row carries the vote button.
+
+Content per take goes through `getArrangementContent(song, arrangement)`:
+an entry's own `content` string wins (a pending submission), else its
+`file` is fetched (url-keyed cache), else the work's lead sheet.
+
+**Before the build lands**: `corpus.pendingForkArrangements` synthesizes the
+same two-entry list on the pending overlay row — the published original plus
+"Your arrangement" (`pending: true`, content inline) — so a fork is listed in
+the pill seconds after submission instead of appearing to replace the chart
+it forked from. Ownership follows `process_pending.owns_content`: the work is
+yours only if a part there records you as its submitter.
+
 ## Dependencies
 
 - **Supabase JS** - CDN loaded for auth and database

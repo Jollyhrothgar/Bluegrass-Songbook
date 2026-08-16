@@ -34,6 +34,7 @@ import {
 } from './song-view.js';
 import {
     getSongContent, peekSongContent, songHasContent, songHasAbc,
+    getArrangementContent, peekArrangementContent,
 } from './song-content.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify } from './utils.js';
@@ -102,6 +103,53 @@ function destroyTrackRenderers() {
 
 let currentGroupVersions = [];    // All versions in the current group (Arrangement pill)
 let pendingInitialRender = false; // set by openWork; consumed by renderWorkView (key/tempo init)
+
+// Lead sheets that live on THIS work — the primary chart plus any fork
+// `works_writer.fork_to_arrangement` landed on it (index row `arrangements`).
+// A work with one lead sheet has an empty list and behaves exactly as before.
+let currentArrangements = [];
+let activeArrangementSlug = null;
+
+/**
+ * Normalize an index row's `arrangements` into the list the pill renders.
+ *
+ * Returns [] unless there is a real choice to make (two or more charts), so
+ * every caller can treat "no arrangements" and "one arrangement" alike.
+ * Exported for tests.
+ */
+export function leadSheetArrangements(song) {
+    const raw = song?.arrangements;
+    if (!Array.isArray(raw)) return [];
+    const usable = raw
+        .filter(a => a && (a.slug || a.file || typeof a.content === 'string'))
+        .map((a, i) => ({ ...a, slug: a.slug || `p${i}` }));
+    return usable.length < 2 ? [] : usable;
+}
+
+/**
+ * Which arrangement a freshly opened page is showing.
+ *
+ * Normally the primary. But a row whose own `content` matches one of the
+ * arrangements is an overlay of that arrangement — a pending fork, live in
+ * the browser seconds after it was submitted and before the build has
+ * published it — and the page is already rendering that text, so the pill
+ * must agree. Exported for tests.
+ */
+export function initialArrangementSlug(song, arrangements) {
+    if (!arrangements.length) return null;
+    if (typeof song?.content === 'string' && song.content) {
+        const match = arrangements.find(a => a.content === song.content);
+        if (match) return match.slug;
+    }
+    return (arrangements.find(a => a.default) || arrangements[0]).slug;
+}
+
+/** The arrangement currently on screen (null when the work has only one). */
+function activeLeadSheetArrangement() {
+    if (!currentArrangements.length) return null;
+    return currentArrangements.find(a => a.slug === activeArrangementSlug)
+        || currentArrangements[0];
+}
 
 /**
  * Pick the best representative version from a group for display.
@@ -435,10 +483,14 @@ export async function openWork(workId, options = {}) {
     setBottomBand(null);
 
     currentWork = song;
+    currentArrangements = leadSheetArrangements(song);
+    activeArrangementSlug = initialArrangementSlug(song, currentArrangements);
     // Content comes from data/songs/{id}.pro on demand. Whatever we already
     // have (legacy inline row, cached fetch) renders synchronously; otherwise
     // the lead-sheet part fetches itself with a loading state.
-    const knownContent = peekSongContent(song);
+    const knownContent = currentArrangements.length
+        ? peekArrangementContent(song, activeLeadSheetArrangement())
+        : peekSongContent(song);
     availableParts = buildPartsFromIndex(song, knownContent);
     setCurrentSong(song);
     setCurrentChordpro(knownContent || null);
@@ -604,13 +656,16 @@ function renderActivePart(content, isInitial = false) {
 function fetchAndRenderLeadSheet(container, isInitial = false) {
     const work = currentWork;
     const part = activePart;
+    const arrangement = activeLeadSheetArrangement();
 
     container.innerHTML = '<div class="part-loading">Loading song…</div>';
     setBottomBand(null);
 
-    getSongContent(work).then(text => {
-        // Bail if the reader has navigated on while we were fetching
-        if (currentWork !== work || activePart !== part) return;
+    getArrangementContent(work, arrangement).then(text => {
+        // Bail if the reader has navigated on (or switched arrangements)
+        // while we were fetching
+        if (currentWork !== work || activePart !== part ||
+            activeLeadSheetArrangement() !== arrangement) return;
         part.content = text || '';
         setCurrentChordpro(text || null);
         renderLeadSheetContent(container, work, text || '', isInitial);
@@ -626,6 +681,37 @@ function fetchAndRenderLeadSheet(container, isInitial = false) {
             fetchAndRenderLeadSheet(container, isInitial);
         });
     });
+}
+
+/**
+ * Swap which take of this song's lead sheet is on screen.
+ *
+ * Same work, different chart — so nothing navigates: the URL, the group and
+ * the part tabs all stay put (the same rule tablature arrangements follow —
+ * which take you're reading is page state, not a URL segment). The page
+ * re-renders as if freshly opened so the Key pill re-detects from the new
+ * chart instead of keeping the previous one's.
+ *
+ * Exported for tests.
+ */
+export function selectLeadSheetArrangement(slug) {
+    const arrangement = currentArrangements.find(a => a.slug === slug);
+    if (!arrangement || slug === activeArrangementSlug) return false;
+
+    activeArrangementSlug = slug;
+    const leadPart = availableParts.find(p => p.type === 'lead-sheet');
+    if (leadPart) {
+        activePart = leadPart;
+        // null when it still has to be fetched — renderActivePart then shows
+        // the loading state and pulls the arrangement's own file.
+        leadPart.content = peekArrangementContent(currentWork, arrangement);
+    }
+    setCurrentChordpro(
+        typeof leadPart?.content === 'string' ? leadPart.content : null);
+
+    pendingInitialRender = true;
+    renderWorkView();
+    return true;
 }
 
 /**
@@ -699,7 +785,8 @@ function renderPillRow() {
     }
     row.appendChild(buildInfoPill(currentWork, currentGroupVersions));
 
-    if (currentGroupVersions.length > 1 || currentWork.variant_of || currentWork.variant_label) {
+    if (currentGroupVersions.length > 1 || currentArrangements.length > 1 ||
+        currentWork.variant_of || currentWork.variant_label) {
         row.appendChild(buildArrangementPill());
     }
     return row;
@@ -903,7 +990,11 @@ function buildPlaceholderCta(hasContent) {
  */
 function buildArrangementPill() {
     const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
-    const label = versions.length > 1 ? `${versions.length} versions` : 'Version';
+    // The current work contributes one entry per lead sheet it holds, not one
+    // entry full stop — a fork lives on the work it forked from.
+    const count = versions.length +
+        (currentArrangements.length ? currentArrangements.length - 1 : 0);
+    const label = count > 1 ? `${count} versions` : 'Version';
     return pill(label, (container) => {
         container.innerHTML = '<div class="arrangement-loading">Loading…</div>';
         renderArrangementList(container, versions);
@@ -946,44 +1037,29 @@ async function renderArrangementList(container, versions, voteData = null) {
         return (voteCounts[b.id] || 0) - (voteCounts[a.id] || 0);
     });
 
-    container.innerHTML = sorted.map(v => {
-        const isCurrent = v.id === currentWork?.id;
-        const tabPart = v.tablature_parts?.[0];
-        let label = v.variant_label || v.version_label;
-        if (!label) {
-            if (v.tablature_parts?.length && !songHasContent(v) && tabPart?.author) {
-                label = `Tab by ${tabPart.author}`;
-            } else if (songHasAbc(v) && !songHasContent(v)) {
-                label = 'Fiddle notation';
-            } else if (v.key) {
-                label = `Key of ${v.key}`;
-            } else {
-                label = 'Original';
+    // The current work expands into one row per lead sheet it holds (a fork
+    // is a version of this song that lives on this work, not a work of its
+    // own), everything else stays one row per work.
+    const rows = [];
+    for (const v of sorted) {
+        if (v.id === currentWork?.id && currentArrangements.length) {
+            for (const arr of currentArrangements) {
+                rows.push(arrangementItemHtml(arr, voteCounts, userVotes));
             }
+        } else {
+            rows.push(versionItemHtml(v, voteCounts, userVotes));
         }
-        const meta = [];
-        if (v.artist && v.artist !== currentWork?.artist) meta.push(v.artist);
-        if (v.key) meta.push(`Key: ${v.key}`);
-        if (v.chord_count) meta.push(`${v.chord_count} chords`);
-        const votes = voteCounts[v.id] || 0;
-        const hasVoted = userVotes[v.id] ? ' voted' : '';
-        return `
-            <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-song-id="${escapeHtml(v.id)}" role="button" tabindex="0">
-                <span class="arrangement-info">
-                    <span class="arrangement-label">${escapeHtml(label)}${v.canonical === true ? ' <span class="canonical-badge">Canonical</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}</span>
-                    <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
-                </span>
-                <span class="arrangement-votes">
-                    <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(v.id)}" title="Vote for this arrangement">
-                        <span class="vote-arrow">▲</span>
-                    </button>
-                    <span class="vote-count">${votes}</span>
-                </span>
-            </div>
-        `;
-    }).join('');
+    }
+    container.innerHTML = rows.join('');
 
-    container.querySelectorAll('.arrangement-item').forEach(item => {
+    container.querySelectorAll('.arrangement-item[data-arr-slug]').forEach(item => {
+        item.addEventListener('click', (e) => {
+            if (e.target.closest('.arrangement-vote-btn')) return;
+            selectLeadSheetArrangement(item.dataset.arrSlug);
+        });
+    });
+
+    container.querySelectorAll('.arrangement-item[data-song-id]').forEach(item => {
         item.addEventListener('click', (e) => {
             if (e.target.closest('.arrangement-vote-btn')) return;
             const songId = item.dataset.songId;
@@ -1018,6 +1094,78 @@ async function renderArrangementList(container, versions, voteData = null) {
             }
         });
     });
+}
+
+/**
+ * One row for a lead sheet of the CURRENT work (primary or fork).
+ *
+ * Votes are cast per work id, and a part has no id of its own, so only the
+ * primary row carries the vote button — voting still means "this work's take
+ * of the song", exactly as before.
+ */
+function arrangementItemHtml(arr, voteCounts, userVotes) {
+    const isCurrent = arr.slug === activeArrangementSlug;
+    const label = arr.label || (arr.default ? 'Original' : 'Arrangement');
+    const meta = [];
+    if (arr.arrangement_by) meta.push(`Arr. ${arr.arrangement_by}`);
+    if (arr.key) meta.push(`Key: ${arr.key}`);
+    if (arr.chord_count) meta.push(`${arr.chord_count} chords`);
+    if (arr.pending) meta.push('not published yet');
+    const id = currentWork?.id;
+    const votes = voteCounts[id] || 0;
+    const hasVoted = userVotes[id] ? ' voted' : '';
+    return `
+        <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-arr-slug="${escapeHtml(arr.slug)}" role="button" tabindex="0">
+            <span class="arrangement-info">
+                <span class="arrangement-label">${escapeHtml(label)}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}</span>
+                <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
+            </span>
+            <span class="arrangement-votes">${arr.default ? `
+                <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(id || '')}" title="Vote for this arrangement">
+                    <span class="vote-arrow">▲</span>
+                </button>
+                <span class="vote-count">${votes}</span>` : ''}
+            </span>
+        </div>
+    `;
+}
+
+/** One row for another WORK in this version group. */
+function versionItemHtml(v, voteCounts, userVotes) {
+    const isCurrent = v.id === currentWork?.id;
+    const tabPart = v.tablature_parts?.[0];
+    let label = v.variant_label || v.version_label;
+    if (!label) {
+        if (v.tablature_parts?.length && !songHasContent(v) && tabPart?.author) {
+            label = `Tab by ${tabPart.author}`;
+        } else if (songHasAbc(v) && !songHasContent(v)) {
+            label = 'Fiddle notation';
+        } else if (v.key) {
+            label = `Key of ${v.key}`;
+        } else {
+            label = 'Original';
+        }
+    }
+    const meta = [];
+    if (v.artist && v.artist !== currentWork?.artist) meta.push(v.artist);
+    if (v.key) meta.push(`Key: ${v.key}`);
+    if (v.chord_count) meta.push(`${v.chord_count} chords`);
+    const votes = voteCounts[v.id] || 0;
+    const hasVoted = userVotes[v.id] ? ' voted' : '';
+    return `
+        <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-song-id="${escapeHtml(v.id)}" role="button" tabindex="0">
+            <span class="arrangement-info">
+                <span class="arrangement-label">${escapeHtml(label)}${v.canonical === true ? ' <span class="canonical-badge">Canonical</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}</span>
+                <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
+            </span>
+            <span class="arrangement-votes">
+                <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(v.id)}" title="Vote for this arrangement">
+                    <span class="vote-arrow">▲</span>
+                </button>
+                <span class="vote-count">${votes}</span>
+            </span>
+        </div>
+    `;
 }
 
 // ============================================
