@@ -680,6 +680,17 @@ on a human:
   overflow); admins are the reviewers, so queueing them would be ceremony
 - **trusted, not admin** → the same slot becomes `🗑️ Request deletion`,
   which writes a `review_requests` row
+- **trusted** (admin or not) also gets `🙈 Request suppression` and
+  `🔀 Request merge into another song…` in the overflow — neither kind has
+  an instant admin path (approval only ever prints a local command, below),
+  so both are offered as requests unconditionally on `isTrusted()`. Each
+  opens a small modal (`showSuppressRequestDialog` / `showMergeRequestDialog`
+  in review-queue.js, same DOM-built-Promise shape as the editor's
+  `showDedupModal`): suppression requires a reason (it's the only context a
+  reviewer gets); merge-redirect searches the corpus via `searchWorksForTab`
+  (add-song-picker.js — reused, not rebuilt) and previews "Redirect THIS →
+  TARGET" before filing `kind: 'merge-redirect'` with
+  `payload: {redirect_to: targetId}`
 - approving a `delete` in the panel executes it (the `delete_song` RPC) and
   mirrors it into the client corpus; approving a `suppress` or
   `merge-redirect` records the decision and **prints the local command**,

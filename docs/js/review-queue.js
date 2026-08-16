@@ -30,6 +30,7 @@
 //                       it next pass) or "Reject" (delete the pending row).
 
 import { escapeHtml } from './utils.js';
+import { searchWorksForTab } from './add-song-picker.js';
 
 const PANEL_ID = 'review-queue-panel';
 
@@ -176,6 +177,41 @@ export function validateRequest({ kind, targetId, payload } = {}) {
     return null;
 }
 
+/**
+ * Suppression's only context for a reviewer is the reason box — unlike
+ * delete (which has a confirm) or merge (which has a target), there is
+ * nothing else on the row that explains the ask. Required, not optional.
+ */
+export function validateSuppressReason(reason) {
+    if (!reason || !reason.trim()) {
+        return 'A reason is required — it is the only context a reviewer gets before hiding the song from search.';
+    }
+    return null;
+}
+
+/** True when `id` names a song actually present in the corpus. */
+export function targetExists(targetId, songs = []) {
+    return (songs || []).some(s => s?.id === targetId);
+}
+
+/**
+ * Validate a merge-redirect target as the request dialog builds it, before
+ * the row is even filed. Stricter than `validateRequest`: a target that
+ * isn't really in the corpus (stale id, hand-edited) is refused here
+ * instead of failing later at insert or, worse, at the local merge script.
+ */
+export function validateMergeRedirectTarget({ sourceId, targetId, songs = [] } = {}) {
+    if (!targetId) return 'Search for the song this should merge into.';
+    if (targetId === sourceId) return 'A work cannot redirect to itself.';
+    if (!targetExists(targetId, songs)) return 'That song was not found — pick one from the search results.';
+    return null;
+}
+
+/** The merge-redirect payload shape `review_requests` expects. */
+export function buildMergeRedirectPayload(targetId) {
+    return { redirect_to: targetId };
+}
+
 // ============================================
 // DATA
 // ============================================
@@ -280,6 +316,215 @@ export async function decideReviewRequest(id, status, note = null) {
         .select()
         .maybeSingle();
     return { data, error };
+}
+
+// ============================================
+// REQUEST DIALOGS
+// ============================================
+//
+// Two small modals, alongside "Request deletion" in the song overflow, that
+// collect what `submitReviewRequest` needs and nothing more. Both follow
+// `editor.js`'s `showDedupModal` shape (a DOM-built modal wrapped in a
+// Promise, resolving to the answer or null on cancel/Escape) rather than a
+// native `prompt()`, because the copy has to do real work — telling suppress
+// apart from delete, and merge apart from arrangement.
+
+/**
+ * Trusted-user suppression ask. Resolves the trimmed reason, or null if the
+ * user backed out.
+ */
+export function showSuppressRequestDialog(song) {
+    return new Promise(resolve => {
+        document.getElementById('suppress-request-modal')?.remove();
+
+        const modal = document.createElement('div');
+        modal.id = 'suppress-request-modal';
+        modal.className = 'modal';
+        modal.innerHTML = `
+            <div class="modal-content review-request-modal-content">
+                <div class="modal-header">
+                    <h2>Request suppression</h2>
+                    <button type="button" class="modal-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="review-request-explainer">
+                        Suppressing <strong>${escapeHtml(song?.title || song?.id || 'this song')}</strong>
+                        drops it from search but its URL keeps working — direct links still resolve.
+                        Want it gone entirely instead? Use <strong>Request deletion</strong>.
+                    </p>
+                    <label for="suppress-request-reason">Why should it be suppressed? <span class="required">*</span></label>
+                    <textarea id="suppress-request-reason" rows="3" placeholder="duplicate, low quality, wrong song…"></textarea>
+                    <div class="modal-status error hidden" id="suppress-request-error"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="action-btn" id="suppress-request-cancel">Cancel</button>
+                    <button type="button" class="action-btn primary" id="suppress-request-submit">Request suppression</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        const textarea = modal.querySelector('#suppress-request-reason');
+        const errorEl = modal.querySelector('#suppress-request-error');
+
+        let done = false;
+        const finish = (value) => {
+            if (done) return;
+            done = true;
+            document.removeEventListener('keydown', onKey);
+            modal.remove();
+            resolve(value);
+        };
+        const onKey = (e) => { if (e.key === 'Escape') finish(null); };
+
+        modal.querySelector('#suppress-request-submit').addEventListener('click', () => {
+            const reason = textarea.value.trim();
+            const invalid = validateSuppressReason(reason);
+            if (invalid) {
+                errorEl.textContent = invalid;
+                errorEl.classList.remove('hidden');
+                return;
+            }
+            finish(reason);
+        });
+        modal.querySelector('#suppress-request-cancel').addEventListener('click', () => finish(null));
+        modal.querySelector('.modal-close').addEventListener('click', () => finish(null));
+        modal.addEventListener('click', (e) => { if (e.target === modal) finish(null); });
+        document.addEventListener('keydown', onKey);
+
+        textarea.focus();
+    });
+}
+
+/**
+ * Trusted-user merge-redirect ask. Search reuses `searchWorksForTab` — the
+ * same normalize+similarity pair the add-song picker's tab flow already
+ * uses to find a work by title, so this dialog doesn't grow a second one.
+ *
+ * Resolves `{ targetId, targetTitle, reason }` (reason may be null — it's
+ * optional here, unlike suppression), or null if the user backed out.
+ */
+export function showMergeRequestDialog(song, { songs = [], search = searchWorksForTab } = {}) {
+    return new Promise(resolve => {
+        document.getElementById('merge-request-modal')?.remove();
+
+        const modal = document.createElement('div');
+        modal.id = 'merge-request-modal';
+        modal.className = 'modal';
+        modal.innerHTML = `
+            <div class="modal-content review-request-modal-content">
+                <div class="modal-header">
+                    <h2>Request merge</h2>
+                    <button type="button" class="modal-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="review-request-explainer">
+                        Folds <strong>${escapeHtml(song?.title || song?.id || 'this song')}</strong> into another
+                        song and redirects its URL there. Use this for a true duplicate — a different
+                        arrangement of the same song stays separate as an arrangement instead.
+                    </p>
+                    <label for="merge-target-search">Search for the song to merge into</label>
+                    <input type="text" id="merge-target-search" placeholder="Song title…" autocomplete="off">
+                    <ul class="merge-target-results" id="merge-target-results"></ul>
+                    <div class="merge-target-preview hidden" id="merge-target-preview"></div>
+                    <label for="merge-request-reason">Why should it merge? (optional)</label>
+                    <textarea id="merge-request-reason" rows="2" placeholder="duplicate submission, same song different chart…"></textarea>
+                    <div class="modal-status error hidden" id="merge-request-error"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="action-btn" id="merge-request-cancel">Cancel</button>
+                    <button type="button" class="action-btn primary" id="merge-request-submit" disabled>Request merge</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        const searchInput = modal.querySelector('#merge-target-search');
+        const resultsEl = modal.querySelector('#merge-target-results');
+        const previewEl = modal.querySelector('#merge-target-preview');
+        const reasonEl = modal.querySelector('#merge-request-reason');
+        const errorEl = modal.querySelector('#merge-request-error');
+        const submitBtn = modal.querySelector('#merge-request-submit');
+
+        const sourceId = song?.id;
+        // Excluded up front so a self-match never even appears as a result —
+        // validateMergeRedirectTarget is the backstop, not the first line.
+        const candidates = (songs || []).filter(s => s?.id && s.id !== sourceId);
+        let selected = null;
+
+        const clearError = () => { errorEl.classList.add('hidden'); errorEl.textContent = ''; };
+
+        const renderResults = () => {
+            const query = searchInput.value.trim();
+            if (!query) { resultsEl.innerHTML = ''; return; }
+            const matches = search(query, candidates, 8);
+            resultsEl.innerHTML = matches.length
+                ? matches.map(s => `
+                    <li>
+                        <button type="button" class="merge-target-result"
+                                data-target-id="${escapeHtml(s.id)}"
+                                data-target-title="${escapeHtml(s.title || s.id)}">
+                            <span class="merge-target-result-title">${escapeHtml(s.title || s.id)}</span>
+                            ${s.artist ? `<span class="merge-target-result-artist">${escapeHtml(s.artist)}</span>` : ''}
+                        </button>
+                    </li>
+                `).join('')
+                : '<li class="merge-target-empty">No matching song.</li>';
+        };
+
+        const selectTarget = (targetId, targetTitle) => {
+            selected = { id: targetId, title: targetTitle };
+            clearError();
+            searchInput.value = targetTitle;
+            resultsEl.innerHTML = '';
+            previewEl.classList.remove('hidden');
+            previewEl.innerHTML = `Redirect <strong>${escapeHtml(song?.title || sourceId)}</strong> &rarr; `
+                + `<strong>${escapeHtml(targetTitle)}</strong> (this song's URL will forward)`;
+            submitBtn.disabled = false;
+        };
+
+        searchInput.addEventListener('input', () => {
+            if (selected) {
+                selected = null;
+                previewEl.classList.add('hidden');
+                previewEl.innerHTML = '';
+                submitBtn.disabled = true;
+            }
+            renderResults();
+        });
+
+        resultsEl.addEventListener('click', (e) => {
+            const btn = e.target.closest('.merge-target-result');
+            if (!btn) return;
+            selectTarget(btn.dataset.targetId, btn.dataset.targetTitle);
+        });
+
+        let done = false;
+        const finish = (value) => {
+            if (done) return;
+            done = true;
+            document.removeEventListener('keydown', onKey);
+            modal.remove();
+            resolve(value);
+        };
+        const onKey = (e) => { if (e.key === 'Escape') finish(null); };
+
+        submitBtn.addEventListener('click', () => {
+            const invalid = validateMergeRedirectTarget({ sourceId, targetId: selected?.id, songs });
+            if (invalid) {
+                errorEl.textContent = invalid;
+                errorEl.classList.remove('hidden');
+                return;
+            }
+            finish({ targetId: selected.id, targetTitle: selected.title, reason: reasonEl.value.trim() || null });
+        });
+        modal.querySelector('#merge-request-cancel').addEventListener('click', () => finish(null));
+        modal.querySelector('.modal-close').addEventListener('click', () => finish(null));
+        modal.addEventListener('click', (e) => { if (e.target === modal) finish(null); });
+        document.addEventListener('keydown', onKey);
+
+        searchInput.focus();
+    });
 }
 
 // ============================================
@@ -451,7 +696,7 @@ function renderRow(request, reviewer) {
             <div class="review-item-head">
                 <span class="review-item-kind">${escapeHtml(kind.label)}</span>
                 <a class="review-item-target" href="#work/${encodeURIComponent(request.target_id)}">${escapeHtml(request.target_id)}</a>
-                ${into ? `<span class="review-item-into">→ ${escapeHtml(into)}</span>` : ''}
+                ${into ? `<span class="review-item-into">→ <a href="#work/${encodeURIComponent(into)}">${escapeHtml(into)}</a></span>` : ''}
                 <span class="review-item-status">${escapeHtml(label)}</span>
             </div>
             <div class="review-item-blurb">${escapeHtml(kind.blurb)}</div>

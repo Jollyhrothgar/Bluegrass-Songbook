@@ -1183,8 +1183,12 @@ let prefSubscriptionsRegistered = false;
  *   onEdit(song)   - open the song editor
  *   onDelete()     - admin delete flow (instant)
  *   onRequestDelete() - trusted-user delete REQUEST (queued for an admin)
+ *   onRequestSuppress() - trusted-user suppress REQUEST (queued for an admin)
+ *   onRequestMerge() - trusted-user merge-redirect REQUEST (queued for an admin)
  *   isAdmin()      - current admin status (drives the Delete overflow item)
- *   isTrusted()    - current trusted status (drives Promote + Request deletion)
+ *   isTrusted()    - current trusted status (drives Promote + the three
+ *                    review-queue REQUEST items; suppress/merge have no
+ *                    instant admin path, so they show whenever isTrusted())
  *   onPromote()    - promote/unpromote the viewed archived song
  *   isPromoted(id) - promoted this session (flips the item to Undo)
  */
@@ -1323,6 +1327,22 @@ export function updateWorkTopBar() {
             id: 'request-delete-song-btn',
             label: '🗑️ Request deletion',
             onClick: () => workPageHooks.onRequestDelete?.(),
+        });
+    }
+
+    // Suppress and merge-redirect have no instant path even for admins —
+    // approving either only prints a local command (review-queue.js) — so
+    // both are offered as requests to any trusted user, admin or not.
+    if (workPageHooks.isTrusted?.()) {
+        overflow.push({
+            id: 'request-suppress-song-btn',
+            label: '🙈 Request suppression',
+            onClick: () => workPageHooks.onRequestSuppress?.(),
+        });
+        overflow.push({
+            id: 'request-merge-song-btn',
+            label: '🔀 Request merge into another song…',
+            onClick: () => workPageHooks.onRequestMerge?.(),
         });
     }
 

@@ -3,7 +3,7 @@
 // These cover the parts that decide who can do what and what the panel is
 // allowed to CLAIM happened — the two places where a mistake is a lie to the
 // user rather than a cosmetic bug.
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 vi.mock('../utils.js', () => ({
     escapeHtml: (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
@@ -23,6 +23,12 @@ import {
     isHeld,
     describeHold,
     sortHolds,
+    validateSuppressReason,
+    targetExists,
+    validateMergeRedirectTarget,
+    buildMergeRedirectPayload,
+    showSuppressRequestDialog,
+    showMergeRequestDialog,
 } from '../review-queue.js';
 
 const hold = (over = {}) => ({
@@ -134,6 +140,216 @@ describe('validation', () => {
             const payload = kind === 'merge-redirect' ? { redirect_to: 'other' } : {};
             expect(validateRequest({ kind, targetId: 'song', payload })).toBeNull();
         }
+    });
+});
+
+// ---------------------------------------------------------------------------
+// Request-dialog pure logic (validation + payload construction)
+// ---------------------------------------------------------------------------
+
+describe('suppress reason validation', () => {
+    it('requires a non-blank reason — it is the only context a reviewer gets', () => {
+        expect(validateSuppressReason('')).toMatch(/reason is required/);
+        expect(validateSuppressReason('   ')).toMatch(/reason is required/);
+        expect(validateSuppressReason(undefined)).toMatch(/reason is required/);
+        expect(validateSuppressReason(null)).toMatch(/reason is required/);
+    });
+
+    it('accepts any non-blank reason', () => {
+        expect(validateSuppressReason('duplicate scrape')).toBeNull();
+        expect(validateSuppressReason('  padded  ')).toBeNull();
+    });
+});
+
+describe('merge-redirect target validation', () => {
+    const songs = [{ id: 'a' }, { id: 'b' }, { id: 'c' }];
+
+    it('targetExists checks the corpus, not just truthiness', () => {
+        expect(targetExists('b', songs)).toBe(true);
+        expect(targetExists('z', songs)).toBe(false);
+        expect(targetExists('a', [])).toBe(false);
+        expect(targetExists('a', undefined)).toBe(false);
+    });
+
+    it('requires a target to be picked', () => {
+        expect(validateMergeRedirectTarget({ sourceId: 'a', targetId: '', songs }))
+            .toMatch(/Search for the song/);
+    });
+
+    it('refuses a self-redirect', () => {
+        expect(validateMergeRedirectTarget({ sourceId: 'a', targetId: 'a', songs }))
+            .toMatch(/cannot redirect to itself/);
+    });
+
+    it('refuses a target that is not actually in the corpus', () => {
+        expect(validateMergeRedirectTarget({ sourceId: 'a', targetId: 'nonexistent', songs }))
+            .toMatch(/not found/);
+    });
+
+    it('accepts a real, different target', () => {
+        expect(validateMergeRedirectTarget({ sourceId: 'a', targetId: 'b', songs })).toBeNull();
+    });
+});
+
+describe('merge-redirect payload construction', () => {
+    it('builds the {redirect_to} shape localCommandFor and validateRequest expect', () => {
+        expect(buildMergeRedirectPayload('how-long-blues')).toEqual({ redirect_to: 'how-long-blues' });
+    });
+});
+
+// ---------------------------------------------------------------------------
+// Request dialogs (DOM) — the two entry points alongside "Request deletion"
+// ---------------------------------------------------------------------------
+
+describe('suppress request dialog', () => {
+    const song = { id: 'blue-moon-of-kentucky', title: 'Blue Moon of Kentucky' };
+
+    afterEach(() => {
+        document.getElementById('suppress-request-modal')?.remove();
+        document.body.innerHTML = '';
+    });
+
+    it('explains suppress vs delete and names the song', () => {
+        showSuppressRequestDialog(song);
+        const modal = document.getElementById('suppress-request-modal');
+        expect(modal).not.toBeNull();
+        const explainer = modal.querySelector('.review-request-explainer').textContent;
+        expect(explainer).toContain('Blue Moon of Kentucky');
+        expect(explainer).toContain('keeps working');
+        expect(explainer).toContain('Request deletion');
+    });
+
+    it('refuses to submit a blank reason and stays open', async () => {
+        const pending = showSuppressRequestDialog(song);
+        document.getElementById('suppress-request-submit').click();
+
+        expect(document.getElementById('suppress-request-modal')).not.toBeNull();
+        expect(document.getElementById('suppress-request-error').textContent).toMatch(/reason is required/);
+
+        // now supply a reason and the same pending promise resolves
+        document.getElementById('suppress-request-reason').value = 'duplicate of another entry';
+        document.getElementById('suppress-request-submit').click();
+        await expect(pending).resolves.toBe('duplicate of another entry');
+        expect(document.getElementById('suppress-request-modal')).toBeNull();
+    });
+
+    it('resolves null on cancel', async () => {
+        const pending = showSuppressRequestDialog(song);
+        document.getElementById('suppress-request-cancel').click();
+        await expect(pending).resolves.toBeNull();
+    });
+
+    it('resolves null on Escape', async () => {
+        const pending = showSuppressRequestDialog(song);
+        document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
+        await expect(pending).resolves.toBeNull();
+    });
+
+    it('trims the reason before resolving', async () => {
+        const pending = showSuppressRequestDialog(song);
+        document.getElementById('suppress-request-reason').value = '  padded reason  ';
+        document.getElementById('suppress-request-submit').click();
+        await expect(pending).resolves.toBe('padded reason');
+    });
+});
+
+describe('merge request dialog', () => {
+    const song = { id: 'how-long-blues-2', title: 'How Long Blues' };
+    const target = { id: 'how-long-blues', title: 'How Long Blues (Tim)', artist: 'Tim' };
+    const songs = [song, target];
+
+    afterEach(() => {
+        document.getElementById('merge-request-modal')?.remove();
+        document.body.innerHTML = '';
+    });
+
+    it('excludes the source song from search candidates', () => {
+        const search = vi.fn(() => []);
+        showMergeRequestDialog(song, { songs, search });
+        document.getElementById('merge-target-search').value = 'how long';
+        document.getElementById('merge-target-search').dispatchEvent(new Event('input'));
+
+        expect(search).toHaveBeenCalled();
+        const candidates = search.mock.calls[0][1];
+        expect(candidates.some(s => s.id === song.id)).toBe(false);
+    });
+
+    it('submit stays disabled until a result is picked, then shows the redirect preview', () => {
+        const search = vi.fn(() => [target]);
+        showMergeRequestDialog(song, { songs, search });
+
+        const submitBtn = document.getElementById('merge-request-submit');
+        expect(submitBtn.disabled).toBe(true);
+
+        const input = document.getElementById('merge-target-search');
+        input.value = 'how long';
+        input.dispatchEvent(new Event('input'));
+        document.querySelector('.merge-target-result').click();
+
+        expect(submitBtn.disabled).toBe(false);
+        const preview = document.getElementById('merge-target-preview').textContent;
+        expect(preview).toContain('How Long Blues');
+        expect(preview).toContain('How Long Blues (Tim)');
+        expect(preview).toContain('will forward');
+    });
+
+    it('changing the search after picking a result clears the selection', () => {
+        const search = vi.fn(() => [target]);
+        showMergeRequestDialog(song, { songs, search });
+
+        const input = document.getElementById('merge-target-search');
+        input.value = 'how long';
+        input.dispatchEvent(new Event('input'));
+        document.querySelector('.merge-target-result').click();
+        expect(document.getElementById('merge-request-submit').disabled).toBe(false);
+
+        input.value = 'how long b';
+        input.dispatchEvent(new Event('input'));
+        expect(document.getElementById('merge-request-submit').disabled).toBe(true);
+        expect(document.getElementById('merge-target-preview').classList.contains('hidden')).toBe(true);
+    });
+
+    it('resolves the target id/title and trimmed reason on submit', async () => {
+        const search = vi.fn(() => [target]);
+        const pending = showMergeRequestDialog(song, { songs, search });
+
+        const input = document.getElementById('merge-target-search');
+        input.value = 'how long';
+        input.dispatchEvent(new Event('input'));
+        document.querySelector('.merge-target-result').click();
+        document.getElementById('merge-request-reason').value = '  same song, different chart  ';
+        document.getElementById('merge-request-submit').click();
+
+        await expect(pending).resolves.toEqual({
+            targetId: 'how-long-blues',
+            targetTitle: 'How Long Blues (Tim)',
+            reason: 'same song, different chart',
+        });
+        expect(document.getElementById('merge-request-modal')).toBeNull();
+    });
+
+    it('reason is optional — resolves null rather than an empty string', async () => {
+        const search = vi.fn(() => [target]);
+        const pending = showMergeRequestDialog(song, { songs, search });
+
+        document.getElementById('merge-target-search').value = 'how long';
+        document.getElementById('merge-target-search').dispatchEvent(new Event('input'));
+        document.querySelector('.merge-target-result').click();
+        document.getElementById('merge-request-submit').click();
+
+        const outcome = await pending;
+        expect(outcome.reason).toBeNull();
+    });
+
+    it('resolves null on cancel and on Escape', async () => {
+        const search = vi.fn(() => []);
+        let pending = showMergeRequestDialog(song, { songs, search });
+        document.getElementById('merge-request-cancel').click();
+        await expect(pending).resolves.toBeNull();
+
+        pending = showMergeRequestDialog(song, { songs, search });
+        document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
+        await expect(pending).resolves.toBeNull();
     });
 });
 
