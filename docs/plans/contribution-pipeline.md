@@ -430,12 +430,67 @@ Correction 1 showed it was not needed.
 ### Step 7 — dedup-on-add
 
 **Problem:** a user transcribes a song that already exists. Nothing tells them
-until a human notices, if ever. `will-the-circle-be-unbroken` and
-`will-the-circle-be-unbroken-1` are the corpus's own evidence.
+until a human notices, if ever. `will-the-circle-be-unbroken` /
+`will-the-circle-be-unbroken-1`, and `how-long-blues` / `how-long-blues-1`
+(issue #208, 2026-08-15) are the corpus's own evidence.
 
-**Fix:** port `normalize_for_fuzzy`, `normalize_lyrics`, and the similarity
-thresholds from `build_works_index.py:591-637` to JS, and run them in the editor
-against the already-loaded corpus.
+> **#208 is the motivating case.** `works/how-long-blues` was a
+> BluegrassLyrics scrape from Feb 2026: lyrics, no chords, no artist, no
+> composer. Issue #208 supplied the same song with chords (E/E7/A/B), artist
+> (Del McCoury), and a composer meta. The pipeline created a **second work**
+> rather than enriching the first, because nothing checks incoming submissions
+> against the corpus. It came through the *reviewed* path, with a human
+> approving it — so the duplicate would have been created regardless of the
+> login gate. **Programmatic dedup is the valuable half of the tiered design,
+> independent of the A/B question.**
+
+#### The existing detector would NOT have caught it
+
+`scripts/lib/dedup_works.py` exists and looks like the right tool — it scores
+title/artist/lyrics/key and emits a merge plan that `scripts/lib/merge_works.py`
+can execute (including `redirects.json`). **Do not assume it works for this.**
+Measured on the two `how-long-blues` works from `origin/main`:
+
+| metric | score |
+|---|---|
+| `dedup_works.py` as written (300-char window, `SequenceMatcher`) | **0.043** — threshold is 0.5, so a **miss** |
+| full text, `SequenceMatcher` | 0.188 |
+| full text, Jaccard over word sets | 0.646 |
+| full text, **containment** (∩ / smaller side) | **0.886** |
+
+Two independent defects, and fixing only one is not enough:
+
+1. **`normalize_lyrics` (`dedup_works.py:71`) truncates to the first 300 chars.**
+   The existing work opens with a verse; #208 opens with the chorus. The
+   windows barely overlap.
+2. **`similarity()` is `SequenceMatcher` — order-sensitive.** Removing the
+   window alone only reaches 0.188, still a miss.
+
+**Use containment, not Jaccard, as the primary signal.** A lyrics-only work is
+close to a *subset* of a fuller submission; Jaccard penalizes the size
+difference, containment does not. **High containment + large size delta is the
+signature of enrichment** — as distinct from "same song twice," which shows high
+containment *and* similar size. That distinction is what routes to the right
+outcome in the table below.
+
+`build_works_index.py:600-607` already has a Jaccard word-overlap helper used by
+`fuzzy_group_songs`. The better primitive exists in the repo; it just is not the
+one `dedup_works.py` reaches for.
+
+**Fix:** repair the scoring in `dedup_works.py` (full-lyric, order-insensitive,
+containment-primary), then port those normalizers to JS for the editor and run
+them against the already-loaded corpus. Fixing the Python first means the client
+and the batch tool agree by construction.
+
+**Two insertion points, and the CI-side one is higher value:**
+
+- **CI side** — `process_submission.py`, before creating a new slug. Catches
+  everything, including human-approved submissions. This is the one that would
+  have stopped #208.
+- **Client side** — the editor, before the user transcribes a whole chart. Better
+  UX, but bypassable and only helps users of the editor.
+
+Build the CI-side check first.
 
 **Match against:** the index, the archive (`loadArchive()`), **and** the
 `pending_songs` overlay — otherwise two people at the same jam add the same song
@@ -448,13 +503,20 @@ ninety seconds apart.
 - **On ChordPro paste**, again with real lyrics, using `compute_group_id`
   parity.
 
-**Three outcomes, not one warning:**
+**Four outcomes, not one warning:**
 
 | Match | Offer |
 |---|---|
+| high containment, **incoming is richer** (adds chords/artist/composer to a sparser work) | **Enrich the existing work** — add the part, do not create a slug. This is the #208 case. |
 | archived work | **Promote it** — one click, instant via Step 2 |
-| indexed work, different chart | **Add as an arrangement** — routes into existing version/arrangement grouping |
+| indexed work, comparable richness, different chart | **Add as an arrangement** — routes into existing version/arrangement grouping |
 | no match, or user overrides | **Add as new** |
+
+The enrichment row is the one the current pipeline gets wrong, and it is the
+safest of the four to automate: adding chords to a lyrics-only work destroys
+nothing. That is the "gate on what the change does, not who submitted it"
+principle from the original design discussion, in its narrowest and most
+defensible form — worth applying regardless of how the login question lands.
 
 **The override must be one click.** "Will the Circle Be Unbroken" covers two
 genuinely distinct songs — the 1907 Habershon/Gabriel hymn and the Carter
@@ -466,13 +528,64 @@ carrying the matched id and the similarity score). "User overrode a
 high-confidence match" is the best threshold-tuning signal available and costs
 one row.
 
-**Files:** new `docs/js/dedup.js`, wired into `docs/js/editor.js` and
-`docs/js/add-song-picker.js`
-**Test:** golden vectors — run the Python normalizers over a fixture set, commit
-the outputs, assert the JS port matches byte-for-byte. Same pattern as the TEF
-parser JS port. This is essential: if the two drift, the client warns about
-things the build does not group, and vice versa.
-**Risk:** low. Purely advisory UI.
+**Files:** `scripts/lib/dedup_works.py` (scoring fix),
+`scripts/lib/process_submission.py` (CI-side check), new `docs/js/dedup.js`
+wired into `docs/js/editor.js` and `docs/js/add-song-picker.js`
+
+**Tests:**
+- **Regression fixture from #208.** `works/how-long-blues` vs
+  `works/how-long-blues-1` must score as a match. It scores 0.043 today. This
+  pair is the single best test case in the corpus — it is a real miss, from the
+  real pipeline, with a known-correct answer.
+- Negative fixtures from `fuzzy_group_songs`'s docstring, which records the
+  hard-won false positives: "I Walk Alone" vs "I Walk The Line", "Good Hearted
+  Woman" vs "Good Hearted Man", "Still Loving You" vs "Still Losing You". A
+  containment-based scorer is *more* prone to these than a sequence-based one,
+  so they must stay below threshold.
+- Golden vectors for the JS port — run the Python normalizers over a fixture
+  set, commit the outputs, assert the JS matches byte-for-byte. Same pattern as
+  the TEF parser JS port. Essential: if the two drift, the client warns about
+  things the batch tool does not group, and vice versa.
+
+**Risk:** medium on the CI side (a false positive silently folds a distinct song
+into the wrong work — mitigated by the negative fixtures, and by making
+enrichment additive-only so nothing is overwritten). Low on the client side,
+which is purely advisory.
+
+### Step 8 — fix composer extraction
+
+**Problem:** `scripts/lib/process_submission.py:126` requires a colon *after*
+`composer`:
+
+```python
+re.search(r'\{(?:composer|meta:\s*composer):\s*(.+?)\}', content, re.IGNORECASE)
+```
+
+Measured behaviour:
+
+```
+{composer: Leroy Carr}        -> 'Leroy Carr'
+{meta: composer: Leroy Carr}  -> 'Leroy Carr'
+{meta: composer Leroy Carr}   -> None      <- the form root CLAUDE.md documents
+```
+
+So the project's own documented `{meta: key value}` convention is the one form
+that fails. `works/how-long-blues-1/work.yaml` has **no `composers` field**
+despite its lead sheet declaring `{meta: composer Leroy Carr}`. Since the
+index's `composer` comes only from `work.yaml` `composers` (root `CLAUDE.md`),
+Leroy Carr is invisible to search.
+
+This has presumably been dropping composers from every submission using the
+documented syntax. Independent of everything else in this plan.
+
+**Fix:** make the colon after the key optional, and audit the sibling
+extractors (`extract_key_from_chordpro`, and the equivalents in
+`process_correction.py`) for the same shape.
+**Test:** all three forms above, plus the bare `{meta: composer X}` form as a
+regression fixture.
+**Risk:** none. Strictly widens what is recognized.
+**Backfill:** worth a one-off sweep for works whose `.pro` declares a composer
+their `work.yaml` lacks.
 
 ---
 
@@ -487,11 +600,44 @@ things the build does not group, and vice versa.
 | 5. Real reconciler | after 4 | 3, 4 | medium; **measure first** |
 | 6. Single writer | after 5 | 3, 5 | largest |
 | 7. Dedup-on-add | independent | 2 (for the promote affordance) | medium |
+| 8. Composer extraction | anytime | nothing | trivial |
 
 Steps 2 and 7 deliver everything Mike named as the user-visible goal — instant
 propagation at the jam, and "hey, I think we have that song." Neither depends on
 the login decision. Steps 1, 3, 5, 6 are the correctness debt underneath, and
-would be worth doing even if the contribution model never changed.
+would be worth doing even if the contribution model never changed. Step 8 is a
+one-line bug found while investigating #208.
+
+**#208 is the argument for prioritising Step 7 over the login work.** The
+duplicate came through the reviewed path with a human approving it. No gate —
+neither Option A nor Option B — would have prevented it. Dedup would have.
+
+---
+
+## Pending decision: merge `how-long-blues` / `how-long-blues-1`
+
+Authoritative data, so it is Mike's call and nothing has been touched. Facts,
+all verified against `origin/main`:
+
+| | `how-long-blues` (Feb 2026) | `how-long-blues-1` (#208) |
+|---|---|---|
+| Chords | none — 0 bracket tokens | E / E7 / A / B |
+| Artist | absent | Del McCoury |
+| Composer | absent | **absent in `work.yaml`** (declared in `.pro`, dropped by the Step 8 bug) |
+| Sections | 4 | 6 |
+| Source | `bluegrass-lyrics` scrape | `manual`, issue #208 |
+
+**`-1` does not strictly dominate.** The original has a closing verse `-1` lacks:
+
+> Cruel engineer can't you see / I need my baby back with me / Then I'd be rid
+> of these mean ol' lonesome blues
+
+13 words appear only in the original, and that verse is most of them.
+
+**Recommendation:** keep `how-long-blues-1` as canonical, but first (a) port the
+missing verse across, and (b) add `composers: [Leroy Carr]` by hand, since
+Step 8's bug dropped it. Then suppress the original with a redirect —
+`merge_works.py` already handles the redirect side.
 
 ---
 
