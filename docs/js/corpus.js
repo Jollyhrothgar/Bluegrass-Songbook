@@ -5,6 +5,8 @@
 //                        the background so deep links, lists and redirects to
 //                        archived works still resolve
 // - pending_songs      — Supabase overlay (trusted-user edits, submissions)
+// - deleted/promoted   — Supabase curation overlays: the same suppression and
+//                        prune-rescue the index build applies, but instant
 //
 // Kept separate from main.js so the merge is unit-testable without booting
 // the whole app.
@@ -61,6 +63,13 @@ export function ensureStems(songs) {
     return songs;
 }
 
+/** Accept a Set, an array of ids, or Supabase rows ({song_id}) as an id set. */
+function asIdSet(value) {
+    if (!value) return new Set();
+    if (value instanceof Set) return value;
+    return new Set(value.map(v => (typeof v === 'string' ? v : v?.song_id)));
+}
+
 /**
  * Merge the row sources into the corpus the app runs on.
  *
@@ -68,21 +77,48 @@ export function ensureStems(songs) {
  * inherits the static row's fields (tablature_parts, tags, …) and hides
  * the row it replaces.
  *
+ * `deleted` and `promoted` are the client-side halves of the curation
+ * tables the index build applies from `docs/data/{deleted,promoted}_songs.json`
+ * — mirrored here so an admin delete or a trusted-user promote is live in the
+ * browser without waiting for the hourly sync and rebuild. Order matches the
+ * build: deletion (curation.filter_suppressed) runs before promotion
+ * (curation.apply_index_prune), so a deleted id stays gone even if promoted.
+ *
+ * Promoted rows are copied rather than mutated, so un-promoting restores
+ * `indexed: false` from the untouched source row on the next merge.
+ *
  * @returns {{ songs: Array, groups: Object }}
  */
-export function mergeCorpus({ canon = [], archive = [], pending = [] } = {}) {
-    const staticRows = [...canon, ...archive];
+export function mergeCorpus({
+    canon = [], archive = [], pending = [], deleted = null, promoted = null,
+} = {}) {
+    const deletedIds = asIdSet(deleted);
+    const promotedIds = asIdSet(promoted);
+
+    let staticRows = [...canon, ...archive];
+    let pendingRows = pending;
+    if (deletedIds.size) {
+        staticRows = staticRows.filter(row => !deletedIds.has(row.id));
+        pendingRows = pendingRows.filter(p => !deletedIds.has(p.id));
+    }
+    if (promotedIds.size) {
+        staticRows = staticRows.map(row => (
+            row.indexed === false && promotedIds.has(row.id)
+                ? { ...row, indexed: true }
+                : row
+        ));
+    }
 
     const staticMap = {};
     for (const row of staticRows) staticMap[row.id] = row;
 
-    const mergedPending = pending.map(p => {
+    const mergedPending = pendingRows.map(p => {
         const base = p.replaces_id ? staticMap[p.replaces_id] : null;
         return base ? { ...base, ...p, source: 'pending' } : p;
     });
 
     const replacedIds = new Set(
-        pending.filter(p => p.replaces_id).map(p => p.replaces_id)
+        pendingRows.filter(p => p.replaces_id).map(p => p.replaces_id)
     );
 
     const songs = [
