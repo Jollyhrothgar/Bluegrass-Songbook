@@ -15,7 +15,9 @@ Modes (chosen server-side, never by the client):
     ``foo-1`` rather than clobbering ``foo``.
 ``update``
     The submitter already owns content in this work, or they are trusted.
-    ``update_part`` replaces the default lead sheet in place.
+    ``update_part`` replaces ONE chart in place — the one the actor owns
+    (:func:`update_target`), or the work's primary chart when they own
+    nothing and reached ``update`` through the trusted branch.
 ``fork``
     An edit of somebody else's chart. ``fork_to_arrangement`` lands it as an
     ADDITIONAL version part with ``x_version_*`` metadata; the original keeps
@@ -207,6 +209,99 @@ def owns_content(repo_root, work_id: str, user_id: Optional[str]) -> bool:
         (part.get('provenance') or {}).get('submitted_by') == user_id
         for part in (work.get('parts') or [])
     )
+
+
+# ============================================
+# Which chart an update may rewrite
+# ============================================
+
+
+def lead_sheets(work: Optional[dict]) -> list:
+    """A work's chart parts, in file order."""
+    return [part for part in ((work or {}).get('parts') or [])
+            if part.get('type') == 'lead-sheet']
+
+
+def primary_chart(work: Optional[dict]) -> Optional[dict]:
+    """The work's main chart: the default lead sheet, else the first one.
+
+    Deliberately the same choice ``works_writer.update_part`` makes for a
+    bare ``{'type': 'lead-sheet'}`` match, so "no explicit target" and "the
+    primary" stay the same part.
+    """
+    charts = lead_sheets(work)
+    for part in charts:
+        if part.get('default'):
+            return part
+    return charts[0] if charts else None
+
+
+def update_target(work: Optional[dict], row_id: str,
+                  user_id: Optional[str]) -> Optional[str]:
+    """The file an ``update`` may rewrite, or ``None`` for "the primary chart".
+
+    THE targeting rule, in one place, because ``mode`` cannot answer this on
+    its own. Ownership classification — ``owns_content`` here and
+    ``classifyChange`` in ``supabase/functions/_shared/pending-dispatch.ts``
+    — says ``update`` as soon as the caller appears in ANY part's
+    ``provenance.submitted_by``. So a user who owns only a FORK arrives in
+    update mode, and rewriting "the first lead sheet" would destroy the
+    PRIMARY — somebody else's chart — in place, which is precisely what the
+    "hard to destroy" rule exists to prevent. An update therefore lands on
+    the part the actor actually owns.
+
+    Among the actor's own charts, in order:
+
+    1. the part this very pending row landed on last time. Its provenance
+       carries ``pending:<row id>:<sha>`` and only the sha changes when the
+       row is re-edited, so where there is such a part it is an exact answer
+       and nothing else needs guessing.
+    2. the primary chart, if the actor owns it — an owner correcting the
+       main chart is the ordinary case and must not be diverted onto a fork
+       they happen to also own.
+    3. otherwise their most recently submitted chart (``submitted_at``,
+       ties broken by file order with the later part winning) — of several
+       arrangements of their own, the freshest is the one they were most
+       plausibly looking at.
+
+    Owning no chart here returns ``None``: the caller was classified
+    ``update`` through the TRUSTED branch instead, and a trusted in-place
+    edit is about the work's primary chart.
+
+    Caveat worth knowing: ``submitted_by`` is written only on lead-sheet
+    parts today (the tab flow records ``author``), so "owns a part" and
+    "owns a chart" coincide. If a non-chart part ever carries
+    ``submitted_by``, its owner would be classified ``update`` and land in
+    the trusted branch here — owning a tab would buy an in-place edit of
+    somebody else's chart. Closing that needs trust in the dispatch payload.
+    """
+    if not user_id:
+        return None
+    mine = [part for part in lead_sheets(work)
+            if (part.get('provenance') or {}).get('submitted_by') == user_id]
+    if not mine:
+        return None
+
+    # 1. where this row landed before
+    prefix = f'pending:{row_id}:'
+    for part in mine:
+        source_id = str((part.get('provenance') or {}).get('source_id') or '')
+        if source_id.startswith(prefix):
+            return part.get('file')
+
+    # 2. the primary, if it is theirs
+    primary = primary_chart(work)
+    if primary is not None and any(
+            part.get('file') == primary.get('file') for part in mine):
+        return primary.get('file')
+
+    # 3. their most recent chart
+    _, part = max(
+        enumerate(mine),
+        key=lambda item: (
+            (item[1].get('provenance') or {}).get('submitted_at') or '',
+            item[0]))
+    return part.get('file')
 
 
 class DedupBackstop:
@@ -425,19 +520,40 @@ def apply_row(repo_root, row: dict, mode: str, work_id: str,
         )
 
     if mode == 'update':
+        # Target the chart the actor OWNS, never just the first one. See
+        # update_target: an owner of a FORK is classified `update` too, and
+        # a bare {'type': 'lead-sheet'} match would rewrite the primary.
+        work = works_writer.load_work(repo_root, work_id)
+        target = update_target(work, row_id, row.get('created_by'))
+        match = {'type': 'lead-sheet'}
+        if target:
+            match['file'] = target
+
+        primary = primary_chart(work)
+        edits_primary = target is None or (
+            primary is not None and primary.get('file') == target)
+
+        # Work-level fields describe the SONG, not one arrangement of it, so
+        # only an edit of the primary chart carries them. A fork owner
+        # re-keying or retitling their own arrangement must not re-key or
+        # retitle the work out from under everybody else — the same in-place
+        # destruction the part targeting above prevents, one level up. (A
+        # fork lands with no work_updates at all, so this keeps "submit my
+        # arrangement" and "edit my arrangement" consistent.)
         work_updates = {}
-        if row.get('title'):
-            work_updates['title'] = row['title']
-        if row.get('artist'):
-            work_updates['artist'] = row['artist']
-        if row.get('key'):
-            work_updates['default_key'] = row['key']
-        if row.get('notes'):
-            work_updates['notes'] = row['notes']
+        if edits_primary:
+            if row.get('title'):
+                work_updates['title'] = row['title']
+            if row.get('artist'):
+                work_updates['artist'] = row['artist']
+            if row.get('key'):
+                work_updates['default_key'] = row['key']
+            if row.get('notes'):
+                work_updates['notes'] = row['notes']
 
         return works_writer.update_part(
             repo_root, work_id,
-            match={'type': 'lead-sheet'},
+            match=match,
             content=content,
             provenance_updates=provenance,
             work_updates=work_updates,

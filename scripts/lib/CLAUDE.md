@@ -699,7 +699,7 @@ classifies the change and dispatches; this script makes it durable.
 1. `GET /rest/v1/pending_songs?id=eq.<row>` (urllib — no SDK in the write path)
 2. Hand the dispatched mode to `works_writer`:
    - `create` → `create_work(on_collision='suffix')`
-   - `update` → `update_part` on the default lead sheet
+   - `update` → `update_part` on the chart the actor OWNS (`update_target`)
    - `fork` → `fork_to_arrangement`, `x_version_*` from the submitter identity
 3. The workflow commits, pushes with rebase-retry, then marks the row
    `github_committed`.
@@ -709,6 +709,17 @@ classifies the change and dispatches; this script makes it durable.
 finds the marker and no-ops; a genuine re-edit changes the sha and applies.
 The mode is decided server-side in `supabase/functions/_shared/pending-dispatch.ts`
 — the client cannot claim "update" on somebody else's chart.
+
+**Which chart an `update` rewrites** (`process_pending.update_target`): the
+mode alone is not enough. Both classifiers answer `update` as soon as the
+caller appears in ANY part's `provenance.submitted_by`, so a user who owns
+only a FORK is dispatched in update mode — and a bare `{'type': 'lead-sheet'}`
+match is default-preferred, i.e. the PRIMARY. The rule: land on the part the
+row landed on before (`pending:<row id>:` in its provenance), else the primary
+if the actor owns it, else their most recent chart; owning no chart at all
+means they got here through the *trusted* branch, and that right is over the
+primary. Work-level fields (title/artist/key/notes) ride along only when the
+primary is what is being edited.
 
 ## process_submission.py / process_correction.py — RETIRED
 

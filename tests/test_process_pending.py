@@ -153,6 +153,167 @@ class TestUpdate:
 
 
 # ============================================
+# Which chart an update rewrites
+# ============================================
+
+
+PRIMARY = '{meta: title Original}\n[G]the primary chart\n'
+
+
+def seed_forked_work(tmp_path, work_id='blue-moon-of-kentucky', *,
+                     primary_by=OTHER_USER, fork_by=SUBMITTER,
+                     fork_source_id='pending:some-other-row:beef'):
+    """A work with somebody's primary chart and somebody's fork of it."""
+    seed_work(tmp_path, work_id, submitted_by=primary_by, content=PRIMARY)
+    works_writer.fork_to_arrangement(
+        tmp_path, work_id, '{meta: title Original}\n[C]my own take\n',
+        {'source': 'user-submission', 'source_id': fork_source_id,
+         'submitted_by': fork_by, 'submitted_at': '2026-08-01'},
+        version_label="Tim's arrangement", arrangement_by='Tim',
+        verbose=False)
+    return work_id
+
+
+class TestUpdateTargeting:
+    """An ``update`` rewrites the chart the actor OWNS.
+
+    Ownership classification (``owns_content`` here, ``classifyChange`` in
+    the edge function) answers "update" as soon as the caller appears in ANY
+    part's provenance — so a user who owns nothing but a FORK is dispatched
+    in update mode. Before this rule the update path matched
+    ``{'type': 'lead-sheet'}`` and, default-preferred, landed on the PRIMARY:
+    a fork owner's second edit silently overwrote somebody else's chart,
+    straight through the "hard to destroy" rule.
+    """
+
+    def test_fork_owner_edits_their_fork_not_the_primary(self, tmp_path):
+        seed_forked_work(tmp_path)
+        work_dir = tmp_path / 'works' / 'blue-moon-of-kentucky'
+        fork_file = read_work(tmp_path, 'blue-moon-of-kentucky')['parts'][1]['file']
+
+        new = '{meta: title Blue Moon of Kentucky}\n[D]my take, revised\n'
+        result = apply_row(tmp_path, row(content=new, title='Renamed By Me',
+                                         artist='Not Bill', key='B'),
+                           'update', 'blue-moon-of-kentucky', actor='Tim',
+                           verbose=False)
+
+        assert result.written
+        assert result.part_file == fork_file
+        # The primary is byte-identical — nothing about it was read-modify-written.
+        assert (work_dir / 'lead-sheet.pro').read_text() == PRIMARY
+        assert (work_dir / fork_file).read_text() == new
+
+        work = read_work(tmp_path, 'blue-moon-of-kentucky')
+        assert len(work['parts']) == 2
+        primary, fork = work['parts']
+        assert primary['default'] is True
+        assert primary['provenance']['submitted_by'] == OTHER_USER
+        assert fork.get('default') is not True
+        # Work-level metadata belongs to the song, not to one arrangement:
+        # editing a fork must not retitle or re-key the whole work.
+        assert work['title'] == 'Blue Moon of Kentucky'
+        assert work['artist'] == 'Bill Monroe'
+        assert 'default_key' not in work
+
+    def test_primary_owner_edits_the_primary(self, tmp_path):
+        seed_forked_work(tmp_path, primary_by=SUBMITTER, fork_by=OTHER_USER)
+        work_dir = tmp_path / 'works' / 'blue-moon-of-kentucky'
+        fork_file = read_work(tmp_path, 'blue-moon-of-kentucky')['parts'][1]['file']
+        forked_before = (work_dir / fork_file).read_text()
+
+        new = '{meta: title Blue Moon of Kentucky}\n[A]new words\n'
+        result = apply_row(tmp_path, row(content=new, key='B'), 'update',
+                           'blue-moon-of-kentucky', actor='Tim', verbose=False)
+
+        assert result.part_file == 'lead-sheet.pro'
+        assert (work_dir / 'lead-sheet.pro').read_text() == new
+        assert (work_dir / fork_file).read_text() == forked_before
+        # An edit of the primary still carries the work-level fields.
+        assert read_work(tmp_path, 'blue-moon-of-kentucky')['default_key'] == 'B'
+
+    def test_trusted_non_owner_edits_the_primary(self, tmp_path):
+        """The trusted branch of classifyChange: they own nothing here, and
+        an in-place edit right is about the work's main chart."""
+        third_party = 'cccccccc-9999-0000-1111-222222222222'
+        seed_forked_work(tmp_path, primary_by=OTHER_USER, fork_by=third_party)
+        work_dir = tmp_path / 'works' / 'blue-moon-of-kentucky'
+        fork_file = read_work(tmp_path, 'blue-moon-of-kentucky')['parts'][1]['file']
+        forked_before = (work_dir / fork_file).read_text()
+
+        new = '{meta: title Blue Moon of Kentucky}\n[A]tidied up\n'
+        result = apply_row(tmp_path, row(content=new, key='B'), 'update',
+                           'blue-moon-of-kentucky', actor='Mod', verbose=False)
+
+        assert result.part_file == 'lead-sheet.pro'
+        assert (work_dir / 'lead-sheet.pro').read_text() == new
+        assert (work_dir / fork_file).read_text() == forked_before
+        assert read_work(tmp_path, 'blue-moon-of-kentucky')['default_key'] == 'B'
+
+    def test_owner_of_both_edits_the_primary(self, tmp_path):
+        """Rule 2: owning the primary AND a fork lands on the primary — an
+        owner correcting the main chart is the ordinary case."""
+        seed_forked_work(tmp_path, primary_by=SUBMITTER, fork_by=SUBMITTER)
+        work_dir = tmp_path / 'works' / 'blue-moon-of-kentucky'
+        fork_file = read_work(tmp_path, 'blue-moon-of-kentucky')['parts'][1]['file']
+        forked_before = (work_dir / fork_file).read_text()
+
+        new = '{meta: title Blue Moon of Kentucky}\n[A]both are mine\n'
+        result = apply_row(tmp_path, row(content=new), 'update',
+                           'blue-moon-of-kentucky', actor='Tim', verbose=False)
+
+        assert result.part_file == 'lead-sheet.pro'
+        assert (work_dir / 'lead-sheet.pro').read_text() == new
+        assert (work_dir / fork_file).read_text() == forked_before
+
+    def test_the_row_returns_to_the_part_it_landed_on(self, tmp_path):
+        """Rule 1 beats rule 2: when THIS row already wrote a part, a
+        re-edit of the row goes back to that part even though the actor also
+        owns the primary."""
+        seed_forked_work(tmp_path, primary_by=SUBMITTER, fork_by=SUBMITTER,
+                         fork_source_id=content_marker(
+                             'blue-moon-of-kentucky', 'earlier draft'))
+        work_dir = tmp_path / 'works' / 'blue-moon-of-kentucky'
+        fork_file = read_work(tmp_path, 'blue-moon-of-kentucky')['parts'][1]['file']
+
+        new = '{meta: title Blue Moon of Kentucky}\n[D]revised draft\n'
+        result = apply_row(tmp_path, row(content=new), 'update',
+                           'blue-moon-of-kentucky', actor='Tim', verbose=False)
+
+        assert result.part_file == fork_file
+        assert (work_dir / 'lead-sheet.pro').read_text() == PRIMARY
+
+    def test_most_recent_of_several_forks_wins(self, tmp_path):
+        """Rule 3: several arrangements of their own, none of them the
+        primary and none carrying this row's marker."""
+        seed_forked_work(tmp_path, primary_by=OTHER_USER, fork_by=SUBMITTER)
+        works_writer.fork_to_arrangement(
+            tmp_path, 'blue-moon-of-kentucky', '[E]a later take\n',
+            {'source': 'user-submission', 'source_id': 'pending:another:cafe',
+             'submitted_by': SUBMITTER, 'submitted_at': '2026-08-10'},
+            version_label='Second take', verbose=False)
+
+        parts = read_work(tmp_path, 'blue-moon-of-kentucky')['parts']
+        older, newer = parts[1]['file'], parts[2]['file']
+
+        result = apply_row(tmp_path, row(content='[F]newest\n'), 'update',
+                           'blue-moon-of-kentucky', actor='Tim', verbose=False)
+
+        assert result.part_file == newer
+        work_dir = tmp_path / 'works' / 'blue-moon-of-kentucky'
+        assert (work_dir / 'lead-sheet.pro').read_text() == PRIMARY
+        assert '[C]my own take' in (work_dir / older).read_text()
+
+    def test_anonymous_row_falls_back_to_the_primary(self, tmp_path):
+        seed_forked_work(tmp_path)
+
+        result = apply_row(tmp_path, row(content='[G]no identity\n',
+                                         created_by=None),
+                           'update', 'blue-moon-of-kentucky', verbose=False)
+
+        assert result.part_file == 'lead-sheet.pro'
+
+
+# ============================================
 # fork
 # ============================================
 
