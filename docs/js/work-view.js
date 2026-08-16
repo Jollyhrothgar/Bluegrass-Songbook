@@ -1569,8 +1569,13 @@ async function savePlaceholderMetadataIssue({ title, artist, key, notes }) {
     const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
 
-    const user = window.SupabaseAuth?.getUser?.();
-    const submitter = user?.user_metadata?.full_name || user?.email || 'Anonymous User';
+    // Identity is derived server-side from the session token; the client
+    // sends no attribution field (Phase 2a).
+    const supabase = window.SupabaseAuth?.supabase;
+    const session = supabase ? (await supabase.auth.getSession()).data.session : null;
+    if (!session?.access_token) {
+        throw new Error('Sign in to submit — your account is the attribution');
+    }
 
     const body = [
         `**Work ID:** ${currentWork.id}`,
@@ -1579,15 +1584,13 @@ async function savePlaceholderMetadataIssue({ title, artist, key, notes }) {
         artist !== currentWork.artist ? `**Proposed Artist:** ${artist}` : '',
         key !== currentWork.key ? `**Proposed Key:** ${key}` : '',
         notes !== currentWork.notes ? `**Proposed Notes:** ${notes}` : '',
-        '',
-        `Submitted by: ${submitter}`,
     ].filter(Boolean).join('\n');
 
     const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+            'Authorization': `Bearer ${session.access_token}`,
             'apikey': SUPABASE_ANON_KEY,
         },
         body: JSON.stringify({
@@ -1596,7 +1599,6 @@ async function savePlaceholderMetadataIssue({ title, artist, key, notes }) {
             songId: currentWork.id,
             chordpro: `{meta: title ${title}}\n{meta: artist ${artist}}\n{key: ${key}}\n`,
             comment: `Placeholder metadata update:\n${body}`,
-            submittedBy: submitter,
         }),
     });
 
@@ -2077,16 +2079,23 @@ async function enterTabEditMode(otf, part, container) {
             activeEditSession = null;
             renderTablaturePart(part, container);
         },
-        // Save-back: same human-approved GitHub-issue pipeline as song
-        // corrections — the editor's payoff beyond Download
-        onSubmit: (doc, comment) => submitTab({
-            type: 'tab-correction',
-            otf: doc,
-            title: currentWork?.title || doc.metadata?.title || 'Untitled',
-            instrument: part.instrument || 'banjo',
-            workId: currentWork?.id,
-            comment,
-        }),
+        // Save-back: same human-approved GitHub pipeline as song
+        // corrections — the editor's payoff beyond Download.
+        // Login gate lands here, at submit time: editing (and Download)
+        // stay open to everyone; only the submission needs an identity.
+        onSubmit: (doc, comment) => {
+            if (!requireLogin('submit tab corrections')) {
+                throw new Error('Sign in to submit — opening sign-in…');
+            }
+            return submitTab({
+                type: 'tab-correction',
+                otf: doc,
+                title: currentWork?.title || doc.metadata?.title || 'Untitled',
+                instrument: part.instrument || 'banjo',
+                workId: currentWork?.id,
+                comment,
+            });
+        },
     });
 }
 

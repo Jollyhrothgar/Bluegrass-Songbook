@@ -7,6 +7,7 @@
 // reviewer sees the complete diff.
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
+import { attributionFor, callerIp, requireUser } from "../_shared/identity.ts"
 
 const GITHUB_REPO = "Jollyhrothgar/Bluegrass-Songbook"
 const API = `https://api.github.com/repos/${GITHUB_REPO}`
@@ -19,18 +20,18 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 }
 
-// Best-effort per-IP throttle (per isolate — resets on cold start).
-// Abuse ultimately ends at the human merge gate; this keeps a script
-// from burning the PAT's API quota with branch/PR spam.
+// Best-effort throttle (per isolate — resets on cold start), keyed by IP
+// and again by user id. Abuse ultimately ends at the human merge gate;
+// this keeps a script from burning the PAT's API quota with branch/PR spam.
 const RATE_WINDOW_MS = 60 * 60 * 1000
 const RATE_MAX = 5
-const recentByIp = new Map<string, number[]>()
-function rateLimited(ip: string): boolean {
+const recentByKey = new Map<string, number[]>()
+function rateLimited(key: string): boolean {
   const now = Date.now()
-  const hits = (recentByIp.get(ip) ?? []).filter(t => now - t < RATE_WINDOW_MS)
+  const hits = (recentByKey.get(key) ?? []).filter(t => now - t < RATE_WINDOW_MS)
   const limited = hits.length >= RATE_MAX
   if (!limited) hits.push(now)
-  recentByIp.set(ip, hits)
+  recentByKey.set(key, hits)
   return limited
 }
 
@@ -41,7 +42,6 @@ interface TabPrRequest {
   instrument: string   // e.g. 'banjo' — becomes <instrument>.otf.json
   otf: string          // serialized OTF JSON
   comment?: string     // Required for corrections
-  submittedBy?: string
 }
 
 function bad(status: number, error: string) {
@@ -61,8 +61,18 @@ serve(async (req) => {
   }
 
   try {
-    const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown'
+    const ip = callerIp(req)
     if (rateLimited(ip)) return bad(429, 'Too many submissions — try again later')
+
+    // Login required (Phase 2a): a tab submission/correction is content the
+    // submitter will look for later, so identity comes from the verified
+    // session — never from the request body.
+    const { user, admin, response: authFailure } = await requireUser(req, corsHeaders)
+    if (authFailure) return authFailure
+    const attribution = attributionFor(user)
+    if (rateLimited(`tab-pr:${user!.id}`)) {
+      return bad(429, 'Too many submissions — try again later')
+    }
 
     const githubToken = Deno.env.get('GITHUB_PAT')
     if (!githubToken) throw new Error('GITHUB_PAT not configured')
@@ -80,8 +90,7 @@ serve(async (req) => {
       })
 
     const body: TabPrRequest = await req.json()
-    const { type, title, workId, instrument, otf, comment, submittedBy } = body
-    const attribution = submittedBy || 'Rando Calrissian'
+    const { type, title, workId, instrument, otf, comment } = body
 
     if (type !== 'tab-correction' && type !== 'tab-submission') {
       return bad(400, 'Bad type')
@@ -193,6 +202,16 @@ MERGE to publish.*`
     await gh(`/issues/${prJson.number}/labels`, {
       method: 'POST',
       body: JSON.stringify({ labels: [type] }),
+    })
+
+    // Log the write so a contributor surface can find it later (Phase 4a)
+    await admin!.from('submission_log').insert({
+      user_id: user!.id,
+      action: type === 'tab-correction' ? 'tab_correction' : 'tab_submit',
+      target_id: targetWorkId,
+      ip_address: ip === 'unknown' ? null : ip,
+      user_agent: req.headers.get('user-agent') || null,
+      metadata: { title, instrument, pr_number: prJson.number },
     })
 
     return new Response(

@@ -154,7 +154,10 @@ def process_changed(changed: list, body: str, pr_number: str, pr_author: str,
     """Process every changed works/*.otf.json. Returns the work dirs."""
     meta = {
         'title': extract_field(body, 'Title'),
-        'attribution': extract_field(body, 'Submitted by') or 'Rando Calrissian',
+        # PR bodies always carry a verified submitter now (identity is
+        # derived server-side in create-tab-pr); this fallback only covers
+        # hand-opened PRs.
+        'attribution': extract_field(body, 'Submitted by') or 'Unknown submitter',
         'comment': None,
         'pr_number': pr_number,
         'pr_author': pr_author,

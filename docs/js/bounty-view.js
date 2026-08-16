@@ -437,8 +437,9 @@ export function renderBountyView(container) {
     });
 
     // Wire up CTA buttons
+    // Requesting a song needs no account (Phase 2a). Requesting a PART
+    // (below) still does — bounties are Supabase rows keyed to auth.uid().
     container.querySelector('#bounty-request-song-btn')?.addEventListener('click', () => {
-        if (!requireLogin('request songs')) return;
         openAddSongPicker({ mode: 'request' });
     });
 

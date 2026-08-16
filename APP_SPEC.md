@@ -596,7 +596,7 @@ Users can report problems with songs without needing a GitHub account:
 - Radio options: Wrong chord, Wrong lyric, Missing section, Other
 - Optional description field
 - Creates a GitHub issue via Supabase edge function
-- Attribution: logged-in user name or "Rando Calrissian" for anonymous
+- Attribution: derived server-side from the session, or "Anonymous"
 
 ### 19. Song Request
 

@@ -230,8 +230,9 @@ def main():
         print("Error: Could not find ChordPro content in issue body")
         sys.exit(1)
 
-    # Use submitted_by from web UI if available, otherwise use GitHub issue author
-    # "Rando Calrissian" = anonymous user from the web UI
+    # Use submitted_by from web UI if available, otherwise use GitHub issue author.
+    # Web-UI corrections require login, so submitted_by is a verified identity
+    # derived server-side by create-song-issue — never client-supplied.
     submitter = extract_submitted_by(issue_body) or issue_author
 
     # Add correction provenance metadata
