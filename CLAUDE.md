@@ -403,6 +403,7 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 | `auto-label-issues.yml` | New issues | Automatically labels issues |
 | `cleanup-pending.yml` | Scheduled | Cleans up stale pending songs |
 | `reconcile-pending.yml` | Hourly (`42 * * * *`) + manual | Retries `pending_songs` rows that never reached `works/`, prints the drift count, and opens/updates one alert issue if any stay stuck |
+| `sync-community-input.yml` | Hourly (`27 * * * *`) + manual | Syncs trusted-user tag downvotes to `docs/data/tag_overrides.json` (auto-applied at next index build) and exports `genre_suggestions` to `docs/data/user_genre_suggestions.json` (review-only, not auto-applied) |
 
 ## Chrome DevTools MCP
 
