@@ -10,38 +10,47 @@ Serverless functions that run on Supabase Edge (Deno runtime).
 
 | Function | Purpose | Trigger | Source |
 |----------|---------|---------|--------|
-| `create-song-issue` | Create GitHub issue for song submissions/corrections | POST from editor.js | `functions/create-song-issue/index.ts` |
 | `create-flag-issue` | Create GitHub issue for song problem reports | POST from flags.js | `functions/create-flag-issue/index.ts` |
 | `create-song-request` | Create GitHub issue for song requests | POST from main.js | `functions/create-song-request/index.ts` |
 | `create-superuser-request` | Create GitHub issue for super-user access requests | POST from superuser-request.js | `functions/create-superuser-request/index.ts` |
-| `auto-commit-song` | Commit a pending_songs row to the GitHub repo | POST from editor.js (trusted-user save) | `functions/auto-commit-song/index.ts` |
+| `auto-commit-song` | Gate + classify a pending_songs row, then dispatch the write to CI | POST from editor.js (any logged-in save) | `functions/auto-commit-song/index.ts` |
 | `cleanup-pending` | Remove pending songs already committed | `.github/workflows/cleanup-pending.yml` after a successful deploy | `functions/cleanup-pending/index.ts` |
 | `reconcile-pending` | Retry rows the live commit path failed, and report the drift | `.github/workflows/reconcile-pending.yml`, hourly | `functions/reconcile-pending/index.ts` |
 
-**Shared code (`functions/_shared/`)** — `commit-song.ts` holds the one copy of
-the pending-row-to-`works/` commit logic. `auto-commit-song` (live path) and
-`reconcile-pending` (hourly retry) both import it, so a retry runs exactly the
-code the original attempt ran. Supabase bundles relative imports at deploy
-time, so **redeploy both functions** whenever `_shared/commit-song.ts` changes.
+**Shared code (`functions/_shared/`)**
+
+- `identity.ts` — verified identity (`requireUser` / `optionalUser` /
+  `attributionFor`). The client never says who it is.
+- `pending-dispatch.ts` — the phase 2b change gate: durable per-user rate
+  limit counted from `submission_log`, `classifyChange` (create / update /
+  fork-to-arrangement), and `dispatchPendingCommit`, which fires the
+  `pending-commit` repository_dispatch. **No edge function authors work.yaml
+  any more** — `.github/workflows/process-pending.yml` runs
+  `scripts/lib/works_writer.py`, the repo's one writer.
+- `commit-song.ts` — raw Contents-API plumbing plus the document-attachment
+  path (deleted with the doc-upload feature in phase 2d).
+
+`auto-commit-song` (live path) and `reconcile-pending` (hourly retry) both
+import `pending-dispatch.ts`, so a retry classifies exactly the way the
+original attempt did. Supabase bundles relative imports at deploy time, so
+**redeploy both functions** whenever anything in `_shared/` changes.
 
 `reconcile-pending` is gated on the service role key itself (not merely a valid
-project JWT — the anon key is public), commits at most 25 rows per run, and
+project JWT — the anon key is public), handles at most 25 rows per run, and
 skips rows younger than 15 minutes so it cannot race an in-flight
 `auto-commit-song`. It always returns HTTP 200 with `drift` (the count of rows
 where `github_committed = false`) and `stuckCount`; the workflow fails and
 opens/updates a single "Reconciler: pending songs stuck uncommitted" issue when
-`stuckCount > 0`. `POST {"dryRun": true}` measures drift without committing.
+`stuckCount > 0`. `POST {"dryRun": true}` measures drift without dispatching.
+Rows are marked `github_committed` by the workflow after its push lands —
+never by a function, which is what used to let `cleanup-pending` reap songs
+that had not actually reached git.
 
-All functions:
-- Use GitHub API to create issues (no user GitHub auth required)
-- Include submitter attribution in issue body
-- Return issue number on success
-
-**Deployment:**
+**Deployment:** `.github/workflows/deploy-functions.yml` deploys on push to
+main. To deploy by hand:
 ```bash
-supabase functions deploy create-song-issue
-supabase functions deploy create-flag-issue
-supabase functions deploy create-song-request
+supabase functions deploy auto-commit-song
+supabase functions deploy reconcile-pending
 ```
 
 ### Migrations (`migrations/`)
@@ -63,8 +72,8 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `list_invites` - Invite tokens for list co-ownership
 - `admin_users` - Admin users who can delete songs
 - `deleted_songs` - Soft-deleted songs (excluded from index at build time)
-- `trusted_users` - Users with instant edit privileges
-- `pending_songs` - Trusted user edits awaiting GitHub commit
+- `trusted_users` - Users allowed to edit someone else's chart **in place** (everyone else's edit forks to a new arrangement)
+- `pending_songs` - Any logged-in user's submission, live in the overlay, awaiting the GitHub commit
 
 ### Authentication
 
@@ -102,16 +111,30 @@ INSERT INTO admin_users (user_id) VALUES ('user-uuid-here');
 ./scripts/utility sync-deleted-songs
 ```
 
-### Trusted User Workflow
+### Contribution Workflow (phase 2b)
 
-Trusted users can make instant edits that appear immediately without approval:
+Every logged-in user's submission takes the same path — trust gates edit
+rights, not speed:
 
-1. User is added to `trusted_users` table (manual admin action or via approved super-user request)
-2. When editing, `isTrustedUser()` checks if user is trusted
-3. Trusted users see "Save Changes" instead of "Submit for Review"
-4. Edits are saved to `pending_songs` table with `github_committed: false`
-5. Song appears immediately in search (merged with index at load time via `refreshPendingSongs()`)
-6. Background job (`auto-commit-song`) commits to GitHub repo
+1. The editor writes the row to `pending_songs` (`github_committed: false`).
+   RLS allows any authenticated user to insert rows they own; in-place update
+   of an existing row stays owner-or-trusted.
+2. The song appears immediately in search (`refreshPendingSongs()` merges the
+   overlay at load time).
+3. `auto-commit-song` verifies row ownership, enforces the durable per-user
+   rate limit, classifies the change, and fires the `pending-commit`
+   repository_dispatch.
+4. `.github/workflows/process-pending.yml` writes it to `works/` via
+   `works_writer`, pushes, then flips `github_committed`.
+
+Classification:
+
+| Situation | Result |
+|---|---|
+| no work at the target id | `create` |
+| the caller's uuid appears in the work's `provenance.submitted_by` | `update` in place |
+| the caller is in `trusted_users` | `update` in place |
+| anything else | `fork` — a new arrangement part; the original is untouched |
 
 **To add a trusted user:**
 ```sql
@@ -138,7 +161,7 @@ supabase start
 supabase db push
 
 # Test edge functions locally
-supabase functions serve create-song-issue --env-file .env.local
+supabase functions serve auto-commit-song --env-file .env.local
 ```
 
 ## Environment Variables

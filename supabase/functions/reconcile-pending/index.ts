@@ -10,18 +10,25 @@
 // service role key: it commits to the repo, so it must never be reachable with
 // the (public) anon key.
 //
-// Response shape (always HTTP 200 so the caller can read the numbers; the
-// workflow decides what counts as a failure):
+// Phase 2b: the retry no longer commits content itself. It re-fires the same
+// `pending-commit` repository_dispatch the live path uses, so a reconciled row
+// and a first-try row go through one writer (scripts/lib/works_writer.py) with
+// one classification. `committed` therefore counts rows successfully
+// RE-DISPATCHED; the workflow flips github_committed once its push lands, and
+// a row that is still false next hour gets dispatched again (process_pending
+// is idempotent on the row's content marker, so a duplicate dispatch is a
+// no-op rather than a second work).
+//
+// Response shape is unchanged (always HTTP 200 so the caller can read the
+// numbers; the workflow decides what counts as a failure):
 //   { success, drift, graceMinutes, eligible, attempted, committed,
 //     stuckCount, stuck: [...], unretryable: [...], remaining }
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2"
-import {
-  commitPendingSong,
-  unretryableReason,
-  type PendingSong,
-} from "../_shared/commit-song.ts"
+import { unretryableReason, type PendingSong } from "../_shared/commit-song.ts"
+import { attributionFor } from "../_shared/identity.ts"
+import { classifyChange, dispatchPendingCommit } from "../_shared/pending-dispatch.ts"
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -88,7 +95,7 @@ serve(async (req) => {
     // Every uncommitted row: this count IS the drift between Live and Durable.
     const { data: rows, error } = await supabase
       .from('pending_songs')
-      .select('id, replaces_id, title, artist, composer, content, key, mode, tags, created_at')
+      .select('id, replaces_id, title, artist, composer, content, key, mode, tags, created_at, created_by')
       .eq('github_committed', false)
       .order('created_at', { ascending: true })
 
@@ -130,21 +137,49 @@ serve(async (req) => {
       if (dryRun) continue
 
       try {
-        await commitPendingSong(row, githubToken as string)
-
-        const { error: updateError } = await supabase
-          .from('pending_songs')
-          .update({ github_committed: true })
-          .eq('id', row.id)
-
-        if (updateError) {
-          // The files ARE in git; failing to flip the flag just means we try
-          // again next hour (the commit is idempotent). Still worth alerting.
-          throw new Error(`Committed but failed to mark committed: ${updateError.message}`)
+        const actorId = (row as { created_by?: string | null }).created_by
+        if (!actorId) {
+          // Pre-2b rows can predate mandatory ownership. Without an owner
+          // there is nobody to attribute the work to and no way to decide
+          // update-vs-fork, so it needs a human, not another retry.
+          throw new Error('row has no created_by — cannot classify or attribute')
         }
 
+        const { data: trustedUser } = await supabase
+          .from('trusted_users')
+          .select('user_id')
+          .eq('user_id', actorId)
+          .maybeSingle()
+
+        const classification = await classifyChange({
+          rowId: row.id,
+          replacesId: row.replaces_id,
+          userId: actorId,
+          trusted: !!trustedUser,
+          githubToken: githubToken as string,
+        })
+
+        let actor = actorId
+        try {
+          const { data: userData } = await supabase.auth.admin.getUserById(actorId)
+          actor = attributionFor(userData?.user ?? null)
+        } catch (_e) {
+          // Attribution is nice-to-have; the uuid still identifies the author.
+        }
+
+        await dispatchPendingCommit({
+          row_id: row.id,
+          mode: classification.mode,
+          work_id: classification.workId,
+          actor_id: actorId,
+          actor,
+        }, githubToken as string)
+
+        // github_committed is flipped by process-pending.yml once its push
+        // lands. Flipping it here would re-create the 0a bug: a row marked
+        // durable before it actually is, then reaped by cleanup-pending.
         committed.push(row.id)
-        console.log(`Reconciled ${row.id}`)
+        console.log(`Re-dispatched ${row.id} as ${classification.mode}`)
       } catch (e) {
         const message = e instanceof Error ? e.message : String(e)
         console.error(`Failed to reconcile ${row.id}:`, message)

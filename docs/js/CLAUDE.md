@@ -621,15 +621,21 @@ Handles authentication and cloud sync. Key exports:
 
 ## Recent Features (Jan-Feb 2026)
 
-### Trusted User Editing
+### Contributing (phase 2b — trust gates edit rights, not speed)
 
-Trusted users can make instant edits without waiting for approval:
+Every logged-in user's submission takes the same path:
 
-- `isTrustedUser()` checks the `trusted_users` table
-- Trusted users see "Save Changes" instead of "Submit for Review"
-- Edits saved to `pending_songs` table, visible immediately
-- `refreshPendingSongs()` merges pending songs into `allSongs`
-- Regular users can request trusted status via super-user request modal
+- saved to `pending_songs` → visible immediately (`refreshPendingSongs()`
+  merges the overlay into `allSongs`)
+- `auto-commit-song` classifies it and fires a `pending-commit`
+  repository_dispatch; `process-pending.yml` lands it in `works/`
+- the response says what happened: `{mode: 'create' | 'update' | 'fork'}`
+- **fork**: editing content you didn't submit never overwrites it — the chart
+  lands as a new arrangement on the same work and the original stays put
+- `isTrustedUser()` (the `trusted_users` table) now only decides whether an
+  edit of someone else's chart may land **in place** instead of forking, and
+  still gates the legacy document-upload path
+- the GitHub-issue submission flow (`create-song-issue`) is gone
 
 ### Auto-hiding chrome
 
@@ -707,8 +713,9 @@ string from the verified user (`full_name` → `email` → `user:<id>`). There i
 no `submittedBy` request field and no "Rando Calrissian" fallback.
 
 - **Content writes require login** — song submission/correction
-  (`create-song-issue`), tab submission/correction (`create-tab-pr`). No
-  token, no write: the function answers 401 and the client refuses to post.
+  (`pending_songs` + `auto-commit-song`), tab submission/correction
+  (`create-tab-pr`). No token, no write: the function answers 401 and the
+  client refuses to post.
 - **Reports and requests stay anonymous-capable** — `create-flag-issue`
   always, `create-song-request` in its issue branch. Anonymous callers are
   attributed "Anonymous" and throttled by IP.

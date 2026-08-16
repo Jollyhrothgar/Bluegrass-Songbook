@@ -36,7 +36,9 @@ describe('triggerAutoCommit', () => {
         const fetchMock = vi.fn(async () => ({ ok: true, status: 200, json: async () => ({ success: true }) }));
         vi.stubGlobal('fetch', fetchMock);
 
-        await expect(triggerAutoCommit(ENTRY)).resolves.toBeUndefined();
+        // Resolves with the function's body: the server's classification of
+        // what the submission actually did (create / update / fork).
+        await expect(triggerAutoCommit(ENTRY)).resolves.toEqual({ success: true });
 
         expect(fetchMock).toHaveBeenCalledOnce();
         const [url, init] = fetchMock.mock.calls[0];

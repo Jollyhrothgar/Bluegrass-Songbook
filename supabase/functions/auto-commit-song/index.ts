@@ -1,25 +1,47 @@
-// Supabase Edge Function to auto-commit songs to GitHub for trusted users
-// Called after a pending_songs entry is created - commits directly to the repo
+// Change gate for pending_songs -> works/.
 //
-// The commit itself lives in ../_shared/commit-song.ts so that the hourly
-// retry pass (reconcile-pending) runs exactly the same code path. Redeploy
-// both functions when that module changes.
+// Phase 2b of docs/plans/contribution-pipeline.md. This function used to be
+// two things at once: a trusted-user permission check, and a writer that
+// authored work.yaml in TypeScript and PUT it to the Contents API. Both are
+// gone.
+//
+// It is now a gate and a dispatcher:
+//
+//   1. verify the caller owns the pending_songs row they are asking to commit
+//   2. durable per-user rate limit (counted from submission_log)
+//   3. classify the change — create / update / fork-to-arrangement
+//   4. repository_dispatch to .github/workflows/process-pending.yml, which
+//      runs scripts/lib/process_pending.py -> works_writer (THE writer)
+//
+// Trusted status no longer gates SPEED — any logged-in user's row reaches
+// git this way. It only decides whether an edit of somebody else's content
+// may land in place, or forks into a new arrangement instead.
+//
+// The document-attachment branch is untouched; phase 2d removes the whole
+// doc-upload feature, including that branch and commitAttachment.
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2"
+import { commitAttachment, type PendingSong } from "../_shared/commit-song.ts"
+import { attributionFor, requireUser } from "../_shared/identity.ts"
 import {
-  commitAttachment,
-  commitPendingSong,
-  type PendingSong,
-} from "../_shared/commit-song.ts"
+  classifyChange,
+  dispatchPendingCommit,
+  RATE_LIMIT_PER_HOUR,
+  submissionsInLastHour,
+} from "../_shared/pending-dispatch.ts"
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 }
 
+const json = (body: unknown, status = 200) =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+  })
+
 serve(async (req) => {
-  // Handle CORS preflight
   if (req.method === 'OPTIONS') {
     return new Response('ok', { headers: corsHeaders })
   }
@@ -30,55 +52,33 @@ serve(async (req) => {
       throw new Error('GITHUB_PAT not configured')
     }
 
-    const supabaseUrl = Deno.env.get('SUPABASE_URL')
-    const supabaseServiceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')
+    // Identity comes from the verified session (phase 2a) — never the body.
+    const { user, admin, response } = await requireUser(req, corsHeaders)
+    if (response) return response
+    const supabaseAdmin = admin!
+    const caller = user!
 
-    if (!supabaseUrl || !supabaseServiceKey) {
-      throw new Error('Supabase credentials not configured')
-    }
-
-    // Verify caller is a trusted user
-    const authHeader = req.headers.get('Authorization')
-    if (!authHeader) {
-      return new Response(
-        JSON.stringify({ error: 'Missing Authorization header' }),
-        { status: 401, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-      )
-    }
-
-    const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey)
-    const token = authHeader.replace('Bearer ', '')
-    const { data: { user }, error: authError } = await supabaseAdmin.auth.getUser(token)
-
-    if (authError || !user) {
-      return new Response(
-        JSON.stringify({ error: 'Invalid or expired token' }),
-        { status: 401, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-      )
-    }
+    const entry: PendingSong = await req.json()
 
     const { data: trustedUser } = await supabaseAdmin
       .from('trusted_users')
       .select('user_id')
-      .eq('user_id', user.id)
-      .single()
+      .eq('user_id', caller.id)
+      .maybeSingle()
+    const trusted = !!trustedUser
 
-    if (!trustedUser) {
-      return new Response(
-        JSON.stringify({ error: 'Not authorized — trusted user status required' }),
-        { status: 403, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-      )
-    }
-
-    const entry: PendingSong = await req.json()
-
-    // Handle document attachment uploads (no lead sheet content required)
+    // --- attachment branch: behaviour unchanged, owned by phase 2d --------
+    // Still trusted-only. Opening the TEXT path to everyone is the point of
+    // 2b; binaries are not text — they can't be diffed, forked or deduped,
+    // which is why 2d deletes this branch outright rather than widening it.
     if (entry.attachment && entry.id) {
+      if (!trusted) {
+        return json({ error: 'Document upload requires trusted user status' }, 403)
+      }
       const { binaryPath } = await commitAttachment(entry, githubToken)
 
-      // Log to submission_log
       await supabaseAdmin.from('submission_log').insert({
-        user_id: user.id,
+        user_id: caller.id,
         action: 'doc_upload',
         target_id: entry.id,
         ip_address: req.headers.get('x-forwarded-for') || req.headers.get('cf-connecting-ip') || null,
@@ -86,58 +86,85 @@ serve(async (req) => {
         metadata: { title: entry.title, filename: entry.attachment.filename },
       })
 
-      return new Response(
-        JSON.stringify({ success: true, binaryPath }),
-        { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-      )
+      return json({ success: true, binaryPath })
     }
 
-    // Validate required fields for lead sheet submissions
-    if (!entry.id || !entry.title || !entry.content) {
-      return new Response(
-        JSON.stringify({ error: 'Missing required fields: id, title, and content are required' }),
-        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-      )
+    if (!entry.id) {
+      return json({ error: 'Missing required field: id' }, 400)
     }
 
-    const { workPath, proPath } = await commitPendingSong(entry, githubToken)
-
-    // Mark as committed in pending_songs
-    const { error: updateError } = await supabaseAdmin
+    // --- 1. the row must exist, and must belong to the caller -------------
+    // The body is a convenience echo of what the client just wrote; the row
+    // in the table is the truth, and the workflow reads it from there.
+    const { data: row, error: rowError } = await supabaseAdmin
       .from('pending_songs')
-      .update({ github_committed: true })
+      .select('id, replaces_id, title, artist, content, created_by, github_committed')
       .eq('id', entry.id)
+      .maybeSingle()
 
-    if (updateError) {
-      console.error('Failed to mark as committed:', updateError)
-      // Don't fail the request - the commit succeeded
+    if (rowError) {
+      console.error('Failed to read pending_songs row:', rowError)
+      throw new Error(`Could not read pending_songs row: ${rowError.message}`)
+    }
+    if (!row) {
+      return json({ error: `No pending_songs row for '${entry.id}' — save it before asking for a commit` }, 404)
+    }
+    if (row.created_by !== caller.id) {
+      return json({ error: 'That submission belongs to someone else' }, 403)
+    }
+    if (!row.title || !row.content) {
+      return json({ error: 'Missing required fields: title and content are required' }, 400)
     }
 
-    // Log to submission_log
-    await supabaseAdmin.from('submission_log').insert({
-      user_id: user.id,
-      action: 'song_submit',
-      target_id: entry.id,
-      ip_address: req.headers.get('x-forwarded-for') || req.headers.get('cf-connecting-ip') || null,
-      user_agent: req.headers.get('user-agent') || null,
-      metadata: { title: entry.title, artist: entry.artist },
+    // --- 2. durable rate limit -------------------------------------------
+    const recent = await submissionsInLastHour(supabaseAdmin, caller.id)
+    if (recent >= RATE_LIMIT_PER_HOUR) {
+      return json({
+        error: `Rate limit reached (${RATE_LIMIT_PER_HOUR} submissions per hour). Your song is saved and live — it will sync shortly.`,
+      }, 429)
+    }
+
+    // --- 3. classify ------------------------------------------------------
+    const classification = await classifyChange({
+      rowId: row.id,
+      replacesId: row.replaces_id,
+      userId: caller.id,
+      trusted,
+      githubToken,
     })
 
-    return new Response(
-      JSON.stringify({
-        success: true,
-        workPath,
-        proPath,
-      }),
-      { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-    )
+    // --- 4. dispatch ------------------------------------------------------
+    await dispatchPendingCommit({
+      row_id: row.id,
+      mode: classification.mode,
+      work_id: classification.workId,
+      actor_id: caller.id,
+      actor: attributionFor(caller),
+    }, githubToken)
+
+    await supabaseAdmin.from('submission_log').insert({
+      user_id: caller.id,
+      action: 'song_submit',
+      target_id: row.id,
+      ip_address: req.headers.get('x-forwarded-for') || req.headers.get('cf-connecting-ip') || null,
+      user_agent: req.headers.get('user-agent') || null,
+      metadata: { title: row.title, artist: row.artist, mode: classification.mode },
+    })
+
+    // github_committed is flipped by the workflow AFTER the push lands, not
+    // here. Marking it now is what used to let cleanup-pending reap a row
+    // whose commit had not actually happened.
+    return json({
+      success: true,
+      mode: classification.mode,
+      workId: classification.workId,
+      reason: classification.reason,
+      dispatched: true,
+    })
 
   } catch (error) {
-    console.error('Error committing song:', error)
+    console.error('Error dispatching song commit:', error)
     const message = error instanceof Error ? error.message : String(error)
-    return new Response(
-      JSON.stringify({ error: message || 'Failed to commit song' }),
-      { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-    )
+    return json({ error: message || 'Failed to commit song' }, 500)
   }
 })

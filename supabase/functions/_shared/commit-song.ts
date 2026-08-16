@@ -1,12 +1,17 @@
-// Shared GitHub commit logic for pending_songs -> works/.
+// Shared GitHub helpers for the edge functions.
 //
-// Imported by two functions:
-//   auto-commit-song   the live, user-triggered path (trusted user saves a song)
-//   reconcile-pending  the hourly retry pass for rows the live path failed to commit
+// SCOPE NOTE (phase 2b): this module no longer authors work.yaml for song
+// submissions. `buildWorkYaml` / `commitPendingSong` are gone — a pending row
+// now becomes files in works/ via repository_dispatch ->
+// .github/workflows/process-pending.yml -> scripts/lib/works_writer.py, the
+// repo's ONE writer. See ./pending-dispatch.ts.
 //
-// This is deliberately the ONLY place that knows how a pending row becomes
-// files in the repo. The two callers differ only in how they authenticate and
-// what they do afterwards, so the commit itself must not fork.
+// What remains here is the raw Contents-API plumbing plus the document
+// attachment path, which phase 2d deletes along with the doc-upload feature.
+//
+// Imported by:
+//   auto-commit-song   the live, user-triggered path
+//   reconcile-pending  the hourly retry pass
 //
 // Deployment note: Supabase bundles relative imports, so BOTH functions must be
 // redeployed after changing this file.
@@ -34,27 +39,6 @@ export interface PendingSong {
   attachment?: Attachment
   create_placeholder?: boolean
   instrument?: string
-}
-
-export function buildWorkYaml(entry: PendingSong): string {
-  const composers = entry.composer ? `[${entry.composer}]` : '[]'
-  const today = new Date().toISOString().split('T')[0]
-
-  return `id: ${entry.id}
-title: "${entry.title.replace(/"/g, '\\"')}"
-artist: "${(entry.artist || '').replace(/"/g, '\\"')}"
-composers: ${composers}
-default_key: ${entry.key || 'C'}
-tags: []
-parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: trusted-user
-      imported_at: '${today}'
-`
 }
 
 export function buildPlaceholderWorkYaml(entry: PendingSong, docFilename: string, label: string): string {
@@ -224,35 +208,6 @@ export function unretryableReason(entry: PendingSong): string | null {
   if (!entry.title) return 'missing title'
   if (!entry.content) return 'missing content (doc-upload rows carry no retryable payload)'
   return null
-}
-
-/**
- * Commit a pending lead-sheet row to works/{id}/. Idempotent: re-running
- * overwrites the same two files with the same content, so a retry after a
- * partial failure is safe.
- */
-export async function commitPendingSong(
-  entry: PendingSong,
-  githubToken: string
-): Promise<{ workPath: string; proPath: string }> {
-  const reason = unretryableReason(entry)
-  if (reason) {
-    throw new Error(`Cannot commit ${entry.id || '(no id)'}: ${reason}`)
-  }
-
-  const workYaml = buildWorkYaml(entry)
-  const leadSheetPro = entry.content as string
-
-  const action = entry.replaces_id ? 'Update' : 'Add'
-  const commitMessage = `${action} ${entry.title}${entry.artist ? ` by ${entry.artist}` : ''}\n\nSubmitted via trusted user flow`
-
-  const workPath = `works/${entry.id}/work.yaml`
-  const proPath = `works/${entry.id}/lead-sheet.pro`
-
-  await commitFile(workPath, workYaml, commitMessage, githubToken)
-  await commitFile(proPath, leadSheetPro, commitMessage, githubToken)
-
-  return { workPath, proPath }
 }
 
 /**

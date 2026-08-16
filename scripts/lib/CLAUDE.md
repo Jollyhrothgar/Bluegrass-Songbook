@@ -76,8 +76,9 @@ scripts/lib/
 ├── fetch_tune.py         # Fetch tunes from TuneArch by URL
 ├── search_index.py       # Search index utilities and testing
 ├── add_song.py           # Add a song to manual/parsed/
-├── process_submission.py # GitHub Action: process song-submission issues
-├── process_correction.py # GitHub Action: process song-correction issues
+├── process_pending.py    # GitHub Action: land one pending_songs row in works/
+├── process_submission.py # RETIRED flow (issue-based); still imported by tests
+├── process_correction.py # RETIRED flow (issue-based); kept for reference
 ├── dedup_scorer.py       # Is this submission already a work? (containment on lyrics)
 ├── dedup_works.py        # Whole-corpus duplicate detection → merge plan JSON
 ├── merge_works.py        # Execute a merge plan (redirects included)
@@ -655,19 +656,40 @@ Adds a `.pro` file to `sources/manual/parsed/` and rebuilds index.
 ./scripts/utility add-song song.pro --skip-index-rebuild
 ```
 
-## process_submission.py / process_correction.py
+## process_pending.py — the live contribution path
 
-Called by GitHub Actions when issues are approved.
+Called by `.github/workflows/process-pending.yml` on the `pending-commit`
+repository_dispatch that `auto-commit-song` (or the hourly reconciler) fires.
 
-**Trigger**: Issue labeled `song-submission` + `approved` (or `song-correction`)
+**Trigger**: any logged-in user saves a song in the editor. The row lands in
+Supabase `pending_songs` (live in the overlay in seconds); the edge function
+classifies the change and dispatches; this script makes it durable.
+
+**Env**: `PENDING_ROW_ID`, `PENDING_MODE`, `PENDING_WORK_ID`, `PENDING_ACTOR`,
+`SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`.
 
 **Process**:
-1. Extract ChordPro from issue body (```chordpro block)
-2. Extract song ID from issue body
-3. Write to `sources/manual/parsed/{id}.pro`
-4. Add to `protected.txt` (for corrections)
-5. Rebuild index
-6. Commit changes
+1. `GET /rest/v1/pending_songs?id=eq.<row>` (urllib — no SDK in the write path)
+2. Hand the dispatched mode to `works_writer`:
+   - `create` → `create_work(on_collision='suffix')`
+   - `update` → `update_part` on the default lead sheet
+   - `fork` → `fork_to_arrangement`, `x_version_*` from the submitter identity
+3. The workflow commits, pushes with rebase-retry, then marks the row
+   `github_committed`.
+
+**Idempotence**: every part written carries
+`provenance.source_id = pending:<row id>:<content sha>`. A replayed dispatch
+finds the marker and no-ops; a genuine re-edit changes the sha and applies.
+The mode is decided server-side in `supabase/functions/_shared/pending-dispatch.ts`
+— the client cannot claim "update" on somebody else's chart.
+
+## process_submission.py / process_correction.py — RETIRED
+
+The GitHub-issue content flow (`process-song-submission.yml`,
+`process-song-correction.yml`, `create-song-issue`) was retired in phase 2b:
+with additive-instant there is nothing for a review queue to review. These
+modules no longer run in CI. `publish_to_works` is still imported by
+`tests/test_curation.py` as a works_writer caller fixture.
 
 ## dedup_scorer.py — is this submission already a work?
 

@@ -1,0 +1,143 @@
+name: Process Pending Submission
+
+# Phase 2b of docs/plans/contribution-pipeline.md (issues #221, #222).
+#
+# The durable half of "instant to add": auto-commit-song (or the hourly
+# reconciler) classifies a pending_songs row and fires a `pending-commit`
+# repository_dispatch; this workflow does the actual write to works/ through
+# scripts/lib/works_writer.py — the repo's one writer.
+#
+# Nothing here authors YAML. The edge function decided create / update /
+# fork; process_pending.py hands that decision to the writer and the writer
+# enforces the rules (never overwrite silently, never resurrect a suppressed
+# id, provenance always present, a fork never displaces the original).
+#
+# The index is deliberately NOT rebuilt here: docs/data/ is generated,
+# gitignored tier-4 data (see "Data Tiers" in CLAUDE.md) and the Pages deploy
+# rebuilds it from works/ on every push.
+
+on:
+  repository_dispatch:
+    types: [pending-commit]
+
+# One at a time. Parallel dispatches would each rebase onto a moving main and
+# two forks of the same work would race on the same work.yaml.
+concurrency:
+  group: process-pending
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Write the pending row to works/
+        id: write
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          # client_payload is data, never shell. Mapped through env so a
+          # crafted value cannot escape into the command line.
+          PENDING_ROW_ID: ${{ github.event.client_payload.row_id }}
+          PENDING_MODE: ${{ github.event.client_payload.mode }}
+          PENDING_WORK_ID: ${{ github.event.client_payload.work_id }}
+          PENDING_ACTOR: ${{ github.event.client_payload.actor }}
+        run: |
+          set -euo pipefail
+          if [ -z "${SUPABASE_URL}" ] || [ -z "${SUPABASE_SERVICE_ROLE_KEY}" ]; then
+            echo "::error::SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY secrets are not set"
+            exit 1
+          fi
+          uv run python scripts/lib/process_pending.py
+
+      - name: Refuse to mark a skipped row durable
+        if: steps.write.outputs.written != 'true' && steps.write.outputs.skipped_reason != 'already-applied'
+        env:
+          REASON: ${{ steps.write.outputs.skipped_reason }}
+          ROW_ID: ${{ github.event.client_payload.row_id }}
+        run: |
+          echo "::error::Pending row '${ROW_ID}' was not written (${REASON}). It stays live in the overlay and uncommitted; it needs a human."
+          exit 1
+
+      - name: Commit and push
+        env:
+          MODE: ${{ steps.write.outputs.mode }}
+          WORK_ID: ${{ steps.write.outputs.work_id }}
+          ACTOR: ${{ github.event.client_payload.actor }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add works/
+
+          if git diff --staged --quiet; then
+            echo "Nothing to commit — the row was already durable."
+          else
+            git commit -m "${MODE}: ${WORK_ID}" -m "Contributed by ${ACTOR} via the songbook editor"
+          fi
+
+          # Retry with rebase in case of concurrent pushes, and fail loudly:
+          # falling out of the loop silently would report a row as durable
+          # when it never reached the remote.
+          pushed=0
+          for i in 1 2 3; do
+            if git push; then pushed=1; break; fi
+            echo "Push failed, attempt $i — pulling and retrying..."
+            git pull --rebase
+          done
+          if [ "$pushed" -ne 1 ]; then
+            echo "::error::Push failed after 3 attempts — the submission is NOT durable"
+            exit 1
+          fi
+
+      - name: Mark the row committed
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ROW_ID: ${{ github.event.client_payload.row_id }}
+        run: |
+          set -euo pipefail
+          # Only now: the flag means "durable in git", and flipping it early is
+          # what let cleanup-pending reap songs mid-jam (phase 0a).
+          encoded=$(printf '%s' "${ROW_ID}" | jq -sRr @uri)
+          code=$(curl -sS -o mark.json -w '%{http_code}' \
+            -X PATCH "${SUPABASE_URL}/rest/v1/pending_songs?id=eq.${encoded}" \
+            -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Content-Type: application/json" \
+            -H "Prefer: return=minimal" \
+            -d '{"github_committed": true}')
+
+          if [ "${code}" != "204" ] && [ "${code}" != "200" ]; then
+            echo "::error::Could not mark ${ROW_ID} committed (HTTP ${code})"
+            cat mark.json || true
+            exit 1
+          fi
+          echo "Marked ${ROW_ID} committed."
+
+      - name: Summary
+        if: always()
+        env:
+          MODE: ${{ steps.write.outputs.mode }}
+          WORK_ID: ${{ steps.write.outputs.work_id }}
+          PART: ${{ steps.write.outputs.part_file }}
+          ROW_ID: ${{ github.event.client_payload.row_id }}
+        run: |
+          {
+            echo "### Pending submission"
+            echo
+            echo "| field | value |"
+            echo "| --- | --- |"
+            echo "| row | \`${ROW_ID}\` |"
+            echo "| mode | ${MODE:-unknown} |"
+            echo "| work | \`${WORK_ID:-unknown}\` |"
+            echo "| part | \`${PART:-}\` |"
+          } >> "${GITHUB_STEP_SUMMARY}"

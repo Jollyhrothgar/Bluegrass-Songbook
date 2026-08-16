@@ -4,7 +4,8 @@
 // - data/archive.jsonl — everything the prune left off the shelf; fetched in
 //                        the background so deep links, lists and redirects to
 //                        archived works still resolve
-// - pending_songs      — Supabase overlay (trusted-user edits, submissions)
+// - pending_songs      — Supabase overlay: every logged-in user's submission,
+//                        live in seconds while the git commit catches up
 // - deleted/promoted   — Supabase curation overlays: the same suppression and
 //                        prune-rescue the index build applies, but instant
 //

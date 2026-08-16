@@ -70,9 +70,8 @@ gh api repos/:owner/:repo/milestones --jq '.[] | "\(.title): \(.open_issues) ope
 | `bug` | Something isn't working |
 | `feature-request` | Add something new that doesn't exist |
 | `technical-debt` | Non-blocking cleanup or improvements |
-| `song-submission` | New song variant or addition |
-| `song-correction` | Fix to existing song |
-| `approved` | Triggers GitHub Actions workflows |
+| `song-flag` | A reader reported a problem with a song (read-only report, no workflow) |
+| `approved` | Triggers the tune-request workflow |
 | `new-data-source` | New song collection to import |
 | `rfc` | Request for Comments - architectural decisions |
 
@@ -82,8 +81,13 @@ These label combinations trigger GitHub Actions:
 
 | Labels | Action |
 |--------|--------|
-| `song-submission` + `approved` | `process-song-submission.yml` - adds new song |
-| `song-correction` + `approved` | `process-song-correction.yml` - updates song |
+| `tune-request` + `approved` | `process-tune-request.yml` - imports a fiddle tune from TuneArch |
+
+Song content no longer arrives by issue. Since phase 2b of
+`docs/plans/contribution-pipeline.md`, any logged-in user's submission goes
+straight to `pending_songs` (live in seconds) and then to `works/` via the
+`pending-commit` dispatch. `song-submission` / `song-correction` labels and
+their workflows are retired.
 
 ## Common Workflows
 
