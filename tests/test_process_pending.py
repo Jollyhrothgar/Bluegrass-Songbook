@@ -9,6 +9,13 @@ lands through ``works_writer`` — so what is worth guarding here is:
 - a replayed dispatch is a no-op, not a second work / a stacked part
 - a genuine second edit of the same row is NOT mistaken for a replay
 - refusals are typed and loud (bad mode, empty content, no title)
+- the phase-3b dedup backstop diverts, holds, or stays out of the way
+
+The backstop tests use the ``tests/fixtures/dedup/`` charts, whose provenance
+is documented in ``tests/test_dedup_scorer.py``: the ``how-long-blues`` pair is
+the real #208 miss (a lyrics-only scrape and the same song submitted with
+chords), so "would this have been caught?" is asked here with the actual text
+that wasn't.
 """
 
 import pytest
@@ -16,10 +23,13 @@ import yaml
 
 import works_writer
 from process_pending import (
+    DEDUP_HOLD_REASON,
+    DedupBackstop,
     ProcessPendingError,
     already_applied,
     apply_row,
     content_marker,
+    owns_content,
 )
 
 CHORDPRO = "{meta: title Blue Moon of Kentucky}\n[G]Blue moon of Kentucky\n"
@@ -270,3 +280,233 @@ class TestRefusals:
 
         assert not result.written
         assert not (tmp_path / 'works' / 'blue-moon-of-kentucky').exists()
+
+
+# ============================================
+# Dedup backstop (phase 3b)
+# ============================================
+
+
+@pytest.fixture
+def dedup_fixtures(fixtures_path):
+    return fixtures_path / 'dedup'
+
+
+def seed_chart(tmp_path, work_id, title, content, *, submitted_by=OTHER_USER):
+    """An existing work carrying an arbitrary chart, for the scorer to find."""
+    works_writer.create_work(
+        tmp_path, work_id, title,
+        works_writer.PartSpec(
+            file='lead-sheet.pro', type='lead-sheet', format='chordpro',
+            default=True, content=content,
+            provenance={'source': 'user-submission',
+                        'source_id': f'pending:seed-{work_id}:0',
+                        'submitted_by': submitted_by},
+        ),
+        on_collision='fail', verbose=False)
+
+
+def hlb_row(content, **kw):
+    """A submission of How Long Blues under a fresh slug."""
+    base = dict(id='how-long-blues-1', title='How Long Blues',
+                artist='Del McCoury', composer='Leroy Carr', content=content,
+                key='E')
+    base.update(kw)
+    return row(**base)
+
+
+class TestBackstopRedirectsAnEnrichment:
+    """The #208 case: a richer chart must land ON the sparse work, not beside it."""
+
+    def test_unowned_enrichment_forks_onto_the_matched_work(
+            self, tmp_path, dedup_fixtures):
+        seed_chart(tmp_path, 'how-long-blues', 'How Long Blues',
+                   (dedup_fixtures / 'how-long-blues.pro').read_text(),
+                   submitted_by=OTHER_USER)
+        incoming = (dedup_fixtures / 'how-long-blues-1.pro').read_text()
+
+        result = apply_row(tmp_path, hlb_row(incoming), 'create',
+                           'how-long-blues-1', actor='Tim', verbose=False)
+
+        # No second slug — the whole point.
+        assert result.written
+        assert result.work_id == 'how-long-blues'
+        assert not (tmp_path / 'works' / 'how-long-blues-1').exists()
+
+        # Unowned, so it lands as an arrangement part: additive, and the
+        # original lyrics-only chart is untouched.
+        assert result.mode == 'fork-to-arrangement'
+        work = read_work(tmp_path, 'how-long-blues')
+        assert len(work['parts']) == 2
+        original, added = work['parts']
+        assert original['file'] == 'lead-sheet.pro'
+        assert original['default'] is True
+        assert added.get('default') is not True
+        assert added['provenance']['submitted_by'] == SUBMITTER
+
+    def test_owned_enrichment_updates_in_place(self, tmp_path, dedup_fixtures):
+        seed_chart(tmp_path, 'how-long-blues', 'How Long Blues',
+                   (dedup_fixtures / 'how-long-blues.pro').read_text(),
+                   submitted_by=SUBMITTER)
+        incoming = (dedup_fixtures / 'how-long-blues-1.pro').read_text()
+
+        result = apply_row(tmp_path, hlb_row(incoming), 'create',
+                           'how-long-blues-1', actor='Tim', verbose=False)
+
+        assert result.written
+        assert result.work_id == 'how-long-blues'
+        work = read_work(tmp_path, 'how-long-blues')
+        assert len(work['parts']) == 1
+        assert (tmp_path / 'works' / 'how-long-blues' /
+                'lead-sheet.pro').read_text() == incoming
+
+    def test_the_decision_says_what_it_did_and_why(self, tmp_path, dedup_fixtures):
+        seed_chart(tmp_path, 'how-long-blues', 'How Long Blues',
+                   (dedup_fixtures / 'how-long-blues.pro').read_text())
+        incoming = (dedup_fixtures / 'how-long-blues-1.pro').read_text()
+
+        backstop = DedupBackstop(tmp_path)
+        apply_row(tmp_path, hlb_row(incoming), 'create', 'how-long-blues-1',
+                  verbose=False, backstop=backstop)
+
+        decision = backstop.decision
+        assert decision.action == 'redirect'
+        assert decision.mode == 'fork'
+        assert decision.work_id == 'how-long-blues'
+        assert decision.verdict.outcome == 'enrich'
+        assert decision.verdict.auto_actionable
+        assert 'how-long-blues' in decision.reason
+        assert decision.outputs()['dedup_matched_work'] == 'how-long-blues'
+
+    def test_a_redispatch_of_a_redirected_row_is_a_no_op(
+            self, tmp_path, dedup_fixtures):
+        seed_chart(tmp_path, 'how-long-blues', 'How Long Blues',
+                   (dedup_fixtures / 'how-long-blues.pro').read_text())
+        incoming = (dedup_fixtures / 'how-long-blues-1.pro').read_text()
+
+        first = apply_row(tmp_path, hlb_row(incoming), 'create',
+                          'how-long-blues-1', verbose=False)
+        second = apply_row(tmp_path, hlb_row(incoming), 'create',
+                           'how-long-blues-1', verbose=False)
+
+        assert first.written
+        assert not second.written
+        assert second.skipped_reason == 'already-applied'
+        assert len(read_work(tmp_path, 'how-long-blues')['parts']) == 2
+
+
+class TestBackstopHoldsADuplicate:
+    def test_a_near_identical_resubmission_is_not_written(
+            self, tmp_path, dedup_fixtures):
+        chart = (dedup_fixtures / 'how-long-blues-1.pro').read_text()
+        seed_chart(tmp_path, 'how-long-blues', 'How Long Blues', chart)
+
+        backstop = DedupBackstop(tmp_path)
+        result = apply_row(tmp_path, hlb_row(chart), 'create',
+                           'how-long-blues-1', verbose=False, backstop=backstop)
+
+        assert not result.written
+        assert result.skipped_reason == DEDUP_HOLD_REASON
+        # Nothing minted, and nothing added to the work it matched.
+        assert not (tmp_path / 'works' / 'how-long-blues-1').exists()
+        assert len(read_work(tmp_path, 'how-long-blues')['parts']) == 1
+
+        decision = backstop.decision
+        assert decision.action == 'hold'
+        assert decision.verdict.outcome == 'duplicate'
+        assert decision.verdict.score >= 0.85
+        outputs = decision.outputs()
+        assert outputs['dedup_action'] == 'hold'
+        assert outputs['dedup_matched_work'] == 'how-long-blues'
+
+
+class TestBackstopStaysOutOfTheWay:
+    def test_a_sparser_resubmission_is_advisory_only(
+            self, tmp_path, dedup_fixtures):
+        """Same song, but the corpus copy is the richer one.
+
+        `duplicate` by outcome, yet the word sets are materially different
+        sizes (ratio 0.80 is the line), so the backstop reports and steps
+        aside rather than refusing a chart that might be a better lyric.
+        """
+        seed_chart(tmp_path, 'how-long-blues', 'How Long Blues',
+                   (dedup_fixtures / 'how-long-blues-1.pro').read_text())
+        sparse = (dedup_fixtures / 'how-long-blues.pro').read_text()
+
+        backstop = DedupBackstop(tmp_path)
+        result = apply_row(tmp_path, hlb_row(sparse), 'create',
+                           'how-long-blues-1', verbose=False, backstop=backstop)
+
+        assert result.written
+        assert result.work_id == 'how-long-blues-1'
+        assert backstop.decision.action == 'proceed'
+        assert backstop.decision.verdict.outcome == 'duplicate'
+        assert 'advisory' in backstop.decision.reason
+
+    def test_an_instrumental_is_never_diverted(self, tmp_path, dedup_fixtures):
+        """No lyrics on either side: identical titles, different tunes.
+
+        The scorer marks this low-confidence and never auto-actionable, so the
+        backstop must create as dispatched — diverting on a title collision is
+        exactly the "Blackberry Blossom" failure the plan warns about.
+        """
+        seed_chart(tmp_path, 'blackberry-blossom', 'Blackberry Blossom',
+                   (dedup_fixtures / 'blackberry-blossom-abc.pro').read_text())
+        incoming = (dedup_fixtures / 'blackberry-blossom-chords.pro').read_text()
+
+        backstop = DedupBackstop(tmp_path)
+        result = apply_row(
+            tmp_path,
+            row(id='blackberry-blossom-1', title='Blackberry Blossom',
+                artist=None, composer=None, content=incoming),
+            'create', 'blackberry-blossom-1', verbose=False, backstop=backstop)
+
+        assert result.written
+        assert result.work_id == 'blackberry-blossom-1'
+        assert backstop.decision.action == 'proceed'
+        assert backstop.decision.verdict.low_confidence
+        assert not backstop.decision.verdict.auto_actionable
+
+    def test_a_different_song_with_a_similar_title_is_untouched(
+            self, tmp_path, dedup_fixtures):
+        seed_chart(tmp_path, 'i-walk-the-line', 'I Walk The Line',
+                   (dedup_fixtures / 'i-walk-the-line.pro').read_text())
+        incoming = (dedup_fixtures / 'i-walk-alone.pro').read_text()
+
+        backstop = DedupBackstop(tmp_path)
+        result = apply_row(
+            tmp_path,
+            row(id='i-walk-alone', title='I Walk Alone', artist=None,
+                composer=None, content=incoming),
+            'create', 'i-walk-alone', verbose=False, backstop=backstop)
+
+        assert result.written
+        assert result.work_id == 'i-walk-alone'
+        assert backstop.decision.action == 'proceed'
+        assert backstop.decision.verdict is None  # no-match: nothing to report
+
+    def test_update_and_fork_skip_the_check_entirely(self, tmp_path, dedup_fixtures):
+        """The target is already chosen; there is nothing left to guess."""
+        seed_chart(tmp_path, 'how-long-blues', 'How Long Blues',
+                   (dedup_fixtures / 'how-long-blues.pro').read_text())
+        incoming = (dedup_fixtures / 'how-long-blues-1.pro').read_text()
+
+        backstop = DedupBackstop(tmp_path)
+        result = apply_row(tmp_path, hlb_row(incoming, id='how-long-blues'),
+                           'fork', 'how-long-blues', actor='Tim',
+                           verbose=False, backstop=backstop)
+
+        assert result.written
+        assert backstop.decision.action == 'proceed'
+        assert backstop.decision.verdict is None
+        assert 'target already chosen' in backstop.decision.reason
+
+
+class TestOwnership:
+    def test_reads_submitted_by_out_of_every_part(self, tmp_path):
+        seed_work(tmp_path, 'blue-moon-of-kentucky', submitted_by=OTHER_USER)
+
+        assert owns_content(tmp_path, 'blue-moon-of-kentucky', OTHER_USER)
+        assert not owns_content(tmp_path, 'blue-moon-of-kentucky', SUBMITTER)
+        assert not owns_content(tmp_path, 'blue-moon-of-kentucky', None)
+        assert not owns_content(tmp_path, 'no-such-work', OTHER_USER)

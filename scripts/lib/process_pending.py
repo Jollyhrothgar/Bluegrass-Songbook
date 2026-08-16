@@ -22,6 +22,40 @@ Modes (chosen server-side, never by the client):
     its file, its ``default`` flag and its provenance. This is the
     "hard to destroy" rule from the contract.
 
+Dedup backstop (phase 3b)
+-------------------------
+The editor offers an interactive offramp before a submission is sent
+(``docs/js/dedup-check.js``). That surface is what makes the offramp *easy*;
+this one is what makes it *complete* — it sits on the last line before a slug
+is minted, so it also catches the paths with no human in front of them (the
+hourly reconciler re-dispatching an old row, a future importer, a client that
+skipped the modal). Only ``create`` is checked: ``update`` and ``fork`` already
+name the work they target, so there is nothing left to guess.
+
+===========================  ==================================================
+verdict                      what happens here
+===========================  ==================================================
+``enrich`` + auto_actionable **redirect** — no new slug. The row retargets the
+                             matched work and is re-classified by ownership:
+                             the submitter owns a part there → ``update``,
+                             otherwise → ``fork`` (a new arrangement part, the
+                             original untouched). The #208 case.
+``duplicate`` at/above       **hold** — nothing is written. The workflow opens
+CONTAINMENT_DUPLICATE with   or comments on one review issue, and the row is
+similar richness             marked ``dedup_hold`` so the hourly reconciler
+                             stops re-dispatching it (otherwise the backstop
+                             would refuse the same row every hour, forever).
+anything else                **proceed** — the create happens as dispatched and
+(arrangement-candidate,      the scores are logged as advice. Notably every
+low-confidence, no-match)    instrumental lands here: with no lyrics the
+                             scorer is explicitly low-confidence and never
+                             auto-actionable, so it must not divert a write.
+===========================  ==================================================
+
+Trust is deliberately *not* consulted on a redirect. A trusted user's in-place
+edit right is about content they chose to edit; here the machine chose the
+target, so the safe classification is the one that cannot destroy anything.
+
 Idempotence
 -----------
 A dispatch can arrive twice — the hourly reconciler re-fires any row still
@@ -31,6 +65,11 @@ looks exactly like one that never ran. So every part written here carries a
 work already has a part with that marker, the row has already been applied
 and this is a no-op. Re-editing the same row changes the sha, so a genuine
 second edit is never mistaken for a replay.
+
+A redirect complicates this: the row landed on a work the dispatch never
+named, so looking for the marker under the dispatched id finds nothing. The
+backstop therefore checks the marker against its match candidates too — see
+``DedupBackstop._check``.
 """
 
 from __future__ import annotations
@@ -42,10 +81,12 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 from typing import Optional
 
+import dedup_scorer
 import works_writer
 
 MODES = ('create', 'update', 'fork')
@@ -92,6 +133,184 @@ def fetch_pending_row(row_id: str, *, supabase_url: str,
     return rows[0]
 
 
+def patch_pending_row(row_id: str, updates: dict, *, supabase_url: str,
+                      service_key: str) -> None:
+    """Write a few columns back onto one pending_songs row."""
+    url = (f"{supabase_url.rstrip('/')}/rest/v1/pending_songs"
+           f"?id=eq.{urllib.parse.quote(row_id, safe='')}")
+    request = urllib.request.Request(
+        url, method='PATCH', data=json.dumps(updates).encode('utf-8'),
+        headers={
+            'apikey': service_key,
+            'Authorization': f'Bearer {service_key}',
+            'Content-Type': 'application/json',
+            'Prefer': 'return=minimal',
+        })
+    try:
+        with urllib.request.urlopen(request, timeout=30):
+            pass
+    except urllib.error.HTTPError as e:
+        raise ProcessPendingError(
+            f"pending_songs update for '{row_id}' failed: "
+            f"HTTP {e.code} {e.read().decode('utf-8', 'replace')[:200]}") from e
+
+
+# ============================================
+# Dedup backstop
+# ============================================
+
+#: ``WriteResult.skipped_reason`` when the backstop refused a create. The
+#: workflow keys its review-issue step off this exact string.
+DEDUP_HOLD_REASON = 'dedup-duplicate'
+
+
+@dataclass
+class DedupDecision:
+    """What the backstop concluded about one create-mode row."""
+
+    #: 'proceed' | 'redirect' | 'hold'
+    action: str
+    #: The mode to actually write in (a redirect re-classifies).
+    mode: str
+    #: The work to actually write to (a redirect retargets).
+    work_id: str
+    #: One line, logged and echoed into the workflow summary.
+    reason: str
+    verdict: Optional[dedup_scorer.MatchVerdict] = None
+
+    def outputs(self) -> dict:
+        """Flat ``GITHUB_OUTPUT`` fields describing this decision."""
+        v = self.verdict
+        return {
+            'dedup_action': self.action,
+            'dedup_reason': self.reason,
+            'dedup_outcome': v.outcome if v else '',
+            'dedup_score': f'{v.score:.4f}' if v else '',
+            'dedup_title_similarity': f'{v.title_similarity:.4f}' if v else '',
+            'dedup_matched_work': (v.matched_work_id or '') if v else '',
+        }
+
+
+def owns_content(repo_root, work_id: str, user_id: Optional[str]) -> bool:
+    """Has ``user_id`` already contributed a part to this work?
+
+    Mirrors ``supabase/functions/_shared/pending-dispatch.ts``'s
+    ``submittersOf`` — the same question, asked of the same field, on the
+    other side of the dispatch.
+    """
+    if not user_id:
+        return False
+    work = works_writer.load_work(repo_root, work_id)
+    if not work:
+        return False
+    return any(
+        (part.get('provenance') or {}).get('submitted_by') == user_id
+        for part in (work.get('parts') or [])
+    )
+
+
+class DedupBackstop:
+    """The last check before a slug is minted.
+
+    One :class:`dedup_scorer.WorkCorpus` is built lazily and reused, so the
+    ~1.6s title index is paid at most once per process no matter how many
+    rows are checked.
+    """
+
+    def __init__(self, repo_root, corpus: Optional[dedup_scorer.WorkCorpus] = None,
+                 enabled: bool = True):
+        self.repo_root = Path(repo_root)
+        self.enabled = enabled
+        self._corpus = corpus
+        #: The most recent decision, for the caller's reporting.
+        self.decision: Optional[DedupDecision] = None
+
+    @property
+    def corpus(self) -> dedup_scorer.WorkCorpus:
+        if self._corpus is None:
+            self._corpus = dedup_scorer.WorkCorpus(self.repo_root / 'works')
+        return self._corpus
+
+    def check(self, row: dict, mode: str, work_id: str, content: str,
+              marker: str, verbose: bool = True) -> DedupDecision:
+        decision = self._check(row, mode, work_id, content, marker)
+        self.decision = decision
+        if verbose:
+            print(f"Dedup backstop [{decision.action}]: {decision.reason}")
+        return decision
+
+    def _check(self, row: dict, mode: str, work_id: str,
+               content: str, marker: str) -> DedupDecision:
+        if mode != 'create' or not self.enabled:
+            why = ('target already chosen' if mode != 'create'
+                   else 'backstop disabled')
+            return DedupDecision('proceed', mode, work_id, why)
+
+        incoming = dedup_scorer.Chart.from_chordpro(
+            content, title=row.get('title') or '')
+        verdicts = self.corpus.rank_matches(incoming)
+
+        if not verdicts:
+            return DedupDecision(
+                'proceed', mode, work_id,
+                f'nothing in works/ matched "{incoming.title}" — creating it')
+
+        # Replay guard. A redirect moves the write to a work the dispatch never
+        # named, so apply_row's marker check — which looks at the DISPATCHED id
+        # — cannot see it. A re-dispatch of an already-redirected row would
+        # then score differently (the target now carries the incoming content,
+        # so `enrich` has become `duplicate`) and mint the very slug the first
+        # run avoided. Look for this row's marker on the matched works instead.
+        for candidate in verdicts:
+            matched_id = candidate.matched_work_id
+            if matched_id and already_applied(self.repo_root, matched_id, marker):
+                return DedupDecision(
+                    'redirect', mode, matched_id,
+                    f"'{work_id}' was already applied to works/{matched_id} by "
+                    f"an earlier run — this dispatch is a replay",
+                    verdict=candidate)
+
+        verdict = verdicts[0]
+        scores = (f"containment {verdict.score:.3f}, title "
+                  f"{verdict.title_similarity:.3f}")
+        matched = verdict.matched_work_id or ''
+
+        # --- enrich: don't mint a slug, add to what's already there --------
+        if (verdict.outcome == dedup_scorer.Outcome.ENRICH
+                and verdict.auto_actionable):
+            owner = row.get('created_by')
+            new_mode = 'update' if owns_content(self.repo_root, matched, owner) else 'fork'
+            why = ('submitter already owns a part there'
+                   if new_mode == 'update'
+                   else "someone else's work — landing as a new arrangement part")
+            return DedupDecision(
+                'redirect', new_mode, matched,
+                f"'{work_id}' is an enrichment of works/{matched} ({scores}); "
+                f"redirecting the write as {new_mode} — {why}",
+                verdict=verdict)
+
+        # --- duplicate: write nothing, ask a human -------------------------
+        ratio = verdict.details.get('size_ratio', 0.0)
+        if (verdict.outcome == dedup_scorer.Outcome.DUPLICATE
+                and not verdict.low_confidence
+                and verdict.score >= dedup_scorer.CONTAINMENT_DUPLICATE
+                and ratio >= dedup_scorer.SIMILAR_RICHNESS_RATIO):
+            return DedupDecision(
+                'hold', mode, work_id,
+                f"'{work_id}' looks like a duplicate of works/{matched} "
+                f"({scores}, size ratio {ratio:.2f}) — nothing written, "
+                f"held for review",
+                verdict=verdict)
+
+        # --- everything else is advice, not a veto -------------------------
+        note = 'low-confidence' if verdict.low_confidence else verdict.outcome
+        return DedupDecision(
+            'proceed', mode, work_id,
+            f"'{work_id}' scored {note} against works/{matched} ({scores}) — "
+            f"advisory only, creating it as dispatched",
+            verdict=verdict)
+
+
 # ============================================
 # Applying a row
 # ============================================
@@ -136,8 +355,14 @@ def _version_label(actor: Optional[str]) -> str:
 
 def apply_row(repo_root, row: dict, mode: str, work_id: str,
               actor: Optional[str] = None,
-              verbose: bool = True) -> works_writer.WriteResult:
-    """Write one pending row to ``works/`` in the dispatched mode."""
+              verbose: bool = True,
+              backstop: Optional[DedupBackstop] = None) -> works_writer.WriteResult:
+    """Write one pending row to ``works/`` in the dispatched mode.
+
+    ``backstop`` is consulted before a ``create`` and may retarget the write
+    or refuse it outright; pass one in to reuse its corpus (or to disable the
+    check). See "Dedup backstop" in the module docstring.
+    """
     if mode not in MODES:
         raise ProcessPendingError(
             f"unknown mode {mode!r} (expected one of {', '.join(MODES)})")
@@ -157,6 +382,19 @@ def apply_row(repo_root, row: dict, mode: str, work_id: str,
         raise ProcessPendingError(f"row '{row_id}' has no title")
 
     marker = content_marker(row_id, content)
+
+    # The backstop runs BEFORE the replay check so a re-dispatch of a
+    # redirected row looks for its marker on the work it was redirected to,
+    # not on the slug it would have minted.
+    if backstop is None:
+        backstop = DedupBackstop(repo_root)
+    decision = backstop.check(row, mode, work_id, content, marker,
+                              verbose=verbose)
+    if decision.action == 'hold':
+        return works_writer.WriteResult(
+            mode=mode, work_id=work_id, skipped_reason=DEDUP_HOLD_REASON)
+    mode, work_id = decision.mode, decision.work_id
+
     if already_applied(repo_root, work_id, marker):
         if verbose:
             print(f"Already applied: works/{work_id} carries {marker}")
@@ -252,14 +490,34 @@ def main() -> int:
         return 1
 
     repo_root = _repo_root()
+    backstop = DedupBackstop(repo_root)
 
     try:
         row = fetch_pending_row(row_id, supabase_url=supabase_url,
                                 service_key=service_key)
-        result = apply_row(repo_root, row, mode, work_id or row_id, actor)
+        result = apply_row(repo_root, row, mode, work_id or row_id, actor,
+                           backstop=backstop)
     except (ProcessPendingError, works_writer.WorksWriterError) as e:
         print(f'Error: {e}', file=sys.stderr)
         return 1
+
+    # A held row must stop being re-dispatched. Without this the hourly
+    # reconciler would re-fire it every hour and the backstop would refuse it
+    # every hour — a review issue that never stops growing and a workflow that
+    # is always red. The flag is set here rather than by the workflow so the
+    # hold is atomic with the decision that made it.
+    if result.skipped_reason == DEDUP_HOLD_REASON:
+        reason = (backstop.decision.reason if backstop.decision
+                  else 'held by the dedup backstop')
+        try:
+            patch_pending_row(row_id, {'dedup_hold': reason[:5000]},
+                              supabase_url=supabase_url,
+                              service_key=service_key)
+            print(f"Marked '{row_id}' dedup_hold — the reconciler will skip it.")
+        except ProcessPendingError as e:
+            # Worth saying loudly, but not worth failing over: the review
+            # issue still gets opened and a human still sees the row.
+            print(f'Warning: could not set dedup_hold: {e}', file=sys.stderr)
 
     if not result.written:
         print(f"Nothing written ({result.skipped_reason}) for '{row_id}'")
@@ -270,12 +528,19 @@ def main() -> int:
     # whether to flip github_committed.
     github_output = os.environ.get('GITHUB_OUTPUT')
     if github_output:
+        fields = {
+            'work_id': result.work_id,
+            'mode': result.mode,
+            'part_file': result.part_file or '',
+            'written': 'true' if result.written else 'false',
+            'skipped_reason': result.skipped_reason or '',
+            'row_title': (row.get('title') or '').replace('\n', ' '),
+        }
+        if backstop.decision:
+            fields.update(backstop.decision.outputs())
         with open(github_output, 'a') as fh:
-            fh.write(f'work_id={result.work_id}\n')
-            fh.write(f'mode={result.mode}\n')
-            fh.write(f'part_file={result.part_file or ""}\n')
-            fh.write(f'written={"true" if result.written else "false"}\n')
-            fh.write(f'skipped_reason={result.skipped_reason or ""}\n')
+            for key, value in fields.items():
+                fh.write(f'{key}={value}\n')
 
     return 0
 
