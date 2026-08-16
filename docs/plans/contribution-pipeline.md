@@ -349,7 +349,7 @@ looks wrong.
 | Existing dedup + merge tools | `scripts/lib/dedup_works.py`, `scripts/lib/merge_works.py` |
 | Jaccard helper already in repo | `scripts/lib/build_works_index.py:600-607` |
 | Known false positives | docstring, `build_works_index.py:570` |
-| Rando fallback test | `docs/js/__tests__/otf-editor/submit-tab.test.js:52` |
+| Rando fallback test (2a: now asserts no `submittedBy` + login required) | `docs/js/__tests__/otf-editor/submit-tab.test.js:72,82` |
 
 ### Measurements
 

@@ -666,7 +666,9 @@ bug reports, and general feedback — no GitHub account needed.
 - Entry points: "🚩 Report issue" in the song page's overflow menu,
   "Send Feedback" in the shell's overflow menu, homepage report-bug link
 - Creates GitHub issues via the `create-flag-issue` Supabase edge function
-- Attribution tracks who submitted (logged-in user or "Rando Calrissian")
+- **No login required** (Phase 2a) — a report is complete at the toast.
+  Attribution is derived SERVER-SIDE from the session when one exists, and
+  is simply "Anonymous" when it doesn't; the client never sends a name
 
 ### Song Requests (`add-song-picker.js`)
 
@@ -674,7 +676,10 @@ Frictionless song requests without a GitHub account.
 
 - `openAddSongPicker({ mode: 'request' })` — reachable via the
   `#request-song` hash and the bounty page's "Request a Song" button
-- Creates GitHub issues via the `create-song-request` Supabase edge function
+- Goes through the `create-song-request` Supabase edge function, which
+  branches on identity: **signed in** → a `pending_songs` placeholder the
+  requester owns (and lands on); **anonymous** → a `tune-request` GitHub
+  issue and a confirmation, with no placeholder work minted
 
 ### Multi-Owner Lists & Thunderdome
 
@@ -695,8 +700,17 @@ Lists can be shared via URL and viewed by anyone.
 
 ### Submitter Attribution
 
-All user-submitted content tracks who submitted it.
+All user-submitted content tracks who submitted it, and **the client never
+says who that is** (Phase 2a). The browser sends its session token; the edge
+function calls `supabase.auth.getUser(token)` and builds the attribution
+string from the verified user (`full_name` → `email` → `user:<id>`). There is
+no `submittedBy` request field and no "Rando Calrissian" fallback.
 
-- Uses logged-in user's display name or email
-- Falls back to "Rando Calrissian" for anonymous submissions
-- Included in GitHub issue body for submissions, corrections, flags, requests
+- **Content writes require login** — song submission/correction
+  (`create-song-issue`), tab submission/correction (`create-tab-pr`). No
+  token, no write: the function answers 401 and the client refuses to post.
+- **Reports and requests stay anonymous-capable** — `create-flag-issue`
+  always, `create-song-request` in its issue branch. Anonymous callers are
+  attributed "Anonymous" and throttled by IP.
+- Shared helper: `supabase/functions/_shared/identity.ts`
+  (`requireUser` / `optionalUser` / `attributionFor` / `rateLimited`)

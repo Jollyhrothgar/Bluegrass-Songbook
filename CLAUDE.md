@@ -439,8 +439,10 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Covering artists**: Shows which bluegrass legends recorded each song
 - **Multi-owner lists**: Collaborative list curation with follow/unfollow
 - **Thunderdome**: Claim abandoned lists (now 1 year inactivity threshold)
-- **Frictionless feedback**: Report issues and request songs without GitHub account
-- **Submitter attribution**: Tracks who submitted content ("Rando Calrissian" for anonymous)
+- **Frictionless feedback**: Report issues and request songs with no account at all
+- **Submitter attribution**: Derived server-side from the verified session; content
+  writes (song/tab submissions and corrections) require login, reports and requests
+  don't (Phase 2a — see `docs/plans/contribution-pipeline.md`)
 
 **What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
 
