@@ -1489,18 +1489,18 @@ function showPlaceholderEditor() {
         statusDiv.className = 'placeholder-editor-status';
 
         try {
-            const isTrusted = await window.SupabaseAuth?.isTrustedUser?.();
+            // Metadata edits take the one pipeline now (phase 2b): any
+            // logged-in user writes pending_songs and it goes live. Document
+            // upload still splits on trust — phase 2d deletes that feature
+            // outright rather than widening it.
+            await savePlaceholderMetadata({ title, artist, key, notes });
 
-            if (isTrusted) {
-                await savePlaceholderMetadataTrusted({ title, artist, key, notes });
-                if (newDocFile) {
-                    statusDiv.textContent = 'Uploading document...';
+            if (newDocFile) {
+                statusDiv.textContent = 'Uploading document...';
+                const isTrusted = await window.SupabaseAuth?.isTrustedUser?.();
+                if (isTrusted) {
                     await uploadPlaceholderDocument(newDocFile, title);
-                }
-            } else {
-                await savePlaceholderMetadataIssue({ title, artist, key, notes });
-                if (newDocFile) {
-                    statusDiv.textContent = 'Uploading document...';
+                } else {
                     await uploadPlaceholderDocumentRegular(newDocFile, title);
                 }
             }
@@ -1522,9 +1522,10 @@ function showPlaceholderEditor() {
 }
 
 /**
- * Save placeholder metadata as trusted user via Supabase pending_songs.
+ * Save placeholder metadata via Supabase pending_songs — live immediately,
+ * durable when the pending-commit dispatch lands it in works/.
  */
-async function savePlaceholderMetadataTrusted({ title, artist, key, notes }) {
+async function savePlaceholderMetadata({ title, artist, key, notes }) {
     const supabase = window.SupabaseAuth?.supabase;
     if (!supabase) throw new Error('Not connected to database');
 
@@ -1559,52 +1560,6 @@ async function savePlaceholderMetadataTrusted({ title, artist, key, notes }) {
     // Refresh to merge into allSongs
     if (window.refreshPendingSongs) {
         await window.refreshPendingSongs();
-    }
-}
-
-/**
- * Save placeholder metadata as regular user via GitHub issue.
- */
-async function savePlaceholderMetadataIssue({ title, artist, key, notes }) {
-    const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
-    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
-
-    // Identity is derived server-side from the session token; the client
-    // sends no attribution field (Phase 2a).
-    const supabase = window.SupabaseAuth?.supabase;
-    const session = supabase ? (await supabase.auth.getSession()).data.session : null;
-    if (!session?.access_token) {
-        throw new Error('Sign in to submit — your account is the attribution');
-    }
-
-    const body = [
-        `**Work ID:** ${currentWork.id}`,
-        `**Current Title:** ${currentWork.title}`,
-        `**Proposed Title:** ${title}`,
-        artist !== currentWork.artist ? `**Proposed Artist:** ${artist}` : '',
-        key !== currentWork.key ? `**Proposed Key:** ${key}` : '',
-        notes !== currentWork.notes ? `**Proposed Notes:** ${notes}` : '',
-    ].filter(Boolean).join('\n');
-
-    const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${session.access_token}`,
-            'apikey': SUPABASE_ANON_KEY,
-        },
-        body: JSON.stringify({
-            type: 'correction',
-            title: `Update placeholder metadata: ${title}`,
-            songId: currentWork.id,
-            chordpro: `{meta: title ${title}}\n{meta: artist ${artist}}\n{key: ${key}}\n`,
-            comment: `Placeholder metadata update:\n${body}`,
-        }),
-    });
-
-    const result = await response.json();
-    if (!response.ok || !result.success) {
-        throw new Error(result.error || 'Failed to submit');
     }
 }
 

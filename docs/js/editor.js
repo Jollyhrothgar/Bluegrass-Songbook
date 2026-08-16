@@ -13,7 +13,6 @@ import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetw
 import { trackEditor, trackSubmission } from './analytics.js';
 import { showToast } from './toast.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
-import { openSuperUserRequestModal } from './superuser-request.js';
 import { createInteractivePreview } from './visual-editor/preview.js';
 import { wrapSelectionAsSection } from './visual-editor/wrap-section.js';
 import { parseSong, serializeSong } from './visual-editor/model.js';
@@ -33,7 +32,6 @@ export {
 // session (Phase 2a): identity comes from the verified session server-side,
 // so the client sends the user's access token and no attribution field.
 const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
 
 // Module-level state
 let editorDetectedKey = null;
@@ -74,6 +72,9 @@ let editorRedoBtnEl = null;
 let editorTransposeGroupEl = null;
 let editorSelectionToolbarEl = null;
 let preview = null;
+// The record being edited, kept so the fork notice can ask "is this mine?"
+// without going back through allSongs.
+let editingSongRecord = null;
 // True once enterEditMode has run, until the editor is reset to a fresh
 // new-song state. Unlike editMode/editingSongId this survives exitEditMode,
 // so entering Add Song later can tell "abandoned edit" from "unsaved draft".
@@ -162,6 +163,7 @@ export async function enterEditMode(song, options = {}) {
 
     setEditMode(true);
     setEditingSongId(song.id);
+    editingSongRecord = song;
     lastSessionWasEdit = true;
     trackEditor('edit', song.id);
 
@@ -180,8 +182,13 @@ export async function enterEditMode(song, options = {}) {
     updateMetadataSummary();
     setMetadataExpanded(false);
 
-    // Update submit button text
-    if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit Correction';
+    // Editing content that isn't yours forks instead of overwriting. Say so
+    // now, not after the fact.
+    const mine = ownsContent(song);
+    if (editorSubmitBtnEl) {
+        editorSubmitBtnEl.textContent = mine ? 'Submit Correction' : 'Save as My Arrangement';
+    }
+    renderForkNotice();
 
     // Switch to editor panel (update nav state)
     [navSearchEl, navAddSongEl, navFavoritesEl].forEach(btn => {
@@ -216,6 +223,8 @@ export async function enterEditMode(song, options = {}) {
 export function exitEditMode() {
     setEditMode(false);
     setEditingSongId(null);
+    editingSongRecord = null;
+    renderForkNotice();
     editorKeyPinned = false;
     if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
     if (editorCommentEl) editorCommentEl.value = '';
@@ -230,6 +239,8 @@ export function exitEditMode() {
 export function resetEditorForNewSong() {
     setEditMode(false);
     setEditingSongId(null);
+    editingSongRecord = null;
+    renderForkNotice();
     lastSessionWasEdit = false;
     editorKeyPinned = false;
     editorDetectedKey = null;
@@ -828,36 +839,65 @@ export function initEditor(options) {
                 return;
             }
 
-            // Check if user is a trusted user (can save instantly)
-            const isTrusted = await window.SupabaseAuth?.isTrustedUser?.();
-
-            if (isTrusted) {
-                // Trusted user flow: save directly to pending_songs
-                await submitAsTrustedUser({
-                    title,
-                    artist,
-                    writer,
-                    chordpro,
-                    content
-                });
-            } else {
-                // Regular flow: create GitHub issue for approval.
-                // It rethrows so callers/tests can see the failure; the
-                // status line has already told the user about it.
-                try {
-                    await submitToGitHubIssue({ title, artist, chordpro });
-                } catch {
-                    /* reported in the status line */
-                }
+            // One path for everyone (phase 2b). Trust no longer decides how
+            // fast a submission lands — only whether an edit of somebody
+            // else's chart may land in place instead of forking.
+            try {
+                await submitSong({ title, artist, writer, chordpro, content });
+            } catch {
+                /* reported in the status line */
             }
         });
     }
 }
 
 /**
- * Submit as a trusted user - saves directly to pending_songs for instant visibility
+ * Is the content being edited the current user's own?
+ *
+ * Best effort, and deliberately conservative: no owner on the record means
+ * "not yours". The server classifies authoritatively (it reads the work's
+ * provenance out of git), so a wrong guess here only changes what the user
+ * was told to expect, never what happens.
  */
-async function submitAsTrustedUser(data) {
+export function ownsContent(song) {
+    const user = window.SupabaseAuth?.getUser?.();
+    if (!user?.id || !song) return false;
+    // created_by: the live pending_songs row. submitted_by: the committed
+    // work's lead-sheet provenance, carried through the index.
+    const owner = song.created_by || song.submitted_by;
+    return !!owner && owner === user.id;
+}
+
+/**
+ * Say plainly, before they hit submit, that editing someone else's chart
+ * creates their own arrangement rather than changing the original.
+ */
+function renderForkNotice() {
+    if (!editorStatusEl?.parentNode) return;
+
+    let notice = document.getElementById('editor-fork-notice');
+    const shouldShow = editMode && !!editingSongRecord && !ownsContent(editingSongRecord);
+
+    if (!shouldShow) {
+        if (notice) notice.remove();
+        return;
+    }
+
+    if (!notice) {
+        notice = document.createElement('div');
+        notice.id = 'editor-fork-notice';
+        notice.className = 'editor-fork-notice';
+        editorStatusEl.parentNode.insertBefore(notice, editorStatusEl);
+    }
+    notice.textContent =
+        'This will be saved as your arrangement — the original stays untouched.';
+}
+
+/**
+ * Save a contribution: pending_songs first (live in seconds), then ask
+ * auto-commit-song to make it durable (minutes).
+ */
+async function submitSong(data) {
     const { title, artist, writer, chordpro, content } = data;
 
     // Generate slug for the song ID
@@ -919,12 +959,23 @@ async function submitAsTrustedUser(data) {
             throw new Error(error.message);
         }
 
-        // Step 2: Trigger auto-commit. Still non-blocking — the edit is already
-        // live from the pending_songs row above — but a failure is no longer
-        // silent: the hourly reconciler will retry it, and the user is told
-        // their edit is live but not yet synced rather than being left to
+        // Step 2: ask for the durable write. Still non-blocking — the edit is
+        // already live from the pending_songs row above — but a failure is no
+        // longer silent: the hourly reconciler will retry it, and the user is
+        // told their edit is live but not yet synced rather than being left to
         // believe everything landed.
-        triggerAutoCommit(pendingEntry).catch(e => {
+        //
+        // The response is also where the user finds out what the server
+        // decided the change WAS. The client's guess (the fork notice) is a
+        // courtesy; this is the answer.
+        triggerAutoCommit(pendingEntry).then(result => {
+            if (result?.mode === 'fork') {
+                showToast(
+                    `Saved as your arrangement of "${title}" — find it under Arrangements on that song's page. The original is untouched.`,
+                    { duration: 8000 }
+                );
+            }
+        }).catch(e => {
             console.error('Auto-commit failed; edit is live but not yet in git:', e);
             showToast(
                 'Saved and live — but syncing to the songbook is still pending. It will retry automatically.',
@@ -968,10 +1019,14 @@ async function submitAsTrustedUser(data) {
 /**
  * Trigger the auto-commit edge function.
  *
- * Rejects when the commit did not happen, so the caller can tell the user.
- * The old version awaited the fetch and ignored `response.ok`, which meant a
- * 500 from the function resolved happily and the `.catch` never ran — the
- * failure mode this is here to surface was the one it hid.
+ * Rejects when the durable write was not accepted, so the caller can tell the
+ * user. The old version awaited the fetch and ignored `response.ok`, which
+ * meant a 500 from the function resolved happily and the `.catch` never ran —
+ * the failure mode this is here to surface was the one it hid.
+ *
+ * Resolves with the function's body: `{ success, mode, workId, reason }`,
+ * where `mode` is 'create' | 'update' | 'fork' — the server's authoritative
+ * answer about what this submission actually did.
  *
  * Exported for tests.
  */
@@ -1000,128 +1055,12 @@ export async function triggerAutoCommit(entry) {
         }
         throw new Error(`auto-commit-song returned ${response.status}${detail ? `: ${detail}` : ''}`);
     }
-}
-
-/**
- * Submit to GitHub issue for approval (regular user flow).
- *
- * Login required (Phase 2a): the caller's session token is the ONLY
- * attribution — it goes out as the bearer token and the edge function
- * derives the submitter from it. Nothing in the payload names a person.
- *
- * Exported for tests.
- */
-export async function submitToGitHubIssue(data) {
-    const { title, artist, chordpro } = data;
-
-    let submissionData;
-
-    if (editMode && editingSongId) {
-        const comment = editorCommentEl?.value.trim();
-        if (!comment) {
-            promptForField(editorCommentEl, 'Please describe your changes');
-            return;
-        }
-
-        submissionData = {
-            type: 'correction',
-            title,
-            artist: artist || undefined,
-            songId: editingSongId,
-            chordpro,
-            comment
-        };
-    } else {
-        submissionData = {
-            type: 'submission',
-            title,
-            artist: artist || undefined,
-            chordpro
-        };
-    }
-
-    // Disable button and show submitting state
-    if (editorSubmitBtnEl) editorSubmitBtnEl.disabled = true;
-    if (editorStatusEl) {
-        editorStatusEl.textContent = 'Submitting...';
-        editorStatusEl.className = 'save-status';
-    }
 
     try {
-        // The session token IS the attribution — the edge function derives
-        // the submitter from it and rejects unauthenticated callers.
-        const supabase = window.SupabaseAuth?.supabase;
-        const session = supabase ? (await supabase.auth.getSession()).data.session : null;
-        if (!session?.access_token) {
-            throw new Error('Sign in to submit — your account is the attribution');
-        }
-
-        const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${session.access_token}`,
-                'apikey': SUPABASE_ANON_KEY
-            },
-            body: JSON.stringify(submissionData)
-        });
-
-        const result = await response.json();
-
-        if (!response.ok || !result.success) {
-            throw new Error(result.error || 'Failed to submit');
-        }
-
-        trackSubmission(editMode ? 'correction' : 'new_song');
-
-        if (editorStatusEl) {
-            // Show success message with link to issue and super-user prompt
-            const user = window.SupabaseAuth?.getUser?.();
-            let statusHtml = `Submitted! <a href="${result.issueUrl}" target="_blank">View issue #${result.issueNumber}</a>`;
-
-            // Only show super-user prompt if user is logged in
-            if (user) {
-                statusHtml += `
-                    <div class="superuser-prompt">
-                        Want instant edits next time?
-                        <span class="superuser-prompt-link" id="superuser-prompt-link">Request Super-User access</span>
-                    </div>`;
-            }
-
-            editorStatusEl.innerHTML = statusHtml;
-            editorStatusEl.className = 'save-status success';
-
-            // Wire up super-user prompt click
-            const promptLink = document.getElementById('superuser-prompt-link');
-            if (promptLink) {
-                promptLink.addEventListener('click', () => {
-                    openSuperUserRequestModal();
-                });
-            }
-        }
-
-        if (editMode) {
-            // Stay in edit mode so user can submit more corrections
-            // Edit mode will be cleared when they navigate away
-            if (editorCommentEl) editorCommentEl.value = '';
-        } else {
-            // Clear form for new submissions
-            if (editorTitleEl) editorTitleEl.value = '';
-            if (editorArtistEl) editorArtistEl.value = '';
-            if (editorContentEl) editorContentEl.value = '';
-            updateMetadataSummary();
-            setMetadataExpanded(false);
-            updateEditorPreview();
-        }
-
-    } catch (error) {
-        console.error('Submission error:', error);
-        if (editorStatusEl) {
-            editorStatusEl.textContent = `Error: ${error.message}`;
-            editorStatusEl.className = 'save-status error';
-        }
-        throw error;
-    } finally {
-        if (editorSubmitBtnEl) editorSubmitBtnEl.disabled = false;
+        return await response.json();
+    } catch {
+        // A 200 with an unreadable body still means the dispatch was
+        // accepted; the caller just learns nothing about the mode.
+        return null;
     }
 }

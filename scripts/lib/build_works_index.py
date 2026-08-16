@@ -489,6 +489,17 @@ def build_song_from_work(work_dir: Path) -> dict:
     if work.get('notes'):
         song['notes'] = work['notes']
 
+    # Who submitted the lead sheet, when the pipeline knows. This is the
+    # verified auth.uid() stamped by process_pending.py, and it is what lets
+    # the editor tell "your chart" from "someone else's" before you submit —
+    # the same field auto-commit-song reads to decide update vs fork.
+    for part in work.get('parts') or []:
+        if part.get('type') == 'lead-sheet':
+            submitted_by = (part.get('provenance') or {}).get('submitted_by')
+            if submitted_by:
+                song['submitted_by'] = submitted_by
+            break
+
     # Compute group_id
     song['group_id'] = compute_group_id(
         work.get('title', ''),

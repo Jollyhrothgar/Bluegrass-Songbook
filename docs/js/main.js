@@ -1090,6 +1090,9 @@ function transformPendingToIndexFormat(pending) {
         status: pending.status || (pending.content ? undefined : 'placeholder'),
         source: 'pending',
         replaces_id: pending.replaces_id,
+        // Ownership, so the editor can tell "your song" from "someone
+        // else's" before submitting (the server decides authoritatively).
+        created_by: pending.created_by || null,
         first_line: extractFirstLine(pending.content),
         lyrics: extractLyrics(pending.content),
     };

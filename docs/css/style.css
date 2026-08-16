@@ -3114,6 +3114,17 @@ mark {
     color: var(--danger);
 }
 
+/* Editing someone else's chart forks to your own arrangement. Said before
+   the submit, not after it (contribution pipeline, phase 2c). */
+.editor-fork-notice {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    border-left: 3px solid var(--accent, var(--border));
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
 /* Editor preview */
 .editor-preview {
     display: flex;
