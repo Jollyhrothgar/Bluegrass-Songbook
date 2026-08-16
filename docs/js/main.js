@@ -15,6 +15,8 @@ import {
     songGroups, setSongGroups,
     setHistoryInitialized,
     historyInitialized,
+    setBootRouteClaimed,
+    canRouteBootUrl,
     loadViewPrefs,
     userLists,
     compactMode,
@@ -28,6 +30,7 @@ import {
     setListContext,
     setWorkRedirects, resolveWorkId,
     setBountyIndex,
+    setCorpusLoadFailed,
     // Reactive state system
     subscribe, setCurrentView, currentView,
     dungeonMode, setDungeonMode
@@ -44,11 +47,12 @@ import {
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
 import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
+import { renderMySubmissionsView } from './my-submissions.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
-import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill } from './shell.js';
+import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill, setBanner } from './shell.js';
 import { buildListChordPro, buildListText, buildListZipFiles, listFileBase } from './list-export.js';
 import { createZip } from './zip.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
@@ -56,11 +60,15 @@ import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
 import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
-import { initDocUpload, resetDocUpload, prefillDocUpload } from './doc-upload.js';
 import {
     fetchJsonl, mergeCorpus, markArchived, countDistinctTitles, whenIdle,
 } from './corpus.js';
 import { getSongContents } from './song-content.js';
+import { showToast } from './toast.js';
+import {
+    configureReviewQueue, showReviewQueue, hideReviewQueue, submitReviewRequest,
+    showSuppressRequestDialog, showMergeRequestDialog, buildMergeRedirectPayload,
+} from './review-queue.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -118,7 +126,6 @@ const userName = document.getElementById('user-name');
 
 // Editor elements
 const editorPanel = document.getElementById('editor-panel');
-const uploadPanel = document.getElementById('upload-panel');
 const editorBackBtn = document.getElementById('editor-back-btn');
 const editorTitle = document.getElementById('editor-title');
 const editorArtist = document.getElementById('editor-artist');
@@ -182,7 +189,13 @@ function toggleTheme() {
 // ============================================
 
 function pushHistoryState(view, data = {}, replace = false) {
-    if (!historyInitialized) return;
+    // Before the boot tail runs, every caller here is a user action (the
+    // module wiring in init() only stores this function; nothing calls it on
+    // the way in). Such a navigation used to be dropped on the floor, which
+    // left the URL showing the boot hash and let loadIndex's tail route back
+    // to it a second later. Record it like any other navigation and claim
+    // the boot route so the tail leaves the view alone.
+    if (!historyInitialized) setBootRouteClaimed(true);
 
     let hash = '';
     const state = { view, ...data };
@@ -203,11 +216,11 @@ function pushHistoryState(view, data = {}, replace = false) {
         case 'add-song':
             hash = '#add';
             break;
-        case 'doc-upload':
-            hash = '#upload';
-            break;
         case 'bounty':
             hash = '#bounty';
+            break;
+        case 'my-submissions':
+            hash = '#my-submissions';
             break;
         case 'favorites':
             // Favorites is just a list with ID 'favorites'
@@ -306,11 +319,11 @@ function handleHistoryNavigation(state) {
             prepareAddSongView();
             showView('add-song');
             break;
-        case 'doc-upload':
-            showView('doc-upload');
-            break;
         case 'bounty':
             showView('bounty');
+            break;
+        case 'my-submissions':
+            showView('my-submissions');
             break;
         case 'favorites':
             showView('favorites');
@@ -367,10 +380,10 @@ function initViewSubscription() {
             exitEditMode();
         }
 
-        // Reset upload form when navigating away
-        if (view !== 'doc-upload') {
-            resetDocUpload();
-        }
+        // The review queue sits above the results list, so it belongs to the
+        // search view only — dungeon mode persists onto song pages, and the
+        // queue must not ride along.
+        if (view !== 'search') hideReviewQueue();
 
         // Top band: the song page declares its own chrome (back/title/
         // actions); every other view gets the plain nav band. The bottom
@@ -379,7 +392,7 @@ function initViewSubscription() {
             updateWorkTopBar();
         } else {
             const shellNavByView = {
-                'search': 'search', 'add-song': 'add', 'doc-upload': 'add',
+                'search': 'search', 'add-song': 'add',
                 'favorites': 'favorites', 'list': 'lists', 'song-lists': 'lists',
             };
             setTopBar({ navActive: shellNavByView[view] || null });
@@ -401,7 +414,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 break;
             case 'search':
@@ -409,7 +421,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 // An empty box means BROWSE THE WHOLE CANON, not "show a
                 // prompt": the home page's "Search All Songs" card advertises
@@ -424,6 +435,13 @@ function initViewSubscription() {
                 // showView('search') is a no-op when the view is unchanged.
                 // The entry points call browseAllSongs() themselves for that
                 // reason; this branch just covers other transitions.
+                //
+                // allSongs.length also stays 0 when loadIndex() has
+                // definitively failed rather than merely being in flight —
+                // that permanent case is surfaced separately via
+                // corpusLoadFailed (state.js) and the shell banner it drives,
+                // so this guard doesn't need to distinguish the two: staying
+                // silent is correct either way.
                 if (!searchInput?.value?.trim() && resultsDiv && allSongs.length) {
                     showPopularSongs();
                 }
@@ -434,15 +452,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.remove('hidden');
-                uploadPanel?.classList.add('hidden');
-                songListsView?.classList.add('hidden');
-                break;
-            case 'doc-upload':
-                searchContainer?.classList.add('hidden');
-                resultsDiv?.classList.add('hidden');
-                songView?.classList.add('hidden');
-                editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.remove('hidden');
                 songListsView?.classList.add('hidden');
                 break;
             case 'favorites':
@@ -450,7 +459,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 showFavorites();
                 break;
@@ -459,7 +467,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.remove('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 // Show delete button for admins
                 updateDeleteButtonVisibility();
@@ -469,7 +476,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 break;
             case 'bounty':
@@ -477,16 +483,22 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderBountyView(resultsDiv);
+                break;
+            case 'my-submissions':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                renderMySubmissionsView(resultsDiv);
                 break;
             case 'song-lists':
                 searchContainer?.classList.add('hidden');
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.remove('hidden');
                 // renderManageListsView is called by showSongListsView
                 break;
@@ -756,15 +768,15 @@ function handleDeepLink() {
             }
         })();
         return true;
-    } else if (hash === '#upload') {
-        trackDeepLink('upload', hash);
-        showView('doc-upload');
-        pushHistoryState('doc-upload', {}, true);
-        return true;
     } else if (hash === '#bounty') {
         trackDeepLink('bounty', hash);
         showView('bounty');
         pushHistoryState('bounty', {}, true);
+        return true;
+    } else if (hash === '#my-submissions') {
+        trackDeepLink('my-submissions', hash);
+        showView('my-submissions');
+        pushHistoryState('my-submissions', {}, true);
         return true;
     } else if (hash === '#request-song') {
         trackDeepLink('request-song', hash);
@@ -1017,6 +1029,11 @@ async function enterDungeon(query = '', { fromHistory = false, replace = false }
     if (searchableSongs().length === 0 && resultsDiv) {
         resultsDiv.innerHTML = '<div class="no-results">The dungeon is empty — the archive could not be loaded. Try reloading the page.</div>';
     }
+
+    // The Dungeon is where curation happens (Promote lives on its songs), so
+    // the review queue for the destructive asks hangs here too. It renders
+    // itself away for anyone who is neither trusted nor admin.
+    showReviewQueue();
 }
 
 function navigateTo(mode) {
@@ -1089,6 +1106,9 @@ function transformPendingToIndexFormat(pending) {
         status: pending.status || (pending.content ? undefined : 'placeholder'),
         source: 'pending',
         replaces_id: pending.replaces_id,
+        // Ownership, so the editor can tell "your song" from "someone
+        // else's" before submitting (the server decides authoritatively).
+        created_by: pending.created_by || null,
         first_line: extractFirstLine(pending.content),
         lyrics: extractLyrics(pending.content),
     };
@@ -1099,6 +1119,14 @@ function transformPendingToIndexFormat(pending) {
 let canonRows = [];
 let archiveRows = [];
 let pendingRows = [];
+
+// Curation overlays from Supabase, applied on top of the static rows exactly
+// as the index build applies docs/data/{deleted,promoted}_songs.json — so an
+// admin delete or a trusted-user promote is live now instead of after the
+// hourly sync and the next deploy. Also written in-session by the
+// promote/delete handlers below.
+const deletedIds = new Set();
+const promotedIds = new Set();
 
 // Archive load state. The promise resolves once the archive is merged (or has
 // definitively failed) and NEVER rejects, so awaiting it is always safe;
@@ -1117,6 +1145,8 @@ function rebuildCorpus() {
         canon: canonRows,
         archive: archiveRows,
         pending: pendingRows,
+        deleted: deletedIds,
+        promoted: promotedIds,
     });
     setAllSongs(songs);
     setSongGroups(groups);
@@ -1169,7 +1199,65 @@ function ensureArchiveLoaded() {
 window.ensureArchiveLoaded = ensureArchiveLoaded;
 window.isArchiveLoaded = () => archiveLoaded;
 
+/**
+ * Fetch the Supabase overlays: pending edits plus the two world-readable
+ * curation tables. All three go out together so the deleted/promoted rules
+ * land in the same first paint as the pending rows — a deleted song must
+ * never flash into view before the overlay catches up.
+ *
+ * Fails soft in every direction: no client, a down backend, or a single
+ * table erroring leaves the static index exactly as it was built. Callers
+ * rebuild the corpus afterwards.
+ */
+async function fetchSupabaseOverlays() {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) return;
+
+    // PostgREST builders are thenables, not promises — Promise.resolve gives
+    // us a .catch so one failing table can't take the other two down.
+    const safe = query => Promise.resolve(query).catch(error => ({ data: null, error }));
+
+    try {
+        const [pending, deleted, promoted] = await Promise.all([
+            safe(supabase.from('pending_songs').select('*')),
+            safe(supabase.from('deleted_songs').select('song_id')),
+            safe(supabase.from('promoted_songs').select('song_id')),
+        ]);
+
+        if (pending.data && !pending.error) {
+            pendingRows = pending.data.map(transformPendingToIndexFormat);
+            if (pendingRows.length > 0) {
+                console.log(`Merged ${pendingRows.length} pending song(s)`);
+            }
+        }
+        if (deleted.data && !deleted.error) {
+            for (const row of deleted.data) deletedIds.add(row.song_id);
+            if (deletedIds.size > 0) {
+                console.log(`Hiding ${deletedIds.size} deleted song(s)`);
+            }
+        }
+        if (promoted.data && !promoted.error) {
+            for (const row of promoted.data) promotedIds.add(row.song_id);
+            if (promotedIds.size > 0) {
+                console.log(`Promoted ${promotedIds.size} song(s) into search`);
+            }
+        }
+    } catch (e) {
+        console.warn('Could not fetch Supabase overlays:', e);
+        // Static index still works - graceful degradation
+    }
+}
+
+// Guards against a Retry click (or any other caller) overlapping an
+// in-flight loadIndex() — the function is otherwise re-entrant (it only
+// mutates state on success paths), so this just avoids a wasted duplicate
+// fetch rather than fixing a correctness bug.
+let indexLoadInFlight = false;
+
 async function loadIndex() {
+    if (indexLoadInFlight) return;
+    indexLoadInFlight = true;
+
     if (resultsDiv) {
         resultsDiv.innerHTML = '<div class="loading">Loading songbook...</div>';
     }
@@ -1194,26 +1282,14 @@ async function loadIndex() {
             }
         }
 
-        // Fetch pending songs from Supabase (graceful failure if offline/error)
-        try {
-            const supabase = window.SupabaseAuth?.supabase;
-            if (supabase) {
-                const { data, error } = await supabase
-                    .from('pending_songs')
-                    .select('*');
-                if (data && !error) {
-                    pendingRows = data.map(transformPendingToIndexFormat);
-                    if (pendingRows.length > 0) {
-                        console.log(`Merged ${pendingRows.length} pending song(s)`);
-                    }
-                }
-            }
-        } catch (e) {
-            console.warn('Could not fetch pending songs:', e);
-            // Static index still works - graceful degradation
-        }
+        await fetchSupabaseOverlays();
 
         const songs = rebuildCorpus();
+
+        // A retry that succeeds clears both the flag and the banner a
+        // previous failure left up.
+        setCorpusLoadFailed(false);
+        setBanner(null);
 
         if (resultsDiv) {
             resultsDiv.innerHTML = '';
@@ -1223,13 +1299,21 @@ async function loadIndex() {
         // Render collection cards on landing page
         renderCollectionCards();
 
-        // Enable browser history navigation
+        // Boot is over: history is under normal control from here on, and
+        // pushHistoryState stops claiming the boot route. Set before the
+        // routing below so handleDeepLink's own replace-pushes don't claim it.
         setHistoryInitialized(true);
 
-        // Handle deep links or show landing page by default
-        if (!handleDeepLink()) {
-            showView('home');
-            history.replaceState({ view: 'home' }, '', window.location.pathname);
+        // Route the URL the page loaded with — a deep link, or the landing
+        // page. Skipped entirely if the user already navigated while the
+        // corpus was loading: that navigation owns the view, and re-running
+        // the boot URL here would steal it back (the hash still reads as the
+        // boot hash for nav links that push state without a hashchange).
+        if (canRouteBootUrl()) {
+            if (!handleDeepLink()) {
+                showView('home');
+                history.replaceState({ view: 'home' }, '', window.location.pathname);
+            }
         }
 
         // Fetch bounties in background (non-blocking, not needed for initial render)
@@ -1243,6 +1327,17 @@ async function loadIndex() {
         if (resultsDiv) {
             resultsDiv.innerHTML = `<div class="loading">Error loading songs: ${error.message}</div>`;
         }
+        // Loud and global: a failed corpus load isn't just this view's
+        // problem — every consumer of allSongs (search, add-song picker,
+        // review-queue merge dialog) needs to know the corpus is empty
+        // because the fetch failed, not because there's nothing to find.
+        setCorpusLoadFailed(true);
+        setBanner(
+            "The songbook index failed to load — search and song lists will be empty.",
+            { onRetry: () => loadIndex() }
+        );
+    } finally {
+        indexLoadInFlight = false;
     }
 }
 
@@ -1327,9 +1422,6 @@ let isAdminUser = false;
 
 // Trusted state (cached the same way; gates the Promote overflow item)
 let isTrustedFlag = false;
-
-// Songs promoted this session (flips the overflow item to "Undo promote")
-const promotedIds = new Set();
 
 function getInitials(user) {
     const name = user.user_metadata?.full_name;
@@ -1427,11 +1519,16 @@ function updateDeleteButtonVisibility() {
     if (currentView === 'song') {
         updateWorkTopBar();
     }
+    // Trust/admin resolving late must not leave the Dungeon's queue hidden
+    // (or, on sign-out, visible).
+    if (dungeonMode) showReviewQueue();
 }
 
 // Promote the viewed archived song into the main index (trusted users).
-// Writes a promoted_songs row; the hourly sync + rebuild make it live on
-// the site, while an optimistic flip makes it searchable locally right away.
+// Writes a promoted_songs row, which every browser reads at startup and
+// applies client-side (see fetchSupabaseOverlays) — so the promotion is live
+// for everyone immediately. The hourly sync + rebuild are durability, not
+// delivery: they fold the same decision into the built index.
 async function handlePromoteSong() {
     const song = getCurrentSong();
     if (!song) return;
@@ -1445,6 +1542,7 @@ async function handlePromoteSong() {
         }
         promotedIds.delete(song.id);
         song.indexed = false;
+        rebuildCorpus();
         alert(`Promotion of "${song.title}" undone.`);
         updateWorkTopBar();
         return;
@@ -1462,7 +1560,8 @@ async function handlePromoteSong() {
     }
     promotedIds.add(song.id);
     song.indexed = true;
-    alert(`Promoted "${song.title}" to the songbook!\n\nIt is searchable for you immediately; the live site picks it up after the next hourly sync and rebuild.`);
+    rebuildCorpus();
+    alert(`Promoted "${song.title}" to the songbook!\n\nIt is searchable right away — for you and for everyone who loads the site from now on.`);
     updateWorkTopBar();
 }
 
@@ -1514,13 +1613,91 @@ async function confirmDeleteSelected(listEl, confirmBtn, statusEl) {
         }
         statusEl.textContent = '';
         deleteModal?.classList.add('hidden');
-        alert(`Marked for deletion: ${ids.join(', ')}\n\nTakes effect after the next deleted-songs sync and rebuild.`);
+        for (const id of ids) deletedIds.add(id);
+        rebuildCorpus();
+        alert(`Deleted: ${ids.join(', ')}\n\nGone from the site right away; the next sync and rebuild make it permanent.`);
         goBack();
     } catch (err) {
         console.error('Error deleting song:', err);
         statusEl.textContent = `Failed: ${err.message}`;
         confirmBtn.disabled = false;
     }
+}
+
+// Trusted-but-not-admin: the same overflow slot files a request instead of
+// deleting. Admins keep the instant modal above — they are the reviewers, so
+// queueing them would just be a round trip through their own inbox.
+async function handleRequestDeleteSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    const reason = prompt(
+        `Ask an admin to delete "${song.title}"?\n\nWhy should it go? (duplicate, junk data, wrong song…)`
+    );
+    if (reason === null) return;
+    if (!reason.trim()) {
+        alert('A reason is required — the reviewer only sees what you write here.');
+        return;
+    }
+
+    const { error } = await submitReviewRequest({
+        kind: 'delete',
+        targetId: song.id,
+        payload: { title: song.title },
+        reason: reason.trim(),
+    });
+    if (error) {
+        alert(`Could not file the request: ${error.message}`);
+        return;
+    }
+    alert(`Requested deletion of "${song.title}".\n\nIt stays on the site until an admin approves it — you can follow it in the review queue in the Bluegrass Dungeon.`);
+    if (dungeonMode) showReviewQueue();
+}
+
+// Suppress and merge-redirect have no instant execution path (see
+// review-queue.js), so both go through the same request queue for any
+// trusted user — the dialogs collect what submitReviewRequest needs and
+// validate before it ever reaches the network.
+async function handleRequestSuppressSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    const reason = await showSuppressRequestDialog(song);
+    if (reason === null) return; // cancelled
+
+    const { error } = await submitReviewRequest({
+        kind: 'suppress',
+        targetId: song.id,
+        payload: {},
+        reason,
+    });
+    if (error) {
+        alert(`Could not file the request: ${error.message}`);
+        return;
+    }
+    alert(`Requested suppression of "${song.title}".\n\nIt stays searchable until an admin approves the request AND runs the suppress command it prints — you can follow both steps in the review queue in the Bluegrass Dungeon.`);
+    if (dungeonMode) showReviewQueue();
+}
+
+async function handleRequestMergeSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    const outcome = await showMergeRequestDialog(song, { songs: allSongs });
+    if (outcome === null) return; // cancelled
+
+    const { error } = await submitReviewRequest({
+        kind: 'merge-redirect',
+        targetId: song.id,
+        payload: buildMergeRedirectPayload(outcome.targetId),
+        reason: outcome.reason,
+    });
+    if (error) {
+        alert(`Could not file the request: ${error.message}`);
+        return;
+    }
+    alert(`Requested merging "${song.title}" into "${outcome.targetTitle}".\n\nBoth songs stay as they are until an admin approves the request AND runs the merge command it prints — you can follow both steps in the review queue in the Bluegrass Dungeon.`);
+    if (dungeonMode) showReviewQueue();
 }
 
 function updateVisitorStats(totalViews, totalVisitors) {
@@ -1763,18 +1940,6 @@ async function handlePasswordUpdate() {
     } finally {
         resetUpdateBtn.disabled = false;
     }
-}
-
-function showToast(message) {
-    const toast = document.createElement('div');
-    toast.className = 'auth-toast';
-    toast.textContent = message;
-    document.body.appendChild(toast);
-    requestAnimationFrame(() => toast.classList.add('visible'));
-    setTimeout(() => {
-        toast.classList.remove('visible');
-        setTimeout(() => toast.remove(), 300);
-    }, 3000);
 }
 
 function initAuthModal() {
@@ -2311,6 +2476,9 @@ function init() {
     // rAF-batched, so the argument can lag behind rapid flag changes.
     subscribe('dungeonMode', () => {
         document.body.classList.toggle('dungeon-mode', dungeonMode);
+        // The review queue is Dungeon chrome too: leaving the scope takes it
+        // with you (enterDungeon re-renders it on the way in).
+        if (!dungeonMode) hideReviewQueue();
     });
     document.body.classList.toggle('dungeon-mode', dungeonMode);
 
@@ -2324,20 +2492,12 @@ function init() {
     // Initialize super-user request module
     initSuperUserRequest();
 
-    // Route to the photo/document upload view (login required).
-    // Shared by the picker's Upload card and the editor's empty-state link.
-    const goToDocUpload = (ctx) => {
-        if (!requireLogin('upload songs')) return;
-        if (ctx?.targetSlug) prefillDocUpload(ctx);
-        showView('doc-upload');
-        pushHistoryState('doc-upload');
-    };
-
-    // Initialize add-song picker and doc upload.
-    // The picker is the single Add Song entry (top-band nav item, contribute/
-    // request flows); the #add deep link still goes straight to the editor.
+    // Initialize the add-song picker. It is the single Add Song entry
+    // (top-band nav item, contribute/request flows); the #add deep link still
+    // goes straight to the editor. Binary document upload was removed in
+    // phase 2d — the intake was a dead end, so the picker offers text or a
+    // song request only.
     initAddSongPicker({
-        onUpload: goToDocUpload,
         onChordPro: (ctx) => {
             if (ctx?.targetSlug) {
                 enterEditMode({ id: ctx.targetSlug, title: ctx.title, artist: ctx.artist, key: ctx.key, content: '' });
@@ -2345,13 +2505,6 @@ function init() {
                 navigateTo('add-song');
             }
         },
-    });
-    initDocUpload();
-
-    // Upload panel back button
-    document.getElementById('upload-back-btn')?.addEventListener('click', () => {
-        resetDocUpload();
-        navigateTo('search');
     });
 
     // Initialize lists module (handles favorites as a special list)
@@ -2391,10 +2544,24 @@ function init() {
     configureWorkPage({
         onEdit: (song) => enterEditMode(song),
         onDelete: handleDeleteSong,
+        onRequestDelete: handleRequestDeleteSong,
+        onRequestSuppress: handleRequestSuppressSong,
+        onRequestMerge: handleRequestMergeSong,
         isAdmin: () => isAdminUser,
         isTrusted: () => isTrustedFlag,
         onPromote: handlePromoteSong,
         isPromoted: (id) => promotedIds.has(id),
+    });
+
+    configureReviewQueue({
+        isAdmin: () => isAdminUser,
+        isTrusted: () => isTrustedFlag,
+        // An approved delete has already landed in deleted_songs; mirror it
+        // client-side so the corpus stops serving the song immediately.
+        onDeleteExecuted: (id) => {
+            deletedIds.add(id);
+            rebuildCorpus();
+        },
     });
 
     initSearch({
@@ -2445,7 +2612,6 @@ function init() {
         editorKeySelect,
         metadataSummary,
         metadataFields,
-        onUploadRequest: () => goToDocUpload(),
         onSongRequest: () => openAddSongPicker({ mode: 'request' }),
         editorPreviewContainer,
         editorUndoBtn,
@@ -2516,6 +2682,14 @@ function init() {
     forceSyncBtn?.addEventListener('click', async () => {
         updateSyncUI('syncing');
         await performFullListsSync();
+    });
+
+    // My Submissions link in account modal (#227 / #207)
+    const mySubmissionsBtn = document.getElementById('account-my-submissions-btn');
+    mySubmissionsBtn?.addEventListener('click', () => {
+        closeAccountModal();
+        showView('my-submissions');
+        pushHistoryState('my-submissions');
     });
 
     // Song Lists page

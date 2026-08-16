@@ -130,6 +130,81 @@ describe('mergeCorpus', () => {
     });
 });
 
+describe('mergeCorpus curation overlays (deleted_songs / promoted_songs)', () => {
+    it('deleted ids drop out of the corpus entirely (mirrors filter_suppressed)', () => {
+        const { songs, groups } = mergeCorpus({
+            canon: CANON,
+            deleted: new Set(['blue-moon-of-kentucky-elvis']),
+        });
+        expect(songs.map(s => s.id)).toEqual(['blue-moon-of-kentucky']);
+        expect(groups.g1).toHaveLength(1);
+    });
+
+    it('deleted ids drop archived rows too, so deep links stop resolving', () => {
+        const { songs } = mergeCorpus({
+            canon: CANON,
+            archive: markArchived([...ARCHIVE.map(r => ({ ...r }))]),
+            deleted: ['obscure-b-side'],
+        });
+        expect(songs.find(s => s.id === 'obscure-b-side')).toBeUndefined();
+    });
+
+    it('a deleted id also drops its pending overlay row', () => {
+        const pending = [{ id: 'brand-new', title: 'Brand New', content: '[D]new' }];
+        const { songs } = mergeCorpus({
+            canon: CANON, pending, deleted: ['brand-new'],
+        });
+        expect(songs.find(s => s.id === 'brand-new')).toBeUndefined();
+    });
+
+    it('accepts raw Supabase rows ({song_id}) as well as ids', () => {
+        const { songs } = mergeCorpus({
+            canon: CANON, deleted: [{ song_id: 'blue-moon-of-kentucky' }],
+        });
+        expect(songs.map(s => s.id)).toEqual(['blue-moon-of-kentucky-elvis']);
+    });
+
+    it('promoted archive rows become searchable (mirrors apply_index_prune)', () => {
+        const archive = markArchived(ARCHIVE.map(r => ({ ...r })));
+        const { songs } = mergeCorpus({
+            canon: CANON, archive, promoted: ['obscure-b-side'],
+        });
+        const row = songs.find(s => s.id === 'obscure-b-side');
+        expect(row.indexed).toBe(true);
+        expect(countDistinctTitles(songs)).toBe(2);   // canon title + promoted
+    });
+
+    it('promotion copies the row, so un-promoting restores indexed:false', () => {
+        const archive = markArchived(ARCHIVE.map(r => ({ ...r })));
+        mergeCorpus({ canon: CANON, archive, promoted: ['obscure-b-side'] });
+        const { songs } = mergeCorpus({ canon: CANON, archive });
+        expect(songs.find(s => s.id === 'obscure-b-side').indexed).toBe(false);
+    });
+
+    it('promoting an id that is only in the archive does nothing until it loads', () => {
+        const { songs } = mergeCorpus({ canon: CANON, promoted: ['obscure-b-side'] });
+        expect(songs.find(s => s.id === 'obscure-b-side')).toBeUndefined();
+        expect(songs).toHaveLength(2);
+    });
+
+    it('deletion beats promotion for the same id (build order)', () => {
+        const archive = markArchived(ARCHIVE.map(r => ({ ...r })));
+        const { songs } = mergeCorpus({
+            canon: CANON, archive,
+            promoted: ['obscure-b-side'], deleted: ['obscure-b-side'],
+        });
+        expect(songs.find(s => s.id === 'obscure-b-side')).toBeUndefined();
+    });
+
+    it('empty overlays leave the corpus untouched', () => {
+        const plain = mergeCorpus({ canon: CANON });
+        const overlaid = mergeCorpus({
+            canon: CANON, deleted: new Set(), promoted: [],
+        });
+        expect(overlaid.songs.map(s => s.id)).toEqual(plain.songs.map(s => s.id));
+    });
+});
+
 describe('ensureStems', () => {
     it('builds a stem set once per song', () => {
         const songs = [{ id: 'a', title: 'Blue Moon', artist: 'Bill Monroe' }];

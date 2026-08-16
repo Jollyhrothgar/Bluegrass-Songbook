@@ -1,8 +1,17 @@
-// Supabase Edge Function to create GitHub issues from song flags
-// Requires authenticated user. Logs submissions to submission_log.
+// Supabase Edge Function to create GitHub issues from song flags / feedback.
+//
+// ANONYMOUS-CAPABLE (Phase 2a): flagging a problem is a report, not content
+// the reporter will come back looking for — a confirmation toast is the
+// complete experience, so login is not required. Abuse guards are an IP
+// throttle (same limiter shape as create-tab-pr) plus the fact that the
+// output is a labelled GitHub issue a human reads.
+//
+// If the caller IS signed in, their identity is derived SERVER-SIDE from the
+// verified session and attached to the issue and submission_log. A
+// client-supplied `submittedBy` is ignored — the field no longer exists.
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2"
+import { attributionFor, callerIp, optionalUser, rateLimited } from "../_shared/identity.ts"
 
 const GITHUB_REPO = "Jollyhrothgar/Bluegrass-Songbook"
 
@@ -17,7 +26,6 @@ interface FlagRequest {
   songArtist: string
   flagType: string
   description?: string
-  submittedBy?: string
 }
 
 const FLAG_TYPE_LABELS: Record<string, string> = {
@@ -27,6 +35,10 @@ const FLAG_TYPE_LABELS: Record<string, string> = {
   'missing-section': 'Missing section',
   'other': 'Other issue',
 }
+
+// Anonymous reports get a tighter budget than signed-in ones.
+const ANON_MAX_PER_HOUR = 5
+const USER_MAX_PER_HOUR = 20
 
 serve(async (req) => {
   // Handle CORS preflight
@@ -40,49 +52,40 @@ serve(async (req) => {
       throw new Error('GITHUB_PAT not configured')
     }
 
-    const supabaseUrl = Deno.env.get('SUPABASE_URL')
-    const supabaseServiceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')
+    // Anonymous is allowed; a valid session just supplies identity.
+    const { user, admin } = await optionalUser(req)
+    const attribution = attributionFor(user)
+    const ip = callerIp(req)
 
-    // Require authentication
-    const authHeader = req.headers.get('Authorization')
-    if (!authHeader) {
+    const limitKey = user ? `flag:user:${user.id}` : `flag:ip:${ip}`
+    if (rateLimited(limitKey, { max: user ? USER_MAX_PER_HOUR : ANON_MAX_PER_HOUR })) {
       return new Response(
-        JSON.stringify({ error: 'Authentication required' }),
-        { status: 401, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        JSON.stringify({ error: 'Too many reports — try again later' }),
+        { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
       )
     }
 
-    // Verify user token
-    let userId: string | null = null
-    if (supabaseUrl && supabaseServiceKey) {
-      const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey)
-      const token = authHeader.replace('Bearer ', '')
-      const { data: { user }, error: authError } = await supabaseAdmin.auth.getUser(token)
+    const body: FlagRequest = await req.json()
+    const { songId, songTitle, songArtist, flagType, description } = body
 
-      if (authError || !user) {
-        return new Response(
-          JSON.stringify({ error: 'Invalid or expired token' }),
-          { status: 401, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-        )
-      }
-      userId = user.id
+    // Validate required fields
+    if (!songId || !flagType) {
+      return new Response(
+        JSON.stringify({ error: 'Missing required fields' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+    if (description && description.length > 5_000) {
+      return new Response(
+        JSON.stringify({ error: 'Description too long' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
 
-      const body: FlagRequest = await req.json()
-      const { songId, songTitle, songArtist, flagType, description, submittedBy } = body
-      const attribution = submittedBy || user.user_metadata?.full_name || user.email || 'Authenticated User'
+    const flagLabel = FLAG_TYPE_LABELS[flagType] || flagType
+    const issueTitle = `Song Issue: ${songTitle || songId}`
 
-      // Validate required fields
-      if (!songId || !flagType) {
-        return new Response(
-          JSON.stringify({ error: 'Missing required fields' }),
-          { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-        )
-      }
-
-      const flagLabel = FLAG_TYPE_LABELS[flagType] || flagType
-      const issueTitle = `Song Issue: ${songTitle || songId}`
-
-      let issueBody = `## Song Issue Report
+    let issueBody = `## Song Issue Report
 
 **Song:** ${songTitle || 'Unknown'}
 **Artist:** ${songArtist || 'Unknown'}
@@ -91,63 +94,60 @@ serve(async (req) => {
 **Reported by:** ${attribution}
 `
 
-      if (description) {
-        issueBody += `
+    if (description) {
+      issueBody += `
 ### Details
 ${description}
 `
-      }
+    }
 
-      issueBody += `
+    issueBody += `
 ---
 *Submitted via Report Issue button*
 `
 
-      // Create GitHub issue
-      const response = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/issues`, {
-        method: 'POST',
-        headers: {
-          'Authorization': `token ${githubToken}`,
-          'Accept': 'application/vnd.github.v3+json',
-          'Content-Type': 'application/json',
-          'User-Agent': 'Bluegrass-Songbook-Bot',
-        },
-        body: JSON.stringify({
-          title: issueTitle,
-          body: issueBody,
-          labels: ['song-flag', flagType],
-        }),
-      })
+    // Create GitHub issue
+    const response = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/issues`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `token ${githubToken}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json',
+        'User-Agent': 'Bluegrass-Songbook-Bot',
+      },
+      body: JSON.stringify({
+        title: issueTitle,
+        body: issueBody,
+        labels: ['song-flag', flagType],
+      }),
+    })
 
-      if (!response.ok) {
-        const errorText = await response.text()
-        console.error('GitHub API error:', response.status, errorText)
-        throw new Error(`GitHub API error: ${response.status}`)
-      }
-
-      const issue = await response.json()
-
-      // Log to submission_log
-      await supabaseAdmin.from('submission_log').insert({
-        user_id: userId,
-        action: 'flag_report',
-        target_id: songId,
-        ip_address: req.headers.get('x-forwarded-for') || req.headers.get('cf-connecting-ip') || null,
-        user_agent: req.headers.get('user-agent') || null,
-        metadata: { flag_type: flagType, issue_number: issue.number },
-      })
-
-      return new Response(
-        JSON.stringify({
-          success: true,
-          issueNumber: issue.number,
-          issueUrl: issue.html_url
-        }),
-        { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-      )
+    if (!response.ok) {
+      const errorText = await response.text()
+      console.error('GitHub API error:', response.status, errorText)
+      throw new Error(`GitHub API error: ${response.status}`)
     }
 
-    throw new Error('Supabase credentials not configured')
+    const issue = await response.json()
+
+    // Log to submission_log (user_id is nullable — anonymous reports log too)
+    await admin.from('submission_log').insert({
+      user_id: user?.id || null,
+      action: 'flag_report',
+      target_id: songId,
+      ip_address: ip === 'unknown' ? null : ip,
+      user_agent: req.headers.get('user-agent') || null,
+      metadata: { flag_type: flagType, issue_number: issue.number, anonymous: !user },
+    })
+
+    return new Response(
+      JSON.stringify({
+        success: true,
+        issueNumber: issue.number,
+        issueUrl: issue.html_url
+      }),
+      { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    )
 
   } catch (error) {
     console.error('Error creating issue:', error)

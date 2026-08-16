@@ -1,7 +1,7 @@
 // Core search functionality for Bluegrass Songbook
 
 import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork, dungeonMode } from './state.js';
-import { highlightMatch, escapeHtml, requireLogin } from './utils.js';
+import { highlightMatch, escapeHtml } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import {
     songHasTags, getTagCategory, formatTagName, syncTagControls,
@@ -1142,8 +1142,9 @@ export function renderResults(songs, query) {
                 ` : ''}
             </div>
         `;
+        // Requesting a song needs no account (Phase 2a) — it's a request,
+        // not content the requester will come back looking for.
         resultsDivEl.querySelector('#empty-request-btn')?.addEventListener('click', () => {
-            if (!requireLogin('request songs')) return;
             openAddSongPicker({ mode: 'request' });
         });
         return;

@@ -375,7 +375,7 @@ test.describe('List Sharing', () => {
         await expect(page.locator('#list-share-btn')).toBeVisible();
     });
 
-    test('print button visible when viewing list', async ({ page }) => {
+    test('Export pill visible when viewing list', async ({ page }) => {
         await page.goto('/');
         await page.evaluate(() => {
             localStorage.clear();
@@ -390,6 +390,8 @@ test.describe('List Sharing', () => {
         await navClick(page, 'favorites');
         await page.waitForTimeout(500);
 
-        await expect(page.locator('#list-print-btn')).toBeVisible();
+        // The list header's bare Print button became the Export pill
+        // (print + .pro/.txt/.zip downloads) — see print-options.spec.js.
+        await expect(page.locator('#list-export-pill')).toBeVisible();
     });
 });

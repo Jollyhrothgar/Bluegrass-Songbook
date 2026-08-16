@@ -5,6 +5,7 @@ import { allSongs } from './state.js';
 import { songHasContent, songHasAbc } from './song-content.js';
 import { generateSlug, escapeHtml, isPlaceholder } from './utils.js';
 import { track } from './analytics.js';
+import { launchTabCreator } from './otf-editor/create-tab-entry.js';
 
 const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
@@ -12,6 +13,11 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 let pickerModal = null;
 let pickerCards = null;
 let requestForm = null;
+let tabTargetPanel = null;
+let tabSearch = null;
+let tabInstrument = null;
+let tabResults = null;
+let tabNewBtn = null;
 let headerTitle = null;
 let requestCard = null;
 let onUpload = null;
@@ -40,6 +46,13 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
     requestForm = pickerModal.querySelector('.picker-request-form');
     headerTitle = document.getElementById('picker-header-title');
     requestCard = pickerModal.querySelector('.picker-card-request');
+
+    // Tablature target step
+    tabTargetPanel = pickerModal.querySelector('.picker-tab-target');
+    tabSearch = document.getElementById('picker-tab-search');
+    tabInstrument = document.getElementById('picker-tab-instrument');
+    tabResults = document.getElementById('picker-tab-results');
+    tabNewBtn = document.getElementById('picker-tab-new');
 
     // Form elements
     reqTitle = document.getElementById('picker-req-title');
@@ -75,6 +88,10 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
                 showRequestForm();
                 return;
             }
+            if (type === 'tablature') {
+                startTabFlow();
+                return;
+            }
             closeAddSongPicker();
             const ctx = { ...currentContext };
             if (type === 'upload' && onUpload) onUpload(ctx);
@@ -82,8 +99,25 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
         });
     });
 
-    // Back button in request form
-    pickerModal.querySelector('.picker-back-btn')?.addEventListener('click', showCards);
+    // Back buttons (request form and tab-target step)
+    pickerModal.querySelectorAll('.picker-back-btn').forEach(
+        btn => btn.addEventListener('click', showCards));
+
+    // Tab target: search existing works, or add the song as new via the tab
+    tabSearch?.addEventListener('input', renderTabResults);
+    tabResults?.addEventListener('click', (e) => {
+        const row = e.target.closest('.picker-tab-result');
+        if (!row) return;
+        openTabCreator(row.dataset.workId, row.dataset.title);
+    });
+    tabNewBtn?.addEventListener('click', () => {
+        // Belt-and-suspenders alongside renderTabResults hiding the button:
+        // starting a tab with no target while the corpus never loaded is a
+        // silent duplicate-minting window (triage, 2026-08-16), not an
+        // informed "no, really, no song exists" choice.
+        if (allSongs.length === 0) return;
+        openTabCreator(null, tabSearch?.value?.trim() || '');
+    });
 
     // Title input: enable submit + dedup check
     reqTitle?.addEventListener('input', updateRequestSubmitState);
@@ -96,11 +130,116 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
 function showCards() {
     pickerCards?.classList.remove('hidden');
     requestForm?.classList.add('hidden');
+    tabTargetPanel?.classList.add('hidden');
     headerTitle.textContent = currentContext.mode === 'contribute' ? 'Help Complete This Song' : 'Add a Song';
+}
+
+/**
+ * Tablature card. A tab is always a tab OF something, so the flow needs a
+ * work before the editor is any use: in 'contribute' mode we already know
+ * it (the picker was opened from that work's page), otherwise ask.
+ */
+function startTabFlow() {
+    if (currentContext.targetSlug) {
+        openTabCreator(currentContext.targetSlug, currentContext.title || '');
+        return;
+    }
+    pickerCards?.classList.add('hidden');
+    requestForm?.classList.add('hidden');
+    tabTargetPanel?.classList.remove('hidden');
+    headerTitle.textContent = 'Tab a Song';
+    if (tabSearch) {
+        tabSearch.value = currentContext.title || '';
+        tabSearch.focus();
+    }
+    renderTabResults();
+}
+
+/**
+ * Existing works whose title looks like the query. Deliberately the same
+ * normalize+similarity pair the request form's dedup check uses — one
+ * notion of "same song" in this file, not two.
+ */
+export function searchWorksForTab(query, songs = allSongs, limit = 8) {
+    const q = normalizeForMatch(query);
+    if (!q) return [];
+    const scored = [];
+    for (const song of songs) {
+        const title = normalizeForMatch(song.title);
+        if (!title) continue;
+        const score = title.startsWith(q) ? 1 + similarity(q, title) : similarity(q, title);
+        if (title.includes(q) || score >= 0.7) scored.push({ song, score });
+    }
+    scored.sort((a, b) => b.score - a.score || a.song.title.localeCompare(b.song.title));
+    return scored.slice(0, limit).map(s => s.song);
+}
+
+/**
+ * Pure: what the tab-target search box should show for a given query,
+ * match set, and whether the corpus loaded at all. Split out so the three
+ * states — a match, a genuine no-match, and "the corpus never loaded" — are
+ * each one unit-testable branch instead of buried in DOM-building code.
+ *
+ * A load failure must never read as a confident "No song by that name":
+ * that message asserts the corpus was searched and came up empty, which is
+ * false when allSongs never loaded (triage, 2026-08-16 — the Foggy
+ * Mountain "no song by that name" bug had exactly this cause).
+ */
+export function tabResultsState(query, matches, corpusEmpty) {
+    if (corpusEmpty) {
+        return { kind: 'corpus-empty', message: "The songbook isn't loaded — can't search songs right now." };
+    }
+    if (matches.length) {
+        return { kind: 'matches' };
+    }
+    if (query?.trim()) {
+        return { kind: 'no-match', message: 'No song by that name — you can add it as a new song and tab it.' };
+    }
+    return { kind: 'empty-query' };
+}
+
+function renderTabResults() {
+    if (!tabResults) return;
+    const query = tabSearch?.value || '';
+    const matches = searchWorksForTab(query);
+    const state = tabResultsState(query, matches, allSongs.length === 0);
+
+    // Offering the add-as-new-song button while the corpus is empty
+    // presents an unknown state as an informed choice — it can silently
+    // mint a duplicate work the moment the index actually loads.
+    tabNewBtn?.classList.toggle('hidden', state.kind === 'corpus-empty');
+
+    if (state.kind === 'corpus-empty') {
+        tabResults.innerHTML = `<div class="picker-tab-empty picker-tab-error">${escapeHtml(state.message)}</div>`;
+        return;
+    }
+    if (state.kind === 'no-match') {
+        tabResults.innerHTML = `<div class="picker-tab-empty">${escapeHtml(state.message)}</div>`;
+        return;
+    }
+    if (state.kind === 'empty-query') {
+        tabResults.innerHTML = '';
+        return;
+    }
+    tabResults.innerHTML = matches.map(song => `
+        <button class="picker-tab-result" data-work-id="${escapeHtml(song.id)}"
+                data-title="${escapeHtml(song.title || song.id)}">
+            <span class="picker-tab-result-title">${escapeHtml(song.title || song.id)}</span>
+            ${song.artist ? `<span class="picker-tab-result-artist">${escapeHtml(song.artist)}</span>` : ''}
+        </button>
+    `).join('');
+}
+
+/** Hand off to the tab editor. Login is gated inside launchTabCreator. */
+function openTabCreator(workId, title) {
+    const instrument = tabInstrument?.value || currentContext.instrument || '';
+    const launched = launchTabCreator({ workId: workId || null, instrument, title });
+    if (launched) closeAddSongPicker();
 }
 
 function showRequestForm() {
     pickerCards?.classList.add('hidden');
+    tabTargetPanel?.classList.add('hidden');
     requestForm?.classList.remove('hidden');
     headerTitle.textContent = 'Request a Song';
 
@@ -279,26 +418,46 @@ async function submitRequest() {
     if (reqStatus) { reqStatus.textContent = 'Submitting...'; reqStatus.className = 'picker-req-status'; }
 
     try {
+        // Requesting a song does NOT require login (Phase 2a): it's a
+        // request, not content the requester will come back looking for.
+        // Signed in → the session token, and the server makes a placeholder
+        // owned by the requester. Anonymous → the anon key, and the server
+        // files a `tune-request` issue instead; the toast is the whole
+        // experience, so there is nowhere to navigate afterwards.
         const supabase = window.SupabaseAuth?.supabase;
         const session = supabase ? (await supabase.auth.getSession()).data.session : null;
-        if (!session) throw new Error('Not logged in');
+        const authToken = session?.access_token || SUPABASE_ANON_KEY;
 
         const resp = await fetch(`${SUPABASE_URL}/functions/v1/create-song-request`, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${session.access_token}`,
+                'Authorization': `Bearer ${authToken}`,
                 'apikey': SUPABASE_ANON_KEY,
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ title, artist, key, notes, id: slug }),
         });
 
+        const result = await resp.json().catch(() => ({}));
         if (!resp.ok) {
-            const body = await resp.json().catch(() => ({}));
-            throw new Error(body.error || 'Failed to submit request');
+            throw new Error(result.error || 'Failed to submit request');
         }
 
-        track('placeholder_request_submit', { has_artist: !!artist, has_notes: !!notes });
+        track('placeholder_request_submit', {
+            has_artist: !!artist,
+            has_notes: !!notes,
+            anonymous: !session,
+        });
+
+        if (result.mode === 'issue') {
+            // Anonymous: no placeholder work exists to navigate to
+            if (reqStatus) {
+                reqStatus.textContent = 'Thanks! Your request has been logged.';
+                reqStatus.className = 'picker-req-status success';
+            }
+            setTimeout(closeAddSongPicker, 1500);
+            return;
+        }
 
         if (reqStatus) { reqStatus.textContent = 'Request submitted!'; reqStatus.className = 'picker-req-status success'; }
 
@@ -350,4 +509,6 @@ export function closeAddSongPicker() {
     // Reset to cards view for next open
     pickerCards?.classList.remove('hidden');
     requestForm?.classList.add('hidden');
+    tabTargetPanel?.classList.add('hidden');
+    if (tabResults) tabResults.innerHTML = '';
 }

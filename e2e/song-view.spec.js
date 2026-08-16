@@ -108,18 +108,23 @@ test.describe('Song View', () => {
     });
 
     test('font size controls change the rendered size (Display pill)', async ({ page }) => {
-        const initialSize = await page.locator('.song-body')
-            .evaluate(el => parseFloat(getComputedStyle(el).fontSize));
+        const body = page.locator('.song-body');
+        await expect(body).toBeVisible();
+        const initialSize = await body.evaluate(el => parseFloat(getComputedStyle(el).fontSize));
 
         const popover = await openPill(page, 'display-pill');
         await popover.locator('[data-size="1"]').click();
-        await page.waitForTimeout(200);
 
-        const newSize = await page.locator('.song-body')
-            .evaluate(el => parseFloat(getComputedStyle(el).fontSize));
-        expect(newSize).toBeGreaterThan(initialSize);
+        // The size change lands on a reactive re-render (state.js notifyChange
+        // → work-view re-render), so poll rather than race a fixed timeout.
+        await expect
+            .poll(() => body.evaluate(el => parseFloat(getComputedStyle(el).fontSize)))
+            .toBeGreaterThan(initialSize);
 
         await popover.locator('[data-size="-1"]').click();
+        await expect
+            .poll(() => body.evaluate(el => parseFloat(getComputedStyle(el).fontSize)))
+            .toBe(initialSize);
     });
 
     test('only one pill popover is open at a time', async ({ page }) => {

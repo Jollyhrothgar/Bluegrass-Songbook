@@ -7,12 +7,12 @@ import {
     editingSongId, setEditingSongId,
     editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
-import { generateSlug } from './utils.js';
+import { generateSlug, requireLogin } from './utils.js';
 import { getSongContent, primeSongContent } from './song-content.js';
 import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
+import { showToast } from './toast.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
-import { openSuperUserRequestModal } from './superuser-request.js';
 import { createInteractivePreview } from './visual-editor/preview.js';
 import { wrapSelectionAsSection } from './visual-editor/wrap-section.js';
 import { parseSong, serializeSong } from './visual-editor/model.js';
@@ -20,6 +20,9 @@ import {
     cleanChordUPaste, cleanUltimateGuitarPaste,
     editorConvertToChordPro, editorDetectAndConvert
 } from './smart-paste.js';
+import {
+    Choice, findLikelyMatch, matchPercent, offrampChoices, planForChoice
+} from './dedup-check.js';
 
 // Re-export the shared smart-paste pipeline so existing importers/tests of
 // editor.js keep working unchanged (the code moved verbatim to smart-paste.js).
@@ -28,18 +31,10 @@ export {
     editorConvertToChordPro, editorDetectAndConvert
 };
 
-/**
- * Get the submitter attribution for issue body.
- * Requires logged-in user (anonymous path removed).
- */
-function getSubmitterAttribution() {
-    const user = window.SupabaseAuth?.getUser?.();
-    return user?.user_metadata?.full_name || user?.email || 'Anonymous User';
-}
-
-// Supabase configuration for anonymous submissions
+// Supabase configuration. Song submissions and corrections require a
+// session (Phase 2a): identity comes from the verified session server-side,
+// so the client sends the user's access token and no attribution field.
 const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
 
 // Module-level state
 let editorDetectedKey = null;
@@ -70,7 +65,6 @@ let editorTransposeDownEl = null;
 let editorKeySelectEl = null;
 let metadataSummaryEl = null;
 let metadataFieldsEl = null;
-let onUploadRequestCb = null;
 let onSongRequestCb = null;
 
 // Two-pane interactive preview state
@@ -80,6 +74,9 @@ let editorRedoBtnEl = null;
 let editorTransposeGroupEl = null;
 let editorSelectionToolbarEl = null;
 let preview = null;
+// The record being edited, kept so the fork notice can ask "is this mine?"
+// without going back through allSongs.
+let editingSongRecord = null;
 // True once enterEditMode has run, until the editor is reset to a fresh
 // new-song state. Unlike editMode/editingSongId this survives exitEditMode,
 // so entering Add Song later can tell "abandoned edit" from "unsaved draft".
@@ -168,6 +165,7 @@ export async function enterEditMode(song, options = {}) {
 
     setEditMode(true);
     setEditingSongId(song.id);
+    editingSongRecord = song;
     lastSessionWasEdit = true;
     trackEditor('edit', song.id);
 
@@ -186,8 +184,13 @@ export async function enterEditMode(song, options = {}) {
     updateMetadataSummary();
     setMetadataExpanded(false);
 
-    // Update submit button text
-    if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit Correction';
+    // Editing content that isn't yours forks instead of overwriting. Say so
+    // now, not after the fact.
+    const mine = ownsContent(song);
+    if (editorSubmitBtnEl) {
+        editorSubmitBtnEl.textContent = mine ? 'Submit Correction' : 'Save as My Arrangement';
+    }
+    renderForkNotice();
 
     // Switch to editor panel (update nav state)
     [navSearchEl, navAddSongEl, navFavoritesEl].forEach(btn => {
@@ -222,6 +225,8 @@ export async function enterEditMode(song, options = {}) {
 export function exitEditMode() {
     setEditMode(false);
     setEditingSongId(null);
+    editingSongRecord = null;
+    renderForkNotice();
     editorKeyPinned = false;
     if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
     if (editorCommentEl) editorCommentEl.value = '';
@@ -236,6 +241,8 @@ export function exitEditMode() {
 export function resetEditorForNewSong() {
     setEditMode(false);
     setEditingSongId(null);
+    editingSongRecord = null;
+    renderForkNotice();
     lastSessionWasEdit = false;
     editorKeyPinned = false;
     editorDetectedKey = null;
@@ -496,7 +503,6 @@ function initInteractivePreview() {
             // this one-way notification is what prevents update loops
             updateEditorChrome();
         },
-        onUploadRequest() { if (onUploadRequestCb) onUploadRequestCb(); },
         onSongRequest() { if (onSongRequestCb) onSongRequestCb(); }
     });
     preview.refresh();
@@ -530,7 +536,6 @@ export function initEditor(options) {
         editorKeySelect,
         metadataSummary,
         metadataFields,
-        onUploadRequest,
         onSongRequest,
         editorPreviewContainer,
         editorUndoBtn,
@@ -566,7 +571,6 @@ export function initEditor(options) {
     editorKeySelectEl = editorKeySelect;
     metadataSummaryEl = metadataSummary;
     metadataFieldsEl = metadataFields;
-    onUploadRequestCb = onUploadRequest;
     onSongRequestCb = onSongRequest;
     navSearchEl = navSearch;
     navAddSongEl = navAddSong;
@@ -810,47 +814,248 @@ export function initEditor(options) {
                 return;
             }
 
-            // Duplicate detection for new submissions (not edits)
-            if (!editMode) {
-                const normalizeTitle = t => t.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
-                const normalizedTitle = normalizeTitle(title);
-                const duplicates = allSongs.filter(s =>
-                    normalizeTitle(s.title || '') === normalizedTitle
-                );
-                if (duplicates.length > 0) {
-                    const dupNames = duplicates.map(d => `"${d.title}" by ${d.artist || 'Unknown'}`).join('\n');
-                    if (!confirm(`Possible duplicate found:\n\n${dupNames}\n\nSubmit anyway?`)) return;
+            // Duplicate detection used to live here as a title-only confirm():
+            // it fired on every same-titled song in the corpus (and there are
+            // a lot of those) with no evidence and no useful answer — "Submit
+            // anyway?" is not an offramp. Phase 3b replaced it with the real
+            // scorer, which runs inside submitSong: lyrics decide, and a match
+            // opens a modal whose choices are actual mechanisms.
+
+            // Login gate at submit time, not at open time: anyone may draft
+            // a song in the editor, but a submission is content the author
+            // will come back looking for, so it needs an identity.
+            if (!requireLogin('submit songs')) {
+                if (editorStatusEl) {
+                    editorStatusEl.textContent = 'Sign in to submit — your draft stays here.';
+                    editorStatusEl.className = 'save-status error';
                 }
+                return;
             }
 
-            // Check if user is a trusted user (can save instantly)
-            const isTrusted = await window.SupabaseAuth?.isTrustedUser?.();
-
-            if (isTrusted) {
-                // Trusted user flow: save directly to pending_songs
-                await submitAsTrustedUser({
-                    title,
-                    artist,
-                    writer,
-                    chordpro,
-                    content
-                });
-            } else {
-                // Regular flow: create GitHub issue for approval
-                await submitToGitHubIssue({
-                    title,
-                    artist,
-                    chordpro
-                });
+            // One path for everyone (phase 2b). Trust no longer decides how
+            // fast a submission lands — only whether an edit of somebody
+            // else's chart may land in place instead of forking.
+            try {
+                await submitSong({ title, artist, writer, chordpro, content });
+            } catch {
+                /* reported in the status line */
             }
         });
     }
 }
 
 /**
- * Submit as a trusted user - saves directly to pending_songs for instant visibility
+ * Is the content being edited the current user's own?
+ *
+ * Best effort, and deliberately conservative: no owner on the record means
+ * "not yours". The server classifies authoritatively (it reads the work's
+ * provenance out of git), so a wrong guess here only changes what the user
+ * was told to expect, never what happens.
  */
-async function submitAsTrustedUser(data) {
+export function ownsContent(song) {
+    const user = window.SupabaseAuth?.getUser?.();
+    if (!user?.id || !song) return false;
+    // created_by: the live pending_songs row. submitted_by: the committed
+    // work's lead-sheet provenance, carried through the index.
+    const owner = song.created_by || song.submitted_by;
+    return !!owner && owner === user.id;
+}
+
+/**
+ * Say plainly, before they hit submit, that editing someone else's chart
+ * creates their own arrangement rather than changing the original.
+ */
+function renderForkNotice() {
+    if (!editorStatusEl?.parentNode) return;
+
+    let notice = document.getElementById('editor-fork-notice');
+    const shouldShow = editMode && !!editingSongRecord && !ownsContent(editingSongRecord);
+
+    if (!shouldShow) {
+        if (notice) notice.remove();
+        return;
+    }
+
+    if (!notice) {
+        notice = document.createElement('div');
+        notice.id = 'editor-fork-notice';
+        notice.className = 'editor-fork-notice';
+        editorStatusEl.parentNode.insertBefore(notice, editorStatusEl);
+    }
+    notice.textContent =
+        'This will be saved as your arrangement — the original stays untouched.';
+}
+
+/**
+ * "This song already exists" — offered as a choice at submit time, not
+ * discovered as a rejection later.
+ *
+ * Returns `{ submit, retargetId, intent }`. No match means no modal and no
+ * added friction: the overwhelmingly common case pays only a title-narrow
+ * pass over the in-memory index plus, at most, five content fetches.
+ *
+ * Every failure mode here submits as new. Failing to warn about a duplicate
+ * costs a merge later; blocking a contribution on a flaky fetch costs the
+ * contribution — and the CI backstop is the second net under this one.
+ */
+async function resolveDedupOfframp({ title, content }) {
+    const asNew = { submit: true, retargetId: null, intent: Choice.NEW };
+
+    let match = null;
+    try {
+        // Archived works are matchable too — an archived duplicate is exactly
+        // the case the "promote it" choice exists for.
+        await window.ensureArchiveLoaded?.();
+        match = await findLikelyMatch({
+            title,
+            content,
+            songs: allSongs,
+            fetchContent: getSongContent,
+        });
+    } catch (error) {
+        console.warn('Dedup check failed; submitting as new:', error);
+        return asNew;
+    }
+    if (!match) return asNew;
+
+    let trusted = false;
+    try {
+        trusted = (await window.SupabaseAuth?.isTrustedUser?.()) === true;
+    } catch {
+        // Not trusted is the safe read: it only hides the promote button.
+    }
+
+    const choiceId = await showDedupModal(match, { trusted });
+    if (!choiceId) {
+        // Dismissed. Deliberately NOT "submit as new" — an accidental Escape
+        // must not mint the duplicate the modal just warned about.
+        return { submit: false, retargetId: null, intent: null };
+    }
+
+    const plan = planForChoice(choiceId, match);
+
+    if (plan.navigateTo) {
+        window.location.hash = plan.navigateTo;
+        return plan;
+    }
+
+    if (plan.promoteFirst) {
+        const { error } = (await window.SupabaseAuth?.promoteSong?.(match.song.id)) || {};
+        if (error) {
+            showToast(`Could not promote "${match.song.title}": ${error.message}`,
+                { variant: 'warning', duration: 6000 });
+        } else {
+            // Live for everyone who loads the site from here on; this tab
+            // picks it up on its next load (main.js reads promoted_songs at
+            // startup). The song page itself works immediately either way.
+            showToast(`"${match.song.title}" is back in search.`, { duration: 5000 });
+        }
+    }
+
+    return plan;
+}
+
+/**
+ * The offramp modal. Resolves with a `Choice` id, or null if dismissed.
+ *
+ * Deliberately plain: one sentence of evidence (the containment percentage,
+ * which is the number the scorer actually decided on) and a stack of buttons
+ * that each map to a mechanism that already exists.
+ *
+ * Exported for tests.
+ */
+export function showDedupModal(match, { trusted = false } = {}) {
+    return new Promise(resolve => {
+        const { song, verdict } = match;
+        document.getElementById('dedup-offramp-modal')?.remove();
+
+        const modal = document.createElement('div');
+        modal.id = 'dedup-offramp-modal';
+        modal.className = 'modal';
+
+        const archived = song.indexed === false;
+        const byline = [song.artist, archived ? 'archived' : null]
+            .filter(Boolean).join(' · ');
+
+        const header = document.createElement('div');
+        header.className = 'modal-header';
+        const heading = document.createElement('h2');
+        heading.textContent = 'This looks like a song we already have';
+        const close = document.createElement('button');
+        close.className = 'modal-close';
+        close.setAttribute('aria-label', 'Close');
+        close.innerHTML = '&times;';
+        header.append(heading, close);
+
+        const body = document.createElement('div');
+        body.className = 'modal-body';
+
+        const lead = document.createElement('p');
+        lead.className = 'dedup-offramp-lead';
+        const strong = document.createElement('strong');
+        strong.textContent = song.title || song.id;
+        lead.append('This looks like ', strong);
+        if (byline) lead.append(` (${byline})`);
+        lead.append(` — ${matchPercent(verdict)}% of its lyrics match what you wrote.`);
+        body.appendChild(lead);
+
+        const list = document.createElement('div');
+        list.className = 'dedup-offramp-choices';
+        for (const choice of offrampChoices(match, { trusted })) {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'dedup-offramp-choice'
+                + (choice.primary ? ' dedup-offramp-choice-primary' : '');
+            button.dataset.choice = choice.id;
+
+            const label = document.createElement('span');
+            label.className = 'dedup-offramp-choice-label';
+            label.textContent = choice.label;
+            button.appendChild(label);
+
+            if (choice.detail) {
+                const detail = document.createElement('span');
+                detail.className = 'dedup-offramp-choice-detail';
+                detail.textContent = choice.detail;
+                button.appendChild(detail);
+            }
+            list.appendChild(button);
+        }
+        body.appendChild(list);
+
+        const content = document.createElement('div');
+        content.className = 'modal-content dedup-offramp-content';
+        content.append(header, body);
+        modal.appendChild(content);
+        document.body.appendChild(modal);
+
+        let done = false;
+        const finish = (choiceId) => {
+            if (done) return;
+            done = true;
+            document.removeEventListener('keydown', onKey);
+            modal.remove();
+            resolve(choiceId);
+        };
+        const onKey = (e) => { if (e.key === 'Escape') finish(null); };
+
+        list.addEventListener('click', (e) => {
+            const button = e.target.closest('.dedup-offramp-choice');
+            if (button) finish(button.dataset.choice);
+        });
+        close.addEventListener('click', () => finish(null));
+        modal.addEventListener('click', (e) => { if (e.target === modal) finish(null); });
+        document.addEventListener('keydown', onKey);
+
+        list.querySelector('.dedup-offramp-choice')?.focus();
+    });
+}
+
+/**
+ * Save a contribution: pending_songs first (live in seconds), then ask
+ * auto-commit-song to make it durable (minutes).
+ */
+async function submitSong(data) {
     const { title, artist, writer, chordpro, content } = data;
 
     // Generate slug for the song ID
@@ -871,9 +1076,39 @@ async function submitAsTrustedUser(data) {
         .replace(/^\{eov([:\s}])/gim, '{end_of_verse$1')
         .replace(/^\{eoc([:\s}])/gim, '{end_of_chorus$1');
 
+    // The offramp (phase 3b). Only for new songs: an edit already names the
+    // work it targets, which is the same rule the CI backstop applies. A
+    // retarget writes the row against the matched work instead of a fresh
+    // slug — from there the server classifies it exactly as it would any
+    // other edit of that work (update if they own content there, otherwise a
+    // new arrangement part).
+    let retargetId = null;
+    let intent = Choice.NEW;
+    if (!editMode) {
+        // The check can await a handful of fetches and then a human; hold the
+        // button so an impatient second click cannot open a second modal.
+        if (editorSubmitBtnEl) editorSubmitBtnEl.disabled = true;
+        let outcome;
+        try {
+            outcome = await resolveDedupOfframp({ title, content: normalizedContent });
+        } finally {
+            if (editorSubmitBtnEl) editorSubmitBtnEl.disabled = false;
+        }
+        if (!outcome.submit) {
+            if (editorStatusEl && outcome.intent !== Choice.VIEW) {
+                editorStatusEl.textContent = 'Not submitted — your draft is still here.';
+                editorStatusEl.className = 'save-status';
+            }
+            return;
+        }
+        retargetId = outcome.retargetId;
+        intent = outcome.intent;
+    }
+    const targetId = retargetId || slug;
+
     const pendingEntry = {
-        id: slug,
-        replaces_id: editMode ? editingSongId : null,
+        id: targetId,
+        replaces_id: editMode ? editingSongId : retargetId,
         title,
         artist: artist || null,
         composer: writer || null,
@@ -912,9 +1147,32 @@ async function submitAsTrustedUser(data) {
             throw new Error(error.message);
         }
 
-        // Step 2: Trigger auto-commit (fire and forget)
-        triggerAutoCommit(pendingEntry).catch(e => {
-            console.warn('Auto-commit failed, will retry later:', e);
+        // Step 2: ask for the durable write. Still non-blocking — the edit is
+        // already live from the pending_songs row above — but a failure is no
+        // longer silent: the hourly reconciler will retry it, and the user is
+        // told their edit is live but not yet synced rather than being left to
+        // believe everything landed.
+        //
+        // The response is also where the user finds out what the server
+        // decided the change WAS. The client's guess (the fork notice) is a
+        // courtesy; this is the answer.
+        triggerAutoCommit(pendingEntry).then(result => {
+            if (result?.mode === 'fork') {
+                showToast(
+                    // The pill is labelled "N versions", so say that — and it
+                    // is already listed there: the pending overlay carries
+                    // both takes (corpus.pendingForkArrangements) minutes
+                    // before the build publishes the new part.
+                    `Saved as your arrangement of "${title}" — it's in the versions list on that song's page. The original is untouched.`,
+                    { duration: 8000 }
+                );
+            }
+        }).catch(e => {
+            console.error('Auto-commit failed; edit is live but not yet in git:', e);
+            showToast(
+                'Saved and live — but syncing to the songbook is still pending. It will retry automatically.',
+                { variant: 'warning', duration: 6000 }
+            );
         });
 
         trackSubmission(editMode ? 'correction' : 'new_song');
@@ -924,10 +1182,19 @@ async function submitAsTrustedUser(data) {
             editorStatusEl.className = 'save-status success';
         }
 
+        if (retargetId) {
+            showToast(
+                intent === Choice.ARRANGEMENT
+                    ? `Added to "${title}" as your arrangement — no second copy of the song.`
+                    : `Added to "${title}" instead of making a second copy.`,
+                { duration: 6000 }
+            );
+        }
+
         // The saved text IS the truth for this session — seed the content
         // cache so the song page shows the edit instead of re-fetching the
         // published (pre-edit) data/songs/{slug}.pro
-        primeSongContent(slug, pendingEntry.content || '');
+        primeSongContent(targetId, pendingEntry.content || '');
         if (pendingEntry.replaces_id) {
             primeSongContent(pendingEntry.replaces_id, pendingEntry.content || '');
         }
@@ -936,7 +1203,7 @@ async function submitAsTrustedUser(data) {
         if (window.refreshPendingSongs) {
             await window.refreshPendingSongs();
         }
-        window.location.hash = `#song/${slug}`;
+        window.location.hash = `#song/${targetId}`;
 
     } catch (error) {
         console.error('Save error:', error);
@@ -944,20 +1211,34 @@ async function submitAsTrustedUser(data) {
             editorStatusEl.textContent = `Error: ${error.message}`;
             editorStatusEl.className = 'save-status error';
         }
+        throw error;
     } finally {
-        editorSubmitBtnEl.disabled = false;
+        if (editorSubmitBtnEl) editorSubmitBtnEl.disabled = false;
     }
 }
 
 /**
- * Trigger auto-commit edge function (fire and forget)
+ * Trigger the auto-commit edge function.
+ *
+ * Rejects when the durable write was not accepted, so the caller can tell the
+ * user. The old version awaited the fetch and ignored `response.ok`, which
+ * meant a 500 from the function resolved happily and the `.catch` never ran —
+ * the failure mode this is here to surface was the one it hid.
+ *
+ * Resolves with the function's body: `{ success, mode, workId, reason }`,
+ * where `mode` is 'create' | 'update' | 'fork' — the server's authoritative
+ * answer about what this submission actually did.
+ *
+ * Exported for tests.
  */
-async function triggerAutoCommit(entry) {
+export async function triggerAutoCommit(entry) {
     const supabase = window.SupabaseAuth?.supabase;
     const { data: { session } } = await supabase?.auth.getSession() || { data: {} };
-    if (!session?.access_token) return;
+    if (!session?.access_token) {
+        throw new Error('No active session — cannot sync to the songbook');
+    }
 
-    await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
+    const response = await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${session.access_token}`,
@@ -965,115 +1246,22 @@ async function triggerAutoCommit(entry) {
         },
         body: JSON.stringify(entry),
     });
-}
 
-/**
- * Submit to GitHub issue for approval (regular user flow)
- */
-async function submitToGitHubIssue(data) {
-    const { title, artist, chordpro } = data;
-
-    let submissionData;
-
-    if (editMode && editingSongId) {
-        const comment = editorCommentEl?.value.trim();
-        if (!comment) {
-            promptForField(editorCommentEl, 'Please describe your changes');
-            return;
+    if (!response.ok) {
+        let detail = '';
+        try {
+            detail = (await response.json())?.error || '';
+        } catch {
+            // non-JSON error body; the status is enough
         }
-
-        submissionData = {
-            type: 'correction',
-            title,
-            artist: artist || undefined,
-            songId: editingSongId,
-            chordpro,
-            comment,
-            submittedBy: getSubmitterAttribution()
-        };
-    } else {
-        submissionData = {
-            type: 'submission',
-            title,
-            artist: artist || undefined,
-            chordpro,
-            submittedBy: getSubmitterAttribution()
-        };
-    }
-
-    // Disable button and show submitting state
-    editorSubmitBtnEl.disabled = true;
-    if (editorStatusEl) {
-        editorStatusEl.textContent = 'Submitting...';
-        editorStatusEl.className = 'save-status';
+        throw new Error(`auto-commit-song returned ${response.status}${detail ? `: ${detail}` : ''}`);
     }
 
     try {
-        const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-                'apikey': SUPABASE_ANON_KEY
-            },
-            body: JSON.stringify(submissionData)
-        });
-
-        const result = await response.json();
-
-        if (!response.ok || !result.success) {
-            throw new Error(result.error || 'Failed to submit');
-        }
-
-        trackSubmission(editMode ? 'correction' : 'new_song');
-
-        if (editorStatusEl) {
-            // Show success message with link to issue and super-user prompt
-            const user = window.SupabaseAuth?.getUser?.();
-            let statusHtml = `Submitted! <a href="${result.issueUrl}" target="_blank">View issue #${result.issueNumber}</a>`;
-
-            // Only show super-user prompt if user is logged in
-            if (user) {
-                statusHtml += `
-                    <div class="superuser-prompt">
-                        Want instant edits next time?
-                        <span class="superuser-prompt-link" id="superuser-prompt-link">Request Super-User access</span>
-                    </div>`;
-            }
-
-            editorStatusEl.innerHTML = statusHtml;
-            editorStatusEl.className = 'save-status success';
-
-            // Wire up super-user prompt click
-            const promptLink = document.getElementById('superuser-prompt-link');
-            if (promptLink) {
-                promptLink.addEventListener('click', () => {
-                    openSuperUserRequestModal();
-                });
-            }
-        }
-
-        if (editMode) {
-            // Stay in edit mode so user can submit more corrections
-            // Edit mode will be cleared when they navigate away
-            if (editorCommentEl) editorCommentEl.value = '';
-        } else {
-            // Clear form for new submissions
-            if (editorTitleEl) editorTitleEl.value = '';
-            if (editorArtistEl) editorArtistEl.value = '';
-            if (editorContentEl) editorContentEl.value = '';
-            updateMetadataSummary();
-            setMetadataExpanded(false);
-            updateEditorPreview();
-        }
-
-    } catch (error) {
-        console.error('Submission error:', error);
-        if (editorStatusEl) {
-            editorStatusEl.textContent = `Error: ${error.message}`;
-            editorStatusEl.className = 'save-status error';
-        }
-    } finally {
-        editorSubmitBtnEl.disabled = false;
+        return await response.json();
+    } catch {
+        // A 200 with an unreadable body still means the dispatch was
+        // accepted; the caller just learns nothing about the mode.
+        return null;
     }
 }

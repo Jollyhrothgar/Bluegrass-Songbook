@@ -24,6 +24,7 @@ docs/
 │   ├── list-picker.js  # List picker popup component
 │   ├── editor.js       # Song editor (Raw tab), re-exports smart-paste pipeline
 │   ├── smart-paste.js  # Shared chord-sheet→ChordPro conversion (Raw + Visual paste)
+│   ├── dedup-check.js  # "This song already exists" scorer — MIRRORS scripts/lib/dedup_scorer.py
 │   ├── flags.js        # Unified feedback modal (song issues, bugs, general feedback)
 │   ├── add-song-picker.js # Add/request-a-song picker (also serves #request-song)
 │   ├── superuser-request.js # Super-user request modal and submission
@@ -591,6 +592,38 @@ and lets signed-in users vote. When picking a group's representative
 (search results, non-exact navigation), a `canonical` row wins outright;
 otherwise: content > most chords > highest `canonical_rank`.
 
+**Two takes on one work** (`arrangements`, issue #232). Editing a chart you
+don't own doesn't overwrite it — the server lands your text as an extra
+lead-sheet part on the SAME work, and the build publishes it as
+`data/songs/{id}--{slug}.pro` with an entry in the row's `arrangements`:
+
+```json
+"arrangements": [
+  {"slug": "default", "label": "Original", "default": true,
+   "file": "data/songs/how-long-blues.pro", "key": "G", "chord_count": 4},
+  {"slug": "simplified", "label": "Simplified", "arrangement_by": "Jane",
+   "file": "data/songs/how-long-blues--simplified.pro", "chord_count": 3}
+]
+```
+
+The field is absent unless a work really holds two charts, so nothing
+changes for the rest of the corpus. In the pill, the current work expands
+into one row per take; picking one calls `selectLeadSheetArrangement` and
+swaps the rendered chart **in place** — same work, same URL, page state
+only, exactly like tablature arrangements. Votes are cast per work id and a
+part has no id, so only the primary row carries the vote button.
+
+Content per take goes through `getArrangementContent(song, arrangement)`:
+an entry's own `content` string wins (a pending submission), else its
+`file` is fetched (url-keyed cache), else the work's lead sheet.
+
+**Before the build lands**: `corpus.pendingForkArrangements` synthesizes the
+same two-entry list on the pending overlay row — the published original plus
+"Your arrangement" (`pending: true`, content inline) — so a fork is listed in
+the pill seconds after submission instead of appearing to replace the chart
+it forked from. Ownership follows `process_pending.owns_content`: the work is
+yours only if a part there records you as its submitter.
+
 ## Dependencies
 
 - **Supabase JS** - CDN loaded for auth and database
@@ -613,23 +646,72 @@ Handles authentication and cloud sync. Key exports:
 | `deleteList(id)` | Delete a list |
 | `addSongToList(listId, songId)` | Add song to a list |
 | `removeSongFromList(listId, songId)` | Remove song from list |
-| `fetchGroupVotes(groupId)` | Get vote counts for versions |
-| `castVote(songId, groupId)` | Vote for a song version |
-| `removeVote(songId)` | Remove user's vote |
+| `fetchGroupVotes(groupId)` | Work-level vote counts for a version group |
+| `fetchArrangementVotes(songId)` | Per-arrangement counts for one work (`''` = the work-level vote) |
+| `fetchUserArrangementVotes(songId)` | Which of one work's arrangements the user voted for |
+| `castVote(songId, groupId, value, arrSlug)` | Vote for a version; `arrSlug` null = the work's own chart |
+| `removeVote(songId, arrSlug)` | Remove the user's vote for that same arrangement key |
 | `isTrustedUser()` | Check if current user has trusted status |
 | `savePendingSong(song)` | Save song to pending_songs table |
 
 ## Recent Features (Jan-Feb 2026)
 
-### Trusted User Editing
+### Contributing (phase 2b — trust gates edit rights, not speed)
 
-Trusted users can make instant edits without waiting for approval:
+Every logged-in user's submission takes the same path:
 
-- `isTrustedUser()` checks the `trusted_users` table
-- Trusted users see "Save Changes" instead of "Submit for Review"
-- Edits saved to `pending_songs` table, visible immediately
-- `refreshPendingSongs()` merges pending songs into `allSongs`
-- Regular users can request trusted status via super-user request modal
+- saved to `pending_songs` → visible immediately (`refreshPendingSongs()`
+  merges the overlay into `allSongs`)
+- `auto-commit-song` classifies it and fires a `pending-commit`
+  repository_dispatch; `process-pending.yml` lands it in `works/`
+- the response says what happened: `{mode: 'create' | 'update' | 'fork'}`
+- **fork**: editing content you didn't submit never overwrites it — the chart
+  lands as a new arrangement on the same work and the original stays put
+- `isTrustedUser()` (the `trusted_users` table) now only decides whether an
+  edit of someone else's chart may land **in place** instead of forking —
+  plus who may file a review request (below)
+- the GitHub-issue submission flow (`create-song-issue`) is gone
+
+### Review queue (phase 2d — the destructive residue)
+
+`review-queue.js` renders `#review-queue-panel` in the Bluegrass Dungeon.
+Deletions, suppressions and merge-redirects are the only asks left that wait
+on a human:
+
+- **admin** → instant delete, unchanged (`🗑️ Delete song` in the song
+  overflow); admins are the reviewers, so queueing them would be ceremony
+- **trusted, not admin** → the same slot becomes `🗑️ Request deletion`,
+  which writes a `review_requests` row
+- **trusted** (admin or not) also gets `🙈 Request suppression` and
+  `🔀 Request merge into another song…` in the overflow — neither kind has
+  an instant admin path (approval only ever prints a local command, below),
+  so both are offered as requests unconditionally on `isTrusted()`. Each
+  opens a small modal (`showSuppressRequestDialog` / `showMergeRequestDialog`
+  in review-queue.js, same DOM-built-Promise shape as the editor's
+  `showDedupModal`): suppression requires a reason (it's the only context a
+  reviewer gets); merge-redirect searches the corpus via `searchWorksForTab`
+  (add-song-picker.js — reused, not rebuilt) and previews "Redirect THIS →
+  TARGET" before filing `kind: 'merge-redirect'` with
+  `payload: {redirect_to: targetId}`
+- approving a `delete` in the panel executes it (the `delete_song` RPC) and
+  mirrors it into the client corpus; approving a `suppress` or
+  `merge-redirect` records the decision and **prints the local command**,
+  because those edit files in the repo and no CI path does it from a table
+
+The panel has three sections: **Waiting on you** (pending requests),
+**Decided** (history, including any command still owed a local run), and
+**Held by dedup backstop** — `pending_songs` rows where 3b's backstop set
+`dedup_hold`. Nothing commits a held row; admins get *Release hold*
+(`dedup_hold` → null, so the hourly reconciler re-dispatches it — the toast
+says "not committed yet" rather than pretending otherwise) and *Reject*
+(deletes the pending row, behind a confirm). The hold read is separate from
+the request read: if the `dedup_hold` column isn't deployed the section shows
+the error and the rest of the queue still renders.
+
+Document upload is gone with 2d (`doc-upload.js`, the `#upload` view, the
+picker's Upload card, the editor's "Upload a photo instead" hatch). Document
+*parts* already in `works/` still render — `renderDocumentPart` in
+`work-view.js`. The intake died; the shelf did not.
 
 ### Auto-hiding chrome
 
@@ -666,7 +748,9 @@ bug reports, and general feedback — no GitHub account needed.
 - Entry points: "🚩 Report issue" in the song page's overflow menu,
   "Send Feedback" in the shell's overflow menu, homepage report-bug link
 - Creates GitHub issues via the `create-flag-issue` Supabase edge function
-- Attribution tracks who submitted (logged-in user or "Rando Calrissian")
+- **No login required** (Phase 2a) — a report is complete at the toast.
+  Attribution is derived SERVER-SIDE from the session when one exists, and
+  is simply "Anonymous" when it doesn't; the client never sends a name
 
 ### Song Requests (`add-song-picker.js`)
 
@@ -674,7 +758,10 @@ Frictionless song requests without a GitHub account.
 
 - `openAddSongPicker({ mode: 'request' })` — reachable via the
   `#request-song` hash and the bounty page's "Request a Song" button
-- Creates GitHub issues via the `create-song-request` Supabase edge function
+- Goes through the `create-song-request` Supabase edge function, which
+  branches on identity: **signed in** → a `pending_songs` placeholder the
+  requester owns (and lands on); **anonymous** → a `tune-request` GitHub
+  issue and a confirmation, with no placeholder work minted
 
 ### Multi-Owner Lists & Thunderdome
 
@@ -695,8 +782,18 @@ Lists can be shared via URL and viewed by anyone.
 
 ### Submitter Attribution
 
-All user-submitted content tracks who submitted it.
+All user-submitted content tracks who submitted it, and **the client never
+says who that is** (Phase 2a). The browser sends its session token; the edge
+function calls `supabase.auth.getUser(token)` and builds the attribution
+string from the verified user (`full_name` → `email` → `user:<id>`). There is
+no `submittedBy` request field and no "Rando Calrissian" fallback.
 
-- Uses logged-in user's display name or email
-- Falls back to "Rando Calrissian" for anonymous submissions
-- Included in GitHub issue body for submissions, corrections, flags, requests
+- **Content writes require login** — song submission/correction
+  (`pending_songs` + `auto-commit-song`), tab submission/correction
+  (`create-tab-pr`). No token, no write: the function answers 401 and the
+  client refuses to post.
+- **Reports and requests stay anonymous-capable** — `create-flag-issue`
+  always, `create-song-request` in its issue branch. Anonymous callers are
+  attributed "Anonymous" and throttled by IP.
+- Shared helper: `supabase/functions/_shared/identity.ts`
+  (`requireUser` / `optionalUser` / `attributionFor` / `rateLimited`)

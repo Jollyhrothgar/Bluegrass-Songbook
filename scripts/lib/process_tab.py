@@ -18,7 +18,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
-import yaml
+import works_writer
 
 REPO_ROOT = Path(__file__).parent.parent.parent
 WORKS_DIR = REPO_ROOT / 'works'
@@ -87,52 +87,89 @@ def finalize_tab_file(otf_path: Path, meta: dict) -> Path:
         raise SystemExit(f'{otf_path}: OTF validation failed: ' + '; '.join(problems[:5]))
 
     work_dir = otf_path.parent
+    work_id = work_dir.name
+    repo_root = work_dir.parent.parent
     instrument = otf_path.name.replace('.otf.json', '')
     work_yaml = work_dir / 'work.yaml'
     pr_number = meta.get('pr_number')
     issue_ref = int(pr_number) if str(pr_number).isdigit() else pr_number
 
-    if work_yaml.exists():
-        # Correction: record provenance on the matching part
-        work = yaml.safe_load(work_yaml.read_text())
-        part = next((p for p in work.get('parts', [])
-                     if p.get('type') == 'tablature'
-                     and p.get('instrument') == instrument), None)
-        if part is None:
-            part = {'type': 'tablature', 'instrument': instrument,
-                    'format': 'otf', 'file': otf_path.name, 'provenance': {}}
-            work.setdefault('parts', []).append(part)
-        part['file'] = otf_path.name
-        prov = part.setdefault('provenance', {})
-        prov['x_corrected_by'] = f"github:{meta.get('pr_author')}" \
-            if meta.get('pr_author') else meta.get('attribution')
-        prov['x_corrected_attribution'] = meta.get('attribution')
-        prov['x_correction_pr'] = issue_ref
-        prov['x_corrected'] = str(date.today())
-    else:
-        # Submission: fresh work
-        work = {
-            'id': work_dir.name,
-            'title': meta.get('title') or otf.get('metadata', {}).get('title') or 'Untitled',
-            'artist': None,
-            'composers': [],
-            'tags': ['Instrumental'],
-            'parts': [{
-                'type': 'tablature',
-                'instrument': instrument,
-                'format': 'otf',
-                'file': otf_path.name,
-                'default': True,
-                'provenance': {
-                    'source': 'user-submission',
-                    'author': meta.get('attribution'),
-                    'submission_pr': issue_ref,
-                    'imported_at': str(date.today()),
+    # Three shapes reach here, and only the middle one is a correction:
+    #   - no work.yaml            → a submission that mints its own work
+    #   - work.yaml, no such part → a NEW tab for an existing song (the
+    #                               bounty case): append the part, and
+    #                               stamp it as a submission, not a fix
+    #   - work.yaml with the part → a correction to published content
+    work = works_writer.load_work(repo_root, work_id) if work_yaml.exists() else None
+    is_correction = bool(work and works_writer.find_parts(
+        work, {'type': 'tablature', 'instrument': instrument}))
+    submission_provenance = {
+        'source': 'user-submission',
+        'author': meta.get('attribution'),
+        'submission_pr': issue_ref,
+        'imported_at': str(date.today()),
+    }
+
+    # The OTF is already committed on the branch, so no part content is
+    # written here — works_writer only authors work.yaml around it.
+    try:
+        if work_yaml.exists() and not is_correction:
+            # New part on an existing work: no x_corrected_* stamps — this
+            # content was never published, so there is nothing it corrects.
+            works_writer.update_part(
+                repo_root, work_id,
+                match={'type': 'tablature', 'instrument': instrument},
+                file=otf_path.name,
+                add_if_missing=works_writer.PartSpec(
+                    file=otf_path.name,
+                    type='tablature',
+                    format='otf',
+                    instrument=instrument,
+                    provenance=dict(submission_provenance),
+                ),
+                on_suppressed='raise',
+            )
+        elif work_yaml.exists():
+            # Correction: record provenance on the matching part
+            works_writer.update_part(
+                repo_root, work_id,
+                match={'type': 'tablature', 'instrument': instrument},
+                file=otf_path.name,
+                provenance_updates={
+                    'x_corrected_by': (f"github:{meta.get('pr_author')}"
+                                       if meta.get('pr_author')
+                                       else meta.get('attribution')),
+                    'x_corrected_attribution': meta.get('attribution'),
+                    'x_correction_pr': issue_ref,
+                    'x_corrected': str(date.today()),
                 },
-            }],
-        }
-    work_yaml.write_text(yaml.dump(work, default_flow_style=False,
-                                   allow_unicode=True, sort_keys=False))
+                on_suppressed='raise',
+            )
+        else:
+            # Submission: fresh work (the directory already holds the OTF)
+            works_writer.create_work(
+                repo_root, work_id,
+                meta.get('title') or otf.get('metadata', {}).get('title') or 'Untitled',
+                works_writer.PartSpec(
+                    file=otf_path.name,
+                    type='tablature',
+                    format='otf',
+                    instrument=instrument,
+                    default=True,
+                    provenance={
+                        'source': 'user-submission',
+                        'author': meta.get('attribution'),
+                        'submission_pr': issue_ref,
+                        'imported_at': str(date.today()),
+                    },
+                ),
+                tags=['Instrumental'],
+                on_collision='fail',
+                allow_existing_dir=True,
+                on_suppressed='raise',
+            )
+    except works_writer.WorksWriterError as e:
+        raise SystemExit(f'{otf_path}: {e}')
     return work_dir
 
 
@@ -141,7 +178,10 @@ def process_changed(changed: list, body: str, pr_number: str, pr_author: str,
     """Process every changed works/*.otf.json. Returns the work dirs."""
     meta = {
         'title': extract_field(body, 'Title'),
-        'attribution': extract_field(body, 'Submitted by') or 'Rando Calrissian',
+        # PR bodies always carry a verified submitter now (identity is
+        # derived server-side in create-tab-pr); this fallback only covers
+        # hand-opened PRs.
+        'attribution': extract_field(body, 'Submitted by') or 'Unknown submitter',
         'comment': None,
         'pr_number': pr_number,
         'pr_author': pr_author,

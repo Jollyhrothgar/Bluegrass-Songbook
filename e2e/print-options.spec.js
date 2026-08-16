@@ -81,7 +81,7 @@ test.describe('Export Pill', () => {
 });
 
 test.describe('List Print', () => {
-    test('print list button visible when viewing a list', async ({ page }) => {
+    test('list Export pill offers print and downloads when viewing a list', async ({ page }) => {
         await page.goto('/');
         await page.evaluate(() => localStorage.clear());
         await gotoSearch(page);
@@ -95,14 +95,20 @@ test.describe('List Print', () => {
         await navClick(page, 'favorites');
         await page.waitForTimeout(500);
 
-        // Print button lives in the list header bar
-        await expect(page.locator('#list-print-btn')).toBeVisible();
+        // The bare Print button was replaced by the Export pill in the list
+        // header (main.js mountListExportPill) — same control the song page
+        // has, so a list can be printed OR downloaded.
+        await expect(page.locator('#list-export-pill')).toBeVisible();
+        const popover = await openPill(page, 'list-export-pill');
+        await expect(popover.locator('[data-action="print"]')).toBeVisible();
+        await expect(popover.locator('[data-action="download-chordpro"]')).toBeVisible();
+        await expect(popover.locator('[data-action="download-zip"]')).toBeVisible();
     });
 
-    test('print list button hidden when not viewing a list', async ({ page }) => {
+    test('list Export pill hidden when not viewing a list', async ({ page }) => {
         await gotoSearch(page);
         await searchFor(page, 'bluegrass');
 
-        await expect(page.locator('#print-list-btn')).toBeHidden();
+        await expect(page.locator('#list-export-pill')).toBeHidden();
     });
 });

@@ -39,6 +39,8 @@ Some operations require external APIs/databases and only run locally. Others run
 | **Strum Machine URLs** | Local only | `strum_machine_cache.json` | API rate limited (10 req/sec) |
 | **Deleted songs sync** | Scheduled CI + local | `deleted_songs.json` | `.github/workflows/sync-deleted-songs.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-deleted-songs` |
 | **Promoted songs sync** | Scheduled CI + local | `promoted_songs.json` | same workflow as deleted songs, or `./scripts/utility sync-promoted-songs` |
+| **Tag overrides sync** | Scheduled CI + local | `tag_overrides.json` | `.github/workflows/sync-community-input.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-tag-votes`; auto-applied at next index build |
+| **Genre suggestions export** | Scheduled CI + local | `user_genre_suggestions.json` | same workflow as tag overrides, or `./scripts/utility export-suggestions`; review-only, never auto-applied |
 | **TuneArch fetch** | Local only | - | Fetches new instrumentals |
 
 **How caching works:**
@@ -74,8 +76,10 @@ scripts/lib/
 ├── fetch_tune.py         # Fetch tunes from TuneArch by URL
 ├── search_index.py       # Search index utilities and testing
 ├── add_song.py           # Add a song to manual/parsed/
-├── process_submission.py # GitHub Action: process song-submission issues
-├── process_correction.py # GitHub Action: process song-correction issues
+├── process_pending.py    # GitHub Action: land one pending_songs row in works/
+├── dedup_scorer.py       # Is this submission already a work? (containment on lyrics)
+├── dedup_works.py        # Whole-corpus duplicate detection → merge plan JSON
+├── merge_works.py        # Execute a merge plan (redirects included)
 ├── chord_counter.py      # Chord statistics utility
 ├── loc_counter.py        # Lines of code counter for analytics
 ├── export_genre_suggestions.py  # Export genre suggestions for review
@@ -224,6 +228,33 @@ Row-shape changes (`write_outputs()` in `build_works_index.py`):
 | `has_abc` | `true` when the lead sheet embeds an ABC block; **omitted** otherwise |
 | `tablature_parts[].tracks` | int — the OTF's PLAYABLE track count, read during the tab copy step (lets the frontend decide about the track mixer without downloading the OTF). Percussion tracks are excluded: they're neither rendered nor played, so counting them would stamp `tag:multipart` on single-instrument tabs |
 | `lyrics` | unchanged on canon rows; clipped to 200 chars on archive rows |
+| `arrangements` | present **only** on a work that holds more than one lead sheet (see below); omitted otherwise, so single-sheet rows are untouched |
+
+**Forked lead sheets (`arrangements`)**. `works_writer.fork_to_arrangement`
+lands an edit of somebody else's chart as an ADDITIONAL lead-sheet part on the
+same work (`lead-sheet-<label>.pro`, `default: false`, `x_version_*`
+populated) instead of overwriting what was there. The build publishes each one
+as `docs/data/songs/{id}--{slug}.pro` — the `--` cannot collide with another
+work's `{id}.pro` because `slugify` collapses dash runs, so no minted work id
+contains one — and lists every take on the row:
+
+```json
+"arrangements": [
+  {"slug": "default", "label": "Original", "default": true,
+   "file": "data/songs/how-long-blues.pro", "key": "G", "chord_count": 4},
+  {"slug": "simplified", "label": "Simplified", "version_type": "simplified",
+   "arrangement_by": "Jane Picker", "notes": "…", "submitted_by": "<uuid>",
+   "file": "data/songs/how-long-blues--simplified.pro", "key": "G",
+   "chord_count": 3}
+]
+```
+
+The PRIMARY lead sheet still owns the row: `content`, `lyrics`, `chords`,
+`nashville`, `key` and search behaviour all come from `lead-sheet.pro` exactly
+as before — a fork adds a chart to read, never a second search hit. The slug
+comes from the part's filename (which `works_writer` already keeps unique
+within the work), so it is stable across builds and across label edits. The
+frontend lists these in the Arrangement pill (`docs/js/work-view.js`).
 
 Everything else is byte-for-byte what it was. Both `.jsonl` files inherit the
 build's id sort, and `.pro` files are only rewritten when their text changed,
@@ -650,19 +681,86 @@ Adds a `.pro` file to `sources/manual/parsed/` and rebuilds index.
 ./scripts/utility add-song song.pro --skip-index-rebuild
 ```
 
-## process_submission.py / process_correction.py
+## process_pending.py — the live contribution path
 
-Called by GitHub Actions when issues are approved.
+Called by `.github/workflows/process-pending.yml` on the `pending-commit`
+repository_dispatch that `auto-commit-song` (or the hourly reconciler) fires.
 
-**Trigger**: Issue labeled `song-submission` + `approved` (or `song-correction`)
+**Trigger**: any logged-in user saves a song in the editor. The row lands in
+Supabase `pending_songs` (live in the overlay in seconds); the edge function
+classifies the change and dispatches; this script makes it durable.
+
+**Env**: `PENDING_ROW_ID`, `PENDING_MODE`, `PENDING_WORK_ID`, `PENDING_ACTOR`,
+`SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`.
 
 **Process**:
-1. Extract ChordPro from issue body (```chordpro block)
-2. Extract song ID from issue body
-3. Write to `sources/manual/parsed/{id}.pro`
-4. Add to `protected.txt` (for corrections)
-5. Rebuild index
-6. Commit changes
+1. `GET /rest/v1/pending_songs?id=eq.<row>` (urllib — no SDK in the write path)
+2. Hand the dispatched mode to `works_writer`:
+   - `create` → `create_work(on_collision='suffix')`
+   - `update` → `update_part` on the chart the actor OWNS (`update_target`)
+   - `fork` → `fork_to_arrangement`, `x_version_*` from the submitter identity
+3. The workflow commits, pushes with rebase-retry, then marks the row
+   `github_committed`.
+
+**Idempotence**: every part written carries
+`provenance.source_id = pending:<row id>:<content sha>`. A replayed dispatch
+finds the marker and no-ops; a genuine re-edit changes the sha and applies.
+The mode is decided server-side in `supabase/functions/_shared/pending-dispatch.ts`
+— the client cannot claim "update" on somebody else's chart.
+
+**Which chart an `update` rewrites** (`process_pending.update_target`): the
+mode alone is not enough. Both classifiers answer `update` as soon as the
+caller appears in ANY part's `provenance.submitted_by`, so a user who owns
+only a FORK is dispatched in update mode — and a bare `{'type': 'lead-sheet'}`
+match is default-preferred, i.e. the PRIMARY. The rule: land on the part the
+row landed on before (`pending:<row id>:` in its provenance), else the primary
+if the actor owns it, else their most recent chart; owning no chart at all
+means they got here through the *trusted* branch, and that right is over the
+primary. Work-level fields (title/artist/key/notes) ride along only when the
+primary is what is being edited.
+
+## dedup_scorer.py — is this submission already a work?
+
+Per-submission duplicate check. `dedup_works.py` is unchanged and still does the
+other job (whole-corpus merge plans); this one answers a single incoming chart.
+
+**Containment, not Jaccard.** The metric is `|A ∩ B| / |smaller side|` over
+**full** normalized lyric *word sets*. A lyrics-only scrape is nearly a subset of
+a fuller submission, and Jaccard punishes exactly that size gap. Word sets are
+also order-independent, which matters: the `how-long-blues` pair (issue #208)
+orders chorus and verse differently, and `dedup_works.py` — first 300 chars, in
+order — scored it **0.043** against a 0.5 threshold. It scores **0.886** here.
+
+**Signal order: lyrics > title > chords.**
+
+- Lyrics decide the match. Nothing else does.
+- Title only *narrows* candidates (inverted index over title words, then
+  `SequenceMatcher`), because titles collide constantly.
+- Chords are **not** a matching signal — half the canon is I-IV-V in G. Chord
+  *presence* picks the outcome: existing lyrics-only + incoming with chords is an
+  **enrichment**, not a duplicate. Composer is not a signal either (12 of 19,228
+  works have one).
+
+**Outcomes**: `enrich` / `duplicate` / `arrangement-candidate` / `no-match`.
+Only `enrich` is ever marked `auto_actionable`, and only above 0.85 — adding
+chords to a lyrics-only work cannot destroy anything.
+
+**Instrumentals never fall back to title silently.** With no usable lyrics on
+either side the verdict carries `low_confidence=True` plus a warning, needs a
+0.95+ title match before it will even name a candidate, and is never
+auto-actionable.
+
+**Cost**: the title index reads only the head of each `work.yaml` (~1.2s for 19k
+works, once per process, lazily). Lyrics are read **only** for works that survive
+title narrowing, and are memoized — a query is ~10-30ms after the index is warm.
+
+```bash
+uv run python scripts/lib/dedup_scorer.py how-long-blues how-long-blues-1
+uv run python scripts/lib/dedup_scorer.py --scan submission.pro --json
+```
+
+Tests: `tests/test_dedup_scorer.py` (fixtures in `tests/fixtures/dedup/`, with
+provenance in the module docstring).
 
 ## Metadata Parsing
 

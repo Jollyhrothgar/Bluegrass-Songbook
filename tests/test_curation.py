@@ -7,7 +7,8 @@ Covers:
 - dangling registry ids warn (stderr) but don't fail
 - filter_suppressed() unions registry.suppressed + deleted_songs
 - is_suppressed() collision-suffix base matching
-- import guard: publish_to_works() refuses suppressed slugs
+- import guard: works_writer.create_work() refuses suppressed slugs
+  (the live write path — is_suppressed is what it consults)
 """
 
 import copy
@@ -22,7 +23,7 @@ from curation import (
     is_suppressed,
     load_registry,
 )
-from process_submission import publish_to_works
+from works_writer import PartSpec, create_work
 
 
 def _song(song_id, title=None, group_id=None, **extra):
@@ -159,41 +160,55 @@ class TestIsSuppressed:
 
 
 class TestImportGuard:
+    """publish_to_works() (the retired GitHub-issue submission flow) used to
+    wrap works_writer.create_work() with exactly this suppression check;
+    with that wrapper gone, exercise the guard through the live write path
+    directly. (Overlaps with TestGuards in test_works_writer.py, which
+    covers create_work's guard behavior in full — these stay as an
+    integration check that curation.py's registry is what create_work
+    actually consults.)"""
+
     CHORDPRO = '{meta: title My Song}\n[G]Some lyrics here'
 
-    def test_publish_refuses_suppressed_slug(self, tmp_path, capsys):
+    def _part(self, issue='1'):
+        return PartSpec(
+            file='lead-sheet.pro', type='lead-sheet', format='chordpro',
+            default=True, content=self.CHORDPRO + '\n',
+            provenance={'source': 'manual', 'submitted_by': 'github:someone',
+                        'github_issue': int(issue)},
+        )
+
+    def test_create_work_refuses_suppressed_slug(self, tmp_path, capsys):
         reg_file = tmp_path / 'curation' / 'registry.yaml'
         reg_file.parent.mkdir(parents=True)
         reg_file.write_text(yaml.dump({
             'groups': {},
             'suppressed': {'my-song': {'reason': 'owner removed it'}},
         }))
-        result = publish_to_works('my-song', 'My Song', None, self.CHORDPRO,
-                                  'someone', '1', tmp_path)
-        assert result is None
+        result = create_work(tmp_path, 'my-song', 'My Song', self._part())
+        assert not result.written
         assert not (tmp_path / 'works' / 'my-song').exists()
         assert 'suppressed' in capsys.readouterr().out.lower()
 
-    def test_publish_refuses_collision_suffix_of_suppressed_base(self, tmp_path):
+    def test_create_work_refuses_collision_suffix_of_suppressed_base(self, tmp_path):
         reg_file = tmp_path / 'curation' / 'registry.yaml'
         reg_file.parent.mkdir(parents=True)
         reg_file.write_text(yaml.dump({
             'groups': {},
             'suppressed': {'my-song': {'reason': 'gone'}},
         }))
-        result = publish_to_works('my-song-1', 'My Song 1', None, self.CHORDPRO,
-                                  'someone', '2', tmp_path)
-        assert result is None
+        result = create_work(tmp_path, 'my-song-1', 'My Song 1', self._part('2'))
+        assert not result.written
         assert not (tmp_path / 'works' / 'my-song-1').exists()
 
-    def test_publish_writes_when_not_suppressed(self, tmp_path):
-        result = publish_to_works('my-song', 'My Song', 'Artist', self.CHORDPRO,
-                                  'someone', '3', tmp_path)
-        assert result == tmp_path / 'works' / 'my-song'
-        assert (result / 'work.yaml').exists()
-        assert (result / 'lead-sheet.pro').exists()
+    def test_create_work_writes_when_not_suppressed(self, tmp_path):
+        result = create_work(tmp_path, 'my-song', 'My Song', self._part('3'),
+                             artist='Artist')
+        assert result.work_dir == tmp_path / 'works' / 'my-song'
+        assert (result.work_dir / 'work.yaml').exists()
+        assert (result.work_dir / 'lead-sheet.pro').exists()
 
-    def test_publish_collision_skips_suppressed_suffix_slug(self, tmp_path):
+    def test_create_work_collision_skips_suppressed_suffix_slug(self, tmp_path):
         """If the base exists and a suffixed slug is itself suppressed, the
         collision loop must skip past it rather than resurrect it."""
         # Existing work occupies the base slug
@@ -205,9 +220,8 @@ class TestImportGuard:
             'groups': {},
             'suppressed': {'my-song-1': {'reason': 'bad copy'}},
         }))
-        result = publish_to_works('my-song', 'My Song', None, self.CHORDPRO,
-                                  'someone', '4', tmp_path)
-        assert result == tmp_path / 'works' / 'my-song-2'
+        result = create_work(tmp_path, 'my-song', 'My Song', self._part('4'))
+        assert result.work_dir == tmp_path / 'works' / 'my-song-2'
 
 
 # ============================================

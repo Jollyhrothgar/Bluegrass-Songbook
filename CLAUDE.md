@@ -397,11 +397,11 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 | Workflow | Trigger | Action |
 |----------|---------|--------|
 | `build.yml` | Push to main, PRs | Runs tests, rebuilds search index, deploys to GitHub Pages only if tests pass |
-| `process-song-submission.yml` | Issue labeled `song-submission` + `approved` | Adds new song |
-| `process-song-correction.yml` | Issue labeled `song-correction` + `approved` | Updates existing song |
+| `process-pending.yml` | `pending-commit` repository_dispatch from `auto-commit-song` / `reconcile-pending` | Writes one `pending_songs` row into `works/` via `works_writer` (create / update / fork-to-arrangement), pushes, then marks the row committed |
 | `process-tune-request.yml` | Issue labeled `tune-request` | Processes tune requests |
-| `auto-label-issues.yml` | New issues | Automatically labels issues |
 | `cleanup-pending.yml` | Scheduled | Cleans up stale pending songs |
+| `reconcile-pending.yml` | Hourly (`42 * * * *`) + manual | Retries `pending_songs` rows that never reached `works/`, prints the drift count, and opens/updates one alert issue if any stay stuck |
+| `sync-community-input.yml` | Hourly (`27 * * * *`) + manual | Syncs trusted-user tag downvotes to `docs/data/tag_overrides.json` (auto-applied at next index build) and exports `genre_suggestions` to `docs/data/user_genre_suggestions.json` (review-only, not auto-applied) |
 
 ## Chrome DevTools MCP
 
@@ -438,8 +438,21 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Covering artists**: Shows which bluegrass legends recorded each song
 - **Multi-owner lists**: Collaborative list curation with follow/unfollow
 - **Thunderdome**: Claim abandoned lists (now 1 year inactivity threshold)
-- **Frictionless feedback**: Report issues and request songs without GitHub account
-- **Submitter attribution**: Tracks who submitted content ("Rando Calrissian" for anonymous)
+- **Frictionless feedback**: Report issues and request songs with no account at all
+- **Submitter attribution**: Derived server-side from the verified session; content
+  writes (song/tab submissions and corrections) require login, reports and requests
+  don't (Phase 2a — see `docs/plans/contribution-pipeline.md`)
+
+- **Review queue (Aug 2026, phase 2d)**: deletions / suppressions /
+  merge-redirects are the only asks still reviewed. Trusted users file a
+  request, admins decide, in the Bluegrass Dungeon panel
+  (`docs/js/review-queue.js`, `review_requests`). Admins keep the instant
+  delete. Approving a suppress or merge-redirect prints the local command
+  instead of pretending CI can run it.
+- **Document upload removed (Aug 2026, phase 2d)**: the intake staged files
+  nothing downstream ever read. Document parts already in `works/` and the
+  PDFs in `docs/data/docs/` still serve — this killed the intake, not the
+  shelf.
 
 **What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
 
@@ -466,6 +479,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | BluegrassLyrics.com import | `sources/bluegrass-lyrics/CLAUDE.md` |
 | Ultimate Guitar chord scraper | `sources/ultimate-guitar/CLAUDE.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |
+| Review a delete/suppress/merge request | `docs/js/review-queue.js` + `supabase/CLAUDE.md` |
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
 | Write a blog post | `docs/posts/` (then run `./scripts/utility build-posts`) |

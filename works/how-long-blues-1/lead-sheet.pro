@@ -37,3 +37,14 @@ And how long will I [B]keep these lonesome [E]blues
 [E]How long, how [E7]long has that [A]evenin' train been [E]gone
 How long, how [B]long, baby how [E]long
 {end_of_chorus}
+
+{start_of_verse: Verse 3}
+[E]Cruel engineer, can't you [E7]see
+I need my [A]baby back with [E]me
+Then I'd be [B]rid of these mean ol' lonesome [E]blues
+{end_of_verse}
+
+{start_of_chorus: Chorus}
+[E]How long, how [E7]long has that [A]evenin' train been [E]gone
+How long, how [B]long, baby how [E]long
+{end_of_chorus}

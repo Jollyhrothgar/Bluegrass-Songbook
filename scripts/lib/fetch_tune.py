@@ -15,7 +15,8 @@ import re
 import sys
 from pathlib import Path
 from datetime import date
-import yaml
+
+import works_writer
 
 # Add tunearch src to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'sources' / 'tunearch' / 'src'))
@@ -57,10 +58,16 @@ def generate_slug(title: str) -> str:
     return slug[:50]
 
 
-def publish_to_works(tune, chordpro: str, author: str, issue_number: str) -> Path:
-    """Publish the tune to works/ for immediate search visibility."""
+def publish_to_works(tune, chordpro: str, author: str, issue_number: str,
+                     repo_root: Path = None) -> Path:
+    """Publish the tune to works/ for immediate search visibility.
+
+    Delegates the write to works_writer, so a tune request can no longer
+    resurrect a suppressed id (this path had no suppression guard at all).
+    """
     today = date.today().isoformat()
     slug = generate_slug(tune.metadata.title)
+    repo_root = repo_root or Path(__file__).parent.parent.parent
 
     # Extract key from ABC if available
     key = None
@@ -69,53 +76,28 @@ def publish_to_works(tune, chordpro: str, author: str, issue_number: str) -> Pat
         if match:
             key = match.group(1)
 
-    work_data = {
-        'id': slug,
-        'title': tune.metadata.title,
-        'tags': ['Instrumental'],
-        'parts': [{
-            'type': 'lead-sheet',
-            'format': 'chordpro',
-            'file': 'lead-sheet.pro',
-            'default': True,
-            'provenance': {
+    result = works_writer.create_work(
+        repo_root, slug, tune.metadata.title,
+        works_writer.PartSpec(
+            file='lead-sheet.pro',
+            type='lead-sheet',
+            format='chordpro',
+            default=True,
+            content=chordpro + '\n',
+            provenance={
                 'source': 'tunearch',
                 'source_url': tune.metadata.url if hasattr(tune.metadata, 'url') else None,
                 'requested_by': f'github:{author}',
                 'requested_at': today,
                 'github_issue': int(issue_number) if issue_number.isdigit() else None,
-            }
-        }]
-    }
-
-    if tune.metadata.composer:
-        work_data['composers'] = [tune.metadata.composer]
-    if key:
-        work_data['default_key'] = key
-
-    # Create work directory
-    repo_root = Path(__file__).parent.parent.parent
-    work_dir = repo_root / 'works' / slug
-
-    # Handle collision
-    counter = 1
-    original_slug = slug
-    while work_dir.exists():
-        slug = f"{original_slug}-{counter}"
-        work_dir = repo_root / 'works' / slug
-        work_data['id'] = slug
-        counter += 1
-
-    work_dir.mkdir(parents=True, exist_ok=True)
-
-    # Write work.yaml
-    with open(work_dir / 'work.yaml', 'w') as f:
-        yaml.dump(work_data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
-
-    # Write lead-sheet.pro
-    (work_dir / 'lead-sheet.pro').write_text(chordpro + '\n')
-
-    return work_dir
+            },
+        ),
+        composers=[tune.metadata.composer] if tune.metadata.composer else None,
+        default_key=key,
+        tags=['Instrumental'],
+        on_collision='suffix',
+    )
+    return result.work_dir
 
 
 def main():
@@ -153,7 +135,8 @@ def main():
 
     # 2. Publish to works/ for immediate search visibility
     work_dir = publish_to_works(tune, chordpro, args.author, args.issue_number)
-    print(f"Published to: {work_dir}")
+    if work_dir:
+        print(f"Published to: {work_dir}")
 
     # Write slug for workflow to read (used in closing comment)
     slug = generate_slug(tune.metadata.title)

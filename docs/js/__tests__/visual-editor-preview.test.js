@@ -280,23 +280,23 @@ describe('external textarea changes', () => {
 });
 
 describe('empty-state escape hatches', () => {
-    it('renders upload/request links only when the host provides them', () => {
+    // Photo upload was the other hatch until phase 2d removed the feature;
+    // "Request a song" is the only one left, and it is still host-supplied.
+    it('renders the request link only when the host provides it', () => {
         load('');
         expect(container.querySelector('.ve-empty-links')).toBeNull();
 
         const host = document.createElement('div');
         const ta2 = document.createElement('textarea');
         document.body.append(host, ta2);
-        const onUploadRequest = vi.fn();
         const onSongRequest = vi.fn();
         const p2 = createInteractivePreview({
-            container: host, textarea: ta2, onUploadRequest, onSongRequest
+            container: host, textarea: ta2, onSongRequest
         });
         p2.refresh();
         const links = [...host.querySelectorAll('.ve-empty-link')].map(b => b.textContent);
-        expect(links).toEqual(['Upload a photo instead', 'Request a song']);
-        host.querySelector('.ve-link-upload').click();
-        expect(onUploadRequest).toHaveBeenCalledTimes(1);
+        expect(links).toEqual(['Request a song']);
+        expect(host.querySelector('.ve-link-upload')).toBeNull();
         host.querySelector('.ve-link-request').click();
         expect(onSongRequest).toHaveBeenCalledTimes(1);
         p2.destroy();
