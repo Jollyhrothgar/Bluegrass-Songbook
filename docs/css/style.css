@@ -3125,6 +3125,58 @@ mark {
     margin-bottom: 0.5rem;
 }
 
+/* Dedup offramp — "this looks like a song we already have" (phase 3b) */
+.dedup-offramp-content {
+    max-width: 460px;
+}
+
+.dedup-offramp-lead {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.dedup-offramp-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dedup-offramp-choice {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    text-align: left;
+    width: 100%;
+    background: var(--bg-secondary, transparent);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.65rem 0.8rem;
+    color: var(--text);
+    cursor: pointer;
+    font: inherit;
+}
+
+.dedup-offramp-choice:hover,
+.dedup-offramp-choice:focus-visible {
+    border-color: var(--accent);
+}
+
+.dedup-offramp-choice-primary {
+    border-color: var(--accent);
+}
+
+.dedup-offramp-choice-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.dedup-offramp-choice-detail {
+    font-size: 0.8rem;
+    line-height: 1.35;
+    color: var(--text-secondary);
+}
+
 /* Editor preview */
 .editor-preview {
     display: flex;

@@ -20,6 +20,9 @@ import {
     cleanChordUPaste, cleanUltimateGuitarPaste,
     editorConvertToChordPro, editorDetectAndConvert
 } from './smart-paste.js';
+import {
+    Choice, findLikelyMatch, matchPercent, offrampChoices, planForChoice
+} from './dedup-check.js';
 
 // Re-export the shared smart-paste pipeline so existing importers/tests of
 // editor.js keep working unchanged (the code moved verbatim to smart-paste.js).
@@ -815,18 +818,12 @@ export function initEditor(options) {
                 return;
             }
 
-            // Duplicate detection for new submissions (not edits)
-            if (!editMode) {
-                const normalizeTitle = t => t.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
-                const normalizedTitle = normalizeTitle(title);
-                const duplicates = allSongs.filter(s =>
-                    normalizeTitle(s.title || '') === normalizedTitle
-                );
-                if (duplicates.length > 0) {
-                    const dupNames = duplicates.map(d => `"${d.title}" by ${d.artist || 'Unknown'}`).join('\n');
-                    if (!confirm(`Possible duplicate found:\n\n${dupNames}\n\nSubmit anyway?`)) return;
-                }
-            }
+            // Duplicate detection used to live here as a title-only confirm():
+            // it fired on every same-titled song in the corpus (and there are
+            // a lot of those) with no evidence and no useful answer — "Submit
+            // anyway?" is not an offramp. Phase 3b replaced it with the real
+            // scorer, which runs inside submitSong: lyrics decide, and a match
+            // opens a modal whose choices are actual mechanisms.
 
             // Login gate at submit time, not at open time: anyone may draft
             // a song in the editor, but a submission is content the author
@@ -894,6 +891,171 @@ function renderForkNotice() {
 }
 
 /**
+ * "This song already exists" — offered as a choice at submit time, not
+ * discovered as a rejection later.
+ *
+ * Returns `{ submit, retargetId, intent }`. No match means no modal and no
+ * added friction: the overwhelmingly common case pays only a title-narrow
+ * pass over the in-memory index plus, at most, five content fetches.
+ *
+ * Every failure mode here submits as new. Failing to warn about a duplicate
+ * costs a merge later; blocking a contribution on a flaky fetch costs the
+ * contribution — and the CI backstop is the second net under this one.
+ */
+async function resolveDedupOfframp({ title, content }) {
+    const asNew = { submit: true, retargetId: null, intent: Choice.NEW };
+
+    let match = null;
+    try {
+        // Archived works are matchable too — an archived duplicate is exactly
+        // the case the "promote it" choice exists for.
+        await window.ensureArchiveLoaded?.();
+        match = await findLikelyMatch({
+            title,
+            content,
+            songs: allSongs,
+            fetchContent: getSongContent,
+        });
+    } catch (error) {
+        console.warn('Dedup check failed; submitting as new:', error);
+        return asNew;
+    }
+    if (!match) return asNew;
+
+    let trusted = false;
+    try {
+        trusted = (await window.SupabaseAuth?.isTrustedUser?.()) === true;
+    } catch {
+        // Not trusted is the safe read: it only hides the promote button.
+    }
+
+    const choiceId = await showDedupModal(match, { trusted });
+    if (!choiceId) {
+        // Dismissed. Deliberately NOT "submit as new" — an accidental Escape
+        // must not mint the duplicate the modal just warned about.
+        return { submit: false, retargetId: null, intent: null };
+    }
+
+    const plan = planForChoice(choiceId, match);
+
+    if (plan.navigateTo) {
+        window.location.hash = plan.navigateTo;
+        return plan;
+    }
+
+    if (plan.promoteFirst) {
+        const { error } = (await window.SupabaseAuth?.promoteSong?.(match.song.id)) || {};
+        if (error) {
+            showToast(`Could not promote "${match.song.title}": ${error.message}`,
+                { variant: 'warning', duration: 6000 });
+        } else {
+            // Live for everyone who loads the site from here on; this tab
+            // picks it up on its next load (main.js reads promoted_songs at
+            // startup). The song page itself works immediately either way.
+            showToast(`"${match.song.title}" is back in search.`, { duration: 5000 });
+        }
+    }
+
+    return plan;
+}
+
+/**
+ * The offramp modal. Resolves with a `Choice` id, or null if dismissed.
+ *
+ * Deliberately plain: one sentence of evidence (the containment percentage,
+ * which is the number the scorer actually decided on) and a stack of buttons
+ * that each map to a mechanism that already exists.
+ *
+ * Exported for tests.
+ */
+export function showDedupModal(match, { trusted = false } = {}) {
+    return new Promise(resolve => {
+        const { song, verdict } = match;
+        document.getElementById('dedup-offramp-modal')?.remove();
+
+        const modal = document.createElement('div');
+        modal.id = 'dedup-offramp-modal';
+        modal.className = 'modal';
+
+        const archived = song.indexed === false;
+        const byline = [song.artist, archived ? 'archived' : null]
+            .filter(Boolean).join(' · ');
+
+        const header = document.createElement('div');
+        header.className = 'modal-header';
+        const heading = document.createElement('h2');
+        heading.textContent = 'This looks like a song we already have';
+        const close = document.createElement('button');
+        close.className = 'modal-close';
+        close.setAttribute('aria-label', 'Close');
+        close.innerHTML = '&times;';
+        header.append(heading, close);
+
+        const body = document.createElement('div');
+        body.className = 'modal-body';
+
+        const lead = document.createElement('p');
+        lead.className = 'dedup-offramp-lead';
+        const strong = document.createElement('strong');
+        strong.textContent = song.title || song.id;
+        lead.append('This looks like ', strong);
+        if (byline) lead.append(` (${byline})`);
+        lead.append(` — ${matchPercent(verdict)}% of its lyrics match what you wrote.`);
+        body.appendChild(lead);
+
+        const list = document.createElement('div');
+        list.className = 'dedup-offramp-choices';
+        for (const choice of offrampChoices(match, { trusted })) {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'dedup-offramp-choice'
+                + (choice.primary ? ' dedup-offramp-choice-primary' : '');
+            button.dataset.choice = choice.id;
+
+            const label = document.createElement('span');
+            label.className = 'dedup-offramp-choice-label';
+            label.textContent = choice.label;
+            button.appendChild(label);
+
+            if (choice.detail) {
+                const detail = document.createElement('span');
+                detail.className = 'dedup-offramp-choice-detail';
+                detail.textContent = choice.detail;
+                button.appendChild(detail);
+            }
+            list.appendChild(button);
+        }
+        body.appendChild(list);
+
+        const content = document.createElement('div');
+        content.className = 'modal-content dedup-offramp-content';
+        content.append(header, body);
+        modal.appendChild(content);
+        document.body.appendChild(modal);
+
+        let done = false;
+        const finish = (choiceId) => {
+            if (done) return;
+            done = true;
+            document.removeEventListener('keydown', onKey);
+            modal.remove();
+            resolve(choiceId);
+        };
+        const onKey = (e) => { if (e.key === 'Escape') finish(null); };
+
+        list.addEventListener('click', (e) => {
+            const button = e.target.closest('.dedup-offramp-choice');
+            if (button) finish(button.dataset.choice);
+        });
+        close.addEventListener('click', () => finish(null));
+        modal.addEventListener('click', (e) => { if (e.target === modal) finish(null); });
+        document.addEventListener('keydown', onKey);
+
+        list.querySelector('.dedup-offramp-choice')?.focus();
+    });
+}
+
+/**
  * Save a contribution: pending_songs first (live in seconds), then ask
  * auto-commit-song to make it durable (minutes).
  */
@@ -918,9 +1080,39 @@ async function submitSong(data) {
         .replace(/^\{eov([:\s}])/gim, '{end_of_verse$1')
         .replace(/^\{eoc([:\s}])/gim, '{end_of_chorus$1');
 
+    // The offramp (phase 3b). Only for new songs: an edit already names the
+    // work it targets, which is the same rule the CI backstop applies. A
+    // retarget writes the row against the matched work instead of a fresh
+    // slug — from there the server classifies it exactly as it would any
+    // other edit of that work (update if they own content there, otherwise a
+    // new arrangement part).
+    let retargetId = null;
+    let intent = Choice.NEW;
+    if (!editMode) {
+        // The check can await a handful of fetches and then a human; hold the
+        // button so an impatient second click cannot open a second modal.
+        if (editorSubmitBtnEl) editorSubmitBtnEl.disabled = true;
+        let outcome;
+        try {
+            outcome = await resolveDedupOfframp({ title, content: normalizedContent });
+        } finally {
+            if (editorSubmitBtnEl) editorSubmitBtnEl.disabled = false;
+        }
+        if (!outcome.submit) {
+            if (editorStatusEl && outcome.intent !== Choice.VIEW) {
+                editorStatusEl.textContent = 'Not submitted — your draft is still here.';
+                editorStatusEl.className = 'save-status';
+            }
+            return;
+        }
+        retargetId = outcome.retargetId;
+        intent = outcome.intent;
+    }
+    const targetId = retargetId || slug;
+
     const pendingEntry = {
-        id: slug,
-        replaces_id: editMode ? editingSongId : null,
+        id: targetId,
+        replaces_id: editMode ? editingSongId : retargetId,
         title,
         artist: artist || null,
         composer: writer || null,
@@ -990,10 +1182,19 @@ async function submitSong(data) {
             editorStatusEl.className = 'save-status success';
         }
 
+        if (retargetId) {
+            showToast(
+                intent === Choice.ARRANGEMENT
+                    ? `Added to "${title}" as your arrangement — no second copy of the song.`
+                    : `Added to "${title}" instead of making a second copy.`,
+                { duration: 6000 }
+            );
+        }
+
         // The saved text IS the truth for this session — seed the content
         // cache so the song page shows the edit instead of re-fetching the
         // published (pre-edit) data/songs/{slug}.pro
-        primeSongContent(slug, pendingEntry.content || '');
+        primeSongContent(targetId, pendingEntry.content || '');
         if (pendingEntry.replaces_id) {
             primeSongContent(pendingEntry.replaces_id, pendingEntry.content || '');
         }
@@ -1002,7 +1203,7 @@ async function submitSong(data) {
         if (window.refreshPendingSongs) {
             await window.refreshPendingSongs();
         }
-        window.location.hash = `#song/${slug}`;
+        window.location.hash = `#song/${targetId}`;
 
     } catch (error) {
         console.error('Save error:', error);
