@@ -3472,6 +3472,42 @@ mark {
     color: var(--error, #ef4444);
 }
 
+/* Tablature target step: pick the song a new tab belongs to */
+.picker-tab-results {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-height: 260px;
+    overflow-y: auto;
+    margin: 0.5rem 0;
+}
+
+.picker-tab-result {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0.6rem;
+    background: var(--bg-secondary, transparent);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.picker-tab-result:hover {
+    border-color: var(--accent);
+}
+
+.picker-tab-result-artist,
+.picker-tab-empty {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
 /* Bounty CTA button reset (was <a>, now <button>) */
 .bounty-cta-btn {
     border: none;

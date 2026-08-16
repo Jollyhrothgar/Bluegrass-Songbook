@@ -38,6 +38,7 @@ import {
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
+import { launchTabCreator } from './otf-editor/create-tab-entry.js';
 import {
     TabRenderer, TabPlayer,
     TimelineTiming, identityTimeline, readingListTimeline,
@@ -1244,12 +1245,24 @@ function renderBountySection() {
         <div class="work-bounty-body" id="work-bounty-body">
             ${bountyCards || '<div class="work-bounty-empty">No specific requests yet.</div>'}
             <button class="work-bounty-request-btn" id="work-bounty-request-btn">+ Request a part</button>
+            <button class="work-bounty-request-btn" id="work-bounty-add-tab-btn">+ Add a tab</button>
         </div>
     `;
 
-    // Wire contribute buttons
+    // Wire contribute buttons. A tablature bounty is the one request the
+    // add-song picker can't fulfil — it wants a tab, so it opens the tab
+    // editor in create mode, pre-targeted at this work and instrument.
     section.querySelectorAll('.work-bounty-contribute').forEach(btn => {
         btn.addEventListener('click', () => {
+            const card = btn.closest('.work-bounty-card');
+            if (card?.dataset.bountyType === 'tablature') {
+                launchTabCreator({           // gates on login itself
+                    workId: currentWork.id,
+                    instrument: card.dataset.bountyInstrument || '',
+                    title: currentWork.title,
+                });
+                return;
+            }
             if (!requireLogin('contribute')) return;
             openAddSongPicker({
                 mode: 'contribute',
@@ -1259,6 +1272,11 @@ function renderBountySection() {
                 key: currentWork.key,
             });
         });
+    });
+
+    // Add a tab, unprompted — no bounty needed
+    section.querySelector('#work-bounty-add-tab-btn')?.addEventListener('click', () => {
+        launchTabCreator({ workId: currentWork.id, title: currentWork.title });
     });
 
     // Wire request button
