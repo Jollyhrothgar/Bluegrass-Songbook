@@ -103,7 +103,7 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
     pickerModal.querySelectorAll('.picker-back-btn').forEach(
         btn => btn.addEventListener('click', showCards));
 
-    // Tab target: search existing works, or start one without a song
+    // Tab target: search existing works, or add the song as new via the tab
     tabSearch?.addEventListener('input', renderTabResults);
     tabResults?.addEventListener('click', (e) => {
         const row = e.target.closest('.picker-tab-result');
@@ -193,7 +193,7 @@ export function tabResultsState(query, matches, corpusEmpty) {
         return { kind: 'matches' };
     }
     if (query?.trim()) {
-        return { kind: 'no-match', message: 'No song by that name — you can still start a tab without one.' };
+        return { kind: 'no-match', message: 'No song by that name — you can add it as a new song and tab it.' };
     }
     return { kind: 'empty-query' };
 }
@@ -204,7 +204,7 @@ function renderTabResults() {
     const matches = searchWorksForTab(query);
     const state = tabResultsState(query, matches, allSongs.length === 0);
 
-    // Offering "Start a tab without a song" while the corpus is empty
+    // Offering the add-as-new-song button while the corpus is empty
     // presents an unknown state as an informed choice — it can silently
     // mint a duplicate work the moment the index actually loads.
     tabNewBtn?.classList.toggle('hidden', state.kind === 'corpus-empty');

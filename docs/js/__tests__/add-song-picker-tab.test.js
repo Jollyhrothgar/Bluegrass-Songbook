@@ -197,7 +197,7 @@ describe('picker → tablature: empty-corpus honesty', () => {
         expect(results.textContent).not.toMatch(/No song by that name/);
     });
 
-    it('hides "Start a tab without a song" while the corpus is empty', () => {
+    it('hides the add-as-new-song button while the corpus is empty', () => {
         openAddSongPicker();
         clickTabCard();
         const search = document.getElementById('picker-tab-search');
