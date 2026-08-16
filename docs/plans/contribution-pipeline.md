@@ -1,13 +1,55 @@
 # Plan: Contribution pipeline
 
 **Status:** ready to build. Written 2026-08-15 on `feature/promote-workflow`.
-
-Decisions are in the first two pages. [Appendix](#appendix--verification) has the
-file anchors and measurements behind them — you should not need to read it.
+Rescoped 2026-08-15 after a full audit of every contribution path (17 found;
+the first draft covered 5) and an interview that settled the open policy
+questions. Decisions are in the body; the [appendix](#appendix--verification)
+has file anchors and measurements — you should not need to read it.
 
 ---
 
-## The one idea
+## The contract
+
+Four properties, in tension, resolved in this order:
+
+1. **Easy to add.** Login is the only requirement to contribute — it supplies
+   identity, not permission.
+2. **Instant to merge.** Additive changes go live in seconds for *any*
+   logged-in user. Trust tiers gate risk, not speed.
+3. **Hard to destroy.** Nobody edits someone else's content in place. An edit
+   to another contributor's chart becomes a **new arrangement** on the same
+   work — the original is untouched and voting/curation picks the default.
+   This is the Guitar Pro stance, and the app has already built it: multi-part
+   works, `x_version_*` metadata, the Arrangement pill, vote-backed defaults.
+   Destruction becomes structurally impossible on the add path, not merely
+   monitored. Git history remains the deep undo.
+4. **Easy offramp.** "This song already exists" is a choice offered at submit
+   time — enrich / promote / add as arrangement — not a rejection discovered
+   later.
+
+**The gate is the change, not the person** (promoted from Deferred — it was
+the whole point all along):
+
+| Change class | Who | What happens |
+|---|---|---|
+| New work, new part, new arrangement, enrichment | any logged-in user | instant |
+| Edit own content in place | author or trusted | instant |
+| Edit someone else's content | anyone | forks to a new arrangement, instant |
+| Delete, suppress, merge-redirect | trusted + review | queued |
+| Binary doc upload | trusted instant; others | queued (can't diff a PDF) |
+| Flag a problem, request a song | anyone, no login | issue/report only |
+
+**The GitHub issue flow for content is dead.** `create-song-issue` →
+auto-label → human `approved` label → workflow was a review queue built out
+of issue machinery. With additive-instant there is nothing for it to review.
+`create-song-issue`, `process-song-submission.yml` and
+`process-song-correction.yml` retire; GitHub issues go back to being for bug
+reports and feedback. The small reviewed residue (deletions, doc uploads)
+gets an in-app queue, not labels.
+
+---
+
+## The one idea (unchanged)
 
 Three tiers, one rule.
 
@@ -17,216 +59,258 @@ Three tiers, one rule.
 | **Durable** | `works/` in git | minutes | the corpus |
 | **Reconcile** | sync workflow, cleanup | minutes | making the two agree |
 
-> **The rule:** reconcile must never remove something from Live until Durable is
-> actually serving it.
+> **The rule:** reconcile must never remove something from Live until Durable
+> is actually serving it.
 
-`cleanup-pending` breaks this today, which is why songs can vanish mid-jam.
-That's Step 1.
+The rescope *raises* the stakes on this: the Live overlay stops being a
+trusted-user perk and becomes the delivery mechanism for every contribution.
 
 ### Decided: don't move the corpus into Supabase (2026-08-15)
 
-Considered seriously, because the dual-write is genuinely expensive — Steps 1,
-5 and half of 6 exist *only* because two stores must agree, and git-as-a-write-target
-already cost you issues #208/#209 (dropped by concurrency-group eviction) and a
-hand-rolled rebase-retry loop. 82 MB of text across 19,228 works would fit in
-Postgres without complaint.
+Considered seriously, because the dual-write is genuinely expensive. **The
+reason not to isn't that git is sacred.** It's that the problem is not which
+store is primary — it's that `pending_songs` holds *content*. Supabase owning
+decisions and git owning content is a clean split; `pending_songs` straddles
+it, and that straddle generates the reconciler, the cleanup race, and the
+drift. The one-writer step fixes exactly that seam — and the rescope
+strengthens this decision: with every path funneled through one writer, the
+split gets cleaner, not messier.
 
-**The reason not to isn't that git is sacred.** It's that the problem is not
-which store is primary — it's that `pending_songs` holds *content*. Supabase
-owning decisions and git owning content is a clean split; `pending_songs`
-straddles it, and that straddle generates the reconciler, the cleanup race, and
-the drift. Step 6 fixes exactly that seam.
+The migration cost is **12 scripts**, not the data — everything in
+`scripts/lib/` walks directories. And you'd lose per-work history, which git
+gives free.
 
-The migration cost is **12 scripts**, not the data — everything in `scripts/lib/`
-walks directories. And you'd lose per-work history, which git gives free.
-
-**Revisit if:** after Step 6, reconciliation is still painful. At that point
-there's one write path to redirect instead of three, so the migration is cheaper
-than it is today. Nothing here is wasted either way — one writer is the
-prerequisite for both outcomes.
+**Revisit if:** after Phase 1, reconciliation is still painful. At that point
+there's one write path to redirect instead of five, so the migration is
+cheaper than it is today. Nothing here is wasted either way.
 
 ---
 
 ## What we got wrong walking in
 
-Three things turned out to be false. Each one shrinks the work.
+Five things turned out to be false. The first three shrank the work; the last
+two grew it — which is why this document was rescoped.
 
 1. **Promote doesn't need an edge function.** `promoted_songs` is already
    world-readable — the frontend just never reads it. A client-side overlay
-   gets **zero** latency in ~15 lines. The agreed edge-function + `workflow_dispatch`
-   design is cancelled.
+   gets **zero** latency in ~15 lines.
 2. **Trusted-user direct add already ships.** `auto-commit-song` commits to
    `works/` today; 24 works came in that way. The problem isn't that the path
    doesn't exist, it's that it isn't safe.
 3. **`dedup_works.py` would not have caught #208.** It scores that pair 0.043
-   against a 0.5 threshold — a clean miss, not a near miss. Building on "just run
-   the existing detector" would have shipped a check that misses the exact case
-   that motivated it.
+   against a 0.5 threshold — a clean miss, not a near miss.
+4. **"Two things write works" undercounted.** Five do:
+   `process_submission.py`, `process_correction.py`, `process_tab.py`,
+   `fetch_tune.py`, and `auto-commit-song`. Unifying two of five would have
+   left the disagreement class alive.
+5. **The plan covered 5 of 17 contribution paths.** The audit found a
+   dead-end doc-upload path that lies to the submitter, tag/genre pipelines
+   that only work if you personally run a script, a tab-submission API with
+   no UI, and an importer that mints duplicates the same way submissions do
+   (#192).
 
 ---
 
-## Steps
+## Phases
 
-Ordered by ship order. Steps 1–2 are same-day and depend on nothing.
+Ordered by ship order. Phase 0 is same-day and depends on nothing.
 
-### 1. Stop songs vanishing mid-jam
+### Phase 0 — stop the bleeding
 
-`cleanup-pending` deletes pending rows on *any* successful deploy, but
-`auto-commit-song` marks a song committed before CI even starts. So an unrelated
-deploy lands, the row is deleted, and the song disappears from every phone in the
-circle until its own deploy finishes.
+**0a. Stop songs vanishing mid-jam.** `cleanup-pending` deletes pending rows
+on *any* successful deploy, but `auto-commit-song` marks a song committed
+before CI even starts. So an unrelated deploy lands, the row is deleted, and
+the song disappears from every phone in the circle until its own deploy
+finishes. **Fix:** don't reap rows younger than 15 minutes. One line.
 
-**Fix:** don't reap rows younger than 15 minutes. One line.
-
-### 2. Promote and delete go live instantly
-
-Fetch `promoted_songs` and `deleted_songs` alongside `pending_songs` and apply
-them client-side: promoted archive rows become visible, deleted rows disappear.
-
+**0b. Promote and delete go live instantly.** Fetch `promoted_songs` and
+`deleted_songs` alongside `pending_songs` and apply them client-side.
 Promote goes from ~1 hour to zero. The hourly sync stops being the delivery
-mechanism and becomes pure durability — keep it, it's what covers users who load
-before the overlay resolves.
+mechanism and becomes pure durability.
 
-### 3. Deploy pipeline for edge functions
+### Phase 1 — rails (everything else stands on these)
 
-Nothing in `.github/` deploys `supabase/functions/`. All seven are hand-deployed,
-and production is whatever someone last pushed from a laptop. This is why the
-attribution line is missing from all 25 issues — the code is correct, the
-deployment is stale.
+**1a. Deploy pipeline for edge functions.** Nothing in `.github/` deploys
+`supabase/functions/` — all seven are hand-deployed, and production is
+whatever someone last pushed from a laptop (this is why the attribution line
+is missing from all 25 issues, and why `create-tab-pr` sits undeployed,
+#180). Blocks every phase that touches function code — which is now all of
+them. **Risk:** first run deploys seven functions whose current prod state is
+unknown. Hand-deploy once to a known baseline, then let CI take over.
 
-Blocks Steps 1, 5, 6, which all change function code.
+**1b. Make the reconciler real.** The commit is fire-and-forget
+(`.catch(console.warn)`). A failed commit leaves a row nothing retries and
+nobody hears about. Needs a retry pass and an alert. **Measure first:** count
+rows where `github_committed = false` — that's the current drift and may
+contain songs needing manual rescue.
 
-**Risk:** first run deploys seven functions whose current prod state is unknown.
-Hand-deploy once to a known baseline, then let CI take over.
+**1c. One writer for `works/` — a shared library, all five paths.** Extract
+one Python works-writer (collision handling, suppression check, proper YAML,
+provenance, and the new **fork-to-arrangement rule**) and converge
+`process_submission.py`, `process_correction.py`, `process_tab.py`,
+`fetch_tune.py` on it. `auto-commit-song` stops authoring YAML in TypeScript
+(today it overwrites existing works and emits `composers: [Smith, John]`
+unquoted as two composers) and reduces to enqueue + dispatch. The writer
+library is where "hard to destroy" is *enforced*: in-place overwrite is
+refused unless author-or-trusted; a collision routes to the arrangement fork
+or the dedup offramp. Also: add `user-submission` to the prune carve-out
+while in here.
 
-### 4. Login required to write
+### Phase 2 — the new contract
 
-**Anonymous users can report, not write.**
+**2a. Login required to write; anonymous keeps report/request.** Flag a
+problem or request a song without an account (a confirmation toast is a
+complete experience); everything a user will later go looking for requires
+login. This **deletes** the attribution problem — "Rando Calrissian" and the
+client-supplied `submittedBy` field go away; identity comes from the verified
+session. (`submit-tab.test.js:52` asserts the Rando fallback and must
+change.)
 
-- **Stays anonymous:** flag a problem, request a song. A confirmation toast is a
-  complete experience.
-- **Requires login:** song submission, corrections, doc upload, tab submission.
-  Anything the user will later go looking for.
+**2b. Additive = instant for any logged-in user.** All text-content
+submissions (lead sheets **and** OTF tabs — text, diffable, validatable)
+flow: Supabase `pending_songs` overlay → live in seconds → shared writer →
+durable in minutes. Trusted status stops gating speed and only distinguishes
+in-place edit rights. Retire `create-song-issue`,
+`process-song-submission.yml`, `process-song-correction.yml`; tab
+corrections leave the PR flow and join the same pipeline (validation moves
+into the writer; `process-tab-pr.yml` retires too). **New rail required by
+opening the gate:** per-user rate limits and size caps on the write path —
+the Deferred rate-limiting item lands here, not later.
 
-This **deletes** the attribution problem rather than fixing it — "Rando
-Calrissian" and the client-supplied `submittedBy` field both go away, and
-identity comes from the verified session instead.
+**2c. Fork-to-arrangement.** The editor's "edit" action on content you
+don't own becomes "create your arrangement" — same work, new version part,
+`x_version_*` populated, Arrangement pill and votes pick the default. No
+review queue, nothing destroyed, friction stays zero. **Forking is not just
+the fallback for others' content:** you can fork your *own* versions too
+(simplified chart, capo arrangement, different key) — "fork" and "edit in
+place" are both first-class actions on content you own, and ownership only
+decides whether in-place is offered at all.
 
-Also worth knowing: the phone→laptop continuity gap you described is
-anonymous-only. The `pending_songs` overlay already covers logged-in users on any
-device. What login really buys is *the ability to be in the Live tier at all* —
-an anonymous submission has no feedback surface anywhere, by construction.
+**2d. The reviewed residue gets an in-app queue.** Deletions, suppressions,
+merge-redirects, and non-trusted binary doc uploads land in a small
+trusted-user-facing queue in the app (the Dungeon is the natural home).
+This also **fixes the doc-upload dead end**: today `doc_staging` rows and the
+`doc-staging` bucket are read by *nothing* — no workflow, no issue (the
+follow-up call sends a payload `create-song-request` doesn't accept), while
+the UI says "Submitted for review!" Wire the queue to it, or hide the
+regular-user upload button until the queue ships. Do not leave the lie up.
 
-### 5. Make the reconciler real
+### Phase 3 — the offramp (dedup)
 
-The commit is fire-and-forget (`.catch(console.warn)`). A failed commit leaves a
-row nothing retries and nobody hears about — the song lives in Supabase forever
-and never reaches the corpus. That's not a backup, it's an unmonitored queue.
+**The motivating case:** `works/how-long-blues` was a lyrics-only scrape.
+Issue #208 supplied the same song *with* chords and artist; the pipeline
+created a second work instead of enriching the first — through the reviewed
+path, with a human approving it. No login gate would have caught it. Dedup
+would have. Under additive-instant it matters more: the offramp replaces the
+human who used to (fail to) notice.
 
-Needs a retry pass and an alert. **Measure first:** count rows where
-`github_committed = false`. That number is your current drift and may contain
-songs needing manual rescue.
+**Fix the scorer first.** `dedup_works.py` fails for two independent reasons
+and fixing either alone still misses: it compares only the first 300
+characters, and in order — the two works order chorus and verse differently.
+Use full lyrics and word-set overlap.
 
-### 6. One writer for `works/`
-
-Two things write works and they disagree. The edge function builds YAML by string
-concatenation — no collision handling (it **overwrites** an existing work), no
-suppression check, and `composers: [Smith, John]` unquoted becomes two composers.
-
-**Fix:** stop authoring YAML in TypeScript. Reduce the edge function to enqueue +
-dispatch and let `process_submission.py` — which already handles collisions,
-suppression, and proper YAML — be the only writer.
-
-### 7. Dedup before creating a slug
-
-**The motivating case:** `works/how-long-blues` was a lyrics-only scrape from Feb
-2026. Issue #208 supplied the same song *with* chords and artist. The pipeline
-created a second work instead of enriching the first, because nothing checks
-submissions against the corpus.
-
-It came through the reviewed path, with a human approving it. **No login gate —
-A or B — would have caught it. Dedup would have.** That's the argument for
-prioritising this over the login work.
-
-**Fix the scorer first.** `dedup_works.py` fails here for two independent reasons
-and fixing either alone still misses: it only compares the first 300 characters,
-and it compares them in order. The two works order chorus and verse differently,
-so the windows barely overlap. Use full lyrics and word-set overlap instead.
-
-**Use containment, not Jaccard.** A lyrics-only work is nearly a *subset* of a
-fuller submission. Jaccard punishes the size difference; containment doesn't.
-High containment + big size gap = enrichment. High containment + similar size =
-the same song twice. That distinction picks the outcome:
+**Use containment, not Jaccard.** A lyrics-only work is nearly a *subset* of
+a fuller submission. Jaccard punishes the size difference; containment
+doesn't. High containment + big size gap = enrichment. High containment +
+similar size = the same song twice:
 
 | What matched | What to offer |
 |---|---|
 | Existing work is sparser, incoming is richer | **Enrich it** — add the part, don't make a slug. The #208 case. |
-| Match is archived | **Promote it** — instant, via Step 2 |
-| Match is comparable, different chart | **Add as an arrangement** |
+| Match is archived | **Promote it** — instant, via 0b |
+| Match is comparable, different chart | **Add as an arrangement** — same mechanism as 2c |
 | No match, or user overrides | **Add as new** |
 
-Enrichment is the safest to automate: adding chords to a lyrics-only work can't
-destroy anything. That's "gate on what the change does, not who submitted it" in
-its narrowest form.
+Enrichment is the safest to automate: adding chords to a lyrics-only work
+can't destroy anything — the contract's narrowest case.
 
-**Build the CI-side check first** (catches everything, including human-approved
-submissions), the editor warning second (nicer, but bypassable).
+**Both surfaces ship in the same milestone.** The scorer is one library; the
+interactive editor offramp ("this looks like How Long Blues — enrich /
+promote / new arrangement / it's new") and the CI-side backstop (catches
+everything, including automated paths) are two thin callers of it. Neither
+is optional: the editor surface is what makes the offramp *easy*, the CI
+check is what makes it *complete*.
+
+**Third caller: the importer.** `works_importer.normalize_title` mints
+duplicate works with a weaker matcher than `cross_site_index.norm_key`
+(#192) — same disease, different door. Point it at the same scorer.
 
 **Signal order: lyrics > title > chords.** Nothing else.
 
 - **Lyrics** are the only strong signal and the only one worth tuning.
-- **Title** is always present but collides constantly — it narrows candidates,
-  it doesn't decide them.
-- **Chords are not a matching signal.** Half the canon is I-IV-V in G. But chord
-  *presence* is what separates "enrich this work" from "this is a duplicate" —
-  chords decide the outcome, not the match.
+- **Title** narrows candidates; it doesn't decide them.
+- **Chords are not a matching signal** (half the canon is I-IV-V in G) — but
+  chord *presence* decides the outcome: enrich vs duplicate.
 
-**Composer is not a signal.** 12 of 19,228 works have one (0.1%), so it is
-present on both sides of a comparison essentially never. It also adds nothing
-where it exists: two same-title songs with different composers have different
-lyrics, and lyrics already separate them.
+**Composer is not a signal.** 12 of 19,228 works have one (0.1%); where it
+exists it adds nothing lyrics don't already give.
 
-**Instrumentals are the gap.** Fiddle and banjo tunes have no lyrics, so the top
-signal is missing and title carries alone — exactly where title collisions are
-worst ("Blackberry Blossom"). The scorer must know it has fallen back to a weak
-signal rather than silently scoring on it: with no lyrics on either side,
-require a much higher title threshold, or decline to auto-act and just warn.
+**Instrumentals are the gap.** No lyrics, so title carries alone — exactly
+where collisions are worst ("Blackberry Blossom"). The scorer must know it
+has fallen back to a weak signal: with no lyrics on either side, require a
+much higher title threshold, or decline to auto-act and just warn.
 
-**Test with #208 itself** — a real miss from the real pipeline with a known
-answer. And keep the known false-positive pairs below threshold: "I Walk Alone" /
-"I Walk The Line", "Good Hearted Woman" / "Good Hearted Man".
+**Test with #208 itself** — a real miss with a known answer. Keep the known
+false-positive pairs below threshold: "I Walk Alone" / "I Walk The Line",
+"Good Hearted Woman" / "Good Hearted Man".
+
+### Phase 4 — the contributor surface
+
+**4a. "My submissions" (#207 — a real user asked for exactly this).** A
+surface listing your contributions with live status. The first draft claimed
+this "falls out of Step 4 free" — only true for the `pending_songs` path;
+with the issue flow dead and *every* submission flowing through Supabase, it
+now actually does: `pending_songs` + `submission_log` power it with no
+GitHub join. Status vocabulary: live (overlay) → durable (committed) →
+arrangement-of / enriched-into (offramp outcomes) → queued (reviewed
+residue).
+
+**4b. Tag votes and genre suggestions reach the site without you.** Today
+`tag_votes` → `tag_overrides.json` and `genre_suggestions` → export both
+require a human running a local script. Add them to the hourly sync
+(`sync-deleted-songs.yml` is the template): trusted tag overrides apply
+automatically — they're curation decisions, the Live tier already owns those
+— genre suggestions export for review (free text stays human-judged).
+
+**4c. New-tab submission UI.** `create-tab-pr` supports `tab-submission` and
+`create-tab.js` exists, but no UI path constructs the call. After 2b, wire
+new-tab creation into the same unified pipeline (this supersedes the PR-flow
+half of #180; the deploy half lands in 1a).
 
 ---
 
 ## Waiting on you
 
-**Merge `how-long-blues` / `how-long-blues-1`.** Authoritative data, untouched.
-
-Your call was to keep `-1` since it dominates. It nearly does — chords, artist,
-6 sections vs 4 — but **not strictly**: the original has a closing verse `-1`
-lacks ("Cruel engineer can't you see / I need my baby back with me / Then I'd be
-rid of these mean ol' lonesome blues").
-
-**Suggested:** keep `-1` canonical, port that verse across, then suppress the
-original with a redirect. `merge_works.py` handles redirects.
+**Merge `how-long-blues` / `how-long-blues-1`.** Authoritative data,
+untouched. Your call was to keep `-1` since it dominates. It nearly does —
+chords, artist, 6 sections vs 4 — but **not strictly**: the original has a
+closing verse `-1` lacks ("Cruel engineer can't you see / I need my baby
+back with me / Then I'd be rid of these mean ol' lonesome blues").
+**Suggested:** keep `-1` canonical, port that verse across, then suppress
+the original with a redirect. `merge_works.py` handles redirects.
 
 ---
 
 ## Deferred
 
-- **Auto-approve for logged-in-but-untrusted users.** Once Step 7 exists,
-  "is this change additive?" is computable, and login becomes one input to a
-  threshold rather than the gate. Decide then, with data.
-- **Rate limiting.** Not needed at 25 lifetime submissions. Revisit if Step 4
-  opens `pending_songs` writes beyond trusted users.
-- **#207 (pending submissions across devices).** Falls out of Step 4 free.
+- **Anonymous *content* writes.** The contract requires login for anything
+  the user will later go looking for. If friction data ever says otherwise,
+  the change-based gate makes relaxing this a policy tweak, not a rebuild.
+- **Bounties processing.** The `bounties` table is a pure request board
+  nothing reads — by design; it's a signal to other contributors, and paths
+  2b/4c are how bounties get *fulfilled*. Leave it.
+- **Auto-applying genre suggestions** above a vote threshold. Decide with
+  data once 4b surfaces the volume.
+- **Cleaning up legacy `song_flags` table** — orphaned since flags moved to
+  issues; delete the table in a migration sweep whenever convenient.
 
 ---
 
 ## Appendix — verification
 
-Everything below was checked in-session against this worktree. Skip unless
-something above looks wrong.
+Everything below was checked in-session against this worktree (audit
+2026-08-15 covered all 17 contribution paths). Skip unless something above
+looks wrong.
 
 ### Anchors
 
@@ -238,11 +322,18 @@ something above looks wrong.
 | Fire-and-forget commit | `docs/js/editor.js:916` |
 | Cleanup deletes on any deploy | `supabase/functions/cleanup-pending/index.ts`; `.github/workflows/cleanup-pending.yml` |
 | No function deploy CI | `grep -rn "supabase/functions" .github/` → nothing |
-| Attribution code is correct | `supabase/functions/create-song-issue/index.ts:66,89` |
+| Attribution code is correct, prod is stale | `supabase/functions/create-song-issue/index.ts:66,89` |
 | Overwrite / unquoted YAML / no suppression check | `supabase/functions/auto-commit-song/index.ts` vs `scripts/lib/process_submission.py:150-190` |
+| Five writers of `works/` | `process_submission.py`, `process_correction.py`, `process_tab.py`, `fetch_tune.py`, `auto-commit-song/index.ts` |
+| Doc-upload dead end: nothing reads `doc_staging`; follow-up call payload mismatch | `docs/js/doc-upload.js` (`submitAsRegularUser`, ~:444), `docs/js/work-view.js` (`uploadPlaceholderDocumentRegular`, ~:1724); `create-song-request/index.ts` expects `{id,title,artist,key,notes}` |
+| Tag/genre sync is manual-only | `scripts/lib/fetch_tag_overrides.py`, `scripts/lib/export_genre_suggestions.py` — in no workflow |
+| `tab-submission` supported server-side, no UI caller | `supabase/functions/create-tab-pr/index.ts`; `docs/js/otf-editor/submit-tab.js`; `create-tab.js` unwired |
+| Importer duplicate minting | #192, `works_importer.normalize_title` vs `cross_site_index.norm_key` |
+| Arrangement machinery already shipped | `x_version_*` metadata, Arrangement pill (`work-view.js`), `song_votes`/`song_vote_counts`, `curation/registry.yaml` |
 | Existing dedup + merge tools | `scripts/lib/dedup_works.py`, `scripts/lib/merge_works.py` |
 | Jaccard helper already in repo | `scripts/lib/build_works_index.py:600-607` |
 | Known false positives | docstring, `build_works_index.py:570` |
+| Rando fallback test | `docs/js/__tests__/otf-editor/submit-tab.test.js:52` |
 
 ### Measurements
 
@@ -255,14 +346,17 @@ something above looks wrong.
 | Full text, Jaccard over word sets | 0.646 |
 | Full text, containment (∩ / smaller side) | **0.886** |
 
-Composer coverage: **12 of 19,228 works** (0.1%) carry a `composers` field —
-which is why it is not a signal.
+Composer coverage: **12 of 19,228 works** (0.1%).
 
 ### Notes
 
-- `curation/index_prune.csv` is 17,089 pre-existing ids, so new works are never
-  pruned — the `USER_SOURCES` carve-out is belt-and-braces. `user-submission`
-  (doc uploads) is missing from that set; harmless today, worth fixing in Step 6.
+- `curation/index_prune.csv` is 17,089 pre-existing ids, so new works are
+  never pruned — the `USER_SOURCES` carve-out is belt-and-braces.
+  `user-submission` (doc uploads) is missing from that set; fixed in 1c.
 - Both `will-the-circle-be-unbroken` works are indexed, not archived.
-- `docs/js/__tests__/otf-editor/submit-tab.test.js:52` asserts the Rando
-  fallback and must change in Step 4.
+- Interview decisions (2026-08-15): additive = instant for any login;
+  fork-to-arrangement for others' content; reviewed residue = deletions,
+  suppressions, non-trusted doc uploads; GitHub issue flow killed for
+  content; dedup ships both surfaces in one milestone; instant scope = all
+  text content, binary docs reviewed; one shared writer library across all
+  five paths; "my submissions" is an explicit deliverable.
