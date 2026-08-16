@@ -23,6 +23,8 @@ import {
     subscribe
 } from './state.js';
 
+import { deleteAffordance } from './review-queue.js';
+
 import {
     goBack,
     updateListContextClass, updateNavBar,
@@ -1155,15 +1157,19 @@ export function updateWorkTopBar() {
         });
     }
     // One slot, two meanings: admins delete on the spot, trusted users ask.
-    // Deletion is the destructive residue phase 2d keeps reviewed — see
-    // review-queue.js for the queue the request lands in.
-    if (workPageHooks.isAdmin?.()) {
+    // Deletion is the destructive residue phase 2d keeps reviewed — the rule
+    // itself lives in review-queue.js so the queue and the button agree.
+    const affordance = deleteAffordance({
+        isAdmin: workPageHooks.isAdmin?.(),
+        isTrusted: workPageHooks.isTrusted?.(),
+    });
+    if (affordance === 'instant') {
         overflow.push({
             id: 'delete-song-btn',
             label: '🗑️ Delete song',
             onClick: () => workPageHooks.onDelete?.(),
         });
-    } else if (workPageHooks.isTrusted?.()) {
+    } else if (affordance === 'request') {
         overflow.push({
             id: 'request-delete-song-btn',
             label: '🗑️ Request deletion',

@@ -6708,9 +6708,9 @@ body.dungeon-mode #search-stats {
 }
 
 /* Review queue — destructive asks waiting on an admin (Dungeon panel) */
+/* Sits directly above #results inside .container — inherit that width */
 .review-queue-panel {
-    margin: 0 auto 1rem;
-    max-width: var(--content-max, 900px);
+    margin: 0 0 1rem;
 }
 
 .review-queue {
