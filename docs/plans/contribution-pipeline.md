@@ -154,13 +154,25 @@ its narrowest form.
 **Build the CI-side check first** (catches everything, including human-approved
 submissions), the editor warning second (nicer, but bypassable).
 
-**Composer is a dedup signal, not a feature.** Same title + different composer is
-good evidence of *different* songs — Will the Circle Be Unbroken is two songs, the
-1907 hymn and A.P. Carter's 1935 rewrite. That matters because containment is
-*more* prone to false merges than what it replaces. There's a one-character bug
-dropping composers today (the regex wants `{meta: composer: X}`, the documented
-form is `{meta: composer X}`); fix it because it's free and feeds this. Don't
-invest in composer coverage or backfill beyond that.
+**Signal order: lyrics > title > chords.** Nothing else.
+
+- **Lyrics** are the only strong signal and the only one worth tuning.
+- **Title** is always present but collides constantly — it narrows candidates,
+  it doesn't decide them.
+- **Chords are not a matching signal.** Half the canon is I-IV-V in G. But chord
+  *presence* is what separates "enrich this work" from "this is a duplicate" —
+  chords decide the outcome, not the match.
+
+**Composer is not a signal.** 12 of 19,228 works have one (0.1%), so it is
+present on both sides of a comparison essentially never. It also adds nothing
+where it exists: two same-title songs with different composers have different
+lyrics, and lyrics already separate them.
+
+**Instrumentals are the gap.** Fiddle and banjo tunes have no lyrics, so the top
+signal is missing and title carries alone — exactly where title collisions are
+worst ("Blackberry Blossom"). The scorer must know it has fallen back to a weak
+signal rather than silently scoring on it: with no lyrics on either side,
+require a much higher title threshold, or decline to auto-act and just warn.
 
 **Test with #208 itself** — a real miss from the real pipeline with a known
 answer. And keep the known false-positive pairs below threshold: "I Walk Alone" /
@@ -177,8 +189,7 @@ Your call was to keep `-1` since it dominates. It nearly does — chords, artist
 lacks ("Cruel engineer can't you see / I need my baby back with me / Then I'd be
 rid of these mean ol' lonesome blues").
 
-**Suggested:** keep `-1` canonical, port that verse across, add
-`composers: [Leroy Carr]` by hand (the regex bug dropped it), then suppress the
+**Suggested:** keep `-1` canonical, port that verse across, then suppress the
 original with a redirect. `merge_works.py` handles redirects.
 
 ---
@@ -211,7 +222,6 @@ something above looks wrong.
 | No function deploy CI | `grep -rn "supabase/functions" .github/` → nothing |
 | Attribution code is correct | `supabase/functions/create-song-issue/index.ts:66,89` |
 | Overwrite / unquoted YAML / no suppression check | `supabase/functions/auto-commit-song/index.ts` vs `scripts/lib/process_submission.py:150-190` |
-| Composer regex | `scripts/lib/process_submission.py:126` |
 | Existing dedup + merge tools | `scripts/lib/dedup_works.py`, `scripts/lib/merge_works.py` |
 | Jaccard helper already in repo | `scripts/lib/build_works_index.py:600-607` |
 | Known false positives | docstring, `build_works_index.py:570` |
@@ -227,13 +237,8 @@ something above looks wrong.
 | Full text, Jaccard over word sets | 0.646 |
 | Full text, containment (∩ / smaller side) | **0.886** |
 
-Composer regex, measured:
-
-```
-{composer: Leroy Carr}        -> 'Leroy Carr'
-{meta: composer: Leroy Carr}  -> 'Leroy Carr'
-{meta: composer Leroy Carr}   -> None      <- the documented form
-```
+Composer coverage: **12 of 19,228 works** (0.1%) carry a `composers` field —
+which is why it is not a signal.
 
 ### Notes
 
