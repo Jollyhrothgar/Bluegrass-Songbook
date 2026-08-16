@@ -289,15 +289,21 @@ half of #180; the deploy half lands in 1a).
 
 ---
 
-## Waiting on you
+## Done
 
-**Merge `how-long-blues` / `how-long-blues-1`.** Authoritative data,
-untouched. Your call was to keep `-1` since it dominates. It nearly does —
-chords, artist, 6 sections vs 4 — but **not strictly**: the original has a
-closing verse `-1` lacks ("Cruel engineer can't you see / I need my baby
-back with me / Then I'd be rid of these mean ol' lonesome blues").
-**Suggested:** keep `-1` canonical, port that verse across, then suppress
-the original with a redirect. `merge_works.py` handles redirects.
+**`how-long-blues` merged into `how-long-blues-1`** (2026-08-15, commit
+`2e8373a39`): Tim's version is canonical, the original's closing verse
+ported across with chords in the chart's idiom, `composers: [Leroy Carr]`
+added, original suppressed with a redirect via `merge_works.py`. This pair
+remains the Phase 3 scorer's primary test fixture — the pre-merge texts
+live in git history.
+
+## Delivery
+
+Decided 2026-08-15: this doc stays the rationale; the work ships as a
+**"Contribution pipeline" GitHub milestone** with one issue per phase item,
+so pieces are trackable and delegable. Build work is delegated to cheaper
+agents; review stays with the top-tier model.
 
 ---
 
