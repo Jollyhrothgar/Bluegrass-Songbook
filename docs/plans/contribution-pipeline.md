@@ -216,9 +216,12 @@ the Dungeon: trusted users file, admins decide, admins keep the instant
 delete. Approving a `delete` executes; approving a `suppress` or
 `merge-redirect` records the decision and prints the local command, because
 both edit files in the repo and no CI path does that from a table — the
-panel says so rather than implying otherwise. Both migrations are written
-but **not applied**; the drop-`doc_staging` one opens with a rescue
-checklist and the `doc-staging` bucket still needs a manual delete.
+panel says so rather than implying otherwise. The panel's third section
+lists 3b's dedup holds (`pending_songs.dedup_hold`) with admin release /
+reject. Migrations are written but **not applied**: the drop-`doc_staging`
+one opens with a rescue checklist (and the bucket still needs a manual
+delete), and `review_requests` also grants `is_admin()` update/delete on
+`pending_songs` so the hold actions aren't blocked by the 2b policies.
 
 ### Phase 3 — the offramp (dedup)
 

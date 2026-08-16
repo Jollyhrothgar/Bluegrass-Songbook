@@ -653,6 +653,16 @@ on a human:
   `merge-redirect` records the decision and **prints the local command**,
   because those edit files in the repo and no CI path does it from a table
 
+The panel has three sections: **Waiting on you** (pending requests),
+**Decided** (history, including any command still owed a local run), and
+**Held by dedup backstop** — `pending_songs` rows where 3b's backstop set
+`dedup_hold`. Nothing commits a held row; admins get *Release hold*
+(`dedup_hold` → null, so the hourly reconciler re-dispatches it — the toast
+says "not committed yet" rather than pretending otherwise) and *Reject*
+(deletes the pending row, behind a confirm). The hold read is separate from
+the request read: if the `dedup_hold` column isn't deployed the section shows
+the error and the rest of the queue still renders.
+
 Document upload is gone with 2d (`doc-upload.js`, the `#upload` view, the
 picker's Upload card, the editor's "Upload a photo instead" hatch). Document
 *parts* already in `works/` still render — `renderDocumentPart` in

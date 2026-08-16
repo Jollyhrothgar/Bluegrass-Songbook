@@ -168,7 +168,13 @@ three destructive asks — `delete`, `suppress`, `merge-redirect`:
   reviewers; making them queue an ask to themselves would be ceremony.
 
 The UI is `docs/js/review-queue.js`, rendered into `#review-queue-panel` in
-the Bluegrass Dungeon (the same place Promote lives).
+the Bluegrass Dungeon (the same place Promote lives). Its third section lists
+`pending_songs` rows held by the phase-3b dedup backstop (`dedup_hold` not
+null) with admin *Release hold* / *Reject* actions — which is why
+`20260815150000_review_requests.sql` also adds `is_admin()` update/delete
+policies on `pending_songs`: the 2b policies grant those to the row's author
+or a trusted user only, so an admin outside `trusted_users` would have been
+refused by RLS.
 
 **What approval actually does — the honest part.** Approving a `delete` runs
 the existing `delete_song` RPC, so the song is gone immediately. Approving a

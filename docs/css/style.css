@@ -6802,6 +6802,42 @@ body.dungeon-mode #search-stats {
     color: var(--error, #ef4444);
 }
 
+.review-queue-section + .review-queue-section {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+}
+
+.review-section-title {
+    margin: 0 0 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.review-section-count {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0 0.4rem;
+}
+
+.review-section-note {
+    margin: 0 0 0.6rem;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+}
+
+.review-hold-item .review-item-kind {
+    color: var(--text-secondary);
+}
+
 .review-queue-list {
     list-style: none;
     margin: 0;

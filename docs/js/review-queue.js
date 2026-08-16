@@ -327,30 +327,48 @@ export async function showReviewQueue() {
     panel.classList.remove('hidden');
     panel.innerHTML = '<div class="review-queue-loading">Loading review queue…</div>';
 
-    const { data, error } = await fetchReviewRequests();
-    if (error) {
-        panel.innerHTML = `<div class="review-queue-error">Could not load the review queue: ${escapeHtml(error.message)}</div>`;
+    // Two independent reads. A hold list that fails (the column ships with the
+    // 3b backstop migration) must not take the request queue down with it, so
+    // its error is carried into the render rather than thrown.
+    const [requestsResult, holdsResult] = await Promise.all([
+        fetchReviewRequests(),
+        fetchHeldSubmissions(),
+    ]);
+
+    if (requestsResult.error) {
+        panel.innerHTML = `<div class="review-queue-error">Could not load the review queue: ${escapeHtml(requestsResult.error.message)}</div>`;
         return;
     }
-    renderReviewQueue(panel, { requests: data, isAdmin });
+    renderReviewQueue(panel, {
+        requests: requestsResult.data,
+        holds: holdsResult.data,
+        holdsError: holdsResult.error,
+        isAdmin,
+    });
 }
 
 /**
  * Render the queue. Pure-ish: everything it needs is passed in, so a test can
  * hand it a container and a fixture.
  */
-export function renderReviewQueue(panel, { requests = [], isAdmin = false } = {}) {
+export function renderReviewQueue(panel, {
+    requests = [], holds = [], holdsError = null, isAdmin = false,
+} = {}) {
     const sorted = sortQueue(requests);
     const summary = summarizeQueue(sorted);
     const reviewer = canReview({ isAdmin });
 
-    const rows = sorted.map(r => renderRow(r, reviewer)).join('');
+    const waiting = sorted.filter(r => (r.status || 'pending') === 'pending');
+    const decided = sorted.filter(r => (r.status || 'pending') !== 'pending');
+    const heldRows = sortHolds(holds);
+
+    const openWork = waiting.length + heldRows.length;
 
     panel.innerHTML = `
         <div class="review-queue">
             <div class="review-queue-header">
                 <span class="review-queue-title">🗂️ Review queue</span>
-                <span class="review-queue-counts">${summary.pending} pending · ${summary.total} total</span>
+                <span class="review-queue-counts">${openWork} awaiting a decision</span>
             </div>
             <p class="review-queue-note">
                 Deletions, suppressions and merge-redirects are the only asks that still
@@ -359,9 +377,36 @@ export function renderReviewQueue(panel, { requests = [], isAdmin = false } = {}
                     ? 'Approving a deletion removes the song right away. Suppress and merge-redirect edit files in the repo, so approving them records the decision and hands you the command to run locally — the app cannot do it for you.'
                     : 'An admin decides these. You can file a request and watch it here.'}
             </p>
-            ${sorted.length
-                ? `<ul class="review-queue-list">${rows}</ul>`
-                : '<div class="review-queue-empty">Nothing waiting. The residue is small by design.</div>'}
+
+            <section class="review-queue-section" data-section="waiting">
+                <h4 class="review-section-title">Waiting on you <span class="review-section-count">${waiting.length}</span></h4>
+                ${waiting.length
+                    ? `<ul class="review-queue-list">${waiting.map(r => renderRow(r, reviewer)).join('')}</ul>`
+                    : '<div class="review-queue-empty">Nothing waiting. The residue is small by design.</div>'}
+            </section>
+
+            ${decided.length
+                ? `<section class="review-queue-section" data-section="decided">
+                       <h4 class="review-section-title">Decided <span class="review-section-count">${decided.length}</span></h4>
+                       <ul class="review-queue-list">${decided.map(r => renderRow(r, reviewer)).join('')}</ul>
+                   </section>`
+                : ''}
+
+            <section class="review-queue-section" data-section="holds">
+                <h4 class="review-section-title">Held by dedup backstop <span class="review-section-count">${heldRows.length}</span></h4>
+                <p class="review-section-note">
+                    CI thinks these submissions duplicate something already in the songbook,
+                    so it wrote nothing and parked the row. Nothing commits them until
+                    ${reviewer ? 'you decide' : 'an admin decides'}: releasing a hold sends it
+                    back through the normal writer on the next reconciler pass (within the hour);
+                    rejecting throws the submission away.
+                </p>
+                ${holdsError
+                    ? `<div class="review-queue-error">Could not read the hold list: ${escapeHtml(holdsError.message)}</div>`
+                    : heldRows.length
+                        ? `<ul class="review-queue-list">${heldRows.map(r => renderHold(r, reviewer)).join('')}</ul>`
+                        : '<div class="review-queue-empty">No held submissions.</div>'}
+            </section>
         </div>
     `;
 
@@ -369,6 +414,30 @@ export function renderReviewQueue(panel, { requests = [], isAdmin = false } = {}
     panel.querySelectorAll('[data-review-action]').forEach(btn => {
         btn.addEventListener('click', () => handleDecision(panel, btn));
     });
+    panel.querySelectorAll('[data-hold-action]').forEach(btn => {
+        btn.addEventListener('click', () => handleHoldDecision(panel, btn));
+    });
+}
+
+function renderHold(row, reviewer) {
+    const hold = describeHold(row);
+    return `
+        <li class="review-queue-item review-hold-item" data-hold-id="${escapeHtml(hold.id)}">
+            <div class="review-item-head">
+                <span class="review-item-kind">Held</span>
+                <a class="review-item-target" href="#work/${encodeURIComponent(hold.id)}">${escapeHtml(hold.id)}</a>
+                <span class="review-item-status">duplicate suspected</span>
+            </div>
+            <div class="review-item-blurb">${escapeHtml(hold.title)}${hold.artist ? ` — ${escapeHtml(hold.artist)}` : ''}</div>
+            <div class="review-item-reason">${escapeHtml(hold.reason)}</div>
+            ${reviewer
+                ? `<div class="review-item-actions">
+                       <button class="review-action approve" data-hold-action="release">Release hold</button>
+                       <button class="review-action reject" data-hold-action="reject">Reject</button>
+                   </div>`
+                : ''}
+        </li>
+    `;
 }
 
 function renderRow(request, reviewer) {
@@ -401,6 +470,31 @@ function renderRow(request, reviewer) {
                 : ''}
         </li>
     `;
+}
+
+async function handleHoldDecision(panel, btn) {
+    const item = btn.closest('.review-hold-item');
+    const id = item?.dataset.holdId;
+    if (!id) return;
+
+    const action = btn.dataset.holdAction;
+    if (action === 'reject' && !confirm(
+        `Reject the held submission "${id}"?\n\nThe pending row is deleted. Whoever sent it will not get it back.`
+    )) return;
+
+    const actions = item.querySelector('.review-item-actions');
+    if (actions) actions.innerHTML = '<span class="review-item-working">Working…</span>';
+
+    const { error } = action === 'release'
+        ? await releaseHold(id)
+        : await rejectHeldSubmission(id);
+
+    if (error) {
+        alert(`Could not ${action === 'release' ? 'release' : 'reject'} ${id}: ${error.message}`);
+    } else if (action === 'release') {
+        alert(`Hold cleared on "${id}".\n\nThe reconciler re-dispatches it on its next hourly pass — it is not committed yet.`);
+    }
+    await showReviewQueue();
 }
 
 async function handleDecision(panel, btn) {

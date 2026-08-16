@@ -20,7 +20,19 @@ import {
     sortQueue,
     validateRequest,
     renderReviewQueue,
+    isHeld,
+    describeHold,
+    sortHolds,
 } from '../review-queue.js';
+
+const hold = (over = {}) => ({
+    id: 'how-long-blues-2',
+    title: 'How Long Blues',
+    artist: 'Jimmy Martin',
+    dedup_hold: 'looks like how-long-blues (0.94 containment)',
+    created_at: '2026-08-15T09:00:00Z',
+    ...over,
+});
 
 const req = (over = {}) => ({
     id: 'r1',
@@ -198,6 +210,126 @@ describe('rendering', () => {
     it('escapes request text rather than injecting it', () => {
         renderReviewQueue(panel, {
             requests: [req({ reason: '<img src=x onerror=alert(1)>' })],
+            isAdmin: true,
+        });
+        expect(panel.querySelector('img')).toBeNull();
+        expect(panel.textContent).toContain('<img src=x onerror=alert(1)>');
+    });
+});
+
+// ---------------------------------------------------------------------------
+// Dedup-backstop holds (phase 3b's brake, surfaced in 2d's panel)
+// ---------------------------------------------------------------------------
+
+describe('held submissions', () => {
+    it('is held only when the backstop left a non-empty reason', () => {
+        expect(isHeld(hold())).toBe(true);
+        expect(isHeld(hold({ dedup_hold: null }))).toBe(false);
+        expect(isHeld(hold({ dedup_hold: '' }))).toBe(false);
+        expect(isHeld(hold({ dedup_hold: '   ' }))).toBe(false);
+        expect(isHeld(undefined)).toBe(false);
+    });
+
+    it('describes a hold, filling in only what is missing', () => {
+        expect(describeHold(hold())).toEqual({
+            id: 'how-long-blues-2',
+            title: 'How Long Blues',
+            artist: 'Jimmy Martin',
+            reason: 'looks like how-long-blues (0.94 containment)',
+        });
+    });
+
+    it('still shows a blank-reason hold rather than hiding it — the row is blocked either way', () => {
+        const d = describeHold(hold({ dedup_hold: '  ', title: '', artist: '' }));
+        expect(d.title).toBe('(untitled submission)');
+        expect(d.artist).toBeNull();
+        expect(d.reason).toMatch(/no reason recorded/);
+    });
+
+    it('orders holds oldest first and drops rows with no id', () => {
+        const rows = [
+            hold({ id: 'c', created_at: '2026-08-15T12:00:00Z' }),
+            hold({ id: 'a', created_at: '2026-08-13T12:00:00Z' }),
+            { id: '', dedup_hold: 'x' },
+            hold({ id: 'b', created_at: '2026-08-14T12:00:00Z' }),
+        ];
+        expect(sortHolds(rows).map(r => r.id)).toEqual(['a', 'b', 'c']);
+        expect(sortHolds()).toEqual([]);
+    });
+});
+
+describe('rendering holds', () => {
+    let panel;
+    beforeEach(() => {
+        panel = document.createElement('div');
+        document.body.appendChild(panel);
+    });
+
+    it('gives holds their own section with release/reject for admins only', () => {
+        renderReviewQueue(panel, { requests: [], holds: [hold()], isAdmin: true });
+        const section = panel.querySelector('[data-section="holds"]');
+        expect(section).not.toBeNull();
+        expect(section.textContent).toContain('Held by dedup backstop');
+        expect(panel.querySelectorAll('.review-hold-item').length).toBe(1);
+        expect([...panel.querySelectorAll('[data-hold-action]')].map(b => b.dataset.holdAction))
+            .toEqual(['release', 'reject']);
+
+        renderReviewQueue(panel, { requests: [], holds: [hold()], isAdmin: false });
+        expect(panel.querySelectorAll('[data-hold-action]').length).toBe(0);
+        expect(panel.querySelectorAll('.review-hold-item').length).toBe(1);
+    });
+
+    it('shows the backstop reason and the submission it belongs to', () => {
+        renderReviewQueue(panel, { requests: [], holds: [hold()], isAdmin: true });
+        const item = panel.querySelector('.review-hold-item');
+        expect(item.dataset.holdId).toBe('how-long-blues-2');
+        expect(item.textContent).toContain('looks like how-long-blues (0.94 containment)');
+        expect(item.textContent).toContain('How Long Blues');
+        expect(item.textContent).toContain('Jimmy Martin');
+    });
+
+    it('never claims a released hold is committed — it says the reconciler will pick it up', () => {
+        renderReviewQueue(panel, { requests: [], holds: [hold()], isAdmin: true });
+        const note = panel.querySelector('[data-section="holds"] .review-section-note').textContent;
+        expect(note).toMatch(/reconciler pass/);
+        expect(note).not.toMatch(/committed now|immediately live/);
+    });
+
+    it('reports a missing hold list without losing the request queue', () => {
+        renderReviewQueue(panel, {
+            requests: [req()],
+            holds: [],
+            holdsError: { message: 'column pending_songs.dedup_hold does not exist' },
+            isAdmin: true,
+        });
+        expect(panel.querySelector('[data-section="holds"] .review-queue-error').textContent)
+            .toContain('dedup_hold does not exist');
+        // the requests still rendered
+        expect(panel.querySelectorAll('[data-section="waiting"] .review-queue-item').length).toBe(1);
+    });
+
+    it('splits requests into waiting and decided, and counts open work across both queues', () => {
+        renderReviewQueue(panel, {
+            requests: [req({ id: 'p1' }), req({ id: 'd1', status: 'approved' })],
+            holds: [hold(), hold({ id: 'other' })],
+            isAdmin: true,
+        });
+        expect(panel.querySelectorAll('[data-section="waiting"] .review-queue-item').length).toBe(1);
+        expect(panel.querySelectorAll('[data-section="decided"] .review-queue-item').length).toBe(1);
+        // 1 pending request + 2 holds
+        expect(panel.querySelector('.review-queue-counts').textContent).toBe('3 awaiting a decision');
+    });
+
+    it('omits the decided section entirely when there is no history', () => {
+        renderReviewQueue(panel, { requests: [req()], holds: [], isAdmin: true });
+        expect(panel.querySelector('[data-section="decided"]')).toBeNull();
+        expect(panel.querySelector('[data-section="holds"] .review-queue-empty')).not.toBeNull();
+    });
+
+    it('escapes the backstop reason rather than injecting it', () => {
+        renderReviewQueue(panel, {
+            requests: [],
+            holds: [hold({ dedup_hold: '<img src=x onerror=alert(1)>' })],
             isAdmin: true,
         });
         expect(panel.querySelector('img')).toBeNull();
