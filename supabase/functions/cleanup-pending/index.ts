@@ -25,12 +25,21 @@ serve(async (req) => {
 
     const supabase = createClient(supabaseUrl, supabaseServiceKey)
 
-    // Delete all pending songs that have been committed to GitHub
-    // These are now in the static index.jsonl, so we don't need them anymore
+    // Delete pending songs that have been committed to GitHub — they are in
+    // the static index.jsonl now, so the overlay no longer needs them.
+    //
+    // Grace period: auto-commit-song flips github_committed BEFORE CI runs,
+    // so a row can be "committed" while its deploy is still building. Any
+    // unrelated deploy landing in that window would reap the row and the song
+    // would vanish from the live overlay until its own deploy finished. Keep
+    // rows younger than 15 minutes regardless of the flag.
+    const graceCutoff = new Date(Date.now() - 15 * 60 * 1000).toISOString()
+
     const { data, error } = await supabase
       .from('pending_songs')
       .delete()
       .eq('github_committed', true)
+      .lt('created_at', graceCutoff)
       .select('id')
 
     if (error) {
