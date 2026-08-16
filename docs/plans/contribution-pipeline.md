@@ -1,9 +1,10 @@
 # Plan: Contribution pipeline
 
-**Status:** built — all phases code-complete on `feature/promote-workflow`
-(2026-08-15, milestone #12, issues #215–#229 plus follow-ups #230–#233).
-Awaiting: migrations applied, functions deployed, PR to main. Written
-2026-08-15 on `feature/promote-workflow`.
+**Status:** SHIPPED 2026-08-16 — merged to main (PR #234, migration fix
+#237), edge functions CI-deployed, all five migrations applied to prod
+and verified, reconciler drift **0**. Milestone #12: issues #215–#229
+closed, follow-ups #233/#235/#236 open. Written 2026-08-15 on
+`feature/promote-workflow`.
 Rescoped 2026-08-15 after a full audit of every contribution path (17 found;
 the first draft covered 5) and an interview that settled the open policy
 questions. Decisions are in the body; the [appendix](#appendix--verification)
