@@ -14,8 +14,23 @@ Serverless functions that run on Supabase Edge (Deno runtime).
 | `create-flag-issue` | Create GitHub issue for song problem reports | POST from flags.js | `functions/create-flag-issue/index.ts` |
 | `create-song-request` | Create GitHub issue for song requests | POST from main.js | `functions/create-song-request/index.ts` |
 | `create-superuser-request` | Create GitHub issue for super-user access requests | POST from superuser-request.js | `functions/create-superuser-request/index.ts` |
-| `auto-commit-song` | Commit pending_songs to GitHub repo | Scheduled | `functions/auto-commit-song/index.ts` |
-| `cleanup-pending` | Remove stale pending songs | Scheduled | `functions/cleanup-pending/index.ts` |
+| `auto-commit-song` | Commit a pending_songs row to the GitHub repo | POST from editor.js (trusted-user save) | `functions/auto-commit-song/index.ts` |
+| `cleanup-pending` | Remove pending songs already committed | `.github/workflows/cleanup-pending.yml` after a successful deploy | `functions/cleanup-pending/index.ts` |
+| `reconcile-pending` | Retry rows the live commit path failed, and report the drift | `.github/workflows/reconcile-pending.yml`, hourly | `functions/reconcile-pending/index.ts` |
+
+**Shared code (`functions/_shared/`)** — `commit-song.ts` holds the one copy of
+the pending-row-to-`works/` commit logic. `auto-commit-song` (live path) and
+`reconcile-pending` (hourly retry) both import it, so a retry runs exactly the
+code the original attempt ran. Supabase bundles relative imports at deploy
+time, so **redeploy both functions** whenever `_shared/commit-song.ts` changes.
+
+`reconcile-pending` is gated on the service role key itself (not merely a valid
+project JWT — the anon key is public), commits at most 25 rows per run, and
+skips rows younger than 15 minutes so it cannot race an in-flight
+`auto-commit-song`. It always returns HTTP 200 with `drift` (the count of rows
+where `github_committed = false`) and `stuckCount`; the workflow fails and
+opens/updates a single "Reconciler: pending songs stuck uncommitted" issue when
+`stuckCount > 0`. `POST {"dryRun": true}` measures drift without committing.
 
 All functions:
 - Use GitHub API to create issues (no user GitHub auth required)

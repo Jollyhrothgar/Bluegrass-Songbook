@@ -1,0 +1,143 @@
+name: Reconcile Pending Songs
+
+# Retries pending_songs rows that never reached works/ in git.
+#
+# The editor's commit trigger is fire-and-forget: when it fails, the song stays
+# live in the Supabase overlay but never becomes durable, and nothing retries or
+# complains. This is the retry-and-alert pass. It also prints the current drift
+# (count of rows with github_committed = false) so the number is visible even
+# when everything succeeds.
+#
+# Offset from sync-deleted-songs (:17) so the two hourly jobs don't collide.
+
+on:
+  schedule:
+    - cron: '42 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Measure drift only — do not commit anything'
+        type: boolean
+        default: false
+
+concurrency:
+  group: reconcile-pending
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Invoke reconcile-pending
+        id: reconcile
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          DRY_RUN: ${{ inputs.dry_run == true && 'true' || 'false' }}
+        run: |
+          set -euo pipefail
+
+          # A missing secret must not masquerade as "nothing to reconcile".
+          if [ -z "${SUPABASE_URL}" ] || [ -z "${SUPABASE_SERVICE_ROLE_KEY}" ]; then
+            echo "::error::SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY secrets are not set"
+            exit 1
+          fi
+
+          code=$(curl -sS -o response.json -w '%{http_code}' \
+            -X POST "${SUPABASE_URL}/functions/v1/reconcile-pending" \
+            -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Content-Type: application/json" \
+            -d "{\"dryRun\": ${DRY_RUN}}")
+
+          echo "HTTP ${code}"
+          cat response.json
+          echo
+
+          if [ "${code}" != "200" ]; then
+            echo "::error::reconcile-pending returned HTTP ${code}"
+            exit 1
+          fi
+
+          drift=$(jq -r '.drift' response.json)
+          eligible=$(jq -r '.eligible' response.json)
+          committed=$(jq -r '.committed' response.json)
+          stuck=$(jq -r '.stuckCount' response.json)
+          remaining=$(jq -r '.remaining' response.json)
+
+          # The drift number is the point of the job — make it visible.
+          echo "Drift (pending_songs with github_committed = false): ${drift}"
+          echo "Past grace window: ${eligible} | committed this run: ${committed} | still stuck: ${stuck} | deferred to next run: ${remaining}"
+
+          {
+            echo "### Reconcile pending songs"
+            echo
+            echo "| metric | value |"
+            echo "| --- | --- |"
+            echo "| drift (uncommitted rows) | ${drift} |"
+            echo "| past grace window | ${eligible} |"
+            echo "| committed this run | ${committed} |"
+            echo "| still stuck | ${stuck} |"
+            echo "| deferred to next run | ${remaining} |"
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+          echo "stuck=${stuck}" >> "${GITHUB_OUTPUT}"
+          echo "drift=${drift}" >> "${GITHUB_OUTPUT}"
+
+      - name: Open or update the stuck-songs alert
+        if: steps.reconcile.outputs.stuck != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const result = JSON.parse(fs.readFileSync('response.json', 'utf8'));
+            const TITLE = 'Reconciler: pending songs stuck uncommitted';
+            const { owner, repo } = context.repo;
+
+            const fmt = (r) =>
+              `- \`${r.id}\` — ${r.title || '(untitled)'} — created ${r.created_at || 'unknown'}\n  - ${r.error}`;
+
+            const sections = [];
+            if (result.stuck?.length) {
+              sections.push(`**Failed again on retry (${result.stuck.length}):**\n${result.stuck.map(fmt).join('\n')}`);
+            }
+            if (result.unretryable?.length) {
+              sections.push(`**Not retryable — needs manual rescue (${result.unretryable.length}):**\n${result.unretryable.map(fmt).join('\n')}`);
+            }
+
+            const body = [
+              `The hourly reconciler could not get these \`pending_songs\` rows into \`works/\`.`,
+              `They are live in the Supabase overlay but **not durable in git**.`,
+              ``,
+              `- drift (rows with \`github_committed = false\`): **${result.drift}**`,
+              `- past the ${result.graceMinutes}-minute grace window: ${result.eligible}`,
+              `- committed this run: ${result.committed}`,
+              `- still stuck: **${result.stuckCount}**`,
+              `- deferred to next run: ${result.remaining}`,
+              ``,
+              ...sections,
+              ``,
+              `Run: ${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`,
+            ].join('\n');
+
+            // One issue, forever — comment on the open one instead of opening
+            // a duplicate every hour.
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'open', per_page: 100,
+            });
+            const existing = issues.find(i => !i.pull_request && i.title === TITLE);
+
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: existing.number, body,
+              });
+              core.notice(`Updated existing alert issue #${existing.number}`);
+            } else {
+              const created = await github.rest.issues.create({
+                owner, repo, title: TITLE, body, labels: ['bug'],
+              });
+              core.notice(`Opened alert issue #${created.data.number}`);
+            }
+
+            core.setFailed(`${result.stuckCount} pending song(s) still uncommitted — see ${TITLE}`);

@@ -4021,6 +4021,11 @@ mark {
     transform: translateX(-50%) translateY(0);
 }
 
+/* Something worked, but not all the way (e.g. saved live, sync still pending) */
+.auth-toast.warning {
+    background: var(--danger);
+}
+
 /* ============================================
    LIST PICKER STYLES
    ============================================ */

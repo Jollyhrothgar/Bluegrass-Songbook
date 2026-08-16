@@ -402,6 +402,7 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 | `process-tune-request.yml` | Issue labeled `tune-request` | Processes tune requests |
 | `auto-label-issues.yml` | New issues | Automatically labels issues |
 | `cleanup-pending.yml` | Scheduled | Cleans up stale pending songs |
+| `reconcile-pending.yml` | Hourly (`42 * * * *`) + manual | Retries `pending_songs` rows that never reached `works/`, prints the drift count, and opens/updates one alert issue if any stay stuck |
 
 ## Chrome DevTools MCP
 
