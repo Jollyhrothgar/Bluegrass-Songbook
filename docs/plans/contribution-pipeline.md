@@ -182,6 +182,11 @@ corrections leave the PR flow and join the same pipeline (validation moves
 into the writer; `process-tab-pr.yml` retires too). **New rail required by
 opening the gate:** per-user rate limits and size caps on the write path —
 the Deferred rate-limiting item lands here, not later.
+*Deviation, 2026-08-15:* the tab half shipped separately — 2b delivered the
+lead-sheet pipeline and retired the song-issue flow, while `create-tab-pr` /
+`process-tab-pr.yml` stay live until **4c** builds the new-tab UI that
+replaces them, so the only tab submission surface is never left without a
+server.
 
 **2c. Fork-to-arrangement.** The editor's "edit" action on content you
 don't own becomes "create your arrangement" — same work, new version part,

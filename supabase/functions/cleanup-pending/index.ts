@@ -28,11 +28,13 @@ serve(async (req) => {
     // Delete pending songs that have been committed to GitHub — they are in
     // the static index.jsonl now, so the overlay no longer needs them.
     //
-    // Grace period: auto-commit-song flips github_committed BEFORE CI runs,
-    // so a row can be "committed" while its deploy is still building. Any
-    // unrelated deploy landing in that window would reap the row and the song
-    // would vanish from the live overlay until its own deploy finished. Keep
-    // rows younger than 15 minutes regardless of the flag.
+    // Grace period: the flag means "pushed to main", not "deployed". Phase 2b
+    // moved the flip out of auto-commit-song and into process-pending.yml,
+    // where it happens after the push lands — but the deploy that publishes
+    // the work still has to build afterwards. Any unrelated deploy landing in
+    // that window would reap the row and the song would vanish from the live
+    // overlay until its own deploy finished. Keep rows younger than 15
+    // minutes regardless of the flag.
     const graceCutoff = new Date(Date.now() - 15 * 60 * 1000).toISOString()
 
     const { data, error } = await supabase

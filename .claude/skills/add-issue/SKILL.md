@@ -61,9 +61,12 @@ Based on the description, determine:
 | "fix", "bug", "broken", "doesn't work", "error" | `bug` |
 | "add", "new", "feature", "support", "allow" | `feature-request` |
 | "refactor", "cleanup", "debt", "improve code" | `technical-debt` |
-| "song", "chords", "lyrics" (submission) | `song-submission` |
-| "wrong chords", "typo in song" | `song-correction` |
 | "import", "source", "scrape" | `new-data-source` |
+
+Song submissions and corrections are **not** issues any more — they go
+through the in-app editor (`pending_songs` → `pending-commit` dispatch →
+`works/`). An issue about a specific song is a *report*, labelled
+`song-flag` by `create-flag-issue`.
 
 **Milestone** (based on topic):
 | Topic | Milestone |

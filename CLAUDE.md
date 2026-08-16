@@ -397,10 +397,8 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 | Workflow | Trigger | Action |
 |----------|---------|--------|
 | `build.yml` | Push to main, PRs | Runs tests, rebuilds search index, deploys to GitHub Pages only if tests pass |
-| `process-song-submission.yml` | Issue labeled `song-submission` + `approved` | Adds new song |
-| `process-song-correction.yml` | Issue labeled `song-correction` + `approved` | Updates existing song |
+| `process-pending.yml` | `pending-commit` repository_dispatch from `auto-commit-song` / `reconcile-pending` | Writes one `pending_songs` row into `works/` via `works_writer` (create / update / fork-to-arrangement), pushes, then marks the row committed |
 | `process-tune-request.yml` | Issue labeled `tune-request` | Processes tune requests |
-| `auto-label-issues.yml` | New issues | Automatically labels issues |
 | `cleanup-pending.yml` | Scheduled | Cleans up stale pending songs |
 | `reconcile-pending.yml` | Hourly (`42 * * * *`) + manual | Retries `pending_songs` rows that never reached `works/`, prints the drift count, and opens/updates one alert issue if any stay stuck |
 | `sync-community-input.yml` | Hourly (`27 * * * *`) + manual | Syncs trusted-user tag downvotes to `docs/data/tag_overrides.json` (auto-applied at next index build) and exports `genre_suggestions` to `docs/data/user_genre_suggestions.json` (review-only, not auto-applied) |
