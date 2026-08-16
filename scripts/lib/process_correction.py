@@ -19,9 +19,8 @@ import re
 import sys
 from datetime import date
 from pathlib import Path
-import yaml
 
-from curation import is_suppressed, load_deleted_songs, load_registry
+import works_writer
 
 
 def extract_chordpro(issue_body: str) -> str | None:
@@ -149,93 +148,64 @@ def extract_metadata_from_chordpro(content: str) -> dict:
 def update_work(song_id: str, chordpro: str, author: str, issue_number: str, repo_root: Path) -> Path | None:
     """Update or create work in works/ directory.
 
-    Refuses (returns None without writing) when the id is suppressed by the
+    A correction legitimately owns the lead sheet it corrects, so this is
+    the one flow that uses works_writer's update-part mode. Refuses
+    (returns None without writing) when the id is suppressed by the
     curation registry or the soft-deleted list.
     """
-    if is_suppressed(song_id, load_registry(repo_root), load_deleted_songs(repo_root)):
-        print(f"Skipping work update: '{song_id}' is suppressed "
-              f"(curation/registry.yaml or deleted_songs.json); not writing to works/")
-        return None
-
     work_dir = repo_root / 'works' / song_id
     today = date.today().isoformat()
+    meta = extract_metadata_from_chordpro(chordpro)
+    issue_ref = int(issue_number) if issue_number.isdigit() else None
+    provenance_updates = {
+        'corrected_by': f'github:{author}',
+        'corrected_at': today,
+        'correction_issue': issue_ref,
+    }
 
     if work_dir.exists():
-        # Update existing work
-        work_yaml_path = work_dir / 'work.yaml'
-        lead_sheet_path = work_dir / 'lead-sheet.pro'
+        result = works_writer.update_part(
+            repo_root, song_id,
+            match={'type': 'lead-sheet'},
+            file='lead-sheet.pro',
+            content=chordpro + '\n',
+            provenance_updates=provenance_updates,
+            work_updates={
+                'title': meta.get('title'),
+                'artist': meta.get('artist'),
+                'default_key': meta.get('key'),
+            },
+            add_if_missing=works_writer.PartSpec(
+                file='lead-sheet.pro',
+                type='lead-sheet',
+                format='chordpro',
+                default=True,
+                provenance={'source': 'correction'},
+            ),
+        )
+        if result.work_dir:
+            print(f"Updated work: {result.work_dir}")
+        return result.work_dir
 
-        # Update the lead sheet
-        lead_sheet_path.write_text(chordpro + '\n')
-
-        # Update work.yaml with correction info if it exists
-        if work_yaml_path.exists():
-            with open(work_yaml_path, 'r') as f:
-                work_data = yaml.safe_load(f)
-
-            # Update metadata from corrected ChordPro
-            meta = extract_metadata_from_chordpro(chordpro)
-            if meta.get('title'):
-                work_data['title'] = meta['title']
-            if meta.get('artist'):
-                work_data['artist'] = meta['artist']
-            if meta.get('key'):
-                work_data['default_key'] = meta['key']
-
-            # Add correction info to provenance
-            if work_data.get('parts'):
-                for part in work_data['parts']:
-                    if part.get('type') == 'lead-sheet':
-                        if not part.get('provenance'):
-                            part['provenance'] = {}
-                        part['provenance']['corrected_by'] = f'github:{author}'
-                        part['provenance']['corrected_at'] = today
-                        part['provenance']['correction_issue'] = int(issue_number) if issue_number.isdigit() else None
-
-            with open(work_yaml_path, 'w') as f:
-                yaml.dump(work_data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
-
-        print(f"Updated work: {work_dir}")
-        return work_dir
-    else:
-        # Create new work from correction
-        meta = extract_metadata_from_chordpro(chordpro)
-        title = meta.get('title', song_id)
-
-        work_data = {
-            'id': song_id,
-            'title': title,
-        }
-        if meta.get('artist'):
-            work_data['artist'] = meta['artist']
-        if meta.get('composer'):
-            work_data['composers'] = [meta['composer']]
-        if meta.get('key'):
-            work_data['default_key'] = meta['key']
-
-        work_data['tags'] = []
-        work_data['parts'] = [{
-            'type': 'lead-sheet',
-            'format': 'chordpro',
-            'file': 'lead-sheet.pro',
-            'default': True,
-            'provenance': {
-                'source': 'correction',
-                'corrected_by': f'github:{author}',
-                'corrected_at': today,
-                'correction_issue': int(issue_number) if issue_number.isdigit() else None,
-            }
-        }]
-
-        work_dir.mkdir(parents=True, exist_ok=True)
-
-        with open(work_dir / 'work.yaml', 'w') as f:
-            yaml.dump(work_data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
-
-        (work_dir / 'lead-sheet.pro').write_text(chordpro + '\n')
-
-        print(f"Created work: {work_dir}")
-        return work_dir
+    result = works_writer.create_work(
+        repo_root, song_id, meta.get('title', song_id),
+        works_writer.PartSpec(
+            file='lead-sheet.pro',
+            type='lead-sheet',
+            format='chordpro',
+            default=True,
+            content=chordpro + '\n',
+            provenance={'source': 'correction', **provenance_updates},
+        ),
+        artist=meta.get('artist'),
+        composers=[meta['composer']] if meta.get('composer') else None,
+        default_key=meta.get('key'),
+        tags=[],
+        on_collision='fail',
+    )
+    if result.work_dir:
+        print(f"Created work: {result.work_dir}")
+    return result.work_dir
 
 
 def main():
