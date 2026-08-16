@@ -17,6 +17,7 @@ let tabTargetPanel = null;
 let tabSearch = null;
 let tabInstrument = null;
 let tabResults = null;
+let tabNewBtn = null;
 let headerTitle = null;
 let requestCard = null;
 let onUpload = null;
@@ -51,6 +52,7 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
     tabSearch = document.getElementById('picker-tab-search');
     tabInstrument = document.getElementById('picker-tab-instrument');
     tabResults = document.getElementById('picker-tab-results');
+    tabNewBtn = document.getElementById('picker-tab-new');
 
     // Form elements
     reqTitle = document.getElementById('picker-req-title');
@@ -108,7 +110,12 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
         if (!row) return;
         openTabCreator(row.dataset.workId, row.dataset.title);
     });
-    document.getElementById('picker-tab-new')?.addEventListener('click', () => {
+    tabNewBtn?.addEventListener('click', () => {
+        // Belt-and-suspenders alongside renderTabResults hiding the button:
+        // starting a tab with no target while the corpus never loaded is a
+        // silent duplicate-minting window (triage, 2026-08-16), not an
+        // informed "no, really, no song exists" choice.
+        if (allSongs.length === 0) return;
         openTabCreator(null, tabSearch?.value?.trim() || '');
     });
 
@@ -167,13 +174,51 @@ export function searchWorksForTab(query, songs = allSongs, limit = 8) {
     return scored.slice(0, limit).map(s => s.song);
 }
 
+/**
+ * Pure: what the tab-target search box should show for a given query,
+ * match set, and whether the corpus loaded at all. Split out so the three
+ * states — a match, a genuine no-match, and "the corpus never loaded" — are
+ * each one unit-testable branch instead of buried in DOM-building code.
+ *
+ * A load failure must never read as a confident "No song by that name":
+ * that message asserts the corpus was searched and came up empty, which is
+ * false when allSongs never loaded (triage, 2026-08-16 — the Foggy
+ * Mountain "no song by that name" bug had exactly this cause).
+ */
+export function tabResultsState(query, matches, corpusEmpty) {
+    if (corpusEmpty) {
+        return { kind: 'corpus-empty', message: "The songbook isn't loaded — can't search songs right now." };
+    }
+    if (matches.length) {
+        return { kind: 'matches' };
+    }
+    if (query?.trim()) {
+        return { kind: 'no-match', message: 'No song by that name — you can still start a tab without one.' };
+    }
+    return { kind: 'empty-query' };
+}
+
 function renderTabResults() {
     if (!tabResults) return;
-    const matches = searchWorksForTab(tabSearch?.value || '');
-    if (!matches.length) {
-        tabResults.innerHTML = tabSearch?.value?.trim()
-            ? '<div class="picker-tab-empty">No song by that name — you can still start a tab without one.</div>'
-            : '';
+    const query = tabSearch?.value || '';
+    const matches = searchWorksForTab(query);
+    const state = tabResultsState(query, matches, allSongs.length === 0);
+
+    // Offering "Start a tab without a song" while the corpus is empty
+    // presents an unknown state as an informed choice — it can silently
+    // mint a duplicate work the moment the index actually loads.
+    tabNewBtn?.classList.toggle('hidden', state.kind === 'corpus-empty');
+
+    if (state.kind === 'corpus-empty') {
+        tabResults.innerHTML = `<div class="picker-tab-empty picker-tab-error">${escapeHtml(state.message)}</div>`;
+        return;
+    }
+    if (state.kind === 'no-match') {
+        tabResults.innerHTML = `<div class="picker-tab-empty">${escapeHtml(state.message)}</div>`;
+        return;
+    }
+    if (state.kind === 'empty-query') {
+        tabResults.innerHTML = '';
         return;
     }
     tabResults.innerHTML = matches.map(song => `

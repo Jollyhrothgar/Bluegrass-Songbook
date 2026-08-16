@@ -30,7 +30,7 @@
 //                       it next pass) or "Reject" (delete the pending row).
 
 import { escapeHtml } from './utils.js';
-import { searchWorksForTab } from './add-song-picker.js';
+import { searchWorksForTab, tabResultsState } from './add-song-picker.js';
 
 const PANEL_ID = 'review-queue-panel';
 
@@ -458,7 +458,12 @@ export function showMergeRequestDialog(song, { songs = [], search = searchWorksF
             const query = searchInput.value.trim();
             if (!query) { resultsEl.innerHTML = ''; return; }
             const matches = search(query, candidates, 8);
-            resultsEl.innerHTML = matches.length
+            // Same corpus-loaded-vs-empty distinction as the tab picker's
+            // renderTabResults (reused via tabResultsState, not rebuilt):
+            // "No matching song" must not read as a searched-and-confirmed
+            // result when the corpus never loaded in the first place.
+            const state = tabResultsState(query, matches, (songs || []).length === 0);
+            resultsEl.innerHTML = state.kind === 'matches'
                 ? matches.map(s => `
                     <li>
                         <button type="button" class="merge-target-result"
@@ -469,7 +474,9 @@ export function showMergeRequestDialog(song, { songs = [], search = searchWorksF
                         </button>
                     </li>
                 `).join('')
-                : '<li class="merge-target-empty">No matching song.</li>';
+                : `<li class="merge-target-empty${state.kind === 'corpus-empty' ? ' merge-target-error' : ''}">${
+                    state.kind === 'corpus-empty' ? escapeHtml(state.message) : 'No matching song.'
+                }</li>`;
         };
 
         const selectTarget = (targetId, targetTitle) => {

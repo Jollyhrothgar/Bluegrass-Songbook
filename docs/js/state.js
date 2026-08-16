@@ -108,6 +108,17 @@ export function setAllSongs(songs) {
     notifyChange('allSongs');
 }
 
+// True when loadIndex()'s fetch/parse of data/index.jsonl threw, leaving
+// allSongs empty. Consumers (search, add-song picker, review-queue merge
+// dialog) read this to tell "corpus failed to load" apart from a genuine
+// no-match, and the shell banner reads it to show/hide the global notice.
+export let corpusLoadFailed = false;
+
+export function setCorpusLoadFailed(value) {
+    corpusLoadFailed = value;
+    notifyChange('corpusLoadFailed');
+}
+
 export function setSongGroups(groups) {
     songGroups = groups;
 }
@@ -410,6 +421,7 @@ const stateGetters = {
     songGroups: () => songGroups,
     currentSong: () => currentSong,
     currentChordpro: () => currentChordpro,
+    corpusLoadFailed: () => corpusLoadFailed,
 
     // Display options
     compactMode: () => compactMode,
@@ -477,6 +489,7 @@ const stateSetters = {
     songGroups: setSongGroups,
     currentSong: setCurrentSong,
     currentChordpro: setCurrentChordpro,
+    corpusLoadFailed: setCorpusLoadFailed,
 
     // Display options
     compactMode: setCompactMode,

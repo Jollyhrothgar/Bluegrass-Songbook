@@ -8,7 +8,8 @@ import {
     getState,
     // Test with a few concrete state values
     currentView, setCurrentView,
-    currentSearchQuery, setCurrentSearchQuery
+    currentSearchQuery, setCurrentSearchQuery,
+    corpusLoadFailed, setCorpusLoadFailed
 } from '../state.js';
 
 // Helper to wait for requestAnimationFrame callbacks
@@ -162,5 +163,42 @@ describe('State Values', () => {
 
     it('currentSearchQuery defaults to empty string', () => {
         expect(getState('currentSearchQuery')).toBe('');
+    });
+});
+
+describe('corpusLoadFailed', () => {
+    afterEach(async () => {
+        setCorpusLoadFailed(false);
+        await flushRAF();
+    });
+
+    it('defaults to false', () => {
+        expect(corpusLoadFailed).toBe(false);
+        expect(getState('corpusLoadFailed')).toBe(false);
+    });
+
+    it('setCorpusLoadFailed(true) flips the flag and notifies subscribers', async () => {
+        const callback = vi.fn();
+        subscribe('corpusLoadFailed', callback);
+
+        setCorpusLoadFailed(true);
+        await flushRAF();
+
+        expect(corpusLoadFailed).toBe(true);
+        expect(getState('corpusLoadFailed')).toBe(true);
+        expect(callback).toHaveBeenCalledWith(true, 'corpusLoadFailed');
+    });
+
+    it('setCorpusLoadFailed(false) clears it — the retry-succeeded path', async () => {
+        setCorpusLoadFailed(true);
+        await flushRAF();
+
+        const callback = vi.fn();
+        subscribe('corpusLoadFailed', callback);
+        setCorpusLoadFailed(false);
+        await flushRAF();
+
+        expect(corpusLoadFailed).toBe(false);
+        expect(callback).toHaveBeenCalledWith(false, 'corpusLoadFailed');
     });
 });

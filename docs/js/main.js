@@ -28,6 +28,7 @@ import {
     setListContext,
     setWorkRedirects, resolveWorkId,
     setBountyIndex,
+    setCorpusLoadFailed,
     // Reactive state system
     subscribe, setCurrentView, currentView,
     dungeonMode, setDungeonMode
@@ -49,7 +50,7 @@ import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, 
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
-import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill } from './shell.js';
+import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill, setBanner } from './shell.js';
 import { buildListChordPro, buildListText, buildListZipFiles, listFileBase } from './list-export.js';
 import { createZip } from './zip.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
@@ -426,6 +427,13 @@ function initViewSubscription() {
                 // showView('search') is a no-op when the view is unchanged.
                 // The entry points call browseAllSongs() themselves for that
                 // reason; this branch just covers other transitions.
+                //
+                // allSongs.length also stays 0 when loadIndex() has
+                // definitively failed rather than merely being in flight —
+                // that permanent case is surfaced separately via
+                // corpusLoadFailed (state.js) and the shell banner it drives,
+                // so this guard doesn't need to distinguish the two: staying
+                // silent is correct either way.
                 if (!searchInput?.value?.trim() && resultsDiv && allSongs.length) {
                     showPopularSongs();
                 }
@@ -1232,7 +1240,16 @@ async function fetchSupabaseOverlays() {
     }
 }
 
+// Guards against a Retry click (or any other caller) overlapping an
+// in-flight loadIndex() — the function is otherwise re-entrant (it only
+// mutates state on success paths), so this just avoids a wasted duplicate
+// fetch rather than fixing a correctness bug.
+let indexLoadInFlight = false;
+
 async function loadIndex() {
+    if (indexLoadInFlight) return;
+    indexLoadInFlight = true;
+
     if (resultsDiv) {
         resultsDiv.innerHTML = '<div class="loading">Loading songbook...</div>';
     }
@@ -1260,6 +1277,11 @@ async function loadIndex() {
         await fetchSupabaseOverlays();
 
         const songs = rebuildCorpus();
+
+        // A retry that succeeds clears both the flag and the banner a
+        // previous failure left up.
+        setCorpusLoadFailed(false);
+        setBanner(null);
 
         if (resultsDiv) {
             resultsDiv.innerHTML = '';
@@ -1289,6 +1311,17 @@ async function loadIndex() {
         if (resultsDiv) {
             resultsDiv.innerHTML = `<div class="loading">Error loading songs: ${error.message}</div>`;
         }
+        // Loud and global: a failed corpus load isn't just this view's
+        // problem — every consumer of allSongs (search, add-song picker,
+        // review-queue merge dialog) needs to know the corpus is empty
+        // because the fetch failed, not because there's nothing to find.
+        setCorpusLoadFailed(true);
+        setBanner(
+            "The songbook index failed to load — search and song lists will be empty.",
+            { onRetry: () => loadIndex() }
+        );
+    } finally {
+        indexLoadInFlight = false;
     }
 }
 

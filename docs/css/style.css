@@ -3508,6 +3508,11 @@ mark {
     font-size: 0.85rem;
 }
 
+/* The songbook failed to load — distinct from a genuine no-match */
+.picker-tab-empty.picker-tab-error {
+    color: var(--danger);
+}
+
 /* Bounty CTA button reset (was <a>, now <button>) */
 .bounty-cta-btn {
     border: none;
@@ -7036,6 +7041,11 @@ body.dungeon-mode #search-stats {
     font-size: 0.85rem;
 }
 
+/* The songbook failed to load — distinct from a genuine no-match */
+.merge-target-empty.merge-target-error {
+    color: var(--danger);
+}
+
 .merge-target-preview {
     font-size: 0.85rem;
     color: var(--text-secondary);
@@ -9588,6 +9598,60 @@ body.dungeon-mode #search-stats {
     border-bottom: 1px solid var(--border);
     transition: transform 0.25s ease;
 }
+
+/* Global, dismissible notice bar below the top band — currently used for
+   "the songbook index failed to load". Sticky under the topbar so it stays
+   visible while the page (which may itself be showing an empty/error state)
+   scrolls underneath it. */
+.app-banner {
+    position: sticky;
+    top: 48px;
+    z-index: 899;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--danger);
+    color: #fff;
+    font-size: var(--font-sm);
+}
+
+.app-banner.hidden { display: none; }
+
+.app-banner-text { flex: 1; min-width: 0; }
+
+.app-banner-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-shrink: 0;
+}
+
+.app-banner-retry {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius-sm);
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+    font-size: var(--font-sm);
+    cursor: pointer;
+}
+
+.app-banner-retry:hover { background: rgba(255, 255, 255, 0.35); }
+
+.app-banner-dismiss {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: var(--font-md);
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 0.2rem;
+    opacity: 0.85;
+}
+
+.app-banner-dismiss:hover { opacity: 1; }
 
 .topbar-left {
     display: flex;

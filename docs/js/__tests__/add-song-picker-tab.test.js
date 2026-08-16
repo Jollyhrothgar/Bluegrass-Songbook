@@ -9,7 +9,7 @@ vi.mock('../otf-editor/create-tab-entry.js', () => ({
     launchTabCreator: (...args) => launchTabCreator(...args),
 }));
 
-const { initAddSongPicker, openAddSongPicker, searchWorksForTab } =
+const { initAddSongPicker, openAddSongPicker, searchWorksForTab, tabResultsState } =
     await import('../add-song-picker.js');
 const { setAllSongs } = await import('../state.js');
 
@@ -94,6 +94,18 @@ describe('picker → tablature', () => {
             .toBe(true);
     });
 
+    it('shows a genuine no-match message when the corpus is loaded but nothing matches', () => {
+        openAddSongPicker();
+        clickTabCard();
+        const search = document.getElementById('picker-tab-search');
+        search.value = 'Brand New Tune';
+        search.dispatchEvent(new Event('input'));
+
+        const results = document.getElementById('picker-tab-results');
+        expect(results.textContent).toMatch(/No song by that name/);
+        expect(document.getElementById('picker-tab-new').classList.contains('hidden')).toBe(false);
+    });
+
     it('can start a tab with no song behind it', () => {
         openAddSongPicker();
         clickTabCard();
@@ -125,5 +137,82 @@ describe('searchWorksForTab', () => {
     it('tolerates near-misses the way the dedup check does', () => {
         expect(searchWorksForTab('salt creek', SONGS).map(s => s.id)[0]).toBe('salt-creek');
         expect(searchWorksForTab('the gold rush', SONGS).map(s => s.id)).toContain('gold-rush');
+    });
+});
+
+// Triage (2026-08-16): "Tab a Song" told a user searching for Foggy
+// Mountain "No song by that name" when the real cause was index.jsonl
+// failing to fetch — allSongs stayed [] and the picker read that as a
+// confident no-match instead of an unloaded corpus. These three states
+// (a match, a genuine no-match, and a never-loaded corpus) must render
+// three different things.
+describe('tabResultsState (pure)', () => {
+    it('a match wins regardless of corpus size', () => {
+        expect(tabResultsState('salt', [{ id: 'salt-creek' }], false).kind).toBe('matches');
+    });
+
+    it('a genuine no-match: query present, no matches, corpus loaded', () => {
+        const state = tabResultsState('some unknown tune', [], false);
+        expect(state.kind).toBe('no-match');
+        expect(state.message).toMatch(/No song by that name/);
+    });
+
+    it('empty query with a loaded corpus shows neither message', () => {
+        expect(tabResultsState('', [], false).kind).toBe('empty-query');
+        expect(tabResultsState('   ', [], false).kind).toBe('empty-query');
+    });
+
+    it('an empty corpus always reports corpus-empty, even with no query', () => {
+        const withQuery = tabResultsState('anything', [], true);
+        expect(withQuery.kind).toBe('corpus-empty');
+        expect(withQuery.message).toMatch(/isn't loaded/);
+
+        const noQuery = tabResultsState('', [], true);
+        expect(noQuery.kind).toBe('corpus-empty');
+    });
+
+    it('an empty corpus wins even if matches were somehow passed in', () => {
+        // Defensive: corpusEmpty is the authoritative signal, not matches.length.
+        expect(tabResultsState('salt', [{ id: 'salt-creek' }], true).kind).toBe('corpus-empty');
+    });
+});
+
+describe('picker → tablature: empty-corpus honesty', () => {
+    beforeEach(() => {
+        launchTabCreator.mockClear();
+        setAllSongs([]);
+        mountPicker();
+        initAddSongPicker({ onUpload: () => {}, onChordPro: () => {} });
+    });
+
+    it('shows the corpus-not-loaded message instead of "no song by that name"', () => {
+        openAddSongPicker();
+        clickTabCard();
+        const search = document.getElementById('picker-tab-search');
+        search.value = 'foggy mountain';
+        search.dispatchEvent(new Event('input'));
+
+        const results = document.getElementById('picker-tab-results');
+        expect(results.textContent).toMatch(/isn't loaded/);
+        expect(results.textContent).not.toMatch(/No song by that name/);
+    });
+
+    it('hides "Start a tab without a song" while the corpus is empty', () => {
+        openAddSongPicker();
+        clickTabCard();
+        const search = document.getElementById('picker-tab-search');
+        search.value = 'foggy mountain';
+        search.dispatchEvent(new Event('input'));
+
+        expect(document.getElementById('picker-tab-new').classList.contains('hidden')).toBe(true);
+    });
+
+    it('refuses to start a tab with no target even if the hidden button is clicked anyway', () => {
+        openAddSongPicker();
+        clickTabCard();
+        const newBtn = document.getElementById('picker-tab-new');
+        newBtn.classList.remove('hidden'); // simulate a stale/bypassed DOM state
+        newBtn.click();
+        expect(launchTabCreator).not.toHaveBeenCalled();
     });
 });

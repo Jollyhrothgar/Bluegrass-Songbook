@@ -351,6 +351,37 @@ describe('merge request dialog', () => {
         document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
         await expect(pending).resolves.toBeNull();
     });
+
+    // Triage (2026-08-16): "No matching song" reads as a searched-and-
+    // confirmed result. When the corpus never loaded (main.js passes
+    // {songs: allSongs} straight through, and allSongs stays [] on a
+    // failed loadIndex), that message is a lie — reuses the same
+    // tabResultsState the add-song picker uses, not a second message.
+    it('distinguishes an empty corpus from a genuine no-match', () => {
+        const search = vi.fn(() => []);
+        showMergeRequestDialog(song, { songs: [], search });
+
+        const input = document.getElementById('merge-target-search');
+        input.value = 'how long';
+        input.dispatchEvent(new Event('input'));
+
+        const empty = document.querySelector('.merge-target-empty');
+        expect(empty.textContent).toMatch(/isn't loaded/);
+        expect(empty.classList.contains('merge-target-error')).toBe(true);
+    });
+
+    it('still shows a plain "no matching song" when the corpus loaded but nothing matched', () => {
+        const search = vi.fn(() => []);
+        showMergeRequestDialog(song, { songs, search });
+
+        const input = document.getElementById('merge-target-search');
+        input.value = 'zzz no such song';
+        input.dispatchEvent(new Event('input'));
+
+        const empty = document.querySelector('.merge-target-empty');
+        expect(empty.textContent).toBe('No matching song.');
+        expect(empty.classList.contains('merge-target-error')).toBe(false);
+    });
 });
 
 describe('summary and ordering', () => {
