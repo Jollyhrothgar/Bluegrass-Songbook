@@ -15,6 +15,8 @@ import {
     songGroups, setSongGroups,
     setHistoryInitialized,
     historyInitialized,
+    setBootRouteClaimed,
+    canRouteBootUrl,
     loadViewPrefs,
     userLists,
     compactMode,
@@ -187,7 +189,13 @@ function toggleTheme() {
 // ============================================
 
 function pushHistoryState(view, data = {}, replace = false) {
-    if (!historyInitialized) return;
+    // Before the boot tail runs, every caller here is a user action (the
+    // module wiring in init() only stores this function; nothing calls it on
+    // the way in). Such a navigation used to be dropped on the floor, which
+    // left the URL showing the boot hash and let loadIndex's tail route back
+    // to it a second later. Record it like any other navigation and claim
+    // the boot route so the tail leaves the view alone.
+    if (!historyInitialized) setBootRouteClaimed(true);
 
     let hash = '';
     const state = { view, ...data };
@@ -1291,13 +1299,21 @@ async function loadIndex() {
         // Render collection cards on landing page
         renderCollectionCards();
 
-        // Enable browser history navigation
+        // Boot is over: history is under normal control from here on, and
+        // pushHistoryState stops claiming the boot route. Set before the
+        // routing below so handleDeepLink's own replace-pushes don't claim it.
         setHistoryInitialized(true);
 
-        // Handle deep links or show landing page by default
-        if (!handleDeepLink()) {
-            showView('home');
-            history.replaceState({ view: 'home' }, '', window.location.pathname);
+        // Route the URL the page loaded with — a deep link, or the landing
+        // page. Skipped entirely if the user already navigated while the
+        // corpus was loading: that navigation owns the view, and re-running
+        // the boot URL here would steal it back (the hash still reads as the
+        // boot hash for nav links that push state without a hashchange).
+        if (canRouteBootUrl()) {
+            if (!handleDeepLink()) {
+                showView('home');
+                history.replaceState({ view: 'home' }, '', window.location.pathname);
+            }
         }
 
         // Fetch bounties in background (non-blocking, not needed for initial render)

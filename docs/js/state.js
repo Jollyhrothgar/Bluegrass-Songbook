@@ -314,9 +314,29 @@ export function selectAllSongs(songIds) { selectedSongIds = new Set(songIds); no
 // HISTORY STATE
 // ============================================
 
+// False until the boot sequence has finished loading the corpus and routed
+// the URL the page was opened with. Everything after that point is ordinary
+// navigation.
 export let historyInitialized = false;
 
 export function setHistoryInitialized(value) { historyInitialized = value; }
+
+// The boot sequence ends by routing the URL the page loaded with (a deep
+// link, or the home view). That tail fires a full network round-trip after
+// the page is already interactive, so a user on a slow connection can
+// navigate somewhere else first — and the tail would then yank them back to
+// the boot URL.
+//
+// Any navigation pushed during that window claims the boot route: the user
+// has said where they want to be, so the tail stands down and leaves the
+// view alone. A page that boots untouched never claims it, so genuine deep
+// links still land.
+export let bootRouteClaimed = false;
+
+export function setBootRouteClaimed(value) { bootRouteClaimed = value; }
+
+/** True while the boot tail is still allowed to route the URL it loaded with. */
+export function canRouteBootUrl() { return !bootRouteClaimed; }
 
 // ============================================
 // FULLSCREEN / MUSICIAN MODE
@@ -467,6 +487,7 @@ const stateGetters = {
 
     // History
     historyInitialized: () => historyInitialized,
+    bootRouteClaimed: () => bootRouteClaimed,
 
     // Fullscreen/musician mode
     listContext: () => listContext,
@@ -535,6 +556,7 @@ const stateSetters = {
 
     // History
     historyInitialized: setHistoryInitialized,
+    bootRouteClaimed: setBootRouteClaimed,
 
     // Fullscreen/musician mode
     listContext: setListContext,
