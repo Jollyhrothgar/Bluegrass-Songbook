@@ -27,8 +27,10 @@ Serverless functions that run on Supabase Edge (Deno runtime).
   `pending-commit` repository_dispatch. **No edge function authors work.yaml
   any more** — `.github/workflows/process-pending.yml` runs
   `scripts/lib/works_writer.py`, the repo's one writer.
-- `commit-song.ts` — raw Contents-API plumbing plus the document-attachment
-  path (deleted with the doc-upload feature in phase 2d).
+- `commit-song.ts` — the `PendingSong` shape, one Contents-API read used by
+  classification, and `unretryableReason`. Phase 2d deleted the
+  document-attachment path (and the write helpers only it used) along with
+  the doc-upload feature; nothing in here writes to GitHub any more.
 
 `auto-commit-song` (live path) and `reconcile-pending` (hourly retry) both
 import `pending-dispatch.ts`, so a retry classifies exactly the way the

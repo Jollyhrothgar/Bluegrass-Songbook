@@ -57,7 +57,6 @@ import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
 import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
-import { initDocUpload, resetDocUpload, prefillDocUpload } from './doc-upload.js';
 import {
     fetchJsonl, mergeCorpus, markArchived, countDistinctTitles, whenIdle,
 } from './corpus.js';
@@ -120,7 +119,6 @@ const userName = document.getElementById('user-name');
 
 // Editor elements
 const editorPanel = document.getElementById('editor-panel');
-const uploadPanel = document.getElementById('upload-panel');
 const editorBackBtn = document.getElementById('editor-back-btn');
 const editorTitle = document.getElementById('editor-title');
 const editorArtist = document.getElementById('editor-artist');
@@ -204,9 +202,6 @@ function pushHistoryState(view, data = {}, replace = false) {
             break;
         case 'add-song':
             hash = '#add';
-            break;
-        case 'doc-upload':
-            hash = '#upload';
             break;
         case 'bounty':
             hash = '#bounty';
@@ -311,9 +306,6 @@ function handleHistoryNavigation(state) {
             prepareAddSongView();
             showView('add-song');
             break;
-        case 'doc-upload':
-            showView('doc-upload');
-            break;
         case 'bounty':
             showView('bounty');
             break;
@@ -375,11 +367,6 @@ function initViewSubscription() {
             exitEditMode();
         }
 
-        // Reset upload form when navigating away
-        if (view !== 'doc-upload') {
-            resetDocUpload();
-        }
-
         // Top band: the song page declares its own chrome (back/title/
         // actions); every other view gets the plain nav band. The bottom
         // band belongs to the song page only.
@@ -387,7 +374,7 @@ function initViewSubscription() {
             updateWorkTopBar();
         } else {
             const shellNavByView = {
-                'search': 'search', 'add-song': 'add', 'doc-upload': 'add',
+                'search': 'search', 'add-song': 'add',
                 'favorites': 'favorites', 'list': 'lists', 'song-lists': 'lists',
             };
             setTopBar({ navActive: shellNavByView[view] || null });
@@ -409,7 +396,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 break;
             case 'search':
@@ -417,7 +403,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 // An empty box means BROWSE THE WHOLE CANON, not "show a
                 // prompt": the home page's "Search All Songs" card advertises
@@ -442,15 +427,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.remove('hidden');
-                uploadPanel?.classList.add('hidden');
-                songListsView?.classList.add('hidden');
-                break;
-            case 'doc-upload':
-                searchContainer?.classList.add('hidden');
-                resultsDiv?.classList.add('hidden');
-                songView?.classList.add('hidden');
-                editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.remove('hidden');
                 songListsView?.classList.add('hidden');
                 break;
             case 'favorites':
@@ -458,7 +434,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 showFavorites();
                 break;
@@ -467,7 +442,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.remove('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 // Show delete button for admins
                 updateDeleteButtonVisibility();
@@ -477,7 +451,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 break;
             case 'bounty':
@@ -485,7 +458,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderBountyView(resultsDiv);
                 break;
@@ -494,7 +466,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderMySubmissionsView(resultsDiv);
                 break;
@@ -503,7 +474,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.remove('hidden');
                 // renderManageListsView is called by showSongListsView
                 break;
@@ -772,11 +742,6 @@ function handleDeepLink() {
                 showView('search');
             }
         })();
-        return true;
-    } else if (hash === '#upload') {
-        trackDeepLink('upload', hash);
-        showView('doc-upload');
-        pushHistoryState('doc-upload', {}, true);
         return true;
     } else if (hash === '#bounty') {
         trackDeepLink('bounty', hash);
@@ -2382,20 +2347,12 @@ function init() {
     // Initialize super-user request module
     initSuperUserRequest();
 
-    // Route to the photo/document upload view (login required).
-    // Shared by the picker's Upload card and the editor's empty-state link.
-    const goToDocUpload = (ctx) => {
-        if (!requireLogin('upload songs')) return;
-        if (ctx?.targetSlug) prefillDocUpload(ctx);
-        showView('doc-upload');
-        pushHistoryState('doc-upload');
-    };
-
-    // Initialize add-song picker and doc upload.
-    // The picker is the single Add Song entry (top-band nav item, contribute/
-    // request flows); the #add deep link still goes straight to the editor.
+    // Initialize the add-song picker. It is the single Add Song entry
+    // (top-band nav item, contribute/request flows); the #add deep link still
+    // goes straight to the editor. Binary document upload was removed in
+    // phase 2d — the intake was a dead end, so the picker offers text or a
+    // song request only.
     initAddSongPicker({
-        onUpload: goToDocUpload,
         onChordPro: (ctx) => {
             if (ctx?.targetSlug) {
                 enterEditMode({ id: ctx.targetSlug, title: ctx.title, artist: ctx.artist, key: ctx.key, content: '' });
@@ -2403,13 +2360,6 @@ function init() {
                 navigateTo('add-song');
             }
         },
-    });
-    initDocUpload();
-
-    // Upload panel back button
-    document.getElementById('upload-back-btn')?.addEventListener('click', () => {
-        resetDocUpload();
-        navigateTo('search');
     });
 
     // Initialize lists module (handles favorites as a special list)
@@ -2503,7 +2453,6 @@ function init() {
         editorKeySelect,
         metadataSummary,
         metadataFields,
-        onUploadRequest: () => goToDocUpload(),
         onSongRequest: () => openAddSongPicker({ mode: 'request' }),
         editorPreviewContainer,
         editorUndoBtn,
