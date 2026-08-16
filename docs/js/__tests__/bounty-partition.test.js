@@ -98,12 +98,14 @@ describe('partitionWanted', () => {
         expect(missing).toHaveLength(2);
     });
 
-    it('ignores placeholder works when matching', () => {
+    it('routes a placeholder match to the Started section, not Missing', () => {
+        // A placeholder is still a bounty, but "Started — Needs Content"
+        // already asks for it. Listing it in both places is the double-count.
         const wanted = [{ title: 'Cripple Creek', type: 'Instrumental' }];
-        // A placeholder is a "started, needs content" stub — itself a bounty,
-        // so it must never retire the wanted entry it shares a title with.
         const withPlaceholder = [...CORPUS, { id: 'cripple-creek', title: 'Cripple Creek', status: 'placeholder' }];
-        const { missing } = partitionWanted(wanted, withPlaceholder, VERDICTS);
-        expect(titles(missing)).toEqual(['Cripple Creek']);
+        const { missing, stats } = partitionWanted(wanted, withPlaceholder, VERDICTS);
+        expect(missing).toEqual([]);
+        expect(stats.started).toBe(1);
+        expect(stats.liveMatch).toBe(0);
     });
 });

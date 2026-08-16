@@ -1070,31 +1070,6 @@
    ]
   },
   {
-   "catalogue_id": "big-sciota",
-   "title": "Big Sciota",
-   "type": "Instrumental",
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 7,
-   "core": false,
-   "artists": [
-    "Bob Bovee",
-    "Bryan Sutton",
-    "Jerry Douglas",
-    "Leftover Salmon",
-    "Old Crow Medicine Show",
-    "The String Cheese Incident",
-    "Watkins Family Hour"
-   ],
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
    "catalogue_id": "big-sciota-c-to-em-version",
    "title": "Big Sciota C to Em version",
    "type": "Vocal",
@@ -1198,72 +1173,6 @@
     "Joyce Andersen",
     "Michael Martin Murphey",
     "Norman Blake"
-   ]
-  },
-  {
-   "catalogue_id": "billy-in-the-low-ground",
-   "title": "Billy in the Low Ground",
-   "type": "Vocal",
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 17,
-   "core": true,
-   "artists": [
-    "Big Medicine",
-    "Cathy Barton",
-    "Clarence White",
-    "Doc Watson",
-    "Fiddlin’ Doc Roberts",
-    "Fiddlin’ John Carson",
-    "Larry Sparks",
-    "Larry Sparks and the Lonesome Ramblers",
-    "Lester Flatt & Earl Scruggs",
-    "Nitty Gritty Dirt Band",
-    "Red Cravens",
-    "Reno and Smiley"
-   ],
-   "title_variants": [
-    "BIlly In the Low Ground (Live)",
-    "Billy In The Low Ground",
-    "Billy In The Low Ground (C)",
-    "Billy In The Low Ground (Slow) (C)",
-    "Billy in the Low Ground (live)"
-   ]
-  },
-  {
-   "catalogue_id": "billy-in-the-lowground",
-   "title": "Billy in the Lowground",
-   "type": "Instrumental",
-   "sources": [
-    "mb-coverage",
-    "strum-machine"
-   ],
-   "coverage": 35,
-   "core": true,
-   "artists": [
-    "Benton Flippen",
-    "Billy Strings",
-    "Bryan Sutton",
-    "Carlton Rawlings",
-    "Charlie Moore",
-    "Chris Thile",
-    "Clarence White",
-    "Clark Kessinger",
-    "Corbett Stamper",
-    "David Grisman",
-    "David Johnson",
-    "Doc Watson"
-   ],
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ],
-   "title_variants": [
-    "Billy In The Lowground",
-    "Billy In the Lowground"
    ]
   },
   {

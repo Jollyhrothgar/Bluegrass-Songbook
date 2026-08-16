@@ -50,11 +50,26 @@ ROW_FIELDS = ('catalogue_id', 'title', 'type', 'sources', 'coverage', 'core',
               'title_variants')
 
 
+def is_empty_stub(row: dict) -> bool:
+    """A placeholder work carrying nothing playable.
+
+    `status: placeholder` only means "no lead sheet", not "no content" — and
+    the distinction matters. `big-sciota` is a placeholder with 7 tablature
+    parts and `billy-in-the-lowground` has 8; skipping every placeholder put
+    both on the board as missing songs we plainly have. Only a stub with no
+    chords, no tabs and no notation is still a bounty.
+    """
+    if row.get('status') != 'placeholder':
+        return False
+    return not (row.get('chord_count') or row.get('tablature_parts')
+                or row.get('has_abc') or row.get('has_content'))
+
+
 def corpus_keys(data_dir: Path):
     """Every title the songbook holds, in both matching forms.
 
-    Placeholders are excluded on purpose: a "started, needs content" stub is
-    itself a bounty, so letting one retire a wanted entry would hide the ask.
+    Empty placeholder stubs are excluded: they are themselves bounties, so
+    letting one retire a wanted entry would hide the ask.
     """
     exact, despaced = set(), set()
     for name in ('index.jsonl', 'archive.jsonl'):
@@ -66,7 +81,7 @@ def corpus_keys(data_dir: Path):
                 if not line.strip():
                     continue
                 row = json.loads(line)
-                if row.get('status') == 'placeholder':
+                if is_empty_stub(row):
                     continue
                 title = row.get('title', '')
                 if normalize(title):

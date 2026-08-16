@@ -113,10 +113,10 @@ export function partitionWanted(wanted, songs, verdicts = decisions) {
     const covered = verdicts.covered || {};
     const junk = new Set(verdicts.not_a_song || []);
     const types = verdicts.types || {};
-    const byTitle = buildTitleIndex(songs.filter(s => !isPlaceholder(s)));
+    const byTitle = buildTitleIndex(songs);
 
     const missing = [];
-    const stats = { adjudicated: 0, junk: 0, lyricsOnly: 0, liveMatch: 0 };
+    const stats = { adjudicated: 0, junk: 0, lyricsOnly: 0, liveMatch: 0, started: 0 };
 
     for (const entry of wanted) {
         const title = entry.title;
@@ -133,6 +133,13 @@ export function partitionWanted(wanted, songs, verdicts = decisions) {
         // Self-healing pass: only the tiers that are safe without a human.
         const hits = byTitle.get(normalizeTitle(title)) || [];
         if (hits.length) {
+            // A placeholder is still a bounty, but the "Started — Needs
+            // Content" section below already asks for it. Listing the same
+            // song in both places is the double-count this page exists to fix.
+            if (hits.every(isPlaceholder)) {
+                stats.started++;
+                continue;
+            }
             stats.liveMatch++;
             if (!hits.some(s => s.chord_count > 0)) stats.lyricsOnly++;
             continue;
