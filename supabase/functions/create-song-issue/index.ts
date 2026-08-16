@@ -1,7 +1,15 @@
 // Supabase Edge Function to create GitHub issues for song submissions/corrections
-// Allows anonymous users to submit songs without a GitHub account
+//
+// Login required (Phase 2a): a song submission or correction is something the
+// submitter will later go looking for, so it needs an identity. That identity
+// is derived SERVER-SIDE from the verified session — there is no
+// client-supplied `submittedBy` and no anonymous fallback.
+//
+// Anonymous users still get report/request: create-flag-issue and the
+// anonymous branch of create-song-request.
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
+import { attributionFor, callerIp, rateLimited, requireUser } from "../_shared/identity.ts"
 
 const GITHUB_REPO = "Jollyhrothgar/Bluegrass-Songbook"
 
@@ -17,7 +25,6 @@ interface SongSubmissionRequest {
   songId?: string  // Required for corrections
   chordpro: string
   comment?: string  // Required for corrections
-  submittedBy?: string  // Attribution: logged-in username or "Rando Calrissian"
 }
 
 serve(async (req) => {
@@ -32,9 +39,21 @@ serve(async (req) => {
       throw new Error('GITHUB_PAT not configured')
     }
 
+    // Identity from the verified session — never from the request body
+    const { user, admin, response: authFailure } = await requireUser(req, corsHeaders)
+    if (authFailure) return authFailure
+    const attribution = attributionFor(user)
+
+    // Per-user throttle (the IP is only a tiebreaker for shared NATs)
+    if (rateLimited(`song-issue:${user!.id}`, { max: 20 })) {
+      return new Response(
+        JSON.stringify({ error: 'Too many submissions — try again later' }),
+        { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+
     const body: SongSubmissionRequest = await req.json()
-    const { type, title, artist, songId, chordpro, comment, submittedBy } = body
-    const attribution = submittedBy || 'Rando Calrissian'
+    const { type, title, artist, songId, chordpro, comment } = body
 
     // Validate required fields
     if (!title || !chordpro) {
@@ -121,6 +140,16 @@ ${chordpro}
     }
 
     const issue = await response.json()
+
+    // Log the write so a contributor surface can find it later (Phase 4a)
+    await admin!.from('submission_log').insert({
+      user_id: user!.id,
+      action: type === 'correction' ? 'song_correction' : 'song_submit',
+      target_id: songId || null,
+      ip_address: callerIp(req) === 'unknown' ? null : callerIp(req),
+      user_agent: req.headers.get('user-agent') || null,
+      metadata: { title, issue_number: issue.number },
+    })
 
     return new Response(
       JSON.stringify({
