@@ -375,7 +375,10 @@ test.describe('List Sharing', () => {
         await expect(page.locator('#list-share-btn')).toBeVisible();
     });
 
-    test('print button visible when viewing list', async ({ page }) => {
+    // The bare Print button was replaced by the list Export pill (Print /
+    // Download .pro / Download .txt) — this test still asked for the removed
+    // #list-print-btn and had been failing ever since.
+    test('export pill visible when viewing list', async ({ page }) => {
         await page.goto('/');
         await page.evaluate(() => {
             localStorage.clear();
@@ -390,6 +393,6 @@ test.describe('List Sharing', () => {
         await navClick(page, 'favorites');
         await page.waitForTimeout(500);
 
-        await expect(page.locator('#list-print-btn')).toBeVisible();
+        await expect(page.locator('#list-export-pill')).toBeVisible();
     });
 });
