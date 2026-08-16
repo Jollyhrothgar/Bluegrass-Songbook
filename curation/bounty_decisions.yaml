@@ -21,6 +21,10 @@
 #   distinct     — scores close, different song; keep on the board
 #   uncertain    — needs someone who knows which tune the source meant
 #   not_a_song   — catalogue artifact, never a bounty
+#   not_jam_repertoire — a real song, but not one anybody calls at a jam.
+#                  Seasonal material clears the coverage bar honestly
+#                  (bluegrass artists do record Christmas albums) and still
+#                  does not belong on the board.
 #   keep         — real repertoire the catalogue cannot vouch for (no MB
 #                  coverage / below the score cut). Carried onto the board
 #                  verbatim by build_wanted.py, the way registry.yaml `keep:`
@@ -443,6 +447,23 @@ not_a_song:
     title: Introductions
     reason: Catalog artifact, same class as Band Introductions. Surfaced when the catalogue
       rebuild dropped it; filed rather than kept.
+not_jam_repertoire:
+  christmas-song:
+    title: The Christmas Song
+    reason: Holiday standard. Bluegrass artists cut it on Christmas albums, so it clears the
+      coverage bar honestly, but nobody calls it at a jam.
+  angels-we-have-heard-on-high:
+    title: Angels We Have Heard on High
+    reason: Christmas carol; same reasoning.
+  sleigh-ride:
+    title: Sleigh Ride
+    reason: Holiday standard; same reasoning.
+  christmas-time-is-here:
+    title: Christmas Time Is Here
+    reason: Holiday standard; same reasoning.
+  on-christmas-eve:
+    title: On Christmas Eve
+    reason: Holiday standard; same reasoning.
 keep:
   Doc’s Guitar:
     title: Doc’s Guitar

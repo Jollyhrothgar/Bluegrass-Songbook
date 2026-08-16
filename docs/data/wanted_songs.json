@@ -379,32 +379,6 @@
    ]
   },
   {
-   "catalogue_id": "angels-we-have-heard-on-high",
-   "title": "Angels We Have Heard on High",
-   "type": "Vocal",
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 10,
-   "core": false,
-   "artists": [
-    "Darol Anger",
-    "Gene Parsons",
-    "Harvey Reid",
-    "Joe Craven",
-    "Mike Marshall",
-    "Norman Blake",
-    "Peter Ostroushko",
-    "Rhonda Vincent",
-    "Tony Trischka",
-    "Vassar Clements"
-   ],
-   "title_variants": [
-    "Angels We Have Heard On High",
-    "Angels we Have Heard on High"
-   ]
-  },
-  {
    "catalogue_id": "apple-blossom",
    "title": "Apple Blossom",
    "type": "Vocal",
@@ -2796,24 +2770,6 @@
     "Don Reno",
     "Reno and Smiley",
     "The Tennessee Cut-Ups"
-   ]
-  },
-  {
-   "catalogue_id": "christmas-time-is-here",
-   "title": "Christmas Time Is Here",
-   "type": "Vocal",
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 6,
-   "core": false,
-   "artists": [
-    "Béla Fleck and the Flecktones",
-    "Jerry Douglas",
-    "Joe Craven",
-    "Ricky Skaggs",
-    "The Stanley Brothers",
-    "Vince Gill"
    ]
   },
   {
@@ -10684,22 +10640,6 @@
    ]
   },
   {
-   "catalogue_id": "on-christmas-eve",
-   "title": "On Christmas Eve",
-   "type": "Vocal",
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 4,
-   "core": false,
-   "artists": [
-    "Joe Newberry",
-    "John Hartford",
-    "Rhiannon Giddens",
-    "Wolfe Bros."
-   ]
-  },
-  {
    "catalogue_id": "on-my-way",
    "title": "On My Way",
    "type": "Vocal",
@@ -13317,27 +13257,6 @@
    "core": false
   },
   {
-   "catalogue_id": "sleigh-ride",
-   "title": "Sleigh Ride",
-   "type": "Vocal",
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 9,
-   "core": true,
-   "artists": [
-    "Béla Fleck and the Flecktones",
-    "Dolly Parton",
-    "Joe Craven",
-    "Mark O’Connor",
-    "None of the Above",
-    "Sam Bush",
-    "Tony Trischka",
-    "Vince Gill",
-    "Williamson Branch"
-   ]
-  },
-  {
    "catalogue_id": "slewfoot",
    "title": "Slewfoot",
    "type": "Vocal",
@@ -14680,33 +14599,6 @@
    ],
    "title_variants": [
     "Cakewalk"
-   ]
-  },
-  {
-   "catalogue_id": "christmas-song",
-   "title": "The Christmas Song",
-   "type": "Vocal",
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 13,
-   "core": true,
-   "artists": [
-    "Alan Jackson",
-    "Annie Moses Band",
-    "Béla Fleck and the Flecktones",
-    "Charlie Daniels",
-    "Dan Tyminski",
-    "David Grisman",
-    "John Cowan",
-    "Mark Newton",
-    "Mark O’Connor",
-    "Rhonda Vincent",
-    "The Charlie Daniels Band",
-    "Vic Jordan"
-   ],
-   "title_variants": [
-    "The Christmas Song (Chestnuts Roasting On An Open Fire)"
    ]
   },
   {

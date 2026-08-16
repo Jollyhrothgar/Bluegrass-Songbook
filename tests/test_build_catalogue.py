@@ -171,3 +171,30 @@ class TestStripAnnotation:
     def test_collapses_variants_onto_one_key(self):
         assert bc.normalize('Sally Ann key of D, 1-4-5') == bc.normalize('Sally Ann')
         assert bc.normalize('Sweet Sunny South major') == bc.normalize('Sweet Sunny South modal')
+
+
+class TestNotJamRepertoire:
+    """Real songs that nobody calls at a jam are filed, not deleted."""
+
+    @pytest.fixture(scope='class')
+    def board(self):
+        import yaml
+        path = REPO_ROOT / 'docs' / 'data' / 'wanted_songs.json'
+        if not path.exists():
+            pytest.skip('board not built')
+        led = yaml.safe_load((REPO_ROOT / 'curation' / 'bounty_decisions.yaml').read_text())
+        return json.loads(path.read_text())['songs'], led
+
+    def test_seasonal_titles_are_off_the_board(self, board):
+        songs, led = board
+        excluded = set(led.get('not_jam_repertoire') or {})
+        assert excluded, 'expected seasonal exclusions to be filed'
+        on_board = {s['catalogue_id'] for s in songs} & excluded
+        assert not on_board, f"filed as not-jam-repertoire but still listed: {on_board}"
+
+    def test_cold_frosty_morning_survives(self, board):
+        # A regex for seasonal titles matched this on "frosty". It is a
+        # standard old-time fiddle tune and must not be swept up with the
+        # Christmas material.
+        songs, _ = board
+        assert any(s['catalogue_id'] == 'cold-frosty-morning' for s in songs)

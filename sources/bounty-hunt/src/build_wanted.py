@@ -140,6 +140,9 @@ def build_wanted(report: bool = False, dry_run: bool = False) -> dict:
                 if e.get('catalogue_id')}
     junk_titles = {e['title'] for e in (ledger.get('not_a_song') or {}).values()
                    if e.get('title')}
+    # Real songs that nobody calls at a jam. Kept separate from `not_a_song`
+    # because the distinction matters: these clear the coverage bar honestly.
+    excluded_ids = set(ledger.get('not_jam_repertoire') or {})
 
     stats = Counter()
     songs = []
@@ -148,6 +151,9 @@ def build_wanted(report: bool = False, dry_run: bool = False) -> dict:
         title = row['title']
         if row['catalogue_id'] in junk_ids or title in junk_titles:
             stats['junk'] += 1
+            continue
+        if row['catalogue_id'] in excluded_ids:
+            stats['not_jam'] += 1
             continue
         if row['catalogue_id'] in covered_ids:
             stats['ledger_covered'] += 1
@@ -192,7 +198,8 @@ def build_wanted(report: bool = False, dry_run: bool = False) -> dict:
         print(f"Wanted list: {len(songs)} songs")
         print(f"  from catalogue {len(catalogue)}: "
               f"{stats['in_corpus']} already held, "
-              f"{stats['ledger_covered']} ledger-covered, {stats['junk']} junk")
+              f"{stats['ledger_covered']} ledger-covered, {stats['junk']} junk, "
+              f"{stats['not_jam']} not jam repertoire")
         print(f"  ledger keeps added: {stats['ledger_keep']}"
               + (f" ({stats['keep_now_held']} now held, skipped)" if stats['keep_now_held'] else ''))
         print(f"  by type: {dict(Counter(s['type'] for s in songs))}")
