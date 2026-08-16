@@ -471,6 +471,11 @@ def _repo_root() -> Path:
     return Path(__file__).resolve().parent.parent.parent
 
 
+def _one_line(value) -> str:
+    """Collapse a value to a single line for GITHUB_OUTPUT."""
+    return ' '.join(str(value or '').split())
+
+
 def main() -> int:
     row_id = os.environ.get('PENDING_ROW_ID', '').strip()
     mode = os.environ.get('PENDING_MODE', '').strip()
@@ -534,13 +539,16 @@ def main() -> int:
             'part_file': result.part_file or '',
             'written': 'true' if result.written else 'false',
             'skipped_reason': result.skipped_reason or '',
-            'row_title': (row.get('title') or '').replace('\n', ' '),
+            'row_title': row.get('title') or '',
         }
         if backstop.decision:
             fields.update(backstop.decision.outputs())
         with open(github_output, 'a') as fh:
             for key, value in fields.items():
-                fh.write(f'{key}={value}\n')
+                # `key=value\n` is the whole format, so a newline anywhere in
+                # a value would let submitted text forge another output. Row
+                # titles and work ids are user-controlled; flatten them.
+                fh.write(f'{key}={_one_line(value)}\n')
 
     return 0
 
