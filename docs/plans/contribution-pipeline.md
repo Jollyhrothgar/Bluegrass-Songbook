@@ -242,6 +242,22 @@ reject. Migrations are written but **not applied**: the drop-`doc_staging`
 one opens with a rescue checklist (and the bucket still needs a manual
 delete), and `review_requests` also grants `is_admin()` update/delete on
 `pending_songs` so the hold actions aren't blocked by the 2b policies.
+*Addendum, 2026-08-16:* the first pass only wired an entry point for
+`delete`; `suppress` and `merge-redirect` were fileable via `submitReviewRequest`
+but had no UI. Closed: `🙈 Request suppression` and `🔀 Request merge into
+another song…` join `🗑️ Request deletion` in the song overflow for any
+trusted user (neither kind has an instant admin path, so both show
+unconditionally on `isTrusted()`, unlike delete's admin/trusted split).
+Merge-redirect's target search reuses `searchWorksForTab`
+(add-song-picker.js) rather than growing a second corpus search. Checked
+for a natural "these are the same song, request a merge" affordance on the
+dedup offramp and the Dungeon's held-rows section — neither has one to add:
+the offramp compares an unsaved submission against the corpus (nothing
+published yet to merge), and a held `pending_songs` row was refused *before*
+becoming a work, so its matched-work id lives only in the CI
+`dedup_matched_work` output / GitHub issue, not the `dedup_hold` text column
+the frontend reads — merge-redirect needs two already-published works, which
+neither surface has in hand.
 
 ### Phase 3 — the offramp (dedup)
 

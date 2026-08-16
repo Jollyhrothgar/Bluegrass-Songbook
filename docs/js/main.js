@@ -64,6 +64,7 @@ import { getSongContents } from './song-content.js';
 import { showToast } from './toast.js';
 import {
     configureReviewQueue, showReviewQueue, hideReviewQueue, submitReviewRequest,
+    showSuppressRequestDialog, showMergeRequestDialog, buildMergeRedirectPayload,
 } from './review-queue.js';
 
 // ============================================
@@ -1604,6 +1605,52 @@ async function handleRequestDeleteSong() {
     if (dungeonMode) showReviewQueue();
 }
 
+// Suppress and merge-redirect have no instant execution path (see
+// review-queue.js), so both go through the same request queue for any
+// trusted user — the dialogs collect what submitReviewRequest needs and
+// validate before it ever reaches the network.
+async function handleRequestSuppressSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    const reason = await showSuppressRequestDialog(song);
+    if (reason === null) return; // cancelled
+
+    const { error } = await submitReviewRequest({
+        kind: 'suppress',
+        targetId: song.id,
+        payload: {},
+        reason,
+    });
+    if (error) {
+        alert(`Could not file the request: ${error.message}`);
+        return;
+    }
+    alert(`Requested suppression of "${song.title}".\n\nIt stays searchable until an admin approves the request AND runs the suppress command it prints — you can follow both steps in the review queue in the Bluegrass Dungeon.`);
+    if (dungeonMode) showReviewQueue();
+}
+
+async function handleRequestMergeSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    const outcome = await showMergeRequestDialog(song, { songs: allSongs });
+    if (outcome === null) return; // cancelled
+
+    const { error } = await submitReviewRequest({
+        kind: 'merge-redirect',
+        targetId: song.id,
+        payload: buildMergeRedirectPayload(outcome.targetId),
+        reason: outcome.reason,
+    });
+    if (error) {
+        alert(`Could not file the request: ${error.message}`);
+        return;
+    }
+    alert(`Requested merging "${song.title}" into "${outcome.targetTitle}".\n\nBoth songs stay as they are until an admin approves the request AND runs the merge command it prints — you can follow both steps in the review queue in the Bluegrass Dungeon.`);
+    if (dungeonMode) showReviewQueue();
+}
+
 function updateVisitorStats(totalViews, totalVisitors) {
     if (visitorStatsEl && totalViews !== undefined) {
         visitorStatsEl.textContent = `${totalViews.toLocaleString()} page views · ${totalVisitors.toLocaleString()} visitors`;
@@ -2449,6 +2496,8 @@ function init() {
         onEdit: (song) => enterEditMode(song),
         onDelete: handleDeleteSong,
         onRequestDelete: handleRequestDeleteSong,
+        onRequestSuppress: handleRequestSuppressSong,
+        onRequestMerge: handleRequestMergeSong,
         isAdmin: () => isAdminUser,
         isTrusted: () => isTrustedFlag,
         onPromote: handlePromoteSong,
