@@ -211,7 +211,11 @@ cheap at that volume — not because it's right.
 **2c. Fork-to-arrangement.** The editor's "edit" action on content you
 don't own becomes "create your arrangement" — same work, new version part,
 `x_version_*` populated, Arrangement pill and votes pick the default. No
-review queue, nothing destroyed, friction stays zero. **Forking is not just
+review queue, nothing destroyed, friction stays zero. Voting landed
+2026-08-16 (issue #233): `song_votes.arr_slug` gives every take of a work
+its own ballot, votes rank the challengers in the pill, and the editorial
+`default` flag still pins row one — when a fork out-polls it the pill says
+so and names the file, but nothing flips on its own. **Forking is not just
 the fallback for others' content:** you can fork your *own* versions too
 (simplified chart, capo arrangement, different key) — "fork" and "edit in
 place" are both first-class actions on content you own, and ownership only

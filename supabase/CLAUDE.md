@@ -63,7 +63,10 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `user_lists` - User lists with multi-owner support (`owners` array)
 - `user_list_items` - Songs in lists (many-to-many)
 - `user_favorites` - User favorited songs
-- `song_votes` - User votes for song versions
+- `song_votes` - User votes for song versions; `arr_slug` names WHICH lead
+  sheet of the work (null = the work's own chart, the meaning every pre-fork
+  row carries). `song_vote_counts` tallies the work level, and
+  `song_arrangement_vote_counts` tallies per arrangement
 - `tag_votes` - User tag up/downvotes (trusted users can override tags)
 - `genre_suggestions` - User-submitted genre suggestions
 - `visitor_stats` - Page view and unique visitor counts
@@ -193,7 +196,10 @@ uv run python scripts/lib/merge_works.py /tmp/merge-plan.json --execute
 
 All tables have RLS policies:
 - Lists: Owners can CRUD, anyone can read public lists
-- Votes: Users can only vote once per song
+- Votes: one vote per user per version — `(user_id, song_id, arr_key)`, where
+  `arr_key` is a generated `coalesce(arr_slug, '')` (a plain nullable column
+  could not carry a unique constraint, and PostgREST cannot arbitrate an
+  upsert on an expression index)
 - Stats: Increment-only via function
 
 ## Local Development

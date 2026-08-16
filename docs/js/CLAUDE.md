@@ -646,9 +646,11 @@ Handles authentication and cloud sync. Key exports:
 | `deleteList(id)` | Delete a list |
 | `addSongToList(listId, songId)` | Add song to a list |
 | `removeSongFromList(listId, songId)` | Remove song from list |
-| `fetchGroupVotes(groupId)` | Get vote counts for versions |
-| `castVote(songId, groupId)` | Vote for a song version |
-| `removeVote(songId)` | Remove user's vote |
+| `fetchGroupVotes(groupId)` | Work-level vote counts for a version group |
+| `fetchArrangementVotes(songId)` | Per-arrangement counts for one work (`''` = the work-level vote) |
+| `fetchUserArrangementVotes(songId)` | Which of one work's arrangements the user voted for |
+| `castVote(songId, groupId, value, arrSlug)` | Vote for a version; `arrSlug` null = the work's own chart |
+| `removeVote(songId, arrSlug)` | Remove the user's vote for that same arrangement key |
 | `isTrustedUser()` | Check if current user has trusted status |
 | `savePendingSong(song)` | Save song to pending_songs table |
 

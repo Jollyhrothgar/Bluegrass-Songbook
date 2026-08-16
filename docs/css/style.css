@@ -9870,6 +9870,23 @@ body.has-bottomband .container {
     padding: var(--space-sm);
 }
 
+/* Votes rank, curation pins: the note that says a fork is out-polling the
+   default without pretending the vote changed anything. */
+.pill-popover-note {
+    padding: var(--space-sm);
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.85em;
+    line-height: 1.4;
+}
+
+.pill-popover-note strong { color: var(--text); }
+
+.arrangement-flip-where code {
+    font-size: 0.95em;
+    word-break: break-all;
+}
+
 /* Playback controls mounted in the bottom band */
 .app-bottomband .tab-controls,
 .app-bottomband .abc-band-controls {
