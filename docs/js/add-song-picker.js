@@ -279,26 +279,46 @@ async function submitRequest() {
     if (reqStatus) { reqStatus.textContent = 'Submitting...'; reqStatus.className = 'picker-req-status'; }
 
     try {
+        // Requesting a song does NOT require login (Phase 2a): it's a
+        // request, not content the requester will come back looking for.
+        // Signed in → the session token, and the server makes a placeholder
+        // owned by the requester. Anonymous → the anon key, and the server
+        // files a `tune-request` issue instead; the toast is the whole
+        // experience, so there is nowhere to navigate afterwards.
         const supabase = window.SupabaseAuth?.supabase;
         const session = supabase ? (await supabase.auth.getSession()).data.session : null;
-        if (!session) throw new Error('Not logged in');
+        const authToken = session?.access_token || SUPABASE_ANON_KEY;
 
         const resp = await fetch(`${SUPABASE_URL}/functions/v1/create-song-request`, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${session.access_token}`,
+                'Authorization': `Bearer ${authToken}`,
                 'apikey': SUPABASE_ANON_KEY,
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ title, artist, key, notes, id: slug }),
         });
 
+        const result = await resp.json().catch(() => ({}));
         if (!resp.ok) {
-            const body = await resp.json().catch(() => ({}));
-            throw new Error(body.error || 'Failed to submit request');
+            throw new Error(result.error || 'Failed to submit request');
         }
 
-        track('placeholder_request_submit', { has_artist: !!artist, has_notes: !!notes });
+        track('placeholder_request_submit', {
+            has_artist: !!artist,
+            has_notes: !!notes,
+            anonymous: !session,
+        });
+
+        if (result.mode === 'issue') {
+            // Anonymous: no placeholder work exists to navigate to
+            if (reqStatus) {
+                reqStatus.textContent = 'Thanks! Your request has been logged.';
+                reqStatus.className = 'picker-req-status success';
+            }
+            setTimeout(closeAddSongPicker, 1500);
+            return;
+        }
 
         if (reqStatus) { reqStatus.textContent = 'Request submitted!'; reqStatus.className = 'picker-req-status success'; }
 

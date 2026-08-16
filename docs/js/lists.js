@@ -14,7 +14,7 @@ import {
     subscribe, currentView,
     focusedListId, setFocusedListId
 } from './state.js';
-import { escapeHtml, generateLocalId, requireLogin, parseItemRef } from './utils.js';
+import { escapeHtml, generateLocalId, parseItemRef } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
@@ -3110,9 +3110,8 @@ export function initLists(options) {
         openShareModal(shareId);
     });
 
-    // List header: Request song button
+    // List header: Request song button (no login required — Phase 2a)
     listRequestBtnEl?.addEventListener('click', () => {
-        if (!requireLogin('request songs')) return;
         openAddSongPicker({ mode: 'request' });
     });
 

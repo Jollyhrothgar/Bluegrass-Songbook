@@ -3,16 +3,6 @@
 // feedback - creates GitHub issues via the create-flag-issue edge function.
 
 import { track } from './analytics.js';
-import { requireLogin } from './utils.js';
-
-/**
- * Get the submitter attribution for issue body.
- * Requires logged-in user (anonymous path removed).
- */
-function getSubmitterAttribution() {
-    const user = window.SupabaseAuth?.getUser?.();
-    return user?.user_metadata?.full_name || user?.email || 'Anonymous User';
-}
 
 // ============================================
 // CONFIGURATION
@@ -170,8 +160,13 @@ function closeFlagModal() {
 
 /**
  * Submit feedback via Edge Function (creates GitHub issue).
- * The edge function requires an authenticated user, so the login gate
- * lives here at submit time; the mailto footer link is the anonymous path.
+ *
+ * No login required (Phase 2a): flagging a problem is a report, not
+ * content the reporter will come back looking for — the confirmation
+ * toast is the complete experience. If a session exists its token is sent
+ * and the edge function attributes the report to the verified user;
+ * otherwise the anon key goes out and the report is anonymous. Either
+ * way the client never claims an identity.
  */
 async function submitFlag() {
     let flagType;
@@ -199,8 +194,6 @@ async function submitFlag() {
         }
     }
 
-    if (!requireLogin('send feedback')) return;
-
     // Disable submit button while processing
     if (flagSubmitBtn) {
         flagSubmitBtn.disabled = true;
@@ -208,7 +201,8 @@ async function submitFlag() {
     }
 
     try {
-        // Use user's session token for authenticated requests
+        // Session token when signed in, anon key otherwise — the server
+        // decides who (if anyone) this is.
         const supabase = window.SupabaseAuth?.supabase;
         const session = supabase ? (await supabase.auth.getSession()).data.session : null;
         const authToken = session?.access_token || SUPABASE_ANON_KEY;
@@ -229,7 +223,6 @@ async function submitFlag() {
                 songArtist: currentSong?.artist || '',
                 flagType,
                 description: description || undefined,
-                submittedBy: getSubmitterAttribution(),
             }),
         });
 
