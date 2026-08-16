@@ -102,11 +102,8 @@ begin
       check (composer is null or char_length(composer) <= 300);
   end if;
 
-  if not exists (select 1 from pg_constraint where conname = 'pending_songs_notes_len') then
-    alter table pending_songs
-      add constraint pending_songs_notes_len
-      check (notes is null or char_length(notes) <= 5000);
-  end if;
+  -- No notes cap: pending_songs has no notes column (request "notes" are
+  -- folded into content/issue text by create-song-request, capped there).
 
   if not exists (select 1 from pg_constraint where conname = 'pending_songs_tags_size') then
     alter table pending_songs
