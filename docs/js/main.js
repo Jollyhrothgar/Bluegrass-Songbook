@@ -1100,6 +1100,14 @@ let canonRows = [];
 let archiveRows = [];
 let pendingRows = [];
 
+// Curation overlays from Supabase, applied on top of the static rows exactly
+// as the index build applies docs/data/{deleted,promoted}_songs.json — so an
+// admin delete or a trusted-user promote is live now instead of after the
+// hourly sync and the next deploy. Also written in-session by the
+// promote/delete handlers below.
+const deletedIds = new Set();
+const promotedIds = new Set();
+
 // Archive load state. The promise resolves once the archive is merged (or has
 // definitively failed) and NEVER rejects, so awaiting it is always safe;
 // window.ensureArchiveLoaded() is the hook other modules use.
@@ -1117,6 +1125,8 @@ function rebuildCorpus() {
         canon: canonRows,
         archive: archiveRows,
         pending: pendingRows,
+        deleted: deletedIds,
+        promoted: promotedIds,
     });
     setAllSongs(songs);
     setSongGroups(groups);
@@ -1169,6 +1179,55 @@ function ensureArchiveLoaded() {
 window.ensureArchiveLoaded = ensureArchiveLoaded;
 window.isArchiveLoaded = () => archiveLoaded;
 
+/**
+ * Fetch the Supabase overlays: pending edits plus the two world-readable
+ * curation tables. All three go out together so the deleted/promoted rules
+ * land in the same first paint as the pending rows — a deleted song must
+ * never flash into view before the overlay catches up.
+ *
+ * Fails soft in every direction: no client, a down backend, or a single
+ * table erroring leaves the static index exactly as it was built. Callers
+ * rebuild the corpus afterwards.
+ */
+async function fetchSupabaseOverlays() {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) return;
+
+    // PostgREST builders are thenables, not promises — Promise.resolve gives
+    // us a .catch so one failing table can't take the other two down.
+    const safe = query => Promise.resolve(query).catch(error => ({ data: null, error }));
+
+    try {
+        const [pending, deleted, promoted] = await Promise.all([
+            safe(supabase.from('pending_songs').select('*')),
+            safe(supabase.from('deleted_songs').select('song_id')),
+            safe(supabase.from('promoted_songs').select('song_id')),
+        ]);
+
+        if (pending.data && !pending.error) {
+            pendingRows = pending.data.map(transformPendingToIndexFormat);
+            if (pendingRows.length > 0) {
+                console.log(`Merged ${pendingRows.length} pending song(s)`);
+            }
+        }
+        if (deleted.data && !deleted.error) {
+            for (const row of deleted.data) deletedIds.add(row.song_id);
+            if (deletedIds.size > 0) {
+                console.log(`Hiding ${deletedIds.size} deleted song(s)`);
+            }
+        }
+        if (promoted.data && !promoted.error) {
+            for (const row of promoted.data) promotedIds.add(row.song_id);
+            if (promotedIds.size > 0) {
+                console.log(`Promoted ${promotedIds.size} song(s) into search`);
+            }
+        }
+    } catch (e) {
+        console.warn('Could not fetch Supabase overlays:', e);
+        // Static index still works - graceful degradation
+    }
+}
+
 async function loadIndex() {
     if (resultsDiv) {
         resultsDiv.innerHTML = '<div class="loading">Loading songbook...</div>';
@@ -1194,24 +1253,7 @@ async function loadIndex() {
             }
         }
 
-        // Fetch pending songs from Supabase (graceful failure if offline/error)
-        try {
-            const supabase = window.SupabaseAuth?.supabase;
-            if (supabase) {
-                const { data, error } = await supabase
-                    .from('pending_songs')
-                    .select('*');
-                if (data && !error) {
-                    pendingRows = data.map(transformPendingToIndexFormat);
-                    if (pendingRows.length > 0) {
-                        console.log(`Merged ${pendingRows.length} pending song(s)`);
-                    }
-                }
-            }
-        } catch (e) {
-            console.warn('Could not fetch pending songs:', e);
-            // Static index still works - graceful degradation
-        }
+        await fetchSupabaseOverlays();
 
         const songs = rebuildCorpus();
 
@@ -1328,9 +1370,6 @@ let isAdminUser = false;
 // Trusted state (cached the same way; gates the Promote overflow item)
 let isTrustedFlag = false;
 
-// Songs promoted this session (flips the overflow item to "Undo promote")
-const promotedIds = new Set();
-
 function getInitials(user) {
     const name = user.user_metadata?.full_name;
     if (name) {
@@ -1430,8 +1469,10 @@ function updateDeleteButtonVisibility() {
 }
 
 // Promote the viewed archived song into the main index (trusted users).
-// Writes a promoted_songs row; the hourly sync + rebuild make it live on
-// the site, while an optimistic flip makes it searchable locally right away.
+// Writes a promoted_songs row, which every browser reads at startup and
+// applies client-side (see fetchSupabaseOverlays) — so the promotion is live
+// for everyone immediately. The hourly sync + rebuild are durability, not
+// delivery: they fold the same decision into the built index.
 async function handlePromoteSong() {
     const song = getCurrentSong();
     if (!song) return;
@@ -1445,6 +1486,7 @@ async function handlePromoteSong() {
         }
         promotedIds.delete(song.id);
         song.indexed = false;
+        rebuildCorpus();
         alert(`Promotion of "${song.title}" undone.`);
         updateWorkTopBar();
         return;
@@ -1462,7 +1504,8 @@ async function handlePromoteSong() {
     }
     promotedIds.add(song.id);
     song.indexed = true;
-    alert(`Promoted "${song.title}" to the songbook!\n\nIt is searchable for you immediately; the live site picks it up after the next hourly sync and rebuild.`);
+    rebuildCorpus();
+    alert(`Promoted "${song.title}" to the songbook!\n\nIt is searchable right away — for you and for everyone who loads the site from now on.`);
     updateWorkTopBar();
 }
 
@@ -1514,7 +1557,9 @@ async function confirmDeleteSelected(listEl, confirmBtn, statusEl) {
         }
         statusEl.textContent = '';
         deleteModal?.classList.add('hidden');
-        alert(`Marked for deletion: ${ids.join(', ')}\n\nTakes effect after the next deleted-songs sync and rebuild.`);
+        for (const id of ids) deletedIds.add(id);
+        rebuildCorpus();
+        alert(`Deleted: ${ids.join(', ')}\n\nGone from the site right away; the next sync and rebuild make it permanent.`);
         goBack();
     } catch (err) {
         console.error('Error deleting song:', err);
