@@ -83,6 +83,21 @@ bare `{instrument}.otf.json`; alternates land as
 editorial: `./scripts/utility curate pin-tab <work> <instrument>
 <source_id>`, defaulting to the first part listed in work.yaml.
 
+**Title matching is scorer-backed (#192 / #226)**: `works_importer.
+find_matching_work` decides "does this tab title already have a work?" via
+`scripts/lib/dedup_scorer.WorkCorpus`, not its own string equality. Tab
+imports never carry lyrics, so the scorer always takes its instrumental /
+no-lyrics path: title similarity must clear `TITLE_ONLY_MIN` (0.95) before
+two titles count as the same tune — much stricter than exact-match, but
+also catches near-misses the old equality check minted duplicate works
+for (`Soldier's Joy` vs `Soldiers Joy`, a trailing `- Trad.` attribution).
+`batch_import` builds ONE `WorkCorpus` for the whole run and threads it
+through every tab — never reconstructed per file, which would re-read
+every `work.yaml` title on every call. The pre-#226 matcher is kept as
+`_find_matching_work_legacy` purely so disagreements between the two get
+logged (`[dedup-scorer] match differs...`) instead of happening silently;
+it is no longer the decision. Tests: `tests/test_works_importer_dedup.py`.
+
 **Strict-instrument gate**: on the sibling sites (mandolin/flatpicker/
 fiddle/reso) a conversion only imports when the detected instrument is the
 site's own or `ensemble` — otherwise a reso dobro written as
