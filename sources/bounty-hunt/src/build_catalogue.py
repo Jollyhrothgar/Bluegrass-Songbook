@@ -84,7 +84,8 @@ EXPANDED_TOP_N = 2000
 NON_SONG_RE = re.compile(
     r'^(intro|intros|introduction|introductions|outro|outros|'
     r'band intro(duction)?s?|talk|talking|tuning|announcement|applause|'
-    r'encore|medley|jam|instrumental|untitled|unknown|track \d+|untitled \d+)$',
+    r'encore|medley|jam|instrumental|untitled|unknown|track \d+|untitled \d+|'
+    r'banter|chatter|spoken|dialogue|false start|reprise|interlude|segue)$',
     re.IGNORECASE,
 )
 
@@ -111,6 +112,7 @@ ANNOTATION_RE = re.compile(
     r'|\d+\s*bars?'                                # 16 bars
     r'|\d/\d\s*(time|version)?'                    # 4/4 time
     r'|key\s+of\s+[A-G][#b]?\b.*'                  # key of D, 1-4-5
+    r'|[A-G][#b]?m?\s+to\s+[A-G][#b]?m?\b.*'        # C to Em version
     r'|(extended\s+)?\d+\s*chords?\s+in\s+\w+\s+part'
     r'|original\s+chords?'
     r'|(a\.?k\.?a\.?)\s+.*'
@@ -161,6 +163,69 @@ def strip_annotation(title: str) -> str:
     return out or original
 
 
+def _basic_norm(text: str) -> str:
+    """Minimal fold used to build the artist vocabulary.
+
+    Separate from `normalize` because `normalize` calls `strip_annotation`,
+    which needs this vocabulary — going through `normalize` would recurse.
+    """
+    t = unicodedata.normalize('NFKD', text or '')
+    t = ''.join(c for c in t if not unicodedata.combining(c)).lower()
+    t = re.sub(r"['‘’ʼ´`]", '', t).replace('&', ' and ')
+    return re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9]+', ' ', t)).strip()
+
+
+_ARTIST_NAMES = None
+
+
+def artist_vocabulary() -> set:
+    """Bluegrass artist names, for spotting performer suffixes in titles.
+
+    A title ending in a known artist ("Crazy Arms Ray Price", "Jerusalem Ridge
+    Kenny Baker") is a catalog annotation, not a title — but no regex
+    enumerates performer names, so the roster itself is the vocabulary. Names
+    longer than four words are skipped: they are more likely to swallow a real
+    title than to appear as a suffix.
+    """
+    global _ARTIST_NAMES
+    if _ARTIST_NAMES is None:
+        names = set()
+        if COVERAGE_EXPORT.exists():
+            with gzip.open(COVERAGE_EXPORT, 'rt', encoding='utf-8') as f:
+                for rec in csv.DictReader(f):
+                    n = _basic_norm(rec['artist_name'])
+                    if n and len(n.split()) <= 4:
+                        names.add(n)
+        if RECORDINGS_FILE.exists():
+            for a in json.loads(RECORDINGS_FILE.read_text(encoding='utf-8'))['artists']:
+                n = _basic_norm(a)
+                if n and len(n.split()) <= 4:
+                    names.add(n)
+        names.discard('')
+        _ARTIST_NAMES = names
+    return _ARTIST_NAMES
+
+
+# A bare trailing "version" is safe to drop on its own — it is one common word
+# and effectively no song title ends in it. Dropping it first lets the artist
+# tier compose: "Cumberland Gap Earl Scruggs version" -> "... Earl Scruggs" ->
+# "Cumberland Gap".
+TRAILING_VERSION_RE = re.compile(r'[,\s]+versions?\s*$', re.IGNORECASE)
+
+
+def strip_artist_suffix(title: str) -> str:
+    """Drop a trailing performer name, leaving at least two words of title."""
+    title = TRAILING_VERSION_RE.sub('', title or '').strip()
+    toks = _basic_norm(title).split()
+    names = artist_vocabulary()
+    for i in range(len(toks) - 1, 1, -1):
+        if ' '.join(toks[i:]) in names:
+            # Cut the raw title at the same word boundary so casing survives.
+            raw = title.split()
+            return ' '.join(raw[:i]).rstrip(' ,-') or title
+    return title
+
+
 def normalize(title: str) -> str:
     """Fold a title to its comparison key.
 
@@ -169,7 +234,7 @@ def normalize(title: str) -> str:
     goes on the board, that one is a render-time safety net. See
     CLEANUP-PLAN.md § 5 Phase 1.
     """
-    t = unicodedata.normalize('NFKD', strip_annotation(title))
+    t = unicodedata.normalize('NFKD', strip_artist_suffix(strip_annotation(title)))
     t = ''.join(c for c in t if not unicodedata.combining(c))
     t = t.lower()
     # Strip every apostrophe form to nothing, not to a space. Sources disagree

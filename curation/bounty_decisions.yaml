@@ -39,9 +39,8 @@ covered:
     - adieu-false-heart
     work: adieu-false-heart
     reason: Exact match; " via Dirk Powell" is an SM arrangement label.
-  another-day-another-dollar-dan-tyminski:
+  another-day-another-dollar-wynn-stewart:
     catalogue_ids:
-    - another-day-another-dollar-dan-tyminski
     - another-day-another-dollar-wynn-stewart
     work: another-day-another-dollar
     reason: One song; two SM entries differing only by performer.
@@ -51,18 +50,12 @@ covered:
     work: bill-cheatham
     reason: Standard spelling variant of the fiddle tune.
     chords: 0
-  black-eyed-susie-bluegrass-version:
+  black-eyed-suzie:
     catalogue_ids:
-    - black-eyed-susie-bluegrass-version
     - black-eyed-suzie
     - black-eyed-suzy
     work: black-eyed-susie
     reason: One tune, three spellings. Two wanted entries collapse here.
-  blue-railroad-train-tony-rice:
-    catalogue_ids:
-    - blue-railroad-train-tony-rice
-    work: blue-railroad-train
-    reason: Delmore Brothers song; trailing text is the performer.
   bluest-man-in-town:
     catalogue_ids:
     - bluest-man-in-town
@@ -210,11 +203,6 @@ covered:
     work: sitting-on-top-of-the-world
     reason: One song; two SM entries differing by chord arrangement. Corpus holds three copies
       — see registry.
-  steam-powered-aereo-plane-john-hartford:
-    catalogue_ids:
-    - steam-powered-aereo-plane-john-hartford
-    work: steam-powered-aereo-plane
-    reason: Hartford is the composer, appended to the title by the SM catalog.
   streamline-cannonball-julia:
     catalogue_ids:
     - streamline-cannonball-julia
@@ -257,11 +245,6 @@ covered:
     work: whos-that-knocking-at-my-window
     reason: One song; two SM entries differing only by performer.
     chords: 0
-  wild-mountain-flowers-for-mary-lost-and-found:
-    catalogue_ids:
-    - wild-mountain-flowers-for-mary-lost-and-found
-    work: wild-mountain-flowers-for-mary
-    reason: Lost and Found is the band name, not part of the title.
   would-you-be-satisfied-that-way:
     catalogue_ids:
     - would-you-be-satisfied-that-way
@@ -272,7 +255,6 @@ covered:
   yellow-rose-of-texas-bob-wills:
     catalogue_ids:
     - yellow-rose-of-texas-bob-wills
-    - yellow-rose-of-texas-the-ben-tommy-jarrell
     work: the-yellow-rose-of-texas
     reason: Trailing text is the performer. Corpus has two copies — see registry.
 distinct:

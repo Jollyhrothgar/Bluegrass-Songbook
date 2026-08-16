@@ -1384,24 +1384,12 @@
   },
   {
    "catalogue_id": "amber-tresses-tied-in-blue",
-   "title": "Amber Tresses Tied In Blue",
-   "title_variants": [],
-   "sources": [
-    "bluegrass-lyrics"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "amber-tresses-tied-in-blue-flatt-and-scruggs",
    "title": "Amber Tresses Tied in Blue Flatt & Scruggs",
-   "title_variants": [],
+   "title_variants": [
+    "Amber Tresses Tied In Blue"
+   ],
    "sources": [
+    "bluegrass-lyrics",
     "strum-machine"
    ],
    "coverage": 0,
@@ -1889,11 +1877,13 @@
    "catalogue_id": "another-day-another-dollar",
    "title": "Another Day Another Dollar",
    "title_variants": [
-    "Another Day, Another Dollar"
+    "Another Day, Another Dollar",
+    "Another Day, Another Dollar Dan Tyminski"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 3,
    "spread": 2,
@@ -1904,21 +1894,6 @@
     "The Osborne Brothers",
     "The Stanley Brothers"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "another-day-another-dollar-dan-tyminski",
-   "title": "Another Day, Another Dollar Dan Tyminski",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -3701,38 +3676,6 @@
    "instruments": []
   },
   {
-   "catalogue_id": "banter",
-   "title": "[banter]",
-   "title_variants": [
-    "Banter",
-    "[ banter ]",
-    "[Banter]"
-   ],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 12,
-   "spread": 3,
-   "score": 24.0,
-   "core": true,
-   "artists": [
-    "Béla Fleck",
-    "Chatham County Line",
-    "Donna the Buffalo",
-    "Elephant Revival",
-    "Hayseed Dixie",
-    "Jerry Douglas",
-    "John Hartford",
-    "The Avett Brothers",
-    "The Seldom Scene",
-    "The String Cheese Incident",
-    "Trampled by Turtles",
-    "Yonder Mountain String Band"
-   ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
    "catalogue_id": "baptism-of-jesse-taylor",
    "title": "Baptism of Jesse Taylor",
    "title_variants": [
@@ -3843,17 +3786,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "battle-ax-ralph-stanley",
+   "catalogue_id": "battle-ax",
    "title": "Battle Ax Ralph Stanley",
-   "title_variants": [],
+   "title_variants": [
+    "Battle Ax"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Ralph Stanley"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -4774,10 +4722,13 @@
    "catalogue_id": "big-country",
    "title": "Big Country",
    "title_variants": [
+    "Big Country Bela Fleck",
+    "Big Country Jimmy Martin",
     "The Big Country"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 13,
    "spread": 3,
@@ -4797,36 +4748,6 @@
     "The Warrior River Boys",
     "The Wood Brothers"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "big-country-bela-fleck",
-   "title": "Big Country Bela Fleck",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "big-country-jimmy-martin",
-   "title": "Big Country Jimmy Martin",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -5050,9 +4971,13 @@
   {
    "catalogue_id": "big-sciota",
    "title": "Big Sciota",
-   "title_variants": [],
+   "title_variants": [
+    "Big Sciota C to Em version",
+    "Big Sciota Em to C version"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 7,
    "spread": 3,
@@ -5074,36 +4999,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "catalogue_id": "big-sciota-c-to-em-version",
-   "title": "Big Sciota C to Em version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "big-sciota-em-to-c-version",
-   "title": "Big Sciota Em to C version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
   },
   {
    "catalogue_id": "big-scioty",
@@ -5699,9 +5594,12 @@
   {
    "catalogue_id": "black-diamond",
    "title": "Black Diamond",
-   "title_variants": [],
+   "title_variants": [
+    "Black Diamond Don Stover"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 4,
    "spread": 2,
@@ -5713,21 +5611,6 @@
     "Don Stover",
     "The Tennessee Cut-Ups"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "black-diamond-don-stover",
-   "title": "Black Diamond Don Stover",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -5784,7 +5667,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "black-eyed-susie-bluegrass-version",
+   "catalogue_id": "black-eyed-susie-bluegrass",
    "title": "Black Eyed Susie bluegrass version via Vern Williams",
    "title_variants": [],
    "sources": [
@@ -5799,7 +5682,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "black-eyed-susie-old-time-version",
+   "catalogue_id": "black-eyed-susie-old-time",
    "title": "Black Eyed Susie old-time version",
    "title_variants": [],
    "sources": [
@@ -6109,7 +5992,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "black-velvet-band-irish-rovers-version",
+   "catalogue_id": "black-velvet-band-irish-rovers",
    "title": "Black Velvet Band Irish Rovers version",
    "title_variants": [],
    "sources": [
@@ -6780,7 +6663,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "blue-moon-of-kentucky-waltz-version",
+   "catalogue_id": "blue-moon-of-kentucky-waltz",
    "title": "Blue Moon of Kentucky waltz version",
    "title_variants": [],
    "sources": [
@@ -6853,11 +6736,13 @@
    "catalogue_id": "blue-railroad-train",
    "title": "Blue Railroad Train",
    "title_variants": [
-    "Blue Railroad Train (Vanguard Version)"
+    "Blue Railroad Train (Vanguard Version)",
+    "Blue Railroad Train Tony Rice"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 6,
    "spread": 3,
@@ -6871,21 +6756,6 @@
     "The Tony Rice Unit",
     "Tony Rice"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "blue-railroad-train-tony-rice",
-   "title": "Blue Railroad Train Tony Rice",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -7714,7 +7584,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "boatsman-ed-haleys-version",
+   "catalogue_id": "boatsman-ed-haleys",
    "title": "Boatsman Ed Haley's version",
    "title_variants": [],
    "sources": [
@@ -10049,17 +9919,24 @@
    "instruments": []
   },
   {
-   "catalogue_id": "cabin-creek-ed-haley",
-   "title": "Cabin Creek Ed Haley",
-   "title_variants": [],
+   "catalogue_id": "cabin-creek",
+   "title": "Cabin Creek",
+   "title_variants": [
+    "Cabin Creek Ed Haley"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 3,
+   "spread": 2,
+   "score": 4.5,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Adam Hurt",
+    "Bruce Molsky",
+    "Ed Haley"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -11196,6 +11073,7 @@
    "title": "Carter’s Blues",
    "title_variants": [
     "Carter's Blues",
+    "Carter's Blues Larry Sparks version",
     "Carters Blues"
    ],
    "sources": [
@@ -11213,21 +11091,6 @@
     "Vince Gill",
     "Wayne Benson"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "carters-blues-larry-sparks-version",
-   "title": "Carter's Blues Larry Sparks version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -11370,8 +11233,7 @@
    "catalogue_id": "cedar-hill",
    "title": "Cedar Hill",
    "title_variants": [
-    "Cedar Hill (studio)",
-    "Cedar Hill (with David Grisman)"
+    "Cedar Hill (studio)"
    ],
    "sources": [
     "mb-coverage"
@@ -11640,31 +11502,6 @@
    "instruments": []
   },
   {
-   "catalogue_id": "chatter",
-   "title": "Chatter",
-   "title_variants": [
-    "Chatter (w. The Cox Family & Rob Ickes)",
-    "Chatter (“You Know Who Called Me?”)",
-    "[chatter]"
-   ],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 5,
-   "spread": 3,
-   "score": 10.0,
-   "core": false,
-   "artists": [
-    "Alison Krauss & Union Station",
-    "Carbon Leaf",
-    "John Hartford",
-    "Lester Flatt & Earl Scruggs",
-    "The String Cheese Incident"
-   ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
    "catalogue_id": "cheap-love-affair",
    "title": "Cheap Love Affair",
    "title_variants": [],
@@ -11758,7 +11595,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "cherokee-waltz-chubby-wise",
+   "catalogue_id": "cherokee-waltz",
    "title": "Cherokee Waltz Chubby Wise",
    "title_variants": [],
    "sources": [
@@ -12113,6 +11950,31 @@
    ]
   },
   {
+   "catalogue_id": "chinquapin",
+   "title": "Chinquapin",
+   "title_variants": [],
+   "sources": [
+    "mb-coverage"
+   ],
+   "coverage": 4,
+   "spread": 2,
+   "score": 6.0,
+   "core": false,
+   "artists": [
+    "John Hartford",
+    "Rafe Stefanini",
+    "Reed Martin",
+    "Rhys Jones"
+   ],
+   "type": "Fiddle Tune",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
+  },
+  {
    "catalogue_id": "chinquapin-hunting",
    "title": "Chinquapin Hunting",
    "title_variants": [
@@ -12232,6 +12094,47 @@
    "score": 0.0,
    "core": false,
    "artists": [],
+   "type": "Vocal",
+   "instruments": []
+  },
+  {
+   "catalogue_id": "christmas",
+   "title": "Christmas",
+   "title_variants": [
+    "Christmas (Baby Please Come Home)"
+   ],
+   "sources": [
+    "mb-coverage"
+   ],
+   "coverage": 3,
+   "spread": 3,
+   "score": 6.0,
+   "core": false,
+   "artists": [
+    "Samantha Fish",
+    "The Jellyman's Daughter",
+    "The Lewis Family"
+   ],
+   "type": "Vocal",
+   "instruments": []
+  },
+  {
+   "catalogue_id": "christmas-is-near",
+   "title": "Christmas Is Near",
+   "title_variants": [],
+   "sources": [
+    "mb-coverage"
+   ],
+   "coverage": 4,
+   "spread": 2,
+   "score": 6.0,
+   "core": false,
+   "artists": [
+    "Larry Sparks",
+    "Larry Sparks and the Lonesome Ramblers",
+    "Ralph Stanley",
+    "The Stanley Brothers"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -12652,6 +12555,29 @@
    "instruments": []
   },
   {
+   "catalogue_id": "climb",
+   "title": "The Climb",
+   "title_variants": [
+    "Climb",
+    "Climb (Live)",
+    "Climb >"
+   ],
+   "sources": [
+    "mb-coverage"
+   ],
+   "coverage": 3,
+   "spread": 3,
+   "score": 6.0,
+   "core": false,
+   "artists": [
+    "Béla Fleck",
+    "Chris Stapleton",
+    "The String Cheese Incident"
+   ],
+   "type": "Vocal",
+   "instruments": []
+  },
+  {
    "catalogue_id": "climbing-the-golden-stairs",
    "title": "Climbing the Golden Stairs",
    "title_variants": [],
@@ -13037,7 +12963,9 @@
   {
    "catalogue_id": "cold-frosty-morning",
    "title": "Cold Frosty Morning",
-   "title_variants": [],
+   "title_variants": [
+    "Cold Frosty Morning Melvin Wine version"
+   ],
    "sources": [
     "mb-coverage",
     "strum-machine"
@@ -13050,21 +12978,6 @@
     "Béla Fleck",
     "Josh Turknett"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "cold-frosty-morning-melvin-wine-version",
-   "title": "Cold Frosty Morning Melvin Wine version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -13272,7 +13185,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "columbus-stockade-blues-doc-watsons-minor-version",
+   "catalogue_id": "columbus-stockade-blues-doc-watsons-minor",
    "title": "Columbus Stockade Blues Doc Watson's minor version",
    "title_variants": [],
    "sources": [
@@ -14846,11 +14759,13 @@
    "catalogue_id": "cuckoo-bird",
    "title": "The Cuckoo Bird",
    "title_variants": [
-    "Cuckoo Bird"
+    "Cuckoo Bird",
+    "Cuckoo Bird, The Osborne Brothers"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 6,
    "spread": 3,
@@ -14864,21 +14779,6 @@
     "Peter Rowan",
     "The Osborne Brothers"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "cuckoo-bird-the-osborne-brothers",
-   "title": "Cuckoo Bird, The Osborne Brothers",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -14948,10 +14848,12 @@
    "title": "Cumberland Gap",
    "title_variants": [
     "Cumberland Gap (Live)",
-    "Cumberland Gap (live)"
+    "Cumberland Gap (live)",
+    "Cumberland Gap Earl Scruggs version"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 52,
    "spread": 3,
@@ -15010,22 +14912,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "cumberland-gap-earl-scruggs-version",
-   "title": "Cumberland Gap Earl Scruggs version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "cumberland-gap-g-version",
+   "catalogue_id": "cumberland-gap-g",
    "title": "Cumberland Gap G version",
    "title_variants": [],
    "sources": [
@@ -15817,7 +15704,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "darling-cory-modal-version",
+   "catalogue_id": "darling-cory-modal",
    "title": "Darling Cory modal version w/7b chord",
    "title_variants": [
     "Darling Cory modal version"
@@ -16722,11 +16609,13 @@
    "catalogue_id": "diesel-on-my-tail",
    "title": "Diesel on My Tail",
    "title_variants": [
-    "Diesel On My Tail"
+    "Diesel On My Tail",
+    "Diesel on My Tail Jim & Jesse"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 3,
    "spread": 3,
@@ -16737,21 +16626,6 @@
     "New Riders of the Purple Sage",
     "The Virginia Boys"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "diesel-on-my-tail-jim-and-jesse",
-   "title": "Diesel on My Tail Jim & Jesse",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -17062,7 +16936,7 @@
    ]
   },
   {
-   "catalogue_id": "dixie-hoedown-jim-and-jesse-mcreynolds",
+   "catalogue_id": "dixie-hoedown-jim-and",
    "title": "Dixie Hoedown Jim & Jesse McReynolds",
    "title_variants": [],
    "sources": [
@@ -17334,7 +17208,7 @@
    ]
   },
   {
-   "catalogue_id": "done-gone-eck-robertson-version",
+   "catalogue_id": "done-gone-eck-robertson",
    "title": "Done Gone Eck Robertson version w/extra beats",
    "title_variants": [],
    "sources": [
@@ -18348,7 +18222,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "down-in-the-valley-folk-version",
+   "catalogue_id": "down-in-the-valley-folk",
    "title": "Down in the Valley folk version",
    "title_variants": [],
    "sources": [
@@ -18501,11 +18375,13 @@
    "catalogue_id": "down-the-road",
    "title": "Down the Road",
    "title_variants": [
-    "Down The Road"
+    "Down The Road",
+    "Down the Road Flatt & Scruggs version"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 24,
    "spread": 3,
@@ -18525,21 +18401,6 @@
     "Jimmy Martin",
     "Lester Flatt"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "down-the-road-flatt-and-scruggs-version",
-   "title": "Down the Road Flatt & Scruggs version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -18973,7 +18834,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "drinking-dark-whiskey-the-steeldrivers",
+   "catalogue_id": "drinking-dark-whiskey",
    "title": "Drinking Dark Whiskey The Steeldrivers",
    "title_variants": [],
    "sources": [
@@ -19432,7 +19293,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "dust-in-a-baggie-living-room-version",
+   "catalogue_id": "dust-in-a-baggie-living-room",
    "title": "Dust in a Baggie living room version",
    "title_variants": [],
    "sources": [
@@ -19778,16 +19639,14 @@
   {
    "catalogue_id": "east-virginia-blues",
    "title": "East Virginia Blues",
-   "title_variants": [
-    "East Virginia Blues (with David Grisman and Tim O'Brien)"
-   ],
+   "title_variants": [],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 21,
+   "coverage": 20,
    "spread": 3,
-   "score": 42.0,
+   "score": 40.0,
    "core": true,
    "artists": [
     "Andy Statman",
@@ -22654,9 +22513,12 @@
   {
    "catalogue_id": "follow-the-leader",
    "title": "Follow the Leader",
-   "title_variants": [],
+   "title_variants": [
+    "Follow the Leader Don Reno"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 8,
    "spread": 3,
@@ -22672,21 +22534,6 @@
     "The Tennessee Cut-Ups",
     "Tony Trischka"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "follow-the-leader-don-reno",
-   "title": "Follow the Leader Don Reno",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -23165,11 +23012,13 @@
    "catalogue_id": "fox-on-the-run",
    "title": "Fox on the Run",
    "title_variants": [
-    "Fox On The Run"
+    "Fox On The Run",
+    "Fox on the Run Bill Emerson"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 8,
    "spread": 3,
@@ -23185,21 +23034,6 @@
     "Tony Trischka",
     "Volume Five"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "fox-on-the-run-bill-emerson",
-   "title": "Fox on the Run Bill Emerson",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -24228,9 +24062,12 @@
   {
    "catalogue_id": "ginseng-sullivan",
    "title": "Ginseng Sullivan",
-   "title_variants": [],
+   "title_variants": [
+    "Ginseng Sullivan Norman Blake"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 7,
    "spread": 3,
@@ -24245,21 +24082,6 @@
     "The Tony Rice Unit",
     "Tony Rice"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "ginseng-sullivan-norman-blake",
-   "title": "Ginseng Sullivan Norman Blake",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -26615,17 +26437,25 @@
    "instruments": []
   },
   {
-   "catalogue_id": "green-corn-the-dillards",
-   "title": "Green Corn The Dillards",
-   "title_variants": [],
+   "catalogue_id": "green-corn",
+   "title": "Green Corn",
+   "title_variants": [
+    "Green Corn The Dillards"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 4,
+   "spread": 2,
+   "score": 6.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Clarence White",
+    "John Hartford",
+    "The Dillards",
+    "The Greenbriar Boys"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -26981,7 +26811,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "ground-hog-major-version",
+   "catalogue_id": "ground-hog-major",
    "title": "Ground Hog major version",
    "title_variants": [],
    "sources": [
@@ -26996,7 +26826,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "ground-hog-modal-version",
+   "catalogue_id": "ground-hog-modal",
    "title": "Ground Hog modal version",
    "title_variants": [],
    "sources": [
@@ -27433,16 +27263,19 @@
   {
    "catalogue_id": "happy-birthday",
    "title": "Happy Birthday",
-   "title_variants": [],
+   "title_variants": [
+    "Happy Birthday Bill Monroe"
+   ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 4,
+   "coverage": 5,
    "spread": 3,
-   "score": 8.0,
+   "score": 10.0,
    "core": false,
    "artists": [
     "Bill Monroe and the Bluegrass Boys",
+    "David Grisman",
     "Peter Rowan",
     "The Stanley Brothers",
     "The String Cheese Incident"
@@ -27451,7 +27284,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "happy-birthday-fast-bluegrass-version",
+   "catalogue_id": "happy-birthday-fast-bluegrass",
    "title": "Happy Birthday fast/bluegrass version",
    "title_variants": [],
    "sources": [
@@ -29049,17 +28882,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "hickory-hollow-doug-dillard",
+   "catalogue_id": "hickory-hollow",
    "title": "Hickory Hollow Doug Dillard",
-   "title_variants": [],
+   "title_variants": [
+    "Hickory Hollow"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "The Dillards"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -29527,7 +29365,6 @@
    "catalogue_id": "hills-of-home",
    "title": "Hills of Home",
    "title_variants": [
-    "Hills of Home (Tribute to Carter Stanley)",
     "Hills of Home (Tribute to Carter)",
     "The Hills of Home"
    ],
@@ -29677,10 +29514,13 @@
   {
    "catalogue_id": "hobo-blues",
    "title": "Hobo Blues",
-   "title_variants": [],
+   "title_variants": [
+    "Hobo Blues Lonesome River Band"
+   ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 3,
    "spread": 2,
@@ -29691,21 +29531,6 @@
     "Bob Bovee",
     "Lonesome River Band"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "hobo-blues-lonesome-river-band",
-   "title": "Hobo Blues Lonesome River Band",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -31228,10 +31053,13 @@
   },
   {
    "catalogue_id": "i-am-weary-let-me-rest",
-   "title": "I Am Weary Let Me Rest",
-   "title_variants": [],
+   "title": "I Am Weary, Let Me Rest Ralph Stanley",
+   "title_variants": [
+    "I Am Weary Let Me Rest"
+   ],
    "sources": [
-    "bluegrass-lyrics"
+    "bluegrass-lyrics",
+    "strum-machine"
    ],
    "coverage": 0,
    "spread": 0,
@@ -31244,21 +31072,6 @@
   {
    "catalogue_id": "i-am-weary-let-me-rest-oh-brother-cox-family",
    "title": "I Am Weary, Let Me Rest Oh Brother / Cox family",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "i-am-weary-let-me-rest-ralph-stanley",
-   "title": "I Am Weary, Let Me Rest Ralph Stanley",
    "title_variants": [],
    "sources": [
     "strum-machine"
@@ -36063,12 +35876,14 @@
    "title": "I'm Working on a Building",
    "title_variants": [
     "I'm Working On A Building",
+    "I'm Working on a Building Bill Monroe version",
     "I’m Working On A Building",
     "I’m Working on a Building"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 4,
    "spread": 2,
@@ -36081,21 +35896,6 @@
     "Greensky Bluegrass"
    ],
    "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "im-working-on-a-building-bill-monroe-version",
-   "title": "I'm Working on a Building Bill Monroe version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
    "instruments": []
   },
   {
@@ -36715,33 +36515,6 @@
     "J.D. Crowe",
     "Paul Williams",
     "The Louvin Brothers"
-   ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "interlude",
-   "title": "Interlude",
-   "title_variants": [
-    "Interlude (Return of the Ancient Ones)"
-   ],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 9,
-   "spread": 2,
-   "score": 13.5,
-   "core": true,
-   "artists": [
-    "Alder Street",
-    "Andrea Zonn",
-    "Buckethead",
-    "Béla Fleck and the Flecktones",
-    "David Grisman",
-    "Dreamend",
-    "Lindsay Lou & The Flatbellys",
-    "The Holy Modal Rounders",
-    "Tony Rice"
    ],
    "type": "Vocal",
    "instruments": []
@@ -38110,9 +37883,12 @@
   {
    "catalogue_id": "jerusalem-ridge",
    "title": "Jerusalem Ridge",
-   "title_variants": [],
+   "title_variants": [
+    "Jerusalem Ridge Kenny Baker"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 23,
    "spread": 3,
@@ -38139,21 +37915,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "catalogue_id": "jerusalem-ridge-kenny-baker",
-   "title": "Jerusalem Ridge Kenny Baker",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
   },
   {
    "catalogue_id": "jerusalem-ridge-with-stops",
@@ -38773,7 +38534,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "johnson-boys-1927-hillbillies-version",
+   "catalogue_id": "johnson-boys-1927-hillbillies",
    "title": "Johnson Boys 1927 \"Hillbillies\" version",
    "title_variants": [],
    "sources": [
@@ -38803,7 +38564,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "johnson-boys-toneway-version",
+   "catalogue_id": "johnson-boys-toneway",
    "title": "Johnson Boys ToneWay version",
    "title_variants": [],
    "sources": [
@@ -39098,17 +38859,23 @@
    "instruments": []
   },
   {
-   "catalogue_id": "julie-ann-doyle-lawson",
-   "title": "Julie Ann (Come On Home) Doyle Lawson",
-   "title_variants": [],
+   "catalogue_id": "julie-ann",
+   "title": "Julie Ann",
+   "title_variants": [
+    "Julie Ann (Come On Home) Doyle Lawson"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 2,
+   "spread": 1,
+   "score": 2.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Dean Sapp and The Hartford Express",
+    "Kentucky Blue"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -39659,17 +39426,22 @@
    ]
   },
   {
-   "catalogue_id": "keen-mountain-prison-blue-highway",
+   "catalogue_id": "keen-mountain-prison",
    "title": "Keen Mountain Prison Blue Highway",
-   "title_variants": [],
+   "title_variants": [
+    "Keen Mountain Prison"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Blue Highway"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -39740,7 +39512,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "keep-on-the-firing-line-carter-family-version",
+   "catalogue_id": "keep-on-the-firing-line-carter-family",
    "title": "Keep on the Firing Line Carter Family version",
    "title_variants": [],
    "sources": [
@@ -43193,9 +42965,12 @@
   {
    "catalogue_id": "little-rock-getaway",
    "title": "Little Rock Getaway",
-   "title_variants": [],
+   "title_variants": [
+    "Little Rock Getaway Don Reno version"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 16,
    "spread": 3,
@@ -43215,21 +42990,6 @@
     "Mike Auldridge",
     "Reno and Smiley"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "little-rock-getaway-don-reno-version",
-   "title": "Little Rock Getaway Don Reno version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -43293,7 +43053,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "little-sadie-doc-watsons-version",
+   "catalogue_id": "little-sadie-doc-watsons",
    "title": "Little Sadie Doc Watson's version",
    "title_variants": [],
    "sources": [
@@ -43308,7 +43068,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "little-sadie-tony-rices-version",
+   "catalogue_id": "little-sadie-tony-rices",
    "title": "Little Sadie Tony Rice's version",
    "title_variants": [],
    "sources": [
@@ -43417,19 +43177,17 @@
    "catalogue_id": "little-white-washed-chimney",
    "title": "Little White Washed Chimney",
    "title_variants": [
-    "Little White-Washed Chimney",
-    "Little White-Washed Chimney (w. The Cox Family & Rob Ickes)"
+    "Little White-Washed Chimney"
    ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 5,
+   "coverage": 4,
    "spread": 2,
-   "score": 7.5,
+   "score": 6.0,
    "core": false,
    "artists": [
-    "Alison Krauss & Union Station",
     "Country Gazette",
     "David Davis",
     "The Dixie Mountain Boys",
@@ -43869,17 +43627,23 @@
    "instruments": []
   },
   {
-   "catalogue_id": "lonesome-feeling-osborne-brothers",
-   "title": "Lonesome Feeling Osborne Brothers",
-   "title_variants": [],
+   "catalogue_id": "lonesome-feeling",
+   "title": "Lonesome Feeling",
+   "title_variants": [
+    "Lonesome Feeling Osborne Brothers"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 2,
+   "spread": 1,
+   "score": 2.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Jim and Jesse",
+    "The Osborne Brothers"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -43921,19 +43685,17 @@
    "catalogue_id": "lonesome-for-you",
    "title": "Lonesome for You",
    "title_variants": [
-    "Lonesome For You",
-    "Lonesome For You (w. The Cox Family & Rob Ickes)"
+    "Lonesome For You"
    ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 5,
+   "coverage": 4,
    "spread": 3,
-   "score": 10.0,
+   "score": 8.0,
    "core": false,
    "artists": [
-    "Alison Krauss & Union Station",
     "Lou Reid",
     "Mike Auldridge",
     "Ricky Skaggs",
@@ -44108,10 +43870,13 @@
   {
    "catalogue_id": "lonesome-pine",
    "title": "Lonesome Pine",
-   "title_variants": [],
+   "title_variants": [
+    "Lonesome Pine Blue Highway"
+   ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 6,
    "spread": 2,
@@ -44125,21 +43890,6 @@
     "Evergreen",
     "Iron Horse"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "lonesome-pine-blue-highway",
-   "title": "Lonesome Pine Blue Highway",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -44181,17 +43931,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "lonesome-ride-larry-sparks",
+   "catalogue_id": "lonesome-ride",
    "title": "Lonesome Ride Larry Sparks",
-   "title_variants": [],
+   "title_variants": [
+    "Lonesome Ride"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Larry Sparks and the Lonesome Ramblers"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -45211,6 +44966,7 @@
    "catalogue_id": "lost-indian",
    "title": "Lost Indian",
    "title_variants": [
+    "Lost Indian Ed Haley version",
     "The Lost Indian"
    ],
    "sources": [
@@ -45235,21 +44991,6 @@
     "Foghorn Stringband",
     "J. P. Cormier"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "lost-indian-ed-haley-version",
-   "title": "Lost Indian Ed Haley version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -49225,7 +48966,8 @@
    "catalogue_id": "mr-bojangles",
    "title": "Mr. Bojangles",
    "title_variants": [
-    "Mr Bojangles"
+    "Mr Bojangles",
+    "Mr. Bojangles The Nitty Gritty Dirt Band"
    ],
    "sources": [
     "mb-coverage"
@@ -49761,17 +49503,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "my-fathers-footsteps-bill-monroe",
-   "title": "My Father's Footsteps Bill Monroe",
-   "title_variants": [],
+   "catalogue_id": "my-fathers-footsteps",
+   "title": "My Father's Footsteps",
+   "title_variants": [
+    "My Father's Footsteps Bill Monroe"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Butch Robins"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -50607,11 +50354,13 @@
    "catalogue_id": "nashville-blues",
    "title": "Nashville Blues",
    "title_variants": [
+    "Nashville Blues Earl Scruggs",
     "Nashville Blues>"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 13,
    "spread": 3,
@@ -50631,21 +50380,6 @@
     "Robbie Fulks",
     "Roland White"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "nashville-blues-earl-scruggs",
-   "title": "Nashville Blues Earl Scruggs",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -50908,17 +50642,23 @@
    "instruments": []
   },
   {
-   "catalogue_id": "never-see-my-home-again-the-dillards",
-   "title": "Never See My Home Again The Dillards",
-   "title_variants": [],
+   "catalogue_id": "never-see-my-home-again",
+   "title": "Never See My Home Again",
+   "title_variants": [
+    "Never See My Home Again The Dillards"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 2,
+   "spread": 1,
+   "score": 2.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Doc Watson",
+    "The Dillards"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -52956,7 +52696,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "old-folks-at-home-a-la-vern-williams",
+   "catalogue_id": "old-folks-at-home-a-la",
    "title": "Old Folks at Home a la Vern Williams",
    "title_variants": [],
    "sources": [
@@ -53191,6 +52931,29 @@
    "instruments": []
   },
   {
+   "catalogue_id": "old-log-cabin",
+   "title": "Old Log Cabin",
+   "title_variants": [
+    "Old Log Cabin Longview"
+   ],
+   "sources": [
+    "mb-coverage",
+    "strum-machine"
+   ],
+   "coverage": 4,
+   "spread": 2,
+   "score": 6.0,
+   "core": false,
+   "artists": [
+    "Bill Harrell",
+    "Don Reno",
+    "Longview",
+    "The Tennessee Cut-Ups"
+   ],
+   "type": "Vocal",
+   "instruments": []
+  },
+  {
    "catalogue_id": "old-log-cabin-for-sale",
    "title": "An Old Log Cabin For Sale",
    "title_variants": [
@@ -53207,21 +52970,6 @@
    "artists": [
     "Charlie Moore"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "old-log-cabin-longview",
-   "title": "Old Log Cabin Longview",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -55987,9 +55735,12 @@
   {
    "catalogue_id": "pick-along",
    "title": "Pick Along",
-   "title_variants": [],
+   "title_variants": [
+    "Pick Along Flatt & Scruggs"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 5,
    "spread": 3,
@@ -56002,21 +55753,6 @@
     "Lester Flatt & Earl Scruggs",
     "Ricky Skaggs"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "pick-along-flatt-and-scruggs",
-   "title": "Pick Along Flatt & Scruggs",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -56214,7 +55950,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "pilgrim-lukes-version",
+   "catalogue_id": "pilgrim-lukes",
    "title": "Pilgrim Luke's version",
    "title_variants": [],
    "sources": [
@@ -57153,7 +56889,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "precious-memories-with-pauses-a-la-the-stanley-brothers",
+   "catalogue_id": "precious-memories-with-pauses-a-la",
    "title": "Precious Memories with pauses a la the Stanley Brothers",
    "title_variants": [],
    "sources": [
@@ -58077,17 +57813,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "raining-in-la-iiird-tyme-out",
+   "catalogue_id": "raining-in-la",
    "title": "Raining in LA IIIrd Tyme Out",
-   "title_variants": [],
+   "title_variants": [
+    "Raining in LA"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "IIIrd Tyme Out"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -58559,9 +58300,12 @@
   {
    "catalogue_id": "rebel-raid",
    "title": "Rebel Raid",
-   "title_variants": [],
+   "title_variants": [
+    "Rebel Raid Ed Haley"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 5,
    "spread": 2,
@@ -58574,21 +58318,6 @@
     "John Hartford",
     "The Rockinghams"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "rebel-raid-ed-haley",
-   "title": "Rebel Raid Ed Haley",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -60068,9 +59797,7 @@
   {
    "catalogue_id": "rock-bottom",
    "title": "Rock Bottom",
-   "title_variants": [
-    "Rock Bottom (With Ralph Stanley)"
-   ],
+   "title_variants": [],
    "sources": [
     "mb-coverage"
    ],
@@ -61653,6 +61380,7 @@
    "title": "Sally Ann",
    "title_variants": [
     "Sally Ann (instrumental Duet)",
+    "Sally Ann Earl Scruggs version",
     "Sally Ann key of D, 1-4-5",
     "Sally Ann key of G w/minors"
    ],
@@ -61689,21 +61417,6 @@
   {
    "catalogue_id": "sally-ann-alison-fisher",
    "title": "Sally Ann Alison Fisher",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "sally-ann-earl-scruggs-version",
-   "title": "Sally Ann Earl Scruggs version",
    "title_variants": [],
    "sources": [
     "strum-machine"
@@ -61978,17 +61691,22 @@
    ]
   },
   {
-   "catalogue_id": "salt-spring-john-reischman",
+   "catalogue_id": "salt-spring",
    "title": "Salt Spring John Reischman",
-   "title_variants": [],
+   "title_variants": [
+    "Salt Spring"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Molly Tuttle"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -65701,10 +65419,13 @@
   {
    "catalogue_id": "somehow-tonight",
    "title": "Somehow Tonight",
-   "title_variants": [],
+   "title_variants": [
+    "Somehow Tonight Flatt & Scruggs"
+   ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 11,
    "spread": 3,
@@ -65724,21 +65445,6 @@
     "Tony Rice"
    ],
    "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "somehow-tonight-flatt-and-scruggs",
-   "title": "Somehow Tonight Flatt & Scruggs",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
    "instruments": []
   },
   {
@@ -66528,7 +66234,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "star-of-the-county-down-4-4-irish-rovers-version",
+   "catalogue_id": "star-of-the-county-down-4-4-irish-rovers",
    "title": "Star of the County Down 4/4 Irish Rovers version",
    "title_variants": [],
    "sources": [
@@ -66698,9 +66404,12 @@
   {
    "catalogue_id": "steam-powered-aereo-plane",
    "title": "Steam Powered Aereo Plane",
-   "title_variants": [],
+   "title_variants": [
+    "Steam Powered Aereo Plane John Hartford"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 7,
    "spread": 3,
@@ -66715,21 +66424,6 @@
     "Sierra Hull",
     "Yonder Mountain String Band"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "steam-powered-aereo-plane-john-hartford",
-   "title": "Steam Powered Aereo Plane John Hartford",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -68726,8 +68420,7 @@
    "catalogue_id": "take-me-back",
    "title": "Take Me Back",
    "title_variants": [
-    "Take Me Back (And Leave Me There)",
-    "Take Me Back (With Ralph Stanley)"
+    "Take Me Back (And Leave Me There)"
    ],
    "sources": [
     "mb-coverage"
@@ -71722,11 +71415,13 @@
    "title": "Tom Dooley",
    "title_variants": [
     "Tom Dooley (Live)",
-    "Tom Dooley (live)"
+    "Tom Dooley (live)",
+    "Tom Dooley Doc Watson version"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 10,
    "spread": 3,
@@ -71748,22 +71443,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "tom-dooley-doc-watson-version",
-   "title": "Tom Dooley Doc Watson version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "tom-dooley-kingston-trio-version",
+   "catalogue_id": "tom-dooley-kingston-trio",
    "title": "Tom Dooley Kingston Trio version",
    "title_variants": [],
    "sources": [
@@ -72821,7 +72501,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "tumbling-tumbleweeds-buck-white-version",
+   "catalogue_id": "tumbling-tumbleweeds-buck-white",
    "title": "Tumbling Tumbleweeds Buck White version",
    "title_variants": [],
    "sources": [
@@ -73058,9 +72738,12 @@
   {
    "catalogue_id": "twin-sisters",
    "title": "Twin Sisters",
-   "title_variants": [],
+   "title_variants": [
+    "Twin Sisters Melvin Wine"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 5,
    "spread": 3,
@@ -73073,21 +72756,6 @@
     "Rhys Jones",
     "Vivian Williams"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "twin-sisters-melvin-wine",
-   "title": "Twin Sisters Melvin Wine",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -73358,11 +73026,13 @@
    "catalogue_id": "unclouded-day",
    "title": "Unclouded Day",
    "title_variants": [
-    "The Unclouded Day"
+    "The Unclouded Day",
+    "Unclouded Day Ralph Stanley version"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 11,
    "spread": 3,
@@ -73382,21 +73052,6 @@
     "The Stanley Brothers"
    ],
    "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "unclouded-day-ralph-stanley-version",
-   "title": "Unclouded Day Ralph Stanley version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
    "instruments": []
   },
   {
@@ -74202,11 +73857,13 @@
    "title": "Walk on Boy",
    "title_variants": [
     "Walk On Boy",
-    "Walk on Boy (Vanguard version)"
+    "Walk on Boy (Vanguard version)",
+    "Walk on Boy Doc Watson"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 9,
    "spread": 3,
@@ -74223,21 +73880,6 @@
     "The Burnett Sisters Band",
     "The Tennessee Cut-Ups"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "walk-on-boy-doc-watson",
-   "title": "Walk on Boy Doc Watson",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -74950,7 +74592,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "water-underneath-the-bridge",
+   "catalogue_id": "water-underneath",
    "title": "Water Underneath The Bridge",
    "title_variants": [],
    "sources": [
@@ -75912,9 +75554,12 @@
   {
    "catalogue_id": "welcome-to-new-york",
    "title": "Welcome to New York",
-   "title_variants": [],
+   "title_variants": [
+    "Welcome to New York Bill Emerson"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 4,
    "spread": 3,
@@ -75926,21 +75571,6 @@
     "The Country Gentlemen",
     "Unlimited Tradition"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "welcome-to-new-york-bill-emerson",
-   "title": "Welcome to New York Bill Emerson",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -76470,15 +76100,13 @@
   {
    "catalogue_id": "wheel-hoss",
    "title": "Wheel Hoss",
-   "title_variants": [
-    "Wheel Hoss (with David Grisman and Tim O'Brien)"
-   ],
+   "title_variants": [],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 25,
+   "coverage": 24,
    "spread": 3,
-   "score": 50.0,
+   "score": 48.0,
    "core": true,
    "artists": [
     "Alison Krauss & Union Station",
@@ -78408,11 +78036,13 @@
    "title": "Who Will Sing for Me",
    "title_variants": [
     "Who Will Sing For Me",
+    "Who Will Sing for Me Flatt & Scruggs version",
     "Who Will Sing for Me?"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 16,
    "spread": 3,
@@ -78432,21 +78062,6 @@
     "Lester Flatt & Earl Scruggs",
     "Ralph Stanley"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "who-will-sing-for-me-flatt-and-scruggs-version",
-   "title": "Who Will Sing for Me Flatt & Scruggs version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -79001,17 +78616,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "wild-mountain-flowers-for-mary-lost-and-found",
-   "title": "Wild Mountain Flowers for Mary Lost and Found",
-   "title_variants": [],
+   "catalogue_id": "wild-mountain-flowers-for-mary",
+   "title": "Wild Mountain Flowers for Mary",
+   "title_variants": [
+    "Wild Mountain Flowers for Mary Lost and Found"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Lost & Found"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -79574,7 +79194,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "wind-and-rain-jerry-garcia-version",
+   "catalogue_id": "wind-and-rain-jerry-garcia",
    "title": "Wind and Rain Jerry Garcia version",
    "title_variants": [],
    "sources": [
@@ -80076,7 +79696,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "world-is-waiting-for-a-sunrise-the-don-reno",
+   "catalogue_id": "world-is-waiting-for-a-sunrise",
    "title": "World is Waiting for a Sunrise, The Don Reno",
    "title_variants": [],
    "sources": [
@@ -80470,7 +80090,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "yellow-rose-of-texas-the-ben-tommy-jarrell",
+   "catalogue_id": "yellow-rose-of-texas-the-ben-tommy",
    "title": "Yellow Rose of Texas, The Ben/Tommy Jarrell",
    "title_variants": [],
    "sources": [
@@ -80658,10 +80278,13 @@
   {
    "catalogue_id": "you-are-my-flower",
    "title": "You Are My Flower",
-   "title_variants": [],
+   "title_variants": [
+    "You Are My Flower Flatt & Scruggs"
+   ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 8,
    "spread": 3,
@@ -80677,21 +80300,6 @@
     "The Bluegrass Band",
     "The Osborne Brothers"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "you-are-my-flower-flatt-and-scruggs",
-   "title": "You Are My Flower Flatt & Scruggs",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -80938,10 +80546,12 @@
    "catalogue_id": "you-dont-know-my-mind",
    "title": "You Don't Know My Mind",
    "title_variants": [
+    "You Don't Know My Mind Jimmy Martin",
     "You Don’t Know My Mind"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 11,
    "spread": 3,
@@ -80960,21 +80570,6 @@
     "The Tony Rice Unit",
     "Tony Rice"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "you-dont-know-my-mind-jimmy-martin",
-   "title": "You Don't Know My Mind Jimmy Martin",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
