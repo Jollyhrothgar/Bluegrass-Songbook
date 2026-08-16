@@ -1159,7 +1159,11 @@ async function submitSong(data) {
         triggerAutoCommit(pendingEntry).then(result => {
             if (result?.mode === 'fork') {
                 showToast(
-                    `Saved as your arrangement of "${title}" — find it under Arrangements on that song's page. The original is untouched.`,
+                    // The pill is labelled "N versions", so say that — and it
+                    // is already listed there: the pending overlay carries
+                    // both takes (corpus.pendingForkArrangements) minutes
+                    // before the build publishes the new part.
+                    `Saved as your arrangement of "${title}" — it's in the versions list on that song's page. The original is untouched.`,
                     { duration: 8000 }
                 );
             }

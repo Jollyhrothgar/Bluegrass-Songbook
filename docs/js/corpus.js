@@ -72,6 +72,48 @@ function asIdSet(value) {
 }
 
 /**
+ * The two takes a pending FORK puts on one work, or null when the pending
+ * row isn't a fork.
+ *
+ * Editing a chart you don't own doesn't overwrite it: the server lands your
+ * text as an extra lead-sheet part on the same work
+ * (`works_writer.fork_to_arrangement`), and the next index build publishes it
+ * in the row's `arrangements`. Until that build lands, the pending overlay is
+ * all the browser has — and an overlay that only carried the new text would
+ * make the published chart vanish from the page for the minutes in between,
+ * and make the submit toast's promise ("it's in the versions list") false.
+ * So the merged row advertises both takes right away.
+ *
+ * Ownership mirrors `process_pending.owns_content`: the work is yours only if
+ * a part there records you as its submitter. Nobody's submitter ⇒ not yours
+ * ⇒ a fork, which is why most edits of imported charts land here.
+ */
+export function pendingForkArrangements(base, pending) {
+    if (typeof pending?.content !== 'string' || !pending.content) return null;
+    if (base.submitted_by && base.submitted_by === pending.created_by) {
+        return null;   // your own chart — this is an update, not a fork
+    }
+
+    const published = base.arrangements?.length ? base.arrangements : [{
+        slug: 'default',
+        label: 'Original',
+        default: true,
+        file: `data/songs/${base.id}.pro`,
+        ...(base.key ? { key: base.key } : {}),
+        ...(base.chord_count ? { chord_count: base.chord_count } : {}),
+    }];
+
+    return [...published, {
+        slug: 'pending',
+        label: 'Your arrangement',
+        pending: true,
+        content: pending.content,
+        ...(pending.key ? { key: pending.key } : {}),
+        ...(pending.created_by ? { submitted_by: pending.created_by } : {}),
+    }];
+}
+
+/**
  * Merge the row sources into the corpus the app runs on.
  *
  * Pending rows overlay static rows: a pending row with `replaces_id`
@@ -115,7 +157,11 @@ export function mergeCorpus({
 
     const mergedPending = pendingRows.map(p => {
         const base = p.replaces_id ? staticMap[p.replaces_id] : null;
-        return base ? { ...base, ...p, source: 'pending' } : p;
+        if (!base) return p;
+        const merged = { ...base, ...p, source: 'pending' };
+        const forked = pendingForkArrangements(base, p);
+        if (forked) merged.arrangements = forked;
+        return merged;
     });
 
     const replacedIds = new Set(

@@ -43,13 +43,13 @@ Modes
     the "hard to destroy" rule — a second chart for a song is never a
     reason to replace the first one.
 
-Note for whoever wires the UI to ``fork_to_arrangement``:
-``build_works_index.build_song_from_work`` still reads exactly one lead
-sheet per work (hard-coded ``lead-sheet.pro``), so a forked lead-sheet part
-is recorded faithfully in ``work.yaml`` but is not yet surfaced by the
-index. Surfacing it is the Arrangement-pill work in phase 2c of
-``docs/plans/contribution-pipeline.md``; the data written here is what that
-step will read.
+Where a forked part surfaces (issue #232, phase 2c):
+``build_works_index.build_song_from_work`` publishes every lead-sheet part —
+the primary as ``docs/data/songs/{id}.pro`` (unchanged), each fork as
+``{id}--{slug}.pro`` — and lists them in the row's ``arrangements``, which
+the Arrangement pill turns into a choice. The ``label`` / ``version_type`` /
+``arrangement_by`` / ``version_notes`` written here are exactly what that
+list shows, and the part FILENAME is what its stable slug is derived from.
 """
 
 from __future__ import annotations
