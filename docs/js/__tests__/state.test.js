@@ -9,7 +9,9 @@ import {
     // Test with a few concrete state values
     currentView, setCurrentView,
     currentSearchQuery, setCurrentSearchQuery,
-    corpusLoadFailed, setCorpusLoadFailed
+    corpusLoadFailed, setCorpusLoadFailed,
+    historyInitialized, setHistoryInitialized,
+    bootRouteClaimed, setBootRouteClaimed, canRouteBootUrl
 } from '../state.js';
 
 // Helper to wait for requestAnimationFrame callbacks
@@ -200,5 +202,76 @@ describe('corpusLoadFailed', () => {
 
         expect(corpusLoadFailed).toBe(false);
         expect(callback).toHaveBeenCalledWith(false, 'corpusLoadFailed');
+    });
+});
+
+// The boot sequence in main.js loadIndex() ends by routing the URL the page
+// loaded with. That tail runs after a network round-trip, so a user can
+// navigate first — and the tail used to yank them back. bootRouteClaimed is
+// the flag that lets the tail tell "nobody has moved" from "the user already
+// chose a view".
+describe('bootRouteClaimed', () => {
+    beforeEach(() => {
+        setBootRouteClaimed(false);
+        setHistoryInitialized(false);
+    });
+
+    afterEach(() => {
+        setBootRouteClaimed(false);
+        setHistoryInitialized(false);
+    });
+
+    it('defaults to unclaimed, so an untouched boot still routes its URL', () => {
+        expect(bootRouteClaimed).toBe(false);
+        expect(getState('bootRouteClaimed')).toBe(false);
+        expect(canRouteBootUrl()).toBe(true);
+    });
+
+    it('canRouteBootUrl() goes false once the route is claimed', () => {
+        setBootRouteClaimed(true);
+        expect(bootRouteClaimed).toBe(true);
+        expect(getState('bootRouteClaimed')).toBe(true);
+        expect(canRouteBootUrl()).toBe(false);
+    });
+
+    it('round-trips through setState/getState like its siblings', () => {
+        setState({ bootRouteClaimed: true });
+        expect(getState('bootRouteClaimed')).toBe(true);
+        setState({ bootRouteClaimed: false });
+        expect(getState('bootRouteClaimed')).toBe(false);
+    });
+
+    // The two halves of the guard, as main.js sequences them:
+    //   pushHistoryState() -> if (!historyInitialized) setBootRouteClaimed(true)
+    //   boot tail          -> setHistoryInitialized(true); if (canRouteBootUrl()) route()
+    const pushHistoryState = () => {
+        if (!historyInitialized) setBootRouteClaimed(true);
+    };
+    const bootTail = (route) => {
+        setHistoryInitialized(true);
+        if (canRouteBootUrl()) route();
+    };
+
+    it('routes the boot URL when nothing navigated during load', () => {
+        const route = vi.fn();
+        bootTail(route);
+        expect(route).toHaveBeenCalledTimes(1);
+    });
+
+    it('stands down when the user navigated while the index was loading', () => {
+        const route = vi.fn();
+        pushHistoryState();          // user clicks a nav link mid-boot
+        expect(bootRouteClaimed).toBe(true);
+        bootTail(route);
+        expect(route).not.toHaveBeenCalled();
+    });
+
+    it('does not let post-boot navigation claim anything', () => {
+        const route = vi.fn();
+        bootTail(route);             // boot finishes untouched
+        expect(route).toHaveBeenCalledTimes(1);
+
+        pushHistoryState();          // ordinary navigation afterwards
+        expect(bootRouteClaimed).toBe(false);
     });
 });
