@@ -9,10 +9,13 @@ test.describe('Search', () => {
         await page.waitForSelector('#search-input');
     });
 
-    test('displays search prompt on initial load', async ({ page }) => {
-        // Search view now shows a prompt instead of popular songs on initial load
-        await expect(page.locator('.search-prompt')).toBeVisible();
-        await expect(page.locator('.search-prompt')).toContainText('Search for songs');
+    test('an empty search box browses the whole canon', async ({ page }) => {
+        // #search with nothing typed means BROWSE — the home page's "Search
+        // All Songs" card advertises "Browse the full jam collection — N
+        // songs", so the nav link and the deep link must deliver that. The
+        // old .search-prompt placeholder this test looked for is long gone.
+        await expect(page.locator('#search-stats')).toContainText(/[1-9][\d,]*\s+songs/, { timeout: 20000 });
+        await expect(page.locator('.result-item').first()).toBeVisible();
     });
 
     test('search by title returns results', async ({ page }) => {

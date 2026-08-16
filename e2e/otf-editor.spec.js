@@ -13,6 +13,21 @@ async function openDemo(page) {
     await page.locator('.editor-canvas-container').click({ position: { x: 100, y: 60 } });
 }
 
+// Measure the first stave SVG for mouse-coordinate work. openDemo only waits
+// for .stave-row, so a re-render (enterPhrase) can leave the child <svg>
+// attached but not yet laid out — boundingBox() then returns null and the
+// drag tests die on `box.x`. Wait for it to be measurable first.
+async function staveBox(page) {
+    const svg = page.locator('.editor-renderer .stave-row svg').first();
+    await expect(svg).toBeVisible();
+    let box = null;
+    await expect(async () => {
+        box = await svg.boundingBox();
+        expect(box?.width ?? 0).toBeGreaterThan(0);
+    }).toPass();
+    return box;
+}
+
 const statusM = (page) => page.locator('.editor-status-bar')
     .textContent().then(t => t.replace(/\s+/g, ' ').match(/M: (\d+) \| Beat: ([\d.]+)/));
 
@@ -126,8 +141,7 @@ test.describe('selection, clipboard, phrases', () => {
     test('drag selects (highlight) and toolbar copy/paste moves the phrase', async ({ page }) => {
         await openDemo(page);
         await enterPhrase(page);
-        const svg = page.locator('.editor-renderer .stave-row svg').first();
-        const box = await svg.boundingBox();
+        const box = await staveBox(page);
         await page.mouse.move(box.x + 40, box.y + 45);
         await page.mouse.down();
         await page.mouse.move(box.x + 200, box.y + 45, { steps: 5 });
@@ -149,8 +163,7 @@ test.describe('selection, clipboard, phrases', () => {
     test('right-click menu acts on the phrase (repeat measures)', async ({ page }) => {
         await openDemo(page);
         await enterPhrase(page);
-        const svg = page.locator('.editor-renderer .stave-row svg').first();
-        const box = await svg.boundingBox();
+        const box = await staveBox(page);
         await page.mouse.move(box.x + 40, box.y + 45);
         await page.mouse.down();
         await page.mouse.move(box.x + 260, box.y + 45, { steps: 5 });
