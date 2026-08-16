@@ -1030,9 +1030,10 @@ let prefSubscriptionsRegistered = false;
  * display-preference subscriptions that re-render the lead-sheet body.
  * Called once from main.js init.
  *   onEdit(song)   - open the song editor
- *   onDelete()     - admin delete flow
+ *   onDelete()     - admin delete flow (instant)
+ *   onRequestDelete() - trusted-user delete REQUEST (queued for an admin)
  *   isAdmin()      - current admin status (drives the Delete overflow item)
- *   isTrusted()    - current trusted status (drives the Promote overflow item)
+ *   isTrusted()    - current trusted status (drives Promote + Request deletion)
  *   onPromote()    - promote/unpromote the viewed archived song
  *   isPromoted(id) - promoted this session (flips the item to Undo)
  */
@@ -1153,11 +1154,20 @@ export function updateWorkTopBar() {
             onClick: () => workPageHooks.onPromote?.(),
         });
     }
+    // One slot, two meanings: admins delete on the spot, trusted users ask.
+    // Deletion is the destructive residue phase 2d keeps reviewed — see
+    // review-queue.js for the queue the request lands in.
     if (workPageHooks.isAdmin?.()) {
         overflow.push({
             id: 'delete-song-btn',
             label: '🗑️ Delete song',
             onClick: () => workPageHooks.onDelete?.(),
+        });
+    } else if (workPageHooks.isTrusted?.()) {
+        overflow.push({
+            id: 'request-delete-song-btn',
+            label: '🗑️ Request deletion',
+            onClick: () => workPageHooks.onRequestDelete?.(),
         });
     }
 

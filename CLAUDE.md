@@ -443,6 +443,17 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
   writes (song/tab submissions and corrections) require login, reports and requests
   don't (Phase 2a — see `docs/plans/contribution-pipeline.md`)
 
+- **Review queue (Aug 2026, phase 2d)**: deletions / suppressions /
+  merge-redirects are the only asks still reviewed. Trusted users file a
+  request, admins decide, in the Bluegrass Dungeon panel
+  (`docs/js/review-queue.js`, `review_requests`). Admins keep the instant
+  delete. Approving a suppress or merge-redirect prints the local command
+  instead of pretending CI can run it.
+- **Document upload removed (Aug 2026, phase 2d)**: the intake staged files
+  nothing downstream ever read. Document parts already in `works/` and the
+  PDFs in `docs/data/docs/` still serve — this killed the intake, not the
+  shelf.
+
 **What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
 
 **Recent (Feb 2026):**
@@ -468,6 +479,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | BluegrassLyrics.com import | `sources/bluegrass-lyrics/CLAUDE.md` |
 | Ultimate Guitar chord scraper | `sources/ultimate-guitar/CLAUDE.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |
+| Review a delete/suppress/merge request | `docs/js/review-queue.js` + `supabase/CLAUDE.md` |
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
 | Write a blog post | `docs/posts/` (then run `./scripts/utility build-posts`) |

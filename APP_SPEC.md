@@ -155,6 +155,7 @@ The app uses Supabase (PostgreSQL) for user data:
 | `trusted_users` | Users with elevated permissions (instant edits) |
 | `admin_users` | Admin users (can delete songs) |
 | `deleted_songs` | Soft-deleted songs |
+| `review_requests` | Queued destructive asks (delete / suppress / merge-redirect); trusted users file, admins decide |
 | `bounties` | Community requests for specific content types |
 | `analytics_events` | Behavioral analytics (batched insert via RPC) |
 | `visitor_stats` / `visitors` | Visitor counting |

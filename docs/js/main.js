@@ -62,6 +62,9 @@ import {
 } from './corpus.js';
 import { getSongContents } from './song-content.js';
 import { showToast } from './toast.js';
+import {
+    configureReviewQueue, showReviewQueue, hideReviewQueue, submitReviewRequest,
+} from './review-queue.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -366,6 +369,11 @@ function initViewSubscription() {
         if (view !== 'add-song') {
             exitEditMode();
         }
+
+        // The review queue sits above the results list, so it belongs to the
+        // search view only — dungeon mode persists onto song pages, and the
+        // queue must not ride along.
+        if (view !== 'search') hideReviewQueue();
 
         // Top band: the song page declares its own chrome (back/title/
         // actions); every other view gets the plain nav band. The bottom
@@ -1004,6 +1012,11 @@ async function enterDungeon(query = '', { fromHistory = false, replace = false }
     if (searchableSongs().length === 0 && resultsDiv) {
         resultsDiv.innerHTML = '<div class="no-results">The dungeon is empty — the archive could not be loaded. Try reloading the page.</div>';
     }
+
+    // The Dungeon is where curation happens (Promote lives on its songs), so
+    // the review queue for the destructive asks hangs here too. It renders
+    // itself away for anyone who is neither trusted nor admin.
+    showReviewQueue();
 }
 
 function navigateTo(mode) {
@@ -1456,6 +1469,9 @@ function updateDeleteButtonVisibility() {
     if (currentView === 'song') {
         updateWorkTopBar();
     }
+    // Trust/admin resolving late must not leave the Dungeon's queue hidden
+    // (or, on sign-out, visible).
+    if (dungeonMode) showReviewQueue();
 }
 
 // Promote the viewed archived song into the main index (trusted users).
@@ -1556,6 +1572,36 @@ async function confirmDeleteSelected(listEl, confirmBtn, statusEl) {
         statusEl.textContent = `Failed: ${err.message}`;
         confirmBtn.disabled = false;
     }
+}
+
+// Trusted-but-not-admin: the same overflow slot files a request instead of
+// deleting. Admins keep the instant modal above — they are the reviewers, so
+// queueing them would just be a round trip through their own inbox.
+async function handleRequestDeleteSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    const reason = prompt(
+        `Ask an admin to delete "${song.title}"?\n\nWhy should it go? (duplicate, junk data, wrong song…)`
+    );
+    if (reason === null) return;
+    if (!reason.trim()) {
+        alert('A reason is required — the reviewer only sees what you write here.');
+        return;
+    }
+
+    const { error } = await submitReviewRequest({
+        kind: 'delete',
+        targetId: song.id,
+        payload: { title: song.title },
+        reason: reason.trim(),
+    });
+    if (error) {
+        alert(`Could not file the request: ${error.message}`);
+        return;
+    }
+    alert(`Requested deletion of "${song.title}".\n\nIt stays on the site until an admin approves it — you can follow it in the review queue in the Bluegrass Dungeon.`);
+    if (dungeonMode) showReviewQueue();
 }
 
 function updateVisitorStats(totalViews, totalVisitors) {
@@ -2334,6 +2380,9 @@ function init() {
     // rAF-batched, so the argument can lag behind rapid flag changes.
     subscribe('dungeonMode', () => {
         document.body.classList.toggle('dungeon-mode', dungeonMode);
+        // The review queue is Dungeon chrome too: leaving the scope takes it
+        // with you (enterDungeon re-renders it on the way in).
+        if (!dungeonMode) hideReviewQueue();
     });
     document.body.classList.toggle('dungeon-mode', dungeonMode);
 
@@ -2399,10 +2448,22 @@ function init() {
     configureWorkPage({
         onEdit: (song) => enterEditMode(song),
         onDelete: handleDeleteSong,
+        onRequestDelete: handleRequestDeleteSong,
         isAdmin: () => isAdminUser,
         isTrusted: () => isTrustedFlag,
         onPromote: handlePromoteSong,
         isPromoted: (id) => promotedIds.has(id),
+    });
+
+    configureReviewQueue({
+        isAdmin: () => isAdminUser,
+        isTrusted: () => isTrustedFlag,
+        // An approved delete has already landed in deleted_songs; mirror it
+        // client-side so the corpus stops serving the song immediately.
+        onDeleteExecuted: (id) => {
+            deletedIds.add(id);
+            rebuildCorpus();
+        },
     });
 
     initSearch({
