@@ -1,0 +1,71 @@
+name: Deploy Supabase Functions
+
+# Phase 1a of the contribution pipeline (docs/plans/contribution-pipeline.md,
+# issue #217): nothing in .github/ deploys supabase/functions/ today — all
+# seven functions are hand-deployed, so production is whatever someone last
+# pushed from a laptop.
+#
+# BEFORE THIS WORKFLOW'S FIRST REAL RUN: the current prod state of all seven
+# functions is unknown, so a hand-deploy to a known baseline must happen
+# first, or this workflow's first run will silently overwrite them with
+# whatever's on main. From a machine with the Supabase CLI logged in:
+#
+#   supabase functions deploy --project-ref ofmqlrnyldlmvggihogt
+#
+# Also: the SUPABASE_ACCESS_TOKEN secret must be added to the repo (Settings
+# > Secrets and variables > Actions) before this workflow can run at all —
+# it has no fallback and will fail loudly without it.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'supabase/functions/**'
+      - '.github/workflows/deploy-functions.yml'
+  workflow_dispatch:
+    inputs:
+      function:
+        description: 'Function name to deploy (leave blank to deploy all)'
+        required: false
+        type: string
+
+concurrency:
+  group: deploy-functions
+  cancel-in-progress: false
+
+env:
+  # Public — this is the same project ref shipped in the frontend's Supabase
+  # client config, not a secret.
+  SUPABASE_PROJECT_ID: ofmqlrnyldlmvggihogt
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Supabase CLI
+        uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Deploy edge function(s)
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+        run: |
+          if [ -z "$SUPABASE_ACCESS_TOKEN" ]; then
+            echo "::error::SUPABASE_ACCESS_TOKEN secret is not set"
+            exit 1
+          fi
+
+          fn="${{ inputs.function }}"
+          if [ -n "$fn" ]; then
+            echo "Deploying single function: $fn"
+            supabase functions deploy "$fn" --project-ref "$SUPABASE_PROJECT_ID"
+          else
+            echo "Deploying all functions"
+            supabase functions deploy --project-ref "$SUPABASE_PROJECT_ID"
+          fi
