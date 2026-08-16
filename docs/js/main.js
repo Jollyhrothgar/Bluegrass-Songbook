@@ -61,6 +61,7 @@ import {
     fetchJsonl, mergeCorpus, markArchived, countDistinctTitles, whenIdle,
 } from './corpus.js';
 import { getSongContents } from './song-content.js';
+import { showToast } from './toast.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -1763,18 +1764,6 @@ async function handlePasswordUpdate() {
     } finally {
         resetUpdateBtn.disabled = false;
     }
-}
-
-function showToast(message) {
-    const toast = document.createElement('div');
-    toast.className = 'auth-toast';
-    toast.textContent = message;
-    document.body.appendChild(toast);
-    requestAnimationFrame(() => toast.classList.add('visible'));
-    setTimeout(() => {
-        toast.classList.remove('visible');
-        setTimeout(() => toast.remove(), 300);
-    }, 3000);
 }
 
 function initAuthModal() {

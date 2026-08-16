@@ -11,6 +11,7 @@ import { generateSlug } from './utils.js';
 import { getSongContent, primeSongContent } from './song-content.js';
 import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
+import { showToast } from './toast.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
 import { openSuperUserRequestModal } from './superuser-request.js';
 import { createInteractivePreview } from './visual-editor/preview.js';
@@ -912,9 +913,17 @@ async function submitAsTrustedUser(data) {
             throw new Error(error.message);
         }
 
-        // Step 2: Trigger auto-commit (fire and forget)
+        // Step 2: Trigger auto-commit. Still non-blocking — the edit is already
+        // live from the pending_songs row above — but a failure is no longer
+        // silent: the hourly reconciler will retry it, and the user is told
+        // their edit is live but not yet synced rather than being left to
+        // believe everything landed.
         triggerAutoCommit(pendingEntry).catch(e => {
-            console.warn('Auto-commit failed, will retry later:', e);
+            console.error('Auto-commit failed; edit is live but not yet in git:', e);
+            showToast(
+                'Saved and live — but syncing to the songbook is still pending. It will retry automatically.',
+                { variant: 'warning', duration: 6000 }
+            );
         });
 
         trackSubmission(editMode ? 'correction' : 'new_song');
@@ -950,14 +959,23 @@ async function submitAsTrustedUser(data) {
 }
 
 /**
- * Trigger auto-commit edge function (fire and forget)
+ * Trigger the auto-commit edge function.
+ *
+ * Rejects when the commit did not happen, so the caller can tell the user.
+ * The old version awaited the fetch and ignored `response.ok`, which meant a
+ * 500 from the function resolved happily and the `.catch` never ran — the
+ * failure mode this is here to surface was the one it hid.
+ *
+ * Exported for tests.
  */
-async function triggerAutoCommit(entry) {
+export async function triggerAutoCommit(entry) {
     const supabase = window.SupabaseAuth?.supabase;
     const { data: { session } } = await supabase?.auth.getSession() || { data: {} };
-    if (!session?.access_token) return;
+    if (!session?.access_token) {
+        throw new Error('No active session — cannot sync to the songbook');
+    }
 
-    await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
+    const response = await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${session.access_token}`,
@@ -965,6 +983,16 @@ async function triggerAutoCommit(entry) {
         },
         body: JSON.stringify(entry),
     });
+
+    if (!response.ok) {
+        let detail = '';
+        try {
+            detail = (await response.json())?.error || '';
+        } catch {
+            // non-JSON error body; the status is enough
+        }
+        throw new Error(`auto-commit-song returned ${response.status}${detail ? `: ${detail}` : ''}`);
+    }
 }
 
 /**
