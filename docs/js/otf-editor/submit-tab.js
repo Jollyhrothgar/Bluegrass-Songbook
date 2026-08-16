@@ -28,13 +28,19 @@ export function serializeForSubmission(otf) {
     return compact;
 }
 
-/** Attribution string, same convention as song submissions. */
-export function submitterAttribution() {
-    const user = globalThis.window?.SupabaseAuth?.getUser?.();
-    if (user) {
-        return user.user_metadata?.full_name || user.email || 'Anonymous User';
-    }
-    return 'Rando Calrissian';
+/**
+ * The signed-in caller's access token, or null.
+ *
+ * Tab submissions are content the submitter will look for later, so they
+ * require login (Phase 2a). The token IS the attribution: the edge function
+ * derives the submitter from it and ignores anything the client claims —
+ * there is no `submittedBy` field any more.
+ */
+export async function accessToken() {
+    const supabase = globalThis.window?.SupabaseAuth?.supabase;
+    if (!supabase) return null;
+    const { data } = await supabase.auth.getSession();
+    return data?.session?.access_token || null;
 }
 
 /**
@@ -54,6 +60,11 @@ export async function submitTab(
     { type, otf, title, instrument, workId, comment },
     fetchImpl = globalThis.fetch,
 ) {
+    const token = await accessToken();
+    if (!token) {
+        throw new Error('Sign in to submit tabs — your account is the attribution.');
+    }
+
     const payload = {
         type,
         title,
@@ -61,13 +72,12 @@ export async function submitTab(
         workId,
         comment,
         otf: serializeForSubmission(otf),
-        submittedBy: submitterAttribution(),
     };
     const response = await fetchImpl(`${SUPABASE_URL}/functions/v1/create-tab-pr`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+            'Authorization': `Bearer ${token}`,
             'apikey': SUPABASE_ANON_KEY,
         },
         body: JSON.stringify(payload),

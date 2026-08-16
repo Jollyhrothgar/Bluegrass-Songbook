@@ -7,7 +7,7 @@ import {
     editingSongId, setEditingSongId,
     editorNashvilleMode, setEditorNashvilleMode
 } from './state.js';
-import { generateSlug } from './utils.js';
+import { generateSlug, requireLogin } from './utils.js';
 import { getSongContent, primeSongContent } from './song-content.js';
 import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
@@ -29,16 +29,9 @@ export {
     editorConvertToChordPro, editorDetectAndConvert
 };
 
-/**
- * Get the submitter attribution for issue body.
- * Requires logged-in user (anonymous path removed).
- */
-function getSubmitterAttribution() {
-    const user = window.SupabaseAuth?.getUser?.();
-    return user?.user_metadata?.full_name || user?.email || 'Anonymous User';
-}
-
-// Supabase configuration for anonymous submissions
+// Supabase configuration. Song submissions and corrections require a
+// session (Phase 2a): identity comes from the verified session server-side,
+// so the client sends the user's access token and no attribution field.
 const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
 
@@ -824,6 +817,17 @@ export function initEditor(options) {
                 }
             }
 
+            // Login gate at submit time, not at open time: anyone may draft
+            // a song in the editor, but a submission is content the author
+            // will come back looking for, so it needs an identity.
+            if (!requireLogin('submit songs')) {
+                if (editorStatusEl) {
+                    editorStatusEl.textContent = 'Sign in to submit — your draft stays here.';
+                    editorStatusEl.className = 'save-status error';
+                }
+                return;
+            }
+
             // Check if user is a trusted user (can save instantly)
             const isTrusted = await window.SupabaseAuth?.isTrustedUser?.();
 
@@ -837,12 +841,14 @@ export function initEditor(options) {
                     content
                 });
             } else {
-                // Regular flow: create GitHub issue for approval
-                await submitToGitHubIssue({
-                    title,
-                    artist,
-                    chordpro
-                });
+                // Regular flow: create GitHub issue for approval.
+                // It rethrows so callers/tests can see the failure; the
+                // status line has already told the user about it.
+                try {
+                    await submitToGitHubIssue({ title, artist, chordpro });
+                } catch {
+                    /* reported in the status line */
+                }
             }
         });
     }
@@ -953,8 +959,9 @@ async function submitAsTrustedUser(data) {
             editorStatusEl.textContent = `Error: ${error.message}`;
             editorStatusEl.className = 'save-status error';
         }
+        throw error;
     } finally {
-        editorSubmitBtnEl.disabled = false;
+        if (editorSubmitBtnEl) editorSubmitBtnEl.disabled = false;
     }
 }
 
@@ -996,9 +1003,15 @@ export async function triggerAutoCommit(entry) {
 }
 
 /**
- * Submit to GitHub issue for approval (regular user flow)
+ * Submit to GitHub issue for approval (regular user flow).
+ *
+ * Login required (Phase 2a): the caller's session token is the ONLY
+ * attribution — it goes out as the bearer token and the edge function
+ * derives the submitter from it. Nothing in the payload names a person.
+ *
+ * Exported for tests.
  */
-async function submitToGitHubIssue(data) {
+export async function submitToGitHubIssue(data) {
     const { title, artist, chordpro } = data;
 
     let submissionData;
@@ -1016,32 +1029,38 @@ async function submitToGitHubIssue(data) {
             artist: artist || undefined,
             songId: editingSongId,
             chordpro,
-            comment,
-            submittedBy: getSubmitterAttribution()
+            comment
         };
     } else {
         submissionData = {
             type: 'submission',
             title,
             artist: artist || undefined,
-            chordpro,
-            submittedBy: getSubmitterAttribution()
+            chordpro
         };
     }
 
     // Disable button and show submitting state
-    editorSubmitBtnEl.disabled = true;
+    if (editorSubmitBtnEl) editorSubmitBtnEl.disabled = true;
     if (editorStatusEl) {
         editorStatusEl.textContent = 'Submitting...';
         editorStatusEl.className = 'save-status';
     }
 
     try {
+        // The session token IS the attribution — the edge function derives
+        // the submitter from it and rejects unauthenticated callers.
+        const supabase = window.SupabaseAuth?.supabase;
+        const session = supabase ? (await supabase.auth.getSession()).data.session : null;
+        if (!session?.access_token) {
+            throw new Error('Sign in to submit — your account is the attribution');
+        }
+
         const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                'Authorization': `Bearer ${session.access_token}`,
                 'apikey': SUPABASE_ANON_KEY
             },
             body: JSON.stringify(submissionData)
@@ -1101,7 +1120,8 @@ async function submitToGitHubIssue(data) {
             editorStatusEl.textContent = `Error: ${error.message}`;
             editorStatusEl.className = 'save-status error';
         }
+        throw error;
     } finally {
-        editorSubmitBtnEl.disabled = false;
+        if (editorSubmitBtnEl) editorSubmitBtnEl.disabled = false;
     }
 }

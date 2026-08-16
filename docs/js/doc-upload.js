@@ -33,11 +33,6 @@ let currentRotation = 0; // 0, 90, 180, 270
 // State for contribute mode (pre-filled from placeholder)
 let targetSlug = null;
 
-function getSubmitterAttribution() {
-    const user = window.SupabaseAuth?.getUser?.();
-    return user?.user_metadata?.full_name || user?.email || 'Anonymous User';
-}
-
 function showStatus(message, isError = false) {
     if (!statusEl) return;
     statusEl.textContent = message;
@@ -477,7 +472,14 @@ async function submitAsRegularUser(slug, title, artist, key, instrument, label) 
 
     if (dbError) throw new Error(dbError.message);
 
-    // Create GitHub issue for review
+    // Notify via create-song-request. No attribution field: identity is
+    // derived server-side from the session, never claimed by the client
+    // (Phase 2a).
+    // NOTE: this payload has never matched create-song-request's contract
+    // ({id, title, artist, key, notes}), so the call has always been a
+    // no-op — left as-is deliberately, since Phase 2d removes the whole
+    // doc-upload flow rather than repairing it (repairing it here would
+    // start minting placeholder works as a side effect of an upload).
     await fetch(`${SUPABASE_URL}/functions/v1/create-song-request`, {
         method: 'POST',
         headers: {
@@ -488,7 +490,6 @@ async function submitAsRegularUser(slug, title, artist, key, instrument, label) 
             songTitle: title,
             artist: artist || undefined,
             details: `Document upload (PDF/image) by logged-in user.${instrument ? ` Instrument: ${instrument}.` : ''}${label !== title ? ` Description: ${label}.` : ''} File staged at: ${storagePath}`,
-            submittedBy: getSubmitterAttribution(),
         }),
     });
 
