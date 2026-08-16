@@ -230,6 +230,33 @@ Row-shape changes (`write_outputs()` in `build_works_index.py`):
 | `has_abc` | `true` when the lead sheet embeds an ABC block; **omitted** otherwise |
 | `tablature_parts[].tracks` | int — the OTF's PLAYABLE track count, read during the tab copy step (lets the frontend decide about the track mixer without downloading the OTF). Percussion tracks are excluded: they're neither rendered nor played, so counting them would stamp `tag:multipart` on single-instrument tabs |
 | `lyrics` | unchanged on canon rows; clipped to 200 chars on archive rows |
+| `arrangements` | present **only** on a work that holds more than one lead sheet (see below); omitted otherwise, so single-sheet rows are untouched |
+
+**Forked lead sheets (`arrangements`)**. `works_writer.fork_to_arrangement`
+lands an edit of somebody else's chart as an ADDITIONAL lead-sheet part on the
+same work (`lead-sheet-<label>.pro`, `default: false`, `x_version_*`
+populated) instead of overwriting what was there. The build publishes each one
+as `docs/data/songs/{id}--{slug}.pro` — the `--` cannot collide with another
+work's `{id}.pro` because `slugify` collapses dash runs, so no minted work id
+contains one — and lists every take on the row:
+
+```json
+"arrangements": [
+  {"slug": "default", "label": "Original", "default": true,
+   "file": "data/songs/how-long-blues.pro", "key": "G", "chord_count": 4},
+  {"slug": "simplified", "label": "Simplified", "version_type": "simplified",
+   "arrangement_by": "Jane Picker", "notes": "…", "submitted_by": "<uuid>",
+   "file": "data/songs/how-long-blues--simplified.pro", "key": "G",
+   "chord_count": 3}
+]
+```
+
+The PRIMARY lead sheet still owns the row: `content`, `lyrics`, `chords`,
+`nashville`, `key` and search behaviour all come from `lead-sheet.pro` exactly
+as before — a fork adds a chart to read, never a second search hit. The slug
+comes from the part's filename (which `works_writer` already keeps unique
+within the work), so it is stable across builds and across label edits. The
+frontend lists these in the Arrangement pill (`docs/js/work-view.js`).
 
 Everything else is byte-for-byte what it was. Both `.jsonl` files inherit the
 build's id sort, and `.pro` files are only rewritten when their text changed,

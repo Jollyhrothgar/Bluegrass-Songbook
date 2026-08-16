@@ -9,6 +9,7 @@ THREE-PART output (see `write_outputs` and scripts/lib/CLAUDE.md):
     docs/data/index.jsonl   canon rows only (indexed is not False), no content
     docs/data/archive.jsonl indexed:false rows, no content, lyrics clipped
     docs/data/songs/{id}.pro   full ChordPro per work, fetched on page open
+    docs/data/songs/{id}--{slug}.pro   a forked lead sheet (see `arrangements`)
 
 Usage:
     uv run python scripts/lib/build_works_index.py
@@ -214,6 +215,77 @@ def compute_group_id(title: str, artist: str, lyrics: str) -> str:
     return f"{base_hash}_{lyrics_hash}"
 
 
+# ── Forked lead sheets ───────────────────────────────────────────────────
+# A work can hold more than one lead sheet: `works_writer.fork_to_arrangement`
+# lands somebody else's take on a song as an ADDITIONAL lead-sheet part
+# (`lead-sheet-<label>.pro`, `default: false`, `x_version_*` populated)
+# instead of overwriting the chart that was already there.
+#
+# The primary lead sheet keeps the shape it always had — `content` on the row,
+# published to `docs/data/songs/{id}.pro` — so single-lead-sheet works (every
+# work in the corpus as of 2026-08-15) build byte-for-byte as before. Only a
+# work with a SECOND lead sheet grows an `arrangements` list, one entry per
+# lead sheet including the primary, which is what the Arrangement pill lists.
+
+#: Metadata a forked part carries in the ChordPro itself
+#: (`works_writer.apply_version_metadata`), read as a fallback when work.yaml
+#: doesn't spell it out — a hand-added part may only have the directives.
+_VERSION_META_FIELDS = {
+    'x_version_label': 'label',
+    'x_version_type': 'version_type',
+    'x_arrangement_by': 'arrangement_by',
+    'x_version_notes': 'notes',
+}
+
+#: Where the primary lead sheet lives inside a work directory.
+PRIMARY_LEAD_SHEET = 'lead-sheet.pro'
+
+
+def lead_sheet_parts(work: dict) -> list:
+    """The work's lead-sheet parts, in work.yaml order."""
+    return [p for p in (work.get('parts') or [])
+            if p.get('type') == 'lead-sheet' and p.get('file')]
+
+
+def version_meta_from_content(content: str) -> dict:
+    """`x_version_*` directives lifted out of a ChordPro chart."""
+    meta = {}
+    for directive, field in _VERSION_META_FIELDS.items():
+        m = re.search(r'\{meta:\s*' + directive + r'\s+([^}]+)\}', content or '')
+        if m:
+            meta[field] = m.group(1).strip()
+    return meta
+
+
+def arrangement_slug(part_file: str, position: int, taken: set) -> str:
+    """Stable, unique-per-work slug for a forked lead sheet.
+
+    Derived from the part's filename (`lead-sheet-simplified.pro` ->
+    `simplified`), which `works_writer._unique_filename` already guarantees is
+    unique inside the work — so the slug is stable across builds and across
+    label edits.
+    """
+    stem = Path(part_file).name.split('.')[0]
+    stem = re.sub(r'^lead-sheet-?', '', stem)
+    slug = re.sub(r'[^a-z0-9]+', '-', stem.lower()).strip('-') or f'p{position}'
+    candidate, n = slug, 2
+    while candidate in taken:
+        candidate = f'{slug}-{n}'
+        n += 1
+    taken.add(candidate)
+    return candidate
+
+
+def published_arrangement_name(work_id: str, slug: str) -> str:
+    """Filename for a forked lead sheet inside docs/data/songs/.
+
+    ``{work}--{slug}.pro``. The double hyphen cannot collide with another
+    work's ``{id}.pro``: `work_schema.slugify` collapses runs of dashes, so no
+    minted work id contains ``--`` (verified against all 19,229 works).
+    """
+    return f'{work_id}--{slug}.pro'
+
+
 def published_tab_name(work_id: str, part: dict, position: int = 0) -> str:
     """Filename for a tablature part inside docs/data/tabs/.
 
@@ -324,26 +396,38 @@ def write_outputs(songs: list, index_file: Path):
     published_songs = set()
     written = 0
 
+    def publish(name: str, text: str):
+        """Write one .pro, only when its text actually changed."""
+        nonlocal written
+        published_songs.add(name)
+        dest = songs_dir / name
+        # Only rewrite when the text actually changed: keeps mtimes (and
+        # therefore incremental rebuilds / git status) quiet.
+        try:
+            unchanged = dest.read_text(encoding='utf-8') == text
+        except OSError:
+            unchanged = False
+        if not unchanged:
+            dest.write_text(text, encoding='utf-8')
+            written += 1
+
     for song in songs:
         content = song.pop('content', '') or ''
         abc_content = song.pop('abc_content', None)
 
         if content:
-            name = f"{song['id']}.pro"
-            published_songs.add(name)
-            dest = songs_dir / name
-            # Only rewrite when the text actually changed: keeps mtimes (and
-            # therefore incremental rebuilds / git status) quiet.
-            try:
-                unchanged = dest.read_text(encoding='utf-8') == content
-            except OSError:
-                unchanged = False
-            if not unchanged:
-                dest.write_text(content, encoding='utf-8')
-                written += 1
+            publish(f"{song['id']}.pro", content)
             song['has_content'] = True
         if abc_content:
             song['has_abc'] = True
+
+        # Forked lead sheets ride along in their own files, same directory,
+        # same orphan prune — the row keeps only the pointer.
+        for arrangement in song.get('arrangements') or []:
+            text = arrangement.pop('_content', None)
+            if text is None:
+                continue
+            publish(Path(arrangement['file']).name, text)
 
         if song.get('indexed') is False:
             song['lyrics'] = (song.get('lyrics') or '')[:ARCHIVE_LYRICS_CHARS]
@@ -377,12 +461,16 @@ def write_outputs(songs: list, index_file: Path):
           f"{archive_size / 1024 / 1024:.1f} MB")
     print(f"Song content: {len(published_songs)} files in {songs_dir} "
           f"({written} written this build, {len(orphans)} orphans removed)")
+    forked_works = [s for s in songs if s.get('arrangements')]
+    if forked_works:
+        forked = sum(len(s['arrangements']) - 1 for s in forked_works)
+        print(f"  {forked} forked lead sheet(s) across "
+              f"{len(forked_works)} work(s)")
 
 
 def build_song_from_work(work_dir: Path) -> dict:
     """Build a song record from a work directory."""
     work_yaml_path = work_dir / 'work.yaml'
-    lead_sheet_path = work_dir / 'lead-sheet.pro'
 
     if not work_yaml_path.exists():
         return None
@@ -390,6 +478,18 @@ def build_song_from_work(work_dir: Path) -> dict:
     # Load work.yaml
     with open(work_yaml_path) as f:
         work = yaml.safe_load(f)
+
+    # The primary lead sheet is lead-sheet.pro, exactly as it always was. A
+    # work whose lead sheet is named something else (no forks are: a fork
+    # never displaces the original) falls back to its default-flagged part,
+    # so content isn't silently dropped.
+    all_lead_sheets = lead_sheet_parts(work)
+    primary_file = PRIMARY_LEAD_SHEET
+    if not (work_dir / PRIMARY_LEAD_SHEET).exists() and all_lead_sheets:
+        default_part = next((p for p in all_lead_sheets if p.get('default')),
+                            all_lead_sheets[0])
+        primary_file = Path(default_part['file']).name
+    lead_sheet_path = work_dir / primary_file
 
     # Check what parts we have
     has_lead_sheet = lead_sheet_path.exists()
@@ -518,6 +618,71 @@ def build_song_from_work(work_dir: Path) -> dict:
         song['is_instrumental'] = True
     if parsed['abc_content']:
         song['abc_content'] = parsed['abc_content']
+
+    # Forked lead sheets: every take of this song that lives IN this work.
+    # Emitted only when there is more than one, so a single-lead-sheet work's
+    # row is unchanged. `_content` is the chart text; write_outputs publishes
+    # it beside the primary and strips the field.
+    extra_lead_sheets = [
+        p for p in all_lead_sheets
+        if Path(p['file']).name != primary_file
+        and (work_dir / Path(p['file']).name).exists()
+    ]
+    if has_lead_sheet and extra_lead_sheets:
+        primary_part = next(
+            (p for p in all_lead_sheets
+             if Path(p['file']).name == primary_file), {})
+        primary_meta = version_meta_from_content(content)
+        arrangements = [{
+            'slug': 'default',
+            'label': (primary_part.get('label')
+                      or primary_meta.get('label') or 'Original'),
+            'default': True,
+            'file': f"data/songs/{work['id']}.pro",
+            'key': key,
+            'chord_count': len(nashville_set),
+        }]
+        for field in ('version_type', 'arrangement_by', 'notes'):
+            value = primary_part.get(
+                'version_notes' if field == 'notes' else field
+            ) or primary_meta.get(field)
+            if value:
+                arrangements[0][field] = value
+        if song.get('submitted_by'):
+            arrangements[0]['submitted_by'] = song['submitted_by']
+
+        taken = {'default'}
+        for i, part in enumerate(extra_lead_sheets):
+            name = Path(part['file']).name
+            text = (work_dir / name).read_text(encoding='utf-8')
+            part_meta = version_meta_from_content(text)
+            part_parsed = parse_chordpro_content(text)
+            part_key, _ = detect_key(part_parsed['chords'])
+            part_key = part_key or work.get('default_key', 'G')
+            part_nashville = {n for n in (to_nashville(c, part_key)
+                                          for c in part_parsed['chords']) if n}
+            slug = arrangement_slug(name, i, taken)
+            entry = {
+                'slug': slug,
+                'label': (part.get('label') or part_meta.get('label')
+                          or slug.replace('-', ' ').title()),
+                'file': f"data/songs/{published_arrangement_name(work['id'], slug)}",
+                'key': part_key,
+                'chord_count': len(part_nashville),
+                '_content': text,
+            }
+            for field in ('version_type', 'arrangement_by', 'notes'):
+                value = part.get(
+                    'version_notes' if field == 'notes' else field
+                ) or part_meta.get(field)
+                if value:
+                    entry[field] = value
+            submitted_by = (part.get('provenance') or {}).get('submitted_by')
+            if submitted_by:
+                entry['submitted_by'] = submitted_by
+            arrangements.append(entry)
+
+        song['arrangements'] = arrangements
 
     # Add tablature parts info for frontend.
     # A work can hold several arrangements of the SAME instrument (the
