@@ -6010,6 +6010,82 @@ mark {
     width: 100%;
 }
 
+/* My Submissions (Phase 4a) */
+.my-submissions-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.my-submissions-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.my-submissions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.my-submission-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s;
+}
+a.my-submission-row:hover {
+    border-color: var(--accent);
+}
+.my-submission-row-static {
+    cursor: default;
+}
+.my-submission-main {
+    min-width: 0;
+}
+.my-submission-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+.my-submission-artist {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+}
+.my-submission-meta {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.15rem;
+}
+.my-submission-status {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+.my-submission-status-live {
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    color: var(--accent);
+}
+.my-submission-status-in-songbook {
+    background: color-mix(in srgb, var(--success) 18%, transparent);
+    color: var(--success);
+}
+.my-submission-status-requested {
+    background: color-mix(in srgb, var(--text-secondary) 18%, transparent);
+    color: var(--text-secondary);
+}
+.my-submissions-empty .bounty-cta-btn {
+    margin-top: 0.75rem;
+}
+
 /* Search empty results */
 .empty-results {
     text-align: center;

@@ -44,6 +44,7 @@ import {
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
 import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
+import { renderMySubmissionsView } from './my-submissions.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
@@ -210,6 +211,9 @@ function pushHistoryState(view, data = {}, replace = false) {
         case 'bounty':
             hash = '#bounty';
             break;
+        case 'my-submissions':
+            hash = '#my-submissions';
+            break;
         case 'favorites':
             // Favorites is just a list with ID 'favorites'
             // Use 'list' view type for consistency
@@ -312,6 +316,9 @@ function handleHistoryNavigation(state) {
             break;
         case 'bounty':
             showView('bounty');
+            break;
+        case 'my-submissions':
+            showView('my-submissions');
             break;
         case 'favorites':
             showView('favorites');
@@ -481,6 +488,15 @@ function initViewSubscription() {
                 uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderBountyView(resultsDiv);
+                break;
+            case 'my-submissions':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                uploadPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                renderMySubmissionsView(resultsDiv);
                 break;
             case 'song-lists':
                 searchContainer?.classList.add('hidden');
@@ -766,6 +782,11 @@ function handleDeepLink() {
         trackDeepLink('bounty', hash);
         showView('bounty');
         pushHistoryState('bounty', {}, true);
+        return true;
+    } else if (hash === '#my-submissions') {
+        trackDeepLink('my-submissions', hash);
+        showView('my-submissions');
+        pushHistoryState('my-submissions', {}, true);
         return true;
     } else if (hash === '#request-song') {
         trackDeepLink('request-song', hash);
@@ -2550,6 +2571,14 @@ function init() {
     forceSyncBtn?.addEventListener('click', async () => {
         updateSyncUI('syncing');
         await performFullListsSync();
+    });
+
+    // My Submissions link in account modal (#227 / #207)
+    const mySubmissionsBtn = document.getElementById('account-my-submissions-btn');
+    mySubmissionsBtn?.addEventListener('click', () => {
+        closeAccountModal();
+        showView('my-submissions');
+        pushHistoryState('my-submissions');
     });
 
     // Song Lists page
