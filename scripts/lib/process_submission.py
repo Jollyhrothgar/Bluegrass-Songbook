@@ -19,9 +19,8 @@ import re
 import sys
 from datetime import date
 from pathlib import Path
-import yaml
 
-from curation import is_suppressed, load_deleted_songs, load_registry
+import works_writer
 
 
 def extract_chordpro(issue_body: str) -> str | None:
@@ -133,74 +132,40 @@ def publish_to_works(slug: str, title: str, artist: str | None, chordpro: str,
                      author: str, issue_number: str, repo_root: Path) -> Path:
     """Publish the song to works/ for immediate search visibility.
 
+    The write itself belongs to works_writer (collision handling,
+    suppression guard, YAML); this function only decides what to hand it.
     Returns None (without writing) when the slug is suppressed by the
     curation registry or the soft-deleted list — suppressed works must
     never be resurrected by an import.
     """
-    registry = load_registry(repo_root)
-    deleted_songs = load_deleted_songs(repo_root)
-    if is_suppressed(slug, registry, deleted_songs):
-        print(f"Skipping publish: '{slug}' is suppressed "
-              f"(curation/registry.yaml or deleted_songs.json); not writing to works/")
-        return None
-
     today = date.today().isoformat()
 
     # Extract additional metadata from ChordPro
     key = extract_key_from_chordpro(chordpro)
     composer = extract_composer_from_chordpro(chordpro)
 
-    # Build work.yaml structure
-    work_data = {
-        'id': slug,
-        'title': title,
-    }
-
-    if artist:
-        work_data['artist'] = artist
-    if composer:
-        work_data['composers'] = [composer]
-    if key:
-        work_data['default_key'] = key
-
-    work_data['tags'] = []  # Will be enriched later
-    work_data['parts'] = [{
-        'type': 'lead-sheet',
-        'format': 'chordpro',
-        'file': 'lead-sheet.pro',
-        'default': True,
-        'provenance': {
-            'source': 'manual',
-            'submitted_by': f'github:{author}',
-            'submitted_at': today,
-            'github_issue': int(issue_number) if issue_number.isdigit() else None,
-        }
-    }]
-
-    # Create work directory
-    work_dir = repo_root / 'works' / slug
-
-    # Handle collision - add suffix if needed (skipping suppressed suffix slugs)
-    counter = 1
-    original_slug = slug
-    while work_dir.exists() or is_suppressed(slug, registry, deleted_songs):
-        slug = f"{original_slug}-{counter}"
-        work_dir = repo_root / 'works' / slug
-        work_data['id'] = slug
-        counter += 1
-
-    work_dir.mkdir(parents=True, exist_ok=True)
-
-    # Write work.yaml
-    work_yaml_path = work_dir / 'work.yaml'
-    with open(work_yaml_path, 'w') as f:
-        yaml.dump(work_data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
-
-    # Write lead-sheet.pro
-    lead_sheet_path = work_dir / 'lead-sheet.pro'
-    lead_sheet_path.write_text(chordpro + '\n')
-
-    return work_dir
+    result = works_writer.create_work(
+        repo_root, slug, title,
+        works_writer.PartSpec(
+            file='lead-sheet.pro',
+            type='lead-sheet',
+            format='chordpro',
+            default=True,
+            content=chordpro + '\n',
+            provenance={
+                'source': 'manual',
+                'submitted_by': f'github:{author}',
+                'submitted_at': today,
+                'github_issue': int(issue_number) if issue_number.isdigit() else None,
+            },
+        ),
+        artist=artist,
+        composers=[composer] if composer else None,
+        default_key=key,
+        tags=[],  # Will be enriched later
+        on_collision='suffix',
+    )
+    return result.work_dir
 
 
 def main():
