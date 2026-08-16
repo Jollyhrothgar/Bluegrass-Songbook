@@ -61,6 +61,7 @@ jobs:
           fi
 
           drift=$(jq -r '.drift' response.json)
+          held=$(jq -r '.held // 0' response.json)
           eligible=$(jq -r '.eligible' response.json)
           committed=$(jq -r '.committed' response.json)
           stuck=$(jq -r '.stuckCount' response.json)
@@ -68,6 +69,7 @@ jobs:
 
           # The drift number is the point of the job — make it visible.
           echo "Drift (pending_songs with github_committed = false): ${drift}"
+          echo "Held by the dedup backstop (skipped, awaiting review): ${held}"
           echo "Past grace window: ${eligible} | committed this run: ${committed} | still stuck: ${stuck} | deferred to next run: ${remaining}"
 
           {
@@ -76,6 +78,7 @@ jobs:
             echo "| metric | value |"
             echo "| --- | --- |"
             echo "| drift (uncommitted rows) | ${drift} |"
+            echo "| held for dedup review | ${held} |"
             echo "| past grace window | ${eligible} |"
             echo "| committed this run | ${committed} |"
             echo "| still stuck | ${stuck} |"

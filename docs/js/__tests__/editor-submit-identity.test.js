@@ -95,8 +95,21 @@ describe('the one submission path', () => {
 
     it('does not branch submission on trusted status', () => {
         // Trust decides in-place edit rights server-side; it must not decide
-        // which endpoint the browser talks to.
-        expect(EDITOR_SOURCE).not.toContain('isTrustedUser');
+        // which endpoint the browser talks to, or how fast a submission lands.
+        //
+        // Phase 3b reads trust in the editor for exactly one thing: whether
+        // the dedup offramp offers "promote it" when the matched work is
+        // archived. Promotion genuinely is trusted-only (RLS enforces it), and
+        // offering a button that 403s is worse than not offering it. So the
+        // rule is asserted where it matters — the submission path itself —
+        // rather than by banning the symbol from the file.
+        const submitPath = EDITOR_SOURCE.slice(
+            EDITOR_SOURCE.indexOf('async function submitSong'));
+        expect(submitPath).not.toContain('isTrustedUser');
+        expect(submitPath).not.toContain('trusted');
+
+        // And only the offramp may read it, once.
+        expect(EDITOR_SOURCE.match(/isTrustedUser/g)).toHaveLength(1);
     });
 });
 

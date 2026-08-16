@@ -32,6 +32,8 @@ export interface PendingSong {
   tags?: Record<string, unknown>
   created_at?: string
   github_committed?: boolean
+  /** Phase 3b: non-null means the dedup backstop refused to write this row. */
+  dedup_hold?: string | null
 }
 
 const githubHeaders = (githubToken: string) => ({

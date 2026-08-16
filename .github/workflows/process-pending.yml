@@ -31,6 +31,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      # Phase 3b: the dedup backstop can refuse a create and open/comment on a
+      # single review issue instead.
+      issues: write
 
     steps:
       - name: Checkout repository
@@ -58,8 +61,83 @@ jobs:
           fi
           uv run python scripts/lib/process_pending.py
 
+      # The backstop already parked the row (process_pending.py sets
+      # dedup_hold, so the reconciler stops re-dispatching it). All that is
+      # left is to put the pair in front of a human — one issue, forever,
+      # commented on rather than reopened, the same find-or-create pattern
+      # reconcile-pending.yml uses for stuck rows.
+      - name: Open or update the dedup review issue
+        if: steps.write.outputs.skipped_reason == 'dedup-duplicate'
+        uses: actions/github-script@v7
+        env:
+          # Through env, never string-interpolated into the script: the title
+          # is attacker-controlled text from a submission.
+          ROW_TITLE: ${{ steps.write.outputs.row_title }}
+          DEDUP_MATCHED: ${{ steps.write.outputs.dedup_matched_work }}
+          DEDUP_SCORE: ${{ steps.write.outputs.dedup_score }}
+          DEDUP_TITLE_SIM: ${{ steps.write.outputs.dedup_title_similarity }}
+          DEDUP_OUTCOME: ${{ steps.write.outputs.dedup_outcome }}
+          DEDUP_REASON: ${{ steps.write.outputs.dedup_reason }}
+        with:
+          script: |
+            const TITLE = 'Dedup backstop: likely duplicate submissions';
+            const { owner, repo } = context.repo;
+            const out = {
+              row_title: process.env.ROW_TITLE,
+              dedup_matched_work: process.env.DEDUP_MATCHED,
+              dedup_score: process.env.DEDUP_SCORE,
+              dedup_title_similarity: process.env.DEDUP_TITLE_SIM,
+              dedup_outcome: process.env.DEDUP_OUTCOME,
+              dedup_reason: process.env.DEDUP_REASON,
+            };
+            const rowId = context.payload.client_payload.row_id;
+
+            const body = [
+              `A submission was **not written** to \`works/\` — the dedup backstop scored it as a duplicate of a work that is already there.`,
+              ``,
+              `| | |`,
+              `| --- | --- |`,
+              `| pending row | \`${rowId}\` |`,
+              `| title | ${out.row_title || '(untitled)'} |`,
+              `| matched work | [\`${out.dedup_matched_work}\`](https://bluegrassbook.com/#work/${out.dedup_matched_work}) |`,
+              `| containment | **${out.dedup_score}** (duplicate at ≥ 0.85) |`,
+              `| title similarity | ${out.dedup_title_similarity} |`,
+              `| outcome | ${out.dedup_outcome} |`,
+              ``,
+              out.dedup_reason,
+              ``,
+              `The row is **live in the Supabase overlay** but not durable, and is flagged \`dedup_hold\` so the hourly reconciler leaves it alone.`,
+              ``,
+              `To resolve:`,
+              `- **It really is a duplicate** — delete the \`pending_songs\` row.`,
+              `- **It is not** — clear \`dedup_hold\` (set it to null); the next reconciler pass lands it as dispatched.`,
+              `- **It belongs on the matched work** — clear \`dedup_hold\` and set \`replaces_id\` to \`${out.dedup_matched_work}\`; it lands as an update or an arrangement fork.`,
+              ``,
+              `Run: ${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`,
+            ].join('\n');
+
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'open', per_page: 100,
+            });
+            const existing = issues.find(i => !i.pull_request && i.title === TITLE);
+
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: existing.number, body,
+              });
+              core.notice(`Added '${rowId}' to existing review issue #${existing.number}`);
+            } else {
+              const created = await github.rest.issues.create({
+                owner, repo, title: TITLE, body, labels: ['bug'],
+              });
+              core.notice(`Opened review issue #${created.data.number}`);
+            }
+
       - name: Refuse to mark a skipped row durable
-        if: steps.write.outputs.written != 'true' && steps.write.outputs.skipped_reason != 'already-applied'
+        if: >-
+          steps.write.outputs.written != 'true'
+          && steps.write.outputs.skipped_reason != 'already-applied'
+          && steps.write.outputs.skipped_reason != 'dedup-duplicate'
         env:
           REASON: ${{ steps.write.outputs.skipped_reason }}
           ROW_ID: ${{ github.event.client_payload.row_id }}
@@ -68,6 +146,7 @@ jobs:
           exit 1
 
       - name: Commit and push
+        if: steps.write.outputs.skipped_reason != 'dedup-duplicate'
         env:
           MODE: ${{ steps.write.outputs.mode }}
           WORK_ID: ${{ steps.write.outputs.work_id }}
@@ -99,6 +178,7 @@ jobs:
           fi
 
       - name: Mark the row committed
+        if: steps.write.outputs.skipped_reason != 'dedup-duplicate'
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
@@ -130,6 +210,8 @@ jobs:
           WORK_ID: ${{ steps.write.outputs.work_id }}
           PART: ${{ steps.write.outputs.part_file }}
           ROW_ID: ${{ github.event.client_payload.row_id }}
+          DEDUP_ACTION: ${{ steps.write.outputs.dedup_action }}
+          DEDUP_REASON: ${{ steps.write.outputs.dedup_reason }}
         run: |
           {
             echo "### Pending submission"
@@ -140,4 +222,9 @@ jobs:
             echo "| mode | ${MODE:-unknown} |"
             echo "| work | \`${WORK_ID:-unknown}\` |"
             echo "| part | \`${PART:-}\` |"
+            echo "| dedup | ${DEDUP_ACTION:-not checked} |"
+            if [ -n "${DEDUP_REASON:-}" ]; then
+              echo
+              echo "${DEDUP_REASON}"
+            fi
           } >> "${GITHUB_STEP_SUMMARY}"

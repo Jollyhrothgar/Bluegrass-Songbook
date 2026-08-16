@@ -19,9 +19,15 @@
 // is idempotent on the row's content marker, so a duplicate dispatch is a
 // no-op rather than a second work).
 //
-// Response shape is unchanged (always HTTP 200 so the caller can read the
-// numbers; the workflow decides what counts as a failure):
-//   { success, drift, graceMinutes, eligible, attempted, committed,
+// Phase 3b: rows the dedup backstop refused (dedup_hold is not null) are
+// counted but never re-dispatched. Without that, a row the backstop holds
+// would be re-fired every hour and refused every hour — an alert issue that
+// grows a comment an hour and a workflow that is permanently red. Clearing
+// dedup_hold is a reviewer saying "land it anyway"; the next pass picks it up.
+//
+// Response shape (always HTTP 200 so the caller can read the numbers; the
+// workflow decides what counts as a failure):
+//   { success, drift, held, graceMinutes, eligible, attempted, committed,
 //     stuckCount, stuck: [...], unretryable: [...], remaining }
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
@@ -95,7 +101,7 @@ serve(async (req) => {
     // Every uncommitted row: this count IS the drift between Live and Durable.
     const { data: rows, error } = await supabase
       .from('pending_songs')
-      .select('id, replaces_id, title, artist, composer, content, key, mode, tags, created_at, created_by')
+      .select('id, replaces_id, title, artist, composer, content, key, mode, tags, created_at, created_by, dedup_hold')
       .eq('github_committed', false)
       .order('created_at', { ascending: true })
 
@@ -107,14 +113,22 @@ serve(async (req) => {
     const pending: PendingSong[] = rows || []
     const drift = pending.length
 
+    // Held rows are drift too -- they are live and not durable -- but they are
+    // waiting on a human, not on a retry. Re-dispatching them would just make
+    // the backstop refuse them again.
+    const heldRows = pending.filter(r => !!r.dedup_hold)
+    const held = heldRows.length
+
     const cutoff = Date.now() - GRACE_MINUTES * 60 * 1000
     const eligible = pending.filter(r => {
+      if (r.dedup_hold) return false
       const created = r.created_at ? Date.parse(r.created_at) : 0
       return created <= cutoff
     })
 
     console.log(
       `Drift: ${drift} uncommitted pending_songs row(s); ` +
+      `${held} held by the dedup backstop; ` +
       `${eligible.length} past the ${GRACE_MINUTES}-minute grace window`
     )
 
@@ -200,6 +214,8 @@ serve(async (req) => {
         success: true,
         dryRun,
         drift,
+        held,
+        heldIds: heldRows.map(r => r.id),
         graceMinutes: GRACE_MINUTES,
         eligible: eligible.length,
         attempted: dryRun ? 0 : batch.length - unretryable.length,
