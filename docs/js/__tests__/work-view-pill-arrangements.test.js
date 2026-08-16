@@ -79,13 +79,21 @@ describe('Arrangement pill — forked lead sheets on one work', () => {
         expect(items[1].textContent).toContain('Jane Picker');
     });
 
-    it('votes stay on the work, so only the primary row carries the button', () => {
+    it('gives every published take its own ballot (issue #233)', () => {
         return openWork('how-long-blues').then(async () => {
             await settle();
             openPill();
             const items = pillItems();
-            expect(items[0].querySelector('.arrangement-vote-btn')).toBeTruthy();
-            expect(items[1].querySelector('.arrangement-vote-btn')).toBeNull();
+            const btns = items.map(i => i.querySelector('.arrangement-vote-btn'));
+            expect(btns.every(Boolean)).toBe(true);
+            // The primary votes under the work-level (empty) key, so rows
+            // written before forks existed keep counting; forks vote as
+            // themselves.
+            expect(btns[0].dataset.voteSlug).toBe('');
+            expect(btns[1].dataset.voteSlug).toBe('simplified');
+            // ...and both name the work, which is what song_votes.song_id is
+            expect(new Set(btns.map(b => b.dataset.songId)))
+                .toEqual(new Set(['how-long-blues']));
         });
     });
 

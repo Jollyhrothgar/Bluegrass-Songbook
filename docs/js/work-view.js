@@ -1002,6 +1002,74 @@ function buildArrangementPill() {
     }, { id: 'arrangement-pill', title: 'Versions of this song', className: 'pill-wide' });
 }
 
+/**
+ * The ballot key for one lead-sheet arrangement of the current work.
+ *
+ * '' is the work-level vote — the meaning every `song_votes` row carried
+ * before forks existed, and the one a work with a single chart still uses.
+ * Forks vote under their own (build-stable) slug. Mirrors the `arr_key`
+ * generated column in 20260816000000_arrangement_votes.sql. Exported for tests.
+ */
+export function arrangementVoteKey(arr) {
+    return arr?.default === true ? '' : (arr?.slug || '');
+}
+
+/**
+ * A pending fork has not been published, so there is nothing on the site for
+ * anyone else to vote on — it gets no ballot until the build lands.
+ */
+function isVotable(arr) {
+    return !arr?.pending;
+}
+
+/**
+ * Order the current work's lead sheets for the pill.
+ *
+ * The default comes first no matter what: that flag is editorial (curation
+ * PINS), and the reader's "which chart is this song" should not shuffle under
+ * them because a fork gained a vote overnight. Votes order everything else,
+ * high to low, ties keeping index order. Exported for tests.
+ */
+export function sortArrangementRows(arrangements, voteCounts = {}) {
+    return [...arrangements].sort((a, b) => {
+        const aDefault = a.default === true ? 1 : 0;
+        const bDefault = b.default === true ? 1 : 0;
+        if (aDefault !== bDefault) return bDefault - aDefault;
+        return (voteCounts[arrangementVoteKey(b)] || 0)
+             - (voteCounts[arrangementVoteKey(a)] || 0);
+    });
+}
+
+/**
+ * The signal Phase 2c owes the curator, and nothing more.
+ *
+ * Votes never flip a work.yaml default — that stays editorial. But when a fork
+ * out-polls the chart the work ships as primary, somebody should be told.
+ * Returns the leading challenger and its margin, or null when the default is
+ * still on top (a tie is not a mandate). Exported for tests.
+ */
+export function defaultFlipSignal(arrangements, voteCounts = {}) {
+    const primary = arrangements.find(a => a.default === true);
+    if (!primary) return null;
+    const primaryVotes = voteCounts[arrangementVoteKey(primary)] || 0;
+    let best = null;
+    for (const arr of arrangements) {
+        if (arr === primary || !isVotable(arr)) continue;
+        const votes = voteCounts[arrangementVoteKey(arr)] || 0;
+        if (votes > primaryVotes && (!best || votes > best.votes)) {
+            best = { arrangement: arr, votes };
+        }
+    }
+    if (!best) return null;
+    return {
+        slug: best.arrangement.slug,
+        label: best.arrangement.label || 'Arrangement',
+        votes: best.votes,
+        defaultVotes: primaryVotes,
+        margin: best.votes - primaryVotes,
+    };
+}
+
 async function renderArrangementList(container, versions, voteData = null) {
     const groupId = versions[0]?.group_id;
 
@@ -1010,19 +1078,38 @@ async function renderArrangementList(container, versions, voteData = null) {
     // the popover stuck on "Loading…").
     const voteCounts = voteData?.voteCounts || {};
     const userVotes = voteData?.userVotes || {};
+    const arrVoteCounts = voteData?.arrVoteCounts || {};
+    const arrUserVotes = voteData?.arrUserVotes || {};
     if (voteData === null && typeof SupabaseAuth !== 'undefined' && groupId) {
         (async () => {
             try {
                 const { data } = await SupabaseAuth.fetchGroupVotes(groupId);
                 const counts = data || {};
+                const loggedIn = SupabaseAuth.isLoggedIn();
                 let uv = {};
-                if (SupabaseAuth.isLoggedIn()) {
+                if (loggedIn) {
                     const { data: u } = await SupabaseAuth.fetchUserVotes(versions.map(v => v.id));
                     uv = u || {};
                 }
+                // Per-arrangement tallies are only meaningful for the work on
+                // screen — it is the only one whose forks the pill lists.
+                let arrCounts = {};
+                let arrUser = {};
+                if (currentArrangements.length && currentWork?.id) {
+                    const { data: ac } =
+                        await SupabaseAuth.fetchArrangementVotes(currentWork.id);
+                    arrCounts = ac || {};
+                    if (loggedIn) {
+                        const { data: au } =
+                            await SupabaseAuth.fetchUserArrangementVotes(currentWork.id);
+                        arrUser = au || {};
+                    }
+                }
                 if (container.isConnected) {
-                    renderArrangementList(container, versions,
-                        { voteCounts: counts, userVotes: uv });
+                    renderArrangementList(container, versions, {
+                        voteCounts: counts, userVotes: uv,
+                        arrVoteCounts: arrCounts, arrUserVotes: arrUser,
+                    });
                 }
             } catch (e) {
                 // votes are optional decoration
@@ -1044,13 +1131,16 @@ async function renderArrangementList(container, versions, voteData = null) {
     const rows = [];
     for (const v of sorted) {
         if (v.id === currentWork?.id && currentArrangements.length) {
-            for (const arr of currentArrangements) {
-                rows.push(arrangementItemHtml(arr, voteCounts, userVotes));
+            for (const arr of sortArrangementRows(currentArrangements, arrVoteCounts)) {
+                rows.push(arrangementItemHtml(arr, arrVoteCounts, arrUserVotes));
             }
         } else {
             rows.push(versionItemHtml(v, voteCounts, userVotes));
         }
     }
+    const signal = currentArrangements.length
+        ? defaultFlipSignal(currentArrangements, arrVoteCounts) : null;
+    if (signal) rows.push(defaultFlipNoticeHtml(signal));
     container.innerHTML = rows.join('');
 
     container.querySelectorAll('.arrangement-item[data-arr-slug]').forEach(item => {
@@ -1070,7 +1160,9 @@ async function renderArrangementList(container, versions, voteData = null) {
         });
     });
 
-    // Vote casting — same affordance the version-picker modal had
+    // Vote casting — same affordance the version-picker modal had, now with an
+    // optional arrangement key. `data-vote-slug` is absent on sibling-work
+    // rows and '' on a work's primary chart; both mean the work-level vote.
     container.querySelectorAll('.arrangement-vote-btn').forEach(btn => {
         btn.addEventListener('click', async (e) => {
             e.stopPropagation();
@@ -1081,15 +1173,16 @@ async function renderArrangementList(container, versions, voteData = null) {
             }
 
             const songId = btn.dataset.songId;
+            const arrSlug = btn.dataset.voteSlug || null;
             const hasVoted = btn.classList.contains('voted');
             const countEl = btn.parentElement.querySelector('.vote-count');
 
             if (hasVoted) {
-                await SupabaseAuth.removeVote(songId);
+                await SupabaseAuth.removeVote(songId, arrSlug);
                 btn.classList.remove('voted');
                 if (countEl) countEl.textContent = Math.max(0, parseInt(countEl.textContent, 10) - 1);
             } else {
-                await SupabaseAuth.castVote(songId, groupId);
+                await SupabaseAuth.castVote(songId, groupId, 1, arrSlug);
                 btn.classList.add('voted');
                 if (countEl) countEl.textContent = parseInt(countEl.textContent, 10) + 1;
             }
@@ -1100,9 +1193,10 @@ async function renderArrangementList(container, versions, voteData = null) {
 /**
  * One row for a lead sheet of the CURRENT work (primary or fork).
  *
- * Votes are cast per work id, and a part has no id of its own, so only the
- * primary row carries the vote button — voting still means "this work's take
- * of the song", exactly as before.
+ * Every published take carries its own vote button: the primary votes under
+ * the work-level (null) key, so existing votes and existing behavior are
+ * untouched, and each fork votes under its own slug. A pending fork gets no
+ * button — nobody else can see it yet.
  */
 function arrangementItemHtml(arr, voteCounts, userVotes) {
     const isCurrent = arr.slug === activeArrangementSlug;
@@ -1113,20 +1207,45 @@ function arrangementItemHtml(arr, voteCounts, userVotes) {
     if (arr.chord_count) meta.push(`${arr.chord_count} chords`);
     if (arr.pending) meta.push('not published yet');
     const id = currentWork?.id;
-    const votes = voteCounts[id] || 0;
-    const hasVoted = userVotes[id] ? ' voted' : '';
+    const voteKey = arrangementVoteKey(arr);
+    const votes = voteCounts[voteKey] || 0;
+    const hasVoted = userVotes[voteKey] ? ' voted' : '';
+    const badges = `${arr.default === true ? ' <span class="canonical-badge">Default</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}`;
     return `
         <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-arr-slug="${escapeHtml(arr.slug)}" role="button" tabindex="0">
             <span class="arrangement-info">
-                <span class="arrangement-label">${escapeHtml(label)}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}</span>
+                <span class="arrangement-label">${escapeHtml(label)}${badges}</span>
                 <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
             </span>
-            <span class="arrangement-votes">${arr.default ? `
-                <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(id || '')}" title="Vote for this arrangement">
+            <span class="arrangement-votes">${isVotable(arr) ? `
+                <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(id || '')}" data-vote-slug="${escapeHtml(voteKey)}" title="Vote for this arrangement">
                     <span class="vote-arrow">▲</span>
                 </button>
                 <span class="vote-count">${votes}</span>` : ''}
             </span>
+        </div>
+    `;
+}
+
+/**
+ * The default-flip signal, displayed and nothing more.
+ *
+ * Deliberately NOT a review_requests row: that queue is the DESTRUCTIVE
+ * residue (delete / suppress / merge-redirect) and its approvals only record
+ * a decision anyway. Promoting an arrangement is an ordinary repo edit, so the
+ * lighter honest move is to show the imbalance where the votes are, and tell a
+ * trusted user which file makes it real.
+ */
+function defaultFlipNoticeHtml(signal) {
+    const trusted = !!workPageHooks.isTrusted?.();
+    const where = trusted && currentWork?.id
+        ? `<span class="arrangement-flip-where">Promote it in <code>works/${escapeHtml(currentWork.id)}/work.yaml</code>.</span>`
+        : '';
+    return `
+        <div class="pill-popover-note arrangement-flip-note">
+            <strong>${escapeHtml(signal.label)}</strong> is out-polling the default
+            ${signal.votes}–${signal.defaultVotes}. The default is editorial, so
+            votes don't change it on their own.${where ? ` ${where}` : ''}
         </div>
     `;
 }

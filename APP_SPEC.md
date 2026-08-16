@@ -148,7 +148,7 @@ The app uses Supabase (PostgreSQL) for user data:
 | `user_list_items` | Songs in lists, with position and per-item metadata (key, tempo, notes) |
 | `list_followers` | Users following (but not owning) a list |
 | `list_invites` | 7-day invite tokens for co-owner invitations |
-| `song_votes` / `song_vote_counts` | Version voting (which arrangement is best) |
+| `song_votes` / `song_vote_counts` / `song_arrangement_vote_counts` | Version voting (which arrangement is best), per sibling work AND per lead sheet a work holds |
 | `tag_votes` / `tag_vote_counts` | Tag voting (upvote/downvote tags on songs) |
 | `genre_suggestions` | User-suggested tags |
 | `pending_songs` | Trusted user edits visible immediately before git commit |
