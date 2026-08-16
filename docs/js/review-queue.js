@@ -19,6 +19,15 @@
 // decision and prints the command a maintainer runs locally — both edit files
 // in the repo, and nothing in CI is wired to do that from a table. The panel
 // says so out loud rather than implying the work is done.
+//
+// The panel has three sections:
+//   1. Waiting on you   pending review_requests (approve / reject)
+//   2. Decided          the history, with any command still owed a local run
+//   3. On hold          pending_songs rows the CI dedup backstop parked
+//                       (`dedup_hold`) as likely duplicates. Nothing commits a
+//                       held row until a human clears it: admins can "Release
+//                       hold" (dedup_hold -> null; the reconciler re-dispatches
+//                       it next pass) or "Reject" (delete the pending row).
 
 import { escapeHtml } from './utils.js';
 
@@ -128,6 +137,31 @@ export function sortQueue(requests = []) {
     });
 }
 
+/** A pending_songs row is held iff the dedup backstop wrote a reason on it. */
+export function isHeld(row) {
+    return typeof row?.dedup_hold === 'string' && row.dedup_hold.trim().length > 0;
+}
+
+/**
+ * Display shape for a held submission. The reason comes from CI, so treat a
+ * blank one as "held, reason not recorded" rather than rendering an empty box —
+ * the row is still blocked either way and the reviewer needs to see it.
+ */
+export function describeHold(row) {
+    return {
+        id: row?.id || '',
+        title: row?.title || '(untitled submission)',
+        artist: row?.artist || null,
+        reason: isHeld(row) ? row.dedup_hold.trim() : 'held by the dedup backstop (no reason recorded)',
+    };
+}
+
+/** Oldest first: a hold blocks a real person's submission, so age is the queue. */
+export function sortHolds(rows = []) {
+    const time = (r) => Date.parse(r?.created_at || '') || 0;
+    return [...rows].filter(r => r && r.id).sort((a, b) => time(a) - time(b));
+}
+
 /**
  * Validate a request before it is filed. Returns an error string, or null.
  */
@@ -187,6 +221,50 @@ export async function submitReviewRequest({ kind, targetId, payload = {}, reason
         .select()
         .maybeSingle();
     return { data, error };
+}
+
+/**
+ * Pending submissions parked by the CI dedup backstop.
+ *
+ * The `dedup_hold` column ships with the backstop; until that migration is
+ * applied the select fails, so the caller gets the error and the panel shows a
+ * quiet note instead of losing the whole queue.
+ */
+export async function fetchHeldSubmissions({ limit = 50 } = {}) {
+    const supabase = client();
+    if (!supabase) return { data: [], error: { message: 'Not connected to database' } };
+    const { data, error } = await supabase
+        .from('pending_songs')
+        .select('id, title, artist, dedup_hold, created_at, created_by')
+        .not('dedup_hold', 'is', null)
+        .order('created_at', { ascending: true })
+        .limit(limit);
+    return { data: data || [], error };
+}
+
+/**
+ * Clear the hold. The row goes back to looking like any other uncommitted
+ * submission, so the hourly reconciler picks it up and dispatches it — this
+ * function deliberately does NOT commit anything itself.
+ */
+export async function releaseHold(id) {
+    const supabase = client();
+    if (!supabase) return { error: { message: 'Not connected to database' } };
+    const { data, error } = await supabase
+        .from('pending_songs')
+        .update({ dedup_hold: null })
+        .eq('id', id)
+        .select()
+        .maybeSingle();
+    return { data, error };
+}
+
+/** Reject a held submission outright: the pending row goes away. */
+export async function rejectHeldSubmission(id) {
+    const supabase = client();
+    if (!supabase) return { error: { message: 'Not connected to database' } };
+    const { error } = await supabase.from('pending_songs').delete().eq('id', id);
+    return { error };
 }
 
 /** Approve or reject. RLS lets admins only past this point. */

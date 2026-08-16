@@ -84,3 +84,29 @@ drop trigger if exists trg_stamp_review_request on review_requests;
 create trigger trg_stamp_review_request
   before update on review_requests
   for each row execute function stamp_review_request();
+
+-- ---------------------------------------------------------------------------
+-- Admins can act on held pending_songs rows
+-- ---------------------------------------------------------------------------
+-- The CI dedup backstop parks likely-duplicate submissions by setting
+-- pending_songs.dedup_hold (see 20260815140000_pending_songs_dedup_hold.sql).
+-- The Dungeon panel lists those holds and offers admins "Release hold"
+-- (dedup_hold -> null, so the reconciler re-dispatches it) and "Reject"
+-- (delete the row). Both need write access to somebody else's pending row,
+-- and 20260815120000 grants that to the row's author or `is_trusted_user()`
+-- only — an admin who is not separately in `trusted_users` would be refused
+-- by RLS and the buttons would silently fail.
+--
+-- Permissive policies OR together, so these ADD admin reach without touching
+-- the existing ones. Deliberately not folded into the 2b policies: leaving
+-- those untouched keeps the ownership rule readable in one place.
+
+drop policy if exists "Admins can update any pending row" on pending_songs;
+create policy "Admins can update any pending row"
+  on pending_songs for update to authenticated
+  using (is_admin()) with check (is_admin());
+
+drop policy if exists "Admins can delete any pending row" on pending_songs;
+create policy "Admins can delete any pending row"
+  on pending_songs for delete to authenticated
+  using (is_admin());
