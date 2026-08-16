@@ -76,6 +76,9 @@ scripts/lib/
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_submission.py # GitHub Action: process song-submission issues
 ├── process_correction.py # GitHub Action: process song-correction issues
+├── dedup_scorer.py       # Is this submission already a work? (containment on lyrics)
+├── dedup_works.py        # Whole-corpus duplicate detection → merge plan JSON
+├── merge_works.py        # Execute a merge plan (redirects included)
 ├── chord_counter.py      # Chord statistics utility
 ├── loc_counter.py        # Lines of code counter for analytics
 ├── export_genre_suggestions.py  # Export genre suggestions for review
@@ -663,6 +666,49 @@ Called by GitHub Actions when issues are approved.
 4. Add to `protected.txt` (for corrections)
 5. Rebuild index
 6. Commit changes
+
+## dedup_scorer.py — is this submission already a work?
+
+Per-submission duplicate check. `dedup_works.py` is unchanged and still does the
+other job (whole-corpus merge plans); this one answers a single incoming chart.
+
+**Containment, not Jaccard.** The metric is `|A ∩ B| / |smaller side|` over
+**full** normalized lyric *word sets*. A lyrics-only scrape is nearly a subset of
+a fuller submission, and Jaccard punishes exactly that size gap. Word sets are
+also order-independent, which matters: the `how-long-blues` pair (issue #208)
+orders chorus and verse differently, and `dedup_works.py` — first 300 chars, in
+order — scored it **0.043** against a 0.5 threshold. It scores **0.886** here.
+
+**Signal order: lyrics > title > chords.**
+
+- Lyrics decide the match. Nothing else does.
+- Title only *narrows* candidates (inverted index over title words, then
+  `SequenceMatcher`), because titles collide constantly.
+- Chords are **not** a matching signal — half the canon is I-IV-V in G. Chord
+  *presence* picks the outcome: existing lyrics-only + incoming with chords is an
+  **enrichment**, not a duplicate. Composer is not a signal either (12 of 19,228
+  works have one).
+
+**Outcomes**: `enrich` / `duplicate` / `arrangement-candidate` / `no-match`.
+Only `enrich` is ever marked `auto_actionable`, and only above 0.85 — adding
+chords to a lyrics-only work cannot destroy anything.
+
+**Instrumentals never fall back to title silently.** With no usable lyrics on
+either side the verdict carries `low_confidence=True` plus a warning, needs a
+0.95+ title match before it will even name a candidate, and is never
+auto-actionable.
+
+**Cost**: the title index reads only the head of each `work.yaml` (~1.2s for 19k
+works, once per process, lazily). Lyrics are read **only** for works that survive
+title narrowing, and are memoized — a query is ~10-30ms after the index is warm.
+
+```bash
+uv run python scripts/lib/dedup_scorer.py how-long-blues how-long-blues-1
+uv run python scripts/lib/dedup_scorer.py --scan submission.pro --json
+```
+
+Tests: `tests/test_dedup_scorer.py` (fixtures in `tests/fixtures/dedup/`, with
+provenance in the module docstring).
 
 ## Metadata Parsing
 
