@@ -9,10 +9,16 @@ test.describe('Search', () => {
         await page.waitForSelector('#search-input');
     });
 
-    test('displays search prompt on initial load', async ({ page }) => {
-        // Search view now shows a prompt instead of popular songs on initial load
-        await expect(page.locator('.search-prompt')).toBeVisible();
-        await expect(page.locator('.search-prompt')).toContainText('Search for songs');
+    test('browses the whole canon on initial load', async ({ page }) => {
+        // An empty search box means BROWSE EVERYTHING (not a prompt): the
+        // landing page's "Search All Songs" card advertises the full jam
+        // collection, so #search must deliver it (main.js browseAllSongs).
+        await expect(page.locator('#search-stats')).toContainText('songs');
+        const results = page.locator('.result-item');
+        await expect(results.first()).toBeVisible();
+        expect(await results.count()).toBeGreaterThan(10);
+        // …and the box really is empty — these rows are a browse, not a query
+        await expect(page.locator('#search-input')).toHaveValue('');
     });
 
     test('search by title returns results', async ({ page }) => {
