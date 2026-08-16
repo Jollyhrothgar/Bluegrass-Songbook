@@ -28,19 +28,27 @@ export function buildNewTab({ title, instruments, timeSignature, tempo, measures
     });
 }
 
-/** Persist a draft (called from the editor's onChange). */
-export function saveDraft(otf, storage = globalThis.localStorage) {
+/**
+ * Persist a draft (called from the editor's onChange).
+ *
+ * The target travels WITH the draft on purpose: signing in redirects to
+ * `origin + pathname` and drops the query string, so a targeted tab
+ * (`?work=…&instrument=…`) would otherwise forget which work it was for
+ * the moment its author signed in to submit it.
+ */
+export function saveDraft(otf, target = null, storage = globalThis.localStorage) {
     try {
         storage.setItem(DRAFT_KEY, JSON.stringify({
             savedAt: new Date().toISOString(),
             otf,
+            ...(target ? { target } : {}),
         }));
     } catch (e) {
         // quota/private-mode — drafts are best-effort
     }
 }
 
-/** @returns {{savedAt: string, otf: Object}|null} */
+/** @returns {{savedAt: string, otf: Object, target?: Object}|null} */
 export function loadDraft(storage = globalThis.localStorage) {
     try {
         const raw = storage.getItem(DRAFT_KEY);
