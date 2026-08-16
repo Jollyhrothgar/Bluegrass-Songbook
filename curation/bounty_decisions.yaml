@@ -39,11 +39,6 @@ covered:
     - adieu-false-heart
     work: adieu-false-heart
     reason: Exact match; " via Dirk Powell" is an SM arrangement label.
-  another-day-another-dollar-wynn-stewart:
-    catalogue_ids:
-    - another-day-another-dollar-wynn-stewart
-    work: another-day-another-dollar
-    reason: One song; two SM entries differing only by performer.
   bill-cheatum:
     catalogue_ids:
     - bill-cheatum
@@ -218,7 +213,6 @@ covered:
   talk-to-your-heart:
     catalogue_ids:
     - talk-to-your-heart
-    - talk-to-your-heart-ray-price
     work: talk-to-your-heart
     reason: One song; two SM entries differing by meter label and performer.
   tell-me-baby-why-you-been-gone-so-long:
@@ -241,7 +235,6 @@ covered:
   whos-that-knocking-at-my-window-carter-family:
     catalogue_ids:
     - whos-that-knocking-at-my-window-carter-family
-    - whos-that-knocking-at-my-window-hazel-and-alice
     work: whos-that-knocking-at-my-window
     reason: One song; two SM entries differing only by performer.
     chords: 0
@@ -252,11 +245,6 @@ covered:
     reason: Would/Will title variant of one song. Corpus also holds "Would You Be Satisfied"
       and "You Won't Be Satisfied That Way".
     archived: true
-  yellow-rose-of-texas-bob-wills:
-    catalogue_ids:
-    - yellow-rose-of-texas-bob-wills
-    work: the-yellow-rose-of-texas
-    reason: Trailing text is the performer. Corpus has two copies — see registry.
 distinct:
   500-miles:
     not: 900-miles

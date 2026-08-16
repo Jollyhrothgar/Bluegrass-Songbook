@@ -90,6 +90,42 @@ def corpus_keys(data_dir: Path):
     return exact, despaced
 
 
+def reconcile_ledger() -> int:
+    """Drop verdicts naming catalogue rows that no longer exist.
+
+    Rebuilding the catalogue folds variants together, which retires the
+    catalogue_ids some verdicts point at. That is expected, not an error — but
+    a stale id silently stops filtering, so this prunes them rather than
+    leaving the ledger quietly wrong. Run it after any catalogue rebuild.
+    """
+    import yaml as _yaml
+    catalogue = json.loads(CATALOGUE_FILE.read_text(encoding='utf-8'))['songs']
+    live = {r['catalogue_id'] for r in catalogue}
+    text = LEDGER_FILE.read_text(encoding='utf-8')
+    ledger = _yaml.safe_load(text) or {}
+
+    kept, removed = {}, 0
+    for key, entry in (ledger.get('covered') or {}).items():
+        ids = [i for i in entry.get('catalogue_ids') or [] if i in live]
+        if not ids:
+            removed += 1
+            continue
+        entry['catalogue_ids'] = ids
+        kept[key if key in live else ids[0]] = entry
+    if not removed and all(len(v['catalogue_ids']) == len(ledger['covered'][k]['catalogue_ids'])
+                           for k, v in kept.items() if k in ledger['covered']):
+        return 0
+
+    ledger['covered'] = dict(sorted(kept.items()))
+    order = ['covered', 'distinct', 'uncertain', 'not_a_song', 'keep',
+             'intra_dupes', 'corpus_duplicates_noted']
+    body = _yaml.safe_dump({k: ledger[k] for k in order if k in ledger},
+                           sort_keys=False, allow_unicode=True, width=88,
+                           default_flow_style=False)
+    LEDGER_FILE.write_text(text.split('\ncovered:')[0] + '\n' + body, encoding='utf-8')
+    return removed
+
+
 def build_wanted(report: bool = False, dry_run: bool = False) -> dict:
     catalogue = json.loads(CATALOGUE_FILE.read_text(encoding='utf-8'))['songs']
     ledger = yaml.safe_load(LEDGER_FILE.read_text(encoding='utf-8')) or {}
@@ -169,5 +205,10 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--report', action='store_true')
     ap.add_argument('--dry-run', action='store_true', help='Do not write the file')
+    ap.add_argument('--reconcile-ledger', action='store_true',
+                    help='Prune verdicts whose catalogue row was folded away')
     a = ap.parse_args()
+    if a.reconcile_ledger:
+        n = reconcile_ledger()
+        print(f"Ledger reconciled: {n} verdicts dropped (catalogue row gone)")
     build_wanted(report=a.report, dry_run=a.dry_run)

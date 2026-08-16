@@ -1052,19 +1052,22 @@
     "All The Good Times Are Past And Gone",
     "All The Good Times are Past and Gone",
     "All the Good Times Are Past & Gone",
-    "All the Good Times Are Past and Gone (backup)"
+    "All the Good Times Are Past and Gone (backup)",
+    "All the Good Times are Past and Gone arpeggio (Normal)",
+    "All the Good Times are Past and Gone arpeggio (Slow)"
    ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 9,
+   "coverage": 10,
    "spread": 3,
-   "score": 18.0,
+   "score": 20.0,
    "core": true,
    "artists": [
     "Andy Statman",
     "Buzz Busby",
+    "Dix Bruce",
     "Jim Eanes",
     "Lester Flatt",
     "Lester Flatt & Earl Scruggs",
@@ -1878,7 +1881,8 @@
    "title": "Another Day Another Dollar",
    "title_variants": [
     "Another Day, Another Dollar",
-    "Another Day, Another Dollar Dan Tyminski"
+    "Another Day, Another Dollar Dan Tyminski",
+    "Another Day, Another Dollar Wynn Stewart"
    ],
    "sources": [
     "bluegrass-lyrics",
@@ -1894,21 +1898,6 @@
     "The Osborne Brothers",
     "The Stanley Brothers"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "another-day-another-dollar-wynn-stewart",
-   "title": "Another Day, Another Dollar Wynn Stewart",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -3122,6 +3111,28 @@
    "instruments": []
   },
   {
+   "catalogue_id": "back-in-the-u-s",
+   "title": "Back in the U.S.A.",
+   "title_variants": [
+    "Back In The U.S.A.",
+    "Back in the U.S.S.R."
+   ],
+   "sources": [
+    "mb-coverage"
+   ],
+   "coverage": 3,
+   "spread": 3,
+   "score": 6.0,
+   "core": false,
+   "artists": [
+    "Jim and Jesse",
+    "John 5",
+    "The Virginia Boys"
+   ],
+   "type": "Vocal",
+   "instruments": []
+  },
+  {
    "catalogue_id": "back-to-dixie",
    "title": "Back To Dixie",
    "title_variants": [],
@@ -3632,6 +3643,8 @@
    "title_variants": [
     "Banks Of The Ohio",
     "Banks of the Ohio (live at Cornell University and Town Hall / 1970)",
+    "Banks of the Ohio crosspicking (Normal)",
+    "Banks of the Ohio crosspicking (Slow)",
     "The Banks Of The Ohio",
     "The Banks of the Ohio"
    ],
@@ -3810,11 +3823,13 @@
    "title": "Battle of New Orleans",
    "title_variants": [
     "Battle Of New Orleans",
+    "Battle of New Orleans Eighth of January",
     "The Battle of New Orleans"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 6,
    "spread": 3,
@@ -3828,21 +3843,6 @@
     "Nitty Gritty Dirt Band",
     "Vassar Clements"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "battle-of-new-orleans-eighth-of-january",
-   "title": "Battle of New Orleans Eighth of January",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -7051,9 +7051,12 @@
   {
    "catalogue_id": "blue-yodel-no-3",
    "title": "Blue Yodel No. 3 (Evening Sun Yodel)",
-   "title_variants": [],
+   "title_variants": [
+    "Blue Yodel No. 3 Jimmie Rogers - \"Evening Sun Yodel\""
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 4,
    "spread": 2,
@@ -7065,21 +7068,6 @@
     "Del McCoury",
     "Ralph Stanley"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "blue-yodel-no-3-jimmie-rogers-evening-sun-yodel",
-   "title": "Blue Yodel No. 3 Jimmie Rogers - \"Evening Sun Yodel\"",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -9183,6 +9171,7 @@
    "catalogue_id": "brushy-fork-of-johns-creek",
    "title": "Brushy Fork of John's Creek",
    "title_variants": [
+    "Brushy Fork of John's Creek/Mason's Apron",
     "Brushy Fork of Johns Creek",
     "Brushy Fork of John’s Creek"
    ],
@@ -9190,9 +9179,9 @@
     "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 8,
-   "spread": 2,
-   "score": 12.0,
+   "coverage": 9,
+   "spread": 3,
+   "score": 18.0,
    "core": false,
    "artists": [
     "Art Stamper",
@@ -9201,6 +9190,7 @@
     "Erynn Marshall & Chris Coole",
     "John Hartford",
     "Owen \"Snake\" Chapman",
+    "Stuart Duncan",
     "The Rockinghams",
     "Wildcats"
    ],
@@ -10114,17 +10104,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "cajun-fiddle-don-rich",
+   "catalogue_id": "cajun-fiddle",
    "title": "Cajun Fiddle Don Rich",
-   "title_variants": [],
+   "title_variants": [
+    "Cajun Fiddle"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Vassar Clements"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -11524,26 +11519,6 @@
    "instruments": []
   },
   {
-   "catalogue_id": "cherokee-fiddle",
-   "title": "Cherokee Fiddle",
-   "title_variants": [],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 4,
-   "spread": 2,
-   "score": 6.0,
-   "core": false,
-   "artists": [
-    "Carolina Road",
-    "Larry Cordle",
-    "Lorraine Jordan",
-    "Michael Martin Murphey"
-   ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
    "catalogue_id": "cherokee-shuffle",
    "title": "Cherokee Shuffle",
    "title_variants": [
@@ -11688,29 +11663,6 @@
    ]
   },
   {
-   "catalogue_id": "chicago",
-   "title": "Chicago",
-   "title_variants": [
-    "Chicago (Band Track)",
-    "Chicago (Melody - Slow)",
-    "Chicago (Melody - Up To Speed)"
-   ],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 3,
-   "spread": 3,
-   "score": 6.0,
-   "core": false,
-   "artists": [
-    "Dix Bruce",
-    "Jordane",
-    "Palast Orchester mit seinem Sänger Max Raabe"
-   ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
    "catalogue_id": "chicken",
    "title": "Chicken",
    "title_variants": [
@@ -11770,17 +11722,22 @@
    ]
   },
   {
-   "catalogue_id": "chicken-wire-jonathan-byrd",
+   "catalogue_id": "chicken-wire",
    "title": "Chicken Wire Jonathan Byrd",
-   "title_variants": [],
+   "title_variants": [
+    "Chicken Wire"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Old Crow Medicine Show"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -11897,29 +11854,6 @@
    "instruments": []
   },
   {
-   "catalogue_id": "china-boy",
-   "title": "China Boy",
-   "title_variants": [
-    "China Boy (Band Track)",
-    "China Boy (Melody - Slow)",
-    "China Boy (Melody - Up To Speed)"
-   ],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 3,
-   "spread": 3,
-   "score": 6.0,
-   "core": false,
-   "artists": [
-    "David Grisman",
-    "Dix Bruce",
-    "Roger Sprung and His Progressive Bluegrassers"
-   ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
    "catalogue_id": "chinese-breakdown",
    "title": "Chinese Breakdown",
    "title_variants": [],
@@ -11942,31 +11876,6 @@
     "“Curly” Ray Cline"
    ],
    "type": "Instrumental",
-   "instruments": [
-    "fiddle",
-    "banjo",
-    "mandolin",
-    "guitar"
-   ]
-  },
-  {
-   "catalogue_id": "chinquapin",
-   "title": "Chinquapin",
-   "title_variants": [],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 4,
-   "spread": 2,
-   "score": 6.0,
-   "core": false,
-   "artists": [
-    "John Hartford",
-    "Rafe Stefanini",
-    "Reed Martin",
-    "Rhys Jones"
-   ],
-   "type": "Fiddle Tune",
    "instruments": [
     "fiddle",
     "banjo",
@@ -12094,47 +12003,6 @@
    "score": 0.0,
    "core": false,
    "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "christmas",
-   "title": "Christmas",
-   "title_variants": [
-    "Christmas (Baby Please Come Home)"
-   ],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 3,
-   "spread": 3,
-   "score": 6.0,
-   "core": false,
-   "artists": [
-    "Samantha Fish",
-    "The Jellyman's Daughter",
-    "The Lewis Family"
-   ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "christmas-is-near",
-   "title": "Christmas Is Near",
-   "title_variants": [],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 4,
-   "spread": 2,
-   "score": 6.0,
-   "core": false,
-   "artists": [
-    "Larry Sparks",
-    "Larry Sparks and the Lonesome Ramblers",
-    "Ralph Stanley",
-    "The Stanley Brothers"
-   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -12551,29 +12419,6 @@
    "score": 0.0,
    "core": false,
    "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "climb",
-   "title": "The Climb",
-   "title_variants": [
-    "Climb",
-    "Climb (Live)",
-    "Climb >"
-   ],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 3,
-   "spread": 3,
-   "score": 6.0,
-   "core": false,
-   "artists": [
-    "Béla Fleck",
-    "Chris Stapleton",
-    "The String Cheese Incident"
-   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -13158,10 +13003,13 @@
   {
    "catalogue_id": "columbus-stockade-blues",
    "title": "Columbus Stockade Blues",
-   "title_variants": [],
+   "title_variants": [
+    "Columbus Stockade Blues Doc Watson's minor version"
+   ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 14,
    "spread": 3,
@@ -13181,21 +13029,6 @@
     "Locust Honey String Band",
     "Norman Blake"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "columbus-stockade-blues-doc-watsons-minor",
-   "title": "Columbus Stockade Blues Doc Watson's minor version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -13974,17 +13807,19 @@
    "catalogue_id": "cousin-sally-brown",
    "title": "Cousin Sally Brown",
    "title_variants": [
+    "Cousin Sally Brown / Glory in the Meetinghouse",
     "Cousin' Sally Brown"
    ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 9,
+   "coverage": 10,
    "spread": 3,
-   "score": 18.0,
+   "score": 20.0,
    "core": false,
    "artists": [
     "78 RPM",
+    "Adam Hurt",
     "Audie Blaylock and Redline",
     "Bruce Molsky",
     "Dismembered Tennesseans",
@@ -14146,10 +13981,12 @@
    "catalogue_id": "crazy-arms",
    "title": "Crazy Arms",
    "title_variants": [
-    "Crazy Arms (instrumental)"
+    "Crazy Arms (instrumental)",
+    "Crazy Arms Ray Price"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 6,
    "spread": 3,
@@ -14163,21 +14000,6 @@
     "Patty Loveless",
     "The Stanley Brothers"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "crazy-arms-ray-price",
-   "title": "Crazy Arms Ray Price",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -14269,7 +14091,8 @@
    "title_variants": [
     "Cricket On The Hearth",
     "Cricket On The Hearth (D)",
-    "Cricket On The Hearth (Slow) (D)"
+    "Cricket On The Hearth (Slow) (D)",
+    "The Cricket on the Hearth, op. 62"
    ],
    "sources": [
     "mb-coverage",
@@ -15126,17 +14949,23 @@
   {
    "catalogue_id": "dance-with-me-kenny",
    "title": "Dance With Me Kenny",
-   "title_variants": [],
+   "title_variants": [
+    "Dance With Me",
+    "Dance With Me (Hernando’s Hideaway)"
+   ],
    "sources": [
     "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 1,
-   "spread": 1,
-   "score": 1.0,
+   "coverage": 4,
+   "spread": 2,
+   "score": 6.0,
    "core": false,
    "artists": [
-    "Kenny Baker"
+    "Alison Brown",
+    "Kenny Baker",
+    "Palast Orchester mit seinem Sänger Max Raabe",
+    "The Charlie Daniels Band"
    ],
    "type": "Vocal",
    "instruments": []
@@ -15281,18 +15110,22 @@
   {
    "catalogue_id": "dark-and-thorny",
    "title": "Dark and Thorny",
-   "title_variants": [],
+   "title_variants": [
+    "Dark and Thorny Is the Desert"
+   ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 2,
-   "spread": 2,
-   "score": 3.0,
+   "coverage": 4,
+   "spread": 3,
+   "score": 8.0,
    "core": false,
    "artists": [
     "Don Rigsby",
-    "Dudley Connell"
+    "Dudley Connell",
+    "Ralph Stanley",
+    "Riley Baugus"
    ],
    "type": "Vocal",
    "instruments": []
@@ -16072,7 +15905,9 @@
    "catalogue_id": "deck-the-halls",
    "title": "Deck the Halls",
    "title_variants": [
-    "Deck The Halls"
+    "Deck The Halls",
+    "Deck the Halls With Chips & Beernuts",
+    "Deck the Halls With Chips and Beernuts"
    ],
    "sources": [
     "mb-coverage",
@@ -16117,17 +15952,20 @@
   {
    "catalogue_id": "deep-elem-blues",
    "title": "Deep Elem Blues",
-   "title_variants": [],
+   "title_variants": [
+    "Deep Elem Blues: Explained"
+   ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 2,
+   "coverage": 3,
    "spread": 2,
-   "score": 3.0,
+   "score": 4.5,
    "core": false,
    "artists": [
     "Frank Wakefield",
+    "Mike Seeger",
     "The String Cheese Incident"
    ],
    "type": "Vocal",
@@ -18198,11 +18036,13 @@
    "title": "Down in the Valley",
    "title_variants": [
     "Down In The Valley",
-    "Down in the Valley (Duo version)"
+    "Down in the Valley (Duo version)",
+    "Down in the Valley folk version"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 8,
    "spread": 3,
@@ -18218,21 +18058,6 @@
     "The Devil Makes Three",
     "The Stanley Brothers"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "down-in-the-valley-folk",
-   "title": "Down in the Valley folk version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -18304,6 +18129,8 @@
    "title": "Down in the Willow Garden",
    "title_variants": [
     "Down In The Willow Garden",
+    "Down in the WIllow Garden crosspicking (Normal)",
+    "Down in the WIllow Garden crosspicking (Slow)",
     "Down in the Willow Garden (Live)",
     "Down in the Willow Garden (Rose Connolly)"
    ],
@@ -18311,9 +18138,9 @@
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 18,
+   "coverage": 19,
    "spread": 3,
-   "score": 36.0,
+   "score": 38.0,
    "core": true,
    "artists": [
     "Bill Harrell",
@@ -18324,10 +18151,10 @@
     "David Davis",
     "David Grisman",
     "David Johnson",
+    "Dix Bruce",
     "Don Reno",
     "Frank Wakefield",
-    "Hobart Smith",
-    "Jerry Douglas"
+    "Hobart Smith"
    ],
    "type": "Vocal",
    "instruments": []
@@ -19731,46 +19558,28 @@
    "instruments": []
   },
   {
-   "catalogue_id": "eight-more-miles",
-   "title": "Eight More Miles",
-   "title_variants": [],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 6,
-   "spread": 3,
-   "score": 12.0,
-   "core": false,
-   "artists": [
-    "Bobby Osborne",
-    "Claire Lynch",
-    "Michael Cleveland",
-    "None of the Above",
-    "Rhonda Vincent",
-    "Sam Bush"
-   ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
    "catalogue_id": "eight-more-miles-to-louisville",
    "title": "Eight More Miles to Louisville",
    "title_variants": [
+    "Eight More Miles",
     "Eight More Miles To Louisville",
     "Eight More Miles to Louisville (Alt Without Tambourine)",
     "Eight More Miles to Louisville (Master)",
-    "Eight More Miles to Louisville (Without Tambourine)"
+    "Eight More Miles to Louisville (Without Tambourine)",
+    "Eight More Miles to Louisvlle"
    ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 16,
+   "coverage": 21,
    "spread": 3,
-   "score": 32.0,
+   "score": 42.0,
    "core": true,
    "artists": [
+    "Bobby Osborne",
+    "Claire Lynch",
     "Country Ham",
     "Dix Bruce",
     "Doc Watson",
@@ -19780,9 +19589,7 @@
     "Jimmy Gaudreau",
     "John Hartford",
     "Mac Wiseman",
-    "Mike Auldridge",
-    "Norman Blake",
-    "Reno and Smiley"
+    "Michael Cleveland"
    ],
    "type": "Vocal",
    "instruments": []
@@ -20912,7 +20719,8 @@
    "catalogue_id": "fare-thee-well",
    "title": "Fare Thee Well",
    "title_variants": [
-    "Fare Thee Well (10,000 Miles)"
+    "Fare Thee Well (10,000 Miles)",
+    "Fare Thee Well Cisco"
    ],
    "sources": [
     "mb-coverage"
@@ -21311,17 +21119,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "fiddle-and-bow-jonathan-byrd",
+   "catalogue_id": "fiddle-and-bow",
    "title": "Fiddle and Bow Jonathan Byrd",
-   "title_variants": [],
+   "title_variants": [
+    "Fiddle and Bow"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Jim Buchanan"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -21343,7 +21156,9 @@
   {
    "catalogue_id": "fiddle-tune-medley",
    "title": "Fiddle Tune Medley",
-   "title_variants": [],
+   "title_variants": [
+    "Fiddle Tune Medley: Bonaparte Crossing the Rockies / Rosemary's Favorite / Wild Rose of the Mountain / Doggie on the Carpet"
+   ],
    "sources": [
     "mb-coverage"
    ],
@@ -22671,17 +22486,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "for-what-its-worth-buffalo-springfield",
+   "catalogue_id": "for-what-its-worth",
    "title": "For What It's Worth Buffalo Springfield",
-   "title_variants": [],
+   "title_variants": [
+    "For What It's Worth"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Yonder Mountain String Band"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -25281,21 +25101,27 @@
   {
    "catalogue_id": "going-up-home-to-live-in-green-pastures",
    "title": "Going Up Home to Live in Green Pastures",
-   "title_variants": [],
+   "title_variants": [
+    "Going Up Home",
+    "Going Up Home (To Live in Green Pastures)",
+    "Going Up Home (To live in Green Pastures)"
+   ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 7,
-   "spread": 2,
-   "score": 10.5,
-   "core": false,
+   "coverage": 9,
+   "spread": 3,
+   "score": 18.0,
+   "core": true,
    "artists": [
     "Alison Krauss",
     "David Grisman",
     "Jim Buchanan",
     "Judy Marshall",
     "Larry Sparks",
+    "Larry Sparks and the Lonesome Ramblers",
     "Ralph Stanley",
+    "The Stanley Brothers",
     "Vince Gill"
    ],
    "type": "Vocal",
@@ -27727,17 +27553,28 @@
    "instruments": []
   },
   {
-   "catalogue_id": "have-you-someone-in-heaven-awaiting",
-   "title": "Have You Someone In Heaven Awaiting",
-   "title_variants": [],
-   "sources": [
-    "bluegrass-lyrics"
+   "catalogue_id": "have-you-someone",
+   "title": "Have You Someone (in Heaven Waiting)",
+   "title_variants": [
+    "Have You Someone",
+    "Have You Someone (In Heaven Awaitin')",
+    "Have You Someone (In Heaven Awaiting)",
+    "Have You Someone In Heaven Awaiting"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "sources": [
+    "bluegrass-lyrics",
+    "mb-coverage"
+   ],
+   "coverage": 4,
+   "spread": 2,
+   "score": 6.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Ralph Stanley",
+    "Ricky Skaggs",
+    "The Stanley Brothers",
+    "Tony Rice"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -28518,18 +28355,20 @@
    "title": "Here I Am",
    "title_variants": [
     "Here I Am (Austin City Limits)",
-    "Here I Am (Come and Take Me)"
+    "Here I Am (Come and Take Me)",
+    "Here I Am Makin' Plans"
    ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 6,
+   "coverage": 7,
    "spread": 3,
-   "score": 12.0,
+   "score": 14.0,
    "core": false,
    "artists": [
     "Dolly Parton",
     "Donna the Buffalo",
+    "Grandpa Jones",
     "John Cowan",
     "Mountain Heart",
     "Patty Loveless",
@@ -30172,16 +30011,18 @@
    "title": "Hop High, Ladies",
    "title_variants": [
     "Hop High Ladies",
-    "Hop High Ladies (Hop Up Ladies)"
+    "Hop High Ladies (Hop Up Ladies)",
+    "Hop High Ladies the Cake’s All Dough"
    ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 5,
+   "coverage": 6,
    "spread": 2,
-   "score": 7.5,
+   "score": 9.0,
    "core": false,
    "artists": [
+    "Doc Watson",
     "Hickory Wind",
     "The Dillards",
     "The Holy Modal Rounders",
@@ -30802,6 +30643,8 @@
    "catalogue_id": "i-aint-broke-but-im-badly-bent",
    "title": "I Ain't Broke but I'm Badly Bent",
    "title_variants": [
+    "I Ain't Broke",
+    "I Ain’t Broke (But I’m Badly Bent)",
     "I Ain’t Broke But I’m Badly Bent",
     "I Ain’t Broke but I’m Badly Bent",
     "I Ain’t Broke, but I’m Badly Bent"
@@ -30810,13 +30653,15 @@
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 2,
-   "spread": 2,
-   "score": 3.0,
+   "coverage": 4,
+   "spread": 3,
+   "score": 8.0,
    "core": false,
    "artists": [
     "Bill Monroe and the Bluegrass Boys",
-    "David Grisman"
+    "David Grisman",
+    "Dismembered Tennesseans",
+    "IIIrd Tyme Out"
    ],
    "type": "Vocal",
    "instruments": []
@@ -30953,15 +30798,16 @@
    "title": "I Am a Pilgrim",
    "title_variants": [
     "I Am A Pilgrim",
+    "I Am A Pilgrim / Columbus Stockade",
     "I Am a Pilgrim (alternate take)"
    ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 25,
+   "coverage": 26,
    "spread": 3,
-   "score": 50.0,
+   "score": 52.0,
    "core": true,
    "artists": [
     "Bill Monroe",
@@ -32992,17 +32838,23 @@
    "instruments": []
   },
   {
-   "catalogue_id": "i-will-follow-you-into-the-dark-death-cab-for-cutie",
-   "title": "I Will Follow You Into the Dark Death Cab for Cutie",
-   "title_variants": [],
+   "catalogue_id": "i-will-follow-you",
+   "title": "I Will Follow You",
+   "title_variants": [
+    "I Will Follow You Into the Dark Death Cab for Cutie"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 2,
+   "spread": 1,
+   "score": 2.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Scott Stutzman",
+    "The String Cheese Incident"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -33590,17 +33442,21 @@
   {
    "catalogue_id": "if-i-were-a-carpenter",
    "title": "If I Were a Carpenter",
-   "title_variants": [],
+   "title_variants": [
+    "If I Were"
+   ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 4,
+   "coverage": 6,
    "spread": 3,
-   "score": 8.0,
+   "score": 12.0,
    "core": false,
    "artists": [
+    "Dean Sapp and The Hartford Express",
     "Doc Watson",
     "Dolly Parton",
+    "Donna Ulisse",
     "Lester Flatt & Earl Scruggs",
     "The Seldom Scene"
    ],
@@ -33672,7 +33528,8 @@
    "title": "If Teardrops Were Pennies",
    "title_variants": [
     "If Teardrops Were Pennies (Alternative Mix)",
-    "If Teardrops Were Pennies (Bonus Track)"
+    "If Teardrops Were Pennies (Bonus Track)",
+    "If Teardrops Were Pennies [Alternative Mix] (Album)"
    ],
    "sources": [
     "mb-coverage"
@@ -34010,10 +33867,12 @@
    "title": "I’ll Be There",
    "title_variants": [
     "I'll Be There",
+    "I'll Be There (If You Ever Want Me) Ray Price",
     "I’ll Be There (If You Ever Want Me)"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 7,
    "spread": 3,
@@ -34029,21 +33888,6 @@
     "The SteelDrivers"
    ],
    "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "ill-be-there-ray-price",
-   "title": "I'll Be There (If You Ever Want Me) Ray Price",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
    "instruments": []
   },
   {
@@ -36058,6 +35902,29 @@
    "instruments": []
   },
   {
+   "catalogue_id": "in-memory-of",
+   "title": "In Memory of Carter Stanley",
+   "title_variants": [
+    "In Memory of Elizabeth Reed"
+   ],
+   "sources": [
+    "mb-coverage"
+   ],
+   "coverage": 5,
+   "spread": 3,
+   "score": 10.0,
+   "core": false,
+   "artists": [
+    "Bill Harrell",
+    "Don Reno",
+    "Ralph Stanley",
+    "The Charlie Daniels Band",
+    "The Tennessee Cut-Ups"
+   ],
+   "type": "Vocal",
+   "instruments": []
+  },
+  {
    "catalogue_id": "in-my-dear-old-southern-home",
    "title": "In My Dear Old Southern Home",
    "title_variants": [],
@@ -36158,14 +36025,15 @@
    "catalogue_id": "in-the-garden",
    "title": "In the Garden",
    "title_variants": [
-    "In The Garden"
+    "In The Garden",
+    "In the Garden by the Fountain"
    ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 20,
+   "coverage": 21,
    "spread": 3,
-   "score": 40.0,
+   "score": 42.0,
    "core": true,
    "artists": [
     "Alan Jackson",
@@ -38126,17 +37994,21 @@
   {
    "catalogue_id": "jimmy-in-the-swamp",
    "title": "Jimmy in the Swamp",
-   "title_variants": [],
+   "title_variants": [
+    "Jimmy In The Swamp / Missouri Mud",
+    "Jimmy in the Swamp + Missouri Mud"
+   ],
    "sources": [
     "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 2,
+   "coverage": 3,
    "spread": 2,
-   "score": 3.0,
+   "score": 4.5,
    "core": false,
    "artists": [
     "Adam Hurt",
+    "Cathy Barton",
     "John Hartford"
    ],
    "type": "Vocal",
@@ -38765,7 +38637,8 @@
    "title_variants": [
     "Joy To The World",
     "Joy To The World (slow version)",
-    "Joy To the World"
+    "Joy To the World",
+    "Joy to the World [Short Country Fiddle Version]"
    ],
    "sources": [
     "mb-coverage"
@@ -39252,26 +39125,31 @@
   {
    "catalogue_id": "just-when-i-needed-you",
    "title": "Just When I Needed You",
-   "title_variants": [],
+   "title_variants": [
+    "Just When I Needed You Most",
+    "Just When I Needed You Most (1998)"
+   ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 10,
+   "coverage": 13,
    "spread": 3,
-   "score": 20.0,
+   "score": 26.0,
    "core": true,
    "artists": [
+    "Alison Krauss",
     "Bobby Hicks",
     "Charlie Moore",
+    "Dolly Parton",
     "Doyle Lawson",
     "J.D. Crowe",
     "Jerry Douglas",
     "Jim and Jesse",
+    "Rhonda Vincent",
     "The Bluegrass Album Band",
     "The Virginia Boys",
-    "Todd Phillips",
-    "Tony Rice"
+    "Todd Phillips"
    ],
    "type": "Vocal",
    "instruments": []
@@ -39836,7 +39714,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "killin-time-clint-black",
+   "catalogue_id": "killin-time",
    "title": "Killin' Time Clint Black",
    "title_variants": [],
    "sources": [
@@ -40124,7 +40002,8 @@
    "title": "Lady of Spain",
    "title_variants": [
     "Lady Of Spain",
-    "Lady of Spain 3/4 time"
+    "Lady of Spain 3/4 time",
+    "Lady of Spain bluegrass-ified"
    ],
    "sources": [
     "mb-coverage",
@@ -40142,21 +40021,6 @@
     "Rual Yarbrough",
     "The Blue Ridge Gentlemen"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "lady-of-spain-bluegrass-ified",
-   "title": "Lady of Spain bluegrass-ified",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -40458,17 +40322,22 @@
   {
    "catalogue_id": "late-last-night",
    "title": "Late Last Night",
-   "title_variants": [],
+   "title_variants": [
+    "Late Last Night When Wille"
+   ],
    "sources": [
     "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 3,
-   "spread": 1,
-   "score": 3.0,
+   "coverage": 6,
+   "spread": 2,
+   "score": 9.0,
    "core": false,
    "artists": [
     "Bashful Brother Oswald",
+    "Clint Howard",
+    "Doc Watson",
+    "Fred Price",
     "Ralph Stanley",
     "The Stanley Brothers"
    ],
@@ -41810,9 +41679,12 @@
   {
    "catalogue_id": "lily-dale",
    "title": "Lily Dale",
-   "title_variants": [],
+   "title_variants": [
+    "Lily Dale Bob Wills"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 4,
    "spread": 3,
@@ -41824,21 +41696,6 @@
     "Junior Sisk",
     "The Craig County Boys"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "lily-dale-bob-wills",
-   "title": "Lily Dale Bob Wills",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -43177,17 +43034,19 @@
    "catalogue_id": "little-white-washed-chimney",
    "title": "Little White Washed Chimney",
    "title_variants": [
-    "Little White-Washed Chimney"
+    "Little White-Washed Chimney",
+    "Little White-Washed Chimney (w. The Cox Family & Rob Ickes)"
    ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 4,
+   "coverage": 5,
    "spread": 2,
-   "score": 6.0,
+   "score": 7.5,
    "core": false,
    "artists": [
+    "Alison Krauss & Union Station",
     "Country Gazette",
     "David Davis",
     "The Dixie Mountain Boys",
@@ -43368,17 +43227,20 @@
   {
    "catalogue_id": "logan-county-blues",
    "title": "Logan County Blues",
-   "title_variants": [],
+   "title_variants": [
+    "Logan County Blues with Claudia Anastasio"
+   ],
    "sources": [
     "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 3,
+   "coverage": 4,
    "spread": 2,
-   "score": 4.5,
+   "score": 6.0,
    "core": false,
    "artists": [
     "Down Trodden String Band",
+    "Jeremy Kammerer",
     "Locust Honey String Band",
     "Tommy Jarrell"
    ],
@@ -44145,10 +44007,12 @@
    "catalogue_id": "lonesome-whistle",
    "title": "(I Heard That) Lonesome Whistle",
    "title_variants": [
-    "Lonesome Whistle"
+    "Lonesome Whistle",
+    "Lonesome Whistle Hank Williams"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 8,
    "spread": 3,
@@ -44164,21 +44028,6 @@
     "The Roys",
     "The Warrior River Boys"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "lonesome-whistle-hank-williams",
-   "title": "Lonesome Whistle Hank Williams",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -44236,8 +44085,12 @@
   {
    "catalogue_id": "lonesome-without-you",
    "title": "Lonesome Without You",
-   "title_variants": [],
+   "title_variants": [
+    "Lonesome Without You – Delmore Brothers",
+    "Lonesome Without You – Stanleys"
+   ],
    "sources": [
+    "bluegrass-lyrics",
     "mb-coverage"
    ],
    "coverage": 7,
@@ -44253,36 +44106,6 @@
     "Ralph Stanley",
     "The Wood Brothers"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "lonesome-without-you-delmore-brothers",
-   "title": "Lonesome Without You – Delmore Brothers",
-   "title_variants": [],
-   "sources": [
-    "bluegrass-lyrics"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "lonesome-without-you-stanleys",
-   "title": "Lonesome Without You – Stanleys",
-   "title_variants": [],
-   "sources": [
-    "bluegrass-lyrics"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -46127,15 +45950,16 @@
    "title": "Mama Don't Allow",
    "title_variants": [
     "Mama Don't Allow (Live)",
-    "Mama Don’t Allow"
+    "Mama Don’t Allow",
+    "Mama Don’t Allow It /Will The Circle Be Unbroken?"
    ],
    "sources": [
     "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 8,
+   "coverage": 9,
    "spread": 3,
-   "score": 16.0,
+   "score": 18.0,
    "core": true,
    "artists": [
     "Bill Harrell",
@@ -46144,6 +45968,7 @@
     "Don Reno",
     "J.E. Mainer’s Mountaineers",
     "Lester Flatt & Earl Scruggs",
+    "Old Crow Medicine Show",
     "The Stanley Brothers",
     "The Stonemans"
    ],
@@ -47205,9 +47030,11 @@
    "catalogue_id": "memories-of-mother",
    "title": "Memories of Mother",
    "title_variants": [
-    "Memories Of Mother"
+    "Memories Of Mother",
+    "Memories Of Mother – Stanleys"
    ],
    "sources": [
+    "bluegrass-lyrics",
     "mb-coverage"
    ],
    "coverage": 5,
@@ -47253,21 +47080,6 @@
     "Tony Rice"
    ],
    "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "memories-of-mother-stanleys",
-   "title": "Memories Of Mother – Stanleys",
-   "title_variants": [],
-   "sources": [
-    "bluegrass-lyrics"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
    "instruments": []
   },
   {
@@ -49096,17 +48908,23 @@
    "instruments": []
   },
   {
-   "catalogue_id": "muddy-waters-seldom-scene",
-   "title": "Muddy Waters Seldom Scene",
-   "title_variants": [],
+   "catalogue_id": "muddy-waters",
+   "title": "Muddy Waters",
+   "title_variants": [
+    "Muddy Waters Seldom Scene"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 2,
+   "spread": 2,
+   "score": 3.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "The Osborne Brothers",
+    "The Seldom Scene"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -51398,16 +51216,17 @@
    "catalogue_id": "nobody-loves-me",
    "title": "Nobody Loves Me",
    "title_variants": [
-    "Nobody Loves Me (take 2)"
+    "Nobody Loves Me (take 2)",
+    "Nobody Loves Me, Nobody Cares"
    ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 11,
+   "coverage": 12,
    "spread": 3,
-   "score": 22.0,
+   "score": 24.0,
    "core": true,
    "artists": [
     "Bill Monroe",
@@ -51417,6 +51236,7 @@
     "Frank Wakefield",
     "J.D. Crowe",
     "Jerry Douglas",
+    "Lester Flatt & Earl Scruggs",
     "Lost & Found",
     "The Bluegrass Album Band",
     "Todd Phillips",
@@ -52675,7 +52495,8 @@
    "catalogue_id": "old-folks-at-home",
    "title": "The Old Folks at Home",
    "title_variants": [
-    "Old Folks at Home"
+    "Old Folks at Home",
+    "Old Folks at Home a la Vern Williams"
    ],
    "sources": [
     "mb-coverage",
@@ -52692,21 +52513,6 @@
     "Tony Trischka",
     "Tut Taylor"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "old-folks-at-home-a-la",
-   "title": "Old Folks at Home a la Vern Williams",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -52850,11 +52656,14 @@
     "\"Old Joe Clark\" (backup)",
     "Old Joe Clark (Introduction & Theme)",
     "Old Joe Clark (Viejo Joe Clark)",
-    "Old Joe Clark (with Intro)"
+    "Old Joe Clark (with Intro)",
+    "Old Joe Clark / June Apple",
+    "Old Joe Clark extra-modal chording"
    ],
    "sources": [
     "bluegrass-lyrics",
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 52,
    "spread": 3,
@@ -52881,21 +52690,6 @@
     "mandolin",
     "guitar"
    ]
-  },
-  {
-   "catalogue_id": "old-joe-clark-extra-modal-chording",
-   "title": "Old Joe Clark extra-modal chording",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
   },
   {
    "catalogue_id": "old-kentucky-hillside",
@@ -52934,41 +52728,25 @@
    "catalogue_id": "old-log-cabin",
    "title": "Old Log Cabin",
    "title_variants": [
+    "An Old Log Cabin For Sale",
+    "Old Log Cabin For Sale",
     "Old Log Cabin Longview"
    ],
    "sources": [
+    "bluegrass-lyrics",
     "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 4,
+   "coverage": 5,
    "spread": 2,
-   "score": 6.0,
+   "score": 7.5,
    "core": false,
    "artists": [
     "Bill Harrell",
+    "Charlie Moore",
     "Don Reno",
     "Longview",
     "The Tennessee Cut-Ups"
-   ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "old-log-cabin-for-sale",
-   "title": "An Old Log Cabin For Sale",
-   "title_variants": [
-    "Old Log Cabin For Sale"
-   ],
-   "sources": [
-    "bluegrass-lyrics",
-    "mb-coverage"
-   ],
-   "coverage": 1,
-   "spread": 1,
-   "score": 1.0,
-   "core": false,
-   "artists": [
-    "Charlie Moore"
    ],
    "type": "Vocal",
    "instruments": []
@@ -53472,7 +53250,8 @@
    "catalogue_id": "old-spinning-wheel",
    "title": "The Old Spinning Wheel",
    "title_variants": [
-    "Old Spinning Wheel"
+    "Old Spinning Wheel",
+    "Old Spinning Wheel in the Parlor"
    ],
    "sources": [
     "mb-coverage"
@@ -53928,6 +53707,7 @@
    "title_variants": [
     "On The Road",
     "On The Road (Written By – Bill Nershi)",
+    "On the Road to Bonnaroo",
     "On the road"
    ],
    "sources": [
@@ -54951,6 +54731,29 @@
     "Don Reno",
     "Mark O’Connor",
     "New Grass Revival"
+   ],
+   "type": "Vocal",
+   "instruments": []
+  },
+  {
+   "catalogue_id": "over-the-river",
+   "title": "Over the River",
+   "title_variants": [
+    "Over the River Charlie"
+   ],
+   "sources": [
+    "mb-coverage"
+   ],
+   "coverage": 5,
+   "spread": 3,
+   "score": 10.0,
+   "core": false,
+   "artists": [
+    "Bill Harrell",
+    "Doc Watson",
+    "Don Reno",
+    "Elephant Revival",
+    "The Tennessee Cut-Ups"
    ],
    "type": "Vocal",
    "instruments": []
@@ -56029,17 +55832,20 @@
   {
    "catalogue_id": "plant-some-flowers",
    "title": "Plant Some Flowers",
-   "title_variants": [],
+   "title_variants": [
+    "Plant Some Flowers by My Graveside"
+   ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 2,
+   "coverage": 3,
    "spread": 2,
-   "score": 3.0,
+   "score": 4.5,
    "core": false,
    "artists": [
     "Dean Sapp and The Hartford Express",
+    "Jeff Parker",
     "The Bluegrass Cardinals"
    ],
    "type": "Vocal",
@@ -56448,7 +56254,9 @@
   {
    "catalogue_id": "poor-ellen-smith",
    "title": "Poor Ellen Smith",
-   "title_variants": [],
+   "title_variants": [
+    "Poor Ellen Smith [2019-12-14: Sinclair, Cambridge, MA]"
+   ],
    "sources": [
     "mb-coverage"
    ],
@@ -56989,17 +56797,20 @@
   {
    "catalogue_id": "pretty-little-girl",
    "title": "Pretty Little Girl",
-   "title_variants": [],
+   "title_variants": [
+    "Pretty Little Girl From Galax"
+   ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 5,
+   "coverage": 6,
    "spread": 2,
-   "score": 7.5,
+   "score": 9.0,
    "core": false,
    "artists": [
     "Benton Flippen",
     "Carolina Chocolate Drops",
+    "IIIrd Tyme Out",
     "Kyle Creed",
     "Lonesome River Band",
     "Ralph Whited"
@@ -58467,6 +58278,7 @@
    "catalogue_id": "red-haired-boy",
    "title": "Red Haired Boy",
    "title_variants": [
+    "Red Haired Boy / The Musical Priest",
     "Red-Haired Boy",
     "Red-Haired Boy (A)",
     "Red-Haired Boy (Slow) (A)"
@@ -58474,11 +58286,12 @@
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 8,
+   "coverage": 9,
    "spread": 3,
-   "score": 16.0,
+   "score": 18.0,
    "core": true,
    "artists": [
+    "Adam Hurt",
     "Billy Strings",
     "David Grier",
     "Grandpa Jones",
@@ -58550,14 +58363,16 @@
    "catalogue_id": "red-river-valley",
    "title": "Red River Valley",
    "title_variants": [
-    "\"Red River Valley\" (backup)"
+    "\"Red River Valley\" (backup)",
+    "Red River Valley / Campfire Reprise",
+    "Red River Valley Variations"
    ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 12,
+   "coverage": 13,
    "spread": 3,
-   "score": 24.0,
+   "score": 26.0,
    "core": true,
    "artists": [
     "Buckethead",
@@ -58565,13 +58380,13 @@
     "Harvey Reid",
     "Jimmy Martin and the Sunny Mountain Boys",
     "Michael Martin Murphey",
+    "Peter Rowan",
     "Stuart Duncan",
     "The Country Gentlemen",
     "The Lewis Family",
     "The Stanley Brothers",
     "The Warrior River Boys",
-    "Tony Trischka",
-    "Uncle Dave Macon"
+    "Tony Trischka"
    ],
    "type": "Vocal",
    "instruments": []
@@ -59331,15 +59146,18 @@
   {
    "catalogue_id": "riders-in-the-sky-a-cowboy-legend",
    "title": "(Ghost) Riders in the Sky: A Cowboy Legend",
-   "title_variants": [],
+   "title_variants": [
+    "Riders in the Sky"
+   ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 5,
-   "spread": 2,
-   "score": 7.5,
+   "coverage": 6,
+   "spread": 3,
+   "score": 12.0,
    "core": false,
    "artists": [
+    "Buckethead",
     "Charlie Daniels",
     "Frank Wakefield",
     "Michael Martin Murphey",
@@ -59350,17 +59168,24 @@
    "instruments": []
   },
   {
-   "catalogue_id": "ridge-road-gravel-blake-and-rice",
-   "title": "Ridge Road Gravel Blake & Rice",
-   "title_variants": [],
+   "catalogue_id": "ridge-road-gravel",
+   "title": "Ridge Road Gravel",
+   "title_variants": [
+    "Ridge Road Gravel Blake & Rice"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 3,
+   "spread": 1,
+   "score": 3.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Chris Eldridge",
+    "Norman Blake",
+    "Tony Rice"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -59772,6 +59597,31 @@
    "score": 0.0,
    "core": false,
    "artists": [],
+   "type": "Vocal",
+   "instruments": []
+  },
+  {
+   "catalogue_id": "rock-and-roll",
+   "title": "Rock and Roll",
+   "title_variants": [
+    "Rock And Roll Girlfriend",
+    "Rock and Roll All Nite",
+    "Rock and Roll Lawyer"
+   ],
+   "sources": [
+    "mb-coverage"
+   ],
+   "coverage": 5,
+   "spread": 2,
+   "score": 7.5,
+   "core": false,
+   "artists": [
+    "Austin Lounge Lizards",
+    "Hayseed Dixie",
+    "Iron Horse",
+    "Lonesome River Band",
+    "The Rockinghams"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -61202,6 +61052,7 @@
    "title_variants": [
     "Sail Away Ladies (G)",
     "Sail Away Ladies (Slow) (G)",
+    "Sail Away Ladies / Walking In The Parlour",
     "Sail Away, Ladies!"
    ],
    "sources": [
@@ -62003,10 +61854,12 @@
    "catalogue_id": "satans-jeweled-crown",
    "title": "Satan’s Jeweled Crown",
    "title_variants": [
-    "Satan's Jeweled Crown"
+    "Satan's Jeweled Crown",
+    "Satan's Jeweled Crown original Louvin Brothers timing"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 5,
    "spread": 3,
@@ -62020,21 +61873,6 @@
     "The Seldom Scene"
    ],
    "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "satans-jeweled-crown-original-louvin-brothers-timing",
-   "title": "Satan's Jeweled Crown original Louvin Brothers timing",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
    "instruments": []
   },
   {
@@ -65770,7 +65608,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "southern-pacific-neil-young",
+   "catalogue_id": "southern-pacific",
    "title": "Southern Pacific Neil Young",
    "title_variants": [],
    "sources": [
@@ -65996,17 +65834,19 @@
    "title_variants": [
     "St Anne's Reel (D)",
     "St Anne's Reel (Slow) (D)",
+    "St. Anne's Reel/Morpeth Rant",
     "St. Anne’s Reel"
    ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 9,
+   "coverage": 10,
    "spread": 3,
-   "score": 18.0,
+   "score": 20.0,
    "core": false,
    "artists": [
     "Aubrey Haynie",
+    "Cornerstone",
     "Country Gazette",
     "Jerry Douglas",
     "John Cowan",
@@ -66234,34 +66074,32 @@
    "instruments": []
   },
   {
-   "catalogue_id": "star-of-the-county-down-4-4-irish-rovers",
-   "title": "Star of the County Down 4/4 Irish Rovers version",
-   "title_variants": [],
+   "catalogue_id": "star-of-the-county-down",
+   "title": "Star of the County Down",
+   "title_variants": [
+    "Star of the County Down 4/4 Irish Rovers version",
+    "Star of the County Down 4/4 version, ABB"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 3,
+   "spread": 2,
+   "score": 4.5,
    "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "star-of-the-county-down-4-4-version-abb",
-   "title": "Star of the County Down 4/4 version, ABB",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
+   "artists": [
+    "Béla Fleck and the Flecktones",
+    "Joe Craven",
+    "Mark O’Connor"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
+   "type": "Fiddle Tune",
+   "instruments": [
+    "fiddle",
+    "banjo",
+    "mandolin",
+    "guitar"
+   ]
   },
   {
    "catalogue_id": "star-spangled-banner",
@@ -67886,9 +67724,12 @@
   {
    "catalogue_id": "sweet-hour-of-prayer",
    "title": "Sweet Hour of Prayer",
-   "title_variants": [],
+   "title_variants": [
+    "Sweet Hour of Prayer Bluegrass Cardinals"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 5,
    "spread": 2,
@@ -67902,21 +67743,6 @@
     "Tony Rice"
    ],
    "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "sweet-hour-of-prayer-bluegrass-cardinals",
-   "title": "Sweet Hour of Prayer Bluegrass Cardinals",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
    "instruments": []
   },
   {
@@ -68349,17 +68175,24 @@
    "instruments": []
   },
   {
-   "catalogue_id": "swinging-doors-merle-haggard",
-   "title": "Swinging Doors Merle Haggard",
-   "title_variants": [],
+   "catalogue_id": "swinging-doors",
+   "title": "Swinging Doors",
+   "title_variants": [
+    "Swinging Doors Merle Haggard"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 3,
+   "spread": 2,
+   "score": 4.5,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Billy Strings",
+    "Lost & Found",
+    "The Bluegrass Partners"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -68420,75 +68253,59 @@
    "catalogue_id": "take-me-back",
    "title": "Take Me Back",
    "title_variants": [
-    "Take Me Back (And Leave Me There)"
-   ],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 12,
-   "spread": 3,
-   "score": 24.0,
-   "core": true,
-   "artists": [
-    "April Verch",
-    "Dailey & Vincent",
-    "Dolly Parton",
-    "Dom Flemons",
-    "Leftover Salmon",
-    "Michael Lee Firkins",
-    "Mipso",
-    "Nitty Gritty Dirt Band",
-    "Ralph Stanley",
-    "Ricky Skaggs",
-    "The Country Gentlemen",
-    "The Dixie Mountain Boys"
-   ],
-   "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "take-me-back-to-tulsa",
-   "title": "Take Me Back to Tulsa",
-   "title_variants": [
-    "Take Me Back To Tulsa"
+    "Take Me Back (And Leave Me There)",
+    "Take Me Back To Tulsa",
+    "Take Me Back to Tulsa",
+    "Take Me Back to West Vinrginia",
+    "Take Me Back to Your Sweet Little Nest",
+    "Take Me Back to the Range"
    ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 7,
+   "coverage": 22,
    "spread": 3,
-   "score": 14.0,
-   "core": false,
+   "score": 44.0,
+   "core": true,
    "artists": [
     "Alice Gerrard",
+    "April Verch",
     "Buck Ryan",
+    "Dailey & Vincent",
+    "Dolly Parton",
+    "Dom Flemons",
     "Hazel Dickens",
+    "Leftover Salmon",
     "Lester Flatt & Earl Scruggs",
-    "Poutníci",
-    "The Canal Street String Band",
-    "Vassar Clements"
+    "Michael Lee Firkins",
+    "Mipso",
+    "Nitty Gritty Dirt Band"
    ],
-   "type": "Vocal",
+   "type": "Gospel",
    "instruments": []
   },
   {
    "catalogue_id": "take-me-home",
    "title": "Take Me Home",
-   "title_variants": [],
+   "title_variants": [
+    "Take Me Home Poor Julia",
+    "Take Me Home, Poor Julia"
+   ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 5,
+   "coverage": 6,
    "spread": 2,
-   "score": 7.5,
+   "score": 9.0,
    "core": false,
    "artists": [
     "Bill Monroe and the Bluegrass Boys",
     "James Bryan",
     "Norman Blake",
     "Ralph Stanley",
-    "The Stanley Brothers"
+    "The Stanley Brothers",
+    "Uncle Dave Macon"
    ],
    "type": "Vocal",
    "instruments": []
@@ -68801,7 +68618,8 @@
    "catalogue_id": "talk-to-your-heart",
    "title": "Talk to Your Heart",
    "title_variants": [
-    "Talk to Your Heart 4/4 time"
+    "Talk to Your Heart 4/4 time",
+    "Talk to Your Heart Ray Price"
    ],
    "sources": [
     "mb-coverage",
@@ -68816,21 +68634,6 @@
     "Frank Wakefield",
     "Roland White"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "talk-to-your-heart-ray-price",
-   "title": "Talk to Your Heart Ray Price",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -69103,6 +68906,32 @@
    "artists": [
     "Jesse McReynolds",
     "Jim and Jesse"
+   ],
+   "type": "Vocal",
+   "instruments": []
+  },
+  {
+   "catalogue_id": "tell-her-lies-and-feed-her-candy",
+   "title": "Tell Her Lies and Feed Her Candy",
+   "title_variants": [
+    "Tell Her Lies (And Feed Her Candy)",
+    "Tell Her Lies (and Feed Her Candy)",
+    "Tell Her Lies And Feed Her Candy"
+   ],
+   "sources": [
+    "mb-coverage"
+   ],
+   "coverage": 6,
+   "spread": 2,
+   "score": 9.0,
+   "core": false,
+   "artists": [
+    "Corbett Stamper",
+    "Dismembered Tennesseans",
+    "Jerry Douglas",
+    "Jim and Jesse",
+    "Lonesome River Band",
+    "The Virginia Boys"
    ],
    "type": "Vocal",
    "instruments": []
@@ -70204,17 +70033,20 @@
    "catalogue_id": "theres-more-pretty-girls-than-one",
    "title": "There's More Pretty Girls Than One",
    "title_variants": [
+    "There's More Pretty Girls Than One arpeggio (Normal)",
+    "There's More Pretty Girls Than One arpeggio (Slow)",
     "There’s More Pretty Girls Than One"
    ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 11,
+   "coverage": 12,
    "spread": 3,
-   "score": 22.0,
+   "score": 24.0,
    "core": true,
    "artists": [
     "Clint Howard",
+    "Dix Bruce",
     "Doc Watson",
     "Fred Price",
     "Highwoods String Band",
@@ -71522,7 +71354,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "tomorrow-is-a-long-time-bob-dylan-cover-by-seldom-scene",
+   "catalogue_id": "tomorrow-is-a-long-time-bob-dylan-cover-by",
    "title": "Tomorrow is a Long Time Bob Dylan cover by Seldom Scene",
    "title_variants": [],
    "sources": [
@@ -72482,9 +72314,12 @@
   {
    "catalogue_id": "tumbling-tumbleweeds",
    "title": "Tumbling Tumbleweeds",
-   "title_variants": [],
+   "title_variants": [
+    "Tumbling Tumbleweeds Sons of the Pioneers"
+   ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 5,
    "spread": 3,
@@ -72503,21 +72338,6 @@
   {
    "catalogue_id": "tumbling-tumbleweeds-buck-white",
    "title": "Tumbling Tumbleweeds Buck White version",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "tumbling-tumbleweeds-sons-of-the-pioneers",
-   "title": "Tumbling Tumbleweeds Sons of the Pioneers",
    "title_variants": [],
    "sources": [
     "strum-machine"
@@ -72597,7 +72417,8 @@
     "Turkey In The Straw",
     "Turkey In The Straw (G)",
     "Turkey In The Straw (Slow) (G)",
-    "Turkey in the Straw (intro.)"
+    "Turkey in the Straw (intro.)",
+    "Turkey in the Straw / Mule Imitation"
    ],
    "sources": [
     "mb-coverage"
@@ -72649,17 +72470,22 @@
    "instruments": []
   },
   {
-   "catalogue_id": "turn-the-page-bob-seger",
+   "catalogue_id": "turn-the-page",
    "title": "Turn the Page Bob Seger",
-   "title_variants": [],
+   "title_variants": [
+    "Turn the Page"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 1,
+   "spread": 1,
+   "score": 1.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Carrie Hassler and Hard Rain"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -74848,17 +74674,25 @@
    "instruments": []
   },
   {
-   "catalogue_id": "way-i-am-the-merle-haggard",
-   "title": "Way I Am, The Merle Haggard",
-   "title_variants": [],
+   "catalogue_id": "way-i-am",
+   "title": "The Way I Am",
+   "title_variants": [
+    "Way I Am, The Merle Haggard"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 4,
+   "spread": 2,
+   "score": 6.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Alan Jackson",
+    "Dean Sapp and The Hartford Express",
+    "The Petersens",
+    "Wildwood Valley Boys"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -74972,19 +74806,21 @@
    "catalogue_id": "ways-of-the-world",
    "title": "Ways of the World",
    "title_variants": [
-    "Ways Of The World"
+    "Ways Of The World",
+    "Ways of the World - Rebel Raid"
    ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 4,
+   "coverage": 5,
    "spread": 3,
-   "score": 8.0,
+   "score": 10.0,
    "core": false,
    "artists": [
     "Bruce Molsky",
     "Highwoods String Band",
     "Hog-Eyed Man",
+    "Kitgut Stringband",
     "Rayna Gellert"
    ],
    "type": "Instrumental",
@@ -75845,6 +75681,8 @@
    "title": "What Child Is This?",
    "title_variants": [
     "What Child Is This",
+    "What Child Is This / Away in a Manger",
+    "What Child Is This / Dyngyldai",
     "What Child Is This? (Greensleeves)",
     "What Child Is This? (Instrumental)",
     "What Child Is This? (Vocal)",
@@ -75853,14 +75691,15 @@
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 13,
+   "coverage": 15,
    "spread": 3,
-   "score": 26.0,
+   "score": 30.0,
    "core": true,
    "artists": [
     "Alison Krauss",
     "Andrea Zonn",
     "Annie Moses Band",
+    "Béla Fleck and the Flecktones",
     "David Grisman",
     "John Cowan",
     "Mark O’Connor",
@@ -75868,8 +75707,7 @@
     "Mike Marshall",
     "Peter Ostroushko",
     "Ricky Skaggs",
-    "The Charlie Daniels Band",
-    "The Petersens"
+    "Sam Bush"
    ],
    "type": "Vocal",
    "instruments": []
@@ -75965,56 +75803,36 @@
    "instruments": []
   },
   {
-   "catalogue_id": "what-would-you-give",
-   "title": "What Would You Give",
+   "catalogue_id": "what-would-you-give-in-exchange",
+   "title": "What Would You Give in Exchange?",
    "title_variants": [
-    "What Would You Give (In Exchange for Your Soul)"
+    "What Would You Give",
+    "What Would You Give (In Exchange for Your Soul)",
+    "What Would You Give in Exchange"
    ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 4,
-   "spread": 2,
-   "score": 6.0,
-   "core": false,
-   "artists": [
-    "Bill Monroe and the Bluegrass Boys",
-    "Charlie Daniels",
-    "Jesse McReynolds",
-    "The Devil Makes Three"
-   ],
-   "type": "Gospel",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "what-would-you-give-in-exchange",
-   "title": "What Would You Give in Exchange?",
-   "title_variants": [
-    "What Would You Give in Exchange"
-   ],
-   "sources": [
-    "mb-coverage"
-   ],
-   "coverage": 15,
+   "coverage": 17,
    "spread": 3,
-   "score": 30.0,
+   "score": 34.0,
    "core": true,
    "artists": [
     "Audie Blaylock",
     "Benny Martin",
     "Bill Monroe",
     "Bill Monroe and the Bluegrass Boys",
+    "Charlie Daniels",
     "Doc Watson",
     "Don Reno",
     "James Monroe",
+    "Jesse McReynolds",
     "Jim and Jesse",
     "Jimmy Martin and the Sunny Mountain Boys",
-    "Larry Sparks",
-    "Paul Williams",
-    "The Bluegrass Band"
+    "Larry Sparks"
    ],
-   "type": "Vocal",
+   "type": "Gospel",
    "instruments": []
   },
   {
@@ -76706,17 +76524,20 @@
   {
    "catalogue_id": "when-the-roses-bloom-again",
    "title": "When the Roses Bloom Again",
-   "title_variants": [],
+   "title_variants": [
+    "When the Roses Bloom Again for the Bootlegger"
+   ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 5,
+   "coverage": 6,
    "spread": 2,
-   "score": 7.5,
+   "score": 9.0,
    "core": false,
    "artists": [
     "Bill Harrell",
     "Don Reno",
+    "Earl Johnson",
     "J.E. Mainer",
     "Mac Wiseman",
     "The Tennessee Cut-Ups"
@@ -76728,18 +76549,20 @@
    "catalogue_id": "when-the-roses-bloom-in-dixieland",
    "title": "When The Roses Bloom In Dixieland",
    "title_variants": [
+    "When the Roses Bloom",
     "When the Roses Bloom in Dixieland"
    ],
    "sources": [
     "bluegrass-lyrics",
     "mb-coverage"
    ],
-   "coverage": 3,
+   "coverage": 4,
    "spread": 2,
-   "score": 4.5,
+   "score": 6.0,
    "core": false,
    "artists": [
     "Doc Watson",
+    "Mac Wiseman",
     "Norman Blake",
     "The Osborne Brothers"
    ],
@@ -76986,6 +76809,7 @@
    "title": "When You Say Nothing at All",
    "title_variants": [
     "When You Say Nothing At All",
+    "When You Say Nothing At All [Radio Edit]",
     "When You Say Nothing at All (live)"
    ],
    "sources": [
@@ -77501,7 +77325,8 @@
    "title": "Whiskey Before Breakfast",
    "title_variants": [
     "Whiskey Before Breakfast (D)",
-    "Whiskey Before Breakfast (Slow) (D)"
+    "Whiskey Before Breakfast (Slow) (D)",
+    "Whiskey Before Breakfast - Fiddler's Dram"
    ],
    "sources": [
     "mb-coverage"
@@ -77855,6 +77680,7 @@
    "title": "White Wheeled Limousine",
    "title_variants": [
     "White Wheeled Limousine (intro)",
+    "White Wheeled Limousine / Long Black Veil",
     "White-Wheeled Limousine"
    ],
    "sources": [
@@ -78037,6 +77863,7 @@
    "title_variants": [
     "Who Will Sing For Me",
     "Who Will Sing for Me Flatt & Scruggs version",
+    "Who Will Sing for Me Stanley Bros.",
     "Who Will Sing for Me?"
    ],
    "sources": [
@@ -78062,21 +77889,6 @@
     "Lester Flatt & Earl Scruggs",
     "Ralph Stanley"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "who-will-sing-for-me-stanley-bros",
-   "title": "Who Will Sing for Me Stanley Bros.",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -78208,6 +78020,28 @@
    "instruments": []
   },
   {
+   "catalogue_id": "whos-that-knocking",
+   "title": "Who's That Knocking?",
+   "title_variants": [
+    "Who's That Knocking At My Window Hazel & Alice"
+   ],
+   "sources": [
+    "mb-coverage",
+    "strum-machine"
+   ],
+   "coverage": 3,
+   "spread": 2,
+   "score": 4.5,
+   "core": false,
+   "artists": [
+    "Alice Gerrard",
+    "Hazel Dickens",
+    "Tatiana Hargreaves"
+   ],
+   "type": "Vocal",
+   "instruments": []
+  },
+  {
    "catalogue_id": "whos-that-knocking-at-my-door",
    "title": "Who's That Knocking At My Door",
    "title_variants": [
@@ -78245,21 +78079,6 @@
   {
    "catalogue_id": "whos-that-knocking-at-my-window-carter-family",
    "title": "Who's That Knocking At My Window Carter family",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "whos-that-knocking-at-my-window-hazel-and-alice",
-   "title": "Who's That Knocking At My Window Hazel & Alice",
    "title_variants": [],
    "sources": [
     "strum-machine"
@@ -78676,17 +78495,24 @@
    "instruments": []
   },
   {
-   "catalogue_id": "wild-rose-of-the-mountain-si-kahn",
-   "title": "Wild Rose of the Mountain Si Kahn",
-   "title_variants": [],
+   "catalogue_id": "wild-rose-of-the-mountain",
+   "title": "Wild Rose Of The Mountain",
+   "title_variants": [
+    "Wild Rose of the Mountain",
+    "Wild Rose of the Mountain Si Kahn"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 2,
+   "spread": 1,
+   "score": 2.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Annadeene Fraley",
+    "J.P. Fraley"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -79194,17 +79020,23 @@
    "instruments": []
   },
   {
-   "catalogue_id": "wind-and-rain-jerry-garcia",
-   "title": "Wind and Rain Jerry Garcia version",
-   "title_variants": [],
+   "catalogue_id": "wind-and-rain",
+   "title": "Wind & Rain",
+   "title_variants": [
+    "Wind and Rain Jerry Garcia version"
+   ],
    "sources": [
+    "mb-coverage",
     "strum-machine"
    ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
+   "coverage": 2,
+   "spread": 1,
+   "score": 2.0,
    "core": false,
-   "artists": [],
+   "artists": [
+    "Gene Parsons",
+    "Mike Seeger"
+   ],
    "type": "Vocal",
    "instruments": []
   },
@@ -79934,7 +79766,7 @@
    "instruments": []
   },
   {
-   "catalogue_id": "yakety-axe-chet-atkins",
+   "catalogue_id": "yakety-axe",
    "title": "Yakety Axe Chet Atkins",
    "title_variants": [],
    "sources": [
@@ -80055,10 +79887,13 @@
    "catalogue_id": "yellow-rose-of-texas",
    "title": "The Yellow Rose of Texas",
    "title_variants": [
-    "Yellow Rose of Texas"
+    "Yellow Rose of Texas",
+    "Yellow Rose of Texas Bob Wills",
+    "Yellow Rose of Texas, The Ben/Tommy Jarrell"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 5,
    "spread": 2,
@@ -80071,36 +79906,6 @@
     "The New Lost City Ramblers",
     "Tommy Jarrell"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "yellow-rose-of-texas-bob-wills",
-   "title": "Yellow Rose of Texas Bob Wills",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "yellow-rose-of-texas-the-ben-tommy",
-   "title": "Yellow Rose of Texas, The Ben/Tommy Jarrell",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -80190,10 +79995,12 @@
    "title_variants": [
     "You Ain't Goin' Nowhere",
     "You Ain't Goin' Nowhere (Jul 03, 2002, The Meadows, Steamboat Springs, CO)",
-    "You Ain't Goin' Nowhere (Oct 28, 2001, Stevens Center, Winston-Salem, NC)"
+    "You Ain't Goin' Nowhere (Oct 28, 2001, Stevens Center, Winston-Salem, NC)",
+    "You Ain't Goin' Nowhere Bob Dylan"
    ],
    "sources": [
-    "mb-coverage"
+    "mb-coverage",
+    "strum-machine"
    ],
    "coverage": 7,
    "spread": 3,
@@ -80208,21 +80015,6 @@
     "Nitty Gritty Dirt Band",
     "The Coal Porters"
    ],
-   "type": "Vocal",
-   "instruments": []
-  },
-  {
-   "catalogue_id": "you-aint-goin-nowhere-bob-dylan",
-   "title": "You Ain't Goin' Nowhere Bob Dylan",
-   "title_variants": [],
-   "sources": [
-    "strum-machine"
-   ],
-   "coverage": 0,
-   "spread": 0,
-   "score": 0.0,
-   "core": false,
-   "artists": [],
    "type": "Vocal",
    "instruments": []
   },
@@ -80255,19 +80047,21 @@
    "catalogue_id": "you-and-me",
    "title": "You and Me",
    "title_variants": [
-    "You And Me"
+    "You And Me",
+    "You and Me Reprised"
    ],
    "sources": [
     "mb-coverage"
    ],
-   "coverage": 6,
+   "coverage": 7,
    "spread": 3,
-   "score": 12.0,
+   "score": 14.0,
    "core": false,
    "artists": [
     "Alice Gerrard",
     "Carbon Leaf",
     "Daniel Crabtree",
+    "John Hartford",
     "Larry and His Flask",
     "Ricky Skaggs",
     "Sara Watkins"

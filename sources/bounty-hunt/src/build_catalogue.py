@@ -98,10 +98,9 @@ JAM_INSTRUMENTS = ['fiddle', 'banjo', 'mandolin', 'guitar']
 # song arrives as several titles ("Sally Ann key of D, 1-4-5", "Sally Ann Earl
 # Scruggs version"). Only the STRUCTURED forms are stripped here — the ones
 # whose shape identifies them as notation rather than title. Bare performer
-# suffixes ("Sally Ann Alison Fisher") are deliberately left alone: the same
-# position also carries real title words (`Salty Dog Blues`, `Angel Band To The
-# Lord`), so stripping by position would destroy titles. Those go to the
-# review queue instead — see --queue.
+# suffixes are not handled here — the same position also carries real title
+# words (`Salty Dog Blues`), so stripping by position would destroy titles.
+# `fold_performer_variants` handles those structurally instead.
 ANNOTATION_RE = re.compile(
     r'[,(\s]+('
     r'via\s+\S.*'                                  # via Doc Watson
@@ -201,6 +200,23 @@ def artist_vocabulary() -> set:
                 n = _basic_norm(a)
                 if n and len(n.split()) <= 4:
                     names.add(n)
+        # The songbook's own artist and composer fields. The MusicBrainz roster
+        # is bluegrass-only, so it has no Ray Price and no Irish Rovers — but
+        # the classic-country corpus does, and a performer suffix cites whoever
+        # cut the record, not whoever is bluegrass-tagged.
+        for name in ('index.jsonl', 'archive.jsonl'):
+            path = REPO_ROOT / 'docs' / 'data' / name
+            if not path.exists():
+                continue
+            with open(path, encoding='utf-8') as f:
+                for line in f:
+                    if not line.strip():
+                        continue
+                    row = json.loads(line)
+                    for value in [row.get('artist')] + (row.get('composers') or []):
+                        n = _basic_norm(value)
+                        if n and 2 <= len(n.split()) <= 4:
+                            names.add(n)
         names.discard('')
         _ARTIST_NAMES = names
     return _ARTIST_NAMES
@@ -331,6 +347,71 @@ def load_type_signals() -> dict:
     return signals
 
 
+MIN_ATTESTED_COVERAGE = 2
+MIN_TAIL_WORD_USES = 8
+# A two-word base is too generic to fold into unless the remainder is a
+# recognized performer. "So Long" swallowed "So Long Jake" and "So Long Jerry";
+# "Ode to" took "Ode to Earl" and "Ode to Bascom"; "Ghost of" took "Ghost of
+# Glasgow". Those are different songs, and the tail-word guard cannot see it —
+# "jake" and "jerry" end no other title.
+MIN_GENERIC_BASE_WORDS = 3
+
+
+def fold_performer_variants(rows: dict) -> int:
+    """Merge rows that are an attested song plus a trailing performer credit.
+
+    The board asks for SONGS. Which arrangement of a song someone contributes
+    is the version system's business — `group_id`, `curation/registry.yaml`
+    `groups:`, and the Arrangement pill already model that — so a catalogue
+    holding "Sally Ann" and "Sally Ann Alison Fisher" as separate rows is the
+    board doing the version system's job, badly.
+
+    No performer vocabulary can be complete, so this works structurally
+    instead: if a row's leading words are themselves an attested row, the
+    remainder is a credit rather than title. The guard is that the remainder
+    must not END in a word that commonly ends titles — otherwise
+    "Salty Dog Blues" folds into "Salty Dog" and "Foggy Mountain Breakdown"
+    into "Foggy Mountain". Those tail words are measured from the catalogue
+    itself rather than listed by hand.
+
+    Returns the number of rows folded away. `title_variants` keeps every
+    folded spelling, so nothing is lost.
+    """
+    tail_counts = {}
+    for key in rows:
+        last = key.split()[-1]
+        tail_counts[last] = tail_counts.get(last, 0) + 1
+    tail_words = {w for w, c in tail_counts.items() if c >= MIN_TAIL_WORD_USES}
+
+    folded = 0
+    for key in sorted(rows, key=lambda k: -len(k)):
+        row = rows.get(key)
+        if row is None:
+            continue
+        toks = key.split()
+        for i in range(len(toks) - 1, 1, -1):
+            base_key = ' '.join(toks[:i])
+            base = rows.get(base_key)
+            if base is None or base is row:
+                continue
+            if len(base['artists']) < MIN_ATTESTED_COVERAGE:
+                continue
+            remainder = toks[i:]
+            if remainder[-1] in tail_words:
+                break            # a title continuation, not a credit
+            is_credit = ' '.join(remainder) in artist_vocabulary()
+            if not is_credit and len(toks[:i]) < MIN_GENERIC_BASE_WORDS:
+                break            # base too generic to absorb an unknown suffix
+            base['variants'].update(row['variants'])
+            base['artists'].update(row['artists'])
+            base['eras'].update(row['eras'])
+            base['sources'].update(row['sources'])
+            del rows[key]
+            folded += 1
+            break
+    return folded
+
+
 def artist_era(name: str, begin_year, era_codes: dict) -> int:
     """Which of the three eras an artist belongs to.
 
@@ -393,6 +474,8 @@ def build_catalogue(report: bool = False) -> dict:
                 continue
             if song.get('title'):
                 touch(song['title'], 'bluegrass-lyrics')
+
+    folded = fold_performer_variants(rows)
 
     # Score every row, then cut.
     scored = []
@@ -457,6 +540,7 @@ def build_catalogue(report: bool = False) -> dict:
     if report:
         from collections import Counter
         print(f"Catalogue: {len(kept)} songs from {len(scored)} scored candidates")
+        print(f"  performer variants folded into their song: {folded}")
         print(f"  core: {sum(1 for r in kept if r['core'])}")
         print(f"  by source: {Counter(s for r in kept for s in r['sources'])}")
         print(f"  by type:   {Counter(r['type'] for r in kept)}")
