@@ -39,6 +39,8 @@ Some operations require external APIs/databases and only run locally. Others run
 | **Strum Machine URLs** | Local only | `strum_machine_cache.json` | API rate limited (10 req/sec) |
 | **Deleted songs sync** | Scheduled CI + local | `deleted_songs.json` | `.github/workflows/sync-deleted-songs.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-deleted-songs` |
 | **Promoted songs sync** | Scheduled CI + local | `promoted_songs.json` | same workflow as deleted songs, or `./scripts/utility sync-promoted-songs` |
+| **Tag overrides sync** | Scheduled CI + local | `tag_overrides.json` | `.github/workflows/sync-community-input.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-tag-votes`; auto-applied at next index build |
+| **Genre suggestions export** | Scheduled CI + local | `user_genre_suggestions.json` | same workflow as tag overrides, or `./scripts/utility export-suggestions`; review-only, never auto-applied |
 | **TuneArch fetch** | Local only | - | Fetches new instrumentals |
 
 **How caching works:**
