@@ -25,9 +25,10 @@ Used by:
 - build_works_index.py: ``filter_suppressed()`` (registry.suppressed ∪
   deleted_songs.json) and ``apply_curation()`` (stable ``grp:`` group ids,
   ``canonical`` / ``variant_of`` / ``variant_label`` fields).
-- Importers (process_submission, process_correction, migrate_to_works,
-  banjo-hangout works_importer): ``is_suppressed()`` guard so suppressed
-  works are never re-created from sources.
+- works_writer.py (the single write path for works/): ``is_suppressed()``
+  guard, via its ``Guards`` class, so suppressed works are never re-created.
+- Other direct importers (migrate_to_works, banjo-hangout / web-chords
+  works_importer): same ``is_suppressed()`` guard.
 """
 
 import json

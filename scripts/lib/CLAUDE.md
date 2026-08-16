@@ -77,8 +77,6 @@ scripts/lib/
 ├── search_index.py       # Search index utilities and testing
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_pending.py    # GitHub Action: land one pending_songs row in works/
-├── process_submission.py # RETIRED flow (issue-based); still imported by tests
-├── process_correction.py # RETIRED flow (issue-based); kept for reference
 ├── dedup_scorer.py       # Is this submission already a work? (containment on lyrics)
 ├── dedup_works.py        # Whole-corpus duplicate detection → merge plan JSON
 ├── merge_works.py        # Execute a merge plan (redirects included)
@@ -720,14 +718,6 @@ if the actor owns it, else their most recent chart; owning no chart at all
 means they got here through the *trusted* branch, and that right is over the
 primary. Work-level fields (title/artist/key/notes) ride along only when the
 primary is what is being edited.
-
-## process_submission.py / process_correction.py — RETIRED
-
-The GitHub-issue content flow (`process-song-submission.yml`,
-`process-song-correction.yml`, `create-song-issue`) was retired in phase 2b:
-with additive-instant there is nothing for a review queue to review. These
-modules no longer run in CI. `publish_to_works` is still imported by
-`tests/test_curation.py` as a works_writer caller fixture.
 
 ## dedup_scorer.py — is this submission already a work?
 

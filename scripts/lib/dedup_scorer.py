@@ -74,7 +74,7 @@ from pathlib import Path
 
 import yaml
 
-# `scripts/lib` modules import each other flat (see process_submission.py), which
+# `scripts/lib` modules import each other flat (see works_writer.py), which
 # works both when run as a script and under tests/conftest.py's sys.path setup.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
