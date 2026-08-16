@@ -23,6 +23,8 @@ import {
     subscribe
 } from './state.js';
 
+import { deleteAffordance } from './review-queue.js';
+
 import {
     goBack,
     updateListContextClass, updateNavBar,
@@ -281,18 +283,6 @@ function buildPartsFromIndex(song, content = undefined) {
                 default: !hasLeadSheet && !song.tablature_parts?.length,
             });
         }
-    }
-
-    const pending = window.__pendingDocuments?.[song.id];
-    if (pending && !song.document_parts?.length) {
-        parts.push({
-            type: 'document',
-            format: 'pdf',
-            label: pending.label || 'PDF',
-            file: pending.url,
-            default: parts.length === 0,
-            pending: true,
-        });
     }
 
     // Assign unique partId slugs (deduplicate by appending -2, -3, etc.)
@@ -1042,9 +1032,10 @@ let prefSubscriptionsRegistered = false;
  * display-preference subscriptions that re-render the lead-sheet body.
  * Called once from main.js init.
  *   onEdit(song)   - open the song editor
- *   onDelete()     - admin delete flow
+ *   onDelete()     - admin delete flow (instant)
+ *   onRequestDelete() - trusted-user delete REQUEST (queued for an admin)
  *   isAdmin()      - current admin status (drives the Delete overflow item)
- *   isTrusted()    - current trusted status (drives the Promote overflow item)
+ *   isTrusted()    - current trusted status (drives Promote + Request deletion)
  *   onPromote()    - promote/unpromote the viewed archived song
  *   isPromoted(id) - promoted this session (flips the item to Undo)
  */
@@ -1165,11 +1156,24 @@ export function updateWorkTopBar() {
             onClick: () => workPageHooks.onPromote?.(),
         });
     }
-    if (workPageHooks.isAdmin?.()) {
+    // One slot, two meanings: admins delete on the spot, trusted users ask.
+    // Deletion is the destructive residue phase 2d keeps reviewed — the rule
+    // itself lives in review-queue.js so the queue and the button agree.
+    const affordance = deleteAffordance({
+        isAdmin: workPageHooks.isAdmin?.(),
+        isTrusted: workPageHooks.isTrusted?.(),
+    });
+    if (affordance === 'instant') {
         overflow.push({
             id: 'delete-song-btn',
             label: '🗑️ Delete song',
             onClick: () => workPageHooks.onDelete?.(),
+        });
+    } else if (affordance === 'request') {
+        overflow.push({
+            id: 'request-delete-song-btn',
+            label: '🗑️ Request deletion',
+            onClick: () => workPageHooks.onRequestDelete?.(),
         });
     }
 
@@ -1365,11 +1369,9 @@ function showPlaceholderEditor() {
         `<option value="${k}" ${k === (currentWork.key || '') ? 'selected' : ''}>${k}</option>`
     ).join('');
 
-    // Current document info
-    const existingDoc = currentWork.document_parts?.[0];
-    const pendingDoc = window.__pendingDocuments?.[currentWork.id];
-    const hasDoc = !!(existingDoc || pendingDoc);
-    const docLabel = existingDoc?.label || pendingDoc?.label || '';
+    // Document upload died with phase 2d: the intake staged files nothing
+    // ever read. Documents already attached to a work still render on the
+    // song page (renderDocumentPart) — this editor just can't add more.
 
     form.innerHTML = `
         <div class="placeholder-editor-header">
@@ -1395,26 +1397,6 @@ function showPlaceholderEditor() {
                 <label for="ph-edit-notes">Notes</label>
                 <textarea id="ph-edit-notes" rows="3">${escapeHtml(currentWork.notes || '')}</textarea>
             </div>
-            <div class="placeholder-editor-field">
-                <label>Document</label>
-                <div class="ph-edit-doc-section">
-                    ${hasDoc
-                        ? `<div class="ph-edit-doc-current">
-                               <span class="ph-edit-doc-icon">📎</span>
-                               <span class="ph-edit-doc-label">${escapeHtml(docLabel)}</span>
-                               <span class="ph-edit-doc-badge">PDF</span>
-                           </div>`
-                        : '<div class="ph-edit-doc-empty">No document attached</div>'
-                    }
-                    <div class="ph-edit-doc-picker">
-                        <input type="file" id="ph-edit-doc-file" accept=".jpg,.jpeg,.png,.heic,.webp,.pdf" class="hidden" />
-                        <button type="button" id="ph-edit-doc-btn" class="ph-edit-doc-upload-btn">
-                            ${hasDoc ? 'Replace document' : 'Add document'}
-                        </button>
-                        <div id="ph-edit-doc-info" class="ph-edit-doc-info hidden"></div>
-                    </div>
-                </div>
-            </div>
             <div class="placeholder-editor-actions">
                 <button class="placeholder-editor-save" id="ph-edit-save">Save</button>
                 <button class="placeholder-editor-cancel" id="ph-edit-cancel">Cancel</button>
@@ -1424,45 +1406,6 @@ function showPlaceholderEditor() {
     `;
 
     container.appendChild(form);
-
-    // Document file picker state
-    let newDocFile = null;
-
-    const docFileInput = form.querySelector('#ph-edit-doc-file');
-    const docBtn = form.querySelector('#ph-edit-doc-btn');
-    const docInfo = form.querySelector('#ph-edit-doc-info');
-
-    docBtn.addEventListener('click', () => docFileInput.click());
-
-    docFileInput.addEventListener('change', (e) => {
-        const file = e.target.files?.[0];
-        if (!file) return;
-
-        const MAX_SIZE = 10 * 1024 * 1024;
-        if (file.size > MAX_SIZE) {
-            docInfo.textContent = `File too large (${(file.size / 1024 / 1024).toFixed(1)}MB). Max 10MB.`;
-            docInfo.className = 'ph-edit-doc-info error';
-            docInfo.classList.remove('hidden');
-            return;
-        }
-
-        newDocFile = file;
-        docInfo.innerHTML = `
-            <span class="ph-edit-doc-filename">${escapeHtml(file.name)}</span>
-            <span class="ph-edit-doc-size">(${(file.size / 1024).toFixed(0)} KB)</span>
-            <button type="button" class="ph-edit-doc-remove" title="Remove">&times;</button>
-        `;
-        docInfo.className = 'ph-edit-doc-info';
-        docInfo.classList.remove('hidden');
-        docBtn.textContent = 'Change file';
-
-        docInfo.querySelector('.ph-edit-doc-remove')?.addEventListener('click', () => {
-            newDocFile = null;
-            docFileInput.value = '';
-            docInfo.classList.add('hidden');
-            docBtn.textContent = hasDoc ? 'Replace document' : 'Add document';
-        });
-    });
 
     // Cancel: re-render dashboard
     form.querySelector('#ph-edit-cancel').addEventListener('click', () => {
@@ -1485,25 +1428,13 @@ function showPlaceholderEditor() {
         }
 
         saveBtn.disabled = true;
-        statusDiv.textContent = newDocFile ? 'Uploading document...' : 'Saving...';
+        statusDiv.textContent = 'Saving...';
         statusDiv.className = 'placeholder-editor-status';
 
         try {
-            // Metadata edits take the one pipeline now (phase 2b): any
-            // logged-in user writes pending_songs and it goes live. Document
-            // upload still splits on trust — phase 2d deletes that feature
-            // outright rather than widening it.
+            // Metadata edits take the one pipeline (phase 2b): any logged-in
+            // user writes pending_songs and it goes live.
             await savePlaceholderMetadata({ title, artist, key, notes });
-
-            if (newDocFile) {
-                statusDiv.textContent = 'Uploading document...';
-                const isTrusted = await window.SupabaseAuth?.isTrustedUser?.();
-                if (isTrusted) {
-                    await uploadPlaceholderDocument(newDocFile, title);
-                } else {
-                    await uploadPlaceholderDocumentRegular(newDocFile, title);
-                }
-            }
 
             statusDiv.innerHTML = '<span style="color: var(--success)">Saved!</span>';
 
@@ -1563,160 +1494,6 @@ async function savePlaceholderMetadata({ title, artist, key, notes }) {
     }
 }
 
-/**
- * Convert an image file to PDF bytes using pdf-lib (lazy-loaded).
- */
-async function imageToPdfBlob(imageFile) {
-    // Lazy-load pdf-lib
-    if (!window.PDFLib) {
-        await new Promise((resolve, reject) => {
-            const script = document.createElement('script');
-            script.src = 'https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js';
-            script.onload = resolve;
-            script.onerror = () => reject(new Error('Failed to load pdf-lib'));
-            document.head.appendChild(script);
-        });
-    }
-    const PDFLib = window.PDFLib;
-    const pdfDoc = await PDFLib.PDFDocument.create();
-
-    const arrayBuffer = await imageFile.arrayBuffer();
-    const bytes = new Uint8Array(arrayBuffer);
-
-    let image;
-    if (imageFile.type === 'image/png') {
-        image = await pdfDoc.embedPng(bytes);
-    } else {
-        // Convert to JPEG via canvas
-        const jpegBytes = await new Promise((resolve, reject) => {
-            const img = new Image();
-            const url = URL.createObjectURL(imageFile);
-            img.onload = () => {
-                const canvas = document.createElement('canvas');
-                canvas.width = img.naturalWidth;
-                canvas.height = img.naturalHeight;
-                canvas.getContext('2d').drawImage(img, 0, 0);
-                canvas.toBlob(
-                    (blob) => { URL.revokeObjectURL(url); blob ? blob.arrayBuffer().then(buf => resolve(new Uint8Array(buf))) : reject(new Error('Canvas to blob failed')); },
-                    'image/jpeg', 0.92
-                );
-            };
-            img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Failed to load image')); };
-            img.src = url;
-        });
-        image = await pdfDoc.embedJpg(jpegBytes);
-    }
-
-    const maxW = 612, maxH = 792;
-    let { width, height } = image.scale(1);
-    if (width > maxW || height > maxH) {
-        const scale = Math.min(maxW / width, maxH / height);
-        width *= scale;
-        height *= scale;
-    }
-    const page = pdfDoc.addPage([width, height]);
-    page.drawImage(image, { x: 0, y: 0, width, height });
-
-    const pdfBytes = await pdfDoc.save();
-    return new Blob([pdfBytes], { type: 'application/pdf' });
-}
-
-/**
- * Upload a document for a placeholder (trusted user flow).
- */
-async function uploadPlaceholderDocument(file, label) {
-    const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
-    const supabase = window.SupabaseAuth?.supabase;
-    if (!supabase) throw new Error('Not connected to database');
-
-    const { data: { session } } = await supabase.auth.getSession();
-    if (!session) throw new Error('Not logged in');
-
-    // Convert images to PDF
-    let pdfBlob = file;
-    if (file.type !== 'application/pdf') {
-        pdfBlob = await imageToPdfBlob(file);
-    }
-
-    const arrayBuffer = await pdfBlob.arrayBuffer();
-    const base64 = btoa(new Uint8Array(arrayBuffer).reduce((s, b) => s + String.fromCharCode(b), ''));
-
-    const filename = file.type === 'application/pdf'
-        ? file.name.replace(/[^a-zA-Z0-9._-]/g, '-')
-        : currentWork.id + '.pdf';
-
-    const resp = await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
-        method: 'POST',
-        headers: {
-            'Authorization': `Bearer ${session.access_token}`,
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            id: currentWork.id,
-            title: currentWork.title,
-            artist: currentWork.artist,
-            content: null,
-            create_placeholder: true,
-            key: currentWork.key || null,
-            attachment: { filename, base64, label: label || currentWork.title },
-        }),
-    });
-
-    if (!resp.ok) {
-        const body = await resp.text();
-        console.warn('Auto-commit response:', body);
-    }
-
-    // Stash blob URL for immediate display
-    if (!window.__pendingDocuments) window.__pendingDocuments = {};
-    window.__pendingDocuments[currentWork.id] = {
-        url: URL.createObjectURL(pdfBlob),
-        label: label || currentWork.title,
-    };
-}
-
-/**
- * Upload a document for a placeholder (regular user flow — stages for review).
- */
-async function uploadPlaceholderDocumentRegular(file, label) {
-    const supabase = window.SupabaseAuth?.supabase;
-    if (!supabase) throw new Error('Not connected to database');
-
-    const { data: { session } } = await supabase.auth.getSession();
-    if (!session) throw new Error('Not logged in');
-
-    // Convert images to PDF
-    let pdfBlob = file;
-    if (file.type !== 'application/pdf') {
-        pdfBlob = await imageToPdfBlob(file);
-    }
-
-    const filename = file.type === 'application/pdf'
-        ? file.name.replace(/[^a-zA-Z0-9._-]/g, '-')
-        : currentWork.id + '.pdf';
-
-    // Upload to staging bucket
-    const storagePath = `${session.user.id}/${currentWork.id}/${filename}`;
-    const { error: uploadError } = await supabase.storage
-        .from('doc-staging')
-        .upload(storagePath, pdfBlob, { contentType: 'application/pdf' });
-
-    if (uploadError) throw new Error(uploadError.message);
-
-    // Insert staging metadata
-    const { error: dbError } = await supabase
-        .from('doc_staging')
-        .insert({
-            user_id: session.user.id,
-            work_id: currentWork.id,
-            storage_path: storagePath,
-            label: label || currentWork.title,
-            file_size: pdfBlob.size,
-        });
-
-    if (dbError) throw new Error(dbError.message);
-}
-
 // ============================================
 // PART RENDERERS (tablature + document; lead sheets render via
 // song-view.js renderLeadSheetContent)
@@ -1726,14 +1503,10 @@ function renderDocumentPart(part, container) {
     const downloadUrl = part.file;
     const label = escapeHtml(part.label || 'Document');
 
-    const pendingBanner = part.pending
-        ? `<div class="upload-processing-banner">
-            Your upload is saved! It may take a few minutes to appear for other users.
-           </div>`
-        : '';
-
+    // Documents are read-only shelf items: phase 2d removed the upload
+    // intake, so every document part here came from works/ at build time
+    // (there is no longer an "still processing" state to announce).
     container.innerHTML = `
-        ${pendingBanner}
         <div class="document-viewer">
             <div class="document-toolbar">
                 <span class="document-label">${label}</span>

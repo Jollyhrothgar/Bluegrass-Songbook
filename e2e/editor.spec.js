@@ -32,9 +32,9 @@ test.describe('Editor Access', () => {
         await gotoSearch(page);
 
         await navClick(page, 'add');
-        // Picker modal with the three cards
+        // Picker modal. Two cards since phase 2d retired document upload.
         await expect(page.locator('#add-song-picker')).toBeVisible();
-        await expect(page.locator('.picker-card[data-type="upload"]')).toBeVisible();
+        await expect(page.locator('.picker-card[data-type="upload"]')).toHaveCount(0);
         await expect(page.locator('.picker-card[data-type="chordpro"]')).toBeVisible();
         await expect(page.locator('.picker-card[data-type="request"]')).toBeVisible();
 
@@ -51,8 +51,8 @@ test.describe('Editor Access', () => {
         expect(await page.locator('#editor-content').getAttribute('placeholder'))
             .toMatch(/Paste or type your song/);
 
-        // quiet escape hatches in the preview empty state
-        await expect(page.locator('.ve-link-upload')).toBeVisible();
+        // quiet escape hatch in the preview empty state (photo upload is gone)
+        await expect(page.locator('.ve-link-upload')).toHaveCount(0);
         await expect(page.locator('.ve-link-request')).toBeVisible();
 
         // metadata is deferred to a compact line
@@ -66,24 +66,6 @@ test.describe('Editor Access', () => {
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
         await expect(page.locator('#add-song-picker')).toBeHidden();
         await expect(page.locator('#editor-content')).toBeVisible();
-    });
-
-    test('upload link is login-gated: logged out click prompts sign-in, no upload view', async ({ page }) => {
-        await page.goto('/#add');
-        await expect(page.locator('.ve-preview-empty')).toBeVisible();
-
-        // stub the sign-in redirect so the test can observe the gate
-        await page.evaluate(() => {
-            window.__signInCalled = 0;
-            window.SupabaseAuth.signInWithGoogle = () => { window.__signInCalled++; };
-        });
-
-        await page.locator('.ve-link-upload').click();
-
-        expect(await page.evaluate(() => window.__signInCalled)).toBe(1);
-        // still in the editor — the upload view did not open
-        await expect(page.locator('#upload-panel')).toBeHidden();
-        await expect(page.locator('#editor-panel')).toBeVisible();
     });
 
     test('editor shows title, artist, and content fields', async ({ page }) => {

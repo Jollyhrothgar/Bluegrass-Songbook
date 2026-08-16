@@ -17,11 +17,12 @@
 // git this way. It only decides whether an edit of somebody else's content
 // may land in place, or forks into a new arrangement instead.
 //
-// The document-attachment branch is untouched; phase 2d removes the whole
-// doc-upload feature, including that branch and commitAttachment.
+// Phase 2d removed the document-attachment branch along with the whole
+// doc-upload feature: binaries can't be diffed, forked or deduped, and the
+// intake staged files that nothing downstream ever read.
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
-import { commitAttachment, type PendingSong } from "../_shared/commit-song.ts"
+import { type PendingSong } from "../_shared/commit-song.ts"
 import { attributionFor, requireUser } from "../_shared/identity.ts"
 import {
   classifyChange,
@@ -66,28 +67,6 @@ serve(async (req) => {
       .eq('user_id', caller.id)
       .maybeSingle()
     const trusted = !!trustedUser
-
-    // --- attachment branch: behaviour unchanged, owned by phase 2d --------
-    // Still trusted-only. Opening the TEXT path to everyone is the point of
-    // 2b; binaries are not text — they can't be diffed, forked or deduped,
-    // which is why 2d deletes this branch outright rather than widening it.
-    if (entry.attachment && entry.id) {
-      if (!trusted) {
-        return json({ error: 'Document upload requires trusted user status' }, 403)
-      }
-      const { binaryPath } = await commitAttachment(entry, githubToken)
-
-      await supabaseAdmin.from('submission_log').insert({
-        user_id: caller.id,
-        action: 'doc_upload',
-        target_id: entry.id,
-        ip_address: req.headers.get('x-forwarded-for') || req.headers.get('cf-connecting-ip') || null,
-        user_agent: req.headers.get('user-agent') || null,
-        metadata: { title: entry.title, filename: entry.attachment.filename },
-      })
-
-      return json({ success: true, binaryPath })
-    }
 
     if (!entry.id) {
       return json({ error: 'Missing required field: id' }, 400)

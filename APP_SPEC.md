@@ -155,8 +155,8 @@ The app uses Supabase (PostgreSQL) for user data:
 | `trusted_users` | Users with elevated permissions (instant edits) |
 | `admin_users` | Admin users (can delete songs) |
 | `deleted_songs` | Soft-deleted songs |
+| `review_requests` | Queued destructive asks (delete / suppress / merge-redirect); trusted users file, admins decide |
 | `bounties` | Community requests for specific content types |
-| `doc_staging` | Uploaded documents (PDFs) pending approval |
 | `analytics_events` | Behavioral analytics (batched insert via RPC) |
 | `visitor_stats` / `visitors` | Visitor counting |
 | `submission_log` | Audit trail for all user submissions |
@@ -607,15 +607,14 @@ Users can request songs be added:
 - **Live duplicate detection**: As user types, checks existing songs and shows warning with links to matches
 - Creates a GitHub issue via Supabase edge function
 
-### 20. Document Upload
+### 20. Documents (read-only shelf)
 
-Users can upload images/PDFs of song sheets:
+Works can carry a `type: document` part (a PDF) that the song page renders
+inline with a download link. These come from `works/` at build time.
 
-- Drag-and-drop zone accepting JPG, PNG, HEIC, WebP, PDF (max 10MB)
-- Preview with rotate controls
-- Uploads to Supabase Storage
-- Links to a specific work
-- Creates a review issue
+**There is no upload intake.** Phase 2d removed it: submissions staged files
+that nothing downstream ever read, while the UI claimed they were queued for
+review. New contributions come in as text (ChordPro) or as a song request.
 
 ### 21. Analytics
 
@@ -738,7 +737,6 @@ All routing is hash-based (SPA on static hosting):
 | `#work/{id}/{partId}` | Work with specific part expanded |
 | `#edit/{id}` | Edit existing song |
 | `#add` | Add new song |
-| `#upload` | Document upload |
 | `#bounty` | Bounty/wanted songs |
 | `#list/favorites` | Favorites list |
 | `#list/{uuid}` | View a specific list |

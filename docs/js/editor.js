@@ -65,7 +65,6 @@ let editorTransposeDownEl = null;
 let editorKeySelectEl = null;
 let metadataSummaryEl = null;
 let metadataFieldsEl = null;
-let onUploadRequestCb = null;
 let onSongRequestCb = null;
 
 // Two-pane interactive preview state
@@ -504,7 +503,6 @@ function initInteractivePreview() {
             // this one-way notification is what prevents update loops
             updateEditorChrome();
         },
-        onUploadRequest() { if (onUploadRequestCb) onUploadRequestCb(); },
         onSongRequest() { if (onSongRequestCb) onSongRequestCb(); }
     });
     preview.refresh();
@@ -538,7 +536,6 @@ export function initEditor(options) {
         editorKeySelect,
         metadataSummary,
         metadataFields,
-        onUploadRequest,
         onSongRequest,
         editorPreviewContainer,
         editorUndoBtn,
@@ -574,7 +571,6 @@ export function initEditor(options) {
     editorKeySelectEl = editorKeySelect;
     metadataSummaryEl = metadataSummary;
     metadataFieldsEl = metadataFields;
-    onUploadRequestCb = onUploadRequest;
     onSongRequestCb = onSongRequest;
     navSearchEl = navSearch;
     navAddSongEl = navAddSong;

@@ -27,8 +27,10 @@ Serverless functions that run on Supabase Edge (Deno runtime).
   `pending-commit` repository_dispatch. **No edge function authors work.yaml
   any more** — `.github/workflows/process-pending.yml` runs
   `scripts/lib/works_writer.py`, the repo's one writer.
-- `commit-song.ts` — raw Contents-API plumbing plus the document-attachment
-  path (deleted with the doc-upload feature in phase 2d).
+- `commit-song.ts` — the `PendingSong` shape, one Contents-API read used by
+  classification, and `unretryableReason`. Phase 2d deleted the
+  document-attachment path (and the write helpers only it used) along with
+  the doc-upload feature; nothing in here writes to GitHub any more.
 
 `auto-commit-song` (live path) and `reconcile-pending` (hourly retry) both
 import `pending-dispatch.ts`, so a retry classifies exactly the way the
@@ -74,6 +76,13 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `deleted_songs` - Soft-deleted songs (excluded from index at build time)
 - `trusted_users` - Users allowed to edit someone else's chart **in place** (everyone else's edit forks to a new arrangement)
 - `pending_songs` - Any logged-in user's submission, live in the overlay, awaiting the GitHub commit
+- `review_requests` - The destructive residue (phase 2d): trusted users request delete / suppress / merge-redirect, admins decide
+
+**Retired:** `doc_staging` (+ the `doc-staging` storage bucket) — the
+document-upload intake, removed in phase 2d. The drop migration
+(`20260815130000_drop_doc_staging.sql`) is written but **not applied**: it
+opens with a rescue checklist because anything still in that table or bucket
+is a submitter's only copy, and the bucket itself needs a manual delete.
 
 ### Authentication
 
@@ -143,6 +152,36 @@ VALUES ('user-uuid-here', 'admin-manual');
 ```
 
 **To request trusted status:** Regular users can request super-user access through the app. This creates a GitHub issue via `create-superuser-request` edge function. Admin approves by adding to `trusted_users` table and closing the issue.
+
+### Review queue (phase 2d)
+
+Adding content is instant; destroying it is not. `review_requests` holds the
+three destructive asks — `delete`, `suppress`, `merge-redirect`:
+
+- **trusted** users file requests (RLS: insert requires `is_trusted_user()`
+  *and* `requested_by = auth.uid()`) and can read the whole queue.
+- **admins** decide. Only `is_admin()` may update `status`, and a trigger
+  stamps `reviewed_by` / `reviewed_at` from the session while freezing the
+  request's immutable fields. Nobody can delete rows — the queue is the audit
+  trail.
+- Admins keep their **instant** delete on the song page. They are the
+  reviewers; making them queue an ask to themselves would be ceremony.
+
+The UI is `docs/js/review-queue.js`, rendered into `#review-queue-panel` in
+the Bluegrass Dungeon (the same place Promote lives).
+
+**What approval actually does — the honest part.** Approving a `delete` runs
+the existing `delete_song` RPC, so the song is gone immediately. Approving a
+`suppress` or `merge-redirect` only records the decision: both edit files in
+the repo (`curation/registry.yaml`, `works/`), and nothing in CI performs
+those from a table. The panel therefore shows the request as *"Approved — run
+locally"* and prints the command:
+
+```bash
+./scripts/utility curate suppress <work-id> --reason "..."
+# merge-redirect: a one-entry plan for the existing merge tool
+uv run python scripts/lib/merge_works.py /tmp/merge-plan.json --execute
+```
 
 ## Row-Level Security (RLS)
 

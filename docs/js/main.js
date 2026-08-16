@@ -57,12 +57,14 @@ import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
 import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
-import { initDocUpload, resetDocUpload, prefillDocUpload } from './doc-upload.js';
 import {
     fetchJsonl, mergeCorpus, markArchived, countDistinctTitles, whenIdle,
 } from './corpus.js';
 import { getSongContents } from './song-content.js';
 import { showToast } from './toast.js';
+import {
+    configureReviewQueue, showReviewQueue, hideReviewQueue, submitReviewRequest,
+} from './review-queue.js';
 
 // ============================================
 // DOM ELEMENTS
@@ -120,7 +122,6 @@ const userName = document.getElementById('user-name');
 
 // Editor elements
 const editorPanel = document.getElementById('editor-panel');
-const uploadPanel = document.getElementById('upload-panel');
 const editorBackBtn = document.getElementById('editor-back-btn');
 const editorTitle = document.getElementById('editor-title');
 const editorArtist = document.getElementById('editor-artist');
@@ -204,9 +205,6 @@ function pushHistoryState(view, data = {}, replace = false) {
             break;
         case 'add-song':
             hash = '#add';
-            break;
-        case 'doc-upload':
-            hash = '#upload';
             break;
         case 'bounty':
             hash = '#bounty';
@@ -311,9 +309,6 @@ function handleHistoryNavigation(state) {
             prepareAddSongView();
             showView('add-song');
             break;
-        case 'doc-upload':
-            showView('doc-upload');
-            break;
         case 'bounty':
             showView('bounty');
             break;
@@ -375,10 +370,10 @@ function initViewSubscription() {
             exitEditMode();
         }
 
-        // Reset upload form when navigating away
-        if (view !== 'doc-upload') {
-            resetDocUpload();
-        }
+        // The review queue sits above the results list, so it belongs to the
+        // search view only — dungeon mode persists onto song pages, and the
+        // queue must not ride along.
+        if (view !== 'search') hideReviewQueue();
 
         // Top band: the song page declares its own chrome (back/title/
         // actions); every other view gets the plain nav band. The bottom
@@ -387,7 +382,7 @@ function initViewSubscription() {
             updateWorkTopBar();
         } else {
             const shellNavByView = {
-                'search': 'search', 'add-song': 'add', 'doc-upload': 'add',
+                'search': 'search', 'add-song': 'add',
                 'favorites': 'favorites', 'list': 'lists', 'song-lists': 'lists',
             };
             setTopBar({ navActive: shellNavByView[view] || null });
@@ -409,7 +404,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 break;
             case 'search':
@@ -417,7 +411,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 // An empty box means BROWSE THE WHOLE CANON, not "show a
                 // prompt": the home page's "Search All Songs" card advertises
@@ -442,15 +435,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.remove('hidden');
-                uploadPanel?.classList.add('hidden');
-                songListsView?.classList.add('hidden');
-                break;
-            case 'doc-upload':
-                searchContainer?.classList.add('hidden');
-                resultsDiv?.classList.add('hidden');
-                songView?.classList.add('hidden');
-                editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.remove('hidden');
                 songListsView?.classList.add('hidden');
                 break;
             case 'favorites':
@@ -458,7 +442,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 showFavorites();
                 break;
@@ -467,7 +450,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.remove('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 // Show delete button for admins
                 updateDeleteButtonVisibility();
@@ -477,7 +459,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 break;
             case 'bounty':
@@ -485,7 +466,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderBountyView(resultsDiv);
                 break;
@@ -494,7 +474,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.remove('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderMySubmissionsView(resultsDiv);
                 break;
@@ -503,7 +482,6 @@ function initViewSubscription() {
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
                 editorPanel?.classList.add('hidden');
-                uploadPanel?.classList.add('hidden');
                 songListsView?.classList.remove('hidden');
                 // renderManageListsView is called by showSongListsView
                 break;
@@ -773,11 +751,6 @@ function handleDeepLink() {
             }
         })();
         return true;
-    } else if (hash === '#upload') {
-        trackDeepLink('upload', hash);
-        showView('doc-upload');
-        pushHistoryState('doc-upload', {}, true);
-        return true;
     } else if (hash === '#bounty') {
         trackDeepLink('bounty', hash);
         showView('bounty');
@@ -1039,6 +1012,11 @@ async function enterDungeon(query = '', { fromHistory = false, replace = false }
     if (searchableSongs().length === 0 && resultsDiv) {
         resultsDiv.innerHTML = '<div class="no-results">The dungeon is empty — the archive could not be loaded. Try reloading the page.</div>';
     }
+
+    // The Dungeon is where curation happens (Promote lives on its songs), so
+    // the review queue for the destructive asks hangs here too. It renders
+    // itself away for anyone who is neither trusted nor admin.
+    showReviewQueue();
 }
 
 function navigateTo(mode) {
@@ -1491,6 +1469,9 @@ function updateDeleteButtonVisibility() {
     if (currentView === 'song') {
         updateWorkTopBar();
     }
+    // Trust/admin resolving late must not leave the Dungeon's queue hidden
+    // (or, on sign-out, visible).
+    if (dungeonMode) showReviewQueue();
 }
 
 // Promote the viewed archived song into the main index (trusted users).
@@ -1591,6 +1572,36 @@ async function confirmDeleteSelected(listEl, confirmBtn, statusEl) {
         statusEl.textContent = `Failed: ${err.message}`;
         confirmBtn.disabled = false;
     }
+}
+
+// Trusted-but-not-admin: the same overflow slot files a request instead of
+// deleting. Admins keep the instant modal above — they are the reviewers, so
+// queueing them would just be a round trip through their own inbox.
+async function handleRequestDeleteSong() {
+    const song = getCurrentSong();
+    if (!song) return;
+
+    const reason = prompt(
+        `Ask an admin to delete "${song.title}"?\n\nWhy should it go? (duplicate, junk data, wrong song…)`
+    );
+    if (reason === null) return;
+    if (!reason.trim()) {
+        alert('A reason is required — the reviewer only sees what you write here.');
+        return;
+    }
+
+    const { error } = await submitReviewRequest({
+        kind: 'delete',
+        targetId: song.id,
+        payload: { title: song.title },
+        reason: reason.trim(),
+    });
+    if (error) {
+        alert(`Could not file the request: ${error.message}`);
+        return;
+    }
+    alert(`Requested deletion of "${song.title}".\n\nIt stays on the site until an admin approves it — you can follow it in the review queue in the Bluegrass Dungeon.`);
+    if (dungeonMode) showReviewQueue();
 }
 
 function updateVisitorStats(totalViews, totalVisitors) {
@@ -2369,6 +2380,9 @@ function init() {
     // rAF-batched, so the argument can lag behind rapid flag changes.
     subscribe('dungeonMode', () => {
         document.body.classList.toggle('dungeon-mode', dungeonMode);
+        // The review queue is Dungeon chrome too: leaving the scope takes it
+        // with you (enterDungeon re-renders it on the way in).
+        if (!dungeonMode) hideReviewQueue();
     });
     document.body.classList.toggle('dungeon-mode', dungeonMode);
 
@@ -2382,20 +2396,12 @@ function init() {
     // Initialize super-user request module
     initSuperUserRequest();
 
-    // Route to the photo/document upload view (login required).
-    // Shared by the picker's Upload card and the editor's empty-state link.
-    const goToDocUpload = (ctx) => {
-        if (!requireLogin('upload songs')) return;
-        if (ctx?.targetSlug) prefillDocUpload(ctx);
-        showView('doc-upload');
-        pushHistoryState('doc-upload');
-    };
-
-    // Initialize add-song picker and doc upload.
-    // The picker is the single Add Song entry (top-band nav item, contribute/
-    // request flows); the #add deep link still goes straight to the editor.
+    // Initialize the add-song picker. It is the single Add Song entry
+    // (top-band nav item, contribute/request flows); the #add deep link still
+    // goes straight to the editor. Binary document upload was removed in
+    // phase 2d — the intake was a dead end, so the picker offers text or a
+    // song request only.
     initAddSongPicker({
-        onUpload: goToDocUpload,
         onChordPro: (ctx) => {
             if (ctx?.targetSlug) {
                 enterEditMode({ id: ctx.targetSlug, title: ctx.title, artist: ctx.artist, key: ctx.key, content: '' });
@@ -2403,13 +2409,6 @@ function init() {
                 navigateTo('add-song');
             }
         },
-    });
-    initDocUpload();
-
-    // Upload panel back button
-    document.getElementById('upload-back-btn')?.addEventListener('click', () => {
-        resetDocUpload();
-        navigateTo('search');
     });
 
     // Initialize lists module (handles favorites as a special list)
@@ -2449,10 +2448,22 @@ function init() {
     configureWorkPage({
         onEdit: (song) => enterEditMode(song),
         onDelete: handleDeleteSong,
+        onRequestDelete: handleRequestDeleteSong,
         isAdmin: () => isAdminUser,
         isTrusted: () => isTrustedFlag,
         onPromote: handlePromoteSong,
         isPromoted: (id) => promotedIds.has(id),
+    });
+
+    configureReviewQueue({
+        isAdmin: () => isAdminUser,
+        isTrusted: () => isTrustedFlag,
+        // An approved delete has already landed in deleted_songs; mirror it
+        // client-side so the corpus stops serving the song immediately.
+        onDeleteExecuted: (id) => {
+            deletedIds.add(id);
+            rebuildCorpus();
+        },
     });
 
     initSearch({
@@ -2503,7 +2514,6 @@ function init() {
         editorKeySelect,
         metadataSummary,
         metadataFields,
-        onUploadRequest: () => goToDocUpload(),
         onSongRequest: () => openAddSongPicker({ mode: 'request' }),
         editorPreviewContainer,
         editorUndoBtn,

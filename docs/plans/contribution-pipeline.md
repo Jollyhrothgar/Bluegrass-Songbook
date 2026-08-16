@@ -209,6 +209,16 @@ regular paths), the attachment branch of `auto-commit-song`, and the
 worth rescuing before dropping). Existing document parts already in
 `works/` and the four published PDFs in `docs/data/docs/` stay served —
 this kills the intake, not the shelf.
+*Delivered, 2026-08-15:* teardown complete (module, view, picker card,
+editor hatch, attachment branch, and the shared helpers only it used).
+Queue shipped as `docs/js/review-queue.js` + `review_requests`, rendered in
+the Dungeon: trusted users file, admins decide, admins keep the instant
+delete. Approving a `delete` executes; approving a `suppress` or
+`merge-redirect` records the decision and prints the local command, because
+both edit files in the repo and no CI path does that from a table — the
+panel says so rather than implying otherwise. Both migrations are written
+but **not applied**; the drop-`doc_staging` one opens with a rescue
+checklist and the `doc-staging` bucket still needs a manual delete.
 
 ### Phase 3 — the offramp (dedup)
 
@@ -346,7 +356,7 @@ looks wrong.
 | Attribution code is correct, prod is stale | `supabase/functions/create-song-issue/index.ts:66,89` |
 | Overwrite / unquoted YAML / no suppression check | `supabase/functions/auto-commit-song/index.ts` vs `scripts/lib/process_submission.py:150-190` |
 | Five writers of `works/` | `process_submission.py`, `process_correction.py`, `process_tab.py`, `fetch_tune.py`, `auto-commit-song/index.ts` |
-| Doc-upload dead end: nothing reads `doc_staging`; follow-up call payload mismatch | `docs/js/doc-upload.js` (`submitAsRegularUser`, ~:444), `docs/js/work-view.js` (`uploadPlaceholderDocumentRegular`, ~:1724); `create-song-request/index.ts` expects `{id,title,artist,key,notes}` |
+| ~~Doc-upload dead end: nothing reads `doc_staging`~~ — feature removed in 2d (2026-08-15); table/bucket drop written but not applied, see `supabase/migrations/20260815130000_drop_doc_staging.sql` |
 | Tag/genre sync is manual-only | `scripts/lib/fetch_tag_overrides.py`, `scripts/lib/export_genre_suggestions.py` — in no workflow |
 | `tab-submission` supported server-side, no UI caller | `supabase/functions/create-tab-pr/index.ts`; `docs/js/otf-editor/submit-tab.js`; `create-tab.js` unwired |
 | Importer duplicate minting | #192, `works_importer.normalize_title` vs `cross_site_index.norm_key` |

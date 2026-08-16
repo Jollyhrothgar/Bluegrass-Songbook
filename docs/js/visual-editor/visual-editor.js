@@ -34,7 +34,7 @@ const SECTION_TYPES = ['verse', 'chorus', 'bridge', 'intro', 'outro'];
 export const GHOST_COMMIT_MS = 800;
 export const RESUME_GRACE_MS = 1500;
 
-export function createVisualEditor({ container, onChange, onImportMeta, onUploadRequest, onSongRequest }) {
+export function createVisualEditor({ container, onChange, onImportMeta, onSongRequest }) {
     let doc = parseSong('');
     let selection = null;            // {sectionId, lineIndex, position} or {..., chordIndex}
     let undoStack = [];
@@ -779,8 +779,8 @@ export function createVisualEditor({ container, onChange, onImportMeta, onUpload
         autoScrollToSelection();
     }
 
-    // Content-first empty state: one big friendly box plus quiet escape
-    // hatches (photo upload, song request) supplied by the host.
+    // Content-first empty state: one big friendly box plus the quiet escape
+    // hatch (song request) supplied by the host.
     function renderEmptyState() {
         const ta = document.createElement('textarea');
         ta.className = 've-empty-paste';
@@ -804,7 +804,6 @@ export function createVisualEditor({ container, onChange, onImportMeta, onUpload
             btn.addEventListener('click', cb);
             links.appendChild(btn);
         };
-        if (onUploadRequest) addLink('ve-link-upload', 'Upload a photo instead', () => onUploadRequest());
         if (onSongRequest) addLink('ve-link-request', 'Request a song', () => onSongRequest());
         if (links.childElementCount > 0) cardsHost.append(links);
     }

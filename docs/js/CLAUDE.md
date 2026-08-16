@@ -634,9 +634,29 @@ Every logged-in user's submission takes the same path:
 - **fork**: editing content you didn't submit never overwrites it — the chart
   lands as a new arrangement on the same work and the original stays put
 - `isTrustedUser()` (the `trusted_users` table) now only decides whether an
-  edit of someone else's chart may land **in place** instead of forking, and
-  still gates the legacy document-upload path
+  edit of someone else's chart may land **in place** instead of forking —
+  plus who may file a review request (below)
 - the GitHub-issue submission flow (`create-song-issue`) is gone
+
+### Review queue (phase 2d — the destructive residue)
+
+`review-queue.js` renders `#review-queue-panel` in the Bluegrass Dungeon.
+Deletions, suppressions and merge-redirects are the only asks left that wait
+on a human:
+
+- **admin** → instant delete, unchanged (`🗑️ Delete song` in the song
+  overflow); admins are the reviewers, so queueing them would be ceremony
+- **trusted, not admin** → the same slot becomes `🗑️ Request deletion`,
+  which writes a `review_requests` row
+- approving a `delete` in the panel executes it (the `delete_song` RPC) and
+  mirrors it into the client corpus; approving a `suppress` or
+  `merge-redirect` records the decision and **prints the local command**,
+  because those edit files in the repo and no CI path does it from a table
+
+Document upload is gone with 2d (`doc-upload.js`, the `#upload` view, the
+picker's Upload card, the editor's "Upload a photo instead" hatch). Document
+*parts* already in `works/` still render — `renderDocumentPart` in
+`work-view.js`. The intake died; the shelf did not.
 
 ### Auto-hiding chrome
 
