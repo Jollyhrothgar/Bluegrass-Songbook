@@ -46,9 +46,11 @@ import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, h
 import { renderBountyView } from './bounty-view.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
-import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates } from './utils.js';
+import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
-import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide } from './shell.js';
+import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill } from './shell.js';
+import { buildListChordPro, buildListText, buildListZipFiles, listFileBase } from './list-export.js';
+import { createZip } from './zip.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
 import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
@@ -1854,10 +1856,14 @@ function openListsModal() {
 // PRINT LIST VIEW
 // ============================================
 
-async function openPrintListView() {
-    // Get the current list
+/**
+ * The list currently being viewed, with its songs resolved against the corpus.
+ * Shared by every Export action so print and download can't drift apart on
+ * which songs they think are in the list.
+ */
+function resolveViewingList() {
     const listId = getViewingListId();
-    if (!listId) return;
+    if (!listId) return null;
 
     // Find the list (favorites is now just a regular list)
     let list = userLists.find(l => l.id === listId || l.cloudId === listId);
@@ -1867,12 +1873,19 @@ async function openPrintListView() {
         list = getFavoritesList();
     }
 
-    if (!list) return;
+    if (!list) return null;
 
-    // Get all songs in the list
     const listSongs = list.songs
         .map(id => allSongs.find(s => s.id === id))
         .filter(Boolean);
+
+    return { list, listSongs };
+}
+
+async function openPrintListView() {
+    const resolved = resolveViewingList();
+    if (!resolved) return;
+    const { list, listSongs } = resolved;
 
     if (listSongs.length === 0) {
         alert('No songs in this list to print.');
@@ -1902,6 +1915,81 @@ async function openPrintListView() {
     }
     printWindow.document.write(printHtml);
     printWindow.document.close();
+}
+
+/**
+ * Download the whole list as one file. Both formats export the SOURCE
+ * ChordPro, not the transposed/Nashville view — same as the song page's
+ * Export, so a downloaded file always matches what's stored.
+ */
+async function handleListExport(action) {
+    if (action === 'print') {
+        openPrintListView();
+        return;
+    }
+
+    const resolved = resolveViewingList();
+    if (!resolved) return;
+    const { list, listSongs } = resolved;
+
+    if (listSongs.length === 0) {
+        alert('No songs in this list to export.');
+        return;
+    }
+
+    const contents = await getSongContents(listSongs);
+    const base = listFileBase(list.name);
+
+    if (action === 'download-chordpro') {
+        downloadFile(`${base}.pro`, buildListChordPro(listSongs, contents), 'text/plain');
+    } else if (action === 'download-text') {
+        downloadFile(`${base}.txt`, buildListText(listSongs, contents), 'text/plain');
+    } else if (action === 'download-zip') {
+        // One .pro per song, for readers that import a folder of files
+        const files = buildListZipFiles(listSongs, contents);
+        if (!files.length) {
+            alert('No song content available to export.');
+            return;
+        }
+        downloadFile(`${base}.zip`, createZip(files), 'application/zip');
+    }
+}
+
+const LIST_EXPORT_ACTIONS = [
+    { action: 'print', label: '🖨️ Print' },
+    { action: 'download-chordpro', label: '⬇️ Download .pro' },
+    { action: 'download-text', label: '⬇️ Download .txt' },
+    { action: 'download-zip', label: '🗜️ Download .zip (one file per song)' },
+];
+
+/**
+ * Export pill for the list header. The song page has had one of these all
+ * along; list view only offered a bare Print button, which is what sent the
+ * reporter of #206 looking for an Export control that wasn't there.
+ */
+function buildListExportPill() {
+    return pill('Export', (container, api) => {
+        container.innerHTML = LIST_EXPORT_ACTIONS.map(a =>
+            `<button class="pill-popover-item" data-action="${a.action}">${a.label}</button>`
+        ).join('');
+        container.querySelectorAll('[data-action]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                api.close();
+                handleListExport(btn.dataset.action);
+            });
+        });
+    }, { id: 'list-export-pill', title: 'Print or download every song in this list' });
+}
+
+/**
+ * Mount the Export pill in the list header, where the bare Print button used
+ * to be. It leads the control row because printing/exporting a set is the
+ * reason most people open a list in the first place.
+ */
+function mountListExportPill() {
+    const controls = document.querySelector('.list-header-controls');
+    if (!controls || document.getElementById('list-export-pill')) return;
+    controls.insertBefore(buildListExportPill(), controls.firstChild);
 }
 
 function generatePrintListPage(listName, songs, prefs, contents = []) {
@@ -2445,6 +2533,9 @@ function init() {
 
     // Print list button
     printListBtn?.addEventListener('click', openPrintListView);
+
+    // List header gets the full Export menu (print + downloads), not just print
+    mountListExportPill();
 
     // Close dropdowns when clicking outside
     document.addEventListener('click', (e) => {
