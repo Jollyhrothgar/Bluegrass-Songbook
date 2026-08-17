@@ -431,6 +431,9 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Super-user requests**: Regular users can request trusted status via GitHub issue
 - **LLM tagging**: Primary tag source using Claude batch API
 - **Tag voting**: Trusted users can override incorrect tags
+- **Dungeon promote**: any signed-in user can promote an archived work back
+  into search from the Bluegrass Dungeon; undo is limited to the promoter or a
+  trusted user, so two users disagreeing can't flip a song back and forth
 - **Legacy ID migration**: Song IDs migrated from filename-based to work slugs
 - **Strum Machine integration**: 605+ songs with practice backing tracks
 - **UI redesign (Jul 2026)**: app shell with top/bottom bands, pill controls (Key/Display/Info/Export/Arrangement) replacing the old quick-controls bar, sidebar, and version-picker modal

@@ -38,7 +38,7 @@ Some operations require external APIs/databases and only run locally. Others run
 | **Grassiness scores** | Local only | `bluegrass_recordings.json`, `bluegrass_tagged.json` | Song-level bluegrass detection |
 | **Strum Machine URLs** | Local only | `strum_machine_cache.json` | API rate limited (10 req/sec) |
 | **Deleted songs sync** | Scheduled CI + local | `deleted_songs.json` | `.github/workflows/sync-deleted-songs.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-deleted-songs` |
-| **Promoted songs sync** | Scheduled CI + local | `promoted_songs.json` | same workflow as deleted songs, or `./scripts/utility sync-promoted-songs` |
+| **Promoted songs sync** | Scheduled CI + local | `promoted_songs.json` | same workflow as deleted songs, or `./scripts/utility sync-promoted-songs`. Any signed-in user can promote (was trusted-only) |
 | **Tag overrides sync** | Scheduled CI + local | `tag_overrides.json` | `.github/workflows/sync-community-input.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-tag-votes`; auto-applied at next index build |
 | **Genre suggestions export** | Scheduled CI + local | `user_genre_suggestions.json` | same workflow as tag overrides, or `./scripts/utility export-suggestions`; review-only, never auto-applied |
 | **TuneArch fetch** | Local only | - | Fetches new instrumentals |
@@ -55,7 +55,7 @@ Some operations require external APIs/databases and only run locally. Others run
 - `docs/data/bluegrass_tagged.json` - Recordings with MusicBrainz bluegrass tags
 - `docs/data/grassiness_scores.json` - Computed grassiness scores per song
 - `docs/data/deleted_songs.json` - Soft-deleted song IDs (synced from Supabase via `fetch_deleted_songs.py`; suppressed at index build)
-- `docs/data/promoted_songs.json` - Trusted-user promotions from the Bluegrass Dungeon (synced from Supabase via `fetch_promoted_songs.py`; unioned with the registry `keep:` map at index build)
+- `docs/data/promoted_songs.json` - Promotions from the Bluegrass Dungeon (any signed-in user) (synced from Supabase via `fetch_promoted_songs.py`; unioned with the registry `keep:` map at index build)
 
 ## Files
 
@@ -425,8 +425,9 @@ Restoring songs later:
 
 ### Deleted/Promoted-Songs Sync
 
-Admin soft-deletes land in the Supabase `deleted_songs` table; trusted-user
-promotions from the Bluegrass Dungeon land in `promoted_songs`. The
+Admin soft-deletes land in the Supabase `deleted_songs` table; promotions from
+the Bluegrass Dungeon land in `promoted_songs` — open to any signed-in user,
+with undo limited to the promoter or a trusted user. The
 `Sync Deleted + Promoted Songs` workflow
 (`.github/workflows/sync-deleted-songs.yml`, hourly cron + manual dispatch)
 writes both to the committed caches (`docs/data/deleted_songs.json`,

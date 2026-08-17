@@ -28,8 +28,9 @@
 #                  Seasonal material clears the coverage bar honestly
 #                  (bluegrass artists do record Christmas albums) and still
 #                  does not belong on the board.
-#   promote_candidates — archived works verified as real coverage; restore via
-#                  the Dungeon promote flow when that branch lands
+#   promote_candidates — a seed for the Dungeon promote flow. The Dungeon is
+#                  the general answer for archived works; this is not a
+#                  curation backlog.
 #   keep         — real repertoire the catalogue cannot vouch for (no MB
 #                  coverage / below the score cut). Carried onto the board
 #                  verbatim by build_wanted.py, the way registry.yaml `keep:`
@@ -876,16 +877,19 @@ keep:
     - John 5
     - Iron Horse
 promote_candidates:
-  _note: Archived works the ledger VERIFIED as real coverage — restore to search via the Dungeon
-    promote flow (promoted_songs.json -> hourly sync -> build unions with registry keep:),
-    not a new mechanism. Blocked on feature/bluegrass-dungeon merging plus a supabase db push.
-  _wider_finding: 'Computing this from data rather than these flags gives 912 archived works
-    the catalogue vouches for, 29 Core tier. That set is NOT a promote list: it is thick with
-    the seasonal material filed under not_jam_repertoire, corpus-internal duplicates (take-me-back
-    x3, country-boy x3), and generic-title collisions where an archived country song shares
-    a title with a bluegrass standard (Heaven, Rainbow, Wheels, Just Because). Promoting it
-    wholesale would take the searchable index 2,458 -> ~3,370. It is a curation project needing
-    its own review, not a mechanical step.'
+  _note: Archived works the ledger VERIFIED as real coverage while adjudicating the bounty
+    board. A convenient seed for the promote flow, nothing more — the Bluegrass Dungeon is
+    the general answer, not this list.
+  _wider_finding: 'Do NOT read this as the head of a curation backlog. 912 archived works
+    score as canonical by the catalogue, but that is the Bluegrass Dungeon''s population,
+    not a task list: the Dungeon gives the archive its own search scope and trusted users
+    promote what they find (promoted_songs.json -> hourly sync -> build unions with registry
+    keep:). Promotion is user-driven and incremental by design. An earlier draft of this note
+    proposed a title-by-title curation pass instead; that was redundant with the feature and
+    is not owed. The one place the coverage score could still earn its keep is as a RANKING
+    signal inside the Dungeon — surfacing high-coverage archived works as promotion suggestions,
+    so the good ones get found sooner. Small feature idea, not a backlog. Blocked on feature/bluegrass-dungeon
+    merging plus a supabase db push.'
   bunch-of-keys:
     reason: The tune is catalogued both with and without the leading "Old".
   aura-lee:
