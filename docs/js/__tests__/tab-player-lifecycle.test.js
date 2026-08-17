@@ -6,9 +6,9 @@ import { TabPlayer } from '../renderers/tab-player.js';
 
 /** A fake AudioContext. `runs: false` never leaves 'suspended' (iOS with a
  *  spent gesture activation — the clock stays frozen and nothing sounds). */
-function stubAudio({ runs = true } = {}) {
+function stubAudio({ runs = true, state = 'suspended' } = {}) {
     const ctx = {
-        state: 'suspended',
+        state,
         resume: vi.fn(() => {
             if (runs) ctx.state = 'running';
             return Promise.resolve();
@@ -105,6 +105,18 @@ describe('TabPlayer iOS audio unlock', () => {
             .rejects.toThrow(/blocked/i);
         expect(ctx.state).toBe('suspended');
         expect(p.isPlaying).toBe(false);   // no Pause button left hanging
+    });
+
+    it("_awaitRunningContext() resumes an 'interrupted' context (route change)", async () => {
+        // AirPods disconnecting mid-session parks Safari in 'interrupted',
+        // not 'suspended' — resume() clears it the same way.
+        const { ctx } = stubAudio({ state: 'interrupted' });
+        const p = new TabPlayer();
+        p.audioContext = ctx;
+
+        await p._awaitRunningContext();
+        expect(ctx.resume).toHaveBeenCalled();
+        expect(ctx.state).toBe('running');
     });
 
     it('init() throws instead of half-initializing without Web Audio', async () => {

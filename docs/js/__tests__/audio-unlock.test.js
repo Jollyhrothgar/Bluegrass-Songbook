@@ -39,4 +39,10 @@ describe('audio unlock', () => {
         expect(ctx.resume).not.toHaveBeenCalled();
         expect(unlockAudioContext(null)).toBe(null);
     });
+
+    it("resumes Safari's 'interrupted' state (route change, phone call)", () => {
+        const ctx = { state: 'interrupted', resume: vi.fn(() => Promise.resolve()) };
+        unlockAudioContext(ctx);
+        expect(ctx.resume).toHaveBeenCalledTimes(1);
+    });
 });
