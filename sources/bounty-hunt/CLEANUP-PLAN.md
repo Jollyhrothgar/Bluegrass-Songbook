@@ -13,12 +13,14 @@ and fully generated: `build_catalogue.py` → `build_wanted.py` →
 Two items remain open by decision rather than oversight, both recorded in
 `curation/bounty_decisions.yaml`:
 
-* **`promote_candidates`** — 6 archived works verified as real coverage, waiting
-  on `feature/bluegrass-dungeon` to merge and a `supabase db push`. Computing
-  the same question from data instead gives 912 archived works the catalogue
-  vouches for (29 Core), but that set is thick with seasonal material,
-  corpus-internal duplicates and generic-title collisions — a curation project
-  of its own, not a mechanical promote.
+* **`promote_candidates`** — 6 archived works verified as real coverage, a seed
+  for the Dungeon promote flow once `feature/bluegrass-dungeon` merges (plus a
+  `supabase db push`). 912 archived works score as canonical by the catalogue,
+  but that is the Dungeon's population, not a backlog: the Dungeon gives the
+  archive its own search scope and trusted users promote what they find, which
+  is user-driven and incremental by design. The coverage score's remaining use
+  is as a *ranking* signal inside the Dungeon, surfacing the high-coverage
+  archived works as promotion suggestions.
 * **`uncertain`** — 7 identity calls nobody could settle. They stay ON the
   board: an unresolved identity is a reason to keep asking, not to stop.
 
