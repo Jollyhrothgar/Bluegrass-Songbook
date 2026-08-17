@@ -110,6 +110,21 @@ export function isTabOnlyWork(song) {
 }
 
 /**
+ * "banjo" -> "Banjo Tab", "tenor-banjo" -> "Tenor Banjo Tab".
+ *
+ * Lives here (not in work-view.js, which owns the page) because the part
+ * label is also the part's URL slug — `slugify(tabLabel(instrument))` is
+ * the `#work/{id}/{partId}` segment — and the contribution entry points
+ * need to name and link a tab without importing the whole song page.
+ */
+export function tabLabel(instrument) {
+    if (!instrument) return 'Tab';
+    const pretty = String(instrument).split('-')
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return `${pretty} Tab`;
+}
+
+/**
  * Whether the page-level song actions (the header ✏️ Edit button) apply
  * to the given part. They edit chordpro lead sheets; on a tablature part
  * they would open an empty song editor, so views hide them — tab parts

@@ -386,8 +386,10 @@ class TestIndexContract:
             assert sum(defaults) == 1
 
     def test_source_path_is_carried_for_the_copy_step(self, work_dir):
+        """And published: a correction has to name the file it corrects,
+        and the published name can't be mapped back to the works/ one."""
         song = build_song_from_work(work_dir)
-        assert [p['_src'] for p in song['tablature_parts']] == [
+        assert [p['src_file'] for p in song['tablature_parts']] == [
             'banjo.otf.json', 'banjo-222.otf.json', 'mandolin.otf.json']
 
     def test_published_name_falls_back_when_source_id_missing(self):

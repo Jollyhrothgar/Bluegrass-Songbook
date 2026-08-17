@@ -3513,6 +3513,87 @@ mark {
     color: var(--danger);
 }
 
+/* ── "This song already has tabs" — the early offramp panel ──
+   Shared by the add-song picker's tab step and the work page's bounty
+   section (docs/js/otf-editor/existing-tabs.js). */
+.tab-existing-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.75rem;
+    padding: 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-secondary, transparent);
+}
+
+.tab-existing-head {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.tab-existing-sub {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.tab-existing-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    max-height: 15rem;
+    overflow-y: auto;
+}
+
+.tab-existing-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tab-existing-view,
+.tab-existing-improve,
+.tab-existing-add,
+.tab-existing-back {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.tab-existing-view {
+    flex: 1;
+    text-align: left;
+}
+
+.tab-existing-view:hover,
+.tab-existing-improve:hover,
+.tab-existing-add:hover,
+.tab-existing-back:hover {
+    border-color: var(--accent);
+}
+
+.tab-existing-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tab-existing-add {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    font-weight: 600;
+}
+
 /* Bounty CTA button reset (was <a>, now <button>) */
 .bounty-cta-btn {
     border: none;

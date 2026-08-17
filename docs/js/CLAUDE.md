@@ -566,7 +566,8 @@ showing "not found" (openWork, `#song/` redirects, `#edit/` deep links).
   "tablature_parts": [{
     "instrument": "banjo",
     "label": "banjo",
-    "file": "data/tabs/red-haired-boy-banjo.otf.json",
+    "file": "data/tabs/red-haired-boy-banjo-1687.otf.json",
+    "src_file": "banjo.otf.json",   // the file inside works/{id}/
     "source": "banjo-hangout",
     "source_id": "1687",
     "author": "schlange",
@@ -762,6 +763,32 @@ Frictionless song requests without a GitHub account.
   branches on identity: **signed in** → a `pending_songs` placeholder the
   requester owns (and lands on); **anonymous** → a `tune-request` GitHub
   issue and a confirmation, with no placeholder work minted
+
+### Contributing a tab (`otf-editor/create-tab-entry.js`, `existing-tabs.js`)
+
+Two entry points open the tab editor pre-targeted at a work — the work
+page's "+ Add a tab" / tablature-bounty Contribute, and the add-song
+picker's Tablature card — both routing through `create.html` with
+`?work=&instrument=&title=&have=`.
+
+**A work that already has tabs for that instrument says so BEFORE the
+editor opens** (contract principle 4 — the offramp is offered early, never
+discovered at Submit). `tabEntryPlan(song, instrument)` reads
+`tablature_parts` straight off the index row (no fetch) and matches
+instrument families the way `tags.js getInstrumentTags` does, so a
+`5-string-banjo` part answers to `banjo`. When it finds any,
+`renderExistingTabsPanel` offers three ways forward:
+
+- **view** an existing take → `#work/{id}/{partId}`
+- **add mine as another version** → the editor exactly as before, with the
+  sibling count carried into the create-page banner
+- **improve this one** → the tab-correction path (`enterTabEditMode`), via
+  `requestTabEdit(workId, file)` when the work page isn't already open
+
+Same-instrument siblings are normal (foggy-mountain-breakdown carries
+eight banjo takes), so `create-tab-pr` **adds** a uniquely-named part
+rather than 409ing. A correction names the take it fixes with
+`src_file` — the published `file` name can't be mapped back to `works/`.
 
 ### Multi-Owner Lists & Thunderdome
 

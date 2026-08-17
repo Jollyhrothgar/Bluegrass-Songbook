@@ -39,10 +39,14 @@ interface TabPrRequest {
   type: 'tab-correction' | 'tab-submission'
   title: string
   workId?: string      // Required for corrections
-  instrument: string   // e.g. 'banjo' — becomes <instrument>.otf.json
+  instrument: string   // e.g. 'banjo' — names the part, and its file
+  file?: string        // Correction only: which arrangement's file to replace
   otf: string          // serialized OTF JSON
   comment?: string     // Required for corrections
 }
+
+// A part filename inside works/<slug>/ — never a path.
+const OTF_FILE_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*\.otf\.json$/
 
 function bad(status: number, error: string) {
   return new Response(JSON.stringify({ error }),
@@ -53,6 +57,24 @@ function slugify(text: string): string {
   return text.normalize('NFKD').replace(/[̀-ͯ]/g, '')
     .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
     .replace(/-+/g, '-') || 'untitled'
+}
+
+/**
+ * A collision-safe suffix for a sibling tab's filename.
+ *
+ * works_writer._unique_filename picks `banjo-2.otf.json` by counting what's
+ * already on disk, which is right for a local writer but not here: two
+ * submissions open two BRANCHES, and neither can see the other's file on
+ * main, so both would pick `-2` and the second merge would land on top of
+ * the first. A timestamp plus randomness is unique across branches by
+ * construction, and it echoes the corpus's own `{instrument}-{id}` sibling
+ * naming (banjo-18967.otf.json) rather than inventing a shape.
+ */
+function siblingSuffix(stamp: number): string {
+  const rand = new Uint8Array(2)
+  crypto.getRandomValues(rand)
+  return stamp.toString(36) +
+    Array.from(rand, b => (b % 36).toString(36)).join('')
 }
 
 serve(async (req) => {
@@ -90,7 +112,7 @@ serve(async (req) => {
       })
 
     const body: TabPrRequest = await req.json()
-    const { type, title, workId, instrument, otf, comment } = body
+    const { type, title, workId, instrument, file, otf, comment } = body
 
     if (type !== 'tab-correction' && type !== 'tab-submission') {
       return bad(400, 'Bad type')
@@ -109,6 +131,10 @@ serve(async (req) => {
     // and branch name, so nothing outside [a-z0-9-] may ever reach it.
     if (workId !== undefined && !/^[a-z0-9-]+$/.test(workId)) {
       return bad(400, 'Bad work id')
+    }
+    // Same rule for the correction target: it becomes a repo path.
+    if (file !== undefined && (typeof file !== 'string' || !OTF_FILE_RE.test(file))) {
+      return bad(400, 'Bad file name')
     }
     if (type === 'tab-correction' && (!workId || !comment)) {
       return bad(400, 'Tab corrections require workId and comment')
@@ -143,24 +169,46 @@ serve(async (req) => {
         targetWorkId = `${base}-${i + 1}`
       }
     }
-    const filePath = `works/${targetWorkId}/${instrument}.otf.json`
+    // Corrections name the arrangement they fix; a work can carry several
+    // per instrument, so `{instrument}.otf.json` is the right guess only
+    // for the first one (and only for legacy clients that send no file).
+    let fileName = (type === 'tab-correction' && file) ? file
+      : `${instrument}.otf.json`
 
-    // A submission must never quietly overwrite a tab that's already
-    // published for that instrument — replacing existing content is a
-    // CORRECTION, and that path requires a comment describing the change.
+    // A song that already has a tab for this instrument gets ANOTHER one,
+    // not a refusal.
+    //
+    // This used to 409 ("open it and use Edit to submit a correction"),
+    // which was a late block — the contributor had already arranged the
+    // whole tab — and it foreclosed something the corpus has always
+    // supported: same-instrument siblings as separate arrangements
+    // (foggy-mountain-breakdown carries eight banjo takes, and the
+    // frontend renders them as selectable arrangements). So the incoming
+    // file is given its own name and added as a NEW part; nothing that is
+    // already published is read, moved, or written. What we still refuse
+    // is a true overwrite — same file, same content path — which the
+    // uniquified name makes unreachable.
+    const stamp = Date.now()
     if (type === 'tab-submission' && workId) {
-      const clash = await gh(`/contents/${filePath}?ref=main`)
+      const clash = await gh(`/contents/works/${targetWorkId}/${fileName}?ref=main`)
       if (clash.ok) {
-        return bad(409, `This song already has a ${instrument} tab — `
-          + `open it and use Edit to submit a correction.`)
+        for (let i = 0; i < 5; i++) {
+          const candidate = `${instrument}-${siblingSuffix(stamp + i)}.otf.json`
+          const probe = await gh(`/contents/works/${targetWorkId}/${candidate}?ref=main`)
+          if (probe.status === 404) { fileName = candidate; break }
+        }
+        if (fileName === `${instrument}.otf.json`) {
+          return bad(409, 'Could not find a free filename for this tab — try again.')
+        }
       }
     }
+    const filePath = `works/${targetWorkId}/${fileName}`
 
     // Branch off main
     const mainRef = await gh('/git/ref/heads/main')
     if (!mainRef.ok) throw new Error(`ref lookup failed: ${mainRef.status}`)
     const baseSha = (await mainRef.json()).object.sha
-    const branch = `tab/${type === 'tab-correction' ? 'fix' : 'new'}-${targetWorkId}-${Date.now()}`
+    const branch = `tab/${type === 'tab-correction' ? 'fix' : 'new'}-${targetWorkId}-${stamp}`
     const mkBranch = await gh('/git/refs', {
       method: 'POST',
       body: JSON.stringify({ ref: `refs/heads/${branch}`, sha: baseSha }),
@@ -193,6 +241,7 @@ serve(async (req) => {
 **Work ID:** ${targetWorkId}
 **Title:** ${title}
 **Instrument:** ${instrument}
+**File:** ${fileName}
 **Submitted by:** ${attribution}
 
 ${comment ? `### Changes Made\n${comment}\n` : ''}

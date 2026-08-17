@@ -70,6 +70,25 @@ def validate_otf(otf) -> list:
     return problems
 
 
+def part_instrument(otf_path: Path, declared) -> str:
+    """The corpus instrument this OTF file publishes as.
+
+    Historically read straight off the filename, which worked while every
+    tab was `works/<slug>/<instrument>.otf.json`. Same-instrument siblings
+    break that: `banjo-mfa3k2px9.otf.json` is a banjo tab, not a
+    "banjo-mfa3k2px9" one. The PR body's declared instrument is
+    authoritative when the filename is that instrument's — the edge
+    function validates it against the same [a-z0-9-] rule — and the
+    filename stem remains the fallback for hand-opened PRs.
+    """
+    stem = otf_path.name[:-len('.otf.json')] if otf_path.name.endswith('.otf.json') \
+        else otf_path.stem
+    if declared and re.fullmatch(r'[a-z0-9-]+', declared):
+        if stem == declared or stem.startswith(f'{declared}-'):
+            return declared
+    return stem
+
+
 def finalize_tab_file(otf_path: Path, meta: dict) -> Path:
     """Validate one changed OTF and make its work.yaml tell the story.
 
@@ -89,22 +108,37 @@ def finalize_tab_file(otf_path: Path, meta: dict) -> Path:
     work_dir = otf_path.parent
     work_id = work_dir.name
     repo_root = work_dir.parent.parent
-    instrument = otf_path.name.replace('.otf.json', '')
+    instrument = part_instrument(otf_path, meta.get('instrument'))
     work_yaml = work_dir / 'work.yaml'
     pr_number = meta.get('pr_number')
     issue_ref = int(pr_number) if str(pr_number).isdigit() else pr_number
 
     # Three shapes reach here, and only the middle one is a correction:
     #   - no work.yaml            → a submission that mints its own work
-    #   - work.yaml, no such part → a NEW tab for an existing song (the
-    #                               bounty case): append the part, and
-    #                               stamp it as a submission, not a fix
-    #   - work.yaml with the part → a correction to published content
+    #   - work.yaml, no such FILE → a NEW tab for an existing song: either
+    #                               an instrument it lacked (the bounty
+    #                               case) or another take on one it has
+    #                               (a sibling arrangement). Append the
+    #                               part; stamp it as a submission.
+    #   - work.yaml with the FILE → a correction to published content
+    #
+    # Keyed on the FILE, not the instrument. A work can carry several
+    # arrangements per instrument (foggy-mountain-breakdown has eight
+    # banjo takes), so "this work already has a banjo part" says nothing
+    # about whether THIS file is new — and treating an incoming sibling as
+    # a correction would repoint an existing part at it, orphaning the
+    # take it used to name.
     work = works_writer.load_work(repo_root, work_id) if work_yaml.exists() else None
     is_correction = bool(work and works_writer.find_parts(
-        work, {'type': 'tablature', 'instrument': instrument}))
+        work, {'type': 'tablature', 'file': otf_path.name}))
     submission_provenance = {
         'source': 'user-submission',
+        # What makes THIS take distinguishable from the work's other takes
+        # on the same instrument: work_schema requires every alternate
+        # tablature arrangement to carry a source_id, and build_works_index
+        # folds it into the published filename. The submission PR is the
+        # only stable id a user-submitted tab has.
+        'source_id': f'pr-{issue_ref}' if pr_number else None,
         'author': meta.get('attribution'),
         'submission_pr': issue_ref,
         'imported_at': str(date.today()),
@@ -116,11 +150,12 @@ def finalize_tab_file(otf_path: Path, meta: dict) -> Path:
         if work_yaml.exists() and not is_correction:
             # New part on an existing work: no x_corrected_* stamps — this
             # content was never published, so there is nothing it corrects.
-            works_writer.update_part(
+            # add_part APPENDS and refuses a genuine identity collision;
+            # it never reads-modifies-writes what's already there, so the
+            # existing takes keep their files, defaults and provenance.
+            works_writer.add_part(
                 repo_root, work_id,
-                match={'type': 'tablature', 'instrument': instrument},
-                file=otf_path.name,
-                add_if_missing=works_writer.PartSpec(
+                works_writer.PartSpec(
                     file=otf_path.name,
                     type='tablature',
                     format='otf',
@@ -133,8 +168,7 @@ def finalize_tab_file(otf_path: Path, meta: dict) -> Path:
             # Correction: record provenance on the matching part
             works_writer.update_part(
                 repo_root, work_id,
-                match={'type': 'tablature', 'instrument': instrument},
-                file=otf_path.name,
+                match={'type': 'tablature', 'file': otf_path.name},
                 provenance_updates={
                     'x_corrected_by': (f"github:{meta.get('pr_author')}"
                                        if meta.get('pr_author')
@@ -156,12 +190,7 @@ def finalize_tab_file(otf_path: Path, meta: dict) -> Path:
                     format='otf',
                     instrument=instrument,
                     default=True,
-                    provenance={
-                        'source': 'user-submission',
-                        'author': meta.get('attribution'),
-                        'submission_pr': issue_ref,
-                        'imported_at': str(date.today()),
-                    },
+                    provenance=dict(submission_provenance),
                 ),
                 tags=['Instrumental'],
                 on_collision='fail',
@@ -178,6 +207,10 @@ def process_changed(changed: list, body: str, pr_number: str, pr_author: str,
     """Process every changed works/*.otf.json. Returns the work dirs."""
     meta = {
         'title': extract_field(body, 'Title'),
+        # The corpus instrument name, declared by create-tab-pr. Needed
+        # because a sibling arrangement's filename carries a uniquifying
+        # suffix the instrument name doesn't.
+        'instrument': extract_field(body, 'Instrument'),
         # PR bodies always carry a verified submitter now (identity is
         # derived server-side in create-tab-pr); this fallback only covers
         # hand-opened PRs.
