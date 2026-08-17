@@ -1394,7 +1394,7 @@ export function updateWorkTopBar() {
     // are the ones playing it, and a promoted work is one the corpus already
     // holds, so the downside is a noisier index rather than injected content.
     // Undo is narrower — see the RLS policy in
-    // supabase/migrations/20260817000000_open_promote_to_logged_in.sql.
+    // supabase/migrations/20260817010000_open_promote_to_logged_in.sql.
     const promotedNow = workPageHooks.isPromoted?.(currentWork.id);
     const showPromote = !!workPageHooks.isLoggedIn?.() &&
         (promotedNow || currentWork.indexed === false);
