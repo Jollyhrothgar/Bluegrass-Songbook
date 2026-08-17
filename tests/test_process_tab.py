@@ -32,10 +32,12 @@ def otf_doc(track_id='banjo'):
     }
 
 
-def write_otf(repo, work_id, instrument, doc=None):
+def write_otf(repo, work_id, name, doc=None):
+    """``name`` is the works/ filename stem — 'banjo', or a sibling
+    arrangement's uniquified 'banjo-mfa3k2px9'."""
     work_dir = repo / 'works' / work_id
     work_dir.mkdir(parents=True, exist_ok=True)
-    path = work_dir / f'{instrument}.otf.json'
+    path = work_dir / f'{name}.otf.json'
     path.write_text(json.dumps(doc or otf_doc()))
     return path
 
@@ -127,6 +129,120 @@ def test_a_second_instrument_does_not_disturb_the_first(repo):
     assert by_instrument['banjo']['provenance']['source'] == 'banjo-hangout'
     assert 'x_corrected_by' not in by_instrument['banjo']['provenance']
     assert by_instrument['mandolin']['provenance']['source'] == 'user-submission'
+
+
+class TestSameInstrumentSibling:
+    """A second banjo tab for a song that already has one.
+
+    The corpus has always carried these (foggy-mountain-breakdown has
+    eight banjo takes, rendered as selectable arrangements), but
+    create-tab-pr used to 409 the submission — a late block, discovered
+    only after the contributor had arranged the whole tab. It now
+    uniquifies the filename and lands the tab as a NEW part, so this is
+    the shape process_tab has to get right: append, never adopt.
+    """
+
+    @pytest.fixture
+    def repo_with_banjo(self, repo):
+        works_writer.create_work(
+            repo, 'salt-creek', 'Salt Creek',
+            works_writer.PartSpec(file='banjo.otf.json', type='tablature',
+                                  format='otf', instrument='banjo', default=True,
+                                  provenance={'source': 'banjo-hangout',
+                                              'author': 'schlange'}),
+            verbose=False)
+        write_otf(repo, 'salt-creek', 'banjo')
+        return repo
+
+    def test_lands_as_a_new_part_with_its_own_provenance(self, repo_with_banjo):
+        write_otf(repo_with_banjo, 'salt-creek', 'banjo-mfa3k2px9')
+
+        run(repo_with_banjo, ['works/salt-creek/banjo-mfa3k2px9.otf.json'])
+
+        work = yaml.safe_load(
+            (repo_with_banjo / 'works/salt-creek/work.yaml').read_text())
+        assert [p['file'] for p in work['parts']] == [
+            'banjo.otf.json', 'banjo-mfa3k2px9.otf.json']
+
+        sibling = work['parts'][1]
+        # The uniquifying suffix is a FILENAME detail, not the instrument
+        assert sibling['instrument'] == 'banjo'
+        assert sibling['type'] == 'tablature'
+        assert sibling['provenance']['source'] == 'user-submission'
+        assert sibling['provenance']['author'] == 'Jane Picker'
+        assert sibling['provenance']['submission_pr'] == 412
+        # Nothing was corrected — this content had never been published
+        assert not [k for k in sibling['provenance'] if k.startswith('x_corrected')]
+        # A sibling never displaces the take that's already pinned
+        assert not sibling.get('default')
+
+    def test_the_existing_take_is_untouched(self, repo_with_banjo):
+        before = (repo_with_banjo / 'works/salt-creek/banjo.otf.json').read_text()
+        write_otf(repo_with_banjo, 'salt-creek', 'banjo-mfa3k2px9')
+
+        run(repo_with_banjo, ['works/salt-creek/banjo-mfa3k2px9.otf.json'])
+
+        work = yaml.safe_load(
+            (repo_with_banjo / 'works/salt-creek/work.yaml').read_text())
+        original = work['parts'][0]
+        assert original['file'] == 'banjo.otf.json'      # not repointed
+        assert original['default'] is True
+        assert original['provenance']['source'] == 'banjo-hangout'
+        assert original['provenance']['author'] == 'schlange'
+        assert 'x_corrected_by' not in original['provenance']
+        assert (repo_with_banjo / 'works/salt-creek/banjo.otf.json').read_text() \
+            == before
+
+    def test_correcting_a_sibling_stamps_that_sibling_only(self, repo_with_banjo):
+        """The other half of the same rule: corrections are keyed on the
+        file too, so fixing take #2 must not stamp take #1."""
+        works_writer.add_part(
+            repo_with_banjo, 'salt-creek',
+            works_writer.PartSpec(file='banjo-22352.otf.json', type='tablature',
+                                  format='otf', instrument='banjo',
+                                  provenance={'source': 'banjo-hangout',
+                                              'source_id': '22352'}),
+            verbose=False)
+        write_otf(repo_with_banjo, 'salt-creek', 'banjo-22352')
+
+        run(repo_with_banjo, ['works/salt-creek/banjo-22352.otf.json'])
+
+        work = yaml.safe_load(
+            (repo_with_banjo / 'works/salt-creek/work.yaml').read_text())
+        by_file = {p['file']: p for p in work['parts']}
+        assert len(work['parts']) == 2                    # no third part minted
+        assert by_file['banjo-22352.otf.json']['provenance']['x_correction_pr'] == 412
+        assert 'x_corrected_by' not in by_file['banjo.otf.json']['provenance']
+
+    def test_a_true_overwrite_is_still_refused(self, repo_with_banjo):
+        """Same instrument, same file, no correction intent — the one case
+        that stays an error rather than becoming a sibling."""
+        work = works_writer.load_work(repo_with_banjo, 'salt-creek')
+        # Two parts claiming one file can only come from a bad write; the
+        # writer refuses to add a third onto the same name.
+        with pytest.raises(works_writer.PartExistsError):
+            works_writer.add_part(
+                repo_with_banjo, 'salt-creek',
+                works_writer.PartSpec(file='banjo.otf.json', type='tablature',
+                                      format='otf', instrument='banjo',
+                                      provenance={'source': 'user-submission'}),
+                verbose=False)
+        assert len(work['parts']) == 1
+
+
+def test_instrument_comes_from_the_pr_body_when_the_filename_is_suffixed():
+    """The filename stem is no longer the instrument once siblings exist."""
+    from pathlib import Path
+    assert process_tab.part_instrument(
+        Path('works/x/banjo-mfa3k2px9.otf.json'), 'banjo') == 'banjo'
+    assert process_tab.part_instrument(
+        Path('works/x/banjo.otf.json'), 'banjo') == 'banjo'
+    # A declared instrument that doesn't match the file is not trusted
+    assert process_tab.part_instrument(
+        Path('works/x/mandolin.otf.json'), 'banjo') == 'mandolin'
+    # Hand-opened PR with no declaration: the stem still answers
+    assert process_tab.part_instrument(
+        Path('works/x/dobro.otf.json'), None) == 'dobro'
 
 
 def test_a_tab_with_no_work_yet_mints_its_own_work(repo):
