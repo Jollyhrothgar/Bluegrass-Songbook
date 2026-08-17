@@ -5,9 +5,22 @@ derived, produced locally and committed) and a **wanted list** (cheap
 subtraction, generated in CI), with a durable adjudication ledger for the
 identity calls no algorithm — and no external identifier — can make.
 
-Status: adjudication is **done** (110/110, `curation/bounty_decisions.yaml`)
-and the frontend dedupe (Phase 6) has **shipped** — the board is 696 → 634.
-Phases 1–4 (matcher twin, catalogue builder, generator) are not built yet.
+Status: **complete and merged** (PR #247, 2026-08-17). The board is 696 → 1006
+and fully generated: `build_catalogue.py` → `build_wanted.py` →
+`bounty_decisions.py` → the render-time filter, all wired into the index build.
+`docs/data/wanted_songs.json` is now build output and gitignored.
+
+Two items remain open by decision rather than oversight, both recorded in
+`curation/bounty_decisions.yaml`:
+
+* **`promote_candidates`** — 6 archived works verified as real coverage, waiting
+  on `feature/bluegrass-dungeon` to merge and a `supabase db push`. Computing
+  the same question from data instead gives 912 archived works the catalogue
+  vouches for (29 Core), but that set is thick with seasonal material,
+  corpus-internal duplicates and generic-title collisions — a curation project
+  of its own, not a mechanical promote.
+* **`uncertain`** — 7 identity calls nobody could settle. They stay ON the
+  board: an unresolved identity is a reason to keep asking, not to stop.
 
 Readable version: https://claude.ai/code/artifact/33a6a180-bee0-4587-bb5a-5d2ea928bc5a
 

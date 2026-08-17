@@ -89,3 +89,7 @@ docs/data/tabs/*.otf.json
 # index build, and its chord counts come from the freshly written index, so a
 # committed copy would go stale the moment a work gains chords.
 docs/data/bounty_decisions.json
+# ...and the board itself, now that build_wanted.py regenerates it during the
+# index build. curation/bounty_decisions.yaml and docs/data/bluegrass_catalogue.json
+# ARE tracked — they are the hand-authored and locally-produced inputs.
+docs/data/wanted_songs.json

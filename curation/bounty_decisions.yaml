@@ -19,12 +19,17 @@
 # Sections:
 #   covered      — the wanted song IS this work; drop from the board
 #   distinct     — scores close, different song; keep on the board
-#   uncertain    — needs someone who knows which tune the source meant
+#   uncertain    — needs someone who knows which tune the source meant. SETTLED
+#                  2026-08-17 (Mike): these stay ON the board. An unresolved
+#                  identity is a reason to keep asking, not to stop. Nothing
+#                  filters this section; it is a record, not a queue.
 #   not_a_song   — catalogue artifact, never a bounty
 #   not_jam_repertoire — a real song, but not one anybody calls at a jam.
 #                  Seasonal material clears the coverage bar honestly
 #                  (bluegrass artists do record Christmas albums) and still
 #                  does not belong on the board.
+#   promote_candidates — archived works verified as real coverage; restore via
+#                  the Dungeon promote flow when that branch lands
 #   keep         — real repertoire the catalogue cannot vouch for (no MB
 #                  coverage / below the score cut). Carried onto the board
 #                  verbatim by build_wanted.py, the way registry.yaml `keep:`
@@ -870,6 +875,31 @@ keep:
     - Scott Stutzman
     - John 5
     - Iron Horse
+promote_candidates:
+  _note: Archived works the ledger VERIFIED as real coverage — restore to search via the Dungeon
+    promote flow (promoted_songs.json -> hourly sync -> build unions with registry keep:),
+    not a new mechanism. Blocked on feature/bluegrass-dungeon merging plus a supabase db push.
+  _wider_finding: 'Computing this from data rather than these flags gives 912 archived works
+    the catalogue vouches for, 29 Core tier. That set is NOT a promote list: it is thick with
+    the seasonal material filed under not_jam_repertoire, corpus-internal duplicates (take-me-back
+    x3, country-boy x3), and generic-title collisions where an archived country song shares
+    a title with a bluegrass standard (Heaven, Rainbow, Wheels, Just Because). Promoting it
+    wholesale would take the searchable index 2,458 -> ~3,370. It is a curation project needing
+    its own review, not a mechanical step.'
+  bunch-of-keys:
+    reason: The tune is catalogued both with and without the leading "Old".
+  aura-lee:
+    reason: Spelling variant of the 1861 song (later "Love Me Tender").
+  roxanna-waltz:
+    reason: Roxanne/Roxanna variant of one waltz.
+  streamline-cannonball:
+    reason: Acuff song; trailing text is a performer. Corpus also holds "Streamlined Cannonball"
+      (indexed) — a corpus-internal duplicate.
+  walk-in-the-parlor:
+    reason: Walk/Walking variant of the old-time tune.
+  will-you-be-satisfied-that-way:
+    reason: Would/Will title variant of one song. Corpus also holds "Would You Be Satisfied"
+      and "You Won't Be Satisfied That Way".
 intra_dupes:
 - - Another Day Another Dollar Dan Tyminski
   - Another Day Another Dollar Wynn Stewart
