@@ -10356,6 +10356,52 @@ body.has-list-context.has-bottomband .container {
     .app-topbar.has-back #auth-section {
         display: none;
     }
+
+    /* Playback band on a phone: ~13 control groups used to WRAP into 4-6
+       rows, a wall of buttons covering the tab with Play buried somewhere
+       inside it. One row that scrolls sideways instead, Play/Stop first so
+       they're never the thing you have to hunt for. */
+    .app-bottomband:has(.tab-controls) {
+        padding: var(--space-sm) 0.5rem;
+    }
+
+    .app-bottomband .tab-controls {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .app-bottomband .tab-controls::-webkit-scrollbar {
+        display: none;
+    }
+
+    .app-bottomband .tab-controls > * {
+        flex: 0 0 auto;
+        order: 2;
+    }
+
+    .app-bottomband .tab-controls .tab-play-btn { order: 0; }
+    .app-bottomband .tab-controls .tab-stop-btn { order: 1; }
+
+    /* The strip's overflow-x would clip the key pill's drop-up, so it
+       becomes a sheet pinned above the band instead. */
+    .app-bottomband .tab-controls .pill-popover {
+        position: fixed;
+        top: auto;
+        bottom: 60px;
+        left: 0.5rem;
+        right: 0.5rem;
+        width: auto;
+        max-width: none;
+    }
+
+    /* …and the band itself sits 60px up when the list nav bar is showing */
+    body.has-list-context .app-bottomband .tab-controls .pill-popover {
+        bottom: 120px;
+    }
 }
 
 /* Wanted list on the bounty board */

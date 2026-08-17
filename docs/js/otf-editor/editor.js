@@ -16,6 +16,7 @@ import { NoteEntryPopover } from './popover.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
 import { ContextMenu } from './context-menu.js';
 import { EditEventRecorder } from './recorder.js';
+import { unlockAudioContext } from '../audio-unlock.js';
 
 /**
  * OTF Editor - Main entry point
@@ -1138,6 +1139,9 @@ export class OTFEditor {
      * Toggle playback
      */
     async togglePlayback() {
+        // Sync, before any await: iOS only opens/resumes the audio context
+        // inside the gesture's own call stack (audio-unlock.js).
+        this.player?.unlockAudio();
         if (this.isPlaying) {
             this.stop();
         } else {
@@ -1173,6 +1177,7 @@ export class OTFEditor {
      * The verify loop: type a phrase, hear it from right there.
      */
     async playFromCursor() {
+        this.player?.unlockAudio();  // sync, inside the gesture/keystroke
         if (this.isPlaying) {
             this.stop();
             return;
@@ -1187,6 +1192,7 @@ export class OTFEditor {
      * play-from-cursor when there is no selection. Toggles off.
      */
     async loopSelection() {
+        this.player?.unlockAudio();  // sync, inside the gesture/keystroke
         if (this.isPlaying) {
             this.stop();
             return;
@@ -1275,15 +1281,25 @@ export class OTFEditor {
     }
 
     /**
+     * Create/resume the note-feedback AudioContext synchronously.
+     * @returns {AudioContext|null} null when the browser has no Web Audio
+     */
+    _ensureAudioContext() {
+        const Ctx = window.AudioContext || window.webkitAudioContext;
+        if (!Ctx) return null;
+        if (!this.audioContext) this.audioContext = new Ctx();
+        return unlockAudioContext(this.audioContext);
+    }
+
+    /**
      * Play audio feedback for note entry
      * @param {number} fret - Fret number
      * @param {number} string - String number (1-indexed)
      */
     _playNoteFeedback(fret, string) {
-        // Initialize AudioContext on first use (browser autoplay policy)
-        if (!this.audioContext) {
-            this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        }
+        // Note entry IS the gesture: create and resume here, synchronously,
+        // or iOS leaves the context suspended and the pluck is silent.
+        if (!this._ensureAudioContext()) return;
 
         // Get string tuning to calculate pitch
         const track = this.state.getCurrentTrack();

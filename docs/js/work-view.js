@@ -58,6 +58,7 @@ import { buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleE
 import {
     attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
 } from './tab-playback-interactions.js';
+import { showToast } from './toast.js';
 
 // ============================================
 // WORK STATE
@@ -2505,18 +2506,28 @@ function setupTablaturePlayer(otf, controls, renderer) {
         playBtn.textContent = '⏸ Pause';
         playBtn.classList.add('playing');
         stopBtn.disabled = false;
-        await player.play(otf, {
-            // Player tempo is quarter-note bpm; the displayed number is
-            // per-beat of the feel, so two feel plays twice as fast.
-            tempo: currentTempo * (twoFeelMode ? 2 : 1),
-            transpose: currentCapo,
-            trackIds: getEnabledTrackIds(),
-            feel: twoFeelMode ? 'two' : null,
-            // Whole-song loop checkbox. A phrase-loop (drag) passes its own
-            // loop:true + range via `extra`, which overrides this.
-            loop: !!loopCheckbox?.checked,
-            ...extra,
-        });
+        try {
+            await player.play(otf, {
+                // Player tempo is quarter-note bpm; the displayed number is
+                // per-beat of the feel, so two feel plays twice as fast.
+                tempo: currentTempo * (twoFeelMode ? 2 : 1),
+                transpose: currentCapo,
+                trackIds: getEnabledTrackIds(),
+                feel: twoFeelMode ? 'two' : null,
+                // Whole-song loop checkbox. A phrase-loop (drag) passes its own
+                // loop:true + range via `extra`, which overrides this.
+                loop: !!loopCheckbox?.checked,
+                ...extra,
+            });
+        } catch (err) {
+            // Blocked audio context, dead soundfont CDN, decode timeout —
+            // say so out loud instead of leaving a Pause button that never
+            // advances.
+            console.error('Tab playback failed:', err);
+            player.stop();
+            showToast(err?.message || 'Could not start playback.',
+                { variant: 'warning', duration: 5000 });
+        }
         // play() can bail (superseded by a newer call, audio context
         // blocked) — reconcile the optimistic button with reality
         if (!player.isPlaying) {
@@ -2629,6 +2640,9 @@ function setupTablaturePlayer(otf, controls, renderer) {
 
     // Play/stop
     playBtn.addEventListener('click', async () => {
+        // FIRST, before any await: iOS only lets us open/resume the audio
+        // context inside the tap's own call stack (tab-player.unlockAudio).
+        player.unlockAudio();
         if (player.isPlaying) {
             player.stop();
             updatePlayLabel();
