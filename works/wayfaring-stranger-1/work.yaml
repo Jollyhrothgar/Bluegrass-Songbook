@@ -14,5 +14,8 @@ parts:
     source: classic-country
     source_file: wayfaringstrangerlyricschords.pro
     imported_at: '2026-01-02'
+    corrected_by: github:Jollyhrothgar
+    corrected_at: '2026-08-07'
+    correction_issue: 204
 composers:
 - Traditional

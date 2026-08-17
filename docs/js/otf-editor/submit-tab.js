@@ -28,13 +28,19 @@ export function serializeForSubmission(otf) {
     return compact;
 }
 
-/** Attribution string, same convention as song submissions. */
-export function submitterAttribution() {
-    const user = globalThis.window?.SupabaseAuth?.getUser?.();
-    if (user) {
-        return user.user_metadata?.full_name || user.email || 'Anonymous User';
-    }
-    return 'Rando Calrissian';
+/**
+ * The signed-in caller's access token, or null.
+ *
+ * Tab submissions are content the submitter will look for later, so they
+ * require login (Phase 2a). The token IS the attribution: the edge function
+ * derives the submitter from it and ignores anything the client claims —
+ * there is no `submittedBy` field any more.
+ */
+export async function accessToken() {
+    const supabase = globalThis.window?.SupabaseAuth?.supabase;
+    if (!supabase) return null;
+    const { data } = await supabase.auth.getSession();
+    return data?.session?.access_token || null;
 }
 
 /**
@@ -44,30 +50,39 @@ export function submitterAttribution() {
  * @param {'tab-correction'|'tab-submission'} p.type
  * @param {Object} p.otf - the document (serialized internally)
  * @param {string} p.title
- * @param {string} p.instrument - part instrument (correction target file)
+ * @param {string} p.instrument - part instrument
+ * @param {string} [p.file] - the works/ filename this correction targets
+ *   (a work can carry several arrangements per instrument; the instrument
+ *   alone names the wrong one for all but the first). Ignored for
+ *   submissions, which get their own name server-side.
  * @param {string} [p.workId] - required for corrections
  * @param {string} [p.comment] - required for corrections
  * @param {Function} [fetchImpl] - injectable for tests
  * @returns {Promise<{prNumber: number, prUrl: string}>}
  */
 export async function submitTab(
-    { type, otf, title, instrument, workId, comment },
+    { type, otf, title, instrument, file, workId, comment },
     fetchImpl = globalThis.fetch,
 ) {
+    const token = await accessToken();
+    if (!token) {
+        throw new Error('Sign in to submit tabs — your account is the attribution.');
+    }
+
     const payload = {
         type,
         title,
         instrument,
+        ...(file ? { file } : {}),
         workId,
         comment,
         otf: serializeForSubmission(otf),
-        submittedBy: submitterAttribution(),
     };
     const response = await fetchImpl(`${SUPABASE_URL}/functions/v1/create-tab-pr`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+            'Authorization': `Bearer ${token}`,
             'apikey': SUPABASE_ANON_KEY,
         },
         body: JSON.stringify(payload),

@@ -38,8 +38,13 @@
         .import-error { color: #b00020; font-size: 13px; margin-top: 8px; }
         .or-sep { max-width: 560px; text-align: center; color: #999; font-size: 13px;
                   margin: 4px 0 14px; }
+        .target-banner { background: #eef6ff; border: 1px solid #cfe2ff; padding: 10px 14px;
+                         border-radius: 6px; margin-bottom: 16px; max-width: 560px;
+                         font-size: 14px; }
+        .target-banner strong { font-weight: 600; }
         .hidden { display: none !important; }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
     <header>
@@ -47,6 +52,9 @@
         <a href="index.html">← Bluegrass Book</a>
     </header>
     <main>
+        <!-- Targeted mode: this tab belongs to a work that already exists
+             (a bounty on its page, or the add-song picker) -->
+        <div id="target-banner" class="target-banner hidden"></div>
         <div id="draft-banner" class="draft-banner hidden">
             <span>You have an unsaved draft (<span id="draft-when"></span>).</span>
             <button id="draft-resume">Resume</button>
@@ -99,24 +107,58 @@
         </div>
     </main>
 
+    <script src="js/supabase-auth.js"></script>
     <script type="module">
         import { OTFEditor } from './js/otf-editor/editor.js';
         import {
             INSTRUMENT_CHOICES, buildNewTab,
             saveDraft, loadDraft, clearDraft,
         } from './js/otf-editor/create-tab.js';
-        import { submitTab } from './js/otf-editor/submit-tab.js';
+        import {
+            parseCreateTarget, presetForInstrument, submitNewTab, targetBannerText,
+        } from './js/otf-editor/create-tab-entry.js';
         import { parseTef, TefVersionError } from './js/tef-import/index.js';
+
+        // Auth is needed for Submit (Phase 2a) — the session IS the
+        // attribution. Without this the page could edit but never submit.
+        window.SupabaseAuth?.init();
 
         const $ = (id) => document.getElementById(id);
 
+        // Where this tab is headed: an existing work (from a bounty or the
+        // add-song picker) or nowhere in particular (a brand-new work).
+        let target = parseCreateTarget(window.location.search);
+
+        function applyTarget() {
+            if (!target?.workId) return;
+            const banner = $('target-banner');
+            banner.textContent = '';
+            banner.append('Adding a tab to ');
+            const link = document.createElement('a');
+            link.href = `index.html#work/${target.workId}`;
+            link.textContent = target.title || target.workId;
+            banner.append(link);
+            if (target.instrument) {
+                const strong = document.createElement('strong');
+                strong.textContent = ` — ${target.instrument}`;
+                banner.append(strong);
+            }
+            banner.append('. ');
+            banner.append(targetBannerText(target));
+            banner.classList.remove('hidden');
+            if (target.title && !$('f-title').value) $('f-title').value = target.title;
+        }
+
         // Instrument checkboxes
+        const preselect = target.instrument ? presetForInstrument(target.instrument) : null;
         for (const [i, inst] of INSTRUMENT_CHOICES.entries()) {
             const label = document.createElement('label');
+            const checked = preselect ? inst.value === preselect : i === 0;
             label.innerHTML = `<input type="checkbox" value="${inst.value}"
-                ${i === 0 ? 'checked' : ''}> ${inst.label}`;
+                ${checked ? 'checked' : ''}> ${inst.label}`;
             $('f-instruments').appendChild(label);
         }
+        applyTarget();
 
         let editor = null;
 
@@ -131,7 +173,7 @@
                 container: $('editor-host'),
                 otf,
                 trackId: otf.tracks[0]?.id,
-                onChange: (doc) => saveDraft(doc),
+                onChange: (doc) => saveDraft(doc, target),
             });
         }
 
@@ -160,7 +202,7 @@
                         + 'in TablEdit, please report it and we\'ll add support.');
                     return;
                 }
-                saveDraft(otf);
+                saveDraft(otf, target);
                 openEditor(otf);
             } catch (err) {
                 // Keep this format-agnostic — users shouldn't need to care which
@@ -211,7 +253,7 @@
                 tempo: $('f-tempo').value,
                 measures: $('f-measures').value,
             });
-            saveDraft(otf);
+            saveDraft(otf, target);
             openEditor(otf);
         });
 
@@ -222,15 +264,11 @@
             status.textContent = 'Submitting…';
             try {
                 const doc = editor.save();
-                const result = await submitTab({
-                    type: 'tab-submission',
-                    otf: doc,
-                    title: doc.metadata?.title || 'Untitled',
-                    // instrument, not track id: duplicate instruments get
-                    // deduped ids like 5-string-banjo-2, which would leak
-                    // into the published filename
-                    instrument: doc.tracks[0]?.instrument || doc.tracks[0]?.id || 'banjo',
-                });
+                // Login gate at the action (Phase 2a): everything up to
+                // here — including Download — stays open to everyone.
+                // submitNewTab picks the corpus instrument name and passes
+                // the target work through as workId.
+                const result = await submitNewTab(doc, target);
                 // DOM construction, not innerHTML: the URL comes back
                 // from a network response
                 status.textContent = '';
@@ -267,7 +305,15 @@
         if (draft) {
             $('draft-when').textContent = new Date(draft.savedAt).toLocaleString();
             $('draft-banner').classList.remove('hidden');
-            $('draft-resume').addEventListener('click', () => openEditor(draft.otf));
+            $('draft-resume').addEventListener('click', () => {
+                // Restore the target too — a sign-in round trip strips the
+                // query string, so the draft is where it survives.
+                if (!target.workId && draft.target?.workId) {
+                    target = draft.target;
+                    applyTarget();
+                }
+                openEditor(draft.otf);
+            });
             $('draft-discard').addEventListener('click', () => {
                 clearDraft();
                 $('draft-banner').classList.add('hidden');

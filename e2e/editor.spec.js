@@ -32,10 +32,13 @@ test.describe('Editor Access', () => {
         await gotoSearch(page);
 
         await navClick(page, 'add');
-        // Picker modal with the three cards
+        // Picker modal. Two cards since phase 2d retired document upload.
         await expect(page.locator('#add-song-picker')).toBeVisible();
-        await expect(page.locator('.picker-card[data-type="upload"]')).toBeVisible();
+        await expect(page.locator('.picker-card[data-type="upload"]')).toHaveCount(0);
         await expect(page.locator('.picker-card[data-type="chordpro"]')).toBeVisible();
+        // 4c: the Tablature card is the picker's route to tabbing a work that
+        // has no bounty and no gap in its part list.
+        await expect(page.locator('.picker-card[data-type="tablature"]')).toBeVisible();
         await expect(page.locator('.picker-card[data-type="request"]')).toBeVisible();
 
         await page.locator('.picker-card[data-type="chordpro"]').click();
@@ -51,8 +54,8 @@ test.describe('Editor Access', () => {
         expect(await page.locator('#editor-content').getAttribute('placeholder'))
             .toMatch(/Paste or type your song/);
 
-        // quiet escape hatches in the preview empty state
-        await expect(page.locator('.ve-link-upload')).toBeVisible();
+        // quiet escape hatch in the preview empty state (photo upload is gone)
+        await expect(page.locator('.ve-link-upload')).toHaveCount(0);
         await expect(page.locator('.ve-link-request')).toBeVisible();
 
         // metadata is deferred to a compact line
@@ -68,22 +71,56 @@ test.describe('Editor Access', () => {
         await expect(page.locator('#editor-content')).toBeVisible();
     });
 
-    test('upload link is login-gated: logged out click prompts sign-in, no upload view', async ({ page }) => {
-        await page.goto('/#add');
-        await expect(page.locator('.ve-preview-empty')).toBeVisible();
+    test('Tablature card asks which song the tab is for', async ({ page }) => {
+        await gotoSearch(page);
+        await navClick(page, 'add');
+        await page.locator('.picker-card[data-type="tablature"]').click();
 
-        // stub the sign-in redirect so the test can observe the gate
+        // A tab is always a tab OF something, so the flow needs a target work
+        // before the editor is any use (add-song-picker.js startTabFlow).
+        await expect(page.locator('.picker-tab-target')).toBeVisible();
+        await expect(page.locator('#picker-tab-search')).toBeVisible();
+        await expect(page.locator('#picker-tab-instrument')).toBeVisible();
+
+        // Searching the corpus surfaces the work to hang the tab on
+        await page.locator('#picker-tab-search').fill('old home place');
+        await expect(page.locator('.picker-tab-result').first())
+            .toContainText(/old home place/i);
+
+        // A genuine miss says so, and still lets you start without a song
+        await page.locator('#picker-tab-search').fill('zzzz not a real song zzzz');
+        await expect(page.locator('.picker-tab-empty')).toContainText(/No song by that name/i);
+        await expect(page.locator('#picker-tab-new')).toBeVisible();
+
+        // Back returns to the cards
+        await page.locator('.picker-tab-back').click();
+        await expect(page.locator('.picker-card[data-type="chordpro"]')).toBeVisible();
+    });
+
+    test('submit is login-gated: logged out keeps the draft and asks for sign-in', async ({ page }) => {
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+
+        // Stub the sign-in redirect so the gate is observable (phase 2a:
+        // login is required at SUBMIT time, not to open the editor).
         await page.evaluate(() => {
             window.__signInCalled = 0;
             window.SupabaseAuth.signInWithGoogle = () => { window.__signInCalled++; };
         });
 
-        await page.locator('.ve-link-upload').click();
+        await page.locator('#metadata-summary').click();
+        await page.locator('#editor-title').fill('Gate Test Song');
+        await page.locator('#editor-content').fill('[G]Some words to sing');
+
+        await page.locator('#editor-submit').click();
 
         expect(await page.evaluate(() => window.__signInCalled)).toBe(1);
-        // still in the editor — the upload view did not open
-        await expect(page.locator('#upload-panel')).toBeHidden();
+        await expect(page.locator('#editor-status')).toContainText(/Sign in to submit/i);
+        await expect(page.locator('#editor-status')).toHaveClass(/error/);
+        // "your draft stays here" has to be true, not just claimed
         await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('#editor-content')).toHaveValue('[G]Some words to sing');
+        await expect(page.locator('#editor-title')).toHaveValue('Gate Test Song');
     });
 
     test('editor shows title, artist, and content fields', async ({ page }) => {

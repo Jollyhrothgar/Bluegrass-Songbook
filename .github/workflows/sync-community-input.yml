@@ -1,0 +1,62 @@
+name: Sync Community Input
+
+# Bridges two Supabase tables that today only reach the site when a human
+# runs a local script:
+#   - tag_votes         -> docs/data/tag_overrides.json  (trusted-user tag
+#     downvotes; these are curation decisions the Live tier already owns,
+#     so they apply automatically at the next index build)
+#   - genre_suggestions -> docs/data/user_genre_suggestions.json  (free-text
+#     genre suggestions from any user; exported for human review only —
+#     NOT auto-applied, see docs/plans/contribution-pipeline.md Phase 4b)
+#
+# Offset from sync-deleted-songs (:17) and reconcile-pending (:42) so the
+# three hourly jobs don't collide.
+
+on:
+  schedule:
+    - cron: '27 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: sync-community-input
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Fetch tag overrides and genre suggestions from Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          # The fetch scripts silently fall back to the cached files when
+          # creds are missing — fail loudly here instead so a misconfigured
+          # secret can't masquerade as "nothing to sync".
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "::error::SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY secrets are not set"
+            exit 1
+          fi
+          uv run --with supabase python scripts/lib/fetch_tag_overrides.py
+          uv run --with supabase python scripts/lib/export_genre_suggestions.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/tag_overrides.json docs/data/user_genre_suggestions.json
+          git diff --staged --quiet || git commit -m "Sync tag overrides and genre suggestions from Supabase"
+
+          # Retry push with rebase in case of concurrent pushes
+          for i in 1 2 3; do
+            git push && break
+            git pull --rebase && sleep 2
+          done

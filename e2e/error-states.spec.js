@@ -317,3 +317,40 @@ test.describe('Browser Features', () => {
         await expect(page.locator('.search-container')).toBeVisible();
     });
 });
+
+test.describe('Corpus load failure', () => {
+    test('a failed index fetch raises a loud, global, retryable banner', async ({ page }) => {
+        // Loud and global: a failed corpus load is not just the search view's
+        // problem — every consumer of allSongs needs to know the corpus is
+        // empty because the fetch failed, not because there is nothing there.
+        let attempts = 0;
+        await page.route('**/data/index.jsonl', route => {
+            attempts++;
+            if (attempts === 1) return route.abort('failed');
+            return route.continue();
+        });
+
+        await page.goto('/#search');
+
+        const banner = page.locator('#app-banner');
+        await expect(banner).toBeVisible({ timeout: 20000 });
+        await expect(banner).toContainText(/index failed to load/i);
+        await expect(banner.locator('.app-banner-retry')).toBeVisible();
+
+        // Retry actually re-fetches and recovers
+        await banner.locator('.app-banner-retry').click();
+        await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 20000 });
+        await expect(banner).toBeHidden();
+    });
+
+    test('the banner can be dismissed', async ({ page }) => {
+        await page.route('**/data/index.jsonl', route => route.abort('failed'));
+
+        await page.goto('/#search');
+
+        const banner = page.locator('#app-banner');
+        await expect(banner).toBeVisible({ timeout: 20000 });
+        await banner.locator('.app-banner-dismiss').click();
+        await expect(banner).toBeHidden();
+    });
+});

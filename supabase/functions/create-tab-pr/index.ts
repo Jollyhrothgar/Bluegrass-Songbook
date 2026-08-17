@@ -7,6 +7,7 @@
 // reviewer sees the complete diff.
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
+import { attributionFor, callerIp, requireUser } from "../_shared/identity.ts"
 
 const GITHUB_REPO = "Jollyhrothgar/Bluegrass-Songbook"
 const API = `https://api.github.com/repos/${GITHUB_REPO}`
@@ -19,18 +20,18 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 }
 
-// Best-effort per-IP throttle (per isolate — resets on cold start).
-// Abuse ultimately ends at the human merge gate; this keeps a script
-// from burning the PAT's API quota with branch/PR spam.
+// Best-effort throttle (per isolate — resets on cold start), keyed by IP
+// and again by user id. Abuse ultimately ends at the human merge gate;
+// this keeps a script from burning the PAT's API quota with branch/PR spam.
 const RATE_WINDOW_MS = 60 * 60 * 1000
 const RATE_MAX = 5
-const recentByIp = new Map<string, number[]>()
-function rateLimited(ip: string): boolean {
+const recentByKey = new Map<string, number[]>()
+function rateLimited(key: string): boolean {
   const now = Date.now()
-  const hits = (recentByIp.get(ip) ?? []).filter(t => now - t < RATE_WINDOW_MS)
+  const hits = (recentByKey.get(key) ?? []).filter(t => now - t < RATE_WINDOW_MS)
   const limited = hits.length >= RATE_MAX
   if (!limited) hits.push(now)
-  recentByIp.set(ip, hits)
+  recentByKey.set(key, hits)
   return limited
 }
 
@@ -38,11 +39,14 @@ interface TabPrRequest {
   type: 'tab-correction' | 'tab-submission'
   title: string
   workId?: string      // Required for corrections
-  instrument: string   // e.g. 'banjo' — becomes <instrument>.otf.json
+  instrument: string   // e.g. 'banjo' — names the part, and its file
+  file?: string        // Correction only: which arrangement's file to replace
   otf: string          // serialized OTF JSON
   comment?: string     // Required for corrections
-  submittedBy?: string
 }
+
+// A part filename inside works/<slug>/ — never a path.
+const OTF_FILE_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*\.otf\.json$/
 
 function bad(status: number, error: string) {
   return new Response(JSON.stringify({ error }),
@@ -55,14 +59,42 @@ function slugify(text: string): string {
     .replace(/-+/g, '-') || 'untitled'
 }
 
+/**
+ * A collision-safe suffix for a sibling tab's filename.
+ *
+ * works_writer._unique_filename picks `banjo-2.otf.json` by counting what's
+ * already on disk, which is right for a local writer but not here: two
+ * submissions open two BRANCHES, and neither can see the other's file on
+ * main, so both would pick `-2` and the second merge would land on top of
+ * the first. A timestamp plus randomness is unique across branches by
+ * construction, and it echoes the corpus's own `{instrument}-{id}` sibling
+ * naming (banjo-18967.otf.json) rather than inventing a shape.
+ */
+function siblingSuffix(stamp: number): string {
+  const rand = new Uint8Array(2)
+  crypto.getRandomValues(rand)
+  return stamp.toString(36) +
+    Array.from(rand, b => (b % 36).toString(36)).join('')
+}
+
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
     return new Response('ok', { headers: corsHeaders })
   }
 
   try {
-    const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown'
+    const ip = callerIp(req)
     if (rateLimited(ip)) return bad(429, 'Too many submissions — try again later')
+
+    // Login required (Phase 2a): a tab submission/correction is content the
+    // submitter will look for later, so identity comes from the verified
+    // session — never from the request body.
+    const { user, admin, response: authFailure } = await requireUser(req, corsHeaders)
+    if (authFailure) return authFailure
+    const attribution = attributionFor(user)
+    if (rateLimited(`tab-pr:${user!.id}`)) {
+      return bad(429, 'Too many submissions — try again later')
+    }
 
     const githubToken = Deno.env.get('GITHUB_PAT')
     if (!githubToken) throw new Error('GITHUB_PAT not configured')
@@ -80,8 +112,7 @@ serve(async (req) => {
       })
 
     const body: TabPrRequest = await req.json()
-    const { type, title, workId, instrument, otf, comment, submittedBy } = body
-    const attribution = submittedBy || 'Rando Calrissian'
+    const { type, title, workId, instrument, file, otf, comment } = body
 
     if (type !== 'tab-correction' && type !== 'tab-submission') {
       return bad(400, 'Bad type')
@@ -101,6 +132,10 @@ serve(async (req) => {
     if (workId !== undefined && !/^[a-z0-9-]+$/.test(workId)) {
       return bad(400, 'Bad work id')
     }
+    // Same rule for the correction target: it becomes a repo path.
+    if (file !== undefined && (typeof file !== 'string' || !OTF_FILE_RE.test(file))) {
+      return bad(400, 'Bad file name')
+    }
     if (type === 'tab-correction' && (!workId || !comment)) {
       return bad(400, 'Tab corrections require workId and comment')
     }
@@ -116,9 +151,15 @@ serve(async (req) => {
       return bad(400, 'otf is not a valid OTF JSON document')
     }
 
-    // Resolve the target path
+    // Resolve the target path.
+    //
+    // A tab-submission WITH a workId is a new part for a song that already
+    // exists — the bounty case ("this work wants a banjo tab"). It targets
+    // that work directly; process_tab.py appends the part to its
+    // work.yaml. Without a workId the submission mints its own work, so we
+    // hunt for a free slug.
     let targetWorkId = workId
-    if (type === 'tab-submission') {
+    if (type === 'tab-submission' && !workId) {
       const base = slugify(title)
       targetWorkId = base
       // find a free slug (works/<slug> must not exist on main)
@@ -128,13 +169,46 @@ serve(async (req) => {
         targetWorkId = `${base}-${i + 1}`
       }
     }
-    const filePath = `works/${targetWorkId}/${instrument}.otf.json`
+    // Corrections name the arrangement they fix; a work can carry several
+    // per instrument, so `{instrument}.otf.json` is the right guess only
+    // for the first one (and only for legacy clients that send no file).
+    let fileName = (type === 'tab-correction' && file) ? file
+      : `${instrument}.otf.json`
+
+    // A song that already has a tab for this instrument gets ANOTHER one,
+    // not a refusal.
+    //
+    // This used to 409 ("open it and use Edit to submit a correction"),
+    // which was a late block — the contributor had already arranged the
+    // whole tab — and it foreclosed something the corpus has always
+    // supported: same-instrument siblings as separate arrangements
+    // (foggy-mountain-breakdown carries eight banjo takes, and the
+    // frontend renders them as selectable arrangements). So the incoming
+    // file is given its own name and added as a NEW part; nothing that is
+    // already published is read, moved, or written. What we still refuse
+    // is a true overwrite — same file, same content path — which the
+    // uniquified name makes unreachable.
+    const stamp = Date.now()
+    if (type === 'tab-submission' && workId) {
+      const clash = await gh(`/contents/works/${targetWorkId}/${fileName}?ref=main`)
+      if (clash.ok) {
+        for (let i = 0; i < 5; i++) {
+          const candidate = `${instrument}-${siblingSuffix(stamp + i)}.otf.json`
+          const probe = await gh(`/contents/works/${targetWorkId}/${candidate}?ref=main`)
+          if (probe.status === 404) { fileName = candidate; break }
+        }
+        if (fileName === `${instrument}.otf.json`) {
+          return bad(409, 'Could not find a free filename for this tab — try again.')
+        }
+      }
+    }
+    const filePath = `works/${targetWorkId}/${fileName}`
 
     // Branch off main
     const mainRef = await gh('/git/ref/heads/main')
     if (!mainRef.ok) throw new Error(`ref lookup failed: ${mainRef.status}`)
     const baseSha = (await mainRef.json()).object.sha
-    const branch = `tab/${type === 'tab-correction' ? 'fix' : 'new'}-${targetWorkId}-${Date.now()}`
+    const branch = `tab/${type === 'tab-correction' ? 'fix' : 'new'}-${targetWorkId}-${stamp}`
     const mkBranch = await gh('/git/refs', {
       method: 'POST',
       body: JSON.stringify({ ref: `refs/heads/${branch}`, sha: baseSha }),
@@ -167,6 +241,7 @@ serve(async (req) => {
 **Work ID:** ${targetWorkId}
 **Title:** ${title}
 **Instrument:** ${instrument}
+**File:** ${fileName}
 **Submitted by:** ${attribution}
 
 ${comment ? `### Changes Made\n${comment}\n` : ''}
@@ -193,6 +268,16 @@ MERGE to publish.*`
     await gh(`/issues/${prJson.number}/labels`, {
       method: 'POST',
       body: JSON.stringify({ labels: [type] }),
+    })
+
+    // Log the write so a contributor surface can find it later (Phase 4a)
+    await admin!.from('submission_log').insert({
+      user_id: user!.id,
+      action: type === 'tab-correction' ? 'tab_correction' : 'tab_submit',
+      target_id: targetWorkId,
+      ip_address: ip === 'unknown' ? null : ip,
+      user_agent: req.headers.get('user-agent') || null,
+      metadata: { title, instrument, pr_number: prJson.number },
     })
 
     return new Response(

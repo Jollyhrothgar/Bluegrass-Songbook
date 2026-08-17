@@ -1,6 +1,8 @@
 // Warm synth module for chord progression explorer
 // Uses Web Audio API with subtractive synthesis
 
+import { unlockAudioContext } from '../audio-unlock.js';
+
 /**
  * ChordSynth - A warm-sounding polyphonic synthesizer
  * Signal chain: Sawtooth → LowPass Filter → ADSR Envelope → Master Gain
@@ -43,10 +45,10 @@ export class ChordSynth {
         const AudioContextClass = window.AudioContext || window.webkitAudioContext;
         this.audioContext = new AudioContextClass();
 
-        // Resume if suspended (required after user interaction)
-        if (this.audioContext.state === 'suspended') {
-            await this.audioContext.resume();
-        }
+        // Resume if suspended (required after user interaction) and promote
+        // the iOS audio session so the ringer switch doesn't mute us. Fires
+        // resume() synchronously — awaiting first spends the tap's activation.
+        unlockAudioContext(this.audioContext);
 
         // Create master gain node
         this.masterGain = this.audioContext.createGain();

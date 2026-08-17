@@ -436,6 +436,11 @@ export function renderBountyView(container) {
                 <h1 class="bounty-title">Bounty Board</h1>
                 <p class="bounty-subtitle">Songs and parts the community is looking for. Know one? Help us out!</p>
                 <p class="bounty-stats">${wanted.length} missing standards · ${filteredPlaceholders.length} started pages · ${filteredBounties.length} part requests</p>
+                <!-- The bounty board is the contributor hub, so the board of
+                     who has actually filled these in belongs next to it. A
+                     plain hash link is enough: main.js routes #high-scores on
+                     hashchange. -->
+                <p class="bounty-stats"><a class="bounty-high-scores-link" href="#high-scores">🏆 High scores</a></p>
             </div>
 
             ${wantedHtml}
@@ -516,8 +521,9 @@ export function renderBountyView(container) {
     });
 
     // Wire up CTA buttons
+    // Requesting a song needs no account (Phase 2a). Requesting a PART
+    // (below) still does — bounties are Supabase rows keyed to auth.uid().
     container.querySelector('#bounty-request-song-btn')?.addEventListener('click', () => {
-        if (!requireLogin('request songs')) return;
         openAddSongPicker({ mode: 'request' });
     });
 

@@ -23,6 +23,8 @@ import {
     subscribe
 } from './state.js';
 
+import { deleteAffordance } from './review-queue.js';
+
 import {
     goBack,
     updateListContextClass, updateNavBar,
@@ -32,10 +34,13 @@ import {
 } from './song-view.js';
 import {
     getSongContent, peekSongContent, songHasContent, songHasAbc,
+    getArrangementContent, peekArrangementContent,
 } from './song-content.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
-import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify } from './utils.js';
+import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify, tabLabel } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
+import { launchTabCreator } from './otf-editor/create-tab-entry.js';
+import { tabEntryPlan, renderExistingTabsPanel } from './otf-editor/existing-tabs.js';
 import {
     TabRenderer, TabPlayer,
     TimelineTiming, identityTimeline, readingListTimeline,
@@ -53,6 +58,7 @@ import { buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleE
 import {
     attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
 } from './tab-playback-interactions.js';
+import { showToast } from './toast.js';
 
 // ============================================
 // WORK STATE
@@ -70,6 +76,7 @@ let tempoOverride = null;        // { workId, quarterBpm } — user-set tempo;
 let activeTrackView = null;      // track id, 'all', or null (= lead track)
 let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
 let activeEditSession = null;    // live tab edit session (torn down on nav)
+let pendingTabEdit = null;       // parked "open this tab in the editor" ask
 
 /**
  * Tear down everything the tablature view holds live handles to: the
@@ -100,6 +107,53 @@ function destroyTrackRenderers() {
 
 let currentGroupVersions = [];    // All versions in the current group (Arrangement pill)
 let pendingInitialRender = false; // set by openWork; consumed by renderWorkView (key/tempo init)
+
+// Lead sheets that live on THIS work — the primary chart plus any fork
+// `works_writer.fork_to_arrangement` landed on it (index row `arrangements`).
+// A work with one lead sheet has an empty list and behaves exactly as before.
+let currentArrangements = [];
+let activeArrangementSlug = null;
+
+/**
+ * Normalize an index row's `arrangements` into the list the pill renders.
+ *
+ * Returns [] unless there is a real choice to make (two or more charts), so
+ * every caller can treat "no arrangements" and "one arrangement" alike.
+ * Exported for tests.
+ */
+export function leadSheetArrangements(song) {
+    const raw = song?.arrangements;
+    if (!Array.isArray(raw)) return [];
+    const usable = raw
+        .filter(a => a && (a.slug || a.file || typeof a.content === 'string'))
+        .map((a, i) => ({ ...a, slug: a.slug || `p${i}` }));
+    return usable.length < 2 ? [] : usable;
+}
+
+/**
+ * Which arrangement a freshly opened page is showing.
+ *
+ * Normally the primary. But a row whose own `content` matches one of the
+ * arrangements is an overlay of that arrangement — a pending fork, live in
+ * the browser seconds after it was submitted and before the build has
+ * published it — and the page is already rendering that text, so the pill
+ * must agree. Exported for tests.
+ */
+export function initialArrangementSlug(song, arrangements) {
+    if (!arrangements.length) return null;
+    if (typeof song?.content === 'string' && song.content) {
+        const match = arrangements.find(a => a.content === song.content);
+        if (match) return match.slug;
+    }
+    return (arrangements.find(a => a.default) || arrangements[0]).slug;
+}
+
+/** The arrangement currently on screen (null when the work has only one). */
+function activeLeadSheetArrangement() {
+    if (!currentArrangements.length) return null;
+    return currentArrangements.find(a => a.slug === activeArrangementSlug)
+        || currentArrangements[0];
+}
 
 /**
  * Pick the best representative version from a group for display.
@@ -152,19 +206,6 @@ function buildOtfTimings(otf, compact) {
 // WORK LOADING
 // ============================================
 
-/**
- * Build the parts list from index data.
- * Each part gets a unique `partId` slug derived from its label,
- * used in URLs (#work/{id}/{partId}) and list references.
- */
-/** "banjo" -> "Banjo Tab", "tenor-banjo" -> "Tenor Banjo Tab" */
-function tabLabel(instrument) {
-    if (!instrument) return 'Tab';
-    const pretty = instrument.split('-')
-        .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    return `${pretty} Tab`;
-}
-
 /** "banjo-hangout" -> "Banjo Hangout" (source ids are slugs) */
 function prettySource(source) {
     if (!source) return '';
@@ -180,8 +221,8 @@ function prettySource(source) {
 // partId, which is a URL) belongs to the instrument and must not move when
 // the reader switches takes.
 const ARRANGEMENT_FIELDS = [
-    'file', 'source', 'source_id', 'author', 'source_page_url', 'author_url',
-    'difficulty', 'tuning',
+    'file', 'src_file', 'source', 'source_id', 'author', 'source_page_url',
+    'author_url', 'difficulty', 'tuning',
 ];
 
 /**
@@ -220,6 +261,10 @@ function applyArrangement(part, index) {
 }
 
 /**
+ * Build the parts list from index data. Each part gets a unique `partId`
+ * slug derived from its label, used in URLs (#work/{id}/{partId}) and
+ * list references.
+ *
  * @param {object} song  index row
  * @param {string|null} content  ChordPro if we already have it; null means
  *   "fetch on render" (the part is still built — has_content says it exists)
@@ -283,18 +328,6 @@ function buildPartsFromIndex(song, content = undefined) {
         }
     }
 
-    const pending = window.__pendingDocuments?.[song.id];
-    if (pending && !song.document_parts?.length) {
-        parts.push({
-            type: 'document',
-            format: 'pdf',
-            label: pending.label || 'PDF',
-            file: pending.url,
-            default: parts.length === 0,
-            pending: true,
-        });
-    }
-
     // Assign unique partId slugs (deduplicate by appending -2, -3, etc.)
     const slugCounts = {};
     for (const part of parts) {
@@ -348,6 +381,10 @@ function showWorkLoading() {
  */
 export async function openWork(workId, options = {}) {
     workId = resolveWorkId(workId);
+
+    // An edit intent belongs to the work it was filed for; navigating
+    // anywhere else drops it rather than leaving it armed.
+    if (pendingTabEdit && pendingTabEdit.workId !== workId) pendingTabEdit = null;
 
     let song = allSongs.find(s => s.id === workId);
 
@@ -445,10 +482,14 @@ export async function openWork(workId, options = {}) {
     setBottomBand(null);
 
     currentWork = song;
+    currentArrangements = leadSheetArrangements(song);
+    activeArrangementSlug = initialArrangementSlug(song, currentArrangements);
     // Content comes from data/songs/{id}.pro on demand. Whatever we already
     // have (legacy inline row, cached fetch) renders synchronously; otherwise
     // the lead-sheet part fetches itself with a loading state.
-    const knownContent = peekSongContent(song);
+    const knownContent = currentArrangements.length
+        ? peekArrangementContent(song, activeLeadSheetArrangement())
+        : peekSongContent(song);
     availableParts = buildPartsFromIndex(song, knownContent);
     setCurrentSong(song);
     setCurrentChordpro(knownContent || null);
@@ -614,13 +655,16 @@ function renderActivePart(content, isInitial = false) {
 function fetchAndRenderLeadSheet(container, isInitial = false) {
     const work = currentWork;
     const part = activePart;
+    const arrangement = activeLeadSheetArrangement();
 
     container.innerHTML = '<div class="part-loading">Loading song…</div>';
     setBottomBand(null);
 
-    getSongContent(work).then(text => {
-        // Bail if the reader has navigated on while we were fetching
-        if (currentWork !== work || activePart !== part) return;
+    getArrangementContent(work, arrangement).then(text => {
+        // Bail if the reader has navigated on (or switched arrangements)
+        // while we were fetching
+        if (currentWork !== work || activePart !== part ||
+            activeLeadSheetArrangement() !== arrangement) return;
         part.content = text || '';
         setCurrentChordpro(text || null);
         renderLeadSheetContent(container, work, text || '', isInitial);
@@ -636,6 +680,37 @@ function fetchAndRenderLeadSheet(container, isInitial = false) {
             fetchAndRenderLeadSheet(container, isInitial);
         });
     });
+}
+
+/**
+ * Swap which take of this song's lead sheet is on screen.
+ *
+ * Same work, different chart — so nothing navigates: the URL, the group and
+ * the part tabs all stay put (the same rule tablature arrangements follow —
+ * which take you're reading is page state, not a URL segment). The page
+ * re-renders as if freshly opened so the Key pill re-detects from the new
+ * chart instead of keeping the previous one's.
+ *
+ * Exported for tests.
+ */
+export function selectLeadSheetArrangement(slug) {
+    const arrangement = currentArrangements.find(a => a.slug === slug);
+    if (!arrangement || slug === activeArrangementSlug) return false;
+
+    activeArrangementSlug = slug;
+    const leadPart = availableParts.find(p => p.type === 'lead-sheet');
+    if (leadPart) {
+        activePart = leadPart;
+        // null when it still has to be fetched — renderActivePart then shows
+        // the loading state and pulls the arrangement's own file.
+        leadPart.content = peekArrangementContent(currentWork, arrangement);
+    }
+    setCurrentChordpro(
+        typeof leadPart?.content === 'string' ? leadPart.content : null);
+
+    pendingInitialRender = true;
+    renderWorkView();
+    return true;
 }
 
 /**
@@ -709,7 +784,8 @@ function renderPillRow() {
     }
     row.appendChild(buildInfoPill(currentWork, currentGroupVersions));
 
-    if (currentGroupVersions.length > 1 || currentWork.variant_of || currentWork.variant_label) {
+    if (currentGroupVersions.length > 1 || currentArrangements.length > 1 ||
+        currentWork.variant_of || currentWork.variant_label) {
         row.appendChild(buildArrangementPill());
     }
     return row;
@@ -913,11 +989,83 @@ function buildPlaceholderCta(hasContent) {
  */
 function buildArrangementPill() {
     const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
-    const label = versions.length > 1 ? `${versions.length} arrangements` : 'Arrangement';
+    // The current work contributes one entry per lead sheet it holds, not one
+    // entry full stop — a fork lives on the work it forked from.
+    const count = versions.length +
+        (currentArrangements.length ? currentArrangements.length - 1 : 0);
+    const label = count > 1 ? `${count} versions` : 'Version';
     return pill(label, (container) => {
         container.innerHTML = '<div class="arrangement-loading">Loading…</div>';
         renderArrangementList(container, versions);
-    }, { id: 'arrangement-pill', title: 'Arrangements of this song', className: 'pill-wide' });
+    }, { id: 'arrangement-pill', title: 'Versions of this song', className: 'pill-wide' });
+}
+
+/**
+ * The ballot key for one lead-sheet arrangement of the current work.
+ *
+ * '' is the work-level vote — the meaning every `song_votes` row carried
+ * before forks existed, and the one a work with a single chart still uses.
+ * Forks vote under their own (build-stable) slug. Mirrors the `arr_key`
+ * generated column in 20260816000000_arrangement_votes.sql. Exported for tests.
+ */
+export function arrangementVoteKey(arr) {
+    return arr?.default === true ? '' : (arr?.slug || '');
+}
+
+/**
+ * A pending fork has not been published, so there is nothing on the site for
+ * anyone else to vote on — it gets no ballot until the build lands.
+ */
+function isVotable(arr) {
+    return !arr?.pending;
+}
+
+/**
+ * Order the current work's lead sheets for the pill.
+ *
+ * The default comes first no matter what: that flag is editorial (curation
+ * PINS), and the reader's "which chart is this song" should not shuffle under
+ * them because a fork gained a vote overnight. Votes order everything else,
+ * high to low, ties keeping index order. Exported for tests.
+ */
+export function sortArrangementRows(arrangements, voteCounts = {}) {
+    return [...arrangements].sort((a, b) => {
+        const aDefault = a.default === true ? 1 : 0;
+        const bDefault = b.default === true ? 1 : 0;
+        if (aDefault !== bDefault) return bDefault - aDefault;
+        return (voteCounts[arrangementVoteKey(b)] || 0)
+             - (voteCounts[arrangementVoteKey(a)] || 0);
+    });
+}
+
+/**
+ * The signal Phase 2c owes the curator, and nothing more.
+ *
+ * Votes never flip a work.yaml default — that stays editorial. But when a fork
+ * out-polls the chart the work ships as primary, somebody should be told.
+ * Returns the leading challenger and its margin, or null when the default is
+ * still on top (a tie is not a mandate). Exported for tests.
+ */
+export function defaultFlipSignal(arrangements, voteCounts = {}) {
+    const primary = arrangements.find(a => a.default === true);
+    if (!primary) return null;
+    const primaryVotes = voteCounts[arrangementVoteKey(primary)] || 0;
+    let best = null;
+    for (const arr of arrangements) {
+        if (arr === primary || !isVotable(arr)) continue;
+        const votes = voteCounts[arrangementVoteKey(arr)] || 0;
+        if (votes > primaryVotes && (!best || votes > best.votes)) {
+            best = { arrangement: arr, votes };
+        }
+    }
+    if (!best) return null;
+    return {
+        slug: best.arrangement.slug,
+        label: best.arrangement.label || 'Arrangement',
+        votes: best.votes,
+        defaultVotes: primaryVotes,
+        margin: best.votes - primaryVotes,
+    };
 }
 
 async function renderArrangementList(container, versions, voteData = null) {
@@ -928,19 +1076,38 @@ async function renderArrangementList(container, versions, voteData = null) {
     // the popover stuck on "Loading…").
     const voteCounts = voteData?.voteCounts || {};
     const userVotes = voteData?.userVotes || {};
+    const arrVoteCounts = voteData?.arrVoteCounts || {};
+    const arrUserVotes = voteData?.arrUserVotes || {};
     if (voteData === null && typeof SupabaseAuth !== 'undefined' && groupId) {
         (async () => {
             try {
                 const { data } = await SupabaseAuth.fetchGroupVotes(groupId);
                 const counts = data || {};
+                const loggedIn = SupabaseAuth.isLoggedIn();
                 let uv = {};
-                if (SupabaseAuth.isLoggedIn()) {
+                if (loggedIn) {
                     const { data: u } = await SupabaseAuth.fetchUserVotes(versions.map(v => v.id));
                     uv = u || {};
                 }
+                // Per-arrangement tallies are only meaningful for the work on
+                // screen — it is the only one whose forks the pill lists.
+                let arrCounts = {};
+                let arrUser = {};
+                if (currentArrangements.length && currentWork?.id) {
+                    const { data: ac } =
+                        await SupabaseAuth.fetchArrangementVotes(currentWork.id);
+                    arrCounts = ac || {};
+                    if (loggedIn) {
+                        const { data: au } =
+                            await SupabaseAuth.fetchUserArrangementVotes(currentWork.id);
+                        arrUser = au || {};
+                    }
+                }
                 if (container.isConnected) {
-                    renderArrangementList(container, versions,
-                        { voteCounts: counts, userVotes: uv });
+                    renderArrangementList(container, versions, {
+                        voteCounts: counts, userVotes: uv,
+                        arrVoteCounts: arrCounts, arrUserVotes: arrUser,
+                    });
                 }
             } catch (e) {
                 // votes are optional decoration
@@ -956,44 +1123,32 @@ async function renderArrangementList(container, versions, voteData = null) {
         return (voteCounts[b.id] || 0) - (voteCounts[a.id] || 0);
     });
 
-    container.innerHTML = sorted.map(v => {
-        const isCurrent = v.id === currentWork?.id;
-        const tabPart = v.tablature_parts?.[0];
-        let label = v.variant_label || v.version_label;
-        if (!label) {
-            if (v.tablature_parts?.length && !songHasContent(v) && tabPart?.author) {
-                label = `Tab by ${tabPart.author}`;
-            } else if (songHasAbc(v) && !songHasContent(v)) {
-                label = 'Fiddle notation';
-            } else if (v.key) {
-                label = `Key of ${v.key}`;
-            } else {
-                label = 'Original';
+    // The current work expands into one row per lead sheet it holds (a fork
+    // is a version of this song that lives on this work, not a work of its
+    // own), everything else stays one row per work.
+    const rows = [];
+    for (const v of sorted) {
+        if (v.id === currentWork?.id && currentArrangements.length) {
+            for (const arr of sortArrangementRows(currentArrangements, arrVoteCounts)) {
+                rows.push(arrangementItemHtml(arr, arrVoteCounts, arrUserVotes));
             }
+        } else {
+            rows.push(versionItemHtml(v, voteCounts, userVotes));
         }
-        const meta = [];
-        if (v.artist && v.artist !== currentWork?.artist) meta.push(v.artist);
-        if (v.key) meta.push(`Key: ${v.key}`);
-        if (v.chord_count) meta.push(`${v.chord_count} chords`);
-        const votes = voteCounts[v.id] || 0;
-        const hasVoted = userVotes[v.id] ? ' voted' : '';
-        return `
-            <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-song-id="${escapeHtml(v.id)}" role="button" tabindex="0">
-                <span class="arrangement-info">
-                    <span class="arrangement-label">${escapeHtml(label)}${v.canonical === true ? ' <span class="canonical-badge">Canonical</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}</span>
-                    <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
-                </span>
-                <span class="arrangement-votes">
-                    <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(v.id)}" title="Vote for this arrangement">
-                        <span class="vote-arrow">▲</span>
-                    </button>
-                    <span class="vote-count">${votes}</span>
-                </span>
-            </div>
-        `;
-    }).join('');
+    }
+    const signal = currentArrangements.length
+        ? defaultFlipSignal(currentArrangements, arrVoteCounts) : null;
+    if (signal) rows.push(defaultFlipNoticeHtml(signal));
+    container.innerHTML = rows.join('');
 
-    container.querySelectorAll('.arrangement-item').forEach(item => {
+    container.querySelectorAll('.arrangement-item[data-arr-slug]').forEach(item => {
+        item.addEventListener('click', (e) => {
+            if (e.target.closest('.arrangement-vote-btn')) return;
+            selectLeadSheetArrangement(item.dataset.arrSlug);
+        });
+    });
+
+    container.querySelectorAll('.arrangement-item[data-song-id]').forEach(item => {
         item.addEventListener('click', (e) => {
             if (e.target.closest('.arrangement-vote-btn')) return;
             const songId = item.dataset.songId;
@@ -1003,7 +1158,9 @@ async function renderArrangementList(container, versions, voteData = null) {
         });
     });
 
-    // Vote casting — same affordance the version-picker modal had
+    // Vote casting — same affordance the version-picker modal had, now with an
+    // optional arrangement key. `data-vote-slug` is absent on sibling-work
+    // rows and '' on a work's primary chart; both mean the work-level vote.
     container.querySelectorAll('.arrangement-vote-btn').forEach(btn => {
         btn.addEventListener('click', async (e) => {
             e.stopPropagation();
@@ -1014,20 +1171,119 @@ async function renderArrangementList(container, versions, voteData = null) {
             }
 
             const songId = btn.dataset.songId;
+            const arrSlug = btn.dataset.voteSlug || null;
             const hasVoted = btn.classList.contains('voted');
             const countEl = btn.parentElement.querySelector('.vote-count');
 
             if (hasVoted) {
-                await SupabaseAuth.removeVote(songId);
+                await SupabaseAuth.removeVote(songId, arrSlug);
                 btn.classList.remove('voted');
                 if (countEl) countEl.textContent = Math.max(0, parseInt(countEl.textContent, 10) - 1);
             } else {
-                await SupabaseAuth.castVote(songId, groupId);
+                await SupabaseAuth.castVote(songId, groupId, 1, arrSlug);
                 btn.classList.add('voted');
                 if (countEl) countEl.textContent = parseInt(countEl.textContent, 10) + 1;
             }
         });
     });
+}
+
+/**
+ * One row for a lead sheet of the CURRENT work (primary or fork).
+ *
+ * Every published take carries its own vote button: the primary votes under
+ * the work-level (null) key, so existing votes and existing behavior are
+ * untouched, and each fork votes under its own slug. A pending fork gets no
+ * button — nobody else can see it yet.
+ */
+function arrangementItemHtml(arr, voteCounts, userVotes) {
+    const isCurrent = arr.slug === activeArrangementSlug;
+    const label = arr.label || (arr.default ? 'Original' : 'Arrangement');
+    const meta = [];
+    if (arr.arrangement_by) meta.push(`Arr. ${arr.arrangement_by}`);
+    if (arr.key) meta.push(`Key: ${arr.key}`);
+    if (arr.chord_count) meta.push(`${arr.chord_count} chords`);
+    if (arr.pending) meta.push('not published yet');
+    const id = currentWork?.id;
+    const voteKey = arrangementVoteKey(arr);
+    const votes = voteCounts[voteKey] || 0;
+    const hasVoted = userVotes[voteKey] ? ' voted' : '';
+    const badges = `${arr.default === true ? ' <span class="canonical-badge">Default</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}`;
+    return `
+        <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-arr-slug="${escapeHtml(arr.slug)}" role="button" tabindex="0">
+            <span class="arrangement-info">
+                <span class="arrangement-label">${escapeHtml(label)}${badges}</span>
+                <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
+            </span>
+            <span class="arrangement-votes">${isVotable(arr) ? `
+                <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(id || '')}" data-vote-slug="${escapeHtml(voteKey)}" title="Vote for this arrangement">
+                    <span class="vote-arrow">▲</span>
+                </button>
+                <span class="vote-count">${votes}</span>` : ''}
+            </span>
+        </div>
+    `;
+}
+
+/**
+ * The default-flip signal, displayed and nothing more.
+ *
+ * Deliberately NOT a review_requests row: that queue is the DESTRUCTIVE
+ * residue (delete / suppress / merge-redirect) and its approvals only record
+ * a decision anyway. Promoting an arrangement is an ordinary repo edit, so the
+ * lighter honest move is to show the imbalance where the votes are, and tell a
+ * trusted user which file makes it real.
+ */
+function defaultFlipNoticeHtml(signal) {
+    const trusted = !!workPageHooks.isTrusted?.();
+    const where = trusted && currentWork?.id
+        ? `<span class="arrangement-flip-where">Promote it in <code>works/${escapeHtml(currentWork.id)}/work.yaml</code>.</span>`
+        : '';
+    return `
+        <div class="pill-popover-note arrangement-flip-note">
+            <strong>${escapeHtml(signal.label)}</strong> is out-polling the default
+            ${signal.votes}–${signal.defaultVotes}. The default is editorial, so
+            votes don't change it on their own.${where ? ` ${where}` : ''}
+        </div>
+    `;
+}
+
+/** One row for another WORK in this version group. */
+function versionItemHtml(v, voteCounts, userVotes) {
+    const isCurrent = v.id === currentWork?.id;
+    const tabPart = v.tablature_parts?.[0];
+    let label = v.variant_label || v.version_label;
+    if (!label) {
+        if (v.tablature_parts?.length && !songHasContent(v) && tabPart?.author) {
+            label = `Tab by ${tabPart.author}`;
+        } else if (songHasAbc(v) && !songHasContent(v)) {
+            label = 'Fiddle notation';
+        } else if (v.key) {
+            label = `Key of ${v.key}`;
+        } else {
+            label = 'Original';
+        }
+    }
+    const meta = [];
+    if (v.artist && v.artist !== currentWork?.artist) meta.push(v.artist);
+    if (v.key) meta.push(`Key: ${v.key}`);
+    if (v.chord_count) meta.push(`${v.chord_count} chords`);
+    const votes = voteCounts[v.id] || 0;
+    const hasVoted = userVotes[v.id] ? ' voted' : '';
+    return `
+        <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-song-id="${escapeHtml(v.id)}" role="button" tabindex="0">
+            <span class="arrangement-info">
+                <span class="arrangement-label">${escapeHtml(label)}${v.canonical === true ? ' <span class="canonical-badge">Canonical</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}</span>
+                <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
+            </span>
+            <span class="arrangement-votes">
+                <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(v.id)}" title="Vote for this arrangement">
+                    <span class="vote-arrow">▲</span>
+                </button>
+                <span class="vote-count">${votes}</span>
+            </span>
+        </div>
+    `;
 }
 
 // ============================================
@@ -1041,9 +1297,17 @@ let prefSubscriptionsRegistered = false;
  * Wire main.js-owned behaviors into the unified song page and register the
  * display-preference subscriptions that re-render the lead-sheet body.
  * Called once from main.js init.
- *   onEdit(song) - open the song editor
- *   onDelete()   - admin delete flow
- *   isAdmin()    - current admin status (drives the Delete overflow item)
+ *   onEdit(song)   - open the song editor
+ *   onDelete()     - admin delete flow (instant)
+ *   onRequestDelete() - trusted-user delete REQUEST (queued for an admin)
+ *   onRequestSuppress() - trusted-user suppress REQUEST (queued for an admin)
+ *   onRequestMerge() - trusted-user merge-redirect REQUEST (queued for an admin)
+ *   isAdmin()      - current admin status (drives the Delete overflow item)
+ *   isTrusted()    - current trusted status (drives Promote + the three
+ *                    review-queue REQUEST items; suppress/merge have no
+ *                    instant admin path, so they show whenever isTrusted())
+ *   onPromote()    - promote/unpromote the viewed archived song
+ *   isPromoted(id) - promoted this session (flips the item to Undo)
  */
 export function configureWorkPage(hooks = {}) {
     workPageHooks = hooks;
@@ -1123,6 +1387,21 @@ export function updateWorkTopBar() {
         actions.push({ el: buildExportPill() });
     }
 
+    // Trusted users see Promote on archived (dungeon) songs — a visible
+    // band button on desktop, ⋯ overflow on phones (same diet as Export).
+    const promotedNow = workPageHooks.isPromoted?.(currentWork.id);
+    const showPromote = workPageHooks.isTrusted?.() &&
+        (promotedNow || currentWork.indexed === false);
+    if (showPromote && !phoneBand) {
+        actions.push({
+            id: 'promote-song-btn',
+            label: promotedNow ? 'Undo promote' : 'Promote',
+            icon: promotedNow ? '↩️' : '⬆️',
+            title: promotedNow ? 'Undo promotion' : 'Promote this song into the songbook',
+            onClick: () => workPageHooks.onPromote?.(),
+        });
+    }
+
     const overflow = [
         { id: 'flag-btn', label: '🚩 Report issue', onClick: () => openFlagModal(currentWork) },
     ];
@@ -1140,11 +1419,47 @@ export function updateWorkTopBar() {
             onClick: () => openNotesSheet(listContext.listId, currentWork.id, currentWork.title),
         });
     }
-    if (workPageHooks.isAdmin?.()) {
+    if (showPromote && phoneBand) {
+        overflow.push({
+            id: 'promote-song-btn',
+            label: promotedNow ? '↩️ Undo promote' : '⬆️ Promote to songbook',
+            onClick: () => workPageHooks.onPromote?.(),
+        });
+    }
+    // One slot, two meanings: admins delete on the spot, trusted users ask.
+    // Deletion is the destructive residue phase 2d keeps reviewed — the rule
+    // itself lives in review-queue.js so the queue and the button agree.
+    const affordance = deleteAffordance({
+        isAdmin: workPageHooks.isAdmin?.(),
+        isTrusted: workPageHooks.isTrusted?.(),
+    });
+    if (affordance === 'instant') {
         overflow.push({
             id: 'delete-song-btn',
             label: '🗑️ Delete song',
             onClick: () => workPageHooks.onDelete?.(),
+        });
+    } else if (affordance === 'request') {
+        overflow.push({
+            id: 'request-delete-song-btn',
+            label: '🗑️ Request deletion',
+            onClick: () => workPageHooks.onRequestDelete?.(),
+        });
+    }
+
+    // Suppress and merge-redirect have no instant path even for admins —
+    // approving either only prints a local command (review-queue.js) — so
+    // both are offered as requests to any trusted user, admin or not.
+    if (workPageHooks.isTrusted?.()) {
+        overflow.push({
+            id: 'request-suppress-song-btn',
+            label: '🙈 Request suppression',
+            onClick: () => workPageHooks.onRequestSuppress?.(),
+        });
+        overflow.push({
+            id: 'request-merge-song-btn',
+            label: '🔀 Request merge into another song…',
+            onClick: () => workPageHooks.onRequestMerge?.(),
         });
     }
 
@@ -1215,12 +1530,20 @@ function renderBountySection() {
         <div class="work-bounty-body" id="work-bounty-body">
             ${bountyCards || '<div class="work-bounty-empty">No specific requests yet.</div>'}
             <button class="work-bounty-request-btn" id="work-bounty-request-btn">+ Request a part</button>
+            <button class="work-bounty-request-btn" id="work-bounty-add-tab-btn">+ Add a tab</button>
         </div>
     `;
 
-    // Wire contribute buttons
+    // Wire contribute buttons. A tablature bounty is the one request the
+    // add-song picker can't fulfil — it wants a tab, so it opens the tab
+    // editor in create mode, pre-targeted at this work and instrument.
     section.querySelectorAll('.work-bounty-contribute').forEach(btn => {
         btn.addEventListener('click', () => {
+            const card = btn.closest('.work-bounty-card');
+            if (card?.dataset.bountyType === 'tablature') {
+                startTabContribution(section, card.dataset.bountyInstrument || '');
+                return;
+            }
             if (!requireLogin('contribute')) return;
             openAddSongPicker({
                 mode: 'contribute',
@@ -1232,6 +1555,11 @@ function renderBountySection() {
         });
     });
 
+    // Add a tab, unprompted — no bounty needed
+    section.querySelector('#work-bounty-add-tab-btn')?.addEventListener('click', () => {
+        startTabContribution(section, '');
+    });
+
     // Wire request button
     section.querySelector('#work-bounty-request-btn')?.addEventListener('click', () => {
         if (!requireLogin('request parts')) return;
@@ -1239,6 +1567,81 @@ function renderBountySection() {
     });
 
     return section;
+}
+
+/**
+ * "Add a tab" / a tablature bounty's Contribute — with the offramp FIRST.
+ *
+ * If this work already has tabs for the instrument, the choice is offered
+ * here, on the page the contributor is already looking at: read one, add
+ * theirs alongside, or improve one. Only when there's nothing to collide
+ * with does the click go straight to the editor as before. This is
+ * contract principle 4 — the offramp is a choice offered early, never a
+ * 409 discovered after the work is done.
+ */
+function startTabContribution(section, instrument) {
+    if (!currentWork) return;
+    const plan = tabEntryPlan(currentWork, instrument, { title: currentWork.title });
+
+    if (plan.kind !== 'existing') {
+        launchTabCreator({           // gates on login itself
+            workId: currentWork.id, instrument, title: currentWork.title,
+        });
+        return;
+    }
+
+    const body = section.querySelector('#work-bounty-body');
+    if (!body) return;
+    body.querySelector('.tab-existing-panel')?.remove();
+    body.appendChild(renderExistingTabsPanel(plan, {
+        onAdd: () => launchTabCreator({
+            workId: currentWork.id, instrument, title: currentWork.title,
+            existingCount: plan.count,
+        }),
+        onView: (tab) => openTabPart(tab.file, { edit: false }),
+        onImprove: (tab) => openTabPart(tab.file, { edit: true }),
+        onBack: () => body.querySelector('.tab-existing-panel')?.remove(),
+    }));
+}
+
+/**
+ * A tab the reader asked for by file: select its instrument's part, point
+ * that part at this arrangement, and (for "improve") drop straight into
+ * the existing tab-correction editor once it renders.
+ *
+ * The edit intent is parked rather than executed because the OTF has to
+ * be fetched first — renderTablaturePart honors it at the end of a
+ * successful render, which is also the only place the document exists.
+ */
+function openTabPart(file, { edit = false } = {}) {
+    const part = availableParts.find(p => p.type === 'tablature' &&
+        (p.arrangements || []).some(a => a.file === file));
+    if (!part) return false;
+
+    if (edit) pendingTabEdit = { workId: currentWork?.id, file };
+
+    if (part !== activePart) {
+        selectPart(part);   // renders the part (and applies the intent)
+        return true;
+    }
+    // Already the active part: re-render it on the requested arrangement.
+    const idx = part.arrangements.findIndex(a => a.file === file);
+    applyArrangement(part, idx);
+    const content = document.getElementById('work-part-content');
+    if (content) {
+        content.innerHTML = '';
+        renderTablaturePart(part, content);
+    }
+    return true;
+}
+
+/**
+ * Ask the work page to open a specific tab file in edit mode. Used by the
+ * add-song picker's "Improve an existing tab" choice, which has to
+ * navigate to the work page before the editor can mount over the tab.
+ */
+export function requestTabEdit(workId, file) {
+    pendingTabEdit = workId && file ? { workId, file } : null;
 }
 
 /**
@@ -1340,11 +1743,9 @@ function showPlaceholderEditor() {
         `<option value="${k}" ${k === (currentWork.key || '') ? 'selected' : ''}>${k}</option>`
     ).join('');
 
-    // Current document info
-    const existingDoc = currentWork.document_parts?.[0];
-    const pendingDoc = window.__pendingDocuments?.[currentWork.id];
-    const hasDoc = !!(existingDoc || pendingDoc);
-    const docLabel = existingDoc?.label || pendingDoc?.label || '';
+    // Document upload died with phase 2d: the intake staged files nothing
+    // ever read. Documents already attached to a work still render on the
+    // song page (renderDocumentPart) — this editor just can't add more.
 
     form.innerHTML = `
         <div class="placeholder-editor-header">
@@ -1370,26 +1771,6 @@ function showPlaceholderEditor() {
                 <label for="ph-edit-notes">Notes</label>
                 <textarea id="ph-edit-notes" rows="3">${escapeHtml(currentWork.notes || '')}</textarea>
             </div>
-            <div class="placeholder-editor-field">
-                <label>Document</label>
-                <div class="ph-edit-doc-section">
-                    ${hasDoc
-                        ? `<div class="ph-edit-doc-current">
-                               <span class="ph-edit-doc-icon">📎</span>
-                               <span class="ph-edit-doc-label">${escapeHtml(docLabel)}</span>
-                               <span class="ph-edit-doc-badge">PDF</span>
-                           </div>`
-                        : '<div class="ph-edit-doc-empty">No document attached</div>'
-                    }
-                    <div class="ph-edit-doc-picker">
-                        <input type="file" id="ph-edit-doc-file" accept=".jpg,.jpeg,.png,.heic,.webp,.pdf" class="hidden" />
-                        <button type="button" id="ph-edit-doc-btn" class="ph-edit-doc-upload-btn">
-                            ${hasDoc ? 'Replace document' : 'Add document'}
-                        </button>
-                        <div id="ph-edit-doc-info" class="ph-edit-doc-info hidden"></div>
-                    </div>
-                </div>
-            </div>
             <div class="placeholder-editor-actions">
                 <button class="placeholder-editor-save" id="ph-edit-save">Save</button>
                 <button class="placeholder-editor-cancel" id="ph-edit-cancel">Cancel</button>
@@ -1399,45 +1780,6 @@ function showPlaceholderEditor() {
     `;
 
     container.appendChild(form);
-
-    // Document file picker state
-    let newDocFile = null;
-
-    const docFileInput = form.querySelector('#ph-edit-doc-file');
-    const docBtn = form.querySelector('#ph-edit-doc-btn');
-    const docInfo = form.querySelector('#ph-edit-doc-info');
-
-    docBtn.addEventListener('click', () => docFileInput.click());
-
-    docFileInput.addEventListener('change', (e) => {
-        const file = e.target.files?.[0];
-        if (!file) return;
-
-        const MAX_SIZE = 10 * 1024 * 1024;
-        if (file.size > MAX_SIZE) {
-            docInfo.textContent = `File too large (${(file.size / 1024 / 1024).toFixed(1)}MB). Max 10MB.`;
-            docInfo.className = 'ph-edit-doc-info error';
-            docInfo.classList.remove('hidden');
-            return;
-        }
-
-        newDocFile = file;
-        docInfo.innerHTML = `
-            <span class="ph-edit-doc-filename">${escapeHtml(file.name)}</span>
-            <span class="ph-edit-doc-size">(${(file.size / 1024).toFixed(0)} KB)</span>
-            <button type="button" class="ph-edit-doc-remove" title="Remove">&times;</button>
-        `;
-        docInfo.className = 'ph-edit-doc-info';
-        docInfo.classList.remove('hidden');
-        docBtn.textContent = 'Change file';
-
-        docInfo.querySelector('.ph-edit-doc-remove')?.addEventListener('click', () => {
-            newDocFile = null;
-            docFileInput.value = '';
-            docInfo.classList.add('hidden');
-            docBtn.textContent = hasDoc ? 'Replace document' : 'Add document';
-        });
-    });
 
     // Cancel: re-render dashboard
     form.querySelector('#ph-edit-cancel').addEventListener('click', () => {
@@ -1460,25 +1802,13 @@ function showPlaceholderEditor() {
         }
 
         saveBtn.disabled = true;
-        statusDiv.textContent = newDocFile ? 'Uploading document...' : 'Saving...';
+        statusDiv.textContent = 'Saving...';
         statusDiv.className = 'placeholder-editor-status';
 
         try {
-            const isTrusted = await window.SupabaseAuth?.isTrustedUser?.();
-
-            if (isTrusted) {
-                await savePlaceholderMetadataTrusted({ title, artist, key, notes });
-                if (newDocFile) {
-                    statusDiv.textContent = 'Uploading document...';
-                    await uploadPlaceholderDocument(newDocFile, title);
-                }
-            } else {
-                await savePlaceholderMetadataIssue({ title, artist, key, notes });
-                if (newDocFile) {
-                    statusDiv.textContent = 'Uploading document...';
-                    await uploadPlaceholderDocumentRegular(newDocFile, title);
-                }
-            }
+            // Metadata edits take the one pipeline (phase 2b): any logged-in
+            // user writes pending_songs and it goes live.
+            await savePlaceholderMetadata({ title, artist, key, notes });
 
             statusDiv.innerHTML = '<span style="color: var(--success)">Saved!</span>';
 
@@ -1497,9 +1827,10 @@ function showPlaceholderEditor() {
 }
 
 /**
- * Save placeholder metadata as trusted user via Supabase pending_songs.
+ * Save placeholder metadata via Supabase pending_songs — live immediately,
+ * durable when the pending-commit dispatch lands it in works/.
  */
-async function savePlaceholderMetadataTrusted({ title, artist, key, notes }) {
+async function savePlaceholderMetadata({ title, artist, key, notes }) {
     const supabase = window.SupabaseAuth?.supabase;
     if (!supabase) throw new Error('Not connected to database');
 
@@ -1537,204 +1868,6 @@ async function savePlaceholderMetadataTrusted({ title, artist, key, notes }) {
     }
 }
 
-/**
- * Save placeholder metadata as regular user via GitHub issue.
- */
-async function savePlaceholderMetadataIssue({ title, artist, key, notes }) {
-    const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
-    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
-
-    const user = window.SupabaseAuth?.getUser?.();
-    const submitter = user?.user_metadata?.full_name || user?.email || 'Anonymous User';
-
-    const body = [
-        `**Work ID:** ${currentWork.id}`,
-        `**Current Title:** ${currentWork.title}`,
-        `**Proposed Title:** ${title}`,
-        artist !== currentWork.artist ? `**Proposed Artist:** ${artist}` : '',
-        key !== currentWork.key ? `**Proposed Key:** ${key}` : '',
-        notes !== currentWork.notes ? `**Proposed Notes:** ${notes}` : '',
-        '',
-        `Submitted by: ${submitter}`,
-    ].filter(Boolean).join('\n');
-
-    const response = await fetch(`${SUPABASE_URL}/functions/v1/create-song-issue`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-            'apikey': SUPABASE_ANON_KEY,
-        },
-        body: JSON.stringify({
-            type: 'correction',
-            title: `Update placeholder metadata: ${title}`,
-            songId: currentWork.id,
-            chordpro: `{meta: title ${title}}\n{meta: artist ${artist}}\n{key: ${key}}\n`,
-            comment: `Placeholder metadata update:\n${body}`,
-            submittedBy: submitter,
-        }),
-    });
-
-    const result = await response.json();
-    if (!response.ok || !result.success) {
-        throw new Error(result.error || 'Failed to submit');
-    }
-}
-
-/**
- * Convert an image file to PDF bytes using pdf-lib (lazy-loaded).
- */
-async function imageToPdfBlob(imageFile) {
-    // Lazy-load pdf-lib
-    if (!window.PDFLib) {
-        await new Promise((resolve, reject) => {
-            const script = document.createElement('script');
-            script.src = 'https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js';
-            script.onload = resolve;
-            script.onerror = () => reject(new Error('Failed to load pdf-lib'));
-            document.head.appendChild(script);
-        });
-    }
-    const PDFLib = window.PDFLib;
-    const pdfDoc = await PDFLib.PDFDocument.create();
-
-    const arrayBuffer = await imageFile.arrayBuffer();
-    const bytes = new Uint8Array(arrayBuffer);
-
-    let image;
-    if (imageFile.type === 'image/png') {
-        image = await pdfDoc.embedPng(bytes);
-    } else {
-        // Convert to JPEG via canvas
-        const jpegBytes = await new Promise((resolve, reject) => {
-            const img = new Image();
-            const url = URL.createObjectURL(imageFile);
-            img.onload = () => {
-                const canvas = document.createElement('canvas');
-                canvas.width = img.naturalWidth;
-                canvas.height = img.naturalHeight;
-                canvas.getContext('2d').drawImage(img, 0, 0);
-                canvas.toBlob(
-                    (blob) => { URL.revokeObjectURL(url); blob ? blob.arrayBuffer().then(buf => resolve(new Uint8Array(buf))) : reject(new Error('Canvas to blob failed')); },
-                    'image/jpeg', 0.92
-                );
-            };
-            img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Failed to load image')); };
-            img.src = url;
-        });
-        image = await pdfDoc.embedJpg(jpegBytes);
-    }
-
-    const maxW = 612, maxH = 792;
-    let { width, height } = image.scale(1);
-    if (width > maxW || height > maxH) {
-        const scale = Math.min(maxW / width, maxH / height);
-        width *= scale;
-        height *= scale;
-    }
-    const page = pdfDoc.addPage([width, height]);
-    page.drawImage(image, { x: 0, y: 0, width, height });
-
-    const pdfBytes = await pdfDoc.save();
-    return new Blob([pdfBytes], { type: 'application/pdf' });
-}
-
-/**
- * Upload a document for a placeholder (trusted user flow).
- */
-async function uploadPlaceholderDocument(file, label) {
-    const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
-    const supabase = window.SupabaseAuth?.supabase;
-    if (!supabase) throw new Error('Not connected to database');
-
-    const { data: { session } } = await supabase.auth.getSession();
-    if (!session) throw new Error('Not logged in');
-
-    // Convert images to PDF
-    let pdfBlob = file;
-    if (file.type !== 'application/pdf') {
-        pdfBlob = await imageToPdfBlob(file);
-    }
-
-    const arrayBuffer = await pdfBlob.arrayBuffer();
-    const base64 = btoa(new Uint8Array(arrayBuffer).reduce((s, b) => s + String.fromCharCode(b), ''));
-
-    const filename = file.type === 'application/pdf'
-        ? file.name.replace(/[^a-zA-Z0-9._-]/g, '-')
-        : currentWork.id + '.pdf';
-
-    const resp = await fetch(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
-        method: 'POST',
-        headers: {
-            'Authorization': `Bearer ${session.access_token}`,
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            id: currentWork.id,
-            title: currentWork.title,
-            artist: currentWork.artist,
-            content: null,
-            create_placeholder: true,
-            key: currentWork.key || null,
-            attachment: { filename, base64, label: label || currentWork.title },
-        }),
-    });
-
-    if (!resp.ok) {
-        const body = await resp.text();
-        console.warn('Auto-commit response:', body);
-    }
-
-    // Stash blob URL for immediate display
-    if (!window.__pendingDocuments) window.__pendingDocuments = {};
-    window.__pendingDocuments[currentWork.id] = {
-        url: URL.createObjectURL(pdfBlob),
-        label: label || currentWork.title,
-    };
-}
-
-/**
- * Upload a document for a placeholder (regular user flow — stages for review).
- */
-async function uploadPlaceholderDocumentRegular(file, label) {
-    const supabase = window.SupabaseAuth?.supabase;
-    if (!supabase) throw new Error('Not connected to database');
-
-    const { data: { session } } = await supabase.auth.getSession();
-    if (!session) throw new Error('Not logged in');
-
-    // Convert images to PDF
-    let pdfBlob = file;
-    if (file.type !== 'application/pdf') {
-        pdfBlob = await imageToPdfBlob(file);
-    }
-
-    const filename = file.type === 'application/pdf'
-        ? file.name.replace(/[^a-zA-Z0-9._-]/g, '-')
-        : currentWork.id + '.pdf';
-
-    // Upload to staging bucket
-    const storagePath = `${session.user.id}/${currentWork.id}/${filename}`;
-    const { error: uploadError } = await supabase.storage
-        .from('doc-staging')
-        .upload(storagePath, pdfBlob, { contentType: 'application/pdf' });
-
-    if (uploadError) throw new Error(uploadError.message);
-
-    // Insert staging metadata
-    const { error: dbError } = await supabase
-        .from('doc_staging')
-        .insert({
-            user_id: session.user.id,
-            work_id: currentWork.id,
-            storage_path: storagePath,
-            label: label || currentWork.title,
-            file_size: pdfBlob.size,
-        });
-
-    if (dbError) throw new Error(dbError.message);
-}
-
 // ============================================
 // PART RENDERERS (tablature + document; lead sheets render via
 // song-view.js renderLeadSheetContent)
@@ -1744,14 +1877,10 @@ function renderDocumentPart(part, container) {
     const downloadUrl = part.file;
     const label = escapeHtml(part.label || 'Document');
 
-    const pendingBanner = part.pending
-        ? `<div class="upload-processing-banner">
-            Your upload is saved! It may take a few minutes to appear for other users.
-           </div>`
-        : '';
-
+    // Documents are read-only shelf items: phase 2d removed the upload
+    // intake, so every document part here came from works/ at build time
+    // (there is no longer an "still processing" state to announce).
     container.innerHTML = `
-        ${pendingBanner}
         <div class="document-viewer">
             <div class="document-toolbar">
                 <span class="document-label">${label}</span>
@@ -1769,6 +1898,15 @@ function renderDocumentPart(part, container) {
  */
 async function renderTablaturePart(part, container) {
     container.innerHTML = '<div class="loading">Loading tablature...</div>';
+
+    // A parked "improve this tab" intent (from the picker's early offramp,
+    // or from this page's own panel) names an arrangement by file — point
+    // the part at it before anything is fetched.
+    if (pendingTabEdit && pendingTabEdit.workId === currentWork?.id) {
+        const idx = (part.arrangements || [])
+            .findIndex(a => a.file === pendingTabEdit.file);
+        if (idx >= 0) applyArrangement(part, idx);
+    }
 
     try {
         // Load OTF data. cache: 'no-cache' = revalidate with the server
@@ -2002,6 +2140,14 @@ async function renderTablaturePart(part, container) {
             container.appendChild(attribution);
         }
 
+        // The parked "improve this one" intent: the document only exists
+        // here, so this is the one place the editor can be handed it.
+        if (pendingTabEdit && pendingTabEdit.workId === currentWork?.id &&
+            pendingTabEdit.file === part.file) {
+            pendingTabEdit = null;
+            enterTabEditMode(otf, part, container);
+        }
+
     } catch (e) {
         console.error('Error loading tablature:', e);
         container.innerHTML = `<div class="error">Failed to load tablature: ${escapeHtml(e.message)}</div>`;
@@ -2052,16 +2198,27 @@ async function enterTabEditMode(otf, part, container) {
             activeEditSession = null;
             renderTablaturePart(part, container);
         },
-        // Save-back: same human-approved GitHub-issue pipeline as song
-        // corrections — the editor's payoff beyond Download
-        onSubmit: (doc, comment) => submitTab({
-            type: 'tab-correction',
-            otf: doc,
-            title: currentWork?.title || doc.metadata?.title || 'Untitled',
-            instrument: part.instrument || 'banjo',
-            workId: currentWork?.id,
-            comment,
-        }),
+        // Save-back: same human-approved GitHub pipeline as song
+        // corrections — the editor's payoff beyond Download.
+        // Login gate lands here, at submit time: editing (and Download)
+        // stay open to everyone; only the submission needs an identity.
+        onSubmit: (doc, comment) => {
+            if (!requireLogin('submit tab corrections')) {
+                throw new Error('Sign in to submit — opening sign-in…');
+            }
+            return submitTab({
+                type: 'tab-correction',
+                otf: doc,
+                title: currentWork?.title || doc.metadata?.title || 'Untitled',
+                instrument: part.instrument || 'banjo',
+                // WHICH take is being corrected. A work can carry several
+                // arrangements per instrument, so the instrument alone
+                // names the wrong file for every one but the first.
+                file: part.src_file || undefined,
+                workId: currentWork?.id,
+                comment,
+            });
+        },
     });
 }
 
@@ -2349,18 +2506,28 @@ function setupTablaturePlayer(otf, controls, renderer) {
         playBtn.textContent = '⏸ Pause';
         playBtn.classList.add('playing');
         stopBtn.disabled = false;
-        await player.play(otf, {
-            // Player tempo is quarter-note bpm; the displayed number is
-            // per-beat of the feel, so two feel plays twice as fast.
-            tempo: currentTempo * (twoFeelMode ? 2 : 1),
-            transpose: currentCapo,
-            trackIds: getEnabledTrackIds(),
-            feel: twoFeelMode ? 'two' : null,
-            // Whole-song loop checkbox. A phrase-loop (drag) passes its own
-            // loop:true + range via `extra`, which overrides this.
-            loop: !!loopCheckbox?.checked,
-            ...extra,
-        });
+        try {
+            await player.play(otf, {
+                // Player tempo is quarter-note bpm; the displayed number is
+                // per-beat of the feel, so two feel plays twice as fast.
+                tempo: currentTempo * (twoFeelMode ? 2 : 1),
+                transpose: currentCapo,
+                trackIds: getEnabledTrackIds(),
+                feel: twoFeelMode ? 'two' : null,
+                // Whole-song loop checkbox. A phrase-loop (drag) passes its own
+                // loop:true + range via `extra`, which overrides this.
+                loop: !!loopCheckbox?.checked,
+                ...extra,
+            });
+        } catch (err) {
+            // Blocked audio context, dead soundfont CDN, decode timeout —
+            // say so out loud instead of leaving a Pause button that never
+            // advances.
+            console.error('Tab playback failed:', err);
+            player.stop();
+            showToast(err?.message || 'Could not start playback.',
+                { variant: 'warning', duration: 5000 });
+        }
         // play() can bail (superseded by a newer call, audio context
         // blocked) — reconcile the optimistic button with reality
         if (!player.isPlaying) {
@@ -2473,6 +2640,9 @@ function setupTablaturePlayer(otf, controls, renderer) {
 
     // Play/stop
     playBtn.addEventListener('click', async () => {
+        // FIRST, before any await: iOS only lets us open/resume the audio
+        // context inside the tap's own call stack (tab-player.unlockAudio).
+        player.unlockAudio();
         if (player.isPlaying) {
             player.stop();
             updatePlayLabel();

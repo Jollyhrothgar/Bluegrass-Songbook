@@ -37,9 +37,11 @@ OTF JSON
     ↓ expandNotationWithReadingList()
 Expanded notation (repeats applied)
     ↓ render()
-SVG rows (one per measure)
-    ↓ renderMeasure()
+SVG rows (several measures per row — `measuresPerRow`, 'auto' by default)
+    ↓ renderRow() → per-measure geometry
 Note positions, fret numbers, articulations
+    ↓ renderSlurs() (row-scoped, after all measures in the row are laid out)
+Slur/tie arcs, including across barlines
 ```
 
 ### Articulations
@@ -48,12 +50,24 @@ The renderer shows these articulation marks:
 
 | Articulation | Symbol | Rendered As |
 |--------------|--------|-------------|
-| Hammer-on | `h` | Slur arc above + "h" |
-| Pull-off | `p` | Slur arc above + "p" |
-| Slide | `/` or `\` | Slur arc + "/" or "\" |
-| Tie | `~` | Bracket notation `[7]` |
+| Hammer-on | `h` | Slur arc above + "H" |
+| Pull-off | `p` | Slur arc above + "P" |
+| Slide | `/` | Slur arc + "sl" |
+| Bend/choke | `b` | Tilted arrow + "½", target fret bracketed `[7]` |
+| Tie | `tie: true` | Slur arc, continuation fret bracketed `[7]` |
 
-**Note**: Cross-measure ties use bracket notation because each measure is a separate SVG row.
+**Cross-barline arcs work.** A row holds several measures in ONE SVG
+(`measuresPerRow`), and `renderSlurs()` runs once per row after every measure
+in it is laid out — so ties AND techniques arc across barlines freely. The
+pairing is musical, not spatial: the source is the immediately preceding note
+on the same string, with no pixel-distance gate (a fixed cap used to eat any
+technique spanning a quarter note or more, and re-broke at every new layout
+width). Brackets are a *supplement* to the tie arc, not a substitute for it.
+
+**The remaining limitation is ROW boundaries**, not measure boundaries:
+`renderSlurs` only sees one row's notes, so a technique or tie whose source
+sits on the previous row gets no full arc. Ties draw an incoming half-arc from
+the margin (`.tie-arc-in`); techniques currently draw nothing.
 
 ### Multi-Track Support
 

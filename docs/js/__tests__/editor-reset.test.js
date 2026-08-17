@@ -170,6 +170,8 @@ describe('sequential edit sessions and reverse leak', () => {
         await enterEditMode(SONG_B);
         expect(editMode).toBe(true);
         expect(editingSongId).toBe('blue-moon-of-kentucky');
-        expect(refs.editorSubmitBtn.textContent).toBe('Submit Correction');
+        // SONG_B carries no submitter, so the client treats it as somebody
+        // else's chart: the button says so before the user commits to it.
+        expect(refs.editorSubmitBtn.textContent).toBe('Save as My Arrangement');
     });
 });

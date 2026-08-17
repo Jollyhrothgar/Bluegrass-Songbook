@@ -1,9 +1,20 @@
-// Supabase Edge Function to create placeholder song requests
-// Requires authenticated user. Inserts pending_songs row + submission_log entry.
-// Trusted users also get an auto-commit to GitHub.
+// Supabase Edge Function to create song requests.
+//
+// Two branches (Phase 2a — "request a song" is anonymous-capable):
+//
+//   Signed in  → placeholder: pending_songs row (visible instantly, owned by
+//                the requester) + submission_log; trusted users also get the
+//                work.yaml auto-commit.
+//   Anonymous  → a plain GitHub issue labelled `tune-request`. A placeholder
+//                mints a corpus slug the requester "owns" and would later go
+//                looking for, which the contract puts behind login; an
+//                anonymous request is a report, so it stays report-shaped and
+//                a confirmation toast is the complete experience.
+//
+// Identity, when present, is derived SERVER-SIDE from the verified session.
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2"
+import { attributionFor, callerIp, optionalUser, rateLimited } from "../_shared/identity.ts"
 
 const GITHUB_REPO = "Jollyhrothgar/Bluegrass-Songbook"
 
@@ -88,31 +99,17 @@ serve(async (req) => {
   }
 
   try {
-    const supabaseUrl = Deno.env.get('SUPABASE_URL')
-    const supabaseServiceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')
     const githubToken = Deno.env.get('GITHUB_PAT')
 
-    if (!supabaseUrl || !supabaseServiceKey) {
-      throw new Error('Supabase credentials not configured')
-    }
+    // Anonymous is allowed here; a valid session supplies identity.
+    const { user, admin: supabaseAdmin } = await optionalUser(req)
+    const ip = callerIp(req)
 
-    // Require authentication
-    const authHeader = req.headers.get('Authorization')
-    if (!authHeader) {
+    const limitKey = user ? `song-request:user:${user.id}` : `song-request:ip:${ip}`
+    if (rateLimited(limitKey, { max: user ? 20 : 5 })) {
       return new Response(
-        JSON.stringify({ error: 'Authentication required' }),
-        { status: 401, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-      )
-    }
-
-    const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey)
-    const token = authHeader.replace('Bearer ', '')
-    const { data: { user }, error: authError } = await supabaseAdmin.auth.getUser(token)
-
-    if (authError || !user) {
-      return new Response(
-        JSON.stringify({ error: 'Invalid or expired token' }),
-        { status: 401, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        JSON.stringify({ error: 'Too many requests — try again later' }),
+        { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
       )
     }
 
@@ -123,6 +120,74 @@ serve(async (req) => {
       return new Response(
         JSON.stringify({ error: 'Title and ID are required' }),
         { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+    if (!/^[a-z0-9-]+$/.test(entry.id) || entry.id.length > 120) {
+      return new Response(
+        JSON.stringify({ error: 'Bad request id' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+    if (entry.title.length > 200 || (entry.notes && entry.notes.length > 5_000)) {
+      return new Response(
+        JSON.stringify({ error: 'Request too long' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+
+    // Anonymous branch: report-shaped, no corpus placeholder
+    if (!user) {
+      if (!githubToken) throw new Error('GITHUB_PAT not configured')
+
+      const issueBody = `## Song Request
+
+**Title:** ${entry.title}
+**Artist:** ${entry.artist || 'Unknown'}
+**Key:** ${entry.key || 'Unspecified'}
+**Requested by:** ${attributionFor(null)}
+${entry.notes ? `\n### Notes\n${entry.notes}\n` : ''}
+---
+*Requested via the Bluegrass Songbook song-request form (no account).*`
+
+      const ghResp = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/issues`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `token ${githubToken}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+          'User-Agent': 'Bluegrass-Songbook-Bot',
+        },
+        body: JSON.stringify({
+          title: `Song request: ${entry.title}`,
+          body: issueBody,
+          labels: ['tune-request'],
+        }),
+      })
+
+      if (!ghResp.ok) {
+        console.error('GitHub API error:', ghResp.status, await ghResp.text())
+        throw new Error(`GitHub API error: ${ghResp.status}`)
+      }
+      const issue = await ghResp.json()
+
+      await supabaseAdmin.from('submission_log').insert({
+        user_id: null,
+        action: 'song_request',
+        target_id: entry.id,
+        ip_address: ip === 'unknown' ? null : ip,
+        user_agent: req.headers.get('user-agent') || null,
+        metadata: { title: entry.title, issue_number: issue.number, anonymous: true },
+      })
+
+      return new Response(
+        JSON.stringify({
+          success: true,
+          id: entry.id,
+          mode: 'issue',
+          issueNumber: issue.number,
+          issueUrl: issue.html_url,
+        }),
+        { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
       )
     }
 
@@ -182,7 +247,7 @@ serve(async (req) => {
     })
 
     return new Response(
-      JSON.stringify({ success: true, id: entry.id, committed: !!trustedUser }),
+      JSON.stringify({ success: true, id: entry.id, mode: 'placeholder', committed: !!trustedUser }),
       { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     )
 

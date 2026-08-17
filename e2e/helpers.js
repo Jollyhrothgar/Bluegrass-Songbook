@@ -10,12 +10,15 @@
 // (#key-pill, #display-pill, #info-pill, #arrangement-pill) and .part-tabs.
 import { expect } from '@playwright/test';
 
-/** Go to the search view and wait until the index has loaded (the
- *  post-load render would stomp any navigation done before it). */
+/** Go to the search view and wait until the index has loaded.
+ *
+ *  The count must be NONZERO: the search view paints "0 songs" whenever it
+ *  renders against an empty corpus, so a bare 'songs' match let tests sail
+ *  past a still-loading boot and race whatever the boot tail does next. */
 export async function gotoSearch(page) {
     await page.goto('/#search');
     await page.waitForSelector('#search-input');
-    await expect(page.locator('#search-stats')).toContainText('songs', { timeout: 20000 });
+    await expect(page.locator('#search-stats')).toContainText(/[1-9][\d,]*\s+songs/, { timeout: 20000 });
 }
 
 /** Type a query (fires input events) and wait for results. */

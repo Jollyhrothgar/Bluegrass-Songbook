@@ -1,0 +1,15 @@
+id: i-can-read-between-the-lines-in-your-letters
+title: I Can Read Between The Lines In Your Letters
+artist: The Price Sisters
+default_key: A
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: manual
+    submitted_by: github:Jollyhrothgar
+    submitted_at: '2026-08-15'
+    github_issue: 209

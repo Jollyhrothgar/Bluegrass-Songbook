@@ -16,6 +16,10 @@
 const contentCache = new Map();
 /** id -> in-flight promise (dedupes concurrent asks for the same work) */
 const inFlight = new Map();
+/** url -> resolved text / in-flight promise, for forked arrangements
+ *  (data/songs/{id}--{slug}.pro), which are addressed by file not by id */
+const urlCache = new Map();
+const urlInFlight = new Map();
 
 /** Where a work's ChordPro lives. */
 export function songContentUrl(id) {
@@ -101,6 +105,71 @@ export function getSongContent(song) {
     return promise;
 }
 
+/** Fetch a .pro by URL, cached and deduped like getSongContent. */
+function fetchByUrl(url) {
+    if (urlCache.has(url)) return Promise.resolve(urlCache.get(url));
+    if (urlInFlight.has(url)) return urlInFlight.get(url);
+
+    const promise = fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Could not load song content (HTTP ${response.status})`);
+            }
+            return response.text();
+        })
+        .then(text => {
+            urlCache.set(url, text);
+            urlInFlight.delete(url);
+            return text;
+        })
+        .catch(error => {
+            urlInFlight.delete(url);
+            throw error;
+        });
+
+    urlInFlight.set(url, promise);
+    return promise;
+}
+
+/**
+ * ChordPro for one arrangement of a work — the primary chart or a fork that
+ * lives on the same work (`arrangements[]` on the index row).
+ *
+ * Resolution order, and why: an entry that carries its own text (a pending
+ * submission not yet published) IS the answer; otherwise the entry's file is
+ * fetched; a shapeless entry falls back to the work's own lead sheet.
+ * Fetching the PRIMARY also seeds the id-keyed cache, so peekSongContent and
+ * everything else that asks by id keeps working on the fast path.
+ */
+export function getArrangementContent(song, arrangement) {
+    if (!arrangement) return getSongContent(song);
+    if (typeof arrangement.content === 'string') {
+        return Promise.resolve(arrangement.content);
+    }
+    if (!arrangement.file) return getSongContent(song);
+    return fetchByUrl(arrangement.file).then(text => {
+        if (arrangement.default && song?.id && !hasInlineContent(song)) {
+            contentCache.set(song.id, text);
+        }
+        return text;
+    });
+}
+
+/** Arrangement text already in hand (or null) — the sync sibling. */
+export function peekArrangementContent(song, arrangement) {
+    if (!arrangement) return peekSongContent(song);
+    if (typeof arrangement.content === 'string') return arrangement.content;
+    // Mirrors getArrangementContent's order exactly: an entry with a file is
+    // answered by that file and nothing else. Falling back to the row's own
+    // `content` here would hand back a PENDING fork's text when the reader
+    // asked for the published original it forked from.
+    if (arrangement.file) {
+        return urlCache.has(arrangement.file)
+            ? urlCache.get(arrangement.file) : null;
+    }
+    return peekSongContent(song);
+}
+
 /**
  * Fetch content for several works at once (print-a-list, exports).
  * Failures degrade to '' — one unreachable song must not kill the batch.
@@ -118,6 +187,9 @@ export function getSongContents(songs) {
 export function primeSongContent(id, content) {
     if (!id || typeof content !== 'string') return;
     contentCache.set(id, content);
+    // Same text, either door: the primary arrangement addresses this work by
+    // file, so a primed edit must be visible there too.
+    urlCache.set(songContentUrl(id), content);
 }
 
 /** Drop cached content (tests, and after a destructive edit). */
@@ -125,8 +197,12 @@ export function clearSongContentCache(id = null) {
     if (id === null) {
         contentCache.clear();
         inFlight.clear();
+        urlCache.clear();
+        urlInFlight.clear();
         return;
     }
     contentCache.delete(id);
     inFlight.delete(id);
+    urlCache.delete(songContentUrl(id));
+    urlInFlight.delete(songContentUrl(id));
 }

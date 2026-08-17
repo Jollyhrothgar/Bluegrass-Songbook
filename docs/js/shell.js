@@ -10,6 +10,7 @@ import { escapeHtml } from './utils.js';
 
 let topbarEl = null;
 let bottomBandEl = null;
+let bannerEl = null;
 let actionsEl = null;
 let titleEl = null;
 let backBtn = null;
@@ -33,6 +34,7 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
             <button id="topbar-back" class="topbar-back hidden" title="Back">&larr;</button>
             <a href="#" id="topbar-brand" class="topbar-brand" title="Home">
                 <img src="images/new_bb_logo.svg" alt="Bluegrass Book">
+                <img src="images/earl_zombie_face.png" class="brand-dungeon-face" alt="" aria-hidden="true">
             </a>
             <nav class="topbar-nav"></nav>
         </div>
@@ -48,6 +50,11 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
         </div>
     `;
     document.body.prepend(topbarEl);
+
+    bannerEl = document.createElement('div');
+    bannerEl.id = 'app-banner';
+    bannerEl.className = 'app-banner hidden';
+    topbarEl.insertAdjacentElement('afterend', bannerEl);
 
     bottomBandEl = document.createElement('div');
     bottomBandEl.id = 'app-bottomband';
@@ -192,6 +199,42 @@ export function setBottomBand(contentEl) {
         bottomBandEl.classList.add('hidden');
         document.body.classList.remove('has-bottomband');
     }
+}
+
+/**
+ * Pure: builds the banner's inner markup for a given message. No DOM, so
+ * it's unit-testable without mounting the shell. `retry: false` omits the
+ * retry button (a dismiss-only notice).
+ */
+export function bannerMarkup(message, { retry = true, retryLabel = 'Retry' } = {}) {
+    return `
+        <span class="app-banner-text">${escapeHtml(message)}</span>
+        <span class="app-banner-actions">
+            ${retry ? `<button type="button" class="app-banner-retry">${escapeHtml(retryLabel)}</button>` : ''}
+            <button type="button" class="app-banner-dismiss" aria-label="Dismiss">&times;</button>
+        </span>
+    `;
+}
+
+/**
+ * Show (or hide, with a falsy message) a dismissible, prominent notice bar
+ * below the top band. The shell owns no app state — callers (main.js)
+ * decide when to show it and supply the retry callback.
+ */
+export function setBanner(message, { onRetry, onDismiss, retryLabel = 'Retry' } = {}) {
+    if (!bannerEl) return;
+    if (!message) {
+        bannerEl.classList.add('hidden');
+        bannerEl.innerHTML = '';
+        return;
+    }
+    bannerEl.innerHTML = bannerMarkup(message, { retry: !!onRetry, retryLabel });
+    bannerEl.querySelector('.app-banner-retry')?.addEventListener('click', () => onRetry?.());
+    bannerEl.querySelector('.app-banner-dismiss').addEventListener('click', () => {
+        setBanner(null);
+        onDismiss?.();
+    });
+    bannerEl.classList.remove('hidden');
 }
 
 /**

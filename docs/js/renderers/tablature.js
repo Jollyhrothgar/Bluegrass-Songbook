@@ -1082,12 +1082,20 @@ export class TabRenderer {
 
                 const n1 = notes[i - 1];
                 const xDist = n2.x - n1.x;
-                // Techniques (h/p/slide) connect adjacent notes — keep the
-                // tight cap. TIES legitimately span barlines (a whole note
-                // entered mid-measure splits across it), so allow a full
-                // measure's reach.
-                const maxDist = hasTie ? 400 : 60;
-                if (xDist > maxDist) continue;
+                // No proximity gate. The pairing is MUSICAL, not spatial:
+                // a slide/hammer/pull is notated on its target and means
+                // "sounded from the previous note on this string without a
+                // new pluck", and a tie's antecedent is likewise the previous
+                // note on the string — which is exactly what notes[i - 1] is
+                // here, by construction. Playback (tab-player.js) pairs the
+                // same two notes with no distance test, so any pixel cap makes
+                // notation and sound disagree: the old 60px technique cap ate
+                // every technique spanning a quarter note or more (7 of the 27
+                // slides in Foggy Mountain Breakdown), silently — the
+                // tech-symbol fallback above skips h/p// on the grounds that
+                // this function draws them. Pixel caps also re-break at wider
+                // layouts (the editor's measureWidthFloor expansion), which is
+                // why this isn't a bigger number.
 
                 // For closely-spaced notes (like grace note slides), reduce the offsets
                 // so the slur is still visible

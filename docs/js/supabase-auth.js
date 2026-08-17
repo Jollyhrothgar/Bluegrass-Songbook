@@ -247,6 +247,61 @@ async function deleteSong(songId, reason = null) {
     }
 }
 
+// Promote an archived song into the main index (trusted users only)
+async function promoteSong(songId, reason = null) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('promote_song', {
+            p_song_id: songId,
+            p_reason: reason
+        });
+
+        if (error) {
+            console.error('Error promoting song:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error promoting song:', err);
+        return { data: null, error: err };
+    }
+}
+
+// Undo a promotion (trusted users only)
+async function unpromoteSong(songId) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    try {
+        const { data, error } = await supabaseClient.rpc('unpromote_song', {
+            p_song_id: songId
+        });
+
+        if (error) {
+            console.error('Error unpromoting song:', error);
+            return { data: null, error };
+        }
+
+        if (data?.error) {
+            return { data: null, error: { message: data.error } };
+        }
+
+        return { data, error: null };
+    } catch (err) {
+        console.error('Error unpromoting song:', err);
+        return { data: null, error: err };
+    }
+}
+
 // Clear trusted user cache (called on auth state change)
 function clearTrustedUserCache() {
     trustedUserCache = null;
@@ -1165,8 +1220,68 @@ async function fetchUserVotes(songIds) {
     return { data: voteMap, error: null };
 }
 
-// Cast or update a vote on a song
-async function castVote(songId, groupId, value = 1) {
+// Per-arrangement vote counts for ONE work: every take it holds, primary and
+// forks alike. The primary/work-level vote (arr_slug NULL) comes back under
+// the key '' — the same key `arrangementVoteKey` in work-view.js produces —
+// so the pill can read one map for all its rows.
+async function fetchArrangementVotes(songId) {
+    if (!supabaseClient || !songId) {
+        return { data: {}, error: null };
+    }
+
+    const { data, error } = await supabaseClient
+        .from('song_arrangement_vote_counts')
+        .select('arr_key, vote_count')
+        .eq('song_id', songId);
+
+    if (error) {
+        console.error('Error fetching arrangement votes:', error);
+        return { data: {}, error };
+    }
+
+    const voteMap = {};
+    (data || []).forEach(row => {
+        voteMap[row.arr_key || ''] = row.vote_count;
+    });
+
+    return { data: voteMap, error: null };
+}
+
+// Which of one work's arrangements the current user has voted for, keyed the
+// same way as fetchArrangementVotes ('' = the work-level vote).
+async function fetchUserArrangementVotes(songId) {
+    if (!supabaseClient || !currentUser || !songId) {
+        return { data: {}, error: null };
+    }
+
+    const { data, error } = await supabaseClient
+        .from('song_votes')
+        .select('arr_slug, vote_value')
+        .eq('user_id', currentUser.id)
+        .eq('song_id', songId);
+
+    if (error) {
+        console.error('Error fetching user arrangement votes:', error);
+        return { data: {}, error };
+    }
+
+    const voteMap = {};
+    (data || []).forEach(row => {
+        voteMap[row.arr_slug || ''] = row.vote_value;
+    });
+
+    return { data: voteMap, error: null };
+}
+
+// Cast or update a vote on a song version.
+//
+// `arrSlug` names WHICH take of the work is being voted for: null (the
+// default) is the work's own chart, which is what every vote meant before
+// forked arrangements existed. A fork passes its stable index slug.
+// `arr_key` is a generated column (coalesce(arr_slug, '')) and is the
+// conflict arbiter — see 20260816000000_arrangement_votes.sql for why the
+// upsert cannot conflict on arr_slug directly.
+async function castVote(songId, groupId, value = 1, arrSlug = null) {
     if (!supabaseClient || !currentUser) {
         return { error: { message: 'Not logged in' } };
     }
@@ -1177,25 +1292,32 @@ async function castVote(songId, groupId, value = 1) {
             user_id: currentUser.id,
             song_id: songId,
             group_id: groupId,
-            vote_value: value
+            vote_value: value,
+            arr_slug: arrSlug || null
         }, {
-            onConflict: 'user_id,song_id'
+            onConflict: 'user_id,song_id,arr_key'
         });
 
     return { error };
 }
 
-// Remove a vote from a song
-async function removeVote(songId) {
+// Remove a vote from a song version. Scoped to the same arrangement key the
+// vote was cast under, so dropping a fork's vote never clears the work-level
+// one (and vice versa).
+async function removeVote(songId, arrSlug = null) {
     if (!supabaseClient || !currentUser) {
         return { error: { message: 'Not logged in' } };
     }
 
-    const { error } = await supabaseClient
+    let query = supabaseClient
         .from('song_votes')
         .delete()
         .eq('user_id', currentUser.id)
         .eq('song_id', songId);
+
+    query = arrSlug ? query.eq('arr_slug', arrSlug) : query.is('arr_slug', null);
+
+    const { error } = await query;
 
     return { error };
 }
@@ -1437,6 +1559,8 @@ window.SupabaseAuth = {
     isTrustedUser,
     isAdmin,
     deleteSong,
+    promoteSong,
+    unpromoteSong,
     // Expose supabase client for direct access (e.g., pending_songs)
     get supabase() { return supabaseClient; },
     // Favorites
@@ -1469,6 +1593,8 @@ window.SupabaseAuth = {
     // Votes (song versions)
     fetchGroupVotes,
     fetchUserVotes,
+    fetchArrangementVotes,
+    fetchUserArrangementVotes,
     castVote,
     removeVote,
     // Genre Suggestions

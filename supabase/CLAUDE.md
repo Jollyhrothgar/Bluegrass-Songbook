@@ -10,23 +10,49 @@ Serverless functions that run on Supabase Edge (Deno runtime).
 
 | Function | Purpose | Trigger | Source |
 |----------|---------|---------|--------|
-| `create-song-issue` | Create GitHub issue for song submissions/corrections | POST from editor.js | `functions/create-song-issue/index.ts` |
 | `create-flag-issue` | Create GitHub issue for song problem reports | POST from flags.js | `functions/create-flag-issue/index.ts` |
 | `create-song-request` | Create GitHub issue for song requests | POST from main.js | `functions/create-song-request/index.ts` |
 | `create-superuser-request` | Create GitHub issue for super-user access requests | POST from superuser-request.js | `functions/create-superuser-request/index.ts` |
-| `auto-commit-song` | Commit pending_songs to GitHub repo | Scheduled | `functions/auto-commit-song/index.ts` |
-| `cleanup-pending` | Remove stale pending songs | Scheduled | `functions/cleanup-pending/index.ts` |
+| `auto-commit-song` | Gate + classify a pending_songs row, then dispatch the write to CI | POST from editor.js (any logged-in save) | `functions/auto-commit-song/index.ts` |
+| `cleanup-pending` | Remove pending songs already committed | `.github/workflows/cleanup-pending.yml` after a successful deploy | `functions/cleanup-pending/index.ts` |
+| `reconcile-pending` | Retry rows the live commit path failed, and report the drift | `.github/workflows/reconcile-pending.yml`, hourly | `functions/reconcile-pending/index.ts` |
 
-All functions:
-- Use GitHub API to create issues (no user GitHub auth required)
-- Include submitter attribution in issue body
-- Return issue number on success
+**Shared code (`functions/_shared/`)**
 
-**Deployment:**
+- `identity.ts` — verified identity (`requireUser` / `optionalUser` /
+  `attributionFor`). The client never says who it is.
+- `pending-dispatch.ts` — the phase 2b change gate: durable per-user rate
+  limit counted from `submission_log`, `classifyChange` (create / update /
+  fork-to-arrangement), and `dispatchPendingCommit`, which fires the
+  `pending-commit` repository_dispatch. **No edge function authors work.yaml
+  any more** — `.github/workflows/process-pending.yml` runs
+  `scripts/lib/works_writer.py`, the repo's one writer.
+- `commit-song.ts` — the `PendingSong` shape, one Contents-API read used by
+  classification, and `unretryableReason`. Phase 2d deleted the
+  document-attachment path (and the write helpers only it used) along with
+  the doc-upload feature; nothing in here writes to GitHub any more.
+
+`auto-commit-song` (live path) and `reconcile-pending` (hourly retry) both
+import `pending-dispatch.ts`, so a retry classifies exactly the way the
+original attempt did. Supabase bundles relative imports at deploy time, so
+**redeploy both functions** whenever anything in `_shared/` changes.
+
+`reconcile-pending` is gated on the service role key itself (not merely a valid
+project JWT — the anon key is public), handles at most 25 rows per run, and
+skips rows younger than 15 minutes so it cannot race an in-flight
+`auto-commit-song`. It always returns HTTP 200 with `drift` (the count of rows
+where `github_committed = false`) and `stuckCount`; the workflow fails and
+opens/updates a single "Reconciler: pending songs stuck uncommitted" issue when
+`stuckCount > 0`. `POST {"dryRun": true}` measures drift without dispatching.
+Rows are marked `github_committed` by the workflow after its push lands —
+never by a function, which is what used to let `cleanup-pending` reap songs
+that had not actually reached git.
+
+**Deployment:** `.github/workflows/deploy-functions.yml` deploys on push to
+main. To deploy by hand:
 ```bash
-supabase functions deploy create-song-issue
-supabase functions deploy create-flag-issue
-supabase functions deploy create-song-request
+supabase functions deploy auto-commit-song
+supabase functions deploy reconcile-pending
 ```
 
 ### Migrations (`migrations/`)
@@ -37,7 +63,10 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `user_lists` - User lists with multi-owner support (`owners` array)
 - `user_list_items` - Songs in lists (many-to-many)
 - `user_favorites` - User favorited songs
-- `song_votes` - User votes for song versions
+- `song_votes` - User votes for song versions; `arr_slug` names WHICH lead
+  sheet of the work (null = the work's own chart, the meaning every pre-fork
+  row carries). `song_vote_counts` tallies the work level, and
+  `song_arrangement_vote_counts` tallies per arrangement
 - `tag_votes` - User tag up/downvotes (trusted users can override tags)
 - `genre_suggestions` - User-submitted genre suggestions
 - `visitor_stats` - Page view and unique visitor counts
@@ -48,8 +77,33 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `list_invites` - Invite tokens for list co-ownership
 - `admin_users` - Admin users who can delete songs
 - `deleted_songs` - Soft-deleted songs (excluded from index at build time)
-- `trusted_users` - Users with instant edit privileges
-- `pending_songs` - Trusted user edits awaiting GitHub commit
+- `trusted_users` - Users allowed to edit someone else's chart **in place** (everyone else's edit forks to a new arrangement)
+- `pending_songs` - Any logged-in user's submission, live in the overlay, awaiting the GitHub commit
+- `review_requests` - The destructive residue (phase 2d): trusted users request delete / suppress / merge-redirect, admins decide
+- `leaderboard_identities` - Opt-in real names for the High Scores board. **RLS on, zero policies** — only `get_leaderboard()` reads it
+- `leaderboard_salt` - One random uuid that salts the leaderboard aliases. **RLS on, zero policies.** Never expose it: contributor uuids are already public in `works/*/work.yaml` (`provenance.submitted_by`), so an unsalted alias hash would be a join key straight back to real contributors
+
+**Key functions:**
+- `get_leaderboard()` (`20260816120000_leaderboard.sql`, **not yet applied**) —
+  the High Scores board, `security definer`, granted to `anon` *and*
+  `authenticated`. Aggregates `submission_log` over CONTENT actions only
+  (`song_submit`, `song_correction`, `tab_submit`, `tab_correction`; reports
+  and requests don't score) and returns
+  `(rank, display, total, songs, tabs, is_you)`.
+  **The anonymization is the feature.** No email, uuid, or auth metadata for
+  any user but the caller is in the response at all — it isn't masked, it
+  isn't there. `display` resolves as: opt-in name from
+  `leaderboard_identities` → the caller's own email on their own row →
+  otherwise a deterministic bluegrass alias from `md5(salt || user_id)` over a
+  24 x 24 adjective/noun table, with a two-hex-char suffix added only to rows
+  that actually collide. Ships the deterministic-alias half of #174; that
+  issue stays open for real profiles. Frontend: `docs/js/high-scores.js`.
+
+**Retired:** `doc_staging` (+ the `doc-staging` storage bucket) — the
+document-upload intake, removed in phase 2d. The drop migration
+(`20260815130000_drop_doc_staging.sql`) is written but **not applied**: it
+opens with a rescue checklist because anything still in that table or bucket
+is a submitter's only copy, and the bucket itself needs a manual delete.
 
 ### Authentication
 
@@ -87,16 +141,30 @@ INSERT INTO admin_users (user_id) VALUES ('user-uuid-here');
 ./scripts/utility sync-deleted-songs
 ```
 
-### Trusted User Workflow
+### Contribution Workflow (phase 2b)
 
-Trusted users can make instant edits that appear immediately without approval:
+Every logged-in user's submission takes the same path — trust gates edit
+rights, not speed:
 
-1. User is added to `trusted_users` table (manual admin action or via approved super-user request)
-2. When editing, `isTrustedUser()` checks if user is trusted
-3. Trusted users see "Save Changes" instead of "Submit for Review"
-4. Edits are saved to `pending_songs` table with `github_committed: false`
-5. Song appears immediately in search (merged with index at load time via `refreshPendingSongs()`)
-6. Background job (`auto-commit-song`) commits to GitHub repo
+1. The editor writes the row to `pending_songs` (`github_committed: false`).
+   RLS allows any authenticated user to insert rows they own; in-place update
+   of an existing row stays owner-or-trusted.
+2. The song appears immediately in search (`refreshPendingSongs()` merges the
+   overlay at load time).
+3. `auto-commit-song` verifies row ownership, enforces the durable per-user
+   rate limit, classifies the change, and fires the `pending-commit`
+   repository_dispatch.
+4. `.github/workflows/process-pending.yml` writes it to `works/` via
+   `works_writer`, pushes, then flips `github_committed`.
+
+Classification:
+
+| Situation | Result |
+|---|---|
+| no work at the target id | `create` |
+| the caller's uuid appears in the work's `provenance.submitted_by` | `update` in place |
+| the caller is in `trusted_users` | `update` in place |
+| anything else | `fork` — a new arrangement part; the original is untouched |
 
 **To add a trusted user:**
 ```sql
@@ -106,11 +174,50 @@ VALUES ('user-uuid-here', 'admin-manual');
 
 **To request trusted status:** Regular users can request super-user access through the app. This creates a GitHub issue via `create-superuser-request` edge function. Admin approves by adding to `trusted_users` table and closing the issue.
 
+### Review queue (phase 2d)
+
+Adding content is instant; destroying it is not. `review_requests` holds the
+three destructive asks — `delete`, `suppress`, `merge-redirect`:
+
+- **trusted** users file requests (RLS: insert requires `is_trusted_user()`
+  *and* `requested_by = auth.uid()`) and can read the whole queue.
+- **admins** decide. Only `is_admin()` may update `status`, and a trigger
+  stamps `reviewed_by` / `reviewed_at` from the session while freezing the
+  request's immutable fields. Nobody can delete rows — the queue is the audit
+  trail.
+- Admins keep their **instant** delete on the song page. They are the
+  reviewers; making them queue an ask to themselves would be ceremony.
+
+The UI is `docs/js/review-queue.js`, rendered into `#review-queue-panel` in
+the Bluegrass Dungeon (the same place Promote lives). Its third section lists
+`pending_songs` rows held by the phase-3b dedup backstop (`dedup_hold` not
+null) with admin *Release hold* / *Reject* actions — which is why
+`20260815150000_review_requests.sql` also adds `is_admin()` update/delete
+policies on `pending_songs`: the 2b policies grant those to the row's author
+or a trusted user only, so an admin outside `trusted_users` would have been
+refused by RLS.
+
+**What approval actually does — the honest part.** Approving a `delete` runs
+the existing `delete_song` RPC, so the song is gone immediately. Approving a
+`suppress` or `merge-redirect` only records the decision: both edit files in
+the repo (`curation/registry.yaml`, `works/`), and nothing in CI performs
+those from a table. The panel therefore shows the request as *"Approved — run
+locally"* and prints the command:
+
+```bash
+./scripts/utility curate suppress <work-id> --reason "..."
+# merge-redirect: a one-entry plan for the existing merge tool
+uv run python scripts/lib/merge_works.py /tmp/merge-plan.json --execute
+```
+
 ## Row-Level Security (RLS)
 
 All tables have RLS policies:
 - Lists: Owners can CRUD, anyone can read public lists
-- Votes: Users can only vote once per song
+- Votes: one vote per user per version — `(user_id, song_id, arr_key)`, where
+  `arr_key` is a generated `coalesce(arr_slug, '')` (a plain nullable column
+  could not carry a unique constraint, and PostgREST cannot arbitrate an
+  upsert on an expression index)
 - Stats: Increment-only via function
 
 ## Local Development
@@ -123,7 +230,7 @@ supabase start
 supabase db push
 
 # Test edge functions locally
-supabase functions serve create-song-issue --env-file .env.local
+supabase functions serve auto-commit-song --env-file .env.local
 ```
 
 ## Environment Variables
