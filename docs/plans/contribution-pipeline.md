@@ -365,7 +365,24 @@ rather than overwrite a published tab of that instrument); the client sent
 the editor's PRESET name (`5-string-banjo`, and `tenor_banjo` — which the
 server's own `[a-z0-9-]` check rejects) where the corpus wants `banjo`;
 and `process_tab.py` stamped `x_corrected_*` on a part that had never been
-published. It does NOT move tabs onto the `pending_songs` pipeline — see
+published.
+
+*Corrected, 2026-08-16 — that 409 was a principle-4 violation and is
+gone.* The offramp now happens at ENTRY: the picker's result selection,
+"+ Add a tab" and a tablature bounty's Contribute all check the target
+work's `tablature_parts` client-side and, when the instrument is already
+covered, offer view / add-alongside / improve-an-existing-tab before the
+editor opens — with the sibling count repeated in `create.html`'s target
+banner. Server-side, a same-instrument submission is no longer refused
+but uniquified (`{instrument}-{base36 stamp+rand}.otf.json`, unique across
+concurrent branches in a way `works_writer._unique_filename`'s `-2`
+counter is not) and added as a NEW part, which is what the corpus has
+always modelled — `process_tab.py` now keys correction-vs-new-part on the
+FILE rather than the instrument, and stamps `source_id: pr-{n}` so
+siblings satisfy the schema. Two related holes closed on the way: index
+rows publish `src_file` and corrections name it, so fixing take #3 no
+longer writes over take #1. It does NOT move tabs onto the
+`pending_songs` pipeline — see
 the resolved deviation under 2b for why, and for the review-gate exception
 that leaves standing. Supersedes the new-tab half of #180; `create.html`
 is now reachable from the site, which was #180's last checklist item.
