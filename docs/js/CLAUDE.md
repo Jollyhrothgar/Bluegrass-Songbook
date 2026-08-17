@@ -28,6 +28,7 @@ docs/
 │   ├── flags.js        # Unified feedback modal (song issues, bugs, general feedback)
 │   ├── add-song-picker.js # Add/request-a-song picker (also serves #request-song)
 │   ├── superuser-request.js # Super-user request modal and submission
+│   ├── high-scores.js  # `#high-scores` leaderboard — renders `get_leaderboard()`; identities are resolved SERVER-side (no email/uuid ever reaches this file)
 │   ├── collections.js  # Landing page collection definitions
 │   ├── analytics.js    # Behavioral analytics tracking
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
