@@ -1,0 +1,914 @@
+# Bounty board adjudication ledger — song-identity decisions
+#
+# Which catalogue songs denote a work the songbook already has. Keyed on
+# `catalogue_id` from docs/data/bluegrass_catalogue.json, NOT on a raw title:
+# titles shift between research runs, and they did — the first cut of this
+# ledger pinned board titles carrying Strum Machine arrangement suffixes, and
+# every one of them detached the moment the catalogue folded those away.
+#
+# Why this file exists: the wanted side carries only a title. Lyrics exist on
+# the corpus side only, and artist overlap is circular (MusicBrainz keys
+# recordings by title, so the fragmentation we are fixing guarantees disjoint
+# artist sets). Identity here is referential — which strings denote the same
+# musical work — so neither string distance nor title embeddings can decide it.
+# See sources/bounty-hunt/CLEANUP-PLAN.md for the evidence.
+#
+# Adjudicated 2026-08-15 against index 2,458 / archive 16,764: all 110 wanted
+# entries that had any candidate. The other 586 have no corpus match.
+#
+# Sections:
+#   covered      — the wanted song IS this work; drop from the board
+#   distinct     — scores close, different song; keep on the board
+#   uncertain    — needs someone who knows which tune the source meant
+#   not_a_song   — catalogue artifact, never a bounty
+#   not_jam_repertoire — a real song, but not one anybody calls at a jam.
+#                  Seasonal material clears the coverage bar honestly
+#                  (bluegrass artists do record Christmas albums) and still
+#                  does not belong on the board.
+#   keep         — real repertoire the catalogue cannot vouch for (no MB
+#                  coverage / below the score cut). Carried onto the board
+#                  verbatim by build_wanted.py, the way registry.yaml `keep:`
+#                  rescues pruned works. Row data lives here because the
+#                  catalogue has no row to take it from.
+#   intra_dupes  — same song listed twice under arrangement-variant titles
+#
+# `chords: 0` on a covered work means the page exists but is lyrics-only —
+# route it to "Needs Chords", not "Missing Jam Standards".
+# `archived: true` means the work is pruned from search; these are the
+# promote candidates for the Dungeon flow.
+
+covered:
+  adieu-false-heart:
+    catalogue_ids:
+    - adieu-false-heart
+    work: adieu-false-heart
+    reason: Exact match; " via Dirk Powell" is an SM arrangement label.
+  bill-cheatum:
+    catalogue_ids:
+    - bill-cheatum
+    work: bill-cheatham
+    reason: Standard spelling variant of the fiddle tune.
+    chords: 0
+  black-eyed-suzie:
+    catalogue_ids:
+    - black-eyed-suzie
+    - black-eyed-suzy
+    work: black-eyed-susie
+    reason: One tune, three spellings. Two wanted entries collapse here.
+  bluest-man-in-town:
+    catalogue_ids:
+    - bluest-man-in-town
+    work: the-bluest-man-in-town
+    reason: Trailing-article form plus artist annotation. Lyrics-only work.
+    chords: 0
+  buffalo-girls-gals:
+    catalogue_ids:
+    - buffalo-girls-gals
+    work: buffalo-gals
+    reason: Girls/Gals is the standard title variant of one minstrel tune.
+    chords: 0
+  can-the-circle-be-unbroken:
+    catalogue_ids:
+    - can-the-circle-be-unbroken
+    work: will-the-circle-be-unbroken
+    reason: The Carter Family 1935 rewrite of the 1907 hymn. All three corpus works carry
+      the Carter lyric ("I was standing by my window"), which IS "Can the Circle Be Unbroken".
+      Technically distinct compositions, universally one song in a jam. Corpus has three copies
+      — see registry.
+  cotton-eyed-joe:
+    catalogue_ids:
+    - cotton-eyed-joe
+    work: cotton-eyed-joe
+    reason: One tune; two SM entries differing by bar count.
+  duncan-and-brady:
+    catalogue_ids:
+    - duncan-and-brady
+    work: duncan-and-brady
+    reason: Exact match; artist annotation only.
+  feuding-banjos:
+    catalogue_ids:
+    - feuding-banjos
+    work: dueling-banjos
+    reason: Feudin' Banjos (Smith/Reno, 1955) is the original composition later popularized
+      as "Dueling Banjos". Same work.
+  fly-around-my-pretty-little-miss:
+    catalogue_ids:
+    - fly-around-my-pretty-little-miss
+    work: fly-around-my-pretty-little-miss
+    reason: Trailing text is an SM chord-arrangement note.
+  going-to-the-west:
+    catalogue_ids:
+    - going-to-the-west
+    work: going-to-the-west
+    reason: Exact match; artist annotation only.
+  gospel-plow:
+    catalogue_ids:
+    - gospel-plow
+    work: gospel-plow
+    reason: Exact match; artist annotation only.
+  molly-put-the-kettle-on:
+    catalogue_ids:
+    - molly-put-the-kettle-on
+    work: polly-put-the-kettle-on
+    reason: Molly/Polly is the usual variant pair for this old-time tune.
+    chords: 0
+  more-pretty-girls-than-one:
+    catalogue_ids:
+    - more-pretty-girls-than-one
+    work: more-pretty-girls-than-one
+    reason: One song; two SM entries differing by arrangement label.
+  my-native-home:
+    catalogue_ids:
+    - my-native-home
+    work: my-native-home
+    reason: Exact match; artist annotation only. Lyrics-only work.
+    chords: 0
+  old-bunch-of-keys:
+    catalogue_ids:
+    - old-bunch-of-keys
+    work: bunch-of-keys
+    reason: The tune is catalogued both with and without the leading "Old".
+    chords: 0
+    archived: true
+  old-mother-flanagan-three-parts:
+    catalogue_ids:
+    - old-mother-flanagan-three-parts
+    - old-mother-flanagan-two-parts
+    work: old-mother-flanagan
+    reason: two parts describes the arrangement, not a different tune.
+    chords: 0
+  ora-lee:
+    catalogue_ids:
+    - ora-lee
+    work: aura-lee
+    reason: Spelling variant of the 1861 song (later "Love Me Tender").
+    archived: true
+  pallet-on-the-floor:
+    catalogue_ids:
+    - pallet-on-the-floor
+    work: make-me-a-pallet-on-the-floor
+    reason: Same folk blues. Corpus holds three arrangements (make-me-a-pallet-on-the-floor
+      / -on-your-floor / pallet-on-your-floor). Note fuzzy matching ranks "Carpet On The Floor"
+      above all three.
+  patty-on-the-turnpike:
+    catalogue_ids:
+    - patty-on-the-turnpike
+    work: paddy-on-the-turnpike
+    reason: Standard spelling variant of the fiddle tune.
+    chords: 0
+  raleigh-and-spencer:
+    catalogue_ids:
+    - raleigh-and-spencer
+    work: raleigh-and-spencer
+    reason: Exact match; artist annotation only. Distinct from Riley and Spencer.
+  red-rocking-chair:
+    catalogue_ids:
+    - red-rocking-chair
+    work: red-rocking-chair
+    reason: modal is an SM arrangement label, not a different song.
+  roxannes-waltz:
+    catalogue_ids:
+    - roxannes-waltz
+    work: roxanna-waltz
+    reason: Roxanne/Roxanna variant of one waltz.
+    chords: 0
+    archived: true
+  saint-james-infirmary:
+    catalogue_ids:
+    - saint-james-infirmary
+    work: st-james-infirmary
+    reason: Saint/St. abbreviation only. NOTE — that work's first_line is "EADGBe", a tab
+      header leaked into the lyrics field. Separate data bug.
+  sally-ann-via-tommy-jarrell-mostly-1-and-4:
+    catalogue_ids:
+    - sally-ann-via-tommy-jarrell-mostly-1-and-4
+    work: sally-ann
+    reason: Exact match; the trailing text is an SM arrangement note.
+    chords: 0
+  senor:
+    catalogue_ids:
+    - senor
+    work: senor
+    reason: Parenthetical is the song's own subtitle.
+  shady-grove:
+    catalogue_ids:
+    - shady-grove
+    work: shady-grove
+    reason: One tune; two SM entries differing by performer. Corpus holds three copies — see
+      registry.
+  sitting-on-top-of-the-world:
+    catalogue_ids:
+    - sitting-on-top-of-the-world
+    work: sitting-on-top-of-the-world
+    reason: One song; two SM entries differing by chord arrangement. Corpus holds three copies
+      — see registry.
+  streamline-cannonball-julia:
+    catalogue_ids:
+    - streamline-cannonball-julia
+    work: streamline-cannonball
+    reason: Acuff song; trailing text is a performer. Corpus also holds "Streamlined Cannonball"
+      (indexed) — a corpus-internal duplicate.
+    archived: true
+  sweet-sunny-south:
+    catalogue_ids:
+    - sweet-sunny-south
+    work: sweet-sunny-south
+    reason: One song; two SM entries differing by mode.
+  talk-to-your-heart:
+    catalogue_ids:
+    - talk-to-your-heart
+    work: talk-to-your-heart
+    reason: One song; two SM entries differing by meter label and performer.
+  tell-me-baby-why-you-been-gone-so-long:
+    catalogue_ids:
+    - tell-me-baby-why-you-been-gone-so-long
+    work: why-you-been-gone-so-long
+    reason: Mickey Newbury song; the wanted title includes the opening words.
+  walking-in-my-sleep:
+    catalogue_ids:
+    - walking-in-my-sleep
+    work: walkin-in-my-sleep
+    reason: Same tune; apostrophe elision plus artist annotation.
+  walking-in-the-parlor:
+    catalogue_ids:
+    - walking-in-the-parlor
+    work: walk-in-the-parlor
+    reason: Walk/Walking variant of the old-time tune.
+    chords: 0
+    archived: true
+  whos-that-knocking-at-my-window-carter-family:
+    catalogue_ids:
+    - whos-that-knocking-at-my-window-carter-family
+    work: whos-that-knocking-at-my-window
+    reason: One song; two SM entries differing only by performer.
+    chords: 0
+  would-you-be-satisfied-that-way:
+    catalogue_ids:
+    - would-you-be-satisfied-that-way
+    work: will-you-be-satisfied-that-way
+    reason: Would/Will title variant of one song. Corpus also holds "Would You Be Satisfied"
+      and "You Won't Be Satisfied That Way".
+    archived: true
+distinct:
+  500-miles:
+    not: 900-miles
+    reason: Hedy West song; unrelated to the traditional 900 Miles.
+  new-camptown-races:
+    not: camptown-races
+    reason: Monroe/Wakefield bluegrass instrumental; not the Stephen Foster minstrel song.
+  foggy-mountain-rock:
+    not: foggy-mountain-top
+    reason: Three separate Flatt & Scruggs numbers (Rock
+    Top: null
+    Chimes: null
+    Breakdown).: null
+  maid-behind-the-bar:
+    not: the-girl-behind-the-bar
+    reason: Irish reel vs a country song.
+  black-mountain-blues:
+    not: clinch-mountain-blues
+    reason: Also distinct from Sand Mountain Blues and Black Mountain Rag.
+  whispering:
+    not: whispering-hope
+    reason: The 1920 pop standard
+    played as a swing tune; not the hymn.: null
+  little-margaret:
+    not: little-maggie
+    reason: Child ballad; unrelated to Little Maggie.
+  hicks-farewell:
+    not: elzic-s-farewell
+    reason: Shape-note hymn vs a West Virginia fiddle tune.
+  martins-waltz:
+    not: mozart-s-waltz
+    reason: Also distinct from Margravine's and Garnerins Waltz.
+  golden-fiddle-waltz:
+    not: blue-fiddle-waltz
+    reason: Different waltzes sharing one word.
+  blue-violet-waltz:
+    not: blue-fiddle-waltz
+    reason: Different waltzes; also not Blue Skirt or Blue River.
+  blue-valley-waltz:
+    not: blue-river-waltz
+    reason: Different waltzes.
+  black-velvet-waltz:
+    not: black-velvet-band
+    reason: A waltz vs the Irish ballad.
+  swannanoa-waltz:
+    not: i-wanna-waltz
+    reason: Coincidental string similarity.
+  boda-waltz:
+    not: bandera-waltz
+    reason: Different waltzes.
+  elies-waltz:
+    not: keith-s-waltz
+    reason: Different waltzes.
+  rangers-waltz:
+    not: garnerins-waltz
+    reason: Different waltzes.
+  shenandoah-falls:
+    not: shenandoah-waltz
+    reason: A fiddle tune vs the Bailes Brothers waltz.
+  c-jam-blues:
+    not: l-a-blues
+    reason: The Ellington standard; coincidental match.
+  poca-river-blues:
+    not: dog-river-blues
+    reason: West Virginia fiddle tune; also not Deep River Blues.
+  maury-river-blues:
+    not: kern-river-blues
+    reason: Different blues sharing the river construction.
+  hound-dog-blues:
+    not: low-dog-blues
+    reason: Different blues.
+  polecat-blues:
+    not: polka-dot-blues
+    reason: Coincidental string similarity.
+  houston-on-my-mind:
+    not: out-of-my-mind
+    reason: Different songs sharing "on my mind".
+  one-tear:
+    not: one-heart
+    reason: Different songs.
+  beautiful:
+    not: beautiful-you
+    reason: Different songs; also not The Beautiful City.
+  buck-mountain:
+    not: kentucky-mountain
+    reason: A fiddle tune vs a country song.
+  old-kentucky-whiskey:
+    not: old-kentucky-hillside
+    reason: Different songs.
+  little-whiskey:
+    not: little-stream-of-whiskey
+    reason: Different songs.
+  little-pink:
+    not: little-robin
+    reason: Old-time tune; coincidental match.
+  pretty-bird:
+    not: pretty-words
+    reason: Hazel Dickens song; coincidental match.
+  pretty-little-indian:
+    not: pretty-little-miss
+    reason: Different old-time tunes.
+  pretty-little-widow:
+    not: pretty-little-miss
+    reason: Different old-time tunes.
+  sweet-marie:
+    not: sweet-memories
+    reason: Different songs; also not Sweet Caroline.
+  sweet-dixie:
+    not: sweet-desire
+    reason: Different songs.
+  sweet-little-julie:
+    not: sweet-little-sixteen
+    reason: Different songs.
+  willow-creek:
+    not: willow-tree
+    reason: Different tunes; also not Yellow Creek.
+  round-the-horn:
+    not: around-the-world
+    reason: Coincidental string similarity.
+  spring-in-the-valley:
+    not: down-in-the-valley
+    reason: Different tunes sharing "valley".
+  down-in-the-swamp:
+    not: down-on-the-farm
+    reason: Different songs.
+  tulane-and-johnny:
+    not: frankie-and-johnny
+    reason: Different songs; also not Jeannie And Johnny.
+  last-song-the:
+    not: last-country-song
+    reason: Bag-containment artifact; four unrelated candidates.
+  mountain-house-the:
+    not: little-mountain-church-house
+    reason: Bag-containment artifact.
+  maple-sugar:
+    not: maple-sugar-sweetheart
+    reason: The Ward Allen fiddle tune vs an unrelated song.
+  ol-lonesome-wont-leave-me-alone:
+    not: love-me-or-leave-me-alone
+    reason: Different songs.
+  old-billy-hell:
+    not: hillbilly-hell
+    reason: Coincidental anagram-like similarity.
+  bowing-the-strings:
+    not: sawin-on-the-strings
+    reason: Different tunes.
+  fiddlin-around:
+    not: fooling-around
+    reason: Different songs.
+  ladys-fancy:
+    not: ladys-man
+    reason: A fiddle tune vs a country song.
+  welcome-to-the-jungle:
+    not: welcome-to-the-sunshine-sweet-baby-jane
+    reason: Coincidental match on the first two words.
+uncertain:
+  sweet-thing:
+    candidate: sweet-thang
+    reason: sweet-thang is the Ernest Tubb/Nat Stuckey country song. Unclear whether the SM
+      "Sweet Thing" is that or a separate old-time tune.
+  carolina:
+    candidate: oh-carolina
+    reason: Bare "Carolina" is ambiguous; several unrelated songs use it.
+  rattlesnake:
+    candidate: rattlesnake-jig
+    reason: Unclear whether the SM entry means the jig or a separate old-time "Rattlesnake"
+      tune.
+  come-along-jody:
+    candidate: come-along-john
+    reason: Jody/John may be a variant of one old-time tune or two tunes.
+  brand-new-pair-of-shoes:
+    candidate: brand-new-shoes
+    reason: Plausibly one song under two titles; needs a lyric check.
+  grey-eagle:
+    candidate: tennessee-grey-eagle
+    reason: Related fiddle-tune family; unclear whether the same setting.
+  johnson-boys:
+    candidate: the-legend-of-the-johnson-boys
+    reason: The traditional "Johnson Boys" vs what may be a distinct arrangement.
+not_a_song:
+  band-introductions:
+    reason: Strum Machine catalog artifact.
+    title: Band Introductions
+  band-intros:
+    reason: Strum Machine catalog artifact.
+    title: Band Intros
+  talk:
+    reason: Strum Machine catalog artifact.
+    title: Talk
+  age-bluegrass-album-band:
+    reason: Malformed catalog entry
+    not a song title.: null
+    title: Age Bluegrass Album Band
+    catalogue_id: age-bluegrass-album-band
+  introductions:
+    title: Introductions
+    reason: Catalog artifact, same class as Band Introductions. Surfaced when the catalogue
+      rebuild dropped it; filed rather than kept.
+not_jam_repertoire:
+  christmas-song:
+    title: The Christmas Song
+    reason: Holiday standard. Bluegrass artists cut it on Christmas albums, so it clears the
+      coverage bar honestly, but nobody calls it at a jam.
+  angels-we-have-heard-on-high:
+    title: Angels We Have Heard on High
+    reason: Christmas carol; same reasoning.
+  sleigh-ride:
+    title: Sleigh Ride
+    reason: Holiday standard; same reasoning.
+  christmas-time-is-here:
+    title: Christmas Time Is Here
+    reason: Holiday standard; same reasoning.
+  on-christmas-eve:
+    title: On Christmas Eve
+    reason: Holiday standard; same reasoning.
+keep:
+  Doc’s Guitar:
+    title: Doc’s Guitar
+    type: Vocal
+    coverage: 4
+    artists:
+    - The Gordons
+    - Doc Watson
+    - Billy Strings
+    - Nitty Gritty Dirt Band
+  Drunken Hiccups:
+    title: Drunken Hiccups
+    type: Vocal
+    coverage: 4
+    artists:
+    - Pert Near Sandstone
+    - The Tallboys
+    - Tommy Jarrell
+    - Hobart Smith
+  Euphoria:
+    title: Euphoria
+    type: Vocal
+    coverage: 4
+    artists:
+    - The Holy Modal Rounders
+    - Leftover Salmon
+    - John 5
+    - Nitty Gritty Dirt Band
+  Fiddlin' Around:
+    title: Fiddlin' Around
+    type: Vocal
+    coverage: 4
+    artists:
+    - Mark O’Connor
+    - Don Reno
+    - Buck Ryan
+    - Red Smiley
+  Fire:
+    title: Fire
+    type: Vocal
+    coverage: 4
+    artists:
+    - The String Cheese Incident
+    - Back Porch Swing
+    - The Avett Brothers
+    - Chris Stapleton
+  Fire and Brimstone:
+    title: Fire and Brimstone
+    type: Vocal
+    coverage: 4
+    artists:
+    - Alison Krauss
+    - Leftover Salmon
+    - The Lewis Family
+    - Ralph Stanley
+  First Days in Town:
+    title: First Days in Town
+    type: Fiddle Tune
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: D
+    difficulty: Intermediate
+  Fishin' Blues:
+    title: Fishin' Blues
+    type: Instrumental
+    coverage: 4
+    artists:
+    - Vassar Clements
+    - Nitty Gritty Dirt Band
+    - The Holy Modal Rounders
+    - Bruce Molsky
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+  Free Mexican Airforce:
+    title: Free Mexican Airforce
+    type: Vocal
+    coverage: 2
+    artists:
+    - Tony Rice
+    - Peter Rowan
+    key: A
+    difficulty: Intermediate
+  Graveyard:
+    title: Graveyard
+    type: Vocal
+    coverage: 4
+    artists:
+    - Molly Tuttle
+    - The Devil Makes Three
+    - The New Lost City Ramblers
+    - Elliott BROOD
+  Indian Springs:
+    title: Indian Springs
+    type: Vocal
+    coverage: 4
+    artists:
+    - Kenny Baker
+    - Bryan Sutton
+    - Ricky Skaggs
+    - Aubrey Haynie
+  Just Joshin':
+    title: Just Joshin'
+    type: Vocal
+    coverage: 4
+    artists:
+    - Mike Auldridge
+    - Arthur Smith
+    - David Grisman
+    - Earl Scruggs
+  Keep Me Humble:
+    title: Keep Me Humble
+    type: Vocal
+    coverage: 4
+    artists:
+    - The Blue Ridge Partners
+    - Reno and Smiley
+    - The Easter Brothers
+    - Al Wood & The Smokey Ridge Boys
+  Kissimmee Kid:
+    title: Kissimmee Kid
+    type: Instrumental
+    coverage: 3
+    artists:
+    - Vassar Clements
+    - Billy Strings
+    - Tony Rice
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: A
+    difficulty: Advanced
+  Lafayette:
+    title: Lafayette
+    type: Vocal
+    coverage: 4
+    artists:
+    - Peter Ostroushko
+    - Fiddlin’ Arthur Smith
+    - John Hartford
+    - Watkins Family Hour
+  Land Of Lincoln:
+    title: Land Of Lincoln
+    type: Instrumental
+    coverage: 1
+    artists:
+    - Kenny Baker
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: G
+    difficulty: Intermediate
+  Lazy Katie:
+    title: Lazy Katie
+    type: Vocal
+    coverage: 4
+    artists:
+    - Jeff White
+    - Sam Bush
+    - Michael Cleveland
+    - Barry Bales
+  Little Margaret:
+    title: Little Margaret
+    type: Vocal
+    coverage: 4
+    artists:
+    - Big Medicine
+    - Uncle Sinner
+    - Doc Watson
+    - Rhiannon Giddens
+  Metric Lips:
+    title: Metric Lips
+    type: Instrumental
+    coverage: 1
+    artists:
+    - New Grass Revival
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: Am
+    difficulty: Advanced
+  Mother Maybelle:
+    title: Mother Maybelle
+    type: Gospel
+    coverage: 4
+    artists:
+    - The Osborne Brothers
+    - Mac Wiseman
+    - Nashville Grass
+    - Marty Stuart
+  Ode to a Butterfly:
+    title: Ode to a Butterfly
+    type: Instrumental
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: Am
+    difficulty: Advanced
+  Oh Lovin' Babe:
+    title: Oh Lovin' Babe
+    type: Vocal
+    coverage: 4
+    artists:
+    - Uncle Dave Macon
+    - Rayna Gellert
+    - Dudley Connell
+    - Don Rigsby
+  Pickaway:
+    title: Pickaway
+    type: Vocal
+    coverage: 4
+    artists:
+    - The Seldom Scene
+    - Mike Auldridge
+    - Lester Flatt
+    - Vic Jordan
+  Pink:
+    title: Pink
+    type: Vocal
+    coverage: 4
+    artists:
+    - Nonviolenze
+    - Carbon Leaf
+    - Dolly Parton
+    - The Grassmasters
+  Rainmaker:
+    title: Rainmaker
+    type: Vocal
+    coverage: 4
+    artists:
+    - Peter Rowan
+    - Vassar Clements
+    - Northern Lights
+    - The Dillards
+  Return to Dismal Swamp II:
+    title: Return to Dismal Swamp II
+    type: Vocal
+    coverage: 4
+    artists:
+    - Tony Rice
+    - Glen Duncan
+    - Jerry Douglas
+    - Nitty Gritty Dirt Band
+  Ruben:
+    title: Ruben
+    type: Vocal
+    coverage: 4
+    artists:
+    - Rual Yarbrough
+    - Pierre Bensusan
+    - NewFound Road
+    - Alice Gerrard
+  Sapporo:
+    title: Sapporo
+    type: Instrumental
+    coverage: 1
+    artists:
+    - New Grass Revival
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: Am
+    difficulty: Advanced
+  Seven by Seven:
+    title: Seven by Seven
+    type: Instrumental
+    coverage: 1
+    artists:
+    - New Grass Revival
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: G
+    difficulty: Advanced
+  Slowly:
+    title: Slowly
+    type: Vocal
+    coverage: 4
+    artists:
+    - Jimmy Martin
+    - Jimmy Martin and the Sunny Mountain Boys
+    - Rhonda Vincent
+    - The Bluegrass Cardinals
+  Smoothie Song:
+    title: Smoothie Song
+    type: Instrumental
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: A
+    difficulty: Advanced
+  Sopping the Gravy:
+    title: Sopping the Gravy
+    type: Fiddle Tune
+    coverage: 1
+    artists:
+    - Kessinger Brothers
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: D
+    difficulty: Intermediate
+  Spain:
+    title: Spain
+    type: Vocal
+    coverage: 4
+    artists:
+    - David Grisman
+    - Jerry Douglas
+    - Béla Fleck
+    - Buckethead
+  Stay:
+    title: Stay
+    type: Vocal
+    coverage: 4
+    artists:
+    - Vince Gill
+    - Valerie June
+    - Alison Krauss
+    - Alison Krauss & Union Station
+  Stealin:
+    title: Stealin
+    type: Vocal
+    coverage: 4
+    artists:
+    - Dom Flemons
+    - David Grisman
+    - The Wood Brothers
+    - Pert Near Sandstone
+  Tombstone Junction:
+    title: Tombstone Junction
+    type: Instrumental
+    coverage: 1
+    artists:
+    - Bill Monroe and the Bluegrass Boys
+    instruments:
+    - fiddle
+    - banjo
+    - mandolin
+    - guitar
+    key: A
+    difficulty: Intermediate
+  Traffic Jam:
+    title: Traffic Jam
+    type: Vocal
+    coverage: 1
+    artists:
+    - Yonder Mountain String Band
+    key: A
+    difficulty: Intermediate
+  Two Dollar Bill:
+    title: Two Dollar Bill
+    type: Vocal
+    coverage: 4
+    artists:
+    - Art Stevenson & High Water
+    - Iron Horse
+    - Vassar Clements
+    - The Gordons
+  Untold Stories:
+    title: Untold Stories
+    type: Vocal
+    coverage: 1
+    artists:
+    - Hot Rize
+    key: G
+    difficulty: Intermediate
+  Waves:
+    title: Waves
+    type: Vocal
+    coverage: 4
+    artists:
+    - The Wood Brothers
+    - Dangermuffin
+    - Scott Stutzman
+    - Béla Fleck
+  Welcome to the Jungle:
+    title: Welcome to the Jungle
+    type: Vocal
+    coverage: 4
+    artists:
+    - Hayseed Dixie
+    - Scott Stutzman
+    - John 5
+    - Iron Horse
+intra_dupes:
+- - Another Day Another Dollar Dan Tyminski
+  - Another Day Another Dollar Wynn Stewart
+- - Black Eyed Suzie
+  - Black Eyed Suzy
+- - Cotton-Eyed Joe 16 bars
+  - Cotton-Eyed Joe 20 bars
+- - More Pretty Girls Than One 4/4 time
+  - More Pretty Girls Than One w/minor
+- - Shady Grove minor via Doc Watson
+  - Shady Grove minor via Garcia/Grisman
+- - Sitting on Top of the World 1-4-5 only
+  - Sitting on Top of the World with 6m
+- - Sweet Sunny South major
+  - Sweet Sunny South modal
+- - Talk to Your Heart 4/4 time
+  - Talk to Your Heart Ray Price
+- - Who's That Knocking At My Window Carter family
+  - Who's That Knocking At My Window Hazel & Alice
+corpus_duplicates_noted:
+- - will-the-circle-be-unbroken
+  - will-the-circle-be-unbroken-1
+  - will-the-circle-be-unbroken-2
+- - sitting-on-top-of-the-world
+  - sittin-on-top-of-the-world
+  - sittin-on-top-of-the-world-1
+- - shady-grove
+  - shady-grove-1
+  - shady-grove-2
+- - the-yellow-rose-of-texas
+  - the-yellow-rose-of-texas-1
+- - streamline-cannonball
+  - streamlined-cannonball
+- - red-rocking-chair
+  - red-rocking-chair-1
+- - little-maggie
+  - little-maggie-1
+- - why-you-been-gone-so-long
+  - why-you-been-gone-so-long-1
+- - make-me-a-pallet-on-the-floor
+  - make-me-a-pallet-on-your-floor
+  - pallet-on-your-floor
