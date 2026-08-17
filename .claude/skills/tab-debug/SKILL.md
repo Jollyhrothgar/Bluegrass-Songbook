@@ -317,10 +317,32 @@ not decode 0x04 → bend.
 **Frontend**: `expandNotationWithReadingList()` in work-view.js expands measures
 **Files**: `sources/banjo-hangout/src/tef_parser/reader.py`, `docs/js/work-view.js`
 
-### Cross-measure ties not rendering
+### Slur/tie arc missing (FIXED for barlines — check the ROW boundary)
 
-**Cause**: Each measure is a separate SVG row, can't draw arc across
-**Workaround**: Tied notes show bracket notation `[7]` instead of arc
+**Not the cause**: "each measure is its own SVG". It isn't — a row holds
+several measures (`measuresPerRow`) in one SVG, and `renderSlurs()` runs
+per-row after the whole row is laid out, so ties AND techniques (`h`, `p`,
+`/`) arc across barlines fine. Brackets on a tied fret `[7]` supplement that
+arc, they don't replace it.
+
+**Was a cause until 2026-08**: `renderSlurs()` gated technique arcs on a fixed
+60px note-to-note distance, so any hammer/pull/slide spanning a quarter note
+or more vanished entirely — no arc, no `sl`/`H`/`P` label (the tech-symbol
+fallback skips h/p// on the grounds renderSlurs draws them), while playback
+still sounded it. 7 of 27 slides in `foggy-mountain-breakdown/banjo.otf.json`
+were invisible. Fixed by deleting the pixel gate: the source note is the
+immediately preceding note on the same string, which is what the articulation
+*means* and exactly what `tab-player.js` pairs. If you are ever tempted to
+re-add a pixel threshold here, don't — it silently drops real notation and
+re-breaks at every layout width.
+
+**Still a real cause**: the ROW boundary. `renderSlurs` only sees one row's
+notes, so a slur whose source is on the previous row can't be completed. Ties
+draw an incoming half-arc from the margin (`.tie-arc-in`); techniques draw
+nothing. Widen the window (or narrow `measuresPerRow`) to confirm that's what
+you're looking at.
+**Guard**: `docs/js/__tests__/tablature-slurs.test.js` renders the real FMB
+banjo tab and asserts arc count == technique count.
 
 ### Notes clustered in first half of measure (2/4 time rendered as 4/4)
 
