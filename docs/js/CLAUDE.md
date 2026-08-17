@@ -18,6 +18,7 @@ docs/
 │   ├── work-view.js    # THE unified song page (openWork) — all routes land here
 │   ├── song-view.js    # Lead-sheet rendering helpers, ABC notation, list nav
 │   ├── song-controls.js # Pill builders: Key / Display / Info / Export
+│   ├── tab-controls-sheet.js # Phone: re-parents the tab band's non-transport controls into a ⚙ settings sheet
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
 │   ├── tags.js         # Tag dropdown, filtering, virtual instrument tags/facets
 │   ├── title-match.js  # Song-title normalization (bounty board dedupe)
@@ -76,7 +77,20 @@ quick-controls bar, or bottom sheet anymore:
   Pages declare their chrome with `setTopBar({ back, title, actions, overflow, navActive })`.
 - **Bottom band** (`.app-bottomband`): the one home for practice/playback
   controls (tab player transport, track mixer, ABC controls). Mount content
-  with `setBottomBand(el)`; pass `null` to hide it.
+  with `setBottomBand(el)`; pass `null` to hide it. Its height is NOT a
+  constant — the phone tab strip is 65px, a wrapped desktop band is 88px —
+  so shell.js publishes the measured height as `--bottomband-h` on
+  `<html>` (ResizeObserver + on every `setBottomBand`). Anything stacked on
+  the band (drop-up popovers, the tab settings sheet, `.container`'s
+  bottom padding) offsets off that variable, never a literal.
+- **Phone tab band** (`tab-controls-sheet.js`): at ≤640px the band keeps
+  Play / Stop / tempo / loop / ⚙ and the ⚙ sheet holds everything else
+  (size, key, layout, feel, count-in, metronome, mixer, Edit). The controls
+  are MOVED into the sheet, not rebuilt — the sheet lives inside
+  `.tab-controls`, so `controls.querySelector(...)` in
+  `setupTablaturePlayer` and the listeners it attached both survive.
+  Widening the viewport moves them back and deletes the sheet, so the
+  desktop DOM is byte-identical to `createTablatureControls`' output.
 - **Pill primitive**: `pill(label, buildContent, opts)` returns a small
   labeled button that opens a popover. All song-page controls are pills.
 - **Auto-hiding chrome** (`setChromeAutoHide(on)`, enabled on song pages):
