@@ -6,6 +6,7 @@ import { songHasContent, songHasAbc } from './song-content.js';
 import { generateSlug, escapeHtml, isPlaceholder } from './utils.js';
 import { track } from './analytics.js';
 import { launchTabCreator } from './otf-editor/create-tab-entry.js';
+import { tabEntryPlan, renderExistingTabsPanel } from './otf-editor/existing-tabs.js';
 
 const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9mbXFscm55bGRsbXZnZ2lob2d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MTY3OTksImV4cCI6MjA4MjI5Mjc5OX0.Fm7j7Sk-gThA7inYeZecFBY52776lkJeXbpR7UKYoPE';
@@ -128,6 +129,7 @@ export function initAddSongPicker({ onUpload: uploadCb, onChordPro: chordProCb }
 }
 
 function showCards() {
+    hideExistingTabsStep();
     pickerCards?.classList.remove('hidden');
     requestForm?.classList.add('hidden');
     tabTargetPanel?.classList.add('hidden');
@@ -141,9 +143,11 @@ function showCards() {
  */
 function startTabFlow() {
     if (currentContext.targetSlug) {
-        openTabCreator(currentContext.targetSlug, currentContext.title || '');
+        openTabCreator(currentContext.targetSlug, currentContext.title || '',
+            { fromSearch: false });
         return;
     }
+    hideExistingTabsStep();
     pickerCards?.classList.add('hidden');
     requestForm?.classList.add('hidden');
     tabTargetPanel?.classList.remove('hidden');
@@ -230,11 +234,81 @@ function renderTabResults() {
     `).join('');
 }
 
-/** Hand off to the tab editor. Login is gated inside launchTabCreator. */
-function openTabCreator(workId, title) {
+/**
+ * Hand off to the tab editor. Login is gated inside launchTabCreator.
+ *
+ * Except: if the chosen work ALREADY has tabs for the chosen instrument,
+ * that gets said here — before the editor opens and before an hour of
+ * arranging — as a choice, not a refusal (contract principle 4). The data
+ * is already in hand (`tablature_parts` on the index row), so this costs
+ * no fetch. `force` is the "add mine as another version" answer coming
+ * back through the same door.
+ */
+function openTabCreator(workId, title, { force = false, fromSearch = true } = {}) {
     const instrument = tabInstrument?.value || currentContext.instrument || '';
-    const launched = launchTabCreator({ workId: workId || null, instrument, title });
+    const song = workId ? allSongs.find(s => s.id === workId) : null;
+    const plan = tabEntryPlan(song, instrument, { title });
+
+    if (!force && plan.kind === 'existing') {
+        showExistingTabsStep(plan, { fromSearch });
+        return;
+    }
+    const launched = launchTabCreator({
+        workId: workId || null, instrument, title,
+        existingCount: plan.count,
+    });
     if (launched) closeAddSongPicker();
+}
+
+/** The tab-target step's sub-panel showing what's already published. */
+let existingTabsStep = null;
+
+function hideExistingTabsStep() {
+    existingTabsStep?.remove();
+    existingTabsStep = null;
+    tabTargetPanel?.querySelectorAll('.picker-tab-choose')
+        .forEach(el => el.classList.remove('hidden'));
+}
+
+function showExistingTabsStep(plan, { fromSearch = true } = {}) {
+    hideExistingTabsStep();
+    if (!tabTargetPanel) return;
+
+    pickerCards?.classList.add('hidden');
+    requestForm?.classList.add('hidden');
+    tabTargetPanel.classList.remove('hidden');
+
+    // Park the search step rather than destroy it — Back must return to
+    // the results the contributor just came from. (In contribute mode the
+    // work was already known and no search happened, so Back goes home.)
+    for (const el of tabTargetPanel.children) el.classList.add('picker-tab-choose');
+    tabTargetPanel.querySelectorAll('.picker-tab-choose')
+        .forEach(el => el.classList.add('hidden'));
+
+    existingTabsStep = renderExistingTabsPanel(plan, {
+        onAdd: () => openTabCreator(plan.workId, plan.title, { force: true }),
+        onView: (tab) => openWorkPart(plan, tab, { edit: false }),
+        onImprove: (tab) => openWorkPart(plan, tab, { edit: true }),
+        onBack: fromSearch ? hideExistingTabsStep : showCards,
+    });
+    tabTargetPanel.appendChild(existingTabsStep);
+    if (headerTitle) headerTitle.textContent = 'This song already has tabs';
+}
+
+/**
+ * Leave the picker for the work page's tab part — to read it, or to edit
+ * it (the existing tab-correction path: work-view mounts the OTF editor
+ * over the rendered tab and submits a `tab-correction`).
+ *
+ * work-view imports this module, so the import is dynamic to keep the
+ * cycle out of module-evaluation order; by the time anyone clicks, the
+ * SPA has long since loaded it.
+ */
+async function openWorkPart(plan, tab, { edit }) {
+    closeAddSongPicker();
+    const view = await import('./work-view.js');
+    if (edit) view.requestTabEdit(plan.workId, tab.file);
+    view.openWork(plan.workId, { partId: plan.partId || undefined });
 }
 
 function showRequestForm() {
@@ -507,6 +581,7 @@ export function openAddSongPicker(options = {}) {
 export function closeAddSongPicker() {
     pickerModal?.classList.add('hidden');
     // Reset to cards view for next open
+    hideExistingTabsStep();
     pickerCards?.classList.remove('hidden');
     requestForm?.classList.add('hidden');
     tabTargetPanel?.classList.add('hidden');

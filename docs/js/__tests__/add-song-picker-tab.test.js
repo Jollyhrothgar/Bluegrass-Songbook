@@ -28,6 +28,7 @@ function mountPicker() {
                 <select id="picker-tab-instrument">
                     <option value=""></option>
                     <option value="banjo">Banjo</option>
+                    <option value="guitar">Guitar</option>
                 </select>
                 <div id="picker-tab-results"></div>
                 <button id="picker-tab-new"></button>
@@ -50,6 +51,17 @@ const SONGS = [
     { id: 'salt-creek', title: 'Salt Creek', artist: 'Bill Monroe' },
     { id: 'salty-dog-blues', title: 'Salty Dog Blues', artist: 'Flatt & Scruggs' },
     { id: 'gold-rush', title: 'Gold Rush', artist: 'Bill Monroe' },
+    {
+        id: 'foggy-mountain-breakdown', title: 'Foggy Mountain Breakdown',
+        artist: 'Earl Scruggs',
+        tablature_parts: [
+            { instrument: 'banjo', src_file: 'banjo.otf.json',
+              author: 'schlange', default: true },
+            { instrument: 'banjo', src_file: 'banjo-18967.otf.json',
+              author: 'Devon Wells' },
+            { instrument: 'mandolin', src_file: 'mandolin.otf.json' },
+        ],
+    },
 ];
 
 const clickTabCard = () =>
@@ -88,6 +100,7 @@ describe('picker → tablature', () => {
         rows[0].click();
         expect(launchTabCreator).toHaveBeenCalledWith({
             workId: 'salt-creek', instrument: 'banjo', title: 'Salt Creek',
+            existingCount: 0,
         });
         // Launch navigates away — the modal must not be left open behind it
         expect(document.getElementById('add-song-picker').classList.contains('hidden'))
@@ -113,6 +126,7 @@ describe('picker → tablature', () => {
         document.getElementById('picker-tab-new').click();
         expect(launchTabCreator).toHaveBeenCalledWith({
             workId: null, instrument: '', title: 'Brand New Tune',
+            existingCount: 0,
         });
     });
 
@@ -121,9 +135,82 @@ describe('picker → tablature', () => {
         clickTabCard();
         expect(launchTabCreator).toHaveBeenCalledWith({
             workId: 'gold-rush', instrument: '', title: 'Gold Rush',
+            existingCount: 0,
         });
         expect(document.querySelector('.picker-tab-target').classList.contains('hidden'))
             .toBe(true);
+    });
+});
+
+// The production bug (2026-08-16): a contributor targeted
+// foggy-mountain-breakdown with a banjo tab from this very picker, spent
+// an hour in the editor, and was blocked at Submit by the server's 409 —
+// no fork path, no warning, work at risk. Contract principle 4: the
+// offramp is a choice offered EARLY. The picker already holds the answer
+// (`tablature_parts` is on the index row), so it costs nothing to say so
+// before the editor opens.
+describe('picker → tablature: the early offramp', () => {
+    beforeEach(() => {
+        launchTabCreator.mockClear();
+        setAllSongs(SONGS);
+        mountPicker();
+        initAddSongPicker({ onUpload: () => {}, onChordPro: () => {} });
+    });
+
+    const chooseFoggy = (instrument = 'banjo') => {
+        openAddSongPicker();
+        clickTabCard();
+        const search = document.getElementById('picker-tab-search');
+        search.value = 'foggy';
+        search.dispatchEvent(new Event('input'));
+        document.getElementById('picker-tab-instrument').value = instrument;
+        document.querySelector('.picker-tab-result').click();
+    };
+
+    it('says what already exists instead of opening the editor', () => {
+        chooseFoggy();
+        expect(launchTabCreator).not.toHaveBeenCalled();
+        expect(document.querySelector('.tab-existing-head').textContent)
+            .toBe('Foggy Mountain Breakdown already has 2 banjo tabs');
+    });
+
+    it('adding yours alongside proceeds exactly as before, count in hand', () => {
+        chooseFoggy();
+        document.querySelector('.tab-existing-add').click();
+        expect(launchTabCreator).toHaveBeenCalledWith({
+            workId: 'foggy-mountain-breakdown', instrument: 'banjo',
+            title: 'Foggy Mountain Breakdown', existingCount: 2,
+        });
+    });
+
+    it('does not interrupt an instrument the work has no tab for', () => {
+        chooseFoggy('guitar');
+        expect(document.querySelector('.tab-existing-panel')).toBe(null);
+        expect(launchTabCreator).toHaveBeenCalledWith({
+            workId: 'foggy-mountain-breakdown', instrument: 'guitar',
+            title: 'Foggy Mountain Breakdown', existingCount: 0,
+        });
+    });
+
+    it('with no instrument chosen, reports every tab the song has', () => {
+        chooseFoggy('');
+        expect(document.querySelector('.tab-existing-head').textContent)
+            .toBe('Foggy Mountain Breakdown already has 3 tabs');
+    });
+
+    it('Back returns to the search results it came from', () => {
+        chooseFoggy();
+        document.querySelector('.tab-existing-back').click();
+        expect(document.querySelector('.tab-existing-panel')).toBe(null);
+        expect(document.getElementById('picker-tab-results').classList.contains('hidden'))
+            .toBe(false);
+        expect(document.querySelectorAll('.picker-tab-result').length).toBe(1);
+    });
+
+    it('leaves nothing behind when the picker closes', () => {
+        chooseFoggy();
+        document.getElementById('add-song-picker-close').click();
+        expect(document.querySelector('.tab-existing-panel')).toBe(null);
     });
 });
 

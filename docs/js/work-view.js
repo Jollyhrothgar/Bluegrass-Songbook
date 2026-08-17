@@ -37,9 +37,10 @@ import {
     getArrangementContent, peekArrangementContent,
 } from './song-content.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
-import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify } from './utils.js';
+import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify, tabLabel } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { launchTabCreator } from './otf-editor/create-tab-entry.js';
+import { tabEntryPlan, renderExistingTabsPanel } from './otf-editor/existing-tabs.js';
 import {
     TabRenderer, TabPlayer,
     TimelineTiming, identityTimeline, readingListTimeline,
@@ -74,6 +75,7 @@ let tempoOverride = null;        // { workId, quarterBpm } — user-set tempo;
 let activeTrackView = null;      // track id, 'all', or null (= lead track)
 let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
 let activeEditSession = null;    // live tab edit session (torn down on nav)
+let pendingTabEdit = null;       // parked "open this tab in the editor" ask
 
 /**
  * Tear down everything the tablature view holds live handles to: the
@@ -203,19 +205,6 @@ function buildOtfTimings(otf, compact) {
 // WORK LOADING
 // ============================================
 
-/**
- * Build the parts list from index data.
- * Each part gets a unique `partId` slug derived from its label,
- * used in URLs (#work/{id}/{partId}) and list references.
- */
-/** "banjo" -> "Banjo Tab", "tenor-banjo" -> "Tenor Banjo Tab" */
-function tabLabel(instrument) {
-    if (!instrument) return 'Tab';
-    const pretty = instrument.split('-')
-        .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    return `${pretty} Tab`;
-}
-
 /** "banjo-hangout" -> "Banjo Hangout" (source ids are slugs) */
 function prettySource(source) {
     if (!source) return '';
@@ -231,8 +220,8 @@ function prettySource(source) {
 // partId, which is a URL) belongs to the instrument and must not move when
 // the reader switches takes.
 const ARRANGEMENT_FIELDS = [
-    'file', 'source', 'source_id', 'author', 'source_page_url', 'author_url',
-    'difficulty', 'tuning',
+    'file', 'src_file', 'source', 'source_id', 'author', 'source_page_url',
+    'author_url', 'difficulty', 'tuning',
 ];
 
 /**
@@ -271,6 +260,10 @@ function applyArrangement(part, index) {
 }
 
 /**
+ * Build the parts list from index data. Each part gets a unique `partId`
+ * slug derived from its label, used in URLs (#work/{id}/{partId}) and
+ * list references.
+ *
  * @param {object} song  index row
  * @param {string|null} content  ChordPro if we already have it; null means
  *   "fetch on render" (the part is still built — has_content says it exists)
@@ -387,6 +380,10 @@ function showWorkLoading() {
  */
 export async function openWork(workId, options = {}) {
     workId = resolveWorkId(workId);
+
+    // An edit intent belongs to the work it was filed for; navigating
+    // anywhere else drops it rather than leaving it armed.
+    if (pendingTabEdit && pendingTabEdit.workId !== workId) pendingTabEdit = null;
 
     let song = allSongs.find(s => s.id === workId);
 
@@ -1543,11 +1540,7 @@ function renderBountySection() {
         btn.addEventListener('click', () => {
             const card = btn.closest('.work-bounty-card');
             if (card?.dataset.bountyType === 'tablature') {
-                launchTabCreator({           // gates on login itself
-                    workId: currentWork.id,
-                    instrument: card.dataset.bountyInstrument || '',
-                    title: currentWork.title,
-                });
+                startTabContribution(section, card.dataset.bountyInstrument || '');
                 return;
             }
             if (!requireLogin('contribute')) return;
@@ -1563,7 +1556,7 @@ function renderBountySection() {
 
     // Add a tab, unprompted — no bounty needed
     section.querySelector('#work-bounty-add-tab-btn')?.addEventListener('click', () => {
-        launchTabCreator({ workId: currentWork.id, title: currentWork.title });
+        startTabContribution(section, '');
     });
 
     // Wire request button
@@ -1573,6 +1566,81 @@ function renderBountySection() {
     });
 
     return section;
+}
+
+/**
+ * "Add a tab" / a tablature bounty's Contribute — with the offramp FIRST.
+ *
+ * If this work already has tabs for the instrument, the choice is offered
+ * here, on the page the contributor is already looking at: read one, add
+ * theirs alongside, or improve one. Only when there's nothing to collide
+ * with does the click go straight to the editor as before. This is
+ * contract principle 4 — the offramp is a choice offered early, never a
+ * 409 discovered after the work is done.
+ */
+function startTabContribution(section, instrument) {
+    if (!currentWork) return;
+    const plan = tabEntryPlan(currentWork, instrument, { title: currentWork.title });
+
+    if (plan.kind !== 'existing') {
+        launchTabCreator({           // gates on login itself
+            workId: currentWork.id, instrument, title: currentWork.title,
+        });
+        return;
+    }
+
+    const body = section.querySelector('#work-bounty-body');
+    if (!body) return;
+    body.querySelector('.tab-existing-panel')?.remove();
+    body.appendChild(renderExistingTabsPanel(plan, {
+        onAdd: () => launchTabCreator({
+            workId: currentWork.id, instrument, title: currentWork.title,
+            existingCount: plan.count,
+        }),
+        onView: (tab) => openTabPart(tab.file, { edit: false }),
+        onImprove: (tab) => openTabPart(tab.file, { edit: true }),
+        onBack: () => body.querySelector('.tab-existing-panel')?.remove(),
+    }));
+}
+
+/**
+ * A tab the reader asked for by file: select its instrument's part, point
+ * that part at this arrangement, and (for "improve") drop straight into
+ * the existing tab-correction editor once it renders.
+ *
+ * The edit intent is parked rather than executed because the OTF has to
+ * be fetched first — renderTablaturePart honors it at the end of a
+ * successful render, which is also the only place the document exists.
+ */
+function openTabPart(file, { edit = false } = {}) {
+    const part = availableParts.find(p => p.type === 'tablature' &&
+        (p.arrangements || []).some(a => a.file === file));
+    if (!part) return false;
+
+    if (edit) pendingTabEdit = { workId: currentWork?.id, file };
+
+    if (part !== activePart) {
+        selectPart(part);   // renders the part (and applies the intent)
+        return true;
+    }
+    // Already the active part: re-render it on the requested arrangement.
+    const idx = part.arrangements.findIndex(a => a.file === file);
+    applyArrangement(part, idx);
+    const content = document.getElementById('work-part-content');
+    if (content) {
+        content.innerHTML = '';
+        renderTablaturePart(part, content);
+    }
+    return true;
+}
+
+/**
+ * Ask the work page to open a specific tab file in edit mode. Used by the
+ * add-song picker's "Improve an existing tab" choice, which has to
+ * navigate to the work page before the editor can mount over the tab.
+ */
+export function requestTabEdit(workId, file) {
+    pendingTabEdit = workId && file ? { workId, file } : null;
 }
 
 /**
@@ -1830,6 +1898,15 @@ function renderDocumentPart(part, container) {
 async function renderTablaturePart(part, container) {
     container.innerHTML = '<div class="loading">Loading tablature...</div>';
 
+    // A parked "improve this tab" intent (from the picker's early offramp,
+    // or from this page's own panel) names an arrangement by file — point
+    // the part at it before anything is fetched.
+    if (pendingTabEdit && pendingTabEdit.workId === currentWork?.id) {
+        const idx = (part.arrangements || [])
+            .findIndex(a => a.file === pendingTabEdit.file);
+        if (idx >= 0) applyArrangement(part, idx);
+    }
+
     try {
         // Load OTF data. cache: 'no-cache' = revalidate with the server
         // (304 if unchanged) — Chrome's heuristic freshness otherwise
@@ -2062,6 +2139,14 @@ async function renderTablaturePart(part, container) {
             container.appendChild(attribution);
         }
 
+        // The parked "improve this one" intent: the document only exists
+        // here, so this is the one place the editor can be handed it.
+        if (pendingTabEdit && pendingTabEdit.workId === currentWork?.id &&
+            pendingTabEdit.file === part.file) {
+            pendingTabEdit = null;
+            enterTabEditMode(otf, part, container);
+        }
+
     } catch (e) {
         console.error('Error loading tablature:', e);
         container.innerHTML = `<div class="error">Failed to load tablature: ${escapeHtml(e.message)}</div>`;
@@ -2125,6 +2210,10 @@ async function enterTabEditMode(otf, part, container) {
                 otf: doc,
                 title: currentWork?.title || doc.metadata?.title || 'Untitled',
                 instrument: part.instrument || 'banjo',
+                // WHICH take is being corrected. A work can carry several
+                // arrangements per instrument, so the instrument alone
+                // names the wrong file for every one but the first.
+                file: part.src_file || undefined,
                 workId: currentWork?.id,
                 comment,
             });
