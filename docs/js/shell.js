@@ -61,6 +61,14 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
     bottomBandEl.className = 'app-bottomband hidden';
     document.body.appendChild(bottomBandEl);
 
+    // The band is no longer a fixed 52px (the phone tab strip is taller, and
+    // it grows again when a settings sheet's controls come home), so anything
+    // stacked on top of it — drop-ups, sheets, body padding — reads its live
+    // height off --bottomband-h instead of a hardcoded offset.
+    if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(syncBandHeight).observe(bottomBandEl);
+    }
+
     actionsEl = topbarEl.querySelector('#topbar-actions');
     titleEl = topbarEl.querySelector('#topbar-title');
     backBtn = topbarEl.querySelector('#topbar-back');
@@ -199,6 +207,14 @@ export function setBottomBand(contentEl) {
         bottomBandEl.classList.add('hidden');
         document.body.classList.remove('has-bottomband');
     }
+    syncBandHeight();
+}
+
+/** Publish the bottom band's live height as --bottomband-h (0 when hidden). */
+function syncBandHeight() {
+    if (!bottomBandEl) return;
+    const h = bottomBandEl.classList.contains('hidden') ? 0 : bottomBandEl.offsetHeight;
+    document.documentElement.style.setProperty('--bottomband-h', `${h}px`);
 }
 
 /**

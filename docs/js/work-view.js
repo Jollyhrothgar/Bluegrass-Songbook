@@ -54,6 +54,7 @@ import { showListPicker, updateTriggerButton } from './list-picker.js';
 import { openFlagModal } from './flags.js';
 import { trackSongView } from './analytics.js';
 import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
+import { attachTabControlsSheet } from './tab-controls-sheet.js';
 import { buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
 import {
     attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
@@ -2285,7 +2286,7 @@ function createTablatureControls(otf, part) {
     const controls = document.createElement('div');
     controls.className = 'tab-controls';
     controls.innerHTML = `
-        <div class="qc-group">
+        <div class="qc-group tab-size-group">
             <button class="tab-size-down qc-btn" title="Decrease size">−</button>
             <span class="qc-label">Aa</span>
             <button class="tab-size-up qc-btn" title="Increase size">+</button>
@@ -2295,7 +2296,7 @@ function createTablatureControls(otf, part) {
             <span class="tab-key-slot"></span>
             <button class="tab-key-up qc-btn" title="Transpose up">+</button>
         </div>
-        <div class="qc-group">
+        <div class="qc-group tab-tempo-group">
             <button class="tab-tempo-down qc-btn" title="Decrease tempo">−</button>
             <span class="qc-label tab-tempo-display">${defaultTempo}</span>
             <button class="tab-tempo-up qc-btn" title="Increase tempo">+</button>
@@ -2356,6 +2357,11 @@ function createTablatureControls(otf, part) {
         step: (delta) => setKeyIdx(keyIdx + delta),
         onChange: (cb) => changeListeners.push(cb),
     };
+
+    // Phone: everything but Play/Stop/tempo/loop moves into a ⚙ sheet. The
+    // nodes stay descendants of `controls`, so the querySelector wiring in
+    // setupTablaturePlayer (which runs after this) is unaffected.
+    attachTabControlsSheet(controls);
 
     return controls;
 }

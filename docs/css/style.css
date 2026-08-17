@@ -42,6 +42,11 @@
 
     /* Legacy - keeping for existing usage */
     --btn-label-size: var(--font-sm);
+
+    /* Chrome heights. --bottomband-h is overwritten by shell.js with the
+       band's measured height; --listbar-h is the list nav bar the band
+       stacks on top of. */
+    --listbar-h: 60px;
 }
 
 [data-theme="dark"] {
@@ -10004,8 +10009,11 @@ body.dungeon-mode .topbar-brand .brand-dungeon-face {
     border-top: 1px solid var(--border);
 }
 
+/* --bottomband-h is the band's live height, published by shell.js. The band
+   is no longer a constant (the phone playback strip is taller), so anything
+   stacked on it reads the variable; the fallback covers first paint. */
 body.has-bottomband .container {
-    padding-bottom: 72px;
+    padding-bottom: calc(var(--bottomband-h, 52px) + 20px);
 }
 
 /* Pill: inline disclosure control (replaces bespoke collapsible bars) */
@@ -10265,11 +10273,11 @@ body.chrome-hidden .app-topbar:focus-within {
 
 /* When the list nav bar and the bottom band are both present, stack them */
 body.has-list-context .app-bottomband {
-    bottom: 60px;
+    bottom: var(--listbar-h);
 }
 
 body.has-list-context.has-bottomband .container {
-    padding-bottom: 132px;
+    padding-bottom: calc(var(--bottomband-h, 52px) + var(--listbar-h) + 20px);
 }
 
 /* ============================================
@@ -10357,6 +10365,13 @@ body.has-list-context.has-bottomband .container {
     overflow: visible;
 }
 
+/* The tab settings sheet is phone-only. tab-controls-sheet.js inserts it
+   (and the ⚙ button) only while the media query matches, so the desktop DOM
+   is untouched; this belt-and-braces rule covers the resize instant. */
+.tab-settings-sheet {
+    display: none;
+}
+
 /* Phone song-page band diet: back · logo · Lists · ⋯ (Export/bug/theme/
    auth live in the overflow or on other pages) */
 @media (max-width: 640px) {
@@ -10367,24 +10382,27 @@ body.has-list-context.has-bottomband .container {
     }
 
     /* Playback band on a phone: ~13 control groups used to WRAP into 4-6
-       rows, a wall of buttons covering the tab with Play buried somewhere
-       inside it. One row that scrolls sideways instead, Play/Stop first so
-       they're never the thing you have to hunt for. */
+       rows, then (worse) into a 1468px sideways strip with no scroll
+       affordance — Play/Stop were reachable, tempo and everything past it
+       were not. The band now carries the PERFORMANCE controls only
+       (Play · Stop · tempo · loop · ⚙) and tab-controls-sheet.js re-parents
+       the rest into the settings sheet below. */
+    /* Asymmetric padding: the top gap is where the position readout rides */
     .app-bottomband:has(.tab-controls) {
-        padding: var(--space-sm) 0.5rem;
+        padding: 0.7rem 0.5rem 0.4rem;
+        min-height: 60px;
     }
 
     .app-bottomband .tab-controls {
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        justify-content: center;
+        gap: 0.4rem;
+        /* Safety net only — the five band controls fit 390px. A visible
+           scrollbar is the affordance if a narrower device overflows. */
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
-
-    .app-bottomband .tab-controls::-webkit-scrollbar {
-        display: none;
+        scrollbar-width: thin;
     }
 
     .app-bottomband .tab-controls > * {
@@ -10394,22 +10412,171 @@ body.has-list-context.has-bottomband .container {
 
     .app-bottomband .tab-controls .tab-play-btn { order: 0; }
     .app-bottomband .tab-controls .tab-stop-btn { order: 1; }
+    .app-bottomband .tab-controls .tab-tempo-group { order: 2; }
+    .app-bottomband .tab-controls .tab-loop-toggle { order: 3; }
+    .app-bottomband .tab-controls .tab-more-btn { order: 4; }
+
+    /* 44px touch targets (the desktop 32px row was 28-33px on a phone) */
+    .app-bottomband .tab-controls .qc-toggle-btn {
+        height: 44px;
+        padding: 0 0.6rem;
+        font-size: 0.9rem;
+        border-radius: var(--radius-md);
+    }
+
+    .app-bottomband .tab-controls .qc-btn {
+        width: 40px;
+        height: 44px;
+        font-size: 1.2rem;
+    }
+
+    .app-bottomband .tab-controls .qc-label {
+        height: 44px;
+        min-width: 26px;
+        padding: 0 0.2rem;
+    }
+
+    .app-bottomband .tab-controls .tab-loop-toggle {
+        height: 44px;
+        padding: 0 0.55rem;
+        border-radius: var(--radius-md);
+    }
+
+    .app-bottomband .tab-controls .tab-more-btn {
+        width: 44px;
+        padding: 0;
+        justify-content: center;
+        font-size: 1.15rem;
+    }
+
+    /* The clock has no room in a five-control row, so it rides the band's
+       top edge instead (empty whenever playback is stopped). */
+    .app-bottomband .tab-controls .tab-position {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        right: 0;
+        min-width: 0;
+        text-align: center;
+        font-size: 0.62rem;
+        line-height: 1;
+        pointer-events: none;
+    }
 
     /* The strip's overflow-x would clip the key pill's drop-up, so it
        becomes a sheet pinned above the band instead. */
-    .app-bottomband .tab-controls .pill-popover {
+    .app-bottomband .tab-controls .pill-popover,
+    .tab-settings-sheet {
         position: fixed;
         top: auto;
-        bottom: 60px;
+        bottom: calc(var(--bottomband-h, 60px) + 8px);
         left: 0.5rem;
         right: 0.5rem;
         width: auto;
         max-width: none;
     }
 
-    /* …and the band itself sits 60px up when the list nav bar is showing */
-    body.has-list-context .app-bottomband .tab-controls .pill-popover {
-        bottom: 120px;
+    /* …and the band itself sits on top of the list nav bar when showing */
+    body.has-list-context .app-bottomband .tab-controls .pill-popover,
+    body.has-list-context .tab-settings-sheet {
+        bottom: calc(var(--bottomband-h, 60px) + var(--listbar-h) + 8px);
+    }
+
+    /* Settings sheet: everything the band gave up, in labeled rows. */
+    .tab-settings-sheet {
+        z-index: 950;
+        display: block;
+        max-height: 62vh;
+        overflow-y: auto;
+        padding: var(--space-sm);
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .tab-sheet-row {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.4rem 0.15rem;
+    }
+
+    .tab-sheet-row + .tab-sheet-row {
+        border-top: 1px solid var(--border);
+    }
+
+    .tab-sheet-label {
+        flex: 0 0 3.2rem;
+        font-size: var(--font-xs);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-secondary);
+    }
+
+    .tab-sheet-items {
+        display: flex;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+        min-width: 0;
+    }
+
+    /* The mixer's band styling (left rule, inline width) makes no sense in
+       a labeled row */
+    .tab-settings-sheet .tab-track-mixer {
+        border-left: none;
+        padding: 0;
+        gap: 0.4rem;
+    }
+
+    .tab-settings-sheet .qc-btn { width: 40px; height: 40px; }
+    .tab-settings-sheet .qc-label { height: 40px; }
+    .tab-settings-sheet .qc-toggle-btn { height: 40px; padding: 0 0.75rem; }
+    .tab-settings-sheet .pill-btn { padding: 0.45rem 0.75rem; }
+    .tab-settings-sheet .pill-mode-btn { padding: 0.5rem 0.7rem; }
+    .tab-settings-sheet .track-toggle,
+    .tab-settings-sheet .tab-metronome-toggle {
+        padding: 0.45rem 0.6rem;
+    }
+
+    /* The count-in label is an unstyled native checkbox everywhere else;
+       in a row of bordered toggles it needs the same outline to read as
+       one of them. */
+    .tab-settings-sheet .tab-countin-toggle {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.45rem 0.6rem;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        background: var(--bg);
+    }
+
+    /* Drop-ups opened from inside the sheet sit above the sheet itself */
+    .tab-settings-sheet .pill-popover {
+        z-index: 960;
+    }
+}
+
+/* Narrow phones (360px and down): the same five controls, tighter. Keeps
+   the 44px height — only the gaps and side padding give. */
+@media (max-width: 374px) {
+    .app-bottomband .tab-controls {
+        gap: 0.25rem;
+    }
+
+    .app-bottomband .tab-controls .qc-btn {
+        width: 36px;
+    }
+
+    .app-bottomband .tab-controls .qc-toggle-btn {
+        padding: 0 0.45rem;
+    }
+
+    .app-bottomband .tab-controls .tab-more-btn {
+        width: 40px;
     }
 }
 
