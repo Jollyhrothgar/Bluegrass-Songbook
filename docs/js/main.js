@@ -48,6 +48,7 @@ import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setLi
 import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
 import { renderMySubmissionsView } from './my-submissions.js';
+import { renderHighScoresView } from './high-scores.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
@@ -222,6 +223,9 @@ function pushHistoryState(view, data = {}, replace = false) {
         case 'my-submissions':
             hash = '#my-submissions';
             break;
+        case 'high-scores':
+            hash = '#high-scores';
+            break;
         case 'favorites':
             // Favorites is just a list with ID 'favorites'
             // Use 'list' view type for consistency
@@ -324,6 +328,9 @@ function handleHistoryNavigation(state) {
             break;
         case 'my-submissions':
             showView('my-submissions');
+            break;
+        case 'high-scores':
+            showView('high-scores');
             break;
         case 'favorites':
             showView('favorites');
@@ -493,6 +500,14 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderMySubmissionsView(resultsDiv);
+                break;
+            case 'high-scores':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                renderHighScoresView(resultsDiv);
                 break;
             case 'song-lists':
                 searchContainer?.classList.add('hidden');
@@ -777,6 +792,11 @@ function handleDeepLink() {
         trackDeepLink('my-submissions', hash);
         showView('my-submissions');
         pushHistoryState('my-submissions', {}, true);
+        return true;
+    } else if (hash === '#high-scores') {
+        trackDeepLink('high-scores', hash);
+        showView('high-scores');
+        pushHistoryState('high-scores', {}, true);
         return true;
     } else if (hash === '#request-song') {
         trackDeepLink('request-song', hash);
@@ -2450,6 +2470,7 @@ function init() {
         onReportBug: () => openFeedbackModal({ type: 'bug-report' }),
     });
     setOverflowBase([
+        { label: 'High Scores', onClick: () => { showView('high-scores'); pushHistoryState('high-scores'); } },
         { label: 'About', onClick: () => { location.href = 'about.html'; } },
         { label: 'Dev Blog', onClick: () => { location.href = 'blog.html'; } },
         { label: 'Standards Board', onClick: () => { location.href = 'bluegrass-standards-board.html'; } },
