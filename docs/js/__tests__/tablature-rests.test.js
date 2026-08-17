@@ -93,16 +93,19 @@ describe('TabRenderer tie arcs across barlines', () => {
         expect(rows[0].querySelector('.tie-arc-in')).toBeNull();
     });
 
-    it('keeps the tight cap for technique slurs', () => {
+    // Technique slurs used to be gated behind a 60px proximity cap, which
+    // silently ate any hammer/pull/slide spanning a quarter note or more.
+    // The pairing is musical, not spatial — see tablature-slurs.test.js.
+    it('arcs a technique across a barline too', () => {
         const container = document.createElement('div');
         document.body.appendChild(container);
         const r = new TabRenderer(container);
-        // hammer-on a full measure away — no slur
+        // hammer-on from the previous note on the string, a measure back
         r.render(TRACK, [
             { measure: 1, events: [{ tick: 0, notes: [{ s: 3, f: 0 }] }] },
             { measure: 2, events: [{ tick: 0, notes: [{ s: 3, f: 2, tech: 'h' }] }] },
         ], 480, '4/4');
-        expect(container.querySelector('.tech-slur')).toBeNull();
+        expect(container.querySelector('.tech-slur')).not.toBeNull();
     });
 });
 
