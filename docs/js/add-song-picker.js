@@ -267,7 +267,7 @@ function hideExistingTabsStep() {
     existingTabsStep?.remove();
     existingTabsStep = null;
     tabTargetPanel?.querySelectorAll('.picker-tab-choose')
-        .forEach(el => el.classList.remove('hidden'));
+        .forEach(el => el.classList.remove('hidden', 'picker-tab-choose'));
 }
 
 function showExistingTabsStep(plan, { fromSearch = true } = {}) {
