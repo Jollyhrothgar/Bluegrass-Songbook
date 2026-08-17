@@ -241,3 +241,34 @@ Edge functions require:
 - `GITHUB_REPO` - Repository name (e.g., "Bluegrass-Songbook")
 
 Set via Supabase dashboard > Edge Functions > Secrets.
+
+## Working with migrations from a worktree
+
+`supabase/.temp/` is gitignored CLI state, so a fresh worktree starts unlinked
+and every `supabase` command fails with *"Cannot find project ref"*.
+`scripts/bootstrap` now seeds it from the tracked `supabase/project-ref`. That
+value is not a secret — it is the subdomain of the public `SUPABASE_URL`, which
+every browser request already carries.
+
+The **access token and database password are not** seeded and are not in
+`.env.tpl`. The CLI caches them per machine (macOS keychain) after a single
+`supabase login`, and that cache is shared across worktrees — which is why a
+push works from any worktree once the link is present.
+
+```bash
+./scripts/utility db-push     # lists pending migrations, then dry-runs
+```
+
+Read the dry run before pushing. Two traps it exists to surface:
+
+* **Out-of-order migrations.** A migration dated earlier than the last one
+  already applied is refused by a plain `db push`, with a message that reads
+  like a failure. It needs `--include-all`, which applies *every* pending
+  migration — so check what else comes along for the ride.
+* **Never renumber or edit an applied migration.** Add a new one. Rewriting a
+  file that some environments have run and others haven't is how you get
+  databases that disagree about their own schema.
+
+A timestamp collision is silent and ugly: two files sharing a version prefix is
+ambiguous to the CLI. Check `ls supabase/migrations/ | sed 's/_.*//' | uniq -d`
+before naming a new one.

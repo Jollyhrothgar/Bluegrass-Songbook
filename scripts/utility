@@ -38,6 +38,7 @@ show_help() {
     echo ""
     echo "  sync-deleted-songs"
     echo "  sync-promoted-songs"
+    echo "  db-push                 apply pending Supabase migrations (dry-run first)"
     echo "      Sync deleted songs list from Supabase"
     echo "      (requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars)"
     echo ""
@@ -157,6 +158,36 @@ case "$COMMAND" in
         echo ""
         echo "Done! Deleted songs synced and index rebuilt."
         ;;
+    db-push)
+        # Wraps `supabase db push` with the two things that bit us:
+        #   1. A dry run first. It is the only way to see an out-of-order
+        #      migration before it is a surprise — one dated February sorted
+        #      before the last applied one, and a plain push refuses it with a
+        #      message that reads like a failure.
+        #   2. The link, seeded by bootstrap. Without it the CLI reports
+        #      "Cannot find project ref" from any fresh worktree.
+        # Credentials are the CLI's own (`supabase login`, cached per machine),
+        # so nothing secret is read or written here.
+        if [ ! -f supabase/.temp/project-ref ]; then
+            echo "Not linked. Run ./scripts/bootstrap (seeds supabase/.temp/project-ref)."
+            exit 1
+        fi
+        echo "Pending migrations:"
+        if ! supabase migration list 2>/dev/null | awk -F'|' '$1 ~ /[0-9]/ && $2 !~ /[0-9]/ {print "  " $1}' | grep .; then
+            echo "  (none — local and remote agree)"
+            exit 0
+        fi
+        echo ""
+        echo "Dry run:"
+        supabase db push --dry-run 2>&1 | sed 's/^/  /'
+        echo ""
+        echo "Re-run with:  supabase db push            (in-order migrations)"
+        echo "          or:  supabase db push --include-all   (if the dry run asked for it)"
+        echo ""
+        echo "Read the dry run before choosing. --include-all applies EVERY pending"
+        echo "migration, including any that predate the last one already applied."
+        ;;
+
     sync-promoted-songs)
         echo "Fetching promoted songs list from Supabase..."
         uv run python3 scripts/lib/fetch_promoted_songs.py
