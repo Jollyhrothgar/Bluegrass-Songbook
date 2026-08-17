@@ -122,8 +122,17 @@ class TestBuildOutput:
         assert payload['types']['Flatbush Waltz'] == 'Instrumental'
         assert (tmp_path / 'bounty_decisions.json').exists()
 
-    def test_is_byte_stable(self, tmp_path):
+    def test_is_byte_stable(self, tmp_path, monkeypatch):
+        # Supplies its own wanted list rather than reading the committed one:
+        # that file is generated during the index build, and CI runs the test
+        # suite BEFORE the build, so in a fresh checkout it does not exist yet.
+        wanted = tmp_path / 'wanted.json'
+        wanted.write_text(json.dumps({'songs': [
+            {'catalogue_id': 'flatbush-waltz', 'title': 'Flatbush Waltz', 'type': 'Vocal'},
+        ]}))
+        monkeypatch.setattr(bd, 'WANTED_FILE', wanted)
         (tmp_path / 'index.jsonl').write_text('')
+
         bd.build_bounty_decisions(tmp_path, quiet=True)
         first = (tmp_path / 'bounty_decisions.json').read_bytes()
         bd.build_bounty_decisions(tmp_path, quiet=True)

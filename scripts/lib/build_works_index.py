@@ -23,6 +23,7 @@ import multiprocessing
 import os
 import re
 import shutil
+import sys
 from pathlib import Path
 from urllib.parse import quote
 
@@ -1126,10 +1127,26 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     # docs/data/.
     write_outputs(songs, output_file)
 
-    # Lower the bounty adjudication ledger to JSON the browser can read. Runs
-    # here rather than as a separate command so the three callers of this
-    # script (scripts/bootstrap and both build.yml jobs) can't drift; needs the
-    # freshly written index for chord counts.
+    # Rebuild the bounty board from the committed catalogue, then lower the
+    # adjudication ledger to JSON the browser can read. Both run here rather
+    # than as separate commands so the three callers of this script
+    # (scripts/bootstrap and both build.yml jobs) can't drift, and both need
+    # the index that was just written — build_wanted for the corpus it
+    # subtracts, build_bounty_decisions for chord counts.
+    #
+    # Order matters: the wanted list is an input to the decisions file.
+    _bounty_src = Path(__file__).parent.parent.parent / 'sources' / 'bounty-hunt' / 'src'
+    if str(_bounty_src) not in sys.path:
+        sys.path.insert(0, str(_bounty_src))
+    try:
+        from build_wanted import build_wanted
+        build_wanted()
+    except Exception as exc:                       # noqa: BLE001
+        # A broken board must not take the whole site build down — the last
+        # good wanted_songs.json is still on disk and the frontend filters it
+        # at render anyway. Loud, not fatal.
+        print(f"WARNING: wanted-list rebuild failed ({exc}); keeping the existing file")
+
     try:
         from bounty_decisions import build_bounty_decisions
     except ImportError:
