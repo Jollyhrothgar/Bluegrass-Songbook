@@ -704,9 +704,13 @@ def build_song_from_work(work_dir: Path) -> dict:
                 'source': prov.get('source'),
                 'source_id': prov.get('source_id'),
                 'author': prov.get('author'),
-                # Where the OTF lives inside works/ — used by the copy step,
-                # stripped before the index is written.
-                '_src': part.get('file'),
+                # Where the OTF lives inside works/. Used by the copy step,
+                # and PUBLISHED: a tab correction has to name the file it
+                # corrects, and the published name (which folds in the
+                # source_id) can't be mapped back to it. Without this a
+                # correction to any arrangement but the first landed on
+                # `{instrument}.otf.json` — a different part.
+                'src_file': part.get('file'),
             }
             # Arrangement-picker detail, when the listing had it
             if prov.get('difficulty'):
@@ -1069,10 +1073,10 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     published_tabs = set()
     for song in songs:
         for tab_part in song.get('tablature_parts', []):
-            # `_src` is the part's file inside works/ ({instrument}.otf.json for
-            # the first arrangement, {instrument}-{source_id}.otf.json for the
-            # alternates); it never reaches the index.
-            src_name = tab_part.pop('_src', None)
+            # `src_file` is the part's file inside works/
+            # ({instrument}.otf.json for the first arrangement,
+            # {instrument}-{source_id}.otf.json for the alternates).
+            src_name = tab_part.get('src_file')
             # dest is data/tabs/{work}-{instrument}-{source_id}.otf.json
             dest_path = Path('docs') / tab_part['file']
             work_id = song['id']

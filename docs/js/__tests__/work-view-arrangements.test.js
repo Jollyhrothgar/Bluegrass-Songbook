@@ -186,6 +186,25 @@ describe('applyArrangement', () => {
         expect(activeArrangement(p).author).toBe('Other');
     });
 
+    it('carries src_file, the file a correction to this take must name', () => {
+        // The index publishes `file` as the flattened data/tabs/ name,
+        // which can't be mapped back to works/. Without src_file on the
+        // ACTIVE arrangement, a correction to any take but the first was
+        // submitted against `{instrument}.otf.json` — a different part.
+        const p = buildPartsFromIndex({
+            id: 'x',
+            tablature_parts: [
+                banjo({ file: 'data/tabs/x-banjo-1.otf.json',
+                        src_file: 'banjo.otf.json', default: true }),
+                banjo({ source_id: '2', file: 'data/tabs/x-banjo-2.otf.json',
+                        src_file: 'banjo-2.otf.json' }),
+            ],
+        })[0];
+        expect(p.src_file).toBe('banjo.otf.json');
+        applyArrangement(p, 1);
+        expect(p.src_file).toBe('banjo-2.otf.json');
+    });
+
     it('leaves the pill label and partId alone', () => {
         const p = part();
         applyArrangement(p, 1);

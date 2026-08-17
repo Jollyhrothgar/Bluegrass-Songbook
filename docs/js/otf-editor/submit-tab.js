@@ -50,14 +50,18 @@ export async function accessToken() {
  * @param {'tab-correction'|'tab-submission'} p.type
  * @param {Object} p.otf - the document (serialized internally)
  * @param {string} p.title
- * @param {string} p.instrument - part instrument (correction target file)
+ * @param {string} p.instrument - part instrument
+ * @param {string} [p.file] - the works/ filename this correction targets
+ *   (a work can carry several arrangements per instrument; the instrument
+ *   alone names the wrong one for all but the first). Ignored for
+ *   submissions, which get their own name server-side.
  * @param {string} [p.workId] - required for corrections
  * @param {string} [p.comment] - required for corrections
  * @param {Function} [fetchImpl] - injectable for tests
  * @returns {Promise<{prNumber: number, prUrl: string}>}
  */
 export async function submitTab(
-    { type, otf, title, instrument, workId, comment },
+    { type, otf, title, instrument, file, workId, comment },
     fetchImpl = globalThis.fetch,
 ) {
     const token = await accessToken();
@@ -69,6 +73,7 @@ export async function submitTab(
         type,
         title,
         instrument,
+        ...(file ? { file } : {}),
         workId,
         comment,
         otf: serializeForSubmission(otf),
