@@ -80,6 +80,24 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `trusted_users` - Users allowed to edit someone else's chart **in place** (everyone else's edit forks to a new arrangement)
 - `pending_songs` - Any logged-in user's submission, live in the overlay, awaiting the GitHub commit
 - `review_requests` - The destructive residue (phase 2d): trusted users request delete / suppress / merge-redirect, admins decide
+- `leaderboard_identities` - Opt-in real names for the High Scores board. **RLS on, zero policies** — only `get_leaderboard()` reads it
+- `leaderboard_salt` - One random uuid that salts the leaderboard aliases. **RLS on, zero policies.** Never expose it: contributor uuids are already public in `works/*/work.yaml` (`provenance.submitted_by`), so an unsalted alias hash would be a join key straight back to real contributors
+
+**Key functions:**
+- `get_leaderboard()` (`20260816120000_leaderboard.sql`, **not yet applied**) —
+  the High Scores board, `security definer`, granted to `anon` *and*
+  `authenticated`. Aggregates `submission_log` over CONTENT actions only
+  (`song_submit`, `song_correction`, `tab_submit`, `tab_correction`; reports
+  and requests don't score) and returns
+  `(rank, display, total, songs, tabs, is_you)`.
+  **The anonymization is the feature.** No email, uuid, or auth metadata for
+  any user but the caller is in the response at all — it isn't masked, it
+  isn't there. `display` resolves as: opt-in name from
+  `leaderboard_identities` → the caller's own email on their own row →
+  otherwise a deterministic bluegrass alias from `md5(salt || user_id)` over a
+  24 x 24 adjective/noun table, with a two-hex-char suffix added only to rows
+  that actually collide. Ships the deterministic-alias half of #174; that
+  issue stays open for real profiles. Frontend: `docs/js/high-scores.js`.
 
 **Retired:** `doc_staging` (+ the `doc-staging` storage bucket) — the
 document-upload intake, removed in phase 2d. The drop migration
