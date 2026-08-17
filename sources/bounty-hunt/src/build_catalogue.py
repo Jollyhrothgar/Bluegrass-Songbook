@@ -429,6 +429,22 @@ def artist_era(name: str, begin_year, era_codes: dict) -> int:
     return 3
 
 
+
+def _dump_rows(payload: dict, key: str) -> str:
+    """Serialize with one row per line.
+
+    A rebuilt catalogue is a tracked diff, and `indent=1` turned 3,626 songs
+    into 81,000 lines — the same unreadable-corpus-PR problem the repo's data
+    tiers exist to avoid. One row per line keeps a rebuild reviewable.
+    """
+    head = {k: v for k, v in payload.items() if k != key}
+    lines = [json.dumps(head, ensure_ascii=False, indent=1)[:-2].rstrip()]
+    lines.append(f',\n "{key}": [')
+    rows = [' ' + json.dumps(r, ensure_ascii=False) for r in payload[key]]
+    lines.append(',\n'.join(rows))
+    lines.append(' ]\n}\n')
+    return ''.join(lines)
+
 def build_catalogue(report: bool = False) -> dict:
     era_codes = json.loads(RECORDINGS_FILE.read_text(encoding='utf-8'))['artists']
     seed = load_seed_roster()
@@ -534,8 +550,7 @@ def build_catalogue(report: bool = False) -> dict:
         'songs': kept,
     }
 
-    OUTPUT_FILE.write_text(
-        json.dumps(payload, indent=1, ensure_ascii=False) + '\n', encoding='utf-8')
+    OUTPUT_FILE.write_text(_dump_rows(payload, 'songs'), encoding='utf-8')
 
     if report:
         from collections import Counter
