@@ -2570,6 +2570,9 @@ function init() {
         onRequestMerge: handleRequestMergeSong,
         isAdmin: () => isAdminUser,
         isTrusted: () => isTrustedFlag,
+        // Promote is open to anyone signed in, so it reads login rather than
+        // the trusted flag. isTrusted stays — the admin actions still use it.
+        isLoggedIn: () => !!SupabaseAuth?.isLoggedIn?.(),
         onPromote: handlePromoteSong,
         isPromoted: (id) => promotedIds.has(id),
     });

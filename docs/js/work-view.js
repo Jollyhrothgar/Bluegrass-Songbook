@@ -1303,7 +1303,8 @@ let prefSubscriptionsRegistered = false;
  *   onRequestSuppress() - trusted-user suppress REQUEST (queued for an admin)
  *   onRequestMerge() - trusted-user merge-redirect REQUEST (queued for an admin)
  *   isAdmin()      - current admin status (drives the Delete overflow item)
- *   isTrusted()    - current trusted status (drives Promote + the three
+ *   isLoggedIn()   - signed-in status (drives Promote in the Dungeon)
+ *   isTrusted()    - current trusted status (drives the three
  *                    review-queue REQUEST items; suppress/merge have no
  *                    instant admin path, so they show whenever isTrusted())
  *   onPromote()    - promote/unpromote the viewed archived song
@@ -1387,10 +1388,15 @@ export function updateWorkTopBar() {
         actions.push({ el: buildExportPill() });
     }
 
-    // Trusted users see Promote on archived (dungeon) songs — a visible
+    // Any signed-in user sees Promote on archived (dungeon) songs — a visible
     // band button on desktop, ⋯ overflow on phones (same diet as Export).
+    // Not gated on trusted status: the people who notice a missing standard
+    // are the ones playing it, and a promoted work is one the corpus already
+    // holds, so the downside is a noisier index rather than injected content.
+    // Undo is narrower — see the RLS policy in
+    // supabase/migrations/20260817000000_open_promote_to_logged_in.sql.
     const promotedNow = workPageHooks.isPromoted?.(currentWork.id);
-    const showPromote = workPageHooks.isTrusted?.() &&
+    const showPromote = !!workPageHooks.isLoggedIn?.() &&
         (promotedNow || currentWork.indexed === false);
     if (showPromote && !phoneBand) {
         actions.push({

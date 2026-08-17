@@ -247,7 +247,7 @@ async function deleteSong(songId, reason = null) {
     }
 }
 
-// Promote an archived song into the main index (trusted users only)
+// Promote an archived song into the main index (any signed-in user)
 async function promoteSong(songId, reason = null) {
     if (!supabaseClient || !currentUser) {
         return { error: { message: 'Not logged in' } };
@@ -275,7 +275,7 @@ async function promoteSong(songId, reason = null) {
     }
 }
 
-// Undo a promotion (trusted users only)
+// Undo a promotion (the promoter, or a trusted user)
 async function unpromoteSong(songId) {
     if (!supabaseClient || !currentUser) {
         return { error: { message: 'Not logged in' } };
