@@ -115,7 +115,7 @@
             saveDraft, loadDraft, clearDraft,
         } from './js/otf-editor/create-tab.js';
         import {
-            parseCreateTarget, presetForInstrument, submitNewTab,
+            parseCreateTarget, presetForInstrument, submitNewTab, targetBannerText,
         } from './js/otf-editor/create-tab-entry.js';
         import { parseTef, TefVersionError } from './js/tef-import/index.js';
 
@@ -143,7 +143,8 @@
                 strong.textContent = ` — ${target.instrument}`;
                 banner.append(strong);
             }
-            banner.append('. It joins that song as a new part when it’s published.');
+            banner.append('. ');
+            banner.append(targetBannerText(target));
             banner.classList.remove('hidden');
             if (target.title && !$('f-title').value) $('f-title').value = target.title;
         }

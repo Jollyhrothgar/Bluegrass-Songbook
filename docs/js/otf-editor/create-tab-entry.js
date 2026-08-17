@@ -84,9 +84,22 @@ export function presetForInstrument(instrument) {
     return TARGET_PRESETS[sanitizeInstrument(instrument)] || '5-string-banjo';
 }
 
+/** Clamp a "tabs already published for this instrument" count, or 0. */
+function sanitizeCount(value) {
+    const n = Number(value);
+    return Number.isFinite(n) && n > 0 ? Math.min(Math.floor(n), 999) : 0;
+}
+
 /**
  * Build the create-page URL for a (possibly targeted) new tab.
  * No target → the plain "start a tab from scratch" page.
+ *
+ * `existingCount` rides along so the create page can be honest from the
+ * first pixel ("adding your version alongside 8 existing banjo tabs")
+ * without loading the search index: create.html is a standalone page, and
+ * the entry points that send you here have already counted the siblings
+ * client-side. It is display copy only — nothing branches on it, so a
+ * stale or hand-edited number costs a wrong noun, never a wrong write.
  */
 export function createTabHref(target = {}, base = 'create.html') {
     const params = new URLSearchParams();
@@ -96,6 +109,8 @@ export function createTabHref(target = {}, base = 'create.html') {
     const instrument = sanitizeInstrument(target.instrument);
     if (instrument) params.set('instrument', instrument);
     if (target.title) params.set('title', String(target.title).slice(0, 200));
+    const existing = workId ? sanitizeCount(target.existingCount) : 0;
+    if (existing) params.set('have', String(existing));
     const query = params.toString();
     return query ? `${base}?${query}` : base;
 }
@@ -112,11 +127,31 @@ export function parseCreateTarget(search) {
         typeof search === 'string' ? search : (search || ''));
     const rawWork = params.get('work') || '';
     const title = (params.get('title') || '').trim().slice(0, 200);
+    const workId = SLUG_RE.test(rawWork) ? rawWork : null;
     return {
-        workId: SLUG_RE.test(rawWork) ? rawWork : null,
+        workId,
         instrument: sanitizeInstrument(params.get('instrument')) || null,
         title: title || null,
+        existingCount: workId ? sanitizeCount(params.get('have')) : 0,
     };
+}
+
+/**
+ * The target banner's sentence.
+ *
+ * When siblings already exist the banner says so BEFORE a note is
+ * entered — "adding your version alongside 8 existing banjo tabs". The
+ * old copy promised "It joins that song as a new part", which was true
+ * only until the server's 409; both halves of that lie are gone (the
+ * server now lands siblings additively, and the count is stated up front).
+ */
+export function targetBannerText(target = {}) {
+    const count = sanitizeCount(target.existingCount);
+    if (!count) return 'It joins that song as a new part when it’s published.';
+    const kind = target.instrument ? `${target.instrument} ` : '';
+    return `You’re adding your version alongside ${count} existing ${kind}`
+        + `tab${count === 1 ? '' : 's'} — takes live side by side, nothing is `
+        + 'replaced.';
 }
 
 /** Default login gate — the same three lines as utils.requireLogin. */

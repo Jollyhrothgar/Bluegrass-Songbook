@@ -8,7 +8,7 @@ import { describe, it, expect, vi } from 'vitest';
 
 import {
     PART_INSTRUMENTS, partInstrumentFor, presetForInstrument,
-    sanitizeInstrument, createTabHref, parseCreateTarget,
+    sanitizeInstrument, createTabHref, parseCreateTarget, targetBannerText,
     launchTabCreator, submitNewTab,
 } from '../../otf-editor/create-tab-entry.js';
 import { buildNewTab, INSTRUMENT_CHOICES } from '../../otf-editor/create-tab.js';
@@ -62,19 +62,57 @@ describe('target round trip', () => {
         const target = parseCreateTarget(href.split('?')[1]);
         expect(target).toEqual({
             workId: 'salt-creek', instrument: 'banjo', title: 'Salt Creek',
+            existingCount: 0,
         });
     });
 
     it('is the plain create page with no target', () => {
         expect(createTabHref()).toBe('create.html');
         expect(parseCreateTarget('')).toEqual(
-            { workId: null, instrument: null, title: null });
+            { workId: null, instrument: null, title: null, existingCount: 0 });
     });
 
     it('drops a work id that is not a clean slug', () => {
         expect(createTabHref({ workId: '../../evil' })).toBe('create.html');
         expect(parseCreateTarget('work=..%2F..%2Fevil&title=x').workId).toBeNull();
         expect(parseCreateTarget('work=Salt_Creek').workId).toBeNull();
+    });
+});
+
+// The create page is standalone — it never loads the search index — so
+// the sibling count travels in the URL from the entry point that already
+// counted them. It is display copy: nothing branches on it.
+describe('the target banner is honest from the first pixel', () => {
+    it('carries the existing-tab count through the round trip', () => {
+        const href = createTabHref({
+            workId: 'foggy-mountain-breakdown', instrument: 'banjo',
+            title: 'Foggy Mountain Breakdown', existingCount: 3,
+        });
+        expect(parseCreateTarget(href.split('?')[1]).existingCount).toBe(3);
+    });
+
+    it('says you are adding ALONGSIDE, with the number, before a note is entered', () => {
+        const text = targetBannerText({ instrument: 'banjo', existingCount: 3 });
+        expect(text).toContain('alongside 3 existing banjo tabs');
+        expect(text).toContain('nothing is replaced');
+    });
+
+    it('keeps the old copy when the work has no tab for this instrument', () => {
+        expect(targetBannerText({ instrument: 'banjo', existingCount: 0 }))
+            .toBe('It joins that song as a new part when it’s published.');
+        expect(targetBannerText({})).toContain('joins that song as a new part');
+    });
+
+    it('reads right for exactly one sibling', () => {
+        expect(targetBannerText({ instrument: 'guitar', existingCount: 1 }))
+            .toContain('alongside 1 existing guitar tab —');
+    });
+
+    it('refuses a count with no work behind it, or a junk one', () => {
+        expect(createTabHref({ existingCount: 5 })).toBe('create.html');
+        expect(parseCreateTarget('work=salt-creek&have=lots').existingCount).toBe(0);
+        expect(parseCreateTarget('work=salt-creek&have=-3').existingCount).toBe(0);
+        expect(parseCreateTarget('have=9').existingCount).toBe(0);
     });
 });
 
