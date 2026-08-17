@@ -53,7 +53,10 @@ export function primeAudioSession() {
 export function unlockAudioContext(ctx) {
     if (!ctx) return ctx;
     primeAudioSession();
-    if (ctx.state === 'suspended') {
+    // Not just 'suspended': a route change (AirPods disconnecting, a phone
+    // call) parks Safari in the nonstandard 'interrupted' state, which
+    // resume() also clears. 'closed' rejects, which the catch absorbs.
+    if (ctx.state !== 'running') {
         try {
             ctx.resume()?.catch(err => console.warn('AudioContext resume failed:', err));
         } catch (e) {

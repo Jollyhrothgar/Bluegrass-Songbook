@@ -295,7 +295,9 @@ export class TabPlayer {
      */
     async _awaitRunningContext() {
         const ctx = this.audioContext;
-        if (ctx.state === 'suspended') {
+        if (ctx.state !== 'running') {
+            // 'suspended' or Safari's 'interrupted' (route change, phone
+            // call) — both clear via resume()
             try { await ctx.resume(); } catch (e) { /* reported below */ }
         }
         const deadline = Date.now() + this.resumeGraceMs;
