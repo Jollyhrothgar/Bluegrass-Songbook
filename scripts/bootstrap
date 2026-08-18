@@ -41,31 +41,35 @@ done
 echo "=== Bluegrass Songbook Bootstrap ==="
 echo ""
 
-# Materialize secrets from 1Password. Templates (*.env.tpl) hold op://
-# references only; real values come from the "API Keys" vault via the
-# 1Password CLI. Non-fatal if op is unavailable — secrets are only needed
-# for the analytics dashboard and a few local maintenance scripts.
-materialize_secret() {
-    local tpl="$1" out="$2"
-    [ -f "$tpl" ] || return 0
-    [ -f "$out" ] && return 0  # never clobber an existing .env
-    if ! command -v op >/dev/null 2>&1; then
-        echo "  ⚠ 1Password CLI (op) not found; skipped $out (see $tpl)."
-        return 0
-    fi
-    if op inject -i "$tpl" -o "$out" 2>/dev/null; then
-        chmod 600 "$out"
-        echo "  $out created from 1Password."
+# Secrets are NOT materialized to disk. `scripts/lib/with-secrets` injects them
+# into a command's environment with `op run` at the moment it runs, so
+# SUPABASE_SERVICE_ROLE_KEY — a key that bypasses every RLS policy — stops
+# living in plaintext in every worktree. Templates (*.env.tpl) hold op://
+# references only and stay committed.
+#
+# A .env is still honoured if one exists (machines without `op`, and CI, where
+# secrets arrive as real environment variables). But once 1Password is
+# reachable there is nothing for it to do, so a stale one is cleared rather
+# than left lying around. It is regenerable at any time:
+#     op inject -i .env.tpl -o .env
+if command -v op >/dev/null 2>&1; then
+    if op whoami >/dev/null 2>&1; then
+        for stale in .env analytics/.env; do
+            if [ -f "$stale" ]; then
+                rm -f "$stale"
+                echo "Removed $stale — secrets now come from 1Password at run time."
+            fi
+        done
+    elif [ -f .env ] || [ -f analytics/.env ]; then
+        echo "⚠ 1Password is locked; keeping the existing .env as a fallback."
+        echo "  Run 'op signin', then re-run bootstrap to clear it."
     else
-        rm -f "$out"  # remove any partial/empty output
-        echo "  ⚠ Could not read secrets (run 'op signin'); skipped $out."
+        echo "⚠ 1Password is locked. Run 'op signin' before commands that need secrets."
     fi
-}
-
-if [ -f .env.tpl ] || [ -f analytics/.env.tpl ]; then
-    echo "Provisioning secrets from 1Password..."
-    materialize_secret ".env.tpl" ".env"
-    materialize_secret "analytics/.env.tpl" "analytics/.env"
+    echo ""
+elif [ ! -f .env ]; then
+    echo "⚠ 1Password CLI (op) not found and no .env present."
+    echo "  Commands needing secrets will fail; see .env.tpl."
     echo ""
 fi
 

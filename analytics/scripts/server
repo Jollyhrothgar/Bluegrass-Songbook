@@ -50,7 +50,11 @@ echo "Dashboard will open at: http://localhost:$PORT/notebooks/dashboard.ipynb"
 echo ""
 
 cd "$REPO_ROOT"
-uv run --extra analytics jupyter notebook \
+# Secrets reach the notebook through the environment (1Password injection),
+# not through analytics/.env — the dashboard reads a service-role key, and a
+# plaintext copy per worktree is the exposure this avoids.
+./scripts/lib/with-secrets --tpl analytics/.env.tpl -- \
+    uv run --extra analytics jupyter notebook \
     --notebook-dir="$ANALYTICS_ROOT" \
     --port="$PORT" \
     --no-browser \
