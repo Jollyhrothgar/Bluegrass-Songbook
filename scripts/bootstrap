@@ -53,17 +53,18 @@ echo ""
 # than left lying around. It is regenerable at any time:
 #     op inject -i .env.tpl -o .env
 if command -v op >/dev/null 2>&1; then
-    if op whoami >/dev/null 2>&1; then
-        for stale in .env analytics/.env; do
-            if [ -f "$stale" ]; then
-                rm -f "$stale"
-                echo "Removed $stale — secrets now come from 1Password at run time."
-            fi
-        done
-    elif [ -f .env ] || [ -f analytics/.env ]; then
-        echo "⚠ 1Password is locked; keeping the existing .env as a fallback."
-        echo "  Run 'op signin', then re-run bootstrap to clear it."
-    else
+    if [ -f .env ] || [ -f analytics/.env ]; then
+        # Deliberately NOT deleted. An earlier version of this cleared them as
+        # soon as `op whoami` succeeded, which is the wrong signal twice over:
+        # a 1Password session is per-shell and short-lived, so a sign-in in one
+        # terminal deleted the fallback for every other one, and `whoami`
+        # says nothing about whether the op:// references actually resolve.
+        # Removing someone's only working credential on that basis stranded
+        # this very worktree. Say it is redundant; let a human decide.
+        echo "Note: .env is no longer needed — secrets are injected per command."
+        echo "  Remove it when you're happy: rm -f .env analytics/.env"
+        echo "  Restore any time:            op inject -i .env.tpl -o .env"
+    elif ! op whoami >/dev/null 2>&1; then
         echo "⚠ 1Password is locked. Run 'op signin' before commands that need secrets."
     fi
     echo ""
