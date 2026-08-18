@@ -123,6 +123,24 @@ jobs:
       - name: Run unit tests
         run: npm test
 
+      # The edge functions are the write path's authorization layer —
+      # classifyChange decides whether an edit lands ON somebody else's chart
+      # or beside it. Until 2026-08-18 nothing in CI ran Deno at all, so that
+      # decision shipped with no test and no type check. Both run here, on PRs
+      # too, before anything is allowed to deploy.
+      - name: Set up Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Type-check edge functions
+        working-directory: supabase
+        run: deno task check
+
+      - name: Run edge function tests (deno)
+        working-directory: supabase
+        run: deno task test
+
       - name: Set up uv
         uses: astral-sh/setup-uv@v5
 

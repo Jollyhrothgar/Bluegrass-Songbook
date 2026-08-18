@@ -152,7 +152,9 @@ ${description}
   } catch (error) {
     console.error('Error creating issue:', error)
     return new Response(
-      JSON.stringify({ error: error.message || 'Failed to create issue' }),
+      JSON.stringify({
+        error: (error instanceof Error && error.message) || 'Failed to create issue',
+      }),
       { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     )
   }

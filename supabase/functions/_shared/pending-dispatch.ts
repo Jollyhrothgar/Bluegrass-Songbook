@@ -97,9 +97,19 @@ export function partBlocks(workYaml: string): string[] {
   const blocks: string[] = []
   let current: string[] | null = null
   for (const line of workYaml.split('\n')) {
-    if (/^\s*-\s/.test(line)) {
+    // `-\s` alone was wrong, and unsafely so. A bare `-` with the entry's
+    // keys on the FOLLOWING lines is valid YAML and did not open a new
+    // block, so two parts merged into one — and because blockValue takes
+    // the first match of each key, the merged block answered with part A's
+    // `type:` and part B's `submitted_by:`. An imported chart followed by
+    // the caller's own tab therefore read as "the caller owns a lead
+    // sheet", handing them an in-place edit of somebody else's chart: the
+    // very escalation the type scoping below exists to close, reached
+    // through whitespace instead. `works/` is the hand-editable store, so
+    // "nothing we emit writes it that way" is not a defence.
+    if (/^\s*-(\s|$)/.test(line)) {
       if (current) blocks.push(current.join('\n'))
-      current = [line.replace(/^(\s*)-\s/, '$1  ')]
+      current = [line.replace(/^(\s*)-(\s|$)/, '$1  ')]
     } else if (current) {
       current.push(line)
     }

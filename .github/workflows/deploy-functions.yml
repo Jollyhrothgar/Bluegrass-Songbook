@@ -21,6 +21,9 @@ on:
     branches: [main]
     paths:
       - 'supabase/functions/**'
+      # The Deno test harness for those functions (config + lockfile).
+      - 'supabase/deno.json'
+      - 'supabase/deno.lock'
       - '.github/workflows/deploy-functions.yml'
   workflow_dispatch:
     inputs:
@@ -39,7 +42,37 @@ env:
   SUPABASE_PROJECT_ID: ofmqlrnyldlmvggihogt
 
 jobs:
+  # Nothing reaches production without the change gate's tests passing.
+  #
+  # `build.yml` already runs these on every push and PR to main, but this
+  # workflow deploys on its own trigger and would otherwise ship a broken
+  # classifyChange the moment it merged — the two workflows race, and losing
+  # that race means a live authorization bug. So the gate is repeated here,
+  # where it is the thing standing between main and the edge runtime. It costs
+  # about twenty seconds.
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Type-check edge functions
+        working-directory: supabase
+        run: deno task check
+
+      - name: Run edge function tests
+        working-directory: supabase
+        run: deno task test
+
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     permissions:
       contents: read
