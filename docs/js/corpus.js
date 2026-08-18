@@ -5,7 +5,9 @@
 //                        the background so deep links, lists and redirects to
 //                        archived works still resolve
 // - pending_songs      — Supabase overlay: every logged-in user's submission,
-//                        live in seconds while the git commit catches up
+//                        live in seconds while the git commit catches up.
+//                        A row is a SONG or a PART (`part_type`); see
+//                        transformPendingRow / applyPendingTabs below
 // - deleted/promoted   — Supabase curation overlays: the same suppression and
 //                        prune-rescue the index build applies, but instant
 //
@@ -113,12 +115,201 @@ export function pendingForkArrangements(base, pending) {
     }];
 }
 
+// ============================================================
+// The pending overlay is PARTS-AWARE
+// ============================================================
+//
+// `pending_songs` was one row per SONG: `content` held ChordPro and the row
+// stood in for a work. Tabs joining the instant pipeline added `part_type`
+// ('lead-sheet' | 'tablature'), `instrument` and `part_file`, and a
+// tablature row's `content` is a serialized OTF document.
+//
+// A tablature row must NOT become a row in the corpus of its own when it
+// names a work that already exists — it would be a song with OTF JSON where
+// its lyrics go, competing with the real work in every search. It is a PART:
+// it attaches to the work it targets. Only a tab for a work nothing has
+// published yet becomes a row, and then it is shaped like the tab-only works
+// the index build already emits (no `has_content`, `tablature_parts` only).
+
+/** Is this pending row a part hanging off a work, rather than a whole song? */
+export function isPendingTablature(row) {
+    return row?.part_type === 'tablature';
+}
+
+/** First lyric line of a ChordPro body (chord brackets stripped). */
+function extractFirstLine(content) {
+    for (const line of String(content || '').split('\n')) {
+        if (line.startsWith('{') || !line.trim()) continue;
+        const lyricsOnly = line.replace(/\[[^\]]+\]/g, '').trim();
+        if (lyricsOnly) return lyricsOnly;
+    }
+    return '';
+}
+
+/** All lyrics of a ChordPro body, flattened for search. */
+function extractLyrics(content) {
+    if (!content) return '';
+    return String(content)
+        .split('\n')
+        .filter(line => !line.startsWith('{') && line.trim())
+        .map(line => line.replace(/\[[^\]]+\]/g, ''))
+        .join(' ')
+        .trim();
+}
+
+/**
+ * A pending SONG row in index-row shape.
+ *
+ * `content` stays inline (getSongContent resolves an inline string with no
+ * request), and `created_by` rides along so the editor can tell "your song"
+ * from "someone else's" before submitting — the server decides
+ * authoritatively.
+ */
+function transformPendingSongRow(pending) {
+    return {
+        id: pending.id,
+        title: pending.title,
+        artist: pending.artist || '',
+        composer: pending.composer || '',
+        content: pending.content,
+        key: pending.key || '',
+        mode: pending.mode || '',
+        tags: pending.tags || {},
+        notes: pending.notes || '',
+        status: pending.status || (pending.content ? undefined : 'placeholder'),
+        source: 'pending',
+        replaces_id: pending.replaces_id,
+        created_by: pending.created_by || null,
+        first_line: extractFirstLine(pending.content),
+        lyrics: extractLyrics(pending.content),
+    };
+}
+
+/**
+ * A pending TABLATURE row as a part waiting for a home.
+ *
+ * Nothing here is an index row — `pending_part` is one entry for a work's
+ * `tablature_parts`, and applyPendingTabs decides which work it lands on.
+ * The OTF is carried as the string it was stored as: parsing it here would
+ * cost a JSON.parse of every pending tab on every corpus rebuild, and only
+ * the renderer ever needs the object.
+ */
+function transformPendingTabRow(pending) {
+    return {
+        id: pending.id,
+        replaces_id: pending.replaces_id || null,
+        title: pending.title,
+        artist: pending.artist || '',
+        composer: pending.composer || '',
+        part_type: 'tablature',
+        created_by: pending.created_by || null,
+        pending_part: {
+            instrument: pending.instrument || '',
+            ...(pending.part_file ? { src_file: pending.part_file } : {}),
+            content: pending.content || '',
+            pending: true,
+            pending_id: pending.id,
+        },
+    };
+}
+
+/** Transform a raw `pending_songs` row into what the merge expects. */
+export function transformPendingRow(pending) {
+    return isPendingTablature(pending)
+        ? transformPendingTabRow(pending)
+        : transformPendingSongRow(pending);
+}
+
+/**
+ * Fold pending tablature parts into a work's published `tablature_parts`.
+ *
+ * A row that names the file it targets (`part_file` → `src_file`) is a
+ * CORRECTION of that take: it replaces that entry in place, keeping the
+ * take's identity (label, author, source, and the `file` its URL and the
+ * "improve this one" intent are keyed on) and swapping only the bytes. A row
+ * with no target is a new take and is appended — same-instrument siblings are
+ * normal here (foggy-mountain-breakdown carries eight banjo tabs), so an
+ * addition never displaces anyone.
+ *
+ * `file: null` on an appended part is what tells the loader there is nothing
+ * to fetch yet; `content` is what it renders instead.
+ */
+export function overlayPendingTabParts(published = [], rows = []) {
+    const parts = [...(published || [])];
+    for (const row of rows || []) {
+        const part = row?.pending_part;
+        if (!part?.content) continue;
+        const at = part.src_file
+            ? parts.findIndex(p => p.src_file === part.src_file)
+            : -1;
+        if (at >= 0) parts[at] = { ...parts[at], ...part };
+        else parts.push({ file: null, ...part });
+    }
+    return parts;
+}
+
+/**
+ * A tab for a work nobody has published: the tab-only row shape the index
+ * build already emits for such works (`tablature_parts`, no `has_content`),
+ * so work-view builds exactly the page it would build after the commit lands.
+ */
+function pendingTabOnlyRow(rows) {
+    const first = rows[0];
+    return {
+        id: first.id,
+        title: first.title,
+        artist: first.artist || '',
+        composer: first.composer || '',
+        first_line: '',
+        lyrics: '',
+        tags: {},
+        source: 'pending',
+        created_by: first.created_by || null,
+        tablature_parts: overlayPendingTabParts([], rows),
+    };
+}
+
+/**
+ * Attach every pending tablature row to the work it targets.
+ *
+ * Deliberately NOT `source: 'pending'` on a work that merely gained a pending
+ * part: the work itself is as durable as it was a second ago, and flagging
+ * the whole row as overlay would make My Submissions report every OTHER
+ * contribution to that work as no-longer-in-the-songbook. The part carries
+ * the pending flag; the work does not.
+ */
+export function applyPendingTabs(songs, tabRows) {
+    if (!tabRows?.length) return songs;
+
+    const byTarget = new Map();
+    for (const row of tabRows) {
+        const target = row.replaces_id || row.id;
+        if (!byTarget.has(target)) byTarget.set(target, []);
+        byTarget.get(target).push(row);
+    }
+
+    const merged = songs.map(song => {
+        const rows = byTarget.get(song.id);
+        if (!rows) return song;
+        byTarget.delete(song.id);
+        return {
+            ...song,
+            tablature_parts: overlayPendingTabParts(song.tablature_parts, rows),
+        };
+    });
+
+    // Whatever is left targets nothing published — a brand-new tab-only work.
+    for (const rows of byTarget.values()) merged.push(pendingTabOnlyRow(rows));
+    return merged;
+}
+
 /**
  * Merge the row sources into the corpus the app runs on.
  *
- * Pending rows overlay static rows: a pending row with `replaces_id`
+ * Pending rows overlay static rows: a pending SONG row with `replaces_id`
  * inherits the static row's fields (tablature_parts, tags, …) and hides
- * the row it replaces.
+ * the row it replaces; a pending TABLATURE row attaches as a part instead
+ * (applyPendingTabs).
  *
  * `deleted` and `promoted` are the client-side halves of the curation
  * tables the index build applies from `docs/data/{deleted,promoted}_songs.json`
@@ -152,10 +343,16 @@ export function mergeCorpus({
         ));
     }
 
+    // Two kinds of pending row, two different jobs. Split before either
+    // rule runs so a tablature row can never be mistaken for a song that
+    // replaces a work.
+    const tabRows = pendingRows.filter(isPendingTablature);
+    const songRows = pendingRows.filter(p => !isPendingTablature(p));
+
     const staticMap = {};
     for (const row of staticRows) staticMap[row.id] = row;
 
-    const mergedPending = pendingRows.map(p => {
+    const mergedPending = songRows.map(p => {
         const base = p.replaces_id ? staticMap[p.replaces_id] : null;
         if (!base) return p;
         const merged = { ...base, ...p, source: 'pending' };
@@ -165,13 +362,15 @@ export function mergeCorpus({
     });
 
     const replacedIds = new Set(
-        pendingRows.filter(p => p.replaces_id).map(p => p.replaces_id)
+        songRows.filter(p => p.replaces_id).map(p => p.replaces_id)
     );
 
-    const songs = [
+    // Tabs go on last, so a pending part lands on the pending SONG row when a
+    // work has both (an edited chart and a new tab arrive as one work page).
+    const songs = applyPendingTabs([
         ...staticRows.filter(row => !replacedIds.has(row.id)),
         ...mergedPending,
-    ];
+    ], tabRows);
 
     ensureStems(songs);
 

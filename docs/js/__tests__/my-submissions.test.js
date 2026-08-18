@@ -87,7 +87,7 @@ describe('buildSubmissionRows', () => {
         expect(row.title).toBe('some-song');
     });
 
-    it('a log-only row whose target id already resolves in the corpus is in_songbook and linkable (e.g. a merged tab PR)', () => {
+    it('a log-only row whose target id already resolves in the corpus is in_songbook and linkable', () => {
         const logRows = [
             { id: 'log4', action: 'tab_submit', target_id: 'new-tune', created_at: '2026-08-01T00:00:00Z', metadata: { title: 'New Tune', instrument: 'banjo' } },
         ];
@@ -95,6 +95,41 @@ describe('buildSubmissionRows', () => {
         expect(row.status).toBe('in_songbook');
         expect(row.linkable).toBe(true);
         expect(row.title).toBe('New Tune');
+    });
+
+    // Tabs joined the instant pipeline: a tab now writes a real pending_songs
+    // row, so it reports Live like everything else. It used to reach here as
+    // a log row with nothing behind it and read "Requested" until a human
+    // merged its PR (contribution-pipeline.md:204-210, the accepted
+    // inconsistency this rebuild removed).
+    it('a new tab with a pending tablature row is Live, and clickable', () => {
+        const logRows = [
+            { id: 'log5', action: 'tab_submit', target_id: 'gold-rush', created_at: '2026-08-17T00:00:00Z' },
+        ];
+        const pendingRows = [
+            { id: 'gold-rush', title: 'Gold Rush', part_type: 'tablature',
+              instrument: 'banjo', github_committed: false, created_by: 'u1' },
+        ];
+        const [row] = buildSubmissionRows(logRows, pendingRows, new Set());
+        expect(row.kind).toBe(ACTION_LABELS.tab_submit);
+        expect(row.status).toBe('live');
+        expect(row.statusLabel).toBe(STATUS_LABELS.live);
+        expect(row.linkable).toBe(true);
+        expect(row.title).toBe('Gold Rush');
+    });
+
+    it('a tab correction on a work already in the songbook is Live until its row commits', () => {
+        const logRows = [
+            { id: 'log6', action: 'tab_correction', target_id: 'gold-rush', created_at: '2026-08-17T00:00:00Z' },
+        ];
+        const pending = { id: 'gold-rush', title: 'Gold Rush', part_type: 'tablature',
+                          instrument: 'banjo', part_file: 'banjo.otf.json' };
+        const corpus = new Set(['gold-rush']);   // the WORK is durable already
+
+        expect(buildSubmissionRows(logRows, [{ ...pending, github_committed: false }], corpus)[0].status)
+            .toBe('live');
+        expect(buildSubmissionRows(logRows, [{ ...pending, github_committed: true }], corpus)[0].status)
+            .toBe('in_songbook');
     });
 
     it('sorts newest first', () => {

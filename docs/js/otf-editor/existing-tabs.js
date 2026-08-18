@@ -2,9 +2,9 @@
 // editor opens, not after the work is done.
 //
 // Contract principle 4: the offramp is a CHOICE OFFERED EARLY, never a
-// rejection discovered later. Until now a contributor could target
+// rejection discovered later. Once upon a time a contributor could target
 // foggy-mountain-breakdown with a banjo tab, spend an hour arranging it,
-// hit Submit, and only then meet a 409 from create-tab-pr. The corpus has
+// hit Submit, and only then meet a 409 from the server. The corpus has
 // carried same-instrument siblings for months (foggy alone has eight banjo
 // takes), so "already exists" was never a reason to refuse — only a reason
 // to ask which of three things the contributor meant:

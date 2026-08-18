@@ -805,9 +805,50 @@ instrument families the way `tags.js getInstrumentTags` does, so a
   `requestTabEdit(workId, file)` when the work page isn't already open
 
 Same-instrument siblings are normal (foggy-mountain-breakdown carries
-eight banjo takes), so `create-tab-pr` **adds** a uniquely-named part
-rather than 409ing. A correction names the take it fixes with
-`src_file` — the published `file` name can't be mapped back to `works/`.
+eight banjo takes), so the server **adds** a uniquely-named part rather
+than 409ing. A correction names the take it fixes with `src_file` — the
+published `file` name can't be mapped back to `works/`.
+
+**Submitting is the same two steps a song takes** (`submit-tab.js`). The
+GitHub-PR flow is gone: `create-tab-pr` and `process-tab-pr.yml` are
+deleted, and nothing may call them.
+
+1. write the `pending_songs` row → **live in seconds**
+2. `POST {id}` to `auto-commit-song` → durable in `works/` in minutes
+
+Three columns make the row a part rather than a song — `part_type`
+(`'lead-sheet'` | `'tablature'`), `instrument` (required, and it becomes
+the filename), and `part_file` (the works/ filename a CORRECTION targets;
+null for a new take) — and a tablature row's `content` is the serialized
+OTF document. The client never claims create/add/update; step 2's response
+says what the server decided. `submitTab` resolves the moment the tab is
+LIVE and reports the durable half separately:
+`{id, workId, instrument, partFile, live, synced, mode, syncError}`. A
+`synced: false` is **not a failure** — the row is live and the hourly
+reconciler retries the commit; say "live, syncing shortly".
+
+**The overlay is parts-aware** (`corpus.js`). A pending tablature row is
+never a row of its own in search — `applyPendingTabs` attaches it to the
+work it targets as an entry in that work's `tablature_parts`
+(`overlayPendingTabParts`: a `part_file` match REPLACES that take keeping
+its label/author/`file`; no match APPENDS a take). Only a tab whose work
+nothing has published yet becomes a row, shaped like the tab-only works
+the index build emits. The work itself is *not* flagged `source: 'pending'`
+— it is as durable as it was; only the part is pending.
+
+**Rendering a pending take** (`work-view.js`): `loadPartOtf(part)` parses
+the overlay's `content` instead of fetching `data/tabs/…otf.json` (which
+does not exist yet); the committed path is unchanged. `otfCacheKey(part)`
+keys a pending take by its overlay row, because a correction keeps the
+`file` of the take it fixes and would otherwise hit the cache and render
+the very version it corrects. The page says so out loud ("Just submitted —
+live here now"), and the arrangement bar lists the take as *New submission
+· just submitted*.
+
+In **My Submissions** a tab is now `Live` like everything else, through the
+generic rule — no tab-specific branch. It used to sit at "Requested" until
+a human merged its PR, the inconsistency
+`docs/plans/contribution-pipeline.md:204-210` accepted on purpose.
 
 ### Bounty board dedupe (`title-match.js` + `bounty-view.js`)
 
@@ -861,10 +902,10 @@ function calls `supabase.auth.getUser(token)` and builds the attribution
 string from the verified user (`full_name` → `email` → `user:<id>`). There is
 no `submittedBy` request field and no "Rando Calrissian" fallback.
 
-- **Content writes require login** — song submission/correction
-  (`pending_songs` + `auto-commit-song`), tab submission/correction
-  (`create-tab-pr`). No token, no write: the function answers 401 and the
-  client refuses to post.
+- **Content writes require login** — song submission/correction AND tab
+  submission/correction, all four now the same path (`pending_songs` +
+  `auto-commit-song`). No token, no write: `submitTab` refuses to touch the
+  table without a session, and the function answers 401.
 - **Reports and requests stay anonymous-capable** — `create-flag-issue`
   always, `create-song-request` in its issue branch. Anonymous callers are
   attributed "Anonymous" and throttled by IP.

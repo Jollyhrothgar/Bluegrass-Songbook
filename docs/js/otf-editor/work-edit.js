@@ -174,21 +174,14 @@ export function createTabEditSession({
             status.textContent = 'Submitting…';
             try {
                 const result = await onSubmit(editor.save(), text);
-                // DOM construction, not innerHTML: the URL comes back
-                // from a network response and belongs in an attribute
-                // only if it's really a GitHub PR link
-                status.textContent = '';
-                if (result?.prUrl && /^https:\/\/github\.com\//.test(result.prUrl)) {
-                    status.append('Submitted! ');
-                    const a = document.createElement('a');
-                    a.href = result.prUrl;
-                    a.target = '_blank';
-                    a.rel = 'noopener';
-                    a.textContent = `PR #${Number(result.prNumber) || ''}`;
-                    status.append(a, ' — it goes live once merged.');
-                } else {
-                    status.textContent = 'Submitted for review!';
-                }
+                // There is no review gate any more: a correction is LIVE the
+                // moment its row lands (submit-tab.js resolves at exactly
+                // that point). The only thing left to report is whether the
+                // durable commit was accepted too — and a `synced: false` is
+                // not a failure, it is a retry the reconciler already owns.
+                status.textContent = result && result.synced === false
+                    ? 'Saved and live — syncing to the songbook shortly.'
+                    : 'Submitted — your correction is live on this tab now.';
             } catch (e) {
                 status.textContent = `Failed: ${e.message}`;
             }

@@ -65,6 +65,37 @@ export function svgPointForPosition(rowData, { measure, tick, string }, {
 }
 
 /**
+ * Scroll offset that brings [start, start + size) inside the window
+ * [scroll, scroll + viewport), keeping `margin` of breathing room at the
+ * edge it enters from. Returns the CURRENT offset when it already fits,
+ * so callers can skip the write. Pure.
+ *
+ * The scroller is the editor's canvas container, never the window: with
+ * fixed chrome the page itself doesn't scroll, so a cursor walked past
+ * the bottom of the region would otherwise be unreachable.
+ *
+ * @param {number} scroll - current scrollTop/scrollLeft
+ * @param {number} viewport - clientHeight/clientWidth of the scroller
+ * @param {number} start - item offset in CONTENT coordinates
+ * @param {number} size - item length along that axis
+ * @param {number} [margin] - padding to keep visible around the item
+ * @returns {number} the offset to scroll to
+ */
+export function scrollToReveal(scroll, viewport, start, size, margin = 24) {
+    if (!(viewport > 0)) return scroll;          // not laid out / not a scroller
+    const lead = Math.max(0, start - margin);
+    const trail = start + size + margin;
+    if (lead < scroll) return lead;              // off the near edge
+    if (trail > scroll + viewport) {
+        // Off the far edge. Never scroll so far that the item's own start
+        // leaves the window (an item taller than the viewport pins to its
+        // start rather than flipping to its end).
+        return Math.min(lead, trail - viewport);
+    }
+    return scroll;
+}
+
+/**
  * Selection highlight spans for one row: x-ranges (SVG units) covering
  * the intersection of [startAbs, endAbs) with each measure's note area.
  * Geoms carry their own startTick/ticks, so this is ts-aware and lands
@@ -649,6 +680,37 @@ export class EditorCursor {
         this.cursorElement.style.top = `${pos.y - containerSize / 2}px`;
         this.cursorElement.style.width = `${containerSize}px`;
         this.cursorElement.style.height = `${containerSize}px`;
+
+        this.revealCursor(pos);
+    }
+
+    /**
+     * Scroll the canvas container so the cursor stays visible. Overlay
+     * coordinates are already CONTENT coordinates (they include
+     * scrollTop/scrollLeft), so they compare directly against the
+     * scroller's offsets. No-op when the container can't scroll.
+     *
+     * @param {{x: number, y: number}} pos - overlay-space cursor centre
+     */
+    revealCursor(pos) {
+        const c = this.container;
+        if (!c || !pos) return;
+
+        // A small box around the crosshair centre — enough to keep the
+        // note row and a fret digit in view, not the whole 50px whisker box.
+        const HALF = 14;
+        // Landing this close to the start means the only thing still out of
+        // sight is chrome the reader wants anyway (the track header above
+        // row 1, the string labels left of measure 1), so go all the way.
+        // Applied ONLY when we were already scrolling — never to nudge a
+        // cursor that is sitting still.
+        const SNAP = 90;
+        const snap = (v) => (v < SNAP ? 0 : v);
+
+        const top = scrollToReveal(c.scrollTop, c.clientHeight, pos.y - HALF, HALF * 2);
+        if (top !== c.scrollTop) c.scrollTop = snap(top);
+        const left = scrollToReveal(c.scrollLeft, c.clientWidth, pos.x - HALF, HALF * 2);
+        if (left !== c.scrollLeft) c.scrollLeft = snap(left);
     }
 
     /**

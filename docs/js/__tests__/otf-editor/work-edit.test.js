@@ -149,8 +149,7 @@ describe('createTabEditSession', () => {
 
     it('Submit panel requires a comment and calls onSubmit with the doc', async () => {
         const onSubmit = vi.fn(async () => ({
-            prNumber: 9,
-            prUrl: 'https://github.com/x/y/pull/9',
+            id: 'gold-rush', workId: 'gold-rush', live: true, synced: true,
         }));
         session = createTabEditSession({
             mount, otf: multiTrackOtf(), trackId: 'banjo',
@@ -169,16 +168,19 @@ describe('createTabEditSession', () => {
         panel.querySelector('.tab-edit-submit-send').click();
         await vi.waitFor(() => expect(onSubmit).toHaveBeenCalled());
         expect(onSubmit).toHaveBeenCalledWith({ edited: true }, 'fixed the B part');
+        // No review, no PR link: the correction is live the moment it
+        // resolves, and the panel says exactly that.
         await vi.waitFor(() => {
-            expect(panel.querySelector('.tab-edit-submit-status').textContent)
-                .toContain('#9');
+            const status = panel.querySelector('.tab-edit-submit-status');
+            expect(status.textContent).toMatch(/live on this tab now/);
+            expect(status.querySelector('a')).toBeNull();
         });
     });
 
-    it('a non-GitHub prUrl never lands in the link href', async () => {
+    it('a durable-write failure reads as "live, syncing" — not as a failure', async () => {
         const onSubmit = vi.fn(async () => ({
-            prNumber: 1,
-            prUrl: 'javascript:alert(1)//github.com',
+            id: 'gold-rush', live: true, synced: false,
+            syncError: 'auto-commit-song returned 429',
         }));
         session = createTabEditSession({
             mount, otf: multiTrackOtf(), trackId: 'banjo',
@@ -192,8 +194,26 @@ describe('createTabEditSession', () => {
         await vi.waitFor(() => expect(onSubmit).toHaveBeenCalled());
         await vi.waitFor(() => {
             const status = panel.querySelector('.tab-edit-submit-status');
-            expect(status.textContent).toContain('Submitted');
-            expect(status.querySelector('a')).toBeNull();
+            expect(status.textContent).toMatch(/live/i);
+            expect(status.textContent).toMatch(/syncing/i);
+            expect(status.textContent).not.toMatch(/failed/i);
+        });
+    });
+
+    it('a rejected submission still reports the failure', async () => {
+        const onSubmit = vi.fn(async () => { throw new Error('Sign in to submit'); });
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, onSubmit,
+        });
+        mount.querySelector('.tab-edit-submit').click();
+        const panel = mount.querySelector('.tab-edit-submit-panel');
+        panel.querySelector('.tab-edit-submit-comment').value = 'x';
+        panel.querySelector('.tab-edit-submit-send').click();
+        await vi.waitFor(() => {
+            expect(panel.querySelector('.tab-edit-submit-status').textContent)
+                .toMatch(/Failed: Sign in to submit/);
         });
     });
 

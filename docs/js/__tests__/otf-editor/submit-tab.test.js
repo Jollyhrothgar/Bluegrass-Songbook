@@ -1,19 +1,38 @@
-// Tab submission client — payload shape, auth, size guard, error paths.
+// Tab submission client — the two-step instant pipeline: the pending_songs
+// row (live) then the auto-commit-song ask (durable). Payload shape, auth,
+// size guard, and the "live but not synced" path.
 import { describe, it, expect, vi, afterEach } from 'vitest';
 
 import {
-    serializeForSubmission, submitTab, accessToken,
+    serializeForSubmission, submitTab, accessToken, tabWorkSlug,
 } from '../../otf-editor/submit-tab.js';
 
 /** Install a fake SupabaseAuth with (or without) an active session. */
-function mockAuth(token) {
+function mockAuth(token, { userId = 'u1' } = {}) {
     globalThis.window.SupabaseAuth = {
+        getUser: () => (token ? { id: userId } : null),
         supabase: {
             auth: {
                 getSession: async () => ({
                     data: { session: token ? { access_token: token } : null },
                 }),
             },
+        },
+    };
+}
+
+/** A stub `supabase` whose upsert records the row it was handed. */
+function mockDb({ error = null } = {}) {
+    const calls = [];
+    return {
+        calls,
+        from(table) {
+            return {
+                upsert(row, options) {
+                    calls.push({ table, row, options });
+                    return Promise.resolve({ error });
+                },
+            };
         },
     };
 }
@@ -46,51 +65,131 @@ describe('serializeForSubmission', () => {
     });
 });
 
+describe('tabWorkSlug', () => {
+    it('matches utils.generateSlug for the same inputs', () => {
+        expect(tabWorkSlug('Gold Rush')).toBe('gold-rush');
+        expect(tabWorkSlug('Blue Moon of Kentucky', 'Bill Monroe'))
+            .toBe('blue-moon-of-kentucky-bill-monroe');
+    });
+});
+
 describe('submitTab', () => {
-    const okFetch = (result = { success: true, prNumber: 7, prUrl: 'https://x/pull/7' }) =>
+    const okFetch = (result = { success: true, mode: 'update' }) =>
         vi.fn(async () => ({ ok: true, json: async () => result }));
 
-    it('posts the correction payload to the PR edge function', async () => {
+    it('writes a tablature pending row, then asks auto-commit-song for the commit', async () => {
         mockAuth('user-jwt');
+        const db = mockDb();
         const f = okFetch();
+
         const out = await submitTab({
             type: 'tab-correction', otf: smallOtf(), title: 'Gold Rush',
-            instrument: 'banjo', workId: 'gold-rush', comment: 'fixed m3',
-        }, f);
-        expect(out).toEqual({ prNumber: 7, prUrl: 'https://x/pull/7' });
+            instrument: 'banjo', workId: 'gold-rush', file: 'banjo.otf.json',
+            comment: 'fixed m3',
+        }, { fetchImpl: f, supabase: db });
 
-        const [url, init] = f.mock.calls[0];
-        expect(url).toContain('/functions/v1/create-tab-pr');
-        const body = JSON.parse(init.body);
-        expect(body.type).toBe('tab-correction');
-        expect(body.workId).toBe('gold-rush');
-        expect(body.comment).toBe('fixed m3');
-        expect(JSON.parse(body.otf).tracks[0].id).toBe('banjo');
+        // Step 1 — the row. `content` is the OTF, and the three new columns
+        // are what make it a PART rather than a song.
+        expect(db.calls).toHaveLength(1);
+        const { table, row, options } = db.calls[0];
+        expect(table).toBe('pending_songs');
+        expect(options).toEqual({ onConflict: 'id' });
+        expect(row.id).toBe('gold-rush');
+        expect(row.replaces_id).toBe('gold-rush');
+        expect(row.part_type).toBe('tablature');
+        expect(row.instrument).toBe('banjo');
+        expect(row.part_file).toBe('banjo.otf.json');
+        expect(row.notes).toBe('fixed m3');
+        expect(JSON.parse(row.content).tracks[0].id).toBe('banjo');
 
         // Identity is the verified session, derived server-side: the client
         // sends its token and claims no attribution of its own.
-        expect(body.submittedBy).toBeUndefined();
+        expect(row.submittedBy).toBeUndefined();
+
+        // Step 2 — the durable ask names the row and nothing else. No mode,
+        // no work shape: the server decides create/add/update.
+        const [url, init] = f.mock.calls[0];
+        expect(url).toContain('/functions/v1/auto-commit-song');
+        expect(url).not.toContain('create-tab-pr');
+        expect(JSON.parse(init.body)).toEqual({ id: 'gold-rush' });
         expect(init.headers.Authorization).toBe('Bearer user-jwt');
+
+        expect(out).toEqual({
+            id: 'gold-rush',
+            workId: 'gold-rush',
+            instrument: 'banjo',
+            partFile: 'banjo.otf.json',
+            live: true,
+            synced: true,
+            mode: 'update',
+            syncError: null,
+        });
+    });
+
+    it('mints a work slug and leaves part_file null for a brand-new tab', async () => {
+        mockAuth('user-jwt');
+        const db = mockDb();
+
+        const out = await submitTab({
+            type: 'tab-submission', otf: smallOtf(), title: 'Brand New Reel',
+            instrument: 'mandolin',
+        }, { fetchImpl: okFetch({ success: true, mode: 'create' }), supabase: db });
+
+        const { row } = db.calls[0];
+        expect(row.id).toBe('brand-new-reel');
+        expect(row.replaces_id).toBeNull();   // nothing to attach to yet
+        expect(row.part_file).toBeNull();     // a new take, not a correction
+        expect(out.workId).toBe('brand-new-reel');
+        expect(out.mode).toBe('create');
+    });
+
+    it('is LIVE even when the durable ask fails — the reconciler owns the retry', async () => {
+        mockAuth('user-jwt');
+        const db = mockDb();
+        const f = vi.fn(async () => ({
+            ok: false, json: async () => ({ error: 'rate limited' }),
+        }));
+        vi.spyOn(console, 'warn').mockImplementation(() => {});
+
+        const out = await submitTab({
+            type: 'tab-submission', otf: smallOtf(), title: 'X', instrument: 'banjo',
+        }, { fetchImpl: f, supabase: db });
+
+        expect(db.calls).toHaveLength(1);     // the row landed
+        expect(out.live).toBe(true);
+        expect(out.synced).toBe(false);
+        expect(out.syncError).toMatch(/rate limited/);
+    });
+
+    it('surfaces a failed row write as a failure — nothing is live then', async () => {
+        mockAuth('user-jwt');
+        const f = okFetch();
+        await expect(submitTab({
+            type: 'tab-submission', otf: smallOtf(), title: 'X', instrument: 'banjo',
+        }, { fetchImpl: f, supabase: mockDb({ error: { message: 'row too large' } }) }))
+            .rejects.toThrow('row too large');
+        expect(f).not.toHaveBeenCalled();
     });
 
     it('refuses to submit without a session', async () => {
         mockAuth(null);
+        const db = mockDb();
         const f = okFetch();
         await expect(submitTab({
             type: 'tab-correction', otf: smallOtf(), title: 'Gold Rush',
             instrument: 'banjo', workId: 'gold-rush', comment: 'fixed m3',
-        }, f)).rejects.toThrow(/Sign in/);
+        }, { fetchImpl: f, supabase: db })).rejects.toThrow(/Sign in/);
+        expect(db.calls).toHaveLength(0);
         expect(f).not.toHaveBeenCalled();
     });
 
-    it('surfaces server errors', async () => {
+    it('refuses a tablature row with no instrument — it would have nowhere to land', async () => {
         mockAuth('user-jwt');
-        const f = vi.fn(async () => ({
-            ok: false, json: async () => ({ error: 'Tab too large' }),
-        }));
+        const db = mockDb();
         await expect(submitTab({
-            type: 'tab-submission', otf: smallOtf(), title: 'X', instrument: 'banjo',
-        }, f)).rejects.toThrow('Tab too large');
+            type: 'tab-submission', otf: smallOtf(), title: 'X', instrument: '',
+        }, { fetchImpl: okFetch(), supabase: db })).rejects.toThrow(/instrument/);
+        expect(db.calls).toHaveLength(0);
     });
 });
 

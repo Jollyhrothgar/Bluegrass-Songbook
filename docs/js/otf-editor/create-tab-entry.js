@@ -21,10 +21,10 @@ import { submitTab } from './submit-tab.js';
  * `5-string-banjo`), matching the 260 banjo / 45 mandolin / 23 guitar
  * parts already in works/.
  *
- * It is also a validation gate: create-tab-pr rejects any instrument that
- * isn't /^[a-z0-9-]+$/, which the editor's tenor-banjo TRACK ID
- * (`tenor_banjo`) is not. Neither the track id nor the raw preset is a
- * safe thing to send; this map is.
+ * It is also a validation gate: the writer only accepts an instrument
+ * matching /^[a-z0-9-]+$/ (it becomes a filename), which the editor's
+ * tenor-banjo TRACK ID (`tenor_banjo`) is not. Neither the track id nor the
+ * raw preset is a safe thing to send; this map is.
  */
 export const PART_INSTRUMENTS = {
     '5-string-banjo': 'banjo',
@@ -53,7 +53,7 @@ export const TARGET_PRESETS = {
 
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-/** Coerce a name into something create-tab-pr will accept, or ''. */
+/** Coerce a name into something the works writer will accept, or ''. */
 export function sanitizeInstrument(name) {
     if (!name || typeof name !== 'string') return '';
     const clean = name.toLowerCase()
@@ -144,10 +144,14 @@ export function parseCreateTarget(search) {
  * old copy promised "It joins that song as a new part", which was true
  * only until the server's 409; both halves of that lie are gone (the
  * server now lands siblings additively, and the count is stated up front).
+ *
+ * "when it's published" went the same way: a tab is live on that song's
+ * page the moment it is submitted, so the banner no longer promises a
+ * later date the reader would have to wait through.
  */
 export function targetBannerText(target = {}) {
     const count = sanitizeCount(target.existingCount);
-    if (!count) return 'It joins that song as a new part when it’s published.';
+    if (!count) return 'It joins that song as a new part as soon as you submit.';
     const kind = target.instrument ? `${target.instrument} ` : '';
     return `You’re adding your version alongside ${count} existing ${kind}`
         + `tab${count === 1 ? '' : 's'} — takes live side by side, nothing is `
@@ -184,10 +188,13 @@ export function launchTabCreator(target = {}, {
 /**
  * Submit a finished new tab.
  *
- * `workId` is what makes this a tab for an EXISTING work: create-tab-pr
- * targets `works/<workId>/<instrument>.otf.json` instead of minting a
- * fresh slug, and process_tab.py appends the part to that work's
- * work.yaml. Omit it and the submission creates its own work.
+ * `workId` is what makes this a tab for an EXISTING work: the pending row is
+ * written against that work, so the overlay hangs the part on it immediately
+ * and the writer appends the part to that work.yaml. Omit it and the
+ * submission mints its own work (a tab-only one, until someone adds a chart).
+ *
+ * Resolves once the tab is LIVE — see submit-tab.js for the return shape.
+ * Nothing here waits on a review any more; there is no review.
  */
 export async function submitNewTab(otf, target = {}, {
     requireLogin = defaultRequireLogin,

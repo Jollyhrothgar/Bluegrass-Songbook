@@ -26,7 +26,7 @@ describe('part instrument naming', () => {
             .toBe('bass');
     });
 
-    it('never emits a name create-tab-pr would reject', () => {
+    it('never emits a name the works writer (or the table constraint) would reject', () => {
         // /^[a-z0-9-]+$/ server-side — the tenor banjo TRACK ID is
         // `tenor_banjo`, which would 400. Every preset must survive.
         for (const choice of INSTRUMENT_CHOICES) {
@@ -97,9 +97,11 @@ describe('the target banner is honest from the first pixel', () => {
         expect(text).toContain('nothing is replaced');
     });
 
-    it('keeps the old copy when the work has no tab for this instrument', () => {
+    it('promises the part immediately when the work has no tab for this instrument', () => {
+        // Not "when it's published" — a tab is live on the song's page the
+        // moment it is submitted now.
         expect(targetBannerText({ instrument: 'banjo', existingCount: 0 }))
-            .toBe('It joins that song as a new part when it’s published.');
+            .toBe('It joins that song as a new part as soon as you submit.');
         expect(targetBannerText({})).toContain('joins that song as a new part');
     });
 
@@ -142,9 +144,14 @@ describe('submitNewTab', () => {
     const otf = () => buildNewTab({ title: 'Gold Rush', instruments: ['5-string-banjo'] });
 
     it('submits a new part for an existing work', async () => {
-        const submit = vi.fn(async () => ({ prNumber: 3, prUrl: 'https://github.com/x/pull/3' }));
-        await submitNewTab(otf(), { workId: 'gold-rush', instrument: 'banjo', title: 'Gold Rush' },
+        const submit = vi.fn(async () => ({
+            id: 'gold-rush', workId: 'gold-rush', live: true, synced: true, mode: 'add',
+        }));
+        const out = await submitNewTab(
+            otf(), { workId: 'gold-rush', instrument: 'banjo', title: 'Gold Rush' },
             { requireLogin: loggedIn, submit });
+        // The live/durable answer is passed straight through to the page.
+        expect(out.live).toBe(true);
 
         const payload = submit.mock.calls[0][0];
         expect(payload.type).toBe('tab-submission');

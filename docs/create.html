@@ -5,13 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a Tab — Bluegrass Book</title>
     <style>
-        :root { --bg: #fff; --text: #111; --accent: #007bff; --border: #ddd; }
-        body { font-family: system-ui, sans-serif; margin: 0; color: var(--text); }
+        /* Theme tokens mirror docs/css/style.css (this page is standalone —
+           it doesn't load the app shell — so the names and values are
+           repeated, never re-invented). --bg-hover / --text-muted /
+           --border-hover / --accent-transparent are the fallbacks the OTF
+           editor's own injected styles reach for. */
+        :root {
+            /* Tells the UA which palette its own widgets belong to. Without
+               it a <button> keeps `color: buttontext` (black) in dark mode,
+               which is how the editor's ▶/⏹ went black-on-black. */
+            color-scheme: light;
+            --bg: #fafafa;
+            --bg-secondary: #f7f7f7;
+            --bg-hover: #ededed;
+            --text: #000000;
+            --text-secondary: #666666;
+            --text-muted: #666666;
+            --border: #e0e0e0;
+            --border-hover: #cccccc;
+            --accent: #2563eb;
+            --accent-transparent: rgba(37, 99, 235, 0.25);
+            --danger: #dc2626;
+            --warning: #fd7e14;
+        }
+        [data-theme="dark"] {
+            color-scheme: dark;
+            --bg: #000000;
+            --bg-secondary: #111111;
+            --bg-hover: #1d1d1d;
+            --text: #ffffff;
+            --text-secondary: #999999;
+            --text-muted: #999999;
+            --border: #333333;
+            --border-hover: #4d4d4d;
+            --accent: #60a5fa;
+            --accent-transparent: rgba(96, 165, 250, 0.25);
+            --danger: #f87171;
+        }
+
+        /* Page shell: a flex column so the editor can be handed a DEFINITE
+           height (see body.editor-open below). Without one, the tab's
+           scroll region has no bottom and grows the page instead. */
+        html { height: 100%; }
+        body { font-family: system-ui, sans-serif; margin: 0;
+               background: var(--bg); color: var(--text);
+               min-height: 100vh; min-height: 100dvh;
+               display: flex; flex-direction: column; }
         header { padding: 12px 20px; border-bottom: 1px solid var(--border);
-                 display: flex; align-items: center; gap: 16px; }
+                 display: flex; align-items: center; gap: 16px; flex: 0 0 auto; }
         header a { color: var(--accent); text-decoration: none; }
         h1 { font-size: 18px; margin: 0; }
-        main { padding: 20px; }
+        main { padding: 20px; flex: 1 1 auto; min-height: 0; }
         .create-form { max-width: 560px; display: grid; gap: 14px; }
         .create-form label { display: grid; gap: 4px; font-size: 14px; }
         .create-form input, .create-form select { padding: 6px 8px; font-size: 14px; }
@@ -22,7 +66,8 @@
         .row label { flex: 1; }
         button.primary { padding: 10px 18px; font-size: 15px; background: var(--accent);
                          color: #fff; border: 0; border-radius: 6px; cursor: pointer; }
-        .draft-banner { background: #fff8e1; border: 1px solid #e6d9a8; padding: 10px 14px;
+        .draft-banner { background: var(--bg-secondary); border: 1px solid var(--border);
+                        border-left: 3px solid var(--warning); padding: 10px 14px;
                         border-radius: 6px; margin-bottom: 16px; display: flex;
                         gap: 12px; align-items: center; max-width: 560px; }
         .editor-bar { display: flex; justify-content: space-between; align-items: center;
@@ -32,18 +77,60 @@
                        border-radius: 8px; padding: 22px 18px; margin-bottom: 18px;
                        text-align: center; cursor: pointer; transition: border-color .15s, background .15s; }
         .import-zone:hover, .import-zone.dragover { border-color: var(--accent);
-                       background: rgba(0,123,255,0.05); }
+                       background: var(--bg-secondary); }
         .import-zone strong { display: block; font-size: 15px; margin-bottom: 4px; }
-        .import-zone .hint { font-size: 13px; color: #666; }
-        .import-error { color: #b00020; font-size: 13px; margin-top: 8px; }
-        .or-sep { max-width: 560px; text-align: center; color: #999; font-size: 13px;
-                  margin: 4px 0 14px; }
-        .target-banner { background: #eef6ff; border: 1px solid #cfe2ff; padding: 10px 14px;
+        .import-zone .hint { font-size: 13px; color: var(--text-muted); }
+        .import-error { color: var(--danger); font-size: 13px; margin-top: 8px; }
+        .or-sep { max-width: 560px; text-align: center; color: var(--text-muted);
+                  font-size: 13px; margin: 4px 0 14px; }
+        .target-banner { background: var(--bg-secondary); border: 1px solid var(--border);
+                         border-left: 3px solid var(--accent); padding: 10px 14px;
                          border-radius: 6px; margin-bottom: 16px; max-width: 560px;
                          font-size: 14px; }
+        .target-banner a { color: var(--accent); }
         .target-banner strong { font-weight: 600; }
         .hidden { display: none !important; }
+
+        /* ── Editing: fixed chrome, scrolling tab ────────────────────────
+           The window is the frame. Header + title row pin to the top, the
+           editor's toolbar and transport pin to the bottom (editor.js's
+           fill mode), and the ONLY thing that scrolls is the tablature in
+           between. Nothing here may let the document scroll: that is what
+           used to carry the toolbar off the screen.
+           dvh over vh so mobile Safari's collapsing URL bar doesn't leave
+           the bottom controls under the browser chrome. */
+        html.editor-open { height: 100%; overflow: hidden; }
+        body.editor-open { height: 100vh; height: 100dvh; overflow: hidden; }
+        body.editor-open main {
+            padding: 0; min-height: 0;
+            display: flex; flex-direction: column; overflow: hidden;
+        }
+        body.editor-open #target-banner { flex: 0 0 auto; margin: 10px 12px 0; }
+        body.editor-open #editor-wrap {
+            flex: 1 1 auto; min-height: 0;
+            display: flex; flex-direction: column;
+        }
+        body.editor-open .editor-bar {
+            flex: 0 0 auto; margin: 0;
+            padding: 8px 12px; border-bottom: 1px solid var(--border);
+        }
+        /* The one flexible track: everything else is fixed-size chrome */
+        body.editor-open #editor-host { flex: 1 1 0; min-height: 0; }
+
+        @media (max-width: 640px) {
+            body.editor-open header { padding: 8px 12px; }
+            body.editor-open h1 { font-size: 16px; }
+        }
     </style>
+    <script>
+        // Follow the app's theme (docs/js/main.js writes localStorage.theme).
+        // Inline + synchronous so the page never flashes light first.
+        try {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        } catch (e) { /* storage blocked — light theme is a fine default */ }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
@@ -97,7 +184,7 @@
             <div class="editor-bar">
                 <strong id="editor-title"></strong>
                 <span>
-                    <button id="btn-submit">🚀 Submit for review</button>
+                    <button id="btn-submit">🚀 Submit tab</button>
                     <button id="btn-download">⬇ Download OTF</button>
                     <button id="btn-new">Start over</button>
                     <span id="submit-status"></span>
@@ -162,6 +249,15 @@
 
         let editor = null;
 
+        // Editing takes over the viewport: the page stops scrolling so the
+        // header/title row stay pinned up top and the editor's own toolbar
+        // and transport stay pinned at the bottom. Both elements carry the
+        // class — <html> too, or iOS still rubber-bands the document.
+        function setEditingLayout(on) {
+            document.documentElement.classList.toggle('editor-open', on);
+            document.body.classList.toggle('editor-open', on);
+        }
+
         function openEditor(otf) {
             $('create-form').classList.add('hidden');
             $('draft-banner').classList.add('hidden');
@@ -169,10 +265,13 @@
             document.querySelector('.or-sep')?.classList.add('hidden');
             $('editor-wrap').classList.remove('hidden');
             $('editor-title').textContent = otf.metadata?.title || 'Untitled';
+            setEditingLayout(true);
             editor = new OTFEditor({
                 container: $('editor-host'),
                 otf,
                 trackId: otf.tracks[0]?.id,
+                // The host owns the height; the tab scrolls inside the editor
+                fillHeight: true,
                 onChange: (doc) => saveDraft(doc, target),
             });
         }
@@ -269,20 +368,19 @@
                 // submitNewTab picks the corpus instrument name and passes
                 // the target work through as workId.
                 const result = await submitNewTab(doc, target);
-                // DOM construction, not innerHTML: the URL comes back
-                // from a network response
-                status.textContent = '';
-                if (result?.prUrl && /^https:\/\/github\.com\//.test(result.prUrl)) {
-                    status.append('Submitted! ');
-                    const a = document.createElement('a');
-                    a.href = result.prUrl;
-                    a.target = '_blank';
-                    a.rel = 'noopener';
-                    a.textContent = `PR #${Number(result.prNumber) || ''}`;
-                    status.append(a, ' — it goes live once merged.');
-                } else {
-                    status.textContent = 'Submitted for review!';
-                }
+                // No review gate any more: the tab is LIVE the moment
+                // submitNewTab resolves — its row is in the overlay and the
+                // work page renders it from there. The only thing left to
+                // report is the durable half, and `synced: false` is a retry
+                // the reconciler owns, not a failure. DOM construction, not
+                // innerHTML: the work id comes back from a network round trip.
+                status.textContent = result?.synced === false
+                    ? 'Saved and live — syncing to the songbook shortly. '
+                    : 'Submitted — your tab is live now. ';
+                const link = document.createElement('a');
+                link.href = `index.html#work/${encodeURIComponent(result.workId)}`;
+                link.textContent = 'View it';
+                status.append(link);
                 clearDraft();
             } catch (e) {
                 status.textContent = `Failed: ${e.message}`;
@@ -293,6 +391,7 @@
             clearDraft();
             editor?.destroy();
             editor = null;
+            setEditingLayout(false);
             $('editor-wrap').classList.add('hidden');
             $('create-form').classList.remove('hidden');
             $('import-zone').classList.remove('hidden');

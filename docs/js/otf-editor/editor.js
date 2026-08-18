@@ -2,7 +2,9 @@
 // Coordinates all editor components
 
 import { TabRenderer } from '../renderers/tablature.js';
-import { TabPlayer } from '../renderers/tab-player.js';
+import {
+    TabPlayer, PITCH_TO_MIDI, INSTRUMENTS, getInstrumentKey,
+} from '../renderers/tab-player.js';
 import { EditorState, EditorMode, DURATIONS, TICKS_PER_BEAT } from './state.js';
 import { EditorCursor, positionFromSvgPoint } from './cursor.js';
 import {
@@ -16,7 +18,13 @@ import { NoteEntryPopover } from './popover.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
 import { ContextMenu } from './context-menu.js';
 import { EditEventRecorder } from './recorder.js';
-import { unlockAudioContext } from '../audio-unlock.js';
+
+// Note-entry feedback: a short pluck of the SAME sampled voice playback
+// uses. Volume matches TabPlayer's default mixer so typing a note and
+// hearing it back sound like one instrument, not two.
+const FEEDBACK_DURATION_SEC = 0.4;
+const FEEDBACK_VOLUME = 0.7;
+const DEFAULT_FEEDBACK_TUNING = ['D4', 'B3', 'G3', 'D3', 'G4'];
 
 /**
  * OTF Editor - Main entry point
@@ -41,6 +49,10 @@ export class OTFEditor {
             otf: null,
             instrument: '5-string-banjo',
             trackId: null,      // which track of a multi-track OTF to edit
+            // fillHeight: the host gives the editor a definite height, so
+            // the TAB scrolls inside the editor and the chrome (toolbar,
+            // transport) is pinned instead of scrolling off with the page.
+            fillHeight: false,
             onSave: null,
             onChange: null,
             ...options,
@@ -108,9 +120,11 @@ export class OTFEditor {
         this.player = new TabPlayer();
         this.isPlaying = false;
 
-        // Audio feedback for note entry
+        // Audio feedback for note entry. It shares the player's context and
+        // soundfonts — see _playNoteFeedback.
         this.audioContext = null;
         this.feedbackEnabled = true;
+        this._warmedVoices = new Set();
 
         // DOM structure
         this.container = this.options.container;
@@ -130,6 +144,9 @@ export class OTFEditor {
         // Clear container
         this.container.innerHTML = '';
         this.container.classList.add('otf-editor-container');
+        if (this.options.fillHeight) {
+            this.container.classList.add('otf-editor-fill');
+        }
 
         // Create editor structure
         this.editorRoot = document.createElement('div');
@@ -261,12 +278,62 @@ export class OTFEditor {
             .editor-status-bar {
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
+                flex-shrink: 0;
                 gap: 16px;
                 padding: 8px 16px;
                 background: var(--bg-secondary, #f5f5f5);
                 border-top: 1px solid var(--border, #ddd);
                 font-size: 12px;
                 color: var(--text-muted, #666);
+            }
+
+            /* ── Fill mode ─────────────────────────────────────────────
+               The host hands the editor a definite height (a flex/grid
+               track, not content). Chrome is pinned top and bottom and
+               ONLY the tab scrolls — so the page itself never scrolls
+               the toolbar or the transport out of reach.
+               min-height:0 everywhere is load-bearing: a flex item's
+               default min-height:auto refuses to shrink below its
+               content, which is exactly how a "scrolling region" grows
+               the page instead of scrolling. */
+            .otf-editor-container.otf-editor-fill {
+                height: 100%;
+                min-height: 0;
+            }
+
+            .otf-editor-fill .otf-editor {
+                height: 100%;
+                min-height: 0;
+                border-radius: 0;
+                border-width: 1px 0 0 0;
+            }
+
+            /* Visual order: tab, then toolbar, then transport. DOM order
+               is unchanged, so focus/reading order still starts with the
+               toolbar. */
+            .otf-editor-fill .editor-canvas-container {
+                order: 1;
+                min-height: 0;
+                overscroll-behavior: contain;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .otf-editor-fill .editor-toolbar-container { order: 2; }
+            .otf-editor-fill .editor-status-bar { order: 3; }
+
+            /* The toolbar's divider now faces the tab above it */
+            .otf-editor-fill .otf-editor-toolbar {
+                border-bottom: 0;
+                border-top: 1px solid var(--border, #ddd);
+            }
+
+            @media (max-width: 640px) {
+                .otf-editor-fill .editor-canvas-container { padding: 8px; }
+                .otf-editor-fill .editor-status-bar {
+                    gap: 8px;
+                    padding: 6px 8px;
+                }
             }
 
             .status-item {
@@ -1282,48 +1349,123 @@ export class OTFEditor {
 
     /**
      * Create/resume the note-feedback AudioContext synchronously.
+     *
+     * This IS the player's context: entry feedback and playback share one
+     * audio stack, so a typed note plays through the same sampled voice
+     * (and the same iOS unlock) as pressing Play. TabPlayer.unlockAudio()
+     * is synchronous by contract — nothing may await before it.
+     *
      * @returns {AudioContext|null} null when the browser has no Web Audio
      */
     _ensureAudioContext() {
-        const Ctx = window.AudioContext || window.webkitAudioContext;
-        if (!Ctx) return null;
-        if (!this.audioContext) this.audioContext = new Ctx();
-        return unlockAudioContext(this.audioContext);
+        const ctx = this.player?.unlockAudio() || null;
+        this.audioContext = ctx;
+        return ctx;
     }
 
     /**
-     * Play audio feedback for note entry
+     * Play audio feedback for note entry.
+     *
+     * Sampled voice when the track's soundfont is already decoded, the
+     * synth beep otherwise. NOTHING here awaits: a note has to sound the
+     * instant it is typed, so a missing soundfont beeps now and warms in
+     * the background for the next note.
+     *
      * @param {number} fret - Fret number
      * @param {number} string - String number (1-indexed)
      */
     _playNoteFeedback(fret, string) {
         // Note entry IS the gesture: create and resume here, synchronously,
         // or iOS leaves the context suspended and the pluck is silent.
-        if (!this._ensureAudioContext()) return;
+        const ctx = this._ensureAudioContext();
+        if (!ctx) return;
 
         // Get string tuning to calculate pitch
         const track = this.state.getCurrentTrack();
-        const tuning = track?.tuning || ['D4', 'B3', 'G3', 'D3', 'G4'];
+        const tuning = track?.tuning?.length ? track.tuning : DEFAULT_FEEDBACK_TUNING;
         const stringPitch = tuning[string - 1] || 'G3';
+        const instrumentKey = getInstrumentKey(track?.instrument);
 
-        // Parse pitch to frequency
+        if (this._playSampledFeedback(ctx, instrumentKey, stringPitch, fret)) return;
+
+        this._warmFeedbackVoice(instrumentKey, track);
+        this._playBeepFeedback(ctx, stringPitch, fret);
+    }
+
+    /**
+     * The already-decoded WebAudioFont preset for an instrument, or null.
+     * Never fetches and never awaits — a preset whose zones have no buffers
+     * yet would schedule silence.
+     */
+    _decodedPreset(instrumentKey) {
+        const data = window[INSTRUMENTS[instrumentKey]?.var];
+        if (!data?.zones?.length) return null;
+        return data.zones.every(zone => zone.buffer) ? data : null;
+    }
+
+    /**
+     * One pluck of the track's real instrument.
+     * @returns {boolean} false when the sampled voice isn't usable yet
+     */
+    _playSampledFeedback(ctx, instrumentKey, stringPitch, fret) {
+        const waf = this.player?.player;   // the WebAudioFontPlayer, post-init
+        // A context that isn't running has a frozen clock: queueing into it
+        // is silence with no fallback. Let the beep path handle that.
+        if (!waf || ctx.state !== 'running') return false;
+        const preset = this._decodedPreset(instrumentKey);
+        if (!preset) return false;
+
+        const open = PITCH_TO_MIDI[stringPitch];
+        if (open == null) return false;
+        try {
+            waf.queueWaveTable(ctx, ctx.destination, preset, ctx.currentTime,
+                open + fret, FEEDBACK_DURATION_SEC, FEEDBACK_VOLUME);
+        } catch (e) {
+            return false;   // fall through to the beep rather than go silent
+        }
+        return true;
+    }
+
+    /**
+     * Fetch + decode the track's soundfont in the BACKGROUND so later notes
+     * get the sampled voice. Attempted once per instrument per session: a
+     * blocked CDN must not re-fire on every keystroke, it just means the
+     * beep stays. Deliberately not awaited by the caller.
+     */
+    _warmFeedbackVoice(instrumentKey, track) {
+        if (!track || this._warmedVoices.has(instrumentKey)) return;
+        this._warmedVoices.add(instrumentKey);
+        try {
+            // init() STARTS here (its synchronous half is the iOS unlock);
+            // only the network part is left to settle later.
+            Promise.resolve(this.player?.init())
+                .then(() => this.player?.loadInstruments([track]))
+                .catch(() => { /* offline or blocked: the beep is the fallback */ });
+        } catch (e) {
+            /* nothing may escape into the note-entry path */
+        }
+    }
+
+    /**
+     * The synthesized fallback pluck — no network, always available.
+     */
+    _playBeepFeedback(ctx, stringPitch, fret) {
         const freq = this._pitchToFrequency(stringPitch, fret);
 
-        // Create oscillator for short pluck sound
-        const osc = this.audioContext.createOscillator();
-        const gain = this.audioContext.createGain();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
 
         osc.type = 'triangle';
         osc.frequency.value = freq;
 
         // Quick attack, short decay (pluck-like envelope)
-        const now = this.audioContext.currentTime;
+        const now = ctx.currentTime;
         gain.gain.setValueAtTime(0, now);
         gain.gain.linearRampToValueAtTime(0.3, now + 0.01);
         gain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
 
         osc.connect(gain);
-        gain.connect(this.audioContext.destination);
+        gain.connect(ctx.destination);
 
         osc.start(now);
         osc.stop(now + 0.15);
@@ -1506,7 +1648,7 @@ export class OTFEditor {
 
         // Clear container
         this.container.innerHTML = '';
-        this.container.classList.remove('otf-editor-container');
+        this.container.classList.remove('otf-editor-container', 'otf-editor-fill');
 
         // Clear references
         this.state = null;

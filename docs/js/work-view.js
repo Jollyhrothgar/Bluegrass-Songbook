@@ -221,10 +221,54 @@ function prettySource(source) {
 // `label` is deliberately NOT here: the pill's label (and therefore its
 // partId, which is a URL) belongs to the instrument and must not move when
 // the reader switches takes.
+// `content` / `pending` / `pending_id` belong here too: a take that is still
+// in the pending overlay carries its OTF inline (there is no published file
+// to fetch yet), and switching AWAY from it must clear those — applyArrangement
+// copies `arr[f]`, which is undefined on a published take, so the fields
+// disappear on the way out for free.
 const ARRANGEMENT_FIELDS = [
     'file', 'src_file', 'source', 'source_id', 'author', 'source_page_url',
-    'author_url', 'difficulty', 'tuning',
+    'author_url', 'difficulty', 'tuning', 'content', 'pending', 'pending_id',
 ];
+
+/**
+ * What identifies the OTF currently in `loadedTablature`.
+ *
+ * Normally the published file path. A pending take has no file yet, so it is
+ * keyed by its overlay row instead — without which a correction to a tab you
+ * are already looking at would hit the cache and render the version it fixes.
+ */
+function otfCacheKey(part) {
+    return part?.pending ? `pending:${part.pending_id}` : part?.file;
+}
+
+/**
+ * The OTF document for a tablature take.
+ *
+ * Two sources, one of which is new. A published take is FETCHED, exactly as
+ * it always was — `cache: 'no-cache'` means revalidate with the server (304
+ * if unchanged), because Chrome's heuristic freshness otherwise serves
+ * long-unchanged tab files for WEEKS after they are re-published (a January
+ * parse of cherokee-shuffle-a survived multiple hard reloads and rendered
+ * 2/2 left-packed measures over the corrected data).
+ *
+ * A PENDING take has nothing to fetch: it was submitted seconds ago and its
+ * document lives in the overlay row (corpus.overlayPendingTabParts), where
+ * it is still the string it was stored as. Parsing that string is the whole
+ * branch — no request, and the committed path above it is untouched.
+ */
+export async function loadPartOtf(part, fetchImpl = fetch) {
+    if (part?.pending) {
+        try {
+            return JSON.parse(part.content);
+        } catch {
+            throw new Error('This tab was just submitted and could not be read back.');
+        }
+    }
+    const response = await fetchImpl(part.file, { cache: 'no-cache' });
+    if (!response.ok) throw new Error(`Failed to load ${part.file}`);
+    return response.json();
+}
 
 /**
  * Order an instrument's arrangements default-first.
@@ -821,12 +865,18 @@ function renderPartTabs() {
 
 /** Human "Intermediate · Open G · Banjo Hangout" for one arrangement. */
 function arrangementMeta(arr, { withSource = true } = {}) {
-    return [arr.difficulty, arr.tuning, withSource ? prettySource(arr.source) : null]
-        .filter(Boolean).join(' · ');
+    return [
+        arr.pending ? 'just submitted' : null,
+        arr.difficulty, arr.tuning,
+        withSource ? prettySource(arr.source) : null,
+    ].filter(Boolean).join(' · ');
 }
 
+// A take still in the pending overlay has no author on the row (the identity
+// is the session, resolved server-side when it commits) — and "Unattributed"
+// would be wrong twice over, so it says what it actually is.
 function arrangementWho(arr) {
-    return arr.author || arr.label || 'Unattributed';
+    return arr.author || arr.label || (arr.pending ? 'New submission' : 'Unattributed');
 }
 
 /**
@@ -1916,18 +1966,13 @@ async function renderTablaturePart(part, container) {
     }
 
     try {
-        // Load OTF data. cache: 'no-cache' = revalidate with the server
-        // (304 if unchanged) — Chrome's heuristic freshness otherwise
-        // serves long-unchanged tab files for WEEKS after they are
-        // re-published (a January parse of cherokee-shuffle-a survived
-        // multiple hard reloads and rendered 2/2 left-packed measures
-        // over the corrected data).
+        // Load the document (fetched, or read out of the pending overlay —
+        // see loadPartOtf) unless the one in hand is already this take's.
+        const cacheKey = otfCacheKey(part);
         let otf = loadedTablature;
-        if (!otf || otf._partFile !== part.file) {
-            const response = await fetch(part.file, { cache: 'no-cache' });
-            if (!response.ok) throw new Error(`Failed to load ${part.file}`);
-            otf = await response.json();
-            otf._partFile = part.file;
+        if (!otf || otf._partFile !== cacheKey) {
+            otf = await loadPartOtf(part);
+            otf._partFile = cacheKey;
             setLoadedTablature(otf);
         }
 
@@ -2116,6 +2161,27 @@ async function renderTablaturePart(part, container) {
             editBtn.addEventListener('click', () => enterTabEditMode(otf, part, container));
         }
 
+        // Say out loud that this take is the overlay, not the songbook yet.
+        // The reader is looking at real notes seconds after they were
+        // submitted; silence here would read as "this is published", and the
+        // first person to notice would be the submitter wondering why their
+        // tab vanished from a fresh browser after the commit renamed it.
+        // Reuses the attribution block's classes — no new CSS surface.
+        if (part.pending) {
+            const notice = document.createElement('div');
+            notice.className = 'tab-attribution';
+            notice.innerHTML = `
+                <div class="attribution-content">
+                    <span class="attribution-item">🌱 Just submitted — live here now</span>
+                </div>
+                <div class="attribution-disclaimer">
+                    This tab is in the submission queue and is being added to the
+                    songbook. It is readable and playable right away; nothing is
+                    waiting on a review.
+                </div>`;
+            container.appendChild(notice);
+        }
+
         // Credit the arrangement that's actually on screen — `part` carries
         // the loaded arrangement's fields (see applyArrangement), so this
         // follows an arrangement switch instead of naming the pinned default.
@@ -2189,7 +2255,10 @@ async function enterTabEditMode(otf, part, container) {
     // observers now; renderTablaturePart rebuilds them on exit.
     destroyTrackRenderers();
     container.innerHTML = '';
-    const baseName = (part.file || 'tab').split('/').pop().replace(/\.otf\.json$/, '');
+    // A pending take has no published file to name the download after.
+    const baseName = (part.file
+        || [currentWork?.id, part.instrument].filter(Boolean).join('-')
+        || 'tab').split('/').pop().replace(/\.otf\.json$/, '');
 
     activeEditSession = createTabEditSession({
         mount: container,
@@ -2198,22 +2267,22 @@ async function enterTabEditMode(otf, part, container) {
         filename: `${baseName}-edited`,
         editorFactory: (opts) => new OTFEditor(opts),
         onApply: (doc) => {
-            doc._partFile = part.file; // keep the view cache keyed to this part
+            doc._partFile = otfCacheKey(part); // keep the view cache keyed to this part
             setLoadedTablature(doc);
         },
         onExit: () => {
             activeEditSession = null;
             renderTablaturePart(part, container);
         },
-        // Save-back: same human-approved GitHub pipeline as song
-        // corrections — the editor's payoff beyond Download.
-        // Login gate lands here, at submit time: editing (and Download)
-        // stay open to everyone; only the submission needs an identity.
-        onSubmit: (doc, comment) => {
+        // Save-back: the same instant pipeline song corrections use — the
+        // editor's payoff beyond Download. Login gate lands here, at submit
+        // time: editing (and Download) stay open to everyone; only the
+        // submission needs an identity.
+        onSubmit: async (doc, comment) => {
             if (!requireLogin('submit tab corrections')) {
                 throw new Error('Sign in to submit — opening sign-in…');
             }
-            return submitTab({
+            const result = await submitTab({
                 type: 'tab-correction',
                 otf: doc,
                 title: currentWork?.title || doc.metadata?.title || 'Untitled',
@@ -2225,6 +2294,11 @@ async function enterTabEditMode(otf, part, container) {
                 workId: currentWork?.id,
                 comment,
             });
+            // The correction is live the moment the row lands — pull the
+            // overlay into allSongs so every other surface (search, this
+            // work reopened, My Submissions) sees it without a reload.
+            await window.refreshPendingSongs?.();
+            return result;
         },
     });
 }
@@ -2709,6 +2783,7 @@ export {
     sortArrangements,
     applyArrangement,
     activeArrangement,
+    otfCacheKey,
     prettySource,
     tabLabel
 };
