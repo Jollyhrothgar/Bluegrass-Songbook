@@ -5,14 +5,36 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-  # Trigger deploy after content-modifying workflows complete
-  # (Pushes from GITHUB_TOKEN don't trigger workflows, so we use workflow_run)
+  # Trigger deploy after content-modifying workflows complete.
+  #
+  # GitHub does not start workflows for pushes made with the default
+  # GITHUB_TOKEN (recursive-workflow prevention), so a bot commit lands in git
+  # and nothing rebuilds. This list is the only thing that turns those commits
+  # into a deploy.
+  #
+  # !! These strings match the triggering workflow's `name:` field, NOT its
+  # filename, and GitHub reports NOTHING when a name matches no workflow. A
+  # rename or a retirement silently unhooks deployment. That has already
+  # happened twice:
+  #   - "Process Song Submission" / "Process Song Correction" were deleted in
+  #     b1f61d46e (2026-08-15) and replaced by "Process Pending Submission",
+  #     which was never added here — so every song and tab submission since
+  #     then reached works/ and never reached the site.
+  #   - "Sync Deleted Songs" was renamed to "Sync Deleted + Promoted Songs" in
+  #     365d6bc4a (2026-08-14), unhooking admin deletes and Dungeon promotions.
+  # tests/test_workflow_deploy_triggers.py now asserts this list against the
+  # workflows that actually push, so the next rename fails CI instead of
+  # quietly stranding a feature.
+  #
+  # "Reconcile Pending Songs" is deliberately absent: it never pushes. It calls
+  # the reconcile-pending edge function, which fires a `pending-commit`
+  # repository_dispatch, and "Process Pending Submission" does the committing.
   workflow_run:
     workflows:
-      - "Process Song Submission"
-      - "Process Song Correction"
+      - "Process Pending Submission"
       - "Process Tune Request"
-      - "Sync Deleted Songs"
+      - "Sync Community Input"
+      - "Sync Deleted + Promoted Songs"
     types: [completed]
     branches: [main]
   # Manual escape hatch. Always rebuilds and deploys, bypassing the gate job —
@@ -42,6 +64,19 @@ jobs:
   #
   # Fails OPEN: any API hiccup leaves should_run=true, because a redundant deploy
   # is harmless and a missed one is not.
+  #
+  # `head` is read from the API (repos/:owner/:repo/commits/main), NOT from
+  # github.sha — which matters, because under workflow_run github.sha is the
+  # TRIGGERING run's head_sha, i.e. the commit that ran BEFORE the bot commit.
+  # Reading main live is what lets this gate see the new commit at all.
+  #
+  # Known, self-healing wart: actions/deploy-pages@v4 records the deployment's
+  # sha as GITHUB_SHA with no input to override it, so a workflow_run deploy
+  # publishes main@HEAD but files it under the triggering run's (older)
+  # head_sha. The next trigger therefore sees a mismatch and deploys the same
+  # tree once more — that second run stamps the correct sha (its trigger
+  # committed nothing, so its head_sha IS main@HEAD) and the gate converges.
+  # Cost: exactly one redundant deploy per content commit. Never a missed one.
   gate:
     # Skip if triggered by a failed workflow_run (verify/deploy skip in turn)
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'

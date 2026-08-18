@@ -469,8 +469,10 @@ with undo limited to the promoter or a trusted user. The
 `Sync Deleted + Promoted Songs` workflow
 (`.github/workflows/sync-deleted-songs.yml`, hourly cron + manual dispatch)
 writes both to the committed caches (`docs/data/deleted_songs.json`,
-`docs/data/promoted_songs.json`) and its commit triggers a rebuild + deploy,
-so UI deletes and promotions actually stick. A promotion has the same effect
+`docs/data/promoted_songs.json`). Its commit reaches the site **only via
+`build.yml`'s `workflow_run` trigger, and only while this workflow's `name:`
+is listed there** — see "How a bot commit reaches the site" below. A promotion
+has the same effect
 as `curate unprune` but lives in the JSON cache instead of `registry.yaml`;
 if a promoted work was also deleted, deletion wins (the build warns).
 Manual fallback:
@@ -481,6 +483,46 @@ Manual fallback:
 git add docs/data/deleted_songs.json docs/data/promoted_songs.json
 git commit -m "Sync deleted/promoted songs"
 ```
+
+### How a bot commit reaches the site
+
+**A commit pushed by a workflow does NOT trigger a deploy on its own.** GitHub
+refuses to start workflows for pushes made with the default `GITHUB_TOKEN`
+(recursive-workflow prevention), and every workflow here checks out with a
+plain `actions/checkout@v4`. So a `github-actions[bot]` commit lands in git and
+nothing rebuilds — the change is durable and invisible.
+
+The one thing that closes the gap is the `workflow_run` trigger in
+`.github/workflows/build.yml`:
+
+```yaml
+workflow_run:
+  workflows: ["Process Pending Submission", "Process Tune Request",
+              "Sync Community Input", "Sync Deleted + Promoted Songs"]
+  types: [completed]
+  branches: [main]
+```
+
+Two things about that list bite:
+
+1. **It matches the `name:` field, not the filename.** Renaming a workflow
+   unhooks deployment, and GitHub reports nothing — no warning, no error, no
+   failed run. It has drifted twice (submissions since 2026-08-15, deletes and
+   promotions since 2026-08-14, both fixed 2026-08-18).
+2. **A workflow missing from the list deploys nothing, ever.** Adding a new
+   workflow that pushes to main means adding its name here too.
+
+`tests/test_workflow_deploy_triggers.py` now enforces both directions: every
+workflow containing a `git push` must be listed, every listed name must exist
+and must actually push. A rename now fails CI.
+
+Downstream of that: `cleanup-pending.yml` triggers on `CI & Deploy` completing
+successfully, so while the trigger was broken, committed `pending_songs` rows
+were not being reaped either. Restoring the deploy restores the reaping.
+
+If a commit is already on `main` and the site is stale, the manual escape hatch
+is `gh workflow run build.yml --ref main` — `workflow_dispatch` bypasses the
+`gate` job and always rebuilds.
 
 ### Output Format
 

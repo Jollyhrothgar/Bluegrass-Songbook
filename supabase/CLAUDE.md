@@ -74,7 +74,7 @@ Both run in CI twice, and both gate:
 
 | Workflow | Job | Gates |
 |---|---|---|
-| `build.yml` | `verify` (with pytest + vitest) | every push and PR to main; `deploy` needs it |
+| `build.yml` | `verify` (with pytest + vitest) | every push and PR to main, plus every `workflow_run` from a content workflow named in its trigger list; `deploy` needs it |
 | `deploy-functions.yml` | `test` | `deploy` needs it — nothing reaches the edge runtime untested |
 
 The duplication is deliberate: the two workflows fire on separate triggers and
