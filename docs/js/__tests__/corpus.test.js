@@ -399,3 +399,56 @@ describe('whenIdle', () => {
         vi.unstubAllGlobals();
     });
 });
+
+describe('applyPendingTabs — a tab that mints a new work', () => {
+    // REGRESSION. The row id used to BE the work slug, so filing the overlay
+    // row under row.id worked. Once tab rows moved into their own
+    // `tab:<slug>:<rand>` namespace (to stop two submitters colliding on the
+    // primary key), that fallback filed the new work under an id nothing links
+    // to — the submit page's "View it" link, search and any shared URL all use
+    // the real slug — so a freshly submitted tab 404'd at its own address.
+    // Built through transformPendingRow so the test exercises the real chain
+    // a raw pending_songs row takes on its way into the corpus.
+    const tabRow = (over = {}) => transformPendingRow({
+        id: 'tab:welcome-to-new-york:bciu053d',
+        replaces_id: null,
+        title: 'Welcome to New York',
+        part_type: 'tablature',
+        instrument: 'banjo',
+        content: '{"tracks":[{"id":"banjo"}]}',
+        ...over,
+    });
+
+    it('files the work under the slug derived from its title', () => {
+        const out = applyPendingTabs([], [tabRow()]);
+        expect(out).toHaveLength(1);
+        expect(out[0].id).toBe('welcome-to-new-york');
+        expect(out[0].id).not.toContain('tab:');
+        expect(out[0].tablature_parts).toHaveLength(1);
+    });
+
+    it('merges onto the published row once the work exists, not beside it', () => {
+        // The window this closes: after the durable commit deploys, the real
+        // row and the pending row would otherwise both be in the corpus and
+        // the song would appear twice in search until cleanup-pending reaped
+        // the row.
+        const published = { id: 'welcome-to-new-york', title: 'Welcome to New York', tablature_parts: [] };
+        const out = applyPendingTabs([published], [tabRow()]);
+        expect(out).toHaveLength(1);
+        expect(out[0].id).toBe('welcome-to-new-york');
+        expect(out[0].tablature_parts).toHaveLength(1);
+    });
+
+    it('still honours replaces_id when the tab names an existing work', () => {
+        const published = { id: 'salt-creek', title: 'Salt Creek', tablature_parts: [] };
+        const out = applyPendingTabs(
+            [published],
+            [tabRow({ id: 'tab:salt-creek:zz9911', replaces_id: 'salt-creek', title: 'Salt Creek' })]);
+        expect(out).toHaveLength(1);
+        expect(out[0].tablature_parts).toHaveLength(1);
+    });
+
+    it('drops a titleless row rather than minting an empty slug', () => {
+        expect(applyPendingTabs([], [tabRow({ title: '' })])).toHaveLength(0);
+    });
+});

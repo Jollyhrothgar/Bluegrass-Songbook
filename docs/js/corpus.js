@@ -15,6 +15,7 @@
 // the whole app.
 
 import { buildStemSet } from './stem.js';
+import { generateSlug } from './utils.js';
 
 /** Parse a JSONL payload into rows (blank lines tolerated). */
 export function parseJsonl(text) {
@@ -253,10 +254,10 @@ export function overlayPendingTabParts(published = [], rows = []) {
  * build already emits for such works (`tablature_parts`, no `has_content`),
  * so work-view builds exactly the page it would build after the commit lands.
  */
-function pendingTabOnlyRow(rows) {
+function pendingTabOnlyRow(rows, workId) {
     const first = rows[0];
     return {
-        id: first.id,
+        id: workId,
         title: first.title,
         artist: first.artist || '',
         composer: first.composer || '',
@@ -283,7 +284,21 @@ export function applyPendingTabs(songs, tabRows) {
 
     const byTarget = new Map();
     for (const row of tabRows) {
-        const target = row.replaces_id || row.id;
+        // NOT `row.id`. A tab row's id is `tab:<slug>:<rand>` — its own
+        // namespace, because keying a pending tab by the work it targets
+        // collided when two people tabbed the same song. The slug inside it is
+        // decorative and must never be parsed back out (submit-tab.js says so,
+        // and process_pending.tab_work_slug re-derives rather than trusts it).
+        //
+        // So a tab that targets an existing work says so in `replaces_id`, and
+        // a tab MINTING a work has no target to name — we derive the same slug
+        // the server will, from the title, with the same rule. Using row.id
+        // here filed the new work under `tab:welcome-to-new-york:bciu053d`,
+        // which nothing links to: the submit page's "View it" link, search, and
+        // any shared URL all point at the real slug, so the work was
+        // unreachable at its own address until the deploy landed.
+        const target = row.replaces_id || generateSlug(row.title, null);
+        if (!target) continue;   // titleless row: the server refuses it too
         if (!byTarget.has(target)) byTarget.set(target, []);
         byTarget.get(target).push(row);
     }
@@ -299,7 +314,12 @@ export function applyPendingTabs(songs, tabRows) {
     });
 
     // Whatever is left targets nothing published — a brand-new tab-only work.
-    for (const rows of byTarget.values()) merged.push(pendingTabOnlyRow(rows));
+    // It lands under the derived slug, so the moment the real row appears in
+    // index.jsonl the overlay row merges ONTO it in the loop above instead of
+    // standing beside it as a duplicate title in search.
+    for (const [workId, rows] of byTarget) {
+        merged.push(pendingTabOnlyRow(rows, workId));
+    }
     return merged;
 }
 
