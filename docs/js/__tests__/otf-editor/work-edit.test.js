@@ -243,4 +243,26 @@ describe('createTabEditSession', () => {
         expect(editor.destroy).toHaveBeenCalledTimes(1);
         expect(onExit).not.toHaveBeenCalled();
     });
+
+    // jsdom computes no layout, so this guards the CLASS CONTRACT that the
+    // layout depends on rather than the pixels. `.qc-btn` is the site's
+    // 32x32 icon shell (a hard width, used everywhere else for −/+ only):
+    // put a word in one and the label can't shrink past its min-content, so
+    // it wraps and spills out of the box — which is how these four buttons
+    // came to be drawn on top of each other over the toolbar. Labelled
+    // buttons take `.qc-toggle-btn`, which is padded and auto-width.
+    it('labelled buttons never wear the icon-only qc-btn shell', () => {
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, onSubmit: vi.fn(),
+        });
+        const buttons = [...mount.querySelectorAll('button')];
+        expect(buttons.length).toBeGreaterThan(4);   // actions + submit panel
+        for (const btn of buttons) {
+            // A label is anything past a lone glyph — every button here has one.
+            expect(btn.textContent.trim().length).toBeGreaterThan(1);
+            expect([...btn.classList]).not.toContain('qc-btn');
+        }
+    });
 });

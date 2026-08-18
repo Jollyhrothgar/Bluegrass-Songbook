@@ -59,12 +59,20 @@ export function createTabEditSession({
     const bar = document.createElement('div');
     bar.className = 'tab-edit-bar';
     bar.style.cssText = 'display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 8px;flex-wrap:wrap;';
+    // LABELLED buttons take `qc-toggle-btn`, never `qc-btn`. `.qc-btn` is the
+    // site's 32x32 ICON shell (the −/+ steppers): a hard `width: 32px` plus
+    // `display:flex; justify-content:center`. Give it a word and the text
+    // can't shrink past its min-content, so it wraps to ~55px of centred
+    // lines that spill out of a 32px box on a 40px pitch — four labels drawn
+    // on top of each other and over the toolbar below. `qc-toggle-btn` is
+    // the labelled variant (padded, auto width) and is what ✓ Done and the
+    // panel's Send already use.
     bar.innerHTML = `
         <span class="tab-edit-title"></span>
-        <span class="tab-edit-actions" style="display:flex;gap:8px;">
-            ${onSubmit ? '<button type="button" class="tab-edit-submit qc-btn" title="Submit this correction for review">🚀 Submit correction</button>' : ''}
-            <button type="button" class="tab-edit-download qc-btn" title="Download the edited OTF">⬇ Download</button>
-            <button type="button" class="tab-edit-cancel qc-btn" title="Discard changes and go back">Cancel</button>
+        <span class="tab-edit-actions" style="display:flex;gap:8px;flex-wrap:wrap;">
+            ${onSubmit ? '<button type="button" class="tab-edit-submit qc-toggle-btn" title="Submit this correction for review">🚀 Submit correction</button>' : ''}
+            <button type="button" class="tab-edit-download qc-toggle-btn" title="Download the edited OTF">⬇ Download</button>
+            <button type="button" class="tab-edit-cancel qc-toggle-btn" title="Discard changes and go back">Cancel</button>
             <button type="button" class="tab-edit-done qc-toggle-btn" title="Apply changes to the view">✓ Done</button>
         </span>
     `;
@@ -85,7 +93,7 @@ export function createTabEditSession({
                    placeholder="Describe your changes (required)"
                    style="flex:1;min-width:220px;padding:6px 8px;">
             <button type="button" class="tab-edit-submit-send qc-toggle-btn">Send</button>
-            <button type="button" class="tab-edit-submit-cancel qc-btn">Back</button>
+            <button type="button" class="tab-edit-submit-cancel qc-toggle-btn">Back</button>
             <span class="tab-edit-submit-status"></span>
         `;
         root.appendChild(submitPanel);
