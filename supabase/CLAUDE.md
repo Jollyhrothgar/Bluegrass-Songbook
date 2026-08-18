@@ -23,10 +23,16 @@ Serverless functions that run on Supabase Edge (Deno runtime).
   `attributionFor`). The client never says who it is.
 - `pending-dispatch.ts` — the phase 2b change gate: durable per-user rate
   limit counted from `submission_log`, `classifyChange` (create / update /
-  fork-to-arrangement), and `dispatchPendingCommit`, which fires the
+  fork-to-arrangement / add), and `dispatchPendingCommit`, which fires the
   `pending-commit` repository_dispatch. **No edge function authors work.yaml
   any more** — `.github/workflows/process-pending.yml` runs
   `scripts/lib/works_writer.py`, the repo's one writer.
+  Ownership is answered **per part type**: `submittersOf(yaml, 'lead-sheet')`
+  for a chart, `tabPartOwners(yaml, file)` for one tab. It used to be a
+  regex over the flat file, which was safe only while `submitted_by`
+  appeared on charts alone; tab rows carry it now, and the loose version
+  would have let contributing a banjo tab buy an in-place overwrite of that
+  work's primary chart (and its title/artist/key with it).
 - `commit-song.ts` — the `PendingSong` shape, one Contents-API read used by
   classification, and `unretryableReason`. Phase 2d deleted the
   document-attachment path (and the write helpers only it used) along with
@@ -78,7 +84,15 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `admin_users` - Admin users who can delete songs
 - `deleted_songs` - Soft-deleted songs (excluded from index at build time)
 - `trusted_users` - Users allowed to edit someone else's chart **in place** (everyone else's edit forks to a new arrangement)
-- `pending_songs` - Any logged-in user's submission, live in the overlay, awaiting the GitHub commit
+- `pending_songs` - Any logged-in user's submission, live in the overlay,
+  awaiting the GitHub commit. Parts-aware since
+  `20260818000000_pending_songs_tablature.sql`: `part_type` is `lead-sheet`
+  (content is ChordPro) or `tablature` (content is a serialized OTF), with
+  `instrument` required on the latter and `part_file` naming the works/ file
+  a tab CORRECTION targets. The content size cap depends on the kind —
+  200KB for a chart, 2MB for an OTF, because multi-track arrangements are
+  genuinely that big and the chart cap would have rejected the best tabs at
+  INSERT
 - `review_requests` - The destructive residue (phase 2d): trusted users request delete / suppress / merge-redirect, admins decide
 - `leaderboard_identities` - Opt-in real names for the High Scores board. **RLS on, zero policies** — only `get_leaderboard()` reads it
 - `leaderboard_salt` - One random uuid that salts the leaderboard aliases. **RLS on, zero policies.** Never expose it: contributor uuids are already public in `works/*/work.yaml` (`provenance.submitted_by`), so an unsalted alias hash would be a join key straight back to real contributors
@@ -157,14 +171,36 @@ rights, not speed:
 4. `.github/workflows/process-pending.yml` writes it to `works/` via
    `works_writer`, pushes, then flips `github_committed`.
 
-Classification:
+Tabs take the same four steps (2026-08-18). The row carries the serialized
+OTF in `content` plus `part_type: tablature` / `instrument` / `part_file`,
+and `process_pending.py` writes `works/<id>/<instrument>[-N].otf.json`
+through the same writer. This replaced `create-tab-pr` +
+`process-tab-pr.yml`, which are **deleted** — a tab is no longer
+review-gated, and the "accepted exception" in the plan's phase 2b is closed.
+
+Classification — **lead sheet**:
 
 | Situation | Result |
 |---|---|
 | no work at the target id | `create` |
-| the caller's uuid appears in the work's `provenance.submitted_by` | `update` in place |
+| the caller's uuid appears in a **lead-sheet** part's `provenance.submitted_by` | `update` in place |
 | the caller is in `trusted_users` | `update` in place |
 | anything else | `fork` — a new arrangement part; the original is untouched |
+
+Classification — **tablature**:
+
+| Situation | Result |
+|---|---|
+| no work at the target id | `create` — the tab mints the work |
+| `part_file` names a tablature part whose `submitted_by`/`author` is the caller | `update` in place |
+| `part_file` names a tablature part and the caller is in `trusted_users` | `update` in place |
+| anything else (new tab, unknown file, someone else's tab) | `add` — a NEW sibling part; the original is untouched |
+
+`add` is the tab column's `fork`: a "correction" from a non-owner becomes
+another take on the instrument rather than a rewrite. Ownership is asked of
+parts of the **same kind** on both sides of the dispatch
+(`submittersOf(yaml, partType)` / `process_pending.owns_content(..., part_type)`)
+— owning a tab is not owning a chart.
 
 **To add a trusted user:**
 ```sql

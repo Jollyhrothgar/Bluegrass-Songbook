@@ -286,8 +286,9 @@ def apply_tab_defaults(songs: list, registry: Registry) -> list:
 
 # Works from these sources were contributed by users of the site; the prune
 # never touches them regardless of what the prune list says.
-# 'user-submission' is what process_tab stamps on tab submissions — it was
-# missing here until the shared-writer pass (plan 1c).
+# 'user-submission' is what process_pending stamps on everything the live
+# contribution path writes, charts and tabs alike — it was missing here
+# until the shared-writer pass (plan 1c).
 USER_SOURCES = {'manual', 'trusted-user', 'pending', 'user-submission'}
 
 

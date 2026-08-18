@@ -23,6 +23,39 @@ Modes (chosen server-side, never by the client):
     ADDITIONAL version part with ``x_version_*`` metadata; the original keeps
     its file, its ``default`` flag and its provenance. This is the
     "hard to destroy" rule from the contract.
+``add``
+    Tablature only: a NEW tab part on an existing work — a first banjo tab
+    for a song that had none, another take on an instrument it already has,
+    or a "correction" from somebody who does not own the tab they meant to
+    fix. ``add_part`` appends; nothing published is read-modify-written.
+    This is the tab column's ``fork``.
+
+Tablature (2026-08-18)
+----------------------
+Tabs used to leave here entirely: ``create-tab-pr`` committed the OTF to a
+branch, opened a PR, and ``process-tab-pr.yml`` ran ``process_tab.py`` to
+author the work.yaml around it. A human merge published it. That split the
+contract — a chart went live in seconds, a tab waited — and
+docs/plans/contribution-pipeline.md deferred fixing it at 4c because
+``pending_songs`` had no notion of parts or instruments. It does now
+(``part_type`` / ``instrument`` / ``part_file``), so a tablature row rides
+this same path: ``content`` holds the serialized OTF, it is validated here
+(:func:`validate_otf`, moved over from the retired ``process_tab``), and
+``works_writer`` writes ``works/<id>/<instrument>[-N].otf.json``.
+
+Two things a tab does differently, both for reasons that don't generalize:
+
+* **The dedup backstop is skipped.** It scores lyric containment. An OTF has
+  no lyrics, so every tab would come back low-confidence at best and
+  nonsense at worst — the scorer's own instrumental rule already says as
+  much. See :func:`apply_tablature_row`.
+* **The submitted document's ``x_source`` block is dropped.** It records
+  "this OTF is the conversion of Hangout TEF *N*", and
+  ``build_works_index._tab_provenance_mismatch`` FAILS THE BUILD when it
+  disagrees with the part's ``provenance.source_id`` — which this pipeline
+  must set to the idempotence marker. An edited tab is no longer that
+  verbatim conversion anyway; the displaced identity is kept as
+  ``provenance.x_derived_from`` rather than thrown away.
 
 Dedup backstop (phase 3b)
 -------------------------
@@ -79,6 +112,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.parse
@@ -91,7 +125,19 @@ from typing import Optional
 import dedup_scorer
 import works_writer
 
+#: Modes a LEAD-SHEET row may be dispatched in.
 MODES = ('create', 'update', 'fork')
+
+#: Modes a TABLATURE row may be dispatched in. ``add`` takes the place of
+#: ``fork``; a chart's alternate take is an arrangement of the same chart,
+#: a tab's is simply another part. Keeping the two tuples separate means a
+#: mode from the wrong column ('fork' for a tab, 'add' for a chart) is a
+#: loud refusal rather than a surprising write.
+TAB_MODES = ('create', 'update', 'add')
+
+#: Filenames and instrument names both land inside works/, so both are held
+#: to the slug shape the edge function and the pending_songs CHECK enforce.
+INSTRUMENT_RE = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 
 # Every part this script writes is stamped with this source, so a later
 # audit can tell in-app contributions from scraped imports.
@@ -193,12 +239,22 @@ class DedupDecision:
         }
 
 
-def owns_content(repo_root, work_id: str, user_id: Optional[str]) -> bool:
-    """Has ``user_id`` already contributed a part to this work?
+def owns_content(repo_root, work_id: str, user_id: Optional[str],
+                 part_type: str = 'lead-sheet') -> bool:
+    """Has ``user_id`` already contributed a part OF THIS KIND to this work?
 
     Mirrors ``supabase/functions/_shared/pending-dispatch.ts``'s
     ``submittersOf`` — the same question, asked of the same field, on the
-    other side of the dispatch.
+    other side of the dispatch, and scoped the same way.
+
+    The scoping is the point. Both sides used to ask "does this uuid appear
+    in any part's ``submitted_by``?", which was safe only while
+    ``submitted_by`` appeared on lead-sheet parts alone (the PR-based tab
+    flow recorded ``author``). Tabs now come through this pipeline and carry
+    ``submitted_by`` too, so an unscoped answer would let submitting a banjo
+    tab to a work confer in-place edit rights over that work's CHART — a
+    stranger's lyrics, and the work's title/artist/key with them. Ownership
+    of a tab is ownership of a tab.
     """
     if not user_id:
         return False
@@ -208,6 +264,7 @@ def owns_content(repo_root, work_id: str, user_id: Optional[str]) -> bool:
     return any(
         (part.get('provenance') or {}).get('submitted_by') == user_id
         for part in (work.get('parts') or [])
+        if part.get('type') == part_type
     )
 
 
@@ -268,12 +325,16 @@ def update_target(work: Optional[dict], row_id: str,
     ``update`` through the TRUSTED branch instead, and a trusted in-place
     edit is about the work's primary chart.
 
-    Caveat worth knowing: ``submitted_by`` is written only on lead-sheet
-    parts today (the tab flow records ``author``), so "owns a part" and
-    "owns a chart" coincide. If a non-chart part ever carries
-    ``submitted_by``, its owner would be classified ``update`` and land in
-    the trusted branch here — owning a tab would buy an in-place edit of
-    somebody else's chart. Closing that needs trust in the dispatch payload.
+    That fallback is why ownership must be answered per part type, and now
+    is. ``submitted_by`` used to appear on lead-sheet parts only, so "owns a
+    part" and "owns a chart" coincided by accident; tabs joined this
+    pipeline and started carrying it too, at which point an unscoped
+    classifier would have sent a tab contributor down the trusted branch
+    here — a non-owner rewriting the primary chart in place, plus the
+    work-level title/artist/key that ride along with a primary edit. Both
+    classifiers (:func:`owns_content` and ``submittersOf``) now count only
+    parts of the kind being edited, so reaching this function's ``None``
+    really does mean "trusted".
     """
     if not user_id:
         return None
@@ -374,7 +435,13 @@ class DedupBackstop:
         if (verdict.outcome == dedup_scorer.Outcome.ENRICH
                 and verdict.auto_actionable):
             owner = row.get('created_by')
-            new_mode = 'update' if owns_content(self.repo_root, matched, owner) else 'fork'
+            # Chart ownership, explicitly: the backstop only ever sees
+            # lead-sheet rows (tabs skip it — an OTF has no lyrics to
+            # contain), and owning a TAB on the matched work must not
+            # redirect this chart into an in-place update of somebody
+            # else's chart.
+            new_mode = 'update' if owns_content(
+                self.repo_root, matched, owner, 'lead-sheet') else 'fork'
             why = ('submitter already owns a part there'
                    if new_mode == 'update'
                    else "someone else's work — landing as a new arrangement part")
@@ -440,6 +507,287 @@ def _provenance(row: dict, marker: str, actor: Optional[str]) -> dict:
     }
 
 
+# ============================================
+# Tablature
+# ============================================
+
+
+def validate_otf(otf) -> list:
+    """Sanity checks — returns a list of problems (empty = OK).
+
+    Moved here from the retired ``scripts/lib/process_tab.py`` unchanged.
+    It is the ONLY structural validation an incoming OTF gets: the edge
+    function asks no more than "does this parse and have tracks?", because
+    everything below needs to walk the notation, and the editor that
+    produced the document is not a party this pipeline trusts.
+    """
+    problems = []
+    if not isinstance(otf, dict):
+        return ['not an object']
+    tracks = otf.get('tracks')
+    if not isinstance(tracks, list) or not tracks:
+        problems.append('no tracks')
+        return problems
+    notation = otf.get('notation') or {}
+    for t in tracks:
+        tid = t.get('id')
+        if not tid:
+            problems.append('track without id')
+            continue
+        if not isinstance(t.get('tuning'), list) or len(t['tuning']) < 3:
+            problems.append(f'track {tid}: bad tuning')
+        measures = notation.get(tid)
+        if not isinstance(measures, list):
+            problems.append(f'track {tid}: no notation')
+            continue
+        nstrings = len(t.get('tuning') or [])
+        for m in measures:
+            if not isinstance(m.get('measure'), int):
+                problems.append(f'track {tid}: measure without number')
+                break
+            for e in m.get('events', []):
+                if not isinstance(e.get('tick'), int) or e['tick'] < 0:
+                    problems.append(f'track {tid} m{m.get("measure")}: bad tick')
+                    break
+                for n in e.get('notes', []):
+                    s, f = n.get('s'), n.get('f')
+                    if not (isinstance(s, int) and 1 <= s <= nstrings):
+                        problems.append(f'track {tid} m{m.get("measure")}: bad string {s}')
+                        break
+                    if not (isinstance(f, int) and 0 <= f <= 24):
+                        problems.append(f'track {tid} m{m.get("measure")}: bad fret {f}')
+                        break
+    return problems
+
+
+def otf_document(row: dict) -> tuple:
+    """Parse, validate and re-serialize a tablature row's ``content``.
+
+    Returns ``(document, text)``. The text is what lands in ``works/``:
+    ``indent=2``, matching every OTF already in the corpus, so a correction
+    produces a readable diff against the take it replaces rather than a
+    one-line churn.
+
+    Re-serializing also makes the idempotence marker whitespace-insensitive.
+    The marker is a sha of this canonical text, so a client that re-saves a
+    tab it did not actually change is a replay (no-op) rather than a second
+    part — which matters more here than for charts, because an OTF is
+    machine-serialized and its formatting is nobody's intent.
+
+    ``x_source`` is dropped on the way through. It records "this OTF is the
+    conversion of Hangout TEF *N*", and ``build_works_index`` FAILS THE
+    BUILD when that id disagrees with the part's ``provenance.source_id``,
+    which this pipeline sets to the marker. A tab that has been through the
+    editor is no longer that verbatim conversion, so the claim has to go;
+    the identity it carried is preserved in provenance instead
+    (:func:`_tab_provenance`, ``x_derived_from``).
+    """
+    content = row.get('content')
+    if not content or not content.strip():
+        raise ProcessPendingError(
+            f"row '{row.get('id')}' has no content — nothing to write")
+    try:
+        document = json.loads(content)
+    except json.JSONDecodeError as e:
+        raise ProcessPendingError(
+            f"row '{row.get('id')}' content is not valid JSON: {e}") from e
+
+    problems = validate_otf(document)
+    if problems:
+        raise ProcessPendingError(
+            f"row '{row.get('id')}' failed OTF validation: "
+            + '; '.join(problems[:5]))
+
+    document.pop('x_source', None)
+    return document, json.dumps(document, indent=2, ensure_ascii=False) + '\n'
+
+
+def tab_instrument(row: dict) -> str:
+    """The instrument a tablature row is for, shape-checked.
+
+    A CHECK constraint on ``pending_songs`` already requires this, and the
+    edge function refuses a row without it. Checked a third time because
+    this value becomes a filename inside ``works/`` — the one place where
+    being wrong is a path, not a message.
+    """
+    instrument = (row.get('instrument') or '').strip()
+    if not instrument:
+        raise ProcessPendingError(
+            f"tablature row '{row.get('id')}' has no instrument")
+    if not INSTRUMENT_RE.match(instrument):
+        raise ProcessPendingError(
+            f"tablature row '{row.get('id')}' has a bad instrument "
+            f"{instrument!r} (expected lowercase slug)")
+    return instrument
+
+
+def _tab_provenance(row: dict, marker: str, actor: Optional[str],
+                    previous: Optional[dict] = None) -> dict:
+    """Provenance for a tab part this pipeline writes.
+
+    ``author`` is the display name the frontend credits on a tablature part
+    (``tablature_parts[].author``), so a NEW tab records the submitter
+    there. A correction does not — see :func:`apply_tablature_row`: the
+    person who fixes a wrong fret did not arrange the tab, and overwriting
+    ``author`` would quietly take the credit.
+
+    ``previous`` is the provenance being replaced, when there is one. Its
+    ``source``/``source_id`` are about to be overwritten with
+    ``user-submission`` + the marker, so where they said something real
+    (a Hangout tab id) they are folded into ``x_derived_from`` rather than
+    lost — this part's lineage is the only record that the take started
+    life somewhere else.
+    """
+    provenance = _provenance(row, marker, actor)
+    if actor:
+        provenance['author'] = actor
+    if previous:
+        source = (previous.get('source') or '').strip()
+        source_id = str(previous.get('source_id') or '').strip()
+        if source and source != SOURCE and source_id:
+            provenance['x_derived_from'] = f'{source}:{source_id}'
+        elif source and source != SOURCE:
+            provenance['x_derived_from'] = source
+        elif previous.get('x_derived_from'):
+            provenance['x_derived_from'] = previous['x_derived_from']
+    return provenance
+
+
+def apply_tablature_row(repo_root, row: dict, mode: str, work_id: str,
+                        actor: Optional[str] = None,
+                        verbose: bool = True) -> works_writer.WriteResult:
+    """Write one tablature row to ``works/`` in the dispatched mode.
+
+    ``create``
+        The tab mints the work — the shape a submission for a song not in
+        the corpus takes. The part is the work's default.
+    ``add``
+        A NEW part on an existing work: a first tab for that instrument, a
+        second take on one it already has, or a "correction" from somebody
+        who does not own the tab they meant to fix. Nothing published is
+        read-modify-written, which is the "hard to destroy" rule in the tab
+        column.
+    ``update``
+        The caller owns the named part, or is trusted. The one mode that
+        rewrites a published file.
+
+    The dedup backstop is NOT consulted, and the omission is deliberate
+    rather than an oversight: it scores lyric containment
+    (``dedup_scorer.Chart.from_chordpro``), an OTF has no lyrics, and the
+    scorer's own rule for lyric-less input is that it is low-confidence and
+    never auto-actionable. Running it here would spend ~1.6s building a
+    title index in order to produce advice it already knows is worthless,
+    with a non-zero chance of diverting a write on a title collision.
+    Whether two tabs are the same arrangement is a real question — it is
+    just not a question this scorer can answer.
+    """
+    if mode not in TAB_MODES:
+        raise ProcessPendingError(
+            f"unknown tablature mode {mode!r} "
+            f"(expected one of {', '.join(TAB_MODES)})")
+
+    row_id = row.get('id')
+    if not row_id:
+        raise ProcessPendingError('row has no id')
+    title = row.get('title')
+    if not title:
+        raise ProcessPendingError(f"row '{row_id}' has no title")
+
+    instrument = tab_instrument(row)
+    _, otf_text = otf_document(row)
+    marker = content_marker(row_id, otf_text)
+
+    if already_applied(repo_root, work_id, marker):
+        if verbose:
+            print(f"Already applied: works/{work_id} carries {marker}")
+        return works_writer.WriteResult(
+            mode=mode, work_id=work_id, skipped_reason='already-applied')
+
+    work = works_writer.load_work(repo_root, work_id)
+    work_dir = works_writer.work_path(repo_root, work_id)
+    bare_name = f'{instrument}.otf.json'
+
+    if mode == 'update':
+        target = (row.get('part_file') or '').strip()
+        match = {'type': 'tablature', 'file': target}
+        existing = works_writer.find_parts(work, match) if work else []
+        if not existing:
+            # The edge function downgrades this to `add` when it can see the
+            # work.yaml; arriving here means main moved underneath the
+            # dispatch (the part was renamed or removed). Landing the tab
+            # beside what IS there beats guessing at a substitute target —
+            # `update_part` with a loose match would pick the default take
+            # and overwrite a stranger's arrangement.
+            if verbose:
+                print(f"update: works/{work_id} has no tablature part "
+                      f"{target!r} any more — adding it instead")
+            mode = 'add'
+        else:
+            previous = dict(existing[0].get('provenance') or {})
+            provenance = _tab_provenance(row, marker, actor, previous)
+            # A correction is not an arrangement credit: `author` stays
+            # whoever arranged the take. Who fixed it is recorded the way
+            # the retired PR flow recorded it, so the vocabulary in
+            # works/ does not fork.
+            provenance.pop('author', None)
+            provenance['x_corrected_by'] = row.get('created_by') or actor
+            provenance['x_corrected_attribution'] = actor
+            provenance['x_corrected'] = date.today().isoformat()
+            return works_writer.update_part(
+                repo_root, work_id,
+                match=match,
+                content=otf_text,
+                provenance_updates=provenance,
+                verbose=verbose,
+            )
+
+    provenance = _tab_provenance(row, marker, actor)
+
+    if mode == 'add':
+        if work is None:
+            raise ProcessPendingError(
+                f"cannot add a tab to '{work_id}': no work.yaml to add to")
+        # ONE naming scheme for "another part on this work", shared with a
+        # forked chart. Counting what is on disk is sound here in a way it
+        # never was for the PR flow: that ran on two branches that could not
+        # see each other's file and both picked `-2`; this runs serially in
+        # one concurrency group on a checkout of main.
+        file = works_writer.unique_filename(work_dir, work, bare_name)
+        return works_writer.add_part(
+            repo_root, work_id,
+            works_writer.PartSpec(
+                file=file,
+                type='tablature',
+                format='otf',
+                instrument=instrument,
+                content=otf_text,
+                default=False,   # a sibling never displaces the pinned take
+                provenance=provenance,
+            ),
+            verbose=verbose,
+        )
+
+    return works_writer.create_work(
+        repo_root, work_id, title,
+        works_writer.PartSpec(
+            file=bare_name,
+            type='tablature',
+            format='otf',
+            instrument=instrument,
+            default=True,
+            content=otf_text,
+            provenance=provenance,
+        ),
+        artist=(row.get('artist') or '').strip() or None,
+        # Parity with the retired process_tab: a work whose only part is a
+        # tab has no lyrics to show, so it publishes as an instrumental.
+        # Later tagging can disagree; this is the seed, not the verdict.
+        tags=['Instrumental'],
+        on_collision='suffix',
+        verbose=verbose,
+    )
+
+
 def _version_label(actor: Optional[str]) -> str:
     """Arrangement label from the submitter's identity."""
     name = (actor or '').strip()
@@ -457,7 +805,17 @@ def apply_row(repo_root, row: dict, mode: str, work_id: str,
     ``backstop`` is consulted before a ``create`` and may retarget the write
     or refuse it outright; pass one in to reuse its corpus (or to disable the
     check). See "Dedup backstop" in the module docstring.
+
+    A tablature row (``part_type = 'tablature'``) goes to
+    :func:`apply_tablature_row` instead, before anything here reads
+    ``content`` as ChordPro — including the dedup backstop, which is skipped
+    for tabs on purpose (an OTF has no lyrics for a lyric-containment
+    scorer to contain).
     """
+    if (row.get('part_type') or 'lead-sheet') == 'tablature':
+        return apply_tablature_row(repo_root, row, mode, work_id, actor,
+                                   verbose=verbose)
+
     if mode not in MODES:
         raise ProcessPendingError(
             f"unknown mode {mode!r} (expected one of {', '.join(MODES)})")
@@ -656,6 +1014,8 @@ def main() -> int:
             'written': 'true' if result.written else 'false',
             'skipped_reason': result.skipped_reason or '',
             'row_title': row.get('title') or '',
+            'part_type': row.get('part_type') or 'lead-sheet',
+            'instrument': row.get('instrument') or '',
         }
         if backstop.decision:
             fields.update(backstop.decision.outputs())

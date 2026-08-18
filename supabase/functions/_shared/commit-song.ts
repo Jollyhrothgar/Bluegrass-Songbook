@@ -34,6 +34,16 @@ export interface PendingSong {
   github_committed?: boolean
   /** Phase 3b: non-null means the dedup backstop refused to write this row. */
   dedup_hold?: string | null
+  /**
+   * 'lead-sheet' (content is ChordPro) or 'tablature' (content is a
+   * serialized OTF JSON document). Absent on every row written before
+   * 2026-08-18; the column defaults to 'lead-sheet', so absent means chart.
+   */
+  part_type?: string | null
+  /** Tablature only: which instrument. Required by a CHECK on those rows. */
+  instrument?: string | null
+  /** Tab corrections only: the works/ filename being corrected. */
+  part_file?: string | null
 }
 
 const githubHeaders = (githubToken: string) => ({

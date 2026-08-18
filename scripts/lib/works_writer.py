@@ -601,7 +601,18 @@ def apply_version_metadata(content: str, *, label: str,
     return '\n'.join(lines)
 
 
-def _unique_filename(work_dir: Path, work: dict, name: str) -> str:
+def unique_filename(work_dir: Path, work: dict, name: str) -> str:
+    """``name``, or the first ``stem-N.ext`` nobody has claimed.
+
+    Public because the tab pipeline needs the same answer for a sibling
+    arrangement (``banjo.otf.json`` → ``banjo-2.otf.json``) that a forked
+    chart needs, and two naming schemes for "another part on this work"
+    would be one too many. Counting what is on disk is only sound for a
+    writer that sees the whole work — which is why the old create-tab-pr
+    could not use it (two submissions, two branches, both blind to each
+    other, both picking ``-2``) and why process_pending can: it runs in one
+    concurrency group on a checkout of main.
+    """
     taken = {p.get('file') for p in work.get('parts') or []}
     stem, dot, ext = name.partition('.')
     candidate, counter = name, 2
@@ -655,7 +666,7 @@ def fork_to_arrangement(repo_root, work_id: str, content: str,
             file = f"melody-{label_slug}.abc"
         else:
             file = f"lead-sheet-{label_slug}.pro"
-    file = _unique_filename(work_dir, work, file)
+    file = unique_filename(work_dir, work, file)
 
     if part_format == 'chordpro':
         content = apply_version_metadata(

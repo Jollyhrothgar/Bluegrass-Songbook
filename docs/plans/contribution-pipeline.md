@@ -189,6 +189,9 @@ the Deferred rate-limiting item lands here, not later.
 *Deviation, 2026-08-15:* the tab half shipped separately — 2b delivered the
 lead-sheet pipeline and retired the song-issue flow, while `create-tab-pr` /
 `process-tab-pr.yml` stayed live pending 4c.
+*Closed, 2026-08-18:* the tab half landed as written above — OTF rows on
+`pending_songs`, validation in the pipeline, `create-tab-pr` and
+`process-tab-pr.yml` deleted. See the reversal note under 4c below.
 
 *Resolved at 4c, 2026-08-15 — **tabs keep the PR flow**.* The overlay this
 paragraph assumes doesn't exist for tabs: `pending_songs` is one row per
@@ -201,13 +204,41 @@ it would leave the only tab surface split across two servers, so
 `create-tab-pr` + `process-tab-pr.yml` are the durable path for tabs until
 someone chooses that rebuild deliberately.
 
-**Accepted exception, tracked:** this leaves tabs review-gated while text
-content is additive-instant. A new tab is live on merge, not in seconds.
-4a still shows it — `create-tab-pr` writes `submission_log` — but as
-"Requested" until the PR merges, never as Live, because there is no
-`pending_songs` row behind it. That is a real inconsistency in the
-contract, accepted for now because tab volume is low and the merge gate is
-cheap at that volume — not because it's right.
+***Reversed, 2026-08-18 — the rebuild was chosen and done.*** Mike took the
+Phase-2-sized option rather than keep the exception. Nothing in the 4c
+reasoning was wrong; it was a cost estimate, and the cost got paid:
+
+* `pending_songs` is parts-aware —
+  `20260818000000_pending_songs_tablature.sql` adds `part_type` /
+  `instrument` / `part_file`, and a per-kind content cap (200KB chart, 2MB
+  OTF) because the chart cap would have rejected exactly the multi-track
+  tabs most worth having.
+* OTF validation moved into the pipeline: `validate_otf` came out of
+  `process_tab.py` into `process_pending.py`, which then writes through
+  `works_writer` like everything else. No second writer was added.
+* `classifyChange` gained `add` — the tab column's `fork`. A "correction"
+  from someone who does not own the tab lands as a sibling arrangement, so
+  "hard to destroy" holds in both columns.
+* `create-tab-pr/`, `process-tab-pr.yml` and `process_tab.py` are
+  **deleted**.
+
+Found while doing it, and worth recording because it was latent in the
+shipped 2b design: `submittersOf()` asked ownership of the whole work.yaml,
+not of the part type being edited. That was safe only because
+`submitted_by` happened to appear on lead sheets alone. Tab rows carry it
+now, so the loose question would have let submitting a banjo tab classify a
+later edit of that work's CHART as `update` — and `update_target`'s
+"owns no chart ⇒ they must be trusted" fallback would have overwritten
+somebody else's primary chart and the work's title/artist/key with it. Both
+classifiers now count only parts of the kind being edited. Regression test:
+`TestTabOwnershipDoesNotBuyChartEdits` in `tests/test_process_pending.py`.
+
+**Accepted exception, now closed:** this used to leave tabs review-gated
+while text content was additive-instant — a new tab live on merge, not in
+seconds, and shown in 4a as "Requested" rather than Live because there was
+no `pending_songs` row behind it. There is one now, so a tab is Live like
+everything else and the contract no longer says two different things
+depending on what you contributed.
 
 **2c. Fork-to-arrangement.** The editor's "edit" action on content you
 don't own becomes "create your arrangement" — same work, new version part,
