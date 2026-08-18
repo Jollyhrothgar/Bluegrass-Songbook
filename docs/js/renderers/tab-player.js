@@ -63,21 +63,37 @@ export function getInstrumentKey(instrumentType) {
 // failure. Slow phones on hotel wifi need room; forever is not an option.
 const DECODE_TIMEOUT_MS = 15000;
 
+// One promise per URL. The tag-exists check alone is NOT enough: a second
+// caller arriving between "tag inserted" and "script executed" used to
+// resolve immediately and then read an undefined global — `new
+// window.WebAudioFontPlayer()` throwing, or an instrument silently skipped.
+// That window is real now that the editor warms soundfonts in the
+// background while Play may be pressed at any moment.
+const scriptLoads = new Map();
+
 /**
- * Load a script dynamically
+ * Load a script dynamically (deduped: concurrent callers share one load)
  */
 function loadScript(url) {
-    return new Promise((resolve, reject) => {
+    const pending = scriptLoads.get(url);
+    if (pending) return pending;
+
+    const promise = new Promise((resolve, reject) => {
         if (document.querySelector(`script[src="${url}"]`)) {
-            resolve();
+            resolve();   // inserted by someone else (or a previous page state)
             return;
         }
         const script = document.createElement('script');
         script.src = url;
         script.onload = resolve;
-        script.onerror = () => reject(new Error(`Could not load ${url}`));
+        script.onerror = () => {
+            scriptLoads.delete(url);   // a failed load may be retried
+            reject(new Error(`Could not load ${url}`));
+        };
         document.head.appendChild(script);
     });
+    scriptLoads.set(url, promise);
+    return promise;
 }
 
 /**
@@ -263,9 +279,27 @@ export class TabPlayer {
     }
 
     /**
-     * Initialize audio context and load WebAudioFont
+     * Initialize audio context and load WebAudioFont.
+     *
+     * Concurrency-safe: the editor warms soundfonts for note-entry feedback
+     * in the background while Play may be pressed at any moment, and two
+     * inits racing would build two WebAudioFontPlayers and two metronome
+     * buses (the second orphaning the first mid-tune).
+     *
+     * @returns {Promise<void>}
      */
-    async init() {
+    init() {
+        if (this.player) return Promise.resolve();
+        if (!this._initPromise) {
+            this._initPromise = this._initOnce().catch(err => {
+                this._initPromise = null;   // a failed init may be retried
+                throw err;
+            });
+        }
+        return this._initPromise;
+    }
+
+    async _initOnce() {
         if (this.player) return;
 
         // Context FIRST, synchronously: unlockAudio() has normally already

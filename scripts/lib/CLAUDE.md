@@ -725,9 +725,10 @@ Adds a `.pro` file to `sources/manual/parsed/` and rebuilds index.
 Called by `.github/workflows/process-pending.yml` on the `pending-commit`
 repository_dispatch that `auto-commit-song` (or the hourly reconciler) fires.
 
-**Trigger**: any logged-in user saves a song in the editor. The row lands in
-Supabase `pending_songs` (live in the overlay in seconds); the edge function
-classifies the change and dispatches; this script makes it durable.
+**Trigger**: any logged-in user saves a song **or a tab** in the editor. The
+row lands in Supabase `pending_songs` (live in the overlay in seconds); the
+edge function classifies the change and dispatches; this script makes it
+durable.
 
 **Env**: `PENDING_ROW_ID`, `PENDING_MODE`, `PENDING_WORK_ID`, `PENDING_ACTOR`,
 `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`.
@@ -741,17 +742,69 @@ classifies the change and dispatches; this script makes it durable.
 3. The workflow commits, pushes with rebase-retry, then marks the row
    `github_committed`.
 
+**Tablature** (2026-08-18, `apply_tablature_row`). A row with
+`part_type = 'tablature'` carries a serialized OTF in `content` plus an
+`instrument`, and (for a correction) the `part_file` it targets. It replaced
+the `create-tab-pr` → `process-tab-pr.yml` pull-request flow, which is
+deleted along with `process_tab.py`; `validate_otf` moved here and is still
+the only structural check an incoming OTF gets.
+
+| mode | writer call | file |
+|---|---|---|
+| `create` | `create_work` (tags `[Instrumental]`) | `<instrument>.otf.json` |
+| `add` | `add_part` | `works_writer.unique_filename` → `<instrument>[-N].otf.json` |
+| `update` | `update_part` matched on `{'type': 'tablature', 'file': part_file}` | that file |
+
+`add` is the tab column's `fork` — a non-owner's "correction" becomes a
+sibling take, never a rewrite — and a dispatched `update` whose named part
+has since vanished degrades to `add` rather than guessing at a substitute
+target.
+
+**A tab row's id is not a work slug.** `pending_songs` is keyed one row per
+SONG; a tab is a part, so tab rows are `tab:<slug>:<rand>` and target
+`replaces_id`. A `create` therefore names its work from the TITLE —
+`tab_work_slug()` re-derives it rather than trusting the dispatch, and
+`create_work(on_collision='suffix')` resolves the real slug against the
+checkout (`salt-creek`, `salt-creek-1`, …). That is the free-slug hunt
+`create-tab-pr` did by probing the Contents API from a branch that could not
+see other branches.
+
+**The submitter's comment** (`row['notes']`) lands on the PART as
+`provenance.x_submission_notes`, or `x_correction_notes` on an `update` —
+never in the work-level `notes` the chart path writes, which describes the
+song rather than one take of it. The retired PR flow put this text in the PR
+body and wrote it nowhere; with no reviewer, provenance is where it lives.
+
+Two more tab-only behaviours worth knowing: the **dedup backstop is
+skipped** (it scores lyric containment and an OTF has no lyrics), and the
+document's **`x_source` block is dropped** on the way in, because it claims
+to be the conversion of a specific Hangout TEF and `build_works_index` fails
+the whole build when that id disagrees with `provenance.source_id` — which
+is the idempotence marker here. The displaced identity is kept as
+`provenance.x_derived_from`.
+
 **Idempotence**: every part written carries
 `provenance.source_id = pending:<row id>:<content sha>`. A replayed dispatch
 finds the marker and no-ops; a genuine re-edit changes the sha and applies.
 The mode is decided server-side in `supabase/functions/_shared/pending-dispatch.ts`
 — the client cannot claim "update" on somebody else's chart.
 
+**Ownership is asked per part type.** `owns_content(repo, work, user,
+part_type)` and the edge function's `submittersOf(yaml, partType)` count only
+parts of the kind being edited. They used to count all of them, which was
+safe only while `submitted_by` appeared on lead sheets alone (the old PR tab
+flow recorded `author`). Once tab rows started carrying `submitted_by`, the
+loose question would have read "Alice submitted a banjo tab here" as "Alice
+owns content here" → `update` instead of `fork` → `update_target` finds she
+owns no chart → the trusted fallback → an in-place overwrite of somebody
+else's primary chart, plus the work's title/artist/key. Contributing a tab
+would have bought edit rights over a stranger's lyrics.
+
 **Which chart an `update` rewrites** (`process_pending.update_target`): the
 mode alone is not enough. Both classifiers answer `update` as soon as the
-caller appears in ANY part's `provenance.submitted_by`, so a user who owns
-only a FORK is dispatched in update mode — and a bare `{'type': 'lead-sheet'}`
-match is default-preferred, i.e. the PRIMARY. The rule: land on the part the
+caller appears in any CHART part's `provenance.submitted_by`, so a user who
+owns only a FORK is dispatched in update mode — and a bare
+`{'type': 'lead-sheet'}` match is default-preferred, i.e. the PRIMARY. The rule: land on the part the
 row landed on before (`pending:<row id>:` in its provenance), else the primary
 if the actor owns it, else their most recent chart; owning no chart at all
 means they got here through the *trusted* branch, and that right is over the

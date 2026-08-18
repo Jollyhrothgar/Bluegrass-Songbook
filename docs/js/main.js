@@ -63,6 +63,7 @@ import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
 import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
 import {
     fetchJsonl, mergeCorpus, markArchived, countDistinctTitles, whenIdle,
+    transformPendingRow,
 } from './corpus.js';
 import { getSongContents } from './song-content.js';
 import { showToast } from './toast.js';
@@ -1084,55 +1085,11 @@ function navigateTo(mode) {
 // LOAD INDEX
 // ============================================
 
-/**
- * Transform a pending_songs entry to match the index.jsonl format
- */
-function transformPendingToIndexFormat(pending) {
-    // Extract first line of lyrics (skip chord brackets)
-    const extractFirstLine = (content) => {
-        if (!content) return '';
-        const lines = content.split('\n');
-        for (const line of lines) {
-            // Skip directives and empty lines
-            if (line.startsWith('{') || !line.trim()) continue;
-            // Remove chord brackets and return first lyric line
-            const lyricsOnly = line.replace(/\[[^\]]+\]/g, '').trim();
-            if (lyricsOnly) return lyricsOnly;
-        }
-        return '';
-    };
-
-    // Extract all lyrics (for search)
-    const extractLyrics = (content) => {
-        if (!content) return '';
-        return content
-            .split('\n')
-            .filter(line => !line.startsWith('{') && line.trim())
-            .map(line => line.replace(/\[[^\]]+\]/g, ''))
-            .join(' ')
-            .trim();
-    };
-
-    return {
-        id: pending.id,
-        title: pending.title,
-        artist: pending.artist || '',
-        composer: pending.composer || '',
-        content: pending.content,
-        key: pending.key || '',
-        mode: pending.mode || '',
-        tags: pending.tags || {},
-        notes: pending.notes || '',
-        status: pending.status || (pending.content ? undefined : 'placeholder'),
-        source: 'pending',
-        replaces_id: pending.replaces_id,
-        // Ownership, so the editor can tell "your song" from "someone
-        // else's" before submitting (the server decides authoritatively).
-        created_by: pending.created_by || null,
-        first_line: extractFirstLine(pending.content),
-        lyrics: extractLyrics(pending.content),
-    };
-}
+// The pending → index-row transform lives in corpus.js
+// (`transformPendingRow`): a `pending_songs` row is a whole SONG or a
+// tablature PART depending on its `part_type`, and only the merge knows
+// which work a part belongs to. Keeping the branch next to the merge is
+// also what makes both testable without booting the app.
 
 // The three row sources, kept apart so any one of them can be re-fetched
 // and re-merged without re-reading the others (see rebuildCorpus).
@@ -1245,9 +1202,9 @@ async function fetchSupabaseOverlays() {
         ]);
 
         if (pending.data && !pending.error) {
-            pendingRows = pending.data.map(transformPendingToIndexFormat);
+            pendingRows = pending.data.map(transformPendingRow);
             if (pendingRows.length > 0) {
-                console.log(`Merged ${pendingRows.length} pending song(s)`);
+                console.log(`Merged ${pendingRows.length} pending row(s) — songs and tab parts`);
             }
         }
         if (deleted.data && !deleted.error) {
@@ -1362,9 +1319,10 @@ async function loadIndex() {
 }
 
 /**
- * Refresh pending songs from Supabase and merge into allSongs.
- * Call this after a trusted user saves edits to ensure the song
- * is available immediately for navigation.
+ * Refresh the pending overlay from Supabase and merge into allSongs.
+ * Call this after any save so the contribution is available immediately for
+ * navigation — a song, a correction, or (since tabs joined the instant
+ * pipeline) a tablature part landing on the work it targets.
  * Note: Exposed on window for editor.js to avoid circular import.
  */
 async function refreshPendingSongs() {
@@ -1381,11 +1339,11 @@ async function refreshPendingSongs() {
             return;
         }
 
-        pendingRows = data.map(transformPendingToIndexFormat);
+        pendingRows = data.map(transformPendingRow);
         rebuildCorpus();
 
         if (pendingRows.length > 0) {
-            console.log(`Refreshed: ${pendingRows.length} pending song(s) merged`);
+            console.log(`Refreshed: ${pendingRows.length} pending row(s) merged`);
         }
     } catch (e) {
         console.warn('Error refreshing pending songs:', e);

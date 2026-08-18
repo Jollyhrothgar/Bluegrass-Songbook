@@ -16,8 +16,18 @@
 //   2. A matching pending_songs row IS committed, OR the target id already
 //      resolves in the corpus (canon/archive, not an overlay row) → In the
 //      songbook.
-//   3. Neither — a log-only action (a report, a request still awaiting
-//      review, a PR not yet merged) → Requested/Reported.
+//   3. Neither — a log-only action (a report, or a request nobody has turned
+//      into a work yet) → Requested/Reported.
+//
+// TABS REACH CASE 1 NOW. They used to be stuck in case 3: a tab travelled as
+// a GitHub pull request, so `tab_submit` / `tab_correction` wrote a
+// submission_log row with no `pending_songs` row behind it and read as
+// "Requested" until a human merged the PR — the inconsistency
+// contribution-pipeline.md:204-210 accepted on purpose and tracked. With tabs
+// on the instant pipeline a tab writes a real pending row keyed by the same
+// work id the log names, so the join below finds it and the generic rule
+// says Live. No tab-specific branch exists here, and none should: the point
+// of the rebuild is that a tab is not a special kind of contribution.
 //
 // `deriveSubmissionStatus` and `buildSubmissionRows` are pure and exported
 // for unit testing; everything else here is rendering + Supabase I/O.

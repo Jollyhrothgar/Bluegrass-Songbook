@@ -105,7 +105,9 @@ VALUES ('<user-id-here>', 'github-approval');
   } catch (error) {
     console.error('Error creating super-user request:', error)
     return new Response(
-      JSON.stringify({ error: error.message || 'Failed to create request' }),
+      JSON.stringify({
+        error: (error instanceof Error && error.message) || 'Failed to create request',
+      }),
       { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     )
   }

@@ -261,7 +261,7 @@ def arrangement_slug(part_file: str, position: int, taken: set) -> str:
     """Stable, unique-per-work slug for a forked lead sheet.
 
     Derived from the part's filename (`lead-sheet-simplified.pro` ->
-    `simplified`), which `works_writer._unique_filename` already guarantees is
+    `simplified`), which `works_writer.unique_filename` already guarantees is
     unique inside the work — so the slug is stable across builds and across
     label edits.
     """

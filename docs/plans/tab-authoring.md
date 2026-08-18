@@ -71,8 +71,7 @@ is the single biggest finding: this is mostly a wiring job, not a build.
 | Create-a-Tab page | `docs/create.html` | Drag-and-drop `.tef` import (`#import-file`, `accept=".tef"`, calls `parseTef`), from-scratch multi-track creation, mounts the editor. **Linked from nowhere.** |
 | From-scratch flow | `docs/js/otf-editor/create-tab.js` | `INSTRUMENT_CHOICES`, `buildNewTab()`, localStorage draft (`DRAFT_KEY`). |
 | Editor | `docs/js/otf-editor/` | Full editor + `work-edit.js` session wrapper (`createTabEditSession`, `resolveEditTrackId`). |
-| Submit | `docs/js/otf-editor/submit-tab.js` | `submitTab({type, otf, title, instrument, workId, comment})` → `create-tab-pr` edge function → opens a **labeled PR containing the OTF file**. |
-| PR finalisation | `.github/workflows/process-tab-pr.yml` | On label `tab-submission`/`tab-correction`: validates OTF, writes `work.yaml` provenance, rebuilds index. **Merging the PR is the approval.** |
+| Submit | `docs/js/otf-editor/submit-tab.js` | `submitTab({type, otf, title, instrument, file, workId, comment})` → a `pending_songs` row (`part_type: 'tablature'`) → `auto-commit-song`. **Live in seconds, no review.** *(Was a labeled PR via `create-tab-pr`; both that function and `process-tab-pr.yml` are deleted.)* |
 | Supabase overlay | `docs/js/corpus.js` `mergeCorpus({canon, archive, pending})` | Pending rows overlay static rows client-side, no git involved. This is the latency mechanism. |
 | Lists | `docs/js/lists.js` + `supabase/migrations/*public_lists*` | Owner-scoped RLS, cloud-synced, multi-owner. This is the organization layer. |
 | Unindexed tier | `indexed: false` | Row stays in the corpus (deep links, lists, groups resolve) but search/collections exclude it. Already carries 16,764 works. |

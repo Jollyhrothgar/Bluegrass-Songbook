@@ -3,7 +3,8 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 
 import {
     parseJsonl, fetchJsonl, markArchived, mergeCorpus, countDistinctTitles,
-    ensureStems, whenIdle,
+    ensureStems, whenIdle, transformPendingRow, isPendingTablature,
+    overlayPendingTabParts, applyPendingTabs,
 } from '../corpus.js';
 
 const CANON = [
@@ -127,6 +128,149 @@ describe('mergeCorpus', () => {
 
     it('handles being called with nothing', () => {
         expect(mergeCorpus()).toEqual({ songs: [], groups: {} });
+    });
+});
+
+// ---------------------------------------------------------------------
+// Tabs on the instant pipeline: a pending row can be a PART, not a song.
+// ---------------------------------------------------------------------
+
+const OTF = '{"otf_version":"1.0","tracks":[{"id":"banjo"}]}';
+
+/** A raw pending_songs row for a submitted tab. */
+const tabRow = (over = {}) => transformPendingRow({
+    id: 'gold-rush',
+    replaces_id: 'gold-rush',
+    title: 'Gold Rush',
+    part_type: 'tablature',
+    instrument: 'banjo',
+    part_file: null,
+    content: OTF,
+    created_by: 'u1',
+    ...over,
+});
+
+const TABBED_CANON = [{
+    id: 'gold-rush', title: 'Gold Rush', artist: 'Bill Monroe', has_content: true,
+    tablature_parts: [
+        { instrument: 'banjo', label: 'Banjo', src_file: 'banjo.otf.json',
+          file: 'data/tabs/gold-rush-banjo-1.otf.json', author: 'schlange', default: true },
+    ],
+}];
+
+describe('transformPendingRow', () => {
+    it('a lead-sheet row still becomes an index row with lyrics for search', () => {
+        const row = transformPendingRow({
+            id: 'brand-new', title: 'Brand New',
+            content: '{title: Brand New}\n[G]Well I [C]wandered',
+        });
+        expect(isPendingTablature(row)).toBe(false);
+        expect(row.source).toBe('pending');
+        expect(row.first_line).toBe('Well I wandered');
+        expect(row.lyrics).toContain('wandered');
+    });
+
+    it('a tablature row becomes a PART, never a song row', () => {
+        const row = tabRow();
+        expect(isPendingTablature(row)).toBe(true);
+        // The OTF must never end up where a chart's text would be read.
+        expect(row.content).toBeUndefined();
+        expect(row.lyrics).toBeUndefined();
+        expect(row.pending_part).toMatchObject({
+            instrument: 'banjo', content: OTF, pending: true, pending_id: 'gold-rush',
+        });
+        expect(row.pending_part.src_file).toBeUndefined();  // a new take
+    });
+
+    it('carries part_file through as the take a correction targets', () => {
+        expect(tabRow({ part_file: 'banjo.otf.json' }).pending_part.src_file)
+            .toBe('banjo.otf.json');
+    });
+});
+
+describe('overlayPendingTabParts', () => {
+    it('appends a new take alongside the published ones', () => {
+        const parts = overlayPendingTabParts(TABBED_CANON[0].tablature_parts, [tabRow()]);
+        expect(parts).toHaveLength(2);
+        expect(parts[0].author).toBe('schlange');           // untouched
+        expect(parts[1]).toMatchObject({ file: null, pending: true, content: OTF });
+    });
+
+    it('a correction replaces the take it names, keeping that take\'s identity', () => {
+        const parts = overlayPendingTabParts(
+            TABBED_CANON[0].tablature_parts,
+            [tabRow({ part_file: 'banjo.otf.json' })]);
+        expect(parts).toHaveLength(1);                       // not a second take
+        expect(parts[0].content).toBe(OTF);
+        expect(parts[0].pending).toBe(true);
+        expect(parts[0].author).toBe('schlange');            // identity survives
+        expect(parts[0].file).toBe('data/tabs/gold-rush-banjo-1.otf.json');
+    });
+
+    it('ignores a row with no document', () => {
+        expect(overlayPendingTabParts([], [tabRow({ content: '' })])).toEqual([]);
+    });
+});
+
+describe('applyPendingTabs / mergeCorpus with tablature rows', () => {
+    it('attaches to the work it targets instead of becoming a row of its own', () => {
+        const { songs } = mergeCorpus({ canon: TABBED_CANON, pending: [tabRow()] });
+        expect(songs).toHaveLength(1);
+        expect(songs[0].tablature_parts).toHaveLength(2);
+        expect(songs[0].has_content).toBe(true);             // the chart is intact
+        expect(songs[0].content).toBeUndefined();            // no OTF in the lyrics slot
+    });
+
+    it('does NOT flag the work itself as pending (My Submissions reads that flag)', () => {
+        const { songs } = mergeCorpus({ canon: TABBED_CANON, pending: [tabRow()] });
+        expect(songs[0].source).toBeUndefined();
+    });
+
+    it('never mutates the canon row it overlays (rebuilds must not accumulate)', () => {
+        const canon = JSON.parse(JSON.stringify(TABBED_CANON));
+        mergeCorpus({ canon, pending: [tabRow()] });
+        mergeCorpus({ canon, pending: [tabRow()] });
+        expect(canon[0].tablature_parts).toHaveLength(1);
+    });
+
+    it('a tab for an unpublished work becomes a tab-only row, not a fake song', () => {
+        const { songs } = mergeCorpus({
+            canon: TABBED_CANON,
+            pending: [tabRow({ id: 'brand-new-reel', replaces_id: null, title: 'Brand New Reel' })],
+        });
+        const row = songs.find(s => s.id === 'brand-new-reel');
+        expect(row.has_content).toBeUndefined();             // nothing to fetch
+        expect(row.source).toBe('pending');
+        expect(row.tablature_parts[0].content).toBe(OTF);
+        expect(row.lyrics).toBe('');
+    });
+
+    it('lands on the pending SONG row when a work has an edit and a tab at once', () => {
+        const { songs } = mergeCorpus({
+            canon: TABBED_CANON,
+            pending: [
+                transformPendingRow({
+                    id: 'gold-rush', replaces_id: 'gold-rush',
+                    title: 'Gold Rush', content: '[G]edited chart',
+                }),
+                tabRow(),
+            ],
+        });
+        expect(songs).toHaveLength(1);
+        expect(songs[0].content).toBe('[G]edited chart');
+        expect(songs[0].tablature_parts).toHaveLength(2);
+    });
+
+    it('a deleted work takes its pending tab with it', () => {
+        const { songs } = mergeCorpus({
+            canon: TABBED_CANON, pending: [tabRow()], deleted: ['gold-rush'],
+        });
+        expect(songs).toHaveLength(0);
+    });
+
+    it('applyPendingTabs is a no-op without tab rows', () => {
+        const songs = [{ id: 'a' }];
+        expect(applyPendingTabs(songs, [])).toBe(songs);
     });
 });
 

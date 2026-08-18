@@ -10,6 +10,11 @@ lands through ``works_writer`` — so what is worth guarding here is:
 - a genuine second edit of the same row is NOT mistaken for a replay
 - refusals are typed and loud (bad mode, empty content, no title)
 - the phase-3b dedup backstop diverts, holds, or stays out of the way
+- a tablature row reaches the writer as a tab: created, added beside what is
+  there, or updated in place — never overwriting a stranger's take
+- an OTF is validated before it is written, and the lyric-based dedup
+  backstop stays away from it
+- owning one KIND of part never buys edit rights over another kind
 
 The backstop tests use the ``tests/fixtures/dedup/`` charts, whose provenance
 is documented in ``tests/test_dedup_scorer.py``: the ``how-long-blues`` pair is
@@ -17,6 +22,8 @@ the real #208 miss (a lyrics-only scrape and the same song submitted with
 chords), so "would this have been caught?" is asked here with the actual text
 that wasn't.
 """
+
+import json
 
 import pytest
 import yaml
@@ -29,7 +36,10 @@ from process_pending import (
     already_applied,
     apply_row,
     content_marker,
+    otf_document,
     owns_content,
+    tab_work_slug,
+    validate_otf,
 )
 
 CHORDPRO = "{meta: title Blue Moon of Kentucky}\n[G]Blue moon of Kentucky\n"
@@ -671,3 +681,613 @@ class TestOwnership:
         assert not owns_content(tmp_path, 'blue-moon-of-kentucky', SUBMITTER)
         assert not owns_content(tmp_path, 'blue-moon-of-kentucky', None)
         assert not owns_content(tmp_path, 'no-such-work', OTHER_USER)
+
+
+# ============================================
+# Tablature
+# ============================================
+#
+# Tabs joined this pipeline on 2026-08-18, replacing the create-tab-pr /
+# process-tab-pr.yml pull-request flow. The shapes that used to be
+# process_tab.py's job — a tab that mints its own work, a tab added to a
+# song that already exists, a same-instrument sibling, a correction to a
+# published take — all arrive here now, decided server-side and carried in
+# a pending_songs row.
+
+
+def otf_doc(track_id='banjo', fret=0, **extra):
+    doc = {
+        'otf_version': '1.0',
+        'metadata': {'title': 'Salt Creek'},
+        'timing': {'ticks_per_beat': 480},
+        'tracks': [{
+            'id': track_id,
+            'instrument': '5-string-banjo',
+            'tuning': ['D4', 'B3', 'G3', 'D3', 'G4'],
+        }],
+        'notation': {track_id: [
+            {'measure': 1,
+             'events': [{'tick': 0, 'notes': [{'s': 1, 'f': fret}]}]},
+        ]},
+    }
+    doc.update(extra)
+    return doc
+
+
+def tab_row(**kw):
+    # A tab row's id is synthetic — `tab:<slug>:<rand>` — because
+    # pending_songs is keyed one row per SONG and a tab is a PART. Two
+    # people tabbing the same tune must not collide on the primary key.
+    base = {
+        'id': 'tab:salt-creek:ab12cd',
+        'replaces_id': None,
+        'title': 'Salt Creek',
+        'artist': 'Bill Monroe',
+        'part_type': 'tablature',
+        'instrument': 'banjo',
+        'part_file': None,
+        'content': json.dumps(otf_doc()),
+        'created_by': SUBMITTER,
+        'created_at': '2026-08-18T12:00:00+00:00',
+    }
+    base.update(kw)
+    return base
+
+
+def seed_tab_work(tmp_path, work_id='salt-creek', *, file='banjo.otf.json',
+                  source='banjo-hangout', source_id='11059',
+                  submitted_by=None, author='schlange', content=None):
+    """A work whose only part is a published banjo tab."""
+    provenance = {'source': source, 'source_id': source_id, 'author': author}
+    if submitted_by:
+        provenance['submitted_by'] = submitted_by
+    works_writer.create_work(
+        tmp_path, work_id, 'Salt Creek',
+        works_writer.PartSpec(
+            file=file, type='tablature', format='otf', instrument='banjo',
+            default=True, content=content or json.dumps(otf_doc()),
+            provenance=provenance),
+        on_collision='fail', verbose=False)
+
+
+class TestTablatureCreate:
+    def test_a_tab_mints_its_own_work(self, tmp_path):
+        result = apply_row(tmp_path, tab_row(), 'create', 'salt-creek',
+                           actor='Jane Picker', verbose=False)
+
+        assert result.written
+        assert result.part_file == 'banjo.otf.json'
+        work = read_work(tmp_path, 'salt-creek')
+        assert work['title'] == 'Salt Creek'
+        assert work['artist'] == 'Bill Monroe'
+        assert work['tags'] == ['Instrumental']
+
+        part = work['parts'][0]
+        assert part['type'] == 'tablature'
+        assert part['format'] == 'otf'
+        assert part['instrument'] == 'banjo'
+        assert part['default'] is True
+        assert part['provenance']['source'] == 'user-submission'
+        assert part['provenance']['submitted_by'] == SUBMITTER
+        assert part['provenance']['author'] == 'Jane Picker'
+
+    def test_the_otf_lands_as_readable_json(self, tmp_path):
+        apply_row(tmp_path, tab_row(), 'create', 'salt-creek', verbose=False)
+
+        text = (tmp_path / 'works/salt-creek/banjo.otf.json').read_text()
+        assert text.endswith('\n')
+        assert '\n  "tracks"' in text          # indent=2, like the corpus
+        assert json.loads(text)['tracks'][0]['id'] == 'banjo'
+
+    def test_x_source_is_dropped_so_the_build_gate_cannot_trip(self, tmp_path):
+        """An edited Hangout tab still claims to be that TEF conversion.
+
+        build_works_index fails the whole build when the OTF's x_source id
+        disagrees with the part's provenance.source_id — which is the
+        pending marker here — so the stale claim has to go, and the
+        identity it carried is kept in provenance instead.
+        """
+        row_ = tab_row(content=json.dumps(
+            otf_doc(x_source={'source': 'banjo-hangout', 'source_id': '11059'})))
+
+        apply_row(tmp_path, row_, 'create', 'salt-creek', verbose=False)
+
+        doc = json.loads((tmp_path / 'works/salt-creek/banjo.otf.json').read_text())
+        assert 'x_source' not in doc
+
+
+class TestTablatureAdd:
+    def test_a_tab_for_a_song_that_has_none(self, tmp_path):
+        """The bounty case: a chart is published, a tab arrives."""
+        seed_work(tmp_path, 'salt-creek', submitted_by=OTHER_USER)
+
+        result = apply_row(tmp_path, tab_row(), 'add', 'salt-creek',
+                           actor='Jane Picker', verbose=False)
+
+        assert result.written
+        assert result.part_file == 'banjo.otf.json'
+        work = read_work(tmp_path, 'salt-creek')
+        types = [p['type'] for p in work['parts']]
+        assert types == ['lead-sheet', 'tablature']
+        # The published chart keeps its default flag; a tab is not a chart.
+        assert work['parts'][0]['default'] is True
+        assert work['parts'][1].get('default') is not True
+
+    def test_a_second_take_becomes_a_sibling_not_an_overwrite(self, tmp_path):
+        seed_tab_work(tmp_path)
+        before = (tmp_path / 'works/salt-creek/banjo.otf.json').read_text()
+
+        result = apply_row(tmp_path, tab_row(content=json.dumps(otf_doc(fret=5))),
+                           'add', 'salt-creek', actor='Jane Picker',
+                           verbose=False)
+
+        assert result.part_file == 'banjo-2.otf.json'
+        work = read_work(tmp_path, 'salt-creek')
+        assert [p['file'] for p in work['parts']] == [
+            'banjo.otf.json', 'banjo-2.otf.json']
+
+        original, sibling = work['parts']
+        assert original['default'] is True
+        assert original['provenance']['source'] == 'banjo-hangout'
+        assert original['provenance']['author'] == 'schlange'
+        assert (tmp_path / 'works/salt-creek/banjo.otf.json').read_text() == before
+
+        # The suffix is a filename detail, never the instrument
+        assert sibling['instrument'] == 'banjo'
+        assert sibling.get('default') is not True
+        assert sibling['provenance']['submitted_by'] == SUBMITTER
+
+    def test_a_non_owners_correction_lands_beside_the_original(self, tmp_path):
+        """The 'hard to destroy' rule in the tab column.
+
+        The user meant to fix somebody else's take, so the row names its
+        file — but they do not own it and are not trusted, so the edge
+        function classified this `add`. It must not touch what it names.
+        """
+        seed_tab_work(tmp_path)
+        before = (tmp_path / 'works/salt-creek/banjo.otf.json').read_text()
+
+        apply_row(tmp_path,
+                  tab_row(part_file='banjo.otf.json',
+                          content=json.dumps(otf_doc(fret=7))),
+                  'add', 'salt-creek', actor='Jane Picker', verbose=False)
+
+        work = read_work(tmp_path, 'salt-creek')
+        assert len(work['parts']) == 2
+        assert (tmp_path / 'works/salt-creek/banjo.otf.json').read_text() == before
+        assert 'x_corrected_by' not in work['parts'][0]['provenance']
+
+    def test_adding_to_a_work_that_is_not_there_is_a_typed_refusal(self, tmp_path):
+        with pytest.raises(ProcessPendingError):
+            apply_row(tmp_path, tab_row(), 'add', 'salt-creek', verbose=False)
+
+
+class TestTablatureUpdate:
+    def test_rewrites_the_named_part_in_place(self, tmp_path):
+        seed_tab_work(tmp_path, submitted_by=SUBMITTER, author='Jane Picker')
+
+        result = apply_row(
+            tmp_path,
+            tab_row(part_file='banjo.otf.json',
+                    content=json.dumps(otf_doc(fret=5))),
+            'update', 'salt-creek', actor='Jane Picker', verbose=False)
+
+        assert result.written
+        work = read_work(tmp_path, 'salt-creek')
+        assert len(work['parts']) == 1            # no sibling minted
+        doc = json.loads((tmp_path / 'works/salt-creek/banjo.otf.json').read_text())
+        assert doc['notation']['banjo'][0]['events'][0]['notes'][0]['f'] == 5
+
+    def test_a_correction_records_who_fixed_it_without_taking_the_credit(
+            self, tmp_path):
+        seed_tab_work(tmp_path)   # arranged by 'schlange', from the Hangout
+
+        apply_row(tmp_path,
+                  tab_row(part_file='banjo.otf.json',
+                          content=json.dumps(otf_doc(fret=5))),
+                  'update', 'salt-creek', actor='Trusted Tim', verbose=False)
+
+        prov = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']
+        assert prov['author'] == 'schlange'       # the arranger, untouched
+        assert prov['x_corrected_by'] == SUBMITTER
+        assert prov['x_corrected_attribution'] == 'Trusted Tim'
+        # The take started life as a Hangout conversion; source_id had to
+        # become the idempotence marker, so the lineage is kept beside it.
+        assert prov['x_derived_from'] == 'banjo-hangout:11059'
+        assert prov['source'] == 'user-submission'
+        assert prov['source_id'].startswith('pending:tab:salt-creek:ab12cd:')
+
+    def test_a_vanished_target_falls_back_to_add(self, tmp_path):
+        """main moved under the dispatch: the named part is gone.
+
+        Guessing at a substitute target would let update_part pick the
+        default take and overwrite a stranger's arrangement, so the write
+        lands beside what is actually there instead.
+        """
+        seed_tab_work(tmp_path, file='banjo-11059.otf.json')
+
+        result = apply_row(
+            tmp_path,
+            tab_row(part_file='banjo-gone.otf.json',
+                    content=json.dumps(otf_doc(fret=5))),
+            'update', 'salt-creek', actor='Jane Picker', verbose=False)
+
+        work = read_work(tmp_path, 'salt-creek')
+        assert len(work['parts']) == 2
+        assert result.part_file == 'banjo.otf.json'
+        assert work['parts'][0]['provenance']['author'] == 'schlange'
+
+
+class TestTablatureValidation:
+    """The OTF gets its structural check here or nowhere.
+
+    These cases came over from the retired tests/parser/test_process_tab.py
+    along with validate_otf itself.
+    """
+
+    def test_a_good_document_has_no_problems(self):
+        assert validate_otf(otf_doc()) == []
+
+    def test_no_tracks(self):
+        assert validate_otf({'tracks': []})
+        assert validate_otf('not an object') == ['not an object']
+
+    def test_a_string_off_the_neck(self):
+        doc = otf_doc()
+        doc['notation']['banjo'][0]['events'][0]['notes'][0]['s'] = 9
+        assert any('bad string' in p for p in validate_otf(doc))
+
+    def test_a_fret_past_the_end(self):
+        doc = otf_doc()
+        doc['notation']['banjo'][0]['events'][0]['notes'][0]['f'] = 99
+        assert any('bad fret' in p for p in validate_otf(doc))
+
+    def test_an_invalid_otf_is_refused_before_anything_is_written(self, tmp_path):
+        doc = otf_doc()
+        doc['notation']['banjo'][0]['events'][0]['notes'][0]['f'] = 99
+
+        with pytest.raises(ProcessPendingError, match='OTF validation'):
+            apply_row(tmp_path, tab_row(content=json.dumps(doc)), 'create',
+                      'salt-creek', verbose=False)
+        assert not (tmp_path / 'works' / 'salt-creek').exists()
+
+    def test_content_that_is_not_json_at_all(self, tmp_path):
+        with pytest.raises(ProcessPendingError, match='not valid JSON'):
+            apply_row(tmp_path, tab_row(content='{meta: title Salt Creek}'),
+                      'create', 'salt-creek', verbose=False)
+
+    def test_a_tab_with_no_instrument_is_refused(self, tmp_path):
+        with pytest.raises(ProcessPendingError, match='instrument'):
+            apply_row(tmp_path, tab_row(instrument=None), 'create',
+                      'salt-creek', verbose=False)
+
+    def test_an_instrument_that_is_not_a_slug_is_refused(self, tmp_path):
+        """It becomes a filename inside works/."""
+        with pytest.raises(ProcessPendingError, match='instrument'):
+            apply_row(tmp_path, tab_row(instrument='../../etc/passwd'),
+                      'create', 'salt-creek', verbose=False)
+
+    def test_a_mode_from_the_chart_column_is_refused(self, tmp_path):
+        seed_tab_work(tmp_path)
+        with pytest.raises(ProcessPendingError, match='tablature mode'):
+            apply_row(tmp_path, tab_row(), 'fork', 'salt-creek', verbose=False)
+
+
+class TestTablatureReplay:
+    def test_a_second_dispatch_of_the_same_row_is_a_no_op(self, tmp_path):
+        apply_row(tmp_path, tab_row(), 'create', 'salt-creek', verbose=False)
+
+        result = apply_row(tmp_path, tab_row(), 'add', 'salt-creek',
+                           verbose=False)
+
+        assert not result.written
+        assert result.skipped_reason == 'already-applied'
+        assert len(read_work(tmp_path, 'salt-creek')['parts']) == 1
+
+    def test_a_reserialized_but_identical_tab_is_still_a_replay(self, tmp_path):
+        """The marker is a sha of the CANONICAL text, not of what arrived.
+
+        An OTF is machine-serialized; its whitespace is nobody's intent, so
+        a client that re-saves an unchanged tab must not mint a sibling.
+        """
+        apply_row(tmp_path, tab_row(), 'create', 'salt-creek', verbose=False)
+
+        result = apply_row(
+            tmp_path,
+            tab_row(content=json.dumps(otf_doc(), indent=4)),
+            'add', 'salt-creek', verbose=False)
+
+        assert result.skipped_reason == 'already-applied'
+
+    def test_a_genuine_second_edit_is_not_a_replay(self, tmp_path):
+        apply_row(tmp_path, tab_row(), 'create', 'salt-creek', verbose=False)
+
+        result = apply_row(tmp_path,
+                           tab_row(part_file='banjo.otf.json',
+                                   content=json.dumps(otf_doc(fret=5))),
+                           'update', 'salt-creek', verbose=False)
+
+        assert result.written
+        doc = json.loads((tmp_path / 'works/salt-creek/banjo.otf.json').read_text())
+        assert doc['notation']['banjo'][0]['events'][0]['notes'][0]['f'] == 5
+
+    def test_the_marker_is_canonical_and_content_scoped(self):
+        same = otf_document(tab_row())[1]
+        reformatted = otf_document(tab_row(content=json.dumps(otf_doc(), indent=4)))[1]
+        changed = otf_document(tab_row(content=json.dumps(otf_doc(fret=5))))[1]
+
+        row_id = 'tab:salt-creek:ab12cd'
+        assert content_marker(row_id, same) == \
+            content_marker(row_id, reformatted)
+        assert content_marker(row_id, same) != \
+            content_marker(row_id, changed)
+        # Two people, two rows, same tab: two markers, so both land.
+        assert content_marker(row_id, same) != \
+            content_marker('tab:salt-creek:zz99xx', same)
+
+
+class TestTablatureSkipsTheDedupBackstop:
+    def test_the_backstop_is_never_consulted_for_a_tab(self, tmp_path):
+        """Not "it happened to say proceed" — it is not asked at all.
+
+        The scorer measures lyric containment. An OTF has no lyrics, so the
+        only thing running it could do is spend 1.6s building a title index
+        and then risk diverting a write on a title collision.
+        """
+        seed_chart(tmp_path, 'salt-creek', 'Salt Creek', CHORDPRO)
+        backstop = DedupBackstop(tmp_path)
+
+        result = apply_row(tmp_path, tab_row(), 'add', 'salt-creek',
+                           verbose=False, backstop=backstop)
+
+        assert result.written
+        assert backstop.decision is None
+
+    def test_a_tab_for_a_title_already_in_the_corpus_still_lands(self, tmp_path):
+        """A create-mode tab is exactly what the backstop would have eaten."""
+        seed_chart(tmp_path, 'salt-creek-chart', 'Salt Creek', CHORDPRO)
+
+        result = apply_row(tmp_path, tab_row(), 'create', 'salt-creek',
+                           verbose=False)
+
+        assert result.written
+        assert result.work_id == 'salt-creek'
+
+
+# ============================================
+# Cross-type ownership
+# ============================================
+
+
+class TestTabOwnershipDoesNotBuyChartEdits:
+    """Owning a tab must not confer edit rights over a stranger's chart.
+
+    Before tabs joined this pipeline, ``submitted_by`` appeared on
+    lead-sheet parts alone, so "owns a part of this work" and "owns a chart
+    of this work" were the same sentence and both classifiers asked the
+    loose version. Tab rows carry ``submitted_by`` now — the idempotence
+    marker and the owner id are written together — and the loose question
+    would have answered:
+
+      1. Alice submits a banjo tab to works/foo.
+      2. Alice edits foo's LEAD SHEET, which belongs to someone else, and
+         she is not trusted.
+      3. Ownership says "she has a part here" -> update, not fork.
+      4. update_target finds she owns no CHART -> None -> "she must be
+         trusted" -> the match falls back to the work's primary chart.
+      5. Editing the primary carries work_updates, so her title/artist/key
+         overwrite the work's as well.
+
+    Net: contributing a tab bought an in-place overwrite of somebody else's
+    lyrics. Both classifiers now count only parts of the kind being edited.
+    """
+
+    def test_owns_content_is_scoped_to_the_part_type(self, tmp_path):
+        seed_work(tmp_path, 'salt-creek', submitted_by=OTHER_USER)
+        apply_row(tmp_path, tab_row(), 'add', 'salt-creek',
+                  actor='Alice', verbose=False)
+
+        # Alice owns the tab...
+        assert owns_content(tmp_path, 'salt-creek', SUBMITTER, 'tablature')
+        # ...and nothing else.
+        assert not owns_content(tmp_path, 'salt-creek', SUBMITTER, 'lead-sheet')
+        assert owns_content(tmp_path, 'salt-creek', OTHER_USER, 'lead-sheet')
+        # The default is the chart question, which is what every existing
+        # caller was asking.
+        assert not owns_content(tmp_path, 'salt-creek', SUBMITTER)
+
+    def test_a_tab_contributors_chart_edit_still_forks(
+            self, tmp_path, dedup_fixtures):
+        """The full sequence, through the Python classifier.
+
+        The dedup backstop's redirect is the one place in this process that
+        decides update-vs-fork on its own, so it is where the escalation is
+        reachable end to end: Alice owns a tab on the matched work and
+        nothing else, and her chart must still land as an arrangement with
+        the original untouched.
+        """
+        seed_chart(tmp_path, 'how-long-blues', 'How Long Blues',
+                   (dedup_fixtures / 'how-long-blues.pro').read_text(),
+                   submitted_by=OTHER_USER)
+        works_writer.update_part(
+            tmp_path, 'how-long-blues', match={'type': 'lead-sheet'},
+            work_updates={'artist': 'Leroy Carr', 'default_key': 'C'},
+            verbose=False)
+        apply_row(tmp_path,
+                  tab_row(id='hlb-tab', title='How Long Blues',
+                          replaces_id='how-long-blues'),
+                  'add', 'how-long-blues', actor='Alice', verbose=False)
+        original = (tmp_path / 'works/how-long-blues/lead-sheet.pro').read_text()
+
+        backstop = DedupBackstop(tmp_path)
+        result = apply_row(
+            tmp_path,
+            hlb_row((dedup_fixtures / 'how-long-blues-1.pro').read_text(),
+                    artist='Somebody Else', key='G'),
+            'create', 'how-long-blues-1', actor='Alice',
+            verbose=False, backstop=backstop)
+
+        assert backstop.decision.action == 'redirect'
+        assert backstop.decision.mode == 'fork'
+        assert result.mode == 'fork-to-arrangement'
+
+        # Nothing of somebody else's moved.
+        work = read_work(tmp_path, 'how-long-blues')
+        assert work['artist'] == 'Leroy Carr'
+        assert work['default_key'] == 'C'
+        assert work['title'] == 'How Long Blues'
+        assert (tmp_path / 'works/how-long-blues/lead-sheet.pro').read_text() \
+            == original
+        charts = [p for p in work['parts'] if p['type'] == 'lead-sheet']
+        assert charts[0]['file'] == 'lead-sheet.pro'
+        assert charts[0]['default'] is True
+        assert charts[0]['provenance']['submitted_by'] == OTHER_USER
+
+
+class TestTabRowIdsAreNotWorkSlugs:
+    """`pending_songs.id` is a PK, and for a chart it IS the work slug.
+
+    That shape does not survive contact with parts. Keying a tab row by the
+    work id means two people tabbing the same song collide on the primary
+    key — and because the update policy gates on `created_by = auth.uid()`,
+    the second one fails as a *permissions* error that says nothing about
+    what went wrong. A pending chart and a pending tab for one song could
+    not coexist either. So tab rows are `tab:<slug>:<rand>`, and the work
+    they target comes from `replaces_id` or from the title.
+    """
+
+    def test_the_slug_comes_from_the_title_not_the_row_id(self, tmp_path):
+        """The dispatch fell back to the row id; the write must not."""
+        result = apply_row(tmp_path, tab_row(), 'create',
+                           'tab:salt-creek:ab12cd', actor='Jane Picker',
+                           verbose=False)
+
+        assert result.work_id == 'salt-creek'
+        assert (tmp_path / 'works/salt-creek/banjo.otf.json').exists()
+        assert not (tmp_path / 'works/tab:salt-creek:ab12cd').exists()
+
+    def test_a_valid_dispatched_slug_is_left_alone(self, tmp_path):
+        result = apply_row(tmp_path, tab_row(title='Salt Creek'), 'create',
+                           'salt-creek-2', verbose=False)
+
+        assert result.work_id == 'salt-creek-2'
+
+    def test_a_title_that_slugifies_to_nothing_is_a_typed_refusal(self, tmp_path):
+        with pytest.raises(ProcessPendingError, match='not a slug'):
+            apply_row(tmp_path, tab_row(title='!!!'), 'create',
+                      'tab::ab12cd', verbose=False)
+
+    def test_tab_work_slug_rules(self):
+        assert tab_work_slug('salt-creek', 'Salt Creek') == 'salt-creek'
+        assert tab_work_slug('tab:salt-creek:ab12cd', 'Salt Creek') == 'salt-creek'
+        assert tab_work_slug('', "Foggy Mountain Breakdown") == \
+            'foggy-mountain-breakdown'
+        # An id that is merely ugly, not a slug, still loses to the title
+        assert tab_work_slug('Salt Creek', 'Salt Creek') == 'salt-creek'
+
+    def test_a_colliding_slug_suffixes_rather_than_adopting(self, tmp_path):
+        """create_work resolves the real slug against the checkout.
+
+        This is the free-slug hunt create-tab-pr did by probing the Contents
+        API from a branch that could not see other branches.
+        """
+        seed_work(tmp_path, 'salt-creek', submitted_by=OTHER_USER)
+
+        result = apply_row(tmp_path, tab_row(), 'create', 'salt-creek',
+                           verbose=False)
+
+        assert result.work_id == 'salt-creek-1'
+        # The existing work is untouched — still one chart, no tab
+        work = read_work(tmp_path, 'salt-creek')
+        assert [p['type'] for p in work['parts']] == ['lead-sheet']
+
+    def test_two_users_tabbing_one_song_both_land(self, tmp_path):
+        """The case the shared PK made impossible."""
+        seed_work(tmp_path, 'salt-creek', submitted_by=OTHER_USER)
+
+        first = apply_row(
+            tmp_path,
+            tab_row(id='tab:salt-creek:aaa111', created_by=SUBMITTER),
+            'add', 'salt-creek', actor='Alice', verbose=False)
+        second = apply_row(
+            tmp_path,
+            tab_row(id='tab:salt-creek:bbb222', created_by=OTHER_USER,
+                    content=json.dumps(otf_doc(fret=5))),
+            'add', 'salt-creek', actor='Bob', verbose=False)
+
+        assert first.part_file == 'banjo.otf.json'
+        assert second.part_file == 'banjo-2.otf.json'
+        work = read_work(tmp_path, 'salt-creek')
+        tabs = [p for p in work['parts'] if p['type'] == 'tablature']
+        assert [p['provenance']['submitted_by'] for p in tabs] == \
+            [SUBMITTER, OTHER_USER]
+        assert [p['provenance']['author'] for p in tabs] == ['Alice', 'Bob']
+
+    def test_identical_tabs_from_two_users_are_not_a_replay(self, tmp_path):
+        """The marker is row-scoped, and the rows are now distinct.
+
+        Under the old shape these two would have been one row; the second
+        submission would have looked like a replay of the first.
+        """
+        seed_work(tmp_path, 'salt-creek', submitted_by=OTHER_USER)
+
+        apply_row(tmp_path, tab_row(id='tab:salt-creek:aaa111'), 'add',
+                  'salt-creek', verbose=False)
+        result = apply_row(tmp_path, tab_row(id='tab:salt-creek:bbb222'),
+                           'add', 'salt-creek', verbose=False)
+
+        assert result.written
+        assert result.part_file == 'banjo-2.otf.json'
+
+
+class TestTabNotes:
+    """The submitter's comment has to survive the move off the PR flow.
+
+    create-tab-pr put it in the PR body and `process_tab` wrote it nowhere,
+    because a human read the PR. There is no PR now, so it lands on the
+    part — never in the work-level `notes`, which describes the SONG and
+    not one take of it.
+    """
+
+    def test_a_new_tab_records_the_note_on_its_part(self, tmp_path):
+        apply_row(tmp_path, tab_row(notes='Scruggs style, capo 2'), 'create',
+                  'salt-creek', actor='Jane Picker', verbose=False)
+
+        work = read_work(tmp_path, 'salt-creek')
+        assert work['parts'][0]['provenance']['x_submission_notes'] == \
+            'Scruggs style, capo 2'
+        assert 'notes' not in work
+
+    def test_a_sibling_records_it_too(self, tmp_path):
+        seed_tab_work(tmp_path)
+
+        apply_row(tmp_path,
+                  tab_row(part_file='banjo.otf.json', notes='Cleaner rolls',
+                          content=json.dumps(otf_doc(fret=5))),
+                  'add', 'salt-creek', actor='Jane Picker', verbose=False)
+
+        work = read_work(tmp_path, 'salt-creek')
+        assert work['parts'][1]['provenance']['x_submission_notes'] == \
+            'Cleaner rolls'
+        # The take it was aimed at learned nothing about it
+        assert 'x_submission_notes' not in work['parts'][0]['provenance']
+
+    def test_a_correction_names_it_for_what_it_is(self, tmp_path):
+        seed_tab_work(tmp_path, submitted_by=SUBMITTER, author='Jane Picker')
+
+        apply_row(tmp_path,
+                  tab_row(part_file='banjo.otf.json',
+                          notes='Fixed the fret in bar 12',
+                          content=json.dumps(otf_doc(fret=5))),
+                  'update', 'salt-creek', actor='Jane Picker', verbose=False)
+
+        prov = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']
+        assert prov['x_correction_notes'] == 'Fixed the fret in bar 12'
+        assert 'x_submission_notes' not in prov
+
+    def test_no_note_writes_no_key(self, tmp_path):
+        apply_row(tmp_path, tab_row(notes='   '), 'create', 'salt-creek',
+                  verbose=False)
+
+        prov = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']
+        assert 'x_submission_notes' not in prov

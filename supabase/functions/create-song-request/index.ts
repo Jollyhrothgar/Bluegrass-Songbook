@@ -254,7 +254,9 @@ ${entry.notes ? `\n### Notes\n${entry.notes}\n` : ''}
   } catch (error) {
     console.error('Error creating placeholder:', error)
     return new Response(
-      JSON.stringify({ error: error.message || 'Failed to create request' }),
+      JSON.stringify({
+        error: (error instanceof Error && error.message) || 'Failed to create request',
+      }),
       { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     )
   }

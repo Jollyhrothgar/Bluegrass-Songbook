@@ -101,7 +101,8 @@ serve(async (req) => {
     // Every uncommitted row: this count IS the drift between Live and Durable.
     const { data: rows, error } = await supabase
       .from('pending_songs')
-      .select('id, replaces_id, title, artist, composer, content, key, mode, tags, created_at, created_by, dedup_hold')
+      // One string literal — supabase-js types the row off the literal.
+      .select('id, replaces_id, title, artist, composer, content, key, mode, tags, created_at, created_by, dedup_hold, part_type, instrument, part_file')
       .eq('github_committed', false)
       .order('created_at', { ascending: true })
 
@@ -165,12 +166,19 @@ serve(async (req) => {
           .eq('user_id', actorId)
           .maybeSingle()
 
+        // part_type / part_file ride along so a retried TAB is classified the
+        // way the live path would have classified it. Without them a tab row
+        // would be re-dispatched as a chart and land as lead-sheet.pro
+        // holding an OTF document.
         const classification = await classifyChange({
           rowId: row.id,
           replacesId: row.replaces_id,
           userId: actorId,
           trusted: !!trustedUser,
           githubToken: githubToken as string,
+          title: row.title,
+          partType: row.part_type,
+          partFile: row.part_file,
         })
 
         let actor = actorId

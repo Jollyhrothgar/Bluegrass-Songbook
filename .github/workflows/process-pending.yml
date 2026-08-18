@@ -8,9 +8,16 @@ name: Process Pending Submission
 # scripts/lib/works_writer.py — the repo's one writer.
 #
 # Nothing here authors YAML. The edge function decided create / update /
-# fork; process_pending.py hands that decision to the writer and the writer
-# enforces the rules (never overwrite silently, never resurrect a suppressed
-# id, provenance always present, a fork never displaces the original).
+# fork / add; process_pending.py hands that decision to the writer and the
+# writer enforces the rules (never overwrite silently, never resurrect a
+# suppressed id, provenance always present, a fork never displaces the
+# original).
+#
+# Tabs land here too (2026-08-18). A pending_songs row with
+# part_type = 'tablature' carries a serialized OTF instead of ChordPro and
+# writes works/<id>/<instrument>[-N].otf.json; `add` is its version of
+# `fork`. This replaced the create-tab-pr / process-tab-pr.yml pull-request
+# flow — see docs/plans/contribution-pipeline.md, phase 4c.
 #
 # The index is deliberately NOT rebuilt here: docs/data/ is generated,
 # gitignored tier-4 data (see "Data Tiers" in CLAUDE.md) and the Pages deploy
@@ -209,6 +216,8 @@ jobs:
           MODE: ${{ steps.write.outputs.mode }}
           WORK_ID: ${{ steps.write.outputs.work_id }}
           PART: ${{ steps.write.outputs.part_file }}
+          PART_TYPE: ${{ steps.write.outputs.part_type }}
+          INSTRUMENT: ${{ steps.write.outputs.instrument }}
           ROW_ID: ${{ github.event.client_payload.row_id }}
           DEDUP_ACTION: ${{ steps.write.outputs.dedup_action }}
           DEDUP_REASON: ${{ steps.write.outputs.dedup_reason }}
@@ -219,6 +228,7 @@ jobs:
             echo "| field | value |"
             echo "| --- | --- |"
             echo "| row | \`${ROW_ID}\` |"
+            echo "| kind | ${PART_TYPE:-lead-sheet}${INSTRUMENT:+ (${INSTRUMENT})} |"
             echo "| mode | ${MODE:-unknown} |"
             echo "| work | \`${WORK_ID:-unknown}\` |"
             echo "| part | \`${PART:-}\` |"
