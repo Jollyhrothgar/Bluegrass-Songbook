@@ -142,7 +142,7 @@ case "$COMMAND" in
         ;;
     sync-tag-votes)
         echo "Fetching tag overrides from trusted user votes..."
-        uv run python3 scripts/lib/fetch_tag_overrides.py
+        ./scripts/lib/with-secrets -- uv run python3 scripts/lib/fetch_tag_overrides.py
         echo ""
         echo "Rebuilding index..."
         ./scripts/bootstrap --quick
@@ -151,7 +151,7 @@ case "$COMMAND" in
         ;;
     sync-deleted-songs)
         echo "Fetching deleted songs list from Supabase..."
-        uv run python3 scripts/lib/fetch_deleted_songs.py
+        ./scripts/lib/with-secrets -- uv run python3 scripts/lib/fetch_deleted_songs.py
         echo ""
         echo "Rebuilding index..."
         ./scripts/bootstrap --quick
@@ -190,7 +190,7 @@ case "$COMMAND" in
 
     sync-promoted-songs)
         echo "Fetching promoted songs list from Supabase..."
-        uv run python3 scripts/lib/fetch_promoted_songs.py
+        ./scripts/lib/with-secrets -- uv run python3 scripts/lib/fetch_promoted_songs.py
         echo ""
         echo "Rebuilding index..."
         ./scripts/bootstrap --quick
@@ -239,7 +239,7 @@ case "$COMMAND" in
         ;;
     export-suggestions)
         echo "Exporting genre suggestions from Supabase..."
-        uv run python3 scripts/lib/export_genre_suggestions.py
+        ./scripts/lib/with-secrets -- uv run python3 scripts/lib/export_genre_suggestions.py
         ;;
     build-posts)
         echo "Building posts manifest..."
@@ -257,13 +257,13 @@ case "$COMMAND" in
             echo "Usage: ./scripts/utility strum-machine-test \"Song Title\""
             exit 1
         fi
-        uv run python3 -m scripts.lib.strum_machine "$@"
+        ./scripts/lib/with-secrets -- uv run python3 -m scripts.lib.strum_machine "$@"
         ;;
     strum-machine-match)
         echo "Matching all songs against Strum Machine..."
         echo "(This will take ~30 minutes for 17k songs at 10 req/sec)"
         echo ""
-        uv run python3 -m scripts.lib.strum_machine --batch
+        ./scripts/lib/with-secrets -- uv run python3 -m scripts.lib.strum_machine --batch
         ;;
     search)
         if [ -z "$1" ]; then

@@ -15,6 +15,13 @@ work still resolves by direct URL and can be restored to search — see
 ./scripts/utility build-posts        # Build blog posts manifest
 ```
 
+## Secrets
+
+Never written to disk. `.env.tpl` holds 1Password `op://` references (committed);
+values are injected per-command by `scripts/lib/with-secrets`, which
+`./scripts/utility` already uses for everything needing them. Run `op signin`
+once per session. Details in `scripts/lib/CLAUDE.md`.
+
 ## CRITICAL: Cost Controls
 
 **NEVER submit paid API calls without explicit user confirmation.** This includes:

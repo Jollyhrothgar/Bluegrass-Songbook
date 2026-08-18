@@ -26,6 +26,37 @@ sources/*/parsed/*.pro  →  migrate_to_works.py  →  works/
 - `curate.py` - Convergence CLI for the curation registry
 - `build_index.py` - LEGACY: Builds from sources/ (kept for reference)
 
+## Secrets
+
+Nothing secret is written to disk. `.env.tpl` files hold 1Password `op://`
+references and are committed; the real values are injected into a command's
+environment at the moment it runs:
+
+```bash
+./scripts/lib/with-secrets -- uv run python3 scripts/lib/fetch_deleted_songs.py
+./scripts/lib/with-secrets --tpl analytics/.env.tpl -- <command>
+```
+
+`./scripts/utility` already routes the commands that need secrets through it —
+the sync commands, genre-suggestion export, Strum Machine matching, LLM
+tagging — and `analytics/scripts/server` launches Jupyter the same way. If you
+add a script that reads `SUPABASE_SERVICE_ROLE_KEY`, `ANTHROPIC_API_KEY` or
+`STRUM_MACHINE_API_KEY`, wrap its call site too.
+
+Why: `SUPABASE_SERVICE_ROLE_KEY` bypasses every RLS policy in the project.
+`op inject -o .env` used to leave a plaintext copy in each worktree — five
+worktrees, five copies at rest, none of them expiring. Injection at run time
+means it exists only for the life of the process, and 1Password decides whether
+to hand it over.
+
+`with-secrets` falls back in order: 1Password if signed in, then an existing
+`.env` (machines without `op`, and CI, where secrets arrive as real environment
+variables), then whatever is already exported. `scripts/bootstrap` deletes a
+stale `.env` once 1Password is reachable, since it is then redundant —
+regenerate one any time with `op inject -i .env.tpl -o .env`.
+
+Sign in once per session with `op signin`.
+
 ## Local vs CI Operations
 
 Some operations require external APIs/databases and only run locally. Others run everywhere.
