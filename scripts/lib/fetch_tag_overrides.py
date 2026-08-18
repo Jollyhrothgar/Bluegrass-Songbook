@@ -17,28 +17,18 @@ import os
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from supabase_client import connect, fetch_failed  # noqa: E402
+
 # Output file
 OUTPUT_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'tag_overrides.json'
 
 def fetch_tag_overrides():
     """Fetch trusted user tag downvotes from Supabase."""
 
-    # Get Supabase credentials from environment
-    supabase_url = os.environ.get('SUPABASE_URL')
-    supabase_key = os.environ.get('SUPABASE_SERVICE_ROLE_KEY') or os.environ.get('SUPABASE_KEY')
-
-    if not supabase_url or not supabase_key:
-        print("Warning: SUPABASE_URL or SUPABASE_KEY not set, using cached tag_overrides.json")
-        return None
+    client = connect('tag overrides')
 
     try:
-        from supabase import create_client
-    except ImportError:
-        print("Warning: supabase-py not installed, using cached tag_overrides.json")
-        return None
-
-    try:
-        client = create_client(supabase_url, supabase_key)
 
         # Get trusted user IDs
         trusted_response = client.table('trusted_users').select('user_id').execute()
@@ -57,9 +47,8 @@ def fetch_tag_overrides():
 
         return votes_response.data
 
-    except Exception as e:
-        print(f"Warning: Could not fetch from Supabase: {e}")
-        return None
+    except Exception as exc:                       # noqa: BLE001
+        fetch_failed('tag overrides', exc)
 
 
 def main():
@@ -67,15 +56,10 @@ def main():
 
     overrides = fetch_tag_overrides()
 
-    if overrides is None:
-        # Use existing cache
-        if OUTPUT_FILE.exists():
-            with open(OUTPUT_FILE) as f:
-                data = json.load(f)
-            print(f"Using cached tag_overrides.json ({len(data.get('exclude', {}))} songs with exclusions)")
-            return
-        else:
-            overrides = []
+    # fetch_tag_overrides() either returns rows or exits; it no longer
+    # signals failure with None and leaves the caller to reuse the cache.
+    # A sync that silently kept stale data reported success while the site
+    # served yesterday's answer.
 
     # Convert to {song_id: [excluded_tags]} format
     exclude_by_song = {}

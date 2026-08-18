@@ -14,28 +14,20 @@ Or via the utility script:
 
 import json
 import os
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from supabase_client import connect, fetch_failed  # noqa: E402
 
 
 def fetch_deleted_songs():
     """Fetch deleted song IDs from Supabase."""
     cache_file = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'deleted_songs.json'
 
-    supabase_url = os.environ.get('SUPABASE_URL')
-    supabase_key = os.environ.get('SUPABASE_SERVICE_ROLE_KEY') or os.environ.get('SUPABASE_KEY')
-
-    if not supabase_url or not supabase_key:
-        print("Warning: SUPABASE_URL or SUPABASE_KEY not set, using cached deleted_songs.json")
-        return load_cached_deleted_songs()
+    client = connect('deleted songs')
 
     try:
-        from supabase import create_client
-    except ImportError:
-        print("Warning: supabase-py not installed, using cached deleted_songs.json")
-        return load_cached_deleted_songs()
-
-    try:
-        client = create_client(supabase_url, supabase_key)
 
         # Fetch all deleted songs
         result = client.table('deleted_songs').select('song_id, deleted_at, reason').execute()
@@ -55,23 +47,9 @@ def fetch_deleted_songs():
         print(f"Fetched {len(deleted)} deleted songs, saved to {cache_file}")
         return deleted
 
-    except Exception as e:
-        print(f"Warning: Failed to fetch from Supabase: {e}")
-        return load_cached_deleted_songs()
+    except Exception as exc:                       # noqa: BLE001
+        fetch_failed('deleted songs', exc)
 
-
-def load_cached_deleted_songs():
-    """Load deleted songs from cache file."""
-    cache_file = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'deleted_songs.json'
-
-    if cache_file.exists():
-        with open(cache_file) as f:
-            data = json.load(f)
-            print(f"Loaded {len(data)} deleted songs from cache")
-            return data
-
-    print("No deleted songs cache found")
-    return {}
 
 
 if __name__ == '__main__':

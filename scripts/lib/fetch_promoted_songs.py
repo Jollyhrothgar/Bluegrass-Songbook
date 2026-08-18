@@ -16,28 +16,20 @@ Or via the utility script:
 
 import json
 import os
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from supabase_client import connect, fetch_failed  # noqa: E402
 
 
 def fetch_promoted_songs():
     """Fetch promoted song IDs from Supabase."""
     cache_file = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'promoted_songs.json'
 
-    supabase_url = os.environ.get('SUPABASE_URL')
-    supabase_key = os.environ.get('SUPABASE_SERVICE_ROLE_KEY') or os.environ.get('SUPABASE_KEY')
-
-    if not supabase_url or not supabase_key:
-        print("Warning: SUPABASE_URL or SUPABASE_KEY not set, using cached promoted_songs.json")
-        return load_cached_promoted_songs()
+    client = connect('promoted songs')
 
     try:
-        from supabase import create_client
-    except ImportError:
-        print("Warning: supabase-py not installed, using cached promoted_songs.json")
-        return load_cached_promoted_songs()
-
-    try:
-        client = create_client(supabase_url, supabase_key)
 
         # Fetch all promoted songs
         result = client.table('promoted_songs').select('song_id, promoted_at, reason').execute()
@@ -57,23 +49,9 @@ def fetch_promoted_songs():
         print(f"Fetched {len(promoted)} promoted songs, saved to {cache_file}")
         return promoted
 
-    except Exception as e:
-        print(f"Warning: Failed to fetch from Supabase: {e}")
-        return load_cached_promoted_songs()
+    except Exception as exc:                       # noqa: BLE001
+        fetch_failed('promoted songs', exc)
 
-
-def load_cached_promoted_songs():
-    """Load promoted songs from cache file."""
-    cache_file = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'promoted_songs.json'
-
-    if cache_file.exists():
-        with open(cache_file) as f:
-            data = json.load(f)
-            print(f"Loaded {len(data)} promoted songs from cache")
-            return data
-
-    print("No promoted songs cache found")
-    return {}
 
 
 if __name__ == '__main__':
