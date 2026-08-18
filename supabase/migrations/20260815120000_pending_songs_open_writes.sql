@@ -102,8 +102,11 @@ begin
       check (composer is null or char_length(composer) <= 300);
   end if;
 
-  -- No notes cap: pending_songs has no notes column (request "notes" are
-  -- folded into content/issue text by create-song-request, capped there).
+  -- CORRECTION (2026-08-18): this comment used to read "no notes cap:
+  -- pending_songs has no notes column". That was simply wrong —
+  -- 20260217000000 added `notes` and `status` — and the mistaken belief
+  -- outlived the comment (PR #237 dropped a CHECK as "nonexistent").
+  -- Both columns are capped in 20260818000000_pending_songs_tablature.sql.
 
   if not exists (select 1 from pg_constraint where conname = 'pending_songs_tags_size') then
     alter table pending_songs

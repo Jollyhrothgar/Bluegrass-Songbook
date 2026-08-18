@@ -18,6 +18,26 @@
 -- additive-instant, which is why the OTF was always eligible and only the
 -- table shape was in the way.
 --
+-- Row ids: `id` is the PRIMARY KEY and, for a chart, it IS the work slug —
+-- one row per song is the right shape when a song has one chart. It is the
+-- wrong shape for a part. Two people tabbing the same song is ordinary on a
+-- bounty board, and keying their rows by the work id would collide on the
+-- PK; worse, the update policy gates on `created_by = auth.uid()`, so the
+-- second person's upsert fails as a PERMISSIONS error that says nothing
+-- about what actually went wrong. A pending chart and a pending tab for the
+-- same song could not coexist either. So tab rows live in their own id
+-- namespace:
+--
+--     tab:<slug>:<rand>
+--       <slug>  the target work slug, or slugify(title) for a new work —
+--               human-scannable only; nothing derives meaning from it
+--       <rand>  >= 6 chars of [a-z0-9], which is what actually makes it unique
+--
+-- and `replaces_id` carries the work being targeted (null = mint a new one).
+-- The CHECK below makes that structural rather than a convention nobody
+-- remembers. A chart slug can never contain `:` (slugify emits [a-z0-9-]),
+-- so the two namespaces cannot overlap in either direction.
+--
 -- RLS is deliberately untouched. 20260815120000 opened insert to any
 -- authenticated user for rows they own (`created_by = auth.uid()`, defaulted
 -- from the session) and kept update owner-or-trusted; none of that reads
@@ -84,8 +104,25 @@ begin
              (part_file ~ '^[a-z0-9]+(-[a-z0-9]+)*\.otf\.json$'
               and char_length(part_file) <= 200));
   end if;
+
+  -- The id namespace split described in the header. Trivially true for every
+  -- row that exists today (they are all part_type = 'lead-sheet'), so this
+  -- cannot fail on apply; it only binds new tab rows.
+  if not exists (select 1 from pg_constraint where conname = 'pending_songs_tab_id_namespace') then
+    alter table pending_songs
+      add constraint pending_songs_tab_id_namespace
+      check (part_type <> 'tablature' or id ~ '^tab:[a-z0-9-]*:[a-z0-9]{6,}$');
+  end if;
 end
 $$;
+
+-- Deliberately NO unique index on (replaces_id, instrument, created_by).
+-- It looks like it would stop duplicate submissions, but the thing it would
+-- actually stop is the case `add` mode exists to serve: a work carrying
+-- several takes on one instrument (foggy-mountain-breakdown has eight banjo
+-- ones). Adding `part_file` to the key to fix that leaves it forbidding
+-- nothing. Volume is already bounded by the per-user hourly rate limit, and
+-- cleanup-pending reaps what lands.
 
 -- ============================================
 -- 3. Size cap, per part type
@@ -105,7 +142,38 @@ alter table pending_songs
          (case when part_type = 'tablature' then 2097152 else 204800 end));
 
 -- ============================================
--- 4. Index
+-- 4. The two columns the size-cap pass missed
+-- ============================================
+
+-- 20260815120000 capped title / artist / composer / content / tags and then
+-- said, in a comment, "pending_songs has no notes column". It does —
+-- 20260217000000 added `notes` and `status` — and that mistaken belief is
+-- also what PR #237 ("drop CHECK on nonexistent pending_songs.notes") acted
+-- on. So the one user-controlled text column with no bound is the one the
+-- comment claimed did not exist, and tabs make it worse: a tab correction
+-- writes the submitter's comment into `notes`.
+--
+-- 5000 matches dedup_hold and create-tab-pr's own comment cap, which is what
+-- this field used to be before the PR flow was retired.
+alter table pending_songs drop constraint if exists pending_songs_notes_len;
+
+alter table pending_songs
+  add constraint pending_songs_notes_len
+  check (notes is null or char_length(notes) <= 5000);
+
+-- `status` is user-writable through the same open insert policy, and
+-- process_pending copies it STRAIGHT INTO work.yaml (`extra={'status': ...}`).
+-- work_schema documents exactly two values and validate_work does not check
+-- them, so an unbounded string here is unbounded text in the corpus. Bound it
+-- to the enum instead of merely capping its length.
+alter table pending_songs drop constraint if exists pending_songs_status_valid;
+
+alter table pending_songs
+  add constraint pending_songs_status_valid
+  check (status is null or status in ('complete', 'placeholder'));
+
+-- ============================================
+-- 5. Index
 -- ============================================
 
 -- Tab rows are a small minority of the table but the surfaces that want them

@@ -74,6 +74,59 @@ function currentUserId() {
 }
 
 /**
+ * Row ids handed out this page-session, keyed by the take being submitted.
+ *
+ * Not persisted on purpose. Its whole job is to make a *repeat* of one
+ * submission — a double-click, or a retry after "saved but not synced" —
+ * reuse its id instead of minting a second take. A genuine later submission
+ * (new page, or after clearDraft) SHOULD get a fresh id: that's a new take,
+ * which is exactly what `add` mode is for.
+ */
+const issuedRowIds = new Map();
+
+/**
+ * The `pending_songs.id` for a tablature row: `tab:<slug>:<rand>`.
+ *
+ * The shape is enforced in the database
+ * (`pending_songs_tab_id_namespace`: `^tab:[a-z0-9-]*:[a-z0-9]{6,}$`), so
+ * this is not cosmetic — a malformed id is a rejected INSERT, not a tidier
+ * table. The slug half is human-scannable only; nothing downstream derives
+ * meaning from it, and `process_pending.tab_work_slug()` re-derives the real
+ * target from the row's title rather than trusting anything parsed out of
+ * here.
+ *
+ * 8 random chars where the constraint asks for 6 — the margin is free, and
+ * the id has to be unique across every submitter tabbing the same song.
+ */
+export function tabRowId(slug, instrument, file = null) {
+    const key = `${slug || ''}|${instrument || ''}|${file || ''}`;
+    const seen = issuedRowIds.get(key);
+    if (seen) return seen;
+
+    // The slug is decorative, but it still has to satisfy the CHECK, so it
+    // is sanitized rather than trusted: a work id from the index is already
+    // a slug, but nothing here should depend on that staying true.
+    const safeSlug = String(slug || '').toLowerCase()
+        .replace(/[^a-z0-9-]+/g, '-').replace(/^-+|-+$/g, '');
+
+    const bytes = new Uint8Array(8);
+    if (globalThis.crypto?.getRandomValues) {
+        globalThis.crypto.getRandomValues(bytes);
+    } else {
+        // Hosts without Web Crypto (old test runners). Collision risk here is
+        // not a security property — the id only has to be unique.
+        for (let i = 0; i < bytes.length; i++) {
+            bytes[i] = Math.floor(Math.random() * 256);
+        }
+    }
+    const rand = Array.from(bytes, b => (b % 36).toString(36)).join('');
+
+    const id = `tab:${safeSlug}:${rand}`;
+    issuedRowIds.set(key, id);
+    return id;
+}
+
+/**
  * A work slug for a tab that names no existing work.
  *
  * Deliberately a local copy of `utils.generateSlug` rather than an import:
@@ -188,13 +241,19 @@ export async function submitTab(p, deps = {}) {
     }
 
     const cleanTitle = String(title || '').trim() || 'Untitled';
-    // A tab for an existing work IS that work's row; a brand-new work mints a
-    // slug the same way the song editor does. Either way `id` is what step 2
-    // names and what the overlay keys on.
-    const id = workId || tabWorkSlug(cleanTitle, artist);
-    if (!id) {
+    // A tab row is NOT keyed by the work it targets. pending_songs.id is the
+    // primary key, so keying a tab by its work meant two people tabbing the
+    // same song collided on it — and because RLS gates writes on created_by,
+    // the loser got a permissions error that said nothing about the real
+    // problem. A pending chart and a pending tab for one work couldn't
+    // coexist either. So tabs live in their own `tab:` namespace, which a
+    // work slug can never enter (slugs hold no colon), and the work they
+    // target rides in replaces_id instead.
+    const targetSlug = workId || tabWorkSlug(cleanTitle, artist);
+    if (!targetSlug) {
         throw new Error('This tab needs a title before it can be submitted.');
     }
+    const id = tabRowId(targetSlug, partInstrument, file);
 
     const row = {
         id,
@@ -214,9 +273,11 @@ export async function submitTab(p, deps = {}) {
         tags: {},
     };
 
-    // Upsert, not insert: the row id is the work id, so a submitter fixing
-    // their own just-submitted tab must be able to overwrite their row rather
-    // than collide with it. RLS still refuses someone else's row.
+    // Upsert, not insert: tabRowId hands back the SAME id for a repeated
+    // submission of the same take, so a double-click or a retry after a sync
+    // warning updates one row instead of minting a second take. (The
+    // idempotence marker downstream is keyed by row id, so two ids really
+    // would mean two banjo parts.) RLS still refuses someone else's row.
     const { error } = await supabase
         .from('pending_songs')
         .upsert(row, { onConflict: 'id' });
@@ -227,9 +288,15 @@ export async function submitTab(p, deps = {}) {
     let mode = null;
     let synced = false;
     let syncError = null;
+    // Best guess until the server answers. For an existing work it IS the
+    // answer; for a new one the writer resolves the real slug against the
+    // checkout (`salt-creek-1` when `salt-creek` is taken), so the server's
+    // value wins when we get one. Callers link to this.
+    let resolvedWorkId = targetSlug;
     try {
         const result = await requestDurableWrite(id, token, fetchImpl);
         mode = result?.mode || null;
+        if (result?.workId) resolvedWorkId = result.workId;
         synced = true;
     } catch (e) {
         // Live but not yet durable. Loud in the console, soft in the return
@@ -240,7 +307,7 @@ export async function submitTab(p, deps = {}) {
 
     return {
         id,
-        workId: id,
+        workId: resolvedWorkId,
         instrument: partInstrument,
         partFile: row.part_file,
         live: true,

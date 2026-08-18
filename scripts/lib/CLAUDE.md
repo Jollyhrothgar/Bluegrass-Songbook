@@ -751,7 +751,24 @@ the only structural check an incoming OTF gets.
 `add` is the tab column's `fork` — a non-owner's "correction" becomes a
 sibling take, never a rewrite — and a dispatched `update` whose named part
 has since vanished degrades to `add` rather than guessing at a substitute
-target. Two tab-only behaviours worth knowing: the **dedup backstop is
+target.
+
+**A tab row's id is not a work slug.** `pending_songs` is keyed one row per
+SONG; a tab is a part, so tab rows are `tab:<slug>:<rand>` and target
+`replaces_id`. A `create` therefore names its work from the TITLE —
+`tab_work_slug()` re-derives it rather than trusting the dispatch, and
+`create_work(on_collision='suffix')` resolves the real slug against the
+checkout (`salt-creek`, `salt-creek-1`, …). That is the free-slug hunt
+`create-tab-pr` did by probing the Contents API from a branch that could not
+see other branches.
+
+**The submitter's comment** (`row['notes']`) lands on the PART as
+`provenance.x_submission_notes`, or `x_correction_notes` on an `update` —
+never in the work-level `notes` the chart path writes, which describes the
+song rather than one take of it. The retired PR flow put this text in the PR
+body and wrote it nowhere; with no reviewer, provenance is where it lives.
+
+Two more tab-only behaviours worth knowing: the **dedup backstop is
 skipped** (it scores lyric containment and an OTF has no lyrics), and the
 document's **`x_source` block is dropped** on the way in, because it claims
 to be the conversion of a specific Hangout TEF and `build_works_index` fails

@@ -4,8 +4,16 @@
 import { describe, it, expect, vi, afterEach } from 'vitest';
 
 import {
-    serializeForSubmission, submitTab, accessToken, tabWorkSlug,
+    serializeForSubmission, submitTab, accessToken, tabWorkSlug, tabRowId,
 } from '../../otf-editor/submit-tab.js';
+
+/**
+ * Copied verbatim from `pending_songs_tab_id_namespace` in
+ * supabase/migrations/20260818000000_pending_songs_tablature.sql. A row id
+ * that fails this is a rejected INSERT in production, so the client's id
+ * minting is asserted against the real constraint rather than a literal.
+ */
+const TAB_ID_CHECK = /^tab:[a-z0-9-]*:[a-z0-9]{6,}$/;
 
 /** Install a fake SupabaseAuth with (or without) an active session. */
 function mockAuth(token, { userId = 'u1' } = {}) {
@@ -94,7 +102,13 @@ describe('submitTab', () => {
         const { table, row, options } = db.calls[0];
         expect(table).toBe('pending_songs');
         expect(options).toEqual({ onConflict: 'id' });
-        expect(row.id).toBe('gold-rush');
+        // The id is in the `tab:` namespace, NOT the work id — keying a tab
+        // row by its work collided when two people tabbed the same song. The
+        // work it targets rides in replaces_id instead. Asserted against the
+        // database's own CHECK (pending_songs_tab_id_namespace), so this test
+        // fails if the two ever drift apart.
+        expect(row.id).toMatch(TAB_ID_CHECK);
+        expect(row.id).toContain(':gold-rush:');
         expect(row.replaces_id).toBe('gold-rush');
         expect(row.part_type).toBe('tablature');
         expect(row.instrument).toBe('banjo');
@@ -111,11 +125,11 @@ describe('submitTab', () => {
         const [url, init] = f.mock.calls[0];
         expect(url).toContain('/functions/v1/auto-commit-song');
         expect(url).not.toContain('create-tab-pr');
-        expect(JSON.parse(init.body)).toEqual({ id: 'gold-rush' });
+        expect(JSON.parse(init.body)).toEqual({ id: row.id });
         expect(init.headers.Authorization).toBe('Bearer user-jwt');
 
         expect(out).toEqual({
-            id: 'gold-rush',
+            id: row.id,
             workId: 'gold-rush',
             instrument: 'banjo',
             partFile: 'banjo.otf.json',
@@ -136,7 +150,8 @@ describe('submitTab', () => {
         }, { fetchImpl: okFetch({ success: true, mode: 'create' }), supabase: db });
 
         const { row } = db.calls[0];
-        expect(row.id).toBe('brand-new-reel');
+        expect(row.id).toMatch(TAB_ID_CHECK);
+        expect(row.id).toContain(':brand-new-reel:');
         expect(row.replaces_id).toBeNull();   // nothing to attach to yet
         expect(row.part_file).toBeNull();     // a new take, not a correction
         expect(out.workId).toBe('brand-new-reel');
@@ -206,5 +221,44 @@ describe('accessToken', () => {
     it('returns the session token when signed in', async () => {
         mockAuth('abc123');
         expect(await accessToken()).toBe('abc123');
+    });
+});
+
+describe('tabRowId', () => {
+    it('satisfies the database CHECK for ordinary and awkward slugs', () => {
+        expect(tabRowId('salt-creek', 'banjo')).toMatch(TAB_ID_CHECK);
+        // A slug is decorative here, but it still has to pass the constraint,
+        // so anything outside [a-z0-9-] is scrubbed rather than trusted.
+        expect(tabRowId('Café Olé!!', 'fiddle')).toMatch(TAB_ID_CHECK);
+        // The constraint allows an empty slug half; a title that slugifies to
+        // nothing must still produce a legal id.
+        expect(tabRowId('', 'mandolin')).toMatch(TAB_ID_CHECK);
+    });
+
+    it('reuses one id for a repeated submission of the same take', () => {
+        // The downstream idempotence marker is keyed by row id, so a
+        // double-click that minted two ids would land two banjo parts on the
+        // work instead of updating one pending row.
+        const first = tabRowId('gold-rush', 'banjo');
+        expect(tabRowId('gold-rush', 'banjo')).toBe(first);
+    });
+
+    it('gives a different id to a different take of the same work', () => {
+        const banjo = tabRowId('gold-rush', 'banjo');
+        const fiddle = tabRowId('gold-rush', 'fiddle');
+        expect(fiddle).not.toBe(banjo);
+        // ...and a correction is a different row again from a new take.
+        expect(tabRowId('gold-rush', 'banjo', 'banjo-2.otf.json'))
+            .not.toBe(banjo);
+    });
+
+    it('does not collide across submitters tabbing the same song', () => {
+        // Two browsers, same work, same instrument: the random half is what
+        // keeps them from fighting over one primary key.
+        const ids = new Set();
+        for (let i = 0; i < 200; i++) {
+            ids.add(`tab:gold-rush:${tabRowId(`x${i}`, 'banjo').split(':')[2]}`);
+        }
+        expect(ids.size).toBe(200);
     });
 });

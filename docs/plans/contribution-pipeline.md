@@ -213,6 +213,17 @@ reasoning was wrong; it was a cost estimate, and the cost got paid:
   `instrument` / `part_file`, and a per-kind content cap (200KB chart, 2MB
   OTF) because the chart cap would have rejected exactly the multi-track
   tabs most worth having.
+* Tab rows got their own id namespace, `tab:<slug>:<rand>`, targeting a
+  work through `replaces_id`. `pending_songs.id` is a primary key and, for
+  a chart, IS the work slug — one row per song. That is the wrong shape for
+  a part: two people tabbing the same song collided on the PK, and because
+  the update policy gates on `created_by = auth.uid()` the second one failed
+  as a *permissions* error about something else entirely. A pending chart
+  and a pending tab for one song could not coexist either. A tab `create`
+  therefore names its work from the TITLE, and `create_work`'s
+  suffix-on-collision resolves the real slug against a checkout of main —
+  the free-slug hunt `create-tab-pr` approximated by probing the Contents
+  API from a branch that could not see other branches.
 * OTF validation moved into the pipeline: `validate_otf` came out of
   `process_tab.py` into `process_pending.py`, which then writes through
   `works_writer` like everything else. No second writer was added.
@@ -221,6 +232,13 @@ reasoning was wrong; it was a cost estimate, and the cost got paid:
   "hard to destroy" holds in both columns.
 * `create-tab-pr/`, `process-tab-pr.yml` and `process_tab.py` are
   **deleted**.
+* `notes` and `status` finally got size/enum caps. The 2b cap pass skipped
+  `notes` with the comment "pending_songs has no notes column" — it has had
+  one since `20260217000000`, and that mistaken belief is also what PR #237
+  acted on. It mattered here because a tab correction writes the
+  submitter's comment into `notes`, making it the one user-controlled text
+  column on the write path with no bound. `status` had none either, and
+  `process_pending` copies it straight into `work.yaml`.
 
 Found while doing it, and worth recording because it was latent in the
 shipped 2b design: `submittersOf()` asked ownership of the whole work.yaml,

@@ -149,6 +149,7 @@ serve(async (req) => {
       userId: caller.id,
       trusted,
       githubToken,
+      title: row.title,
       partType,
       partFile: row.part_file,
     })

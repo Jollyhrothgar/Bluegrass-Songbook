@@ -176,6 +176,7 @@ serve(async (req) => {
           userId: actorId,
           trusted: !!trustedUser,
           githubToken: githubToken as string,
+          title: row.title,
           partType: row.part_type,
           partFile: row.part_file,
         })

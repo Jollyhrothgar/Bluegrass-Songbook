@@ -172,8 +172,26 @@ export function tabPartOwners(workYaml: string, file: string): string[] | null {
   return null
 }
 
+/**
+ * Work slug from a title. Same rule as `work_schema.slugify` in Python,
+ * which is what actually mints the directory a moment later.
+ */
+export function slugify(text: string): string {
+  return (text || '').normalize('NFKD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+    .replace(/-+/g, '-')
+}
+
 export interface ClassifyInput {
-  /** pending_songs row id (the slug the client wrote under). */
+  /**
+   * pending_songs row id.
+   *
+   * For a CHART this is the work slug the client wrote under. For a TAB it
+   * is a synthetic `tab:<slug>:<rand>` — one row per song is the wrong
+   * shape for a part, so tab rows live in their own id namespace (see
+   * 20260818000000_pending_songs_tablature.sql) and this value is never a
+   * work id.
+   */
   rowId: string
   /** pending_songs.replaces_id — set when the submission edits a known work. */
   replacesId?: string | null
@@ -182,6 +200,12 @@ export interface ClassifyInput {
   /** Whether the caller is in trusted_users. */
   trusted: boolean
   githubToken: string
+  /**
+   * pending_songs.title. Only a tablature CREATE reads it: a tab row's id
+   * is synthetic, so the slug for a work it mints has to come from the
+   * title. (The authoritative answer is still works_writer's — see below.)
+   */
+  title?: string | null
   /** pending_songs.part_type — 'lead-sheet' (default) or 'tablature'. */
   partType?: string | null
   /**
@@ -217,18 +241,33 @@ export interface ClassifyInput {
  * A tab with no `part_file` is a submission, not a correction, so it skips
  * the ownership question entirely — there is no file to own yet.
  *
+ * WHICH work a tab targets is not the row id. A chart row is keyed by its
+ * work slug; a tab row is keyed by a synthetic `tab:<slug>:<rand>` so two
+ * people can tab the same song without colliding on the primary key. So a
+ * tab targets `replaces_id`, or — when it is minting a new work —
+ * `slugify(title)`. The slug returned here is ADVISORY: `create_work`
+ * resolves the real one on a checkout of main, suffixing past anything
+ * taken, suppressed or redirected. The retired create-tab-pr probed the
+ * Contents API for a free slug instead, which two concurrent branches could
+ * not see each other doing.
+ *
  * The client may believe whatever it likes; this is the answer that reaches
  * the writer.
  */
 export async function classifyChange(input: ClassifyInput): Promise<Classification> {
-  const workId = input.replacesId || input.rowId
+  const isTab = input.partType === 'tablature'
+  const fallbackId = isTab ? slugify(input.title || '') : input.rowId
+  const workId = input.replacesId || fallbackId
+  if (!workId) {
+    throw new Error('cannot classify: no target work id (a tab needs a title)')
+  }
   const yaml = await getFileContent(`works/${workId}/work.yaml`, input.githubToken)
 
   if (yaml === null) {
-    return { mode: 'create', workId: input.rowId, reason: 'no existing work at this id' }
+    return { mode: 'create', workId: fallbackId, reason: 'no existing work at this id' }
   }
 
-  if (input.partType === 'tablature') {
+  if (isTab) {
     const file = (input.partFile || '').trim()
     if (!file) {
       return { mode: 'add', workId, reason: 'new tab for an existing work' }

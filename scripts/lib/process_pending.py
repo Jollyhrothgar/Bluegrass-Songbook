@@ -43,7 +43,15 @@ this same path: ``content`` holds the serialized OTF, it is validated here
 (:func:`validate_otf`, moved over from the retired ``process_tab``), and
 ``works_writer`` writes ``works/<id>/<instrument>[-N].otf.json``.
 
-Two things a tab does differently, both for reasons that don't generalize:
+One row per SONG is the right shape for a chart and the wrong one for a
+part, so a tab row's id is synthetic — ``tab:<slug>:<rand>`` — and the work
+it targets comes from ``replaces_id``, or from the TITLE when it is minting
+one (:func:`tab_work_slug`). Keying tab rows by the work id would have made
+two people tabbing the same song collide on the ``pending_songs`` primary
+key, and (because the update policy gates on ``created_by``) fail as a
+permissions error about something else entirely.
+
+Three things a tab does differently, all for reasons that don't generalize:
 
 * **The dedup backstop is skipped.** It scores lyric containment. An OTF has
   no lyrics, so every tab would come back low-confidence at best and
@@ -56,6 +64,10 @@ Two things a tab does differently, both for reasons that don't generalize:
   must set to the idempotence marker. An edited tab is no longer that
   verbatim conversion anyway; the displaced identity is kept as
   ``provenance.x_derived_from`` rather than thrown away.
+* **The submitter's comment lands on the PART**, as
+  ``provenance.x_submission_notes`` / ``x_correction_notes`` — not in the
+  work-level ``notes`` the chart path writes, which describes the song
+  rather than one take of it.
 
 Dedup backstop (phase 3b)
 -------------------------
@@ -124,6 +136,7 @@ from typing import Optional
 
 import dedup_scorer
 import works_writer
+from work_schema import slugify
 
 #: Modes a LEAD-SHEET row may be dispatched in.
 MODES = ('create', 'update', 'fork')
@@ -135,9 +148,10 @@ MODES = ('create', 'update', 'fork')
 #: loud refusal rather than a surprising write.
 TAB_MODES = ('create', 'update', 'add')
 
-#: Filenames and instrument names both land inside works/, so both are held
-#: to the slug shape the edge function and the pending_songs CHECK enforce.
-INSTRUMENT_RE = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
+#: Instrument names and work ids both land inside works/ as path segments,
+#: so both are held to the slug shape the edge function, work_schema.slugify
+#: and the pending_songs CHECKs all agree on.
+SLUG_RE = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 
 # Every part this script writes is stamped with this source, so a later
 # audit can tell in-app contributions from scraped imports.
@@ -602,6 +616,35 @@ def otf_document(row: dict) -> tuple:
     return document, json.dumps(document, indent=2, ensure_ascii=False) + '\n'
 
 
+def tab_work_slug(work_id: str, title: str) -> str:
+    """The slug a tab-minted work is created under.
+
+    A tablature row's id is synthetic — ``tab:<slug>:<rand>``, so that two
+    people can tab the same song without colliding on ``pending_songs``'
+    primary key — which means the id is NOT a work slug and must never
+    become one. ``classifyChange`` already sends ``slugify(title)`` for a
+    create, but this is the side that mints a directory, so it re-derives
+    rather than trusting: anything that is not a plain slug (a row id that
+    leaked through, a stale edge function, a hand-fired dispatch) is
+    replaced by the title's slug.
+
+    Only the BASE name is decided here. ``create_work(on_collision='suffix')``
+    resolves the real one against the checkout — ``salt-creek``,
+    ``salt-creek-1``, … — skipping ids that are taken, suppressed or
+    redirected. That is the free-slug hunt the retired ``create-tab-pr``
+    did by probing the Contents API, moved somewhere it can actually see
+    the whole corpus instead of one branch.
+    """
+    if work_id and SLUG_RE.match(work_id):
+        return work_id
+    slug = slugify(title or '')
+    if not slug:
+        raise ProcessPendingError(
+            f"cannot mint a work for a tab: {work_id!r} is not a slug and "
+            f"the title {title!r} does not produce one")
+    return slug
+
+
 def tab_instrument(row: dict) -> str:
     """The instrument a tablature row is for, shape-checked.
 
@@ -614,7 +657,7 @@ def tab_instrument(row: dict) -> str:
     if not instrument:
         raise ProcessPendingError(
             f"tablature row '{row.get('id')}' has no instrument")
-    if not INSTRUMENT_RE.match(instrument):
+    if not SLUG_RE.match(instrument):
         raise ProcessPendingError(
             f"tablature row '{row.get('id')}' has a bad instrument "
             f"{instrument!r} (expected lowercase slug)")
@@ -637,10 +680,21 @@ def _tab_provenance(row: dict, marker: str, actor: Optional[str],
     (a Hangout tab id) they are folded into ``x_derived_from`` rather than
     lost — this part's lineage is the only record that the take started
     life somewhere else.
+
+    ``row['notes']`` is the submitter's comment. It lands on the PART, as
+    ``x_submission_notes`` (or ``x_correction_notes`` for an update), and
+    deliberately NOT in the work-level ``notes`` field the chart path uses:
+    work-level notes describe the song, and "fixed the fret in bar 12" is
+    about one take of it. The retired PR flow put this text in the PR body
+    and wrote it nowhere — with no reviewer to read a PR body, provenance
+    is where it has to live.
     """
     provenance = _provenance(row, marker, actor)
     if actor:
         provenance['author'] = actor
+    notes = (row.get('notes') or '').strip()
+    if notes:
+        provenance['x_submission_notes'] = notes
     if previous:
         source = (previous.get('source') or '').strip()
         source_id = str(previous.get('source_id') or '').strip()
@@ -660,7 +714,9 @@ def apply_tablature_row(repo_root, row: dict, mode: str, work_id: str,
 
     ``create``
         The tab mints the work — the shape a submission for a song not in
-        the corpus takes. The part is the work's default.
+        the corpus takes. The part is the work's default, and the work's
+        slug comes from the title (:func:`tab_work_slug`), never from the
+        synthetic row id.
     ``add``
         A NEW part on an existing work: a first tab for that instrument, a
         second take on one it already has, or a "correction" from somebody
@@ -696,6 +752,11 @@ def apply_tablature_row(repo_root, row: dict, mode: str, work_id: str,
     instrument = tab_instrument(row)
     _, otf_text = otf_document(row)
     marker = content_marker(row_id, otf_text)
+
+    # A tab row's id is `tab:<slug>:<rand>`, never a work slug, so a create
+    # has to be told (or work out) what to name the work it mints.
+    if mode == 'create':
+        work_id = tab_work_slug(work_id, title)
 
     if already_applied(repo_root, work_id, marker):
         if verbose:
@@ -733,6 +794,11 @@ def apply_tablature_row(repo_root, row: dict, mode: str, work_id: str,
             provenance['x_corrected_by'] = row.get('created_by') or actor
             provenance['x_corrected_attribution'] = actor
             provenance['x_corrected'] = date.today().isoformat()
+            # Same text, named for what it is on this path — the client
+            # collects it as "what did you change?".
+            notes = provenance.pop('x_submission_notes', None)
+            if notes:
+                provenance['x_correction_notes'] = notes
             return works_writer.update_part(
                 repo_root, work_id,
                 match=match,
