@@ -74,6 +74,13 @@ Some operations require external APIs/databases and only run locally. Others run
 | **Genre suggestions export** | Scheduled CI + local | `user_genre_suggestions.json` | same workflow as tag overrides, or `./scripts/utility export-suggestions`; review-only, never auto-applied |
 | **TuneArch fetch** | Local only | - | Fetches new instrumentals |
 
+**A sync that cannot reach Supabase fails.** `fetch_deleted_songs.py`,
+`fetch_promoted_songs.py` and `fetch_tag_overrides.py` exit non-zero rather
+than warning and serving the on-disk copy — a broken sync used to look like a
+successful one and let the build ship stale data. `scripts/lib/supabase_client.py`
+holds the shared connect/fail logic, including telling a genuinely missing
+`supabase` package apart from a broken dependency inside it.
+
 **How caching works:**
 1. Run local command to populate cache (e.g., `refresh-tags`, `strum-machine-match`)
 2. Commit the cache file to git
