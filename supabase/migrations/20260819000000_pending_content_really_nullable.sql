@@ -1,0 +1,31 @@
+-- pending_songs.content: actually drop NOT NULL this time.
+--
+-- 20260209000000_pending_nullable_content.sql is a one-line
+-- `ALTER TABLE pending_songs ALTER COLUMN content DROP NOT NULL;` and
+-- `supabase migration list` reports it applied on the remote — same id, same
+-- timestamp, no drift. The live schema disagreed:
+--
+--   $ supabase db dump --schema public | grep -A6 'CREATE TABLE.*pending_songs'
+--     "content" "text" NOT NULL,
+--
+-- So the history table records a migration whose DDL is not in the database.
+-- Whatever caused that (a `migration repair` that stamped without running, a
+-- table edited through the dashboard, a restore from a pre-2026-02 snapshot),
+-- the lesson is worth writing down: **a matching `migration list` proves the
+-- ledger agrees, not that the schema does.** When a column's nullability or a
+-- constraint is load-bearing, dump the schema and look.
+--
+-- What it broke, in the order it was noticed:
+--
+--   * Metadata edits (part_type='metadata') were structurally IMPOSSIBLE.
+--     20260818010000 requires `content is null` for them, and NOT NULL
+--     forbids exactly that, so every save failed with 23502 — a CHECK and a
+--     NOT NULL that can never both be satisfied.
+--   * Placeholder / document-only submissions, which 20260209000000 was
+--     written for in the first place, have been unable to write a null
+--     content since February.
+--
+-- Idempotent and safe to re-run: DROP NOT NULL on a column that is already
+-- nullable is a no-op, and widening nullability cannot fail against existing
+-- rows.
+alter table pending_songs alter column content drop not null;
