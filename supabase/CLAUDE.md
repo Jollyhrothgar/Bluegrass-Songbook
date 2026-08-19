@@ -11,9 +11,9 @@ Serverless functions that run on Supabase Edge (Deno runtime).
 | Function | Purpose | Trigger | Source |
 |----------|---------|---------|--------|
 | `create-flag-issue` | Create GitHub issue for song problem reports | POST from flags.js | `functions/create-flag-issue/index.ts` |
-| `create-song-request` | Create GitHub issue for song requests | POST from main.js | `functions/create-song-request/index.ts` |
+| `create-song-request` | Create GitHub issue for song requests | POST from add-song-picker.js | `functions/create-song-request/index.ts` |
 | `create-superuser-request` | Create GitHub issue for super-user access requests | POST from superuser-request.js | `functions/create-superuser-request/index.ts` |
-| `auto-commit-song` | Gate + classify a pending_songs row, then dispatch the write to CI | POST from editor.js (any logged-in save) | `functions/auto-commit-song/index.ts` |
+| `auto-commit-song` | Gate + classify a pending_songs row, then dispatch the write to CI | POST from editor.js (charts), otf-editor/submit-tab.js (tabs), work-view.js (metadata) — any logged-in save | `functions/auto-commit-song/index.ts` |
 | `cleanup-pending` | Remove pending songs already committed | `.github/workflows/cleanup-pending.yml` after a successful deploy | `functions/cleanup-pending/index.ts` |
 | `reconcile-pending` | Retry rows the live commit path failed, and report the drift | `.github/workflows/reconcile-pending.yml`, hourly | `functions/reconcile-pending/index.ts` |
 
@@ -202,7 +202,7 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `leaderboard_salt` - One random uuid that salts the leaderboard aliases. **RLS on, zero policies.** Never expose it: contributor uuids are already public in `works/*/work.yaml` (`provenance.submitted_by`), so an unsalted alias hash would be a join key straight back to real contributors
 
 **Key functions:**
-- `get_leaderboard()` (`20260816120000_leaderboard.sql`, **not yet applied**) —
+- `get_leaderboard()` (`20260816120000_leaderboard.sql`, applied) —
   the High Scores board, `security definer`, granted to `anon` *and*
   `authenticated`. Aggregates `submission_log` over CONTENT actions only
   (`song_submit`, `song_correction`, `tab_submit`, `tab_correction`; reports
@@ -219,23 +219,41 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 
 **Retired:** `doc_staging` (+ the `doc-staging` storage bucket) — the
 document-upload intake, removed in phase 2d. The drop migration
-(`20260815130000_drop_doc_staging.sql`) is written but **not applied**: it
-opens with a rescue checklist because anything still in that table or bucket
-is a submitter's only copy, and the bucket itself needs a manual delete.
+(`20260815130000_drop_doc_staging.sql`) **has been applied** — `doc_staging`
+is gone from the live schema. It opens with a rescue checklist because
+anything that was in that table or bucket was a submitter's only copy; the
+storage bucket still needs a manual delete if it hasn't had one.
+
+> **This prose was wrong for days, in both directions** — it claimed this
+> migration and `get_leaderboard()` were unapplied while production had
+> both. A hand-maintained note about what is applied is a guess. Ask the
+> database: `supabase migration list` for the ledger, and
+> `supabase db dump --schema public` for what the schema ACTUALLY is. Those
+> two can disagree — see `20260819000000_pending_content_really_nullable.sql`,
+> where the ledger said applied for six months and the DDL had never run.
+
+`./scripts/utility db-check` asks the second question for you: it dumps the
+live schema and asserts the properties the code actually depends on. New
+migrations that change nullability, add a constraint, or drop an object must
+also assert their own postcondition in a `DO $$ ... RAISE EXCEPTION` block —
+see "Self-verifying migrations" at the end of this file.
 
 ### Authentication
 
 Google OAuth via Supabase Auth. User sessions managed by `supabase-auth.js` on frontend.
 
-**Key functions in supabase-auth.js:**
+**Key functions in supabase-auth.js** — the definitive list is the
+`window.SupabaseAuth` object literal at the bottom of the file
+(`sed -n '/^window.SupabaseAuth = {/,/^};/p' docs/js/supabase-auth.js`):
 - `signInWithGoogle()` - Initiates OAuth flow
 - `getUser()` - Returns current user (sync, from cache)
 - `isLoggedIn()` - Boolean check
-- `fetchUserLists()` - Get user's lists from database
+- `fetchCloudLists()` - Get user's lists from database
 - `isAdmin()` - Check if current user is an admin (can delete songs)
 - `deleteSong(songId)` - Soft-delete a song (admin only)
 - `isTrustedUser()` - Check if current user has trusted status (can make instant edits)
-- `savePendingSong(song)` - Save song to pending_songs table
+- `supabase` (getter) - the raw client; `pending_songs` rows are written
+  through it directly, not via a `savePendingSong` helper
 
 **Note:** `supabase-auth.js` is loaded as a regular script (NOT an ES module). Functions are exposed via `window.SupabaseAuth` object.
 
@@ -430,7 +448,8 @@ The **access token and database password are not** seeded and are not in
 push works from any worktree once the link is present.
 
 ```bash
-./scripts/utility db-push     # lists pending migrations, then dry-runs
+./scripts/utility db-push     # reports drift both ways, then dry-runs
+./scripts/utility db-check    # asserts the LIVE schema, after pushing
 ```
 
 Read the dry run before pushing. Two traps it exists to surface:
@@ -446,3 +465,171 @@ Read the dry run before pushing. Two traps it exists to surface:
 A timestamp collision is silent and ugly: two files sharing a version prefix is
 ambiguous to the CLI. Check `ls supabase/migrations/ | sed 's/_.*//' | uniq -d`
 before naming a new one.
+
+### Drift is reported in BOTH directions
+
+`supabase migration list` prints three row shapes, and only two of them used to
+be visible here:
+
+| Local | Remote | means |
+|---|---|---|
+| `2026…` | `2026…` | in sync |
+| `2026…` | *(blank)* | a file that has not been applied — pending |
+| *(blank)* | `2026…` | **the database ran something this branch has no file for** |
+
+`db-push` used to `awk` for the middle row only, so the third printed nothing
+and the command reported *"(none — local and remote agree)"* and exited 0 while
+a real `supabase db push` was refusing with a drift error. That third shape is
+exactly what a hand-applied fix, an unmerged branch's migration, or a `supabase
+migration repair` leaves behind. `scripts/lib/migration_drift.py` now reports
+all three (exit `0` in sync, `2` pending, `1` remote-only drift), and both
+directions are pinned by `tests/test_migration_drift.py`.
+
+### The ledger agreeing is not the schema agreeing
+
+`migration list` reads `supabase_migrations.schema_migrations` — a table of
+version strings. It proves the **ledger** agrees. It says nothing about whether
+any of that DDL ever ran.
+
+`20260209000000_pending_nullable_content.sql` is the proof. One line,
+`ALTER TABLE pending_songs ALTER COLUMN content DROP NOT NULL`, stamped applied
+on the remote for six months with no drift reported — and the live schema still
+said `"content" "text" NOT NULL`. It hid because nothing depended on it, until
+`20260818010000` added `CHECK (part_type <> 'metadata' or content is null)` and
+the two together became a pair no row can satisfy. Every metadata save died
+with 23502.
+
+So there are two questions, and you have to ask both:
+
+```bash
+supabase migration list                # does the LEDGER agree?
+supabase db dump --schema public       # what is the SCHEMA, actually?
+./scripts/utility db-check             # ...asserted, so you don't have to read it
+```
+
+`db-check` (`scripts/lib/schema_assert.py`) parses that dump and asserts a
+short list of load-bearing invariants — `pending_songs.content` is nullable,
+the metadata CHECKs exist, `part_type` admits `'metadata'`, the id-namespace
+CHECKs exist, RLS is on where it is the only gate, `get_leaderboard()` is
+`security definer` and granted to `anon`, `leaderboard_salt` and
+`leaderboard_identities` have zero policies, nothing can client-INSERT into
+`submission_log`, `doc_staging` is still gone. It is read-only and needs no
+database password beyond the CLI's own cached login. Run it after every push.
+
+The list is deliberately short. An invariant earns a slot only when a named
+consumer in this repo breaks without it, it is a *shape* property that can
+drift silently, and no equivalent guard already catches it on the same path —
+which is why the length caps and `pending_songs_instrument_shape` are **not**
+in it (`process_pending.tab_instrument` re-validates those and raises before
+anything reaches `works/`). The rule and the exclusions are written out at the
+top of `scripts/lib/schema_assert.py`; add to the list there, with a `why`.
+
+### Self-verifying migrations
+
+**New migrations that change nullability, add or drop a constraint, or drop an
+object must END by asserting their own postcondition.** A migration that
+cannot fail silently cannot be stamped-without-running: if the ledger says it
+applied, its assertion ran, and if its assertion ran the schema is what it
+says. That closes the exact hole `20260209000000` fell through.
+
+This applies to **new** migrations only. Do **not** retrofit applied ones —
+that rule stands, and rewriting a file some environments have run is its own
+failure mode.
+
+Copyable shapes — the catalogs to ask are `pg_attribute` for nullability,
+`pg_constraint` for CHECKs, `pg_proc` for functions, `pg_class`/`to_regclass`
+for objects that should be gone, and `pg_policies` for RLS:
+
+```sql
+-- 1. Nullability (pg_attribute.attnotnull)
+alter table pending_songs alter column content drop not null;
+
+do $$
+begin
+  if exists (
+    select 1 from pg_attribute
+     where attrelid = 'public.pending_songs'::regclass
+       and attname  = 'content'
+       and attnotnull
+  ) then
+    raise exception
+      'POSTCONDITION FAILED: pending_songs.content is still NOT NULL. '
+      'The ledger will say this migration applied. It did not.';
+  end if;
+end
+$$;
+
+-- 2. A constraint that must exist (pg_constraint)
+alter table pending_songs
+  add constraint pending_songs_metadata_has_no_content
+  check (part_type <> 'metadata' or content is null);
+
+do $$
+begin
+  if not exists (
+    select 1 from pg_constraint
+     where conrelid = 'public.pending_songs'::regclass
+       and conname  = 'pending_songs_metadata_has_no_content'
+       and convalidated          -- NOT VALID constraints do not count
+  ) then
+    raise exception
+      'POSTCONDITION FAILED: pending_songs_metadata_has_no_content is missing '
+      'or not validated.';
+  end if;
+end
+$$;
+
+-- 3. A function that must exist, with the right security attribute (pg_proc)
+do $$
+begin
+  if not exists (
+    select 1 from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+     where n.nspname = 'public'
+       and p.proname = 'get_leaderboard'
+       and p.prosecdef                     -- security definer
+  ) then
+    raise exception
+      'POSTCONDITION FAILED: get_leaderboard() is missing or not '
+      'SECURITY DEFINER — the High Scores board would read nothing.';
+  end if;
+end
+$$;
+
+-- 4. An object that must be GONE (to_regclass returns null when absent)
+drop table if exists doc_staging;
+
+do $$
+begin
+  if to_regclass('public.doc_staging') is not null then
+    raise exception 'POSTCONDITION FAILED: doc_staging still exists.';
+  end if;
+end
+$$;
+```
+
+Four things make these worth the six lines:
+
+* **The assertion is the migration's own receipt.** `supabase db push` runs
+  each migration in a transaction, so a raised exception rolls the file back
+  and it is never stamped. Applied-but-ineffective becomes unrepresentable.
+* **`migration repair` cannot forge it.** A repair writes a ledger row without
+  executing SQL — which is one of the things that can produce a
+  `20260209000000`. The assertion does not care how the ledger got its row; it
+  only ever ran if the DDL did.
+* **Re-runnable.** Every example above is idempotent: `DROP NOT NULL` on a
+  nullable column is a no-op, `drop ... if exists` on a missing object is a
+  no-op, and the assertions re-pass. Safe under `--include-all`.
+* **The message names the consequence, not the catalog.** "pending_songs.content
+  is still NOT NULL" is a sentence someone can act on at 11pm; `assertion
+  failed` is not.
+
+Assert the *postcondition*, never the DDL you just typed — checking that
+`content` is nullable catches a dashboard edit that re-added NOT NULL between
+your two statements; checking "did my ALTER statement parse" catches nothing.
+And keep the assertion in the same file as the change: a separate verification
+migration can be skipped, reordered, or stamped on its own.
+
+When the property is one the app depends on at runtime, add it to
+`INVARIANTS` in `scripts/lib/schema_assert.py` as well. The `DO` block proves
+the migration ran once; `db-check` proves the property is *still* true after
+whatever happened to the database since.
