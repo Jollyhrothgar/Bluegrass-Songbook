@@ -193,6 +193,14 @@ export function launchTabCreator(target = {}, {
  * and the writer appends the part to that work.yaml. Omit it and the
  * submission mints its own work (a tab-only one, until someone adds a chart).
  *
+ * `artist` is the mirror image of `workId` and only travels with a MINT.
+ * A tab-only work is created from this row alone, so if the artist isn't
+ * here it is nowhere: works_writer omits the key entirely and the minted
+ * work.yaml carries a title and nothing else (that is how
+ * works/welcome-to-new-york ended up artist-less). When there IS a target
+ * work the field is deliberately dropped — that work already has its own
+ * artist, and a tab contributor is not the person who gets to restate it.
+ *
  * Resolves once the tab is LIVE — see submit-tab.js for the return shape.
  * Nothing here waits on a review any more; there is no review.
  */
@@ -205,11 +213,14 @@ export async function submitNewTab(otf, target = {}, {
     }
     const title = (target.title || otf?.metadata?.title || 'Untitled').trim()
         || 'Untitled';
+    const artist = String(target.artist || '').trim().slice(0, 200);
     return submit({
         type: 'tab-submission',
         otf,
         title,
         instrument: partInstrumentFor(otf, target.instrument),
-        ...(target.workId ? { workId: target.workId } : {}),
+        ...(target.workId
+            ? { workId: target.workId }
+            : (artist ? { artist } : {})),
     });
 }

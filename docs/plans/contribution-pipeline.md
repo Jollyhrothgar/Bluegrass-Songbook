@@ -189,9 +189,44 @@ the Deferred rate-limiting item lands here, not later.
 *Deviation, 2026-08-15:* the tab half shipped separately — 2b delivered the
 lead-sheet pipeline and retired the song-issue flow, while `create-tab-pr` /
 `process-tab-pr.yml` stayed live pending 4c.
+
+*Regression, 2026-08-15 → 2026-08-18:* "durable in minutes" ended at git, not
+at the site. Retiring `process-song-submission.yml` /
+`process-song-correction.yml` left their names in `build.yml`'s `workflow_run`
+trigger list and never added the replacement, `"Process Pending Submission"`.
+Since pushes made with the default `GITHUB_TOKEN` do not start workflows,
+every submission for three days reached `works/` and never deployed — and
+`cleanup-pending.yml`, which keys on `CI & Deploy` succeeding, stopped reaping
+the rows it committed. Fixed by correcting the list; `tests/
+test_workflow_deploy_triggers.py` now fails CI if it drifts again. **Anyone
+retiring or renaming a content workflow must update that list** — it matches
+`name:` strings and GitHub reports nothing when an entry matches nothing.
 *Closed, 2026-08-18:* the tab half landed as written above — OTF rows on
 `pending_songs`, validation in the pipeline, `create-tab-pr` and
 `process-tab-pr.yml` deleted. See the reversal note under 4c below.
+
+*Third column, 2026-08-18 — metadata edits.* The first tab through the new
+pipeline minted a work with a title and nothing else, and there was no way
+to give it an artist: the metadata editor keyed on `status: 'placeholder'`,
+which a tab-minted work never gets. So `pending_songs` grew a third
+`part_type`, `'metadata'` — content null, `replaces_id` required, its own
+`meta:<slug>:<rand>` id namespace for the same primary-key reason tab rows
+have one — and `works_writer.update_metadata` writes work-level fields
+through a whitelist that cannot name `parts` or `id`.
+
+It is the one mode that can be **refused**. Every other column ends
+somewhere safe: a chart edit you don't own forks, a tab correction you
+don't own lands beside the original. There is no alternate arrangement of a
+title, so a caller with no claim on the work gets a 403 rather than a
+silent second opinion.
+
+Two ownership questions now exist and must not be merged. `submittersOf(yaml,
+partType)` is type-scoped because its answer buys an in-place rewrite of
+someone's *content* — unscoping it is the escalation where contributing a
+banjo tab bought edit rights over a stranger's lyrics. `anyPartOwners(yaml)`
+is deliberately looser because its answer buys only work-level fields, and
+the owner's rule is that contributing any part earns them. Trusted users
+("superusers") get metadata on any work.
 
 *Resolved at 4c, 2026-08-15 — **tabs keep the PR flow**.* The overlay this
 paragraph assumes doesn't exist for tabs: `pending_songs` is one row per

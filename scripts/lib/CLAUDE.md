@@ -469,8 +469,10 @@ with undo limited to the promoter or a trusted user. The
 `Sync Deleted + Promoted Songs` workflow
 (`.github/workflows/sync-deleted-songs.yml`, hourly cron + manual dispatch)
 writes both to the committed caches (`docs/data/deleted_songs.json`,
-`docs/data/promoted_songs.json`) and its commit triggers a rebuild + deploy,
-so UI deletes and promotions actually stick. A promotion has the same effect
+`docs/data/promoted_songs.json`). Its commit reaches the site **only via
+`build.yml`'s `workflow_run` trigger, and only while this workflow's `name:`
+is listed there** — see "How a bot commit reaches the site" below. A promotion
+has the same effect
 as `curate unprune` but lives in the JSON cache instead of `registry.yaml`;
 if a promoted work was also deleted, deletion wins (the build warns).
 Manual fallback:
@@ -481,6 +483,46 @@ Manual fallback:
 git add docs/data/deleted_songs.json docs/data/promoted_songs.json
 git commit -m "Sync deleted/promoted songs"
 ```
+
+### How a bot commit reaches the site
+
+**A commit pushed by a workflow does NOT trigger a deploy on its own.** GitHub
+refuses to start workflows for pushes made with the default `GITHUB_TOKEN`
+(recursive-workflow prevention), and every workflow here checks out with a
+plain `actions/checkout@v4`. So a `github-actions[bot]` commit lands in git and
+nothing rebuilds — the change is durable and invisible.
+
+The one thing that closes the gap is the `workflow_run` trigger in
+`.github/workflows/build.yml`:
+
+```yaml
+workflow_run:
+  workflows: ["Process Pending Submission", "Process Tune Request",
+              "Sync Community Input", "Sync Deleted + Promoted Songs"]
+  types: [completed]
+  branches: [main]
+```
+
+Two things about that list bite:
+
+1. **It matches the `name:` field, not the filename.** Renaming a workflow
+   unhooks deployment, and GitHub reports nothing — no warning, no error, no
+   failed run. It has drifted twice (submissions since 2026-08-15, deletes and
+   promotions since 2026-08-14, both fixed 2026-08-18).
+2. **A workflow missing from the list deploys nothing, ever.** Adding a new
+   workflow that pushes to main means adding its name here too.
+
+`tests/test_workflow_deploy_triggers.py` now enforces both directions: every
+workflow containing a `git push` must be listed, every listed name must exist
+and must actually push. A rename now fails CI.
+
+Downstream of that: `cleanup-pending.yml` triggers on `CI & Deploy` completing
+successfully, so while the trigger was broken, committed `pending_songs` rows
+were not being reaped either. Restoring the deploy restores the reaping.
+
+If a commit is already on `main` and the site is stale, the manual escape hatch
+is `gh workflow run build.yml --ref main` — `workflow_dispatch` bypasses the
+`gate` job and always rebuilds.
 
 ### Output Format
 
@@ -739,6 +781,7 @@ durable.
    - `create` → `create_work(on_collision='suffix')`
    - `update` → `update_part` on the chart the actor OWNS (`update_target`)
    - `fork` → `fork_to_arrangement`, `x_version_*` from the submitter identity
+   - `metadata` → `update_metadata` — work-level fields only, no part
 3. The workflow commits, pushes with rebase-retry, then marks the row
    `github_committed`.
 
@@ -783,9 +826,37 @@ the whole build when that id disagrees with `provenance.source_id` — which
 is the idempotence marker here. The displaced identity is kept as
 `provenance.x_derived_from`.
 
+**Metadata** (2026-08-18, `apply_metadata_row`). A row with
+`part_type = 'metadata'` carries NO content, names its target in
+`replaces_id`, and edits only the work's own fields. It exists because a work
+minted by a TAB had a title and nothing else — no artist, no key — and no
+path to a fix: every other row shape edits a PART, and the work-level fields
+only ever rode along with a rewrite of the primary chart, which a tab-only
+work does not have.
+
+| mode | writer call | file |
+|---|---|---|
+| `metadata` | `update_metadata` (title / artist / key→`default_key` / notes) | none — no part is created, replaced, renamed or reordered |
+
+"Touches no part" is structural, not a promise: `update_metadata` accepts a
+whitelist of work-level keys and `parts` is not on it. Fields the row does
+not carry are DROPPED, never written — a null artist means "I didn't touch
+it", and there is no clear-a-field gesture in this pipeline. The dedup
+backstop is skipped explicitly (it guards a `create` minting a slug; this
+mints nothing, and there is no ChordPro to score). Who may send one is
+decided before the dispatch by `classifyChange`: own **any** part of the
+work, or be trusted — a looser question than the per-part-type ownership a
+content edit must pass, because naming an artist rewrites nobody's content.
+
 **Idempotence**: every part written carries
 `provenance.source_id = pending:<row id>:<content sha>`. A replayed dispatch
 finds the marker and no-ops; a genuine re-edit changes the sha and applies.
+A metadata row has no content to hash, so `metadata_marker` hashes the FIELDS
+it is applying (canonical sorted-key JSON) and stamps the result at the work
+level as `metadata_provenance.source_id` — same `pending:<row id>:<sha>`
+shape, same property in both directions. Hashing the always-null content
+instead would give every metadata row in the table the same marker, so the
+first edit of a work would make every later edit of it look like a replay.
 The mode is decided server-side in `supabase/functions/_shared/pending-dispatch.ts`
 — the client cannot claim "update" on somebody else's chart.
 

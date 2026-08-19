@@ -34,7 +34,11 @@ import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2"
 import { unretryableReason, type PendingSong } from "../_shared/commit-song.ts"
 import { attributionFor } from "../_shared/identity.ts"
-import { classifyChange, dispatchPendingCommit } from "../_shared/pending-dispatch.ts"
+import {
+  classifyChange,
+  dispatchPendingCommit,
+  MetadataRefusedError,
+} from "../_shared/pending-dispatch.ts"
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -102,6 +106,15 @@ serve(async (req) => {
     const { data: rows, error } = await supabase
       .from('pending_songs')
       // One string literal — supabase-js types the row off the literal.
+      //
+      // part_type / instrument / part_file are NOT optional here even though
+      // this function never reads them itself: they are what classifyChange
+      // needs to put the row in the right column. A retried tab that arrived
+      // without part_type would be re-classified as a chart and land as
+      // lead-sheet.pro holding an OTF; a retried METADATA row would be
+      // re-classified as a chart edit of the work named by its `meta:...` id
+      // — i.e. a create of a garbage slug. Both are data corruption, and both
+      // are invisible until somebody opens the work.
       .select('id, replaces_id, title, artist, composer, content, key, mode, tags, created_at, created_by, dedup_hold, part_type, instrument, part_file')
       .eq('github_committed', false)
       .order('created_at', { ascending: true })
@@ -166,10 +179,10 @@ serve(async (req) => {
           .eq('user_id', actorId)
           .maybeSingle()
 
-        // part_type / part_file ride along so a retried TAB is classified the
-        // way the live path would have classified it. Without them a tab row
-        // would be re-dispatched as a chart and land as lead-sheet.pro
-        // holding an OTF document.
+        // part_type / part_file ride along so a retried TAB or METADATA row
+        // is classified the way the live path would have classified it.
+        // Without them a tab row would be re-dispatched as a chart and land
+        // as lead-sheet.pro holding an OTF document.
         const classification = await classifyChange({
           rowId: row.id,
           replacesId: row.replaces_id,
@@ -204,6 +217,18 @@ serve(async (req) => {
         console.log(`Re-dispatched ${row.id} as ${classification.mode}`)
       } catch (e) {
         const message = e instanceof Error ? e.message : String(e)
+        // A refused metadata edit will be refused identically every hour —
+        // ownership of a work does not change by waiting. It belongs in
+        // `unretryable` (needs a human to delete the row or grant trust), not
+        // in `stuck` (worth another GitHub call next hour). RLS lets any
+        // logged-in user INSERT a metadata row targeting any work, so this is
+        // a reachable state even though auto-commit-song already told them no
+        // in the browser.
+        if (e instanceof MetadataRefusedError) {
+          console.warn(`Refused metadata row ${row.id}:`, message)
+          unretryable.push({ id: row.id, title: row.title, created_at: row.created_at ?? null, error: message })
+          continue
+        }
         console.error(`Failed to reconcile ${row.id}:`, message)
         stuck.push({ id: row.id, title: row.title, created_at: row.created_at ?? null, error: message })
       }

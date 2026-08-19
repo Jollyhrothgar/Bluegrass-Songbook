@@ -35,8 +35,9 @@ export interface PendingSong {
   /** Phase 3b: non-null means the dedup backstop refused to write this row. */
   dedup_hold?: string | null
   /**
-   * 'lead-sheet' (content is ChordPro) or 'tablature' (content is a
-   * serialized OTF JSON document). Absent on every row written before
+   * 'lead-sheet' (content is ChordPro), 'tablature' (content is a serialized
+   * OTF JSON document), or 'metadata' (NO content — the row edits the work's
+   * own title/artist/key/notes). Absent on every row written before
    * 2026-08-18; the column defaults to 'lead-sheet', so absent means chart.
    */
   part_type?: string | null
@@ -80,6 +81,18 @@ export async function getFileContent(path: string, githubToken: string): Promise
 export function unretryableReason(entry: PendingSong): string | null {
   if (!entry.id) return 'missing id'
   if (!entry.title) return 'missing title'
+
+  // A metadata row is the one shape with NOTHING in `content` — a CHECK on
+  // pending_songs refuses it there. Asking for content anyway would have
+  // made every metadata row permanently "unretryable", i.e. the reconciler
+  // would file it for manual rescue an hour after it was written and open an
+  // alert issue about a row that is perfectly well formed. What it must name
+  // instead is its target work, since a metadata edit can never mint one.
+  if ((entry.part_type || 'lead-sheet') === 'metadata') {
+    if (!entry.replaces_id) return 'metadata row names no target work'
+    return null
+  }
+
   if (!entry.content) return 'missing content'
   return null
 }

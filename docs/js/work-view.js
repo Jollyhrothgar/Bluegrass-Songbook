@@ -33,11 +33,17 @@ import {
     initKeyState
 } from './song-view.js';
 import {
-    getSongContent, peekSongContent, songHasContent, songHasAbc,
+    peekSongContent, songHasContent, songHasAbc,
     getArrangementContent, peekArrangementContent,
 } from './song-content.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
-import { escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify, tabLabel } from './utils.js';
+import {
+    escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify,
+    tabLabel, canEditWorkMetadata,
+} from './utils.js';
+import {
+    accessToken, namespacedRowId, requestDurableWrite,
+} from './otf-editor/submit-tab.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { launchTabCreator } from './otf-editor/create-tab-entry.js';
 import { tabEntryPlan, renderExistingTabsPanel } from './otf-editor/existing-tabs.js';
@@ -801,17 +807,28 @@ function renderTitleHeader() {
     header.className = 'song-header';
     const title = currentWork.title || 'Untitled';
     const artist = currentWork.artist || '';
+    // The details button is always in the DOM and hidden by class, because
+    // trust/login resolve AFTER the first render — updateWorkTopBar is called
+    // again when they land (main.js updateDeleteButtonVisibility) and just
+    // flips the class, the same contract #edit-song-btn has.
     header.innerHTML = `
         <div class="song-header-left">
             <div class="song-title-row">
                 <span class="song-title">${escapeHtml(title)}</span>
                 ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
+                ${currentWork.pending_metadata ? '<span class="pending-meta-badge" title="Your edit is live here and syncing to the songbook">Just edited</span>' : ''}
                 <button id="edit-song-btn" class="focus-btn" title="Edit this song">&#x270F;&#xFE0F; Edit</button>
+                <button id="edit-meta-btn" class="focus-btn hidden" title="Edit this song's title, artist, key and notes">&#x1F3F7;&#xFE0F; Details</button>
             </div>
-            ${artist ? `<div class="song-artist-line">${escapeHtml(artist)}</div>` : ''}
+            ${artist
+                ? `<div class="song-artist-line">${escapeHtml(artist)}</div>`
+                : '<div class="song-artist-line song-artist-missing hidden">Artist unknown</div>'}
         </div>
     `;
-    // #edit-song-btn is wired via main.js's songContent delegation
+    // #edit-song-btn is wired via main.js's songContent delegation; the
+    // details button is wired here so the feature needs nothing from main.js.
+    header.querySelector('#edit-meta-btn')
+        ?.addEventListener('click', () => showMetadataEditor());
     return header;
 }
 
@@ -1394,14 +1411,35 @@ export function configureWorkPage(hooks = {}) {
 /**
  * Title-row Edit action (delegated from main.js): placeholders get the
  * metadata editor, real songs the ChordPro editor.
+ *
+ * Unchanged by the metadata work on purpose. Edit means "edit the chart"
+ * everywhere it is offered — a work with no chart still wants that door open
+ * (that is how a placeholder gains one). Editing the work's DETAILS is a
+ * different ask and gets its own button; routing both through one control was
+ * what made the details of a tab-minted work unreachable in the first place.
  */
 export function handleEditAction() {
     if (!currentWork) return;
     if (isPlaceholder(currentWork)) {
-        showPlaceholderEditor();
+        showMetadataEditor();
     } else {
         workPageHooks.onEdit?.(currentWork);
     }
+}
+
+/**
+ * May the viewer edit THIS work's metadata?
+ *
+ * Own a part of it, or be trusted (Mike's rule). Exported for tests; the page
+ * asks it on every top-bar update because both halves resolve late — the
+ * trusted flag arrives from Supabase after first paint, and the overlay row
+ * that proves you just submitted a tab arrives from refreshPendingSongs.
+ */
+export function canEditMetadataHere(song = currentWork) {
+    return canEditWorkMetadata(song, {
+        userId: globalThis.window?.SupabaseAuth?.getUser?.()?.id || null,
+        trusted: !!workPageHooks.isTrusted?.(),
+    });
 }
 
 export function updateWorkTopBar() {
@@ -1417,6 +1455,17 @@ export function updateWorkTopBar() {
         editBtn.classList.toggle('hidden',
             !(partUsesSongActions(activePart) || isPlaceholder(currentWork)));
     }
+
+    // Details (title / artist / key / notes) is NOT part-scoped — the work has
+    // one set of details whichever part you are reading, and a tab part is the
+    // case that needs it most: a tab-minted work arrives with a title and
+    // nothing else. Gated on the viewer instead: own a part here, or trusted.
+    const metaBtn = document.getElementById('edit-meta-btn');
+    const mayEditMeta = canEditMetadataHere();
+    if (metaBtn) metaBtn.classList.toggle('hidden', !mayEditMeta);
+    // The "Artist unknown" nudge only appears to someone who can act on it.
+    document.querySelector('#song-content .song-artist-missing')
+        ?.classList.toggle('hidden', !mayEditMeta);
 
     actions.push({
         id: 'list-picker-btn',
@@ -1776,23 +1825,54 @@ function openBountyRequestInline(section, work) {
 }
 
 // ============================================
-// PLACEHOLDER METADATA EDITOR
+// WORK METADATA EDITOR
 // ============================================
+//
+// The work's OWN fields — title, artist, key, notes — as opposed to any part's
+// bytes. It used to be reachable only from a `status: placeholder` work, which
+// left a tab-minted work stranded: `works/welcome-to-new-york/` had a title and
+// nothing else, and no surface anywhere could give it an artist.
+//
+// Widening the gate alone would have been wrong, which is why this is a
+// rewrite rather than a flag flip. The old save wrote `status: 'placeholder'`
+// and `content: existingContent || null` — on a tab-only work `getSongContent`
+// returns `''`, so the row went down the CHART path server-side and stamped
+// `status: placeholder` onto a legitimate work. A metadata edit now writes a
+// row that is neither a chart nor a part:
+//
+//   part_type   'metadata'
+//   content     null — this row owns no bytes and must never be read as a chart
+//   replaces_id the work being edited (REQUIRED: it is the row's whole address)
+//   id          `meta:<slug>:<rand>`, its own namespace, because two people
+//               editing one work's details must not collide on the PK
+//
+// Permission is the SERVER's answer (own a part, or be trusted). The button is
+// gated on the same rule client-side so the affordance isn't a lie, but a 403
+// from `auto-commit-song` is surfaced verbatim, never swallowed.
 
 /**
- * Show inline editor for placeholder metadata (title, artist, key, notes).
- * Replaces the dashboard content area with an edit form.
+ * Show the inline editor for the work's details (title, artist, key, notes).
+ * Replaces the page content with an edit form.
  */
-function showPlaceholderEditor() {
-    if (!requireLogin('edit placeholder metadata')) return;
+function showMetadataEditor() {
+    if (!requireLogin('edit song details')) return;
     if (!currentWork) return;
 
     const container = document.getElementById('song-content');
     if (!container) return;
 
+    // The form replaces the whole page body, which on a tab work means
+    // detaching a live tablature view. Its renderers own documentElement
+    // observers and its player owns audio, so they have to be torn down here
+    // rather than left re-rendering into DOM nobody can see. Cancel/Save
+    // re-render the part from scratch (renderWorkView).
+    teardownTablatureView();
+    setBottomBand(null);
+
     // Replace content with edit form
     container.innerHTML = '';
 
+    const work = currentWork;
     const form = document.createElement('div');
     form.className = 'placeholder-editor';
 
@@ -1806,7 +1886,8 @@ function showPlaceholderEditor() {
 
     form.innerHTML = `
         <div class="placeholder-editor-header">
-            <h3>Edit Placeholder</h3>
+            <h3>Song details</h3>
+            <p class="placeholder-editor-sub">These describe the song itself — every tab and chart on this page shares them.</p>
         </div>
         <div class="placeholder-editor-form">
             <div class="placeholder-editor-field">
@@ -1815,7 +1896,7 @@ function showPlaceholderEditor() {
             </div>
             <div class="placeholder-editor-field">
                 <label for="ph-edit-artist">Artist</label>
-                <input type="text" id="ph-edit-artist" value="${escapeHtml(currentWork.artist || '')}" />
+                <input type="text" id="ph-edit-artist" value="${escapeHtml(currentWork.artist || '')}" placeholder="As performed by…" />
             </div>
             <div class="placeholder-editor-field">
                 <label for="ph-edit-key">Key</label>
@@ -1863,17 +1944,23 @@ function showPlaceholderEditor() {
         statusDiv.className = 'placeholder-editor-status';
 
         try {
-            // Metadata edits take the one pipeline (phase 2b): any logged-in
-            // user writes pending_songs and it goes live.
-            await savePlaceholderMetadata({ title, artist, key, notes });
+            // Metadata edits take the one pipeline: write the row, then ask
+            // for the durable commit. Permission is decided there.
+            const out = await submitWorkMetadata({
+                workId: work.id, title, artist, key, notes,
+            });
 
-            statusDiv.innerHTML = '<span style="color: var(--success)">Saved!</span>';
+            statusDiv.innerHTML = out.synced
+                ? '<span style="color: var(--success)">Saved!</span>'
+                : '<span style="color: var(--success)">Saved — syncing shortly.</span>';
 
-            // Update in-memory work data and re-render after brief delay
-            currentWork.title = title;
-            currentWork.artist = artist;
-            currentWork.key = key;
-            currentWork.notes = notes;
+            // Update in-memory work data and re-render after brief delay.
+            // refreshPendingSongs rebuilds the corpus underneath us, so this
+            // is the on-screen copy catching up, not the source of truth.
+            work.title = title;
+            work.artist = artist;
+            work.key = key;
+            work.notes = notes;
             setTimeout(() => renderWorkView(), 600);
         } catch (e) {
             statusDiv.textContent = `Error: ${e.message}`;
@@ -1884,44 +1971,128 @@ function showPlaceholderEditor() {
 }
 
 /**
- * Save placeholder metadata via Supabase pending_songs — live immediately,
- * durable when the pending-commit dispatch lands it in works/.
+ * The `pending_songs.id` for a metadata edit: `meta:<slug>:<rand>`.
+ *
+ * Enforced in the database (`^meta:[a-z0-9-]*:[a-z0-9]{6,}$`), for the reason
+ * tab rows are namespaced: the primary key cannot be the work slug when two
+ * people may hold an unlanded edit of the same work — the second writer's
+ * upsert would fail the owner-gated UPDATE policy and surface as a
+ * *permissions* error that says nothing about the actual collision.
+ *
+ * Memoized per work, so a double-click, or a second save from the same page
+ * session, updates ONE row rather than minting a queue of them. A metadata
+ * edit is a state, not a take: the newest wins and older ones are noise.
  */
-async function savePlaceholderMetadata({ title, artist, key, notes }) {
-    const supabase = window.SupabaseAuth?.supabase;
-    if (!supabase) throw new Error('Not connected to database');
+export function metaRowId(workId) {
+    return namespacedRowId('meta', workId, String(workId || ''));
+}
 
-    const { data: { session } } = await supabase.auth.getSession();
-    if (!session) throw new Error('Not logged in');
+/**
+ * Write a metadata edit and ask for the durable commit.
+ *
+ * Two steps, the same two every contribution takes — with one deliberate
+ * difference in how step 2 failing is read. For a tab, step 2 is only
+ * durability: the row is live and the hourly reconciler retries, so a failure
+ * is "syncing shortly". For metadata, step 2 is also where PERMISSION is
+ * decided, so a 401/403 means the edit was REFUSED and will never land. That
+ * cannot be reported as success, and the row must not be left behind
+ * advertising an edit in the overlay forever — so it is deleted and the
+ * server's own message is raised. Anything else (5xx, offline) stays
+ * live-but-unsynced, exactly like a tab.
+ *
+ * @param {Object} p
+ * @param {string} p.workId - the work being edited (becomes `replaces_id`)
+ * @param {string} p.title
+ * @param {string} [p.artist]
+ * @param {string} [p.key]
+ * @param {string} [p.notes]
+ * @param {Object} [deps] - injectable for tests
+ * @returns {Promise<{id, workId, live: true, synced: boolean,
+ *   mode: string|null, syncError: string|null}>}
+ */
+export async function submitWorkMetadata(p, deps = {}) {
+    const { workId, title, artist = '', key = '', notes = '' } = p || {};
+    const {
+        fetchImpl = (...args) => globalThis.fetch(...args),
+        supabase = globalThis.window?.SupabaseAuth?.supabase || null,
+    } = deps;
 
-    const user = window.SupabaseAuth?.getUser?.();
+    const token = await accessToken();
+    if (!token) {
+        throw new Error('Sign in to edit song details — your account is the attribution.');
+    }
+    if (!supabase) {
+        throw new Error('Not connected to the songbook — reload and try again.');
+    }
+    // A metadata row with no target has nothing to say: it is not a song, so
+    // there is no work for the server to mint from it.
+    if (!workId) {
+        throw new Error('This edit has no song to attach to.');
+    }
+    const cleanTitle = String(title || '').trim();
+    if (!cleanTitle) throw new Error('A song needs a title.');
 
-    // A metadata-only save must not blank out existing ChordPro, which now
-    // lives in data/songs/{id}.pro — fetch it before writing the row back
-    const existingContent = await getSongContent(currentWork).catch(() => null);
-
-    const entry = {
-        id: currentWork.id,
-        replaces_id: currentWork.id,
-        title,
-        artist: artist || null,
-        content: existingContent || null,
+    const id = metaRowId(workId);
+    const row = {
+        id,
+        replaces_id: workId,
+        title: cleanTitle,
+        artist: String(artist || '').trim() || null,
         key: key || null,
-        notes: notes || null,
-        status: 'placeholder',
-        tags: currentWork.tags || {},
-        created_by: user?.id || null,
+        notes: String(notes || '').trim() || null,
+        // NOT the work's ChordPro. The old save round-tripped the chart
+        // through this column so a metadata edit wouldn't blank it; on a
+        // tab-only work that read `''` and wrote a chart row for a work that
+        // has no chart. `null` says what is true: this row edits fields.
+        content: null,
+        part_type: 'metadata',
+        created_by: globalThis.window?.SupabaseAuth?.getUser?.()?.id || null,
     };
 
     const { error } = await supabase
         .from('pending_songs')
-        .upsert(entry, { onConflict: 'id' });
+        .upsert(row, { onConflict: 'id' });
+    if (error) {
+        throw new Error(error.message || 'Could not save these details.');
+    }
 
-    if (error) throw new Error(error.message);
+    // Live for this browser the moment the row lands: the overlay applies it
+    // (corpus.applyPendingMetadata) on the next corpus rebuild.
+    if (globalThis.window?.refreshPendingSongs) {
+        await globalThis.window.refreshPendingSongs();
+    }
 
-    // Refresh to merge into allSongs
-    if (window.refreshPendingSongs) {
-        await window.refreshPendingSongs();
+    try {
+        const result = await requestDurableWrite(id, token, fetchImpl);
+        return {
+            id, workId, live: true, synced: true,
+            mode: result?.mode || null, syncError: null,
+        };
+    } catch (e) {
+        // Any 4xx is the server saying the row itself is wrong and always
+        // will be — refused (403 no claim on this work), unaddressed (404 no
+        // such work), malformed (400). The one exception is 429: a rate limit
+        // is about WHEN, not what, so it stays live and the reconciler retries.
+        const refused = e?.status >= 400 && e?.status < 500 && e?.status !== 429;
+        if (refused) {
+            // Refused. Take the row back out so the overlay stops showing an
+            // edit that is never going to be real, then say what the server
+            // said — the client does not get to translate a 403 into a shrug.
+            try {
+                await supabase.from('pending_songs').delete().eq('id', id);
+                if (globalThis.window?.refreshPendingSongs) {
+                    await globalThis.window.refreshPendingSongs();
+                }
+            } catch (cleanup) {
+                console.warn('Could not withdraw the refused metadata row:', cleanup);
+            }
+            throw new Error(e.detail
+                || 'You can only edit the details of a song you have contributed to.');
+        }
+        console.warn('Details are live but not yet synced to the songbook:', e);
+        return {
+            id, workId, live: true, synced: false, mode: null, syncError: e.message,
+        };
     }
 }
 

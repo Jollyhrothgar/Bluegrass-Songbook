@@ -72,6 +72,13 @@
                         gap: 12px; align-items: center; max-width: 560px; }
         .editor-bar { display: flex; justify-content: space-between; align-items: center;
                       margin-bottom: 10px; gap: 12px; flex-wrap: wrap; }
+        .editor-bar-meta { display: flex; align-items: center; gap: 12px;
+                           flex-wrap: wrap; min-width: 0; }
+        .editor-bar-artist { display: flex; align-items: center; gap: 6px;
+                             font-size: 13px; color: var(--text-secondary); }
+        .editor-bar-artist input { padding: 4px 6px; font-size: 13px; width: 15ch;
+                                   background: var(--bg); color: var(--text);
+                                   border: 1px solid var(--border); border-radius: 4px; }
         #editor-host { min-height: 400px; }
         .import-zone { max-width: 560px; border: 2px dashed var(--border);
                        border-radius: 8px; padding: 22px 18px; margin-bottom: 18px;
@@ -182,7 +189,19 @@
 
         <div id="editor-wrap" class="hidden">
             <div class="editor-bar">
-                <strong id="editor-title"></strong>
+                <span class="editor-bar-meta">
+                    <strong id="editor-title"></strong>
+                    <!-- Artist rides in the EDITOR bar, not the create form,
+                         because the form is only one of two ways in: a .tef
+                         import opens the editor directly and never sees it.
+                         Hidden when this tab is headed for an existing work —
+                         that work already has an artist and this page is in no
+                         position to restate it. -->
+                    <label id="artist-field" class="editor-bar-artist">Artist
+                        <input id="f-artist" type="text" maxlength="200"
+                               placeholder="who plays it (optional)">
+                    </label>
+                </span>
                 <span>
                     <button id="btn-submit">🚀 Submit tab</button>
                     <button id="btn-download">⬇ Download OTF</button>
@@ -218,6 +237,9 @@
 
         function applyTarget() {
             if (!target?.workId) return;
+            // Attaching to an existing work: that work owns its artist, so the
+            // field goes away rather than offering an edit this page can't make.
+            $('artist-field').classList.add('hidden');
             const banner = $('target-banner');
             banner.textContent = '';
             banner.append('Adding a tab to ');
@@ -366,8 +388,14 @@
                 // Login gate at the action (Phase 2a): everything up to
                 // here — including Download — stays open to everyone.
                 // submitNewTab picks the corpus instrument name and passes
-                // the target work through as workId.
-                const result = await submitNewTab(doc, target);
+                // the target work through as workId. The artist is read HERE,
+                // at submit, not at openEditor: it is the only chance a
+                // tab-only work ever gets to be attributed — nothing minted
+                // this way is reachable by the metadata editor afterwards.
+                // submitNewTab itself drops it when there is a target work.
+                const result = await submitNewTab(doc, {
+                    ...target, artist: $('f-artist').value,
+                });
                 // No review gate any more: the tab is LIVE the moment
                 // submitNewTab resolves — its row is in the overlay and the
                 // work page renders it from there. The only thing left to

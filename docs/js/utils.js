@@ -142,6 +142,60 @@ export function isPlaceholder(song) {
 }
 
 /**
+ * Every uuid the index row records as having submitted something ON this work.
+ *
+ * The published fields, and where the build puts them
+ * (`scripts/lib/build_works_index.py`):
+ *
+ *   song.submitted_by            the PRIMARY lead sheet's submitter
+ *   arrangements[].submitted_by  each forked lead sheet's submitter
+ *   document_parts[].submitted_by  a document part's submitter
+ *   tablature_parts[].submitted_by a tab part's submitter — see the caveat
+ *   song.created_by              the pending overlay's own author (a row the
+ *                                browser is holding before any build ran)
+ *
+ * CAVEAT, and it is the interesting one: `build_works_index` does NOT publish
+ * `submitted_by` on `tablature_parts` today. The uuid IS in
+ * `works/<id>/work.yaml` (`parts[].provenance.submitted_by` — that is what
+ * `process_pending.owns_content` and the edge function's `tabPartOwners` both
+ * read), but the row shape drops it, keeping only `author` (a DISPLAY NAME:
+ * 'schlange', 'Mike Beaumier'), which is not comparable to `auth.uid()`. So a
+ * tab submitter loses this client-side signal the moment their work is
+ * published — until the index publishes the field, which is why it is read
+ * here rather than worked around. The server is authoritative either way: it
+ * reads work.yaml and answers 403.
+ */
+export function workSubmitters(song) {
+    const ids = new Set();
+    const add = (id) => { if (typeof id === 'string' && id) ids.add(id); };
+    add(song?.submitted_by);
+    add(song?.created_by);
+    for (const a of song?.arrangements || []) add(a.submitted_by);
+    for (const p of song?.tablature_parts || []) add(p.submitted_by);
+    for (const d of song?.document_parts || []) add(d.submitted_by);
+    return ids;
+}
+
+/** Does `userId` own at least one part of this work, as far as the row shows? */
+export function ownsPartOfWork(song, userId) {
+    return !!userId && workSubmitters(song).has(userId);
+}
+
+/**
+ * May this viewer edit the work's metadata (title / artist / key / notes)?
+ *
+ * Mike's rule: own a part of the work, or be trusted. This is the AFFORDANCE
+ * gate only — a hint, computed from what the index row happens to carry. The
+ * decision is the server's (`auto-commit-song` reads `work.yaml` and refuses
+ * with 403), so this errs toward showing the button and surfacing a refusal
+ * rather than silently hiding an edit the server would have allowed.
+ */
+export function canEditWorkMetadata(song, { userId = null, trusted = false } = {}) {
+    if (!song || !userId) return false;
+    return !!trusted || ownsPartOfWork(song, userId);
+}
+
+/**
  * Check if a work has multiple viewable parts (lead sheet + tab, etc.)
  * Used to decide whether to show the dashboard or go straight to content.
  */

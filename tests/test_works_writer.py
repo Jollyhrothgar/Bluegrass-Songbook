@@ -6,6 +6,7 @@ suite guards its refusals as much as its writes:
 - create-new: suffix vs fail on collision, never a silent overwrite
 - add-part: enrichment, and refusal when the part is already there
 - update-part: correction flows that own the content
+- update-metadata: the work's OWN fields, and structurally no part
 - fork-to-arrangement: incoming chart lands as a NEW version part, the
   original untouched
 - suppression / redirect guards
@@ -32,6 +33,7 @@ from works_writer import (
     dump_work_yaml,
     fork_to_arrangement,
     load_work,
+    update_metadata,
     update_part,
 )
 
@@ -470,6 +472,114 @@ class TestForkToArrangement:
         with pytest.raises(ValueError):
             fork_to_arrangement(tmp_path, 'my-song', CHORDPRO,
                                 {'source': 'manual'}, version_label='')
+
+
+# ============================================
+# Mode: update-metadata
+# ============================================
+
+
+PROV = {'source': 'user-submission', 'source_id': 'pending:meta:x:abc123',
+        'submitted_by': '11111111-1111-4111-8111-111111111111'}
+
+
+class TestUpdateMetadata:
+    """Work-level fields, and — structurally — nothing else.
+
+    This exists because `update_part(..., work_updates=...)` cannot serve the
+    case: it has to find a part to rewrite before it writes anything, and the
+    works this is for (a song minted by a tab, with a title and no artist)
+    have no part their editor wants to touch. Reaching the work-level fields
+    through a loose part match would rewrite whichever part the match picked.
+    """
+
+    def test_it_writes_the_work_fields_and_no_part(self, tmp_path):
+        create_work(tmp_path, 'my-song', 'My Song', lead_sheet())
+        before = read_work(tmp_path, 'my-song')['parts']
+        chart = (tmp_path / 'works/my-song/lead-sheet.pro').read_bytes()
+
+        result = update_metadata(
+            tmp_path, 'my-song',
+            updates={'artist': 'Bill Monroe', 'default_key': 'A'},
+            provenance=PROV, verbose=False)
+
+        assert result.written
+        assert result.mode == 'update-metadata'
+        assert result.part_file is None
+
+        work = read_work(tmp_path, 'my-song')
+        assert work['artist'] == 'Bill Monroe'
+        assert work['default_key'] == 'A'
+        assert work['parts'] == before
+        assert (tmp_path / 'works/my-song/lead-sheet.pro').read_bytes() == chart
+
+    def test_only_whitelisted_fields(self, tmp_path):
+        create_work(tmp_path, 'my-song', 'My Song', lead_sheet())
+
+        # `parts` is the one that matters — it is what makes "touches no part"
+        # a property of the function rather than of its callers.
+        for bad in ({'parts': []}, {'id': 'somebody-else'},
+                    {'tags': ['Bluegrass']}, {'artist': 'ok', 'status': 'x'}):
+            with pytest.raises(ValueError):
+                update_metadata(tmp_path, 'my-song', updates=bad,
+                                provenance=PROV, verbose=False)
+
+        assert len(read_work(tmp_path, 'my-song')['parts']) == 1
+        assert read_work(tmp_path, 'my-song')['id'] == 'my-song'
+
+    def test_empty_values_are_dropped_never_written(self, tmp_path):
+        create_work(tmp_path, 'my-song', 'My Song', lead_sheet(),
+                    artist='Bill Monroe')
+
+        update_metadata(tmp_path, 'my-song',
+                        updates={'artist': None, 'notes': '',
+                                 'composers': [], 'title': 'Renamed'},
+                        provenance=PROV, verbose=False)
+
+        work = read_work(tmp_path, 'my-song')
+        assert work['title'] == 'Renamed'
+        assert work['artist'] == 'Bill Monroe'
+        assert 'notes' not in work
+        assert 'composers' not in work
+
+    def test_nothing_to_apply_is_refused(self, tmp_path):
+        create_work(tmp_path, 'my-song', 'My Song', lead_sheet())
+        with pytest.raises(ValueError, match='no fields'):
+            update_metadata(tmp_path, 'my-song', updates={'artist': None},
+                            provenance=PROV, verbose=False)
+
+    def test_provenance_is_required_here_too(self, tmp_path):
+        create_work(tmp_path, 'my-song', 'My Song', lead_sheet())
+        with pytest.raises(ProvenanceRequiredError):
+            update_metadata(tmp_path, 'my-song', updates={'artist': 'X'},
+                            provenance={}, verbose=False)
+
+    def test_a_missing_work_is_refused(self, tmp_path):
+        with pytest.raises(WorkNotFoundError):
+            update_metadata(tmp_path, 'nobody-home', updates={'artist': 'X'},
+                            provenance=PROV, verbose=False)
+
+    def test_a_suppressed_work_is_skipped(self, tmp_path):
+        create_work(tmp_path, 'my-song', 'My Song', lead_sheet())
+        write_registry(tmp_path, suppressed={'my-song': {'reason': 'gone'}})
+
+        result = update_metadata(tmp_path, 'my-song',
+                                 updates={'artist': 'X'}, provenance=PROV,
+                                 guards=Guards.load(tmp_path), verbose=False)
+
+        assert not result.written
+        assert 'artist' not in read_work(tmp_path, 'my-song')
+
+    def test_metadata_provenance_sits_above_parts_in_the_file(self, tmp_path):
+        # Canonical key order: the work's own fields, then its parts. A reader
+        # opening work.yaml should not have to scroll past a tab to find out
+        # who last renamed the song.
+        create_work(tmp_path, 'my-song', 'My Song', lead_sheet())
+        update_metadata(tmp_path, 'my-song', updates={'artist': 'X'},
+                        provenance=PROV, verbose=False)
+
+        text = (tmp_path / 'works/my-song/work.yaml').read_text()
+        assert text.index('metadata_provenance:') < text.index('parts:')
 
 
 def test_apply_version_metadata_is_idempotent():

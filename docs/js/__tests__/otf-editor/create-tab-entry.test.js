@@ -170,6 +170,32 @@ describe('submitNewTab', () => {
         expect(payload.title).toBe('Gold Rush');    // from the document
     });
 
+    // A tab-only work is minted from this row and nothing else, and the
+    // minted work is not a `status: placeholder` one — so the work-page
+    // metadata editor never renders for it. Submit is the ONLY moment an
+    // artist can be attached; dropping it here is how
+    // works/welcome-to-new-york ended up with a title and nothing else.
+    it('carries the artist on a mint, so the new work is attributed', async () => {
+        const submit = vi.fn(async () => ({}));
+        await submitNewTab(otf(), { artist: '  Bill Emerson  ' },
+            { requireLogin: loggedIn, submit });
+        expect(submit.mock.calls[0][0].artist).toBe('Bill Emerson');
+    });
+
+    it('drops the artist when the tab joins an existing work', async () => {
+        // That work already has an artist; a tab contributor doesn't restate it.
+        const submit = vi.fn(async () => ({}));
+        await submitNewTab(otf(), { workId: 'gold-rush', artist: 'Bill Emerson' },
+            { requireLogin: loggedIn, submit });
+        expect('artist' in submit.mock.calls[0][0]).toBe(false);
+    });
+
+    it('sends no artist key at all when the field was left blank', async () => {
+        const submit = vi.fn(async () => ({}));
+        await submitNewTab(otf(), { artist: '   ' }, { requireLogin: loggedIn, submit });
+        expect('artist' in submit.mock.calls[0][0]).toBe(false);
+    });
+
     it('refuses to submit without a session', async () => {
         const submit = vi.fn();
         loggedOut.mockClear();

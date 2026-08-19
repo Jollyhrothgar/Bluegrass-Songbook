@@ -403,12 +403,23 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 | Workflow | Trigger | Action |
 |----------|---------|--------|
-| `build.yml` | Push to main, PRs | Runs tests, rebuilds search index, deploys to GitHub Pages only if tests pass |
+| `build.yml` | Push to main, PRs, **`workflow_run` after any content workflow named in its trigger list**, manual dispatch | Runs tests, rebuilds search index, deploys to GitHub Pages only if tests pass |
 | `process-pending.yml` | `pending-commit` repository_dispatch from `auto-commit-song` / `reconcile-pending` | Writes one `pending_songs` row into `works/` via `works_writer` (create / update / fork-to-arrangement), pushes, then marks the row committed |
 | `process-tune-request.yml` | Issue labeled `tune-request` | Processes tune requests |
-| `cleanup-pending.yml` | Scheduled | Cleans up stale pending songs |
+| `cleanup-pending.yml` | `workflow_run` after a successful `CI & Deploy` | Cleans up stale pending songs (so it only runs when a deploy actually happened) |
 | `reconcile-pending.yml` | Hourly (`42 * * * *`) + manual | Retries `pending_songs` rows that never reached `works/`, prints the drift count, and opens/updates one alert issue if any stay stuck |
 | `sync-community-input.yml` | Hourly (`27 * * * *`) + manual | Syncs trusted-user tag downvotes to `docs/data/tag_overrides.json` (auto-applied at next index build) and exports `genre_suggestions` to `docs/data/user_genre_suggestions.json` (review-only, not auto-applied) |
+| `sync-deleted-songs.yml` | Hourly (`17 * * * *`) + manual | Syncs Supabase `deleted_songs` + `promoted_songs` into `docs/data/*.json` so UI deletes and Dungeon promotions survive the next index build |
+
+> ⚠️ **A workflow that pushes to `main` does not trigger a deploy by itself.**
+> GitHub does not start workflows for pushes made with the default
+> `GITHUB_TOKEN`, so bot commits land in git and nothing rebuilds. `build.yml`
+> closes the gap with a `workflow_run` trigger that lists content workflows **by
+> their `name:` field** — a rename or a new pushing workflow silently unhooks
+> deployment with no error anywhere. If you add or rename a workflow that
+> commits to `main`, update `.github/workflows/build.yml`;
+> `tests/test_workflow_deploy_triggers.py` fails CI if you forget. Details:
+> "How a bot commit reaches the site" in `scripts/lib/CLAUDE.md`.
 
 ## Chrome DevTools MCP
 

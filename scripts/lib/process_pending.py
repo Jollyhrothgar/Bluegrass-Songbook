@@ -29,6 +29,11 @@ Modes (chosen server-side, never by the client):
     or a "correction" from somebody who does not own the tab they meant to
     fix. ``add_part`` appends; nothing published is read-modify-written.
     This is the tab column's ``fork``.
+``metadata``
+    Metadata only: the WORK's own title / artist / key / notes and nothing
+    else. No part is created, replaced, renamed or reordered and no part
+    file is written — ``works_writer.update_metadata`` is the entry point,
+    and it can only write work-level fields. See "Metadata" below.
 
 Tablature (2026-08-18)
 ----------------------
@@ -68,6 +73,36 @@ Three things a tab does differently, all for reasons that don't generalize:
   ``provenance.x_submission_notes`` / ``x_correction_notes`` — not in the
   work-level ``notes`` the chart path writes, which describes the song
   rather than one take of it.
+
+Metadata (2026-08-18)
+---------------------
+A work minted by a TAB was stranded: it had a title the submitter typed and
+nothing else — no artist, no key — and no way to fix that, because every row
+shape this pipeline understood edited a PART, and the work-level fields only
+ever rode along with a rewrite of the primary chart. A tab-only work has no
+chart to rewrite.
+
+So ``part_type = 'metadata'``: a row with NO content that names its target in
+``replaces_id`` and carries whichever of title / artist / key / notes the
+editor changed. It writes work.yaml through
+:func:`works_writer.update_metadata` and touches nothing else.
+
+Three things it does differently, each for its own reason:
+
+* **The dedup backstop is skipped**, like a tab's but for a different reason:
+  a tab has no lyrics to score, a metadata row has no *content at all*. There
+  is also nothing to dedupe — the row names an existing work, so no slug is
+  being minted, which is the only thing the backstop guards.
+* **Absent fields are dropped, not written.** The client sends what changed;
+  a null artist means "I didn't touch the artist", never "blank it".
+* **The idempotence marker is derived from the FIELDS**, not from ``content``
+  (which is null here) — see :func:`metadata_marker`.
+
+Who is allowed to send one is decided before the dispatch, in
+``supabase/functions/_shared/pending-dispatch.ts``: own any part of the work,
+or be trusted. That is a looser question than the per-part-type ownership the
+chart and tab columns ask, on purpose — no content is rewritten by naming the
+artist — and the two must not be collapsed into each other.
 
 Dedup backstop (phase 3b)
 -------------------------
@@ -113,6 +148,12 @@ work already has a part with that marker, the row has already been applied
 and this is a no-op. Re-editing the same row changes the sha, so a genuine
 second edit is never mistaken for a replay.
 
+A metadata row has no content to hash, so its marker hashes the FIELDS it is
+applying instead (:func:`metadata_marker`) and is stamped at the work level as
+``metadata_provenance.source_id``. Same property, same shape: replay the same
+edit and the marker matches (no-op); change one letter of the artist and it
+does not (applies).
+
 A redirect complicates this: the row landed on a work the dispatch never
 named, so looking for the marker under the dispatched id finds nothing. The
 backstop therefore checks the marker against its match candidates too — see
@@ -147,6 +188,23 @@ MODES = ('create', 'update', 'fork')
 #: mode from the wrong column ('fork' for a tab, 'add' for a chart) is a
 #: loud refusal rather than a surprising write.
 TAB_MODES = ('create', 'update', 'add')
+
+#: Modes a METADATA row may be dispatched in — one, because there is only
+#: one thing it can do. Kept as a tuple for symmetry with the two above, and
+#: so a mode from another column ('create' for a metadata row, which would
+#: mean minting a work out of a title with no content) is a loud refusal.
+METADATA_MODES = ('metadata',)
+
+#: ``pending_songs`` column -> ``work.yaml`` field, for a metadata row. Only
+#: these four: the row shape carries nothing else a work-level field wants,
+#: and ``works_writer.update_metadata`` refuses anything outside its own
+#: whitelist anyway.
+METADATA_COLUMNS = (
+    ('title', 'title'),
+    ('artist', 'artist'),
+    ('key', 'default_key'),
+    ('notes', 'notes'),
+)
 
 #: Instrument names and work ids both land inside works/ as path segments,
 #: so both are held to the slug shape the edge function, work_schema.slugify
@@ -522,6 +580,137 @@ def _provenance(row: dict, marker: str, actor: Optional[str]) -> dict:
 
 
 # ============================================
+# Metadata
+# ============================================
+
+
+def metadata_updates(row: dict) -> dict:
+    """The work-level fields this row is actually asking to change.
+
+    Only what the row CARRIES. A null or blank column is "I didn't touch
+    this", never "blank it" — the editor sends the fields it changed, and
+    there is no gesture in this pipeline for clearing one. Writing a missing
+    artist as an empty artist would let a client that forgot a field erase
+    work somebody else did, which is the same destruction the part-targeting
+    rules prevent one level down.
+    """
+    updates = {}
+    for column, field in METADATA_COLUMNS:
+        value = row.get(column)
+        if value is None:
+            continue
+        value = str(value).strip()
+        if value:
+            updates[field] = value
+    return updates
+
+
+def metadata_marker(row_id: str, updates: dict) -> str:
+    """The idempotence marker for a metadata row.
+
+    The part markers hash ``content``; a metadata row has none (a CHECK on
+    ``pending_songs`` refuses one), so hashing it would give every metadata
+    row in the table the SAME marker — the first edit of a work would then
+    make every later edit of it look like a replay and silently do nothing.
+
+    So the sha is taken over the fields being applied, serialized
+    canonically: sorted keys, so column order can never change the answer,
+    and the exact dict :func:`metadata_updates` produced, so a field the row
+    is not applying cannot influence it. The result goes through
+    :func:`content_marker` to keep the one ``pending:<row id>:<sha>`` shape
+    everything in this pipeline greps for.
+
+    The property that matters, in both directions:
+
+    * replay the same row unchanged -> same fields -> same sha -> the work
+      already carries this marker -> no-op.
+    * genuinely re-edit the row (fix a typo in the artist) -> different sha
+      -> applies.
+
+    Note this is last-writer-wins across DIFFERENT rows, exactly as the part
+    path is: a metadata row that never reached git keeps its uncommitted flag
+    and will be re-dispatched with its CURRENT values, so a stale edit cannot
+    resurrect old text — but two people editing one work land in the order
+    their dispatches complete.
+    """
+    canonical = json.dumps(updates, sort_keys=True, ensure_ascii=False,
+                           separators=(',', ':'))
+    return content_marker(row_id, canonical)
+
+
+def metadata_applied(repo_root, work_id: str, marker: str) -> bool:
+    """Has this exact metadata edit already landed on this work?
+
+    The part-level :func:`already_applied` cannot answer it: a metadata edit
+    writes no part, so there is no ``provenance.source_id`` for it to find.
+    The marker lives at the work level instead.
+    """
+    work = works_writer.load_work(repo_root, work_id)
+    if not work:
+        return False
+    return (work.get('metadata_provenance') or {}).get('source_id') == marker
+
+
+def apply_metadata_row(repo_root, row: dict, mode: str, work_id: str,
+                       actor: Optional[str] = None,
+                       verbose: bool = True) -> works_writer.WriteResult:
+    """Write one metadata row to ``works/``: work-level fields, nothing else.
+
+    No part is created, replaced, renamed or reordered, and no part file is
+    written — :func:`works_writer.update_metadata` is structurally incapable
+    of any of that (it accepts a whitelist of work-level keys, and ``parts``
+    is not on it).
+
+    The dedup backstop is NOT consulted, and the omission is deliberate. It
+    exists to stop a ``create`` minting a slug for a song that is already in
+    the corpus; a metadata row mints nothing — it names an existing work in
+    ``replaces_id``, which the edge function has already resolved and checked
+    — so there is no slug for it to guard. It also scores lyric containment
+    over a submission's ChordPro, and this row has no content at all.
+    """
+    if mode not in METADATA_MODES:
+        raise ProcessPendingError(
+            f"unknown metadata mode {mode!r} "
+            f"(expected one of {', '.join(METADATA_MODES)})")
+
+    row_id = row.get('id')
+    if not row_id:
+        raise ProcessPendingError('row has no id')
+
+    # A metadata row's id is `meta:<slug>:<rand>` so two people fixing one
+    # song's details cannot collide on the pending_songs primary key. Like a
+    # tab's, it is NOT a work slug and must never become a directory name —
+    # and unlike a tab's there is no title-minting fallback, because a
+    # metadata edit has nothing to create a work out of.
+    work_id = (work_id or '').strip()
+    if not SLUG_RE.match(work_id):
+        raise ProcessPendingError(
+            f"metadata row '{row_id}' has no usable target work id "
+            f"({work_id!r} is not a slug); it must be dispatched with the "
+            f"work named in replaces_id")
+
+    updates = metadata_updates(row)
+    if not updates:
+        raise ProcessPendingError(
+            f"metadata row '{row_id}' carries no fields to apply")
+
+    marker = metadata_marker(row_id, updates)
+    if metadata_applied(repo_root, work_id, marker):
+        if verbose:
+            print(f"Already applied: works/{work_id} carries {marker}")
+        return works_writer.WriteResult(
+            mode='update-metadata', work_id=work_id,
+            skipped_reason='already-applied')
+
+    return works_writer.update_metadata(
+        repo_root, work_id,
+        updates=updates,
+        provenance=_provenance(row, marker, actor),
+        verbose=verbose,
+    )
+
+
+# ============================================
 # Tablature
 # ============================================
 
@@ -873,14 +1062,20 @@ def apply_row(repo_root, row: dict, mode: str, work_id: str,
     check). See "Dedup backstop" in the module docstring.
 
     A tablature row (``part_type = 'tablature'``) goes to
-    :func:`apply_tablature_row` instead, before anything here reads
-    ``content`` as ChordPro — including the dedup backstop, which is skipped
-    for tabs on purpose (an OTF has no lyrics for a lyric-containment
-    scorer to contain).
+    :func:`apply_tablature_row` instead, and a metadata row
+    (``part_type = 'metadata'``) to :func:`apply_metadata_row` — both before
+    anything here reads ``content`` as ChordPro, and both before the dedup
+    backstop, which is skipped for each of them on purpose (an OTF has no
+    lyrics for a lyric-containment scorer to contain; a metadata row has no
+    content and mints no slug).
     """
-    if (row.get('part_type') or 'lead-sheet') == 'tablature':
+    part_type = row.get('part_type') or 'lead-sheet'
+    if part_type == 'tablature':
         return apply_tablature_row(repo_root, row, mode, work_id, actor,
                                    verbose=verbose)
+    if part_type == 'metadata':
+        return apply_metadata_row(repo_root, row, mode, work_id, actor,
+                                  verbose=verbose)
 
     if mode not in MODES:
         raise ProcessPendingError(

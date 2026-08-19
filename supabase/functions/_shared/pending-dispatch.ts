@@ -34,8 +34,35 @@ export const DISPATCH_EVENT = 'pending-commit'
  * a shape the corpus has carried for years (foggy-mountain-breakdown has
  * eight banjo takes) and which PR #240 already made the tab flow's answer
  * to a same-instrument collision. Same rule, different noun.
+ *
+ * ``metadata`` is the odd one: it writes the WORK — title / artist / key /
+ * notes — and no part at all. It has no additive fallback because there is
+ * nothing to fall back into (an arrangement of a title is not a thing), so
+ * it is the one mode that can be REFUSED outright; see
+ * {@link MetadataRefusedError}.
  */
-export type ChangeMode = 'create' | 'update' | 'fork' | 'add'
+export type ChangeMode = 'create' | 'update' | 'fork' | 'add' | 'metadata'
+
+/**
+ * A metadata row that cannot be classified into a write.
+ *
+ * Every other column ends in something safe: a chart edit the caller does
+ * not own forks, a tab correction they do not own lands beside the original.
+ * A metadata edit has no such landing spot — "your alternate opinion of the
+ * artist" is not a part — so a caller with no claim on the work has to be
+ * told no. `status` is what the edge function returns; the message is
+ * written to be shown to a person.
+ */
+export class MetadataRefusedError extends Error {
+  readonly status: number
+  readonly workId: string
+  constructor(message: string, workId: string, status = 403) {
+    super(message)
+    this.name = 'MetadataRefusedError'
+    this.status = status
+    this.workId = workId
+  }
+}
 
 export interface Classification {
   mode: ChangeMode
@@ -153,6 +180,44 @@ export function submittersOf(workYaml: string, partType: string): string[] {
 }
 
 /**
+ * Everyone with a claim on ANY part of this work, of any kind.
+ *
+ * READ THIS BEFORE "FIXING" IT INTO {@link submittersOf}. The two functions
+ * ask deliberately different questions, and the difference is not sloppiness:
+ *
+ * - `submittersOf(yaml, type)` answers *may this caller rewrite CONTENT of
+ *   this kind in place?* That has to be scoped per part type, because owning
+ *   a banjo tab must not buy an in-place overwrite of a stranger's lyrics —
+ *   an escalation that was found, fixed, and is pinned by tests.
+ * - This one answers *does this caller have a stake in this work at all?*,
+ *   and its only consumer is the `metadata` column, which rewrites NOBODY'S
+ *   content — only the work's own title / artist / key / notes. The owner's
+ *   explicit rule (2026-08-18) is that contributing any part earns that.
+ *
+ * So the scoping that is load-bearing over there would be wrong here, and
+ * the looseness that is fine here would be an escalation over there. Keep
+ * them apart.
+ *
+ * `author` counts only on tablature parts, matching {@link tabPartOwners}:
+ * it is the display name the retired PR flow and every Hangout import
+ * record, so it identifies a person on exactly the parts that carry it.
+ */
+export function anyPartOwners(workYaml: string): string[] {
+  const out: string[] = []
+  for (const block of partBlocks(workYaml)) {
+    const type = blockValue(block, 'type')
+    if (!type) continue
+    const submitter = blockValue(block, 'submitted_by')
+    if (submitter) out.push(submitter)
+    if (type === 'tablature') {
+      const author = blockValue(block, 'author')
+      if (author) out.push(author)
+    }
+  }
+  return out
+}
+
+/**
  * Who owns the tablature part stored as `file`, or null if no part names it.
  *
  * One part, not the work: a work holding somebody else's banjo take and your
@@ -216,7 +281,10 @@ export interface ClassifyInput {
    * title. (The authoritative answer is still works_writer's — see below.)
    */
   title?: string | null
-  /** pending_songs.part_type — 'lead-sheet' (default) or 'tablature'. */
+  /**
+   * pending_songs.part_type — 'lead-sheet' (default), 'tablature', or
+   * 'metadata'.
+   */
   partType?: string | null
   /**
    * pending_songs.part_file — for a tab CORRECTION, the works/ filename it
@@ -251,6 +319,22 @@ export interface ClassifyInput {
  * A tab with no `part_file` is a submission, not a correction, so it skips
  * the ownership question entirely — there is no file to own yet.
  *
+ * Metadata (the work's own title / artist / key / notes, no part touched):
+ *
+ *   caller is trusted                        -> metadata (full edit rights)
+ *   caller owns ANY part of the work         -> metadata
+ *   otherwise                                -> REFUSED (403)
+ *
+ * The other two columns never refuse, because both have somewhere additive
+ * to land a stranger's edit. This one does not, and inventing one would be
+ * worse than saying no: a second opinion about the artist is not an
+ * arrangement, and silently forking one would put a duplicate work in the
+ * corpus every time somebody fixed a typo they weren't entitled to fix.
+ *
+ * Note the ownership question is {@link anyPartOwners}, NOT
+ * {@link submittersOf} — see the comment on `anyPartOwners` for why the two
+ * must not be collapsed into each other.
+ *
  * WHICH work a tab targets is not the row id. A chart row is keyed by its
  * work slug; a tab row is keyed by a synthetic `tab:<slug>:<rand>` so two
  * people can tab the same song without colliding on the primary key. So a
@@ -266,6 +350,19 @@ export interface ClassifyInput {
  */
 export async function classifyChange(input: ClassifyInput): Promise<Classification> {
   const isTab = input.partType === 'tablature'
+  const isMetadata = input.partType === 'metadata'
+
+  // A metadata row's id is `meta:<slug>:<rand>`, so — exactly as for a tab —
+  // it is never a work slug and must not become the fallback target. Unlike
+  // a tab it has no title-minting path either: there is no content to seed a
+  // work from, so a metadata row that names no target is simply malformed.
+  // The CHECK on pending_songs already refuses it; this is the answer for a
+  // hand-fired dispatch or a stale client.
+  if (isMetadata && !(input.replacesId || '').trim()) {
+    throw new MetadataRefusedError(
+      'A metadata edit has to say which work it edits.', '', 400)
+  }
+
   const fallbackId = isTab ? slugify(input.title || '') : input.rowId
   const workId = input.replacesId || fallbackId
   if (!workId) {
@@ -274,7 +371,31 @@ export async function classifyChange(input: ClassifyInput): Promise<Classificati
   const yaml = await getFileContent(`works/${workId}/work.yaml`, input.githubToken)
 
   if (yaml === null) {
+    if (isMetadata) {
+      // Not a create. There is nothing to create FROM, and minting an empty
+      // work out of a typo'd slug is the failure this refusal exists to
+      // avoid.
+      throw new MetadataRefusedError(
+        `There is no work at '${workId}' to edit.`, workId, 404)
+    }
     return { mode: 'create', workId: fallbackId, reason: 'no existing work at this id' }
+  }
+
+  if (isMetadata) {
+    if (input.trusted) {
+      return { mode: 'metadata', workId, reason: 'trusted user metadata edit' }
+    }
+    if (anyPartOwners(yaml).includes(input.userId)) {
+      return {
+        mode: 'metadata', workId,
+        reason: 'caller contributed a part of this work',
+      }
+    }
+    throw new MetadataRefusedError(
+      "You can edit a song's details once you've contributed one of its " +
+        'parts — a chart or a tab.',
+      workId,
+    )
   }
 
   if (isTab) {
