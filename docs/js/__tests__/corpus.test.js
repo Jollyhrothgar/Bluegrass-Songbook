@@ -4,7 +4,8 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 import {
     parseJsonl, fetchJsonl, markArchived, mergeCorpus, countDistinctTitles,
     ensureStems, whenIdle, transformPendingRow, isPendingTablature,
-    overlayPendingTabParts, applyPendingTabs,
+    isPendingMetadata, overlayPendingTabParts, applyPendingTabs,
+    applyPendingMetadata,
 } from '../corpus.js';
 
 const CANON = [
@@ -450,5 +451,174 @@ describe('applyPendingTabs — a tab that mints a new work', () => {
 
     it('drops a titleless row rather than minting an empty slug', () => {
         expect(applyPendingTabs([], [tabRow({ title: '' })])).toHaveLength(0);
+    });
+});
+
+// ---------------------------------------------------------------------
+// The third kind of pending row: a METADATA edit
+// ---------------------------------------------------------------------
+//
+// It owns no bytes at all — `content` is null and `replaces_id` names the work
+// whose title / artist / key / notes are being changed. Two things it must
+// never do: become a row of its own (there is no song behind it), or cost the
+// work its parts (renaming a work must not lose its tabs).
+
+/** A raw pending_songs row for a metadata edit, run through the transform. */
+const metaRow = (over = {}) => transformPendingRow({
+    id: 'meta:welcome-to-new-york:bciu053d',
+    replaces_id: 'welcome-to-new-york',
+    title: 'Welcome to New York',
+    artist: 'Bill Emerson',
+    key: 'G',
+    notes: null,
+    content: null,
+    part_type: 'metadata',
+    created_by: 'u1',
+    ...over,
+});
+
+const TAB_ONLY_CANON = [{
+    id: 'welcome-to-new-york',
+    title: 'Welcome to New York',
+    artist: '',
+    tablature_parts: [
+        { instrument: 'banjo', src_file: 'banjo.otf.json',
+          file: 'data/tabs/welcome-to-new-york-banjo-1.otf.json' },
+    ],
+}];
+
+describe('transformPendingRow — metadata rows', () => {
+    it('becomes a metadata edit, never a song row', () => {
+        const row = metaRow();
+        expect(isPendingMetadata(row)).toBe(true);
+        expect(isPendingTablature(row)).toBe(false);
+        // None of the song-row machinery may attach to it: no source flag, no
+        // lyrics, no content — the merge must not read it as a work.
+        expect(row.source).toBeUndefined();
+        expect(row.lyrics).toBeUndefined();
+        expect(row.content).toBeUndefined();
+        expect(row.pending_metadata).toEqual({
+            title: 'Welcome to New York', artist: 'Bill Emerson', key: 'G',
+        });
+    });
+
+    it('carries only the fields the edit actually set', () => {
+        // An absent field means "unchanged", which is what lets an edit leave
+        // the key alone instead of blanking it.
+        const row = metaRow({ key: null, artist: undefined });
+        expect(row.pending_metadata).toEqual({ title: 'Welcome to New York' });
+    });
+});
+
+describe('applyPendingMetadata', () => {
+    it('is a no-op — same array — when there are no metadata rows', () => {
+        const songs = TAB_ONLY_CANON;
+        expect(applyPendingMetadata(songs, [])).toBe(songs);
+        expect(applyPendingMetadata(songs, null)).toBe(songs);
+        // …and when every row is unaddressed, so the zero-cost path holds for
+        // a corpus rebuild that has nothing to apply.
+        expect(applyPendingMetadata(songs, [metaRow({ replaces_id: null })])).toBe(songs);
+    });
+
+    it('overlays the edited fields onto the work it names', () => {
+        const [song] = applyPendingMetadata(TAB_ONLY_CANON, [metaRow()]);
+        expect(song.artist).toBe('Bill Emerson');
+        expect(song.key).toBe('G');
+        expect(song.pending_metadata).toEqual({
+            id: 'meta:welcome-to-new-york:bciu053d', created_by: 'u1',
+        });
+    });
+
+    it('keeps the work\'s parts — a rename must not cost it its tabs', () => {
+        const [song] = applyPendingMetadata(
+            TAB_ONLY_CANON, [metaRow({ title: 'Welcome To New York City' })]);
+        expect(song.title).toBe('Welcome To New York City');
+        expect(song.tablature_parts).toHaveLength(1);
+        expect(song.tablature_parts[0].file)
+            .toBe('data/tabs/welcome-to-new-york-banjo-1.otf.json');
+        expect(song.id).toBe('welcome-to-new-york');   // the URL is permanent
+    });
+
+    it('drops an edit whose target is not in the corpus — it mints nothing', () => {
+        // Unlike a tab, which legitimately mints the work it is the first part
+        // of. A synthesized row here would be a title with nothing behind it,
+        // competing in search with the real work the moment the archive loads.
+        const out = applyPendingMetadata(TAB_ONLY_CANON, [
+            metaRow({ replaces_id: 'a-work-nobody-loaded' }),
+        ]);
+        expect(out).toHaveLength(1);
+        expect(out[0].id).toBe('welcome-to-new-york');
+        expect(out[0].artist).toBe('');
+    });
+
+    it('lets the newest edit of one work win, whatever order the rows arrive', () => {
+        // `select('*')` promises no order, and two people may hold an unlanded
+        // edit of the same work at once — that is why the ids are namespaced.
+        const older = metaRow({
+            id: 'meta:welcome-to-new-york:aaaaaa', artist: 'Somebody Else',
+            created_at: '2026-08-18T10:00:00Z',
+        });
+        const newer = metaRow({
+            id: 'meta:welcome-to-new-york:bbbbbb', artist: 'Bill Emerson',
+            created_at: '2026-08-18T11:00:00Z',
+        });
+        for (const rows of [[older, newer], [newer, older]]) {
+            expect(applyPendingMetadata(TAB_ONLY_CANON, rows)[0].artist)
+                .toBe('Bill Emerson');
+        }
+    });
+
+    it('drops the stale stem set so search follows the new title', () => {
+        const stemmed = ensureStems([{ ...TAB_ONLY_CANON[0] }]);
+        expect(stemmed[0]._stems).toBeDefined();
+        const [song] = applyPendingMetadata(stemmed, [metaRow({ title: 'Gold Rush' })]);
+        expect(song._stems).toBeUndefined();
+    });
+});
+
+describe('mergeCorpus with metadata rows', () => {
+    it('applies the edit without adding a row or flagging the work pending', () => {
+        const { songs } = mergeCorpus({ canon: TAB_ONLY_CANON, pending: [metaRow()] });
+        expect(songs).toHaveLength(1);
+        expect(songs[0].artist).toBe('Bill Emerson');
+        // Same rule a pending tab part follows: the WORK is as durable as it
+        // was a second ago, so flagging it `source: 'pending'` would report
+        // every other contribution to it as gone from the songbook.
+        expect(songs[0].source).toBeUndefined();
+        expect(songs[0].tablature_parts).toHaveLength(1);
+    });
+
+    it('re-stems the merged row, so the new artist is searchable', () => {
+        const { songs } = mergeCorpus({ canon: TAB_ONLY_CANON, pending: [metaRow()] });
+        expect(songs[0]._stems).toBeDefined();
+        expect([...songs[0]._stems].some(s => s.startsWith('emerson'))).toBe(true);
+    });
+
+    it('does not let a metadata row hide the work the way a song row would', () => {
+        // Both kinds name a work in `replaces_id`, and for a SONG row that
+        // means "hide that row, show this one". Read that way, a metadata row
+        // would delete the work and leave a contentless stub in its place.
+        const { songs } = mergeCorpus({ canon: TAB_ONLY_CANON, pending: [metaRow()] });
+        expect(songs.map(s => s.id)).toEqual(['welcome-to-new-york']);
+        expect(songs[0].id).not.toContain('meta:');
+    });
+
+    it('lands on top of a pending tab for the same work', () => {
+        // Submitting a tab and then naming its artist is the whole motivating
+        // case, and both rows are in flight at once.
+        const tab = transformPendingRow({
+            id: 'tab:welcome-to-new-york:bciu053d',
+            replaces_id: null, title: 'Welcome to New York',
+            part_type: 'tablature', instrument: 'banjo',
+            content: '{"tracks":[{"id":"banjo"}]}', created_by: 'u1',
+        });
+        const { songs } = mergeCorpus({ canon: [], pending: [tab, metaRow()] });
+        expect(songs).toHaveLength(1);
+        expect(songs[0].id).toBe('welcome-to-new-york');
+        expect(songs[0].artist).toBe('Bill Emerson');
+        expect(songs[0].tablature_parts).toHaveLength(1);
+        // …and the submitter owns that part, which is what makes the edit
+        // affordance visible in the seconds before any build has run.
+        expect(songs[0].tablature_parts[0].submitted_by).toBe('u1');
     });
 });

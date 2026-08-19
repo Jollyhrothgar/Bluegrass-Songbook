@@ -712,6 +712,17 @@ def build_song_from_work(work_dir: Path) -> dict:
                 # `{instrument}.otf.json` — a different part.
                 'src_file': part.get('file'),
             }
+            # The contributor's uuid, when this take came from a person
+            # rather than a scrape. `author` above is a DISPLAY NAME
+            # ("schlange"), which can never be compared to an auth.uid() —
+            # so without this the frontend cannot tell that the signed-in
+            # user submitted this tab, and the "edit this work's details"
+            # affordance disappeared the moment their tab was published.
+            # Consistent with the row-level, arrangement and document parts,
+            # which already publish it; the uuid is in works/*/work.yaml
+            # either way. Omitted when absent, so imported tabs are unchanged.
+            if prov.get('submitted_by'):
+                tab_info['submitted_by'] = prov['submitted_by']
             # Arrangement-picker detail, when the listing had it
             if prov.get('difficulty'):
                 tab_info['difficulty'] = prov['difficulty']

@@ -5399,6 +5399,22 @@ mark {
     vertical-align: middle;
 }
 
+/* "Just edited" badge — a metadata edit that is live in the overlay and
+   still syncing to works/. Cool where the placeholder badge is warm: this
+   one reports your own successful write, not something the song is missing. */
+.pending-meta-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--text-secondary);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
 /* Placeholder badge — search results and song view */
 .placeholder-badge {
     display: inline-block;
@@ -5474,9 +5490,14 @@ mark {
     border-radius: 8px;
 }
 .placeholder-editor-header h3 {
-    margin: 0 0 1rem;
+    margin: 0 0 0.35rem;
     font-size: 1rem;
     color: var(--text);
+}
+.placeholder-editor-sub {
+    margin: 0 0 1rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
 }
 .placeholder-editor-form {
     display: flex;
@@ -10096,6 +10117,14 @@ body.has-bottomband .container {
     color: var(--text-secondary);
     font-size: var(--font-sm);
     margin-top: 2px;
+}
+
+/* The nudge in the artist's place on a work that has none. Shown only to
+   someone who can fix it (work-view.js updateWorkTopBar), so it reads as an
+   invitation rather than a complaint. */
+.song-artist-missing {
+    font-style: italic;
+    opacity: 0.7;
 }
 
 .song-pill-row {

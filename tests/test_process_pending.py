@@ -1291,3 +1291,331 @@ class TestTabNotes:
 
         prov = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']
         assert 'x_submission_notes' not in prov
+
+
+# ============================================
+# Metadata
+# ============================================
+#
+# The third column (2026-08-18). A work minted by a TAB had a title and
+# nothing else — no artist, no key — and no path to a fix, because every row
+# shape this pipeline understood edited a PART and the work-level fields only
+# ever rode along with a rewrite of the primary chart. A tab-only work has no
+# chart to rewrite.
+#
+# What is worth guarding here, and what a regression would cost:
+#
+#   - the write is work-level ONLY. A metadata row that moved, renamed or
+#     rewrote a part would be destroying content its sender was never
+#     authorized to touch (the ownership question that let them in is
+#     deliberately looser than the one a content edit has to pass).
+#   - a field the row does not carry must not be blanked. The editor sends
+#     what changed; treating "absent" as "clear it" turns a one-field fix
+#     into an erasure of somebody else's work.
+#   - a replay is a no-op and a genuine re-edit applies, off a marker that
+#     cannot hash `content` because there isn't any.
+
+
+def meta_row(**kw):
+    # A metadata row's id is `meta:<slug>:<rand>` — its own namespace, for
+    # the same reason tab rows got one: two people fixing one song's details
+    # must not collide on the pending_songs primary key.
+    base = {
+        'id': 'meta:salt-creek:ab12cd',
+        'replaces_id': 'salt-creek',
+        'part_type': 'metadata',
+        'content': None,
+        'title': 'Salt Creek',
+        'artist': 'Bill Monroe',
+        'key': 'A',
+        'notes': None,
+        'created_by': SUBMITTER,
+        'created_at': '2026-08-18T12:00:00+00:00',
+    }
+    base.update(kw)
+    return base
+
+
+def parts_snapshot(tmp_path, work_id):
+    """The work's parts plus the bytes of every file in its directory.
+
+    Compared before and after a metadata write: "no part is created,
+    replaced, renamed or reordered, and no part file is written" is one
+    assertion this way, and it catches a reordering that a per-field check
+    would miss.
+    """
+    work_dir = tmp_path / 'works' / work_id
+    return (
+        json.dumps(read_work(tmp_path, work_id).get('parts'), sort_keys=True),
+        {p.name: p.read_bytes() for p in sorted(work_dir.iterdir())
+         if p.name != 'work.yaml'},
+    )
+
+
+class TestMetadataWrite:
+    def test_the_stranded_tab_work_gets_its_details(self, tmp_path):
+        """The case the column exists for: title only, nothing else."""
+        seed_tab_work(tmp_path)
+        before = parts_snapshot(tmp_path, 'salt-creek')
+
+        result = apply_row(tmp_path, meta_row(title='Salt Creek',
+                                              artist='Bill Monroe', key='A',
+                                              notes='Fiddle tune in A'),
+                           'metadata', 'salt-creek', actor='Jane Picker',
+                           verbose=False)
+
+        assert result.written
+        assert result.mode == 'update-metadata'
+        assert result.part_file is None
+
+        work = read_work(tmp_path, 'salt-creek')
+        assert work['title'] == 'Salt Creek'
+        assert work['artist'] == 'Bill Monroe'
+        assert work['default_key'] == 'A'
+        assert work['notes'] == 'Fiddle tune in A'
+
+        # ...and not one byte of the tab moved.
+        assert parts_snapshot(tmp_path, 'salt-creek') == before
+
+    def test_it_records_who_changed_the_details(self, tmp_path):
+        seed_tab_work(tmp_path)
+
+        apply_row(tmp_path, meta_row(), 'metadata', 'salt-creek',
+                  actor='Jane Picker', verbose=False)
+
+        prov = read_work(tmp_path, 'salt-creek')['metadata_provenance']
+        assert prov['source'] == 'user-submission'
+        assert prov['source_id'].startswith('pending:meta:salt-creek:ab12cd:')
+        assert prov['submitted_by'] == SUBMITTER
+        assert prov['submitted_at'] == '2026-08-18'
+
+    def test_it_works_on_a_work_whose_only_part_is_a_chart(self, tmp_path):
+        """Nothing about this column is tab-specific — a chart-only work is
+        the same write, and the chart is just as untouched."""
+        seed_work(tmp_path, 'blue-moon-of-kentucky', submitted_by=OTHER_USER)
+        before = parts_snapshot(tmp_path, 'blue-moon-of-kentucky')
+
+        apply_row(tmp_path,
+                  meta_row(id='meta:blue-moon-of-kentucky:ab12cd',
+                           replaces_id='blue-moon-of-kentucky',
+                           title='Blue Moon of Kentucky', artist='Bill Monroe',
+                           key='A'),
+                  'metadata', 'blue-moon-of-kentucky', verbose=False)
+
+        assert read_work(tmp_path, 'blue-moon-of-kentucky')['artist'] == \
+            'Bill Monroe'
+        assert parts_snapshot(tmp_path, 'blue-moon-of-kentucky') == before
+
+
+class TestMetadataPartialUpdates:
+    """An absent field means "I didn't touch this", never "blank it"."""
+
+    def test_a_field_the_row_does_not_carry_survives(self, tmp_path):
+        seed_tab_work(tmp_path)
+        works_writer.update_metadata(
+            tmp_path, 'salt-creek',
+            updates={'artist': 'Kenny Baker', 'default_key': 'A',
+                     'notes': 'From the 1974 record'},
+            provenance={'source': 'manual', 'source_id': 'seed'},
+            verbose=False)
+
+        apply_row(tmp_path,
+                  meta_row(title='Salt Creek', artist=None, key=None,
+                           notes=None),
+                  'metadata', 'salt-creek', verbose=False)
+
+        work = read_work(tmp_path, 'salt-creek')
+        assert work['title'] == 'Salt Creek'
+        assert work['artist'] == 'Kenny Baker'
+        assert work['default_key'] == 'A'
+        assert work['notes'] == 'From the 1974 record'
+
+    def test_an_empty_string_is_not_a_clear_either(self, tmp_path):
+        # A client that sends '' for an untouched input must not erase it —
+        # there is no "clear this field" gesture in this pipeline, and if one
+        # is ever wanted it has to be explicit rather than a side effect of a
+        # blank form control.
+        seed_tab_work(tmp_path)
+        works_writer.update_metadata(
+            tmp_path, 'salt-creek', updates={'artist': 'Kenny Baker'},
+            provenance={'source': 'manual', 'source_id': 'seed'},
+            verbose=False)
+
+        apply_row(tmp_path, meta_row(artist='   ', key=''), 'metadata',
+                  'salt-creek', verbose=False)
+
+        work = read_work(tmp_path, 'salt-creek')
+        assert work['artist'] == 'Kenny Baker'
+        assert 'default_key' not in work
+
+    def test_a_row_carrying_nothing_at_all_is_refused(self, tmp_path):
+        seed_tab_work(tmp_path)
+
+        with pytest.raises(ProcessPendingError, match='no fields to apply'):
+            apply_row(tmp_path,
+                      meta_row(title=None, artist=None, key=None, notes=None),
+                      'metadata', 'salt-creek', verbose=False)
+
+
+class TestMetadataReplay:
+    """The marker cannot hash `content` — there is none. It hashes the fields.
+
+    Hashing the (always null) content would give every metadata row in the
+    table the same marker, so the first edit of a work would make every later
+    edit of it look like a replay and silently do nothing.
+    """
+
+    def test_a_second_dispatch_of_the_same_row_is_a_no_op(self, tmp_path):
+        seed_tab_work(tmp_path)
+
+        first = apply_row(tmp_path, meta_row(), 'metadata', 'salt-creek',
+                          verbose=False)
+        after_first = (tmp_path / 'works/salt-creek/work.yaml').read_text()
+        second = apply_row(tmp_path, meta_row(), 'metadata', 'salt-creek',
+                           verbose=False)
+
+        assert first.written
+        assert not second.written
+        assert second.skipped_reason == 'already-applied'
+        assert (tmp_path / 'works/salt-creek/work.yaml').read_text() \
+            == after_first
+
+    def test_a_real_second_edit_is_not_treated_as_a_replay(self, tmp_path):
+        seed_tab_work(tmp_path)
+
+        apply_row(tmp_path, meta_row(artist='Bill Monroe'), 'metadata',
+                  'salt-creek', verbose=False)
+        edited = apply_row(tmp_path, meta_row(artist='Kenny Baker'),
+                           'metadata', 'salt-creek', verbose=False)
+
+        assert edited.written
+        assert read_work(tmp_path, 'salt-creek')['artist'] == 'Kenny Baker'
+
+    def test_two_rows_editing_one_work_do_not_shadow_each_other(self, tmp_path):
+        # Different rows, identical fields: the marker is row-scoped, so the
+        # second one is a genuine write rather than "already applied".
+        seed_tab_work(tmp_path)
+
+        apply_row(tmp_path, meta_row(), 'metadata', 'salt-creek',
+                  verbose=False)
+        other = apply_row(tmp_path, meta_row(id='meta:salt-creek:zz99xx'),
+                          'metadata', 'salt-creek', verbose=False)
+
+        assert other.written
+
+    def test_the_marker_is_field_scoped_not_order_scoped(self, tmp_path):
+        # Canonical (sorted-key) serialization: the same edit described in a
+        # different column order is the same edit.
+        from process_pending import metadata_marker
+
+        assert metadata_marker('r', {'title': 'T', 'artist': 'A'}) == \
+            metadata_marker('r', {'artist': 'A', 'title': 'T'})
+        assert metadata_marker('r', {'artist': 'A'}) != \
+            metadata_marker('r', {'artist': 'B'})
+        assert metadata_marker('r', {'artist': 'A'}) != \
+            metadata_marker('s', {'artist': 'A'})
+        assert metadata_marker('r', {'artist': 'A'}).startswith('pending:r:')
+
+    def test_the_marker_is_not_the_null_content_marker(self, tmp_path):
+        """The bug this whole scheme exists to avoid, stated directly."""
+        from process_pending import metadata_marker
+
+        assert metadata_marker('r', {'artist': 'A'}) != content_marker('r', '')
+
+
+class TestMetadataSkipsTheDedupBackstop:
+    def test_the_backstop_is_never_consulted(self, tmp_path):
+        """Not "it happened to say proceed" — it is not asked at all.
+
+        The backstop guards ONE thing: a `create` minting a slug for a song
+        already in the corpus. A metadata row mints nothing — it names an
+        existing work in replaces_id — so there is no slug to guard. It also
+        scores lyric containment over ChordPro, and this row has no content
+        at all to score.
+        """
+        seed_chart(tmp_path, 'salt-creek', 'Salt Creek', CHORDPRO)
+        backstop = DedupBackstop(tmp_path)
+
+        result = apply_row(tmp_path, meta_row(), 'metadata', 'salt-creek',
+                           verbose=False, backstop=backstop)
+
+        assert result.written
+        assert backstop.decision is None
+
+
+class TestMetadataRefusals:
+    def test_a_mode_from_another_column(self, tmp_path):
+        seed_tab_work(tmp_path)
+        for mode in ('create', 'update', 'fork', 'add'):
+            with pytest.raises(ProcessPendingError,
+                               match='unknown metadata mode'):
+                apply_row(tmp_path, meta_row(), mode, 'salt-creek',
+                          verbose=False)
+
+    def test_the_row_id_is_never_used_as_a_work_slug(self, tmp_path):
+        # `meta:salt-creek:ab12cd` is a pending_songs primary key. If a stale
+        # dispatch (or a hand-fired one) puts it where the work id belongs,
+        # refuse — do not mint `works/meta:salt-creek:ab12cd/`.
+        seed_tab_work(tmp_path)
+
+        with pytest.raises(ProcessPendingError, match='not a slug'):
+            apply_row(tmp_path, meta_row(), 'metadata',
+                      'meta:salt-creek:ab12cd', verbose=False)
+
+        assert not (tmp_path / 'works' / 'meta:salt-creek:ab12cd').exists()
+
+    def test_a_work_that_is_not_there(self, tmp_path):
+        (tmp_path / 'works').mkdir()
+
+        with pytest.raises(works_writer.WorkNotFoundError):
+            apply_row(tmp_path, meta_row(replaces_id='nothing-here'),
+                      'metadata', 'nothing-here', verbose=False)
+
+    def test_a_suppressed_work_is_skipped_not_written(self, tmp_path):
+        seed_tab_work(tmp_path)
+        registry = tmp_path / 'curation' / 'registry.yaml'
+        registry.parent.mkdir(parents=True, exist_ok=True)
+        registry.write_text(yaml.dump({
+            'groups': {},
+            'suppressed': {'salt-creek': {'reason': 'merged away'}},
+        }))
+
+        result = apply_row(tmp_path, meta_row(artist='Kenny Baker'),
+                           'metadata', 'salt-creek', verbose=False)
+
+        assert not result.written
+        assert 'artist' not in read_work(tmp_path, 'salt-creek')
+
+
+class TestMetadataTouchesNoPart:
+    """The structural guarantee, asked of the writer rather than the caller.
+
+    `works_writer.update_metadata` accepts a whitelist of work-level keys and
+    `parts` is not on it, so "a metadata edit touches no part" is a property
+    of the function — not a promise `process_pending` has to keep.
+    """
+
+    def test_the_writer_refuses_to_write_parts(self, tmp_path):
+        seed_tab_work(tmp_path)
+
+        with pytest.raises(ValueError, match='cannot write parts'):
+            works_writer.update_metadata(
+                tmp_path, 'salt-creek', updates={'parts': []},
+                provenance={'source': 'user-submission', 'source_id': 'x'},
+                verbose=False)
+
+    def test_a_work_with_several_parts_keeps_all_of_them_in_order(self, tmp_path):
+        seed_work(tmp_path, 'salt-creek', submitted_by=OTHER_USER)
+        apply_row(tmp_path, tab_row(), 'add', 'salt-creek', actor='Alice',
+                  verbose=False)
+        apply_row(tmp_path,
+                  tab_row(id='tab:salt-creek:ef34gh',
+                          content=json.dumps(otf_doc(fret=7))),
+                  'add', 'salt-creek', actor='Bob', verbose=False)
+        before = parts_snapshot(tmp_path, 'salt-creek')
+
+        apply_row(tmp_path, meta_row(artist='Kenny Baker', key='A'),
+                  'metadata', 'salt-creek', verbose=False)
+
+        assert parts_snapshot(tmp_path, 'salt-creek') == before
+        assert len(read_work(tmp_path, 'salt-creek')['parts']) == 3

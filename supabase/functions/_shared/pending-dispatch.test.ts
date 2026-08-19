@@ -25,7 +25,9 @@ import {
 } from "https://deno.land/std@0.168.0/testing/asserts.ts"
 
 import {
+  anyPartOwners,
   classifyChange,
+  MetadataRefusedError,
   partBlocks,
   RATE_LIMIT_PER_HOUR,
   slugify,
@@ -696,6 +698,219 @@ Deno.test("classifyChange tablature: a part_file pointing at a CHART -> add", as
       partFile: "lead-sheet.pro",
     })
     assertEquals(out.mode, "add")
+  })
+})
+
+// ============================================
+// anyPartOwners — the metadata column's LOOSER question
+// ============================================
+//
+// Deliberately a different question from submittersOf, and the tests are here
+// to stop a later reader "fixing" one into the other. submittersOf answers
+// "may you rewrite content of this kind in place?" and MUST stay scoped per
+// part type. This answers "do you have any stake in this work at all?" and is
+// only ever used to decide whether you may edit the work's own title / artist
+// / key / notes — where nobody's content is touched.
+
+Deno.test("anyPartOwners: everyone who contributed a part, of any kind", () => {
+  assertEquals(anyPartOwners(HOW_LONG), [PRIMARY_CHART_OWNER, FORK_OWNER, TAB_OWNER])
+})
+
+Deno.test("anyPartOwners: the tab owner IS here (this is the whole difference)", () => {
+  // submittersOf(HOW_LONG, 'lead-sheet') excludes TAB_OWNER — that exclusion
+  // is the escalation fix. This one includes them, on purpose.
+  assertEquals(submittersOf(HOW_LONG, "lead-sheet").includes(TAB_OWNER), false)
+  assertEquals(anyPartOwners(HOW_LONG).includes(TAB_OWNER), true)
+})
+
+Deno.test("anyPartOwners: a stranger is still a stranger", () => {
+  assertEquals(anyPartOwners(HOW_LONG).includes(STRANGER), false)
+})
+
+Deno.test("anyPartOwners: `author` counts on tablature parts (imports and the retired PR flow)", () => {
+  assertEquals(anyPartOwners(FOGGY).includes("schlange"), true)
+  assertEquals(anyPartOwners(ANGELINE).includes("Tim Purcell"), true)
+})
+
+Deno.test("anyPartOwners: `author` does NOT count on a chart part", () => {
+  // `author` is the tablature vocabulary — a display name credited on a tab.
+  // A chart's contributor is `submitted_by` (a verified uuid), and honouring
+  // a hand-written `author:` on a lead sheet would let an arbitrary string in
+  // a scraped work.yaml name an owner.
+  const yaml = `parts:
+- type: lead-sheet
+  file: lead-sheet.pro
+  provenance:
+    source: classic-country
+    author: ${STRANGER}
+`
+  assertEquals(anyPartOwners(yaml), [])
+})
+
+Deno.test("anyPartOwners: a block with no `type:` is not a part", () => {
+  // tags:/composers: entries are block-sequence entries too.
+  assertEquals(anyPartOwners(BLUE_MOON), [])
+  assertEquals(anyPartOwners(""), [])
+  assertEquals(anyPartOwners("id: x\nparts: []\n"), [])
+})
+
+// ============================================
+// classifyChange — metadata
+// ============================================
+
+Deno.test("classifyChange metadata: owning ANY part earns the edit", async () => {
+  await withGithub({ "works/how-long-blues/work.yaml": HOW_LONG }, async () => {
+    for (const uid of [PRIMARY_CHART_OWNER, FORK_OWNER, TAB_OWNER]) {
+      const out = await classify({
+        rowId: "meta:how-long-blues:9f3c2a",
+        replacesId: "how-long-blues",
+        userId: uid,
+        partType: "metadata",
+      })
+      assertEquals(out.mode, "metadata")
+      assertEquals(out.workId, "how-long-blues")
+      assertEquals(out.reason, "caller contributed a part of this work")
+    }
+  })
+})
+
+Deno.test("classifyChange metadata: owning only a TAB earns it — unlike a chart edit", async () => {
+  // The deliberate asymmetry, pinned side by side so the two questions can't
+  // be quietly merged. Same user, same work, two different asks:
+  await withGithub({ "works/how-long-blues/work.yaml": HOW_LONG }, async () => {
+    const chartEdit = await classify({
+      rowId: "row-1",
+      replacesId: "how-long-blues",
+      userId: TAB_OWNER,
+      partType: "lead-sheet",
+    })
+    // Rewriting somebody's lyrics: no. It forks.
+    assertEquals(chartEdit.mode, "fork")
+
+    const metadataEdit = await classify({
+      rowId: "meta:how-long-blues:9f3c2a",
+      replacesId: "how-long-blues",
+      userId: TAB_OWNER,
+      partType: "metadata",
+    })
+    // Saying the song is by the Stanley Brothers: yes. Nothing is rewritten.
+    assertEquals(metadataEdit.mode, "metadata")
+  })
+})
+
+Deno.test("classifyChange metadata: a trusted non-contributor -> metadata", async () => {
+  await withGithub({ "works/how-long-blues/work.yaml": HOW_LONG }, async () => {
+    const out = await classify({
+      rowId: "meta:how-long-blues:9f3c2a",
+      replacesId: "how-long-blues",
+      userId: STRANGER,
+      trusted: true,
+      partType: "metadata",
+    })
+    assertEquals(out.mode, "metadata")
+    assertEquals(out.reason, "trusted user metadata edit")
+  })
+})
+
+Deno.test("REFUSAL: a non-contributor's metadata edit is refused, never forked", async () => {
+  // The one column with no additive fallback. A second opinion about the
+  // artist is not an arrangement, so silently forking it would put a
+  // duplicate work in the corpus every time somebody fixed a typo they were
+  // not entitled to fix.
+  await withGithub({ "works/how-long-blues/work.yaml": HOW_LONG }, async () => {
+    const error = await assertRejects(
+      () =>
+        classify({
+          rowId: "meta:how-long-blues:9f3c2a",
+          replacesId: "how-long-blues",
+          userId: STRANGER,
+          partType: "metadata",
+        }),
+      MetadataRefusedError,
+    )
+    assertEquals(error.status, 403)
+    assertEquals(error.workId, "how-long-blues")
+  })
+})
+
+Deno.test("REFUSAL: an imported work nobody submitted refuses everyone untrusted", async () => {
+  // angeline-the-baker has no `submitted_by` anywhere — its tabs carry
+  // Hangout display names. A uuid never equals one, so no logged-in user
+  // owns a part here and only trust opens it.
+  await withGithub({ "works/angeline-the-baker/work.yaml": ANGELINE }, async () => {
+    await assertRejects(
+      () =>
+        classify({
+          rowId: "meta:angeline-the-baker:9f3c2a",
+          replacesId: "angeline-the-baker",
+          userId: STRANGER,
+          partType: "metadata",
+        }),
+      MetadataRefusedError,
+    )
+    const trusted = await classify({
+      rowId: "meta:angeline-the-baker:9f3c2a",
+      replacesId: "angeline-the-baker",
+      userId: STRANGER,
+      trusted: true,
+      partType: "metadata",
+    })
+    assertEquals(trusted.mode, "metadata")
+  })
+})
+
+Deno.test("REFUSAL: no work at the target is a 404, not a create", async () => {
+  // A metadata row has no content to seed a work from, so `create` is not one
+  // of its modes. Falling through to create would mint an empty work out of a
+  // typo'd slug.
+  await withGithub({}, async () => {
+    const error = await assertRejects(
+      () =>
+        classify({
+          rowId: "meta:nope:9f3c2a",
+          replacesId: "no-such-work",
+          userId: STRANGER,
+          trusted: true,
+          partType: "metadata",
+        }),
+      MetadataRefusedError,
+    )
+    assertEquals(error.status, 404)
+  })
+})
+
+Deno.test("REFUSAL: a metadata row with no target is a 400, and never reads the row id", async () => {
+  // `meta:<slug>:<rand>` is a pending_songs primary key, not a work slug. The
+  // chart column falls back to the row id; this one must not, or the id
+  // itself would become a directory name.
+  await withGithub({ "works/meta:how-long-blues:9f3c2a/work.yaml": HOW_LONG }, async () => {
+    for (const replacesId of [undefined, null, "", "   "]) {
+      const error = await assertRejects(
+        () =>
+          classify({
+            rowId: "meta:how-long-blues:9f3c2a",
+            replacesId,
+            userId: PRIMARY_CHART_OWNER,
+            trusted: true,
+            partType: "metadata",
+          }),
+        MetadataRefusedError,
+      )
+      assertEquals(error.status, 400, `replacesId=${JSON.stringify(replacesId)}`)
+    }
+  })
+})
+
+Deno.test("classifyChange metadata: part_file is ignored — this column edits no part", async () => {
+  await withGithub({ "works/how-long-blues/work.yaml": HOW_LONG }, async () => {
+    const out = await classify({
+      rowId: "meta:how-long-blues:9f3c2a",
+      replacesId: "how-long-blues",
+      userId: TAB_OWNER,
+      partType: "metadata",
+      partFile: "lead-sheet.pro",
+    })
+    assertEquals(out.mode, "metadata")
   })
 })
 

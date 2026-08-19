@@ -6,8 +6,9 @@
 //                        archived works still resolve
 // - pending_songs      — Supabase overlay: every logged-in user's submission,
 //                        live in seconds while the git commit catches up.
-//                        A row is a SONG or a PART (`part_type`); see
-//                        transformPendingRow / applyPendingTabs below
+//                        A row is a SONG, a PART, or a METADATA edit
+//                        (`part_type`); see transformPendingRow /
+//                        applyPendingTabs / applyPendingMetadata below
 // - deleted/promoted   — Supabase curation overlays: the same suppression and
 //                        prune-rescue the index build applies, but instant
 //
@@ -137,6 +138,20 @@ export function isPendingTablature(row) {
     return row?.part_type === 'tablature';
 }
 
+/**
+ * Is this pending row a METADATA edit — the work's title / artist / key /
+ * notes, and nothing else?
+ *
+ * The third kind of row, and the one that owns no bytes at all: `content` is
+ * null and `replaces_id` names the work being edited (required — a metadata
+ * row with no target has nothing to say). It is not a song and not a part, so
+ * it neither becomes a row nor attaches one; applyPendingMetadata overlays the
+ * fields onto the work already in the corpus.
+ */
+export function isPendingMetadata(row) {
+    return row?.part_type === 'metadata';
+}
+
 /** First lyric line of a ChordPro body (chord brackets stripped). */
 function extractFirstLine(content) {
     for (const line of String(content || '').split('\n')) {
@@ -207,6 +222,12 @@ function transformPendingTabRow(pending) {
         pending_part: {
             instrument: pending.instrument || '',
             ...(pending.part_file ? { src_file: pending.part_file } : {}),
+            // The submitter, in the same field name the published parts use
+            // (`build_works_index` reads `provenance.submitted_by`). It is
+            // what lets the work page know you own a part of this work in the
+            // seconds after you submit a tab — which is precisely when a
+            // tab-minted work still has no artist and wants one.
+            ...(pending.created_by ? { submitted_by: pending.created_by } : {}),
             content: pending.content || '',
             pending: true,
             pending_id: pending.id,
@@ -214,11 +235,37 @@ function transformPendingTabRow(pending) {
     };
 }
 
+/**
+ * A pending METADATA row: the four editable fields plus the work it targets.
+ *
+ * Nothing here is an index row either. `part_type` rides along so the merge's
+ * discriminator keeps working after the transform, and only fields the editor
+ * actually submitted are carried — an absent field means "unchanged", which is
+ * what lets a metadata edit leave `key` alone instead of blanking it.
+ */
+function transformPendingMetadataRow(pending) {
+    const fields = {};
+    for (const field of ['title', 'artist', 'key', 'notes']) {
+        if (typeof pending[field] === 'string') fields[field] = pending[field];
+    }
+    return {
+        id: pending.id,
+        part_type: 'metadata',
+        replaces_id: pending.replaces_id || null,
+        created_by: pending.created_by || null,
+        // Two people can hold an unlanded edit of the same work at once (the
+        // id namespace exists so they don't collide on the PK), so the overlay
+        // has to pick one — and `select('*')` promises no order.
+        created_at: pending.created_at || null,
+        pending_metadata: fields,
+    };
+}
+
 /** Transform a raw `pending_songs` row into what the merge expects. */
 export function transformPendingRow(pending) {
-    return isPendingTablature(pending)
-        ? transformPendingTabRow(pending)
-        : transformPendingSongRow(pending);
+    if (isPendingTablature(pending)) return transformPendingTabRow(pending);
+    if (isPendingMetadata(pending)) return transformPendingMetadataRow(pending);
+    return transformPendingSongRow(pending);
 }
 
 /**
@@ -324,6 +371,58 @@ export function applyPendingTabs(songs, tabRows) {
 }
 
 /**
+ * Overlay every pending metadata edit onto the work it names.
+ *
+ * Three things this deliberately does NOT do:
+ *
+ * 1. **Mint a row.** A metadata row whose target isn't in the corpus is
+ *    dropped, not turned into a song — unlike a tab, which legitimately mints
+ *    the work it is the first part of. There is no work here to mint: the row
+ *    carries no content of any kind, so a synthesized row would be a title
+ *    with nothing behind it, competing in search with the real work as soon as
+ *    the archive finished loading.
+ * 2. **Touch the parts.** The copy keeps `tablature_parts`, `arrangements`,
+ *    `has_content`, everything — renaming a work must not cost it its tabs.
+ * 3. **Flag the work `source: 'pending'`.** Same reasoning as a pending tab
+ *    part: the work is exactly as durable as it was, and claiming otherwise
+ *    would report every other contribution to it as no-longer-in-the-songbook
+ *    in My Submissions. The edit announces itself in `pending_metadata`.
+ *
+ * `_stems` is dropped from the copy because the title and artist are two of
+ * the four strings it is built from — mergeCorpus re-stems right after.
+ */
+const stamp = (row) => Date.parse(row?.created_at || '') || 0;
+
+export function applyPendingMetadata(songs, metaRows) {
+    if (!metaRows?.length) return songs;
+
+    const byTarget = new Map();
+    for (const row of metaRows) {
+        // `replaces_id` is the whole address. A metadata row's id is
+        // `meta:<slug>:<rand>` — its own namespace, for the reason tab rows
+        // have one: two people editing one work's details must not collide on
+        // the primary key. The slug inside it is decorative and is never
+        // parsed back out.
+        if (!row?.replaces_id) continue;
+        const held = byTarget.get(row.replaces_id);
+        if (!held || stamp(row) >= stamp(held)) byTarget.set(row.replaces_id, row);
+    }
+    if (!byTarget.size) return songs;
+
+    return songs.map(song => {
+        const row = byTarget.get(song.id);
+        const fields = row?.pending_metadata;
+        if (!fields) return song;
+        const { _stems, ...rest } = song;
+        return {
+            ...rest,
+            ...fields,
+            pending_metadata: { id: row.id, created_by: row.created_by },
+        };
+    });
+}
+
+/**
  * Merge the row sources into the corpus the app runs on.
  *
  * Pending rows overlay static rows: a pending SONG row with `replaces_id`
@@ -363,11 +462,14 @@ export function mergeCorpus({
         ));
     }
 
-    // Two kinds of pending row, two different jobs. Split before either
-    // rule runs so a tablature row can never be mistaken for a song that
-    // replaces a work.
+    // Three kinds of pending row, three different jobs. Split before any of
+    // the rules run so a tablature or metadata row can never be mistaken for a
+    // song that replaces a work — both name a work in `replaces_id`, which is
+    // exactly the field the song rule reads as "hide that row, show this one".
     const tabRows = pendingRows.filter(isPendingTablature);
-    const songRows = pendingRows.filter(p => !isPendingTablature(p));
+    const metaRows = pendingRows.filter(isPendingMetadata);
+    const songRows = pendingRows.filter(
+        p => !isPendingTablature(p) && !isPendingMetadata(p));
 
     const staticMap = {};
     for (const row of staticRows) staticMap[row.id] = row;
@@ -387,10 +489,13 @@ export function mergeCorpus({
 
     // Tabs go on last, so a pending part lands on the pending SONG row when a
     // work has both (an edited chart and a new tab arrive as one work page).
-    const songs = applyPendingTabs([
+    // Then metadata, which is last of all: it is the only row that edits the
+    // work's own fields, so whatever else landed on this work, the details the
+    // user just typed are what they see.
+    const songs = applyPendingMetadata(applyPendingTabs([
         ...staticRows.filter(row => !replacedIds.has(row.id)),
         ...mergedPending,
-    ], tabRows);
+    ], tabRows), metaRows);
 
     ensureStems(songs);
 

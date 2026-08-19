@@ -850,6 +850,69 @@ generic rule — no tab-specific branch. It used to sit at "Requested" until
 a human merged its PR, the inconsistency
 `docs/plans/contribution-pipeline.md:204-210` accepted on purpose.
 
+### Editing a work's details (`work-view.js` + `corpus.js` + `utils.js`)
+
+Title / artist / key / notes belong to the WORK, not to any part — so they
+get their own affordance and their own kind of pending row. The case that
+forced it: a tab-minted work (`works/welcome-to-new-york/`) arrived with a
+title and nothing else, and no surface could give it an artist. The metadata
+editor existed but was reachable only from `status: 'placeholder'`, which a
+tab-minted work never has.
+
+**The affordance**: `🏷️ Details` in the title row (`#edit-meta-btn`, the
+same `.focus-btn` shell as Edit — *not* `.qc-btn`, which is the icon-only
+32x32 tab-band button and must never hold a word). Deliberately NOT
+part-scoped the way `#edit-song-btn` is: a tablature part hides Edit (there
+is no chart to edit) but the work still has details, and that is exactly the
+work that needs them. It is gated on the viewer instead —
+`canEditWorkMetadata(song, {userId, trusted})` in `utils.js`: **own a part of
+this work, or be trusted.** The gate is re-asked on every `updateWorkTopBar`
+because both halves resolve late. The empty artist line shows an "Artist
+unknown" nudge only to someone who can act on it.
+
+**Ownership, client-side**, is read from what the index row publishes
+(`workSubmitters`): `submitted_by` (primary chart), `arrangements[]`,
+`document_parts[]`, `tablature_parts[].submitted_by`, plus `created_by` on a
+pending overlay row. ⚠️ **`build_works_index` does not publish
+`submitted_by` on `tablature_parts` yet** — the uuid is in
+`work.yaml` (`provenance.submitted_by`) but the row keeps only `author`, a
+display name that is not comparable to `auth.uid()`. So a tab submitter has
+the affordance from the overlay (corpus attaches `submitted_by` to a pending
+part) and loses it once their work is published, until the index carries the
+field. Trusted users are unaffected, and the server is authoritative either
+way.
+
+**The row** (`submitWorkMetadata`) is neither a chart nor a part:
+
+| field | value |
+|---|---|
+| `id` | `meta:<slug>:<rand>` — its own namespace (DB CHECK), memoized per work so a double-click updates one row |
+| `part_type` | `'metadata'` |
+| `content` | `null` — the row owns no bytes |
+| `replaces_id` | the work being edited, **required**: it is the row's whole address |
+| `title` / `artist` / `key` / `notes` / `created_by` | the edit |
+
+Then `POST {id}` to `auto-commit-song`, like every other contribution. One
+deliberate difference in how step 2 failing is read: for a tab, step 2 is
+only durability, so any failure is "syncing shortly". For metadata it is also
+where **permission** is decided, so a 4xx (403 no claim, 404 no such work,
+400 no target — but not 429) means REFUSED: the row is deleted again so the
+overlay stops advertising an edit that will never land, and the server's own
+message is raised.
+
+**The overlay** (`corpus.applyPendingMetadata`, run last in `mergeCorpus`)
+merges the fields onto the work it names and nothing else: it never mints a
+row (unlike a tab, there is no song behind it), never touches the parts, and
+never flags the work `source: 'pending'`. It drops `_stems` so search follows
+the new title, and the newest `created_at` wins when two edits are in flight.
+A `pending_metadata` marker on the row drives the "Just edited" badge.
+
+The `savePlaceholderMetadata` path is **gone**, replaced entirely — it wrote
+`status: 'placeholder'` and round-tripped the chart through `content`, which
+on a tab-only work read `''` and would have stamped `status: placeholder`
+onto a legitimate work. `showMetadataEditor` (formerly `showPlaceholderEditor`)
+still serves real placeholders through `handleEditAction`, unchanged.
+
 ### Bounty board dedupe (`title-match.js` + `bounty-view.js`)
 
 The wanted list used to advertise songs the book already had — "Can the Circle

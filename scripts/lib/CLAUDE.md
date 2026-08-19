@@ -781,6 +781,7 @@ durable.
    - `create` → `create_work(on_collision='suffix')`
    - `update` → `update_part` on the chart the actor OWNS (`update_target`)
    - `fork` → `fork_to_arrangement`, `x_version_*` from the submitter identity
+   - `metadata` → `update_metadata` — work-level fields only, no part
 3. The workflow commits, pushes with rebase-retry, then marks the row
    `github_committed`.
 
@@ -825,9 +826,37 @@ the whole build when that id disagrees with `provenance.source_id` — which
 is the idempotence marker here. The displaced identity is kept as
 `provenance.x_derived_from`.
 
+**Metadata** (2026-08-18, `apply_metadata_row`). A row with
+`part_type = 'metadata'` carries NO content, names its target in
+`replaces_id`, and edits only the work's own fields. It exists because a work
+minted by a TAB had a title and nothing else — no artist, no key — and no
+path to a fix: every other row shape edits a PART, and the work-level fields
+only ever rode along with a rewrite of the primary chart, which a tab-only
+work does not have.
+
+| mode | writer call | file |
+|---|---|---|
+| `metadata` | `update_metadata` (title / artist / key→`default_key` / notes) | none — no part is created, replaced, renamed or reordered |
+
+"Touches no part" is structural, not a promise: `update_metadata` accepts a
+whitelist of work-level keys and `parts` is not on it. Fields the row does
+not carry are DROPPED, never written — a null artist means "I didn't touch
+it", and there is no clear-a-field gesture in this pipeline. The dedup
+backstop is skipped explicitly (it guards a `create` minting a slug; this
+mints nothing, and there is no ChordPro to score). Who may send one is
+decided before the dispatch by `classifyChange`: own **any** part of the
+work, or be trusted — a looser question than the per-part-type ownership a
+content edit must pass, because naming an artist rewrites nobody's content.
+
 **Idempotence**: every part written carries
 `provenance.source_id = pending:<row id>:<content sha>`. A replayed dispatch
 finds the marker and no-ops; a genuine re-edit changes the sha and applies.
+A metadata row has no content to hash, so `metadata_marker` hashes the FIELDS
+it is applying (canonical sorted-key JSON) and stamps the result at the work
+level as `metadata_provenance.source_id` — same `pending:<row id>:<sha>`
+shape, same property in both directions. Hashing the always-null content
+instead would give every metadata row in the table the same marker, so the
+first edit of a work would make every later edit of it look like a replay.
 The mode is decided server-side in `supabase/functions/_shared/pending-dispatch.ts`
 — the client cannot claim "update" on somebody else's chart.
 

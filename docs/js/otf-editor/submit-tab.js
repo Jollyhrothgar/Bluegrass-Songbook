@@ -99,8 +99,28 @@ const issuedRowIds = new Map();
  * the id has to be unique across every submitter tabbing the same song.
  */
 export function tabRowId(slug, instrument, file = null) {
-    const key = `${slug || ''}|${instrument || ''}|${file || ''}`;
-    const seen = issuedRowIds.get(key);
+    return namespacedRowId(
+        'tab', slug, `${slug || ''}|${instrument || ''}|${file || ''}`);
+}
+
+/**
+ * `<namespace>:<slug>:<rand>` — the row-id shape every non-song `pending_songs`
+ * row uses, memoized per `key`.
+ *
+ * Shared because there is now more than one of them: `tab:` for a tablature
+ * part and `meta:` for a metadata edit (work-view.js), each with its own
+ * database CHECK of the same form. The two properties that matter are the
+ * same in both cases — the slug half is sanitized so it can never fail the
+ * constraint, and a repeat of the SAME submission reuses its id so a
+ * double-click updates one row instead of minting two.
+ *
+ * @param {string} namespace - 'tab' | 'meta'
+ * @param {string} slug - decorative, human-scannable half
+ * @param {string} key - what makes two calls "the same submission"
+ */
+export function namespacedRowId(namespace, slug, key) {
+    const memoKey = `${namespace}|${key}`;
+    const seen = issuedRowIds.get(memoKey);
     if (seen) return seen;
 
     // The slug is decorative, but it still has to satisfy the CHECK, so it
@@ -121,8 +141,8 @@ export function tabRowId(slug, instrument, file = null) {
     }
     const rand = Array.from(bytes, b => (b % 36).toString(36)).join('');
 
-    const id = `tab:${safeSlug}:${rand}`;
-    issuedRowIds.set(key, id);
+    const id = `${namespace}:${safeSlug}:${rand}`;
+    issuedRowIds.set(memoKey, id);
     return id;
 }
 
@@ -151,8 +171,15 @@ export function tabWorkSlug(title, artist = null) {
  * write was NOT accepted, so the caller can say so, and resolve with the
  * function's body (`{success, mode, workId, reason}`) when it was. The body
  * is where the client finds out what the server decided the write was.
+ *
+ * The rejection carries `status` and `detail` as well as its message, because
+ * not every caller can treat every failure the same way. A tab is LIVE the
+ * moment its row lands, so any failure here is "syncing shortly". A metadata
+ * edit is not: the function is where permission is decided, so a 403 there
+ * means REFUSED, and the caller has to be able to tell that apart from a
+ * network blip (work-view.js `submitWorkMetadata`).
  */
-async function requestDurableWrite(id, token, fetchImpl) {
+export async function requestDurableWrite(id, token, fetchImpl) {
     const response = await fetchImpl(`${SUPABASE_URL}/functions/v1/auto-commit-song`, {
         method: 'POST',
         headers: {
@@ -170,8 +197,11 @@ async function requestDurableWrite(id, token, fetchImpl) {
         } catch {
             // non-JSON error body; the status is enough
         }
-        throw new Error(
+        const error = new Error(
             `auto-commit-song returned ${response.status}${detail ? `: ${detail}` : ''}`);
+        error.status = response.status;
+        error.detail = detail;
+        throw error;
     }
 
     try {

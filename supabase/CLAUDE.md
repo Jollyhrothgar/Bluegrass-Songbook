@@ -23,9 +23,9 @@ Serverless functions that run on Supabase Edge (Deno runtime).
   `attributionFor`). The client never says who it is.
 - `pending-dispatch.ts` — the phase 2b change gate: durable per-user rate
   limit counted from `submission_log`, `classifyChange` (create / update /
-  fork-to-arrangement / add), and `dispatchPendingCommit`, which fires the
-  `pending-commit` repository_dispatch. **No edge function authors work.yaml
-  any more** — `.github/workflows/process-pending.yml` runs
+  fork-to-arrangement / add / metadata), and `dispatchPendingCommit`, which
+  fires the `pending-commit` repository_dispatch. **No edge function authors
+  work.yaml any more** — `.github/workflows/process-pending.yml` runs
   `scripts/lib/works_writer.py`, the repo's one writer.
   Ownership is answered **per part type**: `submittersOf(yaml, 'lead-sheet')`
   for a chart, `tabPartOwners(yaml, file)` for one tab. It used to be a
@@ -33,8 +33,20 @@ Serverless functions that run on Supabase Edge (Deno runtime).
   appeared on charts alone; tab rows carry it now, and the loose version
   would have let contributing a banjo tab buy an in-place overwrite of that
   work's primary chart (and its title/artist/key with it).
+  **`anyPartOwners(yaml)` is a deliberately different, LOOSER question** and
+  must not be "fixed" into `submittersOf`: it asks *do you have any stake in
+  this work?* and its only caller is the metadata column, which rewrites
+  nobody's content. Owning a tab does not buy a rewrite of a stranger's
+  lyrics; it does buy the right to say who wrote the song. Both functions
+  carry comments saying so, and both directions are pinned by tests.
+  `MetadataRefusedError` is the one typed refusal `classifyChange` can
+  return (403 no claim / 404 no such work / 400 no target) — the metadata
+  column is the only one with nothing additive to land a stranger's edit in.
 - `commit-song.ts` — the `PendingSong` shape, one Contents-API read used by
-  classification, and `unretryableReason`. Phase 2d deleted the
+  classification, and `unretryableReason` (which is **part-type aware**: a
+  metadata row carries no content by construction, so demanding one would
+  have made every metadata row permanently "unretryable" and opened an alert
+  issue about a well-formed row an hour after it was written). Phase 2d deleted the
   document-attachment path (and the write helpers only it used) along with
   the doc-upload feature; nothing in here writes to GitHub any more.
 
@@ -88,10 +100,12 @@ content or **beside** it, and a privilege escalation was found and fixed in it
 that decision shipped verified by nothing.
 
 - `functions/_shared/pending-dispatch.test.ts` — `partBlocks`, `submittersOf`,
-  `tabPartOwners`, the full `classifyChange` table for both columns, the
-  durable rate limit, and the escalation pinned in both directions (owning only
-  a tab must classify a chart edit `fork`; owning only a chart must classify a
-  tab correction `add`).
+  `tabPartOwners`, `anyPartOwners`, the full `classifyChange` table for all
+  three columns **including the metadata refusal**, the durable rate limit,
+  and the escalation pinned in both directions (owning only a tab must
+  classify a chart edit `fork`; owning only a chart must classify a tab
+  correction `add`). The metadata asymmetry is pinned side by side in one
+  test: same user, same work, chart edit → `fork`, metadata edit → `metadata`.
 - `functions/_shared/commit-song.test.ts` — `getFileContent`'s 404-is-the-only-
   null rule (a 500 read as "no work here" would let a placeholder overwrite a
   real `work.yaml`) and `unretryableReason`.
@@ -167,14 +181,22 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
   200KB for a chart, 2MB for an OTF, because multi-track arrangements are
   genuinely that big and the chart cap would have rejected the best tabs at
   INSERT.
+  Since `20260818010000_pending_songs_metadata.sql` there is a third
+  `part_type`, **`metadata`**: no content at all (a CHECK refuses it), a
+  mandatory `replaces_id`, and a write that touches only the work's own
+  title / artist / key / notes. It exists because a work minted by a TAB had
+  a title and nothing else and no part anybody would want to rewrite in
+  order to fix that.
   **Row ids**: a chart row's `id` IS its work slug (one row per song). A tab
-  is a PART, so tab rows live in their own namespace — `tab:<slug>:<rand>`,
-  enforced by `pending_songs_tab_id_namespace` — and name their target work
-  in `replaces_id`. Keying them by the work id collided on the PK the moment
-  two people tabbed the same song, and surfaced as a *permissions* error
-  because the update policy gates on `created_by`. `notes` and `status` are
-  capped/enum-checked here too; the earlier cap pass skipped them on the
-  mistaken belief (in a comment, and in PR #237) that `notes` didn't exist
+  is a PART and a metadata edit is a per-user intent, so both live in their
+  own namespaces — `tab:<slug>:<rand>` and `meta:<slug>:<rand>`, enforced by
+  `pending_songs_tab_id_namespace` / `pending_songs_metadata_id_namespace` —
+  and name their target work in `replaces_id`. Keying them by the work id
+  collided on the PK the moment two people tabbed (or retitled) the same
+  song, and surfaced as a *permissions* error because the update policy
+  gates on `created_by`. `notes` and `status` are capped/enum-checked here
+  too; the earlier cap pass skipped them on the mistaken belief (in a
+  comment, and in PR #237) that `notes` didn't exist
 - `review_requests` - The destructive residue (phase 2d): trusted users request delete / suppress / merge-redirect, admins decide
 - `leaderboard_identities` - Opt-in real names for the High Scores board. **RLS on, zero policies** — only `get_leaderboard()` reads it
 - `leaderboard_salt` - One random uuid that salts the leaderboard aliases. **RLS on, zero policies.** Never expose it: contributor uuids are already public in `works/*/work.yaml` (`provenance.submitted_by`), so an unsalted alias hash would be a join key straight back to real contributors
@@ -253,6 +275,14 @@ rights, not speed:
 4. `.github/workflows/process-pending.yml` writes it to `works/` via
    `works_writer`, pushes, then flips `github_committed`.
 
+Metadata edits take the same four steps (2026-08-18), minus the content: the
+row carries `part_type: metadata`, no `content`, and whichever of
+title / artist / key / notes changed, and `process_pending.py` writes them
+through `works_writer.update_metadata`. A caller with no claim on the work is
+refused at step 3 with a 403 the client can show; the row stays in the table
+and the hourly reconciler files it as `unretryable` rather than retrying it
+forever.
+
 Tabs take the same four steps (2026-08-18). The row carries the serialized
 OTF in `content` plus `part_type: tablature` / `instrument` / `part_file`,
 and `process_pending.py` writes `works/<id>/<instrument>[-N].otf.json`
@@ -283,6 +313,32 @@ another take on the instrument rather than a rewrite. Ownership is asked of
 parts of the **same kind** on both sides of the dispatch
 (`submittersOf(yaml, partType)` / `process_pending.owns_content(..., part_type)`)
 — owning a tab is not owning a chart.
+
+Classification — **metadata** (the work's own title / artist / key / notes;
+no part is created, replaced, renamed or reordered and no part file is
+written):
+
+| Situation | Result |
+|---|---|
+| the caller is in `trusted_users` | `metadata` — full edit privileges, any work |
+| the caller's uuid appears on **any** part of the work (`submitted_by` on a chart or tab, `author` on a tab) | `metadata` |
+| anything else | **REFUSED** — 403 `MetadataRefusedError`, never a silent fork |
+| no work at `replaces_id` | **REFUSED** — 404. Never a `create`: there is no content to seed a work from |
+| no `replaces_id` at all | **REFUSED** — 400. The `meta:…` row id is a PK, not a work slug |
+
+This is the one column that refuses, and the one that asks the loose
+ownership question (`anyPartOwners`). Both follow from the same fact: no
+content is rewritten by naming an artist, so contributing anything earns the
+right — and a second opinion about a title is not an arrangement, so there
+is nowhere additive to put a stranger's edit. Silently forking one would put
+a duplicate work in the corpus every time somebody fixed a typo they were
+not entitled to fix.
+
+The action logged for it is **`metadata_edit`**, which `get_leaderboard()`
+does not count (it aggregates `song_submit`, `song_correction`, `tab_submit`,
+`tab_correction` only). A metadata tweak is neither a song nor a tab; it
+still lands in `submission_log`, so it still counts against the durable rate
+limit and is still auditable.
 
 **To add a trusted user:**
 ```sql

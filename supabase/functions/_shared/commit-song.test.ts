@@ -183,3 +183,36 @@ Deno.test("unretryableReason: a tablature row is judged by the same three fields
   assertEquals(unretryableReason(tab), null)
   assertEquals(unretryableReason({ ...tab, content: null }), "missing content")
 })
+
+Deno.test("unretryableReason: a metadata row is retryable WITHOUT content", () => {
+  // The trap this pins: a metadata row carries no content by construction (a
+  // CHECK on pending_songs refuses one, because the row edits work.yaml and
+  // writes no part). Asking for content anyway would have made every metadata
+  // row permanently unretryable — filed for manual rescue an hour after it
+  // was written, with an alert issue opened about a perfectly well-formed row.
+  const meta = row({
+    id: "meta:salt-creek:9f3c2a",
+    part_type: "metadata",
+    replaces_id: "salt-creek",
+    content: null,
+  })
+  assertEquals(unretryableReason(meta), null)
+  assertEquals(unretryableReason({ ...meta, content: "" }), null)
+})
+
+Deno.test("unretryableReason: a metadata row must still name its target work", () => {
+  // It is what content is to the other columns: without it there is nothing
+  // to do, and no amount of waiting supplies one — a metadata edit can never
+  // mint a work, and its `meta:<slug>:<rand>` id is not a work slug.
+  const meta = row({
+    id: "meta:salt-creek:9f3c2a",
+    part_type: "metadata",
+    content: null,
+  })
+  assertEquals(unretryableReason(meta), "metadata row names no target work")
+  assertEquals(
+    unretryableReason({ ...meta, replaces_id: null }),
+    "metadata row names no target work",
+  )
+  assertEquals(unretryableReason({ ...meta, title: "" }), "missing title")
+})

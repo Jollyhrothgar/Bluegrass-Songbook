@@ -36,6 +36,10 @@ Modes
 ``update_part``
     Replace a part's file and stamp provenance — for correction flows that
     legitimately own the content.
+``update_metadata``
+    Change the WORK's own fields — title, artist, key, notes — and no part
+    at all. The one mode that writes work.yaml without writing a file
+    beside it.
 ``fork_to_arrangement``
     A collision that is really a different arrangement: the incoming chart
     lands as an ADDITIONAL version part on the existing work with
@@ -73,8 +77,17 @@ WORK_YAML = 'work.yaml'
 _FIELD_ORDER = [
     'id', 'title', 'artist', 'composers', 'default_key', 'default_tempo',
     'time_signature', 'tags', 'exclude_tags', 'status', 'notes', 'external',
-    'parts',
+    'metadata_provenance', 'parts',
 ]
+
+#: Work-level fields :func:`update_metadata` may write. Everything a
+#: metadata edit is *for*, and nothing else — most importantly not ``parts``
+#: and not ``id``, so "a metadata edit touches no part" is a property of the
+#: function rather than a promise made by its callers.
+METADATA_FIELDS = (
+    'title', 'artist', 'composers', 'default_key', 'default_tempo',
+    'time_signature', 'notes',
+)
 
 _PART_FIELD_ORDER = [
     'type', 'format', 'file', 'default', 'instrument', 'label',
@@ -560,6 +573,71 @@ def update_part(repo_root, work_id: str, *,
     write_work_yaml(repo_root, work)
     return WriteResult(mode='update-part', work_id=work_id, work_dir=work_dir,
                        part_file=target, written=True)
+
+
+# ============================================
+# Mode: update-metadata
+# ============================================
+
+
+def update_metadata(repo_root, work_id: str, *,
+                    updates: dict,
+                    provenance: dict,
+                    on_suppressed: str = 'skip',
+                    guards: Optional[Guards] = None,
+                    verbose: bool = True) -> WriteResult:
+    """Change a work's own fields. Touches no part, writes no part file.
+
+    The entry point the metadata column of ``pending_songs`` lands through.
+    Deliberately NOT ``update_part(..., work_updates=...)``: that one has to
+    find a part to rewrite before it will write anything, and the works this
+    exists for — a song minted by a tab, with a title and no artist — have
+    no part their editor owns or wants to touch. Passing it a loose match
+    just to reach the work-level fields would rewrite whichever part the
+    match happened to pick, which is the exact destruction the part-targeting
+    rules elsewhere exist to prevent.
+
+    ``updates`` may only name :data:`METADATA_FIELDS`; anything else is a
+    ``ValueError`` rather than a silent write, so no caller can reach
+    ``parts`` (or ``id``) through here. Values that are ``None`` or empty are
+    DROPPED, not written: a client that sends only the artist must not blank
+    the key, and there is no "clear this field" gesture in this pipeline.
+
+    ``provenance`` is stamped at the work level as ``metadata_provenance``
+    (same shape a part's provenance has: source / source_id / submitted_by /
+    submitted_at). It is what makes a replayed dispatch a no-op — see
+    ``process_pending.metadata_applied`` — and the only record of who last
+    changed a work's details.
+    """
+    guards = guards or Guards.load(repo_root)
+    reason = guards.blocked(work_id)
+    if reason:
+        return _skip('update-metadata', work_id, reason, on_suppressed, verbose)
+
+    unknown = sorted(set(updates or {}) - set(METADATA_FIELDS))
+    if unknown:
+        raise ValueError(
+            f"update_metadata cannot write {', '.join(unknown)} — "
+            f"only {', '.join(METADATA_FIELDS)}")
+
+    work = load_work(repo_root, work_id)
+    if work is None:
+        raise WorkNotFoundError(
+            f"work '{work_id}' has no {WORK_YAML}; there is no metadata to "
+            f"edit")
+
+    applied = {k: v for k, v in (updates or {}).items()
+               if v is not None and v != '' and v != []}
+    if not applied:
+        raise ValueError('update_metadata was given no fields to apply')
+
+    work.update(applied)
+    work['metadata_provenance'] = clean_provenance(provenance)
+
+    write_work_yaml(repo_root, work)
+    return WriteResult(mode='update-metadata', work_id=work_id,
+                       work_dir=work_path(repo_root, work_id),
+                       part_file=None, written=True)
 
 
 # ============================================
