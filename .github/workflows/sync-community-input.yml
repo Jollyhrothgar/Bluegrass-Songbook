@@ -38,9 +38,10 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
-          # The fetch scripts silently fall back to the cached files when
-          # creds are missing — fail loudly here instead so a misconfigured
-          # secret can't masquerade as "nothing to sync".
+          # The fetch scripts exit non-zero on their own if they cannot reach
+          # Supabase, so this check is belt-and-braces. It stays because it
+          # fails a step earlier and renders as a proper Actions annotation,
+          # which is easier to spot than a Python traceback.
           if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
             echo "::error::SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY secrets are not set"
             exit 1
