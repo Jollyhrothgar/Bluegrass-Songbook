@@ -15,6 +15,14 @@
     --danger-hover: #b91c1c;
     --success: #16a34a;
     --heart: #e11d48;
+    /* Tablature ink hierarchy (three tiers, brightest first):
+       fret numbers use --text, stems/beams/barlines use --tab-ink, and the
+       horizontal string lines ("rulers") use --tab-rule, which must read
+       clearly quieter than both so beams never melt into the staff.
+       Deliberately NOT --text-secondary: that token is muted BODY text and
+       is used site-wide, so the staff can't tune itself through it. */
+    --tab-ink: #5a5a5a;
+    --tab-rule: #8a8a8a;
     /* High Scores podium */
     --medal-gold: #b8860b;
     --medal-silver: #6b7280;
@@ -62,6 +70,12 @@
     --danger-hover: #fca5a5;
     --success: #4ade80;
     --heart: #fb7185;
+    /* Bars/stems/beams read just below the white fret numbers (14.2:1 on
+       black); the string rulers sit a full step quieter at 6.1:1 — the same
+       grey that serves as the light theme's ruler, where it reads 3.3:1
+       against #fafafa. */
+    --tab-ink: #d4d4d4;
+    --tab-rule: #8a8a8a;
     --medal-gold: #fbbf24;
     --medal-silver: #cbd5e1;
     --medal-bronze: #d68a52;

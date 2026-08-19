@@ -27,6 +27,14 @@
             --accent-transparent: rgba(37, 99, 235, 0.25);
             --danger: #dc2626;
             --warning: #fd7e14;
+            /* The tablature's three-tier ink: notes (--text) read brightest,
+               then bars/stems/beams (--tab-ink), then the string lines
+               (--tab-rule) which must sit DARKER in value than both. Repeated
+               here for the same reason every other token is -- this page is
+               standalone and never loads style.css -- so without them the
+               editor's staff falls back to a single flat colour. */
+            --tab-ink: #5a5a5a;
+            --tab-rule: #8a8a8a;
         }
         [data-theme="dark"] {
             color-scheme: dark;
@@ -41,6 +49,8 @@
             --accent: #60a5fa;
             --accent-transparent: rgba(96, 165, 250, 0.25);
             --danger: #f87171;
+            --tab-ink: #d4d4d4;
+            --tab-rule: #8a8a8a;
         }
 
         /* Page shell: a flex column so the editor can be handed a DEFINITE

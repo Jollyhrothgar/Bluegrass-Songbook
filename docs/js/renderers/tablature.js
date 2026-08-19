@@ -212,25 +212,35 @@ export class TabRenderer {
 
     /**
      * Read the current theme's palette from CSS variables into options.
-     * Structural marks (strings, barlines, stems, beams) derive from
-     * --text-secondary/--text so they stay legible on BOTH themes — the
-     * old hardcoded #333 was near-invisible on the dark background.
+     *
+     * The staff is engraved in THREE tiers of ink, not one:
+     *   1. fret numbers      --text      (brightest — what you read)
+     *   2. stems/beams/bars  --tab-ink   (bright, one step below the notes)
+     *   3. string lines      --tab-rule  (quiet grey — the ruler you read ON)
+     * A single structural colour made beams and string lines identical, so on
+     * the dark theme an eighth-note beam was indistinguishable from the staff
+     * it sat under. --tab-ink/--tab-rule are the staff's OWN tokens (see
+     * css/style.css) — --text-secondary is muted body text used site-wide and
+     * must not be retuned for the tablature's sake. Fallbacks keep a sane
+     * two-tier staff if the tokens are ever missing.
      */
     _refreshThemeColors() {
         const cs = getComputedStyle(document.documentElement);
         const bg = cs.getPropertyValue('--bg').trim() || '#fff';
         const text = cs.getPropertyValue('--text').trim() || '#000';
         const secondary = cs.getPropertyValue('--text-secondary').trim() || '#666';
+        const ink = cs.getPropertyValue('--tab-ink').trim() || secondary;
+        const rule = cs.getPropertyValue('--tab-rule').trim() || secondary;
         const accent = cs.getPropertyValue('--accent').trim() || '#007bff';
         const themed = {
-            stringColor: secondary,
+            stringColor: rule,
             fretColor: text,
             fretBgColor: bg,
-            measureLineColor: secondary,
-            stemColor: secondary,
-            beamColor: secondary,
+            measureLineColor: ink,
+            stemColor: ink,
+            beamColor: ink,
             highlightColor: accent,
-            mutedColor: secondary,  // labels, rests, slurs, annotations
+            mutedColor: ink,  // labels, rests, slurs, annotations
         };
         for (const key of this._themedColorKeys) {
             this.options[key] = themed[key];
