@@ -55,6 +55,17 @@ If duplicates found:
 
 Based on the description, determine:
 
+**First, read the live labels and milestones.** Both drift, and `gh issue
+create` fails outright on a label or milestone that does not exist:
+
+```bash
+gh label list --limit 100
+gh api 'repos/:owner/:repo/milestones?state=all' --jq '.[] | "\(.number) | \(.title) | \(.state)"'
+```
+
+The tables below are a starting guess, verified 2026-08-19 — not a substitute
+for those two commands.
+
 **Label** (pick one primary):
 | Pattern | Label |
 |---------|-------|
@@ -75,11 +86,15 @@ through the in-app editor (`pending_songs` → `pending-commit` dispatch →
 | search, filter, tags, find | Improve Search & Filtering (#3) |
 | songs, imports, sources | Content (#6) |
 | playback, metronome, backing | Playback Engine (#7) |
-| fiddle, ABC, notation | Fiddle Tunes (#8) |
-| tabs, tablature | Tablature (#9) |
+| tabs, tablature, fiddle, ABC, notation | Tablature (#9) |
 | profiles, users, community | Community (#10) |
 | fun, easter egg, game | Fun Features (#5) |
+| refactor, tests, tech debt | Code Health (#11) |
+| submissions, pending_songs, review queue | Contribution pipeline (#12) |
 | unclear/general | Backlog (#4) |
+
+Milestone **#8 Fiddle Tunes is closed** — do not assign to it. ABC/fiddle-tune
+work goes to Tablature (#9) or Content (#6).
 
 **Size** (add as label if confident):
 - `quick-win` - < 1 hour, low risk
@@ -100,7 +115,7 @@ Unless `--yes` flag, use AskUserQuestion with Yes/No:
 ## Issue to Create
 
 **Title:** <generated title>
-**Labels:** bug, size:small
+**Labels:** bug, quick-win
 **Milestone:** Improve Search & Filtering
 
 **Body:**

@@ -51,9 +51,12 @@ to hand it over.
 
 `with-secrets` falls back in order: 1Password if signed in, then an existing
 `.env` (machines without `op`, and CI, where secrets arrive as real environment
-variables), then whatever is already exported. `scripts/bootstrap` deletes a
-stale `.env` once 1Password is reachable, since it is then redundant —
-regenerate one any time with `op inject -i .env.tpl -o .env`.
+variables), then whatever is already exported. `scripts/bootstrap` **does not
+delete** a redundant `.env` — it only prints that you may remove it yourself
+(`rm -f .env analytics/.env`). It used to delete one as soon as `op whoami`
+succeeded, which stranded this very worktree: a 1Password session is per-shell
+and short-lived, so signing in in one terminal removed the fallback for every
+other one. Regenerate one any time with `op inject -i .env.tpl -o .env`.
 
 Sign in once per session with `op signin`.
 
@@ -115,6 +118,10 @@ scripts/lib/
 ├── search_index.py       # Search index utilities and testing
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_pending.py    # GitHub Action: land one pending_songs row in works/
+├── works_writer.py       # THE one writer of works/ (create/update/fork/add/metadata)
+├── bounty_decisions.py   # Lower curation/bounty_decisions.yaml → docs/data/bounty_decisions.json
+├── migration_drift.py    # Report ledger drift in BOTH directions (db-push)
+├── schema_assert.py      # Assert LIVE schema invariants (db-check)
 ├── dedup_scorer.py       # Is this submission already a work? (containment on lyrics)
 ├── dedup_works.py        # Whole-corpus duplicate detection → merge plan JSON
 ├── merge_works.py        # Execute a merge plan (redirects included)
@@ -128,6 +135,10 @@ scripts/lib/
     ├── build_artist_database.py  # Build curated bluegrass artist database
     └── grassiness.py     # Bluegrass detection based on covers/tags
 ```
+
+This tree is hand-maintained and lags. `ls scripts/lib/*.py` is the real
+list — a few utilities (`add_placeholder.py`, `check_index_outputs.py`,
+`coverage_report.py`, `fetch_chords.py`) are deliberately not described here.
 
 ## Quick Commands
 
@@ -432,9 +443,14 @@ so suppressed works are never re-created from sources.
 ### Index Prune — the searchable index is the bluegrass canon
 
 **Policy (Mike, 2026-07-31):** search and collections deliberately show only
-bluegrass + bluegrass-adjacent repertoire (~1,800 songs). The other ~16,900
-works are NOT deleted: they stay on disk, keep their `#work/{slug}` URLs,
-stay in lists, and can be restored to search at any time.
+bluegrass + bluegrass-adjacent repertoire. Everything else is NOT deleted: it
+stays on disk, keeps its `#work/{slug}` URL, stays in lists, and can be
+restored to search at any time.
+
+The kept/archived split moves as songs are promoted, so count it rather than
+quoting a number: `wc -l docs/data/index.jsonl docs/data/archive.jsonl` after
+a build (2,462 kept / 16,762 archived on 2026-08-19; it was ~1,800 / ~16,900
+when this policy landed).
 
 Mechanism: `curation/index_prune.csv` lists work ids that
 `apply_index_prune()` stamps `indexed: false` at build time. A row is

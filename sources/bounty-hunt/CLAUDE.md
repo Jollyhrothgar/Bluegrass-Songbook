@@ -1,9 +1,19 @@
 # Bounty Hunt — wanted-songs acquisition campaign (Aug 2026)
 
-Systematic fulfillment of the bounty board (`docs/data/wanted_songs.json`,
-1,406 ledger-vouched songs the songbook lacks). Vocals/Gospel get
-lyrics+chords charts; instrumentals get tabs (handled via the Hangout
-TEF pipeline and other tab sources, not this directory).
+Systematic fulfillment of the bounty board — the ledger-vouched songs the
+songbook lacks. Vocals/Gospel get lyrics+chords charts; instrumentals get
+tabs (handled via the Hangout TEF pipeline and other tab sources, not this
+directory).
+
+`docs/data/wanted_songs.json` is **build output**, not a hand-edited list:
+`src/build_wanted.py` derives it from `docs/data/bluegrass_catalogue.json`
+minus the corpus, adjusted by `curation/bounty_decisions.yaml`. Change the
+list by editing the YAML and rebuilding. For the current size, read the file
+rather than trusting a number here:
+
+```bash
+uv run python -c "import json; print(len(json.load(open('docs/data/wanted_songs.json'))['songs']))"
+```
 
 ## Pipeline
 

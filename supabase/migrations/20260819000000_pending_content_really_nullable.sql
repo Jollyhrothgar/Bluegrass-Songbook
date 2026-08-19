@@ -21,9 +21,13 @@
 --     20260818010000 requires `content is null` for them, and NOT NULL
 --     forbids exactly that, so every save failed with 23502 — a CHECK and a
 --     NOT NULL that can never both be satisfied.
---   * Placeholder / document-only submissions, which 20260209000000 was
---     written for in the first place, have been unable to write a null
---     content since February.
+--   * Nothing else, which is why it hid for six months. 20260209000000 was
+--     written for document-only placeholders, but that path never actually
+--     sent null -- `git show 204960bf4` has the submitter writing
+--     `content: ''` into the row (the `null` in that commit is in the edge
+--     function's payload, not the column). So the un-applied DROP NOT NULL
+--     was never exercised until part_type='metadata' became its first real
+--     consumer. A dead constraint is invisible until something depends on it.
 --
 -- Idempotent and safe to re-run: DROP NOT NULL on a column that is already
 -- nullable is a no-op, and widening nullability cannot fail against existing

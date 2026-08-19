@@ -237,7 +237,9 @@ overlay branch in the tablature loader, and OTF validation lifted into the
 shared writer — a Phase-2-sized rebuild, not the wiring 4c is. Half-doing
 it would leave the only tab surface split across two servers, so
 `create-tab-pr` + `process-tab-pr.yml` are the durable path for tabs until
-someone chooses that rebuild deliberately.
+someone chooses that rebuild deliberately. *(That was the 4c-era position —
+see the reversal immediately below. Both are deleted now; do not act on this
+paragraph.)*
 
 ***Reversed, 2026-08-18 — the rebuild was chosen and done.*** Mike took the
 Phase-2-sized option rather than keep the exception. Nothing in the 4c
@@ -327,10 +329,16 @@ delete. Approving a `delete` executes; approving a `suppress` or
 both edit files in the repo and no CI path does that from a table — the
 panel says so rather than implying otherwise. The panel's third section
 lists 3b's dedup holds (`pending_songs.dedup_hold`) with admin release /
-reject. Migrations are written but **not applied**: the drop-`doc_staging`
-one opens with a rescue checklist (and the bucket still needs a manual
-delete), and `review_requests` also grants `is_admin()` update/delete on
-`pending_songs` so the hold actions aren't blocked by the 2b policies.
+reject. Both migrations **have since been applied** (verified 2026-08-19:
+`supabase migration list` stamps them, and `doc_staging` is absent from
+`supabase db dump --schema public`) — this line said "written but not
+applied" for days after they had already run, which is precisely the drift
+this plan exists to stop. Never trust a prose note about what is applied;
+ask the database. The drop-`doc_staging` migration opens with a rescue
+checklist, and **the storage bucket still needs a manual delete** — that
+half is not a migration and no command here has performed it. `review_requests`
+also grants `is_admin()` update/delete on `pending_songs` so the hold actions
+aren't blocked by the 2b policies.
 *Addendum, 2026-08-16:* the first pass only wired an entry point for
 `delete`; `suppress` and `merge-redirect` were fileable via `submitReviewRequest`
 but had no UI. Closed: `🙈 Request suppression` and `🔀 Request merge into
@@ -512,6 +520,14 @@ Everything below was checked in-session against this worktree (audit
 2026-08-15 covered all 17 contribution paths). Skip unless something above
 looks wrong.
 
+> ⚠️ **This appendix is a dated SNAPSHOT of a 2026-08-15 audit, not a
+> description of the system today.** Several anchors below have since been
+> fixed or deleted, and rows still worded in the present tense read as
+> current when they are not. Rows superseded as of 2026-08-19 are marked
+> inline. Re-verify before acting on any of them: file paths with `ls`,
+> deployed functions with `supabase functions list`, schema with
+> `supabase db dump --schema public`.
+
 ### Anchors
 
 | Claim | Where |
@@ -521,13 +537,13 @@ looks wrong.
 | Trusted branch → direct commit | `docs/js/editor.js:830,906,960` |
 | Fire-and-forget commit | `docs/js/editor.js:916` |
 | Cleanup deletes on any deploy | `supabase/functions/cleanup-pending/index.ts`; `.github/workflows/cleanup-pending.yml` |
-| No function deploy CI | `grep -rn "supabase/functions" .github/` → nothing |
-| Attribution code is correct, prod is stale | `supabase/functions/create-song-issue/index.ts:66,89` |
-| Overwrite / unquoted YAML / no suppression check | `supabase/functions/auto-commit-song/index.ts` vs `scripts/lib/process_submission.py:150-190` |
-| Five writers of `works/` | `process_submission.py`, `process_correction.py`, `process_tab.py`, `fetch_tune.py`, `auto-commit-song/index.ts` |
-| ~~Doc-upload dead end: nothing reads `doc_staging`~~ — feature removed in 2d (2026-08-15); table/bucket drop written but not applied, see `supabase/migrations/20260815130000_drop_doc_staging.sql` |
-| Tag/genre sync is manual-only | `scripts/lib/fetch_tag_overrides.py`, `scripts/lib/export_genre_suggestions.py` — in no workflow |
-| `tab-submission` supported server-side, no UI caller | `supabase/functions/create-tab-pr/index.ts`; `docs/js/otf-editor/submit-tab.js`; `create-tab.js` unwired |
+| ~~No function deploy CI~~ — **SUPERSEDED**: `.github/workflows/deploy-functions.yml` now deploys them (test-gated) |
+| ~~Attribution code is correct, prod is stale~~ — **SUPERSEDED**: `create-song-issue` is deleted from the repo and from production (`supabase functions list`, 2026-08-19) |
+| ~~Overwrite / unquoted YAML / no suppression check~~ — **SUPERSEDED**: `process_submission.py` is deleted; `auto-commit-song` no longer writes `works/` at all (it classifies and dispatches, and `works_writer.py` does the writing) |
+| ~~Five writers of `works/`~~ — **SUPERSEDED**: `process_submission.py`, `process_correction.py` and `process_tab.py` are all deleted; `works_writer.py` (driven by `process_pending.py`) is now the one writer, with `fetch_tune.py` alongside. No edge function writes `works/` |
+| ~~Doc-upload dead end: nothing reads `doc_staging`~~ — feature removed in 2d (2026-08-15); the table drop **is applied** (verified 2026-08-19: absent from `supabase db dump --schema public`). The `doc-staging` storage bucket is a separate manual delete and may still exist |
+| ~~Tag/genre sync is manual-only~~ — **SUPERSEDED**: both scripts now run hourly from `.github/workflows/sync-community-input.yml` |
+| ~~`tab-submission` supported server-side, no UI caller~~ — **SUPERSEDED**: `create-tab-pr` is deleted from the repo and from production, and `docs/js/create-tab.js` no longer exists. Tabs go through `submit-tab.js` → `pending_songs` → `auto-commit-song` |
 | Importer duplicate minting | #192, `works_importer.normalize_title` vs `cross_site_index.norm_key` |
 | Arrangement machinery already shipped | `x_version_*` metadata, Arrangement pill (`work-view.js`), `song_votes`/`song_vote_counts`, `curation/registry.yaml` |
 | Existing dedup + merge tools | `scripts/lib/dedup_works.py`, `scripts/lib/merge_works.py` |
@@ -546,7 +562,10 @@ looks wrong.
 | Full text, Jaccard over word sets | 0.646 |
 | Full text, containment (∩ / smaller side) | **0.886** |
 
-Composer coverage: **12 of 19,228 works** (0.1%).
+Composer coverage: **12 of 19,228 works** (0.1%) *as measured 2026-08-15*.
+**No longer true** — on 2026-08-19 the built index carries a `composer` on
+14,432 of 19,224 rows (75%). Re-measure before treating composer coverage as
+a gap.
 
 ### Notes
 

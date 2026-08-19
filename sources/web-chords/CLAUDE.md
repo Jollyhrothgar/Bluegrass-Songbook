@@ -43,7 +43,8 @@ web-chords/
 │   └── works_importer.py  # parsed/*.pro -> works/
 ├── parse_report.json      # per-file verdicts, stats, reject reasons
 ├── import_report.json     # created / skipped / merge candidates
-└── new_work_ids.txt       # the 144 work ids this import created
+└── new_work_ids.txt       # 142 work ids — the 144 created minus the two
+                           #   since-deleted suspects (see Residual risk)
 ```
 
 ## Commands
@@ -141,11 +142,14 @@ Three traps this was built to avoid, all of which produced wrong charts:
 ### Residual risk
 
 A page whose title genuinely matches but whose *song* differs cannot be caught
-from the slug. `parse_report.json`'s `review` list flags the emitted files
+from the slug. `parse_report.json`'s `review` list flags the 8 emitted files
 where the catalogue's attribution disagrees with the page's artist — usually a
 cover (Larry Sparks doing a Carter Family song), occasionally a collision.
-`works/black-diamond` (page artist Kiss) and `works/goodbye-girls` (page artist
-Bread) are the known suspects.
+The two known suspects, `black-diamond` (page artist Kiss) and `goodbye-girls`
+(page artist Bread), **have since been removed**: both appear in
+`import_report.json`'s `created_works` but neither exists in `works/` nor in
+`new_work_ids.txt` — which is exactly why that file lists 142 ids and the
+report says 144 created.
 
 ## Import policy
 
