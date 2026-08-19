@@ -411,7 +411,9 @@ export class EditingFacade {
      * shared score structure, so a single-track shift would desync an
      * ensemble doc. reading_list ranges and time_signature_changes are
      * renumbered with it (a range straddling the split grows, keeping
-     * play order intact). One undo step.
+     * play order intact) — and so are placed annotations, which anchor to
+     * written measures exactly like a reading-list range does. One undo
+     * step.
      */
     insertMeasure(measureNum) {
         if (!(measureNum >= 1)) return false;
@@ -431,6 +433,11 @@ export class EditingFacade {
             if (Array.isArray(tsc)) {
                 for (const c of tsc) {
                     if (c.measure >= measureNum) c.measure++;
+                }
+            }
+            if (Array.isArray(this.otf.annotations)) {
+                for (const a of this.otf.annotations) {
+                    if (a.measure >= measureNum) a.measure++;
                 }
             }
             this._invalidateTiming();
@@ -457,6 +464,107 @@ export class EditingFacade {
             if (!note || note.finger === finger) return false;
             if (finger) note.finger = finger;
             else delete note.finger;
+            return true;
+        });
+    }
+
+    // ------------------------------------------------------------------
+    // Placed free-text annotations
+    //
+    // `otf.annotations` is a TOP-LEVEL array of {measure, tick, text}
+    // anchored to a spot in the score, not to a track or a note: section
+    // banners ("PART A"), playing notes ("Long Choke") and chord names
+    // ("Bb6+9") all live here, and the renderer x-positions each one by
+    // its tick within its written measure.
+    //
+    // Two annotations may legitimately share one (measure, tick) —
+    // Welcome to New York m14 carries both "PART B" and "F" at tick 0 —
+    // so they are addressed by INDEX, never by position. Every op keeps
+    // the existing entries' relative order untouched, so a document that
+    // is only read through the editor round-trips byte-for-byte.
+    // ------------------------------------------------------------------
+
+    /** The document's annotations (live array; `[]` when it has none). */
+    annotations() {
+        return this.otf.annotations || [];
+    }
+
+    /**
+     * Index of the annotation at (or nearest to) a position, searching
+     * WITHIN the given measure only.
+     * @param {Object} pos - {measure, tick}
+     * @param {Object} [opts] - {maxTicks} how far from `tick` still counts
+     * @returns {number} index, or -1 when nothing qualifies
+     */
+    findAnnotationIndex({ measure, tick = 0 }, { maxTicks = null } = {}) {
+        const anns = this.annotations();
+        let best = -1;
+        let bestDist = Infinity;
+        for (let i = 0; i < anns.length; i++) {
+            if (anns[i].measure !== measure) continue;
+            const dist = Math.abs((anns[i].tick || 0) - tick);
+            if (dist < bestDist) { bestDist = dist; best = i; }
+        }
+        if (best === -1) return -1;
+        return bestDist <= (maxTicks == null ? Infinity : maxTicks) ? best : -1;
+    }
+
+    /**
+     * Add an annotation. Text is trimmed; empty text is a no-op (an empty
+     * annotation is a blank label nobody can see or select again).
+     * The entry is spliced in at its score-order position — before the
+     * first entry that sorts after it — which never reorders what is
+     * already there.
+     * @returns {boolean} false when nothing was added
+     */
+    addAnnotation({ measure, tick = 0, text }) {
+        const clean = String(text ?? '').trim();
+        if (!clean) return false;
+        if (!Number.isInteger(measure) || measure < 1) return false;
+        if (!Number.isInteger(tick) || tick < 0) return false;
+        return this._mutate('Add text', () => {
+            if (!Array.isArray(this.otf.annotations)) this.otf.annotations = [];
+            const anns = this.otf.annotations;
+            let at = anns.length;
+            for (let i = 0; i < anns.length; i++) {
+                const a = anns[i];
+                if (a.measure > measure
+                    || (a.measure === measure && (a.tick || 0) > tick)) {
+                    at = i;
+                    break;
+                }
+            }
+            anns.splice(at, 0, { measure, tick, text: clean });
+            return true;
+        });
+    }
+
+    /**
+     * Retext an annotation. Empty (or whitespace-only) text DELETES it
+     * rather than persisting a blank — clearing the box is how you get
+     * rid of one.
+     * @returns {boolean} false when nothing changed
+     */
+    setAnnotationText(index, text) {
+        const anns = this.annotations();
+        if (!(index >= 0 && index < anns.length)) return false;
+        const clean = String(text ?? '').trim();
+        if (!clean) return this.deleteAnnotation(index);
+        return this._mutate('Edit text', () => {
+            if (this.otf.annotations[index].text === clean) return false;
+            this.otf.annotations[index].text = clean;
+            return true;
+        });
+    }
+
+    /** Delete an annotation by index. Undoable. */
+    deleteAnnotation(index) {
+        const anns = this.annotations();
+        if (!(index >= 0 && index < anns.length)) return false;
+        return this._mutate('Delete text', () => {
+            this.otf.annotations.splice(index, 1);
+            // Keep plain documents plain (same rule as reading_list)
+            if (this.otf.annotations.length === 0) delete this.otf.annotations;
             return true;
         });
     }

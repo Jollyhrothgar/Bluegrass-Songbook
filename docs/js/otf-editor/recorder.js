@@ -259,6 +259,19 @@ export function dispatchEditorEvent(editor, event) {
             state.setPendingArticulation(params.tech);
             break;
 
+        // === Placed text (the document's `annotations`) ===
+        case 'setAnnotation':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.setAnnotationAtCursor(params.text);
+            break;
+
+        case 'deleteAnnotation':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.deleteAnnotationAtCursor();
+            break;
+
         // === Mode ===
         case 'setMode':
             state.setMode(params.mode);

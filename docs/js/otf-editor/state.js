@@ -477,6 +477,62 @@ export class EditorState {
         }, finger, this.trackId);
     }
 
+    // ------------------------------------------------------------------
+    // Placed free-text annotations, anchored to the CURSOR.
+    //
+    // These are the document's `annotations` ("PART A", "Long Choke",
+    // chord names) — score-level text, not the per-note fingering the
+    // ANNOTATION *mode* deals in. They live in one place only, the
+    // facade's document, so undo/redo covers them like every other edit.
+    // ------------------------------------------------------------------
+
+    /**
+     * How far from the cursor a placed text still counts as "here" when
+     * you ask to edit one: a beat. Coarse enough to catch the label you
+     * are looking at, tight enough that a bar's other labels are safe.
+     */
+    get annotationReach() {
+        return this.otf.timing?.ticks_per_beat || TICKS_PER_BEAT;
+    }
+
+    /**
+     * The annotation at (or within a beat of) the cursor.
+     * @returns {{index: number, annotation: Object}|null}
+     */
+    getAnnotationAtCursor() {
+        const index = this.facade.findAnnotationIndex(
+            { measure: this.cursor.measure, tick: this.cursor.tick },
+            { maxTicks: this.annotationReach });
+        if (index === -1) return null;
+        return { index, annotation: this.facade.annotations()[index] };
+    }
+
+    /**
+     * Write text at the cursor: retext the annotation already there, or
+     * place a new one. Empty text deletes the existing one (and adds
+     * nothing when there is none). Undoable.
+     * @returns {boolean} false when nothing changed
+     */
+    setAnnotationAtCursor(text) {
+        const found = this.getAnnotationAtCursor();
+        if (found) return this.facade.setAnnotationText(found.index, text) !== false;
+        return this.facade.addAnnotation({
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            text,
+        }) !== false;
+    }
+
+    /**
+     * Delete the annotation at/nearest the cursor. Undoable.
+     * @returns {boolean} false when there was none
+     */
+    deleteAnnotationAtCursor() {
+        const found = this.getAnnotationAtCursor();
+        if (!found) return false;
+        return this.facade.deleteAnnotation(found.index) !== false;
+    }
+
     /**
      * Add articulation to note at cursor
      */

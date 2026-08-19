@@ -486,7 +486,9 @@ handleKeyDown(event: KeyboardEvent) {
 | `o` | Insert new measure after current, enter INSERT |
 | `O` | Insert new measure before current, enter INSERT |
 | `r` | Enter ROLL mode |
-| `A` | Enter ANNOTATION mode |
+| `c` | Add/edit the PLACED TEXT at the cursor (opens the text prompt) |
+| `C` | Delete the placed text at the cursor |
+| `A` | Enter ANNOTATION mode (per-note fingering — a different thing) |
 | `v` | Enter VISUAL mode |
 | `x` | Delete note under cursor |
 | `dd` | Delete current beat |
@@ -569,6 +571,57 @@ T2 I0 M3          → String 5 fret 2, string 3 open, string 2 fret 3
 | `~` | Mark as tie |
 | `x` | Remove annotation |
 | `Escape` | Return to NORMAL mode |
+
+### Placed Text (the document's `annotations`)
+
+**Two different things wear the word "annotation".** ANNOTATION *mode*
+above edits per-NOTE marks (fingering, technique) stored on the note.
+The document's top-level `annotations` array is something else: free
+text placed at a spot in the SCORE —
+
+```json
+"annotations": [
+  {"measure": 1, "tick": 0,   "text": "Press F-12 to play whole tune from beginning."},
+  {"measure": 4, "tick": 960, "text": "PART A"},
+  {"measure": 7, "tick": 0,   "text": "Bb6+9"}
+]
+```
+
+— section banners, playing notes AND chord names, all in one array.
+TEF import produces them, `renderers/tablature.js` draws them above the
+staff (x-positioned by `tick` within the written measure, lane-stacked
+on overlap), and the whole document is what a submission carries, so
+editing them needs no pipeline change.
+
+Editing is in NORMAL mode, not a mode of its own — placing a label is
+as ordinary as placing a note:
+
+| Key / control | Action |
+|-----|--------|
+| `c` | Open the text prompt at the cursor — pre-filled with the text already there (within one beat), empty otherwise |
+| `C` | Delete the text at/nearest the cursor |
+| Toolbar **Aa** / **⌫** (Text section) | The same two, for the mouse |
+| In the prompt: `Enter` | Save |
+| In the prompt: `Escape` | Cancel |
+| In the prompt: clear the box, Save | **Delete** — an empty annotation is never stored |
+
+Rules the implementation holds to:
+
+- **Text is trimmed; empty deletes.** There is no way to leave a blank
+  label behind, because a blank one can never be clicked or found again.
+- **Two annotations may share one (measure, tick)** — Welcome to New
+  York m14 carries both "PART B" and "F" — so they are addressed by
+  INDEX. `c` reaches the first at that spot; delete it and `c` reaches
+  the next.
+- **Reach is one beat.** `c` on empty ground adds; `c` within a beat of
+  an existing label edits that one. The status bar's `Text:` field says
+  which label `c` would hit before you press it.
+- **One history stack.** Every write goes through `EditingFacade`'s
+  snapshot undo, so `u` / `Ctrl+R` step through text and note edits
+  together, in the order you made them.
+- **Untouched means untouched.** Adds splice into score order without
+  reordering existing entries; edits mutate one entry in place. A
+  document that is only read round-trips byte-identical.
 
 ---
 

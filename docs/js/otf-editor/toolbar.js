@@ -121,6 +121,16 @@ export class EditorToolbar {
                 <div class="button-group articulation-buttons"></div>
             </div>
             <div class="toolbar-separator"></div>
+            <div class="toolbar-section text-section">
+                <span class="toolbar-label">Text</span>
+                <button class="toolbar-button annotation-button" title="Add or edit the placed text at the cursor — section labels, playing notes, chord names (c)">
+                    <span class="button-content">Aa</span>
+                </button>
+                <button class="toolbar-button annotation-delete-button" title="Delete the placed text at the cursor (Shift+C)">
+                    <span class="button-icon">⌫</span>
+                </button>
+            </div>
+            <div class="toolbar-separator"></div>
             <div class="toolbar-section edit-section">
                 <button class="toolbar-button copy-button" title="Copy selection (y, Cmd+C)">
                     <span class="button-icon">⧉</span>
@@ -184,6 +194,8 @@ export class EditorToolbar {
         this.cutButton = this.element.querySelector('.cut-button');
         this.pasteButton = this.element.querySelector('.paste-button');
         this.loopButton = this.element.querySelector('.loop-button');
+        this.annotationButton = this.element.querySelector('.annotation-button');
+        this.annotationDeleteButton = this.element.querySelector('.annotation-delete-button');
 
         // Create duration buttons
         const durationContainer = this.element.querySelector('.duration-buttons');
@@ -479,6 +491,15 @@ export class EditorToolbar {
 
         this.loopButton.addEventListener('click', () => {
             this.options.onLoop?.();
+        });
+
+        // Placed text: the mouse path to the same prompt `c` opens
+        this.annotationButton.addEventListener('click', () => {
+            this.options.onEditAnnotation?.();
+        });
+
+        this.annotationDeleteButton.addEventListener('click', () => {
+            this.options.onDeleteAnnotation?.();
         });
     }
 

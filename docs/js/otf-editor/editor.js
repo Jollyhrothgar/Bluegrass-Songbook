@@ -14,7 +14,7 @@ import {
 } from '../renderers/measure-timing.js';
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar } from './toolbar.js';
-import { NoteEntryPopover } from './popover.js';
+import { NoteEntryPopover, AnnotationPopover } from './popover.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
 import { ContextMenu } from './context-menu.js';
 import { EditEventRecorder } from './recorder.js';
@@ -79,11 +79,14 @@ export class OTFEditor {
             onShowHelp: () => this._showHelp(),
             onPlayFromCursor: () => this.playFromCursor(),
             onLoopSelection: () => this.loopSelection(),
+            onEditAnnotation: () => this.editAnnotationAtCursor(),
             recorder: this.recorder,
         });
         this.toolbar = new EditorToolbar(this.state, {
             onLoop: () => this.loopSelection(),
             onRest: () => this.cursor.moveByDuration(1),
+            onEditAnnotation: () => this.editAnnotationAtCursor(),
+            onDeleteAnnotation: () => this.deleteAnnotationAtCursor(),
         });
         // Menu actions refocus the editor afterwards — otherwise the
         // keyboard is dead after any mouse-menu action (focus stays on
@@ -111,6 +114,13 @@ export class OTFEditor {
         });
         this.popover = new NoteEntryPopover(this.state, {
             onInsert: (note) => this._handlePopoverInsert(note),
+        });
+        // Placed free text ("PART A", "Long Choke", chord names) — a
+        // sibling prompt of the note popover, anchored to the cursor
+        this.annotationPopover = new AnnotationPopover({
+            onCommit: (text) => this._commitAnnotation(text),
+            onDelete: () => this.deleteAnnotationAtCursor(),
+            onCancel: () => this.editorRoot?.focus(),
         });
 
         // Renderer (wrapping existing TabRenderer)
@@ -213,8 +223,9 @@ export class OTFEditor {
         // Initialize cursor overlay
         this.cursor.init(this.canvasContainer);
 
-        // Initialize popover
+        // Initialize popovers
         this.popover.init(this.container);
+        this.annotationPopover.init(this.container);
 
         // Attach keyboard handler
         this.keyboard.attach(this.editorRoot);
@@ -504,6 +515,9 @@ export class OTFEditor {
         // State change events
         this.state.on('change', () => {
             this._render();
+            // The status bar reads from the document too (placed text at
+            // the cursor), so undo/redo must refresh it as well
+            this._updateStatusBar();
             // Undo/redo can move the tempo — keep the input honest
             const tempoInput = this.statusBar?.querySelector('.tempo-input');
             if (tempoInput && document.activeElement !== tempoInput) {
@@ -856,6 +870,56 @@ export class OTFEditor {
         this.editorRoot.focus();
     }
 
+    // ------------------------------------------------------------------
+    // Placed free text (the document's `annotations`)
+    //
+    // Anchored to the CURSOR, like note entry — there is no separate
+    // text cursor to keep in step. Every write goes through the facade,
+    // so undo/redo covers text exactly as it covers notes.
+    // ------------------------------------------------------------------
+
+    /**
+     * Open the text prompt at the cursor. Pre-filled with the annotation
+     * already there (within a beat), so `c` is one key for both add and
+     * edit — the panel title says which.
+     */
+    editAnnotationAtCursor() {
+        const found = this.state.getAnnotationAtCursor();
+        const cursor = this.state.cursor;
+        const ticksPerBeat = this.state.otf.timing?.ticks_per_beat || TICKS_PER_BEAT;
+        const beat = Math.floor(cursor.tick / ticksPerBeat) + 1;
+        const sub = Math.round((cursor.tick % ticksPerBeat) / (ticksPerBeat / 4));
+
+        this.annotationPopover.open({
+            measure: cursor.measure,
+            tick: cursor.tick,
+            existing: found?.annotation.text || '',
+            beatLabel: beat + (sub > 0 ? '.' + sub : ''),
+        });
+    }
+
+    /** Commit the prompt's text. Empty deletes — never a blank label. */
+    _commitAnnotation(text) {
+        this.recorder?.record('setAnnotation', {
+            measure: this.state.cursor.measure,
+            tick: this.state.cursor.tick,
+            text,
+        });
+        this.state.setAnnotationAtCursor(text);
+        this.editorRoot?.focus();
+    }
+
+    /** Delete the annotation at/nearest the cursor. */
+    deleteAnnotationAtCursor() {
+        this.recorder?.record('deleteAnnotation', {
+            measure: this.state.cursor.measure,
+            tick: this.state.cursor.tick,
+        });
+        const ok = this.state.deleteAnnotationAtCursor();
+        this.editorRoot?.focus();
+        return ok;
+    }
+
     /**
      * Handle save
      */
@@ -889,6 +953,7 @@ export class OTFEditor {
                         <dt>Durations</dt><dd><kbd>q</kbd> quarter · <kbd>e</kbd> eighth · <kbd>s</kbd> sixteenth · <kbd>t</kbd> thirty-second · <kbd>3</kbd> triplet</dd>
                     </dl>
                     <dl>
+                        <dt>Text</dt><dd><kbd>c</kbd> add/edit placed text at cursor (section label, chord name) · <kbd>Shift</kbd>+<kbd>C</kbd> delete it · empty text deletes</dd>
                         <dt>Modes</dt><dd><kbd>v</kbd> visual select · <kbd>A</kbd> annotation · <kbd>Esc</kbd> back to normal</dd>
                         <dt>Edit</dt><dd><kbd>u</kbd> undo · <kbd>Ctrl</kbd>+<kbd>R</kbd> redo · <kbd>y</kbd>/<kbd>p</kbd> copy/paste · <kbd>Cmd</kbd>+<kbd>C</kbd>/<kbd>X</kbd>/<kbd>V</kbd></dd>
                         <dt>Play</dt><dd><kbd>Cmd</kbd>+<kbd>Space</kbd> play from cursor · <kbd>L</kbd> loop selection</dd>
@@ -1078,6 +1143,11 @@ export class OTFEditor {
                 <span class="status-label">Duration:</span>
                 <span class="status-value" data-field="duration">8th</span>
             </span>
+            <span class="status-separator">|</span>
+            <span class="status-item" title="Placed text at the cursor — c to add or edit, Shift+C to delete">
+                <span class="status-label">Text:</span>
+                <span class="status-value" data-field="annotation">—</span>
+            </span>
             <span class="status-hint">
                 Press <kbd>?</kbd> for help
             </span>
@@ -1123,6 +1193,17 @@ export class OTFEditor {
         if (beatEl) beatEl.textContent = beat + (subBeat > 0 ? '.' + subBeat : '');
         if (stringEl) stringEl.textContent = cursor.string;
         if (durationEl) durationEl.textContent = this._getDurationName(currentDuration);
+
+        // Placed text at the cursor — the editor's only way to know which
+        // annotation `c` would edit (the renderer draws them, but marks
+        // none of them as "the one under the cursor")
+        const annEl = this.statusBar.querySelector('[data-field="annotation"]');
+        if (annEl) {
+            const found = this.state.getAnnotationAtCursor();
+            const text = found?.annotation.text || '';
+            annEl.textContent = text.length > 24 ? text.slice(0, 23) + '…' : (text || '—');
+            annEl.title = text;
+        }
     }
 
     /**
@@ -1644,6 +1725,7 @@ export class OTFEditor {
         this.cursor.destroy();
         this.toolbar.destroy();
         this.popover.destroy();
+        this.annotationPopover?.destroy();
         this.renderer?.destroy();
 
         // Clear container
@@ -1656,6 +1738,7 @@ export class OTFEditor {
         this.keyboard = null;
         this.toolbar = null;
         this.popover = null;
+        this.annotationPopover = null;
         this.renderer = null;
         this.player = null;
     }

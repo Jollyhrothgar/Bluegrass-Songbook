@@ -4,6 +4,25 @@
 import { DURATIONS, TICKS_PER_BEAT } from './state.js';
 
 /**
+ * Entry-grid ink.
+ *
+ * The grid is a RULER drawn behind the staff, so it takes the staff's
+ * own rule token (`--tab-rule`, the same quiet grey the string lines
+ * use) and steps back from it with opacity: beats readable, off-beats
+ * a whisper.
+ *
+ * It used to ask for `--text-muted`, a token that exists ONLY in
+ * create.html's inline block — on the main site (the in-app tab editor
+ * opened from a work page) it fell through to the near-black literal
+ * fallback and the grid was invisible against the dark theme. The
+ * fallback here is the token's own value, which is deliberately the
+ * same in both themes, so a missing token can never repeat that.
+ */
+const GRID_STROKE = 'var(--tab-rule, #8a8a8a)';
+const GRID_BEAT_OPACITY = '0.55';
+const GRID_OFFBEAT_OPACITY = '0.25';
+
+/**
  * Map a point in a stave-row's SVG coordinate space to an edit position,
  * using the renderer's real per-measure geometry (TabRenderer rowData
  * measures: {display, x, width, ticks, noteX0, noteW, noteOffset}).
@@ -537,13 +556,14 @@ export class EditorCursor {
                     line.setAttribute('x2', x);
                     line.setAttribute('y2', stringBottom + 4);
 
+                    line.setAttribute('stroke', GRID_STROKE);
                     if (isBeat) {
                         // Bold line for beats
-                        line.setAttribute('stroke', 'var(--text-muted, rgba(0,0,0,0.3))');
+                        line.setAttribute('stroke-opacity', GRID_BEAT_OPACITY);
                         line.setAttribute('stroke-width', '1.5');
                     } else {
                         // Lighter line for off-beats
-                        line.setAttribute('stroke', 'var(--text-muted, rgba(0,0,0,0.15))');
+                        line.setAttribute('stroke-opacity', GRID_OFFBEAT_OPACITY);
                         line.setAttribute('stroke-width', '0.75');
                     }
 
@@ -602,11 +622,12 @@ export class EditorCursor {
                 line.setAttribute('y1', yTop);
                 line.setAttribute('x2', x);
                 line.setAttribute('y2', yBottom);
+                line.setAttribute('stroke', GRID_STROKE);
                 if (l.isBeat) {
-                    line.setAttribute('stroke', 'var(--text-muted, rgba(0,0,0,0.3))');
+                    line.setAttribute('stroke-opacity', GRID_BEAT_OPACITY);
                     line.setAttribute('stroke-width', '1.5');
                 } else {
-                    line.setAttribute('stroke', 'var(--text-muted, rgba(0,0,0,0.15))');
+                    line.setAttribute('stroke-opacity', GRID_OFFBEAT_OPACITY);
                     line.setAttribute('stroke-width', '0.75');
                 }
                 svg.appendChild(line);

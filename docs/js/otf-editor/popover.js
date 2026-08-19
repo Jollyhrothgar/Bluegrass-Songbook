@@ -1,5 +1,10 @@
-// OTF Editor Note Entry Popover
-// UI for entering notes via click/tap
+// OTF Editor popovers
+// UI for entering notes and placed text via click/tap
+//
+// Two siblings live here: NoteEntryPopover (string/fret/technique) and
+// AnnotationPopover (the score's placed free text — "PART A", "Long
+// Choke", chord names). They share the overlay/panel/footer chrome so
+// the second one reads as the same editor, not a bolt-on prompt.
 
 /**
  * Note Entry Popover Component
@@ -625,4 +630,262 @@ export class NoteEntryPopover {
         this.overlay = null;
         this.element = null;
     }
+}
+
+/**
+ * Annotation Popover
+ *
+ * The prompt for the score's placed free text: section banners
+ * ("PART A"), playing notes ("Long Choke") and chord names ("Bb6+9")
+ * all live in the same `annotations` array, so this doubles as the
+ * chord-name entry.
+ *
+ * It is anchored to the editor CURSOR, not to a click: the caller opens
+ * it with the position and the text already there (if any), and gets
+ * back the trimmed text on commit. Clearing the box and saving is a
+ * delete — the same thing the Delete button does — so there is never a
+ * blank annotation to hunt for later.
+ */
+export class AnnotationPopover {
+    constructor(options = {}) {
+        this.options = {
+            onCommit: null,   // (text) => void — '' means delete
+            onDelete: null,
+            onCancel: null,
+            ...options,
+        };
+
+        this.element = null;
+        this.overlay = null;
+        this.input = null;
+        this.isOpen = false;
+        this.context = null;   // {measure, tick, existing}
+
+        this._onKeyDown = this._onKeyDown.bind(this);
+    }
+
+    /** Common labels — one tap instead of typing, like the fret pad. */
+    static SUGGESTIONS = ['Intro', 'PART A', 'PART B', 'Chorus', 'Solo', 'Ending'];
+
+    init(container) {
+        this._applyStyles();
+
+        this.overlay = document.createElement('div');
+        this.overlay.className = 'otf-popover-overlay otf-annotation-overlay';
+        this.overlay.addEventListener('click', (e) => {
+            if (e.target === this.overlay) this.close();
+        });
+
+        this.element = document.createElement('div');
+        this.element.className = 'otf-note-popover otf-annotation-popover';
+        this.overlay.appendChild(this.element);
+        container.appendChild(this.overlay);
+
+        this.overlay.style.display = 'none';
+    }
+
+    _applyStyles() {
+        if (document.querySelector('style[data-otf-annotation-popover]')) return;
+        const style = document.createElement('style');
+        style.setAttribute('data-otf-annotation-popover', '');
+        style.textContent = `
+            .otf-annotation-popover .annotation-input {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 12px;
+                font-size: 16px;
+                border: 2px solid var(--border, #ddd);
+                border-radius: 8px;
+                background: var(--bg, #fff);
+                color: var(--text, #333);
+            }
+
+            .otf-annotation-popover .annotation-input:focus {
+                outline: none;
+                border-color: var(--accent, #007bff);
+            }
+
+            .otf-annotation-popover .annotation-where {
+                font-size: 11px;
+                color: var(--text-muted, #888);
+                margin-top: 8px;
+            }
+
+            .otf-annotation-popover .annotation-suggestions {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                margin-top: 10px;
+            }
+
+            .otf-annotation-popover .annotation-suggestion {
+                padding: 5px 10px;
+                font-size: 12px;
+                border: 1px solid var(--border, #ddd);
+                border-radius: 999px;
+                background: var(--bg, #fff);
+                color: var(--text, #333);
+                cursor: pointer;
+            }
+
+            .otf-annotation-popover .annotation-suggestion:hover {
+                background: var(--bg-hover, #e9e9e9);
+            }
+
+            .otf-annotation-popover .delete-btn {
+                flex: 0 0 auto;
+                color: var(--danger, #dc3545);
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    _renderContent() {
+        const { existing } = this.context;
+        const chips = AnnotationPopover.SUGGESTIONS.map(
+            s => `<button class="annotation-suggestion" data-text="${escapeAttr(s)}">${escapeHtml(s)}</button>`
+        ).join('');
+
+        return `
+            <div class="popover-header">
+                <span class="popover-title">${existing ? 'Edit text' : 'Add text'}</span>
+                <button class="popover-close" title="Close (Escape)">&times;</button>
+            </div>
+            <div class="popover-body">
+                <div class="popover-section">
+                    <label class="section-label">Text</label>
+                    <input type="text" class="annotation-input"
+                           value="${escapeAttr(existing || '')}"
+                           placeholder="PART A, Long Choke, Bb6+9…"
+                           autocomplete="off" spellcheck="false">
+                    <div class="annotation-where">
+                        Measure ${this.context.measure}, beat ${this.context.beatLabel}
+                        · empty text deletes
+                    </div>
+                    <div class="annotation-suggestions">${chips}</div>
+                </div>
+            </div>
+            <div class="popover-footer">
+                <button class="popover-btn cancel-btn">Cancel</button>
+                ${existing ? '<button class="popover-btn delete-btn">Delete</button>' : ''}
+                <button class="popover-btn save-btn primary">Save</button>
+            </div>
+        `;
+    }
+
+    _setupEventListeners() {
+        this.input = this.element.querySelector('.annotation-input');
+
+        this.element.querySelector('.popover-close')
+            .addEventListener('click', () => this.close());
+        this.element.querySelector('.cancel-btn')
+            .addEventListener('click', () => this.close());
+        this.element.querySelector('.save-btn')
+            .addEventListener('click', () => this._commit());
+
+        const del = this.element.querySelector('.delete-btn');
+        del?.addEventListener('click', () => this._delete());
+
+        this.element.querySelectorAll('.annotation-suggestion').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.input.value = btn.dataset.text;
+                this.input.focus();
+            });
+        });
+
+        // Keys are handled on the panel so the editor's own keyboard
+        // handler never sees them (it would read them as commands)
+        this.element.addEventListener('keydown', this._onKeyDown);
+    }
+
+    _onKeyDown(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            event.stopPropagation();
+            this._commit();
+            return;
+        }
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            event.stopPropagation();
+            this.close();
+            return;
+        }
+        // Everything else is ordinary text editing
+        event.stopPropagation();
+    }
+
+    _commit() {
+        const text = (this.input?.value || '').trim();
+        this._closeQuietly();
+        this.options.onCommit?.(text);
+    }
+
+    _delete() {
+        this._closeQuietly();
+        this.options.onDelete?.();
+    }
+
+    /**
+     * Open the prompt for a cursor position.
+     * @param {Object} context - {measure, tick, existing, beatLabel}
+     */
+    open(context = {}) {
+        this.context = {
+            measure: context.measure ?? 1,
+            tick: context.tick ?? 0,
+            existing: context.existing || '',
+            beatLabel: context.beatLabel ?? '1',
+        };
+
+        this.element.innerHTML = this._renderContent();
+        this._setupEventListeners();
+
+        this.overlay.style.display = 'flex';
+        this.isOpen = true;
+
+        // Focus + select so retyping replaces, and Enter alone commits
+        setTimeout(() => {
+            this.input?.focus();
+            this.input?.select();
+        }, 0);
+        this.input?.focus();
+        this.input?.select();
+    }
+
+    /** Close without firing onCancel (used after commit/delete). */
+    _closeQuietly() {
+        if (this.overlay) this.overlay.style.display = 'none';
+        this.isOpen = false;
+    }
+
+    close() {
+        const wasOpen = this.isOpen;
+        this._closeQuietly();
+        if (wasOpen) this.options.onCancel?.();
+    }
+
+    get opened() {
+        return this.isOpen;
+    }
+
+    destroy() {
+        if (this.overlay && this.overlay.parentNode) {
+            this.overlay.parentNode.removeChild(this.overlay);
+        }
+        this.overlay = null;
+        this.element = null;
+        this.input = null;
+    }
+}
+
+function escapeHtml(s) {
+    return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+}
+
+function escapeAttr(s) {
+    return escapeHtml(s).replace(/"/g, '&quot;');
 }

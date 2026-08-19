@@ -450,6 +450,25 @@ export class KeyboardHandler {
             return true;
         }
 
+        // === PLACED TEXT ===
+        // c opens the text prompt at the cursor (add, or edit whatever is
+        // already there); C deletes it outright. This is the score's own
+        // `annotations` array — section banners, playing notes AND chord
+        // names — not the per-note fingering ANNOTATION mode deals in.
+        // Both letters were free; Cmd/Ctrl+C is claimed earlier by the
+        // global clipboard handler, so plain c never shadows a copy.
+        if (key === 'c' && !ctrlKey) {
+            this._commitFretBuffer();
+            this.options.onEditAnnotation?.();
+            return true;
+        }
+        if (key === 'C' && !ctrlKey) {
+            this._commitFretBuffer();
+            this._record('deleteAnnotation', this._cursorParams());
+            this.state.deleteAnnotationAtCursor();
+            return true;
+        }
+
         // === MODE SWITCHING ===
         if (key === 'v') {
             this._commitFretBuffer();
@@ -541,7 +560,11 @@ export class KeyboardHandler {
             this.state.undo();
             return true;
         }
-        if (key === 'R' && ctrlKey) {
+        // Ctrl+R — case-insensitive, because `key` is only 'R' when Shift
+        // is also down. Matching 'R' alone made the redo the help overlay
+        // advertises a key that did nothing (Ctrl+Shift+Z / Ctrl+Y in the
+        // global handler were the only ones that worked).
+        if (key.toLowerCase() === 'r' && ctrlKey) {
             this._commitFretBuffer();
             this._record('redo');
             this.state.redo();
