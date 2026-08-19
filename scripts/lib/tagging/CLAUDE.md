@@ -116,19 +116,17 @@ MB_PORT=5440 uv run python scripts/lib/tagging/grassiness.py --build-tagged
 uv run python scripts/lib/tagging/grassiness.py --score-index
 ```
 
-⚠️ **`--test` and `--lookup` are currently BROKEN** (verified 2026-08-19).
-Both crash printing their results with
-`TypeError: sequence item 0: expected str instance, tuple found` — the CLI
-`', '.join(artists)` at `grassiness.py:810` and `:823` still assumes the old
-list-of-strings artist format, but the scorer now returns `(name, year)`
-tuples. `--lookup` prints the score before it dies; `--test` prints nothing.
-Read `docs/data/grassiness_scores.json` directly until that is fixed.
-
 ```bash
-# Intended usage (crashes today — see above)
 uv run python scripts/lib/tagging/grassiness.py --test
 uv run python scripts/lib/tagging/grassiness.py --lookup "Wagon Wheel"
 ```
+
+Both print through `format_artists`, which renders the scorer's
+`(name, earliest_year)` tuples as `Bill Monroe (1947)` and prints no year at
+all for `UNKNOWN_YEAR` (9999 — the sort-last sentinel, not a date). Until
+2026-08-19 both paths did `', '.join(artists)` on those tuples and died with
+`TypeError: sequence item 0: expected str instance, tuple found` on the first
+title that matched anything (`tests/test_grassiness.py` now pins this).
 
 ## Title Normalization
 
@@ -145,8 +143,9 @@ Example: "The Grass Is Blue (Live Version)" → "grass is blue"
 
 Scores below are read out of `docs/data/grassiness_scores.json` on
 **2026-08-19**; they move whenever the caches are rebuilt. Re-read them with
-`jq '.["<work-id>"].score' docs/data/grassiness_scores.json` (the `--lookup`
-CLI is broken, see Usage above).
+`jq '.["<work-id>"].score' docs/data/grassiness_scores.json`, or with
+`grassiness.py --lookup "<title>"` (which scores the title live against the
+caches rather than reading the scored file).
 
 | Song | Work id | Score | Expected | Result |
 |------|---------|-------|----------|--------|

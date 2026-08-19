@@ -255,7 +255,7 @@ tied melody notes short when backing tracks are playing.
   Tied-note truncation FIXED (3f1b4586e): explicit durs + tie chains
   play full length (cut only by same-string re-attack); ring-model
   parsed tabs sound unchanged.
-  **GO-LIVE STATUS: machinery complete incl. SAVE-BACK — now PR-BASED
+  ~~**GO-LIVE STATUS: machinery complete incl. SAVE-BACK — now PR-BASED
   (d5fa9c13f, replacing the issue-body flow; OTFs blew the 64KB issue
   cap).** Editor 🚀 Submit / create.html → create-tab-pr edge function
   (supabase/functions/create-tab-pr/index.ts): branches off main,
@@ -266,7 +266,17 @@ tied melody notes short when backing tracks are playing.
   `supabase functions deploy create-tab-pr` (GITHUB_PAT needs contents
   write), (2) ear checks (playback durations, repeats UI, create.html),
   (3) nav link for create.html, (4) merge to main (CI = vitest 711 ✓;
-  also 14 e2e + ~71 pytest locally).
+  also 14 e2e + ~71 pytest locally).~~
+  **SUPERSEDED 2026-08-18 — do not act on the paragraph above.** The
+  PR-based save-back is gone: `create-tab-pr`, `process-tab-pr.yml` and
+  `process_tab.py` were deleted from the repo, and `create-tab-pr` was
+  deleted from production (2026-08-19). Tab saves now land in
+  `pending_songs` like song saves and are made durable by
+  `process_pending.apply_tablature_row` — see "Tablature" in
+  `scripts/lib/CLAUDE.md`. In particular the old "remaining before
+  merge" item **"Mike deploys `supabase functions deploy
+  create-tab-pr`" is void** — there is nothing by that name to deploy,
+  and edge functions deploy from CI now (`.github/workflows/deploy-functions.yml`).
 
 ### USABILITY QUEST round 1 (2026-07-08, from Mike's live pass)
 Mike: "interact with the served website… play buttons missing, some

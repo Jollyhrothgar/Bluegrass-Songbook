@@ -771,12 +771,31 @@ results = query_artist_tags_batch(['Bill Monroe', 'Hank Williams'])
 
 ## add_song.py
 
-Adds a `.pro` file to `sources/manual/parsed/` and rebuilds index.
+Creates a work in `works/` from a local `.pro` file, then rebuilds the index.
 
 ```bash
 ./scripts/utility add-song ~/Downloads/my_song.pro
+./scripts/utility add-song song.pro --title "Salt Creek" --artist "Bill Monroe"
+./scripts/utility add-song song.pro --on-collision suffix
 ./scripts/utility add-song song.pro --skip-index-rebuild
 ```
+
+- Metadata (title / artist / composer / key) is read from the chart's own
+  `{meta: ...}` / `{title: ...}` directives with the same parser the index
+  build uses; the flags override. No title anywhere is an error.
+- The id is `slugify(title)` (or `--id`), the same rule
+  `process_pending.tab_work_slug` mints with.
+- It writes through `works_writer.create_work` — so a suppressed/redirected
+  id is refused, an existing work is **never** overwritten (`fail` is the
+  default here rather than the importers' `suffix`), and the part carries
+  `provenance.source: manual` + `source_file` + `imported_at`.
+- The rebuild runs `build_works_index.py` (the primary builder).
+
+Fixed 2026-08-19. It used to copy the file into `songs/manual/parsed/` — a
+directory no build reads; the legacy `build_index.py` it then ran scans
+`sources/*/parsed/` — so the command printed "Added:", exited 0, and put the
+song nowhere. `songs/manual/parsed/roustabout.pro` (commit 75e93a7a0, "claude
+didn't add everything") is the one known casualty.
 
 ## process_pending.py — the live contribution path
 

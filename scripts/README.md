@@ -71,12 +71,21 @@ Frequently used:
 ./scripts/utility db-check                      # Assert schema invariants (read-only)
 ```
 
-> ⚠️ `./scripts/utility add-song /path/to/song.pro` is **legacy and does not
-> add a song to the site.** `scripts/lib/add_song.py` copies the file into
-> `songs/manual/parsed/` and then rebuilds `scripts/lib/build_index.py`, which
-> reads `sources/manual/parsed/` — a different directory. Neither feeds
-> `works/`, which is what `build_works_index.py` (and therefore the site)
-> reads. Use the in-app editor, or hand-author `works/{slug}/`.
+```bash
+./scripts/utility add-song /path/to/song.pro    # local chart -> works/{slug}/
+```
+
+`scripts/lib/add_song.py` writes through `works_writer.create_work`: the work
+id is `slugify(title)` (or `--id`), title/artist/composer/key come from the
+file's `{meta: ...}` directives unless overridden, and the part is stamped
+`provenance.source: manual`. An existing or suppressed id is refused rather
+than overwritten (`--on-collision suffix` opts into `{slug}-1`). It rebuilds
+`build_works_index.py` afterwards unless `--skip-index-rebuild`.
+
+(Before 2026-08-19 it copied the file into `songs/manual/parsed/` and rebuilt
+the LEGACY `build_index.py`, which reads `sources/manual/parsed/` — a
+different directory. Neither fed `works/`, so the command was a no-op that
+exited 0.)
 
 ## Source-Specific Scripts
 

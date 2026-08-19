@@ -81,12 +81,13 @@ uv run pytest                       # Run Python tests
 npm test                            # Run frontend (vitest) tests
 ```
 
-> ⚠️ `./scripts/utility add-song FILE` is **legacy and does not add a song to
-> the site.** It copies the file into `songs/manual/parsed/` and rebuilds the
-> old `scripts/lib/build_index.py` index, which reads `sources/manual/parsed/`
-> — neither path feeds `works/`, and the site index is built from `works/` by
-> `scripts/lib/build_works_index.py`. To add a song, use the in-app editor or
-> hand-author `works/{slug}/work.yaml` + its part file.
+`./scripts/utility add-song FILE.pro` adds a local chart to the corpus: it
+creates `works/{slug}/` through `works_writer` (the one writer of `works/`),
+taking title/artist/composer/key from the file's own `{meta: ...}` directives,
+then rebuilds the index. It refuses rather than overwrite an existing work —
+pass `--on-collision suffix` if a second arrangement really is intended.
+(Until 2026-08-19 it copied the file into `songs/manual/parsed/`, which no
+build has ever read, and reported success.)
 
 ## Project Structure
 

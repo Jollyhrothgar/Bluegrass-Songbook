@@ -22,12 +22,13 @@ Corpus size drifts constantly, so count it rather than quoting this file:
 ./scripts/bootstrap --quick          # Rebuild docs/data/ from works/
 ```
 
-> ⚠️ **`./scripts/utility add-song FILE.pro` does not put a song on the site.**
-> `scripts/lib/add_song.py` copies into `songs/manual/parsed/` and then rebuilds
-> with the LEGACY `build_index.py`, which reads `sources/manual/parsed/` — a
-> different directory — and neither feeds `works/`, which is what the real
-> index is built from. To add a song, write `works/<slug>/work.yaml` + its part
-> and run `./scripts/bootstrap --quick`.
+`./scripts/utility add-song FILE.pro` creates `works/<slug>/` from a local
+chart via `works_writer.create_work` and rebuilds the index. Metadata comes
+from the file's own `{meta: ...}` directives (`--title` / `--artist` /
+`--composer` / `--key` / `--id` override); an id that is taken is an error,
+not an overwrite (`--on-collision suffix` to mint `<slug>-1` instead).
+Fixed 2026-08-19 — it used to copy the file into `songs/manual/parsed/`,
+which nothing reads, and print "Added:".
 
 ## Secrets
 
@@ -377,9 +378,17 @@ $EDITOR works/<slug>/lead-sheet.pro
 ./scripts/bootstrap --quick           # rebuild docs/data/ from works/
 ```
 
-⚠️ `./scripts/utility add-song` is **legacy and does not do this** — it writes
-to `songs/manual/parsed/` and rebuilds the legacy index from
-`sources/manual/parsed/`, so the song never reaches `works/` or the site.
+Or, when the chart already exists as a `.pro` file, let the CLI do exactly
+that:
+
+```bash
+./scripts/utility add-song ~/Downloads/my-song.pro
+```
+
+It reads the file's `{meta: ...}` metadata, mints the slug the same way the
+rest of the pipeline does (`slugify(title)`), writes through `works_writer`
+(so suppressed ids and existing works are refused, never overwritten), and
+rebuilds `docs/data/`.
 
 ### Rebuilding the Search Index
 

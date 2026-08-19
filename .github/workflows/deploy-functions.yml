@@ -1,20 +1,26 @@
 name: Deploy Supabase Functions
 
 # Phase 1a of the contribution pipeline (docs/plans/contribution-pipeline.md,
-# issue #217): nothing in .github/ deploys supabase/functions/ today — all
-# seven functions are hand-deployed, so production is whatever someone last
-# pushed from a laptop.
+# issue #217). THIS workflow is what deploys supabase/functions/ — it has been
+# live since 2026-08-16, so production is what last merged to main, not what
+# someone last pushed from a laptop. The pre-CI baseline hand-deploy the
+# original header warned about happened before that first run; it is history.
 #
-# BEFORE THIS WORKFLOW'S FIRST REAL RUN: the current prod state of all seven
-# functions is unknown, so a hand-deploy to a known baseline must happen
-# first, or this workflow's first run will silently overwrite them with
-# whatever's on main. From a machine with the Supabase CLI logged in:
+# What is deployed: every directory under supabase/functions/ except _shared
+# (auto-commit-song, cleanup-pending, create-flag-issue, create-song-request,
+# create-superuser-request, reconcile-pending). Count it rather than trusting
+# this list — `ls supabase/functions/` and `supabase functions list`. They
+# agreed on 2026-08-19, after create-tab-pr and create-song-issue were
+# deleted from both the repo and production.
 #
-#   supabase functions deploy --project-ref ofmqlrnyldlmvggihogt
+# Deleting a function from the repo does NOT delete it from production —
+# `supabase functions deploy` only pushes what it finds. Removing one means
+# `supabase functions delete <name> --project-ref ofmqlrnyldlmvggihogt` by
+# hand, or it keeps serving the last version that was pushed.
 #
-# Also: the SUPABASE_ACCESS_TOKEN secret must be added to the repo (Settings
-# > Secrets and variables > Actions) before this workflow can run at all —
-# it has no fallback and will fail loudly without it.
+# The SUPABASE_ACCESS_TOKEN secret (Settings > Secrets and variables >
+# Actions) is required and has no fallback: without it the deploy step fails
+# loudly rather than skipping.
 
 on:
   push:
