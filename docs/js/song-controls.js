@@ -17,7 +17,7 @@ import {
     subscribe
 } from './state.js';
 import { CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
-import { escapeHtml, downloadFile } from './utils.js';
+import { escapeHtml, escapeAttr, safeUrl, downloadFile } from './utils.js';
 import { getSongContent } from './song-content.js';
 import { pill } from './shell.js';
 import { trackTranspose, trackExport } from './analytics.js';
@@ -250,8 +250,12 @@ export function buildInfoPill(song, versions = []) {
         const bookDisplay = song?.book || null;
         const bookUrl = song?.book_url || null;
         if (bookDisplay) {
-            const bookHtml = bookUrl
-                ? `<a href="${bookUrl}" target="_blank" rel="noopener">${escapeHtml(bookDisplay)}</a>`
+            // book_url rides in on the work/index row, so it is submitter
+            // data: scheme-check it, and show plain text when it isn't a
+            // real link (escaping alone would not stop `javascript:`).
+            const bookHref = safeUrl(bookUrl);
+            const bookHtml = bookHref
+                ? `<a href="${bookHref}" target="_blank" rel="noopener">${escapeHtml(bookDisplay)}</a>`
                 : escapeHtml(bookDisplay);
             infoItems.push(`<div class="info-item"><span class="info-label">From:</span> ${bookHtml}</div>`);
         }
@@ -271,7 +275,7 @@ export function buildInfoPill(song, versions = []) {
                 const category = getTagCategory(tag);
                 const displayName = formatTagName(tag);
                 return `
-                    <span class="votable-tag tag-${category}" data-tag="${escapeHtml(tag)}">
+                    <span class="votable-tag tag-${category}" data-tag="${escapeAttr(tag)}">
                         <span class="tag-name">${escapeHtml(displayName)}</span>
                         ${isLoggedIn ? `
                             <span class="vote-chip">

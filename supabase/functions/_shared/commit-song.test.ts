@@ -19,6 +19,7 @@ import {
 import {
   GITHUB_REPO,
   getFileContent,
+  isPlaceholderRow,
   type PendingSong,
   holdReason,
   unretryableReason,
@@ -216,6 +217,67 @@ Deno.test("unretryableReason: a metadata row must still name its target work", (
     "metadata row names no target work",
   )
   assertEquals(unretryableReason({ ...meta, title: "" }), "missing title")
+})
+
+// ============================================
+// isPlaceholderRow
+// ============================================
+//
+// A song REQUEST: a work that is wanted, with no chart behind it yet. The
+// predicate decides which column classifyChange puts the row in, so getting it
+// wrong in either direction is a write to the wrong place.
+
+const request = (over: Partial<PendingSong> = {}): PendingSong => ({
+  id: "salt-creek-bill-monroe",
+  title: "Salt Creek",
+  content: null,
+  status: "placeholder",
+  ...over,
+})
+
+Deno.test("isPlaceholderRow: status placeholder + no content", () => {
+  assertEquals(isPlaceholderRow(request()), true)
+  assertEquals(isPlaceholderRow(request({ content: "" })), true)
+  assertEquals(isPlaceholderRow(request({ content: "   \n" })), true)
+})
+
+Deno.test("isPlaceholderRow: an ordinary chart row is not one", () => {
+  assertEquals(isPlaceholderRow(row()), false)
+  assertEquals(isPlaceholderRow(row({ status: null })), false)
+  assertEquals(isPlaceholderRow(row({ status: "complete" })), false)
+})
+
+Deno.test("isPlaceholderRow: CONTENT WINS over a stale status column", () => {
+  // The trap, and the reason this asks two questions instead of one.
+  // `pending_songs.id` for a chart IS the work slug — and so is a request's —
+  // so the editor's save upserts onto the very same row a request created.
+  // PostgREST only overwrites the columns in the payload, so `status` can
+  // still read 'placeholder' on a row that now carries a real chart. Reading
+  // status alone would classify that chart as a request and mint an empty
+  // work in place of the submitter's ChordPro.
+  const grownUp = request({ content: "{title: Salt Creek}\n[G]…\n" })
+  assertEquals(isPlaceholderRow(grownUp), false)
+})
+
+Deno.test("isPlaceholderRow: only the chart column can hold a request", () => {
+  // A tab or a metadata row is never a song request, whatever its status
+  // says: both live in their own id namespaces and target a work.
+  assertEquals(isPlaceholderRow(request({ part_type: "tablature" })), false)
+  assertEquals(isPlaceholderRow(request({ part_type: "metadata" })), false)
+  // Absent means chart — every row written before 2026-08-18 has no part_type.
+  assertEquals(isPlaceholderRow(request({ part_type: null })), true)
+})
+
+Deno.test("unretryableReason: a song REQUEST is retryable WITHOUT content", () => {
+  // Before the placeholder column existed this row read as a chart with no
+  // content, i.e. permanently unretryable: every untrusted user's song
+  // request was filed for manual rescue an hour after they made it, and the
+  // reconciler opened an alert issue about it.
+  assertEquals(unretryableReason(request()), null)
+  assertEquals(unretryableReason(request({ content: "" })), null)
+  // The two fields it does still need.
+  assertEquals(unretryableReason(request({ id: "" })), "missing id")
+  assertEquals(unretryableReason(request({ title: "" })), "missing title")
 })
 
 // ============================================

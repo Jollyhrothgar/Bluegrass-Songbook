@@ -30,7 +30,7 @@
 //                       hold" (dedup_hold -> null; the reconciler re-dispatches
 //                       it next pass) or "Reject" (delete the pending row).
 
-import { escapeHtml } from './utils.js';
+import { escapeHtml, escapeAttr } from './utils.js';
 import { searchWorksForTab, tabResultsState } from './add-song-picker.js';
 
 const PANEL_ID = 'review-queue-panel';
@@ -474,8 +474,8 @@ export function showMergeRequestDialog(song, { songs = [], search = searchWorksF
                 ? matches.map(s => `
                     <li>
                         <button type="button" class="merge-target-result"
-                                data-target-id="${escapeHtml(s.id)}"
-                                data-target-title="${escapeHtml(s.title || s.id)}">
+                                data-target-id="${escapeAttr(s.id)}"
+                                data-target-title="${escapeAttr(s.title || s.id)}">
                             <span class="merge-target-result-title">${escapeHtml(s.title || s.id)}</span>
                             ${s.artist ? `<span class="merge-target-result-artist">${escapeHtml(s.artist)}</span>` : ''}
                         </button>
@@ -683,7 +683,7 @@ export function renderReviewQueue(panel, {
 function renderHold(row, reviewer) {
     const hold = describeHold(row);
     return `
-        <li class="review-queue-item review-hold-item" data-hold-id="${escapeHtml(hold.id)}">
+        <li class="review-queue-item review-hold-item" data-hold-id="${escapeAttr(hold.id)}">
             <div class="review-item-head">
                 <span class="review-item-kind">Held</span>
                 <a class="review-item-target" href="#work/${encodeURIComponent(hold.id)}">${escapeHtml(hold.id)}</a>
@@ -708,7 +708,7 @@ function renderRow(request, reviewer) {
     const into = request.payload?.redirect_to;
 
     return `
-        <li class="review-queue-item" data-status="${escapeHtml(status)}" data-id="${escapeHtml(request.id || '')}">
+        <li class="review-queue-item" data-status="${escapeAttr(status)}" data-id="${escapeAttr(request.id || '')}">
             <div class="review-item-head">
                 <span class="review-item-kind">${escapeHtml(kind.label)}</span>
                 <a class="review-item-target" href="#work/${encodeURIComponent(request.target_id)}">${escapeHtml(request.target_id)}</a>

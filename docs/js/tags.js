@@ -2,6 +2,7 @@
 
 import { setTagTerms, toggleTagTerm } from './search-query.js';
 import { songHasAbc } from './song-content.js';
+import { escapeHtml, escapeAttr } from './utils.js';
 
 // Tag category mapping for display
 export const TAG_CATEGORIES = {
@@ -136,7 +137,13 @@ export function songHasTags(song, requiredTags) {
 }
 
 /**
- * Render tags as badges for a song
+ * Render tags as badges for a song.
+ *
+ * ⚠️ Currently has no caller outside its own tests — if you wire it up,
+ * note that `onClick` builds an INLINE handler, i.e. the tag lands in a JS
+ * string inside an HTML attribute and needs BOTH escapes (see below). A
+ * `data-tag` attribute plus a delegated listener would be safer; this is
+ * kept only because the shape is already here.
  */
 export function renderTagBadges(song, onClick = null) {
     const songTags = song.tags || {};
@@ -147,9 +154,14 @@ export function renderTagBadges(song, onClick = null) {
     return tagEntries.map(([tag, value]) => {
         const category = getTagCategory(tag);
         const displayName = formatTagName(tag);
-        const clickAttr = onClick ? `onclick="${onClick}(event, '${tag}')"` : '';
+        // JSON.stringify makes `tag` a valid JS string literal; escapeAttr
+        // then makes the whole handler a valid attribute value. Either alone
+        // leaves a breakout (a `'` ends the literal, a `"` ends the attribute).
+        const clickAttr = onClick
+            ? `onclick="${escapeAttr(`${onClick}(event, ${JSON.stringify(tag)})`)}"`
+            : '';
         const clickClass = onClick ? 'clickable' : '';
-        return `<span class="tag-badge tag-${category} ${clickClass}" ${clickAttr}>${displayName}</span>`;
+        return `<span class="tag-badge tag-${category} ${clickClass}" ${clickAttr}>${escapeHtml(displayName)}</span>`;
     }).join('');
 }
 

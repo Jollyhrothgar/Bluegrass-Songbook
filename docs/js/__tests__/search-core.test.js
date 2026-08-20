@@ -7,7 +7,10 @@ vi.mock('../state.js', () => ({
     songGroups: {}
 }));
 
-vi.mock('../utils.js', () => ({
+// Spread the real module so a new util export never silently arrives as
+// `undefined` here; override only what this test deliberately neutralizes.
+vi.mock('../utils.js', async (importOriginal) => ({
+    ...await importOriginal(),
     highlightMatch: vi.fn((text) => text)
 }));
 

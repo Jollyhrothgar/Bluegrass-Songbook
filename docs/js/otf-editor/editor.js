@@ -14,7 +14,8 @@ import {
 } from '../renderers/measure-timing.js';
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar } from './toolbar.js';
-import { NoteEntryPopover, AnnotationPopover } from './popover.js';
+import { NoteEntryPopover, AnnotationPopover, TrackNamePopover } from './popover.js';
+import { sanitizeTrackId } from './facade.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
 import { ContextMenu } from './context-menu.js';
 import { EditEventRecorder } from './recorder.js';
@@ -87,6 +88,8 @@ export class OTFEditor {
             onRest: () => this.cursor.moveByDuration(1),
             onEditAnnotation: () => this.editAnnotationAtCursor(),
             onDeleteAnnotation: () => this.deleteAnnotationAtCursor(),
+            onRenameTrack: () => this.renameCurrentTrack(),
+            onMoveTrack: (delta) => this.moveCurrentTrack(delta),
         });
         // Menu actions refocus the editor afterwards — otherwise the
         // keyboard is dead after any mouse-menu action (focus stays on
@@ -120,6 +123,14 @@ export class OTFEditor {
         this.annotationPopover = new AnnotationPopover({
             onCommit: (text) => this._commitAnnotation(text),
             onDelete: () => this.deleteAnnotationAtCursor(),
+            onCancel: () => this.editorRoot?.focus(),
+        });
+        // Renaming an instrument track — the third sibling prompt. It
+        // pre-validates against the other tracks' names so the facade's
+        // duplicate-id guard never has to surface as a thrown error.
+        this.trackNamePopover = new TrackNamePopover({
+            sanitize: sanitizeTrackId,
+            onCommit: (name) => this._commitTrackName(name),
             onCancel: () => this.editorRoot?.focus(),
         });
 
@@ -226,6 +237,7 @@ export class OTFEditor {
         // Initialize popovers
         this.popover.init(this.container);
         this.annotationPopover.init(this.container);
+        this.trackNamePopover.init(this.container);
 
         // Attach keyboard handler
         this.keyboard.attach(this.editorRoot);
@@ -916,6 +928,60 @@ export class OTFEditor {
             tick: this.state.cursor.tick,
         });
         const ok = this.state.deleteAnnotationAtCursor();
+        this.editorRoot?.focus();
+        return ok;
+    }
+
+    // ------------------------------------------------------------------
+    // Instrument tracks: name and order
+    //
+    // Both are toolbar-only, next to the track switcher — which is also
+    // the only way to CHOOSE a track, and the only place the names are
+    // written down. No key bindings: switching tracks has never had one,
+    // and these are once-per-document edits, not entry-speed ones.
+    // ------------------------------------------------------------------
+
+    /** Open the rename prompt for the track being edited. */
+    renameCurrentTrack() {
+        const track = this.state.getCurrentTrack();
+        if (!track) return false;
+        const tracks = this.state.getTracks();
+        this.trackNamePopover.open({
+            current: track.id,
+            instrument: track.instrument,
+            taken: tracks.filter(t => t !== track).map(t => t.id),
+            position: this.state.getTrackIndex() + 1,
+            total: tracks.length,
+        });
+        return true;
+    }
+
+    /** Commit a new track name. The prompt has already validated it. */
+    _commitTrackName(name) {
+        this.recorder?.record('renameTrack', {
+            trackId: this.state.trackId,
+            newId: name,
+        });
+        let ok = false;
+        try {
+            ok = this.state.renameTrack(name);
+        } catch (err) {
+            // Only reachable if the document changed under the open
+            // prompt. Say so rather than dying inside a click handler.
+            console.warn('Rename failed:', err.message);
+        }
+        this.editorRoot?.focus();
+        return ok;
+    }
+
+    /**
+     * Move the current track `delta` places (-1 earlier, +1 later).
+     * First place is the lead: work-view shows and sounds the first
+     * pitched track by default.
+     */
+    moveCurrentTrack(delta) {
+        this.recorder?.record('moveTrack', { trackId: this.state.trackId, delta });
+        const ok = this.state.moveTrack(delta);
         this.editorRoot?.focus();
         return ok;
     }
@@ -1726,6 +1792,7 @@ export class OTFEditor {
         this.toolbar.destroy();
         this.popover.destroy();
         this.annotationPopover?.destroy();
+        this.trackNamePopover?.destroy();
         this.renderer?.destroy();
 
         // Clear container
@@ -1739,6 +1806,7 @@ export class OTFEditor {
         this.toolbar = null;
         this.popover = null;
         this.annotationPopover = null;
+        this.trackNamePopover = null;
         this.renderer = null;
         this.player = null;
     }

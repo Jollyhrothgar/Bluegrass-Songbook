@@ -33,7 +33,10 @@ vi.mock('../song-view.js', () => ({
     openSong: vi.fn()
 }));
 
-vi.mock('../utils.js', () => ({
+// Spread the real module so a new util export never silently arrives as
+// `undefined` here; override only what this test deliberately replaces.
+vi.mock('../utils.js', async (importOriginal) => ({
+    ...await importOriginal(),
     escapeHtml: vi.fn((text) => text),
     generateLocalId: vi.fn(() => 'local_' + Math.random().toString(36).slice(2)),
     requireLogin: vi.fn(() => true),

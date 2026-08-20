@@ -54,6 +54,39 @@ export interface PendingSong {
   instrument?: string | null
   /** Tab corrections only: the works/ filename being corrected. */
   part_file?: string | null
+  /**
+   * 'placeholder' on a song REQUEST — a work that is wanted and has no chart
+   * yet. `process_pending` copies it straight into work.yaml's `status`,
+   * which is what `utils.isPlaceholder` and the bounty board read. The other
+   * legal value is 'complete'; a CHECK on pending_songs enforces both.
+   */
+  status?: string | null
+  /** Free text from the submitter. On a request, why they want the song. */
+  notes?: string | null
+}
+
+/**
+ * Is this row a song REQUEST — a placeholder, with no chart behind it yet?
+ *
+ * THE one definition, because three parties have to agree: the reconciler
+ * (which must not file a contentless request as broken), `classifyChange`
+ * (which puts it in the placeholder column), and `process_pending.py`'s
+ * `is_placeholder_row` on the other side of the dispatch.
+ *
+ * Two conditions, and the second is load-bearing rather than belt-and-braces.
+ * `status` is a STICKY column: a chart save upserts on the same id (a chart
+ * row's id is its work slug, and so is a request's), so a row that was a
+ * request and has since grown a real chart can still be carrying
+ * `status: 'placeholder'`. Content is what settles it — once there is a chart
+ * this is a chart row, whatever the status column still says. Asking `status`
+ * alone would drop that submitter's ChordPro on the floor and mint an empty
+ * work over the top of their song, which is the exact failure this whole
+ * column was rewritten to stop.
+ */
+export function isPlaceholderRow(entry: PendingSong): boolean {
+  if ((entry.part_type || 'lead-sheet') !== 'lead-sheet') return false
+  if (entry.status !== 'placeholder') return false
+  return !(entry.content || '').trim()
 }
 
 const githubHeaders = (githubToken: string) => ({
@@ -121,6 +154,15 @@ export function unretryableReason(entry: PendingSong): string | null {
     if (!entry.replaces_id) return 'metadata row names no target work'
     return null
   }
+
+  // A song REQUEST is the other contentless shape, and for the same reason a
+  // metadata row is: a placeholder is a work with metadata and `parts: []`,
+  // so there is no chart to carry. Demanding content would have made every
+  // request permanently "unretryable" — filed for manual rescue an hour after
+  // it was made, with an alert issue opened about a well-formed row. (That is
+  // not hypothetical: before this column existed, every untrusted user's
+  // request sat here as `missing content` forever.)
+  if (isPlaceholderRow(entry)) return null
 
   if (!entry.content) return 'missing content'
   return null

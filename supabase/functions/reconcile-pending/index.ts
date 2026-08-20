@@ -39,12 +39,17 @@
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2"
-import { holdReason, unretryableReason, type PendingSong } from "../_shared/commit-song.ts"
+import {
+  holdReason,
+  isPlaceholderRow,
+  unretryableReason,
+  type PendingSong,
+} from "../_shared/commit-song.ts"
 import { attributionFor } from "../_shared/identity.ts"
 import {
   classifyChange,
   dispatchPendingCommit,
-  MetadataRefusedError,
+  DispatchRefusedError,
 } from "../_shared/pending-dispatch.ts"
 
 const corsHeaders = {
@@ -122,7 +127,13 @@ serve(async (req) => {
       // re-classified as a chart edit of the work named by its `meta:...` id
       // — i.e. a create of a garbage slug. Both are data corruption, and both
       // are invisible until somebody opens the work.
-      .select('id, replaces_id, title, artist, composer, content, key, mode, tags, created_at, created_by, dedup_hold, part_type, instrument, part_file')
+      //
+      // `status` is here for the same reason: with `content` it is what says
+      // a row is a song REQUEST (isPlaceholderRow). Without it every request
+      // reads as a chart row with no content — permanently "unretryable",
+      // filed for manual rescue, one alert issue per person who ever asked
+      // for a song.
+      .select('id, replaces_id, title, artist, composer, content, key, mode, tags, created_at, created_by, dedup_hold, part_type, instrument, part_file, status')
       .eq('github_committed', false)
       .order('created_at', { ascending: true })
 
@@ -186,10 +197,10 @@ serve(async (req) => {
           .eq('user_id', actorId)
           .maybeSingle()
 
-        // part_type / part_file ride along so a retried TAB or METADATA row
-        // is classified the way the live path would have classified it.
-        // Without them a tab row would be re-dispatched as a chart and land
-        // as lead-sheet.pro holding an OTF document.
+        // part_type / part_file / placeholder ride along so a retried TAB,
+        // METADATA or REQUEST row is classified the way the live path would
+        // have classified it. Without them a tab row would be re-dispatched
+        // as a chart and land as lead-sheet.pro holding an OTF document.
         const classification = await classifyChange({
           rowId: row.id,
           replacesId: row.replaces_id,
@@ -199,6 +210,7 @@ serve(async (req) => {
           title: row.title,
           partType: row.part_type,
           partFile: row.part_file,
+          placeholder: isPlaceholderRow(row),
         })
 
         let actor = actorId
@@ -224,15 +236,16 @@ serve(async (req) => {
         console.log(`Re-dispatched ${row.id} as ${classification.mode}`)
       } catch (e) {
         const message = e instanceof Error ? e.message : String(e)
-        // A refused metadata edit will be refused identically every hour —
-        // ownership of a work does not change by waiting. It belongs in
-        // `unretryable` (needs a human to delete the row or grant trust), not
-        // in `stuck` (worth another GitHub call next hour). RLS lets any
-        // logged-in user INSERT a metadata row targeting any work, so this is
-        // a reachable state even though auto-commit-song already told them no
-        // in the browser.
-        if (e instanceof MetadataRefusedError) {
-          console.warn(`Refused metadata row ${row.id}:`, message)
+        // A refusal will be repeated identically every hour — neither
+        // ownership of a work nor the existence of one changes by waiting. It
+        // belongs in `unretryable` (needs a human to delete the row or grant
+        // trust), not in `stuck` (worth another GitHub call next hour). RLS
+        // lets any logged-in user INSERT a metadata row targeting any work,
+        // and a request row can lose its race with a real submission of the
+        // same song, so both are reachable states even though the live path
+        // already told the caller no in the browser.
+        if (e instanceof DispatchRefusedError) {
+          console.warn(`Refused row ${row.id} (${e.name}):`, message)
           unretryable.push({ id: row.id, title: row.title, created_at: row.created_at ?? null, error: message })
           continue
         }

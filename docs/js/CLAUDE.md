@@ -800,6 +800,17 @@ Frictionless song requests without a GitHub account.
   branches on identity: **signed in** → a `pending_songs` placeholder the
   requester owns (and lands on); **anonymous** → a `tune-request` GitHub
   issue and a confirmation, with no placeholder work minted
+- The signed-in branch takes the same road as every other contribution
+  (2026-08-19): a `pending_songs` row with `status: 'placeholder'` and no
+  content, then the `pending-commit` dispatch → `works_writer`. It used to
+  PUT `work.yaml` to the GitHub Contents API itself, passing the existing
+  file's sha whenever the slug was taken — i.e. **overwriting a real work
+  with an empty stub**. See "Contribution Workflow" in `supabase/CLAUDE.md`.
+- **A request for a song that already exists is refused with a 409**, whose
+  message (`"<title>" is already in the songbook.`) the picker shows in
+  `reqStatus`. The dedup warning in front of the form stays advisory; this
+  is the answer that binds, and there is deliberately no suffixed fallback
+  (an empty placeholder at `foo-1` is a bounty entry for a song we have)
 
 ### Contributing a tab (`otf-editor/create-tab-entry.js`, `existing-tabs.js`)
 

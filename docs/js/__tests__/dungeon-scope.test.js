@@ -3,7 +3,10 @@
 // search-core's dependencies like search-core.test.js does.
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 
-vi.mock('../utils.js', () => ({
+// Spread the real module so a new util export never silently arrives as
+// `undefined` here; override only the few this test deliberately neutralizes.
+vi.mock('../utils.js', async (importOriginal) => ({
+    ...await importOriginal(),
     highlightMatch: vi.fn((text) => text),
     escapeHtml: vi.fn((text) => text),
     requireLogin: vi.fn(() => true)

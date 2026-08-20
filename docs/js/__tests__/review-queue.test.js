@@ -5,7 +5,11 @@
 // user rather than a cosmetic bug.
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
-vi.mock('../utils.js', () => ({
+// Spread the real module so a new util export never silently arrives as
+// `undefined` here. escapeHtml is replaced with a DOM-free equivalent because
+// some of these assertions run without a document.
+vi.mock('../utils.js', async (importOriginal) => ({
+    ...await importOriginal(),
     escapeHtml: (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
 }));
 

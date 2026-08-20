@@ -22,6 +22,30 @@ import {
 
 const clone = (x) => JSON.parse(JSON.stringify(x));
 
+/**
+ * Clean a typed track name into something safe to be a track id.
+ *
+ * A track id is not an internal handle — it IS the name the site shows
+ * (`renderers/tablature.js` draws `<strong>${track.id}</strong>` into the
+ * stave's track-info row, work-view's mixer prints it, the percussion
+ * placeholder prints it), and it is a `data-track-id` attribute value and
+ * a JSON object key. Two of those consumers interpolate it without
+ * escaping, so the characters that could break out of markup are stripped
+ * here, at the only place a human ever types one. Everything else —
+ * spaces, mixed case, digits, hyphens — is kept, because the point of the
+ * feature is that the user gets to choose the words.
+ *
+ * @param {*} name
+ * @returns {string} the cleaned name ('' when nothing usable is left)
+ */
+export function sanitizeTrackId(name) {
+    return String(name ?? '')
+        // eslint-disable-next-line no-control-regex
+        .replace(/[<>&"'\\\u0000-\u001f\u007f]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
 export class EditingFacade {
     /**
      * @param {Object} otf - OTF document (deep-cloned; the facade owns its copy)
@@ -91,6 +115,96 @@ export class EditingFacade {
     /** Strings on a track's instrument — data, not architecture. */
     stringCount(trackId = this.trackId) {
         return this.getTrack(trackId)?.tuning?.length || null;
+    }
+
+    // ------------------------------------------------------------------
+    // Track identity and order
+    //
+    // Two facts shape both ops:
+    //
+    // 1. `notation` is keyed BY TRACK ID. A rename is therefore a
+    //    two-part edit — the track's `id` and its notation key move
+    //    together, or the track's music silently disappears. There is no
+    //    display-name field to rename instead: the id IS the name every
+    //    surface prints (the renderer's track-info row, work-view's
+    //    mixer, the percussion placeholder, the editor's own switcher).
+    //
+    // 2. `tracks[]` order is MEANINGFUL, and `notation` is not ordered at
+    //    all. work-view picks its lead as the first pitched track
+    //    (`pitched[0]?.id`) unless a track's instrument matches the part,
+    //    and `resolveEditTrackId`/`load()` fall back to `tracks[0]`. So
+    //    "make this the lead" is literally "move it first" — and a move
+    //    must leave `notation` alone, because reordering a keyed map
+    //    would be churn with no meaning.
+    // ------------------------------------------------------------------
+
+    /** Position of a track in `tracks[]` (-1 when unknown). */
+    trackIndex(trackId = this.trackId) {
+        return this.getTracks().findIndex(t => t.id === trackId);
+    }
+
+    /**
+     * Rename a track: its `id` and its notation key, which are the same
+     * name. The notation object is rebuilt in key order so the renamed
+     * key stays exactly where it was — the diff is one key, nothing
+     * reshuffles, and a document that is only read still round-trips.
+     *
+     * @param {string} trackId - the track to rename
+     * @param {string} newId - the typed name (sanitized, see sanitizeTrackId)
+     * @returns {boolean} false when nothing changed (blank, or same name)
+     * @throws {Error} unknown track, or a name another track already has
+     *   (duplicate ids would collide in `notation` and make `getTrack`
+     *   ambiguous — no document in the corpus has one)
+     */
+    renameTrack(trackId, newId) {
+        const track = this.getTrack(trackId);
+        if (!track) throw new Error(`Unknown track: ${trackId}`);
+        const clean = sanitizeTrackId(newId);
+        if (!clean || clean === track.id) return false;
+        if (this.getTracks().some(t => t !== track && t.id === clean)) {
+            throw new Error(`Track id already in use: ${clean}`);
+        }
+        const oldId = track.id;
+        const wasCurrent = this.trackId === oldId;
+        const result = this._mutate('Rename track', () => {
+            const index = this.trackIndex(oldId);
+            this.otf.tracks[index].id = clean;
+            const notation = this.otf.notation;
+            if (notation && Object.prototype.hasOwnProperty.call(notation, oldId)) {
+                const rebuilt = {};
+                for (const key of Object.keys(notation)) {
+                    rebuilt[key === oldId ? clean : key] = notation[key];
+                }
+                this.otf.notation = rebuilt;
+            }
+            return true;
+        });
+        if (result !== false && wasCurrent) {
+            this.trackId = clean;
+            this._emit('trackChange', clean);
+        }
+        return result;
+    }
+
+    /**
+     * Move a track to `toIndex` in `tracks[]`, clamped to the ends.
+     * `notation` is NOT touched — it is keyed, not positional.
+     *
+     * @returns {boolean} false when the track is already there
+     * @throws {Error} unknown track
+     */
+    moveTrack(trackId, toIndex) {
+        const from = this.trackIndex(trackId);
+        if (from === -1) throw new Error(`Unknown track: ${trackId}`);
+        if (!Number.isFinite(Number(toIndex))) return false;
+        const last = this.getTracks().length - 1;
+        const to = Math.max(0, Math.min(last, Math.trunc(Number(toIndex))));
+        if (to === from) return false;
+        return this._mutate('Reorder tracks', () => {
+            const [moved] = this.otf.tracks.splice(from, 1);
+            this.otf.tracks.splice(to, 0, moved);
+            return true;
+        });
     }
 
     getNotation(trackId = this.trackId) {
@@ -242,9 +356,11 @@ export class EditingFacade {
 
     undo() {
         if (!this.canUndo()) return false;
+        const index = this.trackIndex();
         this.otf = clone(this._history[this._historyIndex].before);
         this._historyIndex--;
         this._invalidateTiming();
+        this._reconcileTrack(index);
         this._emit('change', this.otf);
         this._emit('undo');
         return true;
@@ -252,12 +368,32 @@ export class EditingFacade {
 
     redo() {
         if (!this.canRedo()) return false;
+        const index = this.trackIndex();
         this._historyIndex++;
         this.otf = clone(this._history[this._historyIndex].after);
         this._invalidateTiming();
+        this._reconcileTrack(index);
         this._emit('change', this.otf);
         this._emit('redo');
         return true;
+    }
+
+    /**
+     * A history swap can strand `this.trackId`: undoing a rename puts the
+     * old id back in the document while the facade still points at the
+     * new one, and the next `getNotation()` would happily MINT an empty
+     * array under the dead name. A rename never moves a track, so the
+     * track now sitting at the same index is the same track; only if even
+     * that is gone do we fall back to the first one.
+     *
+     * @param {number} index - the current track's position before the swap
+     */
+    _reconcileTrack(index) {
+        if (this.getTrack(this.trackId)) return;
+        const tracks = this.getTracks();
+        const next = (index >= 0 ? tracks[index]?.id : undefined) ?? tracks[0]?.id;
+        this.trackId = next;
+        this._emit('trackChange', next);
     }
 
     // ------------------------------------------------------------------

@@ -5,7 +5,7 @@
 // placeholder works needing everything, (3) Supabase bounties on works.
 
 import { allSongs, bountyIndex, getBountyWorkCount } from './state.js';
-import { isPlaceholder, escapeHtml, requireLogin } from './utils.js';
+import { isPlaceholder, escapeHtml, escapeAttr, requireLogin } from './utils.js';
 import { formatTagName, getInstrumentTags } from './tags.js';
 import { songHasContent, songHasAbc } from './song-content.js';
 import { openAddSongPicker } from './add-song-picker.js';
@@ -293,8 +293,8 @@ function wantedCard(song) {
     const chips = (song.instruments || []).map(i =>
         `<span class="wanted-chip">${escapeHtml(INSTRUMENT_LABELS[i] || i)}</span>`).join('');
     return `
-        <button class="bounty-card wanted-card" data-wanted-title="${escapeHtml(song.title)}"
-                data-wanted-key="${escapeHtml(song.key || '')}">
+        <button class="bounty-card wanted-card" data-wanted-title="${escapeAttr(song.title)}"
+                data-wanted-key="${escapeAttr(song.key || '')}">
             <div class="bounty-card-title">${escapeHtml(song.title)}
                 ${song.core ? '<span class="core-badge" title="Core jam repertoire">Core</span>' : ''}</div>
             <div class="bounty-card-artist">${escapeHtml(meta.join(' · '))}</div>

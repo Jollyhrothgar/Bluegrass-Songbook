@@ -1,10 +1,11 @@
 // OTF Editor popovers
 // UI for entering notes and placed text via click/tap
 //
-// Two siblings live here: NoteEntryPopover (string/fret/technique) and
+// Three siblings live here: NoteEntryPopover (string/fret/technique),
 // AnnotationPopover (the score's placed free text — "PART A", "Long
-// Choke", chord names). They share the overlay/panel/footer chrome so
-// the second one reads as the same editor, not a bolt-on prompt.
+// Choke", chord names) and TrackNamePopover (renaming an instrument
+// track). They share the overlay/panel/footer chrome so the later ones
+// read as the same editor, not bolt-on prompts.
 
 /**
  * Note Entry Popover Component
@@ -879,6 +880,247 @@ export class AnnotationPopover {
     }
 }
 
+/**
+ * Track Name Popover — rename an instrument track.
+ *
+ * A track's `id` is its name: it is what the site prints on the stave's
+ * track-info row and in the mixer, and it is the key its notation lives
+ * under. So this prompt writes a real identity, and it guards the two
+ * ways that can go wrong before the facade is ever asked: a blank name,
+ * and a name another track already holds (which would collide in
+ * `notation`). Both surface inline, with Save disabled — the facade
+ * throws on a duplicate, and a thrown error is not an error message.
+ *
+ * Sibling of AnnotationPopover in every other way: same overlay/panel
+ * chrome, Enter commits, Escape cancels, keys are swallowed so the
+ * editor's vim bindings never see what you typed.
+ */
+export class TrackNamePopover {
+    constructor(options = {}) {
+        this.options = {
+            onCommit: null,   // (name) => void
+            onCancel: null,
+            sanitize: (s) => String(s ?? '').trim(),
+            ...options,
+        };
+
+        this.element = null;
+        this.overlay = null;
+        this.input = null;
+        this.saveButton = null;
+        this.errorEl = null;
+        this.isOpen = false;
+        this.context = null;   // {current, instrument, taken, position, total}
+
+        this._onKeyDown = this._onKeyDown.bind(this);
+        this._onInput = this._onInput.bind(this);
+    }
+
+    init(container) {
+        this._applyStyles();
+
+        this.overlay = document.createElement('div');
+        this.overlay.className = 'otf-popover-overlay otf-track-name-overlay';
+        this.overlay.addEventListener('click', (e) => {
+            if (e.target === this.overlay) this.close();
+        });
+
+        this.element = document.createElement('div');
+        this.element.className = 'otf-note-popover otf-track-name-popover';
+        this.overlay.appendChild(this.element);
+        container.appendChild(this.overlay);
+
+        this.overlay.style.display = 'none';
+    }
+
+    _applyStyles() {
+        if (document.querySelector('style[data-otf-track-name-popover]')) return;
+        const style = document.createElement('style');
+        style.setAttribute('data-otf-track-name-popover', '');
+        style.textContent = `
+            .otf-track-name-popover .track-name-input {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 12px;
+                font-size: 16px;
+                border: 2px solid var(--border, #ddd);
+                border-radius: 8px;
+                background: var(--bg, #fff);
+                color: var(--text, #333);
+            }
+
+            .otf-track-name-popover .track-name-input:focus {
+                outline: none;
+                border-color: var(--accent, #007bff);
+            }
+
+            .otf-track-name-popover .track-name-where {
+                font-size: 11px;
+                color: var(--text-muted, #888);
+                margin-top: 8px;
+            }
+
+            .otf-track-name-popover .track-name-error {
+                font-size: 12px;
+                color: var(--danger, #dc3545);
+                margin-top: 8px;
+                min-height: 1em;
+            }
+
+            .otf-track-name-popover .popover-btn:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    _renderContent() {
+        const { current, instrument, position, total } = this.context;
+        const where = total > 1
+            ? `Track ${position} of ${total} — the first track is the lead`
+            : 'The only track in this tab';
+        const kind = instrument && instrument !== current
+            ? ` · ${escapeHtml(instrument)}`
+            : '';
+
+        return `
+            <div class="popover-header">
+                <span class="popover-title">Rename track</span>
+                <button class="popover-close" title="Close (Escape)">&times;</button>
+            </div>
+            <div class="popover-body">
+                <div class="popover-section">
+                    <label class="section-label">Track name</label>
+                    <input type="text" class="track-name-input"
+                           value="${escapeAttr(current)}"
+                           placeholder="banjo, lead guitar, harmony…"
+                           autocomplete="off" spellcheck="false">
+                    <div class="track-name-where">${where}${kind}</div>
+                    <div class="track-name-error" role="alert"></div>
+                </div>
+            </div>
+            <div class="popover-footer">
+                <button class="popover-btn cancel-btn">Cancel</button>
+                <button class="popover-btn save-btn primary">Save</button>
+            </div>
+        `;
+    }
+
+    _setupEventListeners() {
+        this.input = this.element.querySelector('.track-name-input');
+        this.saveButton = this.element.querySelector('.save-btn');
+        this.errorEl = this.element.querySelector('.track-name-error');
+
+        this.element.querySelector('.popover-close')
+            .addEventListener('click', () => this.close());
+        this.element.querySelector('.cancel-btn')
+            .addEventListener('click', () => this.close());
+        this.saveButton.addEventListener('click', () => this._commit());
+
+        this.input.addEventListener('input', this._onInput);
+        this.element.addEventListener('keydown', this._onKeyDown);
+    }
+
+    /** The problem with what is typed, or '' when it is fine. */
+    _problem(raw) {
+        const clean = this.options.sanitize(raw);
+        if (!clean) return 'A track needs a name.';
+        if (clean === this.context.current) return '';
+        if ((this.context.taken || []).includes(clean)) {
+            return `Another track is already called “${clean}”.`;
+        }
+        return '';
+    }
+
+    _onInput() {
+        const problem = this._problem(this.input.value);
+        this.errorEl.textContent = problem;
+        this.saveButton.disabled = !!problem;
+    }
+
+    _onKeyDown(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            event.stopPropagation();
+            this._commit();
+            return;
+        }
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            event.stopPropagation();
+            this.close();
+            return;
+        }
+        event.stopPropagation();
+    }
+
+    _commit() {
+        const raw = this.input?.value || '';
+        if (this._problem(raw)) {
+            this._onInput();
+            return;
+        }
+        this._closeQuietly();
+        this.options.onCommit?.(this.options.sanitize(raw));
+    }
+
+    /**
+     * Open the prompt for a track.
+     * @param {Object} context - {current, instrument, taken, position, total}
+     */
+    open(context = {}) {
+        this.context = {
+            current: context.current ?? '',
+            instrument: context.instrument || '',
+            taken: context.taken || [],
+            position: context.position ?? 1,
+            total: context.total ?? 1,
+        };
+
+        this.element.innerHTML = this._renderContent();
+        this._setupEventListeners();
+        this._onInput();
+
+        this.overlay.style.display = 'flex';
+        this.isOpen = true;
+
+        setTimeout(() => {
+            this.input?.focus();
+            this.input?.select();
+        }, 0);
+        this.input?.focus();
+        this.input?.select();
+    }
+
+    /** Close without firing onCancel (used after commit). */
+    _closeQuietly() {
+        if (this.overlay) this.overlay.style.display = 'none';
+        this.isOpen = false;
+    }
+
+    close() {
+        const wasOpen = this.isOpen;
+        this._closeQuietly();
+        if (wasOpen) this.options.onCancel?.();
+    }
+
+    get opened() {
+        return this.isOpen;
+    }
+
+    destroy() {
+        if (this.overlay && this.overlay.parentNode) {
+            this.overlay.parentNode.removeChild(this.overlay);
+        }
+        this.overlay = null;
+        this.element = null;
+        this.input = null;
+        this.saveButton = null;
+        this.errorEl = null;
+    }
+}
+
 function escapeHtml(s) {
     return String(s)
         .replace(/&/g, '&amp;')
@@ -886,6 +1128,10 @@ function escapeHtml(s) {
         .replace(/>/g, '&gt;');
 }
 
+// Attribute-position escape (the module-local twin of utils.js escapeAttr —
+// this file deliberately keeps its own string-only escapeHtml so it needs no
+// DOM). Both quotes, not just the double one: a single-quoted attribute is
+// just as breakable, and the next hole here may use one.
 function escapeAttr(s) {
-    return escapeHtml(s).replace(/"/g, '&quot;');
+    return escapeHtml(s).replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }

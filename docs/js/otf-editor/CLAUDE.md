@@ -23,6 +23,7 @@ A modal, keyboard-accelerated tablature editor inspired by vim. Two audiences:
 - Roll mode for quick picking pattern entry (banjo)
 - Undo/redo, copy/paste
 - Placed free text: section labels, playing notes and chord names (below)
+- Renaming and reordering the instrument tracks (below)
 - Mobile-friendly touch interface
 
 ### Placed text vs. "annotation mode" — two different things
@@ -51,6 +52,57 @@ you write chords over a tab.
 - Everything routes through the facade, so undo/redo covers text and
   notes in one stack, and a document you only read round-trips
   byte-identical (adds splice into score order without reordering).
+
+### Tracks: the name IS the id, and the order IS the lead
+
+Both track edits live in the toolbar's **Track** section, beside the
+switcher — the only other place a track is chosen or named. No key
+bindings: choosing a track never had one, and these are
+once-per-document edits, not entry-speed ones.
+
+| | rename (✏️) | reorder (◀ ▶) |
+|---|---|---|
+| **facade op** | `renameTrack(trackId, newId)` | `moveTrack(trackId, toIndex)` |
+| **state wrapper** | `renameTrack(newId)` | `moveTrack(delta)` |
+| **UI** | `TrackNamePopover` in `popover.js` | two toolbar buttons |
+| **recorder** | `renameTrack` | `moveTrack` |
+
+**A rename edits the `id`, and there is no alternative.** A track has no
+display-name field: the id is what `renderers/tablature.js` prints on the
+stave's track-info row, what work-view's mixer and percussion placeholder
+print, and what the editor's own switcher shows. A name stored anywhere
+else would be invisible on the site.
+
+- **`notation` is keyed by track id, so the notation moves with it** —
+  `renameTrack` rebuilds the object in key order, putting the renamed key
+  back exactly where it was. Miss this and the track's music vanishes;
+  `validate_otf` in `scripts/lib/process_pending.py` would reject the
+  submission with "track X: no notation". (Real files' notation key order
+  is NOT the `tracks[]` order — 27493 keys guitar/bass/banjo/mandolin for
+  tracks guitar/bass/mandolin/banjo — so never rebuild it from `tracks`.)
+- **Duplicate ids are refused** (they'd collide in `notation`). The popover
+  disables Save and says which track owns the name; the facade throws as a
+  backstop. Names are cleaned by `sanitizeTrackId` — spaces and mixed case
+  are kept, `< > & " ' \` and control chars are not, because the renderer
+  interpolates a track id into innerHTML unescaped.
+- **Undo of a rename re-points the facade.** `_reconcileTrack` runs after
+  every history swap: a stale `trackId` would make the next `getNotation()`
+  *mint* an empty bucket under the dead name. EditorState follows via the
+  facade's `trackChange`.
+
+**A reorder moves `tracks[]` and nothing else.** `notation` is keyed, not
+positional — reordering it would be churn with no meaning. Order is
+load-bearing anyway: work-view takes its lead as the first *pitched* track
+(`pitched[0]?.id`) unless the part instrument names one, `resolveEditTrackId`
+and `EditingFacade` fall back to `tracks[0]`, and the song page stacks the
+staves in `tracks[]` order. "Make this the lead" really is "move it first".
+
+`role` is **not** where lead-ness lives, despite the name: it comes from
+the TEF importer's instrument guess (`banjo`/`mandolin` → `lead`, else
+`rhythm`), so red-haired-boy's ensemble has three tracks claiming `lead`
+and work-view treats it as a hint next to position, never as the answer.
+Neither op touches it. `tablature_parts[].tracks` in the index is a *count*
+of non-percussion tracks, so neither op moves it either.
 
 ## Architecture
 
@@ -84,8 +136,8 @@ docs/js/otf-editor/
 ├── facade.js          # UI-free document API: ALL mutations + undo history
 ├── cursor.js          # Cursor/grid/selection overlays and navigation
 ├── keyboard.js        # Modal vim-style key bindings
-├── toolbar.js         # Duration / grid / articulation / text / edit buttons
-├── popover.js         # NoteEntryPopover + AnnotationPopover (click/tap entry)
+├── toolbar.js         # Track / duration / grid / articulation / text / edit buttons
+├── popover.js         # NoteEntryPopover + AnnotationPopover + TrackNamePopover
 ├── context-menu.js    # Right-click menu
 ├── actions.js         # Document-level helpers (validate, cleanup, download)
 └── recorder.js        # Record/replay of edit events

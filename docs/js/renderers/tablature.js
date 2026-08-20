@@ -11,6 +11,23 @@ import {
 import { isPercussionTrack } from './otf-tracks.js';
 
 /**
+ * Build an HTML element with a class and TEXT content.
+ *
+ * Text, not markup: every string this file puts on screen (track id,
+ * instrument, tuning pitches) comes from an OTF document, which is
+ * user-submitted and hand-editable, so none of it may reach innerHTML.
+ * textContent also needs no escaping helper — and note that this repo's
+ * `escapeHtml` would not have been enough for an ATTRIBUTE anyway: it
+ * round-trips through textContent and so leaves `"` alone.
+ */
+function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text != null) node.textContent = String(text);
+    return node;
+}
+
+/**
  * Silent spans inside a measure that deserve rest glyphs: the gap after
  * an event whose notes ALL carry explicit durations (editor-entered),
  * up to the next event or the measure's end. Events without durations
@@ -141,6 +158,9 @@ function detectTuningName(tuning, instrument, capo = 0) {
  * Auto-scales to fit container width
  */
 export class TabRenderer {
+    // Width assumed ONLY where there is no layout engine to ask (jsdom).
+    static NOMINAL_WIDTH = 800;
+
     constructor(container, options = {}) {
         this.container = container;
 
@@ -201,6 +221,20 @@ export class TabRenderer {
         this._resizeObserver = null;
         this._resizeTimeout = null;
 
+        // Layout inputs the renderer owns rather than guesses:
+        //   _layoutWidth    the width the CURRENT drawing was laid out for
+        //                   (0 = nothing drawn yet)
+        //   _layoutDeferred a render was asked for while the container had
+        //                   no layout box; the ResizeObserver owes us one
+        //   _scale          the reader's size setting. It divides the width
+        //                   budget and multiplies the <svg> element's own
+        //                   width/height — so "bigger" means FEWER measures
+        //                   per row, not a wider row that runs off the
+        //                   right edge (setScale()).
+        this._layoutWidth = 0;
+        this._layoutDeferred = false;
+        this._scale = 1;
+
         // Engraved time-signature digits: kick off the (once-per-page)
         // Bravura load and re-render when it arrives.
         TabRenderer._ensureBravura().then(() => {
@@ -248,11 +282,76 @@ export class TabRenderer {
     }
 
     /**
-     * Calculate optimal measures per row based on container width
+     * True when the document has a layout engine at all.
+     *
+     * jsdom (Vitest) reports clientWidth 0 for EVERY element, root
+     * included — there is no reveal to wait for and no real width to
+     * observe, so the renderer keeps the historic nominal width there and
+     * draws. A real browser reporting 0 means something specific and
+     * actionable instead: this element has no box yet.
      */
-    _calculateLayout() {
+    static _hasLayoutEngine() {
+        return typeof document !== 'undefined'
+            && document.documentElement?.clientWidth > 0;
+    }
+
+    /**
+     * The CSS-pixel width this staff may lay out into, or 0 when the
+     * container has no layout box yet (a `display:none` ancestor — an
+     * unselected track's section, a page still hidden behind
+     * `.hidden`).
+     *
+     * There is deliberately NO width fallback in a browser. A zero-width
+     * container used to silently produce an 800px staff, which looked
+     * merely narrow in a wide viewport and RAN OFF THE RIGHT EDGE the
+     * moment the viewport was narrower than 800 (browser zoom, phone) —
+     * the reflow logic below never got a chance because its input was a
+     * guess. Callers get a deferred render instead; see _renderInternal.
+     *
+     * The reader's size setting divides the budget: laying out for
+     * containerWidth / scale and then sizing the <svg> element by the
+     * scale (renderRow) means a bigger staff reflows to fewer measures
+     * per row instead of overflowing.
+     */
+    _availableWidth() {
+        const scale = this._scale || 1;
+        const width = this.container.clientWidth;
+        if (width > 0) {
+            // clientWidth INCLUDES padding, and .tablature-container has
+            // 1rem of it. Handing the padded number to the layout made
+            // every row ~32px too wide for the box it sits in, which
+            // `.stave-row svg { max-width: 100% }` then quietly scaled
+            // back down — a staff engraved at one size and displayed at
+            // another. Lay out against the content box.
+            const cs = getComputedStyle(this.container);
+            const pad = (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0);
+            return Math.max(1, width - pad) / scale;
+        }
+        if (!TabRenderer._hasLayoutEngine()) return TabRenderer.NOMINAL_WIDTH / scale;
+        return 0;
+    }
+
+    /**
+     * Set the reader's size multiplier (the Aa control). Re-lays out —
+     * this is a LAYOUT input, not a lens over a fixed drawing.
+     * @param {number} scale
+     */
+    setScale(scale) {
+        const next = Math.max(0.1, Number(scale) || 1);
+        if (next === this._scale) return;
+        this._scale = next;
+        this.container.style.setProperty('--tab-scale', String(next));
+        if (this._track && this._notation) this._renderInternal();
+    }
+
+    /**
+     * Calculate optimal measures per row based on container width
+     * @param {number} [layoutWidth] - width budget (defaults to the live one)
+     */
+    _calculateLayout(layoutWidth) {
         const opt = this.options;
-        const containerWidth = this.container.clientWidth || 800;
+        const containerWidth = layoutWidth ?? this._availableWidth();
+        this._layoutWidth = containerWidth;
         const availableWidth = containerWidth - opt.leftMargin - 30; // margins
 
         if (opt.measuresPerRow !== 'auto') {
@@ -316,21 +415,16 @@ export class TabRenderer {
         this._timeSignature = timeSignature;
         this._timingParam = timing;
 
-        this._renderInternal();
-
-        // Set up resize observer if not already
+        // Observe BEFORE the first draw. That first draw may defer (a
+        // container inside a `display:none` ancestor has no width to lay
+        // out against), and the observer is what redeems the promise — so
+        // it must already be watching when the deferral happens.
         if (!this._resizeObserver && typeof ResizeObserver !== 'undefined') {
-            this._resizeObserver = new ResizeObserver(() => {
-                // Debounce resize events
-                if (this._resizeTimeout) clearTimeout(this._resizeTimeout);
-                this._resizeTimeout = setTimeout(() => {
-                    if (this._track && this._notation) {
-                        this._renderInternal();
-                    }
-                }, 150);
-            });
+            this._resizeObserver = new ResizeObserver(() => this._onContainerResize());
             this._resizeObserver.observe(this.container);
         }
+
+        this._renderInternal();
 
         // Re-render on theme change: SVG attributes bake colors in, so a
         // toggle otherwise leaves the previous theme's chips and stems.
@@ -348,6 +442,46 @@ export class TabRenderer {
     }
 
     /**
+     * The container's box changed. Three cases, and the first two are the
+     * ones the old blanket 150ms debounce got wrong:
+     *
+     * 1. **No box** (width 0 — the track was just hidden, or never shown).
+     *    Do nothing. Re-rendering here would replace a correct staff with
+     *    one laid out against a guess, so *hiding* a track used to quietly
+     *    corrupt its layout, and you saw the damage when you came back.
+     * 2. **First real width** for a deferred staff (0 → N, i.e. reveal).
+     *    Draw SYNCHRONOUSLY. ResizeObserver callbacks run after layout and
+     *    before paint, so drawing here means the first paint the reader
+     *    ever sees is already at the right width. A debounce would
+     *    guarantee the opposite: 150ms of wrong layout, then a reflow flash.
+     * 3. **A genuine resize** (N → M). Debounce as before — dragging a
+     *    window edge fires this continuously and a full re-engrave per
+     *    frame is wasteful. Identical widths are dropped outright, which
+     *    also stops our own height change from feeding back as a render.
+     */
+    _onContainerResize() {
+        const width = this._availableWidth();
+        if (!width) return;                                    // case 1
+        if (!this._track || !this._notation) return;
+
+        if (this._layoutDeferred) {                             // case 2
+            if (this._resizeTimeout) {
+                clearTimeout(this._resizeTimeout);
+                this._resizeTimeout = null;
+            }
+            this._renderInternal();
+            return;
+        }
+
+        if (width === this._layoutWidth) return;                // case 3
+        if (this._resizeTimeout) clearTimeout(this._resizeTimeout);
+        this._resizeTimeout = setTimeout(() => {
+            this._resizeTimeout = null;
+            if (this._track && this._notation) this._renderInternal();
+        }, 150);
+    }
+
+    /**
      * Internal render method (can be called on resize)
      */
     _renderInternal() {
@@ -355,6 +489,21 @@ export class TabRenderer {
         const notation = this._notation;
         const ticksPerBeat = this._ticksPerBeat;
         const timeSignature = this._timeSignature || '4/4';
+
+        // A stave needs a width, and there is no honest fallback for one.
+        // If this container has no layout box yet (unselected track, page
+        // still behind `.hidden`), leave whatever is there alone and wait:
+        // _onContainerResize draws the moment it gains a real width, in
+        // the same frame as the reveal. The two message paths below need
+        // no width, so they are exempt.
+        const drawable = track && notation && notation.length > 0
+            && !isPercussionTrack(track);
+        const layoutWidth = drawable ? this._availableWidth() : 0;
+        if (drawable && !layoutWidth) {
+            this._layoutDeferred = true;
+            return;
+        }
+        this._layoutDeferred = false;
 
         this.container.innerHTML = '';
 
@@ -401,8 +550,8 @@ export class TabRenderer {
         const hasTextBand = notation.some(m => (m.texts && m.texts.length) || m.section);
         this.options.topMargin = this._baseTopMargin + (hasTextBand ? 32 : 0);
 
-        // Calculate responsive layout
-        this._calculateLayout();
+        // Calculate responsive layout (against the real width measured above)
+        this._calculateLayout(layoutWidth);
 
         this.numStrings = track.tuning?.length || 5;
         const opt = this.options;
@@ -456,23 +605,39 @@ export class TabRenderer {
         const tuningInfo = detectTuningName(track.tuning, track.instrument, track.capo || 0);
 
         // Show string notes as visual indicator
-        const tuningHtml = (track.tuning || []).map((t, i) => {
+        const tuningNotes = el('span', 'tuning-notes');
+        (track.tuning || []).forEach((t, i) => {
             const isFifth = track.instrument === '5-string-banjo' && i === track.tuning.length - 1;
-            return `<span class="tuning-string${isFifth ? ' fifth' : ''}">${t.replace(/\d/, '')}</span>`;
-        }).join('');
+            tuningNotes.appendChild(el(
+                'span', 'tuning-string' + (isFifth ? ' fifth' : ''),
+                String(t).replace(/\d/, '')));
+        });
 
         const showInstrument = track.instrument && track.instrument !== track.id;
         // Only show tuning name text when it's a recognized name (e.g. "Open G"),
         // not when it's just raw notes (e.g. "G-D-G-C") which duplicates the circles.
         const showTuningName = tuningInfo.name != null;
-        info.innerHTML = `
-            <strong>${track.id}</strong>
-            ${showInstrument ? `<span style="color:#888;font-size:13px;">${track.instrument}</span>` : ''}
-            <div class="tuning-display">
-                ${showTuningName ? `<span class="tuning-name">${tuningInfo.display}</span>` : ''}
-                <span class="tuning-notes">${tuningHtml}</span>
-            </div>
-        `;
+
+        // EVERY string in this row comes out of the OTF document — track id,
+        // instrument, tuning pitches — and OTF documents are hand-edited in
+        // works/ and submitted by users. They are text, so they are built as
+        // TEXT NODES, not interpolated into innerHTML. (The editor sanitizes
+        // ids a human types, but nothing sanitizes an id that arrives in a
+        // file or out of a TEF import, and this row draws both.)
+        info.appendChild(el('strong', null, track.id));
+        if (showInstrument) {
+            const inst = el('span', null, track.instrument);
+            inst.style.color = '#888';
+            inst.style.fontSize = '13px';
+            info.appendChild(inst);
+        }
+        const tuningDisplay = el('div', 'tuning-display');
+        if (showTuningName) {
+            tuningDisplay.appendChild(el('span', 'tuning-name', tuningInfo.display));
+        }
+        tuningDisplay.appendChild(tuningNotes);
+        info.appendChild(tuningDisplay);
+
         this.container.appendChild(info);
     }
 
@@ -639,7 +804,11 @@ export class TabRenderer {
         });
         const adornTotal = prelim.reduce((s, p) => s + p.adorn.leading + p.adorn.trailing, 0);
         const baseTotal = prelim.reduce((s, p) => s + p.base, 0);
-        const rowAvailable = (this.container.clientWidth || 800) - opt.leftMargin - 20;
+        // The SAME budget _calculateLayout packed this row against. Re-reading
+        // clientWidth here could disagree with it (scale, or a mid-render
+        // layout change) and rows would be packed by one number and fitted
+        // by another.
+        const rowAvailable = this._layoutWidth - opt.leftMargin - 20;
         let fit = 1;
         if (adornTotal > 0 && baseTotal + adornTotal > rowAvailable) {
             fit = Math.max(0.5, (rowAvailable - adornTotal) / baseTotal);
@@ -686,9 +855,18 @@ export class TabRenderer {
         const rowDiv = document.createElement('div');
         rowDiv.className = 'stave-row';
 
+        // The reader's size setting scales the ELEMENT, not the drawing:
+        // the viewBox stays in layout coordinates (so every x/y computed
+        // above, and every consumer that maps px → user units, is
+        // unaffected) while the element's own width and height carry the
+        // scale. A CSS `transform: scale()` used to do this, and a
+        // transform is invisible to layout: at 1.6 the rows kept their
+        // unscaled height and overlapped, and the extra width simply ran
+        // off the right edge. Sizing the element keeps it in normal flow.
+        const scale = this._scale || 1;
         const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        svg.setAttribute('width', width);
-        svg.setAttribute('height', adjustedHeight);
+        svg.setAttribute('width', Math.round(width * scale));
+        svg.setAttribute('height', Math.round(adjustedHeight * scale));
         svg.setAttribute('viewBox', `0 0 ${width} ${adjustedHeight}`);
 
         // Store row data for cursor positioning

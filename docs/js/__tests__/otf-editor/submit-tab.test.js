@@ -79,6 +79,28 @@ describe('tabWorkSlug', () => {
         expect(tabWorkSlug('Blue Moon of Kentucky', 'Bill Monroe'))
             .toBe('blue-moon-of-kentucky-bill-monroe');
     });
+
+    it('is a legal work id even when the 80-char cut lands on a dash', () => {
+        // The slug becomes a directory name in works/, and every writer
+        // agrees on ^[a-z0-9]+(-[a-z0-9]+)*$. Truncating BEFORE trimming (the
+        // old order) left `...-` behind, which the server now refuses.
+        const title = 'a'.repeat(79);
+        const slug = tabWorkSlug(title, 'Bill Monroe');
+        expect(slug).toBe('a'.repeat(79));
+        expect(slug).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
+        expect(slug.length).toBeLessThanOrEqual(80);
+    });
+
+    it('matches generateSlug at the truncation boundary too', async () => {
+        const { generateSlug } = await import('../../utils.js');
+        for (const [title, artist] of [
+            ['a'.repeat(79), 'Bill Monroe'],
+            ['a'.repeat(80), 'Bill Monroe'],
+            ['Some Very Long Bluegrass Song Title Indeed', 'The Stanley Brothers'],
+        ]) {
+            expect(tabWorkSlug(title, artist)).toBe(generateSlug(title, artist));
+        }
+    });
 });
 
 describe('submitTab', () => {

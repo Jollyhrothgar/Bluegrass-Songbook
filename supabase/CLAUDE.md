@@ -11,7 +11,7 @@ Serverless functions that run on Supabase Edge (Deno runtime).
 | Function | Purpose | Trigger | Source |
 |----------|---------|---------|--------|
 | `create-flag-issue` | Create GitHub issue for song problem reports | POST from flags.js | `functions/create-flag-issue/index.ts` |
-| `create-song-request` | Create GitHub issue for song requests | POST from add-song-picker.js | `functions/create-song-request/index.ts` |
+| `create-song-request` | Signed in → a placeholder `pending_songs` row + the same dispatch every contribution takes; anonymous → a `tune-request` issue | POST from add-song-picker.js | `functions/create-song-request/index.ts` |
 | `create-superuser-request` | Create GitHub issue for super-user access requests | POST from superuser-request.js | `functions/create-superuser-request/index.ts` |
 | `auto-commit-song` | Gate + classify a pending_songs row, then dispatch the write to CI | POST from editor.js (charts), otf-editor/submit-tab.js (tabs), work-view.js (metadata) — any logged-in save | `functions/auto-commit-song/index.ts` |
 | `cleanup-pending` | Remove pending songs already committed | `.github/workflows/cleanup-pending.yml` after a successful deploy | `functions/cleanup-pending/index.ts` |
@@ -23,10 +23,26 @@ Serverless functions that run on Supabase Edge (Deno runtime).
   `attributionFor`). The client never says who it is.
 - `pending-dispatch.ts` — the phase 2b change gate: durable per-user rate
   limit counted from `submission_log`, `classifyChange` (create / update /
-  fork-to-arrangement / add / metadata), and `dispatchPendingCommit`, which
-  fires the `pending-commit` repository_dispatch. **No edge function authors
-  work.yaml any more** — `.github/workflows/process-pending.yml` runs
-  `scripts/lib/works_writer.py`, the repo's one writer.
+  fork-to-arrangement / add / metadata / placeholder), and
+  `dispatchPendingCommit`, which fires the `pending-commit`
+  repository_dispatch. **No edge function authors work.yaml any more** —
+  `.github/workflows/process-pending.yml` runs `scripts/lib/works_writer.py`,
+  the repo's one writer.
+  That sentence was **FALSE until 2026-08-19**, and `create-song-request`
+  was the reason. It predates phase 1c/2b and was never converted: its
+  trusted-user branch hand-interpolated a `work.yaml` string ending
+  `parts: []` and PUT it to the Contents API, **passing the existing file's
+  sha whenever the path was taken** — so a request whose client-generated
+  slug collided with a real work replaced that work's parts, artist,
+  composers and tags with an empty stub, with no suppression check, no
+  redirect check and no collision handling. (It also set `github_committed`
+  from `!!trustedUser` before attempting the commit, while treating a failed
+  commit as "non-fatal" — a row marked durable that never reached git, which
+  `cleanup-pending` is then free to reap.) Both are gone; a request is now
+  the `placeholder` column below. The claim is worth re-checking rather than
+  trusting — it was written down and wrong for months:
+  `grep -rn "method: 'PUT'" supabase/functions` must find nothing. (The one
+  remaining Contents-API URL is `getFileContent`, which only reads.)
   Ownership is answered **per part type**: `submittersOf(yaml, 'lead-sheet')`
   for a chart, `tabPartOwners(yaml, file)` for one tab. It used to be a
   regex over the flat file, which was safe only while `submitted_by`
@@ -39,9 +55,14 @@ Serverless functions that run on Supabase Edge (Deno runtime).
   nobody's content. Owning a tab does not buy a rewrite of a stranger's
   lyrics; it does buy the right to say who wrote the song. Both functions
   carry comments saying so, and both directions are pinned by tests.
-  `MetadataRefusedError` is the one typed refusal `classifyChange` can
-  return (403 no claim / 404 no such work / 400 no target) — the metadata
-  column is the only one with nothing additive to land a stranger's edit in.
+  `DispatchRefusedError` is the base class of every typed refusal
+  `classifyChange` can throw, and the one every caller catches.
+  `MetadataRefusedError` (403 no claim / 404 no such work / 400 no target)
+  and `PlaceholderRefusedError` (409 the song already exists / 400 malformed
+  or self-contradictory row) are its two subclasses — the two columns that
+  write no PART, and so the only two with nowhere additive to land. Note the
+  polarity is opposite: metadata refuses when the work is MISSING, a
+  placeholder when it is PRESENT.
 - `commit-song.ts` — the `PendingSong` shape, one Contents-API read used by
   classification, `holdReason`, and `unretryableReason` (which is **part-type aware**: a
   metadata row carries no content by construction, so demanding one would
@@ -60,10 +81,11 @@ Serverless functions that run on Supabase Edge (Deno runtime).
   RLS policies and the Dungeon's Release-hold/Reject actions already key on
   it — a second column would need all four rebuilt to mean the same thing.
 
-`auto-commit-song` (live path) and `reconcile-pending` (hourly retry) both
-import `pending-dispatch.ts`, so a retry classifies exactly the way the
-original attempt did. Supabase bundles relative imports at deploy time, so
-**redeploy both functions** whenever anything in `_shared/` changes.
+`auto-commit-song` (live path), `create-song-request` (the placeholder
+column's live path) and `reconcile-pending` (hourly retry) all import
+`pending-dispatch.ts`, so a retry classifies exactly the way the original
+attempt did. Supabase bundles relative imports at deploy time, so
+**redeploy all three** whenever anything in `_shared/` changes.
 
 `reconcile-pending` is gated on the service role key itself (not merely a valid
 project JWT — the anon key is public), handles at most 25 rows per run, and
@@ -118,7 +140,15 @@ that decision shipped verified by nothing.
   test: same user, same work, chart edit → `fork`, metadata edit → `metadata`.
 - `functions/_shared/commit-song.test.ts` — `getFileContent`'s 404-is-the-only-
   null rule (a 500 read as "no work here" would let a placeholder overwrite a
-  real `work.yaml`) and `unretryableReason`.
+  real `work.yaml` — that comment described a bug that was live at the time),
+  `unretryableReason`, and `isPlaceholderRow` in both directions, including
+  the sticky-`status` case where content must win.
+- The placeholder column's refusals are pinned in
+  `functions/_shared/pending-dispatch.test.ts` (search `REFUSAL:`): a request
+  for a song that exists is refused, trust does not open it, a transient
+  GitHub failure never reads as "free slug", and a malformed id never becomes
+  a path. `tests/test_process_pending.py` pins the same rules on the writer
+  side, plus "the existing work is byte-for-byte unchanged".
 - `functions/_shared/testdata/` — fixtures. Four are REAL `work.yaml` files
   copied out of `works/`, so the parser is exercised against the shapes the
   corpus actually contains, including one hand-written file with a different
@@ -311,6 +341,18 @@ refused at step 3 with a 403 the client can show; the row stays in the table
 and the hourly reconciler files it as `unretryable` rather than retrying it
 forever.
 
+Song REQUESTS take the same four steps (2026-08-19), minus the content and
+minus the editor: `add-song-picker.js` POSTs to `create-song-request`, which
+classifies, writes a row with `status: 'placeholder'` and `content: null`, and
+dispatches. `process_pending.apply_placeholder_row` mints the work through
+`works_writer.create_work(part=None)` — metadata, `status: placeholder`,
+`parts: []`. The work-level `metadata_provenance` is both the idempotence
+marker and the only record of who asked, since there is no part to carry one.
+Before this the trusted branch wrote `work.yaml` itself and overwrote whatever
+was at the slug; the untrusted branch wrote a contentless row that the
+reconciler filed as permanently `missing content`, so a request either
+destroyed a work or reached git never.
+
 Tabs take the same four steps (2026-08-18). The row carries the serialized
 OTF in `content` plus `part_type: tablature` / `instrument` / `part_file`,
 and `process_pending.py` writes `works/<id>/<instrument>[-N].otf.json`
@@ -354,8 +396,40 @@ written):
 | no work at `replaces_id` | **REFUSED** — 404. Never a `create`: there is no content to seed a work from |
 | no `replaces_id` at all | **REFUSED** — 400. The `meta:…` row id is a PK, not a work slug |
 
-This is the one column that refuses, and the one that asks the loose
-ownership question (`anyPartOwners`). Both follow from the same fact: no
+Classification — **placeholder** (a song REQUEST: a work with metadata,
+`status: placeholder` and `parts: []`; no part is written):
+
+| Situation | Result |
+|---|---|
+| no work at the requested slug | `placeholder` — mint it |
+| a work is already there | **REFUSED** — 409 `PlaceholderRefusedError`. Never an overwrite, and deliberately never a suffix either |
+| the row id is not a slug, or it also sets `replaces_id` | **REFUSED** — 400 |
+
+A request is a lead-sheet row that has no lead sheet, so it is **not** a
+fourth `part_type`: it is recognised by shape — `status = 'placeholder'` and
+no content (`commit-song.ts:isPlaceholderRow`, mirrored by
+`process_pending.is_placeholder_row`). Both halves are needed. `status` is a
+STICKY column: a chart row's `id` IS its work slug, and so is a request's, so
+the editor's save upserts onto the very row the request created and PostgREST
+only overwrites the columns in its payload. Content is what settles it — once
+there is a chart this is a chart row, whatever `status` still says. (The
+editor now states `part_type` and `status` explicitly for the same reason.)
+
+Ownership is not asked at all here, and trust grants nothing: a placeholder
+never edits anybody's content, and nothing about being trusted makes an empty
+stub a safe thing to put on top of somebody's chart. Trust is what USED to
+turn the write on (`if (trustedUser && githubToken)`), which is how the
+overwrite reached production.
+
+The suffix fallback is refused on purpose. `create_work(on_collision='suffix')`
+would be **safe** — it mints `foo-1` and leaves `foo` alone — but an empty
+placeholder beside a real song is a bounty-board entry asking for a song the
+site already has. Reaching `process_pending.apply_placeholder_row` with the
+work present means it appeared between the classify and the write, so the row
+is parked (`dedup_hold`) for the Dungeon rather than written anywhere.
+
+The metadata column is the other one that refuses, and the one that asks the
+loose ownership question (`anyPartOwners`). Both follow from the same fact: no
 content is rewritten by naming an artist, so contributing anything earns the
 right — and a second opinion about a title is not an arrangement, so there
 is nowhere additive to put a stranger's edit. Silently forking one would put

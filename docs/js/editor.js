@@ -1117,6 +1117,16 @@ async function submitSong(data) {
         created_by: user?.id || null,
         mode: mode || null,
         tags: {},
+        // Both stated, never inherited. This is an upsert on `id`, and a
+        // chart row's id IS its work slug — which is also a song REQUEST's
+        // row id. So a request for this song can already be sitting at this
+        // key carrying `part_type: 'lead-sheet'` and `status: 'placeholder'`,
+        // and PostgREST only overwrites the columns in the payload. Leaving
+        // them out would file this chart as a placeholder: the server would
+        // classify it as a request and `process_pending` would mint an empty
+        // work instead of writing the ChordPro below it.
+        part_type: 'lead-sheet',
+        status: null,
     };
 
     // Disable button and show saving state

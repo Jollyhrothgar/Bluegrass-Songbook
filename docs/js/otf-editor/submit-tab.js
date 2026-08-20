@@ -154,14 +154,18 @@ export function namespacedRowId(namespace, slug, key) {
  * loaded by the standalone create.html, which boots none of that. The two
  * must stay identical — a divergence would mint a different id for the same
  * title depending on which page you submitted from.
+ *
+ * Including the trim-AFTER-truncation order: trimming first let an 80-char
+ * cut that landed just after a dash emit a trailing dash, which is not a
+ * shape any writer in this repo accepts as a work id.
  */
 export function tabWorkSlug(title, artist = null) {
     const base = artist ? `${title}-${artist}` : String(title || '');
     return base
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-|-$/g, '')
-        .slice(0, 80);
+        .slice(0, 80)
+        .replace(/^-+|-+$/g, '');
 }
 
 /**
