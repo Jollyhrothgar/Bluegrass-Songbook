@@ -869,6 +869,8 @@ durable.
    - `update` → `update_part` on the chart the actor OWNS (`update_target`)
    - `fork` → `fork_to_arrangement`, `x_version_*` from the submitter identity
    - `metadata` → `update_metadata` — work-level fields only, no part
+   - `placeholder` → `create_work(part=None, on_collision='fail')` — a song
+     request: metadata, `status: placeholder`, `parts: []`
 3. The workflow commits, pushes with rebase-retry, then marks the row
    `github_committed`.
 
@@ -934,6 +936,35 @@ mints nothing, and there is no ChordPro to score). Who may send one is
 decided before the dispatch by `classifyChange`: own **any** part of the
 work, or be trusted — a looser question than the per-part-type ownership a
 content edit must pass, because naming an artist rewrites nobody's content.
+
+**Placeholder** (2026-08-19, `apply_placeholder_row`). A song REQUEST: a work
+with metadata, `status: placeholder` and `parts: []` — the shape
+`utils.isPlaceholder` and the bounty board read.
+
+| mode | writer call | file |
+|---|---|---|
+| `placeholder` | `create_work(part=None, on_collision='fail')` | none — the work has no parts |
+
+`create-song-request` used to do this itself, in TypeScript: it interpolated a
+`work.yaml` string and PUT it to the GitHub Contents API **passing the
+existing file's sha whenever the path was taken**, so a request whose
+client-generated slug collided with a real work replaced its parts, artist,
+composers and tags with an empty stub. No suppression check, no redirect
+check, no collision handling. That function predates phase 1c/2b and was the
+last one never converted; `works_writer`'s guards now apply to it like
+everything else.
+
+A request is a lead-sheet row that has NO lead sheet, so it is not a new
+`part_type` — it is recognised by shape (`is_placeholder_row`: status
+`placeholder` **and** no content; both halves matter, because `status` is a
+sticky column on a row the editor may later upsert a real chart onto). Three
+things it does differently: the dedup backstop is skipped (no ChordPro to
+score, and "is this song here?" was just answered by looking), an existing
+work at the id is a **refusal** rather than a suffix (an empty placeholder at
+`foo-1` is a bounty entry for a song we already have) parked via
+`hold_reason`, and the idempotence marker hashes the FIELDS and is stamped at
+the work level as `metadata_provenance` — which doubles as the only record of
+who asked.
 
 **Idempotence**: every part written carries
 `provenance.source_id = pending:<row id>:<content sha>`. A replayed dispatch

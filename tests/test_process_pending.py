@@ -32,12 +32,15 @@ import works_writer
 from process_pending import (
     DEDUP_HOLD_REASON,
     PERMANENT_SKIP_REASONS,
+    PLACEHOLDER_STATUS,
+    WORK_EXISTS_SKIP_REASON,
     DedupBackstop,
     ProcessPendingError,
     already_applied,
     apply_row,
     content_marker,
     hold_reason,
+    is_placeholder_row,
     otf_document,
     owns_content,
     tab_work_slug,
@@ -1673,6 +1676,266 @@ class TestASuffixedWorkIsNotAResurrection:
 
         assert not result.written
         assert result.skipped_reason == 'suppressed'
+
+
+# ============================================
+# Placeholder — a song request
+# ============================================
+#
+# This column replaced a hand-written GitHub Contents-API PUT in
+# `create-song-request` that passed the EXISTING file's sha when the path was
+# taken — i.e. overwrote a real work with an empty `parts: []` stub whenever a
+# request's client-generated slug collided. Everything below is either "the
+# placeholder gets made properly" or "it is never made on top of anything".
+
+
+def placeholder_row(**kw):
+    """A song REQUEST: no content, status placeholder, id IS the work slug."""
+    base = row(
+        id='salt-creek-bill-monroe',
+        title='Salt Creek',
+        artist='Bill Monroe',
+        composer=None,
+        content=None,
+        key='A',
+        notes='Wanted for the Tuesday jam',
+        status=PLACEHOLDER_STATUS,
+        part_type='lead-sheet',
+    )
+    base.update(kw)
+    return base
+
+
+class TestIsPlaceholderRow:
+    """Which writer a row reaches. Mirrors commit-song.ts:isPlaceholderRow."""
+
+    def test_status_plus_no_content(self):
+        assert is_placeholder_row(placeholder_row())
+        assert is_placeholder_row(placeholder_row(content=''))
+        assert is_placeholder_row(placeholder_row(content='   \n'))
+
+    def test_an_ordinary_chart_row_is_not_one(self):
+        assert not is_placeholder_row(row())
+        assert not is_placeholder_row(row(status='complete'))
+
+    def test_CONTENT_WINS_over_a_stale_status_column(self):
+        """The trap that makes this two questions instead of one.
+
+        A chart row's id IS its work slug, and so is a request's, so the
+        editor's save upserts onto the very row a request created — and
+        PostgREST only overwrites the columns in its payload. A row that has
+        since grown a real chart can still read `status: placeholder`, and
+        believing it would drop that submitter's ChordPro and mint an empty
+        work in its place.
+        """
+        assert not is_placeholder_row(placeholder_row(content=CHORDPRO))
+
+    def test_only_the_chart_column_can_hold_a_request(self):
+        assert not is_placeholder_row(placeholder_row(part_type='tablature'))
+        assert not is_placeholder_row(placeholder_row(part_type='metadata'))
+        # Absent means chart: every row written before 2026-08-18 has none.
+        assert is_placeholder_row(placeholder_row(part_type=None))
+
+
+class TestPlaceholderCreate:
+
+    def test_mints_a_work_with_no_parts_at_all(self, tmp_path):
+        result = apply_row(tmp_path, placeholder_row(), 'placeholder',
+                           'salt-creek-bill-monroe', actor='Jane Picker',
+                           verbose=False)
+
+        assert result.written
+        assert result.work_id == 'salt-creek-bill-monroe'
+        assert result.part_file is None
+        work = read_work(tmp_path, 'salt-creek-bill-monroe')
+        assert work['parts'] == []
+        assert not (tmp_path / 'works' / 'salt-creek-bill-monroe'
+                    / 'lead-sheet.pro').exists()
+
+    def test_status_placeholder_survives_into_work_yaml(self, tmp_path):
+        """What `utils.isPlaceholder` and the bounty board actually read."""
+        apply_row(tmp_path, placeholder_row(), 'placeholder',
+                  'salt-creek-bill-monroe', verbose=False)
+        assert read_work(tmp_path, 'salt-creek-bill-monroe')['status'] == \
+            'placeholder'
+
+    def test_the_metadata_the_requester_typed_lands(self, tmp_path):
+        apply_row(tmp_path, placeholder_row(), 'placeholder',
+                  'salt-creek-bill-monroe', verbose=False)
+        work = read_work(tmp_path, 'salt-creek-bill-monroe')
+        assert work['title'] == 'Salt Creek'
+        assert work['artist'] == 'Bill Monroe'
+        assert work['default_key'] == 'A'
+        assert work['notes'] == 'Wanted for the Tuesday jam'
+        assert work['tags'] == []
+
+    def test_fields_the_requester_left_blank_are_not_written(self, tmp_path):
+        """A null column is 'they didn't say', never a blank value."""
+        apply_row(tmp_path,
+                  placeholder_row(artist=None, key='', notes=None),
+                  'placeholder', 'salt-creek-bill-monroe', verbose=False)
+        work = read_work(tmp_path, 'salt-creek-bill-monroe')
+        assert 'artist' not in work
+        assert 'default_key' not in work
+        assert 'notes' not in work
+
+    def test_the_requester_is_recorded(self, tmp_path):
+        """A placeholder has no part to hang provenance on, so this work-level
+        stamp is the ONLY record that the work was minted by a request."""
+        apply_row(tmp_path, placeholder_row(), 'placeholder',
+                  'salt-creek-bill-monroe', actor='Jane Picker', verbose=False)
+        prov = read_work(tmp_path, 'salt-creek-bill-monroe')[
+            'metadata_provenance']
+        assert prov['submitted_by'] == SUBMITTER
+        assert prov['source'] == 'user-submission'
+        assert prov['source_id'].startswith('pending:salt-creek-bill-monroe:')
+
+    def test_the_work_validates_against_the_schema(self, tmp_path):
+        """`create_work` runs validate_work; a parts-less work must pass it."""
+        result = apply_row(tmp_path, placeholder_row(), 'placeholder',
+                           'salt-creek-bill-monroe', verbose=False)
+        assert result.written
+
+
+class TestPlaceholderNeverOverwrites:
+    """THE bug. A request must never land on a work that already exists."""
+
+    def test_an_existing_work_is_refused_not_overwritten(self, tmp_path):
+        seed_work(tmp_path, 'salt-creek-bill-monroe', submitted_by=OTHER_USER)
+        before = read_work(tmp_path, 'salt-creek-bill-monroe')
+
+        result = apply_row(tmp_path, placeholder_row(), 'placeholder',
+                           'salt-creek-bill-monroe', verbose=False)
+
+        assert not result.written
+        assert result.skipped_reason == WORK_EXISTS_SKIP_REASON
+        # Byte for byte what it was: parts, artist, title, provenance.
+        assert read_work(tmp_path, 'salt-creek-bill-monroe') == before
+        assert before['parts'], 'the fixture must actually have had parts'
+
+    def test_it_does_not_land_beside_the_work_either(self, tmp_path):
+        """`on_collision='suffix'` would be SAFE but wrong — an empty
+        placeholder at `foo-1` is a bounty-board entry asking for a song the
+        site already has."""
+        seed_work(tmp_path, 'salt-creek-bill-monroe', submitted_by=OTHER_USER)
+        apply_row(tmp_path, placeholder_row(), 'placeholder',
+                  'salt-creek-bill-monroe', verbose=False)
+        assert not (tmp_path / 'works' / 'salt-creek-bill-monroe-1').exists()
+
+    def test_the_refusal_is_HELD_not_retried_hourly(self, tmp_path):
+        seed_work(tmp_path, 'salt-creek-bill-monroe', submitted_by=OTHER_USER)
+        result = apply_row(tmp_path, placeholder_row(), 'placeholder',
+                           'salt-creek-bill-monroe', verbose=False)
+
+        held = hold_reason(result)
+        assert held
+        assert 'salt-creek-bill-monroe' in held
+        # It has to tell the admin what to do about it.
+        assert 'delete the row' in held
+
+    def test_a_suppressed_id_is_refused(self, tmp_path):
+        """Requesting a song an admin deleted must not resurrect it."""
+        _deleted_songs(tmp_path, ['salt-creek-bill-monroe'])
+        result = apply_row(tmp_path, placeholder_row(), 'placeholder',
+                           'salt-creek-bill-monroe', verbose=False)
+        assert not result.written
+        assert result.skipped_reason == 'suppressed'
+        assert not (tmp_path / 'works' / 'salt-creek-bill-monroe').exists()
+
+    def test_a_redirected_id_is_refused(self, tmp_path):
+        """...and must not re-mint a work that was merged away."""
+        (tmp_path / 'docs' / 'data').mkdir(parents=True, exist_ok=True)
+        (tmp_path / 'docs' / 'data' / 'redirects.json').write_text(
+            json.dumps({'salt-creek-bill-monroe': 'salt-creek'}))
+        result = apply_row(tmp_path, placeholder_row(), 'placeholder',
+                           'salt-creek-bill-monroe', verbose=False)
+        assert not result.written
+        assert result.skipped_reason == 'redirected'
+
+
+class TestPlaceholderReplay:
+    """A dispatch can arrive twice; the second must be a no-op."""
+
+    def test_a_replayed_dispatch_writes_nothing_new(self, tmp_path):
+        entry = placeholder_row()
+        first = apply_row(tmp_path, entry, 'placeholder',
+                          'salt-creek-bill-monroe', verbose=False)
+        assert first.written
+        before = read_work(tmp_path, 'salt-creek-bill-monroe')
+
+        second = apply_row(tmp_path, entry, 'placeholder',
+                           'salt-creek-bill-monroe', verbose=False)
+
+        assert not second.written
+        assert second.skipped_reason == 'already-applied'
+        assert read_work(tmp_path, 'salt-creek-bill-monroe') == before
+        # And emphatically not a second work at a suffixed id.
+        assert not (tmp_path / 'works' / 'salt-creek-bill-monroe-1').exists()
+
+    def test_the_marker_is_over_the_FIELDS_not_the_absent_content(self, tmp_path):
+        """Hashing the always-null content would give every request in the
+        table the same marker, so the first would make every later one look
+        like a replay."""
+        one = apply_row(tmp_path, placeholder_row(), 'placeholder',
+                        'salt-creek-bill-monroe', verbose=False)
+        two = apply_row(tmp_path, placeholder_row(id='rebecca-jim-mills',
+                                                  title='Rebecca'),
+                        'placeholder', 'rebecca-jim-mills', verbose=False)
+        assert one.written and two.written
+        markers = {
+            read_work(tmp_path, w)['metadata_provenance']['source_id']
+            for w in ('salt-creek-bill-monroe', 'rebecca-jim-mills')
+        }
+        assert len(markers) == 2
+
+
+class TestPlaceholderRefusals:
+
+    def test_a_mode_from_another_column_is_refused(self, tmp_path):
+        """`create` is the chart column's word for this gesture, and a
+        placeholder dispatched as one must not fall through to it."""
+        for mode in ('create', 'update', 'fork', 'add', 'metadata'):
+            with pytest.raises(ProcessPendingError, match='placeholder mode'):
+                apply_row(tmp_path, placeholder_row(), mode,
+                          'salt-creek-bill-monroe', verbose=False)
+
+    def test_a_CHART_row_dispatched_as_placeholder_is_refused(self, tmp_path):
+        """The other direction: a row with real ChordPro is not a request, so
+        `placeholder` is not one of its modes and its content is never lost."""
+        with pytest.raises(ProcessPendingError, match='unknown mode'):
+            apply_row(tmp_path, row(), 'placeholder',
+                      'blue-moon-of-kentucky', verbose=False)
+        assert not (tmp_path / 'works').exists()
+
+    def test_a_work_id_that_is_not_a_slug_never_becomes_a_directory(self, tmp_path):
+        """The id is client-supplied and becomes a path inside works/."""
+        for work_id in ('', '  ', 'Salt Creek', 'salt/creek', 'salt--creek',
+                        '-salt-creek', 'tab:salt-creek:9f3c2a'):
+            with pytest.raises(ProcessPendingError, match='not a slug'):
+                apply_row(tmp_path, placeholder_row(), 'placeholder', work_id,
+                          verbose=False)
+        assert not (tmp_path / 'works').exists()
+
+    def test_a_request_with_no_title_is_refused(self, tmp_path):
+        with pytest.raises(ProcessPendingError, match='no title'):
+            apply_row(tmp_path, placeholder_row(title=None), 'placeholder',
+                      'salt-creek-bill-monroe', verbose=False)
+
+
+class TestPlaceholderSkipsTheDedupBackstop:
+
+    def test_the_corpus_index_is_never_built(self, tmp_path):
+        """No ChordPro to score, and 'is this song already here?' has just
+        been answered exactly by looking. Building the ~1.6s title index to
+        produce advice it cannot give would be pure cost."""
+        class Exploding(DedupBackstop):
+            def check(self, *a, **kw):
+                raise AssertionError('the backstop must not see a request')
+
+        result = apply_row(tmp_path, placeholder_row(), 'placeholder',
+                           'salt-creek-bill-monroe', verbose=False,
+                           backstop=Exploding(tmp_path))
+        assert result.written
 
 
 class TestPermanentRefusalsAreHeld:
