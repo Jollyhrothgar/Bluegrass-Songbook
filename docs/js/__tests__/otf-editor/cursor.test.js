@@ -335,6 +335,20 @@ describe('EditorCursor', () => {
             cursor.moveByDuration(-1);
             expect(state.cursor.tick).toBe(240);
         });
+
+        // Under AUTOMATIC duration the grid is the rhythm input (plan
+        // §6), so a step is one grid slot — not the column rule's
+        // prediction, which in an empty bar is the whole bar (QA D6).
+        it('steps by the GRID under automatic duration', () => {
+            state.setAutoDuration(true);
+            state.setGridSubdivision(DURATIONS.eighth);
+            state.cursor.tick = 0;
+            expect(state.effectiveDuration()).toBeGreaterThan(DURATIONS.eighth);
+            cursor.moveByDuration(1);
+            expect(state.cursor.tick).toBe(240);
+            cursor.moveByDuration(-1);
+            expect(state.cursor.tick).toBe(0);
+        });
     });
 
     describe('ts-aware navigation (short measures)', () => {

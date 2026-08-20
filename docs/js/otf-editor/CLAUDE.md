@@ -118,7 +118,8 @@ plan `docs/plans/tab-editor-input-parity.md` §3.)
 | `ACTIONS[id]` | `{ label, group, modes, run(ctx, {count, key, event}), repeatable }` — the verb |
 | `PRESETS.tabledit` / `.vim` | `mode → [{keys, action, hidden?}]`, plus `global` (all modes), `countPrefix`, `exceptions` |
 | `describe(preset)` | grouped `{keys[], label}` for the help overlay |
-| `keyFor(action, preset)` | the key to print beside a menu item |
+| `keyFor(action, preset)` | the key to print beside a tooltip |
+| `menuKeyFor(action, preset, mode)` | the key to print beside a MENU item, in the mode the menu is read in — a key bound only in another mode is qualified with the way in (`A, t`) or not printed at all, because in NORMAL `t` is placed text and `m` is a dead note |
 | `FretEntry` | THE digit→fret rule (two-digit refine, `f` prefix) — the canvas *and* the note popover use this one object |
 
 **Key-string grammar** (one grammar for the table and for events): modifiers
@@ -163,7 +164,9 @@ sequence prefix, and every `<kbd>` the help overlay prints comes from
 `menu-bar.js` is the same component in every wrapper, mounted by the
 editor ABOVE the toolbar. Nothing in it (or in `toolbar.js`) writes a key
 down: an item names an ACTION, and the key column comes from
-`keyFor(action, getPreset())`. Switching preset relabels the bar, the
+`menuKeyFor(action, getPreset(), state.mode)` — mode-aware, because a
+menu is read from wherever the user is standing (Note ▸ Fingering used to
+print a bare `t`, which is ANNOTATION's thumb and NORMAL's placed text). Switching preset relabels the bar, the
 tooltips and the `?` overlay at once, and an advertised chord is a bound
 chord by construction (`__tests__/otf-editor/menu-bar.test.js` is the
 fence). The toolbar used to claim `Ctrl+T`, `Shift+Q`, `G` and `3` —
@@ -185,6 +188,10 @@ none of them bound to anything.
   click, then arrow keys walk them and `Esc` hands focus back to the canvas.
 - **Under 720px the bar collapses to one `☰`** listing every menu as a
   sheet, so touch users reach insert/delete measure and repeats at all.
+  `updateLayout()` RECONCILES rather than diffs — it asks what this
+  width should look like and makes it so on every call — because the
+  `narrow === this._narrow` early return it used to open with left a
+  stale `☰` beside the full trigger row after one missed transition.
 
 Two editor options carry a wrapper's answer into the shared component:
 
@@ -208,6 +215,14 @@ border, and the reason post-hoc duration/effect editing is usable at all:
   binding action. Tie always goes to the action (it needs a real
   predecessor); Clear disarms before it touches the document. There is no
   `~`-as-technique button any more — a tie is `tie: true`.
+- **The note popover's technique row is the same config**, not a second
+  opinion about it: `POPOVER_TECHS` in `popover.js` is `toolbar.js`'s
+  exported `ARTICULATION_BUTTONS` minus the clear latch (the row ends in
+  its own `none`), so `h · p · / · x · b · ⌒` reach the one path a phone
+  has. The tie carries `'~'` — the value `facade.insertNote` reads as
+  "tie to the same-string predecessor" — and is DISABLED with the reason
+  in its tooltip when `facade.tiePredecessor` finds none, rather than
+  being dropped in silence at Insert.
 
 The Track group sits at the END of the toolbar: rename and reorder are
 once-per-document edits and used to spend four slots ahead of the buttons
@@ -227,8 +242,9 @@ position. Plan: `docs/plans/tab-editor-input-parity.md` §3, §6.
 | `scaleDuration(pos, factor)` | `scaleDurationAtCursor(f)` | no note; already clamped at 60 / 1920 | yes |
 | `scaleRangeDuration(start, end, factor)` | `scaleSelectionDuration(f)` | nothing in range moves | yes (one step) |
 | `transposeFret(pos, delta)` | `transposeFretAtCursor(d)` | no note; already at 0 or 24 | yes |
-| `moveNoteToString(pos, ±1)` | `moveNoteAcrossStrings(d)` (moves the cursor too) | no such string; slot occupied; fret would leave 0..24; untuned track | yes |
+| `moveNoteToString(pos, ±1)` | `moveNoteAcrossStrings(d)` (moves the cursor too, and emits `cursorMove` so the status bar's `String:` follows) | no such string; slot occupied; fret would leave 0..24; untuned track | yes |
 | `setTie(pos, on)` | `toggleTieAtCursor()` | turning ON with no same-string predecessor; clearing a tie that isn't set | yes |
+| `setArticulation(pos, null)` + `setTie(pos, false)` in one `transact` | `clearEffectsAtCursor()` — what `n` runs, TablEdit's N: `tech` AND `tie`, since neither op clears the other's field | the note carries neither | yes (one step) |
 | `deleteMeasure(n)` | `deleteMeasureAtCursor()`, `deleteEmptyTrailingMeasure()` | n out of range; it's the last measure; (wrapper) the tail has notes on ANY track | yes |
 | `shiftRight(m, tick, ticks)` / `shiftLeft` | `shiftRightAtCursor()` / `shiftLeftAtCursor()` | a note would cross the barline or land on an occupied slot; nothing at/after the tick | yes |
 | `repeatMeasure(n)` | `repeatPreviousMeasure()` | n < 2; n−1 missing or empty; n already has notes; source longer than destination | yes |
@@ -256,6 +272,12 @@ eighths (95,702 banjo notes: eighths 63.6%, dotted quarters 0.1%).
   both, on request.
 - Anything that needs a NUMBER must call `state.effectiveDuration()`, not
   `state.currentDuration` — under auto the latter is `null`.
+- **A STEP is not a duration.** `Tab` / `Shift+Tab` / `.` / `Space` and
+  auto-advance move by `entryAdvanceTicks()` — one grid slot under auto,
+  the chosen duration otherwise — because under auto the grid is the
+  rhythm input (plan §6). Stepping by the prediction instead walked past
+  the very slots about to be typed into (an empty 2/4 bar predicts a
+  dotted quarter, so `Tab` jumped a measure).
 - Measure-bounded: auto never ties across a barline, so the last note
   fills to the barline. OTF has no rests, so trailing silence needs an
   explicit duration (which pins the note).

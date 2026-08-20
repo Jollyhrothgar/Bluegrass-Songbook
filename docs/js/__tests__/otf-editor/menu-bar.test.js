@@ -17,8 +17,8 @@ import { EditorToolbar, durationReflects } from '../../otf-editor/toolbar.js';
 import { EditorState, DURATIONS } from '../../otf-editor/state.js';
 import { OTFEditor } from '../../otf-editor/editor.js';
 import {
-    ACTIONS, PRESETS, keyFor, prettyKeys, describe as describeBindings,
-    getPreset, setPreset, resetPreset,
+    ACTIONS, PRESETS, keyFor, menuKeyFor, prettyKeys,
+    describe as describeBindings, getPreset, setPreset, resetPreset,
 } from '../../otf-editor/bindings.js';
 
 // ----------------------------------------------------------------------
@@ -131,11 +131,56 @@ describe('EditorMenuBar — the tree', () => {
             for (const el of itemsOf(bar)) {
                 const action = el.dataset.action;
                 if (!action) continue;
-                const expected = keyFor(action, 'tabledit');
+                const expected = menuKeyFor(action, 'tabledit', 'normal');
                 expect(keyOf(el)).toBe(expected ? prettyKeys(expected) : '');
-                if (keyOf(el)) expect(bound.has(keyOf(el))).toBe(true);
+                // Every CHORD printed is a bound chord — a qualified key
+                // (`A, t`) is two of them, the way in and the key itself.
+                for (const chord of keyOf(el).split(', ').filter(Boolean)) {
+                    expect(bound.has(chord), `${action} → ${chord}`).toBe(true);
+                }
             }
         }
+    });
+
+    // D3: the Note ▸ Fingering items printed a bare `t` / `i` / `m`,
+    // which are ANNOTATION-mode keys. Read from NORMAL — where the user
+    // is standing — `t` opens the placed-text popover and `m` writes a
+    // dead note, so a bare letter there is an instruction to do the
+    // wrong thing.
+    describe('a key that belongs to another mode', () => {
+        it('is qualified with the way into that mode, never printed bare', () => {
+            bar = mountMenu();
+            bar.open('note');
+            for (const label of ['Thumb', 'Index', 'Middle']) {
+                const printed = keyOf(findItem(bar, label));
+                expect(printed, label).not.toBe('t');
+                expect(printed, label).not.toBe('i');
+                expect(printed, label).not.toBe('m');
+            }
+            expect(keyOf(findItem(bar, 'Thumb'))).toBe('A, t');
+            expect(keyOf(findItem(bar, 'Middle'))).toBe('A, m');
+        });
+
+        it('prints bare once the menu IS read in that mode', () => {
+            bar = mountMenu({ state: stubState({ mode: 'annotation' }) });
+            bar.open('note');
+            expect(keyOf(findItem(bar, 'Thumb'))).toBe('t');
+        });
+
+        it('leaves same-mode keys alone (`n` still clears the effect)', () => {
+            bar = mountMenu();
+            bar.open('note');
+            expect(keyOf(findItem(bar, 'Clear'))).toBe('n');
+            expect(keyOf(findItem(bar, 'Hammer-on'))).toBe('h');
+        });
+
+        it('vim binds fingering in NORMAL, so it needs no qualifier', () => {
+            setPreset('vim');
+            bar = mountMenu();
+            bar.open('note');
+            expect(keyOf(findItem(bar, 'Thumb'))).toBe(prettyKeys('a t'));
+            setPreset('tabledit');
+        });
     });
 
     it('shows the keys the §8.3 table calls out', () => {
@@ -363,6 +408,56 @@ describe('EditorMenuBar — narrow screens', () => {
         bar.updateLayout();
         expect(bar.element.querySelector('.menu-hamburger')).toBeNull();
         expect(bar.element.classList.contains('is-narrow')).toBe(false);
+    });
+
+    // D2: `updateLayout` used to open with `if (narrow === this._narrow)
+    // return`, so one missed transition left a ☰ sitting beside the full
+    // trigger row until something else re-rendered the bar. It now
+    // RECONCILES: it asks what this width should look like and makes it
+    // so, however many times it is called.
+    it('survives a round trip: wide → narrow → wide leaves one surface', () => {
+        setWidth(1200);
+        bar = mountMenu();
+        expect(bar.element.querySelector('.menu-hamburger')).toBeNull();
+
+        setWidth(500);
+        bar.updateLayout();
+        expect(bar.element.querySelector('.menu-hamburger')).not.toBeNull();
+        expect(bar.element.classList.contains('is-narrow')).toBe(true);
+
+        setWidth(1200);
+        bar.updateLayout();
+        expect(bar.element.querySelector('.menu-hamburger')).toBeNull();
+        expect(bar.element.classList.contains('is-narrow')).toBe(false);
+        expect(bar.hamburger).toBeNull();
+        // …and the triggers are back, all seven of them
+        expect([...bar.element.querySelectorAll('.menu-trigger')].map(b => b.textContent))
+            .toEqual(MENUS.map(m => m.label));
+    });
+
+    it('is idempotent — repeat calls at one width change nothing', () => {
+        setWidth(500);
+        bar = mountMenu();
+        bar.updateLayout();
+        bar.updateLayout();
+        expect(bar.element.querySelectorAll('.menu-hamburger')).toHaveLength(1);
+
+        setWidth(1200);
+        bar.updateLayout();
+        bar.updateLayout();
+        expect(bar.element.querySelectorAll('.menu-hamburger')).toHaveLength(0);
+    });
+
+    it('a stale hamburger from a missed transition is swept up', () => {
+        setWidth(1200);
+        bar = mountMenu();
+        // Exactly the state QA found: `is-narrow` off, ☰ still in the DOM
+        bar._narrow = false;
+        bar.hamburger = bar._makeHamburger();
+        bar.element.insertBefore(bar.hamburger, bar.triggerRow);
+
+        bar.updateLayout();
+        expect(bar.element.querySelector('.menu-hamburger')).toBeNull();
     });
 });
 

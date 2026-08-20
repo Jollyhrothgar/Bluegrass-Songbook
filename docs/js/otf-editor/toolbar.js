@@ -54,7 +54,7 @@ const GRID_BUTTONS = [
  * note when the cursor is on empty space, which is the mouse user's only
  * way to say "the next one is hammered".
  */
-const ARTICULATION_BUTTONS = [
+export const ARTICULATION_BUTTONS = [
     { tech: 'h', symbol: 'h', label: 'Hammer-on', action: 'effect.hammer' },
     { tech: 'p', symbol: 'p', label: 'Pull-off', action: 'effect.pull' },
     { tech: '/', symbol: '/', label: 'Slide', action: 'effect.slide' },

@@ -920,10 +920,23 @@ export class EditorCursor {
     }
 
     /**
-     * The duration a note entered right now would get. Falls back to the
-     * raw field for the bare-state fixtures some unit tests build.
+     * How far one `Space` / `Tab` / auto-advance step goes.
+     *
+     * Under AUTOMATIC duration that is ONE GRID SLOT, not the duration
+     * the column rule predicts (plan §6: under auto the grid is the
+     * rhythm input). The prediction can be most of a bar — an empty 2/4
+     * measure predicts a dotted quarter — and stepping by it walks the
+     * cursor straight past the slots the user is about to type into.
+     *
+     * Falls back to the raw fields for the bare-state fixtures some unit
+     * tests build.
      */
     _entryDuration() {
+        if (this.state.isAutoDuration) {
+            return this.state.gridSubdivision
+                || this.state.effectiveDuration?.()
+                || TICKS_PER_BEAT;
+        }
         const d = this.state.effectiveDuration?.();
         return d || this.state.currentDuration || this.state.gridSubdivision;
     }

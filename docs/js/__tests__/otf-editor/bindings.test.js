@@ -7,7 +7,7 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import {
     ACTIONS, PRESETS, DEFAULT_PRESET, RESERVED_CHORDS, GROUP_ORDER,
     FretEntry, canonicalChord, canonicalKeys, eventToKeyString, prettyKeys,
-    expandKeys, describe as describeBindings, keyFor, allChords, lookup,
+    expandKeys, describe as describeBindings, keyFor, menuKeyFor, allChords, lookup,
     getPreset, setPreset, onPresetChange, resetPreset,
 } from '../../otf-editor/bindings.js';
 import { OTFEditor } from '../../otf-editor/editor.js';
@@ -213,6 +213,58 @@ describe('describe() / keyFor()', () => {
 
     it('returns null for an action the preset does not bind', () => {
         expect(keyFor('nope.not.a.thing', 'tabledit')).toBeNull();
+    });
+});
+
+// A menu is read from wherever the user is STANDING, so a key bound in
+// another mode is not the key they would press — `t` on Note ▸ Fingering
+// is ANNOTATION's thumb, while NORMAL's `t` opens the placed-text
+// popover and `m` writes a dead note (QA D3).
+describe('menuKeyFor() — a key is only honest in its own mode', () => {
+    it('prints a same-mode key bare, exactly as keyFor does', () => {
+        expect(menuKeyFor('effect.clear', 'tabledit', 'normal')).toBe('n');
+        expect(menuKeyFor('duration.auto', 'tabledit', 'normal')).toBe('=');
+    });
+
+    it('prints a global key bare in every mode', () => {
+        for (const mode of ['normal', 'visual', 'annotation']) {
+            expect(menuKeyFor('edit.undo', 'tabledit', mode)).toBe('Ctrl+z');
+        }
+    });
+
+    it('qualifies an other-mode key with the way into that mode', () => {
+        expect(menuKeyFor('finger.thumb', 'tabledit', 'normal')).toBe('A, t');
+        expect(menuKeyFor('finger.middle', 'tabledit', 'normal')).toBe('A, m');
+        // …and drops the qualifier once you are standing there
+        expect(menuKeyFor('finger.thumb', 'tabledit', 'annotation')).toBe('t');
+    });
+
+    it('every chord it prints is a chord the preset really binds', () => {
+        const bound = new Set();
+        for (const list of Object.values(PRESETS.tabledit.bindings)) {
+            for (const entry of list) bound.add(prettyKeys(entry.keys));
+        }
+        for (const action of Object.keys(ACTIONS)) {
+            const printed = menuKeyFor(action, 'tabledit', 'normal');
+            if (!printed) continue;
+            for (const chord of printed.split(', ')) {
+                expect(bound.has(chord), `${action} → ${chord}`).toBe(true);
+            }
+        }
+    });
+
+    it('vim binds fingering in NORMAL, so nothing is qualified there', () => {
+        expect(menuKeyFor('finger.thumb', 'vim', 'normal')).toBe(prettyKeys('a t'));
+    });
+
+    it('still falls back to a hidden alias that is pressable HERE', () => {
+        // vim advertises no Cut at all — `Ctrl+X` is its only binding,
+        // and it is a hidden muscle-memory alias in NORMAL.
+        expect(menuKeyFor('clip.cut', 'vim', 'normal')).toBe('Ctrl+x');
+    });
+
+    it('returns null for an action the preset does not bind', () => {
+        expect(menuKeyFor('nope.not.a.thing', 'tabledit', 'normal')).toBeNull();
     });
 });
 

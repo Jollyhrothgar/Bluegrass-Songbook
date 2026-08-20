@@ -385,23 +385,24 @@ function applyTech(ctx, tech) {
         if (!hits.length) return false;
         state.facade.transact(tech ? 'Set technique' : 'Clear technique', () => {
             for (const hit of hits) {
-                state.facade.setArticulation(
-                    { measure: hit.measure, tick: hit.tick, string: hit.string },
-                    tech, state.trackId);
+                const pos = { measure: hit.measure, tick: hit.tick, string: hit.string };
+                state.facade.setArticulation(pos, tech, state.trackId);
+                // Clearing clears EVERY effect, tie included (TablEdit's N).
+                if (!tech) state.facade.setTie(pos, false, { trackId: state.trackId });
             }
             return true;
         });
         if (tech) state.lastTech = tech;
         return true;
     }
-    ctx.record(tech ? 'addArticulation' : 'removeArticulation',
+    ctx.record(tech ? 'addArticulation' : 'clearEffects',
         { ...posOf(state), tech });
     if (tech === '~') {
         state.lastTech = '~';
         return state.toggleTieAtCursor();
     }
     return tech ? state.addArticulation(tech) !== false
-                : state.removeArticulation() !== false;
+                : state.clearEffectsAtCursor() !== false;
 }
 
 /**
@@ -730,7 +731,13 @@ export const ACTIONS = {
         repeatable: true,
         run(ctx) {
             ctx.record('moveCursorByDuration', { direction: 1 });
-            stepTicks(ctx, ctx.state.effectiveDuration());
+            // `entryAdvanceTicks`, not `effectiveDuration`: under
+            // AUTOMATIC duration the grid IS the rhythm input (plan §6),
+            // so a rest steps one grid slot. Stepping by the PREDICTION
+            // there walks past the very slots you are about to type into
+            // — an empty 2/4 bar predicts a dotted quarter and `Tab`
+            // jumped a measure.
+            stepTicks(ctx, entryAdvanceTicks(ctx.state));
             return true;
         },
     },
@@ -1208,8 +1215,10 @@ export const ACTIONS = {
         group: 'Annotation mode',
         modes: ['annotation'],
         run(ctx) {
-            ctx.record('removeArticulation', posOf(ctx.state));
-            ctx.state.removeArticulation();
+            // "Effect", singular in the label but plural in fact: tie
+            // included, exactly as NORMAL-mode `n` does.
+            ctx.record('clearEffects', posOf(ctx.state));
+            ctx.state.clearEffectsAtCursor();
             return true;
         },
     },
@@ -1955,6 +1964,58 @@ export function keyFor(actionId, presetId = DEFAULT_PRESET, mode = 'normal') {
     // Fall back to a hidden alias rather than printing nothing
     for (const list of Object.values(preset.bindings)) {
         for (const entry of list) {
+            if (entry.action === actionId) return prettyKeys(entry.keys);
+        }
+    }
+    return null;
+}
+
+/**
+ * The action that ENTERS a mode, for the qualified keys `menuKeyFor`
+ * prints. VISUAL is reached by extending a selection rather than by a
+ * mode key, so it has no entry chord and nothing to qualify with.
+ */
+const MODE_ENTRY_ACTION = {
+    annotation: 'mode.annotation',
+    normal: 'mode.normal',
+};
+
+/**
+ * The key to print beside a MENU item, given the mode the menu was
+ * opened IN.
+ *
+ * A menu is read from wherever the user is standing, so a key bound only
+ * in another mode is a lie: Note ▸ Fingering ▸ Thumb printed a bare `t`,
+ * which is an ANNOTATION-mode key — in NORMAL, `t` opens the placed-text
+ * popover and `m` writes a dead note. Such a key is printed QUALIFIED
+ * with the chord that enters its mode (`A, t`), and not printed at all
+ * when the preset offers no way in. Keys bound in the mode itself (or in
+ * `global`) print bare, exactly as before.
+ *
+ * @returns {string|null}
+ */
+export function menuKeyFor(actionId, presetId = DEFAULT_PRESET, mode = 'normal') {
+    const preset = PRESETS[presetId] || PRESETS[DEFAULT_PRESET];
+    // Reachable right here, with no mode change.
+    for (const m of [mode, 'global']) {
+        for (const entry of preset.bindings[m] || []) {
+            if (entry.action === actionId && !entry.hidden) return prettyKeys(entry.keys);
+        }
+    }
+    // Bound somewhere else: qualify it with the way into that mode.
+    for (const [m, list] of Object.entries(preset.bindings)) {
+        if (m === mode || m === 'global') continue;
+        for (const entry of list) {
+            if (entry.action !== actionId || entry.hidden) continue;
+            const enter = MODE_ENTRY_ACTION[m]
+                && keyFor(MODE_ENTRY_ACTION[m], presetId, mode);
+            if (enter) return `${enter}, ${prettyKeys(entry.keys)}`;
+        }
+    }
+    // Advertised nowhere, but pressable HERE: fall back to a hidden alias
+    // rather than printing nothing (vim's Cut is `Ctrl+X` and only that).
+    for (const m of [mode, 'global']) {
+        for (const entry of preset.bindings[m] || []) {
             if (entry.action === actionId) return prettyKeys(entry.keys);
         }
     }

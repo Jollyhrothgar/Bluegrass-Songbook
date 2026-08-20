@@ -3,9 +3,10 @@
 // TablEdit's grouping (File · Edit · Note · Play · Score · View · Help),
 // trimmed to what we actually have, with every shortcut printed BESIDE
 // its item. The keys are not written here: an item names an ACTION and
-// the bar asks `keyFor(action, preset)` for the key, so a shortcut can
-// never be advertised that isn't bound, and switching preset relabels
-// the whole bar at once (`onPresetChange`).
+// the bar asks `menuKeyFor(action, preset, mode)` for the key, so a
+// shortcut can never be advertised that isn't bound — nor one that is
+// bound to something ELSE in the mode the menu is being read in — and
+// switching preset relabels the whole bar at once (`onPresetChange`).
 //
 // It is also the home for the rarely-used-but-real commands that had
 // nowhere to live: insert/delete measure, ripple, repeats, tempo,
@@ -19,7 +20,8 @@
 // eats several of them; menus open on click and are then arrow-driven.
 
 import {
-    ACTIONS, PRESETS, keyFor, prettyKeys, getPreset, setPreset, onPresetChange,
+    ACTIONS, PRESETS, menuKeyFor, prettyKeys,
+    getPreset, setPreset, onPresetChange,
 } from './bindings.js';
 
 /** Below this width the bar collapses to a single ☰ sheet. */
@@ -268,6 +270,15 @@ export class EditorMenuBar {
     }
 
     // ── Narrow screens: one ☰ opening the same menus ──────────────────
+    /**
+     * The mode the menu is being read IN — what decides whether an item's
+     * key is honest here (see `menuKeyFor`). Defaults to NORMAL for the
+     * bare state stubs some surfaces pass.
+     */
+    _mode() {
+        return this.state?.mode || 'normal';
+    }
+
     /** @returns {number} the width the layout decision is made on */
     _width() {
         return this.element?.clientWidth
@@ -275,31 +286,49 @@ export class EditorMenuBar {
             || this.narrowWidth + 1;
     }
 
-    /** Show the trigger row, or a single ☰, depending on the width. */
+    /**
+     * Show the trigger row, or a single ☰, depending on the width.
+     *
+     * RECONCILING, not diffing: it asks what the DOM should look like at
+     * this width and makes it so, every call. The `narrow === this._narrow`
+     * early return it used to open with meant one missed transition left
+     * a ☰ sitting beside the full `File Edit Note …` row for good (the bar
+     * only cleared it the next time something else re-rendered it).
+     */
     updateLayout() {
         if (!this.element) return;
         const narrow = this._width() < this.narrowWidth;
-        if (narrow === this._narrow) return;
+        const changed = narrow !== this._narrow;
         this._narrow = narrow;
         this.element.classList.toggle('is-narrow', narrow);
-        this.close();
-        if (narrow && !this.hamburger) {
-            this.hamburger = document.createElement('button');
-            this.hamburger.type = 'button';
-            this.hamburger.className = 'menu-hamburger';
-            this.hamburger.textContent = '☰';
-            this.hamburger.title = 'Menu';
-            this.hamburger.setAttribute('aria-haspopup', 'true');
-            this.hamburger.setAttribute('aria-expanded', 'false');
-            this.hamburger.addEventListener('click', (e) => {
-                e.stopPropagation();
-                this.toggle('*');
-            });
-            this.element.insertBefore(this.hamburger, this.triggerRow);
-        } else if (!narrow && this.hamburger) {
+        if (changed) this.close();
+        if (narrow) {
+            if (!this.hamburger) this.hamburger = this._makeHamburger();
+            // `.is-narrow .menu-triggers { display: none }` hides the row;
+            // the ☰ only has to BE there, and in front of it.
+            if (this.hamburger.parentNode !== this.element) {
+                this.element.insertBefore(this.hamburger, this.triggerRow);
+            }
+        } else if (this.hamburger) {
             this.hamburger.remove();
             this.hamburger = null;
         }
+    }
+
+    /** @returns {HTMLButtonElement} the ☰ that opens the whole-bar sheet */
+    _makeHamburger() {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'menu-hamburger';
+        btn.textContent = '☰';
+        btn.title = 'Menu';
+        btn.setAttribute('aria-haspopup', 'true');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.toggle('*');
+        });
+        return btn;
     }
 
     _onResize() { this.updateLayout(); }
@@ -441,7 +470,7 @@ export class EditorMenuBar {
             if (!action) continue;   // an action that was renamed away
             out.push(this._menuItem({
                 label: item.label || action.label,
-                keys: keyFor(item.action, getPreset()),
+                keys: menuKeyFor(item.action, getPreset(), this._mode()),
                 disabled: item.when ? !item.when(this.state) : false,
                 run: () => this.dispatch(item.action),
                 actionId: item.action,
@@ -469,7 +498,7 @@ export class EditorMenuBar {
         if (name === 'file') {
             return (this.fileActions || []).map(a => ({
                 label: a.label,
-                keys: a.action ? keyFor(a.action, getPreset()) : null,
+                keys: a.action ? menuKeyFor(a.action, getPreset(), this._mode()) : null,
                 disabled: !!a.disabled,
                 run: () => a.run?.(),
             }));

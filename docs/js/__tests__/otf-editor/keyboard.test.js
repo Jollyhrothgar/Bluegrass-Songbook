@@ -1096,6 +1096,50 @@ describe('KeyboardHandler (tabledit preset)', () => {
             expect(state.cursor.tick).toBe(0);
         });
 
+        // D6: under AUTOMATIC duration the grid is the rhythm input
+        // (plan §6), so a rest steps ONE GRID SLOT. Stepping by the
+        // column rule's PREDICTION instead sent `Tab` most of a bar —
+        // straight past the slots about to be typed into.
+        describe('Tab / Shift+Tab / . (the rest)', () => {
+            it('steps by the CHOSEN duration when one is set', () => {
+                const { state, press } = setup();
+                state.setDuration(DURATIONS.quarter);
+                state.setGridSubdivision(DURATIONS.eighth);
+                state.cursor.tick = 0;
+                press('Tab');
+                expect(state.cursor.tick).toBe(480);
+                press('Tab', { shift: true });
+                expect(state.cursor.tick).toBe(0);
+            });
+
+            it('steps by ONE GRID SLOT under automatic duration', () => {
+                const { state, press } = setup();
+                state.setAutoDuration(true);
+                state.setGridSubdivision(DURATIONS.eighth);
+                state.cursor.measure = 1;
+                state.cursor.tick = 0;
+                // Nothing in the bar, so the column rule predicts the
+                // whole measure — 1920, four times the step we want.
+                expect(state.effectiveDuration()).toBe(1920);
+
+                press('Tab');
+                expect(state.cursor).toMatchObject({ measure: 1, tick: 240 });
+                press('.');
+                expect(state.cursor).toMatchObject({ measure: 1, tick: 480 });
+                press('Tab', { shift: true });
+                expect(state.cursor).toMatchObject({ measure: 1, tick: 240 });
+            });
+
+            it('follows the grid when the grid changes', () => {
+                const { state, press } = setup();
+                state.setAutoDuration(true);
+                state.setGridSubdivision(DURATIONS.sixteenth);
+                state.cursor.tick = 0;
+                press('Tab');
+                expect(state.cursor.tick).toBe(120);
+            });
+        });
+
         it('Ctrl+G asks the host which measure to go to', () => {
             const onGoToMeasure = vi.fn(() => 3);
             const { state, press } = setup({ onGoToMeasure });
@@ -1250,6 +1294,25 @@ describe('KeyboardHandler (tabledit preset)', () => {
             expect(state.getNoteAtCursor().tech).toBe('b');
             press('n');
             expect(state.getNoteAtCursor().tech).toBeUndefined();
+        });
+
+        // D5: TablEdit's N clears the note's effects — every one of them.
+        // `n` used to clear `tech` and leave `tie: true` sitting there,
+        // with no key that could take it off except toggling `l` again.
+        it('n clears the tie as well as the technique, in ONE undo step', () => {
+            const { state, press } = setup();
+            twoNotes(state);
+            state.cursor.tick = 240;
+            press('l');                      // tie
+            press('h');                      // …and a technique
+            expect(state.getNoteAtCursor()).toMatchObject({ tie: true, tech: 'h' });
+
+            press('n');
+            expect(state.getNoteAtCursor().tech).toBeUndefined();
+            expect(state.getNoteAtCursor().tie).toBeUndefined();
+
+            press('z', { ctrl: true });
+            expect(state.getNoteAtCursor()).toMatchObject({ tie: true, tech: 'h' });
         });
 
         it('l ties to the same-string predecessor (tie: true, never tech ~)', () => {

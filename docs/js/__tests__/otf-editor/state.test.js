@@ -973,6 +973,27 @@ describe('EditorState — note fixes', () => {
         expect(state.getNoteAtCursor().f).toBe(0);
     });
 
+    // D1: the document and the cursor were both right, but nothing told
+    // the status bar — it kept printing the OLD string until the next
+    // ordinary arrow key. Re-stringing IS a cursor move; it has to
+    // announce itself on the same channel every other move uses.
+    it('moveNoteAcrossStrings announces the cursor move', () => {
+        const seen = [];
+        state.on('cursorMove', (cursor) => seen.push(cursor.string));
+        expect(state.moveNoteAcrossStrings(1)).toBe(true);
+        expect(seen).toEqual([4]);
+        expect(state.cursor.string).toBe(4);
+    });
+
+    it('a refused re-string announces nothing (the cursor did not move)', () => {
+        state.cursor.string = 4;
+        state.insertNote(0);
+        const seen = [];
+        state.on('cursorMove', (cursor) => seen.push(cursor.string));
+        expect(state.moveNoteAcrossStrings(-1)).toBe(false);
+        expect(seen).toEqual([]);
+    });
+
     it('moveNoteAcrossStrings carries the note pin with it', () => {
         state.setDuration(DURATIONS.quarter);
         expect(state.isDurationPinned({ measure: 1, tick: 0, string: 3 })).toBe(true);
@@ -1020,6 +1041,50 @@ describe('EditorState — note fixes', () => {
         state.removeArticulation();
         expect(state.getNoteAtCursor().tech).toBeUndefined();
         expect(state.getNoteAtCursor().tie).toBe(true);
+    });
+
+    // D5: TablEdit's N clears the note's EFFECTS — all of them. `n` only
+    // cleared `tech`, so a tie survived a clear and there was no way to
+    // take one back except toggling it.
+    describe('clearEffectsAtCursor — TablEdit’s N', () => {
+        beforeEach(() => {
+            state.cursor.tick = 240;
+            state.insertNote(5, { tech: 'b' });
+            state.toggleTieAtCursor();
+        });
+
+        it('clears the tie AND the technique', () => {
+            expect(state.getNoteAtCursor()).toMatchObject({ tech: 'b', tie: true });
+            expect(state.clearEffectsAtCursor()).toBe(true);
+            expect(state.getNoteAtCursor().tech).toBeUndefined();
+            expect(state.getNoteAtCursor().tie).toBeUndefined();
+        });
+
+        it('is ONE undo step — u brings both back', () => {
+            state.clearEffectsAtCursor();
+            state.undo();
+            expect(state.getNoteAtCursor()).toMatchObject({ tech: 'b', tie: true });
+        });
+
+        it('clears a lone tie, and a lone technique', () => {
+            state.clearEffectsAtCursor();
+            state.toggleTieAtCursor();
+            expect(state.clearEffectsAtCursor()).toBe(true);
+            expect(state.getNoteAtCursor().tie).toBeUndefined();
+
+            state.addArticulation('h');
+            expect(state.clearEffectsAtCursor()).toBe(true);
+            expect(state.getNoteAtCursor().tech).toBeUndefined();
+        });
+
+        it('refuses on a clean note and on empty space — no undo step', () => {
+            state.clearEffectsAtCursor();
+            const before = state.history.canUndo();
+            expect(state.clearEffectsAtCursor()).toBe(false);
+            expect(state.history.canUndo()).toBe(before);
+            state.cursor.tick = 960;
+            expect(state.clearEffectsAtCursor()).toBe(false);
+        });
     });
 });
 

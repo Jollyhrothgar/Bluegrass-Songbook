@@ -255,6 +255,16 @@ export function dispatchEditorEvent(editor, event) {
             state.removeArticulation();
             break;
 
+        // Clearing the effect clears the TIE as well (TablEdit's N), so
+        // it is its own op — `removeArticulation` above stays tech-only
+        // and keeps older recordings replaying as they were made.
+        case 'clearEffects':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.clearEffectsAtCursor();
+            break;
+
         case 'setPendingArticulation':
             state.setPendingArticulation(params.tech);
             break;

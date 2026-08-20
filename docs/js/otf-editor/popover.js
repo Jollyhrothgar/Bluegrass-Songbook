@@ -2,6 +2,31 @@
 // UI for entering notes and placed text via click/tap
 //
 import { FretEntry } from './bindings.js';
+import { ARTICULATION_BUTTONS } from './toolbar.js';
+
+/**
+ * The note popover's TECHNIQUE row — the toolbar's articulation group,
+ * not a second opinion about it. It used to be a hand-written
+ * `h · p · / · ~ · none`, which both offered the retired `~`-as-technique
+ * and left dead (`x`) and choke (`b`) unreachable from the only path a
+ * phone has.
+ *
+ * The toolbar's `∅ clear` latch is dropped (the row already ends in
+ * `none`), and the tie carries `'~'` — the value `facade.insertNote`
+ * reads as "tie this to its same-string predecessor", never as a tech.
+ */
+export const POPOVER_TECHS = ARTICULATION_BUTTONS
+    .filter(cfg => !cfg.clear)
+    .map(cfg => ({
+        tech: cfg.tie ? '~' : cfg.tech,
+        symbol: cfg.symbol,
+        label: cfg.label,
+        isTie: !!cfg.tie,
+    }));
+
+/** Why the tie button is off when it is. */
+const NO_TIE_REASON =
+    'A tie needs a note before this one on the same string';
 
 // Three siblings live here: NoteEntryPopover (string/fret/technique),
 // AnnotationPopover (the score's placed free text — "PART A", "Long
@@ -136,10 +161,7 @@ export class NoteEntryPopover {
                 <div class="popover-section">
                     <label class="section-label">Technique</label>
                     <div class="technique-selector button-row">
-                        <button class="tech-button${this.selectedTech === 'h' ? ' selected' : ''}" data-tech="h" title="Hammer-on">h</button>
-                        <button class="tech-button${this.selectedTech === 'p' ? ' selected' : ''}" data-tech="p" title="Pull-off">p</button>
-                        <button class="tech-button${this.selectedTech === '/' ? ' selected' : ''}" data-tech="/" title="Slide">/</button>
-                        <button class="tech-button${this.selectedTech === '~' ? ' selected' : ''}" data-tech="~" title="Tie">~</button>
+                        ${this._renderTechButtons()}
                         <button class="tech-button tech-none${!this.selectedTech ? ' selected' : ''}" data-tech="">none</button>
                     </div>
                 </div>
@@ -254,6 +276,11 @@ export class NoteEntryPopover {
                 background: var(--accent, #007bff);
                 border-color: var(--accent, #007bff);
                 color: #fff;
+            }
+
+            .tech-button.is-unavailable {
+                opacity: 0.4;
+                cursor: not-allowed;
             }
 
             .fret-pad {
@@ -391,6 +418,9 @@ export class NoteEntryPopover {
             btn.addEventListener('click', () => {
                 this.selectedString = parseInt(btn.dataset.string, 10);
                 this._updateStringSelection();
+                // A tie hangs off the previous note on THIS string, so
+                // the row's availability moves with the string.
+                this._refreshTechRow();
             });
         });
 
@@ -425,6 +455,7 @@ export class NoteEntryPopover {
         // Technique buttons
         this.element.querySelectorAll('.tech-button').forEach(btn => {
             btn.addEventListener('click', () => {
+                if (btn.disabled) return;
                 this.selectedTech = btn.dataset.tech || null;
                 this._updateTechSelection();
             });
@@ -444,6 +475,46 @@ export class NoteEntryPopover {
         this.element.querySelector('.insert-btn').addEventListener('click', () => {
             this._handleInsert();
         });
+    }
+
+    /**
+     * The technique row's buttons, from the ONE articulation config
+     * (`POPOVER_TECHS`). The tie is disabled — with the reason in its
+     * tooltip — when there is nothing to tie from, because `setTie`
+     * would refuse and the mark would vanish silently.
+     */
+    _renderTechButtons() {
+        const tieOk = this._tieAvailable();
+        return POPOVER_TECHS.map((cfg) => {
+            const off = cfg.isTie && !tieOk;
+            const title = off ? NO_TIE_REASON : cfg.label;
+            const cls = ['tech-button'];
+            if (cfg.isTie) cls.push('tech-tie');
+            if (!off && this.selectedTech === cfg.tech) cls.push('selected');
+            if (off) cls.push('is-unavailable');
+            return `<button class="${cls.join(' ')}" data-tech="${cfg.tech}"`
+                + ` title="${title}"${off ? ' disabled' : ''}>${cfg.symbol}</button>`;
+        }).join('');
+    }
+
+    /**
+     * Can a note entered here be tied? A tie hangs off the previous note
+     * on the SAME string, so the answer moves with the string buttons.
+     * Unknown (a bare state stub, no facade) counts as available — this
+     * is a hint, not a gate.
+     * @param {number} [string] - defaults to the selected string
+     */
+    _tieAvailable(string = this.selectedString) {
+        const cursor = this.state?.cursor;
+        const facade = this.state?.facade;
+        if (!cursor || typeof facade?.tiePredecessor !== 'function') return true;
+        try {
+            return !!facade.tiePredecessor(
+                { measure: cursor.measure, tick: cursor.tick, string },
+                this.state.trackId);
+        } catch {
+            return false;
+        }
     }
 
     /**
@@ -488,6 +559,27 @@ export class NoteEntryPopover {
             const tech = btn.dataset.tech || null;
             btn.classList.toggle('selected', tech === this.selectedTech);
         });
+    }
+
+    /**
+     * Redraw the technique row after something the tie depends on moved.
+     * A selected tie that just became impossible is dropped rather than
+     * carried into an Insert that would silently ignore it.
+     */
+    _refreshTechRow() {
+        const row = this.element?.querySelector('.technique-selector');
+        if (!row) return;
+        if (this.selectedTech === '~' && !this._tieAvailable()) this.selectedTech = null;
+        const none = row.querySelector('.tech-none');
+        row.innerHTML = this._renderTechButtons() + (none ? none.outerHTML : '');
+        row.querySelectorAll('.tech-button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.disabled) return;
+                this.selectedTech = btn.dataset.tech || null;
+                this._updateTechSelection();
+            });
+        });
+        this._updateTechSelection();
     }
 
     /**
@@ -555,26 +647,17 @@ export class NoteEntryPopover {
             if (string <= stringCount) {
                 this.selectedString = string;
                 this._updateStringSelection();
+                this._refreshTechRow();
             }
             return;
         }
 
-        // Technique shortcuts
-        if (key === 'h') {
+        // Technique shortcuts — the same row the buttons draw, so `x`
+        // (dead) and `b` (choke) type here exactly as they do on canvas.
+        const tech = POPOVER_TECHS.find(cfg => cfg.tech === key && !cfg.isTie);
+        if (tech) {
             event.preventDefault();
-            this.selectedTech = this.selectedTech === 'h' ? null : 'h';
-            this._updateTechSelection();
-            return;
-        }
-        if (key === 'p') {
-            event.preventDefault();
-            this.selectedTech = this.selectedTech === 'p' ? null : 'p';
-            this._updateTechSelection();
-            return;
-        }
-        if (key === '/') {
-            event.preventDefault();
-            this.selectedTech = this.selectedTech === '/' ? null : '/';
+            this.selectedTech = this.selectedTech === tech.tech ? null : tech.tech;
             this._updateTechSelection();
             return;
         }
@@ -615,10 +698,12 @@ export class NoteEntryPopover {
         // Add keyboard listener
         document.addEventListener('keydown', this._onKeyDown);
 
-        // Focus first element
-        setTimeout(() => {
-            const firstBtn = this.element.querySelector('.fret-button');
-            firstBtn?.focus();
+        // Focus first element. The popover can be closed or destroyed
+        // inside these 50ms, so re-check rather than throwing into a
+        // timer nobody is catching.
+        this._focusTimer = setTimeout(() => {
+            this._focusTimer = null;
+            this.element?.querySelector('.fret-button')?.focus();
         }, 50);
     }
 
@@ -644,6 +729,8 @@ export class NoteEntryPopover {
      */
     destroy() {
         document.removeEventListener('keydown', this._onKeyDown);
+        if (this._focusTimer) clearTimeout(this._focusTimer);
+        this._focusTimer = null;
         if (this.overlay && this.overlay.parentNode) {
             this.overlay.parentNode.removeChild(this.overlay);
         }

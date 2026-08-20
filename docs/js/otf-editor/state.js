@@ -706,6 +706,30 @@ export class EditorState {
     }
 
     /**
+     * Clear EVERY effect on the note at the cursor — technique and tie
+     * alike, which is what TablEdit's `N` does. `tech` and `tie` are
+     * independent fields (neither op clears the other's, deliberately),
+     * so the clear has to name both; `facade.transact` makes the pair one
+     * undo step. Refused — no history entry — when there is nothing set.
+     * @returns {boolean} true when something was cleared
+     */
+    clearEffectsAtCursor() {
+        const note = this.getNoteAtCursor();
+        if (!note) return false;
+        if (note.tech === undefined && note.tie !== true) return false;
+        const pos = {
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        };
+        return this.facade.transact('Clear effects', () => {
+            const tech = this.facade.setArticulation(pos, null, this.trackId) !== false;
+            const tie = this.facade.setTie(pos, false, { trackId: this.trackId }) !== false;
+            return tech || tie;
+        }) !== false;
+    }
+
+    /**
      * Set mode
      */
     setMode(mode) {
@@ -973,6 +997,12 @@ export class EditorState {
             if (set.delete(from)) set.add(onto);
         }
         this.cursor.string = to.string;
+        // The cursor MOVED, so say so on the same channel every ordinary
+        // move uses — the status bar's `String:` field, the toolbar's
+        // `.reflects-note` outlines and the cursor overlay all subscribe
+        // to `cursorMove` and would otherwise show the old string until
+        // the next arrow key.
+        this._emit('cursorMove', this.cursor);
         return true;
     }
 
