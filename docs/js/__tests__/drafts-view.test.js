@@ -129,6 +129,38 @@ describe('renderDraftsView', () => {
         expect(el2.textContent).toContain('No drafts yet');
     });
 
+    // With nothing injected the ask is an INLINE strip in the row — not
+    // window.confirm, which no test (and no theme) can reach.
+    it('Delete draws an inline confirm in the row by default', async () => {
+        const nativeConfirm = vi.spyOn(globalThis, 'confirm');
+        const store = createDraftStore({ backend: memoryBackend() });
+        await store.save({ otf: { metadata: { title: 'Doomed' }, tracks: [{ id: 'b' }] } });
+        const el = mount();
+        await renderDraftsView(el, { store });
+
+        el.querySelector('.draft-delete').click();
+        await new Promise(r => setTimeout(r, 0));
+
+        expect(nativeConfirm).not.toHaveBeenCalled();
+        const ask = el.querySelector('.draft-confirm');
+        expect(ask).not.toBeNull();
+        expect(ask.textContent).toContain('Delete this draft?');
+        expect((await store.list()).length).toBe(1);   // nothing gone yet
+
+        ask.querySelector('.draft-confirm-no').click();
+        await new Promise(r => setTimeout(r, 0));
+        expect(el.querySelector('.draft-confirm')).toBeNull();
+        expect((await store.list()).length).toBe(1);
+
+        el.querySelector('.draft-delete').click();
+        await new Promise(r => setTimeout(r, 0));
+        el.querySelector('.draft-confirm-yes').click();
+        await new Promise(r => setTimeout(r, 0));
+        expect(await store.list()).toEqual([]);
+        expect(el.textContent).toContain('No drafts yet');
+        nativeConfirm.mockRestore();
+    });
+
     it('says so when the store cannot be opened, rather than blowing up', async () => {
         const el = mount();
         await renderDraftsView(el, { store: { list: () => Promise.reject(new Error('blocked')) } });

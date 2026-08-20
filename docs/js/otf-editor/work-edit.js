@@ -179,6 +179,7 @@ export function createTabEditSession({
     const cleanup = () => {
         if (closed) return false;
         closed = true;
+        closeInline();
         editor.destroy?.();
         // The bar (and its panel) live in the bottom band in compact mode,
         // so they are NOT descendants of root and have to go themselves.
@@ -187,6 +188,61 @@ export function createTabEditSession({
         root.remove();
         return true;
     };
+
+    // ── "Discard edits?" — inline, in the bar (never window.confirm) ───
+    let discardAsk = null;
+
+    /** Take the question down without answering it. */
+    function closeInline() {
+        discardAsk?.remove();
+        discardAsk = null;
+    }
+
+    /**
+     * Ask in the bar, beside the button that raised the question.
+     * Idempotent: a second Cancel click re-focuses the standing question
+     * rather than stacking a second one.
+     */
+    function askInline() {
+        if (discardAsk) {
+            discardAsk.querySelector('.tab-edit-discard-yes')?.focus();
+            return discardAsk;
+        }
+        discardAsk = document.createElement('span');
+        discardAsk.className = 'tab-edit-discard-confirm';
+        discardAsk.setAttribute('role', 'alertdialog');
+        discardAsk.setAttribute('aria-label', 'Discard edits?');
+        discardAsk.style.cssText =
+            'display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;';
+        discardAsk.innerHTML = `
+            <span class="tab-edit-discard-question">Discard edits?</span>
+            <button type="button" class="tab-edit-discard-yes qc-toggle-btn">Discard</button>
+            <button type="button" class="tab-edit-discard-no qc-toggle-btn">Keep editing</button>
+        `;
+        discardAsk.querySelector('.tab-edit-discard-yes')
+            .addEventListener('click', () => {
+                closeInline();
+                session._exit();
+            });
+        discardAsk.querySelector('.tab-edit-discard-no')
+            .addEventListener('click', () => {
+                closeInline();
+                editor.focus?.();
+            });
+        // Escape is "keep editing" — the same answer the panel's own
+        // button gives, from the key everyone reaches for first.
+        discardAsk.addEventListener('keydown', (e) => {
+            e.stopPropagation();
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                closeInline();
+                editor.focus?.();
+            }
+        });
+        actionsEl.appendChild(discardAsk);
+        discardAsk.querySelector('.tab-edit-discard-yes').focus();
+        return discardAsk;
+    }
 
     const session = {
         root,
@@ -205,16 +261,39 @@ export function createTabEditSession({
             onExit('apply');
         },
 
-        /** Exit without applying; asks first when there are edits. */
+        /**
+         * Exit without applying; asks first when there are edits.
+         *
+         * The ask is an INLINE confirm in the bar, not `window.confirm`.
+         * A native dialog is drawn by the browser, so it is outside the
+         * DOM (no test can drive it), outside the theme, and on a phone
+         * it covers the very edits it is asking about. The inline strip
+         * sits where the buttons are, which is where the click that
+         * raised the question came from.
+         *
+         * Because the answer arrives later, `cancel()` returns FALSE when
+         * it merely asked — "not exited (yet)". The injected
+         * `confirmDiscard` still answers synchronously, which is what
+         * keeps the unit tests (and any host that wants its own dialog)
+         * working unchanged.
+         *
+         * @returns {boolean} true when the session actually exited
+         */
         cancel() {
             const dirty = editor.state?.facade?.canUndo?.() || false;
             if (dirty) {
-                const ask = confirmDiscard
-                    || ((typeof window !== 'undefined' && window.confirm)
-                        ? () => window.confirm('Discard your edits?')
-                        : () => true);
-                if (!ask()) return false;
+                if (confirmDiscard) {
+                    if (!confirmDiscard()) return false;
+                } else {
+                    askInline();
+                    return false;
+                }
             }
+            return session._exit();
+        },
+
+        /** The unconditional half of cancel — no question asked. */
+        _exit() {
             if (!cleanup()) return false;
             onExit('cancel');
             return true;

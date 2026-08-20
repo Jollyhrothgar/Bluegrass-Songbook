@@ -10552,82 +10552,213 @@ body.has-list-context.has-bottomband .container {
     body.has-list-context .tab-settings-sheet {
         bottom: calc(var(--bottomband-h, 60px) + var(--listbar-h) + 8px);
     }
+}
 
-    /* Settings sheet: everything the band gave up, in labeled rows. */
-    .tab-settings-sheet {
-        z-index: 950;
-        display: block;
-        max-height: 62vh;
-        overflow-y: auto;
-        padding: var(--space-sm);
-        background: var(--bg);
-        border: 1px solid var(--border);
-        border-radius: var(--radius-lg);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+/* ── The settings sheet, and the band width that summons it ──────────────
+   The sheet only EXISTS while the band has collapsed — tab-controls-sheet.js
+   builds it at that moment and removes it again — so its own chrome needs no
+   width test. It used to live inside the phone media query because a phone
+   viewport was the only way to get one; now the band collapses on its own
+   width (a narrow window, a split view, a test that constrains the
+   container), and the chrome has to follow it there. Everything the band
+   gave up ends up in here, in labeled rows. */
+.tab-settings-sheet {
+    z-index: 950;
+    display: block;
+    max-height: 62vh;
+    overflow-y: auto;
+    padding: var(--space-sm);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.tab-sheet-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.15rem;
+}
+
+.tab-sheet-row + .tab-sheet-row {
+    border-top: 1px solid var(--border);
+}
+
+.tab-sheet-label {
+    flex: 0 0 3.2rem;
+    font-size: var(--font-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+}
+
+.tab-sheet-items {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+/* The mixer's band styling (left rule, inline width) makes no sense in
+   a labeled row */
+.tab-settings-sheet .tab-track-mixer {
+    border-left: none;
+    padding: 0;
+    gap: 0.4rem;
+}
+
+.tab-settings-sheet .qc-btn { width: 40px; height: 40px; }
+.tab-settings-sheet .qc-label { height: 40px; }
+.tab-settings-sheet .qc-toggle-btn { height: 40px; padding: 0 0.75rem; }
+.tab-settings-sheet .pill-btn { padding: 0.45rem 0.75rem; }
+.tab-settings-sheet .pill-mode-btn { padding: 0.5rem 0.7rem; }
+.tab-settings-sheet .track-toggle,
+.tab-settings-sheet .tab-metronome-toggle {
+    padding: 0.45rem 0.6rem;
+}
+
+/* The count-in label is an unstyled native checkbox everywhere else;
+   in a row of bordered toggles it needs the same outline to read as
+   one of them. */
+.tab-settings-sheet .tab-countin-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.45rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+}
+
+/* Drop-ups opened from inside the sheet sit above the sheet itself */
+.tab-settings-sheet .pill-popover {
+    z-index: 960;
+}
+
+/* ── The band asks about ITSELF, not the window ───────────────────────────
+   `container-type: inline-size` makes the bottom band a query container
+   named `tabband`, so the collapsed layout below is chosen by the BAND's
+   width rather than the window's. That is the same question tab-controls-sheet.js asks (it observes
+   the element and publishes `.is-narrow-band`), and it is what makes the
+   phone layout reachable by constraining the container instead of the
+   viewport — which is to say, reachable from a test.
+
+   The `@media (max-width: 640px)` block above stays as the fallback for
+   browsers without container queries. Where both apply they say the same
+   thing, so the duplication is inert rather than contradictory; this block
+   comes second so it wins the tie.
+
+   The drop-up offsets are restated inside the block rather than inherited,
+   because this block wins the tie against the media query and has to carry
+   everything the collapsed band needs — see the note beside them. */
+@supports (container-type: inline-size) {
+    /* The container is the BAND, not `.tab-controls` inside it. On a phone
+       `.tab-controls` is an `overflow-x: auto` strip, and a query container
+       is also a containing block for `position: fixed` descendants — so
+       putting it there made the strip clip its own settings sheet down to a
+       44px slot. The band has no overflow, and its inline size comes from
+       `left: 0; right: 0` (or from a width a test pins on it), so it can be
+       size-contained without depending on its contents. */
+    .app-bottomband {
+        container: tabband / inline-size;
     }
 
-    .tab-sheet-row {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.4rem 0.15rem;
-    }
+    @container tabband (max-width: 640px) {
+        .app-bottomband .tab-controls {
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 0.4rem;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+        }
 
-    .tab-sheet-row + .tab-sheet-row {
-        border-top: 1px solid var(--border);
-    }
+        .app-bottomband .tab-controls > * {
+            flex: 0 0 auto;
+            order: 2;
+        }
 
-    .tab-sheet-label {
-        flex: 0 0 3.2rem;
-        font-size: var(--font-xs);
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: var(--text-secondary);
-    }
+        .app-bottomband .tab-controls .tab-play-btn { order: 0; }
+        .app-bottomband .tab-controls .tab-stop-btn { order: 1; }
+        .app-bottomband .tab-controls .tab-tempo-group { order: 2; }
+        .app-bottomband .tab-controls .tab-loop-toggle { order: 3; }
+        .app-bottomband .tab-controls .tab-more-btn { order: 4; }
 
-    .tab-sheet-items {
-        display: flex;
-        flex: 1 1 auto;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 0.5rem;
-        min-width: 0;
-    }
+        /* 44px touch targets — a band this narrow is being touched. */
+        .app-bottomband .tab-controls .qc-toggle-btn {
+            height: 44px;
+            padding: 0 0.6rem;
+            font-size: 0.9rem;
+            border-radius: var(--radius-md);
+        }
 
-    /* The mixer's band styling (left rule, inline width) makes no sense in
-       a labeled row */
-    .tab-settings-sheet .tab-track-mixer {
-        border-left: none;
-        padding: 0;
-        gap: 0.4rem;
-    }
+        .app-bottomband .tab-controls .qc-btn {
+            width: 40px;
+            height: 44px;
+            font-size: 1.2rem;
+        }
 
-    .tab-settings-sheet .qc-btn { width: 40px; height: 40px; }
-    .tab-settings-sheet .qc-label { height: 40px; }
-    .tab-settings-sheet .qc-toggle-btn { height: 40px; padding: 0 0.75rem; }
-    .tab-settings-sheet .pill-btn { padding: 0.45rem 0.75rem; }
-    .tab-settings-sheet .pill-mode-btn { padding: 0.5rem 0.7rem; }
-    .tab-settings-sheet .track-toggle,
-    .tab-settings-sheet .tab-metronome-toggle {
-        padding: 0.45rem 0.6rem;
-    }
+        .app-bottomband .tab-controls .qc-label {
+            height: 44px;
+            min-width: 26px;
+            padding: 0 0.2rem;
+        }
 
-    /* The count-in label is an unstyled native checkbox everywhere else;
-       in a row of bordered toggles it needs the same outline to read as
-       one of them. */
-    .tab-settings-sheet .tab-countin-toggle {
-        display: flex;
-        align-items: center;
-        gap: 0.35rem;
-        padding: 0.45rem 0.6rem;
-        border: 1px solid var(--border);
-        border-radius: var(--radius-sm);
-        background: var(--bg);
-    }
+        .app-bottomband .tab-controls .tab-loop-toggle {
+            height: 44px;
+            padding: 0 0.55rem;
+            border-radius: var(--radius-md);
+        }
 
-    /* Drop-ups opened from inside the sheet sit above the sheet itself */
-    .tab-settings-sheet .pill-popover {
-        z-index: 960;
+        .app-bottomband .tab-controls .tab-more-btn {
+            width: 44px;
+            padding: 0;
+            justify-content: center;
+            font-size: 1.15rem;
+        }
+
+        /* No room for the clock in a five-control row; it rides the top edge. */
+        .app-bottomband .tab-controls .tab-position {
+            position: absolute;
+            top: 1px;
+            left: 0;
+            right: 0;
+            min-width: 0;
+            text-align: center;
+            font-size: 0.62rem;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        /* The strip's overflow-x would clip a drop-up, so the sheet and the
+           pill popovers become panels pinned just above the band — the same
+           offsets the media-query fallback uses, deliberately.
+
+           `100%` would have been tidier, but it does not mean what it looks
+           like it means here: `container-type` does NOT make the band the
+           containing block for a `position: fixed` descendant in Chromium,
+           so a percentage resolves against the viewport and the sheet flies
+           off the top of the screen. `--bottomband-h` (published by
+           shell.js) is the band's real height and the honest answer. */
+        .app-bottomband .tab-controls .pill-popover,
+        .app-bottomband .tab-controls .tab-settings-sheet {
+            position: fixed;
+            top: auto;
+            bottom: calc(var(--bottomband-h, 60px) + 8px);
+            left: 0.5rem;
+            right: 0.5rem;
+            width: auto;
+            max-width: none;
+        }
+
+        body.has-list-context .app-bottomband .tab-controls .pill-popover,
+        body.has-list-context .app-bottomband .tab-controls .tab-settings-sheet {
+            bottom: calc(var(--bottomband-h, 60px) + var(--listbar-h) + 8px);
+        }
     }
 }
 
@@ -10879,6 +11010,35 @@ body.has-list-context.has-bottomband .container {
     display: flex;
     gap: 0.4rem;
     flex-shrink: 0;
+}
+
+/* The inline "Delete this draft?" — the app's answer to window.confirm.
+   It wraps onto its own line inside the row it is asking about, so the
+   question and the thing it is about are never separated. */
+.draft-row:has(.draft-confirm) {
+    flex-wrap: wrap;
+}
+
+.draft-confirm {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.draft-confirm-question {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-right: auto;
+}
+
+/* Same question, same shape, in the tab editor's action bar. */
+.tab-edit-discard-question {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
 }
 
 /* Dragging a .tef / .otf.json anywhere over the app: one calm hint, and no

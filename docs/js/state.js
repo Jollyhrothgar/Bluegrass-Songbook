@@ -408,7 +408,31 @@ export let currentSearchQuery = '';
 // Dungeon mode: search scope flips to archived-only rows (indexed === false)
 export let dungeonMode = false;
 
-export function setCurrentView(value) { currentView = value; notifyChange('currentView'); }
+/**
+ * The view changed — which is NOT the same as "someone said the view".
+ *
+ * Writing the value it already holds fires nothing, matching `setDungeonMode`
+ * below and `setState` above, and matching what main.js already documents
+ * about itself ("showView('search') is a no-op when the view is already
+ * 'search', so the subscriber can't be trusted to fire"). Until this guard
+ * existed the code said that and the setter did the opposite.
+ *
+ * It is not tidiness. Subscribers run on a `requestAnimationFrame` (see
+ * `scheduleRender`), so every redundant write buys a real callback at a later
+ * frame boundary — and the `currentView` subscriber in main.js does imperative
+ * teardown work, not just painting. A tab route is dispatched TWICE for one
+ * navigation (popstate and hashchange both reach `handleDeepLink`), so
+ * `openNewTabPage` runs twice; without this guard the second run queued a
+ * second teardown that could land after the first run's editor had mounted.
+ * Any consumer that really wants the teardown calls `teardownTablatureView()`
+ * itself — `openWork` and `openNewTabPage` both do, synchronously, before
+ * they build.
+ */
+export function setCurrentView(value) {
+    if (currentView === value) return;
+    currentView = value;
+    notifyChange('currentView');
+}
 export function setActiveModal(value) { activeModal = value; notifyChange('activeModal'); }
 export function setCurrentSearchQuery(value) { currentSearchQuery = value; notifyChange('currentSearchQuery'); }
 export function setDungeonMode(value) {

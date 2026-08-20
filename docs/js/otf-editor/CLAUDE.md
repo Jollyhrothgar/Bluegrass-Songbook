@@ -304,6 +304,7 @@ docs/js/otf-editor/
 ├── menu-bar.js        # File/Edit/Note/Play/Score/View/Help, generated from bindings.js
 ├── toolbar.js         # Duration / grid / articulation / text / edit / track palettes
 ├── popover.js         # NoteEntryPopover + AnnotationPopover + TrackNamePopover
+│                      #   + ValuePromptPopover (see "No native dialogs")
 ├── context-menu.js    # Right-click menu
 ├── pitch.js           # Pure string+fret ↔ MIDI (ported from tab-player)
 ├── actions.js         # Document-level helpers (validate, cleanup, download)
@@ -314,6 +315,37 @@ docs/js/otf-editor/
 except `EditingFacade`.** Its undo history is a whole-document snapshot
 pair per op, so anything routed through it is undoable for free — and
 anything that reaches around it is silently *not*.
+
+### No native dialogs
+
+`window.prompt` / `confirm` / `alert` are banned from this directory, and
+`docs/js/__tests__/no-native-dialogs.test.js` scans for them. They are drawn
+by the BROWSER, which means: not in the DOM (so no Playwright test can drive
+them, and the owner's rule is that everything a human can do must be), not in
+the theme, and on iOS they take focus in a way the canvas never gets back.
+
+Four panels cover everything the editor needs to ask, and they are siblings
+on purpose — same overlay/panel chrome, Enter commits, Escape cancels, keys
+are swallowed so the vim bindings never see what you typed:
+
+| ask | panel |
+|---|---|
+| a note | `NoteEntryPopover` |
+| placed text (`c`) | `AnnotationPopover` |
+| a track's name (✏️) | `TrackNamePopover` |
+| **one number** — Go to measure (`Ctrl+G`), Play ▸ Tempo… | `ValuePromptPopover` |
+
+`ValuePromptPopover` is where the last two `prompt()` calls went. Its answer
+arrives LATER (on Enter or a click), which is why `_promptForMeasure` returns
+0 and dispatches `nav.goToMeasure` with a `count` from the commit callback
+instead of returning a number — the binding table already understood counts
+(`g12G` in the vim preset), so it needed no new entry and no async hook.
+
+Outside the editor, the same rule reaches the two places a tab session asks
+something: the edit bar's inline "Discard edits? · Discard · Keep editing"
+(`work-edit.js`, with the `confirmDiscard` injection point still honoured
+when a host supplies one) and the drafts list's inline "Delete this draft?"
+(`drafts-view.js`).
 
 ## Related
 

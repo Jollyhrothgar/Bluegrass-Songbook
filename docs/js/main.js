@@ -384,11 +384,26 @@ function initViewSubscription() {
     const searchContainer = document.querySelector('.search-container');
 
     subscribe('currentView', (view) => {
-        // Tear down live tablature state on any view change: stops
-        // audio (including an in-flight soundfont load), destroys the
-        // edit session and renderer observers. Idempotent; the work
-        // view rebuilds everything it needs on render.
-        teardownTablatureView();
+        // Tear down live tablature state when LEAVING the song page: stops
+        // audio (including an in-flight soundfont load), destroys the edit
+        // session and renderer observers.
+        //
+        // Not when arriving at it. Subscribers run on a `requestAnimationFrame`
+        // (state.js `scheduleRender`), so a teardown queued by *entering* the
+        // song view lands a frame later — by which time work-view has already
+        // built the very thing it then destroys. That is a coin flip decided
+        // by the module cache: with the editor's four dynamic imports cold the
+        // frame wins and the editor survives; warm, the mount resolves in a
+        // microtask, finishes first, and gets deleted. `#drafts` → Open lost
+        // that flip every time (warm), and a dropped `.tef` lost it about half
+        // the time.
+        //
+        // Nothing is left un-torn-down: every path INTO the song view goes
+        // through work-view, which tears down synchronously before it builds
+        // (`openWork`, `openNewTabPage`, and the two bare loading/not-found
+        // states below them). Leaving is the case with no other owner, and
+        // that is the case this keeps.
+        if (view !== 'song') teardownTablatureView();
 
         // Chrome auto-hide only lives on the song page
         setChromeAutoHide(view === 'song');
@@ -745,7 +760,9 @@ function showLandingPage() {
  * opens the way it would have without it.
  */
 async function openTabRoute(route, hash) {
-    const { draft: draftId } = parseHashParams(hash);
+    // `file=1` rides along from pwa.js: it means "this draft is a file the
+    // reader just opened", which the take header says out loud.
+    const { draft: draftId, file: fromFile } = parseHashParams(hash);
     let draft = null;
     if (draftId) {
         try {
@@ -764,7 +781,7 @@ async function openTabRoute(route, hash) {
             options.instrument = options.instrument
                 || partInstrumentFor(draft.otf, draft.instrument);
         }
-        openNewTabPage({ ...options, draft });
+        openNewTabPage({ ...options, draft, fromFile: fromFile && !!draft });
         return;
     }
 

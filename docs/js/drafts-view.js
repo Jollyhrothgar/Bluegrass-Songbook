@@ -100,13 +100,15 @@ export function draftsViewHtml(drafts, now = Date.now()) {
  * @param {Object} [options]
  * @param {Object} [options.store] - draft store (injected in tests)
  * @param {Function} [options.navigate] - (hash) => void
- * @param {Function} [options.confirmDelete] - (draft) => boolean
+ * @param {Function} [options.confirmDelete] - (draft) => boolean|Promise<boolean>.
+ *   Default: an INLINE confirm drawn into the row (never `window.confirm` —
+ *   a native dialog is outside the DOM, so nothing can drive it: not a
+ *   Playwright run, not a screen reader's own review cursor, not the theme).
  */
 export async function renderDraftsView(container, {
     store = getDraftStore(),
     navigate = (hash) => { globalThis.location.hash = hash; },
-    confirmDelete = (draft) => globalThis.confirm?.(
-        `Delete the draft "${draft.title}"? This cannot be undone.`) ?? true,
+    confirmDelete = null,
     now = () => Date.now(),
 } = {}) {
     if (!container) return;
@@ -140,12 +142,56 @@ export async function renderDraftsView(container, {
         const del = e.target.closest?.('.draft-delete');
         if (del) {
             const draft = drafts.find(d => d.id === del.dataset.draftId);
-            if (!draft || !confirmDelete(draft)) return;
+            if (!draft) return;
+            const ok = confirmDelete
+                ? await confirmDelete(draft)
+                : await askInRow(del.closest('.draft-row'));
+            if (!ok) return;
             await store.remove(draft.id);
             drafts = drafts.filter(d => d.id !== draft.id);
             [...container.querySelectorAll('.draft-row')]
                 .find(el => el.dataset.draftId === draft.id)?.remove();
             if (!drafts.length) container.innerHTML = draftsViewHtml([], now());
         }
+    });
+}
+
+/**
+ * The inline "Delete this draft?" strip, drawn into the row it is about.
+ *
+ * Resolves true/false when the reader answers, and false if the row goes
+ * away underneath it. Only one question stands at a time: clicking Delete
+ * again re-focuses the standing one instead of stacking a second.
+ */
+export function askInRow(row) {
+    if (!row) return Promise.resolve(false);
+    const standing = row.querySelector('.draft-confirm');
+    if (standing) {
+        standing.querySelector('.draft-confirm-yes')?.focus();
+        return Promise.resolve(false);
+    }
+    return new Promise((resolve) => {
+        const strip = document.createElement('div');
+        strip.className = 'draft-confirm';
+        strip.setAttribute('role', 'alertdialog');
+        strip.setAttribute('aria-label', 'Delete this draft?');
+        strip.innerHTML = `
+            <span class="draft-confirm-question">Delete this draft?</span>
+            <button type="button" class="qc-toggle-btn draft-confirm-yes">Delete</button>
+            <button type="button" class="qc-toggle-btn draft-confirm-no">Keep</button>
+        `;
+        const answer = (value) => {
+            strip.remove();
+            resolve(value);
+        };
+        strip.querySelector('.draft-confirm-yes')
+            .addEventListener('click', (e) => { e.stopPropagation(); answer(true); });
+        strip.querySelector('.draft-confirm-no')
+            .addEventListener('click', (e) => { e.stopPropagation(); answer(false); });
+        strip.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') { e.preventDefault(); answer(false); }
+        });
+        row.appendChild(strip);
+        strip.querySelector('.draft-confirm-yes').focus();
     });
 }

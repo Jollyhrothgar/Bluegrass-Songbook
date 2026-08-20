@@ -724,13 +724,86 @@ describe('OTFEditor — menu bar and status bar', () => {
         expect(findItem(editor.menuBar, 'Rename track…')).toBeTruthy();
     });
 
-    it('Play ▸ Tempo… writes the document tempo through the facade', () => {
+    // ── The two prompts that used to be window.prompt ─────────────────
+    // They are ValuePromptPopover now: in the DOM, themed, validated, and
+    // drivable by a test (which a native dialog never was).
+
+    /** The open value prompt, or null. */
+    const valuePrompt = () => container.querySelector(
+        '.otf-value-prompt-overlay[style*="flex"] .otf-value-prompt-popover');
+
+    /** Type into the open value prompt (fires `input`, as a human would). */
+    const typeValue = (panel, text) => {
+        const input = panel.querySelector('.value-prompt-input');
+        input.value = text;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        return input;
+    };
+
+    it('Play ▸ Tempo… writes the document tempo through an in-app popover', () => {
         editor = new OTFEditor({ container });
-        const prompt = vi.spyOn(globalThis, 'prompt').mockReturnValue('96');
+        const nativePrompt = vi.spyOn(globalThis, 'prompt');
         editor.menuBar.open('play');
         findItem(editor.menuBar, 'Tempo…').click();
+
+        const panel = valuePrompt();
+        expect(panel).toBeTruthy();
+        expect(panel.querySelector('.value-prompt-input').value).toBe('120');
+
+        typeValue(panel, '96');
+        panel.querySelector('.save-btn').click();
+
         expect(editor.state.otf.metadata.tempo).toBe(96);
-        prompt.mockRestore();
+        expect(nativePrompt).not.toHaveBeenCalled();
+        nativePrompt.mockRestore();
+    });
+
+    it('the tempo prompt refuses an out-of-range value inline', () => {
+        editor = new OTFEditor({ container });
+        editor.menuBar.open('play');
+        findItem(editor.menuBar, 'Tempo…').click();
+
+        const panel = valuePrompt();
+        typeValue(panel, '900');
+        expect(panel.querySelector('.save-btn').disabled).toBe(true);
+        expect(panel.querySelector('.value-prompt-error').textContent)
+            .toContain('40');
+
+        panel.querySelector('.save-btn').click();
+        expect(editor.state.otf.metadata.tempo).toBe(120);
+    });
+
+    it('Escape cancels the tempo prompt without writing', () => {
+        editor = new OTFEditor({ container });
+        editor.menuBar.open('play');
+        findItem(editor.menuBar, 'Tempo…').click();
+
+        const panel = valuePrompt();
+        typeValue(panel, '96');
+        panel.dispatchEvent(new KeyboardEvent('keydown', {
+            key: 'Escape', bubbles: true,
+        }));
+
+        expect(valuePrompt()).toBeNull();
+        expect(editor.state.otf.metadata.tempo).toBe(120);
+    });
+
+    it('Score ▸ Go to measure… moves the cursor from the popover', () => {
+        editor = new OTFEditor({ container });
+        editor.state.ensureMeasure(4);
+        editor.menuBar.open('score');
+        findItem(editor.menuBar, 'Go to measure…').click();
+
+        const panel = valuePrompt();
+        expect(panel).toBeTruthy();
+        typeValue(panel, '3');
+        // Enter commits, exactly like the note and track-name panels
+        panel.dispatchEvent(new KeyboardEvent('keydown', {
+            key: 'Enter', bubbles: true,
+        }));
+
+        expect(editor.state.cursor.measure).toBe(3);
+        expect(valuePrompt()).toBeNull();
     });
 
     it('destroy takes the menu bar with it', () => {

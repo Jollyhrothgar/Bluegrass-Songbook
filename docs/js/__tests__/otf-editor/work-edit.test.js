@@ -133,6 +133,60 @@ describe('createTabEditSession', () => {
         expect(onExit).toHaveBeenCalledWith('cancel');
     });
 
+    // The DEFAULT ask (no confirmDiscard injected) is an inline strip in
+    // the bar, not window.confirm — see no-native-dialogs.test.js for why.
+    it('Cancel with edits draws an inline confirm, not a native dialog', () => {
+        const nativeConfirm = vi.spyOn(globalThis, 'confirm');
+        start();
+        editor.dirty = true;
+
+        expect(session.cancel()).toBe(false);          // asked, did not exit
+        expect(nativeConfirm).not.toHaveBeenCalled();
+        expect(onExit).not.toHaveBeenCalled();
+
+        const ask = mount.querySelector('.tab-edit-discard-confirm');
+        expect(ask).not.toBeNull();
+        expect(ask.textContent).toContain('Discard edits?');
+        nativeConfirm.mockRestore();
+    });
+
+    it('“Keep editing” takes the question down and stays in the session', () => {
+        start();
+        editor.dirty = true;
+        session.cancel();
+
+        mount.querySelector('.tab-edit-discard-no').click();
+        expect(mount.querySelector('.tab-edit-discard-confirm')).toBeNull();
+        expect(onExit).not.toHaveBeenCalled();
+        expect(mount.querySelector('.tab-edit-bar')).not.toBeNull();
+    });
+
+    it('“Discard” exits exactly as an accepted confirm did', () => {
+        start();
+        editor.dirty = true;
+        session.cancel();
+
+        mount.querySelector('.tab-edit-discard-yes').click();
+        expect(onExit).toHaveBeenCalledWith('cancel');
+        expect(mount.querySelector('.tab-edit-bar')).toBeNull();
+    });
+
+    it('a second Cancel re-uses the standing question instead of stacking', () => {
+        start();
+        editor.dirty = true;
+        session.cancel();
+        session.cancel();
+        expect(mount.querySelectorAll('.tab-edit-discard-confirm').length).toBe(1);
+    });
+
+    it('a clean session cancels with no question at all', () => {
+        start();
+        editor.dirty = false;
+        expect(session.cancel()).toBe(true);
+        expect(mount.querySelector('.tab-edit-discard-confirm')).toBeNull();
+        expect(onExit).toHaveBeenCalledWith('cancel');
+    });
+
     it('Download delegates to the editor with the session filename', () => {
         start({ filename: '27493-banjo' });
         mount.querySelector('.tab-edit-download').click();
