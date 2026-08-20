@@ -424,9 +424,217 @@ One TablEdit user, first session. Quoted, then what it means for the plan.
 | "Duration + rhythm is more important than fret for accessible notes" | Rhythm entry today is *harder* than fret entry (no post-hoc duration change, no auto). | Auto-duration (§6) and duration-on-existing-notes (P1-2) become the P1 headline. | P1 |
 | "Automatic duration is good (… not a hot key, but it should be)" | Confirms §6; give it a key. | `=` / Auto button, shown in the `?` overlay. | P1 |
 
-## 5. What this plan does not do
+## 8. The visible control surface
+
+Surveyed 2026-08-20 from the running dev build (screenshots of each
+surface at 1400 px) plus the code. TablEdit's reference layout, for
+comparison: a **menu bar** (File · View · Edit · Note · MIDI · Score ·
+Window · Help) whose items carry their shortcuts inline, seven **palettes**
+(Notes, Special Effects, Dynamics, Tools, Custom, Fingerings, Keyboard)
+that dock or float and mirror the current note's state with coloured
+borders, a ruler, and a status bar.
+
+### 8.1 Five wrappers around one editor
+
+The editor component (`OTFEditor`: toolbar + canvas + status bar) is one
+piece of code. It is currently presented inside **four different chrome
+wrappers**, plus the read view it replaces:
+
+| # | Surface | Route | Chrome around the editor | Notes |
+|---|---|---|---|---|
+| R | **Read view** (song page) | `#work/{slug}` | app shell: top band, title, Info / versions pills, take header, **bottom band**: `Aa ±`, key `G ▾ ±`, tempo `80 ±`, `▶ Play`, `⏹ Stop`, `✏️ Edit`, metronome, `Unrolled / Repeats` | the thing a submitted tab becomes |
+| E | **Embedded edit** (song page) | same URL, `✏️ Edit` | top band stays; own header `✏️ Editing — banjo · 🚀 Submit correction · ⬇ Download · Cancel · ✓ Done`; toolbar **above** the canvas; status bar (`▶ ⏹ BPM · Mode · M · Beat · String · Duration · Text · ? help`); bottom band replaced by an italic notice | the bottom band's play/tempo/Repeats controls vanish; the editor's status bar grows its own play/BPM |
+| C | **Create** | `create.html` | **no app shell** — own header `Create a Tab ← Bluegrass Book`; after "Create tab": `Untitled · Artist [who plays it] · 🚀 Submit tab · ⬇ Download OTF · Start over`; toolbar **below** the canvas; track header in a different style (`banjo5-string-banjo / Open GDBGDG`, no tuning pills) | also the TEF drop target; 7 measures/row vs 6 in E |
+| D | **Demo** | `editor-demo.html` | `New Document · Load Sample Tab… · Download OTF`, `Record · Export · Import · Replay · Speed`, a static shortcut list that still documents INSERT mode | what `e2e/otf-editor*.spec.js` drive; not linked from the site |
+| T | **Renderer test** | `tab-test.html` | — | dev only |
+
+So a contributor meets three visual languages in one task: the site's
+(R), the embedded editor's (E), and `create.html`'s (C) — and the
+toolbar is at the top in one and the bottom in the other. TablEdit users,
+by contrast, see one window whether they are opening, editing or
+creating.
+
+How people get there (from the code inventory): `+ Add a tab` and a
+tablature bounty's `Contribute` on the song page; `Improve this one` /
+`Add mine as another version` in the existing-takes offramp
+(`existing-tabs.js` — genuinely shared between the song page and the
+add-song picker, the one positive example); the add-song picker's
+`Tablature` card; the `.tef` drop zone on `create.html`; and `✏️ Edit`.
+Opening the editor and downloading are open to everyone; login is asked
+for at submit time only — keep that.
+
+**The document itself changes shape between R and E.** `editor.js:219`
+overrides the renderer with `centerNotes: false, showRests: true` (the
+read view centres notes per measure and hides rests, "TablEdit's tab-staff
+convention"). Entering edit mode therefore re-spaces every measure and
+sprinkles rest glyphs; leaving it takes them away. For "the page you edit
+is the page you publish" this has to go: the editor should render exactly
+what the reader sees, with the grid overlay as the only addition.
+
+**After submit, neither flow lands you anywhere.** A new tab on
+`create.html` prints `Submitted — your tab is live now` and a `View it`
+link you must click; a correction prints its status inside the editor
+and leaves you there until you press `✓ Done`. Both already say "live
+now / syncing shortly", so the pending-take badge in §9.1 is the same
+contract with a place to stand.
+
+### 8.2 What the editor itself shows
+
+Two-row toolbar, left to right: mode badge `-- NORMAL --` · **Track**
+(`banjo`, `◀ ▶` reorder, `✏️` rename) · **Duration** (`1ᵂ 1/2ᴴ 1/4ᑫ 1/8ᵉ
+1/16ˢ 1/32ᵗ`, `Rest`) · **Grid** (`1/4 1/8 1/16 1/32 Trip`, `▦` toggle) ·
+`3` triplet · **Articulation** (`h p / ~`) · **Text** (`Aa ⌫`) · clipboard
+(`⧉ ✂ 📋 🔁loop`) · `↩ ↪`. Status bar: `▶ ⏹ BPM:[ ]` · `Mode · M · Beat ·
+String · Duration · Text` · `Press ? for help`. Right-click: context menu
+(copy/cut/paste/delete, play/loop, repeat ×2 / remove repeat). `?`: the
+help overlay. Double-click: note-entry popover (string, fret, `h p / ~
+none`).
+
+Observations against TablEdit's surface:
+
+- **Shortcuts are in tooltips only**, so they are invisible until hovered
+  and wrong in four places (`Ctrl+T`, `G`, `3`, `w/b` — §1). TablEdit puts
+  the key *beside the menu item*, which is how people learn them.
+- **Nothing on the surface reflects the note under the cursor.** TablEdit
+  frames the current note's duration and effects in purple on the
+  palettes; ours shows only the *entry* state. With post-hoc duration and
+  effect editing (P1) this becomes necessary, not nice.
+- **No menu, so there is no home for rarely-used-but-real commands**:
+  insert/delete measure, repeats with endings (`repeatSpanWithEndings`
+  exists and is unreachable), tempo, time signature, tuning, rename
+  track, download, validate. Today they are either a context-menu item,
+  a toolbar icon, or nowhere.
+- **Three playback controls for one document**: bottom band (R), status
+  bar (E/C), and the loop button in the toolbar.
+- `Rest` is a button labelled for a thing OTF doesn't have (it advances).
+- The `TRACK` group spends four slots on once-per-document operations
+  (rename, reorder) at the head of the toolbar.
+- **Same action, different advertised keys per surface**: redo works as
+  `Ctrl+R`, `Ctrl+Shift+Z` and `Ctrl+Y` but only the first is shown
+  anywhere; play-from-cursor is `Cmd+Space` in the overlay and `⇧Space`
+  in the context menu (both work); copy/paste are exposed in four places
+  (vim keys, Cmd chords, toolbar, context menu) kept in sync by hand.
+- `Press ? for help` is a `<span>`, so touch users cannot open the help.
+- **Two fret-entry algorithms**: the canvas (300 ms refine window, `f`
+  prefix) and the double-click popover (accumulate two digits, roll over
+  past 24) disagree, and neither is documented in the overlay — the
+  popover's `+10 / +20` buttons are the only visible hint that frets above
+  9 exist.
+- `editor-demo.html` is orphaned (no link anywhere) and its on-page help
+  describes INSERT and ROLL modes that were never built.
+
+### 8.3 Proposal: a menu bar with inline shortcuts, generated from the binding table
+
+Add a thin **menu bar** above the toolbar — the same component in every
+wrapper — with TablEdit's grouping, trimmed to what we have:
+
+| Menu | Items (shortcut shown inline) |
+|---|---|
+| **File** | New tab… · Import TablEdit (.tef)… · Download OTF `Ctrl+S` · Submit / Submit correction · Start over / Cancel |
+| **Edit** | Undo `Ctrl+Z` · Redo `Ctrl+Y` · Cut/Copy/Paste · Select all `Ctrl+A` · Insert measure `Insert` · Delete measure · Shift right/left `Alt+Insert`/`Alt+Delete` · Repeat measures ×2 · Repeat with 1st/2nd endings · Remove repeat · Text at cursor `c` |
+| **Note** | Automatic duration `=` · Whole … 1/32 `F4–F9` · Dotted `Ctrl+.` · Triplet `Ctrl+3` · Shorter/Longer `<` `>` · Apply duration to selection `*` · Tie `L` · Hammer `H` · Pull-off `P` · Slide `S` · Dead `M` · Choke `C` · Clear `N` · Repeat last effect `F3` · Fingering ▸ · Fret +1/−1 `+`/`-` · Move across strings `Ctrl+±` |
+| **Play** | Play/Stop `Space` · Play measure `F10` · Play selection / loop `F11` · From cursor `Shift+Space` · Tempo… · Metronome · Instrument voice ▸ |
+| **Score** | Tracks ▸ (switch / rename / reorder) · Tempo · Time signature · Tuning · Unrolled / Repeats view |
+| **View** | Grid ▸ · Measures per row ▸ · Stems thicker · Zoom |
+| **Help** | Keyboard shortcuts `?` · Preset: TablEdit / vim · About OTF |
+
+Rules:
+
+- **One source**: menus, tooltips and the `?` overlay all render from the
+  binding table (§3), so a shortcut can't be advertised that isn't bound.
+  Switching preset relabels every menu item at once.
+- **Palettes stay** as the mouse path, but they become *state-reflecting*:
+  the current note's duration and effects are outlined (TablEdit's purple
+  border), entry state filled. One CSS rule each.
+- Keep the mode badge and status bar; drop the status bar's play/BPM once
+  the bottom band survives into edit mode (§9).
+- Menus are plain `<button>` + `role="menu"` lists; no library. Desktop
+  gets a bar; narrow screens collapse it to one `☰` button — the same
+  items, so touch users finally reach insert/delete measure and repeats.
+
+## 9. One surface for create, edit, and read
+
+The goal stated for this plan: *the page you edit on is the page the tab
+will be published on.* Today a new tab is created on a page that looks
+nothing like where it will live, and a correction is made on a page whose
+bottom half changes shape.
+
+### 9.1 Principle: the work page is the only frame
+
+Everything happens inside the song page (`#work/{slug}`) with its app
+shell, take header and bottom band. The editor is a *mode of the song
+page*, never a page of its own:
+
+| Flow | Today | Proposed |
+|---|---|---|
+| Correct an existing tab | song page → `✏️ Edit` swaps the tab for the editor, bottom band becomes a notice | same entry; **bottom band stays** (size, key, tempo, play, metronome, Unrolled/Repeats all keep working against the live document); the editor's header collapses into the band (`Submit correction · Download · Cancel · Done`); toolbar above the canvas as now |
+| Add a tab to a song | `+ Add a tab` → `create.html?work=…` (new page, no shell) | `#work/{slug}/add-tab` renders the **same song page** with a new, empty take selected in the versions pill and the editor open — title, artist, Info, other takes all visible, so you see exactly what you're adding alongside |
+| Create a tab for a song we don't have | `create.html` | `#new-tab` renders a **provisional work page**: title/artist fields in the title slot, one take, editor open. On submit it *is* the page the pending take gets (the URL becomes `#work/{slug}` when the work lands) |
+| Import a .tef | drop zone on `create.html` | the same drop zone lives on `#new-tab` *and* on any song page's versions pill ("Import .tef as a new take") — the preview is the song page |
+| After submit | `create.html` confirmation / toast | stay on the song page; the new take shows a **pending** badge in the versions pill and the take header ("Submitted — appears after the next build"), which is already how corrections are described |
+
+This removes `create.html` as a user-facing page (it can stay as a
+redirect shim: `create.html?work=x` → `#work/x/add-tab`). `editor-demo.html`
+remains a dev harness only — but its stale shortcut list should be
+replaced by the generated `?` overlay so it stops lying too.
+
+### 9.2 What has to change in code
+
+- **Routing** (`main.js`): `#work/{slug}/add-tab`, `#new-tab`,
+  `#work/{slug}/edit/{part}` so the editor state is a URL (reload-safe,
+  shareable with a reviewer).
+- **`work-view.js`**: `enterTabEditMode` stops replacing the bottom band;
+  the band's controls bind to the editor's document via the facade's
+  `change` event (they already re-render on `setLoadedTablature`).
+  Provisional work: a `currentWork` stub built from the create form's
+  fields, rendered by the same `renderWorkHeader`.
+- **`create-tab.js` / `create-tab-entry.js`**: become the "new empty take"
+  and ".tef → take" producers that the song page calls; `createTabHref`
+  returns the hash route.
+- **`submit-tab.js`**: unchanged payloads; the on-success path updates the
+  versions pill with a pending take instead of rendering a page.
+- **Track header**: one renderer for the take header in R, E and C (the
+  pill-tuning style); `create.html`'s plain-text variant goes away with
+  the page.
+- **Measures per row**: the same number in read and edit (§7) — an
+  `OTFEditor` option that defaults to the renderer's read-view value, so
+  nothing reflows when `✏️ Edit` is pressed.
+- **Renderer parity**: drop the `centerNotes: false, showRests: true`
+  override (§8.1). If rests are useful while entering, draw them on the
+  grid overlay layer, not in the document's rendering.
+- **One fret-entry algorithm**: the popover reuses the keyboard handler's
+  digit logic (or the table's action) instead of its own.
+
+### 9.3 Standalone app — the secondary goal
+
+"A standalone app *integrated* into Bluegrass Book" resolves cleanly if
+the editor is a mode of the song page rather than a page: the standalone
+app is the **song page running offline**, not a second product.
+
+- **PWA first.** `manifest.json` + a service worker caching `index.html`,
+  the JS bundle, `style.css`, the soundfont(s) and the user's own OTF
+  drafts (IndexedDB). "Install" from the browser gives a dock icon and a
+  window with no browser chrome; `.tef` and `.otf.json` file-open via the
+  File Handling API (Chromium) lands on `#new-tab` with the file loaded.
+  Zero new UI; the one new surface is a **Drafts** list (the "personal
+  bucket" already planned in `tab-authoring.md` Step 2) that works
+  offline and syncs when signed in.
+- **Not Electron/Tauri** unless a native need appears (MIDI-in is
+  available via Web MIDI; audio export is Web Audio; printing is the
+  browser). A wrapped app would be a fifth surface to keep consistent.
+- **Integration contract**: the standalone app submits through the same
+  `submit-tab.js` → `pending_songs` path; there is no second backend. Its
+  URL scheme is the site's hash routes, so a draft's link opens in either.
+
+The order of work that keeps each step shippable: §8.3 menu bar + state-
+reflecting palettes (pure editor) → §9.1 bottom band survives edit mode →
+`#work/{slug}/add-tab` replaces `create.html?work=` → `#new-tab` replaces
+bare `create.html` → PWA manifest + drafts.
+
+## 10. What this plan does not do
 
 - No change to the OTF format except removing the never-valid `tech: '~'`.
 - No notation (standard-staff) view, no rests as objects.
-- No mobile/touch input work — the popover remains the touch path; this plan
-  is keyboard-first.
+- No mobile/touch input work beyond the menu collapsing to `☰` — the popover
+  remains the touch path; this plan is keyboard-first.
+- No native (Electron/Tauri) wrapper; "standalone" means PWA (§9.3).
