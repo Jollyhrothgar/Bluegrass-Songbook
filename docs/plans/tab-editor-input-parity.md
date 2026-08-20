@@ -13,6 +13,14 @@ person can get a tune from their head (or a TablEdit screen) into the editor.
 Rendering, submission, and the personal bucket are covered elsewhere
 (`tab-authoring.md`, `contribution-pipeline.md`).
 
+**Baseline: TablEdit.** The first outside feedback (§7) came from a
+long-time TablEdit user whose position is that TablEdit is already nearly
+perfect — and every one of the 19,000 tabs in `works/` was authored in it.
+So this plan treats TablEdit's behaviour as the default to match, and each
+place we deviate (column-rule auto-duration, vim letters, anything the
+browser forbids) has to say why. The vim-style layer from the early OTF
+editor days survives as a *preset*, not as the default.
+
 Sources:
 
 - TablEdit hotkeys: <https://tabledit.com/help/english/hotkeys.shtml>
@@ -90,7 +98,7 @@ mostly transfers. The differences that matter:
 | Auto-advance | **Toggle** (`Ctrl+Space`); off by default, `Tab` advances by duration explicitly | Always on; `Shift+digit` as the no-advance escape hatch | Yes — chord entry. TE users expect "type 0, ↓, type 2, ↓, type 0" to stack a chord. Add the toggle; keep `Shift+digit`. |
 | Two-digit frets | `1` then digit; or `Shift+A..J` = 10–19 in one keystroke | 300 ms refine window; `f`+2 digits | Minor. Our refine window is better than TE's (no mode), but `Shift+A..J` is a nice one-stroke path for banjo up the neck (12, 15, 17). `Shift+letter` is mostly free for us. |
 | Rest | `.` places an explicit rest object of the current duration | `Space` skips; OTF has **no rest events** (silence is implied by `dur`) | Format-level. Not an input gap for playback; only for rendering stems in notation view, which we don't have. Skip. |
-| Duration set | `F4–F9` | `q e s t W H` | Ours is better (F-keys are browser-owned). Keep. |
+| Duration set | `F4–F9` | `q e s t W H` | Chrome lets a page intercept `F4 F5 F7 F8 F9` (yes, even F5 — `preventDefault` on keydown stops the reload) but not `F6` (address bar) or `F11` (fullscreen). So the TablEdit preset can keep F4/F5/F7/F8/F9 and needs an alias for quarter (F6); `q e s t W H` stay as aliases in both presets. Mac keyboards need `Fn` — TablEdit-on-Mac users already live with that. |
 | **Duration change on existing notes** | select → `F-key`, `*` apply, `<`/`>` halve/double | **none** — delete and re-type | **Big.** `setNoteDuration` exists unbound. |
 | Dotted / tuplets | `Ctrl+.` dotted, `:` double-dot, `Ctrl+3/5/7/9` tuplets | triplet grid only (toolbar); no dotted | Dotted is real for 3/4 and 6/8 waltzes; quintuplets are not bluegrass. Add dotted + triplet key. |
 | Auto-duration | `Ctrl+Alt+F4`: duration inferred from gap to next note | none | TE's beginner mode. Cheap to add as a *post-hoc* "fix durations from spacing" (`J` in TE). Medium. |
@@ -125,9 +133,14 @@ slice; none depends on another except where noted.
 - **Make the `?` overlay generated from the binding table** so it can't drift
   again (see "binding table" below). Fix `w`/`b`, `3`, `G` claims now.
 - **Unify step size**: VISUAL `h`/`l` should step by grid like NORMAL.
+- **Square cursor** (one grid slot × one string) and **stems 2.5px** in the
+  editor — two small changes the first user asked for by name (§7).
 
 ### P1 — the input gaps TablEdit users will hit in the first minute
 
+0. **Automatic duration** (§6) — `currentDuration = null` = auto; column
+   rule; recompute in the facade; session pins; `=` to toggle; `J` to fix
+   durations after the fact. Retires triplet mode and the phantom `3` key.
 1. **Auto-advance toggle** (`Ctrl+Space` or a toolbar latch, shown in the
    status bar). With it off, digits place and stay; `Space`/`Tab` advance.
    Keep `Shift+digit`.
@@ -137,16 +150,20 @@ slice; none depends on another except where noted.
    apply to the selection. Add `<`/`>` = halve/double (NORMAL: note at cursor;
    VISUAL: selection — this *replaces* the stub shift-selection binding, which
    nobody has; move shift to `Shift+<`/`>` or drop it).
-3. **Articulations as single letters, after the fact** (the TablEdit model),
-   without leaving NORMAL. Free lowercase letters today: `a i m n r z`. Free
-   uppercase: `B F I J K M N R U V X Y Z`. Proposal: an **`a` operator prefix**
-   (mnemonic "articulate"): `ah` `ap` `a/` `a~` `ax` `ab` `an` apply
-   hammer / pull / slide / tie / dead / choke / none to the note at cursor —
-   or, when the cursor sits on the empty slot just after auto-advance, to the
-   note just entered, so `2 4 ah` reads like the tab `2h4`. Keep `Ctrl+h/p//`
-   pending-before as the power path (they're interceptable) but **drop
-   `Ctrl+T`** in favour of `a~`. Retire ANNOTATION mode's tech keys (keep it
-   for fingering only, or fold fingering into `a` too: `at ai am`).
+3. **Articulations as single letters, after the fact — TablEdit's letters.**
+   In the TablEdit preset (the default): `H` hammer, `P` pull-off, `S` slide,
+   `M` muted/dead (`x`), `C` choke (`b`), `L` tie (toggle, as in TablEdit),
+   `N` clear, `F3` repeat last effect — applied to the note at cursor, or to
+   the selection. These are all free once nav is on arrows. One semantic
+   difference to document in the help: TablEdit marks the *first* note of a
+   hammer pair, OTF marks the *target*; `H` on either note of the pair
+   should do the right thing (if the note at cursor has a same-string
+   successor and no predecessor-slur, mark the successor).
+   - In the **vim preset**, where `h p s` are taken, the same actions sit
+     behind an `a` operator prefix (`ah ap a/ a~ ax ab an`).
+   - Keep `Ctrl+h/p//` pending-before as a power path in both presets
+     (interceptable); **drop `Ctrl+T`** everywhere. Retire ANNOTATION mode's
+     tech keys; keep it for fingering (or `Alt+0..4` as TablEdit).
    - Adds dead note and choke entry, closing #184's input half.
 4. **Dotted duration** (`.` is taken by repeat; use `'`?) and a **triplet key**
    that the help can honestly advertise (`Shift+3` is the grid; `3` is a fret —
@@ -201,17 +218,36 @@ bindings, lift the bindings into one declarative table —
 `{ mode, keys, action, label, group }` — that drives (a) dispatch, (b) the
 `?` overlay, (c) toolbar tooltips, and (d) a test that every advertised key
 is bound and every bound key is advertised. That is the one refactor this
-plan asks for; it pays for itself on the first conflict check (`a` vs `A`,
-`<`/`>`, `3`).
+plan asks for, and it is what makes **two presets** a pair of data files:
+
+- **`tabledit` (default)** — arrows for nav; `Tab` advance by duration;
+  `Ctrl+Space` auto-advance toggle; `F4 F5 F7 F8 F9` + `q e s t W H`
+  durations; `Ctrl+.` dotted; `Ctrl+3` triplet; `<`/`>` shorter/longer;
+  `*` apply duration to selection; `H P S M C L N` effects, `F3` repeat
+  effect; `+`/`-` fret ±1; `Ctrl+±` re-string same pitch; `Ctrl+←/→`
+  measure edges; `,`/`;` prev/next note; `Shift+F5` go to measure;
+  `Shift+arrows` select, `Ctrl+A` all; `Insert` measure before, `Delete`
+  on an empty measure removes it; `Alt+Insert`/`Alt+Delete` ripple;
+  `Shift+A..J` frets 10–19; `Space` play/stop, `F10` measure, `F11`
+  selection. Everything here is a TablEdit key, so the user in §7 can sit
+  down and type. Exceptions forced by the browser/OS, to list in the help:
+  `F6` (quarter → `q`), `Ctrl+↑/↓` on macOS (Mission Control → `Alt+↑/↓`),
+  `Ctrl+Alt+F4` auto-duration (→ `=`).
+- **`vim`** — today's `hjkl w b gg G x dd D o O y p u .` plus the `a`
+  operator for effects. Mike's layer; opt-in.
+
+The action vocabulary is shared; only the key column differs. A third
+preset (Guitar Pro) is then a lunch-break job if anyone asks.
 
 Conflicts to settle when laying out the table (decide, don't drift):
 
-- Vim nav letters (`hjkl wb`) vs TablEdit effect letters (`H P S`) — we keep
-  vim nav; effects go behind the `a` prefix (P1-3).
-- `.` is vim-repeat; TablEdit's `.` is rest. We have no rest; keep repeat.
+- `.` is TablEdit's rest and vim's repeat. We have no rest object; in the
+  `tabledit` preset `.` = advance by duration (what a rest *does* for us),
+  in `vim` it stays repeat.
 - `3`/triplet, `G`/grid, `w b`/measure — stop advertising what isn't bound.
-- Browser-reserved chords on Chromium: `Ctrl+T Ctrl+W Ctrl+N` (all
-  platforms), every `Cmd+…` on macOS. Never bind them.
+- Browser-reserved chords on Chromium: `Ctrl+T Ctrl+W Ctrl+N F6 F11` (all
+  platforms), every `Cmd+…` on macOS; `Ctrl+↑/↓` is Mission Control on
+  macOS. Never bind them.
 
 ## 4. Cross-platform survey
 
@@ -280,6 +316,113 @@ Power Tab's docs are mostly unreachable; treat its row as partial.
 10. **Voices, rests-as-objects, and grace notes** are first-class everywhere
     else and absent from OTF. Voices stay a non-goal (banjo tab doesn't need
     them); grace notes and rests are format questions, not input ones — P3.
+
+## 6. Automatic duration — design
+
+### What TablEdit does (`note_menu.shtml#automaticduration`)
+
+> "By default, if no explicit current duration is selected, TablEdit
+> automatically assigns notes entered a logical duration in relation to the
+> beginning and end of the measure as well as to the preceding and following
+> notes."
+
+- **Auto is the absence of a chosen duration**, not a separate mode. Pick an
+  F-key and you're explicit; clear it and you're auto. (There *is* a hotkey,
+  `Ctrl+Alt+F4`, but it's unmemorable and may not exist on the Mac build —
+  hence the feedback "it should be a hotkey".)
+- **Rule: gap to the next note on the same string**, bounded by the measure.
+  First note in an empty measure shows as a whole note; put another note an
+  eighth later on the same string and the first becomes an eighth.
+- **Last note fills to the measure end**; "Automatic rests" is a separate
+  *display* option that draws the implied rests.
+- **Retroactive and symmetric**: inserting shortens the neighbour, deleting
+  re-extends it. **Manually set durations are pinned** — auto never touches
+  them.
+- The palette "dynamically displays the automatic duration of the note that
+  would be inserted" — the prediction is visible before you type.
+
+### How it maps onto our model
+
+Our editor has two independent knobs that TablEdit fuses: `currentDuration`
+(what `dur` a typed note gets, and how far the cursor auto-advances) and
+`gridSubdivision` (arrow step, click snap, ruler). Auto-duration collapses
+them: **position becomes the only rhythm input, so the grid is the rhythm
+input.** That is the "interaction with the grid" — and it is mostly good
+news:
+
+| Today | Under auto-duration |
+|---|---|
+| choose duration → type fret → cursor jumps by duration | move by grid → type fret → `dur` = gap to next onset; cursor steps **one grid slot** |
+| triplet *mode* (half-built) + triplet grid | triplet grid alone: a 160-tick gap *is* a triplet eighth; no mode needed |
+| no dotted durations at all | a 360-tick gap *is* a dotted eighth; free |
+| `Space` = advance by duration ("rest") | `Space` = advance by grid; the previous note simply sustains through |
+| grid must be ≥ as fine as what you navigate | grid must be ≥ as fine as the **shortest note you'll write** (TablEdit's "pick the 1/32 view for 16th triplets" advice) — the status bar should say so when auto is on |
+
+Design decisions, with the reasoning:
+
+1. **`currentDuration = null` means auto** — TablEdit's semantics exactly.
+   `q e s t W H` leave auto; one key (proposal: `=`, or an **Auto** button
+   at the head of the duration group) returns to it. The status bar shows
+   `Dur: auto (♪)` with the *predicted* duration for the cursor slot, and the
+   ghost note draws that stem.
+2. **Column rule, not same-string rule, by default — and the corpus says
+   that *is* the TablEdit-faithful choice.** TablEdit's documented
+   same-string gap would make every 5th-string note of a Scruggs roll
+   (`5 3 2 5 3 2 5 3`) a dotted quarter. What TablEdit users actually
+   produce, measured on 95,702 notes across every 5-string banjo track in
+   `docs/data/tabs/` (all TablEdit-authored TEFs): eighths 63.6%, sixteenths
+   18.7%, quarters 13.8%, **dotted quarters 0.1%**. Rolls are written as
+   eighths — i.e. `dur` = gap to the next onset on **any** string of the
+   track, within the measure. That rule makes auto-entered tabs identical in
+   shape to the imported ones and keeps the player's sustain matching what
+   it already does for them. Same-string can be an option later for a
+   fingerstyle guitar tabber; TablEdit's separate "ringing notes" is the
+   right home for sustain anyway.
+3. **Recompute inside the facade transaction.** `insertNote` / `deleteNote`
+   / `deleteTick` / `paste` take an `autoDuration` option; the facade
+   recomputes `dur` for the affected measure's unpinned notes in the same
+   `_mutate`, so one `u` undoes the note *and* the neighbour's stem change.
+   Never recompute from the keyboard layer.
+4. **Pinning is session state, not format.** OTF has no "manual duration"
+   flag and shouldn't grow one. Keep a `Set` of note identities
+   (`measure:tick:string`) entered under auto this session; only those are
+   recomputed. A reopened document is therefore fully pinned, which is the
+   right default — you didn't type those. Explicit duration keys on a note
+   (P1-2) pin it.
+5. **Trailing silence can't be expressed** — the last note fills to the
+   barline because OTF has no rests. That is the one real loss versus
+   TablEdit. The escape hatch is P1-2: park on the note, press `q`, it's a
+   pinned quarter. Drawing implied rests for *leading* gaps (TablEdit's
+   "Automatic rests") is a renderer nicety for later.
+6. **A one-shot `J`-style "fix durations here"** (measure, or selection)
+   that ignores pins is worth shipping in the same PR: it is the same
+   function, and it repairs hand-entered tabs where someone forgot to
+   change duration.
+7. **Non-binary `dur` values already render**: the same corpus count has
+   751 triplet eighths (160), 135 dotted eighths (360) and 122 dotted
+   quarters (720) on banjo tracks alone, all drawn by today's renderer. No
+   renderer work is needed for auto-duration's output.
+
+Why it belongs at the top of P1 rather than P2: the feedback says it
+directly ("duration + rhythm is more important than fret", "automatic
+duration is good"), and it retires two half-built things (triplet mode, the
+`3` key) instead of adding a third.
+
+## 7. Early user feedback → actions
+
+One TablEdit user, first session. Quoted, then what it means for the plan.
+
+| Feedback | Reading | Action | Where |
+|---|---|---|---|
+| "you need the tabledit midi sound… I was thinking about recording my banjo and making it the banjo sound" | Our banjo is FluidR3 GM via WebAudioFont (`tab-player.js:40`); TablEdit plays the OS GM synth, which is what they're used to. | Make the instrument voice a **swappable sample set**, and build one from *their* banjo: per string, open + fret 5 + fret 10 (15 short samples, trimmed, normalised), pitch-shifted ≤5 frets by `playbackRate`. WebAudioFont already takes a zone table, so it's data, not a new player. Also try GeneralUserGS banjo as a zero-effort A/B. | playback — separate PR; not input |
+| "the cross hairs… should be a square like in tabledit" | `cursor.js:_updateCursorStyle` draws whiskers (and still branches on a dead `'insert'` mode). | Square cell outline the size of one grid slot × one string, colour by mode. | P0, trivial |
+| "first stanza and the second stanza's bar lines are not lined up to compensate for the 4/4 … not the notes, but the bar lines, and then yes the notes" | `tablature.js:645` gives a short (pickup, 2/4) measure **proportional** width, so row 1's barlines land off row 2's. TablEdit does the same, which is why they call it TablEdit's mistake too. | **Equal slot width for every measure regardless of tick length**; a pickup sits in a full slot with its notes right-aligned to the barline. Notes already sit proportionally within the slot (`tick/ticks × noteW`), so once barlines align, beats align. | renderer; editor default |
+| "horizontal shifting / column mutation makes it non-deterministic where measures run" | The editor's `measureWidthFloor` ratchet (`editor.js:1075`) plus `measuresPerRow: 'auto'`: change the grid and measures jump rows. | In the editor, **fix measures per row** (default 4, user-settable) and zoom/scroll horizontally instead of reflowing. Deterministic rows are also what makes "go to measure 12" a place you can *see*. | editor layout; pairs with the row above |
+| "click on a string and drag a note to different string and get the same tone" | Pitch-preserving re-string, by mouse. | P1-7 (`Alt+↑/↓`) plus: dragging a single note vertically re-frets it to keep the pitch; horizontal drag moves it in time (the existing selection drag-move). | P1 |
+| "thicker stems desires" | `stemWidth: 1.5`. | Editor default 2.5; consider site-wide. | P0, one number |
+| "making new measures" | The cursor clamps at the last barline (`cursor.js:moveByTicks`, `maxTick − 1`); `o` is undiscoverable. | **Walking past the end appends a measure** (`→`, `Space`, `Enter` on the last measure), GP8-style; `Delete`/`dm` on an empty trailing measure removes it. | P1-5 (with delete measure) |
+| "Duration + rhythm is more important than fret for accessible notes" | Rhythm entry today is *harder* than fret entry (no post-hoc duration change, no auto). | Auto-duration (§6) and duration-on-existing-notes (P1-2) become the P1 headline. | P1 |
+| "Automatic duration is good (… not a hot key, but it should be)" | Confirms §6; give it a key. | `=` / Auto button, shown in the `?` overlay. | P1 |
 
 ## 5. What this plan does not do
 
