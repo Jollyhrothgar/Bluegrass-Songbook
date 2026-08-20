@@ -666,3 +666,20 @@ draft instead of replacing the take; an edit session not opened from a
 draft keeps a plain URL (reload returns to the published take — the draft
 is still in `#drafts`); the help overlay lists `F6`/`F11`/`Ctrl+T`/macOS
 `Ctrl+↑↓` as browser/OS exceptions.
+
+### Validation (2026-08-20)
+
+- Unit: 106 files / 2,630 tests. Playwright: 287 e2e against the branch.
+- Browser validation (chrome-devtools, document read through the facade):
+  auto-duration, ties, effects, re-string, selection/clipboard, measure
+  ops, undo/redo, both presets, edit/add-tab/new-tab routes, the shim,
+  drafts, service worker, File menu, band transport.
+- A Claude-in-Chrome QA pass (TablEdit preset, flows 1–10) passed
+  everything it could reach and found D1–D7; D1–D6 fixed the same day
+  (status bar after re-string, `☰` on widen, mode-qualified menu keys,
+  popover techniques, `n` clears ties, `Tab` under auto); D7 is
+  pre-existing data (#263). Follow-ups: #261 (banjo sample voice), #262
+  (plan follow-ups + the QA's "could not test" list, being closed by the
+  testability slice: no native dialogs, mocked-backend e2e, mobile project).
+- Rule adopted from that pass: **everything a human can do must be
+  reachable by Playwright against a mocked backend.**
