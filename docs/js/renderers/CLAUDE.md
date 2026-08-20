@@ -48,6 +48,11 @@ OTF JSON
 Expanded notation (repeats applied)
     ↓ render()
 SVG rows (several measures per row — `measuresPerRow`, 'auto' by default)
+    ↓ every measure gets the SAME slot (`uniformMeasureWidth`, on by
+      default) so barlines line up row over row; a short measure
+      (pickup, mid-tune 2/4) uses its own fraction of the slot, pushed
+      right so its last tick lands on the barline. `false` restores the
+      old proportional widths.
     ↓ renderRow() → per-measure geometry
 Note positions, fret numbers, articulations
     ↓ renderSlurs() (row-scoped, after all measures in the row are laid out)

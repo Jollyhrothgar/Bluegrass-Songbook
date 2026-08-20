@@ -49,19 +49,27 @@ describe('TabRenderer with per-measure time signatures', () => {
         r.render(TRACK, PICKUP_NOTATION, 480, '4/4', PICKUP_TIMING);
     });
 
-    it('renders the short measure narrower (tight, no dead space)', () => {
+    it('gives the short measure a FULL slot (barlines align row to row)', () => {
+        // CHANGED 2026-08-20 (plan docs/plans/tab-editor-input-parity.md §7:
+        // "the bar lines are not lined up to compensate for the 4/4").
+        // This used to expect a proportional 135px pickup; proportional
+        // widths are still available as `uniformMeasureWidth: false`
+        // (covered below), but the default now pads every measure to the
+        // base slot so measure N starts at the same x on every row.
         const geoms = r.rowData[0].measures;
         expect(geoms.map(g => g.display)).toEqual([1, 2, 3]);
-        // 3/4 pickup: 75% of a full measure's width, PLUS the footprint of
-        // the m1 signature glyph (32px for single digits) so the note area
-        // isn't squeezed by the mark.
-        expect(geoms[0].width).toBe(135 + 32);
-        expect(geoms[0].noteW).toBe(135 - 30);
+        // Full 180px slot, PLUS the footprint of the m1 signature glyph
+        // (32px for single digits) so the note area isn't squeezed by it.
+        expect(geoms[0].width).toBe(180 + 32);
         expect(geoms[1].width).toBe(180);
-        // x positions accumulate the narrow measure
+        // The 3/4 pickup uses 3/4 of the slot's note area...
+        expect(geoms[0].noteW).toBeCloseTo((180 - 30) * 0.75, 5);
+        // ...pushed right so its end lands on the barline
+        expect(geoms[0].noteOffset).toBeCloseTo((180 - 30) * 0.25, 5);
+        // x positions accumulate FULL slots
         expect(geoms[0].x).toBe(50);           // leftMargin
-        expect(geoms[1].x).toBe(217);
-        expect(geoms[2].x).toBe(397);
+        expect(geoms[1].x).toBe(262);
+        expect(geoms[2].x).toBe(442);
     });
 
     it('computes absolute ticks through the short measure', () => {
@@ -73,19 +81,22 @@ describe('TabRenderer with per-measure time signatures', () => {
         expect(m2n.map(n => n.absTick).sort((a, b) => a - b)).toEqual([1440, 2400]);
     });
 
-    it('positions notes against the measure\'s own length, centered', () => {
-        // pickup measure: events at 0 and 960 of 1440 -> the leftover third
-        // after the last note is split across both sides (noteOffset)
-        const geom = r.rowData[0].measures[0];
-        expect(geom.noteOffset).toBeCloseTo(geom.noteW * (1 - 960 / 1440) / 2, 5);
-        const m1notes = r.noteElements.filter(n => n.measure === 1);
-        const xs = m1notes.map(n => n.x).sort((a, b) => a - b);
-        expect(xs[0]).toBeCloseTo(geom.noteX0 + geom.noteOffset, 5);
-        expect(xs[1]).toBeCloseTo(geom.noteX0 + geom.noteOffset + (960 / 1440) * geom.noteW, 5);
-        // symmetric: space left of first note == space right of last note
-        const leftGap = xs[0] - geom.noteX0;
-        const rightGap = (geom.noteX0 + geom.noteW) - xs[1];
-        expect(leftGap).toBeCloseTo(rightGap, 5);
+    it('right-aligns a short measure: its beats sit under the full ones', () => {
+        // CHANGED 2026-08-20 (plan §7). The pickup used to be CENTERED in
+        // its own narrow measure; now it sits in the right 3/4 of a full
+        // slot, so the beat a pickup note falls on lines up with the same
+        // beat of the 4/4 measures below it.
+        const [g1, g2] = r.rowData[0].measures;
+        const slotW = g1.noteW + g1.noteOffset;      // the full note area
+        expect(slotW).toBeCloseTo(g2.noteW, 5);
+
+        const xs = r.noteElements.filter(n => n.measure === 1)
+            .map(n => n.x).sort((a, b) => a - b);
+        // pickup ticks 0 and 960 of 1440, i.e. 480 and 1440 of a 1920 bar
+        expect(xs[0]).toBeCloseTo(g1.noteX0 + (480 / 1920) * slotW, 5);
+        expect(xs[1]).toBeCloseTo(g1.noteX0 + (1440 / 1920) * slotW, 5);
+        // the measure's END lands exactly on the barline
+        expect(g1.noteOffset + g1.noteW).toBeCloseTo(slotW, 5);
     });
 
     it('places the beat cursor using per-measure geometry', () => {
@@ -251,6 +262,61 @@ describe('TabRenderer backward compatibility (no timing arg)', () => {
         expect(maxX).toBeLessThan(geom.x + geom.width);   // stays inside its measure
         // and measure 2 starts a full 1920 ticks in
         expect(r.rowData[0].measures[1].startTick).toBe(1920);
+    });
+});
+
+describe('TabRenderer uniformMeasureWidth (barline alignment, plan §7)', () => {
+    it('default: every measure occupies one base slot', () => {
+        const r = makeRenderer();
+        r.render(TRACK, PICKUP_NOTATION, 480, '4/4', PICKUP_TIMING);
+        const [g1, g2, g3] = r.rowData[0].measures;
+        // only m1 carries an adornment (the 4/4 glyph, 32px)
+        expect(g1.width - 32).toBe(180);
+        expect(g2.width).toBe(180);
+        expect(g3.width).toBe(180);
+        expect(g3.x - g2.x).toBe(180);           // constant advance
+    });
+
+    it('a pickup sits in the RIGHT part of its slot', () => {
+        const r = makeRenderer();
+        r.render(TRACK, PICKUP_NOTATION, 480, '4/4', PICKUP_TIMING);
+        const g = r.rowData[0].measures[0];
+        expect(g.noteOffset).toBeGreaterThan(0);              // pushed right
+        expect(g.noteW).toBeLessThan(g.noteW + g.noteOffset); // uses part of the slot
+    });
+
+    it('uniformMeasureWidth:false restores the proportional layout', () => {
+        const r = makeRenderer();
+        r.options.uniformMeasureWidth = false;
+        r.render(TRACK, PICKUP_NOTATION, 480, '4/4', PICKUP_TIMING);
+        const geoms = r.rowData[0].measures;
+        expect(geoms[0].width).toBe(135 + 32);   // 3/4 of the base + sig glyph
+        expect(geoms[0].noteW).toBe(135 - 30);
+        expect(geoms[1].x).toBe(217);
+    });
+
+    it('still grows a LONGER-than-default measure', () => {
+        // 4/4 tune whose measure 2 is 6/4: squeezing it into the base slot
+        // would collide its notes, so proportional width still applies.
+        const timing = new TimelineTiming(
+            new MeasureTiming({
+                timeSignature: '4/4',
+                timeSignatureChanges: [
+                    { measure: 2, time_signature: '6/4' },
+                    { measure: 3, time_signature: '4/4' },
+                ],
+            }),
+            identityTimeline(3),
+        );
+        const r = makeRenderer();
+        r.render(TRACK, [
+            { measure: 1, events: [note(0)] },
+            { measure: 2, events: [note(0)] },
+            { measure: 3, events: [note(0)] },
+        ], 480, '4/4', timing);
+        const g = r.rowData[0].measures[1];
+        expect(g.ticks).toBe(2880);
+        expect(g.width).toBeGreaterThan(180 + 32);   // 270 base + its sig glyph
     });
 });
 

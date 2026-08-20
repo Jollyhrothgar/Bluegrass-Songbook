@@ -27,6 +27,17 @@ const FEEDBACK_DURATION_SEC = 0.4;
 const FEEDBACK_VOLUME = 0.7;
 const DEFAULT_FEEDBACK_TUNING = ['D4', 'B3', 'G3', 'D3', 'G4'];
 
+// Editor-only renderer weights. The site's read view keeps TabRenderer's
+// defaults (1.5 / 3) — these are the "thicker stems" of plan
+// tab-editor-input-parity §7, and they apply while editing only.
+const EDITOR_STEM_WIDTH = 2.5;
+const EDITOR_BEAM_THICKNESS = 4;
+
+// Rows are FIXED in the editor, not reflowed (plan §7). We pin whatever
+// the read view computed for this container width; this is the fallback
+// when the container has no layout box yet to ask.
+const DEFAULT_MEASURES_PER_ROW = 4;
+
 /**
  * OTF Editor - Main entry point
  *
@@ -214,13 +225,22 @@ export class OTFEditor {
         // Cursor/grid overlay draws from the renderer's real geometry
         this.cursor.setRenderer(this.renderer);
 
-        // Editing wants a STABLE tick→x mapping: per-measure note
-        // centering makes the ruler break period at every barline
-        this.renderer.options.centerNotes = false;
+        // RENDERER PARITY: the page you edit is the page you publish, so
+        // the editor overrides nothing about how the document is drawn
+        // (plan tab-editor-input-parity §8.1/§9.2). It used to force
+        // `centerNotes: false, showRests: true`, which re-spaced every
+        // measure the moment you pressed Edit and put it back when you
+        // left. `showRests: true` was the renderer default anyway; note
+        // centering is now the ONE coordinate difference we accept — the
+        // grid overlay is drawn from the same per-measure geometry, so
+        // it still lands on the notes. The overlay is the only thing the
+        // editor adds to the drawing.
 
-        // Rest glyphs are an ENTRY aid — show them here. The reading
-        // view keeps TablEdit's tab-staff convention (no rests).
-        this.renderer.options.showRests = true;
+        // Thicker stems while editing ("thicker stems desires", §7):
+        // entry is close work, and 1.5px stems disappear under the
+        // cursor box. The read view keeps the site default.
+        this.renderer.options.stemWidth = EDITOR_STEM_WIDTH;
+        this.renderer.options.beamThickness = EDITOR_BEAM_THICKNESS;
 
         // Follow EVERY renderer layout pass — including its own async
         // re-renders (resize observer, Bravura arrival), which otherwise
@@ -1041,6 +1061,25 @@ export class OTFEditor {
     }
 
     /**
+     * Pin measures-per-row ONCE, to the number the read view computed
+     * for this container width (`measuresPerRow` option to override,
+     * DEFAULT_MEASURES_PER_ROW when the container isn't laid out yet).
+     *
+     * "Horizontal shifting / column mutation makes it non-deterministic
+     * where measures run" (plan tab-editor-input-parity §7): with the
+     * count fixed, "go to measure 12" is a place you can see, entering
+     * edit mode doesn't reflow the page, and a finer entry grid widens
+     * measures (horizontal scroll) instead of rearranging them.
+     */
+    _pinMeasuresPerRow() {
+        if (this.renderer.options.measuresPerRow !== 'auto') return;
+        this.renderer.options.measuresPerRow =
+            this.options.measuresPerRow
+            || this.renderer.autoMeasuresPerRow()
+            || DEFAULT_MEASURES_PER_ROW;
+    }
+
+    /**
      * Render tablature
      */
     _render() {
@@ -1072,12 +1111,16 @@ export class OTFEditor {
         const ticksPerBeat = this.state.otf.timing?.ticks_per_beat || TICKS_PER_BEAT;
         const timeSignature = this.state.otf.metadata?.time_signature || '4/4';
 
+        this._pinMeasuresPerRow();
+
         // Auto-expand for fine entry grids: guarantee each grid slot a
         // minimum pixel width so 1/16 and 1/32 grids stay usable
         // (measureWidthFloor beats maxMeasureWidth; rows scroll if
         // needed). RATCHET within a session: the layout grows when a
         // finer grid needs room but never yanks back when you coarsen —
-        // predictable zoom instead of surprise reflows.
+        // predictable zoom instead of surprise reflows. With the row
+        // count pinned below, this only ever WIDENS measures; it can no
+        // longer move measure 5 onto another row.
         const MIN_PX_PER_GRID_SLOT = 9;
         const defaultTicks = this.state.facade.measureTiming.defaultTicks;
         const slots = defaultTicks / this.state.gridSubdivision;
