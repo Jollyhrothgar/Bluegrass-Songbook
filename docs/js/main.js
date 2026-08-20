@@ -45,7 +45,7 @@ import {
     updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
-import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
+import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction, confirmLeaveTabEdit } from './work-view.js';
 import { renderBountyView } from './bounty-view.js';
 import { renderMySubmissionsView } from './my-submissions.js';
 import { renderHighScoresView } from './high-scores.js';
@@ -260,7 +260,23 @@ function pushHistoryState(view, data = {}, replace = false) {
     }
 }
 
+// Set while replaying a history entry. Back/forward has already moved the
+// URL by the time we hear about it, so showView's "you're mid-edit, really
+// leave?" prompt has nothing useful to offer — declining would strand the
+// URL on a page we refused to render. The draft is what protects the work
+// on this path.
+let restoringHistory = false;
+
 function handleHistoryNavigation(state) {
+    restoringHistory = true;
+    try {
+        routeHistoryState(state);
+    } finally {
+        restoringHistory = false;
+    }
+}
+
+function routeHistoryState(state) {
     if (!state) {
         // If no state, we might be back at the initial page load state
         // Check if there's a hash we should respect (like #song/id)
@@ -362,6 +378,12 @@ function handleHistoryNavigation(state) {
 }
 
 function showView(mode) {
+    // The currentView subscriber tears the tablature view down, edit session
+    // included — so a nav link is one of the ways an in-progress tab edit
+    // used to disappear. Ask on the way in, where declining is still free.
+    // History-driven navigation is exempt: the URL has already moved, so
+    // refusing would leave the two out of step (the draft covers that case).
+    if (!restoringHistory && mode !== 'song' && !confirmLeaveTabEdit()) return;
     // Update state - this will trigger the subscriber
     setCurrentView(mode);
 }

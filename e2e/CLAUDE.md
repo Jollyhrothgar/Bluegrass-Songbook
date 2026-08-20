@@ -73,6 +73,7 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 | `abc-notation.spec.js` | ABC sheet music display, bottom-band playback controls |
 | `error-states.spec.js` | Not-found states, invalid URLs, graceful errors |
 | `otf-editor.spec.js` | Standalone OTF editor demo (`/editor-demo.html`, `/create.html`) |
+| `tab-edit-session.spec.js` | Editing a tab on a work page: `body.tab-editing` stands the page down, actions in the fixed top band, non-scrolling document, localStorage drafts + restore banner |
 | `otf-editor-visual.spec.js` | OTF editor visual/screenshot checks |
 | `helpers.js` | Shared helpers (not a spec) |
 

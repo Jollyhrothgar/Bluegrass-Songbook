@@ -10826,3 +10826,90 @@ body.has-list-context.has-bottomband .container {
     gap: 0.4rem;
     margin-top: 0.6rem;
 }
+
+/* ============================================
+   TAB EDIT MODE: the window is the frame
+   (docs/js/work-view.js setEditingLayout)
+
+   Editing a tab takes over the viewport, exactly the way create.html
+   already does for a NEW tab (`body.editor-open` there). The shell's top
+   band pins to the top carrying the session's Done / Cancel / Download,
+   the editor's own toolbar and transport pin to the bottom (editor.js's
+   `fillHeight` mode), and the ONLY thing that scrolls is the tablature in
+   between. Nothing here may let the DOCUMENT scroll: that is what used to
+   carry the Done button off the top of a long tab.
+
+   <html> carries the class too, or iOS still rubber-bands the document.
+   ============================================ */
+
+html.tab-editing { height: 100%; overflow: hidden; }
+body.tab-editing {
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    overscroll-behavior: none;
+}
+
+/* An edit session edits ONE part. Every other control on the page stands
+   down for the duration — most of all the part tabs, whose being live next
+   to the editor is what silently ate people's edits (and read as an offer
+   to edit the other parts too). */
+body.tab-editing .song-header,
+body.tab-editing #song-pill-row,
+body.tab-editing #part-tabs,
+body.tab-editing #arrangement-host,
+body.tab-editing .work-bounty-section,
+body.tab-editing .song-nav-bar { display: none !important; }
+
+/* The height chain down to the editor. Every link needs `min-height: 0` or
+   flex's default (min-height: auto, "never shrink below your content") lets
+   the tab grow the page instead of scrolling inside it. */
+/* !important because the width these override is set by
+   `.container:has(.song-view:not(.hidden))` above, and :has() takes its
+   argument's specificity — a plain `body.tab-editing .container` loses. */
+body.tab-editing .container {
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+body.tab-editing .song-content {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+body.tab-editing #work-part-content {
+    /* 48px is .app-topbar's height — the same literal .app-banner already
+       pins its `top` to. There is no bottom band in edit mode: the editor
+       brings its own toolbar and transport. */
+    height: calc(100vh - 48px);
+    height: calc(100dvh - 48px);
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+body.tab-editing .tab-edit-session {
+    flex: 1 1 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+body.tab-editing .tab-edit-host { flex: 1 1 0; min-height: 0; }
+body.tab-editing .tab-edit-draft-banner,
+body.tab-editing .tab-edit-submit-panel { flex: 0 0 auto; }
+
+/* Unsaved-draft offer, shown on re-entering a part you left mid-edit. */
+.tab-edit-draft-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    font-size: var(--font-sm);
+}
+.tab-edit-draft-actions { display: flex; gap: var(--space-xs); flex-wrap: wrap; }

@@ -93,6 +93,11 @@ quick-controls bar, or bottom sheet anymore:
   desktop DOM is byte-identical to `createTablatureControls`' output.
 - **Pill primitive**: `pill(label, buildContent, opts)` returns a small
   labeled button that opens a popover. All song-page controls are pills.
+- **Tab edit mode** (`body.tab-editing`, work-view's `setEditingLayout`): the
+  page stops scrolling and stands its own controls down — the band keeps the
+  edit session's Done / Cancel / Download and the editor pins its toolbar and
+  transport to the bottom. Auto-hide is off for the duration. See
+  `otf-editor/CLAUDE.md`.
 - **Auto-hiding chrome** (`setChromeAutoHide(on)`, enabled on song pages):
   the top band hides as you scroll down (`body.chrome-hidden`, 4px peek
   strip) and returns on scroll-up, hover, tapping the strip, or reaching

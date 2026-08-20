@@ -244,6 +244,105 @@ describe('createTabEditSession', () => {
         expect(onExit).not.toHaveBeenCalled();
     });
 
+    // ── The unmount-safety surface every navigation path now asks about ──
+
+    it('isDirty follows the facade, so one question answers every exit path', () => {
+        start();
+        expect(session.isDirty()).toBe(false);
+        editor.dirty = true;
+        expect(session.isDirty()).toBe(true);
+    });
+
+    it('isDirty is false, not a throw, on an editor with no facade yet', () => {
+        editor = makeFakeEditor({ state: null });
+        start();
+        expect(session.isDirty()).toBe(false);
+    });
+
+    it('onChange fires on EVERY edit — that is the draft hook', () => {
+        const onChange = vi.fn();
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, onChange,
+        });
+        editor.factoryOptions.onChange({ mid: 'edit' });
+        expect(onChange).toHaveBeenCalledWith({ mid: 'edit' });
+        // onApply is the Done/Ctrl+S signal and must NOT fire for a keystroke
+        expect(onApply).not.toHaveBeenCalled();
+    });
+
+    it('no onChange handler leaves the editor without one (nothing to autosave)', () => {
+        start();
+        expect(editor.factoryOptions.onChange).toBeNull();
+    });
+
+    it('restore() loads the draft AND marks the session dirty', () => {
+        // load() resets the undo stack, so canUndo() would report "nothing to
+        // lose" about the restored edits — which are the whole point.
+        const onChange = vi.fn();
+        editor = makeFakeEditor({ load: vi.fn() });
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, onChange,
+        });
+        const draft = { tracks: [{ id: 'banjo' }] };
+        session.restore(draft);
+        expect(editor.load).toHaveBeenCalledWith(draft);
+        expect(session.isDirty()).toBe(true);       // even with canUndo() false
+        expect(onChange).toHaveBeenCalledWith(draft);  // re-drafted immediately
+    });
+
+    it('Cancel after a restore still asks before discarding', () => {
+        const confirmDiscard = vi.fn(() => false);
+        editor = makeFakeEditor({ load: vi.fn() });
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, confirmDiscard,
+        });
+        session.restore({ tracks: [{ id: 'banjo' }] });
+        expect(session.cancel()).toBe(false);
+        expect(confirmDiscard).toHaveBeenCalled();
+    });
+
+    // ── Hoisted actions: the buttons live in the shell's fixed top band ──
+
+    it('hoistActions keeps the bar out of the DOM but wires the same buttons', () => {
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, hoistActions: true,
+        });
+        expect(mount.querySelector('.tab-edit-bar')).toBeNull();
+        expect(mount.querySelector('.tab-edit-host')).not.toBeNull();
+        expect(session.actionsEl).not.toBeNull();
+        expect(session.actionsEl.querySelector('.tab-edit-done')).not.toBeNull();
+
+        // The caller mounts them wherever it likes; the listeners travel.
+        const band = document.createElement('div');
+        document.body.appendChild(band);
+        band.appendChild(session.actionsEl);
+        band.querySelector('.tab-edit-done').click();
+        expect(onExit).toHaveBeenCalledWith('apply');
+    });
+
+    it('unmounting takes the hoisted actions down with it', () => {
+        // They live outside `root`, so root.remove() alone would leave live
+        // buttons in the band driving a destroyed editor.
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, hoistActions: true,
+        });
+        const band = document.createElement('div');
+        document.body.appendChild(band);
+        band.appendChild(session.actionsEl);
+        session.destroy();
+        expect(band.querySelector('.tab-edit-done')).toBeNull();
+    });
+
     // jsdom computes no layout, so this guards the CLASS CONTRACT that the
     // layout depends on rather than the pixels. `.qc-btn` is the site's
     // 32x32 icon shell (a hard width, used everywhere else for −/+ only):

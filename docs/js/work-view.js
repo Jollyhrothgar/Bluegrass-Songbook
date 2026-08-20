@@ -83,6 +83,7 @@ let tempoOverride = null;        // { workId, quarterBpm } — user-set tempo;
 let activeTrackView = null;      // track id, 'all', or null (= lead track)
 let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
 let activeEditSession = null;    // live tab edit session (torn down on nav)
+let activeEditDraftKey = null;   // localStorage key the session autosaves to
 let pendingTabEdit = null;       // parked "open this tab in the editor" ask
 
 /**
@@ -92,11 +93,19 @@ let pendingTabEdit = null;       // parked "open this tab in the editor" ask
  * that would otherwise keep re-rendering into detached DOM on every
  * theme toggle), and the tab player (stop() also kills an in-flight
  * soundfont load). Idempotent — safe to call on any navigation.
+ *
+ * This is the SILENT path: it asks the session nothing. Callers that a
+ * user drove must ask `confirmLeaveTabEdit()` first — the edits survive
+ * either way (they're already drafted to localStorage, and reopening the
+ * part offers them back), but vanishing mid-edit with no word is exactly
+ * the surprise this whole file is trying to stop.
  */
 export function teardownTablatureView() {
     if (activeEditSession) {
         activeEditSession.destroy();
         activeEditSession = null;
+        activeEditDraftKey = null;
+        setEditingLayout(false);
     }
     destroyTrackRenderers();
     if (tablaturePlayer) {
@@ -110,6 +119,60 @@ export function teardownTablatureView() {
 function destroyTrackRenderers() {
     for (const r of Object.values(trackRenderers)) r.destroy?.();
     trackRenderers = {};
+}
+
+/**
+ * Editing a tab takes over the viewport, the way create.html already does
+ * for a new one (`body.editor-open` there). The page stops scrolling, so
+ * the shell's top band stays pinned with the session's Done / Cancel on it
+ * and the editor's own toolbar and transport pin to the bottom (the editor's
+ * `fillHeight` mode); the only thing that scrolls is the tab in between.
+ *
+ * The class also stands every other control on the page down — part tabs,
+ * pills, the arrangement bar. An edit session edits ONE part, and leaving
+ * the part switcher live next to it both misdescribed that and, until this
+ * was fixed, silently threw the edits away when clicked.
+ *
+ * <html> carries the class too, or iOS still rubber-bands the document.
+ */
+function setEditingLayout(on) {
+    document.documentElement.classList.toggle('tab-editing', on);
+    document.body.classList.toggle('tab-editing', on);
+    if (on) window.addEventListener('beforeunload', editUnloadGuard);
+    else window.removeEventListener('beforeunload', editUnloadGuard);
+}
+
+/**
+ * The last line of defence: closing the tab or reloading. The draft is
+ * already written, so this is belt-and-braces — but a reload is the one
+ * exit where "it'll be waiting for you" is worth saying before, not after.
+ */
+function editUnloadGuard(e) {
+    if (!activeEditSession?.isDirty?.()) return;
+    e.preventDefault();
+    e.returnValue = '';   // Chrome/Safari still want the legacy signal
+}
+
+/** True when a live edit session holds changes an unmount would take away. */
+export function hasUnsavedTabEdits() {
+    return !!activeEditSession?.isDirty?.();
+}
+
+/**
+ * Ask before anything that would unmount a live edit session. Returns true
+ * when it's safe to proceed. The wording promises the draft on purpose:
+ * the honest answer is no longer "your work is gone", and a warning that
+ * overstates the stakes trains people to click through it.
+ */
+export function confirmLeaveTabEdit() {
+    if (!hasUnsavedTabEdits()) return true;
+    const ask = (typeof window !== 'undefined' && window.confirm)
+        ? (msg) => window.confirm(msg)
+        : () => true;
+    return ask(
+        'You have unsaved edits to this tab.\n\n'
+        + 'Leave the editor? Your edits are saved here as a draft and offered '
+        + 'back the next time you open this tab for editing.');
 }
 
 let currentGroupVersions = [];    // All versions in the current group (Arrangement pill)
@@ -431,6 +494,12 @@ function showWorkLoading() {
  *   exact        - show THIS version; skip the canonical-representative snap
  */
 export async function openWork(workId, options = {}) {
+    // Opening any work — a search result, a deep link, the Arrangement pill
+    // reaching a different version — unmounts a live edit session. Ask
+    // before the first piece of state moves, so declining leaves the editor
+    // exactly as it was.
+    if (!confirmLeaveTabEdit()) return false;
+
     workId = resolveWorkId(workId);
 
     // An edit intent belongs to the work it was filed for; navigating
@@ -771,6 +840,11 @@ export function selectLeadSheetArrangement(slug) {
  */
 function selectPart(part) {
     if (!part || part === activePart) return;
+    // Belt AND braces: the part tabs are hidden while an edit session is
+    // live (setEditingLayout), so this should be unreachable mid-edit — but
+    // this function is the exact door the reported bug walked through, and
+    // a keyboard or a stale handler shouldn't be able to reopen it.
+    if (!confirmLeaveTabEdit()) return;
 
     teardownTablatureView();
     setBottomBand(null);
@@ -1003,6 +1077,10 @@ function renderArrangementBar() {
  * part's arrangement fields) while leaving the URL alone.
  */
 function selectArrangement(part, index) {
+    // Switching which TAKE you're reading tears the tablature view down the
+    // same way switching parts does — same silent destroy, same lost edits.
+    if (!confirmLeaveTabEdit()) return;
+
     const changed = applyArrangement(part, index);
     part.arrangementsOpen = false;
 
@@ -1444,6 +1522,10 @@ export function canEditMetadataHere(song = currentWork) {
 
 export function updateWorkTopBar() {
     if (!currentWork || currentView !== 'song') return;
+    // While a tab is being edited the band belongs to the edit session (its
+    // Done / Cancel are the only actions that make sense there). This runs
+    // again on exit, from onExit, and the song page's band comes back.
+    if (activeEditSession) return;
 
     const actions = [];
 
@@ -2418,9 +2500,15 @@ async function renderTablaturePart(part, container) {
 }
 
 /**
- * Enter edit mode for a tablature part: mount the OTF editor over the
- * rendered tab. Done/Ctrl+S applies the edited document back to the
- * view (in memory) and re-renders; Cancel restores the original.
+ * Enter edit mode for a tablature part.
+ *
+ * Edit mode is a STAND-ALONE session over one part: the page's own controls
+ * (part tabs, pills, arrangement bar) stand down, the session's actions move
+ * into the shell's fixed top band where they can't scroll away, and every
+ * keystroke is drafted to localStorage so an unmount — deliberate or not —
+ * is never the end of the work. Done/Ctrl+S applies the edited document back
+ * to the view (in memory) and re-renders; Cancel restores the original.
+ *
  * Editor + session code are lazy-imported so readers never pay for it.
  */
 async function enterTabEditMode(otf, part, container) {
@@ -2429,17 +2517,30 @@ async function enterTabEditMode(otf, part, container) {
         tablaturePlayer.stop();
     }
 
-    const [{ OTFEditor }, { createTabEditSession, resolveEditTrackId }, { submitTab }] = await Promise.all([
+    const [
+        { OTFEditor },
+        { createTabEditSession, resolveEditTrackId },
+        { submitTab },
+        drafts,
+    ] = await Promise.all([
         import('./otf-editor/editor.js'),
         import('./otf-editor/work-edit.js'),
         import('./otf-editor/submit-tab.js'),
+        import('./otf-editor/tab-drafts.js'),
     ]);
 
-    // Park the bottom-band controls while editing (they drive dead renderers)
-    const editNotice = document.createElement('div');
-    editNotice.className = 'tab-controls';
-    editNotice.innerHTML = '<em>Editing — use the editor bar below. ✓ Done applies your changes, Cancel discards them.</em>';
-    setBottomBand(editNotice);
+    // Keyed on the same tuple otfCacheKey already uses to tell one take of an
+    // instrument from another — a draft of take B must not restore over A.
+    const draftKey = drafts.tabDraftKey(
+        currentWork?.id, otfCacheKey(part) || part.instrument);
+    const draft = drafts.loadTabDraft(draftKey);
+    drafts.pruneTabDrafts();
+
+    // The editor supplies its own pinned toolbar and transport in fill mode,
+    // so the app's bottom band would be a second, redundant strip of chrome.
+    setBottomBand(null);
+    setChromeAutoHide(false);   // the band must never hide mid-edit
+    setEditingLayout(true);
 
     // The rendered-view renderers are about to be detached — drop their
     // observers now; renderTablaturePart rebuilds them on exit.
@@ -2450,18 +2551,36 @@ async function enterTabEditMode(otf, part, container) {
         || [currentWork?.id, part.instrument].filter(Boolean).join('-')
         || 'tab').split('/').pop().replace(/\.otf\.json$/, '');
 
+    activeEditDraftKey = draftKey;
     activeEditSession = createTabEditSession({
         mount: container,
         otf,
         trackId: resolveEditTrackId(otf, part.instrument),
         filename: `${baseName}-edited`,
-        editorFactory: (opts) => new OTFEditor(opts),
+        // Done / Cancel / Download / Submit belong in the fixed band, not in
+        // a bar that a long tab scrolls off the top of the screen.
+        hoistActions: true,
+        editorFactory: (opts) => new OTFEditor({ ...opts, fillHeight: true }),
+        onChange: (doc) => drafts.saveTabDraft(draftKey, doc, {
+            workId: currentWork?.id,
+            partId: part.partId,
+            title: currentWork?.title,
+            instrument: part.instrument,
+        }),
         onApply: (doc) => {
             doc._partFile = otfCacheKey(part); // keep the view cache keyed to this part
             setLoadedTablature(doc);
         },
         onExit: () => {
             activeEditSession = null;
+            activeEditDraftKey = null;
+            // Applied or explicitly discarded — either way this draft has
+            // done its job. Leaving it would offer stale edits back over a
+            // document that already carries them.
+            drafts.clearTabDraft(draftKey);
+            setEditingLayout(false);
+            setChromeAutoHide(true);
+            updateWorkTopBar();
             renderTablaturePart(part, container);
         },
         // Save-back: the same instant pipeline song corrections use — the
@@ -2488,8 +2607,58 @@ async function enterTabEditMode(otf, part, container) {
             // overlay into allSongs so every other surface (search, this
             // work reopened, My Submissions) sees it without a reload.
             await window.refreshPendingSongs?.();
+            // Submitted work is landed work — the draft has nothing left to
+            // protect, and offering it back would look like the submission
+            // didn't take.
+            drafts.clearTabDraft(draftKey);
             return result;
         },
+    });
+
+    // The band IS the edit bar now: back = Cancel (with its own discard
+    // prompt), and the title says which part of which song is open, because
+    // the page's own title row is standing down.
+    setTopBar({
+        back: { onClick: () => activeEditSession?.cancel() },
+        title: [currentWork?.title || 'Tab', part.label || part.instrument]
+            .filter(Boolean).join(' — '),
+        actions: [{ el: activeEditSession.actionsEl }],
+        overflow: [],
+        navActive: null,
+    });
+
+    if (draft) mountDraftBanner(activeEditSession, draft, draftKey, drafts);
+}
+
+/**
+ * "You have unsaved edits from 10 minutes ago" — offered, never applied
+ * behind your back. Silently restoring would be the same class of surprise
+ * as silently discarding: the editor would open showing something other
+ * than the tab the site is publishing, with no way to tell why.
+ */
+function mountDraftBanner(session, draft, draftKey, drafts) {
+    const banner = document.createElement('div');
+    banner.className = 'tab-edit-draft-banner';
+    banner.innerHTML = `
+        <span class="tab-edit-draft-text">
+            ⚠️ You have unsaved edits to this tab from
+            <strong class="tab-edit-draft-age"></strong>.
+        </span>
+        <span class="tab-edit-draft-actions">
+            <button type="button" class="tab-edit-draft-restore qc-toggle-btn">Restore them</button>
+            <button type="button" class="tab-edit-draft-discard qc-toggle-btn">Discard</button>
+        </span>
+    `;
+    banner.querySelector('.tab-edit-draft-age').textContent = drafts.draftAge(draft.savedAt);
+    session.root.insertBefore(banner, session.root.firstChild);
+
+    banner.querySelector('.tab-edit-draft-restore').addEventListener('click', () => {
+        session.restore(draft.otf);
+        banner.remove();
+    });
+    banner.querySelector('.tab-edit-draft-discard').addEventListener('click', () => {
+        drafts.clearTabDraft(draftKey);
+        banner.remove();
     });
 }
 

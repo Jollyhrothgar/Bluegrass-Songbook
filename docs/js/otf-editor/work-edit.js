@@ -7,7 +7,8 @@
 // UI-free of editor internals: the editor is injected via editorFactory
 // so work-view can lazy-import OTFEditor and tests can stub it. The
 // only editor surface used: save(), download(filename?), destroy(),
-// state.facade.canUndo() (dirty check), and the onSave option.
+// load(otf) (draft restore), state.facade.canUndo() (dirty check), and
+// the onSave / onChange options.
 
 import { pitchedTracks } from '../renderers/otf-tracks.js';
 
@@ -40,6 +41,12 @@ export function resolveEditTrackId(otf, instrument) {
  * @param {Function} options.editorFactory - ({container, otf, trackId, onSave}) => editor
  * @param {Function} [options.onApply] - receives the edited document
  * @param {Function} [options.onExit] - receives 'apply' | 'cancel' after unmount
+ * @param {Function} [options.onChange] - receives the document on EVERY edit
+ *   (the draft-autosave hook; onApply only fires on Done / Ctrl+S)
+ * @param {boolean} [options.hoistActions] - keep the action buttons out of the
+ *   mounted DOM so the caller can put them somewhere fixed (work-view puts
+ *   them in the shell's top band, where they can't scroll away). The buttons
+ *   are then reachable as `session.actionsEl`.
  * @param {Function} [options.confirmDiscard] - () => boolean; defaults to window.confirm
  */
 export function createTabEditSession({
@@ -50,7 +57,9 @@ export function createTabEditSession({
     editorFactory,
     onApply = () => {},
     onExit = () => {},
+    onChange = null,
     onSubmit = null,
+    hoistActions = false,
     confirmDiscard = null,
 }) {
     const root = document.createElement('div');
@@ -80,7 +89,10 @@ export function createTabEditSession({
     // which community submissions make untrusted input
     bar.querySelector('.tab-edit-title').textContent =
         `✏️ Editing${trackId ? ` — ${trackId}` : ''}`;
-    root.appendChild(bar);
+    // Hoisted: the caller owns where the buttons live, so the inline bar
+    // (title included — the top band shows one) never enters the document.
+    const actionsEl = bar.querySelector('.tab-edit-actions');
+    if (!hoistActions) root.appendChild(bar);
 
     // Inline submit panel (comment required — same as song corrections)
     let submitPanel = null;
@@ -109,7 +121,16 @@ export function createTabEditSession({
         otf,
         trackId,
         onSave: (doc) => onApply(doc),
+        onChange: onChange ? (doc) => onChange(doc) : null,
     });
+
+    // Set when a document is loaded over the top of the editor's own (a
+    // restored draft). `load()` resets the undo stack, so canUndo() would
+    // report "nothing to lose" about edits that are the entire point.
+    let forcedDirty = false;
+
+    /** THE dirty question — every exit path asks this one. */
+    const isDirty = () => forcedDirty || editor.state?.facade?.canUndo?.() || false;
 
     let closed = false;
     const cleanup = () => {
@@ -117,12 +138,32 @@ export function createTabEditSession({
         closed = true;
         editor.destroy?.();
         root.remove();
+        // Hoisted actions live outside `root` (in the top band), so they
+        // have to be taken down by hand or the buttons outlive the editor
+        // they drive. Harmless when they're still inside the bar.
+        actionsEl.remove();
         return true;
     };
 
     const session = {
         root,
         editor,
+        actionsEl,
+
+        /** Are there edits that unmounting would take with it? */
+        isDirty,
+
+        /**
+         * Load a document over the current one — the draft-restore path.
+         * Marks the session dirty because the restored edits are exactly
+         * what an unguarded exit must not throw away, and `load()` leaves
+         * the undo stack (and so canUndo()) empty.
+         */
+        restore(doc) {
+            editor.load?.(doc);
+            forcedDirty = true;
+            onChange?.(doc);
+        },
 
         /** Apply current edits to the view and stay in the editor. */
         apply() {
@@ -139,8 +180,7 @@ export function createTabEditSession({
 
         /** Exit without applying; asks first when there are edits. */
         cancel() {
-            const dirty = editor.state?.facade?.canUndo?.() || false;
-            if (dirty) {
+            if (isDirty()) {
                 const ask = confirmDiscard
                     || ((typeof window !== 'undefined' && window.confirm)
                         ? () => window.confirm('Discard your edits?')

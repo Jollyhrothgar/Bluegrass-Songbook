@@ -140,8 +140,37 @@ docs/js/otf-editor/
 ├── popover.js         # NoteEntryPopover + AnnotationPopover + TrackNamePopover
 ├── context-menu.js    # Right-click menu
 ├── actions.js         # Document-level helpers (validate, cleanup, download)
-└── recorder.js        # Record/replay of edit events
+├── recorder.js        # Record/replay of edit events
+├── work-edit.js       # The work-page edit SESSION (mount, apply, exit, submit)
+└── tab-drafts.js      # Per-(work, part) localStorage drafts of a live edit
 ```
+
+## Editing a tab on a work page is a stand-alone session
+
+`work-edit.js` + `work-view.js enterTabEditMode` own this, and the shape is
+deliberate — it was rebuilt after edits went missing when someone clicked
+another part mid-edit:
+
+- **One part, one session.** `body.tab-editing` (set by work-view's
+  `setEditingLayout`) hides the part tabs, the pill row, the title row and
+  the arrangement bar. Edit mode edits the part you opened it on, and leaving
+  the part switcher live both said otherwise and destroyed the session when
+  clicked.
+- **The window is the frame.** The session mounts the editor with
+  `fillHeight: true` and the page stops scrolling, so the shell's top band
+  (carrying the session's own Done / Cancel / Download / Submit, hoisted
+  there via `hoistActions`) and the editor's toolbar + transport stay pinned.
+  Same arrangement `create.html` uses for a new tab.
+- **Every change is drafted.** `onChange` → `saveTabDraft` on a key built from
+  the work id and `otfCacheKey(part)`. Reopening that part offers the draft
+  back in a banner; `session.restore(doc)` loads it AND forces the dirty flag,
+  because `editor.load()` resets the undo stack that `canUndo()` reads.
+  Applying, discarding or submitting clears the draft.
+- **`destroy()` is still the silent path** and `teardownTablatureView` still
+  calls it — but every user-driven route into it (part switch, arrangement
+  switch, `openWork`, `showView`) now asks `confirmLeaveTabEdit()` first, and
+  a `beforeunload` guard covers reload/close. The draft is what makes all of
+  those recoverable rather than final.
 
 **One rule holds the editor together: nothing mutates the document
 except `EditingFacade`.** Its undo history is a whole-document snapshot
