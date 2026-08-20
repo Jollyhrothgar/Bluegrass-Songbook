@@ -34,7 +34,7 @@ const DEFAULT_FEEDBACK_TUNING = ['D4', 'B3', 'G3', 'D3', 'G4'];
 // Editor-only renderer weights. The site's read view keeps TabRenderer's
 // defaults (1.5 / 3) — these are the "thicker stems" of plan
 // tab-editor-input-parity §7, and they apply while editing only.
-const EDITOR_STEM_WIDTH = 2.5;
+const EDITOR_STEM_WIDTH = 2.25;
 const EDITOR_BEAM_THICKNESS = 4;
 
 // Rows are FIXED in the editor, not reflowed (plan §7). We pin whatever

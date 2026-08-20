@@ -42,7 +42,7 @@ describe('editor renderer options', () => {
 
     it('draws thicker stems and beams than the read view', () => {
         const readDefault = new TabRenderer(document.createElement('div'));
-        expect(editor.renderer.options.stemWidth).toBe(2.5);
+        expect(editor.renderer.options.stemWidth).toBe(2.25);
         expect(editor.renderer.options.beamThickness).toBe(4);
         // the site's read view is untouched
         expect(readDefault.options.stemWidth).toBe(1.5);
