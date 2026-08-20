@@ -10,7 +10,7 @@
   },
   "tracks": [
     {
-      "id": "guitar",
+      "id": "lead guitar",
       "instrument": "6-string-guitar",
       "tuning": [
         "G#4",
@@ -24,7 +24,7 @@
       "role": "rhythm"
     },
     {
-      "id": "guitar-2",
+      "id": "backup guitar",
       "instrument": "6-string-guitar",
       "tuning": [
         "G#4",
@@ -39,7 +39,7 @@
     }
   ],
   "notation": {
-    "guitar-2": [
+    "lead guitar": [
       {
         "measure": 1,
         "events": [
@@ -2211,7 +2211,7 @@
         ]
       }
     ],
-    "guitar": [
+    "backup guitar": [
       {
         "measure": 2,
         "events": [

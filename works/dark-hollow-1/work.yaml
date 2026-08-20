@@ -20,7 +20,11 @@ parts:
   instrument: guitar
   provenance:
     source: user-submission
-    source_id: pending:tab:dark-hollow-1:85ltxlug:805918fe7961
+    source_id: pending:tab:dark-hollow-1:4kdmztab:74060cbd9e05
     submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
-    submitted_at: '2026-08-19'
+    submitted_at: '2026-08-20'
     author: Mike Beaumier
+    x_corrected_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    x_corrected_attribution: Mike Beaumier
+    x_corrected: '2026-08-20'
+    x_correction_notes: Changing track names and ordering.
