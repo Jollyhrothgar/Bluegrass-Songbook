@@ -421,3 +421,43 @@ describe('dispatchEditorEvent', () => {
         warnSpy.mockRestore();
     });
 });
+
+// The recorder's replay path must reach the new document ops, or a
+// recorded session silently skips them.
+describe('recorder replay covers the new editor ops', () => {
+    it('dispatches every new event type without warning', async () => {
+        const { EditorState } = await import('../../otf-editor/state.js');
+        const warn = console.warn;
+        const warned = [];
+        console.warn = (m) => warned.push(m);
+        try {
+            const state = new EditorState();
+            const editor = { state, cursor: null };
+            state.cursor.string = 3;
+            state.insertNote(0);
+            const events = [
+                { type: 'setAutoDuration', params: { auto: true } },
+                { type: 'setAutoDuration', params: { auto: false } },
+                { type: 'toggleDotted', params: {} },
+                { type: 'applyDurationToSelection', params: { duration: 240 } },
+                { type: 'scaleDuration', params: { measure: 1, tick: 0, string: 3, factor: 2 } },
+                { type: 'scaleSelectionDuration', params: { factor: 2 } },
+                { type: 'fixDurations', params: { measure: 1 } },
+                { type: 'transposeFret', params: { measure: 1, tick: 0, string: 3, delta: 1 } },
+                { type: 'moveNoteToString', params: { measure: 1, tick: 0, string: 3, direction: 1 } },
+                { type: 'toggleTie', params: { measure: 1, tick: 0, string: 4 } },
+                { type: 'ensureMeasure', params: { measure: 3 } },
+                { type: 'repeatMeasure', params: { measure: 2 } },
+                { type: 'shiftRight', params: { measure: 1, tick: 0, ticks: 240 } },
+                { type: 'shiftLeft', params: { measure: 1, tick: 240, ticks: 240 } },
+                { type: 'deleteMeasure', params: { measure: 3 } },
+                { type: 'toggleAutoAdvance', params: {} },
+            ];
+            for (const event of events) dispatchEditorEvent(editor, event);
+            expect(warned).toEqual([]);
+            expect(state.autoAdvance).toBe(false);
+        } finally {
+            console.warn = warn;
+        }
+    });
+});

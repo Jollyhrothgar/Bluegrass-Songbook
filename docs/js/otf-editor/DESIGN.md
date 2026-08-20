@@ -191,12 +191,24 @@ interface NoteEvent {
 interface Note {
   s: number                   // String (1-indexed)
   f: number                   // Fret (0 = open)
-  tech?: "h" | "p" | "/" | "~"  // Technique
+  tech?: "h" | "p" | "/" | "\\" | "x" | "b"  // Technique
   finger?: "T" | "I" | "M"    // Fingering annotation
-  tie?: boolean               // Tied from previous
-  dur?: number                // Duration in ticks (rarely used)
+  tie?: boolean               // Tied from the previous note on this string
+  dur?: number                // Duration in ticks
 }
 ```
+
+**`~` is not a technique.** A tie is `tie: true` on the CONTINUATION note
+— that is what the corpus contains (1,785 in a 400-file sample), what
+`renderers/tablature.js` draws the arc from, and what `tab-player.js`
+sustains. `tech: '~'` was an editor-only invention that nothing rendered
+or played; `EditingFacade` now refuses it (`setArticulation(pos, '~')`
+and `insertNote({tech: '~'})` are routed to `setTie`, and `load()`
+converts any legacy `~` it finds). `tie` and `tech` are independent
+fields — 21 corpus notes carry both `tie: true` and `tech: '/'`.
+
+The tech vocabulary is `TECHS` in `facade.js`; anything outside it
+throws rather than landing a symbol no renderer knows.
 
 ### Duration Constants
 

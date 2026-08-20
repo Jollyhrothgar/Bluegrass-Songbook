@@ -19,8 +19,45 @@ import {
     maxMeasureIn,
     measureTimingFromOtf,
 } from '../renderers/measure-timing.js';
+import { notePitch, fretForPitch } from './pitch.js';
 
 const clone = (x) => JSON.parse(JSON.stringify(x));
+
+/**
+ * The technique vocabulary the corpus and the renderer actually share:
+ * hammer-on, pull-off, slide up, slide down, dead/muted note, choke/bend.
+ * `~` is NOT here — a tie is `tie: true` on the continuation note, a
+ * separate field the renderer draws an arc from (see setTie).
+ */
+export const TECHS = ['h', 'p', '/', '\\', 'x', 'b'];
+
+/** Duration clamp for the scale ops: 32nd .. whole (at 480 tpb). */
+export const MIN_DURATION = 60;
+export const MAX_DURATION = 1920;
+
+/**
+ * Session identity of a note for duration bookkeeping: measure, tick and
+ * string. NOT written to the document — see "Automatic duration" below.
+ * @returns {string} "m:t:s"
+ */
+export function durationKey(measure, tick, string) {
+    return `${measure}:${tick}:${string}`;
+}
+
+/**
+ * Validate a technique value on its way into the document.
+ * `~` is translated by the callers (it means "tie", not a tech); every
+ * other unknown value throws rather than landing a symbol the renderer
+ * and the player have never seen.
+ */
+function assertTech(tech) {
+    if (tech == null) return null;
+    if (!TECHS.includes(tech)) {
+        throw new RangeError(
+            `Unknown technique '${tech}' (expected one of ${TECHS.join(' ')})`);
+    }
+    return tech;
+}
 
 /**
  * Clean a typed track name into something safe to be a track id.
@@ -46,6 +83,32 @@ export function sanitizeTrackId(name) {
         .trim();
 }
 
+/**
+ * The note a tie at (measure, tick, string) would hang from: the nearest
+ * earlier note on the SAME string, in this measure or — when this note is
+ * the measure's first on that string — the last one in the measure before.
+ * That is exactly the pairing `tablature.js renderSlurs` draws its arc
+ * from, so a tie with no predecessor is an arc from nowhere.
+ *
+ * @param {Map<number, Object>} byNumber - measure number → measure
+ * @returns {{measure: number, tick: number, note: Object}|null}
+ */
+function tiePredecessorIn(byNumber, measureNum, tick, string) {
+    const lastOn = (measure, before) => {
+        let best = null;
+        for (const event of measure?.events || []) {
+            if (before != null && event.tick >= before) continue;
+            const note = event.notes?.find(n => n.s === string);
+            if (note && (!best || event.tick > best.tick)) {
+                best = { measure: measure.measure, tick: event.tick, note };
+            }
+        }
+        return best;
+    };
+    return lastOn(byNumber.get(measureNum), tick)
+        || lastOn(byNumber.get(measureNum - 1), null);
+}
+
 export class EditingFacade {
     /**
      * @param {Object} otf - OTF document (deep-cloned; the facade owns its copy)
@@ -53,7 +116,7 @@ export class EditingFacade {
      * @param {string} [options.trackId] - initial track (defaults to first)
      */
     constructor(otf, options = {}) {
-        this.otf = clone(otf);
+        this.otf = this._adopt(clone(otf));
         const tracks = this.otf.tracks || [];
         this.trackId = options.trackId && tracks.some(t => t.id === options.trackId)
             ? options.trackId
@@ -75,11 +138,49 @@ export class EditingFacade {
     // ------------------------------------------------------------------
 
     /**
+     * Take ownership of a document, repairing the one encoding the
+     * editor itself used to emit and nothing else ever read: `tech: '~'`.
+     * A tie is `tie: true` on the CONTINUATION note (1,785 of them in a
+     * 400-file corpus sample; the facade writes it itself when a long
+     * note crosses a barline), and `renderers/tablature.js` draws the arc
+     * from the same-string predecessor. A `~` got no arc and no sustain,
+     * and carried a value the corpus has never contained.
+     *
+     * Conversion is per note: `~` becomes `tie: true` when a same-string
+     * predecessor exists to draw the arc from, and is otherwise dropped.
+     * No corpus document contains `~`, so for every real file this walk
+     * changes nothing and the byte-identical round trip is untouched.
+     *
+     * @param {Object} doc - an already-cloned document (mutated in place)
+     * @returns {Object} the same document
+     */
+    _adopt(doc) {
+        const notation = doc?.notation;
+        if (!notation) return doc;
+        for (const measures of Object.values(notation)) {
+            if (!Array.isArray(measures)) continue;
+            const byNumber = new Map(measures.map(m => [m.measure, m]));
+            for (const measure of measures) {
+                for (const event of measure.events || []) {
+                    for (const note of event.notes || []) {
+                        if (note.tech !== '~') continue;
+                        delete note.tech;
+                        if (tiePredecessorIn(byNumber, measure.measure, event.tick, note.s)) {
+                            note.tie = true;
+                        }
+                    }
+                }
+            }
+        }
+        return doc;
+    }
+
+    /**
      * Replace the document (deep-cloned). Resets the current track,
      * clears history and clipboard, and emits 'load' + 'change'.
      */
     load(otf, { trackId } = {}) {
-        this.otf = clone(otf);
+        this.otf = this._adopt(clone(otf));
         const tracks = this.otf.tracks || [];
         this.trackId = trackId && tracks.some(t => t.id === trackId)
             ? trackId
@@ -414,13 +515,48 @@ export class EditingFacade {
      * tick length (ts-aware). Continuations carry `tie: true` — the
      * encoding the site renderer draws slurs from and the player skips.
      *
-     * @param {Object} p - {measure, tick, string, fret, duration?, tech?, trackId?}
+     * `tech: '~'` is NOT a technique (nothing renders or plays it): it
+     * means "tie this to the note before it on the same string", and is
+     * routed to `tie: true` when such a note exists, dropped when it does
+     * not. Every other tech value must be in TECHS or this throws.
+     *
+     * With `autoDuration: true` the note's `dur` — and every unpinned
+     * auto-entered note in the same measure — is computed by the column
+     * rule instead (see "Automatic duration" below), in this same
+     * transaction, so one undo takes back the note AND its neighbour's
+     * re-timing.
+     *
+     * @param {Object} p - {measure, tick, string, fret, duration?, tech?,
+     *   trackId?, autoDuration?, pins?, autoEntered?}
      */
-    insertNote({ measure, tick, string, fret, duration = null, tech = null, trackId = this.trackId }) {
+    insertNote({ measure, tick, string, fret, duration = null, tech = null,
+        trackId = this.trackId, autoDuration = false,
+        pins = null, autoEntered = null }) {
         this._validateString(string, trackId);
+        const tie = tech === '~';
+        if (tie) tech = null;
+        else assertTech(tech);
+        if (autoDuration) {
+            return this._mutate('Insert note', () => {
+                const note = { s: string, f: fret, ...(tech ? { tech } : {}) };
+                this._placeNote(trackId, measure, tick, note);
+                if (tie && this.tiePredecessor({ measure, tick, string }, trackId)) {
+                    note.tie = true;
+                }
+                const key = durationKey(measure, tick, string);
+                if (pins) pins.delete(key);
+                if (autoEntered) autoEntered.add(key);
+                this._recomputeAuto(measure, trackId, { pins, only: autoEntered });
+                return true;
+            });
+        }
         return this._mutate('Insert note', () => {
             if (duration == null) {
-                this._placeNote(trackId, measure, tick, { s: string, f: fret, ...(tech ? { tech } : {}) });
+                const note = { s: string, f: fret, ...(tech ? { tech } : {}) };
+                this._placeNote(trackId, measure, tick, note);
+                if (tie && this.tiePredecessor({ measure, tick, string }, trackId)) {
+                    note.tie = true;
+                }
                 return true;
             }
             let m = measure;
@@ -435,6 +571,10 @@ export class EditingFacade {
                 if (first && tech) note.tech = tech;
                 if (!first) note.tie = true;
                 this._placeNote(trackId, m, t, note);
+                if (first && tie
+                    && this.tiePredecessor({ measure: m, tick: t, string }, trackId)) {
+                    note.tie = true;
+                }
                 remaining -= take;
                 first = false;
                 m++;
@@ -464,7 +604,14 @@ export class EditingFacade {
         return { measure: m, event, note };
     }
 
-    deleteNote(pos, trackId = this.trackId) {
+    /**
+     * @param {Object} pos - {measure, tick, string}
+     * @param {string} [trackId]
+     * @param {Object} [opts] - {autoDuration, pins, autoEntered}: re-time
+     *   the measure's auto-entered notes in the same transaction, so
+     *   deleting a note re-extends the one before it.
+     */
+    deleteNote(pos, trackId = this.trackId, opts = {}) {
         return this._mutate('Delete note', () => {
             const { measure, event, note } = this._findNote(pos, trackId);
             if (!note) return false;
@@ -472,19 +619,35 @@ export class EditingFacade {
             if (event.notes.length === 0) {
                 measure.events = measure.events.filter(e => e !== event);
             }
+            this._afterAutoEdit(pos.measure, trackId, opts,
+                [durationKey(pos.measure, pos.tick, pos.string)]);
             return true;
         });
     }
 
-    deleteTick({ measure, tick }, trackId = this.trackId) {
+    deleteTick({ measure, tick }, trackId = this.trackId, opts = {}) {
         return this._mutate('Delete tick', () => {
             const m = this.getMeasure(measure, trackId);
             if (!m) return false;
             const idx = m.events.findIndex(e => e.tick === tick);
             if (idx === -1) return false;
+            const gone = m.events[idx].notes.map(
+                n => durationKey(measure, tick, n.s));
             m.events.splice(idx, 1);
+            this._afterAutoEdit(measure, trackId, opts, gone);
             return true;
         });
+    }
+
+    /** Forget deleted keys, then re-time the measure (auto mode only). */
+    _afterAutoEdit(measureNum, trackId, { autoDuration = false, pins = null,
+        autoEntered = null } = {}, removedKeys = []) {
+        for (const key of removedKeys) {
+            if (pins) pins.delete(key);
+            if (autoEntered) autoEntered.delete(key);
+        }
+        if (!autoDuration) return false;
+        return this._recomputeAuto(measureNum, trackId, { pins, only: autoEntered });
     }
 
     /** Relocate a note, preserving every field except its string. */
@@ -510,8 +673,20 @@ export class EditingFacade {
         });
     }
 
-    /** Set (or clear, with null) a note's articulation. */
+    /**
+     * Set (or clear, with null) a note's articulation.
+     *
+     * `tech` must be one of TECHS. `'~'` is not a technique — it is
+     * delegated to `setTie(pos, true)`, because that is what the user
+     * meant and what the renderer can draw. `tie` and `tech` are
+     * independent: 21 notes in a corpus sample carry both `tie: true`
+     * and `tech: '/'`, so neither op ever clears the other's field.
+     *
+     * @throws {RangeError} on a tech value outside the vocabulary
+     */
     setArticulation(pos, tech, trackId = this.trackId) {
+        if (tech === '~') return this.setTie(pos, true, { trackId });
+        assertTech(tech);
         return this._mutate(tech ? 'Add articulation' : 'Remove articulation', () => {
             const { note } = this._findNote(pos, trackId);
             if (!note) return false;
@@ -522,11 +697,195 @@ export class EditingFacade {
         });
     }
 
+    /**
+     * The note a tie at `pos` would hang from (null when there is none).
+     * @param {Object} pos - {measure, tick, string}
+     */
+    tiePredecessor({ measure, tick, string }, trackId = this.trackId) {
+        const byNumber = new Map(
+            this.getNotation(trackId).map(m => [m.measure, m]));
+        return tiePredecessorIn(byNumber, measure, tick, string);
+    }
+
+    /**
+     * Tie the note at `pos` to its same-string predecessor (`tie: true`),
+     * or clear the tie with `on: false`.
+     *
+     * Refuses — no mutation — when there is nothing to tie FROM: the arc
+     * `renderers/tablature.js` draws runs from the previous note on the
+     * same string (in this measure, or the last one in the measure
+     * before), so a tie without one is an arc from nowhere and a sustain
+     * the player cannot attach. Clearing a tie that isn't set is also a
+     * no-op. `tech` is never touched either way.
+     *
+     * @returns {boolean} false when nothing changed
+     */
+    setTie(pos, on = true, { trackId = this.trackId } = {}) {
+        const { note } = this._findNote(pos, trackId);
+        if (!note) return false;
+        if (on && note.tie === true) return false;
+        if (!on && note.tie !== true) return false;
+        if (on && !this.tiePredecessor(pos, trackId)) return false;
+        return this._mutate(on ? 'Add tie' : 'Remove tie', () => {
+            const found = this._findNote(pos, trackId);
+            if (on) found.note.tie = true;
+            else delete found.note.tie;
+            return true;
+        });
+    }
+
     setNoteDuration(pos, duration, trackId = this.trackId) {
         return this._mutate('Set duration', () => {
             const { note } = this._findNote(pos, trackId);
             if (!note) return false;
+            if (note.dur === duration) return false;
             note.dur = duration;
+            return true;
+        });
+    }
+
+    // ------------------------------------------------------------------
+    // Duration editing: a range, and halve/double.
+    //
+    // `dur` is plain ticks, so a dotted or triplet value needs no flag —
+    // 720 IS a dotted quarter and 160 IS a triplet eighth, and today's
+    // renderer already draws both (751 triplet eighths and 122 dotted
+    // quarters on banjo tracks alone).
+    // ------------------------------------------------------------------
+
+    /**
+     * Every note whose onset falls in [startAbs, endAbs), with its
+     * position — the shared scan behind the range ops and the state's
+     * duration pinning.
+     * @returns {Array<{measure: number, tick: number, string: number, note: Object}>}
+     */
+    notesInRange(startAbs, endAbs, { strings = null, trackId = this.trackId } = {}) {
+        const out = [];
+        for (const measure of this.getNotation(trackId)) {
+            const base = this.toAbs(measure.measure, 0);
+            for (const event of measure.events) {
+                const abs = base + event.tick;
+                if (abs < startAbs || abs >= endAbs) continue;
+                for (const note of event.notes) {
+                    if (strings && !strings.includes(note.s)) continue;
+                    out.push({
+                        measure: measure.measure, tick: event.tick,
+                        string: note.s, note,
+                    });
+                }
+            }
+        }
+        return out;
+    }
+
+    /**
+     * Apply one duration to every note in a tick range (TablEdit's `*`).
+     * @returns {boolean} false when nothing changed
+     */
+    setRangeDuration(startAbs, endAbs, duration, { strings = null, trackId = this.trackId } = {}) {
+        if (!(duration > 0)) return false;
+        return this._mutate('Set duration', () => {
+            let changed = false;
+            for (const { note } of this.notesInRange(startAbs, endAbs, { strings, trackId })) {
+                if (note.dur === duration) continue;
+                note.dur = duration;
+                changed = true;
+            }
+            return changed;
+        });
+    }
+
+    /**
+     * Halve (`factor` 0.5) or double (2) the duration of the note at
+     * `pos`, clamped to [MIN_DURATION, MAX_DURATION]. A note with no
+     * explicit `dur` is scaled from what the column rule says it sounds
+     * like, so `<`/`>` work on imported and auto-timed notes alike.
+     * @returns {boolean} false when there is no note, or it can't move
+     */
+    scaleDuration(pos, factor, trackId = this.trackId) {
+        const { note } = this._findNote(pos, trackId);
+        if (!note || !(factor > 0)) return false;
+        const next = this._scaled(note.dur ?? this.autoDurationAt(pos, trackId), factor);
+        if (next == null || next === note.dur) return false;
+        return this.setNoteDuration(pos, next, trackId);
+    }
+
+    /** scaleDuration over a tick range. @returns {boolean} */
+    scaleRangeDuration(startAbs, endAbs, factor, { strings = null, trackId = this.trackId } = {}) {
+        if (!(factor > 0)) return false;
+        return this._mutate('Scale duration', () => {
+            let changed = false;
+            for (const hit of this.notesInRange(startAbs, endAbs, { strings, trackId })) {
+                const base = hit.note.dur ?? this.autoDurationAt(hit, trackId);
+                const next = this._scaled(base, factor);
+                if (next == null || next === hit.note.dur) continue;
+                hit.note.dur = next;
+                changed = true;
+            }
+            return changed;
+        });
+    }
+
+    _scaled(base, factor) {
+        if (!(base > 0)) return null;
+        const raw = Math.round(base * factor);
+        const next = Math.max(MIN_DURATION, Math.min(MAX_DURATION, raw));
+        return next;
+    }
+
+    /**
+     * Move a note's fret by `delta`, clamped to 0..24 — the typo fixer
+     * (`+`/`-`), not a transposition of anything else.
+     * @returns {boolean} false when there is no note or it can't move
+     */
+    transposeFret(pos, delta, trackId = this.trackId) {
+        const { note } = this._findNote(pos, trackId);
+        if (!note || !Number.isFinite(delta)) return false;
+        const next = Math.max(0, Math.min(24, note.f + delta));
+        if (next === note.f) return false;
+        return this._mutate('Transpose note', () => {
+            this._findNote(pos, trackId).note.f = next;
+            return true;
+        });
+    }
+
+    /**
+     * Re-string a note onto its neighbour, KEEPING ITS PITCH — the most
+     * consistent cross-product expectation there is (Guitar Pro,
+     * MuseScore and Soundslice all do it; TuxGuitar keeps the fret
+     * instead). The new fret is the old sounding pitch minus the target
+     * string's open pitch (`pitch.js`, ported from the player's own
+     * `tuning[s-1] + f`).
+     *
+     * Refuses — no mutation — when the target string doesn't exist, is
+     * already occupied at that tick, the track has no usable tuning
+     * (percussion), or the fret would land outside 0..24.
+     *
+     * @param {Object} pos - {measure, tick, string}
+     * @param {number} direction - +1 (toward string 5) or -1
+     * @returns {boolean}
+     */
+    moveNoteToString(pos, direction, trackId = this.trackId) {
+        if (direction !== 1 && direction !== -1) return false;
+        const { event, note } = this._findNote(pos, trackId);
+        if (!note) return false;
+        const target = pos.string + direction;
+        const count = this.stringCount(trackId);
+        if (!(target >= 1) || (count && target > count)) return false;
+        if (event.notes.some(n => n.s === target)) return false;
+        const track = this.getTrack(trackId);
+        const pitch = notePitch(track, note);
+        if (pitch == null) return false;
+        const fret = fretForPitch(track, target, pitch);
+        if (fret == null || fret < 0 || fret > 24) return false;
+        return this._mutate('Move note to string', () => {
+            const found = this._findNote(pos, trackId);
+            const moved = clone(found.note);
+            moved.s = target;
+            moved.f = fret;
+            found.event.notes = found.event.notes.filter(n => n !== found.note);
+            found.event.notes.push(moved);
+            found.event.notes.sort((a, b) => a.s - b.s);
             return true;
         });
     }
@@ -578,6 +937,267 @@ export class EditingFacade {
             }
             this._invalidateTiming();
             return true;
+        });
+    }
+
+    /**
+     * Delete written measure `measureNum` — the exact inverse of
+     * `insertMeasure`, and the same all-tracks edit for the same reason:
+     * written measures are shared score structure, so removing one from a
+     * single track would desync an ensemble document.
+     *
+     * Everything anchored to a written measure moves with it:
+     * - `notation`: the measure is dropped on every track, later ones -1
+     * - `reading_list`: ranges shrink; a range that WAS only this measure
+     *   is dropped (it would otherwise name a measure that isn't there)
+     * - `time_signature_changes`: a change at `measureNum` survives at
+     *   `measureNum` (it governs what is now that measure) UNLESS the
+     *   next measure had its own change, which takes the slot instead —
+     *   either way every surviving measure keeps the signature it had
+     * - `annotations`: text placed in the measure goes with it
+     *
+     * Refuses when the number is out of range or it is the last measure
+     * the document has (a document with no measures has nowhere to put a
+     * cursor). One undo step.
+     *
+     * @returns {boolean} false when nothing was deleted
+     */
+    deleteMeasure(measureNum) {
+        if (!(measureNum >= 1)) return false;
+        const max = Math.max(1, maxMeasureIn(this.otf.notation || {}));
+        if (measureNum > max || max <= 1) return false;
+        return this._mutate('Delete measure', () => {
+            for (const [trackId, notation] of Object.entries(this.otf.notation || {})) {
+                this.otf.notation[trackId] = notation.filter(m => m.measure !== measureNum);
+                for (const m of this.otf.notation[trackId]) {
+                    if (m.measure > measureNum) m.measure--;
+                }
+            }
+            if (this.otf.reading_list?.length) {
+                const kept = [];
+                for (const r of this.otf.reading_list) {
+                    if (r.from_measure === measureNum && r.to_measure === measureNum) continue;
+                    if (r.from_measure > measureNum) r.from_measure--;
+                    if (r.to_measure >= measureNum) r.to_measure--;
+                    kept.push(r);
+                }
+                if (kept.length) this.otf.reading_list = kept;
+                else delete this.otf.reading_list;
+            }
+            const tsc = this.otf.metadata?.time_signature_changes;
+            if (Array.isArray(tsc)) {
+                const successorHasOwn = tsc.some(c => c.measure === measureNum + 1);
+                const kept = [];
+                for (const c of tsc) {
+                    if (c.measure === measureNum && successorHasOwn) continue;
+                    if (c.measure > measureNum) c.measure--;
+                    kept.push(c);
+                }
+                this.otf.metadata.time_signature_changes = kept;
+            }
+            if (Array.isArray(this.otf.annotations)) {
+                const kept = [];
+                for (const a of this.otf.annotations) {
+                    if (a.measure === measureNum) continue;
+                    if (a.measure > measureNum) a.measure--;
+                    kept.push(a);
+                }
+                if (kept.length) this.otf.annotations = kept;
+                else delete this.otf.annotations;
+            }
+            this._invalidateTiming();
+            return true;
+        });
+    }
+
+    /**
+     * Ripple the tail of a measure (TablEdit's Alt+Insert / Alt+Delete):
+     * every note at or after `tick` in that measure, on that track, moves
+     * by `ticks` (positive = later). "I left out a note" is the most
+     * common correction in transcription, and `dd` only ever left a hole.
+     *
+     * Refuses — no mutation at all — when a note would leave the measure
+     * (this never ties across a barline; the note count is preserved) or
+     * would land on a tick that is already occupied by a note staying put.
+     *
+     * @returns {boolean} false when refused, or nothing was there to move
+     */
+    shiftRight(measureNum, tick, ticks, { trackId = this.trackId } = {}) {
+        if (!Number.isFinite(ticks) || ticks === 0) return false;
+        const measure = this.getMeasure(measureNum, trackId);
+        if (!measure) return false;
+        const cap = this.ticksFor(measureNum);
+        const moving = measure.events.filter(e => e.tick >= tick);
+        if (moving.length === 0) return false;
+        const staying = measure.events.filter(e => e.tick < tick);
+        const stayingTicks = new Set(staying.map(e => e.tick));
+        for (const event of moving) {
+            const next = event.tick + ticks;
+            if (next < 0 || next >= cap) return false;
+            if (stayingTicks.has(next)) return false;
+        }
+        return this._mutate(ticks > 0 ? 'Shift right' : 'Shift left', () => {
+            const m = this.getMeasure(measureNum, trackId);
+            for (const event of m.events) {
+                if (event.tick >= tick) event.tick += ticks;
+            }
+            m.events.sort((a, b) => a.tick - b.tick);
+            return true;
+        });
+    }
+
+    /** shiftRight with the sign flipped. @see shiftRight */
+    shiftLeft(measureNum, tick, ticks, options = {}) {
+        return this.shiftRight(measureNum, tick, -Math.abs(ticks), options);
+    }
+
+    /**
+     * Copy measure N−1's notes into measure N — the bluegrass backup and
+     * vamp accelerator ("this bar again"). The measure is created when it
+     * doesn't exist yet, so it also appends at the end of the tune.
+     *
+     * Refuses when N−1 doesn't exist, when N already has notes (this
+     * never overwrites music), or when the source measure is longer than
+     * the destination (a 4/4 bar does not fit in a 2/4 one).
+     *
+     * @returns {boolean}
+     */
+    repeatMeasure(measureNum, { trackId = this.trackId } = {}) {
+        if (!(measureNum >= 2)) return false;
+        const source = this.getMeasure(measureNum - 1, trackId);
+        if (!source) return false;
+        const existing = this.getMeasure(measureNum, trackId);
+        if (existing && existing.events.some(e => e.notes.length > 0)) return false;
+        const events = source.events.filter(e => e.notes.length > 0);
+        if (events.length === 0) return false;
+        const cap = this.ticksFor(measureNum);
+        if (events.some(e => e.tick >= cap)) return false;
+        return this._mutate('Repeat measure', () => {
+            const target = this.getOrCreateMeasure(measureNum, trackId);
+            target.events = clone(events);
+            target.events.sort((a, b) => a.tick - b.tick);
+            return true;
+        });
+    }
+
+    // ------------------------------------------------------------------
+    // Automatic duration (TablEdit's "no explicit current duration")
+    //
+    // THE COLUMN RULE: a note's `dur` is the gap to the next onset on ANY
+    // string of the same track, within the same measure, and to the
+    // measure end when there is none. Not the same-string gap TablEdit's
+    // manual describes — that would make every 5th-string note of a
+    // Scruggs roll a dotted quarter, and what TablEdit users actually
+    // WRITE (95,702 notes across every 5-string banjo track in
+    // docs/data/tabs/) is eighths 63.6%, dotted quarters 0.1%. Rolls are
+    // eighths, so the column rule is the TablEdit-faithful one.
+    //
+    // Measure-bounded on purpose: auto never ties across a barline, so
+    // the last note of a measure fills to the barline. OTF has no rests,
+    // which makes trailing silence the one thing auto cannot express —
+    // the escape hatch is setting that note's duration explicitly, which
+    // pins it.
+    //
+    // PINNING IS SESSION STATE, NEVER FORMAT. The document has no
+    // "manual duration" flag and must not grow one, so the caller (the
+    // editor state) keeps two Sets of `durationKey` strings and hands
+    // them in: `pins` (durations the user set by hand — auto never
+    // touches these) and `autoEntered` (notes typed under auto this
+    // session — auto touches ONLY these). A reopened document therefore
+    // starts with both empty, i.e. fully pinned: you didn't type those
+    // notes, so nothing re-times them behind your back. `fixDurations`
+    // is the deliberate one-shot that ignores both.
+    // ------------------------------------------------------------------
+
+    /**
+     * What the column rule says a note at `pos` should sound for — the
+     * prediction the status bar and the ghost note show before you type.
+     * @param {Object} pos - {measure, tick}
+     * @returns {number} ticks (the rest of the measure when nothing follows)
+     */
+    autoDurationAt({ measure, tick }, trackId = this.trackId) {
+        const cap = this.ticksFor(measure);
+        const m = this.getMeasure(measure, trackId);
+        let next = cap;
+        for (const event of m?.events || []) {
+            if (event.tick > tick && event.notes.length > 0 && event.tick < next) {
+                next = event.tick;
+            }
+        }
+        return Math.max(0, next - tick);
+    }
+
+    /**
+     * Re-time a measure's notes by the column rule.
+     * @param {number} measureNum
+     * @param {string} trackId
+     * @param {Object} opts
+     * @param {Set<string>} [opts.pins] - keys auto must not touch
+     * @param {Set<string>} [opts.only] - when given, the ONLY keys auto may touch
+     * @param {{startAbs: number, endAbs: number}} [opts.absRange] - limit to
+     *   notes whose onset falls in this half-open range
+     * @returns {boolean} whether anything changed
+     */
+    _recomputeAuto(measureNum, trackId, { pins = null, only = null, absRange = null } = {}) {
+        const measure = this.getMeasure(measureNum, trackId);
+        if (!measure) return false;
+        const cap = this.ticksFor(measureNum);
+        const base = this.toAbs(measureNum, 0);
+        const sounding = measure.events
+            .filter(e => e.notes.length > 0)
+            .sort((a, b) => a.tick - b.tick);
+        let changed = false;
+        for (let i = 0; i < sounding.length; i++) {
+            const event = sounding[i];
+            const dur = (sounding[i + 1]?.tick ?? cap) - event.tick;
+            if (dur <= 0) continue;
+            if (absRange) {
+                const abs = base + event.tick;
+                if (abs < absRange.startAbs || abs >= absRange.endAbs) continue;
+            }
+            for (const note of event.notes) {
+                // A tie continuation's length belongs to the note it
+                // continues, not to this column — leave it alone.
+                if (note.tie === true) continue;
+                const key = durationKey(measureNum, event.tick, note.s);
+                if (pins && pins.has(key)) continue;
+                if (only && !only.has(key)) continue;
+                if (note.dur === dur) continue;
+                note.dur = dur;
+                changed = true;
+            }
+        }
+        return changed;
+    }
+
+    /**
+     * One-shot "fix durations from spacing" (TablEdit's `J`): re-time by
+     * the column rule, ignoring pins entirely. This is the repair for a
+     * hand-entered tab where someone forgot to change duration — the only
+     * op that re-times notes the user typed by hand, and it only ever
+     * runs because they asked.
+     *
+     * @param {number|{startAbs: number, endAbs: number}} target - a written
+     *   measure, or a tick range (whose measures' rule is still computed
+     *   from the whole measure — the rule is measure-scoped)
+     * @returns {boolean} false when nothing changed
+     */
+    fixDurations(target, { trackId = this.trackId } = {}) {
+        return this._mutate('Fix durations', () => {
+            let changed = false;
+            if (typeof target === 'number') {
+                changed = this._recomputeAuto(target, trackId) || changed;
+                return changed;
+            }
+            const { startAbs, endAbs } = target || {};
+            if (!Number.isFinite(startAbs) || !Number.isFinite(endAbs)) return false;
+            for (const measure of this.getNotation(trackId)) {
+                const base = this.toAbs(measure.measure, 0);
+                if (base >= endAbs || base + this.ticksFor(measure.measure) <= startAbs) continue;
+                changed = this._recomputeAuto(measure.measure, trackId,
+                    { absRange: { startAbs, endAbs } }) || changed;
+            }
+            return changed;
         });
     }
 
@@ -792,17 +1412,30 @@ export class EditingFacade {
      * measures. Notes whose string doesn't exist on the target track are
      * skipped (transpose-on-paste comes later).
      */
-    paste(atAbs, payload = this.clipboard, { trackId = this.trackId } = {}) {
+    paste(atAbs, payload = this.clipboard, { trackId = this.trackId,
+        autoDuration = false, pins = null, autoEntered = null } = {}) {
         if (!payload || !payload.data || payload.data.length === 0) return false;
         const count = this.stringCount(trackId);
         return this._mutate('Paste', () => {
             let pasted = false;
+            const touched = new Set();
             for (const item of payload.data) {
                 const { measure, tick } = this.locate(atAbs + item.relativeTick);
                 for (const note of item.notes) {
                     if (count && note.s > count) continue;
                     this._placeNote(trackId, measure, tick, clone(note));
+                    // A pasted note keeps the rhythm it was copied with:
+                    // it is not "entered under auto", so it is neither
+                    // pinned nor re-timed. Its NEIGHBOURS still adapt.
+                    if (pins) pins.delete(durationKey(measure, tick, note.s));
+                    if (autoEntered) autoEntered.delete(durationKey(measure, tick, note.s));
+                    touched.add(measure);
                     pasted = true;
+                }
+            }
+            if (pasted && autoDuration) {
+                for (const measure of touched) {
+                    this._recomputeAuto(measure, trackId, { pins, only: autoEntered });
                 }
             }
             return pasted;

@@ -104,6 +104,62 @@ and work-view treats it as a hint next to position, never as the answer.
 Neither op touches it. `tablature_parts[].tracks` in the index is a *count*
 of non-percussion tracks, so neither op moves it either.
 
+### Document ops added for TablEdit input parity
+
+Every one goes through `EditingFacade`, so every one is a single undo
+step (the "refuses" column means: returns `false`, document untouched).
+State wrappers in `state.js` take the cursor/selection instead of a
+position. Plan: `docs/plans/tab-editor-input-parity.md` §3, §6.
+
+| facade op | state wrapper | refuses when | undoable |
+|---|---|---|---|
+| `setNoteDuration(pos, dur)` | `setDuration(d)` also re-times the note at the cursor and PINS it | no note there; already that duration | yes |
+| `setRangeDuration(start, end, dur, {strings})` | `applyDurationToSelection(d)` | range holds no notes | yes (one step) |
+| `scaleDuration(pos, factor)` | `scaleDurationAtCursor(f)` | no note; already clamped at 60 / 1920 | yes |
+| `scaleRangeDuration(start, end, factor)` | `scaleSelectionDuration(f)` | nothing in range moves | yes (one step) |
+| `transposeFret(pos, delta)` | `transposeFretAtCursor(d)` | no note; already at 0 or 24 | yes |
+| `moveNoteToString(pos, ±1)` | `moveNoteAcrossStrings(d)` (moves the cursor too) | no such string; slot occupied; fret would leave 0..24; untuned track | yes |
+| `setTie(pos, on)` | `toggleTieAtCursor()` | turning ON with no same-string predecessor; clearing a tie that isn't set | yes |
+| `deleteMeasure(n)` | `deleteMeasureAtCursor()`, `deleteEmptyTrailingMeasure()` | n out of range; it's the last measure; (wrapper) the tail has notes on ANY track | yes |
+| `shiftRight(m, tick, ticks)` / `shiftLeft` | `shiftRightAtCursor()` / `shiftLeftAtCursor()` | a note would cross the barline or land on an occupied slot; nothing at/after the tick | yes |
+| `repeatMeasure(n)` | `repeatPreviousMeasure()` | n < 2; n−1 missing or empty; n already has notes; source longer than destination | yes |
+| `addMeasures` (existing) | `ensureMeasure(n)` — walk past the end to append | measure n already exists | yes |
+| `fixDurations(n \| {startAbs,endAbs})` | `fixDurationsAtCursor()` / `fixDurationsInSelection()` | nothing changes | yes (one step) |
+| `insertNote({autoDuration, pins, autoEntered})`, and the same option on `deleteNote` / `deleteTick` / `paste` | automatic via `state.isAutoDuration` | — | yes (note + neighbours in ONE step) |
+
+**Automatic duration** (`state.currentDuration === null`) is TablEdit's
+"no explicit current duration". A note's `dur` is the gap to the next
+onset on ANY string of the same track within the same measure, else to
+the measure end — the *column* rule, not the same-string rule TablEdit's
+manual describes, because same-string would make every 5th-string note of
+a roll a dotted quarter and the corpus says TablEdit users write rolls as
+eighths (95,702 banjo notes: eighths 63.6%, dotted quarters 0.1%).
+
+- **Never recompute from the keyboard layer.** The facade does it inside
+  the same `_mutate`, so one `u` takes back the note *and* the neighbour's
+  new stem.
+- **Pinning is session state, never format.** `state.pinnedDurations`
+  (hand-set durations auto must not touch) and `state.autoEnteredDurations`
+  (notes typed under auto this session — the only ones auto may touch)
+  hold `durationKey(measure, tick, string)` strings and are handed to the
+  facade per call. A reopened document has neither, so it is fully pinned:
+  you didn't type those notes. `fixDurations` is the one-shot that ignores
+  both, on request.
+- Anything that needs a NUMBER must call `state.effectiveDuration()`, not
+  `state.currentDuration` — under auto the latter is `null`.
+- Measure-bounded: auto never ties across a barline, so the last note
+  fills to the barline. OTF has no rests, so trailing silence needs an
+  explicit duration (which pins the note).
+
+Entry-state flags the keyboard layer reads: `state.autoAdvance`
+(`toggleAutoAdvance()`, emits `autoAdvanceChange`), `state.lastTech`
+(TablEdit's F3 — `repeatLastAction()` re-applies it, and `'~'` there
+means tie).
+
+`pitch.js` is the pure string+fret↔MIDI module the re-string op needs; it
+is a port of `tab-player.js`'s two lines, not an import of it (the facade
+stays UI-free), and it returns `null` where the player guesses.
+
 ## Architecture
 
 Wraps existing `TabRenderer` with editing capabilities:
@@ -139,6 +195,7 @@ docs/js/otf-editor/
 ├── toolbar.js         # Track / duration / grid / articulation / text / edit buttons
 ├── popover.js         # NoteEntryPopover + AnnotationPopover + TrackNamePopover
 ├── context-menu.js    # Right-click menu
+├── pitch.js           # Pure string+fret ↔ MIDI (ported from tab-player)
 ├── actions.js         # Document-level helpers (validate, cleanup, download)
 └── recorder.js        # Record/replay of edit events
 ```
