@@ -165,8 +165,11 @@
             <button id="draft-discard">Discard</button>
         </div>
 
+        <!-- data-file-drop: this zone handles its own drops (with its own
+             error copy), so the app-wide drop handler in js/pwa.js stays out
+             of it. -->
         <div id="import-zone" class="import-zone" tabindex="0" role="button"
-             aria-label="Import a TablEdit .tef file">
+             data-file-drop aria-label="Import a TablEdit .tef file">
             <strong>📂 Import a TablEdit tab (.tef)</strong>
             <span class="hint">Drop a <code>.tef</code> file here, or click to choose one —
                 it opens in the editor, ready to review and submit.</span>
@@ -234,6 +237,11 @@
             parseCreateTarget, presetForInstrument, submitNewTab, targetBannerText,
         } from './js/otf-editor/create-tab-entry.js';
         import { parseTef, TefVersionError } from './js/tef-import/index.js';
+        // Drafts (§9.3): the localStorage slot above still drives this page's
+        // Resume banner, but every edit ALSO lands in the IndexedDB bucket, so
+        // it shows up in the app's #drafts list and can be reopened from
+        // there (or from a file the OS handed us) via ?draft=<id>.
+        import { createAutosaver, getDraftStore, isDraftId } from './js/drafts.js';
 
         // Auth is needed for Submit (Phase 2a) — the session IS the
         // attribution. Without this the page could edit but never submit.
@@ -244,6 +252,16 @@
         // Where this tab is headed: an existing work (from a bounty or the
         // add-song picker) or nowhere in particular (a brand-new work).
         let target = parseCreateTarget(window.location.search);
+
+        // ?draft=<id> — reopen a draft from the #drafts list, or the document
+        // a .tef/.otf.json file handler parked for us on its way here.
+        const requestedDraft = new URLSearchParams(window.location.search).get('draft');
+        const draftStore = getDraftStore();
+        const autosave = createAutosaver({
+            store: draftStore,
+            id: isDraftId(requestedDraft) ? requestedDraft : null,
+            meta: { workId: target.workId || null, instrument: target.instrument || null },
+        });
 
         function applyTarget() {
             if (!target?.workId) return;
@@ -304,7 +322,7 @@
                 trackId: otf.tracks[0]?.id,
                 // The host owns the height; the tab scrolls inside the editor
                 fillHeight: true,
-                onChange: (doc) => saveDraft(doc, target),
+                onChange: (doc) => { saveDraft(doc, target); autosave.save(doc); },
             });
         }
 
@@ -420,6 +438,7 @@
                 link.textContent = 'View it';
                 status.append(link);
                 clearDraft();
+                autosave.clear();      // submitted — the draft is done
             } catch (e) {
                 status.textContent = `Failed: ${e.message}`;
             }
@@ -427,6 +446,7 @@
         $('btn-new').addEventListener('click', () => {
             if (!confirm('Discard this tab and start over?')) return;
             clearDraft();
+            autosave.clear();
             editor?.destroy();
             editor = null;
             setEditingLayout(false);
@@ -437,8 +457,22 @@
             $('import-error').classList.add('hidden');
         });
 
+        // An explicit ?draft=<id> wins over the banner: the user (or the OS
+        // file handler) named a document, so open it straight into the editor
+        // instead of asking about some other one.
+        if (isDraftId(requestedDraft)) {
+            draftStore.get(requestedDraft).then((stored) => {
+                if (!stored?.otf?.tracks?.length) return;
+                if (!target.workId && stored.workId) {
+                    target = { ...target, workId: stored.workId };
+                    applyTarget();
+                }
+                openEditor(stored.otf);
+            }).catch(() => {});
+        }
+
         // Draft restore
-        const draft = loadDraft();
+        const draft = isDraftId(requestedDraft) ? null : loadDraft();
         if (draft) {
             $('draft-when').textContent = new Date(draft.savedAt).toLocaleString();
             $('draft-banner').classList.remove('hidden');

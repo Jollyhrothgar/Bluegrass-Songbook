@@ -2429,11 +2429,33 @@ async function enterTabEditMode(otf, part, container) {
         tablaturePlayer.stop();
     }
 
-    const [{ OTFEditor }, { createTabEditSession, resolveEditTrackId }, { submitTab }] = await Promise.all([
+    const [
+        { OTFEditor },
+        { createTabEditSession, resolveEditTrackId },
+        { submitTab },
+        { createAutosaver, getDraftStore },
+    ] = await Promise.all([
         import('./otf-editor/editor.js'),
         import('./otf-editor/work-edit.js'),
         import('./otf-editor/submit-tab.js'),
+        import('./drafts.js'),
     ]);
+
+    // Autosave (§9.3): every edit lands in the IndexedDB drafts bucket on a
+    // ~1s trailing edge, so a reload, a crash or a sign-in round trip does
+    // not cost the session. The draft is cleared when the correction is
+    // submitted or explicitly discarded; ✓ Done keeps it, because Done only
+    // applies the document to THIS page and closing the tab would otherwise
+    // lose it.
+    const autosave = createAutosaver({
+        store: getDraftStore(),
+        meta: {
+            workId: currentWork?.id || null,
+            takeRef: part.src_file || part.file || part.instrument || null,
+            title: currentWork?.title || otf?.metadata?.title || null,
+            instrument: part.instrument || null,
+        },
+    });
 
     // Park the bottom-band controls while editing (they drive dead renderers)
     const editNotice = document.createElement('div');
@@ -2455,13 +2477,19 @@ async function enterTabEditMode(otf, part, container) {
         otf,
         trackId: resolveEditTrackId(otf, part.instrument),
         filename: `${baseName}-edited`,
-        editorFactory: (opts) => new OTFEditor(opts),
+        editorFactory: (opts) => new OTFEditor({
+            ...opts,
+            onChange: (doc) => autosave.save(doc),
+        }),
         onApply: (doc) => {
             doc._partFile = otfCacheKey(part); // keep the view cache keyed to this part
             setLoadedTablature(doc);
         },
-        onExit: () => {
+        onExit: (reason) => {
             activeEditSession = null;
+            // Cancel means "I don't want these edits" — the draft goes too.
+            if (reason === 'cancel') autosave.clear().catch(() => {});
+            else autosave.flush().catch(() => {});
             renderTablaturePart(part, container);
         },
         // Save-back: the same instant pipeline song corrections use — the
@@ -2488,6 +2516,8 @@ async function enterTabEditMode(otf, part, container) {
             // overlay into allSongs so every other surface (search, this
             // work reopened, My Submissions) sees it without a reload.
             await window.refreshPendingSongs?.();
+            // Submitted: the draft has served its purpose.
+            await autosave.clear().catch(() => {});
             return result;
         },
     });

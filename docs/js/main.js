@@ -67,6 +67,10 @@ import {
 } from './corpus.js';
 import { getSongContents } from './song-content.js';
 import { showToast } from './toast.js';
+import { initPWA, canInstall, promptInstall } from './pwa.js';
+import { renderDraftsView } from './drafts-view.js';
+import { openNewTabRoute } from './new-tab-route.js';
+import { getDraftStore, migrateLegacyDraft } from './drafts.js';
 import {
     configureReviewQueue, showReviewQueue, hideReviewQueue, submitReviewRequest,
     showSuppressRequestDialog, showMergeRequestDialog, buildMergeRedirectPayload,
@@ -224,6 +228,9 @@ function pushHistoryState(view, data = {}, replace = false) {
         case 'my-submissions':
             hash = '#my-submissions';
             break;
+        case 'drafts':
+            hash = '#drafts';
+            break;
         case 'high-scores':
             hash = '#high-scores';
             break;
@@ -332,6 +339,9 @@ function handleHistoryNavigation(state) {
             break;
         case 'high-scores':
             showView('high-scores');
+            break;
+        case 'drafts':
+            showView('drafts');
             break;
         case 'favorites':
             showView('favorites');
@@ -509,6 +519,14 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderHighScoresView(resultsDiv);
+                break;
+            case 'drafts':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                renderDraftsView(resultsDiv);
                 break;
             case 'song-lists':
                 searchContainer?.classList.add('hidden');
@@ -721,6 +739,25 @@ function handleDeepLink() {
 
     // Use replace=true for deep links to avoid duplicate history entries
     // (the URL is already set from the initial page load)
+
+    // Tab-authoring routes come FIRST: `#work/{slug}/add-tab` and
+    // `#work/{slug}/edit/{take}` would otherwise be read as a part id by the
+    // work branch below and open a part that doesn't exist. new-tab-route.js
+    // owns what these currently do (see §9.1 of the tab-editor plan).
+    if (hash.startsWith('#new-tab')
+        || /^#work\/[^/]+\/(add-tab|edit)(\/|$|\?)/.test(hash)) {
+        trackDeepLink('new-tab', hash);
+        if (openNewTabRoute(hash)) return true;
+    }
+
+    if (hash === '#drafts') {
+        // The PWA's personal bucket. No login and no network: it reads
+        // IndexedDB, which is the point — this is the offline surface.
+        trackDeepLink('drafts', hash);
+        showView('drafts');
+        pushHistoryState('drafts', {}, true);
+        return true;
+    }
 
     if (hash.startsWith('#work/')) {
         // Work view: #work/{id} or #work/{id}/{partId}
@@ -2407,6 +2444,32 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
 // INITIALIZATION
 // ============================================
 
+/**
+ * The persistent ⋯ menu. Re-seeded (not appended to) whenever its contents
+ * change, because setOverflowBase REPLACES the list — "Install app" appears
+ * only once Chromium has offered us a `beforeinstallprompt`, and disappears
+ * again the moment the app is installed.
+ */
+function seedOverflowBase() {
+    setOverflowBase([
+        ...(canInstall() ? [{
+            label: 'Install app',
+            onClick: async () => {
+                await promptInstall();
+                seedOverflowBase();   // the prompt is single-use
+            },
+        }] : []),
+        { label: 'Drafts', onClick: () => { showView('drafts'); pushHistoryState('drafts'); } },
+        { label: 'High Scores', onClick: () => { showView('high-scores'); pushHistoryState('high-scores'); } },
+        { label: 'About', onClick: () => { location.href = 'about.html'; } },
+        { label: 'Dev Blog', onClick: () => { location.href = 'blog.html'; } },
+        { label: 'Standards Board', onClick: () => { location.href = 'bluegrass-standards-board.html'; } },
+        { label: 'Support on Patreon', onClick: () => window.open('https://www.patreon.com/c/bluegrassbook', '_blank', 'noopener') },
+        { label: 'Buy me a coffee', onClick: () => window.open('https://buymeacoffee.com/michaelbeav', '_blank', 'noopener') },
+        { label: 'Send Feedback', onClick: () => openFeedbackModal({ type: 'general-feedback' }) },
+    ]);
+}
+
 function init() {
     // Initialize theme
     initTheme();
@@ -2427,15 +2490,7 @@ function init() {
         // "Report Bugs" sign is gone with the banner hero)
         onReportBug: () => openFeedbackModal({ type: 'bug-report' }),
     });
-    setOverflowBase([
-        { label: 'High Scores', onClick: () => { showView('high-scores'); pushHistoryState('high-scores'); } },
-        { label: 'About', onClick: () => { location.href = 'about.html'; } },
-        { label: 'Dev Blog', onClick: () => { location.href = 'blog.html'; } },
-        { label: 'Standards Board', onClick: () => { location.href = 'bluegrass-standards-board.html'; } },
-        { label: 'Support on Patreon', onClick: () => window.open('https://www.patreon.com/c/bluegrassbook', '_blank', 'noopener') },
-        { label: 'Buy me a coffee', onClick: () => window.open('https://buymeacoffee.com/michaelbeav', '_blank', 'noopener') },
-        { label: 'Send Feedback', onClick: () => openFeedbackModal({ type: 'general-feedback' }) },
-    ]);
+    seedOverflowBase();
     document.getElementById('topbar-brand')?.addEventListener('click', (e) => {
         e.preventDefault();
         setDungeonMode(false);
@@ -2799,6 +2854,16 @@ function init() {
             }
         });
     }
+
+    // PWA: service worker (offline + update nudge), install affordance, and
+    // .tef / .otf.json file opening — both from the OS (installed app) and
+    // from a drag onto the window. All of it no-ops where the APIs are
+    // missing, so it is safe on every browser and in the test runners.
+    initPWA({ onInstallAvailable: () => seedOverflowBase() });
+
+    // The old single-slot localStorage draft becomes draft #1 of the new
+    // IndexedDB bucket. Runs once, never blocks boot, never throws.
+    migrateLegacyDraft({ store: getDraftStore() }).catch(() => {});
 
     // Load the index
     loadIndex();
