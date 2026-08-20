@@ -10826,3 +10826,82 @@ body.has-list-context.has-bottomband .container {
     gap: 0.4rem;
     margin-top: 0.6rem;
 }
+
+/* ============================================
+   THE EDITOR AS A MODE OF THE SONG PAGE (plan §9)
+   The band survives edit mode: its own controls stay where they are, the
+   session's buttons take the ✏️ Edit slot, and anything that cannot mean
+   something mid-edit is dimmed with a reason rather than removed.
+   ============================================ */
+
+/* The session's Submit / Download / Cancel / Done group, inside the band. */
+.tab-edit-bar.is-compact {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.tab-edit-band-actions,
+.tab-edit-actions-slot {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.tab-edit-status {
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+}
+
+/* Off while editing — visibly off, and the title says why. */
+.is-edit-disabled {
+    opacity: 0.45;
+}
+
+.is-edit-disabled button,
+.is-edit-disabled input {
+    cursor: not-allowed;
+}
+
+/* "Submitted — live now, appears in search after the next build." */
+.arr-status {
+    margin-top: var(--space-xs);
+    padding: 0.35rem 0.6rem;
+    border-left: 3px solid var(--accent);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+}
+
+/* A provisional work (#new-tab): the title and artist ARE the header. */
+.song-title-input,
+.song-artist-input {
+    font: inherit;
+    color: inherit;
+    background: var(--bg);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.15rem 0.4rem;
+    max-width: 100%;
+}
+
+.song-title-input {
+    font-size: var(--font-lg);
+    font-weight: 700;
+    width: min(28ch, 100%);
+}
+
+.song-artist-input {
+    font-size: var(--font-sm);
+    width: min(24ch, 100%);
+}
+
+.song-title-input:focus,
+.song-artist-input:focus {
+    border-style: solid;
+    border-color: var(--accent);
+    outline: none;
+}

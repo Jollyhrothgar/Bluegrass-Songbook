@@ -162,3 +162,23 @@ describe('the three-choice panel', () => {
             .toContain('<img src=x onerror=1>');
     });
 });
+
+// The .tef drop target used to live on create.html and nowhere else, so a
+// TablEdit file could only become a tab by leaving the song page first.
+// It is a fourth way to start a take, and it belongs beside the other three.
+describe('importing a TablEdit file as a take', () => {
+    it('offers Import .tef… next to "add mine as another version"', () => {
+        const onImport = vi.fn();
+        const plan = tabEntryPlan(FOGGY, 'banjo');
+        const el = renderExistingTabsPanel(plan, { onAdd: () => {}, onImport });
+        const btn = el.querySelector('.tab-existing-import');
+        expect(btn.textContent).toBe('Import .tef…');
+        btn.click();
+        expect(onImport).toHaveBeenCalledWith(plan);
+    });
+
+    it('says nothing about importing when the caller offers no import path', () => {
+        const el = renderExistingTabsPanel(tabEntryPlan(FOGGY, 'banjo'), { onAdd: () => {} });
+        expect(el.querySelector('.tab-existing-import')).toBe(null);
+    });
+});
