@@ -2954,10 +2954,16 @@ export function startAddTabMode(target = {}) {
     const draft = target.otf ? null : loadDraft();
     const draftFits = draft &&
         (draft.target?.workId || null) === (currentWork.provisional ? null : currentWork.id);
-    const otf = target.otf || (draftFits ? draft.otf : null) || buildNewTab({
-        title: currentWork.title || target.title || 'Untitled',
-        instruments: [presetForInstrument(instrument)],
-    });
+    // Precedence: a document handed in (a .tef import, a reopened bucket
+    // draft) > the localStorage draft for this target > a fresh document.
+    // `target.build` lets the caller shape the fresh one (time signature,
+    // tempo, measures from a #new-tab query) WITHOUT pre-empting the draft
+    // — passing a built `otf` would, and did, skip the resume.
+    const otf = target.otf || (draftFits ? draft.otf : null)
+        || (target.build ? target.build() : buildNewTab({
+            title: currentWork.title || target.title || 'Untitled',
+            instruments: [presetForInstrument(instrument)],
+        }));
 
     const take = makeProvisionalTake(instrument, currentWork.title);
 
@@ -3004,7 +3010,9 @@ export function startAddTabMode(target = {}) {
  */
 export function openNewTabPage(options = {}) {
     const instrument = sanitizeInstrument(options.instrument) || 'banjo';
-    const otf = options.otf || buildNewTab({
+    // Built lazily: startAddTabMode must get a chance to resume the
+    // localStorage draft first (a reload of #new-tab keeps your notes).
+    const build = () => buildNewTab({
         title: options.title || 'Untitled',
         instruments: options.instruments || [presetForInstrument(instrument)],
         timeSignature: options.timeSignature,
@@ -3036,7 +3044,7 @@ export function openNewTabPage(options = {}) {
     pendingInitialRender = true;
     pendingDraft = options.draft || null;
 
-    startAddTabMode({ instrument, title: options.title, otf });
+    startAddTabMode({ instrument, title: options.title, otf: options.otf || null, build });
     return true;
 }
 

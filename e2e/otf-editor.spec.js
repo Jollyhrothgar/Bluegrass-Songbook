@@ -115,8 +115,9 @@ test.describe('grid model (one working increment)', () => {
         await page.keyboard.press('ArrowRight');
         let m = await statusM(page);
         expect(m[2]).toBe('1.2');
-        // finer duration REFINES the grid (s = 1/16)
-        await page.keyboard.press('s');
+        // finer duration REFINES the grid (F8 = 1/16 in the TablEdit preset;
+        // `s` is slide there)
+        await page.keyboard.press('F8');
         await page.keyboard.press('ArrowRight');
         m = await statusM(page);
         expect(m[2]).toBe('1.3'); // 240 + 120
