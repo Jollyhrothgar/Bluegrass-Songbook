@@ -1156,9 +1156,10 @@ export class EditingFacade {
                 if (abs < absRange.startAbs || abs >= absRange.endAbs) continue;
             }
             for (const note of event.notes) {
-                // A tie continuation's length belongs to the note it
-                // continues, not to this column — leave it alone.
-                if (note.tie === true) continue;
+                // A tie continuation is re-timed like any other note: its
+                // `dur` is how long the sustain continues, and the column
+                // rule is the only thing that knows that. (Skipping it left
+                // a halved tied note stuck at 120 after J.)
                 const key = durationKey(measureNum, event.tick, note.s);
                 if (pins && pins.has(key)) continue;
                 if (only && !only.has(key)) continue;

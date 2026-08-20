@@ -264,6 +264,9 @@ export class OTFEditor {
 
         // Create editor structure
         this.editorRoot = document.createElement('div');
+        // Debug/QA handle: lets a browser session reach the live instance
+        // (document, facade, state) without a global. Not an API.
+        this.editorRoot.__otfEditor = this;
         this.editorRoot.className = 'otf-editor';
         this.editorRoot.tabIndex = 0; // Make focusable
 
