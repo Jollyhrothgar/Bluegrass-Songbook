@@ -10,13 +10,15 @@
         // There is no create page any more. A tab is written on the page it
         // will be published on (plan §9.1): `#work/{slug}/add-tab` for a song
         // the songbook has, `#new-tab` for one it doesn't. This file survives
-        // only so links minted before that — bookmarks, the odd blog post —
-        // still land somewhere sensible.
+        // only so links minted before that — bookmarks, the odd blog post,
+        // and the PWA's `create.html?draft=…` draft links — still land
+        // somewhere sensible.
         //
         // Deliberately dependency-free and synchronous: it must not paint,
         // and it must not out-live its own redirect. Nothing is trusted or
         // repaired here; every value is re-parsed and clamped by
-        // `parseTabRoute` on the other side.
+        // `parseTabRoute` (and, for `draft`, by `isDraftId`) on the other
+        // side.
         (function () {
             var params = new URLSearchParams(window.location.search);
             var work = params.get('work') || '';
@@ -25,6 +27,11 @@
                 var value = params.get(key);
                 if (value) carried.set(key, value);
             });
+            // A draft id names a document in this browser's IndexedDB, so it
+            // rides along to whichever route the work id chooses: the draft
+            // is what the editor opens on, not a fresh empty take.
+            var draft = params.get('draft');
+            if (draft && /^[A-Za-z0-9_-]{1,64}$/.test(draft)) carried.set('draft', draft);
             var query = carried.toString();
             var isSlug = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(work);
             var path = isSlug ? '#work/' + work + '/add-tab' : '#new-tab';

@@ -10827,6 +10827,67 @@ body.has-list-context.has-bottomband .container {
     margin-top: 0.6rem;
 }
 
+/* ==========================================================================
+   Drafts (#drafts) and the app-wide file drop — PWA, §9.3
+   ========================================================================== */
+
+.drafts-view {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+}
+
+.drafts-header {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.drafts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.draft-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+.draft-row-main {
+    min-width: 0;
+}
+
+.draft-row-title {
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.draft-row-meta {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.draft-row-actions {
+    display: flex;
+    gap: 0.4rem;
+    flex-shrink: 0;
+}
+
+/* Dragging a .tef / .otf.json anywhere over the app: one calm hint, and no
+   overlay element that could swallow the drop. */
+body.file-dragover {
+    outline: 3px dashed var(--accent);
+    outline-offset: -3px;
+}
+
 /* ============================================
    THE EDITOR AS A MODE OF THE SONG PAGE (plan §9)
    The band survives edit mode: its own controls stay where they are, the

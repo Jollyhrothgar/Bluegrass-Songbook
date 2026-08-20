@@ -8,6 +8,8 @@ Single-page search application for the Bluegrass Songbook. Modularized into ES m
 docs/
 ├── index.html          # Page structure, modals (chrome is built by js/shell.js)
 ├── blog.html           # Dev blog
+├── manifest.webmanifest # PWA manifest (install, shortcuts, .tef/.otf.json file handlers)
+├── sw.js               # Service worker — a shell around js/sw-strategy.js
 ├── js/
 │   ├── main.js         # Entry point, initialization, event wiring, routing
 │   ├── shell.js        # App shell: top band, bottom band, pill primitive
@@ -35,6 +37,10 @@ docs/
 │   ├── collections.js  # Landing page collection definitions
 │   ├── analytics.js    # Behavioral analytics tracking
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
+│   ├── pwa.js          # Service-worker registration, install prompt, .tef/.otf.json file open + drop
+│   ├── sw-strategy.js  # THE caching decisions (imported by ../sw.js and by its tests)
+│   ├── drafts.js       # IndexedDB drafts bucket + debounced editor autosave
+│   ├── drafts-view.js  # `#drafts` list (Open / Delete)
 │   ├── audio-unlock.js # iOS audio: SYNC resume inside the tap + ringer-switch escape (never await before calling it)
 │   ├── supabase-auth.js # Auth, cloud sync, voting
 │   ├── renderers/      # Part renderers
@@ -324,7 +330,8 @@ URL forms:
 - `#list/{listId}/{workId}` — list-context pages keep list URLs
 
 **`create.html` is a redirect shim** (`?work=x&instrument=y` →
-`index.html#work/x/add-tab?instrument=y`; bare → `#new-tab`). Its form,
+`index.html#work/x/add-tab?instrument=y`; bare → `#new-tab`; `?draft=d-1`
+rides along either way). Its form,
 editor mount and `.tef` drop zone are gone; `create-tab.js` survives as the
 "new empty take" producer the song page calls, and the `.tef` import is
 offered wherever a take is started (`pickTefFile` in work-view.js).
@@ -430,6 +437,111 @@ Views are switched through the reactive `currentView` state (`showView(mode)`
 in main.js sets it; a subscriber shows/hides panels and updates the top
 band's nav links). There is no sidebar — top-band nav links cover Search,
 Lists, Add Song, etc., with the rest in the overflow (⋯) menu.
+
+## Offline / PWA
+
+The "standalone app" of §9.3 of `docs/plans/tab-editor-input-parity.md` is
+this site, installed — not a second product. Four pieces:
+`docs/manifest.webmanifest`, `docs/sw.js` (+ `js/sw-strategy.js`),
+`js/drafts.js` (+ `drafts-view.js`) and `js/pwa.js`. `main.js` calls
+`initPWA()` once; every capability probe no-ops where the API is missing, so
+this is inert in jsdom, in Playwright and in browsers without service workers.
+
+### The caching strategy table
+
+`js/sw-strategy.js::routeFor()` is the only place that decides. `sw.js` is a
+mechanical shell around it, which is why the table is unit-tested
+(`__tests__/sw-strategy.test.js`) without a service-worker runtime.
+
+| Request | Strategy | Cache | Why |
+|---|---|---|---|
+| Navigations, same-origin `.html` / `.js` / `.css` (and any other same-origin GET) | **network-first** | `bgb-shell-<ver>` | Nothing here is content-hashed. Network-first means a deploy is live on the next load and a stale module is impossible while online; the cache is the plane-mode fallback only. |
+| `docs/data/*.jsonl`, `docs/data/*.json` | **stale-while-revalidate** | `bgb-data-<ver>` | Rebuilt by every deploy (`build.yml` runs `build_works_index.py` then uploads `docs/`), and big. Paint instantly, refresh behind, fresh next visit. **Never** cached as immutable. |
+| `surikov.github.io/*` (WebAudioFont player + soundfonts), `cdn.jsdelivr.net/**/bravura/**` | **cache-first** | `bgb-vendor-<ver>` | Immutable third-party assets. Opaque responses are cached deliberately — we only replay them. |
+| `*.supabase.co`, any non-GET, other third parties (analytics, the abcjs / supabase-js CDN bundles), non-http schemes | **bypass** | — | Not ours. No `respondWith`, so the request is untouched. |
+
+A navigation that misses the cache offline falls back to `./index.html` —
+every route is a hash route, so the shell can serve any of them.
+
+### How a deploy invalidates the caches
+
+It doesn't have to, and that is the point. Network-first re-fetches app code
+on the next load, and stale-while-revalidate refreshes corpus data one visit
+behind — so shipping new JS, CSS or a rebuilt `index.jsonl` needs **no cache
+bump at all**.
+
+**Bump `CACHE_VERSION` in `js/sw-strategy.js` when the STRATEGY changes** —
+a route moves between rows of the table above, a cache splits, the stored
+shape changes. Every cache name is stamped with it, and `activate` deletes
+every `bgb-`-prefixed cache that isn't the current generation (`staleCaches()`).
+The new worker calls `skipWaiting()` + `clients.claim()` and posts
+`{type: 'sw-activated'}` to open pages; `pwa.js` turns that into a one-line
+"Updated — reload for the new version." toast, but only for a tab that
+already had a controller when it loaded (a first install has nothing to
+announce).
+
+`PRECACHE_URLS` is deliberately five entries: the app is dozens of unhashed
+ES modules and a hand-maintained precache list would rot. Everything else
+enters the shell cache the first time it is fetched online.
+
+### Drafts (`#drafts`)
+
+`js/drafts.js` is an IndexedDB bucket (`bgb-drafts` / `drafts`, key = draft
+id) of `{ id, title, instrument, workId?, takeRef?, otf, updatedAt }`. The
+editor autosaves into it on every facade `change`, debounced ~1s
+(`createAutosaver`), wired where the session is created — `work-view.js`
+`mountTabEditor` passes the session's `onChange` — and never inside the
+editor. All three modes autosave; the record's `workId` / `takeRef` are what
+make it reopenable (see `draftOpenHash` below), so a new take files under
+`workId` with no `takeRef` and a correction files under both. Submitting
+clears the draft; Cancel clears it; ✓ Done flushes and keeps it (Done only
+applies the document to the open page).
+
+Storage is INJECTED (`memoryBackend()` / `idbBackend()`), so all of the
+logic is tested without `fake-indexeddb`, which this repo does not carry.
+Without IndexedDB the store degrades to memory for the session rather than
+throwing.
+
+`migrateLegacyDraft()` imports the old single-slot localStorage draft
+(`otf-editor-draft`) once, under a fixed id, and leaves the localStorage copy
+in place: it is still what `startAddTabMode` resumes a half-written NEW take
+from ("Picked up where you left off"), which happens inside a render and so
+cannot wait on IndexedDB.
+
+`draftOpenHash()` builds the reopen route: `#new-tab?draft=`,
+`#work/{slug}/add-tab?draft=`, `#work/{slug}/edit/{take}?draft=`.
+
+### Reopening a draft
+
+Those routes, the manifest's `file_handlers` action and the "New tab"
+shortcut all point at the §9.2 in-page surface — the real hash routes, on
+the song page. `main.js::openTabRoute` is the one place that reads
+`?draft={id}` back out of the bucket (async, so `handleDeepLink` answers
+"mine" first and the page opens a tick later) and hands the document to the
+route: `openNewTabPage({otf})`, `openWork(id, {addTab: {otf}})`, or
+`openWork(id, {editRef, draft})`. In `work-view.js` a `draft` option parks
+in `pendingDraft`, which `mountTabEditor` consumes — the draft's document
+wins over the take's, which for an edit is exactly the point (your
+unsubmitted correction, not the published tab).
+
+`create.html` forwards `?draft=` through with the rest of its query string,
+so pre-PWA draft links still land in the right mode.
+
+### File handling
+
+`.tef` and `.otf.json` open the same way whether the OS handed them over
+(`launchQueue`, installed app, Chromium) or they were dropped anywhere on the
+window (`enableFileDrop`): parse (`js/tef-import` for `.tef`), park the
+document as a draft, then route to `#new-tab?draft=…&file=1`. The draft IS
+the handoff — a hash route can't carry a document. Elements with their own
+drop zone opt out with `data-file-drop`.
+
+### Icons
+
+`scripts/lib/make_pwa_icons.py` (Pillow, `uv run python …`) flattens
+`images/banjo.png` onto the light `--bg` and writes `icon-192.png`,
+`icon-512.png` and `icon-maskable-512.png` (art inset to the 80% safe zone).
+Re-run it when the logo changes; nothing in the build calls it.
 
 ## Testing
 

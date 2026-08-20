@@ -49,7 +49,7 @@ import {
     openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar,
     handleEditAction, openNewTabPage,
 } from './work-view.js';
-import { parseTabRoute } from './otf-editor/create-tab-entry.js';
+import { parseTabRoute, partInstrumentFor } from './otf-editor/create-tab-entry.js';
 import { renderBountyView } from './bounty-view.js';
 import { renderMySubmissionsView } from './my-submissions.js';
 import { renderHighScoresView } from './high-scores.js';
@@ -71,6 +71,9 @@ import {
 } from './corpus.js';
 import { getSongContents } from './song-content.js';
 import { showToast } from './toast.js';
+import { initPWA, canInstall, promptInstall } from './pwa.js';
+import { renderDraftsView } from './drafts-view.js';
+import { getDraftStore, migrateLegacyDraft, parseHashParams } from './drafts.js';
 import {
     configureReviewQueue, showReviewQueue, hideReviewQueue, submitReviewRequest,
     showSuppressRequestDialog, showMergeRequestDialog, buildMergeRedirectPayload,
@@ -228,6 +231,9 @@ function pushHistoryState(view, data = {}, replace = false) {
         case 'my-submissions':
             hash = '#my-submissions';
             break;
+        case 'drafts':
+            hash = '#drafts';
+            break;
         case 'high-scores':
             hash = '#high-scores';
             break;
@@ -336,6 +342,9 @@ function handleHistoryNavigation(state) {
             break;
         case 'high-scores':
             showView('high-scores');
+            break;
+        case 'drafts':
+            showView('drafts');
             break;
         case 'favorites':
             showView('favorites');
@@ -513,6 +522,14 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderHighScoresView(resultsDiv);
+                break;
+            case 'drafts':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                renderDraftsView(resultsDiv);
                 break;
             case 'song-lists':
                 searchContainer?.classList.add('hidden');
@@ -713,6 +730,56 @@ function showLandingPage() {
     pushHistoryState('home');
 }
 
+/**
+ * Open one of the three tab-authoring routes (plan §9.2), resolving a
+ * `?draft={id}` first.
+ *
+ * A hash cannot carry a document, so every "reopen this work in progress"
+ * path — the Drafts list, the OS file handler, a `.tef` dragged onto the
+ * window — parks the OTF in IndexedDB and puts its id in the URL. This is
+ * the one place that reads it back: the route then opens on the DRAFT's
+ * document instead of a fresh empty take (or, for an edit, instead of the
+ * published take it corrects).
+ *
+ * A draft id that no longer resolves is not an error — the route simply
+ * opens the way it would have without it.
+ */
+async function openTabRoute(route, hash) {
+    const { draft: draftId } = parseHashParams(hash);
+    let draft = null;
+    if (draftId) {
+        try {
+            const record = await getDraftStore().get(draftId);
+            if (record?.otf?.tracks?.length) draft = record;
+        } catch (err) {
+            console.warn('Could not read that draft', err);
+        }
+    }
+
+    if (route.kind === 'new-tab') {
+        const options = { ...route.options };
+        if (draft) {
+            options.otf = draft.otf;
+            options.title = options.title || draft.title || '';
+            options.instrument = options.instrument
+                || partInstrumentFor(draft.otf, draft.instrument);
+        }
+        openNewTabPage({ ...options, draft });
+        return;
+    }
+
+    const workId = resolveWorkId(route.workId);
+    if (route.kind === 'add-tab') {
+        openWork(workId, {
+            fromDeepLink: true,
+            addTab: { ...route.target, ...(draft ? { otf: draft.otf } : {}) },
+            draft,
+        });
+        return;
+    }
+    openWork(workId, { fromDeepLink: true, editRef: route.partRef, draft });
+}
+
 function handleDeepLink() {
     const hash = window.location.hash;
     if (!hash) return false;
@@ -733,17 +800,20 @@ function handleDeepLink() {
     const tabRoute = parseTabRoute(hash);
     if (tabRoute) {
         trackDeepLink(`tab-${tabRoute.kind}`, hash);
-        if (tabRoute.kind === 'new-tab') {
-            openNewTabPage(tabRoute.options);
-        } else if (tabRoute.kind === 'add-tab') {
-            openWork(resolveWorkId(tabRoute.workId), {
-                fromDeepLink: true, addTab: tabRoute.target,
-            });
-        } else {
-            openWork(resolveWorkId(tabRoute.workId), {
-                fromDeepLink: true, editRef: tabRoute.partRef,
-            });
-        }
+        // `?draft={id}` (Drafts list, file handler, drag-and-drop) has to be
+        // read out of IndexedDB, which is async — openTabRoute does that and
+        // then opens the page, while this stays synchronous about the one
+        // thing its caller needs to know: the hash was ours.
+        openTabRoute(tabRoute, hash);
+        return true;
+    }
+
+    if (hash === '#drafts') {
+        // The PWA's personal bucket. No login and no network: it reads
+        // IndexedDB, which is the point — this is the offline surface.
+        trackDeepLink('drafts', hash);
+        showView('drafts');
+        pushHistoryState('drafts', {}, true);
         return true;
     }
 
@@ -2432,6 +2502,32 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
 // INITIALIZATION
 // ============================================
 
+/**
+ * The persistent ⋯ menu. Re-seeded (not appended to) whenever its contents
+ * change, because setOverflowBase REPLACES the list — "Install app" appears
+ * only once Chromium has offered us a `beforeinstallprompt`, and disappears
+ * again the moment the app is installed.
+ */
+function seedOverflowBase() {
+    setOverflowBase([
+        ...(canInstall() ? [{
+            label: 'Install app',
+            onClick: async () => {
+                await promptInstall();
+                seedOverflowBase();   // the prompt is single-use
+            },
+        }] : []),
+        { label: 'Drafts', onClick: () => { showView('drafts'); pushHistoryState('drafts'); } },
+        { label: 'High Scores', onClick: () => { showView('high-scores'); pushHistoryState('high-scores'); } },
+        { label: 'About', onClick: () => { location.href = 'about.html'; } },
+        { label: 'Dev Blog', onClick: () => { location.href = 'blog.html'; } },
+        { label: 'Standards Board', onClick: () => { location.href = 'bluegrass-standards-board.html'; } },
+        { label: 'Support on Patreon', onClick: () => window.open('https://www.patreon.com/c/bluegrassbook', '_blank', 'noopener') },
+        { label: 'Buy me a coffee', onClick: () => window.open('https://buymeacoffee.com/michaelbeav', '_blank', 'noopener') },
+        { label: 'Send Feedback', onClick: () => openFeedbackModal({ type: 'general-feedback' }) },
+    ]);
+}
+
 function init() {
     // Initialize theme
     initTheme();
@@ -2452,15 +2548,7 @@ function init() {
         // "Report Bugs" sign is gone with the banner hero)
         onReportBug: () => openFeedbackModal({ type: 'bug-report' }),
     });
-    setOverflowBase([
-        { label: 'High Scores', onClick: () => { showView('high-scores'); pushHistoryState('high-scores'); } },
-        { label: 'About', onClick: () => { location.href = 'about.html'; } },
-        { label: 'Dev Blog', onClick: () => { location.href = 'blog.html'; } },
-        { label: 'Standards Board', onClick: () => { location.href = 'bluegrass-standards-board.html'; } },
-        { label: 'Support on Patreon', onClick: () => window.open('https://www.patreon.com/c/bluegrassbook', '_blank', 'noopener') },
-        { label: 'Buy me a coffee', onClick: () => window.open('https://buymeacoffee.com/michaelbeav', '_blank', 'noopener') },
-        { label: 'Send Feedback', onClick: () => openFeedbackModal({ type: 'general-feedback' }) },
-    ]);
+    seedOverflowBase();
     document.getElementById('topbar-brand')?.addEventListener('click', (e) => {
         e.preventDefault();
         setDungeonMode(false);
@@ -2824,6 +2912,16 @@ function init() {
             }
         });
     }
+
+    // PWA: service worker (offline + update nudge), install affordance, and
+    // .tef / .otf.json file opening — both from the OS (installed app) and
+    // from a drag onto the window. All of it no-ops where the APIs are
+    // missing, so it is safe on every browser and in the test runners.
+    initPWA({ onInstallAvailable: () => seedOverflowBase() });
+
+    // The old single-slot localStorage draft becomes draft #1 of the new
+    // IndexedDB bucket. Runs once, never blocks boot, never throws.
+    migrateLegacyDraft({ store: getDraftStore() }).catch(() => {});
 
     // Load the index
     loadIndex();

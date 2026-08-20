@@ -91,6 +91,7 @@ let activeTrackView = null;      // track id, 'all', or null (= lead track)
 let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
 let activeEditSession = null;    // live tab edit session (torn down on nav)
 let pendingTabEdit = null;       // parked "open this tab in the editor" ask
+let pendingDraft = null;         // {id, otf, …} a `?draft=` route asked for
 let activeEditBand = null;       // bottom band bound to the live editor
 let tabAuthoring = null;         // {kind:'add'|'new', part, take, target, otf}
 let takeStatusLine = null;       // "Submitted — live now…" under the take header
@@ -532,6 +533,8 @@ export async function openWork(workId, options = {}) {
         //   editRef: open THIS take in the editor once it renders
         //   addTab:  {instrument, title, otf} — a new, unsaved take
         editRef = null, addTab = null,
+        //   draft:   {id, otf} read out of the drafts bucket by `?draft=`
+        draft = null,
     } = options;
 
     if (!song) {
@@ -600,6 +603,9 @@ export async function openWork(workId, options = {}) {
     setBottomBand(null);
     tabAuthoring = null;
     takeStatusLine = null;
+    // Every openWork sets this — an unconsumed draft from a route the reader
+    // navigated away from must not leak into the next editor mount.
+    pendingDraft = draft;
 
     currentWork = song;
     currentArrangements = leadSheetArrangements(song);
@@ -2699,15 +2705,28 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
     // Stop playback before handing the document to the editor
     if (tablaturePlayer?.isPlaying) tablaturePlayer.stop();
 
-    const [{ OTFEditor }, { createTabEditSession, resolveEditTrackId }, { submitTab }] =
-        await Promise.all([
-            import('./otf-editor/editor.js'),
-            import('./otf-editor/work-edit.js'),
-            import('./otf-editor/submit-tab.js'),
-        ]);
+    const [
+        { OTFEditor },
+        { createTabEditSession, resolveEditTrackId },
+        { submitTab },
+        { createAutosaver, getDraftStore },
+    ] = await Promise.all([
+        import('./otf-editor/editor.js'),
+        import('./otf-editor/work-edit.js'),
+        import('./otf-editor/submit-tab.js'),
+        import('./drafts.js'),
+    ]);
 
     // The reader navigated while the editor was being fetched
     if (activePart !== part || !document.contains(container)) return;
+
+    // A `?draft=…` route means "my unsubmitted work", so its document wins
+    // over whatever this take holds — for an edit that is the PUBLISHED tab,
+    // which is precisely what the draft is a correction to. Consumed here so
+    // a later mount can never pick a stale one up.
+    const draft = pendingDraft;
+    pendingDraft = null;
+    if (draft?.otf) otf = draft.otf;
 
     // The rendered-view renderers are about to be detached — drop their
     // observers now; renderTablaturePart rebuilds them on exit.
@@ -2719,6 +2738,25 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
     const isNewTake = kind !== 'edit';
     const target = tabAuthoring?.target || {};
     const instrument = sanitizeInstrument(part.instrument || target.instrument) || 'banjo';
+
+    // The drafts bucket (§9.3): IndexedDB, one record per session, written
+    // on a trailing edge by `onChange` below.
+    const autosave = createAutosaver({
+        store: getDraftStore(),
+        id: draft?.id || null,
+        meta: {
+            // What a draft has to remember to be REOPENABLE: which work it
+            // belongs to (none, for a song the songbook doesn't have), which
+            // take it corrects (edit only — a new take has no ref yet), and
+            // what to call it in the list. drafts.js::draftOpenHash turns
+            // exactly these back into `#new-tab?draft=` /
+            // `#work/{slug}/add-tab?draft=` / `#work/{slug}/edit/{ref}?draft=`.
+            workId: currentWork?.provisional ? null : (currentWork?.id || null),
+            takeRef: isNewTake ? null : takeEditRef(part),
+            title: currentWork?.title || otf?.metadata?.title || null,
+            instrument,
+        },
+    });
 
     // THE BAND SURVIVES. Same controls the reader had a second ago, built
     // from the same document, re-bound to the editor by bindBandToEditor.
@@ -2748,16 +2786,24 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         showDone: !isNewTake,
         commentRequired: !isNewTake,
         extraActions,
-        // A new take is the only work that has nowhere else to live yet, so
-        // it keeps the localStorage draft create.html used to own. The
-        // target travels WITH it (see create-tab.js): a sign-in round trip
-        // drops the query string, and the draft is where it survives.
-        onChange: isNewTake
-            ? (doc) => saveDraft(doc, {
-                workId: currentWork?.provisional ? null : (currentWork?.id || null),
-                instrument,
-            })
-            : null,
+        // Every edit, in every mode, lands in the drafts bucket on a ~1s
+        // trailing edge (§9.3) — a reload, a crash or a sign-in round trip
+        // does not cost the session, and `#drafts` can reopen it on the
+        // route it was written on.
+        onChange: (doc) => {
+            autosave.save(doc);
+            // A new take ALSO keeps the single localStorage slot create.html
+            // used to own, because that is what startAddTabMode resumes from
+            // synchronously (IndexedDB cannot answer during a render). The
+            // target travels with it: a sign-in round trip drops the query
+            // string, and the draft is where it survives.
+            if (isNewTake) {
+                saveDraft(doc, {
+                    workId: currentWork?.provisional ? null : (currentWork?.id || null),
+                    instrument,
+                });
+            }
+        },
         onApply: (doc) => {
             doc._partFile = otfCacheKey(part); // keep the view cache keyed to this part
             setLoadedTablature(doc);
@@ -2767,6 +2813,11 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
             activeEditSession = null;
             activeEditBand?.destroy();
             activeEditBand = null;
+            // Cancel means "I don't want these edits" — the draft goes with
+            // them. ✓ Done keeps it: Done only applies the document to THIS
+            // page, and closing the tab afterwards would otherwise lose it.
+            if (reason === 'cancel') autosave.clear().catch(() => {});
+            else autosave.flush().catch(() => {});
             if (isNewTake) {
                 exitAuthoring(reason, part, container);
             } else {
@@ -2782,6 +2833,8 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
             ? (doc) => submitAuthoredTake(doc, part)
             : (doc, comment) => submitTabCorrection(doc, part, comment, submitTab),
         onSubmitted: (result, doc) => {
+            // Submitted: the draft has served its purpose.
+            autosave.clear().catch(() => {});
             if (isNewTake) landSubmittedTake(result, part, container);
             else landSubmittedCorrection(result, doc, part);
         },
@@ -2795,7 +2848,11 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
     // to the same take in the same mode.
     if (kind === 'edit' && currentWork?.id) {
         const ref = takeEditRef(part);
-        const hash = editTabHref(currentWork.id, ref);
+        // A session opened FROM a draft keeps `?draft=` in the URL: reloading
+        // must come back to the correction in progress, not to the published
+        // take it corrects.
+        const suffix = draft?.id ? `?draft=${encodeURIComponent(draft.id)}` : '';
+        const hash = `${editTabHref(currentWork.id, ref)}${suffix}`;
         if (ref && window.location.hash !== hash) {
             history.replaceState({ view: 'song', songId: currentWork.id, edit: ref }, '', hash);
         }
@@ -2977,6 +3034,7 @@ export function openNewTabPage(options = {}) {
     tabAuthoring = null;
     takeStatusLine = null;
     pendingInitialRender = true;
+    pendingDraft = options.draft || null;
 
     startAddTabMode({ instrument, title: options.title, otf });
     return true;

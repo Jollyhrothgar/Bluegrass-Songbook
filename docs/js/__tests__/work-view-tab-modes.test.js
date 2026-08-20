@@ -16,6 +16,9 @@ import {
     takeRefs, takeEditRef, findTakeByRef, getCurrentWork, availableParts,
 } from '../work-view.js';
 import { setAllSongs, setSongGroups } from '../state.js';
+import {
+    createDraftStore, memoryBackend, setDraftStore, draftOpenHash,
+} from '../drafts.js';
 import { initShell } from '../shell.js';
 
 // The real OTFEditor wants a canvas, soundfonts and a layout pass. What
@@ -416,10 +419,90 @@ describe('an unsaved draft', () => {
         expect(localStorage.getItem('otf-editor-draft')).toBeNull();
     });
 
-    it('is never saved while CORRECTING a published take', async () => {
+    it('is never written by a CORRECTION (that slot belongs to new takes)', async () => {
+        // Corrections autosave too — into the drafts bucket, keyed to the
+        // take they correct (see below). What they must not do is overwrite
+        // the single localStorage slot a half-written NEW take lives in.
+        const parked = { savedAt: new Date().toISOString(), otf: structuredClone(OTF) };
+        localStorage.setItem('otf-editor-draft', JSON.stringify(parked));
+
         await openWork('gold-rush', { editRef: 'banjo', fromDeepLink: true });
         await untilEditor();
-        expect(editors[0].options.onChange).toBeUndefined();
+        editors[0].options.onChange({ edited: 'yes' });
+
+        expect(JSON.parse(localStorage.getItem('otf-editor-draft')).otf.metadata.title)
+            .toBe('Gold Rush');
+    });
+});
+
+// ── The drafts bucket (#drafts) ──────────────────────────────────────────
+//
+// Every mode autosaves into IndexedDB, and every draft has to carry enough
+// of its own context to be REOPENED on the route it was written on — that
+// is the whole contract between the editor and the Drafts list.
+describe('the drafts bucket', () => {
+    let store;
+
+    beforeEach(() => {
+        localStorage.removeItem('otf-editor-draft');
+        store = createDraftStore({ backend: memoryBackend() });
+        setDraftStore(store);
+    });
+
+    afterEach(() => {
+        setDraftStore(null);
+    });
+
+    it('files a correction on the take\'s own edit route', async () => {
+        await openWork('gold-rush', { editRef: 'banjo', fromDeepLink: true });
+        await untilEditor();
+
+        editors[0].options.onChange(structuredClone(OTF));
+        // ✓ Done flushes rather than discards: Done applies the document to
+        // this page, it does not submit it — closing the tab afterwards
+        // would otherwise lose the work.
+        band().querySelector('.tab-edit-done').click();
+
+        await vi.waitFor(async () => expect((await store.list())).toHaveLength(1));
+        const [draft] = await store.list();
+        expect(draftOpenHash(draft)).toBe(`#work/gold-rush/edit/banjo?draft=${draft.id}`);
+    });
+
+    it('files a new take on the work it is being added to', async () => {
+        await openWork('gold-rush', { addTab: { instrument: 'banjo' }, fromDeepLink: true });
+        await untilEditor();
+
+        editors[0].options.onChange(structuredClone(OTF));
+        // No ✓ Done on a new take — this one rides the autosave debounce.
+        await vi.waitFor(async () => expect((await store.list())).toHaveLength(1),
+            { timeout: 3000, interval: 50 });
+        const [draft] = await store.list();
+        // add-tab, not edit: there is no published take to correct yet.
+        expect(draft.workId).toBe('gold-rush');
+        expect(draft.takeRef).toBeUndefined();
+        expect(draftOpenHash(draft)).toBe(`#work/gold-rush/add-tab?draft=${draft.id}`);
+    });
+
+    it('opens on the draft\'s document, not the take it corrects', async () => {
+        const mine = structuredClone(OTF);
+        mine.metadata.title = 'My unsubmitted correction';
+        const saved = await store.save({ otf: mine, workId: 'gold-rush', takeRef: 'banjo' });
+
+        await openWork('gold-rush',
+            { editRef: 'banjo', fromDeepLink: true, draft: saved });
+        await untilEditor();
+
+        expect(editors[0].options.otf.metadata.title).toBe('My unsubmitted correction');
+    });
+
+    it('discards the draft when the take is cancelled', async () => {
+        await openWork('gold-rush', { editRef: 'banjo', fromDeepLink: true });
+        await untilEditor();
+        editors[0].options.onChange(structuredClone(OTF));
+        band().querySelector('.tab-edit-cancel').click();
+
+        await settle();
+        expect(await store.list()).toHaveLength(0);
     });
 });
 
