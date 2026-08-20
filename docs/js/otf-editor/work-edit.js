@@ -153,6 +153,26 @@ export function createTabEditSession({
         trackId,
         onSave: (doc) => onApply(doc),
         ...(onChange ? { onChange: (doc) => onChange(doc) } : {}),
+        // In compact mode the bottom band owns playback, so the editor's
+        // status bar drops its own transport (plan §8.3: one transport).
+        hostTransport: compact,
+        // The File menu offers the session's own buttons — the same
+        // handlers, reached from the keyboard-discoverable place. `editor`
+        // and `session` are consts assigned below; every `run` is a
+        // closure invoked long after both exist.
+        fileActions: [
+            ...(onSubmit ? [{
+                label: submitLabel,
+                run: () => bar.querySelector('.tab-edit-submit')?.click(),
+            }] : []),
+            {
+                label: '⬇ Download OTF',
+                action: 'edit.save',
+                run: () => editor.download?.(filename),
+            },
+            { label: 'Cancel', run: () => session.cancel() },
+            ...(showDone ? [{ label: '✓ Done', run: () => session.applyAndExit() }] : []),
+        ],
     });
 
     let closed = false;
