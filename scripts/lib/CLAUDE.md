@@ -430,6 +430,24 @@ in `curation/registry.yaml` at the repo root — not in `works/*/work.yaml`:
 frontend's Arrangement pill reads these). Importers call `is_suppressed()`
 so suppressed works are never re-created from sources.
 
+**Suppression is two questions, not one** (2026-08-19). `is_suppressed()` is
+the MINT guard: exact id *plus* the collision-suffix base, so an importer
+cannot resurrect a suppressed `foo` as `foo-1`. `is_suppressed_exact()` is
+the WRITE guard: exact id only, asked before touching a work that already
+exists (`add_part` / `update_part` / `update_metadata` /
+`fork_to_arrangement`, via `works_writer.Guards.blocked_existing`). The mode
+decides which — `create_work` is the only entry point that can bring a work
+into being.
+
+Why: `works/dark-hollow-1` is a curated golden-standard work with nothing to
+do with the soft-deleted `dark-hollow`, and `-1` is not proof of a collision
+artifact. Asking the mint question about it refused a real user's guitar tab
+— then refused it again every hour, because `process-pending` failed, the row
+stayed uncommitted, and the reconciler re-fired it. The exact-id half is kept
+deliberately for existing works: it is the same question `filter_suppressed()`
+asks, so **if the build still publishes a work you may add to it, and if the
+build drops it you may not.**
+
 - **Tab pins**: which tablature arrangement is the default for a given
   work + instrument (`tab_pins: {work-id: {instrument: source_id}}`)
 

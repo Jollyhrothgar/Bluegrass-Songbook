@@ -58,8 +58,23 @@ def main():
             f'(e.g. {missing[0]})'
         )
 
+    # A work with a second lead sheet also publishes one .pro per ARRANGEMENT,
+    # named `{id}--{slug}`, and those are not row ids -- the row lists them in
+    # `arrangements[]` instead. They are claimed here rather than skipped by
+    # pattern, so a genuinely orphaned `foo--bar.pro` (a renamed or deleted
+    # arrangement the prune missed) is still caught.
+    #
+    # This check predates the first fork actually existing in the corpus, so
+    # it read every arrangement file as an orphan the moment one appeared.
     ids = {str(r['id']) for r in canon + archive}
-    orphans = song_files - ids
+    claimed = set(ids)
+    for row in canon + archive:
+        for arrangement in row.get('arrangements') or []:
+            stem = Path(str(arrangement.get('file') or '')).stem
+            if stem:
+                claimed.add(stem)
+
+    orphans = song_files - claimed
     if orphans:
         errors.append(
             f'{len(orphans)} songs/*.pro files have no index row '

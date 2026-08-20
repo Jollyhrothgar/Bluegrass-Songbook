@@ -516,7 +516,9 @@ describe('rendering holds', () => {
         renderReviewQueue(panel, { requests: [], holds: [hold()], isAdmin: true });
         const section = panel.querySelector('[data-section="holds"]');
         expect(section).not.toBeNull();
-        expect(section.textContent).toContain('Held by dedup backstop');
+        // "Held by CI", not "by the dedup backstop": a hold is also how a
+        // write refused for a suppressed/merged-away target is parked.
+        expect(section.textContent).toContain('Held by CI');
         expect(panel.querySelectorAll('.review-hold-item').length).toBe(1);
         expect([...panel.querySelectorAll('[data-hold-action]')].map(b => b.dataset.holdAction))
             .toEqual(['release', 'reject']);

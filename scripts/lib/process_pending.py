@@ -138,6 +138,23 @@ Trust is deliberately *not* consulted on a redirect. A trusted user's in-place
 edit right is about content they chose to edit; here the machine chose the
 target, so the safe classification is the one that cannot destroy anything.
 
+Refusals that must not be retried
+---------------------------------
+The hourly reconciler re-fires every uncommitted row, which is the right
+answer for a transient failure and the wrong one for a *decision*. Two
+refusals are decisions: the dedup hold above, and a write whose target work
+is suppressed / soft-deleted / merged away (``works_writer.Guards``). Both
+are parked by writing the verdict to ``pending_songs.dedup_hold``, which the
+reconciler skips and the Bluegrass Dungeon renders with *Release hold* /
+*Reject* — see :func:`hold_reason` for why that column and not a new one.
+
+The suppressed case is not hypothetical: a guitar tab for ``dark-hollow-1``
+— a live, curated work — was refused because the *unrelated*, soft-deleted
+``dark-hollow`` matched the mint-time collision-suffix rule, and then refused
+again every hour for as long as it took somebody to read the logs. The rule
+itself is fixed in ``curation.is_suppressed`` / ``is_suppressed_exact``; the
+hold is what keeps the next such refusal from being an hourly one.
+
 Idempotence
 -----------
 A dispatch can arrive twice — the hourly reconciler re-fires any row still
@@ -282,6 +299,15 @@ def patch_pending_row(row_id: str, updates: dict, *, supabase_url: str,
 #: ``WriteResult.skipped_reason`` when the backstop refused a create. The
 #: workflow keys its review-issue step off this exact string.
 DEDUP_HOLD_REASON = 'dedup-duplicate'
+
+#: ``WriteResult.skipped_reason`` values that no retry can turn into a write.
+#: ``works_writer.Guards`` produces both: the target work is suppressed /
+#: soft-deleted, or it was merged away. Neither changes by waiting — only a
+#: human editing ``curation/registry.yaml``, ``deleted_songs`` or the row's
+#: ``replaces_id`` can move them — so a row refused for one of these is
+#: parked (see :func:`hold_reason`) instead of being re-dispatched hourly
+#: until the end of time.
+PERMANENT_SKIP_REASONS = ('suppressed', 'redirected')
 
 
 @dataclass
@@ -1211,6 +1237,52 @@ def _one_line(value) -> str:
     return ' '.join(str(value or '').split())
 
 
+def hold_reason(result: works_writer.WriteResult,
+                backstop: Optional[DedupBackstop] = None) -> Optional[str]:
+    """Why this row must stop being re-dispatched, or None if it may retry.
+
+    The reconciler re-fires every uncommitted row every hour, which is right
+    for a transient failure (a GitHub 502, a push race) and catastrophic for
+    a refusal that is a *decision*: the same refusal, the same red workflow
+    run and the same alert issue, hourly, forever. A refused row therefore
+    gets its verdict written back to ``pending_songs.dedup_hold``, which the
+    reconciler already treats as "held — a human owns this now" and skips.
+
+    Two kinds of refusal qualify, and both are decisions:
+
+    - the **dedup backstop** held a create (its original meaning), and
+    - the write target is **suppressed or redirected**
+      (:data:`PERMANENT_SKIP_REASONS`) — the case that stranded the guitar
+      tab for ``dark-hollow-1``.
+
+    Why ``dedup_hold`` rather than a new column: it is already the flag the
+    reconciler skips on, the RLS policies grant admins over, and the
+    Bluegrass Dungeon renders with *Release hold* / *Reject* — so one
+    migration-free write buys the stop AND the human surface. A second
+    column would need all four of those rebuilt to mean the same thing. The
+    reason string is what the admin reads, so it has to say which kind this
+    is; the column name is a historical accident, and
+    ``commit-song.ts:holdReason`` names the general question on the other
+    side of the dispatch.
+
+    A hold is not a verdict on the submission — it is a stop. Clearing it
+    (un-suppress the work first, or point ``replaces_id`` at a live one) is
+    what re-arms the next reconciler pass.
+    """
+    if result.skipped_reason == DEDUP_HOLD_REASON:
+        return (backstop.decision.reason if backstop and backstop.decision
+                else 'held by the dedup backstop')
+    if result.skipped_reason in PERMANENT_SKIP_REASONS:
+        return (
+            f"target work '{result.work_id}' is {result.skipped_reason} "
+            f"(curation/registry.yaml, docs/data/deleted_songs.json or "
+            f"docs/data/redirects.json), so nothing may be written to it. "
+            f"Retrying cannot change that. Clear this hold only after the "
+            f"work is restored, or retarget the row's replaces_id at a live "
+            f"work.")
+    return None
+
+
 def main() -> int:
     row_id = os.environ.get('PENDING_ROW_ID', '').strip()
     mode = os.environ.get('PENDING_MODE', '').strip()
@@ -1241,19 +1313,19 @@ def main() -> int:
         print(f'Error: {e}', file=sys.stderr)
         return 1
 
-    # A held row must stop being re-dispatched. Without this the hourly
-    # reconciler would re-fire it every hour and the backstop would refuse it
-    # every hour — a review issue that never stops growing and a workflow that
-    # is always red. The flag is set here rather than by the workflow so the
-    # hold is atomic with the decision that made it.
-    if result.skipped_reason == DEDUP_HOLD_REASON:
-        reason = (backstop.decision.reason if backstop.decision
-                  else 'held by the dedup backstop')
+    # A row refused by a DECISION must stop being re-dispatched. Without
+    # this the hourly reconciler re-fires it every hour and it is refused
+    # every hour — a review issue that never stops growing and a workflow
+    # that is always red. The flag is set here rather than by the workflow
+    # so the hold is atomic with the decision that made it.
+    held = hold_reason(result, backstop)
+    if held:
         try:
-            patch_pending_row(row_id, {'dedup_hold': reason[:5000]},
+            patch_pending_row(row_id, {'dedup_hold': held[:5000]},
                               supabase_url=supabase_url,
                               service_key=service_key)
-            print(f"Marked '{row_id}' dedup_hold — the reconciler will skip it.")
+            print(f"Marked '{row_id}' dedup_hold — the reconciler will skip "
+                  f"it: {held}")
         except ProcessPendingError as e:
             # Worth saying loudly, but not worth failing over: the review
             # issue still gets opened and a human still sees the row.

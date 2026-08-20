@@ -20,6 +20,7 @@ import {
   GITHUB_REPO,
   getFileContent,
   type PendingSong,
+  holdReason,
   unretryableReason,
 } from "./commit-song.ts"
 
@@ -215,4 +216,62 @@ Deno.test("unretryableReason: a metadata row must still name its target work", (
     "metadata row names no target work",
   )
   assertEquals(unretryableReason({ ...meta, title: "" }), "missing title")
+})
+
+// ============================================
+// holdReason
+// ============================================
+//
+// The other half of "do not re-dispatch this". `unretryableReason` judges the
+// row's shape, which the edge runtime can see; `holdReason` reports a verdict
+// reached where the repo is (process_pending.py) and handed back through
+// `dedup_hold`. The reconciler must skip both, for the same reason: waiting
+// changes neither.
+
+Deno.test("holdReason: an ordinary row is not held", () => {
+  assertEquals(holdReason(row()), null)
+  assertEquals(holdReason(row({ dedup_hold: null })), null)
+})
+
+Deno.test("holdReason: a blank hold is not a hold", () => {
+  // A held row's reason is what the admin queue renders. An empty box there
+  // is worse than no hold at all, and a whitespace string would make one.
+  assertEquals(holdReason(row({ dedup_hold: "   " })), null)
+})
+
+Deno.test("holdReason: the dedup backstop's hold is reported verbatim", () => {
+  const reason = "looks like how-long-blues (0.94 containment)"
+  assertEquals(holdReason(row({ dedup_hold: reason })), reason)
+})
+
+Deno.test("holdReason: a suppressed write target is held the same way", () => {
+  // The dark-hollow-1 case. process_pending.py refused the write because the
+  // target work is suppressed/merged away, wrote that verdict to dedup_hold,
+  // and the reconciler must now leave the row alone instead of re-firing it
+  // hourly forever. Same column, same skip, different author of the refusal.
+  const held = row({
+    id: "tab:dark-hollow-1:85ltxlug",
+    part_type: "tablature",
+    instrument: "guitar",
+    replaces_id: "dark-hollow-1",
+    dedup_hold:
+      "target work 'dark-hollow-1' is suppressed (curation/registry.yaml, " +
+      "docs/data/deleted_songs.json or docs/data/redirects.json), so nothing " +
+      "may be written to it. Retrying cannot change that.",
+  })
+  const reason = holdReason(held)
+  assertEquals(typeof reason, "string")
+  assertEquals(reason!.includes("dark-hollow-1"), true)
+
+  // And it is held REGARDLESS of shape: the row is otherwise perfectly
+  // committable, so nothing else would have stopped the re-dispatch.
+  assertEquals(unretryableReason(held), null)
+})
+
+Deno.test("holdReason: clearing the hold re-arms the row", () => {
+  // Release-hold in the Bluegrass Dungeon sets dedup_hold to null; the next
+  // reconciler pass must pick the row up again.
+  const held = row({ dedup_hold: "target work 'x' is suppressed" })
+  assertEquals(holdReason(held) !== null, true)
+  assertEquals(holdReason({ ...held, dedup_hold: null }), null)
 })

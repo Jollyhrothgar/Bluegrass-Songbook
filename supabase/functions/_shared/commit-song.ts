@@ -32,7 +32,16 @@ export interface PendingSong {
   tags?: Record<string, unknown>
   created_at?: string
   github_committed?: boolean
-  /** Phase 3b: non-null means the dedup backstop refused to write this row. */
+  /**
+   * Non-null means a write was refused by a DECISION, not by bad luck, and
+   * the row is parked until a human clears it. Written by
+   * `scripts/lib/process_pending.py:hold_reason` for either kind:
+   * the phase-3b dedup backstop (its original meaning), or a target work
+   * that is suppressed / soft-deleted / merged away. The column keeps its
+   * dedup-era name because the reconciler, the RLS policies and the
+   * Bluegrass Dungeon's Release-hold/Reject actions all already key on it;
+   * {@link holdReason} is the general question it now answers.
+   */
   dedup_hold?: string | null
   /**
    * 'lead-sheet' (content is ChordPro), 'tablature' (content is a serialized
@@ -78,6 +87,26 @@ export async function getFileContent(path: string, githubToken: string): Promise
  * missing field, so the reconciler reports them for manual rescue instead of
  * hammering GitHub on every run.
  */
+/**
+ * Why this row is parked awaiting a human, or null if it may be retried.
+ *
+ * The sibling of {@link unretryableReason}, and the reason there are two:
+ * that one judges the row's own SHAPE (a field the row will never grow),
+ * which the edge runtime can see for itself. This one reports a verdict
+ * reached where the repo is — `process_pending.py` refusing to write to a
+ * suppressed or merged-away work, or the dedup backstop holding a create —
+ * and handed back through `dedup_hold`. Neither can be fixed by waiting, so
+ * neither is worth a GitHub call every hour; the difference is only who
+ * worked it out.
+ *
+ * Blank strings count as not-held: a held row's reason is what the admin
+ * queue shows, and an empty box there is worse than no hold at all.
+ */
+export function holdReason(entry: PendingSong): string | null {
+  const held = entry.dedup_hold?.trim()
+  return held ? held : null
+}
+
 export function unretryableReason(entry: PendingSong): string | null {
   if (!entry.id) return 'missing id'
   if (!entry.title) return 'missing title'

@@ -43,12 +43,22 @@ Serverless functions that run on Supabase Edge (Deno runtime).
   return (403 no claim / 404 no such work / 400 no target) — the metadata
   column is the only one with nothing additive to land a stranger's edit in.
 - `commit-song.ts` — the `PendingSong` shape, one Contents-API read used by
-  classification, and `unretryableReason` (which is **part-type aware**: a
+  classification, `holdReason`, and `unretryableReason` (which is **part-type aware**: a
   metadata row carries no content by construction, so demanding one would
   have made every metadata row permanently "unretryable" and opened an alert
   issue about a well-formed row an hour after it was written). Phase 2d deleted the
   document-attachment path (and the write helpers only it used) along with
   the doc-upload feature; nothing in here writes to GitHub any more.
+  `holdReason` is `unretryableReason`'s sibling and the two must not be
+  merged: that one judges the row's own SHAPE (a field it will never grow),
+  which the edge runtime can see for itself; this one reports a verdict
+  reached where the repo is — `process_pending.py:hold_reason` refusing to
+  write to a **suppressed or merged-away** work, or the dedup backstop
+  holding a create — handed back through `dedup_hold`. Neither is fixable by
+  waiting, so the reconciler skips both; only the author of the refusal
+  differs. `dedup_hold` keeps its dedup-era name because the reconciler, the
+  RLS policies and the Dungeon's Release-hold/Reject actions already key on
+  it — a second column would need all four rebuilt to mean the same thing.
 
 `auto-commit-song` (live path) and `reconcile-pending` (hourly retry) both
 import `pending-dispatch.ts`, so a retry classifies exactly the way the
@@ -382,8 +392,9 @@ three destructive asks — `delete`, `suppress`, `merge-redirect`:
 
 The UI is `docs/js/review-queue.js`, rendered into `#review-queue-panel` in
 the Bluegrass Dungeon (the same place Promote lives). Its third section lists
-`pending_songs` rows held by the phase-3b dedup backstop (`dedup_hold` not
-null) with admin *Release hold* / *Reject* actions — which is why
+`pending_songs` rows CI parked (`dedup_hold` not null — the phase-3b dedup
+backstop, or a write whose target work is suppressed / merged away) with
+admin *Release hold* / *Reject* actions — which is why
 `20260815150000_review_requests.sql` also adds `is_admin()` update/delete
 policies on `pending_songs`: the 2b policies grant those to the row's author
 or a trusted user only, so an admin outside `trusted_users` would have been

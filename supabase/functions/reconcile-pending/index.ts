@@ -19,11 +19,18 @@
 // is idempotent on the row's content marker, so a duplicate dispatch is a
 // no-op rather than a second work).
 //
-// Phase 3b: rows the dedup backstop refused (dedup_hold is not null) are
-// counted but never re-dispatched. Without that, a row the backstop holds
+// Phase 3b: HELD rows (dedup_hold is not null — see holdReason) are counted
+// but never re-dispatched. Without that, a row that was refused by a decision
 // would be re-fired every hour and refused every hour — an alert issue that
 // grows a comment an hour and a workflow that is permanently red. Clearing
 // dedup_hold is a reviewer saying "land it anyway"; the next pass picks it up.
+//
+// Two kinds of decision land there, both written by process_pending.py: the
+// dedup backstop holding a create, and a write whose target work is
+// suppressed / soft-deleted / merged away. The second was added after a
+// guitar tab for the live work `dark-hollow-1` was refused (wrongly, then —
+// the rule is fixed in curation.py) and re-dispatched hourly for two days.
+// A refusal the repo already reasoned about does not get re-asked here.
 //
 // Response shape (always HTTP 200 so the caller can read the numbers; the
 // workflow decides what counts as a failure):
@@ -32,7 +39,7 @@
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2"
-import { unretryableReason, type PendingSong } from "../_shared/commit-song.ts"
+import { holdReason, unretryableReason, type PendingSong } from "../_shared/commit-song.ts"
 import { attributionFor } from "../_shared/identity.ts"
 import {
   classifyChange,
@@ -130,12 +137,12 @@ serve(async (req) => {
     // Held rows are drift too -- they are live and not durable -- but they are
     // waiting on a human, not on a retry. Re-dispatching them would just make
     // the backstop refuse them again.
-    const heldRows = pending.filter(r => !!r.dedup_hold)
+    const heldRows = pending.filter(r => holdReason(r) !== null)
     const held = heldRows.length
 
     const cutoff = Date.now() - GRACE_MINUTES * 60 * 1000
     const eligible = pending.filter(r => {
-      if (r.dedup_hold) return false
+      if (holdReason(r) !== null) return false
       const created = r.created_at ? Date.parse(r.created_at) : 0
       return created <= cutoff
     })

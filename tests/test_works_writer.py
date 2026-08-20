@@ -243,6 +243,12 @@ class TestGuards:
                         on_suppressed='raise')
 
     def test_every_mode_honours_the_guard(self, tmp_path):
+        """A work whose OWN id is suppressed is closed to every mode.
+
+        Deliberate, not incidental: the next build drops it from both
+        published indexes, so a part added here would exist nowhere a
+        reader — or its own submitter — could reach it.
+        """
         create_work(tmp_path, 'my-song', 'My Song', lead_sheet())
         write_registry(tmp_path, suppressed={'my-song': {'reason': 'gone'}})
         guards = Guards.load(tmp_path)
@@ -252,6 +258,96 @@ class TestGuards:
         assert not fork_to_arrangement(tmp_path, 'my-song', CHORDPRO,
                                        {'source': 'manual'},
                                        version_label='Mine', guards=guards)
+        assert not update_metadata(tmp_path, 'my-song', updates={'artist': 'X'},
+                                   provenance={'source': 'manual'},
+                                   guards=guards)
+
+    def test_every_mode_honours_a_redirect_on_the_target_itself(self, tmp_path):
+        """Merged away is the same story: the id is a tombstone."""
+        create_work(tmp_path, 'my-song', 'My Song', lead_sheet())
+        write_redirects(tmp_path, {'my-song': 'other-song'})
+        guards = Guards.load(tmp_path)
+        for result in (
+            add_part(tmp_path, 'my-song',
+                     PartSpec(file='banjo.otf.json', type='tablature',
+                              format='otf', instrument='banjo', content='{}',
+                              provenance={'source': 'user-submission'}),
+                     guards=guards),
+            update_metadata(tmp_path, 'my-song', updates={'artist': 'X'},
+                            provenance={'source': 'manual'}, guards=guards),
+        ):
+            assert not result.written
+            assert result.skipped_reason == 'redirected'
+
+
+class TestSuffixedWorkThatAlreadyExists:
+    """The `dark-hollow-1` regression (2026-08-19).
+
+    A guitar tab was submitted for `dark-hollow-1` — a real, published,
+    curated work — and refused, because the UNRELATED `dark-hollow` had been
+    soft-deleted and the mint-time collision-suffix rule read `-1` as an
+    attempt to resurrect it. The row could never succeed, and the hourly
+    reconciler re-dispatched it anyway.
+
+    The rule now splits: minting asks the base, touching does not.
+    """
+
+    def deleted(self, tmp_path, ids):
+        path = tmp_path / 'docs' / 'data' / 'deleted_songs.json'
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({i: {'reason': None} for i in ids}))
+
+    def test_add_part_to_an_existing_suffixed_work_succeeds(self, tmp_path):
+        create_work(tmp_path, 'dark-hollow-1', 'Dark Hollow', lead_sheet())
+        self.deleted(tmp_path, ['dark-hollow'])
+
+        result = add_part(
+            tmp_path, 'dark-hollow-1',
+            PartSpec(file='guitar.otf.json', type='tablature', format='otf',
+                     instrument='guitar', content='{}',
+                     provenance={'source': 'user-submission'}))
+
+        assert result.written
+        assert result.part_file == 'guitar.otf.json'
+        assert [p['type'] for p in load_work(tmp_path, 'dark-hollow-1')['parts']] \
+            == ['lead-sheet', 'tablature']
+
+    def test_the_other_existing_modes_reach_it_too(self, tmp_path):
+        create_work(tmp_path, 'dark-hollow-1', 'Dark Hollow', lead_sheet())
+        self.deleted(tmp_path, ['dark-hollow'])
+
+        assert update_part(tmp_path, 'dark-hollow-1',
+                           match={'type': 'lead-sheet'}, content=CHORDPRO)
+        assert update_metadata(tmp_path, 'dark-hollow-1',
+                               updates={'artist': 'Bill Browning'},
+                               provenance={'source': 'user-submission'})
+        assert fork_to_arrangement(tmp_path, 'dark-hollow-1', CHORDPRO,
+                                   {'source': 'user-submission'},
+                                   version_label='Mine')
+
+    def test_the_importer_path_is_NOT_weakened(self, tmp_path):
+        """Minting a new `foo-1` beside a suppressed `foo` is still refused.
+
+        This is the rule's whole reason to exist; only its scope changed.
+        """
+        self.deleted(tmp_path, ['dark-hollow'])
+        result = create_work(tmp_path, 'dark-hollow-1', 'Dark Hollow',
+                             lead_sheet(), on_collision='fail')
+        assert not result.written
+        assert result.skipped_reason == 'suppressed'
+        assert not (tmp_path / 'works' / 'dark-hollow-1').exists()
+
+    def test_a_suffixed_work_whose_OWN_id_is_deleted_stays_closed(self, tmp_path):
+        create_work(tmp_path, 'dark-hollow-1', 'Dark Hollow', lead_sheet())
+        self.deleted(tmp_path, ['dark-hollow-1'])
+
+        result = add_part(
+            tmp_path, 'dark-hollow-1',
+            PartSpec(file='guitar.otf.json', type='tablature', format='otf',
+                     instrument='guitar', content='{}',
+                     provenance={'source': 'user-submission'}))
+        assert not result.written
+        assert result.skipped_reason == 'suppressed'
 
 
 # ============================================

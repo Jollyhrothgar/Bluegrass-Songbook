@@ -31,11 +31,13 @@ import yaml
 import works_writer
 from process_pending import (
     DEDUP_HOLD_REASON,
+    PERMANENT_SKIP_REASONS,
     DedupBackstop,
     ProcessPendingError,
     already_applied,
     apply_row,
     content_marker,
+    hold_reason,
     otf_document,
     owns_content,
     tab_work_slug,
@@ -1619,3 +1621,101 @@ class TestMetadataTouchesNoPart:
 
         assert parts_snapshot(tmp_path, 'salt-creek') == before
         assert len(read_work(tmp_path, 'salt-creek')['parts']) == 3
+
+
+# ============================================
+# Suppressed targets: the dark-hollow-1 incident
+# ============================================
+
+
+def _deleted_songs(tmp_path, ids):
+    path = tmp_path / 'docs' / 'data' / 'deleted_songs.json'
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({i: {'reason': None} for i in ids}))
+
+
+class TestASuffixedWorkIsNotAResurrection:
+    """The real 2026-08-19 case, end to end through the dispatch.
+
+    A guitar tab was submitted for `dark-hollow-1` — a live, curated,
+    golden-standard work — while the UNRELATED `dark-hollow` sat in
+    `deleted_songs.json`. The mint-time collision-suffix rule read `-1` as an
+    attempt to resurrect the deleted song and refused the write; the row
+    stayed uncommitted and the reconciler re-fired it hourly.
+    """
+
+    def test_a_tab_lands_on_an_existing_suffixed_work(self, tmp_path):
+        seed_work(tmp_path, 'dark-hollow-1', submitted_by=OTHER_USER)
+        _deleted_songs(tmp_path, ['dark-hollow'])
+
+        result = apply_row(
+            tmp_path,
+            tab_row(id='tab:dark-hollow-1:85ltxlug',
+                    replaces_id='dark-hollow-1',
+                    title='Dark Hollow', instrument='guitar'),
+            'add', 'dark-hollow-1', actor='Jane Picker', verbose=False)
+
+        assert result.written
+        assert result.skipped_reason is None
+        work = read_work(tmp_path, 'dark-hollow-1')
+        assert [p['type'] for p in work['parts']] == ['lead-sheet', 'tablature']
+        assert work['parts'][1]['instrument'] == 'guitar'
+
+    def test_a_tab_MINTING_a_new_suffixed_work_is_still_refused(self, tmp_path):
+        """The importer path keeps the base rule: nothing is weakened."""
+        _deleted_songs(tmp_path, ['dark-hollow'])
+
+        result = apply_row(
+            tmp_path,
+            tab_row(id='tab:dark-hollow:zz99', title='Dark Hollow',
+                    instrument='guitar'),
+            'create', 'dark-hollow', verbose=False)
+
+        assert not result.written
+        assert result.skipped_reason == 'suppressed'
+
+
+class TestPermanentRefusalsAreHeld:
+    """A refusal that cannot change by waiting must stop being re-dispatched.
+
+    `hold_reason` is what main() writes to `pending_songs.dedup_hold`, which
+    the reconciler skips (`commit-song.ts:holdReason`) and the Bluegrass
+    Dungeon renders with Release-hold / Reject.
+    """
+
+    def result(self, reason, work_id='dark-hollow-1'):
+        return works_writer.WriteResult(
+            mode='add-part', work_id=work_id, skipped_reason=reason)
+
+    def test_a_suppressed_target_is_held_and_says_why(self):
+        held = hold_reason(self.result('suppressed'))
+        assert held
+        assert 'dark-hollow-1' in held
+        assert 'suppressed' in held
+        # The admin has to know clearing the hold alone will not help.
+        assert 'Retrying cannot change that' in held
+
+    def test_a_redirected_target_is_held_too(self):
+        assert hold_reason(self.result('redirected'))
+
+    def test_both_permanent_reasons_are_the_documented_set(self):
+        assert PERMANENT_SKIP_REASONS == ('suppressed', 'redirected')
+
+    def test_the_dedup_hold_keeps_its_own_wording(self, tmp_path):
+        backstop = DedupBackstop(tmp_path)
+        assert hold_reason(self.result(DEDUP_HOLD_REASON), backstop) == \
+            'held by the dedup backstop'
+
+    def test_a_transient_failure_is_NOT_held(self):
+        """Only decisions are parked; everything else retries next hour."""
+        assert hold_reason(self.result(None)) is None
+        assert hold_reason(self.result('already-applied')) is None
+
+    def test_a_written_row_is_never_held(self, tmp_path):
+        seed_work(tmp_path, 'dark-hollow-1', submitted_by=OTHER_USER)
+        _deleted_songs(tmp_path, ['dark-hollow'])
+        result = apply_row(
+            tmp_path, tab_row(replaces_id='dark-hollow-1', instrument='guitar'),
+            'add', 'dark-hollow-1', verbose=False)
+        assert result.written
+        assert hold_reason(result) is None

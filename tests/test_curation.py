@@ -6,7 +6,8 @@ Covers:
 - apply_curation() group remapping, canonical flags, variant labels
 - dangling registry ids warn (stderr) but don't fail
 - filter_suppressed() unions registry.suppressed + deleted_songs
-- is_suppressed() collision-suffix base matching
+- is_suppressed() collision-suffix base matching (the MINT guard)
+- is_suppressed_exact() exact-id only (the WRITE guard)
 - import guard: works_writer.create_work() refuses suppressed slugs
   (the live write path — is_suppressed is what it consults)
 """
@@ -21,6 +22,7 @@ from curation import (
     apply_curation,
     filter_suppressed,
     is_suppressed,
+    is_suppressed_exact,
     load_registry,
 )
 from works_writer import PartSpec, create_work
@@ -157,6 +159,35 @@ class TestIsSuppressed:
         # Prefix without the -N collision pattern is NOT suppressed
         assert not is_suppressed('bad-song', registry)
         assert not is_suppressed('badder', registry)
+
+
+class TestIsSuppressedExact:
+    """The WRITE-time question, split out 2026-08-19.
+
+    `is_suppressed` asks "may a new id be minted here?" and consults the
+    collision-suffix base. That heuristic is right for an id that does not
+    exist yet and wrong for one that does — `dark-hollow-1` is a curated
+    work in its own right, not a bid to resurrect the soft-deleted
+    `dark-hollow` — so writes to an existing work ask this instead.
+    """
+
+    def test_exact_match_still_refuses(self):
+        assert is_suppressed_exact('bad', Registry(suppressed={'bad': {}}))
+        assert is_suppressed_exact('gone', Registry(), {'gone': {}})
+
+    def test_the_collision_base_is_NOT_consulted(self):
+        registry = Registry(suppressed={'bad': {}})
+        assert not is_suppressed_exact('bad-1', registry)
+        assert not is_suppressed_exact('bad-42', registry)
+
+    def test_it_asks_the_same_question_filter_suppressed_does(self):
+        """The invariant: if the build still publishes it, you may add to it."""
+        registry = Registry(suppressed={'bad': {}})
+        songs = [_song('bad'), _song('bad-1'), _song('good')]
+        published = {s['id'] for s in filter_suppressed(songs, {}, registry)}
+        for song in songs:
+            assert is_suppressed_exact(song['id'], registry) == \
+                (song['id'] not in published)
 
 
 class TestImportGuard:
