@@ -1730,7 +1730,7 @@ export class TabRenderer {
                 svg.appendChild(stem);
 
                 const flag = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag.setAttribute('d', `M ${flagStartX} ${flagY - 8} L ${flagStartX} ${flagY} Q ${flagStartX + 8} ${flagY + 2} ${flagStartX + 10} ${flagY + 8} Q ${flagStartX + 6} ${flagY + 4} ${flagStartX} ${flagY - 2} Z`);
+                flag.setAttribute('d', this._flagPath(flagStartX, flagY));
                 flag.setAttribute('fill', opt.stemColor);
                 svg.appendChild(flag);
             } else {
@@ -1745,16 +1745,31 @@ export class TabRenderer {
                 svg.appendChild(stem);
 
                 const flag1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag1.setAttribute('d', `M ${flagStartX} ${flag1Y - 8} L ${flagStartX} ${flag1Y} Q ${flagStartX + 8} ${flag1Y + 2} ${flagStartX + 10} ${flag1Y + 8} Q ${flagStartX + 6} ${flag1Y + 4} ${flagStartX} ${flag1Y - 2} Z`);
+                flag1.setAttribute('d', this._flagPath(flagStartX, flag1Y));
                 flag1.setAttribute('fill', opt.stemColor);
                 svg.appendChild(flag1);
 
                 const flag2 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag2.setAttribute('d', `M ${flagStartX} ${flag2Y - 8} L ${flagStartX} ${flag2Y} Q ${flagStartX + 8} ${flag2Y + 2} ${flagStartX + 10} ${flag2Y + 8} Q ${flagStartX + 6} ${flag2Y + 4} ${flagStartX} ${flag2Y - 2} Z`);
+                flag2.setAttribute('d', this._flagPath(flagStartX, flag2Y));
                 flag2.setAttribute('fill', opt.stemColor);
                 svg.appendChild(flag2);
             }
         });
+    }
+
+    /**
+     * A filled, tapered note flag hanging off the RIGHT edge of a stem.
+     * `x` is the stem's edge, `y` the point where the flag leaves it. The
+     * old shape was two near-coincident curves closed along the stem — a
+     * zero-thickness crescent that looked like a stray stroke once stems
+     * got thicker. This one has a 9px contact with the stem and tapers to
+     * a point ~10px out and down.
+     */
+    _flagPath(x, y) {
+        return `M ${x} ${y - 8}`
+            + ` C ${x + 2} ${y - 2}, ${x + 9} ${y + 1}, ${x + 10} ${y + 10}`
+            + ` C ${x + 9} ${y + 5}, ${x + 4} ${y + 2}, ${x} ${y + 1.5}`
+            + ' Z';
     }
 
     /**
