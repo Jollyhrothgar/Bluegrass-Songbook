@@ -45,7 +45,11 @@ import {
     updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
-import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
+import {
+    openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar,
+    handleEditAction, openNewTabPage,
+} from './work-view.js';
+import { parseTabRoute, partInstrumentFor } from './otf-editor/create-tab-entry.js';
 import { renderBountyView } from './bounty-view.js';
 import { renderMySubmissionsView } from './my-submissions.js';
 import { renderHighScoresView } from './high-scores.js';
@@ -69,8 +73,7 @@ import { getSongContents } from './song-content.js';
 import { showToast } from './toast.js';
 import { initPWA, canInstall, promptInstall } from './pwa.js';
 import { renderDraftsView } from './drafts-view.js';
-import { openNewTabRoute } from './new-tab-route.js';
-import { getDraftStore, migrateLegacyDraft } from './drafts.js';
+import { getDraftStore, migrateLegacyDraft, parseHashParams } from './drafts.js';
 import {
     configureReviewQueue, showReviewQueue, hideReviewQueue, submitReviewRequest,
     showSuppressRequestDialog, showMergeRequestDialog, buildMergeRedirectPayload,
@@ -727,6 +730,56 @@ function showLandingPage() {
     pushHistoryState('home');
 }
 
+/**
+ * Open one of the three tab-authoring routes (plan §9.2), resolving a
+ * `?draft={id}` first.
+ *
+ * A hash cannot carry a document, so every "reopen this work in progress"
+ * path — the Drafts list, the OS file handler, a `.tef` dragged onto the
+ * window — parks the OTF in IndexedDB and puts its id in the URL. This is
+ * the one place that reads it back: the route then opens on the DRAFT's
+ * document instead of a fresh empty take (or, for an edit, instead of the
+ * published take it corrects).
+ *
+ * A draft id that no longer resolves is not an error — the route simply
+ * opens the way it would have without it.
+ */
+async function openTabRoute(route, hash) {
+    const { draft: draftId } = parseHashParams(hash);
+    let draft = null;
+    if (draftId) {
+        try {
+            const record = await getDraftStore().get(draftId);
+            if (record?.otf?.tracks?.length) draft = record;
+        } catch (err) {
+            console.warn('Could not read that draft', err);
+        }
+    }
+
+    if (route.kind === 'new-tab') {
+        const options = { ...route.options };
+        if (draft) {
+            options.otf = draft.otf;
+            options.title = options.title || draft.title || '';
+            options.instrument = options.instrument
+                || partInstrumentFor(draft.otf, draft.instrument);
+        }
+        openNewTabPage({ ...options, draft });
+        return;
+    }
+
+    const workId = resolveWorkId(route.workId);
+    if (route.kind === 'add-tab') {
+        openWork(workId, {
+            fromDeepLink: true,
+            addTab: { ...route.target, ...(draft ? { otf: draft.otf } : {}) },
+            draft,
+        });
+        return;
+    }
+    openWork(workId, { fromDeepLink: true, editRef: route.partRef, draft });
+}
+
 function handleDeepLink() {
     const hash = window.location.hash;
     if (!hash) return false;
@@ -740,14 +793,19 @@ function handleDeepLink() {
     // Use replace=true for deep links to avoid duplicate history entries
     // (the URL is already set from the initial page load)
 
-    // Tab-authoring routes come FIRST: `#work/{slug}/add-tab` and
-    // `#work/{slug}/edit/{take}` would otherwise be read as a part id by the
-    // work branch below and open a part that doesn't exist. new-tab-route.js
-    // owns what these currently do (see §9.1 of the tab-editor plan).
-    if (hash.startsWith('#new-tab')
-        || /^#work\/[^/]+\/(add-tab|edit)(\/|$|\?)/.test(hash)) {
-        trackDeepLink('new-tab', hash);
-        if (openNewTabRoute(hash)) return true;
+    // The tab-authoring routes (plan §9.2). They come FIRST because two of
+    // them live under `#work/` and would otherwise be read as a part id.
+    // Each one is the song page in a different mode — never a page of its
+    // own — so they all end up in openWork()/openNewTabPage().
+    const tabRoute = parseTabRoute(hash);
+    if (tabRoute) {
+        trackDeepLink(`tab-${tabRoute.kind}`, hash);
+        // `?draft={id}` (Drafts list, file handler, drag-and-drop) has to be
+        // read out of IndexedDB, which is async — openTabRoute does that and
+        // then opens the page, while this stays synchronous about the one
+        // thing its caller needs to know: the hash was ours.
+        openTabRoute(tabRoute, hash);
+        return true;
     }
 
     if (hash === '#drafts') {

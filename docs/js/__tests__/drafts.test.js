@@ -169,7 +169,7 @@ describe('migrateLegacyDraft', () => {
         expect((await s.list()).length).toBe(1);
     });
 
-    it('leaves the localStorage copy in place (create.html still resumes it)', async () => {
+    it('leaves the localStorage copy in place (a new take still resumes it)', async () => {
         const raw = JSON.stringify({ savedAt: 'x', otf: otf() });
         const storage = fakeStorage({ [LEGACY_DRAFT_KEY]: raw });
         await migrateLegacyDraft({ store: store(), storage });

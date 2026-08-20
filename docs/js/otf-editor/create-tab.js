@@ -1,8 +1,10 @@
-// New-tab-from-scratch flow: form values → empty multi-track OTF →
+// New-tab-from-scratch flow: requested shape → empty multi-track OTF →
 // editor, with a localStorage draft so work survives reloads.
 //
-// Kept UI-thin and injected so create.html stays a shell and tests can
-// exercise the logic in jsdom.
+// UI-free on purpose. The page that used to own this form is gone (§9.1):
+// the song page calls `buildNewTab` directly for `#work/{slug}/add-tab`
+// and `#new-tab`, reading the shape off the hash rather than a form, and
+// these tests exercise the logic in jsdom with nothing mounted.
 
 import { createMultiTrackOTF } from './actions.js';
 

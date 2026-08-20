@@ -1,15 +1,23 @@
 // Unit tests for OTF Editor Keyboard Handler
+//
+// The handler is a matcher over `bindings.js`, so every test names the
+// PRESET it is exercising. The block below is the vim preset — today's
+// bindings, which are now opt-in; the TablEdit preset (the default) has
+// its own block at the bottom.
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 import { KeyboardHandler } from '../../otf-editor/keyboard.js';
 import { EditorState, EditorMode, DURATIONS } from '../../otf-editor/state.js';
 import { EditorCursor } from '../../otf-editor/cursor.js';
+import { ACTIONS, keyFor } from '../../otf-editor/bindings.js';
 
 // Helper to create keyboard events
 function createKeyEvent(key, options = {}) {
     return new KeyboardEvent('keydown', {
         key,
+        code: options.code || (/^[0-9]$/.test(key) ? `Digit${key}` : undefined),
         ctrlKey: options.ctrl || false,
+        altKey: options.alt || false,
         metaKey: options.meta || false,
         shiftKey: options.shift || false,
         bubbles: true,
@@ -17,7 +25,28 @@ function createKeyEvent(key, options = {}) {
     });
 }
 
-describe('KeyboardHandler', () => {
+/** A 4-measure banjo document with the overlay wired up. */
+function makeRig(preset, callbacks = {}) {
+    const state = new EditorState();
+    for (let m = 2; m <= 4; m++) state.getOrCreateMeasure(m);
+    const cursor = new EditorCursor(state);
+    const container = document.createElement('div');
+    document.body.appendChild(container);
+    cursor.init(container);
+    cursor.setLayoutInfo({
+        leftMargin: 40, topMargin: 30, stringSpacing: 16, measureWidth: 200,
+        measuresPerRow: 2, ticksPerMeasure: 1920, rowHeight: 120,
+        noteAreaStart: 10, noteAreaWidth: 180, trackInfoOffset: 0,
+    });
+    const keyboard = new KeyboardHandler(state, cursor, { preset, ...callbacks });
+    return {
+        state, cursor, keyboard, container,
+        press: (key, opts) => keyboard.handleKeyDown(createKeyEvent(key, opts)),
+        teardown: () => { keyboard.detach(); cursor.destroy(); container.remove(); },
+    };
+}
+
+describe('KeyboardHandler (vim preset)', () => {
     let state;
     let cursor;
     let keyboard;
@@ -50,7 +79,7 @@ describe('KeyboardHandler', () => {
             onShowHelp: vi.fn(),
         };
 
-        keyboard = new KeyboardHandler(state, cursor, mockCallbacks);
+        keyboard = new KeyboardHandler(state, cursor, { ...mockCallbacks, preset: 'vim' });
     });
 
     afterEach(() => {
@@ -353,9 +382,22 @@ describe('KeyboardHandler', () => {
             expect(state.pendingArticulation).toBe('/');
         });
 
-        it('Ctrl+t sets pending tie articulation', () => {
-            keyboard.handleKeyDown(createKeyEvent('t', { ctrl: true }));
-            expect(state.pendingArticulation).toBe('~');
+        // Ctrl+T is a new browser tab on Chromium and never reached the
+        // page. It is bound in NO preset now; the tie lives on `a ~`.
+        it('Ctrl+T is not bound anywhere', () => {
+            const handled = keyboard.handleKeyDown(createKeyEvent('t', { ctrl: true }));
+            expect(handled).toBeUndefined();
+            expect(state.pendingArticulation).toBeNull();
+        });
+
+        it('a ~ ties the note at the cursor', () => {
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            state.cursor.tick = 240;
+            state.insertNote(7);
+            keyboard.handleKeyDown(createKeyEvent('a'));
+            keyboard.handleKeyDown(createKeyEvent('~'));
+            expect(state.getNoteAtCursor().tie).toBe(true);
         });
     });
 
@@ -936,5 +978,591 @@ describe('KeyboardHandler', () => {
             keyboard.handleKeyDown(event);
             expect(preventDefaultSpy).not.toHaveBeenCalled();
         });
+    });
+});
+
+// ----------------------------------------------------------------------
+// The TablEdit preset — the DEFAULT. Every key here is a TablEdit key
+// (plan §3 "The binding table"), so a TablEdit user can sit down and type.
+// ----------------------------------------------------------------------
+
+describe('KeyboardHandler (tabledit preset)', () => {
+    let rig;
+    const setup = (callbacks) => { rig = makeRig('tabledit', callbacks); return rig; };
+
+    afterEach(() => {
+        rig?.teardown();
+        rig = null;
+        vi.useRealTimers();
+    });
+
+    describe('note entry', () => {
+        it('a digit places a fret and advances by the duration', () => {
+            const { state, press } = setup();
+            state.setDuration(DURATIONS.eighth);
+            state.cursor.tick = 0;
+            press('5');
+            expect(state.cursor.tick).toBe(240);
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor().f).toBe(5);
+        });
+
+        it('Shift+digit stacks a chord tone without advancing', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            press('7', { shift: true, code: 'Digit7' });
+            expect(state.cursor.tick).toBe(0);
+            expect(state.getNoteAtCursor().f).toBe(7);
+        });
+
+        it('Ctrl+Space turns auto-advance off, and digits then stay put', () => {
+            const { state, press } = setup();
+            press(' ', { ctrl: true });
+            expect(state.autoAdvance).toBe(false);
+            state.cursor.tick = 0;
+            press('3');
+            expect(state.cursor.tick).toBe(0);
+        });
+
+        it('under AUTOMATIC duration the advance is ONE GRID SLOT', () => {
+            const { state, press } = setup();
+            press('=');                       // auto
+            expect(state.isAutoDuration).toBe(true);
+            state.setGridSubdivision(DURATIONS.sixteenth);
+            state.cursor.tick = 0;
+            press('0');
+            expect(state.cursor.tick).toBe(120); // the grid, not the (whole) gap
+        });
+
+        it('f + two digits is one fret', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            press('f'); press('1'); press('5');
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor().f).toBe(15);
+        });
+    });
+
+    describe('navigation', () => {
+        it('arrows step by the grid and change string', () => {
+            const { state, press } = setup();
+            state.setGridSubdivision(DURATIONS.eighth);
+            state.cursor.tick = 0;
+            press('ArrowRight');
+            expect(state.cursor.tick).toBe(240);
+            const before = state.cursor.string;
+            press('ArrowDown');
+            expect(state.cursor.string).toBe(before + 1);
+        });
+
+        it('Ctrl+← goes to the measure start, then the previous measure', () => {
+            const { state, press } = setup();
+            state.cursor.measure = 3;
+            state.cursor.tick = 480;
+            press('ArrowLeft', { ctrl: true });
+            expect(state.cursor).toMatchObject({ measure: 3, tick: 0 });
+            press('ArrowLeft', { ctrl: true });
+            expect(state.cursor.measure).toBe(2);
+        });
+
+        it('Home / End reach the measure edges', () => {
+            const { state, press } = setup();
+            state.cursor.measure = 2;
+            state.cursor.tick = 480;
+            press('Home');
+            expect(state.cursor.tick).toBe(0);
+            press('End');
+            expect(state.cursor.tick).toBeGreaterThan(0);
+        });
+
+        it('Ctrl+↑ / Ctrl+↓ jump to the first and last string', () => {
+            const { state, press } = setup();
+            press('ArrowDown', { ctrl: true });
+            expect(state.cursor.string).toBe(state.getStringCount());
+            press('ArrowUp', { ctrl: true });
+            expect(state.cursor.string).toBe(1);
+        });
+
+        it(', and ; step note to note', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            state.cursor.tick = 960;
+            state.insertNote(7);
+            state.cursor.tick = 0;
+            press(';');
+            expect(state.cursor.tick).toBe(960);
+            press(',');
+            expect(state.cursor.tick).toBe(0);
+        });
+
+        it('Ctrl+G asks the host which measure to go to', () => {
+            const onGoToMeasure = vi.fn(() => 3);
+            const { state, press } = setup({ onGoToMeasure });
+            press('g', { ctrl: true });
+            expect(onGoToMeasure).toHaveBeenCalled();
+            expect(state.cursor.measure).toBe(3);
+        });
+    });
+
+    describe('walking past the end appends a measure', () => {
+        const parkAtEnd = (state) => {
+            state.cursor.measure = state.getMeasureCount();
+            state.cursor.tick = 1920 - state.gridSubdivision;
+        };
+
+        it('with →', () => {
+            const { state, press } = setup();
+            parkAtEnd(state);
+            press('ArrowRight');
+            expect(state.getMeasureCount()).toBe(5);
+            expect(state.cursor.measure).toBe(5);
+        });
+
+        it('with Tab and with .', () => {
+            const { state, press } = setup();
+            parkAtEnd(state);
+            press('Tab');
+            expect(state.getMeasureCount()).toBe(5);
+            state.cursor.measure = 5;
+            state.cursor.tick = 1920 - state.effectiveDuration();
+            press('.');
+            expect(state.getMeasureCount()).toBe(6);
+        });
+
+        it('with Enter', () => {
+            const { state, press } = setup();
+            state.cursor.measure = 4;
+            press('Enter');
+            expect(state.getMeasureCount()).toBe(5);
+            expect(state.cursor.measure).toBe(5);
+        });
+
+        it('with the auto-advance after a note', () => {
+            const { state, press } = setup();
+            parkAtEnd(state);
+            press('2');
+            expect(state.getMeasureCount()).toBe(5);
+        });
+
+        it('and the appended measure is one undo away', () => {
+            const { state, press } = setup();
+            parkAtEnd(state);
+            press('ArrowRight');
+            state.undo();
+            expect(state.getMeasureCount()).toBe(4);
+        });
+    });
+
+    describe('durations', () => {
+        it('F4/F5/q/F7/F8/F9 set whole … 32nd (F6 is the browser’s)', () => {
+            const { state, press } = setup();
+            press('F4'); expect(state.currentDuration).toBe(DURATIONS.whole);
+            press('F5'); expect(state.currentDuration).toBe(DURATIONS.half);
+            press('q');  expect(state.currentDuration).toBe(DURATIONS.quarter);
+            press('F7'); expect(state.currentDuration).toBe(DURATIONS.eighth);
+            press('F8'); expect(state.currentDuration).toBe(DURATIONS.sixteenth);
+            press('F9'); expect(state.currentDuration).toBe(DURATIONS.thirtySecond);
+        });
+
+        it('= toggles automatic duration both ways', () => {
+            const { state, press } = setup();
+            press('=');
+            expect(state.currentDuration).toBeNull();
+            press('=');
+            expect(state.currentDuration).toBe(DURATIONS.eighth);
+        });
+
+        it('Ctrl+. dots the duration and Ctrl+3 makes it a triplet', () => {
+            const { state, press } = setup();
+            press('q');
+            press('.', { ctrl: true });
+            expect(state.currentDuration).toBe(720);
+            press('3', { ctrl: true, code: 'Digit3' });
+            expect(state.currentDuration).toBe(DURATIONS.tripletEighth);
+        });
+
+        it('< and > halve and double the note under the cursor', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            state.setDuration(DURATIONS.quarter);
+            state.insertNote(5);
+            press('<');
+            expect(state.getNoteAtCursor().dur).toBe(240);
+            press('>');
+            expect(state.getNoteAtCursor().dur).toBe(480);
+        });
+
+        it('a duration key re-times the note at the cursor (TablEdit’s *)', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            press('F5');
+            expect(state.getNoteAtCursor().dur).toBe(DURATIONS.half);
+        });
+
+        it('J fixes durations from spacing', () => {
+            const { state, press } = setup();
+            state.setDuration(DURATIONS.thirtySecond);
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            state.cursor.tick = 480;
+            state.insertNote(7);
+            state.cursor.tick = 0;
+            press('J', { shift: true });
+            expect(state.getNoteAtCursor().dur).toBe(480);
+        });
+    });
+
+    describe('effects', () => {
+        const twoNotes = (state) => {
+            state.setDuration(DURATIONS.eighth);
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            state.cursor.tick = 240;
+            state.insertNote(7);
+        };
+
+        it('h marks the SUCCESSOR when the cursor is on the first of a pair', () => {
+            const { state, press } = setup();
+            twoNotes(state);
+            state.cursor.tick = 0;
+            press('h');
+            state.cursor.tick = 240;
+            expect(state.getNoteAtCursor().tech).toBe('h');
+        });
+
+        it('h marks the note itself when it already has a predecessor', () => {
+            const { state, press } = setup();
+            twoNotes(state);
+            state.cursor.tick = 240;
+            press('h');
+            expect(state.getNoteAtCursor().tech).toBe('h');
+        });
+
+        it('m is a dead note and c a choke — techs the corpus has and we could not type', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            press('m');
+            expect(state.getNoteAtCursor().tech).toBe('x');
+            press('c');
+            expect(state.getNoteAtCursor().tech).toBe('b');
+            press('n');
+            expect(state.getNoteAtCursor().tech).toBeUndefined();
+        });
+
+        it('l ties to the same-string predecessor (tie: true, never tech ~)', () => {
+            const { state, press } = setup();
+            twoNotes(state);
+            state.cursor.tick = 240;
+            press('l');
+            expect(state.getNoteAtCursor().tie).toBe(true);
+            expect(state.getNoteAtCursor().tech).toBeUndefined();
+            press('l');
+            expect(state.getNoteAtCursor().tie).toBeUndefined();
+        });
+
+        it('F3 re-applies the last effect at the new cursor', () => {
+            const { state, press } = setup();
+            state.setDuration(DURATIONS.eighth);
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            state.cursor.tick = 240;
+            state.insertNote(7);
+            state.cursor.tick = 480;
+            state.insertNote(9);
+            state.cursor.tick = 240;
+            press('p');
+            state.cursor.tick = 480;
+            press('F3');
+            expect(state.getNoteAtCursor().tech).toBe('p');
+        });
+
+        it('applies to the whole selection when there is one', () => {
+            const { state, press } = setup();
+            state.setDuration(DURATIONS.eighth);
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            state.cursor.tick = 240;
+            state.insertNote(7);
+            state.cursor.tick = 0;
+            press('a', { ctrl: true });   // select the measure
+            press('m');
+            state.setMode(EditorMode.NORMAL);
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor().tech).toBe('x');
+            state.cursor.tick = 240;
+            expect(state.getNoteAtCursor().tech).toBe('x');
+        });
+
+        it('Ctrl+H still arms a hammer for the NEXT note (never Ctrl+T)', () => {
+            const { state, press } = setup();
+            press('h', { ctrl: true });
+            expect(state.pendingArticulation).toBe('h');
+        });
+    });
+
+    describe('note fixes', () => {
+        it('+ and − move the fret by one', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            press('+');
+            expect(state.getNoteAtCursor().f).toBe(6);
+            press('-');
+            expect(state.getNoteAtCursor().f).toBe(5);
+        });
+
+        it('Alt+↑ re-strings the note, preserving pitch, and follows it', () => {
+            const { state, press } = setup();
+            state.cursor.string = 3;   // G3 on a banjo
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            press('ArrowUp', { alt: true });
+            expect(state.cursor.string).toBe(2);
+            expect(state.getNoteAtCursor().f).toBe(1);   // B3 + 1 = C4 = G3 + 5
+        });
+    });
+
+    describe('measures', () => {
+        it('Insert adds one before, Ctrl+M one after', () => {
+            const { state, press } = setup();
+            state.cursor.measure = 2;
+            press('Insert');
+            expect(state.getMeasureCount()).toBe(5);
+            press('m', { ctrl: true });
+            expect(state.getMeasureCount()).toBe(6);
+            expect(state.cursor.measure).toBe(3);
+        });
+
+        it('Delete removes the note under the cursor', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            press('Delete');
+            expect(state.getNoteAtCursor()).toBeFalsy();
+        });
+
+        it('Delete on an EMPTY measure removes the measure', () => {
+            const { state, press } = setup();
+            state.cursor.measure = 4;
+            state.cursor.tick = 0;
+            press('Delete');
+            expect(state.getMeasureCount()).toBe(3);
+        });
+
+        it('r repeats the previous measure and lands at its start', () => {
+            const { state, press } = setup();
+            state.cursor.measure = 1;
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            state.cursor.measure = 2;
+            state.cursor.tick = 480;
+            press('r');
+            expect(state.cursor).toMatchObject({ measure: 2, tick: 0 });
+            expect(state.getNoteAtCursor().f).toBe(5);
+        });
+
+        it('Alt+Insert ripples right and Alt+Delete closes the gap', () => {
+            const { state, press } = setup();
+            state.setDuration(DURATIONS.eighth);
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            state.cursor.tick = 0;
+            press('Insert', { alt: true });
+            expect(state.getMeasure(1).events[0].tick).toBe(240);
+            press('Delete', { alt: true });
+            expect(state.getMeasure(1).events[0].tick).toBe(0);
+        });
+    });
+
+    describe('selection', () => {
+        it('Shift+→ enters VISUAL and drags the selection end', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            press('ArrowRight', { shift: true });
+            expect(state.mode).toBe(EditorMode.VISUAL);
+            expect(state.selection.end.tick).toBe(state.gridSubdivision);
+        });
+
+        it('Escape drops back to NORMAL and clears the selection', () => {
+            const { state, press } = setup();
+            press('ArrowRight', { shift: true });
+            press('Escape');
+            expect(state.mode).toBe(EditorMode.NORMAL);
+            expect(state.selection).toBeNull();
+        });
+
+        it('Ctrl+A selects the measure, then the whole tab', () => {
+            const { state, press } = setup();
+            state.cursor.measure = 2;
+            press('a', { ctrl: true });
+            expect(state.selection.start.measure).toBe(2);
+            expect(state.selection.end.measure).toBe(2);
+            press('a', { ctrl: true });
+            expect(state.selection.start.measure).toBe(1);
+            expect(state.selection.end.measure).toBe(state.getMeasureCount());
+        });
+
+        it('VISUAL arrows extend by GRID, like NORMAL (they used to differ)', () => {
+            const { state, press } = setup();
+            state.setDuration(DURATIONS.whole);        // 1920
+            state.setGridSubdivision(DURATIONS.eighth); // 240
+            state.setMode(EditorMode.VISUAL);
+            state.cursor.tick = 0;
+            press('ArrowRight');
+            expect(state.cursor.tick).toBe(240);
+        });
+    });
+
+    describe('playback and help', () => {
+        it('Space plays/stops, Shift+Space plays from the cursor', () => {
+            const onTogglePlay = vi.fn();
+            const onPlayFromCursor = vi.fn();
+            const { press } = setup({ onTogglePlay, onPlayFromCursor });
+            press(' ');
+            expect(onTogglePlay).toHaveBeenCalled();
+            press(' ', { shift: true });
+            expect(onPlayFromCursor).toHaveBeenCalled();
+        });
+
+        it('F10 plays the current measure and Ctrl+L loops the selection', () => {
+            const onPlayMeasure = vi.fn();
+            const onLoopSelection = vi.fn();
+            const { press } = setup({ onPlayMeasure, onLoopSelection });
+            press('F10');
+            expect(onPlayMeasure).toHaveBeenCalled();
+            press('l', { ctrl: true });
+            expect(onLoopSelection).toHaveBeenCalled();
+        });
+
+        it('? opens the help in any mode', () => {
+            const onShowHelp = vi.fn();
+            const { state, press } = setup({ onShowHelp });
+            state.setMode(EditorMode.ANNOTATION);
+            press('?', { shift: true });
+            expect(onShowHelp).toHaveBeenCalled();
+        });
+
+        it('Ctrl+Z undoes while marking fingering (global bindings)', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            state.insertNote(2);
+            state.setMode(EditorMode.ANNOTATION);
+            press('t');
+            expect(state.getNoteAtCursor().finger).toBe('T');
+            press('z', { ctrl: true });
+            expect(state.getNoteAtCursor().finger).toBeUndefined();
+        });
+    });
+
+    describe('placed text', () => {
+        it('t opens the prompt and T deletes the text at the cursor', () => {
+            const onEditAnnotation = vi.fn();
+            const { state, press } = setup({ onEditAnnotation });
+            press('t');
+            expect(onEditAnnotation).toHaveBeenCalled();
+            state.setAnnotationAtCursor('PART A');
+            press('T', { shift: true });
+            expect(state.otf.annotations || []).toHaveLength(0);
+        });
+    });
+
+    describe('grid', () => {
+        it('[ and ] step the grid coarser and finer', () => {
+            const { state, press } = setup();
+            state.setGridSubdivision(DURATIONS.eighth);
+            press(']');
+            expect(state.gridSubdivision).toBe(DURATIONS.sixteenth);
+            press('[');
+            expect(state.gridSubdivision).toBe(DURATIONS.eighth);
+        });
+
+        it('\\ toggles the grid', () => {
+            const { state, press } = setup();
+            const before = state.showGrid;
+            press('\\');
+            expect(state.showGrid).toBe(!before);
+        });
+    });
+
+    describe('what the preset deliberately does NOT bind', () => {
+        it('vim letters are not effects here (w, b, x, dd)', () => {
+            const { state, press } = setup();
+            state.cursor.tick = 0;
+            state.insertNote(5);
+            press('x');           // unbound in tabledit
+            expect(state.getNoteAtCursor()?.f).toBe(5);
+        });
+
+        it('Cmd chords outside the seven idioms reach the browser', () => {
+            const { state, press } = setup();
+            const before = state.cursor.tick;
+            press('f', { meta: true });
+            expect(state.cursor.tick).toBe(before);
+            expect(rig.keyboard.highFretMode).toBe(false);
+        });
+    });
+});
+
+// ----------------------------------------------------------------------
+// Count prefixes — vim only, because in NORMAL a digit is a fret.
+// ----------------------------------------------------------------------
+
+describe('KeyboardHandler — count prefixes (vim preset)', () => {
+    let rig;
+    beforeEach(() => { rig = makeRig('vim'); });
+    afterEach(() => rig.teardown());
+
+    it('g12G goes to measure 12, appending as it goes', () => {
+        const { state, press } = rig;
+        press('g'); press('1'); press('2'); press('G');
+        expect(state.cursor.measure).toBe(12);
+        expect(state.getMeasureCount()).toBe(12);
+    });
+
+    it('g3w repeats a countable move three times', () => {
+        const { state, press } = rig;
+        state.cursor.tick = 0;
+        press('g'); press('3'); press('w');
+        expect(state.cursor.tick).toBe(1440);   // three beats
+    });
+
+    it('gg still means "start of the tab"', () => {
+        const { state, press } = rig;
+        state.cursor.measure = 3;
+        press('g'); press('g');
+        expect(state.cursor).toMatchObject({ measure: 1, tick: 0 });
+    });
+
+    it('G with no count is the end of the tab', () => {
+        const { state, press } = rig;
+        press('G');
+        expect(state.cursor.measure).toBe(state.getMeasureCount());
+    });
+});
+
+describe('KeyboardHandler — the table drives the actions', () => {
+    let rig;
+    beforeEach(() => { rig = makeRig('tabledit'); });
+    afterEach(() => rig.teardown());
+
+    it('dispatchAction runs a menu item through the same code as a key', () => {
+        const { state, keyboard } = rig;
+        state.cursor.tick = 0;
+        state.insertNote(5);
+        keyboard.dispatchAction('effect.dead');
+        expect(state.getNoteAtCursor().tech).toBe('x');
+    });
+
+    it('re-reads the table when the preset changes under it', () => {
+        const { state, keyboard, press } = rig;
+        expect(keyboard.preset).toBe('tabledit');
+        keyboard.preset = 'vim';
+        state.cursor.tick = 0;
+        press('x');                       // vim: delete note
+        expect(keyFor('note.delete', 'vim')).toBe('x');
+        expect(ACTIONS['note.delete']).toBeTruthy();
     });
 });

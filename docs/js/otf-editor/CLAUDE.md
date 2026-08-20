@@ -104,6 +104,116 @@ and work-view treats it as a hint next to position, never as the answer.
 Neither op touches it. `tablature_parts[].tracks` in the index is a *count*
 of non-percussion tracks, so neither op moves it either.
 
+### The binding table — `bindings.js` is the only place keys live
+
+`keyboard.js` is a **matcher**, not a switch statement: every behaviour is
+an entry in `ACTIONS`, every key is an entry in a `PRESETS` list. Menus,
+tooltips and the `?` overlay all render from the same table, so an
+advertised key is a bound key by construction. (It used to be 880 lines of
+`if (key === …)` plus a hand-written overlay that lied in four places —
+plan `docs/plans/tab-editor-input-parity.md` §3.)
+
+| piece | what it is |
+|---|---|
+| `ACTIONS[id]` | `{ label, group, modes, run(ctx, {count, key, event}), repeatable }` — the verb |
+| `PRESETS.tabledit` / `.vim` | `mode → [{keys, action, hidden?}]`, plus `global` (all modes), `countPrefix`, `exceptions` |
+| `describe(preset)` | grouped `{keys[], label}` for the help overlay |
+| `keyFor(action, preset)` | the key to print beside a menu item |
+| `FretEntry` | THE digit→fret rule (two-digit refine, `f` prefix) — the canvas *and* the note popover use this one object |
+
+**Key-string grammar** (one grammar for the table and for events): modifiers
+`Ctrl+Alt+Shift+` in that order; **case decides Shift** for letters (`W` ≡
+`Shift+W`, `Ctrl+Z` ≡ `Ctrl+Shift+Z` — write modified letters lower-case);
+digits come off `event.code` (`Shift+3`, never `#`); punctuation is the
+character itself (`<`, `?`, `*`); sequences are space-separated (`g g`,
+`a h`); `0-9` and `Shift+A-J` are ranges, expanded for matching and kept
+whole for display.
+
+- **`Meta` is never in the table.** The matcher mirrors Cmd onto Ctrl for
+  the seven system idioms (`S C X V Z Y A`) and returns `null` for every
+  other Cmd chord, which is what hands `Cmd+F`/`Cmd+L`/`Cmd+1` back to the
+  browser. `RESERVED_CHORDS` (`Ctrl+T/W/N`, `F6`, `F11`, …) is asserted
+  against in `__tests__/otf-editor/bindings.test.js`.
+- **Counts are opt-in per preset** (`countPrefix`), because in NORMAL every
+  digit is a fret. vim uses `g`: `g12G`, `g3w`, `g4.`. A count that lands on
+  a sequence with no binding falls back to the last chord alone — that is
+  why `g3w` needs no `g w` entry. TablEdit has no count; `Ctrl+G` prompts.
+- **The active preset is `getPreset()` / `setPreset()` / `onPresetChange()`
+  in `bindings.js`**, persisted to `localStorage['otf-editor.preset']`,
+  default `tabledit`. It lives there rather than on `EditorState` because
+  the table is what consumes it.
+- **`hidden: true`** marks an alias kept for muscle memory (`j`/`k`/`u` in
+  the TablEdit preset, `Ctrl+C/X/V` in vim). It is bound but not
+  advertised, so the help stays the preset's own vocabulary.
+- **Walking forward past the last tick appends a measure** — `stepTicks()`
+  is the one forward-step helper (`→`, `Tab`, `.`, `Enter`, auto-advance),
+  and it calls `state.ensureMeasure` so one `u` takes the bar back.
+- Anything that needs a NUMBER of ticks calls `state.effectiveDuration()`
+  (or `entryAdvanceTicks()`, which is the grid under automatic duration).
+  `currentDuration` is `null` under auto and multiplying by it is 0.
+
+The tests in `__tests__/otf-editor/bindings.test.js` are the fence: every
+preset key maps to a real action, every action is reachable from some
+preset, no reserved chord is bound, no chord is both an action and a
+sequence prefix, and every `<kbd>` the help overlay prints comes from
+`describe()`.
+
+### Document ops added for TablEdit input parity
+
+Every one goes through `EditingFacade`, so every one is a single undo
+step (the "refuses" column means: returns `false`, document untouched).
+State wrappers in `state.js` take the cursor/selection instead of a
+position. Plan: `docs/plans/tab-editor-input-parity.md` §3, §6.
+
+| facade op | state wrapper | refuses when | undoable |
+|---|---|---|---|
+| `setNoteDuration(pos, dur)` | `setDuration(d)` also re-times the note at the cursor and PINS it | no note there; already that duration | yes |
+| `setRangeDuration(start, end, dur, {strings})` | `applyDurationToSelection(d)` | range holds no notes | yes (one step) |
+| `scaleDuration(pos, factor)` | `scaleDurationAtCursor(f)` | no note; already clamped at 60 / 1920 | yes |
+| `scaleRangeDuration(start, end, factor)` | `scaleSelectionDuration(f)` | nothing in range moves | yes (one step) |
+| `transposeFret(pos, delta)` | `transposeFretAtCursor(d)` | no note; already at 0 or 24 | yes |
+| `moveNoteToString(pos, ±1)` | `moveNoteAcrossStrings(d)` (moves the cursor too) | no such string; slot occupied; fret would leave 0..24; untuned track | yes |
+| `setTie(pos, on)` | `toggleTieAtCursor()` | turning ON with no same-string predecessor; clearing a tie that isn't set | yes |
+| `deleteMeasure(n)` | `deleteMeasureAtCursor()`, `deleteEmptyTrailingMeasure()` | n out of range; it's the last measure; (wrapper) the tail has notes on ANY track | yes |
+| `shiftRight(m, tick, ticks)` / `shiftLeft` | `shiftRightAtCursor()` / `shiftLeftAtCursor()` | a note would cross the barline or land on an occupied slot; nothing at/after the tick | yes |
+| `repeatMeasure(n)` | `repeatPreviousMeasure()` | n < 2; n−1 missing or empty; n already has notes; source longer than destination | yes |
+| `addMeasures` (existing) | `ensureMeasure(n)` — walk past the end to append | measure n already exists | yes |
+| `fixDurations(n \| {startAbs,endAbs})` | `fixDurationsAtCursor()` / `fixDurationsInSelection()` | nothing changes | yes (one step) |
+| `insertNote({autoDuration, pins, autoEntered})`, and the same option on `deleteNote` / `deleteTick` / `paste` | automatic via `state.isAutoDuration` | — | yes (note + neighbours in ONE step) |
+
+**Automatic duration** (`state.currentDuration === null`) is TablEdit's
+"no explicit current duration". A note's `dur` is the gap to the next
+onset on ANY string of the same track within the same measure, else to
+the measure end — the *column* rule, not the same-string rule TablEdit's
+manual describes, because same-string would make every 5th-string note of
+a roll a dotted quarter and the corpus says TablEdit users write rolls as
+eighths (95,702 banjo notes: eighths 63.6%, dotted quarters 0.1%).
+
+- **Never recompute from the keyboard layer.** The facade does it inside
+  the same `_mutate`, so one `u` takes back the note *and* the neighbour's
+  new stem.
+- **Pinning is session state, never format.** `state.pinnedDurations`
+  (hand-set durations auto must not touch) and `state.autoEnteredDurations`
+  (notes typed under auto this session — the only ones auto may touch)
+  hold `durationKey(measure, tick, string)` strings and are handed to the
+  facade per call. A reopened document has neither, so it is fully pinned:
+  you didn't type those notes. `fixDurations` is the one-shot that ignores
+  both, on request.
+- Anything that needs a NUMBER must call `state.effectiveDuration()`, not
+  `state.currentDuration` — under auto the latter is `null`.
+- Measure-bounded: auto never ties across a barline, so the last note
+  fills to the barline. OTF has no rests, so trailing silence needs an
+  explicit duration (which pins the note).
+
+Entry-state flags the keyboard layer reads: `state.autoAdvance`
+(`toggleAutoAdvance()`, emits `autoAdvanceChange`), `state.lastTech`
+(TablEdit's F3 — `repeatLastAction()` re-applies it, and `'~'` there
+means tie).
+
+`pitch.js` is the pure string+fret↔MIDI module the re-string op needs; it
+is a port of `tab-player.js`'s two lines, not an import of it (the facade
+stays UI-free), and it returns `null` where the player guesses.
+
 ## Architecture
 
 Wraps existing `TabRenderer` with editing capabilities:
@@ -139,6 +249,7 @@ docs/js/otf-editor/
 ├── toolbar.js         # Track / duration / grid / articulation / text / edit buttons
 ├── popover.js         # NoteEntryPopover + AnnotationPopover + TrackNamePopover
 ├── context-menu.js    # Right-click menu
+├── pitch.js           # Pure string+fret ↔ MIDI (ported from tab-player)
 ├── actions.js         # Document-level helpers (validate, cleanup, download)
 └── recorder.js        # Record/replay of edit events
 ```

@@ -25,10 +25,11 @@ export const DB_VERSION = 1;
 export const MAX_DRAFTS = 50;
 
 /**
- * The pre-IndexedDB single-draft slot (otf-editor/create-tab.js `DRAFT_KEY`).
+ * The single-draft slot (otf-editor/create-tab.js `DRAFT_KEY`) this bucket
+ * grew out of, and which new takes still use for same-render resume.
  * Spelled out rather than imported so this module stays dependency-free — it
  * is loaded by the drafts route, the editor autosave AND the PWA file
- * handler, and none of them should drag the create-page module graph in.
+ * handler, and none of them should drag the editor's module graph in.
  */
 export const LEGACY_DRAFT_KEY = 'otf-editor-draft';
 export const MIGRATION_FLAG_KEY = 'bgb-drafts-migrated';
@@ -202,11 +203,12 @@ export function createDraftStore({
 /**
  * Move the old one-slot localStorage draft into the store, once.
  *
- * The localStorage copy is left where it is on purpose: create.html's
- * "You have an unsaved draft — Resume / Discard" banner still reads it, so
- * migrating destructively would break resume for anyone mid-tab at deploy
- * time. The fixed id makes a second run a no-op overwrite rather than a
- * duplicate.
+ * The localStorage copy is left where it is on purpose: it is still the
+ * slot `startAddTabMode` resumes a half-written NEW take from ("Picked up
+ * where you left off"), because that decision happens inside a render and
+ * IndexedDB cannot answer synchronously. Migrating destructively would
+ * break resume for anyone mid-tab at deploy time. The fixed id makes a
+ * second run a no-op overwrite rather than a duplicate.
  *
  * @returns {Promise<Object|null>} the migrated record, or null if there was
  *          nothing to migrate (or it had already run).

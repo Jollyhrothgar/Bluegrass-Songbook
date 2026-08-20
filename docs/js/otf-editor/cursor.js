@@ -183,9 +183,10 @@ export class EditorCursor {
     constructor(state, options = {}) {
         this.state = state;
         this.options = {
-            cursorColor: 'var(--accent, #007bff)',
+            cursorColor: 'var(--accent, #007bff)',              // NORMAL
+            cursorColorVisual: 'var(--success, #16a34a)',       // VISUAL
+            cursorColorAnnotation: 'var(--danger, #dc2626)',    // ANNOTATION
             cursorWidth: 2,
-            insertBoxPadding: 2,
             ghostOpacity: 0.4,
             ...options,
         };
@@ -298,22 +299,10 @@ export class EditorCursor {
             z-index: 10;
         `;
 
-        // Cursor element (crosshair design)
+        // Cursor element: ONE box over the cell being edited (TablEdit's
+        // square). No sub-elements — the whiskers are gone.
         this.cursorElement = document.createElement('div');
         this.cursorElement.className = 'editor-cursor';
-
-        // Crosshair sub-elements
-        this.cursorVertical = document.createElement('div');
-        this.cursorVertical.className = 'cursor-vertical';
-        this.cursorElement.appendChild(this.cursorVertical);
-
-        this.cursorHorizontal = document.createElement('div');
-        this.cursorHorizontal.className = 'cursor-horizontal';
-        this.cursorElement.appendChild(this.cursorHorizontal);
-
-        this.cursorCenter = document.createElement('div');
-        this.cursorCenter.className = 'cursor-center';
-        this.cursorElement.appendChild(this.cursorCenter);
 
         this.overlay.appendChild(this.cursorElement);
 
@@ -335,86 +324,81 @@ export class EditorCursor {
     }
 
     /**
-     * Update cursor style based on mode
+     * The cursor's colour for a mode. NORMAL keeps the `cursorColor`
+     * option (the accent); VISUAL and ANNOTATION get their own so the
+     * mode is readable from the cursor alone, the way the mode badge
+     * reads from the toolbar.
      */
-    _updateCursorStyle() {
-        const mode = this.state.mode;
-        const { cursorColor } = this.options;
+    _modeColor() {
+        const o = this.options;
+        if (this.state.mode === 'visual') return o.cursorColorVisual;
+        if (this.state.mode === 'annotation') return o.cursorColorAnnotation;
+        return o.cursorColor;
+    }
 
-        // Crosshair container - positioned at cursor location
+    /**
+     * Size of ONE edit cell in overlay pixels: a grid slot wide, a
+     * string space tall. Measured from the LIVE geometry (a second
+     * geometry point one grid step along), so a finer entry grid gives a
+     * narrower box and the reader's size setting scales it. The second
+     * point may sit past the barline — svgPointForPosition extrapolates
+     * linearly, which is exactly the slot width we want.
+     */
+    _cellSize() {
+        const MIN_W = 6;
+        const grid = this.state.gridSubdivision || 240;
+        const cur = this.state.cursor;
+
+        const here = this._geometryPoint(cur);
+        if (here) {
+            const next = this._geometryPoint({ ...cur, tick: cur.tick + grid });
+            const spacing = this.renderer?.options?.stringSpacing ?? 14;
+            return {
+                width: Math.max(MIN_W, next ? Math.abs(next.x - here.x) : MIN_W),
+                height: spacing * (here.scaleY || 1),
+            };
+        }
+
+        const info = this.layoutInfo;
+        if (!info) return { width: 14, height: 14 };
+        const ticks = info.ticksPerMeasure || 1920;
+        return {
+            width: Math.max(MIN_W, (info.noteAreaWidth || 0) * grid / ticks),
+            height: info.stringSpacing || 14,
+        };
+    }
+
+    /**
+     * Paint the cursor: a rectangular outline around the cell at the
+     * cursor (one grid slot x one string), coloured by mode.
+     *
+     * It used to be a crosshair with 20px whiskers, which the first
+     * TablEdit user read as "cross hairs ... should be a square like in
+     * tabledit" (plan tab-editor-input-parity.md S7): whiskers point at a
+     * spot, a box says WHICH CELL a digit will land in. The dead
+     * `'insert'` branch went with it — there is no INSERT mode
+     * (state.js EditorMode is NORMAL / VISUAL / ANNOTATION).
+     *
+     * @param {{width: number, height: number}} [size] - cell size; measured when omitted
+     */
+    _updateCursorStyle(size) {
+        const { width, height } = size || this._cellSize();
+        const color = this._modeColor();
+        const blink = this.state.mode === 'normal'
+            ? 'animation: cursor-blink 1.2s infinite;'
+            : '';
+
         this.cursorElement.style.cssText = `
             position: absolute;
+            box-sizing: border-box;
+            width: ${width}px;
+            height: ${height}px;
+            border: ${this.options.cursorWidth}px solid ${color};
+            border-radius: 2px;
+            background: color-mix(in srgb, ${color} 15%, transparent);
             pointer-events: none;
+            ${blink}
         `;
-
-        // Whisker dimensions
-        const whiskerLength = 20;
-        const whiskerWidth = 2;
-        const centerSize = mode === 'insert' ? 10 : 6;
-
-        // Vertical whisker (extends above and below)
-        this.cursorVertical.style.cssText = `
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: ${whiskerWidth}px;
-            height: ${whiskerLength * 2}px;
-            background: ${cursorColor};
-            transform: translate(-50%, -50%);
-            opacity: ${mode === 'insert' ? 1 : 0.8};
-            ${mode === 'normal' ? 'animation: cursor-blink 1s infinite;' : ''}
-        `;
-
-        // Horizontal whisker (extends left and right on string)
-        this.cursorHorizontal.style.cssText = `
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: ${whiskerLength * 2}px;
-            height: ${whiskerWidth}px;
-            background: ${cursorColor};
-            transform: translate(-50%, -50%);
-            opacity: ${mode === 'insert' ? 1 : 0.8};
-            ${mode === 'normal' ? 'animation: cursor-blink 1s infinite;' : ''}
-        `;
-
-        // Center point/box
-        if (mode === 'insert') {
-            this.cursorCenter.style.cssText = `
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                width: ${centerSize}px;
-                height: ${centerSize}px;
-                border: 2px solid ${cursorColor};
-                background: ${cursorColor}33;
-                border-radius: 2px;
-                transform: translate(-50%, -50%);
-            `;
-        } else if (mode === 'visual') {
-            this.cursorCenter.style.cssText = `
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                width: ${centerSize}px;
-                height: ${centerSize}px;
-                background: ${cursorColor}66;
-                border-radius: 50%;
-                transform: translate(-50%, -50%);
-            `;
-        } else {
-            this.cursorCenter.style.cssText = `
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                width: ${centerSize}px;
-                height: ${centerSize}px;
-                background: ${cursorColor};
-                border-radius: 50%;
-                transform: translate(-50%, -50%);
-                animation: cursor-blink 1s infinite;
-            `;
-        }
     }
 
     /**
@@ -692,15 +676,12 @@ export class EditorCursor {
             || (this.layoutInfo ? this._calculatePosition() : null);
         if (!pos) return;
 
-        this._updateCursorStyle();
-
-        // Position crosshair at intersection point
-        // The cursor container is a box centered at the cursor position
-        const containerSize = 50; // Large enough to contain whiskers
-        this.cursorElement.style.left = `${pos.x - containerSize / 2}px`;
-        this.cursorElement.style.top = `${pos.y - containerSize / 2}px`;
-        this.cursorElement.style.width = `${containerSize}px`;
-        this.cursorElement.style.height = `${containerSize}px`;
+        // The box is the CELL the next digit lands in: one grid slot
+        // wide, one string tall, centred on the cursor point.
+        const cell = this._cellSize();
+        this._updateCursorStyle(cell);
+        this.cursorElement.style.left = `${pos.x - cell.width / 2}px`;
+        this.cursorElement.style.top = `${pos.y - cell.height / 2}px`;
 
         this.revealCursor(pos);
     }
@@ -932,7 +913,19 @@ export class EditorCursor {
      * auto-advance after entering a note.
      */
     moveByDuration(direction) {
-        this.moveByTicks(direction * this.state.currentDuration);
+        // effectiveDuration(), never currentDuration: under AUTOMATIC
+        // duration the latter is `null`, and `direction * null` is 0 —
+        // the cursor simply stopped moving.
+        this.moveByTicks(direction * this._entryDuration());
+    }
+
+    /**
+     * The duration a note entered right now would get. Falls back to the
+     * raw field for the bare-state fixtures some unit tests build.
+     */
+    _entryDuration() {
+        const d = this.state.effectiveDuration?.();
+        return d || this.state.currentDuration || this.state.gridSubdivision;
     }
 
     /**
@@ -1002,8 +995,22 @@ export class EditorCursor {
             const measureTicks = this.state.facade
                 ? this.state.facade.ticksFor(this.state.cursor.measure)
                 : this.state.ticksPerMeasure;
-            this.state.cursor.tick = Math.max(0, measureTicks - this.state.currentDuration);
+            this.state.cursor.tick = Math.max(0, measureTicks - this._entryDuration());
         }
+        this.update();
+        this.state._emit('cursorMove', this.state.cursor);
+    }
+
+    /**
+     * Jump to a string (1 = highest), clamped to the track's string
+     * count. The nav helper behind first/last-string keys.
+     * @param {number} stringNum
+     */
+    moveToString(stringNum) {
+        const count = this.state.getStringCount();
+        const next = Math.max(1, Math.min(count, stringNum));
+        if (next === this.state.cursor.string) return;
+        this.state.cursor.string = next;
         this.update();
         this.state._emit('cursorMove', this.state.cursor);
     }
@@ -1182,9 +1189,6 @@ export class EditorCursor {
         this.gridOverlay = null;
         this.overlay = null;
         this.cursorElement = null;
-        this.cursorVertical = null;
-        this.cursorHorizontal = null;
-        this.cursorCenter = null;
         this.ghostNote = null;
     }
 }

@@ -214,10 +214,10 @@ export function consumeLaunchQueue({ win = globalThis, open = openTabFile } = {}
 /**
  * Accept a `.tef` / `.otf.json` dropped anywhere on the app.
  *
- * Scoped out of any element that already has its own drop zone (the create
- * page's import box, marked `data-file-drop`) so those keep their own error
- * copy, and it ignores drags that carry no supported file so text drags,
- * link drags and the browser's own behaviour are untouched.
+ * Scoped out of any element that marks itself `data-file-drop` (a surface
+ * with its own drop handling and its own error copy), and it ignores drags
+ * that carry no supported file so text drags, link drags and the browser's
+ * own behaviour are untouched.
  */
 export function enableFileDrop({
     root = globalThis.document,

@@ -45,8 +45,15 @@ import {
     accessToken, namespacedRowId, requestDurableWrite,
 } from './otf-editor/submit-tab.js';
 import { openAddSongPicker } from './add-song-picker.js';
-import { launchTabCreator } from './otf-editor/create-tab-entry.js';
-import { tabEntryPlan, renderExistingTabsPanel } from './otf-editor/existing-tabs.js';
+import {
+    launchTabCreator, createTabHref, editTabHref,
+    presetForInstrument, sanitizeInstrument, submitNewTab,
+} from './otf-editor/create-tab-entry.js';
+import { buildNewTab, saveDraft, clearDraft, loadDraft } from './otf-editor/create-tab.js';
+import {
+    tabEntryPlan, renderExistingTabsPanel, partMatchesInstrument,
+} from './otf-editor/existing-tabs.js';
+import { bindBandToEditor } from './tab-edit-band.js';
 import {
     TabRenderer, TabPlayer,
     TimelineTiming, identityTimeline, readingListTimeline,
@@ -84,6 +91,10 @@ let activeTrackView = null;      // track id, 'all', or null (= lead track)
 let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
 let activeEditSession = null;    // live tab edit session (torn down on nav)
 let pendingTabEdit = null;       // parked "open this tab in the editor" ask
+let pendingDraft = null;         // {id, otf, …} a `?draft=` route asked for
+let activeEditBand = null;       // bottom band bound to the live editor
+let tabAuthoring = null;         // {kind:'add'|'new', part, take, target, otf}
+let takeStatusLine = null;       // "Submitted — live now…" under the take header
 
 /**
  * Tear down everything the tablature view holds live handles to: the
@@ -97,6 +108,10 @@ export function teardownTablatureView() {
     if (activeEditSession) {
         activeEditSession.destroy();
         activeEditSession = null;
+    }
+    if (activeEditBand) {
+        activeEditBand.destroy();
+        activeEditBand = null;
     }
     destroyTrackRenderers();
     if (tablaturePlayer) {
@@ -235,6 +250,10 @@ function prettySource(source) {
 const ARRANGEMENT_FIELDS = [
     'file', 'src_file', 'source', 'source_id', 'author', 'source_page_url',
     'author_url', 'difficulty', 'tuning', 'content', 'pending', 'pending_id',
+    // A take that exists only in this browser session (the editor is open on
+    // it and nothing has been submitted). Listed here so switching AWAY from
+    // it clears the flag the same way `pending` clears.
+    'provisional',
 ];
 
 /**
@@ -245,7 +264,52 @@ const ARRANGEMENT_FIELDS = [
  * are already looking at would hit the cache and render the version it fixes.
  */
 function otfCacheKey(part) {
+    // A provisional take is being written right now — it has neither a
+    // published file nor an overlay row, and it must never share a cache
+    // slot with the take it will eventually sit beside.
+    if (part?.provisional) return `provisional:${part.partId || part.instrument || 'new'}`;
     return part?.pending ? `pending:${part.pending_id}` : part?.file;
+}
+
+/**
+ * The URL-safe names one take answers to in `#work/{slug}/edit/{ref}`.
+ *
+ * A take has up to three: the works/ filename a correction targets
+ * (`src_file` — the stable one), the published file's basename, and its
+ * own label. All three are minted from data, so all three are accepted;
+ * `takeEditRef` picks which one a link we mint uses.
+ */
+function fileStem(path) {
+    return String(path || '').split('/').pop().replace(/\.otf\.json$/, '');
+}
+
+export function takeRefs(arr) {
+    const refs = new Set();
+    if (arr?.src_file) refs.add(fileStem(arr.src_file));
+    if (arr?.file) refs.add(fileStem(arr.file));
+    if (arr?.label) refs.add(slugify(arr.label));
+    refs.delete('');
+    return [...refs];
+}
+
+/** The ref a link to this take should use. */
+export function takeEditRef(part) {
+    return takeRefs(part)[0] || part?.partId || null;
+}
+
+/**
+ * Find the take a `#work/{slug}/edit/{ref}` URL names.
+ * @returns {{part: Object, index: number}|null}
+ */
+export function findTakeByRef(parts, ref) {
+    if (!ref) return null;
+    for (const part of parts || []) {
+        if (part.type !== 'tablature') continue;
+        const takes = part.arrangements || [part];
+        const index = takes.findIndex(a => takeRefs(a).includes(ref));
+        if (index >= 0) return { part, index };
+    }
+    return null;
 }
 
 /**
@@ -465,6 +529,12 @@ export async function openWork(workId, options = {}) {
         fromList = false, listId = null, groupId = null,
         partId = null, fromDeepLink = false, fromHistory = false,
         exact = false,
+        // §9.2 — the editor is a MODE of this page, addressed by URL:
+        //   editRef: open THIS take in the editor once it renders
+        //   addTab:  {instrument, title, otf} — a new, unsaved take
+        editRef = null, addTab = null,
+        //   draft:   {id, otf} read out of the drafts bucket by `?draft=`
+        draft = null,
     } = options;
 
     if (!song) {
@@ -531,6 +601,11 @@ export async function openWork(workId, options = {}) {
     setLoadedTablature(null);
     teardownTablatureView();
     setBottomBand(null);
+    tabAuthoring = null;
+    takeStatusLine = null;
+    // Every openWork sets this — an unconsumed draft from a route the reader
+    // navigated away from must not leak into the next editor mount.
+    pendingDraft = draft;
 
     currentWork = song;
     currentArrangements = leadSheetArrangements(song);
@@ -565,6 +640,19 @@ export async function openWork(workId, options = {}) {
         activePart = availableParts.find(p => p.default) || availableParts[0] || null;
     }
 
+    // `#work/{slug}/edit/{ref}` names ONE take, which may not be the take (or
+    // even the instrument) the page would open on its own. Resolve it before
+    // the first render so the editor opens on the tab the URL asked for.
+    if (editRef) {
+        const found = findTakeByRef(availableParts, editRef);
+        if (found) {
+            activePart = found.part;
+            found.part.arrangementIndex = 0;   // applyArrangement is a no-op at 0
+            applyArrangement(found.part, found.index);
+            pendingTabEdit = { workId, ref: editRef, file: found.part.file };
+        }
+    }
+
     // Update list context index when navigating within a list;
     // drop a stale context when the song isn't in the current list
     if (fromList && listContext && listContext.songIds) {
@@ -595,6 +683,11 @@ export async function openWork(workId, options = {}) {
 
     pendingInitialRender = true;
     renderWorkView();
+
+    // `#work/{slug}/add-tab` — the song page, plus one new empty take with
+    // the editor open on it. Everything above already drew the page it will
+    // be published on; this only adds the take.
+    if (addTab) startAddTabMode(addTab);
 
     updateNavBar();
     if (fromList) {
@@ -668,9 +761,11 @@ export function renderWorkView() {
     }
 
     // Bounty section: the "help complete this song" surface. Shown for
-    // placeholders / empty works and any work with open bounties.
-    if (isPlaceholder(currentWork) || availableParts.length === 0 ||
-        getBountiesForWork(currentWork.id).length > 0) {
+    // placeholders / empty works and any work with open bounties — never on
+    // a provisional work, which has no id to hang a bounty off.
+    if (!currentWork.provisional &&
+        (isPlaceholder(currentWork) || availableParts.length === 0 ||
+         getBountiesForWork(currentWork.id).length > 0)) {
         const bountySection = renderBountySection();
         if (bountySection) container.appendChild(bountySection);
     }
@@ -807,6 +902,40 @@ function renderTitleHeader() {
     header.className = 'song-header';
     const title = currentWork.title || 'Untitled';
     const artist = currentWork.artist || '';
+
+    // A PROVISIONAL work (#new-tab) has no title yet — the two fields that
+    // decide what gets minted are the title slot itself, not a form on
+    // another page. They write straight onto `currentWork`, which is what
+    // the submission reads.
+    if (currentWork.provisional) {
+        header.classList.add('song-header-provisional');
+        header.innerHTML = `
+            <div class="song-header-left">
+                <div class="song-title-row">
+                    <input id="new-tab-title" class="song-title-input" type="text"
+                           maxlength="200" placeholder="Song title"
+                           aria-label="Song title">
+                    <span class="placeholder-badge">New tab</span>
+                </div>
+                <div class="song-artist-line">
+                    <input id="new-tab-artist" class="song-artist-input" type="text"
+                           maxlength="200" placeholder="Artist (who plays it — optional)"
+                           aria-label="Artist">
+                </div>
+            </div>`;
+        const titleInput = header.querySelector('#new-tab-title');
+        const artistInput = header.querySelector('#new-tab-artist');
+        titleInput.value = currentWork.title || '';
+        artistInput.value = currentWork.artist || '';
+        titleInput.addEventListener('input', () => {
+            currentWork.title = titleInput.value.trim();
+        });
+        artistInput.addEventListener('input', () => {
+            currentWork.artist = artistInput.value.trim();
+        });
+        return header;
+    }
+
     // The details button is always in the DOM and hidden by class, because
     // trust/login resolve AFTER the first render — updateWorkTopBar is called
     // again when they land (main.js updateDeleteButtonVisibility) and just
@@ -839,6 +968,10 @@ function renderPillRow() {
     const row = document.createElement('div');
     row.className = 'song-pill-row';
     row.id = 'song-pill-row';
+
+    // A provisional work has no chart, no key, no versions and no index row
+    // to describe — every pill here would be an empty popover.
+    if (currentWork.provisional) return row;
 
     if (songHasContent(currentWork)) {
         row.appendChild(buildKeyPill(currentWork));
@@ -883,6 +1016,7 @@ function renderPartTabs() {
 /** Human "Intermediate · Open G · Banjo Hangout" for one arrangement. */
 function arrangementMeta(arr, { withSource = true } = {}) {
     return [
+        arr.provisional ? 'unsaved' : null,
         arr.pending ? 'just submitted' : null,
         arr.difficulty, arr.tuning,
         withSource ? prettySource(arr.source) : null,
@@ -917,6 +1051,17 @@ function renderArrangementBar() {
     }
     host.classList.remove('hidden');
 
+    // "Submitted — live now, appears in search after the next build."
+    // The take header is where a submission's status belongs: the reader is
+    // looking at the take it is about, on the page it was submitted from.
+    const renderStatusLine = () => {
+        if (!takeStatusLine) return;
+        const line = document.createElement('div');
+        line.className = 'arr-status';
+        line.textContent = takeStatusLine;
+        host.appendChild(line);
+    };
+
     const index = part.arrangementIndex || 0;
     const cur = arrangements[index];
     const single = arrangements.length === 1;
@@ -938,6 +1083,7 @@ function renderArrangementBar() {
             part.arrangementsOpen ? '▴' : '▾'}</span>`}
     `;
     host.appendChild(summary);
+    renderStatusLine();
 
     if (single) return;
 
@@ -1445,6 +1591,13 @@ export function canEditMetadataHere(song = currentWork) {
 export function updateWorkTopBar() {
     if (!currentWork || currentView !== 'song') return;
 
+    // A provisional work isn't in any list, can't be exported, flagged,
+    // promoted or deleted — it doesn't exist yet. Back is the whole band.
+    if (currentWork.provisional) {
+        setTopBar({ back: { onClick: goBack }, title: null, actions: [], overflow: [] });
+        return;
+    }
+
     const actions = [];
 
     // Edit lives in the title row (a content action stays with the
@@ -1706,8 +1859,29 @@ function startTabContribution(section, instrument) {
         }),
         onView: (tab) => openTabPart(tab.file, { edit: false }),
         onImprove: (tab) => openTabPart(tab.file, { edit: true }),
+        onImport: () => importTefAsNewTake(instrument, plan.count),
         onBack: () => body.querySelector('.tab-existing-panel')?.remove(),
     }));
+}
+
+/**
+ * A TablEdit file as a new take on THIS song: parse it here and drop
+ * straight into add-tab mode with the parsed document loaded, so the
+ * preview is the song page it will be published on.
+ */
+function importTefAsNewTake(instrument, existingCount = 0) {
+    if (!requireLogin('add a tab')) return;
+    pickTefFile((otf) => {
+        if (!currentWork) return;
+        startAddTabMode({
+            instrument, title: currentWork.title, existingCount, otf,
+        });
+        const hash = createTabHref({ workId: currentWork.id, instrument });
+        if (window.location.hash !== hash) {
+            history.replaceState(
+                { view: 'song', songId: currentWork.id }, '', hash);
+        }
+    });
 }
 
 /**
@@ -2135,14 +2309,23 @@ function renderDocumentPart(part, container) {
  * Render tablature part
  */
 async function renderTablaturePart(part, container) {
+    // A take that exists only in this session has nothing to fetch and
+    // nothing to read: the editor IS its view (add-tab / new-tab modes).
+    if (part.provisional) {
+        mountTabEditor(tabAuthoring?.otf, part, container, {
+            kind: tabAuthoring?.kind || 'add',
+        });
+        return;
+    }
+
     container.innerHTML = '<div class="loading">Loading tablature...</div>';
 
     // A parked "improve this tab" intent (from the picker's early offramp,
-    // or from this page's own panel) names an arrangement by file — point
-    // the part at it before anything is fetched.
+    // this page's own panel, or a `#work/{slug}/edit/{ref}` URL) names one
+    // arrangement — point the part at it before anything is fetched.
     if (pendingTabEdit && pendingTabEdit.workId === currentWork?.id) {
         const idx = (part.arrangements || [])
-            .findIndex(a => a.file === pendingTabEdit.file);
+            .findIndex(a => tabEditIntentMatches(a));
         if (idx >= 0) applyArrangement(part, idx);
     }
 
@@ -2156,6 +2339,14 @@ async function renderTablaturePart(part, container) {
             otf._partFile = cacheKey;
             setLoadedTablature(otf);
         }
+
+        // The page moved on while the document was in flight. `container` is
+        // the check that catches every case: renderWorkView builds a FRESH
+        // content div, so a superseded render is holding a detached node —
+        // and finishing it would mount a read-mode band over the edit-mode
+        // one (add-tab reuses this very part object, so comparing parts is
+        // not enough).
+        if (!document.contains(container) || activePart !== part || part.provisional) return;
 
         container.innerHTML = '';
         destroyTrackRenderers(); // disconnect old theme/resize observers
@@ -2406,7 +2597,7 @@ async function renderTablaturePart(part, container) {
         // The parked "improve this one" intent: the document only exists
         // here, so this is the one place the editor can be handed it.
         if (pendingTabEdit && pendingTabEdit.workId === currentWork?.id &&
-            pendingTabEdit.file === part.file) {
+            tabEditIntentMatches(part)) {
             pendingTabEdit = null;
             enterTabEditMode(otf, part, container);
         }
@@ -2417,17 +2608,102 @@ async function renderTablaturePart(part, container) {
     }
 }
 
+// ============================================
+// THE EDITOR AS A MODE OF THIS PAGE (plan §9)
+// ============================================
+//
+// One surface for create, edit and read: the page you edit on is the page
+// the tab is published on. There is no create page any more — `create.html`
+// is a redirect shim into these three modes, which differ only in what the
+// take IS and what the Submit button means:
+//
+//   edit  an existing take, corrected      → Submit correction (+ ✓ Done)
+//   add   a new take on a song we have     → Submit tab
+//   new   a new take on a song we don't    → Submit tab, and the work is
+//                                            minted from the title/artist
+//                                            fields in the title slot
+//
+// All three keep the app shell, the take header and — this is the change —
+// the BOTTOM BAND, re-bound to the live editor document (tab-edit-band.js).
+
+/** Does the parked edit intent name this take? */
+function tabEditIntentMatches(take) {
+    if (!pendingTabEdit || !take) return false;
+    if (pendingTabEdit.file && take.file === pendingTabEdit.file) return true;
+    return !!pendingTabEdit.ref && takeRefs(take).includes(pendingTabEdit.ref);
+}
+
+/** Download filename stem for a take (no extension). */
+function editFilename(part) {
+    return (part.file
+        || [currentWork?.id, part.instrument].filter(Boolean).join('-')
+        || 'tab').split('/').pop().replace(/\.otf\.json$/, '');
+}
+
 /**
- * Enter edit mode for a tablature part: mount the OTF editor over the
- * rendered tab. Done/Ctrl+S applies the edited document back to the
- * view (in memory) and re-renders; Cancel restores the original.
- * Editor + session code are lazy-imported so readers never pay for it.
+ * Ask for a .tef and hand back the parsed OTF.
+ *
+ * The drop zone that used to live on create.html: a TablEdit file is a
+ * starting point for a take, so it belongs wherever a take is started —
+ * the add-tab flow and the existing-takes offramp. The parser is imported
+ * lazily; readers never pay for it.
  */
-async function enterTabEditMode(otf, part, container) {
+export async function pickTefFile(onDocument, { file = null } = {}) {
+    const load = async (chosen) => {
+        if (!chosen) return;
+        try {
+            const { parseTef } = await import('./tef-import/index.js');
+            const bytes = new Uint8Array(await chosen.arrayBuffer());
+            const otf = parseTef(bytes, chosen.name);
+            const hasNotes = Object.values(otf.notation || {})
+                .some(measures => measures.length > 0);
+            if (!hasNotes) {
+                showToast("We couldn't read any notes from that tab file.",
+                    { variant: 'warning', duration: 6000 });
+                return;
+            }
+            onDocument(otf);
+        } catch (err) {
+            // Format-agnostic on purpose: nobody should have to know which
+            // TablEdit variant they have. (The version error is caught by
+            // TYPE — TefVersionError does not set a `name`.)
+            const { TefVersionError } = await import('./tef-import/index.js');
+            showToast(err instanceof TefVersionError
+                ? "This tab file uses a variant we can't read yet — please report it."
+                : `Could not read that tab file: ${err.message}`,
+                { variant: 'warning', duration: 6000 });
+        }
+    };
+
+    if (file) return load(file);
+
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.tef';
+    input.style.display = 'none';
+    document.body.appendChild(input);
+    input.addEventListener('change', async () => {
+        const chosen = input.files?.[0];
+        input.remove();
+        await load(chosen);
+    });
+    input.click();
+}
+
+/**
+ * Mount the editor over the part's content area, with the bottom band
+ * bound to the document being edited.
+ *
+ * @param {Object} otf - the document
+ * @param {Object} part - the part (its arrangement fields name the take)
+ * @param {HTMLElement} container - the part content area
+ * @param {{kind: 'edit'|'add'|'new'}} options
+ */
+async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
+    if (!otf || !container) return;
+
     // Stop playback before handing the document to the editor
-    if (tablaturePlayer?.isPlaying) {
-        tablaturePlayer.stop();
-    }
+    if (tablaturePlayer?.isPlaying) tablaturePlayer.stop();
 
     const [
         { OTFEditor },
@@ -2441,86 +2717,437 @@ async function enterTabEditMode(otf, part, container) {
         import('./drafts.js'),
     ]);
 
-    // Autosave (§9.3): every edit lands in the IndexedDB drafts bucket on a
-    // ~1s trailing edge, so a reload, a crash or a sign-in round trip does
-    // not cost the session. The draft is cleared when the correction is
-    // submitted or explicitly discarded; ✓ Done keeps it, because Done only
-    // applies the document to THIS page and closing the tab would otherwise
-    // lose it.
-    const autosave = createAutosaver({
-        store: getDraftStore(),
-        meta: {
-            workId: currentWork?.id || null,
-            takeRef: part.src_file || part.file || part.instrument || null,
-            title: currentWork?.title || otf?.metadata?.title || null,
-            instrument: part.instrument || null,
-        },
-    });
+    // The reader navigated while the editor was being fetched
+    if (activePart !== part || !document.contains(container)) return;
 
-    // Park the bottom-band controls while editing (they drive dead renderers)
-    const editNotice = document.createElement('div');
-    editNotice.className = 'tab-controls';
-    editNotice.innerHTML = '<em>Editing — use the editor bar below. ✓ Done applies your changes, Cancel discards them.</em>';
-    setBottomBand(editNotice);
+    // A `?draft=…` route means "my unsubmitted work", so its document wins
+    // over whatever this take holds — for an edit that is the PUBLISHED tab,
+    // which is precisely what the draft is a correction to. Consumed here so
+    // a later mount can never pick a stale one up.
+    const draft = pendingDraft;
+    pendingDraft = null;
+    if (draft?.otf) otf = draft.otf;
 
     // The rendered-view renderers are about to be detached — drop their
     // observers now; renderTablaturePart rebuilds them on exit.
     destroyTrackRenderers();
+    if (activeEditSession) { activeEditSession.destroy(); activeEditSession = null; }
+    if (activeEditBand) { activeEditBand.destroy(); activeEditBand = null; }
     container.innerHTML = '';
-    // A pending take has no published file to name the download after.
-    const baseName = (part.file
-        || [currentWork?.id, part.instrument].filter(Boolean).join('-')
-        || 'tab').split('/').pop().replace(/\.otf\.json$/, '');
+
+    const isNewTake = kind !== 'edit';
+    const target = tabAuthoring?.target || {};
+    const instrument = sanitizeInstrument(part.instrument || target.instrument) || 'banjo';
+
+    // The drafts bucket (§9.3): IndexedDB, one record per session, written
+    // on a trailing edge by `onChange` below.
+    const autosave = createAutosaver({
+        store: getDraftStore(),
+        id: draft?.id || null,
+        meta: {
+            // What a draft has to remember to be REOPENABLE: which work it
+            // belongs to (none, for a song the songbook doesn't have), which
+            // take it corrects (edit only — a new take has no ref yet), and
+            // what to call it in the list. drafts.js::draftOpenHash turns
+            // exactly these back into `#new-tab?draft=` /
+            // `#work/{slug}/add-tab?draft=` / `#work/{slug}/edit/{ref}?draft=`.
+            workId: currentWork?.provisional ? null : (currentWork?.id || null),
+            takeRef: isNewTake ? null : takeEditRef(part),
+            title: currentWork?.title || otf?.metadata?.title || null,
+            instrument,
+        },
+    });
+
+    // THE BAND SURVIVES. Same controls the reader had a second ago, built
+    // from the same document, re-bound to the editor by bindBandToEditor.
+    const controls = createTablatureControls(otf, part);
+    setBottomBand(controls);
+
+    // The session's buttons take the ✏️ Edit button's slot in the band; the
+    // holder is detached here and inserted by bindBandToEditor below.
+    const barHost = document.createElement('span');
+    barHost.className = 'tab-edit-band-actions';
+
+    const extraActions = isNewTake ? [{
+        className: 'tab-edit-import',
+        label: '📂 Import .tef…',
+        title: 'Replace this take with a TablEdit (.tef) file',
+        onClick: (session) => pickTefFile(doc => session.replaceDocument(doc)),
+    }] : [];
 
     activeEditSession = createTabEditSession({
         mount: container,
         otf,
-        trackId: resolveEditTrackId(otf, part.instrument),
-        filename: `${baseName}-edited`,
-        editorFactory: (opts) => new OTFEditor({
-            ...opts,
-            onChange: (doc) => autosave.save(doc),
-        }),
+        trackId: resolveEditTrackId(otf, instrument),
+        filename: `${editFilename(part)}${isNewTake ? '' : '-edited'}`,
+        editorFactory: (opts) => new OTFEditor(opts),
+        barHost,
+        submitLabel: isNewTake ? '🚀 Submit tab' : '🚀 Submit correction',
+        showDone: !isNewTake,
+        commentRequired: !isNewTake,
+        extraActions,
+        // Every edit, in every mode, lands in the drafts bucket on a ~1s
+        // trailing edge (§9.3) — a reload, a crash or a sign-in round trip
+        // does not cost the session, and `#drafts` can reopen it on the
+        // route it was written on.
+        onChange: (doc) => {
+            autosave.save(doc);
+            // A new take ALSO keeps the single localStorage slot create.html
+            // used to own, because that is what startAddTabMode resumes from
+            // synchronously (IndexedDB cannot answer during a render). The
+            // target travels with it: a sign-in round trip drops the query
+            // string, and the draft is where it survives.
+            if (isNewTake) {
+                saveDraft(doc, {
+                    workId: currentWork?.provisional ? null : (currentWork?.id || null),
+                    instrument,
+                });
+            }
+        },
         onApply: (doc) => {
             doc._partFile = otfCacheKey(part); // keep the view cache keyed to this part
             setLoadedTablature(doc);
+            if (tabAuthoring) tabAuthoring.otf = doc;
         },
         onExit: (reason) => {
             activeEditSession = null;
-            // Cancel means "I don't want these edits" — the draft goes too.
+            activeEditBand?.destroy();
+            activeEditBand = null;
+            // Cancel means "I don't want these edits" — the draft goes with
+            // them. ✓ Done keeps it: Done only applies the document to THIS
+            // page, and closing the tab afterwards would otherwise lose it.
             if (reason === 'cancel') autosave.clear().catch(() => {});
             else autosave.flush().catch(() => {});
-            renderTablaturePart(part, container);
-        },
-        // Save-back: the same instant pipeline song corrections use — the
-        // editor's payoff beyond Download. Login gate lands here, at submit
-        // time: editing (and Download) stay open to everyone; only the
-        // submission needs an identity.
-        onSubmit: async (doc, comment) => {
-            if (!requireLogin('submit tab corrections')) {
-                throw new Error('Sign in to submit — opening sign-in…');
+            if (isNewTake) {
+                exitAuthoring(reason, part, container);
+            } else {
+                restoreWorkHash();
+                // The take header carries the submission's status (and its
+                // pending badge) — it is drawn outside the part content, so
+                // it has to be re-rendered alongside it.
+                renderArrangementBar();
+                renderTablaturePart(part, container);
             }
-            const result = await submitTab({
-                type: 'tab-correction',
-                otf: doc,
-                title: currentWork?.title || doc.metadata?.title || 'Untitled',
-                instrument: part.instrument || 'banjo',
-                // WHICH take is being corrected. A work can carry several
-                // arrangements per instrument, so the instrument alone
-                // names the wrong file for every one but the first.
-                file: part.src_file || undefined,
-                workId: currentWork?.id,
-                comment,
-            });
-            // The correction is live the moment the row lands — pull the
-            // overlay into allSongs so every other surface (search, this
-            // work reopened, My Submissions) sees it without a reload.
-            await window.refreshPendingSongs?.();
+        },
+        onSubmit: isNewTake
+            ? (doc) => submitAuthoredTake(doc, part)
+            : (doc, comment) => submitTabCorrection(doc, part, comment, submitTab),
+        onSubmitted: (result, doc) => {
             // Submitted: the draft has served its purpose.
-            await autosave.clear().catch(() => {});
-            return result;
+            autosave.clear().catch(() => {});
+            if (isNewTake) landSubmittedTake(result, part, container);
+            else landSubmittedCorrection(result, doc, part);
         },
     });
+
+    activeEditBand = bindBandToEditor(controls, activeEditSession.editor, {
+        actions: barHost,
+    });
+
+    // The editor is a URL, so a reload (or a link to a reviewer) comes back
+    // to the same take in the same mode.
+    if (kind === 'edit' && currentWork?.id) {
+        const ref = takeEditRef(part);
+        // A session opened FROM a draft keeps `?draft=` in the URL: reloading
+        // must come back to the correction in progress, not to the published
+        // take it corrects.
+        const suffix = draft?.id ? `?draft=${encodeURIComponent(draft.id)}` : '';
+        const hash = `${editTabHref(currentWork.id, ref)}${suffix}`;
+        if (ref && window.location.hash !== hash) {
+            history.replaceState({ view: 'song', songId: currentWork.id, edit: ref }, '', hash);
+        }
+    }
+}
+
+/** Back-compat name: "✏️ Edit on the take you are reading". */
+async function enterTabEditMode(otf, part, container) {
+    return mountTabEditor(otf, part, container, { kind: 'edit' });
+}
+
+/** Put the URL back on the take being read. */
+function restoreWorkHash() {
+    if (!currentWork?.id || currentWork.provisional) return;
+    const partSeg = activePart?.partId && !activePart.default ? `/${activePart.partId}` : '';
+    const hash = `#work/${currentWork.id}${partSeg}`;
+    if (window.location.hash !== hash) {
+        history.replaceState({ view: 'song', songId: currentWork.id }, '', hash);
+    }
+}
+
+/** Submit a correction to an existing take (unchanged payload). */
+async function submitTabCorrection(doc, part, comment, submitTab) {
+    if (!requireLogin('submit tab corrections')) {
+        throw new Error('Sign in to submit — opening sign-in…');
+    }
+    const result = await submitTab({
+        type: 'tab-correction',
+        otf: doc,
+        title: currentWork?.title || doc.metadata?.title || 'Untitled',
+        instrument: part.instrument || 'banjo',
+        // WHICH take is being corrected. A work can carry several
+        // arrangements per instrument, so the instrument alone names the
+        // wrong file for every one but the first.
+        file: part.src_file || undefined,
+        workId: currentWork?.id,
+        comment,
+    });
+    // The correction is live the moment the row lands — pull the overlay
+    // into allSongs so every other surface (search, this work reopened, My
+    // Submissions) sees it without a reload.
+    await window.refreshPendingSongs?.();
+    return result;
+}
+
+/**
+ * A submitted correction is LIVE on this take — so the take becomes the
+ * pending one, exactly as it will be for everyone else the moment the
+ * overlay reaches them. The reader who just fixed bar 12 sees their fix,
+ * badged as just-submitted, on the page they fixed it on.
+ */
+function landSubmittedCorrection(result, doc, part) {
+    const take = activeArrangement(part) || part;
+    take.pending = true;
+    take.pending_id = result?.id || `correction:${part.instrument || 'tab'}`;
+    take.content = JSON.stringify(doc);
+    for (const f of ARRANGEMENT_FIELDS) part[f] = take[f];
+
+    takeStatusLine = result?.synced === false
+        ? 'Submitted — live now, syncing to the songbook; it appears in search after the next build.'
+        : 'Submitted — live now, appears in search after the next build.';
+}
+
+// ============================================
+// AUTHORING A NEW TAKE (add-tab / new-tab)
+// ============================================
+
+/** The take a new tab is written on, before anything has been submitted. */
+function makeProvisionalTake(instrument, title) {
+    const name = tabLabel(instrument).replace(/ Tab$/, '');
+    return {
+        instrument,
+        label: `${name} — new take (unsaved)`,
+        provisional: true,
+        file: null,
+        src_file: null,
+        source: null,
+        author: null,
+        title: title || null,
+    };
+}
+
+/**
+ * Add an unsaved take to this work and open the editor on it.
+ *
+ * The page around it does not change: title, artist, Info, the other takes
+ * and the bounty list are all still there, because what you are adding is
+ * a take on THIS song and that is what the page has to show.
+ *
+ * @param {Object} target - {instrument, title, existingCount, otf?}
+ */
+export function startAddTabMode(target = {}) {
+    if (!currentWork) return false;
+
+    const instrument = sanitizeInstrument(target.instrument) || 'banjo';
+    // An unsaved draft comes back only for the take it was written for —
+    // same work (or the same "no work at all"). A draft from another song
+    // is somebody else's notes appearing in your tab, so it stays parked.
+    const draft = target.otf ? null : loadDraft();
+    const draftFits = draft &&
+        (draft.target?.workId || null) === (currentWork.provisional ? null : currentWork.id);
+    const otf = target.otf || (draftFits ? draft.otf : null) || buildNewTab({
+        title: currentWork.title || target.title || 'Untitled',
+        instruments: [presetForInstrument(instrument)],
+    });
+
+    const take = makeProvisionalTake(instrument, currentWork.title);
+
+    // Beside the takes that already exist for this instrument when there
+    // are any; a pill of its own when there aren't.
+    // Instrument FAMILIES, not string equality — a part stored as
+    // `5-string-banjo` is the banjo pill everywhere else in the app, and a
+    // new banjo take belongs beside it rather than in a second pill.
+    let part = availableParts.find(p =>
+        p.type === 'tablature' && partMatchesInstrument(p, instrument));
+    if (part) {
+        part.arrangements = [...(part.arrangements || []), take];
+        applyArrangement(part, part.arrangements.length - 1);
+    } else {
+        part = {
+            type: 'tablature',
+            format: 'otf',
+            instrument,
+            label: tabLabel(instrument),
+            partId: slugify(tabLabel(instrument)),
+            arrangements: [take],
+            arrangementIndex: 0,
+            aliases: [],
+        };
+        for (const f of ARRANGEMENT_FIELDS) part[f] = take[f];
+        availableParts.push(part);
+    }
+
+    tabAuthoring = { kind: currentWork.provisional ? 'new' : 'add', part, take, target, otf };
+    activePart = part;
+    takeStatusLine = (draftFits && !target.otf)
+        ? 'Picked up where you left off — this is your unsaved draft.'
+        : null;
+    setLoadedTablature(null);
+
+    renderWorkView();
+    return true;
+}
+
+/**
+ * `#new-tab` — a provisional WORK page for a song the songbook doesn't
+ * have. Same chrome, same take header, same band; the title and artist
+ * are inputs in the title slot, and the submission mints the work.
+ */
+export function openNewTabPage(options = {}) {
+    const instrument = sanitizeInstrument(options.instrument) || 'banjo';
+    const otf = options.otf || buildNewTab({
+        title: options.title || 'Untitled',
+        instruments: options.instruments || [presetForInstrument(instrument)],
+        timeSignature: options.timeSignature,
+        tempo: options.tempo,
+        measures: options.measures,
+    });
+
+    setCurrentChordpro(null);
+    setCurrentView('song');
+    setChromeAutoHide(true);
+    teardownTablatureView();
+    setBottomBand(null);
+    setLoadedTablature(null);
+
+    currentWork = {
+        id: null,
+        provisional: true,
+        title: options.title || '',
+        artist: '',
+        tablature_parts: [],
+    };
+    currentArrangements = [];
+    activeArrangementSlug = null;
+    currentGroupVersions = [];
+    availableParts = [];
+    activePart = null;
+    tabAuthoring = null;
+    takeStatusLine = null;
+    pendingInitialRender = true;
+    pendingDraft = options.draft || null;
+
+    startAddTabMode({ instrument, title: options.title, otf });
+    return true;
+}
+
+/** Cancel out of an unsaved take: drop it and put the page back. */
+function exitAuthoring(reason, part, container) {
+    const authoring = tabAuthoring;
+    tabAuthoring = null;
+
+    if (reason === 'cancel') {
+        // Never leave an unsaved take sitting in the versions list — and
+        // Cancel means "discard this take", so its draft goes with it.
+        const takes = part.arrangements || [];
+        const idx = takes.findIndex(a => a.provisional);
+        if (idx >= 0) takes.splice(idx, 1);
+        if (!takes.length) {
+            availableParts = availableParts.filter(p => p !== part);
+        }
+        clearDraft();
+        takeStatusLine = null;
+        if (currentWork?.provisional) {
+            goBack();
+            return;
+        }
+        // Point the part back at a take that still exists BEFORE choosing
+        // what to show: a stale index outlives this render otherwise.
+        if (takes.length) applyArrangement(part, 0);
+        // Back to the take they were adding one beside, when it still exists
+        activePart = availableParts.includes(part)
+            ? part
+            : (availableParts.find(p => p.default) || availableParts[0] || null);
+        restoreWorkHash();
+        pendingInitialRender = true;
+        renderWorkView();
+        return;
+    }
+
+    // 'apply' never happens for a new take (there is no ✓ Done), but if it
+    // ever does, keep the take and re-render it.
+    tabAuthoring = authoring;
+    renderTablaturePart(part, container);
+}
+
+/** Submit a brand-new take (add-tab / new-tab). Payload unchanged. */
+async function submitAuthoredTake(doc, part) {
+    const target = tabAuthoring?.target || {};
+    const minting = !!currentWork?.provisional;
+    // A MINT takes its title from the header field and nowhere else: the
+    // document's own metadata says "Untitled" until someone types, and
+    // minting `works/untitled` is how a corpus gets junk in it.
+    const title = (minting
+        ? (currentWork.title || '')
+        : (currentWork?.title || target.title || doc.metadata?.title || '')).trim();
+    if (!title) throw new Error('Give this tab a song title first.');
+
+    // What was submitted is what the page must show as pending afterwards —
+    // `tabAuthoring.otf` otherwise still holds the document as it was when
+    // the editor opened (onApply only fires on Ctrl+S / ✓ Done).
+    if (tabAuthoring) tabAuthoring.otf = doc;
+
+    return submitNewTab(doc, {
+        workId: currentWork?.provisional ? null : currentWork?.id,
+        instrument: part.instrument || target.instrument,
+        title,
+        // Only travels with a MINT — submitNewTab drops it when there is a
+        // target work, which already has an artist of its own.
+        artist: currentWork?.provisional ? (currentWork.artist || '') : '',
+    });
+}
+
+/**
+ * A submitted take stops being provisional and becomes PENDING: the same
+ * state a tab submitted from anywhere else is in — live on this page now,
+ * in search after the next build. Nothing navigates.
+ */
+function landSubmittedTake(result, part, container) {
+    const take = (part.arrangements || []).find(a => a.provisional) || part;
+    const doc = tabAuthoring?.otf || activeEditSession?.editor?.save?.();
+
+    take.provisional = false;
+    take.pending = true;
+    take.pending_id = result?.id || 'new-take';
+    take.content = JSON.stringify(doc);
+    take.label = `${tabLabel(part.instrument).replace(/ Tab$/, '')} — your take`;
+    for (const f of ARRANGEMENT_FIELDS) part[f] = take[f];
+
+    takeStatusLine = result?.synced === false
+        ? 'Submitted — live now, syncing to the songbook; it appears in search after the next build.'
+        : 'Submitted — live now, appears in search after the next build.';
+
+    clearDraft();
+    tabAuthoring = null;
+    activeEditSession?.destroy();
+    activeEditSession = null;
+    activeEditBand?.destroy();
+    activeEditBand = null;
+
+    // A minted work has a real id the moment the server answers — the page
+    // becomes that work's page without a reload.
+    if (currentWork?.provisional && result?.workId) {
+        currentWork.id = result.workId;
+        currentWork.provisional = false;
+        history.replaceState(
+            { view: 'song', songId: result.workId }, '', `#work/${result.workId}`);
+    } else {
+        restoreWorkHash();
+    }
+
+    setLoadedTablature(null);
+    pendingInitialRender = true;
+    renderWorkView();
+    window.refreshPendingSongs?.();
 }
 
 /**

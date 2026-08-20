@@ -21,6 +21,7 @@ docs/
 │   ├── song-view.js    # Lead-sheet rendering helpers, ABC notation, list nav
 │   ├── song-controls.js # Pill builders: Key / Display / Info / Export
 │   ├── tab-controls-sheet.js # Phone: re-parents the tab band's non-transport controls into a ⚙ settings sheet
+│   ├── tab-edit-band.js # The SAME bottom band, re-bound to the live editor document (edit mode keeps its controls)
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
 │   ├── tags.js         # Tag dropdown, filtering, virtual instrument tags/facets
 │   ├── title-match.js  # Song-title normalization (bounty board dedupe)
@@ -40,7 +41,6 @@ docs/
 │   ├── sw-strategy.js  # THE caching decisions (imported by ../sw.js and by its tests)
 │   ├── drafts.js       # IndexedDB drafts bucket + debounced editor autosave
 │   ├── drafts-view.js  # `#drafts` list (Open / Delete)
-│   ├── new-tab-route.js # `#new-tab` / `#work/{slug}/add-tab` seam (see §9.1 of the tab-editor plan)
 │   ├── audio-unlock.js # iOS audio: SYNC resume inside the tap + ringer-switch escape (never await before calling it)
 │   ├── supabase-auth.js # Auth, cloud sync, voting
 │   ├── renderers/      # Part renderers
@@ -125,6 +125,12 @@ content, and the shell's top/bottom bands for actions and playback.
   canonical URL. Legacy `#song/{id}` URLs resolve to the work and are
   rewritten with `history.replaceState`. List-context pages keep
   `#list/{listId}/{workId}` URLs.
+- **The tab editor is a MODE of this page, addressed by URL** (plan §9):
+  `#work/{slug}/edit/{take}`, `#work/{slug}/add-tab?instrument=`, and
+  `#new-tab?title=&instrument=&ts=&tempo=&measures=` for a song the
+  songbook doesn't have yet. All three are parsed by `parseTabRoute`
+  (`otf-editor/create-tab-entry.js`) and land in `openWork()` /
+  `openNewTabPage()` — never in a page of their own.
 
 ### State Variables
 
@@ -310,9 +316,37 @@ instead of the group representative.
 URL forms:
 
 - `#work/{slug}` — canonical song URL (`#work/{slug}/{partId}` for a part)
+- `#work/{slug}/edit/{take}` — that take open in the editor. `{take}` is the
+  take's own NAME (its `src_file` stem, e.g. `banjo-18967`), never an index:
+  curation pins re-sort takes between builds. `takeRefs` accepts the
+  published basename and the label too, so older links still land.
+- `#work/{slug}/add-tab?instrument=banjo` — the song page with one new,
+  unsaved take selected and the editor open on it
+- `#new-tab?title=&instrument=&ts=&tempo=&measures=` — a provisional WORK
+  page (title/artist are inputs in the title slot); submitting mints the work
+  and the hash becomes `#work/{id}` without a reload
 - `#song/{id}` — legacy; resolved via `resolveWorkId()` and rewritten to
   `#work/{slug}` with `history.replaceState`
 - `#list/{listId}/{workId}` — list-context pages keep list URLs
+
+**`create.html` is a redirect shim** (`?work=x&instrument=y` →
+`index.html#work/x/add-tab?instrument=y`; bare → `#new-tab`; `?draft=d-1`
+rides along either way). Its form,
+editor mount and `.tef` drop zone are gone; `create-tab.js` survives as the
+"new empty take" producer the song page calls, and the `.tef` import is
+offered wherever a take is started (`pickTefFile` in work-view.js).
+
+**The bottom band survives edit mode** (`tab-edit-band.js`). It used to be
+replaced by an italic notice, which took size/tempo/transport/metronome away
+at the moment the reader started changing what they describe — and the
+editor grew a second transport in its status bar. `bindBandToEditor(controls,
+editor)` re-binds the same band to the live document: size drives the
+editor's renderer, tempo writes through the facade (undoable, and it is what
+gets submitted), ▶/⏹ drive the editor's player, and the session's buttons
+(`Submit · Download · Cancel · Done`) take the `✏️ Edit` slot. Transpose,
+Unrolled/Repeats, feel and the mixer are **disabled with a reason**
+(`DISABLED_REASONS`) rather than removed — a control that vanishes reads as
+a bug.
 
 ### Track Mixer (Multi-Track Tablature)
 
@@ -455,11 +489,13 @@ enters the shell cache the first time it is fetched online.
 `js/drafts.js` is an IndexedDB bucket (`bgb-drafts` / `drafts`, key = draft
 id) of `{ id, title, instrument, workId?, takeRef?, otf, updatedAt }`. The
 editor autosaves into it on every facade `change`, debounced ~1s
-(`createAutosaver`), wired where the session is created (`work-view.js`
-`enterTabEditMode` passes `onChange` through `editorFactory`; `create.html`
-does the same) — never inside the editor. Submitting clears the draft;
-Cancel clears it; ✓ Done keeps it (Done only applies the document to the
-open page).
+(`createAutosaver`), wired where the session is created — `work-view.js`
+`mountTabEditor` passes the session's `onChange` — and never inside the
+editor. All three modes autosave; the record's `workId` / `takeRef` are what
+make it reopenable (see `draftOpenHash` below), so a new take files under
+`workId` with no `takeRef` and a correction files under both. Submitting
+clears the draft; Cancel clears it; ✓ Done flushes and keeps it (Done only
+applies the document to the open page).
 
 Storage is INJECTED (`memoryBackend()` / `idbBackend()`), so all of the
 logic is tested without `fake-indexeddb`, which this repo does not carry.
@@ -468,19 +504,28 @@ throwing.
 
 `migrateLegacyDraft()` imports the old single-slot localStorage draft
 (`otf-editor-draft`) once, under a fixed id, and leaves the localStorage copy
-in place so `create.html`'s Resume banner keeps working.
+in place: it is still what `startAddTabMode` resumes a half-written NEW take
+from ("Picked up where you left off"), which happens inside a render and so
+cannot wait on IndexedDB.
 
 `draftOpenHash()` builds the reopen route: `#new-tab?draft=`,
 `#work/{slug}/add-tab?draft=`, `#work/{slug}/edit/{take}?draft=`.
 
-### The `#new-tab` seam
+### Reopening a draft
 
 Those routes, the manifest's `file_handlers` action and the "New tab"
-shortcut all point at the §9.1 in-page surface, which is being built
-separately. `js/new-tab-route.js` is the single place that decides what they
-do until then: it forwards to `create.html` (same editor, same submit path).
-When the song-page surface lands, call `registerNewTabHandler(fn)` from it —
-no other caller changes.
+shortcut all point at the §9.2 in-page surface — the real hash routes, on
+the song page. `main.js::openTabRoute` is the one place that reads
+`?draft={id}` back out of the bucket (async, so `handleDeepLink` answers
+"mine" first and the page opens a tick later) and hands the document to the
+route: `openNewTabPage({otf})`, `openWork(id, {addTab: {otf}})`, or
+`openWork(id, {editRef, draft})`. In `work-view.js` a `draft` option parks
+in `pendingDraft`, which `mountTabEditor` consumes — the draft's document
+wins over the take's, which for an edit is exactly the point (your
+unsubmitted correction, not the published tab).
+
+`create.html` forwards `?draft=` through with the rest of its query string,
+so pre-PWA draft links still land in the right mode.
 
 ### File handling
 
@@ -917,8 +962,8 @@ Frictionless song requests without a GitHub account.
 
 Two entry points open the tab editor pre-targeted at a work — the work
 page's "+ Add a tab" / tablature-bounty Contribute, and the add-song
-picker's Tablature card — both routing through `create.html` with
-`?work=&instrument=&title=&have=`.
+picker's Tablature card — both routing to `#work/{slug}/add-tab` (or
+`#new-tab` when no work is named) with `?instrument=&title=&have=`.
 
 **A work that already has tabs for that instrument says so BEFORE the
 editor opens** (contract principle 4 — the offramp is offered early, never
@@ -929,8 +974,9 @@ instrument families the way `tags.js getInstrumentTags` does, so a
 `renderExistingTabsPanel` offers three ways forward:
 
 - **view** an existing take → `#work/{id}/{partId}`
-- **add mine as another version** → the editor exactly as before, with the
-  sibling count carried into the create-page banner
+- **add mine as another version** → `#work/{id}/add-tab`: the same song page
+  with an unsaved take added to the versions list, editor open
+- **import a .tef** → the same mode, with the parsed document loaded
 - **improve this one** → the tab-correction path (`enterTabEditMode`), via
   `requestTabEdit(workId, file)` when the work page isn't already open
 
