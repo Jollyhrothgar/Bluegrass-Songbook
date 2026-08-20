@@ -638,3 +638,31 @@ bare `create.html` → PWA manifest + drafts.
 - No mobile/touch input work beyond the menu collapsing to `☰` — the popover
   remains the touch path; this plan is keyboard-first.
 - No native (Electron/Tauri) wrapper; "standalone" means PWA (§9.3).
+
+## 11. Status — what shipped (2026-08-20)
+
+Built the same day as the plan, on `feature/tab-editor-improvements`, as
+six slices plus fixes; frontend suite 105 files / 2,598 tests green.
+
+| Plan item | Shipped as | Notes |
+|---|---|---|
+| P0 tie fix | `facade.setTie`; `tech: '~'` can no longer reach a document (load converts legacy `~` to `tie: true`) | triage verdict: ROOT FIX |
+| P0 binding table + honest help | `bindings.js` (104 actions), presets **tabledit** (default) and **vim**, help overlay / tooltips / context menu / menu bar all render from it; a test refuses browser-reserved chords | `Shift+A..J` not bound (collisions; refine window covers it) |
+| P0 square cursor, stems | one grid cell; stems 2.25 px in the editor (read view unchanged); flags redrawn as filled stem-down hooks | |
+| P1 auto-duration | `=`; column rule; session pins; `J` fix; `Ctrl+.` dotted, `Ctrl+3` triplet | fix-durations re-times tie continuations (found in validation) |
+| P1 duration on existing notes | duration keys re-time the note at cursor; `<` `>` `*` | |
+| P1 effects after the fact | `h p s m c l n`, `F3`; `Ctrl+h/p//` kept; `Ctrl+T` gone | vim: `a` operator |
+| P1 measures | `Insert`/`Ctrl+m`, `Delete` on empty measure, `Alt+Insert/Delete` ripple, `r` repeat previous, walk-past-end appends | |
+| P1 selection / nav | `Shift+arrows`, `Ctrl+A`, `Ctrl+←/→`, `Home/End`, `,`/`;`, `Tab`, `Ctrl+Space` | |
+| P1 re-string | `Alt+↑/↓`, `Ctrl+±` (pitch-preserving via `pitch.js`) | |
+| P2 counts, lick prompt, roll mode | counts via `g` prefix in vim (`g12G`); **lick prompt and roll mode not built** | follow-ups |
+| §7 feedback | cursor, stems, barlines (uniform slots), deterministic rows (pinned to the read view), re-string by key, append measures, auto-duration hotkey | sample-based banjo voice **not built**; drag-to-restring by mouse **not built** |
+| §8.3 menu bar + palettes | `menu-bar.js`; state-reflecting palettes; `hostTransport` / `fileActions` | Time signature / Tuning / Instrument voice items hook-gated (no op yet); repeat-with-endings still needs a dialog |
+| §9.1 one surface | routes `#work/{slug}/edit/{take}`, `#work/{slug}/add-tab`, `#new-tab`; band survives editing; `create.html` is a redirect shim; pending take after submit | `#new-tab` has an empty pill row (nothing to put there) |
+| §9.3 PWA | manifest, network-first SW, IndexedDB drafts + `#drafts`, file handling, Install in `⋯` | drafts don't sync to Supabase (by design, for now) |
+
+Known follow-ups: dropping a `.tef` while a session is open starts a new
+draft instead of replacing the take; an edit session not opened from a
+draft keeps a plain URL (reload returns to the published take — the draft
+is still in `#drafts`); the help overlay lists `F6`/`F11`/`Ctrl+T`/macOS
+`Ctrl+↑↓` as browser/OS exceptions.
