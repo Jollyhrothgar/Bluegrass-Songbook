@@ -359,7 +359,9 @@ describe('EditorState — annotations anchored to the cursor', () => {
     });
 });
 
-describe('KeyboardHandler — c / Shift+C', () => {
+// Placed text through the KEYS the vim preset uses (c / C). The
+// TablEdit preset puts the same actions on t / T — see keyboard.test.js.
+describe('KeyboardHandler — c / Shift+C (vim preset)', () => {
     let state;
     let cursor;
     let keyboard;
@@ -373,7 +375,7 @@ describe('KeyboardHandler — c / Shift+C', () => {
         document.body.appendChild(container);
         cursor.init(container);
         onEditAnnotation = vi.fn();
-        keyboard = new KeyboardHandler(state, cursor, { onEditAnnotation });
+        keyboard = new KeyboardHandler(state, cursor, { onEditAnnotation, preset: 'vim' });
     });
 
     it('c opens the text prompt', () => {

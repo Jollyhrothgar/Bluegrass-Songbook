@@ -18,6 +18,10 @@ import { NoteEntryPopover, AnnotationPopover, TrackNamePopover } from './popover
 import { sanitizeTrackId } from './facade.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
 import { ContextMenu } from './context-menu.js';
+import {
+    describe as describeBindings, getPreset, setPreset,
+    PRESETS, entryAdvanceTicks, stepTicks,
+} from './bindings.js';
 import { EditEventRecorder } from './recorder.js';
 
 // Note-entry feedback: a short pluck of the SAME sampled voice playback
@@ -89,9 +93,12 @@ export class OTFEditor {
         this.keyboard = new KeyboardHandler(this.state, this.cursor, {
             onSave: () => this._handleSave(),
             onShowHelp: () => this._showHelp(),
+            onTogglePlay: () => this.togglePlayback(),
             onPlayFromCursor: () => this.playFromCursor(),
+            onPlayMeasure: () => this.playMeasure(),
             onLoopSelection: () => this.loopSelection(),
             onEditAnnotation: () => this.editAnnotationAtCursor(),
+            onGoToMeasure: () => this._promptForMeasure(),
             recorder: this.recorder,
         });
         this.toolbar = new EditorToolbar(this.state, {
@@ -109,6 +116,9 @@ export class OTFEditor {
             fn();
             this.editorRoot?.focus();
         };
+        // Every entry is a binding action too, so the menu's key column
+        // comes from the table (`keyFor`) instead of a hand-kept string.
+        const menuAction = (id) => refocus(() => this.keyboard.dispatchAction(id));
         this.contextMenu = new ContextMenu({
             copy: refocus(() => this.state.copy()),
             cut: refocus(() => this._cutSelectionOrTick()),
@@ -123,6 +133,20 @@ export class OTFEditor {
             }),
             loop: refocus(() => this.loopSelection()),
             play: refocus(() => this.playFromCursor()),
+            playMeasure: refocus(() => this.playMeasure()),
+            tie: menuAction('effect.tie'),
+            dead: menuAction('effect.dead'),
+            choke: menuAction('effect.choke'),
+            clearTech: menuAction('effect.clear'),
+            restringUp: menuAction('note.restringUp'),
+            restringDown: menuAction('note.restringDown'),
+            fixDurations: menuAction('duration.fix'),
+            insertMeasureBefore: menuAction('measure.insertBefore'),
+            insertMeasureAfter: menuAction('measure.insertAfter'),
+            deleteMeasure: menuAction('measure.delete'),
+            repeatPrevious: menuAction('measure.repeatPrevious'),
+            rippleRight: menuAction('measure.rippleRight'),
+            rippleLeft: menuAction('measure.rippleLeft'),
             repeat: refocus(() => this._repeatSelectedMeasures(true)),
             unrepeat: refocus(() => this._repeatSelectedMeasures(false)),
         });
@@ -533,6 +557,36 @@ export class OTFEditor {
                 opacity: 0.7;
                 text-align: center;
             }
+            .editor-help-presets {
+                display: flex;
+                gap: 12px;
+                font-size: 12px;
+                margin-left: auto;
+                margin-right: 12px;
+            }
+            .editor-help-preset {
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+                cursor: pointer;
+            }
+            .editor-help-notes {
+                margin-top: 14px;
+                padding-top: 10px;
+                border-top: 1px solid var(--border, #ddd);
+                font-size: 12px;
+                opacity: 0.8;
+            }
+            .editor-help-notes ul { margin: 6px 0 0; padding-left: 18px; }
+            .editor-help-notes li { margin: 2px 0; }
+            .status-help-btn {
+                background: none;
+                border: none;
+                color: inherit;
+                font: inherit;
+                cursor: pointer;
+                padding: 0 4px;
+            }
         `;
 
         if (!document.querySelector('style[data-otf-editor]')) {
@@ -620,6 +674,8 @@ export class OTFEditor {
             this.contextMenu.open(e.clientX, e.clientY, {
                 hasSelection: !!this.state.selection,
                 hasClipboard: !!(this.state.clipboard?.data?.length),
+                hasNote: !!this.state.getNoteAtCursor(),
+                preset: getPreset(),
             });
         });
 
@@ -895,8 +951,14 @@ export class OTFEditor {
         this.state.cursor.string = note.string;
         this.state.insertNote(note.fret, { tech: note.tech });
 
-        // Advance cursor
-        this.cursor.moveByDuration(1);
+        // Advance exactly as typing a digit does: honours auto-advance,
+        // steps ONE GRID SLOT under automatic duration, and appends a
+        // measure when it walks off the end.
+        if (this.state.autoAdvance) {
+            stepTicks(this.keyboard.ctx, entryAdvanceTicks(this.state));
+        } else {
+            this.cursor.update();
+        }
 
         // Focus editor
         this.editorRoot.focus();
@@ -1015,8 +1077,14 @@ export class OTFEditor {
     }
 
     /**
-     * Show keyboard shortcut help — a dismissible overlay (the status-bar
-     * hint says "Press ? for help", so ? has to actually show something).
+     * Show keyboard shortcut help — a dismissible overlay GENERATED FROM
+     * THE BINDING TABLE (`bindings.js`), so it cannot drift from what the
+     * keys actually do. It used to be a hand-written copy and was wrong in
+     * four places at once (`w`/`b`, `3`, `G`, `Ctrl+T`).
+     *
+     * Every <kbd> here comes from `describe(preset)`. The browser/OS
+     * exceptions at the foot deliberately use <code>, not <kbd>: they name
+     * keys we do NOT bind.
      */
     _showHelp() {
         const existing = this.editorRoot.querySelector('.editor-help-overlay');
@@ -1026,31 +1094,17 @@ export class OTFEditor {
         }
         const overlay = document.createElement('div');
         overlay.className = 'editor-help-overlay';
-        overlay.innerHTML = `
-            <div class="editor-help-panel" role="dialog" aria-label="Keyboard shortcuts">
-                <div class="editor-help-head">
-                    <strong>Keyboard shortcuts</strong>
-                    <button class="editor-help-close" title="Close">&times;</button>
-                </div>
-                <div class="editor-help-cols">
-                    <dl>
-                        <dt>Navigate</dt><dd><kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> or arrows · <kbd>w</kbd>/<kbd>b</kbd> next/prev measure · <kbd>gg</kbd>/<kbd>G</kbd> start/end</dd>
-                        <dt>Notes</dt><dd><kbd>0</kbd>–<kbd>9</kbd> fret at cursor · <kbd>Space</kbd> rest · <kbd>x</kbd> delete note · <kbd>dd</kbd> delete tick</dd>
-                        <dt>Durations</dt><dd><kbd>q</kbd> quarter · <kbd>e</kbd> eighth · <kbd>s</kbd> sixteenth · <kbd>t</kbd> thirty-second · <kbd>3</kbd> triplet</dd>
-                    </dl>
-                    <dl>
-                        <dt>Text</dt><dd><kbd>c</kbd> add/edit placed text at cursor (section label, chord name) · <kbd>Shift</kbd>+<kbd>C</kbd> delete it · empty text deletes</dd>
-                        <dt>Modes</dt><dd><kbd>v</kbd> visual select · <kbd>A</kbd> annotation · <kbd>Esc</kbd> back to normal</dd>
-                        <dt>Edit</dt><dd><kbd>u</kbd> undo · <kbd>Ctrl</kbd>+<kbd>R</kbd> redo · <kbd>y</kbd>/<kbd>p</kbd> copy/paste · <kbd>Cmd</kbd>+<kbd>C</kbd>/<kbd>X</kbd>/<kbd>V</kbd></dd>
-                        <dt>Play</dt><dd><kbd>Cmd</kbd>+<kbd>Space</kbd> play from cursor · <kbd>L</kbd> loop selection</dd>
-                    </dl>
-                </div>
-                <div class="editor-help-foot">Press <kbd>?</kbd> or <kbd>Esc</kbd> to close</div>
-            </div>
-        `;
+        overlay.innerHTML = this._helpHtml(getPreset());
         const close = () => overlay.remove();
         overlay.addEventListener('click', (e) => {
             if (e.target === overlay || e.target.closest('.editor-help-close')) close();
+        });
+        overlay.addEventListener('change', (e) => {
+            const radio = e.target.closest('input[name="otf-preset"]');
+            if (!radio) return;
+            setPreset(radio.value);
+            overlay.innerHTML = this._helpHtml(getPreset());
+            overlay.focus();
         });
         overlay.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' || e.key === '?') { e.stopPropagation(); close(); this.editorRoot.focus(); }
@@ -1058,6 +1112,80 @@ export class OTFEditor {
         this.editorRoot.appendChild(overlay);
         overlay.tabIndex = -1;
         overlay.focus();
+    }
+
+    /** The overlay's markup for one preset (pure — a test renders both). */
+    _helpHtml(presetId) {
+        const preset = PRESETS[presetId] || PRESETS.tabledit;
+        const esc = (t) => String(t)
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const kbd = (keys) => keys.map(k => `<kbd>${esc(k)}</kbd>`).join(' ');
+        const groups = describeBindings(presetId).map(({ group, items }) => `
+            <dt>${esc(group)}</dt>
+            ${items.map(item => `<dd>${kbd(item.keys)} ${esc(item.label)}</dd>`).join('')}
+        `);
+        // Two balanced columns
+        const half = Math.ceil(groups.length / 2);
+        const col = (list) => `<dl>${list.join('')}</dl>`;
+        const switcher = Object.values(PRESETS).map(p => `
+            <label class="editor-help-preset">
+                <input type="radio" name="otf-preset" value="${esc(p.id)}"
+                    ${p.id === presetId ? 'checked' : ''}> ${esc(p.label)}
+            </label>`).join('');
+
+        return `
+            <div class="editor-help-panel" role="dialog" aria-label="Keyboard shortcuts">
+                <div class="editor-help-head">
+                    <strong>Keyboard shortcuts</strong>
+                    <span class="editor-help-presets">${switcher}</span>
+                    <button class="editor-help-close" title="Close">&times;</button>
+                </div>
+                <div class="editor-help-cols">
+                    ${col(groups.slice(0, half))}
+                    ${col(groups.slice(half))}
+                </div>
+                <div class="editor-help-notes">
+                    <strong>What the browser and the OS take:</strong>
+                    <ul>${preset.exceptions.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+                </div>
+                <div class="editor-help-foot">
+                    A slur marks the note it lands ON (in <code>2h4</code> the 4 is
+                    hammered) — pressing it on either note of a pair does the right
+                    thing. Press <kbd>?</kbd> or <kbd>Esc</kbd> to close.
+                </div>
+            </div>
+        `;
+    }
+
+    /**
+     * Play the cursor's measure once. There is no range-play API beyond
+     * `play({startTick, endTick})`, which is all this needs.
+     */
+    async playMeasure() {
+        this.player?.unlockAudio();
+        if (this.isPlaying) {
+            this.stop();
+            return;
+        }
+        const m = this.state.cursor.measure;
+        const startTick = this._unrolledTick(m, 0);
+        const endTick = startTick + this.state.facade.ticksFor(m);
+        await this.play({ startTick, endTick });
+    }
+
+    /**
+     * Ask which measure to jump to. A prompt for now — the menu-bar pass
+     * can swap in a popover without touching the binding table.
+     * @returns {number} measure number, or 0 to cancel
+     */
+    _promptForMeasure() {
+        const ask = globalThis.prompt;
+        if (typeof ask !== 'function') return 0;
+        const answer = ask(`Go to measure (1–${this.state.getMeasureCount()}):`,
+            String(this.state.cursor.measure));
+        const n = parseInt(answer, 10);
+        this.editorRoot?.focus();
+        return Number.isFinite(n) && n > 0 ? n : 0;
     }
 
     /**
@@ -1257,13 +1385,22 @@ export class OTFEditor {
                 <span class="status-label">Text:</span>
                 <span class="status-value" data-field="annotation">—</span>
             </span>
-            <span class="status-hint">
+            <button type="button" class="status-hint status-help-btn"
+                    title="Keyboard shortcuts">
                 Press <kbd>?</kbd> for help
-            </span>
+            </button>
         `;
 
         // Wire up playback controls (once)
         this._wirePlaybackControls();
+
+        // The help hint is a real <button>, so touch users can open the
+        // overlay at all (it used to be a <span>).
+        const helpBtn = this.statusBar.querySelector('.status-help-btn');
+        helpBtn?.addEventListener('click', () => {
+            this._showHelp();
+            this.editorRoot?.focus();
+        });
 
         // Initial update
         this._updateStatusBar();
@@ -1338,7 +1475,16 @@ export class OTFEditor {
             [DURATIONS.sixteenth]: '16th',
             [DURATIONS.thirtySecond]: '32nd',
             [DURATIONS.tripletEighth]: 'Triplet',
+            360: 'Dotted 8th',
+            720: 'Dotted quarter',
+            1440: 'Dotted half',
         };
+        // `null` is AUTOMATIC: show what the column rule would give the
+        // slot the cursor is on — TablEdit's palette does the same.
+        if (duration == null) {
+            const predicted = this.state.effectiveDuration();
+            return `auto (${names[predicted] || predicted + 't'})`;
+        }
         return names[duration] || 'Unknown';
     }
 

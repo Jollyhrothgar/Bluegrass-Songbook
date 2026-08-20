@@ -913,7 +913,19 @@ export class EditorCursor {
      * auto-advance after entering a note.
      */
     moveByDuration(direction) {
-        this.moveByTicks(direction * this.state.currentDuration);
+        // effectiveDuration(), never currentDuration: under AUTOMATIC
+        // duration the latter is `null`, and `direction * null` is 0 —
+        // the cursor simply stopped moving.
+        this.moveByTicks(direction * this._entryDuration());
+    }
+
+    /**
+     * The duration a note entered right now would get. Falls back to the
+     * raw field for the bare-state fixtures some unit tests build.
+     */
+    _entryDuration() {
+        const d = this.state.effectiveDuration?.();
+        return d || this.state.currentDuration || this.state.gridSubdivision;
     }
 
     /**
@@ -983,8 +995,22 @@ export class EditorCursor {
             const measureTicks = this.state.facade
                 ? this.state.facade.ticksFor(this.state.cursor.measure)
                 : this.state.ticksPerMeasure;
-            this.state.cursor.tick = Math.max(0, measureTicks - this.state.currentDuration);
+            this.state.cursor.tick = Math.max(0, measureTicks - this._entryDuration());
         }
+        this.update();
+        this.state._emit('cursorMove', this.state.cursor);
+    }
+
+    /**
+     * Jump to a string (1 = highest), clamped to the track's string
+     * count. The nav helper behind first/last-string keys.
+     * @param {number} stringNum
+     */
+    moveToString(stringNum) {
+        const count = this.state.getStringCount();
+        const next = Math.max(1, Math.min(count, stringNum));
+        if (next === this.state.cursor.string) return;
+        this.state.cursor.string = next;
         this.update();
         this.state._emit('cursorMove', this.state.cursor);
     }

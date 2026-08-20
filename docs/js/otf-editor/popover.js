@@ -1,6 +1,8 @@
 // OTF Editor popovers
 // UI for entering notes and placed text via click/tap
 //
+import { FretEntry } from './bindings.js';
+
 // Three siblings live here: NoteEntryPopover (string/fret/technique),
 // AnnotationPopover (the score's placed free text — "PART A", "Long
 // Choke", chord names) and TrackNamePopover (renaming an instrument
@@ -29,6 +31,11 @@ export class NoteEntryPopover {
         this.selectedFret = 0;
         this.selectedTech = null;
         this.highFretOffset = 0;
+
+        // ONE fret-entry algorithm, shared with the canvas keyboard
+        // (plan §8.2: "Two fret-entry algorithms … disagree"). A dialog
+        // has no hurry, so its refine window never times out.
+        this.fretEntry = new FretEntry({ maxFret: 24, refineMs: Infinity });
 
         // Position
         this.position = { x: 0, y: 0 };
@@ -393,6 +400,7 @@ export class NoteEntryPopover {
                 const fret = parseInt(btn.dataset.fret, 10);
                 this.selectedFret = this.highFretOffset + fret;
                 this.highFretOffset = 0;
+                this.fretEntry.remember({ fret: this.selectedFret });
                 this._updateFretDisplay();
             });
         });
@@ -410,6 +418,7 @@ export class NoteEntryPopover {
         this.element.querySelector('.fret-delete').addEventListener('click', () => {
             this.selectedFret = 0;
             this.highFretOffset = 0;
+            this.fretEntry.reset();
             this._updateFretDisplay();
         });
 
@@ -515,19 +524,26 @@ export class NoteEntryPopover {
             return;
         }
 
-        // Number keys for fret
-        if (/^[0-9]$/.test(key)) {
+        // Number keys for fret — the SAME rule the canvas uses: a second
+        // digit refines the first in place while it makes a real fret
+        // (1 then 2 → 12), otherwise it starts over (1 2 3 → 3).
+        if (/^[0-9]$/.test(key) && !event.ctrlKey && !event.metaKey) {
             event.preventDefault();
-            const digit = parseInt(key, 10);
-            if (this.selectedFret === 0) {
-                this.selectedFret = digit;
-            } else {
-                this.selectedFret = this.selectedFret * 10 + digit;
-                if (this.selectedFret > 24) {
-                    this.selectedFret = digit;
-                }
+            const result = this.fretEntry.digit(parseInt(key, 10));
+            if (result.kind !== 'pending') {
+                this.selectedFret = result.fret;
+                this.highFretOffset = 0;
+                this.fretEntry.remember({ fret: result.fret });
             }
             this._updateFretDisplay();
+            return;
+        }
+
+        // f — the canvas's high-fret prefix: the next two digits are one
+        // fret. Same key, same meaning, in both surfaces.
+        if (key === 'f') {
+            event.preventDefault();
+            this.fretEntry.armHighFret();
             return;
         }
 
@@ -563,10 +579,11 @@ export class NoteEntryPopover {
             return;
         }
 
-        // Backspace - clear fret
+        // Backspace - drop the last digit
         if (key === 'Backspace') {
             event.preventDefault();
             this.selectedFret = Math.floor(this.selectedFret / 10);
+            this.fretEntry.remember({ fret: this.selectedFret });
             this._updateFretDisplay();
             return;
         }
@@ -584,6 +601,8 @@ export class NoteEntryPopover {
         this.selectedFret = defaults.fret || 0;
         this.selectedTech = defaults.tech || null;
         this.highFretOffset = 0;
+        this.fretEntry.reset();
+        if (this.selectedFret) this.fretEntry.remember({ fret: this.selectedFret });
 
         // Update UI
         this.element.innerHTML = this._renderContent();
