@@ -33,7 +33,9 @@ Modes
 
 ``create_work``
     A brand-new work. On collision: suffix (``foo`` → ``foo-1``, the
-    historical importer behavior) or fail. Never overwrites.
+    historical importer behavior) or fail. Never overwrites. ``part=None``
+    mints a PLACEHOLDER — metadata and ``parts: []``, no content — which is
+    the one shape of work that has no part to carry provenance.
 ``add_part``
     Enrich an existing work with a NEW part (a tab for a work that only had
     a lead sheet). Refuses if a part with that identity already exists.
@@ -402,7 +404,8 @@ def _write_part_file(work_dir: Path, part: PartSpec):
 # ============================================
 
 
-def create_work(repo_root, work_id: str, title: str, part: PartSpec, *,
+def create_work(repo_root, work_id: str, title: str,
+                part: Optional[PartSpec], *,
                 artist: Optional[str] = None,
                 composers: Optional[list] = None,
                 default_key: Optional[str] = None,
@@ -414,6 +417,17 @@ def create_work(repo_root, work_id: str, title: str, part: PartSpec, *,
                 guards: Optional[Guards] = None,
                 verbose: bool = True) -> WriteResult:
     """Create a brand-new work. Never overwrites an existing one.
+
+    ``part`` is required but may be ``None``: a **placeholder** is a work
+    with metadata and ``parts: []``, and it is the only work shape with no
+    content to attach provenance to. It gets its own entry point here rather
+    than one beside it because everything a placeholder needs decided —
+    "is this id suppressed", "is it redirected", "is it taken, and does that
+    mean suffix or fail" — is the same decision minting any other work needs,
+    and ``add_placeholder`` used to answer all three differently (it answered
+    the first two not at all). ``None`` is spelled out rather than defaulted
+    so no caller drops a part by accident and silently mints an empty work.
+    Set ``status``/``notes``/``external`` through ``extra``.
 
     ``on_collision``:
       - ``'suffix'`` (default, the historical importer behavior): ``foo`` →
@@ -439,7 +453,7 @@ def create_work(repo_root, work_id: str, title: str, part: PartSpec, *,
         return _skip('create-new', work_id, reason, on_suppressed, verbose)
 
     # Fail fast on bad provenance before touching the filesystem.
-    part_dict = part.to_dict()
+    part_dict = part.to_dict() if part is not None else None
 
     def occupied(path: Path) -> bool:
         return (path / WORK_YAML).exists() if allow_existing_dir \
@@ -467,14 +481,16 @@ def create_work(repo_root, work_id: str, title: str, part: PartSpec, *,
     work['tags'] = list(tags) if tags else []
     if extra:
         work.update(extra)
-    work['parts'] = [part_dict]
+    work['parts'] = [part_dict] if part_dict is not None else []
 
     work_dir.mkdir(parents=True, exist_ok=True)
-    _write_part_file(work_dir, part)
+    if part is not None:
+        _write_part_file(work_dir, part)
     write_work_yaml(repo_root, work)
 
     return WriteResult(mode='create-new', work_id=work_id, work_dir=work_dir,
-                       part_file=part.file, written=True)
+                       part_file=part.file if part is not None else None,
+                       written=True)
 
 
 # ============================================

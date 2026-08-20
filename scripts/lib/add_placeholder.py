@@ -1,84 +1,105 @@
 #!/usr/bin/env python3
-"""
-Create a placeholder work in works/ directory.
+"""Create a placeholder work in ``works/``.
 
-A placeholder is a work with metadata but no lead sheet or tablature content.
-It appears in search and can be added to lists, but has no playable content yet.
+A placeholder is a work with metadata and **no parts at all** — no lead
+sheet, no tab. It appears in search and can be added to lists, and carries
+``status: placeholder`` so the frontend (``utils.isPlaceholder``) and the
+bounty board can tell it apart from a work that actually has content.
 
 Usage:
-    uv run python scripts/lib/add_placeholder.py "Rebecca" --artist "Jim Mills" --key B --tags Bluegrass,Instrumental
-    uv run python scripts/lib/add_placeholder.py "Ground Hog" --notes "Traditional old-time tune"
+    uv run python3 scripts/lib/add_placeholder.py "Rebecca" --artist "Jim Mills" --key B --tags Bluegrass,Instrumental
+    uv run python3 scripts/lib/add_placeholder.py "Ground Hog" --notes "Traditional old-time tune"
+
+It writes through :mod:`works_writer`, the one writer of ``works/``. It used
+to author ``work.yaml`` itself with a bare ``yaml.dump`` and its own
+collision loop, and asked NEITHER the suppression registry nor the redirect
+map — so it could mint a work at an id an admin had deleted, or at an id the
+merge tool had already pointed somewhere else. Those are the exact two
+questions ``works_writer.Guards.blocked`` exists to ask, and this was the
+last hand-writer left outside it.
 """
 
 import argparse
 import sys
 from pathlib import Path
 
-import yaml
-
-# Import slugify from work_schema (same directory)
 sys.path.insert(0, str(Path(__file__).parent))
+
+import works_writer
 from work_schema import slugify
 
+#: What marks a work as having no content yet. Read by the frontend
+#: (``utils.isPlaceholder``) and the bounty board; ``work_schema.Work``
+#: defines the other value as ``complete``.
+PLACEHOLDER_STATUS = 'placeholder'
 
-def create_placeholder(title: str, artist: str = None, key: str = None,
-                       composers: list[str] = None, tags: list[str] = None,
-                       notes: str = None, youtube: str = None,
-                       strum_machine: str = None,
-                       works_dir: Path = None) -> Path:
-    """Create a placeholder work directory with work.yaml.
 
-    Returns the path to the created work directory.
+class AddPlaceholderError(Exception):
+    """The placeholder cannot be created — bad input."""
+
+
+def repo_root_default() -> Path:
+    return Path(__file__).parent.parent.parent
+
+
+def create_placeholder(title: str, *, repo_root=None, artist: str = None,
+                       key: str = None, composers: list[str] = None,
+                       tags: list[str] = None, notes: str = None,
+                       youtube: str = None, strum_machine: str = None,
+                       on_collision: str = 'suffix',
+                       verbose: bool = True) -> works_writer.WriteResult:
+    """Create a placeholder work (metadata only, ``parts: []``).
+
+    The id is ``slugify(title)`` — the same rule every other minting path
+    uses. Collision handling, suppression and redirects are
+    ``works_writer.create_work``'s to decide: ``on_collision='suffix'`` keeps
+    the behaviour this CLI has always had (``rebecca`` → ``rebecca-1``), and
+    a suppressed or redirected id now RAISES instead of quietly resurrecting
+    the work an admin deleted.
+
+    ``repo_root`` is the repo (not the ``works/`` directory) because the
+    guards live at ``curation/registry.yaml``, ``docs/data/deleted_songs.json``
+    and ``docs/data/redirects.json``.
     """
-    if works_dir is None:
-        works_dir = Path(__file__).parent.parent.parent / 'works'
+    repo_root = Path(repo_root) if repo_root else repo_root_default()
 
-    slug = slugify(title)
-    work_dir = works_dir / slug
+    title = (title or '').strip()
+    if not title:
+        raise AddPlaceholderError('a title is required')
 
-    # Handle slug collision
-    counter = 1
-    original_slug = slug
-    while work_dir.exists():
-        slug = f"{original_slug}-{counter}"
-        work_dir = works_dir / slug
-        counter += 1
+    work_id = slugify(title)
+    if not work_id:
+        raise AddPlaceholderError(
+            f"title {title!r} does not produce a slug")
 
-    # Build work.yaml data
-    work_data = {'id': slug, 'title': title}
-    if artist:
-        work_data['artist'] = artist
-    if composers:
-        work_data['composers'] = composers
-    if key:
-        work_data['default_key'] = key
-    if tags:
-        work_data['tags'] = tags
-    work_data['status'] = 'placeholder'
+    extra = {'status': PLACEHOLDER_STATUS}
     if notes:
-        work_data['notes'] = notes
-
-    # External links
-    ext = {}
+        extra['notes'] = notes
+    external = {}
     if youtube:
-        ext['youtube'] = youtube
+        external['youtube'] = youtube
     if strum_machine:
-        ext['strum_machine'] = strum_machine
-    if ext:
-        work_data['external'] = ext
+        external['strum_machine'] = strum_machine
+    if external:
+        extra['external'] = external
 
-    work_data['parts'] = []
+    return works_writer.create_work(
+        repo_root, work_id, title, None,
+        artist=artist,
+        composers=composers,
+        default_key=key,
+        tags=tags,
+        extra=extra,
+        on_collision=on_collision,
+        # Say so and exit non-zero. A placeholder minted onto a suppressed
+        # or merged-away id is the failure this conversion exists to stop —
+        # skipping silently would just move it out of sight.
+        on_suppressed='raise',
+        verbose=verbose,
+    )
 
-    # Create directory and write work.yaml
-    work_dir.mkdir(parents=True, exist_ok=True)
-    with open(work_dir / 'work.yaml', 'w') as f:
-        yaml.dump(work_data, f, default_flow_style=False,
-                  allow_unicode=True, sort_keys=False)
 
-    return work_dir
-
-
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(
         description='Create a placeholder work (metadata stub with no content)'
     )
@@ -90,42 +111,57 @@ def main():
     parser.add_argument('--notes', help='Community-visible notes about the song')
     parser.add_argument('--youtube', help='YouTube URL')
     parser.add_argument('--strum-machine', help='Strum Machine URL')
+    parser.add_argument('--on-collision', choices=('suffix', 'fail'),
+                        default='suffix',
+                        help="What to do when the work id is taken: 'suffix' "
+                             "(default, rebecca -> rebecca-1) or 'fail'")
+    parser.add_argument('--repo-root', type=Path, default=None,
+                        help='Repo to write into (default: this checkout). '
+                             'For trying the command against a scratch corpus')
     parser.add_argument('--skip-index-rebuild', action='store_true',
                         help='Skip rebuilding the search index after adding')
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
+    repo_root = Path(args.repo_root) if args.repo_root else repo_root_default()
     composers = [c.strip() for c in args.composers.split(',')] if args.composers else None
     tags = [t.strip() for t in args.tags.split(',')] if args.tags else None
 
-    work_dir = create_placeholder(
-        title=args.title,
-        artist=args.artist,
-        key=args.key,
-        composers=composers,
-        tags=tags,
-        notes=args.notes,
-        youtube=args.youtube,
-        strum_machine=args.strum_machine,
-    )
-
-    print(f"Created placeholder: {work_dir.name}")
-    print(f"  -> {work_dir / 'work.yaml'}")
-
-    if not args.skip_index_rebuild:
-        import subprocess
-        print("\nRebuilding search index...")
-        repo_root = Path(__file__).parent.parent.parent
-        result = subprocess.run(
-            ['uv', 'run', 'python3', 'scripts/lib/build_works_index.py'],
-            cwd=repo_root
+    try:
+        result = create_placeholder(
+            args.title,
+            repo_root=repo_root,
+            artist=args.artist,
+            key=args.key,
+            composers=composers,
+            tags=tags,
+            notes=args.notes,
+            youtube=args.youtube,
+            strum_machine=args.strum_machine,
+            on_collision=args.on_collision,
         )
-        if result.returncode != 0:
-            print("Warning: Index rebuild failed")
-            sys.exit(1)
-    else:
-        print("\nSkipped index rebuild (--skip-index-rebuild)")
+    except (AddPlaceholderError, works_writer.WorksWriterError) as exc:
+        print(f"Error: {exc}")
+        return 1
+
+    print(f"Created placeholder: {result.work_id}")
+    print(f"  -> {result.work_dir / works_writer.WORK_YAML}")
+
+    if args.skip_index_rebuild:
+        print("")
+        print("Skipped index rebuild (--skip-index-rebuild)")
         print("Run './scripts/bootstrap --quick' to rebuild later")
+        return 0
+
+    print("")
+    print("Rebuilding search index...")
+    import subprocess
+    if subprocess.run(['uv', 'run', 'python3',
+                       'scripts/lib/build_works_index.py'],
+                      cwd=repo_root).returncode != 0:
+        print("Warning: Index rebuild failed")
+        return 1
+    return 0
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

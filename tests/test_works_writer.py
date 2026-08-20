@@ -204,6 +204,48 @@ class TestCreateWork:
             create_work(tmp_path, '', 'No Id', lead_sheet())
 
 
+class TestCreateWorkWithoutAPart:
+    """``part=None`` mints a placeholder: metadata, ``parts: []``, no file.
+
+    It lives inside create_work rather than beside it so a placeholder is
+    asked the same three minting questions (suppressed? redirected? taken?)
+    as every other new work — add_placeholder.py answered the last one on
+    its own and the first two not at all.
+    """
+
+    def test_no_part_means_empty_parts_and_no_file(self, tmp_path):
+        result = create_work(tmp_path, 'stub', 'Stub', None,
+                             artist='Somebody',
+                             extra={'status': 'placeholder'})
+        assert result.written and result.part_file is None
+        work = read_work(tmp_path, 'stub')
+        assert work['parts'] == []
+        assert work['status'] == 'placeholder'
+        assert [p.name for p in result.work_dir.iterdir()] == ['work.yaml']
+
+    def test_guards_apply_to_a_part_less_work(self, tmp_path):
+        write_registry(tmp_path, suppressed={'stub': {'reason': 'gone'}})
+        result = create_work(tmp_path, 'stub', 'Stub', None)
+        assert not result.written and result.skipped_reason == 'suppressed'
+        assert not (tmp_path / 'works' / 'stub').exists()
+
+    def test_collision_rules_apply_to_a_part_less_work(self, tmp_path):
+        create_work(tmp_path, 'stub', 'Stub', None)
+        assert create_work(tmp_path, 'stub', 'Stub', None).work_id == 'stub-1'
+        with pytest.raises(WorkExistsError):
+            create_work(tmp_path, 'stub', 'Stub', None, on_collision='fail')
+
+    def test_a_part_less_work_can_later_be_enriched(self, tmp_path):
+        """The placeholder's whole point: content arrives later, through the
+        normal add-part path."""
+        create_work(tmp_path, 'stub', 'Stub', None,
+                    extra={'status': 'placeholder'})
+        add_part(tmp_path, 'stub', lead_sheet())
+        work = read_work(tmp_path, 'stub')
+        assert len(work['parts']) == 1
+        assert work['status'] == 'placeholder'
+
+
 # ============================================
 # Guards: suppression + redirects
 # ============================================

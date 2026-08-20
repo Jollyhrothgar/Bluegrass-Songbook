@@ -1921,7 +1921,7 @@
     "12121_tef": {
       "id": "12121_tef",
       "title": "Banjo In the Hollow",
-      "author": "Jollyhrothgar",
+      "author": "Mirek Tim Patek",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=12121",
       "style": "4-String (Tenor/Plectrum)",
@@ -1933,7 +1933,7 @@
     "12123_tef": {
       "id": "12123_tef",
       "title": "Shuckin' the Corn",
-      "author": "Jollyhrothgar",
+      "author": "Mirek Tim Patek",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=12123",
       "style": "Bluegrass (Scruggs)",
@@ -1947,7 +1947,7 @@
     "12127_tef": {
       "id": "12127_tef",
       "title": "Lonesome Road Blues",
-      "author": "Jollyhrothgar",
+      "author": "Mirek Tim Patek",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=12127",
       "style": "4-String (Tenor/Plectrum)",
@@ -1959,7 +1959,7 @@
     "12135_tef": {
       "id": "12135_tef",
       "title": "Daley's Reel",
-      "author": "Jollyhrothgar",
+      "author": "mwblake",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=12135",
       "style": "Other",
@@ -1971,7 +1971,7 @@
     "13648_tef": {
       "id": "13648_tef",
       "title": "Ashokan Farewell",
-      "author": "Jollyhrothgar",
+      "author": "Ian_banjo",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=13648",
       "style": "Classical",
@@ -1985,7 +1985,7 @@
     "13654_tef": {
       "id": "13654_tef",
       "title": "Ducks on Millpond",
-      "author": "Jollyhrothgar",
+      "author": "Julian44_4",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=13654",
       "style": "Clawhammer and Old-Time",
@@ -1997,7 +1997,7 @@
     "14406_tef": {
       "id": "14406_tef",
       "title": "Seneca Square Dance",
-      "author": "Jollyhrothgar",
+      "author": "LyleK",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=14406",
       "style": "Clawhammer and Old-Time",
@@ -2009,19 +2009,19 @@
     "14683_tef": {
       "id": "14683_tef",
       "title": "Hot Corn Cold Corn",
-      "author": "Jollyhrothgar",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=14683",
       "style": "4-String (Tenor/Plectrum)",
       "status": "imported",
       "discovered_at": "2026-07-08T13:31:44.602391",
       "imported_at": "2026-07-08T13:32:03.784071",
-      "work_slug": "hot-corn-cold-corn-1"
+      "work_slug": "hot-corn-cold-corn-1",
+      "author": "Mirek Tim Patek"
     },
     "15032_tef": {
       "id": "15032_tef",
       "title": "Done Gone",
-      "author": "Jollyhrothgar",
+      "author": "LyleK",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=15032",
       "style": "Clawhammer and Old-Time",
@@ -2035,7 +2035,7 @@
     "15318_tef": {
       "id": "15318_tef",
       "title": "Harvest Home",
-      "author": "Jollyhrothgar",
+      "author": "Devon Wells",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=15318",
       "style": "Bluegrass (Scruggs)",
@@ -2047,7 +2047,7 @@
     "17003_tef": {
       "id": "17003_tef",
       "title": "Shooting Creek",
-      "author": "Jollyhrothgar",
+      "author": "Julian44_4",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=17003",
       "style": "Clawhammer and Old-Time",
@@ -2059,7 +2059,7 @@
     "17492_tef": {
       "id": "17492_tef",
       "title": "Down Yonder",
-      "author": "Jollyhrothgar",
+      "author": "janolov",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=17492",
       "style": "Clawhammer and Old-Time",
@@ -2071,7 +2071,7 @@
     "18136_tef": {
       "id": "18136_tef",
       "title": "The Irish Washerwoman",
-      "author": "Jollyhrothgar",
+      "author": "drifter",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=18136",
       "style": "Clawhammer and Old-Time",
@@ -2083,7 +2083,7 @@
     "18998_tef": {
       "id": "18998_tef",
       "title": "Monroe's Hornpipe",
-      "author": "Jollyhrothgar",
+      "author": "corcoran",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=18998",
       "style": "Bluegrass (Scruggs)",
@@ -2095,7 +2095,7 @@
     "19600_tef": {
       "id": "19600_tef",
       "title": "Paddy on the Turnpike",
-      "author": "Jollyhrothgar",
+      "author": "PaddyThePicker",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=19600",
       "style": "Bluegrass (Scruggs)",
@@ -2107,7 +2107,7 @@
     "19852_tef": {
       "id": "19852_tef",
       "title": "Little Rabbit",
-      "author": "Jollyhrothgar",
+      "author": "janolov",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=19852",
       "style": "Clawhammer and Old-Time",
@@ -2119,7 +2119,7 @@
     "20545_tef": {
       "id": "20545_tef",
       "title": "Dear Old Dixie",
-      "author": "Jollyhrothgar",
+      "author": "bango",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=20545",
       "style": "Bluegrass (Scruggs)",
@@ -2133,7 +2133,7 @@
     "20911_tef": {
       "id": "20911_tef",
       "title": "Marching Jaybird",
-      "author": "Jollyhrothgar",
+      "author": "janolov",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=20911",
       "style": "Clawhammer and Old-Time",
@@ -2145,7 +2145,7 @@
     "20924_tef": {
       "id": "20924_tef",
       "title": "Give the Fiddler a Dram",
-      "author": "Jollyhrothgar",
+      "author": "dholland",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=20924",
       "style": "Bluegrass (Scruggs)",
@@ -2157,7 +2157,7 @@
     "20981_tef": {
       "id": "20981_tef",
       "title": "Sally Ann",
-      "author": "Jollyhrothgar",
+      "author": "Jim Pankey",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=20981",
       "style": "Bluegrass (Scruggs)",
@@ -2169,7 +2169,7 @@
     "21678_tef": {
       "id": "21678_tef",
       "title": "Waterbound",
-      "author": "Jollyhrothgar",
+      "author": "JanetB",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=21678",
       "style": "Clawhammer and Old-Time",
@@ -2181,18 +2181,18 @@
     "21690_tef": {
       "id": "21690_tef",
       "title": "Paddy on the Turnpike",
-      "author": "Jollyhrothgar",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=21690",
       "style": "Clawhammer and Old-Time",
       "status": "skipped",
       "error": "import declined (duplicate part?)",
-      "discovered_at": "2026-07-08T13:31:44.602413"
+      "discovered_at": "2026-07-08T13:31:44.602413",
+      "author": "JanetB"
     },
     "21802_tef": {
       "id": "21802_tef",
       "title": "Tennessee Mountain Fox Chase",
-      "author": "Jollyhrothgar",
+      "author": "JanetB",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=21802",
       "style": "Clawhammer and Old-Time",
@@ -2204,7 +2204,7 @@
     "21999_tef": {
       "id": "21999_tef",
       "title": "Arkansas Hoosier",
-      "author": "Jollyhrothgar",
+      "author": "JanetB",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=21999",
       "style": "Clawhammer and Old-Time",
@@ -2216,29 +2216,29 @@
     "22191_tef": {
       "id": "22191_tef",
       "title": "Lonesome Road Blues",
-      "author": "Jollyhrothgar",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=22191",
       "style": "Bluegrass (Scruggs)",
       "status": "skipped",
       "error": "import declined (duplicate part?)",
-      "discovered_at": "2026-07-08T13:31:44.602418"
+      "discovered_at": "2026-07-08T13:31:44.602418",
+      "author": "corcoran"
     },
     "22228_tef": {
       "id": "22228_tef",
       "title": "Waterbound",
-      "author": "Jollyhrothgar",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=22228",
       "style": "Clawhammer and Old-Time",
       "status": "skipped",
       "error": "import declined (duplicate part?)",
-      "discovered_at": "2026-07-08T13:31:44.602419"
+      "discovered_at": "2026-07-08T13:31:44.602419",
+      "author": "the goodhand"
     },
     "22290_tef": {
       "id": "22290_tef",
       "title": "Scotland",
-      "author": "Jollyhrothgar",
+      "author": "JanetB",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=22290",
       "style": "Clawhammer and Old-Time",
@@ -2250,7 +2250,7 @@
     "22446_tef": {
       "id": "22446_tef",
       "title": "Chinese Breakdown",
-      "author": "Jollyhrothgar",
+      "author": "Buxton",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=22446",
       "style": "Bluegrass (Scruggs)",
@@ -2262,18 +2262,18 @@
     "22456_tef": {
       "id": "22456_tef",
       "title": "Down Yonder",
-      "author": "Jollyhrothgar",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=22456",
       "style": "Bluegrass (Scruggs)",
       "status": "skipped",
       "error": "import declined (duplicate part?)",
-      "discovered_at": "2026-07-08T13:31:44.602424"
+      "discovered_at": "2026-07-08T13:31:44.602424",
+      "author": "bango"
     },
     "23345_tef": {
       "id": "23345_tef",
       "title": "Lonesome Fiddle Blues",
-      "author": "Jollyhrothgar",
+      "author": "Yohansen",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=23345",
       "style": "Bluegrass (Scruggs)",
@@ -2287,7 +2287,7 @@
     "23409_tef": {
       "id": "23409_tef",
       "title": "Dixie Hoedown",
-      "author": "Jollyhrothgar",
+      "author": "Yohansen",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=23409",
       "style": "Bluegrass (Scruggs)",
@@ -2301,7 +2301,7 @@
     "24231_tef": {
       "id": "24231_tef",
       "title": "I Don't Love Nobody",
-      "author": "Jollyhrothgar",
+      "author": "corcoran",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=24231",
       "style": "Bluegrass (Scruggs)",
@@ -2313,7 +2313,7 @@
     "24337_tef": {
       "id": "24337_tef",
       "title": "Cheyenne",
-      "author": "Jollyhrothgar",
+      "author": "corcoran",
       "format": "tef",
       "source_url": "https://www.banjohangout.org/tab/browse.asp?m=detail&v=24337",
       "style": "Bluegrass (Scruggs)",
@@ -3252,7 +3252,7 @@
     },
     "23736_tef": {
       "id": "23736_tef",
-      "title": "America The Beautiful \u2013 Walter Hensley",
+      "title": "America The Beautiful – Walter Hensley",
       "author": "Peter Vipulis",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/a/tab-america-the-bea-23736-0771752019.tef",
@@ -3293,7 +3293,7 @@
     },
     "23982_tef": {
       "id": "23982_tef",
-      "title": "American Made World Played \u2013 Earl Scruggs",
+      "title": "American Made World Played – Earl Scruggs",
       "author": "Peter Vipulis",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/a/tab-american-made-w-23982-58495172021.tef",
@@ -6768,7 +6768,7 @@
     },
     "22881_tef": {
       "id": "22881_tef",
-      "title": "Bill Keith Medley: Bour\u00e9e II & Bay State Bounce",
+      "title": "Bill Keith Medley: Bourée II & Bay State Bounce",
       "author": "5-String",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/tab-bill-keith-medl-22881-20371330122017.tef",
@@ -6810,7 +6810,7 @@
     },
     "22887_tef": {
       "id": "22887_tef",
-      "title": "Bill Keith: Bour\u00e9e II",
+      "title": "Bill Keith: Bourée II",
       "author": "5-String",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/tab-bill-keith-bour-22887-50211630122017.tef",
@@ -10050,10 +10050,10 @@
     },
     "16903_tef": {
       "id": "16903_tef",
-      "title": "Byss-Calle's Sl\u00e4ngpolska (tradistional Swedish tun",
+      "title": "Byss-Calle's Slängpolska (tradistional Swedish tun",
       "author": "janolov",
       "format": "tef",
-      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/tab-byss-calles-sl\u00e4-16903-37249432012.tef",
+      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/tab-byss-calles-slä-16903-37249432012.tef",
       "genre": "Traditional",
       "style": "Clawhammer and Old-Time",
       "tuning": "Standard Open G (gDGBD)",
@@ -11334,7 +11334,7 @@
     },
     "21925_tef": {
       "id": "21925_tef",
-      "title": "Chord Exercises - Line Clich\u00e9s ~ Arr: Sean Ray",
+      "title": "Chord Exercises - Line Clichés ~ Arr: Sean Ray",
       "author": "seanray",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-chord-exercises-21925-594972652016.tef",
@@ -12656,7 +12656,7 @@
     },
     "25241_tef": {
       "id": "25241_tef",
-      "title": "Country Morning Rain - B\u00e9la Fleck",
+      "title": "Country Morning Rain - Béla Fleck",
       "author": "geckoberry",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-country-morning-25241-204581712022.tef",
@@ -14737,7 +14737,7 @@
     },
     "23660_tef": {
       "id": "23660_tef",
-      "title": "Deep River \u2013 Ron Block",
+      "title": "Deep River – Ron Block",
       "author": "Peter Vipulis",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/tab-deep-river--ron-23660-4748201642019.tef",
@@ -17190,7 +17190,7 @@
     },
     "12648_tef": {
       "id": "12648_tef",
-      "title": "El Gegant Del P\u00ed",
+      "title": "El Gegant Del Pí",
       "author": "tonet",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/e/tab-el-gegant-del-p-12648-121010312010.tef",
@@ -20226,10 +20226,10 @@
     },
     "16905_tef": {
       "id": "16905_tef",
-      "title": "G\u00e5 runt ett eneris sn\u00e5r (traditional Swedish tune)",
+      "title": "Gå runt ett eneris snår (traditional Swedish tune)",
       "author": "janolov",
       "format": "tef",
-      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/tab-g\u00e5-runt-ett-ene-16905-552111432012.tef",
+      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/tab-gå-runt-ett-ene-16905-552111432012.tef",
       "genre": "Traditional",
       "style": "Clawhammer and Old-Time",
       "tuning": "Standard Open G (gDGBD)",
@@ -20335,10 +20335,10 @@
     },
     "16898_tef": {
       "id": "16898_tef",
-      "title": "G\u00e4rdebyl\u00e5ten (tradional Swedish g\u00e5ngl\u00e5t)",
+      "title": "Gärdebylåten (tradional Swedish gånglåt)",
       "author": "janolov",
       "format": "tef",
-      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/tab-g\u00e4rdebyl\u00e5ten-(t-16898-5279432012.tef",
+      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/tab-gärdebylåten-(t-16898-5279432012.tef",
       "genre": "Traditional",
       "style": "Classical",
       "tuning": "Drop C (gCGBD)",
@@ -20349,10 +20349,10 @@
     },
     "16899_tef": {
       "id": "16899_tef",
-      "title": "G\u00e4rdebyl\u00e5ten (traditional Swedish g\u00e5ngl\u00e5t)",
+      "title": "Gärdebylåten (traditional Swedish gånglåt)",
       "author": "janolov",
       "format": "tef",
-      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/tab-g\u00e4rdebyl\u00e5ten-(t-16899-2699432012.tef",
+      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/tab-gärdebylåten-(t-16899-2699432012.tef",
       "genre": "Traditional",
       "style": "Clawhammer and Old-Time",
       "tuning": "Open D (aDF#Ad)",
@@ -20386,7 +20386,7 @@
     },
     "26082_tef": {
       "id": "26082_tef",
-      "title": "Gasp\u00e9  Reel",
+      "title": "Gaspé  Reel",
       "author": "Bill H",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/g/tab-gaspee-reel-26082-382931932023.tef",
@@ -26798,7 +26798,7 @@
     },
     "24011_tef": {
       "id": "24011_tef",
-      "title": "Jingle Bells \u2013 Earl Scruggs (Acoustic Xmas)",
+      "title": "Jingle Bells – Earl Scruggs (Acoustic Xmas)",
       "author": "Peter Vipulis",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/j/tab-jingle-bells--e-24011-1341224112019.tef",
@@ -30061,7 +30061,7 @@
     },
     "23170_tef": {
       "id": "23170_tef",
-      "title": "Little Sadie \u2013 Bill Keith \u2013 Newport Folk Festival",
+      "title": "Little Sadie – Bill Keith – Newport Folk Festival",
       "author": "Peter Vipulis",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/tab-little-sadie--b-23170-50982252019.tef",
@@ -31464,10 +31464,10 @@
     },
     "16900_tef": {
       "id": "16900_tef",
-      "title": "M\u00e5ltidss\u00e5ng (Dinner Song) - old Swedish song",
+      "title": "Måltidssång (Dinner Song) - old Swedish song",
       "author": "janolov",
       "format": "tef",
-      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/m/tab-m\u00e5ltidss\u00e5ng-(di-16900-8129432012.tef",
+      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/m/tab-måltidssång-(di-16900-8129432012.tef",
       "genre": "Traditional",
       "style": "Clawhammer and Old-Time",
       "tuning": "Standard Open G (gDGBD)",
@@ -31923,7 +31923,7 @@
     },
     "27186_tef": {
       "id": "27186_tef",
-      "title": "Melodie d\u2019 Armour",
+      "title": "Melodie d’ Armour",
       "author": "mmuussiiccaall",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/m/tab-melodie-d-armou-27186-3010141962024.tef",
@@ -33467,7 +33467,7 @@
     },
     "23867_tef": {
       "id": "23867_tef",
-      "title": "N\u00e3o me toques",
+      "title": "Não me toques",
       "author": "Patrick P.",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/n/tab-no-me-toques-23867-10472292019.tef",
@@ -33989,7 +33989,7 @@
     },
     "24006_tef": {
       "id": "24006_tef",
-      "title": "No Quarter \u2013 Led Zeppelin | arr. AB Junior",
+      "title": "No Quarter – Led Zeppelin | arr. AB Junior",
       "author": "Peter Vipulis",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/n/tab-no-quarter--led-24006-59381023112019.tef",
@@ -34106,10 +34106,10 @@
     },
     "16901_tef": {
       "id": "16901_tef",
-      "title": "Nu \u00e4r det jul igen -traditioanl Swedish song/dance",
+      "title": "Nu är det jul igen -traditioanl Swedish song/dance",
       "author": "janolov",
       "format": "tef",
-      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/n/tab-nu-\u00e4r-det-jul-i-16901-32159432012.tef",
+      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/n/tab-nu-är-det-jul-i-16901-32159432012.tef",
       "genre": "Traditional",
       "style": "Classical",
       "tuning": "Standard Open G (gDGBD)",
@@ -36009,10 +36009,10 @@
     },
     "16902_tef": {
       "id": "16902_tef",
-      "title": "Oxdragars\u00e5ng-  (old Swedish s\u00e5ng)",
+      "title": "Oxdragarsång-  (old Swedish sång)",
       "author": "janolov",
       "format": "tef",
-      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/tab-oxdragars\u00e5ng----16902-16199432012.tef",
+      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/o/tab-oxdragarsång----16902-16199432012.tef",
       "genre": "Other",
       "style": "Clawhammer and Old-Time",
       "tuning": "Standard Open G (gDGBD)",
@@ -37041,7 +37041,7 @@
     },
     "15192_tef": {
       "id": "15192_tef",
-      "title": "Pluto Is a Planet (and a Dog) \u00a9",
+      "title": "Pluto Is a Planet (and a Dog) ©",
       "author": "kevinwholmes",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/p/tab-pluto-is-a-plan-15192-5911142052011.tef",
@@ -40325,10 +40325,10 @@
     },
     "14535_tef": {
       "id": "14535_tef",
-      "title": "S\u00e4kkij\u00e4rven Polkka",
+      "title": "Säkkijärven Polkka",
       "author": "mwblake",
       "format": "tef",
-      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-s\u00e4kkij\u00e4rven-pol-14535-311141712011.tef",
+      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-säkkijärven-pol-14535-311141712011.tef",
       "genre": "Traditional",
       "style": "Other",
       "tuning": "Open Gm (gDGBbD)",
@@ -41015,7 +41015,7 @@
     },
     "22080_tef": {
       "id": "22080_tef",
-      "title": "Sarah - The Kr\u00fcger Brothers",
+      "title": "Sarah - The Krüger Brothers",
       "author": "JAH",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-sarah-22080-3053101782016.tef",
@@ -42618,10 +42618,10 @@
     },
     "16904_tef": {
       "id": "16904_tef",
-      "title": "Sm\u00e5 grodorna(Frog Dance\") - trad Swedish song",
+      "title": "Små grodorna(Frog Dance\") - trad Swedish song",
       "author": "janolov",
       "format": "tef",
-      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-sm\u00e5-grodorna(fr-16904-54279432012.tef",
+      "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-små-grodorna(fr-16904-54279432012.tef",
       "genre": "Traditional",
       "style": "Clawhammer and Old-Time",
       "tuning": "Standard Open G (gDGBD)",
@@ -43687,7 +43687,7 @@
     },
     "11965_tef": {
       "id": "11965_tef",
-      "title": "Spider Bite Rag \u00a9",
+      "title": "Spider Bite Rag ©",
       "author": "kevinwholmes",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/tab-spider-bite-rag-11965-282476102009.tef",
@@ -46177,7 +46177,7 @@
     },
     "15822_tef": {
       "id": "15822_tef",
-      "title": "Thanks Mick! \u00a9",
+      "title": "Thanks Mick! ©",
       "author": "kevinwholmes",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/tab-thanks-mick-15822-5635132082011.tef",
@@ -48091,7 +48091,7 @@
     },
     "12855_tef": {
       "id": "12855_tef",
-      "title": "The World Is Waiting For The Sunrise \u2014 Twin Banjos",
+      "title": "The World Is Waiting For The Sunrise — Twin Banjos",
       "author": "KI4PRK",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/tab-the-world-is-wa-12855-172132612010.tef",
@@ -49312,7 +49312,7 @@
     },
     "17321_tef": {
       "id": "17321_tef",
-      "title": "Tuesday's Lament \u00a9 AKA \"Election Day Waltz \u00a9\"",
+      "title": "Tuesday's Lament © AKA \"Election Day Waltz ©\"",
       "author": "kevinwholmes",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/tab-tuesdays-lament-17321-284672152012.tef",
@@ -49989,7 +49989,7 @@
     },
     "22010_tef": {
       "id": "22010_tef",
-      "title": "Vege K\u00f6zt\u00fcnk",
+      "title": "Vege Köztünk",
       "author": "banjohn2",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/v/tab-vege-kztnk-22010-640132372016.tef",
@@ -50054,7 +50054,7 @@
     },
     "21858_tef": {
       "id": "21858_tef",
-      "title": "Visa Fr\u00e5n Utanmyra /Tune From Utanmyra (thumb lead",
+      "title": "Visa Från Utanmyra /Tune From Utanmyra (thumb lead",
       "author": "janolov",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/v/tab-visa-frn-utanmy-21858-12411842016.tef",
@@ -50068,7 +50068,7 @@
     },
     "21857_tef": {
       "id": "21857_tef",
-      "title": "Visa Fr\u00e5n Utanmyra /Tune From Utanmyra(clawhammer)",
+      "title": "Visa Från Utanmyra /Tune From Utanmyra(clawhammer)",
       "author": "janolov",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/v/tab-visa-frn-utanmy-21857-50539842016.tef",
@@ -50361,7 +50361,7 @@
     },
     "14308_tef": {
       "id": "14308_tef",
-      "title": "Walking the Dogs \u00a9",
+      "title": "Walking the Dogs ©",
       "author": "kevinwholmes",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/w/tab-walking-the-dog-14308-1455629112010.tef",
@@ -51323,7 +51323,7 @@
     },
     "23739_tef": {
       "id": "23739_tef",
-      "title": "When the Saints Go Marching In \u2013 Flatt & Scruggs",
+      "title": "When the Saints Go Marching In – Flatt & Scruggs",
       "author": "Peter Vipulis",
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/w/tab-when-the-saints-23739-20365172021.tef",

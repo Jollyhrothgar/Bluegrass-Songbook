@@ -18,7 +18,7 @@ parts:
     source: banjo-hangout
     source_id: '23345'
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=23345
-    author: Jollyhrothgar
+    author: Yohansen
     imported_at: '2026-07-08'
 - type: tablature
   instrument: dobro

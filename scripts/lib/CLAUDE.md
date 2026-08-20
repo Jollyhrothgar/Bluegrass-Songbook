@@ -137,8 +137,8 @@ scripts/lib/
 ```
 
 This tree is hand-maintained and lags. `ls scripts/lib/*.py` is the real
-list — a few utilities (`add_placeholder.py`, `check_index_outputs.py`,
-`coverage_report.py`, `fetch_chords.py`) are deliberately not described here.
+list — a few utilities (`check_index_outputs.py`, `coverage_report.py`,
+`fetch_chords.py`) are deliberately not described here.
 
 ## Quick Commands
 
@@ -814,6 +814,40 @@ directory no build reads; the legacy `build_index.py` it then ran scans
 `sources/*/parsed/` — so the command printed "Added:", exited 0, and put the
 song nowhere. `songs/manual/parsed/roustabout.pro` (commit 75e93a7a0, "claude
 didn't add everything") is the one known casualty.
+
+## add_placeholder.py
+
+Creates a work with metadata and **no parts at all** — `parts: []` plus
+`status: placeholder`, which is what `utils.isPlaceholder` and the bounty
+board read.
+
+```bash
+./scripts/utility add-placeholder "Rebecca" --artist "Jim Mills" --key B \
+    --tags Bluegrass,Instrumental --notes "Classic banjo tune"
+./scripts/utility add-placeholder "Rebecca" --on-collision fail
+./scripts/utility add-placeholder "Rebecca" --repo-root /tmp/scratch --skip-index-rebuild
+```
+
+Converted to `works_writer.create_work(..., part=None)` on 2026-08-19 — it
+was the last hand-writer of `works/`. It built `work.yaml` with a bare
+`yaml.dump`, ran its own collision loop, and asked **neither** the
+suppression registry **nor** the redirect map, so it could mint a work at an
+id an admin had deleted or at an id `merge_works` had already pointed
+elsewhere. Both now refuse and exit 1 (`on_suppressed='raise'`).
+
+`create_work` takes `part` as a required positional that may be `None`
+rather than growing a sibling entry point: a placeholder needs the same
+three minting questions answered (suppressed? redirected? taken — suffix or
+fail?), and a second function would have been a second copy of them. Spelling
+`None` out means nobody mints an empty work by forgetting an argument.
+
+Collision behaviour is unchanged (`rebecca` → `rebecca-1`), except that the
+suffix hunt now steps over candidates that are themselves suppressed.
+`--on-collision fail` and `--repo-root` are new; nothing was removed. The
+Python API changed shape: `create_placeholder(title, *, repo_root=...)`
+returns a `WriteResult` (it took `works_dir` and returned a `Path`) —
+`repo_root`, because the guards live at `curation/registry.yaml`,
+`docs/data/deleted_songs.json` and `docs/data/redirects.json`.
 
 ## process_pending.py — the live contribution path
 
