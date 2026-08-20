@@ -20,6 +20,16 @@
 import type { SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2"
 import { GITHUB_REPO, getFileContent } from "./commit-song.ts"
 
+/**
+ * The shape a work id must have before it can become a path inside works/.
+ *
+ * Identical to `process_pending.SLUG_RE` and to what `work_schema.slugify`
+ * emits, and deliberately tighter than the `[a-z0-9-]+` this used to be
+ * checked against: that admitted `-`, `--`, `foo-` and `-foo`, none of which
+ * any minting path in this repo produces.
+ */
+export const WORK_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
+
 /** repository_dispatch event consumed by .github/workflows/process-pending.yml */
 export const DISPATCH_EVENT = 'pending-commit'
 
@@ -40,27 +50,76 @@ export const DISPATCH_EVENT = 'pending-commit'
  * nothing to fall back into (an arrangement of a title is not a thing), so
  * it is the one mode that can be REFUSED outright; see
  * {@link MetadataRefusedError}.
+ *
+ * ``placeholder`` mints a work with metadata and ``parts: []`` — a song
+ * REQUEST. Like ``metadata`` it writes no part and can be refused; unlike it,
+ * it refuses when the work DOES exist rather than when it doesn't. There is
+ * nothing to add to a song that is already in the songbook, and the one thing
+ * a placeholder must never do is land on top of one.
  */
-export type ChangeMode = 'create' | 'update' | 'fork' | 'add' | 'metadata'
+export type ChangeMode =
+  | 'create'
+  | 'update'
+  | 'fork'
+  | 'add'
+  | 'metadata'
+  | 'placeholder'
 
 /**
- * A metadata row that cannot be classified into a write.
+ * A row that cannot be classified into any write at all.
  *
- * Every other column ends in something safe: a chart edit the caller does
- * not own forks, a tab correction they do not own lands beside the original.
- * A metadata edit has no such landing spot — "your alternate opinion of the
- * artist" is not a part — so a caller with no claim on the work has to be
- * told no. `status` is what the edge function returns; the message is
- * written to be shown to a person.
+ * Most columns never reach this: a chart edit the caller does not own forks,
+ * a tab correction they do not own lands beside the original — there is
+ * always somewhere additive to put it. The two columns that write no PART
+ * have no such landing spot, so they answer with a refusal instead of
+ * inventing a write. `status` is the HTTP status the edge function returns
+ * and the message is written to be shown to a person, so both travel with
+ * the error rather than being reconstructed by each caller.
+ *
+ * Catch THIS, not a subclass, unless the handler genuinely differs per
+ * column: `auto-commit-song`, `create-song-request` and the reconciler all
+ * want the same behaviour (surface the message, never retry).
  */
-export class MetadataRefusedError extends Error {
+export class DispatchRefusedError extends Error {
   readonly status: number
   readonly workId: string
   constructor(message: string, workId: string, status = 403) {
     super(message)
-    this.name = 'MetadataRefusedError'
+    this.name = 'DispatchRefusedError'
     this.status = status
     this.workId = workId
+  }
+}
+
+/**
+ * A metadata row that cannot be classified into a write.
+ *
+ * A metadata edit has no landing spot — "your alternate opinion of the
+ * artist" is not a part — so a caller with no claim on the work has to be
+ * told no.
+ */
+export class MetadataRefusedError extends DispatchRefusedError {
+  constructor(message: string, workId: string, status = 403) {
+    super(message, workId, status)
+    this.name = 'MetadataRefusedError'
+  }
+}
+
+/**
+ * A song request that cannot mint a placeholder.
+ *
+ * Almost always because the song is already in the songbook. That refusal is
+ * the fix for a live data-loss bug: this column used to PUT
+ * `works/<id>/work.yaml` straight to the Contents API, passing the existing
+ * file's SHA when there was one — so a request whose slug collided with a
+ * real work replaced that work's parts, artist, composers and tags with an
+ * empty stub. There is nothing a placeholder can add to a work that exists,
+ * so there is nothing to fall back to and nowhere safe to write: say no.
+ */
+export class PlaceholderRefusedError extends DispatchRefusedError {
+  constructor(message: string, workId: string, status = 409) {
+    super(message, workId, status)
+    this.name = 'PlaceholderRefusedError'
   }
 }
 
@@ -291,6 +350,17 @@ export interface ClassifyInput {
    * targets. Null/absent means "a new tab", which can never be an update.
    */
   partFile?: string | null
+  /**
+   * This row is a song REQUEST: `status = 'placeholder'` and no content.
+   *
+   * A boolean rather than a fourth `part_type`, because the row IS a
+   * lead-sheet row — it is a chart-shaped submission that has no chart yet —
+   * and because the derivation has to consider `content` as well as `status`
+   * (see `commit-song.ts:isPlaceholderRow`, which is where every caller must
+   * get this value; a sticky `status` column on a row that has since grown a
+   * real chart would otherwise classify that chart as a placeholder).
+   */
+  placeholder?: boolean
 }
 
 /**
@@ -335,6 +405,20 @@ export interface ClassifyInput {
  * {@link submittersOf} — see the comment on `anyPartOwners` for why the two
  * must not be collapsed into each other.
  *
+ * Placeholder (a song REQUEST — a work with metadata and `parts: []`):
+ *
+ *   no work at the requested slug            -> placeholder (mint it)
+ *   a work is already there                  -> REFUSED (409)
+ *
+ * It is the mirror image of the metadata column: that one refuses when the
+ * work is missing, this one refuses when it is present. Neither has anywhere
+ * additive to land, and this one is where the damage was. The refusal is not
+ * merely tidiness about duplicate bounty entries: writing a placeholder onto
+ * an id that already has a work.yaml is how this function used to destroy
+ * songs, and ownership never enters into it, because nothing about being
+ * trusted makes an empty stub a safe thing to put on top of somebody's chart.
+ *
+
  * WHICH work a tab targets is not the row id. A chart row is keyed by its
  * work slug; a tab row is keyed by a synthetic `tab:<slug>:<rand>` so two
  * people can tab the same song without colliding on the primary key. So a
@@ -351,6 +435,41 @@ export interface ClassifyInput {
 export async function classifyChange(input: ClassifyInput): Promise<Classification> {
   const isTab = input.partType === 'tablature'
   const isMetadata = input.partType === 'metadata'
+  const isPlaceholder = !!input.placeholder && !isTab && !isMetadata
+
+  if (isPlaceholder) {
+    // A request's row id IS the work slug it is asking for (unlike a tab's or
+    // a metadata row's, which are synthetic), and it is CLIENT-SUPPLIED — it
+    // becomes a directory name in works/. So it is checked here, the same way
+    // process_pending re-derives a tab's slug rather than trusting one, and
+    // the same way it re-checks a metadata row's target.
+    const workId = (input.rowId || '').trim()
+    if (!WORK_SLUG_RE.test(workId) || workId.length > 120) {
+      throw new PlaceholderRefusedError(
+        'That song request has a malformed id.', workId, 400)
+    }
+    // A placeholder mints a work; it never targets one. A row carrying both
+    // is a client that has confused two columns, and guessing which it meant
+    // is how a request ends up writing to a work.
+    if ((input.replacesId || '').trim()) {
+      throw new PlaceholderRefusedError(
+        'A song request cannot target an existing work.', workId, 400)
+    }
+    const existing = await getFileContent(
+      `works/${workId}/work.yaml`, input.githubToken)
+    if (existing !== null) {
+      // THE refusal. Not "suffix it to <slug>-1" — an empty placeholder
+      // beside a real song is a bounty-board entry for a song we already
+      // have — and emphatically not an overwrite, which is what this
+      // function did for six months.
+      throw new PlaceholderRefusedError(
+        `"${input.title || workId}" is already in the songbook.`, workId)
+    }
+    return {
+      mode: 'placeholder', workId,
+      reason: 'song request — no work at this id yet',
+    }
+  }
 
   // A metadata row's id is `meta:<slug>:<rand>`, so — exactly as for a tab —
   // it is never a work slug and must not become the fallback target. Unlike

@@ -19,8 +19,9 @@ show_help() {
     echo "Usage: ./scripts/utility <command> [options]"
     echo ""
     echo "Commands:"
-    echo "  add-song <file.pro> [--skip-index-rebuild]"
-    echo "      Add a song to the manual collection and rebuild the index"
+    echo "  add-song <file.pro> [--id SLUG] [--title T] [--artist A] [--composer C]"
+    echo "           [--key K] [--on-collision fail|suffix] [--skip-index-rebuild]"
+    echo "      Create works/<slug>/ from a local .pro file and rebuild the index"
     echo ""
     echo "  add-placeholder <title> [--artist NAME] [--key KEY] [--tags TAG,TAG] [--notes TEXT]"
     echo "      Create a placeholder work with metadata but no content"
@@ -39,6 +40,10 @@ show_help() {
     echo "  sync-deleted-songs"
     echo "  sync-promoted-songs"
     echo "  db-push                 apply pending Supabase migrations (dry-run first)"
+    echo "  db-check                assert load-bearing invariants against the LIVE schema"
+    echo "      Read-only. The ledger agreeing is not the schema agreeing —"
+    echo "      see scripts/lib/schema_assert.py. --verbose for the rationale,"
+    echo "      --list to see the invariants without touching the database."
     echo "      Sync deleted songs list from Supabase"
     echo "      (requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars)"
     echo ""
@@ -172,11 +177,21 @@ case "$COMMAND" in
             echo "Not linked. Run ./scripts/bootstrap (seeds supabase/.temp/project-ref)."
             exit 1
         fi
-        echo "Pending migrations:"
-        if ! supabase migration list 2>/dev/null | awk -F'|' '$1 ~ /[0-9]/ && $2 !~ /[0-9]/ {print "  " $1}' | grep .; then
-            echo "  (none — local and remote agree)"
-            exit 0
-        fi
+        # Drift is reported in BOTH directions. The awk this replaced printed
+        # only rows that were LOCAL-but-not-REMOTE, so a REMOTE-only version —
+        # what an uncommitted or hand-applied migration, or a `migration
+        # repair` stamp, leaves behind — printed nothing and the command said
+        # "local and remote agree" while `supabase db push` was refusing with a
+        # drift error. See scripts/lib/migration_drift.py.
+        set +e
+        uv run python3 scripts/lib/migration_drift.py
+        DRIFT_STATUS=$?
+        set -e
+        case "$DRIFT_STATUS" in
+            0) exit 0 ;;               # in sync — nothing to push
+            2) ;;                      # local-only pending — on to the dry run
+            *) exit "$DRIFT_STATUS" ;; # remote-only drift, or the CLI failed
+        esac
         echo ""
         echo "Dry run:"
         supabase db push --dry-run 2>&1 | sed 's/^/  /'
@@ -186,6 +201,16 @@ case "$COMMAND" in
         echo ""
         echo "Read the dry run before choosing. --include-all applies EVERY pending"
         echo "migration, including any that predate the last one already applied."
+        echo ""
+        echo "After pushing, verify the SCHEMA and not just the ledger:"
+        echo "  ./scripts/utility db-check"
+        ;;
+
+    db-check)
+        # Read-only. `supabase db dump --schema public` needs the CLI's cached
+        # login (same credential db-push uses) but no database password, and it
+        # writes nothing.
+        uv run python3 scripts/lib/schema_assert.py "$@"
         ;;
 
     sync-promoted-songs)

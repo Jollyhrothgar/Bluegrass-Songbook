@@ -4,12 +4,17 @@ Banjo tablature from [Banjo Hangout](https://www.banjohangout.org/tab/).
 
 ## Current Status
 
-| Metric | Value |
-|--------|-------|
-| Priority tabs in catalog | 124 (tier 1-5 essential tunes) |
-| Successfully converted | 100 |
-| Skipped (V3 unsupported) | 24 |
-| Works with full provenance | 100 |
+Counts here rot fast — ask the catalog instead. `tab_catalog.json` is the
+source of truth for how many tabs are known and what state each is in:
+
+```bash
+uv run python sources/banjo-hangout/src/batch_import.py stats            # banjo-hangout
+uv run python sources/banjo-hangout/src/batch_import.py stats --site fiddle-hangout
+```
+
+For scale: as of 2026-08-19 the banjo-hangout catalog held 3,973 tabs
+(3,504 `pending`, 248 `imported`, 117 `skipped`, 104 `converted`) — i.e.
+scanning has run far past the original tier 1-5 pilot.
 
 ## Next Steps: Adding More Tunes
 
@@ -29,15 +34,18 @@ uv run python sources/banjo-hangout/src/batch_convert.py
 
 ### Priority tier reference
 
-| Tier | Description | ~Count |
-|------|-------------|--------|
-| 1-5 | Essential jam tunes (done) | 50 |
-| 6-10 | Common session tunes | 47 |
-| 11-20 | Extended standards | 106 |
-| 25 | Existing instrumental works | 545 |
-| 30 | All works needing banjo tab | 16,700 |
+Tiers 1-20 come from `sources/tunearch/src/tune_list.py`'s `TIER N` comments;
+25 and 30 are computed from `works/` (see `build_priority_list` in
+`src/priority_list.py`). Per-tier counts move with the corpus — get them
+live with `batch_import.py priorities`:
 
-### V3 format support (24 skipped files)
+| Tier | Description |
+|------|-------------|
+| 1-20 | Curated tune list, tiered (essential jam tunes → extended standards) |
+| 25 | Existing works already tagged Instrumental |
+| 30 | Any work with no tab for this site's instrument |
+
+### V3 format support
 
 The parser supports V2 and one V3 variant. Some V3 files lack the 'debt' marker and produce empty notation. To add support:
 1. Check `conversion_log.json` for skipped files
@@ -55,15 +63,21 @@ uv run python sources/banjo-hangout/src/batch_import.py stats --site mandolin-ha
 uv run python sources/banjo-hangout/src/batch_convert.py --site flatpicker-hangout
 ```
 
-| Site | base_url | Instrument | Data dir |
-|------|----------|-----------|----------|
+Five sites are registered (`SITES` in `src/site_config.py` is authoritative;
+the `--site` flag's `choices` are generated from it):
+
+| Site | base_url | fallback_instrument | Data dir |
+|------|----------|---------------------|----------|
 | banjo-hangout | https://www.banjohangout.org | banjo | `sources/banjo-hangout/` |
-| mandolin-hangout | **pending recon** | mandolin | `sources/mandolin-hangout/` |
-| flatpicker-hangout | **pending recon** | guitar | `sources/flatpicker-hangout/` |
+| mandolin-hangout | https://www.mandohangout.com (mandolinhangout.com 301s here) | mandolin | `sources/mandolin-hangout/` |
+| flatpicker-hangout | https://www.flatpickerhangout.com | guitar | `sources/flatpicker-hangout/` |
+| fiddle-hangout | https://www.fiddlehangout.com | fiddle | `sources/fiddle-hangout/` |
+| reso-hangout | https://www.resohangout.com | dobro | `sources/reso-hangout/` |
 
 Each site owns its `tab_catalog.json`, `raw/`, `downloads/` and `parsed/`
-— tab ids are only unique within a site. Scanning a site whose `base_url`
-is still `None` fails with a clear error; fill in the domain to enable it.
+— tab ids are only unique within a site. `base_url` is `Optional`, and
+scanning a site whose `base_url` is still `None` fails with a clear error
+(`require_base_url`); every currently registered site has one set.
 
 **Instrument detection**: the part's `instrument:` and the OTF filename
 come from the converted OTF's tracks (`site_config.resolve_instrument`),
@@ -166,17 +180,20 @@ Banjo Hangout has 9,270+ tabs. Instead of downloading everything, we prioritize:
 
 ### Priority Tiers
 
-| Tier | Source | ~Count | Notes |
-|------|--------|--------|-------|
-| 1-5 | Curated tune list | 50 | Essential jam tunes - **done** (100 converted, 24 skipped V3) |
-| 6-10 | Curated tune list | 47 | Common session tunes - not yet fetched |
-| 11-20 | Curated tune list | 106 | Extended standards - not yet fetched |
-| 25 | Existing instrumental works | 545 | Works already tagged Instrumental - not yet fetched |
-| 30 | All works needing banjo tab | 16,700 | Any work without a banjo tab part - not yet fetched |
+| Tier | Source | Notes |
+|------|--------|-------|
+| 1-5 | Curated tune list | Essential jam tunes |
+| 6-10 | Curated tune list | Common session tunes |
+| 11-20 | Curated tune list | Extended standards |
+| 25 | Existing instrumental works | Works already tagged Instrumental |
+| 30 | All works needing a tab for this site's instrument | Any work without that tab part |
+
+Per-tier counts and which tiers have actually been scanned change with every
+run — read them from `batch_import.py priorities` / `stats`, not from here.
 
 ### Curated Tune List
 
-The priority list references `sources/tunearch/src/tune_list.py` as a **reference for what tunes are important** - this is NOT importing from tunearch (which handles ABC notation). It's just using the same curated list of ~200 popular bluegrass/old-time instrumentals to guide which BH tabs to download first.
+The priority list references `sources/tunearch/src/tune_list.py` as a **reference for what tunes are important** - this is NOT importing from tunearch (which handles ABC notation). It's just using the same curated list (`TUNE_LIST`, 206 entries as of 2026-08-19) of popular bluegrass/old-time instrumentals to guide which BH tabs to download first.
 
 ### Priority Workflow
 
@@ -501,7 +518,9 @@ The frontend shows a **track mixer** for selecting which instruments to display/
 
 ## Related Sources
 
-This design supports other Hangout sites:
+The same pipeline already drives the other Hangout sites (all registered in
+`src/site_config.py`, all reachable via `--site`):
 - Mandolin Hangout
 - Flatpicker Hangout
 - Fiddle Hangout
+- Reso Hangout

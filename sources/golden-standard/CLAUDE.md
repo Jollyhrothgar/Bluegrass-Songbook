@@ -22,7 +22,7 @@ golden-standard/
 ├── raw/golden_standard.txt     # Source: 86 songs with {new_song} delimiters
 ├── parsed/                     # 86 individual .pro files
 ├── parse_songs.py              # Raw → ChordPro (section expansion, verse detection)
-├── add_version_metadata.py     # Marks 44 overlapping songs as alternate versions
+├── add_version_metadata.py     # Marks 59 overlapping songs as alternate versions
 └── analyze_structure.py        # Reports on section marker usage
 ```
 
@@ -35,7 +35,9 @@ golden-standard/
 - Auto-detects verse boundaries for unmarked content blocks
 - Adds provenance: `x_source golden-standard`, `x_submitted_by github:Jollyhrothgar`
 
-**add_version_metadata.py** identifies 44 songs overlapping with classic-country and marks them:
+**add_version_metadata.py** identifies 59 songs overlapping with classic-country
+(`OVERLAPPING_TITLES` in that script; 59 of the 86 parsed `.pro` files carry the
+resulting `x_version_label`) and marks them:
 - `{meta: x_version_label Golden Standard}`
 - `{meta: x_version_type alternate}`
 - `{meta: x_book The Golden Standard by Ryan Schindler}`

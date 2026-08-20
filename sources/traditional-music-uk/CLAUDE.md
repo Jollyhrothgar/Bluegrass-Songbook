@@ -27,10 +27,22 @@ Chord data from [traditionalmusic.co.uk](https://www.traditionalmusic.co.uk/), a
 | willie-nelson | 803 | Mixed |
 | dolly-parton | 631 | Mixed |
 
+⚠️ The "Pages" column above is a site-side estimate and does **not** match what
+actually landed in `song_index.json`. Verified counts (2026-08-19, from
+`songs[].collection`): folk-music-guitar-tab 10,620 · country-music 7,316 ·
+gospel-songs-chords2 4,664 · folk-song-lyrics 3,755 · top-bluegrass-chords
+1,894 · country-gospel-chords 1,772 · johnny-cash 1,487 · gospel-songs-chords
+1,211 · willie-nelson 803 · dolly-parton 631 · american-ballads-and-folk-songs
+567 · hank-williams 358 · carter-family-songs 231 · **old-time-music 1**.
+Note `old-time-music` is effectively unindexed (1 URL, not 1,287), and three
+sizeable collections indexed here (`folk-music-guitar-tab`,
+`gospel-songs-chords2`, `american-ballads-and-folk-songs`) are missing from
+the table entirely.
+
 ## Current State
 
 ### Index Built
-- Downloaded all 6 URL lists (200,966 URLs)
+- Downloaded all 6 URL lists (`song_index.json` records `total_urls: 200958`)
 - Filtered to relevant collections (35,310 songs)
 - Built searchable index by normalized title
 
@@ -69,10 +81,14 @@ traditional-music-uk/
 ├── song_index.json     # 35K relevant songs indexed
 ├── bl_match_results.json  # Matches with BluegrassLyrics
 ├── fetched_chords.json # 65 songs with text chords
-├── raw/                # Cached HTML (gitignored)
-├── parsed/             # Parsed chord data
+├── raw/                # Cached HTML (gitignored; absent in a fresh checkout)
 └── CLAUDE.md           # This file
 ```
+
+Note: `urllist*.txt` and `raw/` are gitignored (`.gitignore` here), so they
+won't be present until you re-run the fetchers. There is no `parsed/`
+directory — nothing in this source writes one; the fetched chords live in
+`fetched_chords.json`.
 
 ## Next Steps
 

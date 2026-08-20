@@ -1,6 +1,14 @@
 # Grassiness Scoring System
 
-Automated detection of bluegrass songs using MusicBrainz data.
+Song-level bluegrass scoring from MusicBrainz data.
+
+> **What it does today**: the score feeds each index row's `covering_artists`
+> (and analysis notebooks). It **no longer applies genre tags** — LLM tagging
+> owns that now. The threshold table below is history, not behaviour. See
+> "Integration".
+>
+> **Where it lives**: `scripts/lib/tagging/grassiness.py`. There is no
+> `scripts/lib/grassiness.py`.
 
 ## Problem
 
@@ -15,9 +23,14 @@ A numerical score (0-100+) indicating how "bluegrass" a song is, based on two si
 If Bill Monroe, the Stanley Brothers, or Del McCoury recorded a song, it's probably bluegrass.
 
 **How it works:**
-1. Query MusicBrainz for all recordings by 292 curated bluegrass artists
+1. Query MusicBrainz for all recordings by the curated bluegrass artists in
+   `docs/data/bluegrass_artist_database.json` (299 on 2026-08-19 — count it
+   with `jq '.artists | length' docs/data/bluegrass_artist_database.json`
+   rather than trusting a number here)
 2. Match against our song titles (normalized for fuzzy matching)
-3. Weight by artist era (from `build_artist_database.py`):
+3. Weight by artist era. `build_artist_database.py` supplies each artist's
+   `begin_year`; the tiering itself is `TIER_WEIGHTS` + `TIER_OVERRIDES` in
+   `grassiness.py`:
    - **Tier 1 (×4)**: Founding figures (pre-1960) - Bill Monroe, Flatt & Scruggs, Stanley Brothers
    - **Tier 2 (×2)**: Classic era (1960-1989) - Del McCoury, Tony Rice, J.D. Crowe, Doc Watson
    - **Tier 3 (×1)**: Modern era (1990+) - Billy Strings, Punch Brothers, Molly Tuttle
@@ -37,16 +50,39 @@ Community-sourced tags catch songs by artists not in our curated list.
 total_score = artist_score + min(tag_score, 10)
 ```
 
-## Thresholds
+## Thresholds (HISTORICAL — grassiness no longer adds tags)
 
-Thresholds were empirically determined by analyzing what % of core bluegrass artist catalogs pass each threshold. At ≥20, 71% of what legends recorded qualifies.
+⚠️ **The score does not tag anything any more.** Genre tags come from LLM
+tagging (`batch_tag_songs.py` → `docs/data/llm_tags.json`); `tag_enrichment.py`
+loads `grassiness_scores.json` only to build each row's `covering_artists`
+("display only, not for tagging" — its own comment at `tag_enrichment.py:418`),
+and the string `BluegrassStandard` does not appear in that file at all. See
+"Integration" below for what the score actually feeds today.
 
-| Score | Tag Added | Count | Example |
-|-------|-----------|-------|---------|
-| ≥50 | `BluegrassStandard` + `Bluegrass` | 205 songs | "Blue Moon of Kentucky" (161) |
-| 20-49 | `Bluegrass` | 501 songs | "Old Home Place" (22) |
-| 10-19 | (borderline) | 750 songs | "Wagon Wheel" (10) |
-| <10 | (crossover) | 4,420 songs | "Jolene" (10), "9 to 5" (1) |
+The bands below are kept because they describe how the score is *shaped* and
+what the numbers mean, not because a build applies them:
+
+| Score | Meant (historically) | Example |
+|-------|----------------------|---------|
+| ≥50 | `BluegrassStandard` + `Bluegrass` | "Blue Moon of Kentucky" (161), "Old Home Place" (51) |
+| 20-49 | `Bluegrass` | "Handsome Molly" (49), "Dreaming Of A Little Cabin" (38) |
+| 10-19 | (borderline) | "Wagon Wheel" (10) |
+| <10 | (crossover) | "Crazy" (7), "Little Sparrow" (9) |
+
+The "at ≥20, 71% of what legends recorded qualifies" figure behind these bands
+comes from the original threshold analysis and has **not** been re-verified
+against the current caches.
+
+Bucket sizes move with every re-score, so count them from the cache instead of
+quoting a number here:
+
+```bash
+uv run python -c "import json,collections; d=json.load(open('docs/data/grassiness_scores.json')); print(collections.Counter('>=50' if v['score']>=50 else '20-49' if v['score']>=20 else '10-19' if v['score']>=10 else '<10' for v in d.values()))"
+```
+
+(On 2026-08-19: 209 / 487 / 749 / 4,396 across 5,841 scored works. Only works
+that score above 0 appear in the cache at all — "Jolene" and "9 to 5" are not
+in it.)
 
 See `analytics/grassiness_analysis.ipynb` for visualizations and threshold analysis.
 
@@ -54,26 +90,43 @@ See `analytics/grassiness_analysis.ipynb` for visualizations and threshold analy
 
 | File | Purpose |
 |------|---------|
-| `grassiness.py` | Main scoring module |
+| `scripts/lib/tagging/grassiness.py` | Main scoring module (**not** `scripts/lib/grassiness.py` — there is no such file) |
+| `scripts/lib/tagging/build_artist_database.py` | Builds the curated bluegrass artist database |
+| `docs/data/bluegrass_artist_database.json` | The curated artist list (with `begin_year`, used for tiering) |
 | `docs/data/bluegrass_recordings.json` | Cache: recordings by curated artists |
 | `docs/data/bluegrass_tagged.json` | Cache: recordings with bluegrass tags |
-| `docs/data/grassiness_scores.json` | Computed scores for index songs |
+| `docs/data/grassiness_scores.json` | Computed scores for index songs (works scoring 0 are omitted) |
+
+All four are tracked in git so CI never needs MusicBrainz — verified with
+`git ls-files docs/data/bluegrass_*.json docs/data/grassiness_scores.json`.
 
 ## Usage
 
+The module lives in `scripts/lib/tagging/`, not `scripts/lib/`:
+
 ```bash
 # Build caches (requires MusicBrainz database, ~22s total)
-MB_PORT=5440 uv run python scripts/lib/grassiness.py --build-all
+MB_PORT=5440 uv run python scripts/lib/tagging/grassiness.py --build-all
+
+# Or one cache at a time
+MB_PORT=5440 uv run python scripts/lib/tagging/grassiness.py --build-cache
+MB_PORT=5440 uv run python scripts/lib/tagging/grassiness.py --build-tagged
 
 # Score the index (uses cached data, ~1s)
-uv run python scripts/lib/grassiness.py --score-index
-
-# Test specific songs
-uv run python scripts/lib/grassiness.py --test
-
-# Look up a title
-uv run python scripts/lib/grassiness.py --lookup "Wagon Wheel"
+uv run python scripts/lib/tagging/grassiness.py --score-index
 ```
+
+```bash
+uv run python scripts/lib/tagging/grassiness.py --test
+uv run python scripts/lib/tagging/grassiness.py --lookup "Wagon Wheel"
+```
+
+Both print through `format_artists`, which renders the scorer's
+`(name, earliest_year)` tuples as `Bill Monroe (1947)` and prints no year at
+all for `UNKNOWN_YEAR` (9999 — the sort-last sentinel, not a date). Until
+2026-08-19 both paths did `', '.join(artists)` on those tuples and died with
+`TypeError: sequence item 0: expected str instance, tuple found` on the first
+title that matched anything (`tests/test_grassiness.py` now pins this).
 
 ## Title Normalization
 
@@ -88,18 +141,23 @@ Example: "The Grass Is Blue (Live Version)" → "grass is blue"
 
 ## Validation Results
 
-| Song | Score | Expected | Result |
-|------|-------|----------|--------|
-| Blue Moon of Kentucky | 88 | High | ✓ |
-| Foggy Mountain Breakdown | 56 | High | ✓ |
-| Rocky Top | 44 | High | ✓ |
-| Roll in My Sweet Baby's Arms | 104 | High | ✓ |
-| Jolene | 10 | Low | ✓ |
-| 9 to 5 | ~1 | Low | ✓ |
-| Crazy (Patsy Cline) | 0 | Low | ✓ |
-| Your Cheatin' Heart | 1 | Low | ✓ |
-| Silver Dagger (Dolly's bluegrass) | 3 | Medium | ✓ |
-| Little Sparrow (Dolly's bluegrass) | 9 | Medium | ✓ |
+Scores below are read out of `docs/data/grassiness_scores.json` on
+**2026-08-19**; they move whenever the caches are rebuilt. Re-read them with
+`jq '.["<work-id>"].score' docs/data/grassiness_scores.json`, or with
+`grassiness.py --lookup "<title>"` (which scores the title live against the
+caches rather than reading the scored file).
+
+| Song | Work id | Score | Expected | Result |
+|------|---------|-------|----------|--------|
+| Blue Moon of Kentucky | `blue-moon-of-kentucky` | 161 | High | ✓ |
+| Roll In My Sweet Baby's Arms | `roll-in-my-sweet-baby-s-arms` | 160 | High | ✓ |
+| Foggy Mountain Breakdown | `foggy-mountain-breakdown` | 124 | High | ✓ |
+| Rocky Top | `rocky-top` | 98 | High | ✓ |
+| Old Home Place | `old-home-place` | 51 | High | ✓ |
+| Wagon Wheel | `wagon-wheel` | 10 | Borderline | ✓ |
+| Little Sparrow (Dolly's bluegrass) | `little-sparrow` | 9 | Medium | ✓ |
+| Crazy (Patsy Cline) | `crazy` | 7 | Low | ✓ |
+| Jolene / 9 to 5 / Your Cheatin' Heart / Silver Dagger | — | absent | Low | ✓ (score 0 works are never written to the cache) |
 
 ## Future Improvements
 
@@ -111,13 +169,36 @@ Example: "The Grass Is Blue (Live Version)" → "grass is blue"
 
 ## Integration
 
-The grassiness score is integrated into the build pipeline:
+What the score actually feeds today:
 
-1. **Index build** (`tag_enrichment.py`): Adds `BluegrassStandard` and `Bluegrass` tags based on score thresholds
-2. **Homepage collections** (`docs/js/collections.js`):
-   - "Bluegrass Standards" collection uses `tag:BluegrassStandard` (205 songs)
-   - "All Bluegrass" collection uses `tag:Bluegrass` (1,199 songs)
-3. **Song metadata**: Each song gets a `grassiness` field with its numeric score
+1. **Covering artists** (`tag_enrichment.py`, the ONLY consumer in the build):
+   `load_grassiness_scores()` supplies each row's `covering_artists` — which
+   bluegrass artists recorded the song, sorted by tier/prominence — for search
+   (`covering:`) and for display under the title. It does **not** add tags.
+   Ambiguous titles are skipped unless the song's own artist is a known
+   bluegrass artist, so the wrong legend isn't attributed to the wrong song.
+2. **Analysis** — `analytics/grassiness_analysis.ipynb` and the
+   `analytics/bluegrass-research/` scripts.
+
+Genre tagging moved to the LLM path: `batch_tag_songs.py` writes
+`docs/data/llm_tags.json` (which is where `BluegrassStandard` and `Bluegrass`
+now come from), `tag_enrichment.py` applies it, and `tag_overrides.json`
+subtracts trusted-user downvotes. See "Tag System" in `scripts/lib/CLAUDE.md`.
+
+3. **Homepage collections** (`docs/js/collections.js`) read the resulting tags:
+   - "Bluegrass Standards" collection uses `tag:BluegrassStandard`
+   - "All Bluegrass" collection uses `tag:Bluegrass`
+
+   Collection sizes are a property of the last build, not of this file. After
+   `./scripts/bootstrap --quick`, count them:
+
+   ```bash
+   uv run python -c "import json; rows=[json.loads(l) for l in open('docs/data/index.jsonl')]; print(sum('BluegrassStandard' in (r.get('tags') or []) for r in rows), sum('Bluegrass' in (r.get('tags') or []) for r in rows))"
+   ```
+4. **Index rows carry no `grassiness` field.** The score stays in
+   `docs/data/grassiness_scores.json`; what reaches a row is
+   `covering_artists` (953 of 2,462 canon rows on 2026-08-19). Verify with
+   `grep -c grassiness docs/data/index.jsonl` — it is 0.
 
 ## Dependencies
 

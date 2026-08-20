@@ -51,7 +51,7 @@ import { renderMySubmissionsView } from './my-submissions.js';
 import { renderHighScoresView } from './high-scores.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
 import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
-import { escapeHtml, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
+import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill, setBanner } from './shell.js';
 import { buildListChordPro, buildListText, buildListZipFiles, listFileBase } from './list-export.js';
@@ -570,7 +570,7 @@ function renderCollectionCards() {
 
         // Use image if available, otherwise fall back to emoji icon
         const imageContent = imageSrc
-            ? `<img src="${imageSrc}" alt="${escapeHtml(collection.title)}">`
+            ? `<img src="${imageSrc}" alt="${escapeAttr(collection.title)}">`
             : icon;
 
         // Determine href based on collection type
@@ -1559,7 +1559,7 @@ function handleDeleteSong() {
     statusEl.textContent = '';
     listEl.innerHTML = candidates.map(c => `
         <label class="delete-candidate${c.isCurrent ? ' current' : ''}">
-            <input type="checkbox" value="${escapeHtml(c.id)}" ${c.isCurrent ? 'checked' : ''}>
+            <input type="checkbox" value="${escapeAttr(c.id)}" ${c.isCurrent ? 'checked' : ''}>
             <div>
                 <div><strong>${escapeHtml(c.title)}</strong>${c.isCurrent ? ' (viewing)' : ''}</div>
                 <div class="candidate-meta">${escapeHtml(c.id)} · ${escapeHtml(c.source)}${c.key ? ` · Key: ${escapeHtml(c.key)}` : ''} · ${c.chordCount} chords</div>

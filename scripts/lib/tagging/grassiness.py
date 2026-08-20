@@ -30,7 +30,7 @@ Both signals are cached locally for fast scoring:
 ## Scoring Model
 
 Artists are weighted by their significance to bluegrass:
-- Tier 1 (weight 3): Bill Monroe, Flatt & Scruggs, Stanley Brothers
+- Tier 1 (weight 4): Bill Monroe, Flatt & Scruggs, Stanley Brothers
 - Tier 2 (weight 2): Del McCoury, Tony Rice, J.D. Crowe, etc.
 - Tier 3 (weight 1): Modern bluegrass artists
 
@@ -86,6 +86,11 @@ TIER_WEIGHTS = {
     2: 2,  # Classic era
     3: 1,  # Modern era
 }
+
+#: Stand-in earliest year for a recording MusicBrainz gives no date for.
+#: Chosen so unknowns sort LAST; it is never a real year, so anything
+#: displaying a year must treat it as "unknown".
+UNKNOWN_YEAR = 9999
 
 # Artists to exclude (false positives from name matching)
 EXCLUDE_ARTISTS = {
@@ -366,8 +371,8 @@ def fetch_artist_recordings(artist_names: List[str]) -> Dict[str, List[Tuple[str
                 if not normalized:
                     continue
 
-                # Use 9999 for unknown years so they sort last
-                year = earliest_year if earliest_year else 9999
+                # Unknown years sort last (see UNKNOWN_YEAR)
+                year = earliest_year if earliest_year else UNKNOWN_YEAR
 
                 if normalized not in results:
                     results[normalized] = []
@@ -445,7 +450,7 @@ def load_recordings_cache(cache_file: Path = RECORDINGS_CACHE) -> Dict[str, List
     if version < 3:
         converted = {}
         for title, artists in recordings.items():
-            converted[title] = [(a[0], a[1], 9999) for a in artists]
+            converted[title] = [(a[0], a[1], UNKNOWN_YEAR) for a in artists]
         return converted
 
     return recordings
@@ -644,6 +649,40 @@ def combined_score(artist_score: int, tag_score: int) -> int:
     return artist_score + min(tag_score, 10)
 
 
+def format_artists(artists, limit: int = None) -> str:
+    """Render :func:`compute_grassiness`'s artist list for a human.
+
+    ``bluegrass_artists_found`` is a list of ``(name, earliest_year)``
+    tuples. The two CLI paths used to ``', '.join()`` it directly, which is
+    a ``TypeError`` the moment a title matches anything — so ``--test`` and
+    ``--lookup`` both died on their first hit. Accepts the scored-cache
+    shapes too (a bare name, or a ``{'name': ..., 'year': ...}`` dict) so
+    there is one answer to "print these artists".
+    """
+    def one(entry) -> str:
+        if isinstance(entry, dict):
+            name, year = entry.get('name'), entry.get('year')
+        elif isinstance(entry, (tuple, list)):
+            name = entry[0] if entry else ''
+            year = entry[1] if len(entry) > 1 else None
+        else:
+            name, year = entry, None
+        # UNKNOWN_YEAR is the sort-last sentinel, not a date — printing
+        # "Alison Krauss (9999)" would be a lie with a straight face.
+        if not year or year == UNKNOWN_YEAR:
+            return str(name)
+        return f"{name} ({year})"
+
+    artists = list(artists or [])
+    if not artists:
+        return '-'
+    shown = artists if limit is None else artists[:limit]
+    text = ', '.join(one(a) for a in shown)
+    if limit is not None and len(artists) > limit:
+        text += f" +{len(artists) - limit}"
+    return text
+
+
 def score_index(
     index_file: Path = INDEX_FILE,
     recordings_cache: Dict = None,
@@ -771,15 +810,9 @@ if __name__ == '__main__':
         print("\nTop 30 bluegrass standards:")
         sorted_scores = sorted(scores.items(), key=lambda x: -x[1]['score'])
         for song_id, data in sorted_scores[:30]:
-            # Handle both old format (list of strings) and new format (list of dicts)
-            artist_list = data['artists'][:3]
-            artist_names = [
-                a['name'] if isinstance(a, dict) else a
-                for a in artist_list
-            ]
-            artists = ', '.join(artist_names)
-            if len(data['artists']) > 3:
-                artists += f" +{len(data['artists']) - 3}"
+            # format_artists handles every shape this cache has held: dicts
+            # (current), bare names (old), and (name, year) tuples.
+            artists = format_artists(data['artists'], limit=3)
             a_score = data.get('artist_score', data['score'])
             t_score = data.get('tag_score', 0)
             print(f"  {data['score']:3d} (a:{a_score:2d} t:{t_score:2d}) | {data['title'][:35]:<35} | {artists}")
@@ -807,7 +840,7 @@ if __name__ == '__main__':
         for title in test_songs:
             artist_score, artists, tag_score = compute_grassiness(title, recordings, tagged)
             total = combined_score(artist_score, tag_score)
-            artist_str = ', '.join(artists[:3]) if artists else '-'
+            artist_str = format_artists(artists, limit=3)
             print(f"{title:<35} | {total:>5} | {artist_score:>6} | {tag_score:>4} | {artist_str}")
 
     elif args.lookup:
@@ -820,7 +853,7 @@ if __name__ == '__main__':
         print(f"Total Score: {total}")
         print(f"  Artist Score: {artist_score}")
         print(f"  Tag Score: {tag_score}")
-        print(f"Artists: {', '.join(artists) if artists else 'none'}")
+        print(f"Artists: {format_artists(artists) if artists else 'none'}")
 
     elif not (args.build_cache or args.build_tagged or args.build_all):
         parser.print_help()

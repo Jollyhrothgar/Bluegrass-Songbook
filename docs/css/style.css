@@ -15,6 +15,14 @@
     --danger-hover: #b91c1c;
     --success: #16a34a;
     --heart: #e11d48;
+    /* Tablature ink hierarchy (three tiers, brightest first):
+       fret numbers use --text, stems/beams/barlines use --tab-ink, and the
+       horizontal string lines ("rulers") use --tab-rule, which must read
+       clearly quieter than both so beams never melt into the staff.
+       Deliberately NOT --text-secondary: that token is muted BODY text and
+       is used site-wide, so the staff can't tune itself through it. */
+    --tab-ink: #5a5a5a;
+    --tab-rule: #8a8a8a;
     /* High Scores podium */
     --medal-gold: #b8860b;
     --medal-silver: #6b7280;
@@ -62,6 +70,12 @@
     --danger-hover: #fca5a5;
     --success: #4ade80;
     --heart: #fb7185;
+    /* Bars/stems/beams read just below the white fret numbers (14.2:1 on
+       black); the string rulers sit a full step quieter at 6.1:1 — the same
+       grey that serves as the light theme's ruler, where it reads 3.3:1
+       against #fafafa. */
+    --tab-ink: #d4d4d4;
+    --tab-rule: #8a8a8a;
     --medal-gold: #fbbf24;
     --medal-silver: #cbd5e1;
     --medal-bronze: #d68a52;
@@ -7560,11 +7574,16 @@ body.dungeon-mode #search-stats {
     overflow-x: auto;
 }
 
-/* Tablature scaling via Aa control */
-.tablature-container .stave-row svg {
-    transform: scale(var(--tab-scale));
-    transform-origin: top left;
-}
+/* Tablature scaling via the Aa control is NOT done here any more.
+ *
+ * It was `transform: scale(var(--tab-scale))`, and a transform does not
+ * participate in layout: at the top setting the staff kept its unscaled
+ * box, so the rows overlapped vertically and the extra width ran straight
+ * off the right edge instead of reflowing. TabRenderer.setScale() now
+ * folds the size into the layout — it lays out against
+ * (container width / scale) and sizes the <svg> element by the scale, so
+ * bigger notes mean FEWER measures per row and the row still fits.
+ * `--tab-scale` remains set on the container as a state marker. */
 
 .track-info {
     display: flex;
@@ -7621,6 +7640,23 @@ body.dungeon-mode #search-stats {
     background: #8b4513;
 }
 
+/* KEPT, but it is a safety net and not the layout.
+ *
+ * A row is engraved to the container's measured width (TabRenderer
+ * _availableWidth / _calculateLayout), so in normal use nothing here has
+ * anything to scroll. It used to scroll constantly, because a staff
+ * rendered into a hidden container was laid out against an 800px GUESS —
+ * this rule is exactly what made that bug invisible until someone zoomed
+ * in far enough to notice the right-hand side was gone.
+ *
+ * Three cases genuinely still need it, all "one measure is wider than the
+ * container", which no reflow can fix because a measure cannot be split:
+ *   1. the OTF editor's `measureWidthFloor` — a 1/32 entry grid is given a
+ *      minimum pixel width on purpose and rows are expected to scroll;
+ *   2. extreme browser zoom, where the container falls below the
+ *      renderer's `minMeasureWidth` (138px) + margins;
+ *   3. the reader's size control at its top setting on a narrow phone.
+ */
 .stave-row {
     margin-bottom: 1.5rem;
     overflow-x: auto;
@@ -8219,6 +8255,12 @@ body.dungeon-mode #search-stats {
 /* Track VIEW tabs: which staff you see (audio = mixer checkboxes/Solo) */
 .track-view-tabs {
     display: flex;
+    /* Wraps, because this bar is as wide as the arrangement has tracks and
+     * the viewport is as narrow as the reader's zoom makes it. Unwrapped,
+     * a 4-track tune pushed the whole PAGE wider than the viewport at 400%
+     * zoom — the staff itself reflowed correctly and the tab strip was
+     * what ran off the right edge. */
+    flex-wrap: wrap;
     gap: 0.25rem;
     margin: 0.5rem 0;
     position: sticky;

@@ -6,7 +6,8 @@ Hand-created ChordPro songs added directly by contributors (not parsed from exte
 
 ```
 manual/
-├── parsed/           # 19 .pro files in standard ChordPro format
+├── parsed/           # .pro files in standard ChordPro format
+│                     #   (24 as of 2026-08-19; `ls sources/manual/parsed | wc -l`)
 └── protected.txt     # Filenames excluded from automated enrichment
 ```
 

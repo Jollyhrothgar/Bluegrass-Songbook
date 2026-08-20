@@ -259,6 +259,37 @@ export function dispatchEditorEvent(editor, event) {
             state.setPendingArticulation(params.tech);
             break;
 
+        // === Placed text (the document's `annotations`) ===
+        case 'setAnnotation':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.setAnnotationAtCursor(params.text);
+            break;
+
+        case 'deleteAnnotation':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.deleteAnnotationAtCursor();
+            break;
+
+        // === Instrument tracks (name and order) ===
+        // Both name the track they act on, because a replay may not have
+        // the same track selected — and a rename that lands on the wrong
+        // track takes that track's notation with it.
+        case 'renameTrack':
+            if (params.trackId && params.trackId !== state.trackId) {
+                state.setTrack(params.trackId);
+            }
+            state.renameTrack(params.newId);
+            break;
+
+        case 'moveTrack':
+            if (params.trackId && params.trackId !== state.trackId) {
+                state.setTrack(params.trackId);
+            }
+            state.moveTrack(params.delta);
+            break;
+
         // === Mode ===
         case 'setMode':
             state.setMode(params.mode);

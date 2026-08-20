@@ -314,6 +314,16 @@ interface UndoHistoryEntry {
  u   Ctrl+r
 ```
 
+#### Track Switcher (multi-track documents)
+```
+TRACK  [guitar] [bass] [lead mandolin] [banjo]   [◀] [▶] [✏️]
+```
+
+- One segmented button per track, labelled by its id (which IS its name)
+- ◀ / ▶ move the active track earlier / later; the first track is the lead
+- ✏️ opens the rename prompt
+- See "Track Name and Track Order" below for why a rename edits the id
+
 ### Note Entry Popover
 
 Appears when user clicks/taps on the canvas to enter a note:
@@ -407,6 +417,92 @@ Prominent display of current mode:
 └──────────────┘
 ```
 
+### Track Name and Track Order
+
+The complaint that produced this: *"I found that I wanted to rename /
+reposition the instrument tracks. The lead track should be the 'first
+one', if that makes sense."* It does — order is real, and the name is
+real, and neither was editable.
+
+Both live in the toolbar's **Track** section, right of the switcher:
+
+```
+TRACK  [guitar] [bass] [lead mandolin] [banjo]   [◀] [▶] [✏️]
+                        ↑ active                   ↑ earlier / later / rename
+```
+
+Buttons, not drag: the editor has no drag vocabulary anywhere else (the
+switcher is segmented buttons, phrases move by selection + clipboard),
+and ◀ / ▶ read correctly against a horizontal row. No key bindings
+either — choosing a track has never had one, and this is a
+once-per-document edit.
+
+**Rename edits the `id`.** A track has no display-name field, and adding
+one would be inert: `renderers/tablature.js` prints `track.id` on the
+stave's track-info row, work-view's mixer and percussion placeholder
+print `track.id`, and the switcher prints `track.id`. The id *is* the
+name, so that is what the prompt writes.
+
+Which makes it a two-part edit, because **`notation` is keyed by track
+id**:
+
+```js
+tracks:   [{id: 'mandolin', …}]        →  [{id: 'lead mandolin', …}]
+notation: {mandolin: [...]}            →  {'lead mandolin': [...]}
+```
+
+Move only the first half and the track's music is gone from every
+surface, and `validate_otf` (`scripts/lib/process_pending.py`, the only
+structural check a submission gets) rejects it as `track X: no
+notation`. `renameTrack` rebuilds the notation object in key order so
+the renamed key lands back in its own slot — real files do NOT key
+notation in `tracks[]` order (27493 is guitar/bass/banjo/mandolin for
+tracks guitar/bass/mandolin/banjo), so it can never be rebuilt from the
+track list.
+
+`TrackNamePopover` guards the two ways a name goes wrong before the
+facade is asked — blank, and a name another track already holds (which
+would collide in `notation`) — with Save disabled and the reason inline.
+`sanitizeTrackId` keeps spaces and mixed case and drops `< > & " ' \`
+and control characters, because the renderer interpolates a track id
+into innerHTML without escaping.
+
+**Reorder moves `tracks[]` only.** `notation` is a keyed map: reordering
+it would be diff churn with no meaning, so `moveTrack` does not touch
+it. Order alone is what makes a track the lead:
+
+| Consumer | Rule |
+|---|---|
+| `work-view.js` | `leadTrackId = pitchedTracks(otf.tracks)[0].id` unless the part instrument names one |
+| `work-view.js` | staves are stacked, and the mixer listed, in `tracks[]` order |
+| `work-edit.js` `resolveEditTrackId` | part instrument → `role === 'lead'` → `tracks[0]` |
+| `EditingFacade` / `EditorState` | default edit track is `tracks[0]` |
+
+`role` is **not** the answer, despite reading like it. It is the TEF
+importer's instrument guess (`banjo`/`mandolin` → `lead`, everything
+else → `rhythm`, drums → `percussion`), so red-haired-boy's ensemble has
+three tracks claiming `lead` at once. work-view treats it as a hint
+alongside position; neither track op writes it.
+
+Rules the implementation holds to:
+
+- **One history stack**, like every other edit: rename and reorder are
+  `EditingFacade` ops with snapshot undo, so `u` / `Ctrl+R` walk them
+  together with note and text edits.
+- **Undo re-points the facade.** After any history swap `_reconcileTrack`
+  checks that the current track still exists — undoing a rename is
+  exactly when it does not — and falls back to the track now at the same
+  index. Without it, the next `getNotation()` would silently *mint* an
+  empty measure list under the dead name. `EditorState` and the cursor
+  follow through the facade's `trackChange`.
+- **The toolbar re-reads the row** on every `change` (signature-guarded,
+  so note entry costs nothing), which is what makes undo of a rename
+  relabel the button without any op knowing the toolbar exists.
+- **Untouched means untouched.** A document that is only opened and read
+  exports byte-identically; a rename changes one track's `id` and one
+  notation key and nothing else; a reorder changes `tracks[]` and
+  nothing else.
+
 ---
 
 ## Input Handling
@@ -486,7 +582,9 @@ handleKeyDown(event: KeyboardEvent) {
 | `o` | Insert new measure after current, enter INSERT |
 | `O` | Insert new measure before current, enter INSERT |
 | `r` | Enter ROLL mode |
-| `A` | Enter ANNOTATION mode |
+| `c` | Add/edit the PLACED TEXT at the cursor (opens the text prompt) |
+| `C` | Delete the placed text at the cursor |
+| `A` | Enter ANNOTATION mode (per-note fingering — a different thing) |
 | `v` | Enter VISUAL mode |
 | `x` | Delete note under cursor |
 | `dd` | Delete current beat |
@@ -569,6 +667,57 @@ T2 I0 M3          → String 5 fret 2, string 3 open, string 2 fret 3
 | `~` | Mark as tie |
 | `x` | Remove annotation |
 | `Escape` | Return to NORMAL mode |
+
+### Placed Text (the document's `annotations`)
+
+**Two different things wear the word "annotation".** ANNOTATION *mode*
+above edits per-NOTE marks (fingering, technique) stored on the note.
+The document's top-level `annotations` array is something else: free
+text placed at a spot in the SCORE —
+
+```json
+"annotations": [
+  {"measure": 1, "tick": 0,   "text": "Press F-12 to play whole tune from beginning."},
+  {"measure": 4, "tick": 960, "text": "PART A"},
+  {"measure": 7, "tick": 0,   "text": "Bb6+9"}
+]
+```
+
+— section banners, playing notes AND chord names, all in one array.
+TEF import produces them, `renderers/tablature.js` draws them above the
+staff (x-positioned by `tick` within the written measure, lane-stacked
+on overlap), and the whole document is what a submission carries, so
+editing them needs no pipeline change.
+
+Editing is in NORMAL mode, not a mode of its own — placing a label is
+as ordinary as placing a note:
+
+| Key / control | Action |
+|-----|--------|
+| `c` | Open the text prompt at the cursor — pre-filled with the text already there (within one beat), empty otherwise |
+| `C` | Delete the text at/nearest the cursor |
+| Toolbar **Aa** / **⌫** (Text section) | The same two, for the mouse |
+| In the prompt: `Enter` | Save |
+| In the prompt: `Escape` | Cancel |
+| In the prompt: clear the box, Save | **Delete** — an empty annotation is never stored |
+
+Rules the implementation holds to:
+
+- **Text is trimmed; empty deletes.** There is no way to leave a blank
+  label behind, because a blank one can never be clicked or found again.
+- **Two annotations may share one (measure, tick)** — Welcome to New
+  York m14 carries both "PART B" and "F" — so they are addressed by
+  INDEX. `c` reaches the first at that spot; delete it and `c` reaches
+  the next.
+- **Reach is one beat.** `c` on empty ground adds; `c` within a beat of
+  an existing label edits that one. The status bar's `Text:` field says
+  which label `c` would hit before you press it.
+- **One history stack.** Every write goes through `EditingFacade`'s
+  snapshot undo, so `u` / `Ctrl+R` step through text and note edits
+  together, in the order you made them.
+- **Untouched means untouched.** Adds splice into score order without
+  reordering existing entries; edits mutate one entry in place. A
+  document that is only read round-trips byte-identical.
 
 ---
 

@@ -19,8 +19,11 @@ Web-based tool for validating parser output by comparing HTML source to generate
 
 ```
 viewer/
-├── server.py       # Flask server with live parsing API
+├── server.py       # stdlib http.server (SimpleHTTPRequestHandler) — NOT Flask;
+│                   #   no web framework dependency, just bs4 + the parser
 ├── index.html      # Single-page validation UI
+├── random.html     # Random-song review UI (served at /random)
+├── README.md       # Same material, non-agent copy
 └── feedback.jsonl  # Logged feedback (append-only)
 ```
 
@@ -28,8 +31,9 @@ viewer/
 
 | Endpoint | Purpose |
 |----------|---------|
-| `GET /` | Serve validation UI |
-| `GET /html/{file}` | Serve original HTML |
+| `GET /` | Serve validation UI (also `/index.html`) |
+| `GET /random` | Serve the random-song UI (also `/random.html`) |
+| `GET /html/{file}` | Serve original HTML from `raw/{file}` |
 | `GET /api/chordpro/{file}` | **Live parse** HTML → ChordPro |
 | `POST /api/feedback` | Save validation feedback |
 

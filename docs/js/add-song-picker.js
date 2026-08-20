@@ -3,7 +3,7 @@
 
 import { allSongs } from './state.js';
 import { songHasContent, songHasAbc } from './song-content.js';
-import { generateSlug, escapeHtml, isPlaceholder } from './utils.js';
+import { generateSlug, escapeHtml, escapeAttr, isPlaceholder } from './utils.js';
 import { track } from './analytics.js';
 import { launchTabCreator } from './otf-editor/create-tab-entry.js';
 import { tabEntryPlan, renderExistingTabsPanel } from './otf-editor/existing-tabs.js';
@@ -226,8 +226,8 @@ function renderTabResults() {
         return;
     }
     tabResults.innerHTML = matches.map(song => `
-        <button class="picker-tab-result" data-work-id="${escapeHtml(song.id)}"
-                data-title="${escapeHtml(song.title || song.id)}">
+        <button class="picker-tab-result" data-work-id="${escapeAttr(song.id)}"
+                data-title="${escapeAttr(song.title || song.id)}">
             <span class="picker-tab-result-title">${escapeHtml(song.title || song.id)}</span>
             ${song.artist ? `<span class="picker-tab-result-artist">${escapeHtml(song.artist)}</span>` : ''}
         </button>

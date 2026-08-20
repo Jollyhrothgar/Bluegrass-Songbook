@@ -5,7 +5,11 @@
 // user rather than a cosmetic bug.
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
-vi.mock('../utils.js', () => ({
+// Spread the real module so a new util export never silently arrives as
+// `undefined` here. escapeHtml is replaced with a DOM-free equivalent because
+// some of these assertions run without a document.
+vi.mock('../utils.js', async (importOriginal) => ({
+    ...await importOriginal(),
     escapeHtml: (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
 }));
 
@@ -516,7 +520,9 @@ describe('rendering holds', () => {
         renderReviewQueue(panel, { requests: [], holds: [hold()], isAdmin: true });
         const section = panel.querySelector('[data-section="holds"]');
         expect(section).not.toBeNull();
-        expect(section.textContent).toContain('Held by dedup backstop');
+        // "Held by CI", not "by the dedup backstop": a hold is also how a
+        // write refused for a suppressed/merged-away target is parked.
+        expect(section.textContent).toContain('Held by CI');
         expect(panel.querySelectorAll('.review-hold-item').length).toBe(1);
         expect([...panel.querySelectorAll('[data-hold-action]')].map(b => b.dataset.holdAction))
             .toEqual(['release', 'reject']);

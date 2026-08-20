@@ -23,13 +23,14 @@
 // The panel has three sections:
 //   1. Waiting on you   pending review_requests (approve / reject)
 //   2. Decided          the history, with any command still owed a local run
-//   3. On hold          pending_songs rows the CI dedup backstop parked
+//   3. On hold          pending_songs rows CI parked (dedup backstop, or a
+//                       write target that is suppressed / merged away)
 //                       (`dedup_hold`) as likely duplicates. Nothing commits a
 //                       held row until a human clears it: admins can "Release
 //                       hold" (dedup_hold -> null; the reconciler re-dispatches
 //                       it next pass) or "Reject" (delete the pending row).
 
-import { escapeHtml } from './utils.js';
+import { escapeHtml, escapeAttr } from './utils.js';
 import { searchWorksForTab, tabResultsState } from './add-song-picker.js';
 
 const PANEL_ID = 'review-queue-panel';
@@ -138,7 +139,12 @@ export function sortQueue(requests = []) {
     });
 }
 
-/** A pending_songs row is held iff the dedup backstop wrote a reason on it. */
+/**
+ * A pending_songs row is held iff CI wrote a reason on it. `dedup_hold` is
+ * the column, but not the only meaning any more: process_pending.py also
+ * parks a row whose target work is suppressed or merged away, because that
+ * refusal cannot change by waiting either. The reason string says which.
+ */
 export function isHeld(row) {
     return typeof row?.dedup_hold === 'string' && row.dedup_hold.trim().length > 0;
 }
@@ -153,7 +159,7 @@ export function describeHold(row) {
         id: row?.id || '',
         title: row?.title || '(untitled submission)',
         artist: row?.artist || null,
-        reason: isHeld(row) ? row.dedup_hold.trim() : 'held by the dedup backstop (no reason recorded)',
+        reason: isHeld(row) ? row.dedup_hold.trim() : 'held by CI (no reason recorded)',
     };
 }
 
@@ -260,7 +266,8 @@ export async function submitReviewRequest({ kind, targetId, payload = {}, reason
 }
 
 /**
- * Pending submissions parked by the CI dedup backstop.
+ * Pending submissions CI parked: a suspected duplicate, or a write whose
+ * target work is suppressed or merged away.
  *
  * The `dedup_hold` column ships with the backstop; until that migration is
  * applied the select fails, so the caller gets the error and the panel shows a
@@ -467,8 +474,8 @@ export function showMergeRequestDialog(song, { songs = [], search = searchWorksF
                 ? matches.map(s => `
                     <li>
                         <button type="button" class="merge-target-result"
-                                data-target-id="${escapeHtml(s.id)}"
-                                data-target-title="${escapeHtml(s.title || s.id)}">
+                                data-target-id="${escapeAttr(s.id)}"
+                                data-target-title="${escapeAttr(s.title || s.id)}">
                             <span class="merge-target-result-title">${escapeHtml(s.title || s.id)}</span>
                             ${s.artist ? `<span class="merge-target-result-artist">${escapeHtml(s.artist)}</span>` : ''}
                         </button>
@@ -645,10 +652,12 @@ export function renderReviewQueue(panel, {
                 : ''}
 
             <section class="review-queue-section" data-section="holds">
-                <h4 class="review-section-title">Held by dedup backstop <span class="review-section-count">${heldRows.length}</span></h4>
+                <h4 class="review-section-title">Held by CI <span class="review-section-count">${heldRows.length}</span></h4>
                 <p class="review-section-note">
-                    CI thinks these submissions duplicate something already in the songbook,
-                    so it wrote nothing and parked the row. Nothing commits them until
+                    CI refused to write these — a suspected duplicate of something already
+                    in the songbook, or a target work that has been suppressed or merged
+                    away — and parked the row rather than retrying it hourly. Each one's
+                    reason is below. Nothing commits them until
                     ${reviewer ? 'you decide' : 'an admin decides'}: releasing a hold sends it
                     back through the normal writer on the next reconciler pass (within the hour);
                     rejecting throws the submission away.
@@ -674,11 +683,11 @@ export function renderReviewQueue(panel, {
 function renderHold(row, reviewer) {
     const hold = describeHold(row);
     return `
-        <li class="review-queue-item review-hold-item" data-hold-id="${escapeHtml(hold.id)}">
+        <li class="review-queue-item review-hold-item" data-hold-id="${escapeAttr(hold.id)}">
             <div class="review-item-head">
                 <span class="review-item-kind">Held</span>
                 <a class="review-item-target" href="#work/${encodeURIComponent(hold.id)}">${escapeHtml(hold.id)}</a>
-                <span class="review-item-status">duplicate suspected</span>
+                <span class="review-item-status">needs a decision</span>
             </div>
             <div class="review-item-blurb">${escapeHtml(hold.title)}${hold.artist ? ` — ${escapeHtml(hold.artist)}` : ''}</div>
             <div class="review-item-reason">${escapeHtml(hold.reason)}</div>
@@ -699,7 +708,7 @@ function renderRow(request, reviewer) {
     const into = request.payload?.redirect_to;
 
     return `
-        <li class="review-queue-item" data-status="${escapeHtml(status)}" data-id="${escapeHtml(request.id || '')}">
+        <li class="review-queue-item" data-status="${escapeAttr(status)}" data-id="${escapeAttr(request.id || '')}">
             <div class="review-item-head">
                 <span class="review-item-kind">${escapeHtml(kind.label)}</span>
                 <a class="review-item-target" href="#work/${encodeURIComponent(request.target_id)}">${escapeHtml(request.target_id)}</a>

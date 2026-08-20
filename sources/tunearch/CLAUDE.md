@@ -11,7 +11,8 @@ tunearch/
 │   ├── abc_parser.py        # ABC extraction from wiki pages
 │   ├── chordpro_generator.py # Convert to .pro format
 │   ├── batch_fetch.py       # CLI for fetching tunes
-│   └── tune_list.py         # Curated list of ~100 popular instrumentals
+│   └── tune_list.py         # Curated list of popular instrumentals, tiered
+│                            #   (TUNE_LIST, 206 entries as of 2026-08-19)
 ├── parsed/                   # Output .pro files with ABC blocks
 ├── raw/                      # Cached HTML (gitignored)
 └── tune_catalog.json         # Tracks fetch status

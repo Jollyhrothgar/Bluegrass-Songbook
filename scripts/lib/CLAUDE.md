@@ -51,9 +51,12 @@ to hand it over.
 
 `with-secrets` falls back in order: 1Password if signed in, then an existing
 `.env` (machines without `op`, and CI, where secrets arrive as real environment
-variables), then whatever is already exported. `scripts/bootstrap` deletes a
-stale `.env` once 1Password is reachable, since it is then redundant —
-regenerate one any time with `op inject -i .env.tpl -o .env`.
+variables), then whatever is already exported. `scripts/bootstrap` **does not
+delete** a redundant `.env` — it only prints that you may remove it yourself
+(`rm -f .env analytics/.env`). It used to delete one as soon as `op whoami`
+succeeded, which stranded this very worktree: a 1Password session is per-shell
+and short-lived, so signing in in one terminal removed the fallback for every
+other one. Regenerate one any time with `op inject -i .env.tpl -o .env`.
 
 Sign in once per session with `op signin`.
 
@@ -115,6 +118,10 @@ scripts/lib/
 ├── search_index.py       # Search index utilities and testing
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_pending.py    # GitHub Action: land one pending_songs row in works/
+├── works_writer.py       # THE one writer of works/ (create/update/fork/add/metadata)
+├── bounty_decisions.py   # Lower curation/bounty_decisions.yaml → docs/data/bounty_decisions.json
+├── migration_drift.py    # Report ledger drift in BOTH directions (db-push)
+├── schema_assert.py      # Assert LIVE schema invariants (db-check)
 ├── dedup_scorer.py       # Is this submission already a work? (containment on lyrics)
 ├── dedup_works.py        # Whole-corpus duplicate detection → merge plan JSON
 ├── merge_works.py        # Execute a merge plan (redirects included)
@@ -128,6 +135,10 @@ scripts/lib/
     ├── build_artist_database.py  # Build curated bluegrass artist database
     └── grassiness.py     # Bluegrass detection based on covers/tags
 ```
+
+This tree is hand-maintained and lags. `ls scripts/lib/*.py` is the real
+list — a few utilities (`check_index_outputs.py`, `coverage_report.py`,
+`fetch_chords.py`) are deliberately not described here.
 
 ## Quick Commands
 
@@ -419,6 +430,24 @@ in `curation/registry.yaml` at the repo root — not in `works/*/work.yaml`:
 frontend's Arrangement pill reads these). Importers call `is_suppressed()`
 so suppressed works are never re-created from sources.
 
+**Suppression is two questions, not one** (2026-08-19). `is_suppressed()` is
+the MINT guard: exact id *plus* the collision-suffix base, so an importer
+cannot resurrect a suppressed `foo` as `foo-1`. `is_suppressed_exact()` is
+the WRITE guard: exact id only, asked before touching a work that already
+exists (`add_part` / `update_part` / `update_metadata` /
+`fork_to_arrangement`, via `works_writer.Guards.blocked_existing`). The mode
+decides which — `create_work` is the only entry point that can bring a work
+into being.
+
+Why: `works/dark-hollow-1` is a curated golden-standard work with nothing to
+do with the soft-deleted `dark-hollow`, and `-1` is not proof of a collision
+artifact. Asking the mint question about it refused a real user's guitar tab
+— then refused it again every hour, because `process-pending` failed, the row
+stayed uncommitted, and the reconciler re-fired it. The exact-id half is kept
+deliberately for existing works: it is the same question `filter_suppressed()`
+asks, so **if the build still publishes a work you may add to it, and if the
+build drops it you may not.**
+
 - **Tab pins**: which tablature arrangement is the default for a given
   work + instrument (`tab_pins: {work-id: {instrument: source_id}}`)
 
@@ -432,9 +461,14 @@ so suppressed works are never re-created from sources.
 ### Index Prune — the searchable index is the bluegrass canon
 
 **Policy (Mike, 2026-07-31):** search and collections deliberately show only
-bluegrass + bluegrass-adjacent repertoire (~1,800 songs). The other ~16,900
-works are NOT deleted: they stay on disk, keep their `#work/{slug}` URLs,
-stay in lists, and can be restored to search at any time.
+bluegrass + bluegrass-adjacent repertoire. Everything else is NOT deleted: it
+stays on disk, keeps its `#work/{slug}` URL, stays in lists, and can be
+restored to search at any time.
+
+The kept/archived split moves as songs are promoted, so count it rather than
+quoting a number: `wc -l docs/data/index.jsonl docs/data/archive.jsonl` after
+a build (2,462 kept / 16,762 archived on 2026-08-19; it was ~1,800 / ~16,900
+when this policy landed).
 
 Mechanism: `curation/index_prune.csv` lists work ids that
 `apply_index_prune()` stamps `indexed: false` at build time. A row is
@@ -755,12 +789,65 @@ results = query_artist_tags_batch(['Bill Monroe', 'Hank Williams'])
 
 ## add_song.py
 
-Adds a `.pro` file to `sources/manual/parsed/` and rebuilds index.
+Creates a work in `works/` from a local `.pro` file, then rebuilds the index.
 
 ```bash
 ./scripts/utility add-song ~/Downloads/my_song.pro
+./scripts/utility add-song song.pro --title "Salt Creek" --artist "Bill Monroe"
+./scripts/utility add-song song.pro --on-collision suffix
 ./scripts/utility add-song song.pro --skip-index-rebuild
 ```
+
+- Metadata (title / artist / composer / key) is read from the chart's own
+  `{meta: ...}` / `{title: ...}` directives with the same parser the index
+  build uses; the flags override. No title anywhere is an error.
+- The id is `slugify(title)` (or `--id`), the same rule
+  `process_pending.tab_work_slug` mints with.
+- It writes through `works_writer.create_work` — so a suppressed/redirected
+  id is refused, an existing work is **never** overwritten (`fail` is the
+  default here rather than the importers' `suffix`), and the part carries
+  `provenance.source: manual` + `source_file` + `imported_at`.
+- The rebuild runs `build_works_index.py` (the primary builder).
+
+Fixed 2026-08-19. It used to copy the file into `songs/manual/parsed/` — a
+directory no build reads; the legacy `build_index.py` it then ran scans
+`sources/*/parsed/` — so the command printed "Added:", exited 0, and put the
+song nowhere. `songs/manual/parsed/roustabout.pro` (commit 75e93a7a0, "claude
+didn't add everything") is the one known casualty.
+
+## add_placeholder.py
+
+Creates a work with metadata and **no parts at all** — `parts: []` plus
+`status: placeholder`, which is what `utils.isPlaceholder` and the bounty
+board read.
+
+```bash
+./scripts/utility add-placeholder "Rebecca" --artist "Jim Mills" --key B \
+    --tags Bluegrass,Instrumental --notes "Classic banjo tune"
+./scripts/utility add-placeholder "Rebecca" --on-collision fail
+./scripts/utility add-placeholder "Rebecca" --repo-root /tmp/scratch --skip-index-rebuild
+```
+
+Converted to `works_writer.create_work(..., part=None)` on 2026-08-19 — it
+was the last hand-writer of `works/`. It built `work.yaml` with a bare
+`yaml.dump`, ran its own collision loop, and asked **neither** the
+suppression registry **nor** the redirect map, so it could mint a work at an
+id an admin had deleted or at an id `merge_works` had already pointed
+elsewhere. Both now refuse and exit 1 (`on_suppressed='raise'`).
+
+`create_work` takes `part` as a required positional that may be `None`
+rather than growing a sibling entry point: a placeholder needs the same
+three minting questions answered (suppressed? redirected? taken — suffix or
+fail?), and a second function would have been a second copy of them. Spelling
+`None` out means nobody mints an empty work by forgetting an argument.
+
+Collision behaviour is unchanged (`rebecca` → `rebecca-1`), except that the
+suffix hunt now steps over candidates that are themselves suppressed.
+`--on-collision fail` and `--repo-root` are new; nothing was removed. The
+Python API changed shape: `create_placeholder(title, *, repo_root=...)`
+returns a `WriteResult` (it took `works_dir` and returned a `Path`) —
+`repo_root`, because the guards live at `curation/registry.yaml`,
+`docs/data/deleted_songs.json` and `docs/data/redirects.json`.
 
 ## process_pending.py — the live contribution path
 
@@ -782,6 +869,8 @@ durable.
    - `update` → `update_part` on the chart the actor OWNS (`update_target`)
    - `fork` → `fork_to_arrangement`, `x_version_*` from the submitter identity
    - `metadata` → `update_metadata` — work-level fields only, no part
+   - `placeholder` → `create_work(part=None, on_collision='fail')` — a song
+     request: metadata, `status: placeholder`, `parts: []`
 3. The workflow commits, pushes with rebase-retry, then marks the row
    `github_committed`.
 
@@ -847,6 +936,35 @@ mints nothing, and there is no ChordPro to score). Who may send one is
 decided before the dispatch by `classifyChange`: own **any** part of the
 work, or be trusted — a looser question than the per-part-type ownership a
 content edit must pass, because naming an artist rewrites nobody's content.
+
+**Placeholder** (2026-08-19, `apply_placeholder_row`). A song REQUEST: a work
+with metadata, `status: placeholder` and `parts: []` — the shape
+`utils.isPlaceholder` and the bounty board read.
+
+| mode | writer call | file |
+|---|---|---|
+| `placeholder` | `create_work(part=None, on_collision='fail')` | none — the work has no parts |
+
+`create-song-request` used to do this itself, in TypeScript: it interpolated a
+`work.yaml` string and PUT it to the GitHub Contents API **passing the
+existing file's sha whenever the path was taken**, so a request whose
+client-generated slug collided with a real work replaced its parts, artist,
+composers and tags with an empty stub. No suppression check, no redirect
+check, no collision handling. That function predates phase 1c/2b and was the
+last one never converted; `works_writer`'s guards now apply to it like
+everything else.
+
+A request is a lead-sheet row that has NO lead sheet, so it is not a new
+`part_type` — it is recognised by shape (`is_placeholder_row`: status
+`placeholder` **and** no content; both halves matter, because `status` is a
+sticky column on a row the editor may later upsert a real chart onto). Three
+things it does differently: the dedup backstop is skipped (no ChordPro to
+score, and "is this song here?" was just answered by looking), an existing
+work at the id is a **refusal** rather than a suffix (an empty placeholder at
+`foo-1` is a bounty entry for a song we already have) parked via
+`hold_reason`, and the idempotence marker hashes the FIELDS and is stamped at
+the work level as `metadata_provenance` — which doubles as the only record of
+who asked.
 
 **Idempotence**: every part written carries
 `provenance.source_id = pending:<row id>:<content sha>`. A replayed dispatch

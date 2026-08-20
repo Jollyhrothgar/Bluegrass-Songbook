@@ -18,5 +18,5 @@ parts:
     source: banjo-hangout
     source_id: '12123'
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12123
-    author: Jollyhrothgar
+    author: Mirek Tim Patek
     imported_at: '2026-07-08'

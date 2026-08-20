@@ -25,6 +25,8 @@ chord-explorer/
 
 ### theory.js
 
+- `getAllChords(key, use7ths)` - `{diatonic, nonDiatonic}`; this is what
+  main.js calls to build the palette
 - `getDiatonicChords(key, use7ths)` - I-vii chords for a major key
 - `getNonDiatonicChords(key, use7ths)` - Secondary dominants, borrowed chords
 - `getChordVoicing(chord, inversion, octave)` - Convert chord to MIDI notes

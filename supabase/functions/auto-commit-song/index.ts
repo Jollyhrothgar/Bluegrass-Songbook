@@ -45,7 +45,7 @@ import { attributionFor, requireUser } from "../_shared/identity.ts"
 import {
   classifyChange,
   dispatchPendingCommit,
-  MetadataRefusedError,
+  DispatchRefusedError,
   RATE_LIMIT_PER_HOUR,
   submissionsInLastHour,
 } from "../_shared/pending-dispatch.ts"
@@ -232,12 +232,12 @@ serve(async (req) => {
     })
 
   } catch (error) {
-    // A refused metadata edit is a decision, not a failure: the caller has no
-    // claim on this work (403), or named one that isn't there (404). Both
-    // carry a message written for a person, so pass it through rather than
-    // burying it in a 500 the client renders as "something went wrong".
-    if (error instanceof MetadataRefusedError) {
-      console.log(`Refused metadata edit of '${error.workId}': ${error.message}`)
+    // A refusal is a decision, not a failure: a metadata edit by a caller
+    // with no claim on the work (403), or naming one that isn't there (404).
+    // Both carry a message written for a person, so pass it through rather
+    // than burying it in a 500 the client renders as "something went wrong".
+    if (error instanceof DispatchRefusedError) {
+      console.log(`Refused ${error.name} on '${error.workId}': ${error.message}`)
       return json({ error: error.message }, error.status)
     }
     console.error('Error dispatching song commit:', error)

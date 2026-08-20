@@ -175,6 +175,16 @@ export class EditorState {
             this._updateTicksPerMeasure();
             this._emit('change', doc);
         });
+        // The facade can change the current track on its own — renaming
+        // it, or undoing a rename back onto a name this object still
+        // holds a stale copy of. Follow it, cursor included, or the next
+        // edit lands in a notation bucket nobody renders.
+        this.facade.on('trackChange', (id) => {
+            if (this._suppressForward || !id || id === this.trackId) return;
+            this.trackId = id;
+            this.cursor.trackId = id;
+            this._emit('trackChange', id);
+        });
         this.facade.on('undo', () => { if (!this._suppressForward) this._emit('undo'); });
         this.facade.on('redo', () => { if (!this._suppressForward) this._emit('redo'); });
         this.facade.on('clipboardChange', (c) => {
@@ -295,8 +305,11 @@ export class EditorState {
     setTrack(trackId) {
         if (!this.otf.tracks.some(t => t.id === trackId)) return false;
         if (trackId === this.trackId) return true;
-        this.facade.setTrack(trackId);
+        // Claim the id BEFORE the facade emits, so the trackChange
+        // forwarder above sees it as already-synced and this method stays
+        // the single source of the event.
         this.trackId = trackId;
+        this.facade.setTrack(trackId);
         this.selection = null;
         this.mode = EditorMode.NORMAL;
         this.cursor = new CursorPosition(1, 0,
@@ -311,6 +324,50 @@ export class EditorState {
      */
     getCurrentTrack() {
         return this.otf.tracks.find(t => t.id === this.trackId);
+    }
+
+    // ------------------------------------------------------------------
+    // Track identity and order (facade ops; see facade.js for WHY a
+    // rename moves the notation and a reorder does not)
+    // ------------------------------------------------------------------
+
+    /** The document's tracks, in document order. First = the site's lead. */
+    getTracks() {
+        return this.otf.tracks || [];
+    }
+
+    /** Position of a track in `tracks[]` (-1 when unknown). */
+    getTrackIndex(trackId = this.trackId) {
+        return this.facade.trackIndex(trackId);
+    }
+
+    /**
+     * Rename a track (the current one by default). The track stays
+     * selected under its new name — the facade re-points itself and this
+     * object follows via the trackChange forwarder. Undoable.
+     *
+     * @returns {boolean} false when nothing changed
+     * @throws {Error} when another track already has that name
+     */
+    renameTrack(newId, trackId = this.trackId) {
+        const changed = this.facade.renameTrack(trackId, newId) !== false;
+        if (changed) this._emit('tracksChange', this.getTracks());
+        return changed;
+    }
+
+    /**
+     * Move a track `delta` places through `tracks[]` (-1 earlier, +1
+     * later). Order is what makes a track the lead, so moving one to the
+     * front is how you say "this is the lead". Undoable.
+     *
+     * @returns {boolean} false at the ends (nothing moved)
+     */
+    moveTrack(delta, trackId = this.trackId) {
+        const from = this.facade.trackIndex(trackId);
+        if (from === -1) return false;
+        const changed = this.facade.moveTrack(trackId, from + delta) !== false;
+        if (changed) this._emit('tracksChange', this.getTracks());
+        return changed;
     }
 
     /**
@@ -475,6 +532,62 @@ export class EditorState {
             tick: this.cursor.tick,
             string: this.cursor.string,
         }, finger, this.trackId);
+    }
+
+    // ------------------------------------------------------------------
+    // Placed free-text annotations, anchored to the CURSOR.
+    //
+    // These are the document's `annotations` ("PART A", "Long Choke",
+    // chord names) — score-level text, not the per-note fingering the
+    // ANNOTATION *mode* deals in. They live in one place only, the
+    // facade's document, so undo/redo covers them like every other edit.
+    // ------------------------------------------------------------------
+
+    /**
+     * How far from the cursor a placed text still counts as "here" when
+     * you ask to edit one: a beat. Coarse enough to catch the label you
+     * are looking at, tight enough that a bar's other labels are safe.
+     */
+    get annotationReach() {
+        return this.otf.timing?.ticks_per_beat || TICKS_PER_BEAT;
+    }
+
+    /**
+     * The annotation at (or within a beat of) the cursor.
+     * @returns {{index: number, annotation: Object}|null}
+     */
+    getAnnotationAtCursor() {
+        const index = this.facade.findAnnotationIndex(
+            { measure: this.cursor.measure, tick: this.cursor.tick },
+            { maxTicks: this.annotationReach });
+        if (index === -1) return null;
+        return { index, annotation: this.facade.annotations()[index] };
+    }
+
+    /**
+     * Write text at the cursor: retext the annotation already there, or
+     * place a new one. Empty text deletes the existing one (and adds
+     * nothing when there is none). Undoable.
+     * @returns {boolean} false when nothing changed
+     */
+    setAnnotationAtCursor(text) {
+        const found = this.getAnnotationAtCursor();
+        if (found) return this.facade.setAnnotationText(found.index, text) !== false;
+        return this.facade.addAnnotation({
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            text,
+        }) !== false;
+    }
+
+    /**
+     * Delete the annotation at/nearest the cursor. Undoable.
+     * @returns {boolean} false when there was none
+     */
+    deleteAnnotationAtCursor() {
+        const found = this.getAnnotationAtCursor();
+        if (!found) return false;
+        return this.facade.deleteAnnotation(found.index) !== false;
     }
 
     /**

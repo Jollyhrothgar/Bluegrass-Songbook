@@ -34,6 +34,11 @@ Modes (chosen server-side, never by the client):
     else. No part is created, replaced, renamed or reordered and no part
     file is written — ``works_writer.update_metadata`` is the entry point,
     and it can only write work-level fields. See "Metadata" below.
+``placeholder``
+    A song REQUEST: mint a work with metadata, ``status: placeholder`` and
+    ``parts: []``. ``create_work(part=None, on_collision='fail')`` — it mints
+    at the id it was asked for or refuses, and never touches an existing
+    work. See "Placeholder" below.
 
 Tablature (2026-08-18)
 ----------------------
@@ -104,6 +109,43 @@ or be trusted. That is a looser question than the per-part-type ownership the
 chart and tab columns ask, on purpose — no content is rewritten by naming the
 artist — and the two must not be collapsed into each other.
 
+Placeholder (2026-08-19)
+------------------------
+A song request. It mints a work with metadata, ``status: placeholder`` and
+``parts: []`` — the shape ``utils.isPlaceholder`` and the bounty board read.
+
+``create-song-request`` used to do this itself: it hand-interpolated a
+``work.yaml`` string and PUT it to the GitHub Contents API, passing the
+EXISTING file's sha whenever the path was taken. So a request whose
+client-generated slug collided with a real work overwrote it — parts, artist,
+composers and tags replaced by an empty stub — with no suppression check, no
+redirect check and no collision handling. It also set ``github_committed`` on
+the basis of TRUST, before the commit was attempted, while treating a failed
+commit as non-fatal. That function predates phase 1c/2b and was simply never
+converted; this branch is the conversion.
+
+A request is a lead-sheet row with no lead sheet, so — unlike a tab or a
+metadata edit — it is NOT a new ``part_type``. It is recognised by shape:
+``status = 'placeholder'`` and no content (:func:`is_placeholder_row`). Both
+halves are needed; see that function.
+
+Three things it does differently:
+
+* **The dedup backstop is skipped**, for the union of the other two
+  contentless columns' reasons: no ChordPro to score, and "is this song
+  already here?" has just been answered exactly by looking rather than
+  guessed at from lyrics.
+* **An existing work at the id is a refusal, not a suffix.**
+  ``on_collision='suffix'`` would be SAFE (``foo-1``, leaving ``foo`` alone)
+  but wrong: an empty placeholder beside a real song is a bounty-board entry
+  asking for a song the site already has. The edge function answers 409
+  before a row is written; reaching :func:`apply_placeholder_row` with the
+  work present means it appeared in between, and the row is parked.
+* **The marker is the metadata one.** No content to hash and no part to hang
+  a part-level marker on, so the sha is over the fields being written and it
+  is stamped at the work level as ``metadata_provenance`` — which doubles as
+  the only record of who asked for the song.
+
 Dedup backstop (phase 3b)
 -------------------------
 The editor offers an interactive offramp before a submission is sent
@@ -137,6 +179,23 @@ low-confidence, no-match)    instrumental lands here: with no lyrics the
 Trust is deliberately *not* consulted on a redirect. A trusted user's in-place
 edit right is about content they chose to edit; here the machine chose the
 target, so the safe classification is the one that cannot destroy anything.
+
+Refusals that must not be retried
+---------------------------------
+The hourly reconciler re-fires every uncommitted row, which is the right
+answer for a transient failure and the wrong one for a *decision*. Two
+refusals are decisions: the dedup hold above, and a write whose target work
+is suppressed / soft-deleted / merged away (``works_writer.Guards``). Both
+are parked by writing the verdict to ``pending_songs.dedup_hold``, which the
+reconciler skips and the Bluegrass Dungeon renders with *Release hold* /
+*Reject* — see :func:`hold_reason` for why that column and not a new one.
+
+The suppressed case is not hypothetical: a guitar tab for ``dark-hollow-1``
+— a live, curated work — was refused because the *unrelated*, soft-deleted
+``dark-hollow`` matched the mint-time collision-suffix rule, and then refused
+again every hour for as long as it took somebody to read the logs. The rule
+itself is fixed in ``curation.is_suppressed`` / ``is_suppressed_exact``; the
+hold is what keeps the next such refusal from being an hourly one.
 
 Idempotence
 -----------
@@ -194,6 +253,30 @@ TAB_MODES = ('create', 'update', 'add')
 #: so a mode from another column ('create' for a metadata row, which would
 #: mean minting a work out of a title with no content) is a loud refusal.
 METADATA_MODES = ('metadata',)
+
+#: Modes a PLACEHOLDER row may be dispatched in. One again, and deliberately
+#: NOT ``create``: the two are the same gesture but not the same permission,
+#: and a placeholder dispatched as ``create`` would fall into the chart column
+#: and be refused there for having no content. Keeping the names apart makes
+#: a row from the wrong column a loud refusal in both directions.
+PLACEHOLDER_MODES = ('placeholder',)
+
+#: What marks a work as having no content yet, in ``pending_songs.status`` and
+#: in ``work.yaml``. Read by the frontend (``utils.isPlaceholder``) and the
+#: bounty board; ``work_schema.Work`` defines the other value as ``complete``.
+PLACEHOLDER_STATUS = 'placeholder'
+
+#: ``pending_songs`` column -> ``work.yaml`` field, for a placeholder row.
+#: The same four a metadata row may write, minus ``notes``' sibling fields the
+#: request form does not collect. ``tags`` is deliberately absent: a requester
+#: types a title and an artist, not a genre taxonomy, and the tagging pipeline
+#: fills those in once there is something to tag.
+PLACEHOLDER_COLUMNS = (
+    ('title', 'title'),
+    ('artist', 'artist'),
+    ('key', 'default_key'),
+    ('notes', 'notes'),
+)
 
 #: ``pending_songs`` column -> ``work.yaml`` field, for a metadata row. Only
 #: these four: the row shape carries nothing else a work-level field wants,
@@ -282,6 +365,22 @@ def patch_pending_row(row_id: str, updates: dict, *, supabase_url: str,
 #: ``WriteResult.skipped_reason`` when the backstop refused a create. The
 #: workflow keys its review-issue step off this exact string.
 DEDUP_HOLD_REASON = 'dedup-duplicate'
+
+#: ``WriteResult.skipped_reason`` when a placeholder was asked to mint a work
+#: at an id that already holds one. Its own reason string rather than a
+#: ``WorkExistsError``, because it is a DECISION (park the row, tell a human)
+#: and not a crash: raising would fail the workflow, be retried hourly, and
+#: fail identically every hour.
+WORK_EXISTS_SKIP_REASON = 'work-exists'
+
+#: ``WriteResult.skipped_reason`` values that no retry can turn into a write.
+#: ``works_writer.Guards`` produces both: the target work is suppressed /
+#: soft-deleted, or it was merged away. Neither changes by waiting — only a
+#: human editing ``curation/registry.yaml``, ``deleted_songs`` or the row's
+#: ``replaces_id`` can move them — so a row refused for one of these is
+#: parked (see :func:`hold_reason`) instead of being re-dispatched hourly
+#: until the end of time.
+PERMANENT_SKIP_REASONS = ('suppressed', 'redirected')
 
 
 @dataclass
@@ -711,6 +810,153 @@ def apply_metadata_row(repo_root, row: dict, mode: str, work_id: str,
 
 
 # ============================================
+# Placeholder (a song request)
+# ============================================
+
+
+def is_placeholder_row(row: dict) -> bool:
+    """Is this row a song REQUEST — a work that is wanted, with no chart yet?
+
+    The Python half of ``commit-song.ts:isPlaceholderRow``, and the two must
+    keep agreeing: that one decides which column the edge function classifies
+    the row into, this one decides which writer it reaches. Both ask the same
+    two questions of the same two columns.
+
+    ``content`` is the second question and it is load-bearing, not
+    belt-and-braces. ``status`` is a STICKY column — a chart save upserts on
+    the same id (a chart row's id is its work slug, and so is a request's) —
+    so a row that WAS a request and has since grown a real chart can still be
+    carrying ``status: placeholder``. Content settles it: once there is a
+    chart this is a chart row, whatever the status column still says.
+    Believing the status column alone would drop that submitter's ChordPro
+    and mint an empty work in its place.
+    """
+    if (row.get('part_type') or 'lead-sheet') != 'lead-sheet':
+        return False
+    if row.get('status') != PLACEHOLDER_STATUS:
+        return False
+    return not (row.get('content') or '').strip()
+
+
+def placeholder_updates(row: dict) -> dict:
+    """The work-level fields this request actually carries.
+
+    Only what is there, exactly as :func:`metadata_updates` does it: a null
+    column is "the requester didn't say", never "write a blank". The
+    difference is that this dict SEEDS a new work rather than editing one, so
+    an absent field simply never appears in the file.
+    """
+    updates = {}
+    for column, field in PLACEHOLDER_COLUMNS:
+        value = row.get(column)
+        if value is None:
+            continue
+        value = str(value).strip()
+        if value:
+            updates[field] = value
+    return updates
+
+
+def apply_placeholder_row(repo_root, row: dict, mode: str, work_id: str,
+                          actor: Optional[str] = None,
+                          verbose: bool = True) -> works_writer.WriteResult:
+    """Mint one placeholder work: metadata, ``status: placeholder``, no parts.
+
+    This is the path that replaced a hand-interpolated YAML string PUT
+    straight to the GitHub Contents API by ``create-song-request``. That PUT
+    carried the existing file's SHA when the path was taken, so a request
+    whose slug collided with a real work REPLACED it with an empty stub — its
+    parts, artist, composers and tags gone. Everything that stops that now is
+    inherited rather than re-implemented:
+
+    * ``create_work`` refuses a suppressed or redirected id (``Guards``),
+    * it never overwrites an existing work in any mode, and
+    * ``work_id`` is re-checked against :data:`SLUG_RE` before it can become
+      a directory name, the same way a tab's slug is re-derived rather than
+      trusted.
+
+    On top of those, ONE rule of this column's own: a placeholder is never
+    written where a work already exists. ``create_work(on_collision='suffix')``
+    would have been safe — it mints ``foo-1`` and leaves ``foo`` alone — but
+    it is not RIGHT: an empty placeholder beside a real song is a bounty-board
+    entry asking for a song the site already has. The edge function refuses
+    that case with a 409 before a row is even written; reaching it here means
+    the work appeared in between (or somebody re-fired a dispatch by hand), so
+    the row is parked for a human instead (:func:`hold_reason`).
+
+    The dedup backstop is skipped, for the union of the two reasons the other
+    contentless columns skip it: there is no ChordPro for a lyric-containment
+    scorer to score, and "is this song already here?" has just been answered
+    exactly, by looking, rather than guessed at from lyrics.
+    """
+    if mode not in PLACEHOLDER_MODES:
+        raise ProcessPendingError(
+            f"unknown placeholder mode {mode!r} "
+            f"(expected one of {', '.join(PLACEHOLDER_MODES)})")
+
+    row_id = row.get('id')
+    if not row_id:
+        raise ProcessPendingError('row has no id')
+
+    # A request's id IS the work slug it is asking for, and it is
+    # CLIENT-SUPPLIED — which is why it is checked on both sides of the
+    # dispatch. This is the side that mints a directory.
+    work_id = (work_id or '').strip()
+    if not SLUG_RE.match(work_id):
+        raise ProcessPendingError(
+            f"placeholder row '{row_id}' has no usable work id "
+            f"({work_id!r} is not a slug)")
+
+    updates = placeholder_updates(row)
+    if not updates.get('title'):
+        raise ProcessPendingError(f"row '{row_id}' has no title")
+
+    # Same construction as a metadata row's marker, and for the same reason: a
+    # placeholder has no content to hash either, so the sha is taken over the
+    # fields being written. It is stamped at the work level, so
+    # `metadata_applied` is the question to ask — a placeholder has no part to
+    # carry a part-level marker, which is the whole point of it.
+    marker = metadata_marker(row_id, updates)
+    if metadata_applied(repo_root, work_id, marker):
+        if verbose:
+            print(f"Already applied: works/{work_id} carries {marker}")
+        return works_writer.WriteResult(
+            mode='create-new', work_id=work_id, skipped_reason='already-applied')
+
+    if works_writer.load_work(repo_root, work_id) is not None:
+        if verbose:
+            print(f"Refusing to place a request on works/{work_id}: "
+                  f"a work is already there")
+        return works_writer.WriteResult(
+            mode='create-new', work_id=work_id,
+            skipped_reason=WORK_EXISTS_SKIP_REASON)
+
+    extra = {'status': PLACEHOLDER_STATUS}
+    if updates.get('notes'):
+        extra['notes'] = updates['notes']
+    # The work-level provenance a metadata edit stamps, used here as the
+    # request's receipt: who asked, when, and the marker that makes a
+    # re-dispatch a no-op. A placeholder has no part to hang provenance on, so
+    # this is the only record that the work was minted by a request at all.
+    extra['metadata_provenance'] = _provenance(row, marker, actor)
+
+    return works_writer.create_work(
+        repo_root, work_id, updates['title'], None,
+        artist=updates.get('artist'),
+        default_key=updates.get('default_key'),
+        tags=[],
+        extra=extra,
+        # Unreachable after the existence check above, and deliberately not
+        # 'suffix': the two together mean this column can only ever mint at
+        # the id it was asked for, or refuse.
+        on_collision='fail',
+        allow_existing_dir=True,
+        on_suppressed='skip',
+        verbose=verbose,
+    )
+
+
+# ============================================
 # Tablature
 # ============================================
 
@@ -1076,6 +1322,13 @@ def apply_row(repo_root, row: dict, mode: str, work_id: str,
     if part_type == 'metadata':
         return apply_metadata_row(repo_root, row, mode, work_id, actor,
                                   verbose=verbose)
+    # A song REQUEST is a lead-sheet row that has no lead sheet yet, so it is
+    # recognised by SHAPE (status + no content) rather than by part_type —
+    # see is_placeholder_row for why both halves are needed. Checked after
+    # part_type so a tab or a metadata row can never be read as one.
+    if is_placeholder_row(row):
+        return apply_placeholder_row(repo_root, row, mode, work_id, actor,
+                                     verbose=verbose)
 
     if mode not in MODES:
         raise ProcessPendingError(
@@ -1211,6 +1464,65 @@ def _one_line(value) -> str:
     return ' '.join(str(value or '').split())
 
 
+def hold_reason(result: works_writer.WriteResult,
+                backstop: Optional[DedupBackstop] = None) -> Optional[str]:
+    """Why this row must stop being re-dispatched, or None if it may retry.
+
+    The reconciler re-fires every uncommitted row every hour, which is right
+    for a transient failure (a GitHub 502, a push race) and catastrophic for
+    a refusal that is a *decision*: the same refusal, the same red workflow
+    run and the same alert issue, hourly, forever. A refused row therefore
+    gets its verdict written back to ``pending_songs.dedup_hold``, which the
+    reconciler already treats as "held — a human owns this now" and skips.
+
+    Three kinds of refusal qualify, and all three are decisions:
+
+    - the **dedup backstop** held a create (its original meaning),
+    - the write target is **suppressed or redirected**
+      (:data:`PERMANENT_SKIP_REASONS`) — the case that stranded the guitar
+      tab for ``dark-hollow-1``, and
+    - a **song request whose slug already holds a work**
+      (:data:`WORK_EXISTS_SKIP_REASON`). The song exists, so the request is
+      already granted; nothing may be written and nothing will change by
+      waiting.
+
+    Why ``dedup_hold`` rather than a new column: it is already the flag the
+    reconciler skips on, the RLS policies grant admins over, and the
+    Bluegrass Dungeon renders with *Release hold* / *Reject* — so one
+    migration-free write buys the stop AND the human surface. A second
+    column would need all four of those rebuilt to mean the same thing. The
+    reason string is what the admin reads, so it has to say which kind this
+    is; the column name is a historical accident, and
+    ``commit-song.ts:holdReason`` names the general question on the other
+    side of the dispatch.
+
+    A hold is not a verdict on the submission — it is a stop. Clearing it
+    (un-suppress the work first, or point ``replaces_id`` at a live one) is
+    what re-arms the next reconciler pass.
+    """
+    if result.skipped_reason == DEDUP_HOLD_REASON:
+        return (backstop.decision.reason if backstop and backstop.decision
+                else 'held by the dedup backstop')
+    if result.skipped_reason == WORK_EXISTS_SKIP_REASON:
+        return (
+            f"a work already exists at '{result.work_id}', so this song "
+            f"request cannot mint one there — and a placeholder must never be "
+            f"written over a work (that is the bug this path was rewritten to "
+            f"fix). The song is already in the songbook, so the request is "
+            f"already granted: delete the row. If it is genuinely a DIFFERENT "
+            f"song that happens to slug the same, re-file it under a slug "
+            f"that distinguishes them.")
+    if result.skipped_reason in PERMANENT_SKIP_REASONS:
+        return (
+            f"target work '{result.work_id}' is {result.skipped_reason} "
+            f"(curation/registry.yaml, docs/data/deleted_songs.json or "
+            f"docs/data/redirects.json), so nothing may be written to it. "
+            f"Retrying cannot change that. Clear this hold only after the "
+            f"work is restored, or retarget the row's replaces_id at a live "
+            f"work.")
+    return None
+
+
 def main() -> int:
     row_id = os.environ.get('PENDING_ROW_ID', '').strip()
     mode = os.environ.get('PENDING_MODE', '').strip()
@@ -1241,19 +1553,19 @@ def main() -> int:
         print(f'Error: {e}', file=sys.stderr)
         return 1
 
-    # A held row must stop being re-dispatched. Without this the hourly
-    # reconciler would re-fire it every hour and the backstop would refuse it
-    # every hour — a review issue that never stops growing and a workflow that
-    # is always red. The flag is set here rather than by the workflow so the
-    # hold is atomic with the decision that made it.
-    if result.skipped_reason == DEDUP_HOLD_REASON:
-        reason = (backstop.decision.reason if backstop.decision
-                  else 'held by the dedup backstop')
+    # A row refused by a DECISION must stop being re-dispatched. Without
+    # this the hourly reconciler re-fires it every hour and it is refused
+    # every hour — a review issue that never stops growing and a workflow
+    # that is always red. The flag is set here rather than by the workflow
+    # so the hold is atomic with the decision that made it.
+    held = hold_reason(result, backstop)
+    if held:
         try:
-            patch_pending_row(row_id, {'dedup_hold': reason[:5000]},
+            patch_pending_row(row_id, {'dedup_hold': held[:5000]},
                               supabase_url=supabase_url,
                               service_key=service_key)
-            print(f"Marked '{row_id}' dedup_hold — the reconciler will skip it.")
+            print(f"Marked '{row_id}' dedup_hold — the reconciler will skip "
+                  f"it: {held}")
         except ProcessPendingError as e:
             # Worth saying loudly, but not worth failing over: the review
             # issue still gets opened and a human still sees the row.

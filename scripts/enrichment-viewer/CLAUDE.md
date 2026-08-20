@@ -6,8 +6,14 @@ Web-based tool for reviewing enrichment changes before applying them. Shows side
 
 ```bash
 uv run python scripts/enrichment-viewer/server.py
-# Opens at http://localhost:8000
+# Serves at http://localhost:8001  (default; --port to change)
+
+uv run python scripts/enrichment-viewer/server.py --port 8005
 ```
+
+It does not open a browser for you, and it reads `sources/*/parsed/*.pro`
+directly (it imports `enrich_songs` from `scripts/lib/`), so it shows the
+LEGACY source tree, not `works/`.
 
 ## Structure
 

@@ -14,10 +14,14 @@ The contract this module enforces:
 
 1. **Never silently overwrite.** Writing to an id that already exists picks
    an explicit mode — there is no "just write it" entry point.
-2. **Suppressed and redirected ids are refused.** A work killed by
-   ``curation/registry.yaml`` / ``docs/data/deleted_songs.json``, or merged
-   away via ``docs/data/redirects.json``, must not come back through an
-   importer.
+2. **Suppressed and redirected ids are refused** — but the question is
+   asked twice, differently, and the mode decides which one. ``create_work``
+   asks ``Guards.blocked``: the exact id *and* its collision-suffix base, so
+   an importer cannot resurrect a suppressed ``foo`` as ``foo-1``. Every
+   other mode operates on a work that already exists, so it asks
+   ``Guards.blocked_existing``: the exact id only. Collapsing the two
+   refused a tab for the live ``dark-hollow-1`` because the unrelated
+   ``dark-hollow`` had been soft-deleted. See ``curation.is_suppressed``.
 3. **Provenance is required.** Every part carries where it came from; there
    is no way to add a part without saying so.
 4. **YAML is serialized, never concatenated.** Scalars that would be
@@ -29,7 +33,9 @@ Modes
 
 ``create_work``
     A brand-new work. On collision: suffix (``foo`` → ``foo-1``, the
-    historical importer behavior) or fail. Never overwrites.
+    historical importer behavior) or fail. Never overwrites. ``part=None``
+    mints a PLACEHOLDER — metadata and ``parts: []``, no content — which is
+    the one shape of work that has no part to carry provenance.
 ``add_part``
     Enrich an existing work with a NEW part (a tab for a work that only had
     a lead sheet). Refuses if a part with that identity already exists.
@@ -66,7 +72,8 @@ from typing import Any, Optional
 
 import yaml
 
-from curation import Registry, is_suppressed, load_deleted_songs, load_registry
+from curation import (Registry, is_suppressed, is_suppressed_exact,
+                      load_deleted_songs, load_registry)
 from work_schema import slugify, validate_work
 
 WORK_YAML = 'work.yaml'
@@ -231,8 +238,34 @@ class Guards:
         )
 
     def blocked(self, work_id: str) -> Optional[str]:
-        """Reason this id must not be created, or None."""
+        """MINT: reason a NEW work must not be created here, or None.
+
+        The full rule, including ``curation.is_suppressed``'s
+        collision-suffix base check — an importer must not resurrect a
+        suppressed ``foo`` as ``foo-1``.
+        """
         if is_suppressed(work_id, self.registry, self.deleted_songs):
+            return 'suppressed'
+        if work_id in (self.redirects or {}):
+            return 'redirected'
+        return None
+
+    def blocked_existing(self, work_id: str) -> Optional[str]:
+        """WRITE: reason an EXISTING work must not be written to, or None.
+
+        Exact id only. ``foo-1`` on disk is a published work, not a bid to
+        resurrect ``foo``, so the base-suffix heuristic has no business
+        here — asking it refused a guitar tab for the live, curated
+        ``dark-hollow-1`` because the unrelated ``dark-hollow`` had been
+        soft-deleted, and refused it identically every hour thereafter.
+
+        A work whose OWN id is suppressed or redirected is still refused,
+        and that is the deliberate half: the next build drops it from both
+        indexes (``curation.filter_suppressed`` asks exactly this question),
+        so a part added to it would be published nowhere. The rule reads
+        "if the build still publishes it, you may add to it".
+        """
+        if is_suppressed_exact(work_id, self.registry, self.deleted_songs):
             return 'suppressed'
         if work_id in (self.redirects or {}):
             return 'redirected'
@@ -371,7 +404,8 @@ def _write_part_file(work_dir: Path, part: PartSpec):
 # ============================================
 
 
-def create_work(repo_root, work_id: str, title: str, part: PartSpec, *,
+def create_work(repo_root, work_id: str, title: str,
+                part: Optional[PartSpec], *,
                 artist: Optional[str] = None,
                 composers: Optional[list] = None,
                 default_key: Optional[str] = None,
@@ -383,6 +417,17 @@ def create_work(repo_root, work_id: str, title: str, part: PartSpec, *,
                 guards: Optional[Guards] = None,
                 verbose: bool = True) -> WriteResult:
     """Create a brand-new work. Never overwrites an existing one.
+
+    ``part`` is required but may be ``None``: a **placeholder** is a work
+    with metadata and ``parts: []``, and it is the only work shape with no
+    content to attach provenance to. It gets its own entry point here rather
+    than one beside it because everything a placeholder needs decided —
+    "is this id suppressed", "is it redirected", "is it taken, and does that
+    mean suffix or fail" — is the same decision minting any other work needs,
+    and ``add_placeholder`` used to answer all three differently (it answered
+    the first two not at all). ``None`` is spelled out rather than defaulted
+    so no caller drops a part by accident and silently mints an empty work.
+    Set ``status``/``notes``/``external`` through ``extra``.
 
     ``on_collision``:
       - ``'suffix'`` (default, the historical importer behavior): ``foo`` →
@@ -408,7 +453,7 @@ def create_work(repo_root, work_id: str, title: str, part: PartSpec, *,
         return _skip('create-new', work_id, reason, on_suppressed, verbose)
 
     # Fail fast on bad provenance before touching the filesystem.
-    part_dict = part.to_dict()
+    part_dict = part.to_dict() if part is not None else None
 
     def occupied(path: Path) -> bool:
         return (path / WORK_YAML).exists() if allow_existing_dir \
@@ -436,14 +481,16 @@ def create_work(repo_root, work_id: str, title: str, part: PartSpec, *,
     work['tags'] = list(tags) if tags else []
     if extra:
         work.update(extra)
-    work['parts'] = [part_dict]
+    work['parts'] = [part_dict] if part_dict is not None else []
 
     work_dir.mkdir(parents=True, exist_ok=True)
-    _write_part_file(work_dir, part)
+    if part is not None:
+        _write_part_file(work_dir, part)
     write_work_yaml(repo_root, work)
 
     return WriteResult(mode='create-new', work_id=work_id, work_dir=work_dir,
-                       part_file=part.file, written=True)
+                       part_file=part.file if part is not None else None,
+                       written=True)
 
 
 # ============================================
@@ -462,7 +509,7 @@ def add_part(repo_root, work_id: str, part: PartSpec, *,
     that case is an update or a fork, not an add.
     """
     guards = guards or Guards.load(repo_root)
-    reason = guards.blocked(work_id)
+    reason = guards.blocked_existing(work_id)
     if reason:
         return _skip('add-part', work_id, reason, on_suppressed, verbose)
 
@@ -526,7 +573,7 @@ def update_part(repo_root, work_id: str, *,
     reports ``part_file`` with no yaml touched.
     """
     guards = guards or Guards.load(repo_root)
-    reason = guards.blocked(work_id)
+    reason = guards.blocked_existing(work_id)
     if reason:
         return _skip('update-part', work_id, reason, on_suppressed, verbose)
 
@@ -610,7 +657,7 @@ def update_metadata(repo_root, work_id: str, *,
     changed a work's details.
     """
     guards = guards or Guards.load(repo_root)
-    reason = guards.blocked(work_id)
+    reason = guards.blocked_existing(work_id)
     if reason:
         return _skip('update-metadata', work_id, reason, on_suppressed, verbose)
 
@@ -721,7 +768,7 @@ def fork_to_arrangement(repo_root, work_id: str, content: str,
     arrangement rather than a correction.
     """
     guards = guards or Guards.load(repo_root)
-    reason = guards.blocked(work_id)
+    reason = guards.blocked_existing(work_id)
     if reason:
         return _skip('fork-to-arrangement', work_id, reason, on_suppressed,
                      verbose)

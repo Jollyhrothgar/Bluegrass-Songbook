@@ -19,7 +19,9 @@ import {
 import {
   GITHUB_REPO,
   getFileContent,
+  isPlaceholderRow,
   type PendingSong,
+  holdReason,
   unretryableReason,
 } from "./commit-song.ts"
 
@@ -215,4 +217,123 @@ Deno.test("unretryableReason: a metadata row must still name its target work", (
     "metadata row names no target work",
   )
   assertEquals(unretryableReason({ ...meta, title: "" }), "missing title")
+})
+
+// ============================================
+// isPlaceholderRow
+// ============================================
+//
+// A song REQUEST: a work that is wanted, with no chart behind it yet. The
+// predicate decides which column classifyChange puts the row in, so getting it
+// wrong in either direction is a write to the wrong place.
+
+const request = (over: Partial<PendingSong> = {}): PendingSong => ({
+  id: "salt-creek-bill-monroe",
+  title: "Salt Creek",
+  content: null,
+  status: "placeholder",
+  ...over,
+})
+
+Deno.test("isPlaceholderRow: status placeholder + no content", () => {
+  assertEquals(isPlaceholderRow(request()), true)
+  assertEquals(isPlaceholderRow(request({ content: "" })), true)
+  assertEquals(isPlaceholderRow(request({ content: "   \n" })), true)
+})
+
+Deno.test("isPlaceholderRow: an ordinary chart row is not one", () => {
+  assertEquals(isPlaceholderRow(row()), false)
+  assertEquals(isPlaceholderRow(row({ status: null })), false)
+  assertEquals(isPlaceholderRow(row({ status: "complete" })), false)
+})
+
+Deno.test("isPlaceholderRow: CONTENT WINS over a stale status column", () => {
+  // The trap, and the reason this asks two questions instead of one.
+  // `pending_songs.id` for a chart IS the work slug — and so is a request's —
+  // so the editor's save upserts onto the very same row a request created.
+  // PostgREST only overwrites the columns in the payload, so `status` can
+  // still read 'placeholder' on a row that now carries a real chart. Reading
+  // status alone would classify that chart as a request and mint an empty
+  // work in place of the submitter's ChordPro.
+  const grownUp = request({ content: "{title: Salt Creek}\n[G]…\n" })
+  assertEquals(isPlaceholderRow(grownUp), false)
+})
+
+Deno.test("isPlaceholderRow: only the chart column can hold a request", () => {
+  // A tab or a metadata row is never a song request, whatever its status
+  // says: both live in their own id namespaces and target a work.
+  assertEquals(isPlaceholderRow(request({ part_type: "tablature" })), false)
+  assertEquals(isPlaceholderRow(request({ part_type: "metadata" })), false)
+  // Absent means chart — every row written before 2026-08-18 has no part_type.
+  assertEquals(isPlaceholderRow(request({ part_type: null })), true)
+})
+
+Deno.test("unretryableReason: a song REQUEST is retryable WITHOUT content", () => {
+  // Before the placeholder column existed this row read as a chart with no
+  // content, i.e. permanently unretryable: every untrusted user's song
+  // request was filed for manual rescue an hour after they made it, and the
+  // reconciler opened an alert issue about it.
+  assertEquals(unretryableReason(request()), null)
+  assertEquals(unretryableReason(request({ content: "" })), null)
+  // The two fields it does still need.
+  assertEquals(unretryableReason(request({ id: "" })), "missing id")
+  assertEquals(unretryableReason(request({ title: "" })), "missing title")
+})
+
+// ============================================
+// holdReason
+// ============================================
+//
+// The other half of "do not re-dispatch this". `unretryableReason` judges the
+// row's shape, which the edge runtime can see; `holdReason` reports a verdict
+// reached where the repo is (process_pending.py) and handed back through
+// `dedup_hold`. The reconciler must skip both, for the same reason: waiting
+// changes neither.
+
+Deno.test("holdReason: an ordinary row is not held", () => {
+  assertEquals(holdReason(row()), null)
+  assertEquals(holdReason(row({ dedup_hold: null })), null)
+})
+
+Deno.test("holdReason: a blank hold is not a hold", () => {
+  // A held row's reason is what the admin queue renders. An empty box there
+  // is worse than no hold at all, and a whitespace string would make one.
+  assertEquals(holdReason(row({ dedup_hold: "   " })), null)
+})
+
+Deno.test("holdReason: the dedup backstop's hold is reported verbatim", () => {
+  const reason = "looks like how-long-blues (0.94 containment)"
+  assertEquals(holdReason(row({ dedup_hold: reason })), reason)
+})
+
+Deno.test("holdReason: a suppressed write target is held the same way", () => {
+  // The dark-hollow-1 case. process_pending.py refused the write because the
+  // target work is suppressed/merged away, wrote that verdict to dedup_hold,
+  // and the reconciler must now leave the row alone instead of re-firing it
+  // hourly forever. Same column, same skip, different author of the refusal.
+  const held = row({
+    id: "tab:dark-hollow-1:85ltxlug",
+    part_type: "tablature",
+    instrument: "guitar",
+    replaces_id: "dark-hollow-1",
+    dedup_hold:
+      "target work 'dark-hollow-1' is suppressed (curation/registry.yaml, " +
+      "docs/data/deleted_songs.json or docs/data/redirects.json), so nothing " +
+      "may be written to it. Retrying cannot change that.",
+  })
+  const reason = holdReason(held)
+  assertEquals(typeof reason, "string")
+  assertEquals(reason!.includes("dark-hollow-1"), true)
+
+  // And it is held REGARDLESS of shape: the row is otherwise perfectly
+  // committable, so nothing else would have stopped the re-dispatch.
+  assertEquals(unretryableReason(held), null)
+})
+
+Deno.test("holdReason: clearing the hold re-arms the row", () => {
+  // Release-hold in the Bluegrass Dungeon sets dedup_hold to null; the next
+  // reconciler pass must pick the row up again.
+  const held = row({ dedup_hold: "target work 'x' is suppressed" })
+  assertEquals(holdReason(held) !== null, true)
+  assertEquals(holdReason({ ...held, dedup_hold: null }), null)
 })

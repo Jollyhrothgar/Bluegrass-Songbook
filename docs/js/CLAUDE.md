@@ -51,7 +51,7 @@ docs/
 ├── css/style.css       # Dark/light themes, responsive layout
 ├── posts/              # Blog posts (markdown)
 └── data/
-    ├── index.jsonl     # SEARCHABLE canon only, no ChordPro (~1.8k rows)
+    ├── index.jsonl     # SEARCHABLE canon only, no ChordPro (`wc -l` it)
     ├── archive.jsonl   # Pruned rows, same shape, lyrics truncated (lazy)
     ├── songs/{id}.pro  # Full ChordPro per work — fetched when a page opens
     ├── posts.json      # Blog manifest (built by scripts/lib/build_posts.py)
@@ -385,7 +385,10 @@ Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
 - `editorConvertToChordPro()` - Smart paste: chord-above-lyrics → ChordPro
 - `updateEditorPreview()` - Refresh chrome (key/toolbar) + re-render preview
-- `submitSongToGitHub()` - Create GitHub issue for submission
+- Submitting writes a `pending_songs` row and then POSTs its id to the
+  `auto-commit-song` edge function (see "Contributing" below). There is no
+  `submitSongToGitHub()` any more — the GitHub-issue flow and its
+  `create-song-issue` function are both deleted.
 
 ### View Navigation
 
@@ -509,7 +512,10 @@ archive, and one ChordPro file per work. Nothing in `index.jsonl` carries song
 text beyond `lyrics` / `first_line` (which search snippets need).
 
 ```
-data/index.jsonl      ~1.8k searchable canon rows        fetched at startup
+data/index.jsonl      searchable canon rows              fetched at startup
+                      (2,462 on 2026-08-19 — `wc -l` it
+                       after a build rather than trusting
+                       a number in this file)
 data/archive.jsonl    pruned rows, lyrics truncated      fetched when idle
 data/songs/{id}.pro   the work's full ChordPro           fetched per song page
 ```
@@ -649,30 +655,42 @@ yours only if a part there records you as its submitter.
 - **Supabase JS** - CDN loaded for auth and database
 - Fetches `data/index.jsonl` at startup (canon only), `data/archive.jsonl` when
   the browser idles, and `data/songs/{id}.pro` per song page
-- Uses GitHub API for issue submission (no auth required)
+- Never calls the GitHub API directly (`grep -r api.github.com docs/js/` is
+  empty). Everything that reaches GitHub goes through a Supabase edge
+  function, which holds the token server-side
 
 ## supabase-auth.js
 
-Handles authentication and cloud sync. Key exports:
+Handles authentication and cloud sync. It is **not** an ES module — the whole
+surface is the `window.SupabaseAuth` object literal at the bottom of the file.
+That literal is the definitive list; this table is a partial copy, so read it
+directly when a name matters:
 
-| Function | Purpose |
+```bash
+sed -n '/^window.SupabaseAuth = {/,/^};/p' docs/js/supabase-auth.js
+```
+
+Note the key on the object is what callers use, and it does not always match
+the function's declared name (`init:` exposes `initSupabase`).
+
+| Key on `window.SupabaseAuth` | Purpose |
 |----------|---------|
-| `initSupabase()` | Initialize Supabase client |
+| `init()` | Initialize Supabase client (the function is `initSupabase`) |
 | `signInWithGoogle()` | OAuth sign-in flow |
 | `signOut()` | Sign out current user |
-| `getCurrentUser()` | Get current authenticated user |
-| `fetchUserLists()` | Get user's song lists from cloud |
-| `createList(name)` | Create a new list |
-| `deleteList(id)` | Delete a list |
-| `addSongToList(listId, songId)` | Add song to a list |
-| `removeSongFromList(listId, songId)` | Remove song from list |
+| `getUser()` | Current authenticated user (sync, from cache) |
+| `fetchCloudLists()` | Get user's song lists from cloud |
+| `createCloudList(name)` | Create a new list |
+| `deleteCloudList(id)` | Delete a list |
+| `addToCloudList(listId, songId)` | Add song to a list |
+| `removeFromCloudList(listId, songId)` | Remove song from list |
 | `fetchGroupVotes(groupId)` | Work-level vote counts for a version group |
 | `fetchArrangementVotes(songId)` | Per-arrangement counts for one work (`''` = the work-level vote) |
 | `fetchUserArrangementVotes(songId)` | Which of one work's arrangements the user voted for |
 | `castVote(songId, groupId, value, arrSlug)` | Vote for a version; `arrSlug` null = the work's own chart |
 | `removeVote(songId, arrSlug)` | Remove the user's vote for that same arrangement key |
 | `isTrustedUser()` | Check if current user has trusted status |
-| `savePendingSong(song)` | Save song to pending_songs table |
+| `supabase` (getter) | The raw client — how `pending_songs` rows are written; there is no `savePendingSong` helper |
 
 ## Recent Features (Jan-Feb 2026)
 
@@ -782,6 +800,17 @@ Frictionless song requests without a GitHub account.
   branches on identity: **signed in** → a `pending_songs` placeholder the
   requester owns (and lands on); **anonymous** → a `tune-request` GitHub
   issue and a confirmation, with no placeholder work minted
+- The signed-in branch takes the same road as every other contribution
+  (2026-08-19): a `pending_songs` row with `status: 'placeholder'` and no
+  content, then the `pending-commit` dispatch → `works_writer`. It used to
+  PUT `work.yaml` to the GitHub Contents API itself, passing the existing
+  file's sha whenever the slug was taken — i.e. **overwriting a real work
+  with an empty stub**. See "Contribution Workflow" in `supabase/CLAUDE.md`.
+- **A request for a song that already exists is refused with a 409**, whose
+  message (`"<title>" is already in the songbook.`) the picker shows in
+  `reqStatus`. The dedup warning in front of the form stays advisory; this
+  is the answer that binds, and there is deliberately no suffixed fallback
+  (an empty placeholder at `foo-1` is a bounty entry for a song we have)
 
 ### Contributing a tab (`otf-editor/create-tab-entry.js`, `existing-tabs.js`)
 
@@ -947,7 +976,7 @@ Lists can have multiple owners for collaborative curation.
 - **Follow/Unfollow**: Follow someone else's list to see it with your lists
 - **Thunderdome**: Claim abandoned lists (owner inactive 1+ year)
 - **Shareable URLs**: `#list/{id}` URLs work for any public list
-- Lists stored in Supabase `song_lists` table with `owner_ids` array
+- Lists stored in the Supabase `user_lists` table with an `owners` uuid array
 
 ### Shareable Lists
 

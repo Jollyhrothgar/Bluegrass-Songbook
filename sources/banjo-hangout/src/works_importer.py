@@ -399,8 +399,12 @@ def _provenance(tab: TabEntry, site: SiteConfig = DEFAULT_SITE) -> dict:
         'source': site.source,
         'source_id': source_id,
         'source_url': site.tab_page_url(source_id),
-        'author': tab.author,
     }
+    # Omitted when unknown rather than written as null: source_url still
+    # leads a reader to the real poster, whereas a placeholder author
+    # would read as a credit. Never substitute a default here.
+    if tab.author:
+        prov['author'] = tab.author
     # Listing detail the arrangement picker shows next to each alternate
     if tab.difficulty:
         prov['difficulty'] = tab.difficulty

@@ -23,7 +23,7 @@ parts:
     source: banjo-hangout
     source_id: '13648'
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=13648
-    author: Jollyhrothgar
+    author: Ian_banjo
     imported_at: '2026-07-08'
 - type: tablature
   instrument: guitar

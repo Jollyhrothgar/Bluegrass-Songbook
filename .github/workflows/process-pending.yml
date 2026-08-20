@@ -140,6 +140,11 @@ jobs:
               core.notice(`Opened review issue #${created.data.number}`);
             }
 
+      # Loud, and now exactly ONCE per row: a refusal that cannot change by
+      # waiting (a suppressed or merged-away target) is parked by
+      # process_pending.py's hold_reason() before this step runs, so the
+      # hourly reconciler stops re-dispatching it and this failure does not
+      # repeat. Anything else here really is worth a second look next hour.
       - name: Refuse to mark a skipped row durable
         if: >-
           steps.write.outputs.written != 'true'

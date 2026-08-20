@@ -29,7 +29,7 @@ import {
     // Navigation state
     listContext, setListContext
 } from './state.js';
-import { escapeHtml } from './utils.js';
+import { escapeHtml, safeUrl } from './utils.js';
 import {
     extractChords, detectKey,
     CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
@@ -401,15 +401,23 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
         'bluegrass-lyrics': 'BluegrassLyrics.com',
         'web-chords': 'Original chord chart'
     };
+    // Every URL below is submitter data — x_lyrics_url / x_source_url come
+    // straight out of the work's ChordPro metadata, book_url and
+    // tunearch_url off the index row. safeUrl drops anything that isn't
+    // http(s); a dropped link falls through to the plain-text source name.
+    const sourceHref = safeUrl(sourceUrl);
+    const bookHref = safeUrl(bookUrl);
+    const tunearchHref = safeUrl(song?.tunearch_url);
+
     let sourceHtml = '';
-    if (sourceUrl) {
+    if (sourceHref) {
         const sourceName = sourceDisplayNames[song?.source] || 'Source';
-        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${sourceName}</a></div>`;
-    } else if (song?.source === 'golden-standard' && bookUrl) {
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${sourceHref}" target="_blank" rel="noopener">${escapeHtml(sourceName)}</a></div>`;
+    } else if (song?.source === 'golden-standard' && bookHref) {
         const bookName = bookDisplay || 'Golden Standards Collection';
-        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${bookUrl}" target="_blank" rel="noopener">${escapeHtml(bookName)}</a></div>`;
-    } else if (song?.tunearch_url) {
-        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${song.tunearch_url}" target="_blank" rel="noopener">TuneArch.org</a></div>`;
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${bookHref}" target="_blank" rel="noopener">${escapeHtml(bookName)}</a></div>`;
+    } else if (tunearchHref) {
+        sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> <a href="${tunearchHref}" target="_blank" rel="noopener">TuneArch.org</a></div>`;
     } else if (song?.source && sourceDisplayNames[song.source]) {
         sourceHtml = `<div class="song-source"><span class="source-label">Source:</span> ${sourceDisplayNames[song.source]}</div>`;
     }

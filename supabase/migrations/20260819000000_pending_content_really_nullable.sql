@@ -1,0 +1,35 @@
+-- pending_songs.content: actually drop NOT NULL this time.
+--
+-- 20260209000000_pending_nullable_content.sql is a one-line
+-- `ALTER TABLE pending_songs ALTER COLUMN content DROP NOT NULL;` and
+-- `supabase migration list` reports it applied on the remote — same id, same
+-- timestamp, no drift. The live schema disagreed:
+--
+--   $ supabase db dump --schema public | grep -A6 'CREATE TABLE.*pending_songs'
+--     "content" "text" NOT NULL,
+--
+-- So the history table records a migration whose DDL is not in the database.
+-- Whatever caused that (a `migration repair` that stamped without running, a
+-- table edited through the dashboard, a restore from a pre-2026-02 snapshot),
+-- the lesson is worth writing down: **a matching `migration list` proves the
+-- ledger agrees, not that the schema does.** When a column's nullability or a
+-- constraint is load-bearing, dump the schema and look.
+--
+-- What it broke, in the order it was noticed:
+--
+--   * Metadata edits (part_type='metadata') were structurally IMPOSSIBLE.
+--     20260818010000 requires `content is null` for them, and NOT NULL
+--     forbids exactly that, so every save failed with 23502 — a CHECK and a
+--     NOT NULL that can never both be satisfied.
+--   * Nothing else, which is why it hid for six months. 20260209000000 was
+--     written for document-only placeholders, but that path never actually
+--     sent null -- `git show 204960bf4` has the submitter writing
+--     `content: ''` into the row (the `null` in that commit is in the edge
+--     function's payload, not the column). So the un-applied DROP NOT NULL
+--     was never exercised until part_type='metadata' became its first real
+--     consumer. A dead constraint is invisible until something depends on it.
+--
+-- Idempotent and safe to re-run: DROP NOT NULL on a column that is already
+-- nullable is a no-op, and widening nullability cannot fail against existing
+-- rows.
+alter table pending_songs alter column content drop not null;

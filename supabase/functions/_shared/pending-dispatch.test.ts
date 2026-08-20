@@ -27,13 +27,16 @@ import {
 import {
   anyPartOwners,
   classifyChange,
+  DispatchRefusedError,
   MetadataRefusedError,
   partBlocks,
+  PlaceholderRefusedError,
   RATE_LIMIT_PER_HOUR,
   slugify,
   submissionsInLastHour,
   submittersOf,
   tabPartOwners,
+  WORK_SLUG_RE,
 } from "./pending-dispatch.ts"
 
 // ============================================
@@ -912,6 +915,188 @@ Deno.test("classifyChange metadata: part_file is ignored — this column edits n
     })
     assertEquals(out.mode, "metadata")
   })
+})
+
+// ============================================
+// classifyChange — placeholder (a song request)
+// ============================================
+//
+// This column is where a LIVE DATA-LOSS BUG was. `create-song-request` used to
+// PUT `works/<id>/work.yaml` straight to the Contents API, passing the
+// existing file's sha whenever the path was taken — so a request whose
+// client-generated slug collided with a real work replaced that work's parts,
+// artist, composers and tags with an empty `parts: []` stub. The refusal
+// pinned below is the fix, and it is pinned hard because the safe-looking
+// alternatives (suffix to `<slug>-1`, or let trust through) both reintroduce
+// either the corpus pollution or the overwrite.
+
+Deno.test("classifyChange placeholder: nothing at the slug -> placeholder", async () => {
+  await withGithub({}, async () => {
+    const out = await classify({
+      rowId: "salt-creek-bill-monroe",
+      userId: STRANGER,
+      title: "Salt Creek",
+      placeholder: true,
+    })
+    assertEquals(out.mode, "placeholder")
+    assertEquals(out.workId, "salt-creek-bill-monroe")
+  })
+})
+
+Deno.test("REFUSAL: a request for a song that EXISTS is refused, never written", async () => {
+  // THE bug, in one test. `how-long-blues` is a real work with parts; a
+  // request that slugged onto it used to overwrite it with an empty stub.
+  await withGithub({ "works/how-long-blues/work.yaml": HOW_LONG }, async () => {
+    const error = await assertRejects(
+      () =>
+        classify({
+          rowId: "how-long-blues",
+          userId: STRANGER,
+          title: "How Long Blues",
+          placeholder: true,
+        }),
+      PlaceholderRefusedError,
+    )
+    assertEquals(error.status, 409)
+    assertEquals(error.workId, "how-long-blues")
+  })
+})
+
+Deno.test("REFUSAL: TRUST does not open the overwrite", async () => {
+  // The old code's branch condition was `if (trustedUser && githubToken)` —
+  // trust was the thing that turned the write ON. Nothing about being trusted
+  // makes an empty stub a safe thing to put on top of somebody's chart, and
+  // this column asks no ownership question at all.
+  await withGithub({ "works/how-long-blues/work.yaml": HOW_LONG }, async () => {
+    for (const trusted of [false, true]) {
+      await assertRejects(
+        () =>
+          classify({
+            rowId: "how-long-blues",
+            userId: PRIMARY_CHART_OWNER,
+            trusted,
+            title: "How Long Blues",
+            placeholder: true,
+          }),
+        PlaceholderRefusedError,
+      )
+    }
+  })
+})
+
+Deno.test("REFUSAL: a transient GitHub failure is never read as 'free slug'", async () => {
+  // getFileContent's 404-is-the-only-null rule, asked from the column that
+  // most needs it: a 500 read as "nothing there" would mint a placeholder
+  // over a live work. It must throw, not classify.
+  for (const status of [403, 500, 502]) {
+    await withGithub({ "works/how-long-blues/work.yaml": status }, async () => {
+      await assertRejects(
+        () =>
+          classify({
+            rowId: "how-long-blues",
+            userId: STRANGER,
+            title: "How Long Blues",
+            placeholder: true,
+          }),
+        Error,
+        String(status),
+      )
+    })
+  }
+})
+
+Deno.test("REFUSAL: a malformed slug is a 400 — it becomes a directory name", async () => {
+  // The id is client-supplied and becomes a path inside works/. The old check
+  // was `^[a-z0-9-]+$`, which admits every one of these.
+  for (const rowId of ["", "  ", "-", "--", "foo-", "-foo", "Foo", "a/b", "a b", "a--b"]) {
+    await withGithub({}, async () => {
+      const error = await assertRejects(
+        () => classify({ rowId, userId: STRANGER, title: "X", placeholder: true }),
+        PlaceholderRefusedError,
+      )
+      assertEquals(error.status, 400, `rowId=${JSON.stringify(rowId)}`)
+    })
+  }
+  // ...and nothing was fetched: a bad id never becomes a URL.
+  await withGithub({}, async () => {
+    await assertRejects(
+      () => classify({ rowId: "../etc", userId: STRANGER, placeholder: true }),
+      PlaceholderRefusedError,
+    )
+  })
+})
+
+Deno.test("REFUSAL: a request that also targets a work is a 400", async () => {
+  // A placeholder mints a work; it never edits one. A row carrying both is a
+  // client that has confused two columns, and guessing which it meant is how
+  // a request ends up writing to a work.
+  await withGithub({ "works/how-long-blues/work.yaml": HOW_LONG }, async () => {
+    const error = await assertRejects(
+      () =>
+        classify({
+          rowId: "salt-creek",
+          replacesId: "how-long-blues",
+          userId: STRANGER,
+          title: "Salt Creek",
+          placeholder: true,
+        }),
+      PlaceholderRefusedError,
+    )
+    assertEquals(error.status, 400)
+  })
+})
+
+Deno.test("classifyChange placeholder: part_type wins — a tab is never a request", async () => {
+  // isPlaceholderRow already refuses to set the flag for a tab or a metadata
+  // row; this is the second half of that, so a hand-fired dispatch cannot
+  // route an OTF through the column that writes `parts: []`.
+  await withGithub({}, async () => {
+    const tab = await classify({
+      rowId: "tab:salt-creek:9f3c2a",
+      userId: STRANGER,
+      title: "Salt Creek",
+      partType: "tablature",
+      placeholder: true,
+    })
+    assertEquals(tab.mode, "create")
+
+    await assertRejects(
+      () =>
+        classify({
+          rowId: "meta:salt-creek:9f3c2a",
+          replacesId: "salt-creek",
+          userId: STRANGER,
+          partType: "metadata",
+          placeholder: true,
+        }),
+      MetadataRefusedError,
+    )
+  })
+})
+
+Deno.test("PlaceholderRefusedError and MetadataRefusedError share one catchable base", () => {
+  // auto-commit-song, create-song-request and the reconciler all catch
+  // DispatchRefusedError. If either subclass ever stops extending it, a
+  // refusal starts surfacing as a 500 the client renders as "something went
+  // wrong" — and, in the reconciler, as a row retried hourly forever.
+  const placeholder = new PlaceholderRefusedError("nope", "how-long-blues")
+  const metadata = new MetadataRefusedError("nope", "how-long-blues")
+  assertEquals(placeholder instanceof DispatchRefusedError, true)
+  assertEquals(metadata instanceof DispatchRefusedError, true)
+  assertEquals(placeholder.status, 409)
+  assertEquals(metadata.status, 403)
+  assertEquals(placeholder.name, "PlaceholderRefusedError")
+})
+
+Deno.test("WORK_SLUG_RE is what slugify emits, and nothing looser", () => {
+  // One shape, agreed with process_pending.SLUG_RE and work_schema.slugify.
+  for (const title of ["Salt Creek", "I've Just Seen a Face", "  Éirinn go Brách  "]) {
+    const slug = slugify(title)
+    assertEquals(WORK_SLUG_RE.test(slug), true, slug)
+  }
+  for (const bad of ["", "-", "foo-", "-foo", "a--b", "Foo", "a_b", "tab:x:1"]) {
+    assertEquals(WORK_SLUG_RE.test(bad), false, bad)
+  }
 })
 
 // ============================================

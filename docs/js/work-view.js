@@ -38,8 +38,8 @@ import {
 } from './song-content.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import {
-    escapeHtml, partUsesSongActions, isPlaceholder, requireLogin, slugify,
-    tabLabel, canEditWorkMetadata,
+    escapeHtml, escapeAttr, safeUrl, partUsesSongActions, isPlaceholder,
+    requireLogin, slugify, tabLabel, canEditWorkMetadata,
 } from './utils.js';
 import {
     accessToken, namespacedRowId, requestDurableWrite,
@@ -1278,13 +1278,13 @@ function arrangementItemHtml(arr, voteCounts, userVotes) {
     const hasVoted = userVotes[voteKey] ? ' voted' : '';
     const badges = `${arr.default === true ? ' <span class="canonical-badge">Default</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}`;
     return `
-        <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-arr-slug="${escapeHtml(arr.slug)}" role="button" tabindex="0">
+        <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-arr-slug="${escapeAttr(arr.slug)}" role="button" tabindex="0">
             <span class="arrangement-info">
                 <span class="arrangement-label">${escapeHtml(label)}${badges}</span>
                 <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
             </span>
             <span class="arrangement-votes">${isVotable(arr) ? `
-                <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(id || '')}" data-vote-slug="${escapeHtml(voteKey)}" title="Vote for this arrangement">
+                <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeAttr(id || '')}" data-vote-slug="${escapeAttr(voteKey)}" title="Vote for this arrangement">
                     <span class="vote-arrow">▲</span>
                 </button>
                 <span class="vote-count">${votes}</span>` : ''}
@@ -1339,13 +1339,13 @@ function versionItemHtml(v, voteCounts, userVotes) {
     const votes = voteCounts[v.id] || 0;
     const hasVoted = userVotes[v.id] ? ' voted' : '';
     return `
-        <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-song-id="${escapeHtml(v.id)}" role="button" tabindex="0">
+        <div class="pill-popover-item arrangement-item${isCurrent ? ' current' : ''}" data-song-id="${escapeAttr(v.id)}" role="button" tabindex="0">
             <span class="arrangement-info">
                 <span class="arrangement-label">${escapeHtml(label)}${v.canonical === true ? ' <span class="canonical-badge">Canonical</span>' : ''}${isCurrent ? ' <span class="current-badge">viewing</span>' : ''}</span>
                 <span class="arrangement-meta">${escapeHtml(meta.join(' · '))}</span>
             </span>
             <span class="arrangement-votes">
-                <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeHtml(v.id)}" title="Vote for this arrangement">
+                <button class="vote-btn arrangement-vote-btn${hasVoted}" data-song-id="${escapeAttr(v.id)}" title="Vote for this arrangement">
                     <span class="vote-arrow">▲</span>
                 </button>
                 <span class="vote-count">${votes}</span>
@@ -1892,11 +1892,11 @@ function showMetadataEditor() {
         <div class="placeholder-editor-form">
             <div class="placeholder-editor-field">
                 <label for="ph-edit-title">Title</label>
-                <input type="text" id="ph-edit-title" value="${escapeHtml(currentWork.title || '')}" />
+                <input type="text" id="ph-edit-title" value="${escapeAttr(currentWork.title || '')}" />
             </div>
             <div class="placeholder-editor-field">
                 <label for="ph-edit-artist">Artist</label>
-                <input type="text" id="ph-edit-artist" value="${escapeHtml(currentWork.artist || '')}" placeholder="As performed by…" />
+                <input type="text" id="ph-edit-artist" value="${escapeAttr(currentWork.artist || '')}" placeholder="As performed by…" />
             </div>
             <div class="placeholder-editor-field">
                 <label for="ph-edit-key">Key</label>
@@ -2102,8 +2102,18 @@ export async function submitWorkMetadata(p, deps = {}) {
 // ============================================
 
 function renderDocumentPart(part, container) {
-    const downloadUrl = part.file;
+    // part.file is a path out of work.yaml, i.e. submitter-writable — so it
+    // gets the same scheme check as any other URL-valued attribute. Note
+    // <object data> is a URL position too, and a data: URL there renders
+    // attacker HTML in this origin.
+    const downloadUrl = safeUrl(part.file);
     const label = escapeHtml(part.label || 'Document');
+
+    if (!downloadUrl) {
+        container.innerHTML = `<div class="document-viewer"><p class="document-error">`
+            + `${label} could not be shown — its location is not a valid link.</p></div>`;
+        return;
+    }
 
     // Documents are read-only shelf items: phase 2d removed the upload
     // intake, so every document part here came from works/ at build time
@@ -2360,11 +2370,18 @@ async function renderTablaturePart(part, container) {
             const attribution = document.createElement('div');
             attribution.className = 'tab-attribution';
 
+            // Both URLs come out of work.yaml provenance, which a submitter
+            // writes — so they are scheme-checked, not merely escaped. An
+            // unsafe URL yields '' and the credit degrades to plain text
+            // rather than an anchor pointing at javascript:.
+            const authorHref = safeUrl(part.author_url);
+            const sourceHref = safeUrl(part.source_page_url);
+
             let attrHtml = '<div class="attribution-content">';
             if (part.author) {
                 attrHtml += '<span class="attribution-item">Tabbed by ';
-                if (part.author_url) {
-                    attrHtml += `<a href="${escapeHtml(part.author_url)}" target="_blank" rel="noopener">${escapeHtml(part.author)}</a>`;
+                if (authorHref) {
+                    attrHtml += `<a href="${authorHref}" target="_blank" rel="noopener">${escapeHtml(part.author)}</a>`;
                 } else {
                     attrHtml += escapeHtml(part.author);
                 }
@@ -2372,7 +2389,9 @@ async function renderTablaturePart(part, container) {
             }
             if (part.source_page_url) {
                 const where = prettySource(part.source) || 'the source site';
-                attrHtml += `<span class="attribution-item"><a href="${escapeHtml(part.source_page_url)}" target="_blank" rel="noopener">View on ${escapeHtml(where)}</a></span>`;
+                attrHtml += sourceHref
+                    ? `<span class="attribution-item"><a href="${sourceHref}" target="_blank" rel="noopener">View on ${escapeHtml(where)}</a></span>`
+                    : `<span class="attribution-item">Source: ${escapeHtml(where)}</span>`;
             }
             attrHtml += '</div>';
             attrHtml += '<div class="attribution-disclaimer">';
@@ -2506,9 +2525,15 @@ function createTablatureControls(otf, part) {
             <span class="mixer-label" title="Sound" aria-label="Sound">🔊</span>
             ${filteredTracks.map(track => {
                 const isLead = track.role === 'lead' || track.instrument?.includes('banjo');
+                // Two different escapes on purpose. escapeHtml() round-trips
+                // through textContent, which escapes & < > and leaves QUOTES
+                // alone — fine for a text node, not for an attribute value,
+                // where a `"` in a track id closes the attribute and the rest
+                // is markup. Track ids come out of user-submitted OTF files.
                 const safeId = escapeHtml(track.id);
-                return `<label class="track-toggle" title="${safeId}">
-                    <input type="checkbox" class="track-checkbox" data-track-id="${safeId}" ${isLead ? 'checked' : ''}>
+                const attrId = escapeAttr(track.id);
+                return `<label class="track-toggle" title="${attrId}">
+                    <input type="checkbox" class="track-checkbox" data-track-id="${attrId}" ${isLead ? 'checked' : ''}>
                     <span class="track-name">${safeId}</span>
                 </label>`;
             }).join('')}
@@ -2667,13 +2692,16 @@ function setupTablaturePlayer(otf, controls, renderer) {
 
     const updateSize = (delta) => {
         currentScale = Math.max(0.6, Math.min(1.6, currentScale + delta));
-        const container = document.querySelector('.tablature-container');
-        if (container) {
-            container.style.setProperty('--tab-scale', currentScale);
-            if (typeof renderer.reflow === 'function') {
-                renderer.reflow();
-            }
-        }
+        // Size is a LAYOUT input, not a lens over a fixed drawing: each
+        // renderer re-engraves into (container width / scale) and the CSS
+        // transform scales that back up, so biggie-sizing gives FEWER
+        // measures per row instead of a row that runs off the right edge.
+        // Every track's renderer gets it — the old code set --tab-scale on
+        // `document.querySelector('.tablature-container')`, i.e. the first
+        // staff only, so on a multi-track work the others never changed
+        // size at all. (`renderer.reflow` never existed; that branch was
+        // dead, which is why nothing re-laid out.)
+        for (const r of Object.values(trackRenderers)) r.setScale?.(currentScale);
         sizeDown.disabled = currentScale <= 0.6;
         sizeUp.disabled = currentScale >= 1.6;
     };

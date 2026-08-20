@@ -1,14 +1,37 @@
 id: roustabout
 title: "Roustabout"
-artist: ""
-composers: []
+artist: "Blue Canyon Boys"
+composers:
+  - Lester Flatt
+  - Earl Scruggs
 default_key: G
 tags: []
 parts:
+  # The canonical transcription (Mike's, submission issue 138). It is named
+  # lead-sheet.pro because build_works_index hardcodes PRIMARY_LEAD_SHEET to
+  # that filename — a part's `default: true` is only consulted when
+  # lead-sheet.pro is absent, so making a chart canonical means giving it
+  # this name, not flagging it.
   - type: lead-sheet
     format: chordpro
     file: lead-sheet.pro
     default: true
+    provenance:
+      source: manual
+      source_file: roustabout.pro
+      submitted_by: github:Jollyhrothgar
+      submission_issue: 138
+      imported_at: '2026-01-10'
+  # The transcription that held the slug until 2026-08-19. Kept as an
+  # arrangement rather than deleted: it is a genuinely different take
+  # ("old saint louis" vs "old St. Louis", an Outro instead of a fourth
+  # chorus), not a duplicate.
+  - type: lead-sheet
+    format: chordpro
+    file: lead-sheet-alternate.pro
+    default: false
+    label: "Alternate"
+    version_type: alternate
     provenance:
       source: trusted-user
       imported_at: '2026-02-12'

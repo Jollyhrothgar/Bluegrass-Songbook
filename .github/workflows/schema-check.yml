@@ -1,0 +1,162 @@
+name: Schema Invariants
+
+# Asserts that the LIVE Supabase schema still has the properties the code
+# depends on — `./scripts/utility db-check`, run from CI.
+#
+# Why this is NOT wired into build.yml
+# ------------------------------------
+# The failure this catches is not caused by a commit. `pending_songs.content`
+# lost its DROP NOT NULL somewhere outside git — a `migration repair` stamp, a
+# dashboard edit, a restore — and stayed wrong for six months under a ledger
+# that said "applied". Attaching that to every push would put a red X on pull
+# requests whose author neither caused it nor can fix it, which is how a check
+# becomes something people click past. It would also re-answer the same
+# question dozens of times a day about a database that changed on none of them,
+# and fork PRs cannot see secrets at all, so the check would be skipped exactly
+# where the noise is worst.
+#
+# The moment it matters most is right after `supabase db push`, and that is a
+# laptop step here — no workflow applies migrations. So coverage is split:
+#
+#   * the human runs `./scripts/utility db-check` right after pushing
+#     (db-push prints the reminder), and
+#   * this job catches everything a human would never think to look for — a
+#     dashboard edit, a restore, a repair stamp — within a day instead of
+#     within six months.
+#
+# BEFORE THE SCHEDULE CAN BE TURNED ON, one secret has to be added:
+#
+#   SUPABASE_DB_PASSWORD   the project's Postgres password.
+#
+# `supabase db dump` is read-only, but it connects to Postgres directly and
+# needs that password; SUPABASE_ACCESS_TOKEN (already an Actions secret) only
+# gets the CLI as far as the Management API. That secret is a real decision —
+# it is the database password, not a scoped token — so it is left to the repo
+# owner rather than assumed here. Until then this workflow is manual-only and
+# will fail loudly with a message saying so.
+#
+# TO ENABLE THE DAILY RUN: add the secret, then uncomment the `schedule` block
+# below. :23 past the hour keeps it clear of sync-deleted-songs (:17),
+# sync-community-input (:27) and reconcile-pending (:42).
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '23 7 * * *'
+
+concurrency:
+  group: schema-check
+  cancel-in-progress: false
+
+env:
+  # Public — the same project ref shipped in the frontend's Supabase client
+  # config, not a secret.
+  SUPABASE_PROJECT_ID: ofmqlrnyldlmvggihogt
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set up Supabase CLI
+        uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Dump the live public schema
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+        run: |
+          set -euo pipefail
+
+          # A missing secret must not masquerade as a clean schema.
+          if [ -z "${SUPABASE_ACCESS_TOKEN}" ]; then
+            echo "::error::SUPABASE_ACCESS_TOKEN secret is not set"
+            exit 1
+          fi
+          if [ -z "${SUPABASE_DB_PASSWORD}" ]; then
+            echo "::error::SUPABASE_DB_PASSWORD secret is not set — see the header of this workflow"
+            exit 1
+          fi
+
+          supabase link --project-ref "${SUPABASE_PROJECT_ID}"
+          supabase db dump --schema public > live-schema.sql
+
+          # An empty dump read as "no violations" is the exact failure mode
+          # this workflow exists to prevent.
+          if [ ! -s live-schema.sql ]; then
+            echo "::error::supabase db dump produced an empty schema"
+            exit 1
+          fi
+
+      - name: Assert schema invariants
+        id: assert
+        run: |
+          set -uo pipefail
+          uv run python3 scripts/lib/schema_assert.py \
+            --dump-file live-schema.sql | tee report.txt
+          status=${PIPESTATUS[0]}
+          {
+            echo '### Schema invariants'
+            echo
+            echo '```'
+            cat report.txt
+            echo '```'
+          } >> "${GITHUB_STEP_SUMMARY}"
+          echo "status=${status}" >> "${GITHUB_OUTPUT}"
+          exit "${status}"
+
+      - name: Open or update the schema-drift alert
+        if: failure() && steps.assert.outputs.status == '1'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('report.txt', 'utf8');
+            const TITLE = 'Schema drift: a load-bearing invariant no longer holds';
+            const { owner, repo } = context.repo;
+
+            const body = [
+              'The live Supabase schema no longer has a property the code depends on.',
+              '',
+              '`supabase migration list` can still show every migration applied — the',
+              'ledger and the schema are separate facts, and this checks the second one.',
+              '',
+              '```',
+              report.trim(),
+              '```',
+              '',
+              'Fix with a NEW migration (never edit an applied one), and end it with a',
+              '`DO $$ ... RAISE EXCEPTION` postcondition block — see "Self-verifying',
+              'migrations" in `supabase/CLAUDE.md`.',
+              '',
+              `Run: ${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`,
+            ].join('\n');
+
+            // One issue, forever — comment on the open one rather than opening
+            // a duplicate on every scheduled run.
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'open', per_page: 100,
+            });
+            const existing = issues.find(i => !i.pull_request && i.title === TITLE);
+
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: existing.number, body,
+              });
+              core.notice(`Updated existing alert issue #${existing.number}`);
+            } else {
+              const created = await github.rest.issues.create({
+                owner, repo, title: TITLE, body, labels: ['bug'],
+              });
+              core.notice(`Opened alert issue #${created.data.number}`);
+            }

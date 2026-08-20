@@ -75,6 +75,7 @@ export class EditorToolbar {
         this._onPendingArticulationChange = this._onPendingArticulationChange.bind(this);
         this._onGridSubdivisionChange = this._onGridSubdivisionChange.bind(this);
         this._onGridToggle = this._onGridToggle.bind(this);
+        this._onTracksChange = this._onTracksChange.bind(this);
     }
 
     /**
@@ -92,6 +93,15 @@ export class EditorToolbar {
             <div class="toolbar-section track-section" style="display:none">
                 <span class="toolbar-label">Track</span>
                 <div class="button-group track-buttons"></div>
+                <button class="toolbar-button track-move-earlier-button" title="Move this track earlier — the first track is the lead">
+                    <span class="button-icon">◀</span>
+                </button>
+                <button class="toolbar-button track-move-later-button" title="Move this track later">
+                    <span class="button-icon">▶</span>
+                </button>
+                <button class="toolbar-button track-rename-button" title="Rename this track">
+                    <span class="button-icon">✏️</span>
+                </button>
             </div>
             <div class="toolbar-separator track-section-sep" style="display:none"></div>
             <div class="toolbar-section duration-section">
@@ -119,6 +129,16 @@ export class EditorToolbar {
             <div class="toolbar-section articulation-section">
                 <span class="toolbar-label">Articulation</span>
                 <div class="button-group articulation-buttons"></div>
+            </div>
+            <div class="toolbar-separator"></div>
+            <div class="toolbar-section text-section">
+                <span class="toolbar-label">Text</span>
+                <button class="toolbar-button annotation-button" title="Add or edit the placed text at the cursor — section labels, playing notes, chord names (c)">
+                    <span class="button-content">Aa</span>
+                </button>
+                <button class="toolbar-button annotation-delete-button" title="Delete the placed text at the cursor (Shift+C)">
+                    <span class="button-icon">⌫</span>
+                </button>
             </div>
             <div class="toolbar-separator"></div>
             <div class="toolbar-section edit-section">
@@ -149,29 +169,19 @@ export class EditorToolbar {
         // Apply styles
         this._applyStyles();
 
-        // Track switcher (shown only for multi-track documents). Segmented
-        // buttons, not a dropdown — the old select was so small that even
-        // the site's author thought only banjo tracks existed.
+        // Track switcher. Segmented buttons, not a dropdown — the old
+        // select was so small that even the site's author thought only
+        // banjo tracks existed. Rebuilt whenever the track list changes,
+        // because the buttons ARE the names: renaming a track relabels
+        // its button, and reordering re-lays the row.
         this.trackButtons = this.element.querySelector('.track-buttons');
-        const tracks = this.state.otf?.tracks || [];
-        if (tracks.length > 1) {
-            for (const t of tracks) {
-                const btn = document.createElement('button');
-                btn.className = 'toolbar-button track-button';
-                btn.dataset.trackId = t.id;
-                btn.innerHTML = `<span class="button-content">${t.id}</span>`;
-                btn.title = `Edit the ${t.id} track`;
-                if (t.id === this.state.trackId) btn.classList.add('active');
-                btn.addEventListener('click', () => {
-                    this.state.setTrack(t.id);
-                    this.trackButtons.querySelectorAll('.track-button').forEach(b =>
-                        b.classList.toggle('active', b === btn));
-                });
-                this.trackButtons.appendChild(btn);
-            }
-            this.element.querySelector('.track-section').style.display = '';
-            this.element.querySelector('.track-section-sep').style.display = '';
-        }
+        this.trackSection = this.element.querySelector('.track-section');
+        this.trackSectionSep = this.element.querySelector('.track-section-sep');
+        this.trackRenameButton = this.element.querySelector('.track-rename-button');
+        this.trackMoveEarlierButton = this.element.querySelector('.track-move-earlier-button');
+        this.trackMoveLaterButton = this.element.querySelector('.track-move-later-button');
+        this._trackSignature = null;
+        this._renderTrackButtons();
 
         // Get references
         this.modeIndicator = this.element.querySelector('.mode-indicator');
@@ -184,6 +194,8 @@ export class EditorToolbar {
         this.cutButton = this.element.querySelector('.cut-button');
         this.pasteButton = this.element.querySelector('.paste-button');
         this.loopButton = this.element.querySelector('.loop-button');
+        this.annotationButton = this.element.querySelector('.annotation-button');
+        this.annotationDeleteButton = this.element.querySelector('.annotation-delete-button');
 
         // Create duration buttons
         const durationContainer = this.element.querySelector('.duration-buttons');
@@ -219,6 +231,62 @@ export class EditorToolbar {
         this._updateModeIndicator();
 
         container.appendChild(this.element);
+    }
+
+    /**
+     * (Re)build the track row from the document.
+     *
+     * Cheap to call on every document change — it compares a signature
+     * of "which tracks, in what order, which one is active" first and
+     * returns unless something actually moved. That is what makes undo
+     * of a rename or a reorder relabel the row without any op needing to
+     * remember to tell the toolbar.
+     */
+    _renderTrackButtons() {
+        if (!this.trackButtons) return;
+        const tracks = this.state.otf?.tracks || [];
+        const active = this.state.trackId;
+        const signature = JSON.stringify([tracks.map(t => t.id), active]);
+        if (signature === this._trackSignature) return;
+        this._trackSignature = signature;
+
+        this.trackButtons.innerHTML = '';
+        for (const t of tracks) {
+            const btn = document.createElement('button');
+            btn.className = 'toolbar-button track-button';
+            btn.dataset.trackId = t.id;
+            const label = document.createElement('span');
+            label.className = 'button-content';
+            // textContent, not innerHTML: a track name is user-typed
+            label.textContent = t.id;
+            btn.appendChild(label);
+            btn.title = `Edit the ${t.id} track`;
+            if (t.id === active) btn.classList.add('active');
+            btn.addEventListener('click', () => this.state.setTrack(t.id));
+            this.trackButtons.appendChild(btn);
+        }
+
+        // One track still gets the row: it names what you are editing,
+        // and a lone track can be misnamed too (a tab-minted work whose
+        // only track says "banjo" when it is a guitar). The move buttons
+        // are what has nothing to do.
+        const show = tracks.length >= 1;
+        if (this.trackSection) this.trackSection.style.display = show ? '' : 'none';
+        if (this.trackSectionSep) this.trackSectionSep.style.display = show ? '' : 'none';
+
+        const index = tracks.findIndex(t => t.id === active);
+        if (this.trackMoveEarlierButton) {
+            this.trackMoveEarlierButton.disabled = index <= 0;
+        }
+        if (this.trackMoveLaterButton) {
+            this.trackMoveLaterButton.disabled = index === -1 || index >= tracks.length - 1;
+        }
+        if (this.trackRenameButton) {
+            this.trackRenameButton.disabled = index === -1;
+            this.trackRenameButton.title = index === -1
+                ? 'Rename this track'
+                : `Rename the ${active} track`;
+        }
     }
 
     /**
@@ -433,6 +501,22 @@ export class EditorToolbar {
         this.state.on('pendingArticulationChange', this._onPendingArticulationChange);
         this.state.on('gridSubdivisionChange', this._onGridSubdivisionChange);
         this.state.on('gridToggle', this._onGridToggle);
+        // 'change' covers rename / reorder / undo / redo / load in one
+        // subscription; the signature check inside makes it a no-op for
+        // the note edits that fire it constantly.
+        this.state.on('change', this._onTracksChange);
+        this.state.on('trackChange', this._onTracksChange);
+
+        // Track identity and order
+        this.trackRenameButton.addEventListener('click', () => {
+            this.options.onRenameTrack?.();
+        });
+        this.trackMoveEarlierButton.addEventListener('click', () => {
+            this.options.onMoveTrack?.(-1);
+        });
+        this.trackMoveLaterButton.addEventListener('click', () => {
+            this.options.onMoveTrack?.(1);
+        });
 
         // Triplet button
         this.tripletButton.addEventListener('click', () => {
@@ -480,6 +564,15 @@ export class EditorToolbar {
         this.loopButton.addEventListener('click', () => {
             this.options.onLoop?.();
         });
+
+        // Placed text: the mouse path to the same prompt `c` opens
+        this.annotationButton.addEventListener('click', () => {
+            this.options.onEditAnnotation?.();
+        });
+
+        this.annotationDeleteButton.addEventListener('click', () => {
+            this.options.onDeleteAnnotation?.();
+        });
     }
 
     /**
@@ -524,6 +617,14 @@ export class EditorToolbar {
      */
     _onGridToggle(visible) {
         this._updateGridToggle();
+    }
+
+    /**
+     * Handle anything that could have changed the track list or which
+     * track is active (rename, reorder, switch, undo, redo, load).
+     */
+    _onTracksChange() {
+        this._renderTrackButtons();
     }
 
     /**
@@ -583,6 +684,8 @@ export class EditorToolbar {
         this.state.off('pendingArticulationChange', this._onPendingArticulationChange);
         this.state.off('gridSubdivisionChange', this._onGridSubdivisionChange);
         this.state.off('gridToggle', this._onGridToggle);
+        this.state.off('change', this._onTracksChange);
+        this.state.off('trackChange', this._onTracksChange);
 
         if (this.element && this.element.parentNode) {
             this.element.parentNode.removeChild(this.element);
