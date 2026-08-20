@@ -1723,7 +1723,7 @@ export class TabRenderer {
                 // Eighth note with flag
                 const stemX = np.x;
                 const flagStartX = stemX + opt.stemWidth / 2;
-                const flagY = stemEndY - 2;
+                const flagY = stemEndY;
 
                 const stem = this.createLine(stemX, stemStartY, stemX, stemEndY, opt.stemColor);
                 stem.setAttribute('stroke-width', opt.stemWidth);
@@ -1737,8 +1737,8 @@ export class TabRenderer {
                 // Sixteenth note with two flags
                 const stemX = np.x;
                 const flagStartX = stemX + opt.stemWidth / 2;
-                const flag1Y = stemEndY - 2;
-                const flag2Y = stemEndY - 9;
+                const flag1Y = stemEndY;
+                const flag2Y = stemEndY - 7;
 
                 const stem = this.createLine(stemX, stemStartY, stemX, stemEndY, opt.stemColor);
                 stem.setAttribute('stroke-width', opt.stemWidth);
@@ -1758,17 +1758,18 @@ export class TabRenderer {
     }
 
     /**
-     * A filled, tapered note flag hanging off the RIGHT edge of a stem.
-     * `x` is the stem's edge, `y` the point where the flag leaves it. The
-     * old shape was two near-coincident curves closed along the stem — a
-     * zero-thickness crescent that looked like a stray stroke once stems
-     * got thicker. This one has a 9px contact with the stem and tapers to
-     * a point ~10px out and down.
+     * A filled, tapered note flag for a DOWNWARD stem: it attaches at the
+     * stem's bottom end (`x` = the stem's right edge, `yEnd` = the stem's
+     * end) and hooks up and to the right, the way an engraved stem-down
+     * eighth does. It has ~9px of contact with the stem, rising from the
+     * end, and tapers to a point ~10px out and ~16px up. (The first
+     * version hung below the stem end — the up-stem orientation.)
      */
-    _flagPath(x, y) {
-        return `M ${x} ${y - 8}`
-            + ` C ${x + 2} ${y - 2}, ${x + 9} ${y + 1}, ${x + 10} ${y + 10}`
-            + ` C ${x + 9} ${y + 5}, ${x + 4} ${y + 2}, ${x} ${y + 1.5}`
+    _flagPath(x, yEnd) {
+        const y = yEnd;
+        return `M ${x} ${y}`
+            + ` C ${x + 2} ${y - 6}, ${x + 9} ${y - 9}, ${x + 10} ${y - 17}`
+            + ` C ${x + 9} ${y - 12}, ${x + 4} ${y - 9}, ${x} ${y - 9}`
             + ' Z';
     }
 
