@@ -19,6 +19,7 @@ docs/
 │   ├── song-view.js    # Lead-sheet rendering helpers, ABC notation, list nav
 │   ├── song-controls.js # Pill builders: Key / Display / Info / Export
 │   ├── tab-controls-sheet.js # Phone: re-parents the tab band's non-transport controls into a ⚙ settings sheet
+│   ├── tab-edit-band.js # The SAME bottom band, re-bound to the live editor document (edit mode keeps its controls)
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
 │   ├── tags.js         # Tag dropdown, filtering, virtual instrument tags/facets
 │   ├── title-match.js  # Song-title normalization (bounty board dedupe)
@@ -118,6 +119,12 @@ content, and the shell's top/bottom bands for actions and playback.
   canonical URL. Legacy `#song/{id}` URLs resolve to the work and are
   rewritten with `history.replaceState`. List-context pages keep
   `#list/{listId}/{workId}` URLs.
+- **The tab editor is a MODE of this page, addressed by URL** (plan §9):
+  `#work/{slug}/edit/{take}`, `#work/{slug}/add-tab?instrument=`, and
+  `#new-tab?title=&instrument=&ts=&tempo=&measures=` for a song the
+  songbook doesn't have yet. All three are parsed by `parseTabRoute`
+  (`otf-editor/create-tab-entry.js`) and land in `openWork()` /
+  `openNewTabPage()` — never in a page of their own.
 
 ### State Variables
 
@@ -303,9 +310,36 @@ instead of the group representative.
 URL forms:
 
 - `#work/{slug}` — canonical song URL (`#work/{slug}/{partId}` for a part)
+- `#work/{slug}/edit/{take}` — that take open in the editor. `{take}` is the
+  take's own NAME (its `src_file` stem, e.g. `banjo-18967`), never an index:
+  curation pins re-sort takes between builds. `takeRefs` accepts the
+  published basename and the label too, so older links still land.
+- `#work/{slug}/add-tab?instrument=banjo` — the song page with one new,
+  unsaved take selected and the editor open on it
+- `#new-tab?title=&instrument=&ts=&tempo=&measures=` — a provisional WORK
+  page (title/artist are inputs in the title slot); submitting mints the work
+  and the hash becomes `#work/{id}` without a reload
 - `#song/{id}` — legacy; resolved via `resolveWorkId()` and rewritten to
   `#work/{slug}` with `history.replaceState`
 - `#list/{listId}/{workId}` — list-context pages keep list URLs
+
+**`create.html` is a redirect shim** (`?work=x&instrument=y` →
+`index.html#work/x/add-tab?instrument=y`; bare → `#new-tab`). Its form,
+editor mount and `.tef` drop zone are gone; `create-tab.js` survives as the
+"new empty take" producer the song page calls, and the `.tef` import is
+offered wherever a take is started (`pickTefFile` in work-view.js).
+
+**The bottom band survives edit mode** (`tab-edit-band.js`). It used to be
+replaced by an italic notice, which took size/tempo/transport/metronome away
+at the moment the reader started changing what they describe — and the
+editor grew a second transport in its status bar. `bindBandToEditor(controls,
+editor)` re-binds the same band to the live document: size drives the
+editor's renderer, tempo writes through the facade (undoable, and it is what
+gets submitted), ▶/⏹ drive the editor's player, and the session's buttons
+(`Submit · Download · Cancel · Done`) take the `✏️ Edit` slot. Transpose,
+Unrolled/Repeats, feel and the mixer are **disabled with a reason**
+(`DISABLED_REASONS`) rather than removed — a control that vanishes reads as
+a bug.
 
 ### Track Mixer (Multi-Track Tablature)
 
@@ -816,8 +850,8 @@ Frictionless song requests without a GitHub account.
 
 Two entry points open the tab editor pre-targeted at a work — the work
 page's "+ Add a tab" / tablature-bounty Contribute, and the add-song
-picker's Tablature card — both routing through `create.html` with
-`?work=&instrument=&title=&have=`.
+picker's Tablature card — both routing to `#work/{slug}/add-tab` (or
+`#new-tab` when no work is named) with `?instrument=&title=&have=`.
 
 **A work that already has tabs for that instrument says so BEFORE the
 editor opens** (contract principle 4 — the offramp is offered early, never
@@ -828,8 +862,9 @@ instrument families the way `tags.js getInstrumentTags` does, so a
 `renderExistingTabsPanel` offers three ways forward:
 
 - **view** an existing take → `#work/{id}/{partId}`
-- **add mine as another version** → the editor exactly as before, with the
-  sibling count carried into the create-page banner
+- **add mine as another version** → `#work/{id}/add-tab`: the same song page
+  with an unsaved take added to the versions list, editor open
+- **import a .tef** → the same mode, with the parsed document loaded
 - **improve this one** → the tab-correction path (`enterTabEditMode`), via
   `requestTabEdit(workId, file)` when the work page isn't already open
 

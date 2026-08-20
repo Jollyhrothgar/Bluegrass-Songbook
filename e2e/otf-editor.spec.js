@@ -1,7 +1,8 @@
 // E2E tests for the OTF editor — written against the CURRENT design:
 // modal-less entry (NORMAL handles nav + notes), grid = the one working
 // increment (ruler/arrows/click snap), duration = entered note length,
-// drag-select + clipboard + repeats, and the create-a-tab flow.
+// drag-select + clipboard + repeats, and the new-tab flow (#new-tab —
+// the song page in authoring mode; create.html is only a shim now).
 //
 // No audio assertions here: WebAudioFont's CDN is blocked in the
 // sandbox; playback is verified by ear on a real machine.
@@ -189,39 +190,45 @@ test.describe('selection, clipboard, phrases', () => {
     });
 });
 
-test.describe('create-a-tab flow', () => {
-    test('form builds a multi-track editor with a track switcher', async ({ page }) => {
-        await page.goto('/create.html');
-        await page.fill('#f-title', 'E2E Breakdown');
-        await page.locator('#f-instruments input[value="6-string-guitar"]').check();
-        await page.locator('#create-form button[type=submit]').click();
+test.describe('new-tab flow (the song page in #new-tab mode)', () => {
+    // There is no create page any more (plan §9.1): a tab is written on the
+    // page it will be published on. `#new-tab` is the provisional work page
+    // for a song the songbook doesn't have — same shell, same take header,
+    // same bottom band, with the title and artist as fields in the header.
+    test('opens the editor on a provisional work page', async ({ page }) => {
+        await page.goto('/index.html#new-tab?title=E2E%20Breakdown&instrument=guitar');
 
         await page.locator('.editor-renderer .stave-row').first().waitFor();
-        await expect(page.locator('#editor-title')).toHaveText('E2E Breakdown');
-        // Segmented track buttons (replaced the old dropdown)
-        await expect(page.locator('.track-button')).toHaveCount(2);
-
-        await page.locator('.track-button[data-track-id="guitar"]').click();
-        await expect(async () => {
-            const labels = await page.locator('.stave-row').first()
-                .locator('.string-label').count();
-            expect(labels).toBe(6);
-        }).toPass();
+        await expect(page.locator('#new-tab-title')).toHaveValue('E2E Breakdown');
+        await expect(page.locator('#new-tab-artist')).toHaveValue('');
+        // The take header the read view draws, on an unsaved take
+        await expect(page.locator('.arr-who')).toHaveText('Guitar — new take (unsaved)');
+        // The band survived: play/tempo are still there, and the session's
+        // buttons took the ✏️ Edit slot
+        await expect(page.locator('#app-bottomband .tab-play-btn')).toBeVisible();
+        await expect(page.locator('#app-bottomband .tab-edit-btn')).toHaveCount(0);
+        await expect(page.locator('#app-bottomband .tab-edit-submit'))
+            .toHaveText('🚀 Submit tab');
     });
 
-    test('drafts survive a reload (Resume)', async ({ page }) => {
-        await page.goto('/create.html');
-        await page.fill('#f-title', 'Draft Tune');
-        await page.locator('#create-form button[type=submit]').click();
+    test('drafts survive a reload', async ({ page }) => {
+        await page.goto('/index.html#new-tab?title=Draft%20Tune');
         await page.locator('.editor-renderer .stave-row').first().waitFor();
         await page.locator('.editor-canvas-container').click({ position: { x: 100, y: 60 } });
         await page.keyboard.press('7'); // triggers onChange → draft save
 
         await page.reload();
-        await expect(page.locator('#draft-banner')).toBeVisible();
-        await page.locator('#draft-resume').click();
         await page.locator('.editor-renderer .stave-row').first().waitFor();
-        await expect(page.locator('#editor-title')).toHaveText('Draft Tune');
+        // Same route, same (absent) target → the draft is picked back up
+        await expect(page.locator('.arr-status')).toContainText('Picked up where you left off');
         await expect(page.locator('.note-text').first()).toHaveText('7');
+    });
+
+    test('create.html is a redirect shim into the hash routes', async ({ page }) => {
+        await page.goto('/create.html?work=gold-rush&instrument=banjo');
+        await expect(page).toHaveURL(/#work\/gold-rush\/add-tab\?instrument=banjo$/);
+
+        await page.goto('/create.html');
+        await expect(page).toHaveURL(/#new-tab$/);
     });
 });

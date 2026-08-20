@@ -45,7 +45,11 @@ import {
     updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
-import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
+import {
+    openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar,
+    handleEditAction, openNewTabPage,
+} from './work-view.js';
+import { parseTabRoute } from './otf-editor/create-tab-entry.js';
 import { renderBountyView } from './bounty-view.js';
 import { renderMySubmissionsView } from './my-submissions.js';
 import { renderHighScoresView } from './high-scores.js';
@@ -721,6 +725,27 @@ function handleDeepLink() {
 
     // Use replace=true for deep links to avoid duplicate history entries
     // (the URL is already set from the initial page load)
+
+    // The tab-authoring routes (plan §9.2). They come FIRST because two of
+    // them live under `#work/` and would otherwise be read as a part id.
+    // Each one is the song page in a different mode — never a page of its
+    // own — so they all end up in openWork()/openNewTabPage().
+    const tabRoute = parseTabRoute(hash);
+    if (tabRoute) {
+        trackDeepLink(`tab-${tabRoute.kind}`, hash);
+        if (tabRoute.kind === 'new-tab') {
+            openNewTabPage(tabRoute.options);
+        } else if (tabRoute.kind === 'add-tab') {
+            openWork(resolveWorkId(tabRoute.workId), {
+                fromDeepLink: true, addTab: tabRoute.target,
+            });
+        } else {
+            openWork(resolveWorkId(tabRoute.workId), {
+                fromDeepLink: true, editRef: tabRoute.partRef,
+            });
+        }
+        return true;
+    }
 
     if (hash.startsWith('#work/')) {
         // Work view: #work/{id} or #work/{id}/{partId}

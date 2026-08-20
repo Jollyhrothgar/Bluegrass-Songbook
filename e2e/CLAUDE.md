@@ -72,7 +72,7 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 | `ui.spec.js` | Theme toggle (top band), auto-hiding chrome, overflow menu, pref persistence |
 | `abc-notation.spec.js` | ABC sheet music display, bottom-band playback controls |
 | `error-states.spec.js` | Not-found states, invalid URLs, graceful errors |
-| `otf-editor.spec.js` | Standalone OTF editor demo (`/editor-demo.html`, `/create.html`) |
+| `otf-editor.spec.js` | OTF editor: the dev harness (`/editor-demo.html`) and the song page's authoring mode (`#new-tab`; `/create.html` is a redirect shim into it) |
 | `otf-editor-visual.spec.js` | OTF editor visual/screenshot checks |
 | `helpers.js` | Shared helpers (not a spec) |
 
