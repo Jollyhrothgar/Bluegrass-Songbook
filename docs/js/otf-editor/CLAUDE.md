@@ -158,6 +158,61 @@ preset, no reserved chord is bound, no chord is both an action and a
 sequence prefix, and every `<kbd>` the help overlay prints comes from
 `describe()`.
 
+### The menu bar and the palettes — one surface, generated
+
+`menu-bar.js` is the same component in every wrapper, mounted by the
+editor ABOVE the toolbar. Nothing in it (or in `toolbar.js`) writes a key
+down: an item names an ACTION, and the key column comes from
+`keyFor(action, getPreset())`. Switching preset relabels the bar, the
+tooltips and the `?` overlay at once, and an advertised chord is a bound
+chord by construction (`__tests__/otf-editor/menu-bar.test.js` is the
+fence). The toolbar used to claim `Ctrl+T`, `Shift+Q`, `G` and `3` —
+none of them bound to anything.
+
+| piece | what it is |
+|---|---|
+| `MENUS` | the tree: File · Edit · Note · Play · Score · View · Help (plan §8.3) |
+| `{action}` item | label + key from the table; runs `keyboard.dispatchAction(id)` |
+| `{hook}` item | a callback the EDITOR supplied — tempo, repeats, tracks, measures-per-row, zoom, about. **A hook the wrapper didn't pass is an item that isn't drawn**, which is how a surface says it can't do something |
+| `{dynamic}` item | expanded at open time (`tracks`, `measuresPerRow`, and `file` ← `options.fileActions`) |
+| `when(state)` | the item is disabled when it returns false (no note at the cursor, no selection, one measure left, empty clipboard) |
+
+- **The popup hangs off `<body>`, fixed-positioned.** `.otf-editor` sets
+  `overflow: hidden` for its rounded corner, and in fill mode the chrome
+  is at the BOTTOM — an in-flow menu is cut in half either way. `_position`
+  measures and drops up when there is no room below.
+- **No `Alt+letter` mnemonics**: OS- and browser-sensitive. Menus open on
+  click, then arrow keys walk them and `Esc` hands focus back to the canvas.
+- **Under 720px the bar collapses to one `☰`** listing every menu as a
+  sheet, so touch users reach insert/delete measure and repeats at all.
+
+Two editor options carry a wrapper's answer into the shared component:
+
+| option | default | who sets it |
+|---|---|---|
+| `fileActions: [{label, run, disabled?, action?}]` | Download OTF alone (`action: 'edit.save'` prints its key) | whoever owns the session's buttons — the song page's Submit / Download / Cancel / Done group belongs here |
+| `hostTransport: true` | `false` | a wrapper that already shows ▶/⏹/BPM for this document (the song page's bottom band, `tab-edit-band.js`). It drops the status bar's transport so one tab doesn't get three sets of playback controls; Mode/M/Beat/String/Duration/Text and the help button stay |
+
+**The palettes reflect the note under the cursor** — TablEdit's purple
+border, and the reason post-hoc duration/effect editing is usable at all:
+
+- `.active` (filled) = the ENTRY state: what the NEXT note gets.
+- `.reflects-note` (inset outline) = what the note UNDER THE CURSOR
+  already is, recomputed on `cursorMove` and `change`. A dotted value
+  outlines its base button *and* `Dot` (`durationReflects`, exported);
+  160 ticks outlines the triplet button; `tech`/`tie` outline their
+  articulation button. An outline, never a border width — nothing moves
+  when the cursor does.
+- `.pending` (orange) is still "armed for the next note": clicking `h`,
+  `p`, `/`, `x` or `b` on an EMPTY slot arms it, on a note applies the
+  binding action. Tie always goes to the action (it needs a real
+  predecessor); Clear disarms before it touches the document. There is no
+  `~`-as-technique button any more — a tie is `tie: true`.
+
+The Track group sits at the END of the toolbar: rename and reorder are
+once-per-document edits and used to spend four slots ahead of the buttons
+you press every few seconds.
+
 ### Document ops added for TablEdit input parity
 
 Every one goes through `EditingFacade`, so every one is a single undo
@@ -246,7 +301,8 @@ docs/js/otf-editor/
 ├── facade.js          # UI-free document API: ALL mutations + undo history
 ├── cursor.js          # Cursor/grid/selection overlays and navigation
 ├── keyboard.js        # Modal vim-style key bindings
-├── toolbar.js         # Track / duration / grid / articulation / text / edit buttons
+├── menu-bar.js        # File/Edit/Note/Play/Score/View/Help, generated from bindings.js
+├── toolbar.js         # Duration / grid / articulation / text / edit / track palettes
 ├── popover.js         # NoteEntryPopover + AnnotationPopover + TrackNamePopover
 ├── context-menu.js    # Right-click menu
 ├── pitch.js           # Pure string+fret ↔ MIDI (ported from tab-player)

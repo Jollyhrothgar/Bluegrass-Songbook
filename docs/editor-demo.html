@@ -76,37 +76,15 @@
             font-size: 14px;
         }
 
-        .demo-info {
-            padding: 16px;
+        .demo-note {
+            padding: 12px 16px;
             background: var(--bg-secondary, #f5f5f5);
             border-radius: 8px;
             font-size: 14px;
         }
 
-        .demo-info h3 {
-            margin: 0 0 12px;
-            font-size: 16px;
-        }
-
-        .demo-info ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-
-        .demo-info li {
-            margin-bottom: 4px;
-        }
-
-        .demo-info code {
-            background: var(--bg, #fff);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 13px;
-        }
-
-        .key-hint {
-            display: inline-block;
-            padding: 2px 8px;
+        .demo-note kbd {
+            padding: 1px 6px;
             background: var(--bg, #fff);
             border: 1px solid var(--border, #ddd);
             border-radius: 4px;
@@ -218,24 +196,12 @@
 
         <div id="editor-container"></div>
 
-        <div class="demo-info">
-            <h3>Keyboard Shortcuts</h3>
-            <ul>
-                <li><span class="key-hint">h j k l</span> or arrow keys - Navigate</li>
-                <li><span class="key-hint">i</span> - Enter INSERT mode</li>
-                <li><span class="key-hint">Escape</span> - Return to NORMAL mode</li>
-                <li><span class="key-hint">1-5</span> - Select string (in INSERT mode)</li>
-                <li><span class="key-hint">0-9</span> - Enter fret number (in INSERT mode)</li>
-                <li><span class="key-hint">Space</span> - Advance cursor (in INSERT mode)</li>
-                <li><span class="key-hint">r</span> - Enter ROLL mode for quick pattern entry</li>
-                <li><span class="key-hint">T I M R</span> - Thumb/Index/Middle/Ring (in ROLL mode)</li>
-                <li><span class="key-hint">x</span> - Delete note</li>
-                <li><span class="key-hint">u</span> - Undo</li>
-                <li><span class="key-hint">q e s</span> - Set duration (quarter/eighth/sixteenth)</li>
-                <li><span class="key-hint">?</span> - Show help</li>
-            </ul>
-            <p style="margin-top: 12px;"><strong>Double-click</strong> anywhere on the tablature to open the note entry popover.</p>
-        </div>
+        <p class="demo-note">
+            Shortcuts live in the editor: the <strong>menu bar</strong> prints
+            each one beside its item, and <kbd>?</kbd> opens the full list —
+            both generated from the binding table, so neither can go stale.
+            <strong>Double-click</strong> the tablature for the note-entry popover.
+        </p>
     </div>
 
     <script type="module">

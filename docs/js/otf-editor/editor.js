@@ -14,6 +14,7 @@ import {
 } from '../renderers/measure-timing.js';
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar } from './toolbar.js';
+import { EditorMenuBar } from './menu-bar.js';
 import { NoteEntryPopover, AnnotationPopover, TrackNamePopover } from './popover.js';
 import { sanitizeTrackId } from './facade.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
@@ -69,6 +70,21 @@ export class OTFEditor {
             // the TAB scrolls inside the editor and the chrome (toolbar,
             // transport) is pinned instead of scrolling off with the page.
             fillHeight: false,
+            // hostTransport: the WRAPPER already shows one transport for
+            // this document (the song page's bottom band does — see
+            // `tab-edit-band.js`), so the status bar drops its own ▶/⏹/BPM
+            // instead of being the third set of playback controls for one
+            // tab (plan §8.2). Default false: `editor-demo.html` and any
+            // bare mount have no band, so they keep theirs.
+            hostTransport: false,
+            // fileActions: what the File menu offers, supplied by whoever
+            // owns the session's buttons — `[{label, run, disabled?,
+            // action?}]`, where `action` is a binding id used ONLY to
+            // print its key. The editor alone can only download, so that
+            // is the default; the song page's edit session (Submit /
+            // Download / Cancel / Done) passes its own list through
+            // whatever creates the editor.
+            fileActions: null,
             onSave: null,
             onChange: null,
             ...options,
@@ -108,6 +124,10 @@ export class OTFEditor {
             onDeleteAnnotation: () => this.deleteAnnotationAtCursor(),
             onRenameTrack: () => this.renameCurrentTrack(),
             onMoveTrack: (delta) => this.moveCurrentTrack(delta),
+            onAction: (id) => {
+                this.keyboard.dispatchAction(id);
+                this.editorRoot?.focus();
+            },
         });
         // Menu actions refocus the editor afterwards — otherwise the
         // keyboard is dead after any mouse-menu action (focus stays on
@@ -149,6 +169,44 @@ export class OTFEditor {
             rippleLeft: menuAction('measure.rippleLeft'),
             repeat: refocus(() => this._repeatSelectedMeasures(true)),
             unrepeat: refocus(() => this._repeatSelectedMeasures(false)),
+        });
+        // The menu bar (plan §8.3). Its items and their keys come from
+        // the binding table; everything that ISN'T a binding — tempo,
+        // repeats, tracks, measures-per-row, zoom — arrives here as a
+        // hook, and a hook the editor doesn't pass is an item the menu
+        // doesn't draw.
+        this.menuBar = new EditorMenuBar({
+            state: this.state,
+            dispatch: (id) => this.keyboard.dispatchAction(id),
+            onClose: () => this.editorRoot?.focus(),
+            fileActions: this.options.fileActions || [{
+                label: '⬇ Download OTF',
+                action: 'edit.save',
+                run: () => this.keyboard.dispatchAction('edit.save'),
+            }],
+            hooks: {
+                repeatSpan: refocus(() => this._repeatSelectedMeasures(true)),
+                removeRepeat: refocus(() => this._repeatSelectedMeasures(false)),
+                tempo: () => this._promptForTempo(),
+                metronome: () => this._toggleMetronome(),
+                metronomeOn: () => !!this.player?.metronomeEnabled,
+                tracks: () => this.state.getTracks().map(t => ({
+                    label: t.id,
+                    checked: t.id === this.state.trackId,
+                    run: () => this.state.setTrack(t.id),
+                })),
+                renameTrack: () => this.renameCurrentTrack(),
+                moveTrackEarlier: () => this.moveCurrentTrack(-1),
+                moveTrackLater: () => this.moveCurrentTrack(1),
+                measuresPerRow: () => [2, 3, 4, 5, 6].map(n => ({
+                    label: String(n),
+                    checked: this.renderer?.options.measuresPerRow === n,
+                    run: () => this.setMeasuresPerRow(n),
+                })),
+                zoomIn: () => this.zoomBy(0.1),
+                zoomOut: () => this.zoomBy(-0.1),
+                zoomReset: () => this.zoomBy(0, 1),
+            },
         });
         this.popover = new NoteEntryPopover(this.state, {
             onInsert: (note) => this._handlePopoverInsert(note),
@@ -209,6 +267,13 @@ export class OTFEditor {
         this.editorRoot.className = 'otf-editor';
         this.editorRoot.tabIndex = 0; // Make focusable
 
+        // Menu bar, above the toolbar — the same component in every
+        // wrapper, so a contributor meets one control surface whether
+        // they are creating, correcting or just looking (plan §8.1/8.3).
+        this.menuContainer = document.createElement('div');
+        this.menuContainer.className = 'editor-menu-container';
+        this.editorRoot.appendChild(this.menuContainer);
+
         // Toolbar
         this.toolbarContainer = document.createElement('div');
         this.toolbarContainer.className = 'editor-toolbar-container';
@@ -230,6 +295,7 @@ export class OTFEditor {
         this._applyStyles();
 
         // Initialize components
+        this.menuBar.render(this.menuContainer);
         this.toolbar.render(this.toolbarContainer);
 
         // Toolbar buttons must not steal keyboard focus — after any
@@ -326,6 +392,7 @@ export class OTFEditor {
                 box-shadow: 0 0 0 2px var(--accent-transparent, rgba(0, 123, 255, 0.25));
             }
 
+            .editor-menu-container,
             .editor-toolbar-container {
                 flex-shrink: 0;
             }
@@ -386,8 +453,9 @@ export class OTFEditor {
                 -webkit-overflow-scrolling: touch;
             }
 
-            .otf-editor-fill .editor-toolbar-container { order: 2; }
-            .otf-editor-fill .editor-status-bar { order: 3; }
+            .otf-editor-fill .editor-menu-container { order: 2; }
+            .otf-editor-fill .editor-toolbar-container { order: 3; }
+            .otf-editor-fill .editor-status-bar { order: 4; }
 
             /* The toolbar's divider now faces the tab above it */
             .otf-editor-fill .otf-editor-toolbar {
@@ -1189,6 +1257,60 @@ export class OTFEditor {
     }
 
     /**
+     * Ask for a tempo (Play ▸ Tempo…). Writes through the facade, so it
+     * is undoable and it is what gets submitted — same as the band's
+     * −/+ and the status bar's BPM box.
+     * @returns {boolean} whether the tempo changed
+     */
+    _promptForTempo() {
+        const ask = globalThis.prompt;
+        if (typeof ask !== 'function') return false;
+        const now = Number(this.state.otf?.metadata?.tempo) || 120;
+        const answer = ask('Tempo (BPM, 40–280):', String(now));
+        const bpm = parseInt(answer, 10);
+        this.editorRoot?.focus();
+        if (!Number.isFinite(bpm) || bpm < 40 || bpm > 280) return false;
+        this.state.setTempo(bpm);
+        const tempoInput = this.statusBar?.querySelector('.tempo-input');
+        if (tempoInput) tempoInput.value = bpm;
+        return true;
+    }
+
+    /** Play ▸ Metronome. Session state on the player, not the document. */
+    _toggleMetronome() {
+        if (!this.player) return false;
+        this.player.metronomeEnabled = !this.player.metronomeEnabled;
+        this.editorRoot?.focus();
+        return this.player.metronomeEnabled;
+    }
+
+    /**
+     * View ▸ Measures per row. Rows are FIXED in the editor (plan §7);
+     * this is how you change the number they are fixed AT.
+     */
+    setMeasuresPerRow(n) {
+        if (!this.renderer || !(n > 0)) return false;
+        this.renderer.options.measuresPerRow = n;
+        this._render();
+        this.editorRoot?.focus();
+        return true;
+    }
+
+    /**
+     * View ▸ Zoom. `delta` steps the current scale; pass `absolute` to
+     * set it outright (Reset).
+     */
+    zoomBy(delta, absolute = null) {
+        const next = absolute != null
+            ? absolute
+            : Math.round(((this._zoom || 1) + delta) * 10) / 10;
+        this._zoom = Math.max(0.6, Math.min(1.6, next));
+        this.renderer?.setScale?.(this._zoom);
+        this.editorRoot?.focus();
+        return this._zoom;
+    }
+
+    /**
      * Pin measures-per-row ONCE, to the number the read view computed
      * for this container width (`measuresPerRow` option to override,
      * DEFAULT_MEASURES_PER_ROW when the container isn't laid out yet).
@@ -1347,7 +1469,10 @@ export class OTFEditor {
         // break out of the value="" attribute below
         const tempo = Number(this.state.otf.metadata?.tempo) || 120;
 
-        this.statusBar.innerHTML = `
+        // The transport is the HOST's when the host has one (see the
+        // `hostTransport` option): the song page's bottom band already
+        // shows ▶/⏹ and the tempo for this very document.
+        const transport = this.options.hostTransport ? '' : `
             <div class="playback-controls">
                 <button class="play-button" title="Play/Pause">▶</button>
                 <button class="stop-button" title="Stop">⏹</button>
@@ -1355,7 +1480,10 @@ export class OTFEditor {
                     <span>BPM:</span>
                     <input type="number" class="tempo-input" value="${tempo}" min="40" max="280" step="5">
                 </div>
-            </div>
+            </div>`;
+
+        this.statusBar.innerHTML = `
+            ${transport}
             <span class="status-item">
                 <span class="status-label">Mode:</span>
                 <span class="status-value" data-field="mode">NORMAL</span>
@@ -1979,6 +2107,7 @@ export class OTFEditor {
         this.keyboard.detach();
         this.cursor.destroy();
         this.toolbar.destroy();
+        this.menuBar?.destroy();
         this.popover.destroy();
         this.annotationPopover?.destroy();
         this.trackNamePopover?.destroy();
@@ -1993,6 +2122,7 @@ export class OTFEditor {
         this.cursor = null;
         this.keyboard = null;
         this.toolbar = null;
+        this.menuBar = null;
         this.popover = null;
         this.annotationPopover = null;
         this.trackNamePopover = null;
