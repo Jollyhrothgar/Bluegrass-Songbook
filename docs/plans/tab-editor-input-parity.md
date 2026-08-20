@@ -669,7 +669,8 @@ is still in `#drafts`); the help overlay lists `F6`/`F11`/`Ctrl+T`/macOS
 
 ### Validation (2026-08-20)
 
-- Unit: 106 files / 2,630 tests. Playwright: 287 e2e against the branch.
+- Unit: 107 files / 2,671 tests. Playwright: 314 e2e (desktop + mobile
+  projects) against the branch.
 - Browser validation (chrome-devtools, document read through the facade):
   auto-duration, ties, effects, re-string, selection/clipboard, measure
   ops, undo/redo, both presets, edit/add-tab/new-tab routes, the shim,
@@ -682,4 +683,9 @@ is still in `#drafts`); the help overlay lists `F6`/`F11`/`Ctrl+T`/macOS
   (plan follow-ups + the QA's "could not test" list, being closed by the
   testability slice: no native dialogs, mocked-backend e2e, mobile project).
 - Rule adopted from that pass: **everything a human can do must be
-  reachable by Playwright against a mocked backend.**
+  reachable by Playwright against a mocked backend.** Applied the same
+  day: no native dialogs in the editor (enforced by a source-scan test),
+  container-driven band collapse, mocked-Supabase e2e for Send and
+  signed-in paths, download, `.tef` import, multi-track, drafts, a mobile
+  Playwright project — and a root fix for a view-teardown race that could
+  delete the editor on `#new-tab?draft=`.
