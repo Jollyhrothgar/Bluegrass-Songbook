@@ -1,6 +1,8 @@
 id: dark-hollow-1
 title: Dark Hollow
 artist: Bill Browning
+composers:
+- Bill Browning
 default_key: G
 tags:
 - JamFriendly
@@ -12,5 +14,13 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Bill Browning
+- type: tablature
+  format: otf
+  file: guitar.otf.json
+  instrument: guitar
+  provenance:
+    source: user-submission
+    source_id: pending:tab:dark-hollow-1:85ltxlug:805918fe7961
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-08-19'
+    author: Mike Beaumier
