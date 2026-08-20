@@ -6,6 +6,12 @@ composers:
 default_key: G
 tags:
 - JamFriendly
+notes: 'Source: https://www.flatpickingtabs.com/darkhallow.htm'
+metadata_provenance:
+  source: user-submission
+  source_id: pending:meta:dark-hollow-1:dsq44un7:a818a0358b36
+  submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+  submitted_at: '2026-08-20'
 parts:
 - type: lead-sheet
   format: chordpro
