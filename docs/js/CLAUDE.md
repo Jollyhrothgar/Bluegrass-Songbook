@@ -90,14 +90,28 @@ quick-controls bar, or bottom sheet anymore:
   `<html>` (ResizeObserver + on every `setBottomBand`). Anything stacked on
   the band (drop-up popovers, the tab settings sheet, `.container`'s
   bottom padding) offsets off that variable, never a literal.
-- **Phone tab band** (`tab-controls-sheet.js`): at ≤640px the band keeps
-  Play / Stop / tempo / loop / ⚙ and the ⚙ sheet holds everything else
-  (size, key, layout, feel, count-in, metronome, mixer, Edit). The controls
-  are MOVED into the sheet, not rebuilt — the sheet lives inside
-  `.tab-controls`, so `controls.querySelector(...)` in
+- **Collapsed tab band** (`tab-controls-sheet.js`): below a band width of
+  640px the band keeps Play / Stop / tempo / loop / ⚙ and the ⚙ sheet holds
+  everything else (size, key, layout, feel, count-in, metronome, mixer,
+  Edit). The controls are MOVED into the sheet, not rebuilt — the sheet
+  lives inside `.tab-controls`, so `controls.querySelector(...)` in
   `setupTablaturePlayer` and the listeners it attached both survive.
-  Widening the viewport moves them back and deletes the sheet, so the
-  desktop DOM is byte-identical to `createTablatureControls`' output.
+  Widening moves them back and deletes the sheet, so the wide DOM is
+  byte-identical to `createTablatureControls`' output.
+  **The width is the BAND's, not the window's**: the module observes
+  `.tab-controls` with a ResizeObserver and publishes its verdict as
+  `.is-narrow-band`, and the CSS asks the same question with
+  `@container tabband (max-width: 640px)` (`container-type: inline-size` on
+  `.app-bottomband`; the old `@media (max-width: 640px)` block stays as the
+  fallback). That is deliberate and load-bearing for tests: a collapsed band
+  is reachable by constraining the container, not only by shrinking the
+  viewport. The media query is still the SEED — `attachTabControlsSheet`
+  runs while the band is detached, where there is no width to measure —
+  and injecting a `media` object turns the observer off entirely, which is
+  how the unit tests drive one thing at a time.
+  Note that `container-type` does NOT make the band the containing block for
+  its `position: fixed` drop-ups in Chromium, so those still offset off
+  `--bottomband-h`, not `100%`.
 - **Pill primitive**: `pill(label, buildContent, opts)` returns a small
   labeled button that opens a popover. All song-page controls are pills.
 - **Auto-hiding chrome** (`setChromeAutoHide(on)`, enabled on song pages):
@@ -437,6 +451,36 @@ Views are switched through the reactive `currentView` state (`showView(mode)`
 in main.js sets it; a subscriber shows/hides panels and updates the top
 band's nav links). There is no sidebar — top-band nav links cover Search,
 Lists, Add Song, etc., with the rest in the overflow (⋯) menu.
+
+**Two invariants hold this together, and both were bought with a bug.**
+
+1. **`setCurrentView(v)` where `v` is already the value fires NOTHING**
+   (state.js). Subscribers run on a `requestAnimationFrame`, so a redundant
+   write is not free — it is a real callback at a later frame boundary, and
+   the `currentView` subscriber does imperative teardown, not painting.
+2. **The subscriber tears down the tablature view on the way OUT of `song`,
+   never on the way IN** (`if (view !== 'song') teardownTablatureView()`).
+   Everything that ENTERS the song view goes through work-view, which tears
+   down synchronously before it builds (`openWork`, `openNewTabPage`,
+   `showWorkLoading`, the not-found branch). A teardown queued by *entering*
+   the view lands a frame after the entry and can only destroy what that
+   entry just built.
+
+Together those are what stopped `#new-tab?draft=…` from mounting its editor
+and then silently deleting it. The failure looked like a rendering bug — the
+page appeared, the band appeared, the editor did not — and it was decided by
+the module cache: with the editor's four dynamic imports warm the mount
+resolved in a microtask and lost the race; cold, it won. `#drafts` → Open
+lost every time; a dropped `.tef` lost about half. Covered by
+`e2e/otf-editor-drafts.spec.js` and `e2e/otf-editor-files.spec.js`.
+
+> ⚠️ Still open (deliberately not fixed here): a tab route is dispatched
+> **twice** for one navigation — `popstate` and `hashchange` both reach
+> `handleDeepLink`, so `openTabRoute` runs twice, reads the draft from
+> IndexedDB twice, and renders the work view twice (the second render is why
+> `mountTabEditor` and `renderTablaturePart` each carry a "the page moved on"
+> guard). Harmless now, but wasteful, and de-duplicating the router touches
+> every route — worth doing on its own.
 
 ## Offline / PWA
 

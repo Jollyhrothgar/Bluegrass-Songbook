@@ -473,6 +473,10 @@ function buildPartsFromIndex(song, content = undefined) {
  * is fetched. Better than a blank page and better than flashing "not found".
  */
 function showWorkLoading() {
+    // Synchronous, before the view is entered: the currentView subscriber
+    // deliberately does NOT tear down on the way IN (see main.js), so every
+    // path that enters the song view owns this itself.
+    teardownTablatureView();
     setCurrentView('song');
     const container = document.getElementById('song-content');
     if (container) {
@@ -540,6 +544,7 @@ export async function openWork(workId, options = {}) {
     if (!song) {
         // Real error state with a way out, not a dead-end spinner
         console.error(`Work not found: ${workId}`);
+        teardownTablatureView();   // entering the song view owns its teardown
         setCurrentView('song');
         const container = document.getElementById('song-content');
         if (container) {
@@ -2662,7 +2667,7 @@ export async function pickTefFile(onDocument, { file = null } = {}) {
                     { variant: 'warning', duration: 6000 });
                 return;
             }
-            onDocument(otf);
+            onDocument(otf, chosen);
         } catch (err) {
             // Format-agnostic on purpose: nobody should have to know which
             // TablEdit variant they have. (The version error is caught by
@@ -2772,7 +2777,16 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         className: 'tab-edit-import',
         label: '📂 Import .tef…',
         title: 'Replace this take with a TablEdit (.tef) file',
-        onClick: (session) => pickTefFile(doc => session.replaceDocument(doc)),
+        onClick: (session) => pickTefFile((doc, file) => {
+            session.replaceDocument(doc);
+            // The canvas redrawing is not, by itself, an answer — a tab you
+            // have not scrolled to looks identical either way. Say which
+            // file landed and how much of it there was.
+            const measures = Object.values(doc.notation || {})
+                .reduce((most, list) => Math.max(most, list.length), 0);
+            session.setStatus(
+                `Imported ${file?.name || 'that file'} — ${measures} measures.`);
+        }),
     }] : [];
 
     activeEditSession = createTabEditSession({
@@ -2994,9 +3008,16 @@ export function startAddTabMode(target = {}) {
 
     tabAuthoring = { kind: currentWork.provisional ? 'new' : 'add', part, take, target, otf };
     activePart = part;
-    takeStatusLine = (draftFits && !target.otf)
-        ? 'Picked up where you left off — this is your unsaved draft.'
-        : null;
+    // Three things the take header can be honest about, in priority order:
+    // this document came out of a FILE you just opened (a `.tef` dropped on
+    // the window or opened by the OS — `file=1` on the route), it came back
+    // from a draft, or it is new. The file case used to say nothing at all,
+    // which read as "your file didn't import".
+    takeStatusLine = target.fromFile
+        ? 'Imported from a file — it is not submitted yet.'
+        : ((draftFits && !target.otf)
+            ? 'Picked up where you left off — this is your unsaved draft.'
+            : null);
     setLoadedTablature(null);
 
     renderWorkView();
@@ -3044,7 +3065,13 @@ export function openNewTabPage(options = {}) {
     pendingInitialRender = true;
     pendingDraft = options.draft || null;
 
-    startAddTabMode({ instrument, title: options.title, otf: options.otf || null, build });
+    startAddTabMode({
+        instrument,
+        title: options.title,
+        otf: options.otf || null,
+        fromFile: !!options.fromFile,
+        build,
+    });
     return true;
 }
 

@@ -191,6 +191,76 @@ test.describe('selection, clipboard, phrases', () => {
     });
 });
 
+test.describe('the prompts that used to be window.prompt', () => {
+    // A native dialog is not in the DOM, so nothing here could be asserted
+    // at all before: `page.on('dialog')` was the only handle, and it can
+    // neither read the range nor see the validation. Both prompts are
+    // ValuePromptPopovers now — the registered dialog listener is the check
+    // that they stayed that way.
+    const valuePrompt = (page) => page.locator('.otf-value-prompt-popover');
+
+    test('Ctrl+G asks for a measure in-app, and jumps on Enter', async ({ page }) => {
+        const dialogs = [];
+        page.on('dialog', (d) => { dialogs.push(d.message()); d.dismiss(); });
+        await openDemo(page);
+
+        await page.keyboard.press('Control+g');
+        const panel = valuePrompt(page);
+        await expect(panel).toBeVisible();
+        await expect(panel).toContainText('Go to measure');
+        await expect(panel.locator('.value-prompt-input')).toHaveValue('1');
+
+        await panel.locator('.value-prompt-input').fill('3');
+        await panel.locator('.value-prompt-input').press('Enter');
+        await expect(panel).toBeHidden();
+
+        expect((await statusM(page))[1]).toBe('3');
+        expect(dialogs).toEqual([]);
+    });
+
+    test('Play ▸ Tempo… validates inline and writes an undoable tempo',
+        async ({ page }) => {
+            const dialogs = [];
+            page.on('dialog', (d) => { dialogs.push(d.message()); d.dismiss(); });
+            await openDemo(page);
+
+            await page.locator('.menu-trigger[data-menu="play"]').click();
+            await page.locator('.menu-popup .menu-item')
+                .filter({ hasText: 'Tempo' }).first().click();
+
+            const panel = valuePrompt(page);
+            await expect(panel).toBeVisible();
+            const input = panel.locator('.value-prompt-input');
+
+            // Out of range says so and refuses, rather than swallowing it
+            // the way `parseInt(prompt())` used to.
+            await input.fill('5000');
+            await expect(panel.locator('.value-prompt-error')).toContainText('280');
+            await expect(panel.locator('.save-btn')).toBeDisabled();
+
+            await input.fill('152');
+            await expect(panel.locator('.save-btn')).toBeEnabled();
+            await panel.locator('.save-btn').click();
+            await expect(panel).toBeHidden();
+            await expect(page.locator('.editor-status-bar .tempo-input'))
+                .toHaveValue('152');
+
+            expect(dialogs).toEqual([]);
+        });
+
+    test('Escape closes the prompt and leaves the document alone',
+        async ({ page }) => {
+            await openDemo(page);
+            await page.keyboard.press('Control+g');
+            const panel = valuePrompt(page);
+            await expect(panel).toBeVisible();
+            await panel.locator('.value-prompt-input').fill('7');
+            await panel.locator('.value-prompt-input').press('Escape');
+            await expect(panel).toBeHidden();
+            expect((await statusM(page))[1]).toBe('1');
+        });
+});
+
 test.describe('new-tab flow (the song page in #new-tab mode)', () => {
     // There is no create page any more (plan §9.1): a tab is written on the
     // page it will be published on. `#new-tab` is the provisional work page

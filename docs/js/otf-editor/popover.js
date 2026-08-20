@@ -1227,6 +1227,261 @@ export class TrackNamePopover {
     }
 }
 
+/**
+ * Value Prompt Popover — "type one number, press Enter".
+ *
+ * The fourth sibling of the note / annotation / track-name panels, and the
+ * reason `window.prompt` is gone from the editor. Two callers today —
+ * Go to measure (Ctrl+G) and Play ▸ Tempo… — and both want the same
+ * three things a native prompt could not give us:
+ *
+ * 1. **It is in the app.** A native dialog is drawn by the browser, so
+ *    it is invisible to Playwright's DOM, un-themeable, and on iOS it
+ *    steals the page's focus in a way the editor never gets back. The
+ *    owner's rule is that everything a human can do must be reachable by
+ *    a test; a `prompt()` is by construction not.
+ * 2. **It validates before it commits.** `prompt` hands back a string and
+ *    leaves the caller to silently discard nonsense. Here the range is
+ *    stated under the input, a bad value says why, and Save is disabled
+ *    until it isn't.
+ * 3. **Keys stop here.** Same as its siblings: the panel swallows keydown
+ *    so the editor's vim bindings never see what you typed.
+ *
+ * Commit is asynchronous by nature (the answer arrives on a click or an
+ * Enter, not on the call), so callers get `onCommit(value)` rather than a
+ * return value — see `_promptForMeasure` in editor.js for how a binding
+ * that used to read a return value now dispatches on the callback.
+ */
+export class ValuePromptPopover {
+    constructor(options = {}) {
+        this.options = {
+            onCommit: null,   // (value:number) => void
+            onCancel: null,
+            ...options,
+        };
+
+        this.element = null;
+        this.overlay = null;
+        this.input = null;
+        this.saveButton = null;
+        this.errorEl = null;
+        this.isOpen = false;
+        this.context = null;
+
+        this._onKeyDown = this._onKeyDown.bind(this);
+        this._onInput = this._onInput.bind(this);
+    }
+
+    init(container) {
+        this._applyStyles();
+
+        this.overlay = document.createElement('div');
+        this.overlay.className = 'otf-popover-overlay otf-value-prompt-overlay';
+        this.overlay.addEventListener('click', (e) => {
+            if (e.target === this.overlay) this.close();
+        });
+
+        this.element = document.createElement('div');
+        this.element.className = 'otf-note-popover otf-value-prompt-popover';
+        this.overlay.appendChild(this.element);
+        container.appendChild(this.overlay);
+
+        this.overlay.style.display = 'none';
+    }
+
+    _applyStyles() {
+        if (document.querySelector('style[data-otf-value-prompt]')) return;
+        const style = document.createElement('style');
+        style.setAttribute('data-otf-value-prompt', '');
+        style.textContent = `
+            .otf-value-prompt-popover .value-prompt-input {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 12px;
+                font-size: 16px;
+                border: 2px solid var(--border, #ddd);
+                border-radius: 8px;
+                background: var(--bg, #fff);
+                color: var(--text, #333);
+            }
+
+            .otf-value-prompt-popover .value-prompt-input:focus {
+                outline: none;
+                border-color: var(--accent, #007bff);
+            }
+
+            .otf-value-prompt-popover .value-prompt-hint {
+                font-size: 11px;
+                color: var(--text-muted, #888);
+                margin-top: 8px;
+            }
+
+            .otf-value-prompt-popover .value-prompt-error {
+                font-size: 12px;
+                color: var(--danger, #dc3545);
+                margin-top: 8px;
+                min-height: 1em;
+            }
+
+            .otf-value-prompt-popover .popover-btn:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    _renderContent() {
+        const { title, label, hint } = this.context;
+        return `
+            <div class="popover-header">
+                <span class="popover-title">${escapeHtml(title)}</span>
+                <button class="popover-close" title="Close (Escape)">&times;</button>
+            </div>
+            <div class="popover-body">
+                <div class="popover-section">
+                    <label class="section-label">${escapeHtml(label)}</label>
+                    <input type="text" class="value-prompt-input"
+                           inputmode="numeric" pattern="[0-9]*"
+                           value="${escapeAttr(this.context.value)}"
+                           autocomplete="off" spellcheck="false">
+                    <div class="value-prompt-hint">${escapeHtml(hint)}</div>
+                    <div class="value-prompt-error" role="alert"></div>
+                </div>
+            </div>
+            <div class="popover-footer">
+                <button class="popover-btn cancel-btn">Cancel</button>
+                <button class="popover-btn save-btn primary">${escapeHtml(this.context.commitLabel)}</button>
+            </div>
+        `;
+    }
+
+    _setupEventListeners() {
+        this.input = this.element.querySelector('.value-prompt-input');
+        this.saveButton = this.element.querySelector('.save-btn');
+        this.errorEl = this.element.querySelector('.value-prompt-error');
+
+        this.element.querySelector('.popover-close')
+            .addEventListener('click', () => this.close());
+        this.element.querySelector('.cancel-btn')
+            .addEventListener('click', () => this.close());
+        this.saveButton.addEventListener('click', () => this._commit());
+
+        this.input.addEventListener('input', this._onInput);
+        this.element.addEventListener('keydown', this._onKeyDown);
+    }
+
+    /** The problem with what is typed, or '' when it is fine. */
+    _problem(raw) {
+        const text = String(raw ?? '').trim();
+        if (!text) return 'Type a number.';
+        const n = Number(text);
+        if (!Number.isFinite(n)) return 'That isn’t a number.';
+        if (this.context.integer && !Number.isInteger(n)) {
+            return 'Whole numbers only.';
+        }
+        const { min, max } = this.context;
+        if (n < min || n > max) return `Pick something between ${min} and ${max}.`;
+        return '';
+    }
+
+    _onInput() {
+        const problem = this._problem(this.input.value);
+        this.errorEl.textContent = problem;
+        this.saveButton.disabled = !!problem;
+    }
+
+    _onKeyDown(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            event.stopPropagation();
+            this._commit();
+            return;
+        }
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            event.stopPropagation();
+            this.close();
+            return;
+        }
+        event.stopPropagation();
+    }
+
+    _commit() {
+        const raw = this.input?.value || '';
+        if (this._problem(raw)) {
+            this._onInput();
+            return;
+        }
+        this._closeQuietly();
+        this.options.onCommit?.(Number(String(raw).trim()));
+    }
+
+    /**
+     * @param {Object} context
+     * @param {string} context.title - panel heading ("Go to measure")
+     * @param {string} context.label - the field's label
+     * @param {string} [context.hint] - the range, in words
+     * @param {number|string} [context.value] - pre-filled (and selected)
+     * @param {number} [context.min] @param {number} [context.max]
+     * @param {boolean} [context.integer]
+     * @param {string} [context.commitLabel]
+     */
+    open(context = {}) {
+        this.context = {
+            title: context.title ?? 'Enter a value',
+            label: context.label ?? 'Value',
+            hint: context.hint ?? '',
+            value: context.value ?? '',
+            min: Number.isFinite(context.min) ? context.min : -Infinity,
+            max: Number.isFinite(context.max) ? context.max : Infinity,
+            integer: context.integer !== false,
+            commitLabel: context.commitLabel ?? 'Go',
+        };
+
+        this.element.innerHTML = this._renderContent();
+        this._setupEventListeners();
+        this._onInput();
+
+        this.overlay.style.display = 'flex';
+        this.isOpen = true;
+
+        setTimeout(() => {
+            this.input?.focus();
+            this.input?.select();
+        }, 0);
+        this.input?.focus();
+        this.input?.select();
+    }
+
+    /** Close without firing onCancel (used after commit). */
+    _closeQuietly() {
+        if (this.overlay) this.overlay.style.display = 'none';
+        this.isOpen = false;
+    }
+
+    close() {
+        const wasOpen = this.isOpen;
+        this._closeQuietly();
+        if (wasOpen) this.options.onCancel?.();
+    }
+
+    get opened() {
+        return this.isOpen;
+    }
+
+    destroy() {
+        if (this.overlay && this.overlay.parentNode) {
+            this.overlay.parentNode.removeChild(this.overlay);
+        }
+        this.overlay = null;
+        this.element = null;
+        this.input = null;
+        this.saveButton = null;
+        this.errorEl = null;
+    }
+}
+
 function escapeHtml(s) {
     return String(s)
         .replace(/&/g, '&amp;')

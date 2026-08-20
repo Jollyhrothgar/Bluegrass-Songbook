@@ -15,7 +15,9 @@ import {
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar } from './toolbar.js';
 import { EditorMenuBar } from './menu-bar.js';
-import { NoteEntryPopover, AnnotationPopover, TrackNamePopover } from './popover.js';
+import {
+    NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover,
+} from './popover.js';
 import { sanitizeTrackId } from './facade.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
 import { ContextMenu } from './context-menu.js';
@@ -226,6 +228,12 @@ export class OTFEditor {
             onCommit: (name) => this._commitTrackName(name),
             onCancel: () => this.editorRoot?.focus(),
         });
+        // "Type one number" — Go to measure and Play ▸ Tempo…. It replaced
+        // two `window.prompt` calls: a native dialog is not in the DOM, so
+        // no test can drive it and no theme can style it.
+        this.valuePopover = new ValuePromptPopover({
+            onCancel: () => this.editorRoot?.focus(),
+        });
 
         // Renderer (wrapping existing TabRenderer)
         this.renderer = null;
@@ -351,6 +359,7 @@ export class OTFEditor {
         this.popover.init(this.container);
         this.annotationPopover.init(this.container);
         this.trackNamePopover.init(this.container);
+        this.valuePopover.init(this.container);
 
         // Attach keyboard handler
         this.keyboard.attach(this.editorRoot);
@@ -1245,37 +1254,71 @@ export class OTFEditor {
     }
 
     /**
-     * Ask which measure to jump to. A prompt for now — the menu-bar pass
-     * can swap in a popover without touching the binding table.
-     * @returns {number} measure number, or 0 to cancel
+     * Ask which measure to jump to — `ValuePromptPopover`, not
+     * `window.prompt`.
+     *
+     * The answer no longer arrives on THIS call (a popover commits later,
+     * on Enter or a click), so the jump is dispatched from the commit
+     * instead of returned. `nav.goToMeasure` already takes a `count` —
+     * that is the same path `g12G` uses in the vim preset — so the
+     * binding table needs no new entry and no async hook.
+     *
+     * The 0 return is what tells `nav.goToMeasure` "nothing to do yet".
+     * A host that answers synchronously (the unit tests do) still works:
+     * a positive number is still honoured.
+     * @returns {number} always 0 — the popover answers later
      */
     _promptForMeasure() {
-        const ask = globalThis.prompt;
-        if (typeof ask !== 'function') return 0;
-        const answer = ask(`Go to measure (1–${this.state.getMeasureCount()}):`,
-            String(this.state.cursor.measure));
-        const n = parseInt(answer, 10);
-        this.editorRoot?.focus();
-        return Number.isFinite(n) && n > 0 ? n : 0;
+        if (!this.valuePopover) return 0;
+        const total = this.state.getMeasureCount();
+        this.valuePopover.options.onCommit = (n) => {
+            this.keyboard.dispatchAction('nav.goToMeasure', { count: Math.floor(n) });
+            this.editorRoot?.focus();
+        };
+        this.valuePopover.open({
+            title: 'Go to measure',
+            label: 'Measure',
+            hint: `1–${total} — a number past the end appends measures.`,
+            value: String(this.state.cursor.measure),
+            min: 1,
+            // Walking past the end appends, so the prompt allows it too;
+            // the cap is a sanity bound, not the document's length.
+            max: Math.max(total, 999),
+            commitLabel: 'Go',
+        });
+        return 0;
     }
 
     /**
      * Ask for a tempo (Play ▸ Tempo…). Writes through the facade, so it
      * is undoable and it is what gets submitted — same as the band's
      * −/+ and the status bar's BPM box.
-     * @returns {boolean} whether the tempo changed
+     * @returns {boolean} whether the prompt opened
      */
     _promptForTempo() {
-        const ask = globalThis.prompt;
-        if (typeof ask !== 'function') return false;
+        if (!this.valuePopover) return false;
         const now = Number(this.state.otf?.metadata?.tempo) || 120;
-        const answer = ask('Tempo (BPM, 40–280):', String(now));
-        const bpm = parseInt(answer, 10);
-        this.editorRoot?.focus();
+        this.valuePopover.options.onCommit = (bpm) => this._applyTempo(bpm);
+        this.valuePopover.open({
+            title: 'Tempo',
+            label: 'Beats per minute',
+            hint: '40–280 BPM. This is the document’s tempo — it is undoable, '
+                + 'and it travels with the submission.',
+            value: String(now),
+            min: 40,
+            max: 280,
+            commitLabel: 'Set',
+        });
+        return true;
+    }
+
+    /** Commit a tempo from the prompt. */
+    _applyTempo(bpm) {
         if (!Number.isFinite(bpm) || bpm < 40 || bpm > 280) return false;
         this.state.setTempo(bpm);
         const tempoInput = this.statusBar?.querySelector('.tempo-input');
         if (tempoInput) tempoInput.value = bpm;
+        this.editorRoot?.focus();
         return true;
     }
 
@@ -2114,6 +2157,7 @@ export class OTFEditor {
         this.popover.destroy();
         this.annotationPopover?.destroy();
         this.trackNamePopover?.destroy();
+        this.valuePopover?.destroy();
         this.renderer?.destroy();
 
         // Clear container
@@ -2129,6 +2173,7 @@ export class OTFEditor {
         this.popover = null;
         this.annotationPopover = null;
         this.trackNamePopover = null;
+        this.valuePopover = null;
         this.renderer = null;
         this.player = null;
     }
