@@ -761,12 +761,17 @@ export class EditorState {
      * the ruler on every duration change during mixed-value entry.
      */
     setDuration(duration) {
+        const wasAuto = this.currentDuration == null;
         // null = AUTOMATIC. Nothing to place, nothing to refine: under
         // auto the GRID is the rhythm input, so the grid is left exactly
         // where the user put it.
         if (duration == null) {
             this.currentDuration = null;
             this._emit('durationChange', null);
+            // Entering/leaving auto is its own event, because it changes
+            // what the LENGTH row means (a dashed prediction appears or
+            // goes away) and not just which button is filled.
+            if (!wasAuto) this._emit('autoDurationChange', true);
             return;
         }
         this.currentDuration = duration;
@@ -784,6 +789,7 @@ export class EditorState {
             this.pinDuration(pos);
         }
         this._emit('durationChange', duration);
+        if (wasAuto) this._emit('autoDurationChange', false);
         const needed = Math.min(duration, DURATIONS.quarter);
         if (needed % this.gridSubdivision !== 0) {
             this.setGridSubdivision(needed);
@@ -822,9 +828,13 @@ export class EditorState {
 
     /**
      * The duration a note entered right now would get: the chosen one, or
-     * — under auto — what the column rule predicts for the cursor slot.
-     * EVERY consumer of `currentDuration` that needs a number (cursor
-     * steps, ghost note, status bar) must call this instead.
+     * — under auto — what the rule predicts for the cursor slot
+     * (`facade.autoDurationAt`): the gap to the next onset when something
+     * follows in the measure, otherwise the PRECEDING interval clamped to
+     * the barline, and the rest of the bar only when nothing sounds in it
+     * at all. EVERY consumer of `currentDuration` that needs a number
+     * (cursor steps, ghost note, status bar, the LENGTH row's dashed
+     * prediction) must call this instead.
      * @returns {number} ticks (never null, never 0)
      */
     effectiveDuration() {

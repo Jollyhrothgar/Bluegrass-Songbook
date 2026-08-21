@@ -609,12 +609,168 @@ describe('EditorToolbar — entry latches', () => {
         expect(toolbar.autoAdvanceButton.classList.contains('active')).toBe(false);
     });
 
-    it('the track group comes LAST — once-per-document edits do not lead', () => {
+    it('mode leads, STEP over LENGTH, and the track group comes LAST', () => {
         const sections = [...toolbar.element.querySelectorAll('.toolbar-section')]
             .map(s => s.className.replace('toolbar-section ', ''));
         expect(sections[0]).toBe('mode-section');
-        expect(sections[1]).toBe('duration-section');
+        // STEP first, LENGTH under it — you choose where the cursor goes
+        // before you care what lands there.
+        expect(sections[1]).toBe('grid-section');
+        expect(sections[2]).toBe('duration-section');
+        // once-per-document edits do not lead
         expect(sections[sections.length - 1]).toBe('track-section');
+    });
+});
+
+// ======================================================================
+// STEP over LENGTH: two captioned rows, and the live prediction
+// ======================================================================
+
+describe('EditorToolbar — the STEP and LENGTH rows', () => {
+    let state;
+    let toolbar;
+
+    function mount(otf) {
+        state = new EditorState({ otf: otf || doc(), trackId: 'banjo' });
+        toolbar = new EditorToolbar(state, {});
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        toolbar.render(container);
+    }
+
+    const row = (cls) => toolbar.element.querySelector(`.toolbar-row.${cls}`);
+    const predicted = () => [...toolbar.element.querySelectorAll('.predicts-next')];
+
+    beforeEach(() => {
+        document.body.innerHTML = '';
+        resetPreset();
+    });
+
+    afterEach(() => toolbar?.destroy());
+
+    it('there are two rows, each with its caption', () => {
+        mount();
+        expect(row('step-row')).not.toBeNull();
+        expect(row('length-row')).not.toBeNull();
+        expect(row('step-row').querySelector('.toolbar-caption').textContent.trim())
+            .toBe('how far the cursor moves; what the ruler draws');
+        expect(row('length-row').querySelector('.toolbar-caption').textContent.trim())
+            .toBe('what a typed note gets');
+        expect(row('step-row').querySelector('.toolbar-label').textContent).toBe('Step');
+        expect(row('length-row').querySelector('.toolbar-label').textContent)
+            .toBe('Length');
+    });
+
+    it('Rest sits with STEP — it advances one step, it is not a length', () => {
+        mount();
+        expect(row('step-row').contains(toolbar.restButton)).toBe(true);
+        expect(row('length-row').contains(toolbar.restButton)).toBe(false);
+        // and the grid palette + its toggle are on that row too
+        expect(row('step-row').querySelector('.grid-buttons')).not.toBeNull();
+        expect(row('step-row').contains(toolbar.gridToggleButton)).toBe(true);
+    });
+
+    it('LENGTH holds Auto, the values, and the Dot / triplet / advance latches', () => {
+        mount();
+        const length = row('length-row');
+        expect(length.contains(toolbar.autoDurationButton)).toBe(true);
+        expect(length.querySelector('.duration-buttons')).not.toBeNull();
+        for (const b of [toolbar.dottedButton, toolbar.tripletButton,
+            toolbar.autoAdvanceButton]) {
+            expect(length.contains(b)).toBe(true);
+        }
+    });
+
+    it('the e2e selectors survive: symbols, order, .rest-button, .grid-buttons', () => {
+        mount();
+        const symbols = [...toolbar.element
+            .querySelectorAll('.duration-buttons .button-symbol')]
+            .map(n => n.textContent);
+        expect(symbols).toEqual(['1', '1/2', '1/4', '1/8', '1/16', '1/32']);
+        expect(toolbar.element.querySelector('.rest-button')).not.toBeNull();
+        expect(toolbar.element.querySelectorAll('.grid-buttons button')).toHaveLength(5);
+    });
+
+    it('no dashed prediction while a duration is CHOSEN', () => {
+        mount();
+        state.setDuration(DURATIONS.quarter);
+        expect(predicted()).toHaveLength(0);
+        expect(toolbar.durationButtons.get(DURATIONS.quarter)
+            .classList.contains('active')).toBe(true);
+    });
+
+    it('under Auto the dashed outline follows the prediction as the cursor moves', () => {
+        mount();
+        state.setAutoDuration(true);
+        // empty 4/4 bar → the rule predicts the whole bar
+        expect(toolbar.durationButtons.get(DURATIONS.whole)
+            .classList.contains('predicts-next')).toBe(true);
+
+        // a note at tick 0, cursor an eighth later → predicts an eighth
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state._emit('cursorMove', state.cursor);
+        expect(toolbar.durationButtons.get(DURATIONS.eighth)
+            .classList.contains('predicts-next')).toBe(true);
+        expect(toolbar.durationButtons.get(DURATIONS.whole)
+            .classList.contains('predicts-next')).toBe(false);
+
+        // a quarter further on → predicts a quarter
+        state.cursor.tick = 480;
+        state._emit('cursorMove', state.cursor);
+        expect(toolbar.durationButtons.get(DURATIONS.quarter)
+            .classList.contains('predicts-next')).toBe(true);
+    });
+
+    it('a dotted prediction outlines its base value AND Dot', () => {
+        mount();
+        state.setAutoDuration(true);
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+        state.insertNote(0);
+        state.cursor.tick = 360;          // preceding interval = a dotted eighth
+        state._emit('cursorMove', state.cursor);
+        expect(state.effectiveDuration()).toBe(360);
+        expect(toolbar.durationButtons.get(DURATIONS.eighth)
+            .classList.contains('predicts-next')).toBe(true);
+        expect(toolbar.dottedButton.classList.contains('predicts-next')).toBe(true);
+    });
+
+    it('a triplet prediction outlines the triplet button', () => {
+        mount();
+        state.setAutoDuration(true);
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+        state.insertNote(0);
+        state.cursor.tick = DURATIONS.tripletEighth;
+        state._emit('cursorMove', state.cursor);
+        expect(toolbar.tripletButton.classList.contains('predicts-next')).toBe(true);
+    });
+
+    it('toggling Auto turns the prediction on and off without a cursor move', () => {
+        mount();
+        expect(predicted()).toHaveLength(0);
+        toolbar.autoDurationButton.click();
+        expect(predicted().length).toBeGreaterThan(0);
+        toolbar.autoDurationButton.click();
+        expect(predicted()).toHaveLength(0);
+    });
+
+    it('.predicts-next and .reflects-note are different states of the same row', () => {
+        // a note under the cursor AND a prediction for it: the note is a
+        // quarter (solid), the rule would give a new one the whole bar
+        // (dashed) — two classes, no argument.
+        mount(doc({ s: 3, f: 5, dur: 480 }));
+        state.setAutoDuration(true);
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+        state._emit('cursorMove', state.cursor);
+        expect(toolbar.durationButtons.get(DURATIONS.quarter)
+            .classList.contains('reflects-note')).toBe(true);
+        expect(toolbar.durationButtons.get(DURATIONS.whole)
+            .classList.contains('predicts-next')).toBe(true);
     });
 });
 

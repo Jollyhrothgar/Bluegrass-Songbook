@@ -27,26 +27,47 @@ function el(tag, className, text) {
     return node;
 }
 
+/** Shortest silence worth a glyph: a 32nd. Slivers are rounding, not rests. */
+const MIN_REST = 60;
+
 /**
- * Silent spans inside a measure that deserve rest glyphs: the gap after
- * an event whose notes ALL carry explicit durations (editor-entered),
- * up to the next event or the measure's end. Events without durations
- * follow the legacy ring-until-next-event model — no rests for them.
+ * Silent spans inside a measure that deserve rest glyphs.
+ *
+ * Two kinds, both TablEdit's "Automatic rests":
+ *   - **leading**: the measure starts silent and the first sounding
+ *     event carries explicit durations — a bar whose music begins on
+ *     beat 2 is a quarter rest then the music, not music floating in
+ *     from nowhere.
+ *   - **after a note**: the gap from where an event stops sounding to
+ *     the next event or the barline.
+ *
+ * Both are gated on explicit durations: an event whose notes do NOT all
+ * carry `dur` follows the legacy ring-until-next-event model, and a
+ * measure whose FIRST sounding event is duration-less gets no leading
+ * rest either — those documents say nothing about rhythm, so we invent
+ * nothing.
  *
  * @param {Array} events - [{tick, notes: [{dur?}]}]
  * @param {number} measureTicks - this measure's own tick length
+ * @param {Object} [opts]
+ * @param {boolean} [opts.leading=true] - draw the leading silence too
  * @returns {Array<{start: number, len: number}>}
  */
-export function restSpansForMeasure(events, measureTicks) {
+export function restSpansForMeasure(events, measureTicks, { leading = true } = {}) {
     const spans = [];
-    const sorted = [...(events || [])].sort((a, b) => a.tick - b.tick);
+    const sorted = [...(events || [])]
+        .filter(e => (e.notes || []).length > 0)
+        .sort((a, b) => a.tick - b.tick);
+    const durated = (ev) => ev.notes.every(n => n.dur > 0);
+    if (leading && sorted.length && sorted[0].tick >= MIN_REST && durated(sorted[0])) {
+        spans.push({ start: 0, len: sorted[0].tick });
+    }
     for (let i = 0; i < sorted.length; i++) {
         const ev = sorted[i];
-        const notes = ev.notes || [];
-        if (notes.length === 0 || !notes.every(n => n.dur > 0)) continue;
-        const end = ev.tick + Math.max(...notes.map(n => n.dur));
+        if (!durated(ev)) continue;
+        const end = ev.tick + Math.max(...ev.notes.map(n => n.dur));
         const nextStart = i + 1 < sorted.length ? sorted[i + 1].tick : measureTicks;
-        if (nextStart - end >= 60) {
+        if (nextStart - end >= MIN_REST) {
             spans.push({ start: end, len: nextStart - end });
         }
     }
@@ -178,6 +199,11 @@ export class TabRenderer {
                                       // tab staff hides these, but that leaves the
                                       // rhythm implicit (Mike: 'author laziness') —
                                       // we show them; opt out per-renderer if needed
+            showLeadingRests: true,   // ...including the silence BEFORE a measure's
+                                      // first note (a bar starting on beat 2 draws a
+                                      // quarter rest). Same switch TablEdit's
+                                      // "Automatic rests" is; set false to keep only
+                                      // the gaps that follow a note
             uniformMeasureWidth: true, // Every measure gets the SAME slot, whatever
                                       // its tick length, so barlines line up row
                                       // over row (plan tab-editor-input-parity §7:
@@ -1093,15 +1119,21 @@ export class TabRenderer {
                 }
             }
 
-            // Rest glyphs in gaps AFTER duration-carrying notes.
-            // TablEdit's tab staff hides rests, leaving the rhythm
-            // implied by the written durations alone — we draw them
-            // (options.showRests, default on).
+            // Rest glyphs for the measure's silences — the leading one
+            // and every gap after a duration-carrying note. TablEdit's
+            // tab staff hides rests, leaving the rhythm implied by the
+            // written durations alone; we draw them (options.showRests,
+            // default on). Each span is decomposed into standard rest
+            // values largest-first, so the 1440 ticks automatic duration
+            // leaves after two eighths in a 4/4 bar read as a half rest
+            // then a quarter rest, not one un-notatable blob.
             if (opt.showRests && TabRenderer._bravuraReady && measure.events) {
                 const restY = opt.topMargin
                     + ((this.numStrings - 1) * opt.stringSpacing) / 2;
                 const restAreaStart = geom.noteX0 + geom.noteOffset;
-                for (const span of restSpansForMeasure(measure.events, geom.ticks)) {
+                const spans = restSpansForMeasure(measure.events, geom.ticks,
+                    { leading: opt.showLeadingRests !== false });
+                for (const span of spans) {
                     let t = span.start;
                     for (const g of restGlyphSequence(span.len)) {
                         const rx = restAreaStart + (t / geom.ticks) * geom.noteW + 6;
