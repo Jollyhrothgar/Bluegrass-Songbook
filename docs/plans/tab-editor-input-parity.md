@@ -378,6 +378,29 @@ Design decisions, with the reasoning:
    it already does for them. Same-string can be an option later for a
    fingerstyle guitar tabber; TablEdit's separate "ringing notes" is the
    right home for sustain anyway.
+
+   **The LAST note of a measure follows TablEdit's manual exactly**
+   (revised 2026-08-21, after Mike re-read `note_menu.shtml`): it takes
+   the same value as the interval that precedes it, clamped to the
+   barline, and only a note with nothing before it fills the bar.
+
+   > "if you enter a note at the very first position in a measure … it
+   > will automatically be displayed as a whole note. If you then move the
+   > cursor … an 1/8th note further on … TablEdit will automatically
+   > change the first note into an 1/8th note and assign the same value to
+   > the second note. If you then move the cursor to the beginning of the
+   > next measure (and 'Automatic rests' is on) TablEdit will enter a 1/4
+   > rest and a 1/2 rest to fill out the first measure. If you delete a
+   > note, TablEdit adjusts the duration of the remaining notes according
+   > to the same logic. If a note duration has been selected manually,
+   > deleting notes will have no effect on the remaining notes."
+
+   The first shipped version had the last note fill to the barline (see
+   decision 5 below), which turned "type two eighths and move on" into an
+   eighth followed by a dotted half — a rhythm nobody typed. The manual's
+   1/4-plus-1/2 rest is the tell: TablEdit leaves the note an eighth and
+   draws the silence. `J` (`fixDurations`) uses the same rule, so the
+   repair cannot disagree with what typing would have produced.
 3. **Recompute inside the facade transaction.** `insertNote` / `deleteNote`
    / `deleteTick` / `paste` take an `autoDuration` option; the facade
    recomputes `dur` for the affected measure's unpinned notes in the same
@@ -389,11 +412,18 @@ Design decisions, with the reasoning:
    recomputed. A reopened document is therefore fully pinned, which is the
    right default — you didn't type those. Explicit duration keys on a note
    (P1-2) pin it.
-5. **Trailing silence can't be expressed** — the last note fills to the
-   barline because OTF has no rests. That is the one real loss versus
-   TablEdit. The escape hatch is P1-2: park on the note, press `q`, it's a
-   pinned quarter. Drawing implied rests for *leading* gaps (TablEdit's
-   "Automatic rests") is a renderer nicety for later.
+5. ~~**Trailing silence can't be expressed** — the last note fills to the
+   barline because OTF has no rests.~~ **Superseded 2026-08-21.** OTF
+   still stores no rests, but it does not need to: silence is the
+   measure's ticks minus the written durations, and the renderer already
+   draws it (`restSpansForMeasure` / `restGlyphSequence`, decomposed into
+   standard values largest-first — 1440 ticks is a half rest then a
+   quarter rest). The leading gap, which this decision punted as "a
+   renderer nicety for later", is drawn now too: a bar whose music starts
+   on beat 2 gets its quarter rest. So "Automatic rests" is on, and the
+   last-note rule in decision 2 is what makes those rests appear. The
+   explicit-duration escape hatch (P1-2: park on the note, press `q`)
+   remains, for wanting a length that spacing does not imply.
 6. **A one-shot `J`-style "fix durations here"** (measure, or selection)
    that ignores pins is worth shipping in the same PR: it is the same
    function, and it repairs hand-entered tabs where someone forgot to
@@ -649,7 +679,7 @@ six slices plus fixes; frontend suite 105 files / 2,598 tests green.
 | P0 tie fix | `facade.setTie`; `tech: '~'` can no longer reach a document (load converts legacy `~` to `tie: true`) | triage verdict: ROOT FIX |
 | P0 binding table + honest help | `bindings.js` (104 actions), presets **tabledit** (default) and **vim**, help overlay / tooltips / context menu / menu bar all render from it; a test refuses browser-reserved chords | `Shift+A..J` not bound (collisions; refine window covers it) |
 | P0 square cursor, stems | one grid cell; stems 2.25 px in the editor (read view unchanged); flags redrawn as filled stem-down hooks | |
-| P1 auto-duration | `=`; column rule; session pins; `J` fix; `Ctrl+.` dotted, `Ctrl+3` triplet | fix-durations re-times tie continuations (found in validation) |
+| P1 auto-duration | `=`; column rule; session pins; `J` fix; `Ctrl+.` dotted, `Ctrl+3` triplet | fix-durations re-times tie continuations (found in validation). **Revised 2026-08-21**: the measure's last column takes the PRECEDING INTERVAL, not the rest of the bar (§6 decision 2, TablEdit's manual); leading + trailing silence now draws as split rest glyphs; toolbar split into captioned STEP / LENGTH rows with a live `.predicts-next` prediction under Auto |
 | P1 duration on existing notes | duration keys re-time the note at cursor; `<` `>` `*` | |
 | P1 effects after the fact | `h p s m c l n`, `F3`; `Ctrl+h/p//` kept; `Ctrl+T` gone | vim: `a` operator |
 | P1 measures | `Insert`/`Ctrl+m`, `Delete` on empty measure, `Alt+Insert/Delete` ripple, `r` repeat previous, walk-past-end appends | |

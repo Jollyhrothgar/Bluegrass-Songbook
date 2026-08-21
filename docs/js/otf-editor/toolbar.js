@@ -14,6 +14,21 @@
 //    CURRENT note has, while `.active` stays what the NEXT note will
 //    get. Two classes, no layout change — an outline, never a border
 //    width, so nothing moves when the cursor does.
+//
+// 3. **STEP and LENGTH are two captioned rows, not one flat palette.**
+//    They were "Duration" and "Grid", side by side, and nothing on
+//    screen said which one moved the cursor and which one sized the
+//    note — the single most common confusion in the first session with
+//    automatic duration on, where the two really are different inputs
+//    (plan §6: under auto the GRID is the rhythm input). Three outline
+//    states now live on the LENGTH row, and they never mean the same
+//    thing:
+//
+//      .active        (filled)          what the next typed note gets
+//      .reflects-note (solid outline)   what the note under the cursor IS
+//      .predicts-next (dashed outline)  under Auto only: what the rule
+//                                       would give a note typed right
+//                                       here, live on every cursor move
 
 import { DURATIONS, DOTTED_DURATIONS, EditorMode } from './state.js';
 import { keyFor, prettyKeys, getPreset, onPresetChange } from './bindings.js';
@@ -86,6 +101,16 @@ export function durationReflects(noteDur, buttonDur) {
 }
 
 /**
+ * Which LENGTH button the automatic-duration PREDICTION lands on.
+ * Same mapping as `durationReflects` — a predicted 360 points at `1/8`
+ * (and the `Dot` latch), 160 at the triplet button — because the two
+ * outlines have to agree about what a value "is". A prediction the
+ * palette has no button for (an odd gap like 1800) simply outlines
+ * nothing; the status bar still prints the number.
+ */
+export const durationPredicts = durationReflects;
+
+/**
  * Editor Toolbar Component
  */
 export class EditorToolbar {
@@ -117,6 +142,7 @@ export class EditorToolbar {
         this._onGridToggle = this._onGridToggle.bind(this);
         this._onTracksChange = this._onTracksChange.bind(this);
         this._onNoteContextChange = this._onNoteContextChange.bind(this);
+        this._onPredictionChange = this._onPredictionChange.bind(this);
     }
 
     /**
@@ -134,32 +160,42 @@ export class EditorToolbar {
                 <div class="mode-indicator"></div>
             </div>
             <div class="toolbar-separator"></div>
-            <div class="toolbar-section duration-section">
-                <span class="toolbar-label">Duration</span>
-                <div class="button-group duration-buttons"></div>
-                <button class="toolbar-button auto-duration-button">
-                    <span class="button-content">Auto</span>
-                </button>
-                <button class="toolbar-button dotted-button">
-                    <span class="button-content">Dot</span>
-                </button>
-                <button class="toolbar-button triplet-button">
-                    <span class="button-content">3</span>
-                </button>
-                <button class="toolbar-button auto-advance-button">
-                    <span class="button-icon">⇥</span>
-                </button>
-                <button class="toolbar-button rest-button">
-                    <span class="button-content">Rest</span>
-                </button>
-            </div>
-            <div class="toolbar-separator"></div>
-            <div class="toolbar-section grid-section">
-                <span class="toolbar-label">Grid</span>
-                <div class="button-group grid-buttons"></div>
-                <button class="toolbar-button grid-toggle-button">
-                    <span class="button-icon">▦</span>
-                </button>
+            <div class="toolbar-rows">
+                <div class="toolbar-row step-row">
+                    <div class="toolbar-section grid-section">
+                        <span class="toolbar-label">Step</span>
+                        <div class="button-group grid-buttons"></div>
+                        <button class="toolbar-button grid-toggle-button">
+                            <span class="button-icon">▦</span>
+                        </button>
+                        <button class="toolbar-button rest-button">
+                            <span class="button-content">Rest</span>
+                        </button>
+                    </div>
+                    <span class="toolbar-caption step-caption"
+                        >how far the cursor moves; what the ruler draws</span>
+                </div>
+                <div class="toolbar-row length-row">
+                    <div class="toolbar-section duration-section">
+                        <span class="toolbar-label">Length</span>
+                        <button class="toolbar-button auto-duration-button">
+                            <span class="button-content">Auto</span>
+                        </button>
+                        <span class="toolbar-divider"></span>
+                        <div class="button-group duration-buttons"></div>
+                        <button class="toolbar-button dotted-button">
+                            <span class="button-content">Dot</span>
+                        </button>
+                        <button class="toolbar-button triplet-button">
+                            <span class="button-content">³</span>
+                        </button>
+                        <button class="toolbar-button auto-advance-button">
+                            <span class="button-icon">⇥</span>
+                        </button>
+                    </div>
+                    <span class="toolbar-caption length-caption"
+                        >what a typed note gets</span>
+                </div>
             </div>
             <div class="toolbar-separator"></div>
             <div class="toolbar-section articulation-section">
@@ -303,6 +339,7 @@ export class EditorToolbar {
         this._updateModeIndicator();
         this._updateEntryLatches();
         this._updateNoteReflection();
+        this._updatePrediction();
 
         container.appendChild(this.element);
     }
@@ -418,6 +455,37 @@ export class EditorToolbar {
                 color: var(--text-muted, #666);
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
+                min-width: 46px;
+            }
+
+            /* STEP over LENGTH: two rows, each captioned, because the
+               two answer different questions and used to sit side by
+               side answering neither out loud. */
+            .toolbar-rows {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .toolbar-row {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+
+            .toolbar-caption {
+                font-size: 10px;
+                line-height: 1.2;
+                color: var(--text-muted, #888);
+                opacity: 0.85;
+            }
+
+            .toolbar-divider {
+                width: 1px;
+                height: 18px;
+                background: var(--border, #ddd);
+                margin: 0 2px;
             }
 
             .button-group {
@@ -463,6 +531,15 @@ export class EditorToolbar {
                be). An inset shadow, so nothing shifts by a pixel. */
             .toolbar-button.reflects-note {
                 box-shadow: inset 0 0 0 2px var(--otf-reflect, #6f42c1);
+            }
+
+            /* Under Auto, the LENGTH row shows what the rule WOULD give
+               a note typed at the cursor. Dashed, because it is a
+               prediction and not a commitment — and drawn inside, so it
+               can coexist with .reflects-note without moving anything. */
+            .toolbar-button.predicts-next {
+                outline: 2px dashed var(--otf-predict, #6f42c1);
+                outline-offset: -3px;
             }
 
             .toolbar-button:disabled {
@@ -529,8 +606,19 @@ export class EditorToolbar {
                     padding: 6px 8px;
                 }
 
-                .toolbar-label {
+                /* The captions go, and so do the labels that were only
+                   ever decoration. STEP / LENGTH STAY — they are the
+                   only thing telling the two rows apart. */
+                .toolbar-caption,
+                .toolbar-section:not(.grid-section):not(.duration-section)
+                    .toolbar-label {
                     display: none;
+                }
+
+                .grid-section > .toolbar-label,
+                .duration-section > .toolbar-label {
+                    min-width: 0;
+                    font-size: 10px;
                 }
 
                 .toolbar-button {
@@ -651,6 +739,14 @@ export class EditorToolbar {
         // State reflection: which note is under the cursor, and what it is
         this.state.on('cursorMove', this._onNoteContextChange);
         this.state.on('change', this._onNoteContextChange);
+
+        // The automatic-duration PREDICTION moves with the cursor and
+        // with the document (a new onset next door changes the gap), and
+        // appears/disappears with the Auto latch itself.
+        this.state.on('cursorMove', this._onPredictionChange);
+        this.state.on('change', this._onPredictionChange);
+        this.state.on('autoDurationChange', this._onPredictionChange);
+        this.state.on('durationChange', this._onPredictionChange);
 
         // Tooltips follow the preset
         this._unsubPreset = onPresetChange(() => this._refreshKeyLabels());
@@ -795,6 +891,35 @@ export class EditorToolbar {
         this._updateNoteReflection();
     }
 
+    /** Anything that could change what the rule predicts for this slot. */
+    _onPredictionChange() {
+        this._updatePrediction();
+    }
+
+    /**
+     * The LENGTH row's live prediction (`.predicts-next`, dashed): under
+     * Auto, what `state.effectiveDuration()` says a note typed at the
+     * cursor would sound for. TablEdit's palette "dynamically displays
+     * the automatic duration of the note that would be inserted" — this
+     * is that, and it is the only way to see the manual's rule (the last
+     * note takes the PRECEDING interval) before committing to it.
+     *
+     * Nothing is outlined when a duration is chosen: there is no
+     * prediction then, only the choice, and `.active` already shows it.
+     */
+    _updatePrediction() {
+        const auto = this.state.isAutoDuration;
+        const predicted = auto ? this.state.effectiveDuration() : null;
+        for (const [duration, button] of this.durationButtons) {
+            button.classList.toggle('predicts-next',
+                auto && durationPredicts(predicted, duration));
+        }
+        this.dottedButton?.classList.toggle('predicts-next',
+            auto && predicted != null && DOTTED_DURATIONS.has(predicted));
+        this.tripletButton?.classList.toggle('predicts-next',
+            auto && predicted === DURATIONS.tripletEighth);
+    }
+
     /**
      * Update duration button selection
      */
@@ -895,6 +1020,10 @@ export class EditorToolbar {
         this.state.off('trackChange', this._onTracksChange);
         this.state.off('cursorMove', this._onNoteContextChange);
         this.state.off('change', this._onNoteContextChange);
+        this.state.off('cursorMove', this._onPredictionChange);
+        this.state.off('change', this._onPredictionChange);
+        this.state.off('autoDurationChange', this._onPredictionChange);
+        this.state.off('durationChange', this._onPredictionChange);
         this._unsubPreset?.();
         this._unsubPreset = null;
         this._titled = [];

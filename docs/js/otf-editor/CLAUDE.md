@@ -301,8 +301,30 @@ Two editor options carry a wrapper's answer into the shared component:
 | `fileActions: [{label, run, disabled?, action?}]` | Download OTF alone (`action: 'edit.save'` prints its key) | whoever owns the session's buttons — the song page's Submit / Download / Cancel / Done group belongs here |
 | `hostTransport: true` | `false` | a wrapper that already shows ▶/⏹/BPM for this document (the song page's bottom band, `tab-edit-band.js`). It drops the status bar's transport so one tab doesn't get three sets of playback controls; Mode/M/Beat/String/Duration/Text and the help button stay |
 
+**STEP and LENGTH are two captioned rows** (`.toolbar-row.step-row` and
+`.toolbar-row.length-row`), not the old side-by-side "Duration" and
+"Grid" groups. Nothing on screen used to say which knob moved the cursor
+and which sized the note — the commonest first-session confusion, and
+under automatic duration they really are different inputs (plan §6: the
+grid IS the rhythm input):
+
+| row | holds | caption |
+|---|---|---|
+| **STEP** (`.grid-section`) | `.grid-buttons` (1/4 · 1/8 · 1/16 · 1/32 · Trip), `▦` grid toggle, **`Rest`** | "how far the cursor moves; what the ruler draws" |
+| **LENGTH** (`.duration-section`) | `Auto`, `.duration-buttons` (1 · 1/2 · 1/4 · 1/8 · 1/16 · 1/32), `Dot`, `³`, `⇥` | "what a typed note gets" |
+
+`Rest` lives with STEP because that is what it does — advance one step
+without a note. Captions are `.toolbar-caption` (small, muted, hidden on
+phones; the STEP / LENGTH labels stay, they are what tells the rows
+apart). Every class the e2e suite names is unchanged:
+`.duration-buttons .button-symbol` is still `1 1/2 1/4 1/8 1/16 1/32` in
+that order, `.rest-button`, `.grid-buttons`, `.grid-btn[data-subdivision]`,
+`.toolbar-section`, `.mode-indicator`.
+
 **The palettes reflect the note under the cursor** — TablEdit's purple
-border, and the reason post-hoc duration/effect editing is usable at all:
+border, and the reason post-hoc duration/effect editing is usable at all.
+Three outline states live on the LENGTH row and never mean the same
+thing:
 
 - `.active` (filled) = the ENTRY state: what the NEXT note gets.
 - `.reflects-note` (inset outline) = what the note UNDER THE CURSOR
@@ -311,6 +333,18 @@ border, and the reason post-hoc duration/effect editing is usable at all:
   160 ticks outlines the triplet button; `tech`/`tie` outline their
   articulation button. An outline, never a border width — nothing moves
   when the cursor does.
+- `.predicts-next` (dashed outline) = **under `Auto` only**, the live
+  prediction: the value `state.effectiveDuration()` maps to for the slot
+  the cursor is on, recomputed on `cursorMove`, `change`,
+  `durationChange` and `autoDurationChange`. Dotted and triplet
+  predictions light the same buttons `.reflects-note` would
+  (`durationPredicts` is `durationReflects`); a prediction with no button
+  (an odd gap like 1800) outlines nothing and the status bar still prints
+  the number. Choosing a duration clears every dashed outline — there is
+  no prediction then, only the choice. This is TablEdit's palette
+  "dynamically displays the automatic duration of the note that would be
+  inserted", and the only way to see the last-note rule before committing
+  to it.
 - `.pending` (orange) is still "armed for the next note": clicking `h`,
   `p`, `/`, `x` or `b` on an EMPTY slot arms it, on a note applies the
   binding action. Tie always goes to the action (it needs a real
@@ -359,12 +393,38 @@ position. Plan: `docs/plans/tab-editor-input-parity.md` §3, §6.
 | `insertNote({autoDuration, pins, autoEntered})`, and the same option on `deleteNote` / `deleteTick` / `paste` | automatic via `state.isAutoDuration` | — | yes (note + neighbours in ONE step) |
 
 **Automatic duration** (`state.currentDuration === null`) is TablEdit's
-"no explicit current duration". A note's `dur` is the gap to the next
-onset on ANY string of the same track within the same measure, else to
-the measure end — the *column* rule, not the same-string rule TablEdit's
-manual describes, because same-string would make every 5th-string note of
-a roll a dotted quarter and the corpus says TablEdit users write rolls as
-eighths (95,702 banjo notes: eighths 63.6%, dotted quarters 0.1%).
+"no explicit current duration". Two halves:
+
+- **Every note that has a later onset in its measure**: `dur` is the gap
+  to that onset on ANY string of the same track — the *column* rule, not
+  the same-string rule TablEdit's manual describes, because same-string
+  would make every 5th-string note of a roll a dotted quarter and the
+  corpus says TablEdit users write rolls as eighths (95,702 banjo notes:
+  eighths 63.6%, dotted quarters 0.1%).
+- **The measure's LAST sounding column** takes the same value as the
+  interval that precedes it (`lastColumnDuration`, exported), clamped so
+  it can never cross the barline; only a column with nothing before it
+  fills to the barline. This half is the manual verbatim
+  (`note_menu.shtml`, "Automatic duration"):
+
+  > "if you enter a note at the very first position in a measure … it
+  > will automatically be displayed as a whole note. If you then move the
+  > cursor … an 1/8th note further on … TablEdit will automatically
+  > change the first note into an 1/8th note and assign the same value to
+  > the second note. If you then move the cursor to the beginning of the
+  > next measure (and 'Automatic rests' is on) TablEdit will enter a 1/4
+  > rest and a 1/2 rest to fill out the first measure. If you delete a
+  > note, TablEdit adjusts the duration of the remaining notes according
+  > to the same logic. If a note duration has been selected manually,
+  > deleting notes will have no effect on the remaining notes."
+
+  So typing two notes an eighth apart in a 4/4 bar leaves TWO EIGHTHS and
+  1440 ticks of silence — not an eighth and a dotted half. The silence is
+  real, and the renderer draws it: `restSpansForMeasure` +
+  `restGlyphSequence` in `renderers/tablature.js` decompose every gap
+  into standard rest values largest-first (1440 → a half rest then a
+  quarter rest) and now draw the LEADING silence of a measure too, which
+  is TablEdit's "Automatic rests". Chords in a column share the value.
 
 - **Never recompute from the keyboard layer.** The facade does it inside
   the same `_mutate`, so one `u` takes back the note *and* the neighbour's
@@ -384,9 +444,17 @@ eighths (95,702 banjo notes: eighths 63.6%, dotted quarters 0.1%).
   rhythm input (plan §6). Stepping by the prediction instead walked past
   the very slots about to be typed into (an empty 2/4 bar predicts a
   dotted quarter, so `Tab` jumped a measure).
-- Measure-bounded: auto never ties across a barline, so the last note
-  fills to the barline. OTF has no rests, so trailing silence needs an
-  explicit duration (which pins the note).
+- Measure-bounded: auto never ties across a barline. OTF stores no
+  rests, so the trailing silence is not IN the document — it is what the
+  measure's ticks minus the written durations come to, and the renderer
+  is what makes it visible. Wanting a specific length for the last note
+  regardless of spacing is still the explicit-duration escape hatch
+  (which pins it).
+- `facade.autoDurationAt(pos)` is the single source for the prediction:
+  gap to the next onset → else the preceding interval clamped to the
+  barline → else the rest of the measure. `fixDurations` (`J`) and note
+  entry both go through `_recomputeAuto`, so `J` cannot disagree with
+  what typing would have produced.
 
 **A refusal is SAID, not swallowed.** `editor.flashStatus(msg)` writes
 into the status bar's `.status-flash` (`role="status"`, cleared after a

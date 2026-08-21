@@ -1302,18 +1302,27 @@ describe('EditingFacade — automatic duration', () => {
         const s = sets();
         // Three triplet eighths and the downbeat that closes them: on a
         // 160 grid the gaps ARE triplets, with no triplet MODE anywhere.
+        // The fourth is the measure's LAST column, so it takes the
+        // interval before it (160) — TablEdit's "assign the same value
+        // to the second note" — and the bar's remaining 1440 ticks are
+        // silence the renderer draws as rests.
         [0, 160, 320, 480].forEach((tick, i) => auto(f, 1, tick, 3 - (i % 3), 0, s));
-        expect(durs(f)).toEqual([160, 160, 160, 1440]);
+        expect(durs(f)).toEqual([160, 160, 160, 160]);
     });
 
-    it('a lone note fills the measure, and shortens when another lands', () => {
+    // The manual, verbatim: "if you enter a note at the very first
+    // position in a measure ... it will automatically be displayed as a
+    // whole note. If you then move the cursor ... an 1/8th note further
+    // on ... TablEdit will automatically change the first note into an
+    // 1/8th note and assign the same value to the second note."
+    it('a lone note fills the measure; the second one gets the SAME value', () => {
         const f = new EditingFacade(banjoDoc());
         const s = sets();
         auto(f, 1, 0, 3, 0, s);
         expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(1920);
         auto(f, 1, 240, 2, 1, s);
         expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(240);
-        expect(f._findNote({ measure: 1, tick: 240, string: 2 }).note.dur).toBe(1680);
+        expect(f._findNote({ measure: 1, tick: 240, string: 2 }).note.dur).toBe(240);
     });
 
     it('deleting the second note re-extends the first', () => {
@@ -1355,7 +1364,10 @@ describe('EditingFacade — automatic duration', () => {
         f.setNoteDuration({ measure: 1, tick: 0, string: 3 }, 1920);
         auto(f, 1, 240, 2, 1, s);
         expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(1920);
-        expect(f._findNote({ measure: 1, tick: 240, string: 2 }).note.dur).toBe(1680);
+        // The last-column rule reads the PRECEDING INTERVAL, which is a
+        // fact about spacing — pinning the note at tick 0 keeps its own
+        // duration at 1920 but does not change where it sits.
+        expect(f._findNote({ measure: 1, tick: 240, string: 2 }).note.dur).toBe(240);
     });
 
     it('a loaded document is never re-timed by auto', () => {
@@ -1397,7 +1409,7 @@ describe('EditingFacade — automatic duration', () => {
         ];
         const f = new EditingFacade(doc);
         expect(f.fixDurations(1)).toBe(true);
-        expect(durs(f)).toEqual([240, 240, 1440]);
+        expect(durs(f)).toEqual([240, 240, 240]);
         f.undo();
         expect(durs(f)).toEqual([1920, 1920, 60]);
     });
@@ -1430,5 +1442,169 @@ describe('EditingFacade — automatic duration', () => {
             { autoDuration: true, pins: s.pins, autoEntered: s.autoEntered });
         expect(f._findNote({ measure: 1, tick: 960, string: 1 }).note.dur).toBe(120);
         expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(960);
+    });
+});
+
+// ----------------------------------------------------------------------
+// The last column takes the PRECEDING INTERVAL — TablEdit's manual,
+// walked through sentence by sentence (note_menu.shtml, "Automatic
+// duration"). This is the rule the whole feature is judged against, so
+// the scenario is written out rather than summarised.
+// ----------------------------------------------------------------------
+
+describe('EditingFacade — automatic duration follows the manual', () => {
+    const sets = () => ({ pins: new Set(), autoEntered: new Set() });
+    const auto = (f, tick, string, s) => f.insertNote({
+        measure: 1, tick, string, fret: 0,
+        autoDuration: true, pins: s.pins, autoEntered: s.autoEntered,
+    });
+    const durs = (f, measure = 1) => f.getMeasure(measure).events
+        .flatMap(e => e.notes.map(n => n.dur));
+    /** Ticks in the bar that nothing sounds through. */
+    const silence = (f, measure = 1) => f.ticksFor(measure)
+        - f.getMeasure(measure).events
+            .reduce((sum, e) => sum + Math.max(...e.notes.map(n => n.dur)), 0);
+
+    it('"a note at the very first position ... displayed as a whole note"', () => {
+        const f = new EditingFacade(banjoDoc());
+        auto(f, 0, 3, sets());
+        expect(durs(f)).toEqual([1920]);
+    });
+
+    it('"change the first note into an 1/8th ... assign the same value to the second"', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 240, 2, s);
+        expect(durs(f)).toEqual([240, 240]);
+    });
+
+    it('"a 1/4 rest and a 1/2 rest to fill out the first measure" — 1440 ticks of it', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 240, 2, s);
+        // Moving on to the next measure changes nothing about this one:
+        // the two eighths stay eighths and the bar is 1440 ticks short.
+        expect(silence(f)).toBe(1440);
+    });
+
+    it('"if you delete a note, TablEdit adjusts the remaining notes"', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 240, 2, s);
+        f.deleteNote({ measure: 1, tick: 240, string: 2 }, 'banjo',
+            { autoDuration: true, ...s });
+        expect(durs(f)).toEqual([1920]);
+        expect(silence(f)).toBe(0);
+    });
+
+    it('"if a note duration has been selected manually, deleting has no effect"', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 240, 2, s);
+        // Pin the first note by hand at a quarter, the escape hatch the
+        // plan calls P1-2 (park on it, press `q`).
+        f.setNoteDuration({ measure: 1, tick: 0, string: 3 }, 480);
+        s.autoEntered.delete('1:0:3');
+        s.pins.add('1:0:3');
+        f.deleteNote({ measure: 1, tick: 240, string: 2 }, 'banjo',
+            { autoDuration: true, ...s });
+        expect(durs(f)).toEqual([480]);
+    });
+
+    it('three notes a step apart are three of that step', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        [0, 240, 480].forEach((tick, i) => auto(f, tick, 3 - i, s));
+        expect(durs(f)).toEqual([240, 240, 240]);
+    });
+
+    it('two notes a quarter apart are two quarters — the interval sets the last', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 480, 2, s);
+        expect(durs(f)).toEqual([480, 480]);
+        expect(silence(f)).toBe(960);
+    });
+
+    it('a LONE note mid-measure still fills to the barline', () => {
+        // "in relation to the beginning and end of the measure": with
+        // nothing before it, there is no preceding interval to copy.
+        const f = new EditingFacade(banjoDoc());
+        auto(f, 480, 3, sets());
+        expect(durs(f)).toEqual([1440]);
+    });
+
+    it('the preceding interval never crosses the barline', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 1800, 2, s);   // 1800 ticks apart, 120 left in the bar
+        expect(durs(f)).toEqual([1800, 120]);
+    });
+
+    it('a chord in the last column shares the one value', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 240, 2, s);
+        auto(f, 240, 1, s);
+        expect(durs(f)).toEqual([240, 240, 240]);
+    });
+
+    it('J (fixDurations) applies exactly the same rule', () => {
+        const doc = banjoDoc();
+        doc.notation.banjo[0].events = [
+            { tick: 0, notes: [{ s: 3, f: 0, dur: 1920 }] },
+            { tick: 240, notes: [{ s: 2, f: 1, dur: 1920 }] },
+        ];
+        const f = new EditingFacade(doc);
+        expect(f.fixDurations(1)).toBe(true);
+        expect(durs(f)).toEqual([240, 240]);
+    });
+
+    describe('autoDurationAt — the prediction the palette and status bar show', () => {
+        it('an empty bar predicts the whole bar', () => {
+            const f = new EditingFacade(banjoDoc());
+            expect(f.autoDurationAt({ measure: 1, tick: 0 })).toBe(1920);
+        });
+
+        it('the slot after the only note predicts the interval to it', () => {
+            const f = new EditingFacade(banjoDoc());
+            auto(f, 0, 3, sets());
+            expect(f.autoDurationAt({ measure: 1, tick: 240 })).toBe(240);
+            expect(f.autoDurationAt({ measure: 1, tick: 480 })).toBe(480);
+            expect(f.autoDurationAt({ measure: 1, tick: 160 })).toBe(160);
+        });
+
+        it('a slot BEFORE a note still predicts the gap to it', () => {
+            const f = new EditingFacade(banjoDoc());
+            auto(f, 480, 3, sets());
+            expect(f.autoDurationAt({ measure: 1, tick: 0 })).toBe(480);
+        });
+
+        it('a slot with nothing before it predicts the rest of the bar', () => {
+            const f = new EditingFacade(banjoDoc());
+            expect(f.autoDurationAt({ measure: 1, tick: 480 })).toBe(1440);
+        });
+
+        it('the preceding interval is clamped to the barline', () => {
+            const f = new EditingFacade(banjoDoc());
+            auto(f, 0, 3, sets());
+            expect(f.autoDurationAt({ measure: 1, tick: 1860 })).toBe(60);
+        });
+
+        it('predicts for the column it would JOIN, not the one it sits on', () => {
+            const f = new EditingFacade(banjoDoc());
+            const s = sets();
+            auto(f, 0, 3, s);
+            auto(f, 240, 2, s);
+            // adding to the existing last column: same preceding interval
+            expect(f.autoDurationAt({ measure: 1, tick: 240 })).toBe(240);
+        });
     });
 });

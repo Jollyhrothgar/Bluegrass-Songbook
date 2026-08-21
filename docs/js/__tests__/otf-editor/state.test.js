@@ -1302,7 +1302,9 @@ describe('EditorState — automatic duration', () => {
         state.setAutoDuration(true);
         state.cursor.measure = 1;
         expect(state.fixDurationsAtCursor()).toBe(true);
-        expect(state.getMeasure(1).events.map(e => e.notes[0].dur)).toEqual([240, 1680]);
+        // J applies the SAME rule entry does: the last column takes the
+        // interval before it, not the rest of the bar.
+        expect(state.getMeasure(1).events.map(e => e.notes[0].dur)).toEqual([240, 240]);
         // now auto-managed: a new onset re-times them again
         state.cursor.tick = 480;
         state.cursor.string = 1;
@@ -1330,6 +1332,82 @@ describe('EditorState — automatic duration', () => {
         state.cursor.tick = 0;
         state.cursor.string = 3;
         expect(state.getNoteAtCursor().dur).toBe(1920);
+    });
+
+    // ------------------------------------------------------------------
+    // The manual's scenario, driven the way a person drives it: type,
+    // move the cursor one step, type. Everything below is what the
+    // status bar prints and the LENGTH row outlines.
+    // ------------------------------------------------------------------
+
+    const durs = () => state.getMeasure(1).events
+        .flatMap(e => e.notes.map(n => n.dur));
+
+    it('type at beat 1, step an eighth, type again → two eighths', () => {
+        state.setGridSubdivision(DURATIONS.eighth);
+        state.cursor.tick = 0;
+        expect(state.effectiveDuration()).toBe(1920);   // predicts a whole
+        state.insertNote(0);
+        expect(durs()).toEqual([1920]);
+
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        expect(state.effectiveDuration()).toBe(240);    // predicts an eighth
+        state.insertNote(1);
+        expect(durs()).toEqual([240, 240]);
+    });
+
+    it('the prediction after the last note is the preceding interval', () => {
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.insertNote(1);
+        state.cursor.tick = 480;
+        expect(state.effectiveDuration()).toBe(240);
+        state.cursor.tick = 720;
+        expect(state.effectiveDuration()).toBe(480);
+    });
+
+    it('the prediction is the whole bar only when nothing sounds in it', () => {
+        state.cursor.measure = 2;
+        state.cursor.tick = 960;
+        expect(state.effectiveDuration()).toBe(960);
+    });
+
+    it('deleting the second note re-extends the first to the whole bar', () => {
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        state.insertNote(1);
+        expect(state.deleteNote()).toBe(true);
+        expect(durs()).toEqual([1920]);
+    });
+
+    it('a hand-set duration survives the delete (the manual\'s last sentence)', () => {
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        state.insertNote(1);
+        // park on the first note and choose a quarter: that pins it
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+        state.setDuration(DURATIONS.quarter);
+        state.setAutoDuration(true);
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        expect(state.deleteNote()).toBe(true);
+        expect(durs()).toEqual([480]);
+    });
+
+    it('leaving auto emits autoDurationChange, and so does returning', () => {
+        const seen = [];
+        state.on('autoDurationChange', v => seen.push(v));
+        state.setAutoDuration(false);
+        state.setDuration(DURATIONS.quarter);   // already explicit: no event
+        state.setAutoDuration(true);
+        expect(seen).toEqual([false, true]);
     });
 });
 

@@ -45,6 +45,24 @@ export function durationKey(measure, tick, string) {
 }
 
 /**
+ * The rule for a measure's LAST sounding column (TablEdit's manual — see
+ * "Automatic duration" further down): it takes the same value as the
+ * interval that precedes it, and only a column with nothing before it
+ * fills to the barline. Never crosses the barline: when the preceding
+ * interval would, what is left of the measure wins.
+ *
+ * @param {number} tick - the last column's onset
+ * @param {number|undefined} prevTick - the column before it, if any
+ * @param {number} cap - the measure's own tick length
+ * @returns {number} ticks
+ */
+export function lastColumnDuration(tick, prevTick, cap) {
+    const remaining = Math.max(0, cap - tick);
+    if (prevTick == null) return remaining;
+    return Math.min(tick - prevTick, remaining);
+}
+
+/**
  * Validate a technique value on its way into the document.
  * `~` is translated by the callers (it means "tie", not a tech); every
  * other unknown value throws rather than landing a symbol the renderer
@@ -1152,19 +1170,38 @@ export class EditingFacade {
     // Automatic duration (TablEdit's "no explicit current duration")
     //
     // THE COLUMN RULE: a note's `dur` is the gap to the next onset on ANY
-    // string of the same track, within the same measure, and to the
-    // measure end when there is none. Not the same-string gap TablEdit's
-    // manual describes — that would make every 5th-string note of a
-    // Scruggs roll a dotted quarter, and what TablEdit users actually
-    // WRITE (95,702 notes across every 5-string banjo track in
-    // docs/data/tabs/) is eighths 63.6%, dotted quarters 0.1%. Rolls are
-    // eighths, so the column rule is the TablEdit-faithful one.
+    // string of the same track, within the same measure. Not the
+    // same-string gap TablEdit's manual describes — that would make every
+    // 5th-string note of a Scruggs roll a dotted quarter, and what
+    // TablEdit users actually WRITE (95,702 notes across every 5-string
+    // banjo track in docs/data/tabs/) is eighths 63.6%, dotted quarters
+    // 0.1%. Rolls are eighths, so the column rule is the TablEdit-faithful
+    // one.
     //
-    // Measure-bounded on purpose: auto never ties across a barline, so
-    // the last note of a measure fills to the barline. OTF has no rests,
-    // which makes trailing silence the one thing auto cannot express —
-    // the escape hatch is setting that note's duration explicitly, which
-    // pins it.
+    // THE LAST COLUMN IS DIFFERENT, and here we follow TablEdit's manual
+    // to the letter (note_menu.shtml, "Automatic duration"):
+    //
+    //   "if you enter a note at the very first position in a measure …
+    //    it will automatically be displayed as a whole note. If you then
+    //    move the cursor … an 1/8th note further on … TablEdit will
+    //    automatically change the first note into an 1/8th note and assign
+    //    the same value to the second note. If you then move the cursor to
+    //    the beginning of the next measure (and 'Automatic rests' is on)
+    //    TablEdit will enter a 1/4 rest and a 1/2 rest to fill out the
+    //    first measure."
+    //
+    // So the measure's last sounding column takes **the same value as the
+    // interval that precedes it** — not the rest of the bar. A lone
+    // column (nothing precedes it) is the one that fills to the barline,
+    // which is what makes the first note of an empty 4/4 bar a whole note.
+    // The preceding interval is clamped so it can never cross the barline:
+    // notes at 0 and 1800 leave the last one 120 ticks, not 1800.
+    //
+    // Measure-bounded on purpose: auto never ties across a barline. The
+    // silence the last note no longer covers is real — the renderer draws
+    // it as rests (`restSpansForMeasure` in renderers/tablature.js, the
+    // manual's "Automatic rests"), which is the half of TablEdit's
+    // sentence OTF itself cannot store.
     //
     // PINNING IS SESSION STATE, NEVER FORMAT. The document has no
     // "manual duration" flag and must not grow one, so the caller (the
@@ -1178,21 +1215,35 @@ export class EditingFacade {
     // ------------------------------------------------------------------
 
     /**
-     * What the column rule says a note at `pos` should sound for — the
-     * prediction the status bar and the ghost note show before you type.
+     * What the rule says a note at `pos` should sound for — the
+     * prediction the status bar, the ghost note and the LENGTH row's
+     * dashed outline show before you type.
+     *
+     * Three cases, in the order they are asked:
+     *   something sounds later in the measure → the gap to it
+     *   nothing does, but something sounds earlier → that preceding
+     *     interval (TablEdit's "assign the same value to the second
+     *     note"), clamped to the ticks left in the bar
+     *   nothing at all → the rest of the measure (the lone note that
+     *     shows as a whole note in an empty 4/4 bar)
+     *
      * @param {Object} pos - {measure, tick}
-     * @returns {number} ticks (the rest of the measure when nothing follows)
+     * @returns {number} ticks
      */
     autoDurationAt({ measure, tick }, trackId = this.trackId) {
         const cap = this.ticksFor(measure);
         const m = this.getMeasure(measure, trackId);
-        let next = cap;
+        let next = null;
+        let prev = null;
         for (const event of m?.events || []) {
-            if (event.tick > tick && event.notes.length > 0 && event.tick < next) {
-                next = event.tick;
-            }
+            if (!event.notes || event.notes.length === 0) continue;
+            if (event.tick > tick && (next === null || event.tick < next)) next = event.tick;
+            if (event.tick < tick && (prev === null || event.tick > prev)) prev = event.tick;
         }
-        return Math.max(0, next - tick);
+        if (next !== null) return Math.max(0, next - tick);
+        const remaining = Math.max(0, cap - tick);
+        if (prev === null) return remaining;
+        return Math.min(tick - prev, remaining);
     }
 
     /**
@@ -1217,7 +1268,9 @@ export class EditingFacade {
         let changed = false;
         for (let i = 0; i < sounding.length; i++) {
             const event = sounding[i];
-            const dur = (sounding[i + 1]?.tick ?? cap) - event.tick;
+            const dur = i + 1 < sounding.length
+                ? sounding[i + 1].tick - event.tick
+                : lastColumnDuration(event.tick, sounding[i - 1]?.tick, cap);
             if (dur <= 0) continue;
             if (absRange) {
                 const abs = base + event.tick;
