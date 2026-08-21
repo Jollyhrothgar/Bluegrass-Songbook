@@ -104,6 +104,57 @@ and work-view treats it as a hint next to position, never as the answer.
 Neither op touches it. `tablature_parts[].tracks` in the index is a *count*
 of non-percussion tracks, so neither op moves it either.
 
+### The selection is a RECTANGLE, not a column
+
+TablEdit's model, and the one the owner asked for: a selection has a
+WIDTH (ticks) and a HEIGHT (strings). Dragging along string 3 selects
+string 3 alone; dragging from string 3 down to string 5 selects 3, 4 and
+5 across every measure the drag crossed. Strings 1–2 are simply not in
+the block, and no op may touch them.
+
+| piece | what it is |
+|---|---|
+| `SelectionRange` | two `CursorPosition`s — each already carried a `string`; the rectangle is what finally reads it |
+| `state.selectionStrings()` | the inclusive span between the two endpoints' strings, low → high, clamped to the track (`[3,4,5]`) |
+| `state.selectionRange()` | `{startAbs, endAbs, strings}` — **the one thing every range op is built from** |
+| `cursor.js selectionBand(strings, geom)` | pure: the highlight's `{top, height}` in SVG units, from the renderer's own `topMargin` / `stringSpacing` |
+
+- **The height comes from the ENDPOINTS, never from the tick
+  normalization.** `getNormalized` orders the range in time; a drag that
+  runs backwards in time still selects the same strings.
+- **Every facade range op already took `{strings}`** (`copyRange`,
+  `deleteRange`, `moveRange`, `setRangeDuration`, `scaleRangeDuration`,
+  `notesInRange`, `transposeRange`) — the state simply never passed it,
+  so every selection behaved as a full column. The wrappers that pass it
+  now: `copy`, `deleteSelection`, `applyDurationToSelection`,
+  `scaleSelectionDuration`, `transposeSelection`, the drag-move in
+  `editor.js`, and `applyTech` in `bindings.js` (effects over a
+  selection).
+- **Paste keeps each note's OWN string.** A block copied off strings 3–5
+  lands on strings 3–5 wherever the cursor is; the cursor's string is a
+  tick address, not a transposition.
+- **`fixDurations` is the one op the rectangle does NOT narrow.** The
+  column rule reads every string of the measure to decide a duration, so
+  re-timing "only strings 3–5" would compute durations from a phantom
+  document. `fixDurationsInSelection` honours the ticks and ignores the
+  height, deliberately.
+- **`Ctrl+A` is still the whole column** — it asks for the MEASURE, so
+  `select.measureOrAll` sets its own endpoints to string 1 and the last
+  string. Pressing it again takes the whole tab, all strings.
+- **Growing it**: `Shift+←/→` moves the end tick, `Shift+↑/↓` (and vim's
+  `j`/`k` in VISUAL) moves the end string. `cursor.moveString` drags the
+  selection end exactly the way `moveByTicks` always has — without that,
+  vim's `j` in VISUAL moved the crosshair and left the rectangle behind.
+- **Dragging**: the rectangle is anchored at the mousedown slot's string
+  and follows the pointer's string. Re-grabbing to MOVE a phrase now
+  requires the grab to be inside the band as well as the tick range —
+  grabbing string 1 under a strings-3–5 selection starts a new selection,
+  which is what it looks like it should do.
+- **The highlight is clipped to the band** (`renderSelection`, and the
+  dashed `renderMovePreview` with it). It used to be full staff height,
+  which is the same picture for every selection and therefore told you
+  nothing about what was about to be deleted.
+
 ### The binding table — `bindings.js` is the only place keys live
 
 `keyboard.js` is a **matcher**, not a switch statement: every behaviour is
@@ -240,8 +291,9 @@ position. Plan: `docs/plans/tab-editor-input-parity.md` §3, §6.
 | `setNoteDuration(pos, dur)` | `setDuration(d)` also re-times the note at the cursor and PINS it | no note there; already that duration | yes |
 | `setRangeDuration(start, end, dur, {strings})` | `applyDurationToSelection(d)` | range holds no notes | yes (one step) |
 | `scaleDuration(pos, factor)` | `scaleDurationAtCursor(f)` | no note; already clamped at 60 / 1920 | yes |
-| `scaleRangeDuration(start, end, factor)` | `scaleSelectionDuration(f)` | nothing in range moves | yes (one step) |
+| `scaleRangeDuration(start, end, factor, {strings})` | `scaleSelectionDuration(f)` | nothing in range moves | yes (one step) |
 | `transposeFret(pos, delta)` | `transposeFretAtCursor(d)` | no note; already at 0 or 24 | yes |
+| `transposeRange(start, end, delta, {strings})` | `transposeSelection(d)` — what `+`/`-` run when there IS a selection | the block is empty; delta 0; **any** note would leave 0..24 (ATOMIC: a single 24 refuses the whole `+1`, no partial move) | yes (one step) |
 | `moveNoteToString(pos, ±1)` | `moveNoteAcrossStrings(d)` (moves the cursor too, and emits `cursorMove` so the status bar's `String:` follows) | no such string; slot occupied; fret would leave 0..24; untuned track | yes |
 | `setTie(pos, on)` | `toggleTieAtCursor()` | turning ON with no same-string predecessor; clearing a tie that isn't set | yes |
 | `setArticulation(pos, null)` + `setTie(pos, false)` in one `transact` | `clearEffectsAtCursor()` — what `n` runs, TablEdit's N: `tech` AND `tie`, since neither op clears the other's field | the note carries neither | yes (one step) |
@@ -281,6 +333,14 @@ eighths (95,702 banjo notes: eighths 63.6%, dotted quarters 0.1%).
 - Measure-bounded: auto never ties across a barline, so the last note
   fills to the barline. OTF has no rests, so trailing silence needs an
   explicit duration (which pins the note).
+
+**A refusal is SAID, not swallowed.** `editor.flashStatus(msg)` writes
+into the status bar's `.status-flash` (`role="status"`, cleared after a
+few seconds) and reaches the binding layer as the `onStatus` hook on
+`ctx.hooks`. It exists because an atomic refusal changes nothing on
+screen — a block `+` that would push a note past fret 24 is
+indistinguishable from a dead key otherwise. It is a DOM node, never a
+native alert: see "No native dialogs" below.
 
 Entry-state flags the keyboard layer reads: `state.autoAdvance`
 (`toggleAutoAdvance()`, emits `autoAdvanceChange`), `state.lastTech`

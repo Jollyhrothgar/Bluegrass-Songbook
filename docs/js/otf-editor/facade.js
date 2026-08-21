@@ -850,6 +850,40 @@ export class EditingFacade {
     }
 
     /**
+     * Move EVERY note in a rectangular block by `delta` frets, as ONE
+     * undo step — the block form of `+`/`-`.
+     *
+     * All-or-nothing on purpose: if any note in the block would leave
+     * 0..24 the whole op is REFUSED (returns false, document untouched),
+     * because a block that half-moved is a silent corruption of the
+     * shape the user was transposing. `transposeFret` clamps a single
+     * note; a block cannot clamp without breaking its own intervals.
+     *
+     * @param {number} startAbs - inclusive
+     * @param {number} endAbs - exclusive
+     * @param {number} delta - frets
+     * @param {Object} options - {strings?: number[], trackId?: string}
+     * @returns {boolean} false when the block is empty, delta is 0, or
+     *   any note would land outside 0..24
+     */
+    transposeRange(startAbs, endAbs, delta, { strings = null, trackId = this.trackId } = {}) {
+        if (!Number.isFinite(delta) || delta === 0) return false;
+        const hits = this.notesInRange(startAbs, endAbs, { strings, trackId });
+        if (hits.length === 0) return false;
+        for (const { note } of hits) {
+            if (!Number.isFinite(note.f)) return false;
+            const next = note.f + delta;
+            if (next < 0 || next > 24) return false;
+        }
+        return this._mutate('Transpose block', () => {
+            for (const { note } of this.notesInRange(startAbs, endAbs, { strings, trackId })) {
+                note.f += delta;
+            }
+            return true;
+        });
+    }
+
+    /**
      * Re-string a note onto its neighbour, KEEPING ITS PITCH — the most
      * consistent cross-product expectation there is (Guitar Pro,
      * MuseScore and Soundslice all do it; TuxGuitar keeps the fret

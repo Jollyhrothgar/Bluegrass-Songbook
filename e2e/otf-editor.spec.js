@@ -148,9 +148,22 @@ test.describe('selection, clipboard, phrases', () => {
         await openDemo(page);
         await enterPhrase(page);
         const box = await staveBox(page);
-        await page.mouse.move(box.x + 40, box.y + 45);
+        // A selection is a RECTANGLE (see otf-editor/CLAUDE.md): the drag
+        // has to pass over the STRING the phrase was typed on, or it
+        // copies the empty strings it actually crossed. Ask the renderer
+        // where that string is rather than guessing an offset.
+        const y = await page.evaluate(() => {
+            const ed = document.querySelector('.otf-editor').__otfEditor;
+            const row = ed.cursor.renderer.rowData[0];
+            const opt = ed.cursor.renderer.options;
+            const rect = row.svg.getBoundingClientRect();
+            const vb = row.svg.viewBox.baseVal;
+            const ySvg = opt.topMargin + (ed.state.cursor.string - 1) * opt.stringSpacing;
+            return rect.top + ySvg * (rect.height / vb.height);
+        });
+        await page.mouse.move(box.x + 40, y);
         await page.mouse.down();
-        await page.mouse.move(box.x + 200, box.y + 45, { steps: 5 });
+        await page.mouse.move(box.x + 200, y, { steps: 5 });
         await page.mouse.up();
         await expect(page.locator('.editor-selection-rect').first()).toBeVisible();
         await expect(page.locator('.mode-indicator')).toContainText('VISUAL');

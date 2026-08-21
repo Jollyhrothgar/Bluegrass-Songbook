@@ -36,6 +36,10 @@ export const ABOUT_URL = 'js/otf-editor/DESIGN.md';
 // ----------------------------------------------------------------------
 const hasNote = (s) => !!s?.getNoteAtCursor?.();
 const hasSelection = (s) => !!s?.selection;
+// `+` / `-` act on the SELECTION when there is one, so the item is live
+// whenever either target exists — a rectangle with no note under the
+// cursor is still something to transpose.
+const hasNoteOrSelection = (s) => hasNote(s) || hasSelection(s);
 const hasClipboard = (s) => !!s?.clipboard;
 const hasText = (s) => !!s?.getAnnotationAtCursor?.();
 const canUndo = (s) => !!s?.history?.canUndo?.();
@@ -122,8 +126,8 @@ export const MENUS = [
             { action: 'finger.index', label: 'Index', when: hasNote },
             { action: 'finger.middle', label: 'Middle', when: hasNote },
             { separator: true },
-            { action: 'note.fretUp', label: 'Fret +1', when: hasNote },
-            { action: 'note.fretDown', label: 'Fret −1', when: hasNote },
+            { action: 'note.fretUp', label: 'Fret +1', when: hasNoteOrSelection },
+            { action: 'note.fretDown', label: 'Fret −1', when: hasNoteOrSelection },
             { action: 'note.restringUp', label: 'String above, same pitch', when: hasNote },
             { action: 'note.restringDown', label: 'String below, same pitch', when: hasNote },
         ],

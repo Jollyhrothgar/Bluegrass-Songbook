@@ -393,6 +393,10 @@ export function dispatchEditorEvent(editor, event) {
             state.transposeFretAtCursor(params.delta);
             break;
 
+        case 'transposeSelection':
+            state.transposeSelection(params.delta);
+            break;
+
         case 'moveNoteToString':
             state.cursor.measure = params.measure;
             state.cursor.tick = params.tick;

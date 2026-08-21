@@ -868,9 +868,42 @@ export class EditorState {
     }
 
     /**
+     * The STRINGS a selection covers: the inclusive span between the
+     * anchor's string and the moving end's string, low → high.
+     *
+     * A selection is a RECTANGLE (TablEdit), not a column: dragging
+     * along one string selects that string alone, and dragging down to
+     * string 5 selects 3,4,5. `Ctrl+A` is the one thing that still
+     * spans every string — it asks for the whole measure, so it sets
+     * its own endpoints to string 1 and the last string.
+     *
+     * Ordering comes from the ENDPOINTS' strings, never from the tick
+     * normalization: the rectangle's height is independent of which end
+     * came first in time.
+     *
+     * @returns {number[]|null} e.g. [3, 4, 5]
+     */
+    selectionStrings() {
+        if (!this.selection) return null;
+        const count = this.getStringCount();
+        const clamp = (s) => Math.max(1, Math.min(count, Number(s) || 1));
+        const a = clamp(this.selection.start.string);
+        const b = clamp(this.selection.end.string);
+        const lo = Math.min(a, b);
+        const hi = Math.max(a, b);
+        const out = [];
+        for (let s = lo; s <= hi; s++) out.push(s);
+        return out;
+    }
+
+    /**
      * Absolute [start, end) of the current selection, end-inclusive of
-     * the selected slot (the same convention copy/delete use).
-     * @returns {{startAbs: number, endAbs: number}|null}
+     * the selected slot (the same convention copy/delete use), plus the
+     * strings the rectangle covers.
+     *
+     * `strings` is what every range op is filtered by, so a two-string
+     * block never touches its neighbours.
+     * @returns {{startAbs: number, endAbs: number, strings: number[]}|null}
      */
     selectionRange() {
         if (!this.selection) return null;
@@ -879,6 +912,7 @@ export class EditorState {
         return {
             startAbs: this.facade.toAbs(start.measure, start.tick),
             endAbs: this.facade.toAbs(end.measure, end.tick) + 1,
+            strings: this.selectionStrings(),
         };
     }
 
@@ -891,9 +925,9 @@ export class EditorState {
         const range = this.selectionRange();
         if (!range) return false;
         const hits = this.facade.notesInRange(range.startAbs, range.endAbs,
-            { trackId: this.trackId });
+            { strings: range.strings, trackId: this.trackId });
         const ok = this.facade.setRangeDuration(range.startAbs, range.endAbs,
-            duration, { trackId: this.trackId }) !== false;
+            duration, { strings: range.strings, trackId: this.trackId }) !== false;
         if (ok) for (const hit of hits) this.pinDuration(hit);
         return ok;
     }
@@ -919,9 +953,9 @@ export class EditorState {
         const range = this.selectionRange();
         if (!range) return false;
         const hits = this.facade.notesInRange(range.startAbs, range.endAbs,
-            { trackId: this.trackId });
+            { strings: range.strings, trackId: this.trackId });
         const ok = this.facade.scaleRangeDuration(range.startAbs, range.endAbs,
-            factor, { trackId: this.trackId }) !== false;
+            factor, { strings: range.strings, trackId: this.trackId }) !== false;
         if (ok) for (const hit of hits) this.pinDuration(hit);
         return ok;
     }
@@ -941,7 +975,16 @@ export class EditorState {
         return ok;
     }
 
-    /** fixDurationsAtCursor over the selection. @returns {boolean} */
+    /**
+     * fixDurationsAtCursor over the selection.
+     *
+     * The one range op the rectangle does NOT narrow by string: the
+     * column rule that decides a note's duration reads every string of
+     * the measure, so re-timing "only strings 3–5" would compute
+     * durations from a phantom document. The tick range is honoured;
+     * the height is not.
+     * @returns {boolean}
+     */
     fixDurationsInSelection() {
         const range = this.selectionRange();
         if (!range) return false;
@@ -973,6 +1016,20 @@ export class EditorState {
             tick: this.cursor.tick,
             string: this.cursor.string,
         }, delta, this.trackId) !== false;
+    }
+
+    /**
+     * Move every note in the selection rectangle by `delta` frets, as
+     * one undo step. Atomic: refused outright (nothing moves) when any
+     * note in the block would leave 0..24.
+     * @returns {boolean} false with no selection, an empty block, or a
+     *   refusal
+     */
+    transposeSelection(delta) {
+        const range = this.selectionRange();
+        if (!range) return false;
+        return this.facade.transposeRange(range.startAbs, range.endAbs, delta,
+            { strings: range.strings, trackId: this.trackId }) !== false;
     }
 
     /**
@@ -1189,15 +1246,15 @@ export class EditorState {
 
     /**
      * Copy selection (visual mode) or the event at cursor to clipboard.
-     * Selection ranges are inclusive of the end tick.
+     * Selection ranges are inclusive of the end tick, and narrowed to
+     * the rectangle's strings. Paste keeps each note's OWN string, so a
+     * block copied off strings 3–5 lands back on strings 3–5.
      */
     copy() {
         if (this.selection) {
-            const { start, end } = this.selection.getNormalized(
-                (m, t) => this.facade.toAbs(m, t));
-            const startAbs = this.facade.toAbs(start.measure, start.tick);
-            const endAbs = this.facade.toAbs(end.measure, end.tick) + 1;
-            this.facade.copyRange(startAbs, endAbs, { trackId: this.trackId });
+            const range = this.selectionRange();
+            this.facade.copyRange(range.startAbs, range.endAbs,
+                { strings: range.strings, trackId: this.trackId });
         } else {
             const abs = this.facade.toAbs(this.cursor.measure, this.cursor.tick);
             this.facade.copyRange(abs, abs + 1, { trackId: this.trackId });
@@ -1220,11 +1277,9 @@ export class EditorState {
      */
     deleteSelection() {
         if (!this.selection) return false;
-        const { start, end } = this.selection.getNormalized(
-            (m, t) => this.facade.toAbs(m, t));
-        const startAbs = this.facade.toAbs(start.measure, start.tick);
-        const endAbs = this.facade.toAbs(end.measure, end.tick) + 1;
-        return this.facade.deleteRange(startAbs, endAbs, { trackId: this.trackId });
+        const range = this.selectionRange();
+        return this.facade.deleteRange(range.startAbs, range.endAbs,
+            { strings: range.strings, trackId: this.trackId });
     }
 
     /**

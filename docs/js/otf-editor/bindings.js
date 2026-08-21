@@ -381,7 +381,7 @@ function applyTech(ctx, tech) {
     const range = state.selection ? state.selectionRange() : null;
     if (range) {
         const hits = state.facade.notesInRange(range.startAbs, range.endAbs,
-            { trackId: state.trackId });
+            { strings: range.strings, trackId: state.trackId });
         if (!hits.length) return false;
         state.facade.transact(tech ? 'Set technique' : 'Clear technique', () => {
             for (const hit of hits) {
@@ -403,6 +403,33 @@ function applyTech(ctx, tech) {
     }
     return tech ? state.addArticulation(tech) !== false
                 : state.clearEffectsAtCursor() !== false;
+}
+
+/**
+ * `+` / `-`: the SELECTION when there is one (every note in the
+ * rectangle moves together, one undo step), else the note at the cursor.
+ *
+ * The block form is atomic — a single note out of range refuses the
+ * whole move, so the shape can never half-transpose — and says so in the
+ * status bar, because nothing else on screen would show that the key
+ * did nothing.
+ */
+function fretShift(ctx, delta) {
+    const { state } = ctx;
+    const sign = delta > 0 ? '+' : '−';
+    if (state.selection) {
+        ctx.record('transposeSelection', { delta });
+        const ok = state.transposeSelection(delta);
+        ctx.hooks?.onStatus?.(ok
+            ? `Selection: fret ${sign}${Math.abs(delta)}`
+            : `Fret ${sign}${Math.abs(delta)} refused — a selected note would leave 0–24`);
+        ctx.cursor.update();
+        return ok;
+    }
+    ctx.record('transposeFret', { ...posOf(state), delta });
+    const ok = state.transposeFretAtCursor(delta);
+    if (!ok) ctx.hooks?.onStatus?.(`Fret ${sign}${Math.abs(delta)}: nothing to move here`);
+    return ok;
 }
 
 /**
@@ -613,26 +640,18 @@ export const ACTIONS = {
 
     // === Note fixes ===============================================
     'note.fretUp': {
-        label: 'Fret +1',
+        label: 'Fret +1 — the note, or the whole selection',
         group: 'Notes',
-        modes: ['normal'],
+        modes: ['normal', 'visual'],
         repeatable: true,
-        run(ctx) {
-            ctx.record('transposeFret', { ...posOf(ctx.state), delta: 1 });
-            ctx.state.transposeFretAtCursor(1);
-            return true;
-        },
+        run(ctx) { fretShift(ctx, 1); return true; },
     },
     'note.fretDown': {
-        label: 'Fret −1',
+        label: 'Fret −1 — the note, or the whole selection',
         group: 'Notes',
-        modes: ['normal'],
+        modes: ['normal', 'visual'],
         repeatable: true,
-        run(ctx) {
-            ctx.record('transposeFret', { ...posOf(ctx.state), delta: -1 });
-            ctx.state.transposeFretAtCursor(-1);
-            return true;
-        },
+        run(ctx) { fretShift(ctx, -1); return true; },
     },
     'note.restringUp': {
         label: 'Move to the string above, same pitch',
@@ -906,19 +925,19 @@ export const ACTIONS = {
         run(ctx) { extend(ctx, () => stepTicks(ctx, ctx.state.gridSubdivision)); return true; },
     },
     'select.extendUp': {
-        label: 'Extend the selection up a string',
+        label: 'Grow the selection up a string (it is a rectangle)',
         group: 'Select',
         modes: ['normal', 'visual'],
         run(ctx) { extend(ctx, () => ctx.cursor.moveString(-1)); return true; },
     },
     'select.extendDown': {
-        label: 'Extend the selection down a string',
+        label: 'Grow the selection down a string (it is a rectangle)',
         group: 'Select',
         modes: ['normal', 'visual'],
         run(ctx) { extend(ctx, () => ctx.cursor.moveString(1)); return true; },
     },
     'select.measureOrAll': {
-        label: 'Select the measure — again, the whole tab',
+        label: 'Select the measure, every string — again, the whole tab',
         group: 'Select',
         modes: ['normal', 'visual'],
         run(ctx) {
@@ -1609,6 +1628,8 @@ const TABLEDIT = {
             { keys: 'Ctrl+c', action: 'clip.copyExit', hidden: true },
             { keys: 'Ctrl+x', action: 'clip.cut' },
             { keys: 'Ctrl+v', action: 'clip.paste' },
+            { keys: '+', action: 'note.fretUp' },
+            { keys: '-', action: 'note.fretDown' },
             { keys: '<', action: 'duration.shorter' },
             { keys: '>', action: 'duration.longer' },
             { keys: '*', action: 'duration.applyToSelection' },
@@ -1800,6 +1821,8 @@ const VIM = {
             { keys: 'Ctrl+c', action: 'clip.copyExit', hidden: true },
             { keys: 'Ctrl+x', action: 'clip.cut', hidden: true },
             { keys: 'Ctrl+v', action: 'clip.paste', hidden: true },
+            { keys: '+', action: 'note.fretUp' },
+            { keys: '-', action: 'note.fretDown' },
             { keys: '<', action: 'duration.shorter' },
             { keys: '>', action: 'duration.longer' },
             { keys: '*', action: 'duration.applyToSelection' },

@@ -146,6 +146,36 @@ export function selectionRectsForRow(geoms, startAbs, endAbs) {
 }
 
 /**
+ * Vertical extent of a selection highlight: the rectangle covers ONLY
+ * the selected strings (TablEdit), not the whole staff.
+ *
+ * Strings are 1-based and drawn at `topMargin + (s - 1) * stringSpacing`,
+ * so the band runs from the top string's line to the bottom one's, with
+ * `pad` of slack either side so a fret digit sitting on the line is
+ * inside the box. `strings` null/empty means the whole staff (what
+ * `Ctrl+A` and the pre-rectangle behaviour ask for).
+ *
+ * @param {number[]|null} strings - selected string numbers
+ * @param {Object} opts - {topMargin, stringSpacing, stringCount, pad}
+ * @returns {{top: number, height: number}} SVG units
+ */
+export function selectionBand(strings, {
+    topMargin = 30, stringSpacing = 15, stringCount = 5, pad = 6,
+} = {}) {
+    const count = Math.max(1, stringCount);
+    let lo = 1;
+    let hi = count;
+    if (strings && strings.length) {
+        lo = Math.max(1, Math.min(count, Math.min(...strings)));
+        hi = Math.max(1, Math.min(count, Math.max(...strings)));
+    }
+    return {
+        top: topMargin + (lo - 1) * stringSpacing - pad,
+        height: (hi - lo) * stringSpacing + pad * 2,
+    };
+}
+
+/**
  * Grid ("ruler") lines for one row from its real measure geometry: one
  * line per grid subdivision over each measure's OWN tick length, so a
  * short 2/4 measure gets half the lines of its 2/2 neighbors and every
@@ -717,8 +747,8 @@ export class EditorCursor {
 
     /**
      * Draw the selection highlight from renderer geometry: one span per
-     * (row, measure) intersection, full staff height. Cleared when not
-     * in visual mode or when geometry is unavailable.
+     * (row, measure) intersection, clipped to the SELECTED STRINGS.
+     * Cleared when not in visual mode or when geometry is unavailable.
      */
     renderSelection() {
         if (!this.selectionOverlay) return;
@@ -737,7 +767,9 @@ export class EditorCursor {
         const opt = this.renderer.options || {};
         const topMargin = opt.topMargin ?? 30;
         const stringSpacing = opt.stringSpacing ?? 15;
-        const staffH = (this.state.getStringCount() - 1) * stringSpacing + 12;
+        const band = selectionBand(this.state.selectionStrings?.(), {
+            topMargin, stringSpacing, stringCount: this.state.getStringCount(),
+        });
 
         for (const row of rowData) {
             const origin = this._svgToOverlay(row, 0, 0);
@@ -748,9 +780,9 @@ export class EditorCursor {
                 div.style.cssText = `
                     position: absolute;
                     left: ${origin.x + rect.x0 * origin.scaleX - 6}px;
-                    top: ${origin.y + (topMargin - 6) * origin.scaleY}px;
+                    top: ${origin.y + band.top * origin.scaleY}px;
                     width: ${(rect.x1 - rect.x0) * origin.scaleX + 12}px;
-                    height: ${staffH * origin.scaleY}px;
+                    height: ${band.height * origin.scaleY}px;
                     background: var(--accent, #007bff);
                     opacity: 0.14;
                     border-radius: 3px;
@@ -773,7 +805,10 @@ export class EditorCursor {
         const opt = this.renderer.options || {};
         const topMargin = opt.topMargin ?? 30;
         const stringSpacing = opt.stringSpacing ?? 15;
-        const staffH = (this.state.getStringCount() - 1) * stringSpacing + 12;
+        // The preview outlines the same rectangle that is moving.
+        const band = selectionBand(this.state.selectionStrings?.(), {
+            topMargin, stringSpacing, stringCount: this.state.getStringCount(),
+        });
 
         this._movePreviewEls = [];
         for (const row of rowData) {
@@ -785,9 +820,9 @@ export class EditorCursor {
                 div.style.cssText = `
                     position: absolute;
                     left: ${origin.x + rect.x0 * origin.scaleX - 6}px;
-                    top: ${origin.y + (topMargin - 6) * origin.scaleY}px;
+                    top: ${origin.y + band.top * origin.scaleY}px;
                     width: ${(rect.x1 - rect.x0) * origin.scaleX + 12}px;
-                    height: ${staffH * origin.scaleY}px;
+                    height: ${band.height * origin.scaleY}px;
                     border: 2px dashed var(--accent, #007bff);
                     border-radius: 3px;
                     box-sizing: border-box;
@@ -979,6 +1014,12 @@ export class EditorCursor {
         const newString = cursor.string + direction;
         if (newString >= 1 && newString <= stringCount) {
             cursor.string = newString;
+            // A selection is a rectangle, so a vertical move in VISUAL
+            // drags its end string exactly the way moveByTicks drags its
+            // end tick (vim's j/k in VISUAL, and the arrow keys).
+            if (this.state.mode === 'visual' && this.state.selection) {
+                this.state.selection.end = cursor.clone();
+            }
             this.update();
             this.state._emit('cursorMove', cursor);
         }

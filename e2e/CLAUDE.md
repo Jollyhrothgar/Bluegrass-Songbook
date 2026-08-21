@@ -155,6 +155,7 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 | `otf-editor-mobile.spec.js` | **mobile project.** Band collapses to ⚙; edit session's buttons stay on the band; menu bar collapses to ☰; `Press ? for help`; digits still enter notes; Cancel asks inline |
 | `otf-editor-submit.spec.js` | Correction and new-tab submissions against the Supabase mock; "live but not synced"; the anonymous sign-in gate |
 | `otf-editor-files.spec.js` | ⬇ Download + Ctrl+S (real `download` events); `.tef` via the band's 📂 button and via a drop anywhere on the app |
+| `otf-editor-selection.spec.js` | **The selection is a rectangle.** Drag string 3 of measure 2 → string 5 of measure 4 on `red-haired-boy/banjo`: the highlight box is checked against the renderer's own string-line y's, `Delete` and `+` are checked against the live document (`.otf-editor.__otfEditor.state.facade`), a refused block `+` is checked in `.status-flash`, and `Ctrl+z` takes the block back in one step |
 | `otf-editor-tracks.spec.js` | Multi-track (`red-haired-boy` ensemble): switch by toolbar and by Score ▸ Tracks, rename via the popover (+ duplicate refusal), reorder, undo |
 | `otf-editor-drafts.spec.js` | `#drafts`: autosave appears, Open reopens on the right route with the note, inline-confirm Delete |
 | `helpers.js` | Shared helpers (not a spec) |
@@ -184,7 +185,10 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
   `.editor-status-bar`, `.track-buttons .track-button[.active]`,
   `.menu-trigger[data-menu="score"]` → `.menu-popup .menu-item` (track entries
   are `menuitemradio`, so `[role=menuitem]` misses them),
-  `.otf-track-name-popover`, `.otf-value-prompt-popover`; the session's buttons
+  `.otf-track-name-popover`, `.otf-value-prompt-popover`,
+  `.editor-selection-rect` (one per row/measure the selection crosses,
+  clipped to the selected strings) and `.editor-status-bar .status-flash`
+  (what a refused op says); the session's buttons
   live in the bottom band as `.tab-edit-submit` / `.tab-edit-download` /
   `.tab-edit-cancel` / `.tab-edit-done` / `.tab-edit-import`
 - Useful fixture works: `old-home-place` (plain lead sheet; note the jam-repertoire

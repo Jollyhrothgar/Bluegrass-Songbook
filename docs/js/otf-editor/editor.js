@@ -117,6 +117,7 @@ export class OTFEditor {
             onLoopSelection: () => this.loopSelection(),
             onEditAnnotation: () => this.editAnnotationAtCursor(),
             onGoToMeasure: () => this._promptForMeasure(),
+            onStatus: (msg) => this.flashStatus(msg),
             recorder: this.recorder,
         });
         this.toolbar = new EditorToolbar(this.state, {
@@ -502,6 +503,20 @@ export class OTFEditor {
                 color: var(--border, #ddd);
             }
 
+            .status-flash {
+                margin-left: auto;
+                padding: 2px 8px;
+                border-radius: 10px;
+                font-size: 12px;
+                color: var(--accent, #007bff);
+                background: color-mix(in srgb, var(--accent, #007bff) 12%, transparent);
+                opacity: 0;
+                transition: opacity 0.15s ease;
+            }
+            /* Out of the flow entirely when silent: the status bar's
+               layout must not shift just because a flash exists. */
+            .status-flash:not(.is-showing) { display: none; }
+            .status-flash.is-showing { opacity: 1; }
             .status-hint {
                 margin-left: auto;
                 color: var(--text-muted, #888);
@@ -893,6 +908,9 @@ export class OTFEditor {
         return {
             startAbs: f.toAbs(start.measure, start.tick),
             endAbs: f.toAbs(end.measure, end.tick) + this.state.gridSubdivision,
+            // The rectangle's height: every op that acts on the drag
+            // (move, loop's hit test, the context menu) reads it from here.
+            strings: this.state.selectionStrings(),
         };
     }
 
@@ -912,7 +930,8 @@ export class OTFEditor {
         const sel = this._selectionAbsRange();
         if (sel) {
             const grabAbs = this.state.facade.toAbs(pos.measure, pos.tick);
-            if (grabAbs >= sel.startAbs && grabAbs < sel.endAbs) {
+            const inBand = !sel.strings?.length || sel.strings.includes(pos.string);
+            if (inBand && grabAbs >= sel.startAbs && grabAbs < sel.endAbs) {
                 this._drag = {
                     mode: 'move', grabAbs, sel,
                     x: event.clientX, y: event.clientY, active: false,
@@ -989,7 +1008,8 @@ export class OTFEditor {
         if (drag.destAbs == null || !this.state.selection) return;
 
         const { sel } = drag;
-        if (!this.state.facade.moveRange(sel.startAbs, sel.endAbs, drag.destAbs)) return;
+        if (!this.state.facade.moveRange(sel.startAbs, sel.endAbs, drag.destAbs,
+            { strings: sel.strings })) return;
 
         // Selection (and cursor) follow the phrase to its new home
         const span = sel.endAbs - sel.startAbs;
@@ -1559,6 +1579,7 @@ export class OTFEditor {
                 <span class="status-label">Text:</span>
                 <span class="status-value" data-field="annotation">—</span>
             </span>
+            <span class="status-flash" data-field="flash" role="status" aria-live="polite"></span>
             <button type="button" class="status-hint status-help-btn"
                     title="Keyboard shortcuts">
                 Press <kbd>?</kbd> for help
@@ -1578,6 +1599,33 @@ export class OTFEditor {
 
         // Initial update
         this._updateStatusBar();
+    }
+
+    /**
+     * Say something in the status bar for a moment — the editor's ONE
+     * way to report a refusal.
+     *
+     * A refused op (a block `+` that would push a note past fret 24, a
+     * `+` on an empty slot) changes nothing on screen, so without this
+     * the key reads as broken rather than as declined. It is a DOM node
+     * with `role="status"`, never a native alert: the rule in
+     * `e2e/CLAUDE.md` is that everything a human can see, Playwright can
+     * read.
+     *
+     * @param {string} message
+     * @param {number} [ms] - how long it stays
+     */
+    flashStatus(message, ms = 2600) {
+        const el = this.statusBar?.querySelector('[data-field="flash"]');
+        if (!el) return;
+        clearTimeout(this._flashTimeout);
+        el.textContent = message || '';
+        el.classList.toggle('is-showing', !!message);
+        if (!message) return;
+        this._flashTimeout = setTimeout(() => {
+            el.textContent = '';
+            el.classList.remove('is-showing');
+        }, ms);
     }
 
     /**
@@ -2148,6 +2196,8 @@ export class OTFEditor {
 
         // Close a lingering context menu (it lives on document.body)
         this.contextMenu?.close();
+
+        clearTimeout(this._flashTimeout);
 
         // Clean up components
         this.keyboard.detach();
