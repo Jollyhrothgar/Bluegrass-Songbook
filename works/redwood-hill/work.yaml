@@ -2,6 +2,11 @@ id: redwood-hill
 title: Redwood Hill
 artist: The Country Gentlemen
 default_key: G
+metadata_provenance:
+  source: user-submission
+  source_id: pending:meta:redwood-hill:nb3urxnn:ab8505238249
+  submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+  submitted_at: '2026-08-21'
 parts:
 - type: lead-sheet
   format: chordpro
