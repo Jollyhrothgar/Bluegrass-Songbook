@@ -515,7 +515,35 @@ function fingeringAction(finger, label) {
         // Reachable from NORMAL too — vim puts it behind the `a` operator
         modes: ['normal', 'annotation'],
         run(ctx) {
-            ctx.state.setFingering(finger);
+            // A TOGGLE at the cursor: pressing the letter the note
+            // already reads clears it, which is how the touch popover's
+            // row behaves and how you un-mark ONE hand without a second
+            // key. Over a selection it always SETS — "they all already
+            // read T" is not what the press meant.
+            const cur = ctx.state.getNoteAtCursor()?.finger ?? null;
+            const next = (!ctx.state.selection && cur === finger) ? null : finger;
+            ctx.record('setFingering', { ...posOf(ctx.state), finger: next });
+            ctx.state.setFingering(next);
+            return true;
+        },
+    };
+}
+
+/**
+ * The fretting hand: 0..4, drawn circled under the pluck letter. A
+ * separate field from `finger`, so a separate action family — setting
+ * one never wipes the other (`facade.setLeftHand`).
+ */
+function leftHandAction(digit) {
+    return {
+        label: `Left hand ${digit}`,
+        group: 'Fingering',
+        modes: ['normal', 'annotation'],
+        run(ctx) {
+            const cur = ctx.state.getNoteAtCursor()?.lh ?? null;
+            const next = (!ctx.state.selection && cur === digit) ? null : digit;
+            ctx.record('setLeftHand', { ...posOf(ctx.state), digit: next });
+            ctx.state.setLeftHand(next);
             return true;
         },
     };
@@ -1244,6 +1272,26 @@ export const ACTIONS = {
     'finger.thumb': fingeringAction('T', 'Thumb'),
     'finger.index': fingeringAction('I', 'Index'),
     'finger.middle': fingeringAction('M', 'Middle'),
+    'finger.ring': fingeringAction('R', 'Ring'),
+    'finger.pinky': fingeringAction('P', 'Pinky'),
+    'finger.lh0': leftHandAction(0),
+    'finger.lh1': leftHandAction(1),
+    'finger.lh2': leftHandAction(2),
+    'finger.lh3': leftHandAction(3),
+    'finger.lh4': leftHandAction(4),
+    'finger.clear': {
+        label: 'Clear the fingering (both hands)',
+        group: 'Fingering',
+        modes: ['normal', 'annotation'],
+        run(ctx) {
+            // Fingering only. `n` / ANNOTATION's `x` still clear the
+            // EFFECTS (tech + tie) and leave the fingering standing —
+            // they are different marks and people fix them separately.
+            ctx.record('clearFingerings', posOf(ctx.state));
+            ctx.state.clearFingerings();
+            return true;
+        },
+    },
 
     // === Measures =================================================
     'measure.insertBefore': {
@@ -1587,6 +1635,15 @@ const TABLEDIT = {
             { keys: 'Ctrl+=', action: 'note.restringUp' },
             { keys: 'Ctrl+-', action: 'note.restringDown' },
 
+            // TablEdit's own fretting-hand keys, and they have to be
+            // modified: a bare digit in NORMAL is a fret.
+            { keys: 'Alt+0', action: 'finger.lh0' },
+            { keys: 'Alt+1', action: 'finger.lh1' },
+            { keys: 'Alt+2', action: 'finger.lh2' },
+            { keys: 'Alt+3', action: 'finger.lh3' },
+            { keys: 'Alt+4', action: 'finger.lh4' },
+            { keys: 'Alt+Backspace', action: 'finger.clear' },
+
             { keys: 'Insert', action: 'measure.insertBefore' },
             { keys: 'Ctrl+Shift+M', action: 'measure.insertBefore', hidden: true },
             { keys: 'Ctrl+m', action: 'measure.insertAfter' },
@@ -1646,6 +1703,17 @@ const TABLEDIT = {
             { keys: 't', action: 'finger.thumb' },
             { keys: 'i', action: 'finger.index' },
             { keys: 'm', action: 'finger.middle' },
+            { keys: 'r', action: 'finger.ring' },
+            // Pinky is Shift+P because `p` is the pull-off in this mode
+            // and has been since ANNOTATION existed. A right-hand pinky
+            // is the rarest mark in the vocabulary; a pull-off is not.
+            { keys: 'P', action: 'finger.pinky' },
+            { keys: '0', action: 'finger.lh0' },
+            { keys: '1', action: 'finger.lh1' },
+            { keys: '2', action: 'finger.lh2' },
+            { keys: '3', action: 'finger.lh3' },
+            { keys: '4', action: 'finger.lh4' },
+            { keys: 'c', action: 'finger.clear' },
             { keys: 'h', action: 'annotate.hammer' },
             { keys: 'p', action: 'annotate.pull' },
             { keys: '/', action: 'annotate.slide' },
@@ -1752,6 +1820,14 @@ const VIM = {
             { keys: 'a t', action: 'finger.thumb' },
             { keys: 'a i', action: 'finger.index' },
             { keys: 'a m', action: 'finger.middle' },
+            { keys: 'a r', action: 'finger.ring' },
+            { keys: 'a P', action: 'finger.pinky' },
+            { keys: 'a 0', action: 'finger.lh0' },
+            { keys: 'a 1', action: 'finger.lh1' },
+            { keys: 'a 2', action: 'finger.lh2' },
+            { keys: 'a 3', action: 'finger.lh3' },
+            { keys: 'a 4', action: 'finger.lh4' },
+            { keys: 'a c', action: 'finger.clear' },
             { keys: 'Ctrl+h', action: 'effect.pendingHammer' },
             { keys: 'Ctrl+p', action: 'effect.pendingPull' },
             { keys: 'Ctrl+/', action: 'effect.pendingSlide' },
@@ -1840,6 +1916,17 @@ const VIM = {
             { keys: 't', action: 'finger.thumb' },
             { keys: 'i', action: 'finger.index' },
             { keys: 'm', action: 'finger.middle' },
+            { keys: 'r', action: 'finger.ring' },
+            // Pinky is Shift+P because `p` is the pull-off in this mode
+            // and has been since ANNOTATION existed. A right-hand pinky
+            // is the rarest mark in the vocabulary; a pull-off is not.
+            { keys: 'P', action: 'finger.pinky' },
+            { keys: '0', action: 'finger.lh0' },
+            { keys: '1', action: 'finger.lh1' },
+            { keys: '2', action: 'finger.lh2' },
+            { keys: '3', action: 'finger.lh3' },
+            { keys: '4', action: 'finger.lh4' },
+            { keys: 'c', action: 'finger.clear' },
             { keys: 'h', action: 'annotate.hammer' },
             { keys: 'p', action: 'annotate.pull' },
             { keys: '/', action: 'annotate.slide' },

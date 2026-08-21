@@ -24,6 +24,19 @@ export const POPOVER_TECHS = ARTICULATION_BUTTONS
         isTie: !!cfg.tie,
     }));
 
+/**
+ * The note popover's FINGERING row — the touch path to the two marks
+ * ANNOTATION mode types (`A` then `t`/`r`/`3`). Same vocabulary as
+ * `facade.js`'s `PLUCK_FINGERS` / `LH_DIGITS` and as the TEF importer:
+ * picking hand T I M R P, fretting hand 0..4.
+ *
+ * Every button is a TOGGLE — tapping the one already lit clears that
+ * hand — because a phone has no other way to un-mark one, and the two
+ * hands are independent fields on the note.
+ */
+export const POPOVER_FINGERS = ['T', 'I', 'M', 'R', 'P'];
+export const POPOVER_LH = [0, 1, 2, 3, 4];
+
 /** Why the tie button is off when it is. */
 const NO_TIE_REASON =
     'A tie needs a note before this one on the same string';
@@ -55,7 +68,12 @@ export class NoteEntryPopover {
         this.selectedString = 3;
         this.selectedFret = 0;
         this.selectedTech = null;
+        this.selectedFinger = null;
+        this.selectedLh = null;
         this.highFretOffset = 0;
+        // True when the popover was opened OVER a note: Insert then
+        // rewrites that note in place instead of adding a second one.
+        this.editing = false;
 
         // ONE fret-entry algorithm, shared with the canvas keyboard
         // (plan §8.2: "Two fret-entry algorithms … disagree"). A dialog
@@ -115,7 +133,7 @@ export class NoteEntryPopover {
 
         return `
             <div class="popover-header">
-                <span class="popover-title">Enter Note</span>
+                <span class="popover-title">${this.editing ? 'Edit Note' : 'Enter Note'}</span>
                 <button class="popover-close" title="Close (Escape)">&times;</button>
             </div>
             <div class="popover-body">
@@ -163,6 +181,15 @@ export class NoteEntryPopover {
                     <div class="technique-selector button-row">
                         ${this._renderTechButtons()}
                         <button class="tech-button tech-none${!this.selectedTech ? ' selected' : ''}" data-tech="">none</button>
+                    </div>
+                </div>
+                <div class="popover-section fingering-section">
+                    <label class="section-label">Fingering</label>
+                    <div class="finger-selector button-row">
+                        ${this._renderFingerButtons()}
+                    </div>
+                    <div class="lh-selector button-row">
+                        ${this._renderLhButtons()}
                     </div>
                 </div>
             </div>
@@ -256,7 +283,7 @@ export class NoteEntryPopover {
                 flex-wrap: wrap;
             }
 
-            .string-button, .tech-button {
+            .string-button, .tech-button, .finger-button, .lh-button {
                 min-width: 36px;
                 height: 36px;
                 border: 2px solid var(--border, #ddd);
@@ -268,14 +295,31 @@ export class NoteEntryPopover {
                 transition: all 0.15s ease;
             }
 
-            .string-button:hover, .tech-button:hover {
+            .string-button:hover, .tech-button:hover,
+            .finger-button:hover, .lh-button:hover {
                 border-color: var(--accent, #007bff);
             }
 
-            .string-button.selected, .tech-button.selected {
+            .string-button.selected, .tech-button.selected,
+            .finger-button.selected, .lh-button.selected {
                 background: var(--accent, #007bff);
                 border-color: var(--accent, #007bff);
                 color: #fff;
+            }
+
+            /* Compact: two short rows, not eleven full-size keys */
+            .finger-button, .lh-button {
+                min-width: 30px;
+                height: 30px;
+                font-size: 13px;
+            }
+
+            .lh-selector {
+                margin-top: 6px;
+            }
+
+            .lh-button {
+                border-radius: 50%;
             }
 
             .tech-button.is-unavailable {
@@ -461,6 +505,22 @@ export class NoteEntryPopover {
             });
         });
 
+        // Fingering toggles — tapping the lit one clears that hand
+        this.element.querySelectorAll('.finger-button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const f = btn.dataset.finger;
+                this.selectedFinger = this.selectedFinger === f ? null : f;
+                this._updateFingeringSelection();
+            });
+        });
+        this.element.querySelectorAll('.lh-button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const d = parseInt(btn.dataset.lh, 10);
+                this.selectedLh = this.selectedLh === d ? null : d;
+                this._updateFingeringSelection();
+            });
+        });
+
         // Close button
         this.element.querySelector('.popover-close').addEventListener('click', () => {
             this.close();
@@ -474,6 +534,35 @@ export class NoteEntryPopover {
         // Insert button
         this.element.querySelector('.insert-btn').addEventListener('click', () => {
             this._handleInsert();
+        });
+    }
+
+    /** The picking-hand toggles (T I M R P). */
+    _renderFingerButtons() {
+        return POPOVER_FINGERS.map((f) => {
+            const on = this.selectedFinger === f;
+            return `<button class="finger-button${on ? ' selected' : ''}"`
+                + ` data-finger="${f}" title="Picking hand: ${f}">${f}</button>`;
+        }).join('');
+    }
+
+    /** The fretting-hand toggles (0..4), drawn circled on the stave. */
+    _renderLhButtons() {
+        return POPOVER_LH.map((d) => {
+            const on = this.selectedLh === d;
+            return `<button class="lh-button${on ? ' selected' : ''}"`
+                + ` data-lh="${d}" title="Fretting hand: ${d}">${d}</button>`;
+        }).join('');
+    }
+
+    /** Repaint both fingering rows from the current selection. */
+    _updateFingeringSelection() {
+        this.element.querySelectorAll('.finger-button').forEach(btn => {
+            btn.classList.toggle('selected', btn.dataset.finger === this.selectedFinger);
+        });
+        this.element.querySelectorAll('.lh-button').forEach(btn => {
+            const d = parseInt(btn.dataset.lh, 10);
+            btn.classList.toggle('selected', d === this.selectedLh);
         });
     }
 
@@ -590,6 +679,9 @@ export class NoteEntryPopover {
             string: this.selectedString,
             fret: this.selectedFret,
             tech: this.selectedTech,
+            finger: this.selectedFinger,
+            lh: this.selectedLh,
+            editing: this.editing,
         });
         this.close();
     }
@@ -683,6 +775,9 @@ export class NoteEntryPopover {
         this.selectedString = defaults.string || this.state.cursor.string || 3;
         this.selectedFret = defaults.fret || 0;
         this.selectedTech = defaults.tech || null;
+        this.selectedFinger = defaults.finger || null;
+        this.selectedLh = defaults.lh ?? null;
+        this.editing = !!defaults.editing;
         this.highFretOffset = 0;
         this.fretEntry.reset();
         if (this.selectedFret) this.fretEntry.remember({ fret: this.selectedFret });

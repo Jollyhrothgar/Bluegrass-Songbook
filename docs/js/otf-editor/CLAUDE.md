@@ -32,10 +32,10 @@ The word is overloaded, and getting it wrong sends you to the wrong file:
 
 | | per-note marks | placed free text |
 |---|---|---|
-| **what** | fingering (`T`/`I`/`M`), technique | "PART A", "Long Choke", "Bb6+9" |
-| **stored** | on the note (`finger`, `tech`) | `otf.annotations[]` — top level, `{measure, tick, text}` |
+| **what** | fingering (`finger` T I M R P, `lh` 0–4), technique | "PART A", "Long Choke", "Bb6+9" |
+| **stored** | on the note (`finger`, `lh`, `tech`) | `otf.annotations[]` — top level, `{measure, tick, text}` |
 | **reached by** | `A` (ANNOTATION mode) | `c` / `C` in NORMAL mode |
-| **facade ops** | `setFingering`, `setArticulation` | `addAnnotation` / `setAnnotationText` / `deleteAnnotation` / `findAnnotationIndex` |
+| **facade ops** | `setFingering`, `setLeftHand`, `setArticulation` | `addAnnotation` / `setAnnotationText` / `deleteAnnotation` / `findAnnotationIndex` |
 
 Placed text is score-level, not track-level: one array for the whole
 document, positioned by written measure + tick, drawn above the staff by
@@ -52,6 +52,56 @@ you write chords over a tab.
 - Everything routes through the facade, so undo/redo covers text and
   notes in one stack, and a document you only read round-trips
   byte-identical (adds splice into score order without reordering).
+
+### Fingering: two hands, two fields, one clear
+
+`finger` (picking hand) and `lh` (fretting hand) are **separate fields on
+the note**, and the vocabulary is not ours to invent — it is what
+`sources/banjo-hangout/src/tef_parser/otf.py` decodes out of TablEdit's
+one base-6 V3 byte: `finger` ∈ `T I M R P` (MusicXML `<pluck>` p i m a c),
+`lh` ∈ `0..4`, drawn by `renderers/tablature.js` as an italic letter under
+the beams and a circled digit under that. `facade.js` exports
+`PLUCK_FINGERS` / `LH_DIGITS` and **throws** on anything else, because a
+value outside those two alphabets round-trips into a file no importer
+wrote and no renderer draws.
+
+| | picking hand | fretting hand | both |
+|---|---|---|---|
+| **facade** | `setFingering(pos, 'R'\|null)`, `setRangeFingering(startAbs, endAbs, …, {strings})` | `setLeftHand(pos, 3\|null)`, `setRangeLeftHand(…)` | — |
+| **state** | `setFingering(f)` | `setLeftHand(d)` | `clearFingerings()` |
+| **ANNOTATION** | `t i m r` + **`P`** | `0` `1` `2` `3` `4` | `c` |
+| **TablEdit NORMAL** | — (via `A`) | `Alt+0`…`Alt+4` | `Alt+⌫` |
+| **vim NORMAL** | `a t`/`a i`/`a m`/`a r`/`a P` | `a 0`…`a 4` | `a c` |
+
+- **The picking pinky is `Shift+P`.** `p` in ANNOTATION is the pull-off
+  and has been since the mode existed; a right-hand pinky is the rarest
+  mark in the vocabulary and a pull-off is not, so the shift goes on the
+  pinky. Everything else is the letter you would say out loud.
+- **`c` clears the FINGERING; `x` / `n` still clear the EFFECTS.** They
+  are different marks on the same note and people fix them separately —
+  `clearEffectsAtCursor` never touched `finger`, and `clearFingerings`
+  never touches `tech`/`tie`. `clearFingerings` is one `transact` over
+  both hands, and refuses (no history entry) when there is nothing set.
+- **The keys are TOGGLES at the cursor and plain SETs over a selection.**
+  Pressing the letter a note already reads clears that hand, which is how
+  the touch row behaves and how you un-mark one hand without a second
+  key; over a phrase, "they all already read T" is not what the press
+  meant. Every action takes the selection when there is one — same rule
+  as `applyTech`, one undo step for the phrase.
+- **`lh: 0` is a value, not a cleared field.** Clearing is `null`
+  everywhere; `?? null` comparisons are why the ops refuse correctly.
+- **No fingering palette in the toolbar** — eleven buttons for a mark
+  most tabs never carry. What is set shows in the **status bar**
+  (`Fing: T · lh 2`, `—` when there is none), recomputed on `cursorMove`
+  and `change` like the rest of that line. The touch path is the note
+  popover's Fingering row (`POPOVER_FINGERS` / `POPOVER_LH`), whose
+  buttons are toggles.
+- **Double-clicking an EXISTING note opens the popover as an edit of
+  it** — fret, technique and both hands pre-selected, `Edit Note` in the
+  title, and Insert rewrites that note in place inside ONE `transact`
+  (`facade._placeNote` replaces whatever was on the string, so the
+  fingering has to be re-applied in the same step or `u` costs two
+  presses). An edit does not auto-advance; entry still does.
 
 ### Tracks: the name IS the id, and the order IS the lead
 
@@ -297,6 +347,10 @@ position. Plan: `docs/plans/tab-editor-input-parity.md` §3, §6.
 | `moveNoteToString(pos, ±1)` | `moveNoteAcrossStrings(d)` (moves the cursor too, and emits `cursorMove` so the status bar's `String:` follows) | no such string; slot occupied; fret would leave 0..24; untuned track | yes |
 | `setTie(pos, on)` | `toggleTieAtCursor()` | turning ON with no same-string predecessor; clearing a tie that isn't set | yes |
 | `setArticulation(pos, null)` + `setTie(pos, false)` in one `transact` | `clearEffectsAtCursor()` — what `n` runs, TablEdit's N: `tech` AND `tie`, since neither op clears the other's field | the note carries neither | yes (one step) |
+| `setFingering(pos, finger\|null)` — T I M R P, **throws** otherwise | `setFingering(f)` (selection or cursor) | no note there; already that letter | yes |
+| `setLeftHand(pos, digit\|null)` — 0..4, **throws** otherwise | `setLeftHand(d)` | no note there; already that digit | yes |
+| `setRangeFingering(start, end, finger\|null, {strings})` / `setRangeLeftHand(…)` | the same two wrappers, when a selection exists | no note in range changes | yes (one step) |
+| `setFingering(pos, null)` + `setLeftHand(pos, null)` in one `transact` | `clearFingerings()` — what `c` runs. Fingering ONLY: the effects have their own clear | the note (or range) carries neither hand | yes (one step) |
 | `deleteMeasure(n)` | `deleteMeasureAtCursor()`, `deleteEmptyTrailingMeasure()` | n out of range; it's the last measure; (wrapper) the tail has notes on ANY track | yes |
 | `shiftRight(m, tick, ticks)` / `shiftLeft` | `shiftRightAtCursor()` / `shiftLeftAtCursor()` | a note would cross the barline or land on an occupied slot; nothing at/after the tick | yes |
 | `repeatMeasure(n)` | `repeatPreviousMeasure()` | n < 2; n−1 missing or empty; n already has notes; source longer than destination | yes |

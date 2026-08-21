@@ -269,6 +269,30 @@ export function dispatchEditorEvent(editor, event) {
             state.setPendingArticulation(params.tech);
             break;
 
+        // === Fingering (both hands) ===
+        // `finger` (T I M R P) and `lh` (0..4) are separate fields, so
+        // they replay separately; the clear takes both.
+        case 'setFingering':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.setFingering(params.finger ?? null);
+            break;
+
+        case 'setLeftHand':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.setLeftHand(params.digit ?? null);
+            break;
+
+        case 'clearFingerings':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.clearFingerings();
+            break;
+
         // === Placed text (the document's `annotations`) ===
         case 'setAnnotation':
             state.cursor.measure = params.measure;

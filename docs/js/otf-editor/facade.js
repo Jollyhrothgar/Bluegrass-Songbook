@@ -59,6 +59,40 @@ function assertTech(tech) {
     return tech;
 }
 
+// ----------------------------------------------------------------------
+// Fingering vocabulary — BOTH hands, and it is not ours to invent.
+//
+// `sources/banjo-hangout/src/tef_parser/otf.py` decodes TablEdit's V3
+// note byte base-6 into exactly these two alphabets: the picking hand is
+// one of T I M R P (MusicXML's <pluck> p i m a c), the fretting hand is a
+// digit 0..4 (`lh`, drawn circled). Anything else would round-trip into a
+// file no importer wrote and no renderer draws.
+// ----------------------------------------------------------------------
+
+/** The picking-hand letters, in thumb→pinky order. */
+export const PLUCK_FINGERS = ['T', 'I', 'M', 'R', 'P'];
+
+/** The fretting-hand digits (0 = open/none-fretted, 1..4 = the fingers). */
+export const LH_DIGITS = [0, 1, 2, 3, 4];
+
+function assertFinger(finger) {
+    if (finger == null) return null;
+    if (!PLUCK_FINGERS.includes(finger)) {
+        throw new RangeError(
+            `Unknown fingering '${finger}' (expected one of ${PLUCK_FINGERS.join(' ')})`);
+    }
+    return finger;
+}
+
+function assertLeftHand(digit) {
+    if (digit == null) return null;
+    if (!LH_DIGITS.includes(digit)) {
+        throw new RangeError(
+            `Unknown left-hand finger '${digit}' (expected ${LH_DIGITS.join('..')})`);
+    }
+    return digit;
+}
+
 /**
  * Clean a typed track name into something safe to be a track id.
  *
@@ -1248,15 +1282,93 @@ export class EditingFacade {
         });
     }
 
-    /** Set (or clear with null) a fingering annotation. Undoable. */
+    // ------------------------------------------------------------------
+    // Fingering — two independent fields on one note
+    //
+    // `finger` (picking hand, T I M R P) and `lh` (fretting hand, 0..4)
+    // are separate marks that the renderer draws one under the other, so
+    // they get separate ops: setting a pluck letter must not wipe a
+    // fretting digit someone imported from TablEdit. "Clear the
+    // fingering" is therefore a TRANSACTION over both, never one op with
+    // a magic argument (`state.clearFingerings()`).
+    // ------------------------------------------------------------------
+
+    /**
+     * Set (or clear with null) the picking-hand fingering on one note.
+     * @param {Object} pos - {measure, tick, string}
+     * @param {string|null} finger - one of T I M R P, or null to clear
+     * @throws {RangeError} on a letter outside the OTF vocabulary
+     * @returns {boolean} false when there is no note, or it already reads that
+     */
     setFingering(pos, finger, trackId = this.trackId) {
+        assertFinger(finger);
         return this._mutate(finger ? 'Add fingering' : 'Remove fingering', () => {
             const { note } = this._findNote(pos, trackId);
-            if (!note || note.finger === finger) return false;
+            if (!note) return false;
+            if ((note.finger ?? null) === (finger ?? null)) return false;
             if (finger) note.finger = finger;
             else delete note.finger;
             return true;
         });
+    }
+
+    /**
+     * Set (or clear with null) the fretting-hand digit on one note.
+     * @param {Object} pos - {measure, tick, string}
+     * @param {number|null} digit - 0..4, or null to clear
+     * @throws {RangeError} on anything that is not one of those digits
+     * @returns {boolean} false when there is no note, or it already reads that
+     */
+    setLeftHand(pos, digit, trackId = this.trackId) {
+        assertLeftHand(digit);
+        return this._mutate(
+            digit == null ? 'Remove left-hand fingering' : 'Set left-hand fingering',
+            () => {
+                const { note } = this._findNote(pos, trackId);
+                if (!note) return false;
+                if ((note.lh ?? null) === (digit ?? null)) return false;
+                if (digit == null) delete note.lh;
+                else note.lh = digit;
+                return true;
+            });
+    }
+
+    /**
+     * setFingering over a tick range — one undo step for the phrase.
+     * @returns {boolean} false when no note in range changed
+     */
+    setRangeFingering(startAbs, endAbs, finger, { strings = null, trackId = this.trackId } = {}) {
+        assertFinger(finger);
+        return this._mutate(finger ? 'Add fingering' : 'Remove fingering', () => {
+            let changed = false;
+            for (const { note } of this.notesInRange(startAbs, endAbs, { strings, trackId })) {
+                if ((note.finger ?? null) === (finger ?? null)) continue;
+                if (finger) note.finger = finger;
+                else delete note.finger;
+                changed = true;
+            }
+            return changed;
+        });
+    }
+
+    /**
+     * setLeftHand over a tick range — one undo step for the phrase.
+     * @returns {boolean} false when no note in range changed
+     */
+    setRangeLeftHand(startAbs, endAbs, digit, { strings = null, trackId = this.trackId } = {}) {
+        assertLeftHand(digit);
+        return this._mutate(
+            digit == null ? 'Remove left-hand fingering' : 'Set left-hand fingering',
+            () => {
+                let changed = false;
+                for (const { note } of this.notesInRange(startAbs, endAbs, { strings, trackId })) {
+                    if ((note.lh ?? null) === (digit ?? null)) continue;
+                    if (digit == null) delete note.lh;
+                    else note.lh = digit;
+                    changed = true;
+                }
+                return changed;
+            });
     }
 
     // ------------------------------------------------------------------

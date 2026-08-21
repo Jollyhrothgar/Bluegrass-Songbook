@@ -1388,3 +1388,115 @@ describe('EditorState — entry flags', () => {
         expect(state.getNoteAtCursor().tie).toBe(true);
     });
 });
+
+
+// ----------------------------------------------------------------------
+// Fingering wrappers: the SELECTION when there is one, else the cursor —
+// the same rule `applyTech` follows, so marking a phrase is one undo step.
+// ----------------------------------------------------------------------
+
+describe('EditorState — fingering, both hands', () => {
+    let state;
+
+    /** Three eighth notes on string 3 of measure 1. */
+    function threeNotes() {
+        const s = new EditorState();
+        s.cursor.string = 3;
+        [0, 240, 480].forEach(tick => {
+            s.cursor.tick = tick;
+            s.insertNote(0);
+        });
+        s.cursor.tick = 0;
+        return s;
+    }
+
+    beforeEach(() => {
+        state = threeNotes();
+    });
+
+    it('marks the note at the cursor when there is no selection', () => {
+        expect(state.setFingering('R')).toBe(true);
+        expect(state.getNoteAtCursor().finger).toBe('R');
+        expect(state.setLeftHand(2)).toBe(true);
+        expect(state.getNoteAtCursor().lh).toBe(2);
+        state.cursor.tick = 240;
+        expect(state.getNoteAtCursor().finger).toBeUndefined();
+    });
+
+    it('marks the whole SELECTION when there is one', () => {
+        state.setMode(EditorMode.VISUAL);
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 0, 3), new CursorPosition(1, 480, 3));
+        expect(state.setFingering('P')).toBe(true);
+        expect(state.setLeftHand(4)).toBe(true);
+        for (const tick of [0, 240, 480]) {
+            state.cursor.tick = tick;
+            expect(state.getNoteAtCursor().finger).toBe('P');
+            expect(state.getNoteAtCursor().lh).toBe(4);
+        }
+    });
+
+    it('takes the selection back in ONE undo per hand', () => {
+        state.setMode(EditorMode.VISUAL);
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 0, 3), new CursorPosition(1, 480, 3));
+        state.setFingering('I');
+        state.facade.undo();
+        for (const tick of [0, 240, 480]) {
+            state.cursor.tick = tick;
+            expect(state.getNoteAtCursor().finger).toBeUndefined();
+        }
+    });
+
+    it('clearFingerings clears BOTH hands in one step', () => {
+        state.setFingering('T');
+        state.setLeftHand(1);
+        expect(state.clearFingerings()).toBe(true);
+        expect(state.getNoteAtCursor().finger).toBeUndefined();
+        expect(state.getNoteAtCursor().lh).toBeUndefined();
+        state.facade.undo();
+        expect(state.getNoteAtCursor().finger).toBe('T');
+        expect(state.getNoteAtCursor().lh).toBe(1);
+    });
+
+    it('clearFingerings over a selection clears the phrase', () => {
+        state.setMode(EditorMode.VISUAL);
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 0, 3), new CursorPosition(1, 480, 3));
+        state.setFingering('M');
+        state.setLeftHand(3);
+        expect(state.clearFingerings()).toBe(true);
+        for (const tick of [0, 240, 480]) {
+            state.cursor.tick = tick;
+            expect(state.getNoteAtCursor().finger).toBeUndefined();
+            expect(state.getNoteAtCursor().lh).toBeUndefined();
+        }
+    });
+
+    it('clearFingerings with nothing to clear spends no history', () => {
+        const depth = state.facade._history.length;
+        expect(state.clearFingerings()).toBe(false);
+        expect(state.facade._history.length).toBe(depth);
+    });
+
+    it('refuses on an empty slot', () => {
+        state.cursor.string = 1;
+        expect(state.setFingering('T')).toBe(false);
+        expect(state.setLeftHand(0)).toBe(false);
+        expect(state.clearFingerings()).toBe(false);
+    });
+
+    it('leaves the effects alone (they are different marks)', () => {
+        state.addArticulation('h');
+        state.setFingering('T');
+        state.setLeftHand(2);
+        state.clearEffectsAtCursor();
+        expect(state.getNoteAtCursor().tech).toBeUndefined();
+        expect(state.getNoteAtCursor().finger).toBe('T');
+        expect(state.getNoteAtCursor().lh).toBe(2);
+        state.addArticulation('p');
+        state.clearFingerings();
+        expect(state.getNoteAtCursor().tech).toBe('p');
+        expect(state.getNoteAtCursor().finger).toBeUndefined();
+    });
+});
