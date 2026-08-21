@@ -779,10 +779,80 @@ describe('OTFEditor — menu bar and status bar', () => {
         expect(editor.statusBar.querySelector('.stop-button')).toBeNull();
         expect(editor.statusBar.querySelector('.tempo-input')).toBeNull();
         // …and keeps everything else
-        for (const field of ['mode', 'measure', 'beat', 'string', 'duration', 'annotation']) {
+        for (const field of ['mode', 'measure', 'beat', 'string', 'duration',
+            'fingering', 'annotation']) {
             expect(editor.statusBar.querySelector(`[data-field="${field}"]`)).toBeTruthy();
         }
         expect(editor.statusBar.querySelector('.status-help-btn')).toBeTruthy();
+    });
+
+    // The toolbar has no fingering palette (eleven buttons for a mark
+    // most tabs never carry), so the status bar is where what is SET on
+    // the note at the cursor becomes visible without reading the stave.
+    it('shows the fingering of the note at the cursor', () => {
+        editor = new OTFEditor({ container });
+        const read = () => editor.statusBar
+            .querySelector('[data-field="fingering"]').textContent;
+        expect(read()).toBe('—');            // empty slot
+
+        editor.state.cursor.string = 3;
+        editor.state.insertNote(5);
+        expect(read()).toBe('—');            // a note with no marks
+
+        editor.state.setFingering('T');
+        expect(read()).toBe('T');
+        editor.state.setLeftHand(2);
+        expect(read()).toBe('T · lh 2');
+        editor.state.setFingering(null);
+        expect(read()).toBe('lh 2');
+        editor.state.clearFingerings();
+        expect(read()).toBe('—');
+    });
+
+    it('lh 0 shows as a mark, not as nothing', () => {
+        editor = new OTFEditor({ container });
+        editor.state.cursor.string = 3;
+        editor.state.insertNote(0);
+        editor.state.setLeftHand(0);
+        expect(editor.statusBar.querySelector('[data-field="fingering"]')
+            .textContent).toBe('lh 0');
+    });
+
+    it('the note popover EDITS a note in place, in one undo step', () => {
+        editor = new OTFEditor({ container });
+        editor.state.cursor.string = 3;
+        editor.state.cursor.tick = 0;
+        editor.state.insertNote(5);
+        editor.state.setFingering('T');
+        const depth = editor.state.facade._history.length;
+
+        // What a double-click over that note hands the popover…
+        editor._handlePopoverInsert({
+            string: 3, fret: 5, tech: null, finger: 'R', lh: 3, editing: true,
+        });
+        editor.state.cursor.tick = 0;
+        const note = editor.state.getNoteAtCursor();
+        expect(note).toMatchObject({ f: 5, finger: 'R', lh: 3 });
+        expect(editor.state.facade._history.length).toBe(depth + 1);
+
+        editor.state.facade.undo();
+        expect(editor.state.getNoteAtCursor()).toMatchObject({ f: 5, finger: 'T' });
+        expect(editor.state.getNoteAtCursor().lh).toBeUndefined();
+    });
+
+    it('a double-click over a note opens the panel as an edit of it', () => {
+        editor = new OTFEditor({ container });
+        editor.state.cursor.string = 3;
+        editor.state.cursor.tick = 0;
+        editor.state.insertNote(7);
+        editor.state.setFingering('I');
+        editor.state.setLeftHand(4);
+
+        const opened = [];
+        editor.popover.open = (x, y, defaults) => opened.push(defaults);
+        editor._handleCanvasDblClick({ target: editor.canvasContainer, clientX: 0, clientY: 0 });
+        expect(opened).toHaveLength(1);
+        expect(opened[0]).toMatchObject({ fret: 7, finger: 'I', lh: 4, editing: true });
     });
 
     it('playing with no transport in the status bar does not throw', async () => {

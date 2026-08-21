@@ -690,6 +690,122 @@ describe('EditingFacade — setTempo / setFingering', () => {
 });
 
 // ----------------------------------------------------------------------
+// Fingering, BOTH hands. The vocabulary is the TEF importer's
+// (`sources/banjo-hangout/src/tef_parser/otf.py`): picking hand
+// T I M R P, fretting hand 0..4 — anything else would write a file
+// nothing on the site draws.
+// ----------------------------------------------------------------------
+
+describe('EditingFacade — fingering, both hands', () => {
+    let f;
+    const pos = { measure: 1, tick: 0, string: 3 };
+    const pos2 = { measure: 1, tick: 240, string: 2 };
+
+    beforeEach(() => {
+        f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 2 });
+        f.insertNote({ measure: 1, tick: 240, string: 2, fret: 0 });
+    });
+
+    it('accepts the whole picking-hand vocabulary, ring and pinky included', () => {
+        for (const finger of ['T', 'I', 'M', 'R', 'P']) {
+            expect(f.setFingering(pos, finger)).toBe(true);
+            expect(f._findNote(pos).note.finger).toBe(finger);
+        }
+    });
+
+    it('throws on a letter that is not in the vocabulary', () => {
+        expect(() => f.setFingering(pos, 'X')).toThrow(RangeError);
+        expect(() => f.setFingering(pos, 't')).toThrow(RangeError);
+        expect(f._findNote(pos).note.finger).toBeUndefined();
+    });
+
+    it('refuses (false, no history) when the note already reads that', () => {
+        expect(f.setFingering(pos, 'M')).toBe(true);
+        expect(f.setFingering(pos, 'M')).toBe(false);
+        expect(f.setFingering(pos2, null)).toBe(false); // nothing to clear
+    });
+
+    it('setLeftHand takes 0..4 and nothing else', () => {
+        for (const digit of [0, 1, 2, 3, 4]) {
+            expect(f.setLeftHand(pos, digit)).toBe(true);
+            expect(f._findNote(pos).note.lh).toBe(digit);
+        }
+        expect(() => f.setLeftHand(pos, 5)).toThrow(RangeError);
+        expect(() => f.setLeftHand(pos, -1)).toThrow(RangeError);
+        expect(() => f.setLeftHand(pos, '2')).toThrow(RangeError);
+        expect(f._findNote(pos).note.lh).toBe(4);
+    });
+
+    it('keeps the two hands independent', () => {
+        f.setFingering(pos, 'T');
+        f.setLeftHand(pos, 2);
+        expect(f._findNote(pos).note).toMatchObject({ finger: 'T', lh: 2 });
+        f.setFingering(pos, null);
+        expect(f._findNote(pos).note.finger).toBeUndefined();
+        expect(f._findNote(pos).note.lh).toBe(2);
+        f.setLeftHand(pos, null);
+        expect(f._findNote(pos).note.lh).toBeUndefined();
+    });
+
+    it('lh 0 is a real value, not a cleared one', () => {
+        expect(f.setLeftHand(pos, 0)).toBe(true);
+        expect(f._findNote(pos).note.lh).toBe(0);
+        expect(f.setLeftHand(pos, 0)).toBe(false);
+        expect(f.setLeftHand(pos, null)).toBe(true);
+        expect('lh' in f._findNote(pos).note).toBe(false);
+    });
+
+    it('is undoable in one step, per hand', () => {
+        f.setFingering(pos, 'R');
+        f.setLeftHand(pos, 3);
+        f.undo();
+        expect(f._findNote(pos).note.lh).toBeUndefined();
+        expect(f._findNote(pos).note.finger).toBe('R');
+        f.undo();
+        expect(f._findNote(pos).note.finger).toBeUndefined();
+        f.redo();
+        expect(f._findNote(pos).note.finger).toBe('R');
+    });
+
+    it('setRangeFingering marks a phrase in ONE undo step', () => {
+        expect(f.setRangeFingering(0, 480, 'I')).toBe(true);
+        expect(f._findNote(pos).note.finger).toBe('I');
+        expect(f._findNote(pos2).note.finger).toBe('I');
+        f.undo();
+        expect(f._findNote(pos).note.finger).toBeUndefined();
+        expect(f._findNote(pos2).note.finger).toBeUndefined();
+    });
+
+    it('setRangeFingering honours `strings`', () => {
+        expect(f.setRangeFingering(0, 480, 'P', { strings: [3] })).toBe(true);
+        expect(f._findNote(pos).note.finger).toBe('P');
+        expect(f._findNote(pos2).note.finger).toBeUndefined();
+    });
+
+    it('setRangeLeftHand honours `strings`, clears, and refuses a no-op', () => {
+        expect(f.setRangeLeftHand(0, 480, 4, { strings: [2] })).toBe(true);
+        expect(f._findNote(pos2).note.lh).toBe(4);
+        expect(f._findNote(pos).note.lh).toBeUndefined();
+        expect(f.setRangeLeftHand(0, 480, null)).toBe(true);
+        expect(f._findNote(pos2).note.lh).toBeUndefined();
+        expect(f.setRangeLeftHand(0, 480, null)).toBe(false);
+    });
+
+    it('the range ops validate their vocabulary too', () => {
+        expect(() => f.setRangeFingering(0, 480, 'Z')).toThrow(RangeError);
+        expect(() => f.setRangeLeftHand(0, 480, 9)).toThrow(RangeError);
+    });
+
+    it('an empty range changes nothing', () => {
+        const depth = f._history.length;
+        expect(f.setRangeFingering(1920, 2400, 'T')).toBe(false);
+        expect(f.setRangeLeftHand(1920, 2400, 1)).toBe(false);
+        expect(f._history.length).toBe(depth);
+    });
+});
+
+// ----------------------------------------------------------------------
 // Duration editing (TablEdit's `*`, `<`/`>`) — plan §3 P1-2
 // ----------------------------------------------------------------------
 

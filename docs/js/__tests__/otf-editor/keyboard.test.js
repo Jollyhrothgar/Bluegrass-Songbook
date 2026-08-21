@@ -539,9 +539,102 @@ describe('KeyboardHandler (vim preset)', () => {
             keyboard.handleKeyDown(createKeyEvent('m'));
             expect(state.getNoteAtCursor().finger).toBe('M');
         });
+
+        it('r adds ring, Shift+P adds pinky', () => {
+            keyboard.handleKeyDown(createKeyEvent('r'));
+            expect(state.getNoteAtCursor().finger).toBe('R');
+            keyboard.handleKeyDown(createKeyEvent('P', { shift: true }));
+            expect(state.getNoteAtCursor().finger).toBe('P');
+        });
+
+        it('p is still the pull-off, not the pinky', () => {
+            keyboard.handleKeyDown(createKeyEvent('p'));
+            expect(state.getNoteAtCursor().tech).toBe('p');
+            expect(state.getNoteAtCursor().finger).toBeUndefined();
+        });
+
+        it('0-4 set the fretting-hand digit', () => {
+            for (const digit of [0, 1, 2, 3, 4]) {
+                keyboard.handleKeyDown(createKeyEvent(String(digit)));
+                expect(state.getNoteAtCursor().lh).toBe(digit);
+            }
+        });
+
+        it('pressing the same mark again clears that hand', () => {
+            keyboard.handleKeyDown(createKeyEvent('t'));
+            keyboard.handleKeyDown(createKeyEvent('t'));
+            expect(state.getNoteAtCursor().finger).toBeUndefined();
+            keyboard.handleKeyDown(createKeyEvent('3'));
+            keyboard.handleKeyDown(createKeyEvent('3'));
+            expect(state.getNoteAtCursor().lh).toBeUndefined();
+        });
+
+        it('c clears BOTH hands and leaves the effect alone', () => {
+            state.addArticulation('h');
+            keyboard.handleKeyDown(createKeyEvent('t'));
+            keyboard.handleKeyDown(createKeyEvent('2'));
+            keyboard.handleKeyDown(createKeyEvent('c'));
+            expect(state.getNoteAtCursor().finger).toBeUndefined();
+            expect(state.getNoteAtCursor().lh).toBeUndefined();
+            expect(state.getNoteAtCursor().tech).toBe('h');
+        });
+
+        it('x clears the effect and leaves the fingering alone', () => {
+            state.addArticulation('h');
+            keyboard.handleKeyDown(createKeyEvent('t'));
+            keyboard.handleKeyDown(createKeyEvent('4'));
+            keyboard.handleKeyDown(createKeyEvent('x'));
+            expect(state.getNoteAtCursor().tech).toBeUndefined();
+            expect(state.getNoteAtCursor().finger).toBe('T');
+            expect(state.getNoteAtCursor().lh).toBe(4);
+        });
     });
 
-    describe('multi-key sequences', () => {
+    // The fretting hand from NORMAL, TablEdit's own way in: a bare digit
+// there is a fret, so these have to be modified chords.
+describe('TablEdit preset — fingering from NORMAL', () => {
+    let rig;
+    beforeEach(() => {
+        rig = makeRig('tabledit');
+        rig.state.cursor.string = 3;
+        rig.state.insertNote(5);
+    });
+    afterEach(() => rig.teardown());
+
+    it('Alt+2 sets the fretting-hand digit without touching the fret', () => {
+        rig.press('2', { alt: true, code: 'Digit2' });
+        expect(rig.state.getNoteAtCursor().lh).toBe(2);
+        expect(rig.state.getNoteAtCursor().f).toBe(5);
+    });
+
+    it('Alt+0 is a real 0, and pressing it twice clears it', () => {
+        rig.press('0', { alt: true, code: 'Digit0' });
+        expect(rig.state.getNoteAtCursor().lh).toBe(0);
+        rig.press('0', { alt: true, code: 'Digit0' });
+        expect(rig.state.getNoteAtCursor().lh).toBeUndefined();
+    });
+
+    it('a bare digit is still a fret', () => {
+        const pos = { measure: 1, tick: 0, string: 3 };
+        rig.press('3', { code: 'Digit3' });   // types a fret, then advances
+        const note = rig.state.facade._findNote(pos).note;
+        expect(note.f).toBe(3);
+        expect(note.lh).toBeUndefined();
+    });
+
+    it('Alt+Backspace clears both hands, undoably', () => {
+        rig.press('2', { alt: true, code: 'Digit2' });
+        rig.state.setFingering('R');
+        rig.press('Backspace', { alt: true });
+        expect(rig.state.getNoteAtCursor().lh).toBeUndefined();
+        expect(rig.state.getNoteAtCursor().finger).toBeUndefined();
+        rig.state.facade.undo();
+        expect(rig.state.getNoteAtCursor().lh).toBe(2);
+        expect(rig.state.getNoteAtCursor().finger).toBe('R');
+    });
+});
+
+describe('multi-key sequences', () => {
         beforeEach(() => {
             state.setMode(EditorMode.NORMAL);
         });

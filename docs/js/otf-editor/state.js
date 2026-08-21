@@ -609,15 +609,78 @@ export class EditorState {
         return this.facade.setTempo(bpm);
     }
 
-    /**
-     * Set a fingering annotation on the note at the cursor. Undoable.
-     */
-    setFingering(finger) {
-        return this.facade.setFingering({
+    // ------------------------------------------------------------------
+    // Fingering, BOTH hands — the selection when there is one, else the
+    // cursor. Same shape as `applyTech`: marking a phrase is one undo
+    // step, and marking one note needs no selection at all.
+    // ------------------------------------------------------------------
+
+    /** The cursor as a facade position. */
+    _cursorPos() {
+        return {
             measure: this.cursor.measure,
             tick: this.cursor.tick,
             string: this.cursor.string,
-        }, finger, this.trackId);
+        };
+    }
+
+    /**
+     * Set (or clear with null) the picking-hand fingering — T I M R P.
+     * @returns {boolean} false when nothing changed
+     */
+    setFingering(finger) {
+        const range = this.selection ? this.selectionRange() : null;
+        if (range) {
+            return this.facade.setRangeFingering(range.startAbs, range.endAbs,
+                finger, { trackId: this.trackId }) !== false;
+        }
+        return this.facade.setFingering(this._cursorPos(), finger, this.trackId) !== false;
+    }
+
+    /**
+     * Set (or clear with null) the fretting-hand digit — 0..4, drawn
+     * circled under the pluck letter.
+     * @returns {boolean} false when nothing changed
+     */
+    setLeftHand(digit) {
+        const range = this.selection ? this.selectionRange() : null;
+        if (range) {
+            return this.facade.setRangeLeftHand(range.startAbs, range.endAbs,
+                digit, { trackId: this.trackId }) !== false;
+        }
+        return this.facade.setLeftHand(this._cursorPos(), digit, this.trackId) !== false;
+    }
+
+    /**
+     * Clear BOTH hands' fingering — the fingering counterpart of
+     * `clearEffectsAtCursor`. One transaction, so one undo takes the
+     * pluck letter and the circled digit back together.
+     * @returns {boolean} false when there was nothing to clear
+     */
+    clearFingerings() {
+        const range = this.selection ? this.selectionRange() : null;
+        // `transact` pushes a history entry unconditionally, so a clear
+        // with nothing to clear must not reach it — otherwise `u` spends
+        // a press undoing a no-op.
+        const marked = (n) => n && (n.finger !== undefined || n.lh != null);
+        const anything = range
+            ? this.facade.notesInRange(range.startAbs, range.endAbs,
+                { trackId: this.trackId }).some(hit => marked(hit.note))
+            : marked(this.getNoteAtCursor());
+        if (!anything) return false;
+        return this.facade.transact('Clear fingering', () => {
+            if (range) {
+                const rh = this.facade.setRangeFingering(range.startAbs, range.endAbs,
+                    null, { trackId: this.trackId }) !== false;
+                const lh = this.facade.setRangeLeftHand(range.startAbs, range.endAbs,
+                    null, { trackId: this.trackId }) !== false;
+                return rh || lh;
+            }
+            const pos = this._cursorPos();
+            const rh = this.facade.setFingering(pos, null, this.trackId) !== false;
+            const lh = this.facade.setLeftHand(pos, null, this.trackId) !== false;
+            return rh || lh;
+        }) !== false;
     }
 
     // ------------------------------------------------------------------

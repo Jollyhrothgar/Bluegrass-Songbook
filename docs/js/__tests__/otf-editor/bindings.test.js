@@ -188,6 +188,107 @@ describe('the table is internally consistent', () => {
     });
 });
 
+// ----------------------------------------------------------------------
+// Fingering keys — both hands, both presets. The vocabulary is the TEF
+// importer's (T I M R P / 0..4), so the table has to cover all of it or
+// half the marks in the corpus are unreachable from a keyboard.
+// ----------------------------------------------------------------------
+
+describe('fingering is bound for both hands in both presets', () => {
+    const RIGHT = {
+        'finger.thumb': 't',
+        'finger.index': 'i',
+        'finger.middle': 'm',
+        'finger.ring': 'r',
+        // `p` is the pull-off in ANNOTATION and always has been, so the
+        // rarest mark in the vocabulary takes the shift.
+        'finger.pinky': 'Shift+P',
+    };
+    const LEFT = ['finger.lh0', 'finger.lh1', 'finger.lh2', 'finger.lh3', 'finger.lh4'];
+
+    for (const id of PRESET_IDS) {
+        it(`binds T I M R P in ANNOTATION (${id})`, () => {
+            const ann = new Map();
+            for (const entry of PRESETS[id].bindings.annotation) {
+                ann.set(entry.action, canonicalChord(entry.keys));
+            }
+            for (const [action, key] of Object.entries(RIGHT)) {
+                expect(ann.get(action), action).toBe(key);
+            }
+        });
+
+        it(`binds the fretting digits 0-4 in ANNOTATION (${id})`, () => {
+            const ann = new Map();
+            for (const entry of PRESETS[id].bindings.annotation) {
+                ann.set(entry.action, canonicalChord(entry.keys));
+            }
+            LEFT.forEach((action, digit) => {
+                expect(ann.get(action), action).toBe(String(digit));
+            });
+        });
+
+        it(`binds a fingering clear that is NOT the effects clear (${id})`, () => {
+            const ann = PRESETS[id].bindings.annotation;
+            const clear = ann.find(e => e.action === 'finger.clear');
+            expect(clear.keys).toBe('c');
+            // `x` still clears the EFFECTS — two different marks, two keys
+            const effects = ann.find(e => e.action === 'annotate.clear');
+            expect(effects.keys).toBe('x');
+        });
+    }
+
+    it('TablEdit reaches the fretting hand from NORMAL on Alt+digit', () => {
+        const normal = new Map();
+        for (const entry of PRESETS.tabledit.bindings.normal) {
+            normal.set(entry.action, canonicalChord(entry.keys));
+        }
+        LEFT.forEach((action, digit) => {
+            expect(normal.get(action), action).toBe(`Alt+${digit}`);
+        });
+        expect(normal.get('finger.clear')).toBe('Alt+Backspace');
+    });
+
+    it('vim does NOT bind Alt+digit — its NORMAL fingering is the `a` operator', () => {
+        for (const entry of PRESETS.vim.bindings.normal) {
+            expect(entry.keys).not.toMatch(/^Alt\+[0-9]$/);
+        }
+        const normal = new Map();
+        for (const entry of PRESETS.vim.bindings.normal) {
+            normal.set(entry.action, canonicalKeys(entry.keys));
+        }
+        expect(normal.get('finger.ring')).toBe('a r');
+        expect(normal.get('finger.pinky')).toBe('a Shift+P');
+        expect(normal.get('finger.lh3')).toBe('a 3');
+        expect(normal.get('finger.clear')).toBe('a c');
+    });
+
+    it('a bare digit in NORMAL is still a fret, in both presets', () => {
+        for (const id of PRESET_IDS) {
+            const digits = PRESETS[id].bindings.normal
+                .find(e => e.keys === '0-9');
+            expect(digits.action).toBe('note.fret');
+        }
+    });
+
+    it('menuKeyFor prints an honest key for every fingering item', () => {
+        // TablEdit: the fretting hand is reachable right here in NORMAL,
+        // the picking hand only through ANNOTATION.
+        expect(menuKeyFor('finger.ring', 'tabledit', 'normal')).toBe('A, r');
+        expect(menuKeyFor('finger.pinky', 'tabledit', 'annotation')).toBe('P');
+        expect(menuKeyFor('finger.lh2', 'tabledit', 'normal')).toBe('Alt+2');
+        expect(menuKeyFor('finger.lh2', 'tabledit', 'annotation')).toBe('2');
+        expect(menuKeyFor('finger.clear', 'tabledit', 'normal')).toBe('Alt+⌫');
+        expect(menuKeyFor('finger.clear', 'vim', 'normal')).toBe(prettyKeys('a c'));
+    });
+
+    it('every fingering action lands in the Fingering help group', () => {
+        for (const action of Object.keys(ACTIONS)) {
+            if (!action.startsWith('finger.')) continue;
+            expect(ACTIONS[action].group, action).toBe('Fingering');
+        }
+    });
+});
+
 describe('describe() / keyFor()', () => {
     it('groups the bindings for the help overlay', () => {
         const groups = describeBindings('tabledit');

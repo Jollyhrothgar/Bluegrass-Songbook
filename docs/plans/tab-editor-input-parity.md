@@ -655,6 +655,7 @@ six slices plus fixes; frontend suite 105 files / 2,598 tests green.
 | P1 measures | `Insert`/`Ctrl+m`, `Delete` on empty measure, `Alt+Insert/Delete` ripple, `r` repeat previous, walk-past-end appends | |
 | P1 selection / nav | `Shift+arrows`, `Ctrl+A`, `Ctrl+←/→`, `Home/End`, `,`/`;`, `Tab`, `Ctrl+Space` | |
 | P1 re-string | `Alt+↑/↓`, `Ctrl+±` (pitch-preserving via `pitch.js`) | |
+| P1 fingering, both hands | `setFingering` (T I M R P) + `setLeftHand` (0–4) + range variants; ANNOTATION `t i m r P` / `0`–`4` / `c`, TablEdit NORMAL `Alt+0`–`Alt+4` / `Alt+⌫`, vim `a`-operator; Note ▸ Fingering; popover row; status bar `Fing:` | picking pinky is `Shift+P` — `p` is ANNOTATION's pull-off. Keys are toggles at the cursor, plain SETs over a selection |
 | P2 counts, lick prompt, roll mode | counts via `g` prefix in vim (`g12G`); **lick prompt and roll mode not built** | follow-ups |
 | §7 feedback | cursor, stems, barlines (uniform slots), deterministic rows (pinned to the read view), re-string by key, append measures, auto-duration hotkey | sample-based banjo voice **not built**; drag-to-restring by mouse **not built** |
 | §8.3 menu bar + palettes | `menu-bar.js`; state-reflecting palettes; `hostTransport` / `fileActions` | Time signature / Tuning / Instrument voice items hook-gated (no op yet); repeat-with-endings still needs a dialog |

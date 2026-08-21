@@ -1017,10 +1017,20 @@ export class OTFEditor {
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
 
-        // Open note entry popover
+        // Open note entry popover. The `click` that preceded this
+        // dblclick already moved the cursor, so "the note at the cursor"
+        // IS the note under the pointer — and when there is one, the
+        // panel opens as an EDIT of it: fret, technique and both hands'
+        // fingering pre-selected, so changing the fingering of an
+        // imported note costs no retyping.
+        const existing = this.state.getNoteAtCursor();
         this.popover.open(x, y, {
             string: this.state.cursor.string,
-            fret: this.state.getNoteAtCursor()?.f || 0,
+            fret: existing?.f || 0,
+            tech: existing?.tie ? '~' : (existing?.tech || null),
+            finger: existing?.finger || null,
+            lh: existing?.lh ?? null,
+            editing: !!existing,
         });
     }
 
@@ -1029,12 +1039,28 @@ export class OTFEditor {
      */
     _handlePopoverInsert(note) {
         this.state.cursor.string = note.string;
-        this.state.insertNote(note.fret, { tech: note.tech });
+        // ONE undo step for the whole panel. `facade._placeNote` replaces
+        // whatever was on that string, so the fingering has to be
+        // re-applied after the insert — and if that were its own
+        // transaction, editing a note's fingering would cost two `u`
+        // presses and momentarily show the note with its marks stripped.
+        this.state.facade.transact(note.editing ? 'Edit note' : 'Insert note', () => {
+            this.state.insertNote(note.fret, { tech: note.tech });
+            const pos = {
+                measure: this.state.cursor.measure,
+                tick: this.state.cursor.tick,
+                string: note.string,
+            };
+            this.state.facade.setFingering(pos, note.finger ?? null, this.state.trackId);
+            this.state.facade.setLeftHand(pos, note.lh ?? null, this.state.trackId);
+            return true;
+        });
 
         // Advance exactly as typing a digit does: honours auto-advance,
         // steps ONE GRID SLOT under automatic duration, and appends a
-        // measure when it walks off the end.
-        if (this.state.autoAdvance) {
+        // measure when it walks off the end. An EDIT of a note already
+        // there is not entry, so it leaves the cursor on what it changed.
+        if (this.state.autoAdvance && !note.editing) {
             stepTicks(this.keyboard.ctx, entryAdvanceTicks(this.state));
         } else {
             this.cursor.update();
@@ -1555,6 +1581,11 @@ export class OTFEditor {
                 <span class="status-value" data-field="duration">8th</span>
             </span>
             <span class="status-separator">|</span>
+            <span class="status-item" title="Fingering on the note at the cursor — picking hand T I M R P, fretting hand 0–4 (A to mark)">
+                <span class="status-label">Fing:</span>
+                <span class="status-value" data-field="fingering">—</span>
+            </span>
+            <span class="status-separator">|</span>
             <span class="status-item" title="Placed text at the cursor — c to add or edit, Shift+C to delete">
                 <span class="status-label">Text:</span>
                 <span class="status-value" data-field="annotation">—</span>
@@ -1613,6 +1644,19 @@ export class OTFEditor {
         if (beatEl) beatEl.textContent = beat + (subBeat > 0 ? '.' + subBeat : '');
         if (stringEl) stringEl.textContent = cursor.string;
         if (durationEl) durationEl.textContent = this._getDurationName(currentDuration);
+
+        // Fingering on the note at the cursor. The toolbar has no
+        // fingering palette (there would be eleven buttons for a mark
+        // most tabs never carry), so this line is the only place what is
+        // set on a note becomes visible without reading the stave.
+        const fingEl = this.statusBar.querySelector('[data-field="fingering"]');
+        if (fingEl) {
+            const note = this.state.getNoteAtCursor();
+            const parts = [];
+            if (note?.finger) parts.push(note.finger);
+            if (note && note.lh != null) parts.push(`lh ${note.lh}`);
+            fingEl.textContent = parts.length ? parts.join(' · ') : '—';
+        }
 
         // Placed text at the cursor — the editor's only way to know which
         // annotation `c` would edit (the renderer draws them, but marks

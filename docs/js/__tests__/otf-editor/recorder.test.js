@@ -189,6 +189,9 @@ describe('EditEventRecorder', () => {
                     addArticulation: vi.fn(),
                     removeArticulation: vi.fn(),
                     setPendingArticulation: vi.fn(),
+                setFingering: vi.fn(),
+                setLeftHand: vi.fn(),
+                clearFingerings: vi.fn(),
                     copy: vi.fn(),
                     paste: vi.fn(),
                     undo: vi.fn(),
@@ -271,6 +274,9 @@ describe('dispatchEditorEvent', () => {
                 addArticulation: vi.fn(),
                 removeArticulation: vi.fn(),
                 setPendingArticulation: vi.fn(),
+                setFingering: vi.fn(),
+                setLeftHand: vi.fn(),
+                clearFingerings: vi.fn(),
                 copy: vi.fn(),
                 paste: vi.fn(),
                 undo: vi.fn(),
@@ -363,6 +369,45 @@ describe('dispatchEditorEvent', () => {
             params: { measure: 1, tick: 0, string: 3, tech: 'h' },
         });
         expect(editor.state.addArticulation).toHaveBeenCalledWith('h');
+    });
+
+    // Fingering replays per HAND, because they are two fields on the
+    // note and a recording that set one must not wipe the other.
+    it('dispatches setFingering at the recorded position', () => {
+        const editor = makeMockEditor();
+        dispatchEditorEvent(editor, {
+            type: 'setFingering',
+            params: { measure: 2, tick: 240, string: 1, finger: 'R' },
+        });
+        expect(editor.state.cursor).toMatchObject({ measure: 2, tick: 240, string: 1 });
+        expect(editor.state.setFingering).toHaveBeenCalledWith('R');
+    });
+
+    it('dispatches a fingering CLEAR (finger: null) as a clear', () => {
+        const editor = makeMockEditor();
+        dispatchEditorEvent(editor, {
+            type: 'setFingering',
+            params: { measure: 1, tick: 0, string: 3, finger: null },
+        });
+        expect(editor.state.setFingering).toHaveBeenCalledWith(null);
+    });
+
+    it('dispatches setLeftHand, digit 0 included', () => {
+        const editor = makeMockEditor();
+        dispatchEditorEvent(editor, {
+            type: 'setLeftHand',
+            params: { measure: 1, tick: 0, string: 3, digit: 0 },
+        });
+        expect(editor.state.setLeftHand).toHaveBeenCalledWith(0);
+    });
+
+    it('dispatches clearFingerings', () => {
+        const editor = makeMockEditor();
+        dispatchEditorEvent(editor, {
+            type: 'clearFingerings',
+            params: { measure: 1, tick: 0, string: 3 },
+        });
+        expect(editor.state.clearFingerings).toHaveBeenCalled();
     });
 
     it('dispatches undo', () => {
