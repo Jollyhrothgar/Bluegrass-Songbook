@@ -32,7 +32,8 @@ describe('EditorCursor', () => {
         it('creates with default options', () => {
             expect(cursor.options.cursorColor).toBe('var(--accent, #007bff)');
             expect(cursor.options.cursorWidth).toBe(2);
-            expect(cursor.options.insertBoxPadding).toBe(2);
+            expect(cursor.options.cursorColorVisual).toBe('var(--success, #16a34a)');
+            expect(cursor.options.cursorColorAnnotation).toBe('var(--danger, #dc2626)');
             expect(cursor.options.ghostOpacity).toBe(0.4);
         });
 
@@ -43,7 +44,8 @@ describe('EditorCursor', () => {
             });
             expect(customCursor.options.cursorColor).toBe('#ff0000');
             expect(customCursor.options.cursorWidth).toBe(4);
-            expect(customCursor.options.insertBoxPadding).toBe(2); // default preserved
+            // default preserved
+            expect(customCursor.options.cursorColorVisual).toBe('var(--success, #16a34a)');
         });
 
         it('starts with null layout info', () => {
@@ -217,16 +219,34 @@ describe('EditorCursor', () => {
             expect(() => cursor.update()).not.toThrow();
         });
 
-        it('updates cursor style based on mode', () => {
+        it('draws a SQUARE cell outline, sized from the layout', () => {
+            // Plan tab-editor-input-parity.md §7: "the cross hairs ...
+            // should be a square like in tabledit". One box, one grid
+            // slot wide x one string tall — no whiskers, no 50px
+            // container, and no dead 'insert' branch.
             state.mode = 'normal';
             cursor.update();
-            // In normal mode, cursor is a crosshair container
-            expect(cursor.cursorElement.style.width).toBe('50px'); // Container size
+            const el = cursor.cursorElement;
+            expect(el.style.border).toContain('solid');
+            expect(el.children.length).toBe(0);
+            // noteAreaWidth 180 / (1920 / gridSubdivision) per slot
+            const slot = 180 * state.gridSubdivision / 1920;
+            expect(parseFloat(el.style.width)).toBeCloseTo(slot, 5);
+            expect(parseFloat(el.style.height)).toBe(mockLayoutInfo.stringSpacing);
+        });
 
-            state.mode = 'insert';
+        it('colours the box by mode', () => {
+            state.mode = 'normal';
             cursor.update();
-            // In insert mode, cursor center has a box border
-            expect(cursor.cursorCenter.style.border).toContain('solid');
+            expect(cursor.cursorElement.style.border).toContain('var(--accent, #007bff)');
+
+            state.mode = 'visual';
+            cursor.update();
+            expect(cursor.cursorElement.style.border).toContain('var(--success, #16a34a)');
+
+            state.mode = 'annotation';
+            cursor.update();
+            expect(cursor.cursorElement.style.border).toContain('var(--danger, #dc2626)');
         });
     });
 
@@ -314,6 +334,20 @@ describe('EditorCursor', () => {
             state.cursor.tick = 480;
             cursor.moveByDuration(-1);
             expect(state.cursor.tick).toBe(240);
+        });
+
+        // Under AUTOMATIC duration the grid is the rhythm input (plan
+        // §6), so a step is one grid slot — not the column rule's
+        // prediction, which in an empty bar is the whole bar (QA D6).
+        it('steps by the GRID under automatic duration', () => {
+            state.setAutoDuration(true);
+            state.setGridSubdivision(DURATIONS.eighth);
+            state.cursor.tick = 0;
+            expect(state.effectiveDuration()).toBeGreaterThan(DURATIONS.eighth);
+            cursor.moveByDuration(1);
+            expect(state.cursor.tick).toBe(240);
+            cursor.moveByDuration(-1);
+            expect(state.cursor.tick).toBe(0);
         });
     });
 

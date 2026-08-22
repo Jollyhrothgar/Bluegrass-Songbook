@@ -688,3 +688,923 @@ describe('EditingFacade — setTempo / setFingering', () => {
         expect(f.setFingering({ measure: 1, tick: 0, string: 3 }, 'T')).toBe(false);
     });
 });
+
+// ----------------------------------------------------------------------
+// Fingering, BOTH hands. The vocabulary is the TEF importer's
+// (`sources/banjo-hangout/src/tef_parser/otf.py`): picking hand
+// T I M R P, fretting hand 0..4 — anything else would write a file
+// nothing on the site draws.
+// ----------------------------------------------------------------------
+
+describe('EditingFacade — fingering, both hands', () => {
+    let f;
+    const pos = { measure: 1, tick: 0, string: 3 };
+    const pos2 = { measure: 1, tick: 240, string: 2 };
+
+    beforeEach(() => {
+        f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 2 });
+        f.insertNote({ measure: 1, tick: 240, string: 2, fret: 0 });
+    });
+
+    it('accepts the whole picking-hand vocabulary, ring and pinky included', () => {
+        for (const finger of ['T', 'I', 'M', 'R', 'P']) {
+            expect(f.setFingering(pos, finger)).toBe(true);
+            expect(f._findNote(pos).note.finger).toBe(finger);
+        }
+    });
+
+    it('throws on a letter that is not in the vocabulary', () => {
+        expect(() => f.setFingering(pos, 'X')).toThrow(RangeError);
+        expect(() => f.setFingering(pos, 't')).toThrow(RangeError);
+        expect(f._findNote(pos).note.finger).toBeUndefined();
+    });
+
+    it('refuses (false, no history) when the note already reads that', () => {
+        expect(f.setFingering(pos, 'M')).toBe(true);
+        expect(f.setFingering(pos, 'M')).toBe(false);
+        expect(f.setFingering(pos2, null)).toBe(false); // nothing to clear
+    });
+
+    it('setLeftHand takes 0..4 and nothing else', () => {
+        for (const digit of [0, 1, 2, 3, 4]) {
+            expect(f.setLeftHand(pos, digit)).toBe(true);
+            expect(f._findNote(pos).note.lh).toBe(digit);
+        }
+        expect(() => f.setLeftHand(pos, 5)).toThrow(RangeError);
+        expect(() => f.setLeftHand(pos, -1)).toThrow(RangeError);
+        expect(() => f.setLeftHand(pos, '2')).toThrow(RangeError);
+        expect(f._findNote(pos).note.lh).toBe(4);
+    });
+
+    it('keeps the two hands independent', () => {
+        f.setFingering(pos, 'T');
+        f.setLeftHand(pos, 2);
+        expect(f._findNote(pos).note).toMatchObject({ finger: 'T', lh: 2 });
+        f.setFingering(pos, null);
+        expect(f._findNote(pos).note.finger).toBeUndefined();
+        expect(f._findNote(pos).note.lh).toBe(2);
+        f.setLeftHand(pos, null);
+        expect(f._findNote(pos).note.lh).toBeUndefined();
+    });
+
+    it('lh 0 is a real value, not a cleared one', () => {
+        expect(f.setLeftHand(pos, 0)).toBe(true);
+        expect(f._findNote(pos).note.lh).toBe(0);
+        expect(f.setLeftHand(pos, 0)).toBe(false);
+        expect(f.setLeftHand(pos, null)).toBe(true);
+        expect('lh' in f._findNote(pos).note).toBe(false);
+    });
+
+    it('is undoable in one step, per hand', () => {
+        f.setFingering(pos, 'R');
+        f.setLeftHand(pos, 3);
+        f.undo();
+        expect(f._findNote(pos).note.lh).toBeUndefined();
+        expect(f._findNote(pos).note.finger).toBe('R');
+        f.undo();
+        expect(f._findNote(pos).note.finger).toBeUndefined();
+        f.redo();
+        expect(f._findNote(pos).note.finger).toBe('R');
+    });
+
+    it('setRangeFingering marks a phrase in ONE undo step', () => {
+        expect(f.setRangeFingering(0, 480, 'I')).toBe(true);
+        expect(f._findNote(pos).note.finger).toBe('I');
+        expect(f._findNote(pos2).note.finger).toBe('I');
+        f.undo();
+        expect(f._findNote(pos).note.finger).toBeUndefined();
+        expect(f._findNote(pos2).note.finger).toBeUndefined();
+    });
+
+    it('setRangeFingering honours `strings`', () => {
+        expect(f.setRangeFingering(0, 480, 'P', { strings: [3] })).toBe(true);
+        expect(f._findNote(pos).note.finger).toBe('P');
+        expect(f._findNote(pos2).note.finger).toBeUndefined();
+    });
+
+    it('setRangeLeftHand honours `strings`, clears, and refuses a no-op', () => {
+        expect(f.setRangeLeftHand(0, 480, 4, { strings: [2] })).toBe(true);
+        expect(f._findNote(pos2).note.lh).toBe(4);
+        expect(f._findNote(pos).note.lh).toBeUndefined();
+        expect(f.setRangeLeftHand(0, 480, null)).toBe(true);
+        expect(f._findNote(pos2).note.lh).toBeUndefined();
+        expect(f.setRangeLeftHand(0, 480, null)).toBe(false);
+    });
+
+    it('the range ops validate their vocabulary too', () => {
+        expect(() => f.setRangeFingering(0, 480, 'Z')).toThrow(RangeError);
+        expect(() => f.setRangeLeftHand(0, 480, 9)).toThrow(RangeError);
+    });
+
+    it('an empty range changes nothing', () => {
+        const depth = f._history.length;
+        expect(f.setRangeFingering(1920, 2400, 'T')).toBe(false);
+        expect(f.setRangeLeftHand(1920, 2400, 1)).toBe(false);
+        expect(f._history.length).toBe(depth);
+    });
+});
+
+// ----------------------------------------------------------------------
+// Duration editing (TablEdit's `*`, `<`/`>`) — plan §3 P1-2
+// ----------------------------------------------------------------------
+
+describe('EditingFacade — duration editing', () => {
+    let f;
+    beforeEach(() => {
+        f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 0, duration: 240 });
+        f.insertNote({ measure: 1, tick: 240, string: 2, fret: 1, duration: 240 });
+        f.insertNote({ measure: 1, tick: 480, string: 1, fret: 2, duration: 240 });
+    });
+
+    it('setNoteDuration re-times one note and is undoable', () => {
+        const pos = { measure: 1, tick: 0, string: 3 };
+        expect(f.setNoteDuration(pos, 480)).toBe(true);
+        expect(f._findNote(pos).note.dur).toBe(480);
+        f.undo();
+        expect(f._findNote(pos).note.dur).toBe(240);
+    });
+
+    it('setNoteDuration is a no-op when the note already has it', () => {
+        expect(f.setNoteDuration({ measure: 1, tick: 0, string: 3 }, 240)).toBe(false);
+    });
+
+    it('setRangeDuration applies to every note in the range', () => {
+        expect(f.setRangeDuration(0, 480, 120)).toBe(true);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(120);
+        expect(f._findNote({ measure: 1, tick: 240, string: 2 }).note.dur).toBe(120);
+        // the note at 480 is outside [0, 480)
+        expect(f._findNote({ measure: 1, tick: 480, string: 1 }).note.dur).toBe(240);
+    });
+
+    it('setRangeDuration honours a string filter and is one undo step', () => {
+        expect(f.setRangeDuration(0, 1920, 60, { strings: [3] })).toBe(true);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(60);
+        expect(f._findNote({ measure: 1, tick: 240, string: 2 }).note.dur).toBe(240);
+        f.undo();
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(240);
+    });
+
+    it('setRangeDuration on an empty range changes nothing', () => {
+        expect(f.setRangeDuration(1920, 3840, 120)).toBe(false);
+    });
+
+    it('scaleDuration halves and doubles', () => {
+        const pos = { measure: 1, tick: 0, string: 3 };
+        expect(f.scaleDuration(pos, 0.5)).toBe(true);
+        expect(f._findNote(pos).note.dur).toBe(120);
+        expect(f.scaleDuration(pos, 2)).toBe(true);
+        expect(f._findNote(pos).note.dur).toBe(240);
+    });
+
+    it('scaleDuration clamps to [60, 1920]', () => {
+        const pos = { measure: 1, tick: 0, string: 3 };
+        f.setNoteDuration(pos, 60);
+        expect(f.scaleDuration(pos, 0.5)).toBe(false);  // already at the floor
+        f.setNoteDuration(pos, 1920);
+        expect(f.scaleDuration(pos, 2)).toBe(false);    // already at the ceiling
+        f.setNoteDuration(pos, 1440);
+        expect(f.scaleDuration(pos, 2)).toBe(true);
+        expect(f._findNote(pos).note.dur).toBe(1920);
+    });
+
+    it('scaleDuration scales an un-timed note from the column rule', () => {
+        const g = new EditingFacade(banjoDoc());
+        g.insertNote({ measure: 1, tick: 0, string: 3, fret: 0 });   // no dur
+        g.insertNote({ measure: 1, tick: 240, string: 2, fret: 1 });
+        const pos = { measure: 1, tick: 0, string: 3 };
+        expect(g.autoDurationAt(pos)).toBe(240);
+        expect(g.scaleDuration(pos, 2)).toBe(true);
+        expect(g._findNote(pos).note.dur).toBe(480);
+    });
+
+    it('scaleRangeDuration scales a whole phrase in one step', () => {
+        expect(f.scaleRangeDuration(0, 1920, 2)).toBe(true);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(480);
+        expect(f._findNote({ measure: 1, tick: 480, string: 1 }).note.dur).toBe(480);
+        f.undo();
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(240);
+    });
+
+    it('scaleDuration on an empty slot is a no-op', () => {
+        expect(f.scaleDuration({ measure: 2, tick: 0, string: 3 }, 2)).toBe(false);
+    });
+});
+
+// ----------------------------------------------------------------------
+// Note fixes: fret transpose and pitch-preserving re-stringing
+// ----------------------------------------------------------------------
+
+describe('EditingFacade — transposeFret / moveNoteToString', () => {
+    let f;
+    beforeEach(() => {
+        f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 5, duration: 240 });
+    });
+
+    it('transposeFret moves by delta and is undoable', () => {
+        const pos = { measure: 1, tick: 0, string: 3 };
+        expect(f.transposeFret(pos, 1)).toBe(true);
+        expect(f._findNote(pos).note.f).toBe(6);
+        f.undo();
+        expect(f._findNote(pos).note.f).toBe(5);
+    });
+
+    it('transposeFret clamps to 0..24 and refuses when already there', () => {
+        const pos = { measure: 1, tick: 0, string: 3 };
+        f.setNoteDuration(pos, 240);
+        expect(f.transposeFret(pos, -99)).toBe(true);
+        expect(f._findNote(pos).note.f).toBe(0);
+        expect(f.transposeFret(pos, -1)).toBe(false);
+        expect(f.transposeFret(pos, 99)).toBe(true);
+        expect(f._findNote(pos).note.f).toBe(24);
+        expect(f.transposeFret(pos, 1)).toBe(false);
+    });
+
+    it('moveNoteToString keeps the pitch (G3 fret 5 → D3 fret 10)', () => {
+        // banjo tuning D4 B3 G3 D3 G4: string 3 = G3 (55), string 4 = D3 (50)
+        expect(f.moveNoteToString({ measure: 1, tick: 0, string: 3 }, 1)).toBe(true);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note).toBe(null);
+        const moved = f._findNote({ measure: 1, tick: 0, string: 4 }).note;
+        expect(moved.f).toBe(10);
+        expect(moved.dur).toBe(240);
+    });
+
+    it('moveNoteToString refuses when the fret would leave 0..24', () => {
+        f.insertNote({ measure: 2, tick: 0, string: 4, fret: 0, duration: 240 });
+        // D3 open onto G3 would be fret -5
+        expect(f.moveNoteToString({ measure: 2, tick: 0, string: 4 }, -1)).toBe(false);
+        expect(f._findNote({ measure: 2, tick: 0, string: 4 }).note.f).toBe(0);
+    });
+
+    it('moveNoteToString refuses an occupied target slot', () => {
+        f.insertNote({ measure: 1, tick: 0, string: 4, fret: 0, duration: 240 });
+        expect(f.moveNoteToString({ measure: 1, tick: 0, string: 3 }, 1)).toBe(false);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.f).toBe(5);
+    });
+
+    it('moveNoteToString refuses past the last string, and off the neck', () => {
+        expect(f.moveNoteToString({ measure: 1, tick: 0, string: 3 }, 2)).toBe(false);
+        f.insertNote({ measure: 3, tick: 0, string: 5, fret: 0, duration: 240 });
+        expect(f.moveNoteToString({ measure: 3, tick: 0, string: 5 }, 1)).toBe(false);
+    });
+
+    it('moveNoteToString is one undo step', () => {
+        f.moveNoteToString({ measure: 1, tick: 0, string: 3 }, 1);
+        f.undo();
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.f).toBe(5);
+        expect(f._findNote({ measure: 1, tick: 0, string: 4 }).note).toBe(null);
+    });
+});
+
+// ----------------------------------------------------------------------
+// Techniques the corpus has and the editor could not produce (#184)
+// ----------------------------------------------------------------------
+
+describe('EditingFacade — technique vocabulary', () => {
+    it('accepts x (dead note) and b (choke) on entry and after the fact', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 2, fret: 0, duration: 240, tech: 'x' });
+        expect(f._findNote({ measure: 1, tick: 0, string: 2 }).note.tech).toBe('x');
+        f.insertNote({ measure: 1, tick: 240, string: 1, fret: 5, duration: 240 });
+        const pos = { measure: 1, tick: 240, string: 1 };
+        expect(f.setArticulation(pos, 'b')).toBe(true);
+        expect(f._findNote(pos).note.tech).toBe('b');
+    });
+
+    it('rejects a tech the renderer and player have never seen', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 0, duration: 240 });
+        expect(() => f.setArticulation({ measure: 1, tick: 0, string: 3 }, 'q'))
+            .toThrow(RangeError);
+        expect(() => f.insertNote({
+            measure: 1, tick: 480, string: 3, fret: 0, duration: 240, tech: 'zz',
+        })).toThrow(RangeError);
+    });
+});
+
+// ----------------------------------------------------------------------
+// Ties: `tie: true` on the continuation, never `tech: '~'`
+// ----------------------------------------------------------------------
+
+describe('EditingFacade — ties', () => {
+    let f;
+    beforeEach(() => {
+        f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 0, duration: 240 });
+        f.insertNote({ measure: 1, tick: 240, string: 3, fret: 0, duration: 240 });
+    });
+
+    it('setTie marks the continuation note', () => {
+        const pos = { measure: 1, tick: 240, string: 3 };
+        expect(f.setTie(pos, true)).toBe(true);
+        expect(f._findNote(pos).note.tie).toBe(true);
+        f.undo();
+        expect(f._findNote(pos).note.tie).toBeUndefined();
+    });
+
+    it('setTie refuses with no same-string predecessor', () => {
+        // string 2 has nothing before it
+        f.insertNote({ measure: 1, tick: 240, string: 2, fret: 1, duration: 240 });
+        const pos = { measure: 1, tick: 240, string: 2 };
+        expect(f.setTie(pos, true)).toBe(false);
+        expect(f._findNote(pos).note.tie).toBeUndefined();
+        expect(f.canUndo()).toBe(true);   // only the inserts are on the stack
+        f.undo();
+        expect(f._findNote(pos).note).toBe(null);
+    });
+
+    it('accepts a predecessor at the end of the previous measure', () => {
+        f.insertNote({ measure: 2, tick: 0, string: 3, fret: 0, duration: 240 });
+        expect(f.setTie({ measure: 2, tick: 0, string: 3 }, true)).toBe(true);
+    });
+
+    it('clearing a tie that is not set is a no-op', () => {
+        expect(f.setTie({ measure: 1, tick: 240, string: 3 }, false)).toBe(false);
+    });
+
+    it('tie and tech are independent fields', () => {
+        const pos = { measure: 1, tick: 240, string: 3 };
+        f.setArticulation(pos, '/');
+        f.setTie(pos, true);
+        expect(f._findNote(pos).note).toMatchObject({ tech: '/', tie: true });
+        f.setArticulation(pos, null);
+        expect(f._findNote(pos).note.tie).toBe(true);
+        f.setArticulation(pos, 'h');
+        f.setTie(pos, false);
+        expect(f._findNote(pos).note.tech).toBe('h');
+        expect(f._findNote(pos).note.tie).toBeUndefined();
+    });
+
+    it("setArticulation('~') means tie, and never writes tech", () => {
+        const pos = { measure: 1, tick: 240, string: 3 };
+        expect(f.setArticulation(pos, '~')).toBe(true);
+        expect(f._findNote(pos).note.tie).toBe(true);
+        expect(f._findNote(pos).note.tech).toBeUndefined();
+    });
+
+    it("insertNote with tech '~' ties when it can, and never writes tech", () => {
+        f.insertNote({ measure: 1, tick: 480, string: 3, fret: 0, duration: 240, tech: '~' });
+        const tied = f._findNote({ measure: 1, tick: 480, string: 3 }).note;
+        expect(tied.tie).toBe(true);
+        expect(tied.tech).toBeUndefined();
+
+        // Nothing before it on string 1 → placed, but not tied
+        f.insertNote({ measure: 1, tick: 480, string: 1, fret: 7, duration: 240, tech: '~' });
+        const lone = f._findNote({ measure: 1, tick: 480, string: 1 }).note;
+        expect(lone.tie).toBeUndefined();
+        expect(lone.tech).toBeUndefined();
+    });
+
+    it("load() converts legacy tech '~' to a tie, or drops it", () => {
+        const doc = banjoDoc();
+        doc.notation.banjo[0].events = [
+            { tick: 0, notes: [{ s: 3, f: 0, dur: 240 }] },
+            { tick: 240, notes: [{ s: 3, f: 0, dur: 240, tech: '~' }] },
+            { tick: 480, notes: [{ s: 1, f: 5, dur: 240, tech: '~' }] },
+        ];
+        const g = new EditingFacade(doc);
+        expect(g._findNote({ measure: 1, tick: 240, string: 3 }).note)
+            .toEqual({ s: 3, f: 0, dur: 240, tie: true });
+        expect(g._findNote({ measure: 1, tick: 480, string: 1 }).note)
+            .toEqual({ s: 1, f: 5, dur: 240 });
+    });
+
+    it('a document without ~ round-trips byte-identical through load', () => {
+        const doc = banjoDoc();
+        doc.notation.banjo[0].events = [
+            { tick: 0, notes: [{ s: 3, f: 0, dur: 240, tech: 'h' }] },
+            { tick: 240, notes: [{ s: 3, f: 2, dur: 240, tie: true }] },
+        ];
+        const before = JSON.stringify(doc);
+        const g = new EditingFacade(doc);
+        expect(JSON.stringify(g.export())).toBe(before);
+        g.load(JSON.parse(before));
+        expect(JSON.stringify(g.export())).toBe(before);
+    });
+});
+
+// ----------------------------------------------------------------------
+// Measures: delete, ripple, repeat
+// ----------------------------------------------------------------------
+
+describe('EditingFacade — deleteMeasure', () => {
+    it('is the inverse of insertMeasure across all tracks', () => {
+        const f = new EditingFacade(tsChangeDoc());
+        f.insertNote({ measure: 4, tick: 0, string: 1, fret: 7, duration: 480, trackId: 'guitar' });
+        f.insertNote({ measure: 4, tick: 0, string: 1, fret: 3, duration: 480, trackId: 'bass' });
+        const before = JSON.stringify(f.export());
+
+        f.insertMeasure(2);
+        expect(f.getMeasure(5, 'guitar').events[0].notes[0].f).toBe(7);
+        expect(f.deleteMeasure(2)).toBe(true);
+        expect(JSON.stringify(f.export())).toBe(before);
+    });
+
+    it('renumbers reading_list, annotations and ts changes', () => {
+        const f = new EditingFacade(tsChangeDoc());
+        f.otf.reading_list = [
+            { from_measure: 1, to_measure: 2 },
+            { from_measure: 2, to_measure: 2 },
+            { from_measure: 3, to_measure: 5 },
+        ];
+        f.otf.annotations = [
+            { measure: 1, tick: 0, text: 'PART A' },
+            { measure: 2, tick: 0, text: 'gone' },
+            { measure: 4, tick: 0, text: 'PART B' },
+        ];
+        f._invalidateTiming();
+        expect(f.deleteMeasure(2)).toBe(true);
+        expect(f.otf.reading_list).toEqual([
+            { from_measure: 1, to_measure: 1 },
+            { from_measure: 2, to_measure: 4 },
+        ]);
+        expect(f.otf.annotations).toEqual([
+            { measure: 1, tick: 0, text: 'PART A' },
+            { measure: 3, tick: 0, text: 'PART B' },
+        ]);
+        // the 2/4 change at m3 follows its measure back to m2
+        expect(f.otf.metadata.time_signature_changes).toEqual([
+            { measure: 2, time_signature: '2/4' },
+        ]);
+        expect(f.ticksFor(2)).toBe(960);
+    });
+
+    it('every surviving measure keeps its signature when the deleted one had a change', () => {
+        const f = new EditingFacade(tsChangeDoc());
+        // m3 = 2/4, m4 = back to 2/2 via an explicit change
+        f.otf.metadata.time_signature_changes = [
+            { measure: 3, time_signature: '2/4' },
+            { measure: 4, time_signature: '2/2' },
+        ];
+        f._invalidateTiming();
+        expect(f.deleteMeasure(3)).toBe(true);
+        expect(f.ticksFor(3)).toBe(1920);   // what used to be m4
+        expect(f.otf.metadata.time_signature_changes).toEqual([
+            { measure: 3, time_signature: '2/2' },
+        ]);
+    });
+
+    it('drops reading_list entirely when nothing is left of it', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.otf.reading_list = [{ from_measure: 2, to_measure: 2 }];
+        expect(f.deleteMeasure(2)).toBe(true);
+        expect(f.otf.reading_list).toBeUndefined();
+    });
+
+    it('refuses out-of-range numbers and the last measure standing', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(f.deleteMeasure(0)).toBe(false);
+        expect(f.deleteMeasure(9)).toBe(false);
+        f.deleteMeasure(4); f.deleteMeasure(3); f.deleteMeasure(2);
+        expect(f.getMeasureCount()).toBe(1);
+        expect(f.deleteMeasure(1)).toBe(false);
+    });
+
+    it('is one undo step', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 3, tick: 0, string: 3, fret: 5, duration: 240 });
+        const before = JSON.stringify(f.export());
+        f.deleteMeasure(2);
+        f.undo();
+        expect(JSON.stringify(f.export())).toBe(before);
+    });
+});
+
+describe('EditingFacade — shiftRight / shiftLeft', () => {
+    let f;
+    beforeEach(() => {
+        f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 3, fret: 0, duration: 240 });
+        f.insertNote({ measure: 1, tick: 240, string: 2, fret: 1, duration: 240 });
+        f.insertNote({ measure: 1, tick: 480, string: 1, fret: 2, duration: 240 });
+    });
+
+    it('moves everything at or after the tick', () => {
+        expect(f.shiftRight(1, 240, 240)).toBe(true);
+        expect(f.getMeasure(1).events.map(e => e.tick)).toEqual([0, 480, 720]);
+        expect(f._findNote({ measure: 1, tick: 480, string: 2 }).note.f).toBe(1);
+    });
+
+    it('shiftLeft closes the hole', () => {
+        f.shiftRight(1, 240, 240);
+        expect(f.shiftLeft(1, 480, 240)).toBe(true);
+        expect(f.getMeasure(1).events.map(e => e.tick)).toEqual([0, 240, 480]);
+    });
+
+    it('refuses to push a note past the barline, with no mutation', () => {
+        const before = JSON.stringify(f.export());
+        expect(f.shiftRight(1, 0, 1680)).toBe(false);
+        expect(JSON.stringify(f.export())).toBe(before);
+    });
+
+    it('refuses to pull a note before the barline', () => {
+        expect(f.shiftLeft(1, 0, 240)).toBe(false);
+        expect(f.getMeasure(1).events[0].tick).toBe(0);
+    });
+
+    it('refuses to land on an occupied slot', () => {
+        // shifting the tail left by 240 would put it on tick 0
+        expect(f.shiftLeft(1, 240, 240)).toBe(false);
+    });
+
+    it('returns false when there is nothing at or after the tick', () => {
+        expect(f.shiftRight(1, 960, 240)).toBe(false);
+        expect(f.shiftRight(2, 0, 240)).toBe(false);
+    });
+
+    it('is one undo step', () => {
+        const before = JSON.stringify(f.export());
+        f.shiftRight(1, 0, 240);
+        f.undo();
+        expect(JSON.stringify(f.export())).toBe(before);
+    });
+});
+
+describe('EditingFacade — repeatMeasure', () => {
+    let f;
+    beforeEach(() => {
+        f = new EditingFacade(banjoDoc());
+        f.insertNote({ measure: 1, tick: 0, string: 5, fret: 0, duration: 240 });
+        f.insertNote({ measure: 1, tick: 240, string: 3, fret: 0, duration: 240 });
+    });
+
+    it('copies the previous measure into an empty one', () => {
+        expect(f.repeatMeasure(2)).toBe(true);
+        expect(f.getMeasure(2).events.map(e => e.tick)).toEqual([0, 240]);
+        expect(f._findNote({ measure: 2, tick: 240, string: 3 }).note.dur).toBe(240);
+        // a copy, not a shared reference
+        f.setNoteDuration({ measure: 2, tick: 0, string: 5 }, 480);
+        expect(f._findNote({ measure: 1, tick: 0, string: 5 }).note.dur).toBe(240);
+    });
+
+    it('creates the measure when it does not exist yet', () => {
+        f.otf.notation.banjo = f.otf.notation.banjo.filter(m => m.measure === 1);
+        f._invalidateTiming();
+        expect(f.repeatMeasure(2)).toBe(true);
+        expect(f.getMeasure(2).events.length).toBe(2);
+    });
+
+    it('refuses when the target already has notes', () => {
+        f.insertNote({ measure: 2, tick: 0, string: 1, fret: 7, duration: 240 });
+        expect(f.repeatMeasure(2)).toBe(false);
+        expect(f.getMeasure(2).events.length).toBe(1);
+    });
+
+    it('refuses at measure 1, and when the source is empty', () => {
+        expect(f.repeatMeasure(1)).toBe(false);
+        expect(f.repeatMeasure(4)).toBe(false);  // m3 is empty
+    });
+
+    it('refuses when the source does not fit the destination', () => {
+        const g = new EditingFacade(tsChangeDoc());
+        // m2 is 1920 ticks, m3 is 960
+        g.insertNote({ measure: 2, tick: 1440, string: 1, fret: 0, duration: 240, trackId: 'guitar' });
+        expect(g.repeatMeasure(3, { trackId: 'guitar' })).toBe(false);
+    });
+
+    it('is one undo step', () => {
+        const before = JSON.stringify(f.export());
+        f.repeatMeasure(2);
+        f.undo();
+        expect(JSON.stringify(f.export())).toBe(before);
+    });
+});
+
+// ----------------------------------------------------------------------
+// Automatic duration — the column rule (plan §6)
+// ----------------------------------------------------------------------
+
+describe('EditingFacade — automatic duration', () => {
+    const pins = () => new Set();
+    /** Enter a note under auto, tracking the session sets. */
+    function auto(f, measure, tick, string, fret, sets) {
+        return f.insertNote({
+            measure, tick, string, fret,
+            autoDuration: true, pins: sets.pins, autoEntered: sets.autoEntered,
+        });
+    }
+    const sets = () => ({ pins: pins(), autoEntered: new Set() });
+    const durs = (f, measure = 1) => f.getMeasure(measure).events
+        .flatMap(e => e.notes.map(n => n.dur));
+
+    it('a Scruggs roll on a 1/8 grid comes out as eight eighths', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        const roll = [5, 3, 2, 5, 3, 2, 5, 3];   // strings, forward roll
+        roll.forEach((string, i) => auto(f, 1, i * 240, string, 0, s));
+        expect(durs(f)).toEqual(new Array(8).fill(240));
+    });
+
+    it('a triplet grid yields triplet eighths', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        // Three triplet eighths and the downbeat that closes them: on a
+        // 160 grid the gaps ARE triplets, with no triplet MODE anywhere.
+        // The fourth is the measure's LAST column, so it takes the
+        // interval before it (160) — TablEdit's "assign the same value
+        // to the second note" — and the bar's remaining 1440 ticks are
+        // silence the renderer draws as rests.
+        [0, 160, 320, 480].forEach((tick, i) => auto(f, 1, tick, 3 - (i % 3), 0, s));
+        expect(durs(f)).toEqual([160, 160, 160, 160]);
+    });
+
+    // The manual, verbatim: "if you enter a note at the very first
+    // position in a measure ... it will automatically be displayed as a
+    // whole note. If you then move the cursor ... an 1/8th note further
+    // on ... TablEdit will automatically change the first note into an
+    // 1/8th note and assign the same value to the second note."
+    it('a lone note fills the measure; the second one gets the SAME value', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 1, 0, 3, 0, s);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(1920);
+        auto(f, 1, 240, 2, 1, s);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(240);
+        expect(f._findNote({ measure: 1, tick: 240, string: 2 }).note.dur).toBe(240);
+    });
+
+    it('deleting the second note re-extends the first', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 1, 0, 3, 0, s);
+        auto(f, 1, 240, 2, 1, s);
+        f.deleteNote({ measure: 1, tick: 240, string: 2 }, 'banjo',
+            { autoDuration: true, ...s });
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(1920);
+    });
+
+    it('a chord at one tick shares one duration', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 1, 0, 3, 0, s);
+        auto(f, 1, 0, 2, 1, s);
+        auto(f, 1, 480, 1, 2, s);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(480);
+        expect(f._findNote({ measure: 1, tick: 0, string: 2 }).note.dur).toBe(480);
+    });
+
+    it('never ties across the barline: each measure is computed alone', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 1, 1680, 3, 0, s);
+        auto(f, 2, 0, 3, 0, s);
+        expect(f._findNote({ measure: 1, tick: 1680, string: 3 }).note.dur).toBe(240);
+        expect(f._findNote({ measure: 1, tick: 1680, string: 3 }).note.tie).toBeUndefined();
+        expect(f._findNote({ measure: 2, tick: 0, string: 3 }).note.dur).toBe(1920);
+    });
+
+    it('a pinned note is never re-timed', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 1, 0, 3, 0, s);
+        s.pins.add('1:0:3');
+        s.autoEntered.delete('1:0:3');
+        f.setNoteDuration({ measure: 1, tick: 0, string: 3 }, 1920);
+        auto(f, 1, 240, 2, 1, s);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(1920);
+        // The last-column rule reads the PRECEDING INTERVAL, which is a
+        // fact about spacing — pinning the note at tick 0 keeps its own
+        // duration at 1920 but does not change where it sits.
+        expect(f._findNote({ measure: 1, tick: 240, string: 2 }).note.dur).toBe(240);
+    });
+
+    it('a loaded document is never re-timed by auto', () => {
+        const doc = banjoDoc();
+        doc.notation.banjo[0].events = [
+            { tick: 0, notes: [{ s: 3, f: 0, dur: 1920 }] },
+        ];
+        const f = new EditingFacade(doc);
+        const s = sets();   // fresh session: no keys at all
+        auto(f, 1, 240, 2, 1, s);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(1920);
+    });
+
+    it('one undo takes back the note AND the neighbour re-timing', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 1, 0, 3, 0, s);
+        auto(f, 1, 240, 2, 1, s);
+        f.undo();
+        expect(f._findNote({ measure: 1, tick: 240, string: 2 }).note).toBe(null);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(1920);
+    });
+
+    it('autoDurationAt predicts the slot before anything is typed', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 1, 480, 3, 0, s);
+        expect(f.autoDurationAt({ measure: 1, tick: 0 })).toBe(480);
+        expect(f.autoDurationAt({ measure: 1, tick: 480 })).toBe(1440);
+        expect(f.autoDurationAt({ measure: 2, tick: 0 })).toBe(1920);
+    });
+
+    it('fixDurations repairs a measure regardless of pins', () => {
+        const doc = banjoDoc();
+        doc.notation.banjo[0].events = [
+            { tick: 0, notes: [{ s: 3, f: 0, dur: 1920 }] },
+            { tick: 240, notes: [{ s: 2, f: 1, dur: 1920 }] },
+            { tick: 480, notes: [{ s: 1, f: 2, dur: 60 }] },
+        ];
+        const f = new EditingFacade(doc);
+        expect(f.fixDurations(1)).toBe(true);
+        expect(durs(f)).toEqual([240, 240, 240]);
+        f.undo();
+        expect(durs(f)).toEqual([1920, 1920, 60]);
+    });
+
+    it('fixDurations over a range only re-times what the range covers', () => {
+        const doc = banjoDoc();
+        doc.notation.banjo[0].events = [
+            { tick: 0, notes: [{ s: 3, f: 0, dur: 1920 }] },
+            { tick: 240, notes: [{ s: 2, f: 1, dur: 1920 }] },
+        ];
+        const f = new EditingFacade(doc);
+        expect(f.fixDurations({ startAbs: 0, endAbs: 240 })).toBe(true);
+        expect(durs(f)).toEqual([240, 1920]);
+    });
+
+    it('fixDurations on already-correct durations changes nothing', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 1, 0, 3, 0, s);
+        expect(f.fixDurations(1)).toBe(false);
+    });
+
+    it('paste under auto keeps its own rhythm but re-times the neighbours', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 1, 0, 3, 0, s);           // fills the measure: 1920
+        f.insertNote({ measure: 3, tick: 0, string: 1, fret: 7, duration: 120 });
+        const payload = f.copyRange(f.toAbs(3, 0), f.toAbs(3, 120));
+        f.paste(f.toAbs(1, 960), payload,
+            { autoDuration: true, pins: s.pins, autoEntered: s.autoEntered });
+        expect(f._findNote({ measure: 1, tick: 960, string: 1 }).note.dur).toBe(120);
+        expect(f._findNote({ measure: 1, tick: 0, string: 3 }).note.dur).toBe(960);
+    });
+});
+
+// ----------------------------------------------------------------------
+// The last column takes the PRECEDING INTERVAL — TablEdit's manual,
+// walked through sentence by sentence (note_menu.shtml, "Automatic
+// duration"). This is the rule the whole feature is judged against, so
+// the scenario is written out rather than summarised.
+// ----------------------------------------------------------------------
+
+describe('EditingFacade — automatic duration follows the manual', () => {
+    const sets = () => ({ pins: new Set(), autoEntered: new Set() });
+    const auto = (f, tick, string, s) => f.insertNote({
+        measure: 1, tick, string, fret: 0,
+        autoDuration: true, pins: s.pins, autoEntered: s.autoEntered,
+    });
+    const durs = (f, measure = 1) => f.getMeasure(measure).events
+        .flatMap(e => e.notes.map(n => n.dur));
+    /** Ticks in the bar that nothing sounds through. */
+    const silence = (f, measure = 1) => f.ticksFor(measure)
+        - f.getMeasure(measure).events
+            .reduce((sum, e) => sum + Math.max(...e.notes.map(n => n.dur)), 0);
+
+    it('"a note at the very first position ... displayed as a whole note"', () => {
+        const f = new EditingFacade(banjoDoc());
+        auto(f, 0, 3, sets());
+        expect(durs(f)).toEqual([1920]);
+    });
+
+    it('"change the first note into an 1/8th ... assign the same value to the second"', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 240, 2, s);
+        expect(durs(f)).toEqual([240, 240]);
+    });
+
+    it('"a 1/4 rest and a 1/2 rest to fill out the first measure" — 1440 ticks of it', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 240, 2, s);
+        // Moving on to the next measure changes nothing about this one:
+        // the two eighths stay eighths and the bar is 1440 ticks short.
+        expect(silence(f)).toBe(1440);
+    });
+
+    it('"if you delete a note, TablEdit adjusts the remaining notes"', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 240, 2, s);
+        f.deleteNote({ measure: 1, tick: 240, string: 2 }, 'banjo',
+            { autoDuration: true, ...s });
+        expect(durs(f)).toEqual([1920]);
+        expect(silence(f)).toBe(0);
+    });
+
+    it('"if a note duration has been selected manually, deleting has no effect"', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 240, 2, s);
+        // Pin the first note by hand at a quarter, the escape hatch the
+        // plan calls P1-2 (park on it, press `q`).
+        f.setNoteDuration({ measure: 1, tick: 0, string: 3 }, 480);
+        s.autoEntered.delete('1:0:3');
+        s.pins.add('1:0:3');
+        f.deleteNote({ measure: 1, tick: 240, string: 2 }, 'banjo',
+            { autoDuration: true, ...s });
+        expect(durs(f)).toEqual([480]);
+    });
+
+    it('three notes a step apart are three of that step', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        [0, 240, 480].forEach((tick, i) => auto(f, tick, 3 - i, s));
+        expect(durs(f)).toEqual([240, 240, 240]);
+    });
+
+    it('two notes a quarter apart are two quarters — the interval sets the last', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 480, 2, s);
+        expect(durs(f)).toEqual([480, 480]);
+        expect(silence(f)).toBe(960);
+    });
+
+    it('a LONE note mid-measure still fills to the barline', () => {
+        // "in relation to the beginning and end of the measure": with
+        // nothing before it, there is no preceding interval to copy.
+        const f = new EditingFacade(banjoDoc());
+        auto(f, 480, 3, sets());
+        expect(durs(f)).toEqual([1440]);
+    });
+
+    it('the preceding interval never crosses the barline', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 1800, 2, s);   // 1800 ticks apart, 120 left in the bar
+        expect(durs(f)).toEqual([1800, 120]);
+    });
+
+    it('a chord in the last column shares the one value', () => {
+        const f = new EditingFacade(banjoDoc());
+        const s = sets();
+        auto(f, 0, 3, s);
+        auto(f, 240, 2, s);
+        auto(f, 240, 1, s);
+        expect(durs(f)).toEqual([240, 240, 240]);
+    });
+
+    it('J (fixDurations) applies exactly the same rule', () => {
+        const doc = banjoDoc();
+        doc.notation.banjo[0].events = [
+            { tick: 0, notes: [{ s: 3, f: 0, dur: 1920 }] },
+            { tick: 240, notes: [{ s: 2, f: 1, dur: 1920 }] },
+        ];
+        const f = new EditingFacade(doc);
+        expect(f.fixDurations(1)).toBe(true);
+        expect(durs(f)).toEqual([240, 240]);
+    });
+
+    describe('autoDurationAt — the prediction the palette and status bar show', () => {
+        it('an empty bar predicts the whole bar', () => {
+            const f = new EditingFacade(banjoDoc());
+            expect(f.autoDurationAt({ measure: 1, tick: 0 })).toBe(1920);
+        });
+
+        it('the slot after the only note predicts the interval to it', () => {
+            const f = new EditingFacade(banjoDoc());
+            auto(f, 0, 3, sets());
+            expect(f.autoDurationAt({ measure: 1, tick: 240 })).toBe(240);
+            expect(f.autoDurationAt({ measure: 1, tick: 480 })).toBe(480);
+            expect(f.autoDurationAt({ measure: 1, tick: 160 })).toBe(160);
+        });
+
+        it('a slot BEFORE a note still predicts the gap to it', () => {
+            const f = new EditingFacade(banjoDoc());
+            auto(f, 480, 3, sets());
+            expect(f.autoDurationAt({ measure: 1, tick: 0 })).toBe(480);
+        });
+
+        it('a slot with nothing before it predicts the rest of the bar', () => {
+            const f = new EditingFacade(banjoDoc());
+            expect(f.autoDurationAt({ measure: 1, tick: 480 })).toBe(1440);
+        });
+
+        it('the preceding interval is clamped to the barline', () => {
+            const f = new EditingFacade(banjoDoc());
+            auto(f, 0, 3, sets());
+            expect(f.autoDurationAt({ measure: 1, tick: 1860 })).toBe(60);
+        });
+
+        it('predicts for the column it would JOIN, not the one it sits on', () => {
+            const f = new EditingFacade(banjoDoc());
+            const s = sets();
+            auto(f, 0, 3, s);
+            auto(f, 240, 2, s);
+            // adding to the existing last column: same preceding interval
+            expect(f.autoDurationAt({ measure: 1, tick: 240 })).toBe(240);
+        });
+    });
+});

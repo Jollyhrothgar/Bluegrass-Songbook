@@ -2,8 +2,8 @@
 // that controls are MOVED, not rebuilt — so every test here checks that the
 // listeners work-view.js attached once still fire from the sheet, and that
 // widening the viewport puts the band back exactly as it was.
-import { describe, it, expect, beforeEach } from 'vitest';
-import { attachTabControlsSheet } from '../tab-controls-sheet.js';
+import { describe, it, expect, beforeEach, afterEach } from 'vitest';
+import { attachTabControlsSheet, NARROW_WIDTH } from '../tab-controls-sheet.js';
 
 function fakeMedia(matches) {
     const listeners = [];
@@ -227,5 +227,71 @@ describe('tab settings sheet — desktop and breakpoint crossing', () => {
         document.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Escape' }));
         expect(first.isOpen()).toBe(true);
         expect(next.querySelector('.tab-settings-sheet')).toBeTruthy();
+    });
+});
+
+// ── The band's OWN width, not the window's ────────────────────────────────
+//
+// The collapse is a container question: the band is what runs out of room,
+// and it can run out on a wide screen (a split view, a narrow window — or a
+// test that constrains the container, which is the whole point). jsdom has
+// no layout, so the ResizeObserver is faked: what is under test is that the
+// module ASKS the element and prefers that answer to the media query.
+describe('container-width collapse', () => {
+    let controls;
+    let observers;
+
+    beforeEach(() => {
+        document.body.innerHTML = '';
+        controls = buildControls();
+        observers = [];
+        globalThis.ResizeObserver = class {
+            constructor(cb) { this.cb = cb; observers.push(this); }
+            observe(el) { this.el = el; }
+            disconnect() { this.disconnected = true; }
+            /** Pretend the band was laid out at `width`. */
+            resize(width) { this.cb([{ contentRect: { width } }]); }
+        };
+    });
+
+    afterEach(() => {
+        delete globalThis.ResizeObserver;
+    });
+
+    it('collapses when the BAND is narrow, whatever the viewport says', () => {
+        // No media injected → the module makes its own (jsdom's matchMedia
+        // reports a 1024px window, i.e. NOT narrow) and observes the band.
+        attachTabControlsSheet(controls);
+        expect(observers.length).toBe(1);
+        expect(controls.querySelector('.tab-more-btn')).toBeNull();
+
+        observers[0].resize(NARROW_WIDTH - 1);
+        expect(controls.querySelector('.tab-more-btn')).toBeTruthy();
+        expect(controls.classList.contains('is-narrow-band')).toBe(true);
+        expect(controls.querySelector('.tab-settings-sheet .tab-edit-btn')).toBeTruthy();
+    });
+
+    it('puts the band back when the container widens again', () => {
+        attachTabControlsSheet(controls);
+        observers[0].resize(400);
+        expect(controls.querySelector('.tab-more-btn')).toBeTruthy();
+
+        observers[0].resize(1200);
+        expect(controls.querySelector('.tab-more-btn')).toBeNull();
+        expect(controls.classList.contains('is-narrow-band')).toBe(false);
+        expect(controls.querySelector(':scope > .tab-edit-btn')).toBeTruthy();
+    });
+
+    it('an injected media query turns the observer off (one thing at a time)', () => {
+        const mq = fakeMedia(true);
+        attachTabControlsSheet(controls, mq);
+        expect(observers.length).toBe(0);
+        expect(controls.querySelector('.tab-more-btn')).toBeTruthy();
+    });
+
+    it('destroy disconnects the observer', () => {
+        const sheet = attachTabControlsSheet(controls);
+        sheet.destroy();
+        expect(observers[0].disconnected).toBe(true);
     });
 });

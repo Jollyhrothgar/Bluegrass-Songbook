@@ -1,7 +1,8 @@
 // E2E tests for the OTF editor — written against the CURRENT design:
 // modal-less entry (NORMAL handles nav + notes), grid = the one working
 // increment (ruler/arrows/click snap), duration = entered note length,
-// drag-select + clipboard + repeats, and the create-a-tab flow.
+// drag-select + clipboard + repeats, and the new-tab flow (#new-tab —
+// the song page in authoring mode; create.html is only a shim now).
 //
 // No audio assertions here: WebAudioFont's CDN is blocked in the
 // sandbox; playback is verified by ear on a real machine.
@@ -114,8 +115,9 @@ test.describe('grid model (one working increment)', () => {
         await page.keyboard.press('ArrowRight');
         let m = await statusM(page);
         expect(m[2]).toBe('1.2');
-        // finer duration REFINES the grid (s = 1/16)
-        await page.keyboard.press('s');
+        // finer duration REFINES the grid (F8 = 1/16 in the TablEdit preset;
+        // `s` is slide there)
+        await page.keyboard.press('F8');
         await page.keyboard.press('ArrowRight');
         m = await statusM(page);
         expect(m[2]).toBe('1.3'); // 240 + 120
@@ -146,9 +148,22 @@ test.describe('selection, clipboard, phrases', () => {
         await openDemo(page);
         await enterPhrase(page);
         const box = await staveBox(page);
-        await page.mouse.move(box.x + 40, box.y + 45);
+        // A selection is a RECTANGLE (see otf-editor/CLAUDE.md): the drag
+        // has to pass over the STRING the phrase was typed on, or it
+        // copies the empty strings it actually crossed. Ask the renderer
+        // where that string is rather than guessing an offset.
+        const y = await page.evaluate(() => {
+            const ed = document.querySelector('.otf-editor').__otfEditor;
+            const row = ed.cursor.renderer.rowData[0];
+            const opt = ed.cursor.renderer.options;
+            const rect = row.svg.getBoundingClientRect();
+            const vb = row.svg.viewBox.baseVal;
+            const ySvg = opt.topMargin + (ed.state.cursor.string - 1) * opt.stringSpacing;
+            return rect.top + ySvg * (rect.height / vb.height);
+        });
+        await page.mouse.move(box.x + 40, y);
         await page.mouse.down();
-        await page.mouse.move(box.x + 200, box.y + 45, { steps: 5 });
+        await page.mouse.move(box.x + 200, y, { steps: 5 });
         await page.mouse.up();
         await expect(page.locator('.editor-selection-rect').first()).toBeVisible();
         await expect(page.locator('.mode-indicator')).toContainText('VISUAL');
@@ -189,39 +204,115 @@ test.describe('selection, clipboard, phrases', () => {
     });
 });
 
-test.describe('create-a-tab flow', () => {
-    test('form builds a multi-track editor with a track switcher', async ({ page }) => {
-        await page.goto('/create.html');
-        await page.fill('#f-title', 'E2E Breakdown');
-        await page.locator('#f-instruments input[value="6-string-guitar"]').check();
-        await page.locator('#create-form button[type=submit]').click();
+test.describe('the prompts that used to be window.prompt', () => {
+    // A native dialog is not in the DOM, so nothing here could be asserted
+    // at all before: `page.on('dialog')` was the only handle, and it can
+    // neither read the range nor see the validation. Both prompts are
+    // ValuePromptPopovers now — the registered dialog listener is the check
+    // that they stayed that way.
+    const valuePrompt = (page) => page.locator('.otf-value-prompt-popover');
 
-        await page.locator('.editor-renderer .stave-row').first().waitFor();
-        await expect(page.locator('#editor-title')).toHaveText('E2E Breakdown');
-        // Segmented track buttons (replaced the old dropdown)
-        await expect(page.locator('.track-button')).toHaveCount(2);
+    test('Ctrl+G asks for a measure in-app, and jumps on Enter', async ({ page }) => {
+        const dialogs = [];
+        page.on('dialog', (d) => { dialogs.push(d.message()); d.dismiss(); });
+        await openDemo(page);
 
-        await page.locator('.track-button[data-track-id="guitar"]').click();
-        await expect(async () => {
-            const labels = await page.locator('.stave-row').first()
-                .locator('.string-label').count();
-            expect(labels).toBe(6);
-        }).toPass();
+        await page.keyboard.press('Control+g');
+        const panel = valuePrompt(page);
+        await expect(panel).toBeVisible();
+        await expect(panel).toContainText('Go to measure');
+        await expect(panel.locator('.value-prompt-input')).toHaveValue('1');
+
+        await panel.locator('.value-prompt-input').fill('3');
+        await panel.locator('.value-prompt-input').press('Enter');
+        await expect(panel).toBeHidden();
+
+        expect((await statusM(page))[1]).toBe('3');
+        expect(dialogs).toEqual([]);
     });
 
-    test('drafts survive a reload (Resume)', async ({ page }) => {
-        await page.goto('/create.html');
-        await page.fill('#f-title', 'Draft Tune');
-        await page.locator('#create-form button[type=submit]').click();
+    test('Play ▸ Tempo… validates inline and writes an undoable tempo',
+        async ({ page }) => {
+            const dialogs = [];
+            page.on('dialog', (d) => { dialogs.push(d.message()); d.dismiss(); });
+            await openDemo(page);
+
+            await page.locator('.menu-trigger[data-menu="play"]').click();
+            await page.locator('.menu-popup .menu-item')
+                .filter({ hasText: 'Tempo' }).first().click();
+
+            const panel = valuePrompt(page);
+            await expect(panel).toBeVisible();
+            const input = panel.locator('.value-prompt-input');
+
+            // Out of range says so and refuses, rather than swallowing it
+            // the way `parseInt(prompt())` used to.
+            await input.fill('5000');
+            await expect(panel.locator('.value-prompt-error')).toContainText('280');
+            await expect(panel.locator('.save-btn')).toBeDisabled();
+
+            await input.fill('152');
+            await expect(panel.locator('.save-btn')).toBeEnabled();
+            await panel.locator('.save-btn').click();
+            await expect(panel).toBeHidden();
+            await expect(page.locator('.editor-status-bar .tempo-input'))
+                .toHaveValue('152');
+
+            expect(dialogs).toEqual([]);
+        });
+
+    test('Escape closes the prompt and leaves the document alone',
+        async ({ page }) => {
+            await openDemo(page);
+            await page.keyboard.press('Control+g');
+            const panel = valuePrompt(page);
+            await expect(panel).toBeVisible();
+            await panel.locator('.value-prompt-input').fill('7');
+            await panel.locator('.value-prompt-input').press('Escape');
+            await expect(panel).toBeHidden();
+            expect((await statusM(page))[1]).toBe('1');
+        });
+});
+
+test.describe('new-tab flow (the song page in #new-tab mode)', () => {
+    // There is no create page any more (plan §9.1): a tab is written on the
+    // page it will be published on. `#new-tab` is the provisional work page
+    // for a song the songbook doesn't have — same shell, same take header,
+    // same bottom band, with the title and artist as fields in the header.
+    test('opens the editor on a provisional work page', async ({ page }) => {
+        await page.goto('/index.html#new-tab?title=E2E%20Breakdown&instrument=guitar');
+
+        await page.locator('.editor-renderer .stave-row').first().waitFor();
+        await expect(page.locator('#new-tab-title')).toHaveValue('E2E Breakdown');
+        await expect(page.locator('#new-tab-artist')).toHaveValue('');
+        // The take header the read view draws, on an unsaved take
+        await expect(page.locator('.arr-who')).toHaveText('Guitar — new take (unsaved)');
+        // The band survived: play/tempo are still there, and the session's
+        // buttons took the ✏️ Edit slot
+        await expect(page.locator('#app-bottomband .tab-play-btn')).toBeVisible();
+        await expect(page.locator('#app-bottomband .tab-edit-btn')).toHaveCount(0);
+        await expect(page.locator('#app-bottomband .tab-edit-submit'))
+            .toHaveText('🚀 Submit tab');
+    });
+
+    test('drafts survive a reload', async ({ page }) => {
+        await page.goto('/index.html#new-tab?title=Draft%20Tune');
         await page.locator('.editor-renderer .stave-row').first().waitFor();
         await page.locator('.editor-canvas-container').click({ position: { x: 100, y: 60 } });
         await page.keyboard.press('7'); // triggers onChange → draft save
 
         await page.reload();
-        await expect(page.locator('#draft-banner')).toBeVisible();
-        await page.locator('#draft-resume').click();
         await page.locator('.editor-renderer .stave-row').first().waitFor();
-        await expect(page.locator('#editor-title')).toHaveText('Draft Tune');
+        // Same route, same (absent) target → the draft is picked back up
+        await expect(page.locator('.arr-status')).toContainText('Picked up where you left off');
         await expect(page.locator('.note-text').first()).toHaveText('7');
+    });
+
+    test('create.html is a redirect shim into the hash routes', async ({ page }) => {
+        await page.goto('/create.html?work=gold-rush&instrument=banjo');
+        await expect(page).toHaveURL(/#work\/gold-rush\/add-tab\?instrument=banjo$/);
+
+        await page.goto('/create.html');
+        await expect(page).toHaveURL(/#new-tab$/);
     });
 });

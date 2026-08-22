@@ -14,10 +14,17 @@ import {
 } from '../renderers/measure-timing.js';
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar } from './toolbar.js';
-import { NoteEntryPopover, AnnotationPopover, TrackNamePopover } from './popover.js';
+import { EditorMenuBar } from './menu-bar.js';
+import {
+    NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover,
+} from './popover.js';
 import { sanitizeTrackId } from './facade.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
 import { ContextMenu } from './context-menu.js';
+import {
+    describe as describeBindings, getPreset, setPreset,
+    PRESETS, entryAdvanceTicks, stepTicks,
+} from './bindings.js';
 import { EditEventRecorder } from './recorder.js';
 
 // Note-entry feedback: a short pluck of the SAME sampled voice playback
@@ -26,6 +33,17 @@ import { EditEventRecorder } from './recorder.js';
 const FEEDBACK_DURATION_SEC = 0.4;
 const FEEDBACK_VOLUME = 0.7;
 const DEFAULT_FEEDBACK_TUNING = ['D4', 'B3', 'G3', 'D3', 'G4'];
+
+// Editor-only renderer weights. The site's read view keeps TabRenderer's
+// defaults (1.5 / 3) — these are the "thicker stems" of plan
+// tab-editor-input-parity §7, and they apply while editing only.
+const EDITOR_STEM_WIDTH = 2.25;
+const EDITOR_BEAM_THICKNESS = 4;
+
+// Rows are FIXED in the editor, not reflowed (plan §7). We pin whatever
+// the read view computed for this container width; this is the fallback
+// when the container has no layout box yet to ask.
+const DEFAULT_MEASURES_PER_ROW = 4;
 
 /**
  * OTF Editor - Main entry point
@@ -54,6 +72,21 @@ export class OTFEditor {
             // the TAB scrolls inside the editor and the chrome (toolbar,
             // transport) is pinned instead of scrolling off with the page.
             fillHeight: false,
+            // hostTransport: the WRAPPER already shows one transport for
+            // this document (the song page's bottom band does — see
+            // `tab-edit-band.js`), so the status bar drops its own ▶/⏹/BPM
+            // instead of being the third set of playback controls for one
+            // tab (plan §8.2). Default false: `editor-demo.html` and any
+            // bare mount have no band, so they keep theirs.
+            hostTransport: false,
+            // fileActions: what the File menu offers, supplied by whoever
+            // owns the session's buttons — `[{label, run, disabled?,
+            // action?}]`, where `action` is a binding id used ONLY to
+            // print its key. The editor alone can only download, so that
+            // is the default; the song page's edit session (Submit /
+            // Download / Cancel / Done) passes its own list through
+            // whatever creates the editor.
+            fileActions: null,
             onSave: null,
             onChange: null,
             ...options,
@@ -78,9 +111,13 @@ export class OTFEditor {
         this.keyboard = new KeyboardHandler(this.state, this.cursor, {
             onSave: () => this._handleSave(),
             onShowHelp: () => this._showHelp(),
+            onTogglePlay: () => this.togglePlayback(),
             onPlayFromCursor: () => this.playFromCursor(),
+            onPlayMeasure: () => this.playMeasure(),
             onLoopSelection: () => this.loopSelection(),
             onEditAnnotation: () => this.editAnnotationAtCursor(),
+            onGoToMeasure: () => this._promptForMeasure(),
+            onStatus: (msg) => this.flashStatus(msg),
             recorder: this.recorder,
         });
         this.toolbar = new EditorToolbar(this.state, {
@@ -90,6 +127,10 @@ export class OTFEditor {
             onDeleteAnnotation: () => this.deleteAnnotationAtCursor(),
             onRenameTrack: () => this.renameCurrentTrack(),
             onMoveTrack: (delta) => this.moveCurrentTrack(delta),
+            onAction: (id) => {
+                this.keyboard.dispatchAction(id);
+                this.editorRoot?.focus();
+            },
         });
         // Menu actions refocus the editor afterwards — otherwise the
         // keyboard is dead after any mouse-menu action (focus stays on
@@ -98,6 +139,9 @@ export class OTFEditor {
             fn();
             this.editorRoot?.focus();
         };
+        // Every entry is a binding action too, so the menu's key column
+        // comes from the table (`keyFor`) instead of a hand-kept string.
+        const menuAction = (id) => refocus(() => this.keyboard.dispatchAction(id));
         this.contextMenu = new ContextMenu({
             copy: refocus(() => this.state.copy()),
             cut: refocus(() => this._cutSelectionOrTick()),
@@ -112,8 +156,60 @@ export class OTFEditor {
             }),
             loop: refocus(() => this.loopSelection()),
             play: refocus(() => this.playFromCursor()),
+            playMeasure: refocus(() => this.playMeasure()),
+            tie: menuAction('effect.tie'),
+            dead: menuAction('effect.dead'),
+            choke: menuAction('effect.choke'),
+            clearTech: menuAction('effect.clear'),
+            restringUp: menuAction('note.restringUp'),
+            restringDown: menuAction('note.restringDown'),
+            fixDurations: menuAction('duration.fix'),
+            insertMeasureBefore: menuAction('measure.insertBefore'),
+            insertMeasureAfter: menuAction('measure.insertAfter'),
+            deleteMeasure: menuAction('measure.delete'),
+            repeatPrevious: menuAction('measure.repeatPrevious'),
+            rippleRight: menuAction('measure.rippleRight'),
+            rippleLeft: menuAction('measure.rippleLeft'),
             repeat: refocus(() => this._repeatSelectedMeasures(true)),
             unrepeat: refocus(() => this._repeatSelectedMeasures(false)),
+        });
+        // The menu bar (plan §8.3). Its items and their keys come from
+        // the binding table; everything that ISN'T a binding — tempo,
+        // repeats, tracks, measures-per-row, zoom — arrives here as a
+        // hook, and a hook the editor doesn't pass is an item the menu
+        // doesn't draw.
+        this.menuBar = new EditorMenuBar({
+            state: this.state,
+            dispatch: (id) => this.keyboard.dispatchAction(id),
+            onClose: () => this.editorRoot?.focus(),
+            fileActions: this.options.fileActions || [{
+                label: '⬇ Download OTF',
+                action: 'edit.save',
+                run: () => this.keyboard.dispatchAction('edit.save'),
+            }],
+            hooks: {
+                repeatSpan: refocus(() => this._repeatSelectedMeasures(true)),
+                removeRepeat: refocus(() => this._repeatSelectedMeasures(false)),
+                tempo: () => this._promptForTempo(),
+                metronome: () => this._toggleMetronome(),
+                metronomeOn: () => !!this.player?.metronomeEnabled,
+                tracks: () => this.state.getTracks().map(t => ({
+                    label: t.id,
+                    checked: t.id === this.state.trackId,
+                    run: () => this.state.setTrack(t.id),
+                })),
+                renameTrack: () => this.renameCurrentTrack(),
+                moveTrackEarlier: () => this.moveCurrentTrack(-1),
+                moveTrackLater: () => this.moveCurrentTrack(1),
+                measuresPerRow: () => [2, 3, 4, 5, 6].map(n => ({
+                    label: String(n),
+                    checked: this.renderer?.options.measuresPerRow === n,
+                    run: () => this.setMeasuresPerRow(n),
+                })),
+                zoomIn: () => this.zoomBy(0.1),
+                zoomOut: () => this.zoomBy(-0.1),
+                zoomReset: () => this.zoomBy(0, 1),
+            },
         });
         this.popover = new NoteEntryPopover(this.state, {
             onInsert: (note) => this._handlePopoverInsert(note),
@@ -131,6 +227,12 @@ export class OTFEditor {
         this.trackNamePopover = new TrackNamePopover({
             sanitize: sanitizeTrackId,
             onCommit: (name) => this._commitTrackName(name),
+            onCancel: () => this.editorRoot?.focus(),
+        });
+        // "Type one number" — Go to measure and Play ▸ Tempo…. It replaced
+        // two `window.prompt` calls: a native dialog is not in the DOM, so
+        // no test can drive it and no theme can style it.
+        this.valuePopover = new ValuePromptPopover({
             onCancel: () => this.editorRoot?.focus(),
         });
 
@@ -171,8 +273,18 @@ export class OTFEditor {
 
         // Create editor structure
         this.editorRoot = document.createElement('div');
+        // Debug/QA handle: lets a browser session reach the live instance
+        // (document, facade, state) without a global. Not an API.
+        this.editorRoot.__otfEditor = this;
         this.editorRoot.className = 'otf-editor';
         this.editorRoot.tabIndex = 0; // Make focusable
+
+        // Menu bar, above the toolbar — the same component in every
+        // wrapper, so a contributor meets one control surface whether
+        // they are creating, correcting or just looking (plan §8.1/8.3).
+        this.menuContainer = document.createElement('div');
+        this.menuContainer.className = 'editor-menu-container';
+        this.editorRoot.appendChild(this.menuContainer);
 
         // Toolbar
         this.toolbarContainer = document.createElement('div');
@@ -195,6 +307,7 @@ export class OTFEditor {
         this._applyStyles();
 
         // Initialize components
+        this.menuBar.render(this.menuContainer);
         this.toolbar.render(this.toolbarContainer);
 
         // Toolbar buttons must not steal keyboard focus — after any
@@ -214,13 +327,22 @@ export class OTFEditor {
         // Cursor/grid overlay draws from the renderer's real geometry
         this.cursor.setRenderer(this.renderer);
 
-        // Editing wants a STABLE tick→x mapping: per-measure note
-        // centering makes the ruler break period at every barline
-        this.renderer.options.centerNotes = false;
+        // RENDERER PARITY: the page you edit is the page you publish, so
+        // the editor overrides nothing about how the document is drawn
+        // (plan tab-editor-input-parity §8.1/§9.2). It used to force
+        // `centerNotes: false, showRests: true`, which re-spaced every
+        // measure the moment you pressed Edit and put it back when you
+        // left. `showRests: true` was the renderer default anyway; note
+        // centering is now the ONE coordinate difference we accept — the
+        // grid overlay is drawn from the same per-measure geometry, so
+        // it still lands on the notes. The overlay is the only thing the
+        // editor adds to the drawing.
 
-        // Rest glyphs are an ENTRY aid — show them here. The reading
-        // view keeps TablEdit's tab-staff convention (no rests).
-        this.renderer.options.showRests = true;
+        // Thicker stems while editing ("thicker stems desires", §7):
+        // entry is close work, and 1.5px stems disappear under the
+        // cursor box. The read view keeps the site default.
+        this.renderer.options.stemWidth = EDITOR_STEM_WIDTH;
+        this.renderer.options.beamThickness = EDITOR_BEAM_THICKNESS;
 
         // Follow EVERY renderer layout pass — including its own async
         // re-renders (resize observer, Bravura arrival), which otherwise
@@ -238,6 +360,7 @@ export class OTFEditor {
         this.popover.init(this.container);
         this.annotationPopover.init(this.container);
         this.trackNamePopover.init(this.container);
+        this.valuePopover.init(this.container);
 
         // Attach keyboard handler
         this.keyboard.attach(this.editorRoot);
@@ -282,6 +405,7 @@ export class OTFEditor {
                 box-shadow: 0 0 0 2px var(--accent-transparent, rgba(0, 123, 255, 0.25));
             }
 
+            .editor-menu-container,
             .editor-toolbar-container {
                 flex-shrink: 0;
             }
@@ -342,8 +466,9 @@ export class OTFEditor {
                 -webkit-overflow-scrolling: touch;
             }
 
-            .otf-editor-fill .editor-toolbar-container { order: 2; }
-            .otf-editor-fill .editor-status-bar { order: 3; }
+            .otf-editor-fill .editor-menu-container { order: 2; }
+            .otf-editor-fill .editor-toolbar-container { order: 3; }
+            .otf-editor-fill .editor-status-bar { order: 4; }
 
             /* The toolbar's divider now faces the tab above it */
             .otf-editor-fill .otf-editor-toolbar {
@@ -378,6 +503,20 @@ export class OTFEditor {
                 color: var(--border, #ddd);
             }
 
+            .status-flash {
+                margin-left: auto;
+                padding: 2px 8px;
+                border-radius: 10px;
+                font-size: 12px;
+                color: var(--accent, #007bff);
+                background: color-mix(in srgb, var(--accent, #007bff) 12%, transparent);
+                opacity: 0;
+                transition: opacity 0.15s ease;
+            }
+            /* Out of the flow entirely when silent: the status bar's
+               layout must not shift just because a flash exists. */
+            .status-flash:not(.is-showing) { display: none; }
+            .status-flash.is-showing { opacity: 1; }
             .status-hint {
                 margin-left: auto;
                 color: var(--text-muted, #888);
@@ -513,6 +652,36 @@ export class OTFEditor {
                 opacity: 0.7;
                 text-align: center;
             }
+            .editor-help-presets {
+                display: flex;
+                gap: 12px;
+                font-size: 12px;
+                margin-left: auto;
+                margin-right: 12px;
+            }
+            .editor-help-preset {
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+                cursor: pointer;
+            }
+            .editor-help-notes {
+                margin-top: 14px;
+                padding-top: 10px;
+                border-top: 1px solid var(--border, #ddd);
+                font-size: 12px;
+                opacity: 0.8;
+            }
+            .editor-help-notes ul { margin: 6px 0 0; padding-left: 18px; }
+            .editor-help-notes li { margin: 2px 0; }
+            .status-help-btn {
+                background: none;
+                border: none;
+                color: inherit;
+                font: inherit;
+                cursor: pointer;
+                padding: 0 4px;
+            }
         `;
 
         if (!document.querySelector('style[data-otf-editor]')) {
@@ -600,6 +769,8 @@ export class OTFEditor {
             this.contextMenu.open(e.clientX, e.clientY, {
                 hasSelection: !!this.state.selection,
                 hasClipboard: !!(this.state.clipboard?.data?.length),
+                hasNote: !!this.state.getNoteAtCursor(),
+                preset: getPreset(),
             });
         });
 
@@ -737,6 +908,9 @@ export class OTFEditor {
         return {
             startAbs: f.toAbs(start.measure, start.tick),
             endAbs: f.toAbs(end.measure, end.tick) + this.state.gridSubdivision,
+            // The rectangle's height: every op that acts on the drag
+            // (move, loop's hit test, the context menu) reads it from here.
+            strings: this.state.selectionStrings(),
         };
     }
 
@@ -756,7 +930,8 @@ export class OTFEditor {
         const sel = this._selectionAbsRange();
         if (sel) {
             const grabAbs = this.state.facade.toAbs(pos.measure, pos.tick);
-            if (grabAbs >= sel.startAbs && grabAbs < sel.endAbs) {
+            const inBand = !sel.strings?.length || sel.strings.includes(pos.string);
+            if (inBand && grabAbs >= sel.startAbs && grabAbs < sel.endAbs) {
                 this._drag = {
                     mode: 'move', grabAbs, sel,
                     x: event.clientX, y: event.clientY, active: false,
@@ -833,7 +1008,8 @@ export class OTFEditor {
         if (drag.destAbs == null || !this.state.selection) return;
 
         const { sel } = drag;
-        if (!this.state.facade.moveRange(sel.startAbs, sel.endAbs, drag.destAbs)) return;
+        if (!this.state.facade.moveRange(sel.startAbs, sel.endAbs, drag.destAbs,
+            { strings: sel.strings })) return;
 
         // Selection (and cursor) follow the phrase to its new home
         const span = sel.endAbs - sel.startAbs;
@@ -861,10 +1037,20 @@ export class OTFEditor {
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
 
-        // Open note entry popover
+        // Open note entry popover. The `click` that preceded this
+        // dblclick already moved the cursor, so "the note at the cursor"
+        // IS the note under the pointer — and when there is one, the
+        // panel opens as an EDIT of it: fret, technique and both hands'
+        // fingering pre-selected, so changing the fingering of an
+        // imported note costs no retyping.
+        const existing = this.state.getNoteAtCursor();
         this.popover.open(x, y, {
             string: this.state.cursor.string,
-            fret: this.state.getNoteAtCursor()?.f || 0,
+            fret: existing?.f || 0,
+            tech: existing?.tie ? '~' : (existing?.tech || null),
+            finger: existing?.finger || null,
+            lh: existing?.lh ?? null,
+            editing: !!existing,
         });
     }
 
@@ -873,10 +1059,32 @@ export class OTFEditor {
      */
     _handlePopoverInsert(note) {
         this.state.cursor.string = note.string;
-        this.state.insertNote(note.fret, { tech: note.tech });
+        // ONE undo step for the whole panel. `facade._placeNote` replaces
+        // whatever was on that string, so the fingering has to be
+        // re-applied after the insert — and if that were its own
+        // transaction, editing a note's fingering would cost two `u`
+        // presses and momentarily show the note with its marks stripped.
+        this.state.facade.transact(note.editing ? 'Edit note' : 'Insert note', () => {
+            this.state.insertNote(note.fret, { tech: note.tech });
+            const pos = {
+                measure: this.state.cursor.measure,
+                tick: this.state.cursor.tick,
+                string: note.string,
+            };
+            this.state.facade.setFingering(pos, note.finger ?? null, this.state.trackId);
+            this.state.facade.setLeftHand(pos, note.lh ?? null, this.state.trackId);
+            return true;
+        });
 
-        // Advance cursor
-        this.cursor.moveByDuration(1);
+        // Advance exactly as typing a digit does: honours auto-advance,
+        // steps ONE GRID SLOT under automatic duration, and appends a
+        // measure when it walks off the end. An EDIT of a note already
+        // there is not entry, so it leaves the cursor on what it changed.
+        if (this.state.autoAdvance && !note.editing) {
+            stepTicks(this.keyboard.ctx, entryAdvanceTicks(this.state));
+        } else {
+            this.cursor.update();
+        }
 
         // Focus editor
         this.editorRoot.focus();
@@ -995,8 +1203,14 @@ export class OTFEditor {
     }
 
     /**
-     * Show keyboard shortcut help — a dismissible overlay (the status-bar
-     * hint says "Press ? for help", so ? has to actually show something).
+     * Show keyboard shortcut help — a dismissible overlay GENERATED FROM
+     * THE BINDING TABLE (`bindings.js`), so it cannot drift from what the
+     * keys actually do. It used to be a hand-written copy and was wrong in
+     * four places at once (`w`/`b`, `3`, `G`, `Ctrl+T`).
+     *
+     * Every <kbd> here comes from `describe(preset)`. The browser/OS
+     * exceptions at the foot deliberately use <code>, not <kbd>: they name
+     * keys we do NOT bind.
      */
     _showHelp() {
         const existing = this.editorRoot.querySelector('.editor-help-overlay');
@@ -1006,31 +1220,17 @@ export class OTFEditor {
         }
         const overlay = document.createElement('div');
         overlay.className = 'editor-help-overlay';
-        overlay.innerHTML = `
-            <div class="editor-help-panel" role="dialog" aria-label="Keyboard shortcuts">
-                <div class="editor-help-head">
-                    <strong>Keyboard shortcuts</strong>
-                    <button class="editor-help-close" title="Close">&times;</button>
-                </div>
-                <div class="editor-help-cols">
-                    <dl>
-                        <dt>Navigate</dt><dd><kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> or arrows · <kbd>w</kbd>/<kbd>b</kbd> next/prev measure · <kbd>gg</kbd>/<kbd>G</kbd> start/end</dd>
-                        <dt>Notes</dt><dd><kbd>0</kbd>–<kbd>9</kbd> fret at cursor · <kbd>Space</kbd> rest · <kbd>x</kbd> delete note · <kbd>dd</kbd> delete tick</dd>
-                        <dt>Durations</dt><dd><kbd>q</kbd> quarter · <kbd>e</kbd> eighth · <kbd>s</kbd> sixteenth · <kbd>t</kbd> thirty-second · <kbd>3</kbd> triplet</dd>
-                    </dl>
-                    <dl>
-                        <dt>Text</dt><dd><kbd>c</kbd> add/edit placed text at cursor (section label, chord name) · <kbd>Shift</kbd>+<kbd>C</kbd> delete it · empty text deletes</dd>
-                        <dt>Modes</dt><dd><kbd>v</kbd> visual select · <kbd>A</kbd> annotation · <kbd>Esc</kbd> back to normal</dd>
-                        <dt>Edit</dt><dd><kbd>u</kbd> undo · <kbd>Ctrl</kbd>+<kbd>R</kbd> redo · <kbd>y</kbd>/<kbd>p</kbd> copy/paste · <kbd>Cmd</kbd>+<kbd>C</kbd>/<kbd>X</kbd>/<kbd>V</kbd></dd>
-                        <dt>Play</dt><dd><kbd>Cmd</kbd>+<kbd>Space</kbd> play from cursor · <kbd>L</kbd> loop selection</dd>
-                    </dl>
-                </div>
-                <div class="editor-help-foot">Press <kbd>?</kbd> or <kbd>Esc</kbd> to close</div>
-            </div>
-        `;
+        overlay.innerHTML = this._helpHtml(getPreset());
         const close = () => overlay.remove();
         overlay.addEventListener('click', (e) => {
             if (e.target === overlay || e.target.closest('.editor-help-close')) close();
+        });
+        overlay.addEventListener('change', (e) => {
+            const radio = e.target.closest('input[name="otf-preset"]');
+            if (!radio) return;
+            setPreset(radio.value);
+            overlay.innerHTML = this._helpHtml(getPreset());
+            overlay.focus();
         });
         overlay.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' || e.key === '?') { e.stopPropagation(); close(); this.editorRoot.focus(); }
@@ -1038,6 +1238,187 @@ export class OTFEditor {
         this.editorRoot.appendChild(overlay);
         overlay.tabIndex = -1;
         overlay.focus();
+    }
+
+    /** The overlay's markup for one preset (pure — a test renders both). */
+    _helpHtml(presetId) {
+        const preset = PRESETS[presetId] || PRESETS.tabledit;
+        const esc = (t) => String(t)
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const kbd = (keys) => keys.map(k => `<kbd>${esc(k)}</kbd>`).join(' ');
+        const groups = describeBindings(presetId).map(({ group, items }) => `
+            <dt>${esc(group)}</dt>
+            ${items.map(item => `<dd>${kbd(item.keys)} ${esc(item.label)}</dd>`).join('')}
+        `);
+        // Two balanced columns
+        const half = Math.ceil(groups.length / 2);
+        const col = (list) => `<dl>${list.join('')}</dl>`;
+        const switcher = Object.values(PRESETS).map(p => `
+            <label class="editor-help-preset">
+                <input type="radio" name="otf-preset" value="${esc(p.id)}"
+                    ${p.id === presetId ? 'checked' : ''}> ${esc(p.label)}
+            </label>`).join('');
+
+        return `
+            <div class="editor-help-panel" role="dialog" aria-label="Keyboard shortcuts">
+                <div class="editor-help-head">
+                    <strong>Keyboard shortcuts</strong>
+                    <span class="editor-help-presets">${switcher}</span>
+                    <button class="editor-help-close" title="Close">&times;</button>
+                </div>
+                <div class="editor-help-cols">
+                    ${col(groups.slice(0, half))}
+                    ${col(groups.slice(half))}
+                </div>
+                <div class="editor-help-notes">
+                    <strong>What the browser and the OS take:</strong>
+                    <ul>${preset.exceptions.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+                </div>
+                <div class="editor-help-foot">
+                    A slur marks the note it lands ON (in <code>2h4</code> the 4 is
+                    hammered) — pressing it on either note of a pair does the right
+                    thing. Press <kbd>?</kbd> or <kbd>Esc</kbd> to close.
+                </div>
+            </div>
+        `;
+    }
+
+    /**
+     * Play the cursor's measure once. There is no range-play API beyond
+     * `play({startTick, endTick})`, which is all this needs.
+     */
+    async playMeasure() {
+        this.player?.unlockAudio();
+        if (this.isPlaying) {
+            this.stop();
+            return;
+        }
+        const m = this.state.cursor.measure;
+        const startTick = this._unrolledTick(m, 0);
+        const endTick = startTick + this.state.facade.ticksFor(m);
+        await this.play({ startTick, endTick });
+    }
+
+    /**
+     * Ask which measure to jump to — `ValuePromptPopover`, not
+     * `window.prompt`.
+     *
+     * The answer no longer arrives on THIS call (a popover commits later,
+     * on Enter or a click), so the jump is dispatched from the commit
+     * instead of returned. `nav.goToMeasure` already takes a `count` —
+     * that is the same path `g12G` uses in the vim preset — so the
+     * binding table needs no new entry and no async hook.
+     *
+     * The 0 return is what tells `nav.goToMeasure` "nothing to do yet".
+     * A host that answers synchronously (the unit tests do) still works:
+     * a positive number is still honoured.
+     * @returns {number} always 0 — the popover answers later
+     */
+    _promptForMeasure() {
+        if (!this.valuePopover) return 0;
+        const total = this.state.getMeasureCount();
+        this.valuePopover.options.onCommit = (n) => {
+            this.keyboard.dispatchAction('nav.goToMeasure', { count: Math.floor(n) });
+            this.editorRoot?.focus();
+        };
+        this.valuePopover.open({
+            title: 'Go to measure',
+            label: 'Measure',
+            hint: `1–${total} — a number past the end appends measures.`,
+            value: String(this.state.cursor.measure),
+            min: 1,
+            // Walking past the end appends, so the prompt allows it too;
+            // the cap is a sanity bound, not the document's length.
+            max: Math.max(total, 999),
+            commitLabel: 'Go',
+        });
+        return 0;
+    }
+
+    /**
+     * Ask for a tempo (Play ▸ Tempo…). Writes through the facade, so it
+     * is undoable and it is what gets submitted — same as the band's
+     * −/+ and the status bar's BPM box.
+     * @returns {boolean} whether the prompt opened
+     */
+    _promptForTempo() {
+        if (!this.valuePopover) return false;
+        const now = Number(this.state.otf?.metadata?.tempo) || 120;
+        this.valuePopover.options.onCommit = (bpm) => this._applyTempo(bpm);
+        this.valuePopover.open({
+            title: 'Tempo',
+            label: 'Beats per minute',
+            hint: '40–280 BPM. This is the document’s tempo — it is undoable, '
+                + 'and it travels with the submission.',
+            value: String(now),
+            min: 40,
+            max: 280,
+            commitLabel: 'Set',
+        });
+        return true;
+    }
+
+    /** Commit a tempo from the prompt. */
+    _applyTempo(bpm) {
+        if (!Number.isFinite(bpm) || bpm < 40 || bpm > 280) return false;
+        this.state.setTempo(bpm);
+        const tempoInput = this.statusBar?.querySelector('.tempo-input');
+        if (tempoInput) tempoInput.value = bpm;
+        this.editorRoot?.focus();
+        return true;
+    }
+
+    /** Play ▸ Metronome. Session state on the player, not the document. */
+    _toggleMetronome() {
+        if (!this.player) return false;
+        this.player.metronomeEnabled = !this.player.metronomeEnabled;
+        this.editorRoot?.focus();
+        return this.player.metronomeEnabled;
+    }
+
+    /**
+     * View ▸ Measures per row. Rows are FIXED in the editor (plan §7);
+     * this is how you change the number they are fixed AT.
+     */
+    setMeasuresPerRow(n) {
+        if (!this.renderer || !(n > 0)) return false;
+        this.renderer.options.measuresPerRow = n;
+        this._render();
+        this.editorRoot?.focus();
+        return true;
+    }
+
+    /**
+     * View ▸ Zoom. `delta` steps the current scale; pass `absolute` to
+     * set it outright (Reset).
+     */
+    zoomBy(delta, absolute = null) {
+        const next = absolute != null
+            ? absolute
+            : Math.round(((this._zoom || 1) + delta) * 10) / 10;
+        this._zoom = Math.max(0.6, Math.min(1.6, next));
+        this.renderer?.setScale?.(this._zoom);
+        this.editorRoot?.focus();
+        return this._zoom;
+    }
+
+    /**
+     * Pin measures-per-row ONCE, to the number the read view computed
+     * for this container width (`measuresPerRow` option to override,
+     * DEFAULT_MEASURES_PER_ROW when the container isn't laid out yet).
+     *
+     * "Horizontal shifting / column mutation makes it non-deterministic
+     * where measures run" (plan tab-editor-input-parity §7): with the
+     * count fixed, "go to measure 12" is a place you can see, entering
+     * edit mode doesn't reflow the page, and a finer entry grid widens
+     * measures (horizontal scroll) instead of rearranging them.
+     */
+    _pinMeasuresPerRow() {
+        if (this.renderer.options.measuresPerRow !== 'auto') return;
+        this.renderer.options.measuresPerRow =
+            this.options.measuresPerRow
+            || this.renderer.autoMeasuresPerRow()
+            || DEFAULT_MEASURES_PER_ROW;
     }
 
     /**
@@ -1072,12 +1453,16 @@ export class OTFEditor {
         const ticksPerBeat = this.state.otf.timing?.ticks_per_beat || TICKS_PER_BEAT;
         const timeSignature = this.state.otf.metadata?.time_signature || '4/4';
 
+        this._pinMeasuresPerRow();
+
         // Auto-expand for fine entry grids: guarantee each grid slot a
         // minimum pixel width so 1/16 and 1/32 grids stay usable
         // (measureWidthFloor beats maxMeasureWidth; rows scroll if
         // needed). RATCHET within a session: the layout grows when a
         // finer grid needs room but never yanks back when you coarsen —
-        // predictable zoom instead of surprise reflows.
+        // predictable zoom instead of surprise reflows. With the row
+        // count pinned below, this only ever WIDENS measures; it can no
+        // longer move measure 5 onto another row.
         const MIN_PX_PER_GRID_SLOT = 9;
         const defaultTicks = this.state.facade.measureTiming.defaultTicks;
         const slots = defaultTicks / this.state.gridSubdivision;
@@ -1176,7 +1561,10 @@ export class OTFEditor {
         // break out of the value="" attribute below
         const tempo = Number(this.state.otf.metadata?.tempo) || 120;
 
-        this.statusBar.innerHTML = `
+        // The transport is the HOST's when the host has one (see the
+        // `hostTransport` option): the song page's bottom band already
+        // shows ▶/⏹ and the tempo for this very document.
+        const transport = this.options.hostTransport ? '' : `
             <div class="playback-controls">
                 <button class="play-button" title="Play/Pause">▶</button>
                 <button class="stop-button" title="Stop">⏹</button>
@@ -1184,7 +1572,10 @@ export class OTFEditor {
                     <span>BPM:</span>
                     <input type="number" class="tempo-input" value="${tempo}" min="40" max="280" step="5">
                 </div>
-            </div>
+            </div>`;
+
+        this.statusBar.innerHTML = `
+            ${transport}
             <span class="status-item">
                 <span class="status-label">Mode:</span>
                 <span class="status-value" data-field="mode">NORMAL</span>
@@ -1210,20 +1601,62 @@ export class OTFEditor {
                 <span class="status-value" data-field="duration">8th</span>
             </span>
             <span class="status-separator">|</span>
+            <span class="status-item" title="Fingering on the note at the cursor — picking hand T I M R P, fretting hand 0–4 (A to mark)">
+                <span class="status-label">Fing:</span>
+                <span class="status-value" data-field="fingering">—</span>
+            </span>
+            <span class="status-separator">|</span>
             <span class="status-item" title="Placed text at the cursor — c to add or edit, Shift+C to delete">
                 <span class="status-label">Text:</span>
                 <span class="status-value" data-field="annotation">—</span>
             </span>
-            <span class="status-hint">
+            <span class="status-flash" data-field="flash" role="status" aria-live="polite"></span>
+            <button type="button" class="status-hint status-help-btn"
+                    title="Keyboard shortcuts">
                 Press <kbd>?</kbd> for help
-            </span>
+            </button>
         `;
 
         // Wire up playback controls (once)
         this._wirePlaybackControls();
 
+        // The help hint is a real <button>, so touch users can open the
+        // overlay at all (it used to be a <span>).
+        const helpBtn = this.statusBar.querySelector('.status-help-btn');
+        helpBtn?.addEventListener('click', () => {
+            this._showHelp();
+            this.editorRoot?.focus();
+        });
+
         // Initial update
         this._updateStatusBar();
+    }
+
+    /**
+     * Say something in the status bar for a moment — the editor's ONE
+     * way to report a refusal.
+     *
+     * A refused op (a block `+` that would push a note past fret 24, a
+     * `+` on an empty slot) changes nothing on screen, so without this
+     * the key reads as broken rather than as declined. It is a DOM node
+     * with `role="status"`, never a native alert: the rule in
+     * `e2e/CLAUDE.md` is that everything a human can see, Playwright can
+     * read.
+     *
+     * @param {string} message
+     * @param {number} [ms] - how long it stays
+     */
+    flashStatus(message, ms = 2600) {
+        const el = this.statusBar?.querySelector('[data-field="flash"]');
+        if (!el) return;
+        clearTimeout(this._flashTimeout);
+        el.textContent = message || '';
+        el.classList.toggle('is-showing', !!message);
+        if (!message) return;
+        this._flashTimeout = setTimeout(() => {
+            el.textContent = '';
+            el.classList.remove('is-showing');
+        }, ms);
     }
 
     /**
@@ -1260,6 +1693,19 @@ export class OTFEditor {
         if (stringEl) stringEl.textContent = cursor.string;
         if (durationEl) durationEl.textContent = this._getDurationName(currentDuration);
 
+        // Fingering on the note at the cursor. The toolbar has no
+        // fingering palette (there would be eleven buttons for a mark
+        // most tabs never carry), so this line is the only place what is
+        // set on a note becomes visible without reading the stave.
+        const fingEl = this.statusBar.querySelector('[data-field="fingering"]');
+        if (fingEl) {
+            const note = this.state.getNoteAtCursor();
+            const parts = [];
+            if (note?.finger) parts.push(note.finger);
+            if (note && note.lh != null) parts.push(`lh ${note.lh}`);
+            fingEl.textContent = parts.length ? parts.join(' · ') : '—';
+        }
+
         // Placed text at the cursor — the editor's only way to know which
         // annotation `c` would edit (the renderer draws them, but marks
         // none of them as "the one under the cursor")
@@ -1295,7 +1741,16 @@ export class OTFEditor {
             [DURATIONS.sixteenth]: '16th',
             [DURATIONS.thirtySecond]: '32nd',
             [DURATIONS.tripletEighth]: 'Triplet',
+            360: 'Dotted 8th',
+            720: 'Dotted quarter',
+            1440: 'Dotted half',
         };
+        // `null` is AUTOMATIC: show what the column rule would give the
+        // slot the cursor is on — TablEdit's palette does the same.
+        if (duration == null) {
+            const predicted = this.state.effectiveDuration();
+            return `auto (${names[predicted] || predicted + 't'})`;
+        }
         return names[duration] || 'Unknown';
     }
 
@@ -1786,13 +2241,17 @@ export class OTFEditor {
         // Close a lingering context menu (it lives on document.body)
         this.contextMenu?.close();
 
+        clearTimeout(this._flashTimeout);
+
         // Clean up components
         this.keyboard.detach();
         this.cursor.destroy();
         this.toolbar.destroy();
+        this.menuBar?.destroy();
         this.popover.destroy();
         this.annotationPopover?.destroy();
         this.trackNamePopover?.destroy();
+        this.valuePopover?.destroy();
         this.renderer?.destroy();
 
         // Clear container
@@ -1804,9 +2263,11 @@ export class OTFEditor {
         this.cursor = null;
         this.keyboard = null;
         this.toolbar = null;
+        this.menuBar = null;
         this.popover = null;
         this.annotationPopover = null;
         this.trackNamePopover = null;
+        this.valuePopover = null;
         this.renderer = null;
         this.player = null;
     }

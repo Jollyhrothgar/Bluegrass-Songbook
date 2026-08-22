@@ -10,7 +10,15 @@
 // `.tab-controls`), so `controls.querySelector('.tab-key-down')` keeps
 // working from either side of the breakpoint.
 
-const PHONE_MQ = '(max-width: 640px)';
+// The one number. It is a BAND width, not a device width: the band is what
+// runs out of room, and it can run out on a desktop too (a narrow window, a
+// split view, or a test that constrains the container). CSS keys the same
+// number off `@container tabband (max-width: 640px)` — see style.css — with
+// the viewport media query kept as the fallback for browsers without
+// container queries.
+export const NARROW_WIDTH = 640;
+
+const PHONE_MQ = `(max-width: ${NARROW_WIDTH}px)`;
 
 // Sheet rows in display order. A row that captures nothing is dropped, so
 // works without a reading list / mixer / feel toggle get a shorter sheet.
@@ -33,8 +41,19 @@ let activeSheet = null; // one tab band exists at a time; re-render replaces it
  * while the media query matches, so the wide DOM is byte-identical to
  * what createTablatureControls returned.
  *
+ * The width it decides on is the BAND's own, not the viewport's: an
+ * observed `.tab-controls` narrower than {@link NARROW_WIDTH} collapses,
+ * whatever the window is doing. That is what lets a test (or a split view,
+ * or a narrow desktop window) reach the phone layout by constraining the
+ * container, and it is the same question the CSS asks via
+ * `@container tabband`. The media query stays as the seed and the fallback:
+ * `attachTabControlsSheet` runs while the band is still DETACHED (work-view
+ * builds the controls, wires them, then mounts), so there is no width to
+ * measure yet on the first pass.
+ *
  * @param {HTMLElement} controls  the `.tab-controls` element
- * @param {MediaQueryList} [media]  injectable for tests
+ * @param {MediaQueryList} [media]  injectable for tests; supplying it also
+ *   turns the container observer OFF, so a test drives one thing only
  * @returns {{destroy: () => void, isOpen: () => boolean, setOpen: (b:boolean) => void, mediaChanged: () => void}}
  */
 export function attachTabControlsSheet(controls, media) {
@@ -43,6 +62,11 @@ export function attachTabControlsSheet(controls, media) {
     const mq = media || (typeof window !== 'undefined' && window.matchMedia
         ? window.matchMedia(PHONE_MQ)
         : { matches: false, addEventListener() {}, removeEventListener() {} });
+
+    // 0 means "never measured" — fall back to the viewport until the band
+    // is on the page and has a width of its own.
+    let bandWidth = 0;
+    const narrowNow = () => (bandWidth > 0 ? bandWidth <= NARROW_WIDTH : mq.matches);
 
     // Snapshot before anything moves — restoring is "re-append in this order".
     const bandOrder = [...controls.children];
@@ -112,7 +136,29 @@ export function attachTabControlsSheet(controls, media) {
         inSheet = false;
     };
 
-    const apply = () => (mq.matches ? moveIntoSheet() : moveIntoBand());
+    const apply = () => {
+        const narrow = narrowNow();
+        // The class is what the CSS keys off in browsers WITHOUT container
+        // queries, and what a test can assert without measuring anything.
+        controls.classList.toggle('is-narrow-band', narrow);
+        return narrow ? moveIntoSheet() : moveIntoBand();
+    };
+
+    // Watch the band, not the window. Moving controls into the sheet does
+    // not change the band's width (it is `width: 100%` inside the bottom
+    // band, and `container-type: inline-size` makes that explicit), so this
+    // cannot oscillate — and `moveIntoSheet` / `moveIntoBand` are no-ops
+    // when the answer hasn't changed anyway.
+    let observer = null;
+    if (!media && typeof ResizeObserver !== 'undefined') {
+        observer = new ResizeObserver((entries) => {
+            const width = entries[0]?.contentRect?.width || controls.clientWidth || 0;
+            if (width === bandWidth) return;
+            bandWidth = width;
+            apply();
+        });
+        observer.observe(controls);
+    }
 
     // A re-render swaps in a new `.tab-controls`; the orphaned one's global
     // listeners have to go with it. (createTablatureControls attaches before
@@ -147,6 +193,8 @@ export function attachTabControlsSheet(controls, media) {
     });
 
     function destroy() {
+        observer?.disconnect();
+        observer = null;
         mq.removeEventListener?.('change', apply);
         document.removeEventListener('click', onDocClick);
         document.removeEventListener('keydown', onKeyDown);

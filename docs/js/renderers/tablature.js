@@ -27,26 +27,47 @@ function el(tag, className, text) {
     return node;
 }
 
+/** Shortest silence worth a glyph: a 32nd. Slivers are rounding, not rests. */
+const MIN_REST = 60;
+
 /**
- * Silent spans inside a measure that deserve rest glyphs: the gap after
- * an event whose notes ALL carry explicit durations (editor-entered),
- * up to the next event or the measure's end. Events without durations
- * follow the legacy ring-until-next-event model — no rests for them.
+ * Silent spans inside a measure that deserve rest glyphs.
+ *
+ * Two kinds, both TablEdit's "Automatic rests":
+ *   - **leading**: the measure starts silent and the first sounding
+ *     event carries explicit durations — a bar whose music begins on
+ *     beat 2 is a quarter rest then the music, not music floating in
+ *     from nowhere.
+ *   - **after a note**: the gap from where an event stops sounding to
+ *     the next event or the barline.
+ *
+ * Both are gated on explicit durations: an event whose notes do NOT all
+ * carry `dur` follows the legacy ring-until-next-event model, and a
+ * measure whose FIRST sounding event is duration-less gets no leading
+ * rest either — those documents say nothing about rhythm, so we invent
+ * nothing.
  *
  * @param {Array} events - [{tick, notes: [{dur?}]}]
  * @param {number} measureTicks - this measure's own tick length
+ * @param {Object} [opts]
+ * @param {boolean} [opts.leading=true] - draw the leading silence too
  * @returns {Array<{start: number, len: number}>}
  */
-export function restSpansForMeasure(events, measureTicks) {
+export function restSpansForMeasure(events, measureTicks, { leading = true } = {}) {
     const spans = [];
-    const sorted = [...(events || [])].sort((a, b) => a.tick - b.tick);
+    const sorted = [...(events || [])]
+        .filter(e => (e.notes || []).length > 0)
+        .sort((a, b) => a.tick - b.tick);
+    const durated = (ev) => ev.notes.every(n => n.dur > 0);
+    if (leading && sorted.length && sorted[0].tick >= MIN_REST && durated(sorted[0])) {
+        spans.push({ start: 0, len: sorted[0].tick });
+    }
     for (let i = 0; i < sorted.length; i++) {
         const ev = sorted[i];
-        const notes = ev.notes || [];
-        if (notes.length === 0 || !notes.every(n => n.dur > 0)) continue;
-        const end = ev.tick + Math.max(...notes.map(n => n.dur));
+        if (!durated(ev)) continue;
+        const end = ev.tick + Math.max(...ev.notes.map(n => n.dur));
         const nextStart = i + 1 < sorted.length ? sorted[i + 1].tick : measureTicks;
-        if (nextStart - end >= 60) {
+        if (nextStart - end >= MIN_REST) {
             spans.push({ start: end, len: nextStart - end });
         }
     }
@@ -178,6 +199,21 @@ export class TabRenderer {
                                       // tab staff hides these, but that leaves the
                                       // rhythm implicit (Mike: 'author laziness') —
                                       // we show them; opt out per-renderer if needed
+            showLeadingRests: true,   // ...including the silence BEFORE a measure's
+                                      // first note (a bar starting on beat 2 draws a
+                                      // quarter rest). Same switch TablEdit's
+                                      // "Automatic rests" is; set false to keep only
+                                      // the gaps that follow a note
+            uniformMeasureWidth: true, // Every measure gets the SAME slot, whatever
+                                      // its tick length, so barlines line up row
+                                      // over row (plan tab-editor-input-parity §7:
+                                      // "the bar lines are not lined up to
+                                      // compensate for the 4/4"). A short measure's
+                                      // notes are placed by tick/defaultTicks and
+                                      // right-aligned to the barline, so a 2-beat
+                                      // pickup sits in the right half of its slot
+                                      // and its beats land under the beats below.
+                                      // false = the old proportional width.
             measuresPerRow: 'auto',   // 'auto' or number (1-8)
             leftMargin: 50,
             topMargin: 40,
@@ -365,11 +401,21 @@ export class TabRenderer {
             return;
         }
 
-        // Auto-calculate: find how many measures fit at target width
+        const fit = TabRenderer._autoRowFit(availableWidth, opt);
+        this._computedMeasuresPerRow = fit.measuresPerRow;
+        this._computedMeasureWidth = fit.measureWidth;
+        this._applyMeasureWidthFloor(availableWidth);
+    }
+
+    /**
+     * The auto layout: how many measures fit at the target width, and how
+     * wide each then is. Pure — it reads no instance state — so a caller
+     * can ask what the READ view would do without disturbing a renderer.
+     */
+    static _autoRowFit(availableWidth, opt) {
         let measuresPerRow = Math.floor(availableWidth / opt.targetMeasureWidth);
         measuresPerRow = Math.max(1, Math.min(8, measuresPerRow));
 
-        // Calculate actual measure width to fill available space
         let measureWidth = availableWidth / measuresPerRow;
 
         // Clamp to min/max
@@ -378,23 +424,47 @@ export class TabRenderer {
             measureWidth = availableWidth / measuresPerRow;
         }
         measureWidth = Math.max(opt.minMeasureWidth, Math.min(opt.maxMeasureWidth, measureWidth));
+        return { measuresPerRow, measureWidth };
+    }
 
-        this._computedMeasuresPerRow = measuresPerRow;
-        this._computedMeasureWidth = measureWidth;
-        this._applyMeasureWidthFloor(availableWidth);
+    /**
+     * The measures-per-row the READ view would choose for this container
+     * width — i.e. what 'auto' resolves to, ignoring `measureWidthFloor`
+     * and any pinned `measuresPerRow`.
+     *
+     * The editor pins this number once (plan tab-editor-input-parity §7:
+     * "horizontal shifting / column mutation makes it non-deterministic
+     * where measures run"), so pressing Edit doesn't reflow the page and
+     * changing the entry grid widens measures instead of moving them to
+     * another row.
+     *
+     * @param {number} [layoutWidth] - width budget; defaults to the live one
+     * @returns {number|null} null when the container has no layout box yet
+     */
+    autoMeasuresPerRow(layoutWidth) {
+        const containerWidth = layoutWidth ?? this._availableWidth();
+        if (!containerWidth) return null;
+        const availableWidth = containerWidth - this.options.leftMargin - 30;
+        return TabRenderer._autoRowFit(availableWidth, this.options).measuresPerRow;
     }
 
     /**
      * Enforce measureWidthFloor: a hard lower bound on measure width
      * that beats maxMeasureWidth. Used by the editor to auto-expand
      * measures when a fine entry grid (1/16, 1/32) needs breathing room
-     * — fewer measures per row, scrolling if a single measure exceeds
-     * the container.
+     * — scrolling if a single measure exceeds the container.
+     *
+     * With an AUTO row count the floor also drops measures per row.
+     * With a PINNED count it never does: the editor pins the row shape
+     * precisely so that changing the grid widens the measures (and
+     * scrolls) instead of moving measures to other rows (plan
+     * tab-editor-input-parity §7).
      */
     _applyMeasureWidthFloor(availableWidth) {
         const floor = this.options.measureWidthFloor;
         if (!floor || this._computedMeasureWidth >= floor) return;
         this._computedMeasureWidth = floor;
+        if (this.options.measuresPerRow !== 'auto') return;
         this._computedMeasuresPerRow = Math.max(
             1, Math.min(this._computedMeasuresPerRow, Math.floor(availableWidth / floor)));
     }
@@ -642,14 +712,31 @@ export class TabRenderer {
     }
 
     /**
-     * Width of one measure, proportional to its tick length so short
-     * measures (pickups, mid-tune 2/4s) render tight instead of padding
-     * out a full-signature slot. Uniform files keep the exact base width.
+     * The full-signature measure length, in ticks.
+     */
+    _defaultTicks() {
+        return this.timing?.measureTiming?.defaultTicks || this.ticksPerMeasure;
+    }
+
+    /**
+     * Width of one measure.
+     *
+     * Default (`uniformMeasureWidth`): every measure gets the full base
+     * slot, so barlines land at the same x on every row and a pickup's
+     * beats sit under the beats of the row below. A LONGER-than-default
+     * measure still grows proportionally — squeezing it into the base
+     * slot would collide its notes.
+     *
+     * With `uniformMeasureWidth: false` the old behaviour returns: width
+     * proportional to tick length, so short measures render tight. That
+     * is what the first outside reviewer called out (plan
+     * tab-editor-input-parity §7) — row 1's barlines landing off row 2's.
      */
     _measureWidthFor(ticks) {
         const base = this._computedMeasureWidth;
-        const defaultTicks = this.timing?.measureTiming?.defaultTicks || this.ticksPerMeasure;
+        const defaultTicks = this._defaultTicks();
         if (!ticks || ticks === defaultTicks) return base;
+        if (this.options.uniformMeasureWidth !== false && ticks < defaultTicks) return base;
         return Math.max(60, Math.round(base * ticks / defaultTicks));
     }
 
@@ -820,20 +907,33 @@ export class TabRenderer {
             const { ticks, signatureMark, adorn } = prelim[i];
             const baseWidth = Math.max(minBase, Math.floor(prelim[i].base * fit));
             const geomWidth = baseWidth + adorn.leading + adorn.trailing;
-            const noteW = baseWidth - 30;
+            const slotW = baseWidth - 30;
+
+            // A SHORT measure in a uniform slot occupies only its own
+            // fraction of that slot, pushed RIGHT so its last tick lands
+            // on the barline: tick t then sits where t would sit in a
+            // full measure counted back from the barline, which is what
+            // makes a pickup's beats line up with the beats below it.
+            // Everything downstream reads (noteX0 + noteOffset) + tick /
+            // ticks * noteW, so the whole mapping is these two numbers.
+            const defaultTicks = this._defaultTicks();
+            const shortFactor = opt.uniformMeasureWidth !== false
+                && ticks && defaultTicks && ticks < defaultTicks
+                ? ticks / defaultTicks
+                : 1;
+            const noteW = slotW * shortFactor;
+            const rightAlign = slotW - noteW;
+
             // Visual centering: proportional layout leaves the last note's
             // remaining duration as empty space on the right; split that
             // leftover across both sides so the notes sit centered.
-            // The EDITOR disables this (centerNotes: false): centering
-            // varies per measure with its last event, so grid rulers
-            // derived from it break period at every barline (lines from
-            // neighboring measures land ~px apart — "doubled rulers").
-            // Editing wants one stable coordinate system: tick t always
-            // at the same relative x.
+            // Skipped for a right-aligned short measure — its position in
+            // the slot IS the information, and centering would undo it.
             const lastTick = (m.events || []).reduce((mx, e) => Math.max(mx, e.tick), 0);
-            const noteOffset = opt.centerNotes === false
+            const centering = opt.centerNotes === false || shortFactor !== 1
                 ? 0
                 : noteW * Math.max(0, 1 - lastTick / ticks) / 2;
+            const noteOffset = rightAlign + centering;
             const geom = {
                 display: m.measure,
                 x: xCursor,
@@ -1019,15 +1119,21 @@ export class TabRenderer {
                 }
             }
 
-            // Rest glyphs in gaps AFTER duration-carrying notes.
-            // TablEdit's tab staff hides rests, leaving the rhythm
-            // implied by the written durations alone — we draw them
-            // (options.showRests, default on).
+            // Rest glyphs for the measure's silences — the leading one
+            // and every gap after a duration-carrying note. TablEdit's
+            // tab staff hides rests, leaving the rhythm implied by the
+            // written durations alone; we draw them (options.showRests,
+            // default on). Each span is decomposed into standard rest
+            // values largest-first, so the 1440 ticks automatic duration
+            // leaves after two eighths in a 4/4 bar read as a half rest
+            // then a quarter rest, not one un-notatable blob.
             if (opt.showRests && TabRenderer._bravuraReady && measure.events) {
                 const restY = opt.topMargin
                     + ((this.numStrings - 1) * opt.stringSpacing) / 2;
                 const restAreaStart = geom.noteX0 + geom.noteOffset;
-                for (const span of restSpansForMeasure(measure.events, geom.ticks)) {
+                const spans = restSpansForMeasure(measure.events, geom.ticks,
+                    { leading: opt.showLeadingRests !== false });
+                for (const span of spans) {
                     let t = span.start;
                     for (const g of restGlyphSequence(span.len)) {
                         const rx = restAreaStart + (t / geom.ticks) * geom.noteW + 6;
@@ -1649,38 +1755,54 @@ export class TabRenderer {
                 // Eighth note with flag
                 const stemX = np.x;
                 const flagStartX = stemX + opt.stemWidth / 2;
-                const flagY = stemEndY - 2;
+                const flagY = stemEndY;
 
                 const stem = this.createLine(stemX, stemStartY, stemX, stemEndY, opt.stemColor);
                 stem.setAttribute('stroke-width', opt.stemWidth);
                 svg.appendChild(stem);
 
                 const flag = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag.setAttribute('d', `M ${flagStartX} ${flagY - 8} L ${flagStartX} ${flagY} Q ${flagStartX + 8} ${flagY + 2} ${flagStartX + 10} ${flagY + 8} Q ${flagStartX + 6} ${flagY + 4} ${flagStartX} ${flagY - 2} Z`);
+                flag.setAttribute('d', this._flagPath(flagStartX, flagY));
                 flag.setAttribute('fill', opt.stemColor);
                 svg.appendChild(flag);
             } else {
                 // Sixteenth note with two flags
                 const stemX = np.x;
                 const flagStartX = stemX + opt.stemWidth / 2;
-                const flag1Y = stemEndY - 2;
-                const flag2Y = stemEndY - 9;
+                const flag1Y = stemEndY;
+                const flag2Y = stemEndY - 7;
 
                 const stem = this.createLine(stemX, stemStartY, stemX, stemEndY, opt.stemColor);
                 stem.setAttribute('stroke-width', opt.stemWidth);
                 svg.appendChild(stem);
 
                 const flag1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag1.setAttribute('d', `M ${flagStartX} ${flag1Y - 8} L ${flagStartX} ${flag1Y} Q ${flagStartX + 8} ${flag1Y + 2} ${flagStartX + 10} ${flag1Y + 8} Q ${flagStartX + 6} ${flag1Y + 4} ${flagStartX} ${flag1Y - 2} Z`);
+                flag1.setAttribute('d', this._flagPath(flagStartX, flag1Y));
                 flag1.setAttribute('fill', opt.stemColor);
                 svg.appendChild(flag1);
 
                 const flag2 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag2.setAttribute('d', `M ${flagStartX} ${flag2Y - 8} L ${flagStartX} ${flag2Y} Q ${flagStartX + 8} ${flag2Y + 2} ${flagStartX + 10} ${flag2Y + 8} Q ${flagStartX + 6} ${flag2Y + 4} ${flagStartX} ${flag2Y - 2} Z`);
+                flag2.setAttribute('d', this._flagPath(flagStartX, flag2Y));
                 flag2.setAttribute('fill', opt.stemColor);
                 svg.appendChild(flag2);
             }
         });
+    }
+
+    /**
+     * A filled, tapered note flag for a DOWNWARD stem: it attaches at the
+     * stem's bottom end (`x` = the stem's right edge, `yEnd` = the stem's
+     * end) and hooks up and to the right, the way an engraved stem-down
+     * eighth does. It has ~9px of contact with the stem, rising from the
+     * end, and tapers to a point ~10px out and ~16px up. (The first
+     * version hung below the stem end — the up-stem orientation.)
+     */
+    _flagPath(x, yEnd) {
+        const y = yEnd;
+        return `M ${x} ${y}`
+            + ` C ${x + 2} ${y - 6}, ${x + 9} ${y - 9}, ${x + 10} ${y - 17}`
+            + ` C ${x + 9} ${y - 12}, ${x + 4} ${y - 9}, ${x} ${y - 9}`
+            + ' Z';
     }
 
     /**

@@ -7,7 +7,12 @@
 // UI can drive the same facade directly without this class.
 
 import { measureTicksFor } from '../renderers/measure-timing.js';
-import { EditingFacade } from './facade.js';
+import {
+    EditingFacade,
+    MAX_DURATION,
+    MIN_DURATION,
+    durationKey,
+} from './facade.js';
 
 /**
  * Duration constants (in ticks)
@@ -23,6 +28,13 @@ export const DURATIONS = {
     sixteenth: TICKS_PER_BEAT / 4,    // 120
     thirtySecond: TICKS_PER_BEAT / 8, // 60
     tripletEighth: Math.round(TICKS_PER_BEAT / 3), // 160
+    // Dotted values need no flag — `dur` is ticks, and the renderer
+    // already draws these (122 dotted quarters and 135 dotted eighths on
+    // banjo tracks alone). Real for 3/4 and 6/8 waltzes.
+    dottedHalf: 1440,
+    dottedQuarter: 720,
+    dottedEighth: 360,
+    dottedSixteenth: 180,
 };
 
 export const DURATION_NAMES = {
@@ -33,7 +45,24 @@ export const DURATION_NAMES = {
     [DURATIONS.sixteenth]: 'sixteenth',
     [DURATIONS.thirtySecond]: 'thirty-second',
     [DURATIONS.tripletEighth]: 'triplet-eighth',
+    [DURATIONS.dottedHalf]: 'dotted half',
+    [DURATIONS.dottedQuarter]: 'dotted quarter',
+    [DURATIONS.dottedEighth]: 'dotted eighth',
+    [DURATIONS.dottedSixteenth]: 'dotted sixteenth',
 };
+
+/**
+ * The dotted values `toggleDotted` recognises — including the dotted
+ * 32nd (90), which has no DURATIONS entry because nobody picks it from a
+ * palette, but is a legal place for the toggle to land and come back from.
+ */
+export const DOTTED_DURATIONS = new Set([
+    90,
+    DURATIONS.dottedSixteenth,
+    DURATIONS.dottedEighth,
+    DURATIONS.dottedQuarter,
+    DURATIONS.dottedHalf,
+]);
 
 /**
  * Editor mode enum
@@ -143,11 +172,37 @@ export class EditorState {
         // Selection range (for visual mode)
         this.selection = null;
 
-        // Current duration for note entry
+        // Current duration for note entry. `null` means AUTOMATIC — the
+        // column rule computes each note's dur from where it lands (see
+        // setAutoDuration / effectiveDuration). Anything that needs a
+        // number must read effectiveDuration(), never this field raw.
         this.currentDuration = DURATIONS.eighth;
+
+        // What `setAutoDuration(false)` goes back to.
+        this._lastExplicitDuration = DURATIONS.eighth;
+
+        // Duration bookkeeping for automatic duration. SESSION STATE —
+        // neither set is ever written to the document (OTF has no
+        // "manual duration" flag and must not grow one):
+        //   pinned      durations the user set by hand; auto never touches them
+        //   autoEntered notes typed under auto THIS session; auto touches
+        //               only these, so a reopened document is never re-timed
+        // Keys are facade `durationKey(measure, tick, string)` strings.
+        this.pinnedDurations = new Set();
+        this.autoEnteredDurations = new Set();
+
+        // Auto-advance: does typing a fret move the cursor on? TablEdit
+        // makes this a toggle (chord entry wants it off); we default it
+        // on, which is what this editor has always done.
+        this.autoAdvance = true;
 
         // Pending articulation (applied to next note)
         this.pendingArticulation = null;
+
+        // Last technique applied — TablEdit's F3 "repeat last effect".
+        // '~' is stored as the string '~' meaning TIE, which is not a
+        // tech at all (see toggleTieAtCursor).
+        this.lastTech = null;
 
         // Triplet entry state
         this.tripletMode = false;
@@ -292,6 +347,11 @@ export class EditorState {
         this.cursor = new CursorPosition(1, 0, 3, this.trackId);
         this.selection = null;
         this.mode = EditorMode.NORMAL;
+        // A loaded document starts with NO auto bookkeeping: you didn't
+        // type those notes, so automatic duration leaves every one of
+        // them exactly as written until you ask for `fixDurations`.
+        this.pinnedDurations.clear();
+        this.autoEnteredDurations.clear();
         this._updateTicksPerMeasure();
         this._emit('load', this.otf);
         this._emit('change', this.otf);
@@ -438,17 +498,31 @@ export class EditorState {
     insertNote(fret, options = {}) {
         const string = options.string || this.cursor.string;
         const tech = options.tech || this.pendingArticulation;
-        const duration = options.duration || this.currentDuration;
+        // `duration: null` (or nothing) under auto means "let the column
+        // rule decide"; an explicit duration is an explicit duration even
+        // while auto is on, and pins the note it lands on.
+        const explicit = options.duration != null
+            ? options.duration
+            : (this.isAutoDuration ? null : this.currentDuration);
+        const auto = explicit == null;
+        const key = durationKey(this.cursor.measure, this.cursor.tick, string);
 
         this.facade.insertNote({
             measure: this.cursor.measure,
             tick: this.cursor.tick,
             string,
             fret,
-            duration,
+            duration: explicit,
             tech,
             trackId: this.trackId,
+            autoDuration: auto,
+            pins: this.pinnedDurations,
+            autoEntered: this.autoEnteredDurations,
         });
+        if (!auto && this.isAutoDuration) {
+            this.autoEnteredDurations.delete(key);
+            this.pinnedDurations.add(key);
+        }
 
         // Clear pending articulation
         this.pendingArticulation = null;
@@ -463,7 +537,10 @@ export class EditorState {
         }
 
         // Record action for repeat
-        this.lastAction = { type: 'insertNote', fret, options: { string, tech, duration } };
+        this.lastAction = {
+            type: 'insertNote', fret,
+            options: { string, tech, duration: explicit },
+        };
 
         this._emit('noteInserted', { measure: this.cursor.measure, tick: this.cursor.tick, fret, string });
     }
@@ -476,7 +553,7 @@ export class EditorState {
             measure: this.cursor.measure,
             tick: this.cursor.tick,
             string: this.cursor.string,
-        }, this.trackId);
+        }, this.trackId, this._autoOptions());
         if (ok) this.lastAction = { type: 'deleteNote' };
         return ok;
     }
@@ -488,9 +565,18 @@ export class EditorState {
         const ok = this.facade.deleteTick({
             measure: this.cursor.measure,
             tick: this.cursor.tick,
-        }, this.trackId);
+        }, this.trackId, this._autoOptions());
         if (ok) this.lastAction = { type: 'deleteTick' };
         return ok;
+    }
+
+    /** The auto-duration bookkeeping every editing op hands the facade. */
+    _autoOptions() {
+        return {
+            autoDuration: this.isAutoDuration,
+            pins: this.pinnedDurations,
+            autoEntered: this.autoEnteredDurations,
+        };
     }
 
     /**
@@ -523,15 +609,78 @@ export class EditorState {
         return this.facade.setTempo(bpm);
     }
 
-    /**
-     * Set a fingering annotation on the note at the cursor. Undoable.
-     */
-    setFingering(finger) {
-        return this.facade.setFingering({
+    // ------------------------------------------------------------------
+    // Fingering, BOTH hands — the selection when there is one, else the
+    // cursor. Same shape as `applyTech`: marking a phrase is one undo
+    // step, and marking one note needs no selection at all.
+    // ------------------------------------------------------------------
+
+    /** The cursor as a facade position. */
+    _cursorPos() {
+        return {
             measure: this.cursor.measure,
             tick: this.cursor.tick,
             string: this.cursor.string,
-        }, finger, this.trackId);
+        };
+    }
+
+    /**
+     * Set (or clear with null) the picking-hand fingering — T I M R P.
+     * @returns {boolean} false when nothing changed
+     */
+    setFingering(finger) {
+        const range = this.selection ? this.selectionRange() : null;
+        if (range) {
+            return this.facade.setRangeFingering(range.startAbs, range.endAbs,
+                finger, { trackId: this.trackId }) !== false;
+        }
+        return this.facade.setFingering(this._cursorPos(), finger, this.trackId) !== false;
+    }
+
+    /**
+     * Set (or clear with null) the fretting-hand digit — 0..4, drawn
+     * circled under the pluck letter.
+     * @returns {boolean} false when nothing changed
+     */
+    setLeftHand(digit) {
+        const range = this.selection ? this.selectionRange() : null;
+        if (range) {
+            return this.facade.setRangeLeftHand(range.startAbs, range.endAbs,
+                digit, { trackId: this.trackId }) !== false;
+        }
+        return this.facade.setLeftHand(this._cursorPos(), digit, this.trackId) !== false;
+    }
+
+    /**
+     * Clear BOTH hands' fingering — the fingering counterpart of
+     * `clearEffectsAtCursor`. One transaction, so one undo takes the
+     * pluck letter and the circled digit back together.
+     * @returns {boolean} false when there was nothing to clear
+     */
+    clearFingerings() {
+        const range = this.selection ? this.selectionRange() : null;
+        // `transact` pushes a history entry unconditionally, so a clear
+        // with nothing to clear must not reach it — otherwise `u` spends
+        // a press undoing a no-op.
+        const marked = (n) => n && (n.finger !== undefined || n.lh != null);
+        const anything = range
+            ? this.facade.notesInRange(range.startAbs, range.endAbs,
+                { trackId: this.trackId }).some(hit => marked(hit.note))
+            : marked(this.getNoteAtCursor());
+        if (!anything) return false;
+        return this.facade.transact('Clear fingering', () => {
+            if (range) {
+                const rh = this.facade.setRangeFingering(range.startAbs, range.endAbs,
+                    null, { trackId: this.trackId }) !== false;
+                const lh = this.facade.setRangeLeftHand(range.startAbs, range.endAbs,
+                    null, { trackId: this.trackId }) !== false;
+                return rh || lh;
+            }
+            const pos = this._cursorPos();
+            const rh = this.facade.setFingering(pos, null, this.trackId) !== false;
+            const lh = this.facade.setLeftHand(pos, null, this.trackId) !== false;
+            return rh || lh;
+        }) !== false;
     }
 
     // ------------------------------------------------------------------
@@ -591,14 +740,21 @@ export class EditorState {
     }
 
     /**
-     * Add articulation to note at cursor
+     * Add articulation to the note at the cursor. `'~'` is not a
+     * technique — the facade routes it to the tie. Remembered as
+     * `lastTech` for TablEdit's "repeat last effect".
      */
     addArticulation(tech) {
-        return this.facade.setArticulation({
+        const ok = this.facade.setArticulation({
             measure: this.cursor.measure,
             tick: this.cursor.tick,
             string: this.cursor.string,
         }, tech, this.trackId);
+        if (tech) {
+            this.lastTech = tech;
+            this.lastAction = { type: 'addArticulation', tech };
+        }
+        return ok;
     }
 
     /**
@@ -610,6 +766,30 @@ export class EditorState {
             tick: this.cursor.tick,
             string: this.cursor.string,
         }, null, this.trackId);
+    }
+
+    /**
+     * Clear EVERY effect on the note at the cursor — technique and tie
+     * alike, which is what TablEdit's `N` does. `tech` and `tie` are
+     * independent fields (neither op clears the other's, deliberately),
+     * so the clear has to name both; `facade.transact` makes the pair one
+     * undo step. Refused — no history entry — when there is nothing set.
+     * @returns {boolean} true when something was cleared
+     */
+    clearEffectsAtCursor() {
+        const note = this.getNoteAtCursor();
+        if (!note) return false;
+        if (note.tech === undefined && note.tie !== true) return false;
+        const pos = {
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        };
+        return this.facade.transact('Clear effects', () => {
+            const tech = this.facade.setArticulation(pos, null, this.trackId) !== false;
+            const tie = this.facade.setTie(pos, false, { trackId: this.trackId }) !== false;
+            return tech || tie;
+        }) !== false;
     }
 
     /**
@@ -644,12 +824,451 @@ export class EditorState {
      * the ruler on every duration change during mixed-value entry.
      */
     setDuration(duration) {
+        const wasAuto = this.currentDuration == null;
+        // null = AUTOMATIC. Nothing to place, nothing to refine: under
+        // auto the GRID is the rhythm input, so the grid is left exactly
+        // where the user put it.
+        if (duration == null) {
+            this.currentDuration = null;
+            this._emit('durationChange', null);
+            // Entering/leaving auto is its own event, because it changes
+            // what the LENGTH row means (a dashed prediction appears or
+            // goes away) and not just which button is filled.
+            if (!wasAuto) this._emit('autoDurationChange', true);
+            return;
+        }
         this.currentDuration = duration;
+        this._lastExplicitDuration = duration;
+        // TablEdit's `*` folded in: with a note under the cursor, a
+        // duration key re-times THAT note as well as arming the next one,
+        // and pins it so automatic duration will not take it back.
+        const pos = {
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        };
+        if (this.getNoteAtCursor()) {
+            this.facade.setNoteDuration(pos, duration, this.trackId);
+            this.pinDuration(pos);
+        }
         this._emit('durationChange', duration);
+        if (wasAuto) this._emit('autoDurationChange', false);
         const needed = Math.min(duration, DURATIONS.quarter);
         if (needed % this.gridSubdivision !== 0) {
             this.setGridSubdivision(needed);
         }
+    }
+
+    // ------------------------------------------------------------------
+    // Automatic duration (§6 of the input-parity plan)
+    //
+    // `currentDuration === null` IS auto — TablEdit's semantics exactly
+    // ("auto is the absence of a chosen duration"). The column rule and
+    // the pin/autoEntered sets live in the facade; this class owns the
+    // sets, the toggle and the prediction the status bar shows.
+    // ------------------------------------------------------------------
+
+    /** True when note entry is letting the column rule pick durations. */
+    get isAutoDuration() {
+        return this.currentDuration == null;
+    }
+
+    /**
+     * Turn automatic duration on or off. Off restores the last duration
+     * you actually chose (an eighth, until you choose one).
+     * @returns {boolean} the new auto state
+     */
+    setAutoDuration(on) {
+        if (on) this.setDuration(null);
+        else this.setDuration(this._lastExplicitDuration || DURATIONS.eighth);
+        return this.isAutoDuration;
+    }
+
+    /** Flip automatic duration. @returns {boolean} the new auto state */
+    toggleAutoDuration() {
+        return this.setAutoDuration(!this.isAutoDuration);
+    }
+
+    /**
+     * The duration a note entered right now would get: the chosen one, or
+     * — under auto — what the rule predicts for the cursor slot
+     * (`facade.autoDurationAt`): the gap to the next onset when something
+     * follows in the measure, otherwise the PRECEDING interval clamped to
+     * the barline, and the rest of the bar only when nothing sounds in it
+     * at all. EVERY consumer of `currentDuration` that needs a number
+     * (cursor steps, ghost note, status bar, the LENGTH row's dashed
+     * prediction) must call this instead.
+     * @returns {number} ticks (never null, never 0)
+     */
+    effectiveDuration() {
+        if (!this.isAutoDuration) return this.currentDuration;
+        const predicted = this.facade.autoDurationAt({
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+        }, this.trackId);
+        return predicted > 0 ? predicted : this.gridSubdivision;
+    }
+
+    /** Mark a note's duration as hand-set: automatic duration won't touch it. */
+    pinDuration({ measure, tick, string }) {
+        const key = durationKey(measure, tick, string);
+        this.autoEnteredDurations.delete(key);
+        this.pinnedDurations.add(key);
+    }
+
+    /** Is this note's duration pinned (hand-set) rather than automatic? */
+    isDurationPinned({ measure, tick, string }) {
+        return this.pinnedDurations.has(durationKey(measure, tick, string));
+    }
+
+    /**
+     * Toggle a dot on the current duration (×1.5 / ÷1.5). A no-op when
+     * the result isn't a whole number of ticks or leaves the editable
+     * range — which is what keeps it off triplets (160 × 1.5 = 240 is a
+     * straight eighth, not a dotted anything).
+     * @returns {boolean} whether the duration changed
+     */
+    toggleDotted() {
+        const current = this.currentDuration;
+        if (current == null) return false;
+        const dotted = DOTTED_DURATIONS.has(current);
+        const next = dotted ? current / 1.5 : current * 1.5;
+        if (!Number.isInteger(next)) return false;
+        if (next < MIN_DURATION || next > MAX_DURATION) return false;
+        if (!dotted && !DOTTED_DURATIONS.has(next)) return false;
+        this.setDuration(next);
+        return true;
+    }
+
+    /**
+     * The STRINGS a selection covers: the inclusive span between the
+     * anchor's string and the moving end's string, low → high.
+     *
+     * A selection is a RECTANGLE (TablEdit), not a column: dragging
+     * along one string selects that string alone, and dragging down to
+     * string 5 selects 3,4,5. `Ctrl+A` is the one thing that still
+     * spans every string — it asks for the whole measure, so it sets
+     * its own endpoints to string 1 and the last string.
+     *
+     * Ordering comes from the ENDPOINTS' strings, never from the tick
+     * normalization: the rectangle's height is independent of which end
+     * came first in time.
+     *
+     * @returns {number[]|null} e.g. [3, 4, 5]
+     */
+    selectionStrings() {
+        if (!this.selection) return null;
+        const count = this.getStringCount();
+        const clamp = (s) => Math.max(1, Math.min(count, Number(s) || 1));
+        const a = clamp(this.selection.start.string);
+        const b = clamp(this.selection.end.string);
+        const lo = Math.min(a, b);
+        const hi = Math.max(a, b);
+        const out = [];
+        for (let s = lo; s <= hi; s++) out.push(s);
+        return out;
+    }
+
+    /**
+     * Absolute [start, end) of the current selection, end-inclusive of
+     * the selected slot (the same convention copy/delete use), plus the
+     * strings the rectangle covers.
+     *
+     * `strings` is what every range op is filtered by, so a two-string
+     * block never touches its neighbours.
+     * @returns {{startAbs: number, endAbs: number, strings: number[]}|null}
+     */
+    selectionRange() {
+        if (!this.selection) return null;
+        const { start, end } = this.selection.getNormalized(
+            (m, t) => this.facade.toAbs(m, t));
+        return {
+            startAbs: this.facade.toAbs(start.measure, start.tick),
+            endAbs: this.facade.toAbs(end.measure, end.tick) + 1,
+            strings: this.selectionStrings(),
+        };
+    }
+
+    /**
+     * Apply one duration to every note in the selection (TablEdit's `*`),
+     * pinning them all. Undoable in one step.
+     * @returns {boolean} false with no selection, or when nothing changed
+     */
+    applyDurationToSelection(duration) {
+        const range = this.selectionRange();
+        if (!range) return false;
+        const hits = this.facade.notesInRange(range.startAbs, range.endAbs,
+            { strings: range.strings, trackId: this.trackId });
+        const ok = this.facade.setRangeDuration(range.startAbs, range.endAbs,
+            duration, { strings: range.strings, trackId: this.trackId }) !== false;
+        if (ok) for (const hit of hits) this.pinDuration(hit);
+        return ok;
+    }
+
+    /**
+     * Halve (0.5) or double (2) the duration of the note at the cursor,
+     * pinning it. Undoable.
+     * @returns {boolean}
+     */
+    scaleDurationAtCursor(factor) {
+        const pos = {
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        };
+        const ok = this.facade.scaleDuration(pos, factor, this.trackId) !== false;
+        if (ok) this.pinDuration(pos);
+        return ok;
+    }
+
+    /** scaleDurationAtCursor over the selection. @returns {boolean} */
+    scaleSelectionDuration(factor) {
+        const range = this.selectionRange();
+        if (!range) return false;
+        const hits = this.facade.notesInRange(range.startAbs, range.endAbs,
+            { strings: range.strings, trackId: this.trackId });
+        const ok = this.facade.scaleRangeDuration(range.startAbs, range.endAbs,
+            factor, { strings: range.strings, trackId: this.trackId }) !== false;
+        if (ok) for (const hit of hits) this.pinDuration(hit);
+        return ok;
+    }
+
+    /**
+     * One-shot "fix durations from spacing" for the cursor's measure
+     * (TablEdit's `J`), ignoring pins. The measure's notes become
+     * auto-managed afterwards, so continued entry keeps them consistent
+     * — the user just said this is what they want the rule to decide.
+     * @returns {boolean} false when nothing changed
+     */
+    fixDurationsAtCursor() {
+        const measureNum = this.cursor.measure;
+        const ok = this.facade.fixDurations(measureNum, { trackId: this.trackId }) !== false;
+        this._adoptForAuto(this.facade.toAbs(measureNum, 0),
+            this.facade.toAbs(measureNum, 0) + this.facade.ticksFor(measureNum));
+        return ok;
+    }
+
+    /**
+     * fixDurationsAtCursor over the selection.
+     *
+     * The one range op the rectangle does NOT narrow by string: the
+     * column rule that decides a note's duration reads every string of
+     * the measure, so re-timing "only strings 3–5" would compute
+     * durations from a phantom document. The tick range is honoured;
+     * the height is not.
+     * @returns {boolean}
+     */
+    fixDurationsInSelection() {
+        const range = this.selectionRange();
+        if (!range) return false;
+        const ok = this.facade.fixDurations(range, { trackId: this.trackId }) !== false;
+        this._adoptForAuto(range.startAbs, range.endAbs);
+        return ok;
+    }
+
+    /** Hand a tick range's notes over to automatic duration. */
+    _adoptForAuto(startAbs, endAbs) {
+        for (const hit of this.facade.notesInRange(startAbs, endAbs, { trackId: this.trackId })) {
+            const key = durationKey(hit.measure, hit.tick, hit.string);
+            this.pinnedDurations.delete(key);
+            this.autoEnteredDurations.add(key);
+        }
+    }
+
+    // ------------------------------------------------------------------
+    // Note fixes at the cursor
+    // ------------------------------------------------------------------
+
+    /**
+     * Move the note under the cursor by `delta` frets (clamped 0..24).
+     * @returns {boolean}
+     */
+    transposeFretAtCursor(delta) {
+        return this.facade.transposeFret({
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        }, delta, this.trackId) !== false;
+    }
+
+    /**
+     * Move every note in the selection rectangle by `delta` frets, as
+     * one undo step. Atomic: refused outright (nothing moves) when any
+     * note in the block would leave 0..24.
+     * @returns {boolean} false with no selection, an empty block, or a
+     *   refusal
+     */
+    transposeSelection(delta) {
+        const range = this.selectionRange();
+        if (!range) return false;
+        return this.facade.transposeRange(range.startAbs, range.endAbs, delta,
+            { strings: range.strings, trackId: this.trackId }) !== false;
+    }
+
+    /**
+     * Re-string the note under the cursor, preserving its pitch, and
+     * follow it with the cursor. Refused (false, nothing moved) when the
+     * target slot is taken or the fret would leave 0..24.
+     * @param {number} direction - +1 / -1
+     * @returns {boolean}
+     */
+    moveNoteAcrossStrings(direction) {
+        const pos = {
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        };
+        const ok = this.facade.moveNoteToString(pos, direction, this.trackId) !== false;
+        if (!ok) return false;
+        const to = { ...pos, string: pos.string + direction };
+        const from = durationKey(pos.measure, pos.tick, pos.string);
+        const onto = durationKey(to.measure, to.tick, to.string);
+        for (const set of [this.pinnedDurations, this.autoEnteredDurations]) {
+            if (set.delete(from)) set.add(onto);
+        }
+        this.cursor.string = to.string;
+        // The cursor MOVED, so say so on the same channel every ordinary
+        // move uses — the status bar's `String:` field, the toolbar's
+        // `.reflects-note` outlines and the cursor overlay all subscribe
+        // to `cursorMove` and would otherwise show the old string until
+        // the next arrow key.
+        this._emit('cursorMove', this.cursor);
+        return true;
+    }
+
+    /**
+     * Tie the note at the cursor to its same-string predecessor, or untie
+     * it. A tie is `tie: true` on the CONTINUATION note — never
+     * `tech: '~'`, which nothing has ever rendered or played.
+     * @returns {boolean} the tie state after the call
+     */
+    toggleTieAtCursor() {
+        const note = this.getNoteAtCursor();
+        if (!note) return false;
+        const pos = {
+            measure: this.cursor.measure,
+            tick: this.cursor.tick,
+            string: this.cursor.string,
+        };
+        const want = note.tie !== true;
+        const ok = this.facade.setTie(pos, want, { trackId: this.trackId }) !== false;
+        if (ok) this.lastTech = '~';
+        return this.getNoteAtCursor()?.tie === true;
+    }
+
+    // ------------------------------------------------------------------
+    // Measures
+    // ------------------------------------------------------------------
+
+    /**
+     * Delete the cursor's written measure on EVERY track (the inverse of
+     * insertMeasure) and pull the cursor back if it fell off the end.
+     * @returns {boolean}
+     */
+    deleteMeasureAtCursor() {
+        const measureNum = this.cursor.measure;
+        const ok = this.facade.deleteMeasure(measureNum) !== false;
+        if (!ok) return false;
+        this.lastAction = { type: 'deleteMeasure', measureNum };
+        const max = this.getMeasureCount();
+        if (this.cursor.measure > max) this.cursor.measure = max;
+        this.cursor.tick = 0;
+        return true;
+    }
+
+    /**
+     * Remove the last measure — but only when it is empty on EVERY
+     * track, because a trailing measure is shared score structure and
+     * deleting it would take another track's music with it. This is the
+     * "walked past the end, changed my mind" undo for ensureMeasure.
+     * @returns {boolean} false when the last measure has any note
+     */
+    deleteEmptyTrailingMeasure() {
+        const notation = this.otf.notation || {};
+        const last = Math.max(1, ...Object.values(notation)
+            .flatMap(ms => ms.map(m => m.measure)));
+        if (last <= 1) return false;
+        for (const measures of Object.values(notation)) {
+            const m = measures.find(x => x.measure === last);
+            if (m && m.events.some(e => e.notes.length > 0)) return false;
+        }
+        const ok = this.facade.deleteMeasure(last) !== false;
+        if (ok && this.cursor.measure > last - 1) {
+            this.cursor.measure = last - 1;
+            this.cursor.tick = 0;
+        }
+        return ok;
+    }
+
+    /**
+     * Make measure `n` exist, appending through the facade — how the
+     * keyboard layer lets you walk past the end to add a bar.
+     * @returns {boolean} false when it was already there
+     */
+    ensureMeasure(n) {
+        if (!(n >= 1) || this.getMeasure(n)) return false;
+        const count = this.getMeasureCount();
+        if (n > count) {
+            return this.facade.addMeasures(n - count, this.trackId) !== false;
+        }
+        return this.facade.transact('Add measure', () => {
+            this.facade.getOrCreateMeasure(n, this.trackId);
+            return true;
+        }) !== false;
+    }
+
+    /**
+     * Ripple the cursor's measure right (insert a slot) or left (close
+     * one) by `ticks`, defaulting to the entry duration — the grid when
+     * automatic duration is on, since then the grid IS the rhythm.
+     * @returns {boolean} false when refused (barline or occupied slot)
+     */
+    shiftRightAtCursor(ticks = this.rippleTicks()) {
+        return this.facade.shiftRight(this.cursor.measure, this.cursor.tick,
+            ticks, { trackId: this.trackId }) !== false;
+    }
+
+    /** @see shiftRightAtCursor */
+    shiftLeftAtCursor(ticks = this.rippleTicks()) {
+        return this.facade.shiftLeft(this.cursor.measure, this.cursor.tick,
+            ticks, { trackId: this.trackId }) !== false;
+    }
+
+    /** How far a ripple moves things by default. */
+    rippleTicks() {
+        return this.isAutoDuration ? this.gridSubdivision : this.currentDuration;
+    }
+
+    /**
+     * Copy the previous measure into the cursor's measure (creating it if
+     * the cursor is past the end) and land at its start. Refused when the
+     * cursor's measure already has notes.
+     * @returns {boolean}
+     */
+    repeatPreviousMeasure() {
+        const measureNum = this.cursor.measure;
+        const ok = this.facade.repeatMeasure(measureNum, { trackId: this.trackId }) !== false;
+        if (!ok) return false;
+        this.lastAction = { type: 'repeatMeasure', measureNum };
+        this.cursor.tick = 0;
+        return true;
+    }
+
+    /**
+     * Toggle auto-advance (does typing a fret move the cursor on?).
+     * @returns {boolean} the new state
+     */
+    toggleAutoAdvance() {
+        this.autoAdvance = !this.autoAdvance;
+        this._emit('autoAdvanceChange', this.autoAdvance);
+        return this.autoAdvance;
+    }
+
+    /** Set auto-advance explicitly. @returns {boolean} the new state */
+    setAutoAdvance(on) {
+        const next = !!on;
+        if (next === this.autoAdvance) return next;
+        return this.toggleAutoAdvance();
     }
 
     /**
@@ -659,7 +1278,11 @@ export class EditorState {
         this.tripletMode = !this.tripletMode;
         this.tripletCount = 0;
         if (this.tripletMode) {
+            // An explicit duration, so it leaves automatic duration (and
+            // is what auto-off goes back to). Under auto a triplet needs
+            // no mode at all — a 160-tick gap IS a triplet eighth.
             this.currentDuration = DURATIONS.tripletEighth;
+            this._lastExplicitDuration = DURATIONS.tripletEighth;
             // Straight grids can't express triplet positions (and vice
             // versa) — same refine-only divisibility rule as setDuration
             if (DURATIONS.tripletEighth % this.gridSubdivision !== 0) {
@@ -690,20 +1313,21 @@ export class EditorState {
      */
     setPendingArticulation(tech) {
         this.pendingArticulation = tech;
+        if (tech) this.lastTech = tech;
         this._emit('pendingArticulationChange', tech);
     }
 
     /**
      * Copy selection (visual mode) or the event at cursor to clipboard.
-     * Selection ranges are inclusive of the end tick.
+     * Selection ranges are inclusive of the end tick, and narrowed to
+     * the rectangle's strings. Paste keeps each note's OWN string, so a
+     * block copied off strings 3–5 lands back on strings 3–5.
      */
     copy() {
         if (this.selection) {
-            const { start, end } = this.selection.getNormalized(
-                (m, t) => this.facade.toAbs(m, t));
-            const startAbs = this.facade.toAbs(start.measure, start.tick);
-            const endAbs = this.facade.toAbs(end.measure, end.tick) + 1;
-            this.facade.copyRange(startAbs, endAbs, { trackId: this.trackId });
+            const range = this.selectionRange();
+            this.facade.copyRange(range.startAbs, range.endAbs,
+                { strings: range.strings, trackId: this.trackId });
         } else {
             const abs = this.facade.toAbs(this.cursor.measure, this.cursor.tick);
             this.facade.copyRange(abs, abs + 1, { trackId: this.trackId });
@@ -715,7 +1339,8 @@ export class EditorState {
      */
     paste() {
         const atAbs = this.facade.toAbs(this.cursor.measure, this.cursor.tick);
-        return this.facade.paste(atAbs, undefined, { trackId: this.trackId });
+        return this.facade.paste(atAbs, undefined,
+            { trackId: this.trackId, ...this._autoOptions() });
     }
 
     /**
@@ -725,11 +1350,9 @@ export class EditorState {
      */
     deleteSelection() {
         if (!this.selection) return false;
-        const { start, end } = this.selection.getNormalized(
-            (m, t) => this.facade.toAbs(m, t));
-        const startAbs = this.facade.toAbs(start.measure, start.tick);
-        const endAbs = this.facade.toAbs(end.measure, end.tick) + 1;
-        return this.facade.deleteRange(startAbs, endAbs, { trackId: this.trackId });
+        const range = this.selectionRange();
+        return this.facade.deleteRange(range.startAbs, range.endAbs,
+            { strings: range.strings, trackId: this.trackId });
     }
 
     /**
@@ -760,6 +1383,12 @@ export class EditorState {
                 return this.deleteNote();
             case 'deleteTick':
                 return this.deleteTick();
+            case 'addArticulation':
+                // TablEdit's F3: re-apply the last effect to the note
+                // you are parked on now. '~' means tie, not a tech.
+                if (!this.lastTech) return false;
+                if (this.lastTech === '~') return this.toggleTieAtCursor();
+                return this.addArticulation(this.lastTech) !== false;
             default:
                 return false;
         }

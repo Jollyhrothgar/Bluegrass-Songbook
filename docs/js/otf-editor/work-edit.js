@@ -41,6 +41,20 @@ export function resolveEditTrackId(otf, instrument) {
  * @param {Function} [options.onApply] - receives the edited document
  * @param {Function} [options.onExit] - receives 'apply' | 'cancel' after unmount
  * @param {Function} [options.confirmDiscard] - () => boolean; defaults to window.confirm
+ * @param {Function} [options.onChange] - receives the document on every edit
+ *   (drafts); passed straight through to the editor.
+ * @param {HTMLElement} [options.barHost] - put the action bar HERE instead of
+ *   above the canvas. §9.1: the song page's bottom band survives edit mode,
+ *   so the session's buttons live in it rather than in a header of their own.
+ * @param {string} [options.submitLabel] - Submit button text
+ * @param {boolean} [options.showDone] - offer ✓ Done (apply back to the view).
+ *   A tab that does not exist yet has nothing to apply back to.
+ * @param {boolean} [options.commentRequired] - a correction says what changed;
+ *   a brand-new take has nothing to describe, so it submits on the click.
+ * @param {Function} [options.onSubmitted] - receives (result, doc) after a
+ *   successful submit (the caller decides what the page becomes next).
+ * @param {Array} [options.extraActions] - [{className, label, title, onClick}]
+ *   buttons prepended to the group (e.g. "Import .tef…").
  */
 export function createTabEditSession({
     mount,
@@ -52,13 +66,23 @@ export function createTabEditSession({
     onExit = () => {},
     onSubmit = null,
     confirmDiscard = null,
+    onChange = null,
+    barHost = null,
+    submitLabel = '🚀 Submit correction',
+    showDone = true,
+    commentRequired = true,
+    onSubmitted = null,
+    extraActions = [],
 }) {
     const root = document.createElement('div');
     root.className = 'tab-edit-session';
 
+    const compact = !!barHost;
     const bar = document.createElement('div');
-    bar.className = 'tab-edit-bar';
-    bar.style.cssText = 'display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 8px;flex-wrap:wrap;';
+    bar.className = 'tab-edit-bar' + (compact ? ' is-compact' : '');
+    bar.style.cssText = compact
+        ? 'display:flex;align-items:center;gap:8px;flex-wrap:wrap;'
+        : 'display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 8px;flex-wrap:wrap;';
     // LABELLED buttons take `qc-toggle-btn`, never `qc-btn`. `.qc-btn` is the
     // site's 32x32 ICON shell (the −/+ steppers): a hard `width: 32px` plus
     // `display:flex; justify-content:center`. Give it a word and the text
@@ -68,23 +92,42 @@ export function createTabEditSession({
     // the labelled variant (padded, auto width) and is what ✓ Done and the
     // panel's Send already use.
     bar.innerHTML = `
-        <span class="tab-edit-title"></span>
-        <span class="tab-edit-actions" style="display:flex;gap:8px;flex-wrap:wrap;">
-            ${onSubmit ? '<button type="button" class="tab-edit-submit qc-toggle-btn" title="Submit this correction for review">🚀 Submit correction</button>' : ''}
+        ${compact ? '' : '<span class="tab-edit-title"></span>'}
+        <span class="tab-edit-actions" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            ${onSubmit ? '<button type="button" class="tab-edit-submit qc-toggle-btn"></button>' : ''}
             <button type="button" class="tab-edit-download qc-toggle-btn" title="Download the edited OTF">⬇ Download</button>
             <button type="button" class="tab-edit-cancel qc-toggle-btn" title="Discard changes and go back">Cancel</button>
-            <button type="button" class="tab-edit-done qc-toggle-btn" title="Apply changes to the view">✓ Done</button>
+            ${showDone ? '<button type="button" class="tab-edit-done qc-toggle-btn" title="Apply changes to the view">✓ Done</button>' : ''}
+            <span class="tab-edit-status"></span>
         </span>
     `;
+    const submitBtn = bar.querySelector('.tab-edit-submit');
+    if (submitBtn) {
+        // textContent: the label is a caller-supplied string
+        submitBtn.textContent = submitLabel;
+        submitBtn.title = submitLabel.replace(/^\W+\s*/, '');
+    }
+    const actionsEl = bar.querySelector('.tab-edit-actions');
+    for (const action of extraActions) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `${action.className || 'tab-edit-extra'} qc-toggle-btn`;
+        btn.textContent = action.label || '';
+        if (action.title) btn.title = action.title;
+        btn.addEventListener('click', () => action.onClick?.(session));
+        actionsEl.insertBefore(btn, actionsEl.firstChild);
+    }
     // textContent, not interpolation: track ids come from OTF data,
     // which community submissions make untrusted input
-    bar.querySelector('.tab-edit-title').textContent =
-        `✏️ Editing${trackId ? ` — ${trackId}` : ''}`;
-    root.appendChild(bar);
+    if (!compact) {
+        bar.querySelector('.tab-edit-title').textContent =
+            `✏️ Editing${trackId ? ` — ${trackId}` : ''}`;
+    }
+    (barHost || root).appendChild(bar);
 
     // Inline submit panel (comment required — same as song corrections)
     let submitPanel = null;
-    if (onSubmit) {
+    if (onSubmit && commentRequired) {
         submitPanel = document.createElement('div');
         submitPanel.className = 'tab-edit-submit-panel';
         submitPanel.style.cssText = 'display:none;gap:8px;margin:0 0 8px;align-items:center;flex-wrap:wrap;';
@@ -96,7 +139,7 @@ export function createTabEditSession({
             <button type="button" class="tab-edit-submit-cancel qc-toggle-btn">Back</button>
             <span class="tab-edit-submit-status"></span>
         `;
-        root.appendChild(submitPanel);
+        (barHost || root).appendChild(submitPanel);
     }
 
     const host = document.createElement('div');
@@ -109,16 +152,97 @@ export function createTabEditSession({
         otf,
         trackId,
         onSave: (doc) => onApply(doc),
+        ...(onChange ? { onChange: (doc) => onChange(doc) } : {}),
+        // In compact mode the bottom band owns playback, so the editor's
+        // status bar drops its own transport (plan §8.3: one transport).
+        hostTransport: compact,
+        // The File menu offers the session's own buttons — the same
+        // handlers, reached from the keyboard-discoverable place. `editor`
+        // and `session` are consts assigned below; every `run` is a
+        // closure invoked long after both exist.
+        fileActions: [
+            ...(onSubmit ? [{
+                label: submitLabel,
+                run: () => bar.querySelector('.tab-edit-submit')?.click(),
+            }] : []),
+            {
+                label: '⬇ Download OTF',
+                action: 'edit.save',
+                run: () => editor.download?.(filename),
+            },
+            { label: 'Cancel', run: () => session.cancel() },
+            ...(showDone ? [{ label: '✓ Done', run: () => session.applyAndExit() }] : []),
+        ],
     });
 
     let closed = false;
     const cleanup = () => {
         if (closed) return false;
         closed = true;
+        closeInline();
         editor.destroy?.();
+        // The bar (and its panel) live in the bottom band in compact mode,
+        // so they are NOT descendants of root and have to go themselves.
+        bar.remove();
+        submitPanel?.remove();
         root.remove();
         return true;
     };
+
+    // ── "Discard edits?" — inline, in the bar (never window.confirm) ───
+    let discardAsk = null;
+
+    /** Take the question down without answering it. */
+    function closeInline() {
+        discardAsk?.remove();
+        discardAsk = null;
+    }
+
+    /**
+     * Ask in the bar, beside the button that raised the question.
+     * Idempotent: a second Cancel click re-focuses the standing question
+     * rather than stacking a second one.
+     */
+    function askInline() {
+        if (discardAsk) {
+            discardAsk.querySelector('.tab-edit-discard-yes')?.focus();
+            return discardAsk;
+        }
+        discardAsk = document.createElement('span');
+        discardAsk.className = 'tab-edit-discard-confirm';
+        discardAsk.setAttribute('role', 'alertdialog');
+        discardAsk.setAttribute('aria-label', 'Discard edits?');
+        discardAsk.style.cssText =
+            'display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;';
+        discardAsk.innerHTML = `
+            <span class="tab-edit-discard-question">Discard edits?</span>
+            <button type="button" class="tab-edit-discard-yes qc-toggle-btn">Discard</button>
+            <button type="button" class="tab-edit-discard-no qc-toggle-btn">Keep editing</button>
+        `;
+        discardAsk.querySelector('.tab-edit-discard-yes')
+            .addEventListener('click', () => {
+                closeInline();
+                session._exit();
+            });
+        discardAsk.querySelector('.tab-edit-discard-no')
+            .addEventListener('click', () => {
+                closeInline();
+                editor.focus?.();
+            });
+        // Escape is "keep editing" — the same answer the panel's own
+        // button gives, from the key everyone reaches for first.
+        discardAsk.addEventListener('keydown', (e) => {
+            e.stopPropagation();
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                closeInline();
+                editor.focus?.();
+            }
+        });
+        actionsEl.appendChild(discardAsk);
+        discardAsk.querySelector('.tab-edit-discard-yes').focus();
+        return discardAsk;
+    }
 
     const session = {
         root,
@@ -137,16 +261,39 @@ export function createTabEditSession({
             onExit('apply');
         },
 
-        /** Exit without applying; asks first when there are edits. */
+        /**
+         * Exit without applying; asks first when there are edits.
+         *
+         * The ask is an INLINE confirm in the bar, not `window.confirm`.
+         * A native dialog is drawn by the browser, so it is outside the
+         * DOM (no test can drive it), outside the theme, and on a phone
+         * it covers the very edits it is asking about. The inline strip
+         * sits where the buttons are, which is where the click that
+         * raised the question came from.
+         *
+         * Because the answer arrives later, `cancel()` returns FALSE when
+         * it merely asked — "not exited (yet)". The injected
+         * `confirmDiscard` still answers synchronously, which is what
+         * keeps the unit tests (and any host that wants its own dialog)
+         * working unchanged.
+         *
+         * @returns {boolean} true when the session actually exited
+         */
         cancel() {
             const dirty = editor.state?.facade?.canUndo?.() || false;
             if (dirty) {
-                const ask = confirmDiscard
-                    || ((typeof window !== 'undefined' && window.confirm)
-                        ? () => window.confirm('Discard your edits?')
-                        : () => true);
-                if (!ask()) return false;
+                if (confirmDiscard) {
+                    if (!confirmDiscard()) return false;
+                } else {
+                    askInline();
+                    return false;
+                }
             }
+            return session._exit();
+        },
+
+        /** The unconditional half of cancel — no question asked. */
+        _exit() {
             if (!cleanup()) return false;
             onExit('cancel');
             return true;
@@ -156,11 +303,43 @@ export function createTabEditSession({
         destroy() {
             cleanup();
         },
+
+        /** Swap the document being edited (a .tef import into this mode). */
+        replaceDocument(doc) {
+            editor.load?.(doc);
+        },
+
+        /** One line of feedback in the action group (never markup). */
+        setStatus(text) {
+            const el = bar.querySelector('.tab-edit-status');
+            if (el) el.textContent = text || '';
+        },
     };
 
-    bar.querySelector('.tab-edit-done').addEventListener('click', () => session.applyAndExit());
+    bar.querySelector('.tab-edit-done')
+        ?.addEventListener('click', () => session.applyAndExit());
     bar.querySelector('.tab-edit-cancel').addEventListener('click', () => session.cancel());
     bar.querySelector('.tab-edit-download').addEventListener('click', () => editor.download?.(filename));
+
+    // A brand-new take has nothing to describe, so Submit IS the submission —
+    // no comment panel in the way. (The correction path below is unchanged.)
+    if (onSubmit && !commentRequired) {
+        submitBtn.addEventListener('click', async () => {
+            submitBtn.disabled = true;
+            session.setStatus('Submitting…');
+            const doc = editor.save();
+            try {
+                const result = await onSubmit(doc, '');
+                session.setStatus(result && result.synced === false
+                    ? 'Saved and live — syncing to the songbook shortly.'
+                    : 'Submitted — your tab is live on this song now.');
+                onSubmitted?.(result, doc);
+            } catch (e) {
+                session.setStatus(`Failed: ${e.message}`);
+                submitBtn.disabled = false;
+            }
+        });
+    }
 
     if (onSubmit && submitPanel) {
         const status = submitPanel.querySelector('.tab-edit-submit-status');
@@ -180,8 +359,9 @@ export function createTabEditSession({
                 return;
             }
             status.textContent = 'Submitting…';
+            const doc = editor.save();
             try {
-                const result = await onSubmit(editor.save(), text);
+                const result = await onSubmit(doc, text);
                 // There is no review gate any more: a correction is LIVE the
                 // moment its row lands (submit-tab.js resolves at exactly
                 // that point). The only thing left to report is whether the
@@ -190,6 +370,7 @@ export function createTabEditSession({
                 status.textContent = result && result.synced === false
                     ? 'Saved and live — syncing to the songbook shortly.'
                     : 'Submitted — your correction is live on this tab now.';
+                onSubmitted?.(result, doc);
             } catch (e) {
                 status.textContent = `Failed: ${e.message}`;
             }

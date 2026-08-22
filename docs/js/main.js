@@ -45,7 +45,11 @@ import {
     updateSyncUI, reorderFavoriteItem, handleListsSignOut
 } from './lists.js';
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
-import { openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar, handleEditAction } from './work-view.js';
+import {
+    openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar,
+    handleEditAction, openNewTabPage,
+} from './work-view.js';
+import { parseTabRoute, partInstrumentFor } from './otf-editor/create-tab-entry.js';
 import { renderBountyView } from './bounty-view.js';
 import { renderMySubmissionsView } from './my-submissions.js';
 import { renderHighScoresView } from './high-scores.js';
@@ -67,6 +71,9 @@ import {
 } from './corpus.js';
 import { getSongContents } from './song-content.js';
 import { showToast } from './toast.js';
+import { initPWA, canInstall, promptInstall } from './pwa.js';
+import { renderDraftsView } from './drafts-view.js';
+import { getDraftStore, migrateLegacyDraft, parseHashParams } from './drafts.js';
 import {
     configureReviewQueue, showReviewQueue, hideReviewQueue, submitReviewRequest,
     showSuppressRequestDialog, showMergeRequestDialog, buildMergeRedirectPayload,
@@ -224,6 +231,9 @@ function pushHistoryState(view, data = {}, replace = false) {
         case 'my-submissions':
             hash = '#my-submissions';
             break;
+        case 'drafts':
+            hash = '#drafts';
+            break;
         case 'high-scores':
             hash = '#high-scores';
             break;
@@ -333,6 +343,9 @@ function handleHistoryNavigation(state) {
         case 'high-scores':
             showView('high-scores');
             break;
+        case 'drafts':
+            showView('drafts');
+            break;
         case 'favorites':
             showView('favorites');
             break;
@@ -371,11 +384,26 @@ function initViewSubscription() {
     const searchContainer = document.querySelector('.search-container');
 
     subscribe('currentView', (view) => {
-        // Tear down live tablature state on any view change: stops
-        // audio (including an in-flight soundfont load), destroys the
-        // edit session and renderer observers. Idempotent; the work
-        // view rebuilds everything it needs on render.
-        teardownTablatureView();
+        // Tear down live tablature state when LEAVING the song page: stops
+        // audio (including an in-flight soundfont load), destroys the edit
+        // session and renderer observers.
+        //
+        // Not when arriving at it. Subscribers run on a `requestAnimationFrame`
+        // (state.js `scheduleRender`), so a teardown queued by *entering* the
+        // song view lands a frame later — by which time work-view has already
+        // built the very thing it then destroys. That is a coin flip decided
+        // by the module cache: with the editor's four dynamic imports cold the
+        // frame wins and the editor survives; warm, the mount resolves in a
+        // microtask, finishes first, and gets deleted. `#drafts` → Open lost
+        // that flip every time (warm), and a dropped `.tef` lost it about half
+        // the time.
+        //
+        // Nothing is left un-torn-down: every path INTO the song view goes
+        // through work-view, which tears down synchronously before it builds
+        // (`openWork`, `openNewTabPage`, and the two bare loading/not-found
+        // states below them). Leaving is the case with no other owner, and
+        // that is the case this keeps.
+        if (view !== 'song') teardownTablatureView();
 
         // Chrome auto-hide only lives on the song page
         setChromeAutoHide(view === 'song');
@@ -509,6 +537,14 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderHighScoresView(resultsDiv);
+                break;
+            case 'drafts':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                renderDraftsView(resultsDiv);
                 break;
             case 'song-lists':
                 searchContainer?.classList.add('hidden');
@@ -709,6 +745,58 @@ function showLandingPage() {
     pushHistoryState('home');
 }
 
+/**
+ * Open one of the three tab-authoring routes (plan §9.2), resolving a
+ * `?draft={id}` first.
+ *
+ * A hash cannot carry a document, so every "reopen this work in progress"
+ * path — the Drafts list, the OS file handler, a `.tef` dragged onto the
+ * window — parks the OTF in IndexedDB and puts its id in the URL. This is
+ * the one place that reads it back: the route then opens on the DRAFT's
+ * document instead of a fresh empty take (or, for an edit, instead of the
+ * published take it corrects).
+ *
+ * A draft id that no longer resolves is not an error — the route simply
+ * opens the way it would have without it.
+ */
+async function openTabRoute(route, hash) {
+    // `file=1` rides along from pwa.js: it means "this draft is a file the
+    // reader just opened", which the take header says out loud.
+    const { draft: draftId, file: fromFile } = parseHashParams(hash);
+    let draft = null;
+    if (draftId) {
+        try {
+            const record = await getDraftStore().get(draftId);
+            if (record?.otf?.tracks?.length) draft = record;
+        } catch (err) {
+            console.warn('Could not read that draft', err);
+        }
+    }
+
+    if (route.kind === 'new-tab') {
+        const options = { ...route.options };
+        if (draft) {
+            options.otf = draft.otf;
+            options.title = options.title || draft.title || '';
+            options.instrument = options.instrument
+                || partInstrumentFor(draft.otf, draft.instrument);
+        }
+        openNewTabPage({ ...options, draft, fromFile: fromFile && !!draft });
+        return;
+    }
+
+    const workId = resolveWorkId(route.workId);
+    if (route.kind === 'add-tab') {
+        openWork(workId, {
+            fromDeepLink: true,
+            addTab: { ...route.target, ...(draft ? { otf: draft.otf } : {}) },
+            draft,
+        });
+        return;
+    }
+    openWork(workId, { fromDeepLink: true, editRef: route.partRef, draft });
+}
+
 function handleDeepLink() {
     const hash = window.location.hash;
     if (!hash) return false;
@@ -721,6 +809,30 @@ function handleDeepLink() {
 
     // Use replace=true for deep links to avoid duplicate history entries
     // (the URL is already set from the initial page load)
+
+    // The tab-authoring routes (plan §9.2). They come FIRST because two of
+    // them live under `#work/` and would otherwise be read as a part id.
+    // Each one is the song page in a different mode — never a page of its
+    // own — so they all end up in openWork()/openNewTabPage().
+    const tabRoute = parseTabRoute(hash);
+    if (tabRoute) {
+        trackDeepLink(`tab-${tabRoute.kind}`, hash);
+        // `?draft={id}` (Drafts list, file handler, drag-and-drop) has to be
+        // read out of IndexedDB, which is async — openTabRoute does that and
+        // then opens the page, while this stays synchronous about the one
+        // thing its caller needs to know: the hash was ours.
+        openTabRoute(tabRoute, hash);
+        return true;
+    }
+
+    if (hash === '#drafts') {
+        // The PWA's personal bucket. No login and no network: it reads
+        // IndexedDB, which is the point — this is the offline surface.
+        trackDeepLink('drafts', hash);
+        showView('drafts');
+        pushHistoryState('drafts', {}, true);
+        return true;
+    }
 
     if (hash.startsWith('#work/')) {
         // Work view: #work/{id} or #work/{id}/{partId}
@@ -2407,6 +2519,32 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
 // INITIALIZATION
 // ============================================
 
+/**
+ * The persistent ⋯ menu. Re-seeded (not appended to) whenever its contents
+ * change, because setOverflowBase REPLACES the list — "Install app" appears
+ * only once Chromium has offered us a `beforeinstallprompt`, and disappears
+ * again the moment the app is installed.
+ */
+function seedOverflowBase() {
+    setOverflowBase([
+        ...(canInstall() ? [{
+            label: 'Install app',
+            onClick: async () => {
+                await promptInstall();
+                seedOverflowBase();   // the prompt is single-use
+            },
+        }] : []),
+        { label: 'Drafts', onClick: () => { showView('drafts'); pushHistoryState('drafts'); } },
+        { label: 'High Scores', onClick: () => { showView('high-scores'); pushHistoryState('high-scores'); } },
+        { label: 'About', onClick: () => { location.href = 'about.html'; } },
+        { label: 'Dev Blog', onClick: () => { location.href = 'blog.html'; } },
+        { label: 'Standards Board', onClick: () => { location.href = 'bluegrass-standards-board.html'; } },
+        { label: 'Support on Patreon', onClick: () => window.open('https://www.patreon.com/c/bluegrassbook', '_blank', 'noopener') },
+        { label: 'Buy me a coffee', onClick: () => window.open('https://buymeacoffee.com/michaelbeav', '_blank', 'noopener') },
+        { label: 'Send Feedback', onClick: () => openFeedbackModal({ type: 'general-feedback' }) },
+    ]);
+}
+
 function init() {
     // Initialize theme
     initTheme();
@@ -2427,15 +2565,7 @@ function init() {
         // "Report Bugs" sign is gone with the banner hero)
         onReportBug: () => openFeedbackModal({ type: 'bug-report' }),
     });
-    setOverflowBase([
-        { label: 'High Scores', onClick: () => { showView('high-scores'); pushHistoryState('high-scores'); } },
-        { label: 'About', onClick: () => { location.href = 'about.html'; } },
-        { label: 'Dev Blog', onClick: () => { location.href = 'blog.html'; } },
-        { label: 'Standards Board', onClick: () => { location.href = 'bluegrass-standards-board.html'; } },
-        { label: 'Support on Patreon', onClick: () => window.open('https://www.patreon.com/c/bluegrassbook', '_blank', 'noopener') },
-        { label: 'Buy me a coffee', onClick: () => window.open('https://buymeacoffee.com/michaelbeav', '_blank', 'noopener') },
-        { label: 'Send Feedback', onClick: () => openFeedbackModal({ type: 'general-feedback' }) },
-    ]);
+    seedOverflowBase();
     document.getElementById('topbar-brand')?.addEventListener('click', (e) => {
         e.preventDefault();
         setDungeonMode(false);
@@ -2799,6 +2929,16 @@ function init() {
             }
         });
     }
+
+    // PWA: service worker (offline + update nudge), install affordance, and
+    // .tef / .otf.json file opening — both from the OS (installed app) and
+    // from a drag onto the window. All of it no-ops where the APIs are
+    // missing, so it is safe on every browser and in the test runners.
+    initPWA({ onInstallAvailable: () => seedOverflowBase() });
+
+    // The old single-slot localStorage draft becomes draft #1 of the new
+    // IndexedDB bucket. Runs once, never blocks boot, never throws.
+    migrateLegacyDraft({ store: getDraftStore() }).catch(() => {});
 
     // Load the index
     loadIndex();

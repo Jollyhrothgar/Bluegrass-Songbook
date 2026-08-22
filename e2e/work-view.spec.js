@@ -167,4 +167,53 @@ test.describe('WorkView - Tablature Playback', () => {
     });
 });
 
+test.describe('WorkView - the band collapses on its OWN width', () => {
+    // The wide (desktop) project, with only the CONTAINER narrowed. This is
+    // the point of the container query: the collapsed band is a band-width
+    // state, not a device, so it has to be reachable without a phone.
+    // (The phone case is otf-editor-mobile.spec.js.)
+    const pinBandWidth = (page, px) => page.addStyleTag({
+        content: `#app-bottomband { right: auto !important; width: ${px}px !important; }`,
+    });
+
+    test('a 480px band collapses to ⚙ on a 1440px window', async ({ page }) => {
+        await page.goto('/#work/foggy-mountain-breakdown/mandolin');
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
+
+        const controls = page.locator('#app-bottomband .tab-controls');
+        await expect(controls).not.toHaveClass(/is-narrow-band/);
+        await expect(page.locator('.tab-more-btn')).toHaveCount(0);
+
+        await pinBandWidth(page, 480);
+
+        await expect(controls).toHaveClass(/is-narrow-band/);
+        const more = page.locator('.tab-more-btn');
+        await expect(more).toBeVisible();
+        await more.click();
+        const sheet = page.locator('.tab-settings-sheet');
+        await expect(sheet).toBeVisible();
+        // …and the sheet is a real panel, not an unstyled div: its chrome no
+        // longer lives inside the phone media query.
+        await expect(sheet.locator('.tab-edit-btn')).toBeVisible();
+        expect(await sheet.evaluate(el => getComputedStyle(el).position))
+            .toBe('fixed');
+    });
+
+    test('widening the band puts every control back on it', async ({ page }) => {
+        await page.goto('/#work/foggy-mountain-breakdown/mandolin');
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
+        const controls = page.locator('#app-bottomband .tab-controls');
+
+        await pinBandWidth(page, 400);
+        await expect(controls).toHaveClass(/is-narrow-band/);
+
+        await pinBandWidth(page, 1300);
+        await expect(controls).not.toHaveClass(/is-narrow-band/);
+        await expect(page.locator('.tab-settings-sheet')).toHaveCount(0);
+        // The controls came back to the band itself, not to a leftover sheet.
+        await expect(page.locator('#app-bottomband > .tab-controls > .tab-edit-btn'))
+            .toBeVisible();
+    });
+});
+
 // Lead sheet controls (Key/Display/Info pills) are covered in song-view.spec.js

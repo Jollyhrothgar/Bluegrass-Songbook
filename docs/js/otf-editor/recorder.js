@@ -255,8 +255,42 @@ export function dispatchEditorEvent(editor, event) {
             state.removeArticulation();
             break;
 
+        // Clearing the effect clears the TIE as well (TablEdit's N), so
+        // it is its own op — `removeArticulation` above stays tech-only
+        // and keeps older recordings replaying as they were made.
+        case 'clearEffects':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.clearEffectsAtCursor();
+            break;
+
         case 'setPendingArticulation':
             state.setPendingArticulation(params.tech);
+            break;
+
+        // === Fingering (both hands) ===
+        // `finger` (T I M R P) and `lh` (0..4) are separate fields, so
+        // they replay separately; the clear takes both.
+        case 'setFingering':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.setFingering(params.finger ?? null);
+            break;
+
+        case 'setLeftHand':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.setLeftHand(params.digit ?? null);
+            break;
+
+        case 'clearFingerings':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.clearFingerings();
             break;
 
         // === Placed text (the document's `annotations`) ===
@@ -342,6 +376,95 @@ export function dispatchEditorEvent(editor, event) {
         // === Triplet ===
         case 'toggleTripletMode':
             state.toggleTripletMode();
+            break;
+
+        // === Duration editing (TablEdit's `*`, `<`/`>`, auto, `J`) ===
+        // `setDuration` above already replays automatic duration: the
+        // recorded duration is simply null.
+        case 'setAutoDuration':
+            state.setAutoDuration(params.auto !== false);
+            break;
+
+        case 'toggleDotted':
+            state.toggleDotted();
+            break;
+
+        case 'applyDurationToSelection':
+            state.applyDurationToSelection(params.duration);
+            break;
+
+        case 'scaleDuration':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.scaleDurationAtCursor(params.factor);
+            break;
+
+        case 'scaleSelectionDuration':
+            state.scaleSelectionDuration(params.factor);
+            break;
+
+        case 'fixDurations':
+            state.cursor.measure = params.measure;
+            state.fixDurationsAtCursor();
+            break;
+
+        // === Note fixes ===
+        case 'transposeFret':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.transposeFretAtCursor(params.delta);
+            break;
+
+        case 'transposeSelection':
+            state.transposeSelection(params.delta);
+            break;
+
+        case 'moveNoteToString':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.moveNoteAcrossStrings(params.direction);
+            break;
+
+        case 'toggleTie':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.toggleTieAtCursor();
+            break;
+
+        // === More measure operations ===
+        case 'deleteMeasure':
+            state.cursor.measure = params.measure;
+            state.deleteMeasureAtCursor();
+            break;
+
+        case 'ensureMeasure':
+            state.ensureMeasure(params.measure);
+            break;
+
+        case 'repeatMeasure':
+            state.cursor.measure = params.measure;
+            state.repeatPreviousMeasure();
+            break;
+
+        case 'shiftRight':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.shiftRightAtCursor(params.ticks);
+            break;
+
+        case 'shiftLeft':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.shiftLeftAtCursor(params.ticks);
+            break;
+
+        // === Entry flags ===
+        case 'toggleAutoAdvance':
+            state.toggleAutoAdvance();
             break;
 
         default:

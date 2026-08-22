@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bluegrass Book</title>
     <link rel="icon" type="image/png" href="images/banjo.png">
-    <link rel="apple-touch-icon" href="images/banjo.png">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+    <!-- PWA: installable app + offline (js/pwa.js registers sw.js). The
+         theme colour follows the theme's --bg so the OS window chrome does
+         not fight the page. -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- The apple- prefix is deprecated in Chromium but is still what older
+         iOS Safari reads for "add to home screen" — keep both. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Bluegrass Book">
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZL02N7DQ8"></script>

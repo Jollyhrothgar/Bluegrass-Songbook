@@ -146,6 +146,36 @@ export function selectionRectsForRow(geoms, startAbs, endAbs) {
 }
 
 /**
+ * Vertical extent of a selection highlight: the rectangle covers ONLY
+ * the selected strings (TablEdit), not the whole staff.
+ *
+ * Strings are 1-based and drawn at `topMargin + (s - 1) * stringSpacing`,
+ * so the band runs from the top string's line to the bottom one's, with
+ * `pad` of slack either side so a fret digit sitting on the line is
+ * inside the box. `strings` null/empty means the whole staff (what
+ * `Ctrl+A` and the pre-rectangle behaviour ask for).
+ *
+ * @param {number[]|null} strings - selected string numbers
+ * @param {Object} opts - {topMargin, stringSpacing, stringCount, pad}
+ * @returns {{top: number, height: number}} SVG units
+ */
+export function selectionBand(strings, {
+    topMargin = 30, stringSpacing = 15, stringCount = 5, pad = 6,
+} = {}) {
+    const count = Math.max(1, stringCount);
+    let lo = 1;
+    let hi = count;
+    if (strings && strings.length) {
+        lo = Math.max(1, Math.min(count, Math.min(...strings)));
+        hi = Math.max(1, Math.min(count, Math.max(...strings)));
+    }
+    return {
+        top: topMargin + (lo - 1) * stringSpacing - pad,
+        height: (hi - lo) * stringSpacing + pad * 2,
+    };
+}
+
+/**
  * Grid ("ruler") lines for one row from its real measure geometry: one
  * line per grid subdivision over each measure's OWN tick length, so a
  * short 2/4 measure gets half the lines of its 2/2 neighbors and every
@@ -183,9 +213,10 @@ export class EditorCursor {
     constructor(state, options = {}) {
         this.state = state;
         this.options = {
-            cursorColor: 'var(--accent, #007bff)',
+            cursorColor: 'var(--accent, #007bff)',              // NORMAL
+            cursorColorVisual: 'var(--success, #16a34a)',       // VISUAL
+            cursorColorAnnotation: 'var(--danger, #dc2626)',    // ANNOTATION
             cursorWidth: 2,
-            insertBoxPadding: 2,
             ghostOpacity: 0.4,
             ...options,
         };
@@ -298,22 +329,10 @@ export class EditorCursor {
             z-index: 10;
         `;
 
-        // Cursor element (crosshair design)
+        // Cursor element: ONE box over the cell being edited (TablEdit's
+        // square). No sub-elements — the whiskers are gone.
         this.cursorElement = document.createElement('div');
         this.cursorElement.className = 'editor-cursor';
-
-        // Crosshair sub-elements
-        this.cursorVertical = document.createElement('div');
-        this.cursorVertical.className = 'cursor-vertical';
-        this.cursorElement.appendChild(this.cursorVertical);
-
-        this.cursorHorizontal = document.createElement('div');
-        this.cursorHorizontal.className = 'cursor-horizontal';
-        this.cursorElement.appendChild(this.cursorHorizontal);
-
-        this.cursorCenter = document.createElement('div');
-        this.cursorCenter.className = 'cursor-center';
-        this.cursorElement.appendChild(this.cursorCenter);
 
         this.overlay.appendChild(this.cursorElement);
 
@@ -335,86 +354,81 @@ export class EditorCursor {
     }
 
     /**
-     * Update cursor style based on mode
+     * The cursor's colour for a mode. NORMAL keeps the `cursorColor`
+     * option (the accent); VISUAL and ANNOTATION get their own so the
+     * mode is readable from the cursor alone, the way the mode badge
+     * reads from the toolbar.
      */
-    _updateCursorStyle() {
-        const mode = this.state.mode;
-        const { cursorColor } = this.options;
+    _modeColor() {
+        const o = this.options;
+        if (this.state.mode === 'visual') return o.cursorColorVisual;
+        if (this.state.mode === 'annotation') return o.cursorColorAnnotation;
+        return o.cursorColor;
+    }
 
-        // Crosshair container - positioned at cursor location
+    /**
+     * Size of ONE edit cell in overlay pixels: a grid slot wide, a
+     * string space tall. Measured from the LIVE geometry (a second
+     * geometry point one grid step along), so a finer entry grid gives a
+     * narrower box and the reader's size setting scales it. The second
+     * point may sit past the barline — svgPointForPosition extrapolates
+     * linearly, which is exactly the slot width we want.
+     */
+    _cellSize() {
+        const MIN_W = 6;
+        const grid = this.state.gridSubdivision || 240;
+        const cur = this.state.cursor;
+
+        const here = this._geometryPoint(cur);
+        if (here) {
+            const next = this._geometryPoint({ ...cur, tick: cur.tick + grid });
+            const spacing = this.renderer?.options?.stringSpacing ?? 14;
+            return {
+                width: Math.max(MIN_W, next ? Math.abs(next.x - here.x) : MIN_W),
+                height: spacing * (here.scaleY || 1),
+            };
+        }
+
+        const info = this.layoutInfo;
+        if (!info) return { width: 14, height: 14 };
+        const ticks = info.ticksPerMeasure || 1920;
+        return {
+            width: Math.max(MIN_W, (info.noteAreaWidth || 0) * grid / ticks),
+            height: info.stringSpacing || 14,
+        };
+    }
+
+    /**
+     * Paint the cursor: a rectangular outline around the cell at the
+     * cursor (one grid slot x one string), coloured by mode.
+     *
+     * It used to be a crosshair with 20px whiskers, which the first
+     * TablEdit user read as "cross hairs ... should be a square like in
+     * tabledit" (plan tab-editor-input-parity.md S7): whiskers point at a
+     * spot, a box says WHICH CELL a digit will land in. The dead
+     * `'insert'` branch went with it — there is no INSERT mode
+     * (state.js EditorMode is NORMAL / VISUAL / ANNOTATION).
+     *
+     * @param {{width: number, height: number}} [size] - cell size; measured when omitted
+     */
+    _updateCursorStyle(size) {
+        const { width, height } = size || this._cellSize();
+        const color = this._modeColor();
+        const blink = this.state.mode === 'normal'
+            ? 'animation: cursor-blink 1.2s infinite;'
+            : '';
+
         this.cursorElement.style.cssText = `
             position: absolute;
+            box-sizing: border-box;
+            width: ${width}px;
+            height: ${height}px;
+            border: ${this.options.cursorWidth}px solid ${color};
+            border-radius: 2px;
+            background: color-mix(in srgb, ${color} 15%, transparent);
             pointer-events: none;
+            ${blink}
         `;
-
-        // Whisker dimensions
-        const whiskerLength = 20;
-        const whiskerWidth = 2;
-        const centerSize = mode === 'insert' ? 10 : 6;
-
-        // Vertical whisker (extends above and below)
-        this.cursorVertical.style.cssText = `
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: ${whiskerWidth}px;
-            height: ${whiskerLength * 2}px;
-            background: ${cursorColor};
-            transform: translate(-50%, -50%);
-            opacity: ${mode === 'insert' ? 1 : 0.8};
-            ${mode === 'normal' ? 'animation: cursor-blink 1s infinite;' : ''}
-        `;
-
-        // Horizontal whisker (extends left and right on string)
-        this.cursorHorizontal.style.cssText = `
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: ${whiskerLength * 2}px;
-            height: ${whiskerWidth}px;
-            background: ${cursorColor};
-            transform: translate(-50%, -50%);
-            opacity: ${mode === 'insert' ? 1 : 0.8};
-            ${mode === 'normal' ? 'animation: cursor-blink 1s infinite;' : ''}
-        `;
-
-        // Center point/box
-        if (mode === 'insert') {
-            this.cursorCenter.style.cssText = `
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                width: ${centerSize}px;
-                height: ${centerSize}px;
-                border: 2px solid ${cursorColor};
-                background: ${cursorColor}33;
-                border-radius: 2px;
-                transform: translate(-50%, -50%);
-            `;
-        } else if (mode === 'visual') {
-            this.cursorCenter.style.cssText = `
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                width: ${centerSize}px;
-                height: ${centerSize}px;
-                background: ${cursorColor}66;
-                border-radius: 50%;
-                transform: translate(-50%, -50%);
-            `;
-        } else {
-            this.cursorCenter.style.cssText = `
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                width: ${centerSize}px;
-                height: ${centerSize}px;
-                background: ${cursorColor};
-                border-radius: 50%;
-                transform: translate(-50%, -50%);
-                animation: cursor-blink 1s infinite;
-            `;
-        }
     }
 
     /**
@@ -692,15 +706,12 @@ export class EditorCursor {
             || (this.layoutInfo ? this._calculatePosition() : null);
         if (!pos) return;
 
-        this._updateCursorStyle();
-
-        // Position crosshair at intersection point
-        // The cursor container is a box centered at the cursor position
-        const containerSize = 50; // Large enough to contain whiskers
-        this.cursorElement.style.left = `${pos.x - containerSize / 2}px`;
-        this.cursorElement.style.top = `${pos.y - containerSize / 2}px`;
-        this.cursorElement.style.width = `${containerSize}px`;
-        this.cursorElement.style.height = `${containerSize}px`;
+        // The box is the CELL the next digit lands in: one grid slot
+        // wide, one string tall, centred on the cursor point.
+        const cell = this._cellSize();
+        this._updateCursorStyle(cell);
+        this.cursorElement.style.left = `${pos.x - cell.width / 2}px`;
+        this.cursorElement.style.top = `${pos.y - cell.height / 2}px`;
 
         this.revealCursor(pos);
     }
@@ -736,8 +747,8 @@ export class EditorCursor {
 
     /**
      * Draw the selection highlight from renderer geometry: one span per
-     * (row, measure) intersection, full staff height. Cleared when not
-     * in visual mode or when geometry is unavailable.
+     * (row, measure) intersection, clipped to the SELECTED STRINGS.
+     * Cleared when not in visual mode or when geometry is unavailable.
      */
     renderSelection() {
         if (!this.selectionOverlay) return;
@@ -756,7 +767,9 @@ export class EditorCursor {
         const opt = this.renderer.options || {};
         const topMargin = opt.topMargin ?? 30;
         const stringSpacing = opt.stringSpacing ?? 15;
-        const staffH = (this.state.getStringCount() - 1) * stringSpacing + 12;
+        const band = selectionBand(this.state.selectionStrings?.(), {
+            topMargin, stringSpacing, stringCount: this.state.getStringCount(),
+        });
 
         for (const row of rowData) {
             const origin = this._svgToOverlay(row, 0, 0);
@@ -767,9 +780,9 @@ export class EditorCursor {
                 div.style.cssText = `
                     position: absolute;
                     left: ${origin.x + rect.x0 * origin.scaleX - 6}px;
-                    top: ${origin.y + (topMargin - 6) * origin.scaleY}px;
+                    top: ${origin.y + band.top * origin.scaleY}px;
                     width: ${(rect.x1 - rect.x0) * origin.scaleX + 12}px;
-                    height: ${staffH * origin.scaleY}px;
+                    height: ${band.height * origin.scaleY}px;
                     background: var(--accent, #007bff);
                     opacity: 0.14;
                     border-radius: 3px;
@@ -792,7 +805,10 @@ export class EditorCursor {
         const opt = this.renderer.options || {};
         const topMargin = opt.topMargin ?? 30;
         const stringSpacing = opt.stringSpacing ?? 15;
-        const staffH = (this.state.getStringCount() - 1) * stringSpacing + 12;
+        // The preview outlines the same rectangle that is moving.
+        const band = selectionBand(this.state.selectionStrings?.(), {
+            topMargin, stringSpacing, stringCount: this.state.getStringCount(),
+        });
 
         this._movePreviewEls = [];
         for (const row of rowData) {
@@ -804,9 +820,9 @@ export class EditorCursor {
                 div.style.cssText = `
                     position: absolute;
                     left: ${origin.x + rect.x0 * origin.scaleX - 6}px;
-                    top: ${origin.y + (topMargin - 6) * origin.scaleY}px;
+                    top: ${origin.y + band.top * origin.scaleY}px;
                     width: ${(rect.x1 - rect.x0) * origin.scaleX + 12}px;
-                    height: ${staffH * origin.scaleY}px;
+                    height: ${band.height * origin.scaleY}px;
                     border: 2px dashed var(--accent, #007bff);
                     border-radius: 3px;
                     box-sizing: border-box;
@@ -932,7 +948,32 @@ export class EditorCursor {
      * auto-advance after entering a note.
      */
     moveByDuration(direction) {
-        this.moveByTicks(direction * this.state.currentDuration);
+        // effectiveDuration(), never currentDuration: under AUTOMATIC
+        // duration the latter is `null`, and `direction * null` is 0 —
+        // the cursor simply stopped moving.
+        this.moveByTicks(direction * this._entryDuration());
+    }
+
+    /**
+     * How far one `Space` / `Tab` / auto-advance step goes.
+     *
+     * Under AUTOMATIC duration that is ONE GRID SLOT, not the duration
+     * the column rule predicts (plan §6: under auto the grid is the
+     * rhythm input). The prediction can be most of a bar — an empty 2/4
+     * measure predicts a dotted quarter — and stepping by it walks the
+     * cursor straight past the slots the user is about to type into.
+     *
+     * Falls back to the raw fields for the bare-state fixtures some unit
+     * tests build.
+     */
+    _entryDuration() {
+        if (this.state.isAutoDuration) {
+            return this.state.gridSubdivision
+                || this.state.effectiveDuration?.()
+                || TICKS_PER_BEAT;
+        }
+        const d = this.state.effectiveDuration?.();
+        return d || this.state.currentDuration || this.state.gridSubdivision;
     }
 
     /**
@@ -973,6 +1014,12 @@ export class EditorCursor {
         const newString = cursor.string + direction;
         if (newString >= 1 && newString <= stringCount) {
             cursor.string = newString;
+            // A selection is a rectangle, so a vertical move in VISUAL
+            // drags its end string exactly the way moveByTicks drags its
+            // end tick (vim's j/k in VISUAL, and the arrow keys).
+            if (this.state.mode === 'visual' && this.state.selection) {
+                this.state.selection.end = cursor.clone();
+            }
             this.update();
             this.state._emit('cursorMove', cursor);
         }
@@ -1002,8 +1049,22 @@ export class EditorCursor {
             const measureTicks = this.state.facade
                 ? this.state.facade.ticksFor(this.state.cursor.measure)
                 : this.state.ticksPerMeasure;
-            this.state.cursor.tick = Math.max(0, measureTicks - this.state.currentDuration);
+            this.state.cursor.tick = Math.max(0, measureTicks - this._entryDuration());
         }
+        this.update();
+        this.state._emit('cursorMove', this.state.cursor);
+    }
+
+    /**
+     * Jump to a string (1 = highest), clamped to the track's string
+     * count. The nav helper behind first/last-string keys.
+     * @param {number} stringNum
+     */
+    moveToString(stringNum) {
+        const count = this.state.getStringCount();
+        const next = Math.max(1, Math.min(count, stringNum));
+        if (next === this.state.cursor.string) return;
+        this.state.cursor.string = next;
         this.update();
         this.state._emit('cursorMove', this.state.cursor);
     }
@@ -1182,9 +1243,6 @@ export class EditorCursor {
         this.gridOverlay = null;
         this.overlay = null;
         this.cursorElement = null;
-        this.cursorVertical = null;
-        this.cursorHorizontal = null;
-        this.cursorCenter = null;
         this.ghostNote = null;
     }
 }

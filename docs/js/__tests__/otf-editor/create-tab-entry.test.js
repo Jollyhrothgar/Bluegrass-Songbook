@@ -9,7 +9,8 @@ import { describe, it, expect, vi } from 'vitest';
 import {
     PART_INSTRUMENTS, partInstrumentFor, presetForInstrument,
     sanitizeInstrument, createTabHref, parseCreateTarget, targetBannerText,
-    launchTabCreator, submitNewTab,
+    launchTabCreator, submitNewTab, parseTabRoute, parseNewTabOptions,
+    editTabHref,
 } from '../../otf-editor/create-tab-entry.js';
 import { buildNewTab, INSTRUMENT_CHOICES } from '../../otf-editor/create-tab.js';
 
@@ -53,27 +54,32 @@ describe('part instrument naming', () => {
     });
 });
 
+// §9.1: the tab is written on the page it will be published on, so the
+// "create page" is a hash route on the song page — the work id lives in
+// the PATH now, not in a query parameter.
 describe('target round trip', () => {
     it('carries work, instrument and title through the URL', () => {
         const href = createTabHref({
             workId: 'salt-creek', instrument: 'banjo', title: 'Salt Creek',
         });
-        expect(href.startsWith('create.html?')).toBe(true);
-        const target = parseCreateTarget(href.split('?')[1]);
-        expect(target).toEqual({
+        expect(href.startsWith('#work/salt-creek/add-tab?')).toBe(true);
+        const route = parseTabRoute(href);
+        expect(route.kind).toBe('add-tab');
+        expect(route.target).toEqual({
             workId: 'salt-creek', instrument: 'banjo', title: 'Salt Creek',
             existingCount: 0,
         });
     });
 
-    it('is the plain create page with no target', () => {
-        expect(createTabHref()).toBe('create.html');
+    it('is the provisional new-tab page with no target', () => {
+        expect(createTabHref()).toBe('#new-tab');
+        expect(parseTabRoute('#new-tab').kind).toBe('new-tab');
         expect(parseCreateTarget('')).toEqual(
             { workId: null, instrument: null, title: null, existingCount: 0 });
     });
 
     it('drops a work id that is not a clean slug', () => {
-        expect(createTabHref({ workId: '../../evil' })).toBe('create.html');
+        expect(createTabHref({ workId: '../../evil' })).toBe('#new-tab');
         expect(parseCreateTarget('work=..%2F..%2Fevil&title=x').workId).toBeNull();
         expect(parseCreateTarget('work=Salt_Creek').workId).toBeNull();
     });
@@ -88,7 +94,7 @@ describe('the target banner is honest from the first pixel', () => {
             workId: 'foggy-mountain-breakdown', instrument: 'banjo',
             title: 'Foggy Mountain Breakdown', existingCount: 3,
         });
-        expect(parseCreateTarget(href.split('?')[1]).existingCount).toBe(3);
+        expect(parseTabRoute(href).target.existingCount).toBe(3);
     });
 
     it('says you are adding ALONGSIDE, with the number, before a note is entered', () => {
@@ -111,7 +117,7 @@ describe('the target banner is honest from the first pixel', () => {
     });
 
     it('refuses a count with no work behind it, or a junk one', () => {
-        expect(createTabHref({ existingCount: 5 })).toBe('create.html');
+        expect(createTabHref({ existingCount: 5 })).toBe('#new-tab');
         expect(parseCreateTarget('work=salt-creek&have=lots').existingCount).toBe(0);
         expect(parseCreateTarget('work=salt-creek&have=-3').existingCount).toBe(0);
         expect(parseCreateTarget('have=9').existingCount).toBe(0);
@@ -119,14 +125,14 @@ describe('the target banner is honest from the first pixel', () => {
 });
 
 describe('launchTabCreator', () => {
-    it('sends a signed-in contributor to the targeted create page', () => {
+    it('sends a signed-in contributor to the song page, in add-tab mode', () => {
         const navigate = vi.fn();
         const ok = launchTabCreator(
             { workId: 'gold-rush', instrument: 'banjo', title: 'Gold Rush' },
             { requireLogin: loggedIn, navigate });
         expect(ok).toBe(true);
         expect(navigate).toHaveBeenCalledWith(
-            'create.html?work=gold-rush&instrument=banjo&title=Gold+Rush');
+            '#work/gold-rush/add-tab?instrument=banjo&title=Gold+Rush');
     });
 
     it('gates on login at the click, and goes nowhere without one', () => {
@@ -202,5 +208,85 @@ describe('submitNewTab', () => {
         await expect(submitNewTab(otf(), { workId: 'gold-rush' },
             { requireLogin: loggedOut, submit })).rejects.toThrow(/Sign in/);
         expect(submit).not.toHaveBeenCalled();
+    });
+});
+
+// ── The editor is a URL (plan §9.2) ──────────────────────────────────────
+//
+// Three shapes, all of them the SONG PAGE in a different mode. They have to
+// be reload-safe (a contributor who refreshes mid-edit lands back on the
+// take they were editing) and they have to be parsed defensively: a hash is
+// user input, and two of them live under `#work/` where a mis-parse would
+// silently read as a part id.
+describe('parseTabRoute', () => {
+    it('reads the edit route, take and all', () => {
+        expect(parseTabRoute('#work/gold-rush/edit/banjo-2')).toEqual({
+            kind: 'edit', workId: 'gold-rush', partRef: 'banjo-2',
+        });
+    });
+
+    it('reads the add-tab route with its target', () => {
+        const route = parseTabRoute('#work/gold-rush/add-tab?instrument=banjo&have=8');
+        expect(route.kind).toBe('add-tab');
+        expect(route.workId).toBe('gold-rush');
+        expect(route.target).toEqual({
+            workId: 'gold-rush', instrument: 'banjo', title: null, existingCount: 8,
+        });
+    });
+
+    it('reads the new-tab route and clamps everything in its query', () => {
+        const route = parseTabRoute(
+            '#new-tab?title=Salt+Creek&instrument=fiddle&ts=7/8&tempo=9000&measures=0');
+        expect(route.kind).toBe('new-tab');
+        expect(route.options.title).toBe('Salt Creek');
+        // fiddle has no preset of its own — it is tuned like the mandolin
+        expect(route.options.instruments).toEqual(['mandolin']);
+        expect(route.options.timeSignature).toBe('4/4');   // 7/8 is not offered
+        expect(route.options.tempo).toBe(280);             // clamped
+        expect(route.options.measures).toBe(1);            // clamped
+    });
+
+    it('defaults a bare #new-tab to a 16-bar banjo tab in 4/4', () => {
+        expect(parseTabRoute('#new-tab').options).toEqual({
+            title: null, instrument: null, instruments: ['5-string-banjo'],
+            timeSignature: '4/4', tempo: 120, measures: 16,
+        });
+    });
+
+    it('leaves every other route alone', () => {
+        expect(parseTabRoute('#work/gold-rush')).toBeNull();
+        expect(parseTabRoute('#work/gold-rush/banjo-tab')).toBeNull();
+        expect(parseTabRoute('#work/gold-rush/edit')).toBeNull();   // no take named
+        expect(parseTabRoute('#search/salt')).toBeNull();
+        expect(parseTabRoute('#list/abc/gold-rush')).toBeNull();
+        expect(parseTabRoute('')).toBeNull();
+        expect(parseTabRoute(null)).toBeNull();
+    });
+
+    it('refuses a work id that is not a clean slug', () => {
+        expect(parseTabRoute('#work/..%2F..%2Fevil/add-tab')).toBeNull();
+        expect(parseTabRoute('#work/Salt_Creek/edit/banjo')).toBeNull();
+    });
+
+    it('round-trips the edit link it mints', () => {
+        const href = editTabHref('gold-rush', 'banjo-2');
+        expect(href).toBe('#work/gold-rush/edit/banjo-2');
+        expect(parseTabRoute(href).partRef).toBe('banjo-2');
+    });
+
+    it('survives a take name that needs encoding', () => {
+        const href = editTabHref('gold-rush', 'banjo take/2');
+        expect(parseTabRoute(href).partRef).toBe('banjo take/2');
+    });
+});
+
+describe('parseNewTabOptions', () => {
+    it('keeps a time signature the editor can actually build', () => {
+        expect(parseNewTabOptions('ts=6/8').timeSignature).toBe('6/8');
+        expect(parseNewTabOptions('ts=%3Cscript%3E').timeSignature).toBe('4/4');
+    });
+
+    it('truncates a runaway title instead of refusing it', () => {
+        expect(parseNewTabOptions('title=' + 'x'.repeat(500)).title.length).toBe(200);
     });
 });

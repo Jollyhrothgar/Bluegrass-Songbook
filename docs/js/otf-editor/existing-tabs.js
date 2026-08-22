@@ -108,8 +108,9 @@ export function tabEntryPlan(song, instrument, { title = null } = {}) {
  * it lands.
  */
 export function renderExistingTabsPanel(plan, {
-    onAdd, onImprove, onView, onBack = null,
+    onAdd, onImprove, onView, onBack = null, onImport = null,
     addLabel = 'Add mine as another version',
+    importLabel = 'Import .tef…',
 } = {}) {
     const panel = document.createElement('div');
     panel.className = 'tab-existing-panel';
@@ -129,6 +130,8 @@ export function renderExistingTabsPanel(plan, {
         </ul>
         <div class="tab-existing-actions">
             <button type="button" class="tab-existing-add">${escapeHtml(addLabel)}</button>
+            ${onImport ? `<button type="button" class="tab-existing-import"
+                >${escapeHtml(importLabel)}</button>` : ''}
             ${onBack ? '<button type="button" class="tab-existing-back">Back</button>' : ''}
         </div>`;
 
@@ -139,6 +142,8 @@ export function renderExistingTabsPanel(plan, {
         btn.addEventListener('click', () => onImprove?.(tabAt(btn), plan)));
     panel.querySelector('.tab-existing-add')
         ?.addEventListener('click', () => onAdd?.(plan));
+    panel.querySelector('.tab-existing-import')
+        ?.addEventListener('click', () => onImport?.(plan));
     panel.querySelector('.tab-existing-back')
         ?.addEventListener('click', () => onBack?.(plan));
     return panel;

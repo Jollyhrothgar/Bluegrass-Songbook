@@ -8,6 +8,8 @@ Single-page search application for the Bluegrass Songbook. Modularized into ES m
 docs/
 ├── index.html          # Page structure, modals (chrome is built by js/shell.js)
 ├── blog.html           # Dev blog
+├── manifest.webmanifest # PWA manifest (install, shortcuts, .tef/.otf.json file handlers)
+├── sw.js               # Service worker — a shell around js/sw-strategy.js
 ├── js/
 │   ├── main.js         # Entry point, initialization, event wiring, routing
 │   ├── shell.js        # App shell: top band, bottom band, pill primitive
@@ -19,6 +21,7 @@ docs/
 │   ├── song-view.js    # Lead-sheet rendering helpers, ABC notation, list nav
 │   ├── song-controls.js # Pill builders: Key / Display / Info / Export
 │   ├── tab-controls-sheet.js # Phone: re-parents the tab band's non-transport controls into a ⚙ settings sheet
+│   ├── tab-edit-band.js # The SAME bottom band, re-bound to the live editor document (edit mode keeps its controls)
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
 │   ├── tags.js         # Tag dropdown, filtering, virtual instrument tags/facets
 │   ├── title-match.js  # Song-title normalization (bounty board dedupe)
@@ -34,6 +37,10 @@ docs/
 │   ├── collections.js  # Landing page collection definitions
 │   ├── analytics.js    # Behavioral analytics tracking
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
+│   ├── pwa.js          # Service-worker registration, install prompt, .tef/.otf.json file open + drop
+│   ├── sw-strategy.js  # THE caching decisions (imported by ../sw.js and by its tests)
+│   ├── drafts.js       # IndexedDB drafts bucket + debounced editor autosave
+│   ├── drafts-view.js  # `#drafts` list (Open / Delete)
 │   ├── audio-unlock.js # iOS audio: SYNC resume inside the tap + ringer-switch escape (never await before calling it)
 │   ├── supabase-auth.js # Auth, cloud sync, voting
 │   ├── renderers/      # Part renderers
@@ -83,14 +90,28 @@ quick-controls bar, or bottom sheet anymore:
   `<html>` (ResizeObserver + on every `setBottomBand`). Anything stacked on
   the band (drop-up popovers, the tab settings sheet, `.container`'s
   bottom padding) offsets off that variable, never a literal.
-- **Phone tab band** (`tab-controls-sheet.js`): at ≤640px the band keeps
-  Play / Stop / tempo / loop / ⚙ and the ⚙ sheet holds everything else
-  (size, key, layout, feel, count-in, metronome, mixer, Edit). The controls
-  are MOVED into the sheet, not rebuilt — the sheet lives inside
-  `.tab-controls`, so `controls.querySelector(...)` in
+- **Collapsed tab band** (`tab-controls-sheet.js`): below a band width of
+  640px the band keeps Play / Stop / tempo / loop / ⚙ and the ⚙ sheet holds
+  everything else (size, key, layout, feel, count-in, metronome, mixer,
+  Edit). The controls are MOVED into the sheet, not rebuilt — the sheet
+  lives inside `.tab-controls`, so `controls.querySelector(...)` in
   `setupTablaturePlayer` and the listeners it attached both survive.
-  Widening the viewport moves them back and deletes the sheet, so the
-  desktop DOM is byte-identical to `createTablatureControls`' output.
+  Widening moves them back and deletes the sheet, so the wide DOM is
+  byte-identical to `createTablatureControls`' output.
+  **The width is the BAND's, not the window's**: the module observes
+  `.tab-controls` with a ResizeObserver and publishes its verdict as
+  `.is-narrow-band`, and the CSS asks the same question with
+  `@container tabband (max-width: 640px)` (`container-type: inline-size` on
+  `.app-bottomband`; the old `@media (max-width: 640px)` block stays as the
+  fallback). That is deliberate and load-bearing for tests: a collapsed band
+  is reachable by constraining the container, not only by shrinking the
+  viewport. The media query is still the SEED — `attachTabControlsSheet`
+  runs while the band is detached, where there is no width to measure —
+  and injecting a `media` object turns the observer off entirely, which is
+  how the unit tests drive one thing at a time.
+  Note that `container-type` does NOT make the band the containing block for
+  its `position: fixed` drop-ups in Chromium, so those still offset off
+  `--bottomband-h`, not `100%`.
 - **Pill primitive**: `pill(label, buildContent, opts)` returns a small
   labeled button that opens a popover. All song-page controls are pills.
 - **Auto-hiding chrome** (`setChromeAutoHide(on)`, enabled on song pages):
@@ -118,6 +139,12 @@ content, and the shell's top/bottom bands for actions and playback.
   canonical URL. Legacy `#song/{id}` URLs resolve to the work and are
   rewritten with `history.replaceState`. List-context pages keep
   `#list/{listId}/{workId}` URLs.
+- **The tab editor is a MODE of this page, addressed by URL** (plan §9):
+  `#work/{slug}/edit/{take}`, `#work/{slug}/add-tab?instrument=`, and
+  `#new-tab?title=&instrument=&ts=&tempo=&measures=` for a song the
+  songbook doesn't have yet. All three are parsed by `parseTabRoute`
+  (`otf-editor/create-tab-entry.js`) and land in `openWork()` /
+  `openNewTabPage()` — never in a page of their own.
 
 ### State Variables
 
@@ -303,9 +330,37 @@ instead of the group representative.
 URL forms:
 
 - `#work/{slug}` — canonical song URL (`#work/{slug}/{partId}` for a part)
+- `#work/{slug}/edit/{take}` — that take open in the editor. `{take}` is the
+  take's own NAME (its `src_file` stem, e.g. `banjo-18967`), never an index:
+  curation pins re-sort takes between builds. `takeRefs` accepts the
+  published basename and the label too, so older links still land.
+- `#work/{slug}/add-tab?instrument=banjo` — the song page with one new,
+  unsaved take selected and the editor open on it
+- `#new-tab?title=&instrument=&ts=&tempo=&measures=` — a provisional WORK
+  page (title/artist are inputs in the title slot); submitting mints the work
+  and the hash becomes `#work/{id}` without a reload
 - `#song/{id}` — legacy; resolved via `resolveWorkId()` and rewritten to
   `#work/{slug}` with `history.replaceState`
 - `#list/{listId}/{workId}` — list-context pages keep list URLs
+
+**`create.html` is a redirect shim** (`?work=x&instrument=y` →
+`index.html#work/x/add-tab?instrument=y`; bare → `#new-tab`; `?draft=d-1`
+rides along either way). Its form,
+editor mount and `.tef` drop zone are gone; `create-tab.js` survives as the
+"new empty take" producer the song page calls, and the `.tef` import is
+offered wherever a take is started (`pickTefFile` in work-view.js).
+
+**The bottom band survives edit mode** (`tab-edit-band.js`). It used to be
+replaced by an italic notice, which took size/tempo/transport/metronome away
+at the moment the reader started changing what they describe — and the
+editor grew a second transport in its status bar. `bindBandToEditor(controls,
+editor)` re-binds the same band to the live document: size drives the
+editor's renderer, tempo writes through the facade (undoable, and it is what
+gets submitted), ▶/⏹ drive the editor's player, and the session's buttons
+(`Submit · Download · Cancel · Done`) take the `✏️ Edit` slot. Transpose,
+Unrolled/Repeats, feel and the mixer are **disabled with a reason**
+(`DISABLED_REASONS`) rather than removed — a control that vanishes reads as
+a bug.
 
 ### Track Mixer (Multi-Track Tablature)
 
@@ -396,6 +451,141 @@ Views are switched through the reactive `currentView` state (`showView(mode)`
 in main.js sets it; a subscriber shows/hides panels and updates the top
 band's nav links). There is no sidebar — top-band nav links cover Search,
 Lists, Add Song, etc., with the rest in the overflow (⋯) menu.
+
+**Two invariants hold this together, and both were bought with a bug.**
+
+1. **`setCurrentView(v)` where `v` is already the value fires NOTHING**
+   (state.js). Subscribers run on a `requestAnimationFrame`, so a redundant
+   write is not free — it is a real callback at a later frame boundary, and
+   the `currentView` subscriber does imperative teardown, not painting.
+2. **The subscriber tears down the tablature view on the way OUT of `song`,
+   never on the way IN** (`if (view !== 'song') teardownTablatureView()`).
+   Everything that ENTERS the song view goes through work-view, which tears
+   down synchronously before it builds (`openWork`, `openNewTabPage`,
+   `showWorkLoading`, the not-found branch). A teardown queued by *entering*
+   the view lands a frame after the entry and can only destroy what that
+   entry just built.
+
+Together those are what stopped `#new-tab?draft=…` from mounting its editor
+and then silently deleting it. The failure looked like a rendering bug — the
+page appeared, the band appeared, the editor did not — and it was decided by
+the module cache: with the editor's four dynamic imports warm the mount
+resolved in a microtask and lost the race; cold, it won. `#drafts` → Open
+lost every time; a dropped `.tef` lost about half. Covered by
+`e2e/otf-editor-drafts.spec.js` and `e2e/otf-editor-files.spec.js`.
+
+> ⚠️ Still open (deliberately not fixed here): a tab route is dispatched
+> **twice** for one navigation — `popstate` and `hashchange` both reach
+> `handleDeepLink`, so `openTabRoute` runs twice, reads the draft from
+> IndexedDB twice, and renders the work view twice (the second render is why
+> `mountTabEditor` and `renderTablaturePart` each carry a "the page moved on"
+> guard). Harmless now, but wasteful, and de-duplicating the router touches
+> every route — worth doing on its own.
+
+## Offline / PWA
+
+The "standalone app" of §9.3 of `docs/plans/tab-editor-input-parity.md` is
+this site, installed — not a second product. Four pieces:
+`docs/manifest.webmanifest`, `docs/sw.js` (+ `js/sw-strategy.js`),
+`js/drafts.js` (+ `drafts-view.js`) and `js/pwa.js`. `main.js` calls
+`initPWA()` once; every capability probe no-ops where the API is missing, so
+this is inert in jsdom, in Playwright and in browsers without service workers.
+
+### The caching strategy table
+
+`js/sw-strategy.js::routeFor()` is the only place that decides. `sw.js` is a
+mechanical shell around it, which is why the table is unit-tested
+(`__tests__/sw-strategy.test.js`) without a service-worker runtime.
+
+| Request | Strategy | Cache | Why |
+|---|---|---|---|
+| Navigations, same-origin `.html` / `.js` / `.css` (and any other same-origin GET) | **network-first** | `bgb-shell-<ver>` | Nothing here is content-hashed. Network-first means a deploy is live on the next load and a stale module is impossible while online; the cache is the plane-mode fallback only. |
+| `docs/data/*.jsonl`, `docs/data/*.json` | **stale-while-revalidate** | `bgb-data-<ver>` | Rebuilt by every deploy (`build.yml` runs `build_works_index.py` then uploads `docs/`), and big. Paint instantly, refresh behind, fresh next visit. **Never** cached as immutable. |
+| `surikov.github.io/*` (WebAudioFont player + soundfonts), `cdn.jsdelivr.net/**/bravura/**` | **cache-first** | `bgb-vendor-<ver>` | Immutable third-party assets. Opaque responses are cached deliberately — we only replay them. |
+| `*.supabase.co`, any non-GET, other third parties (analytics, the abcjs / supabase-js CDN bundles), non-http schemes | **bypass** | — | Not ours. No `respondWith`, so the request is untouched. |
+
+A navigation that misses the cache offline falls back to `./index.html` —
+every route is a hash route, so the shell can serve any of them.
+
+### How a deploy invalidates the caches
+
+It doesn't have to, and that is the point. Network-first re-fetches app code
+on the next load, and stale-while-revalidate refreshes corpus data one visit
+behind — so shipping new JS, CSS or a rebuilt `index.jsonl` needs **no cache
+bump at all**.
+
+**Bump `CACHE_VERSION` in `js/sw-strategy.js` when the STRATEGY changes** —
+a route moves between rows of the table above, a cache splits, the stored
+shape changes. Every cache name is stamped with it, and `activate` deletes
+every `bgb-`-prefixed cache that isn't the current generation (`staleCaches()`).
+The new worker calls `skipWaiting()` + `clients.claim()` and posts
+`{type: 'sw-activated'}` to open pages; `pwa.js` turns that into a one-line
+"Updated — reload for the new version." toast, but only for a tab that
+already had a controller when it loaded (a first install has nothing to
+announce).
+
+`PRECACHE_URLS` is deliberately five entries: the app is dozens of unhashed
+ES modules and a hand-maintained precache list would rot. Everything else
+enters the shell cache the first time it is fetched online.
+
+### Drafts (`#drafts`)
+
+`js/drafts.js` is an IndexedDB bucket (`bgb-drafts` / `drafts`, key = draft
+id) of `{ id, title, instrument, workId?, takeRef?, otf, updatedAt }`. The
+editor autosaves into it on every facade `change`, debounced ~1s
+(`createAutosaver`), wired where the session is created — `work-view.js`
+`mountTabEditor` passes the session's `onChange` — and never inside the
+editor. All three modes autosave; the record's `workId` / `takeRef` are what
+make it reopenable (see `draftOpenHash` below), so a new take files under
+`workId` with no `takeRef` and a correction files under both. Submitting
+clears the draft; Cancel clears it; ✓ Done flushes and keeps it (Done only
+applies the document to the open page).
+
+Storage is INJECTED (`memoryBackend()` / `idbBackend()`), so all of the
+logic is tested without `fake-indexeddb`, which this repo does not carry.
+Without IndexedDB the store degrades to memory for the session rather than
+throwing.
+
+`migrateLegacyDraft()` imports the old single-slot localStorage draft
+(`otf-editor-draft`) once, under a fixed id, and leaves the localStorage copy
+in place: it is still what `startAddTabMode` resumes a half-written NEW take
+from ("Picked up where you left off"), which happens inside a render and so
+cannot wait on IndexedDB.
+
+`draftOpenHash()` builds the reopen route: `#new-tab?draft=`,
+`#work/{slug}/add-tab?draft=`, `#work/{slug}/edit/{take}?draft=`.
+
+### Reopening a draft
+
+Those routes, the manifest's `file_handlers` action and the "New tab"
+shortcut all point at the §9.2 in-page surface — the real hash routes, on
+the song page. `main.js::openTabRoute` is the one place that reads
+`?draft={id}` back out of the bucket (async, so `handleDeepLink` answers
+"mine" first and the page opens a tick later) and hands the document to the
+route: `openNewTabPage({otf})`, `openWork(id, {addTab: {otf}})`, or
+`openWork(id, {editRef, draft})`. In `work-view.js` a `draft` option parks
+in `pendingDraft`, which `mountTabEditor` consumes — the draft's document
+wins over the take's, which for an edit is exactly the point (your
+unsubmitted correction, not the published tab).
+
+`create.html` forwards `?draft=` through with the rest of its query string,
+so pre-PWA draft links still land in the right mode.
+
+### File handling
+
+`.tef` and `.otf.json` open the same way whether the OS handed them over
+(`launchQueue`, installed app, Chromium) or they were dropped anywhere on the
+window (`enableFileDrop`): parse (`js/tef-import` for `.tef`), park the
+document as a draft, then route to `#new-tab?draft=…&file=1`. The draft IS
+the handoff — a hash route can't carry a document. Elements with their own
+drop zone opt out with `data-file-drop`.
+
+### Icons
+
+`scripts/lib/make_pwa_icons.py` (Pillow, `uv run python …`) flattens
+`images/banjo.png` onto the light `--bg` and writes `icon-192.png`,
+`icon-512.png` and `icon-maskable-512.png` (art inset to the 80% safe zone).
+Re-run it when the logo changes; nothing in the build calls it.
 
 ## Testing
 
@@ -816,8 +1006,8 @@ Frictionless song requests without a GitHub account.
 
 Two entry points open the tab editor pre-targeted at a work — the work
 page's "+ Add a tab" / tablature-bounty Contribute, and the add-song
-picker's Tablature card — both routing through `create.html` with
-`?work=&instrument=&title=&have=`.
+picker's Tablature card — both routing to `#work/{slug}/add-tab` (or
+`#new-tab` when no work is named) with `?instrument=&title=&have=`.
 
 **A work that already has tabs for that instrument says so BEFORE the
 editor opens** (contract principle 4 — the offramp is offered early, never
@@ -828,8 +1018,9 @@ instrument families the way `tags.js getInstrumentTags` does, so a
 `renderExistingTabsPanel` offers three ways forward:
 
 - **view** an existing take → `#work/{id}/{partId}`
-- **add mine as another version** → the editor exactly as before, with the
-  sibling count carried into the create-page banner
+- **add mine as another version** → `#work/{id}/add-tab`: the same song page
+  with an unsaved take added to the versions list, editor open
+- **import a .tef** → the same mode, with the parsed document loaded
 - **improve this one** → the tab-correction path (`enterTabEditMode`), via
   `requestTabEdit(workId, file)` when the work page isn't already open
 
