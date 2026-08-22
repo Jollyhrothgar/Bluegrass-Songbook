@@ -1,7 +1,8 @@
 # Plan: Tab editor input — closing the gap with TablEdit (and friends)
 
-*Drafted 2026-08-20 on `feature/tab-editor-improvements`. Survey + gap analysis;
-no code changes yet.*
+*Drafted 2026-08-20 on `feature/tab-editor-improvements` as a survey + gap
+analysis; built the same day. §1–§3 describe the editor as it was BEFORE the
+branch and are kept as the record of why; §11 says what shipped.*
 
 ## Framing
 
