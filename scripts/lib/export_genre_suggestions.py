@@ -20,6 +20,35 @@ from pathlib import Path
 OUTPUT_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'user_genre_suggestions.json'
 
 
+def write_output(output):
+    """Write the export, keeping `exported_at` stable when nothing else moved.
+
+    The hourly Sync Community Input workflow commits whatever this writes.
+    A fresh `exported_at` on every run made the file differ every hour even
+    when Supabase had returned identical data, so the workflow's
+    `git diff --staged --quiet` guard never fired and main collected a no-op
+    commit (and a CI run) every hour. Carrying the previous timestamp forward
+    on an unchanged payload makes the file byte-identical, so the guard works.
+
+    `exported_at` now means "when the data last changed" rather than "when the
+    script last ran", which is the more useful of the two. fetch_tag_overrides
+    sidesteps this by writing no timestamp at all.
+    """
+    try:
+        previous = json.loads(OUTPUT_FILE.read_text())
+    except (FileNotFoundError, ValueError):
+        previous = None
+
+    if previous is not None:
+        stale = {k: v for k, v in previous.items() if k != 'exported_at'}
+        fresh = {k: v for k, v in output.items() if k != 'exported_at'}
+        if stale == fresh:
+            output = dict(output, exported_at=previous.get('exported_at', output['exported_at']))
+
+    with open(OUTPUT_FILE, 'w') as f:
+        json.dump(output, f, indent=2, sort_keys=True)
+
+
 def export_suggestions():
     """Export all genre suggestions from Supabase to JSON."""
     # Get credentials from environment
@@ -60,8 +89,7 @@ def export_suggestions():
             'songs': {},
             'tag_totals': {}
         }
-        with open(OUTPUT_FILE, 'w') as f:
-            json.dump(output, f, indent=2, sort_keys=True)
+        write_output(output)
         print(f"Wrote empty file to {OUTPUT_FILE}")
         return
 
@@ -89,8 +117,7 @@ def export_suggestions():
     }
 
     # Write to file
-    with open(OUTPUT_FILE, 'w') as f:
-        json.dump(output, f, indent=2, sort_keys=True)
+    write_output(output)
 
     print(f"Exported {len(rows)} suggestions for {len(suggestions_by_song)} songs")
     print(f"Unique tags: {len(tag_counts)}")
