@@ -10,24 +10,184 @@ Serverless functions that run on Supabase Edge (Deno runtime).
 
 | Function | Purpose | Trigger | Source |
 |----------|---------|---------|--------|
-| `create-song-issue` | Create GitHub issue for song submissions/corrections | POST from editor.js | `functions/create-song-issue/index.ts` |
 | `create-flag-issue` | Create GitHub issue for song problem reports | POST from flags.js | `functions/create-flag-issue/index.ts` |
-| `create-song-request` | Create GitHub issue for song requests | POST from main.js | `functions/create-song-request/index.ts` |
+| `create-song-request` | Signed in → a placeholder `pending_songs` row + the same dispatch every contribution takes; anonymous → a `tune-request` issue | POST from add-song-picker.js | `functions/create-song-request/index.ts` |
 | `create-superuser-request` | Create GitHub issue for super-user access requests | POST from superuser-request.js | `functions/create-superuser-request/index.ts` |
-| `auto-commit-song` | Commit pending_songs to GitHub repo | Scheduled | `functions/auto-commit-song/index.ts` |
-| `cleanup-pending` | Remove stale pending songs | Scheduled | `functions/cleanup-pending/index.ts` |
+| `auto-commit-song` | Gate + classify a pending_songs row, then dispatch the write to CI | POST from editor.js (charts), otf-editor/submit-tab.js (tabs), work-view.js (metadata) — any logged-in save | `functions/auto-commit-song/index.ts` |
+| `cleanup-pending` | Remove pending songs already committed | `.github/workflows/cleanup-pending.yml` after a successful deploy | `functions/cleanup-pending/index.ts` |
+| `reconcile-pending` | Retry rows the live commit path failed, and report the drift | `.github/workflows/reconcile-pending.yml`, hourly | `functions/reconcile-pending/index.ts` |
 
-All functions:
-- Use GitHub API to create issues (no user GitHub auth required)
-- Include submitter attribution in issue body
-- Return issue number on success
+**Shared code (`functions/_shared/`)**
 
-**Deployment:**
+- `identity.ts` — verified identity (`requireUser` / `optionalUser` /
+  `attributionFor`). The client never says who it is.
+- `pending-dispatch.ts` — the phase 2b change gate: durable per-user rate
+  limit counted from `submission_log`, `classifyChange` (create / update /
+  fork-to-arrangement / add / metadata / placeholder), and
+  `dispatchPendingCommit`, which fires the `pending-commit`
+  repository_dispatch. **No edge function authors work.yaml any more** —
+  `.github/workflows/process-pending.yml` runs `scripts/lib/works_writer.py`,
+  the repo's one writer.
+  That sentence was **FALSE until 2026-08-19**, and `create-song-request`
+  was the reason. It predates phase 1c/2b and was never converted: its
+  trusted-user branch hand-interpolated a `work.yaml` string ending
+  `parts: []` and PUT it to the Contents API, **passing the existing file's
+  sha whenever the path was taken** — so a request whose client-generated
+  slug collided with a real work replaced that work's parts, artist,
+  composers and tags with an empty stub, with no suppression check, no
+  redirect check and no collision handling. (It also set `github_committed`
+  from `!!trustedUser` before attempting the commit, while treating a failed
+  commit as "non-fatal" — a row marked durable that never reached git, which
+  `cleanup-pending` is then free to reap.) Both are gone; a request is now
+  the `placeholder` column below. The claim is worth re-checking rather than
+  trusting — it was written down and wrong for months:
+  `grep -rn "method: 'PUT'" supabase/functions` must find nothing. (The one
+  remaining Contents-API URL is `getFileContent`, which only reads.)
+  Ownership is answered **per part type**: `submittersOf(yaml, 'lead-sheet')`
+  for a chart, `tabPartOwners(yaml, file)` for one tab. It used to be a
+  regex over the flat file, which was safe only while `submitted_by`
+  appeared on charts alone; tab rows carry it now, and the loose version
+  would have let contributing a banjo tab buy an in-place overwrite of that
+  work's primary chart (and its title/artist/key with it).
+  **`anyPartOwners(yaml)` is a deliberately different, LOOSER question** and
+  must not be "fixed" into `submittersOf`: it asks *do you have any stake in
+  this work?* and its only caller is the metadata column, which rewrites
+  nobody's content. Owning a tab does not buy a rewrite of a stranger's
+  lyrics; it does buy the right to say who wrote the song. Both functions
+  carry comments saying so, and both directions are pinned by tests.
+  `DispatchRefusedError` is the base class of every typed refusal
+  `classifyChange` can throw, and the one every caller catches.
+  `MetadataRefusedError` (403 no claim / 404 no such work / 400 no target)
+  and `PlaceholderRefusedError` (409 the song already exists / 400 malformed
+  or self-contradictory row) are its two subclasses — the two columns that
+  write no PART, and so the only two with nowhere additive to land. Note the
+  polarity is opposite: metadata refuses when the work is MISSING, a
+  placeholder when it is PRESENT.
+- `commit-song.ts` — the `PendingSong` shape, one Contents-API read used by
+  classification, `holdReason`, and `unretryableReason` (which is **part-type aware**: a
+  metadata row carries no content by construction, so demanding one would
+  have made every metadata row permanently "unretryable" and opened an alert
+  issue about a well-formed row an hour after it was written). Phase 2d deleted the
+  document-attachment path (and the write helpers only it used) along with
+  the doc-upload feature; nothing in here writes to GitHub any more.
+  `holdReason` is `unretryableReason`'s sibling and the two must not be
+  merged: that one judges the row's own SHAPE (a field it will never grow),
+  which the edge runtime can see for itself; this one reports a verdict
+  reached where the repo is — `process_pending.py:hold_reason` refusing to
+  write to a **suppressed or merged-away** work, or the dedup backstop
+  holding a create — handed back through `dedup_hold`. Neither is fixable by
+  waiting, so the reconciler skips both; only the author of the refusal
+  differs. `dedup_hold` keeps its dedup-era name because the reconciler, the
+  RLS policies and the Dungeon's Release-hold/Reject actions already key on
+  it — a second column would need all four rebuilt to mean the same thing.
+
+`auto-commit-song` (live path), `create-song-request` (the placeholder
+column's live path) and `reconcile-pending` (hourly retry) all import
+`pending-dispatch.ts`, so a retry classifies exactly the way the original
+attempt did. Supabase bundles relative imports at deploy time, so
+**redeploy all three** whenever anything in `_shared/` changes.
+
+`reconcile-pending` is gated on the service role key itself (not merely a valid
+project JWT — the anon key is public), handles at most 25 rows per run, and
+skips rows younger than 15 minutes so it cannot race an in-flight
+`auto-commit-song`. It always returns HTTP 200 with `drift` (the count of rows
+where `github_committed = false`) and `stuckCount`; the workflow fails and
+opens/updates a single "Reconciler: pending songs stuck uncommitted" issue when
+`stuckCount > 0`. `POST {"dryRun": true}` measures drift without dispatching.
+Rows are marked `github_committed` by the workflow after its push lands —
+never by a function, which is what used to let `cleanup-pending` reap songs
+that had not actually reached git.
+
+**Deployment:** `.github/workflows/deploy-functions.yml` deploys on push to
+main, **after** its `test` job passes. To deploy by hand:
 ```bash
-supabase functions deploy create-song-issue
-supabase functions deploy create-flag-issue
-supabase functions deploy create-song-request
+supabase functions deploy auto-commit-song
+supabase functions deploy reconcile-pending
 ```
+
+#### Tests (`deno test`)
+
+```bash
+cd supabase
+deno task test     # unit tests — offline, ~60 assertions, <1s
+deno task check    # type-check every function and shared module
+deno task test:watch
+```
+
+Both run in CI twice, and both gate:
+
+| Workflow | Job | Gates |
+|---|---|---|
+| `build.yml` | `verify` (with pytest + vitest) | every push and PR to main, plus every `workflow_run` from a content workflow named in its trigger list; `deploy` needs it |
+| `deploy-functions.yml` | `test` | `deploy` needs it — nothing reaches the edge runtime untested |
+
+The duplication is deliberate: the two workflows fire on separate triggers and
+race, so gating only in `build.yml` would let a merged authorization bug reach
+production while the site build was still running.
+
+**What is covered, and why that.** `_shared/pending-dispatch.ts` is the change
+gate — `classifyChange` decides whether an edit lands **on** somebody else's
+content or **beside** it, and a privilege escalation was found and fixed in it
+(see `submittersOf` above). Before 2026-08-18 nothing in CI ran Deno at all, so
+that decision shipped verified by nothing.
+
+- `functions/_shared/pending-dispatch.test.ts` — `partBlocks`, `submittersOf`,
+  `tabPartOwners`, `anyPartOwners`, the full `classifyChange` table for all
+  three columns **including the metadata refusal**, the durable rate limit,
+  and the escalation pinned in both directions (owning only a tab must
+  classify a chart edit `fork`; owning only a chart must classify a tab
+  correction `add`). The metadata asymmetry is pinned side by side in one
+  test: same user, same work, chart edit → `fork`, metadata edit → `metadata`.
+- `functions/_shared/commit-song.test.ts` — `getFileContent`'s 404-is-the-only-
+  null rule (a 500 read as "no work here" would let a placeholder overwrite a
+  real `work.yaml` — that comment described a bug that was live at the time),
+  `unretryableReason`, and `isPlaceholderRow` in both directions, including
+  the sticky-`status` case where content must win.
+- The placeholder column's refusals are pinned in
+  `functions/_shared/pending-dispatch.test.ts` (search `REFUSAL:`): a request
+  for a song that exists is refused, trust does not open it, a transient
+  GitHub failure never reads as "free slug", and a malformed id never becomes
+  a path. `tests/test_process_pending.py` pins the same rules on the writer
+  side, plus "the existing work is byte-for-byte unchanged".
+- `functions/_shared/testdata/` — fixtures. Four are REAL `work.yaml` files
+  copied out of `works/`, so the parser is exercised against the shapes the
+  corpus actually contains, including one hand-written file with a different
+  indent style and a `composers:` key listed *after* `parts:`.
+
+Nothing touches the network: the pure helpers are called directly, and
+`classifyChange`'s one Contents-API read is served by swapping
+`globalThis.fetch` for a fixture table (the real base64 decode still runs).
+
+**Ownership parity with Python.** `submittersOf(yaml, partType)` and
+`process_pending.owns_content(..., part_type)` are the same question asked on
+the two sides of the dispatch, and used to agree only by comment. The
+expectations now live in one table —
+`functions/_shared/testdata/ownership-cases.json`, against
+`how-long-blues.work.yaml` (generated by the real `works_writer`: a primary
+chart, a fork, and a tab, three different owners) — and both suites read it:
+
+```bash
+cd supabase && deno task test              # .../pending-dispatch.test.ts
+uv run pytest tests/test_ownership_parity.py
+```
+
+Add a row to the JSON and both sides must agree or one of them goes red.
+
+**Config location.** `supabase/deno.json` — *not* `supabase/functions/deno.json`
+(the Supabase CLI reads that one as deploy configuration) and *not* the repo
+root (a `deno.json` beside `package.json` makes Deno adopt the whole npm tree
+into its lockfile). `supabase/deno.lock` pins the remote imports.
+
+**Known gap.** `partBlocks` splits the part sequence on `/^\s*-\s/`, so a
+sequence entry written as a bare `-` with its keys on the following lines —
+valid YAML, and a plausible hand-edit — is not recognised as a new entry and
+the two parts merge into one block. `blockValue` then reports the first part's
+`type:` with the second part's `submitted_by:`, which can hand a tab submitter
+ownership of an imported chart. Nothing in the pipeline emits that style
+(`works_writer` uses PyYAML's `- key: value`), so it takes a hand-edited or
+externally reformatted `work.yaml` to reach. Today's behaviour is pinned by a
+test; the fix is `/^\s*-(\s|$)/`, and an `ignore: true` test named
+`KNOWN BUG: ...` asserts the correct answer and un-ignores with it.
 
 ### Migrations (`migrations/`)
 
@@ -37,7 +197,10 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `user_lists` - User lists with multi-owner support (`owners` array)
 - `user_list_items` - Songs in lists (many-to-many)
 - `user_favorites` - User favorited songs
-- `song_votes` - User votes for song versions
+- `song_votes` - User votes for song versions; `arr_slug` names WHICH lead
+  sheet of the work (null = the work's own chart, the meaning every pre-fork
+  row carries). `song_vote_counts` tallies the work level, and
+  `song_arrangement_vote_counts` tallies per arrangement
 - `tag_votes` - User tag up/downvotes (trusted users can override tags)
 - `genre_suggestions` - User-submitted genre suggestions
 - `visitor_stats` - Page view and unique visitor counts
@@ -48,22 +211,89 @@ SQL migrations for the Supabase Postgres database. Version-controlled and applie
 - `list_invites` - Invite tokens for list co-ownership
 - `admin_users` - Admin users who can delete songs
 - `deleted_songs` - Soft-deleted songs (excluded from index at build time)
-- `trusted_users` - Users with instant edit privileges
-- `pending_songs` - Trusted user edits awaiting GitHub commit
+- `trusted_users` - Users allowed to edit someone else's chart **in place** (everyone else's edit forks to a new arrangement)
+- `pending_songs` - Any logged-in user's submission, live in the overlay,
+  awaiting the GitHub commit. Parts-aware since
+  `20260818000000_pending_songs_tablature.sql`: `part_type` is `lead-sheet`
+  (content is ChordPro) or `tablature` (content is a serialized OTF), with
+  `instrument` required on the latter and `part_file` naming the works/ file
+  a tab CORRECTION targets. The content size cap depends on the kind —
+  200KB for a chart, 2MB for an OTF, because multi-track arrangements are
+  genuinely that big and the chart cap would have rejected the best tabs at
+  INSERT.
+  Since `20260818010000_pending_songs_metadata.sql` there is a third
+  `part_type`, **`metadata`**: no content at all (a CHECK refuses it), a
+  mandatory `replaces_id`, and a write that touches only the work's own
+  title / artist / key / notes. It exists because a work minted by a TAB had
+  a title and nothing else and no part anybody would want to rewrite in
+  order to fix that.
+  **Row ids**: a chart row's `id` IS its work slug (one row per song). A tab
+  is a PART and a metadata edit is a per-user intent, so both live in their
+  own namespaces — `tab:<slug>:<rand>` and `meta:<slug>:<rand>`, enforced by
+  `pending_songs_tab_id_namespace` / `pending_songs_metadata_id_namespace` —
+  and name their target work in `replaces_id`. Keying them by the work id
+  collided on the PK the moment two people tabbed (or retitled) the same
+  song, and surfaced as a *permissions* error because the update policy
+  gates on `created_by`. `notes` and `status` are capped/enum-checked here
+  too; the earlier cap pass skipped them on the mistaken belief (in a
+  comment, and in PR #237) that `notes` didn't exist
+- `review_requests` - The destructive residue (phase 2d): trusted users request delete / suppress / merge-redirect, admins decide
+- `leaderboard_identities` - Opt-in real names for the High Scores board. **RLS on, zero policies** — only `get_leaderboard()` reads it
+- `leaderboard_salt` - One random uuid that salts the leaderboard aliases. **RLS on, zero policies.** Never expose it: contributor uuids are already public in `works/*/work.yaml` (`provenance.submitted_by`), so an unsalted alias hash would be a join key straight back to real contributors
+
+**Key functions:**
+- `get_leaderboard()` (`20260816120000_leaderboard.sql`, applied) —
+  the High Scores board, `security definer`, granted to `anon` *and*
+  `authenticated`. Aggregates `submission_log` over CONTENT actions only
+  (`song_submit`, `song_correction`, `tab_submit`, `tab_correction`; reports
+  and requests don't score) and returns
+  `(rank, display, total, songs, tabs, is_you)`.
+  **The anonymization is the feature.** No email, uuid, or auth metadata for
+  any user but the caller is in the response at all — it isn't masked, it
+  isn't there. `display` resolves as: opt-in name from
+  `leaderboard_identities` → the caller's own email on their own row →
+  otherwise a deterministic bluegrass alias from `md5(salt || user_id)` over a
+  24 x 24 adjective/noun table, with a two-hex-char suffix added only to rows
+  that actually collide. Ships the deterministic-alias half of #174; that
+  issue stays open for real profiles. Frontend: `docs/js/high-scores.js`.
+
+**Retired:** `doc_staging` (+ the `doc-staging` storage bucket) — the
+document-upload intake, removed in phase 2d. The drop migration
+(`20260815130000_drop_doc_staging.sql`) **has been applied** — `doc_staging`
+is gone from the live schema. It opens with a rescue checklist because
+anything that was in that table or bucket was a submitter's only copy; the
+storage bucket still needs a manual delete if it hasn't had one.
+
+> **This prose was wrong for days, in both directions** — it claimed this
+> migration and `get_leaderboard()` were unapplied while production had
+> both. A hand-maintained note about what is applied is a guess. Ask the
+> database: `supabase migration list` for the ledger, and
+> `supabase db dump --schema public` for what the schema ACTUALLY is. Those
+> two can disagree — see `20260819000000_pending_content_really_nullable.sql`,
+> where the ledger said applied for six months and the DDL had never run.
+
+`./scripts/utility db-check` asks the second question for you: it dumps the
+live schema and asserts the properties the code actually depends on. New
+migrations that change nullability, add a constraint, or drop an object must
+also assert their own postcondition in a `DO $$ ... RAISE EXCEPTION` block —
+see "Self-verifying migrations" at the end of this file.
 
 ### Authentication
 
 Google OAuth via Supabase Auth. User sessions managed by `supabase-auth.js` on frontend.
 
-**Key functions in supabase-auth.js:**
+**Key functions in supabase-auth.js** — the definitive list is the
+`window.SupabaseAuth` object literal at the bottom of the file
+(`sed -n '/^window.SupabaseAuth = {/,/^};/p' docs/js/supabase-auth.js`):
 - `signInWithGoogle()` - Initiates OAuth flow
 - `getUser()` - Returns current user (sync, from cache)
 - `isLoggedIn()` - Boolean check
-- `fetchUserLists()` - Get user's lists from database
+- `fetchCloudLists()` - Get user's lists from database
 - `isAdmin()` - Check if current user is an admin (can delete songs)
 - `deleteSong(songId)` - Soft-delete a song (admin only)
 - `isTrustedUser()` - Check if current user has trusted status (can make instant edits)
-- `savePendingSong(song)` - Save song to pending_songs table
+- `supabase` (getter) - the raw client; `pending_songs` rows are written
+  through it directly, not via a `savePendingSong` helper
 
 **Note:** `supabase-auth.js` is loaded as a regular script (NOT an ES module). Functions are exposed via `window.SupabaseAuth` object.
 
@@ -87,16 +317,130 @@ INSERT INTO admin_users (user_id) VALUES ('user-uuid-here');
 ./scripts/utility sync-deleted-songs
 ```
 
-### Trusted User Workflow
+### Contribution Workflow (phase 2b)
 
-Trusted users can make instant edits that appear immediately without approval:
+Every logged-in user's submission takes the same path — trust gates edit
+rights, not speed:
 
-1. User is added to `trusted_users` table (manual admin action or via approved super-user request)
-2. When editing, `isTrustedUser()` checks if user is trusted
-3. Trusted users see "Save Changes" instead of "Submit for Review"
-4. Edits are saved to `pending_songs` table with `github_committed: false`
-5. Song appears immediately in search (merged with index at load time via `refreshPendingSongs()`)
-6. Background job (`auto-commit-song`) commits to GitHub repo
+1. The editor writes the row to `pending_songs` (`github_committed: false`).
+   RLS allows any authenticated user to insert rows they own; in-place update
+   of an existing row stays owner-or-trusted.
+2. The song appears immediately in search (`refreshPendingSongs()` merges the
+   overlay at load time).
+3. `auto-commit-song` verifies row ownership, enforces the durable per-user
+   rate limit, classifies the change, and fires the `pending-commit`
+   repository_dispatch.
+4. `.github/workflows/process-pending.yml` writes it to `works/` via
+   `works_writer`, pushes, then flips `github_committed`.
+
+Metadata edits take the same four steps (2026-08-18), minus the content: the
+row carries `part_type: metadata`, no `content`, and whichever of
+title / artist / key / notes changed, and `process_pending.py` writes them
+through `works_writer.update_metadata`. A caller with no claim on the work is
+refused at step 3 with a 403 the client can show; the row stays in the table
+and the hourly reconciler files it as `unretryable` rather than retrying it
+forever.
+
+Song REQUESTS take the same four steps (2026-08-19), minus the content and
+minus the editor: `add-song-picker.js` POSTs to `create-song-request`, which
+classifies, writes a row with `status: 'placeholder'` and `content: null`, and
+dispatches. `process_pending.apply_placeholder_row` mints the work through
+`works_writer.create_work(part=None)` — metadata, `status: placeholder`,
+`parts: []`. The work-level `metadata_provenance` is both the idempotence
+marker and the only record of who asked, since there is no part to carry one.
+Before this the trusted branch wrote `work.yaml` itself and overwrote whatever
+was at the slug; the untrusted branch wrote a contentless row that the
+reconciler filed as permanently `missing content`, so a request either
+destroyed a work or reached git never.
+
+Tabs take the same four steps (2026-08-18). The row carries the serialized
+OTF in `content` plus `part_type: tablature` / `instrument` / `part_file`,
+and `process_pending.py` writes `works/<id>/<instrument>[-N].otf.json`
+through the same writer. This replaced `create-tab-pr` +
+`process-tab-pr.yml`, which are **deleted** — a tab is no longer
+review-gated, and the "accepted exception" in the plan's phase 2b is closed.
+
+Classification — **lead sheet**:
+
+| Situation | Result |
+|---|---|
+| no work at the target id | `create` |
+| the caller's uuid appears in a **lead-sheet** part's `provenance.submitted_by` | `update` in place |
+| the caller is in `trusted_users` | `update` in place |
+| anything else | `fork` — a new arrangement part; the original is untouched |
+
+Classification — **tablature**:
+
+| Situation | Result |
+|---|---|
+| no work at the target id | `create` — the tab mints the work, slug from the TITLE (the row id is synthetic) |
+| `part_file` names a tablature part whose `submitted_by`/`author` is the caller | `update` in place |
+| `part_file` names a tablature part and the caller is in `trusted_users` | `update` in place |
+| anything else (new tab, unknown file, someone else's tab) | `add` — a NEW sibling part; the original is untouched |
+
+`add` is the tab column's `fork`: a "correction" from a non-owner becomes
+another take on the instrument rather than a rewrite. Ownership is asked of
+parts of the **same kind** on both sides of the dispatch
+(`submittersOf(yaml, partType)` / `process_pending.owns_content(..., part_type)`)
+— owning a tab is not owning a chart.
+
+Classification — **metadata** (the work's own title / artist / key / notes;
+no part is created, replaced, renamed or reordered and no part file is
+written):
+
+| Situation | Result |
+|---|---|
+| the caller is in `trusted_users` | `metadata` — full edit privileges, any work |
+| the caller's uuid appears on **any** part of the work (`submitted_by` on a chart or tab, `author` on a tab) | `metadata` |
+| anything else | **REFUSED** — 403 `MetadataRefusedError`, never a silent fork |
+| no work at `replaces_id` | **REFUSED** — 404. Never a `create`: there is no content to seed a work from |
+| no `replaces_id` at all | **REFUSED** — 400. The `meta:…` row id is a PK, not a work slug |
+
+Classification — **placeholder** (a song REQUEST: a work with metadata,
+`status: placeholder` and `parts: []`; no part is written):
+
+| Situation | Result |
+|---|---|
+| no work at the requested slug | `placeholder` — mint it |
+| a work is already there | **REFUSED** — 409 `PlaceholderRefusedError`. Never an overwrite, and deliberately never a suffix either |
+| the row id is not a slug, or it also sets `replaces_id` | **REFUSED** — 400 |
+
+A request is a lead-sheet row that has no lead sheet, so it is **not** a
+fourth `part_type`: it is recognised by shape — `status = 'placeholder'` and
+no content (`commit-song.ts:isPlaceholderRow`, mirrored by
+`process_pending.is_placeholder_row`). Both halves are needed. `status` is a
+STICKY column: a chart row's `id` IS its work slug, and so is a request's, so
+the editor's save upserts onto the very row the request created and PostgREST
+only overwrites the columns in its payload. Content is what settles it — once
+there is a chart this is a chart row, whatever `status` still says. (The
+editor now states `part_type` and `status` explicitly for the same reason.)
+
+Ownership is not asked at all here, and trust grants nothing: a placeholder
+never edits anybody's content, and nothing about being trusted makes an empty
+stub a safe thing to put on top of somebody's chart. Trust is what USED to
+turn the write on (`if (trustedUser && githubToken)`), which is how the
+overwrite reached production.
+
+The suffix fallback is refused on purpose. `create_work(on_collision='suffix')`
+would be **safe** — it mints `foo-1` and leaves `foo` alone — but an empty
+placeholder beside a real song is a bounty-board entry asking for a song the
+site already has. Reaching `process_pending.apply_placeholder_row` with the
+work present means it appeared between the classify and the write, so the row
+is parked (`dedup_hold`) for the Dungeon rather than written anywhere.
+
+The metadata column is the other one that refuses, and the one that asks the
+loose ownership question (`anyPartOwners`). Both follow from the same fact: no
+content is rewritten by naming an artist, so contributing anything earns the
+right — and a second opinion about a title is not an arrangement, so there
+is nowhere additive to put a stranger's edit. Silently forking one would put
+a duplicate work in the corpus every time somebody fixed a typo they were
+not entitled to fix.
+
+The action logged for it is **`metadata_edit`**, which `get_leaderboard()`
+does not count (it aggregates `song_submit`, `song_correction`, `tab_submit`,
+`tab_correction` only). A metadata tweak is neither a song nor a tab; it
+still lands in `submission_log`, so it still counts against the durable rate
+limit and is still auditable.
 
 **To add a trusted user:**
 ```sql
@@ -106,11 +450,51 @@ VALUES ('user-uuid-here', 'admin-manual');
 
 **To request trusted status:** Regular users can request super-user access through the app. This creates a GitHub issue via `create-superuser-request` edge function. Admin approves by adding to `trusted_users` table and closing the issue.
 
+### Review queue (phase 2d)
+
+Adding content is instant; destroying it is not. `review_requests` holds the
+three destructive asks — `delete`, `suppress`, `merge-redirect`:
+
+- **trusted** users file requests (RLS: insert requires `is_trusted_user()`
+  *and* `requested_by = auth.uid()`) and can read the whole queue.
+- **admins** decide. Only `is_admin()` may update `status`, and a trigger
+  stamps `reviewed_by` / `reviewed_at` from the session while freezing the
+  request's immutable fields. Nobody can delete rows — the queue is the audit
+  trail.
+- Admins keep their **instant** delete on the song page. They are the
+  reviewers; making them queue an ask to themselves would be ceremony.
+
+The UI is `docs/js/review-queue.js`, rendered into `#review-queue-panel` in
+the Bluegrass Dungeon (the same place Promote lives). Its third section lists
+`pending_songs` rows CI parked (`dedup_hold` not null — the phase-3b dedup
+backstop, or a write whose target work is suppressed / merged away) with
+admin *Release hold* / *Reject* actions — which is why
+`20260815150000_review_requests.sql` also adds `is_admin()` update/delete
+policies on `pending_songs`: the 2b policies grant those to the row's author
+or a trusted user only, so an admin outside `trusted_users` would have been
+refused by RLS.
+
+**What approval actually does — the honest part.** Approving a `delete` runs
+the existing `delete_song` RPC, so the song is gone immediately. Approving a
+`suppress` or `merge-redirect` only records the decision: both edit files in
+the repo (`curation/registry.yaml`, `works/`), and nothing in CI performs
+those from a table. The panel therefore shows the request as *"Approved — run
+locally"* and prints the command:
+
+```bash
+./scripts/utility curate suppress <work-id> --reason "..."
+# merge-redirect: a one-entry plan for the existing merge tool
+uv run python scripts/lib/merge_works.py /tmp/merge-plan.json --execute
+```
+
 ## Row-Level Security (RLS)
 
 All tables have RLS policies:
 - Lists: Owners can CRUD, anyone can read public lists
-- Votes: Users can only vote once per song
+- Votes: one vote per user per version — `(user_id, song_id, arr_key)`, where
+  `arr_key` is a generated `coalesce(arr_slug, '')` (a plain nullable column
+  could not carry a unique constraint, and PostgREST cannot arbitrate an
+  upsert on an expression index)
 - Stats: Increment-only via function
 
 ## Local Development
@@ -123,7 +507,7 @@ supabase start
 supabase db push
 
 # Test edge functions locally
-supabase functions serve create-song-issue --env-file .env.local
+supabase functions serve auto-commit-song --env-file .env.local
 ```
 
 ## Environment Variables
@@ -134,3 +518,203 @@ Edge functions require:
 - `GITHUB_REPO` - Repository name (e.g., "Bluegrass-Songbook")
 
 Set via Supabase dashboard > Edge Functions > Secrets.
+
+## Working with migrations from a worktree
+
+`supabase/.temp/` is gitignored CLI state, so a fresh worktree starts unlinked
+and every `supabase` command fails with *"Cannot find project ref"*.
+`scripts/bootstrap` now seeds it from the tracked `supabase/project-ref`. That
+value is not a secret — it is the subdomain of the public `SUPABASE_URL`, which
+every browser request already carries.
+
+The **access token and database password are not** seeded and are not in
+`.env.tpl`. The CLI caches them per machine (macOS keychain) after a single
+`supabase login`, and that cache is shared across worktrees — which is why a
+push works from any worktree once the link is present.
+
+```bash
+./scripts/utility db-push     # reports drift both ways, then dry-runs
+./scripts/utility db-check    # asserts the LIVE schema, after pushing
+```
+
+Read the dry run before pushing. Two traps it exists to surface:
+
+* **Out-of-order migrations.** A migration dated earlier than the last one
+  already applied is refused by a plain `db push`, with a message that reads
+  like a failure. It needs `--include-all`, which applies *every* pending
+  migration — so check what else comes along for the ride.
+* **Never renumber or edit an applied migration.** Add a new one. Rewriting a
+  file that some environments have run and others haven't is how you get
+  databases that disagree about their own schema.
+
+A timestamp collision is silent and ugly: two files sharing a version prefix is
+ambiguous to the CLI. Check `ls supabase/migrations/ | sed 's/_.*//' | uniq -d`
+before naming a new one.
+
+### Drift is reported in BOTH directions
+
+`supabase migration list` prints three row shapes, and only two of them used to
+be visible here:
+
+| Local | Remote | means |
+|---|---|---|
+| `2026…` | `2026…` | in sync |
+| `2026…` | *(blank)* | a file that has not been applied — pending |
+| *(blank)* | `2026…` | **the database ran something this branch has no file for** |
+
+`db-push` used to `awk` for the middle row only, so the third printed nothing
+and the command reported *"(none — local and remote agree)"* and exited 0 while
+a real `supabase db push` was refusing with a drift error. That third shape is
+exactly what a hand-applied fix, an unmerged branch's migration, or a `supabase
+migration repair` leaves behind. `scripts/lib/migration_drift.py` now reports
+all three (exit `0` in sync, `2` pending, `1` remote-only drift), and both
+directions are pinned by `tests/test_migration_drift.py`.
+
+### The ledger agreeing is not the schema agreeing
+
+`migration list` reads `supabase_migrations.schema_migrations` — a table of
+version strings. It proves the **ledger** agrees. It says nothing about whether
+any of that DDL ever ran.
+
+`20260209000000_pending_nullable_content.sql` is the proof. One line,
+`ALTER TABLE pending_songs ALTER COLUMN content DROP NOT NULL`, stamped applied
+on the remote for six months with no drift reported — and the live schema still
+said `"content" "text" NOT NULL`. It hid because nothing depended on it, until
+`20260818010000` added `CHECK (part_type <> 'metadata' or content is null)` and
+the two together became a pair no row can satisfy. Every metadata save died
+with 23502.
+
+So there are two questions, and you have to ask both:
+
+```bash
+supabase migration list                # does the LEDGER agree?
+supabase db dump --schema public       # what is the SCHEMA, actually?
+./scripts/utility db-check             # ...asserted, so you don't have to read it
+```
+
+`db-check` (`scripts/lib/schema_assert.py`) parses that dump and asserts a
+short list of load-bearing invariants — `pending_songs.content` is nullable,
+the metadata CHECKs exist, `part_type` admits `'metadata'`, the id-namespace
+CHECKs exist, RLS is on where it is the only gate, `get_leaderboard()` is
+`security definer` and granted to `anon`, `leaderboard_salt` and
+`leaderboard_identities` have zero policies, nothing can client-INSERT into
+`submission_log`, `doc_staging` is still gone. It is read-only and needs no
+database password beyond the CLI's own cached login. Run it after every push.
+
+The list is deliberately short. An invariant earns a slot only when a named
+consumer in this repo breaks without it, it is a *shape* property that can
+drift silently, and no equivalent guard already catches it on the same path —
+which is why the length caps and `pending_songs_instrument_shape` are **not**
+in it (`process_pending.tab_instrument` re-validates those and raises before
+anything reaches `works/`). The rule and the exclusions are written out at the
+top of `scripts/lib/schema_assert.py`; add to the list there, with a `why`.
+
+### Self-verifying migrations
+
+**New migrations that change nullability, add or drop a constraint, or drop an
+object must END by asserting their own postcondition.** A migration that
+cannot fail silently cannot be stamped-without-running: if the ledger says it
+applied, its assertion ran, and if its assertion ran the schema is what it
+says. That closes the exact hole `20260209000000` fell through.
+
+This applies to **new** migrations only. Do **not** retrofit applied ones —
+that rule stands, and rewriting a file some environments have run is its own
+failure mode.
+
+Copyable shapes — the catalogs to ask are `pg_attribute` for nullability,
+`pg_constraint` for CHECKs, `pg_proc` for functions, `pg_class`/`to_regclass`
+for objects that should be gone, and `pg_policies` for RLS:
+
+```sql
+-- 1. Nullability (pg_attribute.attnotnull)
+alter table pending_songs alter column content drop not null;
+
+do $$
+begin
+  if exists (
+    select 1 from pg_attribute
+     where attrelid = 'public.pending_songs'::regclass
+       and attname  = 'content'
+       and attnotnull
+  ) then
+    raise exception
+      'POSTCONDITION FAILED: pending_songs.content is still NOT NULL. '
+      'The ledger will say this migration applied. It did not.';
+  end if;
+end
+$$;
+
+-- 2. A constraint that must exist (pg_constraint)
+alter table pending_songs
+  add constraint pending_songs_metadata_has_no_content
+  check (part_type <> 'metadata' or content is null);
+
+do $$
+begin
+  if not exists (
+    select 1 from pg_constraint
+     where conrelid = 'public.pending_songs'::regclass
+       and conname  = 'pending_songs_metadata_has_no_content'
+       and convalidated          -- NOT VALID constraints do not count
+  ) then
+    raise exception
+      'POSTCONDITION FAILED: pending_songs_metadata_has_no_content is missing '
+      'or not validated.';
+  end if;
+end
+$$;
+
+-- 3. A function that must exist, with the right security attribute (pg_proc)
+do $$
+begin
+  if not exists (
+    select 1 from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+     where n.nspname = 'public'
+       and p.proname = 'get_leaderboard'
+       and p.prosecdef                     -- security definer
+  ) then
+    raise exception
+      'POSTCONDITION FAILED: get_leaderboard() is missing or not '
+      'SECURITY DEFINER — the High Scores board would read nothing.';
+  end if;
+end
+$$;
+
+-- 4. An object that must be GONE (to_regclass returns null when absent)
+drop table if exists doc_staging;
+
+do $$
+begin
+  if to_regclass('public.doc_staging') is not null then
+    raise exception 'POSTCONDITION FAILED: doc_staging still exists.';
+  end if;
+end
+$$;
+```
+
+Four things make these worth the six lines:
+
+* **The assertion is the migration's own receipt.** `supabase db push` runs
+  each migration in a transaction, so a raised exception rolls the file back
+  and it is never stamped. Applied-but-ineffective becomes unrepresentable.
+* **`migration repair` cannot forge it.** A repair writes a ledger row without
+  executing SQL — which is one of the things that can produce a
+  `20260209000000`. The assertion does not care how the ledger got its row; it
+  only ever ran if the DDL did.
+* **Re-runnable.** Every example above is idempotent: `DROP NOT NULL` on a
+  nullable column is a no-op, `drop ... if exists` on a missing object is a
+  no-op, and the assertions re-pass. Safe under `--include-all`.
+* **The message names the consequence, not the catalog.** "pending_songs.content
+  is still NOT NULL" is a sentence someone can act on at 11pm; `assertion
+  failed` is not.
+
+Assert the *postcondition*, never the DDL you just typed — checking that
+`content` is nullable catches a dashboard edit that re-added NOT NULL between
+your two statements; checking "did my ALTER statement parse" catches nothing.
+And keep the assertion in the same file as the change: a separate verification
+migration can be skipped, reordered, or stamped on its own.
+
+When the property is one the app depends on at runtime, add it to
+`INVARIANTS` in `scripts/lib/schema_assert.py` as well. The `DO` block proves
+the migration ran once; `db-check` proves the property is *still* true after
+whatever happened to the database since.

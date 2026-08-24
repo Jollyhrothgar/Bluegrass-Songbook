@@ -18,6 +18,20 @@ export {
 // Components (for advanced customization)
 export { EditorCursor } from './cursor.js';
 export { KeyboardHandler } from './keyboard.js';
+
+// The binding table — what the toolbar, menu bar and help overlay read
+export {
+    ACTIONS,
+    PRESETS,
+    DEFAULT_PRESET,
+    FretEntry,
+    describe as describeBindings,
+    keyFor,
+    prettyKeys,
+    getPreset,
+    setPreset,
+    onPresetChange,
+} from './bindings.js';
 export { EditorToolbar } from './toolbar.js';
 export { NoteEntryPopover } from './popover.js';
 

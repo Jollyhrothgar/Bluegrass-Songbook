@@ -1,8 +1,10 @@
-// New-tab-from-scratch flow: form values → empty multi-track OTF →
+// New-tab-from-scratch flow: requested shape → empty multi-track OTF →
 // editor, with a localStorage draft so work survives reloads.
 //
-// Kept UI-thin and injected so create.html stays a shell and tests can
-// exercise the logic in jsdom.
+// UI-free on purpose. The page that used to own this form is gone (§9.1):
+// the song page calls `buildNewTab` directly for `#work/{slug}/add-tab`
+// and `#new-tab`, reading the shape off the hash rather than a form, and
+// these tests exercise the logic in jsdom with nothing mounted.
 
 import { createMultiTrackOTF } from './actions.js';
 
@@ -28,19 +30,27 @@ export function buildNewTab({ title, instruments, timeSignature, tempo, measures
     });
 }
 
-/** Persist a draft (called from the editor's onChange). */
-export function saveDraft(otf, storage = globalThis.localStorage) {
+/**
+ * Persist a draft (called from the editor's onChange).
+ *
+ * The target travels WITH the draft on purpose: signing in redirects to
+ * `origin + pathname` and drops the query string, so a targeted tab
+ * (`?work=…&instrument=…`) would otherwise forget which work it was for
+ * the moment its author signed in to submit it.
+ */
+export function saveDraft(otf, target = null, storage = globalThis.localStorage) {
     try {
         storage.setItem(DRAFT_KEY, JSON.stringify({
             savedAt: new Date().toISOString(),
             otf,
+            ...(target ? { target } : {}),
         }));
     } catch (e) {
         // quota/private-mode — drafts are best-effort
     }
 }
 
-/** @returns {{savedAt: string, otf: Object}|null} */
+/** @returns {{savedAt: string, otf: Object, target?: Object}|null} */
 export function loadDraft(storage = globalThis.localStorage) {
     try {
         const raw = storage.getItem(DRAFT_KEY);

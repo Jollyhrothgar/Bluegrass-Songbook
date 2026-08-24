@@ -50,6 +50,62 @@ describe('svgPointForPosition', () => {
     });
 });
 
+// Uniform measure slots (plan tab-editor-input-parity.md §7): a 2-beat
+// pickup in a 4/4 tune gets a FULL slot, uses half of its note area and
+// is pushed right so its end lands on the barline. The renderer says so
+// with noteW = half the slot and noteOffset = the other half; every
+// overlay function reads exactly those two numbers, so the cursor has to
+// land on the pickup's real notes without knowing anything about it.
+const PICKUP_GEOMS = [
+    // full slot 370 wide; 960 of 1920 ticks -> 185 used, 185 offset
+    { display: 1, x: 20, width: 400, ticks: 960, noteX0: 35, noteW: 185, noteOffset: 185, startTick: 0 },
+    { display: 2, x: 420, width: 400, ticks: 1920, noteX0: 435, noteW: 370, noteOffset: 0, startTick: 960 },
+];
+const PICKUP_ROWS = [
+    { rowIndex: 0, firstMeasure: 1, lastMeasure: 2, measures: PICKUP_GEOMS },
+];
+
+describe('short measures in a uniform slot', () => {
+    it('puts the pickup in the RIGHT half of its slot', () => {
+        const p = svgPointForPosition(PICKUP_ROWS, { measure: 1, tick: 0, string: 1 }, opts);
+        expect(p.x).toBeCloseTo(35 + 185);            // half way across the slot
+        // its last tick lands on the barline (noteX0 + full slot width)
+        const end = svgPointForPosition(PICKUP_ROWS, { measure: 1, tick: 960, string: 1 }, opts);
+        expect(end.x).toBeCloseTo(35 + 370);
+    });
+
+    it('beats line up with the measure below: pickup tick t == 4/4 tick t+960', () => {
+        for (const tick of [0, 240, 480, 720]) {
+            const pick = svgPointForPosition(PICKUP_ROWS, { measure: 1, tick, string: 1 }, opts);
+            const full = svgPointForPosition(
+                PICKUP_ROWS, { measure: 2, tick: tick + 960, string: 1 }, opts);
+            expect(pick.x - PICKUP_GEOMS[0].noteX0)
+                .toBeCloseTo(full.x - PICKUP_GEOMS[1].noteX0, 5);
+        }
+    });
+
+    it('hit-tests clicks in the pickup back to its own ticks', () => {
+        for (const tick of [0, 240, 480, 720]) {
+            const pos = { measure: 1, tick, string: 3 };
+            const p = svgPointForPosition(PICKUP_ROWS, pos, opts);
+            expect(positionFromSvgPoint(PICKUP_GEOMS, p.x, p.y, opts)).toEqual(pos);
+        }
+    });
+
+    it('clicks in the pickup\'s dead left half clamp to its first tick', () => {
+        // x inside measure 1's slot but left of its note area
+        const hit = positionFromSvgPoint(PICKUP_GEOMS, 60, 30, opts);
+        expect(hit).toEqual({ measure: 1, tick: 0, string: 1 });
+    });
+
+    it('grid lines follow the offset, one per slot of the SHORT measure', () => {
+        const lines = gridLinesForRow(PICKUP_GEOMS, 240, () => 480);
+        const m1 = lines.filter(l => l.display === 1);
+        expect(m1).toHaveLength(4);                    // 960 / 240
+        expect(m1[0].x).toBeCloseTo(35 + 185);         // starts mid-slot
+    });
+});
+
 describe('selectionRectsForRow', () => {
     it('covers the intersection of the range with each measure\'s note area', () => {
         // last half of m29 + first quarter of m30 (ticks 960..2400)

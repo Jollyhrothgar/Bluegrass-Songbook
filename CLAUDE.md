@@ -1,19 +1,41 @@
 # Bluegrass Songbook
 
-A bluegrass jam songbook: a curated searchable index of ~1,800 bluegrass and
-bluegrass-adjacent songs, backed by an 18,500+ work archive (every archived
-work still resolves by direct URL and can be restored to search — see
+A bluegrass jam songbook: a curated searchable index of a few thousand
+bluegrass and bluegrass-adjacent songs, backed by a 19,000+ work archive (every
+archived work still resolves by direct URL and can be restored to search — see
 "Index Prune" in `scripts/lib/CLAUDE.md`).
+
+Corpus size drifts constantly, so count it rather than quoting this file:
+`ls works | wc -l` (all works), and after `./scripts/bootstrap --quick`,
+`wc -l docs/data/index.jsonl` (curated/searchable) and
+`wc -l docs/data/archive.jsonl` (archived). On 2026-08-19: 19,230 / 2,462 /
+16,762.
 
 ## Quick Start
 
 ```bash
 ./scripts/bootstrap          # First-time setup (install deps + build index)
-./scripts/server             # Start frontend at http://localhost:8080
-./scripts/utility add-song FILE.pro  # Add a song to the collection
+./scripts/server             # Start frontend (walks 8080-8090; --exact to pin)
+./scripts/utility help               # THE list of subcommands (~30 of them)
 ./scripts/utility refresh-tags       # Refresh tags from MusicBrainz (local only)
 ./scripts/utility build-posts        # Build blog posts manifest
+./scripts/bootstrap --quick          # Rebuild docs/data/ from works/
 ```
+
+`./scripts/utility add-song FILE.pro` creates `works/<slug>/` from a local
+chart via `works_writer.create_work` and rebuilds the index. Metadata comes
+from the file's own `{meta: ...}` directives (`--title` / `--artist` /
+`--composer` / `--key` / `--id` override); an id that is taken is an error,
+not an overwrite (`--on-collision suffix` to mint `<slug>-1` instead).
+Fixed 2026-08-19 — it used to copy the file into `songs/manual/parsed/`,
+which nothing reads, and print "Added:".
+
+## Secrets
+
+Never written to disk. `.env.tpl` holds 1Password `op://` references (committed);
+values are injected per-command by `scripts/lib/with-secrets`, which
+`./scripts/utility` already uses for everything needing them. Run `op signin`
+once per session. Details in `scripts/lib/CLAUDE.md`.
 
 ## CRITICAL: Cost Controls
 
@@ -61,7 +83,10 @@ The triage agent investigates root cause and comes back with a structured verdic
 - A test fails in a way that seems like bad data rather than bad test logic
 - You're tempted to add a special case or override to make something "just work"
 
-**How**: `Task(subagent_type="triage", prompt="<describe the complaint and what you've observed so far>")`
+**How**: dispatch the subagent-launching tool with `subagent_type: "triage"` and
+a prompt describing the complaint and what you've observed so far. (That tool is
+named `Agent` in current Claude Code and was `Task` in older versions — use
+whichever your tool list actually offers.)
 
 A known bandaid tracked as an issue is fine. An invisible bandaid is not.
 
@@ -135,12 +160,21 @@ Bluegrass-Songbook/
 │   ├── golden-standard/     # 86 curated bluegrass standards
 │   ├── manual/              # Hand-created songs
 │   ├── tunearch/            # ABC fiddle tunes
-│   ├── banjo-hangout/       # Banjo tabs from Banjo Hangout (TEF→OTF)
+│   ├── banjo-hangout/       # Banjo tabs from Banjo Hangout (TEF→OTF); its
+│   │                        #   site_config.py also drives the four siblings
+│   ├── fiddle-hangout/      # Sibling Hangout site (shares banjo-hangout code)
+│   ├── flatpicker-hangout/  #   "
+│   ├── mandolin-hangout/    #   "
+│   ├── reso-hangout/        #   "
 │   ├── bluegrass-lyrics/    # 764 songs from BluegrassLyrics.com (Feb 2026)
 │   ├── ultimate-guitar/     # Chord enrichment via UG Mobile API
-│   ├── web-chords/          # 325 songs from chord websites (raw, not yet parsed)
+│   ├── web-chords/          # Chord-website import, COMPLETE Jul 2026:
+│   │                        #   239 parsed, 144 works created
 │   ├── traditional-music-uk/ # Chord data from traditionalmusic.co.uk
+│   ├── bounty-hunt/         # Builds the wanted/bounty list
+│   ├── mandozine/           # Mandolin TEF arrangements
 │   └── tef-uploads/         # User-uploaded TEF files for conversion
+│   # `ls sources/` is the real list — this tree goes stale.
 │
 ├── scripts/                 # CLI tools
 │   ├── bootstrap            # Setup + build index
@@ -184,10 +218,13 @@ always the right answer and nobody has to decide what belongs in a PR.
 | 3. Authoritative | `works/*/work.yaml` + parts | **yes** | **yes** | unrecoverable — hand-edited |
 | 4. Generated site data | `docs/data/index.jsonl`, `archive.jsonl`, `songs/`, `tabs/*.otf.json` | **no** | rebuilt every deploy | `./scripts/bootstrap --quick` |
 
-Tier 4 is gitignored (2026-08-02). Every consumer rebuilds it before use — the
-Pages deploy (`.github/workflows/build.yml` runs `build_works_index.py` then
-uploads `docs/`) and all four `process-*.yml` automations — so the committed
-copies never reached production and only made corpus PRs unreadable.
+Tier 4 is gitignored (2026-08-02). Every consumer rebuilds it before use, so the
+committed copies never reached production and only made corpus PRs unreadable.
+The rebuilders are whichever workflows invoke the index builder — ask, don't
+assume: `grep -ln build_works_index .github/workflows/*`. As of 2026-08-19 that
+is `build.yml` (the Pages deploy: runs `build_works_index.py`, then uploads
+`docs/`) and `process-tune-request.yml`. The other content workflows push to
+`works/` and rely on the deploy triggered afterwards to rebuild.
 
 Three carve-outs, all deliberate — each verified by wiping `docs/data/` and
 rebuilding from `works/` (songs and tabs came back with **0 diffs**; the items
@@ -216,7 +253,8 @@ corpus, rebuild and inspect locally (or check prod) rather than reading a diff.
 
 Provenance is unaffected — it lives in `works/*/work.yaml` under
 `parts[].provenance` (`source`, `source_id`, `source_file`), which is what ties
-tier 4 back to tier 1. Only 9 of 19,227 works lack it.
+tier 4 back to tier 1. Only a handful of works lack it (4 of 19,230 on
+2026-08-19) — recount rather than trusting this number.
 
 ## Works Architecture
 
@@ -255,8 +293,18 @@ parts:
       imported_at: '2026-01-02'
 ```
 
-**Part types**: `lead-sheet`, `tablature`, `abc-notation`
-**Formats**: `chordpro`, `opentabformat`, `abc`
+**Part types** in the corpus today: `lead-sheet` (the overwhelming majority),
+`tablature`, and a single legacy `document`. There is no `abc-notation` part
+type — ABC lives *inside* a `chordpro` lead sheet as a `{start_of_abc}` block,
+which is why the index exposes it as the `has_abc` flag rather than a part.
+
+**Formats**: `chordpro`, `otf` (OpenTabFormat — the key is literally `otf`,
+not `opentabformat`; see `RENDERERS` in `docs/js/renderers/index.js`), plus one
+legacy `pdf`.
+
+Recount either list with:
+`grep -rhoE '^\s+(- )?type: [a-z-]+' works/*/work.yaml | awk '{print $NF}' | sort | uniq -c`
+(swap `type` for `format`).
 
 The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 
@@ -300,6 +348,7 @@ The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 | Agent | Purpose |
 |-------|---------|
 | **triage** | Bug triage investigator. Dispatch when user complains about wrong behavior. Traces root cause, labels fixes as ROOT FIX vs BANDAID. See "Bug Triage" section above. |
+| **qa-explorer** | Explores the running app like a real user to find bugs and UX issues. Needs `./scripts/server` up first. |
 
 ## Development Workflows
 
@@ -319,9 +368,27 @@ The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
 
 ### Adding a Song Manually
 
+`works/` is authoritative, so a song is added by creating its work directory
+and rebuilding:
+
 ```bash
-./scripts/utility add-song ~/path/to/song.pro
+mkdir -p works/<slug>
+$EDITOR works/<slug>/work.yaml        # see "Works Architecture" below
+$EDITOR works/<slug>/lead-sheet.pro
+./scripts/bootstrap --quick           # rebuild docs/data/ from works/
 ```
+
+Or, when the chart already exists as a `.pro` file, let the CLI do exactly
+that:
+
+```bash
+./scripts/utility add-song ~/Downloads/my-song.pro
+```
+
+It reads the file's `{meta: ...}` metadata, mints the slug the same way the
+rest of the pipeline does (`slugify(title)`), writes through `works_writer`
+(so suppressed ids and existing works are refused, never overwritten), and
+rebuilds `docs/data/`.
 
 ### Rebuilding the Search Index
 
@@ -396,12 +463,28 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 | Workflow | Trigger | Action |
 |----------|---------|--------|
-| `build.yml` | Push to main, PRs | Runs tests, rebuilds search index, deploys to GitHub Pages only if tests pass |
-| `process-song-submission.yml` | Issue labeled `song-submission` + `approved` | Adds new song |
-| `process-song-correction.yml` | Issue labeled `song-correction` + `approved` | Updates existing song |
+| `build.yml` | Push to main, PRs, **`workflow_run` after any content workflow named in its trigger list**, manual dispatch | Runs tests, rebuilds search index, deploys to GitHub Pages only if tests pass |
+| `process-pending.yml` | `pending-commit` repository_dispatch from `auto-commit-song` / `reconcile-pending` | Writes one `pending_songs` row into `works/` via `works_writer` (create / update / fork-to-arrangement), pushes, then marks the row committed |
 | `process-tune-request.yml` | Issue labeled `tune-request` | Processes tune requests |
-| `auto-label-issues.yml` | New issues | Automatically labels issues |
-| `cleanup-pending.yml` | Scheduled | Cleans up stale pending songs |
+| `cleanup-pending.yml` | `workflow_run` after a successful `CI & Deploy` | Cleans up stale pending songs (so it only runs when a deploy actually happened) |
+| `reconcile-pending.yml` | Hourly (`42 * * * *`) + manual | Retries `pending_songs` rows that never reached `works/`, prints the drift count, and opens/updates one alert issue if any stay stuck |
+| `sync-community-input.yml` | Hourly (`27 * * * *`) + manual | Syncs trusted-user tag downvotes to `docs/data/tag_overrides.json` (auto-applied at next index build) and exports `genre_suggestions` to `docs/data/user_genre_suggestions.json` (review-only, not auto-applied) |
+| `sync-deleted-songs.yml` | Hourly (`17 * * * *`) + manual | Syncs Supabase `deleted_songs` + `promoted_songs` into `docs/data/*.json` so UI deletes and Dungeon promotions survive the next index build |
+| `deploy-functions.yml` | Push to main touching `supabase/functions/**` (or the Deno config/lockfile), + manual | Type-checks and tests the edge functions, then `supabase functions deploy`. Needs the `SUPABASE_ACCESS_TOKEN` repo secret |
+
+This table is a copy, not the source of truth — the workflow's real name is the
+`name:` field in its file. Regenerate with
+`grep -H -m1 '^name:' .github/workflows/*.yml` before trusting it.
+
+> ⚠️ **A workflow that pushes to `main` does not trigger a deploy by itself.**
+> GitHub does not start workflows for pushes made with the default
+> `GITHUB_TOKEN`, so bot commits land in git and nothing rebuilds. `build.yml`
+> closes the gap with a `workflow_run` trigger that lists content workflows **by
+> their `name:` field** — a rename or a new pushing workflow silently unhooks
+> deployment with no error anywhere. If you add or rename a workflow that
+> commits to `main`, update `.github/workflows/build.yml`;
+> `tests/test_workflow_deploy_triggers.py` fails CI if you forget. Details:
+> "How a bot commit reaches the site" in `scripts/lib/CLAUDE.md`.
 
 ## Chrome DevTools MCP
 
@@ -416,8 +499,8 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 
 ## Current State
 
-- **Curated index (2026-07-31)**: search/collections show the bluegrass canon (~1,800 songs kept by a two-of-three-ledgers rule — MusicBrainz coverage, Strum Machine, BluegrassLyrics — plus instrumentals, curated artists, user adds, and a manual review). The other ~16,900 works are archived, not deleted: direct URLs work, and `./scripts/utility curate unprune <id>` puts any song back
-- **18,500+ works** in works-based architecture with chord search, transposition, favorites, dark mode
+- **Curated index (2026-07-31)**: search/collections show the bluegrass canon, kept by a two-of-three-ledgers rule — MusicBrainz coverage, Strum Machine, BluegrassLyrics — plus instrumentals, curated artists, user adds, and a manual review. Everything else is archived, not deleted: direct URLs work, and `./scripts/utility curate unprune <id>` puts any song back. For the current split, count `docs/data/index.jsonl` vs `archive.jsonl` after a build (2,462 / 16,762 on 2026-08-19) — the numbers move as songs are promoted
+- **19,000+ works** in works-based architecture with chord search, transposition, favorites, dark mode
 - **Works system**: Each song is a "work" with multiple parts (lead sheet, tablature, ABC notation)
 - **Tablature**: Banjo Hangout tabs with TEF→OTF parsing, playback, track mixer for multi-instrument arrangements
 - **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - primary source is LLM tagging, with MusicBrainz and grassiness scoring as fallbacks
@@ -431,6 +514,9 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Super-user requests**: Regular users can request trusted status via GitHub issue
 - **LLM tagging**: Primary tag source using Claude batch API
 - **Tag voting**: Trusted users can override incorrect tags
+- **Dungeon promote**: any signed-in user can promote an archived work back
+  into search from the Bluegrass Dungeon; undo is limited to the promoter or a
+  trusted user, so two users disagreeing can't flip a song back and forth
 - **Legacy ID migration**: Song IDs migrated from filename-based to work slugs
 - **Strum Machine integration**: 605+ songs with practice backing tracks
 - **UI redesign (Jul 2026)**: app shell with top/bottom bands, pill controls (Key/Display/Info/Export/Arrangement) replacing the old quick-controls bar, sidebar, and version-picker modal
@@ -438,8 +524,21 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Covering artists**: Shows which bluegrass legends recorded each song
 - **Multi-owner lists**: Collaborative list curation with follow/unfollow
 - **Thunderdome**: Claim abandoned lists (now 1 year inactivity threshold)
-- **Frictionless feedback**: Report issues and request songs without GitHub account
-- **Submitter attribution**: Tracks who submitted content ("Rando Calrissian" for anonymous)
+- **Frictionless feedback**: Report issues and request songs with no account at all
+- **Submitter attribution**: Derived server-side from the verified session; content
+  writes (song/tab submissions and corrections) require login, reports and requests
+  don't (Phase 2a — see `docs/plans/contribution-pipeline.md`)
+
+- **Review queue (Aug 2026, phase 2d)**: deletions / suppressions /
+  merge-redirects are the only asks still reviewed. Trusted users file a
+  request, admins decide, in the Bluegrass Dungeon panel
+  (`docs/js/review-queue.js`, `review_requests`). Admins keep the instant
+  delete. Approving a suppress or merge-redirect prints the local command
+  instead of pretending CI can run it.
+- **Document upload removed (Aug 2026, phase 2d)**: the intake staged files
+  nothing downstream ever read. Document parts already in `works/` and the
+  PDFs in `docs/data/docs/` still serve — this killed the intake, not the
+  shelf.
 
 **What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
 
@@ -464,8 +563,10 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
 | Understand grassiness scoring | `scripts/lib/tagging/CLAUDE.md` |
 | BluegrassLyrics.com import | `sources/bluegrass-lyrics/CLAUDE.md` |
+| Change the wanted/bounty list | `curation/bounty_decisions.yaml`, then rebuild — `docs/data/wanted_songs.json` is build output, not a file to edit (`sources/bounty-hunt/CLAUDE.md`) |
 | Ultimate Guitar chord scraper | `sources/ultimate-guitar/CLAUDE.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |
+| Review a delete/suppress/merge request | `docs/js/review-queue.js` + `supabase/CLAUDE.md` |
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
 | Write a blog post | `docs/posts/` (then run `./scripts/utility build-posts`) |

@@ -9,6 +9,7 @@ THREE-PART output (see `write_outputs` and scripts/lib/CLAUDE.md):
     docs/data/index.jsonl   canon rows only (indexed is not False), no content
     docs/data/archive.jsonl indexed:false rows, no content, lyrics clipped
     docs/data/songs/{id}.pro   full ChordPro per work, fetched on page open
+    docs/data/songs/{id}--{slug}.pro   a forked lead sheet (see `arrangements`)
 
 Usage:
     uv run python scripts/lib/build_works_index.py
@@ -23,6 +24,7 @@ import multiprocessing
 import os
 import re
 import shutil
+import sys
 from pathlib import Path
 from urllib.parse import quote
 
@@ -81,7 +83,7 @@ from build_index import (
 
 from curation import (apply_curation, apply_tab_defaults, filter_suppressed,
                       load_registry, load_prune_list, apply_index_prune,
-                      apply_tag_exclusions)
+                      apply_tag_exclusions, load_promoted_songs)
 
 
 def parse_chordpro_content(content: str) -> dict:
@@ -213,6 +215,77 @@ def compute_group_id(title: str, artist: str, lyrics: str) -> str:
     return f"{base_hash}_{lyrics_hash}"
 
 
+# ── Forked lead sheets ───────────────────────────────────────────────────
+# A work can hold more than one lead sheet: `works_writer.fork_to_arrangement`
+# lands somebody else's take on a song as an ADDITIONAL lead-sheet part
+# (`lead-sheet-<label>.pro`, `default: false`, `x_version_*` populated)
+# instead of overwriting the chart that was already there.
+#
+# The primary lead sheet keeps the shape it always had — `content` on the row,
+# published to `docs/data/songs/{id}.pro` — so single-lead-sheet works (every
+# work in the corpus as of 2026-08-15) build byte-for-byte as before. Only a
+# work with a SECOND lead sheet grows an `arrangements` list, one entry per
+# lead sheet including the primary, which is what the Arrangement pill lists.
+
+#: Metadata a forked part carries in the ChordPro itself
+#: (`works_writer.apply_version_metadata`), read as a fallback when work.yaml
+#: doesn't spell it out — a hand-added part may only have the directives.
+_VERSION_META_FIELDS = {
+    'x_version_label': 'label',
+    'x_version_type': 'version_type',
+    'x_arrangement_by': 'arrangement_by',
+    'x_version_notes': 'notes',
+}
+
+#: Where the primary lead sheet lives inside a work directory.
+PRIMARY_LEAD_SHEET = 'lead-sheet.pro'
+
+
+def lead_sheet_parts(work: dict) -> list:
+    """The work's lead-sheet parts, in work.yaml order."""
+    return [p for p in (work.get('parts') or [])
+            if p.get('type') == 'lead-sheet' and p.get('file')]
+
+
+def version_meta_from_content(content: str) -> dict:
+    """`x_version_*` directives lifted out of a ChordPro chart."""
+    meta = {}
+    for directive, field in _VERSION_META_FIELDS.items():
+        m = re.search(r'\{meta:\s*' + directive + r'\s+([^}]+)\}', content or '')
+        if m:
+            meta[field] = m.group(1).strip()
+    return meta
+
+
+def arrangement_slug(part_file: str, position: int, taken: set) -> str:
+    """Stable, unique-per-work slug for a forked lead sheet.
+
+    Derived from the part's filename (`lead-sheet-simplified.pro` ->
+    `simplified`), which `works_writer.unique_filename` already guarantees is
+    unique inside the work — so the slug is stable across builds and across
+    label edits.
+    """
+    stem = Path(part_file).name.split('.')[0]
+    stem = re.sub(r'^lead-sheet-?', '', stem)
+    slug = re.sub(r'[^a-z0-9]+', '-', stem.lower()).strip('-') or f'p{position}'
+    candidate, n = slug, 2
+    while candidate in taken:
+        candidate = f'{slug}-{n}'
+        n += 1
+    taken.add(candidate)
+    return candidate
+
+
+def published_arrangement_name(work_id: str, slug: str) -> str:
+    """Filename for a forked lead sheet inside docs/data/songs/.
+
+    ``{work}--{slug}.pro``. The double hyphen cannot collide with another
+    work's ``{id}.pro``: `work_schema.slugify` collapses runs of dashes, so no
+    minted work id contains ``--`` (verified against all 19,229 works).
+    """
+    return f'{work_id}--{slug}.pro'
+
+
 def published_tab_name(work_id: str, part: dict, position: int = 0) -> str:
     """Filename for a tablature part inside docs/data/tabs/.
 
@@ -323,26 +396,38 @@ def write_outputs(songs: list, index_file: Path):
     published_songs = set()
     written = 0
 
+    def publish(name: str, text: str):
+        """Write one .pro, only when its text actually changed."""
+        nonlocal written
+        published_songs.add(name)
+        dest = songs_dir / name
+        # Only rewrite when the text actually changed: keeps mtimes (and
+        # therefore incremental rebuilds / git status) quiet.
+        try:
+            unchanged = dest.read_text(encoding='utf-8') == text
+        except OSError:
+            unchanged = False
+        if not unchanged:
+            dest.write_text(text, encoding='utf-8')
+            written += 1
+
     for song in songs:
         content = song.pop('content', '') or ''
         abc_content = song.pop('abc_content', None)
 
         if content:
-            name = f"{song['id']}.pro"
-            published_songs.add(name)
-            dest = songs_dir / name
-            # Only rewrite when the text actually changed: keeps mtimes (and
-            # therefore incremental rebuilds / git status) quiet.
-            try:
-                unchanged = dest.read_text(encoding='utf-8') == content
-            except OSError:
-                unchanged = False
-            if not unchanged:
-                dest.write_text(content, encoding='utf-8')
-                written += 1
+            publish(f"{song['id']}.pro", content)
             song['has_content'] = True
         if abc_content:
             song['has_abc'] = True
+
+        # Forked lead sheets ride along in their own files, same directory,
+        # same orphan prune — the row keeps only the pointer.
+        for arrangement in song.get('arrangements') or []:
+            text = arrangement.pop('_content', None)
+            if text is None:
+                continue
+            publish(Path(arrangement['file']).name, text)
 
         if song.get('indexed') is False:
             song['lyrics'] = (song.get('lyrics') or '')[:ARCHIVE_LYRICS_CHARS]
@@ -376,12 +461,16 @@ def write_outputs(songs: list, index_file: Path):
           f"{archive_size / 1024 / 1024:.1f} MB")
     print(f"Song content: {len(published_songs)} files in {songs_dir} "
           f"({written} written this build, {len(orphans)} orphans removed)")
+    forked_works = [s for s in songs if s.get('arrangements')]
+    if forked_works:
+        forked = sum(len(s['arrangements']) - 1 for s in forked_works)
+        print(f"  {forked} forked lead sheet(s) across "
+              f"{len(forked_works)} work(s)")
 
 
 def build_song_from_work(work_dir: Path) -> dict:
     """Build a song record from a work directory."""
     work_yaml_path = work_dir / 'work.yaml'
-    lead_sheet_path = work_dir / 'lead-sheet.pro'
 
     if not work_yaml_path.exists():
         return None
@@ -389,6 +478,18 @@ def build_song_from_work(work_dir: Path) -> dict:
     # Load work.yaml
     with open(work_yaml_path) as f:
         work = yaml.safe_load(f)
+
+    # The primary lead sheet is lead-sheet.pro, exactly as it always was. A
+    # work whose lead sheet is named something else (no forks are: a fork
+    # never displaces the original) falls back to its default-flagged part,
+    # so content isn't silently dropped.
+    all_lead_sheets = lead_sheet_parts(work)
+    primary_file = PRIMARY_LEAD_SHEET
+    if not (work_dir / PRIMARY_LEAD_SHEET).exists() and all_lead_sheets:
+        default_part = next((p for p in all_lead_sheets if p.get('default')),
+                            all_lead_sheets[0])
+        primary_file = Path(default_part['file']).name
+    lead_sheet_path = work_dir / primary_file
 
     # Check what parts we have
     has_lead_sheet = lead_sheet_path.exists()
@@ -488,6 +589,17 @@ def build_song_from_work(work_dir: Path) -> dict:
     if work.get('notes'):
         song['notes'] = work['notes']
 
+    # Who submitted the lead sheet, when the pipeline knows. This is the
+    # verified auth.uid() stamped by process_pending.py, and it is what lets
+    # the editor tell "your chart" from "someone else's" before you submit —
+    # the same field auto-commit-song reads to decide update vs fork.
+    for part in work.get('parts') or []:
+        if part.get('type') == 'lead-sheet':
+            submitted_by = (part.get('provenance') or {}).get('submitted_by')
+            if submitted_by:
+                song['submitted_by'] = submitted_by
+            break
+
     # Compute group_id
     song['group_id'] = compute_group_id(
         work.get('title', ''),
@@ -506,6 +618,71 @@ def build_song_from_work(work_dir: Path) -> dict:
         song['is_instrumental'] = True
     if parsed['abc_content']:
         song['abc_content'] = parsed['abc_content']
+
+    # Forked lead sheets: every take of this song that lives IN this work.
+    # Emitted only when there is more than one, so a single-lead-sheet work's
+    # row is unchanged. `_content` is the chart text; write_outputs publishes
+    # it beside the primary and strips the field.
+    extra_lead_sheets = [
+        p for p in all_lead_sheets
+        if Path(p['file']).name != primary_file
+        and (work_dir / Path(p['file']).name).exists()
+    ]
+    if has_lead_sheet and extra_lead_sheets:
+        primary_part = next(
+            (p for p in all_lead_sheets
+             if Path(p['file']).name == primary_file), {})
+        primary_meta = version_meta_from_content(content)
+        arrangements = [{
+            'slug': 'default',
+            'label': (primary_part.get('label')
+                      or primary_meta.get('label') or 'Original'),
+            'default': True,
+            'file': f"data/songs/{work['id']}.pro",
+            'key': key,
+            'chord_count': len(nashville_set),
+        }]
+        for field in ('version_type', 'arrangement_by', 'notes'):
+            value = primary_part.get(
+                'version_notes' if field == 'notes' else field
+            ) or primary_meta.get(field)
+            if value:
+                arrangements[0][field] = value
+        if song.get('submitted_by'):
+            arrangements[0]['submitted_by'] = song['submitted_by']
+
+        taken = {'default'}
+        for i, part in enumerate(extra_lead_sheets):
+            name = Path(part['file']).name
+            text = (work_dir / name).read_text(encoding='utf-8')
+            part_meta = version_meta_from_content(text)
+            part_parsed = parse_chordpro_content(text)
+            part_key, _ = detect_key(part_parsed['chords'])
+            part_key = part_key or work.get('default_key', 'G')
+            part_nashville = {n for n in (to_nashville(c, part_key)
+                                          for c in part_parsed['chords']) if n}
+            slug = arrangement_slug(name, i, taken)
+            entry = {
+                'slug': slug,
+                'label': (part.get('label') or part_meta.get('label')
+                          or slug.replace('-', ' ').title()),
+                'file': f"data/songs/{published_arrangement_name(work['id'], slug)}",
+                'key': part_key,
+                'chord_count': len(part_nashville),
+                '_content': text,
+            }
+            for field in ('version_type', 'arrangement_by', 'notes'):
+                value = part.get(
+                    'version_notes' if field == 'notes' else field
+                ) or part_meta.get(field)
+                if value:
+                    entry[field] = value
+            submitted_by = (part.get('provenance') or {}).get('submitted_by')
+            if submitted_by:
+                entry['submitted_by'] = submitted_by
+            arrangements.append(entry)
+
+        song['arrangements'] = arrangements
 
     # Add tablature parts info for frontend.
     # A work can hold several arrangements of the SAME instrument (the
@@ -527,10 +704,25 @@ def build_song_from_work(work_dir: Path) -> dict:
                 'source': prov.get('source'),
                 'source_id': prov.get('source_id'),
                 'author': prov.get('author'),
-                # Where the OTF lives inside works/ — used by the copy step,
-                # stripped before the index is written.
-                '_src': part.get('file'),
+                # Where the OTF lives inside works/. Used by the copy step,
+                # and PUBLISHED: a tab correction has to name the file it
+                # corrects, and the published name (which folds in the
+                # source_id) can't be mapped back to it. Without this a
+                # correction to any arrangement but the first landed on
+                # `{instrument}.otf.json` — a different part.
+                'src_file': part.get('file'),
             }
+            # The contributor's uuid, when this take came from a person
+            # rather than a scrape. `author` above is a DISPLAY NAME
+            # ("schlange"), which can never be compared to an auth.uid() —
+            # so without this the frontend cannot tell that the signed-in
+            # user submitted this tab, and the "edit this work's details"
+            # affordance disappeared the moment their tab was published.
+            # Consistent with the row-level, arrangement and document parts,
+            # which already publish it; the uuid is in works/*/work.yaml
+            # either way. Omitted when absent, so imported tabs are unchanged.
+            if prov.get('submitted_by'):
+                tab_info['submitted_by'] = prov['submitted_by']
             # Arrangement-picker detail, when the listing had it
             if prov.get('difficulty'):
                 tab_info['difficulty'] = prov['difficulty']
@@ -908,10 +1100,10 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     published_tabs = set()
     for song in songs:
         for tab_part in song.get('tablature_parts', []):
-            # `_src` is the part's file inside works/ ({instrument}.otf.json for
-            # the first arrangement, {instrument}-{source_id}.otf.json for the
-            # alternates); it never reaches the index.
-            src_name = tab_part.pop('_src', None)
+            # `src_file` is the part's file inside works/
+            # ({instrument}.otf.json for the first arrangement,
+            # {instrument}-{source_id}.otf.json for the alternates).
+            src_name = tab_part.get('src_file')
             # dest is data/tabs/{work}-{instrument}-{source_id}.otf.json
             dest_path = Path('docs') / tab_part['file']
             work_id = song['id']
@@ -1100,11 +1292,20 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     # rows stay in the index (deep links, lists, groups keep working), and
     # user-contributed works are never pruned. Rescues: registry keep: map.
     prune_ids = load_prune_list(Path('.'))
-    songs = apply_index_prune(songs, prune_ids, registry)
+    promoted_ids = frozenset(load_promoted_songs(Path('.')))
+    songs = apply_index_prune(songs, prune_ids, registry,
+                              promoted_ids=promoted_ids)
     pruned_count = sum(1 for s in songs if s.get('indexed') is False)
     if prune_ids:
         print(f"  Index prune: {pruned_count} works marked indexed:false "
-              f"({len(prune_ids)} listed)")
+              f"({len(prune_ids)} listed, {len(promoted_ids)} promoted)")
+    # Promoted ids that don't exist in the corpus: either a typo or the work
+    # was deleted (filter_suppressed runs earlier, so deletion wins). Warn so
+    # the conflict is visible rather than silently ignored.
+    missing_promoted = promoted_ids - {s.get('id') for s in songs}
+    for work_id in sorted(missing_promoted):
+        print(f"  WARNING: promoted work not in corpus (deleted?): {work_id}",
+              file=sys.stderr)
 
     # Editorial tag exclusions (registry tag_exclusions): e.g. strip
     # BluegrassStandard from country/pop mis-tags. Runs after all tag
@@ -1141,6 +1342,32 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     # the provenance gate (which raises), so a failed build never mutates
     # docs/data/.
     write_outputs(songs, output_file)
+
+    # Rebuild the bounty board from the committed catalogue, then lower the
+    # adjudication ledger to JSON the browser can read. Both run here rather
+    # than as separate commands so the three callers of this script
+    # (scripts/bootstrap and both build.yml jobs) can't drift, and both need
+    # the index that was just written — build_wanted for the corpus it
+    # subtracts, build_bounty_decisions for chord counts.
+    #
+    # Order matters: the wanted list is an input to the decisions file.
+    _bounty_src = Path(__file__).parent.parent.parent / 'sources' / 'bounty-hunt' / 'src'
+    if str(_bounty_src) not in sys.path:
+        sys.path.insert(0, str(_bounty_src))
+    try:
+        from build_wanted import build_wanted
+        build_wanted()
+    except Exception as exc:                       # noqa: BLE001
+        # A broken board must not take the whole site build down — the last
+        # good wanted_songs.json is still on disk and the frontend filters it
+        # at render anyway. Loud, not fatal.
+        print(f"WARNING: wanted-list rebuild failed ({exc}); keeping the existing file")
+
+    try:
+        from bounty_decisions import build_bounty_decisions
+    except ImportError:
+        from scripts.lib.bounty_decisions import build_bounty_decisions
+    build_bounty_decisions(output_file.parent)
 
     # Lightweight dedup check: warn about potential duplicates
     _check_duplicates(songs)

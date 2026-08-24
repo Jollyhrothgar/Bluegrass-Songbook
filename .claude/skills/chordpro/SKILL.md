@@ -82,31 +82,34 @@ Lyrics with [C]inline [G]chords
 {meta: x_difficulty intermediate}
 ```
 
-**Provenance metadata** (added automatically by workflows):
+**Provenance metadata — LEGACY, do not write these.** The `x_submitted_by` /
+`x_submission_issue` / `x_corrected_by` / `x_correction_issue` directives
+below appear in older `.pro` content that came in through the retired
+GitHub-issue submission flow (`create-song-issue`, deleted). Nothing writes
+them any more, so treat them as read-only history:
+
 ```chordpro
-# For new submissions (via GitHub issue):
-{meta: x_source manual}
 {meta: x_submitted_by github:username}
 {meta: x_submitted 2025-12-26}
 {meta: x_submission_issue 26}
-
-# For corrections to existing songs:
 {meta: x_corrected_by github:username}
 {meta: x_corrected 2025-12-26}
 {meta: x_correction_issue 24}
 ```
+
+Provenance now lives in `works/{slug}/work.yaml` under `parts[].provenance`,
+written by `scripts/lib/works_writer.py` — keys include `source`, `source_id`,
+`source_file`, `source_url`, `submitted_by`, `submitted_at`, `author`,
+`x_corrected_by`, `x_corrected_attribution`, `x_derived_from`,
+`x_submission_notes` / `x_correction_notes`. It is YAML, not ChordPro.
+
+Still written into the `.pro` itself:
 
 | Field | Purpose | Example |
 |-------|---------|---------|
 | `x_source` | Original data source | `classic-country`, `manual` |
 | `x_source_file` | Original filename | `songname.html` |
 | `x_enriched` | Date enrichment ran | `2025-12-26` |
-| `x_submitted_by` | GitHub user who submitted | `github:username` |
-| `x_submitted` | Date submitted | `2025-12-26` |
-| `x_submission_issue` | GitHub issue number | `26` |
-| `x_corrected_by` | GitHub user who corrected | `github:username` |
-| `x_corrected` | Date corrected | `2025-12-26` |
-| `x_correction_issue` | GitHub issue number | `24` |
 
 **Version metadata** (for multiple versions of the same song):
 ```chordpro
@@ -114,7 +117,6 @@ Lyrics with [C]inline [G]chords
 {meta: x_version_type alternate}        # alternate | cover | simplified | live
 {meta: x_arrangement_by John Smith}     # Who created this arrangement
 {meta: x_version_notes Different key, simplified chord voicings}
-{meta: x_canonical_id originalsongid}   # Links to primary version (optional)
 ```
 
 | Field | Purpose | Values |
@@ -123,7 +125,16 @@ Lyrics with [C]inline [G]chords
 | `x_version_type` | Category of version | `alternate`, `cover`, `simplified`, `live` |
 | `x_arrangement_by` | Person who created this arrangement | Name |
 | `x_version_notes` | Free-form notes about differences | Any text |
-| `x_canonical_id` | Links to the original/primary version | Song ID (filename stem) |
+
+These four are written by `works_writer.apply_version_metadata` and read back
+by `build_works_index._VERSION_META_FIELDS` as a fallback when `work.yaml`
+doesn't spell them out.
+
+`x_canonical_id` is **legacy** — only the retired `scripts/lib/build_index.py`
+reads it; `build_works_index.py` ignores it. To mark the canonical version of a
+song group, use the curation registry instead:
+`./scripts/utility curate pin <canonical-id> [variant-id ...]`, which writes
+`curation/registry.yaml`.
 
 ## Environment Directives (Sections)
 
@@ -265,6 +276,8 @@ This project uses these conventions:
 
 ## Related Files
 
-- Parser: `sources/classic-country/src/parser.py`
-- Index builder: `scripts/lib/build_index.py`
-- Frontend renderer: `docs/js/search.js`
+- Parser (HTML → ChordPro, classic-country only): `sources/classic-country/src/parser.py`
+- Index builder: `scripts/lib/build_works_index.py` (reads `works/`).
+  `scripts/lib/build_index.py` is the LEGACY builder that reads `sources/*/parsed/`
+- Frontend parse + render: `docs/js/renderers/chordpro.js`
+- Song page that mounts it: `docs/js/work-view.js`

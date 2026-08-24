@@ -96,11 +96,16 @@ uv run python sources/ultimate-guitar/import_to_works.py
 # Import lyrics-only songs (no chord match)
 uv run python sources/ultimate-guitar/import_lyrics_only.py
 
-# Dry run any command
+# Dry run — supported by scrape_overnight.py, import_to_works.py and
+# import_lyrics_only.py. run_merges.py has NO --dry-run (its flags are
+# --embeddings and --song).
 uv run python <script>.py --dry-run
 ```
 
 ## Data Directories
+
+All three are gitignored (`.gitignore` here) and are absent in a fresh
+checkout — they only exist after you re-run the scraper/merger.
 
 | Directory | Contents |
 |-----------|----------|
@@ -122,7 +127,9 @@ Generated ChordPro files include dual attribution:
 - "BluegrassLyrics.com" (for lyrics attribution)
 - "Community Contribution" (for chord attribution)
 
-This is enforced in `docs/js/song-view.js` and `docs/js/work-view.js`.
+This is enforced by the `sourceDisplayNames` map in `docs/js/song-view.js`
+(the only copy — `work-view.js` imports the renderer from there rather than
+holding its own map).
 
 ## Quality Metrics
 

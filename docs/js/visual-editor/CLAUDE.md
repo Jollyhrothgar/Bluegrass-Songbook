@@ -18,8 +18,10 @@ left/top) and a live interactive preview (right/bottom, mounted on
 New-song entry is content-first: Add Song / `#add` land here with an empty
 textarea whose placeholder carries the paste/type guidance; pasting a chord
 sheet into the textarea smart-converts (pipeline in `../smart-paste.js`).
-The preview's empty state shows quiet "Upload a photo instead" (login-gated)
-and "Request a song" links supplied by main.js. Metadata (title/artist/
+The preview's empty state shows a quiet "Request a song" link supplied by
+main.js (`onSongRequest`). The "Upload a photo instead" hatch beside it went
+away with document upload in phase 2d — there is no upload link left to
+render. Metadata (title/artist/
 writer) stays behind the compact tap-to-expand line; undo/redo buttons and
 the transpose/key/Nashville group (hidden until the song has a chord) sit
 in `#editor-toolbar` above the panes.
@@ -204,8 +206,10 @@ can re-type it).
 Pasting into the TEXTAREA runs the raw pipeline in `../smart-paste.js`
 (ChordU clean → Ultimate Guitar clean → chords-over-lyrics conversion, with
 title/artist backfill into empty metadata fields), then the preview
-re-renders from the converted text. The parked card-mode paste targets
-(`.ve-empty-paste`, per-card lyrics textareas) are gone.
+re-renders from the converted text. The card-mode paste targets
+(`.ve-empty-paste`, per-card lyrics textareas) are no longer reachable — they
+survive only inside the parked `visual-editor.js` and its CSS, and nothing
+renders them.
 
 ## Parked (do not render, do not delete)
 

@@ -10,6 +10,7 @@ import { escapeHtml } from './utils.js';
 
 let topbarEl = null;
 let bottomBandEl = null;
+let bannerEl = null;
 let actionsEl = null;
 let titleEl = null;
 let backBtn = null;
@@ -33,6 +34,7 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
             <button id="topbar-back" class="topbar-back hidden" title="Back">&larr;</button>
             <a href="#" id="topbar-brand" class="topbar-brand" title="Home">
                 <img src="images/new_bb_logo.svg" alt="Bluegrass Book">
+                <img src="images/earl_zombie_face.png" class="brand-dungeon-face" alt="" aria-hidden="true">
             </a>
             <nav class="topbar-nav"></nav>
         </div>
@@ -49,10 +51,23 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
     `;
     document.body.prepend(topbarEl);
 
+    bannerEl = document.createElement('div');
+    bannerEl.id = 'app-banner';
+    bannerEl.className = 'app-banner hidden';
+    topbarEl.insertAdjacentElement('afterend', bannerEl);
+
     bottomBandEl = document.createElement('div');
     bottomBandEl.id = 'app-bottomband';
     bottomBandEl.className = 'app-bottomband hidden';
     document.body.appendChild(bottomBandEl);
+
+    // The band is no longer a fixed 52px (the phone tab strip is taller, and
+    // it grows again when a settings sheet's controls come home), so anything
+    // stacked on top of it — drop-ups, sheets, body padding — reads its live
+    // height off --bottomband-h instead of a hardcoded offset.
+    if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(syncBandHeight).observe(bottomBandEl);
+    }
 
     actionsEl = topbarEl.querySelector('#topbar-actions');
     titleEl = topbarEl.querySelector('#topbar-title');
@@ -192,6 +207,50 @@ export function setBottomBand(contentEl) {
         bottomBandEl.classList.add('hidden');
         document.body.classList.remove('has-bottomband');
     }
+    syncBandHeight();
+}
+
+/** Publish the bottom band's live height as --bottomband-h (0 when hidden). */
+function syncBandHeight() {
+    if (!bottomBandEl) return;
+    const h = bottomBandEl.classList.contains('hidden') ? 0 : bottomBandEl.offsetHeight;
+    document.documentElement.style.setProperty('--bottomband-h', `${h}px`);
+}
+
+/**
+ * Pure: builds the banner's inner markup for a given message. No DOM, so
+ * it's unit-testable without mounting the shell. `retry: false` omits the
+ * retry button (a dismiss-only notice).
+ */
+export function bannerMarkup(message, { retry = true, retryLabel = 'Retry' } = {}) {
+    return `
+        <span class="app-banner-text">${escapeHtml(message)}</span>
+        <span class="app-banner-actions">
+            ${retry ? `<button type="button" class="app-banner-retry">${escapeHtml(retryLabel)}</button>` : ''}
+            <button type="button" class="app-banner-dismiss" aria-label="Dismiss">&times;</button>
+        </span>
+    `;
+}
+
+/**
+ * Show (or hide, with a falsy message) a dismissible, prominent notice bar
+ * below the top band. The shell owns no app state — callers (main.js)
+ * decide when to show it and supply the retry callback.
+ */
+export function setBanner(message, { onRetry, onDismiss, retryLabel = 'Retry' } = {}) {
+    if (!bannerEl) return;
+    if (!message) {
+        bannerEl.classList.add('hidden');
+        bannerEl.innerHTML = '';
+        return;
+    }
+    bannerEl.innerHTML = bannerMarkup(message, { retry: !!onRetry, retryLabel });
+    bannerEl.querySelector('.app-banner-retry')?.addEventListener('click', () => onRetry?.());
+    bannerEl.querySelector('.app-banner-dismiss').addEventListener('click', () => {
+        setBanner(null);
+        onDismiss?.();
+    });
+    bannerEl.classList.remove('hidden');
 }
 
 /**

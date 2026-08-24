@@ -15,6 +15,18 @@
     --danger-hover: #b91c1c;
     --success: #16a34a;
     --heart: #e11d48;
+    /* Tablature ink hierarchy (three tiers, brightest first):
+       fret numbers use --text, stems/beams/barlines use --tab-ink, and the
+       horizontal string lines ("rulers") use --tab-rule, which must read
+       clearly quieter than both so beams never melt into the staff.
+       Deliberately NOT --text-secondary: that token is muted BODY text and
+       is used site-wide, so the staff can't tune itself through it. */
+    --tab-ink: #5a5a5a;
+    --tab-rule: #8a8a8a;
+    /* High Scores podium */
+    --medal-gold: #b8860b;
+    --medal-silver: #6b7280;
+    --medal-bronze: #a1662f;
 
     /* Spacing scale */
     --space-xs: 0.25rem;
@@ -38,6 +50,11 @@
 
     /* Legacy - keeping for existing usage */
     --btn-label-size: var(--font-sm);
+
+    /* Chrome heights. --bottomband-h is overwritten by shell.js with the
+       band's measured height; --listbar-h is the list nav bar the band
+       stacks on top of. */
+    --listbar-h: 60px;
 }
 
 [data-theme="dark"] {
@@ -53,6 +70,15 @@
     --danger-hover: #fca5a5;
     --success: #4ade80;
     --heart: #fb7185;
+    /* Bars/stems/beams read just below the white fret numbers (14.2:1 on
+       black); the string rulers sit a full step quieter at 6.1:1 — the same
+       grey that serves as the light theme's ruler, where it reads 3.3:1
+       against #fafafa. */
+    --tab-ink: #d4d4d4;
+    --tab-rule: #8a8a8a;
+    --medal-gold: #fbbf24;
+    --medal-silver: #cbd5e1;
+    --medal-bronze: #d68a52;
 }
 
 /* Base */
@@ -110,7 +136,7 @@ h1 {
 /* The BB plaque is cream-on-dark; flip it in light mode so it reads as
    dark-on-cream and matches the theme */
 :root:not([data-theme="dark"]) .site-logo img,
-:root:not([data-theme="dark"]) .topbar-brand img {
+:root:not([data-theme="dark"]) .topbar-brand img:not(.brand-dungeon-face) {
     filter: invert(1);
 }
 
@@ -3114,6 +3140,69 @@ mark {
     color: var(--danger);
 }
 
+/* Editing someone else's chart forks to your own arrangement. Said before
+   the submit, not after it (contribution pipeline, phase 2c). */
+.editor-fork-notice {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    border-left: 3px solid var(--accent, var(--border));
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Dedup offramp — "this looks like a song we already have" (phase 3b) */
+.dedup-offramp-content {
+    max-width: 460px;
+}
+
+.dedup-offramp-lead {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.dedup-offramp-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dedup-offramp-choice {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    text-align: left;
+    width: 100%;
+    background: var(--bg-secondary, transparent);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.65rem 0.8rem;
+    color: var(--text);
+    cursor: pointer;
+    font: inherit;
+}
+
+.dedup-offramp-choice:hover,
+.dedup-offramp-choice:focus-visible {
+    border-color: var(--accent);
+}
+
+.dedup-offramp-choice-primary {
+    border-color: var(--accent);
+}
+
+.dedup-offramp-choice-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.dedup-offramp-choice-detail {
+    font-size: 0.8rem;
+    line-height: 1.35;
+    color: var(--text-secondary);
+}
+
 /* Editor preview */
 .editor-preview {
     display: flex;
@@ -3409,6 +3498,128 @@ mark {
     color: var(--error, #ef4444);
 }
 
+/* Tablature target step: pick the song a new tab belongs to */
+.picker-tab-results {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-height: 260px;
+    overflow-y: auto;
+    margin: 0.5rem 0;
+}
+
+.picker-tab-result {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0.6rem;
+    background: var(--bg-secondary, transparent);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.picker-tab-result:hover {
+    border-color: var(--accent);
+}
+
+.picker-tab-result-artist,
+.picker-tab-empty {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+/* The songbook failed to load — distinct from a genuine no-match */
+.picker-tab-empty.picker-tab-error {
+    color: var(--danger);
+}
+
+/* ── "This song already has tabs" — the early offramp panel ──
+   Shared by the add-song picker's tab step and the work page's bounty
+   section (docs/js/otf-editor/existing-tabs.js). */
+.tab-existing-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.75rem;
+    padding: 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-secondary, transparent);
+}
+
+.tab-existing-head {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.tab-existing-sub {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.tab-existing-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    max-height: 15rem;
+    overflow-y: auto;
+}
+
+.tab-existing-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tab-existing-view,
+.tab-existing-improve,
+.tab-existing-add,
+.tab-existing-back {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.tab-existing-view {
+    flex: 1;
+    text-align: left;
+}
+
+.tab-existing-view:hover,
+.tab-existing-improve:hover,
+.tab-existing-add:hover,
+.tab-existing-back:hover {
+    border-color: var(--accent);
+}
+
+.tab-existing-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tab-existing-add {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    font-weight: 600;
+}
+
 /* Bounty CTA button reset (was <a>, now <button>) */
 .bounty-cta-btn {
     border: none;
@@ -3423,120 +3634,6 @@ mark {
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
-}
-
-/* Upload drop zone */
-.upload-dropzone {
-    border: 2px dashed var(--border);
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    text-align: center;
-    cursor: pointer;
-    transition: border-color 0.15s, background 0.15s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.upload-dropzone:hover,
-.upload-dropzone.dropzone-active {
-    border-color: var(--accent);
-    background: rgba(37, 99, 235, 0.05);
-}
-
-.dropzone-icon {
-    font-size: 2rem;
-}
-
-.dropzone-text {
-    font-weight: 500;
-}
-
-.dropzone-hint {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-}
-
-/* Upload file info bar */
-.upload-file-info {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
-    background: var(--bg-secondary);
-    border-radius: var(--radius-md);
-    font-size: 0.85rem;
-}
-
-.upload-file-name {
-    font-weight: 500;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    flex: 1;
-}
-
-.upload-file-size {
-    color: var(--text-secondary);
-    flex-shrink: 0;
-}
-
-.upload-file-remove {
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    cursor: pointer;
-    font-size: 1.1rem;
-    padding: 0 0.25rem;
-    line-height: 1;
-    flex-shrink: 0;
-}
-
-.upload-file-remove:hover {
-    color: var(--text);
-}
-
-/* Upload image preview */
-.upload-preview-image {
-    max-width: 100%;
-    max-height: 500px;
-    object-fit: contain;
-    border-radius: var(--radius-md);
-}
-
-/* Rotate controls in upload preview */
-.upload-rotate-controls {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-.upload-rotate-btn {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    padding: 0.35rem 0.75rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: var(--text);
-    line-height: 1;
-}
-.upload-rotate-btn:hover {
-    border-color: var(--accent);
-    background: var(--bg);
-}
-
-/* Processing banner for freshly uploaded documents */
-.upload-processing-banner {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--accent);
-    border-radius: var(--radius-md);
-    padding: 0.75rem 1rem;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
 }
 
 /* Source view (side-by-side ChordPro and rendered) */
@@ -4019,6 +4116,11 @@ mark {
 .auth-toast.visible {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
+}
+
+/* Something worked, but not all the way (e.g. saved live, sync still pending) */
+.auth-toast.warning {
+    background: var(--danger);
 }
 
 /* ============================================
@@ -5311,6 +5413,22 @@ mark {
     vertical-align: middle;
 }
 
+/* "Just edited" badge — a metadata edit that is live in the overlay and
+   still syncing to works/. Cool where the placeholder badge is warm: this
+   one reports your own successful write, not something the song is missing. */
+.pending-meta-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--text-secondary);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
 /* Placeholder badge — search results and song view */
 .placeholder-badge {
     display: inline-block;
@@ -5386,9 +5504,14 @@ mark {
     border-radius: 8px;
 }
 .placeholder-editor-header h3 {
-    margin: 0 0 1rem;
+    margin: 0 0 0.35rem;
     font-size: 1rem;
     color: var(--text);
+}
+.placeholder-editor-sub {
+    margin: 0 0 1rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
 }
 .placeholder-editor-form {
     display: flex;
@@ -5458,75 +5581,6 @@ mark {
     color: var(--text-secondary);
 }
 .placeholder-editor-status.error {
-    color: var(--error, #ef4444);
-}
-
-/* Placeholder editor: document section */
-.ph-edit-doc-section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-.ph-edit-doc-current {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-}
-.ph-edit-doc-icon { font-size: 1rem; }
-.ph-edit-doc-badge {
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    background: var(--bg-tertiary, var(--bg-secondary));
-    color: var(--text-secondary);
-    padding: 0.1rem 0.35rem;
-    border-radius: 3px;
-    font-weight: 600;
-}
-.ph-edit-doc-empty {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    font-style: italic;
-}
-.ph-edit-doc-upload-btn {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.7rem;
-    border: 1px dashed var(--border);
-    border-radius: var(--radius-sm, 4px);
-    background: transparent;
-    color: var(--accent);
-    cursor: pointer;
-    align-self: flex-start;
-}
-.ph-edit-doc-upload-btn:hover {
-    border-color: var(--accent);
-    background: var(--bg-secondary);
-}
-.ph-edit-doc-info {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-}
-.ph-edit-doc-info.error {
-    color: var(--error, #ef4444);
-}
-.ph-edit-doc-filename {
-    font-weight: 500;
-    color: var(--text-primary);
-}
-.ph-edit-doc-remove {
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 0 0.2rem;
-    line-height: 1;
-}
-.ph-edit-doc-remove:hover {
     color: var(--error, #ef4444);
 }
 
@@ -5844,6 +5898,15 @@ mark {
     margin: 0.5rem 0 0;
     font-style: italic;
 }
+/* Trailing count of wanted entries the board filtered out because we already
+   hold the song. Quieter than the hint itself — it's provenance, not a task. */
+.bounty-hint-aside {
+    display: block;
+    margin-top: 0.2rem;
+    font-style: normal;
+    font-size: 0.94em;
+    opacity: 0.75;
+}
 .bounty-empty {
     text-align: center;
     color: var(--text-secondary);
@@ -6003,6 +6066,191 @@ mark {
 .bounty-request-content .bounty-cta-btn {
     margin-top: 1rem;
     width: 100%;
+}
+
+/* My Submissions (Phase 4a) */
+.my-submissions-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.my-submissions-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.my-submissions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.my-submission-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s;
+}
+a.my-submission-row:hover {
+    border-color: var(--accent);
+}
+.my-submission-row-static {
+    cursor: default;
+}
+.my-submission-main {
+    min-width: 0;
+}
+.my-submission-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+.my-submission-artist {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+}
+.my-submission-meta {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.15rem;
+}
+.my-submission-status {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+.my-submission-status-live {
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    color: var(--accent);
+}
+.my-submission-status-in-songbook {
+    background: color-mix(in srgb, var(--success) 18%, transparent);
+    color: var(--success);
+}
+.my-submission-status-requested {
+    background: color-mix(in srgb, var(--text-secondary) 18%, transparent);
+    color: var(--text-secondary);
+}
+.my-submissions-empty .bounty-cta-btn {
+    margin-top: 0.75rem;
+}
+
+/* High Scores (#174) — the contribution leaderboard */
+.high-scores-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.high-scores-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.bounty-high-scores-link {
+    color: var(--accent);
+    text-decoration: none;
+}
+.bounty-high-scores-link:hover {
+    text-decoration: underline;
+}
+.high-scores-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.high-score-row {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.7rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-left-width: 3px;
+    border-radius: var(--radius-md);
+}
+.high-score-rank {
+    flex-shrink: 0;
+    width: 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    font-variant-numeric: tabular-nums;
+}
+.high-score-main {
+    flex: 1;
+    min-width: 0;
+}
+.high-score-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+}
+.high-score-breakdown {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-top: 0.1rem;
+}
+.high-score-total {
+    flex-shrink: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+.high-score-you-badge {
+    margin-left: 0.45rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.1rem 0.4rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 20%, transparent);
+    color: var(--accent);
+    vertical-align: middle;
+}
+/* Medals are the left rule + the rank numeral, so they read the same in both
+   themes without repainting the row background. */
+.high-score-row-gold {
+    border-left-color: var(--medal-gold);
+}
+.high-score-row-gold .high-score-rank,
+.high-score-row-gold .high-score-total {
+    color: var(--medal-gold);
+}
+.high-score-row-silver {
+    border-left-color: var(--medal-silver);
+}
+.high-score-row-silver .high-score-rank,
+.high-score-row-silver .high-score-total {
+    color: var(--medal-silver);
+}
+.high-score-row-bronze {
+    border-left-color: var(--medal-bronze);
+}
+.high-score-row-bronze .high-score-rank,
+.high-score-row-bronze .high-score-total {
+    color: var(--medal-bronze);
+}
+.high-score-row-you {
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 8%, var(--bg-secondary));
+}
+/* A medalled row that is also the caller's keeps its medal rule. */
+.high-score-row-you.high-score-row-gold { border-left-color: var(--medal-gold); }
+.high-score-row-you.high-score-row-silver { border-left-color: var(--medal-silver); }
+.high-score-row-you.high-score-row-bronze { border-left-color: var(--medal-bronze); }
+.high-scores-privacy-note {
+    margin-top: 1.25rem;
+    text-align: center;
 }
 
 /* Search empty results */
@@ -6749,6 +6997,312 @@ mark {
     margin-top: 0.25rem;
 }
 
+/* ============================================
+   THE BLUEGRASS DUNGEON
+   ============================================ */
+
+/* Homepage card: dark crypt styling regardless of theme */
+.collection-card.dungeon-card {
+    background: #17171a;
+    border-color: #7f1d1d;
+}
+
+.collection-card.dungeon-card:hover {
+    border-color: #b91c1c;
+    box-shadow: 0 4px 12px rgba(127, 29, 29, 0.45);
+}
+
+.collection-card.dungeon-card .collection-title {
+    color: #f87171;
+}
+
+.collection-card.dungeon-card .collection-description {
+    color: #a1a1aa;
+}
+
+/* Show the whole badge — cover crops the blood-drip frame */
+.collection-card.dungeon-card .collection-image {
+    background: #000;
+}
+
+.collection-card.dungeon-card .collection-image img {
+    object-fit: contain;
+}
+
+/* Dungeon mode: blood-red accent while browsing the archive */
+body.dungeon-mode {
+    --accent: #b91c1c;
+}
+
+body.dungeon-mode #search-stats {
+    color: #b91c1c;
+    font-weight: 600;
+}
+
+.dungeon-loading {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+/* Review queue — destructive asks waiting on an admin (Dungeon panel) */
+/* Sits directly above #results inside .container — inherit that width */
+.review-queue-panel {
+    margin: 0 0 1rem;
+}
+
+.review-queue {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+    background: var(--bg-secondary);
+    padding: 0.75rem 1rem;
+}
+
+.review-queue-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.review-queue-title {
+    font-weight: 600;
+}
+
+.review-queue-counts,
+.review-queue-note,
+.review-queue-empty,
+.review-queue-loading {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.review-queue-note {
+    margin: 0.4rem 0 0.75rem;
+    line-height: 1.45;
+}
+
+.review-queue-error {
+    font-size: 0.85rem;
+    color: var(--error, #ef4444);
+}
+
+.review-queue-section + .review-queue-section {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+}
+
+.review-section-title {
+    margin: 0 0 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.review-section-count {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0 0.4rem;
+}
+
+.review-section-note {
+    margin: 0 0 0.6rem;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+}
+
+.review-hold-item .review-item-kind {
+    color: var(--text-secondary);
+}
+
+.review-queue-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.review-queue-item {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm, 4px);
+    background: var(--bg);
+    padding: 0.6rem 0.75rem;
+}
+
+.review-queue-item[data-status="rejected"] {
+    opacity: 0.65;
+}
+
+.review-item-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.review-item-kind {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--accent);
+}
+
+.review-item-target {
+    font-family: var(--mono, monospace);
+    font-size: 0.85rem;
+}
+
+.review-item-into,
+.review-item-status {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.review-item-status {
+    margin-left: auto;
+}
+
+.review-item-blurb,
+.review-item-reason {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+.review-item-reason {
+    font-style: italic;
+}
+
+.review-item-command {
+    margin-top: 0.5rem;
+}
+
+.review-item-command-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.review-item-command-code {
+    margin: 0;
+    padding: 0.5rem 0.6rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm, 4px);
+    font-size: 0.78rem;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.review-item-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+}
+
+.review-item-working {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.review-action {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm, 4px);
+    background: var(--bg-secondary);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.review-action.approve:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.review-action.reject:hover {
+    border-color: var(--error, #ef4444);
+    color: var(--error, #ef4444);
+}
+
+/* Request dialogs — "Request suppression" / "Request merge…" in the song
+   overflow (review-queue.js showSuppressRequestDialog / showMergeRequestDialog) */
+.review-request-modal-content {
+    max-width: 460px;
+}
+
+.review-request-explainer {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0 0 1rem;
+}
+
+.merge-target-results {
+    list-style: none;
+    margin: 0 0 0.75rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.merge-target-result {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0.6rem;
+    background: var(--bg-secondary, transparent);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.merge-target-result:hover {
+    border-color: var(--accent);
+}
+
+.merge-target-result-artist,
+.merge-target-empty {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+/* The songbook failed to load — distinct from a genuine no-match */
+.merge-target-empty.merge-target-error {
+    color: var(--danger);
+}
+
+.merge-target-preview {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.6rem 0.75rem;
+    margin: 0 0 1rem;
+    line-height: 1.5;
+}
+
 /* Landing footer with bounty link */
 .landing-footer {
     margin-top: 1.5rem;
@@ -7020,11 +7574,16 @@ mark {
     overflow-x: auto;
 }
 
-/* Tablature scaling via Aa control */
-.tablature-container .stave-row svg {
-    transform: scale(var(--tab-scale));
-    transform-origin: top left;
-}
+/* Tablature scaling via the Aa control is NOT done here any more.
+ *
+ * It was `transform: scale(var(--tab-scale))`, and a transform does not
+ * participate in layout: at the top setting the staff kept its unscaled
+ * box, so the rows overlapped vertically and the extra width ran straight
+ * off the right edge instead of reflowing. TabRenderer.setScale() now
+ * folds the size into the layout — it lays out against
+ * (container width / scale) and sizes the <svg> element by the scale, so
+ * bigger notes mean FEWER measures per row and the row still fits.
+ * `--tab-scale` remains set on the container as a state marker. */
 
 .track-info {
     display: flex;
@@ -7081,6 +7640,23 @@ mark {
     background: #8b4513;
 }
 
+/* KEPT, but it is a safety net and not the layout.
+ *
+ * A row is engraved to the container's measured width (TabRenderer
+ * _availableWidth / _calculateLayout), so in normal use nothing here has
+ * anything to scroll. It used to scroll constantly, because a staff
+ * rendered into a hidden container was laid out against an 800px GUESS —
+ * this rule is exactly what made that bug invisible until someone zoomed
+ * in far enough to notice the right-hand side was gone.
+ *
+ * Three cases genuinely still need it, all "one measure is wider than the
+ * container", which no reflow can fix because a measure cannot be split:
+ *   1. the OTF editor's `measureWidthFloor` — a 1/32 entry grid is given a
+ *      minimum pixel width on purpose and rows are expected to scroll;
+ *   2. extreme browser zoom, where the container falls below the
+ *      renderer's `minMeasureWidth` (138px) + margins;
+ *   3. the reader's size control at its top setting on a narrow phone.
+ */
 .stave-row {
     margin-bottom: 1.5rem;
     overflow-x: auto;
@@ -7679,6 +8255,12 @@ mark {
 /* Track VIEW tabs: which staff you see (audio = mixer checkboxes/Solo) */
 .track-view-tabs {
     display: flex;
+    /* Wraps, because this bar is as wide as the arrangement has tracks and
+     * the viewport is as narrow as the reader's zoom makes it. Unwrapped,
+     * a 4-track tune pushed the whole PAGE wider than the viewport at 400%
+     * zoom — the staff itself reflowed correctly and the tab strip was
+     * what ran off the right edge. */
+    flex-wrap: wrap;
     gap: 0.25rem;
     margin: 0.5rem 0;
     position: sticky;
@@ -9291,6 +9873,60 @@ mark {
     transition: transform 0.25s ease;
 }
 
+/* Global, dismissible notice bar below the top band — currently used for
+   "the songbook index failed to load". Sticky under the topbar so it stays
+   visible while the page (which may itself be showing an empty/error state)
+   scrolls underneath it. */
+.app-banner {
+    position: sticky;
+    top: 48px;
+    z-index: 899;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--danger);
+    color: #fff;
+    font-size: var(--font-sm);
+}
+
+.app-banner.hidden { display: none; }
+
+.app-banner-text { flex: 1; min-width: 0; }
+
+.app-banner-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-shrink: 0;
+}
+
+.app-banner-retry {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius-sm);
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+    font-size: var(--font-sm);
+    cursor: pointer;
+}
+
+.app-banner-retry:hover { background: rgba(255, 255, 255, 0.35); }
+
+.app-banner-dismiss {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: var(--font-md);
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 0.2rem;
+    opacity: 0.85;
+}
+
+.app-banner-dismiss:hover { opacity: 1; }
+
 .topbar-left {
     display: flex;
     align-items: center;
@@ -9310,11 +9946,34 @@ mark {
 
 .topbar-back:hover { border-color: var(--accent); }
 
+.topbar-brand {
+    position: relative;
+}
+
 .topbar-brand img {
     height: 32px;
     width: auto;
     display: block;
     border-radius: 6px;
+}
+
+/* Zombie Earl rises over the plaque in dungeon mode only.
+   Selector includes .topbar-brand so display:none outranks the
+   .topbar-brand img { display: block } base rule. */
+.topbar-brand .brand-dungeon-face {
+    display: none;
+}
+
+body.dungeon-mode .topbar-brand .brand-dungeon-face {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55%);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6));
 }
 
 
@@ -9413,8 +10072,11 @@ mark {
     border-top: 1px solid var(--border);
 }
 
+/* --bottomband-h is the band's live height, published by shell.js. The band
+   is no longer a constant (the phone playback strip is taller), so anything
+   stacked on it reads the variable; the fallback covers first paint. */
 body.has-bottomband .container {
-    padding-bottom: 72px;
+    padding-bottom: calc(var(--bottomband-h, 52px) + 20px);
 }
 
 /* Pill: inline disclosure control (replaces bespoke collapsible bars) */
@@ -9497,6 +10159,14 @@ body.has-bottomband .container {
     color: var(--text-secondary);
     font-size: var(--font-sm);
     margin-top: 2px;
+}
+
+/* The nudge in the artist's place on a work that has none. Shown only to
+   someone who can fix it (work-view.js updateWorkTopBar), so it reads as an
+   invitation rather than a complaint. */
+.song-artist-missing {
+    font-style: italic;
+    opacity: 0.7;
 }
 
 .song-pill-row {
@@ -9610,6 +10280,23 @@ body.has-bottomband .container {
     padding: var(--space-sm);
 }
 
+/* Votes rank, curation pins: the note that says a fork is out-polling the
+   default without pretending the vote changed anything. */
+.pill-popover-note {
+    padding: var(--space-sm);
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.85em;
+    line-height: 1.4;
+}
+
+.pill-popover-note strong { color: var(--text); }
+
+.arrangement-flip-where code {
+    font-size: 0.95em;
+    word-break: break-all;
+}
+
 /* Playback controls mounted in the bottom band */
 .app-bottomband .tab-controls,
 .app-bottomband .abc-band-controls {
@@ -9657,11 +10344,11 @@ body.chrome-hidden .app-topbar:focus-within {
 
 /* When the list nav bar and the bottom band are both present, stack them */
 body.has-list-context .app-bottomband {
-    bottom: 60px;
+    bottom: var(--listbar-h);
 }
 
 body.has-list-context.has-bottomband .container {
-    padding-bottom: 132px;
+    padding-bottom: calc(var(--bottomband-h, 52px) + var(--listbar-h) + 20px);
 }
 
 /* ============================================
@@ -9749,6 +10436,13 @@ body.has-list-context.has-bottomband .container {
     overflow: visible;
 }
 
+/* The tab settings sheet is phone-only. tab-controls-sheet.js inserts it
+   (and the ⚙ button) only while the media query matches, so the desktop DOM
+   is untouched; this belt-and-braces rule covers the resize instant. */
+.tab-settings-sheet {
+    display: none;
+}
+
 /* Phone song-page band diet: back · logo · Lists · ⋯ (Export/bug/theme/
    auth live in the overflow or on other pages) */
 @media (max-width: 640px) {
@@ -9756,6 +10450,335 @@ body.has-list-context.has-bottomband .container {
     .app-topbar.has-back #topbar-theme,
     .app-topbar.has-back #auth-section {
         display: none;
+    }
+
+    /* Playback band on a phone: ~13 control groups used to WRAP into 4-6
+       rows, then (worse) into a 1468px sideways strip with no scroll
+       affordance — Play/Stop were reachable, tempo and everything past it
+       were not. The band now carries the PERFORMANCE controls only
+       (Play · Stop · tempo · loop · ⚙) and tab-controls-sheet.js re-parents
+       the rest into the settings sheet below. */
+    /* Asymmetric padding: the top gap is where the position readout rides */
+    .app-bottomband:has(.tab-controls) {
+        padding: 0.7rem 0.5rem 0.4rem;
+        min-height: 60px;
+    }
+
+    .app-bottomband .tab-controls {
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 0.4rem;
+        /* Safety net only — the five band controls fit 390px. A visible
+           scrollbar is the affordance if a narrower device overflows. */
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+
+    .app-bottomband .tab-controls > * {
+        flex: 0 0 auto;
+        order: 2;
+    }
+
+    .app-bottomband .tab-controls .tab-play-btn { order: 0; }
+    .app-bottomband .tab-controls .tab-stop-btn { order: 1; }
+    .app-bottomband .tab-controls .tab-tempo-group { order: 2; }
+    .app-bottomband .tab-controls .tab-loop-toggle { order: 3; }
+    .app-bottomband .tab-controls .tab-more-btn { order: 4; }
+
+    /* 44px touch targets (the desktop 32px row was 28-33px on a phone) */
+    .app-bottomband .tab-controls .qc-toggle-btn {
+        height: 44px;
+        padding: 0 0.6rem;
+        font-size: 0.9rem;
+        border-radius: var(--radius-md);
+    }
+
+    .app-bottomband .tab-controls .qc-btn {
+        width: 40px;
+        height: 44px;
+        font-size: 1.2rem;
+    }
+
+    .app-bottomband .tab-controls .qc-label {
+        height: 44px;
+        min-width: 26px;
+        padding: 0 0.2rem;
+    }
+
+    .app-bottomband .tab-controls .tab-loop-toggle {
+        height: 44px;
+        padding: 0 0.55rem;
+        border-radius: var(--radius-md);
+    }
+
+    .app-bottomband .tab-controls .tab-more-btn {
+        width: 44px;
+        padding: 0;
+        justify-content: center;
+        font-size: 1.15rem;
+    }
+
+    /* The clock has no room in a five-control row, so it rides the band's
+       top edge instead (empty whenever playback is stopped). */
+    .app-bottomband .tab-controls .tab-position {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        right: 0;
+        min-width: 0;
+        text-align: center;
+        font-size: 0.62rem;
+        line-height: 1;
+        pointer-events: none;
+    }
+
+    /* The strip's overflow-x would clip the key pill's drop-up, so it
+       becomes a sheet pinned above the band instead. */
+    .app-bottomband .tab-controls .pill-popover,
+    .tab-settings-sheet {
+        position: fixed;
+        top: auto;
+        bottom: calc(var(--bottomband-h, 60px) + 8px);
+        left: 0.5rem;
+        right: 0.5rem;
+        width: auto;
+        max-width: none;
+    }
+
+    /* …and the band itself sits on top of the list nav bar when showing */
+    body.has-list-context .app-bottomband .tab-controls .pill-popover,
+    body.has-list-context .tab-settings-sheet {
+        bottom: calc(var(--bottomband-h, 60px) + var(--listbar-h) + 8px);
+    }
+}
+
+/* ── The settings sheet, and the band width that summons it ──────────────
+   The sheet only EXISTS while the band has collapsed — tab-controls-sheet.js
+   builds it at that moment and removes it again — so its own chrome needs no
+   width test. It used to live inside the phone media query because a phone
+   viewport was the only way to get one; now the band collapses on its own
+   width (a narrow window, a split view, a test that constrains the
+   container), and the chrome has to follow it there. Everything the band
+   gave up ends up in here, in labeled rows. */
+.tab-settings-sheet {
+    z-index: 950;
+    display: block;
+    max-height: 62vh;
+    overflow-y: auto;
+    padding: var(--space-sm);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.tab-sheet-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.15rem;
+}
+
+.tab-sheet-row + .tab-sheet-row {
+    border-top: 1px solid var(--border);
+}
+
+.tab-sheet-label {
+    flex: 0 0 3.2rem;
+    font-size: var(--font-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+}
+
+.tab-sheet-items {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+/* The mixer's band styling (left rule, inline width) makes no sense in
+   a labeled row */
+.tab-settings-sheet .tab-track-mixer {
+    border-left: none;
+    padding: 0;
+    gap: 0.4rem;
+}
+
+.tab-settings-sheet .qc-btn { width: 40px; height: 40px; }
+.tab-settings-sheet .qc-label { height: 40px; }
+.tab-settings-sheet .qc-toggle-btn { height: 40px; padding: 0 0.75rem; }
+.tab-settings-sheet .pill-btn { padding: 0.45rem 0.75rem; }
+.tab-settings-sheet .pill-mode-btn { padding: 0.5rem 0.7rem; }
+.tab-settings-sheet .track-toggle,
+.tab-settings-sheet .tab-metronome-toggle {
+    padding: 0.45rem 0.6rem;
+}
+
+/* The count-in label is an unstyled native checkbox everywhere else;
+   in a row of bordered toggles it needs the same outline to read as
+   one of them. */
+.tab-settings-sheet .tab-countin-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.45rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+}
+
+/* Drop-ups opened from inside the sheet sit above the sheet itself */
+.tab-settings-sheet .pill-popover {
+    z-index: 960;
+}
+
+/* ── The band asks about ITSELF, not the window ───────────────────────────
+   `container-type: inline-size` makes the bottom band a query container
+   named `tabband`, so the collapsed layout below is chosen by the BAND's
+   width rather than the window's. That is the same question tab-controls-sheet.js asks (it observes
+   the element and publishes `.is-narrow-band`), and it is what makes the
+   phone layout reachable by constraining the container instead of the
+   viewport — which is to say, reachable from a test.
+
+   The `@media (max-width: 640px)` block above stays as the fallback for
+   browsers without container queries. Where both apply they say the same
+   thing, so the duplication is inert rather than contradictory; this block
+   comes second so it wins the tie.
+
+   The drop-up offsets are restated inside the block rather than inherited,
+   because this block wins the tie against the media query and has to carry
+   everything the collapsed band needs — see the note beside them. */
+@supports (container-type: inline-size) {
+    /* The container is the BAND, not `.tab-controls` inside it. On a phone
+       `.tab-controls` is an `overflow-x: auto` strip, and a query container
+       is also a containing block for `position: fixed` descendants — so
+       putting it there made the strip clip its own settings sheet down to a
+       44px slot. The band has no overflow, and its inline size comes from
+       `left: 0; right: 0` (or from a width a test pins on it), so it can be
+       size-contained without depending on its contents. */
+    .app-bottomband {
+        container: tabband / inline-size;
+    }
+
+    @container tabband (max-width: 640px) {
+        .app-bottomband .tab-controls {
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 0.4rem;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+        }
+
+        .app-bottomband .tab-controls > * {
+            flex: 0 0 auto;
+            order: 2;
+        }
+
+        .app-bottomband .tab-controls .tab-play-btn { order: 0; }
+        .app-bottomband .tab-controls .tab-stop-btn { order: 1; }
+        .app-bottomband .tab-controls .tab-tempo-group { order: 2; }
+        .app-bottomband .tab-controls .tab-loop-toggle { order: 3; }
+        .app-bottomband .tab-controls .tab-more-btn { order: 4; }
+
+        /* 44px touch targets — a band this narrow is being touched. */
+        .app-bottomband .tab-controls .qc-toggle-btn {
+            height: 44px;
+            padding: 0 0.6rem;
+            font-size: 0.9rem;
+            border-radius: var(--radius-md);
+        }
+
+        .app-bottomband .tab-controls .qc-btn {
+            width: 40px;
+            height: 44px;
+            font-size: 1.2rem;
+        }
+
+        .app-bottomband .tab-controls .qc-label {
+            height: 44px;
+            min-width: 26px;
+            padding: 0 0.2rem;
+        }
+
+        .app-bottomband .tab-controls .tab-loop-toggle {
+            height: 44px;
+            padding: 0 0.55rem;
+            border-radius: var(--radius-md);
+        }
+
+        .app-bottomband .tab-controls .tab-more-btn {
+            width: 44px;
+            padding: 0;
+            justify-content: center;
+            font-size: 1.15rem;
+        }
+
+        /* No room for the clock in a five-control row; it rides the top edge. */
+        .app-bottomband .tab-controls .tab-position {
+            position: absolute;
+            top: 1px;
+            left: 0;
+            right: 0;
+            min-width: 0;
+            text-align: center;
+            font-size: 0.62rem;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        /* The strip's overflow-x would clip a drop-up, so the sheet and the
+           pill popovers become panels pinned just above the band — the same
+           offsets the media-query fallback uses, deliberately.
+
+           `100%` would have been tidier, but it does not mean what it looks
+           like it means here: `container-type` does NOT make the band the
+           containing block for a `position: fixed` descendant in Chromium,
+           so a percentage resolves against the viewport and the sheet flies
+           off the top of the screen. `--bottomband-h` (published by
+           shell.js) is the band's real height and the honest answer. */
+        .app-bottomband .tab-controls .pill-popover,
+        .app-bottomband .tab-controls .tab-settings-sheet {
+            position: fixed;
+            top: auto;
+            bottom: calc(var(--bottomband-h, 60px) + 8px);
+            left: 0.5rem;
+            right: 0.5rem;
+            width: auto;
+            max-width: none;
+        }
+
+        body.has-list-context .app-bottomband .tab-controls .pill-popover,
+        body.has-list-context .app-bottomband .tab-controls .tab-settings-sheet {
+            bottom: calc(var(--bottomband-h, 60px) + var(--listbar-h) + 8px);
+        }
+    }
+}
+
+/* Narrow phones (360px and down): the same five controls, tighter. Keeps
+   the 44px height — only the gaps and side padding give. */
+@media (max-width: 374px) {
+    .app-bottomband .tab-controls {
+        gap: 0.25rem;
+    }
+
+    .app-bottomband .tab-controls .qc-btn {
+        width: 36px;
+    }
+
+    .app-bottomband .tab-controls .qc-toggle-btn {
+        padding: 0 0.45rem;
+    }
+
+    .app-bottomband .tab-controls .tab-more-btn {
+        width: 40px;
     }
 }
 
@@ -9933,4 +10956,173 @@ body.has-list-context.has-bottomband .container {
     justify-content: center;
     gap: 0.4rem;
     margin-top: 0.6rem;
+}
+
+/* ==========================================================================
+   Drafts (#drafts) and the app-wide file drop — PWA, §9.3
+   ========================================================================== */
+
+.drafts-view {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+}
+
+.drafts-header {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.drafts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.draft-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+.draft-row-main {
+    min-width: 0;
+}
+
+.draft-row-title {
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.draft-row-meta {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.draft-row-actions {
+    display: flex;
+    gap: 0.4rem;
+    flex-shrink: 0;
+}
+
+/* The inline "Delete this draft?" — the app's answer to window.confirm.
+   It wraps onto its own line inside the row it is asking about, so the
+   question and the thing it is about are never separated. */
+.draft-row:has(.draft-confirm) {
+    flex-wrap: wrap;
+}
+
+.draft-confirm {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.draft-confirm-question {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-right: auto;
+}
+
+/* Same question, same shape, in the tab editor's action bar. */
+.tab-edit-discard-question {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Dragging a .tef / .otf.json anywhere over the app: one calm hint, and no
+   overlay element that could swallow the drop. */
+body.file-dragover {
+    outline: 3px dashed var(--accent);
+    outline-offset: -3px;
+}
+
+/* ============================================
+   THE EDITOR AS A MODE OF THE SONG PAGE (plan §9)
+   The band survives edit mode: its own controls stay where they are, the
+   session's buttons take the ✏️ Edit slot, and anything that cannot mean
+   something mid-edit is dimmed with a reason rather than removed.
+   ============================================ */
+
+/* The session's Submit / Download / Cancel / Done group, inside the band. */
+.tab-edit-bar.is-compact {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.tab-edit-band-actions,
+.tab-edit-actions-slot {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.tab-edit-status {
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+}
+
+/* Off while editing — visibly off, and the title says why. */
+.is-edit-disabled {
+    opacity: 0.45;
+}
+
+.is-edit-disabled button,
+.is-edit-disabled input {
+    cursor: not-allowed;
+}
+
+/* "Submitted — live now, appears in search after the next build." */
+.arr-status {
+    margin-top: var(--space-xs);
+    padding: 0.35rem 0.6rem;
+    border-left: 3px solid var(--accent);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+}
+
+/* A provisional work (#new-tab): the title and artist ARE the header. */
+.song-title-input,
+.song-artist-input {
+    font: inherit;
+    color: inherit;
+    background: var(--bg);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.15rem 0.4rem;
+    max-width: 100%;
+}
+
+.song-title-input {
+    font-size: var(--font-lg);
+    font-weight: 700;
+    width: min(28ch, 100%);
+}
+
+.song-artist-input {
+    font-size: var(--font-sm);
+    width: min(24ch, 100%);
+}
+
+.song-title-input:focus,
+.song-artist-input:focus {
+    border-style: solid;
+    border-color: var(--accent);
+    outline: none;
 }

@@ -11,25 +11,63 @@ import {
 import { isPercussionTrack } from './otf-tracks.js';
 
 /**
- * Silent spans inside a measure that deserve rest glyphs: the gap after
- * an event whose notes ALL carry explicit durations (editor-entered),
- * up to the next event or the measure's end. Events without durations
- * follow the legacy ring-until-next-event model — no rests for them.
+ * Build an HTML element with a class and TEXT content.
+ *
+ * Text, not markup: every string this file puts on screen (track id,
+ * instrument, tuning pitches) comes from an OTF document, which is
+ * user-submitted and hand-editable, so none of it may reach innerHTML.
+ * textContent also needs no escaping helper — and note that this repo's
+ * `escapeHtml` would not have been enough for an ATTRIBUTE anyway: it
+ * round-trips through textContent and so leaves `"` alone.
+ */
+function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text != null) node.textContent = String(text);
+    return node;
+}
+
+/** Shortest silence worth a glyph: a 32nd. Slivers are rounding, not rests. */
+const MIN_REST = 60;
+
+/**
+ * Silent spans inside a measure that deserve rest glyphs.
+ *
+ * Two kinds, both TablEdit's "Automatic rests":
+ *   - **leading**: the measure starts silent and the first sounding
+ *     event carries explicit durations — a bar whose music begins on
+ *     beat 2 is a quarter rest then the music, not music floating in
+ *     from nowhere.
+ *   - **after a note**: the gap from where an event stops sounding to
+ *     the next event or the barline.
+ *
+ * Both are gated on explicit durations: an event whose notes do NOT all
+ * carry `dur` follows the legacy ring-until-next-event model, and a
+ * measure whose FIRST sounding event is duration-less gets no leading
+ * rest either — those documents say nothing about rhythm, so we invent
+ * nothing.
  *
  * @param {Array} events - [{tick, notes: [{dur?}]}]
  * @param {number} measureTicks - this measure's own tick length
+ * @param {Object} [opts]
+ * @param {boolean} [opts.leading=true] - draw the leading silence too
  * @returns {Array<{start: number, len: number}>}
  */
-export function restSpansForMeasure(events, measureTicks) {
+export function restSpansForMeasure(events, measureTicks, { leading = true } = {}) {
     const spans = [];
-    const sorted = [...(events || [])].sort((a, b) => a.tick - b.tick);
+    const sorted = [...(events || [])]
+        .filter(e => (e.notes || []).length > 0)
+        .sort((a, b) => a.tick - b.tick);
+    const durated = (ev) => ev.notes.every(n => n.dur > 0);
+    if (leading && sorted.length && sorted[0].tick >= MIN_REST && durated(sorted[0])) {
+        spans.push({ start: 0, len: sorted[0].tick });
+    }
     for (let i = 0; i < sorted.length; i++) {
         const ev = sorted[i];
-        const notes = ev.notes || [];
-        if (notes.length === 0 || !notes.every(n => n.dur > 0)) continue;
-        const end = ev.tick + Math.max(...notes.map(n => n.dur));
+        if (!durated(ev)) continue;
+        const end = ev.tick + Math.max(...ev.notes.map(n => n.dur));
         const nextStart = i + 1 < sorted.length ? sorted[i + 1].tick : measureTicks;
-        if (nextStart - end >= 60) {
+        if (nextStart - end >= MIN_REST) {
             spans.push({ start: end, len: nextStart - end });
         }
     }
@@ -141,6 +179,9 @@ function detectTuningName(tuning, instrument, capo = 0) {
  * Auto-scales to fit container width
  */
 export class TabRenderer {
+    // Width assumed ONLY where there is no layout engine to ask (jsdom).
+    static NOMINAL_WIDTH = 800;
+
     constructor(container, options = {}) {
         this.container = container;
 
@@ -158,6 +199,21 @@ export class TabRenderer {
                                       // tab staff hides these, but that leaves the
                                       // rhythm implicit (Mike: 'author laziness') —
                                       // we show them; opt out per-renderer if needed
+            showLeadingRests: true,   // ...including the silence BEFORE a measure's
+                                      // first note (a bar starting on beat 2 draws a
+                                      // quarter rest). Same switch TablEdit's
+                                      // "Automatic rests" is; set false to keep only
+                                      // the gaps that follow a note
+            uniformMeasureWidth: true, // Every measure gets the SAME slot, whatever
+                                      // its tick length, so barlines line up row
+                                      // over row (plan tab-editor-input-parity §7:
+                                      // "the bar lines are not lined up to
+                                      // compensate for the 4/4"). A short measure's
+                                      // notes are placed by tick/defaultTicks and
+                                      // right-aligned to the barline, so a 2-beat
+                                      // pickup sits in the right half of its slot
+                                      // and its beats land under the beats below.
+                                      // false = the old proportional width.
             measuresPerRow: 'auto',   // 'auto' or number (1-8)
             leftMargin: 50,
             topMargin: 40,
@@ -201,6 +257,20 @@ export class TabRenderer {
         this._resizeObserver = null;
         this._resizeTimeout = null;
 
+        // Layout inputs the renderer owns rather than guesses:
+        //   _layoutWidth    the width the CURRENT drawing was laid out for
+        //                   (0 = nothing drawn yet)
+        //   _layoutDeferred a render was asked for while the container had
+        //                   no layout box; the ResizeObserver owes us one
+        //   _scale          the reader's size setting. It divides the width
+        //                   budget and multiplies the <svg> element's own
+        //                   width/height — so "bigger" means FEWER measures
+        //                   per row, not a wider row that runs off the
+        //                   right edge (setScale()).
+        this._layoutWidth = 0;
+        this._layoutDeferred = false;
+        this._scale = 1;
+
         // Engraved time-signature digits: kick off the (once-per-page)
         // Bravura load and re-render when it arrives.
         TabRenderer._ensureBravura().then(() => {
@@ -212,25 +282,35 @@ export class TabRenderer {
 
     /**
      * Read the current theme's palette from CSS variables into options.
-     * Structural marks (strings, barlines, stems, beams) derive from
-     * --text-secondary/--text so they stay legible on BOTH themes — the
-     * old hardcoded #333 was near-invisible on the dark background.
+     *
+     * The staff is engraved in THREE tiers of ink, not one:
+     *   1. fret numbers      --text      (brightest — what you read)
+     *   2. stems/beams/bars  --tab-ink   (bright, one step below the notes)
+     *   3. string lines      --tab-rule  (quiet grey — the ruler you read ON)
+     * A single structural colour made beams and string lines identical, so on
+     * the dark theme an eighth-note beam was indistinguishable from the staff
+     * it sat under. --tab-ink/--tab-rule are the staff's OWN tokens (see
+     * css/style.css) — --text-secondary is muted body text used site-wide and
+     * must not be retuned for the tablature's sake. Fallbacks keep a sane
+     * two-tier staff if the tokens are ever missing.
      */
     _refreshThemeColors() {
         const cs = getComputedStyle(document.documentElement);
         const bg = cs.getPropertyValue('--bg').trim() || '#fff';
         const text = cs.getPropertyValue('--text').trim() || '#000';
         const secondary = cs.getPropertyValue('--text-secondary').trim() || '#666';
+        const ink = cs.getPropertyValue('--tab-ink').trim() || secondary;
+        const rule = cs.getPropertyValue('--tab-rule').trim() || secondary;
         const accent = cs.getPropertyValue('--accent').trim() || '#007bff';
         const themed = {
-            stringColor: secondary,
+            stringColor: rule,
             fretColor: text,
             fretBgColor: bg,
-            measureLineColor: secondary,
-            stemColor: secondary,
-            beamColor: secondary,
+            measureLineColor: ink,
+            stemColor: ink,
+            beamColor: ink,
             highlightColor: accent,
-            mutedColor: secondary,  // labels, rests, slurs, annotations
+            mutedColor: ink,  // labels, rests, slurs, annotations
         };
         for (const key of this._themedColorKeys) {
             this.options[key] = themed[key];
@@ -238,11 +318,76 @@ export class TabRenderer {
     }
 
     /**
-     * Calculate optimal measures per row based on container width
+     * True when the document has a layout engine at all.
+     *
+     * jsdom (Vitest) reports clientWidth 0 for EVERY element, root
+     * included — there is no reveal to wait for and no real width to
+     * observe, so the renderer keeps the historic nominal width there and
+     * draws. A real browser reporting 0 means something specific and
+     * actionable instead: this element has no box yet.
      */
-    _calculateLayout() {
+    static _hasLayoutEngine() {
+        return typeof document !== 'undefined'
+            && document.documentElement?.clientWidth > 0;
+    }
+
+    /**
+     * The CSS-pixel width this staff may lay out into, or 0 when the
+     * container has no layout box yet (a `display:none` ancestor — an
+     * unselected track's section, a page still hidden behind
+     * `.hidden`).
+     *
+     * There is deliberately NO width fallback in a browser. A zero-width
+     * container used to silently produce an 800px staff, which looked
+     * merely narrow in a wide viewport and RAN OFF THE RIGHT EDGE the
+     * moment the viewport was narrower than 800 (browser zoom, phone) —
+     * the reflow logic below never got a chance because its input was a
+     * guess. Callers get a deferred render instead; see _renderInternal.
+     *
+     * The reader's size setting divides the budget: laying out for
+     * containerWidth / scale and then sizing the <svg> element by the
+     * scale (renderRow) means a bigger staff reflows to fewer measures
+     * per row instead of overflowing.
+     */
+    _availableWidth() {
+        const scale = this._scale || 1;
+        const width = this.container.clientWidth;
+        if (width > 0) {
+            // clientWidth INCLUDES padding, and .tablature-container has
+            // 1rem of it. Handing the padded number to the layout made
+            // every row ~32px too wide for the box it sits in, which
+            // `.stave-row svg { max-width: 100% }` then quietly scaled
+            // back down — a staff engraved at one size and displayed at
+            // another. Lay out against the content box.
+            const cs = getComputedStyle(this.container);
+            const pad = (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0);
+            return Math.max(1, width - pad) / scale;
+        }
+        if (!TabRenderer._hasLayoutEngine()) return TabRenderer.NOMINAL_WIDTH / scale;
+        return 0;
+    }
+
+    /**
+     * Set the reader's size multiplier (the Aa control). Re-lays out —
+     * this is a LAYOUT input, not a lens over a fixed drawing.
+     * @param {number} scale
+     */
+    setScale(scale) {
+        const next = Math.max(0.1, Number(scale) || 1);
+        if (next === this._scale) return;
+        this._scale = next;
+        this.container.style.setProperty('--tab-scale', String(next));
+        if (this._track && this._notation) this._renderInternal();
+    }
+
+    /**
+     * Calculate optimal measures per row based on container width
+     * @param {number} [layoutWidth] - width budget (defaults to the live one)
+     */
+    _calculateLayout(layoutWidth) {
         const opt = this.options;
-        const containerWidth = this.container.clientWidth || 800;
+        const containerWidth = layoutWidth ?? this._availableWidth();
+        this._layoutWidth = containerWidth;
         const availableWidth = containerWidth - opt.leftMargin - 30; // margins
 
         if (opt.measuresPerRow !== 'auto') {
@@ -256,11 +401,21 @@ export class TabRenderer {
             return;
         }
 
-        // Auto-calculate: find how many measures fit at target width
+        const fit = TabRenderer._autoRowFit(availableWidth, opt);
+        this._computedMeasuresPerRow = fit.measuresPerRow;
+        this._computedMeasureWidth = fit.measureWidth;
+        this._applyMeasureWidthFloor(availableWidth);
+    }
+
+    /**
+     * The auto layout: how many measures fit at the target width, and how
+     * wide each then is. Pure — it reads no instance state — so a caller
+     * can ask what the READ view would do without disturbing a renderer.
+     */
+    static _autoRowFit(availableWidth, opt) {
         let measuresPerRow = Math.floor(availableWidth / opt.targetMeasureWidth);
         measuresPerRow = Math.max(1, Math.min(8, measuresPerRow));
 
-        // Calculate actual measure width to fill available space
         let measureWidth = availableWidth / measuresPerRow;
 
         // Clamp to min/max
@@ -269,23 +424,47 @@ export class TabRenderer {
             measureWidth = availableWidth / measuresPerRow;
         }
         measureWidth = Math.max(opt.minMeasureWidth, Math.min(opt.maxMeasureWidth, measureWidth));
+        return { measuresPerRow, measureWidth };
+    }
 
-        this._computedMeasuresPerRow = measuresPerRow;
-        this._computedMeasureWidth = measureWidth;
-        this._applyMeasureWidthFloor(availableWidth);
+    /**
+     * The measures-per-row the READ view would choose for this container
+     * width — i.e. what 'auto' resolves to, ignoring `measureWidthFloor`
+     * and any pinned `measuresPerRow`.
+     *
+     * The editor pins this number once (plan tab-editor-input-parity §7:
+     * "horizontal shifting / column mutation makes it non-deterministic
+     * where measures run"), so pressing Edit doesn't reflow the page and
+     * changing the entry grid widens measures instead of moving them to
+     * another row.
+     *
+     * @param {number} [layoutWidth] - width budget; defaults to the live one
+     * @returns {number|null} null when the container has no layout box yet
+     */
+    autoMeasuresPerRow(layoutWidth) {
+        const containerWidth = layoutWidth ?? this._availableWidth();
+        if (!containerWidth) return null;
+        const availableWidth = containerWidth - this.options.leftMargin - 30;
+        return TabRenderer._autoRowFit(availableWidth, this.options).measuresPerRow;
     }
 
     /**
      * Enforce measureWidthFloor: a hard lower bound on measure width
      * that beats maxMeasureWidth. Used by the editor to auto-expand
      * measures when a fine entry grid (1/16, 1/32) needs breathing room
-     * — fewer measures per row, scrolling if a single measure exceeds
-     * the container.
+     * — scrolling if a single measure exceeds the container.
+     *
+     * With an AUTO row count the floor also drops measures per row.
+     * With a PINNED count it never does: the editor pins the row shape
+     * precisely so that changing the grid widens the measures (and
+     * scrolls) instead of moving measures to other rows (plan
+     * tab-editor-input-parity §7).
      */
     _applyMeasureWidthFloor(availableWidth) {
         const floor = this.options.measureWidthFloor;
         if (!floor || this._computedMeasureWidth >= floor) return;
         this._computedMeasureWidth = floor;
+        if (this.options.measuresPerRow !== 'auto') return;
         this._computedMeasuresPerRow = Math.max(
             1, Math.min(this._computedMeasuresPerRow, Math.floor(availableWidth / floor)));
     }
@@ -306,21 +485,16 @@ export class TabRenderer {
         this._timeSignature = timeSignature;
         this._timingParam = timing;
 
-        this._renderInternal();
-
-        // Set up resize observer if not already
+        // Observe BEFORE the first draw. That first draw may defer (a
+        // container inside a `display:none` ancestor has no width to lay
+        // out against), and the observer is what redeems the promise — so
+        // it must already be watching when the deferral happens.
         if (!this._resizeObserver && typeof ResizeObserver !== 'undefined') {
-            this._resizeObserver = new ResizeObserver(() => {
-                // Debounce resize events
-                if (this._resizeTimeout) clearTimeout(this._resizeTimeout);
-                this._resizeTimeout = setTimeout(() => {
-                    if (this._track && this._notation) {
-                        this._renderInternal();
-                    }
-                }, 150);
-            });
+            this._resizeObserver = new ResizeObserver(() => this._onContainerResize());
             this._resizeObserver.observe(this.container);
         }
+
+        this._renderInternal();
 
         // Re-render on theme change: SVG attributes bake colors in, so a
         // toggle otherwise leaves the previous theme's chips and stems.
@@ -338,6 +512,46 @@ export class TabRenderer {
     }
 
     /**
+     * The container's box changed. Three cases, and the first two are the
+     * ones the old blanket 150ms debounce got wrong:
+     *
+     * 1. **No box** (width 0 — the track was just hidden, or never shown).
+     *    Do nothing. Re-rendering here would replace a correct staff with
+     *    one laid out against a guess, so *hiding* a track used to quietly
+     *    corrupt its layout, and you saw the damage when you came back.
+     * 2. **First real width** for a deferred staff (0 → N, i.e. reveal).
+     *    Draw SYNCHRONOUSLY. ResizeObserver callbacks run after layout and
+     *    before paint, so drawing here means the first paint the reader
+     *    ever sees is already at the right width. A debounce would
+     *    guarantee the opposite: 150ms of wrong layout, then a reflow flash.
+     * 3. **A genuine resize** (N → M). Debounce as before — dragging a
+     *    window edge fires this continuously and a full re-engrave per
+     *    frame is wasteful. Identical widths are dropped outright, which
+     *    also stops our own height change from feeding back as a render.
+     */
+    _onContainerResize() {
+        const width = this._availableWidth();
+        if (!width) return;                                    // case 1
+        if (!this._track || !this._notation) return;
+
+        if (this._layoutDeferred) {                             // case 2
+            if (this._resizeTimeout) {
+                clearTimeout(this._resizeTimeout);
+                this._resizeTimeout = null;
+            }
+            this._renderInternal();
+            return;
+        }
+
+        if (width === this._layoutWidth) return;                // case 3
+        if (this._resizeTimeout) clearTimeout(this._resizeTimeout);
+        this._resizeTimeout = setTimeout(() => {
+            this._resizeTimeout = null;
+            if (this._track && this._notation) this._renderInternal();
+        }, 150);
+    }
+
+    /**
      * Internal render method (can be called on resize)
      */
     _renderInternal() {
@@ -345,6 +559,21 @@ export class TabRenderer {
         const notation = this._notation;
         const ticksPerBeat = this._ticksPerBeat;
         const timeSignature = this._timeSignature || '4/4';
+
+        // A stave needs a width, and there is no honest fallback for one.
+        // If this container has no layout box yet (unselected track, page
+        // still behind `.hidden`), leave whatever is there alone and wait:
+        // _onContainerResize draws the moment it gains a real width, in
+        // the same frame as the reveal. The two message paths below need
+        // no width, so they are exempt.
+        const drawable = track && notation && notation.length > 0
+            && !isPercussionTrack(track);
+        const layoutWidth = drawable ? this._availableWidth() : 0;
+        if (drawable && !layoutWidth) {
+            this._layoutDeferred = true;
+            return;
+        }
+        this._layoutDeferred = false;
 
         this.container.innerHTML = '';
 
@@ -391,8 +620,8 @@ export class TabRenderer {
         const hasTextBand = notation.some(m => (m.texts && m.texts.length) || m.section);
         this.options.topMargin = this._baseTopMargin + (hasTextBand ? 32 : 0);
 
-        // Calculate responsive layout
-        this._calculateLayout();
+        // Calculate responsive layout (against the real width measured above)
+        this._calculateLayout(layoutWidth);
 
         this.numStrings = track.tuning?.length || 5;
         const opt = this.options;
@@ -446,35 +675,68 @@ export class TabRenderer {
         const tuningInfo = detectTuningName(track.tuning, track.instrument, track.capo || 0);
 
         // Show string notes as visual indicator
-        const tuningHtml = (track.tuning || []).map((t, i) => {
+        const tuningNotes = el('span', 'tuning-notes');
+        (track.tuning || []).forEach((t, i) => {
             const isFifth = track.instrument === '5-string-banjo' && i === track.tuning.length - 1;
-            return `<span class="tuning-string${isFifth ? ' fifth' : ''}">${t.replace(/\d/, '')}</span>`;
-        }).join('');
+            tuningNotes.appendChild(el(
+                'span', 'tuning-string' + (isFifth ? ' fifth' : ''),
+                String(t).replace(/\d/, '')));
+        });
 
         const showInstrument = track.instrument && track.instrument !== track.id;
         // Only show tuning name text when it's a recognized name (e.g. "Open G"),
         // not when it's just raw notes (e.g. "G-D-G-C") which duplicates the circles.
         const showTuningName = tuningInfo.name != null;
-        info.innerHTML = `
-            <strong>${track.id}</strong>
-            ${showInstrument ? `<span style="color:#888;font-size:13px;">${track.instrument}</span>` : ''}
-            <div class="tuning-display">
-                ${showTuningName ? `<span class="tuning-name">${tuningInfo.display}</span>` : ''}
-                <span class="tuning-notes">${tuningHtml}</span>
-            </div>
-        `;
+
+        // EVERY string in this row comes out of the OTF document — track id,
+        // instrument, tuning pitches — and OTF documents are hand-edited in
+        // works/ and submitted by users. They are text, so they are built as
+        // TEXT NODES, not interpolated into innerHTML. (The editor sanitizes
+        // ids a human types, but nothing sanitizes an id that arrives in a
+        // file or out of a TEF import, and this row draws both.)
+        info.appendChild(el('strong', null, track.id));
+        if (showInstrument) {
+            const inst = el('span', null, track.instrument);
+            inst.style.color = '#888';
+            inst.style.fontSize = '13px';
+            info.appendChild(inst);
+        }
+        const tuningDisplay = el('div', 'tuning-display');
+        if (showTuningName) {
+            tuningDisplay.appendChild(el('span', 'tuning-name', tuningInfo.display));
+        }
+        tuningDisplay.appendChild(tuningNotes);
+        info.appendChild(tuningDisplay);
+
         this.container.appendChild(info);
     }
 
     /**
-     * Width of one measure, proportional to its tick length so short
-     * measures (pickups, mid-tune 2/4s) render tight instead of padding
-     * out a full-signature slot. Uniform files keep the exact base width.
+     * The full-signature measure length, in ticks.
+     */
+    _defaultTicks() {
+        return this.timing?.measureTiming?.defaultTicks || this.ticksPerMeasure;
+    }
+
+    /**
+     * Width of one measure.
+     *
+     * Default (`uniformMeasureWidth`): every measure gets the full base
+     * slot, so barlines land at the same x on every row and a pickup's
+     * beats sit under the beats of the row below. A LONGER-than-default
+     * measure still grows proportionally — squeezing it into the base
+     * slot would collide its notes.
+     *
+     * With `uniformMeasureWidth: false` the old behaviour returns: width
+     * proportional to tick length, so short measures render tight. That
+     * is what the first outside reviewer called out (plan
+     * tab-editor-input-parity §7) — row 1's barlines landing off row 2's.
      */
     _measureWidthFor(ticks) {
         const base = this._computedMeasureWidth;
-        const defaultTicks = this.timing?.measureTiming?.defaultTicks || this.ticksPerMeasure;
+        const defaultTicks = this._defaultTicks();
         if (!ticks || ticks === defaultTicks) return base;
+        if (this.options.uniformMeasureWidth !== false && ticks < defaultTicks) return base;
         return Math.max(60, Math.round(base * ticks / defaultTicks));
     }
 
@@ -629,7 +891,11 @@ export class TabRenderer {
         });
         const adornTotal = prelim.reduce((s, p) => s + p.adorn.leading + p.adorn.trailing, 0);
         const baseTotal = prelim.reduce((s, p) => s + p.base, 0);
-        const rowAvailable = (this.container.clientWidth || 800) - opt.leftMargin - 20;
+        // The SAME budget _calculateLayout packed this row against. Re-reading
+        // clientWidth here could disagree with it (scale, or a mid-render
+        // layout change) and rows would be packed by one number and fitted
+        // by another.
+        const rowAvailable = this._layoutWidth - opt.leftMargin - 20;
         let fit = 1;
         if (adornTotal > 0 && baseTotal + adornTotal > rowAvailable) {
             fit = Math.max(0.5, (rowAvailable - adornTotal) / baseTotal);
@@ -641,20 +907,33 @@ export class TabRenderer {
             const { ticks, signatureMark, adorn } = prelim[i];
             const baseWidth = Math.max(minBase, Math.floor(prelim[i].base * fit));
             const geomWidth = baseWidth + adorn.leading + adorn.trailing;
-            const noteW = baseWidth - 30;
+            const slotW = baseWidth - 30;
+
+            // A SHORT measure in a uniform slot occupies only its own
+            // fraction of that slot, pushed RIGHT so its last tick lands
+            // on the barline: tick t then sits where t would sit in a
+            // full measure counted back from the barline, which is what
+            // makes a pickup's beats line up with the beats below it.
+            // Everything downstream reads (noteX0 + noteOffset) + tick /
+            // ticks * noteW, so the whole mapping is these two numbers.
+            const defaultTicks = this._defaultTicks();
+            const shortFactor = opt.uniformMeasureWidth !== false
+                && ticks && defaultTicks && ticks < defaultTicks
+                ? ticks / defaultTicks
+                : 1;
+            const noteW = slotW * shortFactor;
+            const rightAlign = slotW - noteW;
+
             // Visual centering: proportional layout leaves the last note's
             // remaining duration as empty space on the right; split that
             // leftover across both sides so the notes sit centered.
-            // The EDITOR disables this (centerNotes: false): centering
-            // varies per measure with its last event, so grid rulers
-            // derived from it break period at every barline (lines from
-            // neighboring measures land ~px apart — "doubled rulers").
-            // Editing wants one stable coordinate system: tick t always
-            // at the same relative x.
+            // Skipped for a right-aligned short measure — its position in
+            // the slot IS the information, and centering would undo it.
             const lastTick = (m.events || []).reduce((mx, e) => Math.max(mx, e.tick), 0);
-            const noteOffset = opt.centerNotes === false
+            const centering = opt.centerNotes === false || shortFactor !== 1
                 ? 0
                 : noteW * Math.max(0, 1 - lastTick / ticks) / 2;
+            const noteOffset = rightAlign + centering;
             const geom = {
                 display: m.measure,
                 x: xCursor,
@@ -676,9 +955,18 @@ export class TabRenderer {
         const rowDiv = document.createElement('div');
         rowDiv.className = 'stave-row';
 
+        // The reader's size setting scales the ELEMENT, not the drawing:
+        // the viewBox stays in layout coordinates (so every x/y computed
+        // above, and every consumer that maps px → user units, is
+        // unaffected) while the element's own width and height carry the
+        // scale. A CSS `transform: scale()` used to do this, and a
+        // transform is invisible to layout: at 1.6 the rows kept their
+        // unscaled height and overlapped, and the extra width simply ran
+        // off the right edge. Sizing the element keeps it in normal flow.
+        const scale = this._scale || 1;
         const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        svg.setAttribute('width', width);
-        svg.setAttribute('height', adjustedHeight);
+        svg.setAttribute('width', Math.round(width * scale));
+        svg.setAttribute('height', Math.round(adjustedHeight * scale));
         svg.setAttribute('viewBox', `0 0 ${width} ${adjustedHeight}`);
 
         // Store row data for cursor positioning
@@ -831,15 +1119,21 @@ export class TabRenderer {
                 }
             }
 
-            // Rest glyphs in gaps AFTER duration-carrying notes.
-            // TablEdit's tab staff hides rests, leaving the rhythm
-            // implied by the written durations alone — we draw them
-            // (options.showRests, default on).
+            // Rest glyphs for the measure's silences — the leading one
+            // and every gap after a duration-carrying note. TablEdit's
+            // tab staff hides rests, leaving the rhythm implied by the
+            // written durations alone; we draw them (options.showRests,
+            // default on). Each span is decomposed into standard rest
+            // values largest-first, so the 1440 ticks automatic duration
+            // leaves after two eighths in a 4/4 bar read as a half rest
+            // then a quarter rest, not one un-notatable blob.
             if (opt.showRests && TabRenderer._bravuraReady && measure.events) {
                 const restY = opt.topMargin
                     + ((this.numStrings - 1) * opt.stringSpacing) / 2;
                 const restAreaStart = geom.noteX0 + geom.noteOffset;
-                for (const span of restSpansForMeasure(measure.events, geom.ticks)) {
+                const spans = restSpansForMeasure(measure.events, geom.ticks,
+                    { leading: opt.showLeadingRests !== false });
+                for (const span of spans) {
                     let t = span.start;
                     for (const g of restGlyphSequence(span.len)) {
                         const rx = restAreaStart + (t / geom.ticks) * geom.noteW + 6;
@@ -1082,12 +1376,20 @@ export class TabRenderer {
 
                 const n1 = notes[i - 1];
                 const xDist = n2.x - n1.x;
-                // Techniques (h/p/slide) connect adjacent notes — keep the
-                // tight cap. TIES legitimately span barlines (a whole note
-                // entered mid-measure splits across it), so allow a full
-                // measure's reach.
-                const maxDist = hasTie ? 400 : 60;
-                if (xDist > maxDist) continue;
+                // No proximity gate. The pairing is MUSICAL, not spatial:
+                // a slide/hammer/pull is notated on its target and means
+                // "sounded from the previous note on this string without a
+                // new pluck", and a tie's antecedent is likewise the previous
+                // note on the string — which is exactly what notes[i - 1] is
+                // here, by construction. Playback (tab-player.js) pairs the
+                // same two notes with no distance test, so any pixel cap makes
+                // notation and sound disagree: the old 60px technique cap ate
+                // every technique spanning a quarter note or more (7 of the 27
+                // slides in Foggy Mountain Breakdown), silently — the
+                // tech-symbol fallback above skips h/p// on the grounds that
+                // this function draws them. Pixel caps also re-break at wider
+                // layouts (the editor's measureWidthFloor expansion), which is
+                // why this isn't a bigger number.
 
                 // For closely-spaced notes (like grace note slides), reduce the offsets
                 // so the slur is still visible
@@ -1453,38 +1755,54 @@ export class TabRenderer {
                 // Eighth note with flag
                 const stemX = np.x;
                 const flagStartX = stemX + opt.stemWidth / 2;
-                const flagY = stemEndY - 2;
+                const flagY = stemEndY;
 
                 const stem = this.createLine(stemX, stemStartY, stemX, stemEndY, opt.stemColor);
                 stem.setAttribute('stroke-width', opt.stemWidth);
                 svg.appendChild(stem);
 
                 const flag = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag.setAttribute('d', `M ${flagStartX} ${flagY - 8} L ${flagStartX} ${flagY} Q ${flagStartX + 8} ${flagY + 2} ${flagStartX + 10} ${flagY + 8} Q ${flagStartX + 6} ${flagY + 4} ${flagStartX} ${flagY - 2} Z`);
+                flag.setAttribute('d', this._flagPath(flagStartX, flagY));
                 flag.setAttribute('fill', opt.stemColor);
                 svg.appendChild(flag);
             } else {
                 // Sixteenth note with two flags
                 const stemX = np.x;
                 const flagStartX = stemX + opt.stemWidth / 2;
-                const flag1Y = stemEndY - 2;
-                const flag2Y = stemEndY - 9;
+                const flag1Y = stemEndY;
+                const flag2Y = stemEndY - 7;
 
                 const stem = this.createLine(stemX, stemStartY, stemX, stemEndY, opt.stemColor);
                 stem.setAttribute('stroke-width', opt.stemWidth);
                 svg.appendChild(stem);
 
                 const flag1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag1.setAttribute('d', `M ${flagStartX} ${flag1Y - 8} L ${flagStartX} ${flag1Y} Q ${flagStartX + 8} ${flag1Y + 2} ${flagStartX + 10} ${flag1Y + 8} Q ${flagStartX + 6} ${flag1Y + 4} ${flagStartX} ${flag1Y - 2} Z`);
+                flag1.setAttribute('d', this._flagPath(flagStartX, flag1Y));
                 flag1.setAttribute('fill', opt.stemColor);
                 svg.appendChild(flag1);
 
                 const flag2 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag2.setAttribute('d', `M ${flagStartX} ${flag2Y - 8} L ${flagStartX} ${flag2Y} Q ${flagStartX + 8} ${flag2Y + 2} ${flagStartX + 10} ${flag2Y + 8} Q ${flagStartX + 6} ${flag2Y + 4} ${flagStartX} ${flag2Y - 2} Z`);
+                flag2.setAttribute('d', this._flagPath(flagStartX, flag2Y));
                 flag2.setAttribute('fill', opt.stemColor);
                 svg.appendChild(flag2);
             }
         });
+    }
+
+    /**
+     * A filled, tapered note flag for a DOWNWARD stem: it attaches at the
+     * stem's bottom end (`x` = the stem's right edge, `yEnd` = the stem's
+     * end) and hooks up and to the right, the way an engraved stem-down
+     * eighth does. It has ~9px of contact with the stem, rising from the
+     * end, and tapers to a point ~10px out and ~16px up. (The first
+     * version hung below the stem end — the up-stem orientation.)
+     */
+    _flagPath(x, yEnd) {
+        const y = yEnd;
+        return `M ${x} ${y}`
+            + ` C ${x + 2} ${y - 6}, ${x + 9} ${y - 9}, ${x + 10} ${y - 17}`
+            + ` C ${x + 9} ${y - 12}, ${x + 4} ${y - 9}, ${x} ${y - 9}`
+            + ' Z';
     }
 
     /**

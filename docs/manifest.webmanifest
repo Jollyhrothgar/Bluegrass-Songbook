@@ -1,0 +1,67 @@
+{
+  "id": "/",
+  "name": "Bluegrass Book",
+  "short_name": "Bluegrass",
+  "description": "A bluegrass jam songbook: search the canon, read lead sheets and tablature, and write tabs — offline once installed.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "theme_color": "#2563eb",
+  "background_color": "#fafafa",
+  "categories": ["music", "education", "productivity"],
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "New tab",
+      "short_name": "New tab",
+      "description": "Start writing a new tablature",
+      "url": "./index.html#new-tab",
+      "icons": [
+        { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png" }
+      ]
+    },
+    {
+      "name": "Drafts",
+      "short_name": "Drafts",
+      "description": "Tabs you have started but not submitted",
+      "url": "./index.html#drafts",
+      "icons": [
+        { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png" }
+      ]
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "./index.html#new-tab?file=1",
+      "accept": {
+        "application/x-tabledit": [".tef"],
+        "application/json": [".otf.json"]
+      },
+      "launch_type": "single-client"
+    }
+  ],
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  }
+}

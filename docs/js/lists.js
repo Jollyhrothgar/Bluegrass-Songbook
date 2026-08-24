@@ -14,7 +14,7 @@ import {
     subscribe, currentView,
     focusedListId, setFocusedListId
 } from './state.js';
-import { escapeHtml, generateLocalId, requireLogin, parseItemRef } from './utils.js';
+import { escapeHtml, generateLocalId, parseItemRef } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
@@ -670,7 +670,6 @@ let listHeaderEl = null;
 let listHeaderNameEl = null;
 let listHeaderCountEl = null;
 let listHeaderBadgeEl = null;
-let listPrintBtnEl = null;
 let listShareBtnEl = null;
 let listDuplicateBtnEl = null;
 let listFollowBtnEl = null;
@@ -2234,8 +2233,7 @@ function renderListViewUI(listName, songIds, status) {
         }
 
         // Configure header buttons based on ownership
-        // Print - always visible
-        if (listPrintBtnEl) listPrintBtnEl.classList.remove('hidden');
+        // Print/export lives in the Export pill (mounted by main.js), not here
 
         // Share - owner only
         if (listShareBtnEl) {
@@ -2957,7 +2955,6 @@ export function initLists(options) {
     listHeaderNameEl = document.getElementById('list-header-name');
     listHeaderCountEl = document.getElementById('list-header-count');
     listHeaderBadgeEl = document.getElementById('list-header-badge');
-    listPrintBtnEl = document.getElementById('list-print-btn');
     listShareBtnEl = document.getElementById('list-share-btn');
     listDuplicateBtnEl = document.getElementById('list-duplicate-btn');
     listFollowBtnEl = document.getElementById('list-follow-btn');
@@ -3092,12 +3089,6 @@ export function initLists(options) {
     // NEW LIST HEADER BUTTON HANDLERS
     // ============================================
 
-    // List header: Print button
-    listPrintBtnEl?.addEventListener('click', () => {
-        // Delegate to existing print functionality
-        printListBtnEl?.click();
-    });
-
     // List header: Share button
     listShareBtnEl?.addEventListener('click', async () => {
         let shareId = null;
@@ -3119,9 +3110,8 @@ export function initLists(options) {
         openShareModal(shareId);
     });
 
-    // List header: Request song button
+    // List header: Request song button (no login required — Phase 2a)
     listRequestBtnEl?.addEventListener('click', () => {
-        if (!requireLogin('request songs')) return;
         openAddSongPicker({ mode: 'request' });
     });
 

@@ -17,5 +17,5 @@ parts:
     source: banjo-hangout
     source_id: '20924'
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20924
-    author: Jollyhrothgar
+    author: dholland
     imported_at: '2026-07-08'

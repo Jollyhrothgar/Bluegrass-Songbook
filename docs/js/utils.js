@@ -2,13 +2,72 @@
 
 import { songHasContent } from './song-content.js';
 
+// ============================================
+// ESCAPING — two functions, two jobs.
+//
+//   escapeHtml  →  TEXT position:      <span>${escapeHtml(x)}</span>
+//   escapeAttr  →  ATTRIBUTE position: <span title="${escapeAttr(x)}">
+//   safeUrl     →  URL position:       <a href="${safeUrl(x)}">
+//
+// Reach for the wrong one and you get an XSS hole that looks escaped.
+// ============================================
+
 /**
- * Escape HTML special characters
+ * Escape a string for a TEXT NODE. NOT for attributes — see escapeAttr.
+ *
+ * This is a textContent → innerHTML round trip, so it escapes exactly what
+ * the HTML serializer escapes in character data: `&`, `<`, `>` (and nbsp).
+ * It deliberately does NOT touch `"` or `'`, because quotes are ordinary
+ * characters inside a text node.
+ *
+ * That makes it UNSAFE in `attr="${...}"`: a value of
+ *     x" onfocus="alert(1)" autofocus="
+ * survives escapeHtml unchanged, closes the attribute, and adds an event
+ * handler. If the hole you are filling sits between quote marks, you want
+ * escapeAttr — even when the value "can't" contain a quote today.
  */
 export function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+/**
+ * Escape a string for use inside a QUOTED HTML attribute.
+ *
+ * escapeHtml plus both quote characters, so the value cannot terminate the
+ * attribute under either quoting style. Use this for every `="${...}"` hole:
+ * data-* attributes, `title`, `alt`, `value`, `id`, `class`.
+ *
+ * Not sufficient on its own for URL-valued attributes (`href`, `src`,
+ * `action`, `<object data>`) — escaping cannot stop `javascript:` or
+ * `data:text/html`. Run those through safeUrl first.
+ */
+export function escapeAttr(text) {
+    return escapeHtml(text).replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+/**
+ * Scheme-check a URL, then escape it for an attribute.
+ *
+ * Returns '' for anything that is not http(s), a same-document fragment, or
+ * a site-relative path — so `javascript:alert(1)`, `data:text/html,…` and
+ * `vbscript:` never reach an href. Callers should treat '' as "no link" and
+ * render plain text instead of an anchor with an empty target.
+ *
+ * Scheme detection deliberately works on the raw string with whitespace and
+ * control characters stripped, because the HTML parser ignores those inside
+ * a URL: `java\nscript:alert(1)` and `  javascript:alert(1)` both navigate.
+ */
+export function safeUrl(url) {
+    const raw = String(url ?? '');
+    // Strip characters the URL parser ignores before looking for a scheme.
+    const probe = raw.replace(/[\s\u0000-\u001F\u007F]/g, '').toLowerCase();
+    const scheme = probe.match(/^([a-z][a-z0-9+.-]*):/);
+    if (scheme && scheme[1] !== 'http' && scheme[1] !== 'https') return '';
+    // Protocol-relative and rooted/relative paths are fine; so is a bare
+    // fragment. Anything else with no scheme is a relative path — also fine.
+    return escapeAttr(raw.trim());
 }
 
 /**
@@ -110,6 +169,21 @@ export function isTabOnlyWork(song) {
 }
 
 /**
+ * "banjo" -> "Banjo Tab", "tenor-banjo" -> "Tenor Banjo Tab".
+ *
+ * Lives here (not in work-view.js, which owns the page) because the part
+ * label is also the part's URL slug — `slugify(tabLabel(instrument))` is
+ * the `#work/{id}/{partId}` segment — and the contribution entry points
+ * need to name and link a tab without importing the whole song page.
+ */
+export function tabLabel(instrument) {
+    if (!instrument) return 'Tab';
+    const pretty = String(instrument).split('-')
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return `${pretty} Tab`;
+}
+
+/**
  * Whether the page-level song actions (the header ✏️ Edit button) apply
  * to the given part. They edit chordpro lead sheets; on a tablature part
  * they would open an empty song editor, so views hide them — tab parts
@@ -124,6 +198,60 @@ export function partUsesSongActions(part) {
  */
 export function isPlaceholder(song) {
     return song?.status === 'placeholder';
+}
+
+/**
+ * Every uuid the index row records as having submitted something ON this work.
+ *
+ * The published fields, and where the build puts them
+ * (`scripts/lib/build_works_index.py`):
+ *
+ *   song.submitted_by            the PRIMARY lead sheet's submitter
+ *   arrangements[].submitted_by  each forked lead sheet's submitter
+ *   document_parts[].submitted_by  a document part's submitter
+ *   tablature_parts[].submitted_by a tab part's submitter — see the caveat
+ *   song.created_by              the pending overlay's own author (a row the
+ *                                browser is holding before any build ran)
+ *
+ * CAVEAT, and it is the interesting one: `build_works_index` does NOT publish
+ * `submitted_by` on `tablature_parts` today. The uuid IS in
+ * `works/<id>/work.yaml` (`parts[].provenance.submitted_by` — that is what
+ * `process_pending.owns_content` and the edge function's `tabPartOwners` both
+ * read), but the row shape drops it, keeping only `author` (a DISPLAY NAME:
+ * 'schlange', 'Mike Beaumier'), which is not comparable to `auth.uid()`. So a
+ * tab submitter loses this client-side signal the moment their work is
+ * published — until the index publishes the field, which is why it is read
+ * here rather than worked around. The server is authoritative either way: it
+ * reads work.yaml and answers 403.
+ */
+export function workSubmitters(song) {
+    const ids = new Set();
+    const add = (id) => { if (typeof id === 'string' && id) ids.add(id); };
+    add(song?.submitted_by);
+    add(song?.created_by);
+    for (const a of song?.arrangements || []) add(a.submitted_by);
+    for (const p of song?.tablature_parts || []) add(p.submitted_by);
+    for (const d of song?.document_parts || []) add(d.submitted_by);
+    return ids;
+}
+
+/** Does `userId` own at least one part of this work, as far as the row shows? */
+export function ownsPartOfWork(song, userId) {
+    return !!userId && workSubmitters(song).has(userId);
+}
+
+/**
+ * May this viewer edit the work's metadata (title / artist / key / notes)?
+ *
+ * Mike's rule: own a part of the work, or be trusted. This is the AFFORDANCE
+ * gate only — a hint, computed from what the index row happens to carry. The
+ * decision is the server's (`auto-commit-song` reads `work.yaml` and refuses
+ * with 403), so this errs toward showing the button and surfacing a refusal
+ * rather than silently hiding an edit the server would have allowed.
+ */
+export function canEditWorkMetadata(song, { userId = null, trusted = false } = {}) {
+    if (!song || !userId) return false;
+    return !!trusted || ownsPartOfWork(song, userId);
 }
 
 /**
@@ -172,7 +300,18 @@ export function buildDeleteCandidates(song, songGroups) {
 }
 
 /**
- * Generate a URL-friendly slug from title and artist
+ * Generate a URL-friendly slug from title and artist.
+ *
+ * The slug becomes a `pending_songs.id` and then a DIRECTORY NAME inside
+ * `works/`, so it has to satisfy the shape every writer agrees on:
+ * `^[a-z0-9]+(-[a-z0-9]+)*$` (`work_schema.slugify`,
+ * `process_pending.SLUG_RE`, `pending-dispatch.WORK_SLUG_RE`).
+ *
+ * TRIM AFTER THE TRUNCATION, never before. It used to be the other way
+ * round, so an 80-character cut that happened to land just after a dash
+ * emitted `some-long-title-` — a trailing dash the trim had already run past.
+ * Nothing else in the repo mints an id like that, and the server now refuses
+ * one rather than creating `works/some-long-title-/`.
  */
 export function generateSlug(title, artist) {
     const base = artist
@@ -181,8 +320,8 @@ export function generateSlug(title, artist) {
     return base
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-|-$/g, '')
-        .slice(0, 80);
+        .slice(0, 80)
+        .replace(/^-+|-+$/g, '');
 }
 
 /**

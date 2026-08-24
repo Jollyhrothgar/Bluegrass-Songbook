@@ -148,15 +148,15 @@ The app uses Supabase (PostgreSQL) for user data:
 | `user_list_items` | Songs in lists, with position and per-item metadata (key, tempo, notes) |
 | `list_followers` | Users following (but not owning) a list |
 | `list_invites` | 7-day invite tokens for co-owner invitations |
-| `song_votes` / `song_vote_counts` | Version voting (which arrangement is best) |
+| `song_votes` / `song_vote_counts` / `song_arrangement_vote_counts` | Version voting (which arrangement is best), per sibling work AND per lead sheet a work holds |
 | `tag_votes` / `tag_vote_counts` | Tag voting (upvote/downvote tags on songs) |
 | `genre_suggestions` | User-suggested tags |
 | `pending_songs` | Trusted user edits visible immediately before git commit |
 | `trusted_users` | Users with elevated permissions (instant edits) |
 | `admin_users` | Admin users (can delete songs) |
 | `deleted_songs` | Soft-deleted songs |
+| `review_requests` | Queued destructive asks (delete / suppress / merge-redirect); trusted users file, admins decide |
 | `bounties` | Community requests for specific content types |
-| `doc_staging` | Uploaded documents (PDFs) pending approval |
 | `analytics_events` | Behavioral analytics (batched insert via RPC) |
 | `visitor_stats` / `visitors` | Visitor counting |
 | `submission_log` | Audit trail for all user submissions |
@@ -596,7 +596,7 @@ Users can report problems with songs without needing a GitHub account:
 - Radio options: Wrong chord, Wrong lyric, Missing section, Other
 - Optional description field
 - Creates a GitHub issue via Supabase edge function
-- Attribution: logged-in user name or "Rando Calrissian" for anonymous
+- Attribution: derived server-side from the session, or "Anonymous"
 
 ### 19. Song Request
 
@@ -607,15 +607,14 @@ Users can request songs be added:
 - **Live duplicate detection**: As user types, checks existing songs and shows warning with links to matches
 - Creates a GitHub issue via Supabase edge function
 
-### 20. Document Upload
+### 20. Documents (read-only shelf)
 
-Users can upload images/PDFs of song sheets:
+Works can carry a `type: document` part (a PDF) that the song page renders
+inline with a download link. These come from `works/` at build time.
 
-- Drag-and-drop zone accepting JPG, PNG, HEIC, WebP, PDF (max 10MB)
-- Preview with rotate controls
-- Uploads to Supabase Storage
-- Links to a specific work
-- Creates a review issue
+**There is no upload intake.** Phase 2d removed it: submissions staged files
+that nothing downstream ever read, while the UI claimed they were queued for
+review. New contributions come in as text (ChordPro) or as a song request.
 
 ### 21. Analytics
 
@@ -738,7 +737,6 @@ All routing is hash-based (SPA on static hosting):
 | `#work/{id}/{partId}` | Work with specific part expanded |
 | `#edit/{id}` | Edit existing song |
 | `#add` | Add new song |
-| `#upload` | Document upload |
 | `#bounty` | Bounty/wanted songs |
 | `#list/favorites` | Favorites list |
 | `#list/{uuid}` | View a specific list |

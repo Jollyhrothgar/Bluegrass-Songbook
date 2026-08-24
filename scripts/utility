@@ -19,8 +19,9 @@ show_help() {
     echo "Usage: ./scripts/utility <command> [options]"
     echo ""
     echo "Commands:"
-    echo "  add-song <file.pro> [--skip-index-rebuild]"
-    echo "      Add a song to the manual collection and rebuild the index"
+    echo "  add-song <file.pro> [--id SLUG] [--title T] [--artist A] [--composer C]"
+    echo "           [--key K] [--on-collision fail|suffix] [--skip-index-rebuild]"
+    echo "      Create works/<slug>/ from a local .pro file and rebuild the index"
     echo ""
     echo "  add-placeholder <title> [--artist NAME] [--key KEY] [--tags TAG,TAG] [--notes TEXT]"
     echo "      Create a placeholder work with metadata but no content"
@@ -37,6 +38,12 @@ show_help() {
     echo "      (requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars)"
     echo ""
     echo "  sync-deleted-songs"
+    echo "  sync-promoted-songs"
+    echo "  db-push                 apply pending Supabase migrations (dry-run first)"
+    echo "  db-check                assert load-bearing invariants against the LIVE schema"
+    echo "      Read-only. The ledger agreeing is not the schema agreeing —"
+    echo "      see scripts/lib/schema_assert.py. --verbose for the rationale,"
+    echo "      --list to see the invariants without touching the database."
     echo "      Sync deleted songs list from Supabase"
     echo "      (requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars)"
     echo ""
@@ -140,7 +147,7 @@ case "$COMMAND" in
         ;;
     sync-tag-votes)
         echo "Fetching tag overrides from trusted user votes..."
-        uv run python3 scripts/lib/fetch_tag_overrides.py
+        ./scripts/lib/with-secrets -- uv run python3 scripts/lib/fetch_tag_overrides.py
         echo ""
         echo "Rebuilding index..."
         ./scripts/bootstrap --quick
@@ -149,12 +156,71 @@ case "$COMMAND" in
         ;;
     sync-deleted-songs)
         echo "Fetching deleted songs list from Supabase..."
-        uv run python3 scripts/lib/fetch_deleted_songs.py
+        ./scripts/lib/with-secrets -- uv run python3 scripts/lib/fetch_deleted_songs.py
         echo ""
         echo "Rebuilding index..."
         ./scripts/bootstrap --quick
         echo ""
         echo "Done! Deleted songs synced and index rebuilt."
+        ;;
+    db-push)
+        # Wraps `supabase db push` with the two things that bit us:
+        #   1. A dry run first. It is the only way to see an out-of-order
+        #      migration before it is a surprise — one dated February sorted
+        #      before the last applied one, and a plain push refuses it with a
+        #      message that reads like a failure.
+        #   2. The link, seeded by bootstrap. Without it the CLI reports
+        #      "Cannot find project ref" from any fresh worktree.
+        # Credentials are the CLI's own (`supabase login`, cached per machine),
+        # so nothing secret is read or written here.
+        if [ ! -f supabase/.temp/project-ref ]; then
+            echo "Not linked. Run ./scripts/bootstrap (seeds supabase/.temp/project-ref)."
+            exit 1
+        fi
+        # Drift is reported in BOTH directions. The awk this replaced printed
+        # only rows that were LOCAL-but-not-REMOTE, so a REMOTE-only version —
+        # what an uncommitted or hand-applied migration, or a `migration
+        # repair` stamp, leaves behind — printed nothing and the command said
+        # "local and remote agree" while `supabase db push` was refusing with a
+        # drift error. See scripts/lib/migration_drift.py.
+        set +e
+        uv run python3 scripts/lib/migration_drift.py
+        DRIFT_STATUS=$?
+        set -e
+        case "$DRIFT_STATUS" in
+            0) exit 0 ;;               # in sync — nothing to push
+            2) ;;                      # local-only pending — on to the dry run
+            *) exit "$DRIFT_STATUS" ;; # remote-only drift, or the CLI failed
+        esac
+        echo ""
+        echo "Dry run:"
+        supabase db push --dry-run 2>&1 | sed 's/^/  /'
+        echo ""
+        echo "Re-run with:  supabase db push            (in-order migrations)"
+        echo "          or:  supabase db push --include-all   (if the dry run asked for it)"
+        echo ""
+        echo "Read the dry run before choosing. --include-all applies EVERY pending"
+        echo "migration, including any that predate the last one already applied."
+        echo ""
+        echo "After pushing, verify the SCHEMA and not just the ledger:"
+        echo "  ./scripts/utility db-check"
+        ;;
+
+    db-check)
+        # Read-only. `supabase db dump --schema public` needs the CLI's cached
+        # login (same credential db-push uses) but no database password, and it
+        # writes nothing.
+        uv run python3 scripts/lib/schema_assert.py "$@"
+        ;;
+
+    sync-promoted-songs)
+        echo "Fetching promoted songs list from Supabase..."
+        ./scripts/lib/with-secrets -- uv run python3 scripts/lib/fetch_promoted_songs.py
+        echo ""
+        echo "Rebuilding index..."
+        ./scripts/bootstrap --quick
+        echo ""
+        echo "Done! Promoted songs synced and index rebuilt."
         ;;
     fetch-tune)
         if [ -z "$1" ]; then
@@ -198,7 +264,7 @@ case "$COMMAND" in
         ;;
     export-suggestions)
         echo "Exporting genre suggestions from Supabase..."
-        uv run python3 scripts/lib/export_genre_suggestions.py
+        ./scripts/lib/with-secrets -- uv run python3 scripts/lib/export_genre_suggestions.py
         ;;
     build-posts)
         echo "Building posts manifest..."
@@ -216,13 +282,13 @@ case "$COMMAND" in
             echo "Usage: ./scripts/utility strum-machine-test \"Song Title\""
             exit 1
         fi
-        uv run python3 -m scripts.lib.strum_machine "$@"
+        ./scripts/lib/with-secrets -- uv run python3 -m scripts.lib.strum_machine "$@"
         ;;
     strum-machine-match)
         echo "Matching all songs against Strum Machine..."
         echo "(This will take ~30 minutes for 17k songs at 10 req/sec)"
         echo ""
-        uv run python3 -m scripts.lib.strum_machine --batch
+        ./scripts/lib/with-secrets -- uv run python3 -m scripts.lib.strum_machine --batch
         ;;
     search)
         if [ -z "$1" ]; then

@@ -1,7 +1,7 @@
 // Core search functionality for Bluegrass Songbook
 
-import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork } from './state.js';
-import { highlightMatch, escapeHtml, requireLogin } from './utils.js';
+import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork, dungeonMode } from './state.js';
+import { highlightMatch, escapeHtml, escapeAttr } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import {
     songHasTags, getTagCategory, formatTagName, syncTagControls,
@@ -657,7 +657,7 @@ function formatCoveringArtists(artists, primaryArtist) {
 
     // Make artists clickable - clicking filters by that artist
     const artistLinks = others.slice(0, 2).map(a =>
-        `<span class="covering-artist" data-artist="${escapeHtml(a)}">${escapeHtml(a)}</span>`
+        `<span class="covering-artist" data-artist="${escapeAttr(a)}">${escapeHtml(a)}</span>`
     ).join(', ');
     const more = others.length > 2 ? ` <span class="covering-more">+${others.length - 2} more</span>` : '';
     return `<div class="result-covering">Also by: ${artistLinks}${more}</div>`;
@@ -668,9 +668,12 @@ function formatCoveringArtists(artists, primaryArtist) {
  * Pruned rows (indexed === false) stay in allSongs so deep links, lists,
  * and arrangement groups still resolve — but search, browse, and counts
  * never surface them.
+ * In dungeon mode the scope inverts: only archived rows are searchable.
  */
 export function searchableSongs() {
-    return allSongs.filter(s => s.indexed !== false);
+    return dungeonMode
+        ? allSongs.filter(s => s.indexed === false)
+        : allSongs.filter(s => s.indexed !== false);
 }
 
 /**
@@ -686,7 +689,7 @@ export function showPopularSongs() {
     // Use distinct title count to match subtitle
     const distinctCount = new Set(searchableSongs().map(s => s.title?.toLowerCase())).size;
     if (searchStatsEl) {
-        searchStatsEl.textContent = `${distinctCount.toLocaleString()} songs`;
+        searchStatsEl.textContent = `${distinctCount.toLocaleString()} songs${dungeonMode ? ' in the dungeon' : ''}`;
     }
     // Pass all results - renderResults handles pagination via infinite scroll
     renderResults(sorted, '');
@@ -851,7 +854,7 @@ export function search(query, options = {}) {
     }
 
     // Update stats with search info
-    let statsText = `${dedupedResults.length.toLocaleString()} songs`;
+    let statsText = `${dedupedResults.length.toLocaleString()} songs${dungeonMode ? ' in the dungeon' : ''}`;
     const filters = [];
     // Inclusion filters
     if (artistFilter) filters.push(`artist: "${artistFilter}"`);
@@ -1090,7 +1093,7 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
         }
         const hasNotes = metadata?.notes && metadata.notes.trim();
         const notesClass = hasNotes ? 'has-notes' : '';
-        notesBtn = `<button class="list-notes-btn ${notesClass}" data-song-id="${itemRef}" data-song-title="${escapeHtml(song.title || 'Song')}" title="${hasNotes ? 'Edit notes' : 'Add notes'}">&#128221;</button>`;
+        notesBtn = `<button class="list-notes-btn ${notesClass}" data-song-id="${itemRef}" data-song-title="${escapeAttr(song.title || 'Song')}" title="${hasNotes ? 'Edit notes' : 'Add notes'}">&#128221;</button>`;
     }
 
     const partIdAttr = partId ? `data-part-id="${partId}"` : '';
@@ -1139,8 +1142,9 @@ export function renderResults(songs, query) {
                 ` : ''}
             </div>
         `;
+        // Requesting a song needs no account (Phase 2a) — it's a request,
+        // not content the requester will come back looking for.
         resultsDivEl.querySelector('#empty-request-btn')?.addEventListener('click', () => {
-            if (!requireLogin('request songs')) return;
             openAddSongPicker({ mode: 'request' });
         });
         return;

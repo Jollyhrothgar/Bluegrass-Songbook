@@ -1,0 +1,245 @@
+name: Process Pending Submission
+
+# Phase 2b of docs/plans/contribution-pipeline.md (issues #221, #222).
+#
+# The durable half of "instant to add": auto-commit-song (or the hourly
+# reconciler) classifies a pending_songs row and fires a `pending-commit`
+# repository_dispatch; this workflow does the actual write to works/ through
+# scripts/lib/works_writer.py — the repo's one writer.
+#
+# Nothing here authors YAML. The edge function decided create / update /
+# fork / add; process_pending.py hands that decision to the writer and the
+# writer enforces the rules (never overwrite silently, never resurrect a
+# suppressed id, provenance always present, a fork never displaces the
+# original).
+#
+# Tabs land here too (2026-08-18). A pending_songs row with
+# part_type = 'tablature' carries a serialized OTF instead of ChordPro and
+# writes works/<id>/<instrument>[-N].otf.json; `add` is its version of
+# `fork`. This replaced the create-tab-pr / process-tab-pr.yml pull-request
+# flow — see docs/plans/contribution-pipeline.md, phase 4c.
+#
+# The index is deliberately NOT rebuilt here: docs/data/ is generated,
+# gitignored tier-4 data (see "Data Tiers" in CLAUDE.md) and the Pages deploy
+# rebuilds it from works/ on every push.
+
+on:
+  repository_dispatch:
+    types: [pending-commit]
+
+# One at a time. Parallel dispatches would each rebase onto a moving main and
+# two forks of the same work would race on the same work.yaml.
+concurrency:
+  group: process-pending
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      # Phase 3b: the dedup backstop can refuse a create and open/comment on a
+      # single review issue instead.
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Write the pending row to works/
+        id: write
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          # client_payload is data, never shell. Mapped through env so a
+          # crafted value cannot escape into the command line.
+          PENDING_ROW_ID: ${{ github.event.client_payload.row_id }}
+          PENDING_MODE: ${{ github.event.client_payload.mode }}
+          PENDING_WORK_ID: ${{ github.event.client_payload.work_id }}
+          PENDING_ACTOR: ${{ github.event.client_payload.actor }}
+        run: |
+          set -euo pipefail
+          if [ -z "${SUPABASE_URL}" ] || [ -z "${SUPABASE_SERVICE_ROLE_KEY}" ]; then
+            echo "::error::SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY secrets are not set"
+            exit 1
+          fi
+          uv run python scripts/lib/process_pending.py
+
+      # The backstop already parked the row (process_pending.py sets
+      # dedup_hold, so the reconciler stops re-dispatching it). All that is
+      # left is to put the pair in front of a human — one issue, forever,
+      # commented on rather than reopened, the same find-or-create pattern
+      # reconcile-pending.yml uses for stuck rows.
+      - name: Open or update the dedup review issue
+        if: steps.write.outputs.skipped_reason == 'dedup-duplicate'
+        uses: actions/github-script@v7
+        env:
+          # Through env, never string-interpolated into the script: the title
+          # is attacker-controlled text from a submission.
+          ROW_TITLE: ${{ steps.write.outputs.row_title }}
+          DEDUP_MATCHED: ${{ steps.write.outputs.dedup_matched_work }}
+          DEDUP_SCORE: ${{ steps.write.outputs.dedup_score }}
+          DEDUP_TITLE_SIM: ${{ steps.write.outputs.dedup_title_similarity }}
+          DEDUP_OUTCOME: ${{ steps.write.outputs.dedup_outcome }}
+          DEDUP_REASON: ${{ steps.write.outputs.dedup_reason }}
+        with:
+          script: |
+            const TITLE = 'Dedup backstop: likely duplicate submissions';
+            const { owner, repo } = context.repo;
+            const out = {
+              row_title: process.env.ROW_TITLE,
+              dedup_matched_work: process.env.DEDUP_MATCHED,
+              dedup_score: process.env.DEDUP_SCORE,
+              dedup_title_similarity: process.env.DEDUP_TITLE_SIM,
+              dedup_outcome: process.env.DEDUP_OUTCOME,
+              dedup_reason: process.env.DEDUP_REASON,
+            };
+            const rowId = context.payload.client_payload.row_id;
+
+            const body = [
+              `A submission was **not written** to \`works/\` — the dedup backstop scored it as a duplicate of a work that is already there.`,
+              ``,
+              `| | |`,
+              `| --- | --- |`,
+              `| pending row | \`${rowId}\` |`,
+              `| title | ${out.row_title || '(untitled)'} |`,
+              `| matched work | [\`${out.dedup_matched_work}\`](https://bluegrassbook.com/#work/${out.dedup_matched_work}) |`,
+              `| containment | **${out.dedup_score}** (duplicate at ≥ 0.85) |`,
+              `| title similarity | ${out.dedup_title_similarity} |`,
+              `| outcome | ${out.dedup_outcome} |`,
+              ``,
+              out.dedup_reason,
+              ``,
+              `The row is **live in the Supabase overlay** but not durable, and is flagged \`dedup_hold\` so the hourly reconciler leaves it alone.`,
+              ``,
+              `To resolve:`,
+              `- **It really is a duplicate** — delete the \`pending_songs\` row.`,
+              `- **It is not** — clear \`dedup_hold\` (set it to null); the next reconciler pass lands it as dispatched.`,
+              `- **It belongs on the matched work** — clear \`dedup_hold\` and set \`replaces_id\` to \`${out.dedup_matched_work}\`; it lands as an update or an arrangement fork.`,
+              ``,
+              `Run: ${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`,
+            ].join('\n');
+
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'open', per_page: 100,
+            });
+            const existing = issues.find(i => !i.pull_request && i.title === TITLE);
+
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: existing.number, body,
+              });
+              core.notice(`Added '${rowId}' to existing review issue #${existing.number}`);
+            } else {
+              const created = await github.rest.issues.create({
+                owner, repo, title: TITLE, body, labels: ['bug'],
+              });
+              core.notice(`Opened review issue #${created.data.number}`);
+            }
+
+      # Loud, and now exactly ONCE per row: a refusal that cannot change by
+      # waiting (a suppressed or merged-away target) is parked by
+      # process_pending.py's hold_reason() before this step runs, so the
+      # hourly reconciler stops re-dispatching it and this failure does not
+      # repeat. Anything else here really is worth a second look next hour.
+      - name: Refuse to mark a skipped row durable
+        if: >-
+          steps.write.outputs.written != 'true'
+          && steps.write.outputs.skipped_reason != 'already-applied'
+          && steps.write.outputs.skipped_reason != 'dedup-duplicate'
+        env:
+          REASON: ${{ steps.write.outputs.skipped_reason }}
+          ROW_ID: ${{ github.event.client_payload.row_id }}
+        run: |
+          echo "::error::Pending row '${ROW_ID}' was not written (${REASON}). It stays live in the overlay and uncommitted; it needs a human."
+          exit 1
+
+      - name: Commit and push
+        if: steps.write.outputs.skipped_reason != 'dedup-duplicate'
+        env:
+          MODE: ${{ steps.write.outputs.mode }}
+          WORK_ID: ${{ steps.write.outputs.work_id }}
+          ACTOR: ${{ github.event.client_payload.actor }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add works/
+
+          if git diff --staged --quiet; then
+            echo "Nothing to commit — the row was already durable."
+          else
+            git commit -m "${MODE}: ${WORK_ID}" -m "Contributed by ${ACTOR} via the songbook editor"
+          fi
+
+          # Retry with rebase in case of concurrent pushes, and fail loudly:
+          # falling out of the loop silently would report a row as durable
+          # when it never reached the remote.
+          pushed=0
+          for i in 1 2 3; do
+            if git push; then pushed=1; break; fi
+            echo "Push failed, attempt $i — pulling and retrying..."
+            git pull --rebase
+          done
+          if [ "$pushed" -ne 1 ]; then
+            echo "::error::Push failed after 3 attempts — the submission is NOT durable"
+            exit 1
+          fi
+
+      - name: Mark the row committed
+        if: steps.write.outputs.skipped_reason != 'dedup-duplicate'
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ROW_ID: ${{ github.event.client_payload.row_id }}
+        run: |
+          set -euo pipefail
+          # Only now: the flag means "durable in git", and flipping it early is
+          # what let cleanup-pending reap songs mid-jam (phase 0a).
+          encoded=$(printf '%s' "${ROW_ID}" | jq -sRr @uri)
+          code=$(curl -sS -o mark.json -w '%{http_code}' \
+            -X PATCH "${SUPABASE_URL}/rest/v1/pending_songs?id=eq.${encoded}" \
+            -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Content-Type: application/json" \
+            -H "Prefer: return=minimal" \
+            -d '{"github_committed": true}')
+
+          if [ "${code}" != "204" ] && [ "${code}" != "200" ]; then
+            echo "::error::Could not mark ${ROW_ID} committed (HTTP ${code})"
+            cat mark.json || true
+            exit 1
+          fi
+          echo "Marked ${ROW_ID} committed."
+
+      - name: Summary
+        if: always()
+        env:
+          MODE: ${{ steps.write.outputs.mode }}
+          WORK_ID: ${{ steps.write.outputs.work_id }}
+          PART: ${{ steps.write.outputs.part_file }}
+          PART_TYPE: ${{ steps.write.outputs.part_type }}
+          INSTRUMENT: ${{ steps.write.outputs.instrument }}
+          ROW_ID: ${{ github.event.client_payload.row_id }}
+          DEDUP_ACTION: ${{ steps.write.outputs.dedup_action }}
+          DEDUP_REASON: ${{ steps.write.outputs.dedup_reason }}
+        run: |
+          {
+            echo "### Pending submission"
+            echo
+            echo "| field | value |"
+            echo "| --- | --- |"
+            echo "| row | \`${ROW_ID}\` |"
+            echo "| kind | ${PART_TYPE:-lead-sheet}${INSTRUMENT:+ (${INSTRUMENT})} |"
+            echo "| mode | ${MODE:-unknown} |"
+            echo "| work | \`${WORK_ID:-unknown}\` |"
+            echo "| part | \`${PART:-}\` |"
+            echo "| dedup | ${DEDUP_ACTION:-not checked} |"
+            if [ -n "${DEDUP_REASON:-}" ]; then
+              echo
+              echo "${DEDUP_REASON}"
+            fi
+          } >> "${GITHUB_STEP_SUMMARY}"

@@ -20,7 +20,7 @@ parts:
     source: banjo-hangout
     source_id: '21678'
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21678
-    author: Jollyhrothgar
+    author: JanetB
     imported_at: '2026-07-08'
 composers:
 - Traditional

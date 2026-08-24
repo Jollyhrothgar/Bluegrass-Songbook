@@ -108,6 +108,17 @@ export function setAllSongs(songs) {
     notifyChange('allSongs');
 }
 
+// True when loadIndex()'s fetch/parse of data/index.jsonl threw, leaving
+// allSongs empty. Consumers (search, add-song picker, review-queue merge
+// dialog) read this to tell "corpus failed to load" apart from a genuine
+// no-match, and the shell banner reads it to show/hide the global notice.
+export let corpusLoadFailed = false;
+
+export function setCorpusLoadFailed(value) {
+    corpusLoadFailed = value;
+    notifyChange('corpusLoadFailed');
+}
+
 export function setSongGroups(groups) {
     songGroups = groups;
 }
@@ -196,6 +207,19 @@ export const FONT_SIZES = {
     '5': 1.8,
     '6': 2.0
 };
+
+// The list print view is a separate document with its own stylesheet, so it
+// can't inherit the em multiplier above — it sizes song text in px instead.
+// These translate one scale into the other so the two can't drift apart.
+export const PRINT_BASE_FONT_PX = 14;   // what a 1.0 multiplier means in print
+export const PRINT_FONT_PX_MIN = 8;     // bounds match the print view's +/- input
+export const PRINT_FONT_PX_MAX = 32;
+
+/** Font size in px for the print view, for a given app font size level. */
+export function printFontPxForLevel(level) {
+    const px = PRINT_BASE_FONT_PX * (FONT_SIZES[level] ?? 1);
+    return Math.max(PRINT_FONT_PX_MIN, Math.min(PRINT_FONT_PX_MAX, Math.round(px)));
+}
 
 // ============================================
 // TABLATURE STATE
@@ -290,9 +314,29 @@ export function selectAllSongs(songIds) { selectedSongIds = new Set(songIds); no
 // HISTORY STATE
 // ============================================
 
+// False until the boot sequence has finished loading the corpus and routed
+// the URL the page was opened with. Everything after that point is ordinary
+// navigation.
 export let historyInitialized = false;
 
 export function setHistoryInitialized(value) { historyInitialized = value; }
+
+// The boot sequence ends by routing the URL the page loaded with (a deep
+// link, or the home view). That tail fires a full network round-trip after
+// the page is already interactive, so a user on a slow connection can
+// navigate somewhere else first — and the tail would then yank them back to
+// the boot URL.
+//
+// Any navigation pushed during that window claims the boot route: the user
+// has said where they want to be, so the tail stands down and leaves the
+// view alone. A page that boots untouched never claims it, so genuine deep
+// links still land.
+export let bootRouteClaimed = false;
+
+export function setBootRouteClaimed(value) { bootRouteClaimed = value; }
+
+/** True while the boot tail is still allowed to route the URL it loaded with. */
+export function canRouteBootUrl() { return !bootRouteClaimed; }
 
 // ============================================
 // FULLSCREEN / MUSICIAN MODE
@@ -361,9 +405,41 @@ export let currentView = 'home';  // 'home' | 'search' | 'song' | 'add-song' | '
 export let activeModal = null;  // 'account' | 'lists' | null
 export let currentSearchQuery = '';
 
-export function setCurrentView(value) { currentView = value; notifyChange('currentView'); }
+// Dungeon mode: search scope flips to archived-only rows (indexed === false)
+export let dungeonMode = false;
+
+/**
+ * The view changed — which is NOT the same as "someone said the view".
+ *
+ * Writing the value it already holds fires nothing, matching `setDungeonMode`
+ * below and `setState` above, and matching what main.js already documents
+ * about itself ("showView('search') is a no-op when the view is already
+ * 'search', so the subscriber can't be trusted to fire"). Until this guard
+ * existed the code said that and the setter did the opposite.
+ *
+ * It is not tidiness. Subscribers run on a `requestAnimationFrame` (see
+ * `scheduleRender`), so every redundant write buys a real callback at a later
+ * frame boundary — and the `currentView` subscriber in main.js does imperative
+ * teardown work, not just painting. A tab route is dispatched TWICE for one
+ * navigation (popstate and hashchange both reach `handleDeepLink`), so
+ * `openNewTabPage` runs twice; without this guard the second run queued a
+ * second teardown that could land after the first run's editor had mounted.
+ * Any consumer that really wants the teardown calls `teardownTablatureView()`
+ * itself — `openWork` and `openNewTabPage` both do, synchronously, before
+ * they build.
+ */
+export function setCurrentView(value) {
+    if (currentView === value) return;
+    currentView = value;
+    notifyChange('currentView');
+}
 export function setActiveModal(value) { activeModal = value; notifyChange('activeModal'); }
 export function setCurrentSearchQuery(value) { currentSearchQuery = value; notifyChange('currentSearchQuery'); }
+export function setDungeonMode(value) {
+    if (dungeonMode === value) return;
+    dungeonMode = value;
+    notifyChange('dungeonMode');
+}
 
 // ============================================
 // CONSTANTS
@@ -389,6 +465,7 @@ const stateGetters = {
     songGroups: () => songGroups,
     currentSong: () => currentSong,
     currentChordpro: () => currentChordpro,
+    corpusLoadFailed: () => corpusLoadFailed,
 
     // Display options
     compactMode: () => compactMode,
@@ -434,6 +511,7 @@ const stateGetters = {
 
     // History
     historyInitialized: () => historyInitialized,
+    bootRouteClaimed: () => bootRouteClaimed,
 
     // Fullscreen/musician mode
     listContext: () => listContext,
@@ -447,6 +525,7 @@ const stateGetters = {
     currentView: () => currentView,
     activeModal: () => activeModal,
     currentSearchQuery: () => currentSearchQuery,
+    dungeonMode: () => dungeonMode,
 };
 
 const stateSetters = {
@@ -455,6 +534,7 @@ const stateSetters = {
     songGroups: setSongGroups,
     currentSong: setCurrentSong,
     currentChordpro: setCurrentChordpro,
+    corpusLoadFailed: setCorpusLoadFailed,
 
     // Display options
     compactMode: setCompactMode,
@@ -500,6 +580,7 @@ const stateSetters = {
 
     // History
     historyInitialized: setHistoryInitialized,
+    bootRouteClaimed: setBootRouteClaimed,
 
     // Fullscreen/musician mode
     listContext: setListContext,
@@ -511,6 +592,7 @@ const stateSetters = {
 
     // UI view state
     currentView: setCurrentView,
+    dungeonMode: setDungeonMode,
     activeModal: setActiveModal,
     currentSearchQuery: setCurrentSearchQuery,
 };

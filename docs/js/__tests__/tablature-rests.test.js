@@ -54,6 +54,54 @@ describe('restSpansForMeasure', () => {
             [{ tick: 0, notes: [{ s: 1, f: 0, dur: 1890 }] }], 1920)).toEqual([]);
         expect(restSpansForMeasure([], 1920)).toEqual([]);
     });
+
+    // TablEdit's "Automatic rests" fills the measure at BOTH ends. The
+    // gap after a note was always drawn; the silence a measure STARTS
+    // with was not, so a bar whose music begins on beat 2 looked like
+    // music floating in from nowhere.
+    it('draws the leading silence before a mid-measure first note', () => {
+        const events = [{ tick: 480, notes: [{ s: 1, f: 0, dur: 1440 }] }];
+        expect(restSpansForMeasure(events, 1920)).toEqual([
+            { start: 0, len: 480 },
+        ]);
+    });
+
+    it('leading and trailing silence in the same measure', () => {
+        const events = [{ tick: 480, notes: [{ s: 1, f: 0, dur: 240 }] }];
+        expect(restSpansForMeasure(events, 1920)).toEqual([
+            { start: 0, len: 480 },
+            { start: 720, len: 1200 },
+        ]);
+    });
+
+    it('no leading rest when the first event has no written duration', () => {
+        const events = [{ tick: 480, notes: [{ s: 1, f: 0 }] }];
+        expect(restSpansForMeasure(events, 1920)).toEqual([]);
+    });
+
+    it('no leading rest for a sliver, and none at tick 0', () => {
+        expect(restSpansForMeasure(
+            [{ tick: 30, notes: [{ s: 1, f: 0, dur: 1890 }] }], 1920)).toEqual([]);
+        expect(restSpansForMeasure(
+            [{ tick: 0, notes: [{ s: 1, f: 0, dur: 1920 }] }], 1920)).toEqual([]);
+    });
+
+    it('leading: false opts out', () => {
+        const events = [{ tick: 480, notes: [{ s: 1, f: 0, dur: 1440 }] }];
+        expect(restSpansForMeasure(events, 1920, { leading: false })).toEqual([]);
+    });
+
+    // The exact shape automatic duration now leaves behind: the manual's
+    // "1/4 rest and a 1/2 rest to fill out the first measure".
+    it('two auto eighths leave one 1440-tick span to fill the bar', () => {
+        const events = [
+            { tick: 0, notes: [{ s: 1, f: 0, dur: 240 }] },
+            { tick: 240, notes: [{ s: 2, f: 1, dur: 240 }] },
+        ];
+        expect(restSpansForMeasure(events, 1920)).toEqual([
+            { start: 480, len: 1440 },
+        ]);
+    });
 });
 
 describe('restGlyphSequence', () => {
@@ -61,6 +109,21 @@ describe('restGlyphSequence', () => {
         expect(restGlyphSequence(1440).map(r => r.ticks)).toEqual([960, 480]);
         expect(restGlyphSequence(420).map(r => r.ticks)).toEqual([240, 120, 60]);
         expect(restGlyphSequence(0)).toEqual([]);
+    });
+
+    // A span is never drawn as one un-notatable blob: 1440 ticks is a
+    // half rest THEN a quarter rest, which is the pair the manual names
+    // (in the other order, because rest decomposition is largest-first).
+    it('a whole-note-minus-two-eighths gap is a half rest then a quarter', () => {
+        expect(restGlyphSequence(1440).map(r => r.ticks)).toEqual([960, 480]);
+        expect(restGlyphSequence(1440)).toHaveLength(2);
+        expect(new Set(restGlyphSequence(1440).map(r => r.glyph)).size).toBe(2);
+    });
+
+    it('every standard value has its own glyph, longest to shortest', () => {
+        for (const t of [1920, 960, 480, 240, 120, 60]) {
+            expect(restGlyphSequence(t).map(r => r.ticks)).toEqual([t]);
+        }
     });
 });
 
@@ -93,16 +156,19 @@ describe('TabRenderer tie arcs across barlines', () => {
         expect(rows[0].querySelector('.tie-arc-in')).toBeNull();
     });
 
-    it('keeps the tight cap for technique slurs', () => {
+    // Technique slurs used to be gated behind a 60px proximity cap, which
+    // silently ate any hammer/pull/slide spanning a quarter note or more.
+    // The pairing is musical, not spatial — see tablature-slurs.test.js.
+    it('arcs a technique across a barline too', () => {
         const container = document.createElement('div');
         document.body.appendChild(container);
         const r = new TabRenderer(container);
-        // hammer-on a full measure away — no slur
+        // hammer-on from the previous note on the string, a measure back
         r.render(TRACK, [
             { measure: 1, events: [{ tick: 0, notes: [{ s: 3, f: 0 }] }] },
             { measure: 2, events: [{ tick: 0, notes: [{ s: 3, f: 2, tech: 'h' }] }] },
         ], 480, '4/4');
-        expect(container.querySelector('.tech-slur')).toBeNull();
+        expect(container.querySelector('.tech-slur')).not.toBeNull();
     });
 });
 
@@ -141,6 +207,29 @@ describe('TabRenderer rest drawing', () => {
     it('skips rests entirely without the music font', () => {
         TabRenderer._bravuraReady = false;
         const c = render([{ tick: 0, notes: [{ s: 1, f: 0, dur: 480 }] }]);
+        expect(c.querySelectorAll('.rest-glyph')).toHaveLength(0);
+    });
+
+    it('the auto-duration bar draws TWO glyphs for its 1440 ticks', () => {
+        TabRenderer._bravuraReady = true;
+        // what "type, step an eighth, type, move on" leaves behind
+        const c = render([
+            { tick: 0, notes: [{ s: 1, f: 0, dur: 240 }] },
+            { tick: 240, notes: [{ s: 2, f: 1, dur: 240 }] },
+        ]);
+        expect(c.querySelectorAll('.rest-glyph')).toHaveLength(2);
+    });
+
+    it('draws the leading rest for a bar that starts on beat 2', () => {
+        TabRenderer._bravuraReady = true;
+        const c = render([{ tick: 480, notes: [{ s: 1, f: 0, dur: 1440 }] }]);
+        expect(c.querySelectorAll('.rest-glyph')).toHaveLength(1);
+    });
+
+    it('showLeadingRests: false keeps only the gaps that follow a note', () => {
+        TabRenderer._bravuraReady = true;
+        const c = render([{ tick: 480, notes: [{ s: 1, f: 0, dur: 1440 }] }],
+            { showLeadingRests: false });
         expect(c.querySelectorAll('.rest-glyph')).toHaveLength(0);
     });
 });

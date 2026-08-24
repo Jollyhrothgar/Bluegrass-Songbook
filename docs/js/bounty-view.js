@@ -5,14 +5,20 @@
 // placeholder works needing everything, (3) Supabase bounties on works.
 
 import { allSongs, bountyIndex, getBountyWorkCount } from './state.js';
-import { isPlaceholder, escapeHtml, requireLogin } from './utils.js';
+import { isPlaceholder, escapeHtml, escapeAttr, requireLogin } from './utils.js';
 import { formatTagName, getInstrumentTags } from './tags.js';
 import { songHasContent, songHasAbc } from './song-content.js';
 import { openAddSongPicker } from './add-song-picker.js';
+import { buildTitleIndex, normalizeTitle } from './title-match.js';
 
 // The wanted list (fetched once; null = not loaded yet)
 let wantedSongs = null;
 let wantedFetchStarted = false;
+
+// Adjudicated verdicts from curation/bounty_decisions.yaml, lowered to JSON by
+// scripts/lib/bounty_decisions.py. `{}` while loading or if the file is absent —
+// the board then renders unfiltered, exactly as it did before this existed.
+let decisions = { covered: {}, not_a_song: [], types: {} };
 let showAllWantedVocals = false;
 let showAllPartGaps = false;
 let showAllChordGaps = false;
@@ -84,6 +90,68 @@ function computeChordGaps() {
     gaps.sort((a, b) => (b.canonical_rank || 0) - (a.canonical_rank || 0) ||
         String(a.title).localeCompare(String(b.title)));
     return gaps;
+}
+
+/**
+ * Split the wanted list into what the board should still advertise and what it
+ * shouldn't, using the adjudicated verdicts plus a live re-check against the
+ * corpus.
+ *
+ * Two sources, in order:
+ *   1. `bounty_decisions.json` — the human calls. Covers the alias cases no
+ *      algorithm gets right ("Can the Circle" is "Will the Circle").
+ *   2. An exact/token-set match against `allSongs` at render time. This is what
+ *      keeps the page honest between builds: a contribution landing in
+ *      `pending_songs` is in `allSongs` before any generator has run again.
+ *
+ * A covered entry whose work is lyrics-only is dropped from "missing" rather
+ * than deleted outright — `computeChordGaps()` already lists that same work
+ * under "Needs Chords", which is where it belongs. Advertising it in both
+ * places is the double-count this whole pass exists to fix.
+ */
+export function partitionWanted(wanted, songs, verdicts = decisions) {
+    const covered = verdicts.covered || {};
+    const junk = new Set(verdicts.not_a_song || []);
+    const types = verdicts.types || {};
+    const byTitle = buildTitleIndex(songs);
+
+    const missing = [];
+    const stats = { adjudicated: 0, junk: 0, lyricsOnly: 0, liveMatch: 0, started: 0 };
+
+    for (const entry of wanted) {
+        const title = entry.title;
+
+        if (junk.has(title)) { stats.junk++; continue; }
+
+        const verdict = covered[title];
+        if (verdict) {
+            stats.adjudicated++;
+            if (!verdict.chords) stats.lyricsOnly++;
+            continue;
+        }
+
+        // Self-healing pass: only the tiers that are safe without a human.
+        const hits = byTitle.get(normalizeTitle(title)) || [];
+        if (hits.length) {
+            // A placeholder is still a bounty, but the "Started — Needs
+            // Content" section below already asks for it. Listing the same
+            // song in both places is the double-count this page exists to fix.
+            if (hits.every(isPlaceholder)) {
+                stats.started++;
+                continue;
+            }
+            stats.liveMatch++;
+            if (!hits.some(s => s.chord_count > 0)) stats.lyricsOnly++;
+            continue;
+        }
+
+        const corrected = types[title];
+        missing.push(corrected && corrected !== entry.type
+            ? { ...entry, type: corrected }
+            : entry);
+    }
+
+    return { missing, stats };
 }
 
 function chordGapCard(song) {
@@ -225,8 +293,8 @@ function wantedCard(song) {
     const chips = (song.instruments || []).map(i =>
         `<span class="wanted-chip">${escapeHtml(INSTRUMENT_LABELS[i] || i)}</span>`).join('');
     return `
-        <button class="bounty-card wanted-card" data-wanted-title="${escapeHtml(song.title)}"
-                data-wanted-key="${escapeHtml(song.key || '')}">
+        <button class="bounty-card wanted-card" data-wanted-title="${escapeAttr(song.title)}"
+                data-wanted-key="${escapeAttr(song.key || '')}">
             <div class="bounty-card-title">${escapeHtml(song.title)}
                 ${song.core ? '<span class="core-badge" title="Core jam repertoire">Core</span>' : ''}</div>
             <div class="bounty-card-artist">${escapeHtml(meta.join(' · '))}</div>
@@ -258,13 +326,19 @@ export function renderBountyView(container) {
     // Lazy-load the wanted list, then re-render once it lands
     if (!wantedFetchStarted) {
         wantedFetchStarted = true;
-        fetch('data/wanted_songs.json', { cache: 'no-cache' })
-            .then(r => r.json())
-            .then(data => {
-                wantedSongs = data.songs || [];
-                if (container.isConnected) renderBountyView(container);
-            })
-            .catch(() => { wantedSongs = []; });
+        Promise.all([
+            fetch('data/wanted_songs.json', { cache: 'no-cache' })
+                .then(r => r.json()).then(d => d.songs || []),
+            // A missing decisions file is not an error — the board renders
+            // unfiltered rather than blank.
+            fetch('data/bounty_decisions.json', { cache: 'no-cache' })
+                .then(r => (r.ok ? r.json() : null))
+                .catch(() => null),
+        ]).then(([songs, verdicts]) => {
+            wantedSongs = songs;
+            if (verdicts) decisions = verdicts;
+            if (container.isConnected) renderBountyView(container);
+        }).catch(() => { wantedSongs = []; });
     }
 
     const placeholders = allSongs.filter(isPlaceholder);
@@ -303,7 +377,7 @@ export function renderBountyView(container) {
     // type mixed, coverage-sorted), then the rest by type — instrumentals
     // next (tabs wanted for fiddle/banjo/mandolin/guitar), gospel, and
     // the long tail of vocals behind a preview.
-    const wanted = wantedSongs || [];
+    const { missing: wanted, stats: wantedStats } = partitionWanted(wantedSongs || [], allSongs);
     const wantedCore = wanted.filter(s => s.core);
     const rest = wanted.filter(s => !s.core);
     const wantedInstrumentals = rest.filter(s => INSTRUMENTAL_TYPES.has(s.type));
@@ -315,7 +389,12 @@ export function renderBountyView(container) {
             <h2 class="bounty-section-title">Missing Jam Standards
                 <span class="bounty-group-count">(${wanted.length})</span></h2>
             <p class="bounty-filter-hint">Canonical repertoire — heavily recorded across bluegrass
-                generations — that the book doesn't have yet. Tap one to contribute it.</p>
+                generations — that the book doesn't have yet. Tap one to contribute it.
+                ${wantedStats.adjudicated + wantedStats.liveMatch + wantedStats.junk > 0 ? `
+                <span class="bounty-hint-aside">${wantedStats.adjudicated + wantedStats.liveMatch}
+                    ${wantedStats.adjudicated + wantedStats.liveMatch === 1 ? 'entry' : 'entries'}
+                    hidden — we already have ${wantedStats.adjudicated + wantedStats.liveMatch === 1 ? 'it' : 'them'}${
+                        wantedStats.lyricsOnly ? `, ${wantedStats.lyricsOnly} as lyrics only (see Needs Chords below)` : ''}.</span>` : ''}</p>
             ${wantedSection('Core Jam Standards — the must-haves', wantedCore)}
             ${wantedSection('More Fiddle Tunes & Instrumentals', wantedInstrumentals)}
             ${wantedSection('More Gospel', wantedGospel)}
@@ -357,6 +436,11 @@ export function renderBountyView(container) {
                 <h1 class="bounty-title">Bounty Board</h1>
                 <p class="bounty-subtitle">Songs and parts the community is looking for. Know one? Help us out!</p>
                 <p class="bounty-stats">${wanted.length} missing standards · ${filteredPlaceholders.length} started pages · ${filteredBounties.length} part requests</p>
+                <!-- The bounty board is the contributor hub, so the board of
+                     who has actually filled these in belongs next to it. A
+                     plain hash link is enough: main.js routes #high-scores on
+                     hashchange. -->
+                <p class="bounty-stats"><a class="bounty-high-scores-link" href="#high-scores">🏆 High scores</a></p>
             </div>
 
             ${wantedHtml}
@@ -437,8 +521,9 @@ export function renderBountyView(container) {
     });
 
     // Wire up CTA buttons
+    // Requesting a song needs no account (Phase 2a). Requesting a PART
+    // (below) still does — bounties are Supabase rows keyed to auth.uid().
     container.querySelector('#bounty-request-song-btn')?.addEventListener('click', () => {
-        if (!requireLogin('request songs')) return;
         openAddSongPicker({ mode: 'request' });
     });
 

@@ -1,13 +1,5 @@
 {meta: title Redwood Hill}
 {meta: artist The Country Gentlemen}
-{meta: x_source web-chords}
-{meta: x_source_file redwood-hill.txt}
-{meta: x_source_url https://tabs.ultimate-guitar.com/tab/the-country-gentlemen/redwood-hill-chords-4893328}
-
-{start_of_verse: Intro}
-[G] [D] [Em] [B7]
-[C] [G] [A7] [C] [G] [G]
-{end_of_verse}
 
 {start_of_verse: Verse 1}
 I [G]climbed the Redwood [D]Hill
@@ -35,14 +27,6 @@ I [G]tried to comfort [D]her
 But [Em]she would not be [B7]still
 And [C]how the rain did [G]fall
 As I [A7]found my way back [C]down the Redwood [G]Hill
-{end_of_verse}
-
-{start_of_verse: Banjo solo}
-[G] [D] [Em] [B7]
-{end_of_verse}
-
-{start_of_verse: Mandolin solo}
-[C] [G] [A7] [C] [G] [G]
 {end_of_verse}
 
 {start_of_chorus}

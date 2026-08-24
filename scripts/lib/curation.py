@@ -25,9 +25,13 @@ Used by:
 - build_works_index.py: ``filter_suppressed()`` (registry.suppressed ∪
   deleted_songs.json) and ``apply_curation()`` (stable ``grp:`` group ids,
   ``canonical`` / ``variant_of`` / ``variant_label`` fields).
-- Importers (process_submission, process_correction, migrate_to_works,
-  banjo-hangout works_importer): ``is_suppressed()`` guard so suppressed
-  works are never re-created from sources.
+- works_writer.py (the single write path for works/), via its ``Guards``
+  class, which asks TWO different questions: ``is_suppressed()`` before
+  minting a new id (``create_work``), ``is_suppressed_exact()`` before
+  writing to a work that already exists (add / update / fork / metadata).
+  See :func:`is_suppressed` for why they must not be collapsed.
+- Other direct importers (migrate_to_works, banjo-hangout / web-chords
+  works_importer): the mint guard, ``is_suppressed()``.
 """
 
 import json
@@ -118,30 +122,101 @@ def load_deleted_songs(repo_root) -> dict:
         return {}
 
 
+def load_promoted_songs(repo_root) -> dict:
+    """Load docs/data/promoted_songs.json ({work_id: {promoted_at, reason}}).
+
+    Trusted-user promotions synced from the Supabase promoted_songs table;
+    unioned with the registry keep: map by apply_index_prune.
+    """
+    path = Path(repo_root) / 'docs' / 'data' / 'promoted_songs.json'
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text()) or {}
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def suppressed_ids(registry: Registry, deleted_songs: dict = None) -> set:
+    """registry.suppressed ∪ deleted_songs — the ids that are dead."""
+    ids = set(registry.suppressed or {})
+    if deleted_songs:
+        ids |= set(deleted_songs)
+    return ids
+
+
 def is_suppressed(work_id: str, registry: Registry, deleted_songs: dict = None) -> bool:
-    """True if a work id must not be (re)created by importers.
+    """MINT-TIME: may a work be CREATED under this id? (False = yes.)
 
     Checks the exact id against registry.suppressed ∪ deleted_songs, and
     also the collision-suffix base (``foo-1`` is refused when ``foo`` is
     suppressed) so importers can't resurrect a suppressed song under a
     collision-suffixed slug.
+
+    **This is the mint-time question only.** Do NOT use it to decide whether
+    an existing work may be written to — see :func:`is_suppressed_exact` and
+    the note below.
+
+    The two questions (2026-08-19)
+    ------------------------------
+    The base-suffix rule reads ``foo-1`` as "somebody is trying to mint a
+    slug next to the suppressed ``foo``", which is exactly right for an id
+    that does not exist yet. It is wrong for one that does: ``works/foo-1``
+    on disk is a published work in its own right, and ``-1`` is not proof
+    that it was ever a collision artifact — ``dark-hollow-1`` is a curated
+    golden-standard chart that has nothing to do with the soft-deleted
+    ``dark-hollow``. Applying the mint rule to an add-part refused a guitar
+    tab for a live song, forever (the row could not become un-suppressed by
+    waiting, so the hourly reconciler re-fired it every hour).
+
+    So:
+
+    ============================  =======================================
+    the caller is about to...     ask
+    ============================  =======================================
+    mint a NEW id                 :func:`is_suppressed` (exact ∪ base)
+    write to a work that EXISTS   :func:`is_suppressed_exact` (exact only)
+    ============================  =======================================
+
+    The mode is the proof of which one applies: ``works_writer.create_work``
+    is the only entry point that can bring a work into being, and every
+    other mode raises ``WorkNotFoundError`` without one to enrich.
     """
-    suppressed = set(registry.suppressed or {})
-    if deleted_songs:
-        suppressed |= set(deleted_songs)
+    suppressed = suppressed_ids(registry, deleted_songs)
     if work_id in suppressed:
         return True
     base = _COLLISION_SUFFIX_RE.sub('', work_id)
     return base != work_id and base in suppressed
 
 
+def is_suppressed_exact(work_id: str, registry: Registry,
+                        deleted_songs: dict = None) -> bool:
+    """WRITE-TIME: is THIS work itself dead? Exact id only, no base match.
+
+    The predicate for "may I add to / correct / re-title a work that already
+    exists on disk". Suppression of the exact id still refuses, and that is
+    deliberate rather than incidental: a suppressed or soft-deleted work is
+    on its way out — :func:`filter_suppressed` drops it from both published
+    indexes at the next build — so a part added to it would be written into
+    a grave, invisible to everyone including its submitter.
+
+    Same set as :func:`filter_suppressed`, on purpose. The invariant that
+    falls out of it: **if the build still publishes the work, you may add to
+    it; if the build drops it, you may not.**
+    """
+    return work_id in suppressed_ids(registry, deleted_songs)
+
+
 def filter_suppressed(songs: list, deleted_songs: dict, registry: Registry) -> list:
     """Drop songs whose exact id is in registry.suppressed ∪ deleted_songs.
 
     Exact-id match only (mirrors the historical deleted_songs filter);
-    collision-suffix base matching applies to import guards, not here.
+    collision-suffix base matching applies to the MINT guard
+    (:func:`is_suppressed`), not here. This is the same question
+    :func:`is_suppressed_exact` asks — the build and the write-time guard
+    agree on which works are dead by construction.
     """
-    suppressed = set(registry.suppressed or {}) | set(deleted_songs or {})
+    suppressed = suppressed_ids(registry, deleted_songs)
     if not suppressed:
         return songs
     return [s for s in songs if s.get('id') not in suppressed]
@@ -270,7 +345,10 @@ def apply_tab_defaults(songs: list, registry: Registry) -> list:
 
 # Works from these sources were contributed by users of the site; the prune
 # never touches them regardless of what the prune list says.
-USER_SOURCES = {'manual', 'trusted-user', 'pending'}
+# 'user-submission' is what process_pending stamps on everything the live
+# contribution path writes, charts and tabs alike — it was missing here
+# until the shared-writer pass (plan 1c).
+USER_SOURCES = {'manual', 'trusted-user', 'pending', 'user-submission'}
 
 
 def prune_list_path(repo_root) -> Path:
@@ -288,12 +366,14 @@ def load_prune_list(repo_root) -> set:
         return {r['id'] for r in rows if r.get('id')}
 
 
-def apply_index_prune(songs: list, prune_ids: set, registry: Registry) -> list:
+def apply_index_prune(songs: list, prune_ids: set, registry: Registry,
+                      promoted_ids: frozenset = frozenset()) -> list:
     """Stamp indexed:false on non-jam-repertoire rows (non-destructive prune).
 
     A row is pruned when its id is on the prune list, UNLESS:
     - it came from a user (source in USER_SOURCES or has submitted_by), or
-    - it was rescued via the registry's keep: map.
+    - it was rescued via the registry's keep: map, or
+    - it was promoted by a trusted user (docs/data/promoted_songs.json).
     Rows stay in the index — deep links, lists, and arrangement groups keep
     working — but search/collections exclude indexed:false rows.
     """
@@ -305,6 +385,8 @@ def apply_index_prune(songs: list, prune_ids: set, registry: Registry) -> list:
         if song.get('source') in USER_SOURCES or song.get('submitted_by'):
             continue
         if song.get('id') in (registry.keep or {}):
+            continue
+        if song.get('id') in promoted_ids:
             continue
         song['indexed'] = False
     return songs

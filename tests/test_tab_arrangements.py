@@ -386,8 +386,10 @@ class TestIndexContract:
             assert sum(defaults) == 1
 
     def test_source_path_is_carried_for_the_copy_step(self, work_dir):
+        """And published: a correction has to name the file it corrects,
+        and the published name can't be mapped back to the works/ one."""
         song = build_song_from_work(work_dir)
-        assert [p['_src'] for p in song['tablature_parts']] == [
+        assert [p['src_file'] for p in song['tablature_parts']] == [
             'banjo.otf.json', 'banjo-222.otf.json', 'mandolin.otf.json']
 
     def test_published_name_falls_back_when_source_id_missing(self):
@@ -412,3 +414,39 @@ class TestIndexContract:
         part = {'instrument': 'banjo',
                 'provenance': {'source_id': 'issue #42/v2'}}
         assert published_tab_name('w', part) == 'w-banjo-issue-42-v2.otf.json'
+
+
+class TestTabSubmitterIsPublished:
+    """A user-submitted tab publishes the contributor's uuid.
+
+    ``author`` is a DISPLAY NAME ("schlange"), which can never be compared to
+    an ``auth.uid()``. Without ``submitted_by`` the frontend cannot tell that
+    the signed-in user contributed this tab, so the "edit this work's details"
+    affordance vanished the moment their tab was published — which is exactly
+    what the first tab through the instant pipeline hit. The row level,
+    arrangements and document parts already published it; tablature was the
+    one omission.
+    """
+
+    def test_a_user_submitted_tab_carries_submitted_by(self, tmp_path):
+        work_dir = make_work(tmp_path, parts=[
+            tab_part('banjo', 'pending:tab:x:abc', source='user-submission',
+                     author='Mike Beaumier', submitted_by='u-123'),
+        ])
+        write_otf(work_dir / 'banjo.otf.json')
+        part = build_song_from_work(work_dir)['tablature_parts'][0]
+        assert part['submitted_by'] == 'u-123'
+        # The display name still rides along for attribution.
+        assert part['author'] == 'Mike Beaumier'
+
+    def test_an_imported_tab_publishes_no_submitter_key(self, tmp_path):
+        # Scraped tabs have an author and no uuid. The key must be OMITTED,
+        # not emitted as None, so the published row shape is byte-identical
+        # for the ~18k imported tabs.
+        work_dir = make_work(tmp_path, parts=[
+            tab_part('banjo', '111', author='schlange'),
+        ])
+        write_otf(work_dir / 'banjo.otf.json')
+        part = build_song_from_work(work_dir)['tablature_parts'][0]
+        assert 'submitted_by' not in part
+        assert part['author'] == 'schlange'

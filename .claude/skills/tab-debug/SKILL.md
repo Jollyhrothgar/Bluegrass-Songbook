@@ -20,17 +20,25 @@ Use this skill when debugging tablature parsing, rendering, or playback issues f
 ### 1. Get the source info from work.yaml
 
 ```bash
-cat works/{work-slug}/work.yaml | grep -A5 provenance
+grep -A6 provenance works/{work-slug}/work.yaml
 ```
 
 Look for:
-- `source_id` - the BH tab ID
-- `source_url` - download URL for TEF file
+- `source_id` - the Hangout tab ID (e.g. `20690`)
+- `source_url` - the **detail page** on banjohangout.org, NOT a TEF download
 
 ### 2. Re-download the TEF file if needed
 
+`provenance.source_url` is an HTML detail page — curling it gives you a web
+page, not a tab. The real download URL (on `hangoutstorage.com`) lives in the
+catalog, keyed `{id}_tef`:
+
 ```bash
-curl -L -o sources/banjo-hangout/downloads/{id}.tef "{source_url}"
+python3 -c "
+import json
+print(json.load(open('sources/banjo-hangout/tab_catalog.json'))['tabs']['{id}_tef']['source_url'])
+"
+curl -L -o sources/banjo-hangout/downloads/{id}.tef "<that url>"
 ```
 
 ### 3. Parse and inspect the TEF file
@@ -54,12 +62,16 @@ print(f"Note events: {len(tef.note_events)}")
 
 ### 4. Inspect specific measures
 
-Measure N corresponds to positions `(N-1)*16` to `N*16-1`:
+`evt.position` is on the **canonical V2 grid: 256 units per whole note**, i.e.
+`header.v2_ts_size` units per measure. (It is NOT 16 slots per measure — that
+old model was removed because it crushed 3/4 and 6/8 grids and any 32nds in
+4/4.) So measure N spans `(N-1)*ts_size` to `N*ts_size - 1`:
 
 ```python
 def show_measure(tef, measure_num):
-    start = (measure_num - 1) * 16
-    end = start + 16
+    ts_size = tef.header.v2_ts_size
+    start = (measure_num - 1) * ts_size
+    end = start + ts_size
     for evt in tef.note_events:
         if start <= evt.position < end:
             result = evt.decode_string_fret()
@@ -73,15 +85,25 @@ show_measure(tef, 25)  # Check measure 25
 
 ### 5. Check raw bytes for articulations
 
-For V2 format, the 6-byte note record structure:
+For V2 format, the 6-byte note record structure (as decoded in `reader.py`;
+`evt.raw_data` is this record verbatim):
 ```
-Byte 0: position (0-255)
-Byte 1: string/fret encoded
-Byte 2: duration
-Byte 3: marker character ('I', 'F', 'L', 'K', etc.)
-Byte 4: effect1 (articulations)
-Byte 5: effect2 (overlays)
+Bytes 0-1: location, u16 little-endian. reader.py derives all three of
+           position_in_measure = location % ts_size
+           cumulative_string   = (location // ts_size) % num_strings
+           measure             = location // (ts_size * num_strings)
+Byte 2:    fret byte. fret = (byte2 & 0x1f) - 1. Bit 5 means "effect2 holds
+           an annotation" (NOT a fret extension). Bit 7 (0x80) is the chord-
+           overlay guard used alongside effect2 == 0x07.
+Byte 3:    duration byte: bits 0-4 duration code, bits 5-7 dynamic.
+           When 0x40 <= byte3 <= 0x5A it also reads as the marker CHARACTER
+           ('I', 'F', 'L', 'K', ...). Dynamic 7 is the tie sentinel.
+Byte 4:    effect1 (articulations)
+Byte 5:    effect2 (overlays / annotations)
 ```
+
+Some V2 files use a 4-byte stride instead of 6 (no effect bytes). Guard every
+`raw_data[4]` / `raw_data[5]` read with a length check, as `otf.py` does.
 
 ```python
 for evt in tef.note_events:
@@ -99,8 +121,16 @@ for evt in tef.note_events:
 ```python
 otf = tef_to_otf(tef)
 Path('works/{work-slug}/banjo.otf.json').write_text(otf.to_json())
-# Also update docs for live testing:
-Path('docs/data/tabs/{work-slug}-banjo.otf.json').write_text(otf.to_json())
+```
+
+Then rebuild — do **not** hand-write into `docs/data/tabs/`. That directory is
+generated (and gitignored); `build_works_index.py` copies each tablature part
+there under `{work}-{instrument}-{source_id}.otf.json` (see
+`published_tab_name`) and prunes anything it didn't publish. A hand-placed
+`{work-slug}-banjo.otf.json` is not a name it produces, so it gets pruned:
+
+```bash
+./scripts/bootstrap --quick
 ```
 
 ## TEF Format Reference
@@ -109,10 +139,13 @@ Path('docs/data/tabs/{work-slug}-banjo.otf.json').write_text(otf.to_json())
 
 ```python
 # V2: starts with printable ASCII, has fixed header structure
-# V3: binary format id; 'debt' marker at offset 56 points at components
+# V3: binary format id; the component region is found by SCANNING for the
+#     b'debt' marker (reader.py does self.data.find(b'debt')), not by reading
+#     a fixed offset. Header pointer 60 holds the same value.
 
 if tef.header.is_v2:
-    # 6-byte note records, positions 0-255 per measure
+    # 6-byte note records (4-byte sub-variant exists),
+    # positions on a 256-unit-per-whole-note grid
 else:
     # 12-byte component records (see V3 reference below)
 ```
@@ -158,6 +191,13 @@ All of the above oracle-verified against TablEdit's own MusicXML export
 
 ### Marker Types (V2 byte 3)
 
+⚠️ Byte 3 is really the **duration byte** (bits 0-4 duration code, bits 5-7
+dynamic). Reading it as a character is a historical misread that `reader.py`
+still carries as `marker_char` because the filtering below keys on it. It is
+useful for triage, but never derive duration, dynamics or ties from the
+"marker" — use `decode_duration_code(byte3 & duration_mask)` and
+`is_tied_note()` instead.
+
 | Byte | Char | Meaning | Action |
 |------|------|---------|--------|
 | 0x49 | 'I' | Initial/melody note | Keep |
@@ -176,8 +216,10 @@ All of the above oracle-verified against TablEdit's own MusicXML export
 | 0x01 | Hammer-on or pull-off (check fret direction) |
 | 0x02 | Unknown (possibly slide related) |
 | 0x03 | Slide (bits 0x01 + 0x02 both set) |
-| 0x04 | Bend (1/4 step) - NOT legato, ignore |
-| 0x80 | Tie to previous note |
+| 0x04 | Bend (1/4 step) - NOT legato, ignore. **This bit is noise** — see "Bends/chokes" below |
+
+`has_legato_effect` masks `effect1 & 0x03`; `is_slide_effect` requires
+`effect1 == 0x03`. Ties are NOT in effect1 — see "Tie Detection" above.
 
 ### Effect2 Byte (V2 byte 5) - Overlays
 
@@ -187,14 +229,23 @@ All of the above oracle-verified against TablEdit's own MusicXML export
 
 ### Tie Detection
 
-Ties use the 0x80 bit in the marker byte:
+**`byte3 & 0x80` is the OLD, WRONG rule — do not reintroduce it.** It also
+matched dynamics 4 and 5 (0x80-0xBF) and silently dropped those notes as
+phantom ties (21690 m4, 21999 m10, 22446, 23439 — their oracle exports show
+plain notes). The tie sentinel is dynamic **7**, i.e. the top three bits:
+
 ```python
-def is_tie(evt):
-    if evt.raw_data and len(evt.raw_data) >= 4:
-        marker_byte = evt.raw_data[3]
-        return bool(marker_byte & 0x80)
+# sources/banjo-hangout/src/tef_parser/otf.py :: is_tied_note
+def is_tied_note(evt):
+    if evt.raw_data and len(evt.raw_data) >= 6:
+        if len(evt.raw_data) == 6:            # V2
+            return (evt.raw_data[3] >> 5) & 0x07 == 7
+        return bool(evt.raw_data[5] & 0x80)   # V3 (12-byte record)
     return False
 ```
+
+The same sentinel is the "connect" bit that bend/choke detection keys on —
+see `bend_destination_keys` below.
 
 ### Slide vs Hammer-on Detection
 
@@ -216,7 +267,8 @@ def get_articulation(evt):
 
 **Cause**: V3 format variant without 'debt' chunk marker
 **Status**: Unsupported - these files use a different V3 sub-format
-**Check**: `conversion_log.json` shows "Empty notation (0 events) - format: v3"
+**Check**: after a `batch_convert.py` run, `sources/banjo-hangout/conversion_log.json`
+shows "Empty notation (0 events) - format: v3"
 
 ### "Cannot read properties of undefined (reading 'id')"
 
@@ -251,13 +303,14 @@ def get_articulation(evt):
 - effect2=0x0c: fingering annotation
 
 **Symptom**: Random notes have wrong fret (e.g., fret 12 instead of fret 0)
-**Fix**: Only add effect2 to fret when effect2 > 0x0c (not a special marker):
-```python
-effect2_val = rec[5] if len(rec) > 5 else 0
-if (fret_byte >> 5) & 0x01 and effect2_val > 0x0c:
-    fret += effect2_val
-```
-**Files**: `sources/banjo-hangout/src/tef_parser/reader.py` line ~1013
+**Fix (current, and stronger than the old one)**: `fret += effect2` is gone
+entirely. Bit 5 of the fret byte means "effect2 carries an annotation", NEVER a
+fret extension — `fret_raw` already spans 0..24, the full banjo range. The
+earlier partial fix (add effect2 only when `effect2 > 0x0c`) still corrupted
+frets: in 21802 effect2 is 0xa2/0xa4, so the add pushed frets past 24 and those
+notes were silently dropped. **Do not re-add any `fret += effect2` branch.**
+**Files**: `sources/banjo-hangout/src/tef_parser/reader.py`, in the V2 note
+branch — search for `fret_raw = fret_byte & 0x1f` (line numbers move)
 
 ### Multi-track TEF files show all tracks merged onto one
 
@@ -273,7 +326,8 @@ instrument_patterns = [
     ...
 ]
 ```
-**Files**: `sources/banjo-hangout/src/tef_parser/reader.py` line ~960
+**Files**: `sources/banjo-hangout/src/tef_parser/reader.py` — search for
+`instrument_patterns` inside `parse_instruments` (line numbers move)
 
 ### Bends showing as pull-offs
 
@@ -314,13 +368,39 @@ not decode 0x04 → bend.
 - Count is at byte 222 of V2 header
 - Data starts after components (offset 258 + component_count * 6)
 - Each entry is 2 bytes: (from_measure, to_measure)
-**Frontend**: `expandNotationWithReadingList()` in work-view.js expands measures
-**Files**: `sources/banjo-hangout/src/tef_parser/reader.py`, `docs/js/work-view.js`
+**Frontend**: `analyzeReadingList()` / `readingListTimeline()` build the
+timeline and `expandNotation()` emits the repeated measures — all in
+`docs/js/renderers/measure-timing.js`, called from `work-view.js`. (There is no
+`expandNotationWithReadingList()`; that name is dead.)
+**Files**: `sources/banjo-hangout/src/tef_parser/reader.py`,
+`docs/js/renderers/measure-timing.js`, `docs/js/work-view.js`
 
-### Cross-measure ties not rendering
+### Slur/tie arc missing (FIXED for barlines — check the ROW boundary)
 
-**Cause**: Each measure is a separate SVG row, can't draw arc across
-**Workaround**: Tied notes show bracket notation `[7]` instead of arc
+**Not the cause**: "each measure is its own SVG". It isn't — a row holds
+several measures (`measuresPerRow`) in one SVG, and `renderSlurs()` runs
+per-row after the whole row is laid out, so ties AND techniques (`h`, `p`,
+`/`) arc across barlines fine. Brackets on a tied fret `[7]` supplement that
+arc, they don't replace it.
+
+**Was a cause until 2026-08**: `renderSlurs()` gated technique arcs on a fixed
+60px note-to-note distance, so any hammer/pull/slide spanning a quarter note
+or more vanished entirely — no arc, no `sl`/`H`/`P` label (the tech-symbol
+fallback skips h/p// on the grounds renderSlurs draws them), while playback
+still sounded it. 7 of 27 slides in `foggy-mountain-breakdown/banjo.otf.json`
+were invisible. Fixed by deleting the pixel gate: the source note is the
+immediately preceding note on the same string, which is what the articulation
+*means* and exactly what `tab-player.js` pairs. If you are ever tempted to
+re-add a pixel threshold here, don't — it silently drops real notation and
+re-breaks at every layout width.
+
+**Still a real cause**: the ROW boundary. `renderSlurs` only sees one row's
+notes, so a slur whose source is on the previous row can't be completed. Ties
+draw an incoming half-arc from the margin (`.tie-arc-in`); techniques draw
+nothing. Widen the window (or narrow `measuresPerRow`) to confirm that's what
+you're looking at.
+**Guard**: `docs/js/__tests__/tablature-slurs.test.js` renders the real FMB
+banjo tab and asserts arc count == technique count.
 
 ### Notes clustered in first half of measure (2/4 time rendered as 4/4)
 
@@ -407,7 +487,7 @@ circled fretting digits below the beams.
 | `docs/js/tef-import/{reader,otf}.js` | In-browser JS port — MUST stay byte-exact vs Python (golden gate: `docs/js/__tests__/tef-import-golden.test.js`; regenerate fixture with `uv run python docs/js/tef-import/__fixtures__/gen_golden.py` whenever the Python parser legitimately changes) |
 | `docs/js/renderers/tablature.js` | SVG rendering, slurs, brackets, bends, annotations |
 | `docs/js/renderers/tab-player.js` | Audio playback, note scheduling, bend/slide waypoints |
-| `sources/banjo-hangout/conversion_log.json` | Batch conversion results |
+| `sources/banjo-hangout/conversion_log.json` | Batch conversion results. **Generated and gitignored** — it does not exist until you run `batch_convert.py`. Path comes from `site_config.SiteConfig.conversion_log_path`, so sibling Hangout sites write their own under their own `data_dir` |
 
 ## Testing Changes
 
@@ -417,7 +497,11 @@ After modifying parser:
 # Re-convert single file
 uv run python sources/banjo-hangout/src/batch_convert.py
 
-# Or convert specific file
+# Or convert a single file with no catalog involved
+./scripts/utility banjo-convert-file <tef_path> [output_path]
+
+# Equivalent by hand. Downloaded TEFs are named {id}.tef or
+# {id}_tef_{slug}.tef — check with `ls sources/banjo-hangout/downloads | grep {id}`
 uv run python -c "
 from pathlib import Path
 import sys
@@ -425,10 +509,13 @@ sys.path.insert(0, 'sources/banjo-hangout/src')
 from tef_parser.reader import TEFReader
 from tef_parser.otf import tef_to_otf
 
-tef = TEFReader(Path('sources/banjo-hangout/downloads/{id}_tef.tef')).parse()
+tef = TEFReader(Path('sources/banjo-hangout/downloads/{id}.tef')).parse()
 otf = tef_to_otf(tef)
-Path('docs/data/tabs/{slug}-banjo.otf.json').write_text(otf.to_json())
+Path('works/{slug}/banjo.otf.json').write_text(otf.to_json())
 "
+
+# Publish it into docs/data/tabs/ (that directory is build output)
+./scripts/bootstrap --quick
 
 # Test in browser
 ./scripts/server

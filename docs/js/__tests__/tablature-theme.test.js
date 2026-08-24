@@ -63,6 +63,47 @@ describe('TabRenderer theme handling', () => {
         expect(r.options.fretBgColor).toBe('#000');
     });
 
+    // Three-tier ink: fret numbers (--text) > stems/beams/barlines
+    // (--tab-ink) > string rulers (--tab-rule). One structural colour made
+    // beams indistinguishable from the staff lines they sat under on dark.
+    it('splits structural ink into --tab-ink and --tab-rule', () => {
+        setVars({ '--tab-ink': '#d4d4d4', '--tab-rule': '#8a8a8a' });
+        const r = new TabRenderer(container);
+        expect(r.options.stemColor).toBe('#d4d4d4');
+        expect(r.options.beamColor).toBe('#d4d4d4');
+        expect(r.options.measureLineColor).toBe('#d4d4d4');
+        expect(r.options.mutedColor).toBe('#d4d4d4');
+        expect(r.options.stringColor).toBe('#8a8a8a');  // the quiet tier
+        expect(r.options.fretColor).toBe('#000');       // still the brightest
+    });
+
+    it('falls back to --text-secondary when the tab tokens are missing', () => {
+        const r = new TabRenderer(container);   // only --text-secondary is set
+        expect(r.options.stemColor).toBe('#666');
+        expect(r.options.stringColor).toBe('#666');
+    });
+
+    it('picks up the new tier values on a theme change', async () => {
+        setVars({ '--tab-ink': '#5a5a5a', '--tab-rule': '#8a8a8a' });
+        const r = new TabRenderer(container);
+        r.render(TRACK, NOTATION);
+        const spy = vi.spyOn(r, '_renderInternal');
+
+        setVars({ '--tab-ink': '#d4d4d4', '--tab-rule': '#7d7d7d' });
+        document.documentElement.setAttribute('data-theme', 'dark');
+        await vi.waitFor(() => expect(spy).toHaveBeenCalled());
+        expect(r.options.beamColor).toBe('#d4d4d4');
+        expect(r.options.stringColor).toBe('#7d7d7d');
+    });
+
+    it('an explicit stringColor survives the tier split', () => {
+        setVars({ '--tab-rule': '#8a8a8a' });
+        const r = new TabRenderer(container, { stringColor: 'lime' });
+        expect(r.options.stringColor).toBe('lime');
+        r._refreshThemeColors();
+        expect(r.options.stringColor).toBe('lime');
+    });
+
     it('destroy() disconnects the theme observer', async () => {
         const r = new TabRenderer(container);
         r.render(TRACK, NOTATION);

@@ -42,6 +42,15 @@ describe('COLLECTIONS data integrity', () => {
         expect(allSongs.query).toBe('');
         expect(allSongs.isSearchLink).toBe(true);
     });
+
+    it('bluegrass-dungeon collection replaced waltz and is a dungeon link', () => {
+        expect(COLLECTIONS.find(c => c.id === 'waltz')).toBeUndefined();
+        const dungeon = COLLECTIONS.find(c => c.id === 'bluegrass-dungeon');
+        expect(dungeon).toBeTruthy();
+        expect(dungeon.query).toBe('');
+        expect(dungeon.isDungeonLink).toBe(true);
+        expect(dungeon.image).toBe('images/bluegrass_dungeon.png');
+    });
 });
 
 describe('COLLECTION_PINS data integrity', () => {

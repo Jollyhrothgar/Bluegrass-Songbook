@@ -29,6 +29,7 @@ function makeFakeEditor(overrides = {}) {
         destroyed: false,
         save: vi.fn(function () { return this.savedDoc; }),
         download: vi.fn(),
+        load: vi.fn(),
         destroy: vi.fn(function () { this.destroyed = true; }),
         state: { facade: { canUndo: () => editor.dirty } },
         ...overrides,
@@ -132,6 +133,60 @@ describe('createTabEditSession', () => {
         expect(onExit).toHaveBeenCalledWith('cancel');
     });
 
+    // The DEFAULT ask (no confirmDiscard injected) is an inline strip in
+    // the bar, not window.confirm — see no-native-dialogs.test.js for why.
+    it('Cancel with edits draws an inline confirm, not a native dialog', () => {
+        const nativeConfirm = vi.spyOn(globalThis, 'confirm');
+        start();
+        editor.dirty = true;
+
+        expect(session.cancel()).toBe(false);          // asked, did not exit
+        expect(nativeConfirm).not.toHaveBeenCalled();
+        expect(onExit).not.toHaveBeenCalled();
+
+        const ask = mount.querySelector('.tab-edit-discard-confirm');
+        expect(ask).not.toBeNull();
+        expect(ask.textContent).toContain('Discard edits?');
+        nativeConfirm.mockRestore();
+    });
+
+    it('“Keep editing” takes the question down and stays in the session', () => {
+        start();
+        editor.dirty = true;
+        session.cancel();
+
+        mount.querySelector('.tab-edit-discard-no').click();
+        expect(mount.querySelector('.tab-edit-discard-confirm')).toBeNull();
+        expect(onExit).not.toHaveBeenCalled();
+        expect(mount.querySelector('.tab-edit-bar')).not.toBeNull();
+    });
+
+    it('“Discard” exits exactly as an accepted confirm did', () => {
+        start();
+        editor.dirty = true;
+        session.cancel();
+
+        mount.querySelector('.tab-edit-discard-yes').click();
+        expect(onExit).toHaveBeenCalledWith('cancel');
+        expect(mount.querySelector('.tab-edit-bar')).toBeNull();
+    });
+
+    it('a second Cancel re-uses the standing question instead of stacking', () => {
+        start();
+        editor.dirty = true;
+        session.cancel();
+        session.cancel();
+        expect(mount.querySelectorAll('.tab-edit-discard-confirm').length).toBe(1);
+    });
+
+    it('a clean session cancels with no question at all', () => {
+        start();
+        editor.dirty = false;
+        expect(session.cancel()).toBe(true);
+        expect(mount.querySelector('.tab-edit-discard-confirm')).toBeNull();
+        expect(onExit).toHaveBeenCalledWith('cancel');
+    });
+
     it('Download delegates to the editor with the session filename', () => {
         start({ filename: '27493-banjo' });
         mount.querySelector('.tab-edit-download').click();
@@ -149,8 +204,7 @@ describe('createTabEditSession', () => {
 
     it('Submit panel requires a comment and calls onSubmit with the doc', async () => {
         const onSubmit = vi.fn(async () => ({
-            prNumber: 9,
-            prUrl: 'https://github.com/x/y/pull/9',
+            id: 'gold-rush', workId: 'gold-rush', live: true, synced: true,
         }));
         session = createTabEditSession({
             mount, otf: multiTrackOtf(), trackId: 'banjo',
@@ -169,16 +223,19 @@ describe('createTabEditSession', () => {
         panel.querySelector('.tab-edit-submit-send').click();
         await vi.waitFor(() => expect(onSubmit).toHaveBeenCalled());
         expect(onSubmit).toHaveBeenCalledWith({ edited: true }, 'fixed the B part');
+        // No review, no PR link: the correction is live the moment it
+        // resolves, and the panel says exactly that.
         await vi.waitFor(() => {
-            expect(panel.querySelector('.tab-edit-submit-status').textContent)
-                .toContain('#9');
+            const status = panel.querySelector('.tab-edit-submit-status');
+            expect(status.textContent).toMatch(/live on this tab now/);
+            expect(status.querySelector('a')).toBeNull();
         });
     });
 
-    it('a non-GitHub prUrl never lands in the link href', async () => {
+    it('a durable-write failure reads as "live, syncing" — not as a failure', async () => {
         const onSubmit = vi.fn(async () => ({
-            prNumber: 1,
-            prUrl: 'javascript:alert(1)//github.com',
+            id: 'gold-rush', live: true, synced: false,
+            syncError: 'auto-commit-song returned 429',
         }));
         session = createTabEditSession({
             mount, otf: multiTrackOtf(), trackId: 'banjo',
@@ -192,8 +249,26 @@ describe('createTabEditSession', () => {
         await vi.waitFor(() => expect(onSubmit).toHaveBeenCalled());
         await vi.waitFor(() => {
             const status = panel.querySelector('.tab-edit-submit-status');
-            expect(status.textContent).toContain('Submitted');
-            expect(status.querySelector('a')).toBeNull();
+            expect(status.textContent).toMatch(/live/i);
+            expect(status.textContent).toMatch(/syncing/i);
+            expect(status.textContent).not.toMatch(/failed/i);
+        });
+    });
+
+    it('a rejected submission still reports the failure', async () => {
+        const onSubmit = vi.fn(async () => { throw new Error('Sign in to submit'); });
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, onSubmit,
+        });
+        mount.querySelector('.tab-edit-submit').click();
+        const panel = mount.querySelector('.tab-edit-submit-panel');
+        panel.querySelector('.tab-edit-submit-comment').value = 'x';
+        panel.querySelector('.tab-edit-submit-send').click();
+        await vi.waitFor(() => {
+            expect(panel.querySelector('.tab-edit-submit-status').textContent)
+                .toMatch(/Failed: Sign in to submit/);
         });
     });
 
@@ -222,5 +297,172 @@ describe('createTabEditSession', () => {
         session.destroy();
         expect(editor.destroy).toHaveBeenCalledTimes(1);
         expect(onExit).not.toHaveBeenCalled();
+    });
+
+    // jsdom computes no layout, so this guards the CLASS CONTRACT that the
+    // layout depends on rather than the pixels. `.qc-btn` is the site's
+    // 32x32 icon shell (a hard width, used everywhere else for −/+ only):
+    // put a word in one and the label can't shrink past its min-content, so
+    // it wraps and spills out of the box — which is how these four buttons
+    // came to be drawn on top of each other over the toolbar. Labelled
+    // buttons take `.qc-toggle-btn`, which is padded and auto-width.
+    it('labelled buttons never wear the icon-only qc-btn shell', () => {
+        session = createTabEditSession({
+            mount, otf: multiTrackOtf(), trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply, onExit, onSubmit: vi.fn(),
+        });
+        const buttons = [...mount.querySelectorAll('button')];
+        expect(buttons.length).toBeGreaterThan(4);   // actions + submit panel
+        for (const btn of buttons) {
+            // A label is anything past a lone glyph — every button here has one.
+            expect(btn.textContent.trim().length).toBeGreaterThan(1);
+            expect([...btn.classList]).not.toContain('qc-btn');
+        }
+    });
+});
+
+// ── The session's buttons live in the BOTTOM BAND (plan §9.1) ────────────
+//
+// Edit mode used to draw its own header above the canvas — a second title
+// row on a page that already had one — and replace the band underneath with
+// a notice. With `barHost` the same buttons are handed to the band instead,
+// so the page keeps exactly one set of chrome whether you are reading or
+// writing.
+describe('createTabEditSession in the bottom band', () => {
+    let mount, host, editor, onApply, onExit;
+
+    function start(opts = {}) {
+        return createTabEditSession({
+            mount,
+            otf: multiTrackOtf(),
+            trackId: 'banjo',
+            editorFactory: (options) => { editor.factoryOptions = options; return editor; },
+            onApply,
+            onExit,
+            barHost: host,
+            ...opts,
+        });
+    }
+
+    beforeEach(() => {
+        document.body.innerHTML = '';
+        mount = document.createElement('div');
+        host = document.createElement('div');
+        document.body.append(mount, host);
+        editor = makeFakeEditor();
+        onApply = vi.fn();
+        onExit = vi.fn();
+    });
+
+    it('puts the action bar in the host, and only the canvas in the page', () => {
+        start();
+        expect(host.querySelector('.tab-edit-bar')).not.toBeNull();
+        expect(mount.querySelector('.tab-edit-bar')).toBeNull();
+        expect(mount.querySelector('.tab-edit-host')).not.toBeNull();
+        // No second title: the page's own take header already says what
+        // this is, so the compact bar doesn't repeat it.
+        expect(host.querySelector('.tab-edit-title')).toBeNull();
+    });
+
+    it('takes the bar (and its panel) with it when the session ends', () => {
+        const session = start({ onSubmit: vi.fn() });
+        expect(host.querySelector('.tab-edit-bar')).not.toBeNull();
+        session.destroy();
+        expect(host.querySelector('.tab-edit-bar')).toBeNull();
+        expect(host.querySelector('.tab-edit-submit-panel')).toBeNull();
+        expect(mount.querySelector('.tab-edit-host')).toBeNull();
+    });
+
+    it('a NEW take submits on the click — there is nothing to describe', async () => {
+        const onSubmit = vi.fn(async () => ({ workId: 'gold-rush', synced: true }));
+        const onSubmitted = vi.fn();
+        start({
+            onSubmit, onSubmitted,
+            submitLabel: '🚀 Submit tab',
+            showDone: false,
+            commentRequired: false,
+        });
+
+        const submit = host.querySelector('.tab-edit-submit');
+        expect(submit.textContent).toBe('🚀 Submit tab');
+        // No comment panel at all, and no ✓ Done: a take that does not
+        // exist yet has nothing to apply back to the page.
+        expect(host.querySelector('.tab-edit-submit-panel')).toBeNull();
+        expect(host.querySelector('.tab-edit-done')).toBeNull();
+
+        submit.click();
+        await vi.waitFor(() => expect(onSubmit).toHaveBeenCalledWith({ edited: true }, ''));
+        await vi.waitFor(() => {
+            expect(host.querySelector('.tab-edit-status').textContent)
+                .toMatch(/live on this song now/);
+        });
+        // the caller gets the result AND the document that was submitted,
+        // so it can show that document as the take's pending state
+        expect(onSubmitted).toHaveBeenCalledWith(
+            { workId: 'gold-rush', synced: true }, { edited: true });
+    });
+
+    it('a durable-write failure on a new take still reads as live', async () => {
+        const onSubmit = vi.fn(async () => ({ synced: false }));
+        start({ onSubmit, commentRequired: false, showDone: false });
+        host.querySelector('.tab-edit-submit').click();
+        await vi.waitFor(() => {
+            const text = host.querySelector('.tab-edit-status').textContent;
+            expect(text).toMatch(/live/i);
+            expect(text).not.toMatch(/failed/i);
+        });
+    });
+
+    it('a refused submission says so and lets you try again', async () => {
+        const onSubmit = vi.fn(async () => { throw new Error('Sign in to submit'); });
+        start({ onSubmit, commentRequired: false, showDone: false });
+        const submit = host.querySelector('.tab-edit-submit');
+        submit.click();
+        await vi.waitFor(() => {
+            expect(host.querySelector('.tab-edit-status').textContent)
+                .toMatch(/Failed: Sign in to submit/);
+        });
+        expect(submit.disabled).toBe(false);
+    });
+
+    it('reports a correction back to the caller too', async () => {
+        const onSubmit = vi.fn(async () => ({ synced: true }));
+        const onSubmitted = vi.fn();
+        start({ onSubmit, onSubmitted });
+        host.querySelector('.tab-edit-submit').click();
+        const panel = host.querySelector('.tab-edit-submit-panel');
+        panel.querySelector('.tab-edit-submit-comment').value = 'fixed bar 12';
+        panel.querySelector('.tab-edit-submit-send').click();
+        await vi.waitFor(() => expect(onSubmitted).toHaveBeenCalled());
+    });
+
+    it('offers extra actions (Import .tef…) alongside the rest', () => {
+        const onClick = vi.fn();
+        const session = start({
+            extraActions: [{ className: 'tab-edit-import', label: '📂 Import .tef…', onClick }],
+        });
+        const btn = host.querySelector('.tab-edit-import');
+        expect(btn.textContent).toBe('📂 Import .tef…');
+        btn.click();
+        expect(onClick).toHaveBeenCalledWith(session);
+    });
+
+    it('replaceDocument swaps what is being edited (a .tef import)', () => {
+        const session = start();
+        session.replaceDocument({ imported: true });
+        expect(editor.load).toHaveBeenCalledWith({ imported: true });
+    });
+
+    it('passes onChange through to the editor (drafts survive a reload)', () => {
+        const onChange = vi.fn();
+        start({ onChange });
+        editor.factoryOptions.onChange({ doc: 1 });
+        expect(onChange).toHaveBeenCalledWith({ doc: 1 });
+    });
+
+    it('does not pass an onChange the caller did not ask for', () => {
+        start();
+        expect('onChange' in editor.factoryOptions).toBe(false);
     });
 });

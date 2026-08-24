@@ -823,3 +823,758 @@ describe('selection ops on ts-change docs (real-timeline ordering)', () => {
         expect(state.getMeasure(1).events.length).toBe(0);
     });
 });
+
+// ----------------------------------------------------------------------
+// Duration editing at the cursor and over a selection (plan §3 P1-2)
+// ----------------------------------------------------------------------
+
+describe('EditorState — duration editing', () => {
+    let state;
+    beforeEach(() => {
+        state = new EditorState();
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+    });
+
+    it('a duration key re-times the note under the cursor, and pins it', () => {
+        state.insertNote(0);
+        state.setDuration(DURATIONS.quarter);
+        expect(state.getNoteAtCursor().dur).toBe(DURATIONS.quarter);
+        expect(state.currentDuration).toBe(DURATIONS.quarter);
+        expect(state.isDurationPinned({ measure: 1, tick: 0, string: 3 })).toBe(true);
+    });
+
+    it('a duration key on an empty slot only arms the next note', () => {
+        state.setDuration(DURATIONS.half);
+        expect(state.currentDuration).toBe(DURATIONS.half);
+        expect(state.getNoteAtCursor()).toBeFalsy();
+        expect(state.facade.canUndo()).toBe(false);
+    });
+
+    it('re-timing the note under the cursor is undoable', () => {
+        state.insertNote(0);
+        state.setDuration(DURATIONS.quarter);
+        state.undo();
+        expect(state.getNoteAtCursor().dur).toBe(DURATIONS.eighth);
+    });
+
+    it('applyDurationToSelection re-times every note in it', () => {
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.insertNote(2);
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 0, 3), new CursorPosition(1, 240, 3));
+        expect(state.applyDurationToSelection(DURATIONS.sixteenth)).toBe(true);
+        const events = state.getMeasure(1).events;
+        expect(events.map(e => e.notes[0].dur)).toEqual([120, 120]);
+        expect(state.isDurationPinned({ measure: 1, tick: 240, string: 3 })).toBe(true);
+    });
+
+    it('applyDurationToSelection needs a selection', () => {
+        state.selection = null;
+        expect(state.applyDurationToSelection(120)).toBe(false);
+    });
+
+    it('scaleDurationAtCursor halves and doubles, pinning as it goes', () => {
+        state.insertNote(0);
+        expect(state.scaleDurationAtCursor(0.5)).toBe(true);
+        expect(state.getNoteAtCursor().dur).toBe(120);
+        expect(state.scaleDurationAtCursor(2)).toBe(true);
+        expect(state.getNoteAtCursor().dur).toBe(240);
+        expect(state.isDurationPinned({ measure: 1, tick: 0, string: 3 })).toBe(true);
+    });
+
+    it('scaleSelectionDuration scales the phrase', () => {
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.insertNote(2);
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 0, 3), new CursorPosition(1, 240, 3));
+        expect(state.scaleSelectionDuration(2)).toBe(true);
+        expect(state.getMeasure(1).events.map(e => e.notes[0].dur)).toEqual([480, 480]);
+    });
+
+    it('scaleDurationAtCursor on an empty slot is false', () => {
+        expect(state.scaleDurationAtCursor(2)).toBe(false);
+    });
+});
+
+describe('EditorState — dotted durations', () => {
+    it('DURATIONS and DURATION_NAMES carry the dotted values', () => {
+        expect(DURATIONS.dottedHalf).toBe(1440);
+        expect(DURATIONS.dottedQuarter).toBe(720);
+        expect(DURATIONS.dottedEighth).toBe(360);
+        expect(DURATIONS.dottedSixteenth).toBe(180);
+        expect(DURATION_NAMES[720]).toBe('dotted quarter');
+        expect(DURATION_NAMES[180]).toBe('dotted sixteenth');
+    });
+
+    it('toggleDotted multiplies and divides by 1.5', () => {
+        const state = new EditorState();
+        state.setDuration(DURATIONS.quarter);
+        expect(state.toggleDotted()).toBe(true);
+        expect(state.currentDuration).toBe(720);
+        expect(state.toggleDotted()).toBe(true);
+        expect(state.currentDuration).toBe(480);
+    });
+
+    it('refuses to dot a whole note (it would leave the range)', () => {
+        const state = new EditorState();
+        state.setDuration(DURATIONS.whole);
+        expect(state.toggleDotted()).toBe(false);
+        expect(state.currentDuration).toBe(1920);
+    });
+
+    it('refuses to dot a triplet (240 is a straight eighth, not a dotted anything)', () => {
+        const state = new EditorState();
+        state.setDuration(DURATIONS.tripletEighth);
+        expect(state.toggleDotted()).toBe(false);
+        expect(state.currentDuration).toBe(160);
+    });
+
+    it('refuses under automatic duration', () => {
+        const state = new EditorState();
+        state.setAutoDuration(true);
+        expect(state.toggleDotted()).toBe(false);
+        expect(state.currentDuration).toBe(null);
+    });
+});
+
+// ----------------------------------------------------------------------
+// Note fixes at the cursor
+// ----------------------------------------------------------------------
+
+describe('EditorState — note fixes', () => {
+    let state;
+    beforeEach(() => {
+        state = new EditorState();
+        state.cursor.string = 3;
+        state.insertNote(5);
+    });
+
+    it('transposeFretAtCursor moves the fret', () => {
+        expect(state.transposeFretAtCursor(1)).toBe(true);
+        expect(state.getNoteAtCursor().f).toBe(6);
+        expect(state.transposeFretAtCursor(-99)).toBe(true);
+        expect(state.getNoteAtCursor().f).toBe(0);
+    });
+
+    it('moveNoteAcrossStrings preserves pitch and carries the cursor', () => {
+        expect(state.moveNoteAcrossStrings(1)).toBe(true);
+        expect(state.cursor.string).toBe(4);
+        expect(state.getNoteAtCursor().f).toBe(10);   // G3 fret 5 = D3 fret 10
+    });
+
+    it('moveNoteAcrossStrings refuses off the neck, leaving the cursor put', () => {
+        state.cursor.string = 4;
+        state.insertNote(0);
+        expect(state.moveNoteAcrossStrings(-1)).toBe(false);
+        expect(state.cursor.string).toBe(4);
+        expect(state.getNoteAtCursor().f).toBe(0);
+    });
+
+    // D1: the document and the cursor were both right, but nothing told
+    // the status bar — it kept printing the OLD string until the next
+    // ordinary arrow key. Re-stringing IS a cursor move; it has to
+    // announce itself on the same channel every other move uses.
+    it('moveNoteAcrossStrings announces the cursor move', () => {
+        const seen = [];
+        state.on('cursorMove', (cursor) => seen.push(cursor.string));
+        expect(state.moveNoteAcrossStrings(1)).toBe(true);
+        expect(seen).toEqual([4]);
+        expect(state.cursor.string).toBe(4);
+    });
+
+    it('a refused re-string announces nothing (the cursor did not move)', () => {
+        state.cursor.string = 4;
+        state.insertNote(0);
+        const seen = [];
+        state.on('cursorMove', (cursor) => seen.push(cursor.string));
+        expect(state.moveNoteAcrossStrings(-1)).toBe(false);
+        expect(seen).toEqual([]);
+    });
+
+    it('moveNoteAcrossStrings carries the note pin with it', () => {
+        state.setDuration(DURATIONS.quarter);
+        expect(state.isDurationPinned({ measure: 1, tick: 0, string: 3 })).toBe(true);
+        state.moveNoteAcrossStrings(1);
+        expect(state.isDurationPinned({ measure: 1, tick: 0, string: 3 })).toBe(false);
+        expect(state.isDurationPinned({ measure: 1, tick: 0, string: 4 })).toBe(true);
+    });
+
+    it('addArticulation passes x and b through', () => {
+        expect(state.addArticulation('x')).toBe(true);
+        expect(state.getNoteAtCursor().tech).toBe('x');
+        expect(state.addArticulation('b')).toBe(true);
+        expect(state.getNoteAtCursor().tech).toBe('b');
+    });
+
+    it('toggleTieAtCursor sets tie: true, never tech', () => {
+        state.cursor.tick = 240;
+        state.insertNote(5);
+        expect(state.toggleTieAtCursor()).toBe(true);
+        expect(state.getNoteAtCursor().tie).toBe(true);
+        expect(state.getNoteAtCursor().tech).toBeUndefined();
+        expect(state.toggleTieAtCursor()).toBe(false);
+        expect(state.getNoteAtCursor().tie).toBeUndefined();
+    });
+
+    it('toggleTieAtCursor refuses with no same-string predecessor', () => {
+        state.cursor.string = 1;
+        state.insertNote(0);
+        expect(state.toggleTieAtCursor()).toBe(false);
+        expect(state.getNoteAtCursor().tie).toBeUndefined();
+    });
+
+    it("addArticulation('~') is routed to the tie", () => {
+        state.cursor.tick = 240;
+        state.insertNote(5);
+        state.addArticulation('~');
+        expect(state.getNoteAtCursor().tie).toBe(true);
+        expect(state.getNoteAtCursor().tech).toBeUndefined();
+    });
+
+    it('removeArticulation clears tech and leaves the tie alone', () => {
+        state.cursor.tick = 240;
+        state.insertNote(5, { tech: 'h' });
+        state.toggleTieAtCursor();
+        state.removeArticulation();
+        expect(state.getNoteAtCursor().tech).toBeUndefined();
+        expect(state.getNoteAtCursor().tie).toBe(true);
+    });
+
+    // D5: TablEdit's N clears the note's EFFECTS — all of them. `n` only
+    // cleared `tech`, so a tie survived a clear and there was no way to
+    // take one back except toggling it.
+    describe('clearEffectsAtCursor — TablEdit’s N', () => {
+        beforeEach(() => {
+            state.cursor.tick = 240;
+            state.insertNote(5, { tech: 'b' });
+            state.toggleTieAtCursor();
+        });
+
+        it('clears the tie AND the technique', () => {
+            expect(state.getNoteAtCursor()).toMatchObject({ tech: 'b', tie: true });
+            expect(state.clearEffectsAtCursor()).toBe(true);
+            expect(state.getNoteAtCursor().tech).toBeUndefined();
+            expect(state.getNoteAtCursor().tie).toBeUndefined();
+        });
+
+        it('is ONE undo step — u brings both back', () => {
+            state.clearEffectsAtCursor();
+            state.undo();
+            expect(state.getNoteAtCursor()).toMatchObject({ tech: 'b', tie: true });
+        });
+
+        it('clears a lone tie, and a lone technique', () => {
+            state.clearEffectsAtCursor();
+            state.toggleTieAtCursor();
+            expect(state.clearEffectsAtCursor()).toBe(true);
+            expect(state.getNoteAtCursor().tie).toBeUndefined();
+
+            state.addArticulation('h');
+            expect(state.clearEffectsAtCursor()).toBe(true);
+            expect(state.getNoteAtCursor().tech).toBeUndefined();
+        });
+
+        it('refuses on a clean note and on empty space — no undo step', () => {
+            state.clearEffectsAtCursor();
+            const before = state.history.canUndo();
+            expect(state.clearEffectsAtCursor()).toBe(false);
+            expect(state.history.canUndo()).toBe(before);
+            state.cursor.tick = 960;
+            expect(state.clearEffectsAtCursor()).toBe(false);
+        });
+    });
+});
+
+// ----------------------------------------------------------------------
+// Measures: delete, ripple, repeat, append
+// ----------------------------------------------------------------------
+
+describe('EditorState — measure ops', () => {
+    let state;
+    beforeEach(() => {
+        state = new EditorState();
+        state.facade.addMeasures(3);        // measures 1..4
+        state.cursor.string = 3;
+    });
+
+    it('deleteMeasureAtCursor removes it and keeps the cursor in the document', () => {
+        state.cursor.measure = 4;
+        expect(state.deleteMeasureAtCursor()).toBe(true);
+        expect(state.getMeasureCount()).toBe(3);
+        expect(state.cursor.measure).toBe(3);
+    });
+
+    it('deleteEmptyTrailingMeasure refuses when the last measure has notes', () => {
+        state.cursor.measure = 4;
+        state.insertNote(0);
+        expect(state.deleteEmptyTrailingMeasure()).toBe(false);
+        expect(state.getMeasureCount()).toBe(4);
+    });
+
+    it('deleteEmptyTrailingMeasure refuses when ANOTHER track still uses it', () => {
+        const otf = state.export();
+        otf.tracks.push({
+            id: 'guitar', instrument: '6-string-guitar',
+            tuning: ['E4', 'B3', 'G3', 'D3', 'A2', 'E2'], capo: 0,
+        });
+        otf.notation.guitar = [1, 2, 3, 4].map(m => ({ measure: m, events: [] }));
+        otf.notation.guitar[3].events = [{ tick: 0, notes: [{ s: 1, f: 3, dur: 240 }] }];
+        const s = new EditorState({ otf });
+        expect(s.deleteEmptyTrailingMeasure()).toBe(false);
+        expect(s.facade.getMeasureCount('guitar')).toBe(4);
+    });
+
+    it('deleteEmptyTrailingMeasure drops an empty tail', () => {
+        expect(state.deleteEmptyTrailingMeasure()).toBe(true);
+        expect(state.getMeasureCount()).toBe(3);
+    });
+
+    it('ensureMeasure appends past the end and is idempotent', () => {
+        expect(state.ensureMeasure(6)).toBe(true);
+        expect(state.getMeasureCount()).toBe(6);
+        expect(state.ensureMeasure(6)).toBe(false);
+        expect(state.ensureMeasure(0)).toBe(false);
+    });
+
+    it('ensureMeasure fills a hole in the middle', () => {
+        state.otf.notation[state.trackId] =
+            state.otf.notation[state.trackId].filter(m => m.measure !== 2);
+        state.facade._invalidateTiming();
+        expect(state.ensureMeasure(2)).toBe(true);
+        expect(state.getMeasure(2).events).toEqual([]);
+    });
+
+    it('repeatPreviousMeasure copies the bar before and lands at its start', () => {
+        state.cursor.measure = 1;
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.insertNote(2);
+        state.cursor.measure = 2;
+        state.cursor.tick = 960;
+        expect(state.repeatPreviousMeasure()).toBe(true);
+        expect(state.cursor.tick).toBe(0);
+        expect(state.getMeasure(2).events.length).toBe(2);
+    });
+
+    it('repeatPreviousMeasure refuses over existing notes', () => {
+        state.cursor.measure = 1;
+        state.insertNote(0);
+        state.cursor.measure = 2;
+        state.insertNote(7);
+        expect(state.repeatPreviousMeasure()).toBe(false);
+    });
+
+    it('shiftRightAtCursor ripples by the current duration', () => {
+        state.cursor.measure = 1;
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.insertNote(2);
+        state.setDuration(DURATIONS.eighth);
+        state.cursor.tick = 240;
+        expect(state.shiftRightAtCursor()).toBe(true);
+        expect(state.getMeasure(1).events.map(e => e.tick)).toEqual([0, 480]);
+        state.cursor.tick = 480;
+        expect(state.shiftLeftAtCursor(240)).toBe(true);
+        expect(state.getMeasure(1).events.map(e => e.tick)).toEqual([0, 240]);
+    });
+
+    it('shiftLeftAtCursor closes a hole', () => {
+        state.cursor.measure = 1;
+        state.cursor.tick = 480;
+        state.insertNote(0);
+        state.cursor.tick = 480;
+        expect(state.shiftLeftAtCursor(240)).toBe(true);
+        expect(state.getMeasure(1).events.map(e => e.tick)).toEqual([240]);
+    });
+
+    it('rippleTicks follows the grid under automatic duration', () => {
+        state.setDuration(DURATIONS.quarter);
+        expect(state.rippleTicks()).toBe(480);
+        state.setGridSubdivision(DURATIONS.sixteenth);
+        state.setAutoDuration(true);
+        expect(state.rippleTicks()).toBe(120);
+    });
+});
+
+// ----------------------------------------------------------------------
+// Automatic duration (plan §6) — the state half
+// ----------------------------------------------------------------------
+
+describe('EditorState — automatic duration', () => {
+    let state;
+    beforeEach(() => {
+        state = new EditorState();
+        state.cursor.string = 3;
+        state.setAutoDuration(true);
+    });
+
+    it('null IS auto, and setAutoDuration(false) restores the last chosen value', () => {
+        expect(state.currentDuration).toBe(null);
+        expect(state.isAutoDuration).toBe(true);
+        state.setAutoDuration(false);
+        expect(state.currentDuration).toBe(DURATIONS.eighth);
+        state.setDuration(DURATIONS.sixteenth);
+        state.toggleAutoDuration();
+        expect(state.isAutoDuration).toBe(true);
+        state.toggleAutoDuration();
+        expect(state.currentDuration).toBe(DURATIONS.sixteenth);
+    });
+
+    it('effectiveDuration predicts the cursor slot', () => {
+        expect(state.effectiveDuration()).toBe(1920);   // empty 4/4 measure
+        state.cursor.tick = 480;
+        state.insertNote(0);
+        state.cursor.tick = 0;
+        expect(state.effectiveDuration()).toBe(480);
+        state.setAutoDuration(false);
+        expect(state.effectiveDuration()).toBe(DURATIONS.eighth);
+    });
+
+    it('a roll typed on the 1/8 grid comes out as eighths', () => {
+        [5, 3, 2, 5, 3, 2, 5, 3].forEach((string, i) => {
+            state.cursor.tick = i * 240;
+            state.cursor.string = string;
+            state.insertNote(0);
+        });
+        const durs = state.getMeasure(1).events.flatMap(e => e.notes.map(n => n.dur));
+        expect(durs).toEqual(new Array(8).fill(240));
+    });
+
+    it('the first note fills the bar, then shortens, then fills again', () => {
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        expect(state.getNoteAtCursor().dur).toBe(1920);
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        state.insertNote(1);
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+        expect(state.getNoteAtCursor().dur).toBe(240);
+
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        state.deleteNote();
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+        expect(state.getNoteAtCursor().dur).toBe(1920);
+    });
+
+    it('an explicit duration key pins the note against auto', () => {
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.setDuration(DURATIONS.whole);          // pins it, leaves auto
+        state.setAutoDuration(true);
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        state.insertNote(1);
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+        expect(state.getNoteAtCursor().dur).toBe(1920);
+    });
+
+    it('a loaded document is never re-timed', () => {
+        const otf = state.export();
+        otf.notation[state.trackId][0].events = [
+            { tick: 0, notes: [{ s: 3, f: 0, dur: 1920 }] },
+        ];
+        state.load(otf);
+        state.setAutoDuration(true);
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        state.insertNote(1);
+        const first = state.getMeasure(1).events[0].notes[0];
+        expect(first.dur).toBe(1920);
+        expect(state.autoEnteredDurations.size).toBe(1);
+    });
+
+    it('fixDurationsAtCursor repairs the measure and hands it to auto', () => {
+        const otf = state.export();
+        otf.notation[state.trackId][0].events = [
+            { tick: 0, notes: [{ s: 3, f: 0, dur: 1920 }] },
+            { tick: 240, notes: [{ s: 2, f: 1, dur: 1920 }] },
+        ];
+        state.load(otf);
+        state.setAutoDuration(true);
+        state.cursor.measure = 1;
+        expect(state.fixDurationsAtCursor()).toBe(true);
+        // J applies the SAME rule entry does: the last column takes the
+        // interval before it, not the rest of the bar.
+        expect(state.getMeasure(1).events.map(e => e.notes[0].dur)).toEqual([240, 240]);
+        // now auto-managed: a new onset re-times them again
+        state.cursor.tick = 480;
+        state.cursor.string = 1;
+        state.insertNote(0);
+        expect(state.getMeasure(1).events[1].notes[0].dur).toBe(240);
+    });
+
+    it('fixDurationsInSelection needs a selection', () => {
+        state.selection = null;
+        expect(state.fixDurationsInSelection()).toBe(false);
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 0, 3), new CursorPosition(1, 240, 3));
+        expect(state.fixDurationsInSelection()).toBe(false);   // already correct
+    });
+
+    it('one undo takes back the note and the neighbour re-timing', () => {
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        state.insertNote(1);
+        state.undo();
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+        expect(state.getNoteAtCursor().dur).toBe(1920);
+    });
+
+    // ------------------------------------------------------------------
+    // The manual's scenario, driven the way a person drives it: type,
+    // move the cursor one step, type. Everything below is what the
+    // status bar prints and the LENGTH row outlines.
+    // ------------------------------------------------------------------
+
+    const durs = () => state.getMeasure(1).events
+        .flatMap(e => e.notes.map(n => n.dur));
+
+    it('type at beat 1, step an eighth, type again → two eighths', () => {
+        state.setGridSubdivision(DURATIONS.eighth);
+        state.cursor.tick = 0;
+        expect(state.effectiveDuration()).toBe(1920);   // predicts a whole
+        state.insertNote(0);
+        expect(durs()).toEqual([1920]);
+
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        expect(state.effectiveDuration()).toBe(240);    // predicts an eighth
+        state.insertNote(1);
+        expect(durs()).toEqual([240, 240]);
+    });
+
+    it('the prediction after the last note is the preceding interval', () => {
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.insertNote(1);
+        state.cursor.tick = 480;
+        expect(state.effectiveDuration()).toBe(240);
+        state.cursor.tick = 720;
+        expect(state.effectiveDuration()).toBe(480);
+    });
+
+    it('the prediction is the whole bar only when nothing sounds in it', () => {
+        state.cursor.measure = 2;
+        state.cursor.tick = 960;
+        expect(state.effectiveDuration()).toBe(960);
+    });
+
+    it('deleting the second note re-extends the first to the whole bar', () => {
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        state.insertNote(1);
+        expect(state.deleteNote()).toBe(true);
+        expect(durs()).toEqual([1920]);
+    });
+
+    it('a hand-set duration survives the delete (the manual\'s last sentence)', () => {
+        state.cursor.tick = 0;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        state.insertNote(1);
+        // park on the first note and choose a quarter: that pins it
+        state.cursor.tick = 0;
+        state.cursor.string = 3;
+        state.setDuration(DURATIONS.quarter);
+        state.setAutoDuration(true);
+        state.cursor.tick = 240;
+        state.cursor.string = 2;
+        expect(state.deleteNote()).toBe(true);
+        expect(durs()).toEqual([480]);
+    });
+
+    it('leaving auto emits autoDurationChange, and so does returning', () => {
+        const seen = [];
+        state.on('autoDurationChange', v => seen.push(v));
+        state.setAutoDuration(false);
+        state.setDuration(DURATIONS.quarter);   // already explicit: no event
+        state.setAutoDuration(true);
+        expect(seen).toEqual([false, true]);
+    });
+});
+
+// ----------------------------------------------------------------------
+// Entry-state flags the keyboard layer drives
+// ----------------------------------------------------------------------
+
+describe('EditorState — entry flags', () => {
+    it('autoAdvance defaults on and emits on toggle', () => {
+        const state = new EditorState();
+        const seen = [];
+        state.on('autoAdvanceChange', v => seen.push(v));
+        expect(state.autoAdvance).toBe(true);
+        expect(state.toggleAutoAdvance()).toBe(false);
+        expect(state.setAutoAdvance(false)).toBe(false);   // already there
+        expect(state.setAutoAdvance(true)).toBe(true);
+        expect(seen).toEqual([false, true]);
+    });
+
+    it('lastTech follows both articulation paths', () => {
+        const state = new EditorState();
+        state.insertNote(0);
+        state.addArticulation('h');
+        expect(state.lastTech).toBe('h');
+        state.setPendingArticulation('p');
+        expect(state.lastTech).toBe('p');
+    });
+
+    it('repeatLastAction re-applies the last effect to the note at the cursor', () => {
+        // TablEdit's F3: park on another note and repeat the effect —
+        // the notes are already down, so nothing else intervenes.
+        const state = new EditorState();
+        state.cursor.string = 3;
+        state.insertNote(0);
+        state.cursor.tick = 240;
+        state.insertNote(2);
+        state.cursor.tick = 0;
+        state.addArticulation('h');
+        state.cursor.tick = 240;
+        expect(state.repeatLastAction()).toBe(true);
+        expect(state.getNoteAtCursor().tech).toBe('h');
+    });
+
+    it("repeatLastAction re-applies a tie when the last effect was '~'", () => {
+        const state = new EditorState();
+        state.cursor.string = 3;
+        [0, 240, 480].forEach(tick => {
+            state.cursor.tick = tick;
+            state.insertNote(0);
+        });
+        state.cursor.tick = 240;
+        state.addArticulation('~');
+        expect(state.getNoteAtCursor().tie).toBe(true);
+        state.cursor.tick = 480;
+        expect(state.repeatLastAction()).toBe(true);
+        expect(state.getNoteAtCursor().tie).toBe(true);
+    });
+});
+
+
+// ----------------------------------------------------------------------
+// Fingering wrappers: the SELECTION when there is one, else the cursor —
+// the same rule `applyTech` follows, so marking a phrase is one undo step.
+// ----------------------------------------------------------------------
+
+describe('EditorState — fingering, both hands', () => {
+    let state;
+
+    /** Three eighth notes on string 3 of measure 1. */
+    function threeNotes() {
+        const s = new EditorState();
+        s.cursor.string = 3;
+        [0, 240, 480].forEach(tick => {
+            s.cursor.tick = tick;
+            s.insertNote(0);
+        });
+        s.cursor.tick = 0;
+        return s;
+    }
+
+    beforeEach(() => {
+        state = threeNotes();
+    });
+
+    it('marks the note at the cursor when there is no selection', () => {
+        expect(state.setFingering('R')).toBe(true);
+        expect(state.getNoteAtCursor().finger).toBe('R');
+        expect(state.setLeftHand(2)).toBe(true);
+        expect(state.getNoteAtCursor().lh).toBe(2);
+        state.cursor.tick = 240;
+        expect(state.getNoteAtCursor().finger).toBeUndefined();
+    });
+
+    it('marks the whole SELECTION when there is one', () => {
+        state.setMode(EditorMode.VISUAL);
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 0, 3), new CursorPosition(1, 480, 3));
+        expect(state.setFingering('P')).toBe(true);
+        expect(state.setLeftHand(4)).toBe(true);
+        for (const tick of [0, 240, 480]) {
+            state.cursor.tick = tick;
+            expect(state.getNoteAtCursor().finger).toBe('P');
+            expect(state.getNoteAtCursor().lh).toBe(4);
+        }
+    });
+
+    it('takes the selection back in ONE undo per hand', () => {
+        state.setMode(EditorMode.VISUAL);
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 0, 3), new CursorPosition(1, 480, 3));
+        state.setFingering('I');
+        state.facade.undo();
+        for (const tick of [0, 240, 480]) {
+            state.cursor.tick = tick;
+            expect(state.getNoteAtCursor().finger).toBeUndefined();
+        }
+    });
+
+    it('clearFingerings clears BOTH hands in one step', () => {
+        state.setFingering('T');
+        state.setLeftHand(1);
+        expect(state.clearFingerings()).toBe(true);
+        expect(state.getNoteAtCursor().finger).toBeUndefined();
+        expect(state.getNoteAtCursor().lh).toBeUndefined();
+        state.facade.undo();
+        expect(state.getNoteAtCursor().finger).toBe('T');
+        expect(state.getNoteAtCursor().lh).toBe(1);
+    });
+
+    it('clearFingerings over a selection clears the phrase', () => {
+        state.setMode(EditorMode.VISUAL);
+        state.selection = new SelectionRange(
+            new CursorPosition(1, 0, 3), new CursorPosition(1, 480, 3));
+        state.setFingering('M');
+        state.setLeftHand(3);
+        expect(state.clearFingerings()).toBe(true);
+        for (const tick of [0, 240, 480]) {
+            state.cursor.tick = tick;
+            expect(state.getNoteAtCursor().finger).toBeUndefined();
+            expect(state.getNoteAtCursor().lh).toBeUndefined();
+        }
+    });
+
+    it('clearFingerings with nothing to clear spends no history', () => {
+        const depth = state.facade._history.length;
+        expect(state.clearFingerings()).toBe(false);
+        expect(state.facade._history.length).toBe(depth);
+    });
+
+    it('refuses on an empty slot', () => {
+        state.cursor.string = 1;
+        expect(state.setFingering('T')).toBe(false);
+        expect(state.setLeftHand(0)).toBe(false);
+        expect(state.clearFingerings()).toBe(false);
+    });
+
+    it('leaves the effects alone (they are different marks)', () => {
+        state.addArticulation('h');
+        state.setFingering('T');
+        state.setLeftHand(2);
+        state.clearEffectsAtCursor();
+        expect(state.getNoteAtCursor().tech).toBeUndefined();
+        expect(state.getNoteAtCursor().finger).toBe('T');
+        expect(state.getNoteAtCursor().lh).toBe(2);
+        state.addArticulation('p');
+        state.clearFingerings();
+        expect(state.getNoteAtCursor().tech).toBe('p');
+        expect(state.getNoteAtCursor().finger).toBeUndefined();
+    });
+});

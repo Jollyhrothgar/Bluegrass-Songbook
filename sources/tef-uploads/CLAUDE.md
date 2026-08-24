@@ -6,10 +6,18 @@ User-uploaded TEF (TablEdit) files for conversion to OTF tablature.
 
 ```
 tef-uploads/
-├── uploads/     # Raw TEF files (checked into git)
-├── parsed/      # Converted OTF files (gitignored)
+├── uploads/     # Raw TEF files (see caveat below)
 └── CLAUDE.md    # This file
 ```
+
+⚠️ `parsed/` does **not** exist — nothing has created it yet. The conversion
+snippet below writes into it, so `mkdir -p sources/tef-uploads/parsed` first
+or `open(...)` raises `FileNotFoundError`.
+
+⚠️ `uploads/` is listed in the repo-root `.gitignore`
+(`sources/tef-uploads/uploads/`). The three files below are tracked because
+they predate that rule; a **new** `.tef` dropped in `uploads/` will be
+ignored and needs `git add -f` to be committed.
 
 ## Current Files
 

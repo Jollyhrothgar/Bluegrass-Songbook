@@ -84,3 +84,12 @@ docs/data/tabs/*.otf.json
 # generated: build_works_index's orphan prune deliberately spares them and
 # docs/js/__tests__/otf-editor/facade-27493.test.js reads one directly.
 !docs/data/tabs/*_tef.otf.json
+# Lowered form of curation/bounty_decisions.yaml (which IS tracked — it's the
+# hand-authored source). Rebuilt by scripts/lib/bounty_decisions.py on every
+# index build, and its chord counts come from the freshly written index, so a
+# committed copy would go stale the moment a work gains chords.
+docs/data/bounty_decisions.json
+# ...and the board itself, now that build_wanted.py regenerates it during the
+# index build. curation/bounty_decisions.yaml and docs/data/bluegrass_catalogue.json
+# ARE tracked — they are the hand-authored and locally-produced inputs.
+docs/data/wanted_songs.json

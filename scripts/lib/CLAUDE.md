@@ -26,6 +26,40 @@ sources/*/parsed/*.pro  →  migrate_to_works.py  →  works/
 - `curate.py` - Convergence CLI for the curation registry
 - `build_index.py` - LEGACY: Builds from sources/ (kept for reference)
 
+## Secrets
+
+Nothing secret is written to disk. `.env.tpl` files hold 1Password `op://`
+references and are committed; the real values are injected into a command's
+environment at the moment it runs:
+
+```bash
+./scripts/lib/with-secrets -- uv run python3 scripts/lib/fetch_deleted_songs.py
+./scripts/lib/with-secrets --tpl analytics/.env.tpl -- <command>
+```
+
+`./scripts/utility` already routes the commands that need secrets through it —
+the sync commands, genre-suggestion export, Strum Machine matching, LLM
+tagging — and `analytics/scripts/server` launches Jupyter the same way. If you
+add a script that reads `SUPABASE_SERVICE_ROLE_KEY`, `ANTHROPIC_API_KEY` or
+`STRUM_MACHINE_API_KEY`, wrap its call site too.
+
+Why: `SUPABASE_SERVICE_ROLE_KEY` bypasses every RLS policy in the project.
+`op inject -o .env` used to leave a plaintext copy in each worktree — five
+worktrees, five copies at rest, none of them expiring. Injection at run time
+means it exists only for the life of the process, and 1Password decides whether
+to hand it over.
+
+`with-secrets` falls back in order: 1Password if signed in, then an existing
+`.env` (machines without `op`, and CI, where secrets arrive as real environment
+variables), then whatever is already exported. `scripts/bootstrap` **does not
+delete** a redundant `.env` — it only prints that you may remove it yourself
+(`rm -f .env analytics/.env`). It used to delete one as soon as `op whoami`
+succeeded, which stranded this very worktree: a 1Password session is per-shell
+and short-lived, so signing in in one terminal removed the fallback for every
+other one. Regenerate one any time with `op inject -i .env.tpl -o .env`.
+
+Sign in once per session with `op signin`.
+
 ## Local vs CI Operations
 
 Some operations require external APIs/databases and only run locally. Others run everywhere.
@@ -38,7 +72,17 @@ Some operations require external APIs/databases and only run locally. Others run
 | **Grassiness scores** | Local only | `bluegrass_recordings.json`, `bluegrass_tagged.json` | Song-level bluegrass detection |
 | **Strum Machine URLs** | Local only | `strum_machine_cache.json` | API rate limited (10 req/sec) |
 | **Deleted songs sync** | Scheduled CI + local | `deleted_songs.json` | `.github/workflows/sync-deleted-songs.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-deleted-songs` |
+| **Promoted songs sync** | Scheduled CI + local | `promoted_songs.json` | same workflow as deleted songs, or `./scripts/utility sync-promoted-songs`. Any signed-in user can promote (was trusted-only) |
+| **Tag overrides sync** | Scheduled CI + local | `tag_overrides.json` | `.github/workflows/sync-community-input.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-tag-votes`; auto-applied at next index build |
+| **Genre suggestions export** | Scheduled CI + local | `user_genre_suggestions.json` | same workflow as tag overrides, or `./scripts/utility export-suggestions`; review-only, never auto-applied |
 | **TuneArch fetch** | Local only | - | Fetches new instrumentals |
+
+**A sync that cannot reach Supabase fails.** `fetch_deleted_songs.py`,
+`fetch_promoted_songs.py` and `fetch_tag_overrides.py` exit non-zero rather
+than warning and serving the on-disk copy — a broken sync used to look like a
+successful one and let the build ship stale data. `scripts/lib/supabase_client.py`
+holds the shared connect/fail logic, including telling a genuinely missing
+`supabase` package apart from a broken dependency inside it.
 
 **How caching works:**
 1. Run local command to populate cache (e.g., `refresh-tags`, `strum-machine-match`)
@@ -52,6 +96,7 @@ Some operations require external APIs/databases and only run locally. Others run
 - `docs/data/bluegrass_tagged.json` - Recordings with MusicBrainz bluegrass tags
 - `docs/data/grassiness_scores.json` - Computed grassiness scores per song
 - `docs/data/deleted_songs.json` - Soft-deleted song IDs (synced from Supabase via `fetch_deleted_songs.py`; suppressed at index build)
+- `docs/data/promoted_songs.json` - Promotions from the Bluegrass Dungeon (any signed-in user) (synced from Supabase via `fetch_promoted_songs.py`; unioned with the registry `keep:` map at index build)
 
 ## Files
 
@@ -72,8 +117,14 @@ scripts/lib/
 ├── fetch_tune.py         # Fetch tunes from TuneArch by URL
 ├── search_index.py       # Search index utilities and testing
 ├── add_song.py           # Add a song to manual/parsed/
-├── process_submission.py # GitHub Action: process song-submission issues
-├── process_correction.py # GitHub Action: process song-correction issues
+├── process_pending.py    # GitHub Action: land one pending_songs row in works/
+├── works_writer.py       # THE one writer of works/ (create/update/fork/add/metadata)
+├── bounty_decisions.py   # Lower curation/bounty_decisions.yaml → docs/data/bounty_decisions.json
+├── migration_drift.py    # Report ledger drift in BOTH directions (db-push)
+├── schema_assert.py      # Assert LIVE schema invariants (db-check)
+├── dedup_scorer.py       # Is this submission already a work? (containment on lyrics)
+├── dedup_works.py        # Whole-corpus duplicate detection → merge plan JSON
+├── merge_works.py        # Execute a merge plan (redirects included)
 ├── chord_counter.py      # Chord statistics utility
 ├── loc_counter.py        # Lines of code counter for analytics
 ├── export_genre_suggestions.py  # Export genre suggestions for review
@@ -84,6 +135,10 @@ scripts/lib/
     ├── build_artist_database.py  # Build curated bluegrass artist database
     └── grassiness.py     # Bluegrass detection based on covers/tags
 ```
+
+This tree is hand-maintained and lags. `ls scripts/lib/*.py` is the real
+list — a few utilities (`check_index_outputs.py`, `coverage_report.py`,
+`fetch_chords.py`) are deliberately not described here.
 
 ## Quick Commands
 
@@ -222,6 +277,33 @@ Row-shape changes (`write_outputs()` in `build_works_index.py`):
 | `has_abc` | `true` when the lead sheet embeds an ABC block; **omitted** otherwise |
 | `tablature_parts[].tracks` | int — the OTF's PLAYABLE track count, read during the tab copy step (lets the frontend decide about the track mixer without downloading the OTF). Percussion tracks are excluded: they're neither rendered nor played, so counting them would stamp `tag:multipart` on single-instrument tabs |
 | `lyrics` | unchanged on canon rows; clipped to 200 chars on archive rows |
+| `arrangements` | present **only** on a work that holds more than one lead sheet (see below); omitted otherwise, so single-sheet rows are untouched |
+
+**Forked lead sheets (`arrangements`)**. `works_writer.fork_to_arrangement`
+lands an edit of somebody else's chart as an ADDITIONAL lead-sheet part on the
+same work (`lead-sheet-<label>.pro`, `default: false`, `x_version_*`
+populated) instead of overwriting what was there. The build publishes each one
+as `docs/data/songs/{id}--{slug}.pro` — the `--` cannot collide with another
+work's `{id}.pro` because `slugify` collapses dash runs, so no minted work id
+contains one — and lists every take on the row:
+
+```json
+"arrangements": [
+  {"slug": "default", "label": "Original", "default": true,
+   "file": "data/songs/how-long-blues.pro", "key": "G", "chord_count": 4},
+  {"slug": "simplified", "label": "Simplified", "version_type": "simplified",
+   "arrangement_by": "Jane Picker", "notes": "…", "submitted_by": "<uuid>",
+   "file": "data/songs/how-long-blues--simplified.pro", "key": "G",
+   "chord_count": 3}
+]
+```
+
+The PRIMARY lead sheet still owns the row: `content`, `lyrics`, `chords`,
+`nashville`, `key` and search behaviour all come from `lead-sheet.pro` exactly
+as before — a fork adds a chart to read, never a second search hit. The slug
+comes from the part's filename (which `works_writer` already keeps unique
+within the work), so it is stable across builds and across label edits. The
+frontend lists these in the Arrangement pill (`docs/js/work-view.js`).
 
 Everything else is byte-for-byte what it was. Both `.jsonl` files inherit the
 build's id sort, and `.pro` files are only rewritten when their text changed,
@@ -348,6 +430,24 @@ in `curation/registry.yaml` at the repo root — not in `works/*/work.yaml`:
 frontend's Arrangement pill reads these). Importers call `is_suppressed()`
 so suppressed works are never re-created from sources.
 
+**Suppression is two questions, not one** (2026-08-19). `is_suppressed()` is
+the MINT guard: exact id *plus* the collision-suffix base, so an importer
+cannot resurrect a suppressed `foo` as `foo-1`. `is_suppressed_exact()` is
+the WRITE guard: exact id only, asked before touching a work that already
+exists (`add_part` / `update_part` / `update_metadata` /
+`fork_to_arrangement`, via `works_writer.Guards.blocked_existing`). The mode
+decides which — `create_work` is the only entry point that can bring a work
+into being.
+
+Why: `works/dark-hollow-1` is a curated golden-standard work with nothing to
+do with the soft-deleted `dark-hollow`, and `-1` is not proof of a collision
+artifact. Asking the mint question about it refused a real user's guitar tab
+— then refused it again every hour, because `process-pending` failed, the row
+stayed uncommitted, and the reconciler re-fired it. The exact-id half is kept
+deliberately for existing works: it is the same question `filter_suppressed()`
+asks, so **if the build still publishes a work you may add to it, and if the
+build drops it you may not.**
+
 - **Tab pins**: which tablature arrangement is the default for a given
   work + instrument (`tab_pins: {work-id: {instrument: source_id}}`)
 
@@ -361,9 +461,14 @@ so suppressed works are never re-created from sources.
 ### Index Prune — the searchable index is the bluegrass canon
 
 **Policy (Mike, 2026-07-31):** search and collections deliberately show only
-bluegrass + bluegrass-adjacent repertoire (~1,800 songs). The other ~16,900
-works are NOT deleted: they stay on disk, keep their `#work/{slug}` URLs,
-stay in lists, and can be restored to search at any time.
+bluegrass + bluegrass-adjacent repertoire. Everything else is NOT deleted: it
+stays on disk, keeps its `#work/{slug}` URL, stays in lists, and can be
+restored to search at any time.
+
+The kept/archived split moves as songs are promoted, so count it rather than
+quoting a number: `wc -l docs/data/index.jsonl docs/data/archive.jsonl` after
+a build (2,462 kept / 16,762 archived on 2026-08-19; it was ~1,800 / ~16,900
+when this policy landed).
 
 Mechanism: `curation/index_prune.csv` lists work ids that
 `apply_index_prune()` stamps `indexed: false` at build time. A row is
@@ -390,18 +495,68 @@ Restoring songs later:
 # entries in curation/registry.yaml), then rebuild
 ```
 
-### Deleted-Songs Sync
+### Deleted/Promoted-Songs Sync
 
-Admin soft-deletes land in the Supabase `deleted_songs` table. The
-`Sync Deleted Songs` workflow (`.github/workflows/sync-deleted-songs.yml`,
-hourly cron + manual dispatch) writes them to the committed
-`docs/data/deleted_songs.json` cache and its commit triggers a rebuild +
-deploy, so UI deletes actually stick. Manual fallback:
+Admin soft-deletes land in the Supabase `deleted_songs` table; promotions from
+the Bluegrass Dungeon land in `promoted_songs` — open to any signed-in user,
+with undo limited to the promoter or a trusted user. The
+`Sync Deleted + Promoted Songs` workflow
+(`.github/workflows/sync-deleted-songs.yml`, hourly cron + manual dispatch)
+writes both to the committed caches (`docs/data/deleted_songs.json`,
+`docs/data/promoted_songs.json`). Its commit reaches the site **only via
+`build.yml`'s `workflow_run` trigger, and only while this workflow's `name:`
+is listed there** — see "How a bot commit reaches the site" below. A promotion
+has the same effect
+as `curate unprune` but lives in the JSON cache instead of `registry.yaml`;
+if a promoted work was also deleted, deletion wins (the build warns).
+Manual fallback:
 
 ```bash
-./scripts/utility sync-deleted-songs   # runs fetch_deleted_songs.py
-git add docs/data/deleted_songs.json && git commit -m "Sync deleted songs"
+./scripts/utility sync-deleted-songs    # runs fetch_deleted_songs.py
+./scripts/utility sync-promoted-songs   # runs fetch_promoted_songs.py
+git add docs/data/deleted_songs.json docs/data/promoted_songs.json
+git commit -m "Sync deleted/promoted songs"
 ```
+
+### How a bot commit reaches the site
+
+**A commit pushed by a workflow does NOT trigger a deploy on its own.** GitHub
+refuses to start workflows for pushes made with the default `GITHUB_TOKEN`
+(recursive-workflow prevention), and every workflow here checks out with a
+plain `actions/checkout@v4`. So a `github-actions[bot]` commit lands in git and
+nothing rebuilds — the change is durable and invisible.
+
+The one thing that closes the gap is the `workflow_run` trigger in
+`.github/workflows/build.yml`:
+
+```yaml
+workflow_run:
+  workflows: ["Process Pending Submission", "Process Tune Request",
+              "Sync Community Input", "Sync Deleted + Promoted Songs"]
+  types: [completed]
+  branches: [main]
+```
+
+Two things about that list bite:
+
+1. **It matches the `name:` field, not the filename.** Renaming a workflow
+   unhooks deployment, and GitHub reports nothing — no warning, no error, no
+   failed run. It has drifted twice (submissions since 2026-08-15, deletes and
+   promotions since 2026-08-14, both fixed 2026-08-18).
+2. **A workflow missing from the list deploys nothing, ever.** Adding a new
+   workflow that pushes to main means adding its name here too.
+
+`tests/test_workflow_deploy_triggers.py` now enforces both directions: every
+workflow containing a `git push` must be listed, every listed name must exist
+and must actually push. A rename now fails CI.
+
+Downstream of that: `cleanup-pending.yml` triggers on `CI & Deploy` completing
+successfully, so while the trigger was broken, committed `pending_songs` rows
+were not being reaped either. Restoring the deploy restores the reaping.
+
+If a commit is already on `main` and the site is stale, the manual escape hatch
+is `gh workflow run build.yml --ref main` — `workflow_dispatch` bypasses the
+`gate` job and always rebuilds.
 
 ### Output Format
 
@@ -634,26 +789,259 @@ results = query_artist_tags_batch(['Bill Monroe', 'Hank Williams'])
 
 ## add_song.py
 
-Adds a `.pro` file to `sources/manual/parsed/` and rebuilds index.
+Creates a work in `works/` from a local `.pro` file, then rebuilds the index.
 
 ```bash
 ./scripts/utility add-song ~/Downloads/my_song.pro
+./scripts/utility add-song song.pro --title "Salt Creek" --artist "Bill Monroe"
+./scripts/utility add-song song.pro --on-collision suffix
 ./scripts/utility add-song song.pro --skip-index-rebuild
 ```
 
-## process_submission.py / process_correction.py
+- Metadata (title / artist / composer / key) is read from the chart's own
+  `{meta: ...}` / `{title: ...}` directives with the same parser the index
+  build uses; the flags override. No title anywhere is an error.
+- The id is `slugify(title)` (or `--id`), the same rule
+  `process_pending.tab_work_slug` mints with.
+- It writes through `works_writer.create_work` — so a suppressed/redirected
+  id is refused, an existing work is **never** overwritten (`fail` is the
+  default here rather than the importers' `suffix`), and the part carries
+  `provenance.source: manual` + `source_file` + `imported_at`.
+- The rebuild runs `build_works_index.py` (the primary builder).
 
-Called by GitHub Actions when issues are approved.
+Fixed 2026-08-19. It used to copy the file into `songs/manual/parsed/` — a
+directory no build reads; the legacy `build_index.py` it then ran scans
+`sources/*/parsed/` — so the command printed "Added:", exited 0, and put the
+song nowhere. `songs/manual/parsed/roustabout.pro` (commit 75e93a7a0, "claude
+didn't add everything") is the one known casualty.
 
-**Trigger**: Issue labeled `song-submission` + `approved` (or `song-correction`)
+## add_placeholder.py
+
+Creates a work with metadata and **no parts at all** — `parts: []` plus
+`status: placeholder`, which is what `utils.isPlaceholder` and the bounty
+board read.
+
+```bash
+./scripts/utility add-placeholder "Rebecca" --artist "Jim Mills" --key B \
+    --tags Bluegrass,Instrumental --notes "Classic banjo tune"
+./scripts/utility add-placeholder "Rebecca" --on-collision fail
+./scripts/utility add-placeholder "Rebecca" --repo-root /tmp/scratch --skip-index-rebuild
+```
+
+Converted to `works_writer.create_work(..., part=None)` on 2026-08-19 — it
+was the last hand-writer of `works/`. It built `work.yaml` with a bare
+`yaml.dump`, ran its own collision loop, and asked **neither** the
+suppression registry **nor** the redirect map, so it could mint a work at an
+id an admin had deleted or at an id `merge_works` had already pointed
+elsewhere. Both now refuse and exit 1 (`on_suppressed='raise'`).
+
+`create_work` takes `part` as a required positional that may be `None`
+rather than growing a sibling entry point: a placeholder needs the same
+three minting questions answered (suppressed? redirected? taken — suffix or
+fail?), and a second function would have been a second copy of them. Spelling
+`None` out means nobody mints an empty work by forgetting an argument.
+
+Collision behaviour is unchanged (`rebecca` → `rebecca-1`), except that the
+suffix hunt now steps over candidates that are themselves suppressed.
+`--on-collision fail` and `--repo-root` are new; nothing was removed. The
+Python API changed shape: `create_placeholder(title, *, repo_root=...)`
+returns a `WriteResult` (it took `works_dir` and returned a `Path`) —
+`repo_root`, because the guards live at `curation/registry.yaml`,
+`docs/data/deleted_songs.json` and `docs/data/redirects.json`.
+
+## process_pending.py — the live contribution path
+
+Called by `.github/workflows/process-pending.yml` on the `pending-commit`
+repository_dispatch that `auto-commit-song` (or the hourly reconciler) fires.
+
+**Trigger**: any logged-in user saves a song **or a tab** in the editor. The
+row lands in Supabase `pending_songs` (live in the overlay in seconds); the
+edge function classifies the change and dispatches; this script makes it
+durable.
+
+**Env**: `PENDING_ROW_ID`, `PENDING_MODE`, `PENDING_WORK_ID`, `PENDING_ACTOR`,
+`SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`.
 
 **Process**:
-1. Extract ChordPro from issue body (```chordpro block)
-2. Extract song ID from issue body
-3. Write to `sources/manual/parsed/{id}.pro`
-4. Add to `protected.txt` (for corrections)
-5. Rebuild index
-6. Commit changes
+1. `GET /rest/v1/pending_songs?id=eq.<row>` (urllib — no SDK in the write path)
+2. Hand the dispatched mode to `works_writer`:
+   - `create` → `create_work(on_collision='suffix')`
+   - `update` → `update_part` on the chart the actor OWNS (`update_target`)
+   - `fork` → `fork_to_arrangement`, `x_version_*` from the submitter identity
+   - `metadata` → `update_metadata` — work-level fields only, no part
+   - `placeholder` → `create_work(part=None, on_collision='fail')` — a song
+     request: metadata, `status: placeholder`, `parts: []`
+3. The workflow commits, pushes with rebase-retry, then marks the row
+   `github_committed`.
+
+**Tablature** (2026-08-18, `apply_tablature_row`). A row with
+`part_type = 'tablature'` carries a serialized OTF in `content` plus an
+`instrument`, and (for a correction) the `part_file` it targets. It replaced
+the `create-tab-pr` → `process-tab-pr.yml` pull-request flow, which is
+deleted along with `process_tab.py`; `validate_otf` moved here and is still
+the only structural check an incoming OTF gets.
+
+| mode | writer call | file |
+|---|---|---|
+| `create` | `create_work` (tags `[Instrumental]`) | `<instrument>.otf.json` |
+| `add` | `add_part` | `works_writer.unique_filename` → `<instrument>[-N].otf.json` |
+| `update` | `update_part` matched on `{'type': 'tablature', 'file': part_file}` | that file |
+
+`add` is the tab column's `fork` — a non-owner's "correction" becomes a
+sibling take, never a rewrite — and a dispatched `update` whose named part
+has since vanished degrades to `add` rather than guessing at a substitute
+target.
+
+**A tab row's id is not a work slug.** `pending_songs` is keyed one row per
+SONG; a tab is a part, so tab rows are `tab:<slug>:<rand>` and target
+`replaces_id`. A `create` therefore names its work from the TITLE —
+`tab_work_slug()` re-derives it rather than trusting the dispatch, and
+`create_work(on_collision='suffix')` resolves the real slug against the
+checkout (`salt-creek`, `salt-creek-1`, …). That is the free-slug hunt
+`create-tab-pr` did by probing the Contents API from a branch that could not
+see other branches.
+
+**The submitter's comment** (`row['notes']`) lands on the PART as
+`provenance.x_submission_notes`, or `x_correction_notes` on an `update` —
+never in the work-level `notes` the chart path writes, which describes the
+song rather than one take of it. The retired PR flow put this text in the PR
+body and wrote it nowhere; with no reviewer, provenance is where it lives.
+
+Two more tab-only behaviours worth knowing: the **dedup backstop is
+skipped** (it scores lyric containment and an OTF has no lyrics), and the
+document's **`x_source` block is dropped** on the way in, because it claims
+to be the conversion of a specific Hangout TEF and `build_works_index` fails
+the whole build when that id disagrees with `provenance.source_id` — which
+is the idempotence marker here. The displaced identity is kept as
+`provenance.x_derived_from`.
+
+**Metadata** (2026-08-18, `apply_metadata_row`). A row with
+`part_type = 'metadata'` carries NO content, names its target in
+`replaces_id`, and edits only the work's own fields. It exists because a work
+minted by a TAB had a title and nothing else — no artist, no key — and no
+path to a fix: every other row shape edits a PART, and the work-level fields
+only ever rode along with a rewrite of the primary chart, which a tab-only
+work does not have.
+
+| mode | writer call | file |
+|---|---|---|
+| `metadata` | `update_metadata` (title / artist / key→`default_key` / notes) | none — no part is created, replaced, renamed or reordered |
+
+"Touches no part" is structural, not a promise: `update_metadata` accepts a
+whitelist of work-level keys and `parts` is not on it. Fields the row does
+not carry are DROPPED, never written — a null artist means "I didn't touch
+it", and there is no clear-a-field gesture in this pipeline. The dedup
+backstop is skipped explicitly (it guards a `create` minting a slug; this
+mints nothing, and there is no ChordPro to score). Who may send one is
+decided before the dispatch by `classifyChange`: own **any** part of the
+work, or be trusted — a looser question than the per-part-type ownership a
+content edit must pass, because naming an artist rewrites nobody's content.
+
+**Placeholder** (2026-08-19, `apply_placeholder_row`). A song REQUEST: a work
+with metadata, `status: placeholder` and `parts: []` — the shape
+`utils.isPlaceholder` and the bounty board read.
+
+| mode | writer call | file |
+|---|---|---|
+| `placeholder` | `create_work(part=None, on_collision='fail')` | none — the work has no parts |
+
+`create-song-request` used to do this itself, in TypeScript: it interpolated a
+`work.yaml` string and PUT it to the GitHub Contents API **passing the
+existing file's sha whenever the path was taken**, so a request whose
+client-generated slug collided with a real work replaced its parts, artist,
+composers and tags with an empty stub. No suppression check, no redirect
+check, no collision handling. That function predates phase 1c/2b and was the
+last one never converted; `works_writer`'s guards now apply to it like
+everything else.
+
+A request is a lead-sheet row that has NO lead sheet, so it is not a new
+`part_type` — it is recognised by shape (`is_placeholder_row`: status
+`placeholder` **and** no content; both halves matter, because `status` is a
+sticky column on a row the editor may later upsert a real chart onto). Three
+things it does differently: the dedup backstop is skipped (no ChordPro to
+score, and "is this song here?" was just answered by looking), an existing
+work at the id is a **refusal** rather than a suffix (an empty placeholder at
+`foo-1` is a bounty entry for a song we already have) parked via
+`hold_reason`, and the idempotence marker hashes the FIELDS and is stamped at
+the work level as `metadata_provenance` — which doubles as the only record of
+who asked.
+
+**Idempotence**: every part written carries
+`provenance.source_id = pending:<row id>:<content sha>`. A replayed dispatch
+finds the marker and no-ops; a genuine re-edit changes the sha and applies.
+A metadata row has no content to hash, so `metadata_marker` hashes the FIELDS
+it is applying (canonical sorted-key JSON) and stamps the result at the work
+level as `metadata_provenance.source_id` — same `pending:<row id>:<sha>`
+shape, same property in both directions. Hashing the always-null content
+instead would give every metadata row in the table the same marker, so the
+first edit of a work would make every later edit of it look like a replay.
+The mode is decided server-side in `supabase/functions/_shared/pending-dispatch.ts`
+— the client cannot claim "update" on somebody else's chart.
+
+**Ownership is asked per part type.** `owns_content(repo, work, user,
+part_type)` and the edge function's `submittersOf(yaml, partType)` count only
+parts of the kind being edited. They used to count all of them, which was
+safe only while `submitted_by` appeared on lead sheets alone (the old PR tab
+flow recorded `author`). Once tab rows started carrying `submitted_by`, the
+loose question would have read "Alice submitted a banjo tab here" as "Alice
+owns content here" → `update` instead of `fork` → `update_target` finds she
+owns no chart → the trusted fallback → an in-place overwrite of somebody
+else's primary chart, plus the work's title/artist/key. Contributing a tab
+would have bought edit rights over a stranger's lyrics.
+
+**Which chart an `update` rewrites** (`process_pending.update_target`): the
+mode alone is not enough. Both classifiers answer `update` as soon as the
+caller appears in any CHART part's `provenance.submitted_by`, so a user who
+owns only a FORK is dispatched in update mode — and a bare
+`{'type': 'lead-sheet'}` match is default-preferred, i.e. the PRIMARY. The rule: land on the part the
+row landed on before (`pending:<row id>:` in its provenance), else the primary
+if the actor owns it, else their most recent chart; owning no chart at all
+means they got here through the *trusted* branch, and that right is over the
+primary. Work-level fields (title/artist/key/notes) ride along only when the
+primary is what is being edited.
+
+## dedup_scorer.py — is this submission already a work?
+
+Per-submission duplicate check. `dedup_works.py` is unchanged and still does the
+other job (whole-corpus merge plans); this one answers a single incoming chart.
+
+**Containment, not Jaccard.** The metric is `|A ∩ B| / |smaller side|` over
+**full** normalized lyric *word sets*. A lyrics-only scrape is nearly a subset of
+a fuller submission, and Jaccard punishes exactly that size gap. Word sets are
+also order-independent, which matters: the `how-long-blues` pair (issue #208)
+orders chorus and verse differently, and `dedup_works.py` — first 300 chars, in
+order — scored it **0.043** against a 0.5 threshold. It scores **0.886** here.
+
+**Signal order: lyrics > title > chords.**
+
+- Lyrics decide the match. Nothing else does.
+- Title only *narrows* candidates (inverted index over title words, then
+  `SequenceMatcher`), because titles collide constantly.
+- Chords are **not** a matching signal — half the canon is I-IV-V in G. Chord
+  *presence* picks the outcome: existing lyrics-only + incoming with chords is an
+  **enrichment**, not a duplicate. Composer is not a signal either (12 of 19,228
+  works have one).
+
+**Outcomes**: `enrich` / `duplicate` / `arrangement-candidate` / `no-match`.
+Only `enrich` is ever marked `auto_actionable`, and only above 0.85 — adding
+chords to a lyrics-only work cannot destroy anything.
+
+**Instrumentals never fall back to title silently.** With no usable lyrics on
+either side the verdict carries `low_confidence=True` plus a warning, needs a
+0.95+ title match before it will even name a candidate, and is never
+auto-actionable.
+
+**Cost**: the title index reads only the head of each `work.yaml` (~1.2s for 19k
+works, once per process, lazily). Lyrics are read **only** for works that survive
+title narrowing, and are memoized — a query is ~10-30ms after the index is warm.
+
+```bash
+uv run python scripts/lib/dedup_scorer.py how-long-blues how-long-blues-1
+uv run python scripts/lib/dedup_scorer.py --scan submission.pro --json
+```
+
+Tests: `tests/test_dedup_scorer.py` (fixtures in `tests/fixtures/dedup/`, with
+provenance in the module docstring).
 
 ## Metadata Parsing
 

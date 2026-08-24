@@ -1,8 +1,10 @@
-name: Sync Deleted Songs
+name: Sync Deleted + Promoted Songs
 
 # Bridges the Supabase deleted_songs table (written by admin deletes in the UI)
-# into the committed cache the build actually reads. Without this, UI deletes
-# never reach the deployed index and "deleted" songs resurrect on every deploy.
+# and the promoted_songs table (written by trusted-user promotes in the
+# Bluegrass Dungeon) into the committed caches the build actually reads.
+# Without this, UI deletes never reach the deployed index ("deleted" songs
+# resurrect on every deploy) and promotions never leave the archive.
 
 on:
   schedule:
@@ -25,26 +27,28 @@ jobs:
       - name: Set up uv
         uses: astral-sh/setup-uv@v5
 
-      - name: Fetch deleted songs from Supabase
+      - name: Fetch deleted and promoted songs from Supabase
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
-          # fetch_deleted_songs.py silently falls back to the cached file when
-          # creds are missing — fail loudly here instead so a misconfigured
-          # secret can't masquerade as "nothing to sync".
+          # The fetch scripts exit non-zero on their own if they cannot reach
+          # Supabase, so this check is belt-and-braces. It stays because it
+          # fails a step earlier and renders as a proper Actions annotation,
+          # which is easier to spot than a Python traceback.
           if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
             echo "::error::SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY secrets are not set"
             exit 1
           fi
           uv run --with supabase python scripts/lib/fetch_deleted_songs.py
+          uv run --with supabase python scripts/lib/fetch_promoted_songs.py
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/deleted_songs.json
-          git diff --staged --quiet || git commit -m "Sync deleted songs from Supabase"
+          git add docs/data/deleted_songs.json docs/data/promoted_songs.json
+          git diff --staged --quiet || git commit -m "Sync deleted/promoted songs from Supabase"
 
           # Retry push with rebase in case of concurrent pushes
           for i in 1 2 3; do

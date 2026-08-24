@@ -189,6 +189,9 @@ describe('EditEventRecorder', () => {
                     addArticulation: vi.fn(),
                     removeArticulation: vi.fn(),
                     setPendingArticulation: vi.fn(),
+                setFingering: vi.fn(),
+                setLeftHand: vi.fn(),
+                clearFingerings: vi.fn(),
                     copy: vi.fn(),
                     paste: vi.fn(),
                     undo: vi.fn(),
@@ -271,6 +274,9 @@ describe('dispatchEditorEvent', () => {
                 addArticulation: vi.fn(),
                 removeArticulation: vi.fn(),
                 setPendingArticulation: vi.fn(),
+                setFingering: vi.fn(),
+                setLeftHand: vi.fn(),
+                clearFingerings: vi.fn(),
                 copy: vi.fn(),
                 paste: vi.fn(),
                 undo: vi.fn(),
@@ -365,6 +371,45 @@ describe('dispatchEditorEvent', () => {
         expect(editor.state.addArticulation).toHaveBeenCalledWith('h');
     });
 
+    // Fingering replays per HAND, because they are two fields on the
+    // note and a recording that set one must not wipe the other.
+    it('dispatches setFingering at the recorded position', () => {
+        const editor = makeMockEditor();
+        dispatchEditorEvent(editor, {
+            type: 'setFingering',
+            params: { measure: 2, tick: 240, string: 1, finger: 'R' },
+        });
+        expect(editor.state.cursor).toMatchObject({ measure: 2, tick: 240, string: 1 });
+        expect(editor.state.setFingering).toHaveBeenCalledWith('R');
+    });
+
+    it('dispatches a fingering CLEAR (finger: null) as a clear', () => {
+        const editor = makeMockEditor();
+        dispatchEditorEvent(editor, {
+            type: 'setFingering',
+            params: { measure: 1, tick: 0, string: 3, finger: null },
+        });
+        expect(editor.state.setFingering).toHaveBeenCalledWith(null);
+    });
+
+    it('dispatches setLeftHand, digit 0 included', () => {
+        const editor = makeMockEditor();
+        dispatchEditorEvent(editor, {
+            type: 'setLeftHand',
+            params: { measure: 1, tick: 0, string: 3, digit: 0 },
+        });
+        expect(editor.state.setLeftHand).toHaveBeenCalledWith(0);
+    });
+
+    it('dispatches clearFingerings', () => {
+        const editor = makeMockEditor();
+        dispatchEditorEvent(editor, {
+            type: 'clearFingerings',
+            params: { measure: 1, tick: 0, string: 3 },
+        });
+        expect(editor.state.clearFingerings).toHaveBeenCalled();
+    });
+
     it('dispatches undo', () => {
         const editor = makeMockEditor();
         dispatchEditorEvent(editor, { type: 'undo', params: {} });
@@ -419,5 +464,45 @@ describe('dispatchEditorEvent', () => {
         dispatchEditorEvent(editor, { type: 'unknownEvent', params: {} });
         expect(warnSpy).toHaveBeenCalledWith('Unknown replay event type: unknownEvent');
         warnSpy.mockRestore();
+    });
+});
+
+// The recorder's replay path must reach the new document ops, or a
+// recorded session silently skips them.
+describe('recorder replay covers the new editor ops', () => {
+    it('dispatches every new event type without warning', async () => {
+        const { EditorState } = await import('../../otf-editor/state.js');
+        const warn = console.warn;
+        const warned = [];
+        console.warn = (m) => warned.push(m);
+        try {
+            const state = new EditorState();
+            const editor = { state, cursor: null };
+            state.cursor.string = 3;
+            state.insertNote(0);
+            const events = [
+                { type: 'setAutoDuration', params: { auto: true } },
+                { type: 'setAutoDuration', params: { auto: false } },
+                { type: 'toggleDotted', params: {} },
+                { type: 'applyDurationToSelection', params: { duration: 240 } },
+                { type: 'scaleDuration', params: { measure: 1, tick: 0, string: 3, factor: 2 } },
+                { type: 'scaleSelectionDuration', params: { factor: 2 } },
+                { type: 'fixDurations', params: { measure: 1 } },
+                { type: 'transposeFret', params: { measure: 1, tick: 0, string: 3, delta: 1 } },
+                { type: 'moveNoteToString', params: { measure: 1, tick: 0, string: 3, direction: 1 } },
+                { type: 'toggleTie', params: { measure: 1, tick: 0, string: 4 } },
+                { type: 'ensureMeasure', params: { measure: 3 } },
+                { type: 'repeatMeasure', params: { measure: 2 } },
+                { type: 'shiftRight', params: { measure: 1, tick: 0, ticks: 240 } },
+                { type: 'shiftLeft', params: { measure: 1, tick: 240, ticks: 240 } },
+                { type: 'deleteMeasure', params: { measure: 3 } },
+                { type: 'toggleAutoAdvance', params: {} },
+            ];
+            for (const event of events) dispatchEditorEvent(editor, event);
+            expect(warned).toEqual([]);
+            expect(state.autoAdvance).toBe(false);
+        } finally {
+            console.warn = warn;
+        }
     });
 });

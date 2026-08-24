@@ -42,6 +42,7 @@ _SCRIPTS_LIB = REPO_ROOT / 'scripts' / 'lib'
 if str(_SCRIPTS_LIB) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS_LIB))
 from curation import is_suppressed, load_deleted_songs, load_registry
+from dedup_scorer import Chart, WorkCorpus
 
 
 def slugify(text: str) -> str:
@@ -100,21 +101,116 @@ def _title_index(site: SiteConfig = DEFAULT_SITE) -> dict:
     return index
 
 
-def find_matching_work(title: str, site: SiteConfig = DEFAULT_SITE) -> Optional[Path]:
-    """Find an existing work that matches this title.
+_WORK_CORPUS: Optional[WorkCorpus] = None
 
-    Returns the work directory path if found, None otherwise.
+
+def get_work_corpus() -> WorkCorpus:
+    """The shared dedup-scorer corpus (scripts/lib/dedup_scorer.py) for this
+    process — built once and reused for the whole import run.
+
+    Constructing a fresh ``WorkCorpus`` per tab would re-read every
+    ``work.yaml``'s title on every call: the same quadratic trap
+    ``_title_index`` above exists to avoid for the legacy matcher.
+    ``batch_import`` builds one and threads it through every
+    ``find_matching_work`` / ``import_tab`` call in its loop; this getter
+    only exists for direct callers (``import_verified.py``) that don't.
+    """
+    global _WORK_CORPUS
+    if _WORK_CORPUS is None:
+        _WORK_CORPUS = WorkCorpus(WORKS_DIR)
+    return _WORK_CORPUS
+
+
+def _candidate_titles(title: str, site: SiteConfig) -> list[str]:
+    """Site-normalized title(s) to try against the corpus, most specific
+    first.
+
+    Mirrors ``cross_site_index.entry_keys``'s trailing-artist-segment
+    fallback: Hangout titles often carry a trailing attribution
+    ("Blackberry Blossom - Trad.", "Baby Elephant Walk - Henry Mancini")
+    that isn't an instrument decoration, so ``strip_title_decorations``
+    leaves it alone. Offering the segment before the first " - " as a
+    second candidate catches those without loosening the scorer's own
+    title-only threshold — it's still the scorer deciding, just given a
+    better-normalized title to compare.
+    """
+    normalized = normalize_title(title, site)
+    candidates = [normalized]
+    if ' - ' in normalized:
+        head = normalized.split(' - ')[0].strip()
+        if head and head not in candidates:
+            candidates.append(head)
+    return candidates
+
+
+def _find_matching_work_legacy(title: str, site: SiteConfig = DEFAULT_SITE) -> Optional[Path]:
+    """The pre-#226 matcher: exact slug, then exact normalized-title lookup.
+
+    Kept only so ``find_matching_work`` can report where the two matchers
+    disagree — it is no longer the decision (see #192: this equality check
+    missed "Blackberry Blossom - Trad." / "blackberry-blossom-trad" and
+    "Soldiers Joy" / "soldier-s-joy" because it neither strips punctuation
+    nor folds a trailing artist segment).
     """
     normalized = normalize_title(title, site)
     slug = slugify(normalized)
-
-    # Try exact slug match first
     exact_path = WORKS_DIR / slug
     if exact_path.exists() and (exact_path / 'work.yaml').exists():
         return exact_path
-
-    # Normalized title match via the cached index
     return _title_index(site).get(normalized)
+
+
+def find_matching_work(title: str, site: SiteConfig = DEFAULT_SITE,
+                       corpus: Optional[WorkCorpus] = None) -> Optional[Path]:
+    """Find an existing work that matches this title.
+
+    The decision comes from the dedup scorer (``scripts/lib/dedup_scorer.py``),
+    not this module's own title-equality matcher (#192: ``normalize_title``
+    is weaker than ``cross_site_index.norm_key`` and mints duplicate works).
+    Title still narrows first — ``normalize_title`` above strips per-site
+    instrument decorations ("- banjo tab", "(mando)") before the scorer's
+    own generic normalization runs — but Hangout tab imports never carry
+    lyrics, so ``score_pair`` always takes the instrumental / no-lyrics
+    branch: title similarity has to clear ``TITLE_ONLY_MIN`` (0.95) before
+    two titles count as the same tune. That's a much higher bar than the
+    old exact-string equality, deliberately: title collisions are the worst
+    case for instrumentals ("Blackberry Blossom"), and the scorer never
+    silently trusts a weak signal.
+
+    Every existing work that matches gets its part attached via
+    ``add_part_to_work`` (called by ``import_tab``) rather than a new slug
+    being minted — this function only changes which work that mechanism
+    points at.
+
+    Returns the work directory path if found, None otherwise.
+    """
+    corpus = corpus or get_work_corpus()
+
+    scored_match: Optional[Path] = None
+    for candidate_title in _candidate_titles(title, site):
+        exact_path = WORKS_DIR / slugify(candidate_title)
+        if exact_path.exists() and (exact_path / 'work.yaml').exists():
+            scored_match = exact_path
+            break
+        incoming = Chart(title=candidate_title, words=frozenset(), chords=False)
+        verdict = corpus.best_match(incoming)
+        if verdict.matched_work_id:
+            candidate_dir = WORKS_DIR / verdict.matched_work_id
+            if candidate_dir.is_dir():
+                scored_match = candidate_dir
+                break
+
+    # Behavior guard (#226): this must only change how NEW imports match,
+    # never bulk re-decide existing works. Log every disagreement with the
+    # legacy matcher so a divergence is visible, not silent.
+    legacy_match = _find_matching_work_legacy(title, site)
+    if legacy_match != scored_match:
+        print(f"  [dedup-scorer] match differs from legacy matcher for "
+              f"'{title}': legacy="
+              f"{legacy_match.name if legacy_match else None} scorer="
+              f"{scored_match.name if scored_match else None}")
+
+    return scored_match
 
 
 def load_work(work_dir: Path) -> dict:
@@ -303,8 +399,12 @@ def _provenance(tab: TabEntry, site: SiteConfig = DEFAULT_SITE) -> dict:
         'source': site.source,
         'source_id': source_id,
         'source_url': site.tab_page_url(source_id),
-        'author': tab.author,
     }
+    # Omitted when unknown rather than written as null: source_url still
+    # leads a reader to the real poster, whereas a placeholder author
+    # would read as a credit. Never substitute a default here.
+    if tab.author:
+        prov['author'] = tab.author
     # Listing detail the arrangement picker shows next to each alternate
     if tab.difficulty:
         prov['difficulty'] = tab.difficulty
@@ -337,14 +437,18 @@ def build_tags(tab: TabEntry, site: SiteConfig = DEFAULT_SITE) -> list[str]:
 
 def import_tab(catalog: TabCatalog, tab: TabEntry,
                site: SiteConfig = DEFAULT_SITE,
-               create_new_works: bool = True) -> Optional[str]:
+               create_new_works: bool = True,
+               corpus: Optional[WorkCorpus] = None) -> Optional[str]:
     """Import a single converted tab to works/.
 
     Returns the work slug if successful, None otherwise.
 
     ``create_new_works=False`` restricts the run to enriching works that
     already exist (used by arrangement-promotion passes, where minting new
-    works would need a separate title/curation review).
+    works would need a separate title/curation review). ``corpus`` is the
+    shared dedup-scorer corpus for the whole run (see
+    ``get_work_corpus`` / ``batch_import``); defaults to the process
+    singleton for direct callers.
     """
     # Find the converted OTF file
     otf_path = site.parsed_dir / f"{tab.id}.otf.json"
@@ -361,7 +465,7 @@ def import_tab(catalog: TabCatalog, tab: TabEntry,
         return None
 
     # Try to match to existing work
-    matching_work = find_matching_work(tab.title, site)
+    matching_work = find_matching_work(tab.title, site, corpus)
     if matching_work and is_suppressed(matching_work.name, registry, deleted_songs):
         print(f"  Skipped: matched work '{matching_work.name}' is suppressed "
               f"(curation registry / deleted songs)")
@@ -395,7 +499,8 @@ def import_tab(catalog: TabCatalog, tab: TabEntry,
 
 def batch_import(catalog: TabCatalog, limit: int = None, dry_run: bool = False,
                  site: SiteConfig = DEFAULT_SITE,
-                 create_new_works: bool = True) -> int:
+                 create_new_works: bool = True,
+                 corpus: Optional[WorkCorpus] = None) -> int:
     """Import all importable tabs to works/.
 
     Args:
@@ -404,10 +509,15 @@ def batch_import(catalog: TabCatalog, limit: int = None, dry_run: bool = False,
         dry_run: If True, just print what would be done
         site: Hangout site the catalog belongs to
         create_new_works: If False, only add arrangements to existing works
+        corpus: dedup-scorer corpus to reuse. Built ONCE here (or by the
+            caller) and threaded through every tab in the run — never
+            reconstructed per file, which would re-read every work.yaml's
+            title on every call (see ``get_work_corpus``).
 
     Returns:
         Number of tabs imported
     """
+    corpus = corpus or get_work_corpus()
     importable = catalog.get_importable()
     if limit:
         importable = importable[:limit]
@@ -415,7 +525,7 @@ def batch_import(catalog: TabCatalog, limit: int = None, dry_run: bool = False,
     if dry_run:
         print(f"\n[DRY RUN] Would import {len(importable)} tabs:")
         for tab in importable[:20]:
-            matching = find_matching_work(tab.title, site)
+            matching = find_matching_work(tab.title, site, corpus)
             if matching:
                 print(f"  {tab.title} -> add to {matching.name}")
             elif create_new_works:
@@ -430,7 +540,8 @@ def batch_import(catalog: TabCatalog, limit: int = None, dry_run: bool = False,
     for tab in importable:
         print(f"Importing: {tab.title}")
         work_slug = import_tab(catalog, tab, site,
-                               create_new_works=create_new_works)
+                               create_new_works=create_new_works,
+                               corpus=corpus)
 
         if work_slug:
             catalog.update_status(tab.id, 'imported')

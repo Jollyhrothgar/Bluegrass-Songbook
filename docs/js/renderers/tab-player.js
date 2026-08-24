@@ -10,6 +10,7 @@ import {
     measureTimingFromOtf,
 } from './measure-timing.js';
 import { pitchedTracks } from './otf-tracks.js';
+import { unlockAudioContext } from '../audio-unlock.js';
 
 // Pitch name to MIDI mapping
 const PITCH_TO_MIDI = {};
@@ -58,21 +59,41 @@ export function getInstrumentKey(instrumentType) {
     return 'guitar';
 }
 
+// How long to wait for a soundfont's buffers to decode before calling it a
+// failure. Slow phones on hotel wifi need room; forever is not an option.
+const DECODE_TIMEOUT_MS = 15000;
+
+// One promise per URL. The tag-exists check alone is NOT enough: a second
+// caller arriving between "tag inserted" and "script executed" used to
+// resolve immediately and then read an undefined global — `new
+// window.WebAudioFontPlayer()` throwing, or an instrument silently skipped.
+// That window is real now that the editor warms soundfonts in the
+// background while Play may be pressed at any moment.
+const scriptLoads = new Map();
+
 /**
- * Load a script dynamically
+ * Load a script dynamically (deduped: concurrent callers share one load)
  */
 function loadScript(url) {
-    return new Promise((resolve, reject) => {
+    const pending = scriptLoads.get(url);
+    if (pending) return pending;
+
+    const promise = new Promise((resolve, reject) => {
         if (document.querySelector(`script[src="${url}"]`)) {
-            resolve();
+            resolve();   // inserted by someone else (or a previous page state)
             return;
         }
         const script = document.createElement('script');
         script.src = url;
         script.onload = resolve;
-        script.onerror = reject;
+        script.onerror = () => {
+            scriptLoads.delete(url);   // a failed load may be retried
+            reject(new Error(`Could not load ${url}`));
+        };
         document.head.appendChild(script);
     });
+    scriptLoads.set(url, promise);
+    return promise;
 }
 
 /**
@@ -218,6 +239,10 @@ export class TabPlayer {
         this.metronomeVolume = 0.3;
         this.metronomeNodes = [];  // Track oscillators for cleanup on stop
         this.metronomeGain = null; // Master gain: lets the toggle work LIVE
+
+        // How long play() waits for a resumed context to actually reach
+        // 'running' before giving up (tests shorten this).
+        this.resumeGraceMs = 1000;
     }
 
     /**
@@ -237,15 +262,56 @@ export class TabPlayer {
     }
 
     /**
-     * Initialize audio context and load WebAudioFont
+     * SYNCHRONOUS audio unlock — call this as the FIRST statement of any
+     * user-gesture handler that can lead to playback. iOS WebKit grants Web
+     * Audio only transient user activation, so a context created (or resumed)
+     * after an await never leaves 'suspended': its clock stays frozen, every
+     * note is scheduled into a time that never arrives, and playback is
+     * silent. Nothing here may await (see audio-unlock.js).
+     *
+     * @returns {AudioContext|null} null when the browser has no Web Audio
      */
-    async init() {
-        if (this.audioContext) return;
+    unlockAudio() {
+        const Ctx = window.AudioContext || window.webkitAudioContext;
+        if (!Ctx) return null;
+        if (!this.audioContext) this.audioContext = new Ctx();
+        return unlockAudioContext(this.audioContext);
+    }
+
+    /**
+     * Initialize audio context and load WebAudioFont.
+     *
+     * Concurrency-safe: the editor warms soundfonts for note-entry feedback
+     * in the background while Play may be pressed at any moment, and two
+     * inits racing would build two WebAudioFontPlayers and two metronome
+     * buses (the second orphaning the first mid-tune).
+     *
+     * @returns {Promise<void>}
+     */
+    init() {
+        if (this.player) return Promise.resolve();
+        if (!this._initPromise) {
+            this._initPromise = this._initOnce().catch(err => {
+                this._initPromise = null;   // a failed init may be retried
+                throw err;
+            });
+        }
+        return this._initPromise;
+    }
+
+    async _initOnce() {
+        if (this.player) return;
+
+        // Context FIRST, synchronously: unlockAudio() has normally already
+        // made it inside the tap, but a caller that skipped the gesture hook
+        // still must not construct it after the CDN await below.
+        if (!this.unlockAudio()) {
+            throw new Error('This browser has no Web Audio support.');
+        }
 
         // Load WebAudioFont player
         await loadScript(WEBAUDIOFONT_URLS.player);
 
-        this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
         this.player = new window.WebAudioFontPlayer();
 
         // Master metronome gain — clicks route through this so the
@@ -253,6 +319,28 @@ export class TabPlayer {
         this.metronomeGain = this.audioContext.createGain();
         this.metronomeGain.gain.value = this._metronomeEnabled ? 1 : 0;
         this.metronomeGain.connect(this.audioContext.destination);
+    }
+
+    /**
+     * Wait (briefly) for the context to actually be running, resuming it once
+     * more if needed. iOS ignores a resume() whose gesture activation was
+     * already spent, so this is where a blocked context is caught.
+     * @throws {Error} when the context stays suspended past the grace window
+     */
+    async _awaitRunningContext() {
+        const ctx = this.audioContext;
+        if (ctx.state !== 'running') {
+            // 'suspended' or Safari's 'interrupted' (route change, phone
+            // call) — both clear via resume()
+            try { await ctx.resume(); } catch (e) { /* reported below */ }
+        }
+        const deadline = Date.now() + this.resumeGraceMs;
+        while (ctx.state !== 'running' && Date.now() < deadline) {
+            await new Promise(r => setTimeout(r, 100));
+        }
+        if (ctx.state !== 'running') {
+            throw new Error('Sound is blocked by this browser — tap Play again.');
+        }
     }
 
     /**
@@ -310,12 +398,18 @@ export class TabPlayer {
             const instrumentData = window[instConfig.var];
             if (!instrumentData) continue;
 
-            await new Promise((resolve) => {
+            // BOUNDED: an undecodable soundfont used to poll forever, which
+            // showed up as a Pause button that never advanced and no error.
+            await new Promise((resolve, reject) => {
                 this.player.adjustPreset(this.audioContext, instrumentData);
+                const deadline = Date.now() + DECODE_TIMEOUT_MS;
                 const checkDecoded = () => {
                     const allDecoded = instrumentData.zones.every(zone => zone.buffer);
                     if (allDecoded) {
                         resolve();
+                    } else if (Date.now() >= deadline) {
+                        reject(new Error(
+                            `Timed out decoding the ${instConfig.name} sound.`));
                     } else {
                         setTimeout(checkDecoded, 50);
                     }
@@ -386,10 +480,11 @@ export class TabPlayer {
         await this.init();
         if (gen !== this._playGen) return;
 
-        if (this.audioContext.state === 'suspended') {
-            await this.audioContext.resume();
-            if (gen !== this._playGen) return;
-        }
+        // A context that never reaches 'running' has a frozen clock: notes
+        // would be scheduled into a time that never arrives (silence with a
+        // Pause button). Throw instead of pretending.
+        await this._awaitRunningContext();
+        if (gen !== this._playGen) return;
 
         // ALL tracks are scheduled; options.trackIds only sets which are
         // AUDIBLE at start. Each track plays through its own gain bus so
@@ -804,7 +899,12 @@ export class TabPlayer {
                     // count-in only on the FIRST pass
                     this._loopTimer = setTimeout(
                         () => this.play(this._loopSource,
-                            { ...options, countInBeats: 0, trackIds: liveIds }), 100);
+                            { ...options, countInBeats: 0, trackIds: liveIds })
+                            .catch(err => {
+                                console.warn('Loop restart failed:', err);
+                                this.stop();
+                                if (this.onPlaybackEnd) this.onPlaybackEnd();
+                            }), 100);
                 } else {
                     this.stop();
                     if (this.onPlaybackEnd) this.onPlaybackEnd();

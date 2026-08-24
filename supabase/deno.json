@@ -1,0 +1,41 @@
+{
+  "//": [
+    "Deno config for the edge functions in ./functions/ and their tests.",
+    "",
+    "WHY IT LIVES HERE and not one directory down: the Supabase CLI reads",
+    "supabase/functions/deno.json as DEPLOY configuration (the fallback import",
+    "map for every function it bundles). A test harness has no business being",
+    "read by the deployer, so it sits one level up, where the CLI does not look.",
+    "",
+    "WHY NOT AT THE REPO ROOT: a deno.json beside package.json makes Deno adopt",
+    "the whole npm dependency tree (vitest, playwright, jsdom, ...) into",
+    "deno.lock — 1,400 lines of noise that has nothing to do with edge",
+    "functions. Anchoring the config here keeps ./deno.lock to the handful of",
+    "remote URLs the functions actually import.",
+    "",
+    "Run from this directory (or via `deno task --config supabase/deno.json`):",
+    "  deno task test    the unit tests",
+    "  deno task check   type-check every function and shared module",
+    "CI runs both — see .github/workflows/build.yml and deploy-functions.yml."
+  ],
+  "nodeModulesDir": "none",
+  "tasks": {
+    "test": "deno test --allow-read=./functions ./functions",
+    "test:watch": "deno test --allow-read=./functions --watch ./functions",
+    "check": "deno check ./functions/*/index.ts ./functions/_shared/*.ts"
+  },
+  "fmt": {
+    "include": ["./functions"],
+    "lineWidth": 90,
+    "semiColons": false
+  },
+  "lint": {
+    "include": ["./functions"],
+    "rules": {
+      // Supabase edge functions are deployed straight to a Deno runtime with
+      // no install step, so full URL imports are the required style here, not
+      // a smell. deno.lock pins them.
+      "exclude": ["no-import-prefix"]
+    }
+  }
+}

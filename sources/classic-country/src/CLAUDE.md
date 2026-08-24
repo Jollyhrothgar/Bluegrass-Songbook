@@ -15,19 +15,25 @@ src/
 
 ## Quick Commands
 
+These are the source-local wrappers under `sources/classic-country/scripts/`,
+NOT the repo-root `scripts/`. Run them from the repo root by full path — the
+root `scripts/server` is the frontend dev server and has no `debug_viewer`,
+the root `scripts/utility` has no `batch_parse`, and there is no root
+`scripts/test` at all.
+
 ```bash
 # Debug a single file
-./scripts/test reparse songname
+./sources/classic-country/scripts/test reparse songname
 
 # Run debug viewer (live parsing)
-./scripts/server debug_viewer
+./sources/classic-country/scripts/server debug_viewer
 # → http://localhost:8000
 
 # Run regression test
-./scripts/test regression --name my_fix
+./sources/classic-country/scripts/test regression --name my_fix
 
 # Batch re-parse all files
-./scripts/utility batch_parse
+./sources/classic-country/scripts/utility batch_parse
 ```
 
 ## Parser Architecture
@@ -149,16 +155,16 @@ class ChordPosition:
 1. **Make changes** to `parser.py`
 2. **Test immediately** with debug viewer (no rebuild needed):
    ```bash
-   ./scripts/server debug_viewer
+   ./sources/classic-country/scripts/server debug_viewer
    # Refresh browser to see changes
    ```
 3. **Run regression test** before committing:
    ```bash
-   ./scripts/test regression --name my_fix
+   ./sources/classic-country/scripts/test regression --name my_fix
    ```
 4. **If clean**, batch re-parse:
    ```bash
-   ./scripts/utility batch_parse
+   ./sources/classic-country/scripts/utility batch_parse
    ```
 
 ## Common Pitfalls

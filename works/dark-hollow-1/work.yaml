@@ -1,9 +1,17 @@
 id: dark-hollow-1
 title: Dark Hollow
 artist: Bill Browning
+composers:
+- Bill Browning
 default_key: G
 tags:
 - JamFriendly
+notes: 'Source: https://www.flatpickingtabs.com/darkhallow.htm'
+metadata_provenance:
+  source: user-submission
+  source_id: pending:meta:dark-hollow-1:dsq44un7:a818a0358b36
+  submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+  submitted_at: '2026-08-20'
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,5 +20,17 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Bill Browning
+- type: tablature
+  format: otf
+  file: guitar.otf.json
+  instrument: guitar
+  provenance:
+    source: user-submission
+    source_id: pending:tab:dark-hollow-1:4kdmztab:74060cbd9e05
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-08-20'
+    author: Mike Beaumier
+    x_corrected_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    x_corrected_attribution: Mike Beaumier
+    x_corrected: '2026-08-20'
+    x_correction_notes: Changing track names and ordering.

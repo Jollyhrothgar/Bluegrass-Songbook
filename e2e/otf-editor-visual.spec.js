@@ -92,7 +92,7 @@ test.describe('OTF Editor - Visual Comparison: Production vs Editor', () => {
             const canvas = page.locator('.editor-canvas-container');
             await expect(canvas).toBeVisible();
             await canvas.screenshot({
-                path: `e2e/screenshots/${tab.name}-editor.png`,
+                path: `test-results/screenshots/${tab.name}-editor.png`,
             });
 
             // Verify no JS errors

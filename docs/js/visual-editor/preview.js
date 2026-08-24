@@ -57,7 +57,7 @@ const SECTION_MENU_ACTIONS = [
 
 export function createInteractivePreview({
     container, textarea, onChange, displayChord,
-    undoBtn, redoBtn, onUploadRequest, onSongRequest
+    undoBtn, redoBtn, onSongRequest
 }) {
     let doc = normalizeIds(parseSong(''));
     let selection = null;      // {sectionId, lineIndex, position} or {..., chordIndex}
@@ -1193,7 +1193,6 @@ export function createInteractivePreview({
             btn.addEventListener('click', cb);
             links.appendChild(btn);
         };
-        if (onUploadRequest) addLink('ve-link-upload', 'Upload a photo instead', () => onUploadRequest());
         if (onSongRequest) addLink('ve-link-request', 'Request a song', () => onSongRequest());
         if (links.childElementCount > 0) empty.appendChild(links);
         body.appendChild(empty);

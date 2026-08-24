@@ -57,7 +57,11 @@ vi.mock('../state.js', () => ({
     setListContext: vi.fn()
 }));
 
-vi.mock('../utils.js', () => ({
+// Spread the real module (safeUrl in particular must stay real — song-view's
+// source links depend on its scheme check); only escapeHtml is neutralized so
+// assertions can read plain text.
+vi.mock('../utils.js', async (importOriginal) => ({
+    ...await importOriginal(),
     escapeHtml: vi.fn((text) => text)
 }));
 
