@@ -1,0 +1,17 @@
+id: down-yonder
+title: Down Yonder
+artist: Del Wood
+composers:
+- L. Wolfe Gilbert
+default_key: C
+external:
+  musicbrainz: b9a2520f-1ba8-4cf7-a9b3-9ed74468a82d
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: downyonderlyricschords.pro
+    imported_at: '2026-01-02'

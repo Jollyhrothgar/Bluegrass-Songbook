@@ -179,3 +179,32 @@ class TestFuzzyGroupSongs:
 
         result = fuzzy_group_songs([song1, song2])
         assert result[0]['group_id'] == result[1]['group_id']
+
+    def test_instrumental_not_merged_with_same_titled_song(self):
+        """A tune transcription must not absorb a song of the same name.
+
+        Regression: "Tennessee Waltz" [1] (a Roane County Ramblers fiddle tune,
+        ABC only) and the Pee Wee King song share a normalized title. Merging
+        them collapsed both into one group_id, and since search shows one row
+        per group, the vocal version vanished from the index.
+        """
+        tune = self._make_song('Tennessee Waltz', 'Traditional', lyrics='')
+        song = self._make_song(
+            'Tennessee Waltz', 'Pee Wee King & His Golden West Cowboys',
+            'I was waltzing with my darling to the Tennessee Waltz '
+            'when an old friend I happened to see',
+        )
+        assert tune['group_id'] != song['group_id']
+
+        result = fuzzy_group_songs([tune, song])
+        assert result[0]['group_id'] != result[1]['group_id']
+
+    def test_two_instrumentals_same_title_still_merged(self):
+        """Instrumental<->instrumental merging on title alone is unaffected."""
+        a = self._make_song('Needle Case', 'Traditional', lyrics='')
+        b = self._make_song('Needle Case', 'Traditional', lyrics='')
+        b['id'] = 'needle-case-1'
+        b['group_id'] = 'different_' + b['group_id']
+
+        result = fuzzy_group_songs([a, b])
+        assert result[0]['group_id'] == result[1]['group_id']

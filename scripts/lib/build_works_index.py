@@ -862,6 +862,15 @@ def fuzzy_group_songs(songs: list) -> list:
             chords = song.get('nashville', [])
             group_chords[gid] = set(chords) if chords else set()
 
+    # Build group_id -> "is this group purely instrumental?" A group counts as
+    # instrumental when no member carries lyrics (tune transcriptions: ABC-only
+    # TuneArch imports, tab-only works).
+    group_instrumental = {}
+    for song in songs:
+        gid = song.get('group_id', '')
+        has_lyrics = bool((song.get('lyrics') or '').strip())
+        group_instrumental[gid] = group_instrumental.get(gid, True) and not has_lyrics
+
     merge_map = {}  # old_group_id -> new_group_id
     TITLE_SIMILARITY_THRESHOLD = 0.85  # 85% title similarity required
     LYRICS_SIMILARITY_THRESHOLD = 0.70  # 70% lyrics similarity also required
@@ -892,9 +901,16 @@ def fuzzy_group_songs(songs: list) -> list:
                         lyrics_threshold = LYRICS_WITH_CHORDS_THRESHOLD
 
             return lyrics_sim >= lyrics_threshold
-        # If one or both lack lyrics, allow merge for high title similarity
+        # One or both groups lack lyrics. Sharing a title is NOT enough here:
+        # a fiddle tune and a song can carry the same name and be unrelated
+        # ("Tennessee Waltz" [1] the Roane County Ramblers reel vs. the Pee Wee
+        # King song), and merging them hides the vocal version behind the
+        # instrumental in search, which dedupes to one row per group_id.
+        # Only merge instrumental<->instrumental or vocal<->vocal on title
+        # alone; a genuine instrumental/vocal pairing has to be pinned
+        # explicitly in curation/registry.yaml.
         elif title_sim >= 0.95:
-            return True
+            return group_instrumental.get(g1, False) == group_instrumental.get(g2, False)
         return False
 
     # ── Pre-pass: same normalized title, different group_ids ──

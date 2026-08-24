@@ -101,3 +101,44 @@ Final searchable count after all waves: **1,766** (plus later additions).
 Widening the whole policy later = pick a looser rule, regenerate
 `index_prune.csv` from the vendored snapshot + the ledgers above. All inputs
 are in-repo; nothing depends on the machine this was first done on.
+
+### Wave 3 — 2026-08-07 readmission (registry `keep:` entries)
+
+The index is a floor to build up from, not a finished verdict. Wave 3 is the
+first readmission pass: re-measure coverage correctly, add back what clears the
+existing bar.
+
+Rule: READMIT if bluegrass coverage >= 5 (the wave-1 threshold, correctly
+measured) AND the title is not ambiguous. 102 works readmitted; index
+2464 -> 2566 rows.
+
+**What wave 1 got wrong.** It matched site works to MusicBrainz by fuzzy title,
+which failed in both directions:
+- INFLATED — "She Sang Amazing Grace" inherited Amazing Grace's 57 (already
+  noted above; the reason wave 2 was needed).
+- DEFLATED — a site title that abbreviates the MusicBrainz title scored near
+  zero. `cabin-home-on-the-hill` scored **2** because MusicBrainz files it as
+  "Little Cabin Home on the Hill". It actually has **23** bluegrass artists.
+
+**Why not just join on work MBID.** The obvious fix is to resolve each work to a
+MusicBrainz work id and count from there. It does not work: only **19.4%** of
+MusicBrainz recordings are linked to a work at all (24% among bluegrass
+artists), so an MBID-only join throws away ~80% of the evidence. Wave 3 unions
+exact recording-title matches with work-link expansion instead.
+
+**Ambiguity is reported alongside the score.** A title shared by many distinct
+MusicBrainz works produces a coverage number that sums unrelated songs — "Take
+Me Home", "Country Boy", "Heaven". 144 of the 318 works scoring >=5 have titles
+shared by 20+ MusicBrainz works and were NOT readmitted; their scores are not
+evidence. Conversely `n_mb_works = 0` means no work entity carries that title,
+i.e. nothing to confuse it with, and those ARE readmitted.
+
+Evidence in this repo:
+- `curation/decision-data/readmit_query.sql` — the full scoring pipeline, re-runnable
+- `curation/decision-data/readmit_export.py` — dumps site rows into the query's step 3
+- `curation/decision-data/site_index_rescored.csv` — corrected per-work snapshot
+  (`id,title,indexed,bgcov,n_mb_works`) for all 19,228 works
+
+**Still on the table** (not readmitted, needs a different method): the 144
+generic-title works need lyric-level matching rather than title matching to be
+scored at all. That is the next wave, not a closed question.

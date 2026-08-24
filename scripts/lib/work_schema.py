@@ -58,6 +58,7 @@ class ExternalLinks:
     strum_machine: Optional[str] = None
     youtube: Optional[str] = None
     spotify: Optional[str] = None
+    musicbrainz: Optional[str] = None  # MusicBrainz *work* MBID (not recording)
 
 
 @dataclass
@@ -114,6 +115,8 @@ class Work:
                 ext['youtube'] = self.external.youtube
             if self.external.spotify:
                 ext['spotify'] = self.external.spotify
+            if self.external.musicbrainz:
+                ext['musicbrainz'] = self.external.musicbrainz
             if ext:
                 data['external'] = ext
 
@@ -170,6 +173,7 @@ class Work:
                 strum_machine=ext.get('strum_machine'),
                 youtube=ext.get('youtube'),
                 spotify=ext.get('spotify'),
+                musicbrainz=ext.get('musicbrainz'),
             )
 
         parts = []

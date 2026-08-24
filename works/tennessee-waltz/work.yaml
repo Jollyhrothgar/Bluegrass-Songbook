@@ -1,0 +1,23 @@
+id: tennessee-waltz
+title: Tennessee Waltz
+artist: Pee Wee King & His Golden West Cowboys
+composers:
+- Pee Wee King
+- Redd Stewart
+default_key: C
+tags:
+- ClassicCountry
+- NashvilleSound
+- HonkyTonk
+- JamFriendly
+external:
+  musicbrainz: f6755b42-b1bd-4370-9b4f-b4731377dcda
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: classic-country
+    source_file: tennesseewaltzlyricschords.pro
+    imported_at: '2026-01-02'
