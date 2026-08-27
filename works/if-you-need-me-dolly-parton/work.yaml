@@ -1,0 +1,17 @@
+id: if-you-need-me-dolly-parton
+title: If You Need Me
+artist: Dolly Parton
+composers:
+- Dolly Parton
+default_key: C
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: user-submission
+    source_id: pending:if-you-need-me-dolly-parton:16fa30e32d7b
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-08-27'
