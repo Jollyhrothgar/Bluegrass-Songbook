@@ -5,7 +5,7 @@
 [D]Jump in the shower and the blood starts pumpin'
 [G]Out on the streets the traffic starts jumpin'
 With[D] folks like me on the[A] job from 9 [D]to 5
-
+{end_of_verse}
 
 {start_of_chorus}
 Workin' [G]9 to 5 - what a way to make a livin'
@@ -16,7 +16,7 @@ It's [E]enough to drive you[A] crazy if you let it
 You would[D] think that I would deserve a fair promotion
 Want to[G] move ahead but the boss won't seem to let me
 I [E]swear sometimes that man i[A]s out to get m[D]e mmmmmmm
-
+{end_of_chorus}
 
 {start_of_verse: Verse 2}
 [D]They let you dream just to watch 'em shatter
@@ -25,7 +25,7 @@ But [D]you got dreams he'll never take a[A]way
 [D]In the same boat with a lot of your friends
 [G]Waitin' for the day your ship'll come in
 And the [D]tide's gonna turn, an' it's [A]all gonna roll your[D] way
-
+{end_of_verse}
 
 {start_of_chorus}
 Workin' [G]9 to 5 - what a way to make a livin'
@@ -36,7 +36,7 @@ It's [E]enough to drive you[A] crazy if you let it
 There's a [D]better life - and you think about it don't you
 It's a [G]rich man's game - no matter what they call it
 And you [E]spend your life putting[A] money in his wallet
-
+{end_of_chorus}
 
 {start_of_chorus}
 [G]9 to 5 - what a way to make a livin'
@@ -47,3 +47,4 @@ It's [E]enough to drive you[A] crazy if you let it
 There's a [D]better life - and you dream about it don't you
 It's a [G]rich man's game - no matter what they call it
 And you [E]spend your life putting[A] money in his wallet
+{end_of_chorus}

@@ -68,6 +68,22 @@ export function editorConvertToChordPro(text) {
     const result = [];
     let i = 0;
 
+    // The section currently awaiting its closing directive ('v' | 'c' | 'b').
+    // A pasted sheet marks where sections start and never where they end, so
+    // this tracks the open one and closes it at the next marker or at EOF.
+    // Without it the output carries {soc}/{sov:} with no {eoc}/{eov}: that
+    // parses fine, but it does not round-trip — the serializer supplies the
+    // missing {end_of_*}, so a saved work no longer matches what the editor
+    // wrote and the corpus round-trip test fails on it.
+    let openSection = null;
+
+    const closeOpenSection = () => {
+        if (openSection === 'c') result.push('{eoc}');
+        else if (openSection === 'v') result.push('{eov}');
+        else if (openSection === 'b') result.push('{eob}');
+        openSection = null;
+    };
+
     while (i < lines.length) {
         const line = lines[i];
         const trimmed = line.trim();
@@ -81,14 +97,18 @@ export function editorConvertToChordPro(text) {
         if (editorIsSectionMarker(trimmed)) {
             const sectionName = trimmed.slice(1, -1).trim();
             const lowerName = sectionName.toLowerCase();
+            closeOpenSection();
             if (lowerName.includes('chorus')) {
                 result.push('{soc}');
+                openSection = 'c';
             } else if (lowerName.includes('verse')) {
                 result.push(`{sov: ${sectionName}}`);
+                openSection = 'v';
             } else if (lowerName.includes('instrumental') || lowerName.includes('break')) {
                 result.push(`{comment: ${sectionName}}`);
             } else if (lowerName.includes('bridge')) {
                 result.push('{sob}');
+                openSection = 'b';
             } else {
                 result.push(`{comment: ${sectionName}}`);
             }
@@ -127,6 +147,13 @@ export function editorConvertToChordPro(text) {
         result.push(line);
         i++;
     }
+
+    // Close the last section tight against its content: a sheet that ends in
+    // blank lines would otherwise trail its {eoc} after the gap.
+    while (openSection && result.length && result[result.length - 1].trim() === '') {
+        result.pop();
+    }
+    closeOpenSection();
 
     return result.join('\n');
 }

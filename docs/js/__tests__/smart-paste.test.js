@@ -150,6 +150,30 @@ Ultimate-Guitar.com`;
         expect(res.text).not.toContain('Please rate this tab');
     });
 
+    it('closes every section it opens', () => {
+        // An unclosed {soc}/{sov:} parses, but does not round-trip: the
+        // serializer supplies the missing {end_of_*}, so the saved work stops
+        // matching what the editor wrote and the corpus round-trip test fails.
+        const sheet = `[Verse 1]
+D                    G
+first placeholder lyric line
+[Chorus]
+G                    D
+second placeholder lyric line
+[Verse 2]
+D                    G
+third placeholder lyric line`;
+        const res = convertPastedText(sheet);
+        const opens = (res.text.match(/\{so[vcb]\b/g) || []).length;
+        const closes = (res.text.match(/\{eo[vcb]\}/g) || []).length;
+        expect(opens).toBe(3);
+        expect(closes).toBe(opens);
+        // the verse closes before the chorus opens, and the last section
+        // closes at the end rather than being left dangling
+        expect(res.text.indexOf('{eov}')).toBeLessThan(res.text.indexOf('{soc}'));
+        expect(res.text.trimEnd().endsWith('{eov}')).toBe(true);
+    });
+
     it('converts the full-page paste to ChordPro rather than a header dump', () => {
         const res = convertPastedText(FULL_PAGE);
         expect(res.kind).toBe('chordpro');
