@@ -1,0 +1,17 @@
+id: i-dreamed-of-a-hillbilly-heaven-dolly-parton
+title: I Dreamed of a Hillbilly Heaven
+artist: Dolly Parton
+composers:
+- Dolly Parton
+default_key: D
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: user-submission
+    source_id: pending:i-dreamed-of-a-hillbilly-heaven-dolly-parton:d80f7c069486
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-08-27'
