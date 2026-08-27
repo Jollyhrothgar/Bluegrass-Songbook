@@ -95,6 +95,30 @@ if [ "$QUICK" = false ]; then
     STAGE_START=$SECONDS
     echo "Installing dependencies..."
     uv sync
+
+    # JS dependencies. `uv sync` covers Python only, and nothing here covered
+    # JS at all, so a freshly bootstrapped worktree had no node_modules — and
+    # vitest, the entire unit suite, lives there. `npx vitest` in a new
+    # worktree failed to resolve its own config ("Cannot find package
+    # 'vitest'") and every JS test was unrunnable until someone ran `npm
+    # install` by hand. Bootstrap is supposed to leave a worktree ready to
+    # work in; that includes being able to run the tests.
+    #
+    # `npm ci` (not `install`) so the lockfile is authoritative and the tree
+    # matches CI exactly. It wipes node_modules on every run, so it is gated
+    # on the install actually being stale — otherwise re-bootstrapping an
+    # existing worktree pays a full reinstall for nothing.
+    if command -v npm >/dev/null 2>&1; then
+        if [ ! -d node_modules ] || [ package-lock.json -nt node_modules ]; then
+            echo "Installing JS dependencies (npm ci)..."
+            npm ci --no-audit --no-fund
+        else
+            echo "JS dependencies already current."
+        fi
+    else
+        echo "⚠ npm not found — JS unit tests (vitest) and e2e (playwright) cannot run."
+    fi
+
     DEPS_TIME=$((SECONDS - STAGE_START))
     echo ""
 fi
