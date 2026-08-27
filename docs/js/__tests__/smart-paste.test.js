@@ -97,3 +97,89 @@ Rating`;
         expect(res.text).toContain('just some prose about tabs');
     });
 });
+
+// Regression: a whole-page select-all from a UG tab, chrome and all. The song
+// body used to be sliced away entirely — the header's "Tuning:E A D G B E"
+// reads as a chord line, so it won the start scan, and the chord-diagram
+// list's "Chords" header then ended the slice a few lines later.
+describe('cleanUltimateGuitarPaste on a full-page paste', () => {
+    const FULL_PAGE = `Tabs
+Courses
++ Publish tab
+Sample Song Chords by Some Artist
+451,846 views, added to favorites 13,040 times
+Difficulty:Absolute Beginner
+Tuning:E A D G B E
+Key:F#
+Capo:4th fret
+Author someuser [a] 123. 4 contributors total, last edit on 5 hours ago
+We have an official Sample Song tab made by UG professional guitarists.
+Chords
+D
+G
+A
+E
+Strumming
+EditIs this strumming pattern correct?
+[Verse 1]
+D
+first placeholder lyric line
+G                                        A
+second placeholder lyric line
+X
+Please rate this tab
+Welcome Offer
+Related tabs
+© 2026
+Ultimate-Guitar.com`;
+
+    it('keeps the song body and drops the page header', () => {
+        const res = cleanUltimateGuitarPaste(FULL_PAGE);
+        expect(res.cleaned).toBe(true);
+        expect(res.title).toBe('Sample Song');
+        expect(res.artist).toBe('Some Artist');
+        expect(res.text).toContain('[Verse 1]');
+        expect(res.text).toContain('first placeholder lyric line');
+        expect(res.text).toContain('second placeholder lyric line');
+        // header metadata, chord-diagram list and footer are all gone
+        expect(res.text).not.toContain('Tuning:');
+        expect(res.text).not.toContain('Capo:');
+        expect(res.text).not.toContain('Author someuser');
+        expect(res.text).not.toContain('Strumming');
+        expect(res.text).not.toContain('Ultimate-Guitar.com');
+        expect(res.text).not.toContain('Please rate this tab');
+    });
+
+    it('converts the full-page paste to ChordPro rather than a header dump', () => {
+        const res = convertPastedText(FULL_PAGE);
+        expect(res.kind).toBe('chordpro');
+        expect(res.text).toContain('{sov: Verse 1}');
+        expect(res.text).toContain('[D]first placeholder lyric line');
+        expect(res.text).toContain('[G]second placeholder lyric line');
+    });
+
+    it('finds the song without section markers, past the chord-diagram list', () => {
+        const noMarkers = `Sample Song Chords by Some Artist
+Tuning:E A D G B E
+Key:F#
+Capo:4th fret
+Chords
+D
+G
+A
+E
+Strumming
+D                    A
+first placeholder lyric line
+G                    D
+second placeholder lyric line`;
+        const res = cleanUltimateGuitarPaste(noMarkers);
+        expect(res.cleaned).toBe(true);
+        const lines = res.text.split('\n');
+        // the slice starts at the real chord line, not at the header or the
+        // trailing "E" of the chord-diagram list
+        expect(lines[0]).toMatch(/^D\s+A\s*$/);
+        expect(res.text).toContain('first placeholder lyric line');
+        expect(res.text).toContain('second placeholder lyric line');
+    });
+});

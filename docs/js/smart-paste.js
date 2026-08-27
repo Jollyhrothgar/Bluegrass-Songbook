@@ -8,6 +8,10 @@
  */
 function editorIsChordLine(line) {
     if (!line.trim()) return false;
+    // Labelled page metadata, not chords: "Tuning:E A D G B E" reads as five
+    // chords out of six words and clears the ratio test below. Real
+    // chords-over-lyrics lines never carry a colon.
+    if (line.includes(':')) return false;
     const words = line.trim().split(/\s+/);
     if (words.length === 0) return false;
     const chordPattern = /^[A-G][#b]?(?:maj|min|m|sus|dim|aug|add|M|7|9|11|13)*(?:\/[A-G][#b]?)?$/;
@@ -224,6 +228,47 @@ export function cleanChordUPaste(text) {
     };
 }
 
+const UG_SECTION_MARKER =
+    /^\[(Verse|Chorus|Intro|Bridge|Outro|Instrumental|Pre-Chorus|Hook|Interlude)/i;
+
+// Lines from UG's page header that sit above the song body. They are skipped
+// when falling back to the chord-over-lyrics scan for the song's first line.
+const UG_METADATA_LINE = [
+    /^Difficulty\s*:/i,
+    /^Tuning\s*:/i,
+    /^Key\s*:/i,
+    /^Capo\s*:/i,
+    /^Author\s/i,
+    /^[\d,]+\s+views\b/i,
+    /\sChords\s+by\s/i,
+    /^We have an official\b/i,
+    /^Strumming$/i,
+    /^Edit/i,
+];
+
+function isUgMetadataLine(line) {
+    return UG_METADATA_LINE.some(re => re.test(line));
+}
+
+/**
+ * UG prints a chord-diagram list above the song: a "Chords" header followed by
+ * one bare chord name per line. Return the index just past that block, or
+ * `start` unchanged when no block begins there.
+ */
+function skipUgChordDiagramBlock(lines, start) {
+    if (lines[start].trim() !== 'Chords') return start;
+    let i = start + 1;
+    while (i < lines.length) {
+        const trimmed = lines[i].trim();
+        if (!trimmed.includes(' ') && editorIsChordLine(trimmed)) {
+            i++;
+            continue;
+        }
+        break;
+    }
+    return i;
+}
+
 /**
  * Clean Ultimate Guitar paste format
  */
@@ -254,16 +299,34 @@ export function cleanUltimateGuitarPaste(text) {
         }
     }
 
-    // Find song content start
+    // Find song content start. The section-marker scan sweeps the whole paste
+    // before the chord-over-lyrics fallback gets a turn: UG's metadata header
+    // and its chord-diagram list both read as chord lines, so racing the two
+    // scans in one loop let page chrome win on every standard UG page and the
+    // real song body was sliced away.
     for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (/^\[(Verse|Chorus|Intro|Bridge|Outro|Instrumental|Pre-Chorus|Hook|Interlude)/i.test(line)) {
+        if (UG_SECTION_MARKER.test(lines[i].trim())) {
             songStartIndex = i;
             break;
         }
-        if (editorIsChordLine(line) && i + 1 < lines.length && lines[i + 1].trim() && !editorIsChordLine(lines[i + 1])) {
-            songStartIndex = i;
-            break;
+    }
+
+    // No section markers (some tabs carry none): fall back to the first
+    // chord-line/lyric-line pair, stepping over the metadata header and the
+    // chord-diagram list so neither is mistaken for the song.
+    if (songStartIndex === -1) {
+        for (let i = 0; i < lines.length; i++) {
+            const past = skipUgChordDiagramBlock(lines, i);
+            if (past !== i) {
+                i = past - 1;
+                continue;
+            }
+            const line = lines[i].trim();
+            if (isUgMetadataLine(line)) continue;
+            if (editorIsChordLine(line) && i + 1 < lines.length && lines[i + 1].trim() && !editorIsChordLine(lines[i + 1])) {
+                songStartIndex = i;
+                break;
+            }
         }
     }
 
@@ -282,7 +345,7 @@ export function cleanUltimateGuitarPaste(text) {
             line.startsWith('© ') ||
             line === 'Chords' ||
             (line === 'X' && i > songStartIndex + 10) ||
-            line.includes('Please, rate this tab') ||
+            /please,?\s+rate this tab/i.test(line) ||
             line.match(/^\d+\.\d+$/) ||
             line.match(/^\d+ rates$/) ||
             /^\*?\s*Alternates?\s*:?\s*$/i.test(line)) {
