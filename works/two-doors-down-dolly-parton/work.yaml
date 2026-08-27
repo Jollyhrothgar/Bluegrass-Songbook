@@ -1,0 +1,17 @@
+id: two-doors-down-dolly-parton
+title: Two Doors Down
+artist: Dolly Parton
+composers:
+- Dolly Parton
+default_key: E
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: user-submission
+    source_id: pending:two-doors-down-dolly-parton:eac0fdf224cc
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-08-27'
