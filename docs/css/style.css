@@ -9927,11 +9927,16 @@ body.dungeon-mode #search-stats {
 
 .app-banner-dismiss:hover { opacity: 1; }
 
+/* The band's regions hold their natural width (the title is the one elastic
+   part). Letting them shrink is what produced the overlap this replaces: the
+   nav compressed past its content, spilled out of .topbar-left, and painted
+   over the actions. Holding their width instead turns "too narrow" into a
+   clean scrollWidth overflow, which is the signal shell.js measures. */
 .topbar-left {
     display: flex;
     align-items: center;
     gap: var(--space-sm);
-    min-width: 0;
+    flex-shrink: 0;
 }
 
 .topbar-back {
@@ -9982,6 +9987,7 @@ body.dungeon-mode .topbar-brand .brand-dungeon-face {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
+    flex-shrink: 0;
 }
 
 .topbar-nav-link {
@@ -9993,6 +9999,7 @@ body.dungeon-mode .topbar-brand .brand-dungeon-face {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: var(--font-sm);
+    white-space: nowrap;
 }
 
 .topbar-nav-link:hover { color: var(--text); background: var(--bg-secondary); }
@@ -10013,6 +10020,7 @@ body.dungeon-mode .topbar-brand .brand-dungeon-face {
     align-items: center;
     gap: var(--space-xs);
     margin-left: auto;
+    flex-shrink: 0;
 }
 
 .topbar-action-btn {
@@ -10026,6 +10034,7 @@ body.dungeon-mode .topbar-brand .brand-dungeon-face {
     font-size: var(--font-sm);
     padding: 0.3rem 0.6rem;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .topbar-action-btn:hover { border-color: var(--accent); }
@@ -10039,6 +10048,7 @@ body.dungeon-mode .topbar-brand .brand-dungeon-face {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
+    flex-shrink: 0;
 }
 
 .topbar-icon-btn {
@@ -10142,12 +10152,43 @@ body.has-bottomband .container {
     margin: var(--space-xs) 0;
 }
 
-/* Collapse top-band labels to icons well before they can crowd the band */
+/* ---- Top band density ladder (driven by shell.js updateDensity) ----
+   The band measures itself and adds these classes cumulatively until its
+   content fits, so the collapse follows the CONTENT — a long display name,
+   a view with three actions — rather than a viewport width that cannot know
+   what the band is currently carrying. Ordered cheapest-loss-first; nothing
+   that disappears here becomes unreachable. */
+
+/* 1. Tighten the spacing before anything is actually dropped. */
+.app-topbar.density-snug { gap: 0.35rem; padding: 0 0.5rem; }
+.app-topbar.density-snug .topbar-nav-link,
+.app-topbar.density-snug .topbar-action-btn { padding: 0.3rem 0.45rem; }
+
+/* 2. The display name goes; the avatar still opens the account menu. */
+.app-topbar.density-no-name .user-name { display: none; }
+
+/* 3. The center title goes; the page itself still shows it. */
+.app-topbar.density-no-title .topbar-title { display: none; }
+
+/* 4. Actions become icons — the label survives as the button's tooltip. */
+.app-topbar.density-icons .topbar-action-label,
+.app-topbar.density-icons .auth-text { display: none; }
+
+/* 5. Nav becomes icons. */
+.app-topbar.density-nav-icons .topbar-nav-label { display: none; }
+
+/* 6. Fully rolled up: nav leaves the band for the ⋯ menu, where shell.js
+      renderOverflow has already put the same items as text entries. */
+.app-topbar.density-nav-overflow .topbar-nav { display: none; }
+
+/* No-JS / no-ResizeObserver fallback: without the ladder the band still has
+   to cope, so keep the old viewport breakpoint for the un-measured case
+   only. shell.js sets data-density on its first pass, which retires this. */
 @media (max-width: 800px) {
-    .topbar-nav-label { display: none; }
-    .topbar-nav-link { padding: 0.3rem 0.45rem; }
-    .topbar-action-label { display: none; }
-    .topbar-title { display: none; }
+    .app-topbar:not([data-density]) .topbar-nav-label { display: none; }
+    .app-topbar:not([data-density]) .topbar-nav-link { padding: 0.3rem 0.45rem; }
+    .app-topbar:not([data-density]) .topbar-action-label { display: none; }
+    .app-topbar:not([data-density]) .topbar-title { display: none; }
 }
 
 /* ============================================
