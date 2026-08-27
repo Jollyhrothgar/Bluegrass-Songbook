@@ -1,0 +1,17 @@
+id: after-the-gold-rush-dolly-parton
+title: After the Gold Rush
+artist: Dolly Parton
+composers:
+- Dolly Parton
+default_key: G
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: user-submission
+    source_id: pending:after-the-gold-rush-dolly-parton:9103608a246a
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-08-27'
