@@ -1,0 +1,17 @@
+id: more-where-that-came-from-dolly-parton
+title: More Where That Came From
+artist: Dolly Parton
+composers:
+- Dolly Parton
+default_key: G
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: user-submission
+    source_id: pending:more-where-that-came-from-dolly-parton:f2477a2f734b
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-08-27'
