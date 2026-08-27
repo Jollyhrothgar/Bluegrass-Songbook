@@ -1,0 +1,17 @@
+id: 9-to-5-dolly-parton
+title: 9 To 5
+artist: Dolly Parton
+composers:
+- Dolly Parton
+default_key: D
+tags: []
+parts:
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: user-submission
+    source_id: pending:9-to-5-dolly-parton:4ec793e7b6ce
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-08-27'
