@@ -13,6 +13,9 @@ parts:
   file: lead-sheet.pro
   default: true
   provenance:
-    source: classic-country
+    source: user-submission
     source_file: grassisbluelyricschords.pro
     imported_at: '2026-01-02'
+    source_id: pending:grass-is-blue:9072a6c36203
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-08-27'
