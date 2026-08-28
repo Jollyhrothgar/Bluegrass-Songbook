@@ -184,13 +184,22 @@ _FURNITURE_RE = re.compile(
     r'^(?:\|+|l+|/+|:+|\*+|[-–—]+|\.+|%|[xX]\d+|\d+[xX]|\(\)|N\.?C\.?)$')
 
 
+# Bar lines glued to their chords ("|Am|Am|Am|Am") read as a single
+# unparseable token, so a mostly-chord grid can fall under the 70% gate and be
+# emitted as a lyric line. Split them off before tokenizing.
+_BAR_SPLIT_RE = re.compile(r'\|+')
+
+
 def tokens_of(line: str) -> list[str]:
     """Chord-bearing tokens of a line, with grid furniture removed.
 
     ``|Am  |C  |Am D7 |G | x2`` is 100% chords; counting the pipes and the
     repeat marker as failures would sink it to 45% and trip the quality gate.
+    Bar lines count as furniture whether they are spaced out or glued on, so
+    ``|Am|Am|Am|Am`` is four chords, not one piece of gibberish.
     """
-    return [t for t in line.split() if not _FURNITURE_RE.match(t)]
+    return [t for t in _BAR_SPLIT_RE.sub(' ', line).split()
+            if not _FURNITURE_RE.match(t)]
 
 
 def is_chord_line(line: str) -> bool:
