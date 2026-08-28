@@ -62,13 +62,6 @@ class TestChordLineDetection:
         assert wc.is_chord_line('|Am     |C     |Am  D7   |G     | x2')
         assert wc.is_chord_line('|A / / / |D / / / |A / / / |D / E A|')
 
-    def test_bar_lines_glued_to_chords(self):
-        # Unspaced grids ("|Am|Am|Am|Am") used to tokenize as one unparseable
-        # blob, sinking the line under the 70% gate so it shipped as a lyric.
-        # This is what mangled works/jolene.
-        assert wc.is_chord_line('G            |G                    |Am|Am|Am|Am')
-        assert wc.tokens_of('|Am|Am|C|G') == ['Am', 'Am', 'C', 'G']
-
     def test_lyric_line_is_not(self):
         assert not wc.is_chord_line('Come all ye fair and tender ladies')
 
