@@ -87,3 +87,114 @@ describe('setBanner (DOM)', () => {
         expect(banner.querySelector('.app-banner-retry')).toBeNull();
     });
 });
+
+// The density ladder (shell.js updateDensity), added for the overlapping-band
+// bug: at ~810-830px the "Lists" nav link painted 22px over the "Lists" action
+// button, and "Add Song" wrapped to two lines from ~840px down. The old
+// collapse was a single @media (max-width: 800px) breakpoint, which cannot
+// know what the band is currently carrying — the actions differ per view and
+// a signed-in display name is as long as the person is. So the band measures
+// itself instead. jsdom has no layout, so these tests drive the measurement
+// directly: clientWidth is the band, scrollWidth is what the content needs at
+// whatever density step is currently applied.
+describe('density ladder', () => {
+    const NAV = [
+        { id: 'search', label: 'Search', href: '#search', onClick: () => {} },
+        { id: 'lists', label: 'Lists', href: '#lists', onClick: () => {} },
+    ];
+
+    // Each rung is worth 100px, so a band of width W settles on the first
+    // step whose content fits: full=1000, snug=900, no-name=800, no-title=700,
+    // icons=600, nav-icons=500, nav-overflow=400.
+    function mountBand(bandWidth) {
+        const bar = document.getElementById('app-topbar');
+        Object.defineProperty(bar, 'clientWidth', { get: () => bandWidth, configurable: true });
+        Object.defineProperty(bar, 'scrollWidth', {
+            configurable: true,
+            get: () => 1000 - 100 * [...bar.classList].filter(c => c.startsWith('density-')).length,
+        });
+        return bar;
+    }
+
+    async function freshShell() {
+        vi.resetModules();
+        document.body.innerHTML = '';
+        const mod = await import('../shell.js');
+        mod.initShell({ nav: NAV });
+        return mod;
+    }
+
+    it('stays at full density when the content already fits', async () => {
+        const { updateDensity } = await freshShell();
+        const bar = mountBand(1000);
+        updateDensity();
+
+        expect(bar.dataset.density).toBe('full');
+        expect([...bar.classList].filter(c => c.startsWith('density-'))).toEqual([]);
+    });
+
+    it('sheds only as many steps as it takes to fit', async () => {
+        const { updateDensity } = await freshShell();
+        const bar = mountBand(850);
+        updateDensity();
+
+        // 1000 and 900 overflow an 850px band; 800 fits.
+        expect(bar.dataset.density).toBe('no-name');
+        expect(bar.classList.contains('density-snug')).toBe(true);
+        expect(bar.classList.contains('density-no-name')).toBe(true);
+        expect(bar.classList.contains('density-no-title')).toBe(false);
+    });
+
+    it('bottoms out at nav-overflow and moves the nav into the ⋯ menu', async () => {
+        const { updateDensity } = await freshShell();
+        const bar = mountBand(200);   // nothing fits
+        updateDensity();
+
+        expect(bar.dataset.density).toBe('nav-overflow');
+        const menuLabels = [...document.querySelectorAll('#topbar-overflow-menu .pill-popover-item')]
+            .map(b => b.textContent);
+        expect(menuLabels).toEqual(['Search', 'Lists']);
+        // and the rolled-up entries are wired to the same handlers
+        expect(document.getElementById('overflow-nav-search')).not.toBeNull();
+    });
+
+    it('climbs back up and returns the nav to the band when room comes back', async () => {
+        const { updateDensity } = await freshShell();
+        let width = 200;
+        const bar = document.getElementById('app-topbar');
+        Object.defineProperty(bar, 'clientWidth', { get: () => width, configurable: true });
+        Object.defineProperty(bar, 'scrollWidth', {
+            configurable: true,
+            get: () => 1000 - 100 * [...bar.classList].filter(c => c.startsWith('density-')).length,
+        });
+
+        updateDensity();
+        expect(bar.dataset.density).toBe('nav-overflow');
+
+        width = 1000;
+        updateDensity();
+        expect(bar.dataset.density).toBe('full');
+        expect([...bar.classList].filter(c => c.startsWith('density-'))).toEqual([]);
+        // nav is back in the band, so it must not be duplicated in the menu
+        const menuLabels = [...document.querySelectorAll('#topbar-overflow-menu .pill-popover-item')]
+            .map(b => b.textContent);
+        expect(menuLabels).toEqual([]);
+    });
+
+    it('re-measures when a view swaps its actions in', async () => {
+        const { updateDensity, setTopBar } = await freshShell();
+        const bar = mountBand(850);
+        updateDensity();
+        expect(bar.dataset.density).toBe('no-name');
+
+        // A view whose actions are wider: every step now costs the band 50px
+        // less, so it has to shed further to fit the same 850px.
+        Object.defineProperty(bar, 'scrollWidth', {
+            configurable: true,
+            get: () => 1200 - 100 * [...bar.classList].filter(c => c.startsWith('density-')).length,
+        });
+        setTopBar({ actions: [{ id: 'export', label: 'Export', onClick: () => {} }] });
+
+        expect(bar.dataset.density).toBe('icons');
+    });
+});
