@@ -1,8 +1,15 @@
 id: welcome-to-new-york
 title: Welcome to New York
 artist: Bill Emerson
+default_key: G
 tags:
 - Instrumental
+notes: https://www.banjohangout.org/myhangout/home.asp?id=54561
+metadata_provenance:
+  source: user-submission
+  source_id: pending:meta:welcome-to-new-york:xzxpuzef:19cf4710665e
+  submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+  submitted_at: '2026-09-09'
 parts:
 - type: tablature
   format: otf
