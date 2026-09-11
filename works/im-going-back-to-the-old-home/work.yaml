@@ -10,3 +10,14 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/im-going-back-to-the-old-home/
     imported_at: '2026-08-01'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet-pixelated51-duck-com-s-arrangement.pro
+  label: pixelated51@duck.com's arrangement
+  version_type: alternate
+  arrangement_by: pixelated51@duck.com
+  provenance:
+    source: user-submission
+    source_id: pending:im-going-back-to-the-old-home:1ccf91d05993
+    submitted_by: b7bba15d-9af3-4730-a10b-404a79eb177e
+    submitted_at: '2026-09-11'
