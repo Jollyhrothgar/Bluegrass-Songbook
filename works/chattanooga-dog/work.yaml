@@ -1,7 +1,7 @@
 id: chattanooga-dog
 title: Chattanooga Dog
 artist: Tom T. Hall
-default_key: G
+default_key: A
 tags:
 - ClassicCountry
 - JamFriendly
@@ -11,6 +11,9 @@ parts:
   file: lead-sheet.pro
   default: true
   provenance:
-    source: classic-country
+    source: user-submission
     source_file: chattanoogadoglyricschords.pro
     imported_at: '2026-01-02'
+    source_id: pending:chattanooga-dog:c350f33ccac1
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-09-11'

@@ -1,52 +1,41 @@
-{meta: title Chattanooga Dog}
-{meta: artist Tom T. Hall}
-{meta: x_source classic-country}
-{meta: x_source_file chattanoogadoglyricschords.pro}
-{meta: x_enriched 2025-12-26}
-
 {start_of_verse: Verse 1}
-[G]There's a fairground [C]down in Chatta[G]nooga
-Where a kiddy train runs up and down the [D7]track
-There's an [G]ol' black hound that [C]always hangs around
-And he [G]chases that [D7]train down and [G]back
+There's a [A]fairground [D]down in Chattano[A]oga
+Where a [A]kiddy train runs up and down the [E7]track
+There's an [A]old black hound with his [D]tongue hanging down
+And he [A]chases that [E7]train down and [A]back
 {end_of_verse}
+
+{start_of_chorus}
+And I've been[D] chasing you like that[A] Chattanooga dog
+[E7]   Even though I know you don't [A]care
+I've been[D] chasing you like that[A] Chattanooga dog
+And it [D]ain't gonna g[E7]et me no [A]where
+{end_of_chorus}
 
 {start_of_verse: Verse 2}
-And I've been [C]chasing you like that [G]Chattanooga dog
-[D7]Even though I know you don't [G]care
-I've been [C]chasing you like that [G]Chattanooga dog
-And it [C]ain't gonna [D7]get me any[G]where
+Well, I'm [A]thinking that [D]you're like that [A]old train
+Evry[A]body gets a ticket to [E7]ride
+And I'm [A]like that pup, I won't [D]ever give up
+I'd do [A]anything to [E7]be by your [A]side
 {end_of_verse}
+
+{start_of_chorus}
+And I've been[D] chasing you like that[A] Chattanooga dog
+[E7]   Even though I know you don't [A]care
+I've been[D] chasing you like that[A] Chattanooga dog
+And it [D]ain't gonna g[E7]et me no [A]where
+{end_of_chorus}
 
 {start_of_verse: Verse 3}
-Well I'm thinking that [C]you're like that old [G]train
-Anybody gets a ticket to [D7]ride
-I'm [G]like that pup I won't [C]ever give up
-I'd do [G]anything to [D7]be by your [G]side
+Every [A]day when the [D]kiddies come for a [A]playing
+To [A]ride that ol' kiddy train once [E7]more
+There's that [A]old faithful hound that always [D]hangs around
+And [A]running 'til his [E7]feet get [A]sore
 {end_of_verse}
 
-{start_of_verse: Verse 2}
-And I've been [C]chasing you like that [G]Chattanooga dog
-[D7]Even though I know you don't [G]care
-I've been [C]chasing you like that [G]Chattanooga dog
-And it [C]ain't gonna [D7]get me any[G]where
-{end_of_verse}
-
-{start_of_verse: Verse 4}
-Every day when the [C]kids come for [G]playing
-To ride that ole kiddy train once [D7]more
-There's that [G]old faithful hound with [C]his tongue hanging down
-And [G]running till [D7]his feet get [G]sore
-{end_of_verse}
-
-{start_of_verse: Verse 2}
-And I've been [C]chasing you like that [G]Chattanooga dog
-[D7]Even though I know you don't [G]care
-I've been [C]chasing you like that [G]Chattanooga dog
-And it [C]ain't gonna [D7]get me any[G]where
-{end_of_verse}
-
-
-
-
-
+{start_of_chorus}
+And I've been[D] chasing you like that[A] Chattanooga dog
+[E7]   Even though I know you don't [A]care
+I've been[D] chasing you like that[A] Chattanooga dog
+And it [D]ain't gonna g[E7]et me no [A]where
+{end_of_chorus}
