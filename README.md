@@ -121,6 +121,6 @@ build has ever read, and reported success.)
 - **Permitted**: Personal use (<20 people), local self-hosting, educational use, contributing via PR
 - **Prohibited**: Public hosting, monetization, commercial use, redistribution, enabling Pages on forks
 
-The copyright holder reserves all rights to public hosting and monetization. By contributing, you assign all rights to the copyright holder.
+The copyright holder reserves all rights to the software and to any content the copyright holder explicitly authored, including exclusive rights to public hosting and monetization. Code contributions are assigned to the copyright holder.
 
-Song content copyright remains with original songwriters and publishers.
+**User-submitted content is not claimed.** Lyrics, chords, tabs, and other song material that users upload remain the property of their songwriters, publishers, arrangers, and submitters. Contributing song content does not assign it to the copyright holder. See the "User Content" section of [LICENSE](LICENSE).
