@@ -1103,11 +1103,13 @@ def _tab_provenance(row: dict, marker: str, actor: Optional[str],
                     previous: Optional[dict] = None) -> dict:
     """Provenance for a tab part this pipeline writes.
 
-    ``author`` is the display name the frontend credits on a tablature part
-    (``tablature_parts[].author``), so a NEW tab records the submitter
-    there. A correction does not — see :func:`apply_tablature_row`: the
-    person who fixes a wrong fret did not arrange the tab, and overwriting
-    ``author`` would quietly take the credit.
+    ``author`` is never written here. It is the name the frontend credits
+    on a tablature part (``tablature_parts[].author``), and uploading a tab
+    is not evidence of having arranged it: people upload tabs they found
+    elsewhere, and stamping the submitter's display name there credited
+    them with someone else's work. ``submitted_by`` already records who
+    uploaded it. A correction leaves an existing ``author`` alone too —
+    see :func:`apply_tablature_row`.
 
     ``previous`` is the provenance being replaced, when there is one. Its
     ``source``/``source_id`` are about to be overwritten with
@@ -1125,8 +1127,6 @@ def _tab_provenance(row: dict, marker: str, actor: Optional[str],
     is where it has to live.
     """
     provenance = _provenance(row, marker, actor)
-    if actor:
-        provenance['author'] = actor
     notes = (row.get('notes') or '').strip()
     if notes:
         provenance['x_submission_notes'] = notes
@@ -1221,11 +1221,10 @@ def apply_tablature_row(repo_root, row: dict, mode: str, work_id: str,
         else:
             previous = dict(existing[0].get('provenance') or {})
             provenance = _tab_provenance(row, marker, actor, previous)
-            # A correction is not an arrangement credit: `author` stays
-            # whoever arranged the take. Who fixed it is recorded the way
-            # the retired PR flow recorded it, so the vocabulary in
-            # works/ does not fork.
-            provenance.pop('author', None)
+            # A correction is not an arrangement credit: `author` is not in
+            # these updates, so it stays whoever arranged the take. Who
+            # fixed it is recorded the way the retired PR flow recorded it,
+            # so the vocabulary in works/ does not fork.
             provenance['x_corrected_by'] = row.get('created_by') or actor
             provenance['x_corrected_attribution'] = actor
             provenance['x_corrected'] = date.today().isoformat()

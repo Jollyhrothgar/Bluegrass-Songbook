@@ -774,7 +774,21 @@ class TestTablatureCreate:
         assert part['default'] is True
         assert part['provenance']['source'] == 'user-submission'
         assert part['provenance']['submitted_by'] == SUBMITTER
-        assert part['provenance']['author'] == 'Jane Picker'
+
+    def test_the_uploader_is_not_credited_as_author(self, tmp_path):
+        """Uploading a tab is not arranging it.
+
+        The pipeline used to stamp the submitter's display name into
+        ``author``, so a tab copied from Flatpicking Tabs or Banjo Hangout
+        went live as "Tab by <uploader>". ``submitted_by`` says who
+        uploaded it; ``author`` stays unset.
+        """
+        apply_row(tmp_path, tab_row(), 'create', 'salt-creek',
+                  actor='Jane Picker', verbose=False)
+
+        part = read_work(tmp_path, 'salt-creek')['parts'][0]
+        assert part['provenance']['submitted_by'] == SUBMITTER
+        assert 'author' not in part['provenance']
 
     def test_the_otf_lands_as_readable_json(self, tmp_path):
         apply_row(tmp_path, tab_row(), 'create', 'salt-creek', verbose=False)
@@ -1226,7 +1240,7 @@ class TestTabRowIdsAreNotWorkSlugs:
         tabs = [p for p in work['parts'] if p['type'] == 'tablature']
         assert [p['provenance']['submitted_by'] for p in tabs] == \
             [SUBMITTER, OTHER_USER]
-        assert [p['provenance']['author'] for p in tabs] == ['Alice', 'Bob']
+        assert not any('author' in p['provenance'] for p in tabs)
 
     def test_identical_tabs_from_two_users_are_not_a_replay(self, tmp_path):
         """The marker is row-scoped, and the rows are now distinct.

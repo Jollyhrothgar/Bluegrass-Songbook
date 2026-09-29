@@ -1,80 +1,78 @@
 # License
 
-Copyright (c) 2025 Mike Beaumier. All rights reserved.
+Copyright (c) 2025-2026 Mike Beaumier. All rights reserved.
+
+This is a proprietary license. The Software is **not open source**. Its source code is publicly viewable, but that does not grant permission to copy, modify, or use it.
+
+This license covers the **Software** as defined below. It does **not** cover User Content or Third-Party Software. The Copyright Holder claims no ownership of User Content (see [User Content](#user-content)).
 
 ## Definitions
 
-- **"Software"** means the source code, documentation, data files (including but not limited to index.json and .pro files), and all associated files in this repository.
-- **"Personal Use"** means use by an individual or small private group (fewer than 20 people) for non-commercial purposes on systems they control.
-- **"Public Hosting"** means making the Software or any derivative accessible to third parties over a network.
-- **"Monetization"** means any activity intended to generate revenue, including but not limited to advertising, subscriptions, donations, tips, paid features, or selling access.
+- **"Copyright Holder"** means Mike Beaumier.
+- **"Software"** means everything in this repository or its hosted instances **authored by the Copyright Holder**, including but not limited to: the website and its source code (HTML, CSS, JavaScript, and service worker); the tab editor, lead-sheet renderer, chord and notation tools, and all other application features; parsers, importers, build scripts, data-processing pipelines, and backend code (including database migrations and serverless functions); tests, documentation, schemas, designs, and visual assets; the Copyright Holder's selection, organization, tagging, and metadata for the collection as a whole; and any songs, arrangements, transcriptions, tablature, or other musical content **explicitly authored by the Copyright Holder**. The Software does not include User Content or Third-Party Software.
+- **"User Content"** means songs, lyrics, chords, chord charts, lead sheets, tablature, notation (including ChordPro, ABC, and TablEdit files), arrangements, recordings, and similar material that was **not explicitly authored by the Copyright Holder**. This includes material that users submit, upload, import, or contribute through the website, GitHub issues, pull requests, or any other channel, and material taken from third-party sources. User Content found inside data files (such as `.pro` files, `work.yaml` files, or generated indexes) is still User Content.
+- **"Third-Party Software"** means code or assets written by others and included in this repository under their own licenses (for example, vendored libraries).
+- **"Official Website"** means the instance of the Software hosted by the Copyright Holder, currently at bluegrassbook.com.
 
 ## Terms
 
-### Permitted Uses
+### All Rights Reserved
 
-This Software may be used for **personal, non-commercial purposes only**, subject to the following conditions:
+The Copyright Holder reserves all rights in the Software. **No license or permission to copy the Software is granted for any purpose**, whether personal, educational, non-commercial, or commercial, except the limited uses listed under [Limited Permissions](#limited-permissions).
 
-1. **Private Use**: You may use, copy, and modify the Software for Personal Use as defined above.
+Without prior written permission from the Copyright Holder, you may not:
 
-2. **Educational Use**: You may use the Software for educational purposes, including learning, teaching, and academic research, provided such use is non-commercial.
+1. **Copy** the Software, in whole or in part, including by cloning or downloading this repository or by saving, extracting, or reusing code served by the Official Website.
+2. **Modify** the Software or create derivative works based on it, including ports, translations, rewrites, or reimplementations that copy its code, structure, or design.
+3. **Distribute** the Software or any part of it, publicly or privately, by any means.
+4. **Host, deploy, or run** the Software or any part of it, on any system, whether publicly accessible or not.
+5. **Incorporate** any part of the Software into another project, product, or service, whether free or paid.
+6. **Sublicense, sell, rent, lease, or lend** the Software.
+7. **Use the Software as training data** for machine-learning models or as input for automated code generation.
+8. **Scrape or bulk-extract** data from the Official Website by automated means.
 
-3. **Attribution**: If you share modifications or derivative works in permitted contexts, you must provide appropriate credit to the original author.
+### Limited Permissions
 
-4. **GitHub Forking**: Forking this repository on GitHub for the purpose of contributing (submitting pull requests) is permitted. Enabling GitHub Pages, Netlify, Vercel, or any other public hosting mechanism on forks is expressly prohibited.
+The following narrow permissions are the only rights granted:
+
+1. **Using the Official Website.** You may access and use the Official Website through a web browser or as an installed web app, for its intended purpose. Your browser's automatic downloading, caching, and execution of the site's code for that purpose is permitted. This does not permit copying, extracting, or reusing that code.
+
+2. **Viewing on GitHub.** GitHub's Terms of Service allow users to view public repositories and to fork them within GitHub. You may exercise those rights only to read the source and to propose changes back to this repository through a pull request. They do not permit copying the Software anywhere else or using it for any other purpose.
 
 ### Contributions
 
-By submitting a pull request, issue, or any other contribution to this repository, you:
-- Assign all rights, title, and interest in your contribution to the copyright holder
+**Code contributions.** If you submit source code, documentation, tooling, or other changes to the Software (for example, in a pull request or issue), you:
+- Assign all rights, title, and interest in that contribution to the Copyright Holder
 - Warrant that you have the right to make such assignment
-- Agree that your contribution may be used, modified, and distributed under any terms the copyright holder chooses, including commercial use
+- Agree that your contribution may be used, modified, and distributed under any terms the Copyright Holder chooses, including commercial use
 
-### Restrictions
+Submitting a contribution does not give you any additional rights in the Software.
 
-The following uses are **explicitly prohibited** without prior written permission from the copyright holder:
+**User Content submissions.** The assignment above does **not** apply to User Content. If you submit User Content, you keep whatever rights you have in it, and no ownership passes to the Copyright Holder. See [User Content](#user-content).
 
-1. **Commercial Use**: You may not use the Software, or any derivative works, for commercial purposes, including but not limited to:
-   - Selling or licensing the Software
-   - Selling or licensing songbooks, databases, or collections derived from the Software
-   - Using the Software in commercial products or services
-   - Monetizing websites, applications, or services that incorporate the Software
-   - Accepting donations, tips, or any form of payment in connection with the Software
+### User Content
 
-2. **Public Hosting**: You may not host, deploy, or make the Software accessible to third parties over a network. This includes but is not limited to:
-   - Hosting on public web servers
-   - Deploying to cloud platforms accessible by others
-   - Running publicly accessible instances of the Software
-   - Embedding the Software in publicly accessible applications or services
-   - Enabling GitHub Pages or similar services on repository forks
+**No ownership claimed.** The Copyright Holder does not claim ownership, copyright, or any other intellectual property rights in User Content. Those rights stay with their respective owners, such as the songwriters, composers, publishers, arrangers, transcribers, or submitters. Material in the public domain remains in the public domain. Including User Content in this repository or on the Official Website does not transfer any rights in it to the Copyright Holder.
 
-3. **Public Distribution**: You may not publicly distribute, publish, or make available the Software, derivative works, or databases/collections generated by the Software.
+**Not licensed here.** This license neither grants nor restricts rights in User Content. The restrictions above apply only to the Software. Your use of User Content is governed by applicable law and by any terms set by its rights holders. You are responsible for making sure your use complies with them.
 
-4. **Sublicensing**: You may not sublicense, rent, lease, or lend the Software.
+**Permission to host.** When you submit User Content, you give the Copyright Holder a non-exclusive, royalty-free, worldwide permission to store, reproduce, reformat, display, and distribute it as part of the Software and the Official Website. You grant this only to the extent you hold the rights to grant it. This is a permission to display your submission, not a transfer of ownership, and you keep all rights you hold. By submitting, you represent that you are entitled to share the material, or that it is in the public domain or otherwise lawful to share.
 
-5. **Scraping and Data Extraction**: You may not use automated means to access, scrape, or extract data from any hosted instance of the Software operated by the copyright holder.
+**Removal requests.** Rights holders who want User Content corrected, credited, or removed may contact the Copyright Holder via GitHub. Such requests will be honored promptly.
 
-### Reserved Rights
+User Content is provided as submitted. The Copyright Holder makes no warranty as to its accuracy, attribution, or copyright status.
 
-The copyright holder expressly reserves **exclusive** rights to:
-- Host the Software publicly
-- Monetize the Software in any form
-- License the Software to third parties for commercial use
-- Modify the terms of this license at any time
+### Third-Party Software
 
-No rights are granted except those explicitly stated in this license.
+Third-Party Software is licensed under its own terms, which are noted in or alongside the relevant files. Nothing in this license overrides those terms.
 
 ### Termination
 
-This license terminates automatically and immediately upon any violation of its terms. Upon termination, you must destroy all copies of the Software in your possession. The copyright holder reserves the right to pursue all available legal remedies for any violation.
+Any permission granted by this license terminates automatically and immediately if you violate its terms. Upon termination, you must destroy all copies of the Software in your possession. The Copyright Holder reserves the right to pursue all available legal remedies for any violation.
 
 ### Disclaimer
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-### Song Content
-
-This license applies to the **Software** (source code, parsers, tools, data files, and indexes). The **song content** (lyrics, chords, and musical arrangements) may be subject to separate copyrights held by their respective owners. Users are responsible for ensuring their use of song content complies with applicable copyright laws.
 
 ### Governing Law
 
@@ -82,8 +80,8 @@ This license shall be governed by and construed in accordance with the laws of t
 
 ### Contact
 
-For commercial licensing inquiries or permission requests, please contact the project maintainers via GitHub.
+For permission requests or User Content removal requests, please contact the project maintainers via GitHub.
 
 ---
 
-**Summary**: This Software is source-available for personal, non-commercial use only. Public hosting, monetization, commercial use, and redistribution are prohibited. The copyright holder reserves all rights to host publicly and monetize. By contributing, you assign all rights to the copyright holder.
+**Summary**: All rights reserved. The Software (the website, the tab editor, the tools, and everything else authored by Mike Beaumier) may not be copied, modified, distributed, hosted, or reused for any purpose without written permission. You may use the Official Website and read the source on GitHub, nothing more. **Song content that users upload (lyrics, chords, tabs, and so on) is not claimed by the Copyright Holder.** It stays the property of its authors and rights holders and is hosted only with the permission its submitters give.

@@ -116,11 +116,13 @@ build has ever read, and reported success.)
 
 ## License
 
-**Source Available, Not Open Source.** See [LICENSE](LICENSE) for full terms.
+**Proprietary. All Rights Reserved.** See [LICENSE](LICENSE) for full terms.
 
-- **Permitted**: Personal use (<20 people), local self-hosting, educational use, contributing via PR
-- **Prohibited**: Public hosting, monetization, commercial use, redistribution, enabling Pages on forks
+The source is publicly viewable, but it is not open source. The website, the tab editor, the tools, and everything else the copyright holder authored may not be copied, modified, distributed, hosted, or reused for any purpose without written permission.
 
-The copyright holder reserves all rights to public hosting and monetization. By contributing, you assign all rights to the copyright holder.
+- **Permitted**: Using bluegrassbook.com, reading the source on GitHub, proposing changes via pull request
+- **Prohibited**: Everything else, including cloning, self-hosting, personal or educational copies, derivative works, and AI training
 
-Song content copyright remains with original songwriters and publishers.
+Code contributions are assigned to the copyright holder.
+
+**User-submitted content is not claimed.** Lyrics, chords, tabs, and other song material that users upload remain the property of their songwriters, publishers, arrangers, and submitters. Contributing song content does not assign it to the copyright holder. See the "User Content" section of [LICENSE](LICENSE).

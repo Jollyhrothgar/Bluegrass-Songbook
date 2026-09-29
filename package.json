@@ -1,5 +1,7 @@
 {
   "name": "bluegrass-songbook-tests",
+  "private": true,
+  "license": "UNLICENSED",
   "type": "module",
   "scripts": {
     "test": "vitest",
