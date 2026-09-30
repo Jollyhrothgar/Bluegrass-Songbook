@@ -14,7 +14,7 @@ docs/
 │   ├── main.js         # Entry point, initialization, event wiring, routing
 │   ├── shell.js        # App shell: top band, bottom band, pill primitive
 │   ├── state.js        # Shared state (allSongs, currentSong, etc.)
-│   ├── corpus.js       # Corpus assembly: canon + lazy archive + pending merge
+│   ├── corpus.js       # Corpus assembly: canon + on-demand archive + lean pending overlay
 │   ├── song-content.js # ChordPro on demand (data/songs/{id}.pro) + has_* flags
 │   ├── search-core.js  # Search logic, query parsing, filtering
 │   ├── work-view.js    # THE unified song page (openWork) — all routes land here
@@ -59,7 +59,7 @@ docs/
 ├── posts/              # Blog posts (markdown)
 └── data/
     ├── index.jsonl     # SEARCHABLE canon only, no ChordPro (`wc -l` it)
-    ├── archive.jsonl   # Pruned rows, same shape, lyrics truncated (lazy)
+    ├── archive.jsonl   # Pruned rows, same shape, lyrics truncated (ON DEMAND only)
     ├── songs/{id}.pro  # Full ChordPro per work — fetched when a page opens
     ├── posts.json      # Blog manifest (built by scripts/lib/build_posts.py)
     └── bounty_decisions.json  # Wanted-list verdicts (built from
@@ -198,8 +198,9 @@ let userLists = [];             // Custom user lists (via supabase-auth.js)
 
 | Function | Purpose |
 |----------|---------|
-| `loadIndex()` | Fetch/parse `data/index.jsonl` (canon only), merge, then schedule the archive |
-| `ensureArchiveLoaded()` | `window.` hook: await `archive.jsonl` once before declaring an id unknown |
+| `loadIndex()` | Fetch/parse `data/index.jsonl` (canon only) with the Supabase overlays started in parallel, render, route. The archive is NOT scheduled |
+| `ensureArchiveLoaded()` | `window.` hook: fetch `archive.jsonl` (once) — called by whatever needs an archived row |
+| `whenOverlaysSettled()` | `window.` hook: resolves when the boot overlay fetch has landed (openWork waits for it before the archive) |
 | `getSongContent(song)` | ChordPro for a work: cached fetch of `data/songs/{id}.pro` (song-content.js) |
 | `songHasContent(song)` / `songHasAbc(song)` | Cheap, sync "does this work have a lead sheet / ABC" |
 | `refreshPendingSongs()` | Re-fetch pending songs from Supabase, merge into allSongs |
@@ -640,6 +641,9 @@ mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
 - `song-view.test.js` - ChordPro parsing
 - `song-content.test.js` - Content on demand: cache, dedupe, legacy fallback
 - `corpus.test.js` - Canon + archive + pending merge, archive gating
+- `corpus-lean-overlay.test.js` - Lean pending rows (no `content`), held-back rows, `overlaysNeedArchive`, cached curation sets
+- `song-content-pending.test.js` - Pending text read on open (`getPendingContent`), fork/tab takes
+- `lists-legacy-ids.test.js` - Legacy-ID map fetched only for a list that needs it
 - `tags.test.js` - Tag matching + virtual instrument tag derivation
 - `state.test.js` - State management, pub/sub system
 - `utils.test.js` - Utility functions
@@ -706,7 +710,7 @@ data/index.jsonl      searchable canon rows              fetched at startup
                       (2,462 on 2026-08-19 — `wc -l` it
                        after a build rather than trusting
                        a number in this file)
-data/archive.jsonl    pruned rows, lyrics truncated      fetched when idle
+data/archive.jsonl    pruned rows, lyrics truncated      fetched on demand
 data/songs/{id}.pro   the work's full ChordPro           fetched per song page
 ```
 
@@ -755,13 +759,57 @@ for code that cannot await; a failed fetch is never cached, so the song
 page's Retry actually retries.
 
 **Corpus assembly** (`corpus.js` + `loadIndex`/`loadArchive` in main.js): the
-canon blocks first paint; `archive.jsonl` is fetched on
-`requestIdleCallback` (2s `setTimeout` fallback) and re-merged, which notifies
-`allSongs` subscribers so list views re-render with archived rows. Archive rows
-are forced to `indexed: false`, so search, collection counts and the songbook
-total ignore them while deep links, lists and redirects still resolve. Any path
-that fails to find an id awaits `window.ensureArchiveLoaded()` **once** before
-showing "not found" (openWork, `#song/` redirects, `#edit/` deep links).
+canon blocks first paint; `archive.jsonl` (16 MB raw / 3 MB gzip) is fetched
+**only when something needs an archived row** — nothing prefetches it. The
+on-demand callers: `openWork` on an id the canon doesn't hold (after waiting
+for the overlays, which are cheaper), `#edit/` deep links, the Dungeon, a list
+view / favorites / print-export / Song Lists preview / share-text that names
+an id the canon doesn't hold (`ensureArchiveForRefs` — the list view redraws
+when the archive lands instead of silently dropping the song), the bounty
+board and the add-song picker (both match against every title), My
+Submissions (only for a target the canon doesn't hold), a merge request, the
+editor's dedup check, and `syncArchiveNeed()` (below). The merge notifies
+`allSongs` subscribers. Archive rows are forced to `indexed: false`, so
+search, collection counts and the songbook total ignore them while deep
+links, lists and redirects still resolve. Any path that fails to find an id
+awaits `window.ensureArchiveLoaded()` **once** before showing "not found".
+
+**The overlays start with the index, not after it.** `loadIndex` kicks off
+`fetchSupabaseOverlays()` (pending + deleted + promoted) before awaiting the
+canon, then races it against `OVERLAY_GRACE_MS` (800 ms) so a slow backend
+can't hold first paint; when it lands later the corpus is re-merged
+(`overlayVersion` says whether it must be). The last-known deleted/promoted
+id sets are cached in `localStorage` (`songbook-curation-deleted|promoted`)
+and applied at module load, so a deleted song doesn't flash in; the fetched
+sets *replace* the cached ones (an un-delete has to take effect).
+**`promoted_songs` rescues ARCHIVED rows into search**, and until the next
+index build folds a promotion into the canon that row exists only in
+`archive.jsonl` — so `syncArchiveNeed()` loads the archive whenever a
+promoted id (or a pending edit/tab whose `replaces_id`) names a work the canon
+doesn't hold (`corpus.overlaysNeedArchive`). Until the archive is in,
+`mergeCorpus({ archiveLoaded: false })` *holds back* exactly those pending
+rows (they have nothing to merge onto and would otherwise appear as bare rows).
+
+**The pending overlay is lean.** `pending_songs` is fetched with
+`PENDING_OVERLAY_COLUMNS` — no `content` (up to 200 KB a chart, 2 MB a tab,
+for every visitor) — plus a second id-only query for rows that have a body
+(`has_content`). A lean song row carries `has_content` + `deferred_content`;
+a lean tab part carries `content_deferred`; a fork's pending arrangement
+carries `pending_id`. The text is read from `pending_songs` when the song
+opens: `song-content.js` `getPendingContent(id)` (fetcher installed by
+main.js), which `getSongContent`, `getArrangementContent` and `loadPartOtf`
+use. Trade-off: a *pending* song has no `first_line` / `lyrics` until the
+build publishes it, so it is found by title/artist, not by lyrics.
+
+**The landing cards belong to the home view.** `renderCollectionCardsIfHome()`
+builds them when the home view shows (and rebuilds them when the corpus
+changed since), never for a deep link — a visitor headed for a song downloads
+none of the card images.
+
+**The legacy-ID map** (`data/legacy_id_mapping.json`, 304 KB gzip) is fetched
+by `lists.js` only when a stored list holds an id that is not a known work
+slug (`needsLegacyMapping`); ids the map was checked against and did not
+translate are remembered (`songbook-legacy-checked`).
 
 **Version fields** (for alternate arrangements):
 - `group_id`: Links songs that are versions of each other (stable `grp:` ids
@@ -843,8 +891,8 @@ yours only if a part there records you as its submitter.
 ## Dependencies
 
 - **Supabase JS** - CDN loaded for auth and database
-- Fetches `data/index.jsonl` at startup (canon only), `data/archive.jsonl` when
-  the browser idles, and `data/songs/{id}.pro` per song page
+- Fetches `data/index.jsonl` at startup (canon only), `data/archive.jsonl` only
+  when something needs an archived row, and `data/songs/{id}.pro` per song page
 - Never calls the GitHub API directly (`grep -r api.github.com docs/js/` is
   empty). Everything that reaches GitHub goes through a Supabase edge
   function, which holds the token server-side
@@ -1057,8 +1105,9 @@ the index build emits. The work itself is *not* flagged `source: 'pending'`
 — it is as durable as it was; only the part is pending.
 
 **Rendering a pending take** (`work-view.js`): `loadPartOtf(part)` parses
-the overlay's `content` instead of fetching `data/tabs/…otf.json` (which
-does not exist yet); the committed path is unchanged. `otfCacheKey(part)`
+the overlay's `content` (read from `pending_songs` when the take is opened,
+since the boot overlay is lean) instead of fetching `data/tabs/…otf.json`
+(which does not exist yet); the committed path is unchanged. `otfCacheKey(part)`
 keys a pending take by its overlay row, because a correction keeps the
 `file` of the take it fixes and would otherwise hit the cache and render
 the very version it corrects. The page says so out loud ("Just submitted —
