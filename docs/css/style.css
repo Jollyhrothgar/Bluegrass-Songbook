@@ -15,6 +15,28 @@
     --danger-hover: #b91c1c;
     --success: #16a34a;
     --heart: #e11d48;
+    /* Text that sits ON an --accent / --danger fill (incl. their -hover
+       shades): white on the dark light-theme fills, near-black on the pale
+       dark-theme ones. */
+    --on-accent: #ffffff;
+    --on-danger: #ffffff;
+    /* Aliases: names the stylesheet has long used without defining them. Each
+       points at a real token so it follows the theme. */
+    --text-primary: var(--text);
+    --text-muted: var(--text-secondary);
+    --text-tertiary: var(--text-secondary);
+    --border-color: var(--border);
+    --bg-primary: var(--bg);
+    --bg-tertiary: #eeeeee;
+    --bg-hover: #eeeeee;
+    --surface: var(--bg-secondary);
+    --accent-color: var(--accent);
+    --primary: var(--accent);
+    --primary-dark: var(--accent-hover);
+    --error: var(--danger);
+    --danger-dark: var(--danger-hover);
+    --radius: var(--radius-md);
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     /* Tablature ink hierarchy (three tiers, brightest first):
        fret numbers use --text, stems/beams/barlines use --tab-ink, and the
        horizontal string lines ("rulers") use --tab-rule, which must read
@@ -70,6 +92,10 @@
     --danger-hover: #fca5a5;
     --success: #4ade80;
     --heart: #fb7185;
+    --on-accent: #0a0a0a;
+    --on-danger: #0a0a0a;
+    --bg-tertiary: #1c1c1c;
+    --bg-hover: #1c1c1c;
     /* Bars/stems/beams read just below the white fret numbers (14.2:1 on
        black); the string rulers sit a full step quieter at 6.1:1 — the same
        grey that serves as the light theme's ruler, where it reads 3.3:1
@@ -286,7 +312,7 @@ h1 {
 .search-tips-btn:hover {
     background: var(--accent);
     border-color: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 
 .search-tips-dropdown {
@@ -464,7 +490,7 @@ h1 {
 
 .list-action-btn.primary:hover {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 
 /* List ownership badges */
@@ -617,7 +643,7 @@ h1 {
 
 .list-header-btn.primary:hover {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 
 /* Mobile responsiveness for list header */
@@ -1327,7 +1353,7 @@ h1 {
 
 .qc-toggle-btn.active {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border-color: var(--accent);
 }
 
@@ -1453,7 +1479,7 @@ h1 {
 .share-copy-btn {
     padding: 0.5rem 1rem;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border: none;
     border-radius: 6px;
     font-size: 0.85rem;
@@ -2577,7 +2603,7 @@ h1 {
 .copy-btn {
     background: var(--accent);
     border: none;
-    color: #fff;
+    color: var(--on-accent);
     font-size: 0.9rem;
     padding: 0.625rem 1rem;
     border-radius: 6px;
@@ -2701,7 +2727,7 @@ h1 {
 
     .mobile-options-toggle.active {
         background: var(--accent);
-        color: white;
+        color: var(--on-accent);
         border-color: var(--accent);
     }
 
@@ -2962,7 +2988,7 @@ mark {
 
 .hints-btn:hover {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border-color: var(--accent);
 }
 
@@ -3098,7 +3124,7 @@ mark {
 
 .action-btn.primary {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border-color: var(--accent);
 }
 
@@ -3252,7 +3278,7 @@ mark {
 
 .editor-transpose-controls .transpose-btn:hover {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border-color: var(--accent);
 }
 
@@ -3450,7 +3476,7 @@ mark {
 }
 .dedup-bounty-btn:hover {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 .dedup-proceed {
     margin-top: 0.4rem;
@@ -3606,7 +3632,7 @@ mark {
 .tab-existing-add {
     background: var(--accent);
     border-color: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
     font-weight: 600;
 }
 
@@ -3689,7 +3715,7 @@ mark {
     gap: 0.5rem;
     padding: 0.5rem 0.75rem;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border: none;
     border-radius: 6px;
     font-size: 0.875rem;
@@ -3812,7 +3838,7 @@ mark {
 
 .action-btn.danger {
     background: var(--danger);
-    color: white;
+    color: var(--on-danger);
     border-color: var(--danger);
 }
 
@@ -3991,7 +4017,7 @@ mark {
     width: 100%;
     padding: 0.75rem 1rem;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border: none;
     border-radius: 6px;
     font-size: 0.9375rem;
@@ -4051,7 +4077,7 @@ mark {
     height: 32px;
     border-radius: 50%;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4071,7 +4097,7 @@ mark {
     height: 48px;
     border-radius: 50%;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4312,7 +4338,7 @@ mark {
 .list-picker-add-btn {
     padding: 0.4rem 0.75rem;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border: none;
     border-radius: 4px;
     font-size: 0.85rem;
@@ -4349,7 +4375,7 @@ mark {
 .create-list-confirm {
     padding: 0.4rem 0.75rem;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border: none;
     border-radius: 4px;
     font-size: 0.85rem;
@@ -4490,7 +4516,7 @@ mark {
 
 .feedback-option.email-option:hover {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 
 /* ============================================
@@ -4973,7 +4999,7 @@ mark {
 .result-select-btn.selected {
     background: var(--accent);
     border-color: var(--accent);
-    color: white;
+    color: var(--on-accent);
     opacity: 1;
     pointer-events: auto;
 }
@@ -5055,7 +5081,7 @@ mark {
 
 .batch-select-all {
     background: var(--accent) !important;
-    color: white !important;
+    color: var(--on-accent) !important;
     border-color: var(--accent) !important;
 }
 
@@ -5065,7 +5091,7 @@ mark {
 
 .batch-remove {
     background: var(--danger) !important;
-    color: white !important;
+    color: var(--on-danger) !important;
     border-color: var(--danger) !important;
 }
 
@@ -5472,7 +5498,7 @@ mark {
 
 .placeholder-contribute-btn {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border: none;
     padding: 0.5rem 1.25rem;
     border-radius: 6px;
@@ -5539,7 +5565,7 @@ mark {
 }
 .placeholder-editor-save {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border: none;
     padding: 0.45rem 1rem;
     border-radius: 6px;
@@ -5690,7 +5716,7 @@ mark {
 }
 .work-bounty-inline-submit {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border: none;
     padding: 0.35rem 0.75rem;
     border-radius: var(--radius-sm);
@@ -5806,7 +5832,7 @@ mark {
 .bounty-filter-btn.active {
     background: var(--accent);
     border-color: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 /* Sections */
 .bounty-section {
@@ -5927,7 +5953,7 @@ mark {
     display: inline-block;
     padding: 0.6rem 1.25rem;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border: none;
     text-decoration: none;
     border-radius: var(--radius-md);
@@ -6004,7 +6030,7 @@ mark {
 }
 .bounty-req-result:hover {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 .bounty-req-result-title {
     font-weight: 500;
@@ -6266,7 +6292,7 @@ a.my-submission-row:hover {
     display: inline-block;
     padding: 0.6rem 1.25rem;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     text-decoration: none;
     border-radius: var(--radius-md);
     font-weight: 500;
@@ -6351,7 +6377,7 @@ a.my-submission-row:hover {
 .vote-btn.voted {
     background: var(--accent);
     border-color: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 
 .vote-arrow {
@@ -6565,7 +6591,7 @@ a.my-submission-row:hover {
 
 .toggle-btn.active {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 
 .toggle-btn:hover:not(.active):not(:disabled) {
@@ -6623,7 +6649,7 @@ a.my-submission-row:hover {
 .abc-btn {
     padding: 0.5rem 1rem;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -6821,7 +6847,7 @@ a.my-submission-row:hover {
 
 .nav-btn:hover:not(:disabled) {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border-color: var(--accent);
 }
 
@@ -7520,7 +7546,7 @@ body.dungeon-mode #search-stats {
 .part-tab.active {
     background: var(--accent);
     border-color: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 
 
@@ -7618,7 +7644,7 @@ body.dungeon-mode #search-stats {
     height: 28px;
     border-radius: 50%;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7733,7 +7759,7 @@ body.dungeon-mode #search-stats {
 
 .tab-player-controls button.playing {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border-color: var(--accent);
 }
 
@@ -7842,7 +7868,7 @@ body.dungeon-mode #search-stats {
     font-size: 0.6875rem;
     padding: 0.125rem 0.375rem;
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border-radius: 4px;
     margin-left: 0.5rem;
     vertical-align: middle;
@@ -7877,7 +7903,7 @@ body.dungeon-mode #search-stats {
 .part-tab.active {
     background: var(--accent);
     border-color: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
     font-weight: 500;
 }
 
@@ -8062,7 +8088,7 @@ body.dungeon-mode #search-stats {
 
 .tab-controls button:hover:not(:disabled) {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border-color: var(--accent);
 }
 
@@ -8073,7 +8099,7 @@ body.dungeon-mode #search-stats {
 
 .tab-controls button.playing {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border-color: var(--accent);
 }
 
@@ -8114,7 +8140,7 @@ body.dungeon-mode #search-stats {
 
 .tab-tempo-btn:hover:not(:disabled) {
     background: var(--accent);
-    color: white;
+    color: var(--on-accent);
     border-color: var(--accent);
 }
 
@@ -8220,7 +8246,7 @@ body.dungeon-mode #search-stats {
 .track-toggle:has(.track-checkbox:checked) {
     background: var(--accent);
     border-color: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 
 .track-checkbox {
@@ -8281,7 +8307,7 @@ body.dungeon-mode #search-stats {
 
 .track-view-tab.active {
     background: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
     border-color: var(--accent);
 }
 
@@ -8785,7 +8811,7 @@ body.dungeon-mode #search-stats {
 
 .list-song-remove:hover {
     background: var(--danger);
-    color: white;
+    color: var(--on-danger);
 }
 
 /* Song item actions container (up/down/remove buttons) */
@@ -9020,7 +9046,7 @@ body.dungeon-mode #search-stats {
 
 .list-card-menu-item.danger:hover {
     background: var(--danger);
-    color: white;
+    color: var(--on-danger);
 }
 
 /* Empty state */
@@ -9877,7 +9903,7 @@ body.dungeon-mode #search-stats {
     gap: var(--space-md);
     padding: var(--space-sm) var(--space-md);
     background: var(--danger);
-    color: #fff;
+    color: var(--on-danger);
     font-size: var(--font-sm);
 }
 
@@ -10022,7 +10048,7 @@ body.dungeon-mode .topbar-brand .brand-dungeon-face {
 .topbar-action-btn.primary {
     background: var(--accent);
     border-color: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
 }
 
 .topbar-right {
@@ -10228,7 +10254,7 @@ body.has-bottomband .container {
 .pill-key-btn.active {
     background: var(--accent);
     border-color: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
 }
 
 .pill-key-btn.original { font-weight: 700; }
@@ -10423,7 +10449,7 @@ body.has-list-context.has-bottomband .container {
 .pill-mode-btn.active {
     background: var(--accent);
     border-color: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
 }
 
 /* Pill popovers hosted in the bottom band open upward */
@@ -10806,7 +10832,7 @@ body.has-list-context.has-bottomband .container {
     padding: 0.05rem 0.45rem;
     border-radius: 999px;
     background: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
     font-size: var(--font-xs);
     font-weight: 600;
     vertical-align: middle;
@@ -10903,7 +10929,7 @@ body.has-list-context.has-bottomband .container {
     border: none;
     border-radius: var(--radius-sm);
     background: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
     cursor: pointer;
 }
 .facet-apply-btn:hover { background: var(--accent-hover); }
