@@ -490,7 +490,23 @@ uv run python scripts/lib/merge_works.py /tmp/merge-plan.json --execute
 ## Row-Level Security (RLS)
 
 All tables have RLS policies:
-- Lists: Owners can CRUD, anyone can read public lists
+- Lists (`user_lists`, `user_list_items`, `list_followers`): a list and its
+  items are readable by its **owners and followers** only, to signed-in users
+  only; owners write. `list_followers` rows are readable by the follower and by
+  the list's owners. Nobody reads these tables as `anon`: a share link goes
+  through `get_public_list(list_id)` (SECURITY DEFINER, callable by anon),
+  which returns `{ list, songs, is_owner, is_follower, is_orphaned, can_claim }`
+  or `{ error }`. The read policies are `TO authenticated` and go through the
+  `is_list_follower` / `is_list_owner` definer helpers so the tables' policies
+  do not recurse into each other.
+- List ownership changes only through RPCs: `claim_list_invite`,
+  `claim_orphaned_list`, `generate_list_invite` and `remove_list_owner(list_id)`
+  (removes **the caller**, never a named user; there is no two-argument form).
+  `add_list_owner` is executable by nobody: it exists for `claim_list_invite`
+  to call as the definer. A new `SECURITY DEFINER` function in `public` is
+  executable by PUBLIC **and** (Supabase default privileges) by `anon` and
+  `authenticated`; `REVOKE ALL ... FROM PUBLIC, anon` and GRANT only what the
+  caller needs, in the same migration.
 - Votes: one vote per user per version — `(user_id, song_id, arr_key)`, where
   `arr_key` is a generated `coalesce(arr_slug, '')` (a plain nullable column
   could not carry a unique constraint, and PostgREST cannot arbitrate an
@@ -598,7 +614,9 @@ the metadata CHECKs exist, `part_type` admits `'metadata'`, the id-namespace
 CHECKs exist, RLS is on where it is the only gate, `get_leaderboard()` is
 `security definer` and granted to `anon`, `leaderboard_salt` and
 `leaderboard_identities` have zero policies, nothing can client-INSERT into
-`submission_log`, `doc_staging` is still gone. It is read-only and needs no
+`submission_log`, `doc_staging` is still gone, the list tables have no open
+read policy, `add_list_owner` is executable by nobody, `remove_list_owner`
+takes no user id, and `log_events` qualifies its table. It is read-only and needs no
 database password beyond the CLI's own cached login. Run it after every push.
 
 The list is deliberately short. An invariant earns a slot only when a named
@@ -608,6 +626,24 @@ which is why the length caps and `pending_songs_instrument_shape` are **not**
 in it (`process_pending.tab_instrument` re-validates those and raises before
 anything reaches `works/`). The rule and the exclusions are written out at the
 top of `scripts/lib/schema_assert.py`; add to the list there, with a `why`.
+
+### Testing a migration locally
+
+`supabase/tests/run.sh` replays every migration in a throwaway local stack and
+runs SQL + PostgREST assertions against it; see `supabase/tests/README.md`.
+The chain cannot be replayed bare because a few objects (`user_lists`,
+`user_list_items`, `song_flags`, `submit_flag`, `get_visitor_flag_count`) were
+made in the dashboard and have no `CREATE` here, so the harness seeds a
+reconstruction of them first (`supabase/tests/baseline/`, test-only).
+`post_deploy_check.sql` / `post_deploy_probe.sql` in the same folder are the
+read-only checks to run against production after `db-push`.
+
+**A `SET search_path = ''` on a function whose body names tables unqualified is
+a broken function.** `20260107010000` did that to `log_events` and every call
+404'd (`42P01`) for eight months; the client cannot notice, because
+`supabase.rpc` resolves `{ error }` instead of throwing. When pinning a
+function's search_path, qualify every table (`public.analytics_events`) and
+call the function in the migration's own postcondition.
 
 ### Self-verifying migrations
 
