@@ -57,3 +57,18 @@ describe('text on accent / danger fills', () => {
         }
     }
 });
+
+describe('no hardcoded white text on accent / danger fills', () => {
+    it('uses --on-accent / --on-danger instead of white', () => {
+        const offenders = [];
+        for (const [file, css] of sources) {
+            for (const m of css.matchAll(/([^{}]+)\{([^}]*)\}/g)) {
+                const body = m[2];
+                const fill = /background(?:-color)?\s*:\s*var\(\s*--(accent|danger|primary|accent-color|accent-hover|danger-hover|danger-dark|primary-dark)\b/.test(body);
+                const white = /(?:^|[;\s])color\s*:\s*(white|#fff|#ffffff)\b/i.test(body);
+                if (fill && white) offenders.push(`${file}: ${m[1].trim()}`);
+            }
+        }
+        expect(offenders).toEqual([]);
+    });
+});

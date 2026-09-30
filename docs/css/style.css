@@ -967,7 +967,7 @@ h1 {
 .add-tags-input-row button {
     padding: 0.4rem 0.8rem;
     background: var(--accent-color);
-    color: white;
+    color: var(--on-accent);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -1825,7 +1825,7 @@ h1 {
 
 .undo-toast-btn {
     background: var(--primary);
-    color: white;
+    color: var(--on-accent);
     border: none;
     padding: 0.4rem 0.75rem;
     border-radius: 4px;
@@ -4137,6 +4137,7 @@ mark {
 /* Something worked, but not all the way (e.g. saved live, sync still pending) */
 .auth-toast.warning {
     background: var(--danger);
+    color: var(--on-danger);
 }
 
 /* ============================================
@@ -4872,7 +4873,7 @@ mark {
     border: none;
     border-radius: 50%;
     background: var(--danger, #e74c3c);
-    color: white;
+    color: var(--on-danger);
     font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
@@ -7920,8 +7921,8 @@ body.dungeon-mode #search-stats {
 }
 
 .part-tab.active .part-tab-count {
-    background: rgba(255, 255, 255, 0.25);
-    color: #fff;
+    background: rgba(0, 0, 0, 0.15);
+    color: var(--on-accent);
 }
 
 /* ============================================
