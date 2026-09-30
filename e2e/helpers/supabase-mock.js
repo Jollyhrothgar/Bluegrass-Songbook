@@ -22,6 +22,7 @@
 // Usage:
 //     const sb = await mockSupabase(page);              // signed in
 //     const sb = await mockSupabase(page, { signedIn: false });
+//     const sb = await mockSupabase(page, { signedIn: false, oauthReturn: true });
 //     …
 //     sb.assertClean();          // nothing unexpected left the browser
 //     sb.rows('pending_songs');  // what the app actually wrote
@@ -119,6 +120,11 @@ accounts.google.com by now.</p></main></body></html>`;
  * @param {import('@playwright/test').Page} page
  * @param {Object} [options]
  * @param {boolean} [options.signedIn=true] - seed a session in localStorage
+ * @param {boolean} [options.oauthReturn=false] - make the OAuth hand-off
+ *   COMPLETE: `/auth/v1/authorize` redirects straight back to the app's
+ *   `redirect_to` with the session in the URL fragment (the implicit flow),
+ *   exactly as Google + Supabase do, and the mock is signed in from then on.
+ *   Without it the hand-off stops at a gate page (nothing comes back).
  * @param {Object} [options.user=FAKE_USER]
  * @param {Object} [options.rpc] - `{name: value}` results for `rpc/<name>`
  * @param {Object} [options.commit] - body for `functions/v1/auto-commit-song`
@@ -127,12 +133,17 @@ accounts.google.com by now.</p></main></body></html>`;
  */
 export async function mockSupabase(page, {
     signedIn = true,
+    oauthReturn = false,
     user = FAKE_USER,
     rpc = {},
     commit = { success: true, mode: 'create', workId: 'e2e-mocked-work' },
     tables = {},
 } = {}) {
     const session = fakeSession(user);
+    // Whether the SERVER considers the caller signed in. Starts as the seeded
+    // state; an `oauthReturn` hand-off flips it, which is what the SDK's
+    // follow-up `GET /auth/v1/user` then sees.
+    let authed = signedIn;
 
     const state = {
         /** Everything the route handler answered, newest last. */
@@ -188,6 +199,27 @@ export async function mockSupabase(page, {
 
         // ── auth ──────────────────────────────────────────────────────
         if (path === '/auth/v1/authorize') {
+            if (oauthReturn) {
+                // Complete the round trip: Google consents, Supabase sends
+                // the browser back to `redirect_to` with the session in the
+                // fragment. Note what is NOT carried back: anything the app
+                // had in its own hash before it left.
+                authed = true;
+                const back = url.searchParams.get('redirect_to') || 'http://localhost/';
+                const fragment = new URLSearchParams({
+                    access_token: session.access_token,
+                    expires_at: String(session.expires_at),
+                    expires_in: String(session.expires_in),
+                    refresh_token: session.refresh_token,
+                    token_type: 'bearer',
+                    provider_token: 'e2e-provider-token',
+                });
+                return route.fulfill({
+                    status: 302,
+                    headers: { location: `${back}#${fragment.toString()}` },
+                    body: '',
+                });
+            }
             // signInWithOAuth navigates here. In the app this is the point
             // of no return — the "login gate" an anonymous contributor sees.
             return route.fulfill({
@@ -195,10 +227,10 @@ export async function mockSupabase(page, {
             });
         }
         if (path === '/auth/v1/user') {
-            return signedIn ? json({ user }) : json({ message: 'not logged in' }, 401);
+            return authed ? json({ user }) : json({ message: 'not logged in' }, 401);
         }
         if (path === '/auth/v1/token') {
-            return signedIn
+            return authed
                 ? json(session)
                 : json({ error: 'invalid_grant' }, 400);
         }

@@ -43,6 +43,7 @@ docs/
 │   ├── drafts-view.js  # `#drafts` list (Open / Delete)
 │   ├── audio-unlock.js # iOS audio: SYNC resume inside the tap + ringer-switch escape (never await before calling it)
 │   ├── supabase-auth.js # Auth, cloud sync, voting
+│   ├── auth-return.js  # Return record: get back to the editor (route + text) after the Google redirect
 │   ├── renderers/      # Part renderers
 │   │   ├── index.js    # Renderer registry
 │   │   ├── chordpro.js # THE ChordPro renderer (parse + render, shared everywhere)
@@ -465,6 +466,44 @@ Functions prefixed with `editor*`:
   `submitSongToGitHub()` any more — the GitHub-issue flow and its
   `create-song-issue` function are both deleted.
 
+### Surviving the sign-in redirect (`auth-return.js`)
+
+Google sign-in is a FULL-PAGE redirect: the page unloads, and the browser
+returns to `origin + pathname` with the session in the URL **fragment**
+(`#access_token=…`; the client uses the implicit flow). Two consequences that
+cost us work before: the route (`#add`, `#edit/{id}`, a tab route) was gone
+after sign-in, and the lead-sheet editor — which has no draft store — came
+back empty. The route can NOT ride in `redirectTo` (the fragment is
+Supabase's), so the page leaves a note for itself:
+
+- **Write** — `requireLogin()` (`utils.js`), the tab gate's default
+  (`otf-editor/create-tab-entry.js`) and the auth modal's Google button call
+  `persistReturnRecord()` right before `signInWithGoogle()`. The record
+  (`localStorage['bgb-auth-return']`, `{v, at, hash, kind, state?}`, 30 min TTL,
+  single use) holds the route plus whatever the open editor contributes through
+  `registerReturnSource(fn)`: the lead-sheet editor returns its textarea +
+  title/artist/writer (`kind: 'lead-sheet'`); the tab editor returns
+  `draftOpenHash(...)` — the IndexedDB draft's own route with `?draft=`
+  (`kind: 'tab'`), after `mountTabEditor`'s `onSubmit` has force-flushed the
+  autosave (it does NOT wait for the 1s trailing edge when signed out). With
+  no editor open the record is just the current route.
+- **Apply** — `AUTH_REDIRECT` is read at import time (before supabase-js strips
+  the fragment); only a page that actually came back from the redirect may
+  apply a record, so a record left by an abandoned attempt can't fire when the
+  user later signs in by email. `main.js::resumeAfterAuthRedirect` waits for the
+  boot route (`bootRouted`), replaces the token URL with the recorded hash,
+  runs `handleDeepLink()` and lets the editor restore: `stageEditorRestore`
+  parks the snapshot (an edit's waits for `enterEditMode` of that song, then
+  wins over the published text; a new song's is applied by
+  `applyEditorRestore()`). Message: "Signed in — ready to submit". It never
+  submits on the user's behalf. An error return (`#error=access_denied`) restores
+  the work too.
+- Tests: `e2e/editor-lifecycle.spec.js` runs the real SDK against a mock OAuth
+  endpoint that completes the redirect (`mockSupabase(page, { oauthReturn: true
+  })`). A stubbed `signInWithGoogle` cannot see this bug.
+- Known limits: the tab submit panel's comment is not carried over (retype it);
+  email/password sign-in never leaves the page, so it needs none of this.
+
 ### View Navigation
 
 Views are switched through the reactive `currentView` state (`showView(mode)`
@@ -668,6 +707,7 @@ mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
 - `abc-notation.spec.js` - ABC notation rendering for fiddle tunes
 - `arrangement-pill.spec.js` - Arrangement pill (version switching/voting)
 - `editor.spec.js` - Song editor flows
+- `editor-lifecycle.spec.js` - Editor as a routed view (A7), leave prompt, and surviving the Google sign-in redirect (A5)
 - `error-states.spec.js` - Error handling and edge cases
 - `favorites.spec.js` - Favorites and lists
 - `landing-page.spec.js` - Homepage collections and navigation

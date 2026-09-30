@@ -6,8 +6,9 @@ import {
     editMode, setEditMode,
     editingSongId, setEditingSongId,
     editorNashvilleMode, setEditorNashvilleMode,
-    setCurrentView
+    currentView, setCurrentView
 } from './state.js';
+import { registerReturnSource } from './auth-return.js';
 import { generateSlug, requireLogin } from './utils.js';
 import { getSongContent, primeSongContent } from './song-content.js';
 import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
@@ -190,6 +191,10 @@ export async function enterEditMode(song, options = {}) {
     // What "unsaved" is measured against, taken before anything is restored
     // over the top of it (a sign-in round trip puts the user's edits back).
     markEditorClean();
+    // A sign-in round trip parked the user's edits of THIS song; put them back
+    // over the published text (the baseline above stays the published text, so
+    // they still count as unsaved).
+    applyStagedRestore(song.id);
 
     // Show the editor THROUGH the view state machine, like every other view.
     // Hiding the song page by hand left app state saying "song page", so a
@@ -292,6 +297,67 @@ export function editorHasUnsavedChanges() {
 /** Which session is open, for routing back to it: `{ isEdit, songId }`. */
 export function editorSessionInfo() {
     return { isEdit: !!(editMode && editingSongId), songId: editingSongId || null };
+}
+
+// ---------------------------------------------------------------------------
+// Surviving a sign-in redirect (auth-return.js)
+// ---------------------------------------------------------------------------
+
+/**
+ * Sign-in is a full-page redirect and the lead-sheet editor has no draft
+ * store, so the text lives in the return record for the trip. Runs
+ * synchronously just before the redirect; null when the editor isn't on
+ * screen (another source, or the bare route, answers instead).
+ */
+function editorReturnSource() {
+    if (currentView !== 'add-song') return null;
+    const { isEdit, songId } = editorSessionInfo();
+    return {
+        kind: 'lead-sheet',
+        hash: isEdit ? `#edit/${songId}` : '#add',
+        state: { ...readEditorFields(), editingSongId: isEdit ? songId : null },
+    };
+}
+
+let stagedRestore = null;
+
+/**
+ * Hold a snapshot taken by `editorReturnSource` until the editor it belongs to
+ * is open. An edit of an existing song opens asynchronously (the published
+ * text is fetched first), so the snapshot waits for `enterEditMode` of that
+ * song; a new-song snapshot is applied by `applyEditorRestore()` once the
+ * `#add` route has been shown.
+ */
+export function stageEditorRestore(snapshot, { message = '' } = {}) {
+    stagedRestore = snapshot ? { snapshot, message, at: Date.now() } : null;
+}
+
+/** Apply a staged snapshot for the new-song editor (no-op for an edit's). */
+export function applyEditorRestore() {
+    return applyStagedRestore(null);
+}
+
+function applyStagedRestore(songId) {
+    const staged = stagedRestore;
+    if (!staged) return false;
+    // A snapshot whose song never opened (deleted, renamed) must not wait to
+    // ambush some later edit.
+    if (Date.now() - staged.at > 2 * 60 * 1000) { stagedRestore = null; return false; }
+    if ((staged.snapshot.editingSongId || null) !== (songId || null)) return false;
+    stagedRestore = null;
+
+    const { title, artist, writer, content } = staged.snapshot;
+    if (editorTitleEl) editorTitleEl.value = title || '';
+    if (editorArtistEl) editorArtistEl.value = artist || '';
+    if (editorWriterEl) editorWriterEl.value = writer || '';
+    if (editorContentEl) editorContentEl.value = content || '';
+    updateMetadataSummary();
+    updateEditorPreview();
+    if (staged.message && editorStatusEl) {
+        editorStatusEl.textContent = staged.message;
+        editorStatusEl.className = 'save-status success';
+    }
+    return true;
 }
 
 let unsavedPromptResolve = null;
@@ -709,6 +775,10 @@ export function initEditor(options) {
     editorRedoBtnEl = editorRedoBtn;
     editorTransposeGroupEl = editorTransposeGroup;
 
+    // Leave a return record for the sign-in redirect (same function every
+    // call, so a repeat init registers once)
+    registerReturnSource(editorReturnSource);
+
     // Compact metadata line: tap to expand/collapse the full fields
     if (metadataSummaryEl) {
         metadataSummaryEl.addEventListener('click', () => {
@@ -1030,6 +1100,9 @@ async function refreshTrustedStatus() {
  */
 export function refreshEditorOwnership() {
     editorTrusted = false;
+    // Nothing on screen depends on it unless an edit is open — and this runs
+    // on every sign-in event, which must not cost a trust lookup at boot.
+    if (!editMode) return Promise.resolve();
     refreshOwnershipChrome();
     return refreshTrustedStatus();
 }

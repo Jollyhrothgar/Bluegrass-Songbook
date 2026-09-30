@@ -56,7 +56,8 @@ import { renderHighScoresView } from './high-scores.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
 import {
     initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView,
-    editorHasUnsavedChanges, editorSessionInfo, promptUnsavedChanges, closeUnsavedPrompt, unsavedPromptOpen
+    editorHasUnsavedChanges, editorSessionInfo, promptUnsavedChanges, closeUnsavedPrompt, unsavedPromptOpen,
+    stageEditorRestore, applyEditorRestore, refreshEditorOwnership
 } from './editor.js';
 import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
@@ -74,6 +75,7 @@ import {
 } from './corpus.js';
 import { getSongContents } from './song-content.js';
 import { showToast } from './toast.js';
+import { AUTH_REDIRECT, persistReturnRecord, takeReturnRecord, pruneReturnRecord } from './auth-return.js';
 import { initPWA, canInstall, promptInstall } from './pwa.js';
 import { renderDraftsView } from './drafts-view.js';
 import { getDraftStore, migrateLegacyDraft, parseHashParams } from './drafts.js';
@@ -830,6 +832,39 @@ async function openTabRoute(route, hash) {
     openWork(workId, { fromDeepLink: true, editRef: route.partRef, draft });
 }
 
+/**
+ * The page just came back from the Google sign-in redirect. Put the user back
+ * where they were: route to the recorded hash and let the open editor restore
+ * its state (auth-return.js). Never submits anything on their behalf.
+ *
+ * @param {{signedIn: boolean}} options - false when the redirect came back with
+ *   an error (consent refused): the work is restored all the same.
+ */
+async function resumeAfterAuthRedirect({ signedIn }) {
+    const record = takeReturnRecord();
+    if (!record) return;
+    await bootRouted;
+
+    const message = signedIn
+        ? 'Signed in \u2014 ready to submit'
+        : 'Sign-in did not finish \u2014 your work is still here';
+    if (record.kind === 'lead-sheet' && record.state) {
+        stageEditorRestore(record.state, { message });
+    }
+
+    // Replace the token-bearing URL with the route we left, then route it the
+    // way a fresh load of that URL would (#add, #edit/{id}, a tab route with
+    // its ?draft=, or any other page).
+    history.replaceState(null, '', window.location.pathname + record.hash);
+    handleDeepLink();
+
+    if (record.kind === 'lead-sheet') {
+        applyEditorRestore();       // the new-song editor; an edit's waits for enterEditMode
+    } else if (record.kind === 'tab') {
+        showToast(message, { duration: 6000 });
+    }
+}
+
 function handleDeepLink() {
     const hash = window.location.hash;
     if (!hash) return false;
@@ -1376,6 +1411,13 @@ async function fetchSupabaseOverlays() {
 // fetch rather than fixing a correctness bug.
 let indexLoadInFlight = false;
 
+// Settles once the boot URL has been routed (or the load gave up): from then
+// on it is safe to route somewhere ELSE on purpose. The sign-in return waits
+// for it, or the boot tail would route the token-bearing URL to home right
+// over the top of the route it restored.
+let resolveBootRouted;
+const bootRouted = new Promise(resolve => { resolveBootRouted = resolve; });
+
 async function loadIndex() {
     if (indexLoadInFlight) return;
     indexLoadInFlight = true;
@@ -1460,6 +1502,7 @@ async function loadIndex() {
         );
     } finally {
         indexLoadInFlight = false;
+        resolveBootRouted();
     }
 }
 
@@ -2075,6 +2118,7 @@ function initAuthModal() {
     // Google sign-in button within auth modal
     authGoogleBtn?.addEventListener('click', async () => {
         closeAuthModal();
+        persistReturnRecord();
         await SupabaseAuth.signInWithGoogle();
     });
 
@@ -2917,6 +2961,8 @@ function init() {
     });
 
     // Initialize Supabase auth
+    let authReturnHandled = false;
+    pruneReturnRecord();
     if (typeof SupabaseAuth !== 'undefined') {
         SupabaseAuth.init();
         SupabaseAuth.onAuthChange((event, user) => {
@@ -2928,6 +2974,17 @@ function init() {
             if (event === 'SIGNED_IN' && user) {
                 checkPendingInvite();
                 closeAuthModal();
+            }
+            // What the editor promises ("updates in place" vs "your own
+            // arrangement") depends on who is signed in
+            if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
+                refreshEditorOwnership();
+            }
+            // This page load IS the return from the Google redirect: go back
+            // to what the user was doing (once — later events must not replay it)
+            if (user && AUTH_REDIRECT === 'signed-in' && !authReturnHandled) {
+                authReturnHandled = true;
+                resumeAfterAuthRedirect({ signedIn: true });
             }
             // Handle password recovery flow (user clicked reset link in email)
             if (event === 'PASSWORD_RECOVERY') {
@@ -2973,6 +3030,10 @@ function init() {
 
     // Load the index
     loadIndex();
+
+    // Came back from the redirect WITHOUT signing in (consent refused, error):
+    // the work is still worth restoring
+    if (AUTH_REDIRECT === 'error') resumeAfterAuthRedirect({ signedIn: false });
 }
 
 // Start the app
