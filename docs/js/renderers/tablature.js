@@ -270,11 +270,21 @@ export class TabRenderer {
         this._layoutWidth = 0;
         this._layoutDeferred = false;
         this._scale = 1;
+        //   _drewWithBravura whether the current drawing used the Bravura
+        //                   glyphs (time signatures, rests) — see the
+        //                   font-ready redraw below.
+        this._drewWithBravura = false;
 
         // Engraved time-signature digits: kick off the (once-per-page)
         // Bravura load and re-render when it arrives.
+        //
+        // Only when the drawing on screen was made WITHOUT the font. The
+        // promise resolves on a microtask even when the font was ready long
+        // ago, so this used to redraw every staff a second time on every
+        // open; `_drewWithBravura` records what the last draw actually used.
         TabRenderer._ensureBravura().then(() => {
-            if (TabRenderer._bravuraReady && this._track && this._notation) {
+            if (TabRenderer._bravuraReady && this._track && this._notation
+                && !this._drewWithBravura) {
                 this._renderInternal();
             }
         });
@@ -574,6 +584,7 @@ export class TabRenderer {
             return;
         }
         this._layoutDeferred = false;
+        this._drewWithBravura = !!TabRenderer._bravuraReady;
 
         this.container.innerHTML = '';
 
@@ -764,13 +775,39 @@ export class TabRenderer {
      * time-signature digits (U+E080..E089). Falls back to bold serif
      * digits until/unless it loads (offline, jsdom, blocked CDN).
      */
+    /**
+     * Pinned to a release tag. `@latest` on jsDelivr's gh endpoint is the
+     * repo's HEAD, not a release: the glyph outlines (and the URL's cached
+     * bytes) could change under us at any push. 1.482 is byte-identical to
+     * what `@latest` served when this was pinned. The service worker
+     * (sw-strategy.js) matches on the `bravura` path segment, so a bump here
+     * needs no change there.
+     */
+    static BRAVURA_URL =
+        'https://cdn.jsdelivr.net/gh/steinbergmedia/bravura@bravura-1.482/redist/woff/Bravura.woff2';
+
+    /**
+     * Start the Bravura load (idempotent) and resolve when it settles OR
+     * after `maxMs`, whichever is first. A caller that is about to draw
+     * awaits this so the first draw already has the font — one engraving
+     * instead of a fallback-digits draw followed by a redraw — without ever
+     * holding the page hostage to a slow CDN (the redraw above still
+     * covers that case).
+     */
+    static whenBravuraReady(maxMs = 250) {
+        let timer;
+        const cap = new Promise(resolve => { timer = setTimeout(resolve, maxMs); });
+        return Promise.race([TabRenderer._ensureBravura(), cap])
+            .finally(() => clearTimeout(timer));
+    }
+
     static _ensureBravura() {
         if (TabRenderer._bravuraPromise) return TabRenderer._bravuraPromise;
         try {
             const style = document.createElement('style');
             style.textContent =
                 "@font-face { font-family: 'Bravura'; " +
-                "src: url('https://cdn.jsdelivr.net/gh/steinbergmedia/bravura@latest/redist/woff/Bravura.woff2') format('woff2'); " +
+                `src: url('${TabRenderer.BRAVURA_URL}') format('woff2'); ` +
                 "font-display: swap; }";
             document.head.appendChild(style);
             TabRenderer._bravuraPromise = document.fonts

@@ -1542,11 +1542,17 @@ export function configureWorkPage(hooks = {}) {
         'currentDetectedKey',
     ];
     for (const key of displayPrefKeys) {
-        subscribe(key, () => {
+        subscribe(key, (value) => {
             if (currentView !== 'song' || !currentWork) return;
             if (activePart && activePart.type !== 'lead-sheet') return;
             const content = document.getElementById('work-part-content');
             const chordpro = currentChordpro || activePart?.content;
+            // A key notification is delivered a frame after the write, so a
+            // chart rendered in between has ALREADY used this key (openWork
+            // clears it and the render detects it again). Redrawing would
+            // repeat identical work.
+            if (key === 'currentDetectedKey' && content &&
+                content.dataset.renderedKey === String(value ?? '')) return;
             if (content && chordpro) {
                 renderLeadSheetContent(content, currentWork, chordpro, false);
             }
@@ -2340,9 +2346,14 @@ async function renderTablaturePart(part, container) {
         const cacheKey = otfCacheKey(part);
         let otf = loadedTablature;
         if (!otf || otf._partFile !== cacheKey) {
+            // The music font loads alongside the document, and the draw
+            // waits for it (briefly), so the staff is engraved once with
+            // its glyphs rather than twice.
+            const fontReady = TabRenderer.whenBravuraReady();
             otf = await loadPartOtf(part);
             otf._partFile = cacheKey;
             setLoadedTablature(otf);
+            await fontReady;
         }
 
         // The page moved on while the document was in flight. `container` is
