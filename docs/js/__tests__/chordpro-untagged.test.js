@@ -68,13 +68,13 @@ describe('parseChordPro: comments', () => {
     });
 
     it('keeps an in-section comment in place and renders it as a label line', () => {
-        const { sections } = parseChordPro('{start_of_verse}\nA\n{comment: C   G}\nB\n{end_of_verse}');
+        const { sections } = parseChordPro('{start_of_verse}\nA\n{comment: Well hello}\nB\n{end_of_verse}');
         expect(sections).toHaveLength(1);
         const html = renderSectionsHtml(sections, {});
         expect(html).toContain('song-comment');
-        expect(html.indexOf('C   G')).toBeGreaterThan(html.indexOf('>A<'));
-        expect(html.indexOf('C   G')).toBeLessThan(html.indexOf('>B<'));
-        expect(renderSectionsAscii(sections, {})).toBe('Verse\nA\nC   G\nB\n');
+        expect(html.indexOf('Well hello')).toBeGreaterThan(html.indexOf('>A<'));
+        expect(html.indexOf('Well hello')).toBeLessThan(html.indexOf('>B<'));
+        expect(renderSectionsAscii(sections, {})).toBe('Verse\nA\nWell hello\nB\n');
     });
 
     it('drops chord-only comments (importer leftovers) in and out of sections', () => {
@@ -88,9 +88,9 @@ describe('parseChordPro: comments', () => {
     });
 
     it('renders comment sections on all three paths and never as repeats', () => {
-        const { sections } = parseChordPro('{c: G}\nA\n{c: G}\nA');
+        const { sections } = parseChordPro('{c: Solo}\nA\n{c: Solo}\nA');
         expect(renderSectionsHtml(sections, { compact: true })).not.toContain('Repeat');
-        expect(renderSectionsAscii(sections, {})).toContain('G\n');
+        expect(renderSectionsAscii(sections, {})).toContain('Solo\n');
         expect(renderSectionsPrintHtml(sections, {})).toContain('section-comment');
     });
 });
