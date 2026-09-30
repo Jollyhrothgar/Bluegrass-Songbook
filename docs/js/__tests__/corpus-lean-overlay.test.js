@@ -238,6 +238,47 @@ describe('overlaysNeedArchive', () => {
         ];
         expect(overlaysNeedArchive({ canon: CANON, pending })).toBe(false);
     });
+
+    it('ignores a promoted id that is also deleted (deletion wins — nothing to rescue)', () => {
+        expect(overlaysNeedArchive({
+            canon: CANON, promoted: ['archived-gem'], deleted: ['archived-gem'],
+        })).toBe(false);
+        expect(overlaysNeedArchive({
+            canon: CANON, promoted: ['archived-gem'], deleted: ['something-else'],
+        })).toBe(true);
+    });
+
+    it('counts a pending SONG row as a known target for a pending tab', () => {
+        const song = transformPendingRow(leanSong({ id: 'brand-new-song' }));
+        const tab = transformPendingRow({
+            id: 'tab:brand-new-song:abc123', replaces_id: 'brand-new-song', title: 'x',
+            part_type: 'tablature', instrument: 'banjo', has_content: true,
+        });
+        expect(overlaysNeedArchive({ canon: CANON, pending: [song, tab] })).toBe(false);
+        // ...but the same tab with no such song does need it
+        expect(overlaysNeedArchive({ canon: CANON, pending: [tab] })).toBe(true);
+    });
+
+    it('does not wait for the archive for a tab whose target is deleted', () => {
+        const tab = transformPendingRow({
+            id: 'tab:archived-gem:abc123', replaces_id: 'archived-gem', title: 'x',
+            part_type: 'tablature', instrument: 'banjo', has_content: true,
+        });
+        expect(overlaysNeedArchive({ canon: CANON, pending: [tab], deleted: ['archived-gem'] })).toBe(false);
+    });
+});
+
+describe('mergeCorpus hold-back with the archive not loaded', () => {
+    it('keeps a pending tab that targets a pending song row (it attaches to that row)', () => {
+        const song = transformPendingRow(leanSong({ id: 'brand-new-song' }));
+        const tab = transformPendingRow({
+            id: 'tab:brand-new-song:abc123', replaces_id: 'brand-new-song', title: 'x',
+            part_type: 'tablature', instrument: 'banjo', has_content: true,
+        });
+        const { songs } = mergeCorpus({ canon: CANON, pending: [song, tab], archiveLoaded: false });
+        const row = songs.find(s => s.id === 'brand-new-song');
+        expect(row.tablature_parts?.length).toBeGreaterThan(0);
+    });
 });
 
 describe('cached curation id sets', () => {

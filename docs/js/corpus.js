@@ -514,15 +514,37 @@ function pendingTargetsMissing(row, knownIds) {
  * @param {{canon: Array, pending?: Array, promoted?: Iterable|Set}} sources
  *        `pending` rows in transformed (merge) shape
  */
-export function overlaysNeedArchive({ canon = [], pending = [], promoted = null } = {}) {
+export function overlaysNeedArchive({ canon = [], pending = [], promoted = null, deleted = null } = {}) {
     const promotedIds = asIdSet(promoted);
     if (!promotedIds.size && !(pending || []).length) return false;
 
+    const deletedIds = asIdSet(deleted);
     const canonIds = new Set(canon.map(row => row.id));
     for (const id of promotedIds) {
-        if (id && !canonIds.has(id)) return true;
+        // Deletion wins over promotion (mergeCorpus), so a promoted id that is
+        // also deleted has nothing to rescue.
+        if (id && !canonIds.has(id) && !deletedIds.has(id)) return true;
     }
-    return (pending || []).some(row => pendingTargetsMissing(row, canonIds));
+    const known = withPendingTargets(canonIds, pending, deletedIds);
+    return (pending || []).some(row => pendingTargetsMissing(row, known));
+}
+
+/**
+ * The ids a pending row's `replaces_id` can land on without the archive: the
+ * given static ids, the pending SONG rows themselves (a tab attaches to a
+ * pending song row — applyPendingTabs), and deleted ids (nothing to wait for:
+ * the archive cannot bring a deleted work back).
+ */
+function withPendingTargets(staticIds, pending, deletedIds) {
+    const known = new Set(staticIds);
+    for (const id of deletedIds) known.add(id);
+    for (const row of pending || []) {
+        // (a row that "replaces" its own id is an edit of a work it does not
+        // itself supply, so it is not a target either)
+        if (row?.id && row.replaces_id !== row.id
+            && !isPendingTablature(row) && !isPendingMetadata(row)) known.add(row.id);
+    }
+    return known;
 }
 
 // ============================================================
@@ -605,7 +627,8 @@ export function mergeCorpus({
     // those rows back; overlaysNeedArchive is what brings the archive in, and
     // the next merge applies them properly.
     if (!archiveLoaded) {
-        pendingRows = pendingRows.filter(p => !pendingTargetsMissing(p, staticMap));
+        const known = withPendingTargets(Object.keys(staticMap), pendingRows, deletedIds);
+        pendingRows = pendingRows.filter(p => !pendingTargetsMissing(p, known));
     }
 
     // Three kinds of pending row, three different jobs. Split before any of
@@ -658,17 +681,4 @@ export function countDistinctTitles(songs) {
         (songs || []).filter(s => s.indexed !== false)
             .map(s => s.title?.toLowerCase())
     ).size;
-}
-
-/**
- * Run `fn` when the browser is idle, or after `delayMs` where
- * requestIdleCallback isn't available (Safari). Returns a cancel function.
- */
-export function whenIdle(fn, delayMs = 2000) {
-    if (typeof requestIdleCallback === 'function') {
-        const handle = requestIdleCallback(() => fn(), { timeout: delayMs * 2 });
-        return () => cancelIdleCallback?.(handle);
-    }
-    const timer = setTimeout(fn, delayMs);
-    return () => clearTimeout(timer);
 }

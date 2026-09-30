@@ -308,6 +308,80 @@ test.describe('B3 — the overlays are lean and do not block first paint', () =>
     });
 });
 
+test.describe('B3 follow-ups — deep links vs. slow and hung overlays', () => {
+    const SLOW_PENDING = {
+        id: 'e2e-slow-pending',
+        title: 'E2E Slow Overlay Reel',
+        artist: 'Test Band',
+        part_type: 'lead-sheet',
+        created_by: 'someone-else',
+        created_at: '2026-09-30T00:00:00Z',
+        key: 'G',
+        content: '{title: E2E Slow Overlay Reel}\n{key: G}\n\n{start_of_verse}\n[G]Slow overlay body\n{end_of_verse}\n',
+    };
+
+    test('overlays slower than the grace period still resolve a pending-only deep link without the archive', async ({ page }) => {
+        await mockSupabase(page, { signedIn: false });
+        const gate = new Promise(resolve => setTimeout(resolve, 1800));
+        await routeOverlays(page, { pending: [SLOW_PENDING], gate });
+        const seen = recordRequests(page);
+        await page.goto('/#work/e2e-slow-pending');
+        await expect(page.locator('#song-content')).toContainText('Slow overlay body', { timeout: 20000 });
+        expect(seen.count(/archive\.jsonl/)).toBe(0);
+    });
+
+    test('a hung backend does not strand a deep link to an archived song on "Loading"', async ({ page }) => {
+        const row = archivedOnlyRow();
+        await mockSupabase(page, { signedIn: false });
+        await routeOverlays(page, { gate: new Promise(() => {}) });
+        await page.goto(`/#work/${row.id}`);
+        await expect(page.locator('.song-title').first()).toContainText(row.title, { timeout: 20000 });
+    });
+});
+
+test.describe('B2 follow-up — a list opened before the corpus exists does not freeze the tab', () => {
+    const responsive = page => Promise.race([
+        page.evaluate(() => true),
+        new Promise(resolve => setTimeout(() => resolve(false), 5000)),
+    ]);
+
+    async function seedList(page) {
+        await page.addInitScript(() => {
+            localStorage.setItem('songbook-lists', JSON.stringify([
+                { id: 'local_e2e_freeze', name: 'Freeze', songs: ['rocky-top', 'some-archived-id'], songMetadata: {}, cloudId: null },
+            ]));
+            localStorage.setItem('songbook-legacy-cleanup-v2', '1');
+        });
+    }
+
+    test('index.jsonl still in flight', async ({ page }) => {
+        await mockSupabase(page, { signedIn: false });
+        await seedList(page);
+        await page.route('**/data/index.jsonl*', async (route) => {
+            await new Promise(resolve => setTimeout(resolve, 6000));
+            return route.continue();
+        });
+        await page.goto('/');
+        await page.evaluate(() => { location.hash = '#list/local_e2e_freeze'; });
+        await page.waitForTimeout(500);
+        expect(await responsive(page)).toBe(true);
+        // and the corpus lands afterwards as usual
+        await expect(page.locator('#list-header-count')).toContainText('1 song', { timeout: 30000 });
+        expect(await responsive(page)).toBe(true);
+    });
+
+    test('index.jsonl failed', async ({ page }) => {
+        await mockSupabase(page, { signedIn: false });
+        await seedList(page);
+        await page.route('**/data/index.jsonl*', route => route.abort());
+        await page.goto('/');
+        await page.waitForTimeout(1000);
+        await page.evaluate(() => { location.hash = '#list/local_e2e_freeze'; });
+        await page.waitForTimeout(1000);
+        expect(await responsive(page)).toBe(true);
+    });
+});
+
 test.describe('B6 — the legacy-ID map is fetched only when a list needs it', () => {
     test('a first visit with no lists never downloads it', async ({ page }) => {
         await mockSupabase(page, { signedIn: false });

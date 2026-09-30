@@ -1052,7 +1052,7 @@ function knownWorkIds() {
  * the archive is in (immediately when nothing is missing or it already is).
  * Until the corpus itself has loaded nothing counts as missing.
  */
-function ensureArchiveForRefs(refs) {
+export function ensureArchiveForRefs(refs) {
     if (window.isArchiveLoaded?.() !== false || !allSongs.length || !refs?.length) {
         return Promise.resolve();
     }
@@ -2012,7 +2012,11 @@ export async function performFullListsSync() {
         let processedLists = processCloudLists(merged);
 
         // Step 3.5: Clean legacy song IDs from merged data
-        processedLists = await cleanLegacyIdsFromLists(processedLists);
+        // Deciding whether an id is legacy needs the corpus. When it is not
+        // loaded yet, do not hold the cloud lists (or widen the window in which
+        // a local edit can be overwritten) for up to 15 s: clean afterwards.
+        const cleanAfterSync = !legacyIdMappingCache && !allSongs.length;
+        if (!cleanAfterSync) processedLists = await cleanLegacyIdsFromLists(processedLists);
 
         // Step 4: Re-filter for any lists deleted DURING the sync (race condition fix)
         if (deletedListIds.size > 0 || deletedListNames.size > 0) {
@@ -2039,6 +2043,19 @@ export async function performFullListsSync() {
         // Update local lists with processed data
         setUserLists(processedLists);
         saveLists();
+
+        if (cleanAfterSync) {
+            const snapshot = () => JSON.stringify(userLists.map(l => l.songs));
+            const before = snapshot();
+            // Mutates the live lists in place, synchronously after its awaits,
+            // so it sees any edit made in the meantime.
+            cleanLegacyIdsFromLists(userLists).then(() => {
+                if (snapshot() !== before) {
+                    setUserLists([...userLists]);
+                    saveLists();
+                }
+            });
+        }
 
         // Also load followed lists
         await loadFollowedLists();
@@ -2297,6 +2314,9 @@ function showListNotFound() {
     if (printListBtnEl) printListBtnEl.classList.add('hidden');
 }
 
+// The list view drawn while the corpus was still empty, if that is the last draw.
+let drawnWithoutCorpus = null;
+
 /**
  * Render the list view UI (shared by local and public lists)
  * @param {string} listName - Display name of the list
@@ -2313,6 +2333,12 @@ function renderListViewUI(listName, songIds, status) {
         ? { isOwner: status, isFollower: false, isOrphaned: false, canClaim: false }
         : status;
 
+    // Remember a draw made before the corpus existed, so the corpus landing
+    // can draw it again (see the allSongs subscriber).
+    drawnWithoutCorpus = allSongs.length === 0
+        ? { listId: viewingListId, listName, songIds, status }
+        : null;
+
     // Show the list songs (preserve order from the list)
     // Handle part-qualified refs by extracting workId for lookup
     const listSongs = songIds
@@ -2328,10 +2354,14 @@ function renderListViewUI(listName, songIds, status) {
     // A song that only the archive holds is missing from `listSongs` until the
     // archive loads (it is fetched on demand, not at boot). Load it now and
     // draw the list again with those songs in — never silently drop them.
-    if (listSongs.length < songIds.length && window.isArchiveLoaded?.() === false) {
+    // Only when the corpus is there and the archive can actually land: with an
+    // empty corpus (still loading, or the index failed) ensureArchiveForRefs
+    // resolves at once, and redrawing then would loop forever.
+    if (listSongs.length < songIds.length && allSongs.length > 0
+        && window.isArchiveLoaded?.() === false) {
         const drawnFor = viewingListId;
         ensureArchiveForRefs(songIds).then(() => {
-            if (viewingListId === drawnFor) {
+            if (viewingListId === drawnFor && window.isArchiveLoaded?.() !== false) {
                 renderListViewUI(listName, songIds, status);
             }
         });
@@ -2774,6 +2804,12 @@ subscribe('allSongs', () => {
     // If we're on the song-lists view, re-render to show actual song titles
     if (currentView === 'song-lists') {
         renderManageListsView();
+    }
+    // A list opened while the corpus was loading was drawn with no songs in it
+    const pending = drawnWithoutCorpus;
+    if (pending && allSongs.length && currentView === 'list' && viewingListId === pending.listId) {
+        drawnWithoutCorpus = null;
+        renderListViewUI(pending.listName, pending.songIds, pending.status);
     }
 });
 

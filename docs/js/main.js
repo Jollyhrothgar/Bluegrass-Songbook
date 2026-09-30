@@ -42,7 +42,8 @@ import {
     showListView, fetchListData, renderManageListsView, showSongListsView, startCreateListInView,
     // Favorites functions (favorites is now just a list)
     showFavorites, getFavoritesList, isFavorite, toggleFavorite,
-    updateSyncUI, reorderFavoriteItem, handleListsSignOut
+    updateSyncUI, reorderFavoriteItem, handleListsSignOut,
+    ensureArchiveForRefs
 } from './lists.js';
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
 import {
@@ -1329,25 +1330,15 @@ window.ensureArchiveLoaded = ensureArchiveLoaded;
 window.isArchiveLoaded = () => archiveLoaded;
 
 /**
- * Load the archive if — and only if — some of these list items (work ids or
- * part-qualified refs) are not in the corpus yet, i.e. may be archived.
- * A list of canon songs costs nothing.
- */
-function ensureArchiveForRefs(refs) {
-    if (archiveLoaded || !refs?.length) return Promise.resolve();
-    const known = new Set(allSongs.map(s => s.id));
-    const missing = refs.some(ref => !known.has(parseItemRef(ref).workId));
-    return missing ? ensureArchiveLoaded() : Promise.resolve();
-}
-
-/**
  * Bring the archive in when the Supabase overlays only make sense with it (a
  * promotion of an archived work the canon doesn't hold yet, a pending edit or
  * tab for one) — see corpus.overlaysNeedArchive. Cheap and idempotent.
  */
 function syncArchiveNeed() {
     if (archiveLoaded || archivePromise) return;
-    if (overlaysNeedArchive({ canon: canonRows, pending: pendingRows, promoted: promotedIds })) {
+    if (overlaysNeedArchive({
+        canon: canonRows, pending: pendingRows, promoted: promotedIds, deleted: deletedIds,
+    })) {
         loadArchive();
     }
 }
@@ -1470,7 +1461,17 @@ function startOverlayFetch() {
 }
 
 // Other modules (openWork) wait for the overlays before giving up on an id.
-window.whenOverlaysSettled = () => overlayPromise || Promise.resolve();
+// Bounded — a hung backend must not hold a deep link on "Loading song…" — and
+// merge-aware: overlays that land after the first render are folded into the
+// corpus BEFORE the caller looks again, so a brand-new pending song is found
+// without the archive. The cap is larger than OVERLAY_GRACE_MS on purpose.
+const OVERLAY_SETTLE_CAP_MS = 3000;
+window.whenOverlaysSettled = () => Promise.race([
+    (overlayPromise || Promise.resolve()).then(() => {
+        if (canonRows.length && builtOverlayVersion !== overlayVersion) rebuildCorpus();
+    }),
+    new Promise(resolve => setTimeout(resolve, OVERLAY_SETTLE_CAP_MS)),
+]);
 
 // Guards against a Retry click (or any other caller) overlapping an
 // in-flight loadIndex() — the function is otherwise re-entrant (it only
@@ -1562,7 +1563,15 @@ async function loadIndex() {
         // the archive in if they only make sense with it (a promotion of an
         // archived work, a pending edit of one). Runs at once if they landed.
         overlays.then(() => {
-            if (builtOverlayVersion !== overlayVersion) rebuildCorpus();
+            if (builtOverlayVersion !== overlayVersion) {
+                rebuildCorpus();
+                // The result list already on screen was drawn without them (a
+                // deleted song still in it, a pending one missing): draw it
+                // again from the merged corpus.
+                if (currentView === 'search' && searchInput?.value?.trim()) {
+                    search(searchInput.value);
+                }
+            }
             syncArchiveNeed();
         });
     } catch (error) {

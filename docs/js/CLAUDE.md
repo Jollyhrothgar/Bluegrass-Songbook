@@ -200,7 +200,7 @@ let userLists = [];             // Custom user lists (via supabase-auth.js)
 |----------|---------|
 | `loadIndex()` | Fetch/parse `data/index.jsonl` (canon only) with the Supabase overlays started in parallel, render, route. The archive is NOT scheduled |
 | `ensureArchiveLoaded()` | `window.` hook: fetch `archive.jsonl` (once) — called by whatever needs an archived row |
-| `whenOverlaysSettled()` | `window.` hook: resolves when the boot overlay fetch has landed (openWork waits for it before the archive) |
+| `whenOverlaysSettled()` | `window.` hook: resolves when the boot overlay fetch has landed AND been merged into the corpus, or after 3 s, whichever is first (openWork waits for it before the archive; a hung backend cannot strand a deep link) |
 | `getSongContent(song)` | ChordPro for a work: cached fetch of `data/songs/{id}.pro` (song-content.js) |
 | `songHasContent(song)` / `songHasAbc(song)` | Cheap, sync "does this work have a lead sheet / ABC" |
 | `refreshPendingSongs()` | Re-fetch pending songs from Supabase, merge into allSongs |
@@ -789,6 +789,10 @@ promoted id (or a pending edit/tab whose `replaces_id`) names a work the canon
 doesn't hold (`corpus.overlaysNeedArchive`). Until the archive is in,
 `mergeCorpus({ archiveLoaded: false })` *holds back* exactly those pending
 rows (they have nothing to merge onto and would otherwise appear as bare rows).
+A promoted id that is also deleted, a target that is deleted, and a target that
+is itself a pending SONG row do not count as "missing". **Accepted trade-off:**
+an archived sibling of a canon work (same `group_id`) is invisible to the
+"N versions" badge and the version pills until something loads the archive.
 
 **The pending overlay is lean.** `pending_songs` is fetched with
 `PENDING_OVERLAY_COLUMNS` — no `content` (up to 200 KB a chart, 2 MB a tab,
