@@ -151,6 +151,16 @@ async function fetchSubmissions(user) {
     if (logResult.error) throw logResult.error;
     const pendingRows = pendingResult.error ? [] : (pendingResult.data || []);
 
+    // "In the songbook" means the target resolves to a durable work — archive
+    // included, and the archive is fetched on demand. Only a target the canon
+    // doesn't hold makes it worth loading.
+    if (window.isArchiveLoaded?.() === false) {
+        const held = realCorpusIds();
+        if ((logResult.data || []).some(r => r.target_id && !held.has(r.target_id))) {
+            await window.ensureArchiveLoaded();
+        }
+    }
+
     return buildSubmissionRows(logResult.data || [], pendingRows, realCorpusIds());
 }
 

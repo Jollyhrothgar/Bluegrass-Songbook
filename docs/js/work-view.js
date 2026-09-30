@@ -34,7 +34,7 @@ import {
 } from './song-view.js';
 import {
     peekSongContent, songHasContent, songHasAbc,
-    getArrangementContent, peekArrangementContent,
+    getArrangementContent, peekArrangementContent, getPendingContent,
 } from './song-content.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import {
@@ -166,6 +166,12 @@ export function initialArrangementSlug(song, arrangements) {
     if (typeof song?.content === 'string' && song.content) {
         const match = arrangements.find(a => a.content === song.content);
         if (match) return match.slug;
+    }
+    // A lean pending row carries no text to compare, but its own take is the
+    // arrangement flagged `pending` (see corpus.pendingForkArrangements).
+    if (song?.deferred_content) {
+        const pendingTake = arrangements.find(a => a.pending);
+        if (pendingTake) return pendingTake.slug;
     }
     return (arrangements.find(a => a.default) || arrangements[0]).slug;
 }
@@ -330,7 +336,13 @@ export function findTakeByRef(parts, ref) {
 export async function loadPartOtf(part, fetchImpl = fetch) {
     if (part?.pending) {
         try {
-            return JSON.parse(part.content);
+            // A lean overlay row holds no document; read it from pending_songs
+            // now that somebody is actually opening it.
+            const text = typeof part.content === 'string'
+                ? part.content
+                : await getPendingContent(part.pending_id);
+            if (typeof text !== 'string') throw new Error('gone');
+            return JSON.parse(text);
         } catch {
             throw new Error('This tab was just submitted and could not be read back.');
         }
@@ -507,13 +519,21 @@ export async function openWork(workId, options = {}) {
 
     let song = allSongs.find(s => s.id === workId);
 
-    // A miss is not (yet) a 404: the archive (data/archive.jsonl) loads after
-    // first paint, and a brand-new pending row may not be merged. Show a
-    // loading state, then try each late source exactly once before giving up.
+    // A miss is not (yet) a 404: the archive (data/archive.jsonl) loads on
+    // demand — this is the demand — and a brand-new pending row may not be
+    // merged. Show a loading state, then try each late source exactly once
+    // before giving up.
     if (!song && !window.isArchiveLoaded?.()) {
         showWorkLoading();
-        await window.ensureArchiveLoaded?.();
+        // The Supabase overlays (a brand-new pending row, a fresh promotion)
+        // are already on their way from boot and far cheaper than the archive
+        // download, so a miss waits for them first.
+        await window.whenOverlaysSettled?.();
         song = allSongs.find(s => s.id === workId);
+        if (!song) {
+            await window.ensureArchiveLoaded?.();
+            song = allSongs.find(s => s.id === workId);
+        }
         // A redirect may only be resolvable once the archive is in
         if (!song) {
             const resolved = resolveWorkId(workId);

@@ -553,6 +553,11 @@ async function submitRequest() {
 export function openAddSongPicker(options = {}) {
     if (!pickerModal) return;
 
+    // Both the request form's duplicate check and the tab-target search look
+    // at every title, archived ones included; the archive is fetched on demand,
+    // so start it now — well before anybody has typed a title.
+    window.ensureArchiveLoaded?.();
+
     // Reset state
     resetForm();
     currentContext = { ...options };
