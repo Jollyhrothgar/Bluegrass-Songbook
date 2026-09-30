@@ -402,7 +402,7 @@ The song page's controls are pills in a single pill row, built by
 `song-controls.js`:
 
 - **Key pill** (`buildKeyPill`): −/+ transpose, key grid, Nashville toggle,
-  Strum Machine link when matched
+  (Strum Machine moved to the Practice line)
 - **Display pill** (`buildDisplayPill`): font size, two columns, section
   labels, compact, chord display mode ('all' | 'first' | 'none')
 - **Info pill** (`buildInfoPill`): metadata, covering artists, tags, source
@@ -950,7 +950,10 @@ band keeps only back / logo / Lists / overflow.
 
 ### Strum Machine Integration
 
-Songs with matching Strum Machine backing tracks show a practice button.
+Songs with matching Strum Machine backing tracks get a link in the always-visible
+**Practice** line under the title/artist (`practiceLineHtml` in work-view.js,
+`practiceLinks` in song-controls.js); every song also gets a YouTube search link
+(`title + ' bluegrass'`). Not shown on provisional `#new-tab` pages.
 
 - Matching done via title normalization (handles "The", parenthetical suffixes)
 - Opens Strum Machine in new tab with current key

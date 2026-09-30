@@ -1,6 +1,6 @@
 // Unit tests for song-controls.js (unified song page pills)
 import { describe, it, expect, beforeEach } from 'vitest';
-import { keyPillLabel, transposeBySemitone } from '../song-controls.js';
+import { keyPillLabel, transposeBySemitone, practiceLinks, buildKeyPill } from '../song-controls.js';
 import * as state from '../state.js';
 
 describe('keyPillLabel', () => {
@@ -59,5 +59,37 @@ describe('transposeBySemitone', () => {
         state.setOriginalDetectedKey(null);
         state.setCurrentDetectedKey('G');
         expect(transposeBySemitone(1)).toBe(null);
+    });
+});
+
+describe('practiceLinks', () => {
+    it('gives Strum Machine (with ?key=) then YouTube when matched', () => {
+        const links = practiceLinks(
+            { title: 'Salt Creek', strum_machine_url: 'https://strummachine.com/app/songs/x' }, 'Bb');
+        expect(links.map(l => l.id)).toEqual(['strum', 'youtube']);
+        expect(links[0].href).toBe('https://strummachine.com/app/songs/x?key=Bb');
+    });
+
+    it('omits ?key= when no key is known', () => {
+        const [strum] = practiceLinks({ title: 'X', strum_machine_url: 'https://s.example/x' }, null);
+        expect(strum.href).toBe('https://s.example/x');
+    });
+
+    it('always offers a YouTube title search without the artist', () => {
+        const links = practiceLinks({ title: "Earl's Breakdown & Co", artist: 'Flatt' }, 'G');
+        expect(links).toHaveLength(1);
+        expect(links[0].href).toBe(
+            'https://www.youtube.com/results?search_query=' +
+            encodeURIComponent("Earl's Breakdown & Co bluegrass"));
+    });
+});
+
+describe('Key pill', () => {
+    it('no longer carries a Strum Machine button', () => {
+        const pillEl = buildKeyPill({ title: 'X', strum_machine_url: 'https://s.example/x' });
+        pillEl.pillApi.refresh();
+        expect(pillEl.innerHTML).toContain('pill-nashville-btn');
+        expect(pillEl.innerHTML).not.toContain('pill-strum-btn');
+        expect(pillEl.innerHTML).not.toContain('Strum Machine');
     });
 });

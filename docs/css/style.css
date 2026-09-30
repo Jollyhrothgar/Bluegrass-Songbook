@@ -1332,11 +1332,6 @@ h1 {
 }
 
 
-.qc-strum-icon {
-    width: 22px;
-    height: 22px;
-}
-
 /* Quick controls responsive */
 @media (max-width: 600px) {
     .qc-btn {
@@ -1350,11 +1345,6 @@ h1 {
         height: 28px;
         font-size: 0.8rem;
         padding: 0.3rem 0.5rem;
-    }
-
-    .qc-strum-icon {
-        width: 18px;
-        height: 18px;
     }
 }
 
@@ -10161,6 +10151,22 @@ body.has-bottomband .container {
     margin-top: 2px;
 }
 
+.song-practice-line {
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    margin-top: 2px;
+}
+
+.song-practice-line a {
+    color: var(--text-secondary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.song-practice-line a:hover {
+    color: var(--accent);
+}
+
 /* The nudge in the artist's place on a work that has none. Shown only to
    someone who can fix it (work-view.js updateWorkTopBar), so it reads as an
    invitation rather than a complaint. */
@@ -10233,7 +10239,7 @@ body.has-bottomband .container {
     gap: 4px;
 }
 
-.pill-nashville-btn, .pill-strum-btn { width: 100%; }
+.pill-nashville-btn { width: 100%; }
 
 /* Wider popovers for Info / Arrangement content */
 .pill.pill-wide .pill-popover {
