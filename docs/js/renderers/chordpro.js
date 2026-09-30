@@ -24,7 +24,7 @@
 
 import { escapeHtml } from '../utils.js';
 import {
-    parseLineWithChords, transposeChord, toNashville, getSemitonesBetweenKeys
+    parseLineWithChords, isValidChord, transposeChord, toNashville, getSemitonesBetweenKeys
 } from '../chords.js';
 
 const SECTION_START_RE = /^\{start_of_(\w+)(?::\s*([^}]*?))?\s*\}$/i;
@@ -126,7 +126,10 @@ export function parseChordPro(chordpro) {
 
         const comment = t.match(COMMENT_RE);
         if (comment) {
-            if (comment[1]) {
+            // Importer leftovers: a chord row that lost its lyric line. Not a
+            // label; dropped as before rather than shown untransposed.
+            const chordOnly = comment[1] && comment[1].split(/\s+/).every(tok => isValidChord(tok));
+            if (comment[1] && !chordOnly) {
                 if (currentSection && !implicit) {
                     currentSection.lines.push(COMMENT_MARK + comment[1]);
                 } else {

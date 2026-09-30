@@ -77,6 +77,16 @@ describe('parseChordPro: comments', () => {
         expect(renderSectionsAscii(sections, {})).toBe('Verse\nA\nC   G\nB\n');
     });
 
+    it('drops chord-only comments (importer leftovers) in and out of sections', () => {
+        const a = parseChordPro('{start_of_verse}\nA\n{comment: C   G}\nB\n{end_of_verse}');
+        expect(a.sections[0].lines).toEqual(['A', 'B']);
+        expect(renderSectionsHtml(a.sections, {})).not.toContain('song-comment');
+        const b = parseChordPro('{comment: F#m}\nA');
+        expect(b.sections.map(s => s.type)).toEqual(['verse']);
+        const c = parseChordPro('{start_of_verse}\nA\n{comment: A-11}\n{end_of_verse}');
+        expect(c.sections[0].lines.length).toBe(2);
+    });
+
     it('renders comment sections on all three paths and never as repeats', () => {
         const { sections } = parseChordPro('{c: G}\nA\n{c: G}\nA');
         expect(renderSectionsHtml(sections, { compact: true })).not.toContain('Repeat');
