@@ -63,7 +63,7 @@ import { createZip } from './zip.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
 import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
-import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
+import { COLLECTIONS, COLLECTION_PINS, collectionThumbnailHtml } from './collections.js';
 import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
 import {
     fetchJsonl, mergeCorpus, markArchived, countDistinctTitles, whenIdle,
@@ -562,15 +562,7 @@ function initViewSubscription() {
 // LANDING PAGE
 // ============================================
 
-// Collection images and fallback icons
-const COLLECTION_IMAGES = {
-    'bluegrass-standards': 'images/Scruggs.webp',
-    'all-bluegrass': 'images/billy.png',
-    'gospel': 'images/jimmy_martin_gospel.jpg',
-    'fiddle-tunes': 'images/fiddle_tunes.png',
-    'all-songs': 'images/jam_friendly.png',
-    'bluegrass-dungeon': 'images/bluegrass_dungeon.png'
-};
+// Collection fallback icons (thumbnails live in collections.js)
 
 const COLLECTION_ICONS = {
     'bluegrass-standards': '🎸',
@@ -602,12 +594,10 @@ function renderCollectionCards() {
         // Count songs matching the query (or distinct titles for "all songs", or skip for tools/dungeon)
         const count = (collection.isToolLink || collection.isDungeonLink) ? 0 : collection.isSearchLink ? getDistinctSongCount() : getCollectionSongCount(collection.query);
         const icon = COLLECTION_ICONS[collection.id] || '🎵';
-        const imageSrc = COLLECTION_IMAGES[collection.id];
+        const thumbHtml = collectionThumbnailHtml(collection.id, escapeAttr(collection.title));
 
         // Use image if available, otherwise fall back to emoji icon
-        const imageContent = imageSrc
-            ? `<img src="${imageSrc}" alt="${escapeAttr(collection.title)}">`
-            : icon;
+        const imageContent = thumbHtml || icon;
 
         // Determine href based on collection type
         const href = collection.isDungeonLink
@@ -620,7 +610,7 @@ function renderCollectionCards() {
 
         return `
             <a href="${href}"
-               class="collection-card${imageSrc ? ' has-image' : ''}${collection.isSearchLink ? ' search-all' : ''}${collection.isToolLink ? ' tool-link' : ''}${collection.isDungeonLink ? ' dungeon-card' : ''}"
+               class="collection-card${thumbHtml ? ' has-image' : ''}${collection.isSearchLink ? ' search-all' : ''}${collection.isToolLink ? ' tool-link' : ''}${collection.isDungeonLink ? ' dungeon-card' : ''}"
                data-collection="${collection.id}"
                style="--collection-color: ${collection.color}">
                 <div class="collection-image">
