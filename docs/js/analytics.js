@@ -7,6 +7,11 @@
 
 const FLUSH_INTERVAL_MS = 30000;  // Flush every 30 seconds
 const MAX_QUEUE_SIZE = 50;        // Flush if queue exceeds this
+// After a failed send, skip flushes for this long. Shorter than the interval on
+// purpose: it is measured from when the failure comes back (after the network
+// round trip), so a full interval would swallow the next timer tick and halve
+// the retry rate.
+const RETRY_BACKOFF_MS = FLUSH_INTERVAL_MS / 2;
 
 // ============================================
 // STATE
@@ -54,12 +59,13 @@ export function track(eventName, properties = {}) {
 }
 
 /**
- * Flush event queue to server
+ * Flush event queue to server. `force` (page unload / tab hidden: the last
+ * chance to send) ignores the post-failure back-off.
  */
-async function flush() {
+async function flush({ force = false } = {}) {
     if (eventQueue.length === 0) return;
     // A send just failed: do not hammer a broken endpoint once per tracked event.
-    if (Date.now() < retryNotBefore) return;
+    if (!force && Date.now() < retryNotBefore) return;
 
     // Grab current queue and reset
     const eventsToSend = [...eventQueue];
@@ -88,7 +94,7 @@ async function flush() {
     } catch (err) {
         // Silent fail - analytics should never break the app
         // Re-queue events on failure (with limit to prevent memory issues)
-        retryNotBefore = Date.now() + FLUSH_INTERVAL_MS;
+        retryNotBefore = Date.now() + RETRY_BACKOFF_MS;
         if (eventQueue.length < MAX_QUEUE_SIZE * 2) {
             eventQueue = [...eventsToSend, ...eventQueue];
         }
@@ -158,13 +164,13 @@ export function initAnalytics() {
     // Flush on page unload
     window.addEventListener('beforeunload', () => {
         endSongView();
-        flush();
+        flush({ force: true });
     });
 
     // Flush on visibility change (tab hidden)
     document.addEventListener('visibilitychange', () => {
         if (document.hidden) {
-            flush();
+            flush({ force: true });
         }
     });
 

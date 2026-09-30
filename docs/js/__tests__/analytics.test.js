@@ -20,7 +20,19 @@ function sentEventNames(callIndex) {
     return rpc.mock.calls[callIndex][1].p_events.map(e => e.event_name);
 }
 
+// Every load() re-imports the module, and each copy registers its own page
+// listeners; remove them after each test so a stale copy cannot answer an event.
+let listeners;
+
 beforeEach(() => {
+    listeners = [];
+    for (const target of [window, document]) {
+        const add = target.addEventListener.bind(target);
+        vi.spyOn(target, 'addEventListener').mockImplementation((type, fn, opts) => {
+            listeners.push([target, type, fn, opts]);
+            add(type, fn, opts);
+        });
+    }
     vi.useFakeTimers();
     vi.setSystemTime(new Date('2026-09-30T12:00:00Z'));
     rpc = vi.fn();
@@ -28,6 +40,8 @@ beforeEach(() => {
 });
 
 afterEach(() => {
+    for (const [target, type, fn, opts] of listeners) target.removeEventListener(type, fn, opts);
+    vi.restoreAllMocks();
     vi.useRealTimers();
     delete window.SupabaseAuth;
 });
@@ -109,6 +123,35 @@ describe('flush', () => {
         await vi.advanceTimersByTimeAsync(0);
 
         expect(rpc).toHaveBeenCalledTimes(1);
+    });
+
+    it('retries on the next timer tick even when the failing request was slow', async () => {
+        // The back-off is measured from when the failure comes back. With a
+        // full-interval window the 60s tick fell inside it and was skipped.
+        rpc.mockImplementation(() => new Promise(resolve =>
+            setTimeout(() => resolve({ data: null, error: { message: 'boom' } }), 2000)));
+        await load();
+        await vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS + 2000);
+        expect(rpc).toHaveBeenCalledTimes(1);
+
+        await vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS - 2000);
+        expect(rpc).toHaveBeenCalledTimes(2);
+    });
+
+    it('still flushes when the tab is hidden right after a failure', async () => {
+        rpc.mockResolvedValue({ data: null, error: { message: 'boom' } });
+        await load();
+        await vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS);
+        expect(rpc).toHaveBeenCalledTimes(1);
+
+        Object.defineProperty(document, 'hidden', { value: true, configurable: true });
+        try {
+            document.dispatchEvent(new Event('visibilitychange'));
+            await vi.advanceTimersByTimeAsync(0);
+        } finally {
+            delete document.hidden;
+        }
+        expect(rpc).toHaveBeenCalledTimes(2);
     });
 
     it('is a no-op without a Supabase client', async () => {
