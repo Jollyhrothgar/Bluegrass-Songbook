@@ -79,6 +79,44 @@ insert into list_followers (list_id, user_id) values
 insert into list_invites (list_id, token, created_by) values
   ('11111111-1111-1111-1111-111111111111', 'invite-token-1', '00000000-0000-0000-0000-00000000000a');
 
+-- ---------------------------------------------------------- legacy lists ---
+-- Fixtures come from supabase/tests/baseline/20260113000000_legacy_list_rows.sql,
+-- which ran BEFORE the A1 migration: lists created between the 2026-01-09
+-- owners backfill and the client starting to send owners. They had
+-- owners = '{}', and the A1 migration must backfill them so the owner-or-
+-- follower read policy does not hide them from their own creator.
+do $$
+declare v_c1 uuid := '00000000-0000-0000-0000-0000000000c1';
+        v_c2 uuid := '00000000-0000-0000-0000-0000000000c2';
+        v_leg uuid := '33333333-3333-3333-3333-333333333333';
+        v_orph uuid := '44444444-4444-4444-4444-444444444444';
+begin
+  perform t.reset();
+  perform t.expect((select owners from user_lists where id = v_leg) = array[v_c1],
+                   'legacy list was backfilled: owners = [creator]');
+  perform t.expect((select owners from user_lists where id = v_orph) = '{}'::uuid[]
+                   and (select orphaned_at from user_lists where id = v_orph) is not null,
+                   'a deliberately orphaned list is not revived by the backfill');
+  perform t.expect(not exists (select 1 from user_lists
+                                where (owners is null or owners = '{}'::uuid[]) and orphaned_at is null),
+                   'no non-orphaned list is left without owners');
+
+  perform t.as_user(v_c1);
+  perform t.expect((select count(*) from user_lists where id = v_leg) = 1,
+                   'legacy list creator reads their list');
+  perform t.expect((select count(*) from user_list_items where list_id = v_leg) = 1,
+                   'legacy list creator reads its items');
+  perform t.expect((select count(*) from user_lists where owners @> array[v_c1]) = 1,
+                   'legacy list is found by the client query .contains(owners, [me])');
+  perform t.expect((get_public_list(v_leg)->>'is_owner')::boolean,
+                   'legacy list creator is_owner = true');
+
+  perform t.as_user(v_c2);
+  perform t.expect((select count(*) from user_lists where id = v_orph) = 0,
+                   'creator of an orphaned list (not a follower) does not read it');
+  perform t.reset();
+end $$;
+
 -- ------------------------------------------------------------------- anon ---
 do $$
 declare v_l uuid := '11111111-1111-1111-1111-111111111111'; r json;

@@ -636,7 +636,20 @@ The chain cannot be replayed bare because a few objects (`user_lists`,
 made in the dashboard and have no `CREATE` here, so the harness seeds a
 reconstruction of them first (`supabase/tests/baseline/`, test-only).
 `post_deploy_check.sql` / `post_deploy_probe.sql` in the same folder are the
-read-only checks to run against production after `db-push`.
+read-only checks to run against production after `db-push`. The probe prints
+`PASS: post_deploy_probe.sql` from inside its last block, so run plainly (no
+`ON_ERROR_STOP`) it still never prints PASS after a failure; the pass signal is
+"last line is the PASS notice and there is no ERROR line". A baseline file can
+also seed legacy rows (`baseline/20260113000000_legacy_list_rows.sql`, dated
+between two real migrations) so a migration that narrows a read policy is
+tested against the data shapes production actually holds.
+
+**Before narrowing a read policy, backfill the rows the new predicate hides.**
+The A1 policy is owner-or-follower; lists created between the 2026-01-09
+`owners` backfill and the client sending `owners` had `owners = '{}'` and would
+have vanished from their creator (the client's sync then treats a missing cloud
+list as deleted and drops the local copy). The A1 migration backfills them and
+its postcondition rejects any non-orphaned list without owners.
 
 **A `SET search_path = ''` on a function whose body names tables unqualified is
 a broken function.** `20260107010000` did that to `log_events` and every call

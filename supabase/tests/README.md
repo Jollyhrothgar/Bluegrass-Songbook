@@ -18,6 +18,7 @@ with a normal `supabase start`.
 | File | What it does |
 |---|---|
 | `baseline/00000000000000_dashboard_baseline.sql` | Recreates the few objects that were made by hand in the dashboard and have no `CREATE` in `migrations/` (`user_lists`, `user_list_items`, `song_flags`, `submit_flag`, `get_visitor_flag_count`). Without it `supabase db reset` dies on `20251231110000`. A reconstruction, not a dump. Test-only: it is copied into the throwaway workdir, never into `migrations/`. |
+| `baseline/20260113000000_legacy_list_rows.sql` | Test-only fixture, timestamped between `20260109224000` and the A1 migration: a list with `owners = '{}'` (created after the owners backfill, before the client sent `owners`) and a deliberately orphaned list. `list_security.test.sql` asserts the A1 backfill makes the first readable by its creator and leaves the second alone. |
 | `list_security.test.sql` | One rolled-back transaction. Plays anon, an unrelated signed-in user, an owner, a follower, an invitee by switching role + `request.jwt.claims`, and asserts reads, writes, grants, claim / leave / orphan / delete and `log_events`. |
 | `rest_smoke.py` | The same guarantees over HTTP through PostgREST with signed JWTs, using the exact calls `docs/js/supabase-auth.js` makes (`rpc('remove_list_owner', { p_list_id })`, `.contains('owners', [me])`, the followed-list reads). |
 | `post_deploy_check.sql` | **Read-only, for production.** One SELECT: every policy on the list tables, RLS flags, who can execute what, function attributes, and the bodies of the functions whose source is not in the repo. `run.sh` runs it locally to prove it passes. |
@@ -31,11 +32,15 @@ against a dump of the local schema.
 ```bash
 ./scripts/utility db-check                                   # invariants, incl. lists.reads-closed
 psql "$PROD_DB_URL" -X -f supabase/tests/post_deploy_check.sql   # no FAIL rows; read the INSPECT rows
-psql "$PROD_DB_URL" -X -f supabase/tests/post_deploy_probe.sql   # ends with PASS
+psql "$PROD_DB_URL" -X -f supabase/tests/post_deploy_probe.sql   # last line is NOTICE: PASS, no ERROR line
 ```
 
 `post_deploy_check.sql` also pastes into the Supabase dashboard SQL editor. The
 probe file works there too (it runs as `postgres`, which may `set local role`).
+
+The probe prints `PASS: post_deploy_probe.sql` from inside its last block, so
+it appears only if every probe passed, even without `ON_ERROR_STOP`. Treat any
+`ERROR` line as a failure. `run.sh` checks that a failing probe prints no PASS.
 
 Read the INSPECT rows: `submit_flag` and `get_visitor_flag_count` exist only in
 production, and `20260107010000` gave both an empty `search_path`. If either

@@ -64,7 +64,26 @@ out="$(psql "$DB_URL" -X -At -F ' | ' -v ON_ERROR_STOP=1 -f "$HERE/post_deploy_c
 echo "$out" | grep -c '^PASS' | sed 's/^/   PASS rows: /'
 if echo "$out" | grep '^FAIL'; then fail=1; fi
 echo "== post_deploy_probe.sql"
-psql "$DB_URL" -X -q -v ON_ERROR_STOP=1 -f "$HERE/post_deploy_probe.sql" || fail=1
+good="$(psql "$DB_URL" -X -q -v ON_ERROR_STOP=1 -f "$HERE/post_deploy_probe.sql" 2>&1)" || fail=1
+echo "$good"
+echo "$good" | grep -q 'PASS: post_deploy_probe.sql' || { echo "   FAIL: probe printed no PASS"; fail=1; }
+# The owner runs the probe WITHOUT ON_ERROR_STOP (plain `psql -f`, or the
+# dashboard). A failing probe must still never print PASS. Re-grant
+# add_list_owner to anon inside the probe's own transaction (its ROLLBACK, or
+# the abort, undoes the grant) and run it the way the README says.
+echo "== post_deploy_probe.sql must not print PASS when a probe fails"
+bad="$(printf 'begin;\ngrant execute on function public.add_list_owner(uuid, uuid) to anon;\n\\i %s\n' \
+        "$HERE/post_deploy_probe.sql" | psql "$DB_URL" -X 2>&1 || true)"
+if ! echo "$bad" | grep -q 'FAIL: anon executed add_list_owner'; then
+  echo "   the broken probe did not fail as expected:"; echo "$bad"; fail=1
+elif echo "$bad" | grep -q 'PASS'; then
+  echo "   FAIL: probe printed PASS although a probe failed:"; echo "$bad"; fail=1
+else
+  echo "   ok (failing probe printed no PASS)"
+fi
+if [[ "$(psql "$DB_URL" -X -At -c "select has_function_privilege('anon', 'public.add_list_owner(uuid, uuid)', 'execute')")" != "f" ]]; then
+  echo "   FAIL: the negative test left add_list_owner granted to anon"; fail=1
+fi
 
 # db-check's invariants, against the local schema instead of the live one.
 echo "== schema_assert (db-check invariants) against the local dump"

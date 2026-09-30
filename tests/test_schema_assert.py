@@ -277,11 +277,6 @@ class TestFailureModes:
             '\nCREATE OR REPLACE VIEW "public"."doc_staging" AS SELECT 1;\n')
         assert check(sa.parse_dump(broken), 'doc_staging.absent') is not None
 
-
-# ---------------------------------------------------------------------------
-# Reporting / CLI
-# ---------------------------------------------------------------------------
-
     # --- lists (A1 / A2) ----------------------------------------------------
 
     def test_list_read_policy_open_to_everyone(self, dump_text):
@@ -362,6 +357,10 @@ class TestFailureModes:
         detail = check(sa.parse_dump(head + tail), 'log_events.qualified')
         assert detail is not None and 'search_path' in detail
 
+
+# ---------------------------------------------------------------------------
+# Reporting / CLI
+# ---------------------------------------------------------------------------
 
 class TestReporting:
     def test_passing_report(self, schema):

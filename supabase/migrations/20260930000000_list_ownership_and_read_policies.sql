@@ -65,9 +65,9 @@ GRANT EXECUTE ON FUNCTION public.get_public_list(uuid) TO anon, authenticated;
 -- 2. remove_list_owner: only ever removes the caller
 -- ============================================
 
-DROP FUNCTION public.remove_list_owner(uuid, uuid);
+DROP FUNCTION IF EXISTS public.remove_list_owner(uuid, uuid);
 
-CREATE FUNCTION public.remove_list_owner(p_list_id uuid)
+CREATE OR REPLACE FUNCTION public.remove_list_owner(p_list_id uuid)
 RETURNS json
 LANGUAGE plpgsql
 SECURITY DEFINER
@@ -148,6 +148,49 @@ GRANT EXECUTE ON FUNCTION public.remove_list_owner(uuid) TO authenticated;
 -- ============================================
 -- 3. READ POLICIES
 -- ============================================
+
+-- Backfill legacy lists BEFORE the open read policy goes away.
+--
+-- 20260109224000 added owners (DEFAULT '{}') and backfilled it once, on
+-- 2026-01-09. The client only started sending owners: [currentUser.id] on
+-- 2026-01-12 (ab7bf46d6), so lists created in between kept owners = '{}'.
+-- The new read policy is owner-or-follower, so without this those lists (and
+-- their items) would vanish from their own creator, and the client's sync
+-- would read that as "deleted in cloud" and drop them locally. The client's
+-- fetchCloudLists repair never fixed them: its UPDATE is itself filtered by
+-- the owners-only UPDATE policy. A list that was orphaned on purpose always
+-- has orphaned_at set, so this cannot revive one. Idempotent.
+DO $$
+DECLARE
+    v_fixed bigint;
+BEGIN
+    UPDATE public.user_lists
+    SET owners = ARRAY[user_id]
+    WHERE (owners IS NULL OR owners = '{}'::uuid[])
+      AND orphaned_at IS NULL;
+    GET DIAGNOSTICS v_fixed = ROW_COUNT;
+    RAISE NOTICE 'backfilled owners on % legacy list(s)', v_fixed;
+END
+$$;
+
+-- Say what is about to be kept: an ALL policy with a real qual survives the
+-- loop below, but the postcondition rejects one that is open to PUBLIC.
+DO $$
+DECLARE
+    pol record;
+BEGIN
+    FOR pol IN
+        SELECT tablename, policyname, roles::text AS roles, qual
+        FROM pg_policies
+        WHERE schemaname = 'public'
+          AND tablename IN ('user_lists', 'user_list_items', 'list_followers')
+          AND cmd = 'ALL' AND qual IS DISTINCT FROM 'true'
+    LOOP
+        RAISE NOTICE 'keeping ALL policy % on % (roles %, using %)',
+            pol.policyname, pol.tablename, pol.roles, pol.qual;
+    END LOOP;
+END
+$$;
 
 -- Drop every SELECT policy on the three tables (and any catch-all ALL policy
 -- that is USING (true)), whatever it is called and wherever it came from.
@@ -267,6 +310,14 @@ BEGIN
     END IF;
     IF NOT has_function_privilege('anon', 'public.get_public_list(uuid)', 'EXECUTE') THEN
         RAISE EXCEPTION 'POSTCONDITION FAILED: anon can no longer execute get_public_list; share links would break.';
+    END IF;
+
+    -- No legacy list may be left with nobody as owner (orphans keep orphaned_at).
+    IF EXISTS (
+        SELECT 1 FROM public.user_lists
+         WHERE (owners IS NULL OR owners = '{}'::uuid[]) AND orphaned_at IS NULL
+    ) THEN
+        RAISE EXCEPTION 'POSTCONDITION FAILED: a non-orphaned list has no owners; its creator could not read it.';
     END IF;
 
     -- Read policies: every SELECT (or ALL) policy on the three tables is

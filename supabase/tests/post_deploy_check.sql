@@ -16,15 +16,27 @@ list_tables(t) as (values ('user_lists'), ('user_list_items'), ('list_followers'
 -- 1. Every policy on the list tables, so a dashboard-made one cannot hide.
 policies as (
   select 'policy ' || p.tablename || ' / ' || p.policyname as check_name,
-         case when p.cmd in ('SELECT', 'ALL')
-                   and (p.qual is null or p.qual = 'true'
-                        or p.roles && array['public', 'anon']::name[])
+         case when (p.cmd in ('SELECT', 'ALL')
+                    and (p.qual is null or p.qual = 'true'
+                         or p.roles && array['public', 'anon']::name[]))
+                   or p.qual = 'true' or p.with_check = 'true'   -- an open write policy, any command
               then 'FAIL' else 'PASS' end as status,
          p.cmd || ' to ' || p.roles::text || ' using ' || coalesce(p.qual, '(none)')
            || ' check ' || coalesce(p.with_check, '(none)') as detail
     from pg_policies p
    where p.schemaname = 'public'
      and p.tablename in (select t from list_tables)
+),
+
+-- 1b. Legacy lists (owners = '{}', never orphaned) are invisible to their own
+--     creator under the owner-or-follower read policy. The migration backfills
+--     them; none may remain.
+legacy as (
+  select 'no non-orphaned list without owners',
+         case when count(*) = 0 then 'PASS' else 'FAIL' end,
+         count(*) || ' row(s) with owners = {} and orphaned_at IS NULL'
+    from public.user_lists
+   where (owners is null or owners = '{}'::uuid[]) and orphaned_at is null
 ),
 
 -- 2. RLS is on.
@@ -104,10 +116,31 @@ inspect as (
     from pg_proc p join pg_namespace n on n.oid = p.pronamespace
    where n.nspname = 'public'
      and p.proname in ('submit_flag', 'get_visitor_flag_count', 'update_updated_at')
+),
+
+-- 7. Every function whose body mentions a list table and that anon or PUBLIC
+--    can execute (a dashboard-made SECURITY DEFINER function would show up
+--    here). Read the list: each one must be something you expect an anonymous
+--    caller to run (get_public_list, log_events, and trigger functions).
+exposed as (
+  select 'inspect anon-executable functions touching list tables',
+         'INSPECT',
+         coalesce(string_agg(p.oid::regprocedure::text
+                               || case when p.prosecdef then ' [definer]' else '' end,
+                             E'\n' order by p.proname),
+                  '(none)')
+    from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+   where n.nspname = 'public'
+     and p.prokind = 'f'
+     and p.prosrc ~* '(user_lists|user_list_items|list_followers)'
+     and (has_function_privilege('anon', p.oid, 'execute')
+          or exists (select 1 from aclexplode(coalesce(p.proacl, acldefault('f', p.proowner))) a
+                      where a.grantee = 0 and a.privilege_type = 'EXECUTE'))
 )
 
 select status, check_name, detail
-  from (select * from policies union all select * from rls union all
+  from (select * from policies union all select * from legacy union all select * from rls union all
         select * from grants union all select * from overloads union all
-        select * from attrs union all select * from inspect) all_checks
+        select * from attrs union all select * from inspect union all
+        select * from exposed) all_checks
  order by case status when 'FAIL' then 0 when 'INSPECT' then 1 else 2 end, check_name;

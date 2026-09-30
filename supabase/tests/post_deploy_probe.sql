@@ -7,8 +7,9 @@
 --   (Dashboard SQL Editor: paste the whole file; it runs as postgres, which can
 --    `set local role`.)
 --
--- Prints "NOTICE: ok ..." per probe and ends with PASS, or raises on the first
--- failure. Anon and an unrelated signed-in user are the two callers that must
+-- Prints "NOTICE: ok ..." per probe, then "NOTICE: PASS: post_deploy_probe.sql"
+-- as the last probe output, or raises ERROR on the first failure (and then no
+-- PASS line is printed, with or without ON_ERROR_STOP). Anon and an unrelated signed-in user are the two callers that must
 -- see nothing.
 
 begin;
@@ -66,8 +67,12 @@ begin
   end if;
   raise notice 'ok   remove_list_owner(p_list_id) resolves and only acts for the caller';
   reset role;
+
+  -- Emitted from INSIDE the block, so it only appears when every probe above
+  -- passed. A trailing standalone SELECT would print even after a failure when
+  -- the file is run without ON_ERROR_STOP (plain `psql -f`, or the dashboard).
+  raise notice 'PASS: post_deploy_probe.sql';
 end
 $$;
 
 rollback;
-select 'PASS: post_deploy_probe.sql' as result;
