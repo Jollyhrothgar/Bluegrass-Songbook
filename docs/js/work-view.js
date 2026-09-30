@@ -23,7 +23,7 @@ import {
     subscribe
 } from './state.js';
 
-import { deleteAffordance } from './review-queue.js';
+import { deleteAffordance } from './delete-affordance.js';
 
 import {
     goBack,
@@ -53,25 +53,25 @@ import { buildNewTab, saveDraft, clearDraft, loadDraft } from './otf-editor/crea
 import {
     tabEntryPlan, renderExistingTabsPanel, partMatchesInstrument,
 } from './otf-editor/existing-tabs.js';
-import { bindBandToEditor } from './tab-edit-band.js';
+// The pure timing/track helpers stay static (the page builds timings before
+// it draws). TabRenderer (~96 KB), TabPlayer (~42 KB) and the tab-only band
+// helpers (tab-controls-sheet, tab-playback-interactions) are NOT imported
+// statically any more: they load on the first tablature render
+// (loadTabRenderKit below), so chord-chart visitors never download them.
 import {
-    TabRenderer, TabPlayer,
     TimelineTiming, identityTimeline, readingListTimeline,
     expandNotation, makePlaybackToVisualMapper,
     maxMeasureIn, measureTimingFromOtf,
     analyzeReadingList, prepareCompactNotation, densifyNotation,
-    attachOtfDecorations, isPercussionTrack, pitchedTracks,
-} from './renderers/index.js';
+    attachOtfDecorations,
+} from './renderers/measure-timing.js';
+import { isPercussionTrack, pitchedTracks } from './renderers/otf-tracks.js';
 import { clearListView, openNotesSheet } from './lists.js';
 import { showListPicker, updateTriggerButton } from './list-picker.js';
 import { openFlagModal } from './flags.js';
 import { trackSongView } from './analytics.js';
 import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
-import { attachTabControlsSheet } from './tab-controls-sheet.js';
 import { buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
-import {
-    attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
-} from './tab-playback-interactions.js';
 import { showToast } from './toast.js';
 
 // ============================================
@@ -82,6 +82,7 @@ let currentWork = null;          // The full work object
 let activePart = null;           // Currently displayed part { type, format, file, ... }
 let availableParts = [];         // All parts for current work
 let trackRenderers = {};         // Map of trackId -> TabRenderer instance
+let tabRenderKit = null;         // tab modules (see loadTabRenderKit), once a tab has been shown
 let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
 let twoFeelMode = false;         // true = present 4/4 as cut time (2/2)
 let tempoOverride = null;        // { workId, quarterBpm } — user-set tempo;
@@ -2311,6 +2312,32 @@ function renderDocumentPart(part, container) {
 }
 
 /**
+ * Load the tab drawing + playback modules (first tablature render, or first
+ * editor mount — the editor imports the renderer and player itself).
+ *
+ * They are needed together: the renderer draws the staves, and
+ * setupTablaturePlayer builds its TabPlayer up front — Play must be able to
+ * resume the audio context synchronously inside the tap (audio-unlock.js:
+ * never await before it), so the player cannot wait for the first click.
+ */
+function loadTabRenderKit() {
+    return Promise.all([
+        import('./renderers/tablature.js'),
+        import('./renderers/tab-player.js'),
+        import('./tab-controls-sheet.js'),
+        import('./tab-playback-interactions.js'),
+    ]).then(([{ TabRenderer }, { TabPlayer }, { attachTabControlsSheet }, interactions]) => {
+        tabRenderKit = {
+            TabRenderer, TabPlayer, attachTabControlsSheet,
+            attachTabPlaybackInteractions: interactions.attachTabPlaybackInteractions,
+            playbackTickForPoint: interactions.playbackTickForPoint,
+            playbackRangeForMeasures: interactions.playbackRangeForMeasures,
+        };
+        return tabRenderKit;
+    });
+}
+
+/**
  * Render tablature part
  */
 async function renderTablaturePart(part, container) {
@@ -2335,6 +2362,12 @@ async function renderTablaturePart(part, container) {
     }
 
     try {
+        // The renderer/player modules download alongside the document. When
+        // they are already in hand (every render after the first) this stays
+        // synchronous, exactly as before.
+        const kitLoading = tabRenderKit ? null : loadTabRenderKit();
+        kitLoading?.catch(() => {}); // surfaced below; don't double-report if the fetch fails first
+
         // Load the document (fetched, or read out of the pending overlay —
         // see loadPartOtf) unless the one in hand is already this take's.
         const cacheKey = otfCacheKey(part);
@@ -2344,6 +2377,7 @@ async function renderTablaturePart(part, container) {
             otf._partFile = cacheKey;
             setLoadedTablature(otf);
         }
+        if (kitLoading) await kitLoading;
 
         // The page moved on while the document was in flight. `container` is
         // the check that catches every case: renderWorkView builds a FRESH
@@ -2465,7 +2499,7 @@ async function renderTablaturePart(part, container) {
 
             allTracksContainer.appendChild(trackSection);
 
-            const renderer = new TabRenderer(tabContainer);
+            const renderer = new tabRenderKit.TabRenderer(tabContainer);
             renderer.render(track, notation, ticksPerBeat, timeSignature, timings.visual);
             trackRenderers[track.id] = renderer;
             viewIds.push(track.id);
@@ -2710,16 +2744,23 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
     // Stop playback before handing the document to the editor
     if (tablaturePlayer?.isPlaying) tablaturePlayer.stop();
 
+    // createTablatureControls below needs the tab band helpers; the editor
+    // imports the renderer and player itself, so this adds no bytes.
+    const kitLoading = tabRenderKit ? null : loadTabRenderKit();
+
     const [
         { OTFEditor },
         { createTabEditSession, resolveEditTrackId },
         { submitTab },
         { createAutosaver, getDraftStore },
+        { bindBandToEditor },
     ] = await Promise.all([
         import('./otf-editor/editor.js'),
         import('./otf-editor/work-edit.js'),
         import('./otf-editor/submit-tab.js'),
         import('./drafts.js'),
+        import('./tab-edit-band.js'),
+        kitLoading,
     ]);
 
     // The reader navigated while the editor was being fetched
@@ -3329,7 +3370,7 @@ function createTablatureControls(otf, part) {
     // Phone: everything but Play/Stop/tempo/loop moves into a ⚙ sheet. The
     // nodes stay descendants of `controls`, so the querySelector wiring in
     // setupTablaturePlayer (which runs after this) is unaffected.
-    attachTabControlsSheet(controls);
+    tabRenderKit.attachTabControlsSheet(controls);
 
     return controls;
 }
@@ -3338,8 +3379,11 @@ function createTablatureControls(otf, part) {
  * Set up tablature player with controls
  */
 function setupTablaturePlayer(otf, controls, renderer) {
+    const {
+        attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
+    } = tabRenderKit;
     if (!tablaturePlayer) {
-        setTablaturePlayer(new TabPlayer());
+        setTablaturePlayer(new tabRenderKit.TabPlayer());
     }
 
     const player = tablaturePlayer;
