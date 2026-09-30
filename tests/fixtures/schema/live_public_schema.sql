@@ -116,3 +116,104 @@ GRANT ALL ON FUNCTION "public"."get_leaderboard"() TO "anon";
 GRANT ALL ON FUNCTION "public"."get_leaderboard"() TO "authenticated";
 
 GRANT ALL ON FUNCTION "public"."get_leaderboard"() TO "service_role";
+
+-- ---------------------------------------------------------------------------
+-- List security section (A1/A2, 20260930000000 / 20260930010000).
+-- UNLIKE everything above, this part is NOT from the live project: it is the
+-- same `supabase db dump --schema public` output taken from a LOCAL replay of
+-- supabase/migrations/ (supabase/tests/run.sh), trimmed the same way, because
+-- those migrations had not been pushed when it was recorded. After the push,
+-- replace it with the live dump.
+-- ---------------------------------------------------------------------------
+
+CREATE OR REPLACE FUNCTION "public"."add_list_owner"("p_list_id" "uuid", "p_user_id" "uuid") RETURNS boolean
+    LANGUAGE "plpgsql" SECURITY DEFINER
+    SET "search_path" TO 'public'
+    AS $$
+select 1
+$$;
+
+CREATE OR REPLACE FUNCTION "public"."remove_list_owner"("p_list_id" "uuid") RETURNS json
+    LANGUAGE "plpgsql" SECURITY DEFINER
+    SET "search_path" TO ''
+    AS $$
+select 1
+$$;
+
+CREATE OR REPLACE FUNCTION "public"."log_events"("p_visitor_id" "text", "p_events" "jsonb") RETURNS integer
+    LANGUAGE "plpgsql" SECURITY DEFINER
+    SET "search_path" TO ''
+    AS $$
+DECLARE
+  event_record JSONB;
+  inserted_count INTEGER := 0;
+BEGIN
+  FOR event_record IN SELECT * FROM pg_catalog.jsonb_array_elements(p_events)
+  LOOP
+    INSERT INTO public.analytics_events (visitor_id, event_name, properties, created_at)
+    VALUES (
+      p_visitor_id,
+      event_record->>'event_name',
+      COALESCE(event_record->'properties', '{}'),
+      COALESCE((event_record->>'timestamp')::timestamptz, NOW())
+    );
+    inserted_count := inserted_count + 1;
+  END LOOP;
+
+  RETURN inserted_count;
+END;
+$$;
+
+ALTER TABLE "public"."list_followers" ENABLE ROW LEVEL SECURITY;
+
+ALTER TABLE "public"."user_list_items" ENABLE ROW LEVEL SECURITY;
+
+ALTER TABLE "public"."user_lists" ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Followers and owners can view followers" ON "public"."list_followers" FOR SELECT TO "authenticated" USING ((("auth"."uid"() = "user_id") OR "public"."is_list_owner"("list_id")));
+
+CREATE POLICY "Owners and followers can view list items" ON "public"."user_list_items" FOR SELECT TO "authenticated" USING ((EXISTS ( SELECT 1
+   FROM "public"."user_lists"
+  WHERE ("user_lists"."id" = "user_list_items"."list_id"))));
+
+CREATE POLICY "Owners and followers can view lists" ON "public"."user_lists" FOR SELECT TO "authenticated" USING ((("auth"."uid"() = ANY ("owners")) OR "public"."is_list_follower"("id")));
+
+CREATE POLICY "Owners can delete list items" ON "public"."user_list_items" FOR DELETE USING ((EXISTS ( SELECT 1
+   FROM "public"."user_lists"
+  WHERE (("user_lists"."id" = "user_list_items"."list_id") AND ("auth"."uid"() = ANY ("user_lists"."owners"))))));
+
+CREATE POLICY "Owners can delete lists" ON "public"."user_lists" FOR DELETE USING (("auth"."uid"() = ANY ("owners")));
+
+CREATE POLICY "Owners can insert list items" ON "public"."user_list_items" FOR INSERT WITH CHECK ((EXISTS ( SELECT 1
+   FROM "public"."user_lists"
+  WHERE (("user_lists"."id" = "user_list_items"."list_id") AND ("auth"."uid"() = ANY ("user_lists"."owners"))))));
+
+CREATE POLICY "Owners can update list items" ON "public"."user_list_items" FOR UPDATE USING ((EXISTS ( SELECT 1
+   FROM "public"."user_lists"
+  WHERE (("user_lists"."id" = "user_list_items"."list_id") AND ("auth"."uid"() = ANY ("user_lists"."owners"))))));
+
+CREATE POLICY "Owners can update lists" ON "public"."user_lists" FOR UPDATE USING (("auth"."uid"() = ANY ("owners")));
+
+CREATE POLICY "Users can follow lists" ON "public"."list_followers" FOR INSERT WITH CHECK (("auth"."uid"() = "user_id"));
+
+CREATE POLICY "Users can insert own lists" ON "public"."user_lists" FOR INSERT WITH CHECK ((("auth"."uid"() = "user_id") AND (COALESCE("owners", '{}'::"uuid"[]) <@ ARRAY["auth"."uid"()])));
+
+CREATE POLICY "Users can unfollow" ON "public"."list_followers" FOR DELETE USING (("auth"."uid"() = "user_id"));
+
+REVOKE ALL ON FUNCTION "public"."add_list_owner"("p_list_id" "uuid", "p_user_id" "uuid") FROM PUBLIC;
+
+GRANT ALL ON FUNCTION "public"."add_list_owner"("p_list_id" "uuid", "p_user_id" "uuid") TO "service_role";
+
+REVOKE ALL ON FUNCTION "public"."remove_list_owner"("p_list_id" "uuid") FROM PUBLIC;
+
+GRANT ALL ON FUNCTION "public"."remove_list_owner"("p_list_id" "uuid") TO "authenticated";
+
+GRANT ALL ON FUNCTION "public"."remove_list_owner"("p_list_id" "uuid") TO "service_role";
+
+REVOKE ALL ON FUNCTION "public"."log_events"("p_visitor_id" "text", "p_events" "jsonb") FROM PUBLIC;
+
+GRANT ALL ON FUNCTION "public"."log_events"("p_visitor_id" "text", "p_events" "jsonb") TO "anon";
+
+GRANT ALL ON FUNCTION "public"."log_events"("p_visitor_id" "text", "p_events" "jsonb") TO "authenticated";
+
+GRANT ALL ON FUNCTION "public"."log_events"("p_visitor_id" "text", "p_events" "jsonb") TO "service_role";
