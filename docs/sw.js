@@ -14,11 +14,18 @@ import {
     CACHE_NAMES,
     PRECACHE_URLS,
     STRATEGIES,
+    networkFirstWithTimeout,
     routeFor,
+    slowNetworkActive,
     staleCaches,
+    wantsFreshNetwork,
 } from './js/sw-strategy.js';
 
 const ORIGIN = self.location.origin;
+
+/** When a shell request last gave up on the network for the cache (ms epoch),
+ *  or null. Worker-global on purpose: one slow link, one answer. */
+let slowSince = null;
 
 self.addEventListener('install', (event) => {
     // Individually, so one 404 in the list cannot fail the whole install.
@@ -36,6 +43,12 @@ self.addEventListener('activate', (event) => {
     event.waitUntil((async () => {
         const names = await caches.keys();
         await Promise.all(staleCaches(names).map(name => caches.delete(name)));
+        // Navigation preload: start the page request while this worker is
+        // still booting (a cold worker costs tens to hundreds of ms before
+        // its fetch handler runs). The fetch handler consumes
+        // `event.preloadResponse`; it is always consumed for navigations, so
+        // the preload is never wasted.
+        try { await self.registration.navigationPreload?.enable(); } catch { /* optional */ }
         await self.clients.claim();
         await announceUpdate();
     })());
@@ -62,15 +75,21 @@ self.addEventListener('message', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-    const { strategy, cache } = routeFor(event.request, { origin: ORIGIN });
+    const { strategy, cache, timeoutMs } = routeFor(event.request, { origin: ORIGIN });
     if (strategy === STRATEGIES.BYPASS) return;   // no respondWith == untouched
 
     if (strategy === STRATEGIES.CACHE_FIRST) {
         event.respondWith(cacheFirst(event.request, cache));
     } else if (strategy === STRATEGIES.STALE_WHILE_REVALIDATE) {
         event.respondWith(staleWhileRevalidate(event, cache));
+    } else if (!wantsFreshNetwork(event.request) && slowNetworkActive(slowSince)) {
+        // The network was just too slow to wait on: stay on the cached
+        // generation of the app for this page load (see sw-strategy.js).
+        event.respondWith(staleWhileRevalidate(event, cache));
     } else {
-        event.respondWith(networkFirst(event.request, cache));
+        // A hard reload asks for the network, so it waits for it.
+        event.respondWith(networkFirst(event, cache,
+            wantsFreshNetwork(event.request) ? 0 : timeoutMs));
     }
 });
 
@@ -81,17 +100,38 @@ function isCacheable(response) {
     return response.ok || response.type === 'opaque';
 }
 
-async function networkFirst(request, cacheName) {
-    try {
-        const response = await fetch(request);
+/**
+ * The network half of network-first: the navigation preload when there is
+ * one (it is already in flight), else a fetch — and either way the response
+ * refreshes the cache, including when the page was already answered from the
+ * cache because this took too long.
+ */
+function fetchAndCache(event, cacheName) {
+    const request = event.request;
+    return (async () => {
+        const preloaded = await event.preloadResponse;   // undefined unless preloading
+        const response = preloaded || await fetch(request);
         if (isCacheable(response)) {
             const copy = response.clone();
             caches.open(cacheName).then(c => c.put(request, copy)).catch(() => {});
         }
         return response;
+    })();
+}
+
+async function networkFirst(event, cacheName, timeoutMs) {
+    const request = event.request;
+    const network = fetchAndCache(event, cacheName);
+    // Keep the worker alive until the (possibly abandoned) fetch has landed
+    // and refreshed the cache.
+    event.waitUntil(network.catch(() => {}));
+
+    try {
+        const { response, reason } = await networkFirstWithTimeout(
+            network, () => caches.match(request), timeoutMs);
+        if (reason === 'timeout') slowSince = Date.now();
+        return response;
     } catch (err) {
-        const cached = await caches.match(request);
-        if (cached) return cached;
         // A navigation with no cached page still deserves the app shell:
         // index.html is a hash-routed SPA, so any route can be served from it.
         if (request.mode === 'navigate') {
@@ -102,10 +142,21 @@ async function networkFirst(request, cacheName) {
     }
 }
 
+/**
+ * Serve the cached copy instantly and refresh it behind. The refresh asks the
+ * server to revalidate (`no-cache` = conditional request, a 304 when nothing
+ * changed) rather than trusting the HTTP cache: GitHub Pages sends
+ * `max-age=600`, and a background refresh that the HTTP cache answers from its
+ * own stale copy would keep the cache exactly one deploy behind for ten
+ * minutes. Used for corpus data, and for the shell while the network is slow.
+ */
 async function staleWhileRevalidate(event, cacheName) {
     const request = event.request;
     const cached = await caches.match(request);
-    const network = fetch(request).then((response) => {
+    const refresh = request.mode === 'navigate'
+        ? Promise.resolve(event.preloadResponse).then(r => r || fetch(request))
+        : fetch(new Request(request, { cache: 'no-cache' }));
+    const network = refresh.then((response) => {
         if (isCacheable(response)) {
             const copy = response.clone();
             caches.open(cacheName).then(c => c.put(request, copy)).catch(() => {});
@@ -120,6 +171,10 @@ async function staleWhileRevalidate(event, cacheName) {
     }
     const response = await network;
     if (response) return response;
+    if (request.mode === 'navigate') {
+        const shell = await caches.match('./index.html');
+        if (shell) return shell;
+    }
     throw new Error('offline and uncached');
 }
 

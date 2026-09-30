@@ -315,12 +315,15 @@ export function findTakeByRef(parts, ref) {
 /**
  * The OTF document for a tablature take.
  *
- * Two sources, one of which is new. A published take is FETCHED, exactly as
- * it always was — `cache: 'no-cache'` means revalidate with the server (304
- * if unchanged), because Chrome's heuristic freshness otherwise serves
- * long-unchanged tab files for WEEKS after they are re-published (a January
- * parse of cherokee-shuffle-a survived multiple hard reloads and rendered
- * 2/2 left-packed measures over the corrected data).
+ * Two sources, one of which is new. A published take is FETCHED with no
+ * `cache` override. Freshness is the service worker's job now: tab JSON is
+ * stale-while-revalidate there (sw-strategy.js) and its background refresh
+ * asks the server to revalidate (a 304 when unchanged), so a re-published tab
+ * lands one visit later without this request forcing a revalidation round
+ * trip on every open. (This used to say `cache: 'no-cache'`, added because
+ * Chrome's heuristic freshness served a long-unchanged tab for WEEKS after it
+ * was re-published — a header-less static server's behaviour. GitHub Pages
+ * sends `max-age=600`, which bounds the no-worker case to ten minutes.)
  *
  * A PENDING take has nothing to fetch: it was submitted seconds ago and its
  * document lives in the overlay row (corpus.overlayPendingTabParts), where
@@ -335,7 +338,7 @@ export async function loadPartOtf(part, fetchImpl = fetch) {
             throw new Error('This tab was just submitted and could not be read back.');
         }
     }
-    const response = await fetchImpl(part.file, { cache: 'no-cache' });
+    const response = await fetchImpl(part.file);
     if (!response.ok) throw new Error(`Failed to load ${part.file}`);
     return response.json();
 }

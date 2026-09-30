@@ -389,9 +389,47 @@ drum track reliably but not yet which drum each line means, so drawing a
 stave would be fiction and hiding it would be a lie by omission. See
 `sources/banjo-hangout/CLAUDE.md` for what's known about the mapping.
 
+### Tablature draw count (Bravura, tab fetch)
+
+A tab draws **once** per open. `TabRenderer` engraves time signatures and
+rests with Bravura (SMuFL) when it is loaded, bold-serif digits otherwise.
+`renderTablaturePart` starts the font load alongside the tab JSON and waits for
+it (capped at 250ms, `TabRenderer.whenBravuraReady`) before drawing, so the
+first draw already has the glyphs; a renderer still re-draws when the font
+lands LATER than its draw, but only if that draw was made without it
+(`_drewWithBravura` — the font promise resolves on a microtask even when the
+font was ready long ago, which used to redraw every staff on every open). The
+font URL is pinned (`TabRenderer.BRAVURA_URL`, release tag `bravura-1.482`;
+`@latest` on jsDelivr's `gh` endpoint is the repo's HEAD). `loadPartOtf`
+fetches tab JSON with no `cache` override — freshness is the service worker's
+job (SWR, revalidating refresh; see Offline / PWA).
+
+### Chart prefetch
+
+The `.pro` for the song a reader is about to open is fetched early through
+`prefetchSongContent()` (`song-content.js`, which shares `getSongContent`'s
+cache and in-flight dedupe, so the real open finds the text in memory or joins
+the request already in the air): on `pointerdown` of a search result, on a
+mouse resting on one for 120ms (`search-core.js`, delegated on the results
+container; `prefetchResult` resolves the same target a click would, including a
+group's representative, and skips part-qualified rows), and for the NEXT song in
+a list when the nav bar updates (`song-view.js::prefetchNextInList`). It is
+best-effort and silent (failures are not cached, so the open retries and
+reports) and is skipped on Save-Data connections.
+
 ### Transposition
 
 - `currentDetectedKey` tracks the current key
+- `setCurrentDetectedKey()` is a **no-op when the key is unchanged** (like
+  `setCurrentView` / `setDungeonMode`). `initKeyState` writes the detected key
+  on every render, and the song page re-renders on every `currentDetectedKey`
+  notification, so an unconditional notify drew every chart twice. Nothing
+  relies on re-notification with an unchanged key; a caller that wants a redraw
+  calls the renderer.
+- Notifications are delivered a frame after the write, so a chart drawn in
+  between has already used the key: `renderLeadSheetContent` stamps
+  `container.dataset.renderedKey`, and work-view's key subscriber skips the
+  redraw when it matches.
 - Key selector dropdown triggers re-render
 - `transposeChord()` handles sharps/flats correctly
 - `getSemitonesBetweenKeys()` calculates interval
@@ -474,13 +512,19 @@ resolved in a microtask and lost the race; cold, it won. `#drafts` → Open
 lost every time; a dropped `.tef` lost about half. Covered by
 `e2e/otf-editor-drafts.spec.js` and `e2e/otf-editor-files.spec.js`.
 
-> ⚠️ Still open (deliberately not fixed here): a tab route is dispatched
-> **twice** for one navigation — `popstate` and `hashchange` both reach
-> `handleDeepLink`, so `openTabRoute` runs twice, reads the draft from
-> IndexedDB twice, and renders the work view twice (the second render is why
-> `mountTabEditor` and `renderTablaturePart` each carry a "the page moved on"
-> guard). Harmless now, but wasteful, and de-duplicating the router touches
-> every route — worth doing on its own.
+> **One navigation step, one route.** A back/forward step (or
+> `location.hash = …`) fires `popstate` AND `hashchange` whenever the
+> fragment differs, popstate first. Both used to reach `handleDeepLink`, so
+> `openWork` / `openTabRoute` ran twice per step — two builds of the song
+> page, two IndexedDB reads for a draft route, two lead-sheet draws (the
+> second render is why `mountTabEditor` and `renderTablaturePart` each carry a
+> "the page moved on" guard; the guards stay, they protect against ordinary
+> slow fetches too). `main.js` now PARKS the popstate work for one task; a
+> hashchange arriving in that window cancels it and routes by hash (the hash is
+> the more trustworthy of the two), and with no hashchange (same fragment,
+> only the state differs) the parked popstate runs. A hashchange for the URL a
+> popstate already routed within 100ms is dropped as an echo. Covered by
+> `e2e/render-counts.spec.js` (back/forward draws a chart once).
 
 ## Offline / PWA
 
@@ -499,13 +543,47 @@ mechanical shell around it, which is why the table is unit-tested
 
 | Request | Strategy | Cache | Why |
 |---|---|---|---|
-| Navigations, same-origin `.html` / `.js` / `.css` (and any other same-origin GET) | **network-first** | `bgb-shell-<ver>` | Nothing here is content-hashed. Network-first means a deploy is live on the next load and a stale module is impossible while online; the cache is the plane-mode fallback only. |
-| `docs/data/*.jsonl`, `docs/data/*.json` | **stale-while-revalidate** | `bgb-data-<ver>` | Rebuilt by every deploy (`build.yml` runs `build_works_index.py` then uploads `docs/`), and big. Paint instantly, refresh behind, fresh next visit. **Never** cached as immutable. |
+| Navigations, same-origin `.html` / `.js` / `.css` (and any other same-origin GET) | **network-first, ~1.8s timeout** | `bgb-shell-<ver>` | Nothing here is content-hashed. Network-first means a deploy is live on the next load and a stale module is impossible while the network is healthy. The cache answers when the network fails, or has not answered in `NETWORK_TIMEOUT_MS` **and a cached copy exists** (with nothing cached the request keeps waiting). Navigation preload is on. See below for why this is not stale-while-revalidate. |
+| `docs/data/*.jsonl`, `docs/data/**.json` (incl. `data/tabs/*.json`), `docs/data/songs/*.pro` | **stale-while-revalidate** | `bgb-data-<ver>` | Rebuilt by every deploy (`build.yml` runs `build_works_index.py` then uploads `docs/`), and big. Paint instantly, refresh behind, fresh next visit. **Never** cached as immutable. The background refresh sends `cache: 'no-cache'` (a conditional request, 304 when unchanged) so GitHub Pages' `max-age=600` cannot keep the cache a deploy behind. A song page blocks on its `.pro`, so this is what makes a repeat open instant. |
 | `surikov.github.io/*` (WebAudioFont player + soundfonts), `cdn.jsdelivr.net/**/bravura/**` | **cache-first** | `bgb-vendor-<ver>` | Immutable third-party assets. Opaque responses are cached deliberately — we only replay them. |
 | `*.supabase.co`, any non-GET, other third parties (analytics, the abcjs / supabase-js CDN bundles), non-http schemes | **bypass** | — | Not ours. No `respondWith`, so the request is untouched. |
 
 A navigation that misses the cache offline falls back to `./index.html` —
 every route is a hash route, so the shell can serve any of them.
+
+**Why the shell is network-first with a timeout, not stale-while-revalidate.**
+There is no build step and no content hashing, so one deploy changes dozens of
+ES modules at once. SWR would serve the old copy of each cached module and the
+new copy of the rest on the load after a deploy; a module importing a name its
+(old) sibling does not export is a hard failure — a blank app for a returning
+user. Network-first keeps "a deploy is live on the next load" and only gives it
+up on a link too slow to be getting anything done. Two further rules keep that
+give-up consistent:
+
+- **Slow-network latch** (`slowNetworkActive`): once one shell request has
+  timed out to the cache, every shell request prefers its cached copy
+  (refreshing behind) for `SLOW_NETWORK_WINDOW_MS` (15s), so one page load
+  stays on ONE generation of the app instead of an old `main.js` with a new
+  `work-view.js`.
+- **A hard reload waits** (`wantsFreshNetwork`): `cache: 'reload'` /
+  `'no-store'` requests (Shift-reload, "empty cache and hard reload") never
+  fall back on a timeout — the reader asked for the network. This is also the
+  escape hatch if a bad worker or stale cache ever misbehaves.
+
+The timeout logic is `networkFirstWithTimeout()` in `sw-strategy.js` (pure,
+unit-tested); `e2e/sw-and-prefetch.spec.js` exercises the real worker against a
+delaying proxy (`page.route` cannot: Playwright turns the HTTP cache off while
+a route is installed, which makes every request `cache: 'reload'`).
+
+**Updating the worker:** `pwa.js` registers with `updateViaCache: 'none'`, so an
+update check fetches `sw.js` AND its imports (`sw-strategy.js`) from the
+network. Otherwise GitHub Pages' `max-age=600` could pair a new `sw.js` with a
+ten-minute-old `sw-strategy.js` that lacks a name it imports; that fails to
+install (the old worker stays, nobody is stranded) but stalls the update.
+
+**Gotcha:** the very first visit's own requests predate the worker's control
+(`clients.claim()` lands after they are issued), so they are not in its cache;
+the SECOND online load fills it. Offline support starts on the second visit.
 
 ### How a deploy invalidates the caches
 
@@ -514,7 +592,9 @@ on the next load, and stale-while-revalidate refreshes corpus data one visit
 behind — so shipping new JS, CSS or a rebuilt `index.jsonl` needs **no cache
 bump at all**.
 
-**Bump `CACHE_VERSION` in `js/sw-strategy.js` when the STRATEGY changes** —
+**Bump `CACHE_VERSION` in `js/sw-strategy.js` when the STRATEGY changes**
+(v2: `.pro` moved from the shell cache to the data cache, and shell requests
+gained the timeout) —
 a route moves between rows of the table above, a cache splits, the stored
 shape changes. Every cache name is stamped with it, and `activate` deletes
 every `bgb-`-prefixed cache that isn't the current generation (`staleCaches()`).
@@ -638,7 +718,10 @@ mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
 - `editor.test.js` - Editor functionality, ChordPro conversion
 - `search-core.test.js` - Query parsing, chord/progression filtering
 - `song-view.test.js` - ChordPro parsing
-- `song-content.test.js` - Content on demand: cache, dedupe, legacy fallback
+- `song-content.test.js` - Content on demand: cache, dedupe, legacy fallback, prefetch
+- `sw-strategy.test.js` - Service-worker routing table, network-first timeout, slow-network latch
+- `tablature-bravura.test.js` - Pinned font, redraw-only-when-needed
+- `song-view-perf.test.js` - Batched wrapped-line measuring, next-in-list prefetch
 - `corpus.test.js` - Canon + archive + pending merge, archive gating
 - `tags.test.js` - Tag matching + virtual instrument tag derivation
 - `state.test.js` - State management, pub/sub system
