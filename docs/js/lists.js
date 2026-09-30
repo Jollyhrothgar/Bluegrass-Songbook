@@ -18,6 +18,7 @@ import { escapeHtml, generateLocalId, parseItemRef } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
+import { normalizeKeyForMode } from './chords.js';
 
 // Re-export FAVORITES_LIST_ID for backwards compatibility
 export { FAVORITES_LIST_ID };
@@ -1623,7 +1624,7 @@ export function openNotesSheet(listId, songId, songTitle) {
     const tempoInput = document.getElementById('notes-tempo');
     const notesTextarea = document.getElementById('notes-text');
 
-    if (keySelect) keySelect.value = metadata.key || '';
+    if (keySelect) keySelect.value = normalizeKeyForMode(metadata.key, 'major') || '';
     if (tempoInput) tempoInput.value = metadata.tempo || '';
     if (notesTextarea) notesTextarea.value = metadata.notes || '';
 
