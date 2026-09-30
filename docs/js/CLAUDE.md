@@ -1165,9 +1165,28 @@ See `sources/bounty-hunt/CLEANUP-PLAN.md` for the full evidence.
 Lists can have multiple owners for collaborative curation.
 
 - **Follow/Unfollow**: Follow someone else's list to see it with your lists
-- **Thunderdome**: Claim abandoned lists (owner inactive 1+ year)
-- **Shareable URLs**: `#list/{id}` URLs work for any public list
+- **Thunderdome**: when the last owner leaves a list that has followers it
+  becomes *orphaned*; any follower can claim it within 30 days
+  (`claim_orphaned_list`). The Claim button shows for a follower of an orphaned
+  list, whether they arrived by share link or through their followed lists.
+- **Shareable URLs**: `#list/{id}` URLs work for any list, signed in or not
 - Lists stored in the Supabase `user_lists` table with an `owners` uuid array
+- **Who can read the tables**: only a list's owners and followers, and only
+  signed in (RLS). Everyone else, including signed-out visitors, views a list
+  through the `get_public_list` RPC. See "Row-Level Security" in
+  `supabase/CLAUDE.md`. The client never calls `add_list_owner`;
+  `leaveList()` calls `remove_list_owner(p_list_id)`, which can only remove the
+  caller.
+- **`SupabaseAuth.fetchPublicList(id)` returns one shape**, normalized from the
+  RPC's snake_case in one place (`normalizePublicList` in `supabase-auth.js`):
+  `{ list, songs, isOwner, isFollower, isOrphaned, canClaim }`, with `songs`
+  top-level (there is no `list.songs`). That is also what `viewingPublicList`
+  holds. Read these keys, never `is_owner` / `can_claim`; a test feeds the real
+  RPC response through the real `supabase-auth.js` to keep it that way
+  (`__tests__/supabase-auth-public-list.test.js`, `lists-public-view.test.js`).
+- **Analytics** (`analytics.js`) batches events to the `log_events` RPC.
+  `supabase.rpc` resolves `{ error }` rather than throwing, so `flush()` checks
+  it and re-queues the batch on failure (one flush interval of back-off).
 
 ### Shareable Lists
 

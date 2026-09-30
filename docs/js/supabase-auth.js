@@ -753,6 +753,25 @@ async function removeFromCloudList(listId, songId) {
     return { error };
 }
 
+// get_public_list returns snake_case flags at the top level:
+//   { list: {id, name, user_id, position, owners, orphaned_at}, songs: [songId, ...],
+//     is_owner, is_follower, is_orphaned, can_claim }
+// The rest of the app (viewingPublicList in state.js, showListView, fetchListData,
+// copyListToOwn) reads ONE shape, produced here and nowhere else:
+//   { list, songs, isOwner, isFollower, isOrphaned, canClaim }
+// `songs` is top-level (there is no list.songs) and `list` keeps the RPC's fields.
+function normalizePublicList(raw) {
+    const list = raw.list || {};
+    return {
+        list,
+        songs: Array.isArray(raw.songs) ? raw.songs : [],
+        isOwner: !!raw.is_owner,
+        isFollower: !!raw.is_follower,
+        isOrphaned: !!(raw.is_orphaned ?? list.orphaned_at),
+        canClaim: !!raw.can_claim
+    };
+}
+
 // Fetch a public list by ID (works for any user, not just owner)
 async function fetchPublicList(listId) {
     if (!supabaseClient) {
@@ -773,7 +792,11 @@ async function fetchPublicList(listId) {
             return { data: null, error: { message: data.error } };
         }
 
-        return { data, error: null };
+        if (!data) {
+            return { data: null, error: { message: 'List not found' } };
+        }
+
+        return { data: normalizePublicList(data), error: null };
     } catch (err) {
         console.error('Error fetching public list:', err);
         return { data: null, error: err };
