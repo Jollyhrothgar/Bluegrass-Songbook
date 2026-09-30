@@ -27,20 +27,54 @@ import {
     parseLineWithChords, transposeChord, toNashville, getSemitonesBetweenKeys
 } from '../chords.js';
 
+const SECTION_START_RE = /^\{start_of_(\w+)(?::\s*([^}]*?))?\s*\}$/i;
+const SHORT_START_RE = /^\{so([vcbtg])(?::\s*([^}]*?))?\s*\}$/i;
+const SECTION_END_RE = /^\{(?:end_of_\w+|eo[vcbtg])\s*\}$/i;
+const COMMENT_RE = /^\{(?:comment|c)(?::\s*|\s+)([^}]*?)\s*\}$/i;
+const SHORT_TYPES = { v: 'verse', c: 'chorus', b: 'bridge', t: 'tab', g: 'grid' };
+// Blocks whose lines are laid out by hand and must not be chord-parsed
+const PREFORMATTED_TYPES = new Set(['tab', 'grid']);
+
+// A {comment: ...} inside an open section is kept in order as a marked line
+const COMMENT_MARK = '\u0001';
+function isCommentLine(line) { return line.charCodeAt(0) === 1; }
+function commentText(line) { return line.slice(1); }
+
 /**
- * Parse ChordPro content into structured sections
+ * Parse ChordPro content into structured sections.
+ *
+ * Never drops a lyric line: text outside any {start_of_*} block forms
+ * implicit verses split on blank lines (same rule as visual-editor/model.js).
+ * Any {start_of_X[: label]} opens a section of type X; {sov}/{soc}/{sob}
+ * (and {sot}/{sog}) are shorthands. tab/grid blocks are flagged
+ * `preformatted` and their lines are emitted verbatim.
+ * {comment: text} becomes a `comment` section (label = text, no lines), or
+ * a marked line when it sits inside an open section.
+ * Unknown directives (including {chorus}) are ignored.
  */
 export function parseChordPro(chordpro) {
     const lines = chordpro.split('\n');
     const metadata = {};
     const sections = [];
     let currentSection = null;
+    let implicit = false; // currentSection was opened by untagged text
     let inAbcBlock = false;
     let abcLines = [];
+
+    const closeSection = () => {
+        if (currentSection && currentSection.preformatted) {
+            // drop leading/trailing blank lines of a tab block
+            while (currentSection.lines.length && !currentSection.lines[currentSection.lines.length - 1].trim()) currentSection.lines.pop();
+            while (currentSection.lines.length && !currentSection.lines[0].trim()) currentSection.lines.shift();
+        }
+        currentSection = null;
+        implicit = false;
+    };
 
     for (const line of lines) {
         // Handle ABC notation blocks
         if (line.match(/\{start_of_abc\}/i)) {
+            closeSection();
             inAbcBlock = true;
             abcLines = [];
             continue;
@@ -64,6 +98,8 @@ export function parseChordPro(chordpro) {
             continue;
         }
 
+        const t = line.trim();
+
         const metaMatch = line.match(/\{meta:\s*(\w+)\s+([^}]+)\}/);
         if (metaMatch) {
             const [, key, value] = metaMatch;
@@ -71,31 +107,56 @@ export function parseChordPro(chordpro) {
             continue;
         }
 
-        const sectionMatch = line.match(/\{start_of_(verse|chorus|bridge)(?::\s*([^}]+))?\}/);
-        if (sectionMatch) {
-            const [, type, label] = sectionMatch;
-            currentSection = {
-                type: type,
-                label: label || type.charAt(0).toUpperCase() + type.slice(1),
-                lines: []
-            };
+        const start = t.match(SECTION_START_RE);
+        const shortStart = start ? null : t.match(SHORT_START_RE);
+        if (start || shortStart) {
+            closeSection();
+            const type = start ? start[1].toLowerCase() : SHORT_TYPES[shortStart[1].toLowerCase()];
+            const label = (start ? start[2] : shortStart[2]) || type.charAt(0).toUpperCase() + type.slice(1);
+            currentSection = { type, label, lines: [] };
+            if (PREFORMATTED_TYPES.has(type)) currentSection.preformatted = true;
             sections.push(currentSection);
             continue;
         }
 
-        if (line.match(/\{end_of_(verse|chorus|bridge)\}/)) {
-            currentSection = null;
+        if (SECTION_END_RE.test(t)) {
+            closeSection();
             continue;
         }
 
-        if (line.match(/^\{.*\}$/)) {
+        const comment = t.match(COMMENT_RE);
+        if (comment) {
+            if (comment[1]) {
+                if (currentSection && !implicit) {
+                    currentSection.lines.push(COMMENT_MARK + comment[1]);
+                } else {
+                    closeSection();
+                    sections.push({ type: 'comment', label: comment[1], lines: [] });
+                }
+            }
             continue;
         }
 
-        if (currentSection && line.trim()) {
-            currentSection.lines.push(line);
+        if (t.startsWith('{') && t.endsWith('}')) {
+            continue;
         }
+
+        if (!t) {
+            if (implicit) closeSection(); // blank line ends an implicit verse
+            else if (currentSection && currentSection.preformatted) currentSection.lines.push('');
+            continue;
+        }
+
+        if (!currentSection) {
+            const n = sections.filter(s => s.type === 'verse').length + 1;
+            currentSection = { type: 'verse', label: `Verse ${n}`, lines: [] };
+            implicit = true;
+            sections.push(currentSection);
+        }
+        currentSection.lines.push(line);
     }
+
+    closeSection();
 
     return { metadata, sections };
 }
@@ -140,6 +201,9 @@ function displayChord(chord, o) {
  * Each chord+lyrics chunk is an inline-block so chords wrap with their lyrics.
  */
 function renderLine(line, hideChords, o) {
+    if (isCommentLine(line)) {
+        return `<div class="song-line song-comment">${escapeHtml(commentText(line))}</div>`;
+    }
     const { chords, lyrics } = parseLineWithChords(line);
 
     // No chords mode or hideChords flag - just show lyrics
@@ -182,7 +246,9 @@ function renderLine(line, hideChords, o) {
  */
 function getSectionChordPattern(section) {
     const chords = [];
+    if (section.preformatted) return '';
     for (const line of section.lines) {
+        if (isCommentLine(line)) continue;
         const { chords: lineChords } = parseLineWithChords(line);
         for (const { chord } of lineChords) {
             chords.push(chord);
@@ -195,7 +261,9 @@ function getSectionChordPattern(section) {
  * Render a section (verse, chorus, etc.)
  */
 function renderSection(section, isRepeatedSection, hideChords, o) {
-    const lines = section.lines.map(line => renderLine(line, hideChords, o)).join('');
+    const lines = section.preformatted
+        ? `<pre class="section-preformatted">${escapeHtml(section.lines.join('\n'))}</pre>`
+        : section.lines.map(line => renderLine(line, hideChords, o)).join('');
     const shouldIndent = section.type === 'chorus' || isRepeatedSection;
     const indentClass = shouldIndent ? 'section-indent' : '';
     const labelHtml = o.sectionLabels ? `<div class="section-label">${escapeHtml(section.label)}</div>` : '';
@@ -227,6 +295,7 @@ export function renderSectionsHtml(sections, opts) {
 
     const totalCounts = {};
     for (const section of chordSections) {
+        if (section.type === 'comment') continue;
         totalCounts[section.label] = (totalCounts[section.label] || 0) + 1;
     }
 
@@ -238,6 +307,11 @@ export function renderSectionsHtml(sections, opts) {
 
     while (i < chordSections.length) {
         const section = chordSections[i];
+        if (section.type === 'comment') {
+            sectionsHtml += `<div class="section-comment">${escapeHtml(section.label)}</div>`;
+            i++;
+            continue;
+        }
         const sectionKey = section.label;
         const isRepeatedSection = totalCounts[sectionKey] > 1;
         const shouldIndent = section.type === 'chorus' || isRepeatedSection;
@@ -288,7 +362,9 @@ export function renderSectionsHtml(sections, opts) {
  * chords are placed at their lyric position, nudged right so they never
  * touch the previous chord.
  */
-function lineToAscii(line, transform) {
+function lineToAscii(line, transform, preformatted = false) {
+    if (preformatted) return { chordLine: '', lyricLine: line };
+    if (isCommentLine(line)) return { chordLine: '', lyricLine: commentText(line) };
     const { chords, lyrics } = parseLineWithChords(line);
 
     let chordLine = '';
@@ -328,6 +404,11 @@ export function renderSectionsAscii(sections, opts) {
 
     for (const section of sections) {
         if (section.type === 'abc') continue;
+        if (section.type === 'comment') {
+            out.push(section.label);
+            out.push('');
+            continue;
+        }
 
         const match = findContentRepeat(seen, section);
         const hideChords = o.chordMode === 'none' || (o.chordMode === 'first' && !!match);
@@ -341,7 +422,7 @@ export function renderSectionsAscii(sections, opts) {
         if (o.sectionLabels) out.push(section.label);
         for (const line of section.lines) {
             const { chordLine, lyricLine } = lineToAscii(
-                line, hideChords ? null : c => displayChord(c, o));
+                line, hideChords ? null : c => displayChord(c, o), section.preformatted);
             if (chordLine && !hideChords) out.push(chordLine);
             out.push(lyricLine);
         }
@@ -370,6 +451,10 @@ export function renderSectionsPrintHtml(sections, opts) {
 
     for (const section of sections) {
         if (section.type === 'abc') continue;
+        if (section.type === 'comment') {
+            html += `<div class="section-comment">${escapeHtml(section.label)}</div>`;
+            continue;
+        }
 
         const match = findContentRepeat(seen, section);
         if (match) {
@@ -380,9 +465,9 @@ export function renderSectionsPrintHtml(sections, opts) {
         html += `<div class="section-label">${escapeHtml(section.label)}</div>`;
         for (const line of section.lines) {
             const { chordLine, lyricLine } = lineToAscii(
-                line, c => displayChord(c, { ...o, nashville: false }));
+                line, c => displayChord(c, { ...o, nashville: false }), section.preformatted);
             const { chordLine: nashvilleLine } = lineToAscii(
-                line, c => displayChord(c, { ...o, nashville: true }));
+                line, c => displayChord(c, { ...o, nashville: true }), section.preformatted);
             html += '<div class="line-group">';
             if (chordLine) {
                 html += `<div class="chord-line standard">${escapeHtml(chordLine)}</div>`;

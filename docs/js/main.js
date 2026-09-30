@@ -2431,6 +2431,7 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
             font-family: system-ui, sans-serif;
         }
         .hide-labels .section-label { display: none; }
+        .section-comment { font-style: italic; margin: 0 0 0.5rem; font-family: system-ui, sans-serif; }
         .line-group { margin-bottom: 0.25rem; }
         .chord-line {
             font-weight: bold;

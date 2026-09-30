@@ -289,7 +289,9 @@ artist:hank williams tag:honkytonk chord:VII
 ```
 ChordPro string
     ↓ parseChordPro()
-Sections array [{type, label, lines, repeatOf}]
+Sections array [{type, label, lines, preformatted?}]  (never drops lyric lines: untagged
+text = implicit verses split on blank lines; any start_of_X opens type X; {comment}
+= comment section; tab/grid = preformatted; repeats are detected at render time)
     ↓ renderSong()
 HTML with chord highlighting
     ↓ (if nashvilleMode)
