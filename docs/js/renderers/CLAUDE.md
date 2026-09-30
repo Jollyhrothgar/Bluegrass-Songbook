@@ -6,13 +6,14 @@ SVG-based tablature rendering and playback for OpenTabFormat (OTF) files.
 
 | File | Purpose |
 |------|---------|
-| `index.js` | Renderer registry (`RENDERERS`, `getRenderer`, `detectFormat`); re-exports `TabRenderer`, `TabPlayer`, `isPercussionTrack`/`pitchedTracks`, the ChordPro entry points and all of `measure-timing.js` |
+| `index.js` | Renderer registry (no longer imported by `work-view.js`, which loads `tablature.js`/`tab-player.js` lazily; still the registry for tests and other callers) (`RENDERERS`, `getRenderer`, `detectFormat`); re-exports `TabRenderer`, `TabPlayer`, `isPercussionTrack`/`pitchedTracks`, the ChordPro entry points and all of `measure-timing.js` |
 | `tablature.js` | `TabRenderer` class - converts OTF to SVG tablature |
 | `tab-player.js` | `TabPlayer` class - audio playback with note highlighting |
 | `tab-ascii.js` | ASCII tablature format (legacy, rarely used) |
 | `chordpro.js` | THE ChordPro renderer (`parseChordPro`, `renderSectionsHtml/Ascii/PrintHtml`) — shared by every lead-sheet surface |
 | `measure-timing.js` | Ts-aware measure math shared by renderer, player, work-view and the OTF editor (`expandNotation`, `readingListTimeline`, `measureTimingFromOtf`, …) |
 | `otf-tracks.js` | `isPercussionTrack` / `pitchedTracks` — the shared "is this track pitched" filter |
+| `tab-hit-test.js` | `positionFromSvgPoint` — SVG point → `{measure, tick, string}`. Lives here (not in `otf-editor/`) so reading-view click-to-play does not load the editor; `otf-editor/cursor.js` re-exports it |
 
 ## TabRenderer
 

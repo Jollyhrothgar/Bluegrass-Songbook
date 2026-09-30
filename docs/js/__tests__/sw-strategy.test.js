@@ -170,10 +170,21 @@ describe('sw.js', () => {
         expect(sw).toContain('sw-activated');
     });
 
-    it('precaches only the shell, not the module graph', () => {
-        expect(PRECACHE_URLS.length).toBeLessThanOrEqual(6);
-        expect(PRECACHE_URLS).toContain('./index.html');
+    it('precaches the shell plus the lazily loaded modules, not the boot graph', () => {
+        // Boot modules reach the runtime cache on every online load; lazy ones
+        // (editor, tab renderer, drafts list…) only when first used, so they
+        // are precached for offline. __tests__/lazy-modules.test.js checks the
+        // list against the source.
+        const shell = PRECACHE_URLS.filter(u => !u.startsWith('./js/'));
+        expect(shell).toEqual([
+            './', './index.html', './css/style.css',
+            './manifest.webmanifest', './images/icon-192.png',
+        ]);
+        expect(PRECACHE_URLS).toContain('./js/editor.js');
+        expect(PRECACHE_URLS).toContain('./js/renderers/tablature.js');
+        expect(PRECACHE_URLS).toContain('./js/drafts-view.js');
         expect(PRECACHE_URLS.some(u => u.includes('main.js'))).toBe(false);
+        expect(PRECACHE_URLS).not.toContain('./js/state.js');
     });
 });
 
