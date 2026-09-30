@@ -52,8 +52,6 @@ let editorSaveBtnEl = null;
 let editorSubmitBtnEl = null;
 let editorStatusEl = null;
 let editorNashvilleEl = null;
-let editorCommentEl = null;
-let editCommentRowEl = null;
 let editSongBtnEl = null;
 let hintsBtnEl = null;
 let hintsPanelEl = null;
@@ -177,20 +175,16 @@ export async function enterEditMode(song, options = {}) {
     if (editorArtistEl) editorArtistEl.value = song.artist || '';
     if (editorWriterEl) editorWriterEl.value = song.composer || '';
     if (editorContentEl) editorContentEl.value = content || '';
-    if (editorCommentEl) editorCommentEl.value = '';
 
-    // Show comment field (visible when the metadata line is expanded)
-    if (editCommentRowEl) editCommentRowEl.classList.remove('hidden');
     updateMetadataSummary();
     setMetadataExpanded(false);
 
-    // Editing content that isn't yours forks instead of overwriting. Say so
-    // now, not after the fact.
-    const mine = ownsContent(song);
-    if (editorSubmitBtnEl) {
-        editorSubmitBtnEl.textContent = mine ? 'Submit Correction' : 'Save as My Arrangement';
-    }
-    renderForkNotice();
+    // Editing content that isn't yours forks instead of overwriting — unless
+    // you are trusted, which updates in place. Say which, now, not after the
+    // fact. Trust is an async RPC (cached after the first answer): paint with
+    // what is known, then correct it when the answer lands.
+    refreshOwnershipChrome();
+    refreshTrustedStatus();
 
     // Switch to editor panel (update nav state)
     [navSearchEl, navAddSongEl, navFavoritesEl].forEach(btn => {
@@ -228,8 +222,6 @@ export function exitEditMode() {
     editingSongRecord = null;
     renderForkNotice();
     editorKeyPinned = false;
-    if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
-    if (editorCommentEl) editorCommentEl.value = '';
     if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
 }
 
@@ -251,8 +243,6 @@ export function resetEditorForNewSong() {
     if (editorArtistEl) editorArtistEl.value = '';
     if (editorWriterEl) editorWriterEl.value = '';
     if (editorContentEl) editorContentEl.value = '';
-    if (editorCommentEl) editorCommentEl.value = '';
-    if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
     if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
     if (editorStatusEl) {
         editorStatusEl.textContent = '';
@@ -523,8 +513,6 @@ export function initEditor(options) {
         editorSubmitBtn,
         editorStatus,
         editorNashville,
-        editorComment,
-        editCommentRow,
         editSongBtn,
         hintsBtn,
         hintsPanel,
@@ -558,8 +546,6 @@ export function initEditor(options) {
     editorSubmitBtnEl = editorSubmitBtn;
     editorStatusEl = editorStatus;
     editorNashvilleEl = editorNashville;
-    editorCommentEl = editorComment;
-    editCommentRowEl = editCommentRow;
     editSongBtnEl = editSongBtn;
     hintsBtnEl = hintsBtn;
     hintsPanelEl = hintsPanel;
@@ -861,9 +847,67 @@ export function ownsContent(song) {
     return !!owner && owner === user.id;
 }
 
+// Last answer of is_trusted_user() for the signed-in user (false until asked).
+let editorTrusted = false;
+
 /**
- * Say plainly, before they hit submit, that editing someone else's chart
- * creates their own arrangement rather than changing the original.
+ * Will this edit change the song in place (true) or land as the editor's own
+ * arrangement (false)? Mirrors the server's classification in
+ * supabase/functions/_shared/pending-dispatch.ts: the submitter of the chart
+ * updates it, and so does a trusted user; everyone else forks.
+ */
+export function editsInPlace(song, trusted = editorTrusted) {
+    if (ownsContent(song)) return true;
+    return trusted === true && !!window.SupabaseAuth?.getUser?.()?.id;
+}
+
+/** The three things the fork notice can say. Exported for tests. */
+export const EDITOR_NOTICES = {
+    fork: 'This will be saved as your arrangement \u2014 the original stays untouched.',
+    trusted: 'As a trusted editor, your changes update this song in place for everyone.',
+    signedOut: 'Sign in to submit. Unless this chart is yours, your edit is saved as your own arrangement \u2014 the original stays untouched.',
+};
+
+/** Ask whether the signed-in user is trusted, then repaint what depends on it. */
+async function refreshTrustedStatus() {
+    const record = editingSongRecord;
+    let trusted = false;
+    try {
+        trusted = (await window.SupabaseAuth?.isTrustedUser?.()) === true;
+    } catch {
+        // Not trusted is the safe read: it only changes the wording.
+    }
+    editorTrusted = trusted;
+    if (editMode && editingSongRecord && editingSongRecord === record) {
+        refreshOwnershipChrome();
+    }
+}
+
+/**
+ * Sign-in state changed while the editor is open (the sign-in round trip
+ * lands back here): re-derive what the submit button and notice promise.
+ */
+export function refreshEditorOwnership() {
+    editorTrusted = false;
+    refreshOwnershipChrome();
+    return refreshTrustedStatus();
+}
+
+/** Submit-button label and fork notice for the record being edited. */
+function refreshOwnershipChrome() {
+    if (editorSubmitBtnEl && editMode && editingSongRecord) {
+        editorSubmitBtnEl.textContent = editsInPlace(editingSongRecord)
+            ? 'Submit Correction'
+            : 'Save as My Arrangement';
+    }
+    renderForkNotice();
+}
+
+/**
+ * Say plainly, before they hit submit, what the server will do with the edit:
+ * nothing to say for your own chart; "updates in place" for a trusted user;
+ * otherwise that it becomes their own arrangement and the original is
+ * untouched.
  */
 function renderForkNotice() {
     if (!editorStatusEl?.parentNode) return;
@@ -882,8 +926,10 @@ function renderForkNotice() {
         notice.className = 'editor-fork-notice';
         editorStatusEl.parentNode.insertBefore(notice, editorStatusEl);
     }
-    notice.textContent =
-        'This will be saved as your arrangement — the original stays untouched.';
+    const signedIn = !!window.SupabaseAuth?.getUser?.()?.id;
+    notice.textContent = !signedIn
+        ? EDITOR_NOTICES.signedOut
+        : editsInPlace(editingSongRecord) ? EDITOR_NOTICES.trusted : EDITOR_NOTICES.fork;
 }
 
 /**

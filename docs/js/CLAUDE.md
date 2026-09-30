@@ -440,6 +440,16 @@ Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
 - `editorConvertToChordPro()` - Smart paste: chord-above-lyrics → ChordPro
 - `updateEditorPreview()` - Refresh chrome (key/toolbar) + re-render preview
+- Ownership wording mirrors the server (`pending-dispatch.ts`): the chart's
+  submitter AND trusted users update in place (button "Submit Correction";
+  trusted users see a one-line notice saying so), everyone else forks
+  ("Save as My Arrangement" + the fork notice; signed-out users get a hedged
+  "Sign in to submit. Unless this chart is yours…"). `editsInPlace()` is the
+  one place that decides; `refreshEditorOwnership()` re-derives it on an auth
+  change. There is deliberately **no Edit Comment field**: `pending_songs.notes`
+  is written to the *work's* `notes` when an edit lands on the primary chart
+  (`process_pending.py`), so a free-text comment would overwrite the song's
+  description. Only tab submissions carry a comment (as provenance).
 - Submitting writes a `pending_songs` row and then POSTs its id to the
   `auto-commit-song` edge function (see "Contributing" below). There is no
   `submitSongToGitHub()` any more — the GitHub-issue flow and its

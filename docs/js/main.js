@@ -145,8 +145,6 @@ const editorSaveBtn = document.getElementById('editor-save');
 const editorSubmitBtn = document.getElementById('editor-submit');
 const editorStatus = document.getElementById('editor-status');
 const editorNashville = document.getElementById('editor-nashville');
-const editorComment = document.getElementById('editor-comment');
-const editCommentRow = document.getElementById('edit-comment-row');
 const hintsBtn = document.getElementById('chordpro-hints-btn');
 const hintsPanel = document.getElementById('chordpro-hints-panel');
 const hintsBackdrop = document.getElementById('chordpro-hints-backdrop');
@@ -2712,8 +2710,6 @@ function init() {
         editorSubmitBtn,
         editorStatus,
         editorNashville,
-        editorComment,
-        editCommentRow,
         hintsBtn,
         hintsPanel,
         hintsBackdrop,
