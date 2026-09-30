@@ -16,6 +16,7 @@ let eventQueue = [];
 let flushTimer = null;
 let currentSongViewStart = null;  // For tracking time on song
 let isInitialized = false;
+let retryNotBefore = 0;           // After a failed send, wait before trying again
 
 // ============================================
 // CORE FUNCTIONS
@@ -57,6 +58,8 @@ export function track(eventName, properties = {}) {
  */
 async function flush() {
     if (eventQueue.length === 0) return;
+    // A send just failed: do not hammer a broken endpoint once per tracked event.
+    if (Date.now() < retryNotBefore) return;
 
     // Grab current queue and reset
     const eventsToSend = [...eventQueue];
@@ -73,13 +76,19 @@ async function flush() {
         const supabase = window.SupabaseAuth._getClient();
         if (!supabase) return;
 
-        await supabase.rpc('log_events', {
+        // supabase.rpc() does not throw on a server error (a 404 for a missing
+        // relation, a 401, ...): it resolves { error }. Treat that as a failure
+        // too, or the re-queue below never runs and the batch is silently lost.
+        const { error } = await supabase.rpc('log_events', {
             p_visitor_id: visitorId,
             p_events: eventsToSend
         });
+        if (error) throw error;
+        retryNotBefore = 0;
     } catch (err) {
         // Silent fail - analytics should never break the app
         // Re-queue events on failure (with limit to prevent memory issues)
+        retryNotBefore = Date.now() + FLUSH_INTERVAL_MS;
         if (eventQueue.length < MAX_QUEUE_SIZE * 2) {
             eventQueue = [...eventsToSend, ...eventQueue];
         }
