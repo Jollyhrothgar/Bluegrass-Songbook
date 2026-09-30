@@ -27,9 +27,11 @@ import {
     abcIsPlaying, setAbcIsPlaying,
     abcPlaybackSession, incrementAbcPlaybackSession,
     // Navigation state
-    listContext, setListContext
+    listContext, setListContext,
+    allSongs
 } from './state.js';
-import { escapeHtml, safeUrl } from './utils.js';
+import { escapeHtml, safeUrl, parseItemRef } from './utils.js';
+import { prefetchSongContent } from './song-content.js';
 import {
     extractChords, detectKey,
     CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
@@ -621,6 +623,9 @@ export function updateNavBar() {
         navBarEl.classList.remove('hidden');
         navBarEl.classList.add('has-list-context');
 
+        // The next song is the likeliest next tap: have its chart in memory
+        // by the time the reader gets there.
+        prefetchNextInList(listContext);
     } else {
         // No list context: no nav bar
         navBarEl.classList.remove('has-list-context');
@@ -632,6 +637,19 @@ export function updateNavBar() {
 
     // Keep the body-level list-context flag in sync
     updateListContextClass();
+}
+
+/**
+ * Warm the ChordPro of the song after the current one in a list. A
+ * part-qualified item ("work/banjo") may open a tab instead of the lead
+ * sheet, so it is left alone. Exported for tests.
+ */
+export function prefetchNextInList(context) {
+    const next = context?.songIds?.[context.currentIndex + 1];
+    if (!next) return;
+    const { workId, partId } = parseItemRef(next);
+    if (partId) return;
+    prefetchSongContent(allSongs.find(s => s.id === workId));
 }
 
 /**

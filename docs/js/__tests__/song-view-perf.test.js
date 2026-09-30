@@ -1,5 +1,5 @@
 // song-view.js performance behaviours: markWrappedLines batches its layout
-// reads before its writes.
+// reads before its writes, and the list nav bar warms the next song's chart.
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 vi.mock('../lists.js', () => ({
@@ -21,11 +21,20 @@ vi.mock('../analytics.js', () => ({
 vi.mock('../flags.js', () => ({ openFlagModal: vi.fn() }));
 vi.mock('../work-view.js', () => ({ openWork: vi.fn() }));
 
-import { markWrappedLines } from '../song-view.js';
+const prefetch = vi.fn();
+vi.mock('../song-content.js', async (importOriginal) => ({
+    ...await importOriginal(),
+    prefetchSongContent: (...args) => prefetch(...args),
+}));
+
+import { markWrappedLines, prefetchNextInList } from '../song-view.js';
+import { allSongs } from '../state.js';
 
 afterEach(() => {
     document.body.innerHTML = '';
     vi.restoreAllMocks();
+    prefetch.mockClear();
+    allSongs.length = 0;
 });
 
 describe('markWrappedLines', () => {
@@ -83,5 +92,33 @@ describe('markWrappedLines', () => {
         document.body.innerHTML = '<div class="cl-line" id="empty"></div>';
         expect(() => markWrappedLines()).not.toThrow();
         expect(document.getElementById('empty').classList.contains('wrapped')).toBe(false);
+    });
+});
+
+describe('prefetchNextInList', () => {
+    const lean = (id) => ({ id, title: id, has_content: true });
+    beforeEach(() => { allSongs.push(lean('a'), lean('b'), lean('c')); });
+
+    it('warms the song after the current one', () => {
+        prefetchNextInList({ songIds: ['a', 'b', 'c'], currentIndex: 0 });
+        expect(prefetch).toHaveBeenCalledTimes(1);
+        expect(prefetch).toHaveBeenCalledWith(allSongs[1]);
+    });
+
+    it('does nothing on the last song', () => {
+        prefetchNextInList({ songIds: ['a', 'b', 'c'], currentIndex: 2 });
+        expect(prefetch).not.toHaveBeenCalled();
+    });
+
+    it('leaves part-qualified items alone (they may open a tab)', () => {
+        prefetchNextInList({ songIds: ['a', 'b/banjo'], currentIndex: 0 });
+        expect(prefetch).not.toHaveBeenCalled();
+    });
+
+    it('tolerates an unknown id and a missing context', () => {
+        prefetchNextInList({ songIds: ['a', 'zzz'], currentIndex: 0 });
+        expect(prefetch).toHaveBeenCalledWith(undefined);   // prefetchSongContent ignores it
+        prefetchNextInList(null);
+        prefetchNextInList({ songIds: [], currentIndex: 0 });
     });
 });
