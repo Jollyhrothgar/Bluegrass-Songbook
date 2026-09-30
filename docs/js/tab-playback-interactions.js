@@ -13,7 +13,7 @@
 // compact "Repeats" view (display measures are WRITTEN measures — we
 // map to their first pass in the reading list).
 
-import { positionFromSvgPoint } from './otf-editor/cursor.js';
+import { positionFromSvgPoint } from './renderers/tab-hit-test.js';
 
 /** Playback tick for a point in a display measure. Null when the
  *  written measure never plays (not in the reading list). */
