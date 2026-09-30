@@ -25,6 +25,7 @@ docs/
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
 │   ├── tags.js         # Tag dropdown, filtering, virtual instrument tags/facets
 │   ├── title-match.js  # Song-title normalization (bounty board dedupe)
+│   ├── work-suggest.js # Not-found recovery: redirect deleted duplicates / suggest same-title works
 │   ├── lists.js        # User lists, favorites, multi-owner, Thunderdome
 │   ├── list-picker.js  # List picker popup component
 │   ├── editor.js       # Song editor (Raw tab), re-exports smart-paste pipeline

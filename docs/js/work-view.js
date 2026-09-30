@@ -24,6 +24,7 @@ import {
 } from './state.js';
 
 import { deleteAffordance } from './review-queue.js';
+import { findSurvivors, loadDeletedSongs } from './work-suggest.js';
 
 import {
     goBack,
@@ -542,6 +543,15 @@ export async function openWork(workId, options = {}) {
     } = options;
 
     if (!song) {
+        // A work deleted as a duplicate may have a surviving twin
+        const { redirect, suggestions } = findSurvivors(
+            workId, allSongs, await loadDeletedSongs());
+        if (redirect) {
+            if (!fromList && !fromHistory) {
+                history.replaceState({ view: 'song', songId: redirect.id }, '', `#work/${redirect.id}`);
+            }
+            return openWork(redirect.id, { ...options, fromDeepLink: true, exact: true });
+        }
         // Real error state with a way out, not a dead-end spinner
         console.error(`Work not found: ${workId}`);
         teardownTablatureView();   // entering the song view owns its teardown
@@ -552,6 +562,10 @@ export async function openWork(workId, options = {}) {
                 <div class="not-found">
                     <p>Song not found: "${escapeHtml(workId)}"</p>
                     <p>It may have been renamed or removed.</p>
+                    ${suggestions.length ? `<p>Did you mean:</p>
+                    <ul class="not-found-suggestions">${suggestions.map(s => `
+                        <li><span>${escapeHtml(s.title)}${s.artist ? ` \u2014 ${escapeHtml(s.artist)}` : ''}</span>
+                        <a href="#work/${escapeHtml(s.id)}" class="not-found-open-btn">Open</a></li>`).join('')}</ul>` : ''}
                     <a href="#search" class="not-found-home-link">Browse all songs</a>
                 </div>`;
         }
