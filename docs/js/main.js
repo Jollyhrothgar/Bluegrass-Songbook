@@ -54,7 +54,10 @@ import { renderBountyView } from './bounty-view.js';
 import { renderMySubmissionsView } from './my-submissions.js';
 import { renderHighScoresView } from './high-scores.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
-import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
+import {
+    initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView,
+    editorHasUnsavedChanges, editorSessionInfo, promptUnsavedChanges, closeUnsavedPrompt, unsavedPromptOpen
+} from './editor.js';
 import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill, setBanner } from './shell.js';
@@ -377,11 +380,35 @@ function showView(mode) {
     setCurrentView(mode);
 }
 
+/**
+ * The editor was navigated away from with edits that were never submitted
+ * (hash change, Back, a link). The navigation has already happened, so the
+ * prompt sits over the new view; "Keep editing" routes straight back to the
+ * editor, whose state exitEditMode() has deliberately not been allowed to
+ * touch yet.
+ */
+async function guardEditorExit() {
+    const { isEdit, songId } = editorSessionInfo();
+    const choice = await promptUnsavedChanges();
+    if (choice === 'keep') {
+        if (isEdit) pushHistoryState('edit', { songId });
+        else pushHistoryState('add-song');
+        showView('add-song');
+    } else if (choice === 'discard') {
+        exitEditMode();
+    }
+    // 'cancelled': the user came back to the editor some other way
+}
+
 // Subscribe to view changes and update DOM accordingly
 function initViewSubscription() {
     const searchContainer = document.querySelector('.search-container');
+    let previousView = null;
 
     subscribe('currentView', (view) => {
+        const leftEditor = previousView === 'add-song' && view !== 'add-song';
+        previousView = view;
+
         // Tear down live tablature state when LEAVING the song page: stops
         // audio (including an in-flight soundfont load), destroys the edit
         // session and renderer observers.
@@ -409,9 +436,17 @@ function initViewSubscription() {
         // Close any open editor hints panel
         closeHints();
 
-        // Exit edit mode when navigating away from the editor
+        // Exit edit mode when navigating away from the editor — unless there
+        // are unsubmitted edits, in which case ask first (and leave the
+        // editor's state alone until the answer).
         if (view !== 'add-song') {
-            exitEditMode();
+            if (leftEditor && editorHasUnsavedChanges()) {
+                guardEditorExit();
+            } else if (!unsavedPromptOpen()) {
+                exitEditMode();
+            }
+        } else {
+            closeUnsavedPrompt();
         }
 
         // The review queue sits above the results list, so it belongs to the

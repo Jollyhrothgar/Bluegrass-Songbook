@@ -5,7 +5,8 @@ import {
     currentSong,
     editMode, setEditMode,
     editingSongId, setEditingSongId,
-    editorNashvilleMode, setEditorNashvilleMode
+    editorNashvilleMode, setEditorNashvilleMode,
+    setCurrentView
 } from './state.js';
 import { generateSlug, requireLogin } from './utils.js';
 import { getSongContent, primeSongContent } from './song-content.js';
@@ -186,17 +187,16 @@ export async function enterEditMode(song, options = {}) {
     refreshOwnershipChrome();
     refreshTrustedStatus();
 
-    // Switch to editor panel (update nav state)
-    [navSearchEl, navAddSongEl, navFavoritesEl].forEach(btn => {
-        if (btn) btn.classList.remove('active');
-    });
-    if (navAddSongEl) navAddSongEl.classList.add('active');
+    // What "unsaved" is measured against, taken before anything is restored
+    // over the top of it (a sign-in round trip puts the user's edits back).
+    markEditorClean();
 
-    const searchContainer = document.querySelector('.search-container');
-    if (searchContainer) searchContainer.classList.add('hidden');
-    if (resultsDivEl) resultsDivEl.classList.add('hidden');
-    if (songViewEl) songViewEl.classList.add('hidden');
-    if (editorPanelEl) editorPanelEl.classList.remove('hidden');
+    // Show the editor THROUGH the view state machine, like every other view.
+    // Hiding the song page by hand left app state saying "song page", so a
+    // later navigation to another song was a no-op for the state (same value)
+    // and the editor stayed on screen under the new URL. The currentView
+    // subscriber in main.js owns showing/hiding every panel.
+    setCurrentView('add-song');
 
     // Push history state (unless coming from history navigation or deep link)
     if (!fromHistory && !fromDeepLink) {
@@ -252,9 +252,150 @@ export function resetEditorForNewSong() {
 
     updateMetadataSummary();
     setMetadataExpanded(false);
+    markEditorClean();
 
     updateEditorChrome();
     if (preview) preview.reset();
+}
+
+// ---------------------------------------------------------------------------
+// Unsaved changes
+// ---------------------------------------------------------------------------
+
+// What the editor held when it was opened (or last saved). "Unsaved" means
+// the fields differ from this.
+let editorBaseline = { title: '', artist: '', writer: '', content: '' };
+
+function readEditorFields() {
+    return {
+        title: (editorTitleEl?.value || '').trim(),
+        artist: (editorArtistEl?.value || '').trim(),
+        writer: (editorWriterEl?.value || '').trim(),
+        content: editorContentEl?.value || '',
+    };
+}
+
+/** Treat what is in the editor right now as saved (opened, reset, submitted). */
+function markEditorClean() {
+    editorBaseline = readEditorFields();
+}
+
+/** Does the editor hold edits that were neither submitted nor opened that way? */
+export function editorHasUnsavedChanges() {
+    const now = readEditorFields();
+    return now.title !== editorBaseline.title
+        || now.artist !== editorBaseline.artist
+        || now.writer !== editorBaseline.writer
+        || now.content !== editorBaseline.content;
+}
+
+/** Which session is open, for routing back to it: `{ isEdit, songId }`. */
+export function editorSessionInfo() {
+    return { isEdit: !!(editMode && editingSongId), songId: editingSongId || null };
+}
+
+let unsavedPromptResolve = null;
+
+/** Is the leave-the-editor prompt on screen? */
+export function unsavedPromptOpen() {
+    return unsavedPromptResolve !== null;
+}
+
+/**
+ * Dismiss the leave prompt without choosing (something else already decided —
+ * the user came back to the editor by Back/Forward).
+ */
+export function closeUnsavedPrompt() {
+    if (unsavedPromptResolve) unsavedPromptResolve('cancelled');
+}
+
+/**
+ * Ask, in the page, whether to leave the editor with unsaved edits. Never
+ * window.confirm: a native dialog cannot be styled, is not in the DOM (so no
+ * test can drive it) and steals focus back from the textarea on iOS.
+ *
+ * The navigation has already happened by the time this runs (hash change,
+ * Back, a click on a link), so "Keep editing" routes back here; the editor's
+ * own state was left untouched while the prompt is up.
+ *
+ * Resolves `'keep' | 'discard' | 'cancelled'`. Exported for tests.
+ */
+export function promptUnsavedChanges() {
+    closeUnsavedPrompt();
+    return new Promise(resolve => {
+        const { isEdit } = editorSessionInfo();
+        const title = (editorTitleEl?.value || '').trim();
+
+        document.getElementById('editor-leave-modal')?.remove();
+        const modal = document.createElement('div');
+        modal.id = 'editor-leave-modal';
+        modal.className = 'modal';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+
+        const header = document.createElement('div');
+        header.className = 'modal-header';
+        const heading = document.createElement('h2');
+        heading.textContent = isEdit ? 'Discard your changes?' : 'Leave without submitting?';
+        header.appendChild(heading);
+
+        const body = document.createElement('div');
+        body.className = 'modal-body';
+        const lead = document.createElement('p');
+        lead.className = 'dedup-offramp-lead';
+        const name = title ? `\u201c${title}\u201d` : 'this song';
+        lead.textContent = isEdit
+            ? `You have edited ${name} but not submitted it. Leaving now throws those edits away.`
+            : `${name === 'this song' ? 'Your new song' : name} has not been submitted. `
+                + 'It stays here while this tab is open, but it will not survive a reload.';
+        body.appendChild(lead);
+
+        // The choice buttons borrow the dedup offramp's stacked-button styling.
+        const choices = document.createElement('div');
+        choices.className = 'dedup-offramp-choices';
+        const make = (id, label, primary) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'dedup-offramp-choice'
+                + (primary ? ' dedup-offramp-choice-primary' : '');
+            button.dataset.choice = id;
+            const text = document.createElement('span');
+            text.className = 'dedup-offramp-choice-label';
+            text.textContent = label;
+            button.appendChild(text);
+            return button;
+        };
+        choices.append(
+            make('keep', 'Keep editing', true),
+            make('discard', isEdit ? 'Discard changes' : 'Leave', false),
+        );
+        body.appendChild(choices);
+
+        const content = document.createElement('div');
+        content.className = 'modal-content dedup-offramp-content';
+        content.append(header, body);
+        modal.appendChild(content);
+        document.body.appendChild(modal);
+
+        const finish = (choice) => {
+            if (!unsavedPromptResolve) return;
+            unsavedPromptResolve = null;
+            document.removeEventListener('keydown', onKey);
+            modal.remove();
+            resolve(choice);
+        };
+        const onKey = (e) => { if (e.key === 'Escape') finish('keep'); };
+        unsavedPromptResolve = finish;
+
+        choices.addEventListener('click', (e) => {
+            const button = e.target.closest('[data-choice]');
+            if (button) finish(button.dataset.choice);
+        });
+        modal.addEventListener('click', (e) => { if (e.target === modal) finish('keep'); });
+        document.addEventListener('keydown', onKey);
+
+        choices.querySelector('[data-choice="keep"]')?.focus();
+    });
 }
 
 /**
@@ -1254,6 +1395,10 @@ async function submitSong(data) {
         if (pendingEntry.replaces_id) {
             primeSongContent(pendingEntry.replaces_id, pendingEntry.content || '');
         }
+
+        // Submitted: what is on screen is now what is saved, so leaving for
+        // the song page below must not ask "discard your changes?"
+        markEditorClean();
 
         // Refresh the song index to include our new pending song, then navigate
         if (window.refreshPendingSongs) {

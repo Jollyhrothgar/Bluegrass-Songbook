@@ -440,6 +440,16 @@ Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
 - `editorConvertToChordPro()` - Smart paste: chord-above-lyrics → ChordPro
 - `updateEditorPreview()` - Refresh chrome (key/toolbar) + re-render preview
+- **The editor is a view, entered through `currentView`.** `enterEditMode`
+  calls `setCurrentView('add-song')`; it does not hide the song page by hand
+  (that left state saying "song", so navigating to another song was a no-op
+  for state and the editor stayed on screen). Leaving with unsubmitted edits
+  (`editorHasUnsavedChanges()` — fields vs the baseline taken at open/reset/
+  submit) shows an in-page prompt (`promptUnsavedChanges`, `#editor-leave-modal`,
+  never `window.confirm`). The navigation has already happened by then, so the
+  `currentView` subscriber in main.js (`guardEditorExit`) defers
+  `exitEditMode()` until the answer: "Keep editing" pushes the editor route
+  back and re-shows the view with the editor state untouched.
 - Ownership wording mirrors the server (`pending-dispatch.ts`): the chart's
   submitter AND trusted users update in place (button "Submit Correction";
   trusted users see a one-line notice saying so), everyone else forks
