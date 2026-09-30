@@ -907,7 +907,7 @@ function practiceLineHtml() {
     const links = practiceLinks(currentWork, currentDetectedKey);
     if (!links.length) return '';
     return `<div class="song-practice-line"><span class="song-practice-label">Practice:</span> ${
-        links.map(l => `<a href="${escapeHtml(l.href)}" target="_blank" rel="noopener" data-practice="${l.id}">${l.label}</a>`).join(' · ')
+        links.map(l => `<a href="${escapeAttr(l.href)}" target="_blank" rel="noopener" data-practice="${l.id}">${l.label}</a>`).join(' · ')
     }</div>`;
 }
 
