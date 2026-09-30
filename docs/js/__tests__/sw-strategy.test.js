@@ -9,15 +9,19 @@ import { resolve } from 'path';
 import {
     CACHE_NAMES,
     CACHE_VERSION,
+    FRESH_NETWORK_WINDOW_MS,
     NETWORK_TIMEOUT_MS,
     PRECACHE_URLS,
     SLOW_NETWORK_WINDOW_MS,
     STRATEGIES,
+    freshNetworkActive,
     isOurCache,
     networkFirstWithTimeout,
     routeFor,
+    shellPolicy,
     slowNetworkActive,
     staleCaches,
+    startsFreshWindow,
     wantsFreshNetwork,
 } from '../sw-strategy.js';
 
@@ -233,6 +237,16 @@ describe('sw.js', () => {
         expect(sw).toContain('wantsFreshNetwork');
     });
 
+    it('decides per load through shellPolicy and records both latches', () => {
+        expect(sw).toContain('shellPolicy');
+        expect(sw).toMatch(/slowSince\s*=\s*Date\.now\(\)/);
+        expect(sw).toMatch(/freshSince\s*=\s*Date\.now\(\)/);
+        // an in-flight request re-checks the fresh latch before giving up
+        expect(sw).toMatch(/freshNetworkActive\(freshSince\)/);
+        // a new navigation is a new page load: the fresh latch starts over
+        expect(sw).toMatch(/mode === 'navigate'\) freshSince = null/);
+    });
+
     it('precaches only the shell, not the module graph', () => {
         expect(PRECACHE_URLS.length).toBeLessThanOrEqual(6);
         expect(PRECACHE_URLS).toContain('./index.html');
@@ -387,6 +401,109 @@ describe('slow-network latch', () => {
 
     it('does not outlast a page load by much (seconds, not minutes)', () => {
         expect(SLOW_NETWORK_WINDOW_MS).toBeLessThanOrEqual(30_000);
+    });
+});
+
+describe('fresh-network latch', () => {
+    it('is off until the network has answered', () => {
+        expect(freshNetworkActive(null, 1_000_000)).toBe(false);
+        expect(freshNetworkActive(undefined, 1_000_000)).toBe(false);
+    });
+
+    it('stays on for the window after a network answer, then expires', () => {
+        const t0 = 1_000_000;
+        expect(freshNetworkActive(t0, t0 + 1)).toBe(true);
+        expect(freshNetworkActive(t0, t0 + FRESH_NETWORK_WINDOW_MS - 1)).toBe(true);
+        expect(freshNetworkActive(t0, t0 + FRESH_NETWORK_WINDOW_MS)).toBe(false);
+    });
+
+    it('does not outlast a page load by much (seconds, not minutes)', () => {
+        expect(FRESH_NETWORK_WINDOW_MS).toBeLessThanOrEqual(30_000);
+    });
+});
+
+// One page load must be ONE generation of the app. shellPolicy is the whole
+// decision: sticky in both directions, so a deploy can never be served half
+// old (a stalled module from the cache next to modules the network already
+// delivered) or half new (the reverse).
+describe('shellPolicy', () => {
+    const t0 = 1_000_000;
+
+    it('times out normally when nothing has been decided yet', () => {
+        expect(shellPolicy({ now: t0 })).toBe('timeout');
+        expect(shellPolicy({ slowSince: null, freshSince: null, now: t0 })).toBe('timeout');
+        expect(shellPolicy()).toBe('timeout');
+    });
+
+    it('waits for the network once it has answered a shell request', () => {
+        expect(shellPolicy({ freshSince: t0, now: t0 + 500 })).toBe('wait');
+        expect(shellPolicy({ freshSince: t0, now: t0 + FRESH_NETWORK_WINDOW_MS - 1 })).toBe('wait');
+    });
+
+    it('prefers the cache once a request has timed out', () => {
+        expect(shellPolicy({ slowSince: t0, now: t0 + 500 })).toBe('prefer-cache');
+    });
+
+    it('goes back to the timeout when each window lapses', () => {
+        expect(shellPolicy({ freshSince: t0, now: t0 + FRESH_NETWORK_WINDOW_MS })).toBe('timeout');
+        expect(shellPolicy({ slowSince: t0, now: t0 + SLOW_NETWORK_WINDOW_MS })).toBe('timeout');
+    });
+
+    it('lets the slow latch win a tie: a request was already served old', () => {
+        expect(shellPolicy({ slowSince: t0, freshSince: t0 + 100, now: t0 + 200 })).toBe('prefer-cache');
+    });
+
+    it('falls through to the fresh latch when only the slow window has lapsed', () => {
+        const now = t0 + SLOW_NETWORK_WINDOW_MS + 1;
+        expect(shellPolicy({ slowSince: t0, freshSince: now - 10, now })).toBe('wait');
+    });
+});
+
+describe('startsFreshWindow', () => {
+    it('counts only ES-module answers: module generations are the hazard', () => {
+        expect(startsFreshWindow({ destination: 'script', mode: 'cors' })).toBe(true);
+        expect(startsFreshWindow({ destination: 'script', mode: 'no-cors' })).toBe(false);   // classic <script src>
+        expect(startsFreshWindow({ destination: 'style' })).toBe(false);
+        expect(startsFreshWindow({ destination: 'image' })).toBe(false);
+        expect(startsFreshWindow({ destination: '', mode: 'navigate' })).toBe(false);
+        expect(startsFreshWindow(undefined)).toBe(false);
+    });
+});
+
+describe('networkFirstWithTimeout — canAbandon', () => {
+    afterEach(() => vi.useRealTimers());
+
+    it('keeps waiting for the network when canAbandon says the network has proved itself', async () => {
+        vi.useFakeTimers();
+        let resolveNet;
+        const promise = new Promise((res) => { resolveNet = res; });
+        const lookup = vi.fn(async () => 'cached');
+        const out = networkFirstWithTimeout(promise, lookup, 1800, () => false);
+        await vi.advanceTimersByTimeAsync(10_000);
+        expect(lookup).not.toHaveBeenCalled();         // never fell back
+        resolveNet('fresh');
+        expect(await out).toEqual({ response: 'fresh', source: 'network', reason: null });
+    });
+
+    it('still serves the cache on a network ERROR even when it may not time out', async () => {
+        vi.useFakeTimers();
+        let rejectNet;
+        const promise = new Promise((_, rej) => { rejectNet = rej; });
+        const out = networkFirstWithTimeout(promise, async () => 'cached', 1800, () => false);
+        rejectNet(new Error('offline'));
+        expect(await out).toEqual({ response: 'cached', source: 'cache', reason: 'error' });
+    });
+
+    it('is asked when the timer fires, not when the request starts', async () => {
+        vi.useFakeTimers();
+        let allowed = true;
+        let resolveNet;
+        const promise = new Promise((res) => { resolveNet = res; });
+        const out = networkFirstWithTimeout(promise, async () => 'cached', 1800, () => allowed);
+        allowed = false;                               // the network proved itself in the meantime
+        await vi.advanceTimersByTimeAsync(2000);
+        resolveNet('fresh');
+        expect((await out).source).toBe('network');
     });
 });
 

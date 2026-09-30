@@ -90,13 +90,35 @@ test.describe('service worker', () => {
 const APP_PORT = Number(process.env.PW_PORT) || 8137;
 
 async function startSlowProxy() {
-    const state = { delayMs: 0, slowPath: /^\/js\/main\.js/ };
+    // `generation` simulates deploys: when set, every app module under /js/
+    // (except the worker's own strategy file, which would make the browser
+    // see a new worker) gets a line appended recording which generation
+    // served it, and every response is `no-cache` so the worker's fetch()
+    // really reaches this server instead of the HTTP cache.
+    const state = { delayMs: 0, slowPath: /^\/js\/main\.js/, generation: null };
     const server = http.createServer((req, res) => {
         const delay = state.slowPath.test(req.url) ? state.delayMs : 0;
+        const path = req.url.split('?')[0];
+        const stamp = state.generation != null && /^\/js\/.+\.js$/.test(path) && path !== '/js/sw-strategy.js'
+            ? state.generation : null;
         setTimeout(() => {
+            const headers = { ...req.headers };
+            if (stamp != null) { delete headers['accept-encoding']; delete headers['if-none-match']; delete headers['if-modified-since']; }
             const upstream = http.request(
-                { host: 'localhost', port: APP_PORT, path: req.url, method: req.method, headers: req.headers },
-                (up) => { res.writeHead(up.statusCode, up.headers); up.pipe(res); });
+                { host: 'localhost', port: APP_PORT, path: req.url, method: req.method, headers },
+                (up) => {
+                    if (stamp == null) { res.writeHead(up.statusCode, up.headers); up.pipe(res); return; }
+                    const chunks = [];
+                    up.on('data', c => chunks.push(c));
+                    up.on('end', () => {
+                        const body = Buffer.concat(chunks).toString('utf8')
+                            + `\n;(globalThis.__gens ||= {})[${JSON.stringify(path)}] = ${stamp};\n`;
+                        const out = { ...up.headers, 'cache-control': 'no-cache' };
+                        delete out['content-length']; delete out.etag; delete out['last-modified'];
+                        res.writeHead(up.statusCode, out);
+                        res.end(body);
+                    });
+                });
             upstream.on('error', () => { res.statusCode = 502; res.end(); });
             req.pipe(upstream);
         }, delay);
@@ -149,6 +171,44 @@ test.describe('service worker — slow network', () => {
         await cdp.send('Page.reload', { ignoreCache: true });
         await expect(page.locator('#search-input')).toBeVisible({ timeout: 15000 });
         expect(Date.now() - started).toBeGreaterThanOrEqual(3900);
+    });
+
+    // A deploy changes dozens of modules at once and nothing is content-hashed,
+    // so an app load that mixes generations can import a name its (old)
+    // sibling does not export — a blank app. One stalled module after the
+    // network has already delivered new ones must be WAITED for, not filled
+    // in from the old cache.
+    test('after a deploy, one stalled module is waited for so the load stays on one generation', async ({ page }) => {
+        proxy.state.generation = 1;
+        await warm(page);                                      // the cache now holds generation 1
+        proxy.state.generation = 2;                            // "deploy"
+        proxy.state.slowPath = /^\/js\/state\.js/;              // a non-entry module stalls past the timeout
+        proxy.state.delayMs = 4000;
+
+        const started = Date.now();
+        await page.goto(`${proxy.origin}/?deploy=1#search`);
+        await expect(page.locator('#search-input')).toBeVisible({ timeout: 20000 });
+        expect(Date.now() - started).toBeGreaterThanOrEqual(3900);   // it waited for the network
+        const gens = await page.evaluate(() => ({ ...globalThis.__gens }));
+        expect(Object.keys(gens)).toContain('/js/main.js');
+        expect(Object.keys(gens)).toContain('/js/state.js');
+        expect([...new Set(Object.values(gens))]).toEqual([2]);
+    });
+
+    test('a stalled entry module (nothing answered yet) falls back to the cache and the load stays on the old generation', async ({ page }) => {
+        proxy.state.generation = 1;
+        await warm(page);
+        proxy.state.generation = 2;
+        proxy.state.delayMs = 8000;                            // the entry module (main.js) stalls
+
+        await page.goto(`${proxy.origin}/?deploy=2#search`);
+        await expect(page.locator('#search-input')).toBeVisible({ timeout: 7000 });
+        const gens = await page.evaluate(() => ({ ...globalThis.__gens }));
+        // (A module the warm-up never loaded is not in the cache and has to
+        // come from the network — that one is new and unavoidable.)
+        expect(gens['/js/main.js']).toBe(1);
+        expect(gens['/js/state.js']).toBe(1);
+        expect(gens['/js/work-view.js']).toBe(1);
     });
 
     test('with nothing cached, a slow script is waited for, not abandoned', async ({ page }) => {

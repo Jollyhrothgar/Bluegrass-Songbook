@@ -543,7 +543,7 @@ mechanical shell around it, which is why the table is unit-tested
 
 | Request | Strategy | Cache | Why |
 |---|---|---|---|
-| Navigations, same-origin `.html` / `.js` / `.css` (and any other same-origin GET) | **network-first, ~1.8s timeout** | `bgb-shell-<ver>` | Nothing here is content-hashed. Network-first means a deploy is live on the next load and a stale module is impossible while the network is healthy. The cache answers when the network fails, or has not answered in `NETWORK_TIMEOUT_MS` **and a cached copy exists** (with nothing cached the request keeps waiting). Navigation preload is on. See below for why this is not stale-while-revalidate. |
+| Navigations, same-origin `.html` / `.js` / `.css` (and any other same-origin GET) | **network-first, ~1.8s timeout** | `bgb-shell-<ver>` | Nothing here is content-hashed. Network-first means a deploy is picked up on the next load (within the `max-age=600` HTTP-cache window GitHub Pages sends; a hard reload skips it) and, while the network is healthy, modules are not served stale. The cache answers when the network fails, or has not answered in `NETWORK_TIMEOUT_MS` **and a cached copy exists** (with nothing cached the request keeps waiting). Navigation preload is on. See below for why this is not stale-while-revalidate. |
 | `docs/data/*.jsonl`, `docs/data/**.json` (incl. `data/tabs/*.json`), `docs/data/songs/*.pro` | **stale-while-revalidate** | `bgb-data-<ver>` | Rebuilt by every deploy (`build.yml` runs `build_works_index.py` then uploads `docs/`), and big. Paint instantly, refresh behind, fresh next visit. **Never** cached as immutable. The background refresh sends `cache: 'no-cache'` (a conditional request, 304 when unchanged) so GitHub Pages' `max-age=600` cannot keep the cache a deploy behind. A song page blocks on its `.pro`, so this is what makes a repeat open instant. |
 | `surikov.github.io/*` (WebAudioFont player + soundfonts), `cdn.jsdelivr.net/**/bravura/**` | **cache-first** | `bgb-vendor-<ver>` | Immutable third-party assets. Opaque responses are cached deliberately — we only replay them. |
 | `*.supabase.co`, any non-GET, other third parties (analytics, the abcjs / supabase-js CDN bundles), non-http schemes | **bypass** | — | Not ours. No `respondWith`, so the request is untouched. |
@@ -556,15 +556,30 @@ There is no build step and no content hashing, so one deploy changes dozens of
 ES modules at once. SWR would serve the old copy of each cached module and the
 new copy of the rest on the load after a deploy; a module importing a name its
 (old) sibling does not export is a hard failure — a blank app for a returning
-user. Network-first keeps "a deploy is live on the next load" and only gives it
-up on a link too slow to be getting anything done. Two further rules keep that
-give-up consistent:
+user. Network-first picks a deploy up on the next load (the worker's `fetch()` goes
+through the HTTP cache, and GitHub Pages sends `max-age=600`, so "next load"
+can be up to ten minutes after a deploy; this predates the timeout) and only
+gives that up on a link too slow to be getting anything done. The give-up is
+made **sticky in both directions** (`shellPolicy()`), so one page load is one
+generation of the app instead of a mix:
 
-- **Slow-network latch** (`slowNetworkActive`): once one shell request has
+- **Slow latch** (`slowSince`, `slowNetworkActive`): once one shell request has
   timed out to the cache, every shell request prefers its cached copy
-  (refreshing behind) for `SLOW_NETWORK_WINDOW_MS` (15s), so one page load
-  stays on ONE generation of the app instead of an old `main.js` with a new
-  `work-view.js`.
+  (refreshing behind) for `SLOW_NETWORK_WINDOW_MS` (15s), so the load stays on
+  the OLD generation instead of an old `main.js` with a new `work-view.js`.
+- **Fresh latch** (`freshSince`, `freshNetworkActive`): once any ES-module
+  request (`startsFreshWindow`: destination `script`, mode `cors`) has been
+  answered BY THE NETWORK, every shell request waits for the network (timeout
+  0; the cache answers only on a network error) for `FRESH_NETWORK_WINDOW_MS`
+  (15s), so a module that stalls after a deploy is waited for rather than
+  filled in from the old cache beside modules that arrived new (an export that
+  moved between modules would be a blank app). Requests already in flight
+  re-check it when their timer fires (`canAbandon`). The window is anchored at
+  the first answer, not slid, and a navigation resets it (a new page load);
+  stylesheets, classic scripts and the page itself do not start it, so a
+  stalled ENTRY module still times out to the cache.
+- The slow latch wins a tie: a request already served old means the rest of
+  the load must be old too.
 - **A hard reload waits** (`wantsFreshNetwork`): `cache: 'reload'` /
   `'no-store'` requests (Shift-reload, "empty cache and hard reload") never
   fall back on a timeout — the reader asked for the network. This is also the
@@ -581,6 +596,11 @@ network. Otherwise GitHub Pages' `max-age=600` could pair a new `sw.js` with a
 ten-minute-old `sw-strategy.js` that lacks a name it imports; that fails to
 install (the old worker stays, nobody is stranded) but stalls the update.
 
+**Residual mix (unfixable without content hashing):** a module the cache has
+never held (a lazy import not yet visited, or a file a deploy ADDED) has to
+come from the network even during the slow latch, so it is new beside old
+siblings. Rare (lazy modules are leaf features), and a hard reload fixes it.
+
 **Gotcha:** the very first visit's own requests predate the worker's control
 (`clients.claim()` lands after they are issued), so they are not in its cache;
 the SECOND online load fills it. Offline support starts on the second visit.
@@ -588,7 +608,7 @@ the SECOND online load fills it. Offline support starts on the second visit.
 ### How a deploy invalidates the caches
 
 It doesn't have to, and that is the point. Network-first re-fetches app code
-on the next load, and stale-while-revalidate refreshes corpus data one visit
+on the next load (HTTP-cache `max-age` permitting), and stale-while-revalidate refreshes corpus data one visit
 behind — so shipping new JS, CSS or a rebuilt `index.jsonl` needs **no cache
 bump at all**.
 
@@ -719,7 +739,7 @@ mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
 - `search-core.test.js` - Query parsing, chord/progression filtering
 - `song-view.test.js` - ChordPro parsing
 - `song-content.test.js` - Content on demand: cache, dedupe, legacy fallback, prefetch
-- `sw-strategy.test.js` - Service-worker routing table, network-first timeout, slow-network latch
+- `sw-strategy.test.js` - Service-worker routing table, network-first timeout, slow/fresh latches (`shellPolicy`)
 - `tablature-bravura.test.js` - Pinned font, redraw-only-when-needed
 - `song-view-perf.test.js` - Batched wrapped-line measuring, next-in-list prefetch
 - `corpus.test.js` - Canon + archive + pending merge, archive gating

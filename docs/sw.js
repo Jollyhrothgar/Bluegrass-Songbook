@@ -16,7 +16,9 @@ import {
     STRATEGIES,
     networkFirstWithTimeout,
     routeFor,
-    slowNetworkActive,
+    shellPolicy,
+    startsFreshWindow,
+    freshNetworkActive,
     staleCaches,
     wantsFreshNetwork,
 } from './js/sw-strategy.js';
@@ -26,6 +28,12 @@ const ORIGIN = self.location.origin;
 /** When a shell request last gave up on the network for the cache (ms epoch),
  *  or null. Worker-global on purpose: one slow link, one answer. */
 let slowSince = null;
+
+/** When a shell ES module was last answered by the network (ms epoch), or null.
+ *  The mirror of slowSince: while it is fresh the rest of the page load waits
+ *  for the network too, so a stalled module is never served old beside
+ *  modules that arrived new. */
+let freshSince = null;
 
 self.addEventListener('install', (event) => {
     // Individually, so one 404 in the list cannot fail the whole install.
@@ -78,18 +86,26 @@ self.addEventListener('fetch', (event) => {
     const { strategy, cache, timeoutMs } = routeFor(event.request, { origin: ORIGIN });
     if (strategy === STRATEGIES.BYPASS) return;   // no respondWith == untouched
 
+    // A navigation starts a new page load, and "the network has delivered
+    // this load's modules" is a per-load fact: forget it, so a stall on the
+    // new load's entry module still gets the timeout. (The slow latch is
+    // deliberately NOT reset: a link that just timed out is still slow.)
+    if (event.request.mode === 'navigate') freshSince = null;
+
     if (strategy === STRATEGIES.CACHE_FIRST) {
         event.respondWith(cacheFirst(event.request, cache));
     } else if (strategy === STRATEGIES.STALE_WHILE_REVALIDATE) {
         event.respondWith(staleWhileRevalidate(event, cache));
-    } else if (!wantsFreshNetwork(event.request) && slowNetworkActive(slowSince)) {
+    } else if (!wantsFreshNetwork(event.request) && shellPolicy({ slowSince, freshSince }) === 'prefer-cache') {
         // The network was just too slow to wait on: stay on the cached
         // generation of the app for this page load (see sw-strategy.js).
         event.respondWith(staleWhileRevalidate(event, cache));
     } else {
-        // A hard reload asks for the network, so it waits for it.
-        event.respondWith(networkFirst(event, cache,
-            wantsFreshNetwork(event.request) ? 0 : timeoutMs));
+        // A hard reload asks for the network, so it waits for it; so does a
+        // load that the network has already started answering.
+        const patient = wantsFreshNetwork(event.request)
+            || shellPolicy({ slowSince, freshSince }) === 'wait';
+        event.respondWith(networkFirst(event, cache, patient ? 0 : timeoutMs));
     }
 });
 
@@ -127,9 +143,19 @@ async function networkFirst(event, cacheName, timeoutMs) {
     event.waitUntil(network.catch(() => {}));
 
     try {
-        const { response, reason } = await networkFirstWithTimeout(
-            network, () => caches.match(request), timeoutMs);
+        // A request already in flight when the network proves itself (another
+        // shell request answered) must not abandon it for the old copy later.
+        const { response, source, reason } = await networkFirstWithTimeout(
+            network, () => caches.match(request), timeoutMs,
+            () => !freshNetworkActive(freshSince));
         if (reason === 'timeout') slowSince = Date.now();
+        // Only the first decision of a load counts: if a timeout already
+        // latched the old generation, a straggler's network answer must not
+        // flip the rest of the load to the new one. And the window is
+        // anchored at the first answer, not slid by later ones, so a network
+        // that degrades mid-session still gets the timeout once it lapses.
+        else if (source === 'network' && startsFreshWindow(request) && shellPolicy({ slowSince }) !== 'prefer-cache'
+            && !freshNetworkActive(freshSince)) freshSince = Date.now();
         return response;
     } catch (err) {
         // A navigation with no cached page still deserves the app shell:
