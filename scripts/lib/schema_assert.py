@@ -93,6 +93,8 @@ _CREATE_FUNCTION = re.compile(
     re.S)
 _GRANT_FUNCTION = re.compile(
     r'^GRANT\s+(.+?)\s+ON FUNCTION "?public"?\."?([A-Za-z0-9_]+)"?.*?\bTO "?([A-Za-z0-9_]+)"?;')
+_REVOKE_PUBLIC_FUNCTION = re.compile(
+    r'^REVOKE\s+ALL\s+ON FUNCTION "?public"?\."?([A-Za-z0-9_]+)"?.*?\bFROM PUBLIC;')
 _CREATE_POLICY = re.compile(
     r'^CREATE POLICY "([^"]+)" ON "?public"?\."?([A-Za-z0-9_]+)"?(.*)$', re.S)
 
@@ -135,6 +137,7 @@ class Table:
 class Function:
     name: str
     header: str
+    body: str = ''
 
     @property
     def security_definer(self) -> bool:
@@ -151,6 +154,11 @@ class Schema:
     functions: dict[str, Function] = field(default_factory=dict)
     views: set[str] = field(default_factory=set)
     function_grants: dict[str, set[str]] = field(default_factory=dict)
+    # Functions the dump REVOKEs from PUBLIC. A function created in `public`
+    # is executable by PUBLIC unless that line exists, and pg_dump prints no
+    # GRANT for PUBLIC, so the only trace of "PUBLIC can run this" is the
+    # absence of the REVOKE.
+    function_public_revoked: set[str] = field(default_factory=set)
 
     def table(self, name: str) -> Optional[Table]:
         return self.tables.get(name)
@@ -273,10 +281,18 @@ def parse_dump(text: str) -> Schema:
 
     # --- functions ----------------------------------------------------------
     for fm in _CREATE_FUNCTION.finditer(text):
-        schema.functions[fm.group(1)] = Function(name=fm.group(1), header=fm.group(2))
+        # The body runs from the opening `$$` (or `$tag$`) to the matching
+        # close; the parser otherwise never reads it.
+        tail = text[fm.end() - 1:]
+        bm = re.match(r'(\$[A-Za-z_]*\$)(.*?)\1', tail, re.S)
+        schema.functions[fm.group(1)] = Function(
+            name=fm.group(1), header=fm.group(2), body=bm.group(2) if bm else '')
 
     # --- function grants ----------------------------------------------------
     for line in lines:
+        rm = _REVOKE_PUBLIC_FUNCTION.match(line)
+        if rm:
+            schema.function_public_revoked.add(rm.group(1))
         gm = _GRANT_FUNCTION.match(line)
         if gm:
             schema.function_grants.setdefault(gm.group(2), set()).add(gm.group(3))
@@ -415,6 +431,69 @@ def _function_granted(name: str, roles: tuple[str, ...]) -> Callable[[Schema], O
     return check
 
 
+_LIST_TABLES = ('user_lists', 'user_list_items', 'list_followers')
+
+
+def _list_reads_closed(schema: Schema) -> Optional[str]:
+    """Every list table: RLS on, at least one SELECT policy, and no read
+    policy that is `true` / has no qualifier / reaches anon or PUBLIC."""
+    problems = []
+    for name in _LIST_TABLES:
+        t = schema.table(name)
+        if t is None:
+            problems.append(f'table {name} does not exist')
+            continue
+        if not t.rls_enabled:
+            problems.append(f'RLS is NOT enabled on {name}')
+        readers = [p for p in t.policies if p.command in ('SELECT', 'ALL')]
+        if not any(p.command == 'SELECT' for p in readers):
+            problems.append(f'{name} has no SELECT policy (owners could not read their own lists)')
+        for p in readers:
+            using = (p.using or '').strip().strip('()').strip().lower()
+            if p.using is None or using == 'true':
+                problems.append(f'{name}: policy "{p.name}" ({p.command}) is USING ({p.using or "none"})')
+            elif set(p.roles) & {'public', 'anon'}:
+                problems.append(f'{name}: policy "{p.name}" ({p.command}) applies to {", ".join(p.roles)}')
+    return '; '.join(problems) or None
+
+
+def _function_not_callable_by(name: str, roles: tuple[str, ...],
+                              exact_params: Optional[str] = None) -> Callable[[Schema], Optional[str]]:
+    """The function exists, is not granted to `roles`, and is REVOKEd from
+    PUBLIC (whose default EXECUTE pg_dump never prints as a GRANT).
+    `exact_params`, when given, must be the whole parameter list."""
+    def check(schema: Schema) -> Optional[str]:
+        fn = schema.functions.get(name)
+        if fn is None:
+            return f'function {name}() does not exist'
+        if exact_params is not None:
+            params = re.match(r'\s*\((.*?)\)\s*RETURNS', fn.header, re.S)
+            declared = re.sub(r'\s+', ' ', params.group(1)).strip() if params else fn.header
+            if declared != exact_params:
+                return f'{name}({declared}) — expected {name}({exact_params})'
+        bad = sorted(set(roles) & schema.function_grants.get(name, set()))
+        if bad:
+            return f'{name}() is granted to {", ".join(bad)}'
+        if name not in schema.function_public_revoked:
+            return f'{name}() is not REVOKEd from PUBLIC, so every role can execute it'
+        return None
+    return check
+
+
+def _log_events_qualified(schema: Schema) -> Optional[str]:
+    fn = schema.functions.get('log_events')
+    if fn is None:
+        return 'function log_events() does not exist'
+    if not fn.security_definer:
+        return 'log_events() is NOT security definer'
+    if re.search(r"search_path\"?\s+TO\s+''", fn.header) is None and 'search_path=""' not in fn.header:
+        return 'log_events() no longer pins an empty search_path'
+    if 'public.analytics_events' not in fn.body.replace('"', ''):
+        return ('log_events() body does not name public.analytics_events; with an '
+                'empty search_path an unqualified table name raises 42P01')
+    return None
+
+
 def _relation_absent(name: str) -> Callable[[Schema], Optional[str]]:
     def check(schema: Schema) -> Optional[str]:
         if schema.has_relation(name):
@@ -538,6 +617,46 @@ INVARIANTS: list[Invariant] = [
              "rows can both forge its way onto the High Scores board and reset "
              "its own rate limit. Only the service role writes here."),
         check=_no_client_insert('submission_log'),
+    ),
+
+    # --- lists: who can read them, who can change ownership -----------------
+    Invariant(
+        key='lists.reads-closed',
+        what='user_lists / user_list_items / list_followers: RLS on, reads limited to signed-in owners and followers',
+        why=("item metadata holds users' private notes, and the anon key ships "
+             "in every page. A FOR SELECT USING (true) policy on any of the three "
+             "(20260109224000 created all three) lets anyone dump every list. "
+             "'Share by link' does not need it: docs/js/supabase-auth.js "
+             "fetchPublicList goes through get_public_list (SECURITY DEFINER)."),
+        check=_list_reads_closed,
+    ),
+    Invariant(
+        key='add_list_owner.locked',
+        what='add_list_owner() is executable by nobody but its owner',
+        why=("it appends ANY user id to ANY list's owners. The only caller is "
+             "claim_list_invite, which runs as the definer; docs/js never calls "
+             "it. Granted to a client role, any signed-in user can take over any "
+             "list."),
+        check=_function_not_callable_by('add_list_owner', ('anon', 'authenticated')),
+    ),
+    Invariant(
+        key='remove_list_owner.self-only',
+        what='remove_list_owner(p_list_id uuid) takes no user id and is not callable by anon',
+        why=("the old (p_list_id, p_user_id) form let any caller evict any owner, "
+             "and deleted a follower-less list with its last owner. Consumer: "
+             "leaveList() in docs/js/supabase-auth.js calls "
+             "rpc('remove_list_owner', { p_list_id })."),
+        check=_function_not_callable_by('remove_list_owner', ('anon',),
+                                        exact_params='"p_list_id" "uuid"'),
+    ),
+    Invariant(
+        key='log_events.qualified',
+        what='log_events() is SECURITY DEFINER, pins an empty search_path and qualifies public.analytics_events',
+        why=("20260107010000 emptied the search_path; the unqualified table name "
+             "then raised 42P01 on every call from 2026-01-07 and PostgREST "
+             "answered 404. Consumer: docs/js/analytics.js flush(). Nothing on "
+             "the client notices — supabase.rpc resolves { error }."),
+        check=_log_events_qualified,
     ),
 
     # --- retired objects stay retired ---------------------------------------

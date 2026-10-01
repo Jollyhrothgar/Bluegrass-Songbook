@@ -2101,7 +2101,8 @@ export async function showListView(listId) {
     const followedList = followedLists.find(l => l.id === listId);
     if (followedList) {
         setViewingListId(followedList.id);
-        renderListViewUI(followedList.name, followedList.songs || [], { isOwner: false, isFollower: true, isOrphaned: false, canClaim: false });
+        // A follower may claim a list whose owners have all left (server enforces the 30 days)
+        renderListViewUI(followedList.name, followedList.songs || [], { isOwner: false, isFollower: true, isOrphaned: !!followedList.isOrphaned, canClaim: !!followedList.isOrphaned });
         setCurrentView('list');
         if (pushHistoryStateFn) pushHistoryStateFn('list', { listId: followedList.id });
         return;
@@ -2122,10 +2123,10 @@ export async function showListView(listId) {
     // Show the public list
     setViewingListId(listId);
     setViewingPublicList(data);
-    renderListViewUI(data.list.name, data.list.songs || [], {
+    renderListViewUI(data.list.name, data.songs || [], {
         isOwner: data.isOwner || false,
         isFollower: data.isFollower || false,
-        isOrphaned: data.list.is_orphaned || false,
+        isOrphaned: data.isOrphaned || false,
         canClaim: data.canClaim || false
     });
     setCurrentView('list');
@@ -2400,13 +2401,10 @@ export async function fetchListData(listId) {
         return null;
     }
 
-    const currentUser = SupabaseAuth.getUser();
-    const isOwner = currentUser && data.list.user_id === currentUser.id;
-
     return {
         name: data.list.name,
         songs: data.songs,
-        isOwner
+        isOwner: data.isOwner
     };
 }
 
