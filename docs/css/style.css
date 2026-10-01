@@ -2318,6 +2318,23 @@ h1 {
     font-size: 0.85rem;
 }
 
+.section-comment,
+.song-comment {
+    color: var(--text-secondary);
+    font-style: italic;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-preformatted {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin: 0;
+    overflow-x: auto;
+    white-space: pre;
+}
+
 .section-repeat {
     color: var(--accent);
     font-style: italic;
