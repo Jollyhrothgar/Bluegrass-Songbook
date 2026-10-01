@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://ofmqlrnyldlmvggihogt.supabase.co" crossorigin>
     <title>Bluegrass Book</title>
     <link rel="icon" type="image/png" href="images/banjo.png">
     <link rel="apple-touch-icon" href="images/icon-192.png">
@@ -10,8 +12,21 @@
          theme colour follows the theme's --bg so the OS window chrome does
          not fight the page. -->
     <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#fafafa">
+    <!-- Theme before first paint: the saved choice wins, else the OS
+         preference. Keep in step with initTheme() in js/main.js. -->
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (t !== 'dark' && t !== 'light') {
+                t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', t);
+            document.querySelector('meta[name="theme-color"]')
+                .setAttribute('content', t === 'dark' ? '#000000' : '#fafafa');
+        })();
+    </script>
     <meta name="mobile-web-app-capable" content="yes">
     <!-- The apple- prefix is deprecated in Chromium but is still what older
          iOS Safari reads for "add to home screen" — keep both. -->
@@ -27,9 +42,8 @@
         gtag('config', 'G-WZL02N7DQ8');
     </script>
     <!-- Supabase SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <!-- ABCJS for ABC notation rendering -->
-    <script src="https://cdn.jsdelivr.net/npm/abcjs@6/dist/abcjs-basic-min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- abcjs (ABC notation) is loaded on demand by song-view.js loadAbcjs() -->
 </head>
 <body>
     <!-- Auth UI: relocated into the app top band by shell.js at init -->
@@ -770,7 +784,7 @@ This is the [G]chorus [D]part
         </div>
     </div>
 
-    <script src="js/supabase-auth.js"></script>
+    <script defer src="js/supabase-auth.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
 </html>

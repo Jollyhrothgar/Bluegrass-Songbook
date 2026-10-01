@@ -57,7 +57,7 @@ docs/
 │   ├── visual-editor/  # Two-pane editor: interactive preview + ChordPro model
 │   ├── otf-editor/     # Tablature editor
 │   └── __tests__/      # Vitest unit tests
-├── css/style.css       # Dark/light themes, responsive layout
+├── css/style.css       # Dark/light themes, responsive layout (theme is set pre-paint by an inline script in index.html head; initTheme/setTheme in main.js keep it and theme-color in step; abcjs is lazy-loaded by song-view.js loadAbcjs())
 ├── posts/              # Blog posts (markdown)
 └── data/
     ├── index.jsonl     # SEARCHABLE canon only, no ChordPro (`wc -l` it)

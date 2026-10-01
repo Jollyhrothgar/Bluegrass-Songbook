@@ -177,15 +177,32 @@ const searchTipsDropdown = document.getElementById('search-tips-dropdown');
 // THEME HANDLING
 // ============================================
 
+// The inline script at the top of index.html <head> applies the theme before
+// first paint; these keep it in step afterwards. Saved choice wins, else the OS.
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fafafa');
+}
+
+function savedTheme() {
+    try {
+        const saved = localStorage.getItem('theme');
+        return saved === 'dark' || saved === 'light' ? saved : null;
+    } catch { return null; }
+}
+
 function initTheme() {
-    const saved = localStorage.getItem('theme');
-    if (saved === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }
+    const mq = window.matchMedia?.('(prefers-color-scheme: dark)');
+    applyTheme(savedTheme() || (mq?.matches ? 'dark' : 'light'));
+    // With no saved choice, follow OS changes live
+    mq?.addEventListener?.('change', (e) => {
+        if (!savedTheme()) applyTheme(e.matches ? 'dark' : 'light');
+    });
 }
 
 function setTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
+    applyTheme(theme);
     localStorage.setItem('theme', theme);
 }
 

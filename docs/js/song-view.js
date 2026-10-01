@@ -76,18 +76,54 @@ function markWrappedLines() {
     }
 }
 
+const ABCJS_URL = 'https://cdn.jsdelivr.net/npm/abcjs@6/dist/abcjs-basic-min.js';
+let abcjsPromise = null;
+
 /**
- * Render ABC notation using ABCJS library
+ * Load abcjs on demand (only ~160 songs use ABC notation, and the library is
+ * ~500 KB). One cached promise: concurrent and repeat callers share a single
+ * script tag. A failed load clears the cache so the next call can retry.
+ * Resolves to the ABCJS global, or null if it could not be loaded.
  */
-function renderAbcNotation(abcContent, containerId) {
-    const container = document.getElementById(containerId);
-    if (!container) {
+export function loadAbcjs() {
+    if (typeof ABCJS !== 'undefined') return Promise.resolve(ABCJS);
+    if (abcjsPromise) return abcjsPromise;
+    abcjsPromise = new Promise((resolve) => {
+        const script = document.createElement('script');
+        script.src = ABCJS_URL;
+        script.async = true;
+        script.onload = () => {
+            if (typeof ABCJS === 'undefined') abcjsPromise = null;
+            resolve(typeof ABCJS === 'undefined' ? null : ABCJS);
+        };
+        script.onerror = () => {
+            abcjsPromise = null;
+            script.remove();
+            resolve(null);
+        };
+        document.head.appendChild(script);
+    });
+    return abcjsPromise;
+}
+
+/**
+ * Render ABC notation using ABCJS library (loaded on demand).
+ * Returns a promise so callers can run follow-up setup once it has rendered.
+ */
+async function renderAbcNotation(abcContent, containerId) {
+    if (!document.getElementById(containerId)) {
         console.warn('ABC container not found:', containerId);
         return;
     }
 
     // Store content for re-rendering when settings change
     setCurrentAbcContent(abcContent);
+
+    await loadAbcjs();
+
+    // The view may have changed while the library was loading
+    const container = document.getElementById(containerId);
+    if (!container) return;
 
     // Check if ABCJS is loaded
     if (typeof ABCJS === 'undefined') {
@@ -447,8 +483,7 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
     if (showAbcView) {
         setBottomBand(buildAbcBandControls());
         setTimeout(() => {
-            renderAbcNotation(abcContent, 'abc-notation');
-            setupAbcPlayback();
+            renderAbcNotation(abcContent, 'abc-notation').then(setupAbcPlayback);
         }, 0);
     } else {
         stopAbcPlayback();
@@ -495,8 +530,7 @@ function buildAbcBandControls() {
     const sizeIncrease = el.querySelector('#abc-size-increase');
     const rerenderAbc = () => {
         if (currentAbcContent) {
-            renderAbcNotation(currentAbcContent, 'abc-notation');
-            setupAbcPlayback();
+            renderAbcNotation(currentAbcContent, 'abc-notation').then(setupAbcPlayback);
         }
     };
     const updateSizeButtons = () => {
