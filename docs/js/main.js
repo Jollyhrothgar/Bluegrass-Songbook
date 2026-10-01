@@ -51,20 +51,10 @@ import {
     handleEditAction, openNewTabPage,
 } from './work-view.js';
 import { parseTabRoute, partInstrumentFor } from './otf-editor/create-tab-entry.js';
-import { renderBountyView } from './bounty-view.js';
-import { renderMySubmissionsView } from './my-submissions.js';
-import { renderHighScoresView } from './high-scores.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
-import {
-    initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView,
-    editorHasUnsavedChanges, editorSessionInfo, promptUnsavedChanges, closeUnsavedPrompt, unsavedPromptOpen,
-    stageEditorRestore, applyEditorRestore, refreshEditorOwnership
-} from './editor.js';
 import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill, setBanner } from './shell.js';
-import { buildListChordPro, buildListText, buildListZipFiles, listFileBase } from './list-export.js';
-import { createZip } from './zip.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
 import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
@@ -79,12 +69,143 @@ import { getSongContents, setPendingContentFetcher } from './song-content.js';
 import { showToast } from './toast.js';
 import { AUTH_REDIRECT, persistReturnRecord, takeReturnRecord, pruneReturnRecord } from './auth-return.js';
 import { initPWA, canInstall, promptInstall } from './pwa.js';
-import { renderDraftsView } from './drafts-view.js';
 import { getDraftStore, migrateLegacyDraft, parseHashParams } from './drafts.js';
-import {
-    configureReviewQueue, showReviewQueue, hideReviewQueue, submitReviewRequest,
-    showSuppressRequestDialog, showMergeRequestDialog, buildMergeRedirectPayload,
-} from './review-queue.js';
+
+// ============================================
+// LAZY MODULES
+// ============================================
+//
+// Route- or action-specific code is fetched with import() the first time it
+// is needed instead of riding along in the boot graph (B7a). The wrappers
+// below keep the names the rest of this file always used, so call sites read
+// as before. Nothing here has module-level side effects to preserve: the
+// modules only export functions, and the wiring that used to run at boot
+// (initEditor, configureReviewQueue) runs once, right after the first load.
+
+/** A failed download (offline, deploy in flight) must say so, not vanish. */
+function lazyLoadFailed(what, err) {
+    console.error(`Could not load ${what}:`, err);
+    showToast(`Couldn't load ${what}. Check your connection and try again.`,
+        { variant: 'warning', duration: 6000 });
+}
+
+// --- Song editor (editor.js and what only it uses: smart-paste, dedup-check, visual-editor/)
+
+let editorModule = null;
+let editorLoading = null;
+
+function loadEditor() {
+    editorLoading ||= import('./editor.js').then((mod) => {
+        mod.initEditor(editorInitOptions());
+        editorModule = mod;
+        return mod;
+    }).catch((err) => {
+        editorLoading = null; // let the next attempt retry
+        throw err;
+    });
+    return editorLoading;
+}
+
+/** Edit a song. Resolves once the editor is open (or the load failed). */
+async function enterEditMode(song, options) {
+    try {
+        const mod = await loadEditor();
+        return await mod.enterEditMode(song, options);
+    } catch (err) {
+        lazyLoadFailed('the editor', err);
+    }
+}
+
+// Until the editor has loaded there is nothing to reset, close or exit:
+// every one of these only undoes state enterEditMode/initEditor created.
+function exitEditMode() { editorModule?.exitEditMode(); }
+function closeHints() { editorModule?.closeHints(); }
+function prepareAddSongView() { editorModule?.prepareAddSongView(); }
+
+// The leave-without-submitting guard and ownership chrome (A7, A11) only
+// concern an editor that has been opened, i.e. loaded.
+function editorHasUnsavedChanges() { return editorModule?.editorHasUnsavedChanges() ?? false; }
+function editorSessionInfo() { return editorModule?.editorSessionInfo() ?? { isEdit: false, songId: null }; }
+function promptUnsavedChanges() { return editorModule ? editorModule.promptUnsavedChanges() : Promise.resolve('cancelled'); }
+function closeUnsavedPrompt() { editorModule?.closeUnsavedPrompt(); }
+function unsavedPromptOpen() { return editorModule?.unsavedPromptOpen() ?? false; }
+function refreshEditorOwnership() { return editorModule?.refreshEditorOwnership(); }
+
+// --- Review queue (Dungeon-only; review-queue.js)
+
+let reviewQueueModule = null;
+let reviewQueueLoading = null;
+
+function loadReviewQueue() {
+    reviewQueueLoading ||= import('./review-queue.js').then((mod) => {
+        mod.configureReviewQueue({
+            isAdmin: () => isAdminUser,
+            isTrusted: () => isTrustedFlag,
+            // An approved delete has already landed in deleted_songs; mirror it
+            // client-side so the corpus stops serving the song immediately.
+            onDeleteExecuted: (id) => {
+                deletedIds.add(id);
+                persistCuration();
+                rebuildCorpus();
+            },
+        });
+        reviewQueueModule = mod;
+        return mod;
+    }).catch((err) => {
+        reviewQueueLoading = null;
+        throw err;
+    });
+    return reviewQueueLoading;
+}
+
+function hideReviewQueue() { reviewQueueModule?.hideReviewQueue(); }
+
+/** The review-queue module for a request handler; null (after a toast) if it cannot load. */
+async function requireReviewQueue() {
+    try {
+        return await loadReviewQueue();
+    } catch (err) {
+        lazyLoadFailed('the review queue', err);
+        return null;
+    }
+}
+
+/**
+ * Show the Dungeon's review queue. Viewers who are neither trusted nor admin
+ * never see it, so they never download it either (the module would only hide
+ * its panel for them — canSeeQueue in review-queue.js).
+ */
+async function showReviewQueue() {
+    if (!isAdminUser && !isTrustedFlag) {
+        hideReviewQueue();
+        return;
+    }
+    const rq = await requireReviewQueue();
+    await rq?.showReviewQueue();
+}
+
+// --- Whole-page views rendered into the results panel
+
+/**
+ * Load a view's module, then render it — unless the reader has already
+ * moved on to another view while it downloaded.
+ */
+function renderLazyView(view, load, render) {
+    // Don't leave the previous view's results on screen during the download
+    // (each view replaces this as soon as it renders).
+    if (resultsDiv) resultsDiv.innerHTML = '<div class="loading">Loading…</div>';
+    load().then((mod) => {
+        if (currentView === view) render(mod);
+    }).catch((err) => lazyLoadFailed('this page', err));
+}
+const renderBountyView = (el) =>
+    renderLazyView('bounty', () => import('./bounty-view.js'), m => m.renderBountyView(el));
+const renderMySubmissionsView = (el) =>
+    renderLazyView('my-submissions', () => import('./my-submissions.js'), m => m.renderMySubmissionsView(el));
+const renderHighScoresView = (el) =>
+    renderLazyView('high-scores', () => import('./high-scores.js'), m => m.renderHighScoresView(el));
+const renderDraftsView = (el) =>
+    renderLazyView('drafts', () => import('./drafts-view.js'), m => m.renderDraftsView(el));
 
 // ============================================
 // DOM ELEMENTS
@@ -213,6 +334,43 @@ function toggleTheme() {
     const newTheme = current === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
     trackThemeToggle(newTheme);
+}
+
+// ============================================
+// EDITOR WIRING
+// ============================================
+
+/** Options for initEditor: the editor panel's DOM + host callbacks. */
+function editorInitOptions() {
+    return {
+        editorPanel,
+        editorTitle,
+        editorArtist,
+        editorWriter,
+        editorContent,
+        editorCopyBtn,
+        editorSaveBtn,
+        editorSubmitBtn,
+        editorStatus,
+        editorNashville,
+        hintsBtn,
+        hintsPanel,
+        hintsBackdrop,
+        hintsClose,
+        autoDetectCheckbox,
+        editorTransposeUp,
+        editorTransposeDown,
+        editorKeySelect,
+        metadataSummary,
+        metadataFields,
+        onSongRequest: () => openAddSongPicker({ mode: 'request' }),
+        editorPreviewContainer,
+        editorUndoBtn,
+        editorRedoBtn,
+        editorTransposeGroup,
+        resultsDiv,
+        songView
+    };
 }
 
 // ============================================
@@ -438,7 +596,7 @@ function initViewSubscription() {
         // (state.js `scheduleRender`), so a teardown queued by *entering* the
         // song view lands a frame later — by which time work-view has already
         // built the very thing it then destroys. That is a coin flip decided
-        // by the module cache: with the editor's four dynamic imports cold the
+        // by the module cache: with the editor's five dynamic imports cold the
         // frame wins and the editor survives; warm, the mount resolves in a
         // microtask, finishes first, and gets deleted. `#drafts` → Open lost
         // that flip every time (warm), and a dropped `.tef` lost it about half
@@ -542,8 +700,19 @@ function initViewSubscription() {
                 searchContainer?.classList.add('hidden');
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
-                editorPanel?.classList.remove('hidden');
                 songListsView?.classList.add('hidden');
+                // The panel's listeners (paste conversion, preview, undo) are
+                // wired by initEditor, which runs when the editor module
+                // finishes loading. Showing the panel before that lets a
+                // fast paste or keystroke land in an unwired textarea, so on
+                // the first visit it appears only once the editor is ready.
+                if (editorModule) {
+                    editorPanel?.classList.remove('hidden');
+                } else {
+                    loadEditor().then(() => {
+                        if (currentView === 'add-song') editorPanel?.classList.remove('hidden');
+                    }).catch((err) => lazyLoadFailed('the editor', err));
+                }
                 break;
             case 'favorites':
                 searchContainer?.classList.remove('hidden');
@@ -872,8 +1041,16 @@ async function resumeAfterAuthRedirect({ signedIn }) {
     const message = signedIn
         ? 'Signed in \u2014 ready to submit'
         : 'Sign-in did not finish \u2014 your work is still here';
-    if (record.kind === 'lead-sheet' && record.state) {
-        stageEditorRestore(record.state, { message });
+    // The staged text lives in editor.js, which loads on demand (B7a): load it
+    // first, so the #add / #edit route below finds the snapshot waiting.
+    let editor = null;
+    if (record.kind === 'lead-sheet') {
+        try {
+            editor = await loadEditor();
+        } catch (err) {
+            lazyLoadFailed('the editor', err);
+        }
+        if (editor && record.state) editor.stageEditorRestore(record.state, { message });
     }
 
     // Replace the token-bearing URL with the route we left, then route it the
@@ -883,7 +1060,7 @@ async function resumeAfterAuthRedirect({ signedIn }) {
     handleDeepLink();
 
     if (record.kind === 'lead-sheet') {
-        applyEditorRestore();       // the new-song editor; an edit's waits for enterEditMode
+        editor?.applyEditorRestore();   // the new-song editor; an edit's waits for enterEditMode
     } else if (record.kind === 'tab') {
         showToast(message, { duration: 6000 });
     }
@@ -1993,7 +2170,9 @@ async function handleRequestDeleteSong() {
         return;
     }
 
-    const { error } = await submitReviewRequest({
+    const rq = await requireReviewQueue();
+    if (!rq) return;
+    const { error } = await rq.submitReviewRequest({
         kind: 'delete',
         targetId: song.id,
         payload: { title: song.title },
@@ -2015,10 +2194,12 @@ async function handleRequestSuppressSong() {
     const song = getCurrentSong();
     if (!song) return;
 
-    const reason = await showSuppressRequestDialog(song);
+    const rq = await requireReviewQueue();
+    if (!rq) return;
+    const reason = await rq.showSuppressRequestDialog(song);
     if (reason === null) return; // cancelled
 
-    const { error } = await submitReviewRequest({
+    const { error } = await rq.submitReviewRequest({
         kind: 'suppress',
         targetId: song.id,
         payload: {},
@@ -2039,13 +2220,15 @@ async function handleRequestMergeSong() {
     // The merge target can be any work, an archived one included.
     await ensureArchiveLoaded();
 
-    const outcome = await showMergeRequestDialog(song, { songs: allSongs });
+    const rq = await requireReviewQueue();
+    if (!rq) return;
+    const outcome = await rq.showMergeRequestDialog(song, { songs: allSongs });
     if (outcome === null) return; // cancelled
 
-    const { error } = await submitReviewRequest({
+    const { error } = await rq.submitReviewRequest({
         kind: 'merge-redirect',
         targetId: song.id,
-        payload: buildMergeRedirectPayload(outcome.targetId),
+        payload: rq.buildMergeRedirectPayload(outcome.targetId),
         reason: outcome.reason,
     });
     if (error) {
@@ -2462,6 +2645,14 @@ async function handleListExport(action) {
     }
 
     const contents = await getSongContents(listSongs);
+    let exporter;
+    try {
+        exporter = await import('./list-export.js');
+    } catch (err) {
+        lazyLoadFailed('the export tools', err);
+        return;
+    }
+    const { buildListChordPro, buildListText, buildListZipFiles, listFileBase } = exporter;
     const base = listFileBase(list.name);
 
     if (action === 'download-chordpro') {
@@ -2473,6 +2664,13 @@ async function handleListExport(action) {
         const files = buildListZipFiles(listSongs, contents);
         if (!files.length) {
             alert('No song content available to export.');
+            return;
+        }
+        let createZip;
+        try {
+            ({ createZip } = await import('./zip.js'));
+        } catch (err) {
+            lazyLoadFailed('the export tools', err);
             return;
         }
         downloadFile(`${base}.zip`, createZip(files), 'application/zip');
@@ -2935,18 +3133,6 @@ function init() {
         isPromoted: (id) => promotedIds.has(id),
     });
 
-    configureReviewQueue({
-        isAdmin: () => isAdminUser,
-        isTrusted: () => isTrustedFlag,
-        // An approved delete has already landed in deleted_songs; mirror it
-        // client-side so the corpus stops serving the song immediately.
-        onDeleteExecuted: (id) => {
-            deletedIds.add(id);
-            persistCuration();
-            rebuildCorpus();
-        },
-    });
-
     initSearch({
         searchInput,
         searchStats,
@@ -2972,35 +3158,8 @@ function init() {
         parseSearchQuery
     });
 
-    initEditor({
-        editorPanel,
-        editorTitle,
-        editorArtist,
-        editorWriter,
-        editorContent,
-        editorCopyBtn,
-        editorSaveBtn,
-        editorSubmitBtn,
-        editorStatus,
-        editorNashville,
-        hintsBtn,
-        hintsPanel,
-        hintsBackdrop,
-        hintsClose,
-        autoDetectCheckbox,
-        editorTransposeUp,
-        editorTransposeDown,
-        editorKeySelect,
-        metadataSummary,
-        metadataFields,
-        onSongRequest: () => openAddSongPicker({ mode: 'request' }),
-        editorPreviewContainer,
-        editorUndoBtn,
-        editorRedoBtn,
-        editorTransposeGroup,
-        resultsDiv,
-        songView
-    });
+    // initEditor runs when the editor first loads (loadEditor above).
+
 
     // Setup event listeners
 

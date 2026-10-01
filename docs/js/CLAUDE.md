@@ -40,6 +40,8 @@ docs/
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
 │   ├── pwa.js          # Service-worker registration, install prompt, .tef/.otf.json file open + drop
 │   ├── sw-strategy.js  # THE caching decisions (imported by ../sw.js and by its tests)
+│   ├── lazy-modules.js # URLs of every module NOT in the boot graph — precached by the SW (kept honest by a test)
+│   ├── delete-affordance.js # The one-line "instant / request / none" delete rule (split out of review-queue.js so the song page need not load the queue)
 │   ├── drafts.js       # IndexedDB drafts bucket + debounced editor autosave
 │   ├── drafts-view.js  # `#drafts` list (Open / Delete)
 │   ├── audio-unlock.js # iOS audio: SYNC resume inside the tap + ringer-switch escape (never await before calling it)
@@ -570,7 +572,7 @@ Lists, Add Song, etc., with the rest in the overflow (⋯) menu.
 Together those are what stopped `#new-tab?draft=…` from mounting its editor
 and then silently deleting it. The failure looked like a rendering bug — the
 page appeared, the band appeared, the editor did not — and it was decided by
-the module cache: with the editor's four dynamic imports warm the mount
+the module cache: with the editor's five dynamic imports warm the mount
 resolved in a microtask and lost the race; cold, it won. `#drafts` → Open
 lost every time; a dropped `.tef` lost about half. Covered by
 `e2e/otf-editor-drafts.spec.js` and `e2e/otf-editor-files.spec.js`.
@@ -687,9 +689,54 @@ The new worker calls `skipWaiting()` + `clients.claim()` and posts
 already had a controller when it loaded (a first install has nothing to
 announce).
 
-`PRECACHE_URLS` is deliberately five entries: the app is dozens of unhashed
-ES modules and a hand-maintained precache list would rot. Everything else
-enters the shell cache the first time it is fetched online.
+`PRECACHE_URLS` is the five shell entries **plus `LAZY_MODULE_URLS`**
+(`js/lazy-modules.js`): every module that is *not* in the boot graph. Boot
+modules are requested on every online load, so the runtime cache always has
+them; a lazy module (the song editor, the tab renderer and player, the
+`#drafts` list — the PWA's offline surface) is requested only when its route
+first runs, so a reader who went offline before visiting it would find it
+missing. `__tests__/lazy-modules.test.js` derives the lazy set from the source
+(`import()` edges minus the static closure of `main.js`) and fails with the
+exact difference, so the list cannot rot the way a hand-kept module list would.
+Everything else enters the shell cache the first time it is fetched online.
+
+## Lazy modules (what loads at boot, and what doesn't)
+
+`index.html` loads `js/main.js`; whatever `main.js` imports **statically** is
+on the critical path of every cold load. Route- or action-specific code is
+reached with `import()` at the point of use instead (B7a took the boot graph
+from 65 modules / 1.47 MB raw to ~33 / 0.75 MB; see the test for the budget):
+
+| Loaded on demand | Trigger |
+|---|---|
+| `editor.js` (+ `smart-paste`, `dedup-check`, `visual-editor/*`, `chord-explorer/theory`) | `showView('add-song')` or any `enterEditMode` (`loadEditor()` in `main.js`, which also runs `initEditor` once, right after the first load) |
+| `review-queue.js` | Dungeon mode for a trusted/admin viewer, or a request handler (`loadReviewQueue()` runs `configureReviewQueue` once) |
+| `bounty-view`, `my-submissions`, `high-scores`, `drafts-view` | their `#` route (`renderLazyView` in `main.js` drops the result if the reader has already navigated on) |
+| `list-export`, `zip` | a list's Export pill → Download |
+| `renderers/tablature.js`, `renderers/tab-player.js`, `tab-controls-sheet.js`, `tab-playback-interactions.js` (+ `audio-unlock.js`) | the first tablature render or editor mount (`loadTabRenderKit()` in `work-view.js`, started in parallel with the OTF fetch) |
+| `otf-editor/{editor,work-edit,state,facade,cursor,actions,…}`, `tab-edit-band.js` | `mountTabEditor` (unchanged: it already used `import()`) |
+| `tef-import/*` | picking a `.tef` (unchanged) |
+| `work-suggest.js` (+ `title-match.js`) | the song page's not-found branch (A10's redirect / suggestions) |
+
+Rules that keep it that way:
+
+- **Don't add a static import of a lazy module to the boot graph.** The test
+  lists the ones that must stay out. If something boot-side needs one symbol
+  from a heavy module, move the symbol (as `positionFromSvgPoint` moved from
+  `otf-editor/cursor.js` to `renderers/tab-hit-test.js`, `deleteAffordance`
+  from `review-queue.js` to `delete-affordance.js`, and
+  `createEmptyOTF`/`createMultiTrackOTF` from `otf-editor/actions.js` to
+  `otf-editor/new-otf.js` — the old modules re-export them, so importers and
+  tests are unchanged).
+- **The lazy modules have no module-level side effects** (no `window.*`
+  assignments, no listeners at import). Keep it so: the wiring they need runs
+  explicitly after the load, never as a side effect of importing.
+- **New lazy module → add it to `LAZY_MODULE_URLS`;** new boot module → add a
+  `<link rel="modulepreload">` before the `main.js` script tag in
+  `index.html`. The test names the exact difference either way.
+- Audio must stay synchronous inside the tap (`audio-unlock.js`): never make
+  Play wait on an import — that is why `TabPlayer` loads with the renderer,
+  not on the first click.
 
 ### Drafts (`#drafts`)
 

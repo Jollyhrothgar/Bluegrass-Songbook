@@ -36,6 +36,8 @@
 // You do not need to bump it to ship new app code or new corpus data — that
 // is what network-first and stale-while-revalidate are for.
 
+import { LAZY_MODULE_URLS } from './lazy-modules.js';
+
 // v2: songs' .pro files moved from the shell cache (network-first) to the
 // data cache (stale-while-revalidate), and shell requests gained a network
 // timeout. Bumping sweeps the v1 caches on activate.
@@ -89,10 +91,16 @@ export const STRATEGIES = {
 };
 
 /**
- * The minimum needed to paint something offline. Deliberately tiny: the app
- * is dozens of ES modules with no content hashes, and precaching a module
- * graph by hand is a list that rots. Everything else lands in the shell cache
- * the first time it is fetched online.
+ * The minimum needed to paint something offline, plus the lazily loaded
+ * modules. The shell is deliberately tiny: the app is dozens of ES modules
+ * with no content hashes, and precaching the BOOT graph by hand is a list
+ * that rots — and needless, because boot modules are requested on every
+ * online load and so always reach the shell cache. Modules that load on
+ * demand (the song editor, the tab renderer and player, the #drafts list…)
+ * do not: a reader who went offline before first using one would find it
+ * missing, so those are precached. That list is derived from the source and
+ * checked by __tests__/lazy-modules.test.js, so it cannot rot either.
+ * Everything else lands in the shell cache the first time it is fetched online.
  */
 export const PRECACHE_URLS = [
     './',
@@ -100,6 +108,7 @@ export const PRECACHE_URLS = [
     './css/style.css',
     './manifest.webmanifest',
     './images/icon-192.png',
+    ...LAZY_MODULE_URLS,
 ];
 
 /** Hosts whose assets are content-addressed enough to cache forever. */

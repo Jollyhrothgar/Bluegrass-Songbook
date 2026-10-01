@@ -91,15 +91,16 @@ const APP_PORT = Number(process.env.PW_PORT) || 8137;
 
 async function startSlowProxy() {
     // `generation` simulates deploys: when set, every app module under /js/
-    // (except the worker's own strategy file, which would make the browser
-    // see a new worker) gets a line appended recording which generation
-    // served it, and every response is `no-cache` so the worker's fetch()
-    // really reaches this server instead of the HTTP cache.
+    // (except the worker's own scripts, which would make the browser see a
+    // new worker) gets a line appended recording which generation served it,
+    // and every response is `no-cache` so the worker's fetch() really reaches
+    // this server instead of the HTTP cache.
+    const WORKER_SCRIPTS = new Set(['/js/sw-strategy.js', '/js/lazy-modules.js']);
     const state = { delayMs: 0, slowPath: /^\/js\/main\.js/, generation: null };
     const server = http.createServer((req, res) => {
         const delay = state.slowPath.test(req.url) ? state.delayMs : 0;
         const path = req.url.split('?')[0];
-        const stamp = state.generation != null && /^\/js\/.+\.js$/.test(path) && path !== '/js/sw-strategy.js'
+        const stamp = state.generation != null && /^\/js\/.+\.js$/.test(path) && !WORKER_SCRIPTS.has(path)
             ? state.generation : null;
         setTimeout(() => {
             const headers = { ...req.headers };
@@ -147,8 +148,12 @@ test.describe('service worker — slow network', () => {
         await page.waitForTimeout(1500);
     }
 
-    test('a stalled script is answered from the cache after ~2s, not after the stall', async ({ page }) => {
+    // index.html modulepreloads the boot modules alongside main.js, so "a slow
+    // link" means every module stalls. (If any of them arrived fresh, the
+    // fresh latch would rightly make the load wait — see the next tests.)
+    test('on a stalled link, scripts are answered from the cache after ~2s, not after the stall', async ({ page }) => {
         await warm(page);
+        proxy.state.slowPath = /^\/js\//;
         proxy.state.delayMs = 8000;
 
         // A plain navigation (cache: default)
@@ -195,11 +200,29 @@ test.describe('service worker — slow network', () => {
         expect([...new Set(Object.values(gens))]).toEqual([2]);
     });
 
-    test('a stalled entry module (nothing answered yet) falls back to the cache and the load stays on the old generation', async ({ page }) => {
+    test('after a deploy, preloaded modules that arrive fresh make a stalled entry module wait too', async ({ page }) => {
+        // index.html modulepreloads the boot graph, so main.js is no longer the
+        // first module the network answers. Once the others arrive as the new
+        // generation, falling back to an old main.js would mix generations.
         proxy.state.generation = 1;
         await warm(page);
         proxy.state.generation = 2;
-        proxy.state.delayMs = 8000;                            // the entry module (main.js) stalls
+        proxy.state.delayMs = 4000;                            // only main.js stalls (the default slowPath)
+        const started = Date.now();
+        await page.goto(`${proxy.origin}/?deploy=3#search`);
+        await expect(page.locator('#search-input')).toBeVisible({ timeout: 20000 });
+        expect(Date.now() - started).toBeGreaterThanOrEqual(3900);   // it waited for main.js
+        const gens = await page.evaluate(() => ({ ...globalThis.__gens }));
+        expect(gens['/js/main.js']).toBe(2);
+        expect([...new Set(Object.values(gens))]).toEqual([2]);
+    });
+
+    test('a stalled link after a deploy (nothing answered yet) falls back to the cache and the load stays on the old generation', async ({ page }) => {
+        proxy.state.generation = 1;
+        await warm(page);
+        proxy.state.generation = 2;
+        proxy.state.slowPath = /^\/js\//;                      // every module stalls: nothing answers fresh
+        proxy.state.delayMs = 8000;
 
         await page.goto(`${proxy.origin}/?deploy=2#search`);
         await expect(page.locator('#search-input')).toBeVisible({ timeout: 7000 });

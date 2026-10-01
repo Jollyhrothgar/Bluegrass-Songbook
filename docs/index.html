@@ -785,6 +785,43 @@ This is the [G]chorus [D]part
     </div>
 
     <script defer src="js/supabase-auth.js"></script>
+    <!-- Boot graph: every module main.js imports statically, fetched in parallel
+         instead of discovered level by level. Route-specific modules are NOT
+         listed — they load on demand (js/CLAUDE.md "Lazy modules"). Kept in
+         sync by js/__tests__/lazy-modules.test.js. -->
+    <link rel="modulepreload" href="js/state.js">
+    <link rel="modulepreload" href="js/auth-return.js">
+    <link rel="modulepreload" href="js/search-query.js">
+    <link rel="modulepreload" href="js/song-content.js">
+    <link rel="modulepreload" href="js/utils.js">
+    <link rel="modulepreload" href="js/tags.js">
+    <link rel="modulepreload" href="js/analytics.js">
+    <link rel="modulepreload" href="js/otf-editor/submit-tab.js">
+    <link rel="modulepreload" href="js/otf-editor/create-tab-entry.js">
+    <link rel="modulepreload" href="js/otf-editor/existing-tabs.js">
+    <link rel="modulepreload" href="js/add-song-picker.js">
+    <link rel="modulepreload" href="js/shell.js">
+    <link rel="modulepreload" href="js/list-picker.js">
+    <link rel="modulepreload" href="js/delete-affordance.js">
+    <link rel="modulepreload" href="js/chords.js">
+    <link rel="modulepreload" href="js/renderers/chordpro.js">
+    <link rel="modulepreload" href="js/song-view.js">
+    <link rel="modulepreload" href="js/otf-editor/new-otf.js">
+    <link rel="modulepreload" href="js/otf-editor/create-tab.js">
+    <link rel="modulepreload" href="js/renderers/measure-timing.js">
+    <link rel="modulepreload" href="js/renderers/otf-tracks.js">
+    <link rel="modulepreload" href="js/flags.js">
+    <link rel="modulepreload" href="js/song-controls.js">
+    <link rel="modulepreload" href="js/toast.js">
+    <link rel="modulepreload" href="js/work-view.js">
+    <link rel="modulepreload" href="js/stem.js">
+    <link rel="modulepreload" href="js/search-core.js">
+    <link rel="modulepreload" href="js/lists.js">
+    <link rel="modulepreload" href="js/superuser-request.js">
+    <link rel="modulepreload" href="js/collections.js">
+    <link rel="modulepreload" href="js/corpus.js">
+    <link rel="modulepreload" href="js/drafts.js">
+    <link rel="modulepreload" href="js/pwa.js">
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
