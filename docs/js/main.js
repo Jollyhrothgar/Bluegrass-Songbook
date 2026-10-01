@@ -27,7 +27,7 @@ import {
     fontSizeLevel,
     printFontPxForLevel,
     PRINT_BASE_FONT_PX, PRINT_FONT_PX_MIN, PRINT_FONT_PX_MAX,
-    setListContext,
+    setListContext, listContext,
     setWorkRedirects, resolveWorkId,
     setBountyIndex,
     setCorpusLoadFailed,
@@ -1020,15 +1020,14 @@ function handleDeepLink() {
 async function openSongInFavorites(itemRef, fromDeepLink = false) {
     const { workId, partId } = parseItemRef(itemRef);
 
-    // Get favorites song IDs that exist in allSongs. A favorite that only the
-    // archive holds is not in the corpus yet: bring it in first so the
-    // prev/next context includes it.
+    // Open the tapped song first; the prev/next context is refined once any
+    // favorite that only the archive holds has loaded (never block on it).
     const favList = getFavoritesList();
-    await ensureArchiveForRefs(favList?.songs);
-    const favSongIds = favList ? favList.songs.filter(ref => {
+    const buildFavSongIds = () => favList ? favList.songs.filter(ref => {
         const { workId: wid } = parseItemRef(ref);
         return allSongs.find(s => s.id === wid);
     }) : [];
+    const favSongIds = buildFavSongIds();
     const songIndex = favSongIds.indexOf(itemRef);
 
     // Set up favorites context for prev/next navigation
@@ -1047,6 +1046,22 @@ async function openSongInFavorites(itemRef, fromDeepLink = false) {
         listId: 'favorites',
         exact: true,
     });
+
+    // Refine the prev/next context with archived favorites, if any.
+    if (favList && window.isArchiveLoaded?.() === false) {
+        ensureArchiveForRefs(favList.songs).then(() => {
+            const ids = buildFavSongIds();
+            // Skip if nothing changed or the context has moved on meanwhile.
+            if (ids.length === favSongIds.length || listContext?.listId !== 'favorites') return;
+            const idx = ids.indexOf(itemRef);
+            setListContext({
+                listId: 'favorites',
+                listName: 'Favorites',
+                songIds: ids,
+                currentIndex: idx >= 0 ? idx : 0
+            });
+        });
+    }
 }
 
 /**

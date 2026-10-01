@@ -792,7 +792,12 @@ rows (they have nothing to merge onto and would otherwise appear as bare rows).
 A promoted id that is also deleted, a target that is deleted, and a target that
 is itself a pending SONG row do not count as "missing". **Accepted trade-off:**
 an archived sibling of a canon work (same `group_id`) is invisible to the
-"N versions" badge and the version pills until something loads the archive.
+"N versions" badge and the version pills until something loads the archive
+(46 of ~2,400 canon groups; PENDING OWNER DECISION — the build-side fix is a
+group size or sibling stubs in `index.jsonl` rows). A list view that redraws
+when the archive lands must check it is still the current view
+(`currentView === 'list'`), or it yanks the user back from a song they opened
+meanwhile.
 
 **The pending overlay is lean.** `pending_songs` is fetched with
 `PENDING_OVERLAY_COLUMNS` — no `content` (up to 200 KB a chart, 2 MB a tab,

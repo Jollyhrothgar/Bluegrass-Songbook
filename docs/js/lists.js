@@ -2361,7 +2361,11 @@ function renderListViewUI(listName, songIds, status) {
         && window.isArchiveLoaded?.() === false) {
         const drawnFor = viewingListId;
         ensureArchiveForRefs(songIds).then(() => {
-            if (viewingListId === drawnFor && window.isArchiveLoaded?.() !== false) {
+            // currentView is read here, not at draw time: showListView draws
+            // before it sets the view. A user who opened a song while the
+            // archive downloaded must not be thrown back to the list.
+            if ((currentView === 'list' || currentView === 'favorites')
+                && viewingListId === drawnFor && window.isArchiveLoaded?.() !== false) {
                 renderListViewUI(listName, songIds, status);
             }
         });

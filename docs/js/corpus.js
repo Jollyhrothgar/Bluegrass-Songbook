@@ -558,8 +558,9 @@ const CURATION_CACHE_PREFIX = 'songbook-curation-';
  * ('deleted' | 'promoted'). Never throws: storage can be blocked, absent or
  * hold garbage, and an empty set is exactly what a first visit has.
  */
-export function readCachedIdSet(kind, storage = globalThis.localStorage) {
+export function readCachedIdSet(kind, storage) {
     try {
+        storage ??= globalThis.localStorage;
         const parsed = JSON.parse(storage?.getItem(CURATION_CACHE_PREFIX + kind) || '[]');
         return new Set(Array.isArray(parsed) ? parsed.filter(id => typeof id === 'string') : []);
     } catch {
@@ -568,8 +569,9 @@ export function readCachedIdSet(kind, storage = globalThis.localStorage) {
 }
 
 /** Remember an id set for the next visit's first paint. Never throws. */
-export function writeCachedIdSet(kind, ids, storage = globalThis.localStorage) {
+export function writeCachedIdSet(kind, ids, storage) {
     try {
+        storage ??= globalThis.localStorage;
         storage?.setItem(CURATION_CACHE_PREFIX + kind, JSON.stringify([...ids]));
     } catch {
         // Quota or blocked storage: the cache is an optimisation, not state.

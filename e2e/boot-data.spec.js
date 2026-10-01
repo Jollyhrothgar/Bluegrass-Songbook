@@ -171,6 +171,32 @@ test.describe('B2 — the archive is fetched on demand', () => {
         expect(seen.count(/archive\.jsonl/)).toBe(1);
     });
 
+    test('opening a song while the archive downloads is not undone when it lands', async ({ page }) => {
+        const row = archivedOnlyRow();
+        await mockSupabase(page, { signedIn: false });
+        await page.addInitScript((songs) => {
+            localStorage.setItem('songbook-lists', JSON.stringify([
+                { id: 'local_e2e_slow', name: 'Slow', songs, songMetadata: {}, cloudId: null },
+            ]));
+            localStorage.setItem('songbook-legacy-cleanup-v2', '1');
+        }, ['rocky-top', row.id, 'wagon-wheel']);
+        let archiveLanded = false;
+        await page.context().route('**/data/archive.jsonl*', async (route) => {
+            await new Promise(r => setTimeout(r, 4000));
+            await route.continue();
+            archiveLanded = true;
+        });
+        await page.goto('/#list/local_e2e_slow');
+        await expect(page.locator('#list-header-count')).toContainText('2 songs', { timeout: 30000 });
+        await page.locator('.result-item', { hasText: /rocky top/i }).first().click();
+        await expect(page.locator('#song-view')).toBeVisible();
+        const url = page.url();
+        await expect.poll(() => archiveLanded, { timeout: 30000 }).toBe(true);
+        await page.waitForTimeout(1500);
+        await expect(page.locator('#song-view')).toBeVisible();
+        expect(page.url()).toBe(url);
+    });
+
     test('a list of canon songs does not need it', async ({ page }) => {
         await mockSupabase(page, { signedIn: false });
         await page.addInitScript(() => {

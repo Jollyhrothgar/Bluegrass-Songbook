@@ -156,7 +156,10 @@ async function fetchSubmissions(user) {
     // doesn't hold makes it worth loading.
     if (window.isArchiveLoaded?.() === false) {
         const held = realCorpusIds();
-        if ((logResult.data || []).some(r => r.target_id && !held.has(r.target_id))) {
+        // A brand-new song (song_submit) is not in the canon until the next
+        // build and cannot be in the archive either: no reason to wait.
+        if ((logResult.data || []).some(r => r.target_id && r.action !== 'song_submit'
+            && !held.has(r.target_id))) {
             await window.ensureArchiveLoaded();
         }
     }
