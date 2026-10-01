@@ -32,7 +32,7 @@ import {
 import { escapeHtml, safeUrl } from './utils.js';
 import {
     extractChords, detectKey,
-    CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
+    CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS, normalizeKeyForMode
 } from './chords.js';
 import { parseChordPro, renderSectionsHtml } from './renderers/chordpro.js';
 import { getSongMetadata, updateSongMetadata } from './lists.js';
@@ -306,12 +306,10 @@ export function initKeyState(song, chordpro, isInitialRender = false) {
         if (listContext && listContext.listId && song?.id) {
             const songMetadata = getSongMetadata(listContext.listId, song.id);
             if (songMetadata?.key) {
-                // Map metadata key format ("C#/Db") to CHROMATIC_MAJOR_KEYS format
-                const keyMap = {
-                    'C#/Db': 'C#', 'D#/Eb': 'Eb', 'F#/Gb': 'F#',
-                    'G#/Ab': 'Ab', 'A#/Bb': 'Bb'
-                };
-                setCurrentDetectedKey(keyMap[songMetadata.key] || songMetadata.key);
+                // Stored spellings vary ("D#", "D#/Eb", "A"); map to the key
+                // list for this song's mode (minor songs get "Am" etc.)
+                const overrideKey = normalizeKeyForMode(songMetadata.key, detectedMode);
+                if (overrideKey) setCurrentDetectedKey(overrideKey);
             }
         }
     }

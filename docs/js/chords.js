@@ -47,6 +47,30 @@ export const CHROMATIC = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 
 export const CHROMATIC_MAJOR_KEYS = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
 export const CHROMATIC_MINOR_KEYS = ['Am', 'Bbm', 'Bm', 'Cm', 'C#m', 'Dm', 'Ebm', 'Em', 'Fm', 'F#m', 'Gm', 'G#m'];
 
+const KEY_ROOT_PC = {
+    'C': 0, 'C#': 1, 'Db': 1, 'D': 2, 'D#': 3, 'Eb': 3, 'E': 4, 'F': 5,
+    'F#': 6, 'Gb': 6, 'G': 7, 'G#': 8, 'Ab': 8, 'A': 9, 'A#': 10, 'Bb': 10, 'B': 11,
+};
+
+/**
+ * Map any stored/picker key spelling ("D#", "Eb", "D#/Eb", "A", "Am") to the
+ * spelling the chromatic key lists use for the song's mode: the major list for
+ * major songs, the minor list (root + "m") for minor songs. Returns null when
+ * the key can't be parsed. Used wherever a list-item key override is read, so
+ * values saved by older pickers ("D#", "A#", ...) keep working.
+ */
+export function normalizeKeyForMode(key, mode) {
+    if (!key || typeof key !== 'string') return null;
+    const first = key.split('/')[0].trim();
+    const m = first.match(/^([A-Ga-g][#b]?)m?$/);
+    if (!m) return null;
+    const root = m[1][0].toUpperCase() + m[1].slice(1);
+    const pc = KEY_ROOT_PC[root];
+    if (pc === undefined) return null;
+    const list = mode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
+    return list.find(k => KEY_ROOT_PC[k.replace(/m$/, '')] === pc) || null;
+}
+
 // Normalize enharmonic equivalents
 export const ENHARMONIC = {
     'C#': 'Db', 'D#': 'Eb', 'E#': 'F', 'Fb': 'E',
