@@ -73,6 +73,21 @@ describe('no hardcoded white text on accent / danger fills', () => {
     });
 });
 
+describe('children of the danger banner', () => {
+    it('do not hardcode white text or white overlays', () => {
+        const offenders = [];
+        for (const [file, css] of sources) {
+            for (const m of css.matchAll(/([^{}]+)\{([^}]*)\}/g)) {
+                if (!/\.app-banner-/.test(m[1])) continue;
+                if (/(?:^|[;\s])color\s*:\s*(white|#fff|#ffffff)\b|rgba\(\s*255\s*,\s*255\s*,\s*255/i.test(m[2])) {
+                    offenders.push(`${file}: ${m[1].trim()}`);
+                }
+            }
+        }
+        expect(offenders).toEqual([]);
+    });
+});
+
 describe('dungeon mode accent', () => {
     it('overrides --on-accent so text stays readable on its dark red --accent', () => {
         const css = sources.map(([, c]) => c).join('\n');

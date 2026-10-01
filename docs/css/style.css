@@ -7050,6 +7050,7 @@ a.my-submission-row:hover {
 body.dungeon-mode {
     --accent: #b91c1c;
     --on-accent: #ffffff;
+    --accent-hover: #991b1b;
 }
 
 body.dungeon-mode #search-stats {
@@ -9921,21 +9922,21 @@ body.dungeon-mode #search-stats {
 }
 
 .app-banner-retry {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: color-mix(in srgb, var(--on-danger) 20%, transparent);
+    border: 1px solid color-mix(in srgb, var(--on-danger) 50%, transparent);
     border-radius: var(--radius-sm);
-    color: #fff;
+    color: var(--on-danger);
     padding: 0.2rem 0.6rem;
     font-size: var(--font-sm);
     cursor: pointer;
 }
 
-.app-banner-retry:hover { background: rgba(255, 255, 255, 0.35); }
+.app-banner-retry:hover { background: color-mix(in srgb, var(--on-danger) 35%, transparent); }
 
 .app-banner-dismiss {
     background: none;
     border: none;
-    color: #fff;
+    color: var(--on-danger);
     font-size: var(--font-md);
     line-height: 1;
     cursor: pointer;
