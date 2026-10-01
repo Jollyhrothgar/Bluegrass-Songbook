@@ -48,6 +48,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | D1–D7 | Library building blocks | L | — | blocked on C1 |
 | E1–E6 | Editors | M–L each | — | not started |
 | F1–F6 | Visual design | M–L | — | not started |
+| F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
 
 ### How it ships
 
@@ -700,3 +701,32 @@ Rule: **hide setup, show content and resources.**
   chords that don't look like links; one monospace stack if monospace stays.
 - **F6 Direction** — mockups of two visual directions for the song page, tab
   page and library before committing to F3–F5.
+- **F7 Tab view rework** — *Mike, 2026-10-01: "I'm not satisfied with the
+  layout" (testing `#work/foggy-mountain-breakdown/banjo-tab`). He wants to work
+  on this himself; it overlaps F4 and should be designed with F6.* Inputs so far:
+  - **The Unrolled / Repeats toggle is offered when there is nothing to
+    toggle.** The default banjo take there (`banjo-20690`, published as
+    `banjo.otf.json` since the 2026-07-26 import) is written out end to end:
+    its `reading_list` is one entry, measures 1–82. The button highlight flips
+    and the tab doesn't change, which reads as broken. Not a regression: `main`
+    behaves the same. On a take with real repeats (`arkansas-traveler-1` banjo:
+    11 rows unrolled, 6 with repeat signs) the toggle works, including during
+    playback (the layout switches, playback continues, the highlight follows
+    in the new layout). Checked on `main` and the A+B branch on 2026-10-01.
+    Direction: disable the control with a reason ("This tab has no repeats")
+    when the reading list plays every measure once in order, the way
+    `tab-edit-band.js` disables controls (`DISABLED_REASONS`) rather than
+    hiding them. 144 default takes have multi-entry reading lists; the rest are
+    single-pass.
+  - **Five stacked rows before the first note**: Info pill, part tabs (Mandolin
+    Break / Banjo Tab 8 / Ensemble / Fiddle 2), the take row, "View track", then
+    the track header (name, tuning circles, Solo). The bottom band repeats the
+    track choice.
+  - **Phone density**: one measure per row at 390px, so a 40-measure break is
+    a long scroll; the music starts more than halfway down the first screen.
+  - **Default part**: Foggy Mountain Breakdown opens on a mandolin break rather
+    than the Scruggs banjo part (see also #242, vote-backed default takes).
+  - **Chrome**: a card inside a card around the staff, blue used for every
+    selected state, emoji icons (🥁 🔁 ✏️ 🔈), and a bottom band of ~15
+    always-visible controls on desktop (F4: show only what you touch while
+    playing; setup goes in one sheet).
