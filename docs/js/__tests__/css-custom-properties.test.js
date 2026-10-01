@@ -88,6 +88,53 @@ describe('children of the danger banner', () => {
     });
 });
 
+const FILL_RE = /background(?:-color)?\s*:\s*var\(\s*--(accent|danger|primary|accent-color|accent-hover|danger-hover|danger-dark|primary-dark)\b/;
+const WHITE_TEXT_RE = /(?:^|[;\s])color\s*:\s*(white|#fff|#ffffff\b|rgba\(\s*255\s*,\s*255\s*,\s*255)/i;
+
+describe('descendants of an accent / danger fill', () => {
+    // `.x:hover { background: var(--accent) }` then `.x:hover .y { color: white }`:
+    // the per-rule check above cannot see it, because the fill and the text
+    // live in different rules.
+    it('do not hardcode white text inside a filled ancestor', () => {
+        const fills = new Set();
+        const rules = [];
+        for (const [file, css] of sources) {
+            for (const m of css.matchAll(/([^{}]+)\{([^}]*)\}/g)) {
+                const selectors = m[1].split(',').map(s => s.trim()).filter(Boolean);
+                rules.push({ file, selectors, body: m[2] });
+                if (FILL_RE.test(m[2])) selectors.forEach(s => fills.add(s));
+            }
+        }
+        const offenders = [];
+        for (const { file, selectors, body } of rules) {
+            if (!WHITE_TEXT_RE.test(body)) continue;
+            for (const sel of selectors) {
+                const ancestor = sel.split(/\s+/).slice(0, -1).join(' ');
+                if (ancestor && fills.has(ancestor)) offenders.push(`${file}: ${sel}`);
+            }
+        }
+        expect(offenders).toEqual([]);
+    });
+});
+
+describe('the tab editor\'s injected CSS', () => {
+    // otf-editor builds its stylesheet in JS template strings, outside the
+    // css/ directory the checks above read.
+    it('uses --on-accent instead of white on accent fills', () => {
+        const dir = join(dirname(fileURLToPath(import.meta.url)), '../otf-editor');
+        const offenders = [];
+        for (const f of readdirSync(dir).filter(n => n.endsWith('.js'))) {
+            const src = readFileSync(join(dir, f), 'utf8');
+            for (const m of src.matchAll(/([^{}`]+)\{([^{}]*)\}/g)) {
+                if (/background(?:-color)?\s*:\s*var\(\s*--accent\b/.test(m[2]) && WHITE_TEXT_RE.test(m[2])) {
+                    offenders.push(`${f}: ${m[1].trim().split('\n').pop()}`);
+                }
+            }
+        }
+        expect(offenders).toEqual([]);
+    });
+});
+
 describe('dungeon mode accent', () => {
     it('overrides --on-accent so text stays readable on its dark red --accent', () => {
         const css = sources.map(([, c]) => c).join('\n');

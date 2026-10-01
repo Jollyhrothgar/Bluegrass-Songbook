@@ -6041,7 +6041,7 @@ mark {
     font-size: 0.8rem;
 }
 .bounty-req-result:hover .bounty-req-result-artist {
-    color: rgba(255,255,255,0.8);
+    color: color-mix(in srgb, var(--on-accent) 80%, transparent);
 }
 .bounty-req-no-results {
     padding: 0.5rem;

@@ -304,7 +304,7 @@ export class NoteEntryPopover {
             .finger-button.selected, .lh-button.selected {
                 background: var(--accent, #007bff);
                 border-color: var(--accent, #007bff);
-                color: #fff;
+                color: var(--on-accent, #fff);
             }
 
             /* Compact: two short rows, not eleven full-size keys */
@@ -356,7 +356,7 @@ export class NoteEntryPopover {
 
             .fret-button:active {
                 background: var(--accent, #007bff);
-                color: #fff;
+                color: var(--on-accent, #fff);
                 transform: scale(0.95);
             }
 
@@ -440,7 +440,7 @@ export class NoteEntryPopover {
             .popover-btn.primary {
                 background: var(--accent, #007bff);
                 border-color: var(--accent, #007bff);
-                color: #fff;
+                color: var(--on-accent, #fff);
             }
 
             .popover-btn.primary:hover {

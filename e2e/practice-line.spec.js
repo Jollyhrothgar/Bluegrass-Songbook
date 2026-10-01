@@ -17,6 +17,21 @@ test.describe('Practice line', () => {
         await expect(page.locator('#key-pill .pill-strum-btn')).toHaveCount(0);
     });
 
+    test('Strum Machine link follows transposition without a click', async ({ page }) => {
+        await page.goto('/#work/your-cheating-heart');
+        await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
+        const strum = page.locator('.song-practice-line a[data-practice="strum"]');
+        await expect(strum).toBeVisible();
+        const before = await strum.getAttribute('href');
+
+        await page.locator('#key-pill .pill-btn').click();
+        await page.locator('#key-pill [data-transpose="1"]').click();
+
+        // The href itself changes, so middle-click and "copy link" get the new key.
+        await expect(strum).not.toHaveAttribute('href', before);
+        await expect(strum).toHaveAttribute('href', /\?key=/);
+    });
+
     test('tab-only work still has the Practice line', async ({ page }) => {
         await page.goto('/#work/foggy-mountain-breakdown');
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });

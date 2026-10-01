@@ -972,12 +972,17 @@ function renderTitleHeader() {
             ${practiceLineHtml()}
         </div>
     `;
-    header.querySelector('.song-practice-line')?.addEventListener('click', (e) => {
-        // The key may have been transposed since render; refresh the link.
-        const a = e.target.closest?.('a[data-practice="strum"]');
-        if (a) a.href = practiceLinks(currentWork, currentDetectedKey)
-            .find(l => l.id === 'strum')?.href || a.href;
-    });
+    // Keep the Strum Machine link's ?key= in step with transposition, so a
+    // middle-click or "copy link" carries the key on screen, not the one at
+    // render. Self-unsubscribes once this header leaves the page.
+    const strumLink = header.querySelector('a[data-practice="strum"]');
+    if (strumLink) {
+        const unsub = subscribe('currentDetectedKey', (key) => {
+            if (!document.contains(header)) { unsub(); return; }
+            const href = practiceLinks(currentWork, key).find(l => l.id === 'strum')?.href;
+            if (href) strumLink.href = href;
+        });
+    }
     // #edit-song-btn is wired via main.js's songContent delegation; the
     // details button is wired here so the feature needs nothing from main.js.
     header.querySelector('#edit-meta-btn')
