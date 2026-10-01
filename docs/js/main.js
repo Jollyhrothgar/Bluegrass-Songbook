@@ -27,7 +27,7 @@ import {
     fontSizeLevel,
     printFontPxForLevel,
     PRINT_BASE_FONT_PX, PRINT_FONT_PX_MIN, PRINT_FONT_PX_MAX,
-    setListContext,
+    setListContext, listContext,
     setWorkRedirects, resolveWorkId,
     setBountyIndex,
     setCorpusLoadFailed,
@@ -42,7 +42,8 @@ import {
     showListView, fetchListData, renderManageListsView, showSongListsView, startCreateListInView,
     // Favorites functions (favorites is now just a list)
     showFavorites, getFavoritesList, isFavorite, toggleFavorite,
-    updateSyncUI, reorderFavoriteItem, handleListsSignOut
+    updateSyncUI, reorderFavoriteItem, handleListsSignOut,
+    ensureArchiveForRefs
 } from './lists.js';
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
 import {
@@ -70,10 +71,11 @@ import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS, collectionThumbnailHtml } from './collections.js';
 import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
 import {
-    fetchJsonl, mergeCorpus, markArchived, countDistinctTitles, whenIdle,
-    transformPendingRow,
+    fetchJsonl, mergeCorpus, markArchived, countDistinctTitles,
+    transformPendingRow, overlaysNeedArchive, PENDING_OVERLAY_COLUMNS,
+    readCachedIdSet, writeCachedIdSet,
 } from './corpus.js';
-import { getSongContents } from './song-content.js';
+import { getSongContents, setPendingContentFetcher } from './song-content.js';
 import { showToast } from './toast.js';
 import { AUTH_REDIRECT, persistReturnRecord, takeReturnRecord, pruneReturnRecord } from './auth-return.js';
 import { initPWA, canInstall, promptInstall } from './pwa.js';
@@ -495,6 +497,7 @@ function initViewSubscription() {
         // Hide landing page when not on home view
         const isHome = view === 'home';
         landingPage?.classList.toggle('hidden', !isHome);
+        if (isHome) renderCollectionCardsIfHome();
 
         switch (view) {
             case 'home':
@@ -634,6 +637,20 @@ const COLLECTION_ICONS = {
  */
 function getDistinctSongCount() {
     return countDistinctTitles(allSongs);
+}
+
+// The landing cards are built only while the home view is showing. A visitor
+// who arrives on a song (a shared link, a bookmark) never sees them, and used
+// to download every card image into a hidden page. `Stale` = the corpus changed
+// since they were built (their counts come from it).
+let collectionCardsStale = true;
+let collectionCardsRendered = false;
+
+function renderCollectionCardsIfHome() {
+    if (currentView !== 'home' || !collectionCardsStale || !canonRows.length) return;
+    collectionCardsStale = false;
+    collectionCardsRendered = true;
+    renderCollectionCards();
 }
 
 /**
@@ -1075,15 +1092,17 @@ function handleDeepLink() {
  * Open a song within the favorites context (for deep linking)
  * @param {string} itemRef - Work ID or part-qualified ref (e.g., "work-id/part-slug")
  */
-function openSongInFavorites(itemRef, fromDeepLink = false) {
+async function openSongInFavorites(itemRef, fromDeepLink = false) {
     const { workId, partId } = parseItemRef(itemRef);
 
-    // Get favorites song IDs that exist in allSongs
+    // Open the tapped song first; the prev/next context is refined once any
+    // favorite that only the archive holds has loaded (never block on it).
     const favList = getFavoritesList();
-    const favSongIds = favList ? favList.songs.filter(ref => {
+    const buildFavSongIds = () => favList ? favList.songs.filter(ref => {
         const { workId: wid } = parseItemRef(ref);
         return allSongs.find(s => s.id === wid);
     }) : [];
+    const favSongIds = buildFavSongIds();
     const songIndex = favSongIds.indexOf(itemRef);
 
     // Set up favorites context for prev/next navigation
@@ -1102,6 +1121,22 @@ function openSongInFavorites(itemRef, fromDeepLink = false) {
         listId: 'favorites',
         exact: true,
     });
+
+    // Refine the prev/next context with archived favorites, if any.
+    if (favList && window.isArchiveLoaded?.() === false) {
+        ensureArchiveForRefs(favList.songs).then(() => {
+            const ids = buildFavSongIds();
+            // Skip if nothing changed or the context has moved on meanwhile.
+            if (ids.length === favSongIds.length || listContext?.listId !== 'favorites') return;
+            const idx = ids.indexOf(itemRef);
+            setListContext({
+                listId: 'favorites',
+                listName: 'Favorites',
+                songIds: ids,
+                currentIndex: idx >= 0 ? idx : 0
+            });
+        });
+    }
 }
 
 /**
@@ -1289,15 +1324,29 @@ let pendingRows = [];
 // admin delete or a trusted-user promote is live now instead of after the
 // hourly sync and the next deploy. Also written in-session by the
 // promote/delete handlers below.
-const deletedIds = new Set();
-const promotedIds = new Set();
+//
+// The last-known sets are cached in localStorage and applied at boot, before
+// the network answers: a deleted song must not flash into the first paint just
+// because the overlay request is still in flight. The fetched sets replace them.
+const deletedIds = readCachedIdSet('deleted');
+const promotedIds = readCachedIdSet('promoted');
 
-// Archive load state. The promise resolves once the archive is merged (or has
-// definitively failed) and NEVER rejects, so awaiting it is always safe;
-// window.ensureArchiveLoaded() is the hook other modules use.
+/** Remember the curation sets for the next visit's first paint. */
+function persistCuration() {
+    writeCachedIdSet('deleted', deletedIds);
+    writeCachedIdSet('promoted', promotedIds);
+}
+
+// Archive load state. The archive is fetched ON DEMAND — nothing prefetches it
+// any more — by whatever needs an archived row: an unknown id on a song page,
+// the Dungeon, a list / favorites / export that names an archived song, the
+// bounty board and the add-song picker (they match against every title), an
+// overlay that targets an archived work (syncArchiveNeed). The promise
+// resolves once the archive is merged (or has definitively failed) and NEVER
+// rejects, so awaiting it is always safe; window.ensureArchiveLoaded() is the
+// hook other modules use.
 let archivePromise = null;
 let archiveLoaded = false;
-let cancelArchiveIdle = null;
 
 /**
  * Re-merge canon + archive + pending into allSongs/songGroups and refresh
@@ -1311,9 +1360,15 @@ function rebuildCorpus() {
         pending: pendingRows,
         deleted: deletedIds,
         promoted: promotedIds,
+        archiveLoaded,
     });
     setAllSongs(songs);
     setSongGroups(groups);
+    // The landing cards count the corpus; they are rebuilt from it the next
+    // time the home view shows (or right now if it is showing).
+    builtOverlayVersion = overlayVersion;
+    collectionCardsStale = true;
+    if (collectionCardsRendered) renderCollectionCardsIfHome();
     return songs;
 }
 
@@ -1331,20 +1386,21 @@ function updateSongbookCount(songs) {
 function loadArchive() {
     if (archivePromise) return archivePromise;
 
-    cancelArchiveIdle?.();
-    cancelArchiveIdle = null;
-
     archivePromise = fetchJsonl('data/archive.jsonl')
         .then(rows => {
             archiveRows = markArchived(rows);
-            rebuildCorpus();
+            // Flag first: the merge applies the pending rows it was holding
+            // back for this archive.
             archiveLoaded = true;
+            rebuildCorpus();
             console.log(`Archive loaded: ${archiveRows.length} rows off the shelf`);
         })
         .catch(error => {
             // No archive published (or offline): the canon still works, only
             // deep links to pruned works fail — mark it done so nothing waits.
+            // Re-merge so the pending rows held back for it apply as they are.
             archiveLoaded = true;
+            rebuildCorpus();
             console.warn('Archive not loaded:', error.message);
         });
 
@@ -1364,14 +1420,84 @@ window.ensureArchiveLoaded = ensureArchiveLoaded;
 window.isArchiveLoaded = () => archiveLoaded;
 
 /**
+ * Bring the archive in when the Supabase overlays only make sense with it (a
+ * promotion of an archived work the canon doesn't hold yet, a pending edit or
+ * tab for one) — see corpus.overlaysNeedArchive. Cheap and idempotent.
+ */
+function syncArchiveNeed() {
+    if (archiveLoaded || archivePromise) return;
+    if (overlaysNeedArchive({
+        canon: canonRows, pending: pendingRows, promoted: promotedIds, deleted: deletedIds,
+    })) {
+        loadArchive();
+    }
+}
+
+/**
+ * Fetch the pending overlay as merge-ready rows, WITHOUT `content`.
+ *
+ * `select('*')` shipped every pending row's whole body (up to 200 KB a chart,
+ * 2 MB a tab) to every visitor on every load. The merge needs the columns in
+ * PENDING_OVERLAY_COLUMNS and one bit more — does the row HAVE a body? — which
+ * a second, id-only query answers (rows with a non-empty `content`). The text
+ * itself is read from pending_songs when its song is opened (song-content's
+ * pending fetcher, registered below).
+ *
+ * @returns {Promise<Array|null>} transformed rows, or null when the read failed
+ */
+async function fetchPendingOverlayRows(supabase) {
+    // PostgREST builders are thenables, not promises — Promise.resolve gives
+    // us a .catch so one failing query can't take the other down.
+    const safe = query => Promise.resolve(query).catch(error => ({ data: null, error }));
+
+    const [rows, withText] = await Promise.all([
+        safe(supabase.from('pending_songs').select(PENDING_OVERLAY_COLUMNS)),
+        safe(supabase.from('pending_songs').select('id')
+            .not('content', 'is', null).neq('content', '')),
+    ]);
+    if (!rows.data || rows.error) {
+        console.warn('Could not fetch pending songs:', rows.error);
+        return null;
+    }
+    // If only the id query failed, rows go through with no `has_content`
+    // signal — the transform then assumes a body unless the row's kind says
+    // it has none, which errs toward showing the song.
+    const haveText = withText.data && !withText.error
+        ? new Set(withText.data.map(r => r.id)) : null;
+    return rows.data.map(row => transformPendingRow(
+        haveText ? { ...row, has_content: haveText.has(row.id) } : row));
+}
+
+// Reads one pending row's text for song-content (a song, a fork, or a tab
+// take that was opened). Null once the row is gone.
+setPendingContentFetcher(async (id) => {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) throw new Error('Not connected');
+    const { data, error } = await supabase
+        .from('pending_songs').select('content').eq('id', id).maybeSingle();
+    if (error) throw error;
+    return typeof data?.content === 'string' ? data.content : null;
+});
+
+// The overlay fetch starts WITH the index download (loadIndex) and is raced
+// against a short grace period rather than awaited: a slow or down Supabase
+// must not hold the first render hostage.
+const OVERLAY_GRACE_MS = 800;
+let overlayPromise = null;
+// Bumped when fetched overlay data lands; rebuildCorpus records the version it
+// merged, so a late arrival knows whether the corpus still needs a re-merge.
+let overlayVersion = 0;
+let builtOverlayVersion = 0;
+
+/**
  * Fetch the Supabase overlays: pending edits plus the two world-readable
- * curation tables. All three go out together so the deleted/promoted rules
- * land in the same first paint as the pending rows — a deleted song must
- * never flash into view before the overlay catches up.
+ * curation tables. All three go out together, in parallel with the index
+ * (the deleted/promoted sets are also cached from the last visit so a deleted
+ * song does not flash in while they are in flight).
  *
  * Fails soft in every direction: no client, a down backend, or a single
- * table erroring leaves the static index exactly as it was built. Callers
- * rebuild the corpus afterwards.
+ * table erroring leaves the static index exactly as it was built. Never
+ * rejects. The caller rebuilds the corpus afterwards.
  */
 async function fetchSupabaseOverlays() {
     const supabase = window.SupabaseAuth?.supabase;
@@ -1383,34 +1509,59 @@ async function fetchSupabaseOverlays() {
 
     try {
         const [pending, deleted, promoted] = await Promise.all([
-            safe(supabase.from('pending_songs').select('*')),
+            fetchPendingOverlayRows(supabase),
             safe(supabase.from('deleted_songs').select('song_id')),
             safe(supabase.from('promoted_songs').select('song_id')),
         ]);
 
-        if (pending.data && !pending.error) {
-            pendingRows = pending.data.map(transformPendingRow);
+        if (pending) {
+            pendingRows = pending;
             if (pendingRows.length > 0) {
                 console.log(`Merged ${pendingRows.length} pending row(s) — songs and tab parts`);
             }
         }
+        // The fetched sets REPLACE the cached ones: an un-delete or an
+        // un-promote has to be able to take effect.
         if (deleted.data && !deleted.error) {
+            deletedIds.clear();
             for (const row of deleted.data) deletedIds.add(row.song_id);
             if (deletedIds.size > 0) {
                 console.log(`Hiding ${deletedIds.size} deleted song(s)`);
             }
         }
         if (promoted.data && !promoted.error) {
+            promotedIds.clear();
             for (const row of promoted.data) promotedIds.add(row.song_id);
             if (promotedIds.size > 0) {
                 console.log(`Promoted ${promotedIds.size} song(s) into search`);
             }
         }
+        persistCuration();
     } catch (e) {
         console.warn('Could not fetch Supabase overlays:', e);
         // Static index still works - graceful degradation
     }
+    overlayVersion++;
 }
+
+/** Start the overlay fetch once; every caller shares the promise. */
+function startOverlayFetch() {
+    if (!overlayPromise) overlayPromise = fetchSupabaseOverlays();
+    return overlayPromise;
+}
+
+// Other modules (openWork) wait for the overlays before giving up on an id.
+// Bounded — a hung backend must not hold a deep link on "Loading song…" — and
+// merge-aware: overlays that land after the first render are folded into the
+// corpus BEFORE the caller looks again, so a brand-new pending song is found
+// without the archive. The cap is larger than OVERLAY_GRACE_MS on purpose.
+const OVERLAY_SETTLE_CAP_MS = 3000;
+window.whenOverlaysSettled = () => Promise.race([
+    (overlayPromise || Promise.resolve()).then(() => {
+        if (canonRows.length && builtOverlayVersion !== overlayVersion) rebuildCorpus();
+    }),
+    new Promise(resolve => setTimeout(resolve, OVERLAY_SETTLE_CAP_MS)),
+]);
 
 // Guards against a Retry click (or any other caller) overlapping an
 // in-flight loadIndex() — the function is otherwise re-entrant (it only
@@ -1435,7 +1586,10 @@ async function loadIndex() {
 
     try {
         // Only the canon blocks first paint. Song content (data/songs/{id}.pro)
-        // is fetched per song page; the archive follows when the browser idles.
+        // is fetched per song page; the archive is fetched only when something
+        // asks for an archived row. The Supabase overlays start NOW, in
+        // parallel with the index, and are raced against a grace period below.
+        const overlays = startOverlayFetch();
         const [canon, redirectsResponse] = await Promise.all([
             fetchJsonl('data/index.jsonl'),
             fetch('data/redirects.json').catch(() => null),
@@ -1453,9 +1607,17 @@ async function loadIndex() {
             }
         }
 
-        await fetchSupabaseOverlays();
+        // Give the overlays a moment to land so a pending row or a deletion
+        // is in the first paint; a slow backend is merged in when it answers.
+        await Promise.race([
+            overlays,
+            new Promise(resolve => setTimeout(resolve, OVERLAY_GRACE_MS)),
+        ]);
 
         const songs = rebuildCorpus();
+        // Cached promoted ids count at once, not only after the overlay
+        // fetch settles (supabase-js retries a failing GET for several seconds).
+        syncArchiveNeed();
 
         // A retry that succeeds clears both the flag and the banner a
         // previous failure left up.
@@ -1467,8 +1629,8 @@ async function loadIndex() {
         }
         updateSongbookCount(songs);
 
-        // Render collection cards on landing page
-        renderCollectionCards();
+        // (The landing page's collection cards are built when the home view is
+        // shown — below for a plain load, never for a deep link.)
 
         // Boot is over: history is under normal control from here on, and
         // pushHistoryState stops claiming the boot route. Set before the
@@ -1486,15 +1648,35 @@ async function loadIndex() {
                 history.replaceState({ view: 'home' }, '', window.location.pathname);
             }
         }
+        // The cards belong to the home view: a visitor headed for a song never
+        // builds them (or downloads their images) because this returns early
+        // unless the view is 'home'. Not gated on the deep-link result: some
+        // handlers (#request-song, #invite/<token>) return true yet leave the
+        // landing page showing. The currentView subscriber builds them on the
+        // way home otherwise.
+        renderCollectionCardsIfHome();
 
         // Fetch bounties in background (non-blocking, not needed for initial render)
         refreshBounties();
 
-        // Archive: everything the prune left off the shelf. Loaded after the
-        // first render so it costs nothing on the way to the home screen.
-        cancelArchiveIdle = whenIdle(() => loadArchive());
+        // Overlays that missed the grace period: merge them in now, and pull
+        // the archive in if they only make sense with it (a promotion of an
+        // archived work, a pending edit of one). Runs at once if they landed.
+        overlays.then(() => {
+            if (builtOverlayVersion !== overlayVersion) {
+                rebuildCorpus();
+                // The result list already on screen was drawn without them (a
+                // deleted song still in it, a pending one missing): draw it
+                // again from the merged corpus.
+                if (currentView === 'search' && searchInput?.value?.trim()) {
+                    search(searchInput.value);
+                }
+            }
+            syncArchiveNeed();
+        });
     } catch (error) {
         console.error('Failed to load index:', error);
+        overlayPromise = null;   // a Retry starts the overlays over with the index
         if (resultsDiv) {
             resultsDiv.innerHTML = `<div class="loading">Error loading songs: ${error.message}</div>`;
         }
@@ -1525,16 +1707,11 @@ async function refreshPendingSongs() {
     if (!supabase) return;
 
     try {
-        const { data, error } = await supabase
-            .from('pending_songs')
-            .select('*');
+        const rows = await fetchPendingOverlayRows(supabase);
+        if (!rows) return;
 
-        if (error || !data) {
-            console.warn('Could not refresh pending songs:', error);
-            return;
-        }
-
-        pendingRows = data.map(transformPendingRow);
+        pendingRows = rows;
+        syncArchiveNeed();
         rebuildCorpus();
 
         if (pendingRows.length > 0) {
@@ -1714,6 +1891,7 @@ async function handlePromoteSong() {
             return;
         }
         promotedIds.delete(song.id);
+        persistCuration();
         song.indexed = false;
         rebuildCorpus();
         alert(`Promotion of "${song.title}" undone.`);
@@ -1732,6 +1910,7 @@ async function handlePromoteSong() {
         return;
     }
     promotedIds.add(song.id);
+    persistCuration();
     song.indexed = true;
     rebuildCorpus();
     alert(`Promoted "${song.title}" to the songbook!\n\nIt is searchable right away — for you and for everyone who loads the site from now on.`);
@@ -1787,6 +1966,7 @@ async function confirmDeleteSelected(listEl, confirmBtn, statusEl) {
         statusEl.textContent = '';
         deleteModal?.classList.add('hidden');
         for (const id of ids) deletedIds.add(id);
+        persistCuration();
         rebuildCorpus();
         alert(`Deleted: ${ids.join(', ')}\n\nGone from the site right away; the next sync and rebuild make it permanent.`);
         goBack();
@@ -1855,6 +2035,9 @@ async function handleRequestSuppressSong() {
 async function handleRequestMergeSong() {
     const song = getCurrentSong();
     if (!song) return;
+
+    // The merge target can be any work, an archived one included.
+    await ensureArchiveLoaded();
 
     const outcome = await showMergeRequestDialog(song, { songs: allSongs });
     if (outcome === null) return; // cancelled
@@ -2200,7 +2383,7 @@ function openListsModal() {
  * Shared by every Export action so print and download can't drift apart on
  * which songs they think are in the list.
  */
-function resolveViewingList() {
+async function resolveViewingList() {
     const listId = getViewingListId();
     if (!listId) return null;
 
@@ -2214,6 +2397,8 @@ function resolveViewingList() {
 
     if (!list) return null;
 
+    // Print / export name every song: an archived one has to be loaded first.
+    await ensureArchiveForRefs(list.songs);
     const listSongs = list.songs
         .map(id => allSongs.find(s => s.id === id))
         .filter(Boolean);
@@ -2222,7 +2407,7 @@ function resolveViewingList() {
 }
 
 async function openPrintListView() {
-    const resolved = resolveViewingList();
+    const resolved = await resolveViewingList();
     if (!resolved) return;
     const { list, listSongs } = resolved;
 
@@ -2267,7 +2452,7 @@ async function handleListExport(action) {
         return;
     }
 
-    const resolved = resolveViewingList();
+    const resolved = await resolveViewingList();
     if (!resolved) return;
     const { list, listSongs } = resolved;
 
@@ -2757,6 +2942,7 @@ function init() {
         // client-side so the corpus stops serving the song immediately.
         onDeleteExecuted: (id) => {
             deletedIds.add(id);
+            persistCuration();
             rebuildCorpus();
         },
     });

@@ -3,7 +3,7 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 
 import {
     parseJsonl, fetchJsonl, markArchived, mergeCorpus, countDistinctTitles,
-    ensureStems, whenIdle, transformPendingRow, isPendingTablature,
+    ensureStems, transformPendingRow, isPendingTablature,
     isPendingMetadata, overlayPendingTabParts, applyPendingTabs,
     applyPendingMetadata,
 } from '../corpus.js';
@@ -369,35 +369,6 @@ describe('countDistinctTitles', () => {
             { title: 'Whiskey Before Breakfast' },
             { title: 'Pruned Tune', indexed: false },
         ])).toBe(2);
-    });
-});
-
-describe('whenIdle', () => {
-    it('uses requestIdleCallback when available', () => {
-        const ric = vi.fn(cb => { cb(); return 7; });
-        vi.stubGlobal('requestIdleCallback', ric);
-        const fn = vi.fn();
-        whenIdle(fn);
-        expect(ric).toHaveBeenCalled();
-        expect(fn).toHaveBeenCalled();
-        vi.unstubAllGlobals();
-    });
-
-    it('falls back to a timeout, and the canceller stops it', () => {
-        vi.stubGlobal('requestIdleCallback', undefined);
-        vi.useFakeTimers();
-        const fn = vi.fn();
-        const cancel = whenIdle(fn, 2000);
-        cancel();
-        vi.advanceTimersByTime(5000);
-        expect(fn).not.toHaveBeenCalled();
-
-        const fn2 = vi.fn();
-        whenIdle(fn2, 2000);
-        vi.advanceTimersByTime(2000);
-        expect(fn2).toHaveBeenCalled();
-        vi.useRealTimers();
-        vi.unstubAllGlobals();
     });
 });
 

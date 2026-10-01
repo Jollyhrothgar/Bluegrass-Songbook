@@ -326,7 +326,10 @@ rights, not speed:
    RLS allows any authenticated user to insert rows they own; in-place update
    of an existing row stays owner-or-trusted.
 2. The song appears immediately in search (`refreshPendingSongs()` merges the
-   overlay at load time).
+   overlay at load time). The boot overlay selects only the columns the merge
+   needs (`corpus.PENDING_OVERLAY_COLUMNS`, no `content`) plus an id-only
+   query for rows with a body; the text is read per row when the song is
+   opened (`select('content').eq('id', …)`).
 3. `auto-commit-song` verifies row ownership, enforces the durable per-user
    rate limit, classifies the change, and fires the `pending-commit`
    repository_dispatch.

@@ -150,6 +150,7 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 | `arrangement-pill.spec.js` | Multi-version groups: pill listing, navigation, vote gating (replaces the old version-picker modal tests) |
 | `navigation.spec.js` | Top-band nav links, deep links, `#song`→`#work` redirect, history |
 | `landing-page.spec.js` | Collection cards, landing search, URL routing |
+| `boot-data.spec.js` | What boot downloads and when: cards built only for the home view, archive fetched on demand (deep link, Dungeon, lists, promotion rescue), lean pending overlay + content read on open, cached deletions applied before the overlays land, legacy-ID map only for lists that need it |
 | `favorites.spec.js` | Empty state, adding/removing songs, viewing favorites |
 | `list-management.spec.js` | List CRUD via picker + Song Lists view, sharing buttons |
 | `editor.spec.js` | Add-song picker flow, `#add`/`#edit` deep links, editor fields, validation |

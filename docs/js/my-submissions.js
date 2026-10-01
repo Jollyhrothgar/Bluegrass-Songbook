@@ -151,6 +151,19 @@ async function fetchSubmissions(user) {
     if (logResult.error) throw logResult.error;
     const pendingRows = pendingResult.error ? [] : (pendingResult.data || []);
 
+    // "In the songbook" means the target resolves to a durable work — archive
+    // included, and the archive is fetched on demand. Only a target the canon
+    // doesn't hold makes it worth loading.
+    if (window.isArchiveLoaded?.() === false) {
+        const held = realCorpusIds();
+        // A brand-new song (song_submit) is not in the canon until the next
+        // build and cannot be in the archive either: no reason to wait.
+        if ((logResult.data || []).some(r => r.target_id && r.action !== 'song_submit'
+            && !held.has(r.target_id))) {
+            await window.ensureArchiveLoaded();
+        }
+    }
+
     return buildSubmissionRows(logResult.data || [], pendingRows, realCorpusIds());
 }
 
