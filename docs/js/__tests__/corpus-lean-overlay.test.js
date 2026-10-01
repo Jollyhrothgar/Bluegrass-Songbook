@@ -59,7 +59,8 @@ describe('transformPendingRow — lean rows', () => {
         const row = transformPendingRow(leanSong());
         expect(row).toMatchObject({ id: 'a-new-song', has_content: true, deferred_content: true, source: 'pending' });
         expect('content' in row).toBe(false);
-        expect(row.first_line).toBe('');
+        expect('first_line' in row).toBe(false);
+        expect('lyrics' in row).toBe(false);
         expect(row.status).toBeUndefined();
     });
 
@@ -129,6 +130,14 @@ describe('mergeCorpus with a lean pending song', () => {
         expect(merged).toMatchObject({ source: 'pending', deferred_content: true, has_content: true });
         expect('content' in merged).toBe(false);   // an undefined key would have clobbered the base
         expect(songs.filter(s => s.id === 'rocky-top')).toHaveLength(1);
+    });
+
+    it('a deferred edit keeps the published first line and lyrics searchable', () => {
+        const canon = [{ ...CANON[0], first_line: 'Wish that I was on old Rocky Top', lyrics: 'wish that i was on old rocky top down in the tennessee hills' }];
+        const pending = [transformPendingRow(leanSong({ id: 'rocky-top', replaces_id: 'rocky-top', title: 'Rocky Top' }))];
+        const merged = mergeCorpus({ canon, pending }).songs.find(s => s.id === 'rocky-top');
+        expect(merged.first_line).toBe('Wish that I was on old Rocky Top');
+        expect(merged.lyrics).toContain('tennessee hills');
     });
 
     it('a fork advertises the pending take by id instead of by text', () => {

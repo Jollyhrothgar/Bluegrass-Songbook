@@ -807,8 +807,10 @@ a lean tab part carries `content_deferred`; a fork's pending arrangement
 carries `pending_id`. The text is read from `pending_songs` when the song
 opens: `song-content.js` `getPendingContent(id)` (fetcher installed by
 main.js), which `getSongContent`, `getArrangementContent` and `loadPartOtf`
-use. Trade-off: a *pending* song has no `first_line` / `lyrics` until the
-build publishes it, so it is found by title/artist, not by lyrics.
+use. Trade-off: a brand-new *pending* song has no `first_line` / `lyrics`
+until the build publishes it, so it is found by title/artist, not by lyrics.
+A pending EDIT of a published work is unaffected: the lean row omits those
+keys (never `''`), so the merge keeps the published work's values.
 
 **The landing cards belong to the home view.** `renderCollectionCardsIfHome()`
 builds them when the home view shows (and rebuilds them when the corpus

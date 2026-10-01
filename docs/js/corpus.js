@@ -249,8 +249,13 @@ function transformPendingSongRow(pending) {
         source: 'pending',
         replaces_id: pending.replaces_id,
         created_by: pending.created_by || null,
-        first_line: inline ? extractFirstLine(pending.content) : '',
-        lyrics: inline ? extractLyrics(pending.content) : '',
+        // Same rule as `content` above: a lean row omits these keys rather
+        // than setting them to '', because the merge spreads this row over a
+        // published work it edits, and '' would wipe that work's first line
+        // and lyrics out of search until the commit lands.
+        ...(inline
+            ? { first_line: extractFirstLine(pending.content), lyrics: extractLyrics(pending.content) }
+            : {}),
     };
 }
 
