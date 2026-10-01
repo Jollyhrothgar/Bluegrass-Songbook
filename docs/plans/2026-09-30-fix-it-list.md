@@ -24,25 +24,25 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 
 | ID | Item | Size | Branch | Status |
 |----|------|------|--------|--------|
-| A1 | List ownership RPCs + list read policies | M | `bug/list-security` | in progress |
-| A2 | Analytics `log_events` broken since 2026-01-07 | S | `bug/list-security` | in progress |
-| A3 | Shared list links show 0 songs | S | `bug/list-security` | in progress |
-| A4 | Lyrics outside section tags render blank | S | `bug/chordpro-untagged-lines` | in progress |
-| A5 | Sign-in at Submit loses the work (both editors) | S–M | `bug/editor-lifecycle` | in progress |
-| A6 | Setlist keys Eb/Ab/Bb and minor keys ignored | S | `bug/setlist-keys-not-found` | in progress |
-| A7 | Editor stays on screen after navigating away | S | `bug/editor-lifecycle` | in progress |
-| A8 | Practice line: Strum Machine + YouTube search | S | `feature/practice-line-contrast` | in progress |
-| A9 | Dark-mode contrast + undefined CSS variables | S | `feature/practice-line-contrast` | in progress |
-| A10 | Deleted-duplicate URLs say "Song not found" | S | `bug/setlist-keys-not-found` | in progress |
-| A11 | Stale / wrong editor copy | S | `bug/editor-lifecycle` | in progress |
-| B1 | Collection thumbnails 5.35 MB → ~50 KB | S | `feature/perf-thumbnails` (+ render gating in `feature/perf-boot-data`) | in progress |
-| B2 | Archive loads on every page | M | `feature/perf-boot-data` | in progress |
-| B3 | First render waits on Supabase, no timeout | M | `feature/perf-boot-data` | in progress |
-| B4 | Render-blocking third-party scripts | S | `feature/perf-boot-head` | in progress |
-| B5 | Theme flash; OS preference ignored | S | `feature/perf-boot-head` | in progress |
-| B6 | Legacy-ID map fetched for everyone | S | `feature/perf-boot-data` | in progress |
-| B7a | Route-specific modules loaded at boot | M | `feature/perf-lazy-modules` | in progress |
-| B7b | Service worker, prefetch, double renders | M | `feature/perf-sw-render` | in progress |
+| A1 | List ownership RPCs + list read policies | M | `bug/list-security` | review passed — needs prod `db-push` |
+| A2 | Analytics `log_events` broken since 2026-01-07 | S | `bug/list-security` | review passed — needs prod `db-push` |
+| A3 | Shared list links show 0 songs | S | `bug/list-security` | review passed |
+| A4 | Lyrics outside section tags render blank | S | `bug/chordpro-untagged-lines` | review passed |
+| A5 | Sign-in at Submit loses the work (both editors) | S–M | `bug/editor-lifecycle` | review passed |
+| A6 | Setlist keys Eb/Ab/Bb and minor keys ignored | S | `bug/setlist-keys-not-found` | review passed |
+| A7 | Editor stays on screen after navigating away | S | `bug/editor-lifecycle` | review passed |
+| A8 | Practice line: Strum Machine + YouTube search | S | `feature/practice-line-contrast` | review passed |
+| A9 | Dark-mode contrast + undefined CSS variables | S | `feature/practice-line-contrast` | review passed |
+| A10 | Deleted-duplicate URLs say "Song not found" | S | `bug/setlist-keys-not-found` | review passed |
+| A11 | Stale / wrong editor copy | S | `bug/editor-lifecycle` | review passed |
+| B1 | Collection thumbnails 5.35 MB → ~50 KB | S | `feature/perf-thumbnails` (+ render gating in `feature/perf-boot-data`) | review passed |
+| B2 | Archive loads on every page | M | `feature/perf-boot-data` | review passed |
+| B3 | First render waits on Supabase, no timeout | M | `feature/perf-boot-data` | review passed |
+| B4 | Render-blocking third-party scripts | S | `feature/perf-boot-head` | review passed |
+| B5 | Theme flash; OS preference ignored | S | `feature/perf-boot-head` | review passed |
+| B6 | Legacy-ID map fetched for everyone | S | `feature/perf-boot-data` | review passed |
+| B7a | Route-specific modules loaded at boot | M | `feature/perf-lazy-modules` | review passed — rebase before merge |
+| B7b | Service worker, prefetch, double renders | M | `feature/perf-sw-render` | review passed |
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
 | D1–D7 | Library building blocks | L | — | blocked on C1 |
@@ -69,13 +69,117 @@ this order and rebase the rest after each merge:
 Open PR #271 (`feature/responsive-toolbar`, top band) also edits `shell.js` and
 `style.css`; land it before or after the A8/A9 branch, not interleaved.
 
+Integration check (2026-09-30): branches 1–9 merge in this order with no
+conflicts, and the combined tree passes 127 vitest files / 3,129 tests and the
+full Playwright suite (402/402). `feature/perf-lazy-modules` conflicts with
+the combined tree in `docs/index.html`, `docs/js/main.js`,
+`docs/js/work-view.js`, `docs/js/sw-strategy.js` and its test, so rebase it
+onto main after the others land. Its unit test names the exact
+modulepreload / `LAZY_MODULE_URLS` differences to fix after the rebase.
+
 ### Production steps
 
-- **A1/A2**: the migration in `bug/list-security` must be applied with
-  `./scripts/utility db-push` (dry run first) and then checked with
-  `./scripts/utility db-check`. Also list the live policies on
-  `user_lists`, `user_list_items` and `list_followers` afterwards: policies
-  created in the dashboard are not in the repo and would still grant reads.
+**A1/A2** — migrations `20260930000000_list_ownership_and_read_policies.sql`
+and `20260930010000_fix_log_events_search_path.sql` in `bug/list-security`.
+Nothing has been applied to production. In order:
+
+1. `./scripts/utility db-push` and read the dry run. Expect NOTICEs for
+   `backfilled owners on N legacy list(s)` (lists created before multi-owner
+   had an empty `owners`; without the backfill the new read policy would hide
+   them from their creators), one `dropping read policy …` per SELECT policy
+   removed, and `keeping ALL policy …` for any ALL policy kept. If it aborts on
+   the ALL-policy postcondition, a dashboard-made `ALL … TO public` policy
+   exists and needs a look.
+2. `./scripts/utility db-check`. The four new invariants
+   (`lists.reads-closed`, `add_list_owner.locked`,
+   `remove_list_owner.self-only`, `log_events.qualified`) fail before the push
+   by design.
+3. `psql "$PROD_DB_URL" -X -f supabase/tests/post_deploy_check.sql`: no FAIL
+   rows. Read the INSPECT rows: `submit_flag` and `get_visitor_flag_count`
+   exist only in production (their CREATE is not in the repo), so their bodies
+   are printed for a human to check for unqualified table names.
+4. `psql "$PROD_DB_URL" -X -f supabase/tests/post_deploy_probe.sql`: the last
+   line must be `NOTICE: PASS: post_deploy_probe.sql` with no ERROR line. It
+   runs inside a rolled-back transaction.
+5. Browser smoke test: a signed-out share link shows its songs; Follow, Claim
+   and Leave work; an older account's lists still show after sign-in; the
+   Network tab shows `rpc/log_events` returning 200.
+6. Re-record `tests/fixtures/schema/live_public_schema.sql` from
+   `supabase db dump --schema public`.
+
+The local harness (`supabase/tests/run.sh`, Docker) replays every migration
+and runs all of the above against a throwaway local stack; see
+`supabase/tests/README.md`.
+
+**B7b** — no data steps. On the first deploy, check that a returning browser
+picks up the new `sw.js` and shows the "Updated — reload" toast. An
+intermittent navigation hang during service-worker handover was seen in
+headless Chromium on main (4/40) and on the branch (8/40); watch for it.
+
+### Follow-ups found during the 2026-09-30 run
+
+Not fixed in the branches above, recorded so they are not lost. Each names
+the plan item it belongs with.
+
+- **Lists / sync (C1, D5)**
+  - `handleInviteLink` (main.js) reads `result.error` as a string (shows
+    `[object Object]`) and `result.list_id` (undefined; the shape is
+    `{ data: { list_id }, error }`).
+  - `fetchCloudLists`'s orphan-repair loop updates rows the new owners-only
+    policy filters out, and can resurrect a list its creator left.
+  - `is_list_owner` / `is_list_follower` accept any user id, so a signed-in
+    user can probe membership if they know both UUIDs. `claim_list_invite`
+    does not guard `auth.uid() IS NULL`.
+  - `getOrCreateFavoritesList` (supabase-auth.js) has no callers and would
+    fail under the new INSERT policy; delete it.
+  - The analytics re-queue cap does not actually cap a poison batch; bounded,
+    not a loop.
+  - `supabase/tests/baseline/` reconstructs dashboard-made tables for the
+    local harness; committing real CREATE migrations from a production dump
+    would retire it.
+- **Editors (E2)**
+  - Navigating to `#add` while editing an existing song resets the editor
+    without the leave prompt (the view stays `add-song`).
+  - `enterEditMode` for a different song while the editor has edits
+    overwrites them silently.
+  - After a successful new-song submit the editor keeps the text, so the next
+    Add Song shows it.
+  - The lead-sheet editor still has no persistent draft (the A5 return record
+    only covers the sign-in trip); the tab submit panel's comment is not kept
+    across sign-in.
+- **Parser (E1)**: the `\u0001` in-section comment marker from A4 should
+  become a structured line in the shared parser; an unterminated
+  `{start_of_tab}` or `{start_of_abc}` swallows the rest of the song.
+- **Keys / redirects (D4, data)**
+  - List items stored under a legacy id that `redirects.json` maps lose their
+    key override (metadata is looked up by the resolved id).
+  - List-row key badges show the raw stored key (`D#`); the work-view key
+    pickers are major-only.
+  - `deleted_songs.json` should record a survivor pointer; the A10 id-stem
+    rule covers only same-stem duplicates (3 of the 5 current deleted ids).
+- **Contrast (F1)**: `.auth-toast` is white on `--success` (1.74:1 in dark);
+  `.collection-image` falls back to white on accent; hardcoded Flat-UI and
+  Bootstrap reds (`#e74c3c`, `#dc3545`) on danger hovers;
+  `images/strum_machine.png` is now unreferenced.
+- **Speed (B, C2)**
+  - 46 canon groups (~1.9%) have an archived sibling, which the "N versions"
+    badge and arrangement pill miss until something loads the archive.
+    **Owner decision**: accept, or have the build emit a group size.
+  - `#list/<id>/<song>` still builds the landing cards; overlays that land
+    after the 800 ms grace re-run search but do not redraw an open list view.
+  - Favorites deep links wait for the whole archive when favorites hold any
+    id the canon lacks.
+  - Offline: an archived song in a list works offline only after it was
+    opened online once; offline boot waits ~7 s on the Supabase overlay
+    retries; abcjs is not precached, so offline ABC shows raw text.
+  - The service worker now precaches ~45 lazy modules (~250 KB gzip) at first
+    install, off the critical path.
+  - GitHub Pages sends `max-age=600`, so a deploy reaches returning visitors
+    up to 10 minutes late.
+  - Other pages (about, blog, chord-explorer) do not follow the OS theme.
+  - Large unaudited images: `images/Mike.png` (4.4 MB), `images/waltz.png`.
+- **Navigation (D6)**: after going back from a song to search, Forward is
+  lost because the search view pushes a new history entry.
 
 ---
 
