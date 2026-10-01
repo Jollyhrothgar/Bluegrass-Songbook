@@ -72,3 +72,14 @@ describe('no hardcoded white text on accent / danger fills', () => {
         expect(offenders).toEqual([]);
     });
 });
+
+describe('dungeon mode accent', () => {
+    it('overrides --on-accent so text stays readable on its dark red --accent', () => {
+        const css = sources.map(([, c]) => c).join('\n');
+        const m = css.match(/body\.dungeon-mode\s*\{([^}]*)\}/);
+        expect(m).not.toBeNull();
+        const accent = m[1].match(/--accent\s*:\s*(#[0-9a-f]{6})/i)[1];
+        const on = m[1].match(/--on-accent\s*:\s*(#[0-9a-f]{6})/i)[1];
+        expect(contrast(on, accent)).toBeGreaterThanOrEqual(4.5);
+    });
+});

@@ -957,7 +957,7 @@ Songs with matching Strum Machine backing tracks get a link in the always-visibl
 
 - Matching done via title normalization (handles "The", parenthetical suffixes)
 - Opens Strum Machine in new tab with current key
-- 605+ songs matched
+- 709 songs matched
 - Cache in `docs/data/strum_machine_cache.json`
 
 ### Covering Artists

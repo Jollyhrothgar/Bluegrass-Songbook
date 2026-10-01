@@ -7049,6 +7049,7 @@ a.my-submission-row:hover {
 /* Dungeon mode: blood-red accent while browsing the archive */
 body.dungeon-mode {
     --accent: #b91c1c;
+    --on-accent: #ffffff;
 }
 
 body.dungeon-mode #search-stats {
@@ -10971,7 +10972,7 @@ body.has-list-context.has-bottomband .container {
     top: 0.04rem;
     width: 0.22rem;
     height: 0.45rem;
-    border: solid #fff;
+    border: solid var(--on-accent);
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
