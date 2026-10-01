@@ -55,6 +55,7 @@ import {
     tabEntryPlan, renderExistingTabsPanel, partMatchesInstrument,
 } from './otf-editor/existing-tabs.js';
 import { bindBandToEditor } from './tab-edit-band.js';
+import { registerReturnSource } from './auth-return.js';
 import {
     TabRenderer, TabPlayer,
     TimelineTiming, identityTimeline, readingListTimeline,
@@ -94,6 +95,7 @@ let activeEditSession = null;    // live tab edit session (torn down on nav)
 let pendingTabEdit = null;       // parked "open this tab in the editor" ask
 let pendingDraft = null;         // {id, otf, …} a `?draft=` route asked for
 let activeEditBand = null;       // bottom band bound to the live editor
+let unregisterTabReturn = null;  // auth-return source for the live tab editor
 let tabAuthoring = null;         // {kind:'add'|'new', part, take, target, otf}
 let takeStatusLine = null;       // "Submitted — live now…" under the take header
 
@@ -2728,7 +2730,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         { OTFEditor },
         { createTabEditSession, resolveEditTrackId },
         { submitTab },
-        { createAutosaver, getDraftStore },
+        { createAutosaver, getDraftStore, draftOpenHash },
     ] = await Promise.all([
         import('./otf-editor/editor.js'),
         import('./otf-editor/work-edit.js'),
@@ -2803,6 +2805,15 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         }),
     }] : [];
 
+    // Submitting signed out sends the browser to Google and back, and the
+    // autosave's 1s trailing edge may not have fired yet. Write the draft NOW
+    // (the return record names it by id), before the gate starts the redirect.
+    const flushDraftBeforeSignIn = async (doc) => {
+        if (window.SupabaseAuth?.isLoggedIn?.()) return;
+        autosave.save(doc);
+        await autosave.flush();
+    };
+
     activeEditSession = createTabEditSession({
         mount: container,
         otf,
@@ -2858,8 +2869,14 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
             }
         },
         onSubmit: isNewTake
-            ? (doc) => submitAuthoredTake(doc, part)
-            : (doc, comment) => submitTabCorrection(doc, part, comment, submitTab),
+            ? async (doc) => {
+                await flushDraftBeforeSignIn(doc);
+                return submitAuthoredTake(doc, part);
+            }
+            : async (doc, comment) => {
+                await flushDraftBeforeSignIn(doc);
+                return submitTabCorrection(doc, part, comment, submitTab);
+            },
         onSubmitted: (result, doc) => {
             // Submitted: the draft has served its purpose.
             autosave.clear().catch(() => {});
@@ -2870,6 +2887,23 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
 
     activeEditBand = bindBandToEditor(controls, activeEditSession.editor, {
         actions: barHost,
+    });
+
+    // The sign-in redirect comes back to this take, on this draft (auth-return.js).
+    // Only while THIS session is the live one: a torn-down editor must not be
+    // what a later sign-in returns to.
+    const session = activeEditSession;
+    const returnWorkId = currentWork?.provisional ? null : (currentWork?.id || null);
+    const returnTakeRef = isNewTake ? null : takeEditRef(part);
+    unregisterTabReturn?.();
+    unregisterTabReturn = registerReturnSource(() => {
+        if (activeEditSession !== session) return null;
+        return {
+            kind: 'tab',
+            hash: autosave.draftId
+                ? draftOpenHash({ id: autosave.draftId, workId: returnWorkId, takeRef: returnTakeRef })
+                : window.location.hash,
+        };
     });
 
     // The editor is a URL, so a reload (or a link to a reviewer) comes back

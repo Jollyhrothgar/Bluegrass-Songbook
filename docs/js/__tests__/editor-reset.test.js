@@ -35,9 +35,6 @@ function buildDom() {
                 <input type="text" id="editor-title">
                 <input type="text" id="editor-artist">
                 <input type="text" id="editor-writer">
-                <div id="edit-comment-row" class="hidden">
-                    <textarea id="editor-comment"></textarea>
-                </div>
             </div>
             <div class="editor-workspace">
                 <div class="editor-pane editor-pane-raw">
@@ -57,8 +54,6 @@ function buildDom() {
         editorWriter: document.getElementById('editor-writer'),
         editorContent: document.getElementById('editor-content'),
         editorPreviewContent: document.getElementById('editor-preview-content'),
-        editorComment: document.getElementById('editor-comment'),
-        editCommentRow: document.getElementById('edit-comment-row'),
         editorStatus: document.getElementById('editor-status'),
         editorSubmitBtn: document.getElementById('editor-submit-btn'),
         metadataSummary: document.getElementById('metadata-summary'),
@@ -80,8 +75,6 @@ function expectFreshNewSongEditor() {
     expect(refs.editorArtist.value).toBe('');
     expect(refs.editorWriter.value).toBe('');
     expect(refs.editorContent.value).toBe('');
-    expect(refs.editorComment.value).toBe('');
-    expect(refs.editCommentRow.classList.contains('hidden')).toBe(true);
     expect(refs.metadataSummary.textContent).toBe('Untitled song — tap to name');
     expect(refs.metadataFields.classList.contains('hidden')).toBe(true);
     expect(refs.editorSubmitBtn.textContent).toBe('Submit to Songbook');

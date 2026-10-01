@@ -176,8 +176,10 @@ test.describe('Editor State Reset', () => {
         // Type a draft into the textarea
         await page.locator('#editor-content').fill('[G]Working on my draft');
 
-        // Leave for home, then come back via Add Song
+        // Leave for home (the unsaved-draft prompt asks first; leaving keeps
+        // the draft in this tab), then come back via Add Song
         await page.locator('#topbar-brand').click();
+        await page.locator('#editor-leave-modal [data-choice="discard"]').click();
         await expect(page.locator('#landing-page')).toBeVisible();
 
         await openAddSongEditor(page);

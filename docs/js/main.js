@@ -54,7 +54,11 @@ import { renderBountyView } from './bounty-view.js';
 import { renderMySubmissionsView } from './my-submissions.js';
 import { renderHighScoresView } from './high-scores.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
-import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
+import {
+    initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView,
+    editorHasUnsavedChanges, editorSessionInfo, promptUnsavedChanges, closeUnsavedPrompt, unsavedPromptOpen,
+    stageEditorRestore, applyEditorRestore, refreshEditorOwnership
+} from './editor.js';
 import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill, setBanner } from './shell.js';
@@ -71,6 +75,7 @@ import {
 } from './corpus.js';
 import { getSongContents } from './song-content.js';
 import { showToast } from './toast.js';
+import { AUTH_REDIRECT, persistReturnRecord, takeReturnRecord, pruneReturnRecord } from './auth-return.js';
 import { initPWA, canInstall, promptInstall } from './pwa.js';
 import { renderDraftsView } from './drafts-view.js';
 import { getDraftStore, migrateLegacyDraft, parseHashParams } from './drafts.js';
@@ -145,8 +150,6 @@ const editorSaveBtn = document.getElementById('editor-save');
 const editorSubmitBtn = document.getElementById('editor-submit');
 const editorStatus = document.getElementById('editor-status');
 const editorNashville = document.getElementById('editor-nashville');
-const editorComment = document.getElementById('editor-comment');
-const editCommentRow = document.getElementById('edit-comment-row');
 const hintsBtn = document.getElementById('chordpro-hints-btn');
 const hintsPanel = document.getElementById('chordpro-hints-panel');
 const hintsBackdrop = document.getElementById('chordpro-hints-backdrop');
@@ -379,11 +382,35 @@ function showView(mode) {
     setCurrentView(mode);
 }
 
+/**
+ * The editor was navigated away from with edits that were never submitted
+ * (hash change, Back, a link). The navigation has already happened, so the
+ * prompt sits over the new view; "Keep editing" routes straight back to the
+ * editor, whose state exitEditMode() has deliberately not been allowed to
+ * touch yet.
+ */
+async function guardEditorExit() {
+    const { isEdit, songId } = editorSessionInfo();
+    const choice = await promptUnsavedChanges();
+    if (choice === 'keep') {
+        if (isEdit) pushHistoryState('edit', { songId });
+        else pushHistoryState('add-song');
+        showView('add-song');
+    } else if (choice === 'discard') {
+        exitEditMode();
+    }
+    // 'cancelled': the user came back to the editor some other way
+}
+
 // Subscribe to view changes and update DOM accordingly
 function initViewSubscription() {
     const searchContainer = document.querySelector('.search-container');
+    let previousView = null;
 
     subscribe('currentView', (view) => {
+        const leftEditor = previousView === 'add-song' && view !== 'add-song';
+        previousView = view;
+
         // Tear down live tablature state when LEAVING the song page: stops
         // audio (including an in-flight soundfont load), destroys the edit
         // session and renderer observers.
@@ -411,9 +438,17 @@ function initViewSubscription() {
         // Close any open editor hints panel
         closeHints();
 
-        // Exit edit mode when navigating away from the editor
+        // Exit edit mode when navigating away from the editor — unless there
+        // are unsubmitted edits, in which case ask first (and leave the
+        // editor's state alone until the answer).
         if (view !== 'add-song') {
-            exitEditMode();
+            if (leftEditor && editorHasUnsavedChanges()) {
+                guardEditorExit();
+            } else if (!unsavedPromptOpen()) {
+                exitEditMode();
+            }
+        } else {
+            closeUnsavedPrompt();
         }
 
         // The review queue sits above the results list, so it belongs to the
@@ -795,6 +830,39 @@ async function openTabRoute(route, hash) {
         return;
     }
     openWork(workId, { fromDeepLink: true, editRef: route.partRef, draft });
+}
+
+/**
+ * The page just came back from the Google sign-in redirect. Put the user back
+ * where they were: route to the recorded hash and let the open editor restore
+ * its state (auth-return.js). Never submits anything on their behalf.
+ *
+ * @param {{signedIn: boolean}} options - false when the redirect came back with
+ *   an error (consent refused): the work is restored all the same.
+ */
+async function resumeAfterAuthRedirect({ signedIn }) {
+    const record = takeReturnRecord();
+    if (!record) return;
+    await bootRouted;
+
+    const message = signedIn
+        ? 'Signed in \u2014 ready to submit'
+        : 'Sign-in did not finish \u2014 your work is still here';
+    if (record.kind === 'lead-sheet' && record.state) {
+        stageEditorRestore(record.state, { message });
+    }
+
+    // Replace the token-bearing URL with the route we left, then route it the
+    // way a fresh load of that URL would (#add, #edit/{id}, a tab route with
+    // its ?draft=, or any other page).
+    history.replaceState(null, '', window.location.pathname + record.hash);
+    handleDeepLink();
+
+    if (record.kind === 'lead-sheet') {
+        applyEditorRestore();       // the new-song editor; an edit's waits for enterEditMode
+    } else if (record.kind === 'tab') {
+        showToast(message, { duration: 6000 });
+    }
 }
 
 function handleDeepLink() {
@@ -1343,6 +1411,13 @@ async function fetchSupabaseOverlays() {
 // fetch rather than fixing a correctness bug.
 let indexLoadInFlight = false;
 
+// Settles once the boot URL has been routed (or the load gave up): from then
+// on it is safe to route somewhere ELSE on purpose. The sign-in return waits
+// for it, or the boot tail would route the token-bearing URL to home right
+// over the top of the route it restored.
+let resolveBootRouted;
+const bootRouted = new Promise(resolve => { resolveBootRouted = resolve; });
+
 async function loadIndex() {
     if (indexLoadInFlight) return;
     indexLoadInFlight = true;
@@ -1427,6 +1502,7 @@ async function loadIndex() {
         );
     } finally {
         indexLoadInFlight = false;
+        resolveBootRouted();
     }
 }
 
@@ -2042,6 +2118,7 @@ function initAuthModal() {
     // Google sign-in button within auth modal
     authGoogleBtn?.addEventListener('click', async () => {
         closeAuthModal();
+        persistReturnRecord();
         await SupabaseAuth.signInWithGoogle();
     });
 
@@ -2713,8 +2790,6 @@ function init() {
         editorSubmitBtn,
         editorStatus,
         editorNashville,
-        editorComment,
-        editCommentRow,
         hintsBtn,
         hintsPanel,
         hintsBackdrop,
@@ -2887,6 +2962,8 @@ function init() {
     });
 
     // Initialize Supabase auth
+    let authReturnHandled = false;
+    pruneReturnRecord();
     if (typeof SupabaseAuth !== 'undefined') {
         SupabaseAuth.init();
         SupabaseAuth.onAuthChange((event, user) => {
@@ -2898,6 +2975,17 @@ function init() {
             if (event === 'SIGNED_IN' && user) {
                 checkPendingInvite();
                 closeAuthModal();
+            }
+            // What the editor promises ("updates in place" vs "your own
+            // arrangement") depends on who is signed in
+            if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
+                refreshEditorOwnership();
+            }
+            // This page load IS the return from the Google redirect: go back
+            // to what the user was doing (once — later events must not replay it)
+            if (user && AUTH_REDIRECT === 'signed-in' && !authReturnHandled) {
+                authReturnHandled = true;
+                resumeAfterAuthRedirect({ signedIn: true });
             }
             // Handle password recovery flow (user clicked reset link in email)
             if (event === 'PASSWORD_RECOVERY') {
@@ -2943,6 +3031,10 @@ function init() {
 
     // Load the index
     loadIndex();
+
+    // Came back from the redirect WITHOUT signing in (consent refused, error):
+    // the work is still worth restoring
+    if (AUTH_REDIRECT === 'error') resumeAfterAuthRedirect({ signedIn: false });
 }
 
 // Start the app

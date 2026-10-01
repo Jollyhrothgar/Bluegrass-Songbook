@@ -1,6 +1,7 @@
 // Utility functions for Bluegrass Songbook
 
 import { songHasContent } from './song-content.js';
+import { persistReturnRecord } from './auth-return.js';
 
 // ============================================
 // ESCAPING — two functions, two jobs.
@@ -270,9 +271,14 @@ export function hasMultipleParts(song) {
  * Gate contribution actions behind login.
  * If not logged in, triggers Google sign-in and returns false.
  * Usage: if (!requireLogin('add songs')) return;
+ *
+ * Sign-in is a full-page redirect, so this leaves a return record first
+ * (the route, plus whatever the open editor registered — see auth-return.js);
+ * main.js uses it to put the user back where they were.
  */
 export function requireLogin(actionDescription) {
     if (window.SupabaseAuth?.isLoggedIn?.()) return true;
+    persistReturnRecord();
     window.SupabaseAuth?.signInWithGoogle?.();
     return false;
 }

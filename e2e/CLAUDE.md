@@ -90,6 +90,15 @@ sb.assertClean();          // nothing un-mocked, nothing off-box
 - **Signing in FAILING** is a route too: `signInWithOAuth` navigates to
   `/auth/v1/authorize`, and the mock serves a page carrying `#e2e-oauth-gate`.
   That is what "the login gate appeared" means in an assertion.
+- **Signing in SUCCEEDING** (`{ signedIn: false, oauthReturn: true }`): the
+  authorize route answers with a 302 back to `redirect_to` carrying
+  `#access_token=…` in the fragment, exactly as Google + Supabase do, and the
+  mock is signed in from then on. The browser really leaves and comes back, so
+  a test sees what a redirect destroys. **Never stub `signInWithGoogle` with a
+  no-op to test a sign-in flow** — the page never unloads and the lost-route /
+  lost-draft bug (A5) is invisible. (`editor.spec.js` keeps a stub for the
+  narrower "the gate fires and the draft stays" assertion only.)
+  `e2e/editor-lifecycle.spec.js` is the model.
 - **`assertClean()`** fails on two things: a Supabase path the mock does not
   understand (the app grew a call; teach the helper) and any request to a host
   that is not localhost or jsdelivr (a test was talking to production).
