@@ -44,11 +44,12 @@ describe('loadPartOtf', () => {
         expect(fetchImpl).not.toHaveBeenCalled();
     });
 
-    it('still fetches a published take, revalidating the way it always did', async () => {
+    it('still fetches a published take — with no cache override, freshness is the service worker\'s', async () => {
         const fetchImpl = vi.fn(async () => ({ ok: true, json: async () => OTF }));
         const part = publishedTake();
         expect(await loadPartOtf(part, fetchImpl)).toEqual(OTF);
-        expect(fetchImpl).toHaveBeenCalledWith(part.file, { cache: 'no-cache' });
+        expect(fetchImpl).toHaveBeenCalledTimes(1);
+        expect(fetchImpl.mock.calls[0]).toEqual([part.file]);
     });
 
     it('reports a failed fetch by file, as before', async () => {

@@ -27,9 +27,11 @@ import {
     abcIsPlaying, setAbcIsPlaying,
     abcPlaybackSession, incrementAbcPlaybackSession,
     // Navigation state
-    listContext, setListContext
+    listContext, setListContext,
+    allSongs
 } from './state.js';
-import { escapeHtml, safeUrl } from './utils.js';
+import { escapeHtml, safeUrl, parseItemRef } from './utils.js';
+import { prefetchSongContent } from './song-content.js';
 import {
     extractChords, detectKey,
     CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS, normalizeKeyForMode
@@ -63,16 +65,24 @@ export { parseChordPro };
 /**
  * Detect wrapped chord-lyrics lines and add a visual indicator.
  * A line is "wrapped" if its rendered height exceeds a single chord+lyrics pair.
+ * Exported for tests.
  */
-function markWrappedLines() {
+export function markWrappedLines() {
     const lines = document.querySelectorAll('.cl-line');
+    // Every layout READ first, then every class WRITE. Toggling a class
+    // between two measurements invalidates layout, so the old read-write-
+    // read-write loop forced a full reflow per line (hundreds per chart).
+    const wrapped = [];
     for (const line of lines) {
         // A single unwrapped line has one chord row + one lyrics row.
         // If the element is taller, it wrapped.
         const firstSeg = line.querySelector('.cl-segment');
         if (!firstSeg) continue;
         const singleLineHeight = firstSeg.offsetHeight;
-        line.classList.toggle('wrapped', line.scrollHeight > singleLineHeight + 2);
+        wrapped.push([line, line.scrollHeight > singleLineHeight + 2]);
+    }
+    for (const [line, isWrapped] of wrapped) {
+        line.classList.toggle('wrapped', isWrapped);
     }
 }
 
@@ -367,6 +377,10 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
 
     const { metadata, sections } = parseChordPro(chordpro);
     initKeyState(song, chordpro, isInitialRender);
+    // What this draw used, so work-view's key subscriber can tell a real
+    // transpose (key differs from the drawn one) from a late echo of the
+    // write this very render just made.
+    container.dataset.renderedKey = String(currentDetectedKey ?? '');
 
     // Separate ABC sections from chord sections
     const abcSections = sections.filter(s => s.type === 'abc');
@@ -640,6 +654,10 @@ export function updateNavBar() {
         // List context: the nav bar is the prev/next surface
         navBarEl.classList.remove('hidden');
         navBarEl.classList.add('has-list-context');
+
+        // The next song is the likeliest next tap: have its chart in memory
+        // by the time the reader gets there.
+        prefetchNextInList(listContext);
     } else {
         // No list context: no nav bar
         navBarEl.classList.remove('has-list-context');
@@ -651,6 +669,19 @@ export function updateNavBar() {
 
     // Keep the body-level list-context flag in sync
     updateListContextClass();
+}
+
+/**
+ * Warm the ChordPro of the song after the current one in a list. A
+ * part-qualified item ("work/banjo") may open a tab instead of the lead
+ * sheet, so it is left alone. Exported for tests.
+ */
+export function prefetchNextInList(context) {
+    const next = context?.songIds?.[context.currentIndex + 1];
+    if (!next) return;
+    const { workId, partId } = parseItemRef(next);
+    if (partId) return;
+    prefetchSongContent(allSongs.find(s => s.id === workId));
 }
 
 /**

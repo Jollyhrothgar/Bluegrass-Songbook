@@ -160,6 +160,8 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 | `ui.spec.js` | Theme toggle (top band), auto-hiding chrome, overflow menu, pref persistence |
 | `abc-notation.spec.js` | ABC sheet music display, bottom-band playback controls |
 | `error-states.spec.js` | Not-found states, invalid URLs, graceful errors |
+| `render-counts.spec.js` | A lead sheet / tab is drawn ONCE per open (MutationObserver counters), incl. back/forward (popstate + hashchange de-dup) |
+| `sw-and-prefetch.spec.js` | Real service worker (registers, preload, cache sweep, `.pro` SWR, offline reload, network timeout and one-generation-per-load after a simulated deploy, against a delaying proxy) + chart prefetch on hover/pointerdown/next-in-list |
 | `otf-editor.spec.js` | OTF editor: the dev harness (`/editor-demo.html`), the in-app Go-to-measure / Tempo prompts, and the song page's authoring mode (`#new-tab`; `/create.html` is a redirect shim into it) |
 | `otf-editor-visual.spec.js` | OTF editor visual/screenshot checks |
 | `otf-editor-mobile.spec.js` | **mobile project.** Band collapses to ⚙; edit session's buttons stay on the band; menu bar collapses to ☰; `Press ? for help`; digits still enter notes; Cancel asks inline |

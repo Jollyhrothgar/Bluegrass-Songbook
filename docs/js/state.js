@@ -267,7 +267,19 @@ export let currentDetectedKey = null;
 export let originalDetectedKey = null;
 export let originalDetectedMode = null;
 
-export function setCurrentDetectedKey(key) { currentDetectedKey = key; notifyChange('currentDetectedKey'); }
+/**
+ * Writing the key it already holds fires nothing (same contract as
+ * `setCurrentView` / `setDungeonMode`). The song page re-renders its lead
+ * sheet on every `currentDetectedKey` notification, and `initKeyState` writes
+ * the detected key on every render — so an unconditional notify made each
+ * open draw the chart twice. Nothing relies on an explicit re-notification
+ * with an unchanged key: a caller that wants a redraw calls the renderer.
+ */
+export function setCurrentDetectedKey(key) {
+    if (currentDetectedKey === key) return;
+    currentDetectedKey = key;
+    notifyChange('currentDetectedKey');
+}
 export function setOriginalDetectedKey(key) { originalDetectedKey = key; }
 export function setOriginalDetectedMode(mode) { originalDetectedMode = mode; }
 

@@ -3132,13 +3132,42 @@ function init() {
         }
     });
 
-    // History navigation
+    // History navigation.
+    //
+    // One back/forward (or `location.hash = …`) step fires `popstate` AND
+    // `hashchange` whenever the fragment differs, popstate first. Routing
+    // both ran `openWork` twice per step, so the song page was built and
+    // drawn twice. The hash is the more trustworthy of the two (see the
+    // hashchange handler), so a popstate does not route immediately: it
+    // parks its work for one task, and a hashchange arriving in that window
+    // takes over and cancels it. With no hashchange (same fragment, only the
+    // state differs) the parked popstate runs as before. `handledHref` covers
+    // a browser that dispatches the two in separate tasks the other way
+    // round: a hashchange for the URL a popstate already routed is an echo.
+    let parkedPopstate = null;
+    let handled = { href: null, at: 0 };
+    const markHandled = () => { handled = { href: window.location.href, at: performance.now() }; };
+
     window.addEventListener('popstate', (e) => {
-        handleHistoryNavigation(e.state);
+        if (parkedPopstate) clearTimeout(parkedPopstate);
+        const state = e.state;
+        parkedPopstate = setTimeout(() => {
+            parkedPopstate = null;
+            markHandled();
+            handleHistoryNavigation(state);
+        }, 0);
     });
 
     // Handle hash changes that don't trigger popstate (e.g. manual URL edits)
     window.addEventListener('hashchange', () => {
+        if (parkedPopstate) {
+            clearTimeout(parkedPopstate);
+            parkedPopstate = null;
+        } else if (handled.href === window.location.href
+                   && performance.now() - handled.at < 100) {
+            return;   // the tail of a traversal popstate already routed
+        }
+        markHandled();
         // For hash changes, always try to handle the hash first since the hash
         // represents the current navigation target, not history.state which may be stale
         if (handleDeepLink()) {

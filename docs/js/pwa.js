@@ -124,7 +124,13 @@ export function registerServiceWorker({
         if (event.data?.type === 'sw-activated') nagOnce();
     });
 
-    return nav.serviceWorker.register('sw.js', { type: 'module' })
+    // updateViaCache: 'none' — a module worker's imports (sw-strategy.js) are
+    // fetched through the HTTP cache by default, and GitHub Pages serves
+    // `max-age=600`. A new sw.js paired with a ten-minute-old sw-strategy.js
+    // that lacks a name it imports fails to install (the old worker stays, so
+    // nobody is stranded, but the update stalls); 'none' makes the update
+    // check always fetch the worker's whole graph from the network.
+    return nav.serviceWorker.register('sw.js', { type: 'module', updateViaCache: 'none' })
         .catch((err) => {
             console.warn('Service worker registration failed (offline support off)', err);
             return null;

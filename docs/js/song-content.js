@@ -158,6 +158,29 @@ export function getSongContent(song) {
     return promise;
 }
 
+/**
+ * Warm a work's ChordPro before anyone has asked for it: the page that
+ * opens next is one the reader is already pointing at (pointerdown/hover on
+ * a result) or about to step to (the next song in a list). Goes through
+ * getSongContent, so it shares that function's cache and in-flight dedupe —
+ * the real open after a prefetch finds the text in memory and renders
+ * synchronously, or joins the request already in the air.
+ *
+ * Best-effort and silent: a failed prefetch is forgotten (getSongContent does
+ * not cache failures), so the real open simply fetches again and surfaces
+ * the error itself. Skipped on Save-Data connections, for rows that carry
+ * their own text, and for works with no lead sheet.
+ *
+ * @returns {Promise<void>|null} the in-flight warm-up, or null when nothing
+ *          needed fetching (resolves only for tests; callers ignore it)
+ */
+export function prefetchSongContent(song) {
+    if (!song?.id || hasInlineContent(song) || song.has_content !== true) return null;
+    if (contentCache.has(song.id) || inFlight.has(song.id)) return null;
+    if (globalThis.navigator?.connection?.saveData) return null;
+    return getSongContent(song).then(() => {}, () => {});
+}
+
 /** Fetch a .pro by URL, cached and deduped like getSongContent. */
 function fetchByUrl(url) {
     if (urlCache.has(url)) return Promise.resolve(urlCache.get(url));

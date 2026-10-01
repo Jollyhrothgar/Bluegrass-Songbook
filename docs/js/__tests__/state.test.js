@@ -8,6 +8,7 @@ import {
     getState,
     // Test with a few concrete state values
     currentView, setCurrentView,
+    currentDetectedKey, setCurrentDetectedKey,
     currentSearchQuery, setCurrentSearchQuery,
     corpusLoadFailed, setCorpusLoadFailed,
     historyInitialized, setHistoryInitialized,
@@ -155,6 +156,75 @@ describe('Reactive State System', () => {
 
             expect(callback).toHaveBeenCalledWith('fiddle', 'currentSearchQuery');
         });
+    });
+});
+
+describe('setCurrentDetectedKey', () => {
+    afterEach(async () => {
+        setCurrentDetectedKey(null);
+        await flushRAF();
+    });
+
+    it('notifies subscribers when the key changes', async () => {
+        const callback = vi.fn();
+        const unsubscribe = subscribe('currentDetectedKey', callback);
+        setCurrentDetectedKey('G');
+        await flushRAF();
+        unsubscribe();
+        expect(callback).toHaveBeenCalledTimes(1);
+        expect(callback).toHaveBeenCalledWith('G', 'currentDetectedKey');
+    });
+
+    it('is a no-op when the key is unchanged — nothing is notified', async () => {
+        setCurrentDetectedKey('G');
+        await flushRAF();
+
+        const callback = vi.fn();
+        const unsubscribe = subscribe('currentDetectedKey', callback);
+        setCurrentDetectedKey('G');
+        setCurrentDetectedKey('G');
+        await flushRAF();
+        unsubscribe();
+        expect(callback).not.toHaveBeenCalled();
+        expect(currentDetectedKey).toBe('G');
+    });
+
+    it('does not schedule a render frame for an unchanged key', async () => {
+        setCurrentDetectedKey('D');
+        await flushRAF();
+        const raf = vi.spyOn(globalThis, 'requestAnimationFrame');
+        setCurrentDetectedKey('D');
+        expect(raf).not.toHaveBeenCalled();
+        raf.mockRestore();
+    });
+
+    it('still notifies for clearing the key and for setting it again', async () => {
+        setCurrentDetectedKey('A');
+        await flushRAF();
+        const callback = vi.fn();
+        const unsubscribe = subscribe('currentDetectedKey', callback);
+
+        setCurrentDetectedKey(null);
+        await flushRAF();
+        setCurrentDetectedKey('A');
+        await flushRAF();
+        unsubscribe();
+        expect(callback.mock.calls.map(c => c[0])).toEqual([null, 'A']);
+    });
+
+    it('coalesces an out-and-back within one frame into a single notification', async () => {
+        setCurrentDetectedKey('E');
+        await flushRAF();
+        const callback = vi.fn();
+        const unsubscribe = subscribe('currentDetectedKey', callback);
+
+        // openWork clears the key, the render detects it again
+        setCurrentDetectedKey(null);
+        setCurrentDetectedKey('E');
+        await flushRAF();
+        unsubscribe();
+        expect(callback).toHaveBeenCalledTimes(1);
+        expect(callback).toHaveBeenCalledWith('E', 'currentDetectedKey');
     });
 });
 

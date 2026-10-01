@@ -1,11 +1,12 @@
 // Content on demand: data/songs/{id}.pro fetching, caching, in-flight
 // dedupe, and the legacy fat-index fallback (rows that still carry
 // `content` inline must never trigger a request).
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 import {
     getSongContent, getSongContents, peekSongContent, primeSongContent,
     clearSongContentCache, songHasContent, songHasAbc, songContentUrl,
+    prefetchSongContent,
 } from '../song-content.js';
 
 const LEAN = { id: 'blue-moon-of-kentucky', title: 'Blue Moon', has_content: true };
@@ -182,5 +183,78 @@ describe('songHasAbc', () => {
         global.fetch = mockFetchOk('{start_of_abc}\nX:1\n{end_of_abc}');
         await getSongContent(song);
         expect(songHasAbc(song)).toBe(true);
+    });
+});
+
+
+describe('prefetchSongContent', () => {
+    afterEach(() => vi.unstubAllGlobals());
+
+    it('fetches the .pro and leaves it in the cache for the real open', async () => {
+        const fetchMock = mockFetchOk('[G]hello');
+        vi.stubGlobal('fetch', fetchMock);
+        await prefetchSongContent(LEAN);
+        expect(fetchMock).toHaveBeenCalledTimes(1);
+        expect(fetchMock).toHaveBeenCalledWith('data/songs/blue-moon-of-kentucky.pro');
+        // The open that follows renders synchronously from memory
+        expect(peekSongContent(LEAN)).toBe('[G]hello');
+        await getSongContent(LEAN);
+        expect(fetchMock).toHaveBeenCalledTimes(1);
+    });
+
+    it('does not start a second request while one is in flight', async () => {
+        const fetchMock = mockFetchOk('[G]hello', { delay: 10 });
+        vi.stubGlobal('fetch', fetchMock);
+        const first = prefetchSongContent(LEAN);
+        expect(prefetchSongContent(LEAN)).toBeNull();
+        await first;
+        expect(fetchMock).toHaveBeenCalledTimes(1);
+    });
+
+    it('lets the real open join the prefetch already in the air', async () => {
+        const fetchMock = mockFetchOk('[G]hello', { delay: 10 });
+        vi.stubGlobal('fetch', fetchMock);
+        prefetchSongContent(LEAN);
+        expect(await getSongContent(LEAN)).toBe('[G]hello');
+        expect(fetchMock).toHaveBeenCalledTimes(1);
+    });
+
+    it('does nothing for what is already in memory', async () => {
+        const fetchMock = mockFetchOk('x');
+        vi.stubGlobal('fetch', fetchMock);
+        primeSongContent(LEAN.id, '[G]primed');
+        expect(prefetchSongContent(LEAN)).toBeNull();
+        expect(fetchMock).not.toHaveBeenCalled();
+    });
+
+    it.each([
+        ['legacy rows with inline content', LEGACY],
+        ['works with no lead sheet', LEAN_NO_CONTENT],
+        ['nothing', null],
+        ['a row with no id', { has_content: true }],
+    ])('never requests for %s', (_name, song) => {
+        const fetchMock = mockFetchOk('x');
+        vi.stubGlobal('fetch', fetchMock);
+        expect(prefetchSongContent(song)).toBeNull();
+        expect(fetchMock).not.toHaveBeenCalled();
+    });
+
+    it('is silent and forgets a failure, so the real open retries and reports it', async () => {
+        const failing = vi.fn(() => Promise.resolve({ ok: false, status: 503 }));
+        vi.stubGlobal('fetch', failing);
+        await expect(prefetchSongContent(LEAN)).resolves.toBeUndefined();   // no rejection
+        expect(peekSongContent(LEAN)).toBeNull();
+
+        const ok = mockFetchOk('[G]now');
+        vi.stubGlobal('fetch', ok);
+        expect(await getSongContent(LEAN)).toBe('[G]now');
+    });
+
+    it('respects Save-Data', () => {
+        const fetchMock = mockFetchOk('x');
+        vi.stubGlobal('fetch', fetchMock);
+        vi.stubGlobal('navigator', { ...globalThis.navigator, connection: { saveData: true } });
+        expect(prefetchSongContent(LEAN)).toBeNull();
+        expect(fetchMock).not.toHaveBeenCalled();
     });
 });

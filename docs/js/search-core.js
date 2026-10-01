@@ -7,7 +7,7 @@ import {
     songHasTags, getTagCategory, formatTagName, syncTagControls,
     getInstrumentTags, INSTRUMENT_FACETS, toggleFacetTag, activeQueryTags, onTagSync,
 } from './tags.js';
-import { songHasContent } from './song-content.js';
+import { songHasContent, prefetchSongContent } from './song-content.js';
 import { setFieldTerm } from './search-query.js';
 import { pill } from './shell.js';
 import {
@@ -1207,6 +1207,26 @@ export function renderResults(songs, query) {
     setupResultEventListeners(resultsDivEl);
 }
 
+/** How long a mouse must rest on a result before its .pro is prefetched —
+ *  long enough that sweeping across a list does not fetch every row. */
+const PREFETCH_HOVER_MS = 120;
+
+/**
+ * Warm the ChordPro for the song a result row would open. Mirrors the click
+ * handler's choice of target (a multi-version group opens its representative)
+ * and does nothing for part-qualified rows, which may open a tab or a document
+ * rather than the lead sheet. Exported for tests.
+ */
+export function prefetchResult(resultItem) {
+    if (!resultItem || resultItem.dataset.partId) return;
+    const groupId = resultItem.dataset.groupId;
+    const versions = groupId ? (songGroups[groupId] || []) : [];
+    const song = versions.length > 1
+        ? pickRepresentative(versions)
+        : allSongs.find(s => s.id === resultItem.dataset.id);
+    prefetchSongContent(song);
+}
+
 /**
  * Setup event delegation for search results (called once per container)
  * Uses event delegation to avoid per-item listener attachment
@@ -1334,6 +1354,28 @@ function setupResultEventListeners(resultsDiv) {
             }
         }
     });
+
+    // === PREFETCH DELEGATION ===
+    // The song a result opens is known the moment the pointer lands on it,
+    // a click (or a tap's touchend) earlier than openWork. Start the .pro
+    // fetch then: pointerdown covers mouse, touch and pen; a mouse that
+    // dwells on a result for PREFETCH_HOVER_MS gets the same head start.
+    // (Touch has no hover, and a touch "pointerover" precedes pointerdown
+    // by nothing, so hover is mouse-only.)
+    let hoverTimer = null;
+    const cancelHover = () => { clearTimeout(hoverTimer); hoverTimer = null; };
+    resultsDiv.addEventListener('pointerdown', (e) => {
+        cancelHover();
+        prefetchResult(e.target.closest?.('.result-item'));
+    });
+    resultsDiv.addEventListener('pointerover', (e) => {
+        if (e.pointerType !== 'mouse') return;
+        const item = e.target.closest?.('.result-item');
+        if (item && item === e.relatedTarget?.closest?.('.result-item')) return;   // still on the same row
+        cancelHover();
+        if (item) hoverTimer = setTimeout(() => prefetchResult(item), PREFETCH_HOVER_MS);
+    });
+    resultsDiv.addEventListener('pointerleave', cancelHover);
 
     // === DRAG START DELEGATION ===
     resultsDiv.addEventListener('dragstart', (e) => {
