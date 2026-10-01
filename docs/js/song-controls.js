@@ -71,17 +71,47 @@ function autoSub(stateKey, rootEl, fn) {
 }
 
 // ============================================
+// PRACTICE LINKS (under the title; see work-view.js)
+// ============================================
+
+/**
+ * Outbound practice links for a song: Strum Machine (when matched, carrying
+ * the current key) and a YouTube search by title.
+ */
+export function practiceLinks(song, key) {
+    const links = [];
+    if (song?.strum_machine_url) {
+        links.push({
+            id: 'strum',
+            label: 'Strum Machine',
+            href: key
+                ? `${song.strum_machine_url}?key=${encodeURIComponent(key)}`
+                : song.strum_machine_url,
+        });
+    }
+    const title = (song?.title || '').trim();
+    if (title) {
+        links.push({
+            id: 'youtube',
+            label: 'YouTube',
+            href: 'https://www.youtube.com/results?search_query=' +
+                encodeURIComponent(title + ' bluegrass'),
+        });
+    }
+    return links;
+}
+
+// ============================================
 // KEY PILL
 // ============================================
 
 /**
- * Key pill: chromatic transpose, key list, Nashville toggle, Strum Machine.
+ * Key pill: chromatic transpose, key list, Nashville toggle.
  * Label live-updates ("Key of G").
  */
 export function buildKeyPill(song) {
     const root = pill(keyPillLabel(currentDetectedKey), (container) => {
         const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-        const hasStrum = !!song?.strum_machine_url;
         container.innerHTML = `
             <div class="pill-section pill-transpose-row">
                 <button class="qc-btn" data-transpose="-1" title="Transpose down">−</button>
@@ -99,7 +129,6 @@ export function buildKeyPill(song) {
             </div>
             <div class="pill-section">
                 <button class="qc-toggle-btn pill-nashville-btn ${nashvilleMode ? 'active' : ''}" title="Nashville numbers">Nashville</button>
-                ${hasStrum ? `<button class="qc-toggle-btn pill-strum-btn" title="Practice on Strum Machine"><img src="images/strum_machine.png" alt="" class="qc-strum-icon"> Strum Machine</button>` : ''}
             </div>
         `;
 
@@ -132,13 +161,6 @@ export function buildKeyPill(song) {
         nashBtn?.addEventListener('click', () => {
             setNashvilleMode(!nashvilleMode);
             nashBtn.classList.toggle('active', nashvilleMode);
-        });
-
-        container.querySelector('.pill-strum-btn')?.addEventListener('click', () => {
-            const url = currentDetectedKey
-                ? `${song.strum_machine_url}?key=${encodeURIComponent(currentDetectedKey)}`
-                : song.strum_machine_url;
-            window.open(url, '_blank');
         });
     }, { id: 'key-pill', title: 'Key & transposition' });
 

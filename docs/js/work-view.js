@@ -13,7 +13,7 @@ import {
     currentChordpro, setCurrentChordpro,
     loadedTablature, setLoadedTablature,
     tablaturePlayer, setTablaturePlayer,
-    setCurrentDetectedKey,
+    currentDetectedKey, setCurrentDetectedKey,
     setOriginalDetectedKey,
     setOriginalDetectedMode,
     listContext, setListContext,
@@ -70,7 +70,7 @@ import { openFlagModal } from './flags.js';
 import { trackSongView } from './analytics.js';
 import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
 import { attachTabControlsSheet } from './tab-controls-sheet.js';
-import { buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
+import { practiceLinks, buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
 import {
     attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
 } from './tab-playback-interactions.js';
@@ -916,6 +916,18 @@ function selectPart(part) {
 }
 
 /**
+ * Quiet "Practice:" line under the artist: Strum Machine (when matched) and
+ * a YouTube search. Shown for lead sheets and tab-only works alike.
+ */
+function practiceLineHtml() {
+    const links = practiceLinks(currentWork, currentDetectedKey);
+    if (!links.length) return '';
+    return `<div class="song-practice-line"><span class="song-practice-label">Practice:</span> ${
+        links.map(l => `<a href="${escapeAttr(l.href)}" target="_blank" rel="noopener" data-practice="${l.id}">${l.label}</a>`).join(' · ')
+    }</div>`;
+}
+
+/**
  * Title row: song title + small artist line.
  */
 function renderTitleHeader() {
@@ -973,8 +985,20 @@ function renderTitleHeader() {
             ${artist
                 ? `<div class="song-artist-line">${escapeHtml(artist)}</div>`
                 : '<div class="song-artist-line song-artist-missing hidden">Artist unknown</div>'}
+            ${practiceLineHtml()}
         </div>
     `;
+    // Keep the Strum Machine link's ?key= in step with transposition, so a
+    // middle-click or "copy link" carries the key on screen, not the one at
+    // render. Self-unsubscribes once this header leaves the page.
+    const strumLink = header.querySelector('a[data-practice="strum"]');
+    if (strumLink) {
+        const unsub = subscribe('currentDetectedKey', (key) => {
+            if (!document.contains(header)) { unsub(); return; }
+            const href = practiceLinks(currentWork, key).find(l => l.id === 'strum')?.href;
+            if (href) strumLink.href = href;
+        });
+    }
     // #edit-song-btn is wired via main.js's songContent delegation; the
     // details button is wired here so the feature needs nothing from main.js.
     header.querySelector('#edit-meta-btn')

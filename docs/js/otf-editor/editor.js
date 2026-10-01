@@ -561,7 +561,7 @@ export class OTFEditor {
             .play-button.playing {
                 background: var(--accent, #007bff);
                 border-color: var(--accent, #007bff);
-                color: #fff;
+                color: var(--on-accent, #fff);
             }
 
             .tempo-control {

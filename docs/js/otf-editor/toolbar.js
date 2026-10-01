@@ -517,7 +517,7 @@ export class EditorToolbar {
             .toolbar-button.active {
                 background: var(--accent, #007bff);
                 border-color: var(--accent, #007bff);
-                color: #fff;
+                color: var(--on-accent, #fff);
             }
 
             .toolbar-button.pending {
